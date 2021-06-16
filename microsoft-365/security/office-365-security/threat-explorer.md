@@ -16,7 +16,7 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
   - M365-security-compliance
   - m365initiative-defender-office365
-description: Use Explorer and Real-time detections in the Security &amp; Compliance Center to investigate and respond to threats efficiently.
+description: Use Explorer and Real-time detections in the Microsoft 365 security center to investigate and respond to threats efficiently.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security

@@ -8,13 +8,13 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 localization_priority: Priority
+ms.topic: article
 author: denisebmsft
 ms.author: deniseb
 ms.reviewer: 
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
-ms.topic: article
 ---
 
 # Next-generation protection

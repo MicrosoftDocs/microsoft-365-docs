@@ -6,35 +6,35 @@ manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.date: 
+ms.date:
 ms.prod: microsoft-365-enterprise
-search.appverid: 
+search.appverid:
 localization_priority: None
-ROBOTS: 
+ROBOTS:
 description: "Learn how to use Microsoft Teams to create your contract management channel by using a Microsoft 365 solution."
 ---
 
 # Step 2. Use Microsoft Teams to create your contract management channel
 
-When your organization sets up a contracts management solution, you need a central location in which stakeholders can review and manage contracts. For this purpose, you can use [Microsoft Teams](https://docs.microsoft.com/microsoftteams/) to set up a Teams channel and use the features in Teams to:
+When your organization sets up a contracts management solution, you need a central location in which stakeholders can review and manage contracts. For this purpose, you can use [Microsoft Teams](/microsoftteams/) to set up a Teams channel and use the features in Teams to:
 
 - **Create a location for stakeholders to easily see all contracts that require action.** For example, in Teams you can create a **Contracts** tab in the Contract Management channel in which members can see a useful tile view of all contracts that need approval. You can also configure the view so that each "card" lists the important data you care about (such as *Client*, *Contractor*, and *Fee amount*).
 
      ![Contracts tab.](../media/content-understanding/tile-view.png)
 
-- **Have a location for members to interact with each other and see important events.** For example, in Teams, the **Posts** tab can be used to have conversations, get updates, and see actions (such as a member rejecting a contract). When something has happened (such as a new contract submitted for approval), the **Posts** tab can be used not only to announce it, but also to keep a record of it. And if members subscribe to notifications, they'll get notified whenever there's an update. 
+- **Have a location for members to interact with each other and see important events.** For example, in Teams, the **Posts** tab can be used to have conversations, get updates, and see actions (such as a member rejecting a contract). When something has happened (such as a new contract submitted for approval), the **Posts** tab can be used not only to announce it, but also to keep a record of it. And if members subscribe to notifications, they'll get notified whenever there's an update.
 
-     ![Posts tab.](../media/content-understanding/posts.png)</br> 
+     ![Posts tab.](../media/content-understanding/posts.png)
 
-- **Have a location for members to see approved contracts to know when they can be submitted for payment.** In Teams, you can create a <b>For Payment</b> channel that will list all contracts that will need to be submitted to payment. You can easily extend this solution to instead write this information directly to a third-party financial application (for example, Dynamics CRM).
+- **Have a location for members to see approved contracts to know when they can be submitted for payment.** In Teams, you can create a **For Payment** channel that will list all contracts that will need to be submitted to payment. You can easily extend this solution to instead write this information directly to a third-party financial application (for example, Dynamics CRM).
 
-## Attach your SharePoint document library to the Contracts tab 
+## Attach your SharePoint document library to the Contracts tab
 
 After you create a **Contracts** tab in your Contracts Management channel, you need to [attach your SharePoint document library to it](https://support.microsoft.com/office/add-a-sharepoint-page-list-or-document-library-as-a-tab-in-teams-131edef1-455f-4c67-a8ce-efa2ebf25f0b). The SharePoint document library you want to attach is the one in which you applied your SharePoint Syntex document understanding model to in the previous section.
 
 After you attach the SharePoint document library, you'll be able to view any classified contracts through a default list view.
 
-   ![List view.](../media/content-understanding/list-view.png) 
+   ![List view.](../media/content-understanding/list-view.png)
 
 ## Customize your Contracts tab tile view
 
@@ -49,7 +49,7 @@ The custom tile view you use requires you to make changes to the JSON file used 
 
 If you want to see or make changes to the JSON code for your view in your Teams channel, in the Teams channel, select the view drop-down menu, and then select **Format current view**.
 
-   ![json format.](../media/content-understanding/jason-format.png) 
+   ![json format.](../media/content-understanding/jason-format.png)
 
 ## Card size and shape
 
@@ -76,7 +76,6 @@ In the [ContractTileFormatting.json](https://github.com/pnp/syntex-samples/blob/
                       }
 ```
 
-
 ## Contract status
 
 The following code lets you define the status of each title card. Note that each status value (*New*, *In review*, *Approved*, and *Rejected*) will display a different color code for each. In the [ContractTileFormatting.json](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) file, look at the section that defines the status.
@@ -99,10 +98,9 @@ The following code lets you define the status of each title card. Note that each
               }
 ```
 
-
 ## Extracted fields
 
-Each contract card will display three fields that were extracted for each contract (*Client*, *Contractor*, and *Fee Amount*). Additionally, you also want to display the time/date that the file was classified by the SharePoint Syntex model used to identify it. 
+Each contract card will display three fields that were extracted for each contract (*Client*, *Contractor*, and *Fee Amount*). Additionally, you also want to display the time/date that the file was classified by the SharePoint Syntex model used to identify it.
 
 In the [ContractTileFormatting.json](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) file, the following sections define each of these.
 
@@ -154,7 +152,6 @@ This section defines how the "Contractor" will display on the card, and uses the
 },
 ```
 
-
 ### Fee Amount
 
 This section defines how the "Fee Amount" will display on the card, and uses the value for the specific contract.
@@ -178,8 +175,6 @@ This section defines how the "Fee Amount" will display on the card, and uses the
                         "txtContent": "[$FeeAmount]"
                       },
 ```
-
-
 
 ### Classification date
 

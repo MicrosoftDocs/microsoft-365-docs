@@ -6,7 +6,8 @@ search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: Normal
+localization_priority: normal
+ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
 ms.date: 05/18/2021
@@ -14,7 +15,6 @@ ms.reviewer:
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
-ms.topic: article
 ---
 
 # Turn on cloud-delivered protection

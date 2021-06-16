@@ -1,0 +1,10 @@
+- name: Scheduler for Microsoft 365
+  href: scheduler-overview.md
+- name: Trust and Privacy
+  href: scheduler-trust-privacy.md
+- name: Setting up Scheduler for Microsoft 365
+  href: scheduler-setup.md
+- name: How to use Scheduler for Microsoft 365
+  href: scheduler-using.md
+- name: Scheduler for Microsoft 365 FAQ's
+  href: scheduler-faqs.md

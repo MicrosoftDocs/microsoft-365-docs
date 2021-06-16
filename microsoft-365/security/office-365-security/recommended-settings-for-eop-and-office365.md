@@ -38,9 +38,9 @@ Although we empower security administrators to customize their security settings
 To automatically apply the Standard or Strict settings to users, see [Preset security policies in EOP and Microsoft Defender for Office 365](preset-security-policies.md).
 
 > [!NOTE]
-> The junk email rule needs to be enabled on mailboxes in order for filtering to work properly. It's enabled by default, but you should check it if filtering does not seem to be working. For more information, see [Configure junk email settings on Exchange Online mailboxes in Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
+> The junk email rule needs to be enabled on mailboxes in order for filtering to work properly. It's enabled by default, but you should check it if filtering does not seem to be working. For more information, see [Configure junk email settings on Exchange Online mailboxes](configure-junk-email-settings-on-exo-mailboxes.md).
 
-This article describes the default settings, and also the recommended Standard and Strict settings to help protect your users. The tables contain the settings in the Microsoft 365 security center and PowerShell (Exchange Online PowerShell or standalone Exchange Online Protection PowerShell for organizations without Exchange Online mailboxes).
+This article describes the default settings, and also the recommended Standard and Strict settings to help protect your users. The tables contain the settings in the Microsoft 365 Defender portal and PowerShell (Exchange Online PowerShell or standalone Exchange Online Protection PowerShell for organizations without Exchange Online mailboxes).
 
 > [!TIP]
 > The Office 365 Advanced Threat Protection Recommended Configuration Analyzer (ORCA) module for PowerShell can help you (admins) find the current values of these settings. Specifically, the **Get-ORCAReport** cmdlet generates an assessment of anti-spam, anti-phishing, and other message hygiene settings. You can download the ORCA module at <https://www.powershellgallery.com/packages/ORCA/>.
@@ -51,7 +51,7 @@ Anti-spam, anti-malware, and anti-phishing are EOP features that can be configur
 
 ### EOP anti-spam policy settings
 
-To create and configure anti-spam policies, see [Configure anti-spam policies in Office 365](configure-your-spam-filter-policies.md).
+To create and configure anti-spam policies, see [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md).
 
 <br>
 
@@ -64,7 +64,7 @@ To create and configure anti-spam policies, see [Configure anti-spam policies in
 |**Phishing** detection action <p> _PhishSpamAction_|**Move message to Junk Email folder** <p> `MoveToJmf`|**Quarantine message** <p> `Quarantine`|**Quarantine message** <p> `Quarantine`||
 |**High confidence phishing** detection action <p> _HighConfidencePhishAction_|**Quarantine message** <p> `Quarantine`|**Quarantine message** <p> `Quarantine`|**Quarantine message** <p> `Quarantine`||
 |**Bulk** detection action <p> _BulkSpamAction_|**Move message to Junk Email folder** <p> `MoveToJmf`|**Move message to Junk Email folder** <p> `MoveToJmf`|**Quarantine message** <p> `Quarantine`||
-|**Bulk email threshold** <p> _BulkThreshold_|7|6|4|For details, see [Bulk complaint level (BCL) in Office 365](bulk-complaint-level-values.md).|
+|**Bulk email threshold** <p> _BulkThreshold_|7|6|4|For details, see [Bulk complaint level (BCL) in EOP](bulk-complaint-level-values.md).|
 |_MarkAsSpamBulkMail_|On|On|On|This setting is only available in PowerShell.|
 |**Retain spam in quarantine for this many days** <p> _QuarantineRetentionPeriod_|15 days|30 days|30 days||
 |**Enable spam safety tips** <p> _InlineSafetyTipsEnabled_|On <p> `$true`|On <p> `$true`|On <p> `$true`||
@@ -80,7 +80,7 @@ To create and configure anti-spam policies, see [Configure anti-spam policies in
 
 There are many Advanced Spam Filter (ASF) settings in anti-spam policies that are in the process of being deprecated. More information on the timelines for the depreciation of these features will be communicated outside of this article.
 
-We recommend that you leave the following ASF settings **Off** for both **Standard** and **Strict** levels. For more information about ASF settings, see [Advanced Spam Filter (ASF) settings in Office 365](advanced-spam-filtering-asf-options.md).
+We recommend that you leave the following ASF settings **Off** for both **Standard** and **Strict** levels. For more information about ASF settings, see [Advanced Spam Filter (ASF) settings in EOP](advanced-spam-filtering-asf-options.md).
 
 <br>
 
@@ -90,24 +90,24 @@ We recommend that you leave the following ASF settings **Off** for both **Standa
 |---|---|
 |**Image links to remote sites** (_IncreaseScoreWithImageLinks_)||
 |**Numeric IP address in URL** (_IncreaseScoreWithNumericIps_)||
-|**UL redirect to other port** (_IncreaseScoreWithRedirectToOtherPort_)||
-|**URL to .biz or .info websites** (_IncreaseScoreWithBizOrInfoUrls_)||
+|**URL redirect to other port** (_IncreaseScoreWithRedirectToOtherPort_)||
+|**Links to .biz or .info websites** (_IncreaseScoreWithBizOrInfoUrls_)||
 |**Empty messages** (_MarkAsSpamEmptyMessages_)||
-|**JavaScript or VBScript in HTML** (_MarkAsSpamJavaScriptInHtml_)||
-|**Frame or IFrame tags in HTML** (_MarkAsSpamFramesInHtml_)||
-|**Object tags in HTML** (_MarkAsSpamObjectTagsInHtml_)||
 |**Embed tags in HTML** (_MarkAsSpamEmbedTagsInHtml_)||
+|**JavaScript or VBScript in HTML** (_MarkAsSpamJavaScriptInHtml_)||
 |**Form tags in HTML** (_MarkAsSpamFormTagsInHtml_)||
+|**Frame or iframe tags in HTML** (_MarkAsSpamFramesInHtml_)||
 |**Web bugs in HTML** (_MarkAsSpamWebBugsInHtml_)||
-|**Apply sensitive word list** (_MarkAsSpamSensitiveWordList_)||
+|**Object tags in HTML** (_MarkAsSpamObjectTagsInHtml_)||
+|**Sensitive words** (_MarkAsSpamSensitiveWordList_)||
 |**SPF record: hard fail** (_MarkAsSpamSpfRecordHardFail_)||
-|**Conditional Sender ID filtering: hard fail** (_MarkAsSpamFromAddressAuthFail_)||
-|**NDR backscatter** (_MarkAsSpamNdrBackscatter_)||
+|**Sender ID filtering hard fail** (_MarkAsSpamFromAddressAuthFail_)||
+|**Backscatter** (_MarkAsSpamNdrBackscatter_)||
 |
 
 #### EOP outbound spam policy settings
 
-To create and configure outbound spam policies, see [Configure outbound spam filtering in Office 365](configure-the-outbound-spam-policy.md).
+To create and configure outbound spam policies, see [Configure outbound spam filtering in EOP](configure-the-outbound-spam-policy.md).
 
 For more information about the default sending limits in the service, see [Sending limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-1).
 
@@ -117,15 +117,16 @@ For more information about the default sending limits in the service, see [Sendi
 
 |Security feature name|Default|Standard|Strict|Comment|
 |---|:---:|:---:|:---:|---|
-|**Maximum number of recipients per user: External hourly limit** <p> _RecipientLimitExternalPerHour_|0|500|400|The default value 0 means use the service defaults.|
-|**Maximum number of recipients per user: Internal hourly limit** <p> _RecipientLimitInternalPerHour_|0|1000|800|The default value 0 means use the service defaults.|
-|**Maximum number of recipients per user: Daily limit** <p> _RecipientLimitPerDay_|0|1000|800|The default value 0 means use the service defaults.|
-|**Action when a user exceeds the limits** <p> _ActionWhenThresholdReached_|**Restrict the user from sending mail till the following day** <p> `BlockUserForToday`|**Restrict the user from sending mail** <p> `BlockUser`|**Restrict the user from sending mail** <p> `BlockUser`||
+|**Set an external message limit** <p> _RecipientLimitExternalPerHour_|0|500|400|The default value 0 means use the service defaults.|
+|**Set an internal message limit** <p> _RecipientLimitInternalPerHour_|0|1000|800|The default value 0 means use the service defaults.|
+|**Set a daily message limit** <p> _RecipientLimitPerDay_|0|1000|800|The default value 0 means use the service defaults.|
+|**Restriction placed on users who reach the message limit** <p> _ActionWhenThresholdReached_|**Restrict the user from sending mail until the following day** <p> `BlockUserForToday`|**Restrict the user from sending mail** <p> `BlockUser`|**Restrict the user from sending mail** <p> `BlockUser`||
+|**Automatic forwarding rules** <p> _AutoForwardingMode_|**Automatic - System-controlled** <p> `Automatic`|**Automatic - System-controlled** <p> `Automatic`|**Automatic - System-controlled** <p> `Automatic`|
 |
 
 ### EOP anti-malware policy settings
 
-To create and configure anti-malware policies, see [Configure anti-malware policies in Office 365](configure-anti-malware-policies.md).
+To create and configure anti-malware policies, see [Configure anti-malware policies in EOP](configure-anti-malware-policies.md).
 
 <br>
 
@@ -140,7 +141,7 @@ To create and configure anti-malware policies, see [Configure anti-malware polic
 |**Notify external senders when messages are quarantined as malware** <p> _EnableExternalSenderNotifications_|Disabled <p> `$false`|Disabled <p> `$false`|Disabled <p> `$false`||
 |
 
-### EOP default anti-phishing policy settings
+### EOP anti-phishing policy settings
 
 For more information about these settings, see [Spoof settings](set-up-anti-phishing-policies.md#spoof-settings). To configure these settings, see [Configure anti-phishing policies in EOP](configure-anti-phishing-policies-eop.md).
 
@@ -150,9 +151,10 @@ For more information about these settings, see [Spoof settings](set-up-anti-phis
 
 |Security feature name|Default|Standard|Strict|Comment|
 |---|:---:|:---:|:---:|---|
-|**Enable anti-spoofing protection** <p> _EnableSpoofIntelligence_|On <p> `$true`|On <p> `$true`|On <p> `$true`||
-|**Enable Unauthenticated Sender** <p> _EnableUnauthenticatedSender_|On <p> `$true`|On <p> `$true`|On <p> `$true`|Adds a question mark (?) to the sender's photo in Outlook for unidentified spoofed senders. For more information, see [Spoof settings in anti-phishing policies](set-up-anti-phishing-policies.md).|
-|**If email is sent by someone who's not allowed to spoof your domain** <p> _AuthenticationFailAction_|**Move message to the recipients' Junk Email folders** <p> `MoveToJmf`|**Move message to the recipients' Junk Email folders** <p> `MoveToJmf`|**Quarantine the message** <p> `Quarantine`|This setting applies to spoofed senders that were automatically blocked as shown in the [spoof intelligence insight](learn-about-spoof-intelligence.md) or manually blocked in the [Tenant Allow/Block List](tenant-allow-block-list.md).|
+|**Enable spoof intelligence** <p> _EnableSpoofIntelligence_|On <p> `$true`|On <p> `$true`|On <p> `$true`||
+|**If email is detected as spoof** <p> _AuthenticationFailAction_|**Move message to the recipients' Junk Email folders** <p> `MoveToJmf`|**Move message to the recipients' Junk Email folders** <p> `MoveToJmf`|**Quarantine the message** <p> `Quarantine`|This setting applies to spoofed senders that were automatically blocked as shown in the [spoof intelligence insight](learn-about-spoof-intelligence.md) or manually blocked in the [Tenant Allow/Block List](tenant-allow-block-list.md).|
+|**Show (?) for unauthenticated senders for spoof** <p> _EnableUnauthenticatedSender_|On <p> `$true`|On <p> `$true`|On <p> `$true`|Adds a question mark (?) to the sender's photo in Outlook for unidentified spoofed senders. For more information, see [Spoof settings in anti-phishing policies](set-up-anti-phishing-policies.md).|
+|**Show "via" tag** <p> _EnableViaTag_|On <p> `$true`|On <p> `$true`|On <p> `$true`|Adds a via tag (chris@contoso.com via fabrikam.com) to the From address if it's different from the domain in the DKIM signature or the **MAIL FROM** address. <p> If this setting isn't available to you, the question mark **and** the via tag are both controlled by the **Show (?) for unauthenticated senders for spoof** setting in your organization.|
 |
 
 ## Microsoft Defender for Office 365 security
@@ -183,19 +185,18 @@ For more information about these settings, see [Impersonation settings in anti-p
 
 |Security feature name|Default|Standard|Strict|Comment|
 |---|:---:|:---:|:---:|---|
-|Protected users: **Add users to protect** <p> _EnableTargetedUserProtection_ <p> _TargetedUsersToProtect_|Off <p> `$false` <p> none|On <p> `$true` <p> \<list of users\>|On <p> `$true` <p> \<list of users\>|Depending on your organization, we recommend adding users (message senders) in key roles. Internally, protected senders might be your CEO, CFO, and other senior leaders. Externally, protected senders could include council members or your board of directors.|
-|Protected domains: **Automatically include the domains I own** <p> _EnableOrganizationDomainsProtection_|Off <p> `$false`|On <p> `$true`|On <p> `$true`||
+|Protected users (senders): **Enable users to protect** <p> _EnableTargetedUserProtection_ <p> _TargetedUsersToProtect_|Off <p> `$false` <p> none|On <p> `$true` <p> \<list of users\>|On <p> `$true` <p> \<list of users\>|Depending on your organization, we recommend adding users (message senders) in key roles. Internally, protected senders might be your CEO, CFO, and other senior leaders. Externally, protected senders could include council members or your board of directors.|
+|Protected users: **If message is detected as an impersonated user** <p> _TargetedUserProtectionAction_|**Don't apply any action** <p> `NoAction`|**Quarantine the message** <p> `Quarantine`|**Quarantine the message** <p> `Quarantine`||
+|Protected domains: **Include domains I own** <p> _EnableOrganizationDomainsProtection_|Off <p> `$false`|On <p> `$true`|On <p> `$true`||
 |Protected domains: **Include custom domains** <p> _EnableTargetedDomainsProtection_ <p> _TargetedDomainsToProtect_|Off <p> `$false` <p> none|On <p> `$true` <p> \<list of domains\>|On <p> `$true` <p> \<list of domains\>|Depending on your organization, we recommend adding domains (sender domains) that you don't own, but you frequently interact with.|
-|Protected users: **If email is sent by an impersonated user** <p> _TargetedUserProtectionAction_|**Don't apply any action** <p> `NoAction`|**Quarantine the message** <p> `Quarantine`|**Quarantine the message** <p> `Quarantine`||
-|Protected domains: **If email is sent by an impersonated domain** <p> _TargetedDomainProtectionAction_|**Don't apply any action** <p> `NoAction`|**Quarantine the message** <p> `Quarantine`|**Quarantine the message** <p> `Quarantine`||
-|**Show tip for impersonated users** <p> _EnableSimilarUsersSafetyTips_|Off <p> `$false`|On <p> `$true`|On <p> `$true`||
-|**Show tip for impersonated domains** <p> _EnableSimilarDomainsSafetyTips_|Off <p> `$false`|On <p> `$true`|On <p> `$true`||
-|**Show tip for unusual characters** <p> _EnableUnusualCharactersSafetyTips_|Off <p> `$false`|On <p> `$true`|On <p> `$true`||
-|**Enable Mailbox intelligence?** <p> _EnableMailboxIntelligence_|On <p> `$true`|On <p> `$true`|On <p> `$true`||
-|**Enable Mailbox intelligence based impersonation protection?** <p> _EnableMailboxIntelligenceProtection_|Off <p> `$false`|On <p> `$true`|On <p> `$true`||
-|**If email is sent by an impersonated user protected by mailbox intelligence** <p> _MailboxIntelligenceProtectionAction_|**Don't apply any action** <p> `NoAction`|**Move message to the recipients' Junk Email folders** <p> `MoveToJmf`|**Quarantine the message** <p> `Quarantine`||
-|**Trusted senders** <p> _ExcludedSenders_|None|None|None|Depending on your organization, we recommend adding users that incorrectly get marked as phishing due to impersonation only and not other filters.|
-|**Trusted domains** <p> _ExcludedDomains_|None|None|None|Depending on your organization, we recommend adding domains that incorrectly get marked as phishing due to impersonation only and not other filters.|
+|Protected domains: **If message is detected as an impersonated domain** <p> _TargetedDomainProtectionAction_|**Don't apply any action** <p> `NoAction`|**Quarantine the message** <p> `Quarantine`|**Quarantine the message** <p> `Quarantine`||
+|**Add trusted senders and domains** <p> _ExcludedSenders_ <p> _ExcludedDomains_|None|None|None|Depending on your organization, we recommend adding senders or domains that are incorrectly identified as impersonation attempts.|
+|**Enable mailbox intelligence** <p> _EnableMailboxIntelligence_|On <p> `$true`|On <p> `$true`|On <p> `$true`||
+|**Enable intelligence for impersonation protection** <p> _EnableMailboxIntelligenceProtection_|Off <p> `$false`|On <p> `$true`|On <p> `$true`|This setting allows the specified action for impersonation detections by mailbox intelligence.|
+|**If mailbox intelligence detects and impersonated user** <p> _MailboxIntelligenceProtectionAction_|**Don't apply any action** <p> `NoAction`|**Move message to the recipients' Junk Email folders** <p> `MoveToJmf`|**Quarantine the message** <p> `Quarantine`||
+|**Show user impersonation safety tip** <p> _EnableSimilarUsersSafetyTips_|Off <p> `$false`|On <p> `$true`|On <p> `$true`||
+|**Show domain impersonation safety tip** <p> _EnableSimilarDomainsSafetyTips_|Off <p> `$false`|On <p> `$true`|On <p> `$true`||
+|**Show user impersonation unusual characters safety tip** <p> _EnableUnusualCharactersSafetyTips_|Off <p> `$false`|On <p> `$true`|On <p> `$true`||
 |
 
 #### Spoof settings in anti-phishing policies in Microsoft Defender for Office 365
@@ -207,10 +208,11 @@ Note that these are the same settings that are available in [anti-spam policy se
 ****
 
 |Security feature name|Default|Standard|Strict|Comment|
-|---|---|---|---|---|
-|**Enable anti-spoofing protection** <p> _EnableSpoofIntelligence_|On <p> `$true`|On <p> `$true`|On <p> `$true`||
-|**Enable Unauthenticated Sender** <p> _EnableUnauthenticatedSender_|On <p> `$true`|On <p> `$true`|On <p> `$true`|Adds a question mark (?) to the sender's photo in Outlook for unidentified spoofed senders. For more information, see [Spoof settings in anti-phishing policies](set-up-anti-phishing-policies.md).|
-|**If email is sent by someone who's not allowed to spoof your domain** <p> _AuthenticationFailAction_|**Move message to the recipients' Junk Email folders** <p> `MoveToJmf`|**Move message to the recipients' Junk Email folders** <p> `MoveToJmf`|**Quarantine the message** <p> `Quarantine`|This setting applies to spoofed senders that were automatically blocked as shown in the [spoof intelligence insight](learn-about-spoof-intelligence.md) or manually blocked in the [Tenant Allow/Block List](tenant-allow-block-list.md).|
+|---|:---:|:---:|:---:|---|
+|**Enable spoof intelligence** <p> _EnableSpoofIntelligence_|On <p> `$true`|On <p> `$true`|On <p> `$true`||
+|**If email is detected as spoof** <p> _AuthenticationFailAction_|**Move message to the recipients' Junk Email folders** <p> `MoveToJmf`|**Move message to the recipients' Junk Email folders** <p> `MoveToJmf`|**Quarantine the message** <p> `Quarantine`|This setting applies to spoofed senders that were automatically blocked as shown in the [spoof intelligence insight](learn-about-spoof-intelligence.md) or manually blocked in the [Tenant Allow/Block List](tenant-allow-block-list.md).|
+|**Show (?) for unauthenticated senders for spoof** <p> _EnableUnauthenticatedSender_|On <p> `$true`|On <p> `$true`|On <p> `$true`|Adds a question mark (?) to the sender's photo in Outlook for unidentified spoofed senders. For more information, see [Spoof settings in anti-phishing policies](set-up-anti-phishing-policies.md).|
+|**Show "via" tag** <p> _EnableViaTag_|On <p> `$true`|On <p> `$true`|On <p> `$true`|Adds a via tag (chris@contoso.com via fabrikam.com) to the From address if it's different from the domain in the DKIM signature or the **MAIL FROM** address. <p> If this setting isn't available to you, the question mark **and** the via tag are both controlled by the **Show (?) for unauthenticated senders for spoof** setting in your organization.|
 |
 
 #### Advanced settings in anti-phishing policies in Microsoft Defender for Office 365
@@ -223,7 +225,7 @@ For more information about this setting, see [Advanced phishing thresholds in an
 
 |Security feature name|Default|Standard|Strict|Comment|
 |---|:---:|:---:|:---:|---|
-|**Advanced phishing thresholds** <p> _PhishThresholdLevel_|**1 - Standard** <p> `1`|**2 - Aggressive** <p> `2`|**3 - More aggressive** <p> `3`||
+|**Phishing email threshold** <p> _PhishThresholdLevel_|**1 - Standard** <p> `1`|**2 - Aggressive** <p> `2`|**3 - More aggressive** <p> `3`||
 |
 
 ### Safe Links settings
@@ -242,9 +244,9 @@ In PowerShell, you use the [Set-AtpPolicyForO365](/powershell/module/exchange/se
 
 |Security feature name|Default|Standard|Strict|Comment|
 |---|:---:|:---:|:---:|---|
-|**Use Safe Links in: Office 365 applications** <p> _EnableSafeLinksForO365Clients_|On <p> `$true`|On <p> `$true`|On <p> `$true`|Use Safe Links in supported Office 365 desktop and mobile (iOS and Android) apps. For more information, see [Safe Links settings for Office 365 apps](safe-links.md#safe-links-settings-for-office-365-apps).|
-|**Do not track when users click Safe Links** <p> _TrackClicks_|On <p> `$false`|Off <p> `$true`|Off <p> `$true`|Turning off this setting (setting _TrackClicks_ to `$true`) tracks user clicks in supported Office 365 apps.|
-|**Do not let users click through Safe Links to original URL** <p> _AllowClickThrough_|On <p> `$false`|On <p> `$false`|On <p> `$false`|Turning on this setting (setting _AllowClickThrough_ to `$false`) prevents click through to the original URL in supported Office 365 apps.|
+|**Use Safe Links in: Office 365 apps** <p> _EnableSafeLinksForO365Clients_|On <p> `$true`|On <p> `$true`|On <p> `$true`|Use Safe Links in supported Office 365 desktop and mobile (iOS and Android) apps. For more information, see [Safe Links settings for Office 365 apps](safe-links.md#safe-links-settings-for-office-365-apps).|
+|**Do not track when users click protected links in Office 365 apps** <p> _TrackClicks_|On <p> `$false`|Off <p> `$true`|Off <p> `$true`|Turning off this setting (setting _TrackClicks_ to `$true`) tracks user clicks in supported Office 365 apps.|
+|**Do not let users click through to the original URL in Office 365 apps** <p> _AllowClickThrough_|On <p> `$false`|On <p> `$false`|On <p> `$false`|Turning on this setting (setting _AllowClickThrough_ to `$false`) prevents click through to the original URL in supported Office 365 apps.|
 |
 
 #### Safe Links policy settings
