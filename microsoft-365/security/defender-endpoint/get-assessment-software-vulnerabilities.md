@@ -365,9 +365,9 @@ GET /api/machines/SoftwareVulnerabilityChangesByMachine
 
 ### 3.4 Parameters
 
-- sinceTime (required) \– The data between a selected time and today.
-- pageSize (default = 50,000) \– number of results in response
-- $top \– number of results to return (doesn’t return @odata.nextLink and therefore doesn’t pull all the data)
+- sinceTime (required) – The data between a selected time and today.
+- pageSize (default = 50,000) – number of results in response
+- $top – number of results to return (doesn’t return @odata.nextLink and therefore doesn’t pull all the data)
 
 ### 3.5 Properties
 
