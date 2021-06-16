@@ -16,13 +16,13 @@ search.appverid:
 description: "Implement Microsoft app governance capabilities to govern your apps."
 ---
 
-# App governance for Microsoft 365 platform
+# App governance add-on to Microsoft Cloud App Security (in preview)
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
 Cyberattacks have become increasingly sophisticated in the ways they exploit the apps you have deployed in your on-premises and cloud infrastructures to establish a starting point for privilege escalation, lateral movement, and exfiltration of your data. To understand the potential risks and stop these types of attacks, you need to gain clear visibility into your organization’s app compliance posture to quickly identify when an app exhibits anomalous behaviors and to respond when these behaviors present risks to your environment, data, and users.
 
-Microsoft app governance is a security and compliance solution for business productivity and line of business apps built by third-party vendors and published for the Microsoft 365 application platform. App governance delivers full visibility, oversight, and governance into how these publishers and apps access, use, and share your sensitive data stored in Microsoft 365 through automated app-specific services and open Internet authentication protocols.
+The Microsoft app governance add-on feature to Microsoft Cloud App Security is a security and compliance solution for business productivity and line of business apps built by third-party vendors and published for the Microsoft 365 application platform. App governance delivers full visibility, oversight, and governance into how these publishers and apps access, use, and share your sensitive data stored in Microsoft 365 through automated app-specific services and open Internet authentication protocols.
 
 <!--
 The scale of ongoing cybersecurity incidents affecting large enterprises and smaller businesses highlights the dangers of supply chain attacks and the need to strengthen the security and compliance posture of every organization. Accelerated cloud adoption with Microsoft 365 and its rich application ecosystem are constantly growing. Attackers are gaining organizational footholds through applications because:
