@@ -58,7 +58,7 @@ There are four different ways to find and take auto investigation actions:
 5. In the sidepane take approve or reject actions.
 
 ## Action Center
-1. Go to the Microsoft 365 security center (<https://security.microsoft.com>) and sign in.
+1. Go to the [Microsoft 365 security center](https://security.microsoft.com) and sign in.
 2. In the navigation pane, select **Action center**.
 3. On the **Pending** tab, review the list of actions that are awaiting approval.
    - Select **Open investigation page** to view more details about the investigation.
