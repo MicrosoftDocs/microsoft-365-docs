@@ -1,5 +1,5 @@
 ---
-title: "Set up a connector to archive Symphony data in Microsoft 365"
+title: "Set up a Symphony DataParser connector to archive data in Microsoft 365"
 f1.keywords:
 - NOCSH
 ms.author: markjjo
