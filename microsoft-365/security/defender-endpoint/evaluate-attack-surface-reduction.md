@@ -39,7 +39,7 @@ Set attack surface reduction rules for devices running any of the following edit
 > [!WARNING]
 > Enabling attack service reduction rules on Windows Server 2016 might lead to unexpected results, and impact server performance. We do not recommend enabling or deploying attack surface reduction rules to unsupported platforms.
 
-Learn how to evaluate attack surface reduction rules by [enabling audit mode](/security/defender-endpoint/audit-windows-defender) to test the feature directly in your organization.
+Learn how to evaluate attack surface reduction rules by [enabling audit mode](/security/defender-endpoint/audit-windows-defender.md) to test the feature directly in your organization.
 
 > [!TIP]
 > You can also visit the Microsoft Defender for Endpoint demo scenario website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to confirm the feature is working and see how it works.
