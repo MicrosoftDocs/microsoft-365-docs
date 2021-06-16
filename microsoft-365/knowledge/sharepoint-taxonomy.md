@@ -53,7 +53,7 @@ You can request a single term or multiple terms in a term set. You initiate the 
 3. On the term page, select the **Usage settings** tab.
 4. In the **Create topic from this term** section, select **Create topic**.
 
-<Insert screenshots from final UX listing steps>
+**Insert screenshots from final UX**
 
 ### Request multiple terms in a term set
 
@@ -68,7 +68,7 @@ You can request a single term or multiple terms in a term set. You initiate the 
 
 Viva Topics creates the request and queues it to be processed. Viva Topics evaluates the terms and their associated resources and creates new topics or merges with existing topics. After the initial request, the topic will be created within 24 hours.
 
-<Insert screenshots from final UX listing steps>
+<Insert screenshots from final UX>
 
 ## View the status of the topic creation request
 
@@ -91,7 +91,7 @@ In the term store, you can view the status of requests by:
 2. On the term page, select the **Usage settings** tab.
 3. In the **Create topic from this term** section, view the status of the request.
 
-<Insert screenshots from final UX>
+**Insert screenshots from final UX**
 
 ### View the status for multiple terms in a term set
 
@@ -103,7 +103,7 @@ In the term store, you can view the status of requests by:
 5. If you have many requests, select **Load more** to keep loading additional items.
 6. To review requests that are in a particular state, use the filter option on the **Status** column.
 
-<Insert screenshots from final UX>
+**Insert screenshots from final UX**
 
 ## Identify topics created from terms
 
@@ -111,23 +111,9 @@ After Viva Topics processes a request and creates a topic, you can see a topic c
 
 Also, if you go to individual terms, and select the **Usage settings** tab, the **Create topic from this term** section shows a topic card when you hover over the name.
 
-<Insert screenshot from final UX of topic card on hover>
+**Insert screenshot from final UX - topic card on hover**
 
 Topic pages also indicate that the taxonomy is one of the sources for the topic.
 
-<Insert screenshot of source string in topic page>
-
-
-
-Questions
-
-Why is the “Select All” option limited to immediate children?
-In hierarchies with multiple levels, there are often container terms or nodes that don’t represent a topic. But it’s likely that if a term at a particular level is a good candidate, so are its siblings. To prevent any excessive and unintended bulk selection across levels, and to promote a conservative approach to keeping quality high, the bulk selection is currently limited to immediate children.
-
-Why are only global term sets considered?
-Topics are available across your entire organization, so the immediate comparison that can be drawn to SharePoint taxonomies are global terms. In the future, based on usage and feedback, support might be expanded.  
-
-Why am I unable to see some requests I created in the report?
-If you make bulk requests, especially using the Select All option, it could take longer than expected to process the requests. This might delay them from appearing in the report. If this happens, check back later to see the requests.
-
+**Insert screenshot from final UX - source string in topic page**
 
