@@ -38,63 +38,69 @@ Once you have performed an [incident response for a simulated attack](eval-defen
 | Manage incidents | Modify incident properties to ensure correct assignment, add tags and comments, and to resolve an incident. | [Manage incidents](manage-incidents.md)  |
 | Automated investigation and response | Automated investigation and response (AIR) capabilities that can help your security operations team address threats more efficiently and effectively. | [Automated investigation and response](m365d-autoir.md) |
 | Action center |  A "single pane of glass" experience for incident and alert tasks such as approving pending remediation actions. | [Action center](m365d-action-center.md) |
-| Advanced hunting | A query-based threat-hunting tool that lets you proactively inspect events in your network and locate threat indicators and entities. | [Advanced hunting scenario](#advanced-hunting-scenario) |
+| Advanced hunting | A query-based threat-hunting tool that lets you proactively inspect events in your network and locate threat indicators and entities. | [Advanced hunting](#advanced-hunting) |
 ||||
 
-## Advanced hunting scenario
+## Advanced hunting
 
 > [!NOTE]
-> Before we walk you through the simulation, watch the following video to understand the advanced hunting concepts, see where you can find it in the portal, and know how it can help you in your security operations:
+> Before we walk you through the simulation, watch the following video to understand the advanced hunting concepts, see where you can find it in the portal, and know how it can help you in your security operations
+
+<br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Bp7O]
 
 ### Hunting environment requirements
 
-There's a single internal mailbox and device required for this scenario. You'll also need an external email account to send the test message.
+There's a single internal mailbox and device required for this simulation. You'll also need an external email account to send the test message.
 
 1. Verify that your tenant has [enabled Microsoft 365 Defender](m365d-enable.md#confirm-that-the-service-is-on).
 2. Identify a target mailbox to be used for receiving email.
-    a. This mailbox must be monitored by Microsoft Defender for Office 365
-    b. The device from requirement 3 needs to access this mailbox
+
+   - This mailbox must be monitored by Microsoft Defender for Office 365
+
+   - The device from requirement 3 needs to access this mailbox
+
 3. Configure a test device:
+
     a. Make sure you are using Windows 10 version 1903 or later version.
+
     b. Join the test device to the test domain.
+
     c. [Turn on Windows Defender Antivirus](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features). If you are having trouble enabling Windows Defender Antivirus, see [this troubleshooting topic](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy).
+
     d. [Onboard to Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints).
 
 ### Run the simulation
 
-1. From an external email account, send an email to the mailbox identified in step 2 of the test environment requirements section. Include an attachment that will be allowed through any existing email filter policies. This file does not need to be malicious or an executable. Suggested file types are <i>.pdf</i>, <i>.exe</i> (if allowed), or Office document such as a Word file.
-2. Open the sent email from the device configured as defined in step 3 of the test environment requirements section. Either open the attachment or save the file to the device.
+1. From an external email account, send an email to the mailbox identified in step 2 of the hunting environment requirements section. Include an attachment that will be allowed through any existing email filter policies. This file does not need to be malicious or an executable. Suggested file types are <i>.pdf</i>, <i>.exe</i> (if allowed), or an Office document type such as a Word file.
+
+2. Open the sent email from the device configured as defined in step 3 of the hunting environment requirements section. Either open the attachment or save the file to the device.
 
 #### Go hunting
 
-1. Open the security.microsoft.com portal.
+1. Open the [Microsoft 365 Defender portal](https://security.microsoft.com/).
 
-2. Navigate to **Hunting > Advanced hunting**.
-
-   ![Screenshot of advanced hunting in the M365 Security Center portal navigation bar](../../media/mtp/fig17.png)
+2. From the navigation pane, select **Hunting > Advanced hunting**.
 
 3. Build a query that starts by gathering email events.
 
-   1. From the query pane, select New.
+   1. Select **Query > New**.
 
-   1. Double-click on the EmailEvents table from the schema.
+   1. In the **Email** groups under **Advanced hunting**, double-click **EmailEvents**. You should see this in the query window.
 
       ```console
       EmailEvents
       ```
 
-   1. Change the time frame to the last 24 hours. Assuming the email you sent when you ran the simulation above was in the past 24 hours, otherwise change the time frame.
+   1. Change the time frame of the query to the last 24 hours. Assuming the email you sent when you ran the simulation above was in the past 24 hours, otherwise change the time frame as needed.
 
-      ![Screenshot of where you can change the time frame. Open the drop-down menu to choose from range of time frame options](../../media/mtp/fig18.png)
-
-   1. Run the query. You may have many results depending on the environment for the pilot.
+   1. Select **Run query**. You may have differing results depending on your pilot environment.
 
       > [!NOTE]
       > See the next step for filtering options to limit data return.
 
-      ![Screenshot of the advanced hunting query results](../../media/mtp/fig19.png)
+      ![Example of the advanced hunting query results](../../media/mtp/fig19.png)
 
         > [!NOTE]
         > Advanced hunting displays query results as tabular data. You can also opt to view the data in other format types such as charts.
@@ -103,7 +109,9 @@ There's a single internal mailbox and device required for this scenario. You'll 
 
       In the sample, the email was sent from a Yahoo account. Click the **+** icon beside **yahoo.com** under the SenderFromDomain section and then click **Apply** to add the selected domain to the query. Use the domain or email account that was used to send the test message in step 1 of Run the Simulation to filter your results. Run the query again to get a smaller result set to verify that you see the message from the simulation.
 
-      ![Screenshot of the filters. Use filters to narrow down the search, and find what you're looking for faster.](../../media/mtp/fig20.png)
+      ![Example of using filters](../../media/mtp/fig20.png)
+
+      You should see this in the query window.
 
       ```console
       EmailEvents
@@ -112,9 +120,9 @@ There's a single internal mailbox and device required for this scenario. You'll 
 
    1. Click the resulting rows from the query so you can inspect the record.
 
-      ![Screenshot of the inspect record side panel which opens up when an advanced hunting result is selected](../../media/mtp/fig21.png)
+      ![Example of the inspect record side panel which opens up when an advanced hunting result is selected](../../media/mtp/fig21.png)
 
-4. Now that you have verified that you can see the email, add a filter for the attachments. Focus on all emails with attachments in the environment. For this scenario, focus on inbound emails, not those that are being sent out from your environment. Remove any filters you have added to locate your message and add "| where **AttachmentCount > 0** and **EmailDirection** == **"Inbound""**
+4. Now that you have verified that you can see the email, add a filter for the attachments. Focus on all emails with attachments in the environment. For this simulation, focus on inbound emails, not those that are being sent out from your environment. Remove any filters you have added to locate your message and add "| where **AttachmentCount > 0** and **EmailDirection** == **"Inbound""**
 
    The following query will show you the result with a shorter list than your initial query for all email events:
 
@@ -170,44 +178,44 @@ Custom detections will run the query according to the frequency you set, and the
 
 1. On the query page, remove lines 7 and 8 that were added in step 7 of the Go hunting instructions and click **Create detection rule**.
 
-   ![Screenshot of where you can click create detection rule in the the advanced hunting page](../../media/mtp/fig22.png)
+   ![Example of where you can click create detection rule in the the advanced hunting page](../../media/mtp/fig22.png)
 
    > [!NOTE]
    > If you click **Create detection rule** and you have syntax errors in your query, your detection rule won't be saved. Double-check your query to ensure there's no errors.
 
 2. Fill in the required fields with the  information that will allow the security team to understand the alert, why it was generated, and what actions you expect them to take.
 
-   ![Screenshot of the create detection rule page where you can define the alert details](../../media/mtp/fig23.png)
+   ![Example of the create detection rule page where you can define the alert details](../../media/mtp/fig23.png)
 
    Ensure that you fill out the fields with clarity to help give the next user an informed decision about this detection rule alert
 
 3. Select what entities are impacted in this alert. In this case, select **Device** and **Mailbox**.
 
-   ![Screenshot of the create detection rule page where you can choose the parameters of the impacted entities](../../media/mtp/fig24.png)
+   ![Example of the create detection rule page where you can choose the parameters of the impacted entities](../../media/mtp/fig24.png)
 
 4. Determine what actions should take place if the alert is triggered. In this case, run an antivirus scan, though other actions could be taken.
 
-   ![Screenshot of the create detection rule page where you can run an antivirus scan when an alert is triggered to help address threats](../../media/mtp/fig25.png)
+   ![Example of the create detection rule page where you can run an antivirus scan when an alert is triggered to help address threats](../../media/mtp/fig25.png)
 
 5. Select the scope for the alert rule. Since this query involve devices, the device groups are relevant in this custom detection according to Microsoft Defender for Endpoint context. When creating a custom detection that does not include devices as impacted entities, scope does not apply.
 
-   ![Screenshot of the create detection rule page where you can set the scope for the alert rule manages your expectations for the results that you'll see](../../media/mtp/fig26.png)
+   ![Example of the create detection rule page where you can set the scope for the alert rule manages your expectations for the results that you'll see](../../media/mtp/fig26.png)
 
    For this pilot, you might want to limit this rule to a subset of testing devices in your production environment.
 
 6. Select **Create**. Then, select **Custom detection rules** from the navigation panel.
 
-   ![Screenshot of Custom detection rules option in the menu](../../media/mtp/fig27a.png)
+   ![Example of Custom detection rules option in the menu](../../media/mtp/fig27a.png)
 
-   ![Screenshot of the detection rules page which displays the rule and execution details](../../media/mtp/fig27b.png)
+   ![Example of the detection rules page which displays the rule and execution details](../../media/mtp/fig27b.png)
 
    From this page, you can select the detection rule, which will open a details page.
 
-   ![Screenshot of the email attachments page where you can see the status of the rule execution, triggered alerts and actions, edit the detection, and so on](../../media/mtp/fig28.png)
+   ![Example of the email attachments page where you can see the status of the rule execution, triggered alerts and actions, edit the detection, and so on](../../media/mtp/fig28.png)
 
 ### Advanced hunting walk-through exercises
 
-To learn more about advanced hunting, the following webcasts will walk you through the capabilities of advanced hunting within Microsoft 365 Defender to create cross-pillar queries, pivot to entities and create custom detections and remediation actions.
+To learn more about advanced hunting, the following webcasts will walk you through the capabilities of advanced hunting within Microsoft 365 Defender to create cross-pillar queries, pivot to entities, and create custom detections and remediation actions.
 
 > [!NOTE]
 > Be prepared with your own GitHub account to run the hunting queries in your pilot test lab environment.
