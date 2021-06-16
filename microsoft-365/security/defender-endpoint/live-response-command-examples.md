@@ -36,67 +36,67 @@ Depending on the role that's been granted to you, you can run basic or advanced 
 
 ## analyze 
 
-```
+```console
 # Analyze the file malware.txt
 analyze file c:\Users\user\Desktop\malware.txt
 ```
 
-```
+```console
 # Analyze the process by PID
 analyze process 1234
 ```
 
 ## connections
 
-```
+```console
 # List active connections in json format using parameter name
 connections -output json
 ```
 
-```
+```console
 # List active connections in json format without parameter name
 connections json
 ```
 
 ## dir
 
-```
+```console
 # List files and sub-folders in the current folder
 dir
 ```
 
-```
+```console
 # List files and sub-folders in a specific folder
 dir C:\Users\user\Desktop\
 ```
 
-```
+```console
 # List files and subfolders in the current folder in json format
 dir -output json
 ```
 
 ## fileinfo
 
-```
+```console
 # Display information about a file
 fileinfo C:\Windows\notepad.exe
 ```
 
 ## findfile
 
-```
+```console
 # Find file by name
 findfile test.txt
 ```
 
 ## getfile
 
-```
+```console
 # Download a file from a machine
 getfile c:\Users\user\Desktop\work.txt
 ```
 
-```
+```console
 # Download a file from a machine, automatically run prerequisite commands
 getfile c:\Users\user\Desktop\work.txt -auto
 ```
@@ -115,51 +115,51 @@ getfile c:\Users\user\Desktop\work.txt -auto
 > Use PowerShell as an alternative, if you have problems using this command from within Live Response.
 
 ## processes
-```
+```console
 # Show all processes
 processes
 ```
 
-```
+```console
 # Get process by pid
 processes 123
 ```
 
-```
+```console
 # Get process by pid with argument name
 processes -pid 123
 ```
 
-```
+```console
 # Get process by name
 processes -name notepad.exe
 ```
 
 ## putfile
 
-```
+```console
 # Upload file from library
 putfile get-process-by-name.ps1
 ```
 
-```
+```console
 # Upload file from library, overwrite file if it exists
 putfile get-process-by-name.ps1 -overwrite
 ```
 
-```
+```console
 # Upload file from library, keep it on the machine after a restart
 putfile get-process-by-name.ps1 -keep
 ```
 
 ## registry
 
-```
+```console
 # Show information about the values in a registry key
 registry HKEY_CURRENT_USER\Console
 ```
 
-```
+```console
 # Show information about a specific registry value
 registry HKEY_CURRENT_USER\Console\\ScreenBufferSize
 ```
@@ -167,29 +167,29 @@ registry HKEY_CURRENT_USER\Console\\ScreenBufferSize
 
 ## remediate
 
-```
+```console
 # Remediate file in specific path
 remediate file c:\Users\user\Desktop\malware.exe
 ```
 
-```
+```console
 # Remediate process with specific PID
 remediate process 7960
 ```
 
-```
+```console
 # See list of all remediated entities
 remediate list
 ```
 
 ## run
 
-```
+```console
 # Run PowerShell script from the library without arguments
 run script.ps1
 ```
 
-```
+```console
 # Run PowerShell script from the library with arguments
 run get-process-by-name.ps1 -parameters "-processName Registry"
 ```
@@ -200,17 +200,17 @@ run get-process-by-name.ps1 -parameters "-processName Registry"
 >
 ## scheduledtask
 
-```
+```console
 # Get all scheduled tasks
 scheduledtasks
 ```
 
-```
+```console
 # Get specific scheduled task by location and name
 scheduledtasks Microsoft\Windows\Subscription\LicenseAcquisition
 ```
 
-```
+```console
 # Get specific scheduled task by location and name with spacing
 scheduledtasks "Microsoft\Configuration Manager\Configuration Manager Health Evaluation"
 ```
@@ -218,18 +218,30 @@ scheduledtasks "Microsoft\Configuration Manager\Configuration Manager Health Eva
 
 ## undo
 
-```
+```console
 # Restore remediated registry
 undo registry HKEY_CURRENT_USER\Console\ScreenBufferSize
 ```
 
-```
+```console
 # Restore remediated scheduledtask
 undo scheduledtask Microsoft\Windows\Subscription\LicenseAcquisition
 ```
 
-```
+```console
 # Restore remediated file
 undo file c:\Users\user\Desktop\malware.exe
 ```
 
+
+## library
+
+```console
+# List files in the library
+library
+```
+
+```console
+# Delete a file from the library
+library delete script.ps1
+```

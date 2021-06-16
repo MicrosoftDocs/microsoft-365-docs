@@ -32,18 +32,8 @@
 #### [Phase 1: Prepare](switch-to-microsoft-defender-prepare.md)
 #### [Phase 2: Setup](switch-to-microsoft-defender-setup.md)
 #### [Phase 3: Onboard](switch-to-microsoft-defender-onboard.md)
-### [Switch from McAfee to Microsoft Defender for Endpoint]()
-#### [Overview of migration](mcafee-to-microsoft-defender-migration.md)
-#### [Phase 1: Prepare](mcafee-to-microsoft-defender-prepare.md) 
-#### [Phase 2: Setup](mcafee-to-microsoft-defender-setup.md)
-#### [Phase 3: Onboard](mcafee-to-microsoft-defender-onboard.md)
-### [Switch from Symantec to Microsoft Defender for Endpoint]()
-#### [Overview of migration](symantec-to-microsoft-defender-endpoint-migration.md)
-#### [Phase 1: Prepare](symantec-to-microsoft-defender-atp-prepare.md)
-#### [Phase 2: Setup](symantec-to-microsoft-defender-atp-setup.md)
-#### [Phase 3: Onboard](symantec-to-microsoft-defender-atp-onboard.md)
-### [Manage Microsoft Defender for Endpoint after migration]()
-#### [Overview of managing Microsoft Defender for Endpoint](manage-atp-post-migration.md)
+### [Manage Defender for Endpoint after migration]()
+#### [Overview of managing Defender for Endpoint](manage-atp-post-migration.md)
 #### [Intune (recommended)](manage-atp-post-migration-intune.md)
 #### [Configuration Manager](manage-atp-post-migration-configuration-manager.md)
 #### [Group Policy Objects](manage-atp-post-migration-group-policy-objects.md)
@@ -471,6 +461,8 @@
 ###### [Get access with application context](exposed-apis-create-app-webapp.md)
 ###### [Get access with user context](exposed-apis-create-app-nativeapp.md)
 ###### [Get partner application access](exposed-apis-create-app-partners.md)
+
+
 ##### [Microsoft Defender for Endpoint APIs Schema]()
 ###### [Supported Microsoft Defender for Endpoint APIs](exposed-apis-list.md)
 ###### [Common REST API error codes](common-errors.md)
@@ -523,6 +515,7 @@
 ####### [Get IP related alerts](get-ip-related-alerts.md)
 ####### [Get IP statistics](get-ip-statistics.md)
 
+
 ###### [Machine]()
 ####### [Machine methods and properties](machine.md)
 ####### [List machines](get-machines.md)
@@ -537,6 +530,9 @@
 ####### [Find machines by tag](find-machines-by-tag.md)
 ####### [Get missing KBs](get-missing-kbs-machine.md)
 ####### [Set device value](set-device-value.md)
+####### [Update machine](update-machine-method.md)
+
+
 
 ###### [Machine Action]()
 ####### [Machine Action methods and properties](machineaction.md)
@@ -544,13 +540,16 @@
 ####### [Get Machine Action](get-machineaction-object.md)
 ####### [Collect investigation package](collect-investigation-package.md)
 ####### [Get investigation package SAS URI](get-package-sas-uri.md)
+####### [Get live response result](get-live-response-result.md)
 ####### [Isolate machine](isolate-machine.md)
 ####### [Release machine from isolation](unisolate-machine.md)
 ####### [Restrict app execution](restrict-code-execution.md)
 ####### [Remove app restriction](unrestrict-code-execution.md)
 ####### [Run antivirus scan](run-av-scan.md)
+####### [Run live response](run-live-response.md) 
 ####### [Offboard machine](offboard-machine-api.md)
 ####### [Stop and quarantine file](stop-and-quarantine-file.md)
+####### [Cancel machine action](cancel-machine-action.md)
 
 ###### [Recommendation]()
 ####### [Recommendation methods and properties](recommendation.md)
