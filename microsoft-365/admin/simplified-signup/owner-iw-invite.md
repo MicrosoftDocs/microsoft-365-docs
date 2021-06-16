@@ -24,19 +24,21 @@ As the admin of a Microsoft 365 Business Standard subscription, you can invite y
 
 1. In the Microsoft 365 admin center, select **Create an account for another person**.
 
-2. Add the usernames and email addresses for the people you want to invite and choose **Send**.
+2. Add the usernames and email addresses for the people you want to invite and choose **Send**. An invitation email will be sent to all the users you added to add their user account information to Microsoft 365.
 
 ## Accept an invitation to a Microsoft 365 Business Standard subscription
 
-You'll get an email notification that looks like this when someone in your organization sets you up with a new Microsoft 365 for business user account. When you get this email, you'll have to complete a few steps before you can start using your new user account.
+When someone adds you to a Microsoft 365 for business organization, you'll get an email invitation with steps on how to join. There are a couple of options when you join.
 
-:::image type="content" source="../../media/new-business-account-email.png" alt-text="Screenshot: Email notification letting user know that a new business account has been created for them.":::
+- **Join a personal Microsoft 365 Business Standard organization**  In this scenario, you're joining an organization that doesn't have a different professional email for users. You'll sign in with your regular email account.
 
-## Before you begin
+- **Join a business Microsoft 365 Business Standard organization**  In this scenario, you're joining an organization that has professional business email. All users have a shared domain email address. For example, @contoso.com.
 
-Make sure you have your current account sign in details before you start these steps.
+### Join a personal Microsoft 365 Business Standard organization
 
-## Set up your user account
+Your email looks like this to set up your user account. When you get this email, you'll have to complete a few steps before you can start using your new user account.
+
+(**Add screenshot here**)
 
 1. From the invitation email, select **Accept**.
 
@@ -50,14 +52,43 @@ Make sure you have your current account sign in details before you start these s
 
 1. On the Welcome to Microsoft 365 page, you can download Office desktop and mobile apps, and set up OneDrive.
 
-## Set up Microsoft 365 Business Standard
-sf
+### Join a business Microsoft 365 Business Standard organization
+
+Your email looks like this to set up your **business user account**. When you get this email, you'll have to complete a few steps before you can start using your new user account.
+
+(**Add screenshot here**)
+
+Make sure you have your current account sign in details before you start these steps.
+
+1. From the invitation email, select **Set up this account**.
+
+2. Before you can sign in to your new business account, you'll have to set it up with your old user account. Select **Sign in** to log into your old user account.
+
+1. You'll then sign out and back in with your new business user account. This is the user account that you'll use to sign into Microsoft 365 for business.
+
+3. Choose **Accept** on the **Terms and Conditions** page.
+
+1. On the **How you'll sign in** page, learn about your new account and select **Next**.
+
+1. On the **Add new account to desktop apps** page, open any Microsoft 365 app, select your profile and sign in with the new username and temporary password. select **Next**.
+
+1. Follow the steps on the **Add new account to Outlook** page to set up Outlook. Select **Next**.
+
+1. Follow the steps on the **Move files to OneDrive for Business** page to set up OneDrive. Select **Next**.
+
+1. On the **Add new account to Microsoft Teams** page, follow the steps to set up Teams. Select **I'm done** when you're complete.
+
+### Move your work data from a personal Microsoft 365 subscription to a business Microsoft 365 subscription
+
+(**Do we have this covered elsewhere on Docs**)
+
+### Add professional email address
+
+Once you've completed purchasing and setting up your subscription, you can add a domain for professional business email and a website. Follow the steps in the [Set up Microsoft Business Standard](../setup/setup-business-standard.md) topic to get started.
 
 ### Download desktop apps
-sdfdf
 
-### D
-
+Download Microsoft 365 apps by following the steps in this article.
 
 5. Open any of your Microsoft 365 apps, like Word, Excel or PowerPoint, select your profile icon and then **Sign in with a different account**. Follow the steps and choose **Next** to set up Outlook.
 
@@ -68,3 +99,5 @@ sdfdf
 8. Open Teams, select your profile icon, and then **Add work or school account**. Follow the steps to add your new account to Teams. Select **I'm done** when Teams is set up.
 
 ## Next steps
+
+Accept an invitation once its flipped from a personal email to a business email.

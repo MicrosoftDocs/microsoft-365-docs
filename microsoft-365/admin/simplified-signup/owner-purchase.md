@@ -45,23 +45,25 @@ To sign up and purchase Microsoft 365 for your business, complete the following 
 
 7. Decide how you'll sign in to Microsoft 365. You can use your current email address or create a new business email by adding a domain. In this example, we'll select **Next** to sign in with your personal email address.
 
+> [!IMPORTANT]
+> You can decide to add you domain now or later. If you're ready to buy or add a domain, follow the steps in Set up Microsoft 365 Business Standard. If you're not ready to add or buy a domain yet, follow the rest of the steps in this article.
+
 - **Sign in with your personal email, for example, alliebellew@hotmail.com.** If your email address doesn't include your business name and if you don't have a web site that uses your business name, you can easily buy a domain later. You'll sign into Microsoft 365 with this email address.
 
 - **Create a new business email account (advanced)** You want to create a new business account with a website that uses your business name. To do this, you'll need a domain. You can either buy a domain or add a domain you already own. You'll then sign into Microsoft 365 with this new email address.
 
-8. Then create a password on the next page. Select **Create account** to continue. On the next page, read about how handle your data and select whether you want Microsoft Partners to contact you. Select **Next**.
+8. Create a password on the next page, and select **Create account** to continue. On the next page, read about how handle your data and select whether you want Microsoft Partners to contact you. Select **Next**.
 
-9. On the next page, select how many Microsoft 365 Business Standard licenses you want for your organization and select **Add payment method** and continue with checkout to **Place order**.
+9. Select how many Microsoft 365 Business Standard licenses you want for your organization and select **Add payment method** and continue with checkout to **Place order**.
 
-10. On the Confirmation details, we'll give you some more info about your subscription. You can now go to the Microsoft 365 admin center to add users, install Office apps, invite your team to use Microsoft 365 and more.
+10. On the **Confirmation details** page, we'll give you some more info about your subscription. You can now go to the Microsoft 365 admin center to add users, install Office apps, invite your team to use Microsoft 365 and more. We'll also send you an email with set up steps for Microsoft 365 Business Standard.
 
 > [!IMPORTANT]
 > You can follow these steps to purchase Microsoft 365 Apps as well. For more info, see [Microsoft 365 Apps for business](setup-apps-for-business.md) after you purchase Microsoft 365 Apps for business.
 
 ## Next steps
 
-1. Once you've completed purchasing setting up your first subscription, follow the steps in the [Set up Microsoft Business Standard](../setup/setup-business-standard.md) topic to get started.
-1. Are you ready to add a domain and create a new business email account? Then follow the steps in the 
+1. Once you've completed purchasing and setting up your subscription, you can professional business email and a calendar for your users by adding a domain. Follow the steps in the [Set up Microsoft Business Standard](../setup/setup-business-standard.md) topic to get started.
 1. Do you have employees or partners that you want to add to your subscription? Follow the steps in the [Set up my business account in Microsoft 365](owner-iw-invite.md) topic.
 
 ## Related articles
