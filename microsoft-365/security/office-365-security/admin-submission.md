@@ -152,7 +152,7 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
 
      When you're finished, click **Apply**.
 
-     ![New Filter options for admin submissions](../../media/admin-submission-email-filter-options.png)
+     ![New Filter options for admin submissions](../../media/admin-submission-email-filter-options.png) (need new screenshot)
 
    - To group the entries, click **Group** and select one of the following values from the drop down list:
      - **None**
@@ -209,7 +209,7 @@ If you've deployed the [Report Message add-in](enable-the-report-message-add-in.
 
      When you're finished, click **Apply**.
 
-    ![New Filter options for user submissions](../../media/user-submissions-filter-options.png)
+    ![New Filter options for user submissions](../../media/user-submissions-filter-options.png) (need new screenshot)
 
    - To group the entries, click **Group** and select one of the following values from the drop down list:
      - **None**
@@ -240,4 +240,4 @@ On the **User reported messages** tab, select a message in the list, click **Sub
 - **Report spam**
 - **Trigger investigation**
 
-![New Options on the Action button](../../media/user-submission-custom-mailbox-action-button.png)
+![New Options on the Action button](../../media/user-submission-custom-mailbox-action-button.png) (need new screenshot)
