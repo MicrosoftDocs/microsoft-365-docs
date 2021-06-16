@@ -35,7 +35,7 @@ And visit the [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/ro
 
 ### Data Loss Prevention
 
-- New guidance for [planning your Data Loss Prevention](dlp-overview-plan-for-dlp) strategy.
+- New guidance for [planning your Data Loss Prevention](dlp-overview-plan-for-dlp.md) strategy.
 
 ### Retention and records management
 
@@ -44,7 +44,7 @@ And visit the [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/ro
 
 ### Sensitive Information Types
 
-- New information added to help you [Modify a Keyword Dictionary](sit-modify-keyword-dictionary).
+- New information added to help you [Modify a Keyword Dictionary](sit-modify-keyword-dictionary.md).
 
 ### Sensitivity labels
 
