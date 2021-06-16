@@ -47,17 +47,9 @@ Thank you for participating in our preview program! Give us feedback on your ove
 </table>
 <br>
 
-Defender for Endpoint Plan 1 includes all of the following features and capabilities:
-
-- [Next-generation protection](#next-generation-protection) (includes antimalware and antivirus)
-- [Attack surface reduction](#attack-surface-reduction)
-- [Manual response actions](#manual-response-actions)
-- [Centralized management](#centralized-management)
-- [Support for Windows devices and iOS devices](#cross-platform-support)
-
-The features and capabilities in Defender for Endpoint Plan 1 are described in the following sections.
-
 ## Next-generation protection
+
+:::image type="content" source="../../media/defender-endpoint/ngp-icon.png" alt-text="Next-generation protection":::
 
 Your next-generation protection in Defender for Endpoint Plan 1 includes Microsoft Defender Antivirus and robust antimalware protection. With this protection, you get:
 
