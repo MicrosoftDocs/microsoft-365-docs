@@ -38,7 +38,7 @@ These remediation actions are not taken unless and until your security operation
 There are four different ways to find and take auto investigation actions:
 
 - [Incident queue](https://security.microsoft.com/incidents).
-- Action Center (<https://security.microsoft.com/action-center/pending>)
+- [Action center](https://security.microsoft.com/action-center/pending).
 - Investigation itself (accessed via Incident or from an alert)
 - Investigation and remediation investigations queue (<https://security.microsoft.com/airinvestigation>)
 
