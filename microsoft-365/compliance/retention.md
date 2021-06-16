@@ -264,7 +264,7 @@ Use the following table to help you identify whether to use a retention policy o
 **Footnote:**
 
 <sup>\*</sup>
-For retention labels that don't mark the content as a record or regulatory record, auditing events are limited to when an item in SharePoint has a label applied, changed, or removed. For auditing details for retention labels, see the [Auditing retention actions](#auditing-retention-actions) section on this page.
+For retention labels that don't mark the content as a record or regulatory record, auditing events are limited to when an item in SharePoint or OneDrive has a label applied, changed, or removed. For auditing details for retention labels, see the [Auditing retention actions](#auditing-retention-actions) section on this page.
 
 ### Combining retention policies and retention labels
 
@@ -391,7 +391,7 @@ For the full list of auditing events, see [Retention policy and retention label 
 
 Retention actions that are logged as auditing events are available only for retention labels and not for retention policies:
 
-- When a retention label is applied, changed, or removed from an item in SharePoint:
+- When a retention label is applied, changed, or removed from an item in SharePoint or OneDrive:
     - From **File and page activities**, select **Changed retention label for a file** 
 
 - When a labeled item in SharePoint is marked as a record, and it is unlocked or locked by a user:
@@ -400,7 +400,7 @@ Retention actions that are logged as auditing events are available only for rete
 - When a retention label that marks content as a record or regulatory record is applied to an item in Exchange:
     - From **Exchange mailbox activities**, select **Labeled message as a record**
 
-- When a labeled item in SharePoint or Exchange is marked as a record or regulatory record, and it is permanently deleted:
+- When a labeled item in SharePoint, OneDrive, or Exchange is marked as a record or regulatory record, and it is permanently deleted:
     - From **File and page activities**, select **Deleted file marked as a record**
 
 ## PowerShell cmdlets for retention policies and retention labels
