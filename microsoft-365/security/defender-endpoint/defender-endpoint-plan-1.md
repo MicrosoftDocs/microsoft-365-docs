@@ -43,6 +43,10 @@ Thank you for participating in our preview program! Give us feedback on your ove
 <td><a href="attack-surface-reduction"><center><img src="images/asr-icon.png" alt="Attack surface reduction"><br><b>Attack surface reduction</b></center></a></td>
 <td><center><a href="#centralized-management"><br>Centralized configuration<br>Administration<br>APIs</a></center></td>
 </tr>
+<tr>
+<td colspan="7">
+<a href="#cross-platform-support"><center><b>Cross-platform support</a></b></center></td>
+</tr>
 </table>
 <br>
 
