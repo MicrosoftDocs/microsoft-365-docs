@@ -4051,22 +4051,22 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "microsoft-365/managed-desktop/working-with-managed-desktop/battery-insights",
+      "source_path": "microsoft-365/managed-desktop/working-with-managed-desktop/battery-insights.md",
       "redirect_url": "/microsoft-365/managed-desktop/working-with-managed-desktop/reports",
       "redirect_document_id": false
     },
     {
-      "source_path": "microsoft-365/managed-desktop/working-with-managed-desktop/usage-insights",
+      "source_path": "microsoft-365/managed-desktop/working-with-managed-desktop/usage-insights.md",
       "redirect_url": "/microsoft-365/managed-desktop/working-with-managed-desktop/reports",
       "redirect_document_id": false 
     },
     {
-      "source_path": "microsoft-365/managed-desktop/working-with-managed-desktop/security-update-insights",
+      "source_path": "microsoft-365/managed-desktop/working-with-managed-desktop/security-update-insights.md",
       "redirect_url": "/microsoft-365/managed-desktop/working-with-managed-desktop/reports",
       "redirect_document_id": false 
     },
     {
-      "source_path": "microsoft-365/managed-desktop/working-with-managed-desktop/insights",
+      "source_path": "microsoft-365/managed-desktop/working-with-managed-desktop/insights.md",
       "redirect_url": "/microsoft-365/managed-desktop/working-with-managed-desktop/reports",
       "redirect_document_id": false 
     },
