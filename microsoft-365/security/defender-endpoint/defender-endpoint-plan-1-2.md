@@ -22,7 +22,7 @@ Microsoft Defender for Endpoint is an enterprise endpoint security platform desi
 Soon, Defender for Endpoint will be available in two plans: [Defender for Endpoint Plan 1](defender-endpoint-plan-1.md) (currently in preview), and [Defender for Endpoint Plan 2](microsoft-defender-endpoint.md) (available now).
 
 
-## Compare Defender for Endpoint Plan 1 and Plan 2
+## Compare Defender for Endpoint plans
 
 | [Defender for Endpoint Plan 1](defender-endpoint-plan-1.md) | [Defender for Endpoint Plan 2](microsoft-defender-endpoint.md) |
 |:---|:---|
