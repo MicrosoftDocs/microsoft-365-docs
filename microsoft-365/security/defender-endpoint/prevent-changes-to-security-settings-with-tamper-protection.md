@@ -31,6 +31,8 @@ Tamper protection is available for devices that are running one of the following
 - Windows Server 2019
 - Windows Server, version 1803 or later
 - Windows Server 2016
+- Windows Server 2012 R2
+
 
 ## Overview
 
@@ -100,6 +102,7 @@ Tamper protection can be turned on or off for your tenant using the Microsoft De
    - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
    - Windows Server, version [1803](/windows/release-health/status-windows-10-1803) or later
    - [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)
+   - Windows Server 2012 R2
    - For more information about releases, see [Windows 10 release information](/windows/release-health/release-information).
 
 - Your devices must be [onboarded to Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/onboarding).
@@ -168,7 +171,7 @@ On Windows Server 2016, the Settings app will not accurately reflect the status 
 
 ## Manage tamper protection for your organization with Configuration Manager, version 2006
 
-If you're using [version 2006 of Configuration Manager](/mem/configmgr/core/plan-design/changes/whats-new-in-version-2006), you can manage tamper protection settings on Windows 10, Windows Server 2016, and Windows Server 2019 by using a method called *tenant attach*. Tenant attach enables you to sync your on-premises-only Configuration Manager devices into the Microsoft Endpoint Manager admin center, and then deliver endpoint security configuration policies to on-premises collections & devices.
+If you're using [version 2006 of Configuration Manager](/mem/configmgr/core/plan-design/changes/whats-new-in-version-2006), you can manage tamper protection settings on Windows 10, Windows Server 2012 R2, Windows Server 2016, and Windows Server 2019 by using a method called *tenant attach*. Tenant attach enables you to sync your on-premises-only Configuration Manager devices into the Microsoft Endpoint Manager admin center, and then deliver endpoint security configuration policies to on-premises collections & devices.
 
 :::image type="content" source="images/win-security- exp-policy-endpt-security.png" alt-text="Windows Security experience in Endpoint Manager":::
 
@@ -239,7 +242,7 @@ To learn more about Threat & Vulnerability Management, see [Threat & Vulnerabili
 
 Windows 10 OS [1709](/windows/release-health/status-windows-10-1709), [1803](/windows/release-health/status-windows-10-1803), [1809](/windows/release-health/status-windows-10-1809-and-windows-server-2019), or later together with [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint).
 
-If you are using Configuration Manager, version 2006, with tenant attach, tamper protection can be extended to Windows Server 2019. See [Tenant attach: Create and deploy endpoint security Antivirus policy from the admin center (preview)](/mem/configmgr/tenant-attach/deploy-antivirus-policy).
+If you are using Configuration Manager, version 2006, with tenant attach, tamper protection can be extended to Windows Server 2012 R2, Windows Server 2016, and Windows Server 2019. See [Tenant attach: Create and deploy endpoint security Antivirus policy from the admin center (preview)](/mem/configmgr/tenant-attach/deploy-antivirus-policy).
 
 ### Will tamper protection have any impact on third-party antivirus registration?
 
