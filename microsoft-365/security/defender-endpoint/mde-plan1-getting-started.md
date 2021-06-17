@@ -39,8 +39,6 @@ The Home page provides your security team with a snapshot aggregate view of aler
 
 The navigation bar on the left side of the screen enables you to move easily between Incidents, Alerts, the Action center, Reports, and Settings. 
 
-To learn more, see the [Microsoft 365 Defender portal overview](../defender/microsoft-365-security-center-mde.md).
-
 The following table describes the navigation bar.
 
 | Navigation bar item | Description |
@@ -54,6 +52,9 @@ The following table describes the navigation bar.
 | **Reports** | Navigates to your reports, such as your [Threat protection report](threat-protection-reports.md), [Device health and compliance report](machine-reports.md), and your [Web protection report](web-protection-overview.md). |
 | **Settings** | Navigates to general settings for your Microsoft 365 Defender portal and Defender for Endpoint. To learn more, see [Settings](../defender/overview-security-center.md). |
 | **More resources** | Displays a list of additional portals and centers, such as Azure Active Directory and the Microsoft 365 compliance center. To learn more, see [Microsoft security portals and admin centers](../defender/portals.md). |
+
+> [!TIP]
+> To learn more, see the [Microsoft 365 Defender portal overview](../defender/microsoft-365-security-center-mde.md).
 
 ## Viewing and managing incidents & alerts
 
@@ -70,7 +71,8 @@ Select an incident to view details about it, such as what alerts were triggered,
 
 Use the **Alerts**, **Devices**, and **Users** tabs to view more information, such as the alerts that were triggered, devices that were affected, and user accounts that were affected. From there, you can take manual response actions, such as isolating a device, stopping and quarantining a file, and so on. 
 
-To learn more about using the **Incident** view, see [Manage incidents](manage-incidents.md).
+> [!TIP]
+> To learn more about using the **Incident** view, see [Manage incidents](manage-incidents.md).
 
 ## Managing devices
 
@@ -78,7 +80,7 @@ To view and manage your organization’s devices, in the navigation bar, under *
 
 :::image type="content" source="../../media/mde-p1/deviceinventory.PNG" alt-text="Device inventory"::: 
 
-The list includes devices for which alerts were generated. By default, the data shown is for the past 30 days, with the most recent items listed first.
+The list includes devices for which alerts were generated. By default, the data shown is for the past 30 days, with the most recent items listed first. 
 
 Select a device to view more information about it. A flyout pane opens, as shown in the following image:
 
@@ -88,7 +90,8 @@ The flyout pane displays details, such as any active alerts for the device, and 
 
 If there are active alerts on the device, you can view them in the flyout pane. Select an individual alert to view more details about it. Or, take an action, such as **Isolate device**, so you can investigate the device further while minimizing the risk of infecting other devices. 
 
-To learn more, see [Investigate devices in the Defender for Endpoint devices list](investigate-machines.md).
+> [!TIP]
+> To learn more, see [Investigate devices in the Defender for Endpoint devices list](investigate-machines.md).
 
 ## Viewing reports
 
