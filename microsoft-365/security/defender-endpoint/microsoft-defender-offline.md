@@ -64,7 +64,7 @@ The need to perform an offline scan will also be revealed in Microsoft Endpoint 
 
 The prompt can occur via a notification, similar to the following:
 
-![Windows notification showing the requirement to run Microsoft Defender Offline](images/defender/notification.png)
+:::image type="content" source="../../media/notification.png" alt-text="Notification to run Microsoft Defender Offline":::
 
 The user will also be notified within the Windows Defender client.
 
