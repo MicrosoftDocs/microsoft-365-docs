@@ -182,7 +182,7 @@ To help familiarize you with Microsoft Defender for Endpoint Removable Storage A
     > You have to replace `&` with `&amp;` in the value.
 
 2. Create policy
-    1. Policy 1: Block Write and Execute Access but allow approved USBs. An example for this use case is: PolicyRule **c544a991-5786-4402-949e-a032cb790d0e** in the sample [Scenario 1 Block Write and Execute Access but allow approved USBs .xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) file.
+    1. Policy 1: Block Write and Execute Access but allow approved USBs. An example for this use case is: PolicyRule **c544a991-5786-4402-949e-a032cb790d0e** in the sample [Scenario 1 Block Write and Execute Access but allow approved USBs.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) file.
     
     2. Policy 2: Audit Write and Execute access to allowed USBs. An example for this use case is: PolicyRule **36ae1037-a639-4cff-946b-b36c53089a4c** in the sample [Scenario 1 Audit Write and Execute access to approved USBs.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) file.
 
@@ -312,3 +312,22 @@ DeviceEvents
 ```
 
 :::image type="content" source="images/block-removable-storage.png" alt-text="The screen depicting the blockage of the removable storage":::
+
+## Frequently asked questions
+**What is the removable storage media limitation for the maximum number of USBs?**
+
+- Internally we have validated one USB group with 100,000 media - up to 7 MB in size. The policy works fine in both Intune and GPO without performance issues.
+
+**Why does the policy not work?**
+
+- The most common reason is there is no required [Anti-malware Client Version](/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control?view=o365-worldwide#prepare-your-endpoints).
+
+- Or the XML file is not correctly formatted, for example, forget to replace & with &amp; in the XML file; or the text editor might add a byte order mark (BOM) 0xEF 0xBB 0xBF at the beginning of the files which causes the XML parsing not to work. One simple way is to download  [sample file](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) file (click 'Raw' and then 'Save as') and then update.
+
+- If the value is there and if the policy is managed via Group Policy, check whether the client machine can access the policy XML path.
+
+
+
+
+
+
