@@ -35,7 +35,7 @@ ms.custom: FPFN
 
 >Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-usewdatp-abovefoldlink).
 
-In Microsoft Defender for Endpoint, admins can use the Submissions feature in the Microsoft 365 Defender to submit suspected files and attachments to Microsoft for scanning.
+In Microsoft Defender for Endpoint, admins can use the Submissions feature in the Microsoft 365 Defender to submit suspected files and file hashes (SHAs) to Microsoft for scanning.
 
 ## Microsoft Defender for Endpoint interactive guide
 
@@ -80,6 +80,8 @@ If you have a file that you suspect might be malware or is being incorrectly det
 > ![Submit items to Microsoft for review](../../media/unified-admin-submission-file.png) (Image not final)
 
  8. Click **Submit**. 
+ 
+ If you want to view the submissions detail, select your submission in the **Submissions name** section to open the **Result details** flyout.
 
 ## Related information
 
