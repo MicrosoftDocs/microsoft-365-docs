@@ -80,14 +80,14 @@ To view and manage your organization’s devices, in the navigation bar, under *
 
 The list includes devices for which alerts were generated. By default, the data shown is for the past 30 days, with the most recent items listed first.
 
- 
-Figure 7. Example list of devices with alerts
-Select a device to view more information about it. A flyout pane opens, as shown in figure 8. The flyout pane displays details, such as any active alerts for the device, and includes links to take action, such as isolating a device. 
+Select a device to view more information about it. A flyout pane opens, as shown in the following image:
 
- 
-Figure 8. Flyout pane that opens when a device is selected
+:::image type="content" source="../../media/mde-p1/deviceinventory-selecteddevice.PNG" alt-text="Selected device details":::
 
-If there are active alerts on the device, you can view them in the flyout pane. Select an individual alert to view more details about it. Or, take an action, such as Isolate device, so you can investigate the device further while minimizing the risk of infecting other devices. 
+The flyout pane displays details, such as any active alerts for the device, and includes links to take action, such as isolating a device. 
+
+If there are active alerts on the device, you can view them in the flyout pane. Select an individual alert to view more details about it. Or, take an action, such as **Isolate device**, so you can investigate the device further while minimizing the risk of infecting other devices. 
+
 To learn more, see Investigate devices in the Defender for Endpoint devices list.
 
 Viewing reports
