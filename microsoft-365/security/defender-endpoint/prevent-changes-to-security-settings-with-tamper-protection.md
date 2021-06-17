@@ -223,11 +223,7 @@ Using [endpoint detection and response](/microsoft-365/security/defender-endpoin
 
 ## Review your security recommendations
 
-Tamper protection integrates with [Threat & Vulnerability Management](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt) capabilities. [Security recommendations](/microsoft-365/security/defender-endpoint/tvm-security-recommendation) include making sure tamper protection is turned on. For example, you can search on *tamper*, as shown in the following image:
-
-![Tamper protection results in security recommendations](/images/securityrecs-tamperprotect.jpg)
-
-In the results, you can select **Turn on Tamper Protection** to learn more and turn it on.
+Tamper protection integrates with [Threat & Vulnerability Management](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt) capabilities. [Security recommendations](/microsoft-365/security/defender-endpoint/tvm-security-recommendation) include making sure tamper protection is turned on. For example, you can search on *tamper*. In the results, you can select **Turn on Tamper Protection** to learn more and turn it on.
 
 ![Turn on tamper protection](images/tamperprotectsecurityrecos.png)
 
