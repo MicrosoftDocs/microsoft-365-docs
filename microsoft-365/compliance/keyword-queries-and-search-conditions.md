@@ -21,7 +21,7 @@ search.appverid:
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 ms.custom:
 - seo-marvel-apr2020
-description: "Learn about email and file properties that you can search by using the eDiscovery search tools in Microsoft 365."
+description: "Learn about email and document properties that you can search by using the eDiscovery search tools in Microsoft 365."
 ---
 
 # Keyword queries and search conditions for eDiscovery
@@ -247,7 +247,7 @@ Create a condition using document properties when searching for documents on Sha
 |Title|The title of the document. The Title property is metadata that's specified in Office documents. It's different than the file name of the document.|
 |Created|The date that a document is created.|
 |Last modified|The date that a document was last changed.|
-|File type|The extension of a file; for example, docx, one, pptx, or xlsx. This is the same property as the FileExtension site property.|
+|File type|The extension of a file; for example, docx, one, pptx, or xlsx. This is the same property as the FileExtension site property. <br/><br/> **Note:** If you include a File type condition using the **Equals** or **Equals any of** operator in a search query, you can't use a prefix search (by including the wildcard character ( * ) at the end of the file type) to return all versions of a file type. If you do, the wildcard will be ignored. For example if you include the condition `Equals any of doc*`, only files with an extension of `.doc` will be returned. Files with an extension of `.docx` will not be returned. To return all versions of a file type, used the *property:value* pair in a keyword query; for example, `filetype:doc*`.|
 |||
   
 ### Operators used with conditions
@@ -278,21 +278,21 @@ When you add a condition, you can select an operator that is relevant to type of
 
 Keep the following in mind when using search conditions.
   
-- A condition is logically connected to the keyword query (specified in the keyword box) by the **AND** operator. That means that items have to satisfy both the keyword query and the condition to be included in the results. This is how conditions help to narrow your results. 
-    
-- If you add two or more unique conditions to a search query (conditions that specify different properties), those conditions are logically connected by the **AND** operator. That means only items that satisfy all the conditions (in addition to any keyword query) are returned. 
-    
+- A condition is logically connected to the keyword query (specified in the keyword box) by the **AND** operator. That means that items have to satisfy both the keyword query and the condition to be included in the results. This is how conditions help to narrow your results.
+  
+- If you add two or more unique conditions to a search query (conditions that specify different properties), those conditions are logically connected by the **AND** operator. That means only items that satisfy all the conditions (in addition to any keyword query) are returned.
+  
 - If you add more than one condition for the same property, those conditions are logically connected by the **OR** operator. That means items that satisfy the keyword query and any one of the conditions are returned. So, groups of the same conditions are connected to each other by the **OR** operator and then sets of unique conditions are connected by the **AND** operator. 
-    
+  
 - If you add multiple values (separated by commas or semi-colons) to a single condition, those values are connected by the **OR** operator. That means items are returned if they contain any of the specified values for the property in the condition. 
-    
-- The search query that is created by using the keywords box and conditions is displayed on the **Search** page, in the details pane for the selected search. In a query, everything to the right of the notation  `(c:c)` indicates conditions that are added to the query. 
-    
-- Conditions only add properties to the search query; the don't add operators. This is why the query displayed in the detail pane doesn't show operators to the right of the  `(c:c)` notation. KQL adds the logical operators (according to the previously explained rules) when the executing the query. 
-    
+  
+- The search query that is created by using the keywords box and conditions is displayed on the **Search** page, in the details pane for the selected search. In a query, everything to the right of the notation  `(c:c)` indicates conditions that are added to the query.
+  
+- Conditions only add properties to the search query; the don't add operators. This is why the query displayed in the detail pane doesn't show operators to the right of the  `(c:c)` notation. KQL adds the logical operators (according to the previously explained rules) when the executing the query.
+  
 - You can use the drag and drop control to resequence the order of conditions. Click on the control for a condition and move it up or down.
-    
-- As previously explained, some condition properties allow you to type multiple values (separated by semi-colons). Each value is logically connected by the **OR** operator, and results in the query `(filetype:docx) OR (filetype:pptx) OR (filetype:xlsx)`. The following illustration shows an example of a condition with multiple values.
+  
+- As previously explained, some condition properties allow you to type multiple values (separated by semi-colons). Each value is logically connected by the **OR** operator, and results in the query `(filetype=docx) OR (filetype=pptx) OR (filetype=xlsx)`. The following illustration shows an example of a condition with multiple values.
 
     ![One condition with multiple values](../media/SearchConditions1.png)
   

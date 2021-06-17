@@ -26,11 +26,11 @@ description: "Learn how to start collecting data for your tenant by using the Mi
 
 Microsoft 365 usage analytics is not yet available for Microsoft 365 US Government Community.
   
-## Steps to enable Microsoft 365 usage analytics
+## Before you begin
 
 To get started with Microsoft 365 usage analytics you must first make the data available in the Microsoft 365 admin center, then initiate the template app in Power BI.
   
-### Get Power BI
+## Get Power BI
 
 If you don't already have Power BI, you can [sign up for Power BI Pro](https://go.microsoft.com/fwlink/p/?linkid=845347). Select **Try free** to sign up for a trial, or **Buy now** to get Power BI Pro.
   
@@ -42,7 +42,7 @@ You can also expand **Products** to buy a version of Power BI.
 
 To share your data, both you and the people who you share the data with, need a Power BI Pro license, or the content needs to be in a workspace in a [Power BI premium service](/power-bi/service-premium-what-is). 
   
-### Enable the template app
+## Enable the template app
 
 To enable the template app, you have to be a **Global administrator**.
   
@@ -56,7 +56,7 @@ See [about admin roles](../add-users/about-admin-roles.md) for more information.
   
 The data collection process will complete in two to 48 hours depending on the size of your tenant. The **Go to Power BI** button will be enabled (no longer gray) when data collection is complete. 
     
-### Start the template app
+## Start the template app
 
 To start the template app, you have to be either a **global administrator**, **report reader**, **Exchange administrator**, **Skype for Business administrator**, or **SharePoint administrator**. 
   
@@ -91,3 +91,9 @@ To make the data that is collected for all reports anonymous, you have to be a g
 2. Select **Reports**, and then choose to **Display anonymous identifiers**. This setting gets applied both to the usage reports as well as to the template app.
   
 3. Select **Save changes**.
+
+## Related content
+
+[About usage analytics](usage-analytics.md) (article)\
+[Get the latest version of usage analytics](get-the-latest-version-of-usage-analytics.md) (article)\
+[Navigate and utilize the reports in Microsoft 365 usage analytics](navigate-and-utilize-reports.md) (article)

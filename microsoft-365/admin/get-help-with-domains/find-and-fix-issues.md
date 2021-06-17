@@ -98,5 +98,6 @@ If you've fixed any DNS issues and you're still having trouble, try one of the f
 
 ## Related content
 
-[Troubleshoot: Audit data on verified domain change](/azure/active-directory/reports-monitoring/troubleshoot-audit-data-verified-domain)
+[Troubleshoot: Audit data on verified domain change](/azure/active-directory/reports-monitoring/troubleshoot-audit-data-verified-domain) (article)\
+[Domains FAQ](../setup/domains-faq.yml) (article)
 

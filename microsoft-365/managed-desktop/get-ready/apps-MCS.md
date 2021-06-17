@@ -29,7 +29,7 @@ To work with MCS app packaging, **you must provide these elements**:
 **MCS will take care of these actions:**
 
 - Checking whether the app is prohibited or restricted in the Microsoft Managed Desktop environment.
-- Testing of installation, starting, and uninstallation of the app to ensure compatibility with Windows 10. If MCS discovers a compatibility issue, they will hand off the app to the [App Assure](https://docs.microsoft.com/fasttrack/products-and-capabilities#app-assure) program for remediation.
+- Testing of installation, starting, and uninstallation of the app to ensure compatibility with Windows 10. If MCS discovers a compatibility issue, they will hand off the app to the [App Assure](/fasttrack/products-and-capabilities#app-assure) program for remediation.
 - Packaging the app to your specification and then testing app deployment by using Microsoft Intune.
 
 ## App delivery schedule
@@ -43,13 +43,13 @@ You'll be notified once the app has been delivered. At that point, you have 21 d
 ## Testing accounts and environment
 
 For the packaging team to complete the migration to Microsoft Intune, we recommend that you provide certain permissions:
- 
--	Access to Microsoft Intune’s App Deployment capabilities for the packager to add and assign the app 
--	Test groups, user accounts, and licenses for the packagers to be able to test the apps
+
+- Access to Microsoft Intune’s App Deployment capabilities for the packager to add and assign the app
+- Test groups, user accounts, and licenses for the packagers to be able to test the apps
 
 MCS will use those permissions to perform the following actions:
- 
--	Ensuring that the app works on virtual machine configured for Microsoft Managed Desktop
--	Uploading the app to Microsoft Intune for deployment to your users
+
+- Ensuring that the app works on virtual machine configured for Microsoft Managed Desktop
+- Uploading the app to Microsoft Intune for deployment to your users
 
 Without these permissions, it is possible for MCS to move forward, but they will not be able to upload the applications to your environment.

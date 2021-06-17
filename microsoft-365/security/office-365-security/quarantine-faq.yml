@@ -56,7 +56,7 @@ sections:
       - question: |
           How do I give users access to the quarantine?
         answer: |
-          A user must have a valid account to access their own messages in quarantine. Standalone EOP requires that users are represented as mail users in EOP (manually created or created via directory synchronization). For more information about managing users in standalone EOP environments, see [Manage mail users in EOP](manage-mail-users-in-eop.md).
+          A user must have a valid account to access their own messages in quarantine. Standalone EOP requires that users are represented as mail users in EOP (manually created or created via directory synchronization). For more information about managing users in standalone EOP environments, see [Manage mail users in standalone EOP](/exchange/standalone-eop/manage-mail-users-in-eop).
           
       - question: |
           What messages can end users access in quarantine?

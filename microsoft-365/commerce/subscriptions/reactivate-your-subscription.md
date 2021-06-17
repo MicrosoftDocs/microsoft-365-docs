@@ -19,7 +19,7 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_subscriptions
 search.appverid: MET150 
-description: "Learn how to reactivate your subscription when it expires, is disabled, or canceled."
+description: "Admins can reactivate a subscription when it expires, is disabled, or canceled, or if you canceled in the middle of a subscription term."
 ms.date: 04/07/2021
 ---
 

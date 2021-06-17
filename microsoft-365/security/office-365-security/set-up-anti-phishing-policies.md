@@ -129,7 +129,7 @@ Unauthenticated sender settings are part of the [Spoof settings](#spoof-settings
 - **Enable "via" tag?**<sup>\*</sup>: When this setting is turned on, the via tag (chris@contoso.com <u>via</u> fabrikam.com) is added in the From box if the domain in the From address (the message sender that's displayed in email clients) is different from the domain in the DKIM signature or the **MAIL FROM** address. For more information about these addresses, see [An overview of email message standards](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards).
 
 > [!NOTE]
-> Currently, the **Enable "via" tag?** setting is not available in all organizations. If you don't have the **Enable "via" tag?** setting, the the question mark **and** the via tag are both controlled by the **Enable unauthenticated sender question mark (?) symbol?** setting in your organization.
+> Currently, the **Enable "via" tag?** setting is not available in all organizations. If you don't have the **Enable "via" tag?** setting, the question mark **and** the via tag are both controlled by the **Enable unauthenticated sender question mark (?) symbol?** setting in your organization.
 
 To prevent the question mark or via tag from being added to messages from specific senders, you have the following options:
 
@@ -205,10 +205,14 @@ The following impersonation settings are only available in anti-phishing policie
   - **Show tip for unusual characters**: The From address contains unusual character sets (for example, mathematical symbols and text or a mix of uppercase and lowercase letters) in a protected sender or domain.
 
   > [!IMPORTANT]
+  > Even if the impersonation safety tips are turned off, **we recommend** that you use a mail flow rule (also known as a transport rule) to add a the following message header to messages:
   >
-  > Even when the impersonation safety tips are turned off, **we recommend** that you use a mail flow rule (also known as a transport rule) to add a message header named **X-MS-Exchange-EnableFirstContactSafetyTip** with value **enable** to messages. A safety tip will notify recipients the first time they get a message from the sender or if they don't often get messages from the sender. This capability adds an extra layer of security protection against potential impersonation attacks.
+  > - Header name: **X-MS-Exchange-EnableFirstContactSafetyTip**
+  > - Header value: **Enable**
   >
-  > :::image type="content" source="../../media/safety-tip-first-contact-multiple-recipients.png" alt-text="The text of the safety tip for impersonation protection with multiple recipients.":::
+  > A safety tip will notify recipients the first time they get a message from the sender or if they don't often get messages from the sender. This capability adds an extra layer of security protection against potential impersonation attacks.
+  >
+  > ![The text of the safety tip for impersonation protection with multiple recipients.](../../media/safety-tip-first-contact-multiple-recipients.png)
 
 - **Mailbox intelligence**: Enables or disables artificial intelligence (AI) that determines user email patterns with their frequent contacts. This setting helps the AI distinguish between messages from legitimate and impersonated senders.
 

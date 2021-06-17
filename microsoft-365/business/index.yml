@@ -22,7 +22,7 @@ productDirectory:
   items:
     # Card
     - title: Watch
-      imageSrc: https://docs.microsoft.com/office/media/icons/sign-up-blue.svg
+      imageSrc: https://docs.microsoft.com/office/media/icons/video-play.svg
       summary: Top five benefits of Microsoft 365 Business Premium.
       url: https://aka.ms/M365BPvideo
     # Card

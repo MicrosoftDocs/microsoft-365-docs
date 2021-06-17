@@ -1,6 +1,6 @@
 ---
 title: Protect security settings with tamper protection
-ms.reviewer: shwjha, hayhov
+ms.reviewer: pahuijbr, hayhov, oogunrinde
 manager: dansimp
 description: Use tamper protection to prevent malicious apps from changing important security settings.
 keywords: malware, defender, antivirus, tamper protection
@@ -11,12 +11,12 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 localization_priority: Normal
 audience: ITPro
+ms.topic: article
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.technology: mde
-ms.topic: article
-ms.date: 05/17/2021
+ms.date: 06/17/2021
 ---
 
 # Protect security settings with tamper protection
@@ -75,8 +75,8 @@ The following table provides details on the methods, tools, and dependencies.
 |:----|:----|
 | Microsoft Intune  | No |
 | Microsoft Endpoint Configuration Manager + Tenant Attach  |     No  |
-| Microsoft Defender Security Center ([https://securitycenter.microsoft.com](https://securitycenter.microsoft.com))    |     Yes |
-| Microsoft 365 security center ([https://security.microsoft.com](https://security.microsoft.com))  |     Yes  |
+| Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com))    |     Yes |
+| Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com))  |     Yes  |
 
 ## Manage tamper protection for your organization using the Microsoft Defender Security Center
 
@@ -95,6 +95,7 @@ Tamper protection can be turned on or off for your tenant using the Microsoft De
 - You must have appropriate [permissions](/microsoft-365/security/defender-endpoint/assign-portal-access), such as global admin, security admin, or security operations.
 
 - Your Windows devices must be running one of the following versions of Windows:
+
    - Windows 10
    - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
    - Windows Server, version [1803](/windows/release-health/status-windows-10-1803) or later
@@ -142,6 +143,7 @@ If you are part of your organization's security team, and your subscription incl
 2. Select **Devices** > **Configuration Profiles**.
 
 3. Create a profile that includes the following settings:
+
     - **Platform: Windows 10 and later**
     - **Profile type: Endpoint protection**
     - **Category: Microsoft Defender Security Center**
@@ -149,17 +151,20 @@ If you are part of your organization's security team, and your subscription incl
 
 4. Assign the profile to one or more groups.
 
-### Are you using Windows OS 1709, 1803, or 1809?
+### Are you using Windows Server 2016, or Windows version 1709, 1803, or 1809?
 
-If you are using Windows 10 OS [1709](/windows/release-health/status-windows-10-1709), [1803](/windows/release-health/status-windows-10-1803), or [1809](/windows/release-health/status-windows-10-1809-and-windows-server-2019), you won't see **Tamper Protection** in the Windows Security app. Instead, you can use PowerShell to determine whether tamper protection is enabled.
-
-#### Use PowerShell to determine whether tamper protection is turned on
+If you are using Windows Server 2016, Windows 10 version [1709](/windows/release-health/status-windows-10-1709), [1803](/windows/release-health/status-windows-10-1803), or [1809](/windows/release-health/status-windows-10-1809-and-windows-server-2019), you won't see **Tamper Protection** in the Windows Security app. Instead, you can use PowerShell to determine whether tamper protection is enabled. 
+   
+On Windows Server 2016, the Settings app will not accurately reflect the status of real-time protection when tamper protection is enabled.
+   
+#### Use PowerShell to determine whether tamper protection and/or real-time protection are turned on
 
 1. Open the Windows PowerShell app.
 
 2. Use the [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus?preserve-view=true&view=win10-ps) PowerShell cmdlet.
 
 3. In the list of results, look for `IsTamperProtected`. (A value of *true* means tamper protection is enabled.)
+   In the list of results, look for `RealTimeProtectionEnabled`. (A value of true means tamper protection is enabled.)
 
 ## Manage tamper protection for your organization with Configuration Manager, version 2006
 
@@ -252,7 +257,7 @@ If you are an organization using [Microsoft Defender for Endpoint](/microsoft-36
 
 - [Manage tamper protection using Intune](#manage-tamper-protection-for-your-organization-using-intune)
 - [Manage tamper protection using Configuration Manager, version 2006](#manage-tamper-protection-for-your-organization-with-configuration-manager-version-2006)
-- [Manage tamper protection using the Microsoft Defender Security Center](#manage-tamper-protection-for-your-organization-using-the-microsoft-defender-security-center) (currently in preview)
+- [Manage tamper protection using the Microsoft Defender Security Center](#manage-tamper-protection-for-your-organization-using-the-microsoft-defender-security-center) 
 
 ### How does configuring tamper protection in Intune affect how I manage Microsoft Defender Antivirus through my group policy?
 

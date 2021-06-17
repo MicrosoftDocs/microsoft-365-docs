@@ -57,7 +57,7 @@ There are two modes of discovery:
 
 
 > [!IMPORTANT]
-> Discovery is set to basic mode. You can choose to retain this configuration through the settings page. Standard discovery will be the default mode for all preview customers starting May 10, 2021 - unless modified through the settings page before this date.
+> Discovery is set to basic mode. You can choose to retain this configuration through the settings page. Standard discovery will be the default mode for all customers starting July 19, 2021 - unless modified through the settings page before this date.
 
 ### Basic discovery 
 

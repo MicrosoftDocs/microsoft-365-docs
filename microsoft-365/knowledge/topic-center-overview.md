@@ -1,6 +1,5 @@
 ---
-title: "Topic center overview in Microsoft Viva Topics"
-description: 'Learn about the Topic Center in Microsoft Viva Topics.'
+title: Topic center overview in Microsoft Viva Topics
 author: chuckedmonson
 ms.author: chucked
 manager: pamgreen
@@ -14,6 +13,7 @@ ms.collection:
     - m365initiative-viva-topics
 ROBOTS: 
 localization_priority: None
+description: Learn about the topic center in Microsoft Viva Topics.
 
 ---
 # Topic center overview in Microsoft Viva Topics
@@ -34,7 +34,7 @@ The topic center is created during Viva Topics setup. After setup completes, an 
 
     ![Connect people to knowledge](../media/admin-org-knowledge-options-completed.png) 
 
-3. Select the **Topic center** tab. Under **Site address** is a link to your Topic center.
+3. Select the **Topic center** tab. Under **Site address** is a link to your topic center.
 
     ![knowledge-network-settings](../media/knowledge-network-settings-topic-center.png) 
 
@@ -64,7 +64,7 @@ Once a user confirms their connection to a topic, the user can make edits to the
 
 ## Manage topics page
 
-To work on the **Manage topics** page of topic center, you need to have the required Manage topics permissions needed for the knowledge manager role. Your admin can assign these permissions to users during [knowledge management setup](set-up-topic-experiences.md), or new users can be [added afterwards](topic-experiences-knowledge-rules.md) by an admin through the Microsoft 365 admin center.
+To work on the **Manage topics** page of topic center, you need to have the required Manage topics permissions needed for the knowledge manager role. Your admin can assign these permissions to users during [Viva Topics setup](set-up-topic-experiences.md), or new users can be [added afterwards](topic-experiences-knowledge-rules.md) by an admin through the Microsoft 365 admin center.
 
 On the **Manage topics** page, the topic dashboard shows all the topics, you have access to, that were identified from your specified source locations. Each topic will show the date the topic was discovered. A user who was assigned Manage topics permissions can review the unconfirmed topics and choose to:
 
@@ -74,7 +74,7 @@ On the **Manage topics** page, the topic dashboard shows all the topics, you hav
  
 - Remove the topic: Makes the topic undiscoverable to end users. The topic is moved to the **Removed** tab and can be confirmed later if needed. 
 
-For more information about how to manage topics on the **Manage topics page, see [Manage topics](manage-topics.md).
+For more information about how to manage topics on the **Manage topics** page, see [Manage topics](manage-topics.md).
 
 ## Create or edit a topic
 

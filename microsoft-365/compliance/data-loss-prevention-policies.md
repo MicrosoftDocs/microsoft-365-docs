@@ -108,7 +108,7 @@ If you choose to include or exclude specific SharePoint sites, a DLP policy can 
 If you choose to include or exclude specific OneDrive accounts or groups, a DLP policy can contain no more than 100 user accounts or 50 groups as inclusion or exclusion.
 
 > [!NOTE]
-> OneDrive for business policy scoping using accounts or groups is in public preview. During this phase, you can either include or exclude user accounts and groups as part of a DLP policy. Both inclusion and exclusion as part of the same policy is not supported.
+> OneDrive for business policy scoping using user accounts or groups is in public preview. 
   
 ### Rules
 
@@ -437,7 +437,9 @@ A preconfigured DLP policy template can help you detect specific types of sensit
   
 Your organization may also have its own specific requirements, in which case you can create a DLP policy from scratch by choosing the **Custom policy** option. A custom policy is empty and contains no premade rules. 
   
-## Roll out DLP policies gradually with test mode
+<!-- ## Roll out DLP policies gradually with test mode
+
+rehomed to Plan for DLP
 
 When you create your DLP policies, you should consider rolling them out gradually to assess their impact and test their effectiveness before fully enforcing them. For example, you don't want a new DLP policy to unintentionally block access to thousands of documents that people require access to in order to get their work done.
   
@@ -458,7 +460,7 @@ If you're creating DLP policies with a large potential impact, we recommend foll
     You can also change the priority of multiple rules in a policy. To do that, open a policy for editing. In a row for a rule, choose the ellipses (**...**), and then choose an option, such as **Move down** or **Bring to last**.
 
     > [!div class="mx-imgBorder"]
-    > ![Set rule priority](../media/dlp-set-rule-priority.png)
+    > ![Set rule priority](../media/dlp-set-rule-priority.png)-->
   
 ## DLP reports
 
@@ -538,7 +540,7 @@ When you create a DLP policy that includes Microsoft Teams as a location, the po
  
 ## Permissions
 
-Members of your compliance team who will create DLP policies need permissions to the Security &amp; Compliance Center. By default, your tenant admin will have access to this location and can give compliance officers and other people access to the Security &amp; Compliance Center, without giving them all of the permissions of a tenant admin. To do this, we recommend that you:
+By default, Global admins, Security admins, and Compliance admins will have access to create and apply a DLP policy. Other Members of your compliance team who will create DLP policies need permissions to the Security &amp; Compliance Center. By default, your Tenant admin will have access to this location and can give compliance officers and other people access to the Security &amp; Compliance Center, without giving them all of the permissions of a Tenant admin. To do this, we recommend that you:
   
 1. Create a group in Microsoft 365 and add compliance officers to it.
     

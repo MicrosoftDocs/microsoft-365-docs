@@ -47,7 +47,7 @@ sections:
       - question: |
           I'm a customer, not a reseller. How can set up delegated administrator for my subtenants?
         answer: |
-          Delegated administration is only available for resellers and partners. However, there's a sample PowerShell script that will help you apply policies to your subtenants (companies). For more information, see [Sample script for applying EOP settings to multiple tenants](sample-script-for-applying-eop-settings-to-multiple-tenants.md).
+          Delegated administration is only available for resellers and partners. However, there's a sample PowerShell script that will help you apply policies to your subtenants (companies). For more information, see [Sample script for applying EOP settings to multiple tenants](/exchange/standalone-eop/sample-script-standalone-eop-settings-to-multiple-tenants).
           
       - question: |
           Can I prevent my subtenant admin from modifying my policy?

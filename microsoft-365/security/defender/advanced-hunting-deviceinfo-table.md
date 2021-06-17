@@ -54,7 +54,17 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `OSVersion` | string | Version of the operating system running on the machine |
 | `MachineGroup` | string | Machine group of the machine. This group is used by role-based access control to determine access to the machine |
 | `ReportId` | long | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the DeviceName and Timestamp columns |
+| `OnboardingStatus` | string | Indicates whether the device is currently onboarded or not to Microsoft Defender For Endpoint or if the device is not supported |
 |`AdditionalFields` | string | Additional information about the event in JSON array format |
+|`DeviceCategory` | string | Broader classification that groups certain device types under the following categories: Endpoint, Network device, IoT, Unknown |
+|`DeviceType` | string | Type of device based on purpose and functionality, such as network device, workstation, server, mobile, gaming console, or printer |
+|`DeviceSubType` | string | Additional modifier for certain types of devices, for example, a mobile device can be a tablet or a smartphone |
+|`Model` | string | Model name or number of the product from the vendor or manufacturer |
+|`Vendor` | string | Name of the product vendor or manufacturer |
+|`OSDistribution` | string | Distribution of the OS platform, such as Ubuntu or RedHat for Linux platforms |
+|`OSVersionInfo` | string | Additional information about the OS version, such as the popular name, code name, or version number |
+|`MergedDeviceIds` | string | Previous device IDs that have been assigned to the same device |
+|`MergedToDeviceId` | string | The most recent device ID assigned to a device |
 
 The `DeviceInfo` table provides device information based on heartbeats, which are periodic reports or signals from a device. Every fifteen minutes, the device sends a partial heartbeat that contains frequently changing attributes like `LoggedOnUsers`. Once a day, a full heartbeat containing the device's attributes is sent.
 

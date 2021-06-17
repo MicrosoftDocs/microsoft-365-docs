@@ -50,7 +50,8 @@ Learn more about how to use and implement SharePoint Syntex in your organization
 
 | If you're looking for this information: | Go to this resource: |
 |:-----|:-----|
-|Learn how to start planning to use SharePoint Syntex. |[SharePoint Syntex adoption: get started](./adoption-getstarted.md)<br><br>|  
+|Learn how to start planning to use SharePoint Syntex |[SharePoint Syntex adoption: get started](./adoption-getstarted.md)| 
+|Learn how to use SharePoint Syntex to automate document processes |[Manage contracts using a Microsoft 365 solution](./solution-manage-contracts-in-microsoft-365.md)| 
 
 ## Set up SharePoint Syntex
 

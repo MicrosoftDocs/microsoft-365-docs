@@ -62,12 +62,9 @@ If you want to add a guest to the directory directly, you can [Add Azure Active 
 
 If you want to edit any of a guest's information, you can [Add or update a user's profile information using Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal).
 
-## See also
+## Related content
 
-[Block guest users from a specific group](../../solutions/per-group-guest-access.md)
-
-[Manage group membership in the Microsoft 365 admin center](add-or-remove-members-from-groups.md)
-  
-[Azure Active Directory access reviews](/azure/active-directory/active-directory-azure-ad-controls-perform-access-review)
-
-[Set-AzureADUser](/powershell/module/azuread/set-azureaduser)
+[Block guest users from a specific group](../../solutions/per-group-guest-access.md) (article)\
+[Manage group membership in the Microsoft 365 admin center](add-or-remove-members-from-groups.md) (article)\
+[Azure Active Directory access reviews](/azure/active-directory/active-directory-azure-ad-controls-perform-access-review) (article)\
+[Set-AzureADUser](/powershell/module/azuread/set-azureaduser) (article)

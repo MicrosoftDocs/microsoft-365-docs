@@ -21,7 +21,7 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: "Learn how to move your business to Microsoft 365 Business Premium from Office 365 E3."
+description: "If you have an Office 365 E3 subscription but don't have more than 300 employees, consider switching to Microsoft 365 Business Premium."
 ---
 
 # Migrating from Office 365 E3 to Microsoft 365 Business Premium
@@ -120,3 +120,12 @@ After migrating to Microsoft 365 Business Premium, you have Defender for Office 
 ### Sensitivity labels
 
 To start using sensitivity labels, see [Overview of sensitivity labels](../compliance/sensitivity-labels.md) and [create and manage sensitivity labels](../business-video/create-sensitivity-labels.md) video.
+
+## Related content
+
+[Change plans manually](../commerce/subscriptions/change-plans-manually.md) (article)\
+[Upgrade Windows devices to Windows 10 Pro](upgrade-to-windows-pro-creators-update.md) (video)\
+[Set app protection settings for Android or iOS devices](app-protection-settings-for-android-and-ios.md) (article)\
+[Set or edit application protection settings for Windows 10 devices](protection-settings-for-windows-10-devices.md) (article)\
+[]
+

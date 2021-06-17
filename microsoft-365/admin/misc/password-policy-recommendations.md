@@ -20,7 +20,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
-description: "Learn how to make your organization more secure against password attacks, and why you should ban common passwords and enable risk-based multi-factor authentication."
+description: "Make your organization more secure against password attacks, and ban common passwords and enable risk-based multi-factor authentication."
 ---
 
 # Password policy recommendations
@@ -33,7 +33,7 @@ For more information about Microsoft 365 passwords, see:
 
 [Reset passwords](../add-users/reset-passwords.md) (article)
 
-[Set an individual user's password to never expire](../add-users/set-password-to-never-expire.md) (artice)
+[Set an individual user's password to never expire](../add-users/set-password-to-never-expire.md) (article)
 
 [Let users reset their own passwords](../add-users/let-users-reset-passwords.md) (article)
 
@@ -123,7 +123,9 @@ To learn more, see [Set up multi-factor authentication](../security-and-complian
 
 Risk-based multi-factor authentication ensures that when our system detects suspicious activity, it can challenge the user to ensure that they are the legitimate account owner. 
   
-## Want to know more? Recommended reading
+## Next steps
+
+Want to know more about managing passwords? Here is some recommended reading:
 
 - [Do Strong Web Passwords Accomplish Anything?](https://go.microsoft.com/fwlink/p/?linkid=861008)
 
@@ -139,10 +141,7 @@ Risk-based multi-factor authentication ensures that when our system detects susp
 
 ## Related content
 
-[Reset passwords](../add-users/reset-passwords.md) (article)
-
-[Set an individual user's password to never expire](../add-users/set-password-to-never-expire.md) (article)
-
-[Let users reset their own passwords](../add-users/let-users-reset-passwords.md) (article)
-
+[Reset passwords](../add-users/reset-passwords.md) (article)\
+[Set an individual user's password to never expire](../add-users/set-password-to-never-expire.md) (article)\
+[Let users reset their own passwords](../add-users/let-users-reset-passwords.md) (article)\
 [Resend a user's password - Admin Help](../add-users/resend-user-password.md) (article)

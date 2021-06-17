@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+localization_priority: Priority
 ms.collection: 
 - Adm_O365
 ms.custom: 
@@ -22,6 +22,8 @@ description: "You must be an admin for a business subscription to get admin help
 ---
 
 # Get support
+
+## Watch: Get help or support 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOgo?autoplay=false]
 
@@ -252,8 +254,6 @@ You can also [search the Microsoft 365 for business community forums](https://go
 
 ## Related content
 
-[Find docs and training](find-help-answers.md) (article)
-
-[Employee quick setup](employee-quick-setup.md) (article)
-
+[Find docs and training](find-help-answers.md) (article)\
+[Employee quick setup](employee-quick-setup.md) (article)\
 [Overview of Microsoft 365 Business Premium setup](setup-overview.md) (video)

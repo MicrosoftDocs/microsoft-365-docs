@@ -42,7 +42,7 @@ Topic | Description
 :---|:---
 [Configure Microsoft Defender Security Center settings](preferences-setup.md) | Configure portal-related settings such as general settings, advanced features, or enable the preview experience.
 [Configure attack surface reduction capabilities](configure-attack-surface-reduction.md) | Configure attack surface reduction capabilities, to ensure that settings are properly applied, and exploit mitigation techniques are set.
-[Configure next-generation protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-microsoft-defender-antivirus-features) | Configure next-generation protection to catch all types of emerging threats.
+[Configure next-generation protection](/windows/security/threat-protection/microsoft-defender-antivirus/configure-microsoft-defender-antivirus-features) | Configure next-generation protection to catch all types of emerging threats.
 [Configure Microsoft Threat Experts capabilities](configure-microsoft-threat-experts.md) | Configure and manage cybersecurity threat intelligence from Microsoft Threat Experts.
-[Configure Microsoft 365 Defender integration](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/threat-protection-integration) | Configure other solutions that integrate with Defender for Endpoint.
-[Management and API support](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/management-apis) | Pull alerts to your Security Information and Event Management (SIEM) or use APIs to create custom alerts. Create and build Power BI reports.
+[Configure Microsoft 365 Defender integration](/microsoft-365/security/defender-endpoint/threat-protection-integration) | Configure other solutions that integrate with Defender for Endpoint.
+[Management and API support](/microsoft-365/security/defender-endpoint/management-apis) | Pull alerts to your Security Information and Event Management (SIEM) or use APIs to create custom alerts. Create and build Power BI reports.

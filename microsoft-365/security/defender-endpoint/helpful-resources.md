@@ -33,7 +33,7 @@ Access helpful resources such as links to blogs and other resources related to  
 
 ## Endpoint protection platform
 - [Top scoring in industry
-    tests](https://docs.microsoft.com/windows/security/threat-protection/intelligence/top-scoring-industry-antivirus-tests)
+    tests](/windows/security/threat-protection/intelligence/top-scoring-industry-antivirus-tests)
 
 - [Inside out: Get to know the advanced technologies at the core of Defender for Endpoint next generation protection](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/)
 

@@ -18,7 +18,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c33d1ba6-077c-4cea-be04-cfffbe3f3ed8
-description: "Understand what a domain is and how you can buy a domain or use the default domain of your business."
+description: "Learn what a domain is and how you can buy a domain or use the default domain of your business to get started with OneDrive and Microsoft apps."
 ms.custom: 
 - okr_smb
 - AdminSurgePortfolio

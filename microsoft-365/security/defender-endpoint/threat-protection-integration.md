@@ -52,7 +52,7 @@ Microsoft Cloud App Security leverages Microsoft Defender for Endpoint endpoint 
 Suspicious activities are processes running under a user context. The integration between Microsoft Defender for Endpoint and Microsoft Defender for Identity provides the flexibility of conducting cyber security investigation across activities and identities.
 
 ### Microsoft Defender for Office
-[Defender for Office 365](https://docs.microsoft.com/office365/securitycompliance/office-365-atp) helps protect your organization from malware in email messages or files through Safe Links, Safe Attachments, advanced Anti-Phishing, and spoof intelligence capabilities. The integration between Microsoft Defender for Office 365 and Microsoft Defender for Endpoint enables security analysts to go upstream to investigate the entry point of an attack. Through threat intelligence sharing, attacks can be contained and blocked. 
+[Defender for Office 365](/office365/securitycompliance/office-365-atp) helps protect your organization from malware in email messages or files through Safe Links, Safe Attachments, advanced Anti-Phishing, and spoof intelligence capabilities. The integration between Microsoft Defender for Office 365 and Microsoft Defender for Endpoint enables security analysts to go upstream to investigate the entry point of an attack. Through threat intelligence sharing, attacks can be contained and blocked. 
 
 >[!NOTE]
 > Defender for Office 365 data is displayed for events within the last 30 days. For alerts, Defender for Office 365 data is displayed based on first activity time. After that, the data is no longer available in Defender for Office 365.
@@ -61,13 +61,13 @@ Suspicious activities are processes running under a user context. The integratio
 The Skype for Business integration provides a way for analysts to communicate with a potentially compromised user or device owner through a simple button from the portal.
 
 ## Microsoft 365 Defender
-With Microsoft 365 Defender, Microsoft Defender for Endpoint and various Microsoft security solutions form a unified pre- and post-breach enterprise defense suite that natively integrates across endpoint, identity, email, and applications to detect, prevent, investigate and automatically respond to sophisticated attacks. 
+With Microsoft 365 Defender, Microsoft Defender for Endpoint, and various Microsoft security solutions form a unified pre- and post-breach enterprise defense suite that natively integrates across endpoint, identity, email, and applications to detect, prevent, investigate, and automatically respond to sophisticated attacks. 
  
-[Learn more about Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-threat-protection)
+[Learn more about Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)
 
 
 ## Related topics
 - [Configure integration and other advanced features](advanced-features.md)
-- [Microsoft 365 Defender overview](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-threat-protection)
-- [Turn on Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/defender/mtp-enable)
+- [Microsoft 365 Defender overview](/microsoft-365/security/defender/microsoft-threat-protection)
+- [Turn on Microsoft 365 Defender](/microsoft-365/security/defender/mtp-enable)
 - [Protect users, data, and devices with Conditional Access](conditional-access.md)

@@ -74,13 +74,13 @@ HP Commercial PCs shipped with the HP Corporate Ready Image include a .WIM file 
 
 These steps will remove all data on the device, so before starting you should back up any data on you want to keep.
 
-1. [Create a bootable USB drive](https://docs.microsoft.com/windows-hardware/manufacture/desktop/winpe-create-usb-bootable-drive) with WinPE.
+1. [Create a bootable USB drive](/windows-hardware/manufacture/desktop/winpe-create-usb-bootable-drive) with WinPE.
 2. Copy these files from C:\\SOURCES to the USB drive:
     - The factory recovery WIM file (for example, HP\_EliteBook\_840\_G7\_Notebook\_PC\_CR\_2004.wim)
     - DEPLOY.CMD
     - ReCreatePartitions.txt
 3. [Boot the device to WinPE](https://store.hp.com/us/en/tech-takes/how-to-boot-from-usb-drive-on-windows-10-pcs) USB drive.
-4. In a command prompt, run [Diskpart.exe](https://docs.microsoft.com/windows-server/administration/windows-commands/diskpart#additional-references).
+4. In a command prompt, run [Diskpart.exe](/windows-server/administration/windows-commands/diskpart#additional-references).
 5. In Diskpart, run `list disk`, and then note the primary storage disk number (typically, Disk 0).
 6. Exit Diskpart by typing `exit`.
 7. In the command prompt, run `deploy.cmd <sys_disk> <recovery_wim>`, where *sys_disk* is the disk number of the primary storage disk you just determined and *recovery_wim* is the filename of the .WIM file you copied earlier.

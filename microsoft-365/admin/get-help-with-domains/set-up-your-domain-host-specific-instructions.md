@@ -36,4 +36,4 @@ Learn how to [change nameservers to set up Microsoft 365 with any domain registr
 
 ## Manage your own DNS records
 
-For instructions, see [Create DNS records at ny DNS hosting provider](create-dns-records-at-any-dns-hosting-provider.md)
+For instructions, see [Create DNS records at any DNS hosting provider](create-dns-records-at-any-dns-hosting-provider.md)

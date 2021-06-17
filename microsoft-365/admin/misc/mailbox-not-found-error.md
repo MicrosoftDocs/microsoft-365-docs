@@ -32,8 +32,6 @@ Your admin can assign a license to your account by following these steps:
 
 ## Related content
 
-[Add another email alias for a user](../email/add-another-email-alias-for-a-user.md) (article)
-
-[Configure email forwarding in Microsoft 365](../email/configure-email-forwarding.md) (article)
-
+[Add another email alias for a user](../email/add-another-email-alias-for-a-user.md) (article)\
+[Configure email forwarding in Microsoft 365](../email/configure-email-forwarding.md) (article)\
 [Create a shared mailbox](../email/create-a-shared-mailbox.md) (article)

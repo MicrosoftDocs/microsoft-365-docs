@@ -180,5 +180,5 @@ Daily, monthly, quarterly, and annual tasks can be used to update or refine proc
 
   - Perform [investigations](investigate-incidents.md) of incidents.
 
-- See these [incident response playbooks](https://docs.microsoft.com/security/compass/incident-response-playbooks) for detailed guidance for phishing, password spray, and app consent grant attacks.
+- See these [incident response playbooks](/security/compass/incident-response-playbooks) for detailed guidance for phishing, password spray, and app consent grant attacks.
 
