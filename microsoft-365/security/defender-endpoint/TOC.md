@@ -12,7 +12,7 @@
 ### [Microsoft Defender for Endpoint on non-Windows platforms](non-windows.md)
 ### [Defender for Endpoint Plan 1 (preview)](defender-endpoint-plan-1.md)
 #### [Compare Defender for Endpoint Plan 1 (preview) to Plan 2](defender-endpoint-plan-1-2.md)
-#### [Defender for Endpoint Plan 1 setup]()
+#### [Set up and configure Defender for Endpoint Plan 1 (preview)](mde-p1-setup-configuration.md)
 #### [Getting started with Defender for Endpoint Plan 1](mde-plan1-getting-started.md)
 
 ## [Evaluate capabilities](evaluation-lab.md)
