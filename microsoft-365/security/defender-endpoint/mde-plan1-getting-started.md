@@ -33,7 +33,7 @@ The Microsoft 365 Defender portal ([https://security.microsoft.com](https://secu
 The Home page provides your security team with a snapshot aggregate view of alerts, device status, and threats detected. The security center is set up so that your security operations team can find the information they are looking for quickly and easily.
 
 > [!NOTE]
-> Our examples shown in this article might differ from your Microsoft 365 Defender portal. What you see in your Microsoft 365 Defender portal depends on your licenses and permissions. In addition, your security team can customize your page by adding, removing, and rearranging cards.
+> Our examples shown in this article might differ from your Microsoft 365 Defender portal. What you see in your portal depends on your licenses and permissions. In addition, your security team can customize your page by adding, removing, and rearranging cards.
 
 ### Navigation bar
 
