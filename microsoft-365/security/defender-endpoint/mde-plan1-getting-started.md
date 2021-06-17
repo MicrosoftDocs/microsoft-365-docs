@@ -45,10 +45,10 @@ The following table describes the navigation bar.
 
 | Navigation bar item | Description |
 |:---|:---|
-| Home | Navigates to the Home page of the Microsoft 365 Defender portal. |
-| Incidents & alerts | Expands to show Incidents and Alerts. |
-| Incidents | Navigates to the Incidents list. Incidents are created when alerts are triggered and/or threats are detected. By default, the Incidents list displays data for the last 30 days, with the most recent incident listed first. To learn more, see Incidents. |
-| Alerts | Navigates to the Alerts list (also referred to as the Alerts queue). Alerts are triggered when a suspicious or malicious file, process, or behavior is detected. By default, the Alerts list displays data for the last 30 days, with the most recent alert listed first. To learn more, see Alerts. |
+| **Home** | Navigates to the Home page of the [Microsoft 365 Defender portal](../defender/microsoft-365-security-center-mde.md). |
+| **Incidents & alerts** | Expands to show **Incidents** and **Alerts**. |
+| **Incidents** | Navigates to the Incidents list. Incidents are created when alerts are triggered and/or threats are detected. By default, the Incidents list displays data for the last 30 days, with the most recent incident listed first. To learn more, see Incidents. |
+| **Alerts** | Navigates to the **Alerts** list (also referred to as the **Alerts queue**). Alerts are triggered when a suspicious or malicious file, process, or behavior is detected. By default, the **Alerts** list displays data for the last 30 days, with the most recent alert listed first. To learn more, see Alerts. |
 | Action center | Navigates to the Action center, which tracks remediation and manual response actions. The Action center tracks activities like these: <br/>- Microsoft Defender Antivirus encounters a malicious file and then blocks/removes that file. <br/>- Your security team isolates a device. |
 | Device inventory | Navigates to your list of devices that are onboarded to Defender for Endpoint. Provides information about devices, such as their exposure and risk levels. To learn more, see Device inventory. |
 | Reports | Navigates to your reports, such as your Threat protection report, Device health and compliance report, and your Web protection report. |
