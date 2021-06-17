@@ -96,8 +96,8 @@ Here is an example of the response.
 {
 	"@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#microsoft.windowsDefenderATP.api.InOrgDomainStats",
 	"host": "example.com",
-    "orgPrevalence": "4070",
-    "orgFirstSeen": "2017-07-30T13:23:48Z",
-    "orgLastSeen": "2017-08-29T13:09:05Z"
+	"organizationPrevalence": 4070,
+	"orgFirstSeen": "2017-07-30T13:23:48Z",
+	"orgLastSeen": "2017-08-29T13:09:05Z"
 }
 ```
