@@ -61,14 +61,18 @@ When you sign into the Microsoft 365 Defender portal, make sure to view and mana
 
 :::image type="content" source="../../media/mde-p1/incidents-list.png" alt-text="Incidents list":::
  
-Select an incident to view details about it, such as what alerts were triggered, how many devices and users were affected, and other details. Figure 6 shows an example of incident details.
+Select an incident to view details about it, such as what alerts were triggered, how many devices and users were affected, and other details. The following image shows an example of incident details.
+
+:::image type="content" source="../../media/mde-p1/single-incident-view.png" alt-text="Incident details":::
  
-Figure 6. Details of an incident. Your incident view might not have all the tabs shown here.
+> [!NOTE]
+> Your incident view might not have all the tabs shown in our example.
 
-Use the Alerts, Devices, and Users tabs to view more information, such as the alerts that were triggered, devices that were affected, and user accounts that were affected. From there, you can take manual response actions, such as isolating a device, stopping and quarantining a file, and so on. 
-To learn more about using the Incident view, see Manage incidents.
+Use the **Alerts**, **Devices**, and **Users** tabs to view more information, such as the alerts that were triggered, devices that were affected, and user accounts that were affected. From there, you can take manual response actions, such as isolating a device, stopping and quarantining a file, and so on. 
 
-Managing devices
+To learn more about using the **Incident** view, see [Manage incidents](manage-incidents.md).
+
+## Managing devices
 
 To view and manage your organization’s devices, in the navigation bar, under Endpoints, select Device inventory. You’ll see a list of devices as shown in figure 7. The list includes devices for which alerts were generated. By default, the data shown is for the past 30 days, with the most recent items listed first.
 
