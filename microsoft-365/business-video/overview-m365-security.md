@@ -54,7 +54,7 @@ You can use [data loss prevention (DLP)](set-up-dlp.md) policies to identify and
 
 Microsoft 365 Business Premium advanced device management features let you monitor and control what users can do with enrolled devices. These features include conditional access, [Mobile Device Management (MDM)](/microsoft-365/admin/basic-mobility-security/manage-enrolled-devices), BitLocker, and automatic updates.
 
-You can use conditional access policies to require additional security measures for certain users and tasks. For example, you can require multi-factor authentication (MFA) or block clients that don't support conditional access.
+You can use conditional access policies to require additional security measures for certain users and tasks. For example, you can require [multi-factor authentication (MFA)](/microsoft-365/business-video/turn-on-mfa) or block clients that don't support conditional access.
 
 With MDM, you can help secure and manage your users' mobile devices like iPhones, iPads, Androids, and Windows phones. You can create and manage device security policies, remotely wipe a device to remove all company data, reset a device to factory settings, and view detailed device reports.
 
