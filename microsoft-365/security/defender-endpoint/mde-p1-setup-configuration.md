@@ -83,14 +83,19 @@ Defender for Endpoint enables you to edit and fine-tune your settings as needed.
 
 We recommend using [Microsoft Endpoint Manager](/mem) to manage your organization’s devices and security settings, as shown in the following image:
  
+:::image type="content" source="../../media/mde-p1/endpoint-security-policies.png" alt-text="Microsoft Endpoint Manager endpoint security policies":::
 
 
-Follow these steps to review and edit your next-generation protection settings.
-1.	Go to the Microsoft Endpoint Manager admin center (https://endpoint.microsoft.com) and sign in.
+## Review and edit your next-generation protection settings
+
+1.	Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and sign in.
+
 2.	Select Endpoint security > Antivirus, and then select an existing policy. (If you don’t have an existing policy, create a new policy.)
+
 3.	Refer to the following resources to set or change your antivirus configuration settings:
 •	Settings for Windows 10 Microsoft Defender Antivirus policy in Microsoft Intune
 •	Configure Defender for Endpoint on iOS features
+
 4.	When you are finished specifying your settings, choose Review + save.
 
 ## Configure attack surface reduction rules
