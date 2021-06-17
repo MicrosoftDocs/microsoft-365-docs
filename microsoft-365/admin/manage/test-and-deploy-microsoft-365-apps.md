@@ -84,7 +84,7 @@ You won't be able to deploy a single store app or Microsoft 365 Apps by partner 
 - The SaaS offer is linked to add-ins, but it does not integrate with Microsoft Graph and no AAD App ID is provided.
 - The SaaS offer is linked to add-ins, but AAD App ID provided for Microsoft Graph integration is shared across multiple SaaS offers.
 
-## Upload custom line of business apps for testing and full deployment
+## Upload custom line-of-business apps for testing and full deployment
 
 1. In the admin center, in the left nav, choose **Settings** and then **Integrated apps**.
 
@@ -124,7 +124,7 @@ Deployment doesn't support the following:
 
 - Add-ins that target Word, Excel, or PowerPoint in Office 2013 
 - An on-premises directory service 
-- Add-in Deployment to an Exchange On-Prem Mailbox 
+- Add-in Deployment to an Exchange On-prem Mailbox 
 - Deployment of Component Object Model (COM) or Visual Studio Tools for Office (VSTO) add-ins. 
 - Deployments of Microsoft 365 that do not include Exchange Online such as Microsoft 365 Apps for Business and Microsoft 365 Apps for Enterprise.  
 
@@ -188,11 +188,11 @@ Depending on the size of the target audience, you can add or remove roll-out ste
 
 1. In the admin center, select **Settings**, then select **Integrated apps**. 
 
-2. Select **Get apps** at the top of the page. Appsource will load in an embedded format. Either search for an add-in or find it through clicking on Product on the left nav.  If the add-in has been linked by the ISV to a SaaS app or other apps and add-ins and if the SaaS app is a paid app then you will be shown a dialog box to either buy the license or Deploy. Irrespective of whether you have bought the license or not you can go ahead with the deployment. Select **Deploy**.  
+2. Select **Get apps** at the top of the page. AppSource will load in an embedded format. Either search for an add-in or find it through clicking on Product on the left nav.  If the add-in has been linked by the ISV to a SaaS app or other apps and add-ins and if the SaaS app is a paid app then you will be shown a dialog box to either buy the license or Deploy. Irrespective of whether you have bought the license or not you can go ahead with the deployment. Select **Deploy**.  
 
 3. You will see the **Configuration** page where all the apps are listed. If you don’t have permissions or the right access to deploy the app, the respective information will be highlighted. You can select the apps you want to deploy. By selecting **Next**, you will view the **Users** page. If the add-in hasn’t been linked by the ISV, you will be routed to the Users page. 
 
-4. Select **Everyone**, **Specific users/groups**, or **Just me** to specify who the add-in is deployed to. Use the Search box to find specific users or groups. If you are testing the add-in, select **Is this a test deployment**. 
+4. Select **Everyone**, **Specific users/groups**, or **Just me** to specify whom the add-in is deployed to. Use the Search box to find specific users or groups. If you are testing the add-in, select **Is this a test deployment**. 
 
 5. Select **Next**. All the app capabilities and permissions are displayed in a single pane along with certification info if the app has Microsoft 365 certification. Selecting the certification logo lets the user see more details about the certification.  
 
@@ -220,7 +220,7 @@ Global admins and Exchange admins can assign an add-in to everyone or to specifi
 The right option for your organization depends on your configuration. However, we recommend making assignments by using groups. As an admin, you might find it easier to manage add-ins by using groups and controlling the membership of those groups rather than assigning individual users each time. In some situations, you might want to restrict access to a small set of users by making assignments to specific users by assigning users manually. 
 
 ### More about Office add-ins security 
-Office add-inds combine an XML manifest file that contains some metadata about the add-in, but most importantly points to a web application which contains all the code and logic. Add-ins can range in their capabilities. For example, add-ins can:
+Office add-ins combine an XML manifest file that contains some metadata about the add-in, but most importantly points to a web application which contains all the code and logic. Add-ins can range in their capabilities. For example, add-ins can:
 - Display data. 
 - Read a user's document to provide contextual services. 
 - Read and write data to and from a user's document to provide value to that user.  
@@ -281,7 +281,7 @@ You can also delete an add-in that was deployed.
 
 There are two cases in which an Exchange Admin won't be able to deploy an add-in:
 - If an add-in needs permission to MS Graph APIs and needs consent from a global admin.
-- If an add-in is linked to two or more add-ins and webapps, and at least one of these add-ins are deployed by another admin (exchange/global) and the user assignment is not uniform. We only allow deployment of add-ins when the user assignment is the same for all the already deployed apps.  
+- If an add-in is linked to two or more add-ins and webapps, and at least one of these add-ins is deployed by another admin (exchange/global) and the user assignment is not uniform. We only allow deployment of add-ins when the user assignment is the same for all the already deployed apps.  
 
 
 ## Frequently asked questions
@@ -294,12 +294,12 @@ Only global administrators can access Integrated Apps. Integrated apps won't sho
 
 There could be a few reasons:
 
-- The logged in administrator is an Exchange admininstrator.
+- The logged in administrator is an Exchange administrator.
 - The customer is in sovereign cloud and Integrated apps experience is available to sovereign cloud customers yet.
 
 ### What apps can I deploy from Integrated apps?
 
-Integrated apps allows deployment of Web Apps, Teams app, Excel, PowerPoint, Word, Outlook add-ins, and SPFx apps. For add-ins, Integrated apps supports deployment to Exchange online mailboxes and not on-premises Exchange mailboxes.
+Integrated apps allow deployment of Web Apps, Teams app, Excel, PowerPoint, Word, Outlook add-ins, and SPFx apps. For add-ins, Integrated apps support deployment to Exchange online mailboxes and not on-premises Exchange mailboxes.
 
 ### Can administrators delete or remove apps?
 
