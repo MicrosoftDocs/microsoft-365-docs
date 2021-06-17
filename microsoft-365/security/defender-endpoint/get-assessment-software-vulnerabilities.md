@@ -59,9 +59,9 @@ This API response contains all the data of installed software per device. Retu
 
 #### 1.1.1 Limitations
 
->- Maximum page size is 200,000.
->
->- Rate limitations for this API are 30 calls per minute and 1000 calls per hour.
+- Maximum page size is 200,000.
+
+- Rate limitations for this API are 30 calls per minute and 1000 calls per hour.
 
 ### 1.2 Permissions
 
@@ -334,7 +334,7 @@ GET https://api-us.securitycenter.contoso.com/api/machines/SoftwareVulnerabiliti
 
 ### 3.1 API method description
 
-Returns a table with an entry for every unique combination of DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId. The API pulls data in your organization as Json responses. The response is paginated, so you can use the @odata.nextLink field from the response to fetch the next results. Unlike the full software vulnerabilities assessment (JSON response) - which is used to obtain an entire snapshot of the software vulnerabilities assessment of your organization by device - the delta export JSON response API call is used to fetch only the changes that have happened between a selected date and the current date (the “delta” API call). Instead of getting a full export with a large amount of data every time, you’ll only get specific information on new, fixed, and updated vulnerabilities. Delta export JSON response API call can also be used to calculate different KPIs such as “how many vulnerabilities were fixed?” or “how many new vulnerabilities were added to my organization?”
+Returns a table with an entry for every unique combination of DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId. The API pulls data in your organization as Json responses. The response is paginated, so you can use the @odata.nextLink field from the response to fetch the next results. Unlike the full software vulnerabilities assessment (JSON response)—which is used to obtain an entire snapshot of the software vulnerabilities assessment of your organization by device—the delta export JSON response API call is used to fetch only the changes that have happened between a selected date and the current date (the “delta” API call). Instead of getting a full export with a large amount of data every time, you’ll only get specific information on new, fixed, and updated vulnerabilities. Delta export JSON response API call can also be used to calculate different KPIs such as “how many vulnerabilities were fixed?” or “how many new vulnerabilities were added to my organization?”
 
 >[!NOTE]
 >
@@ -374,10 +374,10 @@ GET /api/machines/SoftwareVulnerabilityChangesByMachine
 Each returned record contains all the data from the full export software vulnerabilities assessment by device OData API, plus two additional fields:  _**EventTimestamp**_ and _**Status**_.
 
 >[!NOTE]
->-Some additional columns might be returned in the response. These columns are temporary and might be removed, so please use only the documented columns.
+>- Some additional columns might be returned in the response. These columns are temporary and might be removed, so please use only the documented columns.
 >
->-The properties defined in the following table are listed alphabetically, by property ID.  When running this API, the resulting output will not necessarily be returned in the same order listed in this table.
-<br>
+>- The properties defined in the following table are listed alphabetically, by property ID.  When running this API, the resulting output will not necessarily be returned in the same order listed in this table.
+<br><br/>
 
 Property (ID) | Data type | Description | Example of returned value
 :---|:---|:---|:---
@@ -406,12 +406,12 @@ VulnerabilitySeverityLevel | string | Severity level assigned to the security vu
 #### Clarifications
 
 - If the software was updated from version 1.0 to version 2.0, and both versions are exposed to CVE-A, you will receive 2 separate events:  
-   a. Fixed – CVE-A on version 1.0 was fixed  
-   b. New – CVE-A on version 2.0 was added
+   1. Fixed – CVE-A on version 1.0 was fixed  
+   1. New – CVE-A on version 2.0 was added
 
 - If a specific vulnerability (for example, CVE-A) was first seen at a specific time (for example, January 10) on software with version 1.0, and a few days later that software was updated to version 2.0 which also exposed to the same CVE-A, you will receive these two separated events:  
-   a. Fixed – CVE-X, FirstSeenTimestamp January 10, version 1,0.  
-   b. New – CVE-X, FirstSeenTimestamp January 10, version 2.0.
+   1. Fixed – CVE-X, FirstSeenTimestamp January 10, version 1,0.  
+   1. New – CVE-X, FirstSeenTimestamp January 10, version 2.0.
 
 ### 3.6 Examples
 

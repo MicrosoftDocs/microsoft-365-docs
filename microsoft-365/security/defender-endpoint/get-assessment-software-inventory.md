@@ -83,11 +83,11 @@ GET /api/machines/SoftwareInventoryByMachine
 
 >[!NOTE]
 >
->-Each record is approximately 0.5KB of data. You should take this into account when choosing the correct pageSize parameter for you.
+>- Each record is approximately 0.5KB of data. You should take this into account when choosing the correct pageSize parameter for you.
 
->-The properties defined in the following table are listed alphabetically, by property ID. When running this API, the resulting output will not necessarily be returned in the same order listed in this table.
+>- The properties defined in the following table are listed alphabetically, by property ID. When running this API, the resulting output will not necessarily be returned in the same order listed in this table.
 >
->-Some additional columns might be returned in the response. These columns are temporary and might be removed, please use only the documented columns.
+>- Some additional columns might be returned in the response. These columns are temporary and might be removed, please use only the documented columns.
 
 Property (ID) | Data type | Description | Example of a returned value
 :---|:---|:---|:---
@@ -245,8 +245,8 @@ GET /api/machines/SoftwareInventoryExport
 >
 >- The download URLs are only valid for 3 hours. Otherwise you can use the parameter.
 >
->_ For maximum download speed of your data, you can make sure you are downloading from the same Azure region that your data resides.
->
+>- For maximum download speed of your data, you can make sure you are downloading from the same Azure region that your data resides.
+
 Property (ID) | Data type | Description | Example of a returned value
 :---|:---|:---|:---
 Export files | array\[string\] | A list of download URLs for files holding the current snapshot of the organization | [  Https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...1”, “https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...2” ]
