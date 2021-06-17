@@ -96,7 +96,7 @@ Verify that Microsoft Defender Antivirus is installed and is active.
     >Microsoft Defender Antivirus will get installed and will be active unless you set it to passive mode. 
  
 4. Select **Download onboarding package** and save the .zip file.
-5. Install the installation package using any of the [Options to install Microsoft Defender Antivirus]()
+5. Install the installation package using any of the [Options to install Microsoft Defender Antivirus](#options-to-install-microsoft-defender-antivirus).
 6. Follow the steps provided in the [onboarding steps](#onboarding-steps) section.
 
 ## Options to install Microsoft Defender Antivirus
