@@ -29,17 +29,15 @@
 #### [Onboard supported devices](onboard-configure.md)
 
 ## [Migration guides](migration-guides.md)
-### [Switch from non-Microsoft endpoint protection to Defender for Endpoint]()
-#### [Overview of migration](switch-to-microsoft-defender-migration.md)
+### [Switch from non-Microsoft endpoint protection to Defender for Endpoint](switch-to-microsoft-defender-migration.md)
 #### [Phase 1: Prepare](switch-to-microsoft-defender-prepare.md)
 #### [Phase 2: Setup](switch-to-microsoft-defender-setup.md)
 #### [Phase 3: Onboard](switch-to-microsoft-defender-onboard.md)
-### [Manage Defender for Endpoint after migration]()
-#### [Overview of managing Defender for Endpoint](manage-atp-post-migration.md)
-#### [Intune (recommended)](manage-atp-post-migration-intune.md)
-#### [Configuration Manager](manage-atp-post-migration-configuration-manager.md)
-#### [Group Policy Objects](manage-atp-post-migration-group-policy-objects.md)
-#### [PowerShell, WMI, and MPCmdRun.exe](manage-atp-post-migration-other-tools.md)
+### [Manage Defender for Endpoint after migration](manage-atp-post-migration.md)
+#### [Use Intune (recommended)](manage-atp-post-migration-intune.md)
+#### [Use Configuration Manager](manage-atp-post-migration-configuration-manager.md)
+#### [Use Group Policy](manage-atp-post-migration-group-policy-objects.md)
+#### [Use PowerShell, WMI, or MPCmdRun.exe](manage-atp-post-migration-other-tools.md)
 
 
 ## [Configure and onboard devices]()
