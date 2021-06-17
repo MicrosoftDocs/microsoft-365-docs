@@ -125,12 +125,14 @@ Scroll down to see all the views in each list.
 
 ### Device health report
 
-To access your Device health report, in the Microsoft 365 Defender portal, choose Reports, and then choose Device health. The Device health report shows health state and antivirus across devices in your organization. Similar to the Threat protection report, views are arranged in two columns: Device trends and Device summary, as shown in figure 10.
+To access your Device health report, in the Microsoft 365 Defender portal, choose **Reports**, and then choose **Device health**. The Device health report shows health state and antivirus across devices in your organization. Similar to the [Threat protection report](#threat-protection-report), views are arranged in two columns: **Device trends** and **Device summary**, as shown in the following image: 
  
-Figure 10. Device health report
+:::image type="content" source="../../media/mde-p1/devicehealthreport.PNG" alt-text="Device health report":::
 
-Scroll down to see all the views in each list. By default, the views in the Device trends column display data for the past 30 days, but you can change a view to display data for the last three months, last six months, or a custom time range (up to 180 days). The Device summary views are snapshots for the previous business day.
-To learn more, see Device health.
+Scroll down to see all the views in each list. By default, the views in the **Device trends** column display data for the past 30 days, but you can change a view to display data for the last three months, last six months, or a custom time range (up to 180 days). The **Device summary** views are snapshots for the previous business day.
+
+> [!TIP]
+> To learn more, see [Device health](machine-reports.md).
 
 ### Web protection report
 
