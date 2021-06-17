@@ -21,13 +21,13 @@ As a preview customer, you likely have assistance in setting up and configuring 
 
 The general setup and configuration process is as follows:
 
-- Review the requirements (including licensing and device requirements)
-- Plan your deployment
-- Set up your tenant environment
-- Assign roles and permissions
-- Onboard to Defender for Endpoint
-- Configure next-generation protection
-- Configure attack surface reduction capabilities
+1. [Review the requirements](#review-the-requirements) (including licensing and device requirements)
+2. [Plan your deployment](#plan-your-deployment)
+3. [Set up your tenant environment](#set-up-your-tenant-environment)
+4. [Assign roles and permissions](#assign-roles-and-permissions)
+5. [Onboard to Defender for Endpoint](#onboard-to-defender-for-endpoint)
+6. [Configure next-generation protection](#configure-next-generation-protection)
+7. [Configure attack surface reduction capabilities](#configure-attack-surface-reduction-rules)
  
 As soon as roles and permissions are assigned, your security team can get started using the Microsoft 365 Defender portal (see [Getting started with Defender for Endpoint Plan 1](mde-plan1-getting-started.md)).
  
