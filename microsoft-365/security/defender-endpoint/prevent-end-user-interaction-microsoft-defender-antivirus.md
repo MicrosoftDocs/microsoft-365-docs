@@ -46,7 +46,7 @@ With the setting set to **Disabled** or not configured:
 
 In earlier versions of Windows 10, the setting will hide the Windows Defender client interface. If the user attempts to open it, they will receive a warning that says, "Your system administrator has restricted access to this app."
 
-![Warning message when headless mode is enabled in Windows 10, versions earlier than 1703](images/defender/wdav-headless-mode-1607.png)
+:::image type="content" source="../../media/wdav-headless-mode-1607.png" alt-text="Warning message when headless mode is enabled in Windows 10, versions earlier than 1703":::
 
 ## Use Group Policy to hide the Microsoft Defender AV interface from users
 
