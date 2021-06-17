@@ -24,9 +24,9 @@ For additional information about purchasing and licensing Microsoft 365 apps fro
 
 For more info on how partners create these apps, see [How to plan a SaaS offer for the commercial marketplace](https://go.microsoft.com/fwlink/?linkid=2158277)
 
-The Integrated apps portal is only accessible to global admins and available to world wide customers only. This feature is not available in sovereign and government clouds.
+The Integrated apps portal is only accessible to global admins and available to world-wide customers only. This feature is not available in sovereign and government clouds.
 
-The Integrated apps portal displays a list of apps, which includes single apps and Microsoft 365 apps from partners which are deployed your organization. Only web apps, SPFx apps, Office add-ins and Teams apps are listed. For web apps, we you can see two kinds of apps.
+The Integrated apps portal displays a list of apps, which includes single apps and Microsoft 365 apps from partners which are deployed your organization. Only web apps, SPFx apps, Office add-ins and Teams apps are listed. For web apps, you can see two kinds of apps.
 
 - SaaS apps that are available in appsource.microsoft.com, and can be deployed by admins giving consent on behalf of the organization.
 - SAML gallery apps that are linked with office add-ins.
@@ -35,11 +35,11 @@ The Integrated apps portal displays a list of apps, which includes single apps a
 
 You can manage testing and deployment of purchased and licensed Microsoft 365 Apps from partners.
 
-1. In the admin center, in the left nav, choose **Settings**, and then choose **Integrated apps**.
+1. In the admin center, select **Settings**, and then select **Integrated apps**.
 
 2. Choose an app with **Status** of **More apps available** to open the **Manage** pane. The status of **more apps available** lets you know that there are more integrations from the ISVs that aren't yet deployed.
 
-3. On the **Overview** tab select **Deploy**. Some apps require you to add users before you can select Deploy.
+3. On the **Overview** tab, select **Deploy**. Some apps require you to add users before you can select Deploy.
 
 4. Select  **Users**, choose **Is this a test deployment**, and then choose **Entire organization**, **Specific users/groups** or **Just me**. You can also choose **Test deployment** if you prefer to wait to deploy the app to the entire organization. Specific users or groups can be a Microsoft 365 group, a security group, or a distribution group.
 
@@ -140,10 +140,10 @@ For Outlook, your users must be using one of the following:
 - Version 16.0.4494.1000 or later of Office Professional Plus 2016 (MSI) or Office Standard 2016 (MSI).
     > [!NOTE]
     > MSI versions of Outlook show admin-installed add-ins in the appropriate Outlook ribbon, not the "My add-ins" section.  
-- Version 15.0.4937.1000 or later of Office Professional Plus 2013 (MSI) or Office Standard 2013 (MSI)* 
-- Version 16.0.9318.1000 or later of Office 2016 for Mac 
-- Version 2.75.0 or later of Outlook mobile for iOS 
-- Version 2.2.145 or later of Outlook mobile for Android 
+- Version 15.0.4937.1000 or later of Office Professional Plus 2013 (MSI) or Office Standard 2013 (MSI).
+- Version 16.0.9318.1000 or later of Office 2016 for Mac. 
+- Version 2.75.0 or later of Outlook mobile for iOS. 
+- Version 2.2.145 or later of Outlook mobile for Android. 
 
 
 
@@ -176,11 +176,11 @@ Note that you can use the Azure Active Directory Graph API to run queries to fin
 
 ## Recommended approach for deploying Office add-ins 
 To roll out add-ins by using a phased approach, we recommend the following: 
-1. Roll out the add-in to a small set of business stakeholders and members of the IT department. You can turn on the flag Is this a test deployment. If the deployment is successful, move to step 2. 
+1. Roll out the add-in to a small set of business stakeholders and members of the IT department. You can turn on the flag **Is this a test deployment**. If the deployment is successful, move to step 2. 
 
 2. Roll out the add-in to more individuals within the business. Again, evaluate the results and, if successful, continue with full deployment. 
 
-3. Perform a full rollout to all users. Turn off the flag from Is this a Test deployment. 
+3. Perform a full rollout to all users. Turn off the flag from **Is this a Test deployment**. 
 
 Depending on the size of the target audience, you can add or remove roll-out steps.  
 
@@ -279,9 +279,9 @@ You can also delete an add-in that was deployed.
 
 ## Scenarios where Exchange admin cannot deploy an add-in 
 
-There are two cases in which an Exchange Admin wont be able to deploy an add-in:
-- If an add-in needs permission to MS Graph APIs and needs consent from aglobal admin.
-- If an add-in is linked to two or more add-ins and webapps, and at least one of these add-ins are deployed by another admins (exchange/global) and the user assignment is not uniform. We only allow deployment of add-ins when the user assignment is same for all the already deployed apps.  
+There are two cases in which an Exchange Admin won't be able to deploy an add-in:
+- If an add-in needs permission to MS Graph APIs and needs consent from a global admin.
+- If an add-in is linked to two or more add-ins and webapps, and at least one of these add-ins are deployed by another admin (exchange/global) and the user assignment is not uniform. We only allow deployment of add-ins when the user assignment is the same for all the already deployed apps.  
 
 
 ## Frequently asked questions
