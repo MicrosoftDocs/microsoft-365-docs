@@ -45,8 +45,6 @@ In this interactive guide, you'll learn how Microsoft Defender for Endpoint can 
 
 ## What do you need to know before you begin?
 
-- Open the Microsoft 365 Defender at <https://security.microsoft.com/>. To go directly to the **Submission** page, use <https://security.microsoft.com/reportsubmission>.
-
 - To submit files to Microsoft, you need to be a member of one of the following role groups:
 
   - **Organization Management** or **Security Reader** in the [Microsoft 365 Defender portal](../office-365-security/permissions-microsoft-365-security-center.md).
@@ -59,9 +57,29 @@ In this interactive guide, you'll learn how Microsoft Defender for Endpoint can 
 
 If you have a file that you suspect might be malware or is being incorrectly detected, you can submit it to Microsoft for analysis using the [sample submissions portal](https://www.microsoft.com/wdsi/filesubmission/). [Needs to be updated for the unified experience]
 
-### Submit a suspected file 
+### Submit a suspected file or file hash
 
-New content
+1. Open the Microsoft 365 Defender at <https://security.microsoft.com/>, click **Submissions**, and then select **Add new submission**. 
+
+> [!div class="mx-imgBorder"]
+> ![Add new submission](../media/unified-admin-submission-new.png) (Image not final)
+
+2. Use the **Submit items to Microsoft for review** flyout that appears to submit the **File** or **File hash**.  
+
+3. In the **Submission type** box, select **File** from the drop down list. 
+
+4. Click **Browse files**. In the dialog that opens, find and select the file, and then click **Open**. Note that for **File hash** submissions, you'll either have to copy or type in the file path. 
+
+ 5. In the **How would you categorize this submission?** section, choose either **Malware**, or **Unwanted software**, or **Clean** (false positive).
+  
+ 6. Next, **Choose the priority**. Note that for **File hash** submissions, **Low - bulk files and SHA submissions** is the only choice, and is automatically selected.
+ 
+ 7. In the **Submission name** section, provide a name for your submission, and then add any additional note or comment you might have in the **Notes for Microsoft** text box. 
+ 
+> [!div class="mx-imgBorder"]
+> ![Submit items to Microsoft for review](../media/unified-admin-submission-file.png) (Image not final)
+
+ 8. Click **Submit**. 
 
 ## Related information
 
