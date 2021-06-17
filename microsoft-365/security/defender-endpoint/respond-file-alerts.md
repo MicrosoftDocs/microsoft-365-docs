@@ -123,14 +123,14 @@ You can roll back and remove a file from quarantine if you’ve determined that 
 
 2. Enter the following command, and press **Enter**:
 
-   ```powershell
+   ```console
    “%ProgramFiles%\Windows Defender\MpCmdRun.exe” –Restore –Name EUS:Win32/CustomEnterpriseBlock –All
    ```
 
-> [!NOTE]
-> In some scenarios, the **ThreatName** may appear as: EUS:Win32/CustomEnterpriseBlock!cl.
->
-> Defender for Endpoint will restore all custom blocked files that were quarantined on this device in the last 30 days.
+   > [!NOTE]
+   > In some scenarios, the **ThreatName** may appear as: EUS:Win32/CustomEnterpriseBlock!cl.
+   >
+   > Defender for Endpoint will restore all custom blocked files that were quarantined on this device in the last 30 days.
 
 > [!IMPORTANT]
 > A file that was quarantined as a potential network threat might not be recoverable. If a user attempts to restore the file after quarantine, that file might not be accessible. This can be due to the system no longer having network credentials to access the file. Typically, this is a result of a temporary log on to a system or shared folder and the access tokens expired.
@@ -244,7 +244,7 @@ You can also submit a sample through the [Microsoft Security Center Portal](http
    > [!NOTE]
    > Only PE files are supported, including _.exe_ and _.dll_ files.
 
-A progress bar is displayed and provides information on the different stages of the analysis. You can then view the report when the analysis is done.
+   A progress bar is displayed and provides information on the different stages of the analysis. You can then view the report when the analysis is done.
 
 > [!NOTE]
 > Depending on device availability, sample collection time can vary. There is a 3–hour timeout for sample collection. The collection will fail and the operation will abort if there is no online Windows 10 device reporting at that time. You can re–submit files for deep analysis to get fresh data on the file.
@@ -270,11 +270,14 @@ The details provided can help you investigate if there are indications of a pote
 If you come across a problem when trying to submit a file, try each of the following troubleshooting steps.
 
 1. Ensure that the file in question is a PE file. PE files typically have _.exe_ or _.dll_ extensions (executable programs or applications).
+
 2. Ensure the service has access to the file, that it still exists, and hasn't been corrupted or modified.
+
 3. Wait a short while and try to submit the file again. The queue may be full, or there was a temporary connection or communication error.
+
 4. If the sample collection policy isn't configured, then the default behavior is to allow sample collection. If it's configured, then verify the policy setting allows sample collection before submitting the file again. When sample collection is configured, then check the following registry value:
 
-    ```powershell
+    ```console
     Path: HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection
     Name: AllowSampleCollection
     Type: DWORD
@@ -284,6 +287,7 @@ If you come across a problem when trying to submit a file, try each of the follo
     ```
 
 1. Change the organizational unit through the Group Policy. For more information, see [Configure with Group Policy](configure-endpoints-gp.md).
+
 1. If these steps do not resolve the issue, contact [winatp@microsoft.com](mailto:winatp@microsoft.com).
 
 ## Related topics
