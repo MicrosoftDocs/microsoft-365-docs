@@ -62,7 +62,7 @@ If you have a file that you suspect might be malware or is being incorrectly det
 1. Open the Microsoft 365 Defender at <https://security.microsoft.com/>, click **Submissions**, and then select **Add new submission**. 
 
 > [!div class="mx-imgBorder"]
-> ![Add new submission](../media/unified-admin-submission-new.png) (Image not final)
+> ![Add new submission](../../media/unified-admin-submission-new.png) (Image not final)
 
 2. Use the **Submit items to Microsoft for review** flyout that appears to submit the **File** or **File hash**.  
 
@@ -77,7 +77,7 @@ If you have a file that you suspect might be malware or is being incorrectly det
  7. In the **Submission name** section, provide a name for your submission, and then add any additional note or comment you might have in the **Notes for Microsoft** text box. 
  
 > [!div class="mx-imgBorder"]
-> ![Submit items to Microsoft for review](../media/unified-admin-submission-file.png) (Image not final)
+> ![Submit items to Microsoft for review](../../media/unified-admin-submission-file.png) (Image not final)
 
  8. Click **Submit**. 
 
