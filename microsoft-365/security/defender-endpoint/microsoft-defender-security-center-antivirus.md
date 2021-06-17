@@ -19,9 +19,6 @@ ms.technology: mde
 
 # Microsoft Defender Antivirus in the Windows Security app
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
-
 **Applies to:**
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
