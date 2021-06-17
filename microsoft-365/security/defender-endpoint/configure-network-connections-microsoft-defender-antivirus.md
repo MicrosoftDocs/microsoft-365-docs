@@ -13,7 +13,7 @@ author: denisebmsft
 ms.author: deniseb
 ms.topic: article
 ms.custom: nextgen
-ms.date: 06/04/2021
+ms.date: 06/17/2021
 ms.reviewer: 
 manager: dansimp
 ---
@@ -90,11 +90,11 @@ If you're properly connected, you'll see a warning Microsoft Defender Antivirus 
 
 If you're using Microsoft Edge, you'll also see a notification message:
 
-![Microsoft Edge informing the user that malware was found](images/defender/wdav-bafs-edge.png)
+:::image type="content" source="../../media/wdav-bafs-edge.png" alt-text="Screenshot of notification that malware was found in Edge":::
 
 A similar message occurs if you're using Internet Explorer:
 
-![Microsoft Defender Antivirus notification informing the user that malware was found](images/defender/wdav-bafs-ie.png)
+:::image type="content" source="../../media/wdav-bafs-ie.png" alt-text="Microsoft Defender AV notification that malware was found":::
 
 You'll also see a detection under **Quarantined threats** in the **Scan history** section in the Windows Security app:
 
