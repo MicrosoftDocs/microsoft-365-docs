@@ -88,24 +88,37 @@ The flyout pane displays details, such as any active alerts for the device, and 
 
 If there are active alerts on the device, you can view them in the flyout pane. Select an individual alert to view more details about it. Or, take an action, such as **Isolate device**, so you can investigate the device further while minimizing the risk of infecting other devices. 
 
-To learn more, see Investigate devices in the Defender for Endpoint devices list.
+To learn more, see [Investigate devices in the Defender for Endpoint devices list](investigate-machines.md).
 
-Viewing reports
+## Viewing reports
 
-In Defender for Endpoint Plan 1, several reports are available in the Microsoft 365 Defender portal. To access your reports, in the Microsoft 365 Defender portal, choose Reports. Then select a report in the list. For more information, see Threat protection reports. 
+In Defender for Endpoint Plan 1, several reports are available in the Microsoft 365 Defender portal. To access your reports, follow these steps:
+
+1. Go to the Microsoft 365 Defender portal and sign in. 
+
+2. In the navigation bar, choose Reports. 
+
+3. Select a report in the list. 
+
 The main reports you’ll see and use include the following:
-•	Threat protection report
-•	Device health report
-•	Web protection report
 
-Threat protection report
+- Threat protection report
+- Device health report
+- Web protection report
+
+For more information, see Threat protection reports. 
+
+### Threat protection report
+
 To access your Threat protection report, in the Microsoft 365 Defender portal, choose Reports, and then choose Threat protection. The Threat Protection report shows alert trends, status, categories, and more. Views are arranged in two columns: Alert trends and Alert status, as shown in figure 9.
  
 Figure 9. Threat protection report
 
 Scroll down to see all the views in each list. By default, the views in the Alert trends column display data for the past 30 days, but you can set a view to display data for the last three months, last six months, or a custom time range (up to 180 days). The views in the Alert status column are a snapshot for the previous business day. 
 To learn more, see Threat protection report in Defender for Endpoint.
-Device health report
+
+### Device health report
+
 To access your Device health report, in the Microsoft 365 Defender portal, choose Reports, and then choose Device health. The Device health report shows health state and antivirus across devices in your organization. Similar to the Threat protection report, views are arranged in two columns: Device trends and Device summary, as shown in figure 10.
  
 Figure 10. Device health report
@@ -113,12 +126,14 @@ Figure 10. Device health report
 Scroll down to see all the views in each list. By default, the views in the Device trends column display data for the past 30 days, but you can change a view to display data for the last three months, last six months, or a custom time range (up to 180 days). The Device summary views are snapshots for the previous business day.
 To learn more, see Device health.
 
-Web protection report
+### Web protection report
+
 To access your Device health report, in the Microsoft 365 Defender portal, choose Reports, and then choose Web protection. The Web protection report shows detections over time, such as malicious URLs and attempts to access blocked URLs, as shown in Figure 11. 
  
 Figure 11. Web protection report
 
 Scroll down to see all the views in the Web protection report. Some views include links that enable you to view more details, configure your threat protection features, and even manage indicators that serve as exceptions in Defender for Endpoint.
+
 To learn more, see Web protection.
 
  
