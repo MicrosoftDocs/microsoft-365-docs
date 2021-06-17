@@ -52,9 +52,8 @@ The following table describes the navigation bar.
 | **Action center** | Navigates to the Action center, which tracks remediation and manual response actions. The Action center tracks activities like these: <br/>- Microsoft Defender Antivirus encounters a malicious file and then blocks/removes that file. <br/>- Your security team isolates a device.<br/>- Defender for Endpoint detects and quarantines a file. <p>To learn more, see [Action center](auto-investigation-action-center.md). |
 | **Device inventory** | Navigates to your list of devices that are onboarded to Defender for Endpoint. Provides information about devices, such as their exposure and risk levels. To learn more, see [Device inventory](machines-view-overview.md). |
 | **Reports** | Navigates to your reports, such as your [Threat protection report](threat-protection-reports.md), [Device health and compliance report](machine-reports.md), and your [Web protection report](web-protection-overview.md). |
-| Settings | Navigates to general settings for your Microsoft 365 Defender portal and Defender for Endpoint. To learn more, 
-see Settings. |
-| More resources | Displays a list of additional portals and centers, such as Azure Active Directory and the Microsoft 365 compliance center. To learn more, see Microsoft security portals and admin centers. |
+| **Settings** | Navigates to general settings for your Microsoft 365 Defender portal and Defender for Endpoint. To learn more, see [Settings](../defender/overview-security-center.md). |
+| **More resources** | Displays a list of additional portals and centers, such as Azure Active Directory and the Microsoft 365 compliance center. To learn more, see [Microsoft security portals and admin centers](../defender/portals.md). |
 
 ## Viewing and managing incidents & alerts
 
