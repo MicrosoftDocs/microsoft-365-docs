@@ -32,9 +32,11 @@ A policy tip is a notification or warning that appears when someone is working w
   
 You can use email notifications and policy tips to increase awareness and help educate people about your organization's policies. You can also give people the option to override the policy, so that they're not blocked if they have a valid business need or if the policy is detecting a false positive.
   
-In the Security &amp; Compliance Center, when you create a DLP policy, you can configure the user notifications to:
+In the Compliance Center, when you create a DLP policy, you can configure the user notifications to:
   
 - Send an email notification to the people you choose that describes the issue.
+> [!NOTE]
+> Notification emails are sent unprotected.
     
 - Display a policy tip for content that conflicts with the DLP policy:
     
