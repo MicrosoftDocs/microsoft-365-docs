@@ -42,7 +42,7 @@ The following cmdlet will return each detection on the endpoint. If there are mu
 Get-MpThreatDetection
 ```
 
-![screenshot of PowerShell cmdlets and outputs](images/defender/wdav-get-mpthreatdetection.png)
+:::image type="content" source="../../media/wdav-get-mpthreatdetection.png" alt-text="screenshot of PowerShell cmdlets and outputs":::
 
 You can specify `-ThreatID` to limit the output to only show the detections for a specific threat.
 
