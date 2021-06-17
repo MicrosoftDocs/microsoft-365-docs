@@ -29,7 +29,8 @@ The general setup and configuration process is as follows:
 6. [Configure next-generation protection](#configure-next-generation-protection)
 7. [Configure attack surface reduction capabilities](#configure-attack-surface-reduction-rules)
  
-As soon as roles and permissions are assigned, your security team can get started using the Microsoft 365 Defender portal (see [Getting started with Defender for Endpoint Plan 1](mde-plan1-getting-started.md)).
+> [!TIP]
+> As soon as roles and permissions are assigned, your security team can get started using the Microsoft 365 Defender portal (see [Getting started with Defender for Endpoint Plan 1](mde-plan1-getting-started.md)).
  
 ## Review the requirements
 
