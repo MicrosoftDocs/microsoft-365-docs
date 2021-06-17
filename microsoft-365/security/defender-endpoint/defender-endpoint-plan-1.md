@@ -158,9 +158,11 @@ The Microsoft 365 Defender portal ([https://security.microsoft.com](https://secu
 
 To learn more, see [Get started with Microsoft Defender for Endpoint Plan 1 (preview)](mde-plan1-getting-started.md).
 
-### APIs[Get started with Microsoft Defender for Endpoint Plan 1 (preview)](mde-plan1-getting-started.md)
+### APIs
 
-With the Defender for Endpoint APIs, you can automate workflows and integrate with your organization’s custom solutions. To learn more, see [Defender for Endpoint APIs](management-apis.md). 
+With the Defender for Endpoint APIs, you can automate workflows and integrate with your organization’s custom solutions. 
+
+To learn more, see [Defender for Endpoint APIs](management-apis.md). 
 
 ## Cross-platform support
 
