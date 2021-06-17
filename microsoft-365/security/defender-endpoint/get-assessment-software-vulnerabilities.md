@@ -84,15 +84,16 @@ GET /api/machines/SoftwareVulnerabilitiesByMachine
 - $top – number of results to return (doesn’t return @odata.nextLink and therefore doesn’t pull all the data)
 
 ### 1.5 Properties
->
+
 >[!Note]
 >
->- Each record is approximately 1KB of data. You should take this into account when choosing the correct pageSize parameter for you.
+>- Each record is approximately 1 KB of data. You should take this into account when choosing the correct pageSize parameter for you.
 >
 >- Some additional columns might be returned in the response. These columns are temporary and might be removed, please use only the documented columns.
 >
 >- The properties defined in the following table are listed alphabetically, by property ID.  When running this API, the resulting output will not necessarily be returned in the same order listed in this table.
->
+
+<br/>
 
 Property (ID) | Data type | Description | Example of a returned value
 :---|:---|:---|:---
