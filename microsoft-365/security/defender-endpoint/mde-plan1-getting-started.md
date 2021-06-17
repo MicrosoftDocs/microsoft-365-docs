@@ -51,7 +51,7 @@ The following table describes the navigation bar.
 | **Device inventory** | Navigates to your list of devices that are onboarded to Defender for Endpoint. Provides information about devices, such as their exposure and risk levels. To learn more, see [Device inventory](machines-view-overview.md). |
 | **Reports** | Navigates to your reports, such as your [Threat protection report](threat-protection-reports.md), [Device health and compliance report](machine-reports.md), and your [Web protection report](web-protection-overview.md). |
 | **Settings** | Navigates to general settings for your Microsoft 365 Defender portal and Defender for Endpoint. To learn more, see [Settings](../defender/overview-security-center.md). |
-| **More resources** | Displays a list of additional portals and centers, such as Azure Active Directory and the Microsoft 365 compliance center. To learn more, see [Microsoft security portals and admin centers](../defender/portals.md). |
+| **More resources** | Displays a list of more portals and centers, such as Azure Active Directory and the Microsoft 365 compliance center. To learn more, see [Microsoft security portals and admin centers](../defender/portals.md). |
 
 > [!TIP]
 > To learn more, see the [Microsoft 365 Defender portal overview](../defender/microsoft-365-security-center-mde.md).
@@ -62,7 +62,7 @@ When you sign into the Microsoft 365 Defender portal, make sure to view and mana
 
 :::image type="content" source="../../media/mde-p1/incidents-list.png" alt-text="Incidents list":::
  
-Select an incident to view details about it, such as what alerts were triggered, how many devices and users were affected, and other details. The following image shows an example of incident details.
+Select an incident to view details about the incident. Details include what alerts were triggered, how many devices and users were affected, and other details. The following image shows an example of incident details.
 
 :::image type="content" source="../../media/mde-p1/single-incident-view.png" alt-text="Incident details":::
  
@@ -101,7 +101,7 @@ In Defender for Endpoint Plan 1, several reports are available in the Microsoft 
 
 2. In the navigation bar, choose **Reports**. 
 
-3. Select a report in the list. The main reports you’ll see and use include the following:
+3. Select a report in the list. You'll see the following three reports:
 
    - Threat protection report
    - Device health report
