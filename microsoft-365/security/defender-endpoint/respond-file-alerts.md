@@ -30,7 +30,7 @@ ms.technology: mde
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-responddile-abovefoldlink)
 
-Quickly respond to detected attacks by stopping and quarantining files or blocking a file. After taking action on files, you can check activity details in the Action center.
+Quickly respond to detected attacks by stopping and quarantining files or blocking a file. After taking action on files, you can check on activity details in the Action center.
 
 Response actions are available on a file's detailed profile page. Once on this page, you can switch between the new and old page layouts by toggling **new File page**. The rest of this article describes the newer page layout.
 
@@ -63,7 +63,7 @@ You can contain an attack in your organization by stopping the malicious process
 > You can only take this action if:
 >
 > - The device you're taking the action on is running Windows 10, version 1703 or later
-> - The file does not belong to trusted third-party publishers or not signed by Microsoft
+> - The file does not belong to trusted third-party publishers or is not signed by Microsoft
 > - Microsoft Defender Antivirus must at least be running on Passive mode. For more information, see [Microsoft Defender Antivirus compatibility](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility).
 
 The **Stop and Quarantine File** action includes stopping running processes, quarantining the files, and deleting persistent data such as registry keys.
@@ -77,7 +77,7 @@ This action takes effect on devices with Windows 10, version 1703 or later, wher
 
 1. Select the file you want to stop and quarantine. You can select a file from any of the following views or use the Search box:
 
-   - **Alerts** - click the corresponding links from the Description or Details in the Artifact timeline
+   - **Alerts** - click the corresponding links from the Description or Details in the Alert Story timeline
    - **Search box** - select **File** from the drop–down menu and enter the file name
 
    > [!NOTE]
@@ -123,14 +123,14 @@ You can roll back and remove a file from quarantine if you’ve determined that 
 
 2. Enter the following command, and press **Enter**:
 
-   ```powershell
+   ```console
    “%ProgramFiles%\Windows Defender\MpCmdRun.exe” –Restore –Name EUS:Win32/CustomEnterpriseBlock –All
    ```
 
-> [!NOTE]
-> In some scenarios, the **ThreatName** may appear as: EUS:Win32/CustomEnterpriseBlock!cl.
->
-> Defender for Endpoint will restore all custom blocked files that were quarantined on this device in the last 30 days.
+   > [!NOTE]
+   > In some scenarios, the **ThreatName** may appear as: EUS:Win32/CustomEnterpriseBlock!cl.
+   >
+   > Defender for Endpoint will restore all custom blocked files that were quarantined on this device in the last 30 days.
 
 > [!IMPORTANT]
 > A file that was quarantined as a potential network threat might not be recoverable. If a user attempts to restore the file after quarantine, that file might not be accessible. This can be due to the system no longer having network credentials to access the file. Typically, this is a result of a temporary log on to a system or shared folder and the access tokens expired.
@@ -229,15 +229,13 @@ You can also submit a sample through the [Microsoft Security Center Portal](http
 > [!NOTE]
 > Due to backend processing flows in the Microsoft Security Center Portal, there could be up to 10 minutes of latency between file submission and availability of the deep analysis feature in Defender for Endpoint.
 
-When the sample is collected, Defender for Endpoint runs the file in a secure environment. It then creates a detailed report of observed behaviors and associated artifacts, such as files dropped on devices, communication to IPs, and registry modifications.
-
 ### Submit files for deep analysis
 
 1. Select the file that you want to submit for deep analysis. You can select or search a file from any of the following views:
 
-    - Alerts - select the file links from the **Description** or **Details** in the Artifact timeline
+    - **Alerts** - select the file links from the **Description** or **Details** in the Alert Story timeline
     - **Devices list** - select the file links from the **Description** or **Details** in the **Device in organization** section
-    - Search box - select **File** from the drop–down menu and enter the file name
+    - **Search box** - select **File** from the drop–down menu and enter the file name
 
 2. In the **Deep analysis** tab of the file view, select **Submit**.
 
@@ -246,7 +244,7 @@ When the sample is collected, Defender for Endpoint runs the file in a secure en
    > [!NOTE]
    > Only PE files are supported, including _.exe_ and _.dll_ files.
 
-A progress bar is displayed and provides information on the different stages of the analysis. You can then view the report when the analysis is done.
+   A progress bar is displayed and provides information on the different stages of the analysis. You can then view the report when the analysis is done.
 
 > [!NOTE]
 > Depending on device availability, sample collection time can vary. There is a 3–hour timeout for sample collection. The collection will fail and the operation will abort if there is no online Windows 10 device reporting at that time. You can re–submit files for deep analysis to get fresh data on the file.
@@ -272,11 +270,14 @@ The details provided can help you investigate if there are indications of a pote
 If you come across a problem when trying to submit a file, try each of the following troubleshooting steps.
 
 1. Ensure that the file in question is a PE file. PE files typically have _.exe_ or _.dll_ extensions (executable programs or applications).
+
 2. Ensure the service has access to the file, that it still exists, and hasn't been corrupted or modified.
+
 3. Wait a short while and try to submit the file again. The queue may be full, or there was a temporary connection or communication error.
+
 4. If the sample collection policy isn't configured, then the default behavior is to allow sample collection. If it's configured, then verify the policy setting allows sample collection before submitting the file again. When sample collection is configured, then check the following registry value:
 
-    ```powershell
+    ```console
     Path: HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection
     Name: AllowSampleCollection
     Type: DWORD
@@ -286,6 +287,7 @@ If you come across a problem when trying to submit a file, try each of the follo
     ```
 
 1. Change the organizational unit through the Group Policy. For more information, see [Configure with Group Policy](configure-endpoints-gp.md).
+
 1. If these steps do not resolve the issue, contact [winatp@microsoft.com](mailto:winatp@microsoft.com).
 
 ## Related topics
