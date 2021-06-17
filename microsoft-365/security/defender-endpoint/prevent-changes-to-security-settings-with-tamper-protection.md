@@ -153,7 +153,7 @@ If you are part of your organization's security team, and your subscription incl
 
 ### Are you using Windows Server 2016, or Windows version 1709, 1803, or 1809?
 
-If you are using Windows Server 2016, Windows 10 version [1709](/windows/release-health/status-windows-10-1709), [1803](/windows/release-health/status-windows-10-1803), or [1809](/windows/release-health/status-windows-10-1809-and-windows-server-2019), you won't see **Tamper Protection** in the Windows Security app. Instead, you can use PowerShell to determine whether tamper protection is enabled. 
+If you are using Windows Server 2016, Windows 10 version 1709, 1803, or [1809](/windows/release-health/status-windows-10-1809-and-windows-server-2019), you won't see **Tamper Protection** in the Windows Security app. Instead, you can use PowerShell to determine whether tamper protection is enabled. 
    
 On Windows Server 2016, the Settings app will not accurately reflect the status of real-time protection when tamper protection is enabled.
    
