@@ -34,16 +34,16 @@ Returns all known software vulnerabilities and their details for all devices, on
 
 There are different API calls to get different types of data. Because the amount of data can be very large, there are two ways it can be retrieved:
 
-1. [Export software vulnerabilities assessment OData](#1-export-software-vulnerabilities-assessment-odata)  The API pulls all data in your organization as Json responses, following the OData protocol. This method is best for _small organizations with less than 100 K devices_. The response is paginated, so you can use the \@odata.nextLink field from the response to fetch the next results.
+1. [Export software vulnerabilities assessment **JSON response**](#1-export-software-vulnerabilities-assessment-json-response)  The API pulls all data in your organization as Json responses. This method is best for _small organizations with less than 100 K devices_. The response is paginated, so you can use the \@odata.nextLink field from the response to fetch the next results.
 
-2. [Export software vulnerabilities assessment via files](#2-export-software-vulnerabilities-assessment-via-files) This API solution enables pulling larger amounts of data faster and more reliably. Via-files is recommended for large organizations, with more than 100 K devices. This API pulls all data in your organization as download files. The response contains URLs to download all the data from Azure Storage. This API enables you to download all your data from Azure Storage as follows:
+2. [Export software vulnerabilities assessment **via files**](#2-export-software-vulnerabilities-assessment-via-files) This API solution enables pulling larger amounts of data faster and more reliably. Via-files is recommended for large organizations, with more than 100 K devices. This API pulls all data in your organization as download files. The response contains URLs to download all the data from Azure Storage. This API enables you to download all your data from Azure Storage as follows:
 
    - Call the API to get a list of download URLs with all your organization data.
 
    - Download all the files using the download URLs and process the data as you like.
 
-3. [Delta export software vulnerabilities assessment OData](#3-delta-export-software-vulnerabilities-assessment-odata)  Returns a table with an entry for every unique combination of: DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId, and EventTimestamp.
-The API pulls data in your organization as Json responses, following the OData protocol. The response is paginated, so you can use the @odata.nextLink field from the response to fetch the next results. <br><br> Unlike the full software vulnerabilities assessment (OData) - which is used to obtain an entire snapshot of the software vulnerabilities assessment of your organization by device - the delta export OData API call is used to fetch only the changes that have happened between a selected date and the current date (the “delta” API call). Instead of getting a full export with a large amount of data every time, you’ll only get specific information on new, fixed, and updated vulnerabilities. Delta export OData API call can also be used to calculate different KPIs such as “how many vulnerabilities were fixed?” or “how many new vulnerabilities were added to my organization?” <br><br> Because the Delta export OData API call for software vulnerabilities returns data for only a targeted date range, it is not considered a _full export_.
+3. [Delta export software vulnerabilities assessment **JSON response**](#3-delta-export-software-vulnerabilities-assessment-json-response)  Returns a table with an entry for every unique combination of: DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId, and EventTimestamp.
+The API pulls data in your organization as Json responses. The response is paginated, so you can use the @odata.nextLink field from the response to fetch the next results. <br><br> Unlike the full "software vulnerabilities assessment (JSON response)" - which is used to obtain an entire snapshot of the software vulnerabilities assessment of your organization by device - the delta export OData API call is used to fetch only the changes that have happened between a selected date and the current date (the “delta” API call). Instead of getting a full export with a large amount of data every time, you’ll only get specific information on new, fixed, and updated vulnerabilities. Delta export JSON response API call can also be used to calculate different KPIs such as “how many vulnerabilities were fixed?” or “how many new vulnerabilities were added to my organization?” <br><br> Because the Delta export JSON response API call for software vulnerabilities returns data for only a targeted date range, it is not considered a _full export_.
 
 Data that is collected (using either _OData_ or _via files_) is the current snapshot of the current state, and does not contain historic data. In order to collect historic data, customers must save the data in their own data storages.
 
@@ -51,13 +51,13 @@ Data that is collected (using either _OData_ or _via files_) is the current snap
 >
 > Unless indicated otherwise, all export assessment methods listed are **_full export_** and **_by device_** (also referred to as **_per device_**).
 
-## 1. Export software vulnerabilities assessment (OData)
+## 1. Export software vulnerabilities assessment (JSON response)
 
 ### 1.1 API method description
 
 This API response contains all the data of installed software per device. Returns a table with an entry for every unique combination of DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CVEID.
 
-#### Limitations
+#### 1.1.1 Limitations
 
 >- Maximum page size is 200,000.
 >
@@ -330,17 +330,17 @@ GET https://api-us.securitycenter.contoso.com/api/machines/SoftwareVulnerabiliti
 }
 ```
 
-## 3. Delta export software vulnerabilities assessment (OData)
+## 3. Delta export software vulnerabilities assessment (JSON response)
 
 ### 3.1 API method description
 
-Returns a table with an entry for every unique combination of DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId. The API pulls data in your organization as Json responses, following the OData protocol. The response is paginated, so you can use the @odata.nextLink field from the response to fetch the next results. Unlike the full software vulnerabilities assessment (OData) - which is used to obtain an entire snapshot of the software vulnerabilities assessment of your organization by device - the delta export  OData API call is used to fetch only the changes that have happened between a selected date and the current date (the “delta” API call). Instead of getting a full export with a large amount of data every time, you’ll only get specific information on new, fixed, and updated vulnerabilities. Delta export OData API call can also be used to calculate different KPIs such as “how many vulnerabilities were fixed?” or “how many new vulnerabilities were added to my organization?”
+Returns a table with an entry for every unique combination of DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId. The API pulls data in your organization as Json responses. The response is paginated, so you can use the @odata.nextLink field from the response to fetch the next results. Unlike the full software vulnerabilities assessment (JSON response) - which is used to obtain an entire snapshot of the software vulnerabilities assessment of your organization by device - the delta export JSON response API call is used to fetch only the changes that have happened between a selected date and the current date (the “delta” API call). Instead of getting a full export with a large amount of data every time, you’ll only get specific information on new, fixed, and updated vulnerabilities. Delta export JSON response API call can also be used to calculate different KPIs such as “how many vulnerabilities were fixed?” or “how many new vulnerabilities were added to my organization?”
 
 >[!NOTE]
 >
->It is highly recommended you use the full export software vulnerabilities assessment by device API call at least once a week, and this additional export software vulnerabilities changes by device (delta) API call all the other days of the week.  Unlike the other Assessments OData API, the “delta export” is not a full export. The delta export includes only the changes that have happened between a selected date and the current date (the “delta” API call).
+>It is highly recommended you use the full export software vulnerabilities assessment by device API call at least once a week, and this additional export software vulnerabilities changes by device (delta) API call all the other days of the week.  Unlike the other Assessments JSON response APIs, the “delta export” is not a full export. The delta export includes only the changes that have happened between a selected date and the current date (the “delta” API call).
 
-#### Limitations
+#### 3.1.1 Limitations
 
 - Maximum page size is 200,000.
 
