@@ -81,7 +81,7 @@ If you have a file that you suspect might be malware or is being incorrectly det
 
  8. Click **Submit**. 
  
- If you want to view the submissions detail, select your submission in the **Submissions name** section to open the **Result details** flyout.
+ If you want to view the details of your submission, select your submission from the **Submissions name** list to open the **Result details** flyout.
 
 ## Related information
 
