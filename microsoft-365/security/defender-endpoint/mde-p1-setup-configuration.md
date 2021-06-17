@@ -17,64 +17,51 @@ f1.keywords: NOCSH
 
 # Set up and configure Microsoft Defender for Endpoint Plan 1 (preview)
 
-As a private preview customer, you likely have assistance in setting up and configuring Defender for Endpoint Plan 1. This section includes information on how to plan, configure, and onboard to Defender for Endpoint, just in case you want additional resources and information. The general setup and configuration process is as follows:
-•	Review the requirements (including licensing and device requirements)
-•	Plan your deployment
-•	Set up your tenant environment
-•	Assign roles and permissions
-•	Onboard to Defender for Endpoint
-•	Configure your next-generation protection
-•	Configure your attack surface reduction capabilities
-As soon as roles and permissions are assigned, your security team can get started using the Microsoft 365 security center (see Getting started with Defender for Endpoint).
+As a preview customer, you likely have assistance in setting up and configuring Defender for Endpoint Plan 1. This article includes information on how to plan, configure, and onboard to Defender for Endpoint Plan 1. 
 
+The general setup and configuration process is as follows:
+
+- Review the requirements (including licensing and device requirements)
+- Plan your deployment
+- Set up your tenant environment
+- Assign roles and permissions
+- Onboard to Defender for Endpoint
+- Configure your next-generation protection
+- Configure your attack surface reduction capabilities
+ 
+As soon as roles and permissions are assigned, your security team can get started using the Microsoft 365 Defender portal (see [Getting started with Defender for Endpoint Plan 1](mde-plan1-getting-started.md)).
  
-Review the requirements
+## Review the requirements
 
-Table 3 lists the basic requirements for Defender for Endpoint Plan 1.
+The following table lists the basic requirements for Defender for Endpoint Plan 1:
 
-Table 3. Requirements for Defender for Endpoint Plan 1
-Requirement	Description
-Licensing requirements	Defender for Endpoint Plan 1
-Browser requirements	•	Microsoft Edge
-•	Internet Explorer version 11
-•	Google Chrome
-NOTE: Other browsers might work, but these are the officially supported web browsers.
+| Requirement | Description |
+|:---|:---|
+| Licensing requirements | Defender for Endpoint Plan 1 |
+| Browser requirements | Microsoft Edge <p>Internet Explorer version 11 <p>Google Chrome |
+| Operating system | Windows 10 <p> Windows Server 2019 <p> Windows Server, version 1803 or later <p> Windows Server 2016 |
+| Datacenter | One of the following datacenter locations for Defender for Endpoint information: <br/>- European Union <br/>- United Kingdom <br/>- United States |
 
-Operating system	•	Windows 10
-•	Windows Server 2019
-•	Windows Server, version 1803 or later
-•	Windows Server 2016
-•	iOS
-Datacenter	One of the following datacenter locations for Defender for Endpoint information:
-•	European Union
-•	United Kingdom
-•	United States
+To learn more, see [Minimum requirements for Defender for Endpoint](minimum-requirements.md).
 
-To learn more, see Minimum requirements for Defender for Endpoint.
-
- 
-Plan your deployment
+## Plan your deployment
 
 When you plan your deployment, you can choose from several different architectures and deployment methods. Every organization is unique, so you have several options to consider. 
-To help with these decisions, see Plan your Defender for Endpoint deployment, which includes the downloadable poster depicted in Figure 1.
 
-Get the poster
+To help with these decisions, see Plan your Defender for Endpoint deployment, which includes the downloadable poster depicted in the following image: 
 
+:::image type="content" source="../../media/defender-endpoint/mdatp-deployment-strategy.png" alt-text="Deployment strategy poster thumbnail":::
 
+[Get the poster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)
 
-
-
-
-
- 
-Set up your tenant environment
+## Set up your tenant environment
 
 Setting up your tenant environment includes tasks, such as verifying your licenses and configuring your tenant. An important part of this process is making sure sensors are working correctly and reporting data to Defender for Endpoint. As a private preview customer, you’ll likely have help with this process.
 To learn more, see Set up Defender for Endpoint.
 
 Assign roles and permissions
 
-In order to access the Microsoft 365 security center, configure settings for Defender for Endpoint, or to take response actions, appropriate permissions must be assigned. You can do this using role-based access control (RBAC). Microsoft recommends using the concept of least privileges. 
+In order to access the Microsoft 365 Defender portal, configure settings for Defender for Endpoint, or to take response actions, appropriate permissions must be assigned. You can do this using role-based access control (RBAC). Microsoft recommends using the concept of least privileges. 
 Defender for Endpoint leverages built-in roles within Azure Active Directory. Review the different roles that are available and choose the right role for each persona in Defender for Endpoint. 
 To learn more, see Prepare for your Defender for Endpoint deployment.
 
