@@ -28,6 +28,8 @@ Soon, Defender for Endpoint will be available in two plans: [Defender for Endpoi
 |:---|:---|
 | [Next-generation protection](defender-endpoint-plan-1.md#next-generation-protection) <br/>(includes antimalware and antivirus) <p> [Attack surface reduction](defender-endpoint-plan-1.md#attack-surface-reduction) <p> [Manual response actions](defender-endpoint-plan-1.md#manual-response-actions) <p> [Centralized management](defender-endpoint-plan-1.md#centralized-management) <p>[Reporting](defender-endpoint-plan-1.md#reporting) <p>[APIs](defender-endpoint-plan-1.md#apis) <p> [Support for Windows devices initially](defender-endpoint-plan-1.md#cross-platform-support) | [Defender for Endpoint Plan 1](defender-endpoint-plan-1.md), plus: <p> [Device discovery](device-discovery.md) <p> [Threat and vulnerability management](next-gen-threat-and-vuln-mgt.md) <p> [Automated investigation and response](automated-investigations.md) <p> [Advanced hunting](advanced-hunting-overview.md) <p> [Endpoint detection and response](overview-endpoint-detection-response.md) <p> [Microsoft Threat Experts](microsoft-threat-experts.md) <p> Support for Windows and [non-Windows platforms](non-windows.md) (macOS, iOS, Android, and Linux) |
 
-## Next step
+## Next steps
 
 - [Get an overview of Microsoft Defender for Endpoint Plan 1](defender-endpoint-plan-1.md)
+- [Set up and configure Microsoft Defender for Endpoint Plan 1 (preview)](mde-p1-setup-configuration.md)
+- [Get started with Microsoft Defender for Endpoint Plan 1 (preview)](mde-plan1-getting-started.md)
