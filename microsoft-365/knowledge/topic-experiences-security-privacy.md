@@ -53,6 +53,10 @@ The following table describes what users - topic viewers, contributors, and know
 |Pages|Pages are only visible to users who have permissions to the source content.|
 |Sites|Sites are only visible to users who have permissions to the source content.|
 
+## Users' personal and private data
+
+Viva Topics only discovers topics in the SharePoint sites that you specify. Users’ personal storage such as personal mail or OneDrive is not included.
+
 ## Best practices
 
 Topics presents information to users based on their existing permissions to content. Microsoft 365 provides a variety of ways to ensure that sensitive content is restricted to appropriate users. Beyond standard team or site permissions, you can use [sensitivity labels](../compliance/sensitivity-labels.md) or [data loss prevention](../compliance/dlp-learn-about-dlp.md) to restrict access to content and [access reviews](/azure/active-directory/governance/access-reviews-overview) to periodically review user access to sensitive information.
