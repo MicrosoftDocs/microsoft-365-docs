@@ -90,13 +90,14 @@ We recommend using [Microsoft Endpoint Manager](/mem) to manage your organizatio
 
 1.	Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and sign in.
 
-2.	Select Endpoint security > Antivirus, and then select an existing policy. (If you don’t have an existing policy, create a new policy.)
+2.	Select **Endpoint security** > **Antivirus**, and then select an existing policy. (If you don’t have an existing policy, create a new policy.)
 
 3.	Refer to the following resources to set or change your antivirus configuration settings:
-•	Settings for Windows 10 Microsoft Defender Antivirus policy in Microsoft Intune
-•	Configure Defender for Endpoint on iOS features
 
-4.	When you are finished specifying your settings, choose Review + save.
+   - [Settings for Windows 10 Microsoft Defender Antivirus policy in Microsoft Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-windows)
+   - Configure Defender for Endpoint on iOS features
+
+4.	When you are finished specifying your settings, choose **Review + save**.
 
 ## Configure attack surface reduction rules
 
