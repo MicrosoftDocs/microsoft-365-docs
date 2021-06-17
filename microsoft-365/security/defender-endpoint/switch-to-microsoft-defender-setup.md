@@ -17,9 +17,11 @@ audience: ITPro
 ms.collection: 
   - M365-security-compliance
   - m365solution-migratetomdatp
+  - m365solution-mcafeemigrate
+  - m365solution-symantecmigrate
 ms.topic: article
 ms.custom: migrationguides
-ms.date: 05/20/2021
+ms.date: 06/14/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ---
 
@@ -88,14 +90,15 @@ The [DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-m
 1. As a local administrator on the endpoint or device, open Windows PowerShell.
 
 2. Run the following PowerShell cmdlets: <br/>   
+
    `Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender-Features` <p>
    `Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender` <br/>
  
-   > [!NOTE]
-   > When using the DISM command within a task sequence running PS, the following path to cmd.exe is required.
-   > Example:<br/>
-   > `c:\windows\sysnative\cmd.exe /c Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender-Features`<p>
-   > `c:\windows\sysnative\cmd.exe /c Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender`<br/>
+   When using the DISM command within a task sequence running PS, the following path to cmd.exe is required.
+   Example:<br/>
+   
+   `c:\windows\sysnative\cmd.exe /c Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender-Features`<p>
+   `c:\windows\sysnative\cmd.exe /c Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender`<br/>
 
 3. To verify Microsoft Defender Antivirus is running, use the following PowerShell cmdlet: <br/>
    `Get-Service -Name windefend`
@@ -108,6 +111,7 @@ The [DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-m
    `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`.
 
 2. Edit (or create) a DWORD entry called **ForcePassiveMode**, and specify the following settings:
+
    - Set the DWORD's value to **1**.
    - Under **Base**, select **Hexadecimal**.
 

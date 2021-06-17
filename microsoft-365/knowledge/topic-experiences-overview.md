@@ -34,14 +34,14 @@ Viva Topics uses AI to automatically search for and identify *topics* in your or
 
 Topics are displayed to users through:
 
-- [Topic highlights](topic-experiences-overview.md#topic-highlights) in SharePoint pages
+- [Topics highlighted](topic-experiences-overview.md#sharepoint-highlights) on SharePoint pages
 - Topic answers in [search results](topic-experiences-overview.md#search-results)
 - Search in [office applications](topic-experiences-overview.md#office-application-search)
 - [Topic center](topic-experiences-overview.md#topic-center) home page
 
-### Topic highlights
+### SharePoint highlights
 
-When a topic is mentioned in content on SharePoint news and pages, you'll see it highlighted. You can open the topic summary from the highlight. Open the topic details from the title of the summary to view the full topic page. The mentioned topic could be identified automatically or could have been added to the page with a direct reference to the topic by the page author. 
+When a topic is mentioned in content on SharePoint news and pages, you'll see it highlighted. You can open the topic summary from the highlight. Open the topic details from the title of the summary to view the full topic page. The mentioned topic could be identified automatically or could have been referenced directly by the page author. 
 
    ![Screenshot showing topic highlights.](../media/knowledge-management/saturn.png) 
 
@@ -136,8 +136,6 @@ AI will continually work to provide you suggestions to improve your topics as ch
 Users with edit or create topics permissions can make updates to topic pages directly if they want to make corrections or add additional information. They can also add new topics that AI wasn't able to identify. If there's enough information on these manually added topics, and AI is able to identify this type of topic, additional suggestions from AI might enhance these manually added topics.
 
 Users that you allow access to see topics in their daily work might be asked if the topic was useful to them. The system looks at these responses and uses them to improve the topic highlight, and help determine what's shown on topic summaries and in topic details.
-
-Additionally, users with proper permissions can tag items such as Yammer conversation that are relevant to a topic, and add them to a specific topic. 
 
 For more information, see [Topic discovery and curation](./topic-experiences-discovery-curation.md).
 

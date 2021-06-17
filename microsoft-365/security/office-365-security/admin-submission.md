@@ -124,7 +124,7 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
 
    - You can sort the entries by clicking on an available column header. Click **Customize columns** to show a maximum of seven columns. The default values are marked with an asterisk (<sup>\*</sup>):
      - **Submission name**<sup>\*</sup>
-     - **Sender**<su>\*</sup>
+     - **Sender**<sup>\*</sup>
      - **Date submitted**<sup>\*</sup>
      - **Submission type**<sup>\*</sup>
      - **Reason for submitting**<sup>\*</sup>
@@ -185,7 +185,7 @@ If you've deployed the [Report Message add-in](enable-the-report-message-add-in.
    - You can sort the entries by clicking on an available column header. Click **Customize columns** to show a maximum of seven columns. The default values are marked with an asterisk (<sup>\*</sup>):
 
      - **Email subject**<sup>\*</sup>
-     - **Reported by**<su>\*</sup>
+     - **Reported by**<sup>\*</sup>
      - **Date reported**<sup>\*</sup>
      - **Sender**<sup>\*</sup>
      - **Reported reason**<sup>\*</sup>
