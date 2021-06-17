@@ -61,11 +61,11 @@ For each device property, see **Device Properties** section above for more detai
     - Primary ID
         - RemovableMediaDevices
         - CdRomDevices
-    - DeviceId: add wildcard support (* or ?) anywhere in the text value in the version 4.18.2105 or later
-    - HardwareId: add wildcard support (* or ?) anywhere in the text value in the version 4.18.2105 or later
-    - InstancePathId: add wildcard support (* or ?) anywhere in the text value in the version 4.18.2105 or later
-    - FriendlyNameId: add wildcard support (* or ?) anywhere in the text value in the version 4.18.2105 or later
-    - SerialNumberId: add wildcard support (* or ?) anywhere in the text value in the version 4.18.2105 or later
+    - DeviceId: Add wildcard support (* or ?) anywhere in the text value in version 4.18.2105 or later
+    - HardwareId: Add wildcard support (* or ?) anywhere in the text value in version 4.18.2105 or later
+    - InstancePathId: Add wildcard support (* or ?) anywhere in the text value in version 4.18.2105 or later
+    - FriendlyNameId: Add wildcard support (* or ?) anywhere in the text value in version 4.18.2105 or later
+    - SerialNumberId: Add wildcard support (* or ?) anywhere in the text value in version 4.18.2105 or later
     - VID
     - PID
     - VID_PID
