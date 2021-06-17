@@ -59,19 +59,19 @@ To help with these decisions, see Plan your Defender for Endpoint deployment, wh
 Setting up your tenant environment includes tasks, such as verifying your licenses and configuring your tenant. An important part of this process is making sure sensors are working correctly and reporting data to Defender for Endpoint. As a private preview customer, you’ll likely have help with this process.
 To learn more, see Set up Defender for Endpoint.
 
-Assign roles and permissions
+## Assign roles and permissions
 
 In order to access the Microsoft 365 Defender portal, configure settings for Defender for Endpoint, or to take response actions, appropriate permissions must be assigned. You can do this using role-based access control (RBAC). Microsoft recommends using the concept of least privileges. 
 Defender for Endpoint leverages built-in roles within Azure Active Directory. Review the different roles that are available and choose the right role for each persona in Defender for Endpoint. 
 To learn more, see Prepare for your Defender for Endpoint deployment.
 
-Onboard to Defender for Endpoint
+## Onboard to Defender for Endpoint
 
 When you’re ready to onboard your organization’s devices and users to Defender for Endpoint, follow the guidance here: Onboard to the Defender for Endpoint service.
 Then, proceed to configure next-generation protection settings and configure your attack surface reduction rules. 
 Defender for Endpoint enables you to edit and fine-tune your settings as needed.
 
-Configure next-generation protection
+## Configure next-generation protection
 
 We recommend using Microsoft Endpoint Manager to manage your organization’s devices and security settings, as shown in figure 2.
  
@@ -84,7 +84,7 @@ Follow these steps to review and edit your next-generation protection settings.
 •	Configure Defender for Endpoint on iOS features
 4.	When you are finished specifying your settings, choose Review + save.
 
-Configure attack surface reduction rules
+## Configure attack surface reduction rules
 
 Attack surface reduction rules are available on devices running Windows. We recommend using Microsoft Endpoint Manager (as shown in figure 3) to configure your attack surface reduction rules.
  
@@ -106,3 +106,6 @@ To learn more about attack surface reduction rules, see the following resources:
 •	Use attack surface reduction rules to prevent malware infection
 •	Customize attack surface reduction rules
 
+## Next step
+
+[Getting started with Defender for Endpoint Plan 1 (preview)](mde-plan1-getting-started.md)
