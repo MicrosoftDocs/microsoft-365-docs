@@ -74,7 +74,11 @@ To learn more about using the **Incident** view, see [Manage incidents](manage-i
 
 ## Managing devices
 
-To view and manage your organization’s devices, in the navigation bar, under Endpoints, select Device inventory. You’ll see a list of devices as shown in figure 7. The list includes devices for which alerts were generated. By default, the data shown is for the past 30 days, with the most recent items listed first.
+To view and manage your organization’s devices, in the navigation bar, under **Endpoints**, select **Device inventory**. You’ll see a list of devices as shown in the following image:
+
+:::image type="content" source="../../media/mde-p1/deviceinventory.PNG" alt-text="Device inventory"::: 
+
+The list includes devices for which alerts were generated. By default, the data shown is for the past 30 days, with the most recent items listed first.
 
  
 Figure 7. Example list of devices with alerts
