@@ -37,9 +37,7 @@ The Home page provides your security team with a snapshot aggregate view of aler
 
 ### Navigation bar
 
-The navigation bar on the left side of the screen enables you to move easily between Incidents, Alerts, the Action center, Reports, and Settings. 
-
-The following table describes the navigation bar.
+The navigation bar on the left side of the screen enables you to move easily between incidents, alerts, the Action center, reports, and settings. The following table describes the navigation bar.
 
 | Navigation bar item | Description |
 |:---|:---|
@@ -107,7 +105,8 @@ In Defender for Endpoint Plan 1, several reports are available in the Microsoft 
    - Device health report
    - Web protection report
 
-For more information, see [Threat protection reports](threat-protection-reports.md). 
+> [!TIP]
+> For more information, see [Threat protection reports](threat-protection-reports.md). 
 
 ### Threat protection report
 
@@ -142,4 +141,5 @@ To access your Device health report, in the Microsoft 365 Defender portal, choos
 
 Scroll down to see all the views in the Web protection report. Some views include links that enable you to view more details, configure your threat protection features, and even manage indicators that serve as exceptions in Defender for Endpoint.
 
-To learn more, see [Web protection](web-protection-overview.md).
+> [!TIP]
+> To learn more, see [Web protection](web-protection-overview.md).
