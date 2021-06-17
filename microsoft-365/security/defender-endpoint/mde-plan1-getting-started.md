@@ -30,48 +30,33 @@ The Microsoft 365 Defender portal ([https://security.microsoft.com](https://secu
 
 :::image type="content" source="../../media/mde-p1/m365-security-center.png" alt-text="Microsoft 365 Defender portal":::
 
-> [!NOTE]
-> Our example might differ from your Microsoft 365 Defender portal. What you see in your Microsoft 365 Defender portal depends on your licenses and permissions. In addition, your security team can customize your page by adding, removing, and rearranging cards.
-
-
 The Home page provides your security team with a snapshot aggregate view of alerts, device status, and threats detected. The security center is set up so that your security operations team can find the information they are looking for quickly and easily.
+
+> [!NOTE]
+> Our examples shown in this article might differ from your Microsoft 365 Defender portal. What you see in your Microsoft 365 Defender portal depends on your licenses and permissions. In addition, your security team can customize your page by adding, removing, and rearranging cards.
 
 ### Navigation bar
 
 The navigation bar on the left side of the screen enables you to move easily between Incidents, Alerts, the Action center, Reports, and Settings. 
-To learn more, see the Microsoft 365 Defender portal overview.
-Table 4 describes the navigation bar.
 
-Table 4. Navigation bar items and what they do.
-Navigation bar item	Description
-Home	Navigates to the Home page of the Microsoft 365 Defender portal. 
+To learn more, see the [Microsoft 365 Defender portal overview](../defender/microsoft-365-security-center-mde.md).
 
-Incidents & alerts	Expands to show Incidents and Alerts.
+The following table describes the navigation bar.
 
-Incidents
-Navigates to the Incidents list. Incidents are created when alerts are triggered and/or threats are detected. By default, the Incidents list displays data for the last 30 days, with the most recent incident listed first. To learn more, see Incidents.
+| Navigation bar item | Description |
+|:---|:---|
+| Home | Navigates to the Home page of the Microsoft 365 Defender portal. |
+| Incidents & alerts | Expands to show Incidents and Alerts. |
+| Incidents | Navigates to the Incidents list. Incidents are created when alerts are triggered and/or threats are detected. By default, the Incidents list displays data for the last 30 days, with the most recent incident listed first. To learn more, see Incidents. |
+| Alerts | Navigates to the Alerts list (also referred to as the Alerts queue). Alerts are triggered when a suspicious or malicious file, process, or behavior is detected. By default, the Alerts list displays data for the last 30 days, with the most recent alert listed first. To learn more, see Alerts. |
+| Action center | Navigates to the Action center, which tracks remediation and manual response actions. The Action center tracks activities like these: <br/>- Microsoft Defender Antivirus encounters a malicious file and then blocks/removes that file. <br/>- Your security team isolates a device. |
+| Device inventory | Navigates to your list of devices that are onboarded to Defender for Endpoint. Provides information about devices, such as their exposure and risk levels. To learn more, see Device inventory. |
+| Reports | Navigates to your reports, such as your Threat protection report, Device health and compliance report, and your Web protection report. |
+| Settings | Navigates to general settings for your Microsoft 365 Defender portal and Defender for Endpoint. To learn more, 
+see Settings. |
+| More resources | Displays a list of additional portals and centers, such as Azure Active Directory and the Microsoft 365 compliance center. To learn more, see Microsoft security portals and admin centers. |
 
-Alerts
-Navigates to the Alerts list (also referred to as the Alerts queue). Alerts are triggered when a suspicious or malicious file, process, or behavior is detected. By default, the Alerts list displays data for the last 30 days, with the most recent alert listed first. To learn more, see Alerts.
-
-Action center
-Navigates to the Action center, which tracks remediation and manual response actions. The Action center tracks activities like these:
-•	Microsoft Defender Antivirus encounters a malicious file and then blocks/removes that file. 
-•	Your security team isolates a device. 
-Device inventory
-Navigates to your list of devices that are onboarded to Defender for Endpoint. Provides information about devices, such as their exposure and risk levels. To learn more, see Device inventory.
-
-Reports
-Navigates to your reports, such as your Threat protection report, Device health and compliance report, and your Web protection report.
-
-Settings
-Navigates to general settings for your Microsoft 365 Defender portal and Defender for Endpoint. To learn more, 
-see Settings.
-
-More resources
-Displays a list of additional portals and centers, such as Azure Active Directory and the Microsoft 365 compliance center. To learn more, see Microsoft security portals and admin centers.
-
-Viewing and managing incidents & alerts
+## Viewing and managing incidents & alerts
 
 When you sign into the Microsoft 365 Defender portal, make sure to view and manage your incidents and alerts. Start with your Incidents list. Figure 5 shows a list of incidents, including one with high severity, and another with medium severity. 
  
