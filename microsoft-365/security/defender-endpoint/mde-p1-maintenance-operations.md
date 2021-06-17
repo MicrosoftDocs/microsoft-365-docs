@@ -36,6 +36,8 @@ To learn more, see [Manage Defender for Endpoint](manage-atp-post-migration.md).
 
 ## Address false positives/negatives
 
-A false positive is an artifact, like a file or a process, that was detected as malicious, even though it isn't actually a threat. A false negative is an entity that was not detected as a threat, even though it actually is. 
+A false positive is an artifact, like a file or a process, that was detected as malicious, even though it isn't actually a threat. A false negative is an entity that was not detected as a threat, even though it actually is. False positives/negatives can occur with any endpoint protection solution, including Defender for Endpoint. However, there are steps you can take to address these kinds of issues and fine tune your solution, as depicted in the following image:
+
+:::image type="content" source="../../media/defender-endpoint/false-positives-overview.png" alt-text="False positives and negatives process overview":::
 
 If you’re seeing false positives/negatives in Defender for Endpoint, see [Address false positives/negatives in Microsoft Defender for Endpoint](defender-endpoint-false-positives-negatives.md).
