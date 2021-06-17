@@ -28,13 +28,16 @@ After Defender for Endpoint Plan 1 (currently in preview) is set up and configur
 
 The Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) is where you'll view alerts, manage devices, and view reports. When you sign into the Microsoft 365 Defender portal, you’ll start with the Home page, as shown in the following image:
 
+:::image type="content" source="../../media/mde-p1/m365-security-center.png" alt-text="Microsoft 365 Defender portal":::
+
 > [!NOTE]
 > Our example might differ from your Microsoft 365 Defender portal. What you see in your Microsoft 365 Defender portal depends on your licenses and permissions. In addition, your security team can customize your page by adding, removing, and rearranging cards.
 
 
 The Home page provides your security team with a snapshot aggregate view of alerts, device status, and threats detected. The security center is set up so that your security operations team can find the information they are looking for quickly and easily.
 
-Navigation bar
+### Navigation bar
+
 The navigation bar on the left side of the screen enables you to move easily between Incidents, Alerts, the Action center, Reports, and Settings. 
 To learn more, see the Microsoft 365 Defender portal overview.
 Table 4 describes the navigation bar.
