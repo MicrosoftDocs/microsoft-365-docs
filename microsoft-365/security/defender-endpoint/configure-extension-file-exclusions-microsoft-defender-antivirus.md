@@ -18,8 +18,6 @@ manager: dansimp
 
 # Configure and validate exclusions based on file extension and folder location
 
-
-
 **Applies to:**
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
@@ -305,7 +303,7 @@ Get-MpPreference
 
 In the following example, the items contained in the `ExclusionExtension` list are highlighted:
 
-![PowerShell output for Get-MpPreference showing the exclusion list alongside other preferences](images/defender/wdav-powershell-get-exclusions-all.png)
+:::image type="content" source="../../media/wdav-powershell-get-exclusions-variable.png" alt-text="PowerShell output for Get-MpPreference":::
 
 For more information, see [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender cmdlets](/powershell/module/defender/).
 
