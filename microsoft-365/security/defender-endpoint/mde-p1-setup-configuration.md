@@ -19,7 +19,7 @@ f1.keywords: NOCSH
 
 As a preview customer, you likely have assistance in setting up and configuring Defender for Endpoint Plan 1. This article includes information on how to plan, configure, and onboard to Defender for Endpoint Plan 1. 
 
-The general setup and configuration process is as follows:
+The general setup and configuration process (described in this article) is as follows:
 
 1. [Review the requirements](#review-the-requirements) (including licensing and device requirements)
 2. [Plan your deployment](#plan-your-deployment)
