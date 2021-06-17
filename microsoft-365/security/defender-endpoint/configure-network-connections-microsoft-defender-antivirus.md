@@ -90,7 +90,7 @@ If you're properly connected, you'll see a warning Microsoft Defender Antivirus 
 
 If you're using Microsoft Edge, you'll also see a notification message:
 
-![Microsoft Edge informing the user that malware was found](images/defender/wdav-bafs-edge.png)
+:::image type="content" source="../../media/wdav-bafs-edge.png" alt-text="Screenshot of notification that malware was found in Edge":::
 
 A similar message occurs if you're using Internet Explorer:
 
