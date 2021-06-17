@@ -56,7 +56,3 @@ Behavioral Blocking and Containment | Behavioral blocking and containment capabi
 Automated Investigation and Response | Automated investigation uses various inspection algorithms based on processes that are used by security analysts and designed to examine alerts and take immediate action to resolve breaches. | [Use automated investigations to investigate and remediate threats - Windows security \| Microsoft Docs](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
 Advanced Hunting | Advanced hunting is a query-based threat-hunting tool that lets you explore up to 30 days of raw data so that you can proactively inspect events in your network to locate threat indicators and entities. | [Overview of advanced hunting in Microsoft Defender ATP - Windows security \| Microsoft Docs](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview)
 Threat Analytics |  | [Track and respond to emerging threats with Microsoft Defender ATP threat analytics - Windows security \| Microsoft Docs](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/threat-analytics)
-
-## Review architecture requirements
-
-## SIEM integration

@@ -1,6 +1,6 @@
 ---
-title: Enable the Evaluation
-description: Set up your Microsoft 365 Defender trial lab or pilot environment to try out and experience the security solution designed to protect devices, identity, data, and applications in your organization.
+title: Enable Defender for Endpoint evaluation
+description: Enable your Microsoft 365 Defender trial lab or pilot environment.
 keywords: Microsoft 365 Defender trial, try Microsoft 365 Defender, evaluate Microsoft 365 Defender, Microsoft 365 Defender evaluation lab, Microsoft 365 Defender pilot, cyber security, advanced persistent threat, enterprise security, devices, device, identity, users, data, applications, incidents, automated investigation and remediation, advanced hunting
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -10,8 +10,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 
   - NOCSH
-ms.author: 
-author: 
+ms.author: v-jweston
+author: jweston-1
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -23,63 +23,43 @@ ms.topic: conceptual
 ms.technology: m365d
 ---
 
-**Applies to:**
+# Enable MDE Evaluation
 
-- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
+>[!NOTE]
+>For the purpose of guiding you through a typical deployment, this scenario will only cover the use of Microsoft Endpoint Configuration Manager. Defender for Endpoint supports the use of other onboarding tools but won't cover those scenarios in the deployment guide. For more information, see [Onboard devices to Microsoft Defender for Endpoint](../defender-endpoint/onboard-configure.md).
 
-## Enable MDE Evaluation
+## Step 1. Check license state
 
-### Configure Attack Surface Reduction
+Checking for the license state and whether it got properly provisioned, can be done through the admin center or through the **Microsoft Azure portal**.
 
-You can configure attack surface reduction with many tools, including:
+1. To view your licenses, go to the **Microsoft Azure portal** and navigate to the [Microsoft Azure portal license section](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products).
 
-- Microsoft Intune
+   ![Image of Azure Licensing page](../../media/defender/atp-licensing-azure-portal.png)
 
-- Microsoft Endpoint Configuration Manager
+1. Alternately, in the admin center, navigate to **Billing** > **Subscriptions**.
 
-- Group Policy
+    On the screen, you'll see all the provisioned licenses and their current **Status**.
 
-- PowerShell cmdlets
+    ![Image of billing licenses](../../media/defender/atp-billing-subscriptions.png)
 
-Article | Description
--|-
-[Enable hardware-based isolation for Microsoft Edge](/windows/security/threat-protection/microsoft-defender-application-guard/install-md-app-guard) | How to prepare for and install Application Guard, including hardware and software requirements
-[Enable application control](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control)|How to control applications run by users and protect kernel mode processes
-[Exploit protection](./enable-exploit-protection.md)|How to automatically apply exploit mitigation techniques on both operating system processes and on individual apps
-[Network protection](./enable-network-protection.md)|How to prevent users from using any apps to access dangerous domains
-[Controlled folder access](./enable-controlled-folders.md)|How to protect valuable data from malicious apps
-[Attack surface reduction](./enable-attack-surface-reduction.md)|How to prevent actions and apps that are typically used by exploit-seeking malware
-[Network firewall](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-deployment-guide)|How to protect devices and data across a network
+## Step 2. Onboard endpoints using any of the supported management tools
 
-### Configure Microsoft Defender Antivirus
+The [Plan deployment](../defender-endpoint/deployment-strategy.md) topic outlines the general steps you need to take to deploy Defender for Endpoint.  
 
-You can configure Microsoft Defender Antivirus with a number of tools, including:
+Watch this video for a quick overview of the onboarding process and learn about the available tools and methods.
 
-- Microsoft Intune
-- Microsoft Endpoint Configuration Manager
-- Group Policy
-- PowerShell cmdlets
-- Windows Management Instrumentation (WMI)
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4bGqr]
 
-The following broad categories of features can be configured:
+After identifying your architecture, you'll need to decide which deployment method to use. The deployment tool you choose influences how you onboard endpoints to the service.
 
-- Cloud-delivered protection
-- Always-on real-time protection, including behavioral, heuristic, and machine-learning-based protection
-- How end users interact with the client on individual endpoints
+### Onboarding tool options
 
-The following articles describe how to perform key tasks when configuring Microsoft Defender Antivirus. Each article includes instructions for the applicable configuration tool (or tools).
+The following table lists the available tools based on the endpoint that you need to onboard.
 
-|Article  |Description  |
-|---------|---------|
-|[Utilize Microsoft cloud-provided Microsoft Defender Antivirus protection](cloud-protection-microsoft-defender-antivirus.md)     | Use cloud-delivered protection for advanced, fast, robust antivirus detection.        |
-|[Configure behavioral, heuristic, and real-time protection](configure-protection-features-microsoft-defender-antivirus.md)     |Enable behavior-based, heuristic, and real-time antivirus protection.         |
-|[Configure end-user interaction with Microsoft Defender Antivirus](configure-end-user-interaction-microsoft-defender-antivirus.md) | Configure how end users in your organization interact with Microsoft Defender Antivirus, what notifications they see, and whether they can override settings. |
-
-> [!TIP]
-> You can also review the [Reference topics for management and configuration tools](configuration-management-reference-microsoft-defender-antivirus.md) topic for an overview of each tool and links to further help.
-
-See
-
-### Navigation you may need
-
-[Create the Microsoft 365 Defender Evaluation Environment](eval-create-eval-environment.md)
+Endpoint | Tool options
+:---|:---
+**Windows** | [Local script (up to 10 devices)](../defender-endpoint/configure-endpoints-script.md),  [Group Policy](../defender-endpoint/configure-endpoints-gp.md),  [Microsoft Endpoint Manager/ Mobile Device Manager](../defender-endpoint/configure-endpoints-mdm.md),  [Microsoft Endpoint Configuration Manager](../defender-endpoint/configure-endpoints-sccm.md),  [VDI scripts](../defender-endpoint/configure-endpoints-vdi.md),  [Integration with Azure Defender](../defender-endpoint/configure-server-endpoints.md#integration-with-azure-defender)
+**macOS** | [Local scripts](../defender-endpoint/mac-install-manually.md),  [Microsoft Endpoint Manager](../defender-endpoint/mac-install-with-intune.md),  [JAMF Pro](../defender-endpoint/mac-install-with-jamf.md),  [Mobile Device Management](../defender-endpoint/mac-install-with-other-mdm.md)
+**Linux Server** | [Local script](../defender-endpoint/linux-install-manually.md),  [Puppet](../defender-endpoint/linux-install-with-puppet.md),  [Ansible](../defender-endpoint/linux-install-with-ansible.md)
+**iOS** | [App-based](../defender-endpoint/ios-install.md)
+**Android** | [Microsoft Endpoint Manager](../defender-endpoint/android-intune.md)

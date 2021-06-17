@@ -38,8 +38,9 @@ The Microsoft Defender for Endpoint evaluation lab is designed to eliminate the 
 - Focus on evaluating the capabilities of the platform
 - Run simulations
 - See the prevention, detection, and remediation features in action
+<br>
 
-[!VIDEO](https://www.microsoft.com/videoplayer/embed/RE4qLUM)
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4woug]
 
 Using the simplified set-up experience, you can focus on running your own test scenarios and the pre-made simulations to see how Defender for Endpoint performs.
 

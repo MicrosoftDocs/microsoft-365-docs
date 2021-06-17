@@ -1,6 +1,6 @@
 ---
 title: Review architecture requirements and key concepts for Microsoft Defender for Endpoint
-description: Set up your Microsoft 365 Defender trial lab or pilot environment to try out and experience the security solution designed to protect devices, identity, data, and applications in your organization.
+description: Architecture for Microsoft 365 Defender trial lab or pilot environment.
 keywords: Microsoft 365 Defender trial, try Microsoft 365 Defender, evaluate Microsoft 365 Defender, Microsoft 365 Defender evaluation lab, Microsoft 365 Defender pilot, cyber security, advanced persistent threat, enterprise security, devices, device, identity, users, data, applications, incidents, automated investigation and remediation, advanced hunting
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -10,8 +10,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 
   - NOCSH
-ms.author: 
-author: 
+ms.author: v-jweston
+author: jweston-1
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -25,15 +25,15 @@ ms.technology: m365d
 
 # Review architecture requirements and key concepts for Microsoft Defender for Endpoint
 
-
 **Applies to:**
-- Microsoft 365 Defender
+Microsoft 365 Defender
 
 Before enabling Microsoft Defender for Endpoint, be sure you understand the architecture and can meet the requirements.
 
 ## Understand the architecture
 
 The following diagram illustrates MDE architecture and integrations:
+
 ![Steps for adding Microsoft Defender for Office to the Defender evaluation environment](../../media/defender/m365-defender-endpoint-architecture.png)
 
 Step | Description
@@ -57,13 +57,3 @@ Behavioral Blocking and Containment | Behavioral blocking and containment capabi
 Automated Investigation and Response | Automated investigation uses various inspection algorithms based on processes that are used by security analysts and designed to examine alerts and take immediate action to resolve breaches. | [Use automated investigations to investigate and remediate threats - Windows security \| Microsoft Docs](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
 Advanced Hunting | Advanced hunting is a query-based threat-hunting tool that lets you explore up to 30 days of raw data so that you can proactively inspect events in your network to locate threat indicators and entities. | [Overview of advanced hunting in Microsoft Defender ATP - Windows security \| Microsoft Docs](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview)
 Threat Analytics |  | [Track and respond to emerging threats with Microsoft Defender ATP threat analytics - Windows security \| Microsoft Docs](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/threat-analytics)
-
-## Review architecture requirements
-
-
-
-## SIEM integration
-
-### Navigation you may need
-
-[Create the Microsoft 365 Defender Evaluation Environment](eval-create-eval-environment.md)

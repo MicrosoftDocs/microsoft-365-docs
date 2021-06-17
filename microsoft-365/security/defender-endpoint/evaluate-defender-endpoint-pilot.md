@@ -30,6 +30,8 @@ ms.technology: m365d
 >- Learn about the latest enhancements in Microsoft Defender for Endpoint: [What's new in Defender for Endpoint?](https://cloudblogs.microsoft.com/microsoftsecure/2018/11/15/whats-new-in-windows-defender-atp/).
 >- Defender for Endpoint demonstrated industry-leading optics and detection capabilities in the recent MITRE evaluation. Read: [Insights from the MITRE ATT&CK-based evaluation](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/).
 
+You might want to experience Defender for Endpoint before you onboard more than a few devices to the service. To do this, you can run controlled attack simulations on a few test devices. After running the simulated attacks, you can review how Defender for Endpoint surfaces malicious activity and explore how it enables an efficient response.
+
 ## Before you begin
 
 To run any of the provided simulations, you need at least [one onboarded device](onboard-configure.md).
@@ -133,40 +135,3 @@ Running threat simulations using third-party platforms is a good way to evaluate
 After running your simulations, we encourage you to walk through the lab progress bar and explore **Microsoft Defender for Endpoint triggered an automated investigation and remediation**. Check out the evidence collected and analyzed by the feature.
 
 Hunt for attack evidence through advanced hunting by using the rich query language and raw telemetry and check out some world-wide threats documented in Threat analytics.
-
-## Simulation gallery
-
-Microsoft Defender for Endpoint has partnered with various threat simulation platforms to give you convenient access to test the capabilities of the platform right from the within the portal.
-
-View all the available simulations by going to  **Simulations and tutorials** > **Simulations catalog**  from the menu.
-
-A list of supported third-party threat simulation agents are listed, and specific types of simulations along with detailed descriptions are provided on the catalog.
-
-You can conveniently run any available simulation right from the catalog.  
-
-<br>
-![Image of simulations catalog](images/simulations-catalog.png)
-
-Each simulation comes with an in-depth description of the attack scenario and references such as the MITRE attack techniques used and sample Advanced hunting queries you run.
-
-**Examples:**
-![Image of simulation description details1](images/simulation-details-aiq.png)
-
-<br>
-![Image of simulation description details2](images/simulation-details-sb.png)
-
-## Evaluation report
-
-The lab reports summarize the results of the simulations conducted on the devices.
-
-<br>
-![Image of the evaluation report](images/eval-report.png)
-
-At a glance, you'll quickly be able to see:
-
-- Incidents that were triggered
-- Generated alerts
-- Assessments on exposure level
-- Threat categories observed
-- Detection sources
-- Automated investigations
