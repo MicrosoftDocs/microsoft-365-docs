@@ -15,7 +15,7 @@ ms.reviewer:
 f1.keywords: NOCSH
 ---
 
-# Microsoft Defender for Endpoint Plan 1 maintenance and operations
+# Microsoft Defender for Endpoint Plan 1 maintenance
 
 As you use Defender for Endpoint Plan 1 (preview) in your organization, your security team can take certain steps to maintain your security solution. This section includes resources you can use to prepare your security operations and maintenance plan.
 
