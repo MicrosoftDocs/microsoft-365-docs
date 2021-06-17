@@ -136,12 +136,10 @@ Scroll down to see all the views in each list. By default, the views in the **De
 
 ### Web protection report
 
-To access your Device health report, in the Microsoft 365 Defender portal, choose Reports, and then choose Web protection. The Web protection report shows detections over time, such as malicious URLs and attempts to access blocked URLs, as shown in Figure 11. 
+To access your Device health report, in the Microsoft 365 Defender portal, choose **Reports**, and then choose **Web protection**. The Web protection report shows detections over time, such as malicious URLs and attempts to access blocked URLs, as shown in the following image: 
  
-Figure 11. Web protection report
+:::image type="content" source="../../media/mde-p1/webprotectionreport.PNG" alt-text="Web protection report":::
 
 Scroll down to see all the views in the Web protection report. Some views include links that enable you to view more details, configure your threat protection features, and even manage indicators that serve as exceptions in Defender for Endpoint.
 
-To learn more, see Web protection.
-
- 
+To learn more, see [Web protection](web-protection-overview.md).
