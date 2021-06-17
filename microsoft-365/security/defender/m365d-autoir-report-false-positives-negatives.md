@@ -1,5 +1,5 @@
 ---
-title: Handle false positives or false negatives in AIR in Microsoft 365 Defender
+title: Address false positives or false negatives in Microsoft 365 Defender
 description: Was something missed or wrongly detected by AIR in Microsoft 365 Defender? Learn how to submit false positives or false negatives to Microsoft for analysis.
 keywords: automated, investigation, alert, remediation, false positive, false negative
 search.appverid: met150
@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
+ms.author: josephd
+author: JoeDavies-MSFT
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -23,18 +23,18 @@ ms.reviewer: evaldm, isco
 ms.technology: m365d
 ---
 
-# Handle false positives/negatives in automated investigation and response capabilities
+# Address false positives or false negatives in Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 - Microsoft 365 Defender
 
-False positives/negatives can occasionally occur with any threat protection solution. If [automated investigation and response capabilities](m365d-autoir.md) in Microsoft 365 Defender missed or wrongly detected something, there are steps your security operations team can take:
+False positives or negatives can occasionally occur with any threat protection solution. If [automated investigation and response capabilities](m365d-autoir.md) in Microsoft 365 Defender missed or wrongly detected something, there are steps your security operations team can take:
 
-- [Report a false positive/negative to Microsoft](#report-a-false-positivenegative-to-microsoft-for-analysis);
-- [Adjust your alerts](#adjust-an-alert-to-prevent-false-positives-from-recurring) (if needed); and 
-- [Undo remediation actions that were taken on devices](#undo-a-remediation-action-that-was-taken-on-a-device). 
+- [Report a false positive/negative to Microsoft](#report-a-false-positivenegative-to-microsoft-for-analysis)
+- [Adjust your alerts](#adjust-an-alert-to-prevent-false-positives-from-recurring) (if needed)
+- [Undo remediation actions that were taken on devices](#undo-a-remediation-action-that-was-taken-on-a-device)
 
 The following sections describe how to perform these tasks.
 
@@ -49,7 +49,7 @@ The following sections describe how to perform these tasks.
 
 |Scenario |Service |What to do |
 |--------|--------|--------|
-|- An alert is triggered by legitimate use <br/>- An alert is inaccurate    |[Microsoft Cloud App Security](/cloud-app-security)<br/> or <br/>[Azure Advanced Threat Detection](/azure/security/fundamentals/threat-detection)         |[Manage alerts in the Cloud App Security portal](/cloud-app-security/managing-alerts)         |
+|- An alert is triggered by legitimate use <br/>- An alert is inaccurate    |[Microsoft Cloud App Security](/cloud-app-security)<br/> or <br/>[Azure threat protection](/azure/security/fundamentals/threat-detection)         |[Manage alerts in the Cloud App Security portal](/cloud-app-security/managing-alerts)         |
 |A file, IP address, URL, or domain is treated as malware on a device, even though it's safe|[Microsoft Defender for Endpoint](/windows/security/threat-protection) |[Create a custom indicator with an "Allow" action](/windows/security/threat-protection/microsoft-defender-atp/manage-indicators) |
 
 ## Undo a remediation action that was taken on a device

@@ -5,8 +5,7 @@ keywords: security solution, setup, configuration, Microsoft 365 E5, advanced th
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.audience: ITPro
-audience: Admin
+audience: ITPro
 ms.topic: how-to
 ms.prod: m365-security
 ms.technology: m365d
@@ -30,8 +29,8 @@ Follow these steps to configure threat protection across Microsoft 365.
 Microsoft has tested and recommends a specific set of Conditional Access and related policies for protecting access to all of your SaaS applications, especially Microsoft 365. Policies are recommended for baseline, sensitive, and highly regulated protection. Begin by implementing the policies for baseline protection. 
 
 
-[![Common policies for configuring identity and device access](../media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)
-[See a larger version of this image](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)
+[![Common policies for configuring identity and device access](../media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png)
+[See a larger version of this image](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png)
 
 ### To implement baseline protection for Microsoft 365
 
@@ -157,12 +156,12 @@ After you have set up and deployed your threat protection services and capabilit
 ![Microsoft 365 security center](../media/solutions-architecture-center/m365-security-center.png)
 
 The Microsoft 365 security center is intended for security admins and security operations teams. In the Microsoft 365 security center, you can:
-- View the overall security health of your organization with [Secure Score](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-secure-score).
+- View the overall security health of your organization with [Secure Score](/microsoft-365/security/defender/microsoft-secure-score).
 - [Monitor and view reports](../security/defender-endpoint/threat-protection-reports.md) on the status of your identities, data, devices, apps, and infrastructure.
-- Connect the dots on alerts through [incidents](https://docs.microsoft.com/microsoft-365/security/defender/incident-queue).
+- Connect the dots on alerts through [incidents](/microsoft-365/security/defender/incident-queue).
 - Use [automated investigation and remediation](../security/defender/m365d-autoir.md) to address threats.
-- [Proactively hunt for threats](https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-overview), such as intrusion attempts or breach activity affecting your email, data, devices, and identities.
-- [Understand the latest attack campaigns](https://docs.microsoft.com/microsoft-365/security/defender/latest-attack-campaigns) and techniques with threat analytics.
+- [Proactively hunt for threats](/microsoft-365/security/defender/advanced-hunting-overview), such as intrusion attempts or breach activity affecting your email, data, devices, and identities.
+- [Understand the latest attack campaigns](/microsoft-365/security/defender/latest-attack-campaigns) and techniques with threat analytics.
 - ... and more!
 
 ### More information about the Microsoft 365 security center

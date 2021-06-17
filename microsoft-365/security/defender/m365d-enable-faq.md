@@ -1,7 +1,7 @@
 ---
 title: Frequently asked questions when turning on Microsoft 365 Defender
 description: Get answers to the most commonly asked questions about licensing, permissions, initial settings, and other products and services related to enabling Microsoft 365 Defender
-keywords: frequently asked questions, FAQ, GCC, get started, enable MTP, Microsoft Threat Protection, M365, security, data location, required permissions, license eligibility, settings page
+keywords: frequently asked questions, FAQ, GCC, get started, enable Microsoft 365 Defender, Microsoft 365 Defender, M365, security, data location, required permissions, license eligibility, settings page
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -65,7 +65,7 @@ Microsoft 365 Defender is available in Microsoft 365 security center. To go to t
 
 ##	What permissions do I need to access Microsoft 365 Defender in Microsoft 365 security center?
 
-Accounts assigned the following Azure Active Directory (AD) roles can access Microsoft 365 Defender functionality and data:
+Accounts assigned the following Azure Active Directory (Azure AD) roles can access Microsoft 365 Defender functionality and data:
 
 - Global administrator
 - Security administrator

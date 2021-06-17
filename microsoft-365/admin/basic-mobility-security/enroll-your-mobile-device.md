@@ -72,6 +72,6 @@ Go to the Microsoft Store, and download and install Intune Company Portal
 
 To connect and configure your Windows phone or PC with the Company portal to Microsoft 365, see [Windows device enrollment in Intune Company Portal](/intune-user-help/windows-enrollment-company-portal).
 
-## What's next?
+## Next steps
 
 After your device is enrolled in Basic Mobility and Security, you can start using Office apps on your device to work with email, calendar, contacts, and documents.

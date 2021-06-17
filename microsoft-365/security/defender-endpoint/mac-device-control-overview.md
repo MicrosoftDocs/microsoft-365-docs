@@ -1,7 +1,7 @@
 ---
 title: Device control for macOS
 description: Learn how to configure Microsoft Defender for Endpoint on Mac to reduce threats from removable storage such as USB devices.
-keywords: microsoft, defender, atp, mac, device, control, usb, removable, media
+keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, device, control, usb, removable, media
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -325,7 +325,7 @@ You can view mount, unmount, and volume change events originating from USB devic
 
 ```
 DeviceEvents 
-    | where ActionType == "UsbDriveMount" or ActionType == "UsbDriveUnmount" or ActionType == "UsbDriveDriveLetterChanged"
+    | where ActionType == "UsbDriveMounted" or ActionType == "UsbDriveUnmounted" or ActionType == "UsbDriveDriveLetterChanged"
     | where DeviceId == "<device ID>"
 ```
 

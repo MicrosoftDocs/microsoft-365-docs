@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 Defender
 description: Microsoft 365 Defender is a coordinated threat protection solution designed to protect devices, identity, data and applications
-keywords: introduction to Microsoft Threat Protection, cyber security, advanced persistent threat, enterprise security, devices, device, identity, users, data, applications, incidents, automated investigation and remediation, advanced hunting
+keywords: introduction to MMicrosoft 365 Defender, cyber security, advanced persistent threat, enterprise security, devices, device, identity, users, data, applications, incidents, automated investigation and remediation, advanced hunting
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -39,8 +39,8 @@ With the integrated Microsoft 365 Defender solution, security professionals can 
 
 
 <center><h2>Microsoft 365 Defender services</center></h2>
-<table><tr><td><center><b><a href="https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection"><b>Microsoft Defender for Endpoint</b></center></a></td>
-<td><center><b><a href="https://docs.microsoft.com/office365/securitycompliance/office-365-atp"><b>Microsoft Defender for Office 365</b></center></a></td>
+<table><tr><td><center><b><a href="/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection"><b>Microsoft Defender for Endpoint</b></center></a></td>
+<td><center><b><a href="/office365/securitycompliance/office-365-atp"><b>Microsoft Defender for Office 365</b></center></a></td>
 <td><center><b><a href="/azure-advanced-threat-protection/"><b>Microsoft Defender for Identity</b></a></center></td>
 <td><center><b><a href="/cloud-app-security/"><b>Microsoft Cloud App Security</b></a></center></td>
 </tr>
@@ -94,4 +94,4 @@ Microsoft 365 Defender licensing requirements must be met before you can enable 
 
 
 ## See also
-- [Deploy threat protection capabilities across Microsoft 365 E5](https://docs.microsoft.com/microsoft-365/solutions/deploy-threat-protection)
+- [Deploy threat protection capabilities across Microsoft 365 E5](/microsoft-365/solutions/deploy-threat-protection)

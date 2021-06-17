@@ -1,7 +1,7 @@
 ---
 title: Get all vulnerabilities by machine and software
 description: Retrieves a list of all the vulnerabilities affecting the organization by Machine and Software
-keywords: apis, graph api, supported apis, get, vulnerability information, mdatp tvm api
+keywords: apis, graph api, supported apis, get, vulnerability information, Microsoft Defender for Endpoint tvm api
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -14,7 +14,8 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+MS.technology: mde
+ms.custom: api
 ---
 
 # List vulnerabilities by machine and software
@@ -114,5 +115,5 @@ Here is an example of the response.
 
 ## See also
 
-- [Risk-based threat and vulnerability management](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [Vulnerabilities in your organization](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-weaknesses)
+- [Risk-based threat and vulnerability management](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Vulnerabilities in your organization](/microsoft-365/security/defender-endpoint/tvm-weaknesses)

@@ -1,7 +1,7 @@
 ---
 title: Remediate vulnerabilities with threat and vulnerability management
 description: Remediate security weaknesses discovered through security recommendations, and create exceptions if needed, in threat and vulnerability management.
-keywords: microsoft defender for endpoint tvm remediation, mdatp tvm, threat and vulnerability management, threat & vulnerability management, threat & vulnerability management remediation, tvm remediation intune, tvm remediation sccm
+keywords: Microsoft Defender for Endpoint tvm remediation, Microsoft Defender for Endpoint tvm, threat and vulnerability management, threat & vulnerability management, threat & vulnerability management remediation, tvm remediation intune, tvm remediation sccm
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -40,7 +40,7 @@ To use this capability, enable your Microsoft Intune connections. In the Microso
 
 **Note**: If you have the Intune connection enabled, you get an option to create an Intune security task when creating a remediation request. This option does not appear if the connection is not set.
 
-See [Use Intune to remediate vulnerabilities identified by Microsoft Defender for Endpoint](https://docs.microsoft.com/intune/atp-manage-vulnerabilities) for details.
+See [Use Intune to remediate vulnerabilities identified by Microsoft Defender for Endpoint](/intune/atp-manage-vulnerabilities) for details.
 
 ### Remediation request steps
 
@@ -57,7 +57,7 @@ See [Use Intune to remediate vulnerabilities identified by Microsoft Defender fo
 
 6. Go to the [**Remediation**](tvm-remediation.md) page to view the status of your remediation request.
 
-If you want to check how the ticket shows up in Intune, see [Use Intune to remediate vulnerabilities identified by Microsoft Defender for Endpoint](https://docs.microsoft.com/intune/atp-manage-vulnerabilities) for details.
+If you want to check how the ticket shows up in Intune, see [Use Intune to remediate vulnerabilities identified by Microsoft Defender for Endpoint](/intune/atp-manage-vulnerabilities) for details.
 
 >[!NOTE]
 >If your request involves remediating more than 10,000 devices, we can only send 10,000 devices for remediation to Intune.

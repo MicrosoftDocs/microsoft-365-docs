@@ -31,12 +31,14 @@ description: "Learn how to enable Microsoft 365 to protect local Active-Director
 If your organization uses Windows Server Active Directory on-premises, you can set up Microsoft 365 Business Premium to protect your Windows 10 devices, while still maintaining access to on-premises resources that require local authentication.
 To set up this protection, you can implement **Hybrid Azure AD joined devices**. These devices are joined to both your on-premises Active Directory and your Azure Active Directory.
 
+## Watch: Configure Hybrid Azure Active Directory join
+
 This video describes the steps for how to set this up for the most common scenario, which is also detailed in the steps that follow.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3C9hO]
   
+## Before you begin
 
-## Before you get started, make sure you complete these steps:
 - Synchronize users to Azure AD with Azure AD Connect.
 - Complete Azure AD Connect Organizational Unit (OU) sync.
 - Make sure all the domain users you sync have licenses to Microsoft 365 Business Premium.
@@ -111,3 +113,9 @@ If you do not see the policy **Enable automatic MDM enrollment using default Azu
 6.	In case you have several Domain Controllers, wait for SYSVOL to replicate for the policies to be available. This procedure will work for any future version of the Administrative Templates as well.
 
 At this point you should be able to see the policy **Enable automatic MDM enrollment using default Azure AD credentials** available.
+
+## Related content
+
+[Synchronize domain users to Microsoft 365](manage-domain-users.md) (article)\
+[Create a group in the admin center](../admin/create-groups/create-groups.md) (article)\
+[Tutorial: Configure hybrid Azure Active Directory join for managed domains](/azure/active-directory/devices/hybrid-azuread-join-managed-domains.md) (article)

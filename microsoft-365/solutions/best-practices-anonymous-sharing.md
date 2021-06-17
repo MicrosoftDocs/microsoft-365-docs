@@ -16,6 +16,7 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Priority
 f1.keywords: NOCSH
+recommendations: false
 description: "In this article, you'll learn about the best practices for sharing files and folders with unauthenticated users."
 ---
 
@@ -98,7 +99,7 @@ To set the default file and folder sharing link for a specific site
 
 ## Prevent unauthenticated sharing of sensitive content
 
-You can use [data loss prevention (DLP)](../compliance/data-loss-prevention-policies.md) to prevent unauthenticated sharing of sensitive content. Data loss prevention can take action based on a file's sensitivity label, retention label, or sensitive information in the file itself.
+You can use [data loss prevention (DLP)](../compliance/dlp-learn-about-dlp.md) to prevent unauthenticated sharing of sensitive content. Data loss prevention can take action based on a file's sensitivity label, retention label, or sensitive information in the file itself.
 
 To create a DLP rule
 1. In the Microsoft 365 compliance admin center, go to the [Data loss prevention page](https://compliance.microsoft.com/datalossprevention).

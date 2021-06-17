@@ -5,12 +5,12 @@ f1.keywords:
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 
+ms.date:
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
-search.appverid: 
+search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: "Administrators can set up a data connector to import data from their organization's physical badging system to Microsoft 365. This lets you use this data in insider risk management policies to help you detect access to your physical buildings by specific users that may indicate a possible internal threat to your organization."
@@ -58,13 +58,13 @@ The next step is to create a JSON file that contains information about employees
 
 The JSON file must conform to the schema definition required by the connector. Here are descriptions of the required schema properties for the JSON file:
 
-| Property | Description | Data type |
-|:-----------|:--------------|:------------|
-|UserId|An employee can have multiple digital identities across the systems. The input needs to have the Azure AD ID already resolved by the source system. |UPN or email address|
-|AssetId|The reference ID of the physical asset or physical access point.| Alphanumeric string|
+|Property|Description|Data type|
+|---|---|---|
+|UserId|An employee can have multiple digital identities across the systems. The input needs to have the Azure AD ID already resolved by the source system.|UPN or email address|
+|AssetId|The reference ID of the physical asset or physical access point.|Alphanumeric string|
 |AssetName|The friendly name of the physical asset or physical access point.|Alphanumeric string|
 |EventTime|The time stamp of access.|Date and time, in UTC format|
-|AccessStatus|Value of `Success` or `Failed`| String|
+|AccessStatus|Value of `Success` or `Failed`|String|
 |||
 
 Here's an example of a JSON file that conforms to the required schema:
@@ -79,48 +79,49 @@ Here's an example of a JSON file that conforms to the required schema:
         "AccessStatus":"Failed",
     },
     {
-        "UserId":"pilarp@contoso.com",        
+        "UserId":"pilarp@contoso.com",
         "AssetId":"Mid-Sec-7",
         "AssetName":"Main Building 1st Floor Mid Section",
-        "EventTime":"2019-07-04T02:57:49",        
+        "EventTime":"2019-07-04T02:57:49",
         "AccessStatus":"Success",
     }
 ]
 ```
+
 You can also download the following schema definition for the JSON file from the wizard when you create the physical badging connector in Step 3.
 
 ```text
 {
-	"title" : "Physical Badging Signals",
-	"description" : "Access signals from physical badging systems",
-	"DataType" : {
-		"description" : "Identify what is the data type for input signal",
-		"type" : "string",
-	},
-	"type" : "object",
-	"properties": {
-		"UserId" : {
-			"description" : "Unique identifier AAD Id resolved by the source system",
-			"type" : "string",
-		},
-		"AssetId": {
-			"description" : "Unique ID of the physical asset/access point",
-			"type" : "string",
-		},
-		"AssetName": {
-			"description" : "friendly name of the physical asset/access point",
-			"type" : "string",
-		},
-		"EventTime" : {
-			"description" : "timestamp of access",
-			"type" : "string",
-		},
-		"AccessStatus" : {
-			"description" : "what was the status of access attempt - Success/Failed",
-			"type" : "string",
-		},
-	}
-	"required" : ["UserId", "AssetId", "EventTime" "AccessStatus"]
+   "title" : "Physical Badging Signals",
+   "description" : "Access signals from physical badging systems",
+   "DataType" : {
+      "description" : "Identify what is the data type for input signal",
+      "type" : "string",
+   },
+   "type" : "object",
+   "properties": {
+      "UserId" : {
+         "description" : "Unique identifier AAD Id resolved by the source system",
+         "type" : "string",
+      },
+      "AssetId": {
+         "description" : "Unique ID of the physical asset/access point",
+         "type" : "string",
+      },
+      "AssetName": {
+         "description" : "friendly name of the physical asset/access point",
+         "type" : "string",
+      },
+      "EventTime" : {
+         "description" : "timestamp of access",
+         "type" : "string",
+      },
+      "AccessStatus" : {
+         "description" : "what was the status of access attempt - Success/Failed",
+         "type" : "string",
+      },
+   }
+   "required" : ["UserId", "AssetId", "EventTime" "AccessStatus"]
 }
 ```
 
@@ -128,18 +129,18 @@ You can also download the following schema definition for the JSON file from the
 
 The next step is to create a physical badging connector in the Microsoft 365 compliance center. After you run the script in Step 4, the JSON file that you created in Step 3 will be processed and pushed to the API endpoint you configured in Step 1. In this step, be sure to copy the JobId that's generated when you create the connector. You'll use the JobId when you run the script.
 
-1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com/) and then click **Data connectors** in the left nav.
+1. Go to <https://compliance.microsoft.com> and then click **Data connectors** in the left nav.
 
 2. On the **Data connectors** page under **Physical badging**, click **View**.
 
 3. On the **Physical badging** page, click **Add connector**.
 
 4. On the **Authentication credentials** page, do the following and then click **Next**:
-  
+
    1. Type or paste the Azure AD application ID for the Azure app that you created in Step 1.
-  
+
    2. Download the sample schema for your reference to create the JSON file.
-  
+
    3. Type a unique name for the physical badging connector.
 
 5. On the **Review** page, review your settings and then click **Finish** to create the connector.
@@ -183,13 +184,13 @@ After you run the script, the JSON file containing the physical badging data is 
 
    The following table describes the parameters to use with this script and their required values. Information you obtained in the previous steps is used in the values for these parameters.
 
-   | Parameter | Description |
-   |:-------------|:--------------|
-   |tenantId | This is the Id for your Microsoft 365 organization that you obtained in Step 1. You can also obtain the tenantId for your organization on the **Overview** blade in the Azure AD admin center. This is used to identify your organization. |
-   |appId | This is the Azure AD application Id for the app that you created in Azure AD in Step 1. This is used by Azure AD for authentication when the script attempts to accesses your Microsoft 365 organization.                    |
-   |appSecret | This is the Azure AD application secret for the app that you created in Azure AD in Step 1. This is also used for authentication.                                                        |
-   |jobId | This is the Job Id for the physical badging connector that you created in Step 3. This is used to associate the physical badging data that is pushed to the Microsoft cloud with the physical badging connector.              |
-   |JsonFilePath | This is the file path on the local computer (the one you're using to run the script) for the JSON file that you created in Step 2. This file must follow the sample schema described in Step 3.|
+   |Parameter|Description|
+   |---|---|
+   |tenantId|This is the Id for your Microsoft 365 organization that you obtained in Step 1. You can also obtain the tenantId for your organization on the **Overview** blade in the Azure AD admin center. This is used to identify your organization.|
+   |appId|This is the Azure AD application Id for the app that you created in Azure AD in Step 1. This is used by Azure AD for authentication when the script attempts to accesses your Microsoft 365 organization.|
+   |appSecret|This is the Azure AD application secret for the app that you created in Azure AD in Step 1. This is also used for authentication.|
+   |jobId|This is the Job Id for the physical badging connector that you created in Step 3. This is used to associate the physical badging data that is pushed to the Microsoft cloud with the physical badging connector.|
+   |JsonFilePath|This is the file path on the local computer (the one you're using to run the script) for the JSON file that you created in Step 2. This file must follow the sample schema described in Step 3.|
    |||
 
    Here's an example of the syntax for the physical badging connector script using actual values for each parameter:
@@ -209,7 +210,7 @@ After you run the script, the JSON file containing the physical badging data is 
 
 After you create the physical badging connector and push your physical badging data, you can view the connector and upload status in the Microsoft 365 compliance center. If you schedule the script to run automatically on a regular basis, you can also view the current status after the last time the script ran.
 
-1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com/) and click **Data connectors** in the left nav.
+1. Go to <https://compliance.microsoft.com> and click **Data connectors** in the left nav.
 
 2. Click the **Connectors** tab and then select the physical badging connector to display the flyout page. This page contains the properties and information about the connector.
 

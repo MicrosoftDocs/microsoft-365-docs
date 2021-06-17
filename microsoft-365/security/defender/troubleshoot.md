@@ -1,7 +1,7 @@
 ---
 title: Troubleshoot Microsoft 365 Defender service issues
 description: Find solutions and workarounds to known Microsoft 365 Defender issues
-keywords: troubleshoot  Microsoft Threat Protection, troubleshoot, Azure ATP, issues, add-on, settings page
+keywords: troubleshoot  Microsoft 365 Defender, troubleshoot, Microsoft Defender for Identity, issues, add-on, settings page
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -34,7 +34,7 @@ This section addresses issues that might arise as you use the Microsoft 365 Defe
 
 ## I don't see Microsoft 365 Defender content
 
-If you don't see capabilities on the navigation pane such as the Incidents, Action Center, or Hunting in your portal, you'll need to verify that your tenant has the appropriate licenses.
+If you don't see capabilities on the navigation pane such as the Incidents, Action center, or Hunting in your portal, you'll need to verify that your tenant has the appropriate licenses.
 
 For more information, see [Prerequisites](prerequisites.md).
 

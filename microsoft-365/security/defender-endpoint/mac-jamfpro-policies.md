@@ -1,7 +1,7 @@
 ---
-title: Set up the Microsoft Defender for Endpoint for macOS policies in Jamf Pro
-description: Learn how to set up the Microsoft Defender Endpoint for macOS policies in Jamf Pro
-keywords: policies, microsoft, defender, atp, mac, installation, deploy, uninstallation, intune, jamfpro, macos, catalina, mojave, high sierra
+title: Set up the Microsoft Defender for Endpoint on macOS policies in Jamf Pro
+description: Learn how to set up the Microsoft Defender for Endpoint on macOS policies in Jamf Pro
+keywords: policies, microsoft, defender, Microsoft Defender for Endpoint, mac, installation, deploy, uninstallation, intune, jamfpro, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -51,7 +51,7 @@ You'll need to take the following steps:
 
 9. [Configure Network Extension](#step-9-configure-network-extension)
 
-10. [Schedule scans with Microsoft Defender for Endpoint on macOS](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/mac-schedule-scan-atp)
+10. [Schedule scans with Microsoft Defender for Endpoint on macOS](/windows/security/threat-protection/microsoft-defender-atp/mac-schedule-scan-atp)
 
 11. [Deploy Microsoft Defender for Endpoint on macOS](#step-11-deploy-microsoft-defender-for-endpoint-on-macos)
 
@@ -728,7 +728,7 @@ Alternatively, you can download [netfilter.mobileconfig](https://github.com/micr
 
 
 ## Step 10: Schedule scans with Microsoft Defender for Endpoint on macOS
-Follow the instructions on [Schedule scans with Microsoft Defender for Endpoint on macOS](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/mac-schedule-scan-atp).
+Follow the instructions on [Schedule scans with Microsoft Defender for Endpoint on macOS](/windows/security/threat-protection/microsoft-defender-atp/mac-schedule-scan-atp).
 
 
 ## Step 11: Deploy Microsoft Defender for Endpoint on macOS
@@ -767,7 +767,7 @@ Follow the instructions on [Schedule scans with Microsoft Defender for Endpoint 
 
 7. Select **Open**. Set the **Display Name** to **Microsoft Defender Advanced Threat Protection and Microsoft Defender Antivirus**.
 
-    **Manifest File** is not required. Microsoft Defender Advanced Threat Protection works without Manifest File.
+    **Manifest File** is not required. Microsoft Defender for Endpoint works without Manifest File.
     
     **Options tab**<br> Keep default values.
 

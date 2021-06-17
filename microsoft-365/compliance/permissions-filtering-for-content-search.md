@@ -84,7 +84,7 @@ For troubleshooting PowerShell connection errors, see:
 
 The **New-ComplianceSecurityFilter** is used to create a search permissions filter. The following table describes the parameters for this cmdlet. All parameters are required to create a compliance security filter.
   
-|**Parameter**|**Description**|
+| Parameter | Description |
 |:-----|:-----|
 | _Action_ <br/> | The  _Action_ parameter specifies that type of search action that the filter is applied to. The possible Content Search actions are:  <br/><br/> **Export:** The filter is applied when exporting search results.  <br/> **Preview:** The filter is applied when previewing search results.  <br/> **Purge:** The filter is applied when purging search results.  <br/> **Search:** The filter is applied when running a search.  <br/> **All:** The filter is applied to all search actions.  <br/> |
 | _FilterName_ <br/> |The  _FilterName_ parameter specifies the name of the permissions filter. This name is used to identity a filter when using the **Get-ComplianceSecurityFilter**, **Set-ComplianceSecurityFilter,** and **Remove-ComplianceSecurityFilter** cmdlets.  <br/> |
@@ -208,7 +208,7 @@ The **Get-ComplianceSecurityFilter** is used to return a list of search permissi
 
 The **Set-ComplianceSecurityFilter** is used to modify an existing search permissions filter. The only required parameter is  _FilterName_. 
   
-|**Parameter**|**Description**|
+| Parameter | Description |
 |:-----|:-----|
 | _Action_| The  _Action_ parameter specifies that type of search action that the filter is applied to. The possible Content Search actions are: <br/><br/> **Export:** The filter is applied when exporting search results.  <br/> **Preview:** The filter is applied when previewing search results.  <br/> **Purge:** The filter is applied when purging search results.  <br/> **Search:** The filter is applied when running a search.  <br/> **All:** The filter is applied to all search actions.  <br/> |
 | _FilterName_|The  _FilterName_ parameter specifies the name of the permissions filter. |
@@ -260,5 +260,8 @@ The **Remove-ComplianceSecurityFilter** is used to delete a search filter. Use t
 - **Does search permissions filtering work for inactive mailboxes?** Yes, you can use mailbox and mailbox content filters to limit who can search inactive mailboxes in your organization. Like a regular mailbox, an inactive mailbox has to be configured with the recipient property that's used to create a permissions filter. If necessary, you can use the **Get-Mailbox -InactiveMailboxOnly** command to display the properties of inactive mailboxes. For more information, see [Create and manage inactive mailboxes in Office 365](create-and-manage-inactive-mailboxes.md).
     
 - **Does search permissions filtering work for public folders?** No. As previously explained, search permissions filtering can't be used to limit who can search public folders in Exchange. For example, items in public folder locations can't be excluded from the search results by a permissions filter. 
-    
+
 - **Does allowing a user to search all content locations in a specific service also prevent them from searching content locations in a different service?** No. As previously explained, you have to create a search permissions filter to explicitly prevent users from searching content locations in a specific service (such as preventing a user from searching any Exchange mailbox or any SharePoint site). In other words, creating a search permissions filter that allows a user to search all SharePoint sites in the organization doesn't prevent that user from searching mailboxes. For example, to allow SharePoint admins to only search SharePoint sites, you have to create a filter that prevents them from searching mailboxes. Similarly, to allow Exchange admins to only search mailboxes, you have to create a filter that prevents them from searching sites.
+
+- **Do search permissions filters count against search query character limits?** Yes. Search permissions filters count against the character limit for search queries. For more information, see [Limits in Advanced eDiscovery](limits-ediscovery20.md).
+

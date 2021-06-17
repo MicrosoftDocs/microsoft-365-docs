@@ -39,6 +39,10 @@ The individual permissions are combined into the following preset permission gro
 
 The available individual permissions and what's included or not included in the preset permission groups are described in the following table:
 
+<br>
+
+****
+
 |Permission|No access|Limited access|Full access|
 |---|:---:|:---:|:---:|
 |**Allow sender** (_PermissionToAllowSender_)|||![Check mark](../../media/checkmark.png)|
@@ -122,6 +126,8 @@ The _EndUserQuarantinePermissionsValue_ parameter uses a decimal value that's co
 
 The required order and values for each individual permission in preset permission groups are described in the following table:
 
+<br>
+
 ****
 
 |Permission|No access|Limited access|Full access|
@@ -136,6 +142,7 @@ The required order and values for each individual permission in preset permissio
 |PermissionToViewHeader<sup>\*</sup>|0|0|0|
 |Binary value|00000000|01101010|11101100|
 |Decimal value to use|0|106|236|
+|
 
 <sup>\*</sup> Currently, this value is always 0. For PermissionToViewHeader, the value 0 doesn't hide the **View message header** button in the details of the quarantined message (the button is always available).
 
@@ -220,6 +227,8 @@ For detailed syntax and parameter information, see [New-QuarantineTag](/powershe
 ## Step 2: Assign a quarantine tag to supported features
 
 In _supported_ protection features that quarantine messages or files (automatically or as a configurable action), you can assign a quarantine tag to the available quarantine actions. Features that quarantine messages and the availability of quarantine tags are described in the following table:
+
+<br>
 
 ****
 

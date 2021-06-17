@@ -45,7 +45,7 @@ Microsoft Teams customers will see "Restrict anonymous users from joining meetin
 
 ## December 2020
 
-### Added six accounts-related improvement actions for Microsoft Defender for Endpoint (previously Microsoft Defender ATP):
+### Added six accounts-related improvement actions for Microsoft Defender for Endpoint:
 
 - Set 'Minimum password length' to '14 or more characters'
 - Set 'Enforce password history' to '24 or more password(s)'
@@ -60,7 +60,7 @@ Microsoft Teams customers will see "Restrict anonymous users from joining meetin
 
 The ability to create ServiceNow tickets through Secure Score by going to **Share > ServiceNow** is no longer available. Thank you for your feedback and continued support while we determine next steps.
 
-### Added three services-related improvement actions for Microsoft Defender for Endpoint (previously Microsoft Defender ATP):
+### Added three services-related improvement actions for Microsoft Defender for Endpoint:
 
 - Fix unquoted service path for Windows services
 - Change service executable path to a common protected location

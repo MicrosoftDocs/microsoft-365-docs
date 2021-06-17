@@ -278,13 +278,9 @@ You can customize the text for policy tips separately from the email notificatio
   
 ## More information
 
-- [Overview of data loss prevention policies](data-loss-prevention-policies.md)
-    
+- [Learn about data loss prevention](dlp-learn-about-dlp.md)    
 - [Create a DLP policy from a template](create-a-dlp-policy-from-a-template.md)
-- [DLP policy conditions, exceptions, and actions (preview)](./dlp-microsoft-teams.md?view=o365-worldwide)
-    
+- [DLP policy conditions, exceptions, and actions (preview)](./dlp-microsoft-teams.md) 
 - [Create a DLP policy to protect documents with FCI or other properties](protect-documents-that-have-fci-or-other-properties.md)
-    
 - [What the DLP policy templates include](what-the-dlp-policy-templates-include.md)
-    
 - [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)

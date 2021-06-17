@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: prkalid, guyb
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,10 +16,11 @@ ms.collection:
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
-- commerce
+- commerce_billing
 search.appverid:
 - MET150
 description: "Learn how to manage who receives billing notification emails and invoice attachments."
+ms.date: 03/17/2021
 ---
 
 # Manage billing notifications and invoice attachments
@@ -123,5 +125,6 @@ To receive your invoices as attachments to your invoice notifications, use the f
 ## Related content
 
 [View your bill or invoice](view-your-bill-or-invoice.md) (article)\
+[Billing information for Microsoft 365 for business in Mexico](/microsoft-365/commerce/billing-and-payments/mexico-billing-info) (article) \
 [Understand your bill or invoice for Microsoft 365 for business](understand-your-invoice2.md) (article)\
 [Add users and assign licenses at the same time](../../admin/add-users/add-users.md) (article)
