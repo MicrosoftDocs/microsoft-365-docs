@@ -35,7 +35,7 @@ In Windows 10, versions 1703, hiding the interface will hide Microsoft Defender 
 
 With the setting set to **Enabled**:
 
-![Screenshot of Windows Security without the shield icon and virus and threat protection section](images/defender/wdav-headless-mode-1703.png)
+:::image type="content" source="../../media/wdav-headless-mode-1703.png" alt-text="Windows Security without the shield icon and virus and threat protection section":::
 
 With the setting set to **Disabled** or not configured:
 
