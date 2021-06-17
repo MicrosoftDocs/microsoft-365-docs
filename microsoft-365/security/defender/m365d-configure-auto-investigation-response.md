@@ -66,7 +66,7 @@ Although certain alerts and security policies can trigger automated investigatio
 
 Security settings in Office 365 help protect email and content. To view or change these settings, follow the guidance in [Protect against threats](../office-365-security/protect-against-threats.md).
 
-1. In the Microsoft 365 security center ([https://security.microsoft.com](https://security.microsoft.com)), go to **Policies & Rules** \> **Threat policies**.
+1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), go to **Policies & Rules** \> **Threat policies**.
 2. Make sure all of the following policies are configured. To get help and recommendations, see [Protect against threats](/microsoft-365/security/office-365-security/protect-against-threats).
    - [Anti-malware](../office-365-security/protect-against-threats.md#part-1---anti-malware-protection-in-eop)
    - [Anti-phishing](../office-365-security/protect-against-threats.md#part-2---anti-phishing-protection-in-eop-and-defender-for-office-365)
@@ -81,9 +81,9 @@ Security settings in Office 365 help protect email and content. To view or chang
 
 :::image type="content" source="../../media/mtp-enable/mtp-on.png" alt-text="MTP on":::
 
-1. Sign in to the Microsoft 365 security center ([https://security.microsoft.com](https://security.microsoft.com)).
-2. In the navigation pane, look for **Incidents**, **Action center**, and **Hunting**, as shown in the preceding image.
-   - If you see **Incidents**, **Action center**, and **Hunting**, Microsoft 365 Defender is turned on. See the [Review or change the automation level for device groups](#review-or-change-the-automation-level-for-device-groups) section of this article.
+1. Sign in to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)).
+2. In the navigation pane, look for **Incidents & Alerts**, **Hunting**, and **Action center** as shown in the preceding image.
+   - If you see **Incidents & Alerts**, **Hunting**, and **Action center**, Microsoft 365 Defender is turned on. See the [Review or change the automation level for device groups](#review-or-change-the-automation-level-for-device-groups) section of this article.
    - If you do *not* see **Incidents**, **Action center**, or **Hunting**, Microsoft 365 Defender might not be turned on. In this case, [visit the Action center](m365d-action-center.md)).
 3. In the navigation pane, choose **Settings** > **Microsoft 365 Defender**. Confirm that Microsoft 365 Defender is turned on.
 

@@ -34,13 +34,13 @@ Alerts are the basis of all incidents and indicate the occurrence of malicious o
 
 In Microsoft 365 Defender, related alerts are aggregated together to form [incidents](incidents-overview.md). Incidents will always provide the broader context of an attack, however, analyzing alerts can be valuable when deeper analysis is required. 
 
-The **Alerts queue** shows the current set of alerts. You get to the alerts queue from **Incidents & alerts > Alerts** on the quick launch of the Microsoft 365 security center ([security.microsoft.com](https://security.microsoft.com)).
+The **Alerts queue** shows the current set of alerts. You get to the alerts queue from **Incidents & alerts > Alerts** on the quick launch of the Microsoft 365 Defender portal ([security.microsoft.com](https://security.microsoft.com)).
 
 :::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-queue.png" alt-text="Example of the alerts queue":::
 
 Alerts from different Microsoft security solutions like Microsoft Defender for Endpoint, Microsoft Defender for Office 365, and Microsoft 365 Defender appear here.
 
-By default, the alerts queue in the Microsoft 365 security center displays the new and in progress alerts from the last 30 days. The most recent alert is at the top of the list so you can see it first. 
+By default, the alerts queue in the Microsoft 365 Defender portal displays the new and in progress alerts from the last 30 days. The most recent alert is at the top of the list so you can see it first. 
 
 From the default alerts queue, you can select **Filters** to see a **Filters** pane, from which you can specify a subset of the alerts. Here's an example.
 
@@ -60,7 +60,7 @@ You can filter alerts according to these criteria:
 
 To see the main alert page, select the name of the alert. Here's an example.
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="Example of the details page of an alert in the Microsoft 365 security center":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="Example of the details page of an alert in the Microsoft 365 Defender portal":::
 
 You can also select the **Open the main alert page** action from the **Manage alert** pane.
 
@@ -69,7 +69,7 @@ An alert page is composed of these sections:
 - Alert story, which is the chain of events and alerts related to this alert in chronological order
 - Summary details
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="Example of the details page of an alert in the Microsoft 365 security center":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="Example of the details page of an alert in the Microsoft 365 Defender portal":::
 
 Throughout an alert page, you can select the ellipses (**...**) beside any entity to see available actions, such as opening the alert page or linking the alert to another incident.
 
@@ -88,13 +88,11 @@ Microsoft Defender for Endpoint | `da` or `ed` for custom detection alerts <br>
 Microsoft Defender for Identity | `aa{GUID}` <br> Example: `aa123a456b-c789-1d2e-12f1g33h445h6i` 
 Microsoft Cloud App Security |`ca{GUID}` <br> Example: `ca123a456b-c789-1d2e-12f1g33h445h6i` 
 
-
-
 ### Analyze affected assets
 
 The **Actions taken** section has a list of impacted assets, such as mailboxes, devices, and users affected by this alert. 
 
-You can also select **View in action center** to view the **History** tab of the **Action center** in the Microsoft 365 security center. 
+You can also select **View in action center** to view the **History** tab of the **Action center** in the Microsoft 365 Defender portal. 
 
 ### Trace an alert's role in the alert story
 
@@ -137,7 +135,7 @@ From this pane, you can also perform these additional actions:
 
 Here's an example.
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-actions.png" alt-text="Example of the actions on an alert in the Microsoft 365 security center":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-actions.png" alt-text="Example of the actions on an alert in the Microsoft 365 Defender portal":::
 
 The list of additional actions depends on the type of alert.
 
