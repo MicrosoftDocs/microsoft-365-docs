@@ -26,8 +26,8 @@ The general setup and configuration process is as follows:
 - Set up your tenant environment
 - Assign roles and permissions
 - Onboard to Defender for Endpoint
-- Configure your next-generation protection
-- Configure your attack surface reduction capabilities
+- Configure next-generation protection
+- Configure attack surface reduction capabilities
  
 As soon as roles and permissions are assigned, your security team can get started using the Microsoft 365 Defender portal (see [Getting started with Defender for Endpoint Plan 1](mde-plan1-getting-started.md)).
  
@@ -65,9 +65,12 @@ To learn more, see [Set up Defender for Endpoint](production-deployment.md).
 
 ## Assign roles and permissions
 
-In order to access the Microsoft 365 Defender portal, configure settings for Defender for Endpoint, or to take response actions, appropriate permissions must be assigned. You can do this using [role-based access control](rbac.md) (RBAC). Microsoft recommends using the concept of [least privileged access](/azure/active-directory/develop/secure-least-privileged-access), so that users and applications are granted only the minimum level of access needed to perform required tasks. 
+In order to access the Microsoft 365 Defender portal, configure settings for Defender for Endpoint, or to take response actions, appropriate permissions must be assigned. You can do this using [role-based access control](rbac.md) (RBAC). 
 
-Defender for Endpoint leverages [built-in roles within Azure Active Directory](/azure/active-directory/roles/permissions-reference). Review the different roles that are available and choose the right role for each persona in Defender for Endpoint. 
+> [!TIP]
+> Microsoft recommends using the concept of [least privileged access](/azure/active-directory/develop/secure-least-privileged-access), so that users and applications are granted only the minimum level of access needed to perform required tasks. 
+
+Defender for Endpoint leverages [built-in roles within Azure Active Directory](/azure/active-directory/roles/permissions-reference). Review the different roles that are available, and then choose an appropriate role for each persona in Defender for Endpoint. 
 
 To learn more, see [Prepare for your Defender for Endpoint deployment](prepare-deployment.md).
 
