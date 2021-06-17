@@ -156,7 +156,7 @@ The Microsoft 365 Defender portal ([https://security.microsoft.com](https://secu
 - The **Action center** lists remediation actions that were taken. For example, if a file is sent to quarantine, or a URL is blocked, each action is listed in the Action center on the History tab.
 - The **Reports** section includes reports that show threats detected and their status. 
 
-To learn more, see the Getting started section in this guide.
+To learn more, see [Get started with Microsoft Defender for Endpoint Plan 1 (preview)](mde-plan1-getting-started.md).
 
 ### APIs[Get started with Microsoft Defender for Endpoint Plan 1 (preview)](mde-plan1-getting-started.md)
 
