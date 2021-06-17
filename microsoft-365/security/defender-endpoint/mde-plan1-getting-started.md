@@ -1,5 +1,5 @@
 ---
-title: Getting started with Microsoft Defender for Endpoint Plan 1 (preview)
+title: Get started with Microsoft Defender for Endpoint Plan 1 (preview)
 description: Get started using Defender for Endpoint Plan 1. Learn how to use the security center, manage alerts and devices, and view reports. 
 search.appverid: MET150 
 author: denisebmsft
@@ -15,7 +15,7 @@ ms.reviewer:
 f1.keywords: NOCSH
 ---
 
-# Getting started with Defender for Endpoint Plan 1 (preview)
+# Get started with Microsoft Defender for Endpoint Plan 1 (preview)
 
 After Defender for Endpoint Plan 1 (currently in preview) is set up and configured, and your organization’s devices are onboarded, your next step is to visit the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). There, you can view information about detected threats, manage your alerts and incidents, take any needed action on detected threats, and manage devices. The following sections describe how to get started using Defender for Endpoint:
 
