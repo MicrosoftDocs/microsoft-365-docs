@@ -13,7 +13,7 @@
 ### [Defender for Endpoint Plan 1 (preview)](defender-endpoint-plan-1.md)
 #### [Compare Defender for Endpoint Plan 1 (preview) to Plan 2](defender-endpoint-plan-1-2.md)
 #### [Defender for Endpoint Plan 1 setup]()
-#### [Getting started with Defender for Endpoint Plan 1]([Getting started with Defender for Endpoint Plan 1](mde-plan1-getting-started.md))
+#### [Getting started with Defender for Endpoint Plan 1](mde-plan1-getting-started.md)
 
 ## [Evaluate capabilities](evaluation-lab.md)
 
