@@ -65,7 +65,7 @@ The default theme is the first theme displayed.
 
 You can create up to four additional group themes.
 
-1. On the **General** page, enter a name for your theme.
+1. On the **General** page, enter a name for your new theme.
 
 2. Under **Groups**, you can select up to 5 Microsoft 365 Groups that can see your group theme, instead of using the default theme. You can also prevent users from overriding their theme and show the user's display name.
 
