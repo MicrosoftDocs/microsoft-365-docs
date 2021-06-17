@@ -97,7 +97,7 @@ If there are active alerts on the device, you can view them in the flyout pane. 
 
 In Defender for Endpoint Plan 1, several reports are available in the Microsoft 365 Defender portal. To access your reports, follow these steps:
 
-1. Go to the Microsoft 365 Defender portal and sign in. 
+1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in. 
 
 2. In the navigation bar, choose Reports. 
 
