@@ -479,12 +479,18 @@
               href: archive-17a-4-investedge-data.md
             - name: LiveEngage DataParser (preview)
               href: archive-17a-4-liveengage-data.md
+            - name: Quip DataParser (preview)
+              href: archive-17a-4-quip-data.md
             - name: Refinitiv Messenger DataParser (preview)
               href: archive-17a-4-refinitiv-messenger-data.md
+            - name: ServiceNow DataParser (preview)
+              href: archive-17a-4-servicenow-data.md
             - name: Slack DataParser (preview)
               href: archive-17a-4-slack-data.md
             - name: Symphony DataParser (preview)
               href: archive-17a-4-symphony-data.md
+            - name: Webex Teams (preview)
+              href: archive-17a-4-webex-teams-data.md
         - name: Work with a partner to archive third-party data
           href: work-with-partner-to-archive-third-party-data.md
         - name: Search for third-party data
