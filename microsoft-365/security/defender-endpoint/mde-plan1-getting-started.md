@@ -17,7 +17,11 @@ f1.keywords: NOCSH
 
 # Get started with Microsoft Defender for Endpoint Plan 1 (preview)
 
-After Defender for Endpoint Plan 1 (currently in preview) is set up and configured, and your organization’s devices are onboarded, your next step is to visit the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). There, you can view information about detected threats, manage your alerts and incidents, take any needed action on detected threats, and manage devices. The following sections describe how to get started using Defender for Endpoint:
+After Defender for Endpoint Plan 1 (currently in preview) is set up and configured, and your organization’s devices are onboarded, your next step is to visit the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). 
+
+In the portal, you can view information about detected threats, manage your alerts and incidents, take any needed action on detected threats, and manage devices. 
+
+The following sections describe how to get started using Defender for Endpoint:
 
 - [The Microsoft 365 Defender portal](#the-microsoft-365-defender-portal)
 - [Viewing and managing incidents & alerts](#viewing-and-managing-incidents--alerts)
