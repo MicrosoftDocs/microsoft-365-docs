@@ -21,12 +21,12 @@ As you use Defender for Endpoint Plan 1 (preview) in your organization, your sec
 
 ## Manage security intelligence and product updates
 
-Keeping Microsoft Defender Antivirus up to date is critical to protecting against new malware and attack techniques. Microsoft releases regular updates. There are two kinds of updates to consider: 
+Keeping Microsoft Defender Antivirus up to date is critical to protecting against new malware and attack techniques. Microsoft releases regular updates for security intelligence, antivirus, and antimalware protection. Updates are organized into two categories: 
 
 - Security intelligence updates
 - Product updates 
 
-To learn more, see [Manage antivirus updates](manage-updates-baselines-microsoft-defender-antivirus.md).
+You can manage your security intelligence and product updates using one of several methods. To learn more, see [Manage antivirus updates](manage-updates-baselines-microsoft-defender-antivirus.md).
 
 ## Fine-tune and adjust Defender for Endpoint
 
