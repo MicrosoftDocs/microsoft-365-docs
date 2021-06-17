@@ -99,26 +99,29 @@ In Defender for Endpoint Plan 1, several reports are available in the Microsoft 
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in. 
 
-2. In the navigation bar, choose Reports. 
+2. In the navigation bar, choose **Reports**. 
 
-3. Select a report in the list. 
+3. Select a report in the list. The main reports you’ll see and use include the following:
 
-The main reports you’ll see and use include the following:
+   - Threat protection report
+   - Device health report
+   - Web protection report
 
-- Threat protection report
-- Device health report
-- Web protection report
-
-For more information, see Threat protection reports. 
+For more information, see [Threat protection reports](threat-protection-reports.md). 
 
 ### Threat protection report
 
-To access your Threat protection report, in the Microsoft 365 Defender portal, choose Reports, and then choose Threat protection. The Threat Protection report shows alert trends, status, categories, and more. Views are arranged in two columns: Alert trends and Alert status, as shown in figure 9.
+To access your Threat protection report, in the Microsoft 365 Defender portal, choose **Reports**, and then choose **Threat protection**. The Threat Protection report shows alert trends, status, categories, and more. Views are arranged in two columns: **Alert trends** and **Alert status**, as shown in the following image:
  
-Figure 9. Threat protection report
+:::image type="content" source="../../media/mde-p1/threatprotectionreport.PNG" alt-text="Threat protection report":::
 
-Scroll down to see all the views in each list. By default, the views in the Alert trends column display data for the past 30 days, but you can set a view to display data for the last three months, last six months, or a custom time range (up to 180 days). The views in the Alert status column are a snapshot for the previous business day. 
-To learn more, see Threat protection report in Defender for Endpoint.
+Scroll down to see all the views in each list. 
+
+- By default, the views in the **Alert trends** column display data for the past 30 days, but you can set a view to display data for the last three months, last six months, or a custom time range (up to 180 days). 
+- The views in the **Alert status** column are a snapshot for the previous business day. 
+
+> [!TIP]
+> To learn more, see [Threat protection report in Defender for Endpoint](threat-protection-reports.md).
 
 ### Device health report
 
