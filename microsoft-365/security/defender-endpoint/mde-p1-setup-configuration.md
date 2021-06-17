@@ -73,15 +73,18 @@ To learn more, see [Prepare for your Defender for Endpoint deployment](prepare-d
 
 ## Onboard to Defender for Endpoint
 
-When you’re ready to onboard your organization’s devices and users to Defender for Endpoint, follow the guidance here: Onboard to the Defender for Endpoint service.
-Then, proceed to configure next-generation protection settings and configure your attack surface reduction rules. 
+When you’re ready to onboard your organization’s devices and users to Defender for Endpoint, follow the guidance in [Onboard to the Defender for Endpoint service](onboarding.md).
+
+Then, proceed to [configure next-generation protection settings](#configure-next-generation-protection) and [configure your attack surface reduction rules](#configure-attack-surface-reduction-rules). 
+
 Defender for Endpoint enables you to edit and fine-tune your settings as needed.
 
 ## Configure next-generation protection
 
-We recommend using Microsoft Endpoint Manager to manage your organization’s devices and security settings, as shown in figure 2.
+We recommend using [Microsoft Endpoint Manager](/mem) to manage your organization’s devices and security settings, as shown in the following image:
  
-Figure 2. Microsoft Endpoint Manager admin center
+
+
 Follow these steps to review and edit your next-generation protection settings.
 1.	Go to the Microsoft Endpoint Manager admin center (https://endpoint.microsoft.com) and sign in.
 2.	Select Endpoint security > Antivirus, and then select an existing policy. (If you don’t have an existing policy, create a new policy.)
