@@ -2,8 +2,6 @@
 
 ## [Overview]()
 ### [What is Microsoft Defender for Endpoint?](microsoft-defender-endpoint.md)
-### [Defender for Endpoint Plan 1 (preview)](defender-endpoint-plan-1.md)
-### [Compare Defender for Endpoint Plan 1 (preview) to Plan 2](defender-endpoint-plan-1-2.md)
 ### [Minimum requirements](minimum-requirements.md)
 ### [What's new in Microsoft Defender for Endpoint?](whats-new-in-microsoft-defender-atp.md)
 ### [Preview features](preview.md)
@@ -12,6 +10,10 @@
 ### [Portal overview](portal-overview.md)
 ### [Microsoft Defender for Endpoint for US Government customers](gov.md)
 ### [Microsoft Defender for Endpoint on non-Windows platforms](non-windows.md)
+### [Defender for Endpoint Plan 1 (preview)](defender-endpoint-plan-1.md)
+#### [Compare Defender for Endpoint Plan 1 (preview) to Plan 2](defender-endpoint-plan-1-2.md)
+#### [Defender for Endpoint Plan 1 setup]()
+#### [Getting started with Defender for Endpoint Plan 1]()
 
 ## [Evaluate capabilities](evaluation-lab.md)
 
@@ -38,7 +40,6 @@
 #### [Use Configuration Manager](manage-atp-post-migration-configuration-manager.md)
 #### [Use Group Policy](manage-atp-post-migration-group-policy-objects.md)
 #### [Use PowerShell, WMI, or MPCmdRun.exe](manage-atp-post-migration-other-tools.md)
-
 
 ## [Configure and onboard devices]()
 ### [Microsoft Defender for Endpoint on Windows and Windows Server]()
