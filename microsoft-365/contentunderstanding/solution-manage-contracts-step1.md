@@ -196,8 +196,8 @@ To apply your model to a SharePoint document library:
 
 7. Under **Settings** > **Library settings**:
 
-- Add a column named **Status** and select **Choice** as the column type.
-- Apply the **In review**, **Approved**, and **Rejected** values.
+   - Add a column named **Status** and select **Choice** as the column type.
+   - Apply the **In review**, **Approved**, and **Rejected** values.
 
 After you apply the model to the document library, you can begin uploading documents to the site and see the results.
 
