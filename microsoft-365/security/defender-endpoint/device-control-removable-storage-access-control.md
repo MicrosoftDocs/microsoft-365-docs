@@ -321,7 +321,7 @@ DeviceEvents
 ## Frequently asked questions
 **What is the removable storage media limitation for the maximum number of USBs?**
 
-Internally we have validated one USB group with 100,000 media - up to 7 MB in size. The policy works fine in both Intune and GPO without performance issues.
+We have validated one USB group with 100,000 media - up to 7 MB in size. The policy works in both Intune and GPO without performance issues.
 
 **Why does the policy not work?**
 
