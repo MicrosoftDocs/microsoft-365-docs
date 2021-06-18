@@ -192,7 +192,6 @@ When you select multiple quarantined messages in the list (up to 100), the **Bul
 When you're finished, click **Close**.
 
 ## Use the Microsoft 365 Defender portal to manage quarantined files in Defender for Office 365
-
 > [!NOTE]
 > The procedures for quarantined files in this section are available only to Microsoft Defender for Office 365 Plan 1 and Plan 2 subscribers.
 
@@ -201,6 +200,7 @@ In organizations with Defender for Office 365, admins can manage quarantined fil
 ### View quarantined files
 
 1. In the Microsoft 365 Defender portal, go to **Email & collaboration** \> **Review** \> **Quarantine**.
+
 
 2. On the **Quarantine** page, change **View quarantined** to the value **files**. You can sort on a field by clicking on an available column header.
 
