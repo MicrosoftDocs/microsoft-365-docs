@@ -31,6 +31,7 @@ ms.technology: m365d
 **Applies to:**
 - Microsoft 365 Defender
 
+This article is [Step 2 of 2](eval-defender-identity-overview.md) in the process of setting up the evaluation environment for Microsoft Defender for Identity. For more information about this process, see the [overview article](eval-defender-identity-overview.md).
 
 Intro
 
@@ -97,3 +98,8 @@ For instructions on how to do this, see [Configure Microsoft Defender for Identi
 
 ## Next steps
 
+Step 3 of 3: [Microsoft Pilot Defender for Identity](eval-defender-identity-pilot.md)
+
+Return to the overview for [Evaluate Microsoft Defender for Identity](eval-defender-identity-overview.md)
+
+Return to the overview for [Evaluate and pilot Microsoft 365 Defender](../office-365-security/defender/eval-overview.md) 

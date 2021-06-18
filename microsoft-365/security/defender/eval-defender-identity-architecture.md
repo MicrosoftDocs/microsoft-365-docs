@@ -95,7 +95,7 @@ Defender for Identity requires some prerequisite work to ensure that your on-pre
 
 ## Next steps
 
-Step 2 of 2: [Enable the evaluation environment Defender for Identity](eval-defender-identity-enable-eval.md)
+Step 2 of 3: [Enable the evaluation environment Defender for Identity](eval-defender-identity-enable-eval.md)
 
 Return to the overview for [Evaluate Microsoft Defender for Identity](eval-defender-identity-overview.md)
 
