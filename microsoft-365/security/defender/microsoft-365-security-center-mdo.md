@@ -29,7 +29,7 @@ ms.technology: m365d
 
 ## Quick reference
 
-The table below lists the changes in navigation between the Office 365 Security & Compliance Center and the Microsoft 365 Defender.
+The table below lists the changes in navigation between the Office 365 Security & Compliance Center and Microsoft 365 Defender.
 
 <br>
 

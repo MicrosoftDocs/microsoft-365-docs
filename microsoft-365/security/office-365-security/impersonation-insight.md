@@ -49,6 +49,7 @@ You can use the impersonation insight in the Microsoft 365 Defender portal to qu
 - You open the Microsoft 365 Defender portal at <https://security.microsoft.com>. To go directly to the impersonation insight on the **Anti-phishing** page, use <https://security.microsoft.com/antiphishing>. To go directly to the **Impersonation insight** page, use <https://security.microsoft.com/impersonationinsight>.
 
 - You need to be assigned permissions in the Microsoft 365 Defender portal before you can do the procedures in this article:
+
   - **Organization Management**
   - **Security Administrator**
   - **Security Reader**
