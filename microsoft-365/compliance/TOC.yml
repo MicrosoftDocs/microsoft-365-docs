@@ -487,10 +487,14 @@
               href: archive-17a-4-servicenow-data.md
             - name: Slack DataParser (preview)
               href: archive-17a-4-slack-data.md
+            - name: SQL Database DataParser (preview)
+              href: archive-17a-4-sql-database-data.md
             - name: Symphony DataParser (preview)
               href: archive-17a-4-symphony-data.md
-            - name: Webex Teams (preview)
+            - name: Webex Teams DataParser (preview)
               href: archive-17a-4-webex-teams-data.md
+            - name: Zoom DataParser (preview)
+              href: archive-17a-4-zoom-data.md
         - name: Work with a partner to archive third-party data
           href: work-with-partner-to-archive-third-party-data.md
         - name: Search for third-party data
