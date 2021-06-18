@@ -47,7 +47,9 @@
             - name: Review architecture requirements
               href: eval-defender-identity-architecture.md
             - name: Enable the evaluation 
-              href: eval-defender-identity-enable-eval.md                      
+              href: eval-defender-identity-enable-eval.md       
+            - name: Pilot Defender for Identity
+              href: eval-defender-identity-pilot.md                      
         - name: Defender for Office 365
           items:
             - name: Overview
