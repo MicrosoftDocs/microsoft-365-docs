@@ -1,6 +1,6 @@
 ---
 title: Configure Conditional Access in Microsoft Defender for Endpoint
-description: Learn about steps that you need to do in Intune, Microsoft Defender Security Center, and Azure to implement Conditional access
+description: Learn about steps that you need to do in Intune, Microsoft 365 Defender, and Azure to implement Conditional access
 keywords: conditional access, conditional, access, device risk, risk level, integration, intune integration
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -45,10 +45,10 @@ You need to make sure that all your devices are enrolled in Intune. You can use 
 
 
 
-There are steps you'll need to take in Microsoft Defender Security Center, the Intune portal, and Azure AD portal.
+There are steps you'll need to take in Microsoft 365 Defender, the Intune portal, and Azure AD portal.
 
 It's important to note the required roles to access these portals and implement Conditional access:
-- **Microsoft Defender Security Center** - You'll need to sign into the portal with a global administrator role to turn on the integration.
+- **Microsoft 365 Defender** - You'll need to sign into the portal with a global administrator role to turn on the integration.
 - **Intune** - You'll need to sign in to the portal with security administrator rights with management permissions. 
 - **Azure AD portal** - You'll need to sign in as a global administrator, security administrator, or Conditional Access administrator.
 
@@ -57,7 +57,7 @@ It's important to note the required roles to access these portals and implement 
 > You'll need a Microsoft Intune environment, with Intune managed and Azure AD joined Windows 10 devices.
 
 Take the following steps to enable Conditional Access:
-- Step 1: Turn on the Microsoft Intune connection from Microsoft Defender Security Center
+- Step 1: Turn on the Microsoft Intune connection from Microsoft 365 Defender
 - Step 2: Turn on the Defender for Endpoint integration in Intune
 - Step 3: Create the compliance policy in Intune
 - Step 4: Assign the policy 

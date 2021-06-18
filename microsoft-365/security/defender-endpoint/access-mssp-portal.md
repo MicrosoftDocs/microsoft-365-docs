@@ -1,6 +1,6 @@
 ---
-title: Access the Microsoft Defender Security Center MSSP customer portal
-description: Access the Microsoft Defender Security Center MSSP customer portal
+title: Access the Microsoft 365 Defender MSSP customer portal
+description: Access the Microsoft 365 Defender MSSP customer portal
 keywords: managed security service provider, mssp, configure, integration
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,7 +18,7 @@ ms.topic: article
 ms.technology: mde
 ---
 
-# Access the Microsoft Defender Security Center MSSP customer portal
+# Access the Microsoft 365 Defender MSSP customer portal
 
 **Applies to:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -39,7 +39,7 @@ ms.technology: mde
 >[!NOTE] 
 >These set of steps are directed towards the MSSP. 
 
-By default, MSSP customers access their Microsoft Defender Security Center tenant through the following URL: `https://securitycenter.windows.com`.
+By default, MSSP customers access their Microsoft 365 Defender tenant through the following URL: `https://securitycenter.windows.com`.
  
 
 MSSPs however, will need to use a tenant-specific URL in the following format:  `https://securitycenter.windows.com?tid=customer_tenant_id` to access the MSSP customer portal. 
