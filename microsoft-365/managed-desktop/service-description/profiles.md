@@ -1,5 +1,5 @@
 ---
-title: Understand device profiles 
+title: Understand device profiles
 description:  The various profiles that admins can assign to devices
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
@@ -39,18 +39,23 @@ At the top are your own modifications, such as network details or applications. 
 
 The following table summarizes the settings and their default values for each setting configured by device profiles. (Behind the scenes, these settings are configured with OMA-URIs by using Custom Configuration Profiles in Microsoft Endpoint Manager.)
 
-| Feature | Sensitive Data | Power User | Standard |
-|-----------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------|------------------------|-----------------------|
-| **Block External Storage​**                                                                                                                               | Yes​                       | Yes​                   | No​                   |
-| **[Cloud Block Level](https://docs.microsoft.com/graph/api/resources/intune-deviceconfig-defendercloudblockleveltype)​** | High​                      | High​                  | High​                 |
-| **Disable Microsoft Accounts​**                                                                                                                           | Yes​                       | Yes​                   | No​                   |
-| **Disable personal OneDrive​**                                                                                                                            | Yes​                       | Yes​                   | No​                   |
-| **Switch to secure desktop for elevation​**                                                                                                               | No​                        | Yes​                   | No​                   |
-| **Microsoft Defender for Endpoint Device Tag​**                                                                                                           | M365Managed-SensitiveData​ | M365Managed-PowerUser​ | M365Managed-Standard​ |
-| **Admin on the device?​**                                                                                                                                 | No​                        | Yes​                   | No​                   |
-| **Autopilot Profile**                                                                                                                                     | MMD Standard               | MMD Power User         | MMD Standard          |
-| **AppLocker​**                                                                                                                                            | Yes​                       | No​                    | No​                   |
-| **Block Public Store​**                                                                                                                                   | Yes​                       | Yes​                   | No​                   |
+<br>
+
+****
+
+|Feature|Sensitive Data|Power User|Standard|
+|---|:---:|:---:|:---:|
+|**Block External Storage**|Yes|Yes|No|
+|**[Cloud Block Level](/graph/api/resources/intune-deviceconfig-defendercloudblockleveltype)**|High|High|High|
+|**Disable Microsoft Accounts**|Yes|Yes|No|
+|**Disable personal OneDrive**|Yes|Yes|No|
+|**Switch to secure desktop for elevation**|No|Yes|No|
+|**Microsoft Defender for Endpoint Device Tag**|M365Managed-SensitiveData|M365Managed-PowerUser|M365Managed-Standard|
+|**Admin on the device?**|No|Yes|No|
+|**Autopilot Profile**|MMD Standard|MMD Power User|MMD Standard|
+|**AppLocker**|Yes|No|No|
+|**Block Public Store**|Yes|Yes|No|
+|
 
 Each device profile also involves these items:
 

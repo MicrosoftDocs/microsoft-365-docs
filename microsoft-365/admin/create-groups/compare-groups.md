@@ -84,7 +84,7 @@ Shared mailboxes include a calendar that can be used for collaboration.
 
 Users with permissions to the group mailbox can send as or send on behalf of the mailbox email address if the administrator has given that user permissions to do that. This is particularly useful for help and support mailboxes because users can send emails from "Contoso Support" or "Building A Reception Desk."
 
-Currently it's not possible to migrate a shared mailbox to a Microsoft 365 group. Is this something you want? Let us know. **[Vote here](https://go.microsoft.com/fwlink/?linkid=871518)**.
+It's not possible to migrate a shared mailbox to a Microsoft 365 group. 
 
 ## Related content
 

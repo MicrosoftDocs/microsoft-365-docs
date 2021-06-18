@@ -4,23 +4,20 @@ description: Enable and configure Microsoft Defender Antivirus real-time protect
 keywords: antivirus, real-time protection, rtp, machine-learning, behavior monitoring, heuristics
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
+ms.technology: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
+ms.topic: article
 ms.date: 12/16/2019
-ms.reviewer: 
 manager: dansimp
 ms.custom: nextgen
-ms.technology: mde
-ms.topic: article
 ---
 
 # Enable and configure Microsoft Defender Antivirus always-on protection in Group Policy
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Applies to:**
