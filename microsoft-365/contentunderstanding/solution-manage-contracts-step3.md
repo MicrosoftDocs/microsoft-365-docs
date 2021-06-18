@@ -122,7 +122,7 @@ The following code is the JSON used for this step in the Power Automate flow.
 ```
 
 
-## Conditional
+## Conditional context
 
 In your flow, next you need to create a condition in which your contract will be either  approved or rejected.
 
@@ -147,6 +147,15 @@ When a contract has been approved, the following things occur:
 - In the flow, you create the following item to move approved contracts to the **For Payout** tab.
 
    ![Flow item to move to Pay Out.](../media/content-understanding/ready-for-payout.png)
+
+    To get the expressions for the information needed from the Teams card, use the values shown in the following table.
+ 
+    |Name     |Expression |
+    |---------|-----------|
+    | Approval state  | body('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response')?['submitActionId']         |
+    | Approved by     | body('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response')?['responder']['displayName']        |
+    | Approval date     | body('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response')?['responseTime']         |
+    | Comment     | body('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response')?['data']['acComments']         |
 
 - An adaptive card stating that the contract has been approved is created and posted to the Contract Management channel.
 
