@@ -1,5 +1,5 @@
 ---
-title: "Step 2. Use Microsoft Teams to create your contract management channel"
+title: Step 2. Use Microsoft Teams to create your contract management channel
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -11,7 +11,7 @@ ms.prod: microsoft-365-enterprise
 search.appverid:
 localization_priority: None
 ROBOTS:
-description: "Learn how to use Microsoft Teams to create your contract management channel by using a Microsoft 365 solution."
+description: Learn how to use Microsoft Teams to create your contract management channel by using a Microsoft 365 solution.
 ---
 
 # Step 2. Use Microsoft Teams to create your contract management channel
@@ -26,7 +26,8 @@ When your organization sets up a contracts management solution, you need a centr
 
      ![Posts tab.](../media/content-understanding/posts.png)
 
-- **Have a location for members to see approved contracts to know when they can be submitted for payment.** In Teams, you can create a **For Payment** channel that will list all contracts that will need to be submitted to payment. You can easily extend this solution to instead write this information directly to a third-party financial application (for example, Dynamics CRM).
+- **Have a location for members to see approved contracts to know when they can be submitted for payment.** In Teams, you can create a **For Payout** tab that will list all contracts that will need to be submitted to payment. In the SharePoint document library, you'll need to create a **For Payout** list and include columns for **Client**, **Contractor**, and **Fee amount**. You can easily extend this solution to instead write this information directly to a third-party financial application (for example, Dynamics CRM). 
+
 
 ## Attach your SharePoint document library to the Contracts tab
 
