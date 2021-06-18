@@ -35,7 +35,7 @@ Before enabling Microsoft Defender for Identity, be sure you understand the arch
 
 Microsoft Defender for Identity uses machine learning and behavioral analytics to identify attacks across your on-premises network along with detecting and proactively preventing user sign-in risks associated with cloud identities. For more information, see [What is Microsoft Defender for Identity?](/defender-for-identity/what-is)
 
-Defender for Identity protects your on-premises Active Directory users and/or users synced to your Azure Active Directory. To protect an environment made up of only AAD users, see [Azure AD Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection).
+Defender for Identity protects your on-premises Active Directory users and/or users synced to your Azure Active Directory (Azure AD). To protect an environment made up of only Azure AD users, see [Azure AD Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection).
 
 ## Understand the architecture
 
@@ -43,15 +43,23 @@ The following diagram illustrates the baseline architecture for Defender for Ide
 
 ![Architecture for Microsoft Defender for Identity](../../media/defender/m365-defender-identity-architecture.png)
 
+In this illustration:
+- Sensors installed on AD domain controllers parse logs and network traffic and send them to Microsoft Defender for Identity for analysis and reporting.
+-  Sensors can also parse Active Directory Federation Services (AD FS) when Azure AD is configured to use federated authentication (dotted line in illustration). 
+- Microsoft Defender for Identity shares signals to Microsoft 365 Defender for extended detection and response (XDR).
+
+<!--
+
 The following table describes this illustration.
 
 
 |Call-out  |Description  |
 |---------|---------|
-|1     |  Sensors installed on AD domain controllers parse logs and network traffic and send them to Microsoft Defender for Identity for analysis and reporting. Sensors can also parse Active Directory Federation Services (AD FS) when Azure is configured to use federated authentication. |
+|1     |  |
 |2     |  Microsoft Defender for Identity aggregates and analyzes Azure AD and sensor data for monitoring, investigating, and responding to authentication and authorization signals. |
 |3     |Microsoft Defender for Identity shares signals to the Microsoft 365 Security Center. |
 | | |
+-->
 
 Defender for Identity sensors can be directly installed on the following servers:
 
