@@ -124,7 +124,7 @@ The following code is the JSON used for this step in the Power Automate flow.
 
 ## Conditional context
 
-In your flow, next you need to create a condition in which your contract will be either  approved or rejected.
+In your flow, next you need to create a condition in which your contract will be either  [approved](#if-the-contract-is-approved) or [rejected](#if-the-contract-is-rejected).
 
 ![Conditional.](../media/content-understanding/condition.png)
 
