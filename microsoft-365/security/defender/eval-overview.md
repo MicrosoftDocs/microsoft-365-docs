@@ -102,7 +102,6 @@ In this illustration:
 -->
 
 Additional optional architecture components not included in this illustration:
-- Identity provisioning and federated authentication can be integrated with on-premises Active Directory Domain Services by deploying Azure Active Directory Connect and/or Active Directory Federation Services. These are monitored using Microsoft Defender for Identity. 
 - Detailed signal data from all Microsoft Defender components can be integrated into Azure Sentinel and combined with other logging sources to offer full SIEM and SOAR capabilities and insights.   
 
 ## The evaluation process
