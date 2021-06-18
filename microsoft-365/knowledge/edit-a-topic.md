@@ -89,6 +89,23 @@ Knowledge managers can also edit topics directly from the Manage Topics page by 
 
     You can change a suggested file or page to a pinned file or page by selecting the pinned icon.
 
+7.  In the **Pinned sites** section, you can add or “pin” a site that is associated to the topic. 
+
+    ![Screenshot showing the Pinned sites section.](../media/knowledge-management/pinned-sites-section.png)
+
+    To add a new site, select **Add** and then either search for the site, or select it from your list of Frequent or Recent sites.
+    
+    ![Screenshot showing Add or remove a pinned site section.](../media/knowledge-management/add-or-remove-pinned-sites.png)
+
+8. The **Suggested sites** section shows the sites that AI suggests to be associated to the topic. 
+
+   ![Screenshot of Suggested sites section](../media/knowledge-management/suggested-sites-section.png)  
+
+    You can change a suggested site to a pinned site by selecting the pinned icon.
+
+
+<!---
+
 7.  The <b>Related sites</b> section shows sites that have information about the topic. 
 
     ![Related sites section](../media/knowledge-management/related-sites.png)</br>
@@ -117,6 +134,7 @@ Knowledge managers can also edit topics directly from the Manage Topics page by 
 
    ![Confirm remove](../media/knowledge-management/remove-related-confirm.png)</br> 
 
+--->
 
 9. You can also add static items to the page — such as text, images, or links - by selecting the canvas icon, which you can find below the short description. Selecting it will open the SharePoint toolbox from which you can choose the item you want to add to the page.
 
