@@ -156,6 +156,10 @@ When a contract has been approved, the following things occur:
     | Approved by     | body('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response')?['responder']['displayName']        |
     | Approval date     | body('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response')?['responseTime']         |
     | Comment     | body('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response')?['data']['acComments']         |
+    
+    The following shows an example of using the formula box in Power Automate to write an expression.
+
+   ![Screenshot in Power Automate showing an expression formula.](../media/content-understanding/expression-formula-power-automate.png)    
 
 - An adaptive card stating that the contract has been approved is created and posted to the Contract Management channel.
 
