@@ -52,7 +52,9 @@ Here's a quick overview of how alert policies work and the alerts that are trigg
 
 An alert policy consists of a set of rules and conditions that define the user or admin activity that generates an alert, a list of users who trigger the alert if they perform the activity, and a threshold that defines how many times the activity has to occur before an alert is triggered. You also categorize the policy and assign it a severity level. These two settings help you manage alert policies (and the alerts that are triggered when the policy conditions are matched) because you can filter on these settings when managing policies and viewing alerts in the compliance center. For example, you can view alerts that match the conditions from the same category or view alerts with the same severity level.
 
-To view and create alert policies, go to <https://compliance.microsoft.com> and then select **Policies** > **Alert** > **Alert policies**. Alternative, you can go directly to <https://compliance.microsoft.com/alertpolicies>.
+**To view and create alert policies:**
+
+Go to <https://compliance.microsoft.com> and then select **Policies** > **Alert** > **Alert policies**. Alternatively, you can go directly to <https://compliance.microsoft.com/alertpolicies>.
 
 ![In the compliance center, select Policies,and under Alert, select Alert policies to view and create alert policies](../media/09ebd451-8e84-44e1-aefc-63e70bba4d97.png)
 
