@@ -86,7 +86,7 @@ In this illustration:
 - Microsoft Defender for Identity gathers signals from servers running Active Directory Federated Services (AD FS) and on-premises Active Directory Domain Services (AD DS). It uses these signals to protect your hybrid identity environment, including protecting against hackers that use compromised accounts to move laterally across workstations in the on-premises environment. 
 - Microsoft Defender for Endpoint gathers signals from and protects devices used by your organization. 
 - Microsoft Cloud App Security gathers signals from your organization's use of cloud apps and protects data flowing between your environment and these apps, including both sanctioned and unsanctioned cloud apps. 
-- Azure AD Identity Protection evaluates risk data from billions of login attempts and uses this data to evaluate the risk of each login to your environment. This data is used by Azure AD to allow or prevent account access, depending on how Conditional Access policies are configured. Azure AD Identity Protection is licensed separately from Microsoft 365 Defender. It is included with Azure Active Directory Premium P2.  
+- Azure AD Identity Protection evaluates risk data from billions of sign-in attempts and uses this data to evaluate the risk of each sign-in to your environment. This data is used by Azure AD to allow or prevent account access, depending on how Conditional Access policies are configured. Azure AD Identity Protection is licensed separately from Microsoft 365 Defender. It is included with Azure Active Directory Premium P2.  
 
 <!--
 |  |  |
@@ -102,6 +102,7 @@ In this illustration:
 -->
 
 Additional optional architecture components not included in this illustration:
+
 - Detailed signal data from all Microsoft Defender components can be integrated into Azure Sentinel and combined with other logging sources to offer full SIEM and SOAR capabilities and insights.   
 
 ## The evaluation process
