@@ -24,18 +24,13 @@ description: "Microsoft 365 offers three eDiscovery tools that you can use to se
 
 # Microsoft 365 eDiscovery solutions
 
-Electronic discovery, or eDiscovery, is the process of identifying and delivering electronic information that can be used as evidence in legal cases. You can use eDiscovery tools in Microsoft 365 to search for content in Exchange Online, Microsoft 365 Groups, Microsoft Teams, SharePoint Online, and OneDrive for Business sites, and Yammer teams. You can search mailboxes and sites in the same eDiscovery search by using the Content search tool. And you can use Core eDiscovery cases to identify, hold, and export content found in mailboxes and sites. If your organization has an Office 365 E5 or Microsoft 365 E5 subscription (or related E5 add-on subscriptions), you can further manage custodians and analyze content by using the Advanced eDiscovery solution in Microsoft 365.
-  
-## Microsoft 365 eDiscovery solutions
+Electronic discovery, or eDiscovery, is the process of identifying and delivering electronic information that can be used as evidence in legal cases. You can use eDiscovery tools in Microsoft 365 to search for content in Exchange Online, OneDrive for Business, SharePoint Online, Microsoft Teams, Microsoft 365 Groups, and Yammer teams. You can search mailboxes and sites in the same eDiscovery search, and then export the search results. Additionally, you can use Core eDiscovery cases to identify, hold, and export content found in mailboxes and sites. If your organization has an Office 365 E5 or Microsoft 365 E5 subscription (or related E5 add-on subscriptions), you can further manage custodians and analyze content by using the feature-rich Advanced eDiscovery solution in Microsoft 365.
 
-Microsoft 365 provides three eDiscovery solutions:
-  
-- [Content search](#content-search)
+## eDiscovery solutions
 
-- [Core eDiscovery](#core-ediscovery)
+Microsoft 365 provides three eDiscovery solutions: Content search, Core eDiscovery, and Advanced eDiscovery.
 
-- [Advanced eDiscovery](#advanced-ediscovery)
-
+![Key capabilities of Microsoft 365 eDiscovery tools](..\media\m365-ediscovery-solution-graphic.png)
 
 ## Comparison of key capabilities
 
@@ -62,13 +57,13 @@ Here's description of the key eDiscovery capabilities.
 
 - **Place content locations on legal hold**. Preserve content relevant to your investigation by placing a legal hold on the content locations in a case. This lets you secure electronically stored information from inadvertent (or intentional) deletion during your investigation.
 
-- **Custodian management**. Manage the people that you've identified as persons of interest in the case (called *custodians*) and other data sources that may not be associated with a custodian. When you add custodians and non-custodial data sources to a case, you can place a legal hold on these data sources, communicate with custodians by using the legal hold notification process, and search custodian and non-custodial data sources to collect content relevant to the case. Additionally, when you add custodial and non-custodian data sources to a case, the assoicated content location are re-indexed (in a process called *Advanced indexing*) so that any content that was deemed as partially indexed is reprocessed to make it fully searchable.
+- **Custodian management**. Manage the people that you've identified as persons of interest in the case (called *custodians*) and other data sources that may not be associated with a custodian. When you add custodians and non-custodial data sources to a case, you can place a legal hold on these data sources, communicate with custodians by using the legal hold notification process, and search custodian and non-custodial data sources to collect content relevant to the case.
 
 - **Legal hold notifications**. Manage the process of communicating with case custodians. A legal hold notification instructs custodians to preserve content that's relevant to the case. You can track the notices that have been received, read, and acknowledged by custodians. The communications workflow in Advanced eDiscovery allows you to create and send initial notifications, reminders, and escalations if custodians fail to acknowledge a hold notification.
 
-- **Error remediation**. 
+- **Advanced indexing**. When you add custodial and non-custodian data sources to a case, the associated content locations are re-indexed (in a process called *Advanced indexing*) so that any content that was deemed as partially indexed is reprocessed to make it fully searchable.
 
-- **Advanced indexing**. 
+- **Error remediation**. Fix processing errors using a process called *error remediation*. Error remediation allows you to rectify data issues that prevent Advanced eDiscovery from properly processing the content during Advanced indexing. For example, files that are password protected can't be processed since the files are locked or encrypted. Using error remediation, you can download files with errors, remove the password protection, and then upload the remediated files.
 
 - **Support for modern attachments and SharePoint versions**. 
 
