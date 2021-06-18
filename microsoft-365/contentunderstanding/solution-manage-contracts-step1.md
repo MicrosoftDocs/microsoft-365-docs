@@ -1,5 +1,5 @@
 ---
-title: "Step 1. Use SharePoint Syntex to identify contract files and extract data"
+title: Step 1. Use SharePoint Syntex to identify contract files and extract data
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -11,7 +11,7 @@ ms.prod: microsoft-365-enterprise
 search.appverid: 
 localization_priority: None
 ROBOTS: 
-description: "Learn how to use SharePoint Syntex to identify contract files and extract data by using a Microsoft 365 solution."
+description: Learn how to use SharePoint Syntex to identify contract files and extract data by using a Microsoft 365 solution.
 ---
 
 # Step 1. Use SharePoint Syntex to identify contract files and extract data
@@ -193,6 +193,8 @@ To apply your model to a SharePoint document library:
 6. On the **Models > Contract** page, in the **Libraries with this model** section, you'll see the URL to the SharePoint site listed.
 
     ![Screenshot of the Contract home page showing the Libraries with this model section.](../media/content-understanding/contract-libraries-with-this-model.png)
+
+7. On the library page, select **Settings** > **Library settings**, add a **Status** column, and then apply the **In review**, **Approved**, and **Rejected** values.
 
 After you apply the model to the document library, you can begin uploading documents to the site and see the results.
 
