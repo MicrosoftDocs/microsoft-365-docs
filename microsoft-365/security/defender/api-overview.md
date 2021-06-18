@@ -22,7 +22,7 @@ search.appverid:
 ms.technology: m365d
 ---
 
-# Overview of  Microsoft 365 Defender APIs
+# Overview of Microsoft 365 Defender APIs
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 

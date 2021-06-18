@@ -91,7 +91,7 @@ The following table summarizes what's included in each plan.
 
 ## Configure Microsoft Defender for Office 365 policies
 
-With Microsoft Defender for Office 365, your organization's security team can configure protection by defining policies in the Security & Compliance Center (Go to <https://protection.office.com> \> **Threat management** \> **Policy**.)
+With Microsoft Defender for Office 365, your organization's security team can configure protection by defining policies in Microsoft 365 Defender (Go to <https://security.microsoft.com> \> **Email & collaboration** \> **Policies and rules**.)
 
 Learn more by watching [this video](https://www.youtube.com/watch?v=vivvTmWJ_3c). 
 
@@ -112,7 +112,7 @@ The policies that are defined for your organization determine the behavior and p
 
 ## View Microsoft Defender for Office 365 reports
 
-Microsoft Defender for Office 365 includes an advanced [reporting dashboard](view-reports-for-mdo.md) to monitor your Defender for Office 365  performance. You can access it at **Reports** \> **Dashboard** in the Security & Compliance Center.
+Microsoft Defender for Office 365 includes an advanced [reporting dashboard](view-reports-for-mdo.md) to monitor your Defender for Office 365  performance. You can access it at **Reports** \> **Dashboard** in the Microsoft 365 Defender portal.
 
 Reports update in real-time, providing you with the latest insights. These reports also provide recommendations and alert you to imminent threats. Predefined reports include the following:
 
@@ -136,16 +136,16 @@ Microsoft Defender for Office 365 Plan 2 includes best-of-class [threat investig
 
 ## Permissions required to use Microsoft Defender for Office 365 features
 
-To access Microsoft Defender for Office 365 features in the Security & Compliance Center, you must be assigned an appropriate role. The following table includes some examples:
+To access Microsoft Defender for Office 365 features in Microsoft 365 Defender, you must be assigned an appropriate role. The following table includes some examples:
 
 |Role or role group|Resources to learn more|
 |---|---|
-|global administrator (this can be assigned in either Azure Active Directory or in the Security & Compliance Center)|[About Microsoft 365 admin roles](../../admin/add-users/about-admin-roles.md)|
-|Security Administrator (this can be assigned in either Azure Active Directory or the Security & Compliance Center)|[Administrator role permissions in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) <p> [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md)|
+|global administrator (this can be assigned in either Azure Active Directory or in Microsoft 365 Defender)|[About Microsoft 365 admin roles](../../admin/add-users/about-admin-roles.md)|
+|Security Administrator (this can be assigned in either Azure Active Directory or Microsoft 365 Defender)|[Administrator role permissions in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) <p> [Permissions in Microsoft 365 Defender](permissions-in-the-security-and-compliance-center.md)|
 |Exchange Online Organization Management (this is assigned in Exchange Online)|[Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo) <p> [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell)|
-|Search and Purge (this is assigned only in the Security & Compliance Center)|[Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md)|
+|Search and Purge (this is assigned only in Microsoft 365 Defender)|[Permissions in Microsoft 365 Defender](permissions-in-the-security-and-compliance-center.md)|
 
-For more information, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+For more information, see [Permissions in Microsoft 365 Defender](permissions-in-the-security-and-compliance-center.md).
 
 ## Get Microsoft Defender for Office 365
 
@@ -172,4 +172,4 @@ New features are added to Microsoft Defender for Office 365 continually. To lear
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 - [Automated investigation and response (AIR) in Microsoft 365 Defender](../defender/m365d-autoir.md)
-1
+

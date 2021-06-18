@@ -77,7 +77,7 @@ Before you classify or suppress an alert, determine whether the alert is accurat
 
 ### Classify an alert
 
-Alerts can be classified as false positives or true positives in the Microsoft 365 Defender. Classifying alerts helps train Microsoft Defender for Endpoint so that, over time, you'll see more true alerts and fewer false alerts.
+Alerts can be classified as false positives or true positives in Microsoft 365 Defender. Classifying alerts helps train Microsoft Defender for Endpoint so that, over time, you'll see more true alerts and fewer false alerts.
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
@@ -92,7 +92,7 @@ Alerts can be classified as false positives or true positives in the Microsoft 3
 
 ### Suppress an alert
 
-If you have alerts that are either false positives or that are true positives but for unimportant events, you can suppress those alerts in the Microsoft 365 Defender. Suppressing alerts helps reduce noise in your security operations dashboard. 
+If you have alerts that are either false positives or that are true positives but for unimportant events, you can suppress those alerts in Microsoft 365 Defender. Suppressing alerts helps reduce noise in your security operations dashboard. 
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
@@ -439,7 +439,7 @@ Depending on the [level of automation](/microsoft-365/security/defender-endpoint
 
 If you have worked through all the steps in this article and still need help, contact technical support.
 
-1. Go to the Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
+1. Go to Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
 2. In the upper right corner, select the question mark (**?**), and then select **Microsoft support**.
 

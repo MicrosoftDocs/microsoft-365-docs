@@ -38,7 +38,7 @@ Core to MITRE’s testing approach is emulating real-world attacks to understand
 
 - ATT&CK-based evaluation of Microsoft 365 Defender - May 2020: [Leading in real-world detection](https://www.microsoft.com/security/blog/2020/05/01/microsoft-threat-protection-leads-real-world-detection-mitre-attck-evaluation/)
 
-    Microsoft 365 Defender provided nearly 100 percent coverage across the attack chain stages. It delivered leading out-of-box visibility into attacker activities. The visibility dramatically reduces manual work for the security operations center and vendor solutions that relied on specific configuration changes. Microsoft 365 Defender also had the fewest gaps in visibility, diminishing attacker ability to operate undetected.
+ Microsoft 365 Defender provided nearly 100 percent coverage across the attack chain stages. It delivered leading out-of-box visibility into attacker activities. The visibility dramatically reduces manual work for the security operations center and vendor solutions that relied on specific configuration changes. Microsoft 365 Defender also had the fewest gaps in visibility, diminishing attacker ability to operate undetected.
 
 ## Next generation protection
 
