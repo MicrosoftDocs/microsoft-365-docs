@@ -116,15 +116,15 @@ On an ongoing basis, identify the highest priority incidents for analysis and re
 
 1. For each incident, begin an [attack and alert investigation and analysis](investigate-incidents.md):
  
-   a. View the summary of the incident to understand it's scope and severity and what entities are affected (the **Summary** tab).
+   1. View the summary of the incident to understand it's scope and severity and what entities are affected (the **Summary** tab).
 
-   b. Begin analyzing the alerts to understand their origin, scope, and severity (the **Alerts** tab).
+   1. Begin analyzing the alerts to understand their origin, scope, and severity (the **Alerts** tab).
 
-   c. As needed, gather information on impacted devices, users, and mailboxes (the **Devices**, **Users**, and **Mailboxes** tabs).
+   1. As needed, gather information on impacted devices, users, and mailboxes (the **Devices**, **Users**, and **Mailboxes** tabs).
 
-   d. See how Microsoft 365 Defender has [automatically resolved some alerts](m365d-autoir.md) (the **Investigations** tab).
+   1. See how Microsoft 365 Defender has [automatically resolved some alerts](m365d-autoir.md) (the **Investigations** tab).
    
-   e. As needed, use information in the data set for the incident for more information (the **Evidence and Response** tab).
+   1. As needed, use information in the data set for the incident for more information (the **Evidence and Response** tab).
 
 2. After or during your analysis, perform containment to reduce any additional impact of the attack and eradication of the security threat.
 
