@@ -117,13 +117,7 @@ Microsoft Defender for Office 365 includes an advanced [reporting dashboard](vie
 Reports update in real-time, providing you with the latest insights. These reports also provide recommendations and alert you to imminent threats. Predefined reports include the following:
 
 - [Threat Explorer (or real-time detections)](threat-explorer.md)
-
 - [Threat protection status report](view-reports-for-mdo.md#threat-protection-status-report)
-
-- [Defender for Office 365 file types report](view-reports-for-mdo.md#defender-for-office-365-file-types-report)
-
-- [Defender for Office 365 message disposition report](view-reports-for-mdo.md#defender-for-office-365-message-disposition-report)
-
 - ... and several more.
 
 ## Use threat investigation and response capabilities
