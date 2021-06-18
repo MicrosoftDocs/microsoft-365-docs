@@ -81,7 +81,7 @@ The diagram below illustrates high-level architecture for key Microsoft 365 Defe
 ![Microsoft 365 Defender high-level architecture](../../media/defender/m365-defender-eval-architecture.png)
 
 In this illustration:
-- Microsoft 365 Defender combines the signals from all of the Defender components to provide a extended detection and response (XDR) across domains. This includes a unified incident queue; automated response to stop attacks; self-healing for compromised devices, user identiteis, and mailboxes; cross-threat hunting; and threat analytics.
+- Microsoft 365 Defender combines the signals from all of the Defender components to provide a extended detection and response (XDR) across domains. This includes a unified incident queue; automated response to stop attacks; self-healing for compromised devices, user identities, and mailboxes; cross-threat hunting; and threat analytics.
 - Microsoft Defender for Office 365 safeguards your organization against malicious threats posed by email messages, links (URLs), and collaboration tools. It shares signals resulting from these activities with Microsoft 365 Defender. Exchange Online Protection (EOP) is integrated to provide end-to-end protection for incoming emails and attachments. 
 - Microsoft Defender for Identity gathers signals from servers running Active Directory Federated Services (AD FS) and Active Directory in the on-premises environment. It uses these signals to protect your hybrid identity environment, including protecting against hackers that use compromised accounts to move laterally across workstations in the on-premises environment. 
 - Microsoft Defender for Endpoint gathers signals from and protects devices used by your organization. 
