@@ -25,7 +25,7 @@ description: "Make your organization more secure against password attacks, and b
 
 # Password policy recommendations
 
-As the admin of an organization, you're responsible for setting password policy for users in your organization. Setting password policy can be complicated and confusing, and this article provides recommendations to make your organization more secure against password attacks.
+As the admin of an organization, you're responsible for setting the password policy for users in your organization. Setting the password policy can be complicated and confusing, and this article provides recommendations to make your organization more secure against password attacks.
   
 To determine how often Microsoft 365 passwords expire in your organization, see [Set password expiration policy for Microsoft 365](../manage/set-password-expiration-policy.md).
 
@@ -107,7 +107,7 @@ In contrast, here are some recommendations in encouraging password diversity.
   
 ### Ban common passwords
 
-The most important password requirement you should put on your users when creating passwords is to ban the use of common passwords to reduce your organization's susceptibility to brute force password attacks. Common user passwords include, **abcdefg**, **password**, **monkey**.
+The most important password requirement you should put on your users when creating passwords is to ban the use of common passwords to reduce your organization's susceptibility to brute force password attacks. Common user passwords include: **abcdefg**, **password**, **monkey**.
   
 ### Educate users to not re-use organization passwords anywhere else
 
@@ -126,6 +126,8 @@ Risk-based multi-factor authentication ensures that when our system detects susp
 ## Next steps
 
 Want to know more about managing passwords? Here is some recommended reading:
+
+- [Microsoft Password Guidance](https://www.microsoft.com/research/wp-content/uploads/2016/06/Microsoft_Password_Guidance-1.pdf)
 
 - [Do Strong Web Passwords Accomplish Anything?](https://go.microsoft.com/fwlink/p/?linkid=861008)
 
