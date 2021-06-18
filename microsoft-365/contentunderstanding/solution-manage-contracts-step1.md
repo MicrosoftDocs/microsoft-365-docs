@@ -32,7 +32,7 @@ Your organization needs a way to identify and classify all contract documents fr
 
    ![Contracts in document library](../media/content-understanding/doc-lib-solution.png)
 
-5. If you have retention requirements for your contracts, you can also use your model to [apply a retention label](apply-a-retention-label-to-a-model.md) that will prevent your contracts from being deleted for a specified period of time.
+5. If you have retention or security requirements for your contracts, you can also use your model to apply a [retention label](apply-a-retention-label-to-a-model.md) or a [sensitivity label](apply-a-sensitivity-label-to-a-model.md) that will prevent your contracts from being deleted for a specified period of time or to restrict who can access the contracts.
 
 ## Steps to create and train your model
 
