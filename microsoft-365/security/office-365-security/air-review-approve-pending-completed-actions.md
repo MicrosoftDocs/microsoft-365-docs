@@ -31,22 +31,22 @@ As automated investigations on email & collaboration content result in verdicts,
 - Soft deleting email messages or clusters
 - Turning off external mail forwarding
 
-These remediation actions are not taken unless and until your security operations team approves them. We recommend reviewing and approving any pending actions as soon as possible so that your automated investigations complete in a timely manner. In some cases, you can reconsider submitted actions.
+These remediation actions are not taken unless and until your security operations team approves them. We recommend reviewing and approving any pending actions as soon as possible so that your automated investigations complete in a timely manner. In some cases, you can reconsider submitted actions.  You need to be part of Search & purge role before taking any actions.
 
 
 ## Approve (or reject) pending actions
 There are four different ways to find and take auto investigation actions:
 
-- [Incident queue](https://security.microsoft.com/incidents).
-- [Action center](https://security.microsoft.com/action-center/pending).
+- [Incident queue](https://security.microsoft.com/incidents)
+- [Action center](https://security.microsoft.com/action-center/pending)
 - Investigation itself (accessed via Incident or from an alert)
-- [Investigation and remediation investigations queue](https://security.microsoft.com/airinvestigation).
+- [Investigation and remediation investigations queue](https://security.microsoft.com/airinvestigation)
 
 ## Incident queue
 1. Go to the [Microsoft 365 security center](https://security.microsoft.com) and sign in.
 2. In the navigation pane, select **Incidents & alerts > Incidents**.
-3. Select an incident name and it will open a summary page.
-4. Go to the **Evidence and Response** tab.
+3. Select an incident name to open its summary page.
+4. Select the **Evidence and Response** tab.
 5. Select an item in the list. Its side pane opens.
 6. In the side pane, take approve or reject actions.
 
@@ -65,7 +65,7 @@ There are four different ways to find and take auto investigation actions:
    - Select **Approve** to initiate a pending action.
    - Select **Reject** to prevent a pending action from being taken.
 
-## Auto investigation and remediation investigations queue
+## Investigation and remediation investigations queue
 1. Go to the [Microsoft 365 security center](https://security.microsoft.com) and sign in.
 2. Open pending investigations. 
 3. On the Investigation page, go to the **pending actions** tab.
@@ -81,7 +81,7 @@ There are two different ways to reconsider submitted actions:
 ## Change or undo through the unified action center
 1. Go to the [unified action center](https://security.microsoft.com/action-center) and sign in.
 2. On the **History** tab, select an action that you want to change or undo.
-3. In the pane on the right side of the screen, select the appropriate action (**move to inbox**, **move to junk**,**move to deleted items**, **soft delete", or **hard delete**).
+3. In the pane on the right side of the screen, select the appropriate action (**move to inbox**, **move to junk**, **move to deleted items**, **soft delete", or **hard delete**).
 
  ## Change or undo through the Office action center 
 1. Go to the [Office action center](https://security.microsoft.com/threatincidents) and sign in.
