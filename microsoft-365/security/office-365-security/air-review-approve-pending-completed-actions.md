@@ -21,10 +21,10 @@ ms.prod: m365-security
 ms.date: 06/10/2021
 ---
 
+# Review and manage remediation actions in Office 365
+
 **Applies to**
 - [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
-
-# Review and manage remediation actions in Office 365
 
 As automated investigations on email & collaboration content result in verdicts, such as *Malicious* or *Suspicious*, certain remediation actions are created. In Microsoft Defender for Office 365, remediation actions can include:
 
