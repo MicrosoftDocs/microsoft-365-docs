@@ -80,6 +80,15 @@ The diagram below illustrates high-level architecture for key Microsoft 365 Defe
 
 ![Microsoft 365 Defender high-level architecture](../../media/defender/m365-defender-eval-architecture.png)
 
+In this illustration:
+- Microsoft 365 Defender combines the signals from all of the Defender components to provide a extended detection and response (XDR) across domains. This includes a unified incident queue; automated response to stop attacks; self-healing for compromised devices, user identiteis, and mailboxes; cross-threat hunting; and threat analytics.
+- Microsoft Defender for Office 365 safeguards your organization against malicious threats posed by email messages, links (URLs), and collaboration tools. It shares signals resulting from these activities with Microsoft 365 Defender. Exchange Online Protection (EOP) is integrated to provide end-to-end protection for incoming emails and attachments. 
+- Microsoft Defender for Identity gathers signals from servers running Active Directory Federated Services (AD FS) and Active Directory in the on-premises environment. It uses these signals to protect your hybrid identity environment, including protecting against hackers that use compromised accounts to move laterally across workstations in the on-premises environment. 
+- Microsoft Defender for Endpoint gathers signals from and protects devices used by your organization. 
+- Microsoft Cloud App Security gathers signals from your organization's use of cloud apps and protects data flowing between your environment and these apps, including both sanctioned and unsanctioned cloud apps. 
+- Azure AD Identity Protection evaluates risk data from billions of login attempts and uses this data to evaluate the risk of each login to your environment. This data is used by Azure AD to allow or prevent account access, depending on how conditional access policies are configured. Azure AD Identity Protection is licensed separately from Microsoft 365 Defender. It is included with Azure Active Directory Premium Plan 2.  
+
+<!--
 |  |  |
 |---------|---------|
 |A     |     External access and entry points (including email, sharing, and collaboration) for Microsoft 365 services is primarily controlled by Azure Active Directory (where conditional access and other access policies are enforced) and Exchange Online Protection policies.    |
@@ -90,6 +99,7 @@ The diagram below illustrates high-level architecture for key Microsoft 365 Defe
 |F    |    Microsoft 365 Security Center offers a unified dashboard to configure and manage most Defender components and to perform investigations. The shared signals across the Microsoft 365 Defender components are stitched together across alerts and incidents, illuminating the breadth of a breach. Currently, Microsoft Cloud App Security policies are configured directly in the Cloud App Security dashboard.  |
 |G    |    Azure Active Directory is the primary authentication provider for all Microsoft 365 services and used to evaluate, enforce, and control Microsoft Defender policies.     |
 | | |
+-->
 
 Additional optional architecture components not included in this illustration:
 - Identity provisioning and federated authentication can be integrated with on-premises Active Directory Domain Services by deploying Azure Active Directory Connect and/or Active Directory Federation Services. These are monitored using Microsoft Defender for Identity. 
