@@ -32,7 +32,7 @@ ms.reviewer: evaldm, isco
 
 With Microsoft 365 Defender, when an [automated investigation](m365d-autoir.md) runs, details about that investigation are available both during and after the automated investigation process. If you have the [necessary permissions](m365d-action-center.md#required-permissions-for-action-center-tasks), you can view those details in an investigation details view. This view provides you with up-to-date status and the ability to approve any pending actions. 
 
-:::image type="content" source="../../media/mtp-air-investdetails.png" lightbox="../../media/mtp-air-investdetails.png" alt-text="Investigation details":::
+:::image type="content" source="../../media/mtp-air-investdetails.png" alt-text="Investigation details":::
 
 ## (NEW!) Unified investigation page
 
@@ -84,13 +84,13 @@ Use an incident details page to view detailed information about an incident, inc
 
 Here's an example.
 
-:::image type="content" source="../../media/mtp-incidentdetails-tabs.png" lightbox="../../media/mtp-incidentdetails-tabs.png" alt-text="Incident details":::
+:::image type="content" source="../../media/mtp-incidentdetails-tabs.png" alt-text="Incident details":::
 
 ## Investigation details
 
 Use the investigation details view to see past, current, and pending activity pertaining to an investigation. Here's an example.
 
-:::image type="content" source="../../media/mtp-air-investdetails.png" lightbox="../../media/mtp-air-investdetails.png" alt-text="Investigation details":::
+:::image type="content" source="../../media/mtp-air-investdetails.png" alt-text="Investigation details":::
 
 In the Investigation details view, you can see information on the **Investigation graph**, **Alerts**, **Devices**, **Identities**, **Key findings**, **Entities**, **Log**, and **Pending actions** tabs, described in the following table.
 
