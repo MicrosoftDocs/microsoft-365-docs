@@ -87,7 +87,7 @@ Before you can delete a case (whether it's active or closed), you must first del
 
 To delete an eDiscovery hold:
 
-1. Go the **Holds** tab in the case that you want to delete.
+1. Go to the **Holds** tab in the case that you want to delete.
 
 2. Select the hold that you want to delete.
 

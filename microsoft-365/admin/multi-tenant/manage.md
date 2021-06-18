@@ -18,7 +18,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Learn how to use the tenant switcher and about the multi-tenant views."
+description: "Learn how to use the tenant switcher and multi-tenant views that give you the ability to manage tenants from a single location."
 ---
 
 # Multi-tenant management

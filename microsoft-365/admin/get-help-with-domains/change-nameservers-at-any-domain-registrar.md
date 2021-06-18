@@ -38,7 +38,6 @@ Follow these instructions to add and set up your domain in Microsoft 365 so your
 - You want Microsoft 365 to manage your DNS records for you. (If you prefer, you can [manage your own DNS records](../setup/add-domain.md).)
     
 ## Add a TXT or MX record for verification
-<a name="BKMK_verify"> </a>
 
 > [!NOTE]
 > You will create only one or the other of these records. TXT is the preferred record type, but some DNS hosting providers don't support it, in which case you can create an MX record instead. 
@@ -62,18 +61,17 @@ Depending on whether you are creating a TXT record or an MX record, do one of th
   
 **If you create a TXT record, use these values:**
     
-|||||
+
+|Record type<br/> |Alias or host name <br/> |Value <br/> |TTL<br/> |
 |:-----|:-----|:-----|:-----|
-|**Record Type** <br/> |**Alias** or **Host Name** <br/> |**Value** <br/> |**TTL** <br/> |
 |TXT  <br/> |Do one of the following: Type **@** or leave the field empty or type your domain name.  <br/> > [!NOTE]> Different DNS hosts have different requirements for this field.           
-|MS=ms *XXXXXXXX*  <br/> > [!NOTE]> This is an example. Use your specific **Destination or Points to Address** value here, from the table in Microsoft 365.           [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |Set this value to **1 hour** or to the equivalent in minutes ( **60** ), seconds ( **3600** ), etc.  <br/> |
+|MS=ms *XXXXXXXX*  <br/>**Note:** This is an example. Use your specific **Destination or Points to Address** value here, from the table in Microsoft 365.           [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |Set this value to **1 hour** or to the equivalent in minutes ( **60** ), seconds ( **3600** ), etc.  <br/> |
    
 **If you create an MX record, use these values:**
     
-||||||
+|Record type|Alias or host name|Value|Priority|TTL|
 |:-----|:-----|:-----|:-----|:-----|
-|**Record Type**|**Alias** or **Host Name**|**Value**|**Priority**|**TTL**|
-|MX|Type either **@** or your domain name. |MS=ms *XXXXXXXX* > [!NOTE]> This is an example. Use your specific **Destination or Points to Address** value here, from the table in Microsoft 365.           [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |For **Priority**, to avoid conflicts with the MX record used for mail flow, use a lower priority than the priority for any existing MX records. For more information about priority, see [What is MX priority?](../setup/domains-faq.yml) |Set this value to **1 hour** or to the equivalent in minutes ( **60** ), seconds ( **3600** ), etc. |
+|MX|Type either **@** or your domain name. |MS=ms *XXXXXXXX* **Note:** This is an example. Use your specific **Destination or Points to Address** value here, from the table in Microsoft 365.           [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |For **Priority**, to avoid conflicts with the MX record used for mail flow, use a lower priority than the priority for any existing MX records. For more information about priority, see [What is MX priority?](../setup/domains-faq.yml) |Set this value to **1 hour** or to the equivalent in minutes ( **60** ), seconds ( **3600** ), etc. |
    
 ### Save the record
 
@@ -89,17 +87,13 @@ When Microsoft 365 finds the correct TXT record, your domain is verified.
   
 3. On the **Setup** page, select **Start setup**.
  
-    
   
 4. On the **Verify domain** page, select **Verify**.
-    
-    
   
 > [!NOTE]
 >  Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
   
 ## Change your domain's nameserver (NS) records
-<a name="BKMK_nameservers"> </a>
 
 When you get to the last step of the domains setup wizard in Microsoft 365, you have one task remaining. To set up your domain with Microsoft 365 services, like email, you change your domain's nameserver (or NS) records at your domain registrar to point to the Microsoft 365 primary and secondary nameservers. Then, because Microsoft 365 hosts your DNS, the required DNS records for your services are set up automatically for you. You can update the nameserver records yourself by following the steps your domain registrar may provide in the help content at their website. If you're not familiar with DNS, contact support at the domain registrar.
 
@@ -110,13 +104,12 @@ To change your domain's nameservers at your domain registrar's website yourself,
 1. Find the area on the domain registrar's website where you can change the nameservers for your domain or an area where you can use custom nameservers.
     
 2. Create nameserver records, or edit the existing nameserver records to match the following values:
-    
-|||
-|:-----|:-----|
-|First nameserver  <br/> |ns1.bdm.microsoftonline.com  <br/> |
-|Second nameserver  <br/> |ns2.bdm.microsoftonline.com  <br/> |
-|Third nameserver  <br/> |ns3.bdm.microsoftonline.com  <br/> |
-|Fourth nameserver  <br/> |ns4.bdm.microsoftonline.com  <br/> |
+
+    - First nameserver: ns1.bdm.microsoftonline.com
+    - Second nameserver: ns2.bdm.microsoftonline.com
+    - Third nameserver: ns3.bdm.microsoftonline.com
+    - Fourth nameserver: ns4.bdm.microsoftonline.com
+      
    
    > [!TIP]
    > It's best to add all four records, but if your registrar only supports two, add **ns1.bdm.microsoftonline.com** and **ns2.bdm.microsoftonline.com**. 
@@ -133,12 +126,10 @@ To change your domain's nameservers at your domain registrar's website yourself,
 1. Find the area on the domain registrar's website where you can edit the nameservers for your domain.
     
 2. Create two nameserver records, or edit the existing nameserver records to match the following values:
+
+   - First nameserver: ns1.dns.partner.microsoftonline.cn
+   - Second nameserver: ns2.dns.partner.microsoftonline.cn
     
-|||
-|:-----|:-----|
-|First nameserver  <br/> |ns1.dns.partner.microsoftonline.cn  <br/> |
-|Second nameserver  <br/> |ns2.dns.partner.microsoftonline.cn  <br/> |
-   
    > [!TIP]
    > You should use at least two nameserver records. If there are any other nameservers listed, you can either delete them, or change them to **ns3.dns.partner.microsoftonline.cn** and **ns4.dns.partner.microsoftonline.cn**. 
   
@@ -193,8 +184,6 @@ After the nameserver records are updated to point to Microsoft, your domain setu
   
 ## Related content
 
-[Add DNS records to connect your domain](create-dns-records-at-any-dns-hosting-provider.md) (article)
-
-[Find and fix issues after adding your domain or DNS records](find-and-fix-issues.md) (article)
-
+[Add DNS records to connect your domain](create-dns-records-at-any-dns-hosting-provider.md) (article)\
+[Find and fix issues after adding your domain or DNS records](find-and-fix-issues.md) (article)\
 [Manage domains](index.yml) (link page)

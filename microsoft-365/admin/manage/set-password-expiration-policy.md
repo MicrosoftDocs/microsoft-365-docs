@@ -58,7 +58,7 @@ Follow the steps below if you want to set user passwords to expire after a speci
   
 ## Important things you need to know about the password expiration feature
   
-- People who only use the Outlook app won't be forced to reset their Microsoft 365 password until it expires in the cache. This can be several days after the actual expiration date. There's no workaround for this at the admin level.
+People who only use the Outlook app won't be forced to reset their Microsoft 365 password until it expires in the cache. This can be several days after the actual expiration date. There's no workaround for this at the admin level.
 
 ## Prevent last password from being used again
 
@@ -84,6 +84,5 @@ To learn how to update password policy for a specific domain or tenant, see [Set
 
 ## Related content
 
-[Let users reset their own passwords](../add-users/let-users-reset-passwords.md) (article)
-
+[Let users reset their own passwords](../add-users/let-users-reset-passwords.md) (article)\
 [Reset passwords](../add-users/reset-passwords.md) (article)

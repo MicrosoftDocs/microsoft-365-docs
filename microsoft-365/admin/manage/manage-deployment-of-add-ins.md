@@ -33,7 +33,7 @@ For more information on how to determine if your organization can support Centra
 To learn more about managing add-ins after deployment, see [Manage add-ins in the admin center](manage-addins-in-the-admin-center.md)
   
 > [!NOTE]
->  For Word, Excel and PowerPoint use a [SharePoint App Catalog](https://dev.office.com/docs/add-ins/publish/publish-task-pane-and-content-add-ins-to-an-add-in-catalog) to deploy add-ins to users in an on-premises environment with no connection to Microsoft 365 and/or support for SharePoint add-ins required. For Outlook use Exchange control panel to deploy in an on-premises environment without a connection to Microsoft 365.
+>  For Word, Excel and PowerPoint use a [SharePoint App Catalog](/office/dev/add-ins/publish/publish-task-pane-and-content-add-ins-to-an-add-in-catalog) to deploy add-ins to users in an on-premises environment with no connection to Microsoft 365 and/or support for SharePoint add-ins required. For Outlook use Exchange control panel to deploy in an on-premises environment without a connection to Microsoft 365.
   
 ## Recommended approach for deploying Office add-ins
 
@@ -126,12 +126,8 @@ Updates for add-ins happen as follows:
   
 ## Related content
 
-[Manage add-ins in the admin center](manage-addins-in-the-admin-center.md) (article)
-
-[Build your first Word task pane add-in](/office/dev/add-ins/quickstarts/word-quickstart?tabs=yeomangenerator) (article)
-
-[Minors and acquiring add-ins from the store](minors-and-acquiring-addins-from-the-store.md) (article)
-  
-[Use Centralized Deployment PowerShell cmdlets to manage add-ins](../../enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md) (article)
-  
+[Manage add-ins in the admin center](manage-addins-in-the-admin-center.md) (article)\
+[Build your first Word task pane add-in](/office/dev/add-ins/quickstarts/word-quickstart?tabs=yeomangenerator) (article\
+[Minors and acquiring add-ins from the store](minors-and-acquiring-addins-from-the-store.md) (article)\ 
+[Use Centralized Deployment PowerShell cmdlets to manage add-ins](../../enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md) (article)\  
 [Troubleshoot: User not seeing add-ins](/office365/troubleshoot/access-management/user-not-seeing-add-ins) (article)

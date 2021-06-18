@@ -41,7 +41,7 @@ Threat and vulnerability management will only display zero-day vulnerabilities i
 Once a zero-day vulnerability has been found, information about it will be conveyed through the following experiences in the Microsoft Defender Security Center.
 
 >[!NOTE]
-> 0-day capability is not currently available for non-Windows products (Mac, Linux); it will, however, be added in the future.
+> 0-day vulnerability capability is currently available only for Windows products.
 
 ### Threat and vulnerability management dashboard
 

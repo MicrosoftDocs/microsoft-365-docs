@@ -30,7 +30,7 @@ ms.technology: m365d
 **Applies to:**
 - Microsoft 365 Defender
 
-National Institute of Standards and Technology (NIST) recommends that once all steps have been taken to recover from the attack, organizations must review the incident to learn from it and learn and improve security posture or processes. Assessing the different aspects of incident-handling becomes important in preparing for the next incident.
+National Institute of Standards and Technology (NIST) recommends that once all steps have been taken to recover from the attack, organizations must review the incident to learn from it and improve security posture or processes. Assessing the different aspects of incident-handling becomes important in preparing for the next incident.
 
 Microsoft 365 Defender can assist in performing post-incident activities by providing an organization with alerts that align with [MITRE ATT&CK Framework](https://attack.mitre.org/). All Microsoft Defender solutions label attacks in accordance with an ATT&CK tactic or technique. 
 

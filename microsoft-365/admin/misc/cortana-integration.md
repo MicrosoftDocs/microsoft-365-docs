@@ -84,19 +84,17 @@ Cortana voice assistance in the Teams mobile app and on Microsoft Teams display 
 
 **Admin control**
 
-Cortana voice assistance will be enabled by default for tenants. Admins can control who in their tenant can use Cortana voice assistance in Teams via a policy (TeamsCortanaPolicy). This policy can be set at either a user account level or tenant level. Admins can also use the CortanaVoiceInvocationMode field within this policy control to determine whether Cortana is disabled, enabled with push button invocation only, or enabled with wake word invocation as well (applicable to devices that support it, like the Microsoft Teams display). Note that at the time of the initial release for Microsoft 365 Enterprise users in the US in English, the Teams mobile app will not support wake word activation, but it will be supported in the future.
+Cortana voice assistance will be enabled by default for tenants. Admins can control who in their tenant can use Cortana voice assistance in Teams via a policy (TeamsCortanaPolicy). This policy can be set at either a user account level or tenant level. Admins can also use the CortanaVoiceInvocationMode field within this policy control to determine whether Cortana is disabled, enabled with push button invocation only, or enabled with wake word invocation as well (applicable to devices that support it, like the Microsoft Teams display). 
 
 **User control**
 
-Individual users can try out Cortana voice assistance in the Teams mobile app by clicking on the mic button. They can try out Cortana voice assistance on Microsoft Teams display devices by simply saying &#8220;Cortana.&#8221; They can also control whether Cortana in Teams is enabled for their device via a setting in the Teams mobile app or on the Microsoft Teams display: 
+Individual users can try out Cortana voice assistance in the Teams mobile app by clicking on the mic button. They can try out Cortana voice assistance on Microsoft Teams display devices by simply saying &#8220;Cortana.&#8221; They can also control whether Cortana responds to the wake word invocation. 
 
-1. Open the Teams mobile app, or go to the ambient (home) screen of the Microsoft Teams display.
+1.	Open Teams mobile
+2.	Go to Settings
+3.	Select Cortana
+4.	Switch the Voice activation toggle
 
-2. In the Teams mobile app, go to **Settings**. On the Microsoft Teams display, select the user avatar, and then select Settings. If Cortana is enabled, say, &#8220;Cortana, go to Settings.&#8221;
-
-3. Select **Cortana**.
-
-4. Move the toggle to **On** or **Off**, depending on whether you want Cortana voice assistance on the device.
 
 [Learn more about Cortana voice assistance in Teams](/microsoftteams/cortana-in-teams)
 
@@ -182,8 +180,6 @@ For services governed by the [Microsoft Services Agreement](https://go.microsoft
 
 ## Related content
 
-[Cortana voice assistance in Teams](/microsoftteams/cortana-in-teams) (article)
-
-[Configure Cortana in Windows 10](/windows/configuration/cortana-at-work/cortana-at-work-overview) (article)
-
+[Cortana voice assistance in Teams](/microsoftteams/cortana-in-teams) (article)\
+[Configure Cortana in Windows 10](/windows/configuration/cortana-at-work/cortana-at-work-overview) (article)\
 [What can you do with Play My Emails from Cortana?](https://support.microsoft.com/help/4558256)

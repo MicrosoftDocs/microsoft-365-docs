@@ -38,7 +38,7 @@ Exchange Online synchronizes the **PreferredDataLocation** property from Azure A
 
 - When **PreferredDataLocation** is not specified on a user, when you provision the mailbox, it will be provisioned in the central geo location.
 
-- If the **PreferredDataLocation** code is incorrect (e.g. a type of NAN instead of NAM), the mailbox will be provisioned in the central geo location.
+- If the **PreferredDataLocation** code is incorrect (e.g. a typo of NAN instead of NAM), the mailbox will be provisioned in the central geo location.
 
 **Note**: Multi-geo capabilities and Skype for Business Online regionally hosted meetings both use the **PreferredDataLocation** property on user objects to locate services. If you configure **PreferredDataLocation** values on user objects for regionally hosted meetings, the mailbox for those users will be automatically moved to the specified geo location after multi-geo is enabled on the Microsoft 365 tenant.
 

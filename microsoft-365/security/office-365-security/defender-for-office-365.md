@@ -117,13 +117,7 @@ Microsoft Defender for Office 365 includes an advanced [reporting dashboard](vie
 Reports update in real-time, providing you with the latest insights. These reports also provide recommendations and alert you to imminent threats. Predefined reports include the following:
 
 - [Threat Explorer (or real-time detections)](threat-explorer.md)
-
 - [Threat protection status report](view-reports-for-mdo.md#threat-protection-status-report)
-
-- [Defender for Office 365 file types report](view-reports-for-mdo.md#defender-for-office-365-file-types-report)
-
-- [Defender for Office 365 message disposition report](view-reports-for-mdo.md#defender-for-office-365-message-disposition-report)
-
 - ... and several more.
 
 ## Use threat investigation and response capabilities
@@ -169,7 +163,7 @@ Microsoft Defender for Office 365 is included in certain subscriptions, such as 
 
 New features are added to Microsoft Defender for Office 365 continually. To learn more, see the following resources:
 
-- [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=advanced%2Cthreat%2Cprotection) provides a list of new features in development and rolling out.
+- [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=Microsoft%2CDefender%2Cfor%2COffice%2C365) provides a list of new features in development and rolling out.
 
 - [Microsoft Defender for Office 365 Service Description](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#whats-new-in-office-365-advanced-threat-protection-atp) describes features and availability across Defender for Office 365 plans.
 

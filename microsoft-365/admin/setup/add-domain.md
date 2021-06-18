@@ -131,10 +131,7 @@ If you have a website that you use with your business, it will keep working wher
 
 ## Related content
 
-[Domains FAQ](domains-faq.yml) (article)
-
-[What is a domain?](../get-help-with-domains/what-is-a-domain.md) (article)
-
-[Buy a domain name in Microsoft 365](../get-help-with-domains/buy-a-domain-name.md) (article)
-
+[Domains FAQ](domains-faq.yml) (article)\
+[What is a domain?](../get-help-with-domains/what-is-a-domain.md) (article)\
+[Buy a domain name in Microsoft 365](../get-help-with-domains/buy-a-domain-name.md) (article)\
 [Set up your domain](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md) (article)

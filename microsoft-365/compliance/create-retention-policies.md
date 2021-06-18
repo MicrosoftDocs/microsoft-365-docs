@@ -49,7 +49,7 @@ Although a retention policy can support multiple services that are identified as
 - Teams channel messages
 - Teams chats
 - Yammer community messages
-- Yammer private messages
+- Yammer user messages
 
 If you select the Teams or Yammer locations when you create a retention policy, the other locations are automatically excluded. This means that the instructions to follow depend on whether you need to include the Teams or Yammer locations:
 
@@ -125,11 +125,11 @@ It's possible that a retention policy that's applied to Microsoft 365 groups, Sh
     
     Do not select **Use advanced retention settings** because this option isn't supported for Yammer locations. 
 
-4. For the **Choose locations** page, select **Let me choose specific locations**. Then toggle on one or both of the locations for Yammer: **Yammer community message** and **Yammer private messages**.
+4. For the **Choose locations** page, select **Let me choose specific locations**. Then toggle on one or both of the locations for Yammer: **Yammer community message** and **Yammer user messages**.
     
     By default, all communities and users are selected, but you can refine this by specifying communities and users to be included or excluded.
     
-    For Yammer private messages: 
+    For Yammer user messages: 
     - If you leave the default at **All**, Azure B2B guest users are not included. 
     - If you select **Choose user**, you can apply a retention policy to external users if you know their account.
 
@@ -216,11 +216,11 @@ To return to the default value of both the mailbox and SharePoint site for the s
 
 ### Configuration information for Skype for Business
 
-Unlike Exchange email, you can't toggle the status of the Skype location on to automatically include all users, but when you turn on that location, you must then manually choose the users whose conversations you want to retain:
+Unlike other locations, you can't toggle the status of the Skype location on to automatically include all users. Instead, when you turn on that location, you must then select the **Edit** option to manually choose the users whose conversations you want to retain:
 
-![Choose Skype location for retention policies](../media/skype-location-retention-policies.png)
+![Edit Skype location for retention policies](../media/skype-location-retention-policies.png)
 
-When you select **Choose user**, you can quickly include all users by selecting the **Select all** box. However, it's important to understand that each user counts as a specific inclusion in the policy. So if you include 1,000 users by selecting the **Select all** box, it's the same as if you manually selected 1,000 users to include, which is the maximum supported for Skype for Business.
+After you select this **Edit** option, in the **Skype for Business** pane you can quickly include all users by selecting the hidden box before the **Name** column. However, it's important to understand that each user counts as a specific inclusion in the policy. So if you include 1,000 users by selecting this box, it's the same as if you manually selected 1,000 users to include, which is the maximum supported for Skype for Business.
 
 Be aware that **Conversation History**, a folder in Outlook, is a feature that has nothing to do with Skype archiving. **Conversation History** can be turned off by the end user, but archiving for Skype is done by storing a copy of Skype conversations in a hidden folder that is inaccessible to the user but available to eDiscovery.
 

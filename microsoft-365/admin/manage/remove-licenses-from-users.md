@@ -19,7 +19,7 @@ ms.custom:
 - manage_licenses
 - commerce_licensing
 search.appverid: MET150
-description: "Learn how to unassign licenses from user accounts."
+description: "The method you use to unassign product licenses depends on whether you unassign licenses from specific users or from a specific product."
 ms.date: 07/01/2020
 ---
 
@@ -111,10 +111,10 @@ When you use the **Active users** page to unassign licenses, you unassign produc
 
 ::: moniker-end
 
-2. Select the circles next to the names of the users that you want to unassign licenses for.
-3. At the top, select the three dots (more actions), then select **Manage product licenses**.
-4. In the **Manage product licenses** pane, select **Replace existing product license assignments** \> **Next**.
-5. At the bottom of the **Replace existing products** pane, select the **Remove all product licenses from the selected users** check box, then select **Replace** \> **Close**.
+2. Select the circles next to the names of the users who you want to unassign licenses for.
+3. At the top, select **Manage product licenses**.
+4. In the **Manage product licenses** pane, select **Unassign all** > **Save changes**.
+5. At the bottom of the pane, select **Done**.  
 
 ## What happens to a user's data when you remove their license?
 

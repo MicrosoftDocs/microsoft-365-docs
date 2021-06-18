@@ -122,6 +122,6 @@ Run one of the following commands:
 
 ## Related content
 
-[Let users reset their own passwords](../add-users/let-users-reset-passwords.md) (article)
-
-[Reset passwords](../add-users/reset-passwords.md) (article)
+[Let users reset their own passwords](../add-users/let-users-reset-passwords.md) (article)\
+[Reset passwords](../add-users/reset-passwords.md) (article)\
+[Set the password expiration policy for your organization](../manage/set-password-expiration-policy.md) (article)

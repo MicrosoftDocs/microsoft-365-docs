@@ -46,7 +46,7 @@ The table below represents which apps and services are currently connected to th
 |**Visio**|Yes|Yes|Yes|Yes|
 |**Yammer**|Yes|Yes|Yes|Yes|
 
-[See here for some examples of in-product surveys and feedback.](https://docs.microsoft.com/microsoft-365/admin/misc/feedback-user-control?view=o365-worldwide#in-product-surveys)
+[See here for some examples of in-product surveys and feedback.](/microsoft-365/admin/misc/feedback-user-control#in-product-surveys)
 
 **Metadata collection**
 

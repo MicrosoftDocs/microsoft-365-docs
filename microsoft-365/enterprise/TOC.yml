@@ -267,7 +267,7 @@
         - name: During and after your data move
           href: during-and-after-your-data-move.md
         - name: Data move general FAQ
-          href: data-move-faq.md
+          href: data-move-faq.yml
         - name: Where customer data is stored
           href: o365-data-locations.md
         - name: Data locations for the European Union
@@ -288,12 +288,14 @@
             href: ms-cloud-germany-transition-add-experience.md
           - name: Additional information
             items: 
-            - name: Azure AD
-              href: ms-cloud-germany-transition-azure-ad.md
-            - name: Devices
-              href: ms-cloud-germany-transition-add-devices.md
             - name: AD FS migration steps
               href: ms-cloud-germany-transition-add-adfs.md
+            - name: Azure AD
+              href: ms-cloud-germany-transition-azure-ad.md
+            - name: CSPs
+              href: ms-cloud-germany-transition-add-csp.md
+            - name: Devices
+              href: ms-cloud-germany-transition-add-devices.md
             - name: eDiscovery
               href: ms-cloud-germany-transition-add-scc.md
 
@@ -461,7 +463,7 @@
         - name: Skype for Business
           href: /SkypeForBusiness/skype-for-business-online
         - name: Microsoft Teams
-          href: https://docs.microsoft.com/microsoftteams/upgrade-monitor-quality
+          href: /microsoftteams/upgrade-monitor-quality
         - name: Yammer
           href: https://support.office.com/article/e1464355-1f97-49ac-b2aa-dd320b179dbe
         - name: Performance and tuning
@@ -489,7 +491,7 @@
 - name: Windows 10
   items:
     - name: How to check release health
-      href: https://docs.microsoft.com/windows/deployment/update/check-release-health
+      href: /windows/deployment/update/check-release-health
     - name: Deploy and update
       href: /windows/deployment/
 
@@ -620,6 +622,9 @@
           href: assign-per-user-skype-for-business-online-policies-with-microsoft-365-powershell.md
     - name: Manage add-ins with Centralized Deployment PowerShell
       href: use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md
+
+- name: Windows 10 and Office 365 deployment lab kit
+  href: modern-desktop-deployment-and-management-lab.md
 
 - name: Test Lab Guides
   href: m365-enterprise-test-lab-guides.md

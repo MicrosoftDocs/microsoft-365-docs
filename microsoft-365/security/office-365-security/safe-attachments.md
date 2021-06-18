@@ -120,7 +120,7 @@ There are scenarios where Dynamic Delivery is unable to replace attachments in m
 - Deleted messages.
 - The user's mailbox search folder is in an error state.
 - Exchange Online organizations where Exclaimer is enabled. To resolve this issue, see [KB4014438](https://support.microsoft.com/help/4014438).
-- [S/MIME)](s-mime-for-message-signing-and-encryption.md) encrypted messages.
+- [S/MIME)](/exchange/security-and-compliance/smime-exo/smime-exo) encrypted messages.
 - You configured the Dynamic Delivery action in a Safe Attachments policy, but the recipient doesn't support Dynamic Delivery (for example, the recipient is a mailbox in an on-premises Exchange organization). However, [Safe Links in Microsoft Defender for Office 365](set-up-safe-links-policies.md) is able to scan Office file attachments that contain URLs (depending on how the [global settings for Safe Links](configure-global-settings-for-safe-links.md) are configured).
 
 ## Submitting files for malware analysis

@@ -6,11 +6,11 @@ manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.date: 05/17/2021
+ms.date: 
 ms.prod: microsoft-365-enterprise
 search.appverid: 
 localization_priority: None
-ROBOTS: NOINDEX, NOFOLLOW
+ROBOTS: 
 description: "Learn how to use SharePoint Syntex to identify contract files and extract data by using a Microsoft 365 solution."
 ---
 

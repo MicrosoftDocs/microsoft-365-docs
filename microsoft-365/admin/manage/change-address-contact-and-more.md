@@ -76,8 +76,6 @@ You can change your email signature in Outlook Web App. For more information, se
 
 ## Related content
 
-[Send email from a different address](https://support.microsoft.com/office/ccba89cb-141c-4a36-8c56-6d16a8556d2e) (article)
-
-[Change a user name and email address](../add-users/change-a-user-name-and-email-address.md) (article)
-
+[Send email from a different address](https://support.microsoft.com/office/ccba89cb-141c-4a36-8c56-6d16a8556d2e) (article)\
+[Change a user name and email address](../add-users/change-a-user-name-and-email-address.md) (article)\
 [Configure email forwarding in Microsoft 365](../email/configure-email-forwarding.md) (article)

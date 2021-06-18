@@ -100,7 +100,7 @@ In addition to customizing the reports from the Power BI web interface, users ca
 
 ### How can I get the pbit file that this dashboard is associated with?
 
-You can access to the pbit file from the [Microsoft Download center](https://download.microsoft.com/download/7/8/2/782ba8a7-8d89-4958-a315-dab04c3b620c/Microsoft%20365%20Usage%20Analytics.pbit).
+You can access to the pbit file from the [Microsoft Download center](https://download.microsoft.com/download/7/8/2/782ba8a7-8d89-4958-a315-dab04c3b620c/Microsoft%20365%20Usage%20Analytics.pbit). 
 
 ### Who can view the dashboards and reports?
 
@@ -208,8 +208,6 @@ Yes, see [Make the collected data anonymous](enable-usage-analytics.md#make-the-
 
 ## Related content
 
-[Enable Microsoft 365 usage analytics](enable-usage-analytics.md) (article)
-
-[Navigate and utilize the reports in Microsoft 365 usage analytics](navigate-and-utilize-reports.md) (article)
-
+[Enable Microsoft 365 usage analytics](enable-usage-analytics.md) (article)\
+[Navigate and utilize the reports in Microsoft 365 usage analytics](navigate-and-utilize-reports.md) (article)\
 [Review usage reports in Microsoft 365](../../business-video/act-on-report.md) (video)

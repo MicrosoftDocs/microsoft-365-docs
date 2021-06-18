@@ -45,12 +45,10 @@ You can enable calendar sharing for all users in your organization in the Micros
 
 ## Invite people to access calendars
 
-Once sharing is enabled, calendar owners can extend invitations to specific users. See [Sharing your calendar in Outlook Web App](https://support.microsoft.com/office/7ecef8ae-139c-40d9-bae2-a23977ee58d5) for instructions.
+Once sharing is enabled, calendar owners can extend invitations to specific users. For instructions, see [Sharing your calendar in Outlook Web App](https://support.microsoft.com/office/7ecef8ae-139c-40d9-bae2-a23977ee58d5).
 
 ## Related content
 
-[Turn external sharing on or off for a site](/sharepoint/change-external-sharing-site) (article)
-
-[Overview of the Microsoft 365 admin center](../../business-video/admin-center-overview.md) (video)
-
+[Turn external sharing on or off for a site](/sharepoint/change-external-sharing-site) (article)\
+[Overview of the Microsoft 365 admin center](../../business-video/admin-center-overview.md) (video)\
 [Manage email and calendars](../email/index.yml) (link page)

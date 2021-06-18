@@ -173,13 +173,13 @@ Alternatively, you can also use the command-line tool *wpr.exe*, which is availa
 
     ![UAC](images/wpt-yes.png)
 
-4. Next, download the [Microsoft Defender for Endpoint analysis](https://github.com/YongRhee-MDE/Scripts/blob/master/MDAV.wprp) profile and save as `WD.wprp` to a folder like `C:\temp`. 
+4. Next, download the [Microsoft Defender for Endpoint analysis](https://github.com/YongRhee-MDE/Scripts/blob/master/MDAV.wprp) profile and save as `MDAV.wprp` to a folder like `C:\temp`. 
      
 5. On the WPR dialog box, select **More options**.
 
     ![Select more options](images/wpr-03.png)
 
-6. Select **Add Profiles...** and browse to the path of the `WD.wprp` file.
+6. Select **Add Profiles...** and browse to the path of the `MDAV.wprp` file.
 
 7. After that, you should see a new profile set under *Custom measurements* named *Microsoft Defender for Endpoint analysis* underneath it.
 
@@ -243,7 +243,7 @@ Alternatively, you can also use the command-line tool *wpr.exe*, which is availa
 
 The command-line tool *wpr.exe* is part of the operating system starting with Windows 8. To collect a WPR trace using the command-line tool wpr.exe:
 
-1. Download **[Microsoft Defender for Endpoint analysis](https://github.com/YongRhee-MDE/Scripts/blob/master/MDAV.wprp)** profile for performance traces to a file named `WD.wprp` in a local directory such as `C:\traces`.
+1. Download **[Microsoft Defender for Endpoint analysis](https://github.com/YongRhee-MDE/Scripts/blob/master/MDAV.wprp)** profile for performance traces to a file named `MDAV.wprp` in a local directory such as `C:\traces`.
 
 3. Right-click the **Start Menu** icon and select **Windows PowerShell (Admin)** or **Command Prompt (Admin)** to open an Admin command prompt window.
 
@@ -252,7 +252,7 @@ The command-line tool *wpr.exe* is part of the operating system starting with Wi
 5. At the elevated prompt, run the following command to start a Microsoft Defender for Endpoint performance trace:
 
     ```console
-    wpr.exe -start C:\traces\WD.wprp!WD.Verbose -filemode
+    wpr.exe -start C:\traces\MDAV.wprp!WD.Verbose -filemode
     ```
     
     >[!WARNING]
