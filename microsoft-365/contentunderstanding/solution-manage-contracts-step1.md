@@ -194,7 +194,10 @@ To apply your model to a SharePoint document library:
 
     ![Screenshot of the Contract home page showing the Libraries with this model section.](../media/content-understanding/contract-libraries-with-this-model.png)
 
-7. On the library page, select **Settings** > **Library settings**, add a **Status** column, and then apply the **In review**, **Approved**, and **Rejected** values.
+7. Under **Settings** > **Library settings**:
+
+- Add a column named **Status** and select **Choice** as the column type.
+- Apply the **In review**, **Approved**, and **Rejected** values.
 
 After you apply the model to the document library, you can begin uploading documents to the site and see the results.
 
