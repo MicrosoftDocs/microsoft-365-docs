@@ -91,19 +91,19 @@ The procedures in this article first describe how to set the order, and then how
 
 3. Click **Policies** then **Administrative templates**.
 
-4. Expand the tree to **Windows components > Windows Defender > Signature updates** and configure the following settings:
+4. Expand the tree to **Windows components** > **Windows Defender** > **Signature updates** and configure the following settings:
 
    1.  Double-click the **Define the order of sources for downloading security intelligence updates** setting and set the option to **Enabled**.
 
    2.  Enter the order of sources, separated by a single pipe, for example: `InternalDefinitionUpdateServer|MicrosoftUpdateServer|MMPC`, as shown in the following screenshot.
 
-   ![Screenshot of group policy setting listing the order of sources](images/defender/wdav-order-update-sources.png)
+      :::image type="content" source="../../media/wdav-order-update-sources.png" alt-text="group policy setting listing the order of sources":::
 
-   3. Click **OK**. This will set the order of protection update sources.
+   3. Select **OK**. This will set the order of protection update sources.
 
    4. Double-click the **Define file shares for downloading security intelligence updates** setting and set the option to **Enabled**.
 
-   5. Enter the file share source. If you have multiple sources, enter each source in the order they should be used, separated by a single pipe. Use [standard UNC notation](/openspecs/windows_protocols/ms-dtyp/62e862f4-2a51-452e-8eeb-dc4ff5ee33cc) for denoting the path, for example: `\\host-name1\share-name\object-name|\\host-name2\share-name\object-name`.  If you do not enter any paths, then this source will be skipped when the VM downloads updates.
+   5. Specify the file share source. If you have multiple sources, enter each source in the order they should be used, separated by a single pipe. Use [standard UNC notation](/openspecs/windows_protocols/ms-dtyp/62e862f4-2a51-452e-8eeb-dc4ff5ee33cc) for denoting the path, for example: `\\host-name1\share-name\object-name|\\host-name2\share-name\object-name`.  If you do not enter any paths, then this source will be skipped when the VM downloads updates.
 
    6. Click **OK**. This will set the order of file shares when that source is referenced in the **Define the order of sources...** group policy setting.
 
