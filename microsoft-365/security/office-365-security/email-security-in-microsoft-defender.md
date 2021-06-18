@@ -40,28 +40,23 @@ This article explains how to view and investigate malware and phishing attempts 
 
 To see malware detected in email sorted by Microsoft 365 technology, use the [Email > Malware](threat-explorer-views.md#email--malware) view of Explorer (or Real-time detections). Malware is the default view, so it may be selected as soon as you open Explorer.
 
-1. In the Security & Compliance Center (<https://protection.office.com>), choose **Threat management** \> **Explorer** (or **Real-time detections**). (This example uses Explorer.)
-
-   If you're in the converged Microsoft 365 Defender portal (<https://security.microsoft.com>) scroll to **Email & collaboration** > **Explorer**.
+1. In the Microsoft 365 Defender portal (<https://security.microsoft.com>), choose **Email & collaboration** \> **Explorer** (or **Real-time detections**). (This example uses Explorer.) 
+If you're in the converged Microsoft 365 Defender portal (https://security.microsoft.com/) scroll to **Email & collaboration** > **Explorer**.
 
    From here, start at the View, choose a particular frame of time to investigate (if needed), and focus your filters, as per the [Explorer walk- through](threat-hunting-in-threat-explorer.md#threat-explorer-walk-through).
 
-2. In the **View** menu, choose **Email** \> **Malware**.
-
-   > [!div class="mx-imgBorder"]
-   > ![View menu for Explorer](../../media/ExplorerViewEmailMalwareMenu.png)
+2. In the **View** menu, choose **Malware** under **Email**.
 
 3. Click **Sender**, and then choose **Basic** \> **Detection technology**.
 
-   Your detection technologies are now available as filters for the report.
+   
+   :::image type="content" source="../../media/exploreremailmalwaredetectiontech-newimg.png" alt-text="malware detection technology":::
 
-   > [!div class="mx-imgBorder"]
-   > ![Malware detection technologies](../../media/ExplorerEmailMalwareDetectionTech.png)
+   Your detection technologies are now available as filters for the report.
 
 4. Choose an option. Then select the **Refresh** button to apply that filter.
 
-   > [!div class="mx-imgBorder"]
-   > ![Selected detection technology](../../media/ExplorerEmailMalwareDetectionTechATP.png)
+   :::image type="content" source="../../media/exploreremailmalwaredetectiontech2-new.png" alt-text="selected detection technology"::: 
 
    The report refreshes to show the results that malware detected in email, using the technology option you selected. From here, you can conduct further analysis. 
 
@@ -71,7 +66,7 @@ You can view phishing attempts through URLs in email, including a list of URLs t
 
 To review phish URLs in messages and clicks on URLs in phish messages, use the [**Email** > **Phish**](threat-explorer-views.md#email--phish) view of Explorer or Real-time detections.
 
-1. In the Security & Compliance Center (<https://protection.office.com>), choose **Threat management** \> **Explorer** (or **Real-time detections**). (This example uses Explorer.)
+1. In the Microsoft 365 Defender portal (<https://security.microsoft.com>), choose **Email & collaboration** \> **Explorer** (or **Real-time detections**). (This example uses Explorer.)
 
 2. In the **View** menu, choose **Email** \> **Phish**.
 
@@ -82,8 +77,7 @@ To review phish URLs in messages and clicks on URLs in phish messages, use the [
 
 4. Select one or more options, such as **Blocked** and **Block overridden**, and then select the **Refresh** button on the same line as the options to apply that filter. (Don't refresh your browser window.)
 
-   > [!div class="mx-imgBorder"]
-   > ![URLs and click verdicts](../../media/ThreatExplorerEmailPhishClickVerdictOptions.png)
+    :::image type="content" source="../../media/threatexploreremailphishclickverdict-new.png" alt-text="URLs and click verdicts":::
 
    The report refreshes to show two different URL tables on the URL tab under the report:
 
