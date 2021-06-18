@@ -12,7 +12,7 @@ ms.author: deniseb
 ms.reviewer: marcmcc
 manager: dansimp
 ms.custom: nextgen
-ms.date: 06/15/2021
+ms.date: 06/17/2021
 ms.technology: mde
 ms.topic: article
 ---
@@ -77,7 +77,7 @@ Microsoft Defender Antivirus uses multiple detection and prevention technologies
    - **Time extension for file scanning by the cloud**: 50
    - **Prompt users before sample submission**: Send all data without prompting
 
-   ![Intune config](images/defender/intune-block-at-first-sight.png)
+   :::image type="content" source="../../media/intune-block-at-first-sight.png" alt-text="Intune config block at first sight":::
 
 4. Save your settings.
 
@@ -131,7 +131,7 @@ You can confirm that block at first sight is enabled on individual client device
 
 2. Select **Virus & threat protection**, and then, under **Virus & threat protection settings**, select **Manage Settings**.
 
-   ![Screenshot of the Virus & threat protection settings label in the Windows Security app](images/defender/wdav-protection-settings-wdsc.png)
+   :::image type="content" source="../../media/wdav-protection-settings-wdsc.png" alt-text="Screenshot of the Virus & threat protection settings label in the Windows Security app":::
 
 3. Confirm that **Cloud-delivered protection** and **Automatic sample submission** are both turned on.
 
