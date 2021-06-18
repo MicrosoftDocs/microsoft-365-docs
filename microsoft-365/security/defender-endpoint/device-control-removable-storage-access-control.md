@@ -321,7 +321,7 @@ DeviceEvents
 ## Frequently asked questions
 **What is the removable storage media limitation for the maximum number of USBs?**
 
-- Internally we have validated one USB group with 100,000 media - up to 7 MB in size. The policy works fine in both Intune and GPO without performance issues.
+Internally we have validated one USB group with 100,000 media - up to 7 MB in size. The policy works fine in both Intune and GPO without performance issues.
 
 **Why does the policy not work?**
 
@@ -331,6 +331,17 @@ Another reason could be that the XML file is not correctly formatted, for exampl
 
 If there is a value and the policy is managed via Group Policy, check whether the client device can access the policy XML path.
 
+**How can I know which machine is using out of date antimalware client version in the organization?**
 
-
+You can use following query to get antimalware client version on the Microsoft 365 security portal:
+```kusto
+//check the antimalware client version
+DeviceFileEvents
+| where FileName == "MsMpEng.exe"
+| where FolderPath contains @"C:\ProgramData\Microsoft\Windows Defender\Platform\"
+| extend PlatformVersion=tostring(split(FolderPath, "\\", 5))
+//| project DeviceName, PlatformVersion // check which machine is using legacy platformVersion
+| summarize dcount(DeviceName) by PlatformVersion // check how many machines are using which platformVersion
+| order by PlatformVersion desc
+```
 
