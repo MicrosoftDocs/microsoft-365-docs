@@ -1,6 +1,6 @@
 ---
 title: Stream Microsoft 365 Defender events to your Storage account
-description: Learn how to configure  Microsoft 365 Defender to stream Advanced Hunting events to your Storage account.
+description: Learn how to configure Microsoft 365 Defender to stream Advanced Hunting events to your Storage account.
 keywords: raw data export, streaming API, API, Event Hubs, Azure storage, storage account, Advanced Hunting, raw data sharing
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,7 +18,7 @@ ms.topic: article
 ms.technology: mde
 ---
 
-# Configure  Microsoft 365 Defender to stream Advanced Hunting events to your Storage account
+# Configure Microsoft 365 Defender to stream Advanced Hunting events to your Storage account
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
