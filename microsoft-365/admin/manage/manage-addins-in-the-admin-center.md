@@ -118,7 +118,7 @@ Support for turning off the Office Store is available in the following versions:
 This does not prevent an administrator from using Centralized Deployment to assign an add-in from the Office Store.
 
 > [!NOTE] 
-> Add-ins such as Visio Data Visualizer, Bing Maps, and People Graph will still show up in the ribbon, even if an admin has disabled the Store. To remove these links, adminisrators must disable the store through Group Policy Object (GPO).
+> Add-ins such as Visio Data Visualizer, Bing Maps, and People Graph will still show up in the ribbon, even if an admin has disabled the Store. To remove these links, administrators must disable the Store through Group Policy Object (GPO).
   
 To prevent a user from signing in with a Microsoft account, you can restrict logon to use only the organizational account. For more information, see [Identity, authentication, and authorization in Office 2016](/DeployOffice/security/identity-authentication-and-authorization-in-office).  
 
