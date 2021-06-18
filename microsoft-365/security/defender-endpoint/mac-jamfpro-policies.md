@@ -133,7 +133,7 @@ You'll need to take the following steps:
 
 ## Step 3: Configure Microsoft Defender for Endpoint settings
 
-You can either use JAMF Pro GUI to configure Defender by configuring individual Microsoft Defender setting,
+You can either use JAMF Pro GUI to edit individual settings of the Microsoft Defender configuration,
 or use the legacy method by creating a configuration Plist in a text editor, and uploading it to JAMF Pro.
 
 Note that you must use exact `com.microsoft.wdav` as the **Preference Domain**, Microsoft Defender uses only this name and `com.microsoft.wdav.ext` to load its managed settings!
