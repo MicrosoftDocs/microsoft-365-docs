@@ -135,11 +135,12 @@ The following procedure describes how to configure the default anti-phishing pol
        - **If mailbox intelligence detects an impersonated user**<sup>\*</sup>: Select **Move message to the recipients' Junk Email folders** (Standard) or **Quarantine the message** (Strict).
        - **If message is detected as spoof**: Select **Move message to the recipients' Junk Email folders** (Standard) or **Quarantine the message** (Strict).
      - **Safety tips & indicators** section: Configure the following settings:
+       - **Show first contact safety tip**: Select (turn on).
        - **Show user impersonation safety tip**<sup>\*</sup>: Select (turn on).
        - **Show domain impersonation safety tip**<sup>\*</sup>: Select (turn on).
        - **Show user impersonation unusual characters safety tip**<sup>\*</sup>: Select (turn on).
        - **Show (?) for unauthenticated senders for spoof**: Select (turn on).
-       - **Show "via" tag**: Select (turn on) if this setting is available.
+       - **Show "via" tag**: Select (turn on).
 
      When you're finished, click **Save**.
 
@@ -147,7 +148,7 @@ The following procedure describes how to configure the default anti-phishing pol
 
 4. Click **Save** and then click **Close**
 
-For detailed instructions for configuring anti-phishing policies, see [Configure anti-phishing policies in EOP](configure-anti-phishing-policies-eop.md) and [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-atp-anti-phishing-policies.md).
+For detailed instructions for configuring anti-phishing policies, see [Configure anti-phishing policies in EOP](configure-anti-phishing-policies-eop.md) and [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-mdo-anti-phishing-policies.md).
 
 ## Part 3 - Anti-spam protection in EOP
 
