@@ -139,9 +139,11 @@ On an ongoing basis, identify the highest priority incidents for analysis and re
 
 If you are new to security analysis, see the [introduction to responding to your first incident](incidents-overview.md) for additional information and to step through an example incident.
 
+For more information about incident response across Microsoft products, see [this article](/security/compass/incident-response-overview).
+
 ## Example security operations for Microsoft 365 Defender
 
-Here's an example of security operations for Microsoft 365 Defender.
+Here's an example of security operations (SecOps) for Microsoft 365 Defender.
 
 :::image type="content" source="../../media/incidents-overview/incidents-example-operations.png" alt-text="An example of security operations for Microsoft 365 Defender":::
 
@@ -164,11 +166,19 @@ Annual tasks can include conducting a major incident or breach exercise to test 
 
 Daily, monthly, quarterly, and annual tasks can be used to update or refine processes, policies, and security configurations.
 
+### SecOps resources across Microsoft products
+
+For more information about SecOps across Microsoft's products, see these resources:
+
+- [Capabilities](/security/compass/security-operations-capabilities)
+- [Best practices](/security/compass/security-operations)
+- [Videos and slides](/security/compass/security-operations-videos-and-decks)
+
 ## Next steps
 
 **If you are new** to security analysis and incident response:
 
-- See the [Respond to your first incident walkthrough](first-incident-overview.md) to get a guided tour of a typical process of analysis, remediation, and post-incident review in the Microsoft 365 Defender portal with an example of an attack.
+- See the [Respond to your first incident walkthrough](first-incident-overview.md) to get a guided tour of a typical process of analysis, remediation, and post-incident review in the Microsoft 365 Defender portal with an example attack.
 
 **If you have experience** with security analysis and incident response:
 
@@ -176,7 +186,7 @@ Daily, monthly, quarterly, and annual tasks can be used to update or refine proc
 
   - See which incidents should be [prioritized](incident-queue.md) based on severity and other factors. 
 
-  - [Manage incidents](manage-incidents.md), which includes renaming, assignment, classifying, and adding tags and comments based on your incident management workflow.
+  - [Manage incidents](manage-incidents.md), which includes renaming, assigning, classifying, and adding tags and comments based on your incident management workflow.
 
   - Perform [investigations](investigate-incidents.md) of incidents.
 

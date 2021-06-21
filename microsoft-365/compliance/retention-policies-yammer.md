@@ -24,7 +24,7 @@ description: "Learn about retention policies that apply to Yammer."
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 > [!NOTE]
-> This feature is in preview and not yet available for all customers.
+> This feature is in preview and subject to change.
 
 The information in this article supplements [Learn about retention](retention.md) because it has information that's specific to Yammer.
 
