@@ -395,9 +395,9 @@
               href: archive-celltrust-data.md          
             - name: Cisco Jabber on MS SQL
               href: archive-ciscojabberonmssql-data.md
-            - name: Cisco Jabber on Oracle (preview)
+            - name: Cisco Jabber on Oracle
               href: archive-ciscojabberonoracle-data.md
-            - name: Cisco Jabber on PostgreSQL (preview)
+            - name: Cisco Jabber on PostgreSQL
               href: archive-ciscojabberonpostgresql-data.md
             - name: EML
               href: archive-eml-data.md
@@ -421,6 +421,8 @@
               href: archive-salesforcechatter-data.md
             - name: ServiceNow
               href: archive-servicenow-data.md
+            - name: Skype for Business (preview)
+              href: archive-skypeforbusiness-data.md
             - name: Slack eDiscovery
               href: archive-slack-data.md    
             - name: Symphony
@@ -431,8 +433,8 @@
               href: archive-webexteams-data.md
             - name: Webpages
               href: archive-webpagecapture-data.md
-            - name: Webpages
-              href: archive-webpagecapture-data.md
+            - name: WeChat
+              href: archive-wechat-data.md
             - name: Workplace from Facebook
               href: archive-workplacefromfacebook-data.md    
             - name: XIP
@@ -455,11 +457,15 @@
               href: archive-enterprise-number-data.md
             - name: O2 Telefonica SMS and Voice Network Archiver
               href: archive-o2-network-data.md
-            - name: TELUS SMS Network Archiver
+            - name: Signal (preview)
+              href: archive-signal-archiver-data.md
+            - name: Telegram (preview)
+              href: archive-telegram-archiver-data.md
+            - name: TELUS Network
               href: archive-telus-network-data.md
             - name: Verizon SMS/MMS Network Archiver
               href: archive-verizon-network-data.md
-            - name: WeChat Archiver (preview)
+            - name: WeChat Archiver
               href: archive-wechat-data.md
             - name: WhatsApp Archiver
               href: archive-whatsapp-data.md
