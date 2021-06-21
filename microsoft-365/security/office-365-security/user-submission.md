@@ -120,7 +120,9 @@ After you've verified that your mailbox meets all applicable prerequisites, you 
 
 ## Third-party reporting tools
 
-You can configure third-party message reporting tools to send reported messages to the custom mailbox. The only requirement is that the original message is included as an attachment in the message that's sent to the custom mailbox (don't just forward the original message to the custom mailbox).
+You can configure third-party message reporting tools to send reported messages to the custom mailbox. You would do this by setting the **Microsoft Outlook Report Message button** setting to **Off** and setting the **My organization's mailbox** to an Office 365 mailbox of your choice.
+
+The only requirement is that the original message is included as a .EML or .MSG attachment (not compressed) in the message that's sent to the custom mailbox (don't just forward the original message to the custom mailbox).
 
 The message formatting requirements are described in the next section. The formatting is optional, but if it does not follow the prescribed format, the reports will always be submitted as phish.
 
