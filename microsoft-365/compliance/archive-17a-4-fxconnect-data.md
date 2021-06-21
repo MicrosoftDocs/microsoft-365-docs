@@ -1,5 +1,5 @@
 ---
-title: "Set up a connector to archive FX Connect data in Microsoft 365"
+title: "Set up a 17a-4 DataParser connector to archive FX Connect data in Microsoft 365"
 f1.keywords:
 - NOCSH
 ms.author: markjjo
