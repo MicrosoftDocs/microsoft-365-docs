@@ -33,9 +33,6 @@ You must be a Global admin to do the steps described in this article. Billing ad
 
 ## Change the language you receive email in
 
-> [!NOTE]
-> Billing admins can also do the steps in this section.
-
 Billing notification emails are sent in your organization’s preferred language. To change the preferred language, use the following steps.
 
 1. In the Microsoft 365 admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Billing notifications</a> page.
@@ -82,6 +79,9 @@ In addition to your Global and Billing admins, we send billing notifications to 
 3. In the right pane, type the email address that you want to use, then select **Save**.
 
 ## Receive your organization's invoices as email attachments
+
+> [!NOTE]
+> Billing admins can also do the steps in this section.
 
 You can have a copy of your organization's invoice attached as a PDF file to invoice notification emails when a new invoice is ready. Use the following steps to receive invoices as attachments.
 
