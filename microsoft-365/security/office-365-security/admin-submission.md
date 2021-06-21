@@ -243,4 +243,4 @@ On the **User reported messages** tab, select a message in the list, click **Sub
 - **Report spam**
 - **Trigger investigation**
 
-![New Options on the Action button](../media/admin-submission-main-action-button.png) 
+![New Options on the Action button](../../media/admin-submission-main-action-button.png) 
