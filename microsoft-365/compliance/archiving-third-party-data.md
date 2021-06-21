@@ -62,7 +62,7 @@ Click the link in the **Third-party data** column to go the step-by-step instruc
 
 The table in this section lists the third-party data connectors available in partnership with Veritas. The table also summarizes the compliance solutions that you can apply to third-party data after you import and archive in Microsoft 365. See the [Overview of compliance solutions that support third-party data](#overview-of-compliance-solutions-that-support-third-party-data) section for a more detailed description of each compliance solution and how it supports third-party data.
 
-Before you can archive third-party data in Microsoft 365, you have to work with Veritas to set up their archiving service (called *Merge 1*) for your organization. For more information, click the link in the **Third-party data** column to go the step-by-step instructions for creating a connector for that data type.
+Before you can archive third-party data in Microsoft 365, you have to work with Veritas to set up their archiving service (called *Merge1*) for your organization. For more information, click the link in the **Third-party data** column to go the step-by-step instructions for creating a connector for that data type.
 
 |Third-party data  |Litigation hold|eDiscovery  |Retention settings  |Records management  |Communication compliance  |Insider risk management  |
 |:---------|:---------|:---------|:---------|:---------|:---------|:---------|
