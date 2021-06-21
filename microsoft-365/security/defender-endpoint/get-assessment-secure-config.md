@@ -42,7 +42,7 @@ There are different API calls to get different types of data. Because the amount
 
   - Download all the files using the download URLs and process the data as you like.
 
-Data that is collected (using either _OData_ or _via files_) is the current snapshot of the current state, and does not contain historic data. In order to collect historic data, customers must save the data in their own data storages.
+Data that is collected (using either _JSON response_ or _via files_) is the current snapshot of the current state, and does not contain historic data. In order to collect historic data, customers must save the data in their own data storages.
 
 > [!Note]
 >
