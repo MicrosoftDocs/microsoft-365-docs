@@ -285,7 +285,7 @@ The following table describes other tools that you can use to replace the existi
 </tr>
 <tr class="even">
 <td>Delete bulk email from a mailbox</td>
-<td><p><a href="/microsoft-365/compliance/set-up-an-archive-and-deletion-policy-for-mailboxes?view=o365-worldwide"><span class="underline">Set up an archive and deletion policy for mailboxes</span></a></p>
+<td><p><a href="/microsoft-365/compliance/set-up-an-archive-and-deletion-policy-for-mailboxes"><span class="underline">Set up an archive and deletion policy for mailboxes</span></a></p>
 <p></p></td>
 <td><p>Admins can create an archiving and deletion policy that automatically moves items to a user's archive mailbox and automatically deletes items from the mailbox.</p>
 </td>
