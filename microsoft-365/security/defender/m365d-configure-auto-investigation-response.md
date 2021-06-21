@@ -53,7 +53,9 @@ Then, after you're all set up, you can [view and manage remediation actions in t
 Whether automated investigations run, and whether remediation actions are taken automatically or only upon approval for your devices depend on certain settings, such as your organization's device group policies. Review the configured automation level for your device group policies.
 
 1. Go to the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)) and sign in.
+
 2. Go to **Settings** > **Permissions** > **Device groups**.
+
 3. Review your device group policies. In particular, look at the **Remediation level** column. We recommend using **Full - remediate threats automatically**.  You might need to create or edit your device groups to get the level of automation you want. To get help with this task, see the following articles:
    - [How threats are remediated](/windows/security/threat-protection/microsoft-defender-atp/automated-investigations#how-threats-are-remediated)
    - [Create and manage device groups](/windows/security/threat-protection/microsoft-defender-atp/machine-groups)
@@ -66,25 +68,31 @@ Although certain alerts and security policies can trigger automated investigatio
 
 Security settings in Office 365 help protect email and content. To view or change these settings, follow the guidance in [Protect against threats](../office-365-security/protect-against-threats.md).
 
-1. In the Microsoft 365 security center ([https://security.microsoft.com](https://security.microsoft.com)), go to **Policies & Rules** \> **Threat policies**.
+1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), go to **Policies & Rules** \> **Threat policies**.
+
 2. Make sure all of the following policies are configured. To get help and recommendations, see [Protect against threats](/microsoft-365/security/office-365-security/protect-against-threats).
-   - [Anti-malware)](../office-365-security/protect-against-threats.md#part-1---anti-malware-protection-in-eop)
-   - [Anti-phishing)](../office-365-security/protect-against-threats.md#part-2---anti-phishing-protection)
+   - [Anti-malware](../office-365-security/protect-against-threats.md#part-1---anti-malware-protection-in-eop)
+   - [Anti-phishing](../office-365-security/protect-against-threats.md#part-2---anti-phishing-protection-in-eop-and-defender-for-office-365)
    - [Safe Attachments](../office-365-security/protect-against-threats.md#safe-attachments-policies-in-microsoft-defender-for-office-365)
    - [Safe Links](../office-365-security/protect-against-threats.md#safe-links-policies-in-microsoft-defender-for-office-365)
    - [Anti-spam](../office-365-security/protect-against-threats.md#part-3---anti-spam-protection-in-eop)
+
 3. Make sure [Microsoft Defender for Office 365 for SharePoint, OneDrive, and Microsoft Teams](../office-365-security/protect-against-threats.md#part-5---verify-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on) is turned on.
+
 4. Make sure [zero-hour auto purge for email](../office-365-security/protect-against-threats.md#zero-hour-auto-purge-for-email-in-eop) protection is in effect.
+
 5. (This step is optional.) Review your [Office 365 alert policies](../../compliance/alert-policies.md) in the Microsoft 365 compliance center ([https://compliance.microsoft.com/compliancepolicies](https://compliance.microsoft.com/compliancepolicies)). Several default alert policies are in the Threat management category. Some of these alerts can trigger automated investigation and response. To learn more, see [Default alert policies](../../compliance/alert-policies.md#default-alert-policies).
 
 ## Make sure Microsoft 365 Defender is turned on
 
 :::image type="content" source="../../media/mtp-enable/mtp-on.png" alt-text="MTP on":::
 
-1. Sign in to the Microsoft 365 security center ([https://security.microsoft.com](https://security.microsoft.com)).
-2. In the navigation pane, look for **Incidents**, **Action center**, and **Hunting**, as shown in the preceding image.
-   - If you see **Incidents**, **Action center**, and **Hunting**, Microsoft 365 Defender is turned on. See the [Review or change the automation level for device groups](#review-or-change-the-automation-level-for-device-groups) section of this article.
+1. Sign in to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)).
+
+2. In the navigation pane, look for **Incidents & Alerts**, **Hunting**, and **Action center** as shown in the preceding image.
+   - If you see **Incidents & Alerts**, **Hunting**, and **Action center**, Microsoft 365 Defender is turned on. See the [Review or change the automation level for device groups](#review-or-change-the-automation-level-for-device-groups) section of this article.
    - If you do *not* see **Incidents**, **Action center**, or **Hunting**, Microsoft 365 Defender might not be turned on. In this case, [visit the Action center](m365d-action-center.md)).
+
 3. In the navigation pane, choose **Settings** > **Microsoft 365 Defender**. Confirm that Microsoft 365 Defender is turned on.
 
 > [!TIP]

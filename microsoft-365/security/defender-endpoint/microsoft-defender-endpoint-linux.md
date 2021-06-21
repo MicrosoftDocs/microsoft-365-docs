@@ -72,7 +72,7 @@ If you experience any installation failures, refer to [Troubleshooting installat
 
 ### System requirements
 
-- Supported Linux server distributions and versions:
+- Supported Linux server distributions and x64 (AMD64/EM64T) versions:
 
   - Red Hat Enterprise Linux 7.2 or higher
   - CentOS 7.2 or higher
@@ -96,7 +96,9 @@ If you experience any installation failures, refer to [Troubleshooting installat
 
 - /opt/microsoft/mdatp/sbin/wdavdaemon requires executable permission. For more information, see "Ensure that the daemon has executable permission" in [Troubleshoot installation issues for Microsoft Defender for Endpoint on Linux](/microsoft-365/security/defender-endpoint/linux-support-install).
 
-- Memory: 1 GB
+- Cores: 2 minimum, 4 preferred
+
+- Memory: 1 GB minimum, 4 preferred
 
     > [!NOTE]
     > Please make sure that you have free disk space in /var.
@@ -135,7 +137,7 @@ The following downloadable spreadsheet lists the services and their associated U
 |![Thumb image for Microsoft Defender for Endpoint URLs spreadsheet](images/mdatp-urls.png)<br/>  | Spreadsheet of specific DNS records for service locations, geographic locations, and OS. <br><br>[Download the spreadsheet here.](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)
 
 > [!NOTE]
-> For a more specific URL list, see [Configure proxy and internet connectivity settings](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-proxy-internet#enable-access-to-microsoft-defender-atp-service-urls-in-the-proxy-server).
+> For a more specific URL list, see [Configure proxy and internet connectivity settings](/microsoft-365/security/defender-endpoint/configure-proxy-internet#enable-access-to-microsoft-defender-atp-service-urls-in-the-proxy-server).
 
 Defender for Endpoint can discover a proxy server by using the following discovery methods:
 - Transparent proxy

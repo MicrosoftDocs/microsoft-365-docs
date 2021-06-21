@@ -8,6 +8,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 localization_priority: Normal
+ms.topic: conceptual
 author: dansimp
 ms.author: dansimp
 ms.reviewer: 
@@ -38,7 +39,7 @@ Check if network protection has been enabled on a local device by using Registry
 
 2. Choose **HKEY_LOCAL_MACHINE** from the side menu
 
-3. Navigate through the nested menus to **SOFTWARE** > **Policies** > **Microsoft** > **Windows Defender** > **Policy Manager** 
+3. Navigate through the nested menus to **SOFTWARE** > **Microsoft** > **Windows Defender** > **Windows Defender Exploit Guard** > **Network Protection**
 
 4. Select **EnableNetworkProtection** to see the current state of network protection on the device
 
@@ -76,7 +77,7 @@ Enable network protection by using any of these methods:
 
 ### Mobile device management (MDM)
 
-Use the [./Vendor/MSFT/Policy/Config/Defender/EnableNetworkProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection) configuration service provider (CSP) to enable or disable network protection or enable audit mode.
+Use the [./Vendor/MSFT/Policy/Config/Defender/EnableNetworkProtection](/windows/client-management/mdm/policy-csp-defender) configuration service provider (CSP) to enable or disable network protection or enable audit mode.
 
 ### Microsoft Endpoint Manager (formerly Intune)
 
@@ -115,7 +116,7 @@ Confirm network protection is enabled on a local computer by using Registry edit
 
 1. Select **Start** and type **regedit** to open **Registry Editor**.
 
-2. Navigate to **HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Policy Manager\EnableNetworkProtection**
+2. Navigate to **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Windows Defender Exploit Guard\Network Protection\EnableNetworkProtection**
 
 3. Select **EnableNetworkProtection** and confirm the value:
    * 0=Off

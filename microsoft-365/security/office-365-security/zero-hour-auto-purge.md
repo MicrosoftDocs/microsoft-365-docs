@@ -69,6 +69,12 @@ By default, ZAP for phishing is enabled in anti-spam policies, and the default a
 
 For more information about configuring spam filtering verdicts, see [Configure anti-spam policies in Microsoft 365](configure-your-spam-filter-policies.md).
 
+### ZAP for high confidence phishing 
+
+For **read or unread messages** that are identified as high confidence phishing after delivery, ZAP quarantines the message. Only admins can view and manage high confidence phish messages from quarantine. 
+
+ZAP for high confidence phish is enabled by default. For more information, see [Secure by Default in Office 365](secure-by-default.md).
+
 ### ZAP for spam
 
 For **unread messages** that are identified as spam after delivery, the ZAP outcome depends on the action that's configured for the **Spam** filtering verdict in the applicable anti-spam policy. The available filtering verdict actions for spam and their possible ZAP outcomes are described in the following list:
@@ -115,6 +121,6 @@ ZAP still works as long as the message has not been deleted, or as long as the s
 
 ### How does ZAP affect mailboxes on hold?
 
-ZAP won't quarantine messages from mailboxes on hold. ZAP can move messages to the Junk Email folder based on the action that's configured for a spam or phishing verdict in anti-spam policies.
+ZAP will quarantine messages from mailboxes on hold. ZAP can move messages to the Junk Email folder based on the action that's configured for a spam or phishing verdict in anti-spam policies.
 
 For more information about holds in Exchange Online, see [In-Place Hold and Litigation Hold in Exchange Online](/Exchange/security-and-compliance/in-place-and-litigation-holds).

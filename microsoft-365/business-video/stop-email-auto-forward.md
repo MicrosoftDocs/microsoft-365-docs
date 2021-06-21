@@ -20,10 +20,12 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Learn how to stop auto-forwarding emails."
+description: "Learn how to stop auto-forwarding emails by creating a mail flow rule to avoid theft of proprietary info."
 ---
 
 # Stop email auto-forward
+
+## Watch: Stop auto-forwarding emails
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2W6kS?autoplay=false]
 
@@ -45,6 +47,6 @@ If a hacker gains access to a user's mailbox, they can auto-forward the user's e
 
 ## Related content
 
-[Add another email alias for a user](https://docs.microsoft.com/microsoft-365/admin/email/add-another-email-alias-for-a-user) (article)
-[Configure email forwarding in Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/email/configure-email-forwarding) (article)
-[Find and fix email delivery issues as an Office 365 for business admin](https://docs.microsoft.com/exchange/troubleshoot/email-delivery/email-delivery-issues) (article)
+[Add another email alias for a user](../admin/email/add-another-email-alias-for-a-user.md) (article)\
+[Configure email forwarding in Microsoft 365](../admin/email/configure-email-forwarding.md) (article)\
+[Find and fix email delivery issues as an Office 365 for business admin](/exchange/troubleshoot/email-delivery/email-delivery-issues) (article)

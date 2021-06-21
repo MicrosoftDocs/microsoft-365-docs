@@ -34,7 +34,7 @@ Depending on
 
 - the type of threat, 
 - the resulting verdict, and 
-- how your organization's [device groups](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/machine-groups) are configured, 
+- how your organization's [device groups](/microsoft-365/security/defender-endpoint/machine-groups) are configured, 
 
 remediation actions can occur automatically or only upon approval by your organization’s security operations team. 
 
@@ -44,7 +44,7 @@ Here are a few examples:
 
 - **Example 2**: Contoso's devices are included in a device group that is set for **Semi - require approval for any remediation**. In this case, Contoso's security operations team must review and approve all remediation actions following an automated investigation (see [Review pending actions](#review-pending-actions)).
 
-- **Example 3**: Tailspin Toys has their device groups set to **No automated response** (not recommended). In this case, automated investigations do not occur. No remediation actions are taken or pending, and no actions are logged in the [Action center](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/auto-investigation-action-center#the-action-center) for their devices (see [Manage device groups](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/machine-groups#manage-device-groups)).
+- **Example 3**: Tailspin Toys has their device groups set to **No automated response** (not recommended). In this case, automated investigations do not occur. No remediation actions are taken or pending, and no actions are logged in the [Action center](/microsoft-365/security/defender-endpoint/auto-investigation-action-center#the-action-center) for their devices (see [Manage device groups](/microsoft-365/security/defender-endpoint/machine-groups#manage-device-groups)).
 
 Whether taken automatically or upon approval, an automated investigation can result in one or more of the remediation actions:
 - Quarantine a file
@@ -106,8 +106,8 @@ Automation levels affect whether certain remediation actions are taken automatic
 |**Semi - require approval for core folders remediation** |A verdict of *Suspicious* is reached for a piece of evidence. <br/><br/>Remediation actions are pending approval.  |[Approve (or reject) pending actions](#review-pending-actions).|
 |**Semi - require approval for non-temp folders remediation** |A verdict of *Malicious* is reached for a piece of evidence. <br/><br/>If the artifact is a file or executable that is not in a temporary folder, such as the user's downloads folder or temp folder, remediation actions are pending approval. <br/><br/>If the artifact is a file or executable that *is* in a temporary folder, remediation actions are taken automatically.  |1. [Approve (or reject) pending actions](#review-pending-actions)<br/><br/>2. [Review completed actions](#review-completed-actions)  |
 |**Semi - require approval for non-temp folders remediation** |A verdict of *Suspicious* is reached for a piece of evidence. <br/><br/>Remediation actions are pending approval. |[Approve (or reject) pending actions](#review-pending-actions)  | 
-|Any of the **Full** or **Semi** automation levels |A verdict of *No threats found* is reached for a piece of evidence. <br/><br/>No remediation actions are taken, and no actions are pending approval. |[View details and results of automated investigations](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/auto-investigation-action-center) |
-|**No automated response** (not recommended)|No automated investigations run, so no verdicts are reached, and no remediation actions are taken or awaiting approval. |[Consider setting up or changing your device groups to use **Full** or **Semi** automation](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/machine-groups) |
+|Any of the **Full** or **Semi** automation levels |A verdict of *No threats found* is reached for a piece of evidence. <br/><br/>No remediation actions are taken, and no actions are pending approval. |[View details and results of automated investigations](/microsoft-365/security/defender-endpoint/auto-investigation-action-center) |
+|**No automated response** (not recommended)|No automated investigations run, so no verdicts are reached, and no remediation actions are taken or awaiting approval. |[Consider setting up or changing your device groups to use **Full** or **Semi** automation](/microsoft-365/security/defender-endpoint/machine-groups) |
 
 In Microsoft Defender for Endpoint, all verdicts are tracked in the [Action center](auto-investigation-action-center.md#new-a-unified-action-center).
 

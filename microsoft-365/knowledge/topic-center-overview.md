@@ -1,6 +1,5 @@
 ---
-title: "Topic center overview in Microsoft Viva Topics"
-description: 'Learn about the Topic Center in Microsoft Viva Topics.'
+title: Topic center overview in Microsoft Viva Topics
 author: chuckedmonson
 ms.author: chucked
 manager: pamgreen
@@ -14,6 +13,7 @@ ms.collection:
     - m365initiative-viva-topics
 ROBOTS: 
 localization_priority: None
+description: Learn about the topic center in Microsoft Viva Topics.
 
 ---
 # Topic center overview in Microsoft Viva Topics
@@ -64,7 +64,7 @@ Once a user confirms their connection to a topic, the user can make edits to the
 
 ## Manage topics page
 
-To work on the **Manage topics** page of topic center, you need to have the required Manage topics permissions needed for the knowledge manager role. Your admin can assign these permissions to users during [knowledge management setup](set-up-topic-experiences.md), or new users can be [added afterwards](topic-experiences-knowledge-rules.md) by an admin through the Microsoft 365 admin center.
+To work on the **Manage topics** page of topic center, you need to have the required Manage topics permissions needed for the knowledge manager role. Your admin can assign these permissions to users during [Viva Topics setup](set-up-topic-experiences.md), or new users can be [added afterwards](topic-experiences-knowledge-rules.md) by an admin through the Microsoft 365 admin center.
 
 On the **Manage topics** page, the topic dashboard shows all the topics, you have access to, that were identified from your specified source locations. Each topic will show the date the topic was discovered. A user who was assigned Manage topics permissions can review the unconfirmed topics and choose to:
 
