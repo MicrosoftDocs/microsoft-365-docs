@@ -34,6 +34,18 @@ ms.prod: m365-security
 
 In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, quarantine holds potentially dangerous or unwanted messages. For more information, see [Quarantine in EOP](quarantine-email-messages.md).
 
+As a recipient of a quarantined message, what you can do to the message as a non-admin user is described in the following table:
+
+<br>
+
+****
+
+|Quarantine reason|View|Release|Delete|
+|---|:---:|:---:|:---:|
+|Bulk|![Check mark](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)|
+|Spam|![Check mark](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)|
+|Phishing (not high confidence phishing)|![Check mark](../../media/checkmark.png)||![Check mark](../../media/checkmark.png)|
+|
 
 You view and manage your quarantined messages in the Microsoft 365 Defender portal or (if an admin has set this up) in [end-user spam notifications](use-spam-notifications-to-release-and-report-quarantined-messages.md).
 
