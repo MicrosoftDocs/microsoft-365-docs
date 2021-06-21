@@ -36,7 +36,7 @@ If you need to immediately prevent a user's sign-in access, you should reset the
 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.
 2. Select the box next to the user's name, and then select **Reset password**.
 3. Enter a new password, and then select **Reset**. (Don't send it to them.)
-4. Select the user's name to go to their properties pane, and on the **Account** tab, select **Initiate sign-out**.
+4. Select the user's name to go to their properties pane, and on the **Account** tab, select **Sign out of all sessions**.
 
 Within an hour - or after they leave the current Microsoft 365 page they are on - they're prompted to sign in again. An access token is good for an hour, so the timeline depends on how much time is left on that token, and whether they navigate out of their current webpage.
   
