@@ -99,6 +99,9 @@ Microsoft 365 comes with five pre-trained classifiers:
 - **Threat**: detects a specific category of offensive language text items related to threats to commit violence or do physical harm or damage to a person or property
 - **Discrimination**: detects explicit discriminatory language and is particularly sensitive to discriminatory language against the African American/Black communities when compared to other communities.
 
+> [!IMPORTANT]
+> The Discrimination trainable classifier is only available as public preview to customers whose tenants are homed in North America data centers.
+
 These appear in the **Microsoft 365 compliance center** > **Data classification** > **Trainable classifiers** view with the status of `Ready to use`.
 
 ![classifiers-pre-trained-classifiers](../media/classifiers-ready-to-use-classifiers.png)
