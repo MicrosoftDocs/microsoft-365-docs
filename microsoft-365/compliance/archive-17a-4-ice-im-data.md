@@ -30,9 +30,9 @@ The following overview explains the process of using a data connector to archive
 
 2. On a regular basis, ICE Connect Chat items are collected by the DataParser. The DataParser also converts the content of a message to an email message format.
 
-3. The ICE Chat DataParser connector that you create in the Microsoft 365 compliance center connects to DataParser and transfers the messages to a secure Azure Storage location in the Microsoft cloud.
+3. The ICE DataParser connector that you create in the Microsoft 365 compliance center connects to DataParser and transfers the messages to a secure Azure Storage location in the Microsoft cloud.
 
-4. A subfolder in the Inbox folder named **ICE IM DataParser** is created in the user mailboxes, and the ICE Connect Chat items are imported to that folder. The connector determines which mailbox to import items to by using the value of the *Email* property. Every ICE Connect Chat item contains this property, which is populated with the email address of every participant.
+4. A subfolder in the Inbox folder named **ICE DataParser** is created in the user mailboxes, and the ICE Connect Chat items are imported to that folder. The connector determines which mailbox to import items to by using the value of the *Email* property. Every ICE Connect Chat item contains this property, which is populated with the email address of every participant.
 
 ## Before you set up a connector
 
@@ -44,31 +44,31 @@ The following overview explains the process of using a data connector to archive
 
 The first step is to access to the Data connectors page in the Microsoft 365 compliance center and create a 17a-4 connector for ICE Connect Chat data.
 
-1. Go to <https://compliance.microsoft.com> and then click **Data connectors** > **ICE Chat DataParser**.
+1. Go to <https://compliance.microsoft.com> and then click **Data connectors** > **ICE DataParser**.
 
-2. On the **ICE Chat DataParser** product description page, click **Add connector**.
+2. On the **ICE DataParser** product description page, click **Add connector**.
 
 3. On the **Terms of service** page, click **Accept**.
 
 4. Enter a unique name that identifies the connector and then click **Next**.
 
-5. Sign in to your 17a-4 account and complete the steps in the ICE Chat DataParser connection wizard.
+5. Sign in to your 17a-4 account and complete the steps in the ICE DataParser connection wizard.
 
-## Step 2: Configure the ICE Chat DataParser connector
+## Step 2: Configure the ICE DataParser connector
 
-Work with 17a-4 Support to configure the ICE Chat DataParser connector.
+Work with 17a-4 Support to configure the ICE DataParser connector.
 
 ## Step 3: Map users
 
-The ICE Chat DataParser connector will automatically map users to their Microsoft 365 email addresses before importing data to Microsoft 365.
+The ICE DataParser connector will automatically map users to their Microsoft 365 email addresses before importing data to Microsoft 365.
 
-## Step 4: Monitor the ICE Chat DataParser connector
+## Step 4: Monitor the ICE DataParser connector
 
-After you create an ICE Chat DataParser connector, you can view the connector status in the Microsoft 365 compliance center.
+After you create an ICE DataParser connector, you can view the connector status in the Microsoft 365 compliance center.
 
 1. Go to <https://compliance.microsoft.com> and click **Data connectors** in the left nav.
 
-2. Click the **Connectors** tab and then select the ICE Chat DataParser connector that you created to display the flyout page, which contains the properties and information about the connector.
+2. Click the **Connectors** tab and then select the ICE DataParser connector that you created to display the flyout page, which contains the properties and information about the connector.
 
 3. Under **Connector status with source**, click the **Download log** link to open (or save) the status log for the connector. This log contains data that has been imported to the Microsoft cloud.
 

@@ -469,15 +469,19 @@
               href: archive-17a-4-blackberry-data.md
             - name: Bloomberg DataParser (preview)
               href: archive-17a-4-bloomberg-data.md
+            - name: Cisco Webex DataParser (preview)
+              href: archive-17a-4-webex-teams-data.md
             - name: FactSet DataParser (preview)
               href: archive-17a-4-factset-data.md
             - name: Fuze DataParser (preview)
               href: archive-17a-4-fuze-data.md
-            - name: ICE Chat DataParser (preview)
+            - name: FX Connect DataParser (preview)
+              href: archive-17a-4-fxconnect-data.md
+            - name: ICE DataParser (preview)
               href: archive-17a-4-ice-im-data.md
             - name: InvestEdge DataParser (preview)
               href: archive-17a-4-investedge-data.md
-            - name: LiveEngage DataParser (preview)
+            - name: LivePerson Conversational Cloud DataParser (preview)
               href: archive-17a-4-liveengage-data.md
             - name: Quip DataParser (preview)
               href: archive-17a-4-quip-data.md
@@ -487,12 +491,10 @@
               href: archive-17a-4-servicenow-data.md
             - name: Slack DataParser (preview)
               href: archive-17a-4-slack-data.md
-            - name: SQL Database DataParser (preview)
+            - name: SQL DataParser (preview)
               href: archive-17a-4-sql-database-data.md
             - name: Symphony DataParser (preview)
               href: archive-17a-4-symphony-data.md
-            - name: Webex Teams DataParser (preview)
-              href: archive-17a-4-webex-teams-data.md
             - name: Zoom DataParser (preview)
               href: archive-17a-4-zoom-data.md
         - name: Work with a partner to archive third-party data
