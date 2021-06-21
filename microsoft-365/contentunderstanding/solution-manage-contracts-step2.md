@@ -1,5 +1,5 @@
 ---
-title: "Step 2. Use Microsoft Teams to create your contract management channel"
+title: Step 2. Use Microsoft Teams to create your contract management channel
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -11,7 +11,7 @@ ms.prod: microsoft-365-enterprise
 search.appverid:
 localization_priority: None
 ROBOTS:
-description: "Learn how to use Microsoft Teams to create your contract management channel by using a Microsoft 365 solution."
+description: Learn how to use Microsoft Teams to create your contract management channel by using a Microsoft 365 solution.
 ---
 
 # Step 2. Use Microsoft Teams to create your contract management channel
@@ -26,7 +26,8 @@ When your organization sets up a contracts management solution, you need a centr
 
      ![Posts tab.](../media/content-understanding/posts.png)
 
-- **Have a location for members to see approved contracts to know when they can be submitted for payment.** In Teams, you can create a **For Payment** channel that will list all contracts that will need to be submitted to payment. You can easily extend this solution to instead write this information directly to a third-party financial application (for example, Dynamics CRM).
+- **Have a location for members to see approved contracts to know when they can be submitted for payment.** In SharePoint, you'll need to create a **For Payout** list and include columns for **Client**, **Contractor**, and **Fee amount**, selecting **Single line of text** as the column type. You'll need to add the **For Payout** list as a Teams tab in the Contract Management channel, similar to [what you'll do for the **Contracts** tab](solution-manage-contracts-step2.md#attach-your-sharepoint-document-library-to-the-contracts-tab). The **For Payout** tab will list all contracts that will need to be submitted for payment. You can easily extend this solution to instead write this information directly to a third-party financial application (for example, Dynamics CRM). 
+
 
 ## Attach your SharePoint document library to the Contracts tab
 
@@ -34,7 +35,7 @@ After you create a **Contracts** tab in your Contracts Management channel, you n
 
 After you attach the SharePoint document library, you'll be able to view any classified contracts through a default list view.
 
-   ![List view.](../media/content-understanding/list-view.png)
+   ![List view of SharePoint library.](../media/content-understanding/list-view.png)
 
 ## Customize your Contracts tab tile view
 
@@ -43,13 +44,13 @@ After you attach the SharePoint document library, you'll be able to view any cla
 
 While Teams lets you view your contracts in a tile view, you might want to customize it to view the contract data you want to make visible in the contract card. For example, for the **Contracts** tab, it is important for members to see the client, contractor, and fee amount on the contract card. All of these fields were extracted from each contract through your SharePoint Syntex model that was applied to your document library. You also want to be able to change the tile header bar to different colors for each status so that members can easily see where the contract is in the approval process. For example, all approved contracts will have a blue header bar.
 
-   ![List view.](../media/content-understanding/tile.png)
+   ![Tile view of SharePoint library.](../media/content-understanding/tile.png)
 
 The custom tile view you use requires you to make changes to the JSON file used to format the current tile view. You can reference the JSON file used to create the card view by looking at the [ContractTileFormatting.json](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) file. In the following sections, you'll see specific sections of the code for features that are in the contract cards.
 
 If you want to see or make changes to the JSON code for your view in your Teams channel, in the Teams channel, select the view drop-down menu, and then select **Format current view**.
 
-   ![json format.](../media/content-understanding/jason-format.png)
+   ![Screenshot of json format in Teams channel.](../media/content-understanding/jason-format.png)
 
 ## Card size and shape
 
@@ -152,7 +153,7 @@ This section defines how the "Contractor" will display on the card, and uses the
 },
 ```
 
-### Fee Amount
+### Fee amount
 
 This section defines how the "Fee Amount" will display on the card, and uses the value for the specific contract.
 
