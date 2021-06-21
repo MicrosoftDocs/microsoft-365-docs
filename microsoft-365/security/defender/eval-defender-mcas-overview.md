@@ -28,12 +28,12 @@ ms.technology: m365d
 **Applies to:**
 - Microsoft 365 Defender
 
-Introduction
+
+This article outlines the process to enable and pilot Microsoft Cloud App Security alongside Microsoft 365 Defender. Before starting this process, be sure you've reviewed the overall process for [evaluating Microsoft 365 Defender](eval-overview.md) and you have [created the Microsoft 365 Defender evaluation environment](eval-create-eval-environment.md). 
 <br>
 
 Use the following steps to enable and pilot Microsoft cloud app security.
 
-update this illustration
 ![Steps for adding Microsoft Defender for Office to the Defender evaluation environment](../../media/defender/m365-defender-office-eval-steps.png)
 
 

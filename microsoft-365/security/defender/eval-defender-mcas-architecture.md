@@ -29,6 +29,8 @@ ms.technology: m365d
 **Applies to:**
 - Microsoft 365 Defender
 
+This article is [Step 1 of 3](eval-defender-mcas-overview.md) in the process of setting up the evaluation environment for Microsoft Cloud App Security alongside Microsoft 365 Defender. For more information about this process, see the [overview article](eval-defender-identity-overview.md).
+
 Before enabling Microsoft Cloud App Security, be sure you understand the architecture and can meet the requirements. 
 
 ## Understand the architecture
