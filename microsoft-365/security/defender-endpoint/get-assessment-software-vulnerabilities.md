@@ -43,9 +43,9 @@ There are different API calls to get different types of data. Because the amount
    - Download all the files using the download URLs and process the data as you like.
 
 3. [Delta export software vulnerabilities assessment **JSON response**](#3-delta-export-software-vulnerabilities-assessment-json-response)  Returns a table with an entry for every unique combination of: DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId, and EventTimestamp.
-The API pulls data in your organization as Json responses. The response is paginated, so you can use the @odata.nextLink field from the response to fetch the next results. <br><br> Unlike the full "software vulnerabilities assessment (JSON response)" - which is used to obtain an entire snapshot of the software vulnerabilities assessment of your organization by device - the delta export OData API call is used to fetch only the changes that have happened between a selected date and the current date (the “delta” API call). Instead of getting a full export with a large amount of data every time, you’ll only get specific information on new, fixed, and updated vulnerabilities. Delta export JSON response API call can also be used to calculate different KPIs such as “how many vulnerabilities were fixed?” or “how many new vulnerabilities were added to my organization?” <br><br> Because the Delta export JSON response API call for software vulnerabilities returns data for only a targeted date range, it is not considered a _full export_.
+The API pulls data in your organization as Json responses. The response is paginated, so you can use the @odata.nextLink field from the response to fetch the next results. <br><br> Unlike the full "software vulnerabilities assessment (JSON response)" - which is used to obtain an entire snapshot of the software vulnerabilities assessment of your organization by device - the delta export API call is used to fetch only the changes that have happened between a selected date and the current date (the “delta” API call). Instead of getting a full export with a large amount of data every time, you’ll only get specific information on new, fixed, and updated vulnerabilities. Delta export JSON response API call can also be used to calculate different KPIs such as “how many vulnerabilities were fixed?” or “how many new vulnerabilities were added to my organization?” <br><br> Because the Delta export JSON response API call for software vulnerabilities returns data for only a targeted date range, it is not considered a _full export_.
 
-Data that is collected (using either _OData_ or _via files_) is the current snapshot of the current state, and does not contain historic data. In order to collect historic data, customers must save the data in their own data storages.
+Data that is collected (using either _Json response_ or _via files_) is the current snapshot of the current state, and does not contain historic data. In order to collect historic data, customers must save the data in their own data storages.
 
 > [!Note]
 >
@@ -372,7 +372,7 @@ GET /api/machines/SoftwareVulnerabilityChangesByMachine
 
 ### 3.5 Properties
 
-Each returned record contains all the data from the full export software vulnerabilities assessment by device OData API, plus two additional fields:  _**EventTimestamp**_ and _**Status**_.
+Each returned record contains all the data from the full export software vulnerabilities assessment by device API, plus two additional fields:  _**EventTimestamp**_ and _**Status**_.
 
 >[!NOTE]
 >- Some additional columns might be returned in the response. These columns are temporary and might be removed, so please use only the documented columns.
