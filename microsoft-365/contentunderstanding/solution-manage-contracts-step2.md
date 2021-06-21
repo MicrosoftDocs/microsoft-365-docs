@@ -153,7 +153,7 @@ This section defines how the "Contractor" will display on the card, and uses the
 },
 ```
 
-### Fee Amount
+### Fee amount
 
 This section defines how the "Fee Amount" will display on the card, and uses the value for the specific contract.
 
