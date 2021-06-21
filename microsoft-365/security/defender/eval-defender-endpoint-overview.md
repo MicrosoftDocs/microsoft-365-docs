@@ -29,8 +29,6 @@ ms.technology: m365d
 
 - Microsoft 365 Defender
 
-![Microsoft 365 Defender evaluation and piloting process](../../media/defender/m365-defender-eval-process.png)
-
 Comprehensive security product evaluations can be a complex process, requiring cumbersome environment and device configurations before an end-to-end attack simulation can actually be done. Adding to the complexity is the challenge of tracking where the simulation activities, alerts, and results are reflected during the evaluation.
 
 The Microsoft Defender for Endpoint evaluation lab is designed to eliminate the complexities of device and environment configuration. This enables you to:
@@ -39,7 +37,7 @@ The Microsoft Defender for Endpoint evaluation lab is designed to eliminate the 
 - Run simulations
 - See the prevention, detection, and remediation features in action
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4woug]
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4qLUM]
 
 Using the simplified set-up experience, you can focus on running your own test scenarios and the pre-made simulations to see how Defender for Endpoint performs.
 

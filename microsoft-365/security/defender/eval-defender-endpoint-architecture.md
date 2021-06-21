@@ -32,25 +32,25 @@ Before enabling Microsoft Defender for Endpoint, be sure you understand the arch
 
 ## Understand the architecture
 
-The following diagram illustrates MDE architecture and integrations:
+The following diagram illustrates Microsoft Defender for Endpoint architecture and integrations:
 
 ![Steps for adding Microsoft Defender for Office to the Defender evaluation environment](../../media/defender/m365-defender-endpoint-architecture.png)
 
 Step | Description
 :---|:---|
 1 | Devices are on-boarded via Microsoft Intune, SCCM co-management, etc.
-2 | On-boarded devices provide and respond to MDE signal data.
+2 | On-boarded devices provide and respond to Microsoft Defender for Endpoint signal data.
 3 | Managed devices are joined and/or enrolled in Azure AD.
 4 | Domain-joined Windows 10 devices are synchronized to Azure AD using AAD Connect.
-5 | MDE alerts, investigations, and responses are managed in M365 Security Center.
+5 | Microsoft Defender for Endpoint alerts, investigations, and responses are managed in Microsoft 365 Defender.
 
 ## Concepts
 
-The following table identified key concepts that are important to understand when evaluating, configuring, and deploying MDO:
+The following table identified key concepts that are important to understand when evaluating, configuring, and deploying Microsoft Defender for Endpoint: 
 
 Concept | Description | Reference
 :---|:---|:---|
-Administration Portal | Microsoft Defender Security Center to monitor and assist in responding to alerts of potential advanced persistent threat activity or data breaches. | [Microsoft Defender Advanced Threat Protection portal overview - Windows security \| Microsoft Docs](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/portal-overview)
+Administration Portal | Microsoft 365 Defender portal to monitor and assist in responding to alerts of potential advanced persistent threat activity or data breaches. | [Microsoft Defender Advanced Threat Protection portal overview - Windows security \| Microsoft Docs](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/portal-overview)
 Attack Surface Reduction | Help reduce your attack surfaces by minimizing the places where your organization is vulnerable to cyberthreats and attacks. | [Overview of attack surface reduction - Windows security \| Microsoft Docs](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-attack-surface-reduction)
 Endpoint Detection and Response | Endpoint detection and response capabilities provide advanced attack detections that are near real-time and actionable. | [Overview of endpoint detection and response capabilities - Windows security \| Microsoft Docs](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response)
 Behavioral Blocking and Containment | Behavioral blocking and containment capabilities can help identify and stop threats, based on their behaviors and process trees even when the threat has started execution. | [Behavioral blocking and containment - Windows security \| Microsoft Docs](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/behavioral-blocking-containment)
