@@ -1,5 +1,5 @@
 ---
-title: Use Microsoft Teams classes in your Learning Management System
+title: Use Microsoft Teams classes with Blackboard
 ms.author: v-cichur
 author: cichur
 manager: serdars
@@ -16,12 +16,12 @@ description: "Integrate Microsoft Teams classes in your Learning Management Syst
 ---
 
 
-# Use Microsoft Teams classes in your Learning Management System
+# Use Microsoft Teams classes with Blackboard
 
 > [!IMPORTANT]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-Microsoft Teams class teams is a Learning Tools Interoperability (LTI) app that helps educators and students easily navigate between their Learning Management System (LMS) and Teams. Users can access their class teams associated with their course directly from within their LMS.
+Microsoft Teams classes is a Learning Tools Interoperability (LTI) app that helps educators and students easily navigate between their Learning Management System (LMS) and Teams. Users can access their class teams associated with their course directly from within their LMS.
 
 ## Approve the app in the Microsoft Azure tenant
 

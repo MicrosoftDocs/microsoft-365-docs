@@ -39,7 +39,7 @@ This topic describes deploying Defender for Endpoint on iOS on Intune Company Po
 - Ensure iOS enrollment is done for your users. Users need to have a Defender for Endpoint license assigned in order to use Defender for Endpoint on iOS. Refer to [Assign licenses to users](/azure/active-directory/users-groups-roles/licensing-groups-assign) for instructions on how to assign licenses.
 
 > [!NOTE]
-> Microsoft Defender for Endpoint on iOS is now available in the [Apple App Store](https://aka.ms/mdatpiosappstore).
+> Microsoft Defender for Endpoint on iOS is available in the [Apple App Store](https://aka.ms/mdatpiosappstore).
 
 ## Deployment steps
 
@@ -73,9 +73,6 @@ Deploy Defender for Endpoint on iOS via Intune Company Portal.
 
 ## Auto-Onboarding of VPN profile (Simplified Onboarding)
 
-> [!NOTE]
-> Auto-onboarding of VPN profile is currently in preview and the steps mentioned in this section may be substantially modified before it's commercially released.
-
 Admins can configure auto-setup of VPN profile. This will automatically setup the Defender for Endpoint VPN profile without having the user to do so while onboarding. Note that VPN is used in order to provide the Web Protection feature. This is not a regular VPN and is a local/self-looping VPN that does not take traffic outside the device.
 
 1. In [Microsoft Endpoint manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Devices** -> **Configuration Profiles** -> **Create Profile**.
@@ -103,7 +100,7 @@ Admins can configure auto-setup of VPN profile. This will automatically setup th
 
     ![A screen shot of a smart phone Description automatically generated](images/41627a709700c324849bf7e13510c516.png)
 
-2. Tap the Defender for Endpoint app icon and follow the on-screen instructions to complete the onboarding steps. The details include end-user acceptance of iOS permissions required by Defender for Endpoint on iOS.
+2. Tap the Defender for Endpoint app icon (MSDefender) and follow the on-screen instructions to complete the onboarding steps. The details include end-user acceptance of iOS permissions required by Defender for Endpoint on iOS.
 
 3. Upon successful onboarding, the device will start showing up on the Devices list in Microsoft Defender Security Center.
 
@@ -129,7 +126,7 @@ Intune allows you to configure the Defender for iOS app through an App Configura
 1. In the *Create app configuration policy* page, provide the following information:
     - Policy Name
     - Platform: Select iOS/iPadOS
-    - Targeted app: Select **Microsoft Defender ATP** from the list
+    - Targeted app: Select **Microsoft Defender Endpoint** from the list
 
     > [!div class="mx-imgBorder"]
     > ![Image of Microsoft Endpoint Manager Admin Center5](images/ios-deploy-5.png)

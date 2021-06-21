@@ -16,7 +16,7 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
   - M365-security-compliance
   - m365initiative-defender-office365
-description: Use Explorer and Real-time detections in the Security &amp; Compliance Center to investigate and respond to threats efficiently.
+description: Use Explorer and Real-time detections in the Microsoft 365 security center to investigate and respond to threats efficiently.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
@@ -509,7 +509,7 @@ Suppose that you want to see email messages that users in your organization repo
    > [!div class="mx-imgBorder"]
    > ![User-reported phish](../../media/EmailUserReportedReportType.png)
 
-The report refreshes to show data about email messages that people in your organization reported as a phishing attempt. You can use this information to conduct further analysis, and, if necessary, adjust your [anti-phishing policies in Microsoft Defender for Office 365](configure-atp-anti-phishing-policies.md).
+The report refreshes to show data about email messages that people in your organization reported as a phishing attempt. You can use this information to conduct further analysis, and, if necessary, adjust your [anti-phishing policies in Microsoft Defender for Office 365](configure-mdo-anti-phishing-policies.md).
 
 ## Start automated investigation and response
 

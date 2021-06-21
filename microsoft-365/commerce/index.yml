@@ -29,28 +29,30 @@ landingContent:
         links:
           - text: View your bill or invoice
             url: billing-and-payments/view-your-bill-or-invoice.md
+          - text: Understand your bill or invoice
+            url: billing-and-payments/understand-your-invoice2.md
+          - text: Pay for your subscription
+            url: billing-and-payments/pay-for-your-subscription.md
           - text: Manage payment methods
             url: billing-and-payments/manage-payment-methods.md
-          - text: Understand your bill or invoice
-            url: billing-and-payments/understand-your-invoice.md
-          - text: Manage billing profiles
-            url: billing-and-payments/manage-billing-profiles.md
-          - text: Manage billing accounts
-            url: manage-billing-accounts.md
+          - text: Change your billing addresses
+            url: billing-and-payments/change-your-billing-addresses.md
 
   # Card (optional)
   - title: Manage licenses
     linkLists:
       - linkListType: how-to-guide
         links:
+          - text: Buy or remove licenses
+            url: licenses/buy-licenses.md
           - text: Assign licenses to users
             url: ../admin/manage/assign-licenses-to-users.md
+          - text: Unassign licenses from users
+            url: ../admin/manage/remove-licenses-from-users.md
           - text: Understand subscriptions and licenses
             url: licenses/subscriptions-and-licenses.md
-          - text: Buy licenses for your subscription
-            url: licenses/buy-licenses.md
-          - text: Remove licenses from your subscription
-            url: ./licenses/buy-licenses.md
+          - text: Download perpetual software and product license key
+            url: ../admin/setup/download-software-licenses-csp.md
 
   # Card
   - title: Upgrade, renew, or cancel
@@ -61,10 +63,10 @@ landingContent:
             url: subscriptions/upgrade-to-different-plan.md
           - text: Renew your subscription
             url: subscriptions/renew-your-subscription.md
-          - text: Cancel your subscription
-            url: subscriptions/cancel-your-subscription.md
           - text: Reactivate your subscription
             url: subscriptions/reactivate-your-subscription.md
+          - text: Cancel your subscription
+            url: subscriptions/cancel-your-subscription.md
           - text: Close your account
             url: close-your-account.md
 
@@ -75,9 +77,11 @@ landingContent:
         links:
           - text: Try or buy Microsoft 365
             url: try-or-buy-microsoft-365.md
-          - text: Buy a subscriptions from your free trial
-            url: ./try-or-buy-microsoft-365.md
+          - text: Buy a subscription from your free trial
+            url: ./try-or-buy-microsoft-365.md#buy-a-subscription-from-your-free-trial
           - text: Extend your trial
-            url: extend-your-trial.md
+            url: extend-your-trial.md#extend-your-trial
+          - text: Add storage space
+            url: add-storage-space.md
           - text: Buy a domain name
             url: ../admin/get-help-with-domains/buy-a-domain-name.md

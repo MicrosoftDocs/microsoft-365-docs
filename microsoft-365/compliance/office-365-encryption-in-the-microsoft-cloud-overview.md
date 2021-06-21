@@ -53,7 +53,7 @@ For customer data in transit, all Office 365 servers negotiate secure sessions u
 - [Encryption in Azure](office-365-azure-encryption.md)
 - [BitLocker and Distributed Key Manager (DKM) for Encryption](office-365-bitlocker-and-distributed-key-manager-for-encryption.md)
 - [Office 365 Service Encryption](office-365-service-encryption.md)
-- [Office 365 Encryption for Skype for Business, OneDrive for Business, SharePoint Online, and Exchange Online](https://docs.microsoft.com/compliance/assurance/assurance-encryption-for-microsoft-365-services) 
+- [Office 365 Encryption for Skype for Business, OneDrive for Business, SharePoint Online, and Exchange Online](/compliance/assurance/assurance-encryption-for-microsoft-365-services) 
 - [Encryption for Data in Transit](/compliance/assurance/assurance-encryption-in-transit)
 - [Customer-Managed Encryption Features](office-365-customer-managed-encryption-features.md)
 - [Encryption Risks and Protections](office-365-encryption-risks-and-protections.md)

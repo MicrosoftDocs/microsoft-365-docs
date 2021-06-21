@@ -19,6 +19,7 @@ ms.topic: article
 # Customize attack surface reduction rules
 
 **Applies to:**
+
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -32,6 +33,7 @@ ms.topic: article
 Learn how to customize attack surface reduction rules by [excluding files and folders](#exclude-files-and-folders) or [adding custom text to the notification](#customize-the-notification) alert that appears on a user's computer.
 
 You can set attack surface reduction rules for devices running any of the following editions and versions of Windows:
+
 - Windows 10 Pro, [version 1709](/windows/whats-new/whats-new-windows-10-version-1709) or later
 - Windows 10 Enterprise, [version 1709](/windows/whats-new/whats-new-windows-10-version-1709) or later
 - Windows Server, [version 1803 (Semi-Annual Channel)](/windows-server/get-started/whats-new-in-windows-server-1803) or later
@@ -40,10 +42,16 @@ You can use Group Policy, PowerShell, and Mobile Device Management (MDM) configu
 
 ## Exclude files and folders
 
-You can choose to exclude files and folders from being evaluated by attack surface reduction rules. Once excluded, the file won't be blocked from running even if an attack surface reduction rule detects that the file contains malicious behavior.
+You can choose to exclude files and folders from being evaluated by attack surface reduction rules. When excluded, the file won't be blocked from running even if an attack surface reduction rule detects that the file contains malicious behavior.
+
+For example, consider the ransomware rule:
+
+The ransomware rule is designed to help enterprise customers reduce risks of ransomware attacks while ensuring business continuity. By default, the ransomware rule errors on the side of caution and protect against files that haven't yet attained sufficient reputation and trust. To reemphasize, the ransomware rule only triggers on files that have not gained enough positive reputation and prevalence, based on usage metrics of millions of our customers. Usually, the blocks are self resolved, because each file's “reputation and trust” values are incrementally upgraded as non-problematic usage increases.
+
+In cases in which blocks aren’t self resolved in a timely manner, customers can - _at their own risk_ - make use of either the self-service mechanism or an Indicator of Compromise (IOC)-based "allow list" capability to unblock the files themselves.  
 
 > [!WARNING]
-> This could potentially allow unsafe files to run and infect your devices. Excluding files or folders can severely reduce the protection provided by attack surface reduction rules. Files that would have been blocked by a rule will be allowed to run, and there will be no report or event recorded.
+> Excluding or unblocking files or folders could potentially allow unsafe files to run and infect your devices. Excluding files or folders can severely reduce the protection provided by attack surface reduction rules. Files that would have been blocked by a rule will be allowed to run, and there will be no report or event recorded.
 
 An exclusion applies to all rules that allow exclusions. You can specify an individual file, folder path, or the fully qualified domain name for a resource. However, you cannot limit an exclusion to a specific rule.
 
@@ -53,7 +61,7 @@ Attack surface reduction supports environment variables and wildcards. For infor
 If you are encountering problems with rules detecting files that you believe should not be detected, [use audit mode to test the rule](evaluate-attack-surface-reduction.md).
 
 | Rule description | GUID |
-|:----|:----|:----|
+|:----|:----|
 | Block all Office applications from creating child processes | `D4F940AB-401B-4EFC-AADC-AD5F3C50688A` |
 | Block execution of potentially obfuscated scripts | `5BEB7EFE-FD9A-4556-801D-275E5FFC04CC` |
 | Block Win32 API calls from Office macro | `92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B` |
@@ -109,7 +117,7 @@ You can customize the notification for when a rule is triggered and blocks an ap
 
 ## Related topics
 
-* [Reduce attack surfaces with attack surface reduction rules](attack-surface-reduction.md)
-* [Enable attack surface reduction rules](enable-attack-surface-reduction.md)
-* [Evaluate attack surface reduction rules](evaluate-attack-surface-reduction.md)
-* [Attack surface reduction FAQ](attack-surface-reduction.md)
+- [Reduce attack surfaces with attack surface reduction rules](attack-surface-reduction.md)
+- [Enable attack surface reduction rules](enable-attack-surface-reduction.md)
+- [Evaluate attack surface reduction rules](evaluate-attack-surface-reduction.md)
+- [Attack surface reduction FAQ](attack-surface-reduction.md)

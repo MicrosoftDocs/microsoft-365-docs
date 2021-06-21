@@ -79,8 +79,7 @@ The above operations can be done in three places:
   
  **Fastest for a user with presence on-premises and in the Exchange Datacenter**: Terminate the session using Azure Active Directory admin center/Exchange admin center AND make the change in the on-premises environment as well. Otherwise, the change in Azure Active Directory admin center/Exchange admin center will be overwritten by DirSync.
   
-## Related articles
+## Related content
 
-[Restore a user](restore-user.md)
-
-[Reset passwords](reset-passwords.md)
+[Restore a user](restore-user.md) (article)/
+[Reset passwords](reset-passwords.md) (article)

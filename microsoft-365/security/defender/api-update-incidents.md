@@ -1,5 +1,5 @@
 ---
-title: Update incidents API
+title: Update incident API
 description: Learn how to update incidents using Microsoft 365 Defender API
 keywords: update, api, incident
 search.product: eADQiWindows 10XVcnh
