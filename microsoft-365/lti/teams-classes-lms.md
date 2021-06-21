@@ -33,7 +33,7 @@ Before managing the integration within Blackboard Learn Ultra, the Microsoft Off
 
 2. Redirect the Microsoft Identity Platform Admin Consent Endpoint according to the following example:
 
-   `https://login.microsoftonline.com/{tenant}/adminconsent?client\_id=2d94989f-457a-47c1-a637-e75acdb11568`
+   `https://login.microsoftonline.com/{tenant}/adminconsent?client_id=2d94989f-457a-47c1-a637-e75acdb11568`
 
    > [!NOTE]
    > Replace {tenant} with your organization’s Microsoft tenant ID.
