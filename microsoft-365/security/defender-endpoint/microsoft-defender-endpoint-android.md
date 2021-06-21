@@ -75,7 +75,7 @@ This topic describes how to install, configure, update, and use Defender for End
 
 ### System Requirements
 
--   Mobile phones running Android 6.0 and above. **Currently tablets and other mobile devices running on Android are not supported. Support for the other mobile devices will be announced when ready.** 
+-   Mobile phones running Android 6.0 and above. **Tablets and other mobile devices running Android are not currently supported.** 
 
 -   Intune Company Portal app is downloaded from [Google
     Play](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal)
