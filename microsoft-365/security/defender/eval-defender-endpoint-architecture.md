@@ -44,7 +44,7 @@ Step | Description
 4 | Domain-joined Windows 10 devices are synchronized to Azure AD using AAD Connect.
 5 | Microsoft Defender for Endpoint alerts, investigations, and responses are managed in Microsoft 365 Defender.
 
-## Concepts
+## Understand key concepts
 
 The following table identified key concepts that are important to understand when evaluating, configuring, and deploying Microsoft Defender for Endpoint: 
 
@@ -57,3 +57,6 @@ Behavioral Blocking and Containment | Behavioral blocking and containment capabi
 Automated Investigation and Response | Automated investigation uses various inspection algorithms based on processes that are used by security analysts and designed to examine alerts and take immediate action to resolve breaches. | [Use automated investigations to investigate and remediate threats \| Microsoft Docs](/defender-endpoint/automated-investigations)
 Advanced Hunting | Advanced hunting is a query-based threat-hunting tool that lets you explore up to 30 days of raw data so that you can proactively inspect events in your network to locate threat indicators and entities. | [Overview of advanced hunting \| Microsoft Docs](/defender-endpoint/advanced-hunting-overview)
 Threat Analytics |  | [Track and respond to emerging threats \| Microsoft Docs](/defender-endpoint/threat-analytics)
+
+## Next steps
+- [Enable the evaluation](eval-defender-endpoint-enable-eval.md)

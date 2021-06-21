@@ -25,8 +25,11 @@ ms.technology: m365d
 
 # Enable Microsoft Defender for Endpoint evaluation environment
 
->[!NOTE]
->For the purpose of guiding you through a typical deployment, this scenario will only cover the use of Microsoft Endpoint Configuration Manager. Defender for Endpoint supports the use of other onboarding tools but won't cover those scenarios in the deployment guide. For more information, see [Onboard devices to Microsoft Defender for Endpoint](../defender-endpoint/onboard-configure.md).
+Use the following guidance to enable the evaluation for Microsoft Defender for Endpoint.
+
+- [Step 1. Check license state](#step-1-check-license-state)
+- [Step 2. Onboard endpoints](#step-2-onboard-endpoints-using-any-of-the-supported-management-tools)
+- [Step 3. Setup the evaluation lab](#step-3-setup-the-evaluation-lab)
 
 ## Step 1. Check license state
 
@@ -81,7 +84,7 @@ You must have **Manage security settings** permissions to:
 If you enabled role-based access control (RBAC) and created at least a one machine group, users must have access to All machine groups.
 
 
-## Get started with the lab
+### Get started with the lab
 You can access the lab from the menu. In the navigation menu, select **Evaluation and tutorials > Evaluation lab**.
 
 ![Image of the evaluation lab on the menu](../defender-endpoint/images/evaluation-lab-menu.png)
@@ -93,7 +96,8 @@ You can access the lab from the menu. In the navigation menu, select **Evaluatio
 
 Already have a lab? Make sure to enable the new threat simulators and have active devices.
 
-## Setup the evaluation lab
+
+### Setup the evaluation lab
 
 1. In the navigation pane, select **Evaluation and tutorials** > **Evaluation lab**, then select **Setup lab**.
 

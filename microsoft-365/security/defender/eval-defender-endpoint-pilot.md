@@ -105,7 +105,6 @@ Running threat simulations using third-party platforms is a good way to evaluate
 >[!NOTE]
 >
 >Before you can run simulations, ensure the following requirements are met:
-
 >- Devices must be added to the evaluation lab
 >- Threat simulators must be installed in the evaluation lab
 
