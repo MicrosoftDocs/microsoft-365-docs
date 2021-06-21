@@ -226,6 +226,7 @@ Creating a custom anti-phishing policy in the Microsoft 365 Defender portal crea
        - **Quarantine the message**
 
    - **Safety tips & indicators**: Configure the following settings:
+     - **Show first contact safety tip**: This safety tip replaces the need to create mail flow rules (also known as transport rules) that add the header named **X-MS-Exchange-EnableFirstContactSafetyTip** with the value **Enable** to messages.
      - **Show user impersonation safety tip**: This setting is available only if you selected **Enable users to protect** on the previous page.
      - **Show domain impersonation safety tip**: This setting is available only if you selected **Enable domains to protect** on the previous page.
      - **Show user impersonation unusual characters safety tip** This setting is available only if you selected **Enable users to protect** or **Enable domains to protect** on the previous page.
@@ -233,7 +234,7 @@ Creating a custom anti-phishing policy in the Microsoft 365 Defender portal crea
      - **Show "via" tag**: This setting is available only if you selected **Enable spoof intelligence** on the previous page. Adds a via tag (chris@contoso.com via fabrikam.com) to the From address if it's different from the domain in the DKIM signature or the **MAIL FROM** address. The default value is on (selected). To turn it off, clear the check box.
 
        > [!NOTE]
-       > Currently, the **Show "via" tag** setting is not available in all organizations. If you don't have the **Show "via" tag** setting, the question mark **and** the via tag are both controlled by the **Show (?) for unauthenticated senders for spoof** setting in your organization.
+       > If you don't have the **Show "via" tag** setting, the question mark **and** the via tag are both controlled by the **Show (?) for unauthenticated senders for spoof** setting in your organization.
 
      To turn on a setting, select the check box. To turn it off, clear the check box.
 

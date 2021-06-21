@@ -22,7 +22,7 @@ search.appverid:
 ms.technology: m365d
 ---
 
-# Overview of  Microsoft 365 Defender APIs
+# Overview of Microsoft 365 Defender APIs
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -43,13 +43,10 @@ Use the Microsoft 365 Defender APIs to automate workflows based on the shared in
 
 Use the [Streaming API](../defender-endpoint/raw-data-export.md) to ship real-time events and alerts from instances as they occur within a single data stream.
 
-
 Along with these Microsoft 365 Defender-specific APIs, each of our other security products expose [additional APIs](api-articles.md) to help you take advantage of their unique capabilities.
-
 
 > [!NOTE]
 > The transition to the unified portal should not affect the PowerBi dashboards based on Microsoft Defender for Endpoint APIs. You can continue to work with the existing APIs regardless of the interactive portal transition.
-
 
 ## Learn more
 
