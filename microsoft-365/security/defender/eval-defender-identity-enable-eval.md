@@ -33,16 +33,21 @@ ms.technology: m365d
 
 This article is [Step 2 of 2](eval-defender-identity-overview.md) in the process of setting up the evaluation environment for Microsoft Defender for Identity. For more information about this process, see the [overview article](eval-defender-identity-overview.md).
 
-Intro
-
+User the following steps to set up your Microsoft Defender for Identity environment. 
 
 
 ![Steps to enable Microsoft Defender for Identity in the Microsoft Defender evaluation environment](../../media/defender/m365-defender-identity-eval-enable-steps.png)
 
+[Step 1. Set up the Defender for Identity Instance](#step-1-set-up-the-defender-for-identity-instance)
+[Step 2. Install and configure the sensor](#step-2-install-and-configure-the-sensor)
+[Step 3. Configure event log and proxy settings on machines with the sensor](#step-3-configure-event-log-and-proxy-settings-on-machines-with-the-sensor)
+[Step 4. Allow Defender for Identity to identify local admins on other computers
+](#step-4-allow-defender-for-identity-to-identify-local-admins-on-other-computers)
+
 
 ## Step 1. Set up the Defender for Identity Instance
 
-Intro
+Sign in to the Defender for identity portal to create your instance and then connect this instance to your Active Directory environment. 
 
 |  |Step     |More information  |
 |---------|---------|---------|
@@ -67,7 +72,7 @@ Intro
 
 ## Step 2. Install and configure the sensor
 
-Intro
+Next, download, install, and configure the Defender for Identity sensor on the domain controllers and AD FS servers in your on-premises environment. 
 
 |  |Step     |More information  |
 |---------|---------|---------|
@@ -79,7 +84,7 @@ Intro
 
 ## Step 3. Configure event log and proxy settings on machines with the sensor
 
-Intro
+To enable and enhance detection of identity events in your on-premises environment, configure Internet proxy settings and Windows event log collection. 
 
 |  |Step     |More information  |
 |---------|---------|---------|
