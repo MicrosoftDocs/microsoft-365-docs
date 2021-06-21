@@ -1,11 +1,11 @@
 - name: Microsoft 365 compliance
   href: index.yml
+- name: What's new in Microsoft 365 compliance
+  href: whats-new.md
 - name: Get started
   items: 
     - name: Quick tasks to get started with compliance
       href: compliance-quick-tasks.md
-    - name: What's new in Microsoft 365 compliance
-      href: whats-new.md
     - name: Microsoft 365 solution catalog
       href: microsoft-365-solution-catalog.md
     - name: Microsoft 365 compliance center

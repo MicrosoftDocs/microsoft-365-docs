@@ -4047,27 +4047,27 @@
     },
 {
       "source_path": "microsoft-365/managed-desktop/working-with-managed-desktop/reliability-insights.md",
-      "redirect_url": "/microsoft-365/managed-desktop/working-with-managed-desktop/reports.md",
+      "redirect_url": "/microsoft-365/managed-desktop/working-with-managed-desktop/reports",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/managed-desktop/working-with-managed-desktop/battery-insights.md",
+      "redirect_url": "/microsoft-365/managed-desktop/working-with-managed-desktop/reports",
       "redirect_document_id": false
     },
     {
-      "source_path": "microsoft-365/managed-desktop/working-with-managed-desktop/battery-insights",
-      "redirect_url": "/microsoft-365/managed-desktop/working-with-managed-desktop/reports.md",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "microsoft-365/managed-desktop/working-with-managed-desktop/usage-insights",
-      "redirect_url": "/microsoft-365/managed-desktop/working-with-managed-desktop/reports.md",
+      "source_path": "microsoft-365/managed-desktop/working-with-managed-desktop/usage-insights.md",
+      "redirect_url": "/microsoft-365/managed-desktop/working-with-managed-desktop/reports",
       "redirect_document_id": false 
     },
     {
-      "source_path": "microsoft-365/managed-desktop/working-with-managed-desktop/security-update-insights",
-      "redirect_url": "/microsoft-365/managed-desktop/working-with-managed-desktop/reports.md",
+      "source_path": "microsoft-365/managed-desktop/working-with-managed-desktop/security-update-insights.md",
+      "redirect_url": "/microsoft-365/managed-desktop/working-with-managed-desktop/reports",
       "redirect_document_id": false 
     },
     {
-      "source_path": "microsoft-365/managed-desktop/working-with-managed-desktop/insights",
-      "redirect_url": "/microsoft-365/managed-desktop/working-with-managed-desktop/reports.md",
+      "source_path": "microsoft-365/managed-desktop/working-with-managed-desktop/insights.md",
+      "redirect_url": "/microsoft-365/managed-desktop/working-with-managed-desktop/reports",
       "redirect_document_id": false 
     },
     {
@@ -4109,6 +4109,16 @@
       "source_path": "microsoft-365/security/office-365-security/report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md",
       "redirect_url": "/microsoft-365/security/office-365-security/report-false-positives-and-false-negatives",
       "redirect_document_id": false
+    },
+{
+      "source_path": "microsoft-365/compliance/view-the-data-governance-reports.md",
+      "redirect_url": "/microsoft-365/compliance/data-classification-overview",
+      "redirect_document_id": false
+    },
+{
+      "source_path": "microsoft-365/compliance/view-label-activity-for-documents.md",
+      "redirect_url": "/microsoft-365/compliance/data-classification-activity-explorer",
+      "redirect_document_id": true
     },
     {
       "source_path": "microsoft-365/security/defender-endpoint/scheduled-catch-up-scans-microsoft-defender-antivirus.md",
