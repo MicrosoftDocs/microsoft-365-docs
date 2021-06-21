@@ -116,7 +116,7 @@ The following table describes this illustration.
 |      |Step  |Description  |
 |------|---------|---------|
 |1     | [Create the evaluation environment ](eval-environment.md)       |This step ensures you have the trial license for Microsoft 365 Defender.         |
-|2     | [Enable Defender for Identity](eval-defender-identity-overview.md)        | Review the architecture requirements and enable the evaluation. This component cannot be limited to a pilot group.         |
+|2     | [Enable Defender for Identity](eval-defender-identity-overview.md)        | Review the architecture requirements, enable the evaluation, and walk through tutorials for identifying and remediating different attack types.   |
 |3     | [Enable Defender for Office 365 ](eval-defender-office-365-overview.md)       | Ensure you meet the architecture requirements, enable the evaluation, and then create the pilot environment. This component includes Exchange Online Protection and so you will actually evaluate *both* here.      |
 |4     | [Enable Defender for Endpoint ](eval-defender-endpoint-overview.md)       | Ensure you meet the architecture requirements, enable the evaluation, and then create the pilot environment.         |
 |5     | [Enable Microsoft Cloud App Security](eval-defender-mcas-overview.md)        |  Ensure you meet the architecture requirements, enable the evaluation, and then create the pilot environment.        |
