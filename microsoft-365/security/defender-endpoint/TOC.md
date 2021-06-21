@@ -239,24 +239,11 @@
 #### [Configure attack surface reduction capabilities](configure-attack-surface-reduction.md)
 #### [Learn about attack surface reduction rules](attack-surface-reduction.md)
 #### [Evaluate attack surface reduction rules](evaluate-attack-surface-reduction.md)
-<<<<<<< HEAD
-#### [Attack surface reduction configuration settings](configure-attack-surface-reduction.md)
-#### [Attack surface reduction FAQ](attack-surface-reduction-faq.yml)
-
-#### [Attack surface reduction controls]()
-##### [Attack surface reduction rules](attack-surface-reduction.md)
-##### [Enable attack surface reduction rules](enable-attack-surface-reduction.md)
-##### [Customize attack surface reduction rules](customize-attack-surface-reduction.md)
-##### [View attack surface reduction events](event-views.md)
-
-#### [Use audit mode](audit-windows-defender.md)
-=======
 #### [Enable attack surface reduction rules](enable-attack-surface-reduction.md)
 #### [Customize attack surface reduction rules](customize-attack-surface-reduction.md)
 #### [Attack surface reduction FAQ](attack-surface-reduction-faq.md)
 #### [View attack surface reduction events](event-views.md)
 #### [Use audit mode for attack surface reduction](audit-windows-defender.md)
->>>>>>> d6b51df8fb74114f1914a9f62b594ba75ecebcd6
 
 ### Next-generation protection
 #### [Overview of Microsoft Defender Antivirus](microsoft-defender-antivirus-in-windows-10.md)
