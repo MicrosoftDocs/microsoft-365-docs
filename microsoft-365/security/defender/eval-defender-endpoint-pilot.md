@@ -29,23 +29,10 @@ ms.technology: m365d
 >- Learn about the latest enhancements in Microsoft Defender for Endpoint: [What's new in Defender for Endpoint?](https://cloudblogs.microsoft.com/microsoftsecure/2018/11/15/whats-new-in-windows-defender-atp/).
 >- Defender for Endpoint demonstrated industry-leading optics and detection capabilities in the recent MITRE evaluation. Read: [Insights from the MITRE ATT&CK-based evaluation](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/).
 
-When you pilot Microsoft Defender for Endpoint, you may choose to onboard a few devices to the service before onboarding your entire organization. 
+When you pilot Microsoft Defender for Endpoint, you may choose to onboard a few devices to the service before onboarding your entire organization.  To do this, you can run controlled attack simulations on a few test devices. After running the simulated attacks, you can review how Defender for Endpoint surfaces malicious activity and explore how it enables an efficient response.
 
 
-You might want to experience Defender for Endpoint before you onboard more than a few devices to the service. To do this, you can run controlled attack simulations on a few test devices. After running the simulated attacks, you can review how Defender for Endpoint surfaces malicious activity and explore how it enables an efficient response.
-
-
-
-## Review the device inventory
-
-The device inventory shows a list of endpoints, network devices, and IoT devices in your network where alerts were generated. By default, the queue displays devices seen in the last 30 days.  
-
-At a glance you'll see information such as domain, risk level, OS platform, and other details for easy identification of devices most at risk.
-
-From here you can then run simulations and see how Microsoft Defender for Endpoint generates alerts when malicious activity is detected on devices. 
-
-
-## Before you begin running a simulation
+## Before you begin 
 
 To run any of the provided simulations, you need at least [one onboarded device](../defender-endpoint/onboard-configure.md).
 
@@ -142,6 +129,14 @@ Running threat simulations using third-party platforms is a good way to evaluate
 
     ![Image of simulations tab](../../media/defender/simulations-tab.png)
 
-After running your simulations, we encourage you to walk through the lab progress bar and explore **Microsoft Defender for Endpoint triggered an automated investigation and remediation**. Check out the evidence collected and analyzed by the feature.
 
-Hunt for attack evidence through advanced hunting by using the rich query language and raw telemetry and check out some world-wide threats documented in Threat analytics.
+## Review the device inventory
+
+After running simulations, view the device inventory to see a list of endpoints, network devices, and IoT devices in your network where alerts were generated. By default, the queue displays devices seen in the last 30 days.  
+
+At a glance you'll see information such as domain, risk level, OS platform, and other details for easy identification of devices most at risk.
+
+## View the Threat and vulnerability management dashboard 
+
+Threat and vulnerability management helps you focus on the weaknesses that pose the most urgent and the highest risk to the organization. From the dashboard, get a high-level view of the organization exposure score, Microsoft Secure Score for Devices, device exposure distribution, top security recommendations, top vulnerable software, top remediation activities, and top exposed device data. 
+

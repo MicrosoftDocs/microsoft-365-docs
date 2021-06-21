@@ -23,7 +23,7 @@ ms.topic: conceptual
 ms.technology: m365d
 ---
 
-# Enable Microsoft Defender for Endpoint Evaluation
+# Enable Microsoft Defender for Endpoint evaluation environment
 
 >[!NOTE]
 >For the purpose of guiding you through a typical deployment, this scenario will only cover the use of Microsoft Endpoint Configuration Manager. Defender for Endpoint supports the use of other onboarding tools but won't cover those scenarios in the deployment guide. For more information, see [Onboard devices to Microsoft Defender for Endpoint](../defender-endpoint/onboard-configure.md).
@@ -118,3 +118,7 @@ Already have a lab? Make sure to enable the new threat simulators and have activ
 5.  Review the summary and select **Setup lab**.  
 
 After the lab setup process is complete, you can add devices and run simulations. 
+
+
+## Next step
+ - [Setup the pilot for Microsoft Defender for Endpoint](eval-defender-endpoint-pilot.md)
