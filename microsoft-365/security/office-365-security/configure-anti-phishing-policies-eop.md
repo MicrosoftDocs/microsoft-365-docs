@@ -31,7 +31,7 @@ Admins can view, edit, and configure (but not delete) the default anti-phishing 
 
 Organizations with Exchange Online mailboxes can configure anti-phishing policies in the Microsoft 365 Defender portal or in Exchange Online PowerShell. Standalone EOP organizations can only use the Microsoft 365 Defender portal.
 
-For information about creating and modifying the more advanced anti-phishing policies that are available in Microsoft Defender for Office 365, see [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-atp-anti-phishing-policies.md).
+For information about creating and modifying the more advanced anti-phishing policies that are available in Microsoft Defender for Office 365, see [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-mdo-anti-phishing-policies.md).
 
 The basic elements of an anti-phishing policy are:
 
@@ -125,9 +125,6 @@ Creating a custom anti-phishing policy in the Microsoft 365 Defender portal crea
    - **Safety tips & indicators**: This setting is available only if you selected **Enable spoof intelligence** on the previous page:
      - **Show (?) for unauthenticated senders for spoof**: Adds a question mark to the sender's photo in the From box in Outlook if the message does not pass SPF or DKIM checks **and** the message does not pass DMARC or [composite authentication](email-validation-and-authentication.md#composite-authentication).
      - **Show "via" tag**: Adds a via tag (chris@contoso.com via fabrikam.com) to the From address if it's different from the domain in the DKIM signature or the **MAIL FROM** address.
-
-       > [!NOTE]
-       > Currently, the **Show "via" tag** setting is not available in all organizations. If you don't have the **Show "via" tag** setting, the the question mark **and** the via tag are both controlled by the **Show (?) for unauthenticated senders for spoof** setting in your organization.
 
      To turn on a setting, select the check box. To turn it off, clear the check box.
 

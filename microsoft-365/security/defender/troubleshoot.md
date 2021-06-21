@@ -7,7 +7,7 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-f1.keywords: 
+f1.keywords:
   - NOCSH
 ms.author: macapara
 author: mjcaparas
@@ -16,7 +16,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-search.appverid: 
+search.appverid:
   - MOE150
   - MET150
 ms.technology: m365d
@@ -51,5 +51,3 @@ To turn on Microsoft 365 Defender, access **Settings** from the navigation pane 
 ## How do I create an exception for my file/URL?
 
 A false positive is a file or URL that is detected as malicious but is not a threat. You can create indicators and define exclusions to unblock and allow certain files/URLs. See [Address false positives/negatives in Defender for Endpoint](/microsoft-365/security/defender-endpoint/defender-endpoint-false-positives-negatives).
-
-

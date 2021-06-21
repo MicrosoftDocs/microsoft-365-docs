@@ -14,8 +14,8 @@ author: denisebmsft
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
-ms.collection: 
-- m365-security-compliance 
+ms.collection:
+- m365-security-compliance
 - m365initiative-defender-endpoint
 - m365solution-scenario
 - m365scenario-fpfn
@@ -38,11 +38,11 @@ In endpoint protection solutions, a false positive is an entity, such as a file 
 
 Fortunately, steps can be taken to address and reduce these kinds of issues. If you're seeing false positives/negatives in [Microsoft 365 Defender](microsoft-defender-security-center.md) (formerly the Microsoft Defender Security Center), your security operations can take steps to address them by using the following process:
 
-1.	[Review and classify alerts](#part-1-review-and-classify-alerts) 
-2.	[Review remediation actions that were taken](#part-2-review-remediation-actions)
-3.	[Review and define exclusions](#part-3-review-or-define-exclusions)
-4.	[Submit an entity for analysis](#part-4-submit-a-file-for-analysis)
-5.	[Review and adjust your threat protection settings](#part-5-review-and-adjust-your-threat-protection-settings)
+1. [Review and classify alerts](#part-1-review-and-classify-alerts)
+2. [Review remediation actions that were taken](#part-2-review-remediation-actions)
+3. [Review and define exclusions](#part-3-review-or-define-exclusions)
+4. [Submit an entity for analysis](#part-4-submit-a-file-for-analysis)
+5. [Review and adjust your threat protection settings](#part-5-review-and-adjust-your-threat-protection-settings)
 
 You can get help if you still have issues with false positives/negatives after performing the tasks described in this article. See [Still need help?](#still-need-help)
 
@@ -53,7 +53,7 @@ You can get help if you still have issues with false positives/negatives after p
 
 ## Part 1: Review and classify alerts
 
-If you see an [alert](alerts.md) that was triggered because something was detected as malicious or suspicious that should not have been, you can suppress the alert for that entity. You can also suppress alerts that are not necessarily false positives, but are unimportant. We recommend that you classify alerts as well. 
+If you see an [alert](alerts.md) that was triggered because something was detected as malicious or suspicious that should not have been, you can suppress the alert for that entity. You can also suppress alerts that are not necessarily false positives, but are unimportant. We recommend that you classify alerts as well.
 
 Managing your alerts and classifying true/false positives helps to train your threat protection solution and can reduce the number of false positives or false negatives over time. Taking these steps also helps reduce noise in your security operations dashboard so that your security team can focus on higher priority work items.
 
@@ -61,25 +61,30 @@ Managing your alerts and classifying true/false positives helps to train your th
 
 Before you classify or suppress an alert, determine whether the alert is accurate, a false positive, or benign.
 
-1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
+1. Go to the Microsoft 365 Defender portal (<https://security.microsoft.com>) and sign in.
 
 2. In the navigation pane, choose **Alerts queue**.
 
 3. Select an alert to more details about the alert. (See [Review alerts in Microsoft Defender for Endpoint](review-alerts.md).)
 
-4. Depending on the alert status, take the steps described in the following table: 
+4. Depending on the alert status, take the steps described in the following table:
 
-| Alert status | What to do |
-|:---|:---|
-| The alert is accurate | Assign the alert, and then [investigate it](investigate-alerts.md) further. |
-| The alert is a false positive | 1. [Classify the alert](#classify-an-alert) as a false positive. <br/>2. [Suppress the alert](#suppress-an-alert). <br/> 3. [Create an indicator](#indicators-for-microsoft-defender-for-endpoint) for Microsoft Defender for Endpoint. <br/> 4. [Submit a file to Microsoft for analysis](#part-4-submit-a-file-for-analysis). |
-| The alert is accurate, but benign (unimportant) | [Classify the alert](#classify-an-alert) as a true positive, and then [suppress the alert](#suppress-an-alert). |
+<br>
+
+****
+
+|Alert status|What to do|
+|---|---|
+|The alert is accurate|Assign the alert, and then [investigate it](investigate-alerts.md) further.|
+|The alert is a false positive|<ol><li>[Classify the alert](#classify-an-alert) as a false positive.</li><li>[Suppress the alert](#suppress-an-alert).</li><li>[Create an indicator](#indicators-for-microsoft-defender-for-endpoint) for Microsoft Defender for Endpoint.</li><li>[Submit a file to Microsoft for analysis](#part-4-submit-a-file-for-analysis).</li></ol>|
+|The alert is accurate, but benign (unimportant)|[Classify the alert](#classify-an-alert) as a true positive, and then [suppress the alert](#suppress-an-alert).|
+|||
 
 ### Classify an alert
 
 Alerts can be classified as false positives or true positives in Microsoft 365 Defender. Classifying alerts helps train Microsoft Defender for Endpoint so that, over time, you'll see more true alerts and fewer false alerts.
 
-1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
+1. Go to the Microsoft 365 Defender portal (<https://security.microsoft.com>) and sign in.
 
 2. Select **Alerts queue**, and then select an alert.
 
@@ -88,13 +93,13 @@ Alerts can be classified as false positives or true positives in Microsoft 365 D
 4. In the **Manage alert** section, select either **True alert** or **False alert**. (Use **False alert** to classify a false positive.)
 
 > [!TIP]
-> For more information about suppressing alerts, see [Manage Microsoft Defender for Endpoint alerts](/microsoft-365/security/defender-endpoint/manage-alerts). And, if your organization is using a security information and event management (SIEM) server, make sure to define a suppression rule there, too. 
+> For more information about suppressing alerts, see [Manage Microsoft Defender for Endpoint alerts](/microsoft-365/security/defender-endpoint/manage-alerts). And, if your organization is using a security information and event management (SIEM) server, make sure to define a suppression rule there, too.
 
 ### Suppress an alert
 
-If you have alerts that are either false positives or that are true positives but for unimportant events, you can suppress those alerts in Microsoft 365 Defender. Suppressing alerts helps reduce noise in your security operations dashboard. 
+If you have alerts that are either false positives or that are true positives but for unimportant events, you can suppress those alerts in Microsoft 365 Defender. Suppressing alerts helps reduce noise in your security operations dashboard.
 
-1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
+1. Go to the Microsoft 365 Defender portal (<https://security.microsoft.com>) and sign in.
 
 2. In the navigation pane, select **Alerts queue**.
 
@@ -109,7 +114,8 @@ If you have alerts that are either false positives or that are true positives bu
 
 ## Part 2: Review remediation actions
 
-[Remediation actions](manage-auto-investigation.md#remediation-actions), such as sending a file to quarantine or stopping a process, are taken on entities (such as files) that are detected as threats. Several types of remediation actions occur automatically through automated investigation and Microsoft Defender Antivirus:   
+[Remediation actions](manage-auto-investigation.md#remediation-actions), such as sending a file to quarantine or stopping a process, are taken on entities (such as files) that are detected as threats. Several types of remediation actions occur automatically through automated investigation and Microsoft Defender Antivirus:
+
 - Quarantine a file
 - Remove a registry key
 - Kill a process
@@ -123,22 +129,22 @@ After you have reviewed your alerts, your next step is to [review remediation ac
 
 - [Restore a quarantined file from the Action Center](#restore-a-quarantined-file-from-the-action-center)
 - [Undo multiple actions at one time](#undo-multiple-actions-at-one-time)
-- [Remove a file from quarantine across multiple devices](#remove-a-file-from-quarantine-across-multiple-devices).  and 
+- [Remove a file from quarantine across multiple devices](#remove-a-file-from-quarantine-across-multiple-devices).  and
 - [Restore file from quarantine](#restore-file-from-quarantine)
 
 When you're done reviewing and undoing actions that were taken as a result of false positives, proceed to [review or define exclusions](#part-3-review-or-define-exclusions).
 
 ### Review completed actions
 
-1. Go to the Action center ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)) and sign in. 
+1. Go to the Action center (<https://security.microsoft.com/action-center>) and sign in.
 
-2. Select the **History** tab to view a list of actions that were taken.  
+2. Select the **History** tab to view a list of actions that were taken.
 
 3. Select an item to view more details about the remediation action that was taken.
 
 ### Restore a quarantined file from the Action Center
 
-1. Go to the Action center ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)) and sign in. 
+1. Go to the Action center (<https://security.microsoft.com/action-center>) and sign in.
 
 2. On the **History** tab, select an action that you want to undo.
 
@@ -146,18 +152,18 @@ When you're done reviewing and undoing actions that were taken as a result of fa
 
 ### Undo multiple actions at one time
 
-1. Go to the Action center ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)) and sign in. 
+1. Go to the Action center (<https://security.microsoft.com/action-center>) and sign in.
 
 2. On the **History** tab, select the actions that you want to undo.
 
 3. In the pane on the right side of the screen, select **Undo**.
 
-### Remove a file from quarantine across multiple devices 
+### Remove a file from quarantine across multiple devices
 
 > [!div class="mx-imgBorder"]
 > ![Quarantine file](images/autoir-quarantine-file-1.png)
 
-1. Go to the Action center ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)) and sign in. 
+1. Go to the Action center (<https://security.microsoft.com/action-center>) and sign in.
 
 2. On the **History** tab, select a file that has the Action type **Quarantine file**.
 
@@ -165,15 +171,11 @@ When you're done reviewing and undoing actions that were taken as a result of fa
 
 ### Restore file from quarantine
 
-You can roll back and remove a file from quarantine if you’ve determined 
-that it’s clean after an investigation. Run the following command on each 
-device where the file was quarantined.
+You can roll back and remove a file from quarantine if you've determined that it's clean after an investigation. Run the following command on each device where the file was quarantined.
 
 1. Open an elevated command–line prompt on the device:
-
    1. Go to **Start** and type _cmd_.
-
-   1. Right–click **Command prompt** and select **Run as administrator**.
+   2. Right–click **Command prompt** and select **Run as administrator**.
 
 2. Enter the following command, and press **Enter**:
 
@@ -182,19 +184,20 @@ device where the file was quarantined.
     ```
 
     > [!IMPORTANT]
-    > In some scenarios, the **ThreatName** may appear as `EUS:Win32/
-      CustomEnterpriseBlock!cl`. Defender for Endpoint will restore all custom blocked files that were quarantined on this device in the last 30 days.
+    > In some scenarios, the **ThreatName** may appear as `EUS:Win32/CustomEnterpriseBlock!cl`. Defender for Endpoint will restore all custom blocked files that were quarantined on this device in the last 30 days.
+    >
     > A file that was quarantined as a potential network threat might not be recoverable. If a user attempts to restore the file after quarantine, that file might not be accessible. This can be due to the system no longer having network credentials to access the file. Typically, this is a result of a temporary log on to a system or shared folder and the access tokens expired.
 
-3. In the pane on the right side of the screen, select **Apply to X more instances of this file**, and then select **Undo**. 
+3. In the pane on the right side of the screen, select **Apply to X more instances of this file**, and then select **Undo**.
 
 ## Part 3: Review or define exclusions
 
-An exclusion is an entity, such as a file or URL, that you specify as an exception to remediation actions. The excluded entity can still get detected, but no remediation actions are taken on that entity. That is, the detected file or process won’t be stopped, sent to quarantine, removed, or otherwise changed by Microsoft Defender for Endpoint. 
+An exclusion is an entity, such as a file or URL, that you specify as an exception to remediation actions. The excluded entity can still get detected, but no remediation actions are taken on that entity. That is, the detected file or process won't be stopped, sent to quarantine, removed, or otherwise changed by Microsoft Defender for Endpoint.
 
 To define exclusions across Microsoft Defender for Endpoint, perform the following tasks:
+
 - [Define exclusions for Microsoft Defender Antivirus](#exclusions-for-microsoft-defender-antivirus)
-- [Create “allow” indicators for Microsoft Defender for Endpoint](#indicators-for-microsoft-defender-for-endpoint)
+- [Create "allow" indicators for Microsoft Defender for Endpoint](#indicators-for-microsoft-defender-for-endpoint)
 
 > [!NOTE]
 > Microsoft Defender Antivirus exclusions apply only to antivirus protection, not across other Microsoft Defender for Endpoint capabilities. To exclude files broadly, use exclusions for Microsoft Defender Antivirus and [custom indicators](/microsoft-365/security/defender-endpoint/manage-indicators) for Microsoft Defender for Endpoint.
@@ -210,9 +213,9 @@ In general, you should not need to define exclusions for Microsoft Defender Anti
 
 #### Use Microsoft Endpoint Manager to manage antivirus exclusions (for existing policies)
 
-1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and sign in.
+1. Go to the Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com>) and sign in.
 
-2. Choose **Endpoint security** > **Antivirus**, and then select an existing policy. (If you don’t have an existing policy, or you want to create a new policy, skip to [the next procedure](#use-microsoft-endpoint-manager-to-create-a-new-antivirus-policy-with-exclusions)).
+2. Choose **Endpoint security** > **Antivirus**, and then select an existing policy. (If you don't have an existing policy, or you want to create a new policy, skip to [the next procedure](#use-microsoft-endpoint-manager-to-create-a-new-antivirus-policy-with-exclusions)).
 
 3. Choose **Properties**, and next to **Configuration settings**, choose **Edit**.
 
@@ -222,9 +225,9 @@ In general, you should not need to define exclusions for Microsoft Defender Anti
 
 #### Use Microsoft Endpoint Manager to create a new antivirus policy with exclusions
 
-1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and sign in.
+1. Go to the Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com>) and sign in.
 
-2. Choose **Endpoint security** > **Antivirus** > **+ Create Policy**. 
+2. Choose **Endpoint security** > **Antivirus** > **+ Create Policy**.
 
 3. Select a platform (such as **Windows 10 and later**, **macOS**, or **Windows 10 and Windows Server**).
 
@@ -256,38 +259,40 @@ To specify entities as exclusions for Microsoft Defender for Endpoint, create "a
 
 #### Indicators for files
 
-When you [create an "allow" indicator for a file, such as an executable](/microsoft-365/security/defender-endpoint/indicator-file), it helps prevent files that your organization is using from being blocked. Files can include portable executable (PE) files, such as `.exe` and `.dll` files. 
+When you [create an "allow" indicator for a file, such as an executable](/microsoft-365/security/defender-endpoint/indicator-file), it helps prevent files that your organization is using from being blocked. Files can include portable executable (PE) files, such as `.exe` and `.dll` files.
 
 Before you create indicators for files, make sure the following requirements are met:
+
 - Microsoft Defender Antivirus is configured with cloud-based protection enabled (see [Manage cloud-based protection](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus))
-- Antimalware client version is 4.18.1901.x or later 
-- Devices are running Windows 10, version 1703 or later; Windows Server 2016; or Windows Server 2019 
-- The [Block or allow feature is turned on](/microsoft-365/security/defender-endpoint/advanced-features) 
+- Antimalware client version is 4.18.1901.x or later
+- Devices are running Windows 10, version 1703 or later; Windows Server 2016; or Windows Server 2019
+- The [Block or allow feature is turned on](/microsoft-365/security/defender-endpoint/advanced-features)
 
 #### Indicators for IP addresses, URLs, or domains
 
 When you [create an "allow" indicator for an IP address, URL, or domain](/microsoft-365/security/defender-endpoint/indicator-ip-domain), it helps prevent the sites or IP addresses your organization uses from being blocked.
 
 Before you create indicators for IP addresses, URLs, or domains, make sure the following requirements are met:
+
 - Network protection in Defender for Endpoint is enabled in block mode (see [Enable network protection](/microsoft-365/security/defender-endpoint/enable-network-protection))
-- Antimalware client version is 4.18.1906.x or later 
-- Devices are running Windows 10, version 1709, or later 
+- Antimalware client version is 4.18.1906.x or later
+- Devices are running Windows 10, version 1709, or later
 
 Custom network indicators are turned on in the [Microsoft 365 Defender](microsoft-defender-security-center.md). To learn more, see [Advanced features](/microsoft-365/security/defender-endpoint/advanced-features).
 
-#### Indicators for application certificates 
+#### Indicators for application certificates
 
-When you [create an "allow" indicator for an application certificate](/microsoft-365/security/defender-endpoint/indicator-certificates), it helps prevent applications, such as internally developed applications, that your organization uses from being blocked. `.CER` or `.PEM` file extensions are supported.   
+When you [create an "allow" indicator for an application certificate](/microsoft-365/security/defender-endpoint/indicator-certificates), it helps prevent applications, such as internally developed applications, that your organization uses from being blocked. `.CER` or `.PEM` file extensions are supported.
 
 Before you create indicators for application certificates, make sure the following requirements are met:
 
 - Microsoft Defender Antivirus is configured with cloud-based protection enabled (see [Manage cloud-based protection](deploy-manage-report-microsoft-defender-antivirus.md))
-- Antimalware client version is 4.18.1901.x or later 
-- Devices are running Windows 10, version 1703 or later; Windows Server 2016; or Windows Server 2019 
-- Virus and threat protection definitions are up to date  
+- Antimalware client version is 4.18.1901.x or later
+- Devices are running Windows 10, version 1703 or later; Windows Server 2016; or Windows Server 2019
+- Virus and threat protection definitions are up to date
 
 > [!TIP]
-> When you create indicators, you can define them one by one, or import multiple items at once. Keep in mind there's a limit of 15,000 indicators for a single tenant. And, you might need to gather certain details first, such as file hash information. Make sure to review the prerequisites before you [create indicators](manage-indicators.md). 
+> When you create indicators, you can define them one by one, or import multiple items at once. Keep in mind there's a limit of 15,000 indicators for a single tenant. And, you might need to gather certain details first, such as file hash information. Make sure to review the prerequisites before you [create indicators](manage-indicators.md).
 
 ## Part 4: Submit a file for analysis
 
@@ -299,24 +304,25 @@ If you have a file that was either wrongly detected as malicious or was missed, 
 
 1. Review the guidelines here: [Submit files for analysis](/windows/security/threat-protection/intelligence/submission-guide).
 
-2. Visit the Microsoft Security Intelligence submission site ([https://www.microsoft.com/wdsi/filesubmission](https://www.microsoft.com/wdsi/filesubmission)), and submit your file(s).
+2. Visit the Microsoft Security Intelligence submission site (<https://www.microsoft.com/wdsi/filesubmission>), and submit your file(s).
 
 ### Submit a fileless detection for analysis
 
-If something was detected as malware based on behavior, and you don’t have a file, you can submit your `Mpsupport.cab` file for analysis. You can get the *.cab* file by using the Microsoft Malware Protection Command-Line Utility (MPCmdRun.exe) tool on Windows 10.
+If something was detected as malware based on behavior, and you don't have a file, you can submit your `Mpsupport.cab` file for analysis. You can get the *.cab* file by using the Microsoft Malware Protection Command-Line Utility (MPCmdRun.exe) tool on Windows 10.
 
-1.	Go to ` C:\ProgramData\Microsoft\Windows Defender\Platform\<version>`, and then run `MpCmdRun.exe` as an administrator.
+1. Go to ` C:\ProgramData\Microsoft\Windows Defender\Platform\<version>`, and then run `MpCmdRun.exe` as an administrator.
 
-2.	Type `mpcmdrun.exe -GetFiles`, and then press **Enter**.
+2. Type `mpcmdrun.exe -GetFiles`, and then press **Enter**.
+
    A .cab file is generated that contains various diagnostic logs. The location of the file is specified in the output of the command prompt. By default, the location is `C:\ProgramData\Microsoft\Microsoft Defender\Support\MpSupportFiles.cab`.
 
-3.	Review the guidelines here: [Submit files for analysis](/windows/security/threat-protection/intelligence/submission-guide).
+3. Review the guidelines here: [Submit files for analysis](/windows/security/threat-protection/intelligence/submission-guide).
 
-4.	Visit the Microsoft Security Intelligence submission site ([https://www.microsoft.com/wdsi/filesubmission](https://www.microsoft.com/wdsi/filesubmission)), and submit your .cab files.
+4. Visit the Microsoft Security Intelligence submission site (<https://www.microsoft.com/wdsi/filesubmission>), and submit your .cab files.
 
 ### What happens after a file is submitted?
 
-Your submission is immediately scanned by our systems to give you the latest determination even before an analyst starts handling your case. It’s possible that a file might have already been submitted and processed by an analyst. In those cases, a determination is made quickly.
+Your submission is immediately scanned by our systems to give you the latest determination even before an analyst starts handling your case. It's possible that a file might have already been submitted and processed by an analyst. In those cases, a determination is made quickly.
 
 For submissions that were not already processed, they are prioritized for analysis as follows:
 
@@ -324,14 +330,14 @@ For submissions that were not already processed, they are prioritized for analys
 - Authenticated customers, especially enterprise customers with valid [Software Assurance IDs (SAIDs)](https://www.microsoft.com/licensing/licensing-programs/software-assurance-default.aspx), are given a higher priority.
 - Submissions flagged as high priority by SAID holders are given immediate attention.
 
-To check for updates regarding your submission, sign in at the [Microsoft Security Intelligence submission site](https://www.microsoft.com/wdsi/filesubmission). 
+To check for updates regarding your submission, sign in at the [Microsoft Security Intelligence submission site](https://www.microsoft.com/wdsi/filesubmission).
 
 > [!TIP]
 > To learn more, see [Submit files for analysis](/windows/security/threat-protection/intelligence/submission-guide#how-does-microsoft-prioritize-submissions).
 
 ## Part 5: Review and adjust your threat protection settings
 
-Microsoft Defender for Endpoint offers a wide variety of options, including the ability to fine-tune settings for various features and capabilities. If you’re getting numerous false positives, make sure to review your organization’s threat protection settings. You might need to make some adjustments to:
+Microsoft Defender for Endpoint offers a wide variety of options, including the ability to fine-tune settings for various features and capabilities. If you're getting numerous false positives, make sure to review your organization's threat protection settings. You might need to make some adjustments to:
 
 - [Cloud-delivered protection](#cloud-delivered-protection)
 - [Remediation for potentially unwanted applications](#remediation-for-potentially-unwanted-applications)
@@ -348,9 +354,9 @@ We recommend using [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) 
 
 #### Use Microsoft Endpoint Manager to review and edit cloud-delivered protection settings (for existing policies)
 
-1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and sign in.
+1. Go to the Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com>) and sign in.
 
-2. Choose **Endpoint security** > **Antivirus** and then select an existing policy. (If you don’t have an existing policy, or you want to create a new policy, skip to [the next procedure](#use-microsoft-endpoint-manager-to-set-cloud-delivered-protection-settings-for-a-new-policy)).
+2. Choose **Endpoint security** > **Antivirus** and then select an existing policy. (If you don't have an existing policy, or you want to create a new policy, skip to [the next procedure](#use-microsoft-endpoint-manager-to-set-cloud-delivered-protection-settings-for-a-new-policy)).
 
 3. Under **Manage**, select **Properties**. Then, next to **Configuration settings**, choose **Edit**.
 
@@ -360,7 +366,7 @@ We recommend using [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) 
 
 #### Use Microsoft Endpoint Manager to set cloud-delivered protection settings (for a new policy)
 
-1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and sign in.
+1. Go to the Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com>) and sign in.
 
 2. Choose **Endpoint security** > **Antivirus** > **+ Create policy**.
 
@@ -376,7 +382,7 @@ We recommend using [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) 
 
 7. On the **Assignments** tab, specify the users and groups to whom your policy should be applied, and then choose **Next**. (If you need help with assignments, see [Assign user and device profiles in Microsoft Intune](/mem/intune/configuration/device-profile-assign).)
 
-8. On the **Review + create** tab, review the settings, and then choose **Create**.  
+8. On the **Review + create** tab, review the settings, and then choose **Create**.
 
 ### Remediation for potentially unwanted applications
 
@@ -384,16 +390,16 @@ Potentially unwanted applications (PUA) are a category of software that can caus
 
 > [!TIP]
 > To learn more about PUA, see [Detect and block potentially unwanted applications](/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus).
- 
+
 Depending on the apps your organization is using, you might be getting false positives as a result of your PUA protection settings. If necessary, consider running PUA protection in audit mode for a while, or apply PUA protection to a subset of devices in your organization. PUA protection can be configured for the Microsoft Edge browser and for Microsoft Defender Antivirus.
 
 We recommend using [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) to edit or set PUA protection settings; however, you can use other methods, such as [Group Policy](/azure/active-directory-domain-services/manage-group-policy) (see [Manage Microsoft Defender for Endpoint](manage-atp-post-migration.md)).
 
 #### Use Microsoft Endpoint Manager to edit PUA protection (for existing configuration profiles)
 
-1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and sign in.
+1. Go to the Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com>) and sign in.
 
-2. Choose **Devices** > **Configuration profiles**, and then select an existing policy. (If you don’t have an existing policy, or you want to create a new policy, skip to [the next procedure](#use-microsoft-endpoint-manager-to-set-pua-protection-for-a-new-configuration-profile).)
+2. Choose **Devices** > **Configuration profiles**, and then select an existing policy. (If you don't have an existing policy, or you want to create a new policy, skip to [the next procedure](#use-microsoft-endpoint-manager-to-set-pua-protection-for-a-new-configuration-profile).)
 
 3. Under **Manage**, choose **Properties**, and then, next to **Configuration settings**, choose **Edit**.
 
@@ -405,7 +411,7 @@ We recommend using [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) 
 
 #### Use Microsoft Endpoint Manager to set PUA protection (for a new configuration profile)
 
-1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and sign in.
+1. Go to the Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com>) and sign in.
 
 2. Choose **Devices** > **Configuration profiles** > **+ Create profile**.
 
@@ -425,28 +431,28 @@ We recommend using [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) 
 
 ### Automated investigation and remediation
 
-[Automated investigation and remediation](automated-investigations.md) (AIR) capabilities are designed to examine alerts and take immediate action to resolve breaches. As alerts are triggered, and an automated investigation runs, a verdict is generated for each piece of evidence investigated. Verdicts can be *Malicious*, *Suspicious*, or *No threats found*. 
+[Automated investigation and remediation](automated-investigations.md) (AIR) capabilities are designed to examine alerts and take immediate action to resolve breaches. As alerts are triggered, and an automated investigation runs, a verdict is generated for each piece of evidence investigated. Verdicts can be *Malicious*, *Suspicious*, or *No threats found*.
 
-Depending on the [level of automation](/microsoft-365/security/defender-endpoint/automation-levels) set for your organization and other security settings, remediation actions are taken on artifacts that are considered to be *Malicious* or *Suspicious*. In some cases, remediation actions occur automatically; in other cases, remediation actions are taken manually or only upon approval by your security operations team. 
+Depending on the [level of automation](/microsoft-365/security/defender-endpoint/automation-levels) set for your organization and other security settings, remediation actions are taken on artifacts that are considered to be *Malicious* or *Suspicious*. In some cases, remediation actions occur automatically; in other cases, remediation actions are taken manually or only upon approval by your security operations team.
 
-- [Learn more about automation levels](/microsoft-365/security/defender-endpoint/automation-levels); and then 
+- [Learn more about automation levels](/microsoft-365/security/defender-endpoint/automation-levels); and then
 - [Configure AIR capabilities in Defender for Endpoint](/microsoft-365/security/defender-endpoint/configure-automated-investigations-remediation).
 
 > [!IMPORTANT]
-> We recommend using *Full automation* for automated investigation and remediation. Don't turn these capabilities off because of a false positive. Instead, use ["allow" indicators to define exceptions](#indicators-for-microsoft-defender-for-endpoint), and keep automated investigation and remediation set to take appropriate actions automatically. Following [this guidance](automation-levels.md#levels-of-automation) helps reduce the number of alerts your security operations team must handle. 
+> We recommend using *Full automation* for automated investigation and remediation. Don't turn these capabilities off because of a false positive. Instead, use ["allow" indicators to define exceptions](#indicators-for-microsoft-defender-for-endpoint), and keep automated investigation and remediation set to take appropriate actions automatically. Following [this guidance](automation-levels.md#levels-of-automation) helps reduce the number of alerts your security operations team must handle.
 
 ## Still need help?
 
 If you have worked through all the steps in this article and still need help, contact technical support.
 
-1. Go to Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
+1. Go to Microsoft 365 Defender (<https://security.microsoft.com>) and sign in.
 
 2. In the upper right corner, select the question mark (**?**), and then select **Microsoft support**.
 
-3. In the **Support Assistant** window, describe your issue, and then send your message. From there, you can open a service request.  
+3. In the **Support Assistant** window, describe your issue, and then send your message. From there, you can open a service request.
 
 ## See also
 
 [Manage Microsoft Defender for Endpoint](manage-atp-post-migration.md)
 
-[Overview of Microsoft 365 Defender portal](/microsoft-365/security/defender-endpoint/use) 
+[Overview of Microsoft 365 Defender portal](/microsoft-365/security/defender-endpoint/use)
