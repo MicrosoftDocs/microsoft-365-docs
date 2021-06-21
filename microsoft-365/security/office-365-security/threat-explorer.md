@@ -509,7 +509,7 @@ Suppose that you want to see email messages that users in your organization repo
    > [!div class="mx-imgBorder"]
    > ![User-reported phish](../../media/EmailUserReportedReportType.png)
 
-The report refreshes to show data about email messages that people in your organization reported as a phishing attempt. You can use this information to conduct further analysis, and, if necessary, adjust your [anti-phishing policies in Microsoft Defender for Office 365](configure-atp-anti-phishing-policies.md).
+The report refreshes to show data about email messages that people in your organization reported as a phishing attempt. You can use this information to conduct further analysis, and, if necessary, adjust your [anti-phishing policies in Microsoft Defender for Office 365](configure-mdo-anti-phishing-policies.md).
 
 ## Start automated investigation and response
 
