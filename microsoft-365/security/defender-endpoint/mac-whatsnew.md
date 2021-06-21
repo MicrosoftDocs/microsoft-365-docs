@@ -33,6 +33,10 @@ ms.technology: mde
 > [!IMPORTANT]
 > On macOS 11 (Big Sur), Microsoft Defender for Endpoint requires additional configuration profiles. If you are an existing customer upgrading from earlier versions of macOS, make sure to deploy the additional configuration profiles listed on [this page](mac-sysext-policies.md).
 
+## 101.32.69 (20.121042.13269.0)
+
+- Addressed an issue where concurrent access to the keychain from Microsoft Defender for Endpoint and other applications can lead to keychain corruption.
+
 ## 101.29.64 (20.121042.12964.0)
 
 - Starting with this version, threats detected during on-demand antivirus scans triggered through the command-line client are automatically remediated. Threats detected during scans triggered through the user interface still require manual action.

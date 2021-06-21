@@ -26,14 +26,11 @@ ms.topic: how-to
 
 ## Use Microsoft Intune to configure scanning options
 
-See the following resources: 
-
-- [Configure device restriction settings in Microsoft Intune](/intune/device-restrictions-configure) 
-- [Microsoft Defender Antivirus device restriction settings for Windows 10 in Intune](/intune/device-restrictions-windows-10#microsoft-defender-antivirus)
+For more information, see [Configure device restriction settings in Microsoft Intune](/intune/device-restrictions-configure) and [Microsoft Defender Antivirus device restriction settings for Windows 10 in Intune](/intune/device-restrictions-windows-10#microsoft-defender-antivirus). 
 
 ## Use Microsoft Endpoint Manager to configure scanning options
 
-See [How to create and deploy antimalware policies: Scan settings](/configmgr/protect/deploy-use/endpoint-antimalware-policies#scan-settings).
+For details on configuring Microsoft Endpoint Manager (current branch), see [How to create and deploy antimalware policies: Scan settings](/configmgr/protect/deploy-use/endpoint-antimalware-policies#scan-settings).
 
 ## Use Group Policy to configure scanning options
 
@@ -44,6 +41,7 @@ See [How to create and deploy antimalware policies: Scan settings](/configmgr/pr
 3. In the **Group Policy Management Editor** go to **Computer configuration** and click **Administrative templates**.
 
 4. Expand the tree to **Windows components** > **Microsoft Defender Antivirus**, and then select a location (refer to [Settings and locations](#settings-and-locations) in this article).
+
 
 5. Edit the policy object. 
 
@@ -64,13 +62,15 @@ See [How to create and deploy antimalware policies: Scan settings](/configmgr/pr
 | Specify the maximum CPU load (as a percentage) during a scan. <p> **Scan** > **Specify the maximum percentage of CPU utilization during a scan** | 50 |  `-ScanAvgCPULoadFactor` <p>**NOTE**: The maximum CPU load is not a hard limit, but is guidance for the scanning engine to not exceed the maximum on average. Manually run scans will ignore this setting and run without any CPU limits. |
 | Specify the maximum size (in kilobytes) of archive files that should be scanned. <p> **Scan** > **Specify the maximum size of archive files to be scanned** | No limit | Not available <p>The default value of 0 applies no limit |
 | Configure low CPU priority for scheduled scans <p> **Scan** > **Configure low CPU priority for scheduled scans** | Disabled | Not available |
+
  
 > [!NOTE]
 > If real-time protection is turned on, files are scanned before they are accessed and executed. The scanning scope includes all files, including files on mounted removable media, such as USB drives. If the device performing the scan has real-time protection or on-access protection turned on, the scan will also include network shares.
 
 ## Use PowerShell to configure scanning options
 
-See the following resources:
+
+For more information on how to use PowerShell with Microsoft Defender Antivirus, see
 
 - [Manage Microsoft Defender Antivirus with PowerShell cmdlets](use-powershell-cmdlets-microsoft-defender-antivirus.md)
 - [Defender cmdlets](/powershell/module/defender/)
@@ -94,7 +94,13 @@ If Microsoft Defender Antivirus detects a threat inside an email message, it wil
 - Email subject
 - Attachment name
 
+
+## Scanning mapped network drives
+
+On any OS, only the network drives that are mapped at system level, are scanned. User-level mapped network drives aren't scanned. User-level mapped network drives are those that a user maps in their session manually and using their own credentials.
+
 ## See also
+
 
 - [Customize, initiate, and review the results of Microsoft Defender Antivirus scans and remediation](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
 - [Configure and run on-demand Microsoft Defender Antivirus scans](run-scan-microsoft-defender-antivirus.md)
