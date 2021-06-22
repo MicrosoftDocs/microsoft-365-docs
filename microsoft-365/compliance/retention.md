@@ -294,7 +294,12 @@ Use the following flow to understand the retention and deletion outcomes for a s
   
 Explanation for the four different levels:
   
-1. **Retention wins over deletion.** Content won't be permanently deleted when it also has retention settings to retain it. While this principle ensures that content is preserved for compliance reasons, that content can still be deleted from view for users. For example, a document in SharePoint moves from the original folder to the Preservation Holds folder. For more information, see [How retention settings work for content in place](#how-retention-settings-work-with-content-in-place).
+1. **Retention wins over deletion.** Content won't be permanently deleted when it also has retention settings to retain it. While this principle ensures that content is preserved for compliance reasons, the delete process is initiated and removes the content from user view, but permanent deletion is suspended. For example, a document in SharePoint moves from the original folder to the Preservation Holds folder. For more information about where and how content is preserved, use the following links for each workload:
+    
+    - [How retention works for SharePoint and OneDrive](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive)
+    - [How retention works with Microsoft Teams](retention-policies-teams.md#how-retention-works-with-microsoft-teams)
+    - [How retention works with Yammer](retention-policies-yammer.md#how-retention-works-with-yammer)
+    - [How retention works for Exchange](retention-policies-exchange.md#how-retention-works-for-exchange)
     
     Example: An email message is subject to a retention policy for Exchange that is configured to delete items after three years and it also has a retention label applied that is configured to retain items for five years.
     
