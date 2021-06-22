@@ -33,7 +33,7 @@ Before managing the integration within Blackboard Learn Ultra, the Microsoft Off
 
 2. Redirect the Microsoft Identity Platform Admin Consent Endpoint according to the following example:
 
-   `https://login.microsoftonline.com/{tenant}/adminconsent?client\_id=2d94989f-457a-47c1-a637-e75acdb11568`
+   `https://login.microsoftonline.com/{tenant}/adminconsent?client_id=2d94989f-457a-47c1-a637-e75acdb11568`
 
    > [!NOTE]
    > Replace {tenant} with your organization’s Microsoft tenant ID.
@@ -59,8 +59,6 @@ As a Blackboard Learn Ultra admin, you'll need to register 2 LTI 1.3 integration
 3. Select **Register LTI1.3/Advantage Tool**.
 
 4. Enter the first of the Client IDs provided (either Blackboard or Microsoft), and select **Submit**.
-
-   ![the LTI register tool with a field to enter the client id](../media/lti-media/register-tool.png)
 
 5. Review the pre-populated settings and ensure that the tool status is marked as approved.
 
