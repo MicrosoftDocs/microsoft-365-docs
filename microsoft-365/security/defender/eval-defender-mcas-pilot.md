@@ -36,16 +36,30 @@ Use the following steps to setup and configure the pilot for Microsoft Cloud App
 
 ![Steps for piloting Microsoft Cloud App Security](../../media/defender/m365-defender-mcas-pilot-steps.png)
 
-The following table describes the steps in the illustration.
+- Step 1. [Create the pilot group — Scope your pilot deployment to certain user groups](#step-1-create-the-pilot-group--scope-your-pilot-deployment-to-certain-user-groups)
 
 
+## Step 1. Create the pilot group — Scope your pilot deployment to certain user groups
 
-## Step 1. 
-
-Text
+Microsoft Cloud App Security enables you to scope your deployment. Scoping allows you to select certain user groups to be monitored for apps or excluded from monitoring. You can include or exclude user groups. To scope your pilot deployment, see [Scoped Deployment](/cloud-app-security/scoped-deployment).
 
 
-## Step 2. Try out capabilities — 
+## Step 2. Configure protection — Conditional Access App Control
+
+One of the most powerful protections you can configure is Conditional Access App Control. This requires integration with Azure Active Directory (Azure AD). It allows you to apply Conditional Access policies, including related policies (like requiring healthy devices), to cloud apps you've sanctioned. 
+
+The first step in using Microsoft Cloud App Security to manage SaaS apps is to discover these and then add them to your Azure AD tenant. If you need help with discovery, see [Discover and manage SaaS apps in your network](/cloud-app-security/tutorial-shadow-it). After you've discovered apps, [add these to your Azure AD tenant](/azure/active-directory/manage-apps/add-application-portal).
+
+You can begin to manage these by doing the following:
+
+- First, in Azure AD, create a new conditional access policy and configure it to "Use Conditional Access App Control." This redirects the request to Cloud App Security. You can create one policy and add all SaaS apps to this policy.
+- Next, in Cloud App Security, create session policies. Create one policy for each control you want to apply.
+
+For more information, including supported apps and clients, see [Protect apps with Microsoft Cloud App Security Conditional Access App Control](/cloud-app-security/proxy-intro-aad). 
+
+For example policies, see [Recommended Microsoft Cloud App Security policies for SaaS apps](../office-365-security/mcas-saas-access-policies.md). These policies build on a set of [common identity and device access policies](../office-365-security/microsoft-365-policies-configurations.md) that are recommended as a starting point for all customers. 
+
+## Step 3. Try out capabilities — 
 
 
 
