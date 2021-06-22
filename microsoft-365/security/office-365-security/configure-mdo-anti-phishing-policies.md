@@ -319,9 +319,11 @@ When you use the Microsoft 365 Defender portal to remove a custom anti-phishing 
 
 1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Policies** section \> **Anti-phishing**.
 
-2. Select a custom policy from the list by clicking on the name of the policy. At the top of the policy details flyout that appears, click ![More actions icon](../../media/m365-cc-sc-more-actions-icon.png) **More actions** \> ![Delete policy icon](../../media/m365-cc-sc-delete-icon.png) **Delete policy**.
+2. On the **Anti-phishing** page, select a custom policy from the list by clicking on the name of the policy.
 
-3. In the confirmation dialog that appears, click **Yes**.
+3. At the top of the policy details flyout that appears, click ![More actions icon](../../media/m365-cc-sc-more-actions-icon.png) **More actions** \> ![Delete policy icon](../../media/m365-cc-sc-delete-icon.png) **Delete policy**.
+
+4. In the confirmation dialog that appears, click **Yes**.
 
 ## Use Exchange Online PowerShell to configure anti-phishing policies
 
