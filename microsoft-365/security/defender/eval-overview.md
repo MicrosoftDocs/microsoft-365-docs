@@ -45,7 +45,7 @@ This guidance steps you through the process of setting up an evaluation environm
 Yes, Microsoft recommends creating your evaluation environment in your existing production environment! You will gain insights immediately through the shared signals. You can tune settings to work against current threats. After you've gained experience, you can promote each component of Microsoft 365 Defender to production (one at a time). You can also gradually increase the scope of the pilot group until you've reached production capacity. 
 
 
-## The anatomy of thwarting an Attack
+## The anatomy of thwarting an attack
 
 Microsoft 365 Defender is a Cloud-based, unified, pre- and post-breach enterprise defense suite that coordinates *prevention*, *detection*, *investigation*, and *response* across endpoints, identities, apps, email, collaborative applications, and all of their data.
 
