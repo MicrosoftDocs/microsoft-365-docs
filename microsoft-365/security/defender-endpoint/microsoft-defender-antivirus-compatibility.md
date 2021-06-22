@@ -75,7 +75,7 @@ You can set Microsoft Defender Antivirus to passive mode by setting the followin
 
 
 
-(<a id="fn2">2</a>) On Windows Server 2012 R2 or Windows Server 2016, if you are using a non-Microsoft antivirus product, you cannot run Microsoft Defender Antivirus in either passive mode or active mode. In such cases, [disable/uninstall Microsoft Defender Antivirus manually](microsoft-defender-antivirus-on-windows-server.md#are-you-using-windows-server-2016) to prevent problems caused by having multiple antivirus products installed on a server.
+(<a id="fn2">2</a>) On Windows Server 2012 R2 or Windows Server 2016, if you are using a non-Microsoft antivirus product, you cannot run Microsoft Defender Antivirus in either passive mode or active mode. In such cases, [disable/uninstall Microsoft Defender Antivirus manually](microsoft-defender-antivirus-on-windows-server.md#are-you-using-windows-server-2012-r2-or-windows-server-2016) to prevent problems caused by having multiple antivirus products installed on a server.
 
 See [Microsoft Defender Antivirus on Windows Server](microsoft-defender-antivirus-on-windows-server.md) for key differences and management options for Windows Server installations.
 
