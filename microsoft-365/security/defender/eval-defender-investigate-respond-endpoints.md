@@ -28,7 +28,7 @@ ms.technology: m365d
 **Applies to:**
 - Microsoft 365 Defender
 
-This article is [Step 1 of 3](eval-defender-investigate-respond.md) in the process of performing an investigation and response of an incident in Microsoft 365 Defender. For more information about this process, see the [overview](eval-defender-investigate-respond.md) article.
+This article is [Step 1 of 3](eval-defender-investigate-respond.md) in the process of performing an investigation and response of an incident in Microsoft 365 Defender using a pilot environment. For more information about this process, see the [overview](eval-defender-investigate-respond.md) article.
 
 Now that your pilot environment has all of the Microsoft 365 Defender components enabled, it's time to create an incident with a simulated attack and use the Microsoft 365 Defender portal to investigate and respond.
 
@@ -68,6 +68,8 @@ Here is the result.
 ![Endpoints for your Defender evaluation environment using the simulated enterprise Test Lab Guide](../../media/eval-defender-investigate-respond/eval-defender-eval-investigate-respond-endpoints-tlg.png)
 
 ## Next step
+
+[![Simulate an attack and response with Microsoft 365 Defender](../../media/eval-defender-investigate-respond/eval-defender-eval-investigate-respond-step2.png)](eval-defender-investigate-respond-simulate-attack.md)
 
 Step 2 of 3: [Simulate an attack and response with Microsoft 365 Defender](eval-defender-investigate-respond-simulate-attack.md)
 
