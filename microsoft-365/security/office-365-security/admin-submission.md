@@ -87,7 +87,7 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
 5. When you're finished, click the **Submit** button.
 
 > [!div class="mx-imgBorder"]
-> ![New URL submission example](../../media/submission-flyout-email.PNG)
+> ![New URL submission example](../../media/submission-flyout-email.png)
 
 ### Send a suspect URL to Microsoft
 
@@ -117,7 +117,7 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
 4. When you're finished, click the **Submit** button.
 
 > [!div class="mx-imgBorder"]
-> ![New Attachment submission example](../../media/submission-file-flyout.PNG)
+> ![New Attachment submission example](../../media/submission-file-flyout.png)
 
 ## View admin submissions to Microsoft
 
