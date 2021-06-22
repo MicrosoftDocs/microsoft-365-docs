@@ -38,6 +38,14 @@ Learn more by watching [this video](https://www.youtube.com/watch?v=Tdz6KfruDGo&
 > [!TIP]
 > Don't have Microsoft Defender for Office 365 yet? [Contact sales to start a trial](https://info.microsoft.com/ww-landing-M365SMB-web-contact.html).
 
+## June 2021
+
+- New first contact safety tip setting within anti-phishing policies. This safety tip is shown when recipients first receive an email from a sender or do not often receive email from a sender. For more information on this setting and how to configure it, see the following articles:
+
+- [First contact safety tip](set-up-anti-phishing-policies.md#first-contact-safety-tip)
+- [Configure anti-phishing policies in EOP](configure-anti-phishing-policies-eop.md)
+- [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-mdo-anti-phishing-policies.md)
+
 ## April/May 2021
 
 - [Email entity page](mdo-email-entity-page.md): A unified 360-degree view of an email with enriched information around threats, authentication and detections, detonation details, and a brand-new email preview experience.
@@ -50,6 +58,7 @@ Learn more by watching [this video](https://www.youtube.com/watch?v=Tdz6KfruDGo&
 - Increasing the limits for Export of records from 9990 to 200,000 in [hunting experiences](threat-explorer.md)
 - Extending the Explorer (and Real-time detections) data retention and search limit for trial tenants from 7 (previous limit) to 30 days in [hunting experiences](threat-explorer.md)
 - New hunting pivots called **Impersonated domain** and **Impersonated user** within the Explorer (and Real-time detections) to search for impersonation attacks against protected users or domains. For more information, see [details](threat-explorer.md#view-phishing-emails-sent-to-impersonated-users-and-domains). (Microsoft Defender for Office 365 Plan 1 or Plan 2)
+- New first contact safety tip for when recipients first receive an email from a sender or do not often receive email from a sender. For more information on this setting and how to configure it using Exchange mail flow rules (also known as transport rules), see [First contact safety tip](set-up-anti-phishing-policies.md#first-contact-safety-tip).
 
 ## December 2020
 
