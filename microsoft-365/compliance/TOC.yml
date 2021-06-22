@@ -501,6 +501,10 @@
               href: archive-17a-4-symphony-data.md
             - name: Zoom DataParser (preview)
               href: archive-17a-4-zoom-data.md
+        - name: CellTrust connectors
+          items:
+            - name: CellTrust SL2 (preview)
+              href: archive-data-from-celltrustsl2.md
         - name: Work with a partner to archive third-party data
           href: work-with-partner-to-archive-third-party-data.md
         - name: Search for third-party data
