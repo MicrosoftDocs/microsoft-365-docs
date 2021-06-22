@@ -17,7 +17,7 @@ description: "Create and grade assignments, build and curate course content, and
 
 # Integrate OneDrive LTI with Canvas
 
-Integrating OneDrive LTI with Canvas is a two step process. First step enables OneDrive in Canvas and second step makes OneDrive LTI available within Canvas courses.
+Integrating OneDrive LTI with Canvas is a two step process. The first step enables OneDrive in Canvas, and the second step makes the OneDrive LTI available within Canvas courses.
 
 ## Enable OneDrive LTI in Canvas
 
@@ -26,12 +26,12 @@ Integrating OneDrive LTI with Canvas is a two step process. First step enables O
 
 1. Sign into the Microsoft Azure portal with the tenant admin account. The Azure tenant administrator should also have the Group administrator role.
 2. In a second browser window, sign into the [Microsoft OneDrive LTI Registration Portal](https://eduonedrivelti.microsoft.com/admin).
-3. Click on the **Admin Consent** button and accept the permissions.
-4. Click on the **Create new LTI Tenant** button. On LTI Registration page select **Canvas** in the dropdown and enter the base URL of your Canvas instance.
+3. Select the **Admin Consent** button and accept the permissions.
+4. Select the **Create new LTI Tenant** button. On the LTI Registration page select **Canvas** in the dropdown and enter the base URL of your Canvas instance.
 
 :::image type="content" source="media/OneDrive-LTI-07.png" alt-text="The LTI tenant administration page, with a dropdown field for choosing the LTI consumer platform and a URL text field.":::
 
-5. Copy the JSON by clicking the **Copy** button. This will be used to generate the key in Canvas.
+5. Copy the JSON by selecting the **Copy** button. This will be used to generate the key in Canvas.
 
 :::image type="content" source="media/OneDrive-LTI-08.png" alt-text="An image showing the copy button that will copy the displayed JSON text and make it available for key generation in Canvas.":::
 
@@ -47,24 +47,24 @@ Integrating OneDrive LTI with Canvas is a two step process. First step enables O
 
 10. Enable embedding editing options for Office files. Review and save your changes.
 11. A success message will be displayed on successful registration.
-12. Registration details can also be seen by clicking the **View LTI Tenants** button.
+12. Registration details can also be seen by selecting the **View LTI Tenants** button.
 
 ## Enable OneDrive LTI 1.3 in Canvas Courses
 
 A Canvas administrator can enable OneDrive LTI for all courses. If OneDrive LTI is needed in a specific course (and not all courses), the course educator needs to follow the same steps within the course settings.
 
 1. Sign in as an administrator and go to the **Settings** section.
-2. Go to the **Apps** section and click the **View App Configurations** button.
-3. Click the **Add App** button.
+2. Go to the **Apps** section and select the **View App Configurations** button.
+3. Select the **Add App** button.
 4. In the **Configuration Type** dropdown, choose the **By Client ID** option.
 
 :::image type="content" source="media/OneDrive-LTI-30.png" alt-text="The add app page, showing the By client ID option under the Configuration type dropdown menu.":::
 
-5. Paste the value of the developer key generated previously in the **Client ID** field, and click the **Submit** button.
+5. Paste the value of the developer key generated previously in the **Client ID** field, and select the **Submit** button.
 6. The OneDrive LTI won't show up immediately in the External Apps list. Refresh the browser page showing the list, and OneDrive LTI will be available.
 
 ## Collaboration Settings for OneDrive LTI 1.3 in Canvas Courses
 
-For collaboration to work for teachers and students, disable the setting below. If it is enabled “Collaboration” will not work.
+For collaboration to work for educators and students, disable XXX. If it is enabled, collaboration will not work.
 
-XXX WE NEED TO KNOW THE SETTING FOR TEXT, YOU CANNOT REFER TO SOMETHING THAT IS A SCREENSHOT ONLY. THIS ALL NEEDS ELABORATION IN TEXT, NO SCREEN.
+XXX WE NEED TO KNOW THE SETTING FOR TEXT, YOU CANNOT REFER TO SOMETHING THAT IS A SCREENSHOT ONLY. THIS ALL NEEDS ELABORATION IN TEXT, NOT A SCREEN THAT BREAKS ACCESSIBILITY.
