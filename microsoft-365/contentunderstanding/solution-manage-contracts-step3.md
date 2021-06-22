@@ -258,11 +258,11 @@ When a contract has been rejected, the following things occur:
 
 - In your flow, you check out the contract file, change the status to **Rejected**, and then check the file back in.
 
-   ![Flow status rejected.](../media/content-understanding/reject-flow.png)
+   ![Flow status rejected in contract file.](../media/content-understanding/reject-flow.png)
 
 - In your flow, you create an adaptive card stating that the contract has been rejected.
 
-   ![Flow status rejected.](../media/content-understanding/reject-flow-item.png)
+   ![Flow status shows rejected on adaptive card.](../media/content-understanding/reject-flow-item.png)
 
 The following code is the JSON used for this step in the Power Automate flow.
 
