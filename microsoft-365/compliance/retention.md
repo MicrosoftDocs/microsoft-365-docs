@@ -303,7 +303,7 @@ Explanation for the four different principles:
     
     Example: An email message is subject to a retention policy for Exchange that is configured to delete items after three years and it also has a retention label applied that is configured to retain items for five years.
     
-    The email message is retained for five years because this retention action takes precedence over deletion. The email message is then permanently deleted at the end of the five years because of the deferred delete action.
+    The email message is retained for five years because this retention action takes precedence over deletion. The email message is then permanently deleted at the end of the five years because of the delete action.
 
 2. **The longest retention period wins.** If content is subject to multiple retention settings that retain content for different periods of time, the content will be retained until the end of the longest retention period.
     
@@ -337,7 +337,7 @@ Explanation for the four different principles:
     
     This document will be permanently deleted after seven years because that's the shortest retention period for these two scoped retention policies.
 
-Note that items subject to eDiscovery hold also fall under the first principle of retention; they cannot be permanently deleted by any retention policy or retention label. When that hold is released, the principles of retention continue to apply to them. For example, they could then be subject to an unexpired retention period or a deferred delete action.
+Note that items subject to eDiscovery hold also fall under the first principle of retention; they cannot be permanently deleted by any retention policy or retention label. When that hold is released, the principles of retention continue to apply to them. For example, they could then be subject to an unexpired retention period or a delete action.
 
 More complex examples that combine retain and delete actions:
 
@@ -347,7 +347,7 @@ More complex examples that combine retain and delete actions:
     - A retention policy that retains for three years and then deletes
     - A retention label that retains-only for seven years
     
-    **Outcome**: The item is retained for seven years because retention takes precedence over deletion and seven years is the longest retention period. At the end of this retention period, the item is permanently deleted because of the delete action from the retention policies that was deferred while the item was retained.
+    **Outcome**: The item is retained for seven years because retention takes precedence over deletion and seven years is the longest retention period. At the end of this retention period, the item is permanently deleted because of the delete action from the retention policies.
     
     Although the two retention policies have different dates for the delete actions, the earliest the item can be permanently deleted is at the end of the longest retention period, which is longer than both deletion dates. 
 
@@ -357,7 +357,7 @@ More complex examples that combine retain and delete actions:
     - A scoped retention policy that retains for five years and then deletes
     - A retention label that retains for three years and then deletes
     
-    **Outcome**: The item is retained for five years because that's the longest retention period. At the end of that retention period, the item is permanently deleted because of the delete action of three years from the retention label that was deferred while the item was retained. Deletion from retention labels takes precedence over deletion from all retention policies. In this example, all conflicts are resolved by the third level.
+    **Outcome**: The item is retained for five years because that's the longest retention period. At the end of that retention period, the item is permanently deleted because of the delete action of three years from the retention label. Deletion from retention labels takes precedence over deletion from all retention policies. In this example, all conflicts are resolved by the third level.
 
 ## Use Preservation Lock to restrict changes to policies
 
