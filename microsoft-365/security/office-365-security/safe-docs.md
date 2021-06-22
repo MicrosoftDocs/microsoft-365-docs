@@ -34,7 +34,7 @@ Safe Documents is a feature in Microsoft 365 E5 or Microsoft 365 E5 Security tha
 
 - Safe Documents is supported in Microsoft 365 Apps for enterprise (formerly known as Office 365 ProPlus) version 2004 or later.
 
-- You can open the Microsoft 365 Defender at <https://security.microsoft.com>. Or to go directly to the **Safe Attachments** page, open <https://security.microsoft.com/safeattachmentv2>.
+- You open the Microsoft 365 Defender portal at <https://security.microsoft.com>. To go directly to the **Safe Attachments** page, use <https://security.microsoft.com/safeattachmentv2>.
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
@@ -58,12 +58,12 @@ Files sent by Safe Documents are not retained in Defender beyond the time needed
 
 ## Use the Microsoft 365 Defender to configure Safe Documents
 
-1. In the [Microsoft 365 Defender](https://security.microsoft.com), go to **Email & collaboration** > **Policies & rules** > **Threat policies** > **Safe attachments**, and then click **Global settings**.
+1. Open the Microsoft 365 Defender portal and go to **Email & collaboration** \> **Policies & rules** \> **Threat policies** \> **Policies** section \> **Safe Attachments**.
 
-2. In the **Global settings** fly out that appears, configure the following settings:
+2. On the **Safe Attachments** page, click **Global settings**.
 
+3. In the **Global settings** fly out that appears, configure the following settings:
    - **Turn on Safe Documents for Office clients**: Move the toggle to the right to turn on the feature: ![Toggle on](../../media/scc-toggle-on.png).
-
    - **Allow people to click through Protected View even if Safe Documents identified the file as malicious**: We recommend that you leave this option turned off (leave the toggle to the left: ![Toggle off](../../media/scc-toggle-off.png)).
 
    When you're finished, click **Save**.
@@ -91,7 +91,7 @@ For detailed syntax and parameter information, see [Set-AtpPolicyForO365](/power
 
 ### Onboard to the Microsoft Defender for Endpoint Service to enable auditing capabilities
 
-To deploy Microsoft Defender for Endpoint, you need to go through the various phases of deployment. After onboarding, you can configure auditing capabilities in the Security & Compliance Center.
+To deploy Microsoft Defender for Endpoint, you need to go through the various phases of deployment. After onboarding, you can configure auditing capabilities in the Microsoft 365 Defender portal.
 
 To learn more, see [Onboard to the Microsoft Defender for Endpoint service](/microsoft-365/security/defender-endpoint/onboarding). If you need additional help, refer to [Troubleshoot Microsoft Defender for Endpoint onboarding issues](/microsoft-365/security/defender-endpoint/troubleshoot-onboarding).
 
@@ -99,7 +99,7 @@ To learn more, see [Onboard to the Microsoft Defender for Endpoint service](/mic
 
 To verify that you've enabled and configured Safe Documents, do any of the following steps:
 
-- In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **ATP Safe Attachments**, click **Global settings**, and verify the **Turn on Safe Documents for Office clients** and **Allow people to click through Protected View even if Safe Documents identifies the file as malicious** settings.
+- In the Microsoft 365 Defender portal, go to **Email & collaboration** \> **Policies & rules** \> **Threat policies** \> **Policies** section \> **Safe Attachments** \> **Global settings**, and verify the **Turn on Safe Documents for Office clients** and **Allow people to click through Protected View even if Safe Documents identifies the file as malicious** settings.
 
 - Run the following command in Exchange Online PowerShell and verify the property values:
 
