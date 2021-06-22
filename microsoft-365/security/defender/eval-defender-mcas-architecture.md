@@ -37,6 +37,10 @@ Before enabling Microsoft Cloud App Security, be sure you understand the archite
 
 The following diagram illustrates . . .
 
+coming soon . . .
+
+<!--
+
 ![Architecture for Microsoft Cloud App Security](../../media/defender/m365-defender-mcas-architecture.png)
 
 The following table describes this illustration.
@@ -52,7 +56,7 @@ The following table describes this illustration.
 |6 | Signals are shared with the Microsoft 365 Security Center for . . . |
 | | |
 
-
+-->
 
 
 ## Understand key concepts
@@ -62,19 +66,31 @@ The following table identified key concepts that are important to understand whe
 
 |Concept  |Description |More information  |
 |---------|---------|---------|
-|  |         |         |
-|     |         |         |
-|     |         |         |
-|     |         |         |
+| Cloud App Security Dashboard | Presents an overview of the most important information about your organization and gives links to deeper investigation.        | [Working with the dashboard ](/cloud-app-security/daily-activities-to-protect-your-cloud-environment)       |
+| Conditional Access App Control    | Reverse proxy architecture that integrates with your Identity Provider (IdP) to give Azure AD conditional access policies and selectively enforce session controls.        |  [Protect apps with Microsoft Cloud App Security Conditional Access App Control](/cloud-app-security/proxy-intro-aad)       |
+|  Cloud App Catalog   | The Cloud App Catalog gives you a full picture against Microsoft catalog of over 16,000 cloud apps that are ranked and scored based on more than 80 risk factors.    |  [Working with App risk scores](/cloud-app-security/risk-score)       |
+| Cloud Discovery Dashboard    | Cloud Discovery analyzes your traffic logs and is designed to give more insight into how cloud apps are being used in your organization as well as give alerts and risk levels.     |  [Working with discovered apps   ](/cloud-app-security/discovered-apps)    |
+|Connected Apps |Cloud App Security provides end-to-end protection for connected apps using Cloud-to-Cloud integration, API connectors, and real-time access and session controls leveraging our Conditional App Access Controls. |[Protecting connected apps](/cloud-app-security/protect-connected-apps) |
+| | | |
 
 
 
 ## Review architecture requirements
 
-???
+To discover cloud apps being used in your environment, you can do one or both of the following:
+- Get up and running quickly with Cloud Discovery by integrating with Microsoft Defender for Endpoint. This native integration enables you to immediately start collecting data on cloud traffic across your Windows 10 devices, on and off your network.
+- To discover all cloud apps accessed by all devices connected to your network, deploy the Cloud App Security log collector on your firewalls and other proxies. This collects data from your endpoints and sends it to Cloud App Security for analysis. Cloud App Security natively integrates with some third-party proxies for even more capabilities.
+
+These options are included in [Step 2. Enable the evaluation environment](eval-defender-mcas-enable-eval.md). 
 
 ## SIEM integration
 
-??
+You can integrate Microsoft Cloud App Security with your generic SIEM server or with Azure Sentinel to enable centralized monitoring of alerts and activities from connected apps. See [Generic SIEM integration](/cloud-app-security/siem).
 
 ### Next steps
+
+Step 2 of 3: [Enable the evaluation environment for Microsoft Cloud App Security](eval-defender-mcas-enable-eval.md)
+
+Return to the overview for [Evaluate Microsoft Cloud App Security](eval-defender-mcas-overview.md)
+
+Return to the overview for [Evaluate and pilot Microsoft 365 Defender](../office-365-security/defender/eval-overview.md) 
