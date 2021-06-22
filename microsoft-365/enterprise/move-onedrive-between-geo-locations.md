@@ -49,7 +49,7 @@ You can schedule OneDrive site moves in advance (described later in this article
 
 ## Moving a OneDrive site
 
-To perform a OneDrive geo move, the tenant administrator must first set the user's Preferred Data Location (PDL) to the appropriate geo location. Once the PDL is set, wait for at least 24 hours for the PDL update to sync across the geo locations before starting the OneDrive geo move.
+To perform a OneDrive geo move, the tenant administrator must first set the user's Preferred Data Location (PDL) to the appropriate geo location. Once the PDL is set, wait for at least 48-72 hours for the PDL update to sync across the geo locations before starting the OneDrive geo move.
 
 When using the geo move cmdlets, connect to SPO Service at the user's current OneDrive geo location, using the following syntax:
 
