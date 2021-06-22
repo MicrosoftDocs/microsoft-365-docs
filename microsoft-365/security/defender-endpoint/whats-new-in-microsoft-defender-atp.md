@@ -42,6 +42,13 @@ For more information on preview features, see [Preview features](preview.md).
 > ```
 
 ## June 2021
+
+- [Device discovery](device-discovery.md) <br> Helps you find unmanaged devices connected to your corporate network without the need for extra appliances or cumbersome process changes. Using onboarded devices, you can find unmanaged devices in your network and assess vulnerabilities and risks. You can then onboard discovered devices to reduce risks associated with having unmanaged endpoints in your network.
+
+   > [!IMPORTANT]
+   > Standard discovery will be the default mode for all customers starting July 19, 2021. You can choose to retain the basic mode through the settings page. 
+
+
 - [Device group definitions](/microsoft-365/security/defender-endpoint/machine-groups) can now include multiple values for each condition. You can set multiple tags, device names, and domains to the definition of a single device group.
 
 ## March 2021
