@@ -106,9 +106,6 @@ If you choose to include specific distribution groups in Exchange, the DLP polic
 If you choose to include or exclude specific SharePoint sites, a DLP policy can contain no more than 100 such inclusions and exclusions. Although this limit exists, you can exceed this limit by applying either an org-wide policy or a policy that applies to entire locations.
 
 If you choose to include or exclude specific OneDrive accounts or groups, a DLP policy can contain no more than 100 user accounts or 50 groups as inclusion or exclusion.
-
-> [!NOTE]
-> OneDrive for business policy scoping using user accounts or groups is in public preview. 
   
 ### Rules
 
