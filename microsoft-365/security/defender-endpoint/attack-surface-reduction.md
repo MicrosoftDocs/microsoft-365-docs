@@ -23,7 +23,6 @@ ms.topic: article
 **Applies to:**
 
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
-
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 ## Why attack surface reduction rules are important
@@ -155,7 +154,7 @@ The "engine version" listed for attack surface reduction events in the event log
 
 ## Attack surface reduction rules
 
-The following table and subsections describe each of the 15 attack surface reduction rules. The attack surface reduction rules are listed in alphabetical order, by rule name.
+The following table and subsections describe each of the 16 attack surface reduction rules. The attack surface reduction rules are listed in alphabetical order, by rule name.
 
 If you are configuring attack surface reduction rules by using Group Policy or PowerShell, you'll need the GUIDs. On the other hand, if you use Microsoft Endpoint Manager or Microsoft Intune, you do not need the GUIDs.
 

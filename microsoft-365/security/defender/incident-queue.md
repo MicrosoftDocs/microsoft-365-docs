@@ -93,7 +93,7 @@ Once you have configured a useful filter in the incidents queue, you can bookmar
 - Incidents with a specific associated threat
 - Incidents with a specific actor
 
-Once you have compiled and stored your list of useful filter views as URLs, you can use it quickly process and prioritize the incidents in your queue and [manage](manage-incidents.md) them for subsequent analysis.
+Once you have compiled and stored your list of useful filter views as URLs, you can use it to quickly process and prioritize the incidents in your queue and [manage](manage-incidents.md) them for subsequent assignment and analysis.
 
 ## Next steps
 

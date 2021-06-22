@@ -35,7 +35,7 @@ RSS feed: Get notified when this page is updated by copying and pasting the foll
 ```
 
 ## April 2021
-- Improved Microsoft 365 security center <br> The improved [Microsoft 365 security center](https://security.microsoft.com) is now available in public preview. This new experience brings Defender for Endpoint, Defender for Office 365, Microsoft 365 Defender, and more into the Microsoft 365 security center. This is the new home to manage your security controls. [Learn what's new](./overview-security-center.md).
+- Microsoft 365 Defender<br> The improved [Microsoft 365 Defender](https://security.microsoft.com) portal is now available. This new experience brings together Defender for Endpoint, Defender for Office 365, Defender for Identity, and more into a single portal. This is the new home to manage your security controls. [Learn what's new](./overview-security-center.md).
 
 - [Microsoft 365 Defender threat analytics report](threat-analytics.md)<br>
  Threat analytics helps you respond to and minimize the impact of active attacks. You can also learn about attack attempts blocked by Microsoft 365 Defender solutions and take preventive actions that mitigate the risk of further exposure and increase resiliency. As part of the unified security experience, threat analytics is now available for Microsoft Defender for Endpoint and Microsoft Defender for Office E5 license holders.
