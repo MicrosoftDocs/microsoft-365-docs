@@ -37,6 +37,8 @@ Use the following steps to setup and configure the pilot for Microsoft Cloud App
 ![Steps for piloting Microsoft Cloud App Security](../../media/defender/m365-defender-mcas-pilot-steps.png)
 
 - Step 1. [Create the pilot group — Scope your pilot deployment to certain user groups](#step-1-create-the-pilot-group--scope-your-pilot-deployment-to-certain-user-groups)
+- [Step 2. Configure protection — Conditional Access App Control](#step-2-configure-protection--conditional-access-app-control)
+- [Step 3. Try out capabilities — Walk through tutorials for protecting your environment](#step-3-try-out-capabilities--walk-through-tutorials-for-protecting-your-environment) 
 
 
 ## Step 1. Create the pilot group — Scope your pilot deployment to certain user groups
