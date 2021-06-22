@@ -66,7 +66,7 @@ If you have a file that you suspect might be malware or is being incorrectly det
 
 2. Use the **Submit items to Microsoft for review** flyout that appears to submit the **File** or **File hash**.  
 
-3. In the **Submission type** box, select **File** from the drop down list. 
+3. In the **Submission type** box, select **File** from the drop-down list. 
 
 4. Click **Browse files**. In the dialog that opens, find and select the file, and then click **Open**. Note that for **File hash** submissions, you'll either have to copy or type in the file hash. 
 
@@ -85,7 +85,7 @@ If you have a file that you suspect might be malware or is being incorrectly det
 
 ## Submit items to Microsoft from the Alerts page
 
-You can also submit a file or file hash directly from the list of alerts on the **Alerts page**. 
+You can also submit a file or file hash directly from the list of alerts on the **Alerts** page. 
 
 1. Open the Microsoft 365 Defender at <https://security.microsoft.com/>, click **Incidents & alerts**, and then click **Alerts** to view the list of alerts.
 
