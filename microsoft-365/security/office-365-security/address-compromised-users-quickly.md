@@ -11,15 +11,13 @@ search.appverid:
   - MET150
   - MOE150
 ms.collection: M365-security-compliance
-ms.date: 02/25/2020
+ms.date: 06/10/2021
 description: Learn how to speed up the process of detecting and addressing compromised user accounts with automated investigation and response capabilities in Microsoft Defender for Office 365 Plan 2.
 ms.technology: mdo
 ms.prod: m365-security
 ---
 
 # Address compromised user accounts with automated investigation and response
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -66,7 +64,7 @@ When a user account is compromised, alerts are triggered. And in some cases, tha
 
 You have a few options for navigating to a list of restricted users. For example, in the Security & Compliance Center, you can go to **Threat management** \> **Review** \> **Restricted Users**. The following procedure describes navigation using the **Alerts** dashboard, which is a good way to see various kinds of alerts that might have been triggered.
 
-1. Go to <https://protection.office.com> and sign in.
+1. Go to [https://protection.office.com](https://protection.office.com) and sign in.
 
 2. In the navigation pane, choose **Alerts** \> **Dashboard**.
 

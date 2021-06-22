@@ -135,11 +135,12 @@ The following procedure describes how to configure the default anti-phishing pol
        - **If mailbox intelligence detects an impersonated user**<sup>\*</sup>: Select **Move message to the recipients' Junk Email folders** (Standard) or **Quarantine the message** (Strict).
        - **If message is detected as spoof**: Select **Move message to the recipients' Junk Email folders** (Standard) or **Quarantine the message** (Strict).
      - **Safety tips & indicators** section: Configure the following settings:
+       - **Show first contact safety tip**: Select (turn on).
        - **Show user impersonation safety tip**<sup>\*</sup>: Select (turn on).
        - **Show domain impersonation safety tip**<sup>\*</sup>: Select (turn on).
        - **Show user impersonation unusual characters safety tip**<sup>\*</sup>: Select (turn on).
        - **Show (?) for unauthenticated senders for spoof**: Select (turn on).
-       - **Show "via" tag**: Select (turn on) if this setting is available.
+       - **Show "via" tag**: Select (turn on).
 
      When you're finished, click **Save**.
 
@@ -147,7 +148,7 @@ The following procedure describes how to configure the default anti-phishing pol
 
 4. Click **Save** and then click **Close**
 
-For detailed instructions for configuring anti-phishing policies, see [Configure anti-phishing policies in EOP](configure-anti-phishing-policies-eop.md) and [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-atp-anti-phishing-policies.md).
+For detailed instructions for configuring anti-phishing policies, see [Configure anti-phishing policies in EOP](configure-anti-phishing-policies-eop.md) and [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-mdo-anti-phishing-policies.md).
 
 ## Part 3 - Anti-spam protection in EOP
 
@@ -274,7 +275,7 @@ To learn more about alerts, see [Create activity alerts in the Security & Compli
 > When you're finished configuring, use these links to start workload investigations:
 >
 >- [Threat protection status report](view-email-security-reports.md#threat-protection-status-report)
->- [Use the security center to manage quarantined files in Defender for Office 365](manage-quarantined-messages-and-files.md#use-the-security-center-to-manage-quarantined-files-in-defender-for-office-365)
+>- [Use the Microsoft 365 Defender portal to manage quarantined files in Defender for Office 365](manage-quarantined-messages-and-files.md#use-the-microsoft-365-defender-portal-to-manage-quarantined-files-in-defender-for-office-365)
 >- [What to do when a malicious file is found in SharePoint Online, OneDrive, or Microsoft Teams](https://support.microsoft.com/office/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)
 >- [Manage quarantined messages and files as an administrator in Microsoft 365](manage-quarantined-messages-and-files.md)
 

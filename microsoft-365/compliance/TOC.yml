@@ -1,11 +1,11 @@
 - name: Microsoft 365 compliance
   href: index.yml
+- name: What's new in Microsoft 365 compliance
+  href: whats-new.md
 - name: Get started
   items: 
     - name: Quick tasks to get started with compliance
       href: compliance-quick-tasks.md
-    - name: What's new in Microsoft 365 compliance
-      href: whats-new.md
     - name: Microsoft 365 solution catalog
       href: microsoft-365-solution-catalog.md
     - name: Microsoft 365 compliance center
@@ -395,9 +395,9 @@
               href: archive-celltrust-data.md          
             - name: Cisco Jabber on MS SQL
               href: archive-ciscojabberonmssql-data.md
-            - name: Cisco Jabber on Oracle (preview)
+            - name: Cisco Jabber on Oracle
               href: archive-ciscojabberonoracle-data.md
-            - name: Cisco Jabber on PostgreSQL (preview)
+            - name: Cisco Jabber on PostgreSQL
               href: archive-ciscojabberonpostgresql-data.md
             - name: EML
               href: archive-eml-data.md
@@ -421,6 +421,8 @@
               href: archive-salesforcechatter-data.md
             - name: ServiceNow
               href: archive-servicenow-data.md
+            - name: Skype for Business (preview)
+              href: archive-skypeforbusiness-data.md
             - name: Slack eDiscovery
               href: archive-slack-data.md    
             - name: Symphony
@@ -453,10 +455,16 @@
               href: archive-enterprise-number-data.md
             - name: O2 Network
               href: archive-o2-network-data.md
+            - name: Signal (preview)
+              href: archive-signal-archiver-data.md
+            - name: Telegram (preview)
+              href: archive-telegram-archiver-data.md
             - name: TELUS Network
               href: archive-telus-network-data.md
             - name: Verizon Network
               href: archive-verizon-network-data.md
+            - name: WeChat
+              href: archive-wechat-data.md
             - name: WhatsApp
               href: archive-whatsapp-data.md
         - name: Work with a partner to archive third-party data
@@ -562,6 +570,8 @@
             href: configure-edge-to-export-search-results.md
           - name: Bulk edit multiple content searches
             href: bulk-edit-content-searches.md
+          - name: Search for eDiscovery activities in the audit log
+            href: search-for-ediscovery-activities-in-the-audit-log.md
         - name: Content search PowerShell scripts
           items: 
           - name: Use content search for targeted collections

@@ -106,9 +106,6 @@ If you choose to include specific distribution groups in Exchange, the DLP polic
 If you choose to include or exclude specific SharePoint sites, a DLP policy can contain no more than 100 such inclusions and exclusions. Although this limit exists, you can exceed this limit by applying either an org-wide policy or a policy that applies to entire locations.
 
 If you choose to include or exclude specific OneDrive accounts or groups, a DLP policy can contain no more than 100 user accounts or 50 groups as inclusion or exclusion.
-
-> [!NOTE]
-> OneDrive for business policy scoping using accounts or groups is in public preview. During this phase, you can either include or exclude user accounts and groups as part of a DLP policy. Both inclusion and exclusion as part of the same policy is not supported.
   
 ### Rules
 
@@ -540,7 +537,7 @@ When you create a DLP policy that includes Microsoft Teams as a location, the po
  
 ## Permissions
 
-Members of your compliance team who will create DLP policies need permissions to the Security &amp; Compliance Center. By default, your tenant admin will have access to this location and can give compliance officers and other people access to the Security &amp; Compliance Center, without giving them all of the permissions of a tenant admin. To do this, we recommend that you:
+By default, Global admins, Security admins, and Compliance admins will have access to create and apply a DLP policy. Other Members of your compliance team who will create DLP policies need permissions to the Security &amp; Compliance Center. By default, your Tenant admin will have access to this location and can give compliance officers and other people access to the Security &amp; Compliance Center, without giving them all of the permissions of a Tenant admin. To do this, we recommend that you:
   
 1. Create a group in Microsoft 365 and add compliance officers to it.
     
