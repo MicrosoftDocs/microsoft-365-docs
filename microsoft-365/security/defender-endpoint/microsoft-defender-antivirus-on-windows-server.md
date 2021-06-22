@@ -28,7 +28,8 @@ ms.date: 05/13/2021
 Microsoft Defender Antivirus is available on the following editions/versions of Windows Server:
 - Windows Server 2019
 - Windows Server, version  1803 or later
-- Windows Server 2016. 
+- Windows Server 2016
+- Windows Server 2012 R2 
 
 In some instances, Microsoft Defender Antivirus is referred to as *Endpoint Protection*; however, the protection engine is the same. Although the functionality, configuration, and management are largely the same for [Microsoft Defender Antivirus on Windows 10](microsoft-defender-antivirus-in-windows-10.md), there are a few key differences on Windows Server:
 
@@ -210,9 +211,9 @@ To turn off the Microsoft Defender Antivirus GUI, use the following PowerShell c
 Uninstall-WindowsFeature -Name Windows-Defender-GUI
 ```
 
-### Are you using Windows Server 2016?
+### Are you using Windows Server 2012 R2 or Windows Server 2016?
 
-If you are using Windows Server 2016 and a third-party antimalware/antivirus product that is not offered or developed by Microsoft, you'll need to disable/uninstall Microsoft Defender Antivirus. 
+If you are using Windows Server 2012 R2 or Windows Server 2016 and a third-party antimalware/antivirus product that is not offered or developed by Microsoft, you'll need to disable/uninstall Microsoft Defender Antivirus. 
 
 > [!NOTE]
 > You can't uninstall the Windows Security app, but you can disable the interface with these instructions.
@@ -228,6 +229,9 @@ To disable Microsoft Defender Antivirus on Windows Server 2016, use the followin
 ```PowerShell
 Set-MpPreference -DisableRealtimeMonitoring $true
 ```
+
+
+
 
 ## See also
 
