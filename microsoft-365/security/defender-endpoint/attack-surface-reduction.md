@@ -161,21 +161,22 @@ If you are configuring attack surface reduction rules by using Group Policy or P
 |Rule name|GUID|File & folder exclusions|Minimum OS supported|
 |---|:---:|---|---|
 |[Block abuse of exploited vulnerable signed drivers](#block-abuse-of-exploited-vulnerable-signed-drivers)|`56a863a9-875e-4185-98a7-b882c64b5ce5`|Supported|[Windows 10, version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) or greater) |
-|[Block Adobe Reader from creating child processes](#block-adobe-reader-from-creating-child-processes)|`7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c`|Supported|[Windows 10, version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) or greater <br> Windows Server 2016 <br> Windows Server 2012 R2 |
+|[Block Adobe Reader from creating child processes](#block-adobe-reader-from-creating-child-processes)|`7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c`|Supported|[Windows 10, version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) or greater <br>  [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016) <br> [Windows Server 2012 R2](/win32/srvnodes/what-s-new-for-windows-server-2012-r2) |
 |[Block all Office applications from creating child processes](#block-all-office-applications-from-creating-child-processes)|`D4F940AB-401B-4EFC-AADC-AD5F3C50688A`|Supported|[Windows 10, version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) or greater <br> Windows Server 2016|
-|[Block credential stealing from the Windows local security authority subsystem (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem)|`9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`|Supported|[Windows 10, version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) or greater <br> Windows Server 2016 <br> Windows Server 2012 R2|
+|[Block credential stealing from the Windows local security authority subsystem (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem)|`9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`|Supported|[Windows 10, version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) or greater <br><br>  [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016) <br> [Windows Server 2012 R2](/win32/srvnodes/what-s-new-for-windows-server-2012-r2)|
 |[Block executable content from email client and webmail](#block-executable-content-from-email-client-and-webmail)|`BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550`|Supported|[Windows 10, version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) or greater <br> Windows Server 2016 <br> Windows Server 2012 R2|
 |[Block executable files from running unless they meet a prevalence, age, or trusted list criterion](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion)|`01443614-cd74-433a-b99e-2ecdc07bfc25`|Supported|[Windows 10, version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) or greater|
-|[Block execution of potentially obfuscated scripts](#block-execution-of-potentially-obfuscated-scripts)|`5BEB7EFE-FD9A-4556-801D-275E5FFC04CC`|Supported|[Windows 10, version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) or greater <br> Windows Server 2016 <br> Windows Server 2012 R2 |
+|[Block execution of potentially obfuscated scripts](#block-execution-of-potentially-obfuscated-scripts)|`5BEB7EFE-FD9A-4556-801D-275E5FFC04CC`|Supported|[Windows 10, version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) or greater <br>  [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016) <br> [Windows Server 2012 R2](/win32/srvnodes/what-s-new-for-windows-server-2012-r2) |
 |[Block JavaScript or VBScript from launching downloaded executable content](#block-javascript-or-vbscript-from-launching-downloaded-executable-content)|`D3E037E1-3EB8-44C8-A917-57927947596D`|Supported|[Windows 10, version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) or greater <br> Windows Server 2016|
 |[Block Office applications from creating executable content](#block-office-applications-from-creating-executable-content)|`3B576869-A4EC-4529-8536-B80A7769E899`|Supported|[Windows 10, version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) or greater <br> Windows Server 2016 <br> Windows Server 2012 R2 |
 |[Block Office applications from injecting code into other processes](#block-office-applications-from-injecting-code-into-other-processes)|`75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84`|Supported|[Windows 10, version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) or greater|
 |[Block Office communication application from creating child processes](#block-office-communication-application-from-creating-child-processes)|`26190899-1602-49e8-8b27-eb1d0a1ce869`|Supported|[Windows 10, version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) or greater|
 |[Block persistence through WMI event subscription](#block-persistence-through-wmi-event-subscription)|`e6db77e5-3df2-4cf1-b95a-636979351e5b`|Not supported|[Windows 10, version 1903](/windows/whats-new/whats-new-windows-10-version-1903) (build 18362) or greater|
-|[Block process creations originating from PSExec and WMI commands](#block-process-creations-originating-from-psexec-and-wmi-commands)|`d1e49aac-8f56-4280-b9ba-993a6d77406c`|Supported|[Windows 10, version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) or greater <br> Windows Server 2016 <br> Windows Server 2012 R2|
+|[Block process creations originating from PSExec and WMI commands](#block-process-creations-originating-from-psexec-and-wmi-commands)|`d1e49aac-8f56-4280-b9ba-993a6d77406c`|Supported|[Windows 10, version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) or greater <br> <br>  [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016) <br> [Windows Server 2012 R2](/win32/srvnodes/what-s-new-for-windows-server-2012-r2)
+|
 |[Block untrusted and unsigned processes that run from USB](#block-untrusted-and-unsigned-processes-that-run-from-usb)|`b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4`|Supported|[Windows 10, version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) or greater|
 |[Block Win32 API calls from Office macros](#block-win32-api-calls-from-office-macros)|`92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B`|Supported|[Windows 10, version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) or greater|
-|[Use advanced protection against ransomware](#use-advanced-protection-against-ransomware)|`c1db55ab-c21a-4637-bb3f-a12568109d35`|Supported|[Windows 10, version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) or greater <br> Windows Server 2016 <br> Windows Server 2012 R2 |
+|[Use advanced protection against ransomware](#use-advanced-protection-against-ransomware)|`c1db55ab-c21a-4637-bb3f-a12568109d35`|Supported|[Windows 10, version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) or greater <br> <br>  [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016) <br> [Windows Server 2012 R2](/win32/srvnodes/what-s-new-for-windows-server-2012-r2) |
 |
 
 ### Block abuse of exploited vulnerable signed drivers
@@ -214,6 +215,8 @@ This rule was introduced in:
 - [Windows 10, version 1809](/windows/whats-new/whats-new-windows-10-version-1809)
 - [Windows Server, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
+- [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)
+- [Windows Server 2012 R2](/win32/srvnodes/what-s-new-for-windows-server-2012-r2)
 
 Intune name: `Process creation from Adobe Reader (beta)`
 
@@ -255,6 +258,8 @@ This rule was introduced in:
 - [Windows Server, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - [Configuration Manager CB 1802](/configmgr/core/servers/manage/updates)
+- [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)
+- [Windows Server 2012 R2](/win32/srvnodes/what-s-new-for-windows-server-2012-r2)
 
 Intune name: `Flag credential stealing from the Windows local security authority subsystem`
 
@@ -331,6 +336,8 @@ This rule was introduced in:
 - [Windows Server, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - [Configuration Manager CB 1710](/configmgr/core/servers/manage/updates)
+- [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)
+- [Windows Server 2012 R2](/win32/srvnodes/what-s-new-for-windows-server-2012-r2)
 
 Intune name: `Obfuscated js/vbs/ps/macro code`
 
@@ -350,6 +357,7 @@ This rule was introduced in:
 - [Windows Server, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - [Configuration Manager CB 1710](/configmgr/core/servers/manage/updates)
+- [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)
 
 Intune name: `js/vbs executing payload downloaded from Internet (no exceptions)`
 
@@ -452,6 +460,8 @@ This rule was introduced in:
 - [Windows 10, version 1803](/windows/whats-new/whats-new-windows-10-version-1803)
 - [Windows Server, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
+- [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)
+- [Windows Server 2012 R2](/win32/srvnodes/what-s-new-for-windows-server-2012-r2)
 
 Intune name: `Process creation from PSExec and WMI commands`
 
@@ -514,6 +524,8 @@ This rule was introduced in:
 - [Windows Server, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - [Configuration Manager CB 1802](/configmgr/core/servers/manage/updates)
+- [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)
+- [Windows Server 2012 R2](/win32/srvnodes/what-s-new-for-windows-server-2012-r2)
 
 Intune name: `Advanced ransomware protection`
 
