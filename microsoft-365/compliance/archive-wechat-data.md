@@ -26,7 +26,7 @@ The following overview explains the process of using a connector to archive WeCh
 
 ![Archiving workflow for WeChat Archiver data](../media/WeChatConnectorWorkflow.png)
 
-1. Your organization works with TeleMessage to set up a WeChat Archiver connector.
+1. Your organization works with TeleMessage to set up a WeChat Archiver connector
 
 2. In real time, your organization's WeChat data is copied to the TeleMessage site.
 
