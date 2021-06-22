@@ -44,7 +44,7 @@ Step 1: Create a third-party application
 
 Step 2: Get access and refresh tokens from your customer's tenant
  
-Step 3: allow your application on Microsoft Defender Security Center
+Step 3: allow your application on Microsoft 365 Defender
  
 ### Step 1: Create an application in Azure Active Directory (Azure AD)
  
@@ -156,8 +156,8 @@ After providing your credentials, you'll need to grant consent to the applicatio
 
 8. In the PowerShell window, you'll receive an access token and a refresh token. Save the refresh token to configure your SIEM connector. 
  
-### Step 3: Allow your application on Microsoft Defender Security Center
-You'll need to allow the application you created in Microsoft Defender Security Center.
+### Step 3: Allow your application on Microsoft 365 Defender
+You'll need to allow the application you created in Microsoft 365 Defender.
  
 You'll need to have **Manage portal system settings** permission to allow the application. Otherwise, you'll need to request your customer to allow the application for you.
 

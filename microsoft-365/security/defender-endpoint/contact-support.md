@@ -53,7 +53,7 @@ Accessing the new support widget can be done in one of two ways:
 
     ![Image of widget when question mark is selected](images/support-widget.png)
 
-2. Clicking on the **Need help?**  button in the bottom right of the Microsoft Defender Security Center:
+2. Clicking on the **Need help?**  button in the bottom right of the Microsoft 365 Defender:
 
 
     ![Image of the need help button](images/need-help.png)
