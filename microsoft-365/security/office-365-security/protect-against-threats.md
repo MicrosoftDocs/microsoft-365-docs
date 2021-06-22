@@ -1,5 +1,5 @@
 ---
-title: Protect against threats
+title: Protect against threats in Microsoft Defender for Office 365, Anti-malware, Anti-Phishing, Anti-spam, Safe links, Safe attachments, Zero-hour auto purge (ZAP), MDO security configuration
 f1.keywords: 
   - NOCSH
 ms.author: chrisda
@@ -7,9 +7,8 @@ author: chrisda
 manager: dansimp
 audience: Admin
 ms.topic: overview
-
 localization_priority: Normal
-ms.date: 09/08/2020
+ms.date: 06/22/2021
 search.appverid: 
   - MOE150
   - MET150
@@ -166,17 +165,17 @@ For more information about the recommended settings for anti-spam, see [EOP anti
 
 For detailed instructions for configuring anti-spam policies, see [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md).
 
-## Part 4 - Protection from malicious URLs and files (Safe Links and Safe Attachments in Defender for Office 365)
+## Part 4 - Protection from malicious URLs and files (Safe links and Safe attachments in Defender for Office 365)
 
-Time-of-click protection from malicious URLs and files is available in subscriptions that include [Microsoft Defender for Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). It's set up through [Safe Attachments](safe-attachments.md) and [Safe Links](safe-links.md) policies.
+Time-of-click protection from malicious URLs and files is available in subscriptions that include [Microsoft Defender for Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). It's set up through [Safe attachments](safe-attachments.md) and [Safe links](safe-links.md) policies.
 
-### Safe Attachments policies in Microsoft Defender for Office 365
+### Safe attachments policies in Microsoft Defender for Office 365
 
-To set up [Safe Attachments](safe-attachments.md), create at least one Safe Links policy.
+To set up [Safe attachments](safe-attachments.md), create at least one Safe Links policy.
 
-1. In the [Security & Compliance Center](https://protection.office.com), choose **Threat management** \> **Policy** \> **ATP Safe Attachments**, and then click **Create**.
+1. In the [Security & Compliance Center](https://protection.office.com), choose **Threat management** \> **Policy** \> **Safe attachments**, and then click **Create**.
 
-2. In the **New Safe Attachments policy** wizard that appears, configure the following settings:
+2. In the **New Safe attachments policy** wizard that appears, configure the following settings:
 
    - In the **Name** box, type `Block malware`, and then click **Next**.
 
@@ -192,19 +191,19 @@ To set up [Safe Attachments](safe-attachments.md), create at least one Safe Link
 
 ### Safe Links policies in Microsoft Defender for Office 365
 
-To set up [Safe Links](safe-links.md), review and edit your global settings for Safe Links, and create at least one Safe Links policy.
+To set up [Safe links](safe-links.md), review and edit your global settings for Safe Links, and create at least one Safe links policy.
 
-1. In the [Security & Compliance Center](https://protection.office.com), choose **Threat management** \> **Policy** \> **ATP Safe Links**, and click **Global settings**, and then configure the following settings:
+1. In the [Security & Compliance Center](https://protection.office.com), choose **Threat management** \> **Policy** \> **Safe links**, and click **Global settings**, and then configure the following settings:
 
-   - Verify **Use Safe Links in: Office 365 applications** is turned on: ![Toggle on](../../media/scc-toggle-on.png).
-   - **Do not track when users click Safe Links**: Turn this setting off to track user clicks: ![Toggle off](../../media/scc-toggle-off.png).
-   - **Do not let users click through safe links to original URL**: Verify this setting is turned on: ![Toggle on](../../media/scc-toggle-on.png).
+   - Verify **Use Safe links in: Office 365 applications** is turned on: ![Toggle on](../../media/scc-toggle-on.png).
+   - **Do not track when users click Safe links**: Turn this setting off to track user clicks: ![Toggle off](../../media/scc-toggle-off.png).
+   - **Do not let users click through Safe links to original URL**: Verify this setting is turned on: ![Toggle on](../../media/scc-toggle-on.png).
 
    When you're finished, click **Save**.
 
 2. Back on the main Safe Links page, click **Create**.
 
-3. In the **Create Safe Links policy** wizard that appears, configure the following settings:
+3. In the **Create Safe links policy** wizard that appears, configure the following settings:
 
    - In the **Name** box, type a name, such as `Safe Links`, and then click **Next**.
 
@@ -222,20 +221,20 @@ To set up [Safe Links](safe-links.md), review and edit your global settings for 
 
 5. Review your settings and then click **Finish**.
 
-To learn more, see [Set up Safe Links policies](set-up-safe-links-policies.md).
+To learn more, see [Set up Safe links policies](set-up-safe-links-policies.md).
 
-## Part 5 - Verify Safe Attachments for SharePoint, OneDrive, and Microsoft Teams is turned on
+## Part 5 - Verify Safe attachments for SharePoint, OneDrive, and Microsoft Teams is turned on
 
 Workloads like SharePoint, OneDrive, and Teams are built for collaboration. Using Defender for Office 365 helps with blocking and detection of files that are identified as malicious in team sites and document libraries. You can read more about how that works [here](mdo-for-spo-odb-and-teams.md).
 
 > [!IMPORTANT]
 > **Before you begin this procedure, make sure that audit logging is already turned on for your Microsoft 365 environment**. This is typically done by someone who has the Audit Logs role assigned in Exchange Online. For more information, see [Turn audit log search on or off](../../compliance/turn-audit-log-search-on-or-off.md)!
 
-1. In the [Security & Compliance Center](https://protection.office.com), choose **Threat management** \> **Policy** \> **ATP Safe Attachments**, and then click **Global settings**.
+1. In the [Security & Compliance Center](https://protection.office.com), choose **Threat management** \> **Policy** \> **ATP Safe attachments**, and then click **Global settings**.
 
 2. Verify the **Turn on Defender for Office 365 for SharePoint, OneDrive, and Microsoft Teams** toggle is to the right: ![Toggle on](../../media/scc-toggle-on.png), and then click **Save**.
 
-3. Review (and, as appropriate, edit) your organization's [Safe Attachments policies](set-up-safe-attachments-policies.md) and [Safe Links policies](set-up-safe-links-policies.md).
+3. Review (and, as appropriate, edit) your organization's [Safe attachments policies](set-up-safe-attachments-policies.md) and [Safe links policies](set-up-safe-links-policies.md).
 
 4. (Recommended) As a global administrator or a SharePoint Online administrator, run the **[Set-SPOTenant](/powershell/module/sharepoint-online/Set-SPOTenant)** cmdlet with the _DisallowInfectedFileDownload_ parameter set to `$true`.
 
@@ -283,7 +282,7 @@ To learn more about alerts, see [Create activity alerts in the Security & Compli
 
 Along with configuring protection from malware, malicious URLs and files, phishing, and spam, we recommend you configure zero-hour auto purge.
 
-### Zero-hour auto purge for email in EOP
+### Zero-hour auto purge for email in Exchange Online Protection (EOP)
 
 [Zero-hour auto purge](zero-hour-auto-purge.md) (ZAP) is available in subscriptions that include [EOP](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description). This protection is turned on by default; however, the following conditions must be met for protection to be in effect:
 
