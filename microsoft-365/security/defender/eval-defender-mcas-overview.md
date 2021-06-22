@@ -46,9 +46,3 @@ Use the following steps to enable and pilot Microsoft cloud app security.
 
 
 
-
-
-
-### Navigation you may need
-
-[Create the Microsoft 365 Defender Evaluation Environment](eval-create-eval-environment.md)

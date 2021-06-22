@@ -59,9 +59,20 @@ For more information, including supported apps and clients, see [Protect apps wi
 
 For example policies, see [Recommended Microsoft Cloud App Security policies for SaaS apps](../office-365-security/mcas-saas-access-policies.md). These policies build on a set of [common identity and device access policies](../office-365-security/microsoft-365-policies-configurations.md) that are recommended as a starting point for all customers. 
 
-## Step 3. Try out capabilities — 
+## Step 3. Try out capabilities — Walk through tutorials for protecting your environment 
 
+The Microsoft Cloud App Security documentation includes a series of tutorials to help you discover risk and protect your environment. 
 
+Try out Cloud App Security tutorials:
+
+- [Detect suspicious user activity](/cloud-app-security/tutorial-suspicious-activity)
+- [Investigate risky users](/cloud-app-security/tutorial-ueba)
+- [Investigate risky OAuth apps](/cloud-app-security/investigate-risky-oauth)
+- [Discover and protect sensitive information](/cloud-app-security/tutorial-dlp)
+- [Protect any app in your organization in real time](/cloud-app-security/tutorial-proxy)
+- [Block downloads of sensitive information](/cloud-app-security/use-case-proxy-block-session-aad)
+- [Protect your files with admin quarantine](/cloud-app-security/use-case-admin-quarantine)
+- [Require step-up authentication upon risky action](/cloud-app-security/tutorial-step-up-authentication)
 
 ## Next steps
 
