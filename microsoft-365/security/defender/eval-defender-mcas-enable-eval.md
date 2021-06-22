@@ -41,7 +41,7 @@ This article includes guidance for both methods.
 
 Use the following steps to set up Microsoft Cloud App Security. 
 
-![Steps to enable Microsoft Microsoft Cloud App Security in the Microsoft Defender evaluation environment](../../media/defender/m365-defender-office-eval-enable-steps.png)
+![Steps to enable Microsoft Microsoft Cloud App Security in the Microsoft Defender evaluation environment](../../media/defender/m365-defender-mcas-eval-enable-steps.png)
 
 
 
