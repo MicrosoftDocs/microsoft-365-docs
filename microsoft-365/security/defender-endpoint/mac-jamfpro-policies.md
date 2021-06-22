@@ -101,32 +101,31 @@ You'll need to take the following steps:
 
     ![Image of upload file property List file](images/jamfpro-plist-file.png)
 
-7. Select **Open** and select the onboarding file.
+6. Select **Open** and select the onboarding file.
 
     ![Image of onboarding file](images/jamfpro-plist-file-onboard.png)
 
-8. Select **Upload**. 
+7. Select **Upload**. 
 
     ![Image of uploading plist file](images/jamfpro-upload-plist.png)
 
-
-9. Select the **Scope** tab.
+8. Select the **Scope** tab.
 
     ![Image of scope tab](images/jamfpro-scope-tab.png)
 
-10. Select the target computers.
+9. Select the target computers.
 
     ![Image of target computers](images/jamfpro-target-computer.png)
 
     ![Image of targets](images/jamfpro-targets.png) 
 
-11. Select **Save**.
+10. Select **Save**.
 
     ![Image of  deployment target computers](images/jamfpro-deployment-target.png)
 
     ![Image of target computers selected](images/jamfpro-target-selected.png)
 
-12. Select **Done**.
+11. Select **Done**.
 
     ![Image of target group computers](images/jamfpro-target-group.png)
 
@@ -134,11 +133,73 @@ You'll need to take the following steps:
 
 ## Step 3: Configure Microsoft Defender for Endpoint settings
 
-1.  Use the following Microsoft Defender for Endpoint configuration settings:
+You can either use JAMF Pro GUI to edit individual settings of the Microsoft Defender configuration,
+or use the legacy method by creating a configuration Plist in a text editor, and uploading it to JAMF Pro.
+
+Note that you must use exact `com.microsoft.wdav` as the **Preference Domain**, Microsoft Defender uses only this name and `com.microsoft.wdav.ext` to load its managed settings!
+
+(The `com.microsoft.wdav.ext` version may be used in rare cases when you prefer to use GUI method, but also need to configure a setting that has not been added to the schema yet.)
+
+### GUI method
+
+1. Download schema.json file from [Defender's GitHub repository](https://github.com/microsoft/mdatp-xplat/tree/master/macos/schema) and save it to a local file:
+
+    ```bash
+    curl -o ~/Documents/schema.json https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/schema/schema.json
+    ```
+
+2. Create a new Configuration Profile under Computers -> Configuration Profiles, enter the following details on the **General** tab:
+
+    ![New profile](images/644e0f3af40c29e80ca1443535b2fe32.png)
+
+    - Name: MDATP MDAV configuration settings
+    - Description:\<blank\>
+    - Category: None (default)
+    - Level: Computer Level (default)
+    - Distribution Method: Install Automatically (default)
+
+3. Scroll down to the **Application & Custom Settings** tab, select **External Applications**, click **Add** and use **Custom Schema** as Source to use for the preference domain.
+
+    ![Add custom schema](images/4137189bc3204bb09eed3aabc41afd78.png)
+
+4. Enter `com.microsoft.wdav` as the Preference Domain, click on **Add Schema** and **Upload** the schema.json file downloaded on Step 1. Click **Save**.
+
+    ![Upload schema](images/a6f9f556037c42fabcfdcb1b697244cf.png)
+
+5. You can see all supported Microsoft Defender configuration settings below, under **Preference Domain Properties**. Click **Add/Remove properties** to select the settings that you want to be managed, and click **Ok** to save your changes. (Settings left unselected will not be included into the managed configuration, an end user will be able to configure those settings on their machines.)
+
+    ![Select managed settings](images/817b3b760d11467abe9bdd519513f54f.png)
+
+6. Change values of the settings to desired values. You can click **More information** to get documentation for a particular setting. (You may click **Plist preview** to inspect what the configuration plist will look like. Click **Form editor** to return to the visual editor.)
+
+    ![Change settings values](images/a14a79efd5c041bb8974cb5b12b3a9b6.png)
+
+7. Select the **Scope** tab.
+
+    ![Configuration profile scope](images/9fc17529e5577eefd773c658ec576a7d.png)
+
+8. Select **Contoso's Machine Group**.
+
+9. Select **Add**, then select **Save**.
+
+    ![Configuration settings - add](images/cf30438b5512ac89af1d11cbf35219a6.png)
+
+    ![Configuration settings - save](images/6f093e42856753a3955cab7ee14f12d9.png)
+
+10. Select **Done**. You'll see the new **Configuration profile**.
+
+    ![Configuration settings - done](images/dd55405106da0dfc2f50f8d4525b01c8.png)
+
+Microsoft Defender adds new settings over time. These new settings will be added to the schema, and a new version will be published to Github.
+All you need to do to have updates is to download an updated schema, edit existing configuration profile, and **Edit schema** at the **Application & Custom Settings** tab.
+
+### Legacy method
+
+1. Use the following Microsoft Defender for Endpoint configuration settings:
 
     - enableRealTimeProtection
     - passiveMode
-    
+
     >[!NOTE]
     >Not turned on by default, if you are planning to run a third-party AV for macOS, set it to `true`.
 
@@ -148,10 +209,10 @@ You'll need to take the following steps:
     - excludedFileName
     - exclusionsMergePolicy
     - allowedThreats
-    
+
     >[!NOTE]
     >EICAR is on the sample, if you are going through a proof-of-concept, remove it especially if you are testing EICAR.
-        
+
     - disallowedThreatActions
     - potentially_unwanted_application
     - archive_bomb
@@ -159,7 +220,7 @@ You'll need to take the following steps:
     - automaticSampleSubmission
     - tags
     - hideStatusMenuIcon
-    
+
      For information, see [Property list for Jamf configuration profile](mac-preferences.md#property-list-for-jamf-configuration-profile).
 
      ```XML
@@ -265,10 +326,9 @@ You'll need to take the following steps:
 
 2. Save the file as `MDATP_MDAV_configuration_settings.plist`.
 
+3. In the Jamf Pro dashboard, open **Computers**, and there **Configuration Profiles**. Click **New(* and switch to the **General** tab.
 
-3.  In the Jamf Pro dashboard, select **General**.
-
-    ![Image of the new Jamf Pro dashboard](images/644e0f3af40c29e80ca1443535b2fe32.png)
+    ![New profile](images/644e0f3af40c29e80ca1443535b2fe32.png)
 
 4. Enter the following details:
 
@@ -338,7 +398,6 @@ You'll need to take the following steps:
 16. Select **Done**. You'll see the new **Configuration profile**.
 
     ![Image of configuration settings config profile image](images/dd55405106da0dfc2f50f8d4525b01c8.png)
-
 
 ## Step 4: Configure notifications settings
 
