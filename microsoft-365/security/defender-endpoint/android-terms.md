@@ -57,9 +57,7 @@ DO NOT USE THE APPLICATION.**
 
     1.  **Installation and Use.** You may install and use any number of copies
         of this application on Android enabled device or devices that you own
-        or control. You may use this application with your company's valid
-        subscription of Microsoft Defender for Endpoint or
-        an online service that includes Microsoft Defender for Endpoint functionalities.
+        or control. 
 
     2.  **Updates.** Updates or upgrades to Microsoft Defender for Endpoint may be required for full
         functionality. Some functionality may not be available in all countries.
