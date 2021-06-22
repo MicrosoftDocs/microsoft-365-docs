@@ -291,7 +291,7 @@ GUID: `BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550`
 
 ### Block executable files from running unless they meet a prevalence, age, or trusted list criterion
 
-This rule blocks the following file types from launching unless they meet prevalence or age criteria, or they're in a trusted list or an exclusion list:
+This rule blocks the following file types from launching unless they meet prevalence (were found on more than 1000 machines) or age (were released more than 24 hours ago) criteria, or they're in a trusted list or an exclusion list:
 
 - Executable files (such as .exe, .dll, or .scr)
 
