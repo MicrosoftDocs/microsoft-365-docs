@@ -134,7 +134,7 @@ Creating a custom Safe Links policy in the Microsoft 365 Defender portal creates
 
 6. On the **Notification** page that appears, select one of the following values for **How would you like to notify your users?**:
    - **Use the default notification text**
-   - **Use custom notification text**: If you select this value, the following settings appear:
+   - **Use custom notification text**: If you select this value (the lenght cannot exceed 200 characters), the following settings appear:
      - **Use Microsoft Translator for automatic localization**
      - **Custom notification text**: Enter the custom notification text in this box.
 
