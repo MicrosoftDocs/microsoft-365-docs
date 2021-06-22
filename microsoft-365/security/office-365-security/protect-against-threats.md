@@ -1,5 +1,5 @@
 ---
-title: Protect against threats
+title: Protect against threats in Microsoft Defender for Office 365, Anti-malware, Anti-Phishing, Anti-spam, Safe links, Safe attachments, Zero-hour auto purge (ZAP), MDO security configuration
 f1.keywords: 
   - NOCSH
 ms.author: chrisda
@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: overview
 
 localization_priority: Normal
-ms.date: 09/08/2020
+ms.date:
 search.appverid: 
   - MOE150
   - MET150
