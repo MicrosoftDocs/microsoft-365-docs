@@ -78,7 +78,7 @@
               href: eval-defender-mcas-architecture.md
             - name: Enable the evaluation 
               href: eval-defender-mcas-enable-eval.md
-            - name: Pilot Defender for Office
+            - name: Pilot Microsoft Cloud App Security
               href: eval-defender-mcas-pilot.md  
         - name: Investigate and respond    
           items:

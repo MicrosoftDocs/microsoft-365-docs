@@ -77,15 +77,28 @@ The following table identified key concepts that are important to understand whe
 
 ## Review architecture requirements
 
-To discover cloud apps being used in your environment, you can do one or both of the following:
+### Discovering cloud apps
+
+To discover cloud apps used in your environment, you can do one or both of the following:
 - Get up and running quickly with Cloud Discovery by integrating with Microsoft Defender for Endpoint. This native integration enables you to immediately start collecting data on cloud traffic across your Windows 10 devices, on and off your network.
 - To discover all cloud apps accessed by all devices connected to your network, deploy the Cloud App Security log collector on your firewalls and other proxies. This collects data from your endpoints and sends it to Cloud App Security for analysis. Cloud App Security natively integrates with some third-party proxies for even more capabilities.
 
 These options are included in [Step 2. Enable the evaluation environment](eval-defender-mcas-enable-eval.md). 
 
+### Applying Azure AD Conditional Access policies to cloud apps
+
+Conditional Access App Control (the ability to apply Conditional Access policies to cloud apps) requires integration with Azure AD. This isn't a requirement for getting started with Cloud App Security. It is a step we encourage you to try out during the pilot phase — [Step 3. Pilot Microsoft Cloud App Security](eval-defender-mcas-pilot.md).
+
+
+
 ## SIEM integration
 
-You can integrate Microsoft Cloud App Security with your generic SIEM server or with Azure Sentinel to enable centralized monitoring of alerts and activities from connected apps. See [Generic SIEM integration](/cloud-app-security/siem).
+You can integrate Microsoft Cloud App Security with your generic SIEM server or with Azure Sentinel to enable centralized monitoring of alerts and activities from connected apps. 
+
+Additionally, Azure Sentinel includes a Microsoft Cloud App Security connector to provide deeper integration with Azure Sentinel. This enables you to not only gain visibility into your cloud apps but to also get sophisticated analytics to identify and combat cyberthreats and to control how your data travels.
+
+- [Generic SIEM integration](/cloud-app-security/siem)
+- [Stream alerts and Cloud Discovery logs from MCAS into Azure Sentinel](/azure/sentinel/connect-cloud-app-security)
 
 ### Next steps
 
