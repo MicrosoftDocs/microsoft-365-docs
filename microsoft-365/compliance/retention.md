@@ -292,7 +292,7 @@ Use the following flow to understand the retention and deletion outcomes for a s
 
 ![Diagram of the principles of retention](../media/principles-of-retention.png)
   
-Explanation for the four different levels:
+Explanation for the four different principles:
   
 1. **Retention wins over deletion.** Content won't be permanently deleted when it also has retention settings to retain it. While this principle ensures that content is preserved for compliance reasons, the delete process is still initiated and can remove the content from user view, but permanent deletion is suspended. For example, a document in SharePoint moves from the original folder to the Preservation Holds folder. For more information about how and where content is preserved, use the following links for each workload:
     
