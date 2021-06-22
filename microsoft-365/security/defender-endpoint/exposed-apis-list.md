@@ -57,7 +57,7 @@ Topic | Description
 :---|:---
 [Advanced Hunting](run-advanced-query-api.md) | Run queries from API.
 [Alert methods and properties](alerts.md) | Run API calls such as \- get alerts, create alert, update alert and more.
-[Export assessment methods and properties per device](get-assessment-methods-properties.md) | Run API calls such as \- export secure configuration assessment, export software inventory assessment,  and export software vulnerabilities assessment.
+[Export assessment methods and properties per device](get-assessment-methods-properties.md) | Run API calls to gather vulnerability assessments on a per-device basis, such as: \- export secure configuration assessment, export software inventory assessment,  export software vulnerabilities assessment, and delta export software vulnerabilities assessment.
 [Automated Investigation methods and properties](investigation.md) | Run API calls such as \- get collection of Investigation.
 [Get domain related alerts](get-domain-related-alerts.md) | Run API calls such as \- get domain-related devices, domain statistics and more.
 [File methods and properties](files.md) | Run API calls such as \- get file information, file related alerts, file related devices, and file statistics.
