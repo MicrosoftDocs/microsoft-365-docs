@@ -35,7 +35,7 @@ ms.custom: FPFN
 
 >Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-usewdatp-abovefoldlink).
 
-In Microsoft Defender for Endpoint, admins can use the Submissions feature in the Microsoft 365 Defender to submit suspected files and file hashes (SHAs) to Microsoft for scanning.
+In Microsoft Defender for Endpoint, admins can use the Submissions feature in the Microsoft 365 Defender to submit suspected files and file hashes (SHAs) to Microsoft for review.
 
 ## Microsoft Defender for Endpoint interactive guide
 
@@ -68,7 +68,7 @@ If you have a file that you suspect might be malware or is being incorrectly det
 
 3. In the **Submission type** box, select **File** from the drop down list. 
 
-4. Click **Browse files**. In the dialog that opens, find and select the file, and then click **Open**. Note that for **File hash** submissions, you'll either have to copy or type in the file path. 
+4. Click **Browse files**. In the dialog that opens, find and select the file, and then click **Open**. Note that for **File hash** submissions, you'll either have to copy or type in the file hash. 
 
 5. In the **How would you categorize this submission?** section, choose either **Malware**, or **Unwanted software**, or **Clean** (false positive).
   
@@ -83,9 +83,9 @@ If you have a file that you suspect might be malware or is being incorrectly det
  
  If you want to view the details of your submission, select your submission from the **Submissions name** list to open the **Result details** flyout.
 
-## Submit items to Microsoft from the Alerts queue
+## Submit items to Microsoft from the Alerts page
 
-You can also submit a file or file hash directly from the **Alerts queue**. 
+You can also submit a file or file hash directly from the list of alerts on the **Alerts page**. 
 
 1. Open the Microsoft 365 Defender at <https://security.microsoft.com/>, click **Incidents & alerts**, and then click **Alerts** to view the list of alerts.
 
