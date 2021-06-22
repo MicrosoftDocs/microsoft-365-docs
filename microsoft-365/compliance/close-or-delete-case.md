@@ -41,7 +41,9 @@ To close a case:
 
 2. On the **Settings** tab, under **Case Information**, click **Select**.
 
-3. At the bottom of the **Case Information** flyout page, click (**...**) **More options**, and then click **Close case**.
+   ![Access the case information flyout in an Advanced eDiscovery case](..\Media\AeDSelectCaseInformation.png) 
+
+3. At the bottom of the **Case Information** flyout page, click **Actions** and then click **Close case**.
 
    ![Option in the More options menu to close an Advanced eDiscovery case](..\Media\CloseAdvancedeDiscoveryCase.png)
 
@@ -57,7 +59,7 @@ To reopen a closed case:
 
 2. On the **Settings** tab, under **Case Information**, click **Select**.
 
-3. At the bottom of the **Case Information** flyout page, click (**...**) **More options**, and then click **Reopen case**.
+3. At the bottom of the **Case Information** flyout page, click **Actions**, and then click **Reopen case**.
 
    ![Option in the More options menu to reopen an Advanced eDiscovery case](..\Media\ReopenAdvancedeDiscoveryCase.png)
 
@@ -86,6 +88,6 @@ To delete a case:
 
 2. On the **Settings** tab, under **Case Information**, click **Select**.
 
-3. At the bottom of the **Case Information** flyout page, click (**...**) **More options**, and then click **Delete case**.
+3. At the bottom of the **Case Information** flyout page, click **Actions**, and then click **Delete case**.
 
    ![Option in the More options menu to delete an Advanced eDiscovery case](..\Media\DeleteAdvancedeDiscoveryCase.png)
