@@ -27,9 +27,9 @@ ms.prod: m365-security
 
 Quarantine tags in Exchange Online Protection (EOP) allow admins to control what users are able to do to their quarantined messages based on how the message arrived in quarantine.
 
-EOP has traditionally allowed or prevented certain levels of interactivity for messages in [quarantine](find-and-release-quarantined-messages-as-a-user.md) and in [end-user spam notifications](use-spam-notifications-to-release-and-report-quarantined-messages.md). For example, end-users can view and release messages that were quarantined by anti-spam filtering as spam or bulk, but they can't view or release messages that were quarantined as high confidence phishing.
+EOP has traditionally allowed or prevented certain levels of interactivity for messages in [quarantine](find-and-release-quarantined-messages-as-a-user.md) and in [end-user spam notifications](use-spam-notifications-to-release-and-report-quarantined-messages.md). For example, end users can view and release messages that were quarantined by anti-spam filtering as spam or bulk, but they can't view or release messages that were quarantined as high confidence phishing.
 
-For [supported protection features](#step-2-assign-a-quarantine-tag-to-supported-features), quarantine tags specify what users are allowed to do in end-user spam notification messages and in their quarantined messages in quarantine (messages where the user is a recipient). Default quarantine tags are automatically assigned to enforce the historical capabilities for end-users on quarantined messages. Or, you can create and assign custom quarantine tags to allow or prevent end-users from performing specific actions on quarantined messages.
+For [supported protection features](#step-2-assign-a-quarantine-tag-to-supported-features), quarantine tags specify what users are allowed to do in end user spam notification messages and in their quarantined messages in quarantine (messages where the user is a recipient). Default quarantine tags are automatically assigned to enforce the historical capabilities for end-users on quarantined messages. Or, you can create and assign custom quarantine tags to allow or prevent end users from performing specific actions on quarantined messages.
 
 The individual permissions are combined into the following preset permission groups:
 
@@ -55,11 +55,11 @@ The available individual permissions and what's included or not included in the 
 
 If you don't like the default permissions in the preset permission groups, you can use custom permissions when you create or modify custom quarantine tags. For more information about what each permission does, see the [Quarantine tag permission details](#quarantine-tag-permission-details) section later in this article.
 
-You create and assign quarantine tags in the Security & Compliance Center or in PowerShell (Exchange Online PowerShell for Microsoft 365 organizations with Exchange Online Mailboxes; standalone EOP PowerShell in EOP organizations without Exchange Online mailboxes).
+You create and assign quarantine tags in the [Microsoft 365 Defender](https://security.microsoft.com) or in PowerShell (Exchange Online PowerShell for Microsoft 365 organizations with Exchange Online Mailboxes; standalone EOP PowerShell in EOP organizations without Exchange Online mailboxes).
 
 ## What do you need to know before you begin?
 
-- You open the Security & Compliance Center at <https://protection.office.com/>. To go directly to the **Quarantine tags** page, open <https://protection.office.com/quarantineTags>.
+- You can open the Microsoft 365 Defender at <https://security.microsoft.com>. Or to go directly to the **Quarantine tags** page, open <https://security.microsoft.com/quarantineTags>.
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
@@ -67,7 +67,7 @@ You create and assign quarantine tags in the Security & Compliance Center or in 
 
 ## Step 1: Create quarantine tags in the Security & Compliance Center
 
-1. In the Security & Compliance Center, go to **Threat management** \> **Policy** and then select **Quarantine tags**.
+1. In the [Microsoft 365 Defender](https://security.microsoft.com), go to **Threat management** \> **Policy** and then select **Quarantine tags**.
 
 2. On the **Quarantine tags** page, select **Add custom tag**.
 
@@ -245,11 +245,11 @@ In _supported_ protection features that quarantine messages or files (automatica
 
 If you're happy with the end-user permissions that are provided by the default quarantine tags, you don't need to do anything. If you want to customize the end-user capabilities (available buttons) in end-user spam notifications or in quarantined message details, you can assign a custom quarantine tag.
 
-### Assign quarantine tags in anti-spam policies in the Security & Compliance Center
+### Assign quarantine tags in anti-spam policies in the Microsoft 365 Defender
 
 Full instructions for creating and modifying anti-spam policies are described in [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md).
 
-1. In the Security & Compliance Center, go to **Threat management** \> **Policy** \> and then select **Anti-spam**. Or, open <https://protection.office.com/antispam>.
+1. In the [Microsoft 365 Defender](https://security.microsoft.com), go to **Threat management** \> **Policy** \> and then select **Anti-spam**. Or, open <https://security.microsoft.com/antispam>.
 
 2. Find and select an existing anti-spam policy to edit, or create a new anti-spam policy.
 
@@ -306,11 +306,11 @@ Set-HostedContentFilterPolicy -Identity "Human Resources" -SpamAction Quarantine
 
 For detailed syntax and parameter information, see [Set-HostedContentFilterPolicy](/powershell/module/exchange/set-hostedcontentfilterpolicy).
 
-## Configure global quarantine notification settings in the Security & Compliance Center
+## Configure global quarantine notification settings in the Microsoft 365 Defender
 
 The global settings for quarantine tags allow you to customize the end-user spam notifications that are sent to recipients of messages that were quarantined. For more information about these notifications, see [End-user spam notifications](use-spam-notifications-to-release-and-report-quarantined-messages.md).
 
-1. In the Security & Compliance Center, go to **Threat management** \> **Policy** and then select **Quarantine tags**.
+1. In the [Microsoft 365 Defender](https://security.microsoft.com), go to **Threat management** \> **Policy** and then select **Quarantine tags**.
 
 2. On the **Quarantine tags** page, select **Global settings**.
 
@@ -344,9 +344,9 @@ The global settings for quarantine tags allow you to customize the end-user spam
 
      ![A custom disclaimer at the bottom of an end-user spam notification](../../media/quarantine-tags-esn-customization-disclaimer.png)
 
-## View quarantine tags in the Security & Compliance Center
+## View quarantine tags in the Microsoft 365 Defender
 
-1. In the Security & Compliance Center, go to **Threat management** \> **Policy** and then select **Quarantine tags**.
+1. In the [Microsoft 365 Defender](https://security.microsoft.com), go to **Threat management** \> **Policy** and then select **Quarantine tags**.
 
 - To view the settings of built-in or custom quarantine tags, select the quarantine tag from the list (don't select the check box).
 
@@ -376,7 +376,7 @@ If you'd rather use PowerShell to view quarantine tags, do any of the following 
 
 For detailed syntax and parameter information, see [Get-HostedContentFilterPolicy](/powershell/module/exchange/get-hostedcontentfilterpolicy).
 
-## Remove quarantine tags in the Security & Compliance Center
+## Remove quarantine tags in the Microsoft 365 Defender
 
 **Notes**:
 
@@ -390,7 +390,7 @@ For detailed syntax and parameter information, see [Get-HostedContentFilterPolic
 
   If the quarantine tag is being used, [replace the assigned quarantine tag](#step-2-assign-a-quarantine-tag-to-supported-features) before you remove it.
 
-1. In the Security & Compliance Center, go to **Threat management** \> **Policy** and then select **Quarantine tags**.
+1. In the [Microsoft 365 Defender](https://security.microsoft.com), go to **Threat management** \> **Policy** and then select **Quarantine tags**.
 
 2. On the **Quarantine tags** page, select the custom quarantine tag that you want to remove, and the click **Delete tag**.
 
