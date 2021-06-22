@@ -38,7 +38,7 @@ Article | Description
 -|-
 [Advanced Hunting API](api-advanced-hunting.md) | Run Advanced Hunting queries.
 [Incident APIs](api-incident.md) | List and update incidents, along with other practical tasks.
-[Streaming API](../defender-endpoint/raw-data-export.md) (Preview) | Ship real-time events and alerts as they occur in a single data stream.
+[Streaming API](streaming-api.md) (Preview) | Ship real-time events and alerts as they occur in a single data stream.
 
 ### Endpoint URIs
 

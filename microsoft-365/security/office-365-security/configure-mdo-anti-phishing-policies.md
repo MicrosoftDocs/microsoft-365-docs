@@ -226,6 +226,7 @@ Creating a custom anti-phishing policy in the Microsoft 365 Defender portal crea
        - **Quarantine the message**
 
    - **Safety tips & indicators**: Configure the following settings:
+     - **Show first contact safety tip**: For more information, see [First contact safety tip](set-up-anti-phishing-policies.md#first-contact-safety-tip).
      - **Show user impersonation safety tip**: This setting is available only if you selected **Enable users to protect** on the previous page.
      - **Show domain impersonation safety tip**: This setting is available only if you selected **Enable domains to protect** on the previous page.
      - **Show user impersonation unusual characters safety tip** This setting is available only if you selected **Enable users to protect** or **Enable domains to protect** on the previous page.
@@ -233,7 +234,7 @@ Creating a custom anti-phishing policy in the Microsoft 365 Defender portal crea
      - **Show "via" tag**: This setting is available only if you selected **Enable spoof intelligence** on the previous page. Adds a via tag (chris@contoso.com via fabrikam.com) to the From address if it's different from the domain in the DKIM signature or the **MAIL FROM** address. The default value is on (selected). To turn it off, clear the check box.
 
        > [!NOTE]
-       > Currently, the **Show "via" tag** setting is not available in all organizations. If you don't have the **Show "via" tag** setting, the question mark **and** the via tag are both controlled by the **Show (?) for unauthenticated senders for spoof** setting in your organization.
+       > If you don't have the **Show "via" tag** setting, the question mark **and** the via tag are both controlled by the **Show (?) for unauthenticated senders for spoof** setting in your organization.
 
      To turn on a setting, select the check box. To turn it off, clear the check box.
 
@@ -304,9 +305,9 @@ To change the priority of a policy, you click **Increase priority** or **Decreas
 2. On the **Anti-phishing** page, select a custom policy from the list by clicking on the name.
 
 3. At the top of the policy details flyout that appears, you'll see **Increase priority** or **Decrease priority** based on the current priority value and the number of custom policies:
-   - The anti-phishing policy with the **Priority** value **0** has only the **Decrease priority** option available.
-   - The anti-phishing policy with the lowest **Priority** value (for example, **3**) has only the **Increase priority** option available.
-   - If you have three or more anti-phishing policies, policies between the highest and lowest priority values have both the **Increase priority** and **Decrease priority** options available.
+   - The policy with the **Priority** value **0** has only the **Decrease priority** option available.
+   - The policy with the lowest **Priority** value (for example, **3**) has only the **Increase priority** option available.
+   - If you have three or more policies, the policies between the highest and lowest priority values have both the **Increase priority** and **Decrease priority** options available.
 
    Click ![Increase priority icon](../../media/m365-cc-sc-increase-icon.png) **Increase priority** or ![Decrease priority icon](../../media/m365-cc-sc-decrease-icon.png) **Decrease priority** to change the **Priority** value.
 
@@ -318,9 +319,11 @@ When you use the Microsoft 365 Defender portal to remove a custom anti-phishing 
 
 1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Policies** section \> **Anti-phishing**.
 
-2. Select a custom policy from the list by clicking on the name of the policy. At the top of the policy details flyout that appears, click ![More actions icon](../../media/m365-cc-sc-more-actions-icon.png) **More actions** \> ![Delete policy icon](../../media/m365-cc-sc-delete-icon.png) **Delete policy**.
+2. On the **Anti-phishing** page, select a custom policy from the list by clicking on the name of the policy.
 
-3. In the confirmation dialog that appears, click **Yes**.
+3. At the top of the policy details flyout that appears, click ![More actions icon](../../media/m365-cc-sc-more-actions-icon.png) **More actions** \> ![Delete policy icon](../../media/m365-cc-sc-delete-icon.png) **Delete policy**.
+
+4. In the confirmation dialog that appears, click **Yes**.
 
 ## Use Exchange Online PowerShell to configure anti-phishing policies
 

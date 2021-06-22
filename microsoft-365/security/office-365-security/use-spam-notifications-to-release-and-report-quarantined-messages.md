@@ -47,16 +47,11 @@ End User Spam notification is not supported for groups.
 An end-user spam notification contains the following information for each quarantined message:
 
 - **Sender**: The send name and email address of the quarantined message.
-
 - **Subject**: The subject line text of the quarantined message.
-
 - **Date**: The date and time (in UTC) that the message was quarantined.
-
 - **Block Sender**: Click this link to add the sender to the Blocked Senders list on your mailbox. For more information, see [Block a mail sender](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4).
-
-- **Release**: For spam (not phishing) messages, you can release the message here without going to Quarantine the Microsoft 365 Defender portal.
-
-- **Review**: Click this link to go to Quarantine in the Microsoft 365 Defender portal, where you can (depending on why the message was quarantined) view, release, delete or report your quarantined messages. For more information, see [Find and release quarantined messages as a user in EOP](find-and-release-quarantined-messages-as-a-user.md).
+- **Release**: For spam (not phishing) messages, you can release the message here without going to **Quarantine** the Microsoft 365 Defender portal.
+- **Review**: Click this link to go to **Quarantine** in the Microsoft 365 Defender portal, where you can (depending on why the message was quarantined) view, release, delete or report your quarantined messages. For more information, see [Find and release quarantined messages as a user in EOP](find-and-release-quarantined-messages-as-a-user.md).
 
 ![Example end-user spam notification](../../media/end-user-spam-notification.png)
 

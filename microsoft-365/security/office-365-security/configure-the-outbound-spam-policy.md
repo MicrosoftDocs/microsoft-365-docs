@@ -238,7 +238,7 @@ To change the priority of a policy, you click **Increase priority** or **Decreas
 3. At the top of the policy details flyout that appears, you'll see **Increase priority** or **Decrease priority** based on the current priority value and the number of custom policies:
    - The outbound spam policy with the **Priority** value **0** has only the **Decrease priority** option available.
    - The outbound spam policy with the lowest **Priority** value (for example, **3**) has only the **Increase priority** option available.
-   - If you have three or more outbound spam policies, policies between the highest and lowest priority values have both the **Increase priority** and **Decrease priority** options available.
+   - If you have three or more outbound spam policies, the policies between the highest and lowest priority values have both the **Increase priority** and **Decrease priority** options available.
 
    Click ![Increase priority icon](../../media/m365-cc-sc-increase-icon.png) **Increase priority** or ![Decrease priority icon](../../media/m365-cc-sc-decrease-icon.png) **Decrease priority** to change the **Priority** value.
 
