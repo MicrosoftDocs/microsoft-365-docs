@@ -33,6 +33,10 @@ ms.technology: m365d
 
 This article is [Step 2 of 2](eval-defender-identity-overview.md) in the process of setting up the evaluation environment for Microsoft Defender for Identity. For more information about this process, see the [overview article](eval-defender-identity-overview.md).
 
+To discover cloud apps used in your environment, you can do one or both of the following:
+- Get up and running quickly with Cloud Discovery by integrating with Microsoft Defender for Endpoint. This native integration enables you to immediately start collecting data on cloud traffic across your Windows 10 devices, on and off your network.
+- To discover all cloud apps accessed by all devices connected to your network, deploy the Cloud App Security log collector on your firewalls and other proxies. This collects data from your endpoints and sends it to Cloud App Security for analysis. Cloud App Security natively integrates with some third-party proxies for even more capabilities.
+
 Use the following steps to set up your Microsoft Defender for Identity environment. 
 
 
@@ -102,7 +106,7 @@ For instructions on how to do this, see [Configure Microsoft Defender for Identi
 
 ## Next steps
 
-Step 3 of 3: [Microsoft Pilot Defender for Identity](eval-defender-identity-pilot.md)
+Step 3 of 3: [Pilot Microsoft Defender for Identity](eval-defender-identity-pilot.md)
 
 Return to the overview for [Evaluate Microsoft Defender for Identity](eval-defender-identity-overview.md)
 
