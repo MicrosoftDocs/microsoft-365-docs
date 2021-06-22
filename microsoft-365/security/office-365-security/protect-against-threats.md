@@ -91,7 +91,7 @@ For more information about the recommended settings for anti-malware, see [EOP a
 3. In the policy details flyout that opens, click **Edit protection settings**, and then configure the following settings:
    - **Protection settings** section:
      - Select **Enable the common attachments filter** to turn on the common attachments filter. Click **Customize file types** to add more file types.
-     - **Enable zero-hour auto purge for malware**: Verify that this setting is selected. For more information about ZAP for malware, see [ZAP for malware](zero-hour-auto-purge.md#zap-for-malware).
+     - **Enable zero-hour auto purge for malware**: Verify that this setting is selected. For more information about ZAP for malware, see [Zero-hour auto purge (ZAP) for malware](zero-hour-auto-purge.md#zero-hour-auto-purge-zap-for-malware).
    - **Notification** section: Verify that none of the notification settings are selected.
 
    When you're finished, click **Save**.
@@ -173,8 +173,8 @@ For more information about the recommended settings for anti-spam, see [EOP anti
      - **Retain spam in quarantine for this many days**: Verify the value **30** days.
      - **Enable spam safety tips**: Verify this setting is selected (turned on).
      - **Enable zero-hour auto purge (ZAP)**: Verify this setting is selected (turned on).
-       - **Enable for phishing messages**: Verify this setting is selected (turned on). For more information, see [ZAP for phishing](zero-hour-auto-purge.md#zap-for-phishing).
-       - **Enable for spam messages**:  Verify this setting is selected (turned on). For more information, see [ZAP for spam](zero-hour-auto-purge.md#zap-for-spam).
+       - **Enable for phishing messages**: Verify this setting is selected (turned on). For more information, see [Zero-hour auto purge (ZAP) for phishing](zero-hour-auto-purge.md#zero-hour-auto-purge-zap-for-phishing).
+       - **Enable for spam messages**:  Verify this setting is selected (turned on). For more information, see [Zero-hour auto purge (ZAP) for spam](zero-hour-auto-purge.md#zero-hour-auto-purge-zap-for-spam).
      - **Notifications** section:
        - Select **Enable end-user spam notifications**.
          - **Send end-user spam notifications every (days)**: Verify the value **3** days.
