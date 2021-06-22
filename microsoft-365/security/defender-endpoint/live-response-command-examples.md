@@ -114,6 +114,18 @@ getfile c:\Users\user\Desktop\work.txt -auto
 >
 > Use PowerShell as an alternative, if you have problems using this command from within Live Response.
 
+## library
+
+```console
+# List files in the library
+library
+```
+
+```console
+# Delete a file from the library
+library delete script.ps1
+```
+
 ## processes
 ```console
 # Show all processes
@@ -233,15 +245,3 @@ undo scheduledtask Microsoft\Windows\Subscription\LicenseAcquisition
 undo file c:\Users\user\Desktop\malware.exe
 ```
 
-
-## library
-
-```console
-# List files in the library
-library
-```
-
-```console
-# Delete a file from the library
-library delete script.ps1
-```

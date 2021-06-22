@@ -19,6 +19,7 @@ ms.topic: article
 # Customize attack surface reduction rules
 
 **Applies to:**
+
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -32,6 +33,7 @@ ms.topic: article
 Learn how to customize attack surface reduction rules by [excluding files and folders](#exclude-files-and-folders) or [adding custom text to the notification](#customize-the-notification) alert that appears on a user's computer.
 
 You can set attack surface reduction rules for devices running any of the following editions and versions of Windows:
+
 - Windows 10 Pro, [version 1709](/windows/whats-new/whats-new-windows-10-version-1709) or later
 - Windows 10 Enterprise, [version 1709](/windows/whats-new/whats-new-windows-10-version-1709) or later
 - Windows Server, [version 1803 (Semi-Annual Channel)](/windows-server/get-started/whats-new-in-windows-server-1803) or later
@@ -40,11 +42,11 @@ You can use Group Policy, PowerShell, and Mobile Device Management (MDM) configu
 
 ## Exclude files and folders
 
-You can choose to exclude files and folders from being evaluated by attack surface reduction rules. Once excluded, the file won't be blocked from running even if an attack surface reduction rule detects that the file contains malicious behavior.
+You can choose to exclude files and folders from being evaluated by attack surface reduction rules. When excluded, the file won't be blocked from running even if an attack surface reduction rule detects that the file contains malicious behavior.
 
 For example, consider the ransomware rule:
 
-The ransomware rule is designed to help enterprise customers reduce risks of ransomware attacks while ensuring business continuity. By default, the ransomware rule will error on the side of caution and protect against files that haven't yet attained sufficient reputation and trust. To reemphasize, the ransomware rule only triggers on files that have not gained enough positive reputation and prevalence, based on usage metrics of millions of our customers. Usually, the blocks are self resolved, because each file's “reputation and trust” values are incrementally upgraded as non-problematic usage increases.
+The ransomware rule is designed to help enterprise customers reduce risks of ransomware attacks while ensuring business continuity. By default, the ransomware rule errors on the side of caution and protect against files that haven't yet attained sufficient reputation and trust. To reemphasize, the ransomware rule only triggers on files that have not gained enough positive reputation and prevalence, based on usage metrics of millions of our customers. Usually, the blocks are self resolved, because each file's “reputation and trust” values are incrementally upgraded as non-problematic usage increases.
 
 In cases in which blocks aren’t self resolved in a timely manner, customers can - _at their own risk_ - make use of either the self-service mechanism or an Indicator of Compromise (IOC)-based "allow list" capability to unblock the files themselves.  
 
@@ -84,7 +86,7 @@ See the [attack surface reduction](attack-surface-reduction.md) topic for detail
 
 2. In the **Group Policy Management Editor**, go to **Computer configuration** and click **Administrative templates**.
 
-3. Expand the tree to **Windows components** > **Microsoft Defender Antivirus** > **Windows Defender Exploit Guard** > **Attack surface reduction**.
+3. Expand the tree to **Windows components** > **Microsoft Defender Antivirus** > **Microsoft Defender Exploit Guard** > **Attack surface reduction**.
 
 4. Double-click the **Exclude files and paths from Attack surface reduction Rules** setting and set the option to **Enabled**. Select **Show** and enter each file or folder in the **Value name** column. Enter **0** in the **Value** column for each item.
 
@@ -115,7 +117,7 @@ You can customize the notification for when a rule is triggered and blocks an ap
 
 ## Related topics
 
-* [Reduce attack surfaces with attack surface reduction rules](attack-surface-reduction.md)
-* [Enable attack surface reduction rules](enable-attack-surface-reduction.md)
-* [Evaluate attack surface reduction rules](evaluate-attack-surface-reduction.md)
-* [Attack surface reduction FAQ](attack-surface-reduction.md)
+- [Reduce attack surfaces with attack surface reduction rules](attack-surface-reduction.md)
+- [Enable attack surface reduction rules](enable-attack-surface-reduction.md)
+- [Evaluate attack surface reduction rules](evaluate-attack-surface-reduction.md)
+- [Attack surface reduction FAQ](attack-surface-reduction.md)
