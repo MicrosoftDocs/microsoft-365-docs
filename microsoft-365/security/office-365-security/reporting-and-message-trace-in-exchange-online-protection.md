@@ -31,30 +31,17 @@ In Microsoft 365 organizations with mailboxes in Exchange Online or standalone E
 
 ## Usage reports
 
-**Microsoft 365 groups activity**: View information about the number of Microsoft 365 groups that are created and used.
+- **Microsoft 365 groups activity**: View information about the number of Microsoft 365 groups that are created and used. For more information, see [Microsoft 365 Reports in the admin center - Microsoft 365 groups](../../admin/activity-reports/office-365-groups.md).
+- **Email activity**: View information about the number of messages sent, received, and read in your whole organization, and by specific users. For more information, see [Microsoft 365 Reports in the admin center - Email activity](../../admin/activity-reports/email-activity.md).
+- **Email app usage**: View information about the email apps that are used. This includes the total number of connections for each app, and the versions of Outlook that are connecting. For more information, see [Microsoft 365 Reports in the admin center - Email apps usage](../../admin/activity-reports/email-apps-usage.md).
+- **Mailbox usage**: View information about storage used, quota consumption, item count, and last activity (send or read activity) for mailboxes. For more information, see [Microsoft 365 Reports in the admin center - Mailbox usage](../../admin/activity-reports/mailbox-usage.md).
 
-**Email activity**: View information about the number of messages sent, received, and read in your whole organization, and by specific users.
-
-**Email app usage**: View information about the email apps that are used. This includes the total number of connections for each app, and the versions of Outlook that are connecting.
-
-**Mailbox usage**: View information about storage used, quota consumption, item count, and last activity (send or read activity) for mailboxes.
-
-See the following resources for more information:
-
-- [Microsoft 365 Reports in the admin center - Microsoft 365 groups](../../admin/activity-reports/office-365-groups.md)
-- [Microsoft 365 Reports in the admin center - Email activity](../../admin/activity-reports/email-activity.md)
-- [Microsoft 365 Reports in the admin center - Email apps usage](../../admin/activity-reports/email-apps-usage.md)
-- [Microsoft 365 Reports in the admin center - Mailbox usage](../../admin/activity-reports/mailbox-usage.md)
-
-## Security & compliance reports in the Microsoft 365 admin center
+## Security reports in the Microsoft 365 defender portal
 
 These enhanced reports provide an interactive reporting experience for EOP admins, which includes summary information, and the ability to drill down for more details.
 
-**Defender for Office 365**: View information about Safe Links and Safe Attachments that are part of Microsoft Defender for Office 365.
-
-**EOP**: View information about malware detections, spoofed mail, spam detections, and mail flow to and from your organization.
-
-[View reports for Defender for Office 365](view-reports-for-mdo.md)
+- **Defender for Office 365**: View information about Safe Links and Safe Attachments that are part of Microsoft Defender for Office 365. For more information, see [View Defender for Office 365 reports in the Microsoft 365 Defender portal](view-reports-for-mdo.md).
+- **EOP**: View information about malware detections, spoofed mail, spam detections, and mail flow to and from your organization. For more information, see [View email security reports in the Microsoft 365 Defender portal](view-email-security-reports.md).
 
 ## Custom reports using Microsoft Graph
 
@@ -66,7 +53,7 @@ Follows email messages as they travel through EOP. You can determine if an email
 
 You can use this information to efficiently answer your user's questions, troubleshoot mail flow issues, validate policy changes, and alleviates the need to contact technical support for assistance.
 
-See [Message trace in the Microsoft 365 Defender](message-trace-scc.md).
+See [Message trace in the Microsoft 365 Defender portal](message-trace-scc.md).
 
 ## Audit logging
 
@@ -75,6 +62,8 @@ Tracks specific changes made by admins to your organization. These reports can h
 ## Reporting and message trace data availability and latency
 
 The following table describes when EOP reporting and message trace data is available and for how long.
+
+<br>
 
 ****
 
