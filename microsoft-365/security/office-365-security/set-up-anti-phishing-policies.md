@@ -137,9 +137,11 @@ For more information, see [Identify suspicious messages in Outlook.com and Outlo
 The **Show first contact safety tip** settings is available in EOP and Defender for Office 365 organizations, and has no dependency on spoof intelligence or impersonation protection settings. The safety tip is shown to recipients in the following scenarios:
 
 - The first time they get a message from a sender
-- If they don't often get messages from the sender.
+- They don't often get messages from the sender.
 
-![The text of the safety tip for impersonation protection with multiple recipients.](../../media/safety-tip-first-contact-multiple-recipients.png)
+![First contact safety tip for messages with one recipient.](../../media/safety-tip-first-contact-one-recipient.png)
+
+![First contact safety tip for messages with with multiple recipients.](../../media/safety-tip-first-contact-multiple-recipients.png)
 
 This capability adds an extra layer of security protection against potential impersonation attacks, so we recommend that you turn it on.
 
