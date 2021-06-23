@@ -52,7 +52,7 @@ If you found this video helpful, check out the [complete training series for sma
 
 Here are the features and settings you'll find in the left-hand navigation of the admin center. Learn more about admin tasks in [admin help](../../business-video/admin-center-overview.md).
   
-|**Menu**|**What it's for**|
+| Menu | What it's for |
 |-----|-----|
 |**Home** <br/> |This is the landing page in the admin center. You'll see where to manage users, billing, service health, and reports.  <br/> |
 |**Users** <br/> |Create and manage users in your organization, like employees or students. You can also set their permission level or reset their passwords.  <br/> |

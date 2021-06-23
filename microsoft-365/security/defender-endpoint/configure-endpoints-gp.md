@@ -116,7 +116,7 @@ After configuring the onboarding script, continue editing the same group policy 
 
 All policies are located under `Computer Configuration\Policies\Administrative Templates`.
 
-**Policy location:** \Windows Components\Windows Defender SmartScreen*
+**Policy location:** \Windows Components\Windows Defender ATP
 
 Policy | Setting 
 :---|:---
@@ -152,7 +152,7 @@ Monitor file and program activity on your computer|Enabled
 
 <br/>
 
-**Policy location:**  \Windows Components\Microsoft Defender AntivirusScan
+**Policy location:**  \Windows Components\Microsoft Defender Antivirus\Scan
 
 These settings configure periodic scans of the endpoint. We recommend performing a weekly quick scan, performance permitting.
 

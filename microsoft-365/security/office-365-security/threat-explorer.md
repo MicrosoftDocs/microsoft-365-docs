@@ -553,7 +553,7 @@ To view and use Explorer or Real-time detections, you must have appropriate perm
 
 To learn more about roles and permissions, see the following resources:
 
-- [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md)
+- [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md)
 - [Feature permissions in Exchange Online](/exchange/permissions-exo/feature-permissions)
 
 ## Differences between Threat Explorer and Real-time detections
