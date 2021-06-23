@@ -90,8 +90,8 @@ For more information about the recommended settings for anti-malware, see [EOP a
 
 3. In the policy details flyout that opens, click **Edit protection settings**, and then configure the following settings:
    - **Protection settings** section:
-     - Select **Enable the common attachments filter** to turn on the common attachments filter. Click **Customize file types** to add more file types.
-     - **Enable zero-hour auto purge for malware**: Verify that this setting is selected. For more information about ZAP for malware, see [Zero-hour auto purge (ZAP) for malware](zero-hour-auto-purge.md#zero-hour-auto-purge-zap-for-malware).
+     - **Enable the common attachments filter**: Select (turn on). Click **Customize file types** to add more file types.
+     - **Enable zero-hour auto purge for malware**: Verify this setting is selected. For more information about ZAP for malware, see [Zero-hour auto purge (ZAP) for malware](zero-hour-auto-purge.md#zero-hour-auto-purge-zap-for-malware).
    - **Notification** section: Verify that none of the notification settings are selected.
 
    When you're finished, click **Save**.
@@ -246,7 +246,7 @@ For more information about the recommended settings for Safe Links, see [Safe Li
 2. On the **Safe Links** page, click **Global settings**, and then configure the following settings on the flyout that appears:
    - **Settings that apply to content in supported Office 365 apps** section:
      - **Use Safe Links in Office 365 apps**: Verify this setting is turned on (![Toggle on](../../media/scc-toggle-on.png)).
-     - **Do not track when users click protected links in Office 365 apps**: Turn this setting off (![Toggle off](../../media/scc-toggle-off.png))
+     - **Do not track when users click protected links in Office 365 apps**: Turn this setting off (![Toggle off](../../media/scc-toggle-off.png)).
      - **Do not let users click through to the original URL in Office 365 apps**: Verify this setting is turned on (![Toggle on](../../media/scc-toggle-on.png)).
 
    When you're finished, click **Save**
