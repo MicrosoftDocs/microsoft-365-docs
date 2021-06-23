@@ -91,7 +91,7 @@ The following table summarizes what's included in each plan.
 
 ## Configure Microsoft Defender for Office 365 policies
 
-With Microsoft Defender for Office 365, your organization's security team can configure protection by defining policies in the Microsoft 365 Defender portal (go to <https://security.microsoft.com> \> **Email & collaboration** \> **Policies and rules**).
+With Microsoft Defender for Office 365, your organization's security team can configure protection by defining policies in the Microsoft 365 Defender portal (go to <https://security.microsoft.com> \> **Email & collaboration** \> **Policies & rules** \> **Threat policies**).
 
 Learn more by watching [this video](https://www.youtube.com/watch?v=vivvTmWJ_3c).
 
@@ -173,5 +173,4 @@ New features are added to Microsoft Defender for Office 365 continually. To lear
 ## See also
 
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
-
 - [Automated investigation and response (AIR) in Microsoft 365 Defender](../defender/m365d-autoir.md)
