@@ -162,7 +162,7 @@ To create and configure anti-malware policies, see [Configure anti-malware polic
 |**Use customized notification text** <p> _CustomNotifications_|Not selected <p> `$false`|Not selected <p> `$false`|Not selected <p> `$false`||
 |**From name** <p> _CustomFromName_|Blank <p> `$null`|Blank <p> `$null`|Blank <p> `$null`||
 |**From address** <p> _CustomFromAddress_|Blank <p> `$null`|Blank <p> `$null`|Blank <p> `$null`||
-|**Customize notifications for messages from internal senders**|||||These settings are used only if **Notify internal senders when messages are quarantined as malware** or **Notify an admin about undelivered messages from internal senders** is selected.|
+|**Customize notifications for messages from internal senders**||||These settings are used only if **Notify internal senders when messages are quarantined as malware** or **Notify an admin about undelivered messages from internal senders** is selected.|
 |**Subject** <p> _CustomInternalSubject_|Blank <p> `$null`|Blank <p> `$null`|Blank <p> `$null`||
 |**Message** <p> _CustomInternalBody_|Blank <p> `$null`|Blank <p> `$null`|Blank <p> `$null`||
 |**Customize notifications for messages from external senders**||||These settings are used only if **Notify external senders when messages are quarantined as malware** or **Notify an admin about undelivered messages from external senders** is selected.|
