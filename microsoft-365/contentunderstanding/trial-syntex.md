@@ -1,5 +1,5 @@
 ---
-title: "Run a pilot for Microsoft SharePoint Syntex"
+title: Run a trial of Microsoft SharePoint Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -14,38 +14,27 @@ ms.collection:
 ms.custom: Adopt
 search.appverid: 
 localization_priority: Normal
-description: "Learn how to plan and run a trial pilot program for SharePoint Syntex in your organization."
+description: Learn how to plan and run a trial pilot program for SharePoint Syntex in your organization.
 ---
 
-# Run a pilot for Microsoft SharePoint Syntex
+# Run a trial of Microsoft SharePoint Syntex
 
 This article describes how to set up a trial pilot program to deploy SharePoint Syntex in your organization. It also recommends best practices for the trial.
 
-## Resources required
+## Sign up for a trial
 
+The trial of SharePoint Syntex gives access to 300 users for 30 days.
 
-|Role  |Activity  |
-|---------|---------|
-|Microsoft 365 global admin or billing admin    |     Activate the trial and assign licenses    |
-|Microsoft 365 global admin or SharePoint admin     |   Configure SharePoint Syntex and create content centers      |
-|Business users     |    Model building and testing     |
-
-## Trial options
-
-### Publicly available trials
-
-The trial version of SharePoint Syntex gives access to 300 users for 30 days. The 300 users ensure the automatic addition of 1 million AI Builder credits. It doesn’t mean that you need to include 300 users for a trial to succeed.
+> [!NOTE]
+> Up to 300 users are included in the trial to ensure the automatic addition of 1 million AI Builder credits. You do not have to include 300 users for a trial to succeed.
 
 You can get the trial version from one of the following sources:
 
 - The [SharePoint Syntex product page](https://www.microsoft.com/microsoft-365/enterprise/sharepoint-syntex?activetab=pivot:overviewtab)
 
-  > [!NOTE]
-  > This trial must be added to an existing tenant. If a tenant isn't available, you can generate a trial tenant through [Microsoft 365 E3](https://www.microsoft.com/microsoft-365/enterprise/office-365-e3?activetab=pivot:overviewtab) or [Microsoft 365 E5 licensing](https://www.microsoft.com/microsoft-365/enterprise/office-365-e5?activetab=pivot:overviewtab) licensing.
-
 - The [Microsoft 365 admin center](https://admin.microsoft.com)
     1.	Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com).
-    2.	Navigate to **Billing** > **Purchase Services**.
+    2.	Go to **Billing** > **Purchase Services**.
     3.	Scroll down to the **Add-Ons** section.
     4.	On the SharePoint Syntex tile, select **Details**.
     5.	Select **Get free trial**.
@@ -53,21 +42,15 @@ You can get the trial version from one of the following sources:
 
 A user must be a Microsoft 365 global administrator or billing administrator to activate a trial.
 
-### Extended trials
+### Who should be involved in a trial
 
-Extended trials are available for organizations who have engaged a partner through the Content Services Partner Program (CSPP). These trials offer 300 users access to SharePoint Syntex for 60 days. CSPP partners can request promotional codes for extended trials.
+|Role  |Activity  |
+|---------|---------|
+|Microsoft 365 global admin or billing admin    |     Activate the trial and assign licenses    |
+|Microsoft 365 global admin or SharePoint admin     |   Configure SharePoint Syntex and create content centers      |
+|Business users     |    Model building and testing     |
 
-> [!NOTE]
-> As with public trials, these promotional codes are for 300 users. They automatically include 1 million AI Builder credits.
-
-### Comparison of trial options
-
-|Trial source  |Users  |Duration  |
-|---------|---------|---------|
-|Public sources     |   300      |       30 days  |
-|Partner (CSPP)     |   300      |     60 days    |
-
-## Before you activate a trial
+### Before you activate a trial
 
 To successfully plan a SharePoint Syntex trial, consider the following factors:
 
