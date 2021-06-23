@@ -65,13 +65,13 @@ To maximize the value of a trial on a production tenant, planning and business e
 - Have a clear understanding of the purpose for any extracted metadata; for example, view formatting or automation by using Power Automate. While SharePoint Syntex is focused on classifying documents and extracting metadata, the value to quantify is what this metadata enables.
 - Be based on a defined set of data; for example, specific SharePoint sites or libraries. A common misconception of SharePoint Syntex is that general purpose models can be applied across all organization content. A more accurate view is that models are built to help solve specific business problems in targeted locations.
 
-All of these use cases might not be a good fit for SharePoint Syntex. The objective of a quality trial is not to prove that SharePoint Syntex will fit all the scenarios. Instead, the trial should help you better understand the value of product.
+All of these use cases might not be a good fit for SharePoint Syntex. The goal of a quality trial isn't to prove that SharePoint Syntex will fit all the scenarios. Instead, the trial should help you better understand the value of product.
 
 For each of the planned use cases, identify users who are subject matter experts in the related content or process. The creation of SharePoint Syntex models is focused on domain experts in the content, rather than on IT professionals or developer resources.
 
 ## Activate a trial
 
-When you initiate a trial, you must do the following:
+When you initiate a trial, you need to:
 
 - Assign licenses to the relevant users.
 - Perform [additional setup of SharePoint Syntex](https://docs.microsoft.com/microsoft-365/contentunderstanding/set-up-content-understanding).
@@ -89,11 +89,11 @@ Based on the outcome of the trial, you can decide whether to proceed to producti
 
 ### Proceed to production use
 
-To ensure continuity of service, you need to purchase the required number of licenses and assign those to users. Trial users who don’t have a full license at the end of the trial period won’t be able to fully utilize SharePoint Syntex.
+To ensure continuity of service, you need to purchase the required number of licenses and assign those licenses to users. Trial users who don’t have a full license at the end of the trial period won’t be able to fully utilize SharePoint Syntex.
 
 You might have to estimate your projected use of forms processing and plan for the expected amount of AI Builder credits. For help, see [Estimate the AI Builder capacity that’s right for you](https://powerapps.microsoft.com/ai-builder-calculator/).
 
-### Do not proceed to production use
+### Don't proceed to production use
 
 If you don’t purchase licenses following the trial:
 
