@@ -1,5 +1,5 @@
 ---
-title: Evaluate Microsoft 365 Defender for Endpoint overview
+title: Evaluate Microsoft Defender for Endpoint overview
 description: Set up a Microsoft 365 Defender trial lab or pilot environment. Test and experience how the security solution is designed to protect devices, identity, data, and apps in your organization.
 keywords: Microsoft 365 Defender trial, try Microsoft 365 Defender, evaluate Microsoft 365 Defender, Microsoft 365 Defender evaluation lab, Microsoft 365 Defender pilot, cyber security, advanced persistent threat, enterprise security, devices, device, identity, users, data, applications, incidents, automated investigation and remediation, advanced hunting
 search.product: eADQiWindows 10XVcnh
@@ -23,7 +23,7 @@ ms.topic: conceptual
 ms.technology: m365d
 ---
 
-# Evaluate Microsoft 365 Defender for Endpoint overview
+# Evaluate Microsoft Defender for Endpoint overview
 
 **Applies to:**
 
@@ -40,10 +40,10 @@ NEED TO INSERT IMAGE HERE!!
 
 The following table describes the steps in the illustration.
 
-| |Step  |Description  |
-|---------|---------|---------|
-|1|[Review architecture requirements and key concepts](eval-defender-endpoint-architecture.md)    | Understand the Defender for Endpoint architecture and the capabilities available to you.       |
-|2|[Enable the evaluation environment](eval-defender-office-365-enable-eval.md)     |   Follow the steps to setup the evaluation environment.      |
-|3|[Set up the pilot ](eval-defender-office-365-pilot.md)    |    Verify your pilot group, run simulations, and become familiar with key features and dashboards.     |
+ |Step   |Description
+|---------|---------|
+| [Step 1. Review architecture requirements and key concepts](eval-defender-endpoint-architecture.md)    | Understand the Defender for Endpoint architecture and the capabilities available to you.       |
+|[Step 2. Enable the evaluation environment](eval-defender-office-365-enable-eval.md)     |   Follow the steps to setup the evaluation environment.      |
+|[Step 3. Set up the pilot ](eval-defender-office-365-pilot.md)    |    Verify your pilot group, run simulations, and become familiar with key features and dashboards.     |
 
 
