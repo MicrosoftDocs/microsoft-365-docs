@@ -71,7 +71,7 @@ When you begin to use Microsoft Defender for business, you will be asked whether
 
 - The security policies and settings that you configure in the Microsoft 365 Defender portal are synched to Microsoft Endpoint Manager, enabling you to use the method that you prefer. 
 
-- Microsoft Defender for business is designed to help you manage your company’s endpoint protection capabilities without requiring a lot of time or a security background, making it easier for you to focus on running your business.
+- Microsoft Defender for business is designed to help you manage your company’s endpoint protection capabilities without requiring a lot of time or a security background. The Microsoft 365 Defender portal makes it easier for you secure your company without losing your focus on running your business.
 
 ## View/edit device policies
 
@@ -87,11 +87,11 @@ The following sections provide more information about your security policies in 
 
 ## View your policies
 
-1.	As a security administrator (or global administrator), go to https://security.microsoft.com and sign in. You’re now in the Microsoft 365 Defender portal.
+1.	As a security administrator (or global administrator), go to [https://security.microsoft.com](https://security.microsoft.com) and sign in. You’re now in the Microsoft 365 Defender portal.
 
-2.	In the navigation pane, choose Configuration management. Policies are organized by operating system and policy type. 
+2.	In the navigation pane, choose **Configuration management**. Policies are organized by operating system and policy type. 
 
-3.	Select an operating system tab (for example, Windows clients). 
+3.	Select an operating system tab (for example, **Windows clients**). 
 
 4.	Expand a category to view the list of policies for that operating system and policy type. 
 
@@ -99,19 +99,21 @@ The following sections provide more information about your security policies in 
 
 ## Define a new policy
 
-1.	As a security administrator (or global administrator), go to https://security.microsoft.com and sign in. You’re now in the Microsoft 365 Defender portal.
+1.	As a security administrator (or global administrator), go to [https://security.microsoft.com](https://security.microsoft.com) and sign in. You’re now in the Microsoft 365 Defender portal.
 
-2.	In the navigation pane, choose Configuration management. Policies are organized by operating system and policy type. 
+2.	In the navigation pane, choose **Configuration management**. Policies are organized by operating system and policy type. 
 
 3.	Select an operating system tab, and then expand a category. 
 
-4.	Select + Add.
+4.	Select **+ Add**.
 
-5.	On the General information tab, specify a name and description. This information will help you and your team identify the policy later on.
+5.	On the **General information** tab, specify a name and description. This information will help you and your team identify the policy later on.
 
-6.	Review the policy order and edit if necessary. (See the Policy order section for more details).
+6.	Review the policy order and edit if necessary. (See the **Policy order** section for more details).
 
-7.	On the Device groups tab, either create a new device group, or use an existing group. Policies are assigned to devices through device groups. Here are some things to keep in mind:
+7.	On the **Device groups** tab, either create a new device group, or use an existing group. Policies are assigned to devices through device groups. 
+
+   Here are some things to keep in mind:
    
    - Initially, you might only have your default device group, which includes the devices people in your company are using to access company data and email.
    - Create a new device group to apply a policy with specific settings that are different from the default policy. 
@@ -119,38 +121,40 @@ The following sections provide more information about your security policies in 
    - All device groups—including the default and custom device groups that you define—are stored in in Azure Active Directory (Azure AD).
    - As you add (or remove) devices in a device group, the devices receive (or are released from) the policies that target the device group. 
 
-8.	On the Configuration settings tab, specify the settings for your policy, and then choose Next. For more information about the individual settings, see Configuration settings for next-generation protection.
+8.	On the **Configuration settings** tab, specify the settings for your policy, and then choose Next. For more information about the individual settings, see [Configuration settings for next-generation protection](#understand-configuration-settings-for-next-generation-protection).
 
-9.	On the Review your policy tab, review the general information, targeted devices, and configuration settings. 
+9.	On the **Review your policy** tab, review the general information, targeted devices, and configuration settings. 
 
-   - Make any needed changes by selecting Edit.
-   - When you’re ready to proceed, choose Create policy.
+   - Make any needed changes by selecting **Edit**.
+   - When you’re ready to proceed, choose **Create policy**.
 
 ## Edit an existing policy
 
-1.	As a security administrator (or global administrator), go to https://security.microsoft.com and sign in. You’re now in the Microsoft 365 Defender portal.
+1.	As a security administrator (or global administrator), go to [https://security.microsoft.com](https://security.microsoft.com) and sign in. You’re now in the Microsoft 365 Defender portal.
 
-2.	In the navigation pane, choose Configuration management. Policies are organized by operating system and policy type. 
+2.	In the navigation pane, choose **Configuration management**. Policies are organized by operating system and policy type. 
 
 3.	Select an operating system tab, and then expand a category. 
 
-4.	Select a policy, and then choose Edit.
+4.	Select a policy, and then choose **Edit**.
 
-5.	On the General information tab, review the information. If need be, edit the policy name and description. Then choose Next.
+5.	On the **General information** tab, review the information. If need be, edit the policy name and description. Then choose **Next**.
 
-6.	On the Device groups tab, determine which device groups should receive this policy. Take one or more of the following steps: 
+6.	On the **Device groups** tab, determine which device groups should receive this policy. Take one or more of the following steps: 
 
    - Keep the selected device group as is
    - Remove a device group from the policy
    - Create a new device group
    - Select another existing device group
 
-7.	On the Configuration settings tab, review and if need be, edit the settings for your policy, and then choose Next. For more information about the individual settings, see Configuration settings for next-generation protection.
+7.	On the **Configuration settings** tab, review and if need be, edit the settings for your policy, and then choose **Next**.
 
-8.	On the Review your policy tab, review the general information, targeted devices, and configuration settings. 
+   For more information about the individual settings, see [Configuration settings for next-generation protection](#understand-configuration-settings-for-next-generation-protection).
 
-   - Make any needed changes by selecting Edit.
-   - When you’re ready to proceed, choose Update policy.
+8.	On the **Review your policy** tab, review the general information, targeted devices, and configuration settings. 
+
+   - Make any needed changes by selecting **Edit**.
+   - When you’re ready to proceed, choose **Update policy**.
 
 ## Learn more about policy order
 
@@ -168,13 +172,13 @@ The following table lists your settings and options:
 
 | Setting | Description |
 |:---|:---|
-| Real-time protection | |
+| **Real-time protection** | |
 | Turn on real-time protection | Enabled by default, real-time protection locates and stops malware from running on devices. <p> *We recommend keeping real-time protection turned on.* |
 | Turn on block at first sight | Enabled by default, block at first sight blocks malware within seconds of detection, increases the time (in seconds) allowed to submit sample files for analysis, and sets your detection level to High. <p> *We recommend keeping block at first sight turned on.* |
 | Set network protection to Block mode | When turned on, network protection helps protect against phishing scams, exploit-hosting sites, and malicious content on the Internet. It also prevents users from turning network protection off. <p> Network protection can be set to one of the following modes:<br/>- Block mode (this is the default), which prevents users from visiting sites that are considered unsafe <br/>- Audit mode, which allows users to visit sites that might be unsafe and tracks network activity to/from such sites <br/>- Disabled mode, which nether blocks users from visiting sites that might be unsafe nor tracks network activity to/from such sites <p> * We recommend using network protection set to Block mode.* |
-| Remediation | |
+| **Remediation** | |
 | Enable protection from potentially unwanted apps | Potentially unwanted applications (PUA) can include advertising software, bundling software that offers to install other, unsigned software, and evasion software that attempts to evade security features. Although PUA are not necessarily viruses, malware, or other types of threats, PUA can affect device performance. <p> Enabled by default, PUA protection blocks items that are detected as PUA. You can set PUA protection to one of the following settings: <br/>- Enable (this is the default), which blocks items detected as PUA on devices. <br/>- Audit, which takes no action on items detected as PUA <br/>- Off, which neither detects nor takes action items that might be PUA <p> *We recommend keeping PUA protection enabled.* |
-| Scan |  |
+| **Scan** |  |
 | Scheduled scan type | Consider running a weekly antivirus scan on your devices. You can choose between full, quick, or custom scans. <br/>- Full scan checks all files and folders on a device <br/>- Quick scan checks locations, such as registry keys and startup folders, where malware could be registered to start with a device.  <br/>- Custom scan enables you to specify the files and folders to scan, including USB drives <p>We recommend using a quick scan. [Learn more about scan types](../defender-endpoint/schedule-antivirus-scans.md). |
 | Day of week to run a scheduled scan | Select a day for your regular, weekly antivirus scans to run. |
 | Time of day to run a scheduled scan | Select a time to run your regularly scheduled antivirus scans to run. |
