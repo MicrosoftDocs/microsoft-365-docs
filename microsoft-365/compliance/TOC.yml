@@ -473,6 +473,8 @@
               href: archive-17a-4-blackberry-data.md
             - name: Bloomberg DataParser (preview)
               href: archive-17a-4-bloomberg-data.md
+            - name: Cisco Jabber DataParser (preview)
+              href: archive-17a-4-cisco-jabber-data.md
             - name: Cisco Webex DataParser (preview)
               href: archive-17a-4-webex-teams-data.md
             - name: FactSet DataParser (preview)
