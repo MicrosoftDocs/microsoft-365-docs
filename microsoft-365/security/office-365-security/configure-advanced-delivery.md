@@ -118,8 +118,151 @@ The third-party phishing simulation entries that you configured are displayed on
 
 In addition to the two scenarios that the advanced delivery policy can help you with, there are other scenarios that might require you bypass filtering:
 
-- **Third-party filters**: If your domain's MX record *doesn't* point to Office 365 (messages are routed somewhere else first), [secure by default](secure-by-default.md) *is not available*.
-
-  To bypass Microsoft filtering for messages that have already been evaluated by third-party filtering, use mail flow rules (also known as transport rules). For more information, see [Use mail flow rules to set the SCL in messages](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl.md).
+- **Third-party filters**: If your domain's MX record *doesn't* point to Office 365 (messages are routed somewhere else first), [secure by default](secure-by-default.md) *is not available*. We want you to be protected by O365 but realize you might not want to point your MX record to Microsoft. If you'd like to add protection, then you'll need to enable Enhanced Filtering for Connectors. Learn more here: [Manage mail flow using a third-party cloud service with Exchange Online](https://docs.microsoft.com/en-us/exchange/mail-flow-best-practices/manage-mail-flow-using-third-party-cloud). If Enhanced Filtering for Connectors is not an option desired, then to bypass Microsoft filtering for messages that have already been evaluated by third-party filtering, use mail flow rules (also known as transport rules). For more information, see [Use mail flow rules to set the SCL in messages](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl.md).
 
 - **False positives under review**: You might want to temporarily allow certain messages that are still being analyzed by Microsoft via [admin submissions](admin-submission.md) to report known good messages that are incorrectly being marked as bad to Microsoft (false positives). As with all overrides, we ***highly recommended*** that these allowances are temporary.
+
+## Use Exchange Online PowerShell to configure Advanced Delivery Policy
+- In PowerShell, for Advanced Delivery, you create the Third-Party Phish Simulation OR the SecOps Mailbox policy first, then you create the Third-Party Phish Simulation OR SecOps Mailbox rule that identifies the policy that the rule applies to.
+- In PowerShell, you modify the settings in the Third-Party Phish Simulation OR SecOps Mailbox policy and the Third-Party Phish Simulation rule separately.
+- When you remove the Third-Party Phish Simulation OR the SecOps Mailbox policy from PowerShell, the corresponding Third-Party Phish Simulation OR SecOps Mailbox rule is automatically removed.
+- When you remove the Third-Party Phish Simulation OR SecOps Mailbox rule from PowerShell, the corresponding policy is not removed and should be removed separately.
+
+### Use PowerShell to create a Third-Party Phish Simulation in the Advanced Delivery Policy
+
+#### Step 1: Use PowerShell to create a Third-Party Phish Simulation policy in Advanced Delivery
+
+The following example creates the third-party phish simulation policy named PhishSimOverridePolicy.
+
+```PowerShell
+New-PhishSimOverridePolicy -Name PhishSimOverridePolicy
+```
+For detailed syntax and parameter information, see [New-PhishSimOverridePolicy](https://docs.microsoft.com/en-us/powershell/module/exchange/new-phishsimoverridepolicy?view=exchange-ps).
+
+#### Step 2: Use PowerShell to create a Third-Party Phish Simulation rule in Advanced Delivery 
+The following example creates the third-party phish simulation rule with the specified settings.
+
+```PowerShell
+New-PhishSimOverrideRule -Name PhishSimOverrideRule -Policy PhishSimOverridePolicy -SenderDomainIs fabrikam.com,wingtiptoys.com -SenderIpRanges 192.168.1.55
+```
+For detailed syntax and parameter information, see [New-PhishSimOverrideRule]( https://docs.microsoft.com/en-us/powershell/module/exchange/new-phishsimoverriderule?view=exchange-ps).
+
+### Use PowerShell to view a Third-Party Phish Simulation policy in the Advanced Delivery Policy
+The following example returns detailed information about the one and only third-party phish simulation policy.
+```PowerShell
+Get-PhishSimOverridePolicy
+```
+For detailed syntax and parameter information, see [Get-PhishSimOverridePolicy]( https://docs.microsoft.com/en-us/powershell/module/exchange/get-phishsimoverridepolicy?view=exchange-ps). 
+
+### Use PowerShell to view a Third-Party Phish Simulation rule in the Advanced Delivery Policy
+The following example returns detailed information about the third-party phish simulation rule.
+
+```PowerShell
+Get-PhishSimOverrideRule
+```
+Note: This could return more rules that are pending deletion. If it returns more than one rule, you can use the following PowerShell command to view the name of the one that is valid
+```PowerShell
+Get-PhishSimOverrideRule | select Name, Mode
+```
+Then use the following PowerShell command to review the only valid rule
+```PowerShell
+Get-PhishSimOverrideRule -Identity <Name>
+```
+For detailed syntax and parameter information, see [Get-PhishSimOverrideRule]( https://docs.microsoft.com/en-us/powershell/module/exchange/get-phishsimoverriderule?view=exchange-ps). 
+
+### Use PowerShell to modify a Third-Party Phish Simulation policy in the Advanced Delivery Policy
+The following example disables the third-party phish simulation policy. 
+
+```PowerShell
+Set-PhishSimOverridePolicy -Identity PhishSimOverridePolicy -Enabled $false
+```
+For detailed syntax and parameter information, see [Set-PhishSimOverridePolicy]( https://docs.microsoft.com/en-us/powershell/module/exchange/set-phishsimoverridepolicy?view=exchange-ps). 
+
+### Use PowerShell to modify a Third-Party Phish Simulation rule in the Advanced Delivery Policy
+The following example modifies the third-party phish simulation rule with the specified settings.
+
+```PowerShell
+Set-PhishSimOverrideRule -Identity PhishSimOverrideRulea0eae53e-d755-4a42-9320-b9c6b55c5011 -AddSenderDomainIs blueyonderairlines.com -RemoveSenderIpRanges 192.168.1.55
+```
+For detailed syntax and parameter information, see [Set-PhishSimOverrideRule]( https://docs.microsoft.com/en-us/powershell/module/exchange/set-phishsimoverriderule?view=exchange-ps). 
+
+### Use PowerShell to remove a Third-Party Phish Simulation policy in the Advanced Delivery Policy
+The following example removes the third-party phish simulation policy and rule.
+
+```PowerShell
+Remove-PhishSimOverridePolicy -Identity PhishSimOverridePolicy
+```
+For detailed syntax and parameter information, see [Remove-PhishSimOverridePolicy]( https://docs.microsoft.com/en-us/powershell/module/exchange/remove-phishsimoverridepolicy?view=exchange-ps).
+
+### Use PowerShell to remove a Third-Party Phish Simulation rule in the Advanced Delivery Policy
+The following example removes the Third-Party Phishing Simulation rule.
+
+```PowerShell
+Remove-PhishSimOverrideRule -Identity PhishSimOverrideRulea0eae53e-d755-4a42-9320-b9c6b55c5011
+```
+For detailed syntax and parameter information, see [Remove-PhishSimOverrideRule]( https://docs.microsoft.com/en-us/powershell/module/exchange/remove-phishsimoverriderule?view=exchange-ps). 
+
+### Use PowerShell to create a SecOps Mailbox in the Advanced Delivery Policy
+
+#### Step 1: Use PowerShell to create a SecOps Mailbox policy in Advanced Delivery 
+The following example creates the SecOps mailbox policy with specified settings.
+```PowerShell
+New-SecOpsOverridePolicy -Name SecOpsOverridePolicy -SendTo secops@contoso.com
+```
+For detailed syntax and parameter information, see [New-SecOpsOverridePolicy]( https://docs.microsoft.com/en-us/powershell/module/exchange/new-secopsoverridepolicy?view=exchange-ps). 
+
+#### Step 2: Use PowerShell to create a SecOps Mailbox rule in Advanced Delivery 
+The following example creates the SecOps mailbox rule with the specified settings.
+
+```PowerShell
+New-SecOpsOverrideRule -Name SecOpsOverrideRule -Policy SecOpsOverridePolicy
+```
+For detailed syntax and parameter information, see [New-SecOpsOverrideRule]( https://docs.microsoft.com/en-us/powershell/module/exchange/new-secopsoverriderule?view=exchange-ps). 
+### Use PowerShell to view a SecOps Mailbox policy in the Advanced Delivery Policy
+The following example returns detailed information about the one and only SecOps mailbox policy. 
+
+```PowerShell
+Get-SecOpsOverridePolicy
+```
+For detailed syntax and parameter information, see [Get-SecOpsOverridePolicy]( https://docs.microsoft.com/en-us/powershell/module/exchange/get-secopsoverridepolicy?view=exchange-ps). 
+
+### Use PowerShell to view a SecOps Mailbox rule in the Advanced Delivery Policy
+The following example returns detailed information about the SecOps mailbox rule.
+
+```PowerShell
+Get-SecOpsOverrideRule
+```
+Note: This could return more rules that are pending deletion. If it returns more than one rule, you can use the following PowerShell command to view the name of the one that is valid
+```PowerShell
+Get-SecOpsOverrideRule | select Name, Mode
+```
+Then use the following PowerShell command to review the only valid rule
+```PowerShell
+Get-SecOpsOverrideRule -Identity <Name>
+```
+For detailed syntax and parameter information, see [Get-SecOpsOverrideRule]( https://docs.microsoft.com/en-us/powershell/module/exchange/get-secopsoverriderule?view=exchange-ps).
+### Use PowerShell to modify a SecOps Mailbox policy in the Advanced Delivery Policy
+The following example modified the SecOps Mailbox policy with the specified settings.
+
+```PowerShell
+Set-SecOpsOverridePolicy -Identity SecOpsOverridePolicy -AddSentTo secops2@contoso.com
+```
+Note: If an associated valid SecOps rule exists, the rule’s mailbox(es) will be updated too.
+For detailed syntax and parameter information, see [Set-SecOpsOverridePolicy]( https://docs.microsoft.com/en-us/powershell/module/exchange/set-secopsoverridepolicy?view=exchange-ps).
+### Use PowerShell to modify a SecOps Mailbox rule in the Advanced Delivery Policy
+
+Note: Invoking Set-SecOpsOverrideRule will NOT modify the SecOps rule. Modify rule using Set-SecOpsOverride Policy
+For detailed syntax and parameter information, see [Set-SecOpsOverrideRule]( https://docs.microsoft.com/en-us/powershell/module/exchange/set-secopsoverriderule?view=exchange-ps).
+### Use PowerShell to remove a SecOps Mailbox policy in the Advanced Delivery Policy
+The following example removes the SecOps Mailbox policy and rule.
+
+```PowerShell
+Remove-SecOpsOverridePolicy -Identity SecOpsOverridePolicy
+```
+For detailed syntax and parameter information, see [Remove-SecOpsOverridePolicy]( https://docs.microsoft.com/en-us/powershell/module/exchange/remove-secopsoverridepolicy?view=exchange-ps). 
+### Use PowerShell to remove a SecOps Mailbox rule in the Advanced Delivery Policy
+The following example removes the SecOps Mailbox rule.
+```PowerShell
+Remove-SecOpsOverrideRule -Identity SecOpsOverrideRule6fed4b63-3563-495d-a481-b24a311f8329
+```
+For detailed syntax and parameter information, see [Remove-SecOpsOverrideRule]( https://docs.microsoft.com/en-us/powershell/module/exchange/remove-secopsoverriderule?view=exchange-ps). 
