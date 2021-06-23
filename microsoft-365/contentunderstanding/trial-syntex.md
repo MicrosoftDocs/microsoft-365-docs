@@ -19,7 +19,7 @@ description: Learn how to plan and run a trial pilot program for SharePoint Synt
 
 # Run a trial of Microsoft SharePoint Syntex
 
-This article describes how to set up a trial pilot program to deploy SharePoint Syntex in your organization. It also recommends best practices for the trial.
+This article describes how to set up and run a trial pilot program to deploy SharePoint Syntex in your organization. It also recommends best practices for the trial.
 
 ## Sign up for a trial
 
