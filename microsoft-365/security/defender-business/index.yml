@@ -1,0 +1,84 @@
+### YamlMime:Landing
+
+title: Microsoft Defender for business
+summary: summary # < 160 chars
+
+metadata:
+  title: Microsoft Defender for business
+  description: description # Required; article description that is displayed in search results. < 160 chars.
+  ms.prod: security
+  ms.technology: dforbiz
+  ms.topic: landing-page
+  author: denisebmsft
+  ms.author: deniseb
+  manager: dansimp
+  ms.date: 06/23/2021
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: About [service]
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What is [service]?
+            url: file1.md
+          - text: linktext2
+            url: file2.md
+      - linkListType: linkListType
+        links:
+          - text: linktext1
+            url: file1.md
+          - text: linktext2
+            url: file2.md
+
+  # Card (optional)
+  - title: Get started
+    linkLists:
+      - linkListType: linkListType
+        links:
+          - text: linktext1
+            url: file1.md
+          - text: linktext2
+            url: file2.md
+      - linkListType: linkListType
+        links:
+          - text: linktext1
+            url: file1.md
+          - text: linktext2
+            url: file2.md
+
+  # Card
+  - title: cardtitle3
+    linkLists:
+      - linkListType: linkListType
+        links:
+          - text: linktext1
+            url: file1.md
+          - text: linktext2
+            url: file2.md
+      - linkListType: linkListType
+        links:
+          - text: linktext1
+            url: file1.md
+          - text: linktext2
+            url: file2.md
+
+  # Card
+  - title: cardtitle4
+    linkLists:
+      - linkListType: linkListType
+        links:
+          - text: linktext1
+            url: file1.md
+          - text: linktext2
+            url: file2.md
+      - linkListType: linkListType
+        links:
+          - text: linktext1
+            url: file1.md
+          - text: linktext2
+            url: file2.md
