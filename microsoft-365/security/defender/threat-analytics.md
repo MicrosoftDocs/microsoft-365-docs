@@ -111,12 +111,6 @@ Each report includes charts that provide an overview of how resilient your organ
 - **Secure configuration status**—shows the number of devices with misconfigured security settings. Apply the recommended security settings to help mitigate the threat. Devices are considered **Secure** if they have applied _all_ the tracked settings.
 - **Vulnerability patching status**—shows the number of vulnerable devices. Apply security updates or patches to address vulnerabilities exploited by the threat.
 
-#### View reports per threat tags
-You can filter the threat report list and view the most relevant reports according to a specific threat tag (category) or a report type. 
-- **Threat tags**—assist you in viewing the most relevant reports according to a specific threat category. For example, all reports related to ransomware.
-- **Report types**—assist you in viewing the most relevant reports according to a specific report type. For example, all reports that cover tools and techniques. 
-- **Filters**—assist you in efficiently reviewing the threat report list and filtering the view based on a specific threat tag or report type. For example, review all threat reports related to ransomware category, or threat reports that cover vulnerabilities.
-
 ##### How does it work?
 The Microsoft Threat Intelligence team has added threat tags to each threat report:
 - Four threat tags are now available:
