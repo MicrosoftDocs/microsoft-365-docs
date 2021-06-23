@@ -65,11 +65,13 @@ of global administrators. | The person who signed your company up for Microsoft 
 You can manage your security policies and settings using one of two methods/locations:
 
 - The Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com))
-- Microsoft Endpoint Manager, which includes Microsoft Intune ([]())
+- Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)). (Endpoint Manager now includes Microsoft Intune)
 
 When you begin to use Microsoft Defender for business, you will be asked whether you want to use MEM or your Microsoft 365 Defender portal. We recommend using the Microsoft 365 Defender portal and its wizard-like experience for managing your devices and security settings. 
-The security policies and settings that you configure in the Microsoft 365 Defender portal are synched to Microsoft Endpoint Manager, enabling you to use the method that you prefer. 
-Microsoft Defender for business is designed to help you manage your company’s endpoint protection capabilities without requiring a lot of time or a security background, making it easier for you to focus on running your business.
+
+- The security policies and settings that you configure in the Microsoft 365 Defender portal are synched to Microsoft Endpoint Manager, enabling you to use the method that you prefer. 
+
+- Microsoft Defender for business is designed to help you manage your company’s endpoint protection capabilities without requiring a lot of time or a security background, making it easier for you to focus on running your business.
 
 View/edit device policies
 Microsoft Defender for business was designed to simplify setup, configuration, and management. Your Microsoft Defender for business plan comes with default policies that are based on Microsoft’s recommendations for security and productivity. You can view and edit your default policies, and you can define new policies. You can also change the order of priority for policies that you create. 
