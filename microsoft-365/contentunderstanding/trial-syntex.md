@@ -40,7 +40,7 @@ You can get the trial version from one of the following sources:
     5.	Select **Get free trial**.
     6.	To confirm the trial, follow the remaining wizard steps.
 
-A user must be a Microsoft 365 global administrator or billing administrator to activate a trial.
+You must be a Microsoft 365 global administrator or billing administrator to activate a trial.
 
 ### Who should be involved in a trial
 
