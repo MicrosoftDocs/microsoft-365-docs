@@ -14,4 +14,15 @@
       items:
       - name: Get started with Microsoft Defender for business
         href: mdb-get-started.md
-    
+    - name: How to use Defender for business
+      items:
+      - name: How to use Microsoft Defender for business
+        href: mdb-use.md
+    - name: Maintenance
+      items:
+      - name:
+        href:
+    - name: Additional information
+      items:
+      - name: 
+        href:
