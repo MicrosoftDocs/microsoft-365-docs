@@ -26,7 +26,7 @@ landingContent:
         links:
           - text: What is Microsoft Defender for business?
             url: mdb-overview.md
-      - linkListType: linkListType
+      - linkListType: reference
         links:
           - text: Compare Defender for business to Microsoft 365 Business Premium
             url: compare-mdb-m365bp.md
