@@ -28,12 +28,7 @@ Admins of Microsoft Defender for Office 365 (or MDO) E5, and MDO P1 and P2 have 
 
 ## Reach the email entity page
 
-Either of the existing [Security & Compliance center](https://protection.office.com) or new [Microsoft 365 Defender](https://security.microsoft.com) will let you see and use the email entity page.
-
-|Center|URL|Navigation|
-|---|---|---|
-|Security & Compliance Center|<https://protection.office.com>|Threat Management \> Explorer|
-|Microsoft 365 Defender portal|<https://security.microsoft.com>|Email & Collaboration \> Explorer|
+The email entity page is available in the Microsoft 365 defender portal (<https://security.microsoft.com>) at **Email & collaboration** \> **Explorer**. Or, to go directly to the **Explorer** page, use <https://security.microsoft.com/threatexplorer>.
 
 In **Explorer**, select the subject of an email you're investigating. A gold bar will display at the top of the email fly-out for that mail. This invitation to the new page, reads 'Try out our new email entity page with enriched data...'. Select to view the new page.
 
@@ -42,7 +37,7 @@ In **Explorer**, select the subject of an email you're investigating. A gold bar
 :::image type="content" source="../../media/email-entities-2-eep.png" alt-text="This graphic of the email entity page focuses on headings that you'll see. Note the email header is displayed here.":::
 
 > [!NOTE]
-> The permissions needed to view and use this page are the same as to view **Explorer**. The admin must be a member of Global admin or global reader, or Security admin or security reader.
+> The permissions needed to view and use this page are the same as to view **Explorer**. The admin must be a member of Global admin or global reader, or Security admin or Security Reader. For more information, see [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).
 
 ## Read the email entity page
 
@@ -79,7 +74,7 @@ There are new capabilities that come with this email entity page. Here's the lis
 Admins can preview emails in Cloud mailboxes, ***if*** the mails are still present in the Cloud. In case of a soft delete (by an admin, or user), or ZAP (to quarantine), emails are no longer present in the Cloud location. In that case, admins won't be able to preview those specific mails. Emails that were dropped, or where delivery failed, never made it into the mailbox. As a result, admins won't be able to preview those emails either.
 
 > [!WARNING]
-> Previewing emails requires a special role called ***Preview*** to be assigned to admins. You can add this role by going to **Permissions & roles** > **Email & collaboration roles** in *security.microsoft.com*, or **Permissions** in *protection.office.com*. Add the ***Preview*** role to any of the role groups, or a copy of a role group that allows admins in your organization to work in **Explorer**.
+> Previewing emails requires a special role called **Preview**. You can add this role in the Microsoft 365 Defender portal as described in [Email & collaboration roles in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md#email--collaboration-roles-in-the-microsoft-365-defender-portal). You might need to create a new **Email & collaboration** role group there and add the **Preview** role to that new role group or add the **Preview** role to a role group that allows admins in your organization to work in **Explorer**.
 
 ### Detonation details
 
@@ -88,6 +83,7 @@ These details are specific to email attachments and URLs. Users can see these de
 Users will see enriched detonation details for known malicious attachments or URLs found in their emails, which got detonated for their specific tenant. It will comprise of Detonation chain, Detonation summary, Screenshot, and Observed behavior details to help customers understand why the attachment or URL was deemed malicious and detonated.
 
 1. *Detonation chain*. A single file or URL detonation can trigger multiple detonations. The Detonation chain tracks the path of detonations, including the original malicious file or URL that caused the verdict, and all other files or URLs effected by the detonation. These URLs or attached files may not be directly present in the email, but including that analysis is important to determining why the file or URL was found to be malicious.  
+
     > [!NOTE]
     > This may show just the top level item if none of the entities linked to it were found to be problematic, or were detonated.
 
@@ -108,7 +104,7 @@ Users will see enriched detonation details for known malicious attachments or UR
 
 *Email details*: Details required for a deeper understanding of email available in the *Analysis* tab.
 
-- *Exchange Transport Rules (ETRs or mail flow rules)*: These rules are applied to a message at the transport layer and take precedence over phish and spam verdicts. These can be only created and modified in the Exchange admin center, but if any ETR applies to a message, the ETR name and GUID will be shown here. Valuable information for tracking purposes.
+- *Exchange transport rules (also known as mail flow rules or ETRs)*: These rules are applied to a message at the transport layer and take precedence over phish and spam verdicts. These can be only created and modified in the Exchange admin center, but if any ETR applies to a message, the ETR name and GUID will be shown here. Valuable information for tracking purposes.
 
 - *System Overrides*: This is a means of making exceptions to the delivery location intended for a message by overriding the delivery location given by system (as per the threat and detection tech).
 

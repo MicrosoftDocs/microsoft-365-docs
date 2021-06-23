@@ -111,8 +111,8 @@ Permissions are granted through certain roles, such as those that are described 
 
 |Task|Role(s) required|
 |---|---|
-|Set up AIR features|One of the following roles: <ul><li>Global Administrator</li><li>Security Administrator</li></ul> <p> These roles can be assigned in [Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) or in the [Microsoft 365 Defender](permissions-in-the-security-and-compliance-center.md).|
-|Start an automated investigation <p> --- or --- <p> Approve or reject recommended actions|One of the following roles, assigned in [Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) or in the [Microsoft 365 Defender](permissions-in-the-security-and-compliance-center.md): <ul><li>Global Administrator</li><li>Security Administrator</li><li>Security Operator</li><li>Security Reader <br> --- and --- </li><li>Search and Purge (this role is assigned only in the [Microsoft 365 Defender](permissions-in-the-security-and-compliance-center.md). You might have to create a new role group there and add the Search and Purge role to that new role group.</li></ul>|
+|Set up AIR features|One of the following roles: <ul><li>Global Administrator</li><li>Security Administrator</li></ul> <p> These roles can be assigned in [Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) or in the [Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).|
+|Start an automated investigation <p> --- or --- <p> Approve or reject recommended actions|One of the following roles, assigned in [Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) or in the [Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md): <ul><li>Global Administrator</li><li>Security Administrator</li><li>Security Operator</li><li>Security Reader <br> --- and --- </li><li>Search and Purge (this role is assigned only in the [Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md). You might need to create a new **Email & collaboration** role group there and add the Search and Purge role to that new role group.</li></ul>|
 
 ## Required licenses
 
@@ -133,7 +133,7 @@ The new and improved Microsoft 365 Defender portal brings together AIR capabilit
 > [!TIP]
 > The new Microsoft 365 Microsoft 365 Defender portal (<https://security.microsoft.com>) replaces the following centers:
 >
-> - Office 365 Security & Compliance Center (<https://protection.office.com>)
+> - Security & Compliance Center (<https://protection.office.com>)
 > - Microsoft Defender Security Center (<https://securitycenter.windows.com>)
 >
 > In addition to the URL changing, there's a new look and feel, designed to give your security team a more streamlined experience, with visibility to more threat detections in one place.
@@ -154,7 +154,7 @@ The following table lists changes and improvements coming to AIR in Microsoft De
 |**Entities** tab|The **Entities** tab has a tab-in-tab style that includes an all-summary view, and the ability to filter by entity type. The **Entities** tab now includes a **Go hunting** option in addition to the **Open in Explorer** option. You can now use either [Explorer](threat-explorer.md) or [advanced hunting](../defender-endpoint/advanced-hunting-overview.md) to find entities and threats, and filter on results.|
 |**Actions** tab|The updated **Actions** tab now includes a **Pending actions** tab and an **Actions history** tab. Actions can be approved (or rejected) in a side pane that opens when you select a pending action.|
 |**Evidence** tab|A new **Evidence** tab shows the key entity findings related to actions. Actions related to each piece of evidence can be approved (or rejected) in a side pane that opens when you select a pending action.|
-|**Action center**|The updated **Action center** ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)) brings together pending and completed actions across email, devices, and identities. To learn more, see Action center. (To learn more, see [The Action center](../defender/m365d-action-center.md).)|
+|**Action center**|The updated **Action center** (<https://security.microsoft.com/action-center>) brings together pending and completed actions across email, devices, and identities. To learn more, see Action center. (To learn more, see [The Action center](../defender/m365d-action-center.md).)|
 |**Incidents** page|The **Incidents** page now correlates multiple investigations together to provide a better consolidated view of investigations. ([Learn more about Incidents](../defender/incidents-overview.md).)|
 |
 

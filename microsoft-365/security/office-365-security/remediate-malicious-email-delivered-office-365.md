@@ -25,14 +25,14 @@ ms.prod: m365-security
 **Applies to**
 - [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
 
-Remediation means taking a prescribed action against a threat. Malicious email sent to your organization can be cleaned up either by the system, through zero-hour auto purge (ZAP), or by security teams through remediation actions like *move to inbox*, *move to junk*, *move to deleted items*, *soft delete*, or *hard delete*. Microsoft Defender for Office 365 P2/E5 enables security teams to remediate threats in email and collaboration functionality through manual and automated investigation.
+Remediation means taking a prescribed action against a threat. Malicious email sent to your organization can be cleaned up either by the system, through zero-hour auto purge (ZAP), or by security teams through remediation actions like *move to inbox*, *move to junk*, *move to deleted items*, *soft delete*, or *hard delete*. Microsoft Defender for Office 365 Plan 2/E5 enables security teams to remediate threats in email and collaboration functionality through manual and automated investigation.
 
 > [!NOTE]
-> To remediate malicious email, security teams need the *search and purge* role assigned to them. Role assignment is done through [permissions in the Microsoft 365 Defender](permissions-in-the-security-and-compliance-center.md).
+> To remediate malicious email, security teams need the *Search and Purge* role assigned to them. Role assignment is done through [permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).
 
 ## What you need to know before you begin
 
-Admins can take required action on emails, but to get those actions approved, they must have the *search and purge* role assigned to them via **Microsoft 365 Defender** \> **Permissions & roles**. Without the "search and purge" role added to one of the role-groups, they won't be able to execute the action.
+Admins can take required action on emails, but to get those actions approved, they must have the *Search and Purge* role assigned to them in the **Email & collaboration** permissions in the Microsoft 365 Defender portal. Without the *Search and purge"*role added to one of the role-groups, they won't be able to execute the action.
 
 ## Manual and automated remediation
 
@@ -116,14 +116,10 @@ Open any remediation item to view details about it, including its name, creation
   Status can be:
 
   - **Started**: Remediation is triggered.
-  
-  - **Queued**: Remediation is queued up for mitigation of emails.
-  
-  - **In progress**: Mitigation is in progress.
-  
-  - **Completed**: Mitigation on all remediable emails either completed successfully or with some failures.
-  
-  - **Failed**: No remediations were successful.
+    - **Queued**: Remediation is queued up for mitigation of emails.
+    - **In progress**: Mitigation is in progress.
+    - **Completed**: Mitigation on all remediable emails either completed successfully or with some failures.
+    - **Failed**: No remediations were successful.
 
   As only remediable emails can be acted on, each email's cleanup is shown as successful or failed. From the total remediable emails, successful and failed mitigations are reported.
 
