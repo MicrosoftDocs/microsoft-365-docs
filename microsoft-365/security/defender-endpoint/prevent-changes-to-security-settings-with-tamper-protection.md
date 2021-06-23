@@ -47,7 +47,7 @@ With tamper protection, malicious apps are prevented from taking actions such as
 
 ### How it works
 
-Tamper protection essentially locks Microsoft Defender Antivirus and prevents your security settings from being changed through apps and methods such as:
+Tamper protection essentially locks Microsoft Defender Antivirus, to its secure default values, and prevents your security settings from being changed through apps and methods such as:
 
 - Configuring settings in Registry Editor on your Windows device
 - Changing settings through PowerShell cmdlets
