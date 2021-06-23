@@ -18,7 +18,7 @@ description:
 
 # Migrate legacy eDiscovery searches and holds to the Microsoft 365 compliance center
 
-The Microsoft 365 compliance center provides an improved experience for eDiscovery usage, including: higher reliability, better performance and many features tailored to eDiscovery workflows including cases to organize your content by matter, review sets to review content and analytics to help cull data for review such as near-duplicate grouping, email threading, themes analysis, and predictive coding.
+The Microsoft 365 compliance center provides an improved experience for eDiscovery usage, including: higher reliability, better performance, and many features tailored to eDiscovery workflows including cases to organize your content by matter, review sets to review content and analytics to help cull data for review such as near-duplicate grouping, email threading, themes analysis, and predictive coding.
 
 To help customers take advantage of the new and improved functionality, this article provides basic guidance on how to migrate In-Place eDiscovery searches and holds from the Exchange admin center to the Microsoft 365 compliance center.
 
@@ -131,11 +131,11 @@ To make sure that everything is set up correctly, go to the Microsoft 365 compli
 
 ![Microsoft 365 Compliance Center eDiscovery](../media/MigrateLegacyeDiscovery7.png)
 
-The case that you created in Step 3 is listed on the **Core eDiscovery** page. Open the case and then notice the hold that you created in Step 4 in listed on the **Holds** tab. You can click the hold to see details, including the number of mailboxes the hold is applied to and the distribution status.
+The case that you created in Step 3 is listed on the **Core eDiscovery** page. Open the case and then notice the hold that you created in Step 4 in listed on the **Hold** tab. You can select the hold to see details on the flyout page, including the number of mailboxes the hold is applied to and the distribution status.
 
 ![eDiscovery holds in the Microsoft 365 compliance center](../media/MigrateLegacyeDiscovery8.png)
 
-The search that you created in Step 7 is listed on the listed on the **Searches** tab of the eDiscovery case.
+The search that you created in Step 7 is listed on the **Searches** tab of the case.
 
 ![eDiscovery case search in the Microsoft 365 compliance center](../media/MigrateLegacyeDiscovery9.png)
 

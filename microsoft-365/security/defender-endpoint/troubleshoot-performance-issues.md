@@ -28,7 +28,7 @@ ms.technology: mde
 
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
  
-If your system is having high CPU usage or performance issues related to the real-time protection service in Microsoft Defender for Endpoint, you can submit a ticket to Microsoft support. Follow the steps in [Collect Microsoft Defender AV diagnostic data](/collect-diagnostic-data.md).
+If your system is having high CPU usage or performance issues related to the real-time protection service in Microsoft Defender for Endpoint, you can submit a ticket to Microsoft support. Follow the steps in [Collect Microsoft Defender Antivirus diagnostic data](collect-diagnostic-data.md).
 
 As an admin, you can also troubleshoot these issues on your own. 
 
@@ -127,7 +127,6 @@ Process Monitor (ProcMon) is an advanced monitoring tool that can show real-time
  
     >[!TIP] 
     >Wait for the problem to be fully reproduced, then take note of the timestamp when the trace started.
-    
 
 10. Once you have two to four minutes of process activity during the high CPU usage condition, stop the capture by selecting the magnifying glass icon.
 
@@ -174,13 +173,13 @@ Alternatively, you can also use the command-line tool *wpr.exe*, which is availa
 
     ![UAC](images/wpt-yes.png)
 
-4. Next, download the [Microsoft Defender for Endpoint analysis](https://github.com/YongRhee-MDE/Scripts/blob/master/MDAV.wprp) profile and save as `WD.wprp` to a folder like `C:\temp`. 
+4. Next, download the [Microsoft Defender for Endpoint analysis](https://github.com/YongRhee-MDE/Scripts/blob/master/MDAV.wprp) profile and save as `MDAV.wprp` to a folder like `C:\temp`. 
      
 5. On the WPR dialog box, select **More options**.
 
     ![Select more options](images/wpr-03.png)
 
-6. Select **Add Profiles...** and browse to the path of the `WD.wprp` file.
+6. Select **Add Profiles...** and browse to the path of the `MDAV.wprp` file.
 
 7. After that, you should see a new profile set under *Custom measurements* named *Microsoft Defender for Endpoint analysis* underneath it.
 
@@ -244,16 +243,16 @@ Alternatively, you can also use the command-line tool *wpr.exe*, which is availa
 
 The command-line tool *wpr.exe* is part of the operating system starting with Windows 8. To collect a WPR trace using the command-line tool wpr.exe:
 
-1. Download **[Microsoft Defender for Endpoint analysis](https://github.com/YongRhee-MDE/Scripts/blob/master/MDAV.wprp)** profile for performance traces to a file named `WD.wprp` in a local directory such as `C:\traces`.
+1. Download **[Microsoft Defender for Endpoint analysis](https://github.com/YongRhee-MDE/Scripts/blob/master/MDAV.wprp)** profile for performance traces to a file named `MDAV.wprp` in a local directory such as `C:\traces`.
 
-3. Right-click the **Start Menu** icon and select **Windows Powershell (Admin)** or **Command Prompt (Admin)** to open an Admin command prompt window.
+3. Right-click the **Start Menu** icon and select **Windows PowerShell (Admin)** or **Command Prompt (Admin)** to open an Admin command prompt window.
 
 4. When the User Account Control dialog box appears, select **Yes**.
 
 5. At the elevated prompt, run the following command to start a Microsoft Defender for Endpoint performance trace:
 
     ```console
-    wpr.exe -start C:\traces\WD.wprp!WD.Verbose -filemode
+    wpr.exe -start C:\traces\MDAV.wprp!WD.Verbose -filemode
     ```
     
     >[!WARNING]
@@ -276,5 +275,5 @@ The command-line tool *wpr.exe* is part of the operating system starting with Wi
 
 ## See also
 
-- [Collect Microsoft Defender AV diagnostic data](collect-diagnostic-data.md)
+- [Collect Microsoft Defender Antivirus diagnostic data](collect-diagnostic-data.md)
 - [Configure and validate exclusions for Microsoft Defender Antivirus scans](configure-exclusions-microsoft-defender-antivirus.md)

@@ -39,47 +39,59 @@ The embedded Defender for Endpoint sensor runs in system context using the Local
 The WinHTTP configuration setting is independent of the Windows Internet (WinINet) Internet browsing proxy settings and can only discover a proxy server by using the following discovery methods:
 
 - Auto-discovery methods:
+
   - Transparent proxy
+
   - Web Proxy Auto-discovery Protocol (WPAD)
 
     > [!NOTE]
     > If you're using Transparent proxy or WPAD in your network topology, you don't need special configuration settings. For more information on Defender for Endpoint URL exclusions in the proxy, see [Enable access to Defender for Endpoint service URLs in the proxy server](#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server).
 
 - Manual static proxy configuration:
+
   - Registry based configuration
+
   - WinHTTP configured using netsh command – Suitable only for desktops in a stable topology (for example: a desktop in a corporate network behind the same proxy)
 
 ## Configure the proxy server manually using a registry-based static proxy
 
-Configure a registry-based static proxy to allow only Defender for Endpoint sensor to report diagnostic data and communicate with Defender for Endpoint services if a computer is not be permitted to connect to the Internet.
+Configure a registry-based static proxy to allow only Defender for Endpoint sensor to report diagnostic data and communicate with Defender for Endpoint services if a computer is not permitted to connect to the Internet.
 
 > [!NOTE]
-> - When using this option on Windows 10 or Windows Server 2019, it is recommended to have the following (or later) build and cumulative update rollup:</br>
-> Windows 10, version 1909 - https://support.microsoft.com/kb/4601380</br>
-> Windows 10, version 2004 - https://support.microsoft.com/kb/4601382</br>
-> Windows 10, version 20H2 - https://support.microsoft.com/kb/4601382</br>
-> These updates improve the connectivity and reliability of the CnC (Command and Control) channel.</br>
+> When using this option on Windows 10 or Windows Server 2019, it is recommended to have the following (or later) build and cumulative update rollup:
+>
+> - Windows 10, version 1809 or Windows Server 2019 - https://support.microsoft.com/kb/5001384
+> - Windows 10, version 1909 - https://support.microsoft.com/kb/4601380
+> - Windows 10, version 2004 - https://support.microsoft.com/kb/4601382
+> - Windows 10, version 20H2 - https://support.microsoft.com/kb/4601382
+>
+> These updates improve the connectivity and reliability of the CnC (Command and Control) channel.
 
 The static proxy is configurable through Group Policy (GP). The group policy can be found under:
 
-- Administrative Templates > Windows Components > Data Collection and Preview Builds > Configure Authenticated Proxy usage for the Connected User Experience and Telemetry Service
-  - Set it to **Enabled** and select **Disable Authenticated Proxy usage**:
+- **Administrative Templates > Windows Components > Data Collection and Preview Builds > Configure Authenticated Proxy usage for the Connected User Experience and Telemetry Service**
+
+  Set it to **Enabled** and select **Disable Authenticated Proxy usage**.
+
   ![Image of Group Policy setting1](images/atp-gpo-proxy1.png)
+
 - **Administrative Templates > Windows Components > Data Collection and Preview Builds > Configure connected user experiences and telemetry**:
-  - Configure the proxy:<br>
-    ![Image of Group Policy setting2](images/atp-gpo-proxy2.png)
 
-    The policy sets two registry values `TelemetryProxyServer` as REG_SZ and `DisableEnterpriseAuthProxy` as REG_DWORD under the registry key `HKLM\Software\Policies\Microsoft\Windows\DataCollection`.
+  Configure the proxy
 
-    The registry value `TelemetryProxyServer` takes the following string format:
+  ![Image of Group Policy setting2](images/atp-gpo-proxy2.png)
 
-    ```text
-    <server name or ip>:<port>
-    ```
+  The policy sets two registry values, `TelemetryProxyServer` as REG_SZ and `DisableEnterpriseAuthProxy` as REG_DWORD, under the registry key `HKLM\Software\Policies\Microsoft\Windows\DataCollection`.
 
-    For example: 10.0.0.6:8080
+  The registry value `TelemetryProxyServer` takes the following string format:
 
-    The registry value `DisableEnterpriseAuthProxy` should be set to 1.
+  ```text
+  <server name or ip>:<port>
+  ```
+
+  For example: 10.0.0.6:8080
+
+  The registry value `DisableEnterpriseAuthProxy` should be set to 1.
 
 ## Configure the proxy server manually using netsh command
 
@@ -91,9 +103,9 @@ Use netsh to configure a system-wide static proxy.
 
 1. Open an elevated command-line:
 
-    a. Go to **Start** and type **cmd**.
+   1. Go to **Start** and type **cmd**.
 
-    b. Right-click **Command prompt** and select **Run as administrator**.
+   1. Right-click **Command prompt** and select **Run as administrator**.
 
 2. Enter the following command and press **Enter**:
 
@@ -101,15 +113,15 @@ Use netsh to configure a system-wide static proxy.
    netsh winhttp set proxy <proxy>:<port>
    ```
 
-   For example: netsh winhttp set proxy 10.0.0.6:8080
+   For example: `netsh winhttp set proxy 10.0.0.6:8080`
 
-To reset the winhttp proxy, enter the following command and press **Enter**
+To reset the winhttp proxy, enter the following command and press **Enter**:
 
 ```PowerShell
 netsh winhttp reset proxy
 ```
 
-See [Netsh Command Syntax, Contexts, and Formatting](https://docs.microsoft.com/windows-server/networking/technologies/netsh/netsh-contexts) to learn more.
+See [Netsh Command Syntax, Contexts, and Formatting](/windows-server/networking/technologies/netsh/netsh-contexts) to learn more.
 
 ## Enable access to Microsoft Defender for Endpoint service URLs in the proxy server
 
@@ -118,7 +130,7 @@ If a proxy or firewall is blocking all traffic by default and allowing only spec
 The following downloadable spreadsheet lists the services and their associated URLs that your network must be able to connect to. You should ensure that there are no firewall or network filtering rules that would deny access to these URLs, or you may need to create an *allow* rule specifically for them.
 
 
-|**Spreadsheet of domains list**|**Description**|
+| Spreadsheet of domains list | Description |
 |:-----|:-----|
 |![Thumb image for Microsoft Defender for Endpoint URLs spreadsheet](images/mdatp-urls.png)<br/>  | Spreadsheet of specific DNS records for service locations, geographic locations, and OS. <br><br>[Download the spreadsheet here.](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx) 
 
@@ -130,11 +142,11 @@ If a proxy or firewall has HTTPS scanning (SSL inspection) enabled, exclude the 
 
 
 > [!NOTE]
-> URLs that include v20 in them are only needed if you have Windows 10 devices running version 1803 or later. For example, ```us-v20.events.data.microsoft.com``` is needed for a Windows 10 device running version 1803 or later and onboarded to US Data Storage region.
+> URLs that include v20 in them are only needed if you have Windows 10 devices running version 1803 or later. For example, `us-v20.events.data.microsoft.com` is needed for a Windows 10 device running version 1803 or later and onboarded to US Data Storage region.
 
 
 > [!NOTE]
-> If you are using Microsoft Defender Antivirus in your environment, see [Configure network connections to the Microsoft Defender Antivirus cloud service](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus).
+> If you are using Microsoft Defender Antivirus in your environment, see [Configure network connections to the Microsoft Defender Antivirus cloud service](/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus).
 
 If a proxy or firewall is blocking anonymous traffic, as Defender for Endpoint sensor is connecting from system context, make sure anonymous traffic is permitted in the previously listed URLs.
 
@@ -165,14 +177,14 @@ Please see the following guidance to eliminate the wildcard (*) requirement for 
 
 4.	Check the Microsoft Defender for Endpoint URLs list for the complete list of requirements for your region (please refer to the Service URLs [Spreadsheet](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)).
 
-![Image of administrator in Windows PowerShell](images/admin-powershell.png)
+    ![Image of administrator in Windows PowerShell](images/admin-powershell.png)
 
 The wildcards (*) used in *.ods.opinsights.azure.com, *.oms.opinsights.azure.com, and *.agentsvc.azure-automation.net URL endpoints can be replaced with your specific Workspace ID. The Workspace ID is specific to your environment and workspace and can be found in the Onboarding section of your tenant within the Microsoft Defender Security Center portal.
 
 The *.blob.core.windows.net URL endpoint can be replaced with the URLs shown in the “Firewall Rule: *.blob.core.windows.net” section of the test results. 
 
 > [!NOTE]
-> In the case of onboarding via Azure Security Center (ASC), multiple workspaces maybe used. You will need to perform the TestCloudConnection.exe procedure above on an onboarded machine from each workspace (to determine if there are any changes to the *.blob.core.windows.net URLs between the workspaces).
+> In the case of onboarding via Azure Defender, multiple workspaces maybe used. You will need to perform the TestCloudConnection.exe procedure above on an onboarded machine from each workspace (to determine if there are any changes to the *.blob.core.windows.net URLs between the workspaces).
 
 ## Verify client connectivity to Microsoft Defender for Endpoint service URLs
 
@@ -184,9 +196,9 @@ Verify the proxy configuration completed successfully, that WinHTTP can discover
 
 3. Open an elevated command-line:
 
-    a. Go to **Start** and type **cmd**.
+   1. Go to **Start** and type **cmd**.
 
-    b.  Right-click **Command prompt** and select **Run as administrator**.
+   1.  Right-click **Command prompt** and select **Run as administrator**.
 
 4. Enter the following command and press **Enter**:
 
@@ -194,7 +206,7 @@ Verify the proxy configuration completed successfully, that WinHTTP can discover
     HardDrivePath\MDATPClientAnalyzer.cmd
     ```
 
-    Replace *HardDrivePath* with the path where the MDATPClientAnalyzer tool was downloaded to, for example
+    Replace *HardDrivePath* with the path where the MDATPClientAnalyzer tool was downloaded to, for example:
 
     ```PowerShell
     C:\Work\tools\MDATPClientAnalyzer\MDATPClientAnalyzer.cmd
@@ -202,7 +214,8 @@ Verify the proxy configuration completed successfully, that WinHTTP can discover
 
 5. Extract the *MDATPClientAnalyzerResult.zip* file created by tool in the folder used in the *HardDrivePath*.
 
-6. Open *MDATPClientAnalyzerResult.txt* and verify that you have performed the proxy configuration steps to enable server discovery and access to the service URLs. <br><br>
+6. Open *MDATPClientAnalyzerResult.txt* and verify that you have performed the proxy configuration steps to enable server discovery and access to the service URLs.
+
    The tool checks the connectivity of Defender for Endpoint service URLs that Defender for Endpoint client is configured to interact with. It then prints the results into the *MDATPClientAnalyzerResult.txt* file for each URL that can potentially be used to communicate with the Defender for Endpoint services. For example:
 
    ```text
@@ -214,12 +227,12 @@ Verify the proxy configuration completed successfully, that WinHTTP can discover
    5 - Command line proxy: Doesn't exist
    ```
 
-If at least one of the connectivity options returns a (200) status, then the Defender for Endpoint client can communicate with the tested URL properly using this connectivity method. <br><br>
+If at least one of the connectivity options returns a (200) status, then the Defender for Endpoint client can communicate with the tested URL properly using this connectivity method.
 
 However, if the connectivity check results indicate a failure, an HTTP error is displayed (see HTTP Status Codes). You can then use the URLs in the table shown in [Enable access to Defender for Endpoint service URLs in the proxy server](#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server). The URLs you'll use will depend on the region selected during the onboarding procedure.
 
 > [!NOTE]
-> The Connectivity Analyzer tool is not compatible with ASR rule [Block process creations originating from PSExec and WMI commands](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction#attack-surface-reduction-rules). You will need to temporarily disable this rule to run the connectivity tool.
+> The Connectivity Analyzer tool is not compatible with ASR rule [Block process creations originating from PSExec and WMI commands](/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction#attack-surface-reduction-rules). You will need to temporarily disable this rule to run the connectivity tool.
 
 
 > [!NOTE]

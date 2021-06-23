@@ -235,7 +235,5 @@ These are the definitions for the terms you encountered during this procedure.
 ## For more information
 
 - [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)
-    
 - [Create a custom sensitive information type](create-a-custom-sensitive-information-type.md)
-    
-- [Overview of data loss prevention policies](data-loss-prevention-policies.md)
+- [Learn about data loss prevention](dlp-learn-about-dlp.md)

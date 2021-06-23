@@ -61,7 +61,7 @@ You can choose to renew or extend the license at any point in time. When accessi
 ## You are not authorized to access the portal
 
 If you receive a **You are not authorized to access the portal**, be aware that Microsoft Defender for Endpoint is a security monitoring, incident investigation and response product, and as such, access to it is restricted and controlled by the user.
-For more information, see, [**Assign user access to the portal**](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/assign-portal-access-windows-defender-advanced-threat-protection).
+For more information, see, [**Assign user access to the portal**](/windows/threat-protection/windows-defender-atp/assign-portal-access-windows-defender-advanced-threat-protection).
 
 ![Image of not authorized to access portal](images/atp-not-authorized-to-access-portal.png)
 

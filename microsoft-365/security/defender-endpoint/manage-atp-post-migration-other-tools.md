@@ -1,7 +1,7 @@
 ---
 title: Manage Microsoft Defender for Endpoint using PowerShell, WMI, and MPCmdRun.exe
 description: Learn how to manage Microsoft Defender for Endpoint with PowerShell, WMI, and MPCmdRun.exe
-keywords: post-migration, manage, operations, maintenance, utilization, PowerShell, WMI, MPCmdRun.exe, windows defender advanced threat protection, atp, edr
+keywords: post-migration, manage, operations, maintenance, utilization, PowerShell, WMI, MPCmdRun.exe, Microsoft Defender for Endpoint, edr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -33,8 +33,8 @@ ms.reviewer: chventou
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 > [!NOTE]
-> We recommend using [Microsoft Endpoint Manager](https://docs.microsoft.com/mem) to manage your organization's threat protection features for devices (also referred to as endpoints). Endpoint Manager includes [Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune) and [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/mem/configmgr/core/understand/introduction). 
-> - [Learn more about Endpoint Manager](https://docs.microsoft.com/mem/endpoint-manager-overview)
+> We recommend using [Microsoft Endpoint Manager](/mem) to manage your organization's threat protection features for devices (also referred to as endpoints). Endpoint Manager includes [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) and [Microsoft Endpoint Configuration Manager](/mem/configmgr/core/understand/introduction). 
+> - [Learn more about Endpoint Manager](/mem/endpoint-manager-overview)
 > - [Co-manage Microsoft Defender for Endpoint on Windows 10 devices with Configuration Manager and Intune](manage-atp-post-migration-intune.md)
 > - [Manage Microsoft Defender for Endpoint with Intune](manage-atp-post-migration-intune.md) 
 
@@ -49,22 +49,22 @@ You can use PowerShell to manage Microsoft Defender Antivirus, exploit protectio
 
 |Task  |Resources to learn more  |
 |---------|---------|
-|**Manage Microsoft Defender Antivirus** <br/><br/>*View status of antimalware protection, configure preferences for antivirus scans & updates, and make other changes to your antivirus protection.*    |[Use PowerShell cmdlets to configure and manage Microsoft Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/use-powershell-cmdlets-microsoft-defender-antivirus)  <br/><br/>[Use PowerShell cmdlets to enable cloud-delivered protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus#use-powershell-cmdlets-to-enable-cloud-delivered-protection)       |
-|**Configure exploit protection** to mitigate threats on your organization's devices<br/><br/> *We recommend using exploit protection in [audit mode](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/evaluate-exploit-protection#powershell) at first. That way, you can see how exploit protection affects apps your organization is using.*     | [Customize exploit protection](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/customize-exploit-protection)<br/><br/>[PowerShell cmdlets for exploit protection](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/customize-exploit-protection#powershell-reference)        |
-|**Configure attack surface reduction rules** with PowerShell <br/><br/>*You can use PowerShell to exclude files and folders from attack surface reduction rules.* |[Customize attack surface reduction rules: Use PowerShell to exclude files & folders](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/customize-attack-surface-reduction#use-powershell-to-exclude-files-and-folders)<br/><br/>Also, see [António Vasconcelo's graphical user interface tool for setting attack surface reduction rules with PowerShell](https://github.com/anvascon/MDATP_PoSh_Scripts/tree/master/ASR%20GUI). |
-|**Enable Network Protection** with PowerShell <br/><br/>*You can use PowerShell to enable Network Protection.* |[Turn on Network Protection with PowerShell](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/enable-network-protection#powershell) |
-|**Configure controlled folder access** to protect against ransomware <br/><br/>*[Controlled folder access](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/controlled-folders) is also referred to as antiransomware protection.* |[Enable controlled folder access with PowerShell](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/enable-controlled-folders#powershell) |
-|**Configure Microsoft Defender Firewall** to block unauthorized network traffic flowing into or out of your organization's devices |[Microsoft Defender Firewall with Advanced Security Administration using Windows PowerShell](https://docs.microsoft.com/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-administration-with-windows-powershell) |
-|**Configure encryption and BitLocker** to protect information on your organization's devices running Windows |[BitLocker PowerShell reference guide](https://docs.microsoft.com/powershell/module/bitlocker/?view=win10-ps&preserve-view=true) |
+|**Manage Microsoft Defender Antivirus** <br/><br/>*View status of antimalware protection, configure preferences for antivirus scans & updates, and make other changes to your antivirus protection.*    |[Use PowerShell cmdlets to configure and manage Microsoft Defender Antivirus](/windows/security/threat-protection/microsoft-defender-antivirus/use-powershell-cmdlets-microsoft-defender-antivirus)  <br/><br/>[Use PowerShell cmdlets to enable cloud-delivered protection](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus#use-powershell-cmdlets-to-enable-cloud-delivered-protection)       |
+|**Configure exploit protection** to mitigate threats on your organization's devices<br/><br/> *We recommend using exploit protection in [audit mode](/microsoft-365/security/defender-endpoint/evaluate-exploit-protection#powershell) at first. That way, you can see how exploit protection affects apps your organization is using.*     | [Customize exploit protection](/microsoft-365/security/defender-endpoint/customize-exploit-protection)<br/><br/>[PowerShell cmdlets for exploit protection](/microsoft-365/security/defender-endpoint/customize-exploit-protection#powershell-reference)        |
+|**Configure attack surface reduction rules** with PowerShell <br/><br/>*You can use PowerShell to exclude files and folders from attack surface reduction rules.* |[Customize attack surface reduction rules: Use PowerShell to exclude files & folders](/microsoft-365/security/defender-endpoint/customize-attack-surface-reduction#use-powershell-to-exclude-files-and-folders)<br/><br/>Also, see [António Vasconcelo's graphical user interface tool for setting attack surface reduction rules with PowerShell](https://github.com/anvascon/MDATP_PoSh_Scripts/tree/master/ASR%20GUI). |
+|**Enable Network Protection** with PowerShell <br/><br/>*You can use PowerShell to enable Network Protection.* |[Turn on Network Protection with PowerShell](/microsoft-365/security/defender-endpoint/enable-network-protection#powershell) |
+|**Configure controlled folder access** to protect against ransomware <br/><br/>*[Controlled folder access](/microsoft-365/security/defender-endpoint/controlled-folders) is also referred to as antiransomware protection.* |[Enable controlled folder access with PowerShell](/microsoft-365/security/defender-endpoint/enable-controlled-folders#powershell) |
+|**Configure Microsoft Defender Firewall** to block unauthorized network traffic flowing into or out of your organization's devices |[Microsoft Defender Firewall with Advanced Security Administration using Windows PowerShell](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-administration-with-windows-powershell) |
+|**Configure encryption and BitLocker** to protect information on your organization's devices running Windows |[BitLocker PowerShell reference guide](/powershell/module/bitlocker/?view=win10-ps&preserve-view=true) |
 
 ## Configure Microsoft Defender for Endpoint with Windows Management Instrumentation (WMI)
 
-WMI is a scripting interface that allows you to retrieve, modify, and update settings. To learn more, see [Using WMI](https://docs.microsoft.com/windows/win32/wmisdk/using-wmi). 
+WMI is a scripting interface that allows you to retrieve, modify, and update settings. To learn more, see [Using WMI](/windows/win32/wmisdk/using-wmi). 
 
 |Task  |Resources to learn more  |
 |---------|---------|
-|**Enable cloud-delivered protection** on a device    |[Use Windows Management Instruction (WMI) to enable cloud-delivered protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus#use-windows-management-instruction-wmi-to-enable-cloud-delivered-protection)       |
-|**Retrieve, modify, and update settings** for Microsoft Defender Antivirus     | [Use WMI to configure and manage Microsoft Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/use-wmi-microsoft-defender-antivirus)<br/><br/>[Review the list of available WMI classes and example scripts](https://docs.microsoft.com/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal) <br/><br/>Also see the archived [Windows Defender WMIv2 Provider reference information](https://docs.microsoft.com/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal?redirectedfrom=MSDN)   |
+|**Enable cloud-delivered protection** on a device    |[Use Windows Management Instruction (WMI) to enable cloud-delivered protection](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus#use-windows-management-instruction-wmi-to-enable-cloud-delivered-protection)       |
+|**Retrieve, modify, and update settings** for Microsoft Defender Antivirus     | [Use WMI to configure and manage Microsoft Defender Antivirus](/windows/security/threat-protection/microsoft-defender-antivirus/use-wmi-microsoft-defender-antivirus)<br/><br/>[Review the list of available WMI classes and example scripts](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal) <br/><br/>Also see the archived [Windows Defender WMIv2 Provider reference information](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal?redirectedfrom=MSDN)   |
 
 
 ## Configure Microsoft Defender for Endpoint with Microsoft Malware Protection Command-Line Utility (MPCmdRun.exe)
@@ -73,7 +73,7 @@ On an individual device, you can run a scan, start diagnostic tracing, check for
 
 |Task  |Resources to learn more  |
 |---------|---------|
-|**Manage Microsoft Defender Antivirus**  |[Configure and manage Microsoft Defender Antivirus with mpcmdrun.exe](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/command-line-arguments-microsoft-defender-antivirus)        |
+|**Manage Microsoft Defender Antivirus**  |[Configure and manage Microsoft Defender Antivirus with mpcmdrun.exe](/windows/security/threat-protection/microsoft-defender-antivirus/command-line-arguments-microsoft-defender-antivirus)        |
 
 ## Configure your Microsoft Defender Security Center
 
@@ -81,15 +81,15 @@ If you haven't already done so, **configure your Microsoft Defender Security Cen
 
 You can also configure whether and what features end users can see in the Microsoft Defender Security Center.
 
-- [Overview of the Microsoft Defender Security Center](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/use)
+- [Overview of the Microsoft Defender Security Center](/microsoft-365/security/defender-endpoint/use)
 
-- [Endpoint protection: Microsoft Defender Security Center](https://docs.microsoft.com/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-security-center)
+- [Endpoint protection: Microsoft Defender Security Center](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-security-center)
 
 
 ## Next steps
 
-- [Get an overview of threat and vulnerability management](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Get an overview of threat and vulnerability management](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 
-- [Visit the Microsoft Defender Security Center security operations dashboard](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/security-operations-dashboard)
+- [Visit the Microsoft Defender Security Center security operations dashboard](/microsoft-365/security/defender-endpoint/security-operations-dashboard)
 
 - [Manage Microsoft Defender for Endpoint with Intune](manage-atp-post-migration-intune.md)

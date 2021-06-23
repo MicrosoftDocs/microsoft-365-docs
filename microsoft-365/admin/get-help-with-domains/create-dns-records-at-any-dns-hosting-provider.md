@@ -16,7 +16,7 @@ ms.collection:
 - Adm_O365_Setup
 search.appverid:
 - MET150
-description: "Learn to verify your domain and create DNS records at any DNS hosting provider for Microsoft 365."
+description: "Connect a domain at any DNS hosting provider to Microsoft 365 by verifying your domain and updating the DNS records in your registrar’s account."
 ms.custom: 
 - okr_smb
 - AdminSurgePortfolio
@@ -161,3 +161,9 @@ To add these values, create a single string, separating the values with spaces a
 
 - Example 1: `100 1 443 sipdir.online.lync.com.`
 - Example 2: `100 1 443 sipdir.online.lync.com`
+
+## Related content
+
+[Change nameservers to set up Microsoft 365 with any domain registrar](change-nameservers-at-any-domain-registrar.md) (article)\
+[Find and fix issues after adding your domain or DNS records](find-and-fix-issues.md) (article)\
+[Manage domains](index.yml) (link page)
