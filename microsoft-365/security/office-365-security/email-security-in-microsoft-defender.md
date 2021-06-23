@@ -38,7 +38,7 @@ This article explains how to view and investigate malware and phishing attempts 
 
 ## View malware detected in email
 
-To see malware detected in email sorted by Microsoft 365 technology, use the [Email > Malware](threat-explorer-views.md#email--malware) view of Explorer (or Real-time detections). Malware is the default view, so it might be selected as soon as you open Explorer.
+To see malware detected in email sorted by Microsoft 365 technology, use the [**Email \> Malware**](threat-explorer-views.md#email--malware) view of Explorer (or Real-time detections). Malware is the default view, so it might be selected as soon as you open Explorer.
 
 1. In the Microsoft 365 Defender portal (<https://security.microsoft.com>), choose **Email & collaboration** \> **Explorer** (or **Real-time detections**; This example uses Explorer).
 
