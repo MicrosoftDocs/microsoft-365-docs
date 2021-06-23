@@ -61,31 +61,31 @@ Here's description of the key eDiscovery capabilities.
 
 - **Legal hold notifications**. Manage the process of communicating with case custodians. A legal hold notification instructs custodians to preserve content that's relevant to the case. You can track the notices that have been received, read, and acknowledged by custodians. The communications workflow in Advanced eDiscovery allows you to create and send initial notifications, reminders, and escalations if custodians fail to acknowledge a hold notification.
 
-- **Advanced indexing**. When you add custodial and non-custodian data sources to a case, the associated content locations are re-indexed (in a process called *Advanced indexing*) so that any content that was deemed as partially indexed is reprocessed to make it fully searchable.
+- **Advanced indexing**. When you add custodial and non-custodian data sources to a case, the associated content locations are re-indexed (in a process called *Advanced indexing*) so that any content that was deemed as partially indexed is reprocessed to make it fully searchable when you collect data for an investigation.
 
 - **Error remediation**. Fix processing errors using a process called *error remediation*. Error remediation allows you to rectify data issues that prevent Advanced eDiscovery from properly processing the content during Advanced indexing. For example, files that are password protected can't be processed since the files are locked or encrypted. Using error remediation, you can download files with errors, remove the password protection, and then upload the remediated files.
 
-- **Support for modern attachments and SharePoint versions**. 
+- **Review sets**. Add relevant data to a review set. A review set is a secure, Microsoft-provided Azure Storage location in the Microsoft cloud. When you add data to a review set, the collected items are copied from their original content location to the review set. Review sets provide a static, known set of content that you can search, filter, tag, analyze, and predict relevancy using predictive coding models. You can also track and report on what content gets added to the review set.
 
-- **Optical character recognition**. 
+- **Support for cloud attachments and SharePoint versions**. When you add content to a review set, you have the option to include cloud attachments or linked files. This means that the target file of a cloud attachment or linked file is added to the review set. You also have the option to add all version of a SharePoint document to a review set.
 
-- **Collection statistics and reports**. 
+- **Optical character recognition (OCR)**. When content is added to a review set, OCR functionality extracts text from images, and includes the image text with the content that's added to a review set. This lets you search for image text when you query the content in the review set.
 
-- **Review sets**. 
+- **Conversation reconstruction**. When chat messages from Teams and Yammer conversations are added to a review set, you have the option to reconstruct the entire conversation thread. This means that the chat conversation that contains items that match the collection criteria is reconstructed. This lets you review chat items in the context of the back and forth conversation.
 
-- **Conversation reconstruction**. 
+- **Collection statistics and reports**. After you create a draft collection or commit a commit a collection to a review set, you can view a rich set of statistics on the retrieved items, such as the content locations that contain the most items that matched the search criteria and the number of items returned by the search query. You can also preview a subset of the results. Additionally, this includes the number of child items that were extracted from their parent items and added as separate items to the review set.
 
-- **Review set queries and filtering**. 
+- **Review set queries and filtering**. After content is added to a review set you run search queries using a rich set of search conditions and document metadata properties. You can also filters to display only the set of items that match the filters you apply. Review set queries and filters help you cull unnecessary content from the review and help you identify the documents that are most relevant to your investigation.
 
-- **Tagging and annotations**. 
-
-- **Document metadata**. 
+- **Tagging, annotations, and redactions**. Tags also help you cull non-relevant content and identify the most relevant content. When experts, attorneys, or other users review content in a review set, their opinions related to the content can be captured by using tags. For example, if the intent is to cull unnecessary content, a user can tag documents with a tag such as "non-responsive". After content has been reviewed and tagged, a review set query can be created to exclude any content tagged as "non-responsive". This process eliminates the non-responsive content from subsequent steps in the eDiscovery workflow. Reviewers can also make annotations to review set documents and redact privileged or other sensitive information. Annotations and redactions will persist when content is exported from a  review set.
 
 - **Analytics such as email threading, themes, and near-duplicate detection**. 
 
 - **Predictive coding models**. 
 
-- **Job management**. 
+- **Computed document metadata**. 
+
+- **Transparency of long-running jobs**. 
 
 - **Export to customer Azure Storage location**. 
 
