@@ -31,7 +31,7 @@ ms.technology: m365d
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
 > [!NOTE]
-> This functionality requires Microsoft Defender Antivirus version 4.18.2105.4 or newer.
+> This functionality requires Microsoft Defender Antivirus version 4.18.2106.X or newer.
 
 To create your own custom gradual rollout process for Defender updates, you can use Group Policy, Microsoft Endpoint Manager, and PowerShell.
 
