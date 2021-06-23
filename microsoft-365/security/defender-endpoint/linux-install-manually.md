@@ -345,6 +345,21 @@ Download the onboarding package from Microsoft Defender Security Center:
         mdatp threat list
         ```
 
+## Experience Linux endpoint detection and response (EDR) capabilities with simulated attacks
+
+To test out the functionalities of EDR for Linux, follow the steps below to simulate a detection on your Linux server and investigate the case. 
+
+1.	Verify that the onboarded Linux server appears in Microsoft Defender Security Center. If this is the first onboarding of the machine, it can take up to 20 minutes until it appears. 
+
+2.	Download and extract the [script file](aka.ms/LinuxDIY) to an onboarded Linux server and run the following command: `./mde_linux_edr_diy.sh`
+
+3.	After a few minutes, a detection should be raised in Microsoft Defender Security Center.
+
+4.	Look at the alert details, machine timeline, and perform your typical investigation steps.
+
+
+
+
 ## Installer script
 
 Alternatively, you can use an automated [installer bash script](https://github.com/microsoft/mdatp-xplat/blob/master/linux/installation/mde_installer.sh) provided in our [public GitHub repository](https://github.com/microsoft/mdatp-xplat/).
