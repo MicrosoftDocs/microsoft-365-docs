@@ -71,7 +71,7 @@ You can turn on Customer Lockbox controls in the Microsoft 365 admin center. Whe
 
 2. Choose **Settings > Org Settings**.
 
-3. Select **Security & Privacy** then click on **Customer Lockbox** in the left column and check the checkbox besides text "Require approval for all data access request" and save changes to turn the feature on.
+3. Select **Security & Privacy**, then select **Customer Lockbox** in the left column. Check the **Require approval for all data access requests** checkbox and save the changes to turn on the feature.
 
     ![Require approval for Customer Lockbox](../media/CustomerLockbox4-new.png)
 
