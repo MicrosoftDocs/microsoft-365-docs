@@ -111,26 +111,6 @@ Each report includes charts that provide an overview of how resilient your organ
 - **Secure configuration status**—shows the number of devices with misconfigured security settings. Apply the recommended security settings to help mitigate the threat. Devices are considered **Secure** if they have applied _all_ the tracked settings.
 - **Vulnerability patching status**—shows the number of vulnerable devices. Apply security updates or patches to address vulnerabilities exploited by the threat.
 
-#### View reports per threat tags
-You can filter the threat report list and view the most relevant reports according to a specific threat tag (category) or a report type. 
-- **Threat tags**—assist you in viewing the most relevant reports according to a specific threat category. For example, all reports related to ransomware.
-- **Report types**—assist you in viewing the most relevant reports according to a specific report type. For example, all reports that cover tools and techniques. 
-- **Filters**—assist you in efficiently reviewing the threat report list and filtering the view based on a specific threat tag or report type. For example, review all threat reports related to ransomware category, or threat reports that cover vulnerabilities.
-
-##### How does it work?
-The Microsoft Threat Intelligence team has added threat tags to each threat report:
-- Four threat tags are now available:
-  - Ransomware
-  - Phishing
-  - Vulnerability
-  - Activity group
-- Threat tags are presented at the top of the threat analytics page, with counters for the number of available reports under each tag.
-    ![threat tags](../../media/threat-analytics/ta-threattags-mtp.png)
-- The list can also be sorted by threat tags:
-    ![lists](../../media/threat-analytics//ta-taglist-mtp.png)
-- Filters are available per threat tag and report type:
-    ![filters](../../media/threat-analytics/ta-threattag-filters-mtp.png)
-
 ### Analyst report: Get expert insight from Microsoft security researchers
 In the **Analyst report** section, read through the detailed expert write-up. Most reports provide detailed descriptions of attack chains, including tactics and techniques mapped to the MITRE ATT&CK framework, exhaustive lists of recommendations, and powerful [threat hunting](advanced-hunting-overview.md) guidance.
 
