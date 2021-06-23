@@ -85,6 +85,7 @@ One of the following administrator roles are required to see app governance page
 - Compliance Reader (read-only)
 - Global Reader
 - Security Administrator
+- Security Operator
 - Security Reader (read-only)
 
 Here are the capabilities for each role.
