@@ -27,8 +27,8 @@ You might be wondering how Microsoft 365 Business Premium compares to Microsoft 
 |:---|:---|:---|
 | Antispam protection | Yes (for devices) | Yes (for email content, such as messages and attachments) |
 | Antimalware protection | Yes (for devices) | Yes (for email content) |
-| Next-generation protection (antivirus and antimalware protection) | Yes, for devices running Windows 10 or Windows Server initially, with plans to support macOS, Linux, iOS, and Android devices. | Yes; Microsoft Defender Antivirus in Windows 10 Pro |
-| Attack surface reduction (attack surface reduction rules and other protection)	| Yes (attack surface reduction rules built into Windows 10 plus centrally managed capabilities) | Yes (attack surface reduction rules are built into Windows 10) |
+| Next-generation protection (antivirus and antimalware protection) | Yes <p>Initially, devices running Windows 10 or Windows Server are supported <p>Coming soon: support for macOS, Linux, iOS, and Android devices. | Yes <p> Microsoft Defender Antivirus in Windows 10 Pro |
+| Attack surface reduction <br/>(attack surface reduction rules and other protection)	| Yes (attack surface reduction rules built into Windows 10, plus centrally managed capabilities) | Yes (attack surface reduction rules are built into Windows 10) |
 | Endpoint detection and response | Yes. Includes: <br/>- Behavior-based detection <br/>- Manual response actions <br/>- Live response	 | No |
 | Automated investigation and response | Yes | No |
 | Threat intelligence | Yes. Includes threat analytics and custom indicators | No |
