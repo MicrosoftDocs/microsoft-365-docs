@@ -48,7 +48,30 @@ Microsoft allows developers to build cloud applications using Azure Active Direc
 
 ## Licensing for app governance
 
-TBD
+Before you get started with the app governance feature for Microsoft Cloud App Security, you should confirm your [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) and any add-ons. To access and use app governance, your organization must have one of the following subscriptions or add-ons:
+
+- Microsoft 365 A5 Compliance for faculty
+- Microsoft 365 A5 Compliance for students
+- Microsoft 365 A5 for faculty
+- Microsoft 365 A5 for students
+- Microsoft 365 A5 Information Protection and Governance for faculty
+- Microsoft 365 A5 Information Protection and Governance for students
+- Microsoft 365 A5 Security for faculty
+- Microsoft 365 A5 Security for students
+- Microsoft 365 A5 student use benefits
+- Microsoft 365 A5 with Calling Minutes for Faculty
+- Microsoft 365 A5 with Calling Minutes for Students
+- Microsoft 365 A5 without Audio Conferencing for faculty
+- Microsoft 365 A5 without Audio Conferencing for students
+- Microsoft 365 A5 without Audio Conferencing for students use benefit
+- Microsoft 365 E5
+- Microsoft 365 E5 Compliance
+- Microsoft 365 E5 Developer (without Windows and Audio Conferencing)
+- Microsoft 365 E5 Information Protection and Governance
+- Microsoft 365 E5 Security
+- Microsoft 365 E5 with Calling Minutes
+- Microsoft 365 E5 without Audio Conferencing
+- Microsoft Cloud App Security
 
 ## Administrator roles
 
