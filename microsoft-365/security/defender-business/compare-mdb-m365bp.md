@@ -8,7 +8,7 @@ manager: dansimp
 audience: Admin
 ms.topic: reference
 ms.date: 06/23/2021
-ms.prod: security
+ms.prod: m365-security
 ms.technology: dforbiz
 localization_priority: Normal
 ms.reviewer: inbadian, shlomiakirav
