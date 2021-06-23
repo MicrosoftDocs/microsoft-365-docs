@@ -17,40 +17,37 @@ f1.keywords: NOCSH
 
 # Set up and configure Microsoft Defender for business
 
-As a private preview customer, you likely have assistance in setting up and configuring Microsoft Defender for business. This section provides guidance on how to plan, configure, and onboard to the service, just in case you are interested in the resources and information that are available to you.
+As a preview customer, you likely have assistance in setting up and configuring Microsoft Defender for business. As reference information, this article provides guidance on how to plan, configure, and onboard to the service. This information might be helpful if you are interested in the resources and information that are available to you.
 
-Review the requirements
-Table 3 lists the basic requirements for Microsoft Defender for businesses.
+## Review the requirements
 
-Table 1. Requirements for Microsoft Defender for business
-Requirement	Description
-Licensing requirements	Microsoft Defender for business
-Users	User accounts created
-Microsoft Defender for business licenses assigned
+The following table lists the basic requirements for Microsoft Defender for business.
 
-Browser requirements	•	Microsoft Edge
-•	Internet Explorer version 11
-•	Google Chrome
-NOTE: Other browsers might work, but these are the officially supported browsers.
-Operating system	•	Windows 10
-•	Windows Server 2019
-•	Windows Server, version 1803 or later
-•	Windows Server 2016
-Datacenter	One of the following datacenter locations for Microsoft Defender for business:
-•	European Union
-•	United Kingdom
-•	United States
+| Requirement | Description |
+|:---|:---|
+| Licensing requirements | Microsoft Defender for business |
+| Users | User accounts created <p> Microsoft Defender for business licenses assigned |
+| Browser requirements | Microsoft Edge <p> Internet Explorer version 11 <p> Google Chrome |
+| Operating system | Windows 10 <p> Windows Server 2019 <p> Windows Server, version 1803 or later <p> Windows Server 2016 |
+| Datacenter | One of the following datacenter locations for Microsoft Defender for business: <br/>- European Union <br/>- United Kingdom <br/>- United States |
 
-To learn more, see Minimum requirements for Defender for Endpoint.
+> [!TIP]
+> To learn more, see [Minimum requirements for Defender for Endpoint](../defender-endpoint/minimum-requirements.md).
 
-Get Microsoft Defender for business
+## Get Microsoft Defender for business
+
 If you don’t already have Microsoft Defender for business, you can sign up for a free trial or buy a subscription. The first person to sign your company up is a global administrator (also referred as the global admin). The global admin can purchase licenses, upgrade services, set up user accounts, and configure settings for your organization. To learn more, see Microsoft 365 Business Premium Setup.
-1.	Go to the Microsoft 365 admin center (https://admin.microsoft.com), and sign in.
+
+1.	Go to the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)), and sign in.
+
 2.	In the navigation bar, go to Billing. 
+
 3.	To view your current subscription(s), select Your products.
+
 4.	To add a subscription, such as Microsoft Defender for business, choose Purchase services. Search for Microsoft Defender for business, and then complete the purchase process.
 
-Assign roles and permissions
+## Assign roles and permissions
+
 In order for your security team to perform tasks in the Microsoft 365 Defender portal, such as configuring Microsoft Defender for business, or taking response actions on detected threats, appropriate permissions must be assigned. Microsoft recommends granting people access to only what they need to perform their tasks. We call this the concept of least privileges for permissions. 
 Table 4 describes roles to consider as you plan for Microsoft Defender for business. Learn more about admin roles. 
 
