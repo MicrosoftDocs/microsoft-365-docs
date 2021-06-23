@@ -117,16 +117,15 @@ Here's description of each eDiscovery capability.
 
 - **Export to customer-owned Azure Storage location**. 
 
-
 ## eDiscovery subscription comparison
 
-The following sections show the minimum subscription requirements for Content search, Core eDiscovery, and Advanced eDiscovery.
+The following sections show the minimum subscription requirements for Content search, Core eDiscovery, and Advanced eDiscovery. Subscriptions that support Core eDiscovery also support Content search. Subscriptions that support Advanced eDiscovery also support Content search and Core eDiscovery.
 
 ### Content search
 
 - Microsoft 365 E1 subscription
 - Microsoft 365 G1 subscription
-- Microsoft 365 Education A1 or Office 365 Education A1 subscription
+- Office 365 Education A1 subscription
 
 ### Core eDiscovery
 
@@ -139,10 +138,32 @@ The following sections show the minimum subscription requirements for Content se
 - Microsoft 365 E5 or Office 365 E5 subscription
 - Microsoft 365 E3 subscription with E5 Compliance add-on
 - Microsoft 365 E3 subscription with E5 eDiscovery and Audit add-on
-- Microsoft 365 G5 subscription (paid or trial version)
+- Microsoft 365 G5 subscription
 - Microsoft 365 G5 subscription with G5 Compliance add-on
 - Microsoft 365 G5 subscription with G5 eDiscovery and Audit add-on
 - Microsoft 365 Education A5 or Office 365 Education A5 subscription
+
+## Get started with eDiscovery
+
+See the following articles to help you learn more and get started using the eDiscovery solutions in Microsoft 365.
+
+### Content search
+
+- [Search for content using Content search](search-for-content.md)
+
+- [Create a search](create-search.md)
+
+### Core eDiscovery
+
+- [Get started with Core eDiscovery](get-started-core-ediscovery.md)
+
+### Advanced eDiscovery
+
+- [Overview of Advanced eDiscovery](overview-ediscovery-20.md)
+
+- [Set up Advanced eDiscovery](get-started-with-advanced-ediscovery.md)
+
+- [Create and manage an Advanced eDiscovery case](create-and-manage-advanced-ediscoveryv2-case.md)
 
 ## eDiscovery roadmap
 
