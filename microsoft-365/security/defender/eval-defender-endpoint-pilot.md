@@ -90,3 +90,11 @@ To run any of the provided simulations, you need at least [one onboarded device]
 > [!NOTE]
 > Simulation files or scripts mimic attack activity but are actually benign and will not harm or compromise the test device.
 
+
+## Next steps
+
+[Investigate and respond using Microsoft 365 Defender in a pilot environment](eval-defender-investigate-respond.md)
+
+Return to the overview for [Evaluate Microsoft Defender for Endpoint](eval-defender-endpoint-overview.md)
+
+Return to the overview for [Evaluate and pilot Microsoft 365 Defender](eval-overview.md)
