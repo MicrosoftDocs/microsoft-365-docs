@@ -75,14 +75,14 @@ sections:
       - question: |
           Can I release or report more than one quarantined message at a time?
         answer: |
-          In the Security & Compliance Center, you can select and release up to 100 messages at a time.
+          In the Microsoft 365 Defender portal, you can select and release up to 100 messages at a time.
           
           Admins can use the the [Get-QuarantineMessage](/powershell/module/exchange/get-quarantinemessage) and [Release-QuarantineMessage](/powershell/module/exchange/release-quarantinemessage) cmdlets in Exchange Online PowerShell or standalone EOP PowerShell to find and release quarantined messages in bulk, and to report false positives in bulk.
           
       - question: |
           Are wildcards supported when searching for quarantined messages? Can I search for quarantined messages for a specific domain?
         answer: |
-          Wildcards aren't supported in the Security & Compliance Center. For example, when searching for a sender, you need to specify the full email address. But, you can use wildcards in Exchange Online PowerShell or standalone EOP PowerShell.
+          Wildcards aren't supported in the Microsoft 365 Defender portal. For example, when searching for a sender, you need to specify the full email address. But, you can use wildcards in Exchange Online PowerShell or standalone EOP PowerShell.
           
           For example, copy the following PowerShell code into NotePad and save the file as .ps1 in a location that's easy for you to find (for example, C:\Data\QuarantineRelease.ps1).
           
