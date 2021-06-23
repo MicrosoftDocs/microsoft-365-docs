@@ -41,7 +41,7 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: How to use Microsoft Defender for business
-            url: file1.md
+            url: mdb-use.md
 
   # Card
   - title: Setup
