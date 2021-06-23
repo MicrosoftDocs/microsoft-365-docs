@@ -34,7 +34,7 @@ Microsoft Defender for Office 365 , formerly called Microsoft 365 ATP, or Advanc
 1. Go to the [admin center](https://admin.microsoft.com), and select **Setup**.
 2. Scroll down to **Increase protection from advanced threats**. Select **Manage**,and then **Safe Links**.
 3. Select **Global Settings**, in **Block the following URLs** Enter a URL that you want to block.
-4. Select **Use Safe Links in Office 365 app**; select **Do not track when users click protected links in Office 365 apps**; and select **Do not let users click through to the original URL in Office 365 apps**. These might already be selected if you set up the default policy. Select **Save**.
+4. Select **Use Safe Links in Office 365 app**, select **Do not track when users click protected links in Office 365 apps**, and select **Do not let users click through to the original URL in Office 365 apps**. These might already be selected if you set up the default policy. Select **Save**.
 
 Safe Links are now configured. Allow up to 30 minutes for your changes to take effect.
 
