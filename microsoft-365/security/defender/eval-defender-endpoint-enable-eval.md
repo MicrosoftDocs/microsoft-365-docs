@@ -30,7 +30,7 @@ This article will guide you through the steps on setting up the evaluation eviro
 
 Use the following steps to enable the evaluation for Microsoft Defender for Endpoint.
 
-NEED IMAGE HERE!!
+![Steps to enable Microsoft Defender for Endpoint in the Microsoft Defender evaluation environment](../../media/defender/m365-defender-endpoint-eval-enable-steps.png)
 
 - [Step 1. Check license state](#step-1-check-license-state)
 - [Step 2. Onboard endpoints](#step-2-onboard-endpoints-using-any-of-the-supported-management-tools)
