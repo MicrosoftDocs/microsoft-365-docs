@@ -52,7 +52,7 @@ Each device in the organization is scored based on three important factors to he
 
 Access the Security recommendations page a few different ways:
 
-- Threat and vulnerability management navigation menu in the [Microsoft Defender Security Center](portal-overview.md)
+- Threat and vulnerability management navigation menu in the [Microsoft 365 Defender portal](portal-overview.md)
 - Top security recommendations in the [threat and vulnerability management dashboard](tvm-dashboard-insights.md)
 
 View related security recommendations in the following places:

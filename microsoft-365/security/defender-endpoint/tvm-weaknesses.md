@@ -44,7 +44,7 @@ The **Weaknesses** page lists the software vulnerabilities your devices are expo
 
 Access the Weaknesses page a few different ways:
 
-- Selecting **Weaknesses** from the threat and vulnerability management navigation menu in the [Microsoft Defender Security Center](portal-overview.md)
+- Selecting **Weaknesses** from the threat and vulnerability management navigation menu in the [Microsoft 365 Defender portal](portal-overview.md)
 - Global search
 
 ### Navigation menu
@@ -115,7 +115,7 @@ Exposed device information will not be available for CVEs with unsupported softw
 
 View related weaknesses information in the device page.
 
-1. Go to the Microsoft Defender Security Center navigation menu bar, then select the device icon. The **Devices list** page opens.
+1. Go to the Microsoft 365 Defender portal navigation menu bar, then select the device icon. The **Devices list** page opens.
 2. In the **Devices list** page, select the device name that you want to investigate.
 
     ![Device list with selected device to investigate.](images/tvm_machinetoinvestigate.png)

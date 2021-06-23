@@ -36,7 +36,7 @@ The threat and vulnerability management capability in Microsoft Defender for End
 
 ### Enable Microsoft Intune connection
 
-To use this capability, enable your Microsoft Intune connections. In the Microsoft Defender Security Center, navigate to **Settings** > **General** > **Advanced features**. Scroll down and look for **Microsoft Intune connection**. By default, the toggle is turned off. Turn your **Microsoft Intune connection** toggle **On**.
+To use this capability, enable your Microsoft Intune connections. In the Microsoft 365 Defender portal, navigate to **Settings** > **General** > **Advanced features**. Scroll down and look for **Microsoft Intune connection**. By default, the toggle is turned off. Turn your **Microsoft Intune connection** toggle **On**.
 
 **Note**: If you have the Intune connection enabled, you get an option to create an Intune security task when creating a remediation request. This option does not appear if the connection is not set.
 
@@ -44,7 +44,7 @@ See [Use Intune to remediate vulnerabilities identified by Microsoft Defender fo
 
 ### Remediation request steps
 
-1. Go to the threat and vulnerability management navigation menu in the Microsoft Defender Security Center, and select [**Security recommendations**](tvm-security-recommendation.md).
+1. Go to the threat and vulnerability management navigation menu in the Microsoft 365 Defender portal, and select [**Security recommendations**](tvm-security-recommendation.md).
 
 2. Select a security recommendation you would like to request remediation for, and then select **Remediation options**.
 

@@ -38,7 +38,7 @@ Threat and vulnerability management will only display zero-day vulnerabilities i
 
 ## Find information about zero-day vulnerabilities
 
-Once a zero-day vulnerability has been found, information about it will be conveyed through the following experiences in the Microsoft Defender Security Center.
+Once a zero-day vulnerability has been found, information about it will be conveyed through the following experiences in the Microsoft 365 Defender portal.
 
 >[!NOTE]
 > 0-day vulnerability capability is currently available only for Windows products.

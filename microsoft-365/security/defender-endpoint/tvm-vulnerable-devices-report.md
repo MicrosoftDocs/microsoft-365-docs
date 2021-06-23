@@ -34,7 +34,7 @@ ms.technology: mde
 
 The report shows graphs and bar charts with vulnerable device trends and current statistics. The goal is for you to understand the breath and scope of your device exposure.
 
-Access the report in the Microsoft Defender Security Center by going to **Reports > Vulnerable devices**
+Access the report in the Microsoft 365 Defender portal by going to **Reports > Vulnerable devices**
 
 There are two columns:
 

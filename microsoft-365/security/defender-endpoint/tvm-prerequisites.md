@@ -50,7 +50,7 @@ Ensure that your devices:
 
 ## Relevant permission options
 
-1. Log in to Microsoft Defender Security Center using account with a Security administrator or Global administrator role assigned.
+1. Log in to the Microsoft 365 Defender portal using account with a Security administrator or Global administrator role assigned.
 2. In the navigation pane, select **Settings > Roles**.
 
 For more information, see [Create and manage roles for role-based access control](user-roles.md)
