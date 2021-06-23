@@ -55,7 +55,7 @@ The following table describes roles to consider as you plan for Microsoft Defend
 | Permission level | Description |
 |:---|:---|
 | Global administrators (also referred to as global admins) <p> As a best practice, limit the number 
-of global administrators. | The person who signed your company up for Microsoft 365 or Microsoft Defender for business is a global administrator by default. <p> Able to access/change settings across all Microsoft 365 portals, including the Microsoft 365 admin center (https://admin.microsoft.com) and the Microsoft 365 Defender portal (https://security.microsoft.com). |
+of global administrators. | The person who signed your company up for Microsoft 365 or Microsoft Defender for business is a global administrator by default. <p> Able to access/change settings across all Microsoft 365 portals, including the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)) and the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). |
 | Security administrators (also referred to as security admins) | Monitor security-related policies across Microsoft 365 services <p> Manage security threats and alerts <p> View reports |
 | Security operator | All permissions of the Security Reader role <p> View, investigate, and respond to security threats alerts |
 | Security reader | View security-related policies across Microsoft 365 services <p> View security threats and alerts <p> View reports |
@@ -67,7 +67,7 @@ You can manage your security policies and settings using one of two methods/loca
 - The Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com))
 - Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)). (Endpoint Manager now includes Microsoft Intune)
 
-When you begin to use Microsoft Defender for business, you will be asked whether you want to use MEM or your Microsoft 365 Defender portal. We recommend using the Microsoft 365 Defender portal and its wizard-like experience for managing your devices and security settings. 
+When you begin to use Microsoft Defender for business, you will be asked whether you want to use Endpoint Manager or your Microsoft 365 Defender portal. **We recommend using the Microsoft 365 Defender portal and its wizard-like experience for managing your devices and security settings**. 
 
 - The security policies and settings that you configure in the Microsoft 365 Defender portal are synched to Microsoft Endpoint Manager, enabling you to use the method that you prefer. 
 
