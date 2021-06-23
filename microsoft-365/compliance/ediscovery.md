@@ -22,7 +22,7 @@ search.appverid:
 description: "Microsoft 365 offers three eDiscovery tools that you can use to search for and export content found in different locations such as Exchange mailboxes, SharePoint and OneDrive for Business sites, Microsoft 365 Groups, Microsoft Teams, and Skype for Business conversations. Core eDiscovery and Advanced eDiscovery provide many additional features to help you manage your investigations."
 ---
 
-# Microsoft 365 eDiscovery solutions
+# eDiscovery solutions in Microsoft 365
 
 Electronic discovery, or eDiscovery, is the process of identifying and delivering electronic information that can be used as evidence in legal cases. You can use eDiscovery tools in Microsoft 365 to search for content in Exchange Online, OneDrive for Business, SharePoint Online, Microsoft Teams, Microsoft 365 Groups, and Yammer teams. You can search mailboxes and sites in the same eDiscovery search, and then export the search results. Additionally, you can use Core eDiscovery cases to identify, hold, and export content found in mailboxes and sites. If your organization has an Office 365 E5 or Microsoft 365 E5 subscription (or related E5 add-on subscriptions), you can further manage custodians and analyze content by using the feature-rich Advanced eDiscovery solution in Microsoft 365.
 
@@ -32,16 +32,44 @@ Microsoft 365 provides three eDiscovery solutions: Content search, Core eDiscove
 
 ![Key capabilities of Microsoft 365 eDiscovery tools](..\media\m365-ediscovery-solution-graphic.png)
 
+- **Content search**. Use use the Content search tool to search for content across Microsoft 365 data sources and then export the search results to local computer.
+
+- **Core eDiscovery**. Core eDiscovery builds on the basic search and export functionality of Content search enabling you to create eDiscovery cases and eDiscovery managers who can only access the case their members of. Core eDiscovery lets you associate searches and exports with a case and allows you to place an eDiscovery hold on content locations relevant to the case.
+
+- **Advanced eDiscovery**. The Advanced eDiscovery tool builds on the existing case management, preservation, search, and export capabilities in Core eDiscovery. Advanced eDiscovery provides an end-to-end workflow to identify, preserve, collect, review, analyze, and export content that's responsive to your organization's internal and external investigations. It lets legal teams manage custodians and the legal hold notification workflow to communicate with custodians involved in a case. It allows you to collect and copy data from the live service into review sets, when you can filter, search, and tag content to cull non-relevant content from further review so your workflow can identify and focus on content that's most relevant. Advanced eDiscovery provides analytics and machine learning-based predictive coding models to further narrow to scope of your investigation to the most relevant content.
+
 ## Comparison of key capabilities
 
-The following table compares the key capabilities available in Content search, Core eDiscovery, and Advanced eDiscovery. 
+The following table compares the key capabilities available in Content search, Core eDiscovery, and Advanced eDiscovery.
 
 |Capability|Content search|Core eDiscovery|Advanced eDiscovery|
 |:------|:-------------|:-------------|:-------------|
-|||||
+|Search for content|![Supported](../media/check-mark.png)|![Supported](../media/check-mark.png)|![Supported](../media/check-mark.png)|
+|Keyword queries and search conditions|![Supported](../media/check-mark.png)|![Supported](../media/check-mark.png)|![Supported](../media/check-mark.png)|
+|Search statistics|![Supported](../media/check-mark.png)|![Supported](../media/check-mark.png)|![Supported](../media/check-mark.png)|
+|Export search results|![Supported](../media/check-mark.png)|![Supported](../media/check-mark.png)|![Supported](../media/check-mark.png)|
+|Role-based permissions|![Supported](../media/check-mark.png)|![Supported](../media/check-mark.png)|![Supported](../media/check-mark.png)|
+|Case management||![Supported](../media/check-mark.png)|![Supported](../media/check-mark.png)|
+|Place content locations on legal hold||![Supported](../media/check-mark.png)|![Supported](../media/check-mark.png)|
+|Custodian management|||![Supported](../media/check-mark.png)|
+|Legal hold notifications|||![Supported](../media/check-mark.png)|
+|Advanced indexing|||![Supported](../media/check-mark.png)|
+|Error remediation|||![Supported](../media/check-mark.png)|
+|Review sets|||![Supported](../media/check-mark.png)|
+|Support for cloud attachments and SharePoint versions|||![Supported](../media/check-mark.png)|
+|Optical character recognition|||![Supported](../media/check-mark.png)|
+|Conversation reconstruction|||![Supported](../media/check-mark.png)|
+|Collection statistics and reports|||![Supported](../media/check-mark.png)|
+|Review set filtering|||![Supported](../media/check-mark.png)|
+|Tagging|||![Supported](../media/check-mark.png)|
+|Analytics|||![Supported](../media/check-mark.png)|
+|Predictive coding models|||![Supported](../media/check-mark.png)|
+|Computed document metadata|||![Supported](../media/check-mark.png)|
+|Transparency of long-running jobs|||![Supported](../media/check-mark.png)|
+|Export to customer-owned Azure Storage location|||![Supported](../media/check-mark.png)|||||![Supported](../media/check-mark.png)|
 |||||
 
-Here's description of the key eDiscovery capabilities.
+Here's description of each eDiscovery capability.
 
 - **Search for content**. Search for content that's stored in Exchange mailboxes, One Drive for Business accounts, SharePoint sites, Microsoft Teams, Microsoft 365 Groups, and Yammer Teams. This includes content generated by other Microsoft 365 apps that store data in mailboxes and sites.
 
@@ -61,7 +89,7 @@ Here's description of the key eDiscovery capabilities.
 
 - **Legal hold notifications**. Manage the process of communicating with case custodians. A legal hold notification instructs custodians to preserve content that's relevant to the case. You can track the notices that have been received, read, and acknowledged by custodians. The communications workflow in Advanced eDiscovery allows you to create and send initial notifications, reminders, and escalations if custodians fail to acknowledge a hold notification.
 
-- **Advanced indexing**. When you add custodial and non-custodian data sources to a case, the associated content locations are re-indexed (in a process called *Advanced indexing*) so that any content that was deemed as partially indexed is reprocessed to make it fully searchable when you collect data for an investigation.
+- **Advanced indexing**. When you add custodial and non-custodian data sources to a case, the associated content locations are reindexed (in a process called *Advanced indexing*) so that any content that was deemed as partially indexed is reprocessed to make it fully searchable when you collect data for an investigation.
 
 - **Error remediation**. Fix processing errors using a process called *error remediation*. Error remediation allows you to rectify data issues that prevent Advanced eDiscovery from properly processing the content during Advanced indexing. For example, files that are password protected can't be processed since the files are locked or encrypted. Using error remediation, you can download files with errors, remove the password protection, and then upload the remediated files.
 
@@ -75,11 +103,11 @@ Here's description of the key eDiscovery capabilities.
 
 - **Collection statistics and reports**. After you create a draft collection or commit a commit a collection to a review set, you can view a rich set of statistics on the retrieved items, such as the content locations that contain the most items that matched the search criteria and the number of items returned by the search query. You can also preview a subset of the results. Additionally, this includes the number of child items that were extracted from their parent items and added as separate items to the review set.
 
-- **Review set queries and filtering**. After content is added to a review set you run search queries using a rich set of search conditions and document metadata properties. You can also filters to display only the set of items that match the filters you apply. Review set queries and filters help you cull unnecessary content from the review and help you identify the documents that are most relevant to your investigation.
+- **Review set filtering**. After content is added to a review set, you can apply filters to display only the set of items that match your filtering criteria. Then you can save the filter sets as a query, which lets you quickly reapply the saved filters. Review set filtering and saved queries help you quickly cull content to the items that are most relevant to your investigation.
 
-- **Tagging, annotations, and redactions**. Tags also help you cull non-relevant content and identify the most relevant content. When experts, attorneys, or other users review content in a review set, their opinions related to the content can be captured by using tags. For example, if the intent is to cull unnecessary content, a user can tag documents with a tag such as "non-responsive". After content has been reviewed and tagged, a review set query can be created to exclude any content tagged as "non-responsive". This process eliminates the non-responsive content from subsequent steps in the eDiscovery workflow. Reviewers can also make annotations to review set documents and redact privileged or other sensitive information. Annotations and redactions will persist when content is exported from a  review set.
+- **Tagging**. Tags also help you cull non-relevant content and identify the most relevant content. When experts, attorneys, or other users review content in a review set, their opinions related to the content can be captured by using tags. For example, if the intent is to cull unnecessary content, a user can tag documents with a tag such as "non-responsive". After content has been reviewed and tagged, a review set query can be created to exclude any content tagged as "non-responsive". This process eliminates the non-responsive content from subsequent steps in the eDiscovery workflow.
 
-- **Analytics such as email threading, themes, and near-duplicate detection**. 
+- **Analytics (email threading, themes, and near-duplicate detection)**.
 
 - **Predictive coding models**. 
 
@@ -87,63 +115,34 @@ Here's description of the key eDiscovery capabilities.
 
 - **Transparency of long-running jobs**. 
 
-- **Export to customer Azure Storage location**. 
+- **Export to customer-owned Azure Storage location**. 
 
 
+## eDiscovery subscription comparison
 
-## Content search
+The following sections show the minimum subscription requirements for Content search, Core eDiscovery, and Advanced eDiscovery.
 
-The following table contains links to articles that will help you use the Content search tool.
-  
-|**Article**|**Description**|
-|:-----|:-----|
-|[Run a search](content-search.md) <br/> |Learn how to use the Content Search tool to search mailboxes, public folders, Microsoft 365 Groups, Microsoft Teams, SharePoint Online sites, One Drive for Business locations, and Skype for Business conversations in your organization in a single search.  <br/> |
-|[Keyword queries and search conditions](keyword-queries-and-search-conditions.md) <br/> |Learn about the email and file properties and search conditions you can use to search for content in mailboxes and sites in your organization.  <br/> |
-|[View keyword statistics for search results](view-keyword-statistics-for-content-search.md) <br/> |Learn how to use search statistics to display and compare the statistics for one or more content searches, and to configure new and existing searches to return statistics for each keyword in the search query.  <br/> |
-|[Export search results](export-search-results.md) <br/> |Learn how to export the results of a Content search.  <br/> |
-|[Configure permissions filtering for Content search](permissions-filtering-for-content-search.md) <br/> |Learn how to use permissions filtering to let an eDiscovery manager search only a subset of mailboxes and sites in your organization.  <br/> |
-|[Export a search report](export-a-content-search-report.md) <br/> |Learn how to download the export report without having to export the actual search results.  <br/> |
-|[Content search limits](limits-for-content-search.md) <br/> |Learn about the limits of the Content Search tool, such as the maximum number of searches that you can run at one time.  <br/> |
-|[Unindexed items in Content search](partially-indexed-items-in-content-search.md) <br/> |Learn about unindexed items in Exchange and SharePoint that you can include in the estimated search result statistics when you run a search. You can also include unindexed items when you export search results.  <br/> |
-|[Search for and delete email messages](search-for-and-delete-messages-in-your-organization.md) <br/> |Learn how to use Content search to search for and delete an email message from  *all*  mailboxes in your organization. This can help you find and remove potentially harmful or high-risk email.  <br/> |
-|[Search the mailbox and OneDrive accounts for a list of users](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md) <br/> |Learn how to use a script to search the mailbox and One Drive for Business site for a group of users. See [Create a list of all OneDrive locations](/onedrive/list-onedrive-urls) for steps on how to quickly generate a list of email addresses that you can use for the source content locations when you create and run content searches.  <br/> |
-|[Use Content search for targeted collections](use-content-search-for-targeted-collections.md) <br/> |Learn how to use the Windows PowerShell script in this article to perform targeted collections using Content search. A targeted collection means you want to search a specific folder because you're confident that items responsive to a case (or privileged items) are located in that folder. Use the script in this article to obtain the folder ID or path for the specific mailbox or site folders that you want to search.  <br/> |
-|||
-  
-## Core eDiscovery
+### Content search
 
-The following table contains links to topics that will help you use Core eDiscovery cases. You can use Core eDiscovery cases to add eDiscovery managers who can access the case, place an eDiscovery hold on content locations relevant to the case, search for content, and export the search results from the case.
-  
-|**Article**|**Description**|
-|:-----|:-----|
-|[Get started with Core eDiscovery](get-started-core-ediscovery.md) |Learn how to assign eDiscovery permissions and create Core eDiscovery cases. This topic also provides an overview of the Core eDiscovery workflow.<br/> |
-|[Assign eDiscovery permissions](assign-ediscovery-permissions.md)|Learn how to assign permissions to users so they can search for content, place content locations on hold, and perform other eDiscovery-related tasks in a Core eDiscovery case.|
-|[Set up compliance boundaries for Core eDiscovery](set-up-compliance-boundaries.md)|Learn how to use compliance boundaries to create logical boundaries within an organization that control the content locations that an eDiscovery manager can search.|
-|[Create an eDiscovery hold](create-ediscovery-holds.md)|Learn how to create eDiscovery holds that associated with a Core eDiscovery case to preserve content relevant to the case you're investigating.|
-|[Search for content in a case](search-for-content-in-core-ediscovery.md)|Learn how to search for content that's relevant to a case. You can quickly create searches that search the content locations on hold.|
-|[Export content from a case](export-content-in-core-ediscovery.md)|Learn how to export and download content from a Core eDiscovery case.|
-|[Close, reopen, and delete a case](close-reopen-delete-core-ediscovery-cases.md)|Learn how to manage the lifecycle of a Core eDiscovery case.|
-|||
-  
-## Advanced eDiscovery
+- Microsoft 365 E1 subscription
+- Microsoft 365 G1 subscription
+- Microsoft 365 Education A1 or Office 365 Education A1 subscription
 
-The Advanced eDiscovery solution in Microsoft 365 (also called *Advanced eDiscovery v2.0*) builds on the existing eDiscovery and analytics capabilities in Microsoft 365. This eDiscovery solution provides an end-to-end workflow to preserve, collect, review, analyze, and export content that's responsive to your organization's internal and external investigations. It also lets legal teams manage custodians and the entire legal hold notification workflow to communicate with custodians involved in a case.
+### Core eDiscovery
 
-|**Article**|**Description**|
-|:-----|:-----|
-|[Overview of Advanced eDiscovery](overview-ediscovery-20.md)|This article introduces Advanced eDiscovery, outlines the business justification for using this tool, presents Advanced eDiscovery architecture, and provides a high-level overview of the built-in workflow of Advanced eDiscovery.|
-|[Set up Advanced eDiscovery](get-started-with-advanced-ediscovery.md)|Learn how to get started using Advanced eDiscovery, including the required licensing and necessary eDiscovery permission.|
-|[Create and manage a case](create-and-manage-advanced-ediscoveryv2-case.md)|This article shows you how to create an Advanced eDiscovery case and provides a walk-through of the Advanced eDiscovery workflow.|
-|[Manage custodians](managing-custodians.md)|Learn about working with custodians in an Advanced eDiscovery. This topic links to step-by-step instructions to add custodians to a case, managing custodians in a case, and viewing custodian activity in Microsoft 365 by searching the audit log.|
-|[Manage custodian communications](managing-custodian-communications.md)|Learn about managing the legal hold notification process in Advanced eDiscovery. This includes creating and automating the notification workflow and how a user acknowledged a hold notification.
-|[Manage processing errors](processing-data-for-case.md)|Learn about Advanced indexing and how to remediate indexing errors in content from custodial and non-custodial content locations, such as Exchange mailboxes, SharePoint sites, and OneDrive accounts. You can bulk-remediate errors and then upload remediated files to a review set or remediate individual processing errors within a review set.|
-|[Collect data for a case](collecting-data-for-ediscovery.md)|Learn about searching for content in custodial content locations, and then adding relevant case data to a review set. When you copy content to a review set, the data is copied from the original content locations to a Microsoft-provided Azure Storage location. This provides a static set of documents for the review process.|
-|[Manage review sets](managing-review-sets.md)|Learn about reviewing case data in a review set. This includes viewing, querying, filtering, and tagging documents in a review set.
-|[Analyze data in a review set](analyzing-data-in-review-set.md)|Learn about running analysis on the documents in a review set. The results of running analysis include near-duplication detection, email threading, and themes identification.|
-|[Export case data](exporting-data-ediscover20.md)|Learn about exporting data from a case for external review.|
-|||
+- Microsoft 365 E3 subscription
+- Microsoft 365 G3 subscription
+- Microsoft 365 Education A3 or Office 365 Education A3 subscription
 
+### Advanced eDiscovery
 
+- Microsoft 365 E5 or Office 365 E5 subscription
+- Microsoft 365 E3 subscription with E5 Compliance add-on
+- Microsoft 365 E3 subscription with E5 eDiscovery and Audit add-on
+- Microsoft 365 G5 subscription (paid or trial version)
+- Microsoft 365 G5 subscription with G5 Compliance add-on
+- Microsoft 365 G5 subscription with G5 eDiscovery and Audit add-on
+- Microsoft 365 Education A5 or Office 365 Education A5 subscription
 
 ## eDiscovery roadmap
 
