@@ -129,7 +129,7 @@ The Microsoft Threat Intelligence team has added threat tags to each threat repo
 - The list can also be sorted by threat tags:
     ![lists](../../media/threat-analytics//ta-taglist-mtp.png)
 - Filters are available per threat tag and report type:
-    ![filters](../../media/threat-analytics/ta_threattag-filters-mtp.png)
+    ![filters](../../media/threat-analytics/ta-threattag-filters-mtp.png)
 
 ### Analyst report: Get expert insight from Microsoft security researchers
 In the **Analyst report** section, read through the detailed expert write-up. Most reports provide detailed descriptions of attack chains, including tactics and techniques mapped to the MITRE ATT&CK framework, exhaustive lists of recommendations, and powerful [threat hunting](advanced-hunting-overview.md) guidance.
