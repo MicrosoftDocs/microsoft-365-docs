@@ -33,6 +33,8 @@ RSS feed: Get notified when this page is updated by copying and pasting the foll
 ```http
 /api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+365+defender%22&locale=en-us
 ```
+## June 2021
+- Threat tags in [Microsoft 365 Defender threat analytics report](threat-analytics.md) <br> Threat tags help you focus on specific threat categories and review the most relevant reports. 
 
 ## April 2021
 - Microsoft 365 Defender<br> The improved [Microsoft 365 Defender](https://security.microsoft.com) portal is now available. This new experience brings together Defender for Endpoint, Defender for Office 365, Defender for Identity, and more into a single portal. This is the new home to manage your security controls. [Learn what's new](./overview-security-center.md).
