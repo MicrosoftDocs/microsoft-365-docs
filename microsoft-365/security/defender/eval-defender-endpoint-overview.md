@@ -29,22 +29,21 @@ ms.technology: m365d
 
 - Microsoft 365 Defender
 
-Comprehensive security product evaluations can be a complex process, requiring cumbersome environment and device configurations before an end-to-end attack simulation can actually be done. Adding to the complexity is the challenge of tracking where the simulation activities, alerts, and results are reflected during the evaluation.
 
-The Microsoft Defender for Endpoint evaluation lab is designed to eliminate the complexities of device and environment configuration. This enables you to:
+This article outlines the process to enable and pilot Microsoft Defender for Endpoint. Before starting this process, be sure you've reviewed the overall process for [evaluating Microsoft 365 Defender](eval-overview.md) and you have [created the Microsoft 365 Defender evaluation environment](eval-create-eval-environment.md). 
+<br>
 
-- Focus on evaluating the capabilities of the platform
-- Run simulations
-- See the prevention, detection, and remediation features in action
+Use the following steps to enable and pilot Microsoft Defender for Endpoint.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4qLUM]
 
-Using the simplified set-up experience, you can focus on running your own test scenarios and the pre-made simulations to see how Defender for Endpoint performs.
+NEED TO INSERT IMAGE HERE!!
 
-You'll have full access to the powerful capabilities of the platform such as automated investigations, advanced hunting, and threat analytics, allowing you to test the comprehensive protection stack that Defender for Endpoint offers.
+The following table describes the steps in the illustration.
 
-You can add Windows 10 or Windows Server 2019 devices that come pre-configured to have the latest OS versions and the right security components in place as well as Office 2019 Standard installed.
+| |Step  |Description  |
+|---------|---------|---------|
+|1|[Review architecture requirements and key concepts](eval-defender-endpoint-architecture.md)    | Understand the Defender for Endpoint architecture and the capabilities available to you.       |
+|2|[Enable the evaluation environment](eval-defender-office-365-enable-eval.md)     |   Follow the steps to setup the evaluation environment.      |
+|3|[Set up the pilot ](eval-defender-office-365-pilot.md)    |    Verify your pilot group, run simulations, and become familiar with key features and dashboards.     |
 
-You can also install threat simulators. Defender for Endpoint has partnered with industry leading threat simulation platforms to help you test out the Defender for Endpoint capabilities without having to leave the portal.
 
- Install your preferred simulator, run scenarios within the evaluation lab, and then instantly see how the platform performs. This capability is all conveniently available at no extra cost to you. You'll also have convenient access to wide array of simulations, which you can access and run from the simulations catalog.

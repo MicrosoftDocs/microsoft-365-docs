@@ -39,15 +39,8 @@ The following table describes the steps in the illustration.
 
 | |Step  |Description  |
 |---------|---------|---------|
-|1|[Review architecture requirements and key concepts](eval-defender-office-architecture.md)    | Understand the Defender for Office architecture and be sure your Exchange Online environment meets the architecture prerequisites.       |
-|2|[Enable the evaluation environment](eval-defender-office-enable-eval.md)     |   Follow the steps to setup the evaluation environment.      |
-|3|[Set up the pilot ](eval-defender-office-pilot.md)    |    Create pilot groups, configure protection, and become familiar with key features and dashboards.     |
+|1|[Review architecture requirements and key concepts](eval-defender-office-365-architecture.md)    | Understand the Defender for Office architecture and be sure your Exchange Online environment meets the architecture prerequisites.       |
+|2|[Enable the evaluation environment](eval-defender-office-365-enable-eval.md)     |   Follow the steps to setup the evaluation environment.      |
+|3|[Set up the pilot ](eval-defender-office-365-pilot.md)    |    Create pilot groups, configure protection, and become familiar with key features and dashboards.     |
 ||||
 
-
-
-<!--
-### Navigation you may need
-
-[Create the Microsoft 365 Defender Evaluation Environment](eval-create-eval-environment.md)
--->

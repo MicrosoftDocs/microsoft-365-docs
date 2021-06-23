@@ -24,21 +24,54 @@ ms.technology: m365d
 ---
 
 # Pilot Microsoft Defender for Endpoint 
->[!TIP]
->
->- Learn about the latest enhancements in Microsoft Defender for Endpoint: [What's new in Defender for Endpoint?](https://cloudblogs.microsoft.com/microsoftsecure/2018/11/15/whats-new-in-windows-defender-atp/).
->- Defender for Endpoint demonstrated industry-leading optics and detection capabilities in the recent MITRE evaluation. Read: [Insights from the MITRE ATT&CK-based evaluation](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/).
-
-When you pilot Microsoft Defender for Endpoint, you may choose to onboard a few devices to the service before onboarding your entire organization.  To do this, you can run controlled attack simulations on a few test devices. After running the simulated attacks, you can review how Defender for Endpoint surfaces malicious activity and explore how it enables an efficient response.
 
 
-## Before you begin 
+This article will guide you in the process of running a pilot for Microsoft Defender for Endpoint. 
+
+Use the following steps to setup and configure the pilot for Microsoft Defender for Endpoint. 
+
+
+- Step 1. Verify pilot group
+- Step 2. Try out capabilities
+
+When you pilot Microsoft Defender for Endpoint, you may choose to onboard a few devices to the service before onboarding your entire organization.  
+
+You can then try out capabilities that are available such as running attack simulations and seeing how Defender for Endpoint surfaces malicious activities and enables you to conduct an efficient response. 
+
+## Step 1. Verify pilot group
+After completing the onboarding steps outlined in the [Enable evaluation](eval-defender-endpoint-enable-eval.md) section, you should see the devices in the Device inventory list approximately after an hour. 
+
+When you see your onboarded devices you can then proceed with trying out capabilities. 
+
+
+## Step 2. Try out capabilities
+
+Now that you've completed onboarding some devices and verified that they are reporting to the service, familiarize yourself with the product by trying out the powerful capabilities that are available right out of the box. 
+
+
+During the pilot, you can easily get started with trying out some of the features to see the product in action without going through complex configuration steps. 
+
+Let's start by checking out the dashboards. 
+
+
+### View the device inventory
+
+The device inventory is where you'll see the list of endpoints, network devices, and IoT devices in your network. Not only does it provide you with a view of the devices in your network, but it also gives your in-depth information about them such as  domain, risk level, OS platform, and other details for easy identification of devices most at risk.
+
+
+### View the Threat and vulnerability management dashboard 
+
+Threat and vulnerability management helps you focus on the weaknesses that pose the most urgent and the highest risk to the organization. From the dashboard, get a high-level view of the organization exposure score, Microsoft Secure Score for Devices, device exposure distribution, top security recommendations, top vulnerable software, top remediation activities, and top exposed device data. 
+
+
+
+### Run a simulation
+
+Microsoft Defender for Endpoint comes with ["Do It Yourself" attack scenarios](https://securitycenter.windows.com/tutorials) that you can run on your pilot devices.  Each document includes OS and application requirements as well as detailed instructions that are specific to an attack scenario. These scripts are safe, documented, and easy to use. These scenarios will reflect Defender for Endpoint capabilities and walk you through investigation experience.
+
 
 To run any of the provided simulations, you need at least [one onboarded device](../defender-endpoint/onboard-configure.md).
 
-Read the walkthrough document provided with each attack scenario. Each document includes OS and application requirements as well as detailed instructions that are specific to an attack scenario.
-
-## Run a simulation
 
 1. In **Help** > **Simulations & tutorials**, select which of the available attack scenarios you would like to simulate:
 
@@ -56,86 +89,4 @@ Read the walkthrough document provided with each attack scenario. Each document 
 
 > [!NOTE]
 > Simulation files or scripts mimic attack activity but are actually benign and will not harm or compromise the test device.
->
-
-## Simulate attack scenarios
-
-Use the test devices to run your own attack simulations by connecting to them.
-
-You can simulate attack scenarios using:
-
-- The ["Do It Yourself" attack scenarios](https://securitycenter.windows.com/tutorials)
-- Threat simulators
-
-You can also use [Advanced hunting](advanced-hunting-overview.md) to query data and [Threat analytics](threat-analytics.md) to view reports about emerging threats.
-
-### Do-it-yourself attack scenarios
-
-If you are looking for a pre-made simulation, you can use our ["Do It Yourself" attack scenarios](https://securitycenter.windows.com/tutorials). These scripts are safe, documented, and easy to use. These scenarios will reflect Defender for Endpoint capabilities and walk you through investigation experience.
-
->[!NOTE]
->The connection to the test devices is done using RDP. Make sure that your firewall settings allow RDP connections.
-
-1. Connect to your device and run an attack simulation by selecting **Connect**.
-
-    ![Image of the connect button for test devices](../../media/defender/test-machine-table.png)
-
-2. Save the RDP file and launch it by selecting **Connect**.
-
-    ![Image of remote desktop connection](../../media/defender/remote-connection.png)
-
-    >[!NOTE]
-    >If you don't have a copy of the password saved during the initial setup, you can reset the password by selecting **Reset password** from the menu:
-    > ![Image of reset password](../../media/defender/reset-password-test-machine.png)
-    >
-    > The device will change it’s state to “Executing password reset", then you’ll be presented with your new password in a few minutes.
-
-3. Enter the password that was displayed during the device creation step.
-
-   ![Image of window to enter credentials](../../media/defender/enter-password.png)
-
-4. Run Do-it-yourself attack simulations on the device.
-
-### Threat simulator scenarios
-
-If you chose to install any of the supported threat simulators during the lab setup, you can run the built-in simulations on the evaluation lab devices.
-
-Running threat simulations using third-party platforms is a good way to evaluate Microsoft Defender for Endpoint capabilities within the confines of a lab environment.
-
->[!NOTE]
->
->Before you can run simulations, ensure the following requirements are met:
->- Devices must be added to the evaluation lab
->- Threat simulators must be installed in the evaluation lab
-
-1. From the portal select **Create simulation**.
-
-2. Select a threat simulator.
-
-    ![Image of threat simulator selection](../../media/defender/select-simulator.png)
-
-3. Choose a simulation or look through the simulation gallery to browse through the available simulations.
-
-    You can get to the simulation gallery from:
-    - The main evaluation dashboard in the **Simulations overview** tile or
-    - By navigating from the navigation pane **Evaluation and tutorials** > **Simulation & tutorials**, then select **Simulations catalog**.
-
-4. Select the devices where you'd like to run the simulation on.
-
-5. Select **Create simulation**.
-
-6. View the progress of a simulation by selecting the **Simulations** tab. View the simulation state, active alerts, and other details.
-
-    ![Image of simulations tab](../../media/defender/simulations-tab.png)
-
-
-## Review the device inventory
-
-After running simulations, view the device inventory to see a list of endpoints, network devices, and IoT devices in your network where alerts were generated. By default, the queue displays devices seen in the last 30 days.  
-
-At a glance you'll see information such as domain, risk level, OS platform, and other details for easy identification of devices most at risk.
-
-## View the Threat and vulnerability management dashboard 
-
-Threat and vulnerability management helps you focus on the weaknesses that pose the most urgent and the highest risk to the organization. From the dashboard, get a high-level view of the organization exposure score, Microsoft Secure Score for Devices, device exposure distribution, top security recommendations, top vulnerable software, top remediation activities, and top exposed device data. 
 

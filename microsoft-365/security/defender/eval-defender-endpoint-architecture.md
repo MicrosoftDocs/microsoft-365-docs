@@ -28,17 +28,24 @@ ms.technology: m365d
 **Applies to:**
 Microsoft 365 Defender
 
+This article will guide you in the process of setting up the evaluation for Microsoft Defender for Endpoint environment.
+
+For more information about this process, see the [overview article](eval-defender-endpoint-overview.md).
+
+
 Before enabling Microsoft Defender for Endpoint, be sure you understand the architecture and can meet the requirements.
 
 ## Understand the architecture
 
-The following diagram illustrates Microsoft Defender for Endpoint architecture and integrations:
+The following diagram illustrates Microsoft Defender for Endpoint architecture and integrations. 
 
 ![Steps for adding Microsoft Defender for Office to the Defender evaluation environment](../../media/defender/m365-defender-endpoint-architecture.png)
 
+The following table describes the illustration.
+
 Call-out | Description
 :---|:---|
-1 | Devices are on-boarded via Microsoft Intune, Microsoft Endpoint Configuration Manager, etc.
+1 | Devices are on-boarded through one of the supported management tools. 
 2 | On-boarded devices provide and respond to Microsoft Defender for Endpoint signal data.
 3 | Managed devices are joined and/or enrolled in Azure Active Directory.
 4 | Domain-joined Windows 10 devices are synchronized to Azure Active Directory using Azure Active Directory Connect.
@@ -57,6 +64,16 @@ Behavioral Blocking and Containment | Behavioral blocking and containment capabi
 Automated Investigation and Response | Automated investigation uses various inspection algorithms based on processes that are used by security analysts and designed to examine alerts and take immediate action to resolve breaches. | [Use automated investigations to investigate and remediate threats \| Microsoft Docs](/defender-endpoint/automated-investigations)
 Advanced Hunting | Advanced hunting is a query-based threat-hunting tool that lets you explore up to 30 days of raw data so that you can proactively inspect events in your network to locate threat indicators and entities. | [Overview of advanced hunting \| Microsoft Docs](/defender-endpoint/advanced-hunting-overview)
 Threat Analytics | Threat analytics is a set of reports from expert Microsoft security researchers covering the most relevant threats. | [Track and respond to emerging threats \| Microsoft Docs](/defender-endpoint/threat-analytics)
+
+
+For more detailed information about the capabilities included with Microsoft Defender for Endpoint, see [What is Microsoft Defender for Endpoint](/defender-endpoint/microsoft-defender-endpoint).
+
+## SIEM integration
+
+You can integrate Microsoft Defender for Endpoint with Azure Sentinel to more comprehensively analyze security events across your organization and build playbooks for effective and immediate response. 
+
+Microsoft Defender for Endpoint can also be integrated into other Security Information and Event Management (SIEM) solutions. For more information, see [Enable SIEM integration in Microsoft Defender for Endpoint](/defender-endpoint/enable-siem-integration).
+
 
 ## Next steps
 - [Enable the evaluation](eval-defender-endpoint-enable-eval.md)
