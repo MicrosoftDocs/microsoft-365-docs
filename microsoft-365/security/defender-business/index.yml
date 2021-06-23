@@ -28,8 +28,8 @@ landingContent:
             url: mdb-overview.md
       - linkListType: linkListType
         links:
-          - text: linktext1
-            url: file1.md
+          - text: Compare Defender for business to Microsoft 365 Business Premium
+            url: compare-mdb-m365bp.md
           - text: linktext2
             url: file2.md
 
