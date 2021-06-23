@@ -47,7 +47,7 @@ Updates are released monthly using a gradual release process. This process helps
 
 ## Microsoft gradual rollout model
 
-The following gradual rollout model is followed:
+The following gradual rollout model is followed for monthly Defender updates:
 
 1. The first release goes out to Beta channel subscribers.
 2. After validation, feedback, and fixes, we start the gradual rollout process in a throttled way and to Preview channel subscribers first.
@@ -84,7 +84,7 @@ The following update channels are available:
 
 ### Update channels for daily definition updates
 
-You can assign a machine to an update channel to define the cadence in which a machine receives daily definition updates.
+You can also assign a machine to a channel to define the cadence in which it receives daily definition updates. Note that unlike the monthly process, there is no Beta channel and this gradual release cycle occurs multiple times a day.
   
 | Channel name  | Description  | Application  |
 |-|-|-|
