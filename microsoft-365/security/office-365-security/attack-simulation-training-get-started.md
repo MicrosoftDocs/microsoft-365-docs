@@ -41,11 +41,11 @@ If your organization has Microsoft 365 E5 or Microsoft Defender for Office 365 P
 
 - For more information about the availability of Attack simulation training across different Microsoft 365 subscriptions, see [Microsoft Defender for Office 365 service description](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
 
-- You need to be assigned permissions in the Security & Compliance Center or in Azure Active Directory before you can do the procedures in this article. Specifically, you need to be a member of **Organization Management**, **Security Administrator**, or one of the following roles:
+- You need to be assigned permissions in the Microsoft 365 Defender portal or in Azure Active Directory before you can do the procedures in this article. Specifically, you need to be a member of **Organization Management**, **Security Administrator**, or one of the following roles:
   - **Attack Simulator Administrators**: Create and managed all aspects of attack simulation campaigns.
   - **Attack Simulator Payload Authors**: Create attack payloads that an admin can initiate later.
 
-  For more information, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md) or [About admin roles](../../admin/add-users/about-admin-roles.md).
+  For more information, see [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md) or [About admin roles](../../admin/add-users/about-admin-roles.md).
 
 - There are no corresponding PowerShell cmdlets for Attack simulation training.
 

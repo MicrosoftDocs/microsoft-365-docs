@@ -153,7 +153,9 @@ To view the report in the Microsoft 365 Defender portal, go to **Reports** \> **
 
 ### Type view for the Mailflow status report
 
-When you open the report, the **Type** tab is selected by default. By default, this view contains a chart and a details table that's configured with the following filters:
+![Type view in the Mailflow status report](../../media/mail-flow-status-report-type-view.png)
+
+On the **Mailflow status report** page, the **Type** tab is selected by default. By default, this view contains a chart and a details table that's configured with the following filters:
 
 - **Date (UTC)** The last 7 days.
 - **Mail direction**:
@@ -171,7 +173,7 @@ When you open the report, the **Type** tab is selected by default. By default, t
 
 The chart is organized by the **Type** values.
 
-You can change these filters by clicking **Filter** or by clicking a value in the chart legend.
+You can change these filters by clicking **Filter**.
 
 The following information is shown in the details table below the graph:
 
@@ -196,9 +198,9 @@ For the detail view, you can only export data for one day. So, if you want to ex
 
 Each exported .csv file is limited to 150,000 rows. If the data for that day contains more than 150,000 rows, then multiple .csv files will be created.
 
-![Type view in the Mailflow status report](../../media/mail-flow-status-report-type-view.png)
-
 ### Direction view for the Mailflow status report
+
+![Direction view in the Mailflow status report](../../media/mail-flow-status-report-direction-view.png)
 
 If you click the **Direction** tab, the same default filters from the **Type** view are used.
 
@@ -216,11 +218,11 @@ For the detail view, you can only export data for one day. So, if you want to ex
 
 Each exported .csv file is limited to 150,000 rows. If the data for that day contains more than 150,000 rows, then multiple .csv files will be created.
 
-![Direction view in the Mailflow status report](../../media/mail-flow-status-report-direction-view.png)
-
 ### Funnel view for the Mailflow status report
 
 The **Funnel** view shows you how Microsoft's email threat protection features filter incoming and outgoing email in your organization. It provides details on the total email count, and how the configured threat protection features, including edge protection, anti-malware, anti-phishing, anti-spam, and anti-spoofing affect this count.
+
+![Funnel view in the Mailflow status report](../../media/mail-flow-status-report-funnel-view.png)
 
 If you click the **Funnel** tab, by default, this view contains a chart and a details table that's configured with the following filters:
 
@@ -285,8 +287,6 @@ After you click **Export** under **Options**, you can select one of the followin
 Under **Date**, choose a range, and then click **Apply**. Data for the current filters will be exported to a .csv file.
 
 Each exported .csv file is limited to 150,000 rows. If the data contains more than 150,000 rows, then multiple .csv files will be created.
-
-![Funnel view in the Mailflow status report](../../media/mail-flow-status-report-funnel-view.png)
 
 ### Tech view for the Mailflow status report
 
@@ -456,14 +456,23 @@ The chart shows the following information:
 On the **Submissions** page, you can filter both the chart and the details table by clicking **Filter** and selecting one or more of the following values:
 
 - **Date reported**: **Start time** and **End time**
-- **Submission type**: **Email**, **URL**, or **File**
+- **Submission type**:
+  - **Email**
+  - **URL**
+  - **File**
 - **Submission ID**
 - **Network Message ID**
 - **Sender**
 - **Name**
 - **Submitted by**
-- **Reason for submitting**: **Not junk**, **Phish**, **Malware**, or **Spam**
-- **Rescan status**: **Pending** or **Completed**
+- **Reason for submitting**:
+  - **Not junk**
+  - **Phish**
+  - **Malware**
+  - **Spam**
+- **Rescan status**:
+  - **Pending**
+  - **Completed**
 
 The details table below the graph shows the same information and has the same **Group** or **Customize columns** options as on the **Submitted for analysis** tab at **Email & collaboration** \> **Submissions**. For more information, see [View admin submissions to Microsoft](admin-submission.md#view-admin-submissions-to-microsoft).
 
@@ -768,7 +777,7 @@ If you click **Filter**, you can specify a date range with **Start date** and **
 
 ## URL threat protection report
 
-The **URL threat protection report** is available in Microsoft Defender for Office 365. For more information, see [URL threat protection report](view-reports-for-mdo.md#url-threat-protection-report).
+The **URL threat protection report** is available only in Microsoft Defender for Office 365. For more information, see [URL threat protection report](view-reports-for-mdo.md#url-threat-protection-report).
 
 ## User reported messages report
 
@@ -835,7 +844,7 @@ In order to view and use the reports described in this article, you need to be a
 - **Security Reader**
 - **Global Reader**
 
-For more information, see [Permissions in the Microsoft 365 Defender portal](permissions-in-the-security-and-compliance-center.md).
+For more information, see [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).
 
 **Note**: Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions in the Microsoft 365 Defender portal _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
 
