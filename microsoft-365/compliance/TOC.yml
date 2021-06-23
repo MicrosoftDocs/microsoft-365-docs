@@ -160,10 +160,10 @@
           href: sensitivity-labels-teams-groups-sites.md
         - name: Enable sensitivity labels for Office files in SharePoint and OneDrive
           href: sensitivity-labels-sharepoint-onedrive-files.md
-        - name: Manage sensitivity labels in Office apps
-          href: sensitivity-labels-office-apps.md
         - name: Enable co-authoring for documents encrypted by sensitivity labels (preview)
           href: sensitivity-labels-coauthoring.md
+        - name: Manage sensitivity labels in Office apps
+          href: sensitivity-labels-office-apps.md
     - name: Encryption
       items: 
         - name: Understand encryption
@@ -433,8 +433,6 @@
               href: archive-webexteams-data.md
             - name: Webpages
               href: archive-webpagecapture-data.md
-            - name: WeChat
-              href: archive-wechat-data.md
             - name: Workplace from Facebook
               href: archive-workplacefromfacebook-data.md    
             - name: XIP
@@ -447,15 +445,15 @@
               href: archive-zoommeetings-data.md
         - name: TeleMessage data connectors
           items:  
-            - name: Android
+            - name: Android Archiver
               href: archive-android-archiver-data.md
-            - name: AT&T Network
+            - name: AT&T SMS/MMS Network Archiver
               href: archive-att-network-archiver-data.md
-            - name: Bell Network
+            - name: Bell SMS/MMS Network Archiver
               href: archive-bell-network-data.md
-            - name: Enterprise Number 
+            - name: Enterprise Number Archiver
               href: archive-enterprise-number-data.md
-            - name: O2 Network
+            - name: O2 Telefonica SMS and Voice Network Archiver
               href: archive-o2-network-data.md
             - name: Signal (preview)
               href: archive-signal-archiver-data.md
@@ -463,12 +461,50 @@
               href: archive-telegram-archiver-data.md
             - name: TELUS Network
               href: archive-telus-network-data.md
-            - name: Verizon Network
+            - name: Verizon SMS/MMS Network Archiver
               href: archive-verizon-network-data.md
-            - name: WeChat
+            - name: WeChat Archiver
               href: archive-wechat-data.md
-            - name: WhatsApp
+            - name: WhatsApp Archiver
               href: archive-whatsapp-data.md
+        - name: 17a-4 data connectors
+          items:
+            - name: BlackBerry DataParser (preview)
+              href: archive-17a-4-blackberry-data.md
+            - name: Bloomberg DataParser (preview)
+              href: archive-17a-4-bloomberg-data.md
+            - name: Cisco Jabber DataParser (preview)
+              href: archive-17a-4-cisco-jabber-data.md
+            - name: Cisco Webex DataParser (preview)
+              href: archive-17a-4-webex-teams-data.md
+            - name: FactSet DataParser (preview)
+              href: archive-17a-4-factset-data.md
+            - name: Fuze DataParser (preview)
+              href: archive-17a-4-fuze-data.md
+            - name: FX Connect DataParser (preview)
+              href: archive-17a-4-fxconnect-data.md
+            - name: ICE DataParser (preview)
+              href: archive-17a-4-ice-im-data.md
+            - name: InvestEdge DataParser (preview)
+              href: archive-17a-4-investedge-data.md
+            - name: LivePerson Conversational Cloud DataParser (preview)
+              href: archive-17a-4-liveperson-data.md
+            - name: Quip DataParser (preview)
+              href: archive-17a-4-quip-data.md
+            - name: Refinitiv Eikon Messenger DataParser (preview)
+              href: archive-17a-4-refinitiv-messenger-data.md
+            - name: ServiceNow DataParser (preview)
+              href: archive-17a-4-servicenow-data.md
+            - name: Slack DataParser (preview)
+              href: archive-17a-4-slack-data.md
+            - name: Symphony DataParser (preview)
+              href: archive-17a-4-symphony-data.md
+            - name: Zoom DataParser (preview)
+              href: archive-17a-4-zoom-data.md
+        - name: CellTrust connectors
+          items:
+            - name: CellTrust SL2 (preview)
+              href: archive-data-from-celltrustsl2.md
         - name: Work with a partner to archive third-party data
           href: work-with-partner-to-archive-third-party-data.md
         - name: Search for third-party data

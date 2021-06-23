@@ -226,7 +226,7 @@ Creating a custom anti-phishing policy in the Microsoft 365 Defender portal crea
        - **Quarantine the message**
 
    - **Safety tips & indicators**: Configure the following settings:
-     - **Show first contact safety tip**: This safety tip replaces the need to create mail flow rules (also known as transport rules) that add the header named **X-MS-Exchange-EnableFirstContactSafetyTip** with the value **Enable** to messages.
+     - **Show first contact safety tip**: For more information, see [First contact safety tip](set-up-anti-phishing-policies.md#first-contact-safety-tip).
      - **Show user impersonation safety tip**: This setting is available only if you selected **Enable users to protect** on the previous page.
      - **Show domain impersonation safety tip**: This setting is available only if you selected **Enable domains to protect** on the previous page.
      - **Show user impersonation unusual characters safety tip** This setting is available only if you selected **Enable users to protect** or **Enable domains to protect** on the previous page.
@@ -319,9 +319,11 @@ When you use the Microsoft 365 Defender portal to remove a custom anti-phishing 
 
 1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Policies** section \> **Anti-phishing**.
 
-2. Select a custom policy from the list by clicking on the name of the policy. At the top of the policy details flyout that appears, click ![More actions icon](../../media/m365-cc-sc-more-actions-icon.png) **More actions** \> ![Delete policy icon](../../media/m365-cc-sc-delete-icon.png) **Delete policy**.
+2. On the **Anti-phishing** page, select a custom policy from the list by clicking on the name of the policy.
 
-3. In the confirmation dialog that appears, click **Yes**.
+3. At the top of the policy details flyout that appears, click ![More actions icon](../../media/m365-cc-sc-more-actions-icon.png) **More actions** \> ![Delete policy icon](../../media/m365-cc-sc-delete-icon.png) **Delete policy**.
+
+4. In the confirmation dialog that appears, click **Yes**.
 
 ## Use Exchange Online PowerShell to configure anti-phishing policies
 

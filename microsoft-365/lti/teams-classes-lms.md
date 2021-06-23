@@ -60,8 +60,6 @@ As a Blackboard Learn Ultra admin, you'll need to register 2 LTI 1.3 integration
 
 4. Enter the first of the Client IDs provided (either Blackboard or Microsoft), and select **Submit**.
 
-   ![the LTI register tool with a field to enter the client id](../media/lti-media/register-tool.png)
-
 5. Review the pre-populated settings and ensure that the tool status is marked as approved.
 
 6. Scroll to the bottom, and then select **Submit**.
