@@ -66,7 +66,7 @@ The following table compares the key capabilities available in Content search, C
 |Predictive coding models|||![Supported](../media/check-mark.png)|
 |Computed document metadata|||![Supported](../media/check-mark.png)|
 |Transparency of long-running jobs|||![Supported](../media/check-mark.png)|
-|Export to customer-owned Azure Storage location|||![Supported](../media/check-mark.png)|||||![Supported](../media/check-mark.png)|
+|Export to customer-owned Azure Storage location|||![Supported](../media/check-mark.png)|
 |||||
 
 Here's description of each eDiscovery capability.
