@@ -104,7 +104,7 @@ Here are the capabilities for each role.
 | Security Reader  | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) |  | ![Check mark](..\media\checkmark.png) |  | ![Check mark](..\media\checkmark.png) |  | ![Check mark](..\media\checkmark.png) | |
 |||||||||| | |
 
-For additional information about each role, see [Administrator role permissions](https://docs.microsoft.com/azure/active-directory/roles/permissions-reference).
+For additional information about each role, see [Administrator role permissions](/azure/active-directory/roles/permissions-reference).
 
 ## A first glimpse at app governance
 
