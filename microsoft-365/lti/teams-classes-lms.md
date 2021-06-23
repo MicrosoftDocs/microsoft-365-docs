@@ -1,5 +1,5 @@
 ---
-title: Use Microsoft Teams classes in your Learning Management System
+title: Use Microsoft Teams classes with Blackboard
 ms.author: v-cichur
 author: cichur
 manager: serdars
@@ -16,12 +16,12 @@ description: "Integrate Microsoft Teams classes in your Learning Management Syst
 ---
 
 
-# Use Microsoft Teams classes in your Learning Management System
+# Use Microsoft Teams classes with Blackboard
 
 > [!IMPORTANT]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-Microsoft Teams class teams is a Learning Tools Interoperability (LTI) app that helps educators and students easily navigate between their Learning Management System (LMS) and Teams. Users can access their class teams associated with their course directly from within their LMS.
+Microsoft Teams classes is a Learning Tools Interoperability (LTI) app that helps educators and students easily navigate between their Learning Management System (LMS) and Teams. Users can access their class teams associated with their course directly from within their LMS.
 
 ## Approve the app in the Microsoft Azure tenant
 
@@ -33,7 +33,7 @@ Before managing the integration within Blackboard Learn Ultra, the Microsoft Off
 
 2. Redirect the Microsoft Identity Platform Admin Consent Endpoint according to the following example:
 
-   `https://login.microsoftonline.com/{tenant}/adminconsent?client\_id=2d94989f-457a-47c1-a637-e75acdb11568`
+   `https://login.microsoftonline.com/{tenant}/adminconsent?client_id=2d94989f-457a-47c1-a637-e75acdb11568`
 
    > [!NOTE]
    > Replace {tenant} with your organization’s Microsoft tenant ID.
@@ -59,8 +59,6 @@ As a Blackboard Learn Ultra admin, you'll need to register 2 LTI 1.3 integration
 3. Select **Register LTI1.3/Advantage Tool**.
 
 4. Enter the first of the Client IDs provided (either Blackboard or Microsoft), and select **Submit**.
-
-   ![the LTI register tool with a field to enter the client id](../media/lti-media/register-tool.png)
 
 5. Review the pre-populated settings and ensure that the tool status is marked as approved.
 

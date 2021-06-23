@@ -1,5 +1,5 @@
 ---
-title: "Manage contracts using a Microsoft 365 solution"
+title: Manage contracts using a Microsoft 365 solution
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -8,11 +8,13 @@ audience: admin
 ms.topic: article
 ms.date: 
 ms.prod: microsoft-365-enterprise
-ms.collection: m365solution-managecontracts
+ms.collection: 
+    m365solution-managecontracts
+    m365solution-overview
 search.appverid: 
 localization_priority: None
 ROBOTS: 
-description: "Learn how to manage contracts using a Microsoft 365 solution of SharePoint Syntex, SharePoint Lists, Microsoft Teams, and Power Automate."
+description: Learn how to manage contracts using a Microsoft 365 solution of SharePoint Syntex, SharePoint Lists, Microsoft Teams, and Power Automate.
 ---
 
 # Manage contracts using a Microsoft 365 solution

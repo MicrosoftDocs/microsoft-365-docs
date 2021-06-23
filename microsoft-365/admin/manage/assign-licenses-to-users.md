@@ -124,11 +124,12 @@ When you use the **Active users** page to assign licenses, you assign users lice
 
 
 2. Select the circles next to the names of the users that you want to assign licenses to.
-3. At the top, select the three dots (more actions), then select **Manage product licenses**.
-4. In the **Manage product licenses** pane, select **Add to existing product license assignments** \> **Next**.
-5. In the **Add to existing products** pane, switch the toggle to the **On** position for the license that you want the selected users to have.\
-    By default, all services associated with those licenses are automatically assigned to the users. You can limit which services are available to the users. Switch the toggles to the **Off** position for the services that you don't want the users to have.
-6. At the bottom of the pane, select **Add** \> **Close**.  
+3. At the top, select **Manage product licenses**.
+4. In the **Manage product licenses** pane, select **Assign more: Keep the existing licenses and assign more** \> **Next**.
+5. Under **Licenses**, select the box for the license(s) that you want the selected users to have.\
+    By default, all services associated with those licenses are automatically assigned to the users. You can limit which services are available to the users. Deselect the boxes for the services that you don't want the users to have.
+6. At the bottom of the pane, select **Save changes**.  
+    You might have to buy additional licneses if you don't have enough licenses for everyone.
 
 
 > [!NOTE]

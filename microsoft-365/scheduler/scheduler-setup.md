@@ -49,7 +49,7 @@ To discover which mailbox in your organization is currently set as the Cortana S
  
 ```powershell
 
-Get-mailbox -Organization contoso.com | where {($_.PersistedCapabilities -like "SchedulerAssistant")}
+Get-mailbox | where {$_.PersistedCapabilities -Match "SchedulerAssistant"}
 
 ```
 
