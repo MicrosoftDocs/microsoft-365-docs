@@ -78,4 +78,8 @@ Endpoint | Tool options
 
 
 ## Next step
- - [Setup the pilot for Microsoft Defender for Endpoint](eval-defender-endpoint-pilot.md)
+[Setup the pilot for Microsoft Defender for Endpoint](eval-defender-endpoint-pilot.md)
+ 
+Return to the overview for [Evaluate Microsoft Defender for Endpoint](eval-defender-endpoint-overview.md)
+
+Return to the overview for [Evaluate and pilot Microsoft 365 Defender](eval-overview.md)
