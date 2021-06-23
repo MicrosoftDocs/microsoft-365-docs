@@ -489,7 +489,7 @@
               href: archive-17a-4-liveperson-data.md
             - name: Quip DataParser (preview)
               href: archive-17a-4-quip-data.md
-            - name: Refinitiv Messenger DataParser (preview)
+            - name: Refinitiv Eikon Messenger DataParser (preview)
               href: archive-17a-4-refinitiv-messenger-data.md
             - name: ServiceNow DataParser (preview)
               href: archive-17a-4-servicenow-data.md
