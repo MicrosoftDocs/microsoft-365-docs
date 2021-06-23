@@ -34,7 +34,7 @@ The following image depicts what the **Devices** tab looks like when you have Mi
 
 ![When Microsoft Defender for Endpoint is enabled, you can see a list of devices with alerts.](../../media/fec928ea-8f0c-44d7-80b9-a2e0a8cd4e89.PNG)
 
-In this example, you can see that the recipients of the detected email message have four devices and one has an alert. Clicking the link for a device opens its page in [Microsoft 365 Defender](../defender-endpoint/microsoft-defender-security-center.md) (formerly the Microsoft Defender security center).
+In this example, you can see that the recipients of the detected email message have four devices and one has an alert. Clicking the link for a device opens its page in [the Microsoft 365 Defender portal](../defender-endpoint/microsoft-defender-security-center.md) (formerly the Microsoft Defender security center).
 
 > [!TIP]
 > The Microsoft 365 Defender portal replaces the Microsoft Defender Security Center. See [Microsoft Defender for Endpoint in Microsoft 365 Defender](../defender/microsoft-365-security-center-mde.md).
@@ -51,21 +51,19 @@ In this example, you can see that the recipients of the detected email message h
 
 Integrating Microsoft Defender for Office 365 with Microsoft Defender for Endpoint is set up in both Defender for Endpoint and Defender for Office 365.
 
-1. As a global administrator or a security administrator,<https://security.microsoft.com/threatexplorer>.
+1. As a global administrator or a security administrator, open the Microsoft 365 Defender portal (<https://security.microsoft.com>) and go to **Email & collaboration** \> **Explorer**. To go directly to the **Explorer** page, use <https://security.microsoft.com/threatexplorer>.
 
-2. In the navigation pane, choose **Email & collaboration** \> **Explorer**.
+2. On the **Explorer** page, in the upper right corner of the screen, click **MDE Settings**.
 
-3. On the **Explorer** page, in the upper right corner of the screen, click **MDE Settings**.
-
-4. In the **Microsoft Defender for Endpoint connection** flyout that appears, turn on **Connect to Microsoft Defender for Endpoint** (![Toggle on](../../media/scc-toggle-on.png)) and then click ![Close icon](../../media/m365-cc-sc-close-icon.png) **Close**.
+3. In the **Microsoft Defender for Endpoint connection** flyout that appears, turn on **Connect to Microsoft Defender for Endpoint** (![Toggle on](../../media/scc-toggle-on.png)) and then click ![Close icon](../../media/m365-cc-sc-close-icon.png) **Close**.
 
     :::image type="content" source="../../media/explorer-mdeconnection-dialognew.png" alt-text="MDE Connection":::
 
-5. Back in the navigation pane, choose **Settings**. On the **Settings** page, choose **Endpoints**
+4. Back in the navigation pane, choose **Settings**. On the **Settings** page, choose **Endpoints**
 
-6. On the **Endpoints** page that opens, choose **Advanced features**.
+5. On the **Endpoints** page that opens, choose **Advanced features**.
 
-7. Scroll down to **Office 365 Threat Intelligence connection**, and turn it on (![Toggle on](../../media/scc-toggle-on.png)).
+6. Scroll down to **Office 365 Threat Intelligence connection**, and turn it on (![Toggle on](../../media/scc-toggle-on.png)).
 
    When you're finished, click **Save preferences**.
 
