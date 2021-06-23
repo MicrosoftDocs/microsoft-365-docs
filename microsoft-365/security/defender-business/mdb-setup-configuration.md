@@ -36,42 +36,37 @@ The following table lists the basic requirements for Microsoft Defender for busi
 
 ## Get Microsoft Defender for business
 
-If you don’t already have Microsoft Defender for business, you can sign up for a free trial or buy a subscription. The first person to sign your company up is a global administrator (also referred as the global admin). The global admin can purchase licenses, upgrade services, set up user accounts, and configure settings for your organization. To learn more, see Microsoft 365 Business Premium Setup.
+If you don’t already have Microsoft Defender for business, you can sign up for a free trial or buy a subscription. The first person to sign your company up is a global administrator (also referred as the global admin). The global admin can purchase licenses, upgrade services, set up user accounts, and configure settings for your organization. To learn more, see [Microsoft 365 Business Premium Setup](../../business-video/setup-overview.md).
 
 1.	Go to the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)), and sign in.
 
-2.	In the navigation bar, go to Billing. 
+2.	In the navigation bar, go to **Billing**. 
 
-3.	To view your current subscription(s), select Your products.
+3.	To view your current subscription(s), select **Your products**.
 
-4.	To add a subscription, such as Microsoft Defender for business, choose Purchase services. Search for Microsoft Defender for business, and then complete the purchase process.
+4.	To add a subscription, such as Microsoft Defender for business, choose **Purchase services**. Search for *Microsoft Defender for business*, and then complete the purchase process.
 
 ## Assign roles and permissions
 
 In order for your security team to perform tasks in the Microsoft 365 Defender portal, such as configuring Microsoft Defender for business, or taking response actions on detected threats, appropriate permissions must be assigned. Microsoft recommends granting people access to only what they need to perform their tasks. We call this the concept of least privileges for permissions. 
-Table 4 describes roles to consider as you plan for Microsoft Defender for business. Learn more about admin roles. 
 
-Table 2. Roles for Microsoft Defender for business
-Permission level	Description
-Global administrators (also referred 
-to as global admins)
-As a best practice, limit the number 
-of global administrators.	•	The person who signed your company up for Microsoft 365 or Microsoft Defender for business is a global administrator by default.
-•	Able to access/change settings across all Microsoft 365 portals, including the Microsoft 365 admin center (https://admin.microsoft.com) and the Microsoft 365 Defender portal (https://security.microsoft.com). 
-Security administrators (also referred 
-to as security admins)	•	Monitor security-related policies across Microsoft 365 services
-•	Manage security threats and alerts
-•	View reports
-Security operator	•	All permissions of the Security Reader role
-•	View, investigate, and respond to security threats alerts
-Security reader	•	View security-related policies across Microsoft 365 services
-•	View security threats and alerts
-•	View reports
+The following table describes roles to consider as you plan for Microsoft Defender for business. [Learn more about admin roles](../../admin/add-users/about-admin-roles.md). 
 
-Choose where to manage your policies and settings
+| Permission level | Description |
+|:---|:---|
+| Global administrators (also referred to as global admins) <p> As a best practice, limit the number 
+of global administrators. | The person who signed your company up for Microsoft 365 or Microsoft Defender for business is a global administrator by default. <p> Able to access/change settings across all Microsoft 365 portals, including the Microsoft 365 admin center (https://admin.microsoft.com) and the Microsoft 365 Defender portal (https://security.microsoft.com). |
+| Security administrators (also referred to as security admins) | Monitor security-related policies across Microsoft 365 services <p> Manage security threats and alerts <p> View reports |
+| Security operator | All permissions of the Security Reader role <p> View, investigate, and respond to security threats alerts |
+| Security reader | View security-related policies across Microsoft 365 services <p> View security threats and alerts <p> View reports |
+
+## Choose where to manage your policies and settings
+
 You can manage your security policies and settings using one of two methods/locations:
-•	The Microsoft 365 Defender portal
-•	Microsoft Endpoint Manager (MEM, which includes Microsoft Intune)
+
+- The Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com))
+- Microsoft Endpoint Manager, which includes Microsoft Intune ([]())
+
 When you begin to use Microsoft Defender for business, you will be asked whether you want to use MEM or your Microsoft 365 Defender portal. We recommend using the Microsoft 365 Defender portal and its wizard-like experience for managing your devices and security settings. 
 The security policies and settings that you configure in the Microsoft 365 Defender portal are synched to Microsoft Endpoint Manager, enabling you to use the method that you prefer. 
 Microsoft Defender for business is designed to help you manage your company’s endpoint protection capabilities without requiring a lot of time or a security background, making it easier for you to focus on running your business.
