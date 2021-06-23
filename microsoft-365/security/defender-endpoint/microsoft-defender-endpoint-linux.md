@@ -40,7 +40,7 @@ This topic describes how to install, configure, update, and use Microsoft Defend
 
 ### Prerequisites
 
-- Access to the Microsoft Defender Security Center portal
+- Access to the Microsoft 365 Defender portal
 - Linux distribution using the [systemd](https://systemd.io/) system manager
 - Beginner-level experience in Linux and BASH scripting
 - Administrative privileges on the device (in case of manual deployment)

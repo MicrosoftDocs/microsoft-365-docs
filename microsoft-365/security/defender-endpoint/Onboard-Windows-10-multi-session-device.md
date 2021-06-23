@@ -60,7 +60,7 @@ This scenario uses a centrally located script and runs it using a domain-based g
 
 1. Open the VDI configuration package .zip file (WindowsDefenderATPOnboardingPackage.zip)  
 
-    1. In the Microsoft Defender Security Center navigation pane, select **Settings** > **Onboarding**. 
+    1. In the Microsoft 365 Defender navigation pane, select **Settings** > **Onboarding**. 
     1. Select Windows 10 as the operating system. 
     1. In the **Deployment method** field, select VDI onboarding scripts for non-persistent endpoints. 
     1. Click **Download package** and save the .zip file. 
