@@ -49,7 +49,7 @@ The basic elements of a Safe Links policy are:
 - **The safe links policy**: Turn on Safe Links protection, turn on real-time URL scanning, specify whether to wait for real-time scanning to complete before delivering the message, turn on scanning for internal messages, specify whether to track user clicks on URLs, and specify whether to allow users to click trough to the original URL.
 - **The safe links rule**: Specifies the priority and recipient filters (who the policy applies to).
 
-The difference between these two elements isn't obvious when you manage Safe Links polices in the Microsoft 365 Defender portal:
+The difference between these two elements isn't obvious when you manage Safe Links policies in the Microsoft 365 Defender portal:
 
 - When you create a Safe Links policy, you're actually creating a safe links rule and the associated safe links policy at the same time using the same name for both.
 - When you modify a Safe Links policy, settings related to the name, priority, enabled or disabled, and recipient filters modify the safe links rule. All other settings modify the associated safe links policy.
@@ -106,7 +106,7 @@ Creating a custom Safe Links policy in the Microsoft 365 Defender portal creates
 
    Multiple values in the same condition use OR logic (for example, _\<recipient1\>_ or _\<recipient2\>_). Different conditions use AND logic (for example, _\<recipient1\>_ and _\<member of group 1\>_).
 
-   - **Exclude these users, groups, and domains**: To add exceptions for the internal recipients that the policy applies to (recpient exceptions), select this option and configure the exceptions. The settings and behavior are exactly like the conditions.
+   - **Exclude these users, groups, and domains**: To add exceptions for the internal recipients that the policy applies to (recipient exceptions), select this option and configure the exceptions. The settings and behavior are exactly like the conditions.
 
    When you're finished, click **Next**.
 
@@ -134,7 +134,7 @@ Creating a custom Safe Links policy in the Microsoft 365 Defender portal creates
 
 6. On the **Notification** page that appears, select one of the following values for **How would you like to notify your users?**:
    - **Use the default notification text**
-   - **Use custom notification text**: If you select this value (the lenght cannot exceed 200 characters), the following settings appear:
+   - **Use custom notification text**: If you select this value (the length cannot exceed 200 characters), the following settings appear:
      - **Use Microsoft Translator for automatic localization**
      - **Custom notification text**: Enter the custom notification text in this box.
 
