@@ -32,7 +32,7 @@ ms.reviewer: evaldm, isco
 
 With Microsoft 365 Defender, when an [automated investigation](m365d-autoir.md) runs, details about that investigation are available both during and after the automated investigation process. If you have the [necessary permissions](m365d-action-center.md#required-permissions-for-action-center-tasks), you can view those details in an investigation details view. This view provides you with up-to-date status and the ability to approve any pending actions. 
 
-![Investigation details](../../media/mtp-air-investdetails.png)
+:::image type="content" source="../../media/mtp-air-investdetails.png" alt-text="Investigation details":::
 
 ## (NEW!) Unified investigation page
 
@@ -40,7 +40,7 @@ The investigation page has recently been updated to include information across y
 
 - Any investigation page in the Office 365 Security & Compliance Center ([https://protection.office.com](https://protection.office.com))
 - Any investigation page in the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com))
-- Any incident or Action center experience in the Microsoft 365 security center ([https://security.microsoft.com](https://security.microsoft.com))
+- Any incident or Action center experience in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com))
 
 ## Open the investigation details view
 
@@ -84,13 +84,13 @@ Use an incident details page to view detailed information about an incident, inc
 
 Here's an example.
 
-![Incident details](../../media/mtp-incidentdetails-tabs.png)
+:::image type="content" source="../../media/mtp-incidentdetails-tabs.png" alt-text="Incident details":::
 
 ## Investigation details
 
 Use the investigation details view to see past, current, and pending activity pertaining to an investigation. Here's an example.
 
-![Investigation details](../../media/mtp-air-investdetails.png)
+:::image type="content" source="../../media/mtp-air-investdetails.png" alt-text="Investigation details":::
 
 In the Investigation details view, you can see information on the **Investigation graph**, **Alerts**, **Devices**, **Identities**, **Key findings**, **Entities**, **Log**, and **Pending actions** tabs, described in the following table.
 

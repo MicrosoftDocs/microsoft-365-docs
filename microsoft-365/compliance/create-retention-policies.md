@@ -68,7 +68,7 @@ When you have more than one retention policy, and when you also use retention la
 3. For the **Choose locations to apply the policy** page, select any or all of the locations for Teams:
     - **Teams channel message**: Messages from standard channel chats and standard channel meetings, but not from [private channels](/microsoftteams/private-channels) that have their own policy location.
     - **Teams chats**: Messages from private 1:1 chats, group chats, and meeting chats.
-    - **Teams private channel messages**: In preview, messages from private channel chats and private channel meetings.
+    - **Teams private channel messages**: Messages from private channel chats and private channel meetings. This option is currently rolling out in preview and if you don't see it displayed, try again in a few days.
     
    By default, [all teams and all users are selected](#a-policy-that-applies-to-entire-locations), but you can refine this by selecting the [**Choose** and **Exclude** options](#a-policy-with-specific-inclusions-or-exclusions). However, before you change the default, be aware of the following consequences for a retention policy that deletes messages when it's configured for includes or excludes:
     
@@ -112,7 +112,7 @@ It's possible that a retention policy that's applied to Microsoft 365 groups, Sh
 ### Retention policy for Yammer locations
 
 > [!NOTE]
-> Retention policies for Yammer are rolling out in preview. If you don't yet see the new locations for Yammer, try again in a few weeks.
+> Retention policies for Yammer are in preview.
 >
 > To use this feature, your Yammer network must be [Native Mode](/yammer/configure-your-yammer-network/overview-native-mode), not Hybrid Mode.
 
@@ -123,8 +123,6 @@ It's possible that a retention policy that's applied to Microsoft 365 groups, Sh
 3. For **Decide if you want to retain content, delete it, or both** page of the wizard, specify the configuration options for retaining and deleting content. 
     
     You can create a retention policy that just retains content without deleting, retains and then deletes after a specified period of time, or just deletes content after a specified period of time. For more information, see [Settings for retaining and deleting content](#settings-for-retaining-and-deleting-content) on this page.
-    
-    Do not select **Use advanced retention settings** because this option isn't supported for Yammer locations. 
 
 4. For the **Choose locations** page, select **Let me choose specific locations**. Then toggle on one or both of the locations for Yammer: **Yammer community message** and **Yammer user messages**.
     
@@ -217,11 +215,11 @@ To return to the default value of both the mailbox and SharePoint site for the s
 
 ### Configuration information for Skype for Business
 
-Unlike Exchange email, you can't toggle the status of the Skype location on to automatically include all users, but when you turn on that location, you must then manually choose the users whose conversations you want to retain:
+Unlike other locations, you can't toggle the status of the Skype location on to automatically include all users. Instead, when you turn on that location, you must then select the **Edit** option to manually choose the users whose conversations you want to retain:
 
-![Choose Skype location for retention policies](../media/skype-location-retention-policies.png)
+![Edit Skype location for retention policies](../media/skype-location-retention-policies.png)
 
-When you select **Choose user**, you can quickly include all users by selecting the **Select all** box. However, it's important to understand that each user counts as a specific inclusion in the policy. So if you include 1,000 users by selecting the **Select all** box, it's the same as if you manually selected 1,000 users to include, which is the maximum supported for Skype for Business.
+After you select this **Edit** option, in the **Skype for Business** pane you can quickly include all users by selecting the hidden box before the **Name** column. However, it's important to understand that each user counts as a specific inclusion in the policy. So if you include 1,000 users by selecting this box, it's the same as if you manually selected 1,000 users to include, which is the maximum supported for Skype for Business.
 
 Be aware that **Conversation History**, a folder in Outlook, is a feature that has nothing to do with Skype archiving. **Conversation History** can be turned off by the end user, but archiving for Skype is done by storing a copy of Skype conversations in a hidden folder that is inaccessible to the user but available to eDiscovery.
 

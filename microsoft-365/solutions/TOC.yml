@@ -13,7 +13,7 @@
       href: architecture-icons-templates.md
 - name: Microsoft 365 foundation solutions 
   items: 
-    - name: Set up your infrastructure for remote work
+    - name: Set up your infrastructure for hybrid work
       items:
       - name: Overview   
         href: empower-people-to-work-remotely.md
@@ -27,7 +27,7 @@
         href: empower-people-to-work-remotely-manage-endpoints.md
       - name: Step 5. Deploy productivity apps and services
         href: empower-people-to-work-remotely-teams-productivity-apps.md
-      - name: Step 6. Train remote workers
+      - name: Step 6. Train your workers
         href: empower-people-to-work-remotely-train-monitor-usage.md
     - name: Set up secure collaboration with Microsoft 365
       items:
@@ -228,7 +228,7 @@
       items:
       - name: Microsoft 365 solutions for the Contoso Corporation
         href: contoso-case-study-solutions.md
-      - name: COVID-19 response and support for remote and onsite work
+      - name: COVID-19 response and support for hybrid work
         href: contoso-remote-onsite-work.md
       - name: Isolated Team for a top-secret project
         href: contoso-team-for-top-secret-project.md

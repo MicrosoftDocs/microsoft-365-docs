@@ -23,7 +23,7 @@ The Windows 10 and Office 365 deployment lab kit is designed to help you plan, t
 
 This kit is highly recommended for organizations preparing for Windows 8.1 upgrades to Windows 10. It also applies if you're currently using Windows 10, Microsoft 365 Apps for enterprise (formerly Office 365 ProPlus), or Office 2019. As an isolated environment, the resulting lab is ideal for exploring deployment tool updates and testing your deployment-related automation.
 
-[Download the Windows and Office Deployment Lab Kit](https://www.microsoft.com/evalcenter/evaluate-lab-kit).
+[Download the Windows 10 and Office 365 deployment lab kit](https://www.microsoft.com/evalcenter/evaluate-lab-kit).
 
 ## A complete lab environment
 
@@ -31,7 +31,7 @@ The kit provides you with an automatically provisioned virtual lab environment, 
 
   - NEW! Windows 10 Enterprise, Version 21H1
   - Windows 7 Enterprise
-  - NEW! Microsoft Endpoint Configuration Manager, Version 2103*
+  - NEW! Microsoft Endpoint Configuration Manager, Version 2103
   - Windows Assessment and Deployment Kit for Windows 10
   - Microsoft Deployment Toolkit
   - Microsoft Application Virtualization (App-V)

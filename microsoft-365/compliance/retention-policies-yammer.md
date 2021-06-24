@@ -24,7 +24,7 @@ description: "Learn about retention policies that apply to Yammer."
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 > [!NOTE]
-> This feature is in preview and not yet available for all customers.
+> This feature is in preview and subject to change.
 
 The information in this article supplements [Learn about retention](retention.md) because it has information that's specific to Yammer.
 
@@ -50,6 +50,9 @@ Yammer messages are not affected by retention policies that are configured for u
 > If a user is included in an active retention policy that retains Yammer data and you a delete a mailbox of a user who is included in this policy, to retain the Yammer data, the mailbox is converted into an [inactive mailbox](inactive-mailboxes-in-office-365.md). If you don't need to retain this Yammer data for the user, exclude the user account from the retention policy before you delete their mailbox.
 
 After a retention policy is configured for Yammer messages, a timer job from the Exchange service periodically evaluates items in the hidden folder where these Yammer messages are stored. The timer job takes up to seven days to run. When these items have expired their retention period, they are moved to the SubstrateHolds folder—a hidden folder that's in every user or group mailbox to store "soft-deleted" items before they are permanently deleted.
+
+> [!NOTE]
+> Because of the [first principle of retention](retention.md#the-principles-of-retention-or-what-takes-precedence), permanent deletion is always suspended if the same item must be retained because of another retention policy, or it is under eDiscovery holds for legal or investigative reasons.
 
 After a retention policy is configured for Yammer messages, the paths the content takes depend on whether the retention policy is to retain and then delete, to retain only, or delete only.
 

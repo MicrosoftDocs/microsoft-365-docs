@@ -11,6 +11,7 @@ author: dansimp
 ms.reviewer: dansimp
 manager: dansimp
 audience: ITPro
+ms.topic: conceptual
 ms.technology: mde
 ---
 

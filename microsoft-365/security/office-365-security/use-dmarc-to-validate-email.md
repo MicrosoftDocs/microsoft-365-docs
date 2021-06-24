@@ -173,7 +173,7 @@ Examples:
     _dmarc.contoso.com  3600 IN  TXT  "v=DMARC1; p=reject"
     ```
 
-Once you have formed your record, you need to update the record at your domain registrar. For instructions on adding the DMARC TXT record to your DNS records for Microsoft 365, see [Create DNS records for Microsoft 365 when you manage your DNS records](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).
+Once you have formed your record, you need to update the record at your domain registrar.
 
 ## DMARC Mail (Public Preview feature)
 > [!CAUTION]
@@ -251,7 +251,7 @@ contoso.com     3600   IN  MX  10 contoso-com.mail.protection.outlook.com
 
 All, or most, email will first be routed to mail.contoso.com since it's the primary MX, and then mail will get routed to EOP. In some cases, you might not even list EOP as an MX record at all and simply hook up connectors to route your email. EOP does not have to be the first entry for DMARC validation to be done. It just ensures the validation, as we cannot be certain that all on-premise/non-O365 servers will do DMARC checks.  DMARC is eligible to be enforced for a customer's domain (not server) when you set up the DMARC TXT record, but it is up to the receiving server to actually do the enforcement.  If you set up EOP as the receiving server, then EOP does the DMARC enforcement.
 
-![A troubleshooting graphic for DMARC, courtesy of Daniel Mande](../../media/Tp_DMARCTroublehoot.png)
+:::image type="content" source="../../media/Tp_DMARCTroublehoot.png" alt-text="A troubleshooting graphic for DMARC, courtesy of Daniel Mande" lightbox="../../media/Tp_DMARCTroublehoot.png":::
 
 ## For more information
 

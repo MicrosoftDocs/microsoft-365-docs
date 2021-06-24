@@ -14,7 +14,7 @@
          href: office-365-evaluation.md
        - name: What's new in Defender for Office 365
          href: whats-new-in-defender-for-office-365.md
-       - name: Defender for Office 365 in the Microsoft 365 security center
+       - name: Defender for Office 365 in the Microsoft 365 Defender portal
          href: ../defender/microsoft-365-security-center-mdo.md
        - name: Exchange Online Protection
          items: 
@@ -26,7 +26,7 @@
               href: quarantine-email-messages.md
        - name: Safe Attachments for SharePoint, OneDrive, and Microsoft Teams
          href: turn-on-mdo-for-spo-odb-and-teams.md
-       - name: Microsoft 365 security center overview
+       - name: Microsoft 365 Defender portal overview
          href: ../defender/overview-security-center.md
        - name: The Email entity page
          href: mdo-email-entity-page.md
@@ -66,7 +66,7 @@
        href: protect-against-threats.md
      - name: Integrate Defender for Office 365 with Defender for Endpoint
        href: integrate-office-365-ti-with-mde.md
-     - name: Permissions in the Microsoft 365 security center
+     - name: Permissions in the Microsoft 365 Defender portal
        href: permissions-microsoft-365-security-center.md
      - name: Permissions in the Security & Compliance Center
        href: permissions-in-the-security-and-compliance-center.md
@@ -349,4 +349,4 @@
    - name: Microsoft Defender for Endpoint
      href: ../defender-endpoint/index.yml
    - name: Microsoft Defender for Identity
-     href: https://docs.microsoft.com/defender-for-identity/
+     href: /defender-for-identity/

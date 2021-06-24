@@ -39,9 +39,8 @@ For other workloads, see:
 ## What's included for retention and deletion
 
 Teams chats messages and channel messages can be deleted by using retention policies for Teams, and in addition to the text in the messages, the following items can be retained for compliance reasons: Embedded images, tables, hypertext links, links to other Teams messages and files, and [card content](/microsoftteams/platform/task-modules-and-cards/what-are-cards). Chat messages include all the names of the people in the chat, and channel messages include the team name and the message title (if supplied). 
-
 > [!NOTE]
-> Support for messages in private channels is currently in public preview.
+> Support for messages in private channels is currently rolling out in preview.
 
 Code snippets, recorded voice memos from the Teams mobile client, thumbnails, announcement images, and reactions from others in the form of emoticons are not retained when you use retention policies for Teams.
 
@@ -66,11 +65,14 @@ Teams uses an Azure-powered chat service as its primary storage for all messages
 Although this data from Teams chats and channel messages are stored in mailboxes, you must configure a retention policy for the **Teams channel messages** and **Teams chats** locations. Teams chats and channel messages are not included in retention policies that are configured for Exchange user or group mailboxes.
 
 > [!NOTE]
-> If a user is included in an active retention policy that retains Teams messages and you a delete a mailbox of a user who is included in this policy, the mailbox is converted into an [inactive mailbox](inactive-mailboxes-in-office-365.md) to retain the Teams data. If you don't need to retain this Teams data for the user, exclude the user account from the retention policy before you delete their mailbox.
+> If a user is included in an active retention policy that retains Teams messages and you delete a mailbox of a user who is included in this policy, the mailbox is converted into an [inactive mailbox](inactive-mailboxes-in-office-365.md) to retain the Teams data. If you don't need to retain this Teams data for the user, exclude the user account from the retention policy before you delete their mailbox.
 
 After a retention policy is configured for chat and channel messages, a timer job from the Exchange service periodically evaluates items in the hidden folder where these Teams messages are stored. The timer job typically takes 1-7 days to run. When these items have expired their retention period, they are moved to the SubstrateHolds folder—another hidden folder that's in every user or group mailbox to store "soft-deleted" items before they are permanently deleted. 
 
 Messages remain in the SubstrateHolds folder for at least 1 day, and then if they are eligible for deletion, the timer job permanently deletes them the next time it runs.
+
+> [!NOTE]
+> Because of the [first principle of retention](retention.md#the-principles-of-retention-or-what-takes-precedence), permanent deletion is always suspended if the same item must be retained because of another retention policy, or it is under eDiscovery holds for legal or investigative reasons.
 
 After a retention policy is configured for chat and channel messages, the paths the content takes depend on whether the retention policy is to retain and then delete, to retain only, or delete only.
 

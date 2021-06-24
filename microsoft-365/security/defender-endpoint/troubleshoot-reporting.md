@@ -7,14 +7,14 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+localization_priority: normal
+ms.topic: article
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: 
 manager: dansimp
 ms.technology: mde
-ms.topic: article
 ---
 
 # Troubleshoot Microsoft Defender Antivirus reporting in Update Compliance
@@ -61,7 +61,7 @@ In order for devices to properly show up in Update Compliance, you have to meet 
 > - If the endpoint is running Windows 10 version 1607 or earlier, [Windows 10 diagnostic data must be set to the Enhanced level](/windows/configuration/configure-windows-diagnostic-data-in-your-organization#enhanced-level).
 > - It has been 3 days since all requirements have been met
 
-“You can use Microsoft Defender Antivirus with Update Compliance. You’ll see status for E3, B, F1, VL, and Pro licenses. However, for E5 licenses, you need to use the Microsoft Defender for Endpoint portal (https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). To learn more about licensing options, see Windows 10 product licensing options"
+“You can use Microsoft Defender Antivirus with Update Compliance. You’ll see status for E3, B, F1, VL, and Pro licenses. However, for E5 licenses, you need to use the Microsoft Defender for Endpoint portal (/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). To learn more about licensing options, see Windows 10 product licensing options"
 
 If the above prerequisites have all been met, you might need to proceed to the next step to collect diagnostic information and send it to us.
 

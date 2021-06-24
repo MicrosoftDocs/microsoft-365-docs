@@ -16,6 +16,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
+ms.custom: api
 ---
 
 # Raw Data Streaming API
@@ -29,7 +30,8 @@ ms.technology: mde
 
 ## Stream Advanced Hunting events to Event Hubs and/or Azure storage account.
 
-Defender for Endpoint supports streaming all the events available through [Advanced Hunting](advanced-hunting-overview.md) to an [Event Hubs](/azure/event-hubs/) and/or [Azure storage account](/azure/event-hubs/).
+
+Microsoft Defender for Endpoint supports streaming events available through [Advanced Hunting](../defender/advanced-hunting-overview.md) to an [Event Hubs](/azure/event-hubs/) and/or [Azure storage account](/azure/storage/common/storage-account-overview).
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4r4ga]
 

@@ -58,5 +58,5 @@ See [Get started with the Microsoft Compliance Extension](dlp-chrome-get-started
 - [Learn about data loss prevention](dlp-learn-about-dlp.md)
 - [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md)
 - [Get started with Activity explorer](data-classification-activity-explorer.md)
-- [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/)
+- [Microsoft Defender for Endpoint](/windows/security/threat-protection/)
 - [Insider Risk management](insider-risk-management.md)
