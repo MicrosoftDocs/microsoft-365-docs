@@ -84,8 +84,6 @@
           items:
             - name: Overview
               href: eval-defender-investigate-respond.md  
-            - name: Add endpoints
-              href: eval-defender-investigate-respond-endpoints.md    
             - name: Simulate an attack
               href: eval-defender-investigate-respond-simulate-attack.md    
             - name: Try additional capabilities

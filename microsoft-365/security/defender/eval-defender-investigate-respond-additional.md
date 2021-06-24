@@ -30,16 +30,91 @@ ms.technology: m365d
 
 This article is [Step 3 of 3](eval-defender-investigate-respond.md) in the process of performing an investigation and response of an incident in Microsoft 365 Defender using a pilot environment. For more information about this process, see the [overview](eval-defender-investigate-respond.md) article.
 
-Once you have performed an [incident response for a simulated attack](eval-defender-investigate-respond-simulate-attack.md), here are some additional Microsoft 365 Defender capabilities to explore.
+Once you have performed an [incident response for a simulated attack](eval-defender-investigate-respond-simulate-attack.md), here are some additional Microsoft 365 Defender capabilities to explore:
 
-| Capability | Description | Link |
-|:-------|:-----|:-------|
-| Prioritize incidents | Use filtering and sorting of the incidents queue to determine which incidents to address next. | [Prioritize incidents](incident-queue.md) |
-| Manage incidents | Modify incident properties to ensure correct assignment, add tags and comments, and to resolve an incident. | [Manage incidents](manage-incidents.md)  |
-| Automated investigation and response | Automated investigation and response (AIR) capabilities that can help your security operations team address threats more efficiently and effectively. | [Automated investigation and response](m365d-autoir.md) |
-| Action center |  A "single pane of glass" experience for incident and alert tasks such as approving pending remediation actions. | [Action center](m365d-action-center.md) |
-| Advanced hunting | A query-based threat-hunting tool that lets you proactively inspect events in your network and locate threat indicators and entities. | [Advanced hunting](#advanced-hunting) |
+| Capability | Description |
+|:-------|:-----|
+| Prioritize incidents | Use filtering and sorting of the incidents queue to determine which incidents to address next. |
+| Manage incidents | Modify incident properties to ensure correct assignment, add tags and comments, and to resolve an incident. |
+| Automated investigation and response | Automated investigation and response (AIR) capabilities that can help your security operations team address threats more efficiently and effectively. |
+| Action center |  A "single pane of glass" experience for incident and alert tasks such as approving pending remediation actions. |
+| Advanced hunting | A query-based threat-hunting tool that lets you proactively inspect events in your network and locate threat indicators and entities. |
 ||||
+
+## Prioritize incidents
+
+You get to the incident queue from **Incidents & alerts > Incidents** on the quick launch of the Microsoft 365 Defender portal ([security.microsoft.com](https://security.microsoft.com)). Here's an example.
+
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="Example of the incident queue":::
+
+The **Most recent incidents and alerts** section shows a graph of the number of alerts received and incidents created in the last 24 hours.
+
+To examine the list of incidents and prioritize their importance for assignment and investigation, you can: 
+
+- Configure customizable columns (select **Choose columns**) to give you visibility into different characteristics of the incident or the impacted entities. This helps you make an informed decision regarding the prioritization of incidents for analysis.
+
+- Use filtering to focus on a specific scenario or threat. Applying filters on the incident queue can help determine which incidents require immediate attention. 
+
+From the default incident queue, you can select **Filters** to see a Filters pane, from which you can view a filtered set of incidents. Here is an example.
+
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-filters.png" alt-text="Example of the filters pane for the incident queue":::
+
+For more information, see [Prioritize incidents](incident-queue.md).
+
+## Manage incidents
+
+You can manage incidents from the **Manage incident** pane for an incident. Here's an example.
+
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-manage.png" alt-text="Example of the Manage incident pane of an incident":::
+
+You can display this pane from the **Manage incident** link on the:
+
+- Properties pane of an incident in the incident queue.
+- **Summary** page of an incident.
+
+Here are the ways you can manage your incidents:
+
+- Edit the incident name
+
+  Change the utomatically assigned name based on your security team best practices.
+  
+- Add incident tags
+
+  Add tags that your security team uses to classify incidents, which can be later filtered.
+  
+- Assign the incident to yourself
+
+  Assign it to your user account name, which can be later filtered.
+  
+- Resolve an incident
+
+  Close the incident after it has been remediated.
+  
+- Set its classification and determination
+
+  Classify and select the threat type when you resolve an incident.
+  
+- Add comments
+
+  Use comments for progress, notes, or other information based on your security team best practices. The full comment history is available from the **Comments and history** option in the details page of an incident.
+
+For more information, see [Manage incidents](manage-incidents.md).
+
+## Examine automated investigation and response with the Action center
+
+Depending on how automated investigation and response capabilities are configured for your organization, remediation actions are taken automatically or only upon approval by your security operations team. All actions, whether pending or completed, are listed in the [Action center](m365d-action-center.md), which lists pending and completed remediation actions for your devices, email & collaboration content, and identities in one location.
+
+Here's an example.
+
+:::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="Unified Action center in Microsoft 365 Defender":::
+
+From the Action center, you can select pending actions and then approve or reject them in the flyout pane. Here's an example.
+
+![Approve or reject an action](../../media/air-actioncenter-itemselected.png)
+
+Approve (or reject) pending actions as soon as possible so that your automated investigations can proceed and complete in a timely manner.
+
+For more information, see [Automated investigation and response](m365d-autoir.md) and [Action center](m365d-action-center.md).
 
 ## Advanced hunting
 

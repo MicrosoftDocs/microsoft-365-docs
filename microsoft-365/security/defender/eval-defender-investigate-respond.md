@@ -28,19 +28,18 @@ ms.technology: m365d
 **Applies to:**
 - Microsoft 365 Defender
 
-This article outlines the process to create an incident with a simulated attack and use Microsoft 365 Defender to investigate and respond. Before starting this process, be sure you've reviewed the overall process for [evaluating Microsoft 365 Defender](eval-overview.md) and you have [created the Microsoft 365 Defender evaluation environment](eval-create-eval-environment.md). 
+This article outlines the process to create incidents with attack simulations and tutorials and use Microsoft 365 Defender to investigate and respond. Before starting this process, be sure you've reviewed the overall process for [evaluating Microsoft 365 Defender](eval-overview.md) and you have [created the Microsoft 365 Defender evaluation environment](eval-create-eval-environment.md). 
 
 Use the following steps.
 
-![Steps for performing a simulated incident response in the Defender evaluation environment](../../media/eval-defender-investigate-respond/eval-defender-eval-investigate-respond-steps.png)
+![Steps for performing simulated incident response in the Defender evaluation environment](../../media/eval-defender-investigate-respond/eval-defender-eval-investigate-respond-steps.png)
 
 The following table describes the steps in the illustration.
 
 | |Step  |Description  |
 |---------|---------|---------|
-|1|[Add endpoints](eval-defender-investigate-respond-endpoints.md)    | Add a domain controller and a Windows device to your Microsoft 365 Defender evaluation environment.       |
-|2|[Simulate an attack](eval-defender-investigate-respond-simulate-attack.md)     |   Follow the steps to simulate an attack on the evaluation environment.      |
-|3|[Try additional incident response capabilities ](eval-defender-investigate-respond-additional.md)    |    Try additional features and capabilities for performing incident response in Microsoft 365 Defender.     |
+|1|[Simulate attacks](eval-defender-investigate-respond-simulate-attack.md)     |   Simulate attacks on your evaluation environment and use the Microsoft 365 Defender portal to perform incident response.      |
+|2|[Try additional incident response capabilities ](eval-defender-investigate-respond-additional.md)    |    Try additional features and capabilities in Microsoft 365 Defender.     |
 ||||
 
 ### Navigation you may need
