@@ -40,7 +40,7 @@ Microsoft Managed Desktop relies on data from multiple Microsoft products and se
 
 ## Microsoft Managed Desktop data storage and staff location
 
-Microsoft Managed Desktop stores its data in the Azure data centers in the United States. Personal data obtained by Microsoft Managed Desktop and other services is required to keep the service operational. If device is removed from Microsoft Managed Desktop, we keep personal data for a maximum of 30 days except for alert data collected by Microsoft Defender for Endpoint, which is stored for 180 days for security purposes. For more information on data retention, see [Data retention, deletion, and destruction in Microsoft 365 - Microsoft Service Assurance | Microsoft Docs] (https://docs.microsoft.com/compliance/assurance/assurance-data-retention-deletion-and-destruction-overview).
+Microsoft Managed Desktop stores its data in the Azure data centers in the United States. Personal data obtained by Microsoft Managed Desktop and other services are required to keep the service operational. If a device is removed from Microsoft Managed Desktop, we keep personal data for a maximum of 30 days except for alert data collected by Microsoft Defender for Endpoint, which is stored for 180 days for security purposes. For more information on data retention, see [Data retention, deletion, and destruction in Microsoft 365](/compliance/assurance/assurance-data-retention-deletion-and-destruction-overview).
 
 Microsoft Managed Desktop Engineering Operations and Security Operations teams are located in the United States and India. 
 
