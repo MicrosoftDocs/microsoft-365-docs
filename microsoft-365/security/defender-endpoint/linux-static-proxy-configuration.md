@@ -31,13 +31,13 @@ ms.technology: mde
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-Microsoft Defender for Endpoint can discover a proxy server using the ```HTTPS_PROXY``` environment variable. This setting must be configured **both** at installation time and after the product has been installed.
+Microsoft Defender for Endpoint can discover a proxy server using the `HTTPS_PROXY` environment variable. This setting must be configured **both** at installation time and after the product has been installed.
 
 ## Installation time configuration
 
-During installation, the ```HTTPS_PROXY``` environment variable must be passed to the package manager. The package manager can read this variable in any of the following ways:
+During installation, the `HTTPS_PROXY` environment variable must be passed to the package manager. The package manager can read this variable in any of the following ways:
 
-- The ```HTTPS_PROXY``` variable is defined in ```/etc/environment``` with the following line:
+- The `HTTPS_PROXY` variable is defined in `/etc/environment` with the following line:
 
   ```bash
   HTTPS_PROXY="http://proxy.server:port/"
