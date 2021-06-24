@@ -24,7 +24,7 @@ description: "Microsoft 365 offers three eDiscovery tools that you can use to se
 
 # eDiscovery solutions in Microsoft 365
 
-Electronic discovery, or eDiscovery, is the process of identifying and delivering electronic information that can be used as evidence in legal cases. You can use eDiscovery tools in Microsoft 365 to search for content in Exchange Online, OneDrive for Business, SharePoint Online, Microsoft Teams, Microsoft 365 Groups, and Yammer teams. You can search mailboxes and sites in the same eDiscovery search, and then export the search results. Additionally, you can use Core eDiscovery cases to identify, hold, and export content found in mailboxes and sites. If your organization has an Office 365 E5 or Microsoft 365 E5 subscription (or related E5 add-on subscriptions), you can further manage custodians and analyze content by using the feature-rich Advanced eDiscovery solution in Microsoft 365.
+Electronic discovery, or eDiscovery, is the process of identifying and delivering electronic information that can be used as evidence in legal cases. You can use eDiscovery tools in Microsoft 365 to search for content in Exchange Online, OneDrive for Business, SharePoint Online, Microsoft Teams, Microsoft 365 Groups, and Yammer teams. You can search mailboxes and sites in the same eDiscovery search, and then export the search results. You can use Core eDiscovery cases to identify, hold, and export content found in mailboxes and sites. If your organization has an Office 365 E5 or Microsoft 365 E5 subscription (or related E5 add-on subscriptions), you can further manage custodians and analyze content by using the feature-rich Advanced eDiscovery solution in Microsoft 365.
 
 ## eDiscovery solutions
 
@@ -75,7 +75,7 @@ Here's description of each eDiscovery capability.
 
 - **Keyword queries and search conditions**. Create KQL keyword search queries to search for content that match query criteria. You can also include conditions to narrow the scope of your search.
 
-- **Search statistics**. After you run a search, you can view statistics of the estimated search results, such as the number and total size of items matching your search criteria. Additional statistics include the top content locations that contain search results and the number of items that match different parts of the search query.
+- **Search statistics**. After you run a search, you can view statistics of the estimated search results, such as the number and total size of items matching your search criteria. Other statistics include the top content locations that contain search results and the number of items that match different parts of the search query.
 
 - **Export search results**. Export search results to a local computer in your organization in a two-step process. When you export search results, items are copied from their original content location in Microsoft 365 to a Microsoft-provided Azure Storage location. Then you can download those items to a local computer.
 
@@ -107,15 +107,15 @@ Here's description of each eDiscovery capability.
 
 - **Tagging**. Tags also help you cull non-relevant content and identify the most relevant content. When experts, attorneys, or other users review content in a review set, their opinions related to the content can be captured by using tags. For example, if the intent is to cull unnecessary content, a user can tag documents with a tag such as "non-responsive". After content has been reviewed and tagged, a review set query can be created to exclude any content tagged as "non-responsive". This process eliminates the non-responsive content from subsequent steps in the eDiscovery workflow.
 
-- **Analytics (email threading, themes, and near-duplicate detection)**.
+- **Analytics**. Advanced eDiscovery provides tools to analyze review set documents to help you organize the documents in a coherent manner and reduce the volume of documents to be reviewed. *Near duplicate detection* groups textually similar documents together to help you make your review process more efficient. *Email threading* identifies specific email messages that  give a complete context of the conversation in an email thread. *Themes* functionality attempts to analyze the themes that are discussed in review set documents and assigning a theme to documents so that you can review documents that have a related theme. These analytics capabilities help make your review process more efficient so that reviewers can review a fraction of collected documents.
 
-- **Predictive coding models**. 
+- **Predictive coding models**. Use predictive coding models to reduce and cull large volumes of case content to a relevant set of items that you can prioritize for review. This is accomplished by creating and training your own predictive coding models that help you prioritize the review of the most relevant items in a review set. The system uses the training to apply prediction scores to every item in the review set. This lets you filter items based on the prediction score, which  allows you to review the most relevant (or non-relevant) items first.
 
-- **Computed document metadata**. 
+- **Computed document metadata**. Many Advanced eDiscovery features, such as Advanced indexing, conversation reconstruction, analytics, and predictive coding add metadata properties to review set documents. This metadata contains information related to the function performed a specific feature. When reviewing documents, you can filter on metadata properties to display document that match your filter criteria. This metadata can imported into third-party review applications after review set documents are exported.
 
-- **Transparency of long-running jobs**. 
+- **Transparency of long-running jobs**. Jobs in Advanced eDiscovery are, typically long-running processes that are triggered by user actions, such as the adding custodians to a case, adding content to a review set, running analytics, and training predictive coding models. You can track the status of these jobs and get support information if you need to escalate issues to MS Support.
 
-- **Export to customer-owned Azure Storage location**. 
+- **Export to customer-owned Azure Storage location**. When you export documents from a review set, you have the option to export them to an Azure Storage account managed by your organization. Additionally, Advanced eDiscovery lets you customize what data is exported. This includes exporting file metadata, native files, text files, tags, and redacted documents that have been saved to a PDF file.
 
 ## eDiscovery subscription comparison
 
