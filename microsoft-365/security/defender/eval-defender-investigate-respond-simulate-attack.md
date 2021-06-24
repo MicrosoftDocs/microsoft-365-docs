@@ -38,7 +38,24 @@ Microsoft 365 services and apps create alerts when they detect a suspicious or m
 
 ## Simulate attacks with the Microsoft 365 Defender portal
 
-TBD
+The Microsoft 365 Defender portal has built-in capabilities to create simulated attacks on your pilot environment. There are two main ways:
+
+Attack simulation training for Microsoft 365 Defender for Office 365
+[https://security.microsoft.com/attacksimulator?viewid=overview](https://security.microsoft.com/attacksimulator?viewid=overview)
+UI path: Microsoft 365 Defender portal > Email & collaboration > Attack simulation training
+
+Tutorials & simulations
+[https://security.microsoft.com/tutorials/simulations](https://security.microsoft.com/tutorials/simulations)
+UI path: Microsoft 365 Defender portal > Endpoints > Tutorials & simulations
+
+Tutorials as of June 2021:
+
+Document drops backdoor 
+Automated investigation (backdoor)
+
+
+
+IN PROGRESS
 
 ## Simulate an attack with an isolated domain controller and client device
 

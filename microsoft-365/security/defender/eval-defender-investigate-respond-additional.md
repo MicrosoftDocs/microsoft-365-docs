@@ -55,7 +55,7 @@ To examine the list of incidents and prioritize their importance for assignment 
 
 - Use filtering to focus on a specific scenario or threat. Applying filters on the incident queue can help determine which incidents require immediate attention. 
 
-From the default incident queue, select **Filters** to see a **Filters* pane, from which you can specify a filtered set of incidents. Here is an example.
+From the default incident queue, select **Filters** to see a **Filters** pane, from which you can specify a specific set of incidents. Here is an example.
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-filters.png" alt-text="Example of the filters pane for the incident queue":::
 
