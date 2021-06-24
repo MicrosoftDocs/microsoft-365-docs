@@ -20,7 +20,7 @@ f1.keywords: NOCSH
 Microsoft Defender for business is a security solution designed to help protect the devices and data your business uses. Microsoft Defender for business includes all of the following features and capabilities:
 
 | Symbol | Capability | Description |
-|- -- |- -- |- -- |
+| --- | --- | --- |
 | ![Threat protection symbol](../../media/security/security-threat-castle.png) | [Threat and vulnerability management](#threat-and-vulnerability-management) | Threat & vulnerability management (TVM) provides you with actionable information that can help mitigate threats and vulnerabilities in your environment.|
 | ![Next-generation protection symbol](../../media/security/security-shield-divided.png) | [Next-generation protection](#next-generation-protection) |Next-generation protection includes antimalware and antivirus protection—on your devices and in the cloud—to protect against threats. |
 | ![Attack surface reduction symbol](../../media/security/security-shield-slash.png) | [Attack surface reduction](#attack-surface-reduction) | Your attack surfaces are all the places and ways that your company is vulnerable to a cyberattack. |
@@ -30,8 +30,6 @@ Microsoft Defender for business is a security solution designed to help protect 
 | ![Secure document symbol](/office/media/icons/secure-document-blue.png.png) | [Centralized management and reporting](#centralized-management-and-reporting) | Defender for Endpoint enables your security operations team to centrally manage your organization’s threat protection solution and settings.  |
 | ![Connector symbol](/office/media/icons/connector-blue.png) | [Cross-platform support](#cross-platform-support) | Most organizations use a variety of devices and operating systems, such as computers running Windows, macOS, or Linux, and mobile devices running iOS or Android. |
 | ![API symbol](/office/media/icons/api.png) | [APIs](#apis) (for integration)| Application programming interfaces (APIs) like the Defender for Endpoint APIs enable applications to communicate with each other. |
-| | | |
-
 
 ## Threat and vulnerability management
 
