@@ -213,22 +213,7 @@ Uninstall-WindowsFeature -Name Windows-Defender-GUI
 
 ### Are you using Windows Server 2012 R2 or Windows Server 2016?
 
-If you are using Windows Server 2012 R2 or Windows Server 2016 and a third-party antimalware/antivirus product that is not offered or developed by Microsoft, you'll need to disable/uninstall Microsoft Defender Antivirus. 
-
-> [!NOTE]
-> You can't uninstall the Windows Security app, but you can disable the interface with these instructions.
-
-The following PowerShell cmdlet uninstalls Microsoft Defender Antivirus on  Windows Server 2012 R2 or Windows Server 2016:
-
-```PowerShell
-Uninstall-WindowsFeature -Name Windows-Defender
-```
-
-To disable Microsoft Defender Antivirus on  Windows Server 2012 R2 or Windows Server 2016, use the following PowerShell cmdlet:
-
-```PowerShell
-Set-MpPreference -DisableRealtimeMonitoring $true
-```
+You can now run Microsoft Defender Antivirus in passive mode on Windows Server 2016. For more information, see [Options to install Microsoft Defender Antivirus](configure-server-endpoints.md#options-to-install-microsoft-defender-antivirus).
 
 
 

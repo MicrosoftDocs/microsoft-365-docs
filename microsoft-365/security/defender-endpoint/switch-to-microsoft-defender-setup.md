@@ -118,7 +118,7 @@ The [DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-m
 > [!NOTE]
 > After onboarding to Defender for Endpoint, you might have to set Microsoft Defender Antivirus to passive mode on Windows Server.
 
-### Are you using Windows Server 2016?
+### Are you using Windows Server 2012 R2 or Windows Server 2016?
 You can now run Microsoft Defender Antivirus in passive mode on Windows Server 2016. For more information, see [Options to install Microsoft Defender Antivirus](configure-server-endpoints.md#options-to-install-microsoft-defender-antivirus).
 
 
