@@ -66,9 +66,9 @@ For more information, see [Web content filtering](web-content-filtering.md).
 
 ## How does web protection work?
 
-Web Protection is made up of the following components, listed in order of precedence. Each of these are enforced by the SmartScreen client in Microsoft Edge and by the Network Protection client in all other browsers/processes. 
+Web Protection is made up of the following components, listed in order of precedence. Each of these components are enforced by the SmartScreen client in Microsoft Edge and by the Network Protection client in all other browsers/processes. 
 
-- Custom indicator (IP URL/AB, MCAS Block/Warn (Preview))
+- Custom indicator (IP URL/AB, Microsoft Cloud App Security (MCAS) Block/Warn (Preview))
 
 - Web threats (malware, phish, etc.)
 
@@ -77,13 +77,13 @@ Web Protection is made up of the following components, listed in order of preced
 
 - Windows Communication Foundation (WCF)
 
-- Microsoft Cloud App Security (MCAS) allow
+- MCAS allow
 
 The order of precedence above relates to the order of operations by which a URL or IP is evaluated. For example, a customer who has a web content filtering policy can create exclusions through custom IP/URL indicators, since custom IoC’s are higher in the order of precedence than WCF blocks. 
 
-When there is a conflict, MCAS allows always take precedence over blocks (override logic), meaning that an allow indicator will win over any block indicator further down the stack. This is also true with respect to web threats as the E5 custom indicator list is checked before web threats. This is not true in the case of MCAS. MCAS allows will not remediate WCF or SmartScreen.
+When there is a conflict, MCAS allow always take precedence over blocks (override logic), meaning that an allow indicator will win over any block indicator further down the stack. Similarly, for web threats, the E5 custom indicator list is checked before web threats. But, MCAS allows will not remediate WCF or SmartScreen.
 
-Note that internal IP addresses are not supported by custom indicators. Also, for a warn policy, when bypassed by the end user, the site will be unblocked for 24 hours for that user by default (this time frame can be modified by the Admin and is passed down by the SmartScreen cloud service). The ability to bypass a warning can also be disabled via CSP for Web Threat blocks (malware/phish). For more details, see [Policy CSP - Browser - Windows Client Management](/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverride).
+Internal IP addresses are not supported by custom indicators. Also, for a warn policy, when bypassed by the end user, the site will be unblocked for 24 hours for that user by default (this time frame can be modified by the Admin and is passed down by the SmartScreen cloud service). The ability to bypass a warning can also be disabled via CSP for web threat blocks (malware/phish). For more information, see [Policy CSP - Browser - Windows Client Management](/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverride).
 
 
 
