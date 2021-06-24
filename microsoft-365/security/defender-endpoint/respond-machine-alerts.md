@@ -66,7 +66,7 @@ You can start a new general purpose automated investigation on the device if nee
 
 For more information on automated investigations, see [Overview of Automated investigations](automated-investigations.md).
 
-## Initiate Live Response Session
+## Initiate live response Session
 
 Live response is a capability that gives you instantaneous access to a device by using a remote shell connection. This gives you the power to do in-depth investigative work and take immediate response actions to promptly contain identified threats — real time.
 
@@ -137,7 +137,7 @@ The Action center will show the scan information and the device timeline will in
 In addition to containing an attack by stopping malicious processes, you can also lock down a device and prevent subsequent attempts of potentially malicious programs from running.
 
 >[!IMPORTANT]
-> - This action is available for devices on Windows 10, version  1709 or later.
+> - This action is available for devices on Windows 10, version  1709 or later and Windows Server 2016. 
 > - This feature is available if your organization uses Microsoft Defender Antivirus.
 > - This action needs to meet the Windows Defender Application Control code integrity policy formats and signing requirements. For more information, see [Code integrity policy formats and signing](/windows/device-security/device-guard/requirements-and-deployment-planning-guidelines-for-device-guard#code-integrity-policy-formats-and-signing).
 
@@ -155,12 +155,15 @@ When an app is restricted, the following notification is displayed to inform the
 
 ![Image of app restriction](images/atp-app-restriction.png)
 
+>[!NOTE]
+>The notification is not available on Windows Server 2016 and Windows Server 2012 R2.
+
 ## Isolate devices from the network
 
 Depending on the severity of the attack and the sensitivity of the device, you might want to isolate the device from the network. This action can help prevent the attacker from controlling the compromised device and performing further activities such as data exfiltration and lateral movement.
 
 >[!IMPORTANT]
->- Full isolation is available for devices on Windows 10, version 1703.
+>- Full isolation is available for devices on Windows 10, version 1703, Windows Server 2016, and Windows Server 2012 R2.
 >- Selective isolation is available for devices on Windows 10, version 1709 or later.
 >- When isolating a device, only certain processes and destinations are allowed. Therefore, devices that are behind a full VPN tunnel won't be able to reach the Microsoft Defender for Endpoint cloud service after the device is isolated. We recommend using a split-tunneling VPN for Microsoft Defender for Endpoint and Microsoft Defender Antivirus cloud-based protection-related traffic.
 
