@@ -85,7 +85,7 @@ The [DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-m
 > The following procedure applies only to endpoints or devices that are running the following versions of Windows:
 > - Windows Server 2019
 > - Windows Server, version 1803 (core-only mode)
-> - Windows Server 2016 (see the following section, [Are you using Windows Server 2016?](#are-you-using-windows-server-2016))
+> - Windows Server 2016 (see the following section, [Are you using Windows Server 2016?](#are-you-using-windows-server-2012-r2-or-windows-server-2016)
 
 1. As a local administrator on the endpoint or device, open Windows PowerShell.
 
