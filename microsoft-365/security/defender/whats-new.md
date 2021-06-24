@@ -33,8 +33,6 @@ RSS feed: Get notified when this page is updated by copying and pasting the foll
 ```http
 /api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+365+defender%22&locale=en-us
 ```
-## June 2021
-- Threat tags in [Microsoft 365 Defender threat analytics report](threat-analytics.md) <br> Threat tags help you focus on specific threat categories and review the most relevant reports. 
 
 ## May 2021
 
