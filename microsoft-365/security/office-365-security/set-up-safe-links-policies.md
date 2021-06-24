@@ -169,7 +169,7 @@ To enable or disable a policy or set the policy priority order, see the followin
 
 ### Enable or disable Safe Links policies
 
-1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Policies** section \> **Safe Links**.
+1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** page \> **Policies** section \> **Safe Links**.
 
 2. On the **Safe Links** page, select a policy from the list by clicking on the name.
 
@@ -194,7 +194,7 @@ To change the priority of a policy, you click **Increase priority** or **Decreas
 - In the Microsoft 365 Defender portal, you can only change the priority of the Safe Links policy after you create it. In PowerShell, you can override the default priority when you create the safe links rule (which can affect the priority of existing rules).
 - Safe Links policies are processed in the order that they're displayed (the first policy has the **Priority** value 0). For more information about the order of precedence and how multiple policies are evaluated and applied, see [Order and precedence of email protection](how-policies-and-protections-are-combined.md).
 
-1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Policies** section \> **Safe Links**.
+1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** page \> **Policies** section \> **Safe Links**.
 
 2. On the **Safe Links** page, select a policy from the list by clicking on the name.
 
@@ -209,7 +209,7 @@ To change the priority of a policy, you click **Increase priority** or **Decreas
 
 ## Use the Microsoft 365 Defender portal to remove Safe Links policies
 
-1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Policies** section \> **Safe Links**.
+1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** page \> **Policies** section \> **Safe Links**.
 
 2. On the **Safe Links** page, select a policy from the list by clicking on the name. At the top of the policy details flyout that appears, click ![More actions icon](../../media/m365-cc-sc-more-actions-icon.png) **More actions** \> ![Delete policy icon](../../media/m365-cc-sc-delete-icon.png) **Delete policy**.
 

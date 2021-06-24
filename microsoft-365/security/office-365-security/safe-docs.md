@@ -58,7 +58,7 @@ Files sent by Safe Documents are not retained in Defender beyond the time needed
 
 ## Use the Microsoft 365 Defender to configure Safe Documents
 
-1. Open the Microsoft 365 Defender portal and go to **Email & collaboration** \> **Policies & rules** \> **Threat policies** \> **Policies** section \> **Safe Attachments**.
+1. Open the Microsoft 365 Defender portal and go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** page \> **Policies** section \> **Safe Attachments**.
 
 2. On the **Safe Attachments** page, click **Global settings**.
 
@@ -99,7 +99,7 @@ To learn more, see [Onboard to the Microsoft Defender for Endpoint service](/mic
 
 To verify that you've enabled and configured Safe Documents, do any of the following steps:
 
-- In the Microsoft 365 Defender portal, go to **Email & collaboration** \> **Policies & rules** \> **Threat policies** \> **Policies** section \> **Safe Attachments** \> **Global settings**, and verify the **Turn on Safe Documents for Office clients** and **Allow people to click through Protected View even if Safe Documents identifies the file as malicious** settings.
+- In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** page \> **Policies** section \> **Safe Attachments** \> **Global settings**, and verify the **Turn on Safe Documents for Office clients** and **Allow people to click through Protected View even if Safe Documents identifies the file as malicious** settings.
 
 - Run the following command in Exchange Online PowerShell and verify the property values:
 
