@@ -107,6 +107,7 @@ You can set attack surface reduction rules for devices that are running any of t
 - Windows 10 Enterprise, [version 1709](/windows/whats-new/whats-new-windows-10-version-1709) or later
 - Windows Server, [version 1803 (Semi-Annual Channel)](/windows-server/get-started/whats-new-in-windows-server-1803) or later
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
+- [Windows Server 2012 R2](/win32/srvnodes/what-s-new-for-windows-server-2012-r2)
 
 Although attack surface reduction rules don't require a [Windows E5 license](/windows/deployment/deploy-enterprise-licenses), if you have Windows E5, you get advanced management capabilities. The advanced capabilities - available only in Windows E5 - include:
 
