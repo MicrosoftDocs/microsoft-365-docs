@@ -261,19 +261,17 @@ To consider when using trainable classifiers to auto-apply retention labels:
 
 Applicable to SharePoint, OneDrive, and Microsoft 365 Groups locations only:
 
-When you choose the option to apply a label to cloud attachments (embedded links to files that users share), your selected retention label is automatically applied to the linked file when it is shared by users in Outlook or Teams messages. The retention label is not applied to the message itself.
+When you choose the option to apply a label to cloud attachments (embedded links to files that users share in Outlook emails and Teams messages), for compliance purposes, a copy of that file is created at the time of sharing. Your selected retention label is then applied to that copy. Users are not aware of the copy that is stored in the Preservation Holds library. The retention label is not applied to the message itself, or to the original file.
 
-Supported cloud attachments are files stored in SharePoint, OneDrive, or Microsoft 365 Groups. These locations explains why you can select only these as locations for this option.
+If the file is modified and shared again, a new copy of the file as a new version is saved in the Preservation Hold library.
 
-At the time the cloud attachment is shared, a copy of the file is created in the Preservation Hold library. This copy, in addition to the source file in its original location, is available for eDiscovery searches. If the file is modified and shared again, a new copy of the file as a new version is saved in the Preservation Hold library.
+The cloud attachments supported are files stored in SharePoint and OneDrive. When you configure the locations for this option, select **SharePoint sites** for shared files stored in SharePoint communication sites, team sites that aren't connected by Microsoft 365 groups, and classic sites. Select **Microsoft 365 Groups** for shared files that are stored in team sites connected by Microsoft 365 groups, and **OneDrive accounts** for shared files stored in users' OneDrive. You will need to create separate retention policies if you want to retain or delete the original files, email messages, or Teams messages.
 
 To consider when auto-applying retention labels to cloud attachments:
 
 - Only newly shared cloud attachments will be auto-labeled.
 
-- If you replace the retention label for an auto-apply policy and the previous label is already applied to files, the replacement label is applied to new versions only and files previously labeled as older versions of the file aren't updated with the new label.
-
-- If the same version of the linked file has different retention labels applied, the label with the longest retention period is applied.
+- If you replace the retention label for an auto-apply policy, the replacement label is applied to new versions only and files previously labeled as older versions of the file aren't updated with the new label.
 
 > [!TIP]
 > Because cloud attachments are shared in Exchange emails and Teams messages, consider using a retention label that's configured for the same retention period as retention policies for these workloads, and configure the label retention setting **Start the retention period based on**: to be **When items were labeled**. 
