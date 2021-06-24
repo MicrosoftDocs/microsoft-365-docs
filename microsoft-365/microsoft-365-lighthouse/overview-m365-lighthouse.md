@@ -19,46 +19,40 @@ description: "For managed service providers using Microsoft 365 Lighthouse, lear
 
 # Overview of Microsoft 365 Lighthouse
 
-Microsoft 365 Lighthouse is a new portal service that gives managed service providers the ability to view, monitor, and manage your Microsoft 365 customers and users from a single location. Microsoft 365 Lighthouse allows an admin to manage device compliance, threat protection, and user access for multiple tenants. 
+Microsoft 365 Lighthouse is an admin portal that helps Managed Service Providers (MSPs) secure devices, data, and users at scale for small- and medium-sized business (SMB) customers using Microsoft 365 Business Premium. 
 
-Microsoft 365 Lighthouse doesn't support indirect providers. Only Cloud Solution Provider partners are eligible at this time. 
+It simplifies onboarding of Microsoft 365 Business Premium tenants by recommending security configuration baselines tailored to SMBs and providing multi-tenant views across all customer environments. With Microsoft 365 Lighthouse, partners can scale the management of their customers, focus on what’s most important, quickly find and investigate risks, and take action to get their customers to a healthy and secure state.
 
-## Before you begin
+No additional costs are associated with using Microsoft 365 Lighthouse to manage Microsoft 365 services and connected devices. Microsoft 365 Lighthouse is currently in preview and available to MSPs enrolled in the cloud solution provider (CSP) program and serving SMB customers with a Microsoft 365 Business Premium subscription.
 
-The following are required to use Microsoft 365 Lighthouse: 
+Note that CSP indirect providers aren't currently supported by Microsoft 365 Lighthouse. 
 
-**Delegated Admin Privileges (DAP)**: To manage a customer's service or subscription on their behalf, the customer must grant you administrator permissions for that service. To learn more about how to establish a DAP relationship, see [Obtain permissions to manage a customer’s service or subscription](/mem/intune/enrollment/windows-enrollment-methods).  
+> [!IMPORTANT] 
+> Partners must have a CSP relationship and establish Delegated Admin Privileges (DAP) with customers through Partner Center for customers to be active within Microsoft 365 Lighthouse. Customers also must have at least one Microsoft 365 Business Premium subscription and less than 500 licensed users in their tenant.     
 
-**Microsoft 365 Business Premium Subscription**: Your customer must have a Business Premium subscription in their tenant to be enrolled in Microsoft 365 Lighthouse. 
+For more information about the Cloud Solution Provider program, see the [Cloud Solution Provider program overview](/partner-center/csp-overview).
 
-The following is recommended: 
+> [!NOTE]  
+> A similar offering, Azure Lighthouse, helps service providers deliver managed services for Azure services by using comprehensive and robust management tooling built into the Azure platform. To learn more, see the [Azure Lighthouse documentation](/azure/lighthouse/).   
 
-**Intune Enrolled Devices**: Tenants must have active enrolled devices. For more information, see [Intune enrollment methods for Windows devices](/mem/intune/enrollment/windows-enrollment-methods).
+## Microsoft 365 Lighthouse benefits
 
->[!NOTE]
->Many of the initial capabilities of the service are based on Intune functionality. If a customer doesn't have Intune enrolled devices and associated policies, limited data shows for this customer. 
+Microsoft 365 Lighthouse is focused on helping partners secure and manage Microsoft 365 services and connected endpoints at scale by:
 
-## Standardize device compliance
+- Providing tenant deployment journeys so technicians can follow a consistent set of steps to secure and configure customer tenants. 
+- Using a default SMB security baseline that prescribes best practices targeted to small- and medium-sized business tenants. 
+- Providing multi-tenant insights on device compliance for a clear view of how devices are being evaluated across all organizations, tools to compare policies, and the top settings that are not being met. 
+- Simplifying common tasks like resetting a password.
+- Configuring multi-factor authentication and self-service password reset, including tools to help drive adoption across end users. 
+- Understanding and protecting against risky sign-ins.
+- Managing threats on Windows 10 devices by providing details on threats detected by Microsoft Defender and actions to take to resolve issues and keep devices up to date.   
+- Providing insights into Microsoft 365 service incidents and advisories that impact the customer tenants they manage.
 
-Microsoft 365 Lighthouse allows you to monitor and manage device compliance for all of your customers from a central location. An overall view of device policies and statuses across tenants allows you to make comparisons and standardize your work with customers. 
-
-## Manage antivirus and threat protection
-
-Microsoft 365 Lighthouse threat management capabilities give you a view into the protection status of Microsoft Defender Antivirus across all Windows 10 devices under your management. You can view which devices in your business are running Defender Antivirus, whether those devices are up to date, whether they have active threats, and where a reboot, required update, or an overdue scan is necessary. You're also able to view active threats in your environment, determine which users and devices are affected and which were blocked or quarantined and where further review is needed.
-
-## Manage user access
-
-A single list of all of the users you manage across your customer base lets you perform user access tasks automatically, including password resets, assigning licenses, blocking access, changing group memberships, and delegating access to a mailbox or OneDrive without having to log in and out of multiple customer tenants. 
-
-Microsoft 365 Lighthouse provides tracing and auditing for all user access actions performed in the portal. 
-
-
-## Next steps
-
-[Sign up for Microsoft 365 Lighthouse]()
-[Enable features for customers]()
+> [!NOTE] 
+> For more information on how to sign up, see [Sign up for Microsoft 365 Lighthouse](sign-up-m365-lighthouse.md).
 
 ## Related content
 
+[Sign up for Microsoft 365 Lighthouse](sign-up-m365-lighthouse.md) (article)\
 [Overview of managing tenants]() (article)\
 [Overview of managing devices]() (article)
