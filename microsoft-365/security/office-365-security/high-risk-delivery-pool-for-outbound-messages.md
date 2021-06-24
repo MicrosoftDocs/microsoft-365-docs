@@ -57,3 +57,19 @@ Possible causes for a surge in NDRs include:
 - A rogue email server.
 
 All of these issues can result in a sudden increase in the number of NDRs being processed by the service. Many times, these NDRs appear to be spam to other email servers and services (also known as _[backscatter](backscatter-messages-and-eop.md)_).
+
+
+### Relay Pool
+
+Messages that are forwarded or relayed via Microsoft 365 in certain conditions will be sent using a special relay pool, since the final destination should not consider Microsoft 365 as the actual sender. It is important for us to isolate this email traffic, because there are legitimate and invalid scenarios for auto forwarding or relaying email out of Microsoft 365. Similar, to the high-risk delivery pool, a separate IP address pool is used for relayed mail. This address pool is not published since it can change often, and it is not part of published SPF record for Office 365.
+Microsoft 365 needs to verify that the original sender is legitimate so we can confidently deliver the forwarded message. 
+
+The forwarded/relayed message should meet one of the following criteria to avoid relaypool:
+1.	Outbound sender domain is an accepted domain of the tenant.
+2.	SPF passes when the message comes to M365.
+3.	DKIM on the Sender domain passes when the message comes to M365.
+ 
+You can tell a message was sent via the Relay Pool by looking at the outbound server IP (all Relay Pool IPs will be in the 40.95.0.0/16 range), or by looking at the outbound server name (will have "rly" in the name). 
+In cases where we can authenticate the sender, we use Sender Rewriting to help the recipient email system know that the forwarded message is from a trusted source. You can read more about how that works and what you can do to help make sure the sending domain passes authentication in Sender Rewriting Scheme (SRS)
+For DKIM to work, make sure you enable DKIM for sending domain for example fabrikam.com is part of contoso.com accepted domains, if the sending address is sender@fabrikam.com, the DKIM needs to be enabled for fabrikam.com. you can read on how to enable DKIM here.
+To add a custom domains follow the steps mentioned here: Add a domain to Microsoft 365 - Microsoft 365 admin | Microsoft Docs
