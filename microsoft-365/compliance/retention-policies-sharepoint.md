@@ -61,6 +61,7 @@ To store content that needs to be retained, SharePoint and OneDrive create a Pre
 Items in SharePoint that have a standard retention label (doesn't declare the item to be a record) don't need the Preservation Hold library because these items remain in their original location. SharePoint prevents users from deleting items when the applied retention label is configured to retain the content, and SharePoint versioning preserves older versions when items are edited. But for other scenarios, the Preservation Hold library is used when items must be retained:
 - Items in OneDrive that have standard retention labels
 - Items in SharePoint or OneDrive that have retention labels that declares them a record, and the item is unlocked for editing
+- Files that were shared as cloud attachments that have a retention label applied automatically 
 - Items that are subject to retention policies
 
 To retain this content when a user attempts to change or delete it, a check is made whether the content's been changed since the retention settings were applied. If this is the first change since the retention settings were applied, the content is copied to the Preservation Hold library, which allows the person to change or delete the original content. Any content in a site collection can be copied to the Preservation Hold library, independently from retention settings.

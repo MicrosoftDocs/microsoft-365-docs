@@ -36,10 +36,10 @@ Auto-applying retention labels are powerful because:
     
 - Users no longer need to know about data governance policies - they can focus on their work.
     
-You can apply retention labels to content automatically when that content contains sensitive information, keywords or searchable properties, or a match for [trainable classifiers](classifier-get-started-with.md).
+You can apply retention labels to content automatically when that content contains sensitive information, keywords or searchable properties, or a match for [trainable classifiers](classifier-get-started-with.md). Now in preview, you can also automatically apply a retention label to cloud attachments that are stored in SharePoint, OneDrive, or Microsoft 365 Groups.
 
 > [!TIP]
-> Recently released, use searchable properties to identify [Teams meeting recordings](#microsoft-teams-meeting-recordings).
+> Use searchable properties to identify [Teams meeting recordings](#microsoft-teams-meeting-recordings).
 
 The processes to automatically apply a retention label based on these conditions:
 
@@ -52,7 +52,7 @@ Use the following instructions for the two admin steps.
 >
 > - Apply a retention label to a document understanding model in SharePoint Syntex
 > - Apply a default retention label for SharePoint and Outlook
->- Apply a retention label to email by using Outlook rules
+> - Apply a retention label to email by using Outlook rules
 >
 > For these scenarios, see [Create and apply retention labels in apps](create-apply-retention-labels.md).
 
@@ -121,6 +121,8 @@ You can apply retention labels to content automatically when that content contai
 - [Specific keywords or searchable properties that match a query you create](#auto-apply-labels-to-content-with-keywords-or-searchable-properties)
 
 - [A match for trainable classifiers](#auto-apply-labels-to-content-by-using-trainable-classifiers)
+
+Or, you can automatically apply retention labels to [cloud attachments shared in Exchange and Teams](auto-apply-labels-to-cloud-attachments).
 
 #### Auto-apply labels to content with specific types of sensitive information
 
@@ -252,9 +254,33 @@ To consider when using trainable classifiers to auto-apply retention labels:
 
 - New and modified items can be auto-labeled, and existing items from the last six months.
 
+#### Auto-apply labels to cloud attachments
+
+> [!NOTE]
+> This option is in preview and subject to change.
+
+Applicable to SharePoint, OneDrive, and Microsoft 365 Groups locations only:
+
+When you choose the option to apply a label to cloud attachments (embedded links to files that users share), your selected retention label is automatically applied to the linked file when it is shared by users in Outlook or Teams messages. The retention label is not applied to the message itself.
+
+Supported cloud attachments are files stored in SharePoint, OneDrive, or Microsoft 365 Groups. These locations explains why you can select only these as locations for this option.
+
+At the time the cloud attachment is shared, a copy of the file is created in the Preservation Hold library. This copy, in addition to the source file in its original location, is available for eDiscovery searches. If the file is modified and shared again, a new copy of the file as a new version is saved in the Preservation Hold library.
+
+To consider when auto-applying retention labels to cloud attachments:
+
+- Only newly shared cloud attachments will be auto-labeled.
+
+- If you replace the retention label for an auto-apply policy and the previous label is already applied to files, the replacement label is applied to new versions only and files previously labeled as older versions of the file aren't updated with the new label.
+
+- If the same version of the linked file has different retention labels applied, the label with the longest retention period is applied.
+
+> [!TIP]
+> Because cloud attachments are shared in Exchange emails and Teams messages, consider using a retention label that's configured for the same retention period as retention policies for these workloads, and configure the label retention setting **Start the retention period based on**: to be **When items were labeled**. 
+
 ## How long it takes for retention labels to take effect
 
-When you auto-apply retention labels, it can take up to seven days for the retention labels to be applied to all existing content that matches the conditions.
+When you auto-apply retention labels, it can take up to seven days for the retention labels to be applied:
   
 ![Diagram of when auto-apply labels take effect](../media/b8c00657-477a-4ade-b914-e643ef97a10d.png)
 
@@ -270,7 +296,9 @@ If the expected labels don't appear after seven days, check the **Status** of th
 
 ## Updating retention labels and their policies
 
-When you edit a retention label or auto-apply policy, and the retention label is already applied to content, your updated settings will automatically be applied to this content in addition to content that's newly identified.
+For auto-apply retention label policies that are configured for sensitive information, keywords or searchable properties, or a match for trainable classifiers: When a retention label from the policy is already applied to content, a change in configuration to the selected label and policy will be automatically applied to this content in addition to content that's newly identified.
+
+For auto-apply retention label policies that are configured for cloud attachments: Because this policy applies to newly shared files rather than existing files, a change in configuration to the selected label and policy will be automatically applied new content only.
 
 Some settings can't be changed after the label or policy is created and saved, which include:
 - The retention label and policy name, and the retention settings except the retention period. However, you can't change the retention period when the retention period is based on when items were labeled.
