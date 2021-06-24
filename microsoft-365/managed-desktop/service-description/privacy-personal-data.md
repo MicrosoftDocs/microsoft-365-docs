@@ -20,7 +20,7 @@ Microsoft Managed Desktop is an IT-as-a-Service (ITaaS) service for enterprise c
 
 ## Microsoft Managed Desktop data sources and purpose
 
-Microsoft Managed Desktop provides its service to enterprise customers and properly administers customers’ enrolled devices by using data from various sources. These sources, including Azure Active Directory, Microsoft Intune, Microsoft Windows 10, and Microsoft Defender for Endpoint, provide a comprehensive view of the devices that Microsoft Managed Desktop manages. The service also uses these Microsoft services that Microsoft Managed Desktop to provide ITaaS capabilities:
+Microsoft Managed Desktop provides its service to enterprise customers and properly administers customers’ enrolled devices by using data from various sources. These sources, including Azure Active Directory, Microsoft Intune, Microsoft Windows 10, and Microsoft Defender for Endpoint, provide a comprehensive view of the devices that Microsoft Managed Desktop manages. The service also uses these Microsoft services to enable Microsoft Managed Desktop to provide ITaaS capabilities:
 
 - [Microsoft Windows 10 Enterprise](/windows/windows-10/) - for management of device setup experience, managing connections to other services, and operational support for IT pros.
 - [Windows Update for Business](/windows/deployment/update/waas-manage-updates-wufb) - uses Windows 10 Enterprise diagnostic data to provide additional information on Windows 10 update. 
