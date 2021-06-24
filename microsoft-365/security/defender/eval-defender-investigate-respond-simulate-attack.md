@@ -36,8 +36,9 @@ Now that your pilot environment has all of the Microsoft 365 Defender components
 An incident in Microsoft 365 Defender is a collection of correlated alerts and associated data that make up the story of an attack. 
 Microsoft 365 services and apps create alerts when they detect a suspicious or malicious event or activity. Individual alerts provide valuable clues about a completed or ongoing attack. However, attacks typically employ various techniques against different types of entities, such as devices, users, and mailboxes. The result is multiple alerts for multiple entities in your tenant.
 
+## Simulate attacks with the Microsoft 365 Defender portal
 
-
+TBD
 
 ## Simulate an attack with an isolated domain controller and client device
 

@@ -32,7 +32,7 @@ This article outlines the process to create incidents with attack simulations an
 
 Use the following steps.
 
-![Steps for performing simulated incident response in the Defender evaluation environment](../../media/eval-defender-investigate-respond/eval-defender-eval-investigate-respond-steps.png)
+![Steps for performing simulated incident response in the Microsoft 365 Defender evaluation environment](../../media/eval-defender-investigate-respond/eval-defender-eval-investigate-respond-steps.png)
 
 The following table describes the steps in the illustration.
 
