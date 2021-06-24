@@ -27,7 +27,7 @@ ms.technology: m365d
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-This article is [Step 2 of 3](eval-defender-investigate-respond.md) in the process of performing an investigation and response of an incident in Microsoft 365 Defender using a pilot environment. For more information about this process, see the [overview](eval-defender-investigate-respond.md) article.
+This article is [Step 1 of 2](eval-defender-investigate-respond.md) in the process of performing an investigation and response of an incident in Microsoft 365 Defender using a pilot environment. For more information about this process, see the [overview](eval-defender-investigate-respond.md) article.
 
 After preparing your [pilot environment](eval-defender-investigate-respond.md), it's time to test Microsoft 365 Defender's incident response and automated investigation and remediation capabilities. 
 
@@ -276,7 +276,7 @@ This wraps up the attack simulation for incident analysis, automated investigati
 
 [![Try additional Microsoft 365 Defender incident response capabilities](../../media/eval-defender-investigate-respond/eval-defender-eval-investigate-respond-step3.png)](eval-defender-investigate-respond-additional.md)
 
-Step 3 of 3: [Try additional Microsoft 365 Defender incident response capabilities](eval-defender-investigate-respond-additional.md)
+Step 2 of 2: [Try additional Microsoft 365 Defender incident response capabilities](eval-defender-investigate-respond-additional.md)
 
 ### Navigation you may need
 
