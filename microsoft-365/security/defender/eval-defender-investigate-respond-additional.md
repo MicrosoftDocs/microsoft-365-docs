@@ -55,7 +55,7 @@ To examine the list of incidents and prioritize their importance for assignment 
 
 - Use filtering to focus on a specific scenario or threat. Applying filters on the incident queue can help determine which incidents require immediate attention. 
 
-From the default incident queue, you can select **Filters** to see a Filters pane, from which you can view a filtered set of incidents. Here is an example.
+From the default incident queue, select **Filters** to see a **Filters* pane, from which you can specify a filtered set of incidents. Here is an example.
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-filters.png" alt-text="Example of the filters pane for the incident queue":::
 
@@ -110,7 +110,7 @@ Here's an example.
 
 From the Action center, you can select pending actions and then approve or reject them in the flyout pane. Here's an example.
 
-![Approve or reject an action](../../media/air-actioncenter-itemselected.png)
+:::image type="content" source="../../media/air-actioncenter-itemselected.png" alt-text="Approve or reject an action":::
 
 Approve (or reject) pending actions as soon as possible so that your automated investigations can proceed and complete in a timely manner.
 
