@@ -151,7 +151,7 @@ See the following articles to help you learn more and get started using the eDis
 
 - [Search for content using Content search](search-for-content.md)
 
-- [Create a search](create-search.md)
+- [Create a search](content-search.md)
 
 ### Core eDiscovery
 
