@@ -194,7 +194,7 @@ Once you have published the CNAME records in DNS, you are ready to enable DKIM s
 
 1. Open the Microsoft 365 Defender portal [using your work or school account](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4).
 
-2. Go to **Email & Collaboration** \> **Policies & rules** \> **Threat policies** \> **Rules** section \> **DKIM**. Or, to go directly to the DKIM page, use <https://security.microsoft.com/dkimv2>.
+2. Go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** page \> **Rules** section \> **DKIM**. Or, to go directly to the DKIM page, use <https://security.microsoft.com/dkimv2>.
 
 3. On the **DKIM** page, select the domain by clicking on the name.
 

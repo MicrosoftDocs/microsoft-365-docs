@@ -3977,12 +3977,7 @@
     },
 		{
       "source_path": "microsoft-365/security/defender-endpoint/updates.md",
-      "redirect_url": "/microsoft-365/security/defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus",
-      "redirect_document_id": false
-    },
-		{
-      "source_path": "microsoft-365/security/defender-endpoint/configure-updates.md",
-      "redirect_url": "/microsoft-365/security/defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/manage-gradual-rollout",
       "redirect_document_id": false
     },
     {
@@ -4124,6 +4119,11 @@
       "source_path": "microsoft-365/security/defender-endpoint/scheduled-catch-up-scans-microsoft-defender-antivirus.md",
       "redirect_url": "/microsoft-365/security/defender-endpoint/schedule-antivirus-scans",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/lti/teams-classes.lms.md",
+      "redirect_url": "/MicrosoftTeams/Teams-overview",
+      "redirect_document_id": false
     }
   ]
 }
