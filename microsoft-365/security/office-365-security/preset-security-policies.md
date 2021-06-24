@@ -115,7 +115,7 @@ In other words, the settings of the **Strict protection** policy override the se
 
 ### Use the Microsoft 365 Defender portal to assign preset security policies to users
 
-1. In the Microsoft 365 Defender portal, go to **Email & collaboration** \> **Policies & Rules** \> **Threat Policies** \> **Templated policies** section \> **Preset Security Policies**.
+1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** page \> **Templated policies** section \> **Preset Security Policies**.
 
 2. Under **Standard protection** or **Strict protection**, click **Edit**.
 
