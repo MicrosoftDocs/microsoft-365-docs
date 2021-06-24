@@ -62,7 +62,7 @@ You can use the impersonation insight in the Microsoft 365 Defender portal to qu
 
 ## Open the impersonation insight in the Microsoft 365 Defender portal
 
-1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Policies** section \> **Anti-phishing**.
+1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** page \> **Policies** section \> **Anti-phishing**.
 
 2. On the **Anti-phishing** page, the impersonation insight looks like this:
 
