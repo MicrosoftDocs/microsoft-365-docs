@@ -18,12 +18,12 @@ description: "Admins can learn how to create policies to block active content in
 
 # Manage active content in Office documents for IT admins
 
-IT admins can create policies that control different security settings for Office documents in an organization. These settings can include blocking macros, restricting ActiveX, restricting Office add-ins, and other functionality when users open Office docs. This collection of functionality is called _active content_. Attackers can use active content to deliver malware.  
+Office documents can be automatically refreshed, updated or executed when they contain active content. Macros, ActiveX, and Office add-ins are examples of active content. When used appropriately, active content is powerful and useful, but can pose a threat when misused as Attackers can use active content to deliver malware. IT admins can set policies for security settings within thier organization to limit the use of active content to specific sets of users, or to disable entirely.
 
 Users can configure their own security and privacy settings in the Office Trust Center in their Office apps at **File** \> **Options** \> **Trust Center**.
 
 > [!IMPORTANT]
-> **Starting in July 2021, admin policies now override user-set policies for running active content in trusted documents.** Your users might run into issues when they try to use active content in trusted documents if you've implemented policies to block them. Blocking active content helps improve an organization's security posture, but it could affect worker productivity. If you choose to block active content in trusted documents, consider how to inform your employees.
+> **Starting in MONTH YEAR, policies blocking active content set by IT admins (Group policy or Cloud policy) will now be enforced on trusted documents.** Previously, end users could create a trusted documents which would allow active content to run even when an IT Admin had set policy blocking the active content. Moving forward, IT Admin deployed policies will take precedence. Your users may run into issues using active content in trusted documents if the IT Admin has implemented policies to block active content. 
 
 ## What is a trusted document?
 
@@ -31,7 +31,7 @@ Trusted documents are Office documents that open without any security prompts fo
 
 Because of this behavior, users should clearly trust documents only if they trust the document source.
 
-If an admin blocks active content by using a policy, or if they set a Trust Center setting that blocks active content, the the active content will remain blocked.
+If an admin blocks active content by using a policy, or if end-users set a Trust Center setting that blocks active content, the the active content will remain blocked.
 
 For more information, see the following articles:
 
