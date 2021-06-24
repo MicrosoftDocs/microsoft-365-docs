@@ -122,7 +122,7 @@ You can apply retention labels to content automatically when that content contai
 
 - [A match for trainable classifiers](#auto-apply-labels-to-content-by-using-trainable-classifiers)
 
-Or, you can automatically apply retention labels to [cloud attachments shared in Exchange and Teams](auto-apply-labels-to-cloud-attachments).
+Or, you can automatically apply retention labels to [cloud attachments shared in Exchange and Teams](#auto-apply-labels-to-cloud-attachments).
 
 #### Auto-apply labels to content with specific types of sensitive information
 
