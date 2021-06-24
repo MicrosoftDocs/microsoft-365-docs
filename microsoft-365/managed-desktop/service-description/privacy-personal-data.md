@@ -61,7 +61,7 @@ Microsoft Windows Update for Business uses data from Windows diagnostics to anal
 Identify data used by Microsoft Managed Desktop is stored by Azure Active Directory (AAD) in a geographical location based on the location provided by the organization when subscribing to Microsoft online services such as Microsoft Apps for enterprise and Azure. Identify data used by Microsoft Managed Desktop is stored by Azure Active Directory (AAD) in a geographical location based on the location provided by the organization when subscribing to Microsoft online services such as Microsoft Apps for enterprise and Azure. For more information on where your AAD data is located, see [Azure Active Directory- Where is your data located?] (https://msit.powerbi.com/view?r=eyJrIjoiODdjOWViZDctMWRhZS00ODUzLWI4MmQtNWM5NjBkZTBkNjFlIiwidCI6IjcyZjk4OGJmLTg2ZjEtNDFhZi05MWFiLTJkN2NkMDExZGI0NyIsImMiOjV9)
 
 ## Microsoft Intune
-Microsoft Intune collects, processes, and shares data to Microsoft Managed Desktop to support business operations and the service. See [Data collection in Intune - Microsoft Intune | Microsoft Docs] (https://docs.microsoft.com/mem/intune/protect/privacy-data-collect) for more information about the data collected in Intune. 
+Microsoft Intune collects, processes, and shares data to Microsoft Managed Desktop to support business operations and services. See [Data collection in Intune](/mem/intune/protect/privacy-data-collect) for more information about the data collected in Intune. 
 
 For more information on Microsoft Intune data locations, see [Where your Microsoft 365 customer data is stored](/microsoft-365/enterprise/o365-data-locations?view=o365-worldwide). Intune respects the storage location selections made by the administrator for customer data.
 
