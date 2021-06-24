@@ -15,8 +15,7 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 keywords: automated incident response, investigation, remediation, threat protection
-ms.date: 01/29/2021
-description: See how email analysis in investigations work in Microsoft Defender for Office 365
+description: See how email analysis in investigations work in Microsoft Defender for Office 365.
 ms.custom: 
 - air
 - seo-marvel-mar2020
@@ -74,7 +73,7 @@ Email-based evidence in the Evidence and Response tab for an incident now displa
 
 From the numbered callouts in the figure:
 
-1. You can perform a remediation action.
+1. You can perform remediation actions, in addition to the **Action Center**.
 2. You can take remediation action for email clusters with a **Malicious** verdict (but not **Suspicious**).
 3. For the email spam verdict, phishing is split into high confidence and normal phish.
 
@@ -85,13 +84,11 @@ From the numbered callouts in the figure:
 4. The email count by is based the latest delivery location and includes counters for email in mailboxes, not in mailboxes, and on-premises.
 5. Includes the date and time of the query, which might get updated for latest data.
 
-For email or email clusters in the **Entities** tab of an incident, **Prevented** means that there was no malicious emails in the mailbox for this item (mail or cluster).
-
-Here is an example.
+For email or email clusters in the **Entities** tab of an incident, **Prevented** means that there was no malicious emails in the mailbox for this item (mail or cluster). Here is an example.
 
 :::image type="content" source="../../media/email-analysis-in-investigations/email-analysis-evidence-example-prevented.png" alt-text="Example of email analysis information in Evidence and Response":::
 
-In this example, the email is malicious, but not in a mailbox.
+In this example, the email is malicious but not in a mailbox.
 
 ## Next steps
 
