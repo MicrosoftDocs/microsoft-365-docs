@@ -49,7 +49,7 @@ It's important to understand the following prerequisites prior to creating indic
 - Supported on machines on Windows 10, version 1709 or later, Windows Server 2019, Windows Server 2016, and  Windows Server 2012 R2.
    
     >[!NOTE]
-    >Windows Server 2016 and Windows Server 2012 R2 will need to be onboarded using the instrucstions in [Onboard Windows servers](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016) for this feature to work. 
+    >Windows Server 2016 and Windows Server 2012 R2 will need to be onboarded using the instructions in [Onboard Windows servers](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016) for this feature to work. 
 
 - Ensure that **Custom network indicators** is enabled in **Microsoft Defender Security Center > Settings > Advanced features**. For more information, see [Advanced features](advanced-features.md).
 - For support of indicators on iOS, see [Configure custom indicators](/microsoft-365/security/defender-endpoint/ios-configure-features#configure-custom-indicators).

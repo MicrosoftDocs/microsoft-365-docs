@@ -118,7 +118,7 @@ The package contains the following folders:
 As part of the investigation or response process, you can remotely initiate an antivirus scan to help identify and remediate malware that might be present on a compromised device.
 
 >[!IMPORTANT]
->- This action is available for devices on Windows 10, version  1709 or later.
+>- This action is available for devices on Windows 10, version  1709 or later, Windows Server 2019, Windows Server 2016, and Windows Server 2012 R2.
 >- A Microsoft Defender Antivirus (Microsoft Defender AV) scan can run alongside other antivirus solutions, whether Microsoft Defender AV is the active antivirus solution or not. Microsoft Defender AV can be in Passive mode. For more information, see [Microsoft Defender Antivirus compatibility](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility.md).
 
 One you have selected **Run antivirus scan**, select the scan type that you'd like to run (quick or full) and add a comment before confirming the scan.
@@ -163,7 +163,7 @@ When an app is restricted, the following notification is displayed to inform the
 Depending on the severity of the attack and the sensitivity of the device, you might want to isolate the device from the network. This action can help prevent the attacker from controlling the compromised device and performing further activities such as data exfiltration and lateral movement.
 
 >[!IMPORTANT]
->- Full isolation is available for devices on Windows 10, version 1703, Windows Server 2016, and Windows Server 2012 R2.
+>- Full isolation is available for devices on Windows 10, version 1703, Windows Server 2019, Windows Server 2016, and Windows Server 2012 R2.
 >- Selective isolation is available for devices on Windows 10, version 1709 or later.
 >- When isolating a device, only certain processes and destinations are allowed. Therefore, devices that are behind a full VPN tunnel won't be able to reach the Microsoft Defender for Endpoint cloud service after the device is isolated. We recommend using a split-tunneling VPN for Microsoft Defender for Endpoint and Microsoft Defender Antivirus cloud-based protection-related traffic.
 

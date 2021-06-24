@@ -48,8 +48,8 @@ It's important to understand the following prerequisites prior to creating indic
 
 - Supported on devices with Windows 10, version 1703 or later, Windows Server 2019, Windows Server 2016, and  Windows Server 2012 R2.
     
-    >[!NOTE]
-    >Windows Server 2016 and Windows Server 2012 R2 will need to be onboarded using the instrucstions in [Onboard Windows servers](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016) for this feature to work. 
+   >[!NOTE]
+    >Windows Server 2016 and Windows Server 2012 R2 will need to be onboarded using the instructions in [Onboard Windows servers](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016) for this feature to work. 
 
 - To start blocking files, you first need to [turn on the "block or allow" feature](advanced-features.md) in Settings.
 

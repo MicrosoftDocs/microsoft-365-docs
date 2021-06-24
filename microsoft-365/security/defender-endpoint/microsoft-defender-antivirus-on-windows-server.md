@@ -29,7 +29,7 @@ Microsoft Defender Antivirus is available on the following editions/versions of 
 - Windows Server 2019
 - Windows Server, version  1803 or later
 - Windows Server 2016
-- Windows Server 2012 R2 
+- Windows Server 2012 R2 (Requires Microsoft Defender for Endpoint)
 
 In some instances, Microsoft Defender Antivirus is referred to as *Endpoint Protection*; however, the protection engine is the same. Although the functionality, configuration, and management are largely the same for [Microsoft Defender Antivirus on Windows 10](microsoft-defender-antivirus-in-windows-10.md), there are a few key differences on Windows Server:
 
@@ -54,6 +54,11 @@ The process of setting up and running Microsoft Defender Antivirus on a server p
 By default, Microsoft Defender Antivirus is installed and functional on Windows Server. Sometimes, the user interface (GUI) is installed by default, but the GUI is not required. You can use PowerShell, Group Policy, or other methods to manage Microsoft Defender Antivirus. 
 
 If the GUI is not installed on your server, and you want to install it, either the **Add Roles and Features** wizard or PowerShell cmdlets.
+
+
+
+>[!NOTE]
+>This option is not available for Windows Server 2012 R2. 
 
 ### Turn on the GUI using the Add Roles and Features Wizard
 
@@ -167,6 +172,10 @@ To enable automatic sample submission, start a Windows PowerShell console as an 
 |**1**  - **Send safe samples automatically**     |The Microsoft Defender Antivirus service sends all files marked as "safe" and prompts for the remainder of the files.         |
 |**2** - **Never send**      |The Microsoft Defender Antivirus service does not prompt and does not send any files.         |
 |**3** - **Send all samples automatically**     |The Microsoft Defender Antivirus service sends all files without a prompt for confirmation.         |
+
+>[!NOTE]
+>This option is not available for Windows Server 2012 R2. 
+
 
 ## Configure automatic exclusions
 
