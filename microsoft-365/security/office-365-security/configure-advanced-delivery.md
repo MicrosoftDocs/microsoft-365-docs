@@ -71,7 +71,7 @@ Messages that are identified by the advanced delivery policy aren't security thr
 
 ## Use the Microsoft 365 Defender portal to configure SecOps mailboxes in the advanced delivery policy
 
-1. In the Microsoft 365 Defender portal, go to **Email & collaboration** \> **Policies & rules** \> **Threat policies** \> **Rules** section \> **Advanced delivery**.
+1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** page \> **Rules** section \> **Advanced delivery**.
 
 2. On the **Advanced delivery** page, verify that the **SecOps mailbox** tab is selected, and then do one of the following steps:
    - Click ![Edit icon](../../media/m365-cc-sc-edit-icon.png) **Edit**.
@@ -91,7 +91,7 @@ The SecOps mailbox entries that you configured are displayed on the **SecOps mai
 
 ## Use the Microsoft 365 Defender portal to configure third-party phishing simulations in the advanced delivery policy
 
-1. In the Microsoft 365 Defender portal, go to **Email & collaboration** \> **Policies & rules** \> **Threat policies** \> **Rules** section \> **Advanced delivery**.
+1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** page \> **Rules** section \> **Advanced delivery**.
 
 2. On the **Advanced delivery** page, select the **Phishing simulation** tab, and then do one of the following steps:
    - Click ![Edit icon](../../media/m365-cc-sc-edit-icon.png) **Edit**.
