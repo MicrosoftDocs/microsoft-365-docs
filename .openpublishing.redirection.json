@@ -4121,7 +4121,7 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "microsoft-365/lti/teams-classes.lms.md",
+      "source_path": "microsoft-365/lti/teams-classes-lms.md",
       "redirect_url": "/MicrosoftTeams/Teams-overview",
       "redirect_document_id": false
     }
