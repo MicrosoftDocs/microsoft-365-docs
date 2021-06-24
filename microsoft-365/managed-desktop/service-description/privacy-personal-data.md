@@ -52,7 +52,7 @@ Microsoft Managed Desktop uses [Windows 10 Enhanced diagnostic data*] (https://d
 
 Microsoft Managed Desktop only processes and stores system-level data from Windows 10 optional diagnostic data originating from enrolled devices such as application and device reliability and performance information. Microsoft Managed Desktop does not process and store customers’ personal data such as chat and browser history, voice, text, or speech data. 
 
-For more information about the diagnostic data collection of Microsoft Windows 10, see the [Where we store and process personal data] (https://privacy.microsoft.com/privacystatement#mainwherewestoreandprocessdatamodule) section of the [Microsoft Privacy Statement] (https://privacy.microsoft.com/privacystatement).
+For more information about the diagnostic data collection of Microsoft Windows 10, see the [Where we store and process personal data](https://privacy.microsoft.com/privacystatement#mainwherewestoreandprocessdatamodule) section of the Microsoft Privacy Statement.
 
 ## Microsoft Windows Update for Business
 Microsoft Windows Update for Business uses data from Windows diagnostics to analyze update status and failures. Microsoft Managed Desktop leverages this data and uses it to mitigate and resolve problems to ensure that all registered devices are up to date based on a predefined update cadence.
@@ -79,4 +79,3 @@ Microsoft Managed Desktop has undergone external audits and obtained a comprehen
 
 ## Legal
 Microsoft’s Privacy Notice to End Users of Products Provided by Organizational Customers. Microsoft’s [Privacy Statement](https://privacy.microsoft.com/privacystatement) notifies end users that when they sign into Microsoft products with a work account, a) their organization can control and administer their account (including controlling privacy-related settings), and access and process their data; and b) Microsoft may collect and process the data to provide the service to the organization and end users. 
-
