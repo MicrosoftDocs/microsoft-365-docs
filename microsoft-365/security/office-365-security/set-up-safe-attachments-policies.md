@@ -79,7 +79,7 @@ In Exchange Online PowerShell or standalone EOP PowerShell, you manage the polic
 
 Creating a custom Safe Attachments policy in the Microsoft 365 Defender portal creates the safe attachment rule and the associated safe attachment policy at the same time using the same name for both.
 
-1. In the Microsoft 365 Defender portal, go to **Email & collaboration** \> **Policies & rules** \> **Threat policies** \> **Policies** section \> **Safe Attachments**.
+1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** page \> **Policies** section \> **Safe Attachments**.
 
 2. On the **Safe Attachments** page, click ![Create icon](../../media/m365-cc-sc-create-icon.png) **Create**.
 
@@ -131,7 +131,7 @@ Creating a custom Safe Attachments policy in the Microsoft 365 Defender portal c
 
 ## Use the Microsoft 365 Defender portal to view Safe Attachments policies
 
-1. In the Microsoft 365 Defender portal, go to **Email & collaboration** \> **Policies & rules** \> **Threat policies** \> **Policies** section \> **Safe Attachments**.
+1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** page \> **Policies** section \> **Safe Attachments**.
 
 2. On the **Safe Attachments** page, the following properties are displayed in the list of policies:
    - **Name**
@@ -142,7 +142,7 @@ Creating a custom Safe Attachments policy in the Microsoft 365 Defender portal c
 
 ## Use the Microsoft 365 Defender portal to modify Safe Attachments policies
 
-1. In the Microsoft 365 Defender portal, go to **Email & collaboration** \> **Policies & rules** \> **Threat policies** \> **Policies** section \> **Safe Attachments**.
+1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** page \> **Policies** section \> **Safe Attachments**.
 
 2. On the **Safe Attachments** page, select a policy from the list by clicking on the name.
 
@@ -152,7 +152,7 @@ To enable or disable a policy or set the policy priority order, see the followin
 
 ### Enable or disable Safe Attachments policies
 
-1. In the Microsoft 365 Defender portal, go to **Email & collaboration** \> **Policies & rules** \> **Threat policies** \> **Policies** section \> **Safe Attachments**.
+1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** page \> **Policies** section \> **Safe Attachments**.
 
 2. On the **Safe Attachments** page, select a policy from the list by clicking on the name.
 
@@ -178,7 +178,7 @@ Safe Attachments policies are displayed in the order they're processed (the firs
 
 To change the priority of a policy, you click **Increase priority** or **Decrease priority** in the properties of the policy (you can't directly modify the **Priority** number in the Microsoft 365 Defender portal). Changing the priority of a policy only makes sense if you have multiple policies.
 
-1. In the Microsoft 365 Defender portal, go to **Email & collaboration** \> **Policies & rules** \> **Threat policies** \> **Policies** section \> **Safe Attachments**.
+1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** page \> **Policies** section \> **Safe Attachments**.
 
 2. On the **Safe Attachments** page, select a policy from the list by clicking on the name.
 
@@ -193,7 +193,7 @@ To change the priority of a policy, you click **Increase priority** or **Decreas
 
 ## Use the Microsoft 365 Defender portal to remove Safe Attachments policies
 
-1. In the Microsoft 365 Defender portal, go to **Email & collaboration** \> **Policies & rules** \> **Threat policies** \> **Policies** section \> **Safe Attachments**.
+1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** page \> **Policies** section \> **Safe Attachments**.
 
 2. On the **Safe Attachments** page, select a custom policy from the list by clicking on the name of the policy.
 
@@ -435,7 +435,7 @@ For detailed syntax and parameter information, see [Remove-SafeAttachmentRule](/
 
 To verify that you've successfully created, modified, or removed Safe Attachments policies, do any of the following steps:
 
-- In the Microsoft 365 Defender portal, go to **Email & collaboration** \> **Policies & rules** \> **Threat policies** \> **Policies** section \> **Safe Attachments**. Verify the list of policies, their **Status** values, and their **Priority** values. To view more details, select the policy from the list by clicking on the name, and view the details in the fly out.
+- In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** page \> **Policies** section \> **Safe Attachments**. Verify the list of policies, their **Status** values, and their **Priority** values. To view more details, select the policy from the list by clicking on the name, and view the details in the fly out.
 
 - In Exchange Online PowerShell or Exchange Online Protection PowerShell, replace \<Name\> with the name of the policy or rule, run the following command, and verify the settings:
 
