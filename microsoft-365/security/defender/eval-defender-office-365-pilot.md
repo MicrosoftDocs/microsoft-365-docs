@@ -37,7 +37,7 @@ Use the following steps to setup and configure the pilot for Microsoft Defender 
 
 - [Step 1: Create pilot groups](#step-1:-create-pilot-groups)
 - [Step 2: Congfigure protection](#step-2:-configure-protection)
-- [Step 3: Get familiar with simulation, monitoring, and metrics](#step-3:-get-familiar-with-simulation-monitoring-and-metrics)
+- [Step 3: Try out capabilities — Get familiar with simulation, monitoring, and metrics](#step-3:-get-familiar-with-simulation-monitoring-and-metrics)
 
 When you evaluate Microsoft Defender for Office 365, you may choose to pilot specific users before enabling and enforcing policies for your entire organization. Creating distribution groups can help manage the deployment processes. For example, create groups such as *Defender for Office 365 Users - Standard Protection*, *Defender for Office 365 Users - Strict Protection*, *Defender for Office 365 Users - Custom Protection*, or *Defender for Office 365 Users - Exceptions*.
 
@@ -131,7 +131,7 @@ The table below provides references and additional guidance for configuring and 
 |Safe Attachments     |    Protect users from malicious content in email attachments and files in SharePoint, OneDrive, and Teams.     |    [Set up safe attachment policies in Defender for Office 365](../office-365-security/set-up-safe-attachments-policies.md)     |
 |Safe Links     |     Protect users from opening and sharing malicious links in email messages or Office desktop apps.    |    [Set up safe links policies in Defender for Office 365](../office-365-security/set-up-safe-links-policies.md)     |
 
-## Step 3: Get familiar with simulation, monitoring, and metrics
+## Step 3: Try out capabilities — Get familiar with simulation, monitoring, and metrics
 
 Now that your pilot is set up and configured, it's helpful to become familiar with the reporting, monitoring, and attack simulation tools that are unique to Microsoft Defender for Microsoft 365.
 
