@@ -64,7 +64,7 @@ The following table describes roles to consider as you plan for Microsoft Defend
 You can manage your security policies and settings using one of two methods/locations:
 
 - The Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com))
-- Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)). (Endpoint Manager now includes Microsoft Intune)
+- Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)). Endpoint Manager now includes Microsoft Intune.
 
 When you begin to use Microsoft Defender for business, you will be asked whether you want to use Endpoint Manager or your Microsoft 365 Defender portal. **We recommend using the Microsoft 365 Defender portal and its wizard-like experience for managing your devices and security settings**. 
 
