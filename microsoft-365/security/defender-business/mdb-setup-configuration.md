@@ -54,7 +54,7 @@ The following table describes roles to consider as you plan for Microsoft Defend
 
 | Permission level | Description |
 |:---|:---|
-| Global administrators (also referred to as global admins) <p> As a best practice, limit the number of global administrators. | Global admins can perform all tasks. The person who signed your company up for Microsoft 365 or for Microsoft Defender for business is a global administrator by default. <p> Global admins are able to access/change settings across all Microsoft 365 portals, including the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)) and the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)).  |
+| Global administrators (also referred to as global admins) <br/><br/> As a best practice, limit the number of global administrators. | Global admins can perform all tasks. The person who signed your company up for Microsoft 365 or for Microsoft Defender for business is a global administrator by default. <br/><br/> Global admins are able to access/change settings across all Microsoft 365 portals, including the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)) and the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)).  |
 | Security administrators (also referred to as security admins) | Security admins can perform security operator tasks plus the following: <br/>- Monitor security-related policies across Microsoft 365 services <br/>- Manage security threats and alerts <br/>- View reports |
 | Security operator | Security operators can perform security reader tasks plus the following: <br/>- View, investigate, and respond to security threats alerts  |
 | Security reader | Security readers can perform the following tasks: <br/>- View security-related policies across Microsoft 365 services <br/>- View security threats and alerts <br/>- View reports  |
@@ -163,7 +163,6 @@ Microsoft Defender for business includes predefined policies to help ensure the 
 As you define policies, you’ll notice that an order of priority is assigned. You can edit the order of priority for the policies that you define, but you cannot change the order of priority for default policies. For example, suppose that for your Windows client devices, you have three next-generation protection policies. In this case, your default policy is number 3 in priority. You can change the order of your policies that are numbered 1 and 2, but the default policy will remain number 3 in your list. 
 
 The important thing to remember about multiple policies is that devices will receive the first applied policy only. Referring to our earlier example of three next-generation policies, suppose that you have devices that are targeted by all three policies. In this case, those devices will receive policy number 1, but will not receive policies numbered 2 and 3. 
-
 
 ## Understand configuration settings for next-generation protection
 
