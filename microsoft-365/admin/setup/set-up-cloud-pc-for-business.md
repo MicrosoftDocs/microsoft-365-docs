@@ -26,7 +26,7 @@ description: Learn about the requirements and considerations for setting Microso
 
 # Set up Microsoft 365 Cloud PC for Business
 
-This article is for people plan to purchase and set up Microsoft 365 Cloud PC for Business plan.
+This article is for people who plan to purchase and set up Microsoft 365 Cloud PC for Business plan.
   
 Microsoft Cloud PC for Business is a version of [Microsoft Cloud PC](https://review.docs.microsoft.com/mem/cloudpc/overview?branch=release-cloudpc) that is made specifically for use in smaller companies. 
 
