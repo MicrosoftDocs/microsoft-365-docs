@@ -17,11 +17,14 @@ f1.keywords: NOCSH
 
 # Compare Microsoft Defender for business to Microsoft 365 Business Premium
 
-As you probably already know, Microsoft offers a variety of cloud solutions and services, including several different plans for small and midsized businesses like yours. 
-
-For example, Microsoft 365 Business Premium offers advanced cyberthreat protection and device management capabilities. 
+As you probably already know, Microsoft offers a variety of cloud solutions and services, including several different plans for small and midsized businesses like yours. For example, [Microsoft 365 Business Premium](../../business/microsoft-365-business-overview.md) offers advanced cyberthreat protection and device management capabilities. 
 
 You might be wondering how Microsoft 365 Business Premium compares to Microsoft Defender for business. The following table summarizes the important features and capabilities of these plans. 
+
+> [!NOTE]
+> The following table is intended to provide a high-level overview of threat protection features included in Microsoft Defender for business and Microsoft 365 Business Premium. It is not intended to serve as a service description or licensing contract document. Please see the following resources for more details about what the various plans include:
+> - [Microsoft 365 Business Premium service description](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description)
+> - [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
 
 | Feature/Capability | Microsoft Defender for business | [Microsoft 365 Business Premium](../../business/microsoft-365-business-overview.md) |
 |:---|:---|:---|
@@ -31,8 +34,8 @@ You might be wondering how Microsoft 365 Business Premium compares to Microsoft 
 | [Attack surface reduction](../defender-endpoint/overview-attack-surface-reduction.md) <p>(attack surface reduction rules and other protection)	| Yes <p> Attack surface reduction rules built into Windows 10, plus centrally managed capabilities | Yes <p> Attack surface reduction rules are built into Windows 10 |
 | [Endpoint detection and response](../defender-endpoint/overview-endpoint-detection-response.md) | Yes. Includes: <br/>- Behavior-based detection <br/>- Manual response actions <br/>- Live response	 | No |
 | [Automated investigation and response](../defender-endpoint/automated-investigations.md) | Yes | No |
-| Threat intelligence | Yes. Includes threat analytics and [custom indicators](../defender-endpoint/manage-indicators.md) | No |
-| Threat & vulnerability management | Yes | No |
+| Threat intelligence | Yes. Includes [threat analytics](../defender-endpoint/threat-analytics.md) and [custom indicators](../defender-endpoint/manage-indicators.md) | No |
+| [Threat & vulnerability management](../defender-endpoint/tvm-dashboard-insights.md) | Yes | No |
 | Centralized management and reporting | Yes <p>You can manage devices running Windows 10 in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) | Yes <p> You can manage Windows 10 devices and view detected threats in the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)) |
-| APIs  | Yes | Yes |
+| [APIs](../defender-endpoint/apis-intro.md)  | Yes | Yes |
  
