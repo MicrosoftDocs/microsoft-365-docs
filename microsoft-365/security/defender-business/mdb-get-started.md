@@ -25,6 +25,8 @@ The Microsoft 365 Defender portal (https://security.microsoft.com) is your one-s
  
 Take a moment to get acquainted with your Microsoft 365 Defender portal.
 
+:::image type="content" source="../../media/defender-business/mdb-portal-home.png" alt-text="Microsoft 365 Defender portal":::
+
 ## Using the navigation bar
 
 Use the navigation bar on the left side of the screen to access your incidents, view remediation actions that were taken, and learn more about detected threats. The following table describes items you’ll see in your navigation bar.
