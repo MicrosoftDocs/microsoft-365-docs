@@ -913,7 +913,7 @@
         - name: Compliance Configuration Analyzer tool
           href: compliance-manager-mcca.md
         - name: Frequently asked questions (FAQ)
-          href: compliance-manager-faq.md
+          href: compliance-manager-faq.yml
         - name: Compliance Manager (classic)
           href: meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md
     - name: Microsoft Service Trust Portal
