@@ -27,12 +27,12 @@ You might be wondering how Microsoft 365 Business Premium compares to Microsoft 
 |:---|:---|:---|
 | Antispam protection | Yes (for devices) | Yes (for email content, such as messages and attachments) |
 | Antimalware protection | Yes (for devices) | Yes (for email content) |
-| Next-generation protection <p> (antivirus and antimalware protection) | Yes <p>You can manage devices running Windows 10 in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) <p>Coming soon: support for Windows Server, macOS, Linux, iOS, and Android devices. | Yes <p> Microsoft Defender Antivirus is included in Windows 10 <p> You can manage Windows 10 devices and view detected threats in the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)) |
-| Attack surface reduction <br/>(attack surface reduction rules and other protection)	| Yes (attack surface reduction rules built into Windows 10, plus centrally managed capabilities) | Yes (attack surface reduction rules are built into Windows 10) |
-| Endpoint detection and response | Yes. Includes: <br/>- Behavior-based detection <br/>- Manual response actions <br/>- Live response	 | No |
-| Automated investigation and response | Yes | No |
-| Threat intelligence | Yes. Includes threat analytics and custom indicators | No |
+| [Next-generation protection](../defender-endpoint/microsoft-defender-antivirus-in-windows-10.md) <p> (antivirus and antimalware protection) | Yes. Microsoft Defender Antivirus is included in Windows 10  | Yes. Microsoft Defender Antivirus is included in Windows 10. |
+| [Attack surface reduction](../defender-endpoint/overview-attack-surface-reduction.md) <p>(attack surface reduction rules and other protection)	| Yes <p> Attack surface reduction rules built into Windows 10, plus centrally managed capabilities | Yes <p> Attack surface reduction rules are built into Windows 10 |
+| [Endpoint detection and response](../defender-endpoint/overview-endpoint-detection-response.md) | Yes. Includes: <br/>- Behavior-based detection <br/>- Manual response actions <br/>- Live response	 | No |
+| [Automated investigation and response](../defender-endpoint/automated-investigations.md) | Yes | No |
+| Threat intelligence | Yes. Includes threat analytics and [custom indicators](../defender-endpoint/manage-indicators.md) | No |
 | Threat & vulnerability management | Yes | No |
-| Centralized management and reporting | Yes | Yes|
+| Centralized management and reporting | Yes <p>You can manage devices running Windows 10 in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) | Yes <p> You can manage Windows 10 devices and view detected threats in the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)) |
 | APIs  | Yes | Yes |
  
