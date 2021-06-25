@@ -93,7 +93,15 @@ In this illustration:
 
 You might have discovered and sanctioned cloud apps using Cloud App Security that have not been added to Azure AD. You can take advantage of Conditional Access App Control by adding these cloud apps to your Azure AD tenant and the scope of your conditional access rules.
 
+#### Protecting your organization from hackers
 
+Cloud App Security provides powerful protection on its own. However, when combined with the other capabilities of Microsoft 365 Defender, Cloud App Security provides data into the shared signals which, together, helps stop attacks.
+
+It's worth repeating this illustration from the overview to this Microsoft 365 Defender evaluation and pilot guide. 
+
+![How Microsoft 365 Defender stops a chain of threats](../../media/defender/m365-defender-eval-threat-chain.png)
+
+Focusing on the right side of this illustration, Microsoft Cloud App Security notices anomalous behavior like impossible-travel, credential access, and unusual download, file share, or mail forwarding activity and reports these to the security team. Consequently, Cloud App Security helps prevent lateral movement by hackers and exfiltration of sensitive data. 
 
 ## Understand key concepts
 
