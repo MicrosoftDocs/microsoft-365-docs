@@ -39,18 +39,43 @@ None
 
 | Name | Required | Type | Description |
 |--------|-------|--------|------------|
+|Publications|yes|MachineLearningPublicationEntityData[]|The collection of MachineLearningPublicationEntityData each of which specifices the model and target document library.|
+
+### MachineLearningPublicationEntityData
+| Name | Required | Type | Description |
+|--------|-------|--------|------------|
 |ModelUniqueId|yes|string|The unique ID of the model file.|
-TargetSiteUrl|yes|string|The full URL of the target library site.|
-TargetWebServerRelativeUrl|yes|string|The server relative URL of the web for the target library.|
-TargetLibraryServerRelativeUrl|yes|string|The server relative URL of the target library.|
-ViewOption|no|string|Specifies whether to set new model view as the library default.|
+|TargetSiteUrl|yes|string|The full URL of the target library site.|
+|TargetWebServerRelativeUrl|yes|string|The server relative URL of the web for the target library.|
+|TargetLibraryServerRelativeUrl|yes|string|The server relative URL of the target library.|
 
 ## Response
 
 | Name   | Type  | Description|
 |--------|-------|------------|
-|200 OK| |Success|
+|200 OK| |Success|This a customized API to support removing a model from multi document libraries. In the case of failing, 200 OK could still be returned and the caller needs to inspect the response body to understand if the model has been successfully removed from the doc lib.|
 
+## Response Body
+| Name   | Type  | Description|
+|--------|-------|------------|
+|TotalSuccesses|int|The total number of a model being sucessfully remvoed from a document library.|
+|TotalFailures|int|The total number of a model failing to be removed from a document library.|
+|Details|MachineLearningPublicationResult[]|The collection of MachineLearningPublicationResult each of which specififies the detailed result of removing the model from the document library.|
+
+### MachineLearningPublicationResult
+| Name   | Type  | Description|
+|--------|-------|------------|
+|StatusCode|int|The status code|
+|ErrorMessage|string|The error message which tells what's wrong when apply the model to the document library.|
+|Publication|MachineLearningPublicationEntityData|It specifies the model info and the target document library.| 
+
+### MachineLearningPublicationEntityData
+| Name | Type | Description |
+|--------|--------|------------|
+|ModelUniqueId|string|The unique ID of the model file.|
+|TargetSiteUrl|string|The full URL of the target library site.|
+|TargetWebServerRelativeUrl|string|The server relative URL of the web for the target library.|
+|TargetLibraryServerRelativeUrl|string|The server relative URL of the target library.|
 
 ## Examples
 
@@ -61,22 +86,16 @@ In this sample, the ID of the Contoso Contract document understanding model is `
 #### Sample request
 
 ```HTTP
-{
-	"__metadata": {
-		"type": "Microsoft.Office.Server.ContentCenter.SPMachineLearningPublicationsEntityData"
-	},
-	"Publications": {
-		"results": [
-			{
-				"ModelUniqueId": "7645e69d-21fb-4a24-a17a-9bdfa7cb63dc",
-				"TargetSiteUrl": "https://contoso.sharepoint.com/sites/repository/",
-				"TargetWebServerRelativeUrl": "/sites/repository",
-				"TargetLibraryServerRelativeUrl": "/sites/repository/contracts",
-				"ViewOption": "NewViewAsDefault"
-			}
-		]
-	}
-}
+{ 
+	"publications": [ 
+		{ 
+			"ModelUniqueId": "7645e69d-21fb-4a24-a17a-9bdfa7cb63dc", 
+			"TargetSiteUrl": "https://constco.sharepoint-df.com/sites/docsite", 
+			"TargetWebServerRelativeUrl": "/sites/docsite ", 
+			"TargetLibraryServerRelativeUrl": "/sites/dcocsite/joedcos" 
+		} 
+	] 
+} 
 ```
 
 
