@@ -20,13 +20,13 @@ Gets or updates information about a SharePoint Syntex document understanding mod
 ## HTTP request
 
 ```HTTP
-GET /_api/machinelearning/models/getbyuniqueid(‘{modelUniqueId}') HTTP/1.1
+GET /_api/machinelearning/models/getbyuniqueid('{modelUniqueId}') HTTP/1.1
 ```
 
 This same method can be used for deleting a model, too. 
 
 ```HTTP
-DELETE /_api/machinelearning/models/getbyuniqueid(‘{modelUniqueId}') HTTP/1.1
+DELETE /_api/machinelearning/models/getbyuniqueid('{modelUniqueId}') HTTP/1.1
 ```
 ## URI parameters
 
@@ -59,12 +59,12 @@ In this sample, the ID of the Contoso Contract document understanding model is `
 #### Sample request
 
 ```HTTP
-GET /_api/machinelearning/models/getbyuniqueid(‘{7645e69d-21fb-4a24-a17a-9bdfa7cb63dc}') HTTP/1.1
+GET /_api/machinelearning/models/getbyuniqueid('7645e69d-21fb-4a24-a17a-9bdfa7cb63dc') HTTP/1.1
 ```
 
 #### Sample response
 
-**Status code:** 204
+**Status code:** 200
 
 ```HTTP
 {
