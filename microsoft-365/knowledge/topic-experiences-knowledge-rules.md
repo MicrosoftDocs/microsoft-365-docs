@@ -14,7 +14,7 @@ description: "Learn how to administer topic visibility in Microsoft Viva Topics.
 
 # Manage topic visibility in Microsoft Viva Topics
 
-You can manage the set of users who can see topic highlights, topic cards, and the topic center in the [Microsoft 365 admin center](https://admin.microsoft.com). You must be a global administrator or SharePoint administrator and Groups admin to perform these tasks.
+You can manage who can see topic highlights, topic cards, and the topic center in the [Microsoft 365 admin center](https://admin.microsoft.com). You must be a global administrator or SharePoint administrator and Groups admin to do these tasks.
 
 ## To access topics management settings:
 
