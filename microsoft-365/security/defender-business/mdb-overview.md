@@ -188,8 +188,9 @@ Defender for Endpoint enables your security operations team to centrally manage 
 
 ### Role-based access control
 
-Using role-based access control (RBAC), permissions and access are granted through roles and groups. For example, certain roles, such as security operator, can view and address threats, whereas the security administrator role can configure your company’s threat protection features. With RBAC, you have fine-grained control over who can access the Microsoft 365 Defender portal (https://security.microsoft.com), and what they can see and do in the security center. 
-To learn more, see Manage portal access using role-based access control.
+Using role-based access control (RBAC) in Microsoft 365, permissions and access are granted through roles and groups. For example, certain roles, such as security operator, can view and address threats, whereas the security administrator role can configure your company’s threat protection features. With RBAC, you have fine-grained control over who can access the Microsoft 365 Defender portal ([https://security.microsoft.com]https://security.microsoft.com)), and what they can see and do in the security center. 
+
+To learn more, see [Manage portal access using role-based access control](../defender-endpoint/rbac.md).
 
 ### Simplified client configuration
 
