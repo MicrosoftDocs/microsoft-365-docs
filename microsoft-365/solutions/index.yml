@@ -56,16 +56,16 @@ landingContent:
             url: architecture-icons-templates.md
 
   # Card
-  - title: Workload resources
+  - title: Administration and migration solution guides
     linkLists:
-      - linkListType: reference
+      - linkListType: how-to-guide
         links:
-          - text: Contoso case studies
-            url: contoso-case-study-solutions.md
-      - linkListType: tutorial
-        links:
-          - text: Test lab guides
-            url: test-lab-guides-overview-solutions.md
+          - text: Tenant management
+            url: tenant-management-overview.md
+          - text: Remove a former employee
+            url: ../admin/add-users/remove-former-employee.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+          - text: Migrate your file shares to Microsoft 365
+            url: /sharepointmigration/mm-get-started.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
 
   # Card
   - title: Teamwork and collaboration solution guides
@@ -140,16 +140,16 @@ landingContent:
             url: ../security/defender-endpoint/switch-to-microsoft-defender-migration.md
 
   # Card
-  - title: Administration and migration solution guides
+  - title: Workload resources
     linkLists:
-      - linkListType: how-to-guide
+      - linkListType: reference
         links:
-          - text: Tenant management
-            url: tenant-management-overview.md
-          - text: Remove a former employee
-            url: ../admin/add-users/remove-former-employee.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
-          - text: Migrate your file shares to Microsoft 365
-            url: /sharepointmigration/mm-get-started.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+          - text: Contoso case studies
+            url: contoso-case-study-solutions.md
+      - linkListType: tutorial
+        links:
+          - text: Test lab guides
+            url: test-lab-guides-overview-solutions.md
 
   # Card
   - title: Industry-specific guidance
