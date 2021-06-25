@@ -11,7 +11,6 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ROBOTS: noindex,nofollow
 description: "Learn how to set up and use a 17a-4 SQL DataParser connector to import and archive SQL data in Microsoft 365."
 ---
 
