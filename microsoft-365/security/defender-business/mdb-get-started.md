@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: article
-ms.date: 06/23/2021
+ms.date: 06/25/2021
 ms.prod: m365-security
 ms.technology: dforbiz
 localization_priority: Normal
@@ -17,13 +17,16 @@ f1.keywords: NOCSH
 
 # Get started with Microsoft Defender for business
 
-After setup and configuration is complete for your company, the best way to get started using Microsoft Defender for business is by visiting your Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). Sign in with your user account for Microsoft 365. The following sections describe the kinds of things you can do in the Microsoft 365 Defender portal.
+After setup and configuration is complete for your company, the best way to get started using Microsoft Defender for business is by visiting your Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). 
+
+
+Sign in with your user account for Microsoft 365. The following sections describe the kinds of things you can do in the Microsoft 365 Defender portal.
 
 ## Navigate the Microsoft 365 Defender portal
 
 The Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) is your one-stop shop for using and managing Microsoft Defender for business. It includes a welcome banner and callouts to help you get started, cards that surface relevant information, and a navigation bar to give you easy access to the various features and capabilities.
 
-SCREENSHOT WITH CALLOUTS
+:::image type="content" source="../../media/defender-business/mdb-portal-home.png" alt-text="Microsoft 365 Defender portal home page for small business":::
 
 Take a moment to get acquainted with your Microsoft 365 Defender portal.
 
