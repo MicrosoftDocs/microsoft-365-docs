@@ -320,7 +320,7 @@ This wraps up the attack simulation for incident analysis, automated investigati
 
 ## Next step
 
-[![Try additional Microsoft 365 Defender incident response capabilities](../../media/eval-defender-investigate-respond/eval-defender-eval-investigate-respond-step3.png)](eval-defender-investigate-respond-additional.md)
+[![Try additional Microsoft 365 Defender incident response capabilities](../../media/eval-defender-investigate-respond/eval-defender-eval-investigate-respond-step2.png)](eval-defender-investigate-respond-additional.md)
 
 Step 2 of 2: [Try additional Microsoft 365 Defender incident response capabilities](eval-defender-investigate-respond-additional.md)
 
