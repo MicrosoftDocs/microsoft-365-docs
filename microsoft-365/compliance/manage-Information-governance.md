@@ -47,3 +47,7 @@ To manage high-value content for legal, business, or regulatory obligations:
 |Capability|What problems does it solve?|Get started|
 |:------|:------------|---------------------|:----------------------------|
 |[Records management](records-management.md)| A single solution for email and documents that incorporates retention schedules and requirements into a file plan that supports the full lifecycle of your content with records declaration, retention, and disposition <br /><br />Example scenario: [Disposition of records](disposition.md#disposition-of-records)|[Get started with records management](get-started-with-records-management.md) |
+
+## Licensing requirements
+
+License requirements for Microsoft Information Governance depend on the scenarios and features you use, rather than set licensing requirements for each capability listed on this page. To understand your licensing requirements and options, see the [Information Governance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-governance) and [Records Management](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#records-management) sections from the Microsoft 365 licensing documentation, and download the related PDF or Excel.

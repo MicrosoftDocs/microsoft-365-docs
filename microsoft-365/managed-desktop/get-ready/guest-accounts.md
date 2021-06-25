@@ -14,9 +14,9 @@ audience: Admin
 
 # Prerequisites for guest accounts
 
-Microsoft Managed Desktop requires the following settings in your Azure AD organization for guest account access. You can adjust these settings at the [Azure portal](https://portal.azure.com) under **External Identities / External collaboration**:
+Microsoft Managed Desktop requires the following settings in your Azure AD organization for guest account access. You can adjust these settings at the [Azure portal](https://portal.azure.com) under **External Identities / External collaboration settings**:
 
--   **Admins and users in the guest inviter role can invite** set to **Yes**
+-   For **Guest invite restrictions** set to **Member users and users assigned to specific admin roles can invite guest users including guests with member permissions**
 -   For **Collaboration restrictions**, choose any of these options:
     -   If you select **Allow invitations to be sent to any domain (most inclusive)**, no other configuration required.
     -   If you select **Deny invitations to the specified domains**, make sure that Microsoft.com isn’t listed in the target domains.

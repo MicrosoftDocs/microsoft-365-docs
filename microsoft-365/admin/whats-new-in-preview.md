@@ -45,23 +45,35 @@ And if you'd like to know what's new with other Microsoft cloud services:
 - [Office updates](/OfficeUpdates/)
 - [How to check Windows release health](/windows/deployment/update/check-release-health)
 
+## June 2021
+
+### Microsoft 365 admin center search
+
+We've added a couple of new categories to Search functionality.
+
+- You can now search for Microsoft 365 admin roles in global search and quickly view and manage role assignments from any page. For example, search for **Intune administrator**.
+
+- You can now find simplified setup experiences through global search. This can help you and your team quickly get started with how to use new features. For example, search for **set password to never expire**.
+
+To learn more about search in the admin center, see [Search in the Microsoft 365 admin center](manage/search-in-the-mac.md).
+
 ## May 2021
 
 ### Admin mobile app
 
 ### Keep track of support ticket updates using the Admin mobile app
 
-For all the service requests created in your tenant you can now keep track of the ticket status, view ticket details and provide / request additional information by adding notes & attachments. 
+For all the service requests created in your tenant you can now keep track of the ticket status, view ticket details and provide / request additional information by adding notes & attachments.
 
-:::image type="content" source="../media/whats-new-track-support-tickets.png" alt-text="Screenshot: Track support ticket updates":::
+:::image type="content" source="../media/Keep-track-support-ticket-updates2.PNG" alt-text="Screenshot: Track support ticket updates":::
 
-### Stay on top of all the major updates to the app and your Microsoft 365 subscription 
+### Stay on top of all the major updates to the app and your Microsoft 365 subscription
 
-- Stay on top of all the major updates to your Microsoft 365 subscription through Message Center push notifications (now enabled by default). 
+- Stay on top of all the major updates to your Microsoft 365 subscription through Message Center push notifications (now enabled by default).
 
 - Keep track of the latest features available in the app using the **What's New** section. Go to **Settings** > **What’s new?**
 
-:::image type="content" source="../media/whats-new-updates.png" alt-text="Screenshot: Track major updates and features":::
+:::image type="content" source="../media/Stay-on-top-of-updates.PNG" alt-text="Screenshot: Track major updates and features":::
 
 ## April 2021
 
@@ -275,7 +287,7 @@ We've heard from a lot of admins that they need to share information about group
 
 ### Microsoft 365 solution and architecture center
 
-Just this month, we released a new site on [https://docs.microsoft.com]() called the [Microsoft 365 solution and architecture center](../solutions/index.yml), which brings together the technical guidance you need to understand, plan, and implement integrated Microsoft 365 solutions for secure and compliant collaboration. In this center, you'll find:
+Just this month, we released a new site on docs.microsoft.com called the [Microsoft 365 solution and architecture center](../solutions/index.yml), which brings together the technical guidance you need to understand, plan, and implement integrated Microsoft 365 solutions for secure and compliant collaboration. In this center, you'll find:
 
 - Foundational solution guidance
 - Workload solutions and scenario guidance

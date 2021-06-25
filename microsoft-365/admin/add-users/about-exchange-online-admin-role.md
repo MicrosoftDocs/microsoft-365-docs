@@ -20,7 +20,7 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 097ae285-c4af-4319-9770-e2559d66e4c8
-description: "Exchange online admins manage your organization's email and mailboxes. For example, they recover deleted items in a user's mailbox. "
+description: "Exchange online admins manage your organization's email and mailboxes. For example, they recover deleted items in a user's mailbox."
 ---
 
 # About the Exchange Online admin role
@@ -28,8 +28,6 @@ description: "Exchange online admins manage your organization's email and mailbo
 To help you administer Microsoft 365, you can [assign](assign-admin-roles.md) users permissions to manage your organization's email and mailboxes from the [Exchange admin center](/exchange/exchange-admin-center). You do this by assigning them to the Exchange admin role.
   
  **Tip**: When you assign someone to the Exchange admin role, also assign them to the Service admin role. This way they can see important information in the Microsoft 365 admin center, such as the health of the Exchange Online service, and change and release notifications.
-  
-## Before you begin
 
 Here are some of the key tasks users can do when they are assigned to the Exchange admin role:
   
@@ -43,7 +41,7 @@ Here are some of the key tasks users can do when they are assigned to the Exchan
 
 - [Create a shared mailbox](../email/create-a-shared-mailbox.md) so a group of people can monitor and send email from a common email address.
 
-- [Email anti-spam protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-protection) and malware filters for the organization.
+- [Email anti-spam protection](../../security/office-365-security/anti-spam-protection.md) and malware filters for the organization.
 
 - Manage Microsoft 365 groups
 

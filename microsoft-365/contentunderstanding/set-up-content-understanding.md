@@ -38,6 +38,8 @@ Prior to setup, make sure to plan for the best way to set up and configure conte
 
 As an admin, you can also make changes to your selected settings anytime after setup, and throughout the content understanding management settings in the Microsoft 365 Admin Center.
 
+If you plan to use a custom Power Platform environment, you must [install the *AI Builder for Project Cortex* app in this environment](/power-platform/admin/manage-apps#install-an-app-in-the-environment-view) and [allocate AI Builder credits](/power-platform/admin/capacity-add-on) to it before you can create form processing models.
+
 ### Licensing
 
 To use SharePoint Syntex, your organization must have a subscription to SharePoint Syntex, and each user must have the following licenses assigned:
@@ -62,9 +64,9 @@ Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.co
 
 1. In the Microsoft 365 admin center, select **Setup**, and then view the **Files and content** section.
 
-2. In the **Files and content** section, select **Automate content understanding**.<br/>
+2. In the **Files and content** section, select **Automate content understanding**. Note that your current AI Builder credit availability is shown in the **At a glance** section.<br/>
 
-3. On the **Automate content understanding** page, click **Get started** to walk through the setup process.<br/>
+3. On the **Automate content understanding** page, click **Get started** to walk through the setup process. <br/>
 
     > [!div class="mx-imgBorder"]
     > ![Begin setup](../media/content-understanding/admin-content-understanding-get-started.png)</br>
@@ -88,7 +90,7 @@ Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.co
 
     For **Power Platform environment**, you can select:
     - **Use the default environment** to use your default Power Platform environment.
-    - **Use a custom environment** to use a custom environment. Choose the environment that you want to use from the list. You must install the *AI Builder for Project Cortex* app in this environment and allocate AI Builder credits to it before you can create form processing models.
+    - **Use a custom environment** to use a custom environment. Choose the environment that you want to use from the list. ([See the requirements for a custom environment](/microsoft-365/contentunderstanding/set-up-content-understanding#requirements)).
 
     Click **Next**.
 

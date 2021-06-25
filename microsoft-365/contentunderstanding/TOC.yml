@@ -33,6 +33,8 @@
           href: create-a-form-processing-model.md
         - name: Apply a retention label 
           href: apply-a-retention-label-to-a-model.md
+        - name: Apply a sensitivity label 
+          href: apply-a-sensitivity-label-to-a-model.md
         - name: Model usage analytics
           href: model-usage-analytics.md
         - name: Leverage term store taxonomy when creating an extractor
@@ -44,6 +46,9 @@
       items:
         - name: Get started with adoption
           href: adoption-getstarted.md
+        - name: Scenarios and use cases
+          href: adoption-scenarios.md 
+
         - name: Manage contracts in Microsoft 365
           items:
             - name: Overview
@@ -58,7 +63,7 @@
     - name: Setup and administration
       items:
 
-        - name: Set up content understanding
+        - name: Set up SharePoint Syntex
           href: set-up-content-understanding.md
         
     - name: Content services
@@ -72,8 +77,28 @@
           href: push-content-type-to-hub.md
         - name: Term store reports
           href: term-store-analytics.md
-        
-        
+     
+    - name: REST API
+      items:
+        - name: Overview
+          href: rest-api/syntex-model-rest-api.md
+        - name: Create model
+          href: rest-api/rest-createmodel-method.md
+        - name: GetByUniqueId
+          href: rest-api/rest-getbyuniqueid-method.md
+        - name: GetByTitle
+          href: rest-api/rest-getbytitle-method.md
+        - name: Apply model
+          href: rest-api/rest-applymodel-method.md
+        - name: Get model and library information
+          href: rest-api/rest-getmodelandlibraryinfo.md
+        - name: UpdateModelSettings
+          href: rest-api/rest-updatemodelsettings-method.md        
+        - name: BatchDelete
+          href: rest-api/rest-batchdelete-method.md
+        - name: Create classification request
+          href: rest-api/rest-createclassificationrequest.md
+
 
 
 

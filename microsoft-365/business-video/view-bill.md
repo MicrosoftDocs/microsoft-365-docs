@@ -20,10 +20,12 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Learn how to view, download, or print your bill."
+description: "Learn how to review your monthly Microsoft 365 Business subscription by viewing, downloading, or printing your bill."
 ---
 
 # View, download, or print your bill for Microsoft 365
+
+## Watch: View, download, or print your bill
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FGmo?autoplay=false]
 

@@ -21,7 +21,7 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: b5b633ba-1e56-4a98-8ff5-2acaac63a5c8
-description: "Learn to find your domain registrar and DNS hosting provider using  InterNIC search."
+description: "Learn to find your domain registrar and DNS hosting provider using InterNIC search."
 ---
 
 # Find your domain registrar

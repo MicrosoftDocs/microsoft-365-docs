@@ -45,8 +45,6 @@ If you found this video helpful, check out the [complete training series for sma
 
 ## Assign admin roles 
 
-::: moniker range="o365-worldwide"
-
 You can assign users to a role in 2 different ways:
 
 - You can go to the user's details and **Manage roles** to assign a role to the user.
@@ -63,11 +61,9 @@ You can assign users to a role in 2 different ways:
 
 ### Assign a user to an admin role from Active users
 
+::: moniker range="o365-worldwide"
+
 1. In the admin center, go to **Users** > [Active users](https://go.microsoft.com/fwlink/p/?linkid=834822) page.
-
-2. On the **Active users** page, select the user whose admin role you want to change. In the flyout pane, under **Roles**, select **Manage roles**.
-
-3. Select the admin role that you want to assign to the user. If you don't see the role you're looking for, select **Show all** at the bottom of the list.
 
 ::: moniker-end
 
@@ -75,33 +71,23 @@ You can assign users to a role in 2 different ways:
 
 1. In the admin center, go to the **Users** > <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Active users</a> page.
 
-2. On the **Active users** page, select the user whose admin role you want to change. In the flyout pane, next to **Roles**, select **Edit**. 
-
-    If you don't see the **Edit** option, then you don't have a permission to edit and can't assign admin roles to other people. Ask a global admin in your business to assign roles for you. In a small business, the business owner (the person who purchased your subscription) is a global admin. In a large business, key people in the IT department are global admins.
-
-3. Select **Customized administrator** to see a list of roles we've customized for you. For a description of each role, see [About admin roles.](about-admin-roles.md)
-
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
 1. In the admin center, go to the **Users** > <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Active users</a> page.
 
-2. On the **Active users** page, select the user whose admin role you want to change. In the flyout pane, next to **Roles**, select **Edit**.
-
-    If you don't see the **Edit** option, then you don't have a permission to edit and can't assign admin roles to other people. Ask a global admin in your business to assign roles for you. In a small business, the business owner (the person who purchased your subscription) is a global admin. In a large business, key people in the IT department are global admins.
-
-3. Select **Customized administrator** to see a list of roles we've customized for you. For a description of each role, see [About admin roles.](about-admin-roles.md)
-
 ::: moniker-end
+
+2. On the **Active users** page, select the user whose admin role you want to change. In the flyout pane, under **Roles**, select **Manage roles**.
+
+3. Select the admin role that you want to assign to the user. If you don't see the role you're looking for, select **Show all** at the bottom of the list.
 
 ## Assign admin roles to multiple users
 
 If you know PowerShell, see [Assign roles to user accounts with PowerShell](../../enterprise/assign-roles-to-user-accounts-with-microsoft-365-powershell.md). It's ideal for assigning roles to hundreds of users.
   
 Use the following instructions to assign roles to tens of users.
-
-::: moniker range="o365-worldwide"
 
 ## Check admin roles in your organization
 
@@ -111,8 +97,6 @@ You can check admin role permissions in 2 different ways:
 
 - You can go to the user's details and look under **Roles** on the **Account** page.
 - Or you can go to **Roles** and select the admin role, and select assigned admins to see which users are assigned.
-
-::: moniker-end
 
 ## Related content
 
