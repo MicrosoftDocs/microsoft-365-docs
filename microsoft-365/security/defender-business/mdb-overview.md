@@ -150,25 +150,24 @@ To learn more, see [Investigate entities on devices using live response](../defe
 ## Automated investigation and response
 
 Automated investigation and response (AIR) capabilities are designed to examine alerts and take immediate action to resolve breaches. AIR capabilities significantly reduce alert volume, allowing you to focus on more sophisticated threats and other high-priority things. All remediation actions are tracked in the Action center, and most remediation actions can be undone if needed. 
-To learn more, see Overview of automated investigations.
+
+To learn more, see [Overview of automated investigations](../defender-endpoint/automated-investigations.md).
 
 ## Threat intelligence
 
-Threat intelligence capabilities include indicators of compromise and threat analytics. Together, these capabilities enable you to 
-Indicators of compromise
-Indicators of compromise (also referred as indicators) enable you to define “allow” or “block” lists of entities, such as files, URLs, and certificates. For example, suppose that a certain file that your company uses is detected as a threat, but you know that file is not actually a threat. You can create an indicator for that file so that it’s not blocked by threat protection features in Defender for Endpoint. 
-Table 2 summarizes the entities and actions that are supported for indicators.
+Threat intelligence capabilities include indicators of compromise and threat analytics. Together, these capabilities enable you to block or allow certain entities and learn more about current, relevant threats. 
 
-Table 2. Entities and actions for indicators
-Entity types	Supported actions
-- Files
-- IP addresses
-- URLs/domains
-- Certificates	
-- Allow
-- Alert only
-- Alert and block
-To learn more, see Manage indicators.
+### Indicators of compromise
+
+Indicators of compromise (also referred as indicators) enable you to define “allow” or “block” lists of entities, such as files, URLs, and certificates. For example, suppose that a certain file that your company uses is detected as a threat, but you know that file is not actually a threat. You can create an indicator for that file so that it’s not blocked by threat protection features in Defender for Endpoint. 
+
+The following table summarizes the entities and actions that are supported for indicators.
+
+| Entity types | Supported actions |
+|:---|:---|
+| Files <p>IP addresses <p>URLs/domains<p>Certificates | Allow <p>Alert only<p>Alert and block|
+
+To learn more, see [Manage indicators](../defender-endpoint/manage-indicators.md).
 
 ## Threat analytics
 
@@ -181,7 +180,7 @@ Threat analytics is a set of reports from expert Microsoft security researchers 
 - Prevalent malware
 
 Each report provides a detailed analysis of a threat and extensive guidance on how to defend against that threat. It also incorporates data from your network, indicating whether the threat is active and if you have applicable protections in place. 
-To learn more, see Track and respond to emerging threats with threat analytics.
+To learn more, see [Track and respond to emerging threats with threat analytics](../defender-endpoint/threat-analytics.md).
 
 ## Centralized management and reporting
 
