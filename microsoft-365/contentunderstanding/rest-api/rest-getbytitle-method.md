@@ -60,12 +60,12 @@ In this sample, the name of the Syntex document understanding model is `Contoso 
 #### Sample request
 
 ```HTTP
-GET /_api/machinelearning/models/getbytitle('{Contoso Contract') HTTP/1.1
+GET /_api/machinelearning/models/getbytitle('Contoso Contract') HTTP/1.1
 ```
 
 #### Sample response
 
-**Status code:** 204
+**Status code:** 200
 
 ```HTTP
 {
