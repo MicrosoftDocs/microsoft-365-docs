@@ -200,7 +200,7 @@ When it comes to configuring your security features on your company’s devices,
 - Use the simplified experience in the Microsoft 365 Defender portal (recommended)
 Microsoft Defender for business is designed to save you time and effort. The streamlined experience in the Microsoft 365 Defender portal includes a default policy to protect your devices. You can keep the default settings or make changes to suit your business needs.
 
-To learn more, see the Setup and configuration section in this guide.
+To learn more, see [Setup and configuration](mdb-setup-configuration.md).
 
 ### Reporting
 
