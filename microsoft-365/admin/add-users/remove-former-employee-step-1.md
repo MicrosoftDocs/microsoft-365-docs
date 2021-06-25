@@ -60,7 +60,7 @@ For more information about how long it takes to get someone out of email, see [W
 
 If you have email as part of your Microsoft 365 subscription, sign in to the Exchange admin center and follow these steps to block your former employee from accessing their email.
   
-1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>.
+1. Go to the <a href="https://admin.exchange.microsoft.com/" target="_blank">Exchange admin center</a>.
 2. In the Exchange admin center, navigate to **Recipients** \> **Mailboxes**.
-3. Double-click the user and go to the **Mailbox features** page. Under **Mobile Devices**, select **Disable Exchange ActiveSync** and **Disable OWA for Devices,** and answer **Yes** to both when prompted.
-4. Under **Email Connectivity**, select **Disable** and answer **Yes** when prompted.
+3. Double-click the user and go to the **Manage email apps settings** under **Email apps**. Turn **Off** the slider for all the options **Mobile (Exchange ActiveSync)**, **Outlook on the web**, **Outlook desktop (MAPI)**, **Exchange web services**, **POP3**, **IMAP** and Click **Save** .
+
