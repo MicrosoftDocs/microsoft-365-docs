@@ -168,3 +168,7 @@ See the following articles to help you learn more and get started using the eDis
 ## eDiscovery roadmap
 
 To see what eDiscovery features have been launched, are rolling out, or in development, see the [Microsoft 365 Roadmap](https://aka.ms/eDiscoRoadMap).
+
+## Training
+
+Training your IT administrators, eDiscovery managers, and compliance investigation teams in the basics for Content search, Core eDiscovery, and Advanced eDiscovery can help your organization get started more quickly using Microsoft 365 eDiscovery tools. Microsoft 365 provides the following resource to help these users in your organization getting started with eDiscovery: [Describe the eDiscovery and audit capabilities of Microsoft 365](/learn/modules/describe-ediscovery-capabilities-of-microsoft-365).
