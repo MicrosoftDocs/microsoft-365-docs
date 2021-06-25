@@ -125,18 +125,16 @@ To learn more, see Behavioral blocking and containment.
 
 ### Manual response actions
 
-Microsoft Defender for business includes certain response actions that can be taken when a device is detected as potentially compromised or having suspicious content. You can also run response actions on files that are detected as threats. 
-Table 1 lists the manual response actions that are available in your plan.
+Microsoft Defender for business includes certain response actions that can be taken when a device is detected as potentially compromised or having suspicious content. You can also run response actions on files that are detected as threats.
 
- 
-Table 1. Manual response actions in Microsoft Defender for business
-File/Device	Action	Description
-Device	Run antivirus scan	Starts an antivirus scan. If any threats are detected on the device, they’re often addressed during the scan.
-Device	Isolate device	Disconnects a device from your organization’s network while retaining connectivity to Defender for Endpoint. This action enables you to monitor the device and take further action if needed.
-File	Stop and quarantine	Stops processes from running and quarantines associated files.
-File	Add an indicator to 
-block or allow a file	Block indicators prevent portable executable files from being read, written, or executed on devices.
-Allow indicators prevent files from being blocked or remediated. 
+The following table the manual response actions that are available in your plan.
+
+| File/Device | Action | Description |
+|:---|:---|:---|
+| Device | Run antivirus scan | Starts an antivirus scan. If any threats are detected on the device, they’re often addressed during the scan. |
+| Device | Isolate device | Disconnects a device from your organization’s network while retaining connectivity to Defender for Endpoint. This action enables you to monitor the device and take further action if needed. |
+| File | Stop and quarantine | Stops processes from running and quarantines associated files. |
+| File |Add an indicator to block or allow a file | Block indicators prevent portable executable files from being read, written, or executed on devices. <p> Allow indicators prevent files from being blocked or remediated.  |
 
 To learn more, see the following articles: 
 
