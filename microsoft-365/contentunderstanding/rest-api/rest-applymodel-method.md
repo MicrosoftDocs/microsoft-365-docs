@@ -13,7 +13,7 @@ localization_priority: Priority
 description: Use REST API to apply a document understanding model to one or more libraries.
 ---
 
-# Apply model
+# Batch Apply model
 
 Applies (or syncs) a trained document understanding model to one or more libraries (see [example](rest-applymodel-method.md#examples)).
 
@@ -39,7 +39,7 @@ None
 
 | Name | Required | Type | Description |
 |--------|-------|--------|------------|
-|__metadata|yes|string|yes|Set the object meta on the SPO. Always use the value: {"type": "Microsoft.Office.Server.ContentCenter.SPMachineLearningPublicationsEntityData"}.|
+|__metadata|yes|string|Set the object meta on the SPO. Always use the value: {"type": "Microsoft.Office.Server.ContentCenter.SPMachineLearningPublicationsEntityData"}.|
 |Publications|yes|MachineLearningPublicationEntityData[]|The collection of MachineLearningPublicationEntityData each of which specifices the model and target document library.|
 
 ### MachineLearningPublicationEntityData
