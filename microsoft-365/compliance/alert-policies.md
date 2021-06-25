@@ -1,12 +1,12 @@
 ---
-title: "Alert policies in the security and compliance centers"
+title: "Microsoft 365 alert policies"
 f1.keywords:
 - NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: reference
+ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: 
@@ -15,17 +15,16 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 ms.custom: 
 - seo-marvel-apr2020
-description: "Create alert policies in the security and compliance center in Office 365 and Microsoft 365 to monitor potential threats, data loss, and permissions issues."
+description: "Create alert policies in the Microsoft 365 compliance center to monitor potential threats, data loss, and permissions issues."
 ---
 
-# Alert policies in the security and compliance center
+# Alert policies in the Microsoft 365 compliance center
 
-You can use the alert policy and alert dashboard tools in the Microsoft 365 security and compliance centers to create alert policies and then view the alerts generated when users perform activities that match the conditions of an alert policy. There are several default alert policies that help you monitor activities such as assigning admin privileges in Exchange Online, malware attacks, phishing campaigns, and unusual levels of file deletions and external sharing.
+You can use the alert policy and alert dashboard tools in the Microsoft 365 compliance center to create alert policies and then view the alerts generated when users perform activities that match the conditions of an alert policy. There are several default alert policies that help you monitor activities such as assigning admin privileges in Exchange Online, malware attacks, phishing campaigns, and unusual levels of file deletions and external sharing.
 
-Alert policies let you categorize the alerts that are triggered by a policy, apply the policy to all users in your organization, set a threshold level for when an alert is triggered, and decide whether to receive email notifications when alerts are triggered. There's also a **View alerts** page in the security and compliance center where you can view and filter alerts, set an alert status to help you manage alerts, and then dismiss alerts after you've addressed or resolved the underlying incident.
+Alert policies let you categorize the alerts that are triggered by a policy, apply the policy to all users in your organization, set a threshold level for when an alert is triggered, and decide whether to receive email notifications when alerts are triggered. There's also a **Alerts** page in the compliance center where you can view and filter alerts, set an alert status to help you manage alerts, and then dismiss alerts after you've addressed or resolved the underlying incident.
 
 > [!NOTE]
 > Alert policies are available for organizations with a Microsoft 365 Enterprise, Office 365 Enterprise, or Office 365 US Government E1/F1/G1, E3/F3/G3, or E5/G5 subscription. Advanced functionality is only available for organizations with an E5/G5 subscription, or for organizations that have an E1/F1/G1 or E3/F3/G3 subscription and a Microsoft Defender for Office 365 P2 or a Microsoft 365 E5 Compliance or an E5 eDiscovery and Audit add-on subscription. The functionality that requires an E5/G5 or add-on subscription is highlighted in this topic. Also note that alert policies are available in Office 365 GCC, GCC High, and DoD US government environments.
@@ -34,48 +33,50 @@ Alert policies let you categorize the alerts that are triggered by a policy, app
 
 Here's a quick overview of how alert policies work and the alerts that are triggers when user or admin activity matches the conditions of an alert policy.
 
-![Overview of how alert policies work](../media/e02a622d-b429-448b-8107-dd1a4770b4e0.png)
+![Overview of how alert policies work](../media/M365-AlertPolicies-Overview.png)
 
-1. An admin in your organization creates, configures, and turns on an alert policy by using the **Alert policies** page in the security and compliance center. You can also create alert policies by using the [New-ProtectionAlert](/powershell/module/exchange/new-protectionalert) cmdlet in Security & Compliance Center PowerShell.
+1. An admin in your organization creates, configures, and turns on an alert policy by using the **Alert policies** page in the compliance center. You can also create alert policies by using the [New-ProtectionAlert](/powershell/module/exchange/new-protectionalert) cmdlet in Security & Compliance Center PowerShell.
 
-   To create alert policies, you have to be assigned the Manage Alerts role or the Organization Configuration role in the security and compliance center.
+   To create alert policies, you have to be assigned the Manage Alerts role or the Organization Configuration role in the compliance center.
 
    > [!NOTE]
    > It takes up to 24 hours after creating or updating an alert policy before alerts can be triggered by the policy. This is because the policy has to be synced to the alert detection engine.
 
 2. A user performs an activity that matches the conditions of an alert policy. In the case of malware attacks, infected email messages sent to users in your organization trigger an alert.
 
-3. Microsoft 365 generates an alert that's displayed on the **View alerts** page in the Security & Compliance Center. Also, if email notifications are enabled for the alert policy, Microsoft sends a notification to a list of recipients. The alerts that an admin or other users can see that on the View alerts page is determined by the roles assigned to the user. For more information, see [RBAC permissions required to view alerts](#rbac-permissions-required-to-view-alerts).
+3. Microsoft 365 generates an alert that's displayed on the **Alerts** page in Microsoft 365 compliance center. Also, if email notifications are enabled for the alert policy, Microsoft sends a notification to a list of recipients. The alerts that an admin or other users can see that on the Alerts page is determined by the roles assigned to the user. For more information, see [RBAC permissions required to view alerts](#rbac-permissions-required-to-view-alerts).
 
-4. An admin manages alerts in the security and compliance center. Managing alerts consists of assigning an alert status to help track and manage any investigation.
+4. An admin manages alerts in the compliance center. Managing alerts consists of assigning an alert status to help track and manage any investigation.
 
 ## Alert policy settings
 
-An alert policy consists of a set of rules and conditions that define the user or admin activity that generates an alert, a list of users who trigger the alert if they perform the activity, and a threshold that defines how many times the activity has to occur before an alert is triggered. You also categorize the policy and assign it a severity level. These two settings help you manage alert policies (and the alerts that are triggered when the policy conditions are matched) because you can filter on these settings when managing policies and viewing alerts in the security and compliance center. For example, you can view alerts that match the conditions from the same category or view alerts with the same severity level.
+An alert policy consists of a set of rules and conditions that define the user or admin activity that generates an alert, a list of users who trigger the alert if they perform the activity, and a threshold that defines how many times the activity has to occur before an alert is triggered. You also categorize the policy and assign it a severity level. These two settings help you manage alert policies (and the alerts that are triggered when the policy conditions are matched) because you can filter on these settings when managing policies and viewing alerts in the compliance center. For example, you can view alerts that match the conditions from the same category or view alerts with the same severity level.
 
-To view and create alert policies, go to [https://protection.office.com](https://protection.office.com) and then select **Alerts** \> **Alert policies**.
+**To view and create alert policies:**
 
-![In the security and compliance center, select Alerts, then select Alert policies to view and create alert policies](../media/09ebd451-8e84-44e1-aefc-63e70bba4d97.png)
+Go to <https://compliance.microsoft.com> and then select **Policies** > **Alert** > **Alert policies**. Alternatively, you can go directly to <https://compliance.microsoft.com/alertpolicies>.
+
+![In the compliance center, select Policies,and under Alert, select Alert policies to view and create alert policies](../media/LaunchAlertPoliciesMCC.png)
 
 An alert policy consists of the following settings and conditions.
 
-- **Activity the alert is tracking** - You create a policy to track an activity or in some cases a few related activities, such a sharing a file with an external user by sharing it, assigning access permissions, or creating an anonymous link. When a user performs the activity defined by the policy, an alert is triggered based on the alert threshold settings.
+- **Activity the alert is tracking**. You create a policy to track an activity or in some cases a few related activities, such a sharing a file with an external user by sharing it, assigning access permissions, or creating an anonymous link. When a user performs the activity defined by the policy, an alert is triggered based on the alert threshold settings.
 
     > [!NOTE]
     > The activities that you can track depend on your organization's Office 365 Enterprise or Office 365 US Government plan. In general, activities related to malware campaigns and phishing attacks require an E5/G5 subscription or an E1/F1/G1 or E3/F3/G3 subscription with an [Defender for Office 365](../security/office-365-security/defender-for-office-365.md) Plan 2 add-on subscription.
 
-- **Activity conditions** - For most activities, you can define additional conditions that must be met to trigger an alert. Common conditions include IP addresses (so that an alert is triggered when the user performs the activity on a computer with a specific IP address or within an IP address range), whether an alert is triggered if a specific user or users perform that activity, and whether the activity is performed on a specific file name or URL. You can also configure a condition that triggers an alert when the activity is performed by any user in your organization. The available conditions are dependent on the selected activity.
+- **Activity conditions**. For most activities, you can define additional conditions that must be met to trigger an alert. Common conditions include IP addresses (so that an alert is triggered when the user performs the activity on a computer with a specific IP address or within an IP address range), whether an alert is triggered if a specific user or users perform that activity, and whether the activity is performed on a specific file name or URL. You can also configure a condition that triggers an alert when the activity is performed by any user in your organization. The available conditions are dependent on the selected activity.
 
-- **When the alert is triggered** - You can configure a setting that defines how often an activity can occur before an alert is triggered. This allows you to set up a policy to generate an alert every time an activity matches the policy conditions, when a certain threshold is exceeded, or when the occurrence of the activity the alert is tracking becomes unusual for your organization.
+- **When the alert is triggered**. You can configure a setting that defines how often an activity can occur before an alert is triggered. This allows you to set up a policy to generate an alert every time an activity matches the policy conditions, when a certain threshold is exceeded, or when the occurrence of the activity the alert is tracking becomes unusual for your organization.
 
-    ![Configure how alerts are triggered, based on when the activity occurs, a threshold, or unusual activity for your organization](../media/97ee1ed2-e7a9-47a2-a980-5f9f63872c65.png)
+    ![Configure how alerts are triggered, based on when the activity occurs, a threshold, or unusual activity for your organization](../media/howalertsaretriggered.png)
 
     If you select the setting based on unusual activity, Microsoft establishes a baseline value that defines the normal frequency for the selected activity. It takes up to seven days to establish this baseline, during which alerts won't be generated. After the baseline is established, an alert is triggered when the frequency of the activity tracked by the alert policy greatly exceeds the baseline value. For auditing-related activities (such as file and folder activities), you can establish a baseline based on a single user or based on all users in your organization; for malware-related activities, you can establish a baseline based on a single malware family, a single recipient, or all messages in your organization.
 
     > [!NOTE]
     > The ability to configure alert policies based on a threshold or based on unusual activity requires an E5/G5 subscription, or an E1/F1/G1 or E3/F3/G3 subscription with a Microsoft Defender for Office 365 P2, Microsoft 365 E5 Compliance, or Microsoft 365 eDiscovery and Audit add-on subscription. Organizations with an E1/F1/G1 and E3/F3/G3 subscription can only create alert policies where an alert is triggered every time that an activity occurs.
 
-- **Alert category** - To help with tracking and managing the alerts generated by a policy, you can assign one of the following categories to a policy.
+- **Alert category**. To help with tracking and managing the alerts generated by a policy, you can assign one of the following categories to a policy.
 
   - Data loss prevention
 
@@ -89,20 +90,20 @@ An alert policy consists of the following settings and conditions.
 
   - Others
 
-  When an activity occurs that matches the conditions of the alert policy, the alert that's generated is tagged with the category defined in this setting. This allows you to track and manage alerts that have the same category setting on the **View alerts** page in the security and compliance center because you can sort and filter alerts based on category.
+  When an activity occurs that matches the conditions of the alert policy, the alert that's generated is tagged with the category defined in this setting. This allows you to track and manage alerts that have the same category setting on the **Alerts** page in the compliance center because you can sort and filter alerts based on category.
 
-- **Alert severity** - Similar to the alert category, you assign a severity attribute (**Low**, **Medium**, **High**, or **Informational**) to alert policies. Like the alert category, when an activity occurs that matches the conditions of the alert policy, the alert that's generated is tagged with the same severity level that's set for the alert policy. Again, this allows you to track and manage alerts that have the same severity setting on the **View alerts** page. For example, you can filter the list of alerts so that only alerts with a **High** severity are displayed.
+- **Alert severity**. Similar to the alert category, you assign a severity attribute (**Low**, **Medium**, **High**, or **Informational**) to alert policies. Like the alert category, when an activity occurs that matches the conditions of the alert policy, the alert that's generated is tagged with the same severity level that's set for the alert policy. Again, this allows you to track and manage alerts that have the same severity setting on the **Alerts** page. For example, you can filter the list of alerts so that only alerts with a **High** severity are displayed.
 
     > [!TIP]
     > When setting up an alert policy, consider assigning a higher severity to activities that can result in severely negative consequences, such as detection of malware after delivery to users, viewing of sensitive or classified data, sharing data with external users, or other activities that can result in data loss or security threats. This can help you prioritize alerts and the actions you take to investigate and resolve the underlying causes.
 
-- **Email notifications** - You can set up the policy so that email notifications are sent (or not sent) to a list of users when an alert is triggered. You can also set a daily notification limit so that once the maximum number of notifications has been reached, no more notifications are sent for the alert during that day. In addition to email notifications, you or other administrators can view the alerts that are triggered by a policy on the **View alerts** page. Consider enabling email notifications for alert policies of a specific category or that have a higher severity setting.
+- **Email notifications**. You can set up the policy so that email notifications are sent (or not sent) to a list of users when an alert is triggered. You can also set a daily notification limit so that once the maximum number of notifications has been reached, no more notifications are sent for the alert during that day. In addition to email notifications, you or other administrators can view the alerts that are triggered by a policy on the **Alerts** page. Consider enabling email notifications for alert policies of a specific category or that have a higher severity setting.
 
 ## Default alert policies
 
 Microsoft provides built-in alert policies that help identify Exchange admin permissions abuse, malware activity, potential external and internal threats, and information governance risks. On the **Alert policies** page, the names of these built-in policies are in bold and the policy type is defined as **System**. These policies are turned on by default. You can turn off these policies (or back on again), set up a list of recipients to send email notifications to, and set a daily notification limit. The other settings for these policies can't be edited.
 
-The following table lists and describes the available default alert policies and the category each policy is assigned to. The category is used to determine which alerts a user can view on the View alerts page. For more information, see [RBAC permissions required to view alerts](#rbac-permissions-required-to-view-alerts).
+The following table lists and describes the available default alert policies and the category each policy is assigned to. The category is used to determine which alerts a user can view on the Alerts page. For more information, see [RBAC permissions required to view alerts](#rbac-permissions-required-to-view-alerts).
 
 The table also indicates the Office 365 Enterprise and Office 365 US Government plan required for each one. Some default alert policies are available if your organization has the appropriate add-on subscription in addition to an E1/F1/G1 or E3/F3/G3 subscription.
 
@@ -138,7 +139,7 @@ The table also indicates the Office 365 Enterprise and Office 365 US Government 
 |**Unusual volume of file deletion**|Generates an alert when an unusually large number of files are deleted in SharePoint or OneDrive within a short time frame. This policy has a **Medium** severity setting.|Information governance|E5/G5, Defender for Office 365 P2, or Microsoft 365 E5 add-on subscription|
 |**Unusual increase in email reported as phish**|Generates an alert when there's a significant increase in the number of people in your organization using the Report Message add-in in Outlook to report messages as phishing mail. This policy has a **Medium** severity setting. For more information about this add-in, see [Use the Report Message add-in](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).|Threat management|E5/G5 or Defender for Office 365 P2 add-on subscription|
 |**User impersonation phish delivered to inbox/folder**<sup>1,</sup><sup>2</sup>|Generates an alert when Microsoft detects that an admin or user override has allowed the delivery of a user impersonation phishing message to the inbox (or other user-accessible folder) of a mailbox. Examples of overrides include an inbox or mail flow rule that allows messages from a specific sender or domain, or an anti-spam policy that allows messages from specific senders or domains. This policy has a **Medium** severity setting.|Threat management|E5/G5 or Defender for Office 365 P2 add-on subscription|
-|**User restricted from sending email**|Generates an alert when someone in your organization is restricted from sending outbound mail. This typically results when an account is compromised, and the user is listed on the **Restricted Users** page in the Security & Compliance Center. (To access this page, go to **Threat management > Review > Restricted Users**). This policy has a **High** severity setting. For more information about restricted users, see [Removing a user, domain, or IP address from a block list after sending spam email](/office365/securitycompliance/removing-user-from-restricted-users-portal-after-spam).|Threat management|E1/F1/G1, E3/F3/G3, or E5/G5|
+|**User restricted from sending email**|Generates an alert when someone in your organization is restricted from sending outbound mail. This typically results when an account is compromised, and the user is listed on the **Restricted Users** page in the Microsoft 365 compliance center. (To access this page, go to **Threat management > Review > Restricted Users**). This policy has a **High** severity setting. For more information about restricted users, see [Removing a user, domain, or IP address from a block list after sending spam email](/office365/securitycompliance/removing-user-from-restricted-users-portal-after-spam).|Threat management|E1/F1/G1, E3/F3/G3, or E5/G5|
 |**User restricted from sharing forms and collecting responses**|Generates an alert when someone in your organization has been restricted from sharing forms and collecting responses using Microsoft Forms due to detected repeated phishing attempt behavior. This policy has a **High** severity setting.|Threat management|E1, E3/F3, or E5|
 |||||
 
@@ -149,13 +150,13 @@ The unusual activity monitored by some of the built-in policies is based on the 
 
 ## Viewing alerts
 
-When an activity performed by users in your organization matches the settings of an alert policy, an alert is generated and displayed on the **View alerts** page in the security and compliance center. Depending on the settings of an alert policy, an email notification is also sent to a list of specified users when an alert is triggered. For each alert, the dashboard on the **View alerts** page displays the name of the corresponding alert policy, the severity and category for the alert (defined in the alert policy), and the number of times an activity has occurred that resulted in the alert being generated. This value is based on the threshold setting of the alert policy. The dashboard also shows the status for each alert. For more information about using the status property to manage alerts, see [Managing alerts](#managing-alerts).
+When an activity performed by users in your organization matches the settings of an alert policy, an alert is generated and displayed on the **Alerts** page in the compliance center. Depending on the settings of an alert policy, an email notification is also sent to a list of specified users when an alert is triggered. For each alert, the dashboard on the **Alerts** page displays the name of the corresponding alert policy, the severity and category for the alert (defined in the alert policy), and the number of times an activity has occurred that resulted in the alert being generated. This value is based on the threshold setting of the alert policy. The dashboard also shows the status for each alert. For more information about using the status property to manage alerts, see [Managing alerts](#managing-alerts).
 
-To view alerts, go to [https://protection.office.com](https://protection.office.com) and then select **Alerts** \> **View alerts**.
+To view alerts, go to <https://compliance.microsoft.com> and then select **Alerts**. Alternatively, you can go directly to <https://compliance.microsoft.com/compliancealerts>.
 
-![In the security and compliance, select Alerts, then select View alerts to view alerts](../media/ec5ea59b-bf61-459f-8b65-970ab4bb8bcc.png)
+![In the Microsoft 365 compliance center, select Alerts](../media/ViewAlertsMCC.png)
 
-You can use the following filters to view a subset of all the alerts on the **View alerts** page.
+You can use the following filters to view a subset of all the alerts on the **Alerts** page.
 
 - **Status.** Use this filter to show alerts that are assigned a particular status. The default status is **Active**. You or other administrators can change the status value.
 
@@ -169,7 +170,7 @@ You can use the following filters to view a subset of all the alerts on the **Vi
 
 - **Tags.** Use this filter to show alerts from one or more user tags. Tags are reflected based on tagged mailboxes or users that appear in the alerts. See [User tags in Office 356 ATP](../security/office-365-security/user-tags.md) to learn more.
 
-- **Source.** Use this filter to show alerts triggered by alert policies in the security and compliance center or alerts triggered by Office 365 Cloud App Security policies, or both. For more information about Office 365 Cloud App Security alerts, see [Viewing Cloud App Security alerts](#viewing-cloud-app-security-alerts).
+- **Source.** Use this filter to show alerts triggered by alert policies in the compliance center or alerts triggered by Office 365 Cloud App Security policies, or both. For more information about Office 365 Cloud App Security alerts, see [Viewing Cloud App Security alerts](#viewing-cloud-app-security-alerts).
 
 > [!IMPORTANT]
 > Filtering and sorting by user tags is currently in public preview.
@@ -177,7 +178,7 @@ You can use the following filters to view a subset of all the alerts on the **Vi
 
 ## Alert aggregation
 
-When multiple events that match the conditions of an alert policy occur with a short period of time, they are added to an existing alert by a process called *alert aggregation*. When an event triggers an alert, the alert is generated and displayed on the **View alerts** page and a notification is sent. If the same event occurs within the aggregation interval, then Microsoft 365 adds details about the new event to the existing alert instead of triggering a new alert. The goal of alert aggregation is to help reduce alert "fatigue" and let you focus and take action on fewer alerts for the same event.
+When multiple events that match the conditions of an alert policy occur with a short period of time, they are added to an existing alert by a process called *alert aggregation*. When an event triggers an alert, the alert is generated and displayed on the **Alerts** page and a notification is sent. If the same event occurs within the aggregation interval, then Microsoft 365 adds details about the new event to the existing alert instead of triggering a new alert. The goal of alert aggregation is to help reduce alert "fatigue" and let you focus and take action on fewer alerts for the same event.
 
 The length of the aggregation interval depends on your Office 365 or Microsoft 365 subscription.
 
@@ -204,7 +205,7 @@ Keep the following things in mind about alert aggregation:
 
 ## RBAC permissions required to view alerts
 
-The Role Based Access Control (RBAC) permissions assigned to users in your organization determine which alerts a user can see on the **View alerts** page. How is this accomplished? The management roles assigned to users (based on their membership in role groups in the Security & Compliance Center) determine which alert categories a user can see on the **View alerts** page. Here are some examples:
+The Role Based Access Control (RBAC) permissions assigned to users in your organization determine which alerts a user can see on the **Alerts** page. How is this accomplished? The management roles assigned to users (based on their membership in role groups in the Microsoft 365 compliance center) determine which alert categories a user can see on the **Alerts** page. Here are some examples:
 
 - Members of the Records Management role group can view only the alerts that are generated by alert policies that are assigned the **Information governance** category.
 
@@ -214,7 +215,7 @@ The Role Based Access Control (RBAC) permissions assigned to users in your organ
 
 This design (based on RBAC permissions) lets you determine which alerts can be  viewed (and managed) by users in specific job roles in your organization.
 
-The following table lists the roles that are required to view alerts from the six different alert categories. The first column in the tables lists all roles in the Security & Compliance Center.  A check mark indicates that a user who is assigned that role can view alerts from the corresponding alert category listed in the top row.
+The following table lists the roles that are required to view alerts from the six different alert categories. The first column in the tables lists all roles in the Microsoft 365 compliance center.  A check mark indicates that a user who is assigned that role can view alerts from the corresponding alert category listed in the top row.
 
 To see which category a default alert policy is assigned to, see the table in [Default alert policies](#default-alert-policies).
 
@@ -261,46 +262,46 @@ To see which category a default alert policy is assigned to, see the table in [D
 > ```powershell
 > $RoleGroups | foreach {Write-Output -InputObject `r`n,$_.Name,"-----------------------"; Get-RoleGroup $_.Identity | Select-Object -ExpandProperty Roles}
 > ```
-> 
-> You can also view the roles assigned to a role group in the Security & Compliance Center. Go to the **Permissions** page, and select a role group. The assigned roles are listed on the flyout page.
+>
+> You can also view the roles assigned to a role group in the Microsoft 365 compliance center. Go to the **Permissions** page, and select a role group. The assigned roles are listed on the flyout page.
 
 ## Managing alerts
 
-After alerts have been generated and displayed on the **View alerts** page in the security and compliance center, you can triage, investigate, and resolve them. Here are some tasks you can perform to manage alerts.
+After alerts have been generated and displayed on the **Alerts** page in the compliance center, you can triage, investigate, and resolve them. Here are some tasks you can perform to manage alerts.
 
 - **Assign a status to alerts.** You can assign one of the following statuses to alerts: **Active** (the default value), **Investigating**, **Resolved**, or **Dismissed**. Then, you can filter on this setting to display alerts with the same status setting. This status setting can help track the process of managing alerts.
 
-- **View alert details.** You can select an alert to display a flyout page with details about the alert. The detailed information depends on the corresponding alert policy, but it typically includes the following: name of the actual operation that triggered the alert (such as a cmdlet), a description of the activity that triggered the alert, the user (or list of users) who triggered the alert, and the name (and link to) of the corresponding alert policy.
+- **View alert details.** You can select an alert to display a flyout page with details about the alert. The detailed information depends on the corresponding alert policy, but it typically includes the following:
 
   - The name of the actual operation that triggered the alert, such as a cmdlet or an audit log operation.
 
   - A description of the activity that triggered the alert.
 
-  - The user who triggered the alert. This is included only for alert policies that are set up to track a single user or a single activity.
+  - The user (or list of users) who triggered the alert. This is included only for alert policies that are set up to track a single user or a single activity.
 
-  - The number of times the activity tracked by the alert was performed. This number may not match that actual number of related alerts listed on the View alerts page because more alerts may have been triggered.
+  - The number of times the activity tracked by the alert was performed. This number may not match that actual number of related alerts listed on the Alerts page because more alerts may have been triggered.
 
-  - A link to an activity list that includes an item for each activity that was performed that triggered the alert. Each entry in this list identifies when the activity occurred, the name of actual operation (such as "FileDeleted"), and the user who performed the activity, the object (such as a file, an eDiscovery case, or a mailbox) that the activity was performed on, and the IP address of the user's computer. For malware-related alerts, this links to a message list.
+  - A link to an activity list that includes an item for each activity that was performed that triggered the alert. Each entry in this list identifies when the activity occurred, the name of the actual operation (such as "FileDeleted"), the user who performed the activity, the object (such as a file, an eDiscovery case, or a mailbox) that the activity was performed on, and the IP address of the user's computer. For malware-related alerts, this links to a message list.
 
-  - The name (and link to) of the corresponding alert policy.
+  - The name (and link) of the corresponding alert policy.
 
-- **Suppress email notifications.** You can turn off (or suppress) email notifications from the flyout page for an alert. When you suppress email notifications, Microsoft won't send notifications when activities or events that match the conditions of the alert policy. But alerts will be triggered when activities performed by users match the conditions of the alert policy. You can also turn off email notifications by editing the alert policy.
+- **Suppress email notifications.** You can turn off (or suppress) email notifications from the flyout page for an alert. When you suppress email notifications, Microsoft won't send notifications when activities or events that match the conditions of the alert policy occur. But alerts will be triggered when activities performed by users match the conditions of the alert policy. You can also turn off email notifications by editing the alert policy.
 
-- **Resolve alerts.** You can mark an alert as resolved on the flyout page for an alert (which sets the status of the alert to **Resolved**). Unless you change the filter, resolved alerts aren't displayed on the **View alerts** page.
+- **Resolve alerts.** You can mark an alert as resolved on the flyout page for an alert (which sets the status of the alert to **Resolved**). Unless you change the filter, resolved alerts aren't displayed on the **Alerts** page.
 
 ## Viewing Cloud App Security alerts
 
-Alerts that are triggered by Office 365 Cloud App Security policies are now displayed on the **View alerts** page in the security and compliance center. This includes alerts that are triggered by activity policies and alerts that are triggered by anomaly detection policies in Office 365 Cloud App Security. This means you can view all alerts in the security and compliance center. Office 365 Cloud App Security is only available for organizations with an Office 365 Enterprise E5 or Office 365 US Government G5 subscription. For more information, see [Overview of Cloud App Security](/cloud-app-security/what-is-cloud-app-security).
+Alerts that are triggered by Office 365 Cloud App Security policies are now displayed on the **Alerts** page in the compliance center. This includes alerts that are triggered by activity policies and alerts that are triggered by anomaly detection policies in Office 365 Cloud App Security. This means you can view all alerts in the compliance center. Office 365 Cloud App Security is only available for organizations with an Office 365 Enterprise E5 or Office 365 US Government G5 subscription. For more information, see [Overview of Cloud App Security](/cloud-app-security/what-is-cloud-app-security).
 
-Organizations that have Microsoft Cloud App Security as part of an Enterprise Mobility + Security E5 subscription or as a standalone service can also view Cloud App Security alerts that are related to Office 365 apps and services in the Security & Compliance Center.
+Organizations that have Microsoft Cloud App Security as part of an Enterprise Mobility + Security E5 subscription or as a standalone service can also view Cloud App Security alerts that are related to Microsoft 365 apps and services in the Microsoft 365 compliance center.
 
-To display only Cloud App Security alerts in the security and compliance center, use the **Source** filter and select **Cloud App Security**.
+To display only Cloud App Security alerts in the compliance center, use the **Source** filter and select **Cloud App Security**.
 
 ![Use the Source filter to display only Cloud App Security alerts](../media/FilterCASAlerts.png)
 
-Similar to an alert triggered by an alert policy in the security and compliance center, you can select a Cloud App Security alert to display a flyout page with details about the alert. The alert includes a link to view the details and manage the alert in the Cloud App Security portal and a link to the corresponding Cloud App Security policy that triggered the alert. See [Monitor alerts in Cloud App Security](/cloud-app-security/monitor-alerts).
+Similar to an alert triggered by an alert policy in the compliance center, you can select a Cloud App Security alert to display a flyout page with details about the alert. The alert includes a link to view the details and manage the alert in the Cloud App Security portal and a link to the corresponding Cloud App Security policy that triggered the alert. See [Monitor alerts in Cloud App Security](/cloud-app-security/monitor-alerts).
 
 ![Alert details contain links to the Cloud App Security portal](../media/CASAlertDetail.png)
 
 > [!IMPORTANT]
-> Changing the status of a Cloud App Security alert in the security and compliance center won't update the resolution status for the same alert in the Cloud App Security portal. For example, if you mark the status of the alert as **Resolved** in the security and compliance center, the status of the alert in the Cloud App Security portal is unchanged. To resolve or dismiss a Cloud App Security alert, manage the alert in the Cloud App Security portal.
+> Changing the status of a Cloud App Security alert in the compliance center won't update the resolution status for the same alert in the Cloud App Security portal. For example, if you mark the status of the alert as **Resolved** in the compliance center, the status of the alert in the Cloud App Security portal is unchanged. To resolve or dismiss a Cloud App Security alert, manage the alert in the Cloud App Security portal.

@@ -39,7 +39,7 @@ For more information, see [assign licenses to users](../manage/assign-licenses-t
 
 ## Why your organization&#39;s content collaboration score matters
 
-A key aspect of digital transformation is how people collaborate in files. With your content on Microsoft 365, people access, create, modify, and collaborate on content with other people from any location. Research shows that when people collaborate with online files, each person saves an average of 100 minutes per week. [See the evidence](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf).
+A key aspect of digital transformation is how people collaborate in files. With your content on Microsoft 365, people access, create, modify, and collaborate on content with other people from any location. Research shows that when people collaborate with online files, each person saves an average of 100 minutes per week.
 
 ## How we calculate the content collaboration score
 

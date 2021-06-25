@@ -35,9 +35,9 @@ We provide metrics, insights, and recommendations in two areas:
 
 - **People experiences:** Quantifies how the organization works using Microsoft 365 categories like content collaboration, mobility, communication, meetings, and teamwork.  
 
-    For each of the mentioned categories, we look at public research to identify some best practices and associated benefits in the form of organizational effectiveness. For example, [Forrester](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf) research has shown that when people collaborate and share content in the cloud (instead of emailing attachments), they can save up to 100 minutes a week. Furthermore, we quantify the use of these best practices in your organization to help you see where you are on your digital transformation journey. 
+    For each of the mentioned categories, we look at public research to identify some best practices and associated benefits in the form of organizational effectiveness. For example, Forrester research has shown that when people collaborate and share content in the cloud (instead of emailing attachments), they can save up to 100 minutes a week. Furthermore, we quantify the use of these best practices in your organization to help you see where you are on your digital transformation journey. 
 
-- **Technology experiences:** Your organization depends on reliable and well performing technology as well as the efficient use of Microsoft 365. [Endpoint analytics](https://aka.ms/endpointanalytics) helps you understand how your organization can be impacted by performance and health issues with your hardware and software. Microsoft  365 apps health helps you understand whether the devices in your organization are running Microsoft 365 apps on recommended channels.
+- **Technology experiences:** Your organization depends on reliable and well-performing technology, as well as the efficient use of Microsoft 365. [Endpoint analytics](https://aka.ms/endpointanalytics) helps you understand how your organization can be impacted by performance and health issues with your hardware and software. Microsoft  365 apps health helps you understand whether the devices in your organization are running Microsoft 365 apps on recommended channels.
 
 ## Before you begin
 
@@ -48,7 +48,7 @@ For people experiences data, you need a Microsoft 365 for business or Office 365
 > [!NOTE]
 > A license to Workplace Analytics is not required to get the Productivity Score features.
 
-Productivity Score is only available in the Microsoft 365 Admin Center and can only be accessed by IT professionals who have one of the following roles:  
+Productivity Score is only available in the Microsoft 365 admin center and can only be accessed by IT professionals who have one of the following roles:  
 
 - Global admin
 - Exchange admins
@@ -111,13 +111,13 @@ For network connectivity, the recommended benchmark is 80 points.
 
 The **Score breakdown** section provides a breakdown of your Productivity Score with benchmarks by people and technology experience areas.
 
-Score history displays how your score in each category has changed in the past 6 months.
+Score history displays how your score in each category has changed in the past six months.
 
-The **People experiences** and **Technology experiences** areas contain the primary insights for the categories in those areas. You can click on each category to see deeper insights.
+The **People experiences** and **Technology experiences** areas contain the primary insights for the categories in those areas. You can select each category to see deeper insights.
 
 ## Category details pages
 
-Each category details page shows the primary insight and supporting metrics as well as related research and actions you can take to drive change in your organization. Research supports the importance and rationale behind the primary insights for each category. for more information, [read the Forrester report](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf).
+Each category details page shows the primary insight and supporting metrics as well as related research and actions you can take to drive change in your organization. Research supports the importance and rationale behind the primary insights for each category. For more information, [read the Forrester report](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2PBrb).
 
 The details pages are:
 - [Content collaboration – people experiences](content-collaboration.md)
