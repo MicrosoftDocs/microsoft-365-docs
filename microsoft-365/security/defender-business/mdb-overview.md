@@ -138,13 +138,14 @@ The following table the manual response actions that are available in your plan.
 
 To learn more, see the following articles: 
 
-- Take response actions on a device 
-- Take response actions on a file
+- [Take response actions on a device](../defender-endpoint/respond-machine-alerts.md) 
+- [Take response actions on a file](../defender-endpoint/respond-file-alerts.md)
 
 ### Live response
 
 Live response enables your security team to connect to a device using a remote shell connection. When connected, you can use certain commands to perform tasks, such as collecting forensic data, analyzing a file, running a script, sending suspicious entities for analysis, remediating a file, and hunting proactively for threats. Live response enables you to do in-depth investigative work and take immediate response actions to promptly contain identified threats in real time. 
-To learn more, see Investigate entities on devices using live response.
+
+To learn more, see [Investigate entities on devices using live response](../defender-endpoint/live-response.md).
 
 ## Automated investigation and response
 
