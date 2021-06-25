@@ -82,10 +82,10 @@ Microsoft Defender for business was designed to simplify setup, configuration, a
 The following sections provide more information about your security policies in Microsoft Defender for business:
 
 - [View your policies](#view-your-policies)
-- Define a new policy
-- Edit an existing policy
-- Learn more about policy order
-- Understand configuration settings for next-generation protection
+- [Define a new policy](#define-a-new-policy)
+- [Edit an existing policy](#edit-an-existing-policy)
+- [Learn more about policy order](#learn-more-about-policy-order)
+- [Understand configuration settings for next-generation protection](#understand-configuration-settings-for-next-generation-protection)
 
 ## View your policies
 
