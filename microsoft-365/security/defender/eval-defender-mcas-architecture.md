@@ -46,6 +46,8 @@ In the illustration:
 - The use of cloud apps by an organization is unmonitored and unprotected. 
 - This use falls outside the protections achieved within a managed organization. 
 
+### Discovering cloud apps
+
 The first step to managing the use of cloud apps is to discover which cloud apps are used by your organization. This next diagram illustrates how cloud discovery works with Cloud App Security.
 
 ![Architecture for Microsoft Cloud App Security](../../media/defender/m365-defender-mcas-architecture-b.png)
@@ -54,6 +56,8 @@ In this illustration, there are two methods that can be used to monitor network 
 - A. Cloud App Discovery integrates with Microsoft Defender for Endpoint natively. Defender for Endpoint reports cloud apps and services being accessed from IT-managed Windows 10 devices. 
 - B. For coverage on all devices connected a network, the Cloud App Security log collector is installed on firewalls and other proxies to collect data from endpoints. This data is sent it to Cloud App Security for analysis.
 
+### Managing cloud apps
+
 After you discover cloud apps and analyze the behavior of how these are used by your organization, you can begin managing cloud apps that you choose. 
 
 ![Architecture for Microsoft Cloud App Security](../../media/defender/m365-defender-mcas-architecture-c.png)
@@ -61,6 +65,9 @@ After you discover cloud apps and analyze the behavior of how these are used by 
 In this illustration:
 - Some apps are sanctioned for use. This is a simple way of beginning to manage apps.
 - You can enable greater visibility and control by connecting apps with app connectors. App connectors use the APIs of app providers.
+
+
+### Applying session controls to cloud apps
 
 Microsoft Cloud App Security serves as a reverse proxy, providing proxy access to sanctioned cloud apps. This allows Cloud App Security to apply session controls that you configure. 
 
@@ -73,6 +80,7 @@ In this illustration:
 
 Session controls allow you to apply parameters to how cloud apps are used by your organization. For example, if your organization is using Salesforce, you can configure a session policy that allows only managed devices to access your organization's data in Salesforce. A simpler example could be configuring a policy to monitor traffic from unmanaged devices so you can analyze the risk of this traffic before applying stricter policies.
 
+### Integrating with Azure AD with Conditional Access App Control
 
 You might already have SaaS apps added to your Azure AD tenant to enforce multi-factor authentication and other conditional access policies. Microsoft Cloud App Security natively integrates with Azure AD. All you have to do is configure a policy in Azure AD to use Conditional Access App Control in Cloud App Security. This routes network traffic for these managed SaaS apps through Cloud App Security as a proxy, which allows Cloud App Security to monitor this traffic and to apply session controls. 
 
