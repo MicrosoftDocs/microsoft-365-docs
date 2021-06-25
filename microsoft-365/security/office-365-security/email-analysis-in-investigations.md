@@ -55,7 +55,7 @@ During the email clustering analysis, all clustering queries will ignore securit
 >When opening an email cluster to view it in Explorer from the email cluster details, the PhishEdu and SecOps mailbox filters will be applied in Explorer but will not be shown. If you change the Explorer filters, dates, or refresh the query within the page – then the PhishEdu/SecOps filter exclusions will get removed and emails that match these will be shown once again. If you refresh the Explorer page using the browser refresh function, the original query filters will get re-loaded, including the PhishEdu/SecOps filters – but removing any subsequent changes you had made.
 >
 
-## AIR latest delivery location counts
+## AIR updates pending email action status
 
 The investigation email analysis calculates email threats and locations at the time of the investigation to create the investigation evidence and actions. This data can get stale and outdated when actions outside of the investigation affect the emails involved in the investigation. For example, security operations manual hunting and remediation may clean up emails included in an investigation. Likewise, deletion actions approved in parallel investigations or Zero-hour Auto Protection (ZAP) automatic quarantine actions may have removed emails. In addition, delayed detections of threats after email delivery may change the number of threats included in the investigation’s email queries/clusters. 
 
