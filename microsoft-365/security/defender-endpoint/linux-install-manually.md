@@ -323,7 +323,7 @@ Download the onboarding package from Microsoft Defender Security Center:
     > ```bash
     > mdatp health --field definitions_status
     > ```
-    > Please note that you may also need to configure a proxy after completing the initial installation. See [Configure Defender for Endpoint on Linux for static proxy discovery: Post-installation configuration](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-static-proxy-configuration#post-installation-configuration).
+    > Please note that you may also need to configure a proxy after completing the initial installation. See [Configure Defender for Endpoint on Linux for static proxy discovery: Post-installation configuration](/microsoft-365/security/defender-endpoint/linux-static-proxy-configuration#post-installation-configuration).
 
 5. Run a detection test to verify that the device is properly onboarded and reporting to the service. Perform the following steps on the newly onboarded device:
 
@@ -344,6 +344,21 @@ Download the onboarding package from Microsoft Defender Security Center:
         ```bash
         mdatp threat list
         ```
+
+## Experience Linux endpoint detection and response (EDR) capabilities with simulated attacks
+
+To test out the functionalities of EDR for Linux, follow the steps below to simulate a detection on your Linux server and investigate the case. 
+
+1.	Verify that the onboarded Linux server appears in Microsoft Defender Security Center. If this is the first onboarding of the machine, it can take up to 20 minutes until it appears. 
+
+2.	Download and extract the [script file](https://aka.ms/LinuxDIY) to an onboarded Linux server and run the following command: `./mde_linux_edr_diy.sh`
+
+3.	After a few minutes, a detection should be raised in Microsoft Defender Security Center.
+
+4.	Look at the alert details, machine timeline, and perform your typical investigation steps.
+
+
+
 
 ## Installer script
 

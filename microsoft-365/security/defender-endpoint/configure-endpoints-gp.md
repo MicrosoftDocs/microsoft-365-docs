@@ -57,7 +57,7 @@ Check out the [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/publ
 
 2. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the device. You should have a folder called *OptionalParamsPolicy* and the file *WindowsDefenderATPOnboardingScript.cmd*.
 
-3. Open the [Group Policy Management Console](https://docs.microsoft.com/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) (GPMC), right-click the Group Policy Object (GPO) you want to configure and click **Edit**.
+3. Open the [Group Policy Management Console](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) (GPMC), right-click the Group Policy Object (GPO) you want to configure and click **Edit**.
 
 4. In the **Group Policy Management Editor**, go to **Computer configuration**, then **Preferences**, and then **Control panel settings**.
 
@@ -94,7 +94,7 @@ You can use Group Policy (GP) to configure settings, such as settings for the sa
 
     - Copy _AtpConfiguration.adml_ into _\\\\\<forest.root\>\\SysVol\\\<forest.root\>\\Policies\\PolicyDefinitions\\en-US_
 
-2.  Open the [Group Policy Management Console](https://docs.microsoft.com/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11), right-click the GPO you want to configure and click **Edit**.
+2.  Open the [Group Policy Management Console](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11), right-click the GPO you want to configure and click **Edit**.
 
 3.  In the **Group Policy Management Editor**, go to **Computer configuration**.
 
@@ -116,7 +116,7 @@ After configuring the onboarding script, continue editing the same group policy 
 
 All policies are located under `Computer Configuration\Policies\Administrative Templates`.
 
-**Policy location:** \Windows Components\Windows Defender SmartScreen*
+**Policy location:** \Windows Components\Windows Defender ATP
 
 Policy | Setting 
 :---|:---
@@ -152,7 +152,7 @@ Monitor file and program activity on your computer|Enabled
 
 <br/>
 
-**Policy location:**  \Windows Components\Microsoft Defender AntivirusScan
+**Policy location:**  \Windows Components\Microsoft Defender Antivirus\Scan
 
 These settings configure periodic scans of the endpoint. We recommend performing a weekly quick scan, performance permitting.
 
@@ -205,7 +205,7 @@ For security reasons, the package used to Offboard devices will expire 30 days a
 
 2. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the device. You should have a file named *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
 
-3. Open the [Group Policy Management Console](https://docs.microsoft.com/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) (GPMC), right-click the Group Policy Object (GPO) you want to configure and click **Edit**.
+3. Open the [Group Policy Management Console](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) (GPMC), right-click the Group Policy Object (GPO) you want to configure and click **Edit**.
 
 4. In the **Group Policy Management Editor**, go to **Computer configuration,** then **Preferences**, and then **Control panel settings**.
 

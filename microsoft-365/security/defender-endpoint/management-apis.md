@@ -16,7 +16,8 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
+MS.technology: mde
+ms.custom: api
 ---
 
 # Overview of management and APIs 
@@ -72,6 +73,9 @@ Defender for Endpoint raw data streaming API provides the ability for customers 
 The Defender for Endpoint event information is pushed directly to Azure storage for long-term data retention, or to Azure Event Hubs for consumption by visualization services or additional data processing engines. 
 
 For more information, see [Raw data streaming API](raw-data-export.md).
+
+The new Microsoft 365 Defender Streaming API includes email and alert events in addition to device events. 
+For more information, see [Microsoft 365 Defender Streaming API](../defender/streaming-api.md).
 
 
 ## SIEM API
