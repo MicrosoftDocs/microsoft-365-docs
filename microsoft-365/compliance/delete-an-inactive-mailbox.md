@@ -201,9 +201,9 @@ If the In-Place Hold contains a large number of source mailboxes, it's possible 
 
 ## More information
 
-- **An inactive mailbox is a type of soft-deleted mailbox.** In Exchange Online, a soft-deleted mailbox is a mailbox that's been deleted but can be recovered within a specific retention period. A previously inactive mailbox will be available as a soft-deleted mailbox in Exchange Online for 183 days. This means that the mailbox can be recovered within 183 days of being soft-deleted. After 183 days, a soft-deleted mailbox is marked for permanent deletion and can't be recovered.
+- **An inactive mailbox is a type of soft-deleted mailbox.** In Exchange Online, a soft-deleted mailbox is a mailbox that's been deleted but can be recovered within a specific retention period. A previously inactive mailbox will be available as a soft-deleted mailbox in Exchange Online for 183 days starting once all holds have been removed. This means that the mailbox can be recovered within 183 days of being soft-deleted. After 183 days, a soft-deleted mailbox is marked for permanent deletion and can't be recovered.
 
-- **What happens after you remove the hold on an inactive mailbox?** The mailbox is treated like other soft-deleted mailboxes and is marked for permanent deletion after the 183-day soft-deleted mailbox retention period expires. This retention period starts on the date when the mailbox was first made inactive. This date is known as the soft-deleted date, which is the date the corresponding user account was deleted or when the Exchange Online mailbox was deleted with the **Remove-Mailbox** cmdlet. The soft-deleted date isn't the date on which you remove the hold.
+- **What happens after you remove the hold on an inactive mailbox?** The mailbox is treated like other soft-deleted mailboxes and is marked for permanent deletion after the 183-day soft-deleted mailbox retention period expires. This retention period starts on the date when the mailbox is no longer inactive. This date is known as the InactiveMailboxRetireTime, which is the date the hold is removed.
 
 - **Is an inactive mailbox permanently deleted immediately after the hold is removed?** A formerly inactive mailbox will be available in the soft-deleted state for 183 days. After 183 days the mailbox will be marked for permanent deletion.
 
@@ -222,5 +222,5 @@ If the In-Place Hold contains a large number of source mailboxes, it's possible 
   InactiveMailboxRetireTime : 9/30/2020 11:16:23 PM
   ```
 
-  In the above example, the *WhenSoftDeleted* property identifies the soft-deleted date, which in this example is June 16, 2020. The *WasInactiveMailbox* property is listed as `True` because it was previously an inactive mailbox. The mailbox will be permanently deleted 183 days after September 30, 2020.
+  In the above example, the *WhenSoftDeleted* property identifies the soft-deleted date, which in this example is June 16, 2020. The *WasInactiveMailbox* property is listed as `True` because it was previously an inactive mailbox. When this *WasInactiveMailbox* flag is set, the InactiveMailboxRetireTime will be used instead of the WhenSoftDeleted time to calculate permanent deletion time. For the formerly inactive mailbox example above, the mailbox will be permanently deleted 183 days after September 30, 2020.
 
