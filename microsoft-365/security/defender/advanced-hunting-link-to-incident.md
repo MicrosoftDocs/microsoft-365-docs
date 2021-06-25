@@ -45,26 +45,35 @@ The link to incident feature lets you select advanced hunting query results to a
     1. For the **Create new incident** selection, provide the following details:
         - Alert title - provide a descriptive title for the results that your incident responders can understand. This will become the alert title
 	    - Severity - Choose the severity applicable to the alert.
-		- Cateogry - Choose…
-		- Description - 
-		- Recommended actions - Provide remediation action
+		- Cateogry - [INSERT SAMPLE CATEGORIES]
+		- Description - [INSERT SAMPLE DESCRIPTIONS]
+		- Recommended actions - Provide remediation actions
+	
     ![Image showing event details showing create new incident](../../media/link-to-incident-3-create-new.png)	
     2. For **Link to an existing incident**, choose the related incident from the dropdown list of existing incidents. 
 
     ![Image showing event details showing link to existing](../../media/link-to-incident-3-link-to-existing.png)
-    Then select **Next**.
-2. In the Impacted entities section, select the main affected or impacted entity. Only the possible entities based on the query results appear on this section. To help you decide…. For example, in the example, the Sender is the impacted entity. We have four different senders therefore four alerts are created and linked to the chosen incident. Select **Next**.
-     ![Image showing event details showing link to existing](../../media/link-to-incident-4-impacted-entities.png)   
-3. Review the details you have provided in the Summary section.
-     ![Image showing event details showing link to existing](../../media/link-to-incident-5-summary.png) 
-4. Select **Done** to convert the selected events to individual alerts, which are all related to an incident.
+4. Then select **Next**.
+4. In the Impacted entities section, select the main affected or impacted entity. Only the possible entities based on the query results appear on this section. For example, in the example, the Sender is the impacted entity. There are four different senders, therefore four alerts are created and linked to the chosen incident. 
+     ![Image showing impacted entities](../../media/link-to-incident-4-impacted-entities.png)   
+1. Select **Next**.
+1. Review the details you have provided in the Summary section.
+     ![Image showing summary](../../media/link-to-incident-5-summary.png) 
+1. Select **Done** to convert the selected events to individual alerts, which are all related to an incident.
 
 ## View linked records in the incident
 
 You can select the incident name to view the incident that the events are linked to.
-     ![Image showing event details showing link to existing](../../media/link-to-incident-6-incident-page.png) 
+     ![Image showing incident page with linked alerts](../../media/link-to-incident-6-incident-page.png) 
 
 In our example, the four alerts, representing the four selected events, were linked successfully to a new incident. 
 
 In the alert page, you can find the complete information on the event or events in timeline view (if available) and query results view.
-     ![Image showing event details showing link to existing](../../media/link-to-incident-6-incident-page.png) 
+     ![Image showing alert story](../../media/link-to-incident-7-alert-story.png) 
+
+![Image showing inspect record](../../media/link-to-incident-7-inspect-record.png) 
+
+## Filter for events added using advanced hunting
+You can view the new alerts from hunting by filtering the Incidents queue and Alerts queue by **Manual** detection source.
+
+![Image showing event details showing link to existing](../../media/link-to-incident-8-filter.png) 
