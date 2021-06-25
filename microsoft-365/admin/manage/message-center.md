@@ -21,7 +21,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 38fb3333-bfcc-4340-a37b-deda509c2093
-description: "Get an overview of Microsoft 365 Message center and its role in change management."
+description: "Get an overview of Microsoft 365 Message center and its role in tracking new and changed features and other important announcements."
 ---
 
 # Message center
@@ -244,66 +244,21 @@ See a message that someone else needs to act on? You can share the contents of t
 
 Need to follow up with another admin to make sure they're aware of a change and taking action? You can generate a link to share in email or instant messaging, for example, that will connect the user directly to that message. The person you share the link with has to have access to Message center. See [admin roles that don't have access to the Message center](message-center.md#admin-roles-that-dont-have-access-to-the-message-center) for more information.
 
-::: moniker range="o365-worldwide"
-
 1. Select the message to open it.
 
 2. Select **Copy link**.
 
 3. Use Ctrl+V or right-click and select **Paste** to insert the link to whatever document you wish.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. Select the message to open it.
-
-2. Choose **More** \> **Get a link** from the action bar.
-
-3. Allow the webpage to access your Clipboard. A direct link is copied to your Clipboard.
-
-4. Use Ctrl+V or right-click and select **Paste** to insert the link.
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. Select the message to open it.
-
-2. Select **Copy link**.
-
-3. Use Ctrl+V or right-click and select **Paste** to insert the link to whatever document you wish.
-
-::: moniker-end
 
 ## Read and unread states
 
 Any message in Message center that is unread will appear in bold. Opening a message marks it as read. You can mark a message as unread.
 
-::: moniker range="o365-worldwide"
 
 - On the main page of the message center, select the **More options** ellipses next to a message, and then select **Mark as unread**.
 
 You can also open a message and mark it as unread in the details panel.
   
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. Select the message to open it.
-
-2. Select **More** \> **Mark as unread**.
-
-3. Close the message.
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-- On the main page of the message center, select the **More options** ellipses next to a message, and then select **Mark as unread**.
-
-::: moniker-end
-
 ## Archive and restore
 
 If you see a message that doesn't pertain to you, or maybe you've already acted on it, you can archive the message to remove it from Inbox. The view that you see in the Message center is specific to your user account, so archiving it from your view doesn't affect other admins. There are two ways to archive a message.
@@ -343,8 +298,6 @@ For an overview of Message center, see [Message center in Microsoft 365](message
 
 ## Related content
 
-[Set up the Standard or Targeted release options](../manage/release-options-in-office-365.md) (article)
-
-[Manage which Office features appear in What's New](../manage/show-hide-new-features.md) (article)
-
-[Business subscriptions and billing documentation](../../commerce/index.yml) (links)
+[Set up the Standard or Targeted release options](../manage/release-options-in-office-365.md) (article)\
+[Manage which Office features appear in What's New](../manage/show-hide-new-features.md) (article)\
+[Business subscriptions and billing documentation](../../commerce/index.yml) (link page)

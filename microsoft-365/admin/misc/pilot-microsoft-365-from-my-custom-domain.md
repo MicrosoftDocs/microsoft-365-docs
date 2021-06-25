@@ -11,7 +11,7 @@ ms.service: o365-administration
 localization_priority: Priority
 ms.collection:
 - Adm_O365
-ms.custom: 
+ms.custom:
 search.appverid:
 - BCS160
 - MET150
@@ -55,7 +55,7 @@ Follow these steps to set up a Microsoft 365 pilot:
 
 3. Select the services you want to test with your domain, like email and instant messaging.
 
-5. On the **Verify** domain page, follow the step-by-step instructions, amd then select **Verify**.
+4. On the **Verify** domain page, follow the step-by-step instructions, amd then select **Verify**.
 
     It takes between a few minutes and 72 hours for DNS changes to take effect.
 
@@ -65,7 +65,7 @@ Follow these steps to set up a Microsoft 365 pilot:
 
 1. In the Exchange admin center, in the **Mail flow** section, select **Accepted domains**, and then select the domain you want to modify.
 
-2. Double-click to open the window, and then select **Internal Relay**. 
+2. Double-click to open the window, and then select **Internal Relay**.
 
 3. Select **Save**.
 
@@ -76,11 +76,11 @@ Follow these steps to set up a Microsoft 365 pilot:
 Microsoft 365 uses Exchange Online Protection (EOP) for spam protection. EOP might block your existing mail server if it detects a high volume of spam being forwarded by your current mail server. If you trust the spam protection for your other email provider, you can unblock the server in Microsoft 365.
 
 > [!NOTE]
-> Unblocking your existing email server allows any spam that arrives through your original server to come to the Microsoft 365 mailboxes, and you can’t evaluate how well Microsoft 365 prevents spam.
+> Unblocking your existing email server allows any spam that arrives through your original server to come to the Microsoft 365 mailboxes, and you can't evaluate how well Microsoft 365 prevents spam.
 
 1. In the Exchange admin center navigation pane, select **Protection**, and then select **Connection filter**.
 
-2. In the **IP Allow list**, select **+**, and add the mail server IP address for your current email provider. 
+2. In the **IP Allow list**, select **+**, and add the mail server IP address for your current email provider.
 
 ### Step 5: Create user accounts and set the primary reply-to address
 
@@ -90,11 +90,11 @@ Microsoft 365 uses Exchange Online Protection (EOP) for spam protection. EOP mig
 
     For each account, select **+ Add a user**, and fill out the required information, including the password method you want to test.
 
-    To ensure a user’s email stays the same, the **User name** field must match the user’s current email address.
+    To ensure a user's email stays the same, the **User name** field must match the user's current email address.
 
-3. Choose the appropriate license, click **Next**, and then click **Finish adding**. 
+3. Choose the appropriate license, click **Next**, and then click **Finish adding**.
 
-4. Next to **User name**, select your custom domain name from the drop-down list. 
+4. Next to **User name**, select your custom domain name from the drop-down list.
 
 5. Select **Create** > **Close**.
 
@@ -110,7 +110,7 @@ There are two steps for this:
 
 Make sure you have completed the following in Microsoft 365 or Office 365:
 
-1. To set up connectors, you need permissions assigned before you can begin. To check what permissions you need, see the Microsoft 365 and Office 365 connectors entry in the [Feature permissions in EOP](https://docs.microsoft.com/microsoft-365/security/office-365-security/feature-permissions-in-eop) topic.
+1. To set up connectors, you need permissions assigned before you can begin. To check what permissions you need, see the Microsoft 365 and Office 365 connectors entry in the [Feature permissions in Exchange Online](/exchange/permissions-exo/feature-permissions) topic.
 
 2. If you want EOP or Exchange Online to relay email from your email servers to the Internet, either:
 
@@ -184,4 +184,4 @@ When you complete this step, all email sent to usera@yourcompany.com and userb@y
 
 Because you are moving only two test users, and User A and User B are both using Outlook, you can move the email by opening the old .PST file in the new Outlook profile and copying the messages, calendar items, contacts, and so on. For more information, see [Import email, contacts, and calendar from an Outlook .pst file](https://support.microsoft.com/office/import-email-contacts-and-calendar-from-an-outlook-pst-file-431a8e9a-f99f-4d5f-ae48-ded54b3440ac).
 
-After they’re imported to the appropriate locations in the Microsoft 365 mailbox, the items can be accessed from any device, anywhere.
+After they're imported to the appropriate locations in the Microsoft 365 mailbox, the items can be accessed from any device, anywhere.

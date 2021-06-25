@@ -17,15 +17,16 @@ ms.custom:
 - adminvideo
 search.appverid:
 - MET150
-description: "Learn about Microsoft 365 Business Premium features."
+description: "Learn about Microsoft 365 Business Premium, a subscription service that takes care of IT part for you."
 feedback_system: None
 ms.date: 7/28/2020
 ---
 
 # Microsoft 365 Business Premium
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA?autoplay=false]
+## Watch: What is Microsoft 365 Business Premium
 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA?autoplay=false]
 
 Microsoft 365 Business Premium is a subscription service that lets you run your organization in the cloud while Microsoft takes care of the IT for you, managing devices, protecting against real-world threats, and providing your organization with the latest in business software.
 

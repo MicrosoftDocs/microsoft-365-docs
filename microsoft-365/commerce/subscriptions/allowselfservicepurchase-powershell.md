@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: mijeffer, pablom
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,11 +15,12 @@ ms.collection:
 - Adm_O365
 ms.custom: 
 - AdminSurgePortfolio
-- commerce
+- commerce_ssp
 search.appverid:
 - MET150
 description: "Learn how to use the AllowSelfServicePurchase PowerShell cmdlet to turn self-service purchase on or off."
 ROBOTS: NOINDEX, NOFOLLOW
+ms.date: 03/18/2021
 ---
 
 # Use AllowSelfServicePurchase for the MSCommerce PowerShell module
@@ -36,6 +38,7 @@ You can use the **MSCommerce** PowerShell module to:
 To use the **MSCommerce** PowerShell module, you need:
 
 - A Windows 10 device
+- PowerShell 5 or below. Currently, PowerShell 6.x/7.x isn't supported with this module.
 - Administrator permission for the device
 - Global or Billing Admin role for your tenant
 
@@ -154,3 +157,9 @@ To remove the **MSCommerce** PowerShell module from your computer, run the follo
 ```powershell
 Uninstall-Module -Name MSCommerce
 ```-->
+
+## Related content
+
+[Manage self-service purchases (Admin)](manage-self-service-purchases-admins.md) (article)
+
+[Self-service purchase FAQ](self-service-purchase-faq.yml) (article)

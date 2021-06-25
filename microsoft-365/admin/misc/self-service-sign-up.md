@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: seemg, pablom
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -16,10 +17,7 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_SMB
 - commerce_signup
-- PPM_pablom
-ms.reviewer: seemg
-search.appverid:
-- MET150
+search.appverid: MET150
 description: "Learn about the Microsoft 365 self-service sign-up and available self-service programs such as Microsoft Power Apps, Microsoft Flow, and Dynamics 365 for Finance."
 ms.date: 03/17/2021
 ---

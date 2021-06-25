@@ -1,14 +1,15 @@
 ---
 title: Payment information for Azerbaijan
-author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.custom: CommercePayInfo
+ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Learn where to send the payment for your subscription.
 ROBOTS: NOINDEX, NOFOLLOW
@@ -26,4 +27,4 @@ Please pay in USD only and reference your invoice number(s) on your invoice remi
 **SWIFT Code:** CITIGB2L  
 **IBAN:** GB95CITI18500812510049  
 **Account Number:** 12510049  
-**Account Name:** MICROSOFT  
+**Account Name:** MICROSOFT

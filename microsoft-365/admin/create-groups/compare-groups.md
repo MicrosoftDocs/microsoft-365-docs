@@ -21,7 +21,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
-description: "Learn about the types of groups you can use."
+description: "Microsoft 365 group members get a group email and shared workspace for conversations, files, and calendar events, Stream and a Planner."
 ---
 
 # Compare groups
@@ -84,10 +84,9 @@ Shared mailboxes include a calendar that can be used for collaboration.
 
 Users with permissions to the group mailbox can send as or send on behalf of the mailbox email address if the administrator has given that user permissions to do that. This is particularly useful for help and support mailboxes because users can send emails from "Contoso Support" or "Building A Reception Desk."
 
-Currently it's not possible to migrate a shared mailbox to a Microsoft 365 group. Is this something you want? Let us know. **[Vote here](https://go.microsoft.com/fwlink/?linkid=871518)**.
+It's not possible to migrate a shared mailbox to a Microsoft 365 group. 
 
 ## Related content
 
-[Learn about Microsoft 365 groups](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2) (article)
-
+[Learn about Microsoft 365 groups](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2) (article)\
 [Why you should upgrade your distribution lists to groups in Outlook](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188) (article)

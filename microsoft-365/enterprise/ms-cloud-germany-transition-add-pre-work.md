@@ -3,14 +3,14 @@ title: "Pre-migration activities for the migration from Microsoft Cloud Deutschl
 ms.author: andyber
 author: andybergen
 manager: laurawi
-ms.date: 03/09/2021
+ms.date: 05/12/2021
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
 search.appverid:
 - MET150
-ms.collection: 
+ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 f1.keywords:
@@ -34,7 +34,6 @@ If you're using
 - **Skype for Business Online**, do [this step](#skype-for-business-online).
 - **Dynamics 365**, do [this step](#dynamics365).
 - **Power BI**, do [this step](#power-bi).
-
 - **Active Directory Federation Services** for Azure AD Connect, do [these steps](#active-directory-federation-services-ad-fs).
 - **Third-party services** or **line-of-business (LOB) apps** that are integrated with Office 365, do [this step](#line-of-business-apps).
 - A third-party mobile device management (MDM) solution, do [this step](#mobile-device-management).
@@ -54,8 +53,8 @@ Office 365 tenant and user identifiers are preserved during migration. Azure AD 
 | Prepare to notify users about restarting and signing in to and out of their clients after migration. | Office client licensing will transition from Microsoft Cloud Deutschland to Office 365 services in the migration. Clients pick up a new valid license after signing out of and in to Office clients. |	Users' Office products need to refresh licenses from Office 365 services. If licenses aren't refreshed, Office products may experience license validation errors. |
 | Ensure network connectivity to [Office 365 services URLs and IP addresses](https://aka.ms/o365urls). | All clients and services hosted by the customer that are used to access Office 365 service must be able to access the Office 365 Global services endpoints. <br>In case you or your collaboration partners have firewall rules in place that would prevent accessing the URLs and IP addresses listed in [Office 365 services URLs and IP addresses](https://aka.ms/o365urls) must change the firewall rules to permit access to the Office 365 Global service endpoints| Failures of the service or client software can occur if this is not done before Phase 4  |
 | Cancel any trial subscriptions. | Trial subscriptions will not be migrated and will block transfer of paid subscriptions. | Trial services are expired and non-functioning if accessed by users after cancellation. |
-| Analyze differences in license features between Microsoft Cloud Deutschland and the Office 365 Global Services. | Office 365 services include additional features and services not available in the current Microsoft Cloud Deutschland. During subscription transfer, new features will be available to users. | <ul><li> Analyze the different features provided by the licenses for Microsoft Cloud Deutschland and Office 365 Global Services. Start with the [Office 365 platform Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-platform-service-description). </li><li> Determine if any new features of Office 365 services should be initially disabled to limit effects on users or on user change management, and alter user license assignments as needed. </li><li>Prepare users and help desk staff for new services and features provided by Office 365 services. |
-| Create organization-wide [retention policies](https://docs.microsoft.com/microsoft-365/compliance/retention) to protect from inadvertent deletion of content during migration.  |<ul><li>To ensure that content isn't inadvertently deleted by end users during the migration, customers may choose to enable an organization-wide retention policy. </li><li>Although retention isn't required, since holds placed at anytime during the migration should work as expected, having a retention policy is a back-up safety mechanism. At the same time, a retention policy might not be used by all customers, especially those who are concerned about over preservation.</li></ul>| Apply retention policy as described in [Learn about retention policies and retention labels](https://docs.microsoft.com/microsoft-365/compliance/retention-policies). Failures of the service or client software can occur if this is not done before Phase 4 of 9. </li></ul>|
+| Analyze differences in license features between Microsoft Cloud Deutschland and the Office 365 Global Services. | Office 365 services include additional features and services not available in the current Microsoft Cloud Deutschland. During subscription transfer, new features will be available to users. | <ul><li> Analyze the different features provided by the licenses for Microsoft Cloud Deutschland and Office 365 Global Services. Start with the [Office 365 platform Service Description](/office365/servicedescriptions/office-365-platform-service-description/office-365-platform-service-description). </li><li> Determine if any new features of Office 365 services should be initially disabled to limit effects on users or on user change management, and alter user license assignments as needed. </li><li>Prepare users and help desk staff for new services and features provided by Office 365 services. |
+| Create organization-wide [retention policies](/microsoft-365/compliance/retention) to protect from inadvertent deletion of content during migration.  |<ul><li>To ensure that content isn't inadvertently deleted by end users during the migration, customers may choose to enable an organization-wide retention policy. </li><li>Although retention isn't required, since holds placed at anytime during the migration should work as expected, having a retention policy is a back-up safety mechanism. At the same time, a retention policy might not be used by all customers, especially those who are concerned about over preservation.</li></ul>| Apply retention policy as described in [Learn about retention policies and retention labels](/microsoft-365/compliance/retention-policies). Failures of the service or client software can occur if this is not done before Phase 4 of 9. </li></ul>|
 |||||
 
 ## DNS entries for custom domains
@@ -94,16 +93,12 @@ The OCCT can be deployed on Windows clients at any time before phase 9. If the O
 
 ## Active Directory Federation Services (AD FS)
 
-<!-- before phase 4 -->
-
 **Applies to**: Customers using AD FS on premises to authenticate users connecting to Microsoft Office 365<br>
-**When applied**: Any time before phase 4 starts
+**When applied**: Any time before phase 2 starts
 
 Read and apply the [ADFS Migration steps](ms-cloud-germany-transition-add-adfs.md)
 
 ## SharePoint Online
-
-<!-- before phase 4 -->
 
 **Applies to**: Customers using SharePoint 2013 on-premises<br>
 **When applied**: Any time before phase 4 starts
@@ -131,15 +126,15 @@ Read and apply the [ADFS Migration steps](ms-cloud-germany-transition-add-adfs.m
 **Applies to:** All customers using an active Exchange Hybrid Configuration with Exchange servers on-premises<br>
 **When applied**: Any time before Phase 5 starts
 
-Enterprise customers with a hybrid deployment of Exchange Online and an on-premises Exchange Server run the Hybrid Configuration Wizard (HCW) and AAD Connect to maintain and establish the hybrid setup. 
-Exchange Online Hybrid administrators  **must execute the Hybrid Configuration wizard (HCW) multiple times** as part of this transition. 
+Enterprise customers with a hybrid deployment of Exchange Online and an on-premises Exchange Server run the Hybrid Configuration Wizard (HCW) and AAD Connect to maintain and establish the hybrid setup.
+Exchange Online Hybrid administrators  **must execute the Hybrid Configuration wizard (HCW) multiple times** as part of this transition.
 When transitioning from Microsoft Cloud Deutschland to the Office 365 Germany region, the administrator must re-run the latest build of HCW in "Office 365 Germany" mode before the Exchange migration (Phase 5) begins. Then, run the HCW again in "Office 365 Worldwide" mode on completion of Phase 5 to finalize the on-premises deployment with the Office 365 Germany region settings. The HCW run must not be executed during Phase 5, it is important to run the HCW not until phase 5 finishes.
-Directory attributes are synced between Office 365 and Azure AD with the on-premises deployment through AAD Connect. 
+Directory attributes are synced between Office 365 and Azure AD with the on-premises deployment through AAD Connect.
 
 | Step(s) | Description | Impact |
 |:-------|:-------|:-------|
-| Re-run HCW using Office 365 Germany settings <br><br> <i>You may start this activity immediately after receiving the message center notification that your Office 365 tenant migration has begun (phase 1).</i>| Uninstalling and re-running HCW (17.0.5378.0 or higher) from [https://aka.ms/hybridwizard](https://aka.ms/hybridwizard) before Phase 5 will ensure that your on-premises configuration is prepared to send and receive mail with both Microsoft Cloud Deutschland users and users who are migrated to Office 365 Germany region. <p><li> In the HCW, for the list box below **My Office 365 organization is hosted by**, select **Office 365 Germany.** | Failing to complete this task before Phase 5 [Exchange Migration] begins may result in NDRs for mail routed between your on-premises Exchange deployment and Office 365.  
-| Preserving Shared Mailbox settings | Some Hybrid customers have converted cloud user mailboxes to be 'shared' mailboxes using Exchange Online commands. This cloud mailbox configuration is written to the mailbox and local Exchange Online directory, however, it is not synced back to the customer's Active Directory via AAD Connect. The result is a discrepancy between the Active Directory representation of the mailbox RemoteRecipientType and RemoteDisplayType values and that in Exchange Online defining the mailbox as shared. <br><br> The customer is responsible to ensure that all Shared mailboxes are properly provisioned using `New-RemoteMailbox -Shared`, `Enable-RemoteMailbox -Shared`, or `Set-RemoteMailbox -Shared`.  See this reference for how to [Convert a user's mailbox in a hybrid environment](/microsoft-365/admin/email/convert-user-mailbox-to-shared-mailbox?view=o365-worldwide).| Failing to complete this task before Phase 5 [Exchange Online Migration] may result in NDRs for Shared Mailboxes which convert back to unlicensed mailboxes and loss of shared access for affected mailboxes. [Shared mailboxes are unexpectedly converted to user mailboxes after directory synchronization runs in an Exchange hybrid deployment](/exchange/troubleshoot/user-and-shared-mailboxes/shared-mailboxes-unexpectedly-converted-to-user-mailboxes) outlines the impact of not addressing this before Exchange Online Migration completes.  
+| Re-run HCW using Office 365 Germany settings <br><br> <i>You may start this activity immediately after receiving the message center notification that your Office 365 tenant migration has begun (phase 1).</i>| Uninstalling and re-running HCW (17.0.5378.0 or higher) from [https://aka.ms/hybridwizard](https://aka.ms/hybridwizard) before Phase 5 will ensure that your on-premises configuration is prepared to send and receive mail with both Microsoft Cloud Deutschland users and users who are migrated to Office 365 Germany region. <p><li> In the HCW, for the list box below **My Office 365 organization is hosted by**, select **Office 365 Germany.** | Failing to complete this task before Phase 5 [Exchange Migration] begins may result in NDRs for mail routed between your on-premises Exchange deployment and Office 365.
+| Preserving Shared Mailbox settings | Some Hybrid customers have converted cloud user mailboxes to be 'shared' mailboxes using Exchange Online commands. This cloud mailbox configuration is written to the mailbox and local Exchange Online directory, however, it is not synced back to the customer's Active Directory via AAD Connect. The result is a discrepancy between the Active Directory representation of the mailbox RemoteRecipientType and RemoteDisplayType values and that in Exchange Online defining the mailbox as shared. <br><br> The customer is responsible to ensure that all Shared mailboxes are properly provisioned using `New-RemoteMailbox -Shared`, `Enable-RemoteMailbox -Shared`, or `Set-RemoteMailbox -Shared`.  See this reference for how to [Convert a user's mailbox in a hybrid environment](/microsoft-365/admin/email/convert-user-mailbox-to-shared-mailbox?view=o365-worldwide).| Failing to complete this task before Phase 5 [Exchange Online Migration] may result in NDRs for Shared Mailboxes which convert back to unlicensed mailboxes and loss of shared access for affected mailboxes. [Shared mailboxes are unexpectedly converted to user mailboxes after directory synchronization runs in an Exchange hybrid deployment](/exchange/troubleshoot/user-and-shared-mailboxes/shared-mailboxes-unexpectedly-converted-to-user-mailboxes) outlines the impact of not addressing this before Exchange Online Migration completes.
 ||||
 
 ## Skype for Business Online
@@ -203,9 +198,9 @@ If you're using a third-party service or line-of-business (LOB) apps that are in
 If you are using the same Azure Active Directory identity partition for Office 365 and Microsoft Azure in the Microsoft Cloud Deutschland instance, make sure that you are preparing for the customer driven migration of Microsoft Azure services.
 
 > [!NOTE]
-> The migration of your Microsoft Azure services must not be started before your Office 365 tenant has reached migration phase 3 and must be completed before migration phase 8 has been completed.
+> The migration of your Microsoft Azure services may not start before your Office 365 tenant has reached migration phase 9 and must be completed before migration phase 10 has been started.
 
-Customers who use Office 365 and Azure resources (for example, networking, compute, and storage) will perform the migration of resources to the Office 365 services instance. This migration is the customer's responsibility. Message Center posts will signal the start. Migration must be completed before finalization of the Azure AD organization in the Office 365 services environment. For Azure migrations, see the Azure migration playbook, [Overview of migration guidance for Azure Germany](https://docs.microsoft.com/azure/germany/germany-migration-main).
+Customers who use Office 365 and Azure resources (for example, networking, compute, and storage) will perform the migration of resources to the Office 365 services instance. This migration is the customer's responsibility. Message Center posts will signal the start. Migration must be completed before finalization of the Azure AD organization in the Office 365 services environment. For Azure migrations, see the Azure migration playbook, [Overview of migration guidance for Azure Germany](/azure/germany/germany-migration-main).
 
 | Step(s) | Description | Impact |
 |:-------|:-------|:-------|
@@ -217,15 +212,15 @@ Reworked as text:
 
 **Step:** Determine which Azure services are in use and prepare for future migration from Germany to the Office 365 services tenant by working with your partners. Follow the steps described in the [Azure migration playbook](/azure/germany/germany-migration-main).
 
-**Description:** Migration of Azure resources is a customer responsibility and requires manual effort following prescribed steps. Understanding what services are in use in the organization is key to successful migration of Azure services. 
+**Description:** Migration of Azure resources is a customer responsibility and requires manual effort following prescribed steps. Understanding what services are in use in the organization is key to successful migration of Azure services.
 
 Office 365 Germany customers who have Azure subscriptions under the same identity partition (organization) must follow the Microsoft-prescribed order when they can begin subscription and services migration.
 
 **Applies to:** Azure Customers
 
-**Impact:** 
+**Impact:**
 
-- Customers may have multiple Azure subscriptions, each subscription containing infrastructure, services, and platform components. 
+- Customers may have multiple Azure subscriptions, each subscription containing infrastructure, services, and platform components.
 - Administrators should identify subscriptions and stakeholders to ensure prompt migration and validation is possible as part of this migration event.
 
   Failing to successfully complete migration of these subscriptions and Azure components within the prescribed timeline will affect completion of the Office and Azure AD transition to Office 365 services and may result in data loss.

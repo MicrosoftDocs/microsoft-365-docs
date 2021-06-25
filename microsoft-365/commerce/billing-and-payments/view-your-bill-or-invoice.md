@@ -5,12 +5,12 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.reviewer: jkinma
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Priority
-search.appverid: MET150
+search.appverid: GEA150
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
@@ -21,7 +21,6 @@ ms.custom:
 - OKR_SMB_Videos
 - AdminSurgePortfolio
 - commerce_billing
-- PPM_jmueller
 description: "Find your invoice or billing statement in the Microsoft 365 admin center. You can also save and print a copy of your bill."
 ms.date: 07/31/2020
 ---
@@ -32,7 +31,7 @@ This article is for people who have a Microsoft 365 for business subscription.
   
 If you need help with interpreting the charges you see on your bill, see [Understand your bill or invoice](understand-your-invoice2.md) for a detailed walkthrough.
   
-**Have a problem with your bill?** [Contact support for business products](../../admin/contact-support-for-business-products.md).
+**Have a problem with your bill?** [Contact support for business products](../../business-video/get-help-support.md).
 
 ## Before you begin
 
@@ -101,4 +100,5 @@ If you have a balance and would like to pay it, you can do that online. To learn
 
 [Pay by invoice, credit card, or bank account](pay-for-your-subscription.md) (article) \
 [Manage payment methods](manage-payment-methods.md) (article) \
+[Billing information for Microsoft 365 for business in Mexico](/microsoft-365/commerce/billing-and-payments/mexico-billing-info) (article) \
 [Minecraft: Education Edition payment options](/education/windows/school-get-minecraft) (article)

@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -13,21 +14,20 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_O365_Setup
-- Adm_TOC
 ms.custom: 
 - okr_smb
 - AdminSurgePortfolio
-search.appverid:
-- MET150
-ms.assetid: 092252f8-08df-4cdb-a8d2-b8653caa29a1
+- commerce_subscriptions
+search.appverid: MET150
 description: "Learn to verify which subscriptions your organization has by going to the Your products page."
+ms.date: 01/21/2021
 ---
 
 # What subscription do I have?
 
 If you're an admin, you can verify which subscriptions your organization has by going to the admin center.
   
- **Not an admin?** See [What Microsoft 365 for business product or license do I have?](https://support.microsoft.com/office/f8ab5e25-bf3f-4a47-b264-174b1ee925fd)
+**Not an admin?** See [What Microsoft 365 for business product or license do I have?](https://support.microsoft.com/office/f8ab5e25-bf3f-4a47-b264-174b1ee925fd)
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 2. On the **Products** tab, you see all your subscriptions. Each subscription line includes information about licenses, subscription status, and billing.
@@ -36,4 +36,7 @@ If you're an admin, you can verify which subscriptions your organization has by 
 
 ## Related content
   
-[Subscriptions and billing](../../commerce/index.yml) (links)
+[Subscriptions and billing](../../commerce/index.yml) (links)\
+[View your bill or invoice](../../commerce/billing-and-payments/view-your-bill-or-invoice.md) (article)\
+[Paying for your subscription](../../commerce/billing-and-payments/pay-for-your-subscription.md) (article)\
+[Change your billing addresses](../../commerce/billing-and-payments/change-your-billing-addresses.md) (article)

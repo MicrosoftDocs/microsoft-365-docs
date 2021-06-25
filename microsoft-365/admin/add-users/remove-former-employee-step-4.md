@@ -23,7 +23,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Follow these steps to give another employee access to the former employee's OneDrive and Outlook data."
+description: "Follow the steps in this article to give another employee access to the former employee's OneDrive and Outlook data."
 ---
 
 # Step 4 - Give another employee access to OneDrive and Outlook data
@@ -47,6 +47,30 @@ To preserve a former user's OneDrive files, first give yourself access to their 
 > [!NOTE]
 > You can move or copy up to 500 MB of files and folders at a time.<br/>
 > When you move or copy documents that have version history, only the latest version is moved.  
+
+You can also grant access to another user to access a former employee's OneDrive.
+
+1. Sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a> as a global admin or SharePoint admin.
+
+    If you get a message that you don't have permission to access the admin center, then you don't have administrator permissions in your organization.
+
+2. In the left pane, select **Admin centers** \> **SharePoint**. (You might need to select **Show all** to see the list of admin centers.)
+
+3. If the classic SharePoint admin center appears, select **Open it now** at the top of the page to open the SharePoint admin center.
+
+4. In the left pane, select **More features**.
+
+5. Under **User profiles**, select **Open**.
+
+6. Under **People**, select **Manage User Profiles**.
+
+7. Enter the former employee's name and select **Find**.
+
+8. Right-click the user, and then choose **Manage site collection owners**.
+
+9. Add the user to **Site collection administrators** and select **Ok**.
+
+10. The user will now be able to access the former employee's OneDrive using the OneDrive URL. 
 
 ### Revoke admin access to a user's OneDrive
 
@@ -156,10 +180,8 @@ To give access to the email messages, calendar, tasks, and contacts of the forme
 > [!TIP]
 > If you want to import or restore only a few items from an Outlook Data File (.pst), you can open the Outlook Data File. Then, in the navigation pane, drag the items from Outlook Data File folders to your existing Outlook folders. 
 
-## Related articles
+## Related content
 
-[Add and remove admins on a OneDrive account](/sharepoint/manage-user-profiles#add-and-remove-admins-for-a-users-onedrive)
-
-[Restore a deleted OneDrive](/onedrive/restore-deleted-onedrive)
-  
-[OneDrive retention and deletion](/onedrive/retention-and-deletion)
+[Add and remove admins on a OneDrive account](/sharepoint/manage-user-profiles#add-and-remove-admins-for-a-users-onedrive) (article)\
+[Restore a deleted OneDrive](/onedrive/restore-deleted-onedrive) (article)\
+[OneDrive retention and deletion](/onedrive/retention-and-deletion) (article)

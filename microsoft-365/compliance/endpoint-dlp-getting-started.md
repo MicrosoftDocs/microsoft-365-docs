@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 07/21/2020
+ms.date:
 audience: ITPro
 ms.topic: conceptual
 f1_keywords:
@@ -72,9 +72,6 @@ Data from Endpoint DLP can be viewed in [Activity explorer](data-classification-
 - Compliance admin
 - Security admin
 - Compliance data admin
-- Global reader
-- Security reader
-- Reports reader
 
 ### Prepare your endpoints
 
@@ -97,7 +94,10 @@ Make sure that the Windows 10 devices that you plan on deploying Endpoint DLP to
 	- For Windows 10 2004 - KB4568831, KB4577063
 	- For devices running Office 2016 (and not any other Office version) - KB4577063 
 
-4. All devices must be [Azure Active Directory (Azure AD) joined](/azure/active-directory/devices/concept-azure-ad-join), AD joined, Hybrid Azure AD joined, or AAD registered.
+4. All devices must be one of these:
+- [Azure Active Directory (Azure AD) joined](/azure/active-directory/devices/concept-azure-ad-join)
+- [Hybrid Azure AD joined](/azure/active-directory/devices/concept-azure-ad-join-hybrid)
+- [AAD registered](/azure/active-directory/user-help/user-help-register-device-on-network)
 
 5. Install Microsoft Chromium Edge browser on the endpoint device to enforce policy actions for the upload to cloud activity. See, [Download the new Microsoft Edge based on Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium).
 
@@ -142,7 +142,7 @@ In this deployment scenario, you'll onboard devices that have not been onboarded
     - Onboard Windows machines using Microsoft Endpoint Configuration Manager
     - Onboard Windows 10 machines using Mobile Device Management tools
     - Onboard Windows 10 machines using a local script
-    - Onboard non-persistent virtual desktop infrastructure (VDI) machines.
+    - Onboard non-persistent virtual desktop infrastructure (VDI) machines in single-session scenarios
 
 Once done and endpoint is onboarded, it should be visible in the devices list and also start reporting audit activity logs to Activity explorer.
 

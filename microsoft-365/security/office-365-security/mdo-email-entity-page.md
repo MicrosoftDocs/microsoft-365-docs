@@ -28,21 +28,16 @@ Admins of Microsoft Defender for Office 365 (or MDO) E5, and MDO P1 and P2 have 
 
 ## Reach the email entity page
 
-Either of the existing Office Security and Compliance center (protection.office.com) or new Microsoft 365 Security center (security.microsoft.com) will let you see and use the email entity page..
+The email entity page is available in the Microsoft 365 defender portal (<https://security.microsoft.com>) at **Email & collaboration** \> **Explorer**. Or, to go directly to the **Explorer** page, use <https://security.microsoft.com/threatexplorer>.
 
-|Center|URL|Navigation|
-|---|---|---|
-|Security & Compliance |protection.office.com|Threat Management \> Explorer|
-|Microsoft 365 security center |security.microsoft.com|Email & Collaboration \> Explorer|
+In **Explorer**, select the subject of an email you're investigating. A gold bar will display at the top of the email fly-out for that mail. This invitation to the new page, reads 'Try out our new email entity page with enriched data...'. Select to view the new page.
 
-In Threat Explorer, select the subject of an email you're investigating. A gold bar will display at the top of the email fly-out for that mail. This invitation to the new page, reads 'Try out our new email entity page with enriched data...'. Select to view the new page.
-
-:::image type="content" source="../../media/email-entities-1-navigation-to-ee.png" alt-text="You will see a gold banner with the words *Try out our new email entity page with enriched data* to navigate to the new experience.":::
+:::image type="content" source="../../media/email-entities-1-navigation-to-ee.png" alt-text="You'll see a gold banner with the words *Try out our new email entity page with enriched data* to navigate to the new experience.":::
 
 :::image type="content" source="../../media/email-entities-2-eep.png" alt-text="This graphic of the email entity page focuses on headings that you'll see. Note the email header is displayed here.":::
 
 > [!NOTE]
-> The permissions needed to view and use this page are the same as to view Threat Explorer. The admin must be a member of Global admin or global reader, or Security admin or security reader.
+> The permissions needed to view and use this page are the same as to view **Explorer**. The admin must be a member of Global admin or global reader, or Security admin or Security Reader. For more information, see [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).
 
 ## Read the email entity page
 
@@ -52,7 +47,7 @@ The structure is designed to be easy to read and navigate through at a glance. V
 
     :::image type="content" source="../../media/email-entities-3-left-panel.png" alt-text="Graphic of the email entity page with the left side highlighted. The title and facts about the mail delivery are over here.":::
 
-2. On the top-right corner are the actions that can be taken on an email. Any actions that can be taken through Explorer will also be available through email entity page.
+2. On the top-right corner are the actions that can be taken on an email. Any actions that can be taken through **Explorer** will also be available through email entity page.
 
     :::image type="content" source="../../media/email-entities-5-preview.png" alt-text="Graphic of the email entity page with the *right* side highlighted, this time. Actions like 'Email preview' and 'Go to quarantine' are here.":::
 
@@ -64,10 +59,10 @@ The structure is designed to be easy to read and navigate through at a glance. V
 
 The tabs along the top of the entity page will allow you to investigate email efficiently.
 
-1. **Timeline**: The timeline view for an email (per the Threat Explorer timeline) shows the original delivery to post-delivery events that happen on an email. For emails that have no post-delivery actions, the view shows the original delivery row in timeline view. Events like: Zero-hour auto purge (ZAP), Remediate, URL clicks, et cetera, from sources like: system, admin, and user, show up here, in the order in which they occurred.
+1. **Timeline**: The timeline view for an email (per **Explorer** timeline) shows the original delivery to post-delivery events that happen on an email. For emails that have no post-delivery actions, the view shows the original delivery row in timeline view. Events like: Zero-hour auto purge (ZAP), Remediate, URL clicks, et cetera, from sources like: system, admin, and user, show up here, in the order in which they occurred.
 2. **Analysis**: Analysis shows fields that help admins analyze an email in depth. For cases where admins need to understand more about detection, sender / recipient, and email authentication details, they should use the Analysis tab. Links for Attachments and URLs are also found on this page, under 'Related Entities'. Both attachments and identified threats are numbered here, and clicking will take you straight to the Attachments and URL pages. This tab also has a View header option to *show the email header*. Admins can compare any detail from email headers, side by side with information on the main panel, for clarity.
 3. **Attachments**: This examines attachments found in the email with other details found on attachments. The number of attachments shown is currently limited to 10. Notice that detonation details for attachments found to be malicious is also shown here.
-4. **URLs**: This tab lists URLs found in the email with other details about the URLs. The number of URLs is limited to 10 right now, but these 10 are prioritized to show *malicious URLs first*. Prioritization saves you time and guess-work. The URLs which were found to be malicious and detonated will also be shown here.
+4. **URLs**: This tab lists URLs found in the email with other details about the URLs. The number of URLs is limited to 10 right now, but these 10 are prioritized to show *malicious URLs first*. Prioritization saves you time and guess-work. The URLs that were found to be malicious and detonated will also be shown here.
 5. **Similar emails**: This tab lists all emails similar to the *network message id + recipient* combination specific to this email. Similarity is based on the *body of the message*, only. The determinations made on mails to categorize them as 'similar' don't include a consideration of *attachments*.
 
 ## New to the email entity page
@@ -76,24 +71,28 @@ There are new capabilities that come with this email entity page. Here's the lis
 
 ### Email preview for Cloud mailboxes
 
-Admins can preview emails in Cloud mailboxes, ***if*** the mails are still present in the Cloud. In case of a soft delete (by an admin, or user), or ZAP (to quarantine), emails are no longer present in the Cloud location. In that case, admins won't be able to preview those specific mails. Emails that were dropped, or where delivery failed, never actually made it into the mailbox. As a result, admins won't be able to preview those emails either.
+Admins can preview emails in Cloud mailboxes, ***if*** the mails are still present in the Cloud. In case of a soft delete (by an admin, or user), or ZAP (to quarantine), emails are no longer present in the Cloud location. In that case, admins won't be able to preview those specific mails. Emails that were dropped, or where delivery failed, never made it into the mailbox. As a result, admins won't be able to preview those emails either.
 
 > [!WARNING]
-> Previewing emails requires a special role called ***Preview*** to be assigned to admins. You can add this role by going to **Permissions & roles** > **Email & collaboration roles** in *security.microsoft.com*, or **Permissions** in *protection.office.com*. Add the ***Preview*** role to any of the role groups, or a copy of a role group that allows admins in your organization to work in Threat Explorer.
+> Previewing emails requires a special role called **Preview**. You can add this role in the Microsoft 365 Defender portal as described in [Email & collaboration roles in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md#email--collaboration-roles-in-the-microsoft-365-defender-portal). You might need to create a new **Email & collaboration** role group there and add the **Preview** role to that new role group or add the **Preview** role to a role group that allows admins in your organization to work in **Explorer**.
 
 ### Detonation details
 
-These details are specific to email attachments and URLs.
+These details are specific to email attachments and URLs. Users can see these details by going to Explorer and applying the *detection technology* filter set to file detonation or URL detonation. Emails filtered for file detonation will contain a malicious file with detonation details, and those filtered for URLs contain a malicious URL and its detonation details.
 
-Users will see enriched detonation details for known malicious attachments or hyperlinks found in their mailboxes, including Detonation chain, Detonation summary, Screenshot, and Observed behavior details to help customers understand why the attachment or URL was deemed malicious and detonated.
+Users will see enriched detonation details for known malicious attachments or URLs found in their emails, which got detonated for their specific tenant. It will comprise of Detonation chain, Detonation summary, Screenshot, and Observed behavior details to help customers understand why the attachment or URL was deemed malicious and detonated.
 
-- *Detonation chain*: A single file or URL detonation can trigger multiple detonations. The Detonation chain tracks the path of detonations, including the original malicious file or URL that caused the verdict, and all other files or URLs effected by the detonation. These URLs or attached files may not be directly present in the email, but including that analysis is important to determining why the file or URL was found to be malicious.
-- *Detonation summary*: This gives information on:
-  - Detonation time range.
-  - Verdict of the attached file, or URL.
-  - Related info (file number, URLs, IPs, or Domains), which are other entities examined during detonation.
-- *Detonation screenshot*: This shows screenshot(s) taken during detonation process.
-- *Detonation details*: These are the exact behavior details of each process that took place during the detonation.
+1. *Detonation chain*. A single file or URL detonation can trigger multiple detonations. The Detonation chain tracks the path of detonations, including the original malicious file or URL that caused the verdict, and all other files or URLs effected by the detonation. These URLs or attached files may not be directly present in the email, but including that analysis is important to determining why the file or URL was found to be malicious.  
+
+    > [!NOTE]
+    > This may show just the top level item if none of the entities linked to it were found to be problematic, or were detonated.
+
+1. *Detonation Summary* gives a basic summary for detonation such as *analysis time*, the time when detonation occurred, OS and application, the operating system and application in which the detonation occurred, file size, and verdict reason.
+1. *Screenshots* show the screenshots captured during detonation. There can be multiple screenshots during detonation. No screenshots are captured for
+    - Container type files like .zip or .rar.
+    - If a URL opens into a link that directly downloads a file. However, you will see the downloaded file in the detonation chain.
+1. *Behavior Details* are an export that shows behavior details like exact events that took place during detonation, and observables that contain URLs, IPs, domains, and files that were found during detonation (and can either be problematic or benign). Be aware, there may be no behavior details for:
+    - Container files like .zip or .rar that are holding other files.
 
 :::image type="content" source="../../media/email-entities-6-detonation-page.png" alt-text="Screenshot of the detonation summary showing the chain, summary, detonation details, and screenshot under the heading *Deep Analysis*.":::
 
@@ -105,7 +104,7 @@ Users will see enriched detonation details for known malicious attachments or hy
 
 *Email details*: Details required for a deeper understanding of email available in the *Analysis* tab.
 
-- *Exchange Transport Rules (ETRs or Mailflow rules)*: These rules are applied to a message at the transport layer and take precedence over phish and spam verdicts. These can be only created and modified in the Exchange admin center, but if any ETR applies to a message, the ETR name and GUID will be shown here. Valuable information for tracking purposes.
+- *Exchange transport rules (also known as mail flow rules or ETRs)*: These rules are applied to a message at the transport layer and take precedence over phish and spam verdicts. These can be only created and modified in the Exchange admin center, but if any ETR applies to a message, the ETR name and GUID will be shown here. Valuable information for tracking purposes.
 
 - *System Overrides*: This is a means of making exceptions to the delivery location intended for a message by overriding the delivery location given by system (as per the threat and detection tech).
 
@@ -141,10 +140,10 @@ Users will see enriched detonation details for known malicious attachments or hy
   - Fail (reason): Indicates the DKIM check for the message failed and why. For example, if the message was not signed or the signature was not verified.
   - None: Indicates that the message was not signed. This may or may not indicate that the domain has a DKIM record or the DKIM record does not evaluate to a result, only that this message was not signed.
 
-- Domain-based Message Authentication, Reporting and Conformance (**DMARC**):
+- Domain-based Message Authentication, Reporting, and Conformance (**DMARC**):
   - Pass: Indicates the DMARC check for the message passed.
   - Fail: Indicates the DMARC check for the message failed.
   - Bestguesspass: Indicates that no DMARC TXT record for the domain exists, but if one had existed, the DMARC check for the message would have passed.
   - None: Indicates that no DMARC TXT record exists for the sending domain in DNS.
 
-*Composite Authentication*: This is a value is used by Microsoft 365 to combine email authentication like SPF, DKIM, and DMARC, to determine if the message is authentic. It uses the *From:* domain of the mail as the basis of evaluation.
+*Composite Authentication*: This is a value used by Microsoft 365 to combine email authentication like SPF, DKIM, and DMARC, to determine if the message is authentic. It uses the *From:* domain of the mail as the basis of evaluation.

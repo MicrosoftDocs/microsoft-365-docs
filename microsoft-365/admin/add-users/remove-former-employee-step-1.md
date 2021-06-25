@@ -30,10 +30,13 @@ description: "Block a former employee from logging in and block access to Micros
 
 If you need to immediately prevent a user's sign-in access, you should reset their password. In this step, force a sign out of the user from Microsoft 365.
 
+> [!NOTE]
+> You need to be a global administrator to initiate sign-out for other administrators. For non administrator users, you can use a User Administrator or a Helpdesk Administrator user to perform this action. [Learn more about the Admin Roles](about-admin-roles.md)
+
 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.
 2. Select the box next to the user's name, and then select **Reset password**.
 3. Enter a new password, and then select **Reset**. (Don't send it to them.)
-4. Select the user's name to go to their properties pane, and on the **Account** tab, select **Initiate sign-out**.
+4. Select the user's name to go to their properties pane, and on the **Account** tab, select **Sign out of all sessions**.
 
 Within an hour - or after they leave the current Microsoft 365 page they are on - they're prompted to sign in again. An access token is good for an hour, so the timeline depends on how much time is left on that token, and whether they navigate out of their current webpage.
   

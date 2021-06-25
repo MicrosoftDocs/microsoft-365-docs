@@ -14,6 +14,7 @@ ms.collection:
 - m365solution-securecollab
 ms.custom:
 - Ent_Solutions
+recommendations: false
 description: "Learn how to create a team with a unique sensitivity label for security."
 ---
 

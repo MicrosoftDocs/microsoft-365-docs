@@ -23,7 +23,9 @@ Use the Content Search tool in the Security & Compliance Center to quickly find 
 
 The first step is to starting using the Content Search tool to choose content locations to search and configure a keyword query to search for specific items. Or, you can just leave the query blank and return all items in the target locations.
   
-- [Create and run](content-search.md) a content search 
+- [Create and run](content-search.md) a Content search
+
+- [Feature reference] for Content search (content-search-reference.md)
 
 - [Build search queries and use conditions](keyword-queries-and-search-conditions.md) to narrow your search 
 

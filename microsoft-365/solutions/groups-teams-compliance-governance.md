@@ -14,6 +14,7 @@ ms.collection:
 ms.custom: 
 - M365solutions
 f1.keywords: NOCSH
+recommendations: false
 description: "Learn about compliance options for Microsoft 365 groups, Teams, and SharePoint collaboration."
 ---
 

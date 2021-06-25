@@ -7,7 +7,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.reviewer: drjones
+ms.reviewer: drjones, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -17,8 +17,7 @@ ms.collection:
 - Adm_O365
 ms.custom:
 - commerce_subscriptions
-- PPM_jmueller
-search.appverid: MET150
+search.appverid: MET150 
 description: "Learn how to upgrade from Microsoft Teams Free to a new Microsoft 365 for business subscription."
 ROBOTS: NOINDEX, NOFOLLOW
 ms.date: 07/08/2020

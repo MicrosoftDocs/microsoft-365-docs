@@ -38,14 +38,20 @@ After you've saved and accessed all the former employee's user data, you can del
 3. Under the user's name, select **Delete user**. Choose the options you want for this user, and then select **Delete user**. If you've already given another user access to this user's email and OneDrive, you don't have to do it again here.
 
 When you delete a user, the account becomes inactive for approximately 30 days. You have until then to restore the account before it is permanently deleted.
-  
+
+## Watch: Delete a former employee's user account
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfR]
+
+If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](../../business-video/index.yml).
+
 ## Does your organization use Active Directory?
 
 If your organization synchronizes user accounts to Microsoft 365 from a local Active Directory environment, you must delete and restore those user accounts in your local Active Directory service. You can't delete or restore them in Office 365.
 
 To learn how to delete and restore user account in Active Directory, see [Delete a User Account](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753730(v=ws.11)).
   
-If you're using Azure Active Directory, see the [Remove-MsolUser](https://go.microsoft.com/fwlink/?linkid=842230) PowerShell cmdlet.
+If you're using Azure Active Directory, see the [Remove-MsolUser](/powershell/module/msonline/remove-msoluser) PowerShell cmdlet.
   
 ## What you need to know about terminating an employee's email session
 
@@ -73,6 +79,7 @@ The above operations can be done in three places:
   
  **Fastest for a user with presence on-premises and in the Exchange Datacenter**: Terminate the session using Azure Active Directory admin center/Exchange admin center AND make the change in the on-premises environment as well. Otherwise, the change in Azure Active Directory admin center/Exchange admin center will be overwritten by DirSync.
   
-## Related articles
+## Related content
 
-[Restore a user](restore-user.md)
+[Restore a user](restore-user.md) (article)/
+[Reset passwords](reset-passwords.md) (article)

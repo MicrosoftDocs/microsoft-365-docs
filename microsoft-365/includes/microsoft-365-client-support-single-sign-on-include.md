@@ -13,7 +13,7 @@
 |OFFICE.COM|N/A|N/A|N/A|N/A|✔|
 |ONEDRIVE|✔|✔|Planned|✔|✔|
 |ONENOTE|✔|✔|✔|Planned|✔|
-|OUTLOOK|✔|✔|Planned|✔|✔|
+|OUTLOOK|✔|✔|✔|✔|✔|
 |PLANNER|✔|✔|N/A|N/A|N/A|
 |POWER APPS|✔|✔|N/A|N/A|Planned|
 |POWER AUTOMATE|✔|✔|N/A|N/A|N/A|
@@ -26,7 +26,7 @@
 |STICKY NOTES|N/A|N/A|N/A|N/A|✔|
 |STREAM|Planned|Planned|N/A|N/A|N/A|
 |SWAY|N/A|N/A|N/A|N/A|✔|
-|TEAMS|✔|✔|Planned|✔|N/A|
+|TEAMS|✔|✔|✔|✔|N/A|
 |TO-DO|✔|✔|N/A|N/A|✔|
 |VISIO|N/A|✔|N/A|✔|N/A|
 |WHITEBOARD|✔|✔|N/A|N/A|✔|

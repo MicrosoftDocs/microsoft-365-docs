@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.reviewer: jkinma
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,13 +14,12 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 search.appverid: MET150 
-description: "Learn what payment options are available to pay for your Microsoft 365 for business subscription."
+description: "Use a credit or debit card or bank account to pay for your Microsoft 365 for business subscription, or in some cases, you can pay by invoice."
 ms.custom: 
 - okr_SMB
 - fwlink 808700 for SEPA UI glink 906 for older uI
 - AdminSurgePortfolio
 - commerce_billing
-- PPM_jmueller
 ms.date: 05/04/2021
 ---
 

@@ -39,7 +39,7 @@ After people have been active in the above products at least once in the last 28
 
 ## Why your organization’s Communication score matters 
 
-Microsoft understands that people have different communication needs. To get a quick response to a question, you might choose to send an instant message. If you want to send status updates to your leadership, you may choose an email message. To reach a broader audience, you may choose to post a community message. Microsoft 365 enables this flexibility in communication modes to fit everyone's needs. Research shows that using real-time communication tools creates a more unified organization and builds morale, regardless of location. [See the evidence](https://go.microsoft.com/fwlink/?linkid=2127669).
+Microsoft understands that people have different communication needs. To get a quick response to a question, you might choose to send an instant message. If you want to send status updates to your leadership, you may choose an email message. To reach a broader audience, you may choose to post a community message. Microsoft 365 enables this flexibility in communication modes to fit everyone's needs. Research shows that using real-time communication tools creates a more unified organization and builds morale, regardless of location.
 
 ## How we calculate the communication score
 

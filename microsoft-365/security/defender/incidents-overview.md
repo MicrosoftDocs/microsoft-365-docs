@@ -1,6 +1,6 @@
 ---
 title: Incidents in Microsoft 365 Defender
-description: Investigate incidents seen across devices, users, and mailboxes in the Microsoft 365 security center.
+description: Investigate incidents seen across devices, users, and mailboxes in the Microsoft 365 Defender portal.
 keywords: incidents, alerts, investigate, analyze, response, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365, incident response, cyber-attack
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -57,17 +57,17 @@ Grouping related alerts into an incident gives you a comprehensive view of an at
 - The scope of the attack, such as how many devices, users, and mailboxes were impacted. 
 - All of the data associated with the attack.
 
-If [enabled](m365d-enable.md), Microsoft 365 Defender can automatically investigate and resolve alerts through automation and artificial intelligence. You can also perform additional remediation steps to resolve the attack. 
+If [enabled](m365d-enable.md), Microsoft 365 Defender can [automatically investigate and resolve](m365d-autoir.md) alerts through automation and artificial intelligence. You can also perform additional remediation steps to resolve the attack. 
 
-## Incidents and alerts in the Microsoft 365 security center
+## Incidents and alerts in the Microsoft 365 Defender portal
 
-You manage incidents from **Incidents & alerts > Incidents** on the quick launch of the Microsoft 365 security center ([security.microsoft.com](https://security.microsoft.com)). Here's an example.
+You manage incidents from **Incidents & alerts > Incidents** on the quick launch of the Microsoft 365 Defender portal ([security.microsoft.com](https://security.microsoft.com)). Here's an example.
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="The Incidents page in the Microsoft 365 security center":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="The Incidents page in the Microsoft 365 Defender portal":::
 
 Selecting an incident name displays a summary of the incident and provides access to tabs with additional information.
 
-:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="Example of the Summary page for an incident in the Microsoft 365 security center":::
+:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="Example of the Summary page for an incident in the Microsoft 365 Defender portal":::
 
 The additional tabs for an incident are:
 
@@ -89,19 +89,23 @@ The additional tabs for an incident are:
 
 - Investigations
 
-  All the automated investigations triggered by alerts in the incident.
+  All the [automated investigations](m365d-autoir.md) triggered by alerts in the incident.
 
 - Evidence and Response
 
   All the supported events and suspicious entities in the alerts in the incident.
 
-Here's the relationship between an incident and its data and the tabs of an incident in the Microsoft 365 security center.
+- Graph (in preview)
 
-:::image type="content" source="../../media/incidents-overview/incidents-security-center.png" alt-text="The relationship of an incident and its data to the tabs of an incident in the Microsoft 365 security center":::
+  A figure showing the connection of alerts to the impacted assets in your organization.
+
+Here's the relationship between an incident and its data and the tabs of an incident in the Microsoft 365 Defender portal.
+
+:::image type="content" source="../../media/incidents-overview/incidents-security-center.png" alt-text="The relationship of an incident and its data to the tabs of an incident in the Microsoft 365 Defender portal":::
 
 ## Example incident response workflow for Microsoft 365 Defender
 
-Here's an example workflow for responding to incidents in Microsoft 365 with the Microsoft 365 security center.
+Here's an example workflow for responding to incidents in Microsoft 365 with the Microsoft 365 Defender portal.
 
 :::image type="content" source="../../media/incidents-overview/incidents-example-workflow.png" alt-text="Example of an incident response workflow for Microsoft 365":::
 
@@ -110,23 +114,23 @@ On an ongoing basis, identify the highest priority incidents for analysis and re
 - [Triaging](incident-queue.md) to determining the highest priority incidents through filtering and sorting of the incident queue.
 - [Managing](manage-incidents.md) incidents by modifying their title, assigning them to an analyst, and adding tags and comments.
 
-1. For each incident, begin an [attack and alert analysis](investigate-incidents.md):
+1. For each incident, begin an [attack and alert investigation and analysis](investigate-incidents.md):
  
-   a. View the summary of the incident to understand it's scope and severity and what entities are affected (the **Summary** tab).
+   1. View the summary of the incident to understand it's scope and severity and what entities are affected (the **Summary** tab).
 
-   b. Begin analyzing the alerts to understand their origin, scope, and severity (the **Alerts** tab).
+   1. Begin analyzing the alerts to understand their origin, scope, and severity (the **Alerts** tab).
 
-   c. As needed, gather information on impacted devices, users, and mailboxes (the **Devices**, **Users**, and **Mailboxes** tabs).
+   1. As needed, gather information on impacted devices, users, and mailboxes (the **Devices**, **Users**, and **Mailboxes** tabs).
 
-   d. See how Microsoft 365 Defender has automatically resolved some alerts (the **Investigations** tab).
+   1. See how Microsoft 365 Defender has [automatically resolved some alerts](m365d-autoir.md) (the **Investigations** tab).
    
-   e. As needed, use information in the data set for the incident for more information (the **Evidence and Response** tab).
+   1. As needed, use information in the data set for the incident for more information (the **Evidence and Response** tab).
 
 2. After or during your analysis, perform containment to reduce any additional impact of the attack and eradication of the security threat.
 
 3. As much as possible, recover from the attack by restoring your tenant resources to the state they were in before the incident.
 
-4. [Resolve](manage-incidents.md#resolve-incident) the incident and take time for post-incident learning to:
+4. [Resolve](manage-incidents.md#resolve-an-incident) the incident and take time for post-incident learning to:
 
    - Understand the type of the attack and its impact.
    - Research the attack in [Threat Analytics](threat-analytics.md) and the security community for a security attack trend.
@@ -135,16 +139,18 @@ On an ongoing basis, identify the highest priority incidents for analysis and re
 
 If you are new to security analysis, see the [introduction to responding to your first incident](incidents-overview.md) for additional information and to step through an example incident.
 
+For more information about incident response across Microsoft products, see [this article](/security/compass/incident-response-overview).
+
 ## Example security operations for Microsoft 365 Defender
 
-Here's an example of security operations for Microsoft 365 Defender.
+Here's an example of security operations (SecOps) for Microsoft 365 Defender.
 
-:::image type="content" source="../../media/incidents-overview/incidents-example-operations.png" alt-text="An example of security operations for Micosoft 365 Defender":::
+:::image type="content" source="../../media/incidents-overview/incidents-example-operations.png" alt-text="An example of security operations for Microsoft 365 Defender":::
 
 Daily tasks can include:
 
 - [Managing](manage-incidents.md) incidents
-- Reviewing [automated investigation and response (AIR)](m365d-action-center.md) actions
+- Reviewing [automated investigation and response (AIR)](m365d-action-center.md) actions in the Action center
 - Reviewing the latest [Threat Analytics](threat-analytics.md)
 - [Responding](investigate-incidents.md) to incidents
 
@@ -160,10 +166,29 @@ Annual tasks can include conducting a major incident or breach exercise to test 
 
 Daily, monthly, quarterly, and annual tasks can be used to update or refine processes, policies, and security configurations.
 
+### SecOps resources across Microsoft products
+
+For more information about SecOps across Microsoft's products, see these resources:
+
+- [Capabilities](/security/compass/security-operations-capabilities)
+- [Best practices](/security/compass/security-operations)
+- [Videos and slides](/security/compass/security-operations-videos-and-decks)
+
 ## Next steps
 
-The incident queue from the **Incidents** page lists the most recent incidents. From here, you can:
+**If you are new** to security analysis and incident response:
 
-- See which incidents should be [prioritized](incident-queue.md) based on severity and other factors. 
-- [Manage incidents](manage-incidents.md), which includes renaming, assignment, classifying, and adding tags and comments for your incident management workflow.
-- Perform an [analysis](investigate-incidents.md) of an incident.
+- See the [Respond to your first incident walkthrough](first-incident-overview.md) to get a guided tour of a typical process of analysis, remediation, and post-incident review in the Microsoft 365 Defender portal with an example attack.
+
+**If you have experience** with security analysis and incident response:
+
+- Get started with the incident queue from the **Incidents** page of the Microsoft 365 Defender portal. From here, you can:
+
+  - See which incidents should be [prioritized](incident-queue.md) based on severity and other factors. 
+
+  - [Manage incidents](manage-incidents.md), which includes renaming, assigning, classifying, and adding tags and comments based on your incident management workflow.
+
+  - Perform [investigations](investigate-incidents.md) of incidents.
+
+- See these [incident response playbooks](/security/compass/incident-response-playbooks) for detailed guidance for phishing, password spray, and app consent grant attacks.
+

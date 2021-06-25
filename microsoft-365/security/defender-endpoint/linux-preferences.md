@@ -1,6 +1,6 @@
 ---
 title: Set preferences for Microsoft Defender for Endpoint on Linux
-ms.reviewer: 
+ms.reviewer:
 description: Describes how to configure Microsoft Defender for Endpoint on Linux in enterprises.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
 search.product: eADQiWindows 10XVcnh
@@ -14,7 +14,7 @@ author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
   - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
@@ -100,6 +100,7 @@ Specifies the merge policy for exclusions. It can be a combination of administra
 #### Scan exclusions
 
 Entities that have been excluded from the scan. Exclusions can be specified by full paths, extensions, or file names.
+(Exclusions are specified as an array of items, administrator can specify as many elements as necessary, in any order.)
 
 |||
 |:---|:---|
@@ -133,7 +134,7 @@ Used to exclude content from the scan by full file path.
 
 **Path type (file / directory)**
 
-Indicates if the *path* property refers to a file or directory. 
+Indicates if the *path* property refers to a file or directory.
 
 |||
 |:---|:---|
@@ -382,11 +383,16 @@ The following configuration profile contains entries for all settings described 
          {
             "$type":"excludedPath",
             "isDirectory":true,
-            "path":"/home"
+            "path":"/run"
+         },
+         {
+            "$type":"excludedPath",
+            "isDirectory":true,
+            "path":"/home/*/git"
          },
          {
             "$type":"excludedFileExtension",
-            "extension":"pdf"
+            "extension":".pdf"
          },
          {
             "$type":"excludedFileName",
@@ -433,7 +439,7 @@ python -m json.tool mdatp_managed.json
 If the JSON is well-formed, the above command outputs it back to the Terminal and returns an exit code of `0`. Otherwise, an error that describes the issue is displayed and the command returns an exit code of `1`.
 
 ## Verifying that the mdatp_managed.json file is working as expected
-To verify that your /etc/opt/microsoft/mdatp/managed/mdatp_managed.json is working properly, you should see "[managed]" next to these settings:  
+To verify that your /etc/opt/microsoft/mdatp/managed/mdatp_managed.json is working properly, you should see "[managed]" next to these settings:
 - cloud_enabled
 - cloud_automatic_sample_submission_consent
 - passice_mode_enabled

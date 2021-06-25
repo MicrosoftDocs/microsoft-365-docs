@@ -90,7 +90,7 @@ Depending on your specific set-up, options included in your view might have some
 ## Get help with Service assurance
 <a name="addother"> </a>
 
-[Contact support for business products - Admin Help](../admin/contact-support-for-business-products.md).
+[Contact support for business products - Admin Help](../business-video/get-help-support.md).
   
 ## Frequently Asked Questions
 <a name="addother"> </a>

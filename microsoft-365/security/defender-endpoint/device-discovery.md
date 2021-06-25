@@ -30,7 +30,6 @@ ms.technology: m365d
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-[!include[Prerelease information](../../includes/prerelease.md)]
 
 Protecting your environment requires taking inventory of the devices that are in your network. However, mapping devices in a network can often be expensive, challenging, and time-consuming. 
 
@@ -57,7 +56,7 @@ There are two modes of discovery:
 
 
 > [!IMPORTANT]
-> Discovery is set to basic mode. You can choose to retain this configuration through the settings page. Standard discovery will be the default mode for all preview customers starting May 10, 2021 - unless modified through the settings page before this date.
+> Discovery is set to basic mode. You can choose to retain this configuration through the settings page. Standard discovery will be the default mode for all customers starting July 19, 2021 - unless modified through the settings page before this date.
 
 ### Basic discovery 
 

@@ -35,6 +35,8 @@ Bulk mailers vary in their sending patterns, content creation, and recipient acq
 
  Spam filtering marks messages as **Bulk email** based on the BCL threshold (the default value or a value you specify) and takes the specified action on the message (the default action is deliver the message to the recipient's Junk Email folder). For more information, see [Configure anti-spam policies](configure-your-spam-filter-policies.md) and [What's the difference between junk email and bulk email?](what-s-the-difference-between-junk-email-and-bulk-email.md)
 
+You can use the Tenant Allow/Block List to configure exceptions for bulk mail filtering. Messages from senders in the specified domains don't receive the action for the **Bulk email** spam filtering verdict in anti-spam policies. For more information, see [Manage the Tenant Allow/Block List](tenant-allow-block-list.md).
+
 The BCL thresholds are described in the following table.
 
 ****
