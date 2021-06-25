@@ -34,7 +34,7 @@ ms.prod: m365-security
 
 In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, quarantine holds potentially dangerous or unwanted messages. For more information, see [Quarantine in EOP](quarantine-email-messages.md).
 
-As a recipient of a quarantined message, what you can do to the message as a regular user is described in the following table:
+As a recipient of a quarantined message, what you can do to the message as a non-admin user is described in the following table:
 
 <br>
 

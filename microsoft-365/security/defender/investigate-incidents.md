@@ -141,7 +141,15 @@ The **Investigations** tab lists all the [automated investigations](m365d-autoir
 
 :::image type="content" source="../../media/investigate-incidents/incident-investigations.png" alt-text="Example of an Investigations page for an incident":::
 
-Select an investigation to navigate to the Investigation details page to get full information on the investigation and remediation status. If there are any actions pending for approval as part of the investigation, they will appear in the Pending actions tab. Take action as part of incident remediation.
+Select an investigation to navigate to its details page for full information on the investigation and remediation status. If there are any actions pending for approval as part of the investigation, they will appear in the **Pending actions history** tab. Take action as part of incident remediation.
+
+There is also an **Investigation graph** tab that shows:
+
+- The connection of alerts to the impacted assets in your organization.
+- Which entities are related to which alerts and how they are part of the story of the attack.
+- The alerts for the incident.
+
+The investigation graph helps you quickly understand the full scope of the attack by connecting the different suspicious entities that are part of the attack with their related assets such as users, devices, and mailboxes. 
 
 For more information, see [Automated investigation and response in Microsoft 365 Defender](m365d-autoir.md).
 
@@ -154,22 +162,6 @@ The **Evidence and Response** tab shows all the supported events and suspicious 
 Microsoft 365 Defender automatically investigates all the incidents' supported events and suspicious entities in the alerts, providing you with information about the important emails, files, processes, services, IP Addresses, and more. This helps you quickly detect and block potential threats in the incident.
 
 Each of the analyzed entities is marked with a verdict (Malicious, Suspicious, Clean) and a remediation status. This helps you understand the remediation status of the entire incident and what next steps can be taken.
-
-## Graph (in preview)
-
-With the new **Graph** tab (in preview), you can see:
-
-- The connection of alerts to the impacted assets in your organization.
-- Which entities are related to which alerts and how they are part of the story of the attack.
-- The alerts for the incident.
-
-Here's an example.
-
-:::image type="content" source="../../media/investigate-incidents/incident-graph.png" alt-text="Example of a Graph page for an incident":::
-
-The incident graph helps you quickly understand the full scope of the attack by connecting the different suspicious entities that are part of the attack with their related assets such as users, devices, and mailboxes. 
-
-Now you can understand how the attack spread through your network over time, where it started, and how far the attack went.
 
 ## Next steps
 
