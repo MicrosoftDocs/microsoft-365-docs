@@ -49,3 +49,7 @@ Use the navigation bar on the left side of the screen to access your incidents, 
 | **Permissions & roles** | Assign roles to members of your security team who will be using the Microsoft 365 Defender portal. <br/>Set up and manage device groups to onboard your company’s devices and assign threat protection policies. |
 | **Settings** | - Edit settings for the Microsoft 365 Defender portal and Microsoft Defender for business. <br/>- Onboard (or offboard) and your company’s devices (also referred to as endpoints).<br/>- Define rules, such as alert suppression rules, and set up indicators to block or allow certain files or processes. |
 | **More resources** | Navigate to other portals, such as Azure Active Directory. Keep in mind that the Microsoft 365 Defender portal should meet your needs without requiring you to navigate to other portals. |
+
+## Next step
+
+[Learn how to use Microsoft Defender for business](mdb-use.md)
