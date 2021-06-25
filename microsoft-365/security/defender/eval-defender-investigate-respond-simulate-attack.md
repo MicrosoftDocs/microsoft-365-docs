@@ -29,35 +29,61 @@ ms.technology: m365d
 
 This article is [Step 1 of 2](eval-defender-investigate-respond.md) in the process of performing an investigation and response of an incident in Microsoft 365 Defender using a pilot environment. For more information about this process, see the [overview](eval-defender-investigate-respond.md) article.
 
-After preparing your [pilot environment](eval-defender-investigate-respond.md), it's time to test Microsoft 365 Defender's incident response and automated investigation and remediation capabilities. 
-
-Now that your pilot environment has all of the Microsoft 365 Defender components enabled, it's time to create an incident with a simulated attack and use the Microsoft 365 Defender portal to investigate and respond.
+After preparing your [pilot environment](eval-defender-investigate-respond.md), it's time to test Microsoft 365 Defender's incident response and automated investigation and remediation capabilities by creating an incident with a simulated attack and using the Microsoft 365 Defender portal to investigate and respond.
 
 An incident in Microsoft 365 Defender is a collection of correlated alerts and associated data that make up the story of an attack. 
 Microsoft 365 services and apps create alerts when they detect a suspicious or malicious event or activity. Individual alerts provide valuable clues about a completed or ongoing attack. However, attacks typically employ various techniques against different types of entities, such as devices, users, and mailboxes. The result is multiple alerts for multiple entities in your tenant.
 
 ## Simulate attacks with the Microsoft 365 Defender portal
 
-The Microsoft 365 Defender portal has built-in capabilities to create simulated attacks on your pilot environment. There are two main ways:
+The Microsoft 365 Defender portal has built-in capabilities to create simulated attacks on your pilot environment:
 
-Attack simulation training for Microsoft 365 Defender for Office 365
-[https://security.microsoft.com/attacksimulator?viewid=overview](https://security.microsoft.com/attacksimulator?viewid=overview)
-UI path: Microsoft 365 Defender portal > Email & collaboration > Attack simulation training
+- Attack simulation training for Microsoft 365 Defender for Office 365 at [https://security.microsoft.com/attacksimulator](https://security.microsoft.com/attacksimulator).
+  
+  In the Microsoft 365 Defender portal, select **Email & collaboration > Attack simulation training**.
 
-Tutorials & simulations
-[https://security.microsoft.com/tutorials/simulations](https://security.microsoft.com/tutorials/simulations)
-UI path: Microsoft 365 Defender portal > Endpoints > Tutorials & simulations
+- Attack tutorials & simulations for Microsoft 365 Defender for Endpoints at [https://security.microsoft.com/tutorials/simulations](https://security.microsoft.com/tutorials/simulations).
 
-Tutorials as of June 2021:
+  In the Microsoft 365 Defender portal, select **Endpoints > Tutorials & simulations**.
 
-Document drops backdoor 
-Automated investigation (backdoor)
+### Defender for Office 365 Attack simulation training
 
+Defender for Office 365 with Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2 includes attack simulation training for phishing attacks. The basic steps are:
 
+1. Create a simulation
 
-IN PROGRESS
+   For step by step instructions on how to create and send a new simulation, see [Simulate a phishing attack](/microsoft-365/security/office-365-security/attack-simulation-training).
 
-## Simulate an attack with an isolated domain controller and client device
+2. Create a payload
+
+   For step by step instructions on how to create a payload for use within a simulation, see [Create a custom payload for Attack simulation training](/microsoft-365/security/office-365-security/attack-simulation-training-payloads).
+
+3. Gaining insights
+
+   For step by step instructions on how to gain insights with reporting, see [Gain insights through Attack simulation training](/microsoft-365/security/office-365-security/attack-simulation-training-insights).
+
+For more information, see [Simulations](/microsoft-365/security/office-365-security/attack-simulation-training-get-started#simulations).
+
+### Defender for Endpoint attack tutorials & simulations
+
+Here are the Defender for Endpoint simulations from Microsoft:
+
+- Document drops backdoor 
+- Automated investigation (backdoor)
+
+There are additional simulations from Attack IQ and SafeBreach. There are also a set of tutorials. 
+
+For each simulation or tutorial:
+
+1. Download and read the corresponding walkthrough document provided with your selected simulation or scenario.
+
+2. Download the simulation file. You can choose to download the file or script on the test device but it's not mandatory.
+
+3. Run the simulation file or script on the test device as instructed in the walkthrough document.
+
+ For more information, see [Experience Microsoft Defender for Endpoint through simulated attack](/microsoft-365/security/defender-endpoint/attack-simulations).
+
+## Simulate an attack with an isolated domain controller and client device (optional)
 
 In this optional incident response exercise, you'll simulate an attack on an isolated Active Directory Domain Services (AD DS) domain controller and Windows 10 device using a PowerShell script and then investigate, remediate, and resolve the incident.
 
@@ -292,7 +318,7 @@ This wraps up the attack simulation for incident analysis, automated investigati
 
 ## Next step
 
-[![Try additional Microsoft 365 Defender incident response capabilities](../../media/eval-defender-investigate-respond/eval-defender-eval-investigate-respond-step3.png)](eval-defender-investigate-respond-additional.md)
+[![Try additional Microsoft 365 Defender incident response capabilities](../../media/eval-defender-investigate-respond/eval-defender-eval-investigate-respond-step2.png)](eval-defender-investigate-respond-additional.md)
 
 Step 2 of 2: [Try additional Microsoft 365 Defender incident response capabilities](eval-defender-investigate-respond-additional.md)
 

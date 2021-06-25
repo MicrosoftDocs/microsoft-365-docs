@@ -34,11 +34,10 @@ Once you have performed an [incident response for a simulated attack](eval-defen
 
 | Capability | Description |
 |:-------|:-----|
-| Prioritize incidents | Use filtering and sorting of the incidents queue to determine which incidents to address next. |
-| Manage incidents | Modify incident properties to ensure correct assignment, add tags and comments, and to resolve an incident. |
-| Automated investigation and response | Automated investigation and response (AIR) capabilities that can help your security operations team address threats more efficiently and effectively. |
-| Action center |  A "single pane of glass" experience for incident and alert tasks such as approving pending remediation actions. |
-| Advanced hunting | A query-based threat-hunting tool that lets you proactively inspect events in your network and locate threat indicators and entities. |
+| [Prioritize incidents](#prioritize-incidents) | Use filtering and sorting of the incidents queue to determine which incidents to address next. |
+| [Manage incidents](#manage-incidents) | Modify incident properties to ensure correct assignment, add tags and comments, and to resolve an incident. |
+| [Automated investigation and response](#examine-automated-investigation-and-response-with-the-action-center) | Automated investigation and response (AIR) capabilities that can help your security operations team address threats more efficiently and effectively. The Action center is a "single pane of glass" experience for incident and alert tasks such as approving pending remediation actions. |
+| [Advanced hunting](#advanced-hunting) | A query-based threat-hunting tool that lets you proactively inspect events in your network and locate threat indicators and entities. |
 ||||
 
 ## Prioritize incidents
@@ -119,7 +118,7 @@ For more information, see [Automated investigation and response](m365d-autoir.md
 ## Advanced hunting
 
 > [!NOTE]
-> Before we walk you through the simulation, watch the following video to understand the advanced hunting concepts, see where you can find it in the portal, and know how it can help you in your security operations
+> Before we walk you through the advanced hunting simulation, watch the following video to understand advanced hunting concepts, see where you can find it in the portal, and know how it can help you in your security operations.
 
 <br>
 
