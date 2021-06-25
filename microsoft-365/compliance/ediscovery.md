@@ -58,7 +58,7 @@ The following table compares the key capabilities available in Content search, C
 |Review sets|||![Supported](../media/check-mark.png)|
 |Support for cloud attachments and SharePoint versions|||![Supported](../media/check-mark.png)|
 |Optical character recognition|||![Supported](../media/check-mark.png)|
-|Conversation reconstruction|||![Supported](../media/check-mark.png)|
+|Conversation threading|||![Supported](../media/check-mark.png)|
 |Collection statistics and reports|||![Supported](../media/check-mark.png)|
 |Review set filtering|||![Supported](../media/check-mark.png)|
 |Tagging|||![Supported](../media/check-mark.png)|
@@ -99,7 +99,7 @@ Here's description of each eDiscovery capability.
 
 - **Optical character recognition (OCR)**. When content is added to a review set, OCR functionality extracts text from images, and includes the image text with the content that's added to a review set. This lets you search for image text when you query the content in the review set.
 
-- **Conversation reconstruction**. When chat messages from Teams and Yammer conversations are added to a review set, you have the option to reconstruct the entire conversation thread. This means that the chat conversation that contains items that match the collection criteria is reconstructed. This lets you review chat items in the context of the back and forth conversation.
+- **Conversation threading**. When chat messages from Teams and Yammer conversations are added to a review set, you have the option to collect the entire conversation thread. This means that the entire chat conversation that contains items that match the collection criteria is added to the review set. This lets you review chat items in the context of the back and forth conversation.
 
 - **Collection statistics and reports**. After you create a draft collection or commit a commit a collection to a review set, you can view a rich set of statistics on the retrieved items, such as the content locations that contain the most items that matched the search criteria and the number of items returned by the search query. You can also preview a subset of the results. Additionally, this includes the number of child items that were extracted from their parent items and added as separate items to the review set.
 
@@ -111,7 +111,7 @@ Here's description of each eDiscovery capability.
 
 - **Predictive coding models**. Use predictive coding models to reduce and cull large volumes of case content to a relevant set of items that you can prioritize for review. This is accomplished by creating and training your own predictive coding models that help you prioritize the review of the most relevant items in a review set. The system uses the training to apply prediction scores to every item in the review set. This lets you filter items based on the prediction score, which  allows you to review the most relevant (or non-relevant) items first.
 
-- **Computed document metadata**. Many Advanced eDiscovery features, such as Advanced indexing, conversation reconstruction, analytics, and predictive coding add metadata properties to review set documents. This metadata contains information related to the function performed a specific feature. When reviewing documents, you can filter on metadata properties to display document that match your filter criteria. This metadata can imported into third-party review applications after review set documents are exported.
+- **Computed document metadata**. Many Advanced eDiscovery features, such as Advanced indexing, conversation threading, analytics, and predictive coding add metadata properties to review set documents. This metadata contains information related to the function performed a specific feature. When reviewing documents, you can filter on metadata properties to display document that match your filter criteria. This metadata can imported into third-party review applications after review set documents are exported.
 
 - **Transparency of long-running jobs**. Jobs in Advanced eDiscovery are, typically long-running processes that are triggered by user actions, such as the adding custodians to a case, adding content to a review set, running analytics, and training predictive coding models. You can track the status of these jobs and get support information if you need to escalate issues to MS Support.
 
