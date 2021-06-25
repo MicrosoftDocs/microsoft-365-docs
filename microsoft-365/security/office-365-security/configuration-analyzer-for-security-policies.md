@@ -71,7 +71,7 @@ The **Standard** and **Strict** policy setting values that are used as baselines
 
 ## Use the configuration analyzer in the Microsoft 365 Defender portal
 
-In the Microsoft 365 Defender portal, go to **Email & collaboration** \> **Policies & rules** \> **Threat policies** \> **Templated policies** section \> **Configuration analyzer**.
+In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** page \> **Templated policies** section \> **Configuration analyzer**.
 
 The **Configuration analyzer** page has two main tabs:
 

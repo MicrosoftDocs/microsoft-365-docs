@@ -54,7 +54,7 @@ You can use the impersonation insight in the Microsoft 365 Defender portal to qu
   - **Security Reader**
   - **Global Reader**
 
-  For more information, see [Permissions in the Microsoft 365 Defender portal](permissions-in-the-security-and-compliance-center.md).
+  For more information, see [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).
 
   **Note**: Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions in the Microsoft 365 Defender portal _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
 
@@ -62,7 +62,7 @@ You can use the impersonation insight in the Microsoft 365 Defender portal to qu
 
 ## Open the impersonation insight in the Microsoft 365 Defender portal
 
-1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Policies** section \> **Anti-phishing**.
+1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** page \> **Policies** section \> **Anti-phishing**.
 
 2. On the **Anti-phishing** page, the impersonation insight looks like this:
 
