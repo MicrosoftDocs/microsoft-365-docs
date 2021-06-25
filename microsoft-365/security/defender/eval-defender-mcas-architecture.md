@@ -36,13 +36,32 @@ Before enabling Microsoft Cloud App Security, be sure you understand the archite
 
 ## Understand the architecture
 
-The following diagram illustrates . . .
+Microsoft Cloud App Security is a Cloud Access Security Broker (CASB). CASBs act a gatekeeper to broker access in real time between your enterprise users and cloud resources they use, wherever your users are located and regardless of the device they are using. Microsoft Cloud App Security natively integrates with Microsoft security capabilities, including Microsoft 365 Defender. 
 
-coming soon . . .
+Without Cloud App Security, cloud apps that are used by your organization are unmanaged and unprotected, as illustrated.
 
-<!--
+![Architecture for Microsoft Cloud App Security](../../media/defender/m365-defender-mcas-architecture-a.png)
 
-![Architecture for Microsoft Cloud App Security](../../media/defender/m365-defender-mcas-architecture.png)
+In the illustration:
+- The use of cloud apps by an organization is unmonitored and unprotected. 
+- This use falls outside the protections achieved within a managed organization. 
+
+Cloud App Security is used to discover cloud apps. This next diagram illustrates how cloud discovery works.
+
+![Architecture for Microsoft Cloud App Security](../../media/defender/m365-defender-mcas-architecture-b.png)
+
+In this illustration, there are two methods that can be used to monitor network traffic and discover cloud apps that are being used by your organization.
+- A. Cloud App Discovery integrates with Microsoft Defender for Endpoint natively. Defender for Endpoint reports cloud apps and services being accessed from IT-managed Windows 10 devices. 
+- B. For coverage on all devices connected a network, the Cloud App Security log collector is installed on firewalls and other proxies to collect data from endpoints. This data is sent it to Cloud App Security for analysis.
+
+After you discover cloud apps and analyze the behavior of how these are used by your organization, you can begin managing cloud apps that you choose. 
+
+![Architecture for Microsoft Cloud App Security](../../media/defender/m365-defender-mcas-architecture-c.png)
+
+In this illustration:
+- Some apps are sanctioned for use. This is a simple way of beginning to manage apps.
+- You can enable greater visibility and control by connecting apps with app connectors. App connectors use the APIs of app providers.
+
 
 The following table describes this illustration.
 
