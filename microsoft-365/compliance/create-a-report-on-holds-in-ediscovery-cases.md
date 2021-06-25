@@ -30,7 +30,7 @@ See the [More information](#more-information) section for a detailed description
 
 ## Admin requirements and script information
 
-- To generate a report on all eDiscovery cases in your organization, you have to be an eDiscovery Administrator in your organization. If you are an eDiscovery Manager, the report will only include information about the cases that you can access. For more information about eDiscovery permissions, see [Assign eDiscovery permissions](assign-ediscovery-permissions.md).
+- To generate a report on all eDiscovery cases in your organization, you have to be an eDiscovery Administrator in your organization. If you are an eDiscovery Manager, the report will only include information about the cases that you can access. For more information about eDiscovery permissions, see [Assign Advanced eDiscovery permissions](assign-advanced-ediscovery-permissions.md) or [Assign Core eDiscovery permissions](assign-core-ediscovery-permissions.md).
 
 - The script in this article has minimal error handling. The primary purpose is to quickly create report about the holds that are associated with the eDiscovery cases in your organization.
 

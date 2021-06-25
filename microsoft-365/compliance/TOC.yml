@@ -595,7 +595,7 @@
           - name: eDiscovery search limits
             href: limits-for-content-search.md
           - name: Assign eDiscovery permissions
-            href: assign-ediscovery-permissions.md
+            href: assign-core-ediscovery-permissions.md
           - name: Keyword queries and search conditions
             href: keyword-queries-and-search-conditions.md
           - name: Content stored in mailboxes for eDiscovery
@@ -603,7 +603,7 @@
           - name: Preview eDiscovery search results
             href: preview-ediscovery-search-results.md
           - name: Set up compliance boundaries
-            href: set-up-compliance-boundaries.md
+            href: set-up-core-ediscovery-compliance-boundaries.md
           - name: Configure search permissions filtering
             href: permissions-filtering-for-content-search.md
           - name: Differences between estimated and actual search results
@@ -765,13 +765,13 @@
             - name: CJK language support
               href: ediscovery-cjk-support.md
             - name: Assign eDiscovery permissions
-              href: assign-ediscovery-permissions.md
+              href: assign-advanced-ediscovery-permissions.md
             - name: Keyword queries and search conditions
               href: keyword-queries-and-search-conditions.md
             - name: Configure search permissions filtering
               href: permissions-filtering-for-content-search.md
             - name: Set up compliance boundaries
-              href: set-up-compliance-boundaries.md
+              href: set-up-advanced-ediscovery-compliance-boundaries.md
             - name: Content stored in mailboxes for eDiscovery
               href: what-is-stored-in-exo-mailbox.md
             - name: Decryption in eDiscovery tools

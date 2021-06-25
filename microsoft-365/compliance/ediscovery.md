@@ -56,7 +56,7 @@ The following table contains links to topics that will help you use Core eDiscov
 |**Article**|**Description**|
 |:-----|:-----|
 |[Get started with Core eDiscovery](get-started-core-ediscovery.md) |Learn how to assign eDiscovery permissions and create Core eDiscovery cases. This topic also provides an overview of the Core eDiscovery workflow.<br/> |
-|[Assign eDiscovery permissions](assign-ediscovery-permissions.md)|Learn how to assign permissions to users so they can search for content, place content locations on hold, and perform other eDiscovery-related tasks in a Core eDiscovery case.|
+|[Assign eDiscovery permissions](assign-core-ediscovery-permissions.md)|Learn how to assign permissions to users so they can search for content, place content locations on hold, and perform other eDiscovery-related tasks in a Core eDiscovery case.|
 |[Set up compliance boundaries for Core eDiscovery](set-up-compliance-boundaries.md)|Learn how to use compliance boundaries to create logical boundaries within an organization that control the content locations that an eDiscovery manager can search.|
 |[Create an eDiscovery hold](create-ediscovery-holds.md)|Learn how to create eDiscovery holds that associated with a Core eDiscovery case to preserve content relevant to the case you're investigating.|
 |[Search for content in a case](search-for-content-in-core-ediscovery.md)|Learn how to search for content that's relevant to a case. You can quickly create searches that search the content locations on hold.|
