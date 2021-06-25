@@ -26,7 +26,7 @@ GET /_api/machinelearning/models/getbytitle('{modelFileName}') HTTP/1.1
 This same method can be used for deleting a model, too.
 
 ```HTTP
-DELETE /_api/machinelearning/models/getbytitle('{modelFileName') HTTP/1.1
+DELETE /_api/machinelearning/models/getbytitle('{modelFileName}') HTTP/1.1
 ```
 
 ## URI parameters
