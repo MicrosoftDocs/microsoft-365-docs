@@ -223,4 +223,13 @@ To learn more, see [Defender for Endpoint (Windows)](../defender-endpoint/micros
 
 Application programming interfaces (APIs) like the Defender for Endpoint APIs enable applications to communicate with each other. Your organization can use the Defender for Endpoint APIs to automate workflows and integrate your security solution with another custom solution, should the need arise. 
 
-To learn more, see Defender for Endpoint APIs.
+To learn more, see [Defender for Endpoint APIs](../defender-endpoint/management-apis.md).
+
+## Next steps
+
+Now that you have an overview of Microsoft Defender for business, your next steps include:
+
+- [Setting up and configuring Microsoft Defender for business](mdb-setup-configuration.md)
+
+- [Getting started with Microsoft Defender for business](mdb-get-started.md)
+
