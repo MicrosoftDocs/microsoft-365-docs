@@ -165,7 +165,7 @@ The following table summarizes the entities and actions that are supported for i
 
 | Entity types | Supported actions |
 |:---|:---|
-| Files <p>IP addresses <p>URLs/domains<p>Certificates | Allow <p>Alert only<p>Alert and block|
+| Files <br/> IP addresses <br/> URLs/domains <br/> Certificates | Allow <br/> Alert only <br/> Alert and block|
 
 To learn more, see [Manage indicators](../defender-endpoint/manage-indicators.md).
 
