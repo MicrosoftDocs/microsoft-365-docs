@@ -200,7 +200,7 @@ When it comes to configuring your security features on your company’s devices,
 - Use the simplified experience in the Microsoft 365 Defender portal (recommended)
 - Use Microsoft Endpoint Manager (Intune)
 
-Microsoft Defender for business is designed to provide strong protection while saving you time and effort in configuring your security settings. The streamlined experience in the Microsoft 365 Defender portal makes it simple to onboard devices. In addition, default policies are included so that your company's devices are protected as soon as they are onboarded. You can keep your default settings as they are, or make changes to suit your business needs. You can also add new policies to manage devices.
+Microsoft Defender for business is designed to save you time and effort. The streamlined experience in the Microsoft 365 Defender portal includes a default policy to protect your devices. You can keep the default settings or make changes to suit your business needs. 
 
 To learn more, see [Setup and configuration](mdb-setup-configuration.md).
 
