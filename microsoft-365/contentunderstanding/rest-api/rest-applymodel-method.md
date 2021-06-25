@@ -55,7 +55,7 @@ None
 
 | Name   | Type  | Description|
 |--------|-------|------------|
-|201 Created|Success|This a customized API to support applying a model to multi document libraries. In the case of failing, 201 created could still be returned and the caller needs to inspect the response body to understand if the model has been successfully applied to the doc lib.|
+|201 Created||This a customized API to support applying a model to multi document libraries. In the case of failing, 201 created could still be returned and the caller needs to inspect the response body to understand if the model has been successfully applied to the doc lib.|
 
 ## Response Body
 | Name   | Type  | Description|
