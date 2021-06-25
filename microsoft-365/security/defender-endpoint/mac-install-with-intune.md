@@ -96,12 +96,12 @@ This profile contains a license information for Microsoft Defender for Endpoint,
     > [!div class="mx-imgBorder"]
     > ![Custom Configuration Profile creation](images/mdatp-6-systemconfigurationprofiles-1.png)
 
-1. Choose a name for the profile, e.g., "MDATP onboarding for macOS". Click **Next**.
+1. Choose a name for the profile, e.g., "MDE onboarding for macOS". Click **Next**.
 
     > [!div class="mx-imgBorder"]
     > ![Custom Configuration Profile - name](images/mdatp-6-systemconfigurationprofiles-2.png)
 
-1. Choose a name for the configuration profile name, e.g., "MDATP onboarding for macOS".
+1. Choose a name for the configuration profile name, e.g., "MDE onboarding for macOS".
 1. Select intune/WindowsDefenderATPOnboarding.xml that you extracted from the onboarding package above as configuration profile file.
 
     > [!div class="mx-imgBorder"]
@@ -167,7 +167,7 @@ This profile is needed for macOS 10.15 (Catalina) or older. It will be ignored o
 
 Download [**fulldisk.mobileconfig**](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/fulldisk.mobileconfig) from [our GitHub repository](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles).
 
-Follow the instructions for [Onboarding blob](#onboarding-blob) from above, using "MDATP Full Disk Access" as profile name, and downloaded **fulldisk.mobileconfig** as Configuration profile name.
+Follow the instructions for [Onboarding blob](#onboarding-blob) from above, using "MDE Full Disk Access" as profile name, and downloaded **fulldisk.mobileconfig** as Configuration profile name.
 
 ### Network Filter
 
@@ -175,7 +175,7 @@ As part of the Endpoint Detection and Response capabilities, Microsoft Defender 
 
 Download [**netfilter.mobileconfig**](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/netfilter.mobileconfig) from [our GitHub repository](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles).
 
-Follow the instructions for [Onboarding blob](#onboarding-blob) from above, using "MDATP Network Filter" as profile name, and downloaded **netfilter.mobileconfig** as Configuration profile name.
+Follow the instructions for [Onboarding blob](#onboarding-blob) from above, using "MDE Network Filter" as profile name, and downloaded **netfilter.mobileconfig** as Configuration profile name.
 
 ### Notifications
 
@@ -183,7 +183,7 @@ This profile is used to allow Microsoft Defender for Endpoint on macOS and Micro
 
 Download [**notif.mobileconfig**](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/notif.mobileconfig) from [our GitHub repository](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles).
 
-Follow the instructions for [Onboarding blob](#onboarding-blob) from above, using "MDATP Network Filter" as profile name, and downloaded **notif.mobileconfig** as Configuration profile name.
+Follow the instructions for [Onboarding blob](#onboarding-blob) from above, using "MDE Notifications" as profile name, and downloaded **notif.mobileconfig** as Configuration profile name.
 
 ### View Status
 
