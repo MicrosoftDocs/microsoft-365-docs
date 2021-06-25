@@ -204,23 +204,20 @@ To learn more, see [Setup and configuration](mdb-setup-configuration.md).
 
 ### Reporting
 
-The Microsoft 365 Defender portal (https://security.microsoft.com) provides easy access to information about detected threats and actions to address those threats.
+The Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) provides easy access to information about detected threats and actions to address those threats.
 
-- The Home page includes cards to show at a glance which users or devices are at risk, how many threats were detected, and what alerts/incidents were created.
-- The Incidents & alerts section lists any incidents that were created as a result of triggered alerts. Alerts and incidents are generated as threats are detected across devices.
-- The Action center lists remediation actions that were taken. For example, if a file is sent to quarantine, or a URL is blocked, each action is listed in the Action center on the History tab.
-- The Reports section includes reports that show threats detected and their status. 
+- The **Home** page includes cards to show at a glance which users or devices are at risk, how many threats were detected, and what alerts/incidents were created.
+- The **Incidents & alerts** section lists any incidents that were created as a result of triggered alerts. Alerts and incidents are generated as threats are detected across devices.
+- The **Action center** lists remediation actions that were taken. For example, if a file is sent to quarantine, or a URL is blocked, each action is listed in the Action center on the History tab.
+- The **Reports** section includes reports that show threats detected and their status. 
 
-To learn more, see Defender for Endpoint in the Microsoft 365 Defender portal, and the Getting started section in this guide.
+To learn more, see [Defender for Endpoint in the Microsoft 365 Defender portal](../defender/microsoft-365-security-center-mde.md) and [Getting started with Microsoft Defender for business](mdb-get-started.md).
 
 ## Cross-platform support
 
-Most organizations use a variety of devices and operating systems, such as computers running Windows, macOS, or Linux, and mobile devices running iOS or Android. Initially, Microsoft Defender for business supports Windows and iOS devices. However, we are planning to support additional operating systems in the future. 
+Most organizations use a variety of devices and operating systems, such as computers running Windows, macOS, or Linux, and mobile devices running iOS or Android. Initially, Microsoft Defender for business supports Windows 10 devices only; however, we are planning to support additional operating systems in the future. 
 
-To learn more, see the following resources:
-
-- Defender for Endpoint (Windows)
-- Defender for Endpoint for non-Windows platforms
+To learn more, see [Defender for Endpoint (Windows)](../defender-endpoint/microsoft-defender-endpoint.md).
 
 ## APIs
 
