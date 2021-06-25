@@ -23,11 +23,11 @@ For example, Microsoft 365 Business Premium offers advanced cyberthreat protecti
 
 You might be wondering how Microsoft 365 Business Premium compares to Microsoft Defender for business. The following table summarizes the important features and capabilities of these plans. 
 
-| Item | Microsoft Defender for business | Microsoft 365 Business Premium |
+| Item | Microsoft Defender for business | [Microsoft 365 Business Premium](../../business/microsoft-365-business-overview.md) |
 |:---|:---|:---|
 | Antispam protection | Yes (for devices) | Yes (for email content, such as messages and attachments) |
 | Antimalware protection | Yes (for devices) | Yes (for email content) |
-| Next-generation protection (antivirus and antimalware protection) | Yes <p>Initially, you can manage devices running Windows 10 in the Microsoft 365 Defender portal <p>Coming soon: support for Windows Server, macOS, Linux, iOS, and Android devices. | Yes <p> Microsoft Defender Antivirus is included in Windows 10 <p> You can manage devices and view detected threats in the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)) |
+| Next-generation protection <p> (antivirus and antimalware protection) | Yes <p>You can manage devices running Windows 10 in the Microsoft 365 Defender portal <p>Coming soon: support for Windows Server, macOS, Linux, iOS, and Android devices. | Yes <p> Microsoft Defender Antivirus is included in Windows 10 <p> You can manage Windows 10 devices and view detected threats in the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)) |
 | Attack surface reduction <br/>(attack surface reduction rules and other protection)	| Yes (attack surface reduction rules built into Windows 10, plus centrally managed capabilities) | Yes (attack surface reduction rules are built into Windows 10) |
 | Endpoint detection and response | Yes. Includes: <br/>- Behavior-based detection <br/>- Manual response actions <br/>- Live response	 | No |
 | Automated investigation and response | Yes | No |
