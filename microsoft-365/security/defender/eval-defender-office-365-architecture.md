@@ -32,15 +32,7 @@ ms.technology: m365d
 
 This article is [Step 1 of 3](eval-defender-office-365-overview.md) in the process of setting up the evaluation environment for Microsoft Defender for Office 365. For more information about this process, see the [overview article](eval-defender-office-365-overview.md).
 
-<!--
-##### Navigate
-- [**Return to the Eval Overview** 'Evaluate and pilot Microsoft 365 Defender' | Microsoft Docs](../office-365-security/defender/eval-overview.md) 
-- [Understand Defender for Office 365 architecture](#understand-the-architecture)
-- [Understand key concepts](#understand-key-concepts)
-- [Review architecture requirements](#review-architecture-requirements)
-- [SIEM integration](#siem-integration) -->
-
-Before enabling Defender for Office 365, be sure you understand the architecture and can meet the requirements. This article describes the architecture, key concepts, and the prerequisites that your Exchange Online environment must meet. 
+Before enabling Defender for Office 365, be sure you understand the architecture and can meet the requirements. This article describes the architecture, key concepts, and the prerequisites that your Exchange Online environment must meet.
 
 ## Understand the architecture
 
