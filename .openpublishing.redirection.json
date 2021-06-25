@@ -4122,8 +4122,8 @@
     },
     {
       "source_path": "microsoft-365/enterprise/office-365-video-networking-faq.md",
-      "redirect_url": "https://docs.microsoft.com/stream/migrate-from-office-365",
-      "redirect_document_id": true
+      "redirect_url": "/stream/migrate-from-office-365",
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/lti/teams-classes-lms.md",
