@@ -89,7 +89,7 @@ The following sections provide more information about your security policies in 
 
 ## View your policies
 
-1.	As a security administrator (or global administrator), go to [https://security.microsoft.com](https://security.microsoft.com) and sign in. You’re now in the Microsoft 365 Defender portal.
+1.	Go to [https://security.microsoft.com](https://security.microsoft.com) and sign in. You’re now in the Microsoft 365 Defender portal.
 
 2.	In the navigation pane, choose **Device configuration**. Policies are organized by operating system and policy type. 
 
@@ -101,7 +101,7 @@ The following sections provide more information about your security policies in 
 
 ## Define a new policy
 
-1. As a security administrator (or global administrator), go to [https://security.microsoft.com](https://security.microsoft.com) and sign in. You’re now in the Microsoft 365 Defender portal.
+1. Go to [https://security.microsoft.com](https://security.microsoft.com) and sign in. You’re now in the Microsoft 365 Defender portal.
 
 2. In the navigation pane, choose **Device configuration**. Policies are organized by operating system and policy type. 
 
@@ -130,7 +130,7 @@ The following sections provide more information about your security policies in 
 
 ## Edit an existing policy
 
-1. As a security administrator (or global administrator), go to [https://security.microsoft.com](https://security.microsoft.com) and sign in. You’re now in the Microsoft 365 Defender portal.
+1. Go to [https://security.microsoft.com](https://security.microsoft.com) and sign in. You’re now in the Microsoft 365 Defender portal.
 
 2. In the navigation pane, choose **Device configuration**. Policies are organized by operating system and policy type. 
 
@@ -163,6 +163,7 @@ Microsoft Defender for business includes predefined policies to help ensure the 
 As you define policies, you’ll notice that an order of priority is assigned. You can edit the order of priority for the policies that you define, but you cannot change the order of priority for default policies. For example, suppose that for your Windows client devices, you have three next-generation protection policies. In this case, your default policy is number 3 in priority. You can change the order of your policies that are numbered 1 and 2, but the default policy will remain number 3 in your list. 
 
 The important thing to remember about multiple policies is that devices will receive the first applied policy only. Referring to our earlier example of three next-generation policies, suppose that you have devices that are targeted by all three policies. In this case, those devices will receive policy number 1, but will not receive policies numbered 2 and 3. 
+
 
 ## Understand configuration settings for next-generation protection
 
