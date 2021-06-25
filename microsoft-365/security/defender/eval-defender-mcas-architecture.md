@@ -27,6 +27,7 @@ ms.technology: m365d
 
 
 **Applies to:**
+
 - Microsoft 365 Defender
 
 This article is [Step 1 of 3](eval-defender-mcas-overview.md) in the process of setting up the evaluation environment for Microsoft Cloud App Security alongside Microsoft 365 Defender. For more information about this process, see the [overview article](eval-defender-identity-overview.md).
@@ -45,7 +46,6 @@ coming soon . . .
 
 The following table describes this illustration.
 
-
 |Call-out  |Description  |
 |---------|---------|
 |1     | App connectors use APIs from cloud app providers, like Box, to integrate the Cloud App Security cloud with other cloud apps. App connectors extend control and protection. They also give you access to information directly from cloud apps for analysis.     |
@@ -57,7 +57,6 @@ The following table describes this illustration.
 | | |
 
 -->
-
 
 ## Understand key concepts
 
@@ -73,13 +72,12 @@ The following table identified key concepts that are important to understand whe
 |Connected Apps |Cloud App Security provides end-to-end protection for connected apps using Cloud-to-Cloud integration, API connectors, and real-time access and session controls leveraging our Conditional App Access Controls. |[Protecting connected apps](/cloud-app-security/protect-connected-apps) |
 | | | |
 
-
-
 ## Review architecture requirements
 
 ### Discovering cloud apps
 
 To discover cloud apps used in your environment, you can do one or both of the following:
+
 - Get up and running quickly with Cloud Discovery by integrating with Microsoft Defender for Endpoint. This native integration enables you to immediately start collecting data on cloud traffic across your Windows 10 devices, on and off your network.
 - To discover all cloud apps accessed by all devices connected to your network, deploy the Cloud App Security log collector on your firewalls and other proxies. This collects data from your endpoints and sends it to Cloud App Security for analysis. Cloud App Security natively integrates with some third-party proxies for even more capabilities.
 
@@ -88,8 +86,6 @@ These options are included in [Step 2. Enable the evaluation environment](eval-d
 ### Applying Azure AD Conditional Access policies to cloud apps
 
 Conditional Access App Control (the ability to apply Conditional Access policies to cloud apps) requires integration with Azure AD. This isn't a requirement for getting started with Cloud App Security. It is a step we encourage you to try out during the pilot phase — [Step 3. Pilot Microsoft Cloud App Security](eval-defender-mcas-pilot.md).
-
-
 
 ## SIEM integration
 
@@ -106,4 +102,4 @@ Step 2 of 3: [Enable the evaluation environment for Microsoft Cloud App Security
 
 Return to the overview for [Evaluate Microsoft Cloud App Security](eval-defender-mcas-overview.md)
 
-Return to the overview for [Evaluate and pilot Microsoft 365 Defender](../office-365-security/defender/eval-overview.md) 
+Return to the overview for [Evaluate and pilot Microsoft 365 Defender](../office-365-security/defender/eval-overview.md)

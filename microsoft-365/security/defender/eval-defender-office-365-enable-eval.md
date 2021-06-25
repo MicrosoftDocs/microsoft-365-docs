@@ -33,7 +33,6 @@ This article is [Step 2 of 3](eval-defender-office-365-overview.md) in the proce
 
 Use the following steps to enable the evaluation for Microsoft Defender for Office 365.
 
-
 <!--Microsoft Defender for Office 365 can be evaluated as part of a full E5 license of can be enabled as an add-on.-->
 
 ![Steps to enable Microsoft Defender for Office 365 in the Microsoft Defender evaluation environment](../../media/defender/m365-defender-office-eval-enable-steps.png)
@@ -47,8 +46,6 @@ Use the following steps to enable the evaluation for Microsoft Defender for Offi
 ## Step 1: Activate trial licenses
 
 Log on to your existing Microsoft Defender for Office 365 environment or tenant administration portal.
-
-<!--**Contact RYAN CAIRNS to confirm the login roles needed.**-->
 
 1. Navigate to the administration portal.
 2. Select Purchase Services from the quick launch.
@@ -134,10 +131,4 @@ Step 3 of 3: [Set up the pilot for Microsoft Defender for Office 365](eval-defen
 
 Return to the overview for [Evaluate Microsoft Defender for Office 365](eval-defender-office-365-overview.md)
 
-Return to the overview for [Evaluate and pilot Microsoft 365 Defender](../office-365-security/defender/eval-overview.md) 
-
-<!--
-### Navigation you may need
-
-[Create the Microsoft 365 Defender Evaluation Environment](eval-create-eval-environment.md)
--->
+Return to the overview for [Evaluate and pilot Microsoft 365 Defender](../office-365-security/defender/eval-overview.md)
