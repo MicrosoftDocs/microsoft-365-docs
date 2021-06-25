@@ -20,7 +20,7 @@ Gets or updates information about a SharePoint Syntex document understanding mod
 ## HTTP request
 
 ```HTTP
-GET /_api/machinelearning/models/getbytitle('{modelFileName') HTTP/1.1
+GET /_api/machinelearning/models/getbytitle('{modelFileName}') HTTP/1.1
 ```
 
 This same method can be used for deleting a model, too.
@@ -60,7 +60,7 @@ In this sample, the name of the Syntex document understanding model is `Contoso 
 #### Sample request
 
 ```HTTP
-GET /_api/machinelearning/models/getbytitle('{Contoso Contract') HTTP/1.1
+GET /_api/machinelearning/models/getbytitle('Contoso Contract') HTTP/1.1
 ```
 
 #### Sample response
