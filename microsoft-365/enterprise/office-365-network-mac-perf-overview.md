@@ -73,6 +73,9 @@ Test reports are linked to a location if it was added with LAN subnet informatio
 
 Measurement samples and office locations should start to appear 2-3 minutes after a test report is completed. For more information, see [Microsoft 365 network connectivity test](office-365-network-mac-perf-onboarding-tool.md).
 
+>[!NOTE]
+>When adding your office locations to Microsoft 365 network connectivity in the admin center, you can provide either IPv4 or IPv6 addresses for your LAN subnets. Egress IP addresses must use IPv4. .
+
 ## How do I use this information?
 
 **Network insights**, their related performance recommendations and network assessments are intended to help in designing network perimeters for your office locations. Each insight provides details about the performance characteristics for a specific common networking issue for each geographic location where users are accessing your tenant. **Performance recommendations** for each network insight offer specific network architecture design changes you can make to improve user experience related to Microsoft 365 network connectivity. The network assessment shows how network connectivity impacts user experience, allowing for comparison of different user location network connections.
