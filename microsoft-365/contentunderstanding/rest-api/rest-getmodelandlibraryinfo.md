@@ -26,7 +26,7 @@ GET /_api/machinelearning/publications/getbyuniqueid(‘{modelUniqueId}’) HTTP
 ## URI parameters
 
 | Name | In | Required | Type | Description |
-|--------|-------|--------|------------|
+|--------|-------|--------|------------|-----------|
 |ModelUniqueId|query|True|GUID|The unique id of the model file.|
 
 ## Request headers
@@ -35,10 +35,6 @@ GET /_api/machinelearning/publications/getbyuniqueid(‘{modelUniqueId}’) HTTP
 |--------|-------|
 |Accept|application/json;odata=verbose|
 
-
-## Request body
-
-None
 
 ## Response
 
