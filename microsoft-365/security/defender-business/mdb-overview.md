@@ -180,6 +180,7 @@ Threat analytics is a set of reports from expert Microsoft security researchers 
 - Prevalent malware
 
 Each report provides a detailed analysis of a threat and extensive guidance on how to defend against that threat. It also incorporates data from your network, indicating whether the threat is active and if you have applicable protections in place. 
+
 To learn more, see [Track and respond to emerging threats with threat analytics](../defender-endpoint/threat-analytics.md).
 
 ## Centralized management and reporting
@@ -188,7 +189,7 @@ Defender for Endpoint enables your security operations team to centrally manage 
 
 ### Role-based access control
 
-Using role-based access control (RBAC) in Microsoft 365, permissions and access are granted through roles and groups. For example, certain roles, such as security operator, can view and address threats, whereas the security administrator role can configure your company’s threat protection features. With RBAC, you have fine-grained control over who can access the Microsoft 365 Defender portal ([https://security.microsoft.com]https://security.microsoft.com)), and what they can see and do in the security center. 
+Using role-based access control (RBAC) in Microsoft 365, permissions and access are granted through roles and groups. Certain roles, such as security operator, can view and address threats, whereas the security administrator role can configure your company’s threat protection features. With RBAC, you have fine-grained control over who can access the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and what they can see and do in the security center. 
 
 To learn more, see [Manage portal access using role-based access control](../defender-endpoint/rbac.md).
 
