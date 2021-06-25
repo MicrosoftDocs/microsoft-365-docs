@@ -14,41 +14,45 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse                         
-description: "Sign up for Microsoft 365 Lighthouse by using the steps here to acquire the service plan. "
+search.appverid: MET150
+description: "For managed service providers, follow the steps in this article to sign up for Microsoft 365 Lighthouse. "
 ---
 
 # Sign up for Microsoft 365 Lighthouse
 
+> [!NOTE]
+> The features described in this article are in Preview, are subject to change, and are only available to partners who meet the requirements. If your organization does not have Microsoft 365 Lighthouse, see [Sign up for Microsoft 365 Lighthouse](sign-up-m365-lighthouse.md).
+
 ## Before you begin
 
-You must be a global administrator in the partner tenant you're signing into.
+You must be a Global Administrator in the partner tenant you're signing into.
 
 ## Steps to sign up to Microsoft 365 Lighthouse
 
-Sign up with these steps to acquire the Microsoft 365 Lighthouse service plan:
+Follow these steps to acquire the Microsoft 365 Lighthouse service plan:
 
-1. Open a browser, and go to the [Microsoft 365 admin center](https://admin.microsoft.com). 
+1. Open a browser and go to the [Microsoft 365 admin center](https://admin.microsoft.com). 
 
 1. Go to **Billing** > **Purchase Services** > **Other Services**.
 
-    If Microsoft 365 Lighthouse isn’t in the services list, select **See all other services products**.
+    If Microsoft 365 Lighthouse isn't in the services list, select **See all other services products**.
 
     If you encounter the Purchase services error page, select **View products** at the bottom of the page.
 
-1. Under the Microsoft 365 Lighthouse for Partners Public Preview, select **Details**. 
+1. Under **Microsoft 365 Lighthouse for Partners Public Preview**, select **Details**. 
 
 1. Select **Buy**.
 
     > [!NOTE]
-    > Microsoft 365 Lighthouse requires one license for the tenant. No additional per user licenses are required. 
+    > Microsoft 365 Lighthouse requires one license for the tenant. No additional per-user licenses are required. 
 
-    To verify the Microsoft 365 Lighthouse sign up was successfully added to your tenant, you can view Microsoft 365 Lighthouse under **Billing > Your Products** in the [Microsoft 365 admin center](https://admin.microsoft.com).
+    To verify that Microsoft 365 Lighthouse was successfully added to your tenant, look for Microsoft 365 Lighthouse under **Billing > Your Products** in the [Microsoft 365 admin center](https://admin.microsoft.com).
 
-1. If you aren't redirected to the Microsoft 365 Lighthouse portal, go to `https://lighthouse.microsoft.com/` in an open browser.
+1. If you aren't redirected to the Microsoft 365 Lighthouse portal, go to `https://lighthouse.microsoft.com/` in your browser.
 
 1. Select **Agree & Continue** to complete the partner agreement amendment.
 
-    After you complete sign up, it can take up to 48 hours for customer data to appear in Microsoft 365 Lighthouse.
+    After you complete the sign-up process, it can take up to 48 hours for customer data to appear in Microsoft 365 Lighthouse.
 
 ## Next steps
 
@@ -56,4 +60,5 @@ Sign up with these steps to acquire the Microsoft 365 Lighthouse service plan:
 
 ## Related content
 
-[Overview of Microsoft](overview-m365-lighthouse.md)
+[Overview of Microsoft](overview-m365-lighthouse.md)\
+[Microsoft 365 Lighthouse FAQ]() (article)
