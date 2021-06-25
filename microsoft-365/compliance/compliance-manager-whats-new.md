@@ -2,8 +2,8 @@
 title: "What's new in Microsoft Compliance Manager"
 f1.keywords:
 - NOCSH
-ms.author: chvukosw
-author: chvukosw
+ms.author: v-jgriffee
+author: jmgriffee
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -43,4 +43,4 @@ Compliance Manager is now available to US Government DoD customers, in addition 
 
 ### Active and inactive templates
 
-Each assessment page and assessment template page has an activated templates counter. This counter shows how many eligible templates you're using according to your licensing agreement. View [Template types: included and premium, active and inactive](compliance-manager-templates.md#template-types-included-and-premium-active-and-inactive) to learn more.
+Each assessment page and assessment template page has an activated templates counter. This counter shows how many eligible templates you're using according to your licensing agreement. View [Template availability and licensing](compliance-manager-templates.md#template-availability-and-licensing) to learn more.
