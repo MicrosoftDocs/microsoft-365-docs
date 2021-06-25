@@ -183,6 +183,13 @@ The following table lists your settings and options:
 | Day of week to run a scheduled scan | Select a day for your regular, weekly antivirus scans to run. |
 | Time of day to run a scheduled scan | Select a time to run your regularly scheduled antivirus scans to run. |
 | Use low performance | Turn this on to limit the device memory and resources that are used during scheduled scans. |
+| **User experience** |  |
+| Allow users to access the Windows Security app | Turn this on to enable users to open the Windows Security app on their devices. Users won’t be able to override settings that you configure in Microsoft Defender for business, but they will be able to run a quick scan if need be, or view any detected threats. |
+| **Antivirus exclusions** | In general, you should not need to define exclusions. Microsoft Defender Antivirus includes many automatic exclusions that are based on known operating system behaviors and typical management files. <br/>[Learn more about exclusions](../defender-endpoint/configure-exclusions-microsoft-defender-antivirus.md). |
+| [Process exclusions](../defender-endpoint/configure-process-opened-file-exclusions-microsoft-defender-antivirus.md) | Exclude files that are opened by specific processes from Microsoft Defender Antivirus scans. |
+| [File and extension exclusions](../defender-endpoint/configure-extension-file-exclusions-microsoft-defender-antivirus.md) | Exclude specific files or files with specific extensions from Microsoft Defender Antivirus scans. |
+| [File and folder exclusions](../defender-endpoint/configure-extension-file-exclusions-microsoft-defender-antivirus.md) | Exclude files that are in specific folders from Microsoft Defender Antivirus scans. |
+
 
 
 
