@@ -30,9 +30,11 @@ You must be a global administrator in the partner tenant you're signing into.
 
 Sign up with these steps to acquire the Microsoft 365 Lighthouse service plan:
 
-1. Open a browser, and go to the [Microsoft 365 admin center](https://admin.microsoft.com).
+1. Open a browser, and go to the [Microsoft 365 admin center](https://admin.microsoft.com). 
 
 1. Go to **Billing** > **Purchase Services** > **Other Services**.
+
+    If Microsoft 365 Lighthouse isn’t in the list, select **See all other services products**.
 
 1. Under the Microsoft 365 Lighthouse for partners public preview, select **details**. 
 
