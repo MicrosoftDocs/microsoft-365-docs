@@ -293,7 +293,7 @@ Disabling the signing policy does not completely disable DKIM. After a period of
 ## Default behavior for DKIM and Microsoft 365
 <a name="DefaultDKIMbehavior"> </a>
 
-If you do not enable DKIM, Microsoft 365 automatically creates a 1024-bit DKIM public key for your MOERA/Initial domain and the associated private key which we store internally in our datacenter. By default, Microsoft 365 uses a default signing configuration for domains that do not have a policy in place. This means that if you do not set up DKIM yourself, Microsoft 365 will use its default policy and keys it creates to enable DKIM for your domain.
+If you do not enable DKIM, Microsoft 365 automatically creates a 1024-bit DKIM public key for your Microsoft Online Email Routing Address (MOERA)/initial domain and the associated private key which we store internally in our datacenter. By default, Microsoft 365 uses a default signing configuration for domains that do not have a policy in place. This means that if you do not set up DKIM yourself, Microsoft 365 will use its default policy and keys it creates to enable DKIM for your domain.
 
 Also, if you disable DKIM signing on custom domain after enabling it, after a period of time, Microsoft 365 will automatically apply the MOERA/Initial domain policy for your custom domain.
 
