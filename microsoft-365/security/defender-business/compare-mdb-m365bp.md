@@ -19,13 +19,14 @@ f1.keywords: NOCSH
 
 As you probably already know, Microsoft offers a variety of cloud solutions and services, including several different plans for small and midsized businesses like yours. For example, [Microsoft 365 Business Premium](../../business/microsoft-365-business-overview.md) offers advanced cyberthreat protection and device management capabilities. 
 
-You might be wondering how Microsoft 365 Business Premium compares to Microsoft Defender for business. The following table summarizes the important features and capabilities of these plans. 
+You don't have to have Microsoft 365 Business Premium or any other Microsoft 365 subscription to buy and use Microsoft Defender for business. But it can be helpful to see how Microsoft 365 Business Premium compares to Microsoft Defender for business. The table in this article summarizes the important features and capabilities of these plans. 
 
 > [!NOTE]
-> The following table is intended to provide a high-level overview of threat protection features included in Microsoft Defender for business and Microsoft 365 Business Premium. This article is not intended to serve as a service description or licensing contract document. 
-> Please see the following resources for more details about what the various plans include:
+> This article is intended to provide a high-level overview of threat protection features included in Microsoft Defender for business and Microsoft 365 Business Premium. This article is not intended to serve as a service description or licensing contract document. Please see the following resources for more details about what the various plans include:
 > - [Microsoft 365 Business Premium service description](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description)
 > - [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
+
+<br/>
 
 | Feature/Capability | Microsoft Defender for business | [Microsoft 365 Business Premium](../../business/microsoft-365-business-overview.md) |
 |:---|:---|:---|
