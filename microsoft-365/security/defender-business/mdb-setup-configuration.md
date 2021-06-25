@@ -186,9 +186,9 @@ The following table lists your settings and options:
 | **User experience**   |
 | Allow users to access the Windows Security app | Turn this on to enable users to open the Windows Security app on their devices. Users won’t be able to override settings that you configure in Microsoft Defender for business, but they will be able to run a quick scan if need be, or view any detected threats. |
 | **Antivirus exclusions** | *In general, you should not need to define exclusions.* Microsoft Defender Antivirus includes many automatic exclusions that are based on known operating system behaviors and typical management files. [Learn more about exclusions](../defender-endpoint/configure-exclusions-microsoft-defender-antivirus.md). |
-| [Process exclusions](../defender-endpoint/configure-process-opened-file-exclusions-microsoft-defender-antivirus.md) | Exclude files that are opened by specific processes from Microsoft Defender Antivirus scans. |
-| [File and extension exclusions](../defender-endpoint/configure-extension-file-exclusions-microsoft-defender-antivirus.md) | Exclude specific files or files with specific extensions from Microsoft Defender Antivirus scans. |
-| [File and folder exclusions](../defender-endpoint/configure-extension-file-exclusions-microsoft-defender-antivirus.md) | Exclude files that are in specific folders from Microsoft Defender Antivirus scans. |
+| Process exclusions | Exclude files that are opened by specific processes from Microsoft Defender Antivirus scans. [Learn more about process exclusions](../defender-endpoint/configure-process-opened-file-exclusions-microsoft-defender-antivirus.md). |
+| File and extension exclusions | Exclude specific files or files with specific extensions from Microsoft Defender Antivirus scans. [Learn more about file and extension exclusions](../defender-endpoint/configure-extension-file-exclusions-microsoft-defender-antivirus.md). |
+| File and folder exclusions | Exclude files that are in specific folders from Microsoft Defender Antivirus scans. [Learn more about file and folder exclusions](../defender-endpoint/configure-extension-file-exclusions-microsoft-defender-antivirus.md). |
 
 
 
