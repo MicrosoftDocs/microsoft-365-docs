@@ -53,7 +53,7 @@ None
 
 | Name   | Type  | Description|
 |--------|-------|------------|
-|200 OK|Success|This a customized API to support removing a model from multi document libraries. In the case of failing, 200 OK could still be returned and the caller needs to inspect the response body to understand if the model has been successfully removed from the doc lib.|
+|200 OK||This a customized API to support removing a model from multi document libraries. In the case of failing, 200 OK could still be returned and the caller needs to inspect the response body to understand if the model has been successfully removed from the doc lib.|
 
 ## Response Body
 | Name   | Type  | Description|
@@ -101,7 +101,7 @@ In this sample, the ID of the Contoso Contract document understanding model is `
 
 #### Sample response
 
-In the response, TotalFailures and TotalSuccesses refer to the number of failures and successes of the model being applies to the specified libraries.
+In the response, TotalFailures and TotalSuccesses refer to the number of failures and successes of the mdoel being removed from the specified libraries.
 
 **Status code:** 200
 
