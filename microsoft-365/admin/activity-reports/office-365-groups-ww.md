@@ -64,7 +64,7 @@ You can also export the report data into an Excel .csv file by selecting the **E
 
 ## Related content
 
-[Microsoft 365 Reports in the admin center](activity-reports.md) (article)
-[Reports in the Security & Compliance Center](../../compliance/reports-in-security-and-compliance.md) (article)
+[Microsoft 365 Reports in the admin center](activity-reports.md) (article)\
+[Reports in the Security & Compliance Center](../../compliance/reports-in-security-and-compliance.md) (article)\
 [Microsoft 365 Reports in the admin center - Active Users](../../admin/activity-reports/active-users-ww.md) (article)
 
