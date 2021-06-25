@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 06/23/2021
+ms.date: 06/25/2021
 ms.prod: m365-security
 ms.technology: dforbiz
 localization_priority: Normal
@@ -69,9 +69,13 @@ You can manage your security policies and settings using one of two methods/loca
 
 When you begin to use Microsoft Defender for business, you will be asked whether you want to use Endpoint Manager or your Microsoft 365 Defender portal. **We recommend using the Microsoft 365 Defender portal and its wizard-like experience for managing your devices and security settings**. 
 
-- The security policies and settings that you configure in the Microsoft 365 Defender portal are synched to Microsoft Endpoint Manager, enabling you to use the method that you prefer. 
+Microsoft Defender for business is designed to provide strong protection while saving you time and effort in configuring your security settings. The streamlined experience in the Microsoft 365 Defender portal makes it simple to onboard devices and manage them. 
 
-- Microsoft Defender for business is designed to help you manage your company’s endpoint protection capabilities without requiring a lot of time or a security background. The Microsoft 365 Defender portal makes it easier for you secure your company without losing your focus on running your business.
+In addition, default policies are included so that your company's devices are protected as soon as they are onboarded. You can keep your default settings as they are, or make changes to suit your business needs. You can also add new policies to manage devices.
+
+> [!NOTE]
+> The procedures included in this article assume that you are using the Microsoft 365 Defender portal to manage your company’s security settings.
+
 
 ## View/edit device policies
 
