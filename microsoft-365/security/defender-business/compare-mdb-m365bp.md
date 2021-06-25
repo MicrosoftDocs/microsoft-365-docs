@@ -22,7 +22,8 @@ As you probably already know, Microsoft offers a variety of cloud solutions and 
 You might be wondering how Microsoft 365 Business Premium compares to Microsoft Defender for business. The following table summarizes the important features and capabilities of these plans. 
 
 > [!NOTE]
-> The following table is intended to provide a high-level overview of threat protection features included in Microsoft Defender for business and Microsoft 365 Business Premium. It is not intended to serve as a service description or licensing contract document. Please see the following resources for more details about what the various plans include:
+> The following table is intended to provide a high-level overview of threat protection features included in Microsoft Defender for business and Microsoft 365 Business Premium. This article is not intended to serve as a service description or licensing contract document. 
+> Please see the following resources for more details about what the various plans include:
 > - [Microsoft 365 Business Premium service description](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description)
 > - [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
 
@@ -30,12 +31,12 @@ You might be wondering how Microsoft 365 Business Premium compares to Microsoft 
 |:---|:---|:---|
 | Antispam protection | Yes (for devices) | Yes (for email content, such as messages and attachments) |
 | Antimalware protection | Yes (for devices) | Yes (for email content) |
-| [Next-generation protection](../defender-endpoint/microsoft-defender-antivirus-in-windows-10.md) <p> (antivirus and antimalware protection) | Yes. Microsoft Defender Antivirus is included in Windows 10  | Yes. Microsoft Defender Antivirus is included in Windows 10. |
-| [Attack surface reduction](../defender-endpoint/overview-attack-surface-reduction.md) <p>(attack surface reduction rules and other protection)	| Yes <p> Attack surface reduction rules built into Windows 10, plus centrally managed capabilities | Yes <p> Attack surface reduction rules are built into Windows 10 |
+| [Next-generation protection](../defender-endpoint/microsoft-defender-antivirus-in-windows-10.md) <br/> (antivirus and antimalware protection) | Yes (Microsoft Defender Antivirus is included in Windows 10)  | Yes (Microsoft Defender Antivirus is included in Windows 10) |
+| [Attack surface reduction](../defender-endpoint/overview-attack-surface-reduction.md) <br/>(attack surface reduction rules and other protection)	| Yes (Attack surface reduction rules built into Windows 10, plus centrally managed capabilities) | Yes (Attack surface reduction rules built into Windows 10) |
 | [Endpoint detection and response](../defender-endpoint/overview-endpoint-detection-response.md) | Yes. Includes: <br/>- Behavior-based detection <br/>- Manual response actions <br/>- Live response	 | No |
 | [Automated investigation and response](../defender-endpoint/automated-investigations.md) | Yes | No |
 | Threat intelligence | Yes. Includes [threat analytics](../defender-endpoint/threat-analytics.md) and [custom indicators](../defender-endpoint/manage-indicators.md) | No |
 | [Threat & vulnerability management](../defender-endpoint/tvm-dashboard-insights.md) | Yes | No |
-| Centralized management and reporting | Yes <p>You can manage devices running Windows 10 in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) | Yes <p> You can manage Windows 10 devices and view detected threats in the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)) |
+| Centralized management and reporting | Yes. You can onboard Windows 10 devices and manage them in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), or choose to manage devices in Microsoft Endpoint Manager. | Yes. You can manage Windows 10 devices in the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)). Devices must be onboarded in Microsoft Endpoint Manager. |
 | [APIs](../defender-endpoint/apis-intro.md)  | Yes | Yes |
  
