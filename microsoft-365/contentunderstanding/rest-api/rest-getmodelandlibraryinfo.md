@@ -46,7 +46,7 @@ GET /_api/machinelearning/publications/getbymodeluniqueid(('{modelUniqueId}') HT
 
 ### Get information about the contracts model and primed document library in the repository site
 
-In this sample, the ID of the Contoso Contract document understanding model is '7645e69d-21fb-4a24-a17a-9bdfa7cb63dc'.
+In this sample, the ID of the Contoso Contract document understanding model is `7645e69d-21fb-4a24-a17a-9bdfa7cb63dc`.
 
 #### Sample request
 
