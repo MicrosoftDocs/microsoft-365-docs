@@ -65,7 +65,7 @@ GET /_api/machinelearning/models/getbytitle('Contoso Contract') HTTP/1.1
 
 #### Sample response
 
-**Status code:** 204
+**Status code:** 200
 
 ```HTTP
 {
