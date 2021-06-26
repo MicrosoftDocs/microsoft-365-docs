@@ -53,7 +53,7 @@ None
 
 | Name   | Type  | Description|
 |--------|-------|------------|
-|200 OK||This is a customized API to support removing a model from multi document libraries. In the case of partial success, 200 OK could still be returned and the caller needs to inspect the response body to understand if the model has been successfully removed from the doc lib.|
+|200 OK||This is a customized API to support removing a model from multi document libraries. In the case of partial success, 200 OK could still be returned and the caller needs to inspect the response body to understand if the model has been successfully removed from a document library.|
 
 ## Response Body
 | Name   | Type  | Description|
