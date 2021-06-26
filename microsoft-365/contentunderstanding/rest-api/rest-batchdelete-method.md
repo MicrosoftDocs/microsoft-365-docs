@@ -53,19 +53,19 @@ None
 
 | Name   | Type  | Description|
 |--------|-------|------------|
-|200 OK||This a customized API to support removing a model from multi document libraries. In the case of failing, 200 OK could still be returned and the caller needs to inspect the response body to understand if the model has been successfully removed from the doc lib.|
+|200 OK||This is a customized API to support removing a model from multi document libraries. In the case of partial success, 200 OK could still be returned and the caller needs to inspect the response body to understand if the model has been successfully removed from the doc lib.|
 
 ## Response Body
 | Name   | Type  | Description|
 |--------|-------|------------|
 |TotalSuccesses|int|The total number of a model being sucessfully remvoed from a document library.|
 |TotalFailures|int|The total number of a model failing to be removed from a document library.|
-|Details|MachineLearningPublicationResult[]|The collection of MachineLearningPublicationResult each of which specififies the detailed result of removing the model from the document library.|
+|Details|MachineLearningPublicationResult[]|The collection of MachineLearningPublicationResult each of which specififies the detailed result of removing the model from a document library.|
 
 ### MachineLearningPublicationResult
 | Name   | Type  | Description|
 |--------|-------|------------|
-|StatusCode|int|The status code|
+|StatusCode|int|The status code.|
 |ErrorMessage|string|The error message which tells what's wrong when apply the model to the document library.|
 |Publication|MachineLearningPublicationEntityData|It specifies the model info and the target document library.| 
 
