@@ -58,7 +58,7 @@ None
 ## Response Body
 | Name   | Type  | Description|
 |--------|-------|------------|
-|TotalSuccesses|int|The total number of a model being sucessfully remvoed from a document library.|
+|TotalSuccesses|int|The total number of a model being sucessfully removed from a document library.|
 |TotalFailures|int|The total number of a model failing to be removed from a document library.|
 |Details|MachineLearningPublicationResult[]|The collection of MachineLearningPublicationResult each of which specififies the detailed result of removing the model from a document library.|
 
