@@ -55,7 +55,7 @@ None
 
 | Name   | Type  | Description|
 |--------|-------|------------|
-|201 Created||This a customized API to support applying a model to multi document libraries. In the case of failing, 201 created could still be returned and the caller needs to inspect the response body to understand if the model has been successfully applied to the doc lib.|
+|201 Created||This is a customized API to support applying a model to multi document libraries. In the case of partial success, 201 created could still be returned and the caller needs to inspect the response body to understand if the model has been successfully applied to the exact document library.|
 
 ## Response Body
 | Name   | Type  | Description|
@@ -67,7 +67,7 @@ None
 ### MachineLearningPublicationResult
 | Name   | Type  | Description|
 |--------|-------|------------|
-|StatusCode|int|The status code|
+|StatusCode|int|The status code.|
 |ErrorMessage|string|The error message which tells what's wrong when apply the model to the document library.|
 |Publication|MachineLearningPublicationEntityData|It specifies the model info and the target document library.| 
 
@@ -111,7 +111,7 @@ In this sample, the ID of the Contoso Contract document understanding model is `
 
 In the response, TotalFailures and TotalSuccesses refers to the number of failures and successes of the model being applies to the specified libraries.
 
-**Status code:** 200
+**Status code:** 201
 
 ```JSON
 {
@@ -125,7 +125,7 @@ In the response, TotalFailures and TotalSuccesses refers to the number of failur
 				"TargetLibraryServerRelativeUrl": "/sites/repository/contracts",
 				"ViewOption": "NewViewAsDefault"
 			},
-			"StatusCode": 200
+			"StatusCode": 201
 		}
 	],
 	"TotalFailures": 0,
