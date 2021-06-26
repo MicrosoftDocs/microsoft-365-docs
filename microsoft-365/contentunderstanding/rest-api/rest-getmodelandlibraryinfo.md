@@ -26,7 +26,7 @@ GET /_api/machinelearning/publications/getbyuniqueid(‘{modelUniqueId}’) HTTP
 ## URI parameters
 
 | Name | In | Required | Type | Description |
-|--------|-------|--------|------------|
+|--------|-------|--------|------------|-----------|
 |ModelUniqueId|query|True|GUID|The unique id of the model file.|
 
 ## Request headers
@@ -36,22 +36,11 @@ GET /_api/machinelearning/publications/getbyuniqueid(‘{modelUniqueId}’) HTTP
 |Accept|application/json;odata=verbose|
 
 
-## Request body
-
-| Name | Required | Type | Description |
-|--------|-------|--------|------------|
-|ModelUniqueId|yes|string|The unique ID of the model file.|
-|TargetSiteUrl|yes|string|The full URL of the target library site.|
-|TargetWebServerRelativeUrl|yes|string|The server relative URL of the web for the target library.|
-|TargetLibraryServerRelativeUrl|yes|string|The server relative URL of the target library.|
-|TargetLibraryRemoved|yes|int|The flag that indicates if the target library has been removed or not.|
-
 ## Response
 
 | Name   | Type  | Description|
 |--------|-------|------------|
 |200 OK| |Success|
-|201 Created| |Note that because this API supports applying model to multiple libraries, a 201 could be returned even if there's a failure applying the model to one of the libraries. <br>Check the response body to understand if the model has been successfully applied to all the specified libraries. See [Request body](rest-getmodelandlibraryinfo.md#request-body) for details.|
 
 ## Examples
 
@@ -126,7 +115,6 @@ GET /sites/TestCC/_api/machinelearning/publications/getbymodeluniqueid(‘{7645e
 		}
 	]
 }```
-```
 
 ## See also
 
