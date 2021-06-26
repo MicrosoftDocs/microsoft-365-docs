@@ -67,7 +67,7 @@ None
 ### MachineLearningPublicationResult
 | Name   | Type  | Description|
 |--------|-------|------------|
-|StatusCode|int|The status code.|
+|StatusCode|int|The HTTP status code.|
 |ErrorMessage|string|The error message which tells what's wrong when apply the model to the document library.|
 |Publication|MachineLearningPublicationEntityData|It specifies the model info and the target document library.| 
 
