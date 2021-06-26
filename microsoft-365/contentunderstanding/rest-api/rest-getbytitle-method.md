@@ -104,7 +104,7 @@ In this sample, the name of the Contoso Contract document understanding model is
 ##### Sample request
 
 ```HTTP
-DELETE /_api/machinelearning/models/getbytitle('{Contoso Contract') HTTP/1.1
+DELETE /_api/machinelearning/models/getbytitle('Contoso Contract') HTTP/1.1
 ```
 
 ## See also
