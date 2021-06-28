@@ -30,7 +30,8 @@ ms.date: 06/02/2021
 
 [Attack surface reduction rules](attack-surface-reduction.md) (ASR rules) help prevent actions that malware often abuses to compromise devices and networks.
 
-**Requirements**
+## Requirements
+
 You can set attack surface reduction rules for devices that are running any of the following editions and versions of Windows:
 
 - Windows 10 Pro, [version 1709](/windows/whats-new/whats-new-windows-10-version-1709) or later
