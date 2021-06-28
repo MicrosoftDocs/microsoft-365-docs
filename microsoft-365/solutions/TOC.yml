@@ -232,6 +232,25 @@
       - name: OneDrive Guide for enterprises
         href: /onedrive/plan-onedrive-enterprise
 
+    - name: Compliance
+      items:
+      - name: Insider risk solutions in Microsoft 365
+        href: ../compliance/insider-risk-solution-overview.md
+      - name: Auditing solutions
+        href: ../compliance/auditing-solutions-overview.md
+      - name: Microsoft 365 Advanced eDiscovery
+        href: ../compliance/overview-ediscovery-20.md
+      - name: Regulatory compliance action plans
+        items: 
+        - name: ISO - Recommended action plan
+          href: /compliance/regulatory/iso-action-plan.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+        - name: NIST - Recommended action plan
+          href: /compliance/regulatory/nist-action-plan.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+        - name: CCPA - Frequently asked questions
+          href: /compliance/regulatory/ccpa-faq.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+        - name: GDPR - Recommended action plan
+          href: /compliance/regulatory/gdpr.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+
     - name: Security
       items:
       - name: Top tasks for security teams to support working from home
@@ -248,35 +267,6 @@
         href: ../security/defender-endpoint/mcafee-to-microsoft-defender-migration.md
       - name: Switch from non-Microsoft endpoint protection to Microsoft Defender for Endpoint
         href: ../security/defender-endpoint/switch-to-microsoft-defender-migration.md
-
-    - name: Compliance
-      items:
-      - name: Insider risk solutions in Microsoft 365
-        items:
-          - name: Overview
-            href: ../compliance/insider-risk-solution-overview.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-          - name: Communication compliance
-            href: ../compliance/communication-compliance-solution-overview.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-          - name: Insider risk management
-            href: ../compliance/insider-risk-management-solution-overview.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-          - name: Information barriers
-            href: ../compliance/information-barriers-solution-overview.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-          - name: Privileged access management
-            href: ../compliance/privileged-access-management-solution-overview.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-      - name: Auditing solutions
-        href: ../compliance/auditing-solutions-overview.md
-      - name: Microsoft 365 Advanced eDiscovery
-        href: ../compliance/overview-ediscovery-20.md
-      - name: Regulatory compliance action plans
-        items: 
-        - name: ISO - Recommended action plan
-          href: /compliance/regulatory/iso-action-plan.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-        - name: NIST - Recommended action plan
-          href: /compliance/regulatory/nist-action-plan.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-        - name: CCPA - Frequently asked questions
-          href: /compliance/regulatory/ccpa-faq.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-        - name: GDPR - Recommended action plan
-          href: /compliance/regulatory/gdpr.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
 
     - name: Contoso case studies
       items:
