@@ -125,11 +125,11 @@ The Microsoft Threat Intelligence team has added threat tags to each threat repo
   - Vulnerability
   - Activity group
 - Threat tags are presented at the top of the threat analytics page, with counters for the number of available reports under each tag.
-    ![threat tags](../../media/threat-analytics/ta_threattags_mtp.png)
+    ![threat tags](../../media/threat-analytics/ta-threattags-mtp.png)
 - The list can also be sorted by threat tags:
-    ![lists](../../media/threat-analytics//ta_taglist_mtp.png)
+    ![lists](../../media/threat-analytics//ta-taglist-mtp.png)
 - Filters are available per threat tag and report type:
-    ![filters](../../media/threat-analytics/ta_threattag_filters_mtp.png)
+    ![filters](../../media/threat-analytics/ta-threattag-filters-mtp.png)
 
 ### Analyst report: Get expert insight from Microsoft security researchers
 In the **Analyst report** section, read through the detailed expert write-up. Most reports provide detailed descriptions of attack chains, including tactics and techniques mapped to the MITRE ATT&CK framework, exhaustive lists of recommendations, and powerful [threat hunting](advanced-hunting-overview.md) guidance.
