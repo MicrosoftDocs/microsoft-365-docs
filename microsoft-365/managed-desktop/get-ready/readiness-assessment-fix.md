@@ -69,7 +69,7 @@ Microsoft Managed Desktop requires that IT administrators install Intune Company
 
 **Not ready**
 
-You do not have Company Portal Installed for your users. Purchase Company Portal and force a sync between Intune and Microsoft Store for Business. For more information, see [Install Intune Company Portal on devices](../get-started/company-portal.md).
+You do not have Company Portal installed for your users. Purchase Company Portal and force a sync between Intune and Microsoft Store for Business. For more information, see [Install Intune Company Portal on devices](../get-started/company-portal.md).
 
 
 ### Conditional access policies
