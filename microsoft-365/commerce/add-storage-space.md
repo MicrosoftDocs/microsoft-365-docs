@@ -82,8 +82,8 @@ Office 365 Extra File Storage is available for the following subscriptions:
 - Office 365 Enterprise E3
 - Office 365 Enterprise E4
 - Office 365 Enterprise E5
-- Office 365 A3(faculty)
-- Office 365 A5(faculty)
+- Office 365 A3 (faculty)
+- Office 365 A5 (faculty)
 - Office for the web with SharePoint Plan 1
 - Office for the web with SharePoint Plan 2
 - SharePoint Online Plan 1
