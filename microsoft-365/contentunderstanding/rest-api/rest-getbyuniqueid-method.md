@@ -102,7 +102,7 @@ In this sample, the ID of the Contoso Contract document understanding model is `
 #### Sample request
 
 ```HTTP
-DELETE /_api/machinelearning/models/getbyuniqueid(‘{7645e69d-21fb-4a24-a17a-9bdfa7cb63dc}') HTTP/1.1
+DELETE /_api/machinelearning/models/getbyuniqueid('7645e69d-21fb-4a24-a17a-9bdfa7cb63dc') HTTP/1.1
 ```
 
 ## See also
