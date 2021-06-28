@@ -84,6 +84,7 @@ Use the following table to help you identify the differences in behavior for the
 |Restrict by location|No |Yes |
 |Conditions: Trainable classifiers|Yes |No |
 |Conditions: Sharing options and additional options for email|No |Yes |
+|Conditions: Exceptions|No |Yes (email only) |
 |Recommendations, policy tooltip, and user overrides|Yes |No |
 |Simulation mode|No |Yes |
 |Exchange attachments checked for conditions|No | Yes|
@@ -292,7 +293,17 @@ Finally, you can use simulation mode to provide an approximation of the time nee
     - Attachment is password protected
     - Any email attachment's content could not be scanned
     - Any email attachment's content didn't complete scanning
-
+    - Header matches patterns
+    - Subject matches patterns
+    - Recipient address contains words
+    - Recipient address matches patterns
+    - Sender address matches patterns
+    - Sender domain is
+    - Recipient is a member of
+    - Sender is
+    
+    For each of these conditions, you can then specify exceptions.
+    
 8. Depending on your previous choices, you'll now have an opportunity to create new rules by using conditions and exceptions.
     
     The configuration options for sensitive information types are the same as those you select for auto-labeling for Office apps. If you need more information, see [Configuring sensitive info types for a label](#configuring-sensitive-info-types-for-a-label).
