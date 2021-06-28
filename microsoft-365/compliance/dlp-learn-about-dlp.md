@@ -116,7 +116,9 @@ While in test mode, monitor the outcomes of the policy and fine-tune it so that 
 
 #### Enable the control and tune your policies
 
-Once the policy meets all your objectives, turn it on. Continue to monitor the outcomes of the policy application and tune as needed. In general, policies take effect about an hour after being turned on. <!--See, LINK TO topic for SLAs for location specific  details-- >
+Once the policy meets all your objectives, turn it on. Continue to monitor the outcomes of the policy application and tune as needed. In general, policies take effect about an hour after being turned on. 
+
+<!--See, LINK TO topic for SLAs for location specific  details-->
 
 ## DLP policy configuration overview
 
