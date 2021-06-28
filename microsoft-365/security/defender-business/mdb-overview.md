@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 06/23/2021
+ms.date: 06/28/2021
 ms.prod: m365-security
 ms.technology: dforbiz
 localization_priority: Normal
@@ -35,10 +35,9 @@ Microsoft Defender for business is a security solution designed to help protect 
 
 Threat & vulnerability management (TVM) provides you with actionable information that can help mitigate threats and vulnerabilities in your environment. TVM includes a dashboard that highlights potential threats and features to configure. 
 
-SCREENSHOT NEEDED
-
 Security recommendations are provided to help you set up Microsoft Defender for business correctly. Potential security issues are called to your attention so you can address them right away. 
-To learn more, see Threat and vulnerability management.
+
+To learn more, see [Threat and vulnerability management](../defender-endpoint/next-gen-threat-and-vuln-mgt.md).
 
 ## Next-generation protection
 
@@ -54,12 +53,12 @@ To learn more, see Next-generation protection in Windows.
 
 Your attack surfaces are all the places and ways that your company is vulnerable to a cyberattack. You can reduce your attack surfaces by protecting your devices and applications that your organization uses. Your attack surface reduction capabilities are described in the following sections:
 
-- Ransomware mitigation
-- Attack surface reduction rules
-- Application control
-- Web protection
-- Network protection
-- Network firewall
+- [Ransomware mitigation](#ransomware-mitigation)
+- [Attack surface reduction rules](#attack-surface-reduction-rules)
+- [Application control](#application-control)
+- [Web protection](#web-protection)
+- [Network protection](#network-protection)
+- [Network firewall](#network-firewall)
 
 ### Ransomware mitigation
 
