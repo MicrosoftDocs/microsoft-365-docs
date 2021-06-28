@@ -47,6 +47,8 @@ You can assess how an attack surface reduction rule might affect your network by
 
 In the recommendation details pane, check for user impact to determine what percentage of your devices can accept a new policy enabling the rule in blocking mode without adversely affecting productivity.
 
+See [Requirements](enable-attack-surface-reduction.md#requirements) in the "Enable attack surface reduction rules" article for information about supported operating systems.
+
 ## Audit mode for evaluation
 
 Use [audit mode](audit-windows-defender.md) to evaluate how attack surface reduction rules would affect your organization if enabled. Run all rules in audit mode first so you can understand how they affect your line-of-business applications. Many line-of-business applications are written with limited security concerns, and they might perform tasks in ways that seem similar to malware. By monitoring audit data and [adding exclusions](enable-attack-surface-reduction.md#exclude-files-and-folders-from-asr-rules) for necessary applications, you can deploy attack surface reduction rules without reducing productivity.
@@ -291,9 +293,11 @@ GUID: `BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550`
 
 ### Block executable files from running unless they meet a prevalence, age, or trusted list criterion
 
-This rule blocks the following file types from launching unless they meet prevalence or age criteria, or they're in a trusted list or an exclusion list:
+This rule blocks executable files, such as .exe, .dll, or .scr, from launching unless any of the following conditions are met:
 
-- Executable files (such as .exe, .dll, or .scr)
+- Prevalence: The executable files are found on more than 1,000 endpoints
+- Age: The executable files were released more than 24 hours ago
+- Location: The executable files are included in a trusted list or an exclusion list
 
 Launching untrusted or unknown executable files can be risky, as it might not be initially clear if the files are malicious.
 

@@ -137,6 +137,8 @@ Not all apps support authentication contexts. If a user with an unsupported app 
 
 - Office for the web, which includes Outlook for the web
 
+- Microsoft Teams for Windows and macOS (excludes Teams web app)
+
 - Microsoft Planner
 
 - Microsoft 365 Apps for Word, Excel, and PowerPoint; minimum versions:
@@ -416,9 +418,7 @@ It wouldn't be a security concern if the document has a lower priority sensitivi
 
 To search the audit log for this event, look for **Detected document sensitivity mismatch** from the **File and page activities** category.
 
-The automatically generated email has the subject **Incompatible sensitivity label detected** and the email message explains the labeling mismatch with a link to the uploaded document and site. It also contains a documentation link that explains how users can change the sensitivity label. Currently, these automated emails cannot be disabled or customized.
-
-To prevent this automatically generated email, use the following PowerShell command from [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite):
+The automatically generated email has the subject **Incompatible sensitivity label detected** and the email message explains the labeling mismatch with a link to the uploaded document and site. It also contains a documentation link that explains how users can change the sensitivity label. These automated emails cannot be customized but you can prevent them from being sent when you use the following PowerShell command from [Set-SPOTenant](/powershell/module/sharepoint-online/set-spotenant):
 
 ```PowerShell
 Set-SPOTenant -BlockSendLabelMismatchEmail $True

@@ -1,5 +1,5 @@
 ---
-title: User submissions policy
+title: User reported message settings
 f1.keywords: 
   - NOCSH
 ms.author: siosulli
@@ -20,7 +20,7 @@ ms.technology: mdo
 ms.prod: m365-security
 ---
 
-# User submissions policy
+# User reported message settings
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -29,16 +29,16 @@ ms.prod: m365-security
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-In Microsoft 365 organizations with Exchange Online mailboxes, you can specify a mailbox to receive messages that users report as malicious or not malicious. When users submit messages using the various reporting options, you can use this mailbox to intercept messages (send to the custom mailbox only) or receive copies of messages (send to the custom mailbox and Microsoft). This feature works with the following message reporting options:
+In Microsoft 365 organizations with Exchange Online mailboxes, you can specify a mailbox to receive messages that users report as malicious or not malicious. When users report messages using the various reporting options, you can use this mailbox to intercept messages (send to the custom mailbox only) or receive copies of messages (send to the custom mailbox and Microsoft). This feature works with the following message reporting options:
 
 - [The Report Message add-in](enable-the-report-message-add-in.md)
 - [The Report Phishing add-in](enable-the-report-phish-add-in.md)
 - [Third-party reporting tools](#third-party-reporting-tools)
 
-Delivering user reported messages to a custom mailbox instead of directly to Microsoft allows your admins to selectively and manually report messages to Microsoft using [Admin submission](admin-submission.md).
+Delivering user reported messages to a custom mailbox instead of directly to Microsoft allows your admins to selectively and manually report messages to Microsoft using [Admin submission](admin-submission.md). These settings were formerly known as the User submissions policy.
 
   > [!NOTE]
-  > If reporting has been [disabled in Outlook on the web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web), enabling user submissions here will override that setting and enable users to report messages in Outlook on the web again.
+  > If reporting has been [disabled in Outlook on the web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web), enabling user reported messages here will override that setting and enable users to report messages in Outlook on the web again.
 
 ## Custom mailbox prerequisites
 
@@ -64,7 +64,7 @@ After you've verified that your mailbox meets all applicable prerequisites, you 
 
 - To modify the configuration for User submissions, you need to be a member of one of the following role groups:
 
-  - **Organization Management** or **Security Administrator** in the [Microsoft 365 Defender portal](permissions-in-the-security-and-compliance-center.md).
+  - **Organization Management** or **Security Administrator** in the [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).
   - **Organization Management** in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups).
 
 - You need access to Exchange Online PowerShell. If the account that you're trying to use doesn't have access to Exchange Online PowerShell, you'll receive an error that looks like this when specify the submissions mailbox:
@@ -130,24 +130,19 @@ The message formatting requirements are described in the next section. The forma
 
 To correctly identify the original attached messages, messages that are sent to the custom mailbox require specific formatting. If the messages don't use this format, the original attached messages are always identified as phishing submissions.
 
-For correct identification of the original attached messages, messages that are sent to the custom mailbox need to use the following syntax for the Subject (Envelope Title):
+If you want to specify the reported reason for the original attached messages, messages that are sent to the custom mailbox (don't modify the attachment) need to start with one of the following prefixes in the Subject (Envelope Title):
 
-`SafetyAPIAction|NetworkMessageId|SenderIp|FromAddress|(Message Subject)`
+- 1| or Junk:
+- 2| or Not junk
+- 3| or Phishing
 
-where SafetyAPIAction is one of the following integer values:
+For example:
 
-- 1: Junk
-- 2: Not junk
-- 3: Phishing
+`3|This part is ignored by the system` <br>
+`Not Junk:This part of the subject is ignored as well`
 
-This example uses the following values:
+- Both of these messages are being reported as Not Junk based on Subject.
+- The rest is ignored.
 
-- The message is being reported as phishing.
-- The Network Message ID is 49871234-6dc6-43e8-abcd-08d797f20abe.
-- The Sender IP is 167.220.232.101.
-- The From address is test@contoso.com.
-- The message's subject line is "test phishing submission"
-
-`3|49871234-6dc6-43e8-abcd-08d797f20abe|167.220.232.101|test@contoso.com|(test phishing submission)`
 
 Messages that don't follow this format will not display properly in the Submissions portal.

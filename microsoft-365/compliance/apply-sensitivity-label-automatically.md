@@ -69,7 +69,7 @@ There are two different methods for automatically applying a sensitivity label t
     - If you have Exchange mail flow rules or data loss prevention (DLP) policies that apply IRM encryption: When content is identified by these rules or policies and an auto-labeling policy, the label is applied. If that label applies encryption, the IRM settings from the Exchange mail flow rules or DLP policies are ignored. However, if that label doesn't apply encryption, the IRM settings from the mail flow rules or DLP policies are applied in addition to the label.
     - Email that has IRM encryption with no label will be replaced by a label with any encryption settings when there is a match by using auto-labeling.
     - Incoming email is labeled when there is a match with your auto-labeling conditions:
-        - Rolling out: If the label is configured for [encryption](encryption-sensitivity-labels.md), that encryption isn't applied.
+        - If the label is configured for [encryption](encryption-sensitivity-labels.md), that encryption isn't applied.
         - If the label is configured to apply [dynamic markings](sensitivity-labels-office-apps.md#dynamic-markings-with-variables), be aware that this can result in the names of people outside your organization.
     - When the label applies encryption, the [Rights Management issuer and Rights Management owner](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) is the person who sends the email. There currently isn't a way to set a Rights Manager owner for all incoming email messages that are automatically encrypted.
     
@@ -84,6 +84,7 @@ Use the following table to help you identify the differences in behavior for the
 |Restrict by location|No |Yes |
 |Conditions: Trainable classifiers|Yes |No |
 |Conditions: Sharing options and additional options for email|No |Yes |
+|Conditions: Exceptions|No |Yes (email only) |
 |Recommendations, policy tooltip, and user overrides|Yes |No |
 |Simulation mode|No |Yes |
 |Exchange attachments checked for conditions|No | Yes|
@@ -134,6 +135,9 @@ Similarly to when you configure DLP policies, you can then refine your condition
 You can learn more about these configuration options from the DLP documentation: [Tuning rules to make them easier or harder to match](data-loss-prevention-policies.md#tuning-rules-to-make-them-easier-or-harder-to-match).
 
 Also similarly to DLP policy configuration, you can choose whether a condition must detect all sensitive information types, or just one of them. And to make your conditions more flexible or complex, you can add [groups and use logical operators between the groups](data-loss-prevention-policies.md#grouping-and-logical-operators).
+
+> [!NOTE]
+> Auto-labelling policies based on custom sensitive information types only apply to newly created or modified content in OneDrive and SharePoint. 
 
 ### Configuring trainable classifiers for a label
 
@@ -210,7 +214,7 @@ Make sure you're aware of the prerequisites before you configure auto-labeling p
     - At the time the auto-labeling policy runs, the file mustn't be open by another process or user. A file that's checked out for editing falls into this category.
 
 - If you plan to use [custom sensitive information types](sensitive-information-type-learn-about.md) rather than the built-in sensitivity types: 
-    - Custom sensitivity information types are evaluated for content that is added to SharePoint or OneDrive after the custom sensitivity information types are saved. 
+    - Custom sensitivity information types apply only to content that is added or modified in SharePoint or OneDrive after the custom sensitivity information types are enforced. 
     - To test new custom sensitive information types, create them before you create your auto-labeling policy, and then create new documents with sample data for testing.
 
 - One or more sensitivity labels [created and published](create-sensitivity-labels.md) (to at least one user) that you can select for your auto-labeling policies. For these labels:
@@ -289,7 +293,17 @@ Finally, you can use simulation mode to provide an approximation of the time nee
     - Attachment is password protected
     - Any email attachment's content could not be scanned
     - Any email attachment's content didn't complete scanning
-
+    - Header matches patterns
+    - Subject matches patterns
+    - Recipient address contains words
+    - Recipient address matches patterns
+    - Sender address matches patterns
+    - Sender domain is
+    - Recipient is a member of
+    - Sender is
+    
+    For each of these conditions, you can then specify exceptions.
+    
 8. Depending on your previous choices, you'll now have an opportunity to create new rules by using conditions and exceptions.
     
     The configuration options for sensitive information types are the same as those you select for auto-labeling for Office apps. If you need more information, see [Configuring sensitive info types for a label](#configuring-sensitive-info-types-for-a-label).

@@ -40,7 +40,7 @@ None
 
 |Name    |Type   |Description |
 |--------|-------|------------|
-|_metadata|string |Set the object meta on the SPO. Always use the value: {"type": "Microsoft.Office.Server.ContentCenter.SPMachineLearningModelEntityData"}. |
+|_metadata|string |Set the object meta on the SPO. Always use the value: {"type": "Microsoft.Office.Server.ContentCenter.SPMachineLearningWorkItemEntityData"}. |
 |TargetSiteId|guid|The id of the site where the file to classify is located.|
 |TargetWebId|guid|The id of the web where the file to classify is located.|
 |TargetUniqueId|guid|The id of the file to classify.|
@@ -60,7 +60,7 @@ None
 ```
 {
 	"__metadata": {
-		"type": "Microsoft.Office.Server.ContentCenter.SPMachineLearningModelEntityData"
+		"type": "Microsoft.Office.Server.ContentCenter.SPMachineLearningWorkItemEntityData"
 	},
 	"TargetSiteId": "f686e63b-aba7-48e5-97c7-68c4c1df292f",
 	"TargetWebId": "66d6b64d-6f88-4dd9-b3db-47e6f00c53e8",
