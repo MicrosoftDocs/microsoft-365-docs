@@ -56,13 +56,13 @@ In the illustration:
 
 Microsoft 365 Defender is made up of these security technologies, operating in tandem:
 
-|Component  |Acronym  |Description  |Reference material  |
+|Component  |Description  |Reference material  |
 |---------|---------|---------|---------|
-|Microsoft Defender for Identity     |  MDI       |    Microsoft Defender for Identity uses Active Directory signals to identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions directed at your organization.     |     [What is Microsoft Defender for Identity? | Microsoft Docs](/defender-for-identity/what-is)   |
-|Exchange Online Protection     |    EOP     |   Exchange Online Protection is the native cloud-based SMTP relay and filtering service that helps protect your organization against spam and malware.      |   [Exchange Online Protection (EOP) overview - Office 365 | Microsoft Docs ](../office-365-security/overview.md)     |
-|Microsoft Defender for Office 365     |   MDO      |   Microsoft Defender for Office 365 safeguards your organization against malicious threats posed by email messages, links (URLs) and collaboration tools.      |    [Microsoft Defender for Office 365 - Office 365 | Microsoft Docs ](../office-365-security/overview.md)    |
-|Microsoft Defender for Endpoint     |    MDE     |   Microsoft Defender for Endpoint is a unified platform for device protection, post-breach detection, automated investigation, and recommended response.      |   [Microsoft Defender for Endpoint - Windows security | Microsoft Docs ](../defender-endpoint/microsoft-defender-endpoint.md)    |
-|Microsoft Cloud App Security     |    MCAS     |  Microsoft Cloud App security is a comprehensive cross-SaaS solution bringing deep visibility, strong data controls, and enhanced threat protection to your cloud apps.       |    [What is Cloud App Security? | Microsoft Docs ](/cloud-app-security/what-is-cloud-app-security)    |
+|Microsoft Defender for Identity     |      Microsoft Defender for Identity uses Active Directory signals to identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions directed at your organization.     |     [What is Microsoft Defender for Identity?](/defender-for-identity/what-is)   |
+|Exchange Online Protection     |      Exchange Online Protection is the native cloud-based SMTP relay and filtering service that helps protect your organization against spam and malware.      |   [Exchange Online Protection (EOP) overview - Office 365](../office-365-security/overview.md)     |
+|Microsoft Defender for Office 365     |     Microsoft Defender for Office 365 safeguards your organization against malicious threats posed by email messages, links (URLs) and collaboration tools.      |    [Microsoft Defender for Office 365 - Office 365](../office-365-security/overview.md)    |
+|Microsoft Defender for Endpoint     |     Microsoft Defender for Endpoint is a unified platform for device protection, post-breach detection, automated investigation, and recommended response.      |   [Microsoft Defender for Endpoint - Windows security](../defender-endpoint/microsoft-defender-endpoint.md)    |
+|Microsoft Cloud App Security     |      Microsoft Cloud App security is a comprehensive cross-SaaS solution bringing deep visibility, strong data controls, and enhanced threat protection to your cloud apps.       |    [What is Cloud App Security?](/cloud-app-security/what-is-cloud-app-security)    |
 
 ## Microsoft 365 Defender architecture
 

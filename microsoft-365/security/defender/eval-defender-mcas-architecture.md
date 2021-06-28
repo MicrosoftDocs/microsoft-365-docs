@@ -54,7 +54,7 @@ The first step to managing the use of cloud apps is to discover which cloud apps
 
 In this illustration, there are two methods that can be used to monitor network traffic and discover cloud apps that are being used by your organization.
 - A. Cloud App Discovery integrates with Microsoft Defender for Endpoint natively. Defender for Endpoint reports cloud apps and services being accessed from IT-managed Windows 10 devices. 
-- B. For coverage on all devices connected a network, the Cloud App Security log collector is installed on firewalls and other proxies to collect data from endpoints. This data is sent to Cloud App Security for analysis.
+- B. For coverage on all devices connected to a network, the Cloud App Security log collector is installed on firewalls and other proxies to collect data from endpoints. This data is sent to Cloud App Security for analysis.
 
 #### Managing cloud apps
 
