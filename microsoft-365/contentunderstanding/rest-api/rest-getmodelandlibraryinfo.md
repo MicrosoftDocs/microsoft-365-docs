@@ -114,7 +114,8 @@ GET /sites/TestCC/_api/machinelearning/publications/getbymodeluniqueid('7645e69d
 			"ViewOption": "NewViewAsDefault"
 		}
 	]
-}```
+}
+```
 
 ## See also
 
