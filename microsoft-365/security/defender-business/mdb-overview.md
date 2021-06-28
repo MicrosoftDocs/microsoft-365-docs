@@ -47,7 +47,7 @@ Next-generation protection includes antimalware and antivirus protection—on yo
 - Cloud-delivered protection, which includes near-instant detection and blocking of new and emerging threats. As threats are detected, they’re sent to the cloud for immediate analysis. If they’re determined to be malicious, they’re logged as such, and are blocked immediately. Detection, blocking, analysis, and determination happens almost instantly. Other users/customers (in addition to your organization) benefit from these capabilities, too, as the newly identified threats are now blocked on their devices.
 - Dedicated protection and product updates, including updates related to Microsoft Defender Antivirus. Microsoft works continuously to deliver updates that include antimalware, antivirus, and security intelligence updates. 
 
-To learn more, see Next-generation protection in Windows.
+To learn more, see [Next-generation protection in Windows](../defender-endpoint/microsoft-defender-antivirus-in-windows-10.md).
 
 ## Attack surface reduction
 
@@ -64,7 +64,7 @@ Your attack surfaces are all the places and ways that your company is vulnerable
 
 With controlled folder access, you get ransomware mitigation. Controlled folder access allows only trusted apps to access protected folders on your devices, such as computers. Apps are added to the trusted apps list based on their prevalence and reputation. Your security operations team can add or remove apps from the trusted apps list, too. 
 
-To learn more, see Protect important folders with controlled folder access.
+To learn more, see [Protect important folders with controlled folder access](../defender-endpoint/controlled-folders.md).
 
 ### Attack surface reduction rules
 
@@ -76,27 +76,28 @@ Attack surface reduction rules target certain software behaviors that are consid
 
 Legitimate business applications can exhibit such software behaviors; however, these behaviors are often considered risky because they are commonly abused by attackers through malware. Attack surface reduction rules can constrain risky behaviors and help keep your organization safe. 
 
-To learn more, see Use attack surface reduction rules to prevent malware infection.
+To learn more, see [Use attack surface reduction rules to prevent malware infection](../defender-endpoint/attack-surface-reduction.md).
 
 ### Application control
 
-With application control capabilities, you can configure your organization’s devices to run only authorized apps, drivers, and signed code. Formerly referred to as device control or device guard, application control requires applications to earn trust by meeting certain requirements. 
+With application control capabilities, you can configure your organization’s devices to run only authorized apps, drivers, and signed code. Formerly referred to as device control or device guard, application control requires applications to earn trust by meeting certain requirements.
 
-To learn more, see Windows Defender Application Control.
+To learn more, see [Windows Defender Application Control](/windows/security/threat-protection/windows-defender-application-control/wdac-and-applocker-overview).
 
 ### Web protection
 
 With web protection, you can protect your organization’s devices from web threats and unwanted content. Web protection includes web threat protection and web content filtering.
 
-- Web threat protection prevents access to phishing sites, malware vectors, exploit sites, untrusted or low-reputation sites, and sites that you explicitly block.
-- Web content filtering prevents access to certain sites based on their category. Categories can include adult content, leisure sites, legal liability sites, and more.
+- [Web threat protection](../defender-endpoint/web-threat-protection.md) prevents access to phishing sites, malware vectors, exploit sites, untrusted or low-reputation sites, and sites that you explicitly block.
+- [Web content filtering](../defender-endpoint/web-content-filtering.md) prevents access to certain sites based on their category. Categories can include adult content, leisure sites, legal liability sites, and more.
 
-To learn more, see web protection.
+To learn more, see [web protection](../defender-endpoint/web-protection-overview.md).
 
 ### Network protection
 
-With network protection, you can prevent your organization from accessing dangerous domains that might host phishing scams, exploits, and other malicious content on the Internet. 
-To learn more, see Protect your network.
+With network protection, you can prevent your organization from accessing dangerous domains that might host phishing scams, exploits, and other malicious content on the Internet.
+
+To learn more, see [Protect your network](../defender-endpoint/network-protection.md).
 
 ### Network firewall
 
@@ -106,34 +107,34 @@ With network firewall protection, you can set rules that determine which network
 - Safeguard sensitive data and intellectual property
 - Extend your security investment
 
-To learn more, see Windows Defender Firewall with advanced security.
+To learn more, see [Windows Defender Firewall with advanced security](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security).
 
 ## Endpoint detection and response
 
 Endpoint detection and response (EDR) receives security signals across your network, devices, and kernel behavior. As threats are detected, alerts are created. Multiple alerts of the same type are aggregated into incidents, which makes it easier for your security operations team to investigate and respond. Microsoft Defender for business includes these EDR capabilities:
 
-- Behavioral-based detection
-- Manual response actions
-- Live response
+- [Behavioral-based detection](#behavioral-based-detection)
+- [Manual response actions](#manual-response-actions)
+- [Live response](#live-response)
 
 ### Behavioral-based detection
 
 Behavioral blocking and containment capabilities can help identify and stop threats, based on their behaviors and process trees even when a threat has started execution. Whenever suspicious behavior is detected, the threat is contained, alerts are created, and threats are stopped in their tracks. 
 
-To learn more, see Behavioral blocking and containment.
+To learn more, see [Behavioral blocking and containment](../defender-endpoint/behavioral-blocking-containment.md).
 
 ### Manual response actions
 
-Microsoft Defender for business includes certain response actions that can be taken when a device is detected as potentially compromised or having suspicious content. You can also run response actions on files that are detected as threats.
+Microsoft Defender for business includes certain [response actions](../defender-endpoint/respond-machine-alerts.md) that can be taken when a device is detected as potentially compromised or having suspicious content. You can also run [response actions on files](../defender-endpoint/respond-file-alerts.md) that are detected as threats.
 
 The following table the manual response actions that are available in your plan.
 
-| File/Device | Action | Description |
+| File/Device | Response action | Description |
 |:---|:---|:---|
 | Device | Run antivirus scan | Starts an antivirus scan. If any threats are detected on the device, they’re often addressed during the scan. |
 | Device | Isolate device | Disconnects a device from your organization’s network while retaining connectivity to Defender for Endpoint. This action enables you to monitor the device and take further action if needed. |
 | File | Stop and quarantine | Stops processes from running and quarantines associated files. |
-| File |Add an indicator to block or allow a file | Block indicators prevent portable executable files from being read, written, or executed on devices. <p> Allow indicators prevent files from being blocked or remediated.  |
+| File | Add an indicator to block or allow a file | *Block* indicators prevent portable executable files from being read, written, or executed on devices. <p> *Allow* indicators prevent files from being blocked or remediated.  |
 
 To learn more, see the following articles: 
 
