@@ -40,7 +40,7 @@ None
 | Name | Required | Type | Description |
 |--------|-------|--------|------------|
 |__metadata|yes|string|Set the object meta on the SPO. Always use the value: {"type": "Microsoft.Office.Server.ContentCenter.SPMachineLearningPublicationsEntityData"}.|
-|Publications|yes|MachineLearningPublicationEntityData[]|The collection of MachineLearningPublicationEntityData each of which specifices the model and target document library.|
+|Publications|yes|MachineLearningPublicationEntityData[]|The collection of MachineLearningPublicationEntityData each of which specifies the model and target document library.|
 
 ### MachineLearningPublicationEntityData
 | Name | Required | Type | Description |
@@ -60,9 +60,9 @@ None
 ## Response Body
 | Name   | Type  | Description|
 |--------|-------|------------|
-|TotalSuccesses|int|The total number of a model being sucessfully applied to a document library.|
+|TotalSuccesses|int|The total number of a model being successfully applied to a document library.|
 |TotalFailures|int|The total number of a model failing to be applied to a document library.|
-|Details|MachineLearningPublicationResult[]|The collection of MachineLearningPublicationResult each of which specififies the detailed result of applying the model to the document library.|
+|Details|MachineLearningPublicationResult[]|The collection of MachineLearningPublicationResult each of which specifies the detailed result of applying the model to the document library.|
 
 ### MachineLearningPublicationResult
 | Name   | Type  | Description|
