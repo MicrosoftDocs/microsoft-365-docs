@@ -1,5 +1,5 @@
 ---
-title: "Use Data loss prevention policies for non-Microsoft cloud apps (preview)"
+title: "Use Data loss prevention policies for non-Microsoft cloud apps"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -37,6 +37,12 @@ Before you start using DLP policies to non-Microsoft cloud apps, confirm your [M
 - Microsoft 365 E5
 - Microsoft 365 E5 Compliance
 - Microsoft 365 E5 Security
+
+### Permissions
+The user who creates the DLP policy should be:
+- Global administrator
+- Compliance administrator
+- Compliance data administrator
 
 ### Prepare your Cloud App Security environment
 
@@ -76,7 +82,7 @@ When you create a rule in the DLP policy, you can select an action for non-Micro
 
 ![Restrict third-party apps](../media/4-dlp-non-microsoft-cloud-app-restrict-third-party-apps.png)
 
->[NOTE]
+>[!NOTE]
 >DLP policies applied to non-Microsoft apps use Microsoft Cloud App Security. When the DLP policy for a non-Microsoft app is created, the same policy will be automatically created in Microsoft Cloud App Security.
 
 For information about creating and configuring DLP policies, see [Create test and tune a DLP policy](./create-test-tune-dlp-policy.md?view=o365-worldwide).
