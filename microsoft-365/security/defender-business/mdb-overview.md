@@ -155,7 +155,7 @@ To learn more, see [Overview of automated investigations](../defender-endpoint/a
 
 ## Threat intelligence
 
-Threat intelligence capabilities include indicators of compromise and threat analytics. Together, these capabilities enable you to block or allow certain entities and learn more about current, relevant threats. 
+Threat intelligence capabilities include [indicators of compromise](#indicators-of-compromise) and [threat analytics](#threat-analytics). Together, these capabilities enable you to block (or allow) certain entities, such as files or processes, as well as learn about current and relevant threats. 
 
 ### Indicators of compromise
 
