@@ -20,7 +20,7 @@ Gets information about a model and the library where it has been applied (see [e
 ## HTTP request
 
 ```HTTP
-GET /_api/machinelearning/publications/getbyuniqueid(‘{modelUniqueId}’) HTTP/1.1
+GET /_api/machinelearning/publications/getbymodeluniqueid('{modelUniqueId}') HTTP/1.1
 ```
 
 ## URI parameters
@@ -51,7 +51,7 @@ In this sample, the ID of the Contoso Contract document understanding model is `
 #### Sample request
 
 ```HTTP
-GET /sites/TestCC/_api/machinelearning/publications/getbymodeluniqueid(‘{7645e69d-21fb-4a24-a17a-9bdfa7cb63dc}’) HTTP/1.1
+GET /sites/TestCC/_api/machinelearning/publications/getbymodeluniqueid('7645e69d-21fb-4a24-a17a-9bdfa7cb63dc') HTTP/1.1
 ```
 #### Sample response
 
