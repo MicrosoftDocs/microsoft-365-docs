@@ -55,6 +55,7 @@ Red Hat Enterprise Linux 7.2 or higher (\* See "Important" notice below) | Yes |
 CentOS 7.2 or higher | Yes | Yes | Yes | Yes | Yes
 Ubuntu 16.04 LTS or higher LTS | Yes | Yes | Yes | Yes | Yes
 Oracle Linux 7.2 or higher | Yes | Yes | Yes | Yes | Yes
+SUSE Linux Enterprise Server 12 or higher | Yes | Yes | Yes | Yes | Yes
 
 >[!IMPORTANT]
 > \* Red Hat Enterprise Linux:
