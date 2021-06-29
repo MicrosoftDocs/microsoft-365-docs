@@ -41,8 +41,8 @@ All themes can be customized using the following tabs.
 |**Tab**|**What can you do?**|
 |:-----|:-----|
 |[General](#general-modify-a-theme) <br/> |Modify a theme name and assign to up to five groups (if applicable).  <br/> |
-|[Logos](#logos-specify-your-theme-logos) <br/> |Add your theme logo, including the Office dark theme and mobile options.  <br/> |
-|[Colors](#colors-choose-theme-colors) <br/> |Customize a color scheme by specifying navigation bar, accent, text, and icon colors. <br/> |
+|[Logos](#logos-specify-your-theme-logos) <br/> |Add your organization logo, including alternate logo for dark theme.  <br/> |
+|[Colors](#colors-choose-theme-colors) <br/> |Customize a color scheme by specifying navigation bar, accent, text and icon colors. <br/> |
 
 ## General: Modify a theme
 
@@ -93,7 +93,6 @@ On the **Colors** page, you can set the default colors and choose which logo sho
 - **Text and icon color**: Select a color to use for the text and icons on the top navigation bar.
 - **Accent color**: Pick one that shows up well on a white or light background. The accent color is used to color some links and buttons that show up on a white or light background. For example, the accent color is used to color elements in a user's inbox and on their Office.com portal page.
 - **Reset color**: Select this link to reset colors to the default colors.
-- **Which logo should be used?**: Select default logos or any other logos you've created yourself.
 
 :::image type="content" source="../../media/default-theme-colors.png" alt-text="Screenshot: Colors tab showing default theme colors for your organization":::
 
