@@ -32,7 +32,7 @@ There are two common ways to do this next step in evaluation. This document assu
 
 The second is to [Set up your Microsoft 365 Defender trial lab environment](setup-m365deval.md) for the purpose of evaluation. It may not have many real signals from the business, so be aware of that caveat.
 
-1. Logon to your existing M365 tenant administration portal.
+1. Logon to your existing Microsoft 365 tenant administration portal.
 2. Select "Purchase Services" from the navigation menu.
 
 :::image type="content" source="../../media/MDOEval/1. One.PNG" alt-text="Selecting Billing > Purchase Services on the left navigation bar in the Microsoft 365 admin center.":::
