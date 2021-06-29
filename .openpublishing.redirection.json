@@ -4120,6 +4120,11 @@
       "redirect_url": "/microsoft-365/security/defender-endpoint/schedule-antivirus-scans",
       "redirect_document_id": true
     },
+    {
+      "source_path": "microsoft-365/enterprise/office-365-video-networking-faq.md",
+      "redirect_url": "/stream/migrate-from-office-365",
+      "redirect_document_id": false
+    },
     {
       "source_path": "microsoft-365/lti/teams-classes-lms.md",
       "redirect_url": "/MicrosoftTeams/Teams-overview",
