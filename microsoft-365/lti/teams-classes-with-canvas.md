@@ -33,22 +33,22 @@ Before managing the Microsoft Teams integration within Instructure Canvas, it is
 
 3. In the admin navigation, select the **Settings** link, and then the **Integrations** tab. 
 
-4. Enter your Microsoft tenant name and login attribute. 
-
-   The login attribute will be used for associating the Canvas user with an Azure Active Directory user. 
-
-5. Select **Update Settings** once done.
-
-6. To approve access for Canvas’s **Microsoft-Teams-Sync-for-Canvas** Azure app, select the **Grant tenant access** link. You'll be redirected to the Microsoft Identity Platform Admin Consent Endpoint.
-
-   ![permissions](media/permissions.png)
-
-7. Select **Accept**.
- 
-8. Enable the Microsoft Teams sync by turning the toggle on.
+4. Enable Microsoft Teams Sync by turning the toggle on.
 
    ![teams-sync](media/teams-sync.png)
 
+5. Enter your Microsoft tenant name and login attribute. 
+
+   The login attribute will be used for associating the Canvas user with an Azure Active Directory user. 
+
+6. Select **Update Settings** once done.
+
+7. To approve access for Canvas’s **Microsoft-Teams-Sync-for-Canvas** Azure app, select the **Grant tenant access** link. You'll be redirected to the Microsoft Identity Platform Admin Consent Endpoint.
+
+   ![permissions](media/permissions.png)
+
+8. Select **Accept**.
+ 
 ## Canvas Admin
 
 Set up the Microsoft Teams LTI 1.3 Integration.
