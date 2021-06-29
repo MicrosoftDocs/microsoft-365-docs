@@ -47,7 +47,7 @@ If you need information about what's changed from the Office 365 Security & Comp
 - [Defender for Endpoint in Microsoft 365 Defender](microsoft-365-security-center-mde.md)
 
 > [!NOTE]
-> The Microsoft 365 security portal uses and enforces existing roles-based access, and will move each security model into the unified portal. Each converged workload (such as MDO or MDE) has its own roles-based access. The roles already in the products will be converged into the Microsoft 365 security portal, automatically. However, roles and permissions for MCAS will still handled over in MCAS.
+> The Microsoft 365 security portal uses and enforces existing roles-based access, and will move each security model into the unified portal. Each converged workload has its own roles-based access. The roles already in the products will be converged into the Microsoft 365 security portal, automatically. However, roles and permissions for MCAS will still handled over in MCAS.
 
 ## What to expect
 
@@ -68,7 +68,7 @@ Microsoft 365 Defender emphasizes *unity, clarity, and common goals* as it merge
 - Feature parity with other workloads
 
 > [!NOTE]
-> Microsoft 365 Defender will be accessible without any need for customers to take migration steps or purchase a new license. For example, this new portal will be accessible to administrators with an E3 subscription, just as it is to those with Microsoft Defender for Office 365 Plan 1 and Plan 2; however, Exchange Online Protection, or MDO Plan 1 customers will see only the security features their subscription license supports. The goal of the new center is to centralize security.
+> Microsoft 365 Defender will be accessible without any need for customers to take migration steps or purchase a new license. For example, this new portal will be accessible to administrators with an E3 subscription, just as it is to those with Microsoft Defender for Office 365 Plan 1 and Plan 2; however, Exchange Online Protection, or Defender for Office 365 Plan 1 customers will see only the security features their subscription license supports. The goal of the new center is to centralize security.
 
 ## Unified investigations
 
@@ -140,7 +140,7 @@ Track and respond to emerging threats with the following Microsoft 365 Defender 
 
 Microsoft 365 security center includes a learning hub that bubbles up official guidance from resources such as the Microsoft security blog, the Microsoft security community on YouTube, and the official documentation at docs.microsoft.com.
 
-Inside the learning hub, Email & Collaboration (Microsoft Defender for Office 365 or MDO) guidance is side-by-side with Endpoint (Microsoft Defender for Endpoint or MDE), and Microsoft 365 Defender learning resources.
+Inside the learning hub, Email & Collaboration (Microsoft Defender for Office 365) guidance is side-by-side with Endpoint (Microsoft Defender for Endpoint) and Microsoft 365 Defender learning resources.
 
 The learning hub opens with Learning paths organized around topics such as “How to Investigate Using Microsoft 365 Defender?” and “Microsoft Defender for Office 365 Best Practices”. This section is currently curated by the security Product Group inside Microsoft. Each Learning path reflects a projected time it takes to get through the concepts. For example 'Steps to take when a Microsoft Defender for Office 365 user account is compromised' is projected to take 8 minutes, and is valuable learning on the fly.
 
