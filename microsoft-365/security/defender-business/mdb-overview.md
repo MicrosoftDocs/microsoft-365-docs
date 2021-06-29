@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 06/28/2021
+ms.date: 06/29/2021
 ms.prod: m365-security
 ms.technology: dforbiz
 localization_priority: Normal
@@ -185,8 +185,7 @@ To learn more, see [Track and respond to emerging threats with threat analytics]
 
 ## Centralized management and reporting
 
-Microsoft Defender for business enables you to manage your company’s security settings efficiently and effectively. The Microsoft 365 Defender portal provides you with up-to-date reports and a simplified setup experience. You can also control who in your company accesses the Microsoft 365 Defender portal with role-based access control.
-
+Microsoft Defender for business enables you to manage your company’s security settings efficiently and effectively. The Microsoft 365 Defender portal provides you with [up-to-date reports](#reporting) and a [simplified setup experience](#simplified-setup-experience). You can also control who in your company accesses the Microsoft 365 Defender portal with [role-based access control](#role-based-access-control). The next few sections provide more details about your centralized management and reporting features in Microsoft Defender for business.
 
 ### Reporting
 
