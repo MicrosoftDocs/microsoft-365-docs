@@ -59,7 +59,7 @@ The default theme is the first theme displayed.
 > [!IMPORTANT]
 > The default theme is unique, it can't be renamed and applies to everyone within your organization. To delete the default theme, you have to delete all other themes first.
 
-:::image type="content" source="../../media/default-theme-general.png" alt-text="Screenshot: General tab showing the default theme for your organization":::
+:::image type="content" source="../../media/default-theme-general1.png" alt-text="Screenshot: General tab showing the default theme for your organization":::
 
 ### Create a group theme
 
@@ -71,7 +71,7 @@ You can create up to four additional group themes.
 
 3. Select **Save**.
 
-:::image type="content" source="../../media/default-theme-general-users.png" alt-text="Screenshot: General tab showing the default theme for a group of users in your organization":::
+:::image type="content" source="../../media/default-theme-general-users1.png" alt-text="Screenshot: General tab showing the default theme for a group of users in your organization":::
 
 ## Logos: Specify your theme logos
 
@@ -79,11 +79,11 @@ On the **Logos** page, you can you can add your logos, and specify the URL where
 
 - **Default logo**: Add a URL location that points to your logo. Make sure that the URL uses HTTPS. Add a HTTPS image url that allows anonymous access and doesn't require authentication. For default theme, you also have an option to upload a logo image that is less than 10kb. Your default logo can be in the JPG, PNG, GIF, or SVG format. For SVG images, they will be resized to fit 24 pixels vertically. JPG, PNG, GIF images will be scaled to fit 200 x 48 pixels. Logo aspect ratio will always be preserved.
 - **Alternate logo**: Add a URL location that points to your logo. Your alternate logo should be optimized for use in Office dark themes. Same requirements as the default logo.
-- **On-click link**: Add a URL location that points to your logo. You can use your logo as a link to any company resource, for example, your company's website. If you don’t select a URL location to your logo, it’ll default to the Office Home page.
+- **On-click link**: Add a URL location that points to your logo. You can use your logo as a link to any company resource, for example, your company's website. If you don’t select a URL location for your logo, it’ll default to the Office home page.
 
 Select **Save** to save your changes.
 
-add screenshot
+:::image type="content" source="../../media/Logos_Tab.png" alt-text="Screenshot: Logos tab showing the logo options":::
 
 You can remove your logos at any time. Just return to the **Logos** page and select **Remove**.
   
@@ -96,7 +96,7 @@ On the **Colors** page, you can set the default colors and choose which logo sho
 - **Accent color**: Pick one that shows up well on a white or light background. The accent color is used to color some links and buttons that show up on a white or light background. For example, the accent color is used to color elements in a user's inbox and on their Office.com portal page.
 - **Reset color**: Select this link to reset colors to the default colors.
 
-:::image type="content" source="../../media/default-theme-colors.png" alt-text="Screenshot: Colors tab showing default theme colors for your organization":::
+:::image type="content" source="../../media/default-theme-colors1.png" alt-text="Screenshot: Colors tab showing default theme colors for your organization":::
 
 ## Frequently asked questions
 
