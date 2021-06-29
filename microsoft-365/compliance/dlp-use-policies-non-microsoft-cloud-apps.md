@@ -39,7 +39,7 @@ Before you start using DLP policies to non-Microsoft cloud apps, confirm your [M
 - Microsoft 365 E5 Security
 
 ### Permissions
-The user who creates the DLP policy should be:
+The user who creates the DLP policy should be a:
 - Global administrator
 - Compliance administrator
 - Compliance data administrator
