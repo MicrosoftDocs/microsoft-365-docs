@@ -68,7 +68,7 @@ Check out the [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/publ
 
 1. Open the Configuration Manager configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from [Microsoft 365 Defender](https://securitycenter.windows.com/):
 
-    1. In the navigation pane, select **Settings** > **Onboarding**.
+    1. In the navigation pane, select **Settings** > **Endpoints** > **Onboarding** (under **Device Management**).
     
     1. Select Windows 10 as the operating system.
 
@@ -177,7 +177,7 @@ If you use Microsoft Endpoint Manager current branch, see [Create an offboarding
 
 1. Get the offboarding package from [Microsoft 365 Defender](https://securitycenter.windows.com/):
 
-    1. In the navigation pane, select **Settings** >  **Offboarding**.
+    1. In the navigation pane, select **Settings** > **Endpoints** > **Offboarding** (under **Device Management**).
 
     1. Select Windows 10 as the operating system.
 

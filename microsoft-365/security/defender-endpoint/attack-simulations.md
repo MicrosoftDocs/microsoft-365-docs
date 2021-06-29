@@ -44,7 +44,7 @@ Read the walkthrough document provided with each attack scenario. Each document 
 
 ## Run a simulation
 
-1. In **Help** > **Simulations & tutorials**, select which of the available attack scenarios you would like to simulate:
+1. In **Evaluation & tutorials** > **Tutorials & simulations**, select which of the available attack scenarios you would like to simulate:
 
    - **Scenario 1: Document drops backdoor** - simulates delivery of a socially engineered lure document. The document launches a specially crafted backdoor that gives attackers control.
 
@@ -54,7 +54,7 @@ Read the walkthrough document provided with each attack scenario. Each document 
 
 2. Download and read the corresponding walkthrough document provided with your selected scenario.
 
-3. Download the simulation file or copy the simulation script by navigating to **Help** > **Simulations & tutorials**. You can choose to download the file or script on the test device but it's not mandatory.
+3. Download the simulation file or copy the simulation script by navigating to **Evaluation & tutorials** > **Tutorials &simulations**. You can choose to download the file or script on the test device but it's not mandatory.
 
 4. Run the simulation file or script on the test device as instructed in the walkthrough document.
 

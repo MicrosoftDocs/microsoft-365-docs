@@ -98,11 +98,11 @@ This feature enables you to block potentially malicious files in your network. B
 
 To turn **Allow or block** files on:
 
-1. In the navigation pane, select **Settings** > **Advanced features** > **Allow or block file**.
+1. In the navigation pane, select **Settings** > **Endpoints** > **Advanced features** > **Allow or block file**.
 
 1. Toggle the setting between **On** and **Off**.
-
-    ![Image of advanced settings for block file feature](images/atp-preferences-setup.png)
+ 
+    :::image type="content" source="../../media/alloworblockfile.png" alt-text="Image of advanced settings for block file feature":::
 
 1. Select **Save preferences** at the bottom of the page.
 

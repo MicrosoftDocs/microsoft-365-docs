@@ -44,11 +44,11 @@ Check out the [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/publ
 
 1.  Open the GP configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from [Microsoft 365 Defender](https://securitycenter.windows.com/):
 
-    1. In the navigation pane, select **Settings** > **Onboarding**.
+    1. In the navigation pane, select **Settings** > **Endpoints** > **Onboarding** (under **Device Management**).
 
     1. Select Windows 10 as the operating system.
 
-    1. In the **Deployment method** field, select **Local Script**.
+    1. In the **Deployment method** field, select **Local Script (for up to 10 devices)**.
 
     1. Click **Download package** and save the .zip file.
 
@@ -102,11 +102,11 @@ For security reasons, the package used to Offboard devices will expire 30 days a
 
 1. Get the offboarding package from [Microsoft 365 Defender](https://securitycenter.windows.com/):
 
-    1. In the navigation pane, select **Settings** > **Offboarding**.
+    1. In the navigation pane, select **Settings** > **Endpoints** > **Offboarding** ((under **Device Management**)).
 
     1. Select Windows 10 as the operating system.
 
-    1. In the **Deployment method** field, select **Local Script**.
+    1. In the **Deployment method** field, select **Local Script (for up to 10 devices)**.
 
     1. Click **Download package** and save the .zip file.
 
@@ -134,9 +134,9 @@ You can follow the different verification steps in the [Troubleshoot onboarding 
 Monitoring can also be done directly on the portal, or by using the different deployment tools.
 
 ### Monitor devices using the portal
-1. Go to Microsoft 365 Defender.
+1. Go to Microsoft 365 Defender portal.
 
-2. Click **Devices list**.
+2. Click **Devices inventory**.
 
 3. Verify that devices are appearing.
 

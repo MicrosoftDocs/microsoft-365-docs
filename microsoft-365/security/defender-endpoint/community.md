@@ -39,7 +39,7 @@ There are several spaces you can explore to learn about specific information:
 
 
 There are several ways you can access the Community Center:
-- In the Microsoft 365 Defender navigation pane, select **Community center**.  A new browser tab opens and takes you to the Defender for Endpoint Tech Community page. 
+- In the Microsoft 365 Defender portal navigation pane, select **Community center**.  A new browser tab opens and takes you to the Defender for Endpoint Tech Community page. 
 - Access the community through the [Microsoft Defender for Endpoint Tech Community](https://techcommunity.microsoft.com/t5/Windows-Defender-Advanced-Threat/ct-p/WindowsDefenderAdvanced) page
 
 
