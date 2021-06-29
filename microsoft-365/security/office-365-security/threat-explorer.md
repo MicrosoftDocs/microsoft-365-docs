@@ -52,7 +52,7 @@ With this report, you can:
 
 ## Improvements to Threat Hunting Experience
 
-### Introduction of Alert ID for MDO alerts within Explorer/Real-time detections (Preview)
+### Introduction of Alert ID for MDO alerts within Explorer/Real-time detections
 
 Today, if you navigate from an alert to Threat Explorer, it opens a filtered view within the Explorer, with the view filtered by Alert policy ID (policy ID being a unique identifier for an Alert policy).
 We are making this integration more relevant by introducing the alert ID (see an example of alert ID below) in Threat Explorer and Real-time detections so that you see messages which are relevant to the specific alert, as well as a count of emails. You will also be able to see if a message was part of an alert, as well as navigate from that message to the specific alert.
@@ -65,12 +65,12 @@ Alert ID is available within the URL when you are viewing an individual alert; a
 > [!div class="mx-imgBorder"]
 > ![Alert ID in details flyout](../../media/AlertID-DetailsFlyout.png)
 
-### Extending the Explorer (and Real-time detections) data retention and search limit for trial tenants from 7 to 30 days (Preview)
+### Extending the Explorer (and Real-time detections) data retention and search limit for trial tenants from 7 to 30 days
 
 As part of this change, you will be able to search for, and filter email data across 30 days (an increase from the previous 7 days) in Threat Explorer/Real-time detections for both Defender for Office P1 and P2 trial tenants.
 This does not impact any production tenants for both P1 and P2/E5 customers, which already has the 30 day data retention and search capabilities.
 
-### Updated limits for Export of records for Threat Explorer (Preview)
+### Updated limits for Export of records for Threat Explorer
 
 As part of this update, the number of rows for Email records that can be exported from Threat Explorer is increased from 9990 to 200,000 records. The set of columns that can be exported currently will remain the same, but the number of rows will increase from the current limit.
 
