@@ -204,7 +204,7 @@ When it comes to setting up and configuring Microsoft Defender for business, you
 
 | Method | Description |
 |:---|:---|
-| The simplified experience in the Microsoft 365 Defender portal (recommended) | Microsoft Defender for business is designed to save you time and effort with a streamlined experience in the Microsoft 365 Defender portal. Microsoft Defender for business includes default policies that protect your devices as soon as those devices are onboarded. The default policy settings are based on best practices and are designed to help you be productive while working more securely. And you're not limited to the default settings; you can keep your default settings, or make changes to suit your business needs. |
+| The simplified experience in the Microsoft 365 Defender portal (recommended) | Microsoft Defender for business is designed to save you time and effort with a streamlined experience in the Microsoft 365 Defender portal. Microsoft Defender for business includes default policies that protect your devices as soon as those devices are onboarded. The default policy settings are based on best practices and are designed to help you be productive while working more securely. And you're not limited to the default settings; you can keep your default settings, or make changes to suit your business needs. To learn more, see [Set up and configure Microsoft Defender for business](mdb-setup-configuration.md). |
 | Microsoft Endpoint Manager (which includes Intune) | Microsoft Intune is a cloud-based service that focuses on mobile device management (MDM) and mobile application management (MAM). Intune enables you to control how your company’s devices are used, including mobile phones, tablets, and laptops. To learn more, see [Microsoft Intune is an MDM and MAM provider for your devices](/mem/intune/fundamentals/what-is-intune). | 
 
 To learn more, see [Setup and configuration](mdb-setup-configuration.md).
@@ -217,7 +217,9 @@ To learn more, see [Manage portal access using role-based access control](../def
 
 ## Cross-platform support
 
-Most organizations use a variety of devices and operating systems, such as computers running Windows, macOS, or Linux, and mobile devices running iOS or Android. Initially, Microsoft Defender for business supports Windows 10 devices only; however, we are planning to support additional operating systems in the future. 
+People often use a variety of devices and operating systems at work. For example, many companies use computers running Windows, macOS, or Linux, and mobile devices running iOS or Android OS. 
+
+Initially, Microsoft Defender for business supports Windows 10 devices only; however, we are planning to support additional operating systems in the future. 
 
 To learn more, see [Defender for Endpoint (Windows)](../defender-endpoint/microsoft-defender-endpoint.md).
 
