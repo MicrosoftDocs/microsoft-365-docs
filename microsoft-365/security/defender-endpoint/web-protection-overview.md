@@ -66,7 +66,7 @@ For more information, see [Web content filtering](web-content-filtering.md).
 
 ## How does web protection work?
 
-Web Protection is made up of the following components, listed in order of precedence. Each of these components is enforced by the SmartScreen client in Microsoft Edge and by the Network Protection client in all other browsers/processes. 
+Web Protection is made up of the following components, listed in order of precedence. Each of these components is enforced by the SmartScreen client in Microsoft Edge and by the Network Protection client in all other browsers and processes. 
 
 - Custom indicator (IP URL/AB, Microsoft Cloud App Security (MCAS) Block/Warn (Preview))
 
@@ -79,9 +79,9 @@ Web Protection is made up of the following components, listed in order of preced
 
 - MCAS allow
 
-The order of precedence above relates to the order of operations by which a URL or IP is evaluated. For example, a customer who has a web content filtering policy can create exclusions through custom IP/URL indicators, since custom IoC’s are higher in the order of precedence than WCF blocks. 
+The order of precedence relates to the order of operations by which a URL or IP is evaluated. For example, a customer who has a web content filtering policy can create exclusions through custom IP/URL indicators, as custom IoC’s are higher in the order of precedence than WCF blocks. 
 
-When there is a conflict, MCAS allow always take precedence over blocks (override logic), meaning that an allow indicator will win over any block indicator further down the stack. Similarly, for web threats, the E5 custom indicator list is checked before web threats. But, MCAS allow will not remediate WCF or SmartScreen.
+When there is a conflict, MCAS allow always take precedence over blocks (override logic), which means that an allow indicator will win over any block indicator further down the stack. Similarly, for web threats, the E5 custom indicator list is checked before web threats. But, MCAS allow will not remediate WCF or SmartScreen.
 
 Internal IP addresses are not supported by custom indicators. Also, for a warn policy, when bypassed by the end user, the site will be unblocked for 24 hours for that user by default (this time frame can be modified by the Admin and is passed down by the SmartScreen cloud service). The ability to bypass a warning can also be disabled via CSP for web threat blocks (malware/phish). For more information, see [Policy CSP - Browser - Windows Client Management](/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverride).
 
@@ -129,19 +129,19 @@ The order of checks for SmartScreen is as follows:
 
     - Web content filtering
 
-### Use the SS and NP clients together
+### Use the SmartScreen and Network Protection clients together
 
-In all our Web Protection scenarios, SmartScreen and Network Protection can be used together to provide multiple browser supports. SmartScreen is built directly into Edge (and can be used even if defender is in passive mode), meaning that the Network Protection client does not evaluate the Edge traffic. Conversely, the Network Protection client is responsible for evaluating traffic in 3rd party browsers and processes, meaning that the SmartScreen client is not involved in evaluating traffic in third party browsers. If something is overridden, such as a custom indicator being used to override a WCF policy, both the clients use this policy information. 
+In all our web protection scenarios, SmartScreen and Network Protection can be used together to provide multiple browser supports. SmartScreen is built directly into Edge (and can be used even if defender is in passive mode), which means that the NP client does not evaluate the Edge traffic. Conversely, the NP client is responsible for evaluating traffic in third party browsers and processes, meaning that the SmartScreen client is not involved in evaluating traffic in third party browsers. 
 
-Both the Network Protection client and the SmartScreen client use the SmartScreen cloud service for information. What this means is that the responses sent back to the client are standardized across the board. From a support perspective, tools like Fiddler can be used to inspect the response from the service, which will help determine the source of the block in cases that it is unclear. 
+Both the Network Protection client and the SmartScreen client use the SmartScreen cloud service for information. Which means, the responses sent back to the client are standardized across the board. Tools like Fiddler can be used to inspect the response from the service, which will help determine the source of the block in cases that it is unclear. 
 
-When the SmartScreen cloud service responds with an allow, block or warn response, there is a response category and server context relayed back to the client. In Edge, the response category is what is used to determine the appropriate block page to show (for example, malicious, phishing, organizational policy etc.).
+When the SmartScreen cloud service responds with an allow, block, or warn response, there is a response category and server context relayed back to the client. In Edge, the response category is what is used to determine the appropriate block page to show (for example, malicious, phishing, organizational policy etc.).
 
 ### SmartScreen cloud service
 
-The SmartScreen cloud service uses multiple sources of information to provide URL determinations to the SmartScreen and Network Protection clients. This includes 3rd party feeds, internal graders and researchers, detonation services, ML models and other algorithms. When a request is received from the client, it goes through all the checks outlined above. 
+The SmartScreen cloud service uses multiple sources of information to provide URL determinations to the SmartScreen and Network Protection clients. This includes third party feeds, internal graders and researchers, detonation services, Machine Learning models and other algorithms. When a request is received from the client, it goes through all the checks. 
 
-One of the more important aspects of this service is how it determines whether a URL should be blocked by policy. When a customer creates an indicator, MCAS or WCF policy, the policy is created using the Indicator API. The Indicator API provides definitions for typical indicator policies as well as for Web Content Filtering policies. Once a policy is created using one of these definitions, the ATP Sync service ensures that the policy is stored in the List API, which is referenced by the SmartScreen cloud service when making URL determinations. 
+One of the more important aspects of this service is how it determines whether a URL should be blocked by policy. When a customer creates an indicator, MCAS, or WCF policy, the policy is created using the Indicator API. The Indicator API provides definitions for typical indicator policies as well as for web content filtering policies. Once a policy is created using one of these definitions, the ATP sync service ensures that the policy is stored in the List API, which is referenced by the SmartScreen cloud service when making URL determinations. 
 
 ### Bloom filter and top traffic
 
