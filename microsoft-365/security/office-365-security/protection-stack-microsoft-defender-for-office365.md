@@ -45,7 +45,7 @@ Edge blocks are designed to be automatic. In the case of false positive, senders
 
 Features in sender intelligence are critical for catching spam, bulk, impersonation, and unauthorized spoof messages, and also factor into phish detection. Most of these features are individually configurable.
 
-:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase2.png" alt-text="Phase 2 of filtering in MDO is Sender intelligence.":::
+:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase2.png" alt-text="Phase 2 of filtering in Defender for Office 365 is Sender intelligence.":::
 
 1. **Account compromise detection** triggers and alerts are raised when an account has anomalous behavior, consistent with compromise. In some cases, the user account is blocked and prevented from sending any further email messages until the issue is resolved by an organization's security operations team.
 
@@ -127,7 +127,7 @@ The last stage takes place after mail or file delivery, acting on mail that is i
 
 The final diagram (as with all parts of the diagram composing it) *is subject to change as the product grows and develops*. Bookmark this page and use the **feedback** option you'll find at the bottom if you need to ask after updates. For your records, this is the the stack with all the phases in order:
 
-:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase5.png" alt-text="All the phases of filtering in MDO in order, 1 to 4.":::
+:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase5.png" alt-text="All the phases of filtering in Defender for Office 365 in order, 1 to 4.":::
 
 ## More information
 
