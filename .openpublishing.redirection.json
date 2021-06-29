@@ -4134,6 +4134,11 @@
       "source_path": "microsoft-365/enterprise/microsoft-365-isolation-in-microsoft-365-video.md",
       "redirect_url": "/microsoft-365/enterprise/microsoft-365-tenant-isolation-overview",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/safety-tips-in-office-365.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/anti-spam-protection",
+      "redirect_document_id": false
     }
   ]
 }
