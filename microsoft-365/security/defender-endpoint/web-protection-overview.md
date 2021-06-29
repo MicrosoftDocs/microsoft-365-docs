@@ -52,11 +52,11 @@ For more information, see [Web threat protection](web-threat-protection.md).
 
 ### Web content filtering
 
-The cards that comprise web content filtering are **Web activity by category**, **Web content filtering summary**, and **Web activity summary**.
+Web content filtering includes **Web activity by category**, **Web content filtering summary**, and **Web activity summary**.
 
 Web content filtering includes:
 
-- Users are prevented from accessing websites in blocked categories, whether they are browsing on-premises or away.
+- Users are prevented from accessing websites in blocked categories, when browsing on-premises or away.
 
 - You can deploy varied policies to various sets of users using the device groups defined in the [Microsoft Defender for Endpoint role-based access control settings](/microsoft-365/security/defender-endpoint/rbac).
 
@@ -81,7 +81,7 @@ Web Protection is made up of the following components, listed in order of preced
 
 The order of precedence relates to the order of operations by which a URL or IP is evaluated. For example, a customer who has a web content filtering policy can create exclusions through custom IP/URL indicators, as custom IoC’s are higher in the order of precedence than WCF blocks. 
 
-When there is a conflict, MCAS allow always take precedence over blocks (override logic), which means that an allow indicator will win over any block indicator further down the stack. Similarly, for web threats, the E5 custom indicator list is checked before web threats. But, MCAS allow will not remediate WCF or SmartScreen.
+During a conflict, MCAS allow always take precedence over blocks (override logic), which means that an allow indicator will win over any block indicator further down the stack. Similarly, for web threats, the E5 custom indicator list is checked before web threats. But, MCAS allow won't remediate WCF or SmartScreen.
 
 Internal IP addresses are not supported by custom indicators. For a warn policy when bypassed by the end user, the site will be unblocked for 24 hours for that user by default. This time frame can be modified by the Admin and is passed down by the SmartScreen cloud service. The ability to bypass a warning can also be disabled via CSP for web threat blocks (malware/phish). For more information, see [Policy CSP - Browser - Windows Client Management](/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverride).
 
@@ -105,19 +105,19 @@ Here's the order of checks for Network Protection:
 
     - Check E5 categories
 
-At any point in time in the above stack, an allow/block will result in an immediate break and the response will be issued to the client. Otherwise, the checks will continue until the above list is exhausted. If no matches are found, an allow response is issued. 
+In the above stack, an allow/block will result in an immediate break and the response will be issued to the client. Otherwise, the checks will continue until the above list is exhausted. If no matches are found, an allow response is issued. 
 
 ### SmartScreen (SS) client 
 
-The SmartScreen flow is slightly more complicated than the Network Protection flow. SmartScreen makes both synchronous and asynchronous calls to the service, whereas Network Protection makes only synchronous calls.  
+The SmartScreen flow is slightly more complicated than the Network Protection flow. SmartScreen makes both synchronous and asynchronous calls to the service, but Network Protection makes only synchronous calls.  
 
 The order of checks for SmartScreen is as follows: 
 
-- Local cache of allows (blocks are not cached)
+- Local cache of allows (blocks aren't cached)
 
 - Local Bloom filter
 
-    - Contains known bad sites (a hit on the BF means the site is likely malicious)
+    - Contains known bad sites 
 
 - Make synchronous calls
 
