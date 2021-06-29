@@ -27,6 +27,9 @@ description: "For managed service providers, follow the steps in this article to
 
 You must be a Global Administrator in the partner tenant you're signing into.
 
+> [!IMPORTANT] 
+> Partners must have a CSP relationship and establish Delegated Admin Privileges (DAP) with customers through Partner Center for customers to be active within Microsoft 365 Lighthouse. Customers also must have at least one Microsoft 365 Business Premium subscription and less than 500 licensed users in their tenant.   
+
 ## Steps to sign up to Microsoft 365 Lighthouse
 
 Follow these steps to acquire the Microsoft 365 Lighthouse service plan:
@@ -52,7 +55,8 @@ Follow these steps to acquire the Microsoft 365 Lighthouse service plan:
 
 1. Select **Agree & Continue** to complete the partner agreement amendment.
 
-    After you complete the sign-up process, it can take up to 48 hours for customer data to appear in Microsoft 365 Lighthouse.
+    > [!NOTE]
+    > After you complete sign up, it can take up to 48 hours for customer data to appear in Microsoft 365 Lighthouse.
 
 ## Next steps
 
