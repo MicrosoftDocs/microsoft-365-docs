@@ -20,12 +20,14 @@ Updates available models settings (associated retention label and model descript
 ## HTTP request
 
 ```HTTP
-POST /_api/machinelearning/models/updatemodelsettings HTTP/1.1
+POST /_api/machinelearning/models/getbytitle('{modelFileName}')/updatemodelsettings HTTP/1.1
 ```
 
 ## URI parameters
 
-None
+|Name |In |Required|Type|Description|
+|-----|---|--------|----|-----------|
+|modelFileName|query|True|string|Name of the Syntex model file.|
 
 ## Request headers
 
