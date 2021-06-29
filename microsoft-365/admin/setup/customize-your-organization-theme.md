@@ -59,7 +59,7 @@ The default theme is the first theme displayed.
 > [!IMPORTANT]
 > The default theme is unique, it can't be renamed and applies to everyone within your organization. To delete the default theme, you have to delete all other themes first.
 
-:::image type="content" source="../../media/default-theme-general1.png" alt-text="Screenshot: General tab showing the default theme for your organization":::
+:::image type="content" source="../../media/Default_Theme_Panel1.png" alt-text="Screenshot: General tab showing the default theme for your organization":::
 
 ### Create a group theme
 
