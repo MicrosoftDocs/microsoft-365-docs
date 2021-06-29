@@ -1,6 +1,6 @@
 ---
 title: Onboard Windows 10 devices to Microsoft Defender for Endpoint via Group Policy
-description: Use Group Policy to deploy the configuration package on Windows 10 devices so that they are onboarded to the service.
+description: Use Group Policy to deploy configuration package on Windows 10 devices so that they are onboarded to the service.
 keywords: configure devices using group policy, device management, configure Microsoft Defender for Endpoint devices, onboard Microsoft Defender for Endpoint devices, group policy
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,7 +19,7 @@ ms.date: 04/24/2018
 ms.technology: mde
 ---
 
-# Onboard Windows 10 devices using Group Policy 
+# Onboard Windows 10 devices using the Group Policy 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

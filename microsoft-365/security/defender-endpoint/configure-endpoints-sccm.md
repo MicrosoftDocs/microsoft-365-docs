@@ -1,6 +1,6 @@
 ---
 title: Onboard Windows 10 devices using Configuration Manager
-description: Use Configuration Manager to deploy the configuration package on devices so that they are onboarded to the service.
+description: Use Configuration Manager to deploy the configuration package on devices so that they are onboarded to service.
 keywords: onboard devices using sccm, device management, configure Microsoft Defender for Endpoint devices
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,7 +19,7 @@ ms.date: 02/07/2020
 ms.technology: mde
 ---
 
-# Onboard Windows 10 devices using Configuration Manager
+# Onboard Windows 10 devices using the Configuration Manager
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
