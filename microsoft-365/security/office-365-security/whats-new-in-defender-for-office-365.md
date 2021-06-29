@@ -58,7 +58,6 @@ Learn more by watching [this video](https://www.youtube.com/watch?v=Tdz6KfruDGo&
 - Increasing the limits for Export of records from 9990 to 200,000 in [hunting experiences](threat-explorer.md)
 - Extending the Explorer (and Real-time detections) data retention and search limit for trial tenants from 7 (previous limit) to 30 days in [hunting experiences](threat-explorer.md)
 - New hunting pivots called **Impersonated domain** and **Impersonated user** within the Explorer (and Real-time detections) to search for impersonation attacks against protected users or domains. For more information, see [details](threat-explorer.md#view-phishing-emails-sent-to-impersonated-users-and-domains). (Microsoft Defender for Office 365 Plan 1 or Plan 2)
-- New first contact safety tip for when recipients first receive an email from a sender or do not often receive email from a sender. For more information on this setting and how to configure it using Exchange mail flow rules (also known as transport rules), see [First contact safety tip](set-up-anti-phishing-policies.md#first-contact-safety-tip).
 
 ## December 2020
 
@@ -71,6 +70,7 @@ Learn more by watching [this video](https://www.youtube.com/watch?v=Tdz6KfruDGo&
 
 ## September/October 2020
 
+- New first contact safety tip for when recipients first receive an email from a sender or do not often receive email from a sender. For more information on this setting and how to configure it using Exchange mail flow rules (also known as transport rules), see [First contact safety tip](set-up-anti-phishing-policies.md#first-contact-safety-tip).
 - [Check your policies using Configuration Analyzer](configuration-analyzer-for-security-policies.md)
 - [Extended capabilities in Threat Explorer including top targeted users, transport rules, and connectors](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections) (Defender for Office 365 information in [Threat Explorer](threat-explorer.md) (email was allowed/blocked by tenant/user policy) (Defender for Office 365 Plan 2)
 - Surfacing URL threats in [Threat Explorer](threat-explorer.md#threats-in-urls) (malware, phish, spam, or none) (Defender for Office 365 Plan 2)
