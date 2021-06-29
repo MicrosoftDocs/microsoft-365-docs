@@ -178,7 +178,7 @@ Creating a custom anti-spam policy in the Microsoft 365 Defender portal creates 
 
    - **Redirect to this email address**: This box is required and available only if you selected the **Redirect message to email address** as the action for a spam filtering verdict. Enter the email address where you want to deliver the message. You can enter multiple values separated by semicolons (;).
 
-   - **Enable safety Tips**: By default, Safety Tips are enabled, but you can disable them by clearing the checkbox. For more information about Safety Tips, see [Safety tips in email messages](safety-tips-in-office-365.md).
+   - **Enable safety Tips**: By default, Safety Tips are enabled, but you can disable them by clearing the checkbox.
 
    - **Enable zero-hour auto purge (ZAP)**: ZAP detects and takes action on messages that have already been delivered to Exchange Online mailboxes. For more information, see [Zero-hour auto purge - protection against spam and malware](zero-hour-auto-purge.md).
 
