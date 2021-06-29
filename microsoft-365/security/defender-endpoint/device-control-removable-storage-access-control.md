@@ -128,14 +128,6 @@ Options: The Group ID/GUID must be used at this instance.
 
 When there are conflict types for the same media, the system will apply the first one in the policy. An example of a conflict type is **Allow** and **Deny**.
 
-**Property name: Sid**
-
-Description: Defines whether apply this policy over specific user or user group; one entry can have maximum one Sid and an entry without any Sid means applying the policy over the machine.
-
-**Property name: ComputerSid**
-
-Description: Defines whether apply this policy over specific machine or machine group; one entry can have maximum one ComputerSid and an entry without any ComputerSid means applying the policy over the machine. If you want to apply an Entry to a specific user and specific machine, add both Sid and ComputerSid into the same Entry.
-
 **Property name: Options**
 
 Description: Defines whether to display notification or not.
@@ -150,9 +142,19 @@ Options: 0-4. When Type Allow or Deny is selected:
    When Type **AuditAllowed** or **AuditDenied** is selected:
 
    - 0: nothing
-   - 1: show notification
+   - 1: show notification, only works for AuditDenied
    - 2: send event
-   - 3: show notification and send event
+   - 3: show notification and send event. If apply this to AuditAllowed, will only fire event for reporting but not have notification.
+   
+**Property name: Sid**
+
+Description: Defines whether apply this policy over specific user or user group; one entry can have maximum one Sid and an entry without any Sid means applying the policy over the machine.
+
+**Property name: ComputerSid**
+
+Description: Defines whether apply this policy over specific machine or machine group; one entry can have maximum one ComputerSid and an entry without any ComputerSid means applying the policy over the machine. If you want to apply an Entry to a specific user and specific machine, add both Sid and ComputerSid into the same Entry.
+
+
 
 **Property name: AccessMask**
 
