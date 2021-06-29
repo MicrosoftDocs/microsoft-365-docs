@@ -112,7 +112,7 @@ It's possible that a retention policy that's applied to Microsoft 365 groups, Sh
 ### Retention policy for Yammer locations
 
 > [!NOTE]
-> Retention policies for Yammer are in preview.
+> Retention policies for Yammer are in preview and currently do not inform users when messages are deleted as a result of a retention policy.
 >
 > To use this feature, your Yammer network must be [Native Mode](/yammer/configure-your-yammer-network/overview-native-mode), not Hybrid Mode.
 

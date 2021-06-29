@@ -60,7 +60,7 @@ None
 		"type": "Microsoft.Office.Server.ContentCenter.SPMachineLearningModelEntityData"
 	},
 	"ContentTypeGroup": "Intelligent Document Content Types",
-	"ContentTypeName": "Contoso Contract",
+	"ContentTypeName": "Contoso Contract"
 }
 ```
 
