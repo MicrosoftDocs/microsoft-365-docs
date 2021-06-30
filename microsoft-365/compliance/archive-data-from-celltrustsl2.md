@@ -27,7 +27,7 @@ CellTrust's SL2 platform captures communication data from multiple sources. SL2 
 
 ![Archiving workflow for CellTrust SL2 service](../media/CellTrustSL2ConnectorWorkflow.png)
 
-1. SL2 users send and receive data to and from SL2 services in the Microsoft Azure cloud.
+1. SL2 users send and receive data to and from SL2 services in Microsoft Azure.
 
 2. Your organization has an SL2 domain in CellTrust's SL2 Cloud Service environment. Your domain may have one or more organizational units (OUs). The SL2 Cloud Service transfers your data to a highly secure area in the Microsoft Azure platform, so that your data never leaves the Microsoft Azure environment. Depending on your SL2 plan (Enterprise, SMB, or Government), your domain is either hosted on Microsoft Azure Global or Microsoft Azure Government.
 
