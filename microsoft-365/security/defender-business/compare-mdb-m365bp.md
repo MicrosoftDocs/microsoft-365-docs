@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: reference
-ms.date: 06/25/2021
+ms.date: 06/30/2021
 ms.prod: m365-security
 ms.technology: dforbiz
 localization_priority: Normal
@@ -30,8 +30,8 @@ You don't have to have Microsoft 365 Business Premium or any other Microsoft 365
 
 | Feature/Capability | Microsoft Defender for business | [Microsoft 365 Business Premium](../../business/microsoft-365-business-overview.md) |
 |:---|:---|:---|
-| Antispam protection | Yes (for devices) | Yes (for email content, such as messages and attachments) |
-| Antimalware protection | Yes (for devices) | Yes (for email content) |
+| Antispam protection | Yes (for devices) | Yes (for Microsoft 365 email content, such as messages and attachments) |
+| Antimalware protection | Yes (for devices) | Yes (for Microsoft 365 email content, such as messages and attachments) |
 | [Next-generation protection](../defender-endpoint/microsoft-defender-antivirus-in-windows-10.md) <br/> (antivirus and antimalware protection) | Yes (Microsoft Defender Antivirus is included in Windows 10)  | Yes (Microsoft Defender Antivirus is included in Windows 10) |
 | [Attack surface reduction](../defender-endpoint/overview-attack-surface-reduction.md) <br/>(attack surface reduction rules and other protection)	| Yes (Attack surface reduction rules built into Windows 10, plus centrally managed capabilities) | Yes (Attack surface reduction rules built into Windows 10) |
 | [Endpoint detection and response](../defender-endpoint/overview-endpoint-detection-response.md) | Yes. Includes: <br/>- Behavior-based detection <br/>- Manual response actions <br/>- Live response	 | No |
