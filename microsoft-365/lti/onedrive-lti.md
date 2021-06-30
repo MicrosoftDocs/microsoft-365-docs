@@ -72,7 +72,7 @@ SWAP THIS ONE
 ## Collaboration Settings for OneDrive LTI 1.3 in Canvas Courses
 
 > [!NOTE]
-> For collaboration to work for educators and students, you shouldn't enable the collaboration setting. This setting is generally not enabled, but if the setting is enabled, you can follow the steps below to change that.
+> For collaboration to work for educators and students, you shouldn't enable the collaboration setting. To make sure the setting isn't enabled, follow the steps below.
 
 1. Sign in as an admin and go to the **Settings** section.
 1. Go to **Feature Options** section, and then go to the **Course** section.
