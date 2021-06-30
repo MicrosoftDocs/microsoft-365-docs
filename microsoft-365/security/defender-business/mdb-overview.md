@@ -17,10 +17,12 @@ f1.keywords: NOCSH
 
 # What is Microsoft Defender for business?
 
-Microsoft Defender for business is a security solution designed to help protect the devices and data your business uses. Microsoft Defender for business includes all of the following features and capabilities:
+Microsoft Defender for business is a security solution designed to help protect the devices and data your business uses. 
+
+Microsoft Defender for business includes all of the following features and capabilities:
 
 | Symbol | Capability | Description |
-| --- | --- | --- |
+|---|---|---|
 | ![Threat protection symbol](../../media/security/security-threat-castle-32.png) | [Threat and vulnerability management](#threat-and-vulnerability-management) | Threat & vulnerability management (TVM) provides you with actionable information that can help mitigate threats and vulnerabilities in your environment.|
 | ![Next-generation protection symbol](../../media/security/security-shield-divided-32.png) | [Next-generation protection](#next-generation-protection) |Next-generation protection includes antimalware and antivirus protection—on your devices and in the cloud—to protect against threats. |
 | ![Attack surface reduction symbol](../../media/security/security-shield-slash-32.png) | [Attack surface reduction](#attack-surface-reduction) | Your attack surfaces are all the places and ways that your company is vulnerable to a cyberattack. |
