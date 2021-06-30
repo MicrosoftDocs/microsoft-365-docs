@@ -1,5 +1,6 @@
 <!-- This file is generated automatically each week. Changes made to this file will be overwritten.-->
-
+
+
 
 
 ## Week of May 10, 2021
@@ -107,9 +108,9 @@
 | 5/11/2021 | [Apply for a Fapiao for Office 365 operated by 21Vianet](/microsoft-365/admin/services-in-china/apply-for-a-fapiao?view=o365-21vianet) | modified |
 | 5/11/2021 | [Download perpetual software and product license keys bought through the Cloud Solution Provider (CSP) program](/microsoft-365/admin/setup/download-software-licenses-csp?view=o365-21vianet) | modified |
 | 5/11/2021 | Microsoft Bookings Frequently Asked Questions | removed |
-| 5/11/2021 | [Comparison chart: Bookings web app vs. Bookings Teams app](/microsoft-365/bookings/comparison-chart?view=o365-21vianet) | modified |
-| 5/11/2021 | [Microsoft 365 admin center - Overview](/microsoft-365/business-video/admin-center-overview?view=o365-worldwide) | modified |
-| 5/11/2021 | [Buy new licenses](/microsoft-365/business-video/buy-licenses?view=o365-worldwide) | modified |
+| 5/11/2021 | [Comparison chart: Bookings web app vs. Bookings Teams app](/microsoft-365/bookings/compari21vianet) | modified |
+| 5/11/2021 | [Microsoft 365 admin center - Overview](/microsoft-365/businer-overview?view=o365-worldwide) | modified |
+| 5/11/2021 | [Buy new licenses](/microsoft-365/business-video/buy-licenses?view=o365-worldwide) | modi
 | 5/11/2021 | [Move users to different subscriptions](/microsoft-365/business-video/change-subscription?view=o365-worldwide) | modified |
 | 5/11/2021 | [About registration numbers and under review notifications](/microsoft-365/commerce/about-registration-numbers?view=o365-21vianet) | modified |
 | 5/11/2021 | [Add storage space for your subscription](/microsoft-365/commerce/add-storage-space?view=o365-21vianet) | modified |
@@ -187,7 +188,7 @@
 | 5/11/2021 | EOP queued, deferred, and bounced messages FAQ | removed |
 | 5/11/2021 | [Quarantined email messages](/microsoft-365/security/office-365-security/quarantine-email-messages?view=o365-21vianet) | modified |
 | 5/11/2021 | Quarantined messages FAQ | removed |
-| 5/11/2021 | [End of lifecycle options for groups, teams, and Yammer](/microsoft-365/solutions/end-life-cycle-groups-teams-sites-yammer?view=o365-21vianet) | modified |
+| 5/11/2021 | [End of lifecycle options for groups, teams, and Yammer](/microsoft-365/solutions/e-teams-sites-yammer?view=o365-21vianet) | modified |
 | 5/12/2021 | [Microsoft Productivity Score](/microsoft-365/admin/productivity/productivity-score?view=o365-worldwide) | modified |
 | 5/12/2021 | [Change Microsoft 365 for business plans manually](/microsoft-365/commerce/subscriptions/change-plans-manually?view=o365-21vianet) | modified |
 | 5/12/2021 | [Important information for Office 365 E4 customers](/microsoft-365/commerce/subscriptions/important-information-e4?view=o365-21vianet) | modified |
@@ -232,7 +233,7 @@
 | 5/12/2021 | [Create a shared calendar](/microsoft-365/business-video/shared-calendar?view=o365-21vianet) | modified |
 | 5/12/2021 | [Create custom sensitive information types with Exact Data Match](/microsoft-365/compliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification?view=o365-21vianet) | modified |
 | 5/12/2021 | [Azure ExpressRoute for Office 365](/microsoft-365/enterprise/azure-expressroute?view=o365-21vianet) | modified |
-| 5/12/2021 | [Microsoft 365 Network Connectivity Location Services (preview)](/microsoft-365/enterprise/office-365-network-mac-location-services?view=o365-21vianet) | modified |
+| 5/12/2021 | [Microsoft 365 Network Connectivity Location Services (preview)](/microsoft-365/enterprise/ac-location-services?view=o365-21vianet) | modified |
 | 5/12/2021 | [Microsoft 365 admin center - Overview](/microsoft-365/business-video/admin-center-overview?view=o365-worldwide) | modified |
 | 5/12/2021 | [Microsoft 365 Network Connectivity Location Services](/microsoft-365/enterprise/office-365-network-mac-location-services?view=o365-21vianet) | modified |
 | 5/12/2021 | [Microsoft 365 Network Insights](/microsoft-365/enterprise/office-365-network-mac-perf-insights?view=o365-21vianet) | modified |
@@ -439,8 +440,8 @@
 | 5/14/2021 | [Cortana in Microsoft 365](/microsoft-365/admin/misc/cortana-integration?view=o365-21vianet) | modified |
 | 5/14/2021 | [Quick help Deleted user](/microsoft-365/admin/misc/deleted-user?view=o365-21vianet) | modified |
 | 5/14/2021 | [Manage and monitor priority accounts](/microsoft-365/admin/setup/priority-accounts?view=o365-21vianet) | modified |
-| 5/14/2021 | [What's new in the Microsoft 365 admin center?](/microsoft-365/admin/whats-new-in-preview?view=o365-21vianet) | modified |
-| 5/14/2021 | [Microsoft 365 admin center - Overview](/microsoft-365/business-video/admin-center-overview?view=o365-worldwide) | modified |
+| 5/14/2021 | [What's new in the Microsoft 365 admin center?](/microsoft-365/admin/whats-new-in-preview?v modified |
+| 5/14/2021 | [Microsoft 365 admin center - Overview](/microsoft-365/business-video/admin-center-orldwide) | modified |
 | 5/14/2021 | [Create sensitivity labels](/microsoft-365/business-video/create-sensitivity-labels?view=o365-worldwide) | modified |
 | 5/14/2021 | [Manage payment methods](/microsoft-365/commerce/billing-and-payments/manage-payment-methods?view=o365-21vianet) | modified |
 | 5/14/2021 | [Close your account](/microsoft-365/commerce/close-your-account?view=o365-21vianet) | modified |
@@ -503,8 +504,8 @@
 | Published On |Topic title | Change |
 |------|------------|--------|
 | 5/3/2021 | [Request a credit for Withholding Tax on your account (India customers)](/microsoft-365/commerce/billing-and-payments/withholding-tax-credit-india?view=o365-worldwide) | added |
-| 5/3/2021 | [Validate new devices](/microsoft-365/managed-desktop/get-started/validate-device?view=o365-21vianet) | added |
-| 5/3/2021 | [Find docs and training](/microsoft-365/business-video/find-help-answers?view=o365-worldwide) | modified |
+| 5/3/2021 | [Validate new devices](/microsoft-365/managed-desktop/get-started/valida21vianet) | added |
+| 5/3/2021 | [Find docs and training](/microsoft-365/business-video/find-65-worldwide) | modified |
 | 5/3/2021 | [Get support](/microsoft-365/business-video/get-help-support?view=o365-worldwide) | modified |
 | 5/3/2021 | [Microsoft 365 small business training # < 60 chars](/microsoft-365/business-video/index?view=o365-21vianet) | modified |
 | 5/3/2021 | [Get started with records management in Microsoft 365](/microsoft-365/compliance/get-started-with-records-management?view=o365-21vianet) | modified |
@@ -539,7 +540,7 @@
 | 5/3/2021 | [Configure automated investigation and response capabilities in Microsoft 365 Defender](/microsoft-365/security/defender/m365d-configure-auto-investigation-response?view=o365-21vianet) | modified |
 | 5/3/2021 | [Remediation actions in Microsoft 365 Defender](/microsoft-365/security/defender/m365d-remediation-actions?view=o365-21vianet) | modified |
 | 5/3/2021 | [Microsoft cloud architecture models - enterprise resource planning](/microsoft-365/solutions/cloud-architecture-models?view=o365-21vianet) | modified |
-| 5/3/2021 | [Top 10 ways to secure Microsoft 365 for business plans](/microsoft-365/admin/security-and-compliance/secure-your-business-data?view=o365-21vianet) | modified |
+| 5/3/2021 | [Top 10 ways to secure Microsoft 365 for business plans](/microsoft-365/admin/security-and-compliance/secua?view=o365-21vianet) | modified |
 | 5/3/2021 | [Overview of Microsoft 365 Business Premium Security](/microsoft-365/business-video/overview-m365-security?view=o365-worldwide) | modified |
 | 5/3/2021 | [What is Microsoft 365 Business Premium](/microsoft-365/business-video/what-is-microsoft-365?view=o365-21vianet) | modified |
 | 5/3/2021 | [Microsoft 365 for smaller businesses and campaigns](/microsoft-365/campaigns/index?view=o365-21vianet) | modified |
@@ -1336,7 +1337,7 @@
 | 4/27/2021 | [Migration phases actions and impacts for the migration from Microsoft Cloud Deutschland)](/microsoft-365/enterprise/ms-cloud-germany-transition-phases?view=o365-21vianet) | modified |
 | 4/27/2021 | [Microsoft Defender for Endpoint API release notes](/microsoft-365/security/defender-endpoint/api-release-notes?view=o365-21vianet) | modified |
 | 4/27/2021 | [Supported Microsoft Defender for Endpoint APIs](/microsoft-365/security/defender-endpoint/exposed-apis-list?view=o365-21vianet) | modified |
-| 4/27/2021 | [Deploy threat protection capabilities across Microsoft 365](/microsoft-365/solutions/deploy-threat-protection?view=o365-21vianet) | modified |
+| 4/27/2021 | [Deploy threat protection capabilities across Microsoft 365](/microsoft-365/solutions/deploy-threat-provianet) | modified |
 | 4/27/2021 | [Set up a new business email address](/microsoft-365/business-video/set-up-a-new-business-email-address?view=o365-worldwide) | added |
 | 4/27/2021 | [Report false positives and false negatives in Outlook](/microsoft-365/security/office-365-security/report-false-positives-and-false-negatives?view=o365-21vianet) | added |
 | 4/27/2021 | Quick help Contacts | removed |
@@ -1516,8 +1517,8 @@
 | 5/1/2021 | [Set up Microsoft 365 Apps for business](/microsoft-365/admin/setup/setup-apps-for-business?view=o365-21vianet) | modified |
 | 5/1/2021 | [Set up Microsoft 365 Business Basic](/microsoft-365/admin/setup/setup-business-basic?view=o365-21vianet) | modified |
 | 5/1/2021 | [Set up Microsoft 365 Business Standard](/microsoft-365/admin/setup/setup-business-standard?view=o365-21vianet) | modified |
-| 5/1/2021 | [Work with customers # < 60 chars](/microsoft-365/admin/work-with-customers/index?view=o365-21vianet) | modified |
-| 5/1/2021 | [Employee quick setup-guide](/microsoft-365/business-video/employee-quick-setup?view=o365-worldwide) | modified |
+| 5/1/2021 | [Work with customers # < 60 chars](/microsoft-365/admin/work-with-customers/indt) | modified |
+| 5/1/2021 | [Employee quick setup-guide](/microsoft-365/business-video/employee-5-worldwide) | modified |
 | 5/1/2021 | [Get help or support](/microsoft-365/business-video/get-help-support?view=o365-worldwide) | modified |
 | 5/1/2021 | [Share your business files - overview](/microsoft-365/business-video/overview-file-sharing?view=o365-21vianet) | modified |
 | 5/1/2021 | [Online meetings overview](/microsoft-365/business-video/overview-online-meetings?view=o365-21vianet) | modified |
@@ -1613,13 +1614,13 @@
 | 4/20/2021 | [Provide feedback on Microsoft 365 Defender](/microsoft-365/security/defender/feedback?view=o365-21vianet) | modified |
 | 4/20/2021 | [Compliance options for Microsoft 365 groups, Teams, and SharePoint collaboration](/microsoft-365/solutions/groups-teams-compliance-governance?view=o365-21vianet) | modified |
 | 4/20/2021 | [About shared mailboxes](/microsoft-365/admin/email/about-shared-mailboxes?view=o365-21vianet) | modified |
-| 4/20/2021 | [Set the password expiration policy for your organization](/microsoft-365/admin/manage/set-password-expiration-policy?view=o365-21vianet) | modified |
-| 4/20/2021 | [Microsoft Productivity Score - Content collaboration](/microsoft-365/admin/productivity/content-collaboration?view=o365-worldwide) | modified |
+| 4/20/2021 | [Set the password expiration policy for your organization](/microsoft-365/admin/manage/set-password-expirationvianet) | modified |
+| 4/20/2021 | [Microsoft Productivity Score - Content collaboration](/productivity/content-collaboration?view=o365-worldwide) | modified |
 | 4/20/2021 | [Add a domain](/microsoft-365/business-video/add-domain?view=o365-worldwide) | modified |
 | 4/20/2021 | [Change a user's name or email address](/microsoft-365/business-video/change-user-name-email?view=o365-worldwide) | modified |
-| 4/20/2021 | [Join a team as a guest](/microsoft-365/business-video/join-team-guest?view=o365-21vianet) | modified |
+| 4/20/2021 | [Join a team as a guest](/microsoft-365/business-video/join-team-guest?view=o365-21vianet) | mod
 | 4/20/2021 | [Let users reset their passwords](/microsoft-365/business-video/set-up-self-serve-password-reset?view=o365-worldwide) | modified |
-| 4/20/2021 | [Create a shared calendar](/microsoft-365/business-video/shared-calendar?view=o365-21vianet) | modified |
+| 4/20/2021 | [Create a shared calendar](/microsoft-365/business-video/shared-calendar?view=o365- |
 | 4/20/2021 | [Stop auto-forwarding emails](/microsoft-365/business-video/stop-email-auto-forward?view=o365-worldwide) | modified |
 | 4/20/2021 | [Data Loss Prevention policy tips reference](/microsoft-365/compliance/dlp-policy-tips-reference?view=o365-21vianet) | modified |
 | 4/20/2021 | [Manage topics in the topic center in Microsoft Viva Topics](/microsoft-365/knowledge/manage-topics) | modified |
@@ -2355,7 +2356,7 @@
 | 4/15/2021 | [Automatically apply a sensitivity label to content in Microsoft 365](/microsoft-365/compliance/apply-sensitivity-label-automatically?view=o365-21vianet) | modified |
 | 4/15/2021 | [Learn about retention policies & labels to automatically retain or delete content](/microsoft-365/compliance/retention?view=o365-21vianet) | modified |
 | 4/15/2021 | [Use sensitivity labels with Microsoft Teams, Microsoft 365 groups, and SharePoint sites](/microsoft-365/compliance/sensitivity-labels-teams-groups-sites?view=o365-21vianet) | modified |
-| 4/16/2021 | [Data Loss Prevention policy tips reference](/microsoft-365/compliance/dlp-policy-tips-reference?view=o365-21vianet) | added |
+| 4/16/2021 | [Data Loss Prevention policy tips reference](/microsoft-365/compliance/dlp-policy-t365-21vianet) | added |
 | 4/16/2021 | [Microsoft Productivity Score](/microsoft-365/admin/productivity/productivity-score?view=o365-worldwide) | modified |
 | 4/16/2021 | [Configure IRM to use an on-premises AD RMS server](/microsoft-365/compliance/configure-irm-to-use-an-on-premises-ad-rms-server?view=o365-21vianet) | modified |
 | 4/16/2021 | [Configure IRM to use Azure Rights Management](/microsoft-365/compliance/configure-irm-to-use-azure-rights-management?view=o365-21vianet) | modified |
