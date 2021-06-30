@@ -24,18 +24,20 @@ Integrating OneDrive LTI with Canvas is a two step process. The first step enabl
 > [!IMPORTANT]
 > The person who performs this integration should be an administrator of Canvas and an administrator of the Microsoft 365 tenant.
 
-1. Sign into the Microsoft Azure portal with the tenant admin account. The Azure tenant administrator should also have the Group administrator role.
-2. In a second browser window, sign into the [Microsoft OneDrive LTI Registration Portal](https://onedrivelti.microsoft.com/admin).
-3. Select the **Admin Consent** button and accept the permissions.
-4. Select the **Create new LTI Tenant** button. On the LTI Registration page select **Canvas** in the dropdown and enter the base URL of your Canvas instance.
+1. Sign into the [Microsoft OneDrive LTI Registration Portal](https://onedrivelti.microsoft.com/admin).
+2. Select the **Admin Consent** button and accept the permissions.
+3. Select the **Create new LTI Tenant** button. On the LTI Registration page select **Canvas** in the dropdown and enter the base URL of your Canvas instance.
 
 :::image type="content" source="media/OneDrive-LTI-07.png" alt-text="The LTI tenant administration page, with a dropdown field for choosing the LTI consumer platform and a URL text field.":::
 
-5. Copy the JSON by selecting the **Copy** button. This will be used to generate the key in Canvas.
+4. Copy the JSON by selecting the **Copy** button. This will be used to generate the key in Canvas.
 
 :::image type="content" source="media/OneDrive-LTI-08.png" alt-text="An image showing the copy button that will copy the displayed JSON text and make it available for key generation in Canvas.":::
 
-6. Sign into your Canvas instance as the administrator and select **Developer Keys** from the menu on the left side of the page. From the dropdown, create a developer key by choosing **LTI Key** from the dropdown on the upper right of the page.
+> [!NOTE]
+> If your Canvas instance is, for example, [https://contoso.test.instructure.com](https://contoso.test.instructure.com), then this complete URL should be entered.
+
+5. Sign into your Canvas instance as the administrator and select **Developer Keys** from the menu on the left side of the page. From the dropdown, create a developer key by choosing **LTI Key** from the dropdown on the upper right of the page.
 
 SCREEN HERE
 
