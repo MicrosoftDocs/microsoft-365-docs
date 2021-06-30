@@ -425,7 +425,7 @@ The built-in column is at the top of the **Frame Details** panel. (To switch bac
 
 ![Where to find the Columns drop down for the TCP Troubleshoot option (on top of the Frame Summary).](../media/64fd4baa-a872-4f07-b959-752d7d37fd62.PNG)
 
-Here's a filtered trace in Wireshark. There is a filter specific to the MSS value ( `tcp.options.mss`). The frames of a SYN, SYN/ACK, ACK handshake are linked at the bottom of the Wireshark equivalent to Frame Details (so frame 47 ACK, links to 46 SYN/ACK, links to 43 SYN) to make this kind of work easier.
+Here's a filtered trace in Wireshark. There is a filter specific to the MSS value (`tcp.options.mss`). The frames of a SYN, SYN/ACK, ACK handshake are linked at the bottom of the Wireshark equivalent to Frame Details (so frame 47 ACK, links to 46 SYN/ACK, links to 43 SYN) to make this kind of work easier.
 
 ![Trace filtered in Wireshark by tcp.options.mss for Max Segment Size (MSS).](../media/51e278db-801b-48bc-9b68-87cf92f03fd6.PNG)
 

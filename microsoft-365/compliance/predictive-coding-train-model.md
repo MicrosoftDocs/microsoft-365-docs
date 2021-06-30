@@ -10,7 +10,7 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-search.appverid: 
+search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: ""
@@ -20,11 +20,11 @@ description: ""
 
 After you create a predictive coding model in Advanced eDiscovery, the next step is to performing the first training round to train the model on what is relevant and non-relevant content in your review set. After you complete the first round of training, you can perform subsequent training rounds to improve the model's ability to predict relevant and non-relevant content.
 
-To review the predictive coding workflow, see [Learn about predictive coding in Advanced eDiscovery ](predictive-coding-overview.md#the-predictive-coding-workflow)
+To review the predictive coding workflow, see [Learn about predictive coding in Advanced eDiscovery](predictive-coding-overview.md#the-predictive-coding-workflow)
 
 ## Before you train a model
 
-- During a training round, label items as **Relevant** or **Not relevant** based on the relevancy of the content in the document. Don't base your decision on the values in the metadata fields. For example, for email messages or Teams conversations, don't base your labeling decision on the message participants. 
+- During a training round, label items as **Relevant** or **Not relevant** based on the relevancy of the content in the document. Don't base your decision on the values in the metadata fields. For example, for email messages or Teams conversations, don't base your labeling decision on the message participants.
 
 ## Train a model for the first time
 
@@ -58,10 +58,10 @@ After you perform the first training round, a job is started that does the follo
 
 - Based on how you labeled the 40 items in the training set, the model learns from your labeling and updates itself to become more accurate.
 
-- The model then processes each item in the entire review set and assigns a prediction score between **0** (not relevant) and **1** (relevant).  
+- The model then processes each item in the entire review set and assigns a prediction score between **0** (not relevant) and **1** (relevant).
 
 - The model assigns a prediction score to the 10 items in the control set that you labeled during the training round. The model compares the prediction score of these 10 items with the actual label that you assigned to the item during the training round. Based on this comparison, the model identifies the following classification (called the *Control set confusion matrix*) to assess the model's prediction performance:
-  
+
   |          |Model predicts item is relevant |Model predicts item is not relevant |
   |:---------|:---------|:---------|
   |**Reviewer labels item as relevant**| True positive| False positive |
