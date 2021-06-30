@@ -10,7 +10,7 @@ ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: None
 ms.collection: M365-security-compliance
-search.appverid: 
+search.appverid:
 - MOE150
 - MET150
 recommendations: false
@@ -24,10 +24,10 @@ Conditions and exceptions in DLP policies identify sensitive items that the poli
 - Conditions define what to include
 - Exceptions define what to exclude.
 - Actions define what happens as a consequence of condition or exception being met
- 
+
 Most conditions and exceptions have one property that supports one or more values. For example, if the DLP policy is being applied to Exchange emails, the **The sender** is condition requires the sender of the message. Some conditions have two properties. For example, the **A message header includes any of these words** condition requires one property to specify the message header field, and a second property to specify the text to look for in the header field. Some conditions or exceptions don’t have any properties. For example, the **Attachment is password protected** condition simply looks for attachments in messages that are password protected.
 
-Actions typically require additional properties. For example, when the DLP policy rule redirects a message, you need to specify where the message is redirected to. 
+Actions typically require additional properties. For example, when the DLP policy rule redirects a message, you need to specify where the message is redirected to.
 <!-- Some actions have multiple properties that are available or required. For example, when the rule adds a header field to the message header, you need to specify both the name and value of the header. When the rule adds a disclaimer to messages, you need to specify the disclaimer text, but you can also specify where to insert the text, or what to do if the disclaimer can't be added to the message. Typically, you can configure multiple actions in a rule, but some actions are exclusive. For example, one rule can't reject and redirect the same message.-->
 
 ## Conditions and exceptions for DLP policies
@@ -121,7 +121,7 @@ This table describes the actions that are available in DLP.
 |Forward the message for approval to sender’s manager| Moderate|First property: *ModerateMessageByManager*</br> Second property: *Boolean*|The Moderate parameter specifies an action for the DLP rule that sends the email message to a moderator. This parameter uses the syntax: @{ModerateMessageByManager = <$true \| $false>;|
 |Forward the message for approval to specific approvers| Moderate|First property: *ModerateMessageByUser*</br>Second property: *Addresses*|The Moderate parameter specifies an action for the DLP rule that sends the email message to a moderator. This parameter uses the syntax: @{ ModerateMessageByUser = @("emailaddress1","emailaddress2",..."emailaddressN")}|
 |Add recipient|AddRecipients|First property: *Field*</br>Second property: *Addresses*| Adds one or more recipients to the To/Cc/Bcc field of the message. This parameter uses the syntax: @{<AddToRecipients \| CopyTo \| BlindCopyTo> = "emailaddress"}|
-|Add the sender’s manager as recipient|AddRecipients | First property: *AddedManagerAction*</br>Second property: *Field* | Adds the sender's manager to the message as the specified recipient type ( To, Cc, Bcc ), or redirects the message to the sender's manager without notifying the sender or the recipient. This action only works if the sender's Manager attribute is defined in Active Directory. This parameter uses the syntax: @{AddManagerAsRecipientType = "<To \| Cc \| Bcc>"}|    
-Prepend subject    |PrependSubject    |String    |Adds the specified text to the beginning of the Subject field of the message. Consider using a space or a colon (:) as the last character of the specified text to differentiate it from the original subject text.</br>To prevent the same string from being added to messages that already contain the text in the subject (for example, replies), add the "The subject contains words" (ExceptIfSubjectContainsWords) exception to the rule.    
-|Apply HTML disclaimer    |ApplyHtmlDisclaimer    |First property: *Text*</br>Second property: *Location*</br>Third property: *Fallback action*    |Applies the specified HTML disclaimer to the required location of the message.</br>This parameter uses the syntax: @{ Text = “ ” ; Location = <Append \| Prepend>; FallbackAction = <Wrap \| Ignore \| Reject> }
+|Add the sender’s manager as recipient|AddRecipients | First property: *AddedManagerAction*</br>Second property: *Field* | Adds the sender's manager to the message as the specified recipient type (To, Cc, Bcc), or redirects the message to the sender's manager without notifying the sender or the recipient. This action only works if the sender's Manager attribute is defined in Active Directory. This parameter uses the syntax: @{AddManagerAsRecipientType = "<To \| Cc \| Bcc>"}|
+Prepend subject    |PrependSubject    |String    |Adds the specified text to the beginning of the Subject field of the message. Consider using a space or a colon (:) as the last character of the specified text to differentiate it from the original subject text.</br>To prevent the same string from being added to messages that already contain the text in the subject (for example, replies), add the "The subject contains words" (ExceptIfSubjectContainsWords) exception to the rule.|
+|Apply HTML disclaimer    |ApplyHtmlDisclaimer    |First property: *Text*</br>Second property: *Location*</br>Third property: *Fallback action*    |Applies the specified HTML disclaimer to the required location of the message.</br>This parameter uses the syntax: @{ Text = “ ” ; Location = <Append \| Prepend>; FallbackAction = <Wrap \| Ignore \| Reject> }|
 |Remove Office 365 Message Encryption and rights protection    | RemoveRMSTemplate | n/a| Removes Office 365 encryption applied on an email|
