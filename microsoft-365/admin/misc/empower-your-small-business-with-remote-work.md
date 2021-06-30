@@ -21,8 +21,8 @@ description: "Find the latest how-to information, tips, resources, and guidance 
 
 As businesses adapt to the increased need to have people work remotely and connect with their customers virtually, this site is updated with the latest how-to information, tips, resources, and guidance on remote work for businesses using Microsoft 365.
 
->[!TIP]
->Don't have Microsoft_Teams? Get 6 months of Microsoft Teams in Office for free (when you sign up for 1 year). Get the technologies described in this article as part of the offer. For details, see [Try 1 month free](https://aka.ms/SMBTeamsOffer).
+> [!TIP]
+> Don't have Microsoft_Teams? Get 6 months of Microsoft Teams in Office for free (when you sign up for 1 year). Get the technologies described in this article as part of the offer. For details, see [Try 1 month free](https://aka.ms/SMBTeamsOffer).
 
 ## Remote work for your small business (video)
 

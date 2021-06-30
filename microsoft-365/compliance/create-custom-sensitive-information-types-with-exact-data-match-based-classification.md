@@ -379,10 +379,10 @@ If you do not want to expose your clear text sensitive data file, you can hash i
 - a work or school account for Microsoft 365  that will be added to the **EDM\_DataUploaders** security group
 - a Windows 10 or Windows Server 2016 machine with .NET version 4.6.2 for running the EDMUploadAgent
 - a directory on your upload machine for the:
-    -  EDMUploadAgent
-    - your sensitive item file in .csv or .tsv format, **PatientRecords.csv** in our examples
-    -  and the output hash and salt files
-    - the datastore name from the **edm.xml** file, for this example its `PatientRecords`
+  - EDMUploadAgent
+  - your sensitive item file in .csv or .tsv format, **PatientRecords.csv** in our examples
+  - the output hash and salt files
+  - the datastore name from the **edm.xml** file, for this example its `PatientRecords`
 - If you used the [Exact Data Match schema and sensitive information type wizard](sit-edm-wizard.md) you ***must*** download it
 
 #### Set up the security group and user account
@@ -395,18 +395,17 @@ If you do not want to expose your clear text sensitive data file, you can hash i
 
 This computer must have direct access to your Microsoft 365 tenant.
 
->[!NOTE]
+> [!NOTE]
+>
 > Before you begin this procedure, make sure that you are a member of the **EDM\_DataUploaders** security group.
-
-> [!TIP]
+>
 > Optionally, you can run a validation against your .csv or .tsv file before uploading by running:
 >
->`EdmUploadAgent.exe /ValidateData /DataFile [data file] /Schema [schema file]`
+> `EdmUploadAgent.exe /ValidateData /DataFile [data file] /Schema [schema file]`
 >
->For more information on all the EdmUploadAgent.exe >supported parameters run
+> For more information on all the EdmUploadAgent.exe >supported parameters run
 >
 > `EdmUploadAgent.exe /?`
-
 
 #### Links to EDM upload agent by subscription type
 
