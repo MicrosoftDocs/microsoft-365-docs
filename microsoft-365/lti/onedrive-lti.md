@@ -63,12 +63,16 @@ A Canvas administrator can enable OneDrive LTI for all courses. If OneDrive LTI 
 
 :::image type="content" source="media/OneDrive-LTI-30.png" alt-text="The add app page, showing the By client ID option under the Configuration type dropdown menu.":::
 
+SWAP THIS ONE
+
+
 5. Paste the value of the developer key generated previously in the **Client ID** field, and select the **Submit** button.
 6. The OneDrive LTI won't show up immediately in the External Apps list. Refresh the browser page showing the list, and OneDrive LTI will be available.
 
 ## Collaboration Settings for OneDrive LTI 1.3 in Canvas Courses
 
-For collaboration to work for educators and students, you shouldn't enable the collaboration setting. This setting is generally not enabled, but if the setting is enabled, follow these steps:
+> [!NOTE]
+> For collaboration to work for educators and students, you shouldn't enable the collaboration setting. This setting is generally not enabled, but if the setting is enabled, you can follow the steps below to change that.
 
 1. Sign in as an admin and go to the **Settings** section.
 1. Go to **Feature Options** section, and then go to the **Course** section.
