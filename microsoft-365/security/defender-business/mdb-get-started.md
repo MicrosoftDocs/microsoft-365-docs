@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: article
-ms.date: 06/25/2021
+ms.date: 06/30/2021
 ms.prod: m365-security
 ms.technology: dforbiz
 localization_priority: Normal
@@ -33,10 +33,10 @@ Use the navigation bar on the left side of the screen to access your incidents, 
 
 | Item | Description |
 |:---|:---|
-| **Home** | Takes you to your Home page in Microsoft 365 Defender. The Home page includes cards to call out active threats and recommendations to improve your security posture. |
-| **Incidents** | Takes you to your list of recent incidents. As alerts are triggered, incidents are created. An incident can include multiple alerts. |
-| **Action center** | Takes you to your list of response actions. <br/>- The Pending tab lists actions that require approval to proceed. <br/>- The History tab lists actions that were completed or taken automatically. |
-| **Threat analytics** | Takes you to a view of current threats and provides an at-a-glance view of your threat landscape. |
+| **Home** | Takes you to your home page in Microsoft 365 Defender. The home page includes cards that highlight any active threats that were detected, along with recommendations to help secure your company’s data and devices. |
+| **Incidents** | Takes you to your list of recent incidents. As alerts are triggered, incidents are created. An incident can include multiple alerts. Make sure to review your incidents regularly. |
+| **Action center** | Takes you to your list of response actions, including completed or pending actions. <br/>- Select the **History** tab to see the actions that were taken. Some actions are taken automatically; others are taken manually or complete after they are approved. <br/>- Select the Pending tab to view actions that require approval to proceed.  |
+| **Threat analytics** | Takes you to a view of current threats and provides you with an at-a-glance view of your threat landscape. |
 | **Secure score** | Provides a representation of your company’s security position and offers suggestions to improve it. |
 | **Learning hub** | Provides access to learning paths, Several learning paths are available to help you learn more about Microsoft 365 Defender capabilities.  |
 | **Endpoints** > **Search** | Enables you to search for one or more devices that were onboarded to Microsoft Defender for business. |
