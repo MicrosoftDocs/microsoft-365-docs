@@ -47,8 +47,6 @@ The first step in creating a form processing model is to name it and create the 
 
     ![Screenshot showing the Automate menu and the Create a model to process forms option.](../media/content-understanding/create-ai-builder-model2.png)
 
-[**Update - add new settings to New form processing model**]
-
 2. In the **Create a model to process forms** panel, in the  **Name** field, type a name for your model (for example, *Purchase Orders*).
 
     ![Screenshot showing the Create a model to process forms panel.](../media/content-understanding/new-form-model2.png) 
@@ -75,48 +73,48 @@ The first step in creating a form processing model is to name it and create the 
 
    2. To use an existing content type, select **Select one**, and choose a content type from the list.
 
-   3. Your model creates a new view in your document library for your extracted data. If you do not want it to be the default view, in the **Library view for this model**, clear the **Set the view as default** checkbox.
+   3. Your model creates a new view in your document library for your extracted data. If you do not want it to be the default view, in the **Library view for this model** section, clear the **Set the view as default** checkbox.
 
-   4. To apply a retention label to files, in the **Retention label** section, select the retention label you want to use.
+   4. To apply a retention label to your files, in the **Retention label** section, select the retention label you want to use.
 
 4. Select **Create**.
 
 ## Step 2: Add and analyze documents
 
-After you create your new form processing model, your browser opens a new PowerApps AI Builder forms processing model page. On this page you can add and analyze your example documents. </br>
+After you create your new form processing model, your browser opens a new PowerApps AI Builder forms processing model page. On this page you can add and analyze your example documents. 
 
 > [!NOTE]
 > When looking for example files to use, see the [form processing model input document requirements and optimization tips](/ai-builder/form-processing-model-requirements). 
 
-   ![Power Apps AI Builder](../media/content-understanding/powerapps.png)</br> 
+   ![Power Apps AI Builder](../media/content-understanding/powerapps.png)
  
 1. Select **Add documents** to begin adding example documents analyzed to determine the named value pairs that can be extracted. You can then choose either **Upload from local storage**, **SharePoint**, or **Azure Blob storage**. You need to use at least five files for training.
 
-2. After adding files, select **Analyze** to check for any information common is all files. This may take several minutes to complete.</br> 
+2. After adding files, select **Analyze** to check for any information common is all files. This may take several minutes to complete.
  
-    ![Analyze files](../media/content-understanding/analyze.png)</br> 
+    ![Analyze files](../media/content-understanding/analyze.png)
 
-3. After the files have been analyzed, in the **Select the form fields you want to save** page select the file to view the detected fields.</br>
+3. After the files have been analyzed, in the **Select the form fields you want to save** page select the file to view the detected fields.
 
-    ![Select form fields](../media/content-understanding/select-form-fields.png)</br> 
+    ![Select form fields](../media/content-understanding/select-form-fields.png)
 
 ## Step 3: Select your form fields
 
 After analyzing the documents for fields, you can now see the fields that were found, and identify the ones that you want to save. Saved fields display as columns in your model's document library view and show the values extracted from each document.
 
-1. The next page displays one of your sample files and will highlight all common fields that were automatically detected by the system. </br>
+1. The next page displays one of your sample files and will highlight all common fields that were automatically detected by the system.
 
-    ![Select fields page](../media/content-understanding/select-fields-page.png)</br> 
+    ![Select fields page](../media/content-understanding/select-fields-page.png)
 
-2. Select the fields that you want to save and select the checkbox to confirm your selection. For example, in the Purchase Order model, choose to select the *Date*, *PO*, and *Total* fields.  Note that you can also choose to rename a field if you choose. </br>
+2. Select the fields that you want to save and select the checkbox to confirm your selection. For example, in the Purchase Order model, choose to select the *Date*, *PO*, and *Total* fields.  Note that you can also choose to rename a field if you choose.
 
-    ![Select PO#](../media/content-understanding/po.png)</br> 
+    ![Select PO#](../media/content-understanding/po.png)
 
 3. If a field was not detected by analysis, you can still choose to add it. Highlight the information you want to extract, and in the name box type in the name you want. Then select the check box. Note that you need to confirm undetected fields in your remaining sample files.
 
-4. Select **Confirm fields** after you have selected the fields that you want to save. </br>
+4. Select **Confirm fields** after you have selected the fields that you want to save.
  
-    ![Confirm fields after selecting fields](../media/content-understanding/confirm-fields.png)</br> 
+    ![Confirm fields after selecting fields](../media/content-understanding/confirm-fields.png)
  
 5. On the **Select the form fields you want to save** page, it shows the number of fields you have selected. Select **Done**.
 
@@ -124,15 +122,15 @@ After analyzing the documents for fields, you can now see the fields that were f
 
 After selecting the fields you want to save, the **Model Summary** page lets you train and test your model.
 
-1. On the **Model Summary** page, the saved fields will show in the **Selected fields** section. Select **Train** to begin training on your example files. Note that this may take a few minutes to complete.</br>
+1. On the **Model Summary** page, the saved fields will show in the **Selected fields** section. Select **Train** to begin training on your example files. Note that this may take a few minutes to complete.
 
-     ![Select fields train](../media/content-understanding/select-fields-train.png)</br> 
+     ![Select fields train](../media/content-understanding/select-fields-train.png) 
 
 2. When you see the notification that training has completed, select **Go to details page**. 
 
 3. On the **Model details** page, you can choose to test how your model works by selecting **Quick test**. This lets you drag and drop files to the page and see if the fields are detected.
 
-    ![Confirm fields](../media/content-understanding/select-fields-train.png)</br> 
+    ![Confirm fields](../media/content-understanding/select-fields-train.png)
 
 2. When you see the notification that training has completed, select **Go to details page**. 
 
@@ -148,21 +146,21 @@ After selecting the fields you want to save, the **Model Summary** page lets you
  
 ## Step 6: Use your model
 
-After publishing your model and creating it's Power Automate flow, you can use your model in your SharePoint document library.
+After publishing your model and creating its Power Automate flow, you can use your model in your SharePoint document library.
 
 1. After publishing your model, select **Go to SharePoint** to go to your document library.
 
-2. In the document library model view, notice that the fields you selected now display as columns.</br>
+2. In the document library model view, notice that the fields you selected now display as columns.
 
-    ![Document library model applied](../media/content-understanding/doc-lib-view.png)</br> 
+    ![Document library model applied](../media/content-understanding/doc-lib-view.png)
 
 3. Notice that the information link next to **Documents** notes that a forms processing model is applied to this document library.
 
-    ![Info button](../media/content-understanding/info-button.png)</br>  
+    ![Info button](../media/content-understanding/info-button.png)  
 
-4. Upload files to your document library. Any files that the model identifies as it's content type lists the files in your view and displays the extracted data in the columns.</br>
+4. Upload files to your document library. Any files that the model identifies as its content type lists the files in your view and displays the extracted data in the columns.
 
-    ![Done](../media/content-understanding/doc-lib-done.png)</br>  
+    ![Done](../media/content-understanding/doc-lib-done.png) 
 
 ## See Also
   
