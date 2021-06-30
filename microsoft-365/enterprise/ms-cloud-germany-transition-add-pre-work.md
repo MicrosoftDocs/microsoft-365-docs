@@ -168,7 +168,8 @@ Directory attributes are synced between Office 365 and Azure AD with the on-prem
 **Applies to:** Customers using line-of-business (LOB) apps with endpoints provided by Microsoft Cloud Deutschland<br>
 **When applied**: After completion of phase 2 and before end of phase 9
 
-If you're using a third-party service or line-of-business (LOB) apps that are integrated with Office 365, you must resolve any dependencies on endpoints provided by the Microsoft Cloud Deutschland instance. For example, if your LOB apps are connecting to `https://graph.microsoft.de/`, you must change the endpoint to `https://graph.microsoft.com/`. The endpoints of the Microsoft Office 365 Global service become available to your tenant after phase 2.
+If you're using a third-party service or line-of-business (LOB) apps that are integrated with Office 365, you must resolve any dependencies on endpoints provided by the Microsoft Cloud Deutschland instance. For example, if your LOB apps are connecting to `https://graph.microsoft.de/`, you must change the endpoint to `https://graph.microsoft.com/`. The endpoints of the Microsoft Office 365 Global service become available to your tenant after phase 2.<br><br>
+During the migration, while your organization is between phase 2 and phase 9, you cannot add any 3rd party multi-tenant applications (MTA) to your organization. Once the migration completes phase 9 you can resume adding or consenting to MTA applications for your organization.
 
 | Step(s) | Description | Impact |
 |:-------|:-------|:-------|
