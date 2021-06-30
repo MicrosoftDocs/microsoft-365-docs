@@ -25,7 +25,7 @@ Integrating OneDrive LTI with Canvas is a two step process. The first step enabl
 > The person who performs this integration should be an administrator of Canvas and an administrator of the Microsoft 365 tenant.
 
 1. Sign into the Microsoft Azure portal with the tenant admin account. The Azure tenant administrator should also have the Group administrator role.
-2. In a second browser window, sign into the [Microsoft OneDrive LTI Registration Portal](https://eduonedrivelti.microsoft.com/admin).
+2. In a second browser window, sign into the [Microsoft OneDrive LTI Registration Portal](https://onedrivelti.microsoft.com/admin).
 3. Select the **Admin Consent** button and accept the permissions.
 4. Select the **Create new LTI Tenant** button. On the LTI Registration page select **Canvas** in the dropdown and enter the base URL of your Canvas instance.
 
@@ -35,19 +35,22 @@ Integrating OneDrive LTI with Canvas is a two step process. The first step enabl
 
 :::image type="content" source="media/OneDrive-LTI-08.png" alt-text="An image showing the copy button that will copy the displayed JSON text and make it available for key generation in Canvas.":::
 
-6. Sign into your Canvas instance as the administrator and select **Developer Keys**. From the dropdown, create a developer key by choosing **LTI Key**.
-7. On the Configure page, in the **Method** dropdown, select **Paste JSON** as the method and paste the JSON text you copied in Step 5 in the text field that appears.
-8. Save the key and it becomes available in Canvas in an **Off** state. Turn the key **On** and copy the key given in the **Details** column.
+6. Sign into your Canvas instance as the administrator and select **Developer Keys** from the menu on the left side of the page. From the dropdown, create a developer key by choosing **LTI Key** from the dropdown on the upper right of the page.
+
+SCREEN HERE
+
+1. On the Configure page, in the **Method** dropdown, select **Paste JSON** as the method and paste the JSON text you copied in Step 5 in the text field that appears.
+1. Save the key and it becomes available in Canvas in an **Off** state. Turn the key **On** and copy the key given in the **Details** column.
 
 :::image type="content" source="media/OneDrive-LTI-19.png" alt-text="The Canvas page with the key set in an off state. It will need to be turned on and the key will need to be copied from the details column on this page.":::
 
-9. Return to the OneDrive LTI Registration portal and paste the key in the **Canvas Client ID** field.
+9. Return to the OneDrive LTI Registration portal and paste the key in the **Canvas Client ID** field. Select **Next** when you're ready.
 
 :::image type="content" source="media/OneDrive-LTI-20-Old.png" alt-text="The LTI tenant registration page, which shows the JSON text and the text box the key should be copied into.":::
 
-10. Enable embedding editing options for Office files. Review and save your changes.
+10. Review and save your changes.
 11. A success message will be displayed on successful registration.
-12. Registration details can also be seen by selecting the **View LTI Tenants** button.
+12. Your registration details can also be reviewed by selecting the **View LTI Tenants** button on the home page.
 
 ## Enable OneDrive LTI 1.3 in Canvas Courses
 
