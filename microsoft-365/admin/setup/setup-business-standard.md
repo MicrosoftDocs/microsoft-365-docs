@@ -2,8 +2,8 @@
 title: "Set up Microsoft 365 Business Standard"
 f1.keywords:
 - NOCSH
-ms.author: efrene
-author: efrene
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -30,7 +30,8 @@ description: "When you purchase Microsoft 365 Business Standard, you have the op
 
 When you purchase Microsoft 365 Business Standard, you have the option of adding a domain you own, or buying one during the sign-up. In this article, we'll walk you through the steps or adding an existing domain your already own or buying a new one.
 
-If you purchased a new domain when you signed up, your domain is all set up and you can move to [Add users and assign licenses](#add-users-and-assign-licenses).
+> [!IMPORTANT]
+> If you purchased a new domain when you signed up, your domain is all set up and you can move to [Add users and assign licenses](#add-users-and-assign-licenses).
 
 ## Before you begin
 
@@ -57,7 +58,7 @@ To add, modify or remove domains you must be a global administrator. For more in
 
     ![On GoDaddy Confirm Access page, select Authorize.](../../media/godaddyauth.png)
 
-### Add users and assign licenses
+## Add users and assign licenses
 
 You can add users in the wizard, but you can also [add users later](../add-users/add-users.md) in the admin center.
 
@@ -69,7 +70,7 @@ Any users you add in the wizard get automatically assigned a Microsoft 365 Busin
 
 2. After you've added the users, you'll also get an option to share credentials with the new users you added. You can choose to print them out, email them, or download them.
 
-### Connect your domain
+## Connect your domain
   
 To set up services, you have to update some records at your DNS host or domain registrar.
   
@@ -92,7 +93,7 @@ To set up services, you have to update some records at your DNS host or domain r
 
 1. From the **How you'll sign in** page on the Microsoft 365 Business Standard sign up, choose **Create a new business email account (advanced)**.
 
-4. Follow the steps to buy a new domain and enter the domain name you want to use (like contoso.com). After you've completed buying your domain, you can [add users and licenses](../add-users/add-users.md) and install your Office apps in the admin center.
+2. Follow the steps to buy a new domain and enter the domain name you want to use (like contoso.com). After you've completed buying your domain, you can [add users and licenses](../add-users/add-users.md) and install your Office apps in the admin center.
 
 ## Finish setting up
 

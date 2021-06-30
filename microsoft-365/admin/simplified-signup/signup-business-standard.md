@@ -71,6 +71,29 @@ You'll sign into Microsoft 365 with this email address. For example, alliebellew
 
 In this scenario, you want to add an existing domain you already own or buy a new domain, and create new business email accounts and a calender for you users. All users will have a shared domain email address. For example, their username, followed by @contoso.com. You and your users sign into Microsoft 365 with this new email address. For steps on how to buy or add a domain, see [Set up Microsoft 365 Business Standard](../setup/setup-business-standard.md).
 
+## Frequently asked questions
+
+### What is the difference between signing up with my existing email vs creating a new business email?
+
+
+### Do I have access to everything if I choose one option over the other?
+
+
+### What is a business email and what are the advantages to setting one up?
+
+
+### Why do I need to verify my domain to create a business email?
+
+
+### Is there a benefit to paying monthly vs annually?
+
+
+### How does recurring billing work?
+
+
+### What if I want to change my business name in future, how do I do that?
+
+
 ## Related articles
 
 [Set up Microsoft 365 Business Premium in the setup wizard](../../business/set-up.md)
