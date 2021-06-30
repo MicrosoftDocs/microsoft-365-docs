@@ -21,7 +21,7 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: "Learn how to move your business to Microsoft 365 Business Premium from Office 365 E3."
+description: "If you have an Office 365 E3 subscription but don't have more than 300 employees, consider switching to Microsoft 365 Business Premium."
 ---
 
 # Migrating from Office 365 E3 to Microsoft 365 Business Premium
@@ -34,25 +34,24 @@ Migrating is easy: First you switch licenses and all your data and user informat
 
 This table shows the differences between Microsoft 365 Business Premium and Office 365 E3.
 
-| Feature    | Support in Microsoft 365 Business Premium    | Support in Office 365 E3 | 
+| Feature    | Support in Microsoft 365 Business Premium    | Support in Office 365 E3 |
 |:-------|:-----|:-----|
-| **On-premises**        | | | 
-| Office apps<sup>1</sup>    | Microsoft 365 Apps for business    | Microsoft 365 Apps for enterprise | 
-| **Cloud productivity apps**        | | | 
-| Exchange Online and Outlook    | 50 GB storage limit per mailbox and unlimited Exchange Online Archiving    | 100 GB storage limit per mailbox and unlimited Exchange Online Archiving | 
+| **On-premises**        | | |
+| Office apps<sup>1</sup>    | Microsoft 365 Apps for business    | Microsoft 365 Apps for enterprise |
+| **Cloud productivity apps**        | | |
+| Exchange Online and Outlook    | 50 GB storage limit per mailbox and unlimited Exchange Online Archiving    | 100 GB storage limit per mailbox and unlimited Exchange Online Archiving |
 | Teams    | ![Included with Microsoft 365 Business Premium](../media/check-mark.png)    | ![Included with Office 365 E3](../media/check-mark.png) | 
 | OneDrive for Business    | 1 TB storage limit per user    | Unlimited | 
 | Yammer, SharePoint Online, Planner, Stream    | ![Included with Microsoft 365 Business Premium](../media/check-mark.png)    | ![Included with Office 365 E3](../media/check-mark.png) | 
-| StaffHub    | ![Included with Microsoft 365 Business Premium](../media/check-mark.png)    | ![Included with Office 365 E3](../media/check-mark.png) | 
-| MileIQ    | ![Included with Microsoft 365 Business Premium](../media/check-mark.png)    | | 
-| **Threat Protection**        | | | 
-| Defender for Office 365 Plan 1 | ![Included with Microsoft 365 Business Premium](../media/check-mark.png)    | Not included, but can be added on | 
-| **Identity management**        | | | 
-| Self-service password reset for hybrid Azure Active Directory (Azure AD) accounts, Azure AD multi-factor authentication (MFA), Conditional Access, password writeback for on-premises identities|     ![Included with Microsoft 365 Business Premium](../media/check-mark.png)    |  | 
+| StaffHub    | ![Included with Microsoft 365 Business Premium](../media/check-mark.png)    | ![Included with Office 365 E3](../media/check-mark.png) |
+| **Threat Protection**        | | |
+| Defender for Office 365 Plan 1 | ![Included with Microsoft 365 Business Premium](../media/check-mark.png)    | Not included, but can be added on |
+| **Identity management**        | | |
+| Self-service password reset for hybrid Azure Active Directory (Azure AD) accounts, Azure AD multi-factor authentication (MFA), Conditional Access, password writeback for on-premises identities|     ![Included with Microsoft 365 Business Premium](../media/check-mark.png)    |  |
 | **Device and app management**        | | |
 | Microsoft Intune, Windows AutoPilot|     ![Included with Microsoft 365 Business Premium](../media/check-mark.png)    |  |
 | Shared computer activation|     ![Included with Microsoft 365 Business Premium](../media/check-mark.png)    | ![Included with Office 365 E3](../media/check-mark.png)| 
-| Upgrade rights to Windows 10 Pro from Win 7/8.1 Pro licenses|     ![Included with Microsoft 365 Business Premium](../media/check-mark.png)    || 
+| Upgrade rights to Windows 10 Pro from Win 7/8.1 Pro licenses|     ![Included with Microsoft 365 Business Premium](../media/check-mark.png)    ||
 | **Information protection**        | | |
 |Office 365 Data Loss Prevention|    ![Included with Microsoft 365 Business Premium](../media/check-mark.png)|![Included with Office 365 E3](../media/check-mark.png)|
 |Azure Information Protection Plan 1, BitLocker enforcement|![Included with Microsoft 365 Business Premium](../media/check-mark.png)||
@@ -91,29 +90,28 @@ If you upgraded everyone in your organization to Microsoft 365 Business Premium,
 You can also complete these steps on the Devices page:
   
 1. In the admin center, in the left nav, go to **Devices** \> **Policies**.
-    
+
 2. On the **Device policies** page, choose **Add**.
-    
-3. In the **Add policy** pane give the policy a name, and then choose a **Policy type** from the drop-down. 
-    
+
+3. In the **Add policy** pane give the policy a name, and then choose a **Policy type** from the drop-down.
+
      You can set up application policies for protecting files on Android and iPhone devices, as well as Windows 10, and you can set up device configuration policies for company owned Windows 10 devices. See the following links for details:
-    
+
   - [Set app protection settings for Android or iOS devices](app-protection-settings-for-android-and-ios.md)
-    
+
   - [Set application protection settings for Windows 10 devices](protection-settings-for-windows-10-devices.md)
-    
+
   - [Set device protection settings for Windows 10 PCs](protection-settings-for-windows-10-pcs.md)
   
 4. Once you set up policies, you and your employees can set up devices:
-    
+
   - See [Set up Windows devices for Microsoft 365 Business Premium users](set-up-windows-devices.md) for steps for Windows devices. 
-    
+
   - See [Set up mobile devices for Microsoft 365 Business Premium users](set-up-mobile-devices.md) for steps for Android phones and iPhones. 
   
 ### Mailbox Size
 
 Microsoft 365 Business Premium has a 50 GB storage limit as it uses Exchange Online Plan 1. While migrating to Microsoft 365 Business Premium, if any of your users exceed 50 GB of mailbox storage, it is recommended that you assign this user an Exchange Online Plan 2 and remove the Exchange Online Plan 1 as it's not feasible to assign both.
-
 
 ### Threat protection
 
@@ -121,4 +119,13 @@ After migrating to Microsoft 365 Business Premium, you have Defender for Office 
 
 ### Sensitivity labels
 
-To start using sensitivity labels, see [Overview of sensitivity labels](../compliance/sensitivity-labels.md) and [create and manage sensitivity labels](https://support.microsoft.com/office/2fb96b54-7dd2-4f0c-ac8d-170790d4b8b9) video.
+To start using sensitivity labels, see [Overview of sensitivity labels](../compliance/sensitivity-labels.md) and [create and manage sensitivity labels](../business-video/create-sensitivity-labels.md) video.
+
+## Related content
+
+[Change plans manually](../commerce/subscriptions/change-plans-manually.md) (article)\
+[Upgrade Windows devices to Windows 10 Pro](upgrade-to-windows-pro-creators-update.md) (video)\
+[Set app protection settings for Android or iOS devices](app-protection-settings-for-android-and-ios.md) (article)\
+[Set or edit application protection settings for Windows 10 devices](protection-settings-for-windows-10-devices.md) (article)\
+[]
+

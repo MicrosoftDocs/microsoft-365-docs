@@ -1,6 +1,6 @@
 ---
 title: Deploy Microsoft Defender for Endpoint on Linux manually
-ms.reviewer: 
+ms.reviewer:
 description: Describes how to deploy Microsoft Defender for Endpoint on Linux manually from the command line.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
 search.product: eADQiWindows 10XVcnh
@@ -14,7 +14,7 @@ author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
   - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
@@ -87,7 +87,7 @@ In order to preview new features and provide early feedback, it is recommended t
     sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/centos/7/prod.repo
     ```
 
-    Or if you wish to explore new features on selected devices, you might want to deploy MDE for Linux to *insiders-fast* channel:
+    Or if you wish to explore new features on selected devices, you might want to deploy Microsoft Defender for Endpoint on Linux to *insiders-fast* channel:
 
     ```bash
     sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/centos/7/insiders-fast.repo
@@ -115,7 +115,7 @@ In order to preview new features and provide early feedback, it is recommended t
     sudo zypper addrepo -c -f -n microsoft-[channel] https://packages.microsoft.com/config/[distro]/[version]/[channel].repo
     ```
 
-    For example, if you are running SLES 12 and wish to deploy MDE for Linux from the *prod* channel:
+    For example, if you are running SLES 12 and wish to deploy Microsoft Defender for Endpoint on Linux from the *prod* channel:
 
     ```bash
     sudo zypper addrepo -c -f -n microsoft-prod https://packages.microsoft.com/config/sles/12/prod.repo
@@ -161,10 +161,10 @@ In order to preview new features and provide early feedback, it is recommended t
     sudo mv ./microsoft.list /etc/apt/sources.list.d/microsoft-[channel].list
     ```
     For example, if you chose *prod* channel:
-    
+
     ```bash
     sudo mv ./microsoft.list /etc/apt/sources.list.d/microsoft-prod.list
-    ```   
+    ```
 
 - Install the `gpg` package if not already installed:
 
@@ -323,7 +323,7 @@ Download the onboarding package from Microsoft Defender Security Center:
     > ```bash
     > mdatp health --field definitions_status
     > ```
-    > Please note that you may also need to configure a proxy after completing the initial installation. See [Configure Defender for Endpoint on Linux for static proxy discovery: Post-installation configuration](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-static-proxy-configuration#post-installation-configuration).
+    > Please note that you may also need to configure a proxy after completing the initial installation. See [Configure Defender for Endpoint on Linux for static proxy discovery: Post-installation configuration](/microsoft-365/security/defender-endpoint/linux-static-proxy-configuration#post-installation-configuration).
 
 5. Run a detection test to verify that the device is properly onboarded and reporting to the service. Perform the following steps on the newly onboarded device:
 
@@ -336,7 +336,7 @@ Download the onboarding package from Microsoft Defender Security Center:
     - Open a Terminal window. Copy and execute the following command:
 
         ``` bash
-        curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt
+        curl -o /tmp/eicar.com.txt https://www.eicar.org/download/eicar.com.txt
         ```
 
     - The file should have been quarantined by Defender for Endpoint on Linux. Use the following command to list all the detected threats:
@@ -344,6 +344,21 @@ Download the onboarding package from Microsoft Defender Security Center:
         ```bash
         mdatp threat list
         ```
+
+## Experience Linux endpoint detection and response (EDR) capabilities with simulated attacks
+
+To test out the functionalities of EDR for Linux, follow the steps below to simulate a detection on your Linux server and investigate the case. 
+
+1.	Verify that the onboarded Linux server appears in Microsoft Defender Security Center. If this is the first onboarding of the machine, it can take up to 20 minutes until it appears. 
+
+2.	Download and extract the [script file](https://aka.ms/LinuxDIY) to an onboarded Linux server and run the following command: `./mde_linux_edr_diy.sh`
+
+3.	After a few minutes, a detection should be raised in Microsoft Defender Security Center.
+
+4.	Look at the alert details, machine timeline, and perform your typical investigation steps.
+
+
+
 
 ## Installer script
 
@@ -380,13 +395,13 @@ When upgrading your operating system to a new major version, you must first unin
 
 ## How to migrate from Insiders-Fast to Production channel
 
-1. Uninstall the “Insiders-Fast channel” version of MDE for Linux.
+1. Uninstall the “Insiders-Fast channel” version of Defender for Endpoint on Linux.
 
     ``
     sudo yum remove mdatp
     ``
 
-1. Disable the MDE for Linux Insiders-Fast repo
+1. Disable the Defender for Endpoint on Linux Insiders-Fast repo
     ``
     sudo yum repolist
     ``
@@ -403,3 +418,6 @@ When upgrading your operating system to a new major version, you must first unin
 ## Uninstallation
 
 See [Uninstall](linux-resources.md#uninstall) for details on how to remove Defender for Endpoint on Linux from client devices.
+
+## See also
+- [Investigate agent health issues](health-status.md)

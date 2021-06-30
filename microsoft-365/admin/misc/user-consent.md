@@ -39,9 +39,8 @@ Here's how to turn User consent to apps on or off.
 
 2. On the **User consent to apps** page, select the option to turn user consent on or off.
 
-## More info
+## Related content 
 <a name="__toc379982114"> </a>
 
-To learn about how to configure your consent settings in Azure active directory, read [Configure the admin consent workflow](/azure/active-directory/manage-apps/configure-admin-consent-workflow).
-
-To learn about managing user consent to apps, read [Managing consent to applications and evaluating consent requests](/azure/active-directory/manage-apps/manage-consent-requests).
+[Configure the admin consent workflow](/azure/active-directory/manage-apps/configure-admin-consent-workflow) (article)\
+[Managing consent to applications and evaluating consent requests](/azure/active-directory/manage-apps/manage-consent-requests) (article)

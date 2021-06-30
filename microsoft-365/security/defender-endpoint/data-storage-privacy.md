@@ -51,7 +51,7 @@ Microsoft does not use your data for advertising.
 ## Data protection and encryption
 The Defender for Endpoint service utilizes state of the art data protection technologies which are based on Microsoft Azure infrastructure. 
 
-There are various aspects relevant to data protection that our service takes care of. Encryption is one of the most critical and it includes data encryption at rest, encryption in flight, and key management with Key Vault. For more information on other technologies used by the Defender for Endpoint service, see [Azure encryption overview](https://docs.microsoft.com/azure/security/security-azure-encryption-overview). 
+There are various aspects relevant to data protection that our service takes care of. Encryption is one of the most critical and it includes data encryption at rest, encryption in flight, and key management with Key Vault. For more information on other technologies used by the Defender for Endpoint service, see [Azure encryption overview](/azure/security/security-azure-encryption-overview). 
 
 In all scenarios, data is encrypted using 256-bit [AES encryption](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard) at the minimum.
 

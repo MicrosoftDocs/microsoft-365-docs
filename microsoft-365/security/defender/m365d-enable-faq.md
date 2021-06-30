@@ -65,7 +65,7 @@ Microsoft 365 Defender is available in Microsoft 365 security center. To go to t
 
 ##	What permissions do I need to access Microsoft 365 Defender in Microsoft 365 security center?
 
-Accounts assigned the following Azure Active Directory (AD) roles can access Microsoft 365 Defender functionality and data:
+Accounts assigned the following Azure Active Directory (Azure AD) roles can access Microsoft 365 Defender functionality and data:
 
 - Global administrator
 - Security administrator

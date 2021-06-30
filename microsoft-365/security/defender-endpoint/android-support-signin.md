@@ -71,6 +71,10 @@ You do not have Microsoft 365 license assigned, or your organization does not ha
 
 Contact your administrator for help.
 
+## Report unsafe site
+
+Phishing websites impersonate trustworthy websites for the purpose of obtaining your personal or financial information. Visit the [Provide feedback about network protection](https://www.microsoft.com/wdsi/filesubmission/exploitguard/networkprotection) page if you want to report a website that could be a phishing site.
+
 ## Phishing pages aren't blocked on some OEM devices
 
 **Applies to:** Specific OEMs only

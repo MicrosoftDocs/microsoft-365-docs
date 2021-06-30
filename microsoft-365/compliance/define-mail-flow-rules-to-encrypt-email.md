@@ -107,7 +107,7 @@ You can remove encryption that is accessible by your organization. This means an
 
 5. In **Name**, type a name for the rule, such as Remove encryption from outgoing mail.
 
-6. In **Apply this rule if**, select the conditions where encryption should be removed from messages. Add **The sender is located** \> **Inside the organization** _or_ **The recipient is located** \> **Inside the organization**.
+6. In **Apply this rule if**, select the conditions where encryption should be removed from messages. Add **The sender is located** \> **Inside the organization** for sending mail _or_ **The recipient is located** \> **Inside the organization** for receiving mail.
 
 7. In **Do the following**, select **Modify the message security** \> **Remove Office 365 Message Encryption and rights protection**.
 
@@ -126,5 +126,3 @@ If you haven't yet moved your organization to the new OME capabilities, Microsof
 [Add branding to encrypted messages](add-your-organization-brand-to-encrypted-messages.md)
 
 [Mail flow rules (transport rules) in Exchange Online](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)
-
-[Mail flow rules (transport rules) in Exchange Online Protection](../security/office-365-security/mail-flow-rules-transport-rules-0.md)

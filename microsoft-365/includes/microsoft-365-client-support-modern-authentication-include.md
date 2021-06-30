@@ -5,7 +5,7 @@
 |AZURE ACTIVE DIRECTORY ADMIN|N/A|N/A|N/A|✔|N/A|
 |AZURE ADMIN|N/A|N/A|N/A|N/A|N/A|
 |COMPANY PORTAL|✔|✔|✔|N/A|✔|
-|CORTANA|✔|✔|N/A|N/A|✔|
+|CORTANA|N/A|N/A|N/A|N/A|✔|
 |DELVE|✔|✔|N/A|N/A|N/A|
 |EXCEL|✔|✔|✔|✔|✔|
 |EXCHANGE ADMIN|N/A|N/A|N/A|✔|N/A|
@@ -36,7 +36,7 @@
 |TEAMS|✔|✔|✔|✔|N/A|
 |TO-DO|✔|✔|✔|N/A|✔|
 |VISIO|N/A|✔|N/A|✔|N/A|
-|WHITEBOARD|N/A|✔|N/A|N/A|✔|
+|WHITEBOARD|✔|✔|N/A|N/A|✔|
 |WORD|✔|✔|✔|✔|✔|
 |WORKPLACE ANALYTICS|N/A|N/A|N/A|N/A|N/A|
 |YAMMER|✔|✔|✔|✔|N/A|

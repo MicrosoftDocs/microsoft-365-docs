@@ -27,14 +27,14 @@ search.appverid:
 - MOL140
 - MOW150
 ms.assetid: a3e3bddb-582e-4133-8670-e61b9f58627e
-description: Learn to import contacts, calendars, and emails from Gmail or another email provider and migrate them to Microsoft 365.
+description: "Learn to import contacts, calendars, and emails from Gmail or another email provider and migrate them to Microsoft 365."
 ---
 
 # Migrate email and contacts to Microsoft 365
 
 Import or migrate email from Gmail or another email provider to Microsoft 365.
   
- **Want help with this?**  [Contact Microsoft 365 for business support](../contact-support-for-business-products.md) . 
+ **Want help with this?**  [Contact Microsoft 365 for business support](../../business-video/get-help-support.md) . 
   
 You need to use a version of Outlook that is installed on your desktop for this task. Outlook is included in most Microsoft 365 [plans](https://go.microsoft.com/fwlink/p/?LinkId=723731).
   
@@ -47,6 +47,8 @@ Follow these steps to import or migrate email, contacts, and calendar from Gmail
 - [Import contacts to Outlook](https://support.microsoft.com/office/bb796340-b58a-46c1-90c7-b549b8f3c5f8)
     
 - [Import Google Calendar](https://support.microsoft.com/office/098ed60c-936b-41fb-83d6-7e3786437330)
+
+## Watch: Import calendars
     
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/c1e45708-9a92-475b-910b-f5aa40614d92?autoplay=false]
   
@@ -85,3 +87,9 @@ Need more detailed steps? See [Add an account](https://support.microsoft.com/off
 ## Multiple mailboxes: Admins can bulk import email, contacts, and calendars to Microsoft 365
 
 Depending on your source email system, you can choose from several bulk migration methods. Read [Ways to migrate multiple email accounts to Microsoft 365](/Exchange/mailbox-migration/mailbox-migration) to decide which method works for you.
+
+## Related content
+
+[Plan your setup of Microsoft 365 for business](plan-your-setup.md) (article)\
+[Install Office applications](install-applications.md) (link page)\
+[Overview of the Microsoft 365 admin center](../../business-video/admin-center-overview.md) (video)

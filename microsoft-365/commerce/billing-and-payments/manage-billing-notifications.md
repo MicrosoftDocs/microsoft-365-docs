@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: prkalid, guyb
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,10 +16,11 @@ ms.collection:
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
-- commerce
+- commerce_billing
 search.appverid:
 - MET150
 description: "Learn how to manage who receives billing notification emails and invoice attachments."
+ms.date: 03/17/2021
 ---
 
 # Manage billing notifications and invoice attachments
@@ -30,9 +32,6 @@ The **Billing notifications** page lets you manage who receives billing notifica
 You must be a Global admin to do the steps described in this article. Billing admins can make some of these changes, as noted in the sections below. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
 
 ## Change the language you receive email in
-
-> [!NOTE]
-> Billing admins can also do the steps in this section.
 
 Billing notification emails are sent in your organization’s preferred language. To change the preferred language, use the following steps.
 
@@ -123,5 +122,6 @@ To receive your invoices as attachments to your invoice notifications, use the f
 ## Related content
 
 [View your bill or invoice](view-your-bill-or-invoice.md) (article)\
+[Billing information for Microsoft 365 for business in Mexico](mexico-billing-info.md) (article) \
 [Understand your bill or invoice for Microsoft 365 for business](understand-your-invoice2.md) (article)\
 [Add users and assign licenses at the same time](../../admin/add-users/add-users.md) (article)
