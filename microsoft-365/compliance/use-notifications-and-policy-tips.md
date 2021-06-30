@@ -32,9 +32,11 @@ A policy tip is a notification or warning that appears when someone is working w
   
 You can use email notifications and policy tips to increase awareness and help educate people about your organization's policies. You can also give people the option to override the policy, so that they're not blocked if they have a valid business need or if the policy is detecting a false positive.
   
-In the Security &amp; Compliance Center, when you create a DLP policy, you can configure the user notifications to:
+In the Compliance Center, when you create a DLP policy, you can configure the user notifications to:
   
 - Send an email notification to the people you choose that describes the issue.
+> [!NOTE]
+> Notification emails are sent unprotected.
     
 - Display a policy tip for content that conflicts with the DLP policy:
     
@@ -278,13 +280,9 @@ You can customize the text for policy tips separately from the email notificatio
   
 ## More information
 
-- [Overview of data loss prevention policies](data-loss-prevention-policies.md)
-    
+- [Learn about data loss prevention](dlp-learn-about-dlp.md)    
 - [Create a DLP policy from a template](create-a-dlp-policy-from-a-template.md)
-- [DLP policy conditions, exceptions, and actions (preview)](./dlp-microsoft-teams.md?view=o365-worldwide)
-    
+- [DLP policy conditions, exceptions, and actions (preview)](./dlp-microsoft-teams.md) 
 - [Create a DLP policy to protect documents with FCI or other properties](protect-documents-that-have-fci-or-other-properties.md)
-    
 - [What the DLP policy templates include](what-the-dlp-policy-templates-include.md)
-    
 - [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)

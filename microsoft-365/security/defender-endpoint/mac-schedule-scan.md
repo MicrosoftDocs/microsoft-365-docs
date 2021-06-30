@@ -1,7 +1,7 @@
 ---
-title: How to schedule scans with MDATP for macOS
-description: Learn how to schedule an automatic scanning time for Microsoft Defender ATP in macOS to better protect your organization's assets.
-keywords: microsoft, defender, atp, mac, scans, antivirus
+title: How to schedule scans with Microsoft Defender for Endpoint on macOS
+description: Learn how to schedule an automatic scanning time for Microsoft Defender for Endpoint in macOS to better protect your organization's assets.
+keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, scans, antivirus
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -99,4 +99,4 @@ You can create a scanning schedule using the *launchd* daemon on a macOS device.
 
 You can also schedule scans with Microsoft Intune. The [runMDATPQuickScan.sh](https://github.com/microsoft/shell-intune-samples/tree/master/Misc/MDATP#runmdatpquickscansh) shell script available at [Scripts for Microsoft Defender for Endpoint](https://github.com/microsoft/shell-intune-samples/tree/master/Misc/MDATP) will persist when the device resumes from sleep mode. 
 
-See [Use shell scripts on macOS devices in Intune](https://docs.microsoft.com/mem/intune/apps/macos-shell-scripts) for more detailed instructions on how to use this script in your enterprise.
+See [Use shell scripts on macOS devices in Intune](/mem/intune/apps/macos-shell-scripts) for more detailed instructions on how to use this script in your enterprise.

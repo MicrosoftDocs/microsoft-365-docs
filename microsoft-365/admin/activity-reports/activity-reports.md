@@ -19,7 +19,7 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
-description: "Get a periodic report of how people in your organization are using Microsoft 365 services. Usage Overview dashboard lets you drill into each chart for more insights."
+description: "Get a periodic report of how people in your organization are using Microsoft 365 services and drill into each chart for more insights."
 ---
 
 # Microsoft 365 Reports in the admin center
@@ -28,7 +28,7 @@ You can easily see how people in your business are using Microsoft 365 services.
   
 Reports are available for the last 7 days, 30 days, 90 days, and 180 days. Data won't exist for all reporting periods right away. The reports become available within 48 hours.
   
-Watch this video for on overview: on how you can use the reports:
+## Watch: Act on a usage report in Office 365
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/fb726f8e-aead-43b2-ba0f-53ba5b886bf7?autoplay=false]
   
@@ -37,7 +37,6 @@ Watch this video for on overview: on how you can use the reports:
 ::: moniker range="o365-worldwide"
 
 1. In the admin center, go to the **Reports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Usage</a> page.
-
 
 ::: moniker-end
 
@@ -84,52 +83,30 @@ Depending on your subscription, here are the available reports.
 - [Microsoft browser usage](browser-usage-report.md) 
   
 - [Email activity](email-activity-ww.md)
-
-- [Email activity for US Government](email-activity.md)
     
 - [Mailbox usage](mailbox-usage.md)
     
 - [Office activations](microsoft-office-activations-ww.md)
 
-- [Office activations for US Government](microsoft-office-activations.md)
-
 - [Active Users](active-users-ww.md)
-
-- [Active Users for US Government](active-users.md)
   
 - [Email apps usage](email-apps-usage-ww.md)
 
-- [Email apps usage for US Government](email-apps-usage.md)
-
 - [Forms activity](forms-activity-ww.md)
 
-- [Forms activity for US Government](forms-activity.md)
-
 - [Dynamics 365 Customer Voice activity](forms-pro-activity-ww.md)
-  
-- [Dynamics 365 Customer Voice activity for US Government](forms-pro-activity.md)
 
 - [Microsoft 365 groups](office-365-groups-ww.md)
-
-- [Microsoft 365 groups for US Government](office-365-groups.md)
   
 - [OneDrive for Business user activity](onedrive-for-business-activity-ww.md)
 
-- [OneDrive for Business user activity for US Government](onedrive-for-business-activity.md)
-
 - [OneDrive for Business usage](onedrive-for-business-usage-ww.md)
-
-- [OneDrive for Business usage for US Government](onedrive-for-business-usage.md)
 
 - [Microsoft 365 Apps usage](microsoft365-apps-usage-ww.md)
   
 - [SharePoint site usage](sharepoint-site-usage-ww.md)
-
-- [SharePoint site usage for US Government](sharepoint-site-usage.md)
   
 - [SharePoint activity](sharepoint-activity-ww.md)
-
-- [SharePoint activity for US Government](sharepoint-activity.md)
   
 - [Skype for Business Online activity](/SkypeForBusiness/skype-for-business-online-reporting/activity-report)
   
@@ -138,66 +115,16 @@ Depending on your subscription, here are the available reports.
 - [Skype for Business Online conference participant activity](/SkypeForBusiness/skype-for-business-online-reporting/conference-participant-activity-report)
   
 - [Skype for Business Online peer-to-peer activity](/SkypeForBusiness/skype-for-business-online-reporting/peer-to-peer-activity-report)
-  
-::: moniker range="o365-worldwide"
 
 - [Yammer activity](yammer-activity-report-ww.md)
 
-::: moniker-end
-
-::: moniker range="o365-worldwide"
-
-- [Yammer activity for US Government](yammer-activity-report.md)
-
-::: moniker-end
-
-::: moniker range="o365-worldwide"
-
 - [Yammer device usage](yammer-device-usage-report-ww.md)
-
-::: moniker-end
-
-::: moniker range="o365-worldwide"
-
-- [Yammer device usage for US Government](yammer-device-usage-report.md)
-
-::: moniker-end
-
-::: moniker range="o365-worldwide"
 
 - [Yammer groups activity report](yammer-groups-activity-report-ww.md)
 
-::: moniker-end
-
-::: moniker range="o365-worldwide"
-
-- [Yammer groups activity report for US Government](yammer-groups-activity-report.md)
-
-::: moniker-end
-
-::: moniker range="o365-worldwide"
-
 - [Microsoft Teams user activity](microsoft-teams-user-activity-preview.md)
 
-::: moniker-end
-
-::: moniker range="o365-worldwide"
-
-- [Microsoft Teams user activity for US Government](microsoft-teams-user-activity.md)
-
-::: moniker-end
-
-::: moniker range="o365-worldwide"
-
 - [Microsoft Teams device usage](microsoft-teams-device-usage-preview.md)
-
-::: moniker-end
-
-::: moniker range="o365-worldwide"
-
-- [Microsoft Teams device usage for US Government](microsoft-teams-device-usage.md)
-
-::: moniker-end
 
 ## How to view licensing information
 
@@ -235,6 +162,8 @@ Whenever you close a user's account, Microsoft will delete that user's usage dat
   
 However, when you select a particular day (see number 3), up to 28 days from the current date, the report show the user's usage for that day in the User Details table (see number 2).
   
-## Related articles
+## Related content
 
-[Reports in the Security &amp; Compliance Center](../../compliance/reports-in-security-and-compliance.md)
+[Reports in the Security &amp; Compliance Center](../../compliance/reports-in-security-and-compliance.md) (article)\
+[Microsoft 365 usage analytics](../usage-analytics/usage-analytics.md) (article)\
+[Customize the reports in Microsoft 365 usage analytics](../usage-analytics/customize-reports.md) (article)

@@ -7,7 +7,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-ms.localizationpriority: medium
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -15,6 +15,7 @@ ms.date: 09/03/2018
 ms.reviewer: 
 manager: dansimp
 ms.technology: mde
+ms.topic: article
 ---
 
 # Prevent users from seeing or interacting with the Microsoft Defender Antivirus user interface
@@ -34,18 +35,18 @@ In Windows 10, versions 1703, hiding the interface will hide Microsoft Defender 
 
 With the setting set to **Enabled**:
 
-![Screenshot of Windows Security without the shield icon and virus and threat protection section](images/defender/wdav-headless-mode-1703.png)
+:::image type="content" source="../../media/wdav-headless-mode-1703.png" alt-text="Windows Security without the shield icon and virus and threat protection section":::
 
 With the setting set to **Disabled** or not configured:
 
-![Screenshot of Windows Security showing the shield icon and virus and threat protection section](images/defender/wdav-headless-mode-off-1703.png)
+:::image type="content" source="../../media/wdav-headless-mode-1703.png" alt-text="Screenshot of Windows Security with shield icon and threat protection sections":::
 
 >[!NOTE]
 >Hiding the interface will also prevent Microsoft Defender Antivirus notifications from appearing on the endpoint. Microsoft Defender for Endpoint notifications will still appear. You can also individually [configure the notifications that appear on endpoints](configure-notifications-microsoft-defender-antivirus.md)
 
 In earlier versions of Windows 10, the setting will hide the Windows Defender client interface. If the user attempts to open it, they will receive a warning that says, "Your system administrator has restricted access to this app."
 
-![Warning message when headless mode is enabled in Windows 10, versions earlier than 1703](images/defender/wdav-headless-mode-1607.png)
+:::image type="content" source="../../media/wdav-headless-mode-1607.png" alt-text="Warning message when headless mode is enabled in Windows 10, versions earlier than 1703":::
 
 ## Use Group Policy to hide the Microsoft Defender AV interface from users
 

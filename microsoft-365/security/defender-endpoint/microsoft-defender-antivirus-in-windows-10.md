@@ -7,7 +7,8 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-ms.localizationpriority: high
+localization_priority: Priority
+ms.topic: article
 author: denisebmsft
 ms.author: deniseb
 ms.reviewer: 

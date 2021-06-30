@@ -82,9 +82,23 @@ When running an eDiscovery search that includes SharePoint Online and One Drive 
 
 ### Resolution
 
-1. Check location identified in the search to ensure the that the location of the file is correct and added in the search locations.
+1. Check location identified in the search to ensure that the location of the file is correct and added in the search locations.
 
 2. Use the procedures at [Manually request crawling and re-indexing of a site, a library, or a list](/sharepoint/crawl-site-content) to reindex the site.
+
+## Error/issue: This file wasn't exported because it doesn't exist anymore. The file was included in the count of estimated search results because it's still listed in the index. The file will eventually be removed from the index, and won't cause an error in the future.
+
+You may see that error when running an eDiscovery search that includes SharePoint Online and One Drive For Business locations. eDiscovery relies on teh SPO index to identify the file locations. If the file was deleted but the SPO index was not yet updated this error may occur.
+
+### Resolution 
+Open the SPO location and verify that this file indeed is not there.
+Suggested solution is to manually reindex the site, or wait till the site reindexes by the automatic background process.
+
+
+## Error/issue: This search result was not downloaded as it is a folder or other artefact that can't be downloaded by itself, any items inside the folder or library will be downloaded.
+
+You may see that error when running an eDiscovery search that includes SharePoint Online and One Drive For Business locations. It means that we were going to try and export the item reported in the index, but it turned out to be a folder so we did not export it. As mentioned in the error, we don't export folder items but we do export their contents.
+
 
 ## Error/issue: Search fails because recipient is not found
 
@@ -208,12 +222,14 @@ This is a client-side issue and in order to remediate it, please attempt the fol
 
 1. Try using another client/machine to download.
 
-2. Make sure to download to a local drive.
+2. Remove old searches that are no longer needed using [Remove-ComplianceSearch](/powershell/module/exchange/remove-compliancesearch) cmdlet.
 
-3. Make sure the virus scanner is not running.
+3. Make sure to download to a local drive.
 
-4. Make sure that no other export is downloading to the same folder or any parent folder.
+4. Make sure the virus scanner is not running.
 
-5. If the previous steps did not work, disable zipping and de-duplication.
+5. Make sure that no other export is downloading to the same folder or any parent folder.
 
-6. If this works then the issue is due to a local virus scanner or a disk issue.
+6. If the previous steps did not work, disable zipping and de-duplication.
+
+7. If this works then the issue is due to a local virus scanner or a disk issue.

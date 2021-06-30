@@ -7,7 +7,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-ms.localizationpriority: medium
+localization_priority: normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -15,6 +15,8 @@ ms.date: 07/23/2020
 ms.reviewer: 
 manager: dansimp
 ms.technology: mde
+audience: ITPro
+ms.topic: how-to
 ---
 
 # Use PowerShell cmdlets to configure and manage Microsoft Defender Antivirus
@@ -62,4 +64,4 @@ Omit the `-online` parameter to get locally cached help.
 
 - [Reference topics for management and configuration tools](configuration-management-reference-microsoft-defender-antivirus.md)
 - [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
-- [Microsoft Defender Antivirus Cmdlets](/powershell/module/defender/?view=win10-ps)
+- [Microsoft Defender Antivirus Cmdlets](/powershell/module/defender)

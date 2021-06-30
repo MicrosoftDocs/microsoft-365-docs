@@ -1,7 +1,7 @@
 ---
 title: Overview of management and APIs
 ms.reviewer: 
-description: Learn about the management tools and API categories in Microsoft Defender ATP
+description: Learn about the management tools and API categories in Microsoft Defender for Endpoint
 keywords: onboarding, api, siem, rbac, access, portal, integration, investigation, response, entities, entity, user context, application context, streaming
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,7 +16,8 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
+MS.technology: mde
+ms.custom: api
 ---
 
 # Overview of management and APIs 
@@ -36,7 +37,7 @@ Acknowledging that customer environments and structures can vary, Defender for E
 
 ## Endpoint onboarding and portal access 
 
-Device onboarding is fully integrated into Microsoft Endpoint Manager and Microsoft Intune for client devices and Azure Security Center for server devices, providing complete end-to-end experience of configuration, deployment, and monitoring. In addition, Microsoft Defender for Endpoint supports Group Policy and other third-party tools used for devices management.
+Device onboarding is fully integrated into Microsoft Endpoint Manager and Microsoft Intune for client devices and Azure Defender for server devices, providing complete end-to-end experience of configuration, deployment, and monitoring. In addition, Microsoft Defender for Endpoint supports Group Policy and other third-party tools used for devices management.
 
 Defender for Endpoint provides fine-grained control over what users with access to the portal can see and do through the flexibility of role-based access control (RBAC). The RBAC model supports all flavors of security teams structure:
 - Globally distributed organizations and security teams
@@ -72,6 +73,9 @@ Defender for Endpoint raw data streaming API provides the ability for customers 
 The Defender for Endpoint event information is pushed directly to Azure storage for long-term data retention, or to Azure Event Hubs for consumption by visualization services or additional data processing engines. 
 
 For more information, see [Raw data streaming API](raw-data-export.md).
+
+The new Microsoft 365 Defender Streaming API includes email and alert events in addition to device events. 
+For more information, see [Microsoft 365 Defender Streaming API](../defender/streaming-api.md).
 
 
 ## SIEM API
