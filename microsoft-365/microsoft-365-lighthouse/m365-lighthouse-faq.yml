@@ -66,7 +66,7 @@ sections:
               > Once you inactivate a tenant, you'll be unable to take action on the tenant until inactivation is complete.
           
           To learn more about tenants, see [Overview of tenants]().
-      - question: Will Microsoft 365 Lighthouse work if I have other subscriptions in my tenant&mdash;not just Microsoft 365 Business Premium?
+      - question: Will Microsoft 365 Lighthouse work if I have other subscriptions in my tenant besides Microsoft 365 Business Premium?
         answer: |
-          Microsoft 365 Lighthouse will work as long as you meet all the other Microsoft 365 Lighthouse requirements; however, some functionality may be limited. For example, if a user is missing a license for Intune, that user's devices, device compliance status, and threats status will be unavailable. For more information, see [Requirements to use Microsoft 365 Lighthouse]().
+          Yes, Microsoft 365 Lighthouse will work as long as you meet all the other Microsoft 365 Lighthouse requirements; however, some functionality may be limited. For example, if a user is missing a license for Intune, that user's devices, device compliance status, and threats status will be unavailable. For more information, see [Requirements to use Microsoft 365 Lighthouse]().
         
