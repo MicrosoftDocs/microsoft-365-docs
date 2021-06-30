@@ -25,6 +25,6 @@
 - name: Get help and support
   items: 
     - name: Get help and support
-      href: 
+      href: get-help-and-support.md
     - name: Microsoft 365 Lighthouse FAQ
       href: m365-lighthouse-faq.yml
