@@ -35,7 +35,7 @@ Microsoft Secure Score can be found at https://security.microsoft.com/securescor
 
 ### Remove improvement action related to Microsoft Cloud App Security
 
-- Use Cloud App Security to detect anomalous behavior
+- Use Cloud App Security to detect anomalous behavior.
 
 ## February 2021
 
