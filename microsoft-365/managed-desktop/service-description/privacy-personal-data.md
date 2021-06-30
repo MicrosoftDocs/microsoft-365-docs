@@ -14,12 +14,10 @@ audience: Admin, ITPro
 ms.localizationpriority: normal
 ---
 
-# Overview
-
+## Overview
 Microsoft Managed Desktop is an IT-as-a-Service (ITaaS) service for enterprise cloud customers designed to keep employees’ Windows devices deployed and updated. It also provides IT service management and operations, monitors security and incident response, as well as providing user support. This documentation provides additional details on data platform and privacy compliance for Microsoft Managed Desktop.
 
 ## Microsoft Managed Desktop data sources and purpose
-
 Microsoft Managed Desktop provides its service to enterprise customers and properly administers customers’ enrolled devices by using data from various sources. These sources, including Azure Active Directory, Microsoft Intune, Microsoft Windows 10, and Microsoft Defender for Endpoint, provide a comprehensive view of the devices that Microsoft Managed Desktop manages. The service also uses these Microsoft services to enable Microsoft Managed Desktop to provide ITaaS capabilities:
 
 - [Microsoft Windows 10 Enterprise](/windows/windows-10/) - for management of device setup experience, managing connections to other services, and operational support for IT pros.
@@ -34,18 +32,14 @@ Microsoft Managed Desktop provides its service to enterprise customers and prope
 - [Microsoft 365 apps for enterprise](https://www.microsoft.com/en-us/microsoft-365/enterprise/compare-office-365-plans?rtc=1) – for management of Microsoft 365 Apps.
 
 ## Microsoft Managed Desktop data process and storage
-
 Microsoft Managed Desktop relies on data from multiple Microsoft products and services to provide its service to enterprise customers. To accomplish the goal of protecting and maintaining enrolled devices, we process and copy data from these services to Microsoft Managed Desktop. When we process data, we follow the documented directions you provide, as referenced in the Online Services Terms and Microsoft Privacy Statement. When we process data, we follow the documented directions you provide, as referenced in the [Online Services Terms](https://www.microsoft.com/licensing/product-licensing/products) and [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement). Microsoft Managed Desktop’s processor duties include ensuring appropriate confidentiality, security, and resilience. Microsoft Managed Desktop employs additional privacy and security measures to ensure proper handling of personal identifiable data. 
 
-
 ## Microsoft Managed Desktop data storage and staff location
-
 Microsoft Managed Desktop stores its data in the Azure data centers in the United States. Personal data obtained by Microsoft Managed Desktop and other services are required to keep the service operational. If a device is removed from Microsoft Managed Desktop, we keep personal data for a maximum of 30 days except for alert data collected by Microsoft Defender for Endpoint, which is stored for 180 days for security purposes. For more information on data retention, see [Data retention, deletion, and destruction in Microsoft 365](/compliance/assurance/assurance-data-retention-deletion-and-destruction-overview).
 
 Microsoft Managed Desktop Engineering Operations and Security Operations teams are located in the United States and India. 
 
-## Microsoft Windows 10 diagnostic data
-
+### Microsoft Windows 10 diagnostic data
 Microsoft Managed Desktop uses [Windows 10 Enhanced diagnostic data](/windows/privacy/windows-diagnostic-data) to keep Windows secure, up to date, troubleshoot problems, and make product improvements. The enhanced diagnostic data setting includes more detailed information about the devices enrolled in Microsoft Managed Desktop and their settings, capabilities, and device health. When enhanced diagnostic data is selected, data, including required diagnostic data, are collected. See [Changes to Windows diagnostic data collection](/windows/privacy/changes-to-windows-diagnostic-data-collection) for more information about the Windows 10 diagnostic data setting and data collection.
 
 The diagnostic data terminology will change in future versions of Windows. Microsoft Managed Desktop is committed to processing only the data that the service needs. While this will mean the diagnostic level will change to **Optional**, Microsoft Managed Desktop will implement the limited diagnostic policies to fine-tune diagnostic data collection required for the service. For more details, see [Changes to Windows diagnostic data collection](/windows/privacy/changes-to-windows-diagnostic-data-collection).
@@ -54,21 +48,21 @@ Microsoft Managed Desktop only processes and stores system-level data from Windo
 
 For more information about the diagnostic data collection of Microsoft Windows 10, see the [Where we store and process personal data](https://privacy.microsoft.com/privacystatement#mainwherewestoreandprocessdatamodule) section of the Microsoft Privacy Statement.
 
-## Microsoft Windows Update for Business
+### Microsoft Windows Update for Business
 Microsoft Windows Update for Business uses data from Windows diagnostics to analyze update status and failures. Microsoft Managed Desktop leverages this data and uses it to mitigate and resolve problems to ensure that all registered devices are up to date based on a predefined update cadence.
 
-## Microsoft Azure Active Directory
+### Microsoft Azure Active Directory
 Identifying data used by Microsoft Managed Desktop is stored by Azure Active Directory (Azure AD) in a geographical location based on the location provided by the organization when subscribing to Microsoft online services, such as Microsoft Apps for enterprise and Azure. Identifying data used by Microsoft Managed Desktop is stored by Azure AD in a geographical location based on the location provided by the organization when subscribing to Microsoft online services such as Microsoft Apps for enterprise and Azure. For more information on where your Azure AD data is located, see [Azure Active Directory - Where is your data located?](https://msit.powerbi.com/view?r=eyJrIjoiODdjOWViZDctMWRhZS00ODUzLWI4MmQtNWM5NjBkZTBkNjFlIiwidCI6IjcyZjk4OGJmLTg2ZjEtNDFhZi05MWFiLTJkN2NkMDExZGI0NyIsImMiOjV9)
 
-## Microsoft Intune
+### Microsoft Intune
 Microsoft Intune collects, processes, and shares data to Microsoft Managed Desktop to support business operations and services. See [Data collection in Intune](/mem/intune/protect/privacy-data-collect) for more information about the data collected in Intune. 
 
 For more information on Microsoft Intune data locations, see [Where your Microsoft 365 customer data is stored](/microsoft-365/enterprise/o365-data-locations?view=o365-worldwide). Intune respects the storage location selections made by the administrator for customer data.
 
-## Microsoft Defender for Endpoint
+### Microsoft Defender for Endpoint
 Microsoft Defender for Endpoint collects and stores information for devices enrolled in Microsoft Managed Desktop for administration, tracking, and reporting purposes. Information collected includes file data (such as file names, size, and hashes), process data (running processes, hashes), registry data, network connection data, and device details (such as device identifiers, device names, and the operating system version). See [Microsoft Defender for Endpoint data storage and privacy](/microsoft-365/security/defender-endpoint/data-storage-privacy?view=o365-worldwide#what-data-does-microsoft-defender-atp-collect) for more information on Microsoft Defender for Endpoint’s data collection and storage locations. 
 
-## Microsoft 365 Apps for enterprise 
+### Microsoft 365 Apps for enterprise 
 Microsoft 365 Apps for enterprise collects and shares data with Microsoft Managed Desktop to ensure those apps are up to date with the latest version based on predefined update channels managed by Microsoft Managed Desktop. See [Microsoft Defender for Endpoint data storage and privacy](/microsoft-365/security/defender-endpoint/data-storage-privacy?view=o365-worldwide#what-data-does-microsoft-defender-atp-collect) for more information on Microsoft 365 Apps's data collection and storage locations.
 
 ## Major data change notification
