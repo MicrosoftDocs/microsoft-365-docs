@@ -90,7 +90,7 @@ Verify that Microsoft Defender Antivirus is installed and is active.
 
 1. In Microsoft Defender Security Center, go to **Settings > Device Management > Onboarding**.
 2. Select **Windows Server 2012 R2 and 2016**.
-3. Select **Download installation package** and save the .msi file. You can run the msi package through the installation wizard, or follow the command line steps in [Install Microsoft Defender Antivirus using command line](#install-microsoft-defender-antivirus-using-command-line).
+3. Select **Download installation package** and save the .msi file. You can run the msi package through the installation wizard, or follow the command line steps in [Install Microsoft Defender for Endpoint using the command line](#install-microsoft-defender-endpoint-using-command-line).
           
     >[!NOTE]
     >Microsoft Defender Antivirus will get installed and will be active unless you set it to passive mode. 
@@ -99,23 +99,23 @@ Verify that Microsoft Defender Antivirus is installed and is active.
 5. Install the installation package using any of the [Options to install Microsoft Defender Antivirus](#options-to-install-microsoft-defender-antivirus).
 6. Follow the steps provided in the [onboarding steps](#onboarding-steps) section.
 
-## Options to install Microsoft Defender Antivirus
-In the previous section, you downloaded an installation package. The installation package contains the installer for Microsoft Defender Antivirus. 
+## Options to install Microsoft Defender for Endpoint
+In the previous section, you downloaded an installation package. The installation package contains the installer for all Microsoft Defender for Endpoint components. 
 
 
-### Install Microsoft Defender Antivirus using command line
-Use the installation package from the previous step to install Microsoft Defender Antivirus. 
+### Install Microsoft Defender For Endpoint using command line
+Use the installation package from the previous step to install Microsoft Defender for Endpoint. 
 
-Run the following command to install Microsoft Defender Antivirus:
+Run the following command to install Microsoft Defender for Endpoint:
 
 ```
-Msiexec /i md4ws.msi /quiet FORCEPASSIVEMODE=1
+Msiexec /i md4ws.msi /quiet
 ```
 
-The `/quiet` command suppresses all notifications, while `FORCEPASSIVEMODE=1` immediately sets Microsoft Defender Antivirus to Passive mode.
+The `/quiet` command suppresses all notifications, while `FORCEPASSIVEMODE=1` immediately sets the Microsoft Defender Antivirus component to Passive mode.
 
 >[!NOTE]
->Microsoft Defender Antivirus doesn't automatically go into passive mode. You can choose to set Microsoft Defender Antivirus to run on passive mode if you are running a non-Microsoft antivirus/antimalware solution. <br><br>
+>Microsoft Defender Antivirus doesn't automatically go into passive mode. You can choose to set Microsoft Defender Antivirus to run in passive mode if you are running a non-Microsoft antivirus/antimalware solution. <br><br>
 >For more information, see [Need to set Microsoft Defender Antivirus to passive mode?](microsoft-defender-antivirus-on-windows-server.md#need-to-set-microsoft-defender-antivirus-to-passive-mode).
 
 
