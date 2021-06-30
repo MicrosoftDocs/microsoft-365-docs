@@ -37,7 +37,7 @@ Best practices for controlling, mitigating, and eliminating risks accross these 
 
 ## Information Risk Posture Management and Regulatory Compliance
 
-- Organization should have perform continous information risk posture assessment, preferrably in real-time, so that they can measure how the control implementation reflects on their posture.   
+- Organization should perform continous information risk posture assessment, preferrably in real-time, so that they can measure how the control implementation reflects on their posture.   
 - Oganization should be able to asess technical controls without the need to go through lengthy technical assessment excercises
 - Organization should be able to report their risk posture at any time to the board, legal and supervisory authorities.
 
@@ -51,26 +51,36 @@ While adopting organization wide approach, [Compliance Manager](compliance-manag
 
 ## Information Asset Management
 
-The Microsoft Information Protection Scanner is a program designed to detect, classify, and optionally protecting documents stored on File Shares and On-Premises SharePoint servers, as well as auto classification capabilities within Office365 apps enables your organization to classify and protect unstructured files and emails in order to allow a secure information between devices, mailboxes and apps even beyond the organization perimeter as remote work requires. You can be sure that the data are encrypted and protected from leakage.
-CASBs should help you do this by providing a wide array of capabilities that protect your environment across the following pillars:
+- The Microsoft Information Protection Scanner is a program designed to detect, classify, and optionally protecting documents stored on File Shares and On-Premises SharePoint servers, as well as auto classification capabilities within Office365 apps enables your organization to classify and protect unstructured files and emails in order to allow a secure information between devices, mailboxes and apps even beyond the organization perimeter as remote work requires. You can be sure that the data are encrypted and protected from leakage.
 
-•	Visibility: detect all cloud services; assign each a risk ranking; identify all users and third-party apps able to log in
-•	Data security: identify and control sensitive information (DLP) shared on Office365 or other cloud storages; respond to classification labels on content.
-•	Threat protection: offer adaptive access control (AAC); provide user and entity behavior analysis (UEBA); mitigate malware related to the use of cloud apps.
-Compliance: supply reports and dashboards to demonstrate cloud governance; assist efforts to conform to data residency and regulatory compliance requirements
-DLP capabilities extends to natively include Microsoft Teams chat and channel messages, including private channel messages. Teams DLP applies to both text and documents shared. It acts upon a central predefined DLP policy, with the help of user tips to guide the user for smooth and educatory experience.
-You can use Microsoft 365 data loss prevention (DLP) to monitor the actions that are being taken on items you've determined to be sensitive and to help prevent the unintentional sharing of those items on the user’s devices. Endpoint data loss prevention (Endpoint DLP) extends the activity monitoring and protection capabilities of DLP to sensitive items that are on Windows 10 devices. Once devices are onboarded into the Microsoft 365 compliance solutions, the information about what users are doing with sensitive items is made visible in activity explorer and you can enforce protective actions on those items via DLP policies.
-Advanced information governance allows you to retain important information and delete unimportant information by classifying information based on a retention or deletion policy or both. It includes intelligent/automated actions such as recommending policies, automatically applying labels to data, applying labels based on sensitive data types or queries, disposition review, and use of smart import filter
-Organizations of all types require a records-management solution to manage regulatory, legal, and business-critical records across their corporate data. Records management in Microsoft 365 helps an organization manage their legal obligations, provides the ability to demonstrate compliance with regulations, and increases efficiency with regular disposition of items that are no longer required to be retained, no longer of value, or no longer required for business purposes.
+- [Content explorer](data-classification-content-explorer.md) shows a current snapshot of the items that have a sensitivity label, a retention label or have been classified as a sensitive information type in your organization's Office365 resources.
+
+- [Microsoft Cloud App Security](https://github.com/MicrosoftDocs/CloudAppSecurityDocs/blob/master/CloudAppSecurityDocs/what-is-cloud-app-security.md) helps you extends your visibility and control accross other SaaS apps by providing a wide array of capabilities that protect your environment across the following pillars:
+
+1.	**Visibility:** detect all cloud services; assign each a risk ranking; identify all users and third-party apps able to log in
+2.	**Data security:** identify and control sensitive information (DLP) shared on Office365 or other cloud storages; respond to classification labels on content.
+3.	**Threat protection:** offer adaptive access control (AAC); provide user and entity behavior analysis (UEBA); mitigate malware related to the use of cloud apps.
+
+- [Sensitivity-labels](sensitivity-labels.md) should be created after identifying the senstive information, where it is stored, and the proper label taxonomy. Labels can be applied via manual or automatic means. This will determine how the data will be treated for the rest of its lifecycle.
+
+
+- You can use [Microsoft 365 data loss prevention (DLP)](data-loss-prevention-policies) to monitor the actions that are being taken on items you've determined to be sensitive and to help prevent the unintentional sharing of those items on the user’s devices. Endpoint data loss prevention [(Endpoint DLP)](dlp-configure-endpoints.md) extends the activity monitoring and protection capabilities of DLP to sensitive items that are on Windows 10 devices. Once devices are onboarded into the Microsoft 365 compliance solutions, the information about what users are doing with sensitive items is made visible in activity explorer and you can enforce protective actions on those items via DLP policies.
+
+- DLP capabilities extends to natively include Microsoft Teams chat and channel messages, including private channel messages. [Teams DLP](dlp-microsoft-teams.md) applies to both text and documents shared. It acts upon a central predefined DLP policy, with the help of user tips to guide the user for smooth and educatory experience.
+
+- [Advanced information governance](get-started-with-retention.md) allows you to retain important information and delete unimportant information by classifying information based on a retention or deletion policy or both. It includes intelligent/automated actions such as recommending policies, automatically applying labels to data, applying labels based on sensitive data types or queries, disposition review, and use of smart import filter.
+
+- Organizations of all types require a [records-management](get-started-with-records-management.md) solution to manage regulatory, legal, and business-critical records across their corporate data. Records management in Microsoft 365 helps an organization manage their legal obligations, provides the ability to demonstrate compliance with regulations, and increases efficiency with regular disposition of items that are no longer required to be retained, no longer of value, or no longer required for business purposes.
 When content reaches the end of its retention period, there are several reasons why you might want to review that content to decide whether it can be safely deleted ("disposed"). It enables you to:
 
-•	Suspend the deletion of relevant content in the event of litigation or an audit.
-•	Remove content from the disposition list to store in an archive, if that content has research or historical value.
-•	Assign a different retention period to the content, perhaps because the original retention settings were a temporary or provisional solution.
-•	Return the content to clients or transfer it to another organization.
+  -	Suspend the deletion of relevant content in the event of litigation or an audit.
+  -	Remove content from the disposition list to store in an archive, if that content has research or historical value.
+  -	Assign a different retention period to the content, perhaps because the original retention settings were a temporary or provisional solution.
+  -	Return the content to clients or transfer it to another organization.
 
 A disposition review can include content in Exchange mailboxes, SharePoint sites, OneDrive accounts, and Microsoft 365 groups. Content awaiting a disposition review in those locations is deleted only after a reviewer chooses to permanently delete the content.
-Azure Purview is a unified data governance service that helps you manage and govern your on-premises, multicloud, and software-as-a-service (SaaS) data and databases. Easily create a holistic, up-to-date map of your data landscape with automated data discovery, sensitive data classification, and end-to-end data lineage. Empowering data consumers to find valuable, trustworthy data.
+
+- [Azure Purview](https://github.com/MicrosoftDocs/azure-docs/blob/master/articles/purview/overview.md) is a unified data governance service that helps you manage and govern your on-premises, multicloud, and software-as-a-service (SaaS) data and databases. Easily create a holistic, up-to-date map of your data landscape with automated data discovery, sensitive data classification, and end-to-end data lineage. Empowering data consumers to find valuable, trustworthy data.
 
 
 ## Internal Risk Management
