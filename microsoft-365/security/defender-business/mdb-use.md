@@ -66,7 +66,7 @@ When you select a device, the flyout pane opens and displays more information ab
 
 On the flyout, you can view information and take one of several actions. Select the ellipsis (...) to open a menu that lists available actions.
 
-
+:::image type="content" source="../../media/defender-business/mdb-deviceinventory-selecteddeviceflyout-menu.png" alt-text="Screenshot of available actions for a selected device":::
 
 ## Manage devices
 
