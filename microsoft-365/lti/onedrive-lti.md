@@ -35,7 +35,7 @@ Integrating OneDrive LTI with Canvas is a two step process. The first step enabl
 
 :::image type="content" source="media/OneDrive-LTI-08.png" alt-text="An image showing the copy button that will copy the displayed JSON text and make it available for key generation in Canvas.":::
 
-6. Sign into your Canvas instance as the administrator and select **Developer Keys**. From the dropdown, choose **LTI Key** to create a developer key.
+6. Sign into your Canvas instance as the administrator and select **Developer Keys**. From the dropdown, create a developer key by choosing **LTI Key**.
 7. On the Configure page, in the **Method** dropdown, select **Paste JSON** as the method and paste the JSON text you copied in Step 5 in the text field that appears.
 8. Save the key and it becomes available in Canvas in an **Off** state. Turn the key **On** and copy the key given in the **Details** column.
 
@@ -43,7 +43,7 @@ Integrating OneDrive LTI with Canvas is a two step process. The first step enabl
 
 9. Return to the OneDrive LTI Registration portal and paste the key in the **Canvas Client ID** field.
 
-:::image type="content" source="media/OneDrive-LTI-20.png" alt-text="The LTI tenant registration page, which shows the JSON text and the text box the key should be copied into.":::
+:::image type="content" source="media/OneDrive-LTI-20-Old.png" alt-text="The LTI tenant registration page, which shows the JSON text and the text box the key should be copied into.":::
 
 10. Enable embedding editing options for Office files. Review and save your changes.
 11. A success message will be displayed on successful registration.
@@ -65,6 +65,8 @@ A Canvas administrator can enable OneDrive LTI for all courses. If OneDrive LTI 
 
 ## Collaboration Settings for OneDrive LTI 1.3 in Canvas Courses
 
-For collaboration to work for educators and students, disable XXX. If it is enabled, collaboration will not work.
+For collaboration to work for educators and students, you should not enable the collaboration setting. This setting is generally not enabled, but if the setting is enabled, follow these steps:
 
-XXX WE NEED TO KNOW THE SETTING FOR TEXT, YOU CANNOT REFER TO SOMETHING THAT IS A SCREENSHOT ONLY. THIS ALL NEEDS ELABORATION IN TEXT, NOT A SCREEN THAT BREAKS ACCESSIBILITY.
+1. Sign in as an admin and go to the **Settings** section.
+1. Go to **Feature Options** section, and then go to the **Course** section.
+1. Set the **External Collaborations Tool** feature to be not enabled.
