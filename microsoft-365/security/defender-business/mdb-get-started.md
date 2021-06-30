@@ -35,7 +35,7 @@ Use the navigation bar on the left side of the screen to access your incidents, 
 |:---|:---|
 | **Home** | Takes you to your home page in Microsoft 365 Defender. The home page includes cards that highlight any active threats that were detected, along with recommendations to help secure your company’s data and devices. |
 | **Incidents** | Takes you to your list of recent incidents. As alerts are triggered, incidents are created. An incident can include multiple alerts. Make sure to review your incidents regularly. |
-| **Action center** | Takes you to your list of response actions, including completed or pending actions. <br/>- Select the **History** tab to see the actions that were taken. Some actions are taken automatically; others are taken manually or complete after they are approved. <br/>- Select the Pending tab to view actions that require approval to proceed.  |
+| **Action center** | Takes you to your list of response actions, including completed or pending actions. <br/>- Select the **History** tab to see the actions that were taken. Some actions are taken automatically; others are taken manually or complete after they are approved. <br/>- Select the **Pending** tab to view actions that require approval to proceed.  |
 | **Threat analytics** | Takes you to a view of current threats and provides you with an at-a-glance view of your threat landscape. |
 | **Secure score** | Provides you with a representation of your company’s security position and offers suggestions to improve it. |
 | **Learning hub** | Provides access to learning paths. Several learning paths are available to help you learn more about Microsoft 365 Defender capabilities.  |
@@ -45,9 +45,9 @@ Use the navigation bar on the left side of the screen to access your incidents, 
 | **Endpoints** > **Tutorials** | Provides you with several scenarios to simulate an attack and walk through how to respond to the attack. |
 | **Endpoints** > **Device configuration** | Lists your device policies. You can also define new policies here. |
 | **Reports** | Lists your available security reports. These reports enable you to see your security trends, view details about threat detections and alerts, and learn more about your company’s vulnerable devices. |
-| **Health** | Enables you to view your service health status and plan for upcoming changes.<br/>- Select **Service health** to view the health status of the Microsoft 365 services that are included in your company’s subscription. <br/>- Select **Message center** to learn about planned changes and what to expect. |
-| **Permissions & roles** | Assign roles to members of your security team who will be using the Microsoft 365 Defender portal. <br/>Set up and manage device groups to onboard your company’s devices and assign threat protection policies. |
-| **Settings** | - Edit settings for the Microsoft 365 Defender portal and Microsoft Defender for business. <br/>- Onboard (or offboard) and your company’s devices (also referred to as endpoints).<br/>- Define rules, such as alert suppression rules, and set up indicators to block or allow certain files or processes. |
+| **Health** | Enables you to view your service health status and plan for upcoming changes. <br/>- Select **Service health** to view the health status of the Microsoft 365 services that are included in your company’s subscription. <br/>- Select **Message center** to learn about planned changes and what to expect.  |
+| **Permissions & roles** | Enables you to assign permissions to the people in your company who will be managing your security and viewing incidents and reports in the Microsoft 365 Defender portal. Also enables you to set up and manage device groups to onboard your company’s devices and assign your threat protection policies.  |
+| **Settings** | Enables you to edit settings for the Microsoft 365 Defender portal and Microsoft Defender for business. For example, you can onboard (or offboard) and your company’s devices (also referred to as endpoints). You can also define rules, such as alert suppression rules, and set up indicators to block or allow certain files or processes.  |
 | **More resources** | Navigate to other portals, such as Azure Active Directory. Keep in mind that the Microsoft 365 Defender portal should meet your needs without requiring you to navigate to other portals. |
 
 ## Next step
