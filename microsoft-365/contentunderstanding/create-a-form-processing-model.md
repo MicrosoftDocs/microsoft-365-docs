@@ -56,22 +56,29 @@ The first step in creating a form processing model is to name it and create the 
 
    1. In the **Extract info from tables?** section, select **Yes**.
 
-   2. In the **Where should we save table info?** section, select **An existing list**, and then select the appropriate list.
+      ![Screenshot showing the Extract info from tables section on the Create a model to process forms panel.](../media/content-understanding/extract-info-from-tables.png) 
 
-   3. . 
+   2. In the **Where should we save table info?** section:
+ 
+      - If you select **A new list** (the default setting), a suggested name is automatically provided in the **New list name** box. You can modify the name if you want to. If you want to show the list in the site navigation, select the **Show in site navigation** checkbox.
 
+      - If you select **An existing list**, in the **Selected list** box, choose the list you want to use.
 
-4. If you want to map this model to an existing content type in the SharePoint content types gallery, select **Advanced settings**.
+4. When you create a form processing model, you create a new SharePoint content type. A SharePoint content type represents a category of documents that have common characteristics and share a collection of columns or metadata properties for that particular content. SharePoint content types are managed through the SharePoint admin center.
+
+   If you want to map this model to an existing content type in the SharePoint content types gallery, select **Advanced settings**.
 
     ![Screenshot showing the Advanced settings in the Create a model to process forms panel.](../media/content-understanding/new-form-model-advanced-settings.png) 
 
-   When you create a form processing model, you create a new SharePoint content type. A SharePoint content type represents a category of documents that have common characteristics and share a collection of columns or metadata properties for that particular content. SharePoint content types are managed through the SharePoint admin center.
+   1. In the **Content type** section, choose whether to create a new content type or to use an existing one. 
 
+   2. To use an existing content type, select **Select one**, and choose a content type from the list.
 
+   3. Your model creates a new view in your document library for your extracted data. If you do not want it to be the default view, in the **Library view for this model**, clear the **Set the view as default** checkbox.
 
-5. Your model creates a new view in your document library for your extracted data. If you do not want it to be the default view, clear **Set the view as default**.
+   4. To apply a retention label to files, in the **Retention label** section, select the retention label you want to use.
 
-6. Select **Create**.
+4. Select **Create**.
 
 ## Step 2: Add and analyze documents
 
