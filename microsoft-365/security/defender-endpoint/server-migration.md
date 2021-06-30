@@ -1,6 +1,6 @@
 ---
 title: Server migration scenarios for the new version of Microsoft Defender for Endpoint
-description: 
+description: Read this article to get an overview of how to migrate your servers to Defender for Endpoint.
 keywords: migrate server, server, 2012r2, 2016, server migration, device management, configure Microsoft Defender for Endpoint servers, onboard Microsoft Defender for Endpoint servers
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -27,11 +27,10 @@ ms.technology: mde
 - Windows Server 2012 R2
 - Windows Server 2016
 
-In September 2021, we released a new version of Microsoft Defender for Endpoint for Windows Server 2012 R2 and Windows Server 2016.
-This page contains high-level instructions for various possible migration scenarios from the previous to the current solution. These high-level steps are intended as guidelines to be adjusted to the deployment and configuration tools available in your environment.
+In September 2021, we released a new version of Microsoft Defender for Endpoint for Windows Server 2012 R2 and Windows Server 2016. This article contains high-level instructions for various possible migration scenarios from the previous to the current solution. These high-level steps are intended as guidelines to be adjusted to the deployment and configuration tools available in your environment.
 
->[!NOTE]
->Full Microsoft Endpoint Configuration Manager (MECM) automation and integration to perform an easy upgrade will be available in the 2111 release of MECM. You CAN however use the Endpoint Protection node for configuration as well as Group Policy, PowerShell, Microsoft Endpoint Manager tenant attach or local configuration. In addition, you can leverage existing functionality in MECM to automate manual upgrade steps.
+> [!NOTE]
+> Full Microsoft Endpoint Configuration Manager (MECM) automation and integration to perform an easy upgrade will be available in the 2111 release of MECM. You CAN however use the Endpoint Protection node for configuration as well as Group Policy, PowerShell, Microsoft Endpoint Manager tenant attach or local configuration. In addition, you can leverage existing functionality in MECM to automate manual upgrade steps.
 
 ## Microsoft Endpoint Configuration Manager (MECM) migration scenarios 
 
