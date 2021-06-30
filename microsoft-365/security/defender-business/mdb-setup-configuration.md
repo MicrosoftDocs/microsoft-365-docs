@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 06/28/2021
+ms.date: 06/30/2021
 ms.prod: m365-security
 ms.technology: dforbiz
 localization_priority: Normal
@@ -70,6 +70,8 @@ You can manage your security policies and settings in Microsoft Defender for bus
 - Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)). Endpoint Manager now includes Microsoft Intune.
 
 When you begin to use Microsoft Defender for business, you will be asked whether you want to use Endpoint Manager or your Microsoft 365 Defender portal. We recommend using the Microsoft 365 Defender portal and its wizard-like experience for managing your devices and security settings. 
+
+### Why we recommend using the Microsoft 365 Defender portal to manage your security solution
 
 Microsoft Defender for business is designed to provide strong protection while saving you time and effort in configuring your security settings. The streamlined experience in the Microsoft 365 Defender portal makes it simple to onboard devices and manage them. 
 
