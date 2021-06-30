@@ -56,7 +56,7 @@ When you sign into the Microsoft 365 Defender portal, on the Home page, you’ll
 
 :::image type="content" source="../../media/defender-business/mdb-examplecards.png" alt-text="Screenshot of cards in the Microsoft 365 Defender portal":::
 
-
+Each card includes a button or a link you can use to view to more information and take action. For example, the **Devices at risk** card includes a **View details** button. When you select that button, you go to your **Device inventory**. 
 
 ## Manage devices
 
