@@ -65,7 +65,7 @@ A Canvas administrator can enable OneDrive LTI for all courses. If OneDrive LTI 
 
 ## Collaboration Settings for OneDrive LTI 1.3 in Canvas Courses
 
-For collaboration to work for educators and students, you should not enable the collaboration setting. This setting is generally not enabled, but if the setting is enabled, follow these steps:
+For collaboration to work for educators and students, you shouldn't enable the collaboration setting. This setting is generally not enabled, but if the setting is enabled, follow these steps:
 
 1. Sign in as an admin and go to the **Settings** section.
 1. Go to **Feature Options** section, and then go to the **Course** section.
