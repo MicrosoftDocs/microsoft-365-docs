@@ -116,7 +116,7 @@ Once completed, you should see onboarded Windows servers in the portal within an
 
 ### Option 2: Onboard Windows servers through Azure Security Center
 
-1. In the Microsoft 365 Defender navigation pane, select **Settings** > **Device management** > **Onboarding**.
+1. In the Microsoft 365 Defender navigation pane, select **Settings** > **Endpoints** >  **Onboarding** under **Device management**.
 
 2. Select **Windows Server 2008 R2 SP1, 2012 R2 and 2016** as the operating system.
 

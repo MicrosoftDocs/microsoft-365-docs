@@ -54,7 +54,8 @@ This feature is designed to prevent suspected malware (or potentially malicious 
 
 ## Create an indicator for files from the settings page
 
-1. In the navigation pane, select **Settings > Indicators**.
+1. In the navigation pane, select **Settings** > **Endpoints** > 
+**Indicators** (under **Rules**).
 
 2. Select the **File hash** tab.
 
