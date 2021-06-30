@@ -89,14 +89,18 @@ Verify that Microsoft Defender Antivirus is installed and is active.
 ### Download installation and onboarding packages 
 
 1. In Microsoft Defender Security Center, go to **Settings > Device Management > Onboarding**.
+
 2. Select **Windows Server 2012 R2 and 2016**.
+
 3. Select **Download installation package** and save the .msi file. You can run the msi package through the installation wizard, or follow the command line steps in [Install Microsoft Defender for Endpoint using the command line](#install-microsoft-defender-endpoint-using-command-line).
           
     >[!NOTE]
     >Microsoft Defender Antivirus will get installed and will be active unless you set it to passive mode. 
  
 4. Select **Download onboarding package** and save the .zip file.
+
 5. Install the installation package using any of the [Options to install Microsoft Defender Antivirus](#options-to-install-microsoft-defender-antivirus).
+
 6. Follow the steps provided in the [onboarding steps](#onboarding-steps) section.
 
 ## Options to install Microsoft Defender for Endpoint
@@ -125,9 +129,13 @@ The onboarding package for Windows Server 2019 through Microsoft Endpoint Manage
 
 
 ### Download package
+
 1. In Microsoft Defender Security Center, go to **Settings > Device Management > Onboarding**.
+
 2. Select **Windows Server 1803 and 2019**.
+
 3. Select **Download package**. Save it as WindowsDefenderATPOnboardingPackage.zip.
+
 4. Follow the steps provided in the [onboarding steps](#onboarding-steps) section. 
 
 
@@ -174,8 +182,6 @@ Verify that Microsoft Defender Antivirus and Microsoft Defender for Endpoint are
     If the result is 'The specified service doesn't exist as an installed service', then you'll need to install Microsoft Defender Antivirus. For more information, see [Microsoft Defender Antivirus on Windows Server](microsoft-defender-antivirus-on-windows-server.md).
 
     For information on how to use Group Policy to configure and manage Microsoft Defender Antivirus on your Windows servers, see [Use Group Policy settings to configure and manage Microsoft Defender Antivirus](use-group-policy-microsoft-defender-antivirus.md).
-
-
 
 2. Run the following command to verify that Microsoft Defender for Endpoint is running:
 
