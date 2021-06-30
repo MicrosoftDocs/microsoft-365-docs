@@ -41,12 +41,13 @@ Migration steps:
 
 1. Create a new collection with membership rules to include machines to be migrated. 
 
-2. Create a package to: 
-a. Remove the MMA workspace configuration for Microsoft Defender for Endpoint (https://docs.microsoft.com/en-us/azure/azure-monitor/agents/agent-manage#remove-a-workspace-using-powershell).
-b. Uninstall SCEP.
-c. Install the prerequisites (https://review.docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/configure-server-endpoints?view=o365-worldwide&branch=onboarding-revamp#prerequisites) where applicable.
-d. Install the Microsoft Defender for Endpoint for Windows Server 2012 R2 & 2016 package.
-e. Apply the onboarding package. 
+2. Create a package to perform the following tasks: 
+
+   1. Remove the MMA workspace configuration for Microsoft Defender for Endpoint. See [Remove a workspace using PowerShell](/azure/azure-monitor/agents/agent-manage).
+   2. Uninstall SCEP.
+   3. Install the [prerequisites](configure-server-endpoints.md#prerequisites) where applicable.
+   4. Install the Microsoft Defender for Endpoint for Windows Server 2012 R2 & 2016 package.
+   5. Apply the onboarding package. 
 
 3. Deploy the package to the new collection.
 
@@ -62,20 +63,21 @@ Migration steps:
 
 3. Author your policies in the Endpoint Protection node of MECM and target to the newly created collection.*
 
-4. Create a package to: 
-a. Remove the MMA workspace configuration for Microsoft Defender for Endpoint (https://docs.microsoft.com/en-us/azure/azure-monitor/agents/agent-manage#remove-a-workspace-using-powershell).
-b. Install the prerequisites (https://review.docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/configure-server-endpoints?view=o365-worldwide&branch=onboarding-revamp#prerequisites) where applicable.
-c. Install the Microsoft Defender for Endpoint for Windows Server 2012 R2 & 2016 package and enable passive mode (https://review.docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/configure-server-endpoints?view=o365-worldwide&branch=onboarding-revamp#install-microsoft-defender-antivirus-using-command-line)
-d. Apply the onboarding package. 
+4. Create a package to perform the following tasks:
 
-5. Apply updates
+   1. Remove the MMA workspace configuration for Microsoft Defender for Endpoint. See [Remove a workspace using PowerShell](/azure/azure-monitor/agents/agent-manage). 
+   2. Install the [prerequisites](configure-server-endpoints.md#prerequisites) where applicable.
+   3. Install the Microsoft Defender for Endpoint for Windows Server 2012 R2 and 2016 package and enable passive mode. See [Install Microsoft Defender Antivirus using command line](configure-server-endpoints.md#install-microsoft-defender-antivirus-using-command-line).
+   4. Apply the onboarding package. 
 
-6. Remove your 3rd party AV, either using the 3rd party console or Microsoft Endpoint Configuration Manager as
-appropriate, remove passive mode configuration*
+5. Apply updates.
 
-7. Apply the onboarding package
+6. Remove your non-Microsoft antivirus software by either using the non-Microsoft antivirus console or by using Microsoft Endpoint Configuration Manager as
+appropriate. Make sure to remove passive mode configuration.*
 
-*These steps only apply if you intend to replace your 3rd party antivirus solution. https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/why-use-microsoft-defender-antivirus?view=o365-worldwide#:~:text=11%20reasons%20to%20use%20Microsoft%20Defender%20Antivirus%20together,blocked%20mal%20...%20%207%20more%20rows%20
+7. Apply the onboarding package.
+
+* These steps only apply if you intend to replace your 3rd party antivirus solution. https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/why-use-microsoft-defender-antivirus?view=o365-worldwide#:~:text=11%20reasons%20to%20use%20Microsoft%20Defender%20Antivirus%20together,blocked%20mal%20...%20%207%20more%20rows%20
 
 If you want to move **from tenant attach to MDE attach**, ensure the server is a part of an Azure Active Directory group that has the required policies targeted then proceedto **uninstall** the Microsoft Endpoint Configuration Manager agent. 
 
