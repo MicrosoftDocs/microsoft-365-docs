@@ -17,13 +17,13 @@ ms.topic: article
 
 Microsoft Managed Desktop regularly evaluates devices to be included in the service. This article lists the specific devices that are currently supported. For a more general statement of device requirements, see [Device requirements](device-requirements.md).
 
-For more information on Microsoft Managed Desktop, see [Microsoft Managed Desktop documentation and resources](../index.yml). 
+For more information on Microsoft Managed Desktop, see [Microsoft Managed Desktop documentation and resources](../index.yml).
 
 [Select and validate new devices](../get-started/validate-device.md)
 
 <!-- Microsoft 365 E5; Device as a Service -->
 <!-- Split from device & technologies topic. Destination topic for aka.ms/device-list  -->
-To be enrolled in Microsoft Managed Desktop, a device must be one of the following models and meet or exceed the listed specifications for RAM, processor family, and disk space. 
+To be enrolled in Microsoft Managed Desktop, a device must be one of the following models and meet or exceed the listed specifications for RAM, processor family, and disk space.
 
 The links to devices here are for your reference only. If you want to order devices, work with your commercial channel contacts to ensure that you choose the correct configurations. In this table, the *archive date* is the date on which these models will be subject to a shorter Microsoft Managed Desktop service life; any such devices onboarded after this date will not receive a full three-year term of support from Microsoft Managed Desktop. Archived devices are also listed in [Microsoft Managed Desktop archived devices](archived-device-list.md). *Retirement date* is the date on which this model will no longer be supported by Microsoft Managed Desktop at all. On that date, all enrolled devices of this model will be removed from Microsoft Managed Desktop, no matter when they were enrolled.
 
@@ -58,8 +58,8 @@ The links to devices here are for your reference only. If you want to order devi
 | [HP Elite x2 G4 Tablet](https://store.hp.com/us/en/mdp/laptops/hp-elite-x2-3074457345617405170--1) | 256 GB / Intel i5 / 8 GB RAM | SKU with 5VS03AV | July 31, 2021 | July 31, 2024 |
 | [HP EliteBook x360 1030 / 1040 G7 Notebook PC](https://store.hp.com/us/en/pdp/hp-elitebook-x360-1030-g7-notebook-pc-customizable-8vs68av-mb#!) | 256 GB / Intel i5 / 8 GB RAM | SKU with 8XW08AV | Aug 31, 2021 | Aug 31, 2024 |
 | [HP Elite DragonFly](https://www8.hp.com/us/en/laptops/2-in-1s/elite-dragonfly-convertible.html) | 256 GB / Intel i5 / 8 GB RAM | SKU with 9MZ21AV | Mar 31, 2021 | Mar 31, 2024 |
-| **\*[HP EliteOne 800 G6 24/27 All-in-One PC ](https://store.hp.com/us/en/pdp/hp-eliteone-800-g6-all-in-one-touch-pc)** | 256 / Intel i5 / 8 GB RAM | SKU with 9XM14AV | Jun 30, 2022 | Jun 30, 2025 |
-| **\*[HP EliteDesk 800 G6 Desktop Mini PC ](https://store.hp.com/us/en/pdp/hp-elitedesk-800-g6-desktop-mini-pc#!)** | 256 / Intel i5 / 8 GB RAM | SKU with 9XM14AV | Jun 30, 2022 | Jun 30, 2025 |
+| **\*[HP EliteOne 800 G6 24/27 All-in-One PC](https://store.hp.com/us/en/pdp/hp-eliteone-800-g6-all-in-one-touch-pc)** | 256 / Intel i5 / 8 GB RAM | SKU with 9XM14AV | Jun 30, 2022 | Jun 30, 2025 |
+| **\*[HP EliteDesk 800 G6 Desktop Mini PC](https://store.hp.com/us/en/pdp/hp-elitedesk-800-g6-desktop-mini-pc#!)** | 256 / Intel i5 / 8 GB RAM | SKU with 9XM14AV | Jun 30, 2022 | Jun 30, 2025 |
 | [HP Z2 Mini G5 Workstation](https://store.hp.com/us/en/pdp/hp-z2-mini-g5-workstation-customizable-9jd39av-mb) | 256 GB / Intel i5 / 8 GB RAM | SKU with 8QR48AV| Dec 31, 2021 | Dec 31, 2024 |
 | **\*[HP ZBook Firefly 14/15 G7 Mobile Workstation](https://store.hp.com/us/en/mdp/laptops/hp-zbook-14u-mobile-workstation)** | 256 GB / Intel i5 / 8 GB RAM | SKU with 9MZ22AV, IR camera required | Nov 30, 2021 | Nov 30, 2024 |
 
@@ -74,9 +74,9 @@ The links to devices here are for your reference only. If you want to order devi
 | [Surface Pro 7](https://www.microsoft.com/surface/business/surface-pro-7) | 128 GB / Intel i5 / 8 GB RAM | None | Oct 22, 2021 | Oct 22, 2024 |
 | **\*[Surface Pro 7+](https://www.microsoft.com/p/surface-pro-7-for-business/8p43n3k93409?activetab=pivot%3aoverviewtab)** | 128 GB / Intel i5 / 8 GB RAM | None | Jan 15, 2022 | Jan 15, 2025 |
 
-In addition, the device must also meet these criteria:     
+In addition, the device must also meet these criteria:
 
-- If a specific SKU is listed in the device requirements, make sure you use it when you order. Doing so ensures that devices comply with Microsoft Managed Desktop software requirements. 
+- If a specific SKU is listed in the device requirements, make sure you use it when you order. Doing so ensures that devices comply with Microsoft Managed Desktop software requirements.
 - Not have completed the Windows first-run experience.
 - Be registered with Microsoft Managed Desktop using the [Device Registration](../get-started/register-devices-self.md) feature
 

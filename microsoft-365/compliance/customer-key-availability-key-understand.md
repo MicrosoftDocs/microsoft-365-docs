@@ -150,8 +150,8 @@ Microsoft 365 triggers the availability key only in specific circumstances. Thes
 
        - In this case, the availability key will be used only for system actions and not for user actions, the user request fails, and the user receives an error message.
 
->[!IMPORTANT]
->Microsoft 365 service code always has a valid login token for reasoning over customer data to provide value-adding cloud services. Therefore, until the availability key has been deleted, it can be used as a fallback for actions initiated by, or internal to, Exchange Online and Skype for Business such as search index creation or moving mailboxes. This applies to both transient ERRORS and ACCESS DENIED requests to Azure Key Vault.
+> [!IMPORTANT]
+> Microsoft 365 service code always has a valid login token for reasoning over customer data to provide value-adding cloud services. Therefore, until the availability key has been deleted, it can be used as a fallback for actions initiated by, or internal to, Exchange Online and Skype for Business such as search index creation or moving mailboxes. This applies to both transient ERRORS and ACCESS DENIED requests to Azure Key Vault.
 
 ### Triggers for SharePoint Online, OneDrive for Business, and Teams files
 
