@@ -51,7 +51,7 @@ While adopting organization wide approach, [Compliance Manager](compliance-manag
 
 ## Information Asset Management
 
-- The Microsoft Information Protection Scanner is a program designed to detect, classify, and optionally protecting documents stored on File Shares and On-Premises SharePoint servers, as well as auto classification capabilities within Office365 apps enables your organization to classify and protect unstructured files and emails in order to allow a secure information between devices, mailboxes and apps even beyond the organization perimeter as remote work requires. You can be sure that the data are encrypted and protected from leakage.
+- [Microsoft Information Protection Scanner](https://github.com/MicrosoftDocs/Azure-RMSDocs/blob/master/Azure-RMSDocs/deploy-aip-scanner.md) is a program designed to detect, classify, and optionally protecting documents stored on File Shares and On-Premises SharePoint servers, as well as auto classification capabilities within Office365 apps enables your organization to classify and protect unstructured files and emails in order to allow a secure information between devices, mailboxes and apps even beyond the organization perimeter as remote work requires. You can be sure that the data are encrypted and protected from leakage.
 
 - [Content explorer](data-classification-content-explorer.md) shows a current snapshot of the items that have a sensitivity label, a retention label or have been classified as a sensitive information type in your organization's Office365 resources.
 
@@ -85,12 +85,17 @@ A disposition review can include content in Exchange mailboxes, SharePoint sites
 
 ## Internal Risk Management
 
-Use built-in machine learning templates, tuned to provide rich insights on various types of risks, out of the box—or customize for your organizational requirements. Prevent oversharing of information, IP theft and intentional data leakage and exfiltration.
+Managing internal risks has been a topic that is keeping CISOs up at night. There are various types of internal risks such as neglegent insiders, malicious insiders and compromised insiders. Moreover, organizations today have to face the risks associated to leavers, disgrantled employees, or even employees who were subject to stressor events such as bad performance review or demotion. 
+
+Microsoft 365 risk prevention features are designed and built-in to our insider risk products and solutions. These solutions work together and use advanced service and 3rd-party indicators to help you quickly identify, triage, and act on risk activity. Most solutions offer a comprehensive detection, alert, and remediation workflow for your data analysts and investigators to use to quickly act on and minimize these risks.
+
+[Insider risk management](insider-risk-solution-overview.md#insider-risk-management) helps minimize internal risks by enabling you to detect, investigate, and act on malicious and inadvertent activities in your organization. Using built-in machine learning templates, tuned to provide rich insights on various types of risks, out of the box—or customize for your organizational requirements. Prevent oversharing of information, IP theft and intentional data leakage and exfiltration.
 
 ## Internal Compliance Management
 
 Leverage machine learning to detect policy violations across Microsoft Teams, Microsoft Exchange, and third-party content. Some of these risks are violations to corporate or HR policies, code of conduct, …etc.
-Information barriers (IBs) are policies that an admin can configure to prevent individuals or groups from communicating with each other. IBs are useful if, for example, one department is handling information that shouldn't be shared with other departments. IBs are also useful when a group needs to be isolated or prevented from communicating with anyone outside of that group.
+
+- [Information barriers (IB)](information-barriers-solution-overview.md) are policies that an admin can configure to prevent individuals or groups from communicating with each other. IBs are useful if, for example, one department is handling information that shouldn't be shared with other departments. IBs are also useful when a group needs to be isolated or prevented from communicating with anyone outside of that group.
 
 ## Access Management
 
@@ -113,42 +118,37 @@ Protect the top few percent of your most sensitive information in a manner that 
 
 ## Cyber Risk Management
 
-Defender for Endpoint uses the following combination of technology built into Windows 10 and Microsoft's robust cloud service:
+- Defender for Endpoint uses the following combination of technology built into Windows 10 and Microsoft's robust cloud service:
 
-•	Endpoint behavioral sensors: Embedded in Windows 10, these sensors collect and process behavioral signals from the operating system and send this sensor data to your private, isolated, cloud instance of Microsoft Defender for Endpoint.
+  -	Endpoint behavioral sensors: Embedded in Windows 10, these sensors collect and process behavioral signals from the operating system and send this sensor data to your private, isolated, cloud instance of Microsoft Defender for Endpoint.
 
-•	Cloud security analytics: Leveraging big-data, device-learning, and unique Microsoft optics across the Windows ecosystem, enterprise cloud products (such as Office 365), and online assets, behavioral signals are translated into insights, detections, and recommended responses to advanced threats.
+  -	Cloud security analytics: Leveraging big-data, device-learning, and unique Microsoft optics across the Windows ecosystem, enterprise cloud products (such as Office 365), and online assets, behavioral signals are translated into insights, detections, and recommended responses to advanced threats.
 
-•	Threat intelligence: Generated by Microsoft hunters, security teams, and augmented by threat intelligence provided by partners, threat intelligence enables Defender for Endpoint to identify attacker tools, techniques, and procedures, and generate alerts when they are observed in collected sensor data.
+  - Threat intelligence: Generated by Microsoft hunters, security teams, and augmented by threat intelligence provided by partners, threat intelligence enables Defender for Endpoint to identify attacker tools, techniques, and procedures, and generate alerts when they are observed in collected sensor data.
 
-•	Threat & Vulnerability Management
+  - Theat & Vulnerability Management
 This built-in capability uses a game-changing risk-based approach to the discovery, prioritization, and remediation of endpoint vulnerabilities and misconfigurations.
 
-•	Attack surface reduction
+  - Attack surface reduction
 The attack surface reduction set of capabilities provides the first line of defense in the stack. By ensuring configuration settings are properly set and exploit mitigation techniques are applied, the capabilities resist attacks and exploitation. This set of capabilities also includes network protection and web protection, which regulate access to malicious IP addresses, domains, and URLs.
 
-•	Endpoint detection and response capabilities are put in place to detect, investigate, and respond to advanced threats that may have made it past other security defenses.
+  - Endpoint detection and response capabilities are put in place to detect, investigate, and respond to advanced threats that may have made it past other security defenses.
 
-•	Advanced hunting provides a query-based threat-hunting tool that lets you proactively find breaches and create custom detections.
+  - Advanced hunting provides a query-based threat-hunting tool that lets you proactively find breaches and create custom detections.
 
-•	Automated investigation and remediation
-In conjunction with being able to quickly
-respond to advanced attacks, Microsoft
-Defender for Endpoint offers automatic 
-investigation and remediation capabilities that
-help reduce the volume of alerts in minutes at
-scale, and help you respond remotely
-Defender for Identity enables SecOps analysts and security professionals struggling to detect advanced identity attacks in hybrid environments to:
+  - Automated investigation and remediation
+In conjunction with being able to quickly respond to advanced attacks, Microsoft Defender for Endpoint offers automatic investigation and remediation capabilities that help reduce the volume of alerts in minutes at scale, and help you respond remotely. 
 
-•	Monitor users, entity behavior, and activities with learning-based analytics.
-•	Protect user identities and credentials stored in Active Directory, or remote working.
-•	Identify and investigate suspicious user activities and advanced attacks throughout the kill chain.
-Provide clear incident information on a simple timeline for fast triage
-Microsoft Defender for Office 365 safeguards your organization against malicious threats posed by email messages, links (URLs), and collaboration tools such as Microsoft teams’ content, OneDrive and SharePoint, even for 3rd party collaborators sharing malicious content to your employees on Microsoft teams.
-MCAS provides unique threat protection capabilities to protect access to SaaS apps such as Office365, it offers adaptive access control (AAC) and provide user and entity behavior analysis (UEBA).
+- Defender for Identity enables SecOps analysts and security professionals struggling to detect advanced identity attacks in hybrid environments to:
+
+  -	Monitor users, entity behavior, and activities with learning-based analytics.
+  -	Protect user identities and credentials stored in Active Directory, or remote working.
+  -	Identify and investigate suspicious user activities and advanced attacks throughout the kill chain.
+  - Provide clear incident information on a simple timeline for fast triage
+
+- Microsoft Defender for Office 365 safeguards your organization against malicious threats posed by email messages, links (URLs), and collaboration tools such as Microsoft teams’ content, OneDrive and SharePoint, even for 3rd party collaborators sharing malicious content to your employees on Microsoft teams.
+
+- [Microsoft Cloud App Security](https://github.com/MicrosoftDocs/CloudAppSecurityDocs/blob/master/CloudAppSecurityDocs/what-is-cloud-app-security.md) provides unique threat protection capabilities to protect access to SaaS apps such as Office365 and third-party SaaS apps. It offers adaptive access control (AAC) and provide user and entity behavior analysis (UEBA).
 
 
-
-- [Data loss prevention policies](data-loss-prevention-policies.md) 
-- - **Use EDM**
 
