@@ -70,10 +70,12 @@ On the flyout, you can view information and take one of several actions. Select 
 
 On the flyout, select an action. For example, you might choose **Run antivirus scan**, which will cause Microsoft Defender Antivirus to start a quick scan on the device. Or, you could select **Initiate Automated Investigation** to trigger an automated investigation on the device.
 
-## Manage devices
 
 ## Review remediation actions in the Action center
 
 As threats are detected, remediation actions come into play. Depending on the particular threat and how your security settings are configured, remediation actions might be taken automatically or only upon approval. Examples of remediation actions include sending a file to quarantine, stopping a process from running, and removing a scheduled task. 
 
 ### Remediation actions in Microsoft Defender for business
+
+
+## Manage devices
