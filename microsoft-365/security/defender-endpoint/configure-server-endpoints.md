@@ -44,7 +44,7 @@ For guidance on how to download and use Windows Security Baselines for Windows s
 
 ## Windows Server onboarding overview
 
-You'll need to complete the following genaral steps to succesfully onboard servers.
+You'll need to complete the following general steps to successfully onboard servers.
 
 
 ![Illustration of onboarding flow for Windows Servers and Windows 10 devices](images/server-onboarding-tools-methods.png)
@@ -92,14 +92,14 @@ Verify that Microsoft Defender Antivirus is installed and is active.
 
 2. Select **Windows Server 2012 R2 and 2016**.
 
-3. Select **Download installation package** and save the .msi file. You can run the msi package through the installation wizard, or follow the command line steps in [Install Microsoft Defender for Endpoint using the command line](#install-microsoft-defender-for-endpoint-using-command-line).
+3. Select **Download installation package** and save the .msi file. You can run the msi package through the installation wizard, or follow the command-line steps in [Install Microsoft Defender for Endpoint using the command line](#install-microsoft-defender-for-endpoint-using-command-line).
           
     >[!NOTE]
     >Microsoft Defender Antivirus will get installed and will be active unless you set it to passive mode. 
  
 4. Select **Download onboarding package** and save the .zip file.
 
-5. Install the installation package using any of the [Options to install Microsoft Defender Antivirus](#options-to-install-microsoft-defender-antivirus).
+5. Install the installation package using any of the options to install Microsoft Defender Antivirus. (See [Microsoft Defender Antivirus on Windows Server](microsoft-defender-antivirus-on-windows-server.md).)
 
 6. Follow the steps provided in the [onboarding steps](#onboarding-steps) section.
 
@@ -118,8 +118,8 @@ Msiexec /i md4ws.msi /quiet
 
 The `/quiet` command suppresses all notifications, while `FORCEPASSIVEMODE=1` immediately sets the Microsoft Defender Antivirus component to Passive mode.
 
->[!NOTE]
->Microsoft Defender Antivirus doesn't automatically go into passive mode. You can choose to set Microsoft Defender Antivirus to run in passive mode if you are running a non-Microsoft antivirus/antimalware solution. <br><br>
+> [!NOTE]
+> Microsoft Defender Antivirus doesn't automatically go into passive mode. You can choose to set Microsoft Defender Antivirus to run in passive mode if you are running a non-Microsoft antivirus/antimalware solution. <br><br>
 >For more information, see [Need to set Microsoft Defender Antivirus to passive mode?](microsoft-defender-antivirus-on-windows-server.md#need-to-set-microsoft-defender-antivirus-to-passive-mode).
 
 
