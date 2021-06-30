@@ -26,11 +26,13 @@ After you have setup and configured Microsoft Defender for business, you are rea
 
 ## Monitor your incidents & alerts
 
-In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, select Incidents & alerts > Alerts. Any alerts that were triggered are listed on the page.
+In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, select **Incidents**. Any alerts that were triggered are listed on the page.
+
+:::image type="content" source="../../media/defender-business/mdb-incidents-list.png" alt-text="Screenshot of the Incidents list":::
 
 Select an alert to open its flyout pane, where you can learn more about the alert. 
 
-SCREENSHOT
+:::image type="content" source="../../media/defender-business/mdb-incident-flyout.png" alt-text="Screenshot of incident selected with flyout open":::
 
 In the flyout pane, you can see the alert title, view a list of assets (such as endpoints or user accounts) that were affected, take available actions, and use links to view more information and even open the details page for the selected alert. 
 
@@ -51,6 +53,10 @@ Microsoft Defender for business assigns an alert severity based on the severity 
 ## Respond to and mitigate threats
 
 When you sign into the Microsoft 365 Defender portal, on the Home page, you’ll see cards that tell you at a glance how many threats were detected, along with how many user accounts, endpoints (devices), and other assets were affected. 
+
+:::image type="content" source="../../media/defender-business/mdb-examplecards.png" alt-text="Screenshot of cards in the Microsoft 365 Defender portal":::
+
+
 
 ## Manage devices
 
