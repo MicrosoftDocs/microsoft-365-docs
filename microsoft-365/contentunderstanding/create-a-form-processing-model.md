@@ -1,7 +1,7 @@
 ---
-title: "Create a form processing model"
-ms.author: efrene
-author: efrene
+title: Create a form processing model in Microsoft SharePoint Syntex
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
 audience: admin
 ms.topic: article
@@ -11,7 +11,7 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 localization_priority: Priority
-description: "Create a form processing model in Microsoft SharePoint Syntex."
+description: Learn how to create a form processing model in SharePoint Syntex."
 ---
 
 # Create a form processing model in Microsoft SharePoint Syntex
@@ -34,23 +34,23 @@ Creating a form processing model involves the following:
 
 ## Requirements
 
-You can only create a form processing model in SharePoint document libraries for which it is enabled. If form processing is enabled, you are able to see the **AI Builder** **"Create a form processing model'** under the **Automate** menu in your document library.  If you need processing enabled on your document library, you must contact your SharePoint administrator.
+You can only create a form processing model in SharePoint document libraries for which it is enabled. If form processing is enabled, you are able to see the **Automate** > **AI Builder** > **Create a model to process forms** menu in your document library. If you need processing enabled on your document library, you must contact your SharePoint administrator.
 
- ![Create an AI Builder model](../media/content-understanding/create-ai-builder-model.png)</br>
+ ![Create an AI Builder model](../media/content-understanding/create-ai-builder-model2.png)
 
 ## Step 1: Create a form processing model
 
 The first step in creating a form processing model is to name it and create the define the new content type and create a new document library view for it.
 
-1. From the document library, select the **Automate** menu, select **AI Builder**, and then select **Create a Form Processing model**.
+1. From the document library, select the **Automate** menu, select **AI Builder**, and then select **Create a model to process forms**.
 
-    ![Create a model](../media/content-understanding/create-ai-builder-model.png)</br>
+    ![Create a model](../media/content-understanding/create-ai-builder-model2.png)
 
 [**Update - add new settings to New form processing model**]
 
 2. In the **New form processing model** pane, in the  **Name** field, type a name for your model (for example, *Purchase Orders*).
 
-    ![New form processing model](../media/content-understanding/new-form-model.png)</br> 
+    ![New form processing model](../media/content-understanding/new-form-model.png) 
 
 3. When you create a form processing model, you create a new SharePoint content type. A SharePoint content type represents a category of documents that have common characteristics and share a collection of columns or metadata properties for that particular content. SharePoint Content Types are managed through the [Content types gallery]().
 
