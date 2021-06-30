@@ -26,7 +26,7 @@ After you have setup and configured Microsoft Defender for business, you are rea
 
 ## Monitor your incidents & alerts
 
-In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, select **Incidents**. Any incidents that were created as a result of triggered alerts are listed on the page.
+In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, select **Incidents**. Any incidents that were created are listed on the page.
 
 :::image type="content" source="../../media/defender-business/mdb-incidents-list.png" alt-text="Screenshot of the Incidents list":::
 
