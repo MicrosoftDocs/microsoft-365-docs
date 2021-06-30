@@ -70,8 +70,6 @@ For this option, you need to identify a person at each location. Ask them to bro
 
 Test reports are linked to a location if it was added with LAN subnet information, otherwise they are shown at the city location only.
 
-Measurement samples and office locations should start to appear 2-3 minutes after a test report is completed. For more information, see [Microsoft 365 network connectivity test (preview)](office-365-network-mac-perf-onboarding-tool.md).
-=======
 Measurement samples and office locations should start to appear 2-3 minutes after a test report is completed. For more information, see [Microsoft 365 network connectivity test](office-365-network-mac-perf-onboarding-tool.md).
 
 >[!NOTE]
