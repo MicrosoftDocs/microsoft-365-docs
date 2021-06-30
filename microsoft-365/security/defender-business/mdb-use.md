@@ -68,6 +68,8 @@ On the flyout, you can view information and take one of several actions. Select 
 
 :::image type="content" source="../../media/defender-business/mdb-deviceinventory-selecteddeviceflyout-menu.png" alt-text="Screenshot of available actions for a selected device":::
 
+On the flyout, select an action. For example, you might choose **Run antivirus scan**, which will cause Microsoft Defender Antivirus to start a quick scan on the device. Or, you could select **Initiate Automated Investigation** to trigger an automated investigation on the device.
+
 ## Manage devices
 
 ## Review remediation actions in the Action center
