@@ -79,10 +79,10 @@ When you create a rule in the DLP policy, you can select an action for non-Micro
 > [NOTE]
 > DLP policies applied to non-Microsoft apps use Microsoft Cloud App Security. When the DLP policy for a non-Microsoft app is created, the same policy will be automatically created in Microsoft Cloud App Security.
 
-For information about creating and configuring DLP policies, see [Create test and tune a DLP policy](./create-test-tune-dlp-policy.md?view=o365-worldwide).
+For information about creating and configuring DLP policies, see [Create test and tune a DLP policy](./create-test-tune-dlp-policy.md).
 
 ## See Also
 
-- [Create test and tune a DLP policy](./create-test-tune-dlp-policy.md?view=o365-worldwide)
-- [Get started with the default DLP policy](./get-started-with-the-default-dlp-policy.md?view=o365-worldwide)
-- [Create a DLP policy from a template](./create-a-dlp-policy-from-a-template.md?view=o365-worldwide)
+- [Create test and tune a DLP policy](./create-test-tune-dlp-policy.md)
+- [Get started with the default DLP policy](./get-started-with-the-default-dlp-policy.md)
+- [Create a DLP policy from a template](./create-a-dlp-policy-from-a-template.md)

@@ -130,11 +130,11 @@ If you agree with this expanded definition of authorization, then you need to im
 - [Azure AD Identity Protection](/azure/active-directory/identity-protection/)
 - [Microsoft Defender for Identity](/azure-advanced-threat-protection/)
 - [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
-- [Microsoft Defender for Office 365](../security/office-365-security/defender-for-office-365.md?view=o365-worldwide)
+- [Microsoft Defender for Office 365](../security/office-365-security/defender-for-office-365.md)
 - [Microsoft Cloud App Security](/cloud-app-security/) (MCAS)
-- [Microsoft 365 Defender](../security/defender/microsoft-365-defender.md?view=o365-worldwide)
+- [Microsoft 365 Defender](../security/defender/microsoft-365-defender.md)
 - [Microsoft Intune](/mem/intune/)
-- [Microsoft Information Protection](../compliance/information-protection.md?view=o365-worldwide) (MIP)
+- [Microsoft Information Protection](../compliance/information-protection.md) (MIP)
 - [Azure Sentinel](/azure/sentinel/)
 
 Of course, in addition to Azure AD, various services and applications have their own specific authorization models. Some of these are discussed later in the delegation section.
@@ -226,7 +226,7 @@ Sometimes scenarios call for adding an external user to a role (see the multi-te
 
 In a sense, these are an evolution of the Exchange role groups model. However, Exchange Online has its own [role group management](/exchange/permissions-exo) interface. Some role groups in Exchange Online are locked and managed from Azure AD or the Security & Compliance Center, but others might have the same or similar names and are managed in Exchange Online (adding to the confusion). I recommend you avoid using the Exchange Online user interface unless you need scopes for Exchange management.
 
-You can't create custom roles. Roles are defined by services created by Microsoft and will grow as new services are introduced. This is similar in concept to [roles defined by applications](/azure/active-directory/develop/howto-add-app-roles-in-azure-ad-apps) in Azure AD. When new services are enabled, often new role groups need to be created in order to grant or delegate access to these (for example, [insider risk management](../compliance/insider-risk-management-configure.md?view=o365-worldwide)).
+You can't create custom roles. Roles are defined by services created by Microsoft and will grow as new services are introduced. This is similar in concept to [roles defined by applications](/azure/active-directory/develop/howto-add-app-roles-in-azure-ad-apps) in Azure AD. When new services are enabled, often new role groups need to be created in order to grant or delegate access to these (for example, [insider risk management](../compliance/insider-risk-management-configure.md)).
 
 These role groups also require direct membership and cannot contain Azure AD groups. Unfortunately, today these role groups are not supported by Azure AD PIM. Like Azure AD roles, I tend to recommend management of these through APIs or a partner governance product like Saviynt, or others.
 
@@ -279,7 +279,7 @@ Examples of Microsoft 365 logs that are accessed through other APIs include the 
 - [Azure AD](/azure/azure-monitor/platform/diagnostic-settings) (activities not related to Office 365)
 - [Exchange Message Tracking](/powershell/module/exchange/get-messagetrace)
 - Threat/UEBA Systems discussed above (for example, Azure AD Identity Protection, Microsoft Cloud App Security, Microsoft Defender for Endpoint, and so on)
-- [Microsoft information protection](../compliance/data-classification-activity-explorer.md?view=o365-worldwide)
+- [Microsoft information protection](../compliance/data-classification-activity-explorer.md)
 - [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/api-power-bi)
 - [Microsoft Graph](https://graph.microsoft.com)
 
@@ -295,9 +295,9 @@ The diagram above represents built-in capabilities to send logs to Event Hub and
 
 Combining all the logs into one storage location includes added benefit, such as cross-correlations, custom retention times, augmenting with data needed to support RBAC model, and so on. Once data is in this storage system, you can create a Power BI dashboard (or another type of visualization) with an appropriate RBAC model.
 
-Logs do not have to be directed to one place only. It might also be beneficial to integrate [Office 365 Logs with Microsoft Cloud App Security](/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security) or a custom RBAC model in [Power BI](../admin/usage-analytics/usage-analytics.md?view=o365-worldwide). Different repositories have different benefits and audiences.
+Logs do not have to be directed to one place only. It might also be beneficial to integrate [Office 365 Logs with Microsoft Cloud App Security](/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security) or a custom RBAC model in [Power BI](../admin/usage-analytics/usage-analytics.md). Different repositories have different benefits and audiences.
 
-It's worth mentioning that there is a very rich built-in analytics system for security, threats, vulnerabilities, and so on in a service called [Microsoft 365 Defender](../security/defender/microsoft-365-defender.md?view=o365-worldwide).
+It's worth mentioning that there is a very rich built-in analytics system for security, threats, vulnerabilities, and so on in a service called [Microsoft 365 Defender](../security/defender/microsoft-365-defender.md).
 
 Many large customers want to transfer this log data to a third-party system (for example, SIEM). There are different approaches for this, but in-general [Azure Event Hub](/azure/azure-monitor/platform/stream-monitoring-data-event-hubs) and [Graph](/graph/security-integration) are good starting points.
 
