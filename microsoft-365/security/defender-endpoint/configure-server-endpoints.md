@@ -135,7 +135,7 @@ The onboarding package for Windows Server 2019 through Microsoft Endpoint Manage
 
 1. Now that you have downloaded the required onboarding packages use the guidance listed in [onboarding tools and methods](configure-endpoints.md#endpoint-onboarding-tools) for your server.
 
-2. (Only applicable if you're using a third-party anti-malware solution). You'll need to apply the following Microsoft Defender AV passive mode settings. Verify that it was configured correctly:
+2. (Only applicable if you're using a third-party anti-malware solution). You'll need to apply the following Microsoft Defender Antivirus passive mode settings. Verify that it was configured correctly:
 
     1. Set the following registry entry:
        - Path: `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`
@@ -143,13 +143,13 @@ The onboarding package for Windows Server 2019 through Microsoft Endpoint Manage
        - Type: REG_DWORD
        - Value: 1
 
-    1. Run the following PowerShell command to verify that the passive mode was configured:
+    2. Run the following PowerShell command to verify that the passive mode was configured:
 
        ```PowerShell
        Get-WinEvent -FilterHashtable @{ProviderName="Microsoft-Windows-Sense" ;ID=84}
        ```
 
-    1. Confirm  that a recent event containing the passive mode event is found:
+    3. Confirm  that a recent event containing the passive mode event is found:
 
        ![Image of passive mode verification result](images/atp-verify-passive-mode.png)
 
@@ -157,21 +157,21 @@ The onboarding package for Windows Server 2019 through Microsoft Endpoint Manage
 
 ## Verify the onboarding and installation
 
-Verify that Microsoft Defender AV and Microsoft Defender for Endpoint are running. 
+Verify that Microsoft Defender Antivirus and Microsoft Defender for Endpoint are running. 
 
 
 
 > [!NOTE]
-> Running Microsoft Defender AV is not required but it is recommended. If another antivirus vendor product is the primary endpoint protection solution, you can run Defender Antivirus in Passive mode. You can only confirm that passive mode is on after verifying that Microsoft Defender for Endpoint sensor (SENSE) is running. 
+> Running Microsoft Defender Antivirus is not required but it is recommended. If another antivirus vendor product is the primary endpoint protection solution, you can run Defender Antivirus in Passive mode. You can only confirm that passive mode is on after verifying that Microsoft Defender for Endpoint sensor (SENSE) is running. 
 
-1. Run the following command to verify that Microsoft Defender AV is installed:
+1. Run the following command to verify that Microsoft Defender Antivirus is installed:
 
     >[!NOTE]
-    >This verifcation step is only required if you're using Microsoft Defender AV as your active antimalware solution. 
+    >This verifcation step is only required if you're using Microsoft Defender Antivirus as your active antimalware solution. 
 
    ```sc.exe query Windefend```
 
-    If the result is 'The specified service doesn't exist as an installed service', then you'll need to install Microsoft Defender AV. For more information, see [Microsoft Defender Antivirus on Windows Server](microsoft-defender-antivirus-on-windows-server.md).
+    If the result is 'The specified service doesn't exist as an installed service', then you'll need to install Microsoft Defender Antivirus. For more information, see [Microsoft Defender Antivirus on Windows Server](microsoft-defender-antivirus-on-windows-server.md).
 
     For information on how to use Group Policy to configure and manage Microsoft Defender Antivirus on your Windows servers, see [Use Group Policy settings to configure and manage Microsoft Defender Antivirus](use-group-policy-microsoft-defender-antivirus.md).
 
