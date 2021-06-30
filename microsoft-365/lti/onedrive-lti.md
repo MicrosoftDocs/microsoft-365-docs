@@ -30,7 +30,7 @@ Integrating OneDrive LTI with Canvas is a two step process. The first step enabl
 
 :::image type="content" source="media/OneDrive-LTI-07.png" alt-text="The LTI tenant administration page, with a dropdown field for choosing the LTI consumer platform and a URL text field.":::
 
-4. Copy the JSON by selecting the **Copy** button. This will be used to generate the key in Canvas.
+4. Copy the JSON by selecting the **Copy** button (an icon on the right that shows two pages on top of one another). This will be used to generate the key in Canvas.
 
 :::image type="content" source="media/OneDrive-LTI-08.png" alt-text="An image showing the copy button that will copy the displayed JSON text and make it available for key generation in Canvas.":::
 
@@ -41,18 +41,17 @@ Integrating OneDrive LTI with Canvas is a two step process. The first step enabl
 
 SCREEN HERE
 
-1. On the Configure page, in the **Method** dropdown, select **Paste JSON** as the method and paste the JSON text you copied in Step 5 in the text field that appears.
-1. Save the key and it becomes available in Canvas in an **Off** state. Turn the key **On** and copy the key given in the **Details** column.
+6. On the Configure page, in the **Method** dropdown, select **Paste JSON** as the method and paste the JSON text you copied in Step 5 in the text field that appears.
+7. Save the key, and it becomes available in Canvas in an **Off** state. Turn the key **On** and copy the key given in the **Details** column to be used in the next step.
 
 :::image type="content" source="media/OneDrive-LTI-19.png" alt-text="The Canvas page with the key set in an off state. It will need to be turned on and the key will need to be copied from the details column on this page.":::
 
-9. Return to the OneDrive LTI Registration portal and paste the key in the **Canvas Client ID** field. Select **Next** when you're ready.
+8. Return to the OneDrive LTI Registration portal and paste the key in the **Canvas Client ID** field. Select **Next** when you're ready.
 
 :::image type="content" source="media/OneDrive-LTI-20-Old.png" alt-text="The LTI tenant registration page, which shows the JSON text and the text box the key should be copied into.":::
 
-10. Review and save your changes.
-11. A success message will be displayed on successful registration.
-12. Your registration details can also be reviewed by selecting the **View LTI Tenants** button on the home page.
+9. Review and save your changes. A message will be displayed on successful registration.
+10. Your registration details can also be reviewed by selecting the **View LTI Tenants** button on the home page.
 
 ## Enable OneDrive LTI 1.3 in Canvas Courses
 
