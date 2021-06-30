@@ -79,17 +79,17 @@ appropriate. Make sure to remove passive mode configuration.*
 
 * These steps only apply if you intend to replace your non-Microsoft antivirus solution. See [Better together: Microsoft Defender Antivirus and Microsoft Defender for Endpoint](why-use-microsoft-defender-antivirus.md).
 
-If you want to move **from tenant attach to MDE attach**, ensure the server is a part of an Azure Active Directory group that has the required policies targeted then proceedto **uninstall** the Microsoft Endpoint Configuration Manager agent. 
+If you want to move **from tenant attach to Defender for Endpoint attach**, make sure the server is a part of an Azure Active Directory group that has the required policies targeted then proceed to **uninstall** the Microsoft Endpoint Configuration Manager agent. 
 
--   MDE attach will not work if the client is managed by Microsoft Endpoint Configuration Manager. Therefore, a server can be in scope for MDE attach but only after Microsoft Endpoint Configuration Manager agent is removed, policies will be applied. 
+- Defender for Endpoint attach will not work if the client is managed by Microsoft Endpoint Configuration Manager. Therefore, a server can be in scope for Defender for Endpoint attach, but only after Microsoft Endpoint Configuration Manager agent is removed will policies be applied. 
 
 ## Other migration scenarios 
 
-### You have a server you would like to install Microsoft Defender for Endpoint to. It has a 3rd party EPP/EDR solution installed. 
+### You have a server on which you want to install Microsoft Defender for Endpoint. It has a non-Microsoft endpoint protection or endpoint detection and response solution installed. 
 
-1. Download the prerequisites, the installer and deploy using your desired mechanism.
+1. Download the prerequisites, use the installer, and then deploy using your preferred mechanism.
 
-2. Install the Microsoft Defender for Endpoint for Windows Server 2012 R2 & 2016 package and enable passive mode (https://review.docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/configure-server-endpoints?view=o365-worldwide&branch=onboarding-revamp#install-microsoft-defender-antivirus-using-command-line)
+2. Install the Microsoft Defender for Endpoint for Windows Server 2012 R2 & 2016 package and enable passive mode. See [Install Microsoft Defender Antivirus using command line](configure-server-endpoints.md#install-microsoft-defender-antivirus-using-command-line).
 
 3. Apply updates.
 
