@@ -112,7 +112,7 @@ Prepare the source tenant:
     ||||
 
     >[!Note]
-    > Please ensure you have installed the Azure AD PowerShell module prior to running the scripts. Please refer to ![here](/powershell/azure/install-az-ps?view=azps-5.1.0) for installation steps
+    > Please ensure you have installed the Azure AD PowerShell module prior to running the scripts. Please refer to [here](/powershell/azure/install-az-ps) for installation steps
 
 6. The script will pause and ask you to accept or consent to the Exchange mailbox migration application that was created during this process. Here is an example.
 

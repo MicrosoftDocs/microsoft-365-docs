@@ -259,14 +259,13 @@ Windows 10 devices in your Azure AD organization must be able to automatically e
 
 Make sure the **MDM User scope** is set to **Some** or **All**, not **None**. If you choose **Some**, come back after enrollment and select the **Modern Workplace -All** Azure AD group for **Groups** or an equivalent group targeting all of your Microsoft Managed Desktop users.  See [Set up enrollment for Windows devices by using Microsoft Intune](/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment).
 
-
 ### Ad hoc subscriptions
 
 Advises how to check a setting that (if set to "false") might prevent Enterprise State Roaming from working correctly.
 
 **Advisory**
 
-Ensure that **AllowAdHocSubscriptions** is set to **True**. Otherwise, Enterprise State Roaming might not work. For more information, see [Set-MsolCompanySettings](/powershell/module/msonline/set-msolcompanysettings?view=azureadps-1.0).
+Ensure that **AllowAdHocSubscriptions** is set to **True**. Otherwise, Enterprise State Roaming might not work. For more information, see [Set-MsolCompanySettings](/powershell/module/msonline/set-msolcompanysettings).
 
 
 ### Enterprise State Roaming
