@@ -81,7 +81,7 @@ Your devices must be on a minimum build number to use these policies. See the ta
 
 ## Configure policies
 
-1. Go to [https://config.office.com](https://config.office.com) and login as a user with global admin permissions.
+1. Go to [https://config.office.com](https://config.office.com) and login.
 1. Select **Customization** then **Policy Management**.
 1. Select **Create**.
 1. Enter **name** and **description**.

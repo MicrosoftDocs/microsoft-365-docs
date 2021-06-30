@@ -164,6 +164,8 @@
                    href: advanced-hunting-query-emails-devices.md
                  - name: Hunt for ransomware
                    href: advanced-hunting-find-ransomware.md
+                 - name: Advanced hunting example
+                   href: advanced-hunting-example.md
                  - name: Transition from Defender for Endpoint 
                    href: advanced-hunting-migrate-from-mde.md
              - name: Work with query results
@@ -329,6 +331,8 @@
                       href: streaming-api-event-hub.md
                     - name: Stream advanced hunting events to your storage account
                       href: streaming-api-storage.md
+                    - name: Configure your Event hub
+                      href: configure-event-hub.md
                 - name: Advanced Hunting API
                   href: api-advanced-hunting.md
                 - name: Incidents APIs
@@ -339,6 +343,8 @@
                       href: api-list-incidents.md
                     - name: Update incidents
                       href: api-update-incidents.md
+                    - name: Get Incident
+                      href: api-get-incident.md
     - name: Microsoft Defender for Office 365
       href: ../office-365-security/index.yml
     - name: Microsoft Defender for Endpoint

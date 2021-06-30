@@ -1,5 +1,5 @@
 ﻿---
-title: Create a custom gradual rollout process for Microsoft Defender updates
+title: Create a custom gradual rollout process for Microsoft Defender updates
 description: Learn how to use supported tools to create a custom gradual rollout process for updates
 keywords: update tools, gpo, intune, mdm, microsoft endpoint manager, policy, powershell
 search.product: eADQiWindows 10XVcnh
@@ -31,7 +31,7 @@ ms.technology: m365d
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
 > [!NOTE]
-> This functionality requires Microsoft Defender Antivirus version 4.18.2105.X or newer.
+> This functionality requires Microsoft Defender Antivirus version 4.18.2106.X or newer.
 
 To create your own custom gradual rollout process for Defender updates, you can use Group Policy, Microsoft Endpoint Manager, and PowerShell.
 
@@ -48,7 +48,7 @@ update channels:
 ## Group Policy
 
 > [!NOTE]
-> An updated Defender ADMX template will be published together with the 21H2 release of Windows 10.
+> An updated Defender ADMX template will be published together with the 21H2 release of Windows 10. A non-localized version is available for download at https://github.com/microsoft/defender-updatecontrols.
 
 You can use [Group Policy](/windows/win32/srvnodes/group-policy?redirectedfrom=MSDN) to configure and manage Microsoft Defender Antivirus on your endpoints.
 
@@ -90,4 +90,4 @@ Example:
 
 Use `Set-MpPreference -PlatformUpdatesChannel Beta` to configure platform updates to arrive from the Beta Channel.
 
-For more information on the parameters and how to configure them, see [Set-MpPreference (Defender) | Microsoft Docs](/powershell/module/defender/set-mppreference?view=windowsserver2019-ps).
+For more information on the parameters and how to configure them, see [Set-MpPreference (Defender) | Microsoft Docs](/powershell/module/defender/set-mppreference?view=windowsserver2019-ps&preserve-view=true).

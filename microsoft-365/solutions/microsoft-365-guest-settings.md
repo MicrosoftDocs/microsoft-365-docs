@@ -160,8 +160,10 @@ Because OneDrive is a hierarchy of sites within SharePoint, the organization-lev
 | Setting | Default | Description |
 |:-----|:-----|:-----|
 |Limit external sharing by domain|Off|This setting allows you to specify a list of allowed or blocked domains for sharing. When allowed domains are specified, then sharing invitations can only be sent to those domains. When denied domains are specified, then sharing invitations cannot be sent to those domains.<br><br> This setting affects all SharePoint and OneDrive sites in the organization.|
+|Allow only users in specific security groups to share externally|Off|If you want to limit who can share with guests in SharePoint and OneDrive, you can do so by limiting sharing to people in specified security groups. These settings do not affect sharing via Microsoft 365 Groups or Teams. Guests invited via a group or team would also have access to the associated site, though document and folder sharing could only be done by people in the specified security groups.<br><br>For each specified group, you can choose of those users can share with Anyone links.|
 |Guests must sign in using the same account to which sharing invitations are sent|Off|Prevents guests from redeeming site sharing invitations using a different email address than the invitation was sent to.<br><br>[SharePoint and OneDrive integration with Azure AD B2B (Preview)](/sharepoint/sharepoint-azureb2b-integration-preview) does not use this setting because all guests are added to the directory based on the email address that the invitation was sent to. Alternate email addresses cannot be used to access the site.|
 |Allow guests to share items they don't own|On|When **On**, guests can share items that they don't own with other users or guests; when **Off** they cannot. Guests can always share items for which they have full control.|
+|People who use a verification code must reauthenticate after this many days|Off|This setting allows you to require that users authenticating with a one-time passcode need to reauthenticate after a certain number of days.|
 
 ### SharePoint and OneDrive file and folder link settings
 
@@ -177,21 +179,6 @@ When files and folders are shared in SharePoint and OneDrive, sharing recipients
 |These links must expire within this many days|Off (no expiration)|Specifies the number of days after an *Anyone* link is created that it expires. Expired links cannot be renewed. Create a new link if you need to continue sharing past the expiration.|
 |File permissions|View and edit|Specifies the file permission levels available to users when creating an *Anyone* link. If **View** is selected, then users can only create *Anyone* file links with view permissions. If **View, and edit** is selected, then users can choose between view and view and edit permissions when they create the link.|
 |Folder permissions|View, edit, and upload|Specifies the folder permission levels available to users when creating an *Anyone* link. If **View** is selected, then users can only create *Anyone* folder links with view permissions. If **View, edit, and upload** is selected, then users can choose between view and view, edit, and upload permissions when they creat the link.|
-
-### SharePoint and OneDrive security group settings
-
-If you want to limit who can share with guests in SharePoint and OneDrive, you can do so by limiting sharing to people in specified security groups. These settings do not affect sharing via Microsoft 365 Groups or Teams. Guests invited via a group or team would also have access to the associated site, though document and folder sharing could only be done by people in the specified security groups.
-
-**Navigation:** SharePoint admin center > Sharing > Limit external sharing to specific security groups
-
-![Screenshot of SharePoint organization-level sharing security group settings](../media/sharepoint-organization-external-sharing-security-groups.png)
-
-| Setting | Default | Description |
-|:-----|:-----|:-----|
-|Let only users in selected security groups share with authenticated external users|Off|When **On**, only the people in the specified security groups can share with people outside the organization. Only *Specific people* links are available. *Anyone* sharing is effectively disabled unless **Let only users in selected security groups share with authenticated external users and using anonymous links** is also **On**|
-|Let only users in selected security groups share with authenticated external users and using anonymous links|Off|When **On**, only the people in the specified security groups can share with guests. Both *Anyone* and *Specific people* links are available.|
-
-Both of these settings can be used at the same time. If a user is in security groups specified for both settings, then the greater permission level prevails (*Anyone* plus *Specific user*). Nested security groups are supported.
 
 ## SharePoint (site level)
 
