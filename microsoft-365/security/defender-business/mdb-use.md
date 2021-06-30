@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: how-to
-ms.date: 06/23/2021
+ms.date: 06/30/2021
 ms.prod: m365-security
 ms.technology: dforbiz
 localization_priority: Normal
@@ -26,7 +26,7 @@ After you have setup and configured Microsoft Defender for business, you are rea
 
 ## Monitor your incidents & alerts
 
-In the Microsoft 365 Defender portal (https://security.microsoft.com), in the navigation pane, select Incidents & alerts > Alerts. Any alerts that were triggered are listed on the page.
+In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, select Incidents & alerts > Alerts. Any alerts that were triggered are listed on the page.
 
 Select an alert to open its flyout pane, where you can learn more about the alert. 
 
