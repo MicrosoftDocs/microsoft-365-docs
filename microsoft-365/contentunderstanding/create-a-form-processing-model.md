@@ -11,7 +11,7 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 localization_priority: Priority
-description: Learn how to create a form processing model in SharePoint Syntex."
+description: Learn how to create a form processing model in SharePoint Syntex.
 ---
 
 # Create a form processing model in Microsoft SharePoint Syntex
@@ -22,9 +22,10 @@ description: Learn how to create a form processing model in SharePoint Syntex."
 
 </br>
 
-Using [AI Builder](/ai-builder/overview) - a feature in Microsoft PowerApps - SharePoint Syntex users can create a [form processing model](form-processing-overview.md) directly from a SharePoint document library. 
+Using [AI Builder](/ai-builder/overview) — a feature in Microsoft PowerApps — SharePoint Syntex users can create a [form processing model](form-processing-overview.md) directly from a SharePoint document library. 
 
 Creating a form processing model involves the following:
+
  - Step 1: Create the from processing model to create the content type
  - Step 2: Add and analyze example files
  - Step 3: Select your form fields
@@ -113,7 +114,7 @@ After analyzing the documents for fields, you can now see the fields that were f
 
 3. If a field was not detected by analysis, you can still choose to add it. Highlight the information you want to extract, and in the name box type in the name you want. Then select the check box. Note that you need to confirm undetected fields in your remaining sample files.
 
-4. Click **Confirm fields** after you have selected the fields that you want to save. </br>
+4. Select **Confirm fields** after you have selected the fields that you want to save. </br>
  
     ![Confirm fields after selecting fields](../media/content-understanding/confirm-fields.png)</br> 
  
@@ -141,13 +142,13 @@ After selecting the fields you want to save, the **Model Summary** page lets you
 
 1. If you are satisfied with the results of your model, select **Publish** to make it available for use.
 
-2. After the model is published, select **Use model**. This creates a PowerAutomate flow that can run in your SharePoint document library and extracts the fields that have been identified in the model, then select **Create Flow**.
+2. After the model is published, select **Use model**. This creates a Power Automate flow that can run in your SharePoint document library and extracts the fields that have been identified in the model, then select **Create Flow**.
   
 3. When completed, you will see the message **Your flow has been successfully created**.
  
 ## Step 6: Use your model
 
-After publishing your model and creating it's PowerAutomate flow, you can use your model in your SharePoint document library.
+After publishing your model and creating it's Power Automate flow, you can use your model in your SharePoint document library.
 
 1. After publishing your model, select **Go to SharePoint** to go to your document library.
 
