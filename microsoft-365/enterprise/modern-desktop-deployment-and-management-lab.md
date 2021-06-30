@@ -50,9 +50,11 @@ The resulting lab is designed to be connected to trials for:
 Detailed lab guides take you through multiple deployment and management scenarios. The labs have been updated for the latest versions of Intune and Configuration Manager. 
 
 ### Plan and prepare infrastructure	
+
 - Desktop Analytics	
 - Cloud Management Gateway & Cloud Distribution Point 
-- Tenant attach, co-management, and switching workloads	
+- NEW! Tenant attach and co-management
+- NEW! Endpoint analytics 
 - Remote access (VPN) 
 
 ### Prepare configuration	
@@ -86,6 +88,7 @@ Detailed lab guides take you through multiple deployment and management scenario
 - Enterprise managed deployment using Microsoft Intune	
 - LOB Deployment and Management with Microsoft Intune
 - Deploy Microsoft Teams
+- NEW! Assignment filters  
 
 ### Deploy Windows Virtual Desktop	
 
