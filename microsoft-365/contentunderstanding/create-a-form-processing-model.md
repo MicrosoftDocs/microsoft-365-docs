@@ -52,13 +52,26 @@ The first step in creating a form processing model is to name it and create the 
 
     ![Screenshot showing the Create a model to process forms panel.](../media/content-understanding/new-form-model2.png) 
 
-3. When you create a form processing model, you create a new SharePoint content type. A SharePoint content type represents a category of documents that have common characteristics and share a collection of columns or metadata properties for that particular content. SharePoint content types are managed through the SharePoint admin center.
+3. If you want to extract table information to an associated SharePoint list:
 
-    Select **Advanced settings** if you want to map this model to an existing content type in the SharePoint content types gallery to use its schema. 
+   1. In the **Extract info from tables?** section, select **Yes**.
 
-4. Your model creates a new view in your document library for your extracted data. If you do not want it to the default view, deselect **Set the view as default**.
+   2. In the **Where should we save table info?** section, select **An existing list**, and then select the appropriate list.
 
-5. Select **Create**.
+   3. . 
+
+
+4. If you want to map this model to an existing content type in the SharePoint content types gallery, select **Advanced settings**.
+
+    ![Screenshot showing the Advanced settings in the Create a model to process forms panel.](../media/content-understanding/new-form-model-advanced-settings.png) 
+
+   When you create a form processing model, you create a new SharePoint content type. A SharePoint content type represents a category of documents that have common characteristics and share a collection of columns or metadata properties for that particular content. SharePoint content types are managed through the SharePoint admin center.
+
+
+
+5. Your model creates a new view in your document library for your extracted data. If you do not want it to be the default view, clear **Set the view as default**.
+
+6. Select **Create**.
 
 ## Step 2: Add and analyze documents
 
