@@ -64,7 +64,7 @@ A Canvas administrator can enable OneDrive LTI for all courses. If OneDrive LTI 
 
 :::image type="content" source="media/OneDrive-LTI-30.png" alt-text="The add app page, showing the By client ID option under the Configuration type dropdown menu.":::
 
-SWAP THIS ONE
+SWAP THIS ONE WITH IMAGE 31
 
 
 5. Paste the value of the developer key generated previously in the **Client ID** field, and select the **Submit** button.
@@ -78,3 +78,12 @@ SWAP THIS ONE
 1. Sign in as an admin and go to the **Settings** section.
 1. Go to **Feature Options** section, and then go to the **Course** section.
 1. Set the **External Collaborations Tool** feature to be not enabled.
+
+## Recommended browser settings
+
+- Cookies should be enabled for OneDrive.
+- Popups should not be blocked for OneDrive.
+
+> [!NOTE]
+> - Cookies are not enabled by default in the Chrome browser incognito mode, and will need to be enabled. 
+> - OneDrive works in the private mode in Microsoft Edge browser. Ensure that you have not blocked cookies (which are enabled by default).
