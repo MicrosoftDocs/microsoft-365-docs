@@ -28,7 +28,7 @@ ms.technology: mde
 - Windows Server 2016
 
 In September 2021, we released a new version of Microsoft Defender for Endpoint for Windows Server 2012 R2 and Windows Server 2016.
-This page contains high level instructions for various possible migration scenarios from the previous to the current solution. Please note that these high-level steps are intended as guidelines to be adjusted to the deployment and configuration tools available in your environment.
+This page contains high-level instructions for various possible migration scenarios from the previous to the current solution. These high-level steps are intended as guidelines to be adjusted to the deployment and configuration tools available in your environment.
 
 >[!NOTE]
 >Full Microsoft Endpoint Configuration Manager (MECM) automation and integration to perform an easy upgrade will be available in the 2111 release of MECM. You CAN however use the Endpoint Protection node for configuration as well as Group Policy, PowerShell, Microsoft Endpoint Manager tenant attach or local configuration. In addition, you can leverage existing functionality in MECM to automate manual upgrade steps.
@@ -53,7 +53,7 @@ Migration steps:
 
 4. Create and/or assign existing endpoint protection policies to the collection.
 
-### If you are currently using MECM to manage your servers, have a 3rd party AV solution and MMA-based sensor and want to upgrade to the new Microsoft Defender for Endpoint BEFORE the 2011 release of MECM.
+### If you are currently using MECM to manage your servers, have a non-Microsoft antivirus solution and MMA-based sensor and want to upgrade to the new Microsoft Defender for Endpoint BEFORE the 2011 release of MECM.
 
 Migration steps:
 
@@ -95,13 +95,14 @@ If you want to move **from tenant attach to Defender for Endpoint attach**, make
 
 4. Apply the onboarding package.
 
-5. Remove the non-Microsoft security solution or EDR and remove passive mode.*
+5. Remove the non-Microsoft endpoint protection or endpoint detection and response solution, and remove passive mode.*
 
-6. Author and apply policies using Group Policy, PowerShell or Microsoft Endpoint Manager.
+6. Define and apply policies using Group Policy, PowerShell, or Microsoft Endpoint Manager.
 
-*This step only applies if you intend to replace your 3rd party antivirus solution.https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/why-use-microsoft-defender-antivirus?view=o365-worldwide#:~:text=11%20reasons%20to%20use%20Microsoft%20Defender%20Antivirus%20together,blocked%20mal%20...%20%207%20more%20rows%20
+* This step only applies if you intend to replace your non-Microsoft antivirus solution. See [Better together: Microsoft Defender Antivirus and Microsoft Defender for Endpoint](why-use-microsoft-defender-antivirus.md).
 
 ## Azure Defender scenarios
 
 ### You're using Azure Defender, Microsoft Monitoring Agent (MMA) and SCEP are installed and want to upgrade
-If you're using Azure Defender, you can automate the upgrade process. Please go to <TBD LINK>.
+
+If you're using Azure Defender, you can automate the upgrade process. See <TBD LINK>.
