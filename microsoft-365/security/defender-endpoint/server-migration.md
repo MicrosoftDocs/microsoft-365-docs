@@ -77,7 +77,7 @@ appropriate. Make sure to remove passive mode configuration.*
 
 7. Apply the onboarding package.
 
-* These steps only apply if you intend to replace your 3rd party antivirus solution. https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/why-use-microsoft-defender-antivirus?view=o365-worldwide#:~:text=11%20reasons%20to%20use%20Microsoft%20Defender%20Antivirus%20together,blocked%20mal%20...%20%207%20more%20rows%20
+* These steps only apply if you intend to replace your non-Microsoft antivirus solution. See [Better together: Microsoft Defender Antivirus and Microsoft Defender for Endpoint](why-use-microsoft-defender-antivirus.md).
 
 If you want to move **from tenant attach to MDE attach**, ensure the server is a part of an Azure Active Directory group that has the required policies targeted then proceedto **uninstall** the Microsoft Endpoint Configuration Manager agent. 
 
