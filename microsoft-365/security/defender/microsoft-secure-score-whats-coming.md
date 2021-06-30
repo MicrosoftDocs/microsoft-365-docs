@@ -34,11 +34,11 @@ We're making some changes in the near future to make [Microsoft Secure Score](mi
 
 #### Add improvement action related to Microsoft Teams
 
-- Restrict dial in users from bypassing a meeting lobby
-- Limit external participants to have control in a Teams Meeting
-- Restrict anonymous users from starting Teams meetings
-- Require lobbies to be set up for Teams Meetings
-- Configure which users are allowed to present in meetings
+- Restrict dial-in users from bypassing a meeting lobby.
+- Limit external participants from having control in a Teams meeting.
+- Restrict anonymous users from starting Teams meetings.
+- Require lobbies to be set up for Teams meetings.
+- Configure which users are allowed to be present in Teams meetings.
 
 
 ## Related resources
