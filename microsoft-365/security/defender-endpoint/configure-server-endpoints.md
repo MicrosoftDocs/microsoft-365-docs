@@ -92,7 +92,7 @@ Verify that Microsoft Defender Antivirus is installed and is active.
 
 2. Select **Windows Server 2012 R2 and 2016**.
 
-3. Select **Download installation package** and save the .msi file. You can run the msi package through the installation wizard, or follow the command line steps in [Install Microsoft Defender for Endpoint using the command line](#install-microsoft-defender-endpoint-using-command-line).
+3. Select **Download installation package** and save the .msi file. You can run the msi package through the installation wizard, or follow the command line steps in [Install Microsoft Defender for Endpoint using the command line](#install-microsoft-defender-for-endpoint-using-command-line).
           
     >[!NOTE]
     >Microsoft Defender Antivirus will get installed and will be active unless you set it to passive mode. 
