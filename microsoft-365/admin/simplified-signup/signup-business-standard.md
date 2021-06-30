@@ -65,7 +65,7 @@ You'll sign into Microsoft 365 with this email address. For example, alliebellew
 
 #### Next steps
 
-1. Do you have employees or partners that you want to add to your subscription? Follow the steps in the [Set up my business account in Microsoft 365](owner-iw-invite.md) topic.
+1. Do you have employees or partners that you want to add to your subscription? Follow the steps in the [Invite users to my subscription](owner-iw-invite.md) topic.
 
 ### Create a new business email account (advanced)
 
