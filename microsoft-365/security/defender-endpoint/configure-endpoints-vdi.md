@@ -35,7 +35,6 @@ ms.technology: mde
 
 Defender for Endpoint supports non-persistent VDI session onboarding. 
 
-
 There might be associated challenges when onboarding VDIs. The following are typical challenges for this scenario:
 
 - Instant early onboarding of a short-lived sessions, which must be onboarded to Defender for Endpoint prior to the actual provisioning.
