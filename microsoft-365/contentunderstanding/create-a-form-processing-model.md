@@ -36,7 +36,7 @@ Creating a form processing model involves the following:
 
 You can only create a form processing model in SharePoint document libraries for which it is enabled. If form processing is enabled, you are able to see the **Automate** > **AI Builder** > **Create a model to process forms** menu in your document library. If you need processing enabled on your document library, you must contact your SharePoint administrator.
 
- ![Create an AI Builder model](../media/content-understanding/create-ai-builder-model2.png)
+ ![Screenshot showing the AI Builder model.](../media/content-understanding/create-ai-builder-model2.png)
 
 ## Step 1: Create a form processing model
 
@@ -44,17 +44,17 @@ The first step in creating a form processing model is to name it and create the 
 
 1. From the document library, select the **Automate** menu, select **AI Builder**, and then select **Create a model to process forms**.
 
-    ![Create a model](../media/content-understanding/create-ai-builder-model2.png)
+    ![Screenshot showing the Automate menu and the Create a model to process forms option.](../media/content-understanding/create-ai-builder-model2.png)
 
 [**Update - add new settings to New form processing model**]
 
-2. In the **New form processing model** pane, in the  **Name** field, type a name for your model (for example, *Purchase Orders*).
+2. In the **Create a model to process forms** panel, in the  **Name** field, type a name for your model (for example, *Purchase Orders*).
 
-    ![New form processing model](../media/content-understanding/new-form-model.png) 
+    ![Screenshot showing the Create a model to process forms panel.](../media/content-understanding/new-form-model2.png) 
 
-3. When you create a form processing model, you create a new SharePoint content type. A SharePoint content type represents a category of documents that have common characteristics and share a collection of columns or metadata properties for that particular content. SharePoint Content Types are managed through the [Content types gallery]().
+3. When you create a form processing model, you create a new SharePoint content type. A SharePoint content type represents a category of documents that have common characteristics and share a collection of columns or metadata properties for that particular content. SharePoint content types are managed through the SharePoint admin center.
 
-    Select **Advanced settings** if you want to map this model to an existing content type in the SharePoint Content types gallery to use its schema. 
+    Select **Advanced settings** if you want to map this model to an existing content type in the SharePoint content types gallery to use its schema. 
 
 4. Your model creates a new view in your document library for your extracted data. If you do not want it to the default view, deselect **Set the view as default**.
 
