@@ -14,6 +14,7 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse                         
+search.appverid: MET150
 description: "Sign up for Microsoft 365 Lighthouse by using the steps here to acquire the service plan. "
 ---
 
@@ -37,13 +38,13 @@ Enabling Users
 
 For the Users section in M365 Lighthouse, below are the licensing pre-requisites: 
 
-1. For the ‘Search Users’ page, there are no license restrictions, and you can search for users across your tenants from here and perform basic operations on them like resetting a password. 
+1. For the 'Search Users' page, there are no license restrictions, and you can search for users across your tenants from here and perform basic operations on them like resetting a password. 
 
 2. For all the other pages including Risky users, Multi-factor authentication and Password reset, ensure your tenants have Azure AD Premium P1 or above licenses for data show up on the reports. 
 
 Enabling Microsoft Defender Antivirus  
 
-Microsoft Defender Antivirus is part of the operating system and is enabled on devices that are running Windows 10. However, if you’re using a non-Microsoft antivirus solution and not Microsoft Defender antivirus, then Microsoft Defender Antivirus automatically goes into disabled mode.  
+Microsoft Defender Antivirus is part of the operating system and is enabled on devices that are running Windows 10. However, if you're using a non-Microsoft antivirus solution and not Microsoft Defender antivirus, then Microsoft Defender Antivirus automatically goes into disabled mode.  
  
 When the non-Microsoft antivirus solution is uninstalled, Microsoft Defender Antivirus will automatically go into active mode to protect your Windows devices from threats.  
  
