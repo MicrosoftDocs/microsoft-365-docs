@@ -37,10 +37,10 @@ Use the navigation bar on the left side of the screen to access your incidents, 
 | **Incidents** | Takes you to your list of recent incidents. As alerts are triggered, incidents are created. An incident can include multiple alerts. Make sure to review your incidents regularly. |
 | **Action center** | Takes you to your list of response actions, including completed or pending actions. <br/>- Select the **History** tab to see the actions that were taken. Some actions are taken automatically; others are taken manually or complete after they are approved. <br/>- Select the Pending tab to view actions that require approval to proceed.  |
 | **Threat analytics** | Takes you to a view of current threats and provides you with an at-a-glance view of your threat landscape. |
-| **Secure score** | Provides a representation of your company’s security position and offers suggestions to improve it. |
-| **Learning hub** | Provides access to learning paths, Several learning paths are available to help you learn more about Microsoft 365 Defender capabilities.  |
+| **Secure score** | Provides you with a representation of your company’s security position and offers suggestions to improve it. |
+| **Learning hub** | Provides access to learning paths. Several learning paths are available to help you learn more about Microsoft 365 Defender capabilities.  |
 | **Endpoints** > **Search** | Enables you to search for one or more devices that were onboarded to Microsoft Defender for business. |
-| **Endpoints** > **Device inventory** | Provides a list of devices that were onboarded to Microsoft Defender for business. |
+| **Endpoints** > **Device inventory** | Enables you to search for one or more devices that were onboarded to Microsoft Defender for business. |
 | **Endpoints** > **Vulnerability management** | Provides you with a dashboard, recommendations, remediation activities, a software inventory, and a list of potential weaknesses within your company. |
 | **Endpoints** > **Tutorials** | Provides you with several scenarios to simulate an attack and walk through how to respond to the attack. |
 | **Endpoints** > **Device configuration** | Lists your device policies. You can also define new policies here. |
