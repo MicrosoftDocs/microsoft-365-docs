@@ -1,7 +1,7 @@
 ---
 title: Use Microsoft OneDrive Learning Tools Interoperability
-ms.author: v-cichur
-author: cichur
+ms.author: heidip
+author: MicrosoftHeidi
 manager: serdars
 ms.reviewer: amitman 
 audience: admin
@@ -84,4 +84,6 @@ A Canvas administrator can enable Microsoft OneDrive LTI for all courses. If Mic
 1. Set the **External Collaborations Tool** feature to be not enabled.
 
 > [!IMPORTANT]
-> 
+> Collaboration can be assigned to individual students and to groups of students. Assigning to individual students works by default. To be able to assign collaboration to group of students, follow these steps:
+> - Login as admin and go to “Developer Keys” section.
+> - Find the key with value 170000000000710 and switch it ON
