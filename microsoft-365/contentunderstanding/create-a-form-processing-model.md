@@ -23,7 +23,7 @@ description: Learn how to create a form processing model in SharePoint Syntex.
 
 </br>
 
-Using [AI Builder](/ai-builder/overview) — a feature in Microsoft PowerApps — SharePoint Syntex users can create a [form processing model](form-processing-overview.md) directly from a SharePoint document library. 
+Using [AI Builder](/ai-builder/overview)—a feature in Microsoft PowerApps—SharePoint Syntex users can create a [form processing model](form-processing-overview.md) directly from a SharePoint document library. 
 
 Creating a form processing model involves the following steps:
 
@@ -52,7 +52,11 @@ The first step in creating a form processing model is to name the model, define 
 
     ![Screenshot showing the Create a model to process forms panel.](../media/content-understanding/new-form-model2.png) 
 
-3. If you want to extract table information to an associated SharePoint list:
+3. You can now automatically extract and save information from a *collection* of structured files that share a similar layout—such as invoices or tax documents—that are in a SharePoint document library. This lets you compose several models into a single model and extract the table item data.
+
+   The collection name is saved to a dedicated column in the document library where the model is applied, allowing you to distinguish different file layouts processed by the same model. The extracted table data is saved to a specified list and associated with the uploaded file for easy viewing or for additional business process automation.
+
+   If you want to extract table information to an associated list:
 
    1. In the **Extract info from tables?** section, select **Yes**.
 
