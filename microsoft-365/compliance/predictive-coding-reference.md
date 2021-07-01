@@ -31,14 +31,18 @@ A control set is used during the training process of a predictive coding model. 
 ## Control set confusion matrix
 
 After you complete a training round, the model assigns a prediction score to the 10 items in the control set that you labeled during the training round. The model compares the prediction score of these 10 items with the actual label that you assigned to the item during the training round. Based on this comparison, the model identifies the following classifications to assess the model's prediction performance:
-  
-  |          |Model predicts item is relevant |Model predicts item is not relevant |
-  |:---------|:---------|:---------|
-  |**Reviewer labels item as relevant**| True positive| False positive |
-  |**Reviewer labels item as not relevant**| False negative |True negative |
-  ||||
 
-  Based on these comparisons, the model derives values for the F-score, precision, and recall metrics and the margin of error for each one. The number of each of the confusion types from the matrix is displayed on the flyout page for a training round.
+<br>
+
+****
+
+|Label|Model predicts item is relevant|Model predicts item is not relevant|
+|---|---|---|
+|**Reviewer labels item as relevant**|True positive|False positive|
+|**Reviewer labels item as not relevant**|False negative|True negative|
+|
+
+Based on these comparisons, the model derives values for the F-score, precision, and recall metrics and the margin of error for each one. The number of each of the confusion types from the matrix is displayed on the flyout page for a training round.
 
 ## F-score
 

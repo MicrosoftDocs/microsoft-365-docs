@@ -29,10 +29,14 @@ This article explains what these functions look for, to help you understand how 
 
 ## Table of functions
 
-|function name  |function action  |is a validator|
-|---------|---------|---------|
+<br>
+
+****
+
+|function name|function action|is a validator|
+|---|---|:---:|
 |Func_Argentina_Unique_Tax_Key|detects and validates Argentina Unique tax key|no|
-|Func_aba_routing|detects ABA routing number| yes|
+|Func_aba_routing|detects ABA routing number|yes|
 |Func_alabama_drivers_license_number|detects Alabama driver’s license number|no|
 |Func_alaska_delaware_oregon_drivers_license_number|detects Alaska, Delaware, Oregon driver’s license number|no|
 |Func_alaska_drivers_license_number|detects Alaska driver’s license number|no|
@@ -60,7 +64,7 @@ This article explains what these functions look for, to help you understand how 
 |Func_china_resident_id|detects China-resident ID|no|
 |Func_colorado_drivers_license_number|detects Colorado driver’s license number|no|
 |Func_connecticut_drivers_license_number|detects Connecticut driver’s license number|no|
-|Func_credit_card|detects credit card|yes|no|
+|Func_credit_card|detects credit card|no|
 |Func_croatia_id_card|detects Croatia ID card|no|
 |Func_croatia_oib_number|detects Croatia OIB number|no|
 |Func_cyprus_eu_tax_file_number|detects Cyprus tax file number|no|
@@ -203,6 +207,7 @@ This article explains what these functions look for, to help you understand how 
 |Func_west_virginia_drivers_license_number|detects West Virginia driver’s license number|no|
 |Func_wisconsin_drivers_license_number|detects Wisconsin driver’s license number|no|
 |Func_wyoming_drivers_license_number|detects Wyoming driver’s license number|no|
+|
 
 ## Func_us_date
 
@@ -211,25 +216,17 @@ Func_us_date looks for dates in common U.S. formats. The common formats are "mon
 Examples:
 
 - December 2, 2016
-
 - Dec 2, 2016
-
 - dec 02 2016
-
 - 12/2/2016
-
 - 12/02/16
-
 - Dec-2-2016
-
 - 12-2-16
 
 Accepted month names:
 
 - English
-
   - January, February, march, April, may, June, July, August, September, October, November, December
-
   - Jan. Feb. Mar. Apr. May June July Aug. Sept. Oct. Nov. Dec.
 
 ## Func_eu_date
@@ -239,61 +236,35 @@ Fund_eu_dates looks for dates in common E.U. formats (and most places outside th
 Examples:
 
 - 2 Dec 2016
-
 - 02 dec 2016
-
 - 2 Dec 16
-
 - 2/12/2016
-
 - 02/12/16
-
 - 2-Dec-2016
-
 - 2-12-16
 
 Accepted month names:
 
 - English
-
   - January, February, march, April, may, June, July, August, September, October, November, December
-
   - Jan. Feb. Mar. Apr. May June July Aug. Sept. Oct. Nov. Dec.
-
 - Dutch
-
   - januari, februari, maart, April, mei, juni, juli, augustus, September, ocktober, October, November, December
-
   - jan feb maart apr mei jun jul aug sep sept oct okt nov dec
-
 - French
-
   - janvier, février, mars, avril, mai, juin juillet, août, septembre, octobre, novembre, décembre
-
   - janv. févr. mars avril mai juin juil. août sept. oct. nov. déc.
-
 - German
-
   - jänuar, februar, märz, April, mai, juni juli, August, September, oktober, November, dezember
-
   - Jan./Jän. Feb. März Apr. Mai Juni Juli Aug. Sept. Okt. Nov. Dez.
-
 - Italian
-
   - gennaio, febbraio, marzo, aprile, maggio, giugno, luglio, agosto, settembre, ottobre, novembre, dicembre
-
   - genn. febbr. mar. apr. magg. giugno luglio ag. sett. ott. nov. dic.
-
 - Portuguese
-
   - janeiro, fevereiro, março, marco, abril, maio, junho, julho, agosto, setembro, outubro, novembro, dezembro
-
   - jan fev mar abr mai jun jul ago set out nov dez
-
 - Spanish
-
   - enero, febrero, marzo, abril, mayo, junio, julio, agosto, septiembre, octubre, noviembre, diciembre
-
   - enero feb. marzo abr. mayo jun. jul. agosto sept./set. oct. nov. dic.
 
 ## Func_eu_date1 (deprecated)
@@ -306,25 +277,17 @@ This function looks for a date in the format commonly used in Portuguese. The fo
 Examples:
 
 - 2 Dez 2016
-
 - 02 dez 2016
-
 - 2 Dez 16
-
 - 2/12/2016
-
 - 02/12/16
-
 - 2-Dez-2016
-
 - 2-12-16
 
 Accepted month names:
 
 - Portuguese
-
   - janeiro, fevereiro, março, marco, abril, maio, junho, julho, agosto, setembro, outubro, novembro, dezembro
-
   - jan fev mar abr mai jun jul ago set out nov dez
 
 ## Func_eu_date2 (deprecated)
@@ -337,25 +300,17 @@ This function looks for a date in the format commonly used in Dutch. The format 
 Examples:
 
 - 2 Mei 2016
-
 - 02 mei 2016
-
 - 2 Mei 16
-
 - 2/12/2016
-
 - 02/12/16
-
 - 2-Mei-2016
-
 - 2-12-16
 
 Accepted month names:
 
 - Dutch
-
   - januari, februari, maart, April, mei, juni, juli, augustus, September, ocktober, October, November, December
-
   - jan feb maart apr mei jun jul aug sep sept out okt nov dec
 
 ## Func_expiration_date
@@ -365,29 +320,21 @@ Func_expiration_date looks for dates that are in formats commonly used by credit
 Examples:
 
 - MM/YY -- for example, 01/11 or 1/11
-
 - MM/YYYY -- for example, 01/2011 or 1/2011
-
 - MM-YY -- for example, 01-22 or 1-11
-
 - MM-YYYY -- for example, 01-2000 or 1-2000
 
 The following formats support YY or YYYY:
 
 - Month-YYYY -- for example Jan-2010 or january-2010 or Jan-10 or january-10
-
 - Month YYYY -- for example, 'january 2010' or 'Jan 2010' or 'january 10' or 'Jan 10'
-
 - MonthYYYY -- for example, 'january2010' or 'Jan2010' or 'january10' or 'Jan10'
-
 - Month/YYYY -- for example, 'january/2010' or 'Jan/2010' or 'january/10' or 'Jan/10'
 
 Accepted month names:
 
 - English
-
   - January, February, march, April, may, June, July, August, September, October, November, December
-
   - Jan Feb Mar Apr May June July Aug Sept Oct Nov Dec
 
 ## Func_us_address
@@ -397,9 +344,6 @@ Func_us_address looks for a U.S. state name or postal abbreviation followed by a
 Examples:
 
 - Washington 98052
-
 - Washington 98052-9998
-
 - WA 98052
-
 - WA 98052-9998

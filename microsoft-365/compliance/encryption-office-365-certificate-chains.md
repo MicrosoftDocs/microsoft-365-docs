@@ -350,7 +350,7 @@ Expand the root and intermediate sections below to see additional details about 
 | **Thumbprint (SHA-256)** | 5F88694615E4C61686E106B84C3338C6720C535F60D36F61282ED15E1977DD44 | -
 | **Pin (SHA-256)** | UgpUVparimk8QCjtWQaUQ7EGrtrykc/L8N66EhFY3VE= |
 | **CRL URLs** | http://crl3.digicert.com/DigiCertGlobalRootCA.crl<br>http://crl4.digicert.com/DigiCertGlobalRootCA.crl |
-| **OCSP URLs** | http://ocsp.digicert.com
+| **OCSP URLs** | http://ocsp.digicert.com |
 
 ### **DigiCert SHA2 Extended Validation Server CA**
 
