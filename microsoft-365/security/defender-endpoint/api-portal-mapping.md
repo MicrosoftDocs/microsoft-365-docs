@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender ATP detections API fields
+title: Microsoft Defender for Endpoint detections API fields
 description: Understand how the Detections API fields map to the values in Microsoft Defender Security Center
 keywords: detections, detections fields, fields, api, fields, pull Detections, rest api, request, response
 search.product: eADQiWindows 10XVcnh

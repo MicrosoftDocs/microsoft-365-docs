@@ -6,7 +6,7 @@ ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: 
@@ -15,6 +15,7 @@ ms.collection:
 - m365solution-collabgovernance
 search.appverid:
 - MET150
+recommendations: false
 description: "Learn about Microsoft 365 groups expiration policies."
 ---
 
@@ -58,7 +59,7 @@ The group lifetime is specified in days and can be set to 180, 365 or to a custo
 
 If the group does not have an owner, the expiration emails will go to the specified administrator.
 
-You can set the policy for all of your groups, only selected groups, or turn it off completely by selecting **None**. Note that currently you can't have different policies for different groups.
+You can set the policy for all of your groups, only selected groups (up to 500), or turn it off completely by selecting **None**. Note that currently you can't have different policies for different groups.
 
 ![Screenshot of Groups expiration settings in Azure Active Directory](../media/azure-groups-expiration-settings.png)
 

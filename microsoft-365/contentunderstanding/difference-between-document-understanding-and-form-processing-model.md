@@ -1,8 +1,9 @@
 ---
 title: "Difference between document understanding and form processing models"
-ms.author: efrene
-author: efrene
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
+ms.reviewer: lauriellis
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -15,7 +16,6 @@ description: "Describes key difference between document understanding and form p
 ---
 
 # Difference between document understanding and form processing models 
-
 
 Content understanding in Microsoft SharePoint Syntex allows you to identify and classify documents that are uploaded to SharePoint document libraries, and extract relevant information from each file.  For example, as files are uploaded to a SharePoint document library, all files that are identified as *Purchase Orders* are classified as such, and then displayed in a custom document library view. Additionally, you can pull specific information from each file (for example, *PO Number* and *Total*) and display it as a column in your document library view. 
 
@@ -31,7 +31,6 @@ While both models are generally used for the same purpose, the key differences l
 > [!NOTE]
 > See the [SharePoint Syntex adoption: Get started guide](./adoption-getstarted.md) for more information about form processing and document understanding scenario examples.
 
-
 ## Structured versus unstructured and semi-structured content
 
 Use document understanding models to identify and extract data from unstructured documents, such as letters or contracts, where the text entities you want to extract is in sentences or specific regions of the document. For example, an unstructured document could be a contract renewal letter that can be written in different ways. However, information exists consistently in the body of each contract renewal document, such as the text string *Service start date of* followed by an actual date.
@@ -40,7 +39,6 @@ Use form processing models to identify files and extract data from structured or
 
 > [!NOTE]
 > You must have access to a content center site to create a document understanding model or to apply one to a SharePoint document library. 
-
 
 ## Where models are created
 
@@ -73,7 +71,7 @@ Use the following table to understand when to use forms processing and when to u
 | Locations | Trained for a single document library.| Can be applied to multiple libraries.|
 | Supported file types| Train on PDF, JPG, PNG format, total 50 MB and 500 pages.| Train on 5-10 PDF, Office, or email files, including negative examples.<br>Office files are truncated at 64k characters. OCR-scanned files are limited to 20 pages.|
 | Integrate with Managed Metadata | No | Yes, by training entity extractor referencing a configured managed metadata field.|
-| Compliance feature integration when Microsoft Information Protection is enabled | Set published Retention labels.<br>Set Sensitivity labels is coming. | Set published Retention labels.<br>Set Sensitivity labels is coming. |
+| Compliance feature integration when Microsoft Information Protection is enabled | Set published Retention labels.<br>Set Sensitivity labels is coming. | Set published Retention labels.<br>Set published Sensitivity labels. |
 | Supported regions| Form processing relies on Power Platform. For information about global availability for Power Platform and AI Builder, see [Power Platform availability](https://dynamics.microsoft.com/geographic-availability/). | Available in all regions.|
 | Transactional cost | Uses AI Builder credits.<br>Credits can be purchased in batches of 1M.<br>1M credits are included when 300+ SharePoint Syntex licenses are purchased.<br>1M credits will allow processing of 2000 file pages.<br>| N/A |
 | Capacity | Uses the default Power Platform environment (custom environments with Dataverse database supported). | Does not have capacity restrictions.|

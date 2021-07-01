@@ -15,14 +15,13 @@ ms.custom:
 - M365solutions
 - seo-marvel-jun2020
 f1.keywords: NOCSH
+recommendations: false
 description: Learn how to set up secure content collaboration in Teams to protect your data based on its sensitivity.
 ---
 
-# Set up secure collaboration with Microsoft 365
+# Set up secure collaboration with Microsoft 365 and Microsoft Teams
 
 Being able to easily share information with the right people while preventing oversharing is key to an organization's success. This includes being able to share sensitive data safely with only those who should have access to it. Depending on the project, this might include sharing sensitive data with people outside your organization.
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWxMmL?autoplay=false]
 
 This collaboration solution guidance includes two components to help you:
 - Deploy Microsoft Teams with the right level of protection for each project
@@ -31,6 +30,8 @@ This collaboration solution guidance includes two components to help you:
 ![Deploy Teams with appropriate protection and configure external sharing with appropriate security settings](..\media\solutions-architecture-center\secure-collaboration-overview.png)
 
 If versatile and easy-to-use content collaboration tools aren't available, users will often collaborate by emailing documents. This is a tedious and error-prone method of collaboration, and can increase the risk of inappropriate sharing of information. If people find sharing information too difficult, they could revert to using consumer products that are not governed by IT. This can pose an even greater risk.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWxMmL?autoplay=false]
 
 With Microsoft 365, you can deploy Teams with a variety of configurations that help:
 
@@ -172,7 +173,7 @@ These training modules can help your users use Teams, groups, and SharePoint for
 |:---|:---|
 |![Set up and customize your team training icon](../media/set-up-customize-team-training.png)<br>**[Set up and customize your team](https://support.microsoft.com/office/702a2977-e662-4038-bef5-bdf8ee47b17b)**|![SharePoint share and sync training icon](../media/sharepoint-share-sync-training.png)<br>**[Share and sync](https://support.microsoft.com/office/98cb2ff2-c27e-42ea-b055-c2d895f8a5de)**|
 |![Teams upload and find files training icon](../media/smc-teams-upload-find-files-training.png)<br>**[Upload and find files](https://support.microsoft.com/office/57b669db-678e-424e-b0a0-15d19215cb12)**||
-|![Collaborate in teams and channels icon](../media/teams-collaborate-channels-training.png)<br>**[Collaborate in teams and channels](https://support.microsoft.com/office/c3d63c10-77d5-4204-a566-53ddcf723b46)**|||
+|![Collaborate in teams and channels icon](../media/teams-collaborate-channels-training.png)<br>**[Collaborate in teams and channels](https://support.microsoft.com/office/c3d63c10-77d5-4204-a566-53ddcf723b46)**||
 
 ## Illustrations
 

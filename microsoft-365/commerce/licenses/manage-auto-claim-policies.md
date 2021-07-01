@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.review: yinggiy, pablom
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +13,12 @@ localization_priority: Normal
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
-description: "Learn how to create and manage auto-claim policies that automatically assign licenses to users for certain apps."
 ms.custom: 
 - AdminSurgePortfolio
-- commerce
-search.appverid:
-- MET150
+- commerce_licensing
+description: "Learn how to create and manage auto-claim policies that automatically assign licenses to users for certain apps."
+search.appverid: MET150
+ms.date: 04/06/2021
 ---
 
 # Manage auto-claim policies
@@ -44,7 +45,7 @@ manage the policy:
 
 ## Before you begin
 
-You must be a Global admin to create and manage auto-claim policies. For more information, see [About Microsoft 365 admin roles](../../admin/add-users/about-admin-roles.md).
+You must be a Global, User, or License admin to create and manage auto-claim policies. For more information, see [About Microsoft 365 admin roles](../../admin/add-users/about-admin-roles.md).
 
 ## Turn the auto-claim policy feature on or off
 
@@ -56,6 +57,8 @@ By default, the auto-claim policy feature is turned off. Before you can use the 
 2. In the center of the page, select the **Turn on setting** button.
 
 ### Turn off auto-claim policies
+
+Only a Global admin can turn off an auto-claim policy setting.
 
 1. In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">Org settings</a> page.
 2. Near the bottom of the table, select **User owned apps and services**.

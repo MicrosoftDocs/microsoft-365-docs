@@ -108,7 +108,7 @@ Advanced eDiscovery supports many file types at many different levels. The suppo
 
 | Mime type | File identification | Metadata extraction | Text extraction | Native viewer | Annotate viewer | Possible Extensions |
 |:------| :------| :------| :------| :------| :------| :------|
-|application/onenote | Yes | Yes | Yes | Yes | No | .one |
+|application/onenote | Yes | Yes | Yes | No | No | .one |
 ||||||||
 
 ## Microsoft PowerPoint

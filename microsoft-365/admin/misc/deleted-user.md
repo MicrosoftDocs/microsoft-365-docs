@@ -28,36 +28,28 @@ description: "Learn how to delete or restore a user's Microsoft 365 account."
 You may have to delete a [user](../add-users/add-users.md) in your organization. You usually delete a user when the person leaves your organization. 
   
 ## Delete a user
-
-::: moniker range="o365-worldwide"
   
+::: moniker range="o365-worldwide"
+
 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.
 
-2. Select a user, and then above the list of users select **More options** (**...**), and then choose **Delete user**.
-  
-3. In the deletion confirmation pane, select **Delete user**. <br/>[Read full article.](../add-users/delete-a-user.md)
-  
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Active users</a> page.  
-
-2. Select a user, and then above the list of users choose **More** > **Delete a user**.
-  
-3. In the deletion confirmation pane, select **Delete user**. <br/>[Read full article.](../add-users/delete-a-user.md)
+ 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Active users</a> page.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Active users</a> page. 
-
-2. Select a user, and then above the list of users choose **More** > **Delete a user**.
-  
-3. In the deletion confirmation pane, select **Delete user**. <br/>[Read full article.](../add-users/delete-a-user.md)
+ 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Active users</a> page.
 
 ::: moniker-end
+
+2. Select a user, and then above the list of users select the three dots (more actions), and then choose **Delete user**.
+  
+3. In the deletion confirmation pane, select **Delete user**. <br/>[Read full article.](../add-users/delete-a-user.md)
 
   
 ## Restore a user

@@ -45,7 +45,7 @@ Prepare to roll up your sleeves and block out a chunk of time on your calendar: 
 |Remove your custom domain from your old Microsoft 365 subscription.  <br/> | Follow the [required steps before you remove a domain](remove-a-domain.md) to remove the domain name from user email addresses and remove DNS records for email and Lync for the custom domain. If you host your public website on Microsoft 365, you'll also need to remove the CNAME record that points to it.  <br/> > [!IMPORTANT]>  After you remove the MX record that routes email to this custom domain, email will stop working until you have added the domain to your new account, set up the new MX record, and set up your users. When you remove the DNS records for Lync, Lync will stop working. And after you remove the CNAME record that points to your public website, it will not be available.           [Remove the domain](remove-a-domain.md) .  <br/> |
 |Set up your custom domain for your new subscription, and set up your users.  <br/> | Set up your new subscription, including creating the required DNS records for your custom domain.  <br/>  Create your users, with email addresses on your custom domain.  <br/> |
 |Transfer data from your old subscription to your new subscription.  <br/> | Sign in to both accounts in separate browser windows:  <br/>  Right-click your browser icon, and open two private browser windows. You can use different credentials in the two windows to sign in on both accounts.  <br/> [Transfer administrative settings between subscriptions](#email) <br/> [Transfer team site structure and data](#transfer-team-site-structure-and-data) <br/> [Transfer a public website between subscriptions](#transfer-a-public-website-between-subscriptions) <br/> [Transfer administrative settings between subscriptions](#email) <br/> |
-|Cancel the subscription for the plan you're done with by calling Microsoft Support for Microsoft 365.  <br/> | Verify that your new subscription is working and all data has been transferred.  <br/>  [Contact customer support](../contact-support-for-business-products.md) to cancel your old subscription.  <br/> |
+|Cancel the subscription for the plan you're done with by calling Microsoft Support for Microsoft 365.  <br/> | Verify that your new subscription is working and all data has been transferred.  <br/>  [Contact customer support](../../business-video/get-help-support.md) to cancel your old subscription.  <br/> |
 
 ## Transfer administrative settings between subscriptions
 
@@ -86,11 +86,11 @@ There are several ways to save or transfer team site data:
   
 - You can save the old site as a template and import the template into the new site.
 
-- To transfer documents, first manually recreate your hierarchy on the new site. Then you can open both SharePoint team sites at the same time, open both document libraries with Windows Explorer, and copy and paste the documents. See [Video: Copy or move library files by using Open with Explorer](https://support.microsoft.com/office/c7c20284-bc94-47f4-9728-d28e9daf0790).
+- To transfer documents, first manually recreate your hierarchy on the new site. Then you can open both SharePoint team sites at the same time, open both document libraries with Windows Explorer, and copy and paste the documents. See [Video: Copy or move library files by using Open with Explorer](../../business-video/store-files.md).
 
 - To transfer list data, save a [list template](https://support.microsoft.com/office/c3884ad1-bc49-44b8-b3d6-3bc6a01eb393), and use the saved template to re-create the list on the new site.
 
-- To save a document library or list content from a SharePoint Online environment (OneDrive for Business or team sites) to file shares or to a local computer, see [Information about manual migration of SharePoint Online content](https://support.microsoft.com/kb/2783484).
+- To save a document library or list content from a SharePoint Online environment (OneDrive for Business or team sites) to file shares or to a local computer, see [Information about manual migration of SharePoint Online content](/sharepoint/troubleshoot/migration-tool/content-manual-migration).
 
 ## Transfer users' data between subscriptions
 

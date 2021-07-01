@@ -39,11 +39,14 @@ For more information, see [assign licenses to users](../manage/assign-licenses-t
 
 ## Why your organization&#39;s content collaboration score matters
 
-A key aspect of digital transformation is how people collaborate in files. With your content on Microsoft 365, people access, create, modify, and collaborate on content with other people from any location. Research shows that when people collaborate with online files, each person saves an average of 100 minutes per week. [See the evidence](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf).
+A key aspect of digital transformation is how people collaborate in files. With your content on Microsoft 365, people access, create, modify, and collaborate on content with other people from any location. Research shows that when people collaborate with online files, each person saves an average of 100 minutes per week.
 
 ## How we calculate the content collaboration score
 
 We provide a primary insight that contains the key metrics for content collaboration in your organization. Then, a scoring framework detailed below is used for these metrics to calculate your organization's score.
+
+> [!NOTE]
+> On April 22, 2021, we changed how the collaborators metric is calculated. This affects the [primary insight](#primary-insight), the [file collaboration insight](#number-of-files-collaborated-on), and the way the content collaboration score is measured. This change helps reduce noise in the data from non-human agents (or bots) from Microsoft and other third-party applications, resulting in a more accurate and actionable score.
 
 ### Primary insight
 
@@ -62,7 +65,7 @@ Types considered for this information include Word, Excel, PowerPoint, OneNote, 
         They're defined as follows:</br>
         **Readers:** People who access or download online files in OneDrive or SharePoint.</br>
         **Creators:** People who create, modify, upload, sync, check in, copy, or move online OneDrive or SharePoint files.</br>
-        **Collaborators:** People who collaborate with online files using OneDrive or SharePoint. Two people are collaborators if one of them reads or edits an online Office app or PDF after the other person has created or modified it, within a 28-day window.
+        **Collaborators:** People who collaborate with online files by using OneDrive or SharePoint. Two people are collaborators if one of them reads or edits an online Office app or PDF after the other person has created or modified it, within a 28-day window.
 
         > [!NOTE]
         > The files considered in the visualization are Word, Excel, PowerPoint, OneNote, or PDF files that are online and saved to OneDrive or SharePoint. 
@@ -92,14 +95,13 @@ The trend visualizations chart shows the trend-line of the primary insight key m
 
 ### Scoring framework
 
-The content collaboration score for your organization measures at an aggregate (organization) level whether people are consistently reading, creating, or collaborating on online Office files, such as Word, Excel, PowerPoint, OneNote, or PDFs;, or in OneDrive or SharePoint.
+The content collaboration score for your organization measures at an aggregate (organization) level whether people are consistently reading, creating, or collaborating on online Office files such as Word, Excel, PowerPoint, OneNote, or PDFs, or in OneDrive or SharePoint.
 
-Scores are not provided at the individual user level .
-
+Scores are not provided at the individual user level.
 
 ## Explore how your organization collaborates
 
-We also provide you with information that helps you gain visibility into how your organization collaborates on content. These additional metrics don't directly contribute to your Productivity Score but help you create an action plan plan as part of your digital transformation to help optimize the way people work.
+We also provide you with information that helps you gain visibility into how your organization collaborates on content. These additional metrics don't directly contribute to your Productivity Score but help you create an action plan as part of your digital transformation to help optimize the way people work.
 
 ### Creating files in OneDrive or SharePoint
 
@@ -126,13 +128,13 @@ We also provide you with information that helps you gain visibility into how you
 3. **Visualization:** The breakdown in the visualization is meant to represent the extent to which people who are attaching content in emails are using different modes (files not on OneDrive or SharePoint; links to online files; and links embedded in the email):
       - **Attach files:** The blue (colored) portion of the bar and the fraction (numerator/denominator) on the bar represents the percentage of people using attachments in emails.
         - Numerator: The number of people who attach files to email that weren't saved to OneDrive or SharePoint within the last 28 days.
-        - Denominator: 	Denominator: The number of people who have had access to Exchange and  OneDrive, SharePoint, or both within the last 28 days.
+        - Denominator: The number of people who have had access to Exchange and  OneDrive, SharePoint, or both within the last 28 days.
       - **Links to online files:** The blue (colored) portion of the bar and the fraction (numerator/denominator) on the bar represent the percentage of people using attachments and attaching links to files in emails.
         - Numerator: The number of people attaching links to online files (saved to OneDrive or SharePoint) to emails within the last 28 days.
-        - Denominator: 	Denominator: The number of people who have access to Exchange and  OneDrive, SharePoint, or both  within the last 28 days.
+        - Denominator: The number of people who have access to Exchange and  OneDrive, SharePoint, or both  within the last 28 days.
       - **Embed links in email:** The blue (colored) portion of the bar and the fraction on the bar represent the percentage of people who embed links in body of the emails.
         - Numerator: The number of people embedding links in body of emails to online files (saved to OneDrive or SharePoint) within the last 28 days.
-        - Denominator: 	Denominator: The number of people who have access to Exchange and  OneDrive,SharePoint, or both  within the last 28 days.
+        - Denominator: The number of people who have access to Exchange and  OneDrive, SharePoint, or both  within the last 28 days.
 4. **Link to resources:** Select this link to view help content.
 
 ### Sharing of online files
@@ -154,21 +156,21 @@ We also provide you with information that helps you gain visibility into how you
 
 :::image type="content" source="../../media/intensityofcollab.png" alt-text="Chart showing how many files were most collaborated on.":::
 
-1. **Header:** This highlights the percentage of people who have access to OneDrive or SharePoint who are collaborating on 4 or more files.
-2. **Body:** This provides information about how people can leverage online files for better collaboration.
-3. **Visualization:** This shows a distribution of the people who have access to OneDrive or SharePoint, based on the number of files they collaborate on. This is shown through the following 4 categories (for each, the blue portion of the bar and the fraction represent the percentage of people who have access to OneDrive or SharePoint that fall into that category):
+1. **Header:** Highlights the percentage of people who have access to OneDrive or SharePoint who are collaborating on 4 or more files.
+2. **Body:** Provides information about how people can leverage online files for better collaboration.
+3. **Visualization:** Shows a distribution of the people who have access to OneDrive or SharePoint, based on the number of files they collaborate on. This is shown through the following 4 categories (for each, the blue portion of the bar and the fraction represent the percentage of people who have access to OneDrive or SharePoint that fall into that category):
       - **No collaboration:**
-        - **Numerator:** The number of people not collaborating on any files in the last 28 days
-        - **Denominator:** The total number of people who have access to OneDrive or SharePoint for at least 1 of last 28 days.
+        - Numerator: Number of people not collaborating on any files in the last 28 days.
+        - Denominator: Total number of people who have access to OneDrive or SharePoint for at least 1 of the last 28 days.
       - **Collaboration on 1-3 files:**
-        - **Numerator:** The number of people collaborating on 1-3 files in the last 28 days.
-        - **Denominator:** The total number of people who have had access to OneDrive or SharePoint for at least 1 of the last 28 days.
+        - Numerator: Number of people collaborating on 1-3 files in the last 28 days.
+        - Denominator: Total number of people who have had access to OneDrive or SharePoint for at least 1 of the last 28 days.
       - **Collaboration on 4-10 files:**
-        - **Numerator:** The number of people collaborating on 4-10 files in the last 28 days
-        - **Denominator: The** total number of people who have had access to OneDrive or SharePoint for at least 1 of the last 28 days.
+        - Numerator: Number of people collaborating on 4-10 files in the last 28 days.
+        - Denominator: Total number of people who have had access to OneDrive or SharePoint for at least 1 of the last 28 days.
       - **Collaboration on 11 or more files:**
-        - **Numerator:** The number of people collaborating on 11 or more files in the last 28 days
-        - **Denominator:** The total number of people who have had access to OneDrive or SharePoint for at least 1 of the last 28 days.
+        - Numerator: Number of people collaborating on 11 or more files in the last 28 days.
+        - Denominator: Total number of people who have had access to OneDrive or SharePoint for at least 1 of the last 28 days.
         
 4. **Link to resources:** Select this link to view help content.
 
@@ -178,12 +180,12 @@ We also provide you with information that helps you gain visibility into how you
 
 1. **Header:** Highlights the percentage of devices out of all tested that has poor network connection to OneDrive and SharePoint. 
 2. **Body:** Provides information about why network connection performance important for collaboration. 
-3. **Visualization:** shows a percentage of devices with different levels of network connectivity performance related to OneDrive and SharePoint:
-      - **81-100 (best)**: The dark green (colored) portion of the bar represent percentage of devices with best performance.
-      - **61-80**: The green (colored) portion of the bar represent percentage of devices with network performance score between 60-80. 
-      - **41-60**: The orange (colored) portion of the bar represent percentage of devices with network performance score between 40-60. 
-      - **21-40**: The red (colored) portion of the bar represent percentage of devices with network performance score between 20-40. 
-      - **0-20**: The dark red (colored) portion of the bar represent percentage of devices with worst network performance score between 0-20. 
+3. **Visualization:** Shows a percentage of devices with different levels of network connectivity performance related to OneDrive and SharePoint:
+      - **81-100 (best)**: The dark green (colored) portion of the bar represents the percentage of devices with the best performance.
+      - **61-80**: The green (colored) portion of the bar represents the percentage of devices with a network performance score between 60-80. 
+      - **41-60**: The orange (colored) portion of the bar represents the percentage of devices with a network performance score between 40-60. 
+      - **21-40**: The red (colored) portion of the bar represents the percentage of devices with a network performance score between 20-40. 
+      - **0-20**: The dark red (colored) portion of the bar represents the percentage of devices with the worst network performance score between 0-20. 
 
 ## Related content
 

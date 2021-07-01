@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 Defender advanced hunting API
 description: Learn how to run advanced hunting queries using Microsoft 365 Defender's advanced hunting API
-keywords: Advanced Hunting, APIs, api, MTP, M365 Defender, Microsoft 365 Defender
+keywords: Advanced Hunting, APIs, api, M365 Defender, Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -28,7 +28,7 @@ ms.technology: m365d
 
 **Applies to:**
 
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 > [!IMPORTANT]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
@@ -42,10 +42,9 @@ The following conditions relate to all queries.
 1. Queries explore and return data from the past 30 days.
 2. Results can return up to 100,000 rows.
 3. You can make up to 15 calls per minute per tenant.
-4. You have 10 minutes of running time per hour per tenant.
-5. You have four total hours of running time per day per tenant.
-6. If a single request runs for more than 10 minutes, it will time out and return an error.
-7. A `429` HTTP response code indicates that you've reached a quota, either by number of requests sent, or by allotted running time. Read the response body to understand the limit you have reached. 
+4. Queries are blocked if the tenant has reached 100% until after the next 15-minute cycle.
+5. If a single request runs for more than 10 minutes, it will time out and return an error.
+6. A `429` HTTP response code indicates that you've reached a quota, either by number of requests sent, or by allotted running time. Read the response body to understand the limit you have reached. 
 
 > [!NOTE]
 > All quotas listed above (for example 15 calls per min) are per tenant size. These quotas are the minimum.

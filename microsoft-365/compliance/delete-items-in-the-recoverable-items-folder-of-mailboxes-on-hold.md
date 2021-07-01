@@ -23,8 +23,8 @@ ms.custom: seo-marvel-apr2020
 # Delete items in the Recoverable Items folder of cloud-based mailboxes on hold
 
 The Recoverable Items folder for an Exchange Online mailbox exists to protect from accidental or malicious deletions. It's also used to store items that are retained and accessed by compliance features, such as holds and eDiscovery searches. However, in some situations organizations might have data that's been unintentionally retained in the Recoverable Items folder that they must delete. For example, a user might unknowingly send or forward an email message that contains sensitive information or information that may have serious business consequences. Even if the message is permanently deleted, it might be retained indefinitely because a legal hold has been placed on the mailbox. This scenario is known as *data spillage* because data has been unintentionally *spilled* into Office 365. In these situations, you can delete items in a user's Recoverable Items folder for an Exchange Online mailbox, even if that mailbox is placed on hold with one of the different hold features in Office 365. These types of holds include Litigation Holds, In-Place Holds, eDiscovery holds, and retention policies created in the security and compliance center in Office 365 or Microsoft 365.
-  
- This article explains how admins can delete items from the Recoverable Items folder for cloud-based mailboxes that are on hold. This procedure involves disabling access to the mailbox and disabling single item recovery, disabling the Managed Folder Assistant from processing the mailbox, temporarily removing the hold, deleting items from the Recoverable Items folder, and then reverting the mailbox to its previous configuration. Here's the process:
+
+This article explains how admins can delete items from the Recoverable Items folder for cloud-based mailboxes that are on hold. This procedure involves disabling access to the mailbox and disabling single item recovery, disabling the Managed Folder Assistant from processing the mailbox, temporarily removing the hold, deleting items from the Recoverable Items folder, and then reverting the mailbox to its previous configuration. Here's the process:
   
 [Step 1: Collect information about the mailbox](#step-1-collect-information-about-the-mailbox)
 
@@ -85,7 +85,7 @@ Additionally, you need to get the mailbox client access settings so you can temp
     Get-Mailbox <username> | FL LitigationHoldEnabled,InPlaceHolds
     ```
 
-   > [!TIP]
+    > [!TIP]
     > If there are too many values in the  *InPlaceHolds*  property and not all of them are displayed, you can run the  `Get-Mailbox <username> | Select-Object -ExpandProperty InPlaceHolds` command to display each value on a separate line.
   
 5. Run the following command to get information about any organization-wide retention policies. 
@@ -94,12 +94,22 @@ Additionally, you need to get the mailbox client access settings so you can temp
     Get-OrganizationConfig | FL InPlaceHolds
     ```
 
-   If your organization has any organization-wide retention policies, you'll have to exclude the mailbox from these policies in Step 3.
+   If your organization has any organization-wide retention policies, you'll have to exclude the mailbox from these policies in Step 3. It may take up to 24 hours to replicate the change.
 
-   > [!TIP]
+    > [!TIP]
     > If there are too many values in the  *InPlaceHolds*  property and not all of them are displayed, you can run the  `Get-OrganizationConfig | Select-Object -ExpandProperty InPlaceHolds` command to display each value on a separate line. 
   
-6. Run the following command to get the current size and total number of items in folders and subfolders in the Recoverable Items folder in the user's primary mailbox.
+6. Run the following command to determine if a delay hold is applied to the mailbox.
+
+   ```powershell
+   Get-Mailbox <username> | FL DelayHoldApplied,DelayReleaseHoldApplied
+   ```
+
+   If the value of the *DelayHoldApplied* or *DelayReleaseHoldApplied* property is set to **True**, a delay hold is applied to the mailbox and must be removed. For more information about delay holds, see [Step 4: Remove the delay hold from the mailbox](#step-4-remove-the-delay-hold-from-the-mailbox).
+
+   If the value of either properties is set to **False**, a delay hold is not applied to the mailbox, and you can skip Step 4.
+
+7. Run the following command to get the current size and total number of items in folders and subfolders in the Recoverable Items folder in the user's primary mailbox.
 
     ```powershell
     Get-MailboxFolderStatistics <username> -FolderScope RecoverableItems | FL Name,FolderAndSubfolderSize,ItemsInFolderAndSubfolders
@@ -133,8 +143,8 @@ Perform the following steps in Exchange Online PowerShell.
     Set-CASMailbox <username> -EwsEnabled $false -ActiveSyncEnabled $false -MAPIEnabled $false -OWAEnabled $false -ImapEnabled $false -PopEnabled $false
     ```
 
-   > [!NOTE]
-    > It might take up to 60 minutes to disable all client access methods to the mailbox. Note that disabling these access methods won't disconnect the mailbox owner they're currently signed in. If the owner isn't signed in, then they won't be able to access their mailbox after these access methods are disabled.
+    > [!NOTE]
+    > It might take up to 60 minutes to disable all client access methods to the mailbox. Note that disabling these access methods won't disconnect the mailbox owner if they are currently signed in. If the owner isn't signed in, they won't be able to access their mailbox after these access methods are disabled.
   
 2. Run the following command to increase the deleted item retention period the maximum of 30 days. This assumes that the current setting is less than 30 days.
 
@@ -148,7 +158,7 @@ Perform the following steps in Exchange Online PowerShell.
     Set-Mailbox <username> -SingleItemRecoveryEnabled $false
     ```
 
-   > [!NOTE]
+    > [!NOTE]
     > It might take up to 60 minutes to disable single item recovery. Don't delete items in the Recoverable Items folder until this period has elapsed. 
   
 4. Run the following command to prevent the Managed Folder Assistant from processing the mailbox. As previously explained, you can disable the Managed Folder Assistant only if a retention policy with a Preservation Lock is not applied to the mailbox. 
@@ -203,7 +213,7 @@ Organization-wide, Exchange-wide, and Teams-wide retention policies are applied 
 Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name
 ```
 
-After you identify the organization-wide retention policies, go to the **Information governance** > **Retention** page in the Security & Compliance Center, edit each organization-wide retention policy that you identified in the previous step, and add the mailbox to the list of excluded recipients. Doing this will remove the user's mailbox from the retention policy.
+After you identify the organization-wide retention policies, go to the **Information governance** > **Retention** page in the Security & Compliance Center, edit each organization-wide retention policy that you identified in the previous step, and add the mailbox to the list of excluded recipients. Doing this will remove the user's mailbox from the retention policy. It may take up to 24 hours to replicate the change.
 
 ### Retention labels
 
@@ -240,14 +250,6 @@ After you've identified the name of the eDiscovery case and the hold, go to the 
 ## Step 4: Remove the delay hold from the mailbox
 
 After any type of hold is removed from a mailbox, the value of the *DelayHoldApplied* or *DelayReleaseHoldApplied* mailbox property is set to **True**. This occurs the next time the Managed Folder Assistant processes the mailbox and detects that a hold has been removed. This is called a *delay hold* and means the actual removal of the hold is delayed for 30 days to prevent data from being permanently deleted from the mailbox. (The purpose of a delay hold is to give admins an opportunity to search for or recover mailbox items that will be purged after a hold is removed.)  When a delay hold is placed on the mailbox, the mailbox is still considered to be on hold for an unlimited duration, as if the mailbox was on Litigation Hold. After 30 days, the delay hold expires, and Microsoft 365 will automatically attempt to remove the delay hold (by setting the *DelayHoldApplied* or *DelayReleaseHoldApplied* property to **False**) so that the hold is removed. For more information about a delay hold, see the "Managing mailboxes on delay hold" section in [How to identify the type of hold placed on an Exchange Online mailbox](identify-a-hold-on-an-exchange-online-mailbox.md#managing-mailboxes-on-delay-hold).
-
-Before you can delete items in Step 5, you have to remove a delay hold from the mailbox. First, determine if the delay hold is applied to the mailbox by running the following command in Exchange Online PowerShell:
-
-```powershell
-Get-Mailbox <username> | FL DelayHoldApplied,DelayReleaseHoldApplied
-```
-
-If the value of either the *DelayHoldApplied* or *DelayReleaseHoldApplied* property is set to **False**, a delay hold has not been placed on the mailbox. You can go to Step 5 and delete items in the Recoverable Items folder.
 
 If the value of the *DelayHoldApplied* or *DelayReleaseHoldApplied* property is set to **True**, run one of the following commands to remove the delay hold:
 
