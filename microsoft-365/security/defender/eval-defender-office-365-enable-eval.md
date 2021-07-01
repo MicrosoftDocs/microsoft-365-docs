@@ -92,7 +92,7 @@ To effectively evaluate Microsoft Defender for Office 365, it's important that i
 
 ## Step 5: Activate the evaluation
 
-Use the instructions here to activate your Microsoft Defender for Office 365 evaluation from the Microsoft 365 security center.
+Use the instructions here to activate your Microsoft Defender for Office 365 evaluation from Microsoft 365 Defender.
 
 1. Log on to your tenant with an account that has access to the Microsoft 365 security center.
 2. Choose whether you want to make the **Microsoft 365 security center** your default interface for Microsoft Defender for Office 365 administration (recommended).

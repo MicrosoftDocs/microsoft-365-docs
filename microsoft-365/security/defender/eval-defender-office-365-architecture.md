@@ -51,7 +51,7 @@ The following table describes this illustration.
 |4     | A message that is not malicious, blocked, or quarantined is processed and delivered to the recipient in EXO where user preferences related to junk mail, mailbox rules, or other settings are evaluated and triggered. |
 |5     | Integration with on-premises Active Directory can be enabled using Azure AD Connect to synchronize and provision mail-enabled objects and accounts to Azure Active Directory and ultimately Exchange Online. |
 |6     | When integrating an on-premises environment, it is strongly encouraged to utilize an Exchange server for supported management and administration of mail related attributes, settings, and configurations |
-|7     | Microsoft 365 Security Center and Microsoft Defender for Office share signals. |
+|7     | Microsoft Defender for Office 365 shares signals to Microsoft 365 Defender for extended detection and response (XDR).|
 
 On-premises integration is common but optional. If your environment is cloud-only this guidance will also work for you.
 
@@ -62,7 +62,6 @@ The following table identified key concepts that are important to understand whe
 
 |Concept  |Description |More information  |
 |---------|---------|---------|
-|Administration Portal    |   The URL location where management of tools and features of Office 365 and device, as well as identity and app security takes place.      |    [The unified Microsoft 365 security center](overview-security-center.md)     |
 |Exchange Online Protection      |    Exchange Online Protection (EOP) is the cloud-based filtering service that helps protect your organization against spam and malware emails. EOP is included in all Microsoft 365 licenses which include Exchange Online.     |   [Exchange Online Protection overview](../office-365-security/exchange-online-protection-overview.md)      |
 |Anti-malware protection     |    Organizations with mailboxes in EXO are automatically protected against malware.     |  [Anti-malware protection in EOP](../office-365-security/anti-malware-protection.md)       |
 |Anti-spam protection     |   Organizations with mailboxes in EXO are automatically protected against junk mail and spam policies.      |  [Anti-spam protection in EOP](../office-365-security/anti-spam-protection.md)       |

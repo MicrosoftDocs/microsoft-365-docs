@@ -66,7 +66,7 @@ Try out Defender for Identity tutorials:
 
 ## Next steps
 
-[Investigate and respond using Microsoft 365 Defender in a pilot environment](eval-defender-investigate-respond.md)
+[Evaluate Microsoft Defender for Office 365](eval-defender-office-365-overview.md)
 
 Return to the overview for [Evaluate Microsoft Defender for Office 365](eval-defender-office-365-overview.md)
 
