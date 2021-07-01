@@ -56,7 +56,7 @@ The first step in creating a form processing model is to name the model, define 
 
    The collection name is saved to a dedicated column in the document library where the model is applied, allowing you to distinguish different file layouts processed by the same model. The extracted table information is saved to a specified list and associated with the uploaded file for easy viewing or for additional business process automation.
 
-   If you want to extract table information to an associated list:<br>
+   If you want to extract table information to an associated list:<br><br>
 
      1. In the **Extract info from tables?** section, select **Yes**.
 
