@@ -853,3 +853,5 @@
   href: ../security/index.yml
 - name: Microsoft 365 Apps for business
   href: /office365/admin/admin-home
+- name: Modern Information Risk Reference Architecture
+  href: information-risk-management-reference-architecture.md
