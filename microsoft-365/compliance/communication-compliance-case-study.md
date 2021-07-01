@@ -86,7 +86,7 @@ Contoso decides to use the *Communication Compliance* role group assign all the 
 | **Communication Compliance Investigator** | Use this group to assign permissions to users that will act as communication compliance investigators. Users assigned to this role group can view message metadata and content, escalate to additional reviewers, escalate to an Advanced eDiscovery case, send notifications to users, and resolve the alert. |
 | **Communication Compliance Viewer** | Use this group to assign permissions to users that will manage communication reports. Users assigned to this role group can access all reporting widgets on the communication compliance home page and can view all communication compliance reports. |
 
-1. Contoso IT administrators sign into the **Office 365 Security & Compliance center** permissions page [(https://protection.office.com/permissions)](https://protection.office.com/permissions) using credentials for a global administrator account and select the link to view and manage roles in Microsoft 365.
+1. Contoso IT administrators sign into the **Office 365 Security & Compliance center** permissions page [(https://compliance.microsoft.com/permissions)](https://compliance.microsoft.com/permissions) using credentials for a global administrator account and select the link to view and manage roles in Microsoft 365.
 2. In the **Security & Compliance Center**, they go to **Permissions** and select the link to view and manage roles in Office 365.
 3. The administrators select the *Communication Compliance* role group, then select **Edit role group**.
 4. The administrators select **Choose members** from the left navigation pane, then select **Edit**.
