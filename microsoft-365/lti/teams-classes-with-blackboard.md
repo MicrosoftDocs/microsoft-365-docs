@@ -141,11 +141,11 @@ This process can be done either before or after you have configured the LTI appl
 
 ### Before Configuring the LTI Applications
 
-If you choose to approve the Blackboard Teams Classes Azure app before configuring the LTI integrations, you'll need to redirect to the **Microsoft Identity Platform Admin Consent Endpoint**. The URL is shown: 
+If you choose to approve the Blackboard Teams Classes Azure app before configuring the LTI integrations, you'll need to redirect to the **Microsoft Identity Platform Admin Consent Endpoint**. The URL is shown:
 
 `https://login.microsoftonline.com/{tenant}/adminconsent?client\_id=2d94989f-457a-47c1-a637-e75acdb11568`
 
-> [!NOTE] 
+> [!NOTE]
 > You’ll replace **{Tenant}** with your specific institutional Microsoft Azure tenant ID. (Use “Learn more” class here and add the text:**More on How to find your tenant.**
 
 ### *Remove the period at the end of tenant once you link it*
