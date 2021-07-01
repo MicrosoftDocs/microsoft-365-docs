@@ -76,12 +76,12 @@ Files automatically blocked by an indicator won't show up in the file's Action c
 >[!IMPORTANT]
 >- Typically, file blocks are enforced and removed within a couple of minutes, but can take upwards of 30 minutes.
 > 
->- If there are conflicting file IoC policies with the same enforcement type and target, the policy of the more secure hash will be applied. A SHA-256 file hash IoC policy will win over a SHA-1 file hash IoC policy which will win over a MD5 file hash IoC policy if the hash types define the same file. This is always true regardless of the device group. 
+>- If there are conflicting file IoC policies with the same enforcement type and target, the policy of the more secure hash will be applied. An SHA-256 file hash IoC policy will win over an SHA-1 file hash IoC policy, which will win over an MD5 file hash IoC policy if the hash types define the same file. This is always true regardless of the device group. 
 >   In all other cases, if conflicting file IoC policies with the same enforcement target are applied to all devices and to the device’s group, then for a device, the policy in the device group will win. 
 >   
->- If EnableFileHashComputation group policy is disabled, the blocking accuracy of the file IoC is reduced. However, enabling `EnableFileHashComputation` may impact device performance. For example, copying large files from a network share onto your local device, especially over a VPN connection, might have an effect on device performance.
+>- If the EnableFileHashComputation group policy is disabled, the blocking accuracy of the file IoC is reduced. However, enabling `EnableFileHashComputation` may impact device performance. For example, copying large files from a network share onto your local device, especially over a VPN connection, might have an effect on device performance.
 >
->   For more information about the `EnableFileHashComputation` group policy, see [Defender CSP](/windows/client-management/mdm/defender-csp)
+>   For more information about the EnableFileHashComputation group policy, see [Defender CSP](/windows/client-management/mdm/defender-csp)
 
 ## Policy conflict handling  
 
