@@ -45,79 +45,79 @@ Here's the sample XML of the rule package that we'll create in this topic. Eleme
 <?xml version="1.0" encoding="UTF-16"?>
 <RulePackage xmlns="http://schemas.microsoft.com/office/2011/mce">
 <RulePack id="DAD86A92-AB18-43BB-AB35-96F7C594ADAA">
-	<Version build="0" major="1" minor="0" revision="0"/>
-	<Publisher id="619DD8C3-7B80-4998-A312-4DF0402BAC04"/>
-	<Details defaultLangCode="en-us">
-		<LocalizedDetails langcode="en-us">
-			<PublisherName>Contoso</PublisherName>
-			<Name>Employee ID Custom Rule Pack</Name>
-			<Description>
-			This rule package contains the custom Employee ID entity.
-			</Description>
-		</LocalizedDetails>
-	</Details>
+  <Version build="0" major="1" minor="0" revision="0"/>
+  <Publisher id="619DD8C3-7B80-4998-A312-4DF0402BAC04"/>
+  <Details defaultLangCode="en-us">
+    <LocalizedDetails langcode="en-us">
+      <PublisherName>Contoso</PublisherName>
+      <Name>Employee ID Custom Rule Pack</Name>
+      <Description>
+      This rule package contains the custom Employee ID entity.
+      </Description>
+    </LocalizedDetails>
+  </Details>
 </RulePack>
 <Rules>
 <!-- Employee ID -->
-	<Entity id="E1CC861E-3FE9-4A58-82DF-4BD259EAB378" patternsProximity="300" recommendedConfidence="75">
-		<Pattern confidenceLevel="65">
-			<IdMatch idRef="Regex_employee_id"/>
-		</Pattern>
-		<Pattern confidenceLevel="75">
-			<IdMatch idRef="Regex_employee_id"/>
-			<Match idRef="Func_us_date"/>
-		</Pattern>
-		<Pattern confidenceLevel="85">
-			<IdMatch idRef="Regex_employee_id"/>
-			<Match idRef="Func_us_date"/>
-			<Any minMatches="1">
-				<Match idRef="Keyword_badge" minCount="2"/>
-				<Match idRef="Keyword_employee"/>
-			</Any>
-			<Any minMatches="0" maxMatches="0">
-				<Match idRef="Keyword_false_positives_local"/>
-				<Match idRef="Keyword_false_positives_intl"/>
-			</Any>
-		</Pattern>
-	</Entity>
-	<Regex id="Regex_employee_id">(\s)(\d{9})(\s)</Regex>
-	<Keyword id="Keyword_employee">
-		<Group matchStyle="word">
-			<Term>Identification</Term>
-			<Term>Contoso Employee</Term>
-		</Group>
-	</Keyword>
-	<Keyword id="Keyword_badge">
-		<Group matchStyle="string">
-			<Term>card</Term>
-			<Term>badge</Term>
-			<Term caseSensitive="true">ID</Term>
-		</Group>
-	</Keyword>
-	<Keyword id="Keyword_false_positives_local">
-		<Group matchStyle="word">
-			<Term>credit card</Term>
-			<Term>national ID</Term>
-		</Group>
-	</Keyword>
-	<Keyword id="Keyword_false_positives_intl">
-		<Group matchStyle="word">
-			<Term>identity card</Term>
-			<Term>national ID</Term>
-			<Term>EU debit card</Term>
-		</Group>
-	</Keyword>
-	<LocalizedStrings>
-		<Resource idRef="E1CC861E-3FE9-4A58-82DF-4BD259EAB378">
-			<Name default="true" langcode="en-us">Employee ID</Name>
-			<Description default="true" langcode="en-us">
-			A custom classification for detecting Employee IDs.
-			</Description>
-			<Description default="false" langcode="de-de">
-			Description for German locale.
-			</Description>
-		</Resource>
-	</LocalizedStrings>
+  <Entity id="E1CC861E-3FE9-4A58-82DF-4BD259EAB378" patternsProximity="300" recommendedConfidence="75">
+    <Pattern confidenceLevel="65">
+      <IdMatch idRef="Regex_employee_id"/>
+    </Pattern>
+    <Pattern confidenceLevel="75">
+      <IdMatch idRef="Regex_employee_id"/>
+      <Match idRef="Func_us_date"/>
+    </Pattern>
+    <Pattern confidenceLevel="85">
+      <IdMatch idRef="Regex_employee_id"/>
+      <Match idRef="Func_us_date"/>
+      <Any minMatches="1">
+        <Match idRef="Keyword_badge" minCount="2"/>
+        <Match idRef="Keyword_employee"/>
+      </Any>
+      <Any minMatches="0" maxMatches="0">
+        <Match idRef="Keyword_false_positives_local"/>
+        <Match idRef="Keyword_false_positives_intl"/>
+      </Any>
+    </Pattern>
+  </Entity>
+  <Regex id="Regex_employee_id">(\s)(\d{9})(\s)</Regex>
+  <Keyword id="Keyword_employee">
+    <Group matchStyle="word">
+      <Term>Identification</Term>
+      <Term>Contoso Employee</Term>
+    </Group>
+  </Keyword>
+  <Keyword id="Keyword_badge">
+    <Group matchStyle="string">
+      <Term>card</Term>
+      <Term>badge</Term>
+      <Term caseSensitive="true">ID</Term>
+    </Group>
+  </Keyword>
+  <Keyword id="Keyword_false_positives_local">
+    <Group matchStyle="word">
+      <Term>credit card</Term>
+      <Term>national ID</Term>
+    </Group>
+  </Keyword>
+  <Keyword id="Keyword_false_positives_intl">
+    <Group matchStyle="word">
+      <Term>identity card</Term>
+      <Term>national ID</Term>
+      <Term>EU debit card</Term>
+    </Group>
+  </Keyword>
+  <LocalizedStrings>
+    <Resource idRef="E1CC861E-3FE9-4A58-82DF-4BD259EAB378">
+      <Name default="true" langcode="en-us">Employee ID</Name>
+      <Description default="true" langcode="en-us">
+      A custom classification for detecting Employee IDs.
+      </Description>
+      <Description default="false" langcode="de-de">
+      Description for German locale.
+      </Description>
+    </Resource>
+  </LocalizedStrings>
 </Rules>
 </RulePackage>
 ```
@@ -334,7 +334,7 @@ The Version element is also important. When you upload your rule package for the
   </RulePack>
   
  <Rules>
-	. . .
+  . . .
  </Rules>
 </RulePackage>
 

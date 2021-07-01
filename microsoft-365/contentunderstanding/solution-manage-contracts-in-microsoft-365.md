@@ -62,10 +62,10 @@ This contract management solution guidance includes four components of Microsoft
       ![Example of a contract.](../media/content-understanding/contract.png)
 
 3. In Microsoft Teams, all stakeholders are members of a secure Teams channel in which all contracts in the document library are visible for approval or rejection. By using Teams functionality, all stakeholders are notified when new contracts need to be reviewed.
- 
+
 4. By using Power Automate, contracts are moved through the approval process in the Teams channel. When a member approves a contract, the contract status is changed to approve, all members are notified through a Teams post, and a line item is created to show that the contract is ready for payout. This process can be extended to write directly to a third-party financial application for payment.
 
-5.	When a member rejects a contract, the status is changed to rejected, and all members are notified through a Teams post.
+5. When a member rejects a contract, the status is changed to rejected, and all members are notified through a Teams post.
 
 6. The end result of this solution is an automated business process for your organization. Employees can easily use the custom tile view in Teams to initiate and monitor the approval workflow of your documents. 
 
@@ -75,9 +75,9 @@ This contract management solution guidance includes four components of Microsoft
 
 This solution relies on the following functionality, all available as part of a Microsoft 365 Enterprise (E1, E3, E5, F3) or Business (Basic, Standard, or Premium) license:
 
--	Microsoft SharePoint Syntex
--	Microsoft Teams
--	Power Automate
+- Microsoft SharePoint Syntex
+- Microsoft Teams
+- Power Automate
 
 ## Create the solution
 

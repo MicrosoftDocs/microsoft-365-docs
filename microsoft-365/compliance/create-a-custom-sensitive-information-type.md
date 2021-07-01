@@ -122,17 +122,19 @@ You can also create custom sensitive information types by using PowerShell and E
 ### Checksum validator
 
 If you need to run a checksum on a digit in a regular expression, you can use the *checksum validator*. For example, say you need to create a SIT for an eight digit license number where the last digit is a checksum digit that is validated using a mod 9 calculation. You've set up the checksum algorithm like this:
- 
+
 Sum = digit 1 * Weight 1 + digit 2 * weight 2 + digit 3 * weight 3 + digit 4 * weight 4 + digit 5 * weight 5 + digit 6 * weight 6 + digit 7 * weight 7 + digit 8 * weight 8 
 Mod value = Sum % 9
 If Mod value == digit 8
-	Account number is valid
+    Account number is valid
 If Mod value != digit 8
-	Account number is invalid
+    Account number is invalid
 
 1. Define the primary element with this regular expression:
 
-`\d{8}`
+   ```console
+   \d{8}
+   ```
 
 2. Then add the checksum validator.
 3. Add the weight values separated by commas, the position of the check digit and the Mod value. For more information on the Modulo operation, see [Modulo operation](https://en.wikipedia.org/wiki/Modulo_operation).
@@ -144,11 +146,13 @@ If Mod value != digit 8
 
 ### Date validator
 
-If a date value that is embedded in regular expression is part of a new pattern you are creating, you can use the *date validator* to test that it meets your criteria. For example, say you want to create a SIT for a nine digit employee identification number. The first six digits are the date of hire in DDMMYY format and the last three are randomly generated numbers. To validate that the first six digits are in the correct format. 
+If a date value that is embedded in regular expression is part of a new pattern you are creating, you can use the *date validator* to test that it meets your criteria. For example, say you want to create a SIT for a nine digit employee identification number. The first six digits are the date of hire in DDMMYY format and the last three are randomly generated numbers. To validate that the first six digits are in the correct format.
 
 1. Define the primary element with this regular expression:
 
-`\d{9}`
+   ```console
+   \d{9}
+   ```
 
 2. Then add the date validator.
 3. Select the date format and the start offset. Since the date string is the first six digits, the offset is `0`.
