@@ -2,7 +2,7 @@
       href: index.md
 
     - name: Use Microsoft OneDrive LTI with Canvas (Preview)
-      href: onedrive-lti
+      href: onedrive-lti.md
     - name: Use Microsoft Teams classes with Canvas (Preview)
       href: teams-classes-with-canvas.md
     - name: Use Microsoft Teams meetings with Canvas (Preview)
