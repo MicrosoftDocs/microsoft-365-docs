@@ -64,7 +64,7 @@ This article explains what these functions look for, to help you understand how 
 |Func_china_resident_id|detects China-resident ID|no|
 |Func_colorado_drivers_license_number|detects Colorado driver’s license number|no|
 |Func_connecticut_drivers_license_number|detects Connecticut driver’s license number|no|
-|Func_credit_card|detects credit card|no|
+|Func_credit_card|detects credit card|yes|
 |Func_croatia_id_card|detects Croatia ID card|no|
 |Func_croatia_oib_number|detects Croatia OIB number|no|
 |Func_cyprus_eu_tax_file_number|detects Cyprus tax file number|no|
