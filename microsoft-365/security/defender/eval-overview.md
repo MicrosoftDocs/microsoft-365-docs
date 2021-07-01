@@ -30,13 +30,14 @@ ms.technology: m365d
 
 - Microsoft 365 Defender
 
-Microsoft 365 Defender automatically analyzes threat data across your environment and builds a complete picture of each attack on a single dashboard. It also includes automation to focus the tasks done by a security team. These articles step you through the process of setting up an **evaluation environment** so you can leverage the integrated parts of Microsoft 365 Defender.
+Microsoft 365 Defender is an XDR solution that automatically collects, correlates and analyzes signal, threat and alert data from across your Microsoft 365 environment, including endpoint, email, applications and identities. It leverages extensive AI and automation to automatically stop attacks and remediate affected assets to a safe state. The following articles step you through the process of setting up a trial environment so you can evaluate the features and capabilities of Microsoft 365 Defender. 
 
-As you walk through the articles, the steps will illustrate how to enable each component, configure starting-point settings, and begin monitoring with a pilot group (where applicable). When you're ready, you can finish by promoting your evaluation environment directly to production.
+As you walk through these articles, the steps will illustrate how to enable each component, configure settings and being monitoring with a pilot group. When you’re ready, you can finish by promotion your evaluation environment directly into production. 
 
-Microsoft recommends you create your evaluation environment in an existing production subscription of Office 365. You'll gain real-world insights immediately and can tune settings to work against current threats to your environment and users. After you've gained experience, simply promote each component of Microsoft 365 Defender to production (one at a time). You can also gradually increase the scope of the pilot group until you've reached production capacity.
+Microsoft recommends you create your evaluation in an existing production subscription of Office 365. This way you will gain real-world insights immediately and can tune settings to work against current threats in your environment. After you’ve gained experience and are comfortable with the platform, simply promote each component, one at a time, to production. 
 
-## The anatomy of thwarting an attack
+
+## The anatomy of an attack
 
 Microsoft 365 Defender is a Cloud-based, unified, pre- and post-breach enterprise defense suite. It coordinates *prevention*, *detection*, *investigation*, and *response* across endpoints, identities, apps, email, collaborative applications, and all of their data.
 
@@ -57,16 +58,16 @@ In the illustration:
 Microsoft 365 Defender is made up of these security technologies, operating in tandem:
 
 |Component  |Description  |Reference material  |
-|---------|---------|---------|---------|
+|---------|---------|---------|
 |Microsoft Defender for Identity     |      Microsoft Defender for Identity uses Active Directory signals to identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions directed at your organization.     |     [What is Microsoft Defender for Identity?](/defender-for-identity/what-is)   |
 |Exchange Online Protection     |      Exchange Online Protection is the native cloud-based SMTP relay and filtering service that helps protect your organization against spam and malware.      |   [Exchange Online Protection (EOP) overview - Office 365](../office-365-security/overview.md)     |
 |Microsoft Defender for Office 365     |     Microsoft Defender for Office 365 safeguards your organization against malicious threats posed by email messages, links (URLs) and collaboration tools.      |    [Microsoft Defender for Office 365 - Office 365](../office-365-security/overview.md)    |
 |Microsoft Defender for Endpoint     |     Microsoft Defender for Endpoint is a unified platform for device protection, post-breach detection, automated investigation, and recommended response.      |   [Microsoft Defender for Endpoint - Windows security](../defender-endpoint/microsoft-defender-endpoint.md)    |
 |Microsoft Cloud App Security     |      Microsoft Cloud App security is a comprehensive cross-SaaS solution bringing deep visibility, strong data controls, and enhanced threat protection to your cloud apps.       |    [What is Cloud App Security?](/cloud-app-security/what-is-cloud-app-security)    |
+|Azure AD Identity Protection|Azure AD Identity Protection evaluates risk data from billions of sign-in attempts and uses this data to evaluate the risk of each sign-in to your environment. This data is used by Azure AD to allow or prevent account access, depending on how Conditional Access policies are configured. Azure AD Identity Protection is licensed separately from Microsoft 365 Defender. It is included with Azure Active Directory Premium P2.|[What is Identity Protection?](/azure/active-directory/identity-protection/overview-identity-protection)|
+| | | |
 
 ## Microsoft 365 Defender architecture
-
-**The strength of Microsoft security solutions is built on *trillions* of signals Microsoft processes every day in the Intelligent Security Graph**. This experience becomes the basis for 'teaching' security solutions like *Microsoft 365 Defender*, which  brings together signals from across your *email*, *data*, *devices*, *apps*, and *identities* to paint a picture of advanced threats against your organization. Microsoft 365 E5 security solutions are *built into* Microsoft products and services. These include machine learning and automation that can lighten the load faced by security teams by processing the flood of data and alerting security teams to only the signals they need to see.
 
 The diagram below illustrates high-level architecture for key Microsoft 365 Defender components and integrations. *Detailed* architecture for each Defender component, and use-case scenarios, are given throughout this series of articles.
 
