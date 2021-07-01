@@ -73,7 +73,7 @@ In addition to links in cards on the home page, you'll see a navigation pane on 
 
 **Why am I taken to the Security & Compliance Center to complete some tasks, such as defining certain policies?**
 
-We're still developing the Microsoft 365 compliance center, and we add more functionality and solutions over the coming months. In the meantime, there are a few tasks that must be completed in the Security & Compliance Center ([https://protection.office.com](https://protection.office.com)). In those cases, you'll be directed automatically to the location where you can complete the task at hand, such as creating or editing a supervision policy.
+We're still developing the Microsoft 365 compliance center, and we'll add more functionality and solutions over the coming months. In the meantime, there are a few tasks that must be completed in the Security & Compliance Center ([https://protection.office.com](https://protection.office.com)). In those cases, you'll be directed automatically to the location where you can complete the task at hand, such as creating or editing a supervision policy.
 
 **Why don't I see the new Microsoft 365 compliance center yet?**
 
