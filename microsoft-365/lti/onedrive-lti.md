@@ -28,14 +28,14 @@ Integrating Microsoft OneDrive LTI with Canvas is a two step process. The first 
 2. Select the **Admin Consent** button and accept the permissions.
 3. Select the **Create new LTI Tenant** button. On the LTI Registration page select **Canvas** in the dropdown and enter the base URL of your Canvas instance.
 
+> [!NOTE]
+> If your Canvas instance is, for example, [https://contoso.test.instructure.com](https://contoso.test.instructure.com), then this complete URL should be entered.
+
 :::image type="content" source="media/OneDrive-LTI-07.png" alt-text="The LTI tenant administration page, with a dropdown field for choosing the LTI consumer platform and a URL text field.":::
 
 4. Copy the JSON by selecting the **Copy** button (an icon on the right that shows two pages on top of one another). This will be used to generate the key in Canvas.
 
 :::image type="content" source="media/OneDrive-LTI-08.png" alt-text="An image showing the copy button that will copy the displayed JSON text and make it available for key generation in Canvas.":::
-
-> [!NOTE]
-> If your Canvas instance is, for example, [https://contoso.test.instructure.com](https://contoso.test.instructure.com), then this complete URL should be entered.
 
 5. Sign into your Canvas instance as the administrator and select **Developer Keys** from the menu on the left side of the page. From the dropdown, create a developer key by choosing **LTI Key** from the dropdown on the upper right of the page.
 
