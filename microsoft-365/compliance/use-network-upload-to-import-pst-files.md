@@ -133,7 +133,7 @@ Now you're ready to use the AzCopy.exe tool to upload PST files to Office 365. T
 3. Run the following command to upload the PST files to Office 365.
 
     ```powershell
-    AzCopy.exe /Source:<Location of PST files> /Dest:<SAS URL> /V:<Log file location> /Y
+    azcopy cp "<Location of PST files>" "<SAS URL>"
     ```
 
     > [!IMPORTANT]
@@ -152,7 +152,7 @@ Now you're ready to use the AzCopy.exe tool to upload PST files to Office 365. T
 Here's an example of the syntax for the AzCopy.exe tool using actual values for each parameter:
 
 ```powershell
-  AzCopy.exe /Source:"\\FILESERVER1\PSTs" /Dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D" /V:"c:\Users\Admin\Desktop\AzCopy1.log" /Y
+  azcopy cp "\\localhost\d$\backup\backup.pst" "https://e3347aeac61b4b91aa3f917.blob.core.windows.net/ingestiondata/backup.pst?sv=2015-04-05&sr=c&si=IngestionSasForAzCopy202106091048037719&sig=PpgSKvIyar0SyDJt9FZGMF5gHla10y5A04%2BstIjR2ns%3D&se=2021-07-30T08%3A27%3A51Z"
 ```
 
 After you run the command, status messages are displayed that show the progress of uploading the PST files. A final status message shows the total number of files that were successfully uploaded.
