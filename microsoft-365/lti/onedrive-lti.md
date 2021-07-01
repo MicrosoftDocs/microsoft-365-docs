@@ -1,5 +1,5 @@
 ---
-title: Use OneDrive Learning Tools Interoperability
+title: Use Microsoft OneDrive Learning Tools Interoperability
 ms.author: v-cichur
 author: cichur
 manager: serdars
@@ -12,14 +12,14 @@ f1.keywords:
 ms.collection: M365-modern-desktop
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
-description: "Create and grade assignments, build and curate course content, and collaborate on files in real time with the new OneDrive Learning Tools Interoperability App."
+description: "Create and grade assignments, build and curate course content, and collaborate on files in real time with the new Microsoft OneDrive Learning Tools Interoperability App."
 ---
 
-# Integrate OneDrive LTI with Canvas
+# Integrate Microsoft OneDrive LTI with Canvas
 
-Integrating OneDrive LTI with Canvas is a two step process. The first step enables OneDrive in Canvas, and the second step makes the OneDrive LTI available within Canvas courses.
+Integrating Microsoft OneDrive LTI with Canvas is a two step process. The first step enables Microsoft OneDrive in Canvas, and the second step makes the Microsoft OneDrive LTI available within Canvas courses.
 
-## Enable OneDrive LTI in Canvas
+## Enable Microsoft OneDrive LTI in Canvas
 
 > [!IMPORTANT]
 > The person who performs this integration should be an administrator of Canvas and an administrator of the Microsoft 365 tenant.
@@ -46,16 +46,16 @@ SCREEN HERE
 
 :::image type="content" source="media/OneDrive-LTI-19.png" alt-text="The Canvas page with the key set in an off state. It will need to be turned on and the key will need to be copied from the details column on this page.":::
 
-8. Return to the OneDrive LTI Registration portal and paste the key in the **Canvas Client ID** field. Select **Next** when you're ready.
+8. Return to the Microsoft OneDrive LTI Registration portal and paste the key in the **Canvas Client ID** field. Select **Next** when you're ready.
 
 :::image type="content" source="media/OneDrive-LTI-20-Old.png" alt-text="The LTI tenant registration page, which shows the JSON text and the text box the key should be copied into.":::
 
 9. Review and save your changes. A message will be displayed on successful registration.
 10. Your registration details can also be reviewed by selecting the **View LTI Tenants** button on the home page.
 
-## Enable OneDrive LTI 1.3 in Canvas Courses
+## Enable Microsoft OneDrive LTI in Canvas Courses
 
-A Canvas administrator can enable OneDrive LTI for all courses. If OneDrive LTI is needed in a specific course (and not all courses), the course educator needs to follow the same steps within the course settings.
+A Canvas administrator can enable Microsoft OneDrive LTI for all courses. If Microsoft OneDrive LTI is needed in a specific course (and not all courses), the course educator needs to follow the same steps within the course settings.
 
 1. Sign in as an administrator and go to the **Settings** section.
 2. Go to the **Apps** section and select the **View App Configurations** button.
@@ -68,9 +68,9 @@ SWAP THIS ONE WITH IMAGE 31
 
 
 5. Paste the value of the developer key generated previously in the **Client ID** field, and select the **Submit** button.
-6. The OneDrive LTI won't show up immediately in the External Apps list. Refresh the browser page showing the list, and OneDrive LTI will be available.
+6. The Microsoft OneDrive LTI won't show up immediately in the External Apps list. Refresh the browser page showing the list, and Microsoft OneDrive LTI will be available.
 
-## Collaboration Settings for OneDrive LTI 1.3 in Canvas Courses
+## Collaboration Settings for Microsoft OneDrive LTI in Canvas Courses
 
 > [!NOTE]
 > For collaboration to work for educators and students, you shouldn't enable the collaboration setting. To make sure the setting isn't enabled, follow the steps below.
@@ -81,9 +81,9 @@ SWAP THIS ONE WITH IMAGE 31
 
 ## Recommended browser settings
 
-- Cookies should be enabled for OneDrive.
-- Popups should not be blocked for OneDrive.
+- Cookies should be enabled for Microsoft OneDrive.
+- Popups should not be blocked for Microsoft OneDrive.
 
 > [!NOTE]
-> - Cookies are not enabled by default in the Chrome browser incognito mode, and will need to be enabled. 
-> - OneDrive works in the private mode in Microsoft Edge browser. Ensure that you have not blocked cookies (which are enabled by default).
+> - Cookies are not enabled by default in the Chrome browser incognito mode, and will need to be enabled.
+> - Microsoft OneDrive LTI works in the private mode in Microsoft Edge browser. Ensure that you have not blocked cookies (which are enabled by default).
