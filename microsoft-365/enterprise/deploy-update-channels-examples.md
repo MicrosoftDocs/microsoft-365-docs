@@ -14,7 +14,6 @@ ms.collection:
 - Strat_O365_Enterprise
 - M365-subscription-management
 ms.custom:
-
 description: How example organizations deploy and update using channels.
 ---
 

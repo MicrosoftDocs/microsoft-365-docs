@@ -9,6 +9,7 @@ ms.service: scheduler
 localization_priority: Normal
 description: "Scheduler for Microsoft 365 FAQs"
 ---
+
 # Scheduler for Microsoft 365 FAQs
 
 **Question:** How does Scheduler integrate with other Cortana features, such as *Cortana for Windows*, *Daily Briefing Email*, and *Play My Emails*?</br>
@@ -41,7 +42,7 @@ Scheduler and the SSPA Assistants can view  the emails that are addressed to Cor
 Scheduler stores all customer content within the tenant boundaries and retains data in accordance with GDPR guidelines, Microsoft 365 Trust & Privacy policies, and tenant email policies.
 
 **Question:** How does Scheduler process the free/busy data of internal attendees? </br>
-Scheduler’s automation uses the *findMeetingTimes* service to identify times that are mutually available for attendees and the organizer. This service powers other Outlook experiences such as *Suggested Times* in the Outlook meeting form. Free/busy attendee information is not consumed explicitly as free/busy blocks.
+Scheduler's automation uses the *findMeetingTimes* service to identify times that are mutually available for attendees and the organizer. This service powers other Outlook experiences such as *Suggested Times* in the Outlook meeting form. Free/busy attendee information is not consumed explicitly as free/busy blocks.
 
 **Question:** Is Scheduler GDPR Compliant? </br>
 Yes.

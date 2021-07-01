@@ -24,10 +24,6 @@ This article describes the key concepts and metrics of the predictive coding too
 
 The confidence level is an advanced setting when you create a predictive coding model. It defines that the model's performance metrics (for example, richness, precision, and recall) fall within a specified range (that's determined the margin of error defined for the model) that's representative of the true values of the prediction scores the model assigns to items in the review set. The values for the confidence level and margin of error also help determine how many items are included in the control set. The default value for the confidence level is 0.95 or 95%.
 
-
-
-
-
 ## Control set
 
 A control set is used during the training process of a predictive coding model. The control set is to evaluate the prediction scores that the model assigns to items with the labeling that you perform during training rounds. The size of the control set is based on the number of items in the review set and the confidence level and margin of error values that are set when creating the model. Items in the control set never change and aren't identifiable to users. The total number of items in the control set is displayed on the flyout page for a training round.

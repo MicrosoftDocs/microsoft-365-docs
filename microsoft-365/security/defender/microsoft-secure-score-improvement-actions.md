@@ -11,15 +11,14 @@ ms.author: dansimp
 author: dansimp
 manager: dansimp
 audience: ITPro
-ms.collection: 
-  - M365-security-compliance
+ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: 
-  - MOE150
-  - MET150
+- MOE150
+- MET150
 ms.custom: 
-  - seo-marvel-apr2020
-  - seo-marvel-jun2020
+- seo-marvel-apr2020
+- seo-marvel-jun2020
 ms.technology: m365d
 ---
 

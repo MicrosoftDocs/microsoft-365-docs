@@ -9,13 +9,13 @@ ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid:
 ms.collection:
-    - enabler-strategic
-    - m365initiative-viva-topics
+- enabler-strategic
+- m365initiative-viva-topics
 ROBOTS:
 localization_priority: None
 description: Learn about the topic center in Microsoft Viva Topics.
-
 ---
+
 # Topic center overview in Microsoft Viva Topics
 
 In Microsoft Viva Topics, the topic center is a modern SharePoint site that serves as a center of knowledge for your organization. It's created during [Viva Topics setup](set-up-topic-experiences.md) in the Microsoft 365 admin center.
