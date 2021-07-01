@@ -141,13 +141,22 @@ To create custom sensitive information types in the Security & Compliance Center
 > [!NOTE]
 > Improved confidence levels are available for immediate use within Data Loss Prevention for Microsoft 365 services, Microsoft Information Protection for Microsoft 365 services, Communication Compliance, Information Governance, and Records Management.
 
-> Microsoft 365 Information Protection now  supports in preview double byte character set languages for:
+> Microsoft 365 Information Protection now  supports double byte character set languages for:
 > - Chinese (simplified)
 > - Chinese (traditional)
 > - Korean
 > - Japanese
 
 >This support is available for sensitive information types. See, [Information protection support for double byte character sets release notes (preview)](mip-dbcs-relnotes.md) for more information.
+
+> [!TIP]
+> For languages using double bytes like Chinese and Japanese, to detect patterns containing Chinese/Japanese characters and single byte characters or to detect patterns containing Chinese/Japanese and English, define two variants of for the keyword or regex. 
+> For example, to detect a keyword like "机密的document", please use two variants of this keyword. Once with a space between Japanese and English text and another without a space between Japanese and English text. So, the keywords to be added in the SIT should be "机密的document" and "机密的 document". Similarly to detect a phrase "東京オリンピック2020", two variants should be used - "東京オリンピック2020" and "東京オリンピック 2020".
+ 
+> While creating a regex using double byte hyphen or double byte full-stop, make sure to escape both the characters like one would escape a hyphen or full stop in a regex. Here is a sample regex for reference.
+- (?<!\d)([４][０-９]{3}[\-?\－\t]*[０-９]{4}
+
+> It is recommended to use string match instead of word match in a keyword list
 
 ## For further information
 - [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)
