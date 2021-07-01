@@ -58,15 +58,15 @@ The first step in creating a form processing model is to name the model, define 
 
    If you want to extract table information to an associated list:
 
-   1. In the **Extract info from tables?** section, select **Yes**.
+      1. In the **Extract info from tables?** section, select **Yes**.
 
-      ![Screenshot showing the Extract info from tables section on the Create a model to process forms panel.](../media/content-understanding/extract-info-from-tables.png) 
+         ![Screenshot showing the Extract info from tables section on the Create a model to process forms panel.](../media/content-understanding/extract-info-from-tables.png) 
 
-   2. In the **Where should we save table info?** section:
+      2. In the **Where should we save table info?** section:
  
-      - If you select **A new list** (the default setting), a suggested name is automatically provided in the **New list name** box. You can modify the name if you want to. If you want to show the list in the site navigation, select the **Show in site navigation** checkbox.
+         - If you select **A new list** (the default setting), a suggested name is automatically provided in the **New list name** box. You can modify the name if you want to. If you want to show the list in the site navigation, select the **Show in site navigation** checkbox.
 
-      - If you select **An existing list**, in the **Selected list** box, choose the list you want to use.
+         - If you select **An existing list**, in the **Selected list** box, choose the list you want to use.
 
 4. When you create a form processing model, you create a new SharePoint content type. A SharePoint content type represents a category of documents that have common characteristics and share a collection of columns or metadata properties for that particular content. SharePoint content types are managed through the SharePoint admin center.
 
