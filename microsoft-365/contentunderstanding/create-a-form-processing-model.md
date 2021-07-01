@@ -147,7 +147,7 @@ After selecting the fields you want to save, the **Model Summary** page lets you
 
 2. After the model is published, select **Use model**. This creates a Power Automate flow that can run in your SharePoint document library and extracts the fields that have been identified in the model, then select **Create Flow**.
   
-3. When completed, you'll see the message *Your flow has been successfully created*.
+3. When completed, you'll see the message: *Your flow has been successfully created*.
  
 ## Step 6: Use your model
 
