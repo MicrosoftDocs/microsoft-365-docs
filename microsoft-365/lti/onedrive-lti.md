@@ -76,14 +76,14 @@ A Canvas administrator can enable Microsoft OneDrive LTI for all courses. If Mic
 
 ## Collaboration Settings for Microsoft OneDrive LTI in Canvas Courses
 
-> [!IMPORTANT]
+> [!NOTE]
 > For collaboration to work for educators and students, you shouldn't enable the collaboration setting. To make sure the setting isn't enabled, follow the steps below.
 
 1. Sign in as an admin and go to the **Settings** section.
 1. Go to **Feature Options** section, and then go to the **Course** section.
 1. Set the **External Collaborations Tool** feature to be not enabled.
 
-> [!IMPORTANT]
+> [!NOTE]
 > Collaboration can be assigned to individual students and to groups of students. Assigning to individual students works by default. To be able to assign collaboration to group of students, follow these steps:
 
 1. Login as admin and go to the **Developer Keys** section.
