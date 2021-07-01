@@ -156,7 +156,7 @@ To create custom sensitive information types in the Security & Compliance Center
 > While creating a regex using double byte hyphen or double byte full-stop, make sure to escape both the characters like one would escape a hyphen or full stop in a regex. Here is a sample regex for reference.
     - (?<!\d)([４][０-９]{3}[\-?\－\t]*[０-９]{4}
 
-> It is recommended to use string match instead of word match in a keyword list
+> We recommend using string match instead of word match in a keyword list.
 
 ## For further information
 - [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)
