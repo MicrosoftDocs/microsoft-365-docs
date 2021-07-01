@@ -19,6 +19,15 @@ description: "Create and grade assignments, build and curate course content, and
 
 Integrating Microsoft OneDrive LTI with Canvas is a two step process. The first step enables Microsoft OneDrive in Canvas, and the second step makes the Microsoft OneDrive LTI available within Canvas courses.
 
+## Recommended browser settings
+
+- Cookies should be enabled for Microsoft OneDrive.
+- Popups should not be blocked for Microsoft OneDrive.
+
+> [!NOTE]
+> - Cookies are not enabled by default in the Chrome browser incognito mode, and will need to be enabled.
+> - Microsoft OneDrive LTI works in the private mode in Microsoft Edge browser. Ensure that you have not blocked cookies (which are enabled by default).
+
 ## Enable Microsoft OneDrive LTI in Canvas
 
 > [!IMPORTANT]
@@ -67,18 +76,12 @@ A Canvas administrator can enable Microsoft OneDrive LTI for all courses. If Mic
 
 ## Collaboration Settings for Microsoft OneDrive LTI in Canvas Courses
 
-> [!NOTE]
+> [!IMPORTANT]
 > For collaboration to work for educators and students, you shouldn't enable the collaboration setting. To make sure the setting isn't enabled, follow the steps below.
 
 1. Sign in as an admin and go to the **Settings** section.
 1. Go to **Feature Options** section, and then go to the **Course** section.
 1. Set the **External Collaborations Tool** feature to be not enabled.
 
-## Recommended browser settings
-
-- Cookies should be enabled for Microsoft OneDrive.
-- Popups should not be blocked for Microsoft OneDrive.
-
-> [!NOTE]
-> - Cookies are not enabled by default in the Chrome browser incognito mode, and will need to be enabled.
-> - Microsoft OneDrive LTI works in the private mode in Microsoft Edge browser. Ensure that you have not blocked cookies (which are enabled by default).
+> [!IMPORTANT]
+> 
