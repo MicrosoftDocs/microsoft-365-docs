@@ -131,7 +131,7 @@ Most of the time, services will appear as healthy with no further information. W
 
 | Type | Definition |
 |:-----|:-----|
-|**Quick Update** | Small and frequent incremental updates for high impacting incidents availalbe for all tenants. |
+|**Quick Update** | Short and frequent incremental updates for broadly impacting incidents, available to all customers. |
 |**Additional Details** | These additional posts will provide richer technical and resolution details to offer deeper visibility into the handling of Incidents. This is available for tenants that meet the same requirements outlined for [Exchange Online monitoring](https://docs.microsoft.com/en-us/microsoft-365/enterprise/microsoft-365-exchange-monitoring?view=o365-worldwide#requirements) |
 
 ### History
