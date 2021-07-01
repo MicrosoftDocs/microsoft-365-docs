@@ -118,7 +118,7 @@ Be sure to read the following items before you start searching the audit log.
   |SharePoint Online and OneDrive for Business|![Check mark](../media/checkmark.png)||
   |Workplace Analytics|![Check mark](../media/checkmark.png)||
   |Yammer||![Check mark](../media/checkmark.png)|
-  |Microsoft Forms||![Check mark](../media/checkmark.png)|
+  |Microsoft Forms|![Check mark](../media/checkmark.png)||
   |
 
 - Azure Active Directory (Azure AD) is the directory service for Office 365. The unified audit log contains user, group, application, domain, and directory activities performed in the Microsoft 365 admin center or in the Azure management portal. For a complete list of Azure AD events, see [Azure Active Directory Audit Report Events](/azure/active-directory/reports-monitoring/concept-audit-logs).
