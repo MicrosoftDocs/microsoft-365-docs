@@ -48,78 +48,78 @@ This recommendation appears when either of the following criteria are met.
 
 This recommendation appears when any of the following file types are detected in SharePoint or OneDrive.
 
-- .MP3
-- .WMA
-- .WAV
-- .RA
-- .RAM
-- .RM
-- .MID
-- .OGG
-- .AIFF
-- .PCM
-- .AAC
-- .FLAC
-- .ALAC
+- `.MP3`
+- `.WMA`
+- `.WAV`
+- `.RA`
+- `.RAM`
+- `.RM`
+- `.MID`
+- `.OGG`
+- `.AIFF`
+- `.PCM`
+- `.AAC`
+- `.FLAC`
+- `.ALAC`
 
 ## Retain CAD files
 
 This recommendation appears when any of the following file types are detected in SharePoint or OneDrive.
 
-- .3DXML
-- .ACIS
-- .ARC
-- .ASM
-- .CAT*
-- .CGR
-- .DW*
-- .DX*
-- .EDRW
-- .IAM
-- .IGES
-- .IGS
-- .IPT
-- .JT
-- .MF1
-- .NEU
-- .PAR
-- .PKG
-- .PRC
-- .PRT
-- .PSM
-- .PWD
-- .SLD*
-- .STEP
-- .STL
-- .STP
-- .U3D
-- .UNV
-- .VRML
-- .WRL
-- .X_*
-- .XAS
-- .XMT*
-- .XPR
+- `.3DXML`
+- `.ACIS`
+- `.ARC`
+- `.ASM`
+- `.CAT*`
+- `.CGR`
+- `.DW*`
+- `.DX*`
+- `.EDRW`
+- `.IAM`
+- `.IGES`
+- `.IGS`
+- `.IPT`
+- `.JT`
+- `.MF1`
+- `.NEU`
+- `.PAR`
+- `.PKG`
+- `.PRC`
+- `.PRT`
+- `.PSM`
+- `.PWD`
+- `.SLD*`
+- `.STEP`
+- `.STL`
+- `.STP`
+- `.U3D`
+- `.UNV`
+- `.VRML`
+- `.WRL`
+- `.X_*`
+- `.XAS`
+- `.XMT*`
+- `.XPR`
 
 ## Retain image files
 
 This recommendation appears when any of the following file types are detected in SharePoint or OneDrive.
 
-- .JPEG
-- .GIF
-- .TIF*
-- .BMP
-- .PNG
-- .RAW
-- .PSD
-- .PSP
-- .JPG
-- .EXIF
-- .PPM
-- .PGM
-- .PBM
-- .PNM
-- .WEBP
+- `.JPEG`
+- `.GIF`
+- `.TIF*`
+- `.BMP`
+- `.PNG`
+- `.RAW`
+- `.PSD`
+- `.PSP`
+- `.JPG`
+- `.EXIF`
+- `.PPM`
+- `.PGM`
+- `.PBM`
+- `.PNM`
+- `.WEBP`
 
 ## Retain NDA content
 
@@ -138,53 +138,53 @@ This recommendation appears when either of the following criteria are met.
 
 This recommendation appears when any of the following file types are detected in SharePoint or OneDrive.
 
-- .ASAX
-- .ASM
-- .ASP*
-- .BAT
-- .CONFIG
-- .CS
-- .CSS
-- .DISCO
-- .HTM*
-- .INC
-- .JAD
-- .JAVA
-- .JS*
-- .LIB
-- .O
-- .PHP
-- .RC
-- .RESX
-- .RPT
-- .RSS
-- .SCPT
-- .SRC
-- .VB*
-- .WSF
-- .XCODEPROJ
-- .XML
-- .XSD
-- .XSL*
+- `.ASAX`
+- `.ASM`
+- `.ASP*`
+- `.BAT`
+- `.CONFIG`
+- `.CS`
+- `.CSS`
+- `.DISCO`
+- `.HTM*`
+- `.INC`
+- `.JAD`
+- `.JAVA`
+- `.JS*`
+- `.LIB`
+- `.O`
+- `.PHP`
+- `.RC`
+- `.RESX`
+- `.RPT`
+- `.RSS`
+- `.SCPT`
+- `.SRC`
+- `.VB*`
+- `.WSF`
+- `.XCODEPROJ`
+- `.XML`
+- `.XSD`
+- `.XSL*`
 
 ## Retain video files
 
 This recommendation appears when any of the following file types are detected in SharePoint or OneDrive.
 
-- .AVCHD
-- .AVI
-- .FLV
-- .MOV
-- .MP2V
-- .MP4
-- .MP4V
-- .MPE
-- .MPEG
-- .MPEG1
-- .MPEG2
-- .MPEG4
-- .MPG
-- .MPG2
-- .MPG4
-- .WMV
-- .XMV
+- `.AVCHD`
+- `.AVI`
+- `.FLV`
+- `.MOV`
+- `.MP2V`
+- `.MP4`
+- `.MP4V`
+- `.MPE`
+- `.MPEG`
+- `.MPEG1`
+- `.MPEG2`
+- `.MPEG4`
+- `.MPG`
+- `.MPG2`
+- `.MPG4`
+- `.WMV`
+- `.XMV`
