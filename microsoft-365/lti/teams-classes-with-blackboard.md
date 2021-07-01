@@ -111,7 +111,7 @@ The Microsoft Teams classes integration is available for **Ultra Course View cou
 
    `f1561daa-1b21-4693-ba90-6c55f1a0eb41`
 
-4. Type a user for this integration. 
+4. Type a user for this integration.
 
    This user will be the one with home API access from which the application is associated.
 
