@@ -85,5 +85,5 @@ A Canvas administrator can enable Microsoft OneDrive LTI for all courses. If Mic
 
 > [!IMPORTANT]
 > Collaboration can be assigned to individual students and to groups of students. Assigning to individual students works by default. To be able to assign collaboration to group of students, follow these steps:
-> - Login as admin and go to “Developer Keys” section.
-> - Find the key with value 170000000000710 and switch it ON
+> - Login as admin and go to the **Developer Keys** section.
+> - Find the key with value 170000000000710 and set it to **On**.
