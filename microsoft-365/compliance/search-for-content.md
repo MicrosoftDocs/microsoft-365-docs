@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 
+ms.date:
 audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
@@ -31,7 +31,7 @@ The first step is to starting using the Content search tool to choose content lo
 
 - [Run an ID list search](csv-file-for-an-id-list-content-search.md) to search for specific email messages
 
-- [Search cloud-based mailboxes ](search-cloud-based-mailboxes-for-on-premises-users.md) for on-premises users in Microsoft 365
+- [Search cloud-based mailboxes](search-cloud-based-mailboxes-for-on-premises-users.md) for on-premises users in Microsoft 365
 
 - [View keyword statistics](view-keyword-statistics-for-content-search.md) for the results of a search and then refine the query if necessary
 
@@ -70,11 +70,11 @@ Content search is easy to use, but it's also a powerful tool. Behind-the-scenes,
 ## Use scripts for advanced scenarios
 
 Sometimes you have to perform more advanced, complex, and repetitive content search tasks. In these cases, it's easier and fast to use PowerShell commands in the Security & Compliance Center. To help make this easier, we've created a number of Security & Compliance Center PowerShell scripts to help you complete complex content search-related tasks.
-  
+
 - [Search specific mailbox and site folders](use-content-search-for-targeted-collections.md) (called a  *targeted collection) when you're confident that items responsive to a case are located in that folder
 
-- [Search the mailbox and OneDrive location](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md) for a list of users 
+- [Search the mailbox and OneDrive location](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md) for a list of users
 
-- [Create, report on, and delete multiple searches](create-report-on-and-delete-multiple-content-searches.md) to quickly and efficiently identify and cull search data 
+- [Create, report on, and delete multiple searches](create-report-on-and-delete-multiple-content-searches.md) to quickly and efficiently identify and cull search data
 
 - [Clone a content search](clone-a-content-search.md) and quickly compare the results of different keyword search queries run on the same content locations; or use the script to save time by not having to re-enter a large number of content locations when you create a new search
