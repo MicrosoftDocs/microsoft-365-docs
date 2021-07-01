@@ -153,7 +153,7 @@ To create custom sensitive information types in the Security & Compliance Center
 > For languages using double bytes like Chinese and Japanese, to detect patterns containing Chinese/Japanese characters and single byte characters or to detect patterns containing Chinese/Japanese and English, define two variants of the keyword or regex. 
 > For example, to detect a keyword like "机密的document", use two variants of the keyword; one with a space between the Japanese and English text and another without a space between the Japanese and English text. So, the keywords to be added in the SIT should be "机密的 document" and "机密的document". Similarly, to detect a phrase "東京オリンピック2020", two variants should be used; "東京オリンピック 2020" and "東京オリンピック2020".
  
-> While creating a regex using double byte hyphen or double byte full-stop, make sure to escape both the characters like one would escape a hyphen or full stop in a regex. Here is a sample regex for reference.
+> While creating a regex using a double byte hyphen or a double byte period, make sure to escape both the characters like one would escape a hyphen or period in a regex. Here is a sample regex for reference:
     - (?<!\d)([４][０-９]{3}[\-?\－\t]*[０-９]{4}
 
 > We recommend using string match instead of word match in a keyword list.
