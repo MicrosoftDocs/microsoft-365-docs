@@ -5,18 +5,18 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 
+ms.date:
 audience: ITPro
 ms.topic: conceptual
 f1_keywords:
 - 'ms.o365.cc.DLPLandingPage'
 ms.service: O365-seccomp
 localization_priority: Priority
-ms.collection: 
+ms.collection:
 - M365-security-compliance
 - m365solution-mip
 - m365initiative-compliance
-search.appverid: 
+search.appverid:
 - MET150
 description: "Prepare for and deploy the Microsoft Compliance Extension."
 ---
@@ -79,11 +79,11 @@ Deploying Microsoft Compliance Extension is a multi-phase process. You can choos
 4. [Deploy using Group Policy](#deploy-using-group-policy)
 5. [Test the Extension](#test-the-extension)
 6. [Use the Alerts Management Dashboard to viewing Chrome DLP alerts](#use-the-alerts-management-dashboard-to-viewing-chrome-dlp-alerts)
-7. [Viewing Chrome DLP data in activity explorer](#viewing-chrome-dlp-data-in-activity-explorer) 
+7. [Viewing Chrome DLP data in activity explorer](#viewing-chrome-dlp-data-in-activity-explorer)
 
 ### Prepare infrastructure
 
-If you are rolling out the Microsoft Compliance Extension to all your monitored Windows 10 devices, you should remove Google Chrome from the unallowed app and unallowed browser lists. For more information, see [Unallowed browsers](endpoint-dlp-using.md#unallowed-browsers). If you are only rolling it out to a few devices, you can leave Chrome on the unallowed browser or unallowed app lists. The Microsoft Compliance Extension will bypass the restrictions of both lists for those computers where it is installed.  
+If you are rolling out the Microsoft Compliance Extension to all your monitored Windows 10 devices, you should remove Google Chrome from the unallowed app and unallowed browser lists. For more information, see [Unallowed browsers](endpoint-dlp-using.md#unallowed-browsers). If you are only rolling it out to a few devices, you can leave Chrome on the unallowed browser or unallowed app lists. The Microsoft Compliance Extension will bypass the restrictions of both lists for those computers where it is installed.
 
 ### Prepare your devices
 
@@ -94,13 +94,13 @@ If you are rolling out the Microsoft Compliance Extension to all your monitored 
 
 ### Basic Setup Single Machine Selfhost
 
-This is the recommended method. 
+This is the recommended method.
 
-1. Sign in to the Windows 10 computer on which you want to install the Microsoft Compliance Extension on, and run this PowerShell script as an administrator. 
+1. Sign in to the Windows 10 computer on which you want to install the Microsoft Compliance Extension on, and run this PowerShell script as an administrator.
 
    ```powershell
    Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
-   ``` 
+   ```
 
 2.	Navigate to [Microsoft Compliance Extension - Chrome Web Store (google.com)](https://chrome.google.com/webstore/detail/microsoft-compliance-exte/echcggldkblhodogklpincgchnpgcdco).
 
@@ -153,7 +153,7 @@ Before adding the Microsoft Compliance Extension to the list of force-installed 
 7.	Select **Add**.
 
 8.	Enter the following policy information.
-    
+
     OMA-URI: `./Device/Vendor/MSFT/Policy/Config/Chrome~Policy~googlechrome~Extensions/ExtensionInstallForcelist`<br/>
     Data type: `String`<br/>
     Value: `<enabled/><data id="ExtensionInstallForcelistDesc" value="1&#xF000; echcggldkblhodogklpincgchnpgcdco;https://clients2.google.com/service/update2/crx"/>`
@@ -216,34 +216,32 @@ If you don't want to use Microsoft Endpoint Manager, you can use group policies 
 
 ### Test the Extension
 
-#### Upload to cloud service, or access by unallowed browsers Cloud Egress  
+#### Upload to cloud service, or access by unallowed browsers Cloud Egress
 
 1. Create or get a sensitive item and, try to upload a file to one of your organization’s restricted service domains. The sensitive data must match one of our built-in [Sensitive Info Types](sensitive-information-type-entity-definitions.md), or one of your organization’s sensitive information types. You should get a DLP toast notification on the device you are testing from that shows that this action is not allowed when the file is open.
 
-#### Testing other DLP scenarios in Chrome 
+#### Testing other DLP scenarios in Chrome
 
 Now that you’ve removed Chrome from the disallowed browsers/apps list, you can test the scenarios below to confirm the behavior meets your organization’s requirements:
 
 - Copy data from a sensitive item to another document using the Clipboard
-    - To test, open a file that is protected against copy to clipboard actions in the Chrome browser and attempt to copy data from the file.
-    - Expected Result: A DLP toast notification showing that this action is not allowed when the file is open.
+  - To test, open a file that is protected against copy to clipboard actions in the Chrome browser and attempt to copy data from the file.
+  - Expected Result: A DLP toast notification showing that this action is not allowed when the file is open.
 - Print a document
-    - To test, open a file that is protected against print actions in the Chrome browser and attempt to print the file.
-    - Expected Result: A DLP toast notification showing that this action is not allowed when the file is open.
+  - To test, open a file that is protected against print actions in the Chrome browser and attempt to print the file.
+  - Expected Result: A DLP toast notification showing that this action is not allowed when the file is open.
 - Copy to USB Removeable Media
-    - To test, try to save the file to a removeable media storage.
-    - Expected Result: A DLP toast notification showing that this action is not allowed when the file is open.
+  - To test, try to save the file to a removeable media storage.
+  - Expected Result: A DLP toast notification showing that this action is not allowed when the file is open.
 - Copy to Network Share
-    - To test, try to save the file to a network share.
-    - Expected Result: A DLP toast notification showing that this action is not allowed when the file is open.
-
+  - To test, try to save the file to a network share.
+  - Expected Result: A DLP toast notification showing that this action is not allowed when the file is open.
 
 ### Use the Alerts Management Dashboard to viewing Chrome DLP alerts
 
 1. Open the **Data loss prevention** page in the [Microsoft 365 Compliance center](https://compliance.microsoft.com) and select **Alerts**.
 
 2. Refer to the procedures in [How to configure and view alerts for your DLP policies](dlp-configure-view-alerts-policies.md) to view alerts for your Endpoint DLP policies.
-
 
 ### Viewing Chrome DLP data in activity explorer
 
@@ -260,14 +258,15 @@ Now that you’ve removed Chrome from the disallowed browsers/apps list, you can
 2. Incognito mode is not supported and must be disabled.
 
 ## Next steps
+
 Now that you have onboarded devices and can view the activity data in Activity explorer, you are ready to move on to your next step where you create DLP policies that protect your sensitive items.
 
 - [Using Endpoint data loss prevention](endpoint-dlp-using.md)
 
 ## See also
 
-- [Learn about Endpoint data loss prevention ](endpoint-dlp-learn-about.md)
-- [Using Endpoint data loss prevention ](endpoint-dlp-using.md)
+- [Learn about Endpoint data loss prevention](endpoint-dlp-learn-about.md)
+- [Using Endpoint data loss prevention](endpoint-dlp-using.md)
 - [Learn about data loss prevention](dlp-learn-about-dlp.md)
 - [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md)
 - [Get started with Activity explorer](data-classification-activity-explorer.md)
