@@ -13,7 +13,7 @@ author: mjcaparas
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
   - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
@@ -35,8 +35,8 @@ For more information on preview features, see [Preview features](preview.md).
 
 
 > [!TIP]
-> RSS feed: Get notified when this page is updated by copying and pasting the following URL into your feed reader: 
-> 
+> RSS feed: Get notified when this page is updated by copying and pasting the following URL into your feed reader:
+>
 > ```https
 > /api/search/rss?search=%22features+are+generally+available+%28GA%29+in+the+latest+release+of+Microsoft+Defender+for+Endpoint%22&locale=en-us&facet=
 > ```
@@ -46,13 +46,13 @@ For more information on preview features, see [Preview features](preview.md).
 - [Device discovery](device-discovery.md) <br> Helps you find unmanaged devices connected to your corporate network without the need for extra appliances or cumbersome process changes. Using onboarded devices, you can find unmanaged devices in your network and assess vulnerabilities and risks. You can then onboard discovered devices to reduce risks associated with having unmanaged endpoints in your network.
 
    > [!IMPORTANT]
-   > Standard discovery will be the default mode for all customers starting July 19, 2021. You can choose to retain the basic mode through the settings page. 
+   > Standard discovery will be the default mode for all customers starting July 19, 2021. You can choose to retain the basic mode through the settings page.
 
 
 - [Device group definitions](/microsoft-365/security/defender-endpoint/machine-groups) can now include multiple values for each condition. You can set multiple tags, device names, and domains to the definition of a single device group.
 
 ## March 2021
-- [Manage tamper protection using the Microsoft Defender Security Center](prevent-changes-to-security-settings-with-tamper-protection.md#manage-tamper-protection-for-your-organization-using-the-microsoft-defender-security-center) <br> You can manage tamper protection settings on Windows 10, Windows Server 2016, and Windows Server 2019 by using a method called *tenant attach*. 
+- [Manage tamper protection using the Microsoft Defender Security Center](prevent-changes-to-security-settings-with-tamper-protection.md#manage-tamper-protection-for-your-organization-using-the-microsoft-defender-security-center) <br> You can manage tamper protection settings on Windows 10, Windows Server 2016, and Windows Server 2019 by using a method called *tenant attach*.
 
 ## January 2021
 
@@ -71,7 +71,7 @@ For more information on preview features, see [Preview features](preview.md).
 
 
 ## July 2020
-- [Create indicators for certificates](manage-indicators.md) <br> Create indicators to allow or block certificates. 
+- [Create indicators for certificates](manage-indicators.md) <br> Create indicators to allow or block certificates.
 
 ## June 2020
 - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md) <br> Microsoft Defender for Endpoint now adds support for Linux. Learn how to install, configure, update, and use Microsoft Defender for Endpoint on Linux.
@@ -86,23 +86,23 @@ For more information on preview features, see [Preview features](preview.md).
 ## November-December 2019
 
 - [Microsoft Defender for Endpoint on macOS](microsoft-defender-endpoint-mac.md) <BR> Microsoft Defender for Endpoint on macOS brings the next-generation protection to Mac devices. Core components of the unified endpoint security platform will now be available for Mac devices, including [endpoint detection and response](microsoft-defender-endpoint-mac.md).
- 
+
 - [Threat & Vulnerability Management application and application version end-of-life information](tvm-security-recommendation.md) <BR>Applications and application versions which have reached their end-of-life are tagged or labeled as such so you are aware that they will no longer be supported, and can take action to either uninstall or replace. Doing so will help lessen the risks related to various vulnerability exposures due to unpatched applications.
 
-- [Threat & Vulnerability Management Advanced Hunting Schemas](advanced-hunting-schema-reference.md) <BR>Use the Threat & Vulnerability Management tables in the Advanced hunting schema to query about software inventory, vulnerability knowledgebase, security configuration assessment, and security configuration knowledgebase. 
- 
+- [Threat & Vulnerability Management Advanced Hunting Schemas](advanced-hunting-schema-reference.md) <BR>Use the Threat & Vulnerability Management tables in the Advanced hunting schema to query about software inventory, vulnerability knowledgebase, security configuration assessment, and security configuration knowledgebase.
+
  - [Threat & Vulnerability Management role-based access controls](user-roles.md#create-roles-and-assign-the-role-to-an-azure-active-directory-group) <BR>Use the new permissions to allow maximum flexibility to create SecOps-oriented roles, Threat & Vulnerability Management-oriented roles, or hybrid roles so only authorized users are accessing specific data to do their task. You can also achieve even further granularity by specifying whether a Threat & Vulnerability Management role can only view vulnerability-related data, or can create and manage remediation and exceptions.
 
 - [Device health and compliance report](machine-reports.md) <br/> The device health and compliance report provides high-level information about the devices in your organization.
 
 ## October 2019
 
-- [Indicators for IP addresses, URLs/Domains](manage-indicators.md) <BR> You can now allow or block URLs/domains using your own threat intelligence. 
+- [Indicators for IP addresses, URLs/Domains](manage-indicators.md) <BR> You can now allow or block URLs/domains using your own threat intelligence.
 
 
-- [Microsoft Threat Experts - Experts on Demand](microsoft-threat-experts.md) <BR> You now have the option to consult with Microsoft Threat Experts from several places in the portal to help you in the context of your investigation.   
- 
-- [Connected Azure AD applications](connected-applications.md)<br> The Connected applications page provides information about the Azure AD applications connected to Microsoft Defender for Endpoint in your organization. 
+- [Microsoft Threat Experts - Experts on Demand](microsoft-threat-experts.md) <BR> You now have the option to consult with Microsoft Threat Experts from several places in the portal to help you in the context of your investigation.
+
+- [Connected Azure AD applications](connected-applications.md)<br> The Connected applications page provides information about the Azure AD applications connected to Microsoft Defender for Endpoint in your organization.
 
 - [API Explorer](api-explorer.md)<br> The API explorer makes it easy to construct and perform API queries, test and send requests for any available Microsoft Defender for Endpoint API endpoint.
 
@@ -122,17 +122,17 @@ For more information on preview features, see [Preview features](preview.md).
 ## June 2019
 
 - [Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md) <BR> A new built-in capability that uses a risk-based approach to the discovery, prioritization, and remediation of endpoint vulnerabilities and misconfigurations.
-  
+
 - [Device health and compliance report](machine-reports.md)  The device health and compliance report provides high-level information about the devices in your organization.
 
 ## May 2019
 
-- [Threat protection reports](threat-protection-reports.md)<BR>The threat protection report provides high-level information about alerts generated in your organization. 
+- [Threat protection reports](threat-protection-reports.md)<BR>The threat protection report provides high-level information about alerts generated in your organization.
 
 
-- [Microsoft Threat Experts](microsoft-threat-experts.md)<BR> Microsoft Threat Experts is the new managed threat hunting service in Microsoft Defender for Endpoint that provides proactive hunting, prioritization, and additional context and insights that further empower security operations centers (SOCs) to identify and respond to threats quickly and accurately. It provides additional layer of expertise and optics that Microsoft customers can utilize to augment security operation capabilities as part of Microsoft 365.  
+- [Microsoft Threat Experts](microsoft-threat-experts.md)<BR> Microsoft Threat Experts is the new managed threat hunting service in Microsoft Defender for Endpoint that provides proactive hunting, prioritization, and additional context and insights that further empower security operations centers (SOCs) to identify and respond to threats quickly and accurately. It provides additional layer of expertise and optics that Microsoft customers can utilize to augment security operation capabilities as part of Microsoft 365.
 
-- [Indicators](ti-indicator.md) <BR> APIs for indicators are now generally available. 
+- [Indicators](ti-indicator.md) <BR> APIs for indicators are now generally available.
 
 
 - [Interoperability](partner-applications.md) <BR> Microsoft Defender for Endpoint supports third-party applications to help enhance the detection, investigation, and threat intelligence capabilities of the platform.
@@ -141,12 +141,12 @@ For more information on preview features, see [Preview features](preview.md).
 ## April 2019
 - [Microsoft Threat Experts Targeted Attack Notification capability](microsoft-threat-experts.md) <BR> Microsoft Threat Experts' Targeted Attack Notification alerts are tailored to organizations to provide as much information as can be quickly delivered thus bringing attention to critical threats in their network, including the timeline, scope of breach, and the methods of intrusion.
 
-- [Microsoft Defender for Endpoint API](apis-intro.md) <BR> Microsoft Defender for Endpoint exposes much of its data and actions through a set of programmatic APIs. Those APIs will enable you to automate workflows and innovate based on Microsoft Defender for Endpoint capabilities. 
+- [Microsoft Defender for Endpoint API](apis-intro.md) <BR> Microsoft Defender for Endpoint exposes much of its data and actions through a set of programmatic APIs. Those APIs will enable you to automate workflows and innovate based on Microsoft Defender for Endpoint capabilities.
 
 
 
 ## February 2019
-- [Incidents](view-incidents-queue.md) <BR> Incident is a new entity in Microsoft Defender for Endpoint that brings together all relevant alerts and related entities to narrate the broader attack story, giving analysts better perspective on the purview of complex threats. 
+- [Incidents](view-incidents-queue.md) <BR> Incident is a new entity in Microsoft Defender for Endpoint that brings together all relevant alerts and related entities to narrate the broader attack story, giving analysts better perspective on the purview of complex threats.
 
 - [Onboard previous versions of Windows](onboard-downlevel.md)<BR> Onboard supported versions of Windows devices so that they can send sensor data to the Microsoft Defender for Endpoint sensor.
 
@@ -156,7 +156,7 @@ For more information on preview features, see [Preview features](preview.md).
 
 - [Controlled folder access](enable-controlled-folders.md)<BR> Controlled folder access is now supported on Windows Server 2019.
 
-- [Custom detection](manage-indicators.md)<BR>With custom detections, you can create custom queries to monitor events for any kind of behavior such as suspicious or emerging threats. This can be done by leveraging the power of advanced hunting through the creation of custom detection rules. 
+- [Custom detection](manage-indicators.md)<BR>With custom detections, you can create custom queries to monitor events for any kind of behavior such as suspicious or emerging threats. This can be done by leveraging the power of advanced hunting through the creation of custom detection rules.
 
 - [Integration with Azure Defender](configure-server-endpoints.md)<BR> Microsoft Defender for Endpoint integrates with Azure Defender to provide a comprehensive server protection solution. With this integration Azure Defender can leverage the power of Microsoft Defender for Endpoint to provide improved threat detection for Windows Servers.
 
@@ -169,23 +169,25 @@ For more information on preview features, see [Preview features](preview.md).
 - [Threat analytics](threat-analytics.md)<BR>
 Threat Analytics is a set of interactive reports published by the Microsoft Defender for Endpoint research team as soon as emerging threats and outbreaks are identified. The reports help security operations teams assess impact on their environment and provides recommended actions to contain, increase organizational resilience, and prevent specific threats.
 
-- New in Windows 10 version 1809, there are two new attack surface reduction rules: 
+- New in Windows 10 version 1809, there are two new attack surface reduction rules:
   - Block Adobe Reader from creating child processes
   - Block Office communication application from creating child processes.
-  
+
 - [Microsoft Defender Antivirus](microsoft-defender-antivirus-in-windows-10.md)
-    - Antimalware Scan Interface (AMSI) was extended to cover Office VBA macros as well. [Office VBA + AMSI: Parting the veil on malicious macros](https://cloudblogs.microsoft.com/microsoftsecure/2018/09/12/office-vba-amsi-parting-the-veil-on-malicious-macros/).
-    - Microsoft Defender Antivirus, new in Windows 10 version 1809, can now [run within a sandbox](https://www.microsoft.com/security/blog/2018/10/26/windows-defender-antivirus-can-now-run-in-a-sandbox) (preview), increasing its security.
-    - [Configure CPU priority settings](configure-advanced-scan-types-microsoft-defender-antivirus.md) for Microsoft Defender Antivirus scans.
+  - Antimalware Scan Interface (AMSI) was extended to cover Office VBA macros as well. [Office VBA + AMSI: Parting the veil on malicious macros](https://cloudblogs.microsoft.com/microsoftsecure/2018/09/12/office-vba-amsi-parting-the-veil-on-malicious-macros/).
+  - Microsoft Defender Antivirus, new in Windows 10 version 1809, can now [run within a sandbox](https://www.microsoft.com/security/blog/2018/10/26/windows-defender-antivirus-can-now-run-in-a-sandbox) (preview), increasing its security.
+  - [Configure CPU priority settings](configure-advanced-scan-types-microsoft-defender-antivirus.md) for Microsoft Defender Antivirus scans.
 
-
-  
 ## March 2018
-- [Advanced Hunting](advanced-hunting-overview.md) <BR>
-Query data using advanced hunting in Microsoft Defender for Endpoint.
 
-- [Attack surface reduction rules](/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard)<BR>
-    New attack surface reduction rules: 
+- [Advanced Hunting](advanced-hunting-overview.md)
+
+   Query data using advanced hunting in Microsoft Defender for Endpoint.
+
+- [Attack surface reduction rules](/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard)
+
+  New attack surface reduction rules:
+
   - Use advanced protection against ransomware
   - Block credential stealing from the Windows local security authority subsystem (lsass.exe)
   - Block process creations originating from PSExec and WMI commands
@@ -194,13 +196,13 @@ Query data using advanced hunting in Microsoft Defender for Endpoint.
 
 - [Automated investigation and remediation](automated-investigations.md)<BR> Use Automated investigations to investigate and remediate threats.
 
-    >[!NOTE]
-    >Available from Windows 10, version 1803 or later.
+    > [!NOTE]
+    > Available from Windows 10, version 1803 or later.
 
 - [Conditional Access](conditional-access.md) <br> Enable conditional access to better protect users, devices, and data.
 
-- [Microsoft Defender for Endpoint Community center](community.md)<BR> 
-    The Microsoft Defender for Endpoint Community Center is a place where community members can learn, collaborate, and share experiences about the product. 
+- [Microsoft Defender for Endpoint Community center](community.md)<BR>
+    The Microsoft Defender for Endpoint Community Center is a place where community members can learn, collaborate, and share experiences about the product.
 
 - [Controlled folder access](enable-controlled-folders.md)<BR>
 You can now block untrusted processes from writing to disk sectors using Controlled Folder Access.

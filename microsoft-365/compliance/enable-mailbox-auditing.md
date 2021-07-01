@@ -87,7 +87,7 @@ Logon types classify the user that did the audited actions on the mailbox. The f
 
 The following table describes the mailbox actions that are available in mailbox audit logging for user mailboxes and shared mailboxes.
 
-- A check mark ( ![Check mark](../media/checkmark.png)) indicates the mailbox action can be logged for the logon type (not all actions are available for all logon types).
+- A check mark (![Check mark](../media/checkmark.png)) indicates the mailbox action can be logged for the logon type (not all actions are available for all logon types).
 - An asterisk ( <sup>\*</sup> ) after the check mark indicates the mailbox action is logged by default for the logon type.
 - Remember, an admin with Full Access permission to a mailbox is considered a delegate.
 

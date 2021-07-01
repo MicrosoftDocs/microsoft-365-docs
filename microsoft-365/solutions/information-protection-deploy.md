@@ -10,12 +10,12 @@ audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 localization_priority: Normal
-ms.collection: 
+ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - m365solution-infoprotection
 - m365solution-overview
-ms.custom: 
+ms.custom:
 description: Configure information protection in Microsoft 365 for data privacy regulations like GDPR and the California Consumer Privacy Act (CCPA), including Microsoft Teams, SharePoint, and email.
 
 ---
@@ -28,16 +28,16 @@ Examples of the types of data in Microsoft 365 include chat sessions in Microsof
 
 ![What is information protection for data privacy regulations](../media/information-protection-deploy/information-protection-data-privacy-regulations-overview.png#lightbox)
 
-Additional information is also provided on the use of Microsoft 365 identity, device, and threat protection controls for your data privacy needs. 
+Additional information is also provided on the use of Microsoft 365 identity, device, and threat protection controls for your data privacy needs.
 
 These Microsoft 365 capabilities and features help you meet the criteria for protecting information.
 
 | Capability or feature | Description | Licensing |
 |:-------|:-----|:-------|
 | Compliance Manager | Manage regulatory compliance activities, get an overall score of your current compliance configuration, and find recommendations for improvement. This is a workflow-based risk assessment tool in the Microsoft 365 compliance center. | Microsoft 365 E3 and E5 |
-| Microsoft Defender for Office 365 | Protect your Microsoft 365 apps and data—such as email messages, Office documents, and collaboration tools—from attack. | Microsoft 365 E3 and E5 | 
+| Microsoft Defender for Office 365 | Protect your Microsoft 365 apps and data—such as email messages, Office documents, and collaboration tools—from attack. | Microsoft 365 E3 and E5 |
 | Sensitivity labels | Classify and protect your organization's data without hindering the productivity of users and their ability to collaborate. Place labels with various levels of protection on email, files, or sites. | Microsoft 365 E3 and E5 |
-| Data Loss Protection (DLP) | Detect, warn, and block risky, inadvertent, or inappropriate sharing of data containing personal information, both internally and externally. | Microsoft 365 E3 and E5 | 
+| Data Loss Protection (DLP) | Detect, warn, and block risky, inadvertent, or inappropriate sharing of data containing personal information, both internally and externally. | Microsoft 365 E3 and E5 |
 | Data retention labels and policies | Implement information governance controls. These can include determining how long to keep data (such as personal data related to customers) to comply with your organization's policies or data regulations. | Microsoft 365 E3 and E5 |
 | Email encryption | Protect personal data by sending and receiving encrypted email messages between people inside and outside your organization. | Microsoft 365 E3 and E5 |
 ||||
@@ -45,17 +45,16 @@ These Microsoft 365 capabilities and features help you meet the criteria for pro
 ## Organization of the guidance in this solution
 
 To help you understand the Microsoft 365 tools available to help you meet one or more privacy-related regulations, this guidance is organized into sections.
- 
+
 ![Steps to implement information protection for data privacy regulations](../media/information-protection-deploy/information-protection-data-privacy-regulations-steps.png)
 
 Each of these sections corresponds to a separate article in this solution.
 
->[!Note]
->If you are already familiar with your data privacy obligations and are executing against an existing plan, you may want to focus on the Prevent, Protect, Retain, and Investigate guidance.
+> [!NOTE]
+> If you are already familiar with your data privacy obligations and are executing against an existing plan, you may want to focus on the Prevent, Protect, Retain, and Investigate guidance.
 
->[!Important]
->Following this guidance will not necessarily make you compliant with any data privacy regulation, especially considering the number of steps required that are outside the context of the features. You are responsible for ensuring your compliance and to consult your legal and compliance teams or to seek guidance and advice from third parties that specialize in compliance.
->
+> [!IMPORTANT]
+> Following this guidance will not necessarily make you compliant with any data privacy regulation, especially considering the number of steps required that are outside the context of the features. You are responsible for ensuring your compliance and to consult your legal and compliance teams or to seek guidance and advice from third parties that specialize in compliance.
 
 ## Plan: Assess data privacy risks and identify sensitive items
 
@@ -73,11 +72,11 @@ For more information, see [Use Compliance Manager to manage improvement actions]
 
 ## Prevent: Protect personal data
 
-Microsoft 365 provides identity, device, and threat protection capabilities that you can use to help comply with data privacy regulatory compliance. 
+Microsoft 365 provides identity, device, and threat protection capabilities that you can use to help comply with data privacy regulatory compliance.
 
 For more information, see [Use identity, device, and threat protection for data privacy regulation](information-protection-deploy-identity-device-threat.md).
 
-This article briefly describes what the data privacy regulations generally call for in these areas and provides a listing of related Microsoft 365 solutions, with links to more information to help you address any implementation requirements. 
+This article briefly describes what the data privacy regulations generally call for in these areas and provides a listing of related Microsoft 365 solutions, with links to more information to help you address any implementation requirements.
 
 ## Protect information subject to data privacy regulation
 
@@ -97,7 +96,7 @@ While the data privacy regulations can be vague regarding information governance
 
 ## Investigate: Monitor, investigate, and respond to data privacy incidents
 
-There are Microsoft 365 features available to help you monitor, investigate, and respond to data privacy incidents in your organization as you operationalize related capabilities. 
+There are Microsoft 365 features available to help you monitor, investigate, and respond to data privacy incidents in your organization as you operationalize related capabilities.
 
 Having processes, procedures, and other documentation for using these features can be important to demonstrate compliance to regulatory bodies.
 
