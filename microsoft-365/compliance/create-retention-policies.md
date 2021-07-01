@@ -178,11 +178,15 @@ Use the following instructions for retention policies that apply to any of these
 
 #### Configuration information for Exchange email and Exchange public folders
 
-The **Exchange email** location supports retention for users' email, calendar, and other mailbox items, by applying retention settings at the level of a mailbox.
+The **Exchange email** location supports retention for users' email, calendar, and other mailbox items, by applying retention settings at the level of a mailbox. Shared mailboxes are also supported.
 
-For detailed information about which items are included and excluded when you configure retention settings for Exchange, see [What's included for retention and deletion](retention-policies-exchange.md#whats-included-for-retention-and-deletion)
+When you apply the retention settings to **All recipients**, any [inactive mailboxes](create-and-manage-inactive-mailboxes.md) are included. However, if you change this default and configure [specific inclusions or exclusions](#a-policy-with-specific-inclusions-or-exclusions), inactive mailboxes aren't supported and retention settings won't be applied or excluded for those mailboxes.
 
-Note that even though a Microsoft 365 group has an Exchange mailbox, a retention policy that includes the entire **Exchange email** location won't include content in Microsoft 365 group mailboxes. To retain content in these mailboxes, select the **Microsoft 365 Groups** location.
+Additionally, resource mailboxes and Microsoft 365 group mailboxes are not supported for the **All recipients** default, or for specific inclusions or exclusions. For Microsoft 365 group mailboxes, select the **Microsoft 365 Groups** location instead.
+
+If you do choose recipients to include or exclude, you can select distribution groups and email-enabled security groups. Behind the scenes, these groups are automatically expanded at the time of configuration to select the mailboxes of the users in the group. If the membership of those groups later change, an existing retention policy isn't automatically updated.
+
+For detailed information about which mailbox items are included and excluded when you configure retention settings for Exchange, see [What's included for retention and deletion](retention-policies-exchange.md#whats-included-for-retention-and-deletion)
 
 The **Exchange public folders** location applies retention settings to all public folders and can't be applied at the folder or mailbox level.
 
