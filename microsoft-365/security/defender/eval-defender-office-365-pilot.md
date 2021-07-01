@@ -1,5 +1,5 @@
 ---
-title: Pilot Microsoft Defender for Office
+title: Pilot Microsoft Defender for Office 365
 description: Steps to pilot your Evaluation with groups of active and existing users in order to properly test the features of Microsoft Defender for Office 365.
 keywords: Microsoft 365 Defender trial, try Microsoft 365 Defender, evaluate Microsoft 365 Defender, Microsoft 365 Defender evaluation lab, Microsoft 365 Defender pilot, cyber security, advanced persistent threat, enterprise security, devices, device, identity, users, data, applications, incidents, automated investigation and remediation, advanced hunting
 search.product: eADQiWindows 10XVcnh
@@ -24,8 +24,7 @@ ms.topic: how-to
 ms.technology: m365d
 ---
 
-# Pilot Microsoft Defender for Office
-
+# Pilot Microsoft Defender for Office 365
 **Applies to:**
 - Microsoft 365 Defender
 
@@ -33,7 +32,7 @@ This article is [Step 3 of 3](eval-defender-office-365-overview.md) in the proce
 
 Use the following steps to setup and configure the pilot for Microsoft Defender for Office 365.
 
-![Steps for creating the pilot for Microsoft 365 Defender for Office](../../media/defender/m365-defender-office-pilot.png)
+![Steps for creating the pilot for Microsoft Defender for Office 365](../../media/defender/m365-defender-office-pilot.png)
 
 - [Step 1: Create pilot groups](#step-1:-create-pilot-groups)
 - [Step 2: Congfigure protection](#step-2:-configure-protection)
@@ -143,7 +142,8 @@ Now that your pilot is set up and configured, it's helpful to become familiar wi
 
 ## Next steps
 
-[Investigate and respond using Microsoft 365 Defender in a pilot environment](eval-defender-investigate-respond.md)
+
+[Evaluate Microsoft Defender for Endpoint](eval-defender-endpoint-overview.md)
 
 Return to the overview for [Evaluate Microsoft Defender for Office 365](eval-defender-office-365-overview.md)
 

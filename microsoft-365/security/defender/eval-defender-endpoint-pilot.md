@@ -94,7 +94,7 @@ To run any of the provided simulations, you need at least [one onboarded device]
 
 ## Next steps
 
-[Investigate and respond using Microsoft 365 Defender in a pilot environment](eval-defender-investigate-respond.md)
+[Evaluate Microsoft Cloud App Security](eval-defender-mcas-overview.md)
 
 Return to the overview for [Evaluate Microsoft Defender for Endpoint](eval-defender-endpoint-overview.md)
 
