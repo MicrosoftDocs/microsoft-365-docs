@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "microsoft-365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions.md",
+      "redirect_url": "/microsoft-365/admin/setup/add-domain",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/admin/contact-support-for-business-products.md",
       "redirect_url": "/microsoft-365/business-video/get-help-support",
       "redirect_document_id": false
