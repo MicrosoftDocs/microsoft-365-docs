@@ -55,7 +55,7 @@ Microsoft Defender for Endpoint requires one of the following Microsoft volume l
 
 Microsoft Defender for Endpoint for servers requires one of the following licensing options:
 
-- [Azure Security Center with Azure Defender enabled](https://docs.microsoft.com/azure/security-center/security-center-pricing)
+- [Azure Security Center with Azure Defender enabled](/azure/security-center/security-center-pricing)
 - Microsoft Defender for Endpoint for Server (one per covered server)
 
 > [!NOTE]
@@ -209,7 +209,7 @@ When Microsoft Defender Antivirus isn't the active antimalware in your organizat
 
 If your organization has turned off Microsoft Defender Antivirus through group policy or other methods, devices that are onboarded must be excluded from this group policy.
 
-If you're onboarding servers and Microsoft Defender Antivirus isn't the active antimalware on your servers, Microsoft Defender Antivirus will either need to be configured to go on passive mode or uninstalled. The configuration is dependent on the server version. For more information, see [Microsoft Defender Antivirus compatibility](/security/defender-endpoint/microsoft-defender-antivirus-compatibility).
+If you're onboarding servers and Microsoft Defender Antivirus isn't the active antimalware on your servers, Microsoft Defender Antivirus will either need to be configured to go on passive mode or uninstalled. The configuration is dependent on the server version. For more information, see [Microsoft Defender Antivirus compatibility](microsoft-defender-antivirus-compatibility.md).
 
 > [!NOTE]
 > Your regular group policy doesn't apply to Tamper Protection, and changes to Microsoft Defender Antivirus settings will be ignored when Tamper Protection is on.

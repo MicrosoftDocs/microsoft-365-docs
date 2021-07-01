@@ -178,12 +178,12 @@ You should also hold down the CTRL key at the same time you right-click the icon
 
 If you are an on-premises customer using Exchange server on TCP 443, bypass traffic processing for the following IP address ranges:
 
-```
+```text
 52.125.128.0/20
 52.127.96.0/23
 ```
 
-The Outlook app for iOS and Android is designed as the best way to experience Microsoft 365 or Office 365 on your mobile device by using Microsoft services to help find, plan, and prioritize your daily life and work. For more information, please refer to [Using hybrid Modern Authentication with Outlook for iOS and Android](https://docs.microsoft.com/exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth?view=exchserver-2019).
+The Outlook app for iOS and Android is designed as the best way to experience Microsoft 365 or Office 365 on your mobile device by using Microsoft services to help find, plan, and prioritize your daily life and work. For more information, please refer to [Using hybrid Modern Authentication with Outlook for iOS and Android](/exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth).
 
 ## Related topics
 

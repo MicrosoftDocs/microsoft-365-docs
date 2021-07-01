@@ -20,12 +20,9 @@ ms.topic: article
 
 # Use attack surface reduction rules to prevent malware infection
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 **Applies to:**
 
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
-
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 ## Why attack surface reduction rules are important
@@ -34,11 +31,11 @@ Your organization's attack surface includes all the places where an attacker cou
 
 Attack surface reduction rules target certain software behaviors, such as:
 
-- Launching executable files and scripts that attempt to download or run files;
-- Running obfuscated or otherwise suspicious scripts; and
-- Performing behaviors that apps don't usually initiate during normal day-to-day work.
+- Launching executable files and scripts that attempt to download or run files
+- Running obfuscated or otherwise suspicious scripts
+- Performing behaviors that apps don't usually initiate during normal day-to-day work
 
-Such software behaviors are sometimes seen in legitimate applications; however, these behaviors are often considered risky because they are commonly abused by attackers through malware. Attack surface reduction rules can constrain risky behaviors and help keep your organization safe.
+Such software behaviors are sometimes seen in legitimate applications. However, these behaviors are often considered risky because they are commonly abused by attackers through malware. Attack surface reduction rules can constrain software-based risky behaviors and help keep your organization safe.
 
 For more information about configuring attack surface reduction rules, see [Enable attack surface reduction rules](enable-attack-surface-reduction.md).
 
@@ -50,9 +47,11 @@ You can assess how an attack surface reduction rule might affect your network by
 
 In the recommendation details pane, check for user impact to determine what percentage of your devices can accept a new policy enabling the rule in blocking mode without adversely affecting productivity.
 
+See [Requirements](enable-attack-surface-reduction.md#requirements) in the "Enable attack surface reduction rules" article for information about supported operating systems and additional requirement information.
+
 ## Audit mode for evaluation
 
-Use [audit mode](audit-windows-defender.md) to evaluate how attack surface reduction rules would affect your organization if they were enabled. Run all rules in audit mode first so you can understand how they affect your line-of-business applications. Many line-of-business applications are written with limited security concerns, and they might perform tasks in ways that seem similar to malware. By monitoring audit data and [adding exclusions](enable-attack-surface-reduction.md#exclude-files-and-folders-from-asr-rules) for necessary applications, you can deploy attack surface reduction rules without reducing productivity.
+Use [audit mode](audit-windows-defender.md) to evaluate how attack surface reduction rules would affect your organization if enabled. Run all rules in audit mode first so you can understand how they affect your line-of-business applications. Many line-of-business applications are written with limited security concerns, and they might perform tasks in ways that seem similar to malware. By monitoring audit data and [adding exclusions](enable-attack-surface-reduction.md#exclude-files-and-folders-from-asr-rules) for necessary applications, you can deploy attack surface reduction rules without reducing productivity.
 
 ## Warn mode for users
 
@@ -92,7 +91,7 @@ Whenever an attack surface reduction rule is triggered, a notification is displa
 
 In addition, when certain attack surface reduction rules are triggered, alerts are generated.
 
-Notifications and any alerts that are generated can be viewed in the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)) and in the Microsoft 365 security center ([https://security.microsoft.com](https://security.microsoft.com)).
+Notifications and any alerts that are generated can be viewed in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) (formerly called the [Microsoft Defender Security Center](microsoft-defender-security-center.md)).
 
 ## Advanced hunting and attack surface reduction events
 
@@ -111,13 +110,18 @@ You can set attack surface reduction rules for devices that are running any of t
 - Windows Server, [version 1803 (Semi-Annual Channel)](/windows-server/get-started/whats-new-in-windows-server-1803) or later
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
-Although attack surface reduction rules don't require a [Windows E5 license](/windows/deployment/deploy-enterprise-licenses), if you have Windows E5, you get advanced management capabilities. These capabilities available only in Windows E5 include monitoring, analytics, and workflows available in [Defender for Endpoint](microsoft-defender-endpoint.md), as well as reporting and configuration capabilities in the [Microsoft 365 security center](/microsoft-365/security/defender/overview-security-center). These advanced capabilities aren't available with a Windows Professional or Windows E3 license; however, if you do have those licenses, you can use Event Viewer and Microsoft Defender Antivirus logs to review your attack surface reduction rule events.
+Although attack surface reduction rules don't require a [Windows E5 license](/windows/deployment/deploy-enterprise-licenses), if you have Windows E5, you get advanced management capabilities. The advanced capabilities - available only in Windows E5 - include:
 
-## Review attack surface reduction events in the Microsoft Defender Security Center
+- The monitoring, analytics, and workflows available in [Defender for Endpoint](microsoft-defender-endpoint.md)
+- The reporting and configuration capabilities in [Microsoft 365 Defender](/microsoft-365/security/defender/overview-security-center).
+
+These advanced capabilities aren't available with a Windows Professional or Windows E3 license. However, if you do have those licenses, you can use Event Viewer and Microsoft Defender Antivirus logs to review your attack surface reduction rule events.
+
+## Review attack surface reduction events in the Microsoft 365 Defender portal
 
 Defender for Endpoint provides detailed reporting for events and blocks as part of alert investigation scenarios.
 
-You can query Defender for Endpoint data by using [advanced hunting](advanced-hunting-query-language.md). If you're running [audit mode](audit-windows-defender.md), you can use advanced hunting to understand how attack surface reduction rules could affect your environment.
+You can query Defender for Endpoint data in [Microsoft 365 Defender](microsoft-defender-security-center.md) by using [advanced hunting](advanced-hunting-query-language.md). If you're running [audit mode](audit-windows-defender.md), you can use advanced hunting to understand how attack surface reduction rules might affect your environment.
 
 Here is an example query:
 
@@ -131,9 +135,13 @@ DeviceEvents
 You can review the Windows event log to view events generated by attack surface reduction rules:
 
 1. Download the [Evaluation Package](https://aka.ms/mp7z2w) and extract the file *cfa-events.xml* to an easily accessible location on the device.
+
 2. Enter the words, *Event Viewer*, into the Start menu to open the Windows Event Viewer.
+
 3. Under **Actions**, select **Import custom view...**.
+
 4. Select the file *cfa-events.xml* from where it was extracted. Alternatively, [copy the XML directly](event-views.md).
+
 5. Select **OK**.
 
 You can create a custom view that filters events to only show the following events, all of which are related to controlled folder access:
@@ -148,15 +156,15 @@ The "engine version" listed for attack surface reduction events in the event log
 
 ## Attack surface reduction rules
 
-The following table and subsections describe each of the 15 attack surface reduction rules. The attack surface reduction rules are listed in alphabetical order, by rule name.
+The following table and subsections describe each of the 16 attack surface reduction rules. The attack surface reduction rules are listed in alphabetical order, by rule name.
 
 If you are configuring attack surface reduction rules by using Group Policy or PowerShell, you'll need the GUIDs. On the other hand, if you use Microsoft Endpoint Manager or Microsoft Intune, you do not need the GUIDs.
 
 |Rule name|GUID|File & folder exclusions|Minimum OS supported|
 |---|:---:|---|---|
 |[Block abuse of exploited vulnerable signed drivers](#block-abuse-of-exploited-vulnerable-signed-drivers)|`56a863a9-875e-4185-98a7-b882c64b5ce5`|Supported|[Windows 10, version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) or greater) |
-|[Block Adobe Reader from creating child processes](#block-adobe-reader-from-creating-child-processes)|`7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c`|Supported|[Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) or greater|
-|[Block all Office applications from creating child processes](#block-all-office-applications-from-creating-child-processes)|`D4F940AB-401B-4EFC-AADC-AD5F3C50688A`|Supported|[Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) or greater|
+|[Block Adobe Reader from creating child processes](#block-adobe-reader-from-creating-child-processes)|`7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c`|Supported|[Windows 10, version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) or greater|
+|[Block all Office applications from creating child processes](#block-all-office-applications-from-creating-child-processes)|`D4F940AB-401B-4EFC-AADC-AD5F3C50688A`|Supported|[Windows 10, version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) or greater|
 |[Block credential stealing from the Windows local security authority subsystem (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem)|`9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`|Supported|[Windows 10, version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) or greater|
 |[Block executable content from email client and webmail](#block-executable-content-from-email-client-and-webmail)|`BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550`|Supported|[Windows 10, version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) or greater|
 |[Block executable files from running unless they meet a prevalence, age, or trusted list criterion](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion)|`01443614-cd74-433a-b99e-2ecdc07bfc25`|Supported|[Windows 10, version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) or greater|
@@ -174,17 +182,17 @@ If you are configuring attack surface reduction rules by using Group Policy or P
 
 ### Block abuse of exploited vulnerable signed drivers
 
-This rule prevents an application from writing a vulnerable, signed driver to disk. In-the-wild, vulnerable signed drivers can be exploited by local applications \- _that have sufficient privileges_ \- to gain access to the kernel. Vulnerable signed drivers enable attackers to disable or circumvent security solutions, eventually leading to system compromise.
+This rule prevents an application from writing a vulnerable signed driver to disk. In-the-wild, vulnerable signed drivers can be exploited by local applications \- _that have sufficient privileges_ \- to gain access to the kernel. Vulnerable signed drivers enable attackers to disable or circumvent security solutions, eventually leading to system compromise.
 
-This rule does not block a driver already existing on the system from being loaded.
+The **Block abuse of exploited vulnerable signed drivers** rule does not block a driver already existing on the system from being loaded.
 
 >[!NOTE]
 >
-> This rule can be configured using [MEM OMA-URI](enable-attack-surface-reduction.md#mem) for MEM OMA-URI custom rules procedural information.
+> You can configure this rule using [MEM OMA-URI](enable-attack-surface-reduction.md#mem) for MEM OMA-URI custom rules procedural information.
 >
-> This rule can also be configured using [PowerShell](enable-attack-surface-reduction.md#powershell).
+> You can also configure this rule using [PowerShell](enable-attack-surface-reduction.md#powershell).
 >
-> You can use this Web site to [Submit a driver for analysis](https://www.microsoft.com/en-us/wdsi/driversubmission).
+> To have a driver examined, use this Web site to [Submit a driver for analysis](https://www.microsoft.com/en-us/wdsi/driversubmission).
 
 This rule is supported in all versions in which ASR is supported; which is:
 
@@ -219,7 +227,7 @@ GUID: `7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c`
 
 This rule blocks Office apps from creating child processes. Office apps include Word, Excel, PowerPoint, OneNote, and Access.
 
-Creating malicious child processes is a common malware strategy. Malware that abuse Office as a vector often run VBA macros and exploit code to download and attempt to run more payloads. However, some legitimate line-of-business applications might also generate child processes for benign purposes, such as spawning a command prompt or using PowerShell to configure registry settings.
+Creating malicious child processes is a common malware strategy. Malware that abuse Office as a vector often run VBA macros and exploit code to download and attempt to run more payloads. However, some legitimate line-of-business applications might also generate child processes for benign purposes; such as spawning a command prompt or using PowerShell to configure registry settings.
 
 This rule was introduced in:
 
@@ -236,7 +244,7 @@ GUID: `D4F940AB-401B-4EFC-AADC-AD5F3C50688A`
 
 ### Block credential stealing from the Windows local security authority subsystem
 
-This rule helps prevent credential stealing, by locking down Local Security Authority Subsystem Service (LSASS).
+This rule helps prevent credential stealing by locking down Local Security Authority Subsystem Service (LSASS).
 
 LSASS authenticates users who sign in on a Windows computer. Microsoft Defender Credential Guard in Windows 10 normally prevents attempts to extract credentials from LSASS. However, some organizations can't enable Credential Guard on all of their computers because of compatibility issues with custom smartcard drivers or other programs that load into the Local Security Authority (LSA). In these cases, attackers can use hack tools like Mimikatz to scrape cleartext passwords and NTLM hashes from LSASS.
 
@@ -285,11 +293,13 @@ GUID: `BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550`
 
 ### Block executable files from running unless they meet a prevalence, age, or trusted list criterion
 
-This rule blocks the following file types from launching unless they meet prevalence or age criteria, or they're in a trusted list or an exclusion list:
+This rule blocks executable files, such as .exe, .dll, or .scr, from launching unless any of the following conditions are met:
 
-- Executable files (such as .exe, .dll, or .scr)
+- Prevalence: The executable files are found on more than 1,000 endpoints
+- Age: The executable files were released more than 24 hours ago
+- Location: The executable files are included in a trusted list or an exclusion list
 
-Launching untrusted or unknown executable files can be risky, as it may not be initially clear if the files are malicious.
+Launching untrusted or unknown executable files can be risky, as it might not be initially clear if the files are malicious.
 
 > [!IMPORTANT]
 > You must [enable cloud-delivered protection](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) to use this rule.
@@ -353,7 +363,7 @@ GUID: `D3E037E1-3EB8-44C8-A917-57927947596D`
 
 This rule prevents Office apps, including Word, Excel, and PowerPoint, from creating potentially malicious executable content, by blocking malicious code from being written to disk.
 
-Malware that abuses Office as a vector may attempt to break out of Office and save malicious components to disk. These malicious components would survive a computer reboot and persist on the system. Therefore, this rule defends against a common persistence technique.
+Malware that abuses Office as a vector might attempt to break out of Office and save malicious components to disk. These malicious components would survive a computer reboot and persist on the system. Therefore, this rule defends against a common persistence technique.
 
 This rule was introduced in:
 
@@ -398,7 +408,7 @@ This rule prevents Outlook from creating child processes, while still allowing l
 This rule protects against social engineering attacks and prevents exploiting code from abusing vulnerabilities in Outlook. It also protects against [Outlook rules and forms exploits](https://blogs.technet.microsoft.com/office365security/defending-against-rules-and-forms-injection/) that attackers can use when a user's credentials are compromised.
 
 > [!NOTE]
-> This rule blocks DLP policy tips and ToolTips in Outlook. This rule applies to Outlook and Outlook.com only. 
+> This rule blocks DLP policy tips and ToolTips in Outlook. This rule applies to Outlook and Outlook.com only.
 
 This rule was introduced in:
 
@@ -498,7 +508,7 @@ This rule provides an extra layer of protection against ransomware. It uses both
 The rule tends to err on the side of caution to prevent ransomware.
 
 > [!NOTE]
-> You must [enable cloud-delivered protection](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) to use this rule.
+> You must [enable cloud-delivered protection](enable-cloud-protection-microsoft-defender-antivirus.md) to use this rule.
 
 This rule was introduced in:
 
@@ -512,10 +522,3 @@ Intune name: `Advanced ransomware protection`
 Configuration Manager name: `Use advanced protection against ransomware`
 
 GUID: `c1db55ab-c21a-4637-bb3f-a12568109d35`
-
-## See also
-
-- [Attack surface reduction FAQ](attack-surface-reduction-faq.md)
-- [Enable attack surface reduction rules](enable-attack-surface-reduction.md)
-- [Evaluate attack surface reduction rules](evaluate-attack-surface-reduction.md)
-- [Compatibility of Microsoft Defender Antivirus with other antivirus/antimalware solutions](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)

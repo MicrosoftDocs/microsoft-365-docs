@@ -1,6 +1,6 @@
 ---
 title: View and manage actions in the Action center
-description: Use the Action Center to view and manage remediation actions
+description: Use the Action center to view and manage remediation actions
 keywords: action, center, autoair, automated, investigation, response, remediation
 search.appverid: met150
 ms.prod: m365-security
@@ -48,7 +48,7 @@ It's important to approve (or reject) pending actions as soon as possible so tha
 
 2. In the navigation pane, choose **Action center**. 
 
-3. In the Action Center, on the **Pending** tab, select an item in the list. Its flyout pane opens. Here's an example.
+3. In the Action center, on the **Pending** tab, select an item in the list. Its flyout pane opens. Here's an example.
 
    ![Approve or reject an action](../../media/air-actioncenter-itemselected.png)
 

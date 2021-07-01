@@ -28,8 +28,34 @@ Whether it be adding new solutions to the [Microsoft 365 compliance center](micr
 > Some compliance features get rolled out at different speeds to our customers. If you aren't seeing a feature yet, try adding yourself to [targeted release](/office365/admin/manage/release-options-in-office-365).
 
 > [!TIP]
-> Interested in what's going on in other admin centers? Check out these articles:<br>[What's new in the Microsoft 365 admin center](/office365/admin/whats-new-in-preview)<br>[What's new in the SharePoint admin center](/sharepoint/what-s-new-in-admin-center)<br>[What's new in Microsoft 365 Defender](../security/defender/whats-new.md)<br><br>
-And visit the [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap) to learn about Microsoft 365 features that were launched, are rolling out, are in development, have been cancelled, or previously released.
+> Interested in what's going on in other admin centers? Check out these articles:
+>
+> - [What's new in the Microsoft 365 admin center](/office365/admin/whats-new-in-preview)
+> - [What's new in the SharePoint admin center](/sharepoint/what-s-new-in-admin-center)
+> - [What's new in Microsoft 365 Defender](../security/defender/whats-new.md)
+>
+> And visit the [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap) to learn about Microsoft 365 features that were launched, are rolling out, are in development, have been cancelled, or previously released.
+
+## May 2021
+
+### Data Loss Prevention
+
+- New guidance for [planning your Data Loss Prevention](dlp-overview-plan-for-dlp.md) strategy.
+
+### Retention and records management
+
+- If you release a retention policy from a SharePoint site or OneDrive account, you no longer have to wait the 30-day grace period before you can delete the site or account. A popular request by customers, this change is now complete for all tenants.
+- In preview, **multi-stage disposition review**:  An administrator can now add up to five consecutive stages of [disposition review](disposition.md) for a retention label, and reviewers can add others users to their disposition review stage. You can also customize the email notifications and reminders.
+
+### Sensitive Information Types
+
+- New information added to help you [Modify a Keyword Dictionary](sit-modify-keyword-dictionary.md).
+
+### Sensitivity labels
+
+- In preview, a new setting for **authentication context** is now available when you configure a [sensitivity label for groups and sites](sensitivity-labels-teams-groups-sites.md). This option works in conjunction with Azure AD Conditional Access policies to enforce more stringent conditions when users access SharePoint sites that have the label applied. Make sure you read the [dependencies and limitations](sensitivity-labels-teams-groups-sites.md#more-information-about-the-dependencies-for-the-authentication-context-option) before you configure this setting.
+- [Auto-labeling policies](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange) that are configured just for Exchange now support sensitivity labels that apply encryption with **Let users assign permissions** for the Do Not Forward or Encrypt-Only options.
+- [Mandatory labeling](sensitivity-labels-office-apps.md#require-users-to-apply-a-label-to-their-email-and-documents) is now generally available for all Office apps, across all platforms.
 
 ## April 2021
 
@@ -59,6 +85,7 @@ And visit the [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/ro
 ### Sensitivity labels
 
 Outlook releases and updates:
+
 - [Different settings for the default label and mandatory labeling](sensitivity-labels-office-apps.md#outlook-specific-options-for-default-label-and-mandatory-labeling) are now supported for built-in labeling. Previously, these settings were supported only by the AIP unified labeling client.
 - [Encrypt-Only](encryption-sensitivity-labels.md#let-users-assign-permissions) is now supported by macOS, iOS, and Android.
 - [Mandatory labeling](sensitivity-labels-office-apps.md#require-users-to-apply-a-label-to-their-email-and-documents) is rolling out to the remaining platforms.
@@ -70,7 +97,7 @@ Here are a few of the changes to Microsoft 365 compliance solutions and content 
 
 ### Advanced eDiscovery
 
-- **Advanced eDiscovery collections** now supports the [new collections tool and workflow](/microsoft-365/compliance/collections-overview). Other new topics include [create a draft collection](https://docs.microsoft.com/microsoft-365/compliance/create-draft-collection), [commit a draft collection to a review set](/microsoft-365/compliance/commit-draft-collection), and [collection statistics and reports](/microsoft-365/compliance/collection-statistics-reports).
+- **Advanced eDiscovery collections** now supports the [new collections tool and workflow](/microsoft-365/compliance/collections-overview). Other new topics include [create a draft collection](/microsoft-365/compliance/create-draft-collection), [commit a draft collection to a review set](/microsoft-365/compliance/commit-draft-collection), and [collection statistics and reports](/microsoft-365/compliance/collection-statistics-reports).
 - **Export documents** in a review set to an [Azure Storage](/microsoft-365/compliance/download-export-jobs) account.
 - **Predictive coding module for Advanced eDiscovery**. First look at the new [predictive coding](/microsoft-365/compliance/predictive-coding-overview) functionality that replaces the retired Relevance module.
 
@@ -164,22 +191,22 @@ Content was added or updated in the following topics:
 
 Content was added or updated in the following topics:
 
-- [Learn about Endpoint DLP](https://docs.microsoft.com/microsoft-365/compliance/endpoint-dlp-learn-about)
-- [Send email notifications and show policy tips for DLP policies](https://docs.microsoft.com/microsoft-365/compliance/use-notifications-and-policy-tips)
-- [Learn about the Microsoft 365 data loss prevention on-premises scanner](https://docs.microsoft.com/microsoft-365/compliance/dlp-on-premises-scanner-learn)
-- [Get started with the data loss prevention on-premises scanner](https://docs.microsoft.com/microsoft-365/compliance/dlp-on-premises-scanner-get-started)
-- [Create a DLP policy to protect documents with FCI or other properties](https://docs.microsoft.com/microsoft-365/compliance/protect-documents-that-have-fci-or-other-properties)
-- [Using Endpoint data loss prevention](https://docs.microsoft.com/microsoft-365/compliance/endpoint-dlp-using)
-- [Get started with Endpoint data loss prevention](https://docs.microsoft.com/microsoft-365/compliance/endpoint-dlp-getting-started)
+- [Learn about Endpoint DLP](/microsoft-365/compliance/endpoint-dlp-learn-about)
+- [Send email notifications and show policy tips for DLP policies](/microsoft-365/compliance/use-notifications-and-policy-tips)
+- [Learn about the Microsoft 365 data loss prevention on-premises scanner](/microsoft-365/compliance/dlp-on-premises-scanner-learn)
+- [Get started with the data loss prevention on-premises scanner](/microsoft-365/compliance/dlp-on-premises-scanner-get-started)
+- [Create a DLP policy to protect documents with FCI or other properties](/microsoft-365/compliance/protect-documents-that-have-fci-or-other-properties)
+- [Using Endpoint data loss prevention](/microsoft-365/compliance/endpoint-dlp-using)
+- [Get started with Endpoint data loss prevention](/microsoft-365/compliance/endpoint-dlp-getting-started)
 
 ### eDiscovery
 
 Content was added or updated in the following topics:
 
-- [Decryption in Microsoft 365 eDiscovery tools](https://docs.microsoft.com/microsoft-365/compliance/ediscovery-decryption)
-- [Keyword queries and search conditions](https://docs.microsoft.com/microsoft-365/compliance/keyword-queries-and-search-conditions#limitations-for-searching-sensitive-data-types)
-- [Retirement of the Relevance module in Advanced eDiscovery](https://docs.microsoft.com/microsoft-365/compliance/relevance-module-retirement)
-- [Use a script to add users to a hold in a Core eDiscovery case](https://docs.microsoft.com/microsoft-365/compliance/use-a-script-to-add-users-to-a-hold-in-ediscovery)
+- [Decryption in Microsoft 365 eDiscovery tools](/microsoft-365/compliance/ediscovery-decryption)
+- [Keyword queries and search conditions](/microsoft-365/compliance/keyword-queries-and-search-conditions#limitations-for-searching-sensitive-data-types)
+- [Retirement of the Relevance module in Advanced eDiscovery](/microsoft-365/compliance/relevance-module-retirement)
+- [Use a script to add users to a hold in a Core eDiscovery case](/microsoft-365/compliance/use-a-script-to-add-users-to-a-hold-in-ediscovery)
 
 ### Encryption
 
@@ -187,31 +214,30 @@ Content was added or updated in the following topics:
 
 #### Azure Rights Management Service (RMS)
 
-- [Customer-managed encryption features](https://docs.microsoft.com/microsoft-365/compliance/office-365-customer-managed-encryption-features)
-- [Exchange Online mail encryption with AD RMS](https://docs.microsoft.com/microsoft-365/compliance/information-rights-management-in-exchange-online). Support for this service has been deprecated. You can no longer use AD RMS in an Exchange hybrid environment. Instead, migrate to Azure RMS.
-​​​​​​​
+- [Customer-managed encryption features](/microsoft-365/compliance/office-365-customer-managed-encryption-features)
+- [Exchange Online mail encryption with AD RMS](/microsoft-365/compliance/information-rights-management-in-exchange-online). Support for this service has been deprecated. You can no longer use AD RMS in an Exchange hybrid environment. Instead, migrate to Azure RMS.
+​​​​
 #### Customer Key
 
-- [Customer Key for Microsoft 365 at the tenant level](https://docs.microsoft.com/microsoft-365/compliance/customer-key-tenant-level)
-- [Overview of security and compliance](https://docs.microsoft.com/microsoftteams/security-compliance-overview)
+- [Customer Key for Microsoft 365 at the tenant level](/microsoft-365/compliance/customer-key-tenant-level)
+- [Overview of security and compliance](/microsoftteams/security-compliance-overview)
 
 #### Information Rights Management (IRM)
 
-- [Apply Information Rights Management (IRM) to a list or library](https://docs.microsoft.com/microsoft-365/compliance/configure-irm-to-use-an-on-premises-ad-rms-server). These national clouds do not support this setting:
-    - Microsoft Cloud for US Government
-    - Microsoft Cloud Germany
-    - Azure and Microsoft 365 operated by 21Vianet in China)
-- [Configure IRM to use an on-premises AD RMS server](https://docs.microsoft.com/microsoft-365/compliance/configure-irm-to-use-an-on-premises-ad-rms-server). Support for this service in an Exchange hybrid environment has been deprecated.
+- [Apply Information Rights Management (IRM) to a list or library](/microsoft-365/compliance/configure-irm-to-use-an-on-premises-ad-rms-server). These national clouds do not support this setting:
+  - Microsoft Cloud for US Government
+  - Microsoft Cloud Germany
+  - Azure and Microsoft 365 operated by 21Vianet in China)
+- [Configure IRM to use an on-premises AD RMS server](/microsoft-365/compliance/configure-irm-to-use-an-on-premises-ad-rms-server). Support for this service in an Exchange hybrid environment has been deprecated.
 
 ### Sensitive Information Types
 
 Content was added or updated in the following topics:
 
-- [Learn about sensitive information types](https://docs.microsoft.com/microsoft-365/compliance/sensitive-information-type-learn-about)
-- [Create a custom sensitive information type using PowerShell](https://docs.microsoft.com/microsoft-365/compliance/create-a-custom-sensitive-information-type-in-scc-powershell)
-- [Create a custom sensitive information types with Exact Data Match based classification](https://docs.microsoft.com/microsoft-365/compliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification)
-- [Sensitive information type entity definitions](https://docs.microsoft.com/microsoft-365/compliance/sensitive-information-type-entity-definitions)
-
+- [Learn about sensitive information types](/microsoft-365/compliance/sensitive-information-type-learn-about)
+- [Create a custom sensitive information type using PowerShell](/microsoft-365/compliance/create-a-custom-sensitive-information-type-in-scc-powershell)
+- [Create a custom sensitive information types with Exact Data Match based classification](/microsoft-365/compliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification)
+- [Sensitive information type entity definitions](/microsoft-365/compliance/sensitive-information-type-entity-definitions)
 
 ### Sensitivity labels
 
@@ -253,7 +279,7 @@ First up is content that ties together our insider risk solutions: communication
   - [Insider risk management](insider-risk-management-solution-overview.md)
   - [Information barriers](information-barriers-solution-overview.md)
   - [Privileged access management](privileged-access-management-solution-overview.md)
-  
+
 More content solution docs coming soon!
 
 ### Advanced eDiscovery

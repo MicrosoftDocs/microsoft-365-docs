@@ -23,6 +23,9 @@ ms.date: 04/08/2021
 
 # Cancel your subscription
 
+> [!IMPORTANT]
+> This article only applies to Microsoft 365 for business subscriptions. If you have Microsoft 365 Family or Personal, see [Cancel a Microsoft 365 subscription](https://support.microsoft.com/en-us/office/cancel-a-microsoft-365-subscription-46e2634c-c64b-4c65-94b9-2cc9c960e91b?OCID=M365_DocsCancel_Link).
+
 *Eligibility:* If you have fewer than 25 licenses assigned to users, you can cancel your Microsoft 365 for business trial or paid subscription online in the Microsoft 365 admin center at any time. If you have more than 25 licenses assigned to users, reduce it to less than 25 or [call support to cancel your subscription](../../business-video/get-help-support.md).
 
 *Refund:* Any prorated credit will be returned to you within the next billing cycle.
@@ -74,7 +77,7 @@ Your subscription now appears in a **Disabled** state, and has reduced functiona
 
 If you cancel a subscription before the end of your term, the subscription status moves directly into a disabled state. For most subscriptions, in most countries and regions, the disabled state lasts 90 days. Admins can still access and back up data for their organization while the subscription is in the disabled state, but we recommend that admins [back up their data](back-up-data-before-switching-plans.md) before they cancel a subscription, especially if it's their only subscription. Admins can also reactivate the subscription while it's in the disabled state.
 
-After 90 says, the subscription moves into the deleted state. Any data that you leave behind may be deleted after those 90 days is deleted no later than 180 days after cancellation. You can't remove a payment method from a canceled subscription until after it reaches the deleted state.
+After 90 days, the subscription moves into the deleted state. Any data that you leave behind may be deleted after those 90 days is deleted no later than 180 days after cancellation. You can't remove a payment method from a canceled subscription until after it reaches the deleted state.
 
 ### What to expect for you and your users if you cancel a subscription
   

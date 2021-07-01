@@ -16,6 +16,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
+ms.custom: api
 ---
 
 # Configure Microsoft Defender for Endpoint to stream Advanced Hunting events to your Azure Event Hubs

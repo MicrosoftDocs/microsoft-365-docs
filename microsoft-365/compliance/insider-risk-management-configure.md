@@ -21,8 +21,8 @@ ms.collection:
 
 Use insider risk management policies to identify risky activities and management tools to act on risk alerts in your organization. Complete the following steps to set up prerequisites and configure an insider risk management policy.
 
->[!IMPORTANT]
->The Microsoft 365 insider risk management solution provides a tenant level option to help customers facilitate internal governance at the user level. Tenant level administrators can set up permissions to provide access to this solution for members of your organization and set up data connectors in the Microsoft 365 compliance center to import relevant data to support user level identification of potentially risky activity. Customers acknowledge insights related to the individual user's behavior, character, or performance materially related to employment can be calculated by the administrator and made available to others in the organization. In addition, customers acknowledge that they must conduct their own full investigation related to the individual user's behavior, character, or performance materially related to employment, and not just rely on insights from the insider risk management service. Customers are solely responsible for using the Microsoft 365 insider risk management service, and any associated feature or service in compliance with all applicable laws, including laws relating to individual user identification and any remediation actions.
+> [!IMPORTANT]
+> The Microsoft 365 insider risk management solution provides a tenant level option to help customers facilitate internal governance at the user level. Tenant level administrators can set up permissions to provide access to this solution for members of your organization and set up data connectors in the Microsoft 365 compliance center to import relevant data to support user level identification of potentially risky activity. Customers acknowledge insights related to the individual user's behavior, character, or performance materially related to employment can be calculated by the administrator and made available to others in the organization. In addition, customers acknowledge that they must conduct their own full investigation related to the individual user's behavior, character, or performance materially related to employment, and not just rely on insights from the insider risk management service. Customers are solely responsible for using the Microsoft 365 insider risk management service, and any associated feature or service in compliance with all applicable laws, including laws relating to individual user identification and any remediation actions.
 
 For more information about how insider risk policies can help you manage risk in your organization, see [Insider risk management in Microsoft 365](insider-risk-management.md).
 
@@ -47,8 +47,8 @@ If you don't have an existing Microsoft 365 Enterprise E5 plan and want to try i
 
 ## Step 1: Enable permissions for insider risk management
 
->[!Important]
->After configuring your role groups, it may take up to 30 minutes for the role group permissions to apply to assigned users across your organization.
+> [!IMPORTANT]
+> After configuring your role groups, it may take up to 30 minutes for the role group permissions to apply to assigned users across your organization.
 
 There are four roles groups used to configure permissions to manage insider risk management features. To continue with these configuration steps, your tenant administrators must first assign you to the **Insider Risk Management** or **Insider Risk Management Admin** role group. To access and manage insider risk management features after initial configuration, users must be a member of at least one insider risk management role group.
 
@@ -56,8 +56,8 @@ Depending on the structure of your compliance management team, you have options 
 
 | **Role group** | **Role permissions** |
 | :------------- | :------------------- |
-| **Insider Risk Management** | Use this role group to manage insider risk management for your organization in a single group. By adding all user accounts for designated administrators, analysts, investigators, and auditors you can configure insider risk management permissions in a single group. This role group contains all the insider risk management permission roles and associated permissions. This configuration is the easiest way to quickly get started with insider risk management and is a good fit for organizations that do not need separate permissions defined for separate groups of users. |
-| **Insider Risk Management Admin** | Use this role group to initially configure insider risk management and later to segregate insider risk administrators into a defined group. Users in this role group can enable and view analytics insights and create, read, update, and delete insider risk management policies, global settings, and role group assignments. |
+| **Insider Risk Management** | Use this role group to manage insider risk management for your organization in a single group. By adding all user accounts for designated administrators, analysts, investigators, and auditors you can configure insider risk management permissions in a single group. This role group contains all the insider risk management permission roles and associated permissions. This configuration is the easiest way to quickly get started with insider risk management and is a good fit for organizations that do not need separate permissions defined for separate groups of users. When using this configuration, you should make sure to always have at least one user assigned to this role group to ensure that your policies work as expected and so the user can create and edit policies, configure solution settings, and review policy health warnings.|
+| **Insider Risk Management Admin** | Use this role group to initially configure insider risk management and later to separate insider risk administrators into a defined group. Users in this role group can enable and view analytics insights and create, read, update, and delete insider risk management policies, global settings, and role group assignments. When using this configuration, you should make sure to always have at least one user assigned to this role group to ensure that your policies work as expected and so the user can create and edit policies, configure solution settings, and review policy health warnings. |
 | **Insider Risk Management Analysts** | Use this group to assign permissions to users that will act as insider risk case analysts. Users in this role group can access and view all insider risk management alerts, cases, analytics insights, and notices templates. They cannot access the insider risk Content explorer. |
 | **Insider Risk Management Investigators** | Use this group to assign permissions to users that will act as insider risk data investigators. Users in this role group can access to all insider risk management alerts, cases, notices templates, and the Content explorer for all cases. |
 | **Insider Risk Management Auditors** | Use this group to assign permissions to users that will audit insider risk management activities. Users in this role group can access the insider risk audit log. |
@@ -69,7 +69,7 @@ Depending on the structure of your compliance management team, you have options 
 
 Complete the following steps to add users to an insider risk management role group:
 
-1. Sign into [https://protection.office.com/permissions](https://protection.office.com/permissions) using credentials for an admin account in your Microsoft 365 organization.
+1. Sign into [https://compliance.microsoft.com/permissions](https://compliance.microsoft.com/permissions) using credentials for an admin account in your Microsoft 365 organization.
 
 2. In the Security &amp; Compliance Center, go to **Permissions**. Select the link to view and manage roles in Office 365.
 
@@ -126,7 +126,7 @@ Insider risk management supports using DLP policies to help identify the intenti
 
 DLP policies help identify users to activate risk scoring in insider risk management for high severity DLP alerts for sensitive information and are an important part of configuring full risk management coverage in your organization. For more information about insider risk management and DLP policy integration and planning considerations, see [Insider risk management policies](insider-risk-management-policies.md#general-data-leaks).
 
->[!IMPORTANT]
+> [!IMPORTANT]
 >Make sure you've completed the following:
 >
 >- You understand and properly configure the in-scope users in both the DLP and insider risk management policies to produce the policy coverage you expect.
@@ -154,8 +154,8 @@ See the [Getting started with insider risk management settings](insider-risk-man
 
 Insider risk management supports importing user and log data from physical control and access platforms. The Physical badging connector allows you to pull in access data from JSON files, including user IDs, access point IDs, access time and dates, and access status. This data helps drive alert indicators in insider risk management policies and is an important part of configuring full risk management coverage in your organization. If you configure more than one Physical badging connector for your organization, insider risk management automatically pulls indicators from all Physical badging connectors. Information from the Physical badging connector supplements other insider risk signals when using all insider risk policy templates.
 
->[!IMPORTANT]
->For insider risk management policies to use and correlate signal data related to departing and terminated users with event data from your physical control and access platforms, you must also configure the Microsoft 365 HR connector. If you enable the Physical badging connector without enabling the Microsoft 365 HR connector, insider risk management policies will only process events for unauthorized physical access for users in your organization.
+> [!IMPORTANT]
+> For insider risk management policies to use and correlate signal data related to departing and terminated users with event data from your physical control and access platforms, you must also configure the Microsoft 365 HR connector. If you enable the Physical badging connector without enabling the Microsoft 365 HR connector, insider risk management policies will only process events for unauthorized physical access for users in your organization.
 
 See the [Set up a connector to import physical badging data](import-physical-badging-data.md) article for step-by-step guidance to configure the Physical badging connector for your organization. After you've configured the connector, return to these configuration steps.
 
@@ -177,8 +177,8 @@ Before configuring a policy, define the following insider risk settings:
 2. On the **Privacy** page, select a privacy setting for displaying usernames for policy alerts.
 3. On the **Indicators** page, select the alert indicators you want to apply to all insider risk policies.
 
-    >[!IMPORTANT]
-    >In order to receive alerts for risky activity defined in your policies, you must select one or more indicators. If indicators aren't configured in Settings, the indicators won't be selectable in insider risk policies.
+    > [!IMPORTANT]
+    > In order to receive alerts for risky activity defined in your policies, you must select one or more indicators. If indicators aren't configured in Settings, the indicators won't be selectable in insider risk policies.
 
 4. On the **Policy timeframes** page, select the [policy timeframes](insider-risk-management-settings.md#policy-timeframes) to go into effect for a user when they trigger a match for an insider risk policy.
 5. On the **Intelligent detections** page, configure the following settings for insider risk policies:
@@ -202,8 +202,8 @@ Insider risk management policies include assigned users and define which types o
 2. Select **Create policy** to open the policy wizard.
 3. On the **Policy template** page, choose a policy category and then select the template for the new policy. These templates are made up of conditions and indicators that define the risk activities you want to detect and investigate. Review the template prerequisites, triggering events, and detected activities to confirm this policy template fits your needs.
 
-    >[!IMPORTANT]
-    >Some policy templates have prerequisites that must be configured for the policy to generate relevant alerts. If you haven't configured the applicable policy prerequisites, see **Step 4** above.
+    > [!IMPORTANT]
+    > Some policy templates have prerequisites that must be configured for the policy to generate relevant alerts. If you haven't configured the applicable policy prerequisites, see **Step 4** above.
 
 4. Select **Next** to continue.
 5. On the **Name and description** page, complete the following fields:
@@ -229,8 +229,8 @@ Insider risk management policies include assigned users and define which types o
 12. Select **Next** to continue.
 13. On the **Indicators and triggering events** page, you'll see the [indicators](insider-risk-management-settings.md#indicators) that you've defined as available on the **Insider risk settings** > **Indicators** page. If you selected a *Data leaks* template at the beginning of the wizard, you must select a DLP policy from the **DLP policy** dropdown list to enable triggering indicators for the policy or select the built-in triggering event.
 
-    >[!IMPORTANT]
-    >If indicators on this page can't be selected, you'll need to select the indicators you want to enable for all policies. You can use the **Turn on indicators** button in the wizard or select indicators on the **Insider risk management** > **Settings** > **Policy indicators** page.
+    > [!IMPORTANT]
+    > If indicators on this page can't be selected, you'll need to select the indicators you want to enable for all policies. You can use the **Turn on indicators** button in the wizard or select indicators on the **Insider risk management** > **Settings** > **Policy indicators** page.
 
     Select the indicators you want to apply to the policy. If you prefer not to use the default policy threshold settings for these indicators, disable the **Use default thresholds recommended by Microsoft** and enter the threshold values for each selected indicator.
 
