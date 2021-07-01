@@ -417,6 +417,8 @@
               href: archive-reuterseikon-data.md
             - name: Reuters FX
               href: archive-reutersfx-data.md
+            - name: RingCentral
+              href: archive-ringcentral-data.md   
             - name: Salesforce Chatter
               href: archive-salesforcechatter-data.md
             - name: ServiceNow
@@ -553,7 +555,7 @@
       href: ediscovery.md
     - name: Content search
       items:
-        - name: Overview of content search
+        - name: Overview of Content search
           href: search-for-content.md
         - name: Search for content
           href: content-search.md
