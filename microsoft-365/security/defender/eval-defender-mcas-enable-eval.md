@@ -1,6 +1,6 @@
 ---
 title: Enable the evaluation environment for Microsoft Cloud App Security
-description: Learn the architecture of MCAS within Microsoft Defender for Office 365 and understand interactions between the products.
+description: Learn the architecture of MCAS within Microsoft Defender for Office 365 and understand interactions between the Microsoft 365 Defender products.
 keywords: Microsoft 365 Defender trial, try Microsoft 365 Defender, evaluate Microsoft 365 Defender, Microsoft 365 Defender evaluation lab, Microsoft 365 Defender pilot, cyber security, advanced persistent threat, enterprise security, devices, device, identity, users, data, applications, incidents, automated investigation and remediation, advanced hunting
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
