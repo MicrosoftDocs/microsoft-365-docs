@@ -45,7 +45,7 @@ But what if you wanted a custom sensitive information type (SIT) that uses exact
 EDM-based classification enables you to create custom sensitive information types that refer to exact values in a database of sensitive information. The database can be refreshed daily, and contain up to 100 million rows of data. So as employees, patients, or clients come and go, and records change, your custom sensitive information types remain current and applicable. And, you can use EDM-based classification with policies, such as [data loss prevention policies](dlp-learn-about-dlp.md) or [Microsoft Cloud App Security file policies](/cloud-app-security/data-protection-policies).
 
 > [!NOTE]
-> Microsoft 365 Information Protection supports in preview double byte character set languages for:
+> Microsoft 365 Information Protection supports double byte character set languages for:
 > - Chinese (simplified)
 > - Chinese (traditional)
 > - Korean
@@ -53,6 +53,16 @@ EDM-based classification enables you to create custom sensitive information type
 > 
 > This support is available for sensitive information types. See, [Information protection support for double byte character sets release notes (preview)](mip-dbcs-relnotes.md) for more information.
  
+ > [!TIP]
+> For languages using double bytes like Chinese and Japanese, to detect patterns containing Chinese/Japanese characters and single byte characters or to detect patterns containing Chinese/Japanese and English, define two variants of the keyword or regex. 
+> For example, to detect a keyword like "机密的document", please use two variants of this keyword. Once with a space between Japanese and English text and another without a space between Japanese and English text. So, the keywords to be added in the SIT should be "机密的document" and "机密的 document". Similarly to detect a phrase "東京オリンピック2020", two variants should be used - "東京オリンピック2020" and "東京オリンピック 2020".
+ 
+> While creating a regex using double byte hyphen or double byte full-stop, make sure to escape both the characters like one would escape a hyphen or full stop in a regex. Here is a sample regex for reference.
+- (?<!\d)([４][０-９]{3}[\-?\－\t]*[０-９]{4}
+
+> It is recommended to use string match instead of word match in a keyword list
+
+
 
 ## Required licenses and permissions
 
