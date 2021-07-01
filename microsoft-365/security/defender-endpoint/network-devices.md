@@ -85,7 +85,7 @@ Your first step is to select a device that will perform the authenticated networ
 8. To allow the network scanner to be authenticated and work properly, it's essential that you add the following domains/URLs:
 
     - login.windows.net  
-    - *.securitycenter.windows.com
+    - *.security.microsoft.com
     - login.microsoftonline.com
     - *.blob.core.windows.net/networkscannerstable/ *
 

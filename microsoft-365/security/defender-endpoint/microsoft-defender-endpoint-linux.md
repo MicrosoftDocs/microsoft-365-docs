@@ -50,8 +50,6 @@ This topic describes how to install, configure, update, and use Microsoft Defend
 > 
 > Microsoft Defender for Endpoint on Linux is not yet integrated into Azure Security Center.
 
-
-
 ### Installation instructions
 
 There are several methods and deployment tools that you can use to install and configure Microsoft Defender for Endpoint on Linux.

@@ -47,9 +47,9 @@ ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 
 ## Onboard devices to Microsoft Defender for Endpoint
 
-1. Go to the Microsoft 365 Defender portal ([https://securitycenter.windows.com](https://securitycenter.windows.com)) and sign in.
+1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
-2. Choose **Settings** > **Device management** > **Onboarding**. 
+2. Choose **Settings** > **Endpoints** > **Onboarding** (under **Device management**). 
 
 3. In the **Select operating system to start onboarding process** list, select an operating system. 
 
@@ -146,5 +146,5 @@ Now that you have onboarded to Defender for Endpoint, and you have uninstalled y
 
 **Congratulations**! You have completed your [migration to Defender for Endpoint](switch-to-microsoft-defender-migration.md#the-migration-process)! 
 
-- [Visit your security operations dashboard](security-operations-dashboard.md) in the Microsoft 365 Defender portal ([https://securitycenter.windows.com](https://securitycenter.windows.com)). 
+- [Visit your security operations dashboard](security-operations-dashboard.md) in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). 
 - [Manage Defender for Endpoint, post migration](manage-atp-post-migration.md).

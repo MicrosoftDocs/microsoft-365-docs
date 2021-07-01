@@ -32,7 +32,7 @@ ms.technology: mde
 
 Enterprise security teams can use Microsoft 365 Defender to monitor and assist in responding to alerts of potential advanced persistent threat activity or data breaches.
 
-You can use [Microsoft 365 Defender](https://securitycenter.windows.com/) to:
+You can use [Microsoft 365 Defender](https://security.microsoft.com) to:
 
 - View, sort, and triage alerts from your endpoints
 - Search for more information on observed indicators such as files and IP Addresses

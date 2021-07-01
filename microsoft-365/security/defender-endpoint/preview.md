@@ -49,7 +49,7 @@ You'll have access to upcoming features that you can provide feedback on to help
 
 Turn on the preview experience setting to be among the first to try upcoming features.
 
-1. In the navigation pane, select **Settings** > **Advanced features** > **Preview features**.
+1. In the navigation pane, select **Settings** > **Endpoints** > **Advanced features** > **Preview features**.
 
 2. Toggle the setting between **On** and **Off** and select **Save preferences**.
 

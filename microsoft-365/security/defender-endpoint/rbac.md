@@ -69,9 +69,7 @@ Someone with a Defender for Endpoint Global administrator role has unrestricted 
 >
 >Users with admin permissions are automatically assigned the default built-in Defender for Endpoint global administrator role with full permissions. After opting in to use RBAC, you can assign additional users that are not Azure AD Global or Security Administrators to the Defender for Endpoint global administrator role. 
 >
-> After opting in to use RBAC, you cannot revert to the initial roles as when you first logged into the portal. 
-
-
+> After opting in to use RBAC, you cannot revert to the initial roles as when you first logged into the portal.
 
 ## Related topic
 - [Create and manage device groups in Microsoft Defender for Endpoint](machine-groups.md)

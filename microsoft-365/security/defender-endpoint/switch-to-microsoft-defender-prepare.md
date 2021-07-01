@@ -78,14 +78,14 @@ Now that you've updated your organization's devices, the next step is to get Def
 
 4. If endpoints (such as devices) in your organization use a proxy to access the internet, see [Defender for Endpoint setup: Network configuration](production-deployment.md#network-configuration).
  
-At this point, you are ready to grant access to your security administrators and security operators who will use the Microsoft 365 Defender portal ([https://securitycenter.windows.com](https://securitycenter.windows.com)). 
+At this point, you are ready to grant access to your security administrators and security operators who will use the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). 
 
 > [!NOTE]
-> The Microsoft 365 Defender portal is sometimes referred to as the Defender for Endpoint portal, and can be accessed at [https://securitycenter.windows.com](https://securitycenter.windows.com). 
+> The Microsoft 365 Defender portal is sometimes referred to as the Defender for Endpoint portal, and can be accessed at [https://security.microsoft.com](https://security.microsoft.com). 
 
 ## Grant access to the Microsoft 365 Defender portal
 
-The Microsoft 365 Defender portal ([https://securitycenter.windows.com](https://securitycenter.windows.com)) is where you access and configure features and capabilities of Defender for Endpoint. To learn more, see [Overview of the Microsoft 365 Defender portal](use.md).
+The Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) is where you access and configure features and capabilities of Defender for Endpoint. To learn more, see [Overview of the Microsoft 365 Defender portal](use.md).
 
 Permissions to the Microsoft 365 Defender portal can be granted by using either basic permissions or role-based access control (RBAC). We recommend using RBAC so that you have more granular control over permissions.
 

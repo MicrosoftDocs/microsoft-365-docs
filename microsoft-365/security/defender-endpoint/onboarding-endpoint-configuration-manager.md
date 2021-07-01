@@ -129,7 +129,7 @@ From within the Microsoft 365 Defender portal it is possible to download
 the '.onboarding' policy that can be used to create the policy in System Center Configuration
 Manager and deploy that policy to Windows 10 devices.
 
-1. From a Microsoft 365 Defender portal, select [Settings and then Onboarding](https://securitycenter.windows.com/preferences2/onboarding).
+1. From a Microsoft 365 Defender portal, select [Settings and then Onboarding](https://security.microsoft.com/preferences2/onboarding).
 
 
 
@@ -184,7 +184,7 @@ Manager and deploy that policy to Windows 10 devices.
 #### Previous versions of Windows Client (Windows 7 and Windows 8.1)
 Follow the steps below to identify the Defender for Endpoint Workspace ID and Workspace Key, that will be required for the onboarding of previous versions of Windows.
 
-1. From a Microsoft 365 Defender portal, select **Settings > Onboarding**.
+1. From a Microsoft 365 Defender portal, select **Settings** > **Endpoints** > **Onboarding** (under **Device Management**).
 
 2. Under operating system choose **Windows 7 SP1 and 8.1**.
 
@@ -324,7 +324,7 @@ Below are additional steps to verify whether ASR rules are correctly applied to
 endpoints. (This may take few minutes)
 
 
-1. From a web browser, navigate to <https://securitycenter.windows.com>.
+1. From a web browser, navigate to <https://security.microsoft.com>.
 
 2.  Select **Configuration management** from left side menu.
 

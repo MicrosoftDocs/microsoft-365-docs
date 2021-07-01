@@ -75,14 +75,13 @@ The following table provides details on the methods, tools, and dependencies.
 |:----|:----|
 | Microsoft Intune  | No |
 | Microsoft Endpoint Configuration Manager + Tenant Attach  |     No  |
-| Microsoft 365 Defender ([https://securitycenter.windows.com](https://securitycenter.windows.com))    |     Yes |
 | Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com))  |     Yes  |
 
 ## Manage tamper protection for your organization using the Microsoft 365 Defender portal
 
-Tamper protection can be turned on or off for your tenant using the Microsoft 365 Defender portal ([https://securitycenter.windows.com](https://securitycenter.windows.com)). Here are a few points to keep in mind:
+Tamper protection can be turned on or off for your tenant using the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). Here are a few points to keep in mind:
 
-- Currently, the option to manage tamper protection in the Microsoft 365 Defender portal is on by default for new deployments. For existing deployments, tamper protection is available on an opt-in basis, with plans to make opting in the default method in the near future. (To opt in, in the Microsoft 365 Defender portal, choose **Settings** > **Advanced features** > **Tamper protection**.) 
+- Currently, the option to manage tamper protection in the Microsoft 365 Defender portal is on by default for new deployments. For existing deployments, tamper protection is available on an opt-in basis, with plans to make opting in the default method in the near future. (To opt in, in the Microsoft 365 Defender portal, choose **Settings** > **Endpoints** > **Advanced features** > **Tamper protection**.) 
 
 - When you use the Microsoft 365 Defender portal to manage tamper protection, you do not have to use Intune or the tenant attach method.
 
@@ -110,11 +109,11 @@ Tamper protection can be turned on or off for your tenant using the Microsoft 36
 
 ### Turn tamper protection on (or off) in the Microsoft 365 Defender portal
 
-![Turn tamper protection on in the Microsoft 365 Defender portal](images/mde-turn-tamperprotect-on.png)
+![Turn tamper protection on in the Microsoft 365 Defender portal](images/mde-turn-tamperprotect-on-new.png)
 
-1. Go to the Microsoft 365 Defender portal ([https://securitycenter.windows.com](https://securitycenter.windows.com)) and sign in.
+1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
-2. Choose **Settings**.
+2. Choose **Settings** > **Endpoints**.
 
 3. Go to **General** > **Advanced features**, and then turn tamper protection on.
 
@@ -215,7 +214,7 @@ Here's what you see in the Windows Security app:
 
 Tampering attempts typically indicate bigger cyberattacks. Bad actors try to change security settings as a way to persist and stay undetected. If you're part of your organization's security team, you can view information about such attempts, and then take appropriate actions to mitigate threats.
 
-When a tampering attempt is detected, an alert is raised in the [Microsoft 365 Defender](/microsoft-365/security/defender-endpoint/portal-overview) ([https://securitycenter.windows.com](https://securitycenter.windows.com)).
+When a tampering attempt is detected, an alert is raised in the [Microsoft 365 Defender portal](/microsoft-365/security/defender-endpoint/portal-overview) ([https://security.microsoft.com](https://security.microsoft.com)).
 
 ![Microsoft 365 Defender](images/tamperattemptalert.png)
 

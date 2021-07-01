@@ -30,9 +30,9 @@ ms.technology: mde
 
 Turn on the preview experience setting to be among the first to try upcoming features.
 
-1. In the navigation pane, select **Settings** > **Advanced features**.
+1. In the navigation pane, select **Settings** > **Endpoints** > **Advanced features**.
 
-    ![Image of settings and preview experience](images/atp-preview-features.png)
+    ![Image of settings and preview experience](images/atp-preview-features-new.png)
 
 
 2. Toggle the setting between **On** and **Off** and select **Save preferences**.
