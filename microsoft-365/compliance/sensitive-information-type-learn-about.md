@@ -145,7 +145,7 @@ To create custom sensitive information types in the Security & Compliance Center
 > - Chinese (traditional)
 > - Korean
 > - Japanese
->This support is available for sensitive information types. See, [Information protection support for double byte character sets release notes (preview)](mip-dbcs-relnotes.md) for more information.
+> This support is available for sensitive information types. See, [Information protection support for double byte character sets release notes (preview)](mip-dbcs-relnotes.md) for more information.
 
 > [!TIP]
 > To detect patterns containing Chinese/Japanese characters and single byte characters or to detect patterns containing Chinese/Japanese and English, define two variants of the keyword or regex. 
