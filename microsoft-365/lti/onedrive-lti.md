@@ -39,7 +39,7 @@ Integrating Microsoft OneDrive LTI with Canvas is a two step process. The first 
 
 5. Sign into your Canvas instance as the administrator and select **Developer Keys** from the menu on the left side of the page. From the dropdown, create a developer key by choosing **LTI Key** from the dropdown on the upper right of the page.
 
-SCREEN HERE
+:::image type="content" source="media/OneDrive-LTI-14.png" alt-text="A screenshot showing the left-hand navigation bar with Developer Keys selected, and LTI key selected from a dropdown on the right of the page.":::
 
 6. On the Configure page, in the **Method** dropdown, select **Paste JSON** as the method and paste the JSON text you copied in Step 5 in the text field that appears.
 7. Save the key, and it becomes available in Canvas in an **Off** state. Turn the key **On** and copy the key given in the **Details** column to be used in the next step.
@@ -48,7 +48,7 @@ SCREEN HERE
 
 8. Return to the Microsoft OneDrive LTI Registration portal and paste the key in the **Canvas Client ID** field. Select **Next** when you're ready.
 
-:::image type="content" source="media/OneDrive-LTI-20-Old.png" alt-text="The LTI tenant registration page, which shows the JSON text and the text box the key should be copied into.":::
+:::image type="content" source="media/OneDrive-LTI-20.png" alt-text="The LTI tenant registration page, which shows the JSON text and the text box the key should be copied into.":::
 
 9. Review and save your changes. A message will be displayed on successful registration.
 10. Your registration details can also be reviewed by selecting the **View LTI Tenants** button on the home page.
