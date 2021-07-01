@@ -58,11 +58,11 @@ The first step in creating a form processing model is to name the model, define 
 
    If you want to extract table information to an associated list:
 
-      1. In the **Extract info from tables?** section, select **Yes**.
+        1. In the **Extract info from tables?** section, select **Yes**.
 
          ![Screenshot showing the Extract info from tables section on the Create a model to process forms panel.](../media/content-understanding/extract-info-from-tables.png) 
 
-      2. In the **Where should we save table info?** section:
+        2. In the **Where should we save table info?** section:
  
          - If you select **A new list** (the default setting), a suggested name is automatically provided in the **New list name** box. You can modify the name if you want to. If you want to show the list in the site navigation, select the **Show in site navigation** checkbox.
 
