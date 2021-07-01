@@ -61,13 +61,10 @@ A Canvas administrator can enable Microsoft OneDrive LTI for all courses. If Mic
 2. Go to the **Apps** section and select the **View App Configurations** button.
 3. Select the **Add App** button.
 4. In the **Configuration Type** dropdown, choose the **By Client ID** option.
-
-:::image type="content" source="media/OneDrive-LTI-30.png" alt-text="The add app page, showing the By client ID option under the Configuration type dropdown menu.":::
-
-SWAP THIS ONE WITH IMAGE 31
-
-
 5. Paste the value of the developer key generated previously in the **Client ID** field, and select the **Submit** button.
+
+:::image type="content" source="media/OneDrive-LTI-31.png" alt-text="The add app page, showing the By client ID option under the Configuration type dropdown menu.":::
+
 6. The Microsoft OneDrive LTI won't show up immediately in the External Apps list. Refresh the browser page showing the list, and Microsoft OneDrive LTI will be available.
 
 ## Collaboration Settings for Microsoft OneDrive LTI in Canvas Courses
