@@ -29,12 +29,14 @@ ms.technology: m365d
 **Applies to:**
 - Microsoft 365 Defender
 
-intro
+To promote your Microsoft 365 Defender evaluation environment to production, first purchase the necessary license. Follow the steps in [Create the eval environment](eval--create-eval-environment.md) and purchase the Office 365 E5 license (instead of selecting Start free trial).
 
-process
+Next, complete any additional configuration and expand your pilot groups until these have reached full production. 
 
-Defender for Identity doesn't need to be promoted, already in production. For the others . . .
-# Microsoft Defender for Office 365
+## Microsoft Defender for Identity
+Defender for Identity doesn't require any additional configuration. Just make sure you've purchased the necessary licenses and installed the sensor on all of your Active Directory domain controllers and Active Directory Federation Services (AD FS) servers. 
+
+## Microsoft Defender for Office 365
 
 After successfully evaluating or piloting MDO, it can be promoted to your entire production environment.
 1. Purchase and provision the necessary licenses and assign them to your production users.
@@ -55,6 +57,6 @@ Use the following general guidelines to onboard more devices to Microsoft Defend
 4.  Run a detection test to verify that the devices are properly onboarded and reporting to the service.
 
 
-
-
 ## Microsoft Cloud App Security
+Defender for Identity doesn't require any additional configuration. Just make sure you've purchased the necessary licenses.
+

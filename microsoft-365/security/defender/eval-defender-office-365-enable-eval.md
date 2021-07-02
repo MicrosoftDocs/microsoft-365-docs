@@ -33,7 +33,6 @@ This article is [Step 2 of 3](eval-defender-office-365-overview.md) in the proce
 
 Use the following steps to enable the evaluation for Microsoft Defender for Office 365.
 
-<!--Microsoft Defender for Office 365 can be evaluated as part of a full E5 license of can be enabled as an add-on.-->
 
 ![Steps to enable Microsoft Defender for Office 365 in the Microsoft Defender evaluation environment](../../media/defender/m365-defender-office-eval-enable-steps.png)
 

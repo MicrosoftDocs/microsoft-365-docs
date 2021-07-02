@@ -48,18 +48,6 @@ In this illustration:
 -  Sensors can also parse Active Directory Federation Services (AD FS) when Azure AD is configured to use federated authentication (dotted line in illustration). 
 - Microsoft Defender for Identity shares signals to Microsoft 365 Defender for extended detection and response (XDR).
 
-<!--
-
-The following table describes this illustration.
-
-
-|Call-out  |Description  |
-|---------|---------|
-|1     |  |
-|2     |  Microsoft Defender for Identity aggregates and analyzes Azure AD and sensor data for monitoring, investigating, and responding to authentication and authorization signals. |
-|3     |Microsoft Defender for Identity shares signals to the Microsoft 365 Security Center. |
-| | |
--->
 
 Defender for Identity sensors can be directly installed on the following servers:
 
