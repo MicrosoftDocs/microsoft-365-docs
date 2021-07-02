@@ -1,9 +1,9 @@
 ---
-title: Use Microsoft Teams classes with Blackboard
+title: Integrate Microsoft Teams classes with Blackboard
 ms.author: v-cichur
 author: cichur
 manager: serdars
-ms.reviewer: sonal.vaish
+ms.reviewer: amitman 
 audience: admin
 ms.topic: article
 ms.service: o365-administration
