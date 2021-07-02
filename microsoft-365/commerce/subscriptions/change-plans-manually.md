@@ -78,6 +78,8 @@ The licenses for the current subscription will be removed later; you'll only pay
 
 ## Step 4: Reassign licenses
 
+When you upgrade from an Office 365 plan to a Microsoft 365 plan, you must change the license assignments for all users. Licenses aren't automatically assigned when you change plans manually.
+
 ### Reassign a license for one user
 
 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.

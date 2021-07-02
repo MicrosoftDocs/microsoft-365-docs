@@ -127,7 +127,10 @@ To set up Topics
 
     Select **Next**.
 
-9. On the **Create topic center** page, you can create your topic center site in which topic pages can be viewed and topics can be managed. In the **Site name** box, type a name for your topic center. You can optionally type a short description in the **Description** box. 
+9. On the **Create topic center** page, you can create your topic center site in which topic pages can be viewed and topics can be managed. In the **Site name** box, type a name for your topic center. You can click the pencil icon if you want to change the URL. Optionally, type a short description in the **Description** box. 
+
+   > [!Important]
+   > You can change the site name later, but you can't change the URL after you complete the wizard.
 
    Select **Next**.
 

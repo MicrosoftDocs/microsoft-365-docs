@@ -20,7 +20,7 @@ ms.custom:
 - commerce_licensing
 search.appverid: MET150
 description: "The method you use to unassign product licenses depends on whether you unassign licenses from specific users or from a specific product."
-ms.date: 07/01/2020
+ms.date: 06/07/2021
 ---
 
 # Unassign licenses from users
