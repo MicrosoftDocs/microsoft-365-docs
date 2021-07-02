@@ -65,6 +65,7 @@ sections:
               > [!NOTE]
               > Once you inactivate a tenant, you'll be unable to take action on the tenant until inactivation is complete.
           
+
           To learn more about tenants, see [Overview of tenants]().
       - question: Will Microsoft 365 Lighthouse work if my customer tenants have other subscriptions besides Microsoft 365 Business Premium?
         answer: |

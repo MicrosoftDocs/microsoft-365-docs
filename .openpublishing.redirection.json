@@ -4149,6 +4149,11 @@
       "source_path": "microsoft-365/security/office-365-security/safety-tips-in-office-365.md",
       "redirect_url": "/microsoft-365/security/office-365-security/anti-spam-protection",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/microsoft-defender-advanced-threat-protection.md",
+      "redirect_url": "microsoft-365/security/defender-endpoint",
+      "redirect_document_id": false
     }
   ]
 }
