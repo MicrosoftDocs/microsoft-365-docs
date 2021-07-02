@@ -40,9 +40,13 @@ In September 2021, we released a new version of Microsoft Defender for Endpoint 
 To facilitate upgrades when Microsoft Endpoint Manager or Azure Defender* are not in use or available to perform the upgrade, you can use this upgrade script(link to Github tbc). It will automate the following required steps:
 
 1. Remove the OMS workspace for Microsoft Defender for Endpoint
+
 2. Remove System Center Endpoint Protection client if installed
+
 3. Download and install (Windows Server 2012 R2) [prerequisites](configure-server-endpoints.md#prerequisites) if required.
+
 4. Install Microsoft Defender for Endpoint
+
 5. Apply the onboarding script **for use with Group Policy** downloaded from Microsoft Defender Security Center(https://securitycenter.microsoft.com).
 
 To use the script, download it to an installation directory where you have also placed the installation and onboarding packages (see [Configure server endpoints](configure-server-endpoints.md).
@@ -58,16 +62,19 @@ EXAMPLE: .\install.ps1 -RemoveMMA <YOUR_WORKSPACE_ID> -OnboardingScript ".\Windo
 Migration steps: 
 
 1. Create a new collection with membership rules to include machines to be migrated. 
+
 2. [Create an application](/mem/configmgr/apps/deploy-use/create-applications) to perform the following tasks: 
    1. Remove the MMA workspace configuration for Microsoft Defender for Endpoint. See [Remove a workspace using PowerShell](/azure/azure-monitor/agents/agent-manage).
    2. Uninstall SCEP.
    3. Install the [prerequisites](configure-server-endpoints.md#prerequisites) where applicable.
-   4. Install Microsoft Defender for Endpoint(https://review.docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/configure-server-endpoints?view=o365-worldwide&branch=onboarding-revamp)
+   4. Install Microsoft Defender for Endpoint (see [Configure server endpoints](configure-server-endpoints.md)).
    5. Apply the onboarding package. 
 
-TIP: you can use the [installer script](server-migration.md#installer script) as part of your application to automate the above steps
+   > [!TIP]
+> You can use the [installer script](server-migration.md#installer-script) as part of your application to automate the above steps.
 
 3. Deploy the application to the new collection.
+
 4. Create and/or assign (existing) endpoint protection policies to the collection.
 
 ### If you are currently using MECM to manage your servers, are running a non-Microsoft antivirus solution and MMA-based sensor and want to upgrade to the new Microsoft Defender for Endpoint BEFORE the 2111 release of MECM.
@@ -75,16 +82,22 @@ TIP: you can use the [installer script](server-migration.md#installer script) as
 Migration steps:
 
 1. Create a new collection with membership rules to include machines to be migrated. 
+
 2. Ensure third-party antivirus management no longer pushes antivirus to these machines.*
+
 3. Author your policies in the Endpoint Protection node of MECM and target to the newly created collection.*
+
 4. Create an application to perform the following tasks:
    1. Remove the MMA workspace configuration for Microsoft Defender for Endpoint. See [Remove a workspace using PowerShell](/azure/azure-monitor/agents/agent-manage). 
    2. Install the [prerequisites](configure-server-endpoints.md#prerequisites) where applicable.
    3. Install the Microsoft Defender for Endpoint for Windows Server 2012 R2 and 2016 package and **enable passive mode**. See [Install Microsoft Defender Antivirus using command line](configure-server-endpoints.md#install-microsoft-defender-antivirus-using-command-line).
    4. Apply the onboarding package. 
+
 5. Apply updates.
+
 6. Remove your non-Microsoft antivirus software by either using the non-Microsoft antivirus console or by using Microsoft Endpoint Configuration Manager as
 appropriate. Make sure to remove passive mode configuration.*
+
 7. Apply the onboarding package.
 
 TIP: you can use the [installer script](server-migration.md#installer script) as part of your application to automate the above steps. To enable passive mode, apply the -Passive flag. EXAMPLE: .\install.ps1 -RemoveMMA <YOUR_WORKSPACE_ID> -OnboardingScript ".\WindowsDefenderATPOnboardingScript.cmd" -Passive
@@ -100,23 +113,34 @@ If you want to move **from tenant attach to Defender for Endpoint attach**, make
 ### You have a server that has been onboarded using the MMA-based Microsoft Defender for Endpoint. It has SCEP installed (Windows Server 2012 R2) or Microsoft Defender Antivirus (Windows Server 2016). This machine is **not** managed through Azure Defender, Microsoft Endpoint Manager or Microsoft Endpoint Configuration Manager.
 
 1. Remove the MMA workspace configuration for Microsoft Defender for Endpoint. See [Remove a workspace using PowerShell](/azure/azure-monitor/agents/agent-manage).
+
 2. Uninstall System Center Endpoint Protection (Windows Server 2012 R2).
+
 3. Install the [prerequisites](configure-server-endpoints.md#prerequisites) where applicable. 
+
 4. Install Microsoft Defender for Endpoint(https://review.docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/configure-server-endpoints?view=o365-worldwide&branch=onboarding-revamp).
+
 5. Apply the onboarding package.
+
 6. Create and apply policies using Group Policy, PowerShell, or Microsoft Endpoint Manager for Defender Security Management.
 
-TIP: you can use the installer script to automate the above steps
+> [!TIP]
+> You can use the installer script to automate the above steps.
 
 ### You have a server on which you want to install Microsoft Defender for Endpoint. It has a non-Microsoft endpoint protection or endpoint detection and response solution installed. You do not intend to use Microsoft Endpoint Configuration Manager or Azure Defender. You use your own deployment mechanism. 
 
 1. Install the prerequisites and fully update the machine including Microsoft Defender Antivirus (Windows Server 2016)
+
 2. Install the Microsoft Defender for Endpoint for Windows Server 2012 R2 & 2016 package and **enable passive mode**. See [Install Microsoft Defender Antivirus using command line](configure-server-endpoints.md#install-microsoft-defender-antivirus-using-command-line).
+
 3. Apply the onboarding package.
+
 4. Remove the non-Microsoft endpoint protection or endpoint detection and response solution, and remove passive mode.*
+
 5. Create and apply policies using Group Policy, PowerShell, or Microsoft Endpoint Manager for Defender Security Management.
 
-TIP: you can use the [installer script](server-migration.md#installer script) to help automate steps 1 through 4. To enable passive mode, apply the -Passive flag. EXAMPLE: .\install.ps1 -OnboardingScript ".\WindowsDefenderATPOnboardingScript.cmd" -Passive
+> [!TIP]
+> You can use the [installer script](server-migration.md#installer-script) to help automate steps 1 through 4. To enable passive mode, apply the -Passive flag. EXAMPLE: `.\install.ps1 -OnboardingScript ".\WindowsDefenderATPOnboardingScript.cmd" -Passive`
 
 *This step only applies if you intend to replace your non-Microsoft antivirus solution. See [Better together: Microsoft Defender Antivirus and Microsoft Defender for Endpoint](why-use-microsoft-defender-antivirus.md). 
 
