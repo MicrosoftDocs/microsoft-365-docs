@@ -30,7 +30,7 @@ ms.technology: m365d
 
 - Microsoft 365 Defender
 
-Microsoft 365 Defender is an XDR solution that automatically collects, correlates and analyzes signal, threat and alert data from across your Microsoft 365 environment, including endpoint, email, applications and identities. It leverages extensive AI and automation to automatically stop attacks and remediate affected assets to a safe state. The following articles step you through the process of setting up a trial environment so you can evaluate the features and capabilities of Microsoft 365 Defender. 
+Microsoft 365 Defender is an extended detection and response (XDR) solution that automatically collects, correlates and analyzes signal, threat and alert data from across your Microsoft 365 environment, including endpoint, email, applications and identities. It leverages extensive AI and automation to automatically stop attacks and remediate affected assets to a safe state. The following articles step you through the process of setting up a trial environment so you can evaluate the features and capabilities of Microsoft 365 Defender. 
 
 As you walk through these articles, the steps will illustrate how to enable each component, configure settings and being monitoring with a pilot group. When you’re ready, you can finish by promotion your evaluation environment directly into production. 
 
@@ -55,7 +55,7 @@ In the illustration:
 
 ### Microsoft 365 Defender components
 
-Microsoft 365 Defender is made up of these security technologies, operating in tandem:
+Microsoft 365 Defender is made up of these security technologies, operating in tandem. You don’t need all of these components to benefit from the capabilities of XDR and Microsoft 365 Defender. You will realize gains and efficiencies through using one or two as well. 
 
 |Component  |Description  |Reference material  |
 |---------|---------|---------|
