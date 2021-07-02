@@ -49,9 +49,9 @@ If you are unable to sign in to the admin center, you can use the [service statu
 
    ![View of current issues in service health](../media/service-health-all-services.png)
 
-The **All services** tab (the default view) shows all services, their current health state, and any active incidents or advisories. An icon and status in the **Health** column indicates the state of each service.
+The **All services** tab (the default view) shows all services, their current health state, and any active incidents or advisories. An icon and status in the **Health** column indicate the state of each service.
 
-If there is an active incidnet or advisory for a service they will be listed directly under the service name in a nested table. You can collapse the nested table to hide the incidents or advisories in this view by clicking on the cheveron icon to the left of the service name.   
+If there is an active incident or advisory for a service they will be listed directly under the service name in a nested table. You can collapse the nested table to hide the incidents or advisories in this view by clicking on the chevron icon to the left of the service name.   
 
 To filter your view to only show all the active incidents, select the **Incidents** tab at the top of the page. Selecting the **Advisories** tab will only show all the active  advisories posted.
 
