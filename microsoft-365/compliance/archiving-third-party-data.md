@@ -102,7 +102,7 @@ The table in this section lists the third-party data connectors available in par
 
 Before you can archive third-party data in Microsoft 365, you have to work with TeleMessage to set up their archiving service for your organization. For more information, click the link in the **Third-party data** column to go the step-by-step instructions for creating a connector for that data type.
 
-TeleMessage data connectors are also available in GCC environments in the Microsoft 365 US Government cloud. For more information, see the Data connectors in the US Government cloud section in this article.
+TeleMessage data connectors are also available in GCC environments in the Microsoft 365 US Government cloud. For more information, see the [Data connectors in the US Government cloud](#data-connectors-in-the-us-government-cloud) section in this article.
 
 |Third-party data  |Litigation hold|eDiscovery  |Retention settings  |Records management  |Communication compliance  |Insider risk management  |
 |:---------|:---------|:---------|:---------|:---------|:---------|:---------|
