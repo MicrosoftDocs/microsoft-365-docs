@@ -19,7 +19,7 @@ description: Learn how to manage contracts using a Microsoft 365 solution of Sha
 
 # Manage contracts using a Microsoft 365 solution
 
-This article describes how to create a contracts management solution for your organization by using SharePoint Syntex and components of Microsoft 365. It provides you with a framework to help you plan and create a solution that fits your unique business needs. Even if this solution doesn't suit your business needs as a whole, parts of it can be adopted in your planning to create a custom contract management solution.
+This article describes how to create a contracts management solution for your organization by using SharePoint Syntex and components of Microsoft 365. It provides you with a framework to help you plan and create a solution that fits your unique business needs. Even though this solution talks about contract management, you can adapt it to create other document management solutions, such as for statements of work or invoices.
 
 *This content set documents a Microsoft 365 solution developed by Thomas Molbach with the Modern Work Solution Strategy Team at Microsoft.*
 
@@ -63,7 +63,7 @@ This contract management solution guidance includes four components of Microsoft
 
 3. In Microsoft Teams, all stakeholders are members of a secure Teams channel in which all contracts in the document library are visible for approval or rejection. By using Teams functionality, all stakeholders are notified when new contracts need to be reviewed.
  
-4. By using Power Automate, contracts are moved through the approval process in the Teams channel. When a member approves a contract, the contract status is changed to approve, all members are notified through a Teams post, and a line item is created to show that the contract is ready for payout. This process can be extended to write directly to a third-party financial application for payment.
+4. By using Power Automate, contracts are moved through the approval process in the Teams channel. When a member approves a contract, the contract status is changed to approved, all members are notified through a Teams post, and a line item is created to show that the contract is ready for payout. This process can be extended to write directly to a third-party financial application for payment.
 
 5.	When a member rejects a contract, the status is changed to rejected, and all members are notified through a Teams post.
 
