@@ -21,9 +21,9 @@ description: "Managed Service Providers (MSPs) can use Microsoft 365 Lighthouse 
 
 Microsoft 365 Lighthouse is an admin portal that helps Managed Service Providers (MSPs) secure and manage devices, data, and users at scale for small- and medium-sized business (SMB) customers.  
 
-To use Microsoft 365 Lighthouse, MSPs must be enrolled in the Cloud Solution Provider (CSP) program as an Indirect Reseller or Direct Bill partner.  
+MSPs must be enrolled in the Cloud Solution Provider (CSP) program as an Indirect Reseller or Direct Bill partner to use Microsoft 365 Lighthouse.  
 
-In addition, each MSP customer tenant must implement the following requirements: 
+In addition, each MSP customer tenant must qualify for Microsoft 365 Lighthouse by meeting the following requirements: 
  
 - Delegated Admin Privileges (DAP) for the MSP 
 
@@ -33,7 +33,7 @@ In addition, each MSP customer tenant must implement the following requirements:
 
 ## Requirements for enabling device management   
 
-To view customer tenant devices in Microsoft 365 Lighthouse device management pages, an MSP must:    
+To view customer tenant devices on the device management pages, a MSP must:    
 
 - Enroll all customer devices in Microsoft Endpoint Manager (MEM). For more information, see [Enroll devices in Microsoft Intune](/mem/intune/enrollment/).
 
@@ -45,7 +45,7 @@ For user management pages including Risky users, Multifactor authenticatio
 
 ## Requirements for enabling threat management 
 
-For threat management pages, If you’re running Microsoft Defender Antivirus threat protection, you must enroll all customer tenant devices in Microsoft Endpoint Manager (MEM) and protect them by running Microsoft Defender Antivirus.  
+To view customer tenant devices and threats on the threat management pages, you must enroll all customer tenant devices in Microsoft Endpoint Manager (MEM) and protect them by running Microsoft Defender Antivirus.  
 
 For more information, see [Enroll devices in Microsoft Intune](/mem/intune/enrollment/).  
 
