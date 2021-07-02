@@ -19,7 +19,7 @@ description: "Integrate Microsoft Teams classes with Blackboard"
 
 Teamwork is at the core of every modern organization. By fostering collaboration, it’s a defining characteristic of every successful institution. You can enhance all the capabilities and features of Blackboard Learn by pairing them up with Microsoft Teams classes.
 
-Your classes might include real-time conversations, video meetings, or asynchronous interactions. You can add file sharing and co-creation experiences for your students, all in one place. Microsoft Teams classes with Learn Ultra redefines the dynamics of teaching and what effective learning means.
+Your classes might include real-time conversations, video meetings, or asynchronous interactions. You can add file sharing and cocreation experiences for your students, all in one place. Microsoft Teams classes with Learn Ultra redefine the dynamics of teaching and what effective learning means.
 
 > [!IMPORTANT]
 > Ensure that you have successfully set up the Institution Email field in your Student Information System (SIS) `help.blackboard.com/Learn/Administrator/SaaS/Integrations/Student\_Information\_System/SIS\_Planning`
@@ -34,7 +34,7 @@ As part of the evolution with Cloud provider integrations, Blackboard has create
 
 ### What does the Institution Email mean and what does it support?
 
-The **Institution Email** field allows customized field mappings between a client’s externally supported data sources and Blackboard Learn Ultra. In the case of data sources that are cloud providers, such as Microsoft, the User Principle Name (UPN) is a primary unique identifier for each user consisting of a UPN prefix (the user’s account name) and a UPN suffix (a DNS domain name) joined together with an @ symbol. This creates a unique email address for each specific user within the Microsoft Azure Active Directory.
+The **Institution Email** field allows customized field mappings between a client’s externally supported data sources and Blackboard Learn Ultra. If data sources are cloud providers, such as Microsoft, the User Principle Name (UPN) is a primary unique identifier for each user consisting of a UPN prefix (the user’s account name) and a UPN suffix (a DNS domain name) joined together with an @ symbol. This creates a unique email address for each specific user within the Microsoft Azure Active Directory.
 
 To ensure data is accurate and enrollments or memberships between Blackboard Learn Ultra and Microsoft Teams classes are correctly achieved, a user’s email address must match between both systems. In Blackboard Learn, users can change or override their existing email address in the user interface, which could result in sync errors occurring and the user not being
  correctly added to a Class Team. The **Institution Email** field mapping ensures this level of security and validation checking can be correctly managed, regardless if users have changed their email within Blackboard or not.
@@ -58,7 +58,7 @@ The Microsoft Teams classes integration is available for **Ultra Course View cou
 
 - Enable LTI for use in courses.
 
-  a. Go to the **Admininstrator Panel** > **LTI Tool Providers** > **Manage Global Properties**.
+  a. Go to the **Administrator Panel** > **LTI Tool Providers** > **Manage Global Properties**.
 
   b. Select **LTI Enabled in Courses**, and optionally, select **Enabled in Organizations**. 
 
@@ -140,7 +140,7 @@ The Microsoft Teams classes integration is available for **Ultra Course View cou
 
 ## Configure and Approve Microsoft Teams classes Integration
 
-To successfully integrate your Blackboard Learn instance with Microsoft Teams classes, you'll need to make sure the Blackboard application is approved for access within your Microsoft Azure tenant. This is a process that will need to be completed by your institution’s M365 Global Admin.
+To successfully integrate your Blackboard Learn instance with Microsoft Teams classes, you'll need to make sure the Blackboard application is approved for access within your Microsoft Azure tenant. This is a process that will need to be completed by your institution’s Microsoft 365 Global Admin.
 
 This process can be done either before or after you have configured the LTI applications in your Blackboard Learn Instance.
 
@@ -163,8 +163,8 @@ If you choose to approve the Blackboard Teams Classes Azure app before configuri
 
 4. Choose one of the following options:
  
-    a. If the app has pre-consent, it will show a small checkmark. If the checkmark appears select **Submit**.
+   - If the app has pre-consent, it will show a small checkmark. If the checkmark appears, select **Submit**.
 
-    b. If consent hasn’t been approved, follow the steps described to generate the URL for consent and send it to the M365 Global Admin for approval.
+   - If consent hasn’t been approved, follow the steps described to generate the URL for consent and send it to the Microsoft 365 Global Admin for approval.
 
 5. Once you've confirmation of approval, select **Retry** to confirm, and then select **Submit**.
