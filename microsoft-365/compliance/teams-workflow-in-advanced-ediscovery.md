@@ -44,10 +44,43 @@ There are four categories of Teams content that you can collect and process usin
 
 ## Create a case for Teams content
 
+During case creation, users have the option to create a large case or a normal case. To collect Teams messages as transcript HTML items (recommended), select Large Case during case creation. If you select normal case, Teams and Yammer messages will be collected individually and threaded as a PDF.  
+
+
 ## Add Teams data sources and preserve Teams content  
 
 ## Collect Teams content 
 
 ## Review Teams content 
+
+
+
+Understand grouping, threading, and extraction behavior for Teams messages to optimize review of Teams content.  
+
+ 
+
+### Grouping 
+
+After Teams content is collected into a review set, Team chat messages are grouped by family or by conversation.  
+
+Transcript  
+
+
+| Teams content type|Group by family  |Group by conversation  |
+|:---------|:---------|:---------|
+|Teams 1:1 and group chats   | A transcript and its attachments/extracted items will share the same FamilyId        |ll transcripts and their family items within the same conversation/thread would share the same ConversationId. For Teams 1-1 chat, transcripts of different time windows, but same conversation thread would be grouped together.           |
+|Teams channel and private channels    | A transcript and its attachments/extracted items will share the same FamilyId. Each post and all its replies would be its own transcript.        |Each post has its unique conversationId. If there are recent replies for a post that weren’t collected initially, these replies will continue to be grouped via ConversationId with the originally collect post.           |
+||||
+
+
+### Conversation threading
+
+Transcript HTML Threading 
+
+- **Teams 1:1 chats and group chats**. All messages that were posted within a 24-hour time window are grouped in a single transcript.  
+
+- **Teams channel messages and private channel messages**. Each post and all its corresponding replies are grouped in a single transcript.
+
+
 
 ## Export Teams content 
