@@ -59,7 +59,7 @@ Tamper protection doesn't prevent you from viewing your security settings. And, 
 
 | To perform this task... | See this section... |
 |:---|:---|
-| Manage tamper protection across your tenant <p>Use the Microsoft 365 Defender portal to turn tamper protection on or off | [Manage tamper protection for your organization using the Microsoft 365 Defender](#manage-tamper-protection-for-your-organization-using-the-microsoft-defender-security-center) |
+| Manage tamper protection across your tenant <p>Use the Microsoft 365 Defender portal to turn tamper protection on or off | [Manage tamper protection for your organization using the Microsoft 365 Defender](#manage-tamper-protection-for-your-organization-using-the-microsoft-365-defender-portals) |
 | Fine-tune tamper protection settings in your organization <p>Use Intune (Microsoft Endpoint Manager) to turn tamper protection on or off. You can configure tamper protection for some or all users with this method. | [Manage tamper protection for your organization using Intune](#manage-tamper-protection-for-your-organization-using-intune) |
 | Turn tamper protection on (or off) for your organization with Configuration Manager | [Manage tamper protection for your organization using tenant attach with Configuration Manager, version 2006](#manage-tamper-protection-for-your-organization-with-configuration-manager-version-2006) |
 | Turn tamper protection on (or off) for an individual device | [Manage tamper protection on an individual device](#manage-tamper-protection-on-an-individual-device) |

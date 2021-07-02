@@ -41,7 +41,7 @@ This migration phase includes the following steps:
 
 1. [Get and deploy updates across your organization's devices](#get-and-deploy-updates-across-your-organizations-devices)
 2. [Get Defender for Endpoint](#get-microsoft-defender-for-endpoint).
-3. [Grant access to the Microsoft 365 Defender portal](#grant-access-to-the-microsoft-defender-security-center).
+3. [Grant access to the Microsoft 365 Defender portal](#grant-access-to-the-microsoft-365-defender-portal).
 4. [Configure device proxy and internet connectivity settings](#configure-device-proxy-and-internet-connectivity-settings).
 
 ## Get and deploy updates across your organization's devices
