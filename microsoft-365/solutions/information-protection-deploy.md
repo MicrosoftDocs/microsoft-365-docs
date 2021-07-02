@@ -30,6 +30,11 @@ Examples of the types of data in Microsoft 365 include chat sessions in Microsof
 
 Additional information is also provided on the use of Microsoft 365 identity, device, and threat protection controls for your data privacy needs.
 
+Watch this video for an overview of the deployment process.
+<br>
+<br>
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4NHCQ]
+
 These Microsoft 365 capabilities and features help you meet the criteria for protecting information.
 
 | Capability or feature | Description | Licensing |
