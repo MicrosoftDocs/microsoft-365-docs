@@ -55,7 +55,7 @@ If there is an active incident or advisory for a service they will be listed dir
 
 To filter your view to only show all the active incidents, select the **Incidents** tab at the top of the page. Selecting the **Advisories** tab will only show all the active advisories posted.
 
-The **History** tab shows all incidents and advisories that have been resolved with in the last 7 or 30 days.
+The **History** tab shows all incidents and advisories that have been resolved within the last seven or 30 days.
 
 If you're experiencing an issue with a Microsoft 365 service and you don’t see it listed on the **Service health** page, tell us about it by selecting **Report an issue**, and completing the short form. We’ll look at related data and reports from other organizations to see how widespread the issue is, and if it originated with our service. If it did, we’ll add it as a new incident or advisory on the **Service health** page, where you can track its resolution. The **Reported Issues** page will show all issues your tenant has reported from this form and the status.  
 
