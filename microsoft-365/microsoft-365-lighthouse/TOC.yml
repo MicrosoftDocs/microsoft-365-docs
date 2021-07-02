@@ -6,8 +6,8 @@
   items: 
     - name: Sign up for Microsoft 365 Lighthouse
       href: sign-up-m365-lighthouse.md
-    - name: Enable features for customers
-      href: 
+    - name: Requirements for Microsoft 365 Lighthouse
+      href: requirements-for-m365-lighthouse.md
 - name: Secure Microsoft 365 Lighthouse
   items: 
     - name: Configure portal security
