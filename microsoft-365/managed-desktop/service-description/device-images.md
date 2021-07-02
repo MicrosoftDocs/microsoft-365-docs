@@ -20,7 +20,7 @@ audience: Admin
 Whether you order [new devices](#new-devices) or reuse [existing](#existing-devices) ones, you have several options to ensure the image on the device meets our [device requirements](device-requirements.md#check-hardware-requirements).
 
 ## New devices
-When you order a new device from an [approved manufacturer](device-requirements.md#minimum-requirements), follow these steps to make sure they ship devices with the right Microsoft Managed Desktop image and software configuration.
+When you order a new device from an [approved manufacturer](device-requirements.md#minimum-requirements), follow these steps to make sure they ship devices with the right Microsoft Managed Desktop image and software configuration. Anytime you plan to enroll a particular device model in the service for the first time, you should test an example to ensure it'll deliver the user experience you expect. For more information, see [Validate new devices](/microsoft-365/managed-desktop/get-started/validate-device).
 
 ### Dell
 Work directly with the Dell sales representative, who will make sure that the image approved by Microsoft Managed Desktop is applied to devices for your order. For more questions on Dell devices, the image, and the ordering process, contact MMD_at_dell@dell.com.
