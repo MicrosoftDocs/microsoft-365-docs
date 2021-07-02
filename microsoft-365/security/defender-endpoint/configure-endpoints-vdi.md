@@ -57,7 +57,7 @@ The following steps will guide you through onboarding VDI devices and will highl
 
 ### For Windows 10 or Windows Server 2019
 
-1.  Open the VDI configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from [Microsoft 365 Defender](https://securitycenter.windows.com/):
+1.  Open the VDI configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from [Microsoft 365 Defender](https://security.microsoft.com/):
 
     1.  In the navigation pane, select **Settings** > **Endpoints** > **Onboarding** (under **Device Management**).
 

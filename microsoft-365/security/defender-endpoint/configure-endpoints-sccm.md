@@ -66,7 +66,7 @@ Check out the [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/publ
 
 
 
-1. Open the Configuration Manager configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from [Microsoft 365 Defender](https://securitycenter.windows.com/):
+1. Open the Configuration Manager configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from [Microsoft 365 Defender](https://security.microsoft.com):
 
     1. In the navigation pane, select **Settings** > **Endpoints** > **Onboarding** (under **Device Management**).
     
@@ -175,7 +175,7 @@ If you use Microsoft Endpoint Manager current branch, see [Create an offboarding
 
 ### Offboard devices using System Center 2012 R2 Configuration Manager
 
-1. Get the offboarding package from [Microsoft 365 Defender](https://securitycenter.windows.com/):
+1. Get the offboarding package from [Microsoft 365 Defender](https://security.microsoft.com/):
 
     1. In the navigation pane, select **Settings** > **Endpoints** > **Offboarding** (under **Device Management**).
 

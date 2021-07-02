@@ -33,7 +33,7 @@ Depending on the Microsoft security products that you use, some advanced feature
 
 ## Enable advanced features
 
-1. In the navigation pane, select **Preferences setup** > **Advanced features**.
+1. In the navigation pane, select **Settings** >  **Endpoints** > **Advanced features**.
 2. Select the advanced feature you want to configure and toggle the setting between **On** and **Off**.
 3. Click **Save preferences**.
 
@@ -79,7 +79,7 @@ Endpoint detection and response (EDR) in block mode provides protection from mal
 For tenants created on or after Windows 10, version 1809, the automated investigation and remediation capability is configured by default to resolve alerts where the automated analysis result status is "No threats found" or "Remediated".  If you don't want to have alerts auto-resolved, you'll need to manually turn off the feature.
 
 > [!TIP]
-> For tenants created prior to that version, you'll need to manually turn this feature on from the [Advanced features](https://securitycenter.windows.com/preferences2/integration) page.
+> For tenants created prior to that version, you'll need to manually turn this feature on from the [Advanced features](https://security.microsoft.com//preferences2/integration) page.
 
 > [!NOTE]
 >
