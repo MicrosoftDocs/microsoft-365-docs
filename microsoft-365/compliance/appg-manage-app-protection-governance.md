@@ -22,7 +22,7 @@ description: "Implement Microsoft app governance capabilities to govern your app
 
 Cyberattacks have become increasingly sophisticated in the ways they exploit the apps you have deployed in your on-premises and cloud infrastructures to establish a starting point for privilege escalation, lateral movement, and exfiltration of your data. To understand the potential risks and stop these types of attacks, you need to gain clear visibility into your organization’s app compliance posture to quickly identify when an app exhibits anomalous behaviors and to respond when these behaviors present risks to your environment, data, and users.
 
-The Microsoft app governance add-on feature to Microsoft Cloud App Security is a security and compliance solution for business productivity and line of business apps built by third-party vendors and published for the Microsoft 365 application platform. App governance delivers full visibility, oversight, and governance into how these publishers and apps access, use, and share your sensitive data stored in Microsoft 365 through automated app-specific services and open Internet authentication protocols.
+The app governance add-on feature to Microsoft Cloud App Security is a security and compliance solution for business productivity and line of business apps built by third-party vendors and published for the Microsoft 365 application platform. App governance delivers full visibility, oversight, and governance into how these publishers and apps access, use, and share your sensitive data stored in Microsoft 365 through automated app-specific services and open Internet authentication protocols.
 
 <!--
 The scale of ongoing cybersecurity incidents affecting large enterprises and smaller businesses highlights the dangers of supply chain attacks and the need to strengthen the security and compliance posture of every organization. Accelerated cloud adoption with Microsoft 365 and its rich application ecosystem are constantly growing. Attackers are gaining organizational footholds through applications because:
@@ -45,66 +45,6 @@ Unlike other application governance products in the marketplace, MAPG is a platf
 
 Microsoft allows developers to build cloud applications using Azure Active Directory (Azure AD), Microsoft’s cloud identity platform, and other resources and access to tenant data through the Microsoft Graph. Because of MAPG's visibility, insights, and control capabilities, app developers have the incentive to comply with publisher verification, self-attestation, and Microsoft certification, and can build high-quality productivity apps that are secure and compliant.
 -->
-
-## Licensing for app governance
-
-Before you get started with the app governance feature for Microsoft Cloud App Security, you should confirm your [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) and any add-ons. To access and use app governance, your organization must have one of the following subscriptions or add-ons:
-
-- Microsoft 365 A5 Compliance for faculty
-- Microsoft 365 A5 Compliance for students
-- Microsoft 365 A5 for faculty
-- Microsoft 365 A5 for students
-- Microsoft 365 A5 Information Protection and Governance for faculty
-- Microsoft 365 A5 Information Protection and Governance for students
-- Microsoft 365 A5 Security for faculty
-- Microsoft 365 A5 Security for students
-- Microsoft 365 A5 student use benefits
-- Microsoft 365 A5 with Calling Minutes for Faculty
-- Microsoft 365 A5 with Calling Minutes for Students
-- Microsoft 365 A5 without Audio Conferencing for faculty
-- Microsoft 365 A5 without Audio Conferencing for students
-- Microsoft 365 A5 without Audio Conferencing for students use benefit
-- Microsoft 365 E5
-- Microsoft 365 E5 Compliance
-- Microsoft 365 E5 Developer (without Windows and Audio Conferencing)
-- Microsoft 365 E5 Information Protection and Governance
-- Microsoft 365 E5 Security
-- Microsoft 365 E5 with Calling Minutes
-- Microsoft 365 E5 without Audio Conferencing
-- Microsoft Cloud App Security
-
-## Administrator roles
-
-One of the following administrator roles are required to see app governance pages or manage policies and settings:
-
-- Application Administrator
-- Cloud Application Administrator
-- Company Administrator
-- Compliance Administrator
-- Compliance Data Administrator
-- Compliance Reader (read-only)
-- Global Reader
-- Security Administrator
-- Security Operator
-- Security Reader (read-only)
-
-Here are the capabilities for each role.
-
-| Role | Read the dashboard | Read all apps |Read policies | Create, update, or delete policies | Read alerts | Update alerts | Read settings | Update settings | Read Remediation | Update Remediation |
-|:-------|:-----|:-------|:-------|:-------|:-------|:-------|:-------|:-------|:-------|:-------|
-| Application Administrator | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) |
-| Cloud Application Administrator | ![Check mark](..\media\checkmark.png) | | | | | | | | | |
-| Company Administrator | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) |
-| Compliance Administrator | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) |  | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | |
-| Compliance Data Administrator | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) |  | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | |
-| Compliance Reader | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) |  | ![Check mark](..\media\checkmark.png) |  | ![Check mark](..\media\checkmark.png) |  | | |
-| Global Reader  | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) |  | ![Check mark](..\media\checkmark.png) |  | ![Check mark](..\media\checkmark.png) |  | | |
-| Security Administrator | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) |  | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | |
-| Security Operator | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | |
-| Security Reader  | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) |  | ![Check mark](..\media\checkmark.png) |  | ![Check mark](..\media\checkmark.png) |  | ![Check mark](..\media\checkmark.png) | |
-|||||||||| | |
-
-For additional information about each role, see [Administrator role permissions](/azure/active-directory/roles/permissions-reference).
 
 ## A first glimpse at app governance
 

@@ -483,40 +483,42 @@
           href: record-versioning.md
         - name: Resources for regulatory requirements
           href: retention-regulatory-requirements.md
-- name: Manage app protection and governance
+- name: Manage app governance
   items: 
     - name: Protect and govern your apps
-      href: manage-app-protection-governance.md
+      href: appg-app-protection-governance.md
+    - name: Get Started with app governance
+      href: appg-get-started.md 
     - name: Get visibility and insights
       items:
         - name: Learn about visibility and insights
-          href: mapg-visibility-insights-overview.md
+          href: appg-visibility-insights-overview.md
         - name: Get started
-          href: mapg-visibility-insights-get-started.md
+          href: appg-visibility-insights-get-started.md
         - name: View your apps
-          href: mapg-visibility-insights-view-apps.md
+          href: appg-visibility-insights-view-apps.md
         - name: Determine compliance posture
-          href: mapg-visibility-insights-compliance-posture.md
+          href: appg-visibility-insights-compliance-posture.md
     - name: Implement app policies
       items:
         - name: Learn about app policies
-          href: mapg-app-policies-overview.md
+          href: appg-app-policies-overview.md
         - name: Get started
-          href: mapg-app-policies-get-started.md
+          href: appg-app-policies-get-started.md
         - name: Create app policies
-          href: mapg-app-policies-create.md
+          href: appg-app-policies-create.md
         - name: Manage app policies
-          href: mapg-app-policies-manage.md
+          href: appg-app-policies-manage.md
     - name: Detect and remediate app threats
       items:
         - name: Learn about detection and remediation
-          href: mapg-detect-remediate-overview.md
+          href: appg-detect-remediate-overview.md
         - name: Get started
-          href: mapg-detect-remediate-get-started.md
+          href: appg-detect-remediate-get-started.md
         - name: Investigate anomaly detection alerts
-          href: mapg-anomaly-detection-alerts.md
+          href: appg-anomaly-detection-alerts.md
         - name: Remediate app threats
-          href: mapg-detect-remediate-detect-threats.md
+          href: appg-detect-remediate-detect-threats.md
 
 - name: Manage eDiscovery
   items:
