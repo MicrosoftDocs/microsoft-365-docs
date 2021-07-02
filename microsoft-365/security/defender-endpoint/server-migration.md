@@ -118,7 +118,7 @@ If you want to move **from tenant attach to Defender for Endpoint attach**, make
 
 3. Install the [prerequisites](configure-server-endpoints.md#prerequisites) where applicable. 
 
-4. Install Microsoft Defender for Endpoint(https://review.docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/configure-server-endpoints?view=o365-worldwide&branch=onboarding-revamp).
+4. Install Microsoft Defender for Endpoint (see [Configure server endpoints](configure-server-endpoints.md).)
 
 5. Apply the onboarding package.
 
