@@ -57,7 +57,12 @@ The Microsoft Teams classes integration is available for **Ultra Course View cou
 - Have Blackboard Learn SaaS with Ultra Base Navigation enabled
 
 - Enable LTI for use in courses.
-  1. Go to the **Admininstrator Panel** > **LTI Tool Providers** > **Manage Global Properties**. 2. Select **LTI Enabled in Courses**, and optionally, select **Enabled in Organizations**. 3. 3. Select **Submit**.
+
+  a. Go to the **Admininstrator Panel** > **LTI Tool Providers** > **Manage Global Properties**.
+
+  b. Select **LTI Enabled in Courses**, and optionally, select **Enabled in Organizations**. 
+
+  c. Select **Submit**.
 
 - Must have LTI configured
 
@@ -146,20 +151,20 @@ If you choose to approve the Blackboard Teams Classes Azure app before configuri
 `https://login.microsoftonline.com/{tenant}/adminconsent?client\_id=2d94989f-457a-47c1-a637-e75acdb11568`
 
 > [!NOTE]
-> You’ll replace **{Tenant}** with your specific institutional Microsoft Azure tenant ID. (Use “Learn more” class here and add the text:**More on How to find your tenant.**
-
-### *Remove the period at the end of tenant once you link it*
+> You’ll replace **{Tenant}** with your specific institutional Microsoft Azure tenant ID. (Use **Learn more** class here and add the text **More on How to find your tenant.** Remove the period at the end of tenant once you link it.
 
 ### After Configuring the LTI Applications
 
-1.  On the *Administrator Panel*, navigate to *Tools and Utilities* and select *Microsoft Teams Integration Admin.*
+1. On the **Administrator Panel**, navigate to **Tools and Utilities** and select **Microsoft Teams Integration Admin**.
 
-2.  Select *Enable Microsoft Teams.*
+2. Select **Enable Microsoft Teams**.
 
-3.  Add your *Microsoft Tenant ID* into the available text field.
+3. Add your **Microsoft Tenant ID** into the available text field.
 
-4.  If the app has pre-consent, it will show a small checkmark. If the checkmark appears select *Submit.*
+4. Choose one of the following options:
+ 
+    a. If the app has pre-consent, it will show a small checkmark. If the checkmark appears select **Submit**.
 
-5.  If consent hasn’t been approved, follow the steps described to Generate the URL for consent and send it to the M365 Global Admin for approval.
+    b. If consent hasn’t been approved, follow the steps described to generate the URL for consent and send it to the M365 Global Admin for approval.
 
-6.  Once you have confirmation of approval, select the *Retry* button to confirm. Once confirmed, select *Submit.*
+5. Once you've confirmation of approval, select **Retry** to confirm, and then select **Submit**.
