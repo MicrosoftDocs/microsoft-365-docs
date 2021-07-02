@@ -45,7 +45,7 @@ To facilitate upgrades when Microsoft Endpoint Manager or Azure Defender* are no
 4. Install Microsoft Defender for Endpoint
 5. Apply the onboarding script **for use with Group Policy** downloaded from Microsoft Defender Security Center(https://securitycenter.microsoft.com).
 
-To use the script, download it to an installation directory where you have also placed the installation and onboarding packages(https://review.docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/configure-server-endpoints?view=o365-worldwide&branch=onboarding-revamp).
+To use the script, download it to an installation directory where you have also placed the installation and onboarding packages (see [Configure server endpoints](configure-server-endpoints.md).
 
 EXAMPLE: .\install.ps1 -RemoveMMA <YOUR_WORKSPACE_ID> -OnboardingScript ".\WindowsDefenderATPOnboardingScript.cmd"
 
@@ -58,7 +58,7 @@ EXAMPLE: .\install.ps1 -RemoveMMA <YOUR_WORKSPACE_ID> -OnboardingScript ".\Windo
 Migration steps: 
 
 1. Create a new collection with membership rules to include machines to be migrated. 
-2. Create an application(https://docs.microsoft.com/en-us/mem/configmgr/apps/deploy-use/create-applications) to perform the following tasks: 
+2. [Create an application](/mem/configmgr/apps/deploy-use/create-applications) to perform the following tasks: 
    1. Remove the MMA workspace configuration for Microsoft Defender for Endpoint. See [Remove a workspace using PowerShell](/azure/azure-monitor/agents/agent-manage).
    2. Uninstall SCEP.
    3. Install the [prerequisites](configure-server-endpoints.md#prerequisites) where applicable.
