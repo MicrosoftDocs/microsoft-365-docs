@@ -43,11 +43,16 @@ For more information on preview features, see [Preview features](preview.md).
 
 ## June 2021
 
+- [Delta export software vulnerabilities assessment](get-assessment-methods-properties.md#31-methods) API <br> An addition to the [Export assessments of vulnerabilities and secure configurations](get-assessment-methods-properties.md) API collection. <br> Unlike the full software vulnerabilities assessment (JSON response) - which is used to obtain an entire snapshot of the software vulnerabilities assessment of your organization by device - the delta export API call is used to fetch only the changes that have happened between a selected date and the current date (the “delta” API call). Instead of getting a full export with a large amount of data every time, you’ll only get specific information on new, fixed, and updated vulnerabilities. Delta export API call can also be used to calculate different KPIs such as “how many vulnerabilities were fixed" or “how many new vulnerabilities were added to an organization.”
+
+- [Export assessments of vulnerabilities and secure configurations](get-assessment-methods-properties.md) API <br> Adds a collection of APIs that pull threat and vulnerability management data on a per-device basis. There are different API calls to get different types of data: secure configuration assessment, software inventory assessment, and software vulnerabilities assessment. Each API call contains the requisite data for devices in your organization.
+
+- [Remediation activity](get-remediation-methods-properties.md) API <br>  Adds a collection of APIs with responses that contain threat and vulnerability management remediation activities that have been created in your tenant. Response information types include one remediation activity by ID, all remediation activities, and exposed devices of one remediation activity.
+
 - [Device discovery](device-discovery.md) <br> Helps you find unmanaged devices connected to your corporate network without the need for extra appliances or cumbersome process changes. Using onboarded devices, you can find unmanaged devices in your network and assess vulnerabilities and risks. You can then onboard discovered devices to reduce risks associated with having unmanaged endpoints in your network.
 
    > [!IMPORTANT]
    > Standard discovery will be the default mode for all customers starting July 19, 2021. You can choose to retain the basic mode through the settings page.
-
 
 - [Device group definitions](/microsoft-365/security/defender-endpoint/machine-groups) can now include multiple values for each condition. You can set multiple tags, device names, and domains to the definition of a single device group.
 
