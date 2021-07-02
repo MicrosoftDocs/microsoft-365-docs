@@ -72,7 +72,7 @@ If you're experiencing an issue that isn't listed in either of the Service healt
 
 5.  If the recommended articles don't help, select **Contact Support**.
 
-6.  Fill out the information in the form, attach any screenshots and the JSON file that you saved in step 1 if applicable, and then select **Contact me**. The expected wait time is indicated in the pane.
+6.  Fill out the information in the form, attach any screenshots and the JSON file that you saved in step&nbsp;1 if applicable, and then select **Contact me**. The expected wait time is indicated in the pane.
 
 ## Related content
 
