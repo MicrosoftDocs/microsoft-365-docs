@@ -64,9 +64,10 @@ Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](
 
 
 ## Get started with the lab
+
 You can access the lab from the menu. In the navigation menu, select **Evaluation and tutorials > Evaluation lab**.
 
-![Image of the evaluation lab on the menu](images/evaluation-lab-menu.png)
+
 
 >[!NOTE]
 >- Depending the type of environment structure you select, devices will be available for the specified number of hours from the day of activation.
@@ -77,9 +78,9 @@ Already have a lab? Make sure to enable the new threat simulators and have activ
 
 ## Setup the evaluation lab
 
-1. In the navigation pane, select **Evaluation and tutorials** > **Evaluation lab**, then select **Setup lab**.
+1. In the navigation pane, select **Evaluation & tutorials** > **Evaluation lab**, then select **Setup lab**.
 
-    ![Image of the evaluation lab welcome page](images/evaluation-lab-setup.png)
+    ![Image of the evaluation lab welcome page](images/evaluationtutormenu.png)
 
 2. Depending on your evaluation needs, you can choose to setup an environment with fewer devices for a longer period or more devices for a shorter period. Select your preferred lab configuration then select **Next**.
 
@@ -134,7 +135,7 @@ Automated investigation settings will be dependent on tenant settings. It will b
 
 2. Choose the type of device to add. You can choose to add Windows 10 or Windows Server 2019.
 
-    ![Image of lab setup with device options](images/add-machine-options.png)
+    ![Image of lab setup with device options](images/add-machine-optionsnew.png)
 
 
     >[!NOTE]
@@ -145,7 +146,7 @@ Automated investigation settings will be dependent on tenant settings. It will b
     >[!NOTE]
     >The password is only displayed once. Be sure to save it for later use.
 
-    ![Image of device added with connection details](images/add-machine-eval-lab.png)
+    ![Image of device added with connection details](images/add-machine-eval-labnew.png)
 
 4. Device set up begins. This can take up to approximately 30 minutes. 
 

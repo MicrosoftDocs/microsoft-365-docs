@@ -47,9 +47,9 @@ Enable security information and event management (SIEM) integration so you can p
 - During the initial activation, a pop-up screen is displayed for credentials to be entered. Make sure that you allow pop-ups for this site.
 
 ## Enabling SIEM integration 
-1. In the navigation pane, select **Settings** > **SIEM**.
+1. In the navigation pane, select **Settings** > **Endpoints** > **SIEM**.
 
-    ![Image of SIEM integration from Settings menu1](images/enable_siem.png)
+    ![Image of SIEM integration from Settings menu1](images/enable_siemnew.png)
 
     >[!TIP]
     >If you encounter an error when trying to enable the SIEM connector application, check the pop-up blocker settings of your browser. It might be blocking the new window being opened when you enable the capability. 
