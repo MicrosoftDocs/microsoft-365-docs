@@ -43,7 +43,7 @@ ms.custom: api
 >
 > To use a specific version, use this format: `https://api.securitycenter.microsoft.com/api/{Version}`. For example: `https://api.securitycenter.microsoft.com/api/v1.0/alerts`
 >
-> If you don't specify any version (e.g. `https://api.securitycenter.microsoft.com/api/alerts` ) you will get to the latest version.
+> If you don't specify any version (e.g. `https://api.securitycenter.microsoft.com/api/alerts`) you will get to the latest version.
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 

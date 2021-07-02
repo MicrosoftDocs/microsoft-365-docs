@@ -74,7 +74,7 @@ Here are the features and settings you'll find in the left-hand navigation of th
 
 - See activity reports: [Activity Reports](../activity-reports/activity-reports.md)
 
-- [Create a Microsoft 365 group ](../create-groups/create-groups.md)
+- [Create a Microsoft 365 group](../create-groups/create-groups.md)
 
 - [Manage a Microsoft 365 group](../create-groups/manage-groups.md)
 

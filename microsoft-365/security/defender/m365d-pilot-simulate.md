@@ -153,7 +153,7 @@ To view the incident:
 
    ![Screenshot of where to click Manage incident](../../media/mtp/fig5a.png)
 
-   ![Screenshot of the fields on the manage incident panel where you can tag the incident, assign it to yourself, and add comments ](../../media/mtp/fig5b.png)
+   ![Screenshot of the fields on the manage incident panel where you can tag the incident, assign it to yourself, and add comments](../../media/mtp/fig5b.png)
 
 ### Review generated alerts
 
