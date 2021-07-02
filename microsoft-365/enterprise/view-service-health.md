@@ -67,7 +67,7 @@ To sign up for email notifications of new incidents that affect your tenant and 
 - Whether you want notifications for incidents or advisories
 - The services for which you want notification
 
-You can also subscribe to email notifications for individual events instead of every event for a service. To do so click on the active issue you want to recieve email notification updates for, click on **Manage notifications for this issue**, and then specify: 
+You can also subscribe to email notifications for individual events instead of every event for a service. To do so, select the active issue you want to receive email notification updates for, select **Manage notifications for this issue**, and then specify: 
 - Up to two email addresses.
 
 > [!NOTE]
