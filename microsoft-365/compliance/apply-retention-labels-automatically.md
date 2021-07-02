@@ -225,7 +225,7 @@ Note that this final example uses the best practice of always including  operato
 
 To identify Microsoft Teams meeting recordings that are stored in users' OneDrive accounts or in SharePoint, specify the following for the **Keyword query editor**:
 
-```	
+```
 ProgID:Media AND ProgID:Meeting
 ```
 
