@@ -49,7 +49,7 @@ Knowledge managers help to guide discovered topics through the various topic lif
 
    - Multiple users cast negative votes using the feedback mechanism on the topic card. For a topic to be removed, there must be a net of two negative votes received from users. For example, if one user voted negative and one user voted positive for a particular topic, you would still need two more negative votes for the topic to be removed.
 
-  When a published topic is removed, the page with the curated details will need to be deleted manually through the Pages Library of the topic center.
+  When a published topic is removed, the page with the curated details will need to be deleted manually through the Pages library of the topic center.
 
 > [!Note] 
 > On the **Manage topics** page, each knowledge manager will only be able to see topics where they have access to the underlying files and pages connected to the topic. This permission trimming will be reflected in the list of topics that appear in the **Suggested**, **Confirmed**, **Published**, and **Removed** tabs. The topic counts, however, show the total counts in the organization regardless of permissions.
@@ -65,7 +65,7 @@ You will not be able to view the **Manage topics** page in the topic center unle
 
 In the topic center, a knowledge manager can review topics that have been identified in the source locations you specified, and can either confirm or remove them. A knowledge manager can also create and publish new topic pages if one was not found in topic discovery, or edit existing ones if they need to be updated.
 
-## Review suggested topics
+## Suggested topics
 
 On the **Manage topics** page, topics that were discovered in your specified SharePoint source locations will be listed on the **Suggested** tab. If needed, a knowledge manager can review unconfirmed topics and choose to confirm or remove them.
 
@@ -114,6 +114,10 @@ Note that you can still choose to reject a confirmed topic. To do this, go to th
 Published topics have been edited so that specific information will always appear to whoever encounters the page. Manually created topics are listed here as well.
 
    ![Manage Topics](../media/knowledge-management/manage-topics-new.png)
+
+## Removed topics
+
+*New info here*
 
 ## Topic count dashboard
 
