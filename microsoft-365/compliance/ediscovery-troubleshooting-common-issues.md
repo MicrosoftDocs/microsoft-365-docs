@@ -142,6 +142,14 @@ When exporting search results from eDiscovery or Content Search in the Security 
 
 6. If you still have issues, consider dividing searches that return a large set of results into smaller searches. For example, you can use date ranges in search queries to return a smaller set of results that can be downloaded faster.
 
+## Error/issue: Exporting not progressing or stuck
+
+Exporting search results from eDiscovery or Content Search in the Security and Compliance Center appear stuck or not progressing.
+
+### Resolution
+
+1. Cancel the search and re-run the export
+
 ## Error/issue: "Internal server error (500) occurred"
 
 When running an eDiscovery search, if the search continually fails with error similar to "Internal server error (500) occurred", you may need rerun the search only on specific mailbox locations.
