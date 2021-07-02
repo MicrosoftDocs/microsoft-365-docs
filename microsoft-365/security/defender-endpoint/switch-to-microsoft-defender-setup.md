@@ -110,13 +110,13 @@ The [DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-m
 1. Open Registry Editor, and then navigate to <br/>
    `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`.
 
-2. Edit (or create) a DWORD entry called **ForcePassiveMode**, and specify the following settings:
+2. Edit (or create) a DWORD entry called **ForceDefenderPassiveMode**, and specify the following settings:
 
    - Set the DWORD's value to **1**.
    - Under **Base**, select **Hexadecimal**.
 
 > [!NOTE]
-> After onboarding to Defender for Endpoint, you might have to set Microsoft Defender Antivirus to passive mode on Windows Server.
+> After onboarding to Defender for Endpoint, you might have to set Microsoft Defender Antivirus to passive mode on Windows Server. To validate that passive mode was set as expected, search for *event 5007* in the **Microsoft-Windows-Windows Defender Operational** log (located at `C:\Windows\System32\winevt\Logs`) and confirm either **ForcePassiveMode** or **PassiveMode** registry keys were set by to **0x1**.
 
 ### Are you using Windows Server 2016?
 
