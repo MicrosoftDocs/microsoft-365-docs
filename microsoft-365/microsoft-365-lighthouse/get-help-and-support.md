@@ -64,7 +64,7 @@ If you're experiencing an issue that isn't listed in either of the Service healt
     > [!NOTE]
     > If the **How can we help?** pane doesn't open, you'll need to reach out to someone in your partner tenant who has Global Administrator permissions and ask them to help.
 
-3.  In the **How can we help?** pane, enter a description of your issue, and then press **Enter**. We recommend including the term *Microsoft 365 lighthouse* in your description to ensure the search results include relevant help articles.
+3.  In the **How can we help?** pane, enter a description of your issue, and then press **Enter**. We recommend including the full product name *Microsoft 365 lighthouse* in your description to ensure the search results include relevant help articles.
 
 4.  Check out the list of recommended articles to see if any of them help resolve your issue.
 
