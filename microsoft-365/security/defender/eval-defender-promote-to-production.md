@@ -29,7 +29,7 @@ ms.technology: m365d
 **Applies to:**
 - Microsoft 365 Defender
 
-To promote your Microsoft 365 Defender evaluation environment to production, first purchase the necessary license. Follow the steps in [Create the eval environment](eval--create-eval-environment.md) and purchase the Office 365 E5 license (instead of selecting Start free trial).
+To promote your Microsoft 365 Defender evaluation environment to production, first purchase the necessary license. Follow the steps in [Create the eval environment](eval-create-eval-environment.md) and purchase the Office 365 E5 license (instead of selecting Start free trial).
 
 Next, complete any additional configuration and expand your pilot groups until these have reached full production. 
 
