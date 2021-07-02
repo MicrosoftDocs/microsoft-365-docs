@@ -37,10 +37,8 @@ ms.custom: api
 Start automated investigation on a device.
 <br>See [Overview of automated investigations](automated-investigations.md) for more information.
 
-
 ## Limitations
 1. Rate limitations for this API are 50 calls per hour.
-
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md)
