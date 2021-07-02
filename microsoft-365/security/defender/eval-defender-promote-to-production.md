@@ -58,5 +58,5 @@ Use the following general guidelines to onboard more devices to Microsoft Defend
 
 
 ## Microsoft Cloud App Security
-Defender for Identity doesn't require any additional configuration. Just make sure you've purchased the necessary licenses.
+Microsoft Cloud App Security doesn't require any additional configuration. Just make sure you've purchased the necessary licenses. If you've scoped the deployment to certain user groups, increase the scope of these groups until you reach production scale. 
 
