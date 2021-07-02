@@ -59,7 +59,7 @@ Tamper protection doesn't prevent you from viewing your security settings. And, 
 
 | To perform this task... | See this section... |
 |:---|:---|
-| Manage tamper protection across your tenant <p>Use the Microsoft 365 Defender portal to turn tamper protection on or off | [Manage tamper protection for your organization using the Microsoft 365 Defender](#manage-tamper-protection-for-your-organization-using-the-microsoft-365-defender-portals) |
+| Manage tamper protection across your tenant <p>Use the Microsoft 365 Defender portal to turn tamper protection on or off | [Manage tamper protection for your organization using the Microsoft 365 Defender](#manage-tamper-protection-for-your-organization-using-the-microsoft-365-defender-portal) |
 | Fine-tune tamper protection settings in your organization <p>Use Intune (Microsoft Endpoint Manager) to turn tamper protection on or off. You can configure tamper protection for some or all users with this method. | [Manage tamper protection for your organization using Intune](#manage-tamper-protection-for-your-organization-using-intune) |
 | Turn tamper protection on (or off) for your organization with Configuration Manager | [Manage tamper protection for your organization using tenant attach with Configuration Manager, version 2006](#manage-tamper-protection-for-your-organization-with-configuration-manager-version-2006) |
 | Turn tamper protection on (or off) for an individual device | [Manage tamper protection on an individual device](#manage-tamper-protection-on-an-individual-device) |
@@ -109,7 +109,7 @@ Tamper protection can be turned on or off for your tenant using the Microsoft 36
 
 ### Turn tamper protection on (or off) in the Microsoft 365 Defender portal
 
-![Turn tamper protection on in the Microsoft 365 Defender portal](images/mde-turn-tamperprotect-on-new.png)
+::image type="content" source="../../media/mde-turn-tamperprotect-on-new.png" alt-text="Turn tamper protection ON in Microsoft 365 Defender portal":::
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
@@ -252,7 +252,7 @@ If you are an organization using [Microsoft Defender for Endpoint](/microsoft-36
 
 - [Manage tamper protection using Intune](#manage-tamper-protection-for-your-organization-using-intune)
 - [Manage tamper protection using Configuration Manager, version 2006](#manage-tamper-protection-for-your-organization-with-configuration-manager-version-2006)
-- [Manage tamper protection using the Microsoft 365 Defender portal](#manage-tamper-protection-for-your-organization-using-the-microsoft-defender-security-center) 
+- [Manage tamper protection using the Microsoft 365 Defender portal](#manage-tamper-protection-for-your-organization-using-the-microsoft-365-defender-portal) 
 
 ### How does configuring tamper protection in Intune affect how I manage Microsoft Defender Antivirus through my group policy?
 
