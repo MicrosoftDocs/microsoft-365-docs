@@ -27,9 +27,8 @@ To be enrolled in Microsoft Managed Desktop, a device must be one of the followi
 
 The links to devices here are for your reference only. If you want to order devices, work with your commercial channel contacts to ensure that you choose the correct configurations. In this table, the *archive date* is the date on which these models will be subject to a shorter Microsoft Managed Desktop service life; any such devices onboarded after this date will not receive a full three-year term of support from Microsoft Managed Desktop. Archived devices are also listed in [Microsoft Managed Desktop archived devices](archived-device-list.md). *Retirement date* is the date on which this model will no longer be supported by Microsoft Managed Desktop at all. On that date, all enrolled devices of this model will be removed from Microsoft Managed Desktop, no matter when they were enrolled.
 
->[!NOTE]
->Devices can be added to this table at any time, but we will provide 90 days notice for any changes affecting archive or retirement date. The devices most recently added are marked with **\***.
-
+> [!NOTE]
+> Devices can be added to this table at any time, but we will provide 90 days notice for any changes affecting archive or retirement date. The devices most recently added are marked with **\***.
 
 ## Microsoft Managed Desktop Devices
 
@@ -80,13 +79,14 @@ In addition, the device must also meet these criteria:
 - Not have completed the Windows first-run experience.
 - Be registered with Microsoft Managed Desktop using the [Device Registration](../get-started/register-devices-self.md) feature
 
->[!NOTE]
->Devices with a 2.0 GHz or faster processor will provide a much better experience for users involved in these activities:
->- Using video conferencing with Teams. See [Hardware requirements for Microsoft Teams](/microsoftteams/hardware-requirements-for-the-teams-app) for details.
->-	Using one device for several different workloads.
->- Using multiple monitors.
+> [!NOTE]
+> Devices with a 2.0 GHz or faster processor will provide a much better experience for users involved in these activities:
+>
+> - Using video conferencing with Teams. See [Hardware requirements for Microsoft Teams](/microsoftteams/hardware-requirements-for-the-teams-app) for details.
+> - Using one device for several different workloads.
+> - Using multiple monitors.
 
-**More Help**
+## More help
 
 These resources can help answer questions that you might have about specific devices:
 

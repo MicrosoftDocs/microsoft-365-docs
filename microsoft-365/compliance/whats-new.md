@@ -135,7 +135,7 @@ The following insider risk management feature updates were released for public p
 - Updated domain support in policies (REGEX)
 - Policy template enhancements and improvements
 
-The following topics were updated or added to support these new features:​​​​​​​​​​​​​​
+The following topics were updated or added to support these new features:
 
 - [Learn about insider risk management](/microsoft-365/compliance/insider-risk-management)
 - [Plan for insider risk management](/microsoft-365/compliance/insider-risk-management-plan)
@@ -216,7 +216,7 @@ Content was added or updated in the following topics:
 
 - [Customer-managed encryption features](/microsoft-365/compliance/office-365-customer-managed-encryption-features)
 - [Exchange Online mail encryption with AD RMS](/microsoft-365/compliance/information-rights-management-in-exchange-online). Support for this service has been deprecated. You can no longer use AD RMS in an Exchange hybrid environment. Instead, migrate to Azure RMS.
-​​​​
+
 #### Customer Key
 
 - [Customer Key for Microsoft 365 at the tenant level](/microsoft-365/compliance/customer-key-tenant-level)
