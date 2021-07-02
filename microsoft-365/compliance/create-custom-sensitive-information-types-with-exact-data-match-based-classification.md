@@ -45,14 +45,14 @@ But what if you wanted a custom sensitive information type (SIT) that uses exact
 EDM-based classification enables you to create custom sensitive information types that refer to exact values in a database of sensitive information. The database can be refreshed daily, and contain up to 100 million rows of data. So as employees, patients, or clients come and go, and records change, your custom sensitive information types remain current and applicable. And, you can use EDM-based classification with policies, such as [data loss prevention policies](dlp-learn-about-dlp.md) or [Microsoft Cloud App Security file policies](/cloud-app-security/data-protection-policies).
 
 > [!NOTE]
-> Microsoft 365 Information Protection supports in preview double byte character set languages for:
+> Microsoft 365 Information Protection supports double byte character set languages for:
 > - Chinese (simplified)
 > - Chinese (traditional)
 > - Korean
 > - Japanese
 > 
 > This support is available for sensitive information types. See, [Information protection support for double byte character sets release notes (preview)](mip-dbcs-relnotes.md) for more information.
- 
+
 
 ## Required licenses and permissions
 
