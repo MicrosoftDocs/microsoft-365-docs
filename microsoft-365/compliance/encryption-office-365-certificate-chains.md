@@ -316,7 +316,7 @@ Expand the root and intermediate sections below to see additional details about 
 | **CRL URLs** | http://crl.digicert.cn/DigiCertGlobalRootCA.crl |
 | **OCSP URLs** | http://ocsp.digicert.cn |
 
-### **DigiCert Cloud Services CA-1**
+### **DigiCert Cloud Services CA-1** (older)
 
 | **Subject** | CN=DigiCert Cloud Services CA-1<br>O=DigiCert Inc<br>C=US |
 | --- | --- |
@@ -347,7 +347,7 @@ Expand the root and intermediate sections below to see additional details about 
 | **Subject Key Identifier** | dd:51:d0:a2:31:73:a9:73:ae:8f:b4:01:7e:5d:8c:57:cb:9f:f0:f7 |
 | **Authority Key Identifier** | 03:de:50:35:56:d1:4c:bb:66:f0:a3:e2:1b:1b:c3:97:b2:3d:d1:55 |
 | **Thumbprint (SHA-1)** | B3F6B64A07BB9611F47174407841F564FB991F29 |
-| **Thumbprint (SHA-256)** | 5F88694615E4C61686E106B84C3338C6720C535F60D36F61282ED15E1977DD44 | -
+| **Thumbprint (SHA-256)** | 5F88694615E4C61686E106B84C3338C6720C535F60D36F61282ED15E1977DD44 |
 | **Pin (SHA-256)** | UgpUVparimk8QCjtWQaUQ7EGrtrykc/L8N66EhFY3VE= |
 | **CRL URLs** | http://crl3.digicert.com/DigiCertGlobalRootCA.crl<br>http://crl4.digicert.com/DigiCertGlobalRootCA.crl |
 | **OCSP URLs** | http://ocsp.digicert.com
@@ -511,7 +511,7 @@ Expand the root and intermediate sections below to see additional details about 
 | **CRL URLs** | http://crl.globalsign.com/root-r3.crl |
 | **OCSP URLs** | http://ocsp2.globalsign.com/rootr3 |
 
-### **GlobalSign Organization Validation CA - SHA256 - G2**
+### **GlobalSign Organization Validation CA - SHA256 - G2** (older)
 
 | **Subject** | CN=GlobalSign Organization Validation CA - SHA256 - G2<br>O=GlobalSign nv-sa<br>C=BE |
 | --- | --- |
