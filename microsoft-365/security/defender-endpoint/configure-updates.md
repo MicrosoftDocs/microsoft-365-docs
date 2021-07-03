@@ -72,7 +72,7 @@ Follow the instructions in below link to create a custom policy in Intune:
 
 [Add custom settings for Windows 10 devices in Microsoft Intune - Azure \| Microsoft Docs](/mem/intune/configuration/custom-settings-windows-10)
 
-For more information on the Defender CSPs used for the gradual rollout process, see the [Defender CSP}(/windows/client-management/mdm/defender-csp)
+For more information on the Defender CSPs used for the gradual rollout process, see [Defender CSP](/windows/client-management/mdm/defender-csp).
 
 ## PowerShell
 
