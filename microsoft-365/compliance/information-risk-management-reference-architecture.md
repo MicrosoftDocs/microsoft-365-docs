@@ -14,7 +14,7 @@ ms.collection: M365-security-compliance
 description: "Introducing the information risk management reference architecture to help customers visualize their current organizational risks."
 
 ---
-# Modern Information Risk Management Reference Architecture 
+# Modern information risk management reference architecture 
 
 ## Introduction
 
