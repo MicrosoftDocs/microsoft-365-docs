@@ -30,7 +30,7 @@ This architecture represents how every organization should look at its digital e
 
 [ ![Information Risk Management Architecture](../media/info-risk-management-architecture.png) ](../media/info-risk-management-architecture.png#lightbox)
 
-Best practices for controlling, mitigating, and eliminating risks accross these risk families:
+Best practices for controlling, mitigating, and eliminating risks across these risk families:
 
 ## Information Risk Posture Management and Regulatory Compliance
 
