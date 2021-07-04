@@ -24,7 +24,7 @@ Corporate information risk management is more important today than ever in estab
     3. Build a remediation roadmap and refine the continuous improvement cycle.
     4. Have a better understanding of your data risk posture across your entire digital estate. 
 
-## The Architecture
+## The architecture
 
 This architecture represents how every organization should look at its digital estate from a risk angle. It highlights the different risk families and their corresponding mitigation or elimination controls. It also shows how this modern architecture considers different data locations, whether at rest or in transit.
 
