@@ -98,7 +98,7 @@ Leverage machine learning to detect policy violations across Microsoft Teams, Mi
 
 - [Information barriers (IB)](information-barriers-solution-overview.md) are policies that an admin can configure to prevent individuals or groups from communicating with each other. IBs are useful if, for example, one department is handling information that shouldn't be shared with other departments. IBs are also useful when a group needs to be isolated or prevented from communicating with anyone outside of that group.
 
-## Access Management
+## Access management
 
 Based on principle of Zero Standing Access, which means users who need privileged access for Office365 operations, must request permissions for access, and once received it is just-in-time and just-enough access to perform the job at hand.
 
