@@ -48,7 +48,7 @@ While adopting an organization-wide approach, [Compliance Manager](compliance-ma
 
 ## Information asset management
 
-- [Microsoft Information Protection Scanner](https://github.com/MicrosoftDocs/Azure-RMSDocs/blob/master/Azure-RMSDocs/deploy-aip-scanner.md) is a program designed to detect, classify, and optionally protect documents stored on file shares and on-premises SharePoint servers. Its auto-classification capabilities within Office 365 apps enable your organization to classify and protect unstructured files and emails in order to allow secure information between devices, mailboxes, and apps even beyond the organization's perimeter as required by remote. You can be sure that the data are encrypted and protected from leakage.
+- [Microsoft Information Protection Scanner](https://github.com/MicrosoftDocs/Azure-RMSDocs/blob/master/Azure-RMSDocs/deploy-aip-scanner.md) is a program designed to detect, classify, and optionally protect documents stored on file shares and on-premises SharePoint servers. Its auto-classification capabilities within Office 365 apps enable your organization to classify and protect unstructured files and emails in order to allow secure information between devices, mailboxes, and apps even beyond the organization's perimeter as required by remote working. You can be sure that the data are encrypted and protected from leakage.
 
 - [Content explorer](data-classification-content-explorer.md) shows a current snapshot of the items that have a sensitivity label, a retention label, or have been classified as a sensitive information type in your organization's Office 365 resources.
 
