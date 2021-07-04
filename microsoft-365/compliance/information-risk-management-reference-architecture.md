@@ -139,8 +139,7 @@ The attack surface reduction set of capabilities provides the first line of defe
 
   - Advanced hunting provides a query-based threat-hunting tool that lets you proactively find breaches and create custom detections.
 
-  - Automated investigation and remediation
-In conjunction with being able to quickly respond to advanced attacks, Microsoft Defender for Endpoint offers automatic investigation and remediation capabilities that help reduce the volume of alerts in minutes at scale, and help you respond remotely. 
+  - Automated investigation and remediation: In conjunction with being able to quickly respond to advanced attacks, Microsoft Defender for Endpoint offers automatic investigation and remediation capabilities that help reduce the volume of alerts in minutes at scale, and help you respond remotely. 
 
 - Defender for Identity enables SecOps analysts and security professionals struggling to detect advanced identity attacks in hybrid environments to:
 
