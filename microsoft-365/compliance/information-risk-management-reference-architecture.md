@@ -90,7 +90,7 @@ Microsoft 365 risk prevention features are designed and built in to our insider 
 
 [Insider risk management](insider-risk-solution-overview.md#insider-risk-management) helps minimize internal risks by enabling you to detect, investigate, and act on malicious and inadvertent activities in your organization. Using built-in machine learning templates, tuned to provide rich insights on various types of risks, out of the box—or customize for your organizational requirements. Prevent oversharing of information, IP theft and intentional data leakage and exfiltration.
 
-## Internal Compliance Management
+## Internal compliance management
 
 Leverage machine learning to detect policy violations across Microsoft Teams, Microsoft Exchange, and third-party content. Some of these risks are violations to corporate or HR policies, code of conduct, …etc.
 
