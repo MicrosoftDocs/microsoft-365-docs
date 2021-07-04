@@ -48,17 +48,17 @@ While adopting an organization-wide approach, [Compliance Manager](compliance-ma
 
 ## Information asset management
 
-- [Microsoft Information Protection Scanner](https://github.com/MicrosoftDocs/Azure-RMSDocs/blob/master/Azure-RMSDocs/deploy-aip-scanner.md) is a program designed to detect, classify, and optionally protecting documents stored on File Shares and On-Premises SharePoint servers, as well as auto classification capabilities within Office365 apps enables your organization to classify and protect unstructured files and emails in order to allow a secure information between devices, mailboxes and apps even beyond the organization perimeter as remote work requires. You can be sure that the data are encrypted and protected from leakage.
+- [Microsoft Information Protection Scanner](https://github.com/MicrosoftDocs/Azure-RMSDocs/blob/master/Azure-RMSDocs/deploy-aip-scanner.md) is a program designed to detect, classify, and optionally protect documents stored on file shares and on-premises SharePoint servers. Its auto-classification capabilities within Office 365 apps enable your organization to classify and protect unstructured files and emails in order to allow secure information between devices, mailboxes, and apps even beyond the organization's perimeter as required by remote. You can be sure that the data are encrypted and protected from leakage.
 
-- [Content explorer](data-classification-content-explorer.md) shows a current snapshot of the items that have a sensitivity label, a retention label or have been classified as a sensitive information type in your organization's Office365 resources.
+- [Content explorer](data-classification-content-explorer.md) shows a current snapshot of the items that have a sensitivity label, a retention label, or have been classified as a sensitive information type in your organization's Office365 resources.
 
-- [Microsoft Cloud App Security](https://github.com/MicrosoftDocs/CloudAppSecurityDocs/blob/master/CloudAppSecurityDocs/what-is-cloud-app-security.md) helps you extends your visibility and control accross other SaaS apps by providing a wide array of capabilities that protect your environment across the following pillars:
+- [Microsoft Cloud App Security](https://github.com/MicrosoftDocs/CloudAppSecurityDocs/blob/master/CloudAppSecurityDocs/what-is-cloud-app-security.md) helps you extend your visibility and control across other SaaS apps by providing a wide array of capabilities that protect your environment across the following pillars:
 
-1.	**Visibility:** detect all cloud services; assign each a risk ranking; identify all users and third-party apps able to log in
-2.	**Data security:** identify and control sensitive information (DLP) shared on Office365 or other cloud storages; respond to classification labels on content.
-3.	**Threat protection:** offer adaptive access control (AAC); provide user and entity behavior analysis (UEBA); mitigate malware related to the use of cloud apps.
+    1.	**Visibility:** Detects all cloud services; assign each a risk ranking; identify all users and third-party apps able to log in.
+    2.	**Data security:** Identifies and controls sensitive information (DLP) shared on Office 365 or other cloud storage; responds to classification labels on content.
+    3.	**Threat protection:** Offers adaptive access control (AAC); provides user and entity behavior analysis (UEBA); mitigates malware related to the use of cloud apps.
 
-- [Sensitivity-labels](sensitivity-labels.md) should be created after identifying the senstive information, where it is stored, and the proper label taxonomy. Labels can be applied via manual or automatic means. This will determine how the data will be treated for the rest of its lifecycle.
+- [Sensitivity-labels](sensitivity-labels.md) should be created after identifying the sensitive information, where it is stored, and the proper label taxonomy. Labels can be applied via manual or automatic means. This will determine how the data will be treated for the rest of its lifecycle.
 
 
 - You can use [Microsoft 365 data loss prevention (DLP)](data-loss-prevention-policies) to monitor the actions that are being taken on items you've determined to be sensitive and to help prevent the unintentional sharing of those items on the user’s devices. Endpoint data loss prevention [(Endpoint DLP)](dlp-configure-endpoints.md) extends the activity monitoring and protection capabilities of DLP to sensitive items that are on Windows 10 devices. Once devices are onboarded into the Microsoft 365 compliance solutions, the information about what users are doing with sensitive items is made visible in activity explorer and you can enforce protective actions on those items via DLP policies.
