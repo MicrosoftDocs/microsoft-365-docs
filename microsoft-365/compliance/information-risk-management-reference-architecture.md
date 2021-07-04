@@ -105,7 +105,7 @@ Based on the principle of Zero Standing Access, which means users who need privi
 ## Audits and legal litigation management
 
 The [unified auditing](advanced-audit.md) functionality in Microsoft 365 provides organizations with visibility into many types of audited activities across many different services in Microsoft 365. Advanced Audit helps organizations to conduct forensic and compliance investigations by increasing audit log retention required to conduct an investigation, providing access to crucial events that help determine the scope of the compromise, and faster access to Office 365 Management Activity API.
-[Advanced eDiscovery](get-started-with-advanced-ediscovery.md) solution in Microsoft 365 builds on the existing Microsoft eDiscovery and analytics capabilities. Advanced eDiscovery provides an end-to-end workflow to preserve, collect, analyze, review, analyze, and export content that's responsive to your organization's internal and external investigations. It also lets legal teams manage the entire legal hold notification workflow to communicate with custodians involved in a case.
+[Advanced eDiscovery](get-started-with-advanced-ediscovery.md) solution in Microsoft 365 builds on the existing Microsoft eDiscovery and analytics capabilities. Advanced eDiscovery provides an end-to-end workflow to preserve, collect, analyze, review, and export content that's responsive to your organization's internal and external investigations. It also lets legal teams manage the entire legal hold notification workflow to communicate with custodians involved in a case.
 
 ## Crypto Key Management Management
 
