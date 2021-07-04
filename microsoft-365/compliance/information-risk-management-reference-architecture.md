@@ -142,7 +142,7 @@ The attack surface reduction set of capabilities provides the first line of defe
 - Defender for Identity enables SecOps analysts and security professionals struggling to detect advanced identity attacks in hybrid environments to:
 
   -	Monitor users, entity behavior, and activities with learning-based analytics.
-  -	Protect user identities and credentials stored in Active Directory, or remote working.
+  -	Protect user identities and credentials stored in Active Directory or remote working.
   -	Identify and investigate suspicious user activities and advanced attacks throughout the kill chain.
   -	Provide clear incident information on a simple timeline for fast triage.
 
