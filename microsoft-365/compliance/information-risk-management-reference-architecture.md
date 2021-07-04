@@ -48,7 +48,7 @@ While adopting organization wide approach, [Compliance Manager](compliance-manag
 - A real-time risk-based compliance score to help you understand your compliance posture by measuring your progress in completing improvement actions.
 
 
-## Information Asset Management
+## Information asset management
 
 - [Microsoft Information Protection Scanner](https://github.com/MicrosoftDocs/Azure-RMSDocs/blob/master/Azure-RMSDocs/deploy-aip-scanner.md) is a program designed to detect, classify, and optionally protecting documents stored on File Shares and On-Premises SharePoint servers, as well as auto classification capabilities within Office365 apps enables your organization to classify and protect unstructured files and emails in order to allow a secure information between devices, mailboxes and apps even beyond the organization perimeter as remote work requires. You can be sure that the data are encrypted and protected from leakage.
 
