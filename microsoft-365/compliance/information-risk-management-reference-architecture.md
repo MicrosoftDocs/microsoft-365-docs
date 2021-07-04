@@ -60,7 +60,6 @@ While adopting an organization-wide approach, [Compliance Manager](compliance-ma
 
 - [Sensitivity-labels](sensitivity-labels.md) should be created after identifying the sensitive information, where it is stored, and the proper label taxonomy. Labels can be applied via manual or automatic means. This will determine how the data will be treated for the rest of its lifecycle.
 
-
 - You can use [Microsoft 365 data loss prevention (DLP)](data-loss-prevention-policies) to monitor the actions that are being taken on items you've determined to be sensitive and to help prevent the unintentional sharing of those items on the user’s devices. Endpoint data loss prevention [(Endpoint DLP)](dlp-configure-endpoints.md) extends the activity monitoring and protection capabilities of DLP to sensitive items that are on Windows 10 devices. Once devices are onboarded into the Microsoft 365 compliance solutions, the information about what users are doing with sensitive items is made visible in activity explorer and you can enforce protective actions on those items via DLP policies.
 
 - DLP capabilities extends to natively include Microsoft Teams chat and channel messages, including private channel messages. [Teams DLP](dlp-microsoft-teams.md) applies to both text and documents shared. It acts upon a central predefined DLP policy, with the help of user tips to guide the user for smooth and educatory experience.
