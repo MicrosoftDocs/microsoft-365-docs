@@ -26,8 +26,7 @@ Corporate information risk management is more important today than ever in estab
 
 ## The Architecture
 
-This architecture represents how every organization should look at thier digital estate from a risk angle. It highlights the different risk familes and its corrsponding mitigation or elimination controls. It also shows how this modern architecture considers different data locations whether at rest or in transit.
-
+This architecture represents how every organization should look at its digital estate from a risk angle. It highlights the different risk families and their corresponding mitigation or elimination controls. It also shows how this modern architecture considers different data locations, whether at rest or in transit.
 
 [ ![Information Risk Management Architecture](../media/info-risk-management-architecture.png) ](../media/info-risk-management-architecture.png#lightbox)
 
