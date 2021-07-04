@@ -18,7 +18,7 @@ description: "Introducing the information risk management reference architecture
 
 ## Introduction
 
-Corporate information risk management is more important today than ever in establishing a strategy for a compliant and secure modern enterprise, involving enhancements across several strategic areas. Organizations often lose focus on the bigger picture of their information risk posture and it's relation to compliance. To improve the resiliency to evolving digital infomration risks, this high level information risk management architecture helps organizations achieve the following benefits:
+Corporate information risk management is more important today than ever in establishing a strategy for a compliant and secure modern enterprise, involving enhancements across several strategic areas. Organizations often lose focus on the bigger picture of their information risk posture and its relation to compliance. To improve the resiliency to evolving digital information risks, this high-level information risk management architecture helps organizations achieve the following benefits:
 
     1. Assess and identify gaps related to their current efforts, solutions, processes, and controls from an outside-to-inside lense.
     2. Focus the efforts on the most areas that need immediate attention.
