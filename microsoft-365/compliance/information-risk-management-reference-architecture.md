@@ -148,7 +148,7 @@ The attack surface reduction set of capabilities provides the first line of defe
   -	Identify and investigate suspicious user activities and advanced attacks throughout the kill chain.
   - Provide clear incident information on a simple timeline for fast triage
 
-- Microsoft Defender for Office 365 safeguards your organization against malicious threats posed by email messages, links (URLs), and collaboration tools such as Microsoft teams’ content, OneDrive and SharePoint, even for 3rd party collaborators sharing malicious content to your employees on Microsoft teams.
+- Microsoft Defender for Office 365 safeguards your organization against malicious threats posed by email messages, links (URLs), and collaboration tools such as Microsoft Teams content, OneDrive, SharePoint, and even for third-party collaborators sharing malicious content to your employees on Microsoft Teams.
 
 - [Microsoft Cloud App Security](https://github.com/MicrosoftDocs/CloudAppSecurityDocs/blob/master/CloudAppSecurityDocs/what-is-cloud-app-security.md) provides unique threat protection capabilities to protect access to SaaS apps such as Office365 and third-party SaaS apps. It offers adaptive access control (AAC) and provides user and entity behavior analysis (UEBA).
 
