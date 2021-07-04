@@ -35,7 +35,7 @@ Best practices for controlling, mitigating, and eliminating risks across these r
 ## Information risk posture management and regulatory compliance
 
 - Organizations should perform continuous information risk posture assessment, preferably in real-time, so that they can measure how the control implementation reflects on their posture.   
-- Organizations should be able to assess technical controls without the need to go through lengthy technical assessment exercises
+- Organizations should be able to assess technical controls without the need to go through lengthy technical assessment exercises.
 - Organizations should be able to report their risk posture at any time to the board, legal and supervisory authorities.
 
 While adopting an organization-wide approach, [Compliance Manager](compliance-manager.md) helps simplify compliance and reduce risk by providing:
