@@ -88,7 +88,7 @@ Microsoft 365 risk prevention features are designed and built in to our insider 
 
 ## Internal compliance management
 
-Leverage machine learning to detect policy violations across Microsoft Teams, Microsoft Exchange, and third-party content. Some of these risks are violations to corporate or HR policies, code of conduct, …etc.
+Leverage machine learning to detect policy violations across Microsoft Teams, Microsoft Exchange, and third-party content. Some of these risks are violations of corporate or HR policies, code of conduct, and more.
 
 - [Communication compliance](communication-compliance-solution-overview.md) in Microsoft 365 helps minimize these risks by helping you quickly detect, capture, and take remediation actions for email and Microsoft Teams communications. These include inappropriate communications containing profanity, threats, and harassment and communications that share sensitive information inside and outside of your organization.
 
