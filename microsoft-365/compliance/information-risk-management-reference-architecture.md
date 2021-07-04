@@ -146,7 +146,7 @@ The attack surface reduction set of capabilities provides the first line of defe
   -	Monitor users, entity behavior, and activities with learning-based analytics.
   -	Protect user identities and credentials stored in Active Directory, or remote working.
   -	Identify and investigate suspicious user activities and advanced attacks throughout the kill chain.
-  - Provide clear incident information on a simple timeline for fast triage
+  -	Provide clear incident information on a simple timeline for fast triage.
 
 - Microsoft Defender for Office 365 safeguards your organization against malicious threats posed by email messages, links (URLs), and collaboration tools such as Microsoft Teams content, OneDrive, SharePoint, and even for third-party collaborators sharing malicious content to your employees on Microsoft Teams.
 
