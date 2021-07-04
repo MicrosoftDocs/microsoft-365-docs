@@ -32,13 +32,13 @@ This architecture represents how every organization should look at its digital e
 
 Best practices for controlling, mitigating, and eliminating risks across these risk families:
 
-## Information Risk Posture Management and Regulatory Compliance
+## Information risk posture management and regulatory compliance
 
-- Organization should perform continous information risk posture assessment, preferrably in real-time, so that they can measure how the control implementation reflects on their posture.   
-- Oganization should be able to asess technical controls without the need to go through lengthy technical assessment excercises
-- Organization should be able to report their risk posture at any time to the board, legal and supervisory authorities.
+- Organizations should perform continuous information risk posture assessment, preferably in real-time, so that they can measure how the control implementation reflects on their posture.   
+- Organizations should be able to assess technical controls without the need to go through lengthy technical assessment exercises
+- Organizations should be able to report their risk posture at any time to the board, legal and supervisory authorities.
 
-While adopting organization wide approach, [Compliance Manager](compliance-manager.md) helps simplify compliance and reduce risk by providing:
+While adopting an organization-wide approach, [Compliance Manager](compliance-manager.md) helps simplify compliance and reduce risk by providing:
 
 -	Pre-built assessments for common industry and regional standards and regulations, including the availability to adopt local regulatory assessments.
 -	Workflow capabilities to help you efficiently complete your risk assessments through a single tool.
