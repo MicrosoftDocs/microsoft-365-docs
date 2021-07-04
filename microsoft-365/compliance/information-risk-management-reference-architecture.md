@@ -84,9 +84,9 @@ A disposition review can include content in Exchange mailboxes, SharePoint sites
 
 ## Internal Risk Management
 
-Managing internal risks has been a topic that is keeping CISOs up at night. There are various types of internal risks such as neglegent insiders, malicious insiders and compromised insiders. Moreover, organizations today have to face the risks associated to leavers, disgrantled employees, or even employees who were subject to stressor events such as bad performance review or demotion. 
+Managing internal risks has been a topic that is keeping CISOs up at night. There are various types of internal risks such as negligent insiders, malicious insiders, and compromised insiders. Moreover, organizations today have to face the risks associated with leavers, disgruntled employees, or even employees who were subject to stress or events such as bad performance reviews or demotion. 
 
-Microsoft 365 risk prevention features are designed and built-in to our insider risk products and solutions. These solutions work together and use advanced service and 3rd-party indicators to help you quickly identify, triage, and act on risk activity. Most solutions offer a comprehensive detection, alert, and remediation workflow for your data analysts and investigators to use to quickly act on and minimize these risks.
+Microsoft 365 risk prevention features are designed and built in to our insider risk products and solutions. These solutions work together and use advanced service and third-party indicators to help you quickly identify, triage, and act on risk activity. Most solutions offer a comprehensive detection, alert, and remediation workflow for your data analysts and investigators to use to quickly act on and minimize these risks.
 
 [Insider risk management](insider-risk-solution-overview.md#insider-risk-management) helps minimize internal risks by enabling you to detect, investigate, and act on malicious and inadvertent activities in your organization. Using built-in machine learning templates, tuned to provide rich insights on various types of risks, out of the box—or customize for your organizational requirements. Prevent oversharing of information, IP theft and intentional data leakage and exfiltration.
 
