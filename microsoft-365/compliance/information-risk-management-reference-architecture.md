@@ -96,7 +96,7 @@ Leverage machine learning to detect policy violations across Microsoft Teams, Mi
 
 ## Access management
 
-Based on principle of Zero Standing Access, which means users who need privileged access for Office365 operations, must request permissions for access, and once received it is just-in-time and just-enough access to perform the job at hand.
+Based on the principle of Zero Standing Access, which means users who need privileged access for Office 365 operations, must request permissions for access, and once received it is just-in-time and just-enough access to perform the job at hand.
 
 - [Customer Lockbox](customer-lockbox-requests.md) ensures that Microsoft cannot access your content to perform a service operation without your explicit approval. Customer Lockbox brings you into the approval workflow for requests to access your content.
 
