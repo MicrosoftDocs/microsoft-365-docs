@@ -82,7 +82,7 @@ A disposition review can include content in Exchange mailboxes, SharePoint sites
 - [Azure Purview](https://github.com/MicrosoftDocs/azure-docs/blob/master/articles/purview/overview.md) is a unified data governance service that helps you manage and govern your on-premises, multicloud, and software-as-a-service (SaaS) data and databases. Easily create a holistic, up-to-date map of your data landscape with automated data discovery, sensitive data classification, and end-to-end data lineage. Empowering data consumers to find valuable, trustworthy data.
 
 
-## Internal Risk Management
+## Internal risk management
 
 Managing internal risks has been a topic that is keeping CISOs up at night. There are various types of internal risks such as negligent insiders, malicious insiders, and compromised insiders. Moreover, organizations today have to face the risks associated with leavers, disgruntled employees, or even employees who were subject to stress or events such as bad performance reviews or demotion. 
 
