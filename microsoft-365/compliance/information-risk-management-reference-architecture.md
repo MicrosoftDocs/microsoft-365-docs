@@ -84,7 +84,7 @@ Managing internal risks has been a topic that is keeping CISOs up at night. Ther
 
 Microsoft 365 risk prevention features are designed and built in to our insider risk products and solutions. These solutions work together and use advanced service and third-party indicators to help you quickly identify, triage, and act on risk activity. Most solutions offer a comprehensive detection, alert, and remediation workflow for your data analysts and investigators to use to quickly act on and minimize these risks.
 
-[Insider risk management](insider-risk-solution-overview.md#insider-risk-management) helps minimize internal risks by enabling you to detect, investigate, and act on malicious and inadvertent activities in your organization. Using built-in machine learning templates, tuned to provide rich insights on various types of risks, out of the box—or customize for your organizational requirements. Prevent oversharing of information, IP theft and intentional data leakage and exfiltration.
+[Insider risk management](insider-risk-solution-overview.md#insider-risk-management) helps minimize internal risks by enabling you to detect, investigate, and act on malicious and inadvertent activities in your organization. Using built-in machine learning templates, tuned to provide rich insights on various types of risks, out of the box—or customize for your organizational requirements. It prevents oversharing of information, IP theft, and intentional data leakage and exfiltration.
 
 ## Internal compliance management
 
