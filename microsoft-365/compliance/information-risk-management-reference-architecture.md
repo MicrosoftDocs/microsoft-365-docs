@@ -13,7 +13,6 @@ localization_priority: Normal
 ms.collection: M365-security-compliance 
 description: "Introducing the information risk management reference architecture to help customers visualize their current organizational risks."
 
----
 # Modern information risk management reference architecture 
 
 ## Introduction
