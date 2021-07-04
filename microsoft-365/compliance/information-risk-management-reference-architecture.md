@@ -76,8 +76,7 @@ When content reaches the end of its retention period, there are several reasons 
 
 A disposition review can include content in Exchange mailboxes, SharePoint sites, OneDrive accounts, and Microsoft 365 groups. Content awaiting a disposition review in those locations is deleted only after a reviewer chooses to permanently delete the content.
 
-- [Azure Purview](https://github.com/MicrosoftDocs/azure-docs/blob/master/articles/purview/overview.md) is a unified data governance service that helps you manage and govern your on-premises, multicloud, and software-as-a-service (SaaS) data and databases. Easily create a holistic, up-to-date map of your data landscape with automated data discovery, sensitive data classification, and end-to-end data lineage. Empowering data consumers to find valuable, trustworthy data.
-
+- [Azure Purview](https://github.com/MicrosoftDocs/azure-docs/blob/master/articles/purview/overview.md) is a unified data governance service that helps you manage and govern your on-premises, multi-cloud, and software-as-a-service (SaaS) data and databases. Easily create a holistic, up-to-date map of your data landscape with automated data discovery, sensitive data classification, and end-to-end data lineage, empowering data consumers to find valuable, trustworthy data.
 
 ## Internal risk management
 
