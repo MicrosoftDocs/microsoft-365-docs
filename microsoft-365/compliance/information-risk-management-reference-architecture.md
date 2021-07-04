@@ -119,7 +119,7 @@ Organizations with an MIP subscription can choose to configure their tenant with
 
 ## Cyber risk management
 
-[Microsoft 365 Defender](https://github.com/MicrosoftDocs/microsoft-365-docs/blob/public/microsoft-365/security/defender/overview-security-center.md) brings together functionality from existing Microsoft security portals, like Microsoft Defender Security Center and the Office 365 Security & Compliance center. The security center emphasizes quick access to information, simpler layouts, and bringing related information together for easier use. This center includes:
+[Microsoft 365 Defender](https://github.com/MicrosoftDocs/microsoft-365-docs/blob/public/microsoft-365/security/defender/overview-security-center.md) brings together functionality from existing Microsoft security portals, like Microsoft Defender Security Center and the Office 365 Security & Compliance Center. The security center emphasizes quick access to information, simpler layouts, and bringing related information together for easier use. This center includes:
 
 - Defender for Endpoint uses the following combination of technology built into Windows 10 and Microsoft's robust cloud service:
 
