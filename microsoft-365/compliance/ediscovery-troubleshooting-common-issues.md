@@ -148,8 +148,8 @@ Exporting search results from eDiscovery or Content Search in the Security and C
 
 ### Resolution
 
-1. Re-run the search
-2. Export the content
+1. Re-run the search.
+2. Export the content.
 
 ## Error/issue: "Internal server error (500) occurred"
 
