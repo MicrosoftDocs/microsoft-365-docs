@@ -144,7 +144,7 @@ When exporting search results from eDiscovery or Content Search in the Security 
 
 ## Error/issue: Exporting not progressing or is stuck
 
-Exporting search results from eDiscovery or Content Search in the Security and Compliance Center appear stuck or not progressing.
+Exporting search results from eDiscovery or Content Search in the Security and Compliance Center appears stuck or is not progressing.
 
 ### Resolution
 
