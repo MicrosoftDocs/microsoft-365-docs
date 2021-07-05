@@ -907,11 +907,11 @@ Where noted below in the descriptions, some operations contain additional activi
 |Friendly name|Operation|Description|
 |:-----|:-----|:-----|
 |Created comment|CreateComment|Form owner adds comment or score to a quiz.|
-|Created form|CreateForm|Form owner creates a new form.|
+|Created form|CreateForm|Form owner creates a new form. <br><br>Property DataMode:string indicates current form is set to sync with a new or existing Excel workbook if property value equals DataSync. Property ExcelWorkbookLink:string indicates the associated Excel workbook id of current form.|
 |Edited form|EditForm|Form owner edits a form such, as creating, removing, or editing a question. The property *EditOperation:string* indicates the edit operation name. The possible operations are:<br/>- CreateQuestion<br/>- CreateQuestionChoice <br/>- DeleteQuestion <br/>- DeleteQuestionChoice <br/>- DeleteFormImage <br/>- DeleteQuestionImage <br/>- UpdateQuestion <br/>- UpdateQuestionChoice <br/>- UploadFormImage/Bing/Onedrive <br/>- UploadQuestionImage <br/>- ChangeTheme <br><br>FormImage includes any place within Forms that user can upload an image, such as in a query or as a background theme.|
-|Moved form|MoveForm|Form owner moves a form. <br><br>Property DestinationUserId:string indicates the user ID of the person who moved the form. Property NewFormId:string is the new ID for the newly copied form.|
+|Moved form|MoveForm|Form owner moves a form. <br><br>Property DestinationUserId:string indicates the user ID of the person who moved the form. Property NewFormId:string is the new ID for the newly copied form. Property IsDelegateAccess:boolean indicates current form move action is performed through admin delegate page.|
 |Deleted form|DeleteForm|Form owner deletes a form. This includes SoftDelete (delete option used and form moved to recycle bin) and HardDelete (Recycle bin is emptied).|
-|Viewed form (design time)|ViewForm|Form owner opens an existing form for editing.|
+|Viewed form (design time)|ViewForm|Form owner opens an existing form for editing. <br><br>Property AccessDenied:boolean indicates access of current form is denied due to permission check. Property FromSummaryLink:boolean indicates current request comes from summary link page.|
 |Previewed form|PreviewForm|Form owner previews a form using the Preview function.|
 |Exported form|ExportForm|Form owner exports results to Excel. <br><br>Property ExportFormat:string indicates if the Excel file is Download or Online.|
 |Allowed share form for copy|AllowShareFormForCopy|Form owner creates a template link to share the form with other users. This event is logged when the form owner clicks to generate template URL.|
@@ -930,10 +930,21 @@ Where noted below in the descriptions, some operations contain additional activi
 |Updated form phishing status|UpdatePhishingStatus|This event is logged whenever the detailed value for the internal security status was changed, regardless of whether this changed the final security state (for example, form is now Closed or Opened). This means you may see duplicate events without a final security state change. The possible status values for this event are:<br/>- Take Down <br/>- Take Down by Admin <br/>- Admin Unblocked <br/>- Auto Blocked <br/>- Auto Unblocked <br/>- Customer Reported <br/>- Reset Customer Reported|
 |Updated user phishing status|UpdateUserPhishingStatus|This event is logged whenever the value for the user security status was changed. The value of the user status in the audit record is **Confirmed as Phisher** when the user created a phishing form that was taken down by the Microsoft Online safety team. If an admin unblocks the user, the value of the user's status is set to **Reset as Normal User**.|
 |Sent Forms Pro invitation|ProInvitation|User clicks to activate a Pro trial.|
-|Updated form setting|UpdateFormSetting|Form owner updates a form setting. <br><br>Property FormSettingName:string indicates the setting's name and new value.|
+|Updated form setting|UpdateFormSetting|Form owner updates one or multiple form settings. <br><br>Property FormSettingName:string indicates updated sensitive settings' name. Property NewFormSettings:string indicates updated settings' name and new value. Property thankYouMessageContainsLink:boolean indicates updated thankyou message contains url link.|
 |Updated user setting|UpdateUserSetting|Form owner updates a user setting. <br><br>Property UserSettingName:string indicates the setting's name and new value|
 |Listed forms|ListForms|Form owner is viewing a list of forms. <br><br>Property ViewType:string indicates which view the form owner is looking at: All Forms, Shared with Me, or Group Forms|
 |Submitted response|SubmitResponse|A user submits a response to a form. <br><br>Property IsInternalForm:boolean indicates if the responder is within the same organization as the form owner.|
+|Enabled anyone can respond setting|AllowAnonymousResponse|Form owner turns on the setting allowing any one to respond to the form.|
+|Disabled anyone can respond setting|DisallowAnonymousResponse|Form owner turns off the setting allowing any one to respond to the form.|
+|Enabled specific people can respond setting|EnableSpecificResponse|Form owner turns on the setting allowing only specific people or specific groups in current organization to respond to the form.|
+|Disabled specific people can respond setting|DisableSpecificResponse|Form owner turns off the setting allowing only specific people or specific groups in current organization to respond to the form.|
+|Added specific responder|AddSpecificResponder|Form owner adds a new user or group to the specific responders list.|
+|Removed specific responder|RemoveSpecificResponder|Form owner removes a user or group from the specific responders list.|
+|Disabled collaboration|DisableCollaboration|Form owner turns off the setting of collaboration on the form.|
+|Enabled Office 365 work or school account collaboration|EnableWorkOrSchoolCollaboration|Form owner turns on the setting allowing users with an Office 365 work or school account to view and edit the form.|
+|Enabled people in my organization collaboration|EnableSameOrgCollaboration|Form owner turns on the setting allowing users in current organization to view and edit the form.|
+|Enabled specific people collaboration|EnableSpecificCollaboaration|Form owner turns on the setting allowing only specific people or specific groups in current organization to view and edit the form.|
+|Connected to Excel workbook|ConnectToExcelWorkbook|Connected the form to an Excel workbook. <br><br>Property ExcelWorkbookLink:string indicates the associated Excel workbook id of current form.|
 ||||
 
 #### Forms activities performed by coauthors and anonymous responders
