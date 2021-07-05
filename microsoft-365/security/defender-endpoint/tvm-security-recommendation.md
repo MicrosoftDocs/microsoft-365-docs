@@ -62,7 +62,7 @@ View related security recommendations in the following places:
 
 ### Navigation menu
 
-Go to the threat and vulnerability management navigation menu and select **Security recommendations**. The page contains a list of security recommendations for the threats and vulnerabilities found in your organization.
+Go to the **Vulnerability management** navigation menu and select **Recommendations**. The page contains a list of security recommendations for the threats and vulnerabilities found in your organization.
 
 ### Top security recommendations in the threat and vulnerability management dashboard
 

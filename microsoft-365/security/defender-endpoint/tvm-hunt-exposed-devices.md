@@ -50,7 +50,7 @@ Advanced hunting is a query-based threat-hunting tool that lets you explore up t
 
 ## Check which devices are involved in high severity alerts
 
-1. Go to **Advanced hunting** from the left-hand navigation pane of the Microsoft 365 Defender portal.
+1. Go to **Hunting** > **Advanced hunting** from the left-hand navigation pane of the Microsoft 365 Defender portal.
 
 2. Scroll down to the TVM advanced hunting schemas to familiarize yourself with the column names.
 

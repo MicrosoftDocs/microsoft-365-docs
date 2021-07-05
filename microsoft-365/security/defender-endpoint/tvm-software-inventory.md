@@ -74,7 +74,11 @@ Currently, products without a CPE are not shown in the software inventory page, 
 
 ## Software inventory on devices
 
+<<<<<<< Updated upstream
 From the Microsoft 365 Defender portal navigation panel, go to the **[Devices list](machines-view-overview.md)**. Select the name of a device to open the device page (like Computer1), then select the **Software inventory** tab to see a list of all the known software present on the device. Select a specific software entry to open the flyout with more information.
+=======
+From the Microsoft 365 Defender portal navigation panel, go to the **[Device inventory](machines-view-overview.md)**. Select the name of a device to open the device page (like Computer1), then select the **Software inventory** tab to see a list of all the known software present on the device. Select a specific software entry to open the flyout with more information.
+>>>>>>> Stashed changes
 
 Software may be visible at the device level even if it is currently not supported by threat and vulnerability management. However, only limited data will be available. You'll know if software is unsupported because it will say "Not available" in the "Weakness" column.
 
