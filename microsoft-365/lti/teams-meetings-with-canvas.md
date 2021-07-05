@@ -3,7 +3,7 @@ title: Use Microsoft Teams meetings with Canvas
 ms.author: v-cichur
 author: cichur
 manager: serdars
-ms.reviewer: amitman 
+ms.reviewer: sovaish
 audience: admin
 ms.topic: article
 ms.service: o365-administration
@@ -28,14 +28,14 @@ Microsoft Teams meetings is a Learning Tools Interoperability (LTI) app that hel
 Before managing the Microsoft Teams integration within Instructure Canvas, it is important to have Canvas’s **Microsoft-Teams-Sync-for-Canvas** Azure app approved by your institution’s Microsoft Office 365 admin in your Microsoft Azure tenant before completing the Canvas admin setup.
 
 1. Sign in to Canvas.
- 
+
 2. Select the **Admin** link in the global navigation, and then select your account.
 
-3. In the admin navigation, select the **Settings** link, and then the **Integrations** tab. 
+3. In the admin navigation, select the **Settings** link, and then the **Integrations** tab.
 
-4. Enter your Microsoft tenant name and login attribute. 
+4. Enter your Microsoft tenant name and login attribute.
 
-   The login attribute will be used for associating the Canvas user with an Azure Active Directory user. 
+   The login attribute will be used for associating the Canvas user with an Azure Active Directory user.
 
 5. Select **Update Settings** once done.
 
@@ -44,7 +44,7 @@ Before managing the Microsoft Teams integration within Instructure Canvas, it is
    ![permissions](media/permissions.png)
 
 7. Select **Accept**.
- 
+
 8. Enable the Microsoft Teams sync by turning the toggle on.
 
    ![teams-sync](media/teams-sync.png)
@@ -59,8 +59,8 @@ As a Canvas Admin, you'll need to add the Microsoft Teams meetings LTI app withi
 
 1. Access **Admin settings** > **Apps**.
 
-2. Select **+ App** to add the Teams LTI apps. 
- 
+2. Select **+ App** to add the Teams LTI apps.
+
    ![external-apps](media/external-apps.png)
 
 3. Select **By Client ID** for configuration type.
@@ -68,8 +68,8 @@ As a Canvas Admin, you'll need to add the Microsoft Teams meetings LTI app withi
    ![add app](media/add-app.png)
 
 4. Enter the Client ID provided, and then select **Submit**.
-   
-   You'll notice the Microsoft Teams meetings LTI app name for the Client ID for confirmation. 
+
+   You'll notice the Microsoft Teams meetings LTI app name for the Client ID for confirmation.
 
 5. Select **Install**.
 
