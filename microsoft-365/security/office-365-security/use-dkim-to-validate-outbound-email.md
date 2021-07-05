@@ -132,7 +132,7 @@ For each domain for which you want to add a DKIM signature in DNS, you need to p
 Run the following commands in Exchange Online PowerShell to create the selector records:
 
 ```powershell
-New-DkimSigningConfig -DomainName <domain> -Enabled $false
+New-DkimSigningConfig -DomainName <domain> -Enabled $True
 Get-DkimSigningConfig -Identity <domain> | Format-List Selector1CNAME, Selector2CNAME
 ```
 
