@@ -37,17 +37,17 @@ To designate the Cortana Scheduler mailbox, an authorized admin must run a one-l
 
 2. Run the following PowerShell script to designate the mailbox for Scheduler:
 
-```powershell
-Set-mailbox cortana@contoso.com -SchedulerAssistant:$true
-```
-
-After running this "set" command on the Cortana Scheduler mailbox, a new "PersistedCapability" is set on the mailbox to note that this mailbox is the "SchedulerAssistant".
+    ```powershell
+    Set-mailbox cortana@contoso.com -SchedulerAssistant:$true
+    ```
+    
+    After running this "set" command on the Cortana Scheduler mailbox, a new "PersistedCapability" is set on the mailbox to note that this mailbox is the "SchedulerAssistant".
 
 > [!NOTE]
-> Follow these steps to connect your organization to PowerShell if you’ve not done so previously: [Connect to Microsoft 365 with PowerShell - Microsoft 365 Enterprise | Microsoft Docs](../enterprise/connect-to-microsoft-365-powershell.md)
+> Follow these steps to connect your organization to PowerShell if you’ve not done so previously: [Connect to Microsoft 365 with PowerShell](../enterprise/connect-to-microsoft-365-powershell.md).
 
 To discover which mailbox in your organization is currently set as the Cortana Scheduler assistant, run the get function:
- 
+
 ```powershell
 Get-mailbox | where {$_.PersistedCapabilities -Match "SchedulerAssistant"}
 ```
