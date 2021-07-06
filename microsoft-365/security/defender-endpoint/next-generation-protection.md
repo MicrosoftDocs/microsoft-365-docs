@@ -25,4 +25,11 @@ Microsoft Defender for Endpoint includes next-generation protection to reinforce
 - [Cloud-delivered protection](cloud-protection-microsoft-defender-antivirus.md), which includes near-instant detection and blocking of new and emerging threats.
 - [Dedicated protection and product updates](manage-updates-baselines-microsoft-defender-antivirus.md), which includes updates related to keeping Microsoft Defender Antivirus up to date.
 
+## Try a demo!
+
+Visit the [Microsoft Defender for Endpoint demo website](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to confirm the following protection features are working and explore them using demo scenarios:
+
+- Cloud-delivered protection
+- Block at first sight (BAFS) protection
+- Potentially unwanted applications (PUA) protection
 
