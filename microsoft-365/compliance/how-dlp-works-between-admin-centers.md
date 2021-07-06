@@ -42,7 +42,7 @@ This means that:
   
 - Messages that are blocked by Exchange mail flow rules won't get scanned by DLP rules created in the Security & Compliance Center.
 
-- Messages that are quarantined by Exchange mail flow rules or any other filters run before DLP will not be scanned by DLP
+- Messages that are quarantined by Exchange mail flow rules or any other filters run before DLP will not be scanned by DLP.
     
 - If an Exchange mail flow rule modifies a message in a way that causes it to match a DLP policy in the Security & Compliance Center - such as adding external users - then the DLP rules will detect this and enforce the policy as needed.
     
