@@ -78,7 +78,7 @@ You will also need to provide (upload) the dependent binaries of the required fr
 **Q: How soon does Test Base provide test results?**
 
 
-**A:** For each test that we run against the pre-release builds, we will provide results within 48 hours on your [Azure Portal](www.aka.ms/testbaseportal "Test Base Homepage") dashboard.
+**A:** For each test that we run against the pre-release builds, we will provide results within 48 hours on your [Azure Portal](https://www.aka.ms/testbaseportal "Test Base Homepage") dashboard.
 
 
 **Q: Can you reboot after install?**
