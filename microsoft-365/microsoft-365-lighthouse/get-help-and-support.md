@@ -15,13 +15,13 @@ ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse                         
 search.appverid: MET150
-description: "For managed service providers using Microsoft 365 Lighthouse, learn how to get help and support."
+description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, learn how to get help and support."
 ---
 
 # Get help and support for Microsoft 365 Lighthouse 
 
 > [!NOTE]
-> The features described in this article are in Preview, are subject to change, and are only available to partners who meet the requirements. If your organization does not have Microsoft 365 Lighthouse, see [Sign up for Microsoft 365 Lighthouse](sign-up-m365-lighthouse.md).
+> The features described in this article are in Preview, are subject to change, and are only available to partners who meet the [requirements](requirements-for-m365-lighthouse.md). If your organization does not have Microsoft 365 Lighthouse, see [Sign up for Microsoft 365 Lighthouse](sign-up-m365-lighthouse.md).
 
 Several options are available to you if you need help. Start by checking the current health of customer tenant services:
 

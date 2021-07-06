@@ -2,12 +2,12 @@
   items: 
     - name: Overview of Microsoft 365 Lighthouse
       href: overview-m365-lighthouse.md
+    - name: Requirements for Microsoft 365 Lighthouse
+      href: requirements-for-m365-lighthouse.md
 - name: Get started
   items: 
     - name: Sign up for Microsoft 365 Lighthouse
       href: sign-up-m365-lighthouse.md
-    - name: Requirements for Microsoft 365 Lighthouse
-      href: requirements-for-m365-lighthouse.md
 - name: Secure Microsoft 365 Lighthouse
   items: 
     - name: Configure portal security

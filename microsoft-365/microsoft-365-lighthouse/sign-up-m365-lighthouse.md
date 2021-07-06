@@ -15,13 +15,13 @@ ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse                         
 search.appverid: MET150
-description: "For managed service providers, follow the steps in this article to sign up for Microsoft 365 Lighthouse. "
+description: "Managed Service Providers (MSPs) can follow the steps in this article to sign up for Microsoft 365 Lighthouse."
 ---
 
 # Sign up for Microsoft 365 Lighthouse
 
 > [!NOTE]
-> The features described in this article are in Preview, are subject to change, and are only available to partners who meet the requirements. If your organization does not have Microsoft 365 Lighthouse, see [Sign up for Microsoft 365 Lighthouse](sign-up-m365-lighthouse.md).
+> The features described in this article are in Preview, are subject to change, and are only available to partners who meet the [requirements](requirements-for-m365-lighthouse.md). If your organization does not have Microsoft 365 Lighthouse, follow the instructions in this article to sign up.
 
 ## Before you begin
 
