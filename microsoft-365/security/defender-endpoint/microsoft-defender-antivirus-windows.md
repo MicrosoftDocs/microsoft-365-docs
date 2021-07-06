@@ -30,7 +30,7 @@ Microsoft Defender Antivirus is a major component of your next-generation protec
 
 If you're using a non-Microsoft antivirus/antimalware product on your device, you might be able to run Microsoft Defender Antivirus in passive mode alongside the non-Microsoft antivirus solution. It depends on the operating system used and whether your device is onboarded to Defender for Endpoint. To learn more, see [Microsoft Defender Antivirus compatibility](microsoft-defender-antivirus-compatibility.md).
 
-### Comparing active mode, passive mode, and disabled mode
+## Comparing active mode, passive mode, and disabled mode
 
 The following table describes what to expect when Microsoft Defender Antivirus is in active mode, passive mode, or disabled.
 
@@ -42,10 +42,21 @@ The following table describes what to expect when Microsoft Defender Antivirus i
 
 To learn more, see [Microsoft Defender Antivirus compatibility](microsoft-defender-antivirus-compatibility.md).
 
-
 ## Check the state of Microsoft Defender Antivirus on your device
 
+If you want to check the state of Microsoft Defender Antivirus on your device, you can use one of several methods, such as Command Prompt or Windows PowerShell.
 
+### Use PowerShell to check status
+
+1. Select the Start menu, and begin typing `PowerShell`. Then open Windows PowerShell in the results.
+
+2. Type `Get-MpComputerStatus`.
+
+3. In the list of results, look at the **AMRunningMode** row.
+
+   - **Normal** means Microsoft Defender Antivirus is running in active mode.
+   - **Passive mode** means Microsoft Defender Antivirus running, but is not the primary antivirus/antimalware product on your device.
+   - **EDR Block Mode** means Microsoft Defender Antivirus is running in passive mode and a capability known as EDR in block mode is enabled. (See [Endpoint detection and response (EDR) in block mode](edr-in-block-mode.md).)
 
 ## Platform updates
 
