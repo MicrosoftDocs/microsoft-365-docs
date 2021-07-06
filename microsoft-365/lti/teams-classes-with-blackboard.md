@@ -15,7 +15,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 description: "Integrate Microsoft Teams classes with Blackboard"
 ---
 
-# Integrate Microsoft Teams classes with Blackboard
+# Use Microsoft Teams classes with Blackboard
 
 Teamwork is at the core of every modern organization. By fostering collaboration, it’s a defining characteristic of every successful institution. You can enhance all the capabilities and features of Blackboard Learn by pairing them up with Microsoft Teams classes.
 
