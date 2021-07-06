@@ -97,7 +97,7 @@ The advisory or incident summary provides the following information:
 
 ### Translate service health details
 
-We use machine translation to automatically display messages in your preferred language. Read [Language translation for Message center posts](language-translation-for-message-center-posts.md) for more information on how to set your language.
+We use machine translation to automatically display messages in your preferred language. Read [Language translation for Message center posts](/microsoft-365/admin/manage/language-translation-for-message-center-posts) for more information on how to set your language.
 
 ### Definitions
 
