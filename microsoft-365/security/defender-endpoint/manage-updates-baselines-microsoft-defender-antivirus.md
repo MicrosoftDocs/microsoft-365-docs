@@ -78,24 +78,23 @@ All our updates contain
 <br/>
 <details>
 <summary> June-2021 (Platform: 4.18.2106.5 | Engine: 1.1.18300.4)</summary>
- 
+
 &ensp;Security intelligence update version: **1.343.17.0**  
-&ensp;Released: **June 28th, 2021**  
+&ensp;Released: **June 28, 2021**  
 &ensp;Platform: **4.18.2106.5**  
-&ensp;Engine: **: 1.1.18300.4**  
+&ensp;Engine: **1.1.18300.4**  
 &ensp;Support phase: **Security and Critical Updates**
- 
+    
 ### What's new
-- New controls for managing the gradual rollout process of Microsoft Defender updates. See [Manage the gradual rollout process for Microsoft Defender updates](manage-gradual-rollout.md)
-- Improvement to Behavior Monitoring engine
-- Improvements to rollout of antimalware definitions 
+- New controls for managing the gradual rollout process of Microsoft Defender updates. See [Manage the gradual rollout process for Microsoft Defender updates](manage-gradual-rollout.md).
+- Improvement to the behavior monitoring engine
+- Improvements to the rollout of antimalware definitions
 - Extended Edge network event inspections
- 
+
 ### Known Issues
 No known issues  
 <br/>
-</details>
-<details>
+</details><details>
 <summary> May-2021 (Platform: 4.18.2105.4 | Engine: 1.1.18200.4)</summary>
 
 &ensp;Security intelligence update version: **1.341.8.0**  
