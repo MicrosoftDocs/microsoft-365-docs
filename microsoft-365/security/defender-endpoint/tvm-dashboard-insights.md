@@ -54,7 +54,7 @@ Watch this video for a quick overview of what is in the threat and vulnerability
 
 ## Threat and vulnerability management dashboard
 
- ![Microsoft Defender for Endpoint portal](images/tvm-dashboard-devices.png)
+ :::image type="content" source="../../media/tvmdashboard.png" alt-text="Threat and Vulnerability Management dashboard for Devices":::
 
 Area | Description
 :---|:---
