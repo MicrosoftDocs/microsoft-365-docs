@@ -9,7 +9,7 @@ audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 localization_priority: Priority
-ms.collection: 
+ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - remotework
@@ -35,9 +35,8 @@ Microsoft 365 has the capabilities to empower your hybrid workers to work either
 
 ![Empower your hybrid workers with Microsoft 365](../media/empower-people-to-work-remotely/2-m365-remoteworker-solution-businessoverview.png)
 
->[!Note]
->If you are new to Microsoft 365, see [these resources](https://www.microsoft.com/microsoft-365).
->
+> [!NOTE]
+> If you are new to Microsoft 365, see [these resources](https://www.microsoft.com/microsoft-365).
 
 Watch this video for an overview of the deployment process.
 <br>
@@ -48,9 +47,9 @@ For IT professionals managing onsite and cloud-based infrastructure to enable hy
 
 - Connected
 
-  From anywhere in the world and at any time, your workers are able to access: 
+  From anywhere in the world and at any time, your workers are able to access:
 
-  - Cloud-based services and data in your Microsoft 365 subscription. 
+  - Cloud-based services and data in your Microsoft 365 subscription.
 
   - Organization resources, such those offered by on-premises application datacenters.
 
@@ -66,11 +65,11 @@ For IT professionals managing onsite and cloud-based infrastructure to enable hy
 
   Your hybrid workers can be as productive as on-premises in a highly collaborative way with:
 
-  - Online meetings and chat sessions with Teams. 
+  - Online meetings and chat sessions with Teams.
 
   - Shared workspaces for cloud-based file storage with global accessibility and real-time collaboration with SharePoint and OneDrive.
 
-  - Shared tasks and workflows to divide up the work and get things done. 
+  - Shared tasks and workflows to divide up the work and get things done.
 
 For a seamless sign-in experience, your on-premises Active Directory Domain Services (AD DS) user accounts should be synchronized with Azure Active Directory (Azure AD). To protect your Windows 10 devices, they should be enrolled in Intune. Here is a high-level view of the infrastructure.
 
@@ -81,15 +80,15 @@ To enable the capabilities of Microsoft 365 for your hybrid workers, use these M
 | Capability or feature | Description | Licensing |
 |:-------|:-----|:-------|
 | MFA enforced with security defaults	| Protect against compromised identities and devices by requiring a second form of authentication for sign-ins. Security defaults requires MFA for all user accounts.	| Microsoft 365 E3 or E5 |
-| MFA enforced with Conditional Access| Require MFA based on the properties of the sign-in with Conditional Access policies.	| Microsoft 365 E3 or E5 | 
-| MFA enforced with risk-based Conditional Access	| Require MFA based on the risk of the user sign-in with Microsoft Defender for Identity. | Microsoft 365 E5 or E3 with Azure AD Premium P2 licenses | 
+| MFA enforced with Conditional Access| Require MFA based on the properties of the sign-in with Conditional Access policies.	| Microsoft 365 E3 or E5 |
+| MFA enforced with risk-based Conditional Access	| Require MFA based on the risk of the user sign-in with Microsoft Defender for Identity. | Microsoft 365 E5 or E3 with Azure AD Premium P2 licenses |
 | Self-Service Password Reset (SSPR)	| Allow your users to reset or unlock their passwords or accounts.	| Microsoft 365 E3 or E5 |
 | Azure AD Application Proxy	| Provide secure remote access for web-based applications hosted on intranet servers.	| Requires separate paid Azure subscription |
 | Azure Point-to-Site VPN	| Create a secure connection from a remote worker’s device to your intranet through an Azure virtual network.	| Requires separate paid Azure subscription |
 | Windows Virtual Desktop	| Support remote workers who can only use their personal and unmanaged devices with virtual desktops running in Azure. | Requires separate paid Azure subscription |
-| Remote Desktop Services (RDS)	| Allow employees to connect into Windows-based computers on your intranet.	| Microsoft 365 E3 or E5 | 
+| Remote Desktop Services (RDS)	| Allow employees to connect into Windows-based computers on your intranet.	| Microsoft 365 E3 or E5 |
 | Remote Desktop Services Gateway	| Encrypt communications and prevent the RDS hosts from being directly exposed to the Internet.	| Requires separate Windows Server licenses |
-| Microsoft Intune | Manage devices and applications.	| Microsoft 365 E3 or E5 | 
+| Microsoft Intune | Manage devices and applications.	| Microsoft 365 E3 or E5 |
 | Configuration Manager	| Manage software installations, updates, and settings on your devices | Requires separate Configuration Manager licenses |
 | Desktop Analytics	| Determine the update readiness of your Windows clients.	| Requires separate Configuration Manager licenses |
 | Windows Autopilot	| Set up and pre-configure new Windows 10 devices for productive use.	| Microsoft 365 E3 or E5 |
