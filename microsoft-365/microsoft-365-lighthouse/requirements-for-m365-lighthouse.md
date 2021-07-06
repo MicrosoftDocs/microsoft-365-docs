@@ -63,5 +63,5 @@ Microsoft Defender Antivirus is part of the Windows operating system and is enab
 [Overview of device management]() (article)\
 [Overview of user management]() (article)\
 [Overview of threat management]() (article)\
-[Microsoft 365 Lighthouse FAQs](m365-lighthouse-faq.yml) (article)
+[Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)
 
