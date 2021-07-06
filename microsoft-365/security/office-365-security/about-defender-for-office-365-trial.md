@@ -38,17 +38,17 @@ A Microsoft Defender for Office 365 trial is the easiest way to try the capabili
 |Feature|Description|
 |---|---|
 |[Exclusive settings in anti-phishing policies](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)|User impersonation protection, domain impersonation protection, mailbox intelligence, and advanced phishing thresholds.|
-|[Safe Attachments in Microsoft Defender for Office 365](safe-attachments.md)|Inspect email attachments and other files in a controlled detonation environment to catch new and evasive malware|
-|[Safe Links in Microsoft Defender for Office 365](safe-links.md)|Perform time-of-click checks to ensure URLs that might have passed initial inspection have not been weaponized|
-|[Threat Trackers](threat-trackers.md)<sup>\*</sup>|Use informative widgets and views to identify cybersecurity issues that might impact your organization|
-|[Threat Explorer](threat-explorer.md)<sup>\*</sup>|Hunt with near real-time information about threats in your Office 365 email|
-|[Automated investigation and response (AIR)](office-365-air.md)<sup>\*</sup>|Automatically locate and remediate threat objects as alerts are triggered|
-|[Attack simulation training](attack-simulation-training.md)<sup>\*</sup>|Train your users to identify phishing attacks and respond appropriately|
-|[Campaign Views in Microsoft Defender for Office 365](campaigns.md)<sup>\*</sup>|Investigate and respond to large-scale malicious email activity|
-|[Exclusive reports in Defender for Office 365](view-reports-for-mdo.md)|Get visibility over Safe Attachments, Safe Links, and other Defender for Office 365 capabilities|
+|[Safe Attachments](safe-attachments.md)|Inspect email attachments and other files in a controlled detonation environment to catch new and evasive malware.|
+|[Safe Links](safe-links.md)|Perform time-of-click checks to ensure URLs that might have passed initial inspection have not been weaponized.|
+|[Threat Trackers](threat-trackers.md)<sup>\*</sup>|Use informative widgets and views to identify cybersecurity issues that might impact your organization.|
+|[Threat Explorer](threat-explorer.md)<sup>\*</sup>|Hunt with near real-time information about threats in your Office 365 email.|
+|[Automated investigation and response (AIR)](office-365-air.md)<sup>\*</sup>|Automatically locate and remediate threat objects as alerts are triggered.|
+|[Attack simulation training](attack-simulation-training.md)<sup>\*</sup>|Train your users to identify phishing attacks and respond appropriately.|
+|[Campaign Views](campaigns.md)<sup>\*</sup>|Investigate and respond to large-scale malicious email activity.|
+|[Reports using Defender for Office 365 capabilities](view-reports-for-mdo.md)|View reports including threat protection status, URL threat protection, mail latency, and more.|
 |
 
-<sup>\*</sup> This is a Defender for Office 365 Plan 2 feature.
+<sup>\*</sup> Defender for Office 365 Plan 2 features that are available as part of the trial.
 
 > [!NOTE]
 > The automated configuration that's described in this article is currently in Public Preview and might not be available in your organization.
@@ -126,7 +126,7 @@ Rich simulation and training capabilities along with integrated experiences with
 
 - [Get started using Attack simulation training](attack-simulation-training-get-started.md)
 
-### Secure posture
+### Security posture
 
 Recommended templates and configuration insights help customers get and stay secure.
 
