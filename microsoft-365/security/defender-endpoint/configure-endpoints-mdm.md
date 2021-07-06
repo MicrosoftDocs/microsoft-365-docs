@@ -1,6 +1,6 @@
 ---
 title: Onboard Windows 10 devices using Mobile Device Management tools
-description: Use Mobile Device Management tools to deploy the configuration package on devices so that they are onboarded to the service.
+description: Use Mobile Device Management tools to deploy the configuration package on devices so that the devices are onboarded to the service.
 keywords: onboard devices using mdm, device management, onboard Microsoft Defender for Endpoint devices, mdm
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,7 +18,7 @@ ms.topic: article
 ms.technology: mde
 ---
 
-# Onboard Windows 10 devices using Mobile Device Management tools
+# Onboard the Windows 10 devices using Mobile Device Management tools
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
