@@ -15,7 +15,7 @@ ms.custom: nextgen
 ms.reviewer: tewchen, pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.date: 05/08/2021
+ms.date: 07/06/2021
 ---
 
 # Microsoft Defender Antivirus compatibility
@@ -32,7 +32,7 @@ Microsoft Defender Antivirus is automatically enabled and installed on endpoints
 
 ## Keep the following points in mind
 
-- In active mode, Microsoft Defender Antivirus is used as the antivirus app on the machine. All configuration made with Configuration Manager, Group Policy, Intune, or other management products will apply. Files are scanned and threats remediated, and detection information are reported in your configuration tool (such as Configuration Manager or the Microsoft Defender Antivirus app on the machine itself).
+- In active mode, Microsoft Defender Antivirus is used as the antivirus app on the machine. All configuration made with Configuration Manager, Group Policy, Intune, or other management products will apply. Files are scanned and threats remediated, and detection information is reported in your configuration tool (such as Configuration Manager or the Microsoft Defender Antivirus app on the machine itself).
 
 - In passive mode, Microsoft Defender Antivirus is not used as the antivirus app, and threats are not remediated by Microsoft Defender Antivirus. Files are scanned and reports are provided for threat detections that are shared with the Microsoft Defender for Endpoint service. You might see alerts in the [security center](microsoft-defender-security-center.md) showing Microsoft Defender Antivirus as a source, even when Microsoft Defender Antivirus is in passive mode.
 
@@ -40,7 +40,7 @@ Microsoft Defender Antivirus is automatically enabled and installed on endpoints
 
 - When disabled, Microsoft Defender Antivirus is not used as the antivirus app. Files are not scanned and threats are not remediated. Disabling/uninstalling Microsoft Defender Antivirus is not recommended in general; if possible, keep Microsoft Defender Antivirus in passive mode if you are using a non-Microsoft antimalware/antivirus solution.
 
-- If you are enrolled in Microsoft Defender for Endpoint and you are using a third-party antimalware product, then passive mode is enabled. The service requires common information sharing from Microsoft Defender Antivirus service in order to properly monitor your devices and network for intrusion attempts and attacks. To learn more, see [Microsoft Defender Antivirus compatibility with Microsoft Defender for Endpoint](defender-compatibility.md). 
+- If you are enrolled in Microsoft Defender for Endpoint and you are using a third-party antimalware product, then Microsoft Defender Antivirus is enabled in passive mode. The service requires common information sharing from Microsoft Defender Antivirus service in order to properly monitor your devices and network for intrusion attempts and attacks. To learn more, see [Microsoft Defender Antivirus compatibility with Microsoft Defender for Endpoint](defender-compatibility.md). 
 
 - When Microsoft Defender Antivirus is in passive mode, you can still [manage updates for Microsoft Defender Antivirus](manage-updates-baselines-microsoft-defender-antivirus.md); however, you can't move Microsoft Defender Antivirus into active mode if your devices have an up-to-date, non-Microsoft antivirus product that is providing real-time protection from malware. For optimal security layered defense and detection efficacy, make sure to update the [Microsoft Defender Antivirus protection (Security intelligence update, Engine, and Platform)](manage-updates-baselines-microsoft-defender-antivirus.md) even if Microsoft Defender Antivirus is running in passive mode.
 
