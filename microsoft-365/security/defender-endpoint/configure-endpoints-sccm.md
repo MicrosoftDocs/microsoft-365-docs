@@ -66,9 +66,9 @@ Check out the [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/publ
 
 
 
-1. Open the Configuration Manager configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from [Microsoft Defender Security Center](https://securitycenter.windows.com/):
+1. Open the Configuration Manager configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from [Microsoft 365 Defender portal](https://security.microsoft.com/):
 
-    1. In the navigation pane, select **Settings** > **Onboarding**.
+    1. In the navigation pane, select **Settings** > **Endpoints** > **Device management** > **Onboarding**.
     
     1. Select Windows 10 as the operating system.
 
@@ -97,10 +97,10 @@ For more information, see [Configure Detection Methods in System Center 2012 R2 
 
 ### Configure sample collection settings
 
-For each device, you can set a configuration value to state whether samples can be collected from the device when a request is made through Microsoft Defender Security Center to submit a file for deep analysis.
+For each device, you can set a configuration value to state whether samples can be collected from the device when a request is made through Microsoft 365 Defender to submit a file for deep analysis.
 
 >[!NOTE]
->These configuration settings are typically done through Configuration Manager. 
+>These configuration settings are typically done through Configuration Manager.
 
 You can set a compliance rule for configuration item in Configuration Manager to change the sample share setting on a device.
 
@@ -175,9 +175,9 @@ If you use Microsoft Endpoint Manager current branch, see [Create an offboarding
 
 ### Offboard devices using System Center 2012 R2 Configuration Manager
 
-1. Get the offboarding package from [Microsoft Defender Security Center](https://securitycenter.windows.com/):
+1. Get the offboarding package from [Microsoft 365 Defender portal](https://security.microsoft.com/):
 
-    1. In the navigation pane, select **Settings** >  **Offboarding**.
+    1. In the navigation pane, select **Settings** > **Endpoints** > **Device management** >  **Offboarding**.
 
     1. Select Windows 10 as the operating system.
 
