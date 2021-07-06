@@ -63,6 +63,14 @@ At least one certificate connector has an error. If you need this connector for 
 
 You have at least one certificate connector and no errors are reported. However, in preparation for deployment, you might need to create a profile to reuse the connector for Microsoft Managed Desktop devices. For more information, see [Prepare certificates and network profiles for Microsoft Managed Desktop](certs-wifi-lan.md).
 
+### Company Portal
+
+Microsoft Managed Desktop requires that IT administrators install Intune Company Portal for their users with Microsoft Managed Desktop devices. 
+
+**Not ready**
+
+You do not have Company Portal installed for your users. Purchase Company Portal and force a sync between Intune and Microsoft Store for Business. For more information, see [Install Intune Company Portal on devices](../get-started/company-portal.md).
+
 
 ### Conditional access policies
 
@@ -251,14 +259,13 @@ Windows 10 devices in your Azure AD organization must be able to automatically e
 
 Make sure the **MDM User scope** is set to **Some** or **All**, not **None**. If you choose **Some**, come back after enrollment and select the **Modern Workplace -All** Azure AD group for **Groups** or an equivalent group targeting all of your Microsoft Managed Desktop users.  See [Set up enrollment for Windows devices by using Microsoft Intune](/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment).
 
-
 ### Ad hoc subscriptions
 
 Advises how to check a setting that (if set to "false") might prevent Enterprise State Roaming from working correctly.
 
 **Advisory**
 
-Ensure that **AllowAdHocSubscriptions** is set to **True**. Otherwise, Enterprise State Roaming might not work. For more information, see [Set-MsolCompanySettings](/powershell/module/msonline/set-msolcompanysettings?view=azureadps-1.0).
+Ensure that **AllowAdHocSubscriptions** is set to **True**. Otherwise, Enterprise State Roaming might not work. For more information, see [Set-MsolCompanySettings](/powershell/module/msonline/set-msolcompanysettings).
 
 
 ### Enterprise State Roaming

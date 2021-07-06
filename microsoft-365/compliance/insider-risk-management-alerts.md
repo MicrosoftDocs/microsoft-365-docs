@@ -27,14 +27,14 @@ The insider risk **Alert dashboard** allows you to view and act on alerts genera
 - **Total alerts that need review**: The total number of alerts needing review and triage are listed, including a breakdown by alert severity.
 - **Open alerts over past 30 days**: The total number of alerts created by policy matches over the last 30 days, sorted by high, medium, and low alert severity levels.
 - **Average time to resolve alerts**: A summary of useful alert statistics:
-    - Average time to resolve high severity alerts, listed in hours, days, or months.
-    - Average time to resolve medium severity alerts, listed in hours, days, or months.
-    - Average time to resolve low severity alerts, listed in hours, days, or months.
+  - Average time to resolve high severity alerts, listed in hours, days, or months.
+  - Average time to resolve medium severity alerts, listed in hours, days, or months.
+  - Average time to resolve low severity alerts, listed in hours, days, or months.
 
 ![Insider risk management alert dashboard](../media/insider-risk-alerts-dashboard.png)
 
->[!NOTE]
->Insider risk management uses built-in alert throttling to help protect and optimize your risk investigation and review experience. This throttling guards against issues that might result in an overload of policy alerts, such as misconfigured data connectors or DLP policies. As a result, there might be a delay in displaying new alerts for a user.
+> [!NOTE]
+> Insider risk management uses built-in alert throttling to help protect and optimize your risk investigation and review experience. This throttling guards against issues that might result in an overload of policy alerts, such as misconfigured data connectors or DLP policies. As a result, there might be a delay in displaying new alerts for a user.
 
 ## Alert status and severity
 
@@ -86,8 +86,8 @@ To triage an insider risk alert, complete the following steps:
 
 ## Activity explorer (preview)
 
->[!NOTE]
->Activity explorer is available in the alert management area for users with triggering events after this feature is available in your organization.
+> [!NOTE]
+> Activity explorer is available in the alert management area for users with triggering events after this feature is available in your organization.
 
 The Activity explorer provides risk investigators and analysts with a comprehensive analytic tool that provides detailed information about alerts. With the Activity explorer, reviewers can quickly review a timeline of detected risky activity and identify and filter all risk activities associated with alerts. To filter alerts on the Activity explorer, select the Filter control. You can filter alerts by one or more attributes listed in the details pane for the alert. Activity explorer also supports customizable columns to help investigators and analysts focus the dashboard on the information most important to them.
 

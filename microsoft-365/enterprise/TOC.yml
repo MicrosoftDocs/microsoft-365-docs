@@ -187,8 +187,6 @@
               href: microsoft-365-isolation-in-microsoft-365.md
             - name: Tenant Isolation in Search
               href: microsoft-365-isolation-in-microsoft-365-search.md
-            - name: Tenant Isolation in Video
-              href: microsoft-365-isolation-in-microsoft-365-video.md
             - name: Tenant Isolation in the Office Graph and Delve
               href: microsoft-365-isolation-in-graph-and-delve.md
     - name: Deploy
