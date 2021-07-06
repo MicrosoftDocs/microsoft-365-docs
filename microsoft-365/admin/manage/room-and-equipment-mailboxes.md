@@ -101,7 +101,7 @@ Open the meeting you scheduled in Outlook and then remove the room or equipment 
   
 ### Does a room mailbox or equipment mailbox need a product license?
 
-No. While most people in your organization need a license to use Microsoft 365, you don't need to assign a license to a room mailbox or equipment mailbox.
+No. While most people in your organization need a license to use Microsoft 365, you don't need to assign a license to a room mailbox or equipment mailbox, in case the resource mailbox needs to have a size bigger than 50 GB, or, in case some features are needed (Retention policies from Security and Compliance, or, Hold from Exchange Online), or, in case the resource mailbox doesn't need an Online Archive attached to it.
   
 ### Do I need an owner in charge of booking the rooms or equipment?
 
