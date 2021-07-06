@@ -152,8 +152,7 @@ After a new package version is released, support for the previous two versions i
 ### Known Issues
 No known issues  
 <br/>
-</details><br/><br/>
-<details>
+</details><details>
 <summary> February-2021 (Platform: 4.18.2102.3 | Engine: 1.1.17900.7)</summary>
 
 &ensp;Security intelligence update version: **1.333.7.0**  
