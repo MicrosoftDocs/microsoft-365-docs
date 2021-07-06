@@ -130,11 +130,11 @@ When there are conflict types for the same media, the system will apply the firs
 
 **Property name: Sid**
 
-Description: Defines whether apply this policy over specific user or user group; one entry can have maximum one Sid and an entry without any Sid means applying the policy over the machine.
+Description: Local coomputer Sid or the Sid of the AD object, defines whether apply this policy over specific user or user group; one entry can have maximum one Sid and an entry without any Sid means applying the policy over the machine.
 
 **Property name: ComputerSid**
 
-Description: Defines whether apply this policy over specific machine or machine group; one entry can have maximum one ComputerSid and an entry without any ComputerSid means applying the policy over the machine. If you want to apply an Entry to a specific user and specific machine, add both Sid and ComputerSid into the same Entry.
+Description: Local coomputer Sid or the Sid of the AD object, defines whether apply this policy over specific machine or machine group; one entry can have maximum one ComputerSid and an entry without any ComputerSid means applying the policy over the machine. If you want to apply an Entry to a specific user and specific machine, add both Sid and ComputerSid into the same Entry.
 
 **Property name: Options**
 
