@@ -27,7 +27,7 @@ ms.technology: mde
 
 ## Microsoft Defender Antivirus: Your next-generation protection
 
-Microsoft Defender Antivirus is the next-generation protection component of Microsoft Defender for Endpoint. This protection brings together machine learning, big-data analysis, in-depth threat resistance research, and the Microsoft cloud infrastructure to protect devices in your enterprise organization. Your next-generation protection services include the following capabilities:
+Microsoft Defender Antivirus is your next-generation protection in Microsoft Defender for Endpoint. This protection brings together machine learning, big-data analysis, in-depth threat resistance research, and the Microsoft cloud infrastructure to protect devices in your enterprise organization. Your next-generation protection services include the following capabilities:
 
 - [Behavior-based, heuristic, and real-time antivirus protection](configure-protection-features-microsoft-defender-antivirus.md), which includes always-on scanning using file and process behavior monitoring and other heuristics (also known as *real-time protection*). It also includes detecting and blocking apps that are deemed unsafe, but might not be detected as malware.
 - [Cloud-delivered protection](cloud-protection-microsoft-defender-antivirus.md), which includes near-instant detection and blocking of new and emerging threats.
@@ -52,7 +52,7 @@ Microsoft Defender Antivirus has the same hardware requirements as of Windows 10
 For information on how to configure next-generation protection services, see [Configure Microsoft Defender Antivirus features](configure-microsoft-defender-antivirus-features.md).
 
 > [!Note]  
-> Configuration and management is largely the same in Windows Server 2016 and Windows Server 2019, while running Microsoft Defender Antivirus; however, there are some differences. To learn more, see [Microsoft Defender Antivirus on Windows Server 2016 and 2019](microsoft-defender-antivirus-on-windows-server.md).
+> Configuration and management is largely the same in Windows Server as in Windows clients. However, there are some differences. To learn more, see [Microsoft Defender Antivirus on Windows Server 2016 and 2019](microsoft-defender-antivirus-on-windows-server.md).
 
 ## See also
 
