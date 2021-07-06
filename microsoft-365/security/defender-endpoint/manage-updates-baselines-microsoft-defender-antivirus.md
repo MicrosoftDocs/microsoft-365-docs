@@ -16,7 +16,7 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.date: 06/23/2021
+ms.date: 07/06/2021
 ---
 
 # Manage Microsoft Defender Antivirus updates and apply baselines
@@ -72,6 +72,29 @@ All our updates contain
 - performance improvements;
 - serviceability improvements; and 
 - integration improvements (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)).
+<br/>
+<details>
+<summary> June-2021 (Platform: 4.18.2106.5| Engine: 1.1.18300.4)</summary>
+ 
+&ensp;Security intelligence update version:  **1.343.17.0**  
+&ensp;Released: **June 28th, 2021**  
+&ensp;Platform: **4.18.2106.5**  
+&ensp;Engine: **: 1.1.18300.4**  
+&ensp;Support phase: **Security and Critical Updates**
+ 
+Engine version: : 1.1.18300.4
+Security intelligence update version: 1.343.17.0
+ 
+### What's new
+- New controls for managing the gradual rollout process of Microsoft Defender updates. See [Manage the gradual rollout process for Microsoft Defender updates](manage-gradual-rollout.md)
+- Improvement to Behavior Monitoring engine
+- Improvements to rollout of antimalware definitions 
+- Extended Edge network event inspections
+ 
+### Known Issues
+No known issues  
+<br/>
+</details>
 <br/><br/>
 <details>
 <summary> May-2021 (Platform: 4.18.2105.4 | Engine: 1.1.18200.4)</summary>
