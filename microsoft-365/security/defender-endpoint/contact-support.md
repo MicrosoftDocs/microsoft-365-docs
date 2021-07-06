@@ -65,7 +65,7 @@ In the widget you will be offered two options:
 ## Find solutions to common problems
 This option includes articles that might be related to the question you may ask. Just start typing the question in the search box and articles related to your search will be surfaced.
 
-:::image type="content" source="../../media/contactsupport1.png" alt-text="contactsupport1":::
+:::image type="content" source="../../media/contactsupport1.png" alt-text="How can we help?":::
 
 In case the suggested articles are not sufficient, you can open a service request.
 
