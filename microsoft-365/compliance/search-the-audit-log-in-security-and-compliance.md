@@ -26,37 +26,21 @@ ms.custom: seo-marvel-apr2020
 Need to find if a user viewed a specific document or purged an item from their mailbox? If so, you can use the Microsoft 365 compliance center to search the unified audit log to view user and administrator activity in your organization. Why a unified audit log? Because you can search for the following types of [user and admin activity](#audited-activities) in Microsoft 365:
 
 - User activity in SharePoint Online and OneDrive for Business
-
 - User activity in Exchange Online (Exchange mailbox audit logging)
-
 - Admin activity in SharePoint Online
-
 - Admin activity in Azure Active Directory (the directory service for Microsoft 365)
-
 - Admin activity in Exchange Online (Exchange admin audit logging)
-
 - eDiscovery activities in the security and compliance center
-
 - User and admin activity in Power BI
-
 - User and admin activity in Microsoft Teams
-
 - User and admin activity in Dynamics 365
-
 - User and admin activity in Yammer
-
 - User and admin activity in Microsoft Power Automate
-
 - User and admin activity in Microsoft Stream
-
 - Analyst and admin activity in Microsoft Workplace Analytics
-
 - User and admin activity in Microsoft Power Apps
-
 - User and admin activity in Microsoft Forms
-
 - User and admin activity for sensitivity labels for sites that use SharePoint Online or Microsoft Teams
-
 - Admin activity in Briefing email and MyAnalytics
 
 ## Requirements to search the audit log
@@ -68,6 +52,7 @@ Be sure to read the following items before you start searching the audit log.
   ```powershell
   Get-AdminAuditLogConfig | FL UnifiedAuditLogIngestionEnabled
   ```
+
   The value of `True` for the *UnifiedAuditLogIngestionEnabled* property indicates that audit log search is turned on. For more information, see [Turn audit log search on or off](turn-audit-log-search-on-or-off.md).
 
 - You have to be assigned the View-Only Audit Logs or Audit Logs role in Exchange Online to search the audit log. By default, these roles are assigned to the Compliance Management and Organization Management role groups on the **Permissions** page in the Exchange admin center. Note global administrators in Office 365 and Microsoft 365 are automatically added as members of the Organization Management role group in Exchange Online. To give a user the ability to search the audit log with the minimum level of privileges, you can create a custom role group in Exchange Online, add the View-Only Audit Logs or Audit Logs role, and then add the user as a member of the new role group. For more information, see [Manage role groups in Exchange Online](/Exchange/permissions-exo/role-groups).
@@ -109,8 +94,12 @@ Be sure to read the following items before you start searching the audit log.
 
 - It can take up to 30 minutes or up to 24 hours after an event occurs for the corresponding audit log record to be returned in the results of an audit log search. The following table shows the time it takes for the different services in Office 365.
 
+  <br>
+
+  ****
+
   |Microsoft 365 service or feature|30 minutes|24 hours|
-  |:-----|:-----:|:-----:|
+  |---|:---:|:---:|
   |Defender for Office 365 and Threat Intelligence|![Check mark](../media/checkmark.png)||
   |Azure Active Directory (user login events)||![Check mark](../media/checkmark.png)|
   |Azure Active Directory (admin events)||![Check mark](../media/checkmark.png)|
@@ -128,9 +117,9 @@ Be sure to read the following items before you start searching the audit log.
   |Sensitivity labels||![Check mark](../media/checkmark.png)|
   |SharePoint Online and OneDrive for Business|![Check mark](../media/checkmark.png)||
   |Workplace Analytics|![Check mark](../media/checkmark.png)||
-  |Yammer||![Check mark](../media/checkmark.png)||
-  |Microsoft Forms|![Check mark](../media/checkmark.png)|
-  ||||
+  |Yammer||![Check mark](../media/checkmark.png)|
+  |Microsoft Forms|![Check mark](../media/checkmark.png)||
+  |
 
 - Azure Active Directory (Azure AD) is the directory service for Office 365. The unified audit log contains user, group, application, domain, and directory activities performed in the Microsoft 365 admin center or in the Azure management portal. For a complete list of Azure AD events, see [Azure Active Directory Audit Report Events](/azure/active-directory/reports-monitoring/concept-audit-logs).
 

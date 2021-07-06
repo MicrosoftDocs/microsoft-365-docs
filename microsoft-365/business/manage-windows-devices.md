@@ -104,13 +104,13 @@ The first command will establish a connection with the Microsoft cloud, and when
 
 If you do not see the policy **Enable automatic MDM enrollment using default Azure AD credentials**, it may be because you don’t have the ADMX installed for Windows 10, version 1803, or later. To fix the issue, follow these steps (Note: the latest MDM.admx is backwards compatible):
 
-1.	Download: [Administrative Templates (.admx) for Windows 10 October 2020 Update (20H2)](https://www.microsoft.com/download/102157).
-2.	Install the package on a Domain Controller.
-3.	Navigate, depending on the Administrative Templates version to the folder: **C:\Program Files (x86)\Microsoft Group Policy\Windows 10 October 2020 Update (20H2)**.
-4.	Rename the **Policy Definitions** folder in the above path to **PolicyDefinitions**.
-5.	Copy the **PolicyDefinitions** folder to your SYSVOL share, by default located at **C:\Windows\SYSVOL\domain\Policies**. 
-    -	If you plan to use a central policy store for your entire domain, add the contents of PolicyDefinitions there.
-6.	In case you have several Domain Controllers, wait for SYSVOL to replicate for the policies to be available. This procedure will work for any future version of the Administrative Templates as well.
+1. Download: [Administrative Templates (.admx) for Windows 10 October 2020 Update (20H2)](https://www.microsoft.com/download/102157).
+2. Install the package on a Domain Controller.
+3. Navigate, depending on the Administrative Templates version to the folder: **C:\Program Files (x86)\Microsoft Group Policy\Windows 10 October 2020 Update (20H2)**.
+4. Rename the **Policy Definitions** folder in the above path to **PolicyDefinitions**.
+5. Copy the **PolicyDefinitions** folder to your SYSVOL share, by default located at **C:\Windows\SYSVOL\domain\Policies**.
+   - If you plan to use a central policy store for your entire domain, add the contents of PolicyDefinitions there.
+6. In case you have several Domain Controllers, wait for SYSVOL to replicate for the policies to be available. This procedure will work for any future version of the Administrative Templates as well.
 
 At this point you should be able to see the policy **Enable automatic MDM enrollment using default Azure AD credentials** available.
 
