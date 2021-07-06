@@ -33,3 +33,9 @@ Visit the [Microsoft Defender for Endpoint demo website](https://demo.wd.microso
 - Block at first sight (BAFS) protection
 - Potentially unwanted applications (PUA) protection
 
+## Configure next-generation protection services
+
+For information on how to configure next-generation protection services, see [Configure Microsoft Defender Antivirus features](configure-microsoft-defender-antivirus-features.md).
+
+> [!Note]  
+> Configuration and management is largely the same in Windows Server as in Windows clients. However, there are some differences. To learn more, see [Microsoft Defender Antivirus on Windows Server 2016 and 2019](microsoft-defender-antivirus-on-windows-server.md).

@@ -24,14 +24,7 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
 
-Microsoft Defender Antivirus is a major component of your next-generation protection in Microsoft Defender for Endpoint. This protection brings together machine learning, big-data analysis, in-depth threat resistance research, and the Microsoft cloud infrastructure to protect devices in your enterprise organization. 
-
-## Try a demo!
-
-Visit the [Microsoft Defender for Endpoint demo website](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to confirm the following protection features are working and explore them using demo scenarios:
-- Cloud-delivered protection
-- Block at first sight (BAFS) protection
-- Potentially unwanted applications (PUA) protection
+Microsoft Defender Antivirus is a major component of your next-generation protection in Microsoft Defender for Endpoint. This protection brings together machine learning, big-data analysis, in-depth threat resistance research, and the Microsoft cloud infrastructure to protect devices (or endpoints) in your organization. Microsoft Defender Antivirus is built into Windows. It works with Microsoft Defender for Endpoint to provide protection on your device and in the cloud.
 
 ## Minimum system requirements
 
@@ -40,12 +33,12 @@ Microsoft Defender Antivirus has the same hardware requirements as of Windows 10
 - [Minimum hardware requirements](/windows-hardware/design/minimum/minimum-hardware-requirements-overview)
 - [Hardware component guidelines](/windows-hardware/design/component-guidelines/components)
 
-## Configure next-generation protection services
+## Compatibility with other antivirus products
 
-For information on how to configure next-generation protection services, see [Configure Microsoft Defender Antivirus features](configure-microsoft-defender-antivirus-features.md).
+If you're using a non-Microsoft antivirus/antimalware product on your device, you might be able to run Microsoft Defender Antivirus in passive mode, alongside the non-Microsoft antivirus solution. To learn more, see [Microsoft Defender Antivirus compatibility](microsoft-defender-antivirus-compatibility.md).
 
-> [!Note]  
-> Configuration and management is largely the same in Windows Server as in Windows clients. However, there are some differences. To learn more, see [Microsoft Defender Antivirus on Windows Server 2016 and 2019](microsoft-defender-antivirus-on-windows-server.md).
+
+
 
 ## See also
 
