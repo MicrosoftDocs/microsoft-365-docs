@@ -116,6 +116,13 @@ sections:
         answer: |
           No, you can't import PST files to public folders.
 
+      - question: |
+          Are there any screen resolution requirements when I create a network upload import job?
+        answer: |
+          If the screen resolution on your local computer is set to 1366 x 768, you may have issues creating an import job. If this is the case, we recommend that you change the screen resolution to a different setting and then create a new import job. We're working to fix this issue.     
+          
+          
+          
           ## Using drive shipping to import PST files
          
           For step-by-step instructions, see [Use drive shipping to import PST files to Office 365](use-drive-shipping-to-import-pst-files-to-office-365.md).
@@ -262,3 +269,8 @@ sections:
           If I have to ship my hard drive to another country, is there anything I need to do?
         answer: |
           The hard drive that you ship to Microsoft might have to cross international borders. If so, you're responsible for ensuring that the hard drive and the data it contains are imported and/or exported in accordance with the applicable laws. Before shipping a hard drive, check with your advisors to verify that your drive and data can legally be shipped to the specified Microsoft data center. This will help to ensure that it reaches Microsoft in a timely manner.
+
+      - question: |
+          Are there any screen resolution requirements when I create an import job for drive shipping?
+        answer: |
+          If the screen resolution on your local computer is set to 1366 x 768, you may have issues creating an import job. If this is the case, we recommend that you change the screen resolution to a different setting and then create a new import job. We're working to fix this issue.     
