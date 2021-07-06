@@ -44,7 +44,17 @@ To learn more, see [Microsoft Defender Antivirus compatibility](microsoft-defend
 
 ## Check the state of Microsoft Defender Antivirus on your device
 
-If you want to check the state of Microsoft Defender Antivirus on your device, you can use one of several methods, such as Command Prompt or Windows PowerShell.
+If you want to check the state of Microsoft Defender Antivirus on your device, you can use one of several methods, such as the Windows Security app or Windows PowerShell.
+
+### Use the Windows Security app to check status
+
+1. On your Windows device, select the Start menu, and begin typing `Security`. Then open the Windows Security app in the results.
+
+2. Select **Virus & threat protection**.
+
+3. Under **Virus & threat protection settings**, choose **Manage settings**.
+
+You'll see the name of your antivirus/antimalware solution on the settings page.
 
 ### Use PowerShell to check status
 
@@ -57,20 +67,13 @@ If you want to check the state of Microsoft Defender Antivirus on your device, y
    - **Normal** means Microsoft Defender Antivirus is running in active mode.
    - **Passive mode** means Microsoft Defender Antivirus running, but is not the primary antivirus/antimalware product on your device.
    - **EDR Block Mode** means Microsoft Defender Antivirus is running and a capability in Microsoft Defender for Endpoint that is called "EDR in block mode" is enabled. (See [Endpoint detection and response (EDR) in block mode](edr-in-block-mode.md).)
+   - **SxS Passive Mode** means Microsoft Defender Antivirus is running in passive mode alongside another antivirus/antimalware product, and your device is not onboarded to Microsoft Defender for Endpoint. In this case, limited periodic scanning is used for Microsoft Defender Antivirus. To learn more, see [Use limited periodic scanning in Microsoft Defender Antivirus](limited-periodic-scanning-microsoft-defender-antivirus.md).
 
 To learn more about the Get-MpComputerStatus PowerShell cmdlet, see the reference article [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus?view=windowsserver2019-ps).
 
-### Use Command Prompt to check status
-
-1. Select the Start menu, and begin typing `Command Prompt`. Then open Windows Command Prompt in the results.
-
-2. Type `sc query windefend`.
-
-3. In the list of results, look for the **STATE** row.
-
 ## Get your antivirus/antimalware platform updates
 
-Microsoft releases regular updates to help ensure that your devices have the latest technology to protect against new malware and attack techniques. To learn more, see [Manage Microsoft Defender Antivirus updates and apply baselines](manage-updates-baselines-microsoft-defender-antivirus.md). 
+It's important to keep Microsoft Defender Antivirus, or any antivirus/antimalware solution, up to date. Microsoft releases regular updates to help ensure that your devices have the latest technology to protect against new malware and attack techniques. To learn more, see [Manage Microsoft Defender Antivirus updates and apply baselines](manage-updates-baselines-microsoft-defender-antivirus.md). 
 
 ## See also
 
