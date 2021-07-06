@@ -37,7 +37,9 @@ Microsoft Defender Antivirus has the same hardware requirements as of Windows 10
 
 If you're using a non-Microsoft antivirus/antimalware product on your device, you might be able to run Microsoft Defender Antivirus in passive mode, alongside the non-Microsoft antivirus solution. To learn more, see [Microsoft Defender Antivirus compatibility](microsoft-defender-antivirus-compatibility.md).
 
+## Platform updates
 
+Microsoft releases regular updates to help ensure that your devices have the latest technology to protect against new malware and attack techniques. To learn more, see [Manage Microsoft Defender Antivirus updates and apply baselines](manage-updates-baselines-microsoft-defender-antivirus.md). 
 
 
 ## See also
