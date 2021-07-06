@@ -58,6 +58,10 @@ If you want to check the state of Microsoft Defender Antivirus on your device, y
    - **Passive mode** means Microsoft Defender Antivirus running, but is not the primary antivirus/antimalware product on your device.
    - **EDR Block Mode** means Microsoft Defender Antivirus is running and a capability in Microsoft Defender for Endpoint that is called "EDR in block mode" is enabled. (See [Endpoint detection and response (EDR) in block mode](edr-in-block-mode.md).)
 
+To learn more about the Get-MpComputerStatus PowerShell cmdlet, see the reference article [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus?view=windowsserver2019-ps).
+
+### Use Command Prompt to check status
+
 ## Platform updates
 
 Microsoft releases regular updates to help ensure that your devices have the latest technology to protect against new malware and attack techniques. To learn more, see [Manage Microsoft Defender Antivirus updates and apply baselines](manage-updates-baselines-microsoft-defender-antivirus.md). 
