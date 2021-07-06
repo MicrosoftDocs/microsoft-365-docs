@@ -51,10 +51,9 @@ Accessing the new support widget can be done in one of two ways:
 
 1.  Clicking on the question mark on the top right of the portal and then clicking on "Microsoft support":
 
-    ![Image of widget when question mark is selected](images/contact-support.png)
+    :::image type="content" source="../../media/contactsupport.png" alt-text="contact support":::
 
 2. Clicking on the **Need help?**  button in the bottom right of the Microsoft 365 Defender:
-
 
     ![Image of the need help button](images/need-help.png)
 
@@ -66,7 +65,7 @@ In the widget you will be offered two options:
 ## Find solutions to common problems
 This option includes articles that might be related to the question you may ask. Just start typing the question in the search box and articles related to your search will be surfaced.
 
-![Image of need help widget](images/contact-support1.png)
+:::image type="content" source="../../media/contactsupport1.png" alt-text="contactsupport1":::
 
 In case the suggested articles are not sufficient, you can open a service request.
 
@@ -79,8 +78,7 @@ Learn how to open support tickets by contacting Defender for Endpoint support.
 
 ### Contact support
 This option is available by clicking the icon that looks like a headset. You will then get the following page to submit your support case:
-
-![Image of the open a service request widget](images/contact-support2.png)
+:::image type="content" source="../../media/contactsupport2.png" alt-text="contact support 2":::
 
 1. Fill in a title and description for the issue you are facing, as well as a phone number and email address where we may reach you. 
 
