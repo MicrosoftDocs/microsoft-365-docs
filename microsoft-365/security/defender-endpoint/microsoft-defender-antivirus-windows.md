@@ -28,12 +28,28 @@ Microsoft Defender Antivirus is a major component of your next-generation protec
 
 ## Compatibility with other antivirus products
 
-If you're using a non-Microsoft antivirus/antimalware product on your device, depending on the operating system and whether your device is onboarded to Defender for Endpoint, you might be able to run Microsoft Defender Antivirus in passive mode alongside the non-Microsoft antivirus solution. To learn more, see [Microsoft Defender Antivirus compatibility](microsoft-defender-antivirus-compatibility.md).
+If you're using a non-Microsoft antivirus/antimalware product on your device, you might be able to run Microsoft Defender Antivirus in passive mode alongside the non-Microsoft antivirus solution. It depends on the operating system used and whether your device is onboarded to Defender for Endpoint. To learn more, see [Microsoft Defender Antivirus compatibility](microsoft-defender-antivirus-compatibility.md).
+
+### Comparing active mode, passive mode, and disabled mode
+
+The following table describes what to expect when Microsoft Defender Antivirus is in active mode, passive mode, or disabled.
+
+| Mode  | What happens  |
+|---------|---------|
+| Active mode | In active mode, Microsoft Defender Antivirus is used as the primary antivirus app on the device. Files are scanned, threats are remediated, and detected threats are listed in your organization's security reports and in your Windows Security app.  |
+| Passive mode | In passive mode, Microsoft Defender Antivirus is not used as the primary antivirus app on the device. Files are scanned, and detected threats are reported, but threats are not remediated by Microsoft Defender Antivirus.          |
+| Disabled or uninstalled (not recommended)    | When disabled or uninstalled, Microsoft Defender Antivirus is not used. Files are not scanned, and threats are not remediated.       |
+
+To learn more, see [Microsoft Defender Antivirus compatibility](microsoft-defender-antivirus-compatibility.md).
+
+
+## Check the state of Microsoft Defender Antivirus on your device
+
+
 
 ## Platform updates
 
 Microsoft releases regular updates to help ensure that your devices have the latest technology to protect against new malware and attack techniques. To learn more, see [Manage Microsoft Defender Antivirus updates and apply baselines](manage-updates-baselines-microsoft-defender-antivirus.md). 
-
 
 ## See also
 
