@@ -9,10 +9,10 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: 
+ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
-search.appverid: 
+search.appverid:
 - MOE150
 - MET150
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
@@ -106,7 +106,7 @@ The following table describes the mailbox actions that are available in mailbox 
 |**MailboxLogin**|The user signed into their mailbox.|||![Check mark](../media/checkmark.png)|
 |**MailItemsAccessed**|**Note**: This value is available only for E5 or E5 Compliance add-on subscription users. For more information, see [Set up Advanced Audit in Microsoft 365](set-up-advanced-audit.md). <p> Mail data is accessed by mail protocols and clients.|![Check mark](../media/checkmark.png)<sup>\*</sup>|![Check mark](../media/checkmark.png)<sup>\*</sup>|![Check mark](../media/checkmark.png)<sup>\*</sup>|
 |**MessageBind**|**Note**: This value is available only for E3 users (users without E5 or E5 Compliance add-on subscriptions). <p> A message was viewed in the preview pane or opened by an admin.|![Check mark](../media/checkmark.png)|||
-|**ModifyFolderPermissions**|Although this value is accepted as a mailbox action, it's already included in the **UpdateFolderPermissions** action and isn't audited separately. In other words, don't use this value.|||||
+|**ModifyFolderPermissions**|Although this value is accepted as a mailbox action, it's already included in the **UpdateFolderPermissions** action and isn't audited separately. In other words, don't use this value.||||
 |**Move**|A message was moved to another folder.|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|
 |**MoveToDeletedItems**|A message was deleted and moved to the Deleted Items folder.|![Check mark](../media/checkmark.png)<sup>\*</sup>|![Check mark](../media/checkmark.png)<sup>\*</sup>|![Check mark](../media/checkmark.png)<sup>\*</sup>|
 |**RecordDelete**|An item that's labeled as a record was soft-deleted (moved to the Recoverable Items folder). Items labeled as records can't be permanently deleted (purged from the Recoverable Items folder).|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|
@@ -333,10 +333,10 @@ The value **True** indicates that mailbox audit logging is bypassed for the user
   To retrieve mailbox audit log entries for users without E5 licenses, you can:
 
   - Manually enable mailbox auditing on individual mailboxes (run the command, `Set-Mailbox -Identity <MailboxIdentity> -AuditEnabled $true`). After you do this, you can use audit log searches in the Security & Compliance Center or via the Office 365 Management Activity API.
-  
+
     > [!NOTE]
     > If mailbox auditing already appears to be enabled on the mailbox, but your searches return no results, change the value of the _AuditEnabled_ parameter to `$false` and then back to `$true`.
-  
+
   - Use the following cmdlets in Exchange Online PowerShell:
     - [Search-MailboxAuditLog](/powershell/module/exchange/search-mailboxauditlog) to search the mailbox audit log for specific users.
     - [New-MailboxAuditLogSearch](/powershell/module/exchange/new-mailboxauditlogsearch) to search the mailbox audit log for specific users and to have the results sent via email to specified recipients.
