@@ -23,7 +23,6 @@ ms.technology: mde
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
-
 Microsoft Defender Antivirus is a major component of your next-generation protection in Microsoft Defender for Endpoint. This protection brings together machine learning, big-data analysis, in-depth threat resistance research, and the Microsoft cloud infrastructure to protect devices (or endpoints) in your organization. Microsoft Defender Antivirus is built into Windows, and it works with Microsoft Defender for Endpoint to provide protection on your device and in the cloud. 
 
 ## Compatibility with other antivirus products
@@ -46,7 +45,7 @@ To learn more, see [Microsoft Defender Antivirus compatibility](microsoft-defend
 
 If you want to check the state of Microsoft Defender Antivirus on your device, you can use one of several methods, such as the Windows Security app or Windows PowerShell.
 
-### Use the Windows Security app to check status
+### Use the Windows Security app to check status of Microsoft Defender Antivirus
 
 1. On your Windows device, select the Start menu, and begin typing `Security`. Then open the Windows Security app in the results.
 
@@ -56,7 +55,7 @@ If you want to check the state of Microsoft Defender Antivirus on your device, y
 
 You'll see the name of your antivirus/antimalware solution on the settings page.
 
-### Use PowerShell to check status
+### Use PowerShell to check status of Microsoft Defender Antivirus
 
 1. Select the Start menu, and begin typing `PowerShell`. Then open Windows PowerShell in the results.
 
