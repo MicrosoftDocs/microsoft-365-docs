@@ -15,17 +15,17 @@ ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse                         
 search.appverid: MET150
-description: "For managed service providers using Microsoft 365 Lighthouse, learn about managing user access and more for all of your customers in one location."
+description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, learn about managing user access and more for all of your customers in one location."
 ---
 
 # Overview of Microsoft 365 Lighthouse
 
 > [!NOTE]
-> The features described in this article are in Preview, are subject to change, and are only available to partners who meet the requirements. If your organization does not have Microsoft 365 Lighthouse, see [Sign up for Microsoft 365 Lighthouse](sign-up-m365-lighthouse.md).
+> The features described in this article are in Preview, are subject to change, and are only available to partners who meet the [requirements](requirements-for-m365-lighthouse.md). If your organization does not have Microsoft 365 Lighthouse, see [Sign up for Microsoft 365 Lighthouse](sign-up-m365-lighthouse.md).
 
 Microsoft 365 Lighthouse is an admin portal that helps Managed Service Providers (MSPs) secure and manage devices, data, and users at scale for small- and medium-sized business (SMB) customers who are using Microsoft 365 Business Premium. 
 
-Microsoft 365 Lighthouse simplifies onboarding of Microsoft 365 Business Premium tenants by recommending security configuration baselines tailored to SMB customers and providing multi-tenant views across all customer environments. With Microsoft 365 Lighthouse, partners can scale the management of their customers, focus on what’s most important, quickly find and investigate risks, and take action to get their customers to a healthy and secure state. With Microsoft 365 Lighthouse, partners can scale the management of their customers, focus on what's most important, quickly find and investigate risks, and take action to get their customers to a healthy and secure state.
+Microsoft 365 Lighthouse simplifies onboarding of Microsoft 365 Business Premium tenants by recommending security configuration baselines tailored to SMB customers and providing multi-tenant views across all customer environments. With Microsoft 365 Lighthouse, partners can scale the management of their customers, focus on what's most important, quickly find and investigate risks, and take action to get their customers to a healthy and secure state. With Microsoft 365 Lighthouse, partners can scale the management of their customers, focus on what's most important, quickly find and investigate risks, and take action to get their customers to a healthy and secure state.
 
 No additional costs are associated with using Microsoft 365 Lighthouse to manage Microsoft 365 services and connected devices. Microsoft 365 Lighthouse is currently in preview and available to MSPs enrolled in the Cloud Solution Provider (CSP) program and serving SMB customers with a Microsoft 365 Business Premium subscription.
 
