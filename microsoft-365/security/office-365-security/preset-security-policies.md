@@ -95,7 +95,9 @@ When multiple policies are applied to a user, the following order is applied fro
 3. Custom security policies
 4. Default security policies
 
-In other words, the settings of the **Strict protection** policy override the settings of the **Standard protection** policy, which overrides the settings from a custom policy, which overrides the settings from the default policy.
+In other words, the settings of the **Strict protection** policy override the settings of the **Standard protection** policy, which overrides the settings from a custom policy, which overrides the settings from the default policy. 
+
+For example, if a security setting exists in **Standard protection** and an admin has enabled the **Standard protection** for a user, then the **Standard protection** setting will be applied instead of what is configured for that setting in a custom policy or in the default policy (for the same user). Note: you may have some portion of your org that you want to apply the standard/strict presets only and then for the others in your org you may apply a custom policy to meet specific use cases.
 
 ## Assign preset security policies to users
 
