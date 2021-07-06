@@ -24,17 +24,6 @@ ms.technology: mde
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-## What you need to know
-
-When working with features in public preview, these features:
-
-- May have restricted or limited functionality. For example, the feature may only apply to one platform.
-- Typically go through feature changes before they're generally available (GA).
-- Are fully supported by Microsoft.
-- May only be available in selected geographic regions or cloud environments. For example, the feature may not exist in the government cloud.
-- Individual features in preview may have more usage and support restrictions. If so, this information is typically noted in the feature documentation.
-- The preview versions are provided with a standard support level, and it is recommended for production workloads. 
-
 **Applies to:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
@@ -50,6 +39,19 @@ Learn about new features in the Defender for Endpoint preview release and be amo
 >Get notified when this page is updated by copying and pasting the following URL into your feed reader: `/api/search/rss?search=%22In+the+navigation+pane%2C+select+Settings+%3E+Advanced+features+%3E+Preview+features.%22&locale=en-us&facet=`
 
 For more information on new capabilities that are generally available, see [What's new in Defender for Endpoint](whats-new-in-microsoft-defender-atp.md).
+
+ ## What you need to know
+
+When working with features in public preview, these features:
+
+- May have restricted or limited functionality. For example, the feature may only apply to one platform.
+- Typically go through feature changes before they're generally available (GA).
+- Are fully supported by Microsoft.
+- May only be available in selected geographic regions or cloud environments. For example, the feature may not exist in the government cloud.
+- Individual features in preview may have more usage and support restrictions. If so, this information is typically noted in the feature documentation.
+- The preview versions are provided with a standard support level, and it is recommended for production workloads. 
+
+
 
 ## Turn on preview features
 
