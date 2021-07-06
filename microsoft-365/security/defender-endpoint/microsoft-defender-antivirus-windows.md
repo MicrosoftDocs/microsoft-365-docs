@@ -62,6 +62,12 @@ To learn more about the Get-MpComputerStatus PowerShell cmdlet, see the referenc
 
 ### Use Command Prompt to check status
 
+1. Select the Start menu, and begin typing `Command Prompt`. Then open Windows Command Prompt in the results.
+
+2. Type `sc query windefend`.
+
+3. In the list of results, look for the **STATE** row.
+
 ## Platform updates
 
 Microsoft releases regular updates to help ensure that your devices have the latest technology to protect against new malware and attack techniques. To learn more, see [Manage Microsoft Defender Antivirus updates and apply baselines](manage-updates-baselines-microsoft-defender-antivirus.md). 
