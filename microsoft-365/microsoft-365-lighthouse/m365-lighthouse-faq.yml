@@ -42,7 +42,11 @@ sections:
       - question: How much does Microsoft 365 Lighthouse cost?
         answer: |
           No additional costs are associated with using the Preview version of Microsoft 365 Lighthouse to manage Microsoft 365 Business Premium services and connected devices. Microsoft 365 Lighthouse is currently in Preview and available to Managed Service Providers (MSPs) servicing small- to medium-sized businesses and who have a Cloud Solution Provider (CSP) relationship with their customers. Note that indirect providers are not currently supported by Microsoft 365 Lighthouse. For more information, see [Sign up for Microsoft 365 Lighthouse](sign-up-m365-lighthouse.md).
-          
+
+      - question: What are the requirements to use Microsoft 365 Lighthouse?
+        answer: |
+          For a list of current requirements, see [Requirements for Microsoft 365 Lighthouse](requirements-for-m365-lighthouse.md).
+
       - question: How do I sign up for Microsoft 365 Lighthouse?
         answer: |
           To sign up for Microsoft 365 Lighthouse, you'll need to be registered with the Cloud Solution Provider (CSP) program. We're currently unable to support indirect providers. For instructions on how to sign up, see [Sign up for Microsoft 365 Lighthouse](sign-up-m365-lighthouse.md). To learn more about the CSP program, see the [Cloud Solution Provider program overview](/partner-center/csp-overview).
