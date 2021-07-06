@@ -60,7 +60,7 @@ The Microsoft Teams classes integration is available for **Ultra Course View cou
 
   a. Go to the **Administrator Panel** > **LTI Tool Providers** > **Manage Global Properties**.
 
-  b. Select **LTI Enabled in Courses**, and optionally, select **Enabled in Organizations**. 
+  b. Select **LTI Enabled in Courses**, and optionally, select **Enabled in Organizations**.
 
   c. Select **Submit**.
 
@@ -162,7 +162,7 @@ If you choose to approve the Blackboard Teams Classes Azure app before configuri
 3. Add your **Microsoft Tenant ID** into the available text field.
 
 4. Choose one of the following options:
- 
+
    - If the app has pre-consent, it will show a small checkmark. If the checkmark appears, select **Submit**.
 
    - If consent hasn’t been approved, follow the steps described to generate the URL for consent and send it to the Microsoft 365 Global Admin for approval.
