@@ -56,7 +56,7 @@ If you want to check the state of Microsoft Defender Antivirus on your device, y
 
    - **Normal** means Microsoft Defender Antivirus is running in active mode.
    - **Passive mode** means Microsoft Defender Antivirus running, but is not the primary antivirus/antimalware product on your device.
-   - **EDR Block Mode** means Microsoft Defender Antivirus is running in passive mode and a capability known as EDR in block mode is enabled. (See [Endpoint detection and response (EDR) in block mode](edr-in-block-mode.md).)
+   - **EDR Block Mode** means Microsoft Defender Antivirus is running and a capability in Microsoft Defender for Endpoint that is called "EDR in block mode" is enabled. (See [Endpoint detection and response (EDR) in block mode](edr-in-block-mode.md).)
 
 ## Platform updates
 
