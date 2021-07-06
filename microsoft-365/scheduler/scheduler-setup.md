@@ -14,7 +14,7 @@ description: "Setting up Scheduler for Microsoft 365."
 
 To set up the Scheduler for Microsoft 365, following are the prerequisites:
 
-|**What do I need?** |**Description** |
+| What do I need? | Description |
 |-------------------|-------------|
 |Cortana mailbox |Tenant admins will need to set a mailbox to serve as the “Cortana” mailbox (that is, cortana@yourdomain.com).         |
 |Exchange Online mailbox |Users must have an Exchange Online mail and calendar         |
