@@ -11,7 +11,7 @@ localization_priority: Priority
 ms.topic: article
 author: denisebmsft
 ms.author: deniseb
-ms.reviewer: 
+ms.reviewer: mkaminska
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
@@ -24,18 +24,11 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
 
-Microsoft Defender Antivirus is a major component of your next-generation protection in Microsoft Defender for Endpoint. This protection brings together machine learning, big-data analysis, in-depth threat resistance research, and the Microsoft cloud infrastructure to protect devices (or endpoints) in your organization. Microsoft Defender Antivirus is built into Windows. It works with Microsoft Defender for Endpoint to provide protection on your device and in the cloud.
-
-## Minimum system requirements
-
-Microsoft Defender Antivirus has the same hardware requirements as of Windows 10. For more information, see the following resources:
-
-- [Minimum hardware requirements](/windows-hardware/design/minimum/minimum-hardware-requirements-overview)
-- [Hardware component guidelines](/windows-hardware/design/component-guidelines/components)
+Microsoft Defender Antivirus is a major component of your next-generation protection in Microsoft Defender for Endpoint. This protection brings together machine learning, big-data analysis, in-depth threat resistance research, and the Microsoft cloud infrastructure to protect devices (or endpoints) in your organization. Microsoft Defender Antivirus is built into Windows, and it works with Microsoft Defender for Endpoint to provide protection on your device and in the cloud. 
 
 ## Compatibility with other antivirus products
 
-If you're using a non-Microsoft antivirus/antimalware product on your device, you might be able to run Microsoft Defender Antivirus in passive mode, alongside the non-Microsoft antivirus solution. To learn more, see [Microsoft Defender Antivirus compatibility](microsoft-defender-antivirus-compatibility.md).
+If you're using a non-Microsoft antivirus/antimalware product on your device, depending on the operating system and whether your device is onboarded to Defender for Endpoint, you might be able to run Microsoft Defender Antivirus in passive mode alongside the non-Microsoft antivirus solution. To learn more, see [Microsoft Defender Antivirus compatibility](microsoft-defender-antivirus-compatibility.md).
 
 ## Platform updates
 
@@ -44,6 +37,6 @@ Microsoft releases regular updates to help ensure that your devices have the lat
 
 ## See also
 
-- [Microsoft Defender Antivirus on Windows Server 2016 and 2019](microsoft-defender-antivirus-on-windows-server.md)
+- [Microsoft Defender Antivirus on Windows Server](microsoft-defender-antivirus-on-windows-server.md)
 - [Microsoft Defender Antivirus management and configuration](configuration-management-reference-microsoft-defender-antivirus.md)
 - [Evaluate Microsoft Defender Antivirus protection](evaluate-microsoft-defender-antivirus.md)
