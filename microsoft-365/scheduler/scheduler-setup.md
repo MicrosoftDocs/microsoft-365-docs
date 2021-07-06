@@ -74,7 +74,8 @@ In addition to licensing Scheduler, you must have one of the following licenses:
 - Exchange Online Plan 1 or Plan 2 license. 
 
 > [!Note]
-> **Scheduler for Microsoft 365** is currently available in English only for worldwide multi-tenants.
+> **Scheduler for Microsoft 365** is currently available for worldwide multi-tenants, in English only.</br>
+>
 >It is not available for users of Office 365 operated by 21Vianet in China or users of Microsoft 365 with the German cloud that uses the data trustee German Telekom. It is supported for users in Germany whose data location isn't in the German datacenter.
 >
 >This feature is also not supported for users of the Government Cloud, including GCC, Consumer, GCC High, or DoD.
