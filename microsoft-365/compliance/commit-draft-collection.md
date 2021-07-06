@@ -41,7 +41,7 @@ When you're satisfied with the items you've collected in a draft collection and 
 
    1. Select **Collect items and add to review set**.
 
-   2. Decide whether to add the collection to a new review set (which is created after you submit the collection) or to an existing review set. Complete this section based on your decision.
+   2. Decide whether to add the collection to a new review set (which is created after you submit the collection) or add it to an existing review set. Complete this section based on your decision.
 
    3. Configure the additional collection settings:
 
@@ -68,6 +68,8 @@ When you're satisfied with the items you've collected in a draft collection and 
 ## What happens after you commit a draft collection
 
 When you commit a draft collection to a review set, the following things happen:
+
+- If you created a new review set to commit the collection to, the review set is created and displayed on the **Review sets** tab in the case. The status of the new review set is **Ready**. This status value means the review set has been created; it doesn't mean that the collection has been added to the review set. The status of adding items in the collection to the review set is displayed on the **Collections** tab.
 
 - The collection search query is run again. This means the actual search results copied to the review set may be different than the estimated results that were returned when the collection search was last run.
 

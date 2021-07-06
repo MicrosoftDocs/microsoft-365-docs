@@ -40,4 +40,4 @@ Once you've blocked a user from being able to log into your organization you can
 
     **OR**
 
-2. Add the former employee's email address to your version of Outlook web app, and then export the data to a .pst file. You can import the data to another email account as needed. Check out [Step 6 - Give another employee access to OneDrive and Outlook data](remove-former-employee-step-6.md).
+2. Add the former employee's email address to your version of Outlook on Desktop, and then export the data to a .pst file. You can import the data to another email account as needed. Check out [Step 6 - Give another employee access to OneDrive and Outlook data](remove-former-employee-step-6.md).

@@ -23,26 +23,29 @@ Microsoft 365 Enterprise licensing is required for all Microsoft Managed Desktop
 This article summarizes the components included in the required Enterprise licenses, with a description of how the service uses each component with Microsoft Managed Desktop devices. Specific roles and responsibilities for each area are detailed throughout Microsoft Managed Desktop documentation. 
 
 ## Office 365 E3 or E5
- |Product |Information 
+
+| Product |Information |
+--- |--- 
 Microsoft 365 Apps for enterprise (64-bit) | These Office applications will be shipped with the device: Word, Excel, PowerPoint, Outlook, Publisher, Access, Skype for Business, OneNote.<br><br>The 64-bit full versions of Microsoft Project and Microsoft Visio aren't included. However, since the installation of these applications depends on the Microsoft 365 Apps for enterprise installation, Microsoft Managed Desktop has created default Microsoft Intune deployments and security groups that you can then use to deploy these applications to licensed users. For more information, see [Install Microsoft Project or Microsoft Visio on Microsoft Managed Desktop devices](../get-started/project-visio.md).
 OneDrive |Azure Active Directory Single Sign On is enabled for users when they first sign in to OneDrive.<br><br>Known Folder Redirection for "Desktop", "Document", and "Pictures" folders is included; enabled and configured by Microsoft Managed Desktop.
-Store Apps |	Microsoft Sway and Power BI aren't shipped with the device. These apps are available for download from Microsoft Store.
-Win32 Applications |	Teams isn't shipped with the device, but is packaged and provided by Microsoft for Microsoft Managed Desktop devices. Azure Information Protection Client isn't shipped with the device, but you can have it packaged for deployment.
-Web Applications |	Yammer, Office in a browser, Delve, Flow, StaffHub, PowerApps, and Planner aren't shipped with the device. Users can access the web version of these applications with a browser.
-
+Store Apps | Microsoft Sway and Power BI aren't shipped with the device. These apps are available for download from Microsoft Store.
+Win32 Applications | Teams isn't shipped with the device, but is packaged and provided by Microsoft for Microsoft Managed Desktop devices. Azure Information Protection Client isn't shipped with the device, but you can have it packaged for deployment.
+Web Applications | Yammer, Office in a browser, Delve, Flow, StaffHub, PowerApps, and Planner aren't shipped with the device. Users can access the web version of these applications with a browser.
 
 ## Windows 10 Enterprise E5 or E3 with Microsoft Defender for Endpoint
+
 We recommend that your IT admins configure the following settings. These settings aren't included or managed as part of Microsoft Managed Desktop.
 
- |Product  |Information
+Product  |Information
+--- | ---
 Windows Hello for Business | You should implement Windows Hello for Business to replace passwords with strong two-factor authentication for Microsoft Managed Desktop devices. For more information, see [Windows Hello for Business](/windows/security/identity-protection/hello-for-business/hello-identity-verification).
 Application Virtualization | You can deploy Application Virtualization (App-V) packages using the Intune Win32 app management client. For more information, see [Application Virtualization](/windows/application-management/app-v/appv-technical-reference).
 Microsoft 365 data loss prevention | You should implement Microsoft 365 data loss prevention to monitor the actions that are being taken on items you've determined to be sensitive and to help prevent the unintentional sharing of those items. For more information, see [Microsoft 365 data loss prevention](../../compliance/endpoint-dlp-learn-about.md).
 
-
 Features included and managed as part of Microsoft Managed Desktop:
 
- |Product |Information 
+Product |Information
+--- |---
 BitLocker Drive Encryption | BitLocker Drive Encryption is used to encrypt all system drives. For more information, see [BitLocker Drive Encryption](/windows/security/information-protection/bitlocker/bitlocker-overview).
 Windows Defender System Guard | Protects the integrity of the system at startup and validates that system integrity has truly been maintained. For more information, see [Windows Defender System Guard](/windows/security/threat-protection/windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows).
 Windows Defender Credential Guard | Windows Defender Credential Guard uses virtualization-based security to isolate secrets so that only privileged system software can access them. For more information, see [Windows Defender System Guard](/windows/security/threat-protection/windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows).
@@ -63,9 +66,8 @@ User Account Control | User Account Control switches to the Secure Desktop when 
 
 ## Enterprise Mobility + Security E5
 
- |Product |Information 
- |
+Product |Information
  --- | ---
-Enterprise Mobility + Security E3<br>Azure Active Directory Premium P2 |	You can use all features of Enterprise Mobility + Security E3 to manage MDM devices. You can use Azure Active Directory Premium P2 as an optional feature with Microsoft Managed Desktop.
-Microsoft Cloud App Security |	You can use this optional feature with Microsoft Managed Desktop.
-Azure Information Protection P2	 | You can use this optional feature with Microsoft Managed Desktop.
+Enterprise Mobility + Security E3<br>Azure Active Directory Premium P2 | You can use all features of Enterprise Mobility + Security E3 to manage MDM devices. You can use Azure Active Directory Premium P2 as an optional feature with Microsoft Managed Desktop.
+Microsoft Cloud App Security | You can use this optional feature with Microsoft Managed Desktop.
+Azure Information Protection P2  | You can use this optional feature with Microsoft Managed Desktop.

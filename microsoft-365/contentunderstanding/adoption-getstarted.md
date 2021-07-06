@@ -9,8 +9,8 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 ms.collection: 
-    - enabler-strategic
-    - m365initiative-syntex
+- enabler-strategic
+- m365initiative-syntex
 ms.custom: Adopt
 search.appverid: 
 localization_priority: Normal
@@ -123,12 +123,12 @@ To get ready for implementing SharePoint Syntex, you need to:
       - Compliance
       - Automation
 2. Identify
-    - Understand existing information architecture and content management feature use​.
-    - Are any existing content types good candidates for models​?
-    - What existing processes would be improved by metadata​?
+    - Understand existing information architecture and content management feature use.
+    - Are any existing content types good candidates for models?
+    - What existing processes would be improved by metadata?
 3. Design
-    - Design your approach to information architecture, managed metadata and content types​
-    - Design the process for definition, creation, management​.
+    - Design your approach to information architecture, managed metadata and content types.
+    - Design the process for definition, creation, management.
 
 ## Engage your organization
 

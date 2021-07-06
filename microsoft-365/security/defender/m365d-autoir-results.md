@@ -32,7 +32,7 @@ ms.reviewer: evaldm, isco
 
 With Microsoft 365 Defender, when an [automated investigation](m365d-autoir.md) runs, details about that investigation are available both during and after the automated investigation process. If you have the [necessary permissions](m365d-action-center.md#required-permissions-for-action-center-tasks), you can view those details in an investigation details view. This view provides you with up-to-date status and the ability to approve any pending actions. 
 
-![Investigation details](../../media/mtp-air-investdetails.png)
+:::image type="content" source="../../media/mtp-air-investdetails.png" alt-text="Investigation details":::
 
 ## (NEW!) Unified investigation page
 
@@ -40,7 +40,7 @@ The investigation page has recently been updated to include information across y
 
 - Any investigation page in the Office 365 Security & Compliance Center ([https://protection.office.com](https://protection.office.com))
 - Any investigation page in the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com))
-- Any incident or Action center experience in the Microsoft 365 security center ([https://security.microsoft.com](https://security.microsoft.com))
+- Any incident or Action center experience in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com))
 
 ## Open the investigation details view
 
@@ -84,13 +84,13 @@ Use an incident details page to view detailed information about an incident, inc
 
 Here's an example.
 
-![Incident details](../../media/mtp-incidentdetails-tabs.png)
+:::image type="content" source="../../media/mtp-incidentdetails-tabs.png" alt-text="Incident details":::
 
 ## Investigation details
 
 Use the investigation details view to see past, current, and pending activity pertaining to an investigation. Here's an example.
 
-![Investigation details](../../media/mtp-air-investdetails.png)
+:::image type="content" source="../../media/mtp-air-investdetails.png" alt-text="Investigation details":::
 
 In the Investigation details view, you can see information on the **Investigation graph**, **Alerts**, **Devices**, **Identities**, **Key findings**, **Entities**, **Log**, and **Pending actions** tabs, described in the following table.
 
@@ -99,14 +99,14 @@ In the Investigation details view, you can see information on the **Investigatio
 
 | Tab | Description |
 |:--------|:--------|
-| **Investigation graph**	| Provides a visual representation of the investigation. Depicts entities and lists threats found, along with alerts and whether any actions are awaiting approval.<br/>You can select an item on the graph to view more details. For example, selecting the **Evidence** icon takes you to the **Evidence** tab, where you can see detected entities and their verdicts. |
-| **Alerts**	| Lists alerts associated with the investigation. Alerts can come from threat protection features on a user's device, in Office apps, Microsoft Cloud App Security, and other Microsoft 365 Defender features.|
+| **Investigation graph** | Provides a visual representation of the investigation. Depicts entities and lists threats found, along with alerts and whether any actions are awaiting approval.<br/>You can select an item on the graph to view more details. For example, selecting the **Evidence** icon takes you to the **Evidence** tab, where you can see detected entities and their verdicts. |
+| **Alerts** | Lists alerts associated with the investigation. Alerts can come from threat protection features on a user's device, in Office apps, Microsoft Cloud App Security, and other Microsoft 365 Defender features.|
 | **Devices** | Lists devices included in the investigation along with their remediation level. (Remediation levels correspond to [the automation level for device groups](m365d-configure-auto-investigation-response.md#review-or-change-the-automation-level-for-device-groups).) |
 | **Mailboxes** |Lists mailboxes that are impacted by detected threats.  |
 | **Users**  | Lists user accounts that are impacted by detected threats. |
 | **Evidence** | Lists pieces of evidence raised by alerts or investigations. Includes verdicts (*Malicious*, *Suspicious*, *Unknown*, or *No threats found*) and remediation status. |
-| **Entities**	| Provides details about each analyzed entity, including a verdict for each entity type (*Malicious*, *Suspicious*, or *No threats found*).|
-|**Log**	| Provides a chronological, detailed view of all the investigation actions taken after an alert was triggered.|
+| **Entities** | Provides details about each analyzed entity, including a verdict for each entity type (*Malicious*, *Suspicious*, or *No threats found*).|
+|**Log** | Provides a chronological, detailed view of all the investigation actions taken after an alert was triggered.|
 | **Pending actions history** | Lists items that require approval to proceed. Go to the Action center ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)) to approve pending actions. |
 
 ## Next steps

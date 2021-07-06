@@ -50,8 +50,7 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
 
 - To submit messages and files to Microsoft, you need to be a member of one of the following role groups:
   - **Organization Management** or **Security Reader** in the [Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).
-  - **Organization Management** in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups).
-
+  
     Note that membership in this role group is required to [View user submissions to the custom mailbox](#view-user-submissions-to-microsoft) as described later in this article.
 
 - For more information about how users can submit messages and files to Microsoft, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
@@ -86,7 +85,8 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
 
 5. When you're finished, click the **Submit** button.
 
-   ![New URL submission example](../../media/submission-flyout-email.PNG)
+> [!div class="mx-imgBorder"]
+> ![New URL submission example](../../media/submission-flyout-email.png)
 
 ### Send a suspect URL to Microsoft
 
@@ -100,7 +100,8 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
 
 4. When you're finished, click the **Submit** button.
 
-   ![New Email submission example](../../media/submission-url-flyout.png)
+> [!div class="mx-imgBorder"]
+> ![New Email submission example](../../media/submission-url-flyout.png)
 
 ### Submit a suspected email attachment to Microsoft
 
@@ -114,7 +115,8 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
 
 4. When you're finished, click the **Submit** button.
 
-   ![New Attachment submission example](../../media/submission-file-flyout.PNG)
+> [!div class="mx-imgBorder"]
+> ![New Attachment submission example](../../media/submission-file-flyout.png)
 
 ## View admin submissions to Microsoft
 
@@ -152,7 +154,8 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
 
      When you're finished, click **Apply**.
 
-     ![New Filter options for admin submissions](../../media/admin-submission-email-filter-options.png)
+     > [!div class="mx-imgBorder"]
+     > ![New Filter options for admin submissions](../../media/admin-submission-filters.png)
 
    - To group the entries, click **Group** and select one of the following values from the drop down list:
      - **None**
@@ -165,7 +168,7 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
 
 ### Admin submission rescan details
 
-Messages that are submitted in admin submissions are rescanned and results shown in the submissions detail flyout:
+Messages that are submitted in admin submissions are reviewed and results shown in the submissions detail flyout:
 
 - If there was a failure in the sender's email authentication at the time of delivery.
 - Information about any policy hits that could have affected or overridden the verdict of a message.
@@ -209,7 +212,8 @@ If you've deployed the [Report Message add-in](enable-the-report-message-add-in.
 
      When you're finished, click **Apply**.
 
-    ![New Filter options for user submissions](../../media/user-submissions-filter-options.png)
+     > [!div class="mx-imgBorder"]
+     > ![New Filter options for user submissions](../../media/admin-submission-reported-messages.png)
 
    - To group the entries, click **Group** and select one of the following values from the drop down list:
      - **None**
@@ -240,4 +244,5 @@ On the **User reported messages** tab, select a message in the list, click **Sub
 - **Report spam**
 - **Trigger investigation**
 
-![New Options on the Action button](../../media/user-submission-custom-mailbox-action-button.png)
+> [!div class="mx-imgBorder"]
+> ![New Options on the Action button](../../media/admin-submission-main-action-button.png)
