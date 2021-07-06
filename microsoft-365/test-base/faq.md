@@ -1,14 +1,20 @@
 ---
-title: faq #Required; page title displayed in search results. Include the brand.
-description: n/a #Required; article description that is displayed in search results.
-author: mansipatel-usl #Required; your GitHub user alias, with correct capitalization.
-ms.author: mapatel #Required; microsoft alias of author; optional team alias.
-ms.service: virtual-desktop #Required; service per approved list. service slug assigned to your service by ACOM.
-ms.topic: faq #Required
-ms.date: 6/22/2021 #Required; mm/dd/yyyy format.
+title: 'Frequently asked questions'
+description: Review frequently asked questions
+search.appverid: MET150
+author: mansipatel-usl
+ms.author: mapatel
+manager: rshastri
+audience: Software-Vendor
+ms.topic: troubleshooting
+ms.date: 07/06/2021
+ms.prod: 
+localization_priority: Normal
+ms.collection: TestBase-M365
+ms.custom:                 # This is an optional, free-form field you can use to define your own collection of articles. If you have more than one value, format as a bulleted list. This field truncates to something like 144 characters (inclusive of spaces) so keep it short.
+ms.reviewer: mapatel
+f1.keywords: NOCSH
 ---
-
-
 
 # Test Base FAQ
 
@@ -20,9 +26,9 @@ ms.date: 6/22/2021 #Required; mm/dd/yyyy format.
 
 **A:** Submit your packages directly to the Test Base environment using our self-serve portal.
 
-To submit your application package, navigate to the [Azure Portal](aka.ms/mytestbase) and upload a zipped folder containing your application's binaries, dependencies, and test scripts via the self-serve Test Base portal dashboard. 
+To submit your application package, navigate to the [Azure Portal](www.aka.ms/testbaseportal "Test Base Homepage") and upload a zipped folder containing your application's binaries, dependencies, and test scripts via the self-serve Test Base portal dashboard. 
 
-Please see the onboarding user guide for more information or contact our team at [testbasepreview@microsoft.com](testbasepreview@microsoft.com) for assistance and more information.
+Please see the onboarding user guide for more information or contact our team at <testbasepreview@microsoft.com> for assistance and more information.
 
 **Q: What are Out-of-box (OOB) tests?**
 
@@ -46,7 +52,7 @@ The Out-of-box (OOB) tests provide you with standardized telemetry on your appli
 
 To submit your application package for functional testing, simply upload the zipped folder containing your application's binaries, dependencies, and test scripts via our self-serve portal dashboard. 
 
-Please see the onboarding user guide for more information or contact our team at [testbasepreview@microsoft.com](testbasepreview@microsoft.com) for assistance and more information.
+Please see the onboarding user guide for more information or contact our team at <testbasepreview@microsoft.com> for assistance and more information.
 
 **Q: How does Test Base handle our test data?**
 
@@ -54,7 +60,7 @@ Please see the onboarding user guide for more information or contact our team at
 
 <!--- Below is the architecture diagram: -->
 
-<!--- ![](Media/architecturediagram.png) -->
+<!--- ![Test Base architecture diagram](Media/architecturediagram.png) -->
 
 
 <!--- Need to double check if we can include architecture diagram. commenting out for now -->
@@ -72,7 +78,7 @@ You will also need to provide (upload) the dependent binaries of the required fr
 **Q: How soon does Test Base provide test results?**
 
 
-**A:** For each test that we run against the pre-release builds, we will provide results within 48 hours on your [Test Base portal](aka.ms/mytestbase) dashboard.
+**A:** For each test that we run against the pre-release builds, we will provide results within 48 hours on your [Azure Portal](www.aka.ms/testbaseportal "Test Base Homepage") dashboard.
 
 
 **Q: Can you reboot after install?**
@@ -81,11 +87,11 @@ You will also need to provide (upload) the dependent binaries of the required fr
 
 For Out-of-box (OOB) tests, you can specify whether a reboot is needed for the _Install script._
 
-![](Media/reboot.png)
+![Reboot picture](Media/reboot.png)
 
 While for functional tests, you can specify whether a reboot is required for each script that is added.
 
-![](Media/functionalreboot.png)
+![How to select functional tests](Media/functionalreboot.png)
 
 **Q: What Windows versions do you support?**
 
@@ -141,7 +147,4 @@ In addition to pre-release security updates testing, we support pre-release feat
 
 **A:** To share your feedback about Test Base, select the **Feedback** icon at the bottom left of the portal. Include a screenshot with your submission to help Microsoft better understand your feedback. 
 
-You can also submit product suggestions and upvote other ideas on [Feedback](testbasepreview@microsoft.com).
-
-> [!Note]
-> Never share private information via Send a Smile or UserVoice. Such private information includes your Tenant Id or Commercial Id. Microsoft doesn't provide support via the Send a Smile or UserVoice channels. 
+You can also submit product suggestions and upvote other ideas at <testbasepreview@microsoft.com>.
