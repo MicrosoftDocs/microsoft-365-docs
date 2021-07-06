@@ -51,7 +51,7 @@ Engine updates are included with security intelligence updates and are released 
 
 ## Product updates
 
-Microsoft Defender Antivirus requires [monthly updates (KB4052623)](https://support.microsoft.com/help/4052623/update-for-windows-defender-antimalware-platform), known as *platform updates*.
+Microsoft Defender Antivirus requires [monthly updates (KB4052623)](https://support.microsoft.com/help/4052623/update-for-windows-defender-antimalware-platform) known as *platform updates*.
 
 You can manage the distribution of updates through one of the following methods: 
 
