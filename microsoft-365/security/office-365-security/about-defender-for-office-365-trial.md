@@ -46,7 +46,6 @@ A Microsoft Defender for Office 365 trial is the easiest way to try the capabili
 |[Attack simulation training](attack-simulation-training.md)<sup>\*</sup>|Train your users to identify phishing attacks and respond appropriately.|
 |[Campaign Views](campaigns.md)<sup>\*</sup>|Investigate and respond to large-scale malicious email activity.|
 |[Reports using Defender for Office 365 capabilities](view-reports-for-mdo.md)|View reports including threat protection status, URL threat protection, mail latency, and more.|
-|
 
 <sup>\*</sup> Defender for Office 365 Plan 2 features that are available as part of the trial.
 
