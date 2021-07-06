@@ -11,9 +11,6 @@ description: "Setting up Scheduler for Microsoft 365."
 ---
 # Setting up Scheduler for Microsoft 365
 
->[!Note]
-> Scheduler for Microsoft 365 is currently available in English only for worldwide multi-tenants.
-
 
 To set up the Scheduler for Microsoft 365, following are the prerequisites:
 
