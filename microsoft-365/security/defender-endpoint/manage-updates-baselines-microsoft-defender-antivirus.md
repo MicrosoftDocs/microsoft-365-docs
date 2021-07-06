@@ -77,7 +77,7 @@ All our updates contain
 - integration improvements (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)).
 <br/>
 <details>
-<summary> June-2021 (Platform: 4.18.2106.5| Engine: 1.1.18300.4)</summary>
+<summary> June-2021 (Platform: 4.18.2106.5 | Engine: 1.1.18300.4)</summary>
  
 &ensp;Security intelligence update version: **1.343.17.0**  
 &ensp;Released: **June 28th, 2021**  
