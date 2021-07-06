@@ -118,6 +118,8 @@
           href: create-a-custom-sensitive-information-type.md
         - name: Create a custom sensitive information type - PowerShell
           href: create-a-custom-sensitive-information-type-in-scc-powershell.md
+        - name: Remove a custom sensitive information type - PowerShell
+          href: sit-remove-a-custom-sensitive-information-type-in-powershell.md
         - name: Create a keyword dictionary
           href: create-a-keyword-dictionary.md
         - name: Modify a keyword dictionary
