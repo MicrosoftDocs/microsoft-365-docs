@@ -151,7 +151,7 @@ If you choose to approve the Blackboard Learn Ultra Teams Classes Azure app befo
 `https://login.microsoftonline.com/{tenant}/adminconsent?client\_id=2d94989f-457a-47c1-a637-e75acdb11568`
 
 > [!NOTE]
-> You’ll replace **{Tenant}** with your specific institutional Microsoft Azure tenant ID. (Use **Learn more** class here and add the text **More on How to find your tenant.** Remove the period at the end of tenant once you link it.
+> You’ll replace **{Tenant}** with your specific institutional Microsoft Azure tenant ID.
 
 ### After Configuring the LTI Applications
 
