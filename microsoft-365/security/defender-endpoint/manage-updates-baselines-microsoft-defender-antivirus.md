@@ -95,7 +95,6 @@ Security intelligence update version: 1.343.17.0
 No known issues  
 <br/>
 </details>
-<br/><br/>
 <details>
 <summary> May-2021 (Platform: 4.18.2105.4 | Engine: 1.1.18200.4)</summary>
 
