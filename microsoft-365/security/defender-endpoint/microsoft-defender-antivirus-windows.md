@@ -68,7 +68,7 @@ To learn more about the Get-MpComputerStatus PowerShell cmdlet, see the referenc
 
 3. In the list of results, look for the **STATE** row.
 
-## Platform updates
+## Get your antivirus/antimalware platform updates
 
 Microsoft releases regular updates to help ensure that your devices have the latest technology to protect against new malware and attack techniques. To learn more, see [Manage Microsoft Defender Antivirus updates and apply baselines](manage-updates-baselines-microsoft-defender-antivirus.md). 
 
