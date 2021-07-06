@@ -13,7 +13,7 @@ ms.topic: article
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.reviewer: pahuijbr
+ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
 ms.date: 07/06/2021
@@ -123,7 +123,7 @@ No known issues
     
 ### What's new
 - Additional behavior monitoring logic
-- Improved kernel mode keylogger detection
+- Improved kernel mode key logger detection
 - Added new controls to manage the gradual rollout process for [Microsoft Defender updates](manage-gradual-rollout.md)
 
 
