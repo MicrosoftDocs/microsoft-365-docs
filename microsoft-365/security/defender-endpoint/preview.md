@@ -24,8 +24,16 @@ ms.technology: mde
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
->[!IMPORTANT]
->The preview versions are provided without a service level agreement, and it's not recommended for production workloads. Certain features might not be supported or might have constrained capabilities.
+## What you need to know
+
+When working with features in public preview, these features:
+
+- May have restricted or limited functionality. For example, the feature may only apply to one platform.
+- Typically go through feature changes before they're generally available (GA).
+- Are fully supported by Microsoft.
+- May only be available in selected geographic regions or cloud environments. For example, the feature may not exist in the government cloud.
+- Individual features in preview may have more usage and support restrictions. If so, this information is typically noted in the feature documentation.
+- The preview versions are provided with a standard support level, and it is recommended for production workloads. 
 
 **Applies to:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
