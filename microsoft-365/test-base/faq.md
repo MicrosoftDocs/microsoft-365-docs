@@ -26,7 +26,7 @@ f1.keywords: NOCSH
 
 **A:** Submit your packages directly to the Test Base environment using our self-serve portal.
 
-To submit your application package, navigate to the [Azure Portal](www.aka.ms/testbaseportal "Test Base Homepage") and upload a zipped folder containing your application's binaries, dependencies, and test scripts via the self-serve Test Base portal dashboard. 
+To submit your application package, navigate to the [Azure Portal](https://www.aka.ms/testbaseportal "Test Base Homepage") and upload a zipped folder containing your application's binaries, dependencies, and test scripts via the self-serve Test Base portal dashboard. 
 
 Please see the onboarding user guide for more information or contact our team at <testbasepreview@microsoft.com> for assistance and more information.
 
