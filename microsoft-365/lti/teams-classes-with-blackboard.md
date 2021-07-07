@@ -160,7 +160,7 @@ If you choose to approve the Blackboard Learn Ultra Teams Classes Azure app befo
 
 You'll see a permissions window that explains you're giving permission to Blackboard Learn Ultra to access Microsoft Teams.
 
-![the permissions window for Microsoft and Blackboard](media/permissions.png)
+![the permissions window for Microsoft and Blackboard](media/permissions1.png)
 ### After Configuring the LTI Applications
 
 1. On the **Administrator Panel**, navigate to **Tools and Utilities** and select **Microsoft Teams Integration Admin**.
