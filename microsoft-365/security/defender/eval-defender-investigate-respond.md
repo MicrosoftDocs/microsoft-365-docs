@@ -39,7 +39,7 @@ The following table describes the steps in the illustration.
 | |Step  |Description  |
 |---------|---------|---------|
 |1|[Simulate attacks](eval-defender-investigate-respond-simulate-attack.md)     |   Simulate attacks on your evaluation environment and use the Microsoft 365 Defender portal to perform incident response.      |
-|2|[Try additional incident response capabilities ](eval-defender-investigate-respond-additional.md)    |    Try additional features and capabilities in Microsoft 365 Defender.     |
+|2|[Try incident response capabilities ](eval-defender-investigate-respond-additional.md)    |    Try features and capabilities in Microsoft 365 Defender.     |
 ||||
 
 ### Navigation you may need
