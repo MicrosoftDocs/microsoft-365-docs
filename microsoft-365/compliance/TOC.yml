@@ -486,7 +486,7 @@
 - name: Manage app governance
   items: 
     - name: Protect and govern your apps
-      href: app-governance-app-protection-governance.md
+      href: app-governance-manage-app-protection-governance.md
     - name: Get Started with app governance
       href: app-governance-get-started.md 
     - name: Get visibility and insights
