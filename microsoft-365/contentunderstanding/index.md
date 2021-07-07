@@ -1,5 +1,5 @@
 ---
-title: "Introduction to Microsoft SharePoint Syntex"
+title: Introduction to Microsoft SharePoint Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,7 +12,7 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 localization_priority: Priority
-description: "Learn how to find resources for Microsoft SharePoint Syntex."
+description: Learn how to find resources for Microsoft SharePoint Syntex.
 ---
 
 # Introduction to Microsoft SharePoint Syntex
@@ -87,4 +87,3 @@ A SharePoint Syntex license gives your users premium content services that give 
 |Learn how to make content types more consistently available to SharePoint libraries and lists|[Push content types to a hub](./push-content-type-to-hub.md)|
 |Learn about the term store reports that are available to you|[Term store reports](./term-store-analytics.md)|
 
-## See Also
