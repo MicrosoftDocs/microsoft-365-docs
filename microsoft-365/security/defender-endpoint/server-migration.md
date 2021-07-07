@@ -107,18 +107,7 @@ If you want to move **from tenant attach to MDE attach**, ensure the server is a
 
 -   MDE attach will not work if the client is managed by Microsoft Endpoint Configuration Manager. Therefore, a server can be in scope for MDE attach but only after Microsoft Endpoint Configuration Manager agent is removed, policies will be applied. 
 
-### INCLUDE HERE??? We're using Microsoft Endpoint Configuration Manager to manage our servers, including SCEP&MMA, and want to move to Microsoft Defender for Endpoint instead but keep using Microsoft Endpoint Configuration Manager for configuration of endpoint security policies. How do we proceed? (SCEP&MMA \> Microsoft Endpoint Configuration Manager) 
 
-Timelines TBC. 
-
-Options: 
-
-In the design partner phase, follow the steps described in 1.1 to switch to Microsoft Endpoint Manager
-tenant attach. 
-
-In the public preview phase, you can use Microsoft Endpoint Configuration Manager for configuration only and will need to manually deploy. 
-
- 
 
 ### We're using a non-Microsoft antivirus solution today and want to move to Microsoft Defender Antivirus. How do we proceed? 
 
