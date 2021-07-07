@@ -1,10 +1,6 @@
 ---
 title: Create and manage roles for role-based access control
-<<<<<<< Updated upstream
-description: Create roles and define the permissions assigned to the role as part of the role-based access control implementation in the Microsoft 365 Defender portal
-=======
 description: Create roles and define the permissions assigned to the role as part of the role-based access control implementation in the Microsoft 365 Defender
->>>>>>> Stashed changes
 keywords: user roles, roles, access rbac
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -36,15 +32,9 @@ ms.technology: mde
 
 ## Create roles and assign the role to an Azure Active Directory group
 
-<<<<<<< Updated upstream
-The following steps guide you on how to create roles in the Microsoft 365 Defender portal. It assumes that you have already created Azure Active Directory user groups.
-
-1. Log in to [Microsoft 365 Defender portal](https://securitycenter.windows.com/) using account with a Security administrator or Global administrator role assigned.
-=======
 The following steps guide you on how to create roles in Microsoft 365 Defender. It assumes that you have already created Azure Active Directory user groups.
 
 1. Log in to [Microsoft 365 Defender](https://security.microsoft.com/) using account with a Security administrator or Global administrator role assigned.
->>>>>>> Stashed changes
 
 2. In the navigation pane, select **Settings** > **Endpoints** > **Roles** (under **Permissions**).
 
@@ -98,11 +88,7 @@ For more information on the available commands, see [Investigate devices using L
   
 ## Edit roles
 
-<<<<<<< Updated upstream
-1. Log in to [Microsoft 365 Defender portal](https://securitycenter.windows.com/) using account with Security administrator or Global administrator role assigned.
-=======
 1. Log in to [Microsoft 365 Defender](https://security.microsoft.com/) using account with Security administrator or Global administrator role assigned.
->>>>>>> Stashed changes
 
 2. In the navigation pane, select **Settings** > **Endpoints** > **Roles** (under **Permissions**).
 
@@ -116,11 +102,7 @@ For more information on the available commands, see [Investigate devices using L
 
 ## Delete roles
 
-<<<<<<< Updated upstream
-1. Log in to [Microsoft 365 Defender portal](https://securitycenter.windows.com/) using account with Security administrator or Global administrator role assigned.
-=======
 1. Log in to [Microsoft 365 Defender](https://security.microsoft.com/) using account with Security administrator or Global administrator role assigned.
->>>>>>> Stashed changes
 
 2. In the navigation pane, select **Settings** > **Endpoints** > **Roles** (under **Permissions**).
 

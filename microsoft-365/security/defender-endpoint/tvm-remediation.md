@@ -44,7 +44,7 @@ See [Use Intune to remediate vulnerabilities identified by Microsoft Defender fo
 
 ### Remediation request steps
 
-1. Go to the threat and vulnerability management navigation menu in the Microsoft 365 Defender portal, and select [**Security recommendations**](tvm-security-recommendation.md).
+1. Go to the threat and **Vulnerability management** navigation menu in the Microsoft 365 Defender portal, and select **Recommendations** [**Security recommendations**](tvm-security-recommendation.md).
 
 2. Select a security recommendation you would like to request remediation for, and then select **Remediation options**.
 
@@ -73,7 +73,7 @@ When you submit a remediation request from the Security recommendations page, it
 If you chose the "attention required" remediation option, there will be no progress bar, ticket status, or due date since there is no actual action we can monitor.
 
 Once you are in the Remediation page, select the remediation activity that you want to view. You can follow the remediation steps, track progress, view the related recommendation, export to CSV, or mark as complete.
-![Example of the Remediation page, with a selected remediation activity, and that activity's flyout listing the description, IT service and device management tools, and device remediation progress.](images/remediation_flyouteolsw.png)
+![Example of the Remediation page, with a selected remediation activity, and that activity's flyout listing the description, IT service and device management tools, and device remediation progress.](images/remediation_flyouteolswnew.png)
 
 >[!NOTE]
 > There is a 180 day retention period for completed remediation activities. To keep the Remediation page performing optimally, the remediation activity will be removed 6 months after its completion.
@@ -90,7 +90,7 @@ Track who closed the remediation activity with the "Completed by" column on the 
 
 ### Top remediation activities in the dashboard
 
-View **Top remediation activities** in the [threat and vulnerability management dashboard](tvm-dashboard-insights.md). Select any of the entries to go to the **Remediation** page. You can mark the remediation activity as completed after the IT admin team remediates the task.
+View **Top remediation activities** in the [threat and **Vulnerability management** dashboard](tvm-dashboard-insights.md). Select any of the entries to go to the **Remediation** page. You can mark the remediation activity as completed after the IT admin team remediates the task.
 
 ![Example of Top remediation activities card with a table that lists top activities that were generated from security recommendations.](images/tvm-remediation-activities-card.png)
 

@@ -39,7 +39,7 @@ Access the report in the Microsoft 365 Defender portal by going to **Reports > V
 There are two columns:
 
 - Trends (over time). Can show the past 30 days, 3 months, 6 months, or a custom date range.
-- Today (current information)
+- Status (current information)
 
 **Filter**: You can filter the data by vulnerability severity levels, exploit availability, vulnerability age, operating system platform, Windows 10 version, or device group.
 
