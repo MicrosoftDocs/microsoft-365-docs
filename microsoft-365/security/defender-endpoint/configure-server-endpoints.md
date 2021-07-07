@@ -71,7 +71,12 @@ Microsoft Defender for Endpoint integrates seamlessly with Azure Defender. You c
 
 For more information, see [Integration with Azure Defender](azure-server-integration.md).
 
-## Windows Server 2012 R2 and Windows Server 2016
+## Windows Server 2012 R2 and Windows Server 2016 (Preview)
+
+>[!NOTE]
+>While this method of onboarding Windows Server 2012 R2 and Windows Server 2016 is in preview, you can choose to use the previous onboarding method using Microsoft Monitoring Agent (MMA). For more information see, [Install and configure endpoints using MMA](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma).
+
+
 
 ### Prerequisites
 
