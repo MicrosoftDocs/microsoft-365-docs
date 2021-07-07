@@ -215,7 +215,7 @@ This setting must be enabled to avoid a "lack of permissions" error when we inte
 
 **Not ready**
 
-**Allow access to unlicensed admins** should be enabled. For the required steps, see [Prerequisites for guest accounts](/microsoft-365/managed-desktop/get-ready/guest-accounts).
+**Allow access to unlicensed admins** should be enabled. For steps, see [Prerequisites for guest accounts](/microsoft-365/managed-desktop/get-ready/guest-accounts).
 
 ### Windows apps
 
