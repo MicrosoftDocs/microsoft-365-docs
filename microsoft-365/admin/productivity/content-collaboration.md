@@ -121,6 +121,9 @@ We also provide you with information that helps you gain visibility into how you
 
 ### Use of attachments in email
 
+**Use of attachments in email** 
+Understand how many users are attaching physical files in email rather than links to content in the cloud, and monitor the reduction of this number over time.
+
 :::image type="content" source="../../media/emailattachments.png" alt-text="Use of email attachments.":::
 
 1. **Header:** Highlights the percentage of people who use attachments in emails that were not saved to OneDrive or SharePoint.
@@ -131,9 +134,6 @@ We also provide you with information that helps you gain visibility into how you
         - Denominator: The number of people who have had access to Exchange and  OneDrive, SharePoint, or both within the last 28 days.
       - **Links to online files:** The blue (colored) portion of the bar and the fraction (numerator/denominator) on the bar represent the percentage of people using attachments and attaching links to files in emails.
         - Numerator: The number of people attaching links to online files (saved to OneDrive or SharePoint) to emails within the last 28 days.
-        - Denominator: The number of people who have access to Exchange and  OneDrive, SharePoint, or both  within the last 28 days.
-      - **Embed links in email:** The blue (colored) portion of the bar and the fraction on the bar represent the percentage of people who embed links in body of the emails.
-        - Numerator: The number of people embedding links in body of emails to online files (saved to OneDrive or SharePoint) within the last 28 days.
         - Denominator: The number of people who have access to Exchange and  OneDrive, SharePoint, or both  within the last 28 days.
 4. **Link to resources:** Select this link to view help content.
 

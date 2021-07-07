@@ -10,9 +10,9 @@ audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: 
+ms.collection:
 - Adm_O365
-- M365-subscription-management 
+- M365-subscription-management
 - TRN_SMB
 ms.custom:
 - Adm_O365
@@ -39,22 +39,22 @@ Microsoft 365 Business Premium (formerly Microsoft 365 Business) is a comprehens
 
 ## Watch: What is Microsoft 365 Business Premium
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA] 
-  
-If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](../business-video/index.yml). 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA]
+
+If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](../business-video/index.yml).
 
 Microsoft 365 Business Premium is meant for up to 300 licenses. If you need more licenses, see [Microsoft 365 Enterprise](../enterprise/index.yml) documentation for more information.
 
 See the [Microsoft 365 Business Premium service description](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description) for the entire list of features.
-  
+
 ## Small business security needs
 
 Your business data can be compromised in many ways. You and your users can compromise your organization's security when you sign in with compromised credentials or view organization data on different devices and applications. More specifically, your organization is at risk from:
 
 - Compromised or weak sign-in credentials.
 - Compromised device with a weak pin, or a user owned device.
-- Users who can copy/paste/save your organization's data to personal apps​.
-- Users who install and use third-party apps with weak security​.
+- Users who can copy/paste/save your organization's data to personal apps.
+- Users who install and use third-party apps with weak security.
 - Email vulnerabilities, including sharing sensitive data, phishing attempts, malware, and so on.
 - When people who should not, can access documents with sensitive information.
 
@@ -68,17 +68,17 @@ Microsoft 365 Business Premium helps **defended against threats** by:
 
 - Scanning links in emails and documents in real time to block unsafe web sites (Safe Links).
 
-- Performing advanced analysis of email attachments in a sandbox environment to detect newly developed malware (Safe Attachments). 
+- Performing advanced analysis of email attachments in a sandbox environment to detect newly developed malware (Safe Attachments).
 
-- Enabling anti-phishing policies that use machine learning models and impersonation detection to provide protection against advanced attacks (Anti-phishing in Defender for Office 365 intelligence). 
+- Enabling anti-phishing policies that use machine learning models and impersonation detection to provide protection against advanced attacks (Anti-phishing in Defender for Office 365 intelligence).
 
-- Setting up advanced policies that disable access from untrusted locations or bypass multifactor authentication from trusted places such as your office network (Azure MFA including trusted IPs, and Conditional Access). 
+- Setting up advanced policies that disable access from untrusted locations or bypass multifactor authentication from trusted places such as your office network (Azure MFA including trusted IPs, and Conditional Access).
 
 - Enforcing malware protection across all your organization's Windows 10 devices and protecting files in key system folders from changes made by ransomware (Windows Defender)
 
 Your **business data is protected** by:
 
-- Using automatic detection to help prevent sensitive information such as Social Security numbers or credit cards from leaking outside your business (data loss prevention). 
+- Using automatic detection to help prevent sensitive information such as Social Security numbers or credit cards from leaking outside your business (data loss prevention).
 
 - Encrypting sensitive emails so you can communicate securely with customers or other people outside your organization. This ensures that only the intended recipient can read the message (Office 365 Message Encryption).
 
