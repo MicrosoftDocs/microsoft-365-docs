@@ -32,7 +32,7 @@ On this tab, you will upload a single zip package containing your binaries, depe
 **Currently, the portal only supports PowerShell scripts.**
 
 
-## Next steps
+## Next steps 
 
 Advance to the next article to go onto Step 4: **Set your Test Tasks**.
 > [!div class="nextstepaction"]
