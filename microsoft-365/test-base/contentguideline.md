@@ -1,15 +1,23 @@
 ---
-title: Test Package Guidelines #Required; page title displayed in search results. Include the brand.
-description: n/a #Required; article description that is displayed in search results.
-author: mansipatel-usl #Required; your GitHub user alias, with correct capitalization.
-ms.author: mapatel #Required; microsoft alias of author; optional team alias.
-ms.service: virtual-desktop #Required; service per approved list. service slug assigned to your service by ACOM.
-ms.topic: quickstart	 #Required
-ms.date: 01/04/2021 #Required; mm/dd/yyyy format.
+title: 'Test package guidelines'
+description: Review the guidelines around test package
+search.appverid: MET150
+author: mansipatel-usl
+ms.author: mapatel
+manager: rshastri
+audience: Software-Vendor
+ms.topic: how-to
+ms.date: 07/06/2021
+ms.prod: ms.prod
+localization_priority: Normal
+ms.collection: TestBase-M365
+ms.custom:                 # This is an optional, free-form field you can use to define your own collection of articles. If you have more than one value, format as a bulleted list. This field truncates to something like 144 characters (inclusive of spaces) so keep it short.
+ms.reviewer: mapatel
+f1.keywords: NOCSH
 ---
-# Test Package Guidelines
+# Test package guidelines
 
-## 1.	Script Referencing
+## 1.	Script referencing
 
 When you upload a .zip file to the portal, we unzip all the content of that file into a root folder. You do not need to write any code to do this initial unzip operation. You also can reference any file within the .zip by using the path relative to the zip file uploaded.
 
@@ -58,7 +66,7 @@ Other times, your zip file may have your files or content right underneath it i.
 
 **Functional tests:** The application package needs to contain at least one PowerShell script. Where more than one script is provided, the scripts are run in upload sequence and a failure in a particular script will stop subsequent scripts from executing.
 
-### Script Requirements
+### Script requirements
 
 •	PowerShell Version 5.1+		
 
@@ -92,7 +100,7 @@ For example, the installation script (which may be located in the **App/scripts/
 The system will pick up the ```install.log``` file along with other files within other ```logs``` folders and collate it for download.
 
 
-## 4.	Application Binaries
+## 4.	Application binaries
 
 Any binaries and dependencies should be included in the single zip file. 
 
