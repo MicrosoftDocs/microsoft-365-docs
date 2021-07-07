@@ -32,7 +32,7 @@ This article is [Step 2 of 2](eval-defender-investigate-respond.md) in the proce
 
 Once you have performed an [incident response for a simulated attack](eval-defender-investigate-respond-simulate-attack.md), here are some Microsoft 365 Defender capabilities to explore:
 
-| Capability | Description |
+|Capability |Description |
 |:-------|:-----|
 | [Prioritize incidents](#prioritize-incidents) | Use filtering and sorting of the incidents queue to determine which incidents to address next. |
 | [Manage incidents](#manage-incidents) | Modify incident properties to ensure correct assignment, add tags and comments, and to resolve an incident. |
