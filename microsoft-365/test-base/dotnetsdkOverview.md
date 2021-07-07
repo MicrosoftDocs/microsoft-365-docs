@@ -1,27 +1,33 @@
 ---
-title: Test Base SDK for .NET #Required; page title displayed in search results. Include the brand.
-description: n/a #Required; article description that is displayed in search results.
-author: v-zhifufeng #Required; your GitHub user alias, with correct capitalization.
-ms.author: v-zhifufeng #Required; microsoft alias of author; optional team alias.
-ms.service: virtual-desktop #Required; service per approved list. service slug assigned to your service by ACOM.
-ms.topic: faq #Required
-ms.date: 01/04/2021 #Required; mm/dd/yyyy format.
+title: 'Test Base SDK for .NET'
+description: Details on the various types of SDKs Test Base interacts with.
+search.appverid: MET150
+author: mansipatel-usl
+ms.author: mapatel
+manager: rshastri
+audience: Software-Vendor
+ms.topic: how-to
+ms.date: 07/06/2021
+ms.service: virtual-desktop
+localization_priority: Normal
+ms.collection: TestBase-M365
+ms.custom:                 # This is an optional, free-form field you can use to define your own collection of articles. If you have more than one value, format as a bulleted list. This field truncates to something like 144 characters (inclusive of spaces) so keep it short.
+ms.reviewer: mapatel
+f1.keywords: NOCSH
 ---
-
 # Test Base SDK for .NET
 
 ## Overview
-Use test base SDK to interact with the Azure Test Base Resource. (i.e. manage your application package, include create package, edit package and delete package)
+Use Test Base SDK to interact with the Azure Test Base Resource. (i.e. manage your application package, include create package, edit package and delete package)
 
-Test summaries and Analysis Results which can be gotten with SDK include : scriptExecution, reliability, memoryUtilization, cpuUtilization, memoryRegression, cpuRegression.
+Test summaries and analysis results which can be retrieved with a SDK include : scriptExecution, reliability, memoryUtilization, cpuUtilization, memoryRegression, cpuRegression.
 
-With the Test Base SDK, you can integrate Test Base in your CI/CD runs.
+With the Test Base SDK, you will be able to integrate Test Base in your CI/CD runs.
 
-## Visual Studio Package Manager
+## Visual Studio package manager
 
 -   Install the Test Base package with Nuget.
 ```
 nuget add package Microsoft.Testbase
 ```
- 
-## Example
+
