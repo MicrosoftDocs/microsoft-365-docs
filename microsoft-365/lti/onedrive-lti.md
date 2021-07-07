@@ -35,10 +35,11 @@ Integrating Microsoft OneDrive LTI with Canvas is a two step process. The first 
 
 1. Sign into the <a href="https://onedrivelti.microsoft.com/admin" target="_blank">Microsoft OneDrive LTI Registration Portal</a>
 1. Select the **Admin Consent** button and accept the permissions.
-1. Select the **Create new LTI Tenant** button. On the LTI Registration page select **Canvas** in the dropdown and enter the base URL of your Canvas instance.
 
 > [!CAUTION]
 > Failure to follow this step will result in an hour's delay.
+
+3. Select the **Create new LTI Tenant** button. On the LTI Registration page select **Canvas** in the dropdown and enter the base URL of your Canvas instance.
 
 > [!NOTE]
 > If your Canvas instance is, for example, https://contoso.test.instructure.com](https://contoso.test.instructure.com), then the complete URL should be entered.
