@@ -48,7 +48,7 @@ The first step in creating a form processing model is to name the model, define 
 
     ![Screenshot showing the Automate menu and the Create a model to process forms option.](../media/content-understanding/create-ai-builder-model2.png)
 
-2. In the **Create a model to process forms** panel, in the  **Name** field, type a name for your model (for example, *Purchase Orders*).
+2. In the **Create a model to process forms** panel, in the **Name** field, type a name for your model (for example, *Purchase Orders*).
 
     ![Screenshot showing the Create a model to process forms panel.](../media/content-understanding/new-form-model2.png) 
 
@@ -56,7 +56,7 @@ The first step in creating a form processing model is to name the model, define 
 
    The collection name is saved to a dedicated column in the document library where the model is applied, allowing you to distinguish different file layouts processed by the same model. The extracted table information is saved to a specified list and associated with the uploaded file for easy viewing or for additional business process automation.
 
-   If you want to extract table information to an associated list:<br><br>
+   To extract table information to an associated list:<br><br>
 
      1. In the **Extract info from tables?** section, select **Yes**.
 
@@ -70,7 +70,7 @@ The first step in creating a form processing model is to name the model, define 
 
 4. When you create a form processing model, you create a new SharePoint content type. A SharePoint content type represents a category of documents that have common characteristics and share a collection of columns or metadata properties for that particular content. SharePoint content types are managed through the SharePoint admin center.
 
-   If you want to map this model to an existing content type in the SharePoint content types gallery, select **Advanced settings**.
+   To map this model to an existing content type in the SharePoint content types gallery, select **Advanced settings**.
 
     ![Screenshot showing the Advanced settings in the Create a model to process forms panel.](../media/content-understanding/new-form-model-advanced-settings.png) 
 
@@ -89,7 +89,7 @@ The first step in creating a form processing model is to name the model, define 
 After you create your new form processing model, your browser opens a new PowerApps AI Builder forms processing model page. On this page, you can add and analyze your example documents. 
 
 > [!NOTE]
-> When looking for example files to use, see the [form processing model input document requirements and optimization tips](/ai-builder/form-processing-model-requirements). 
+> When you look for example files to use, see the [form processing model input document requirements and optimization tips](/ai-builder/form-processing-model-requirements). 
 
    ![Power Apps AI Builder](../media/content-understanding/powerapps.png)
  
