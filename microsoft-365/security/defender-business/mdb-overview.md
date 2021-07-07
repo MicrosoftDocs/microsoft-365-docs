@@ -43,7 +43,7 @@ To learn more, see [Threat and vulnerability management](../defender-endpoint/ne
 
 ## Next-generation protection
 
-Next-generation protection includes antimalware and antivirus protection—on your devices and in the cloud—to protect against threats. Next-generation protection in Microsoft Defender for business includes:
+Next-generation protection includes antimalware and antivirus protection — on your devices and in the cloud — to protect against threats. Next-generation protection in Microsoft Defender for business includes:
 
 - Behavior-based, heuristic, and real-time antivirus protection. Files or processes that have suspicious attributes or exhibit malicious behaviors are stopped in their tracks, and are analyzed immediately.
 - Cloud-delivered protection, which includes near-instant detection and blocking of new and emerging threats. As threats are detected, they’re sent to the cloud for immediate analysis. If they’re determined to be malicious, they’re logged as such, and are blocked immediately. Detection, blocking, analysis, and determination happens almost instantly. Other users/customers (in addition to your organization) benefit from these capabilities, too, as the newly identified threats are now blocked on their devices.
@@ -147,7 +147,7 @@ To learn more, see the following articles:
 
 Live response enables your security team to connect to a device using a remote shell connection. When connected, you can use certain commands to perform tasks, such as collecting forensic data, analyzing a file, running a script, sending suspicious entities for analysis, remediating a file, and hunting proactively for threats. Live response enables you to do in-depth investigative work and take immediate response actions to promptly contain identified threats in real time. 
 
-To learn more, see [Investigate entities on devices using live response](../defender-endpoint/live-response.md).
+To learn more, including a list of basic commands, see [Investigate entities on devices using live response](../defender-endpoint/live-response.md).
 
 ## Automated investigation and response
 
