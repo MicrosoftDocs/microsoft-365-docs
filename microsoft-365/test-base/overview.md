@@ -1,6 +1,6 @@
 ---
 title: Overview #Required; page title displayed in search results. Include the brand.
-description: n/a #Required; article description that is displayed in search results.
+description: Introduction of Test Base for M365 #Required; article description that is displayed in search results.
 author: mansipatel-usl #Required; your GitHub user alias, with correct capitalization.
 ms.author: mapatel #Required; microsoft alias of author; optional team alias.
 ms.service: virtual-desktop #Required; service per approved list. service slug assigned to your service by ACOM.
@@ -19,7 +19,7 @@ They are not intended to define benefits or value prop; that would be in marketi
 For the H1 - that's the primary heading at the top of the article - use the format "What is <service>?"
 You can also use this in the TOC if your service name doesn’t cause the phrase to wrap.
 --->
-Test Base for Microsoft 365 (Test Base), or previously known as Update Staging Lab is Microsoft’s validation service based in the secure Azure environment.  
+Test Base for Microsoft 365 (Test Base) is Microsoft’s validation service based in the secure Azure environment.  
 With Test Base, Software Vendors (SVs) and System Integrators (SIs) can accelerate the validation of their applications against pre-released Windows security and feature builds. This is a highly engaged collaboration between SV partners and Microsoft enabling joint testing, validation and remediation.
 
 Test Base provides a great opportunity to build and maintain a secure validation service on Azure, where customers and partners can stage and test their application's workloads against our pre-released security updates.
@@ -65,4 +65,4 @@ We are encouraging all Software Vendors (SVs), System Integrators (SIs) to onboa
 
 Follow the link to get started
 > [!div class="nextstepaction"]
-> [Next step](Onboarding.md)
+> [Next step](createaccount.md)

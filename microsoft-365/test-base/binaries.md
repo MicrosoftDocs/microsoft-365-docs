@@ -1,6 +1,6 @@
 ---
-title: 'Upload your binaries'
-description: How to upload binaries and zip file
+title: Upload Application Binaries
+description: How to get started using Test Base for M365 #Required; article description that is displayed in search results.
 search.appverid: MET150
 author: mansipatel-usl
 ms.author: mapatel
@@ -19,6 +19,8 @@ f1.keywords: NOCSH
 # Step 3: Upload your binaries, dependencies, and scripts
 
 On this tab, you will upload a single zip package containing your binaries, dependencies and scripts used to run your test suite.
+
+## Upload package zip file
 
 ![Upload your binaries](Media/AddBinaries.png)
 
