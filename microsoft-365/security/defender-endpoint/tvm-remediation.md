@@ -73,7 +73,8 @@ When you submit a remediation request from the Security recommendations page, it
 If you chose the "attention required" remediation option, there will be no progress bar, ticket status, or due date since there is no actual action we can monitor.
 
 Once you are in the Remediation page, select the remediation activity that you want to view. You can follow the remediation steps, track progress, view the related recommendation, export to CSV, or mark as complete.
-![Example of the Remediation page, with a selected remediation activity, and that activity's flyout listing the description, IT service and device management tools, and device remediation progress.](images/remediation_flyouteolswnew.png)
+
+:::image type="content" source="../../media/remediation_flyouteolswnew.png" alt-text="Example of the Remediation page, with a selected remediation  activity, and that activity's flyout listing the description, IT service and device management tools, and device remediation":::
 
 >[!NOTE]
 > There is a 180 day retention period for completed remediation activities. To keep the Remediation page performing optimally, the remediation activity will be removed 6 months after its completion.
