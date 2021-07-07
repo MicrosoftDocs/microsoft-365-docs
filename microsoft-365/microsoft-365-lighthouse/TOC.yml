@@ -30,10 +30,11 @@
   items: 
     - name: Device compliance page overview
       href: 
+      items:      
         - name: Manage threats
           items:
-           - name: Threat management page overview
-             href: 
+            - name: Threat management page overview
+              href: 
 - name: Get help and support
   items: 
     - name: Get help and support
