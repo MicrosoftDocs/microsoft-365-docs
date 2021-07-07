@@ -49,7 +49,9 @@ And if you'd like to know what's new with other Microsoft cloud services:
 
 ### Microsoft 365 admin center search
 
-You can now search for incident IDs in the Microsoft 365 admin center. You may learn about current incidents through social media, RSS feeds or from other admins, and come to the admin center to look up more details about the incident and to understand the impact to your organization. Just search for the incident ID in the admin center.
+You can now search for incident IDs in the Microsoft 365 admin center. You may learn about current incidents through social media, RSS feeds or from other admins. You can now go to the admin center to look up more details about the incident and to understand the impact to your organization. Just search for the incident ID in the admin center.
+
+:::image type="content" source="../media/incident-id.png" alt-text="Screenshot: Searching for incident ID in the admin center":::
 
 ## June 2021
 
