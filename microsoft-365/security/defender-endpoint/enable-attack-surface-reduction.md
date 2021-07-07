@@ -40,6 +40,7 @@ You can set attack surface reduction rules for devices that are running any of t
 - Windows 10 Enterprise, [version 1709](/windows/whats-new/whats-new-windows-10-version-1709) or later
 - Windows Server, [version 1803 (Semi-Annual Channel)](/windows-server/get-started/whats-new-in-windows-server-1803) or later
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
+- [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)
 
 To use the entire feature-set of attack surface reduction rules, you need:
 
