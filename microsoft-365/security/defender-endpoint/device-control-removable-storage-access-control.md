@@ -23,6 +23,7 @@ ms.technology: mde
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
 
 Microsoft Defender for Endpoint Device Control Removable Storage Access Control enables you to do the following task:
+
 - auditing, allowing or preventing the read, write or execute access to removable storage with or without exclusion
 
 |Privilege |Permission  |
@@ -42,6 +43,8 @@ Deploy Removable Storage Access Control on Windows 10 devices that have antimalw
 
 - **4.18.2105 or later**: Add Wildcard support for HardwareId/DeviceId/InstancePathId/FriendlyNameId/SerialNumberId, the combination of specific user on specific machine, removeable SSD (a SanDisk Extreme SSD)/USB Attached SCSI (UAS) support
 
+- **4.18.2107 or later**: Add Windows Portable Device (WPD) support (for mobile devices, such as tablets)
+
 :::image type="content" source="images/powershell.png" alt-text="The PowerShell interface":::
 
 > [!NOTE]
@@ -57,15 +60,14 @@ You can use the following properties to create a removable storage group:
 
 **Property name: DescriptorIdList**
 
-1. Description: List the device properties you want to use to cover in the group.
-List the device properties you want to use to cover in the group.
+2. Description: List the device properties you want to use to cover in the group.
 For each device property, see **Device Properties** section above for more detail.
 
-1. Options:
-
-    - Primary ID
+3. Options:
+    - PrimaryId
         - RemovableMediaDevices
         - CdRomDevices
+        - WpdDevices
     - DeviceId
     - HardwareId
     - InstancePathId: InstancePathId is a string that uniquely identifies the device in the system, for example, USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0. The number at the end (for example **&0**) represents the available slot and may change from device to device. For best results, use a wildcard at the end. For example, USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*
@@ -82,7 +84,7 @@ For each device property, see **Device Properties** section above for more detai
 
 1. Description: When there are multiple device properties being used in the DescriptorIDList, MatchType defines the relationship.
 
-1. Options:
+2. Options:
 
     - MatchAll: Any attributes under the DescriptorIdList will be **And** relationship; for example, if administrator puts DeviceID and InstancePathID, for every connected USB, system will check to see whether the USB meets both values.
     - MatchAny: The attributes under the DescriptorIdList will be **Or** relationship; for example, if administrator puts DeviceID and InstancePathID, for every connected USB, system will do the enforcement as long as the USB has either an identical **DeviceID** or **InstanceID** value.
@@ -95,9 +97,9 @@ Following are the access control policy properties:
 
 **Property name: IncludedIdList**
 
-2. Description: The group(s) that the policy will be applied to. If multiple groups are added, the policy will be applied to any media in all those groups.
+1. Description: The group(s) that the policy will be applied to. If multiple groups are added, the policy will be applied to any media in all those groups.
 
-3. Options: The Group ID/GUID must be used at this instance.
+2. Options: The Group ID/GUID must be used at this instance.
 
 The following example shows the usage of GroupID:
 
@@ -130,11 +132,11 @@ When there are conflict types for the same media, the system will apply the firs
 
 **Property name: Sid**
 
-Description: Defines whether apply this policy over specific user or user group; one entry can have maximum one Sid and an entry without any Sid means applying the policy over the machine.
+Description: Local computer Sid or the Sid of the AD object, defines whether to apply this policy over a specific user or user group; one entry can have a maximum of one Sid and an entry without any Sid means applying the policy over the machine.
 
 **Property name: ComputerSid**
 
-Description: Defines whether apply this policy over specific machine or machine group; one entry can have maximum one ComputerSid and an entry without any ComputerSid means applying the policy over the machine. If you want to apply an Entry to a specific user and specific machine, add both Sid and ComputerSid into the same Entry.
+Description: Local computer Sid or the Sid of the AD object, defines whether to apply this policy over a specific machine or machine group; one entry can have a maximum of one ComputerSid and an entry without any ComputerSid means applying the policy over the machine. If you want to apply an Entry to a specific user and specific machine, add both Sid and ComputerSid into the same Entry.
 
 **Property name: Options**
 
@@ -319,6 +321,7 @@ DeviceEvents
 :::image type="content" source="images/block-removable-storage.png" alt-text="The screen depicting the blockage of the removable storage":::
 
 ## Frequently asked questions
+
 **What is the removable storage media limitation for the maximum number of USBs?**
 
 We have validated one USB group with 100,000 media - up to 7 MB in size. The policy works in both Intune and GPO without performance issues.
@@ -344,4 +347,3 @@ DeviceFileEvents
 | summarize dcount(DeviceName) by PlatformVersion // check how many machines are using which platformVersion
 | order by PlatformVersion desc
 ```
-

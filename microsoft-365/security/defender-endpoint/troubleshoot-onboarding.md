@@ -295,6 +295,9 @@ If the verification fails and your environment is using a proxy to connect to th
 
 ## Troubleshoot onboarding issues on a server
 
+>[!NOTE]
+>The following troubleshooting guidance is only applicable for Windows Server 2016 and lower.
+
 If you encounter issues while onboarding a server, go through the following verification steps to address possible issues.
 
 - [Ensure Microsoft Monitoring Agent (MMA) is installed and configured to report sensor data to the service](configure-server-endpoints.md)

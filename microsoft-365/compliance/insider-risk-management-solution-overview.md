@@ -39,5 +39,5 @@ Use the following steps to configure insider risk management for your organizati
 ## More information about insider risk management
 
 - [Manage insider risk policies](insider-risk-management-policies.md)
-- [Investigate insider risk alerts](insider-risk-management-alerts.md)
+- [Investigate insider risk activities](insider-risk-management-activities.md)
 - [Act on insider risk cases](insider-risk-management-cases.md)
