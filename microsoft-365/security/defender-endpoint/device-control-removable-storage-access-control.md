@@ -58,7 +58,6 @@ You can use the following properties to create a removable storage group:
 **Property name: DescriptorIdList**
 
 1. Description: List the device properties you want to use to cover in the group.
-List the device properties you want to use to cover in the group.
 For each device property, see **Device Properties** section above for more detail.
 
 1. Options:
