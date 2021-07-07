@@ -20,7 +20,6 @@ Microsoft Managed Desktop is a cloud-based service that brings together [Microso
 - User device deployment
 - IT service management and operations
 - Security monitoring and response
-- User support
 
 Microsoft Managed Desktop offers a solution for several of the challenges facing businesses and their people today:
 - The transition to the agile world of software as a service is daunting.
