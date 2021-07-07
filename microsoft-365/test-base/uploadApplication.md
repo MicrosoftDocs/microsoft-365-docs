@@ -1,5 +1,5 @@
 ---
-title: Upload your package #Required; page title displayed in search results. Include the brand.
+title: Uploading a Package #Required; page title displayed in search results. Include the brand.
 description: How to get started using Test Base for M365 #Required; article description that is displayed in search results.
 author: mansipatel-usl #Required; your GitHub user alias, with correct capitalization.
 ms.author: mapatel #Required; microsoft alias of author; optional team alias.
@@ -15,7 +15,7 @@ On the Test Base portal page, navigate to the ‘Upload new package option on th
 
 Once there, follow the steps below to upload a new package.
 
-### Step 1: Fill out your package's details
+## Enter details for your package
 
 On the Test details tab, type in your package's name, version and other details as requested. 
 
