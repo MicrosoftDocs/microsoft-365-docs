@@ -173,7 +173,7 @@ To learn more, see [Manage indicators](../defender-endpoint/manage-indicators.md
 
 ## Threat analytics
 
-Threat analytics is a set of reports from expert Microsoft security researchers covering the most relevant threats, including:
+Threat analytics include reports from expert Microsoft security researchers covering the most relevant threats. These reports include information about:
 
 - Active threat actors and their campaigns
 - Popular and new attack techniques
