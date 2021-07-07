@@ -694,6 +694,9 @@
           href: get-started-with-advanced-ediscovery.md
         - name: Create and manage a case
           href: create-and-manage-advanced-ediscoveryv2-case.md
+          items: 
+            - name: Use large cases
+              href: advanced-ediscovery-large-cases.md
         - name: Manage custodians and non-custodial data sources
           href: managing-custodians.md
           items: 
