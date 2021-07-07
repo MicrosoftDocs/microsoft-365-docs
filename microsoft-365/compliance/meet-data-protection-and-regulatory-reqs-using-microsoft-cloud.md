@@ -60,23 +60,23 @@ An Assessment is made of several components, which are:
 
   Here's an example of three Microsoft-managed controls in the **Security** control family from an Assessment of Office 365 and the GDPR.
 
-    ![Details of Microsoft-managed controls in the Compliance Manager](../media/d1351212-1ebf-424e-91b8-930c2b2edef1.png)
+  ![Details of Microsoft-managed controls in the Compliance Manager](../media/d1351212-1ebf-424e-91b8-930c2b2edef1.png)
 
-  a. Specifies the following information from the certification or regulation that maps to the Microsoft-managed control.
+  1. Specifies the following information from the certification or regulation that maps to the Microsoft-managed control.
 
-  - **Control ID** - The section or article number from the certification or regulation that the control maps to.
+     - **Control ID** - The section or article number from the certification or regulation that the control maps to.
 
-  - **Title** - The title from the corresponding certification or regulation.
+     - **Title** - The title from the corresponding certification or regulation.
 
-  - **Article ID** - This field is included only for GDPR assessments, as it specifies the corresponding GDPR article number.
+     - **Article ID** - This field is included only for GDPR assessments, as it specifies the corresponding GDPR article number.
 
-  - **Description** - Text of the standard or regulation that maps to the selected Microsoft-managed control.
+     - **Description** - Text of the standard or regulation that maps to the selected Microsoft-managed control.
 
-  b. The Compliance Score for the control, which indicates the level of risk (due to non-compliance or control failure) associated with each Microsoft-managed control. See [Understanding the Compliance Score](#understanding-the-compliance-score) for more information. Note that Compliance Scores are rated from 1 to 10 and are color-coded. Yellow indicates low risk controls, orange indicates medium-risk controls, and red indicated high-risk controls.
+  1. The Compliance Score for the control, which indicates the level of risk (due to non-compliance or control failure) associated with each Microsoft-managed control. See [Understanding the Compliance Score](#understanding-the-compliance-score) for more information. Note that Compliance Scores are rated from 1 to 10 and are color-coded. Yellow indicates low risk controls, orange indicates medium-risk controls, and red indicated high-risk controls.
 
-  c. Information about the implementation status of a control, the date the control was tested, who performed the test, and the test result.
+  1. Information about the implementation status of a control, the date the control was tested, who performed the test, and the test result.
 
-  d. For each control, you can click **More** to see additional information, including details about Microsoft's implementation of the control and details about how the control was tested and validated by an independent third-party auditor.
+  1. For each control, you can click **More** to see additional information, including details about Microsoft's implementation of the control and details about how the control was tested and validated by an independent third-party auditor.
 
 - **Customer-Managed Controls** - This is the collection of controls that are managed by your organization. Your organization is responsible for implementing these controls as part of your compliance process for a given standard or regulation. Customer-managed controls are also organized into control families for the corresponding certification or regulation. Use the customer-managed controls to implement the recommended actions suggested by Microsoft as part of your compliance activities. Your organization can use the prescriptive guidance and recommended Customer Actions in each customer-managed control to manage the implementation and assessment process for that control.
 
@@ -203,9 +203,9 @@ The essence of the control is based on whether the control is Mandatory or Discr
 
 ### Mandatory or discretionary
 
- *Mandatory controls*  are controls that cannot be bypassed either intentionally or accidentally. An example of a common mandatory control is a centrally-managed password policy that sets requirements for password length, complexity, and expiration. Users must comply with these requirements in order to access the system.
+*Mandatory controls*  are controls that cannot be bypassed either intentionally or accidentally. An example of a common mandatory control is a centrally-managed password policy that sets requirements for password length, complexity, and expiration. Users must comply with these requirements in order to access the system.
 
- *Discretionary controls*  rely upon users to understand policy and act accordingly. For example, a policy requiring users to lock their computer when they leave it is a discretionary control because it relies on the user.
+*Discretionary controls*  rely upon users to understand policy and act accordingly. For example, a policy requiring users to lock their computer when they leave it is a discretionary control because it relies on the user.
 
 ### Preventative, detective, or corrective
 
@@ -321,7 +321,7 @@ By clicking the **Office 365 — GDPR** assessment, and using the filter control
 
 ![Compliance Manager Assessment — shared controls](../media/aafb106e-0abc-4918-8038-de11cf326dfe.png)
 
- Here we show the completion of the implementation and testing of GDPR control 6.10.1.2.
+Here we show the completion of the implementation and testing of GDPR control 6.10.1.2.
 
 ![Compliance Manager Assessment control GDPR 6.10.1.2 — passed](../media/ee9e83b6-9d51-4b3b-85eb-96bec0fef2e1.png)
 
@@ -504,9 +504,9 @@ To add an Assessment to Compliance Manager:
 
 3. Click **Next**, and do the following:
 
-   a. Choose a Microsoft cloud service to assess for compliance from the **Select a product** drop-down list.
+   1. Choose a Microsoft cloud service to assess for compliance from the **Select a product** drop-down list.
 
-   b. Choose a certification to assess the selected cloud service against from the **Select a certification** drop-down list.
+   1. Choose a certification to assess the selected cloud service against from the **Select a certification** drop-down list.
 
 4. Click **Add to Dashboard** to create the Assessment; the assessment will be added to the Compliance Manager dashboard as a new tile at the end of the list of existing tiles.
 
