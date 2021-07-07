@@ -1,16 +1,23 @@
 ---
-title: Feature update validation #Required; page title displayed in search results. Include the brand.
-description: n/a #Required; article description that is displayed in search results.
-author: v-zhifufeng #Required; your GitHub user alias, with correct capitalization.
-ms.author: v-zhifufeng #Required; microsoft alias of author; optional team alias.
-ms.service: virtual-desktop #Required; service per approved list. service slug assigned to your service by ACOM.
-ms.topic: how-to #Required
-ms.date: 01/04/2021 #Required; mm/dd/yyyy format.
+title: 'Feature update validation'
+description: Details on how to upload your application for feature update validation
+search.appverid: MET150
+author: mansipatel-usl
+ms.author: mapatel
+manager: rshastri
+audience: Software-Vendor
+ms.topic: how-to
+ms.date: 07/06/2021
+ms.service: virtual-desktop
+localization_priority: Normal
+ms.collection: TestBase-M365
+ms.custom:                 # This is an optional, free-form field you can use to define your own collection of articles. If you have more than one value, format as a bulleted list. This field truncates to something like 144 characters (inclusive of spaces) so keep it short.
+ms.reviewer: mapatel
+f1.keywords: NOCSH
 ---
-
 # Windows Feature update validation
 
-Do you need insights on how your applications will perform with the next release of Windows 10 - prior to it being available in the market and without you maintaining an environment to validate new Windows features? 
+Do you need insights on how your applications will perform with the next release of Windows 10 or Windows 11 - without you maintaining an environment to validate new Windows features? 
 
 Do you want to run your validation tests against Windows Insider Program builds in our Azure environment?
 
@@ -24,19 +31,19 @@ Highlighted below are the steps to take as you fill out the **Test details**:
 
 1. Select **Feature Update** as your OS update type:
 
-![Feature update validation](Media/Feature-update-validation-01.png)
+![Feature update validation OS type](Media/Feature-update-validation-01.png)
 
 2. Choose the Windows Insider Channel against which you want your application validated.  
 
-![Feature update validation](Media/Feature-update-validation-02.png)
+![Feature update validation. Choosing the Insider beta channel](Media/Feature-update-validation-02.png)
 
-3. Select an in-market release of Windows 10 as the baseline for your test (and resulting insights!) and provide the other details required to onboard your package successfully.
+3. Select an in-market release of Windows 10 or Windows 11 as the baseline for your test (and resulting insights!) and provide the other details required to onboard your package successfully.
 
-![Feature update validation](Media/Feature-update-validation-03.png)
+![Feature update validation with released versions of Windows 10 and Windows 11](Media/Feature-update-validation-03.png)
 
 4. To view the results from the validation of your application against pre-released Windows 10 feature updates, visit the ```Feature Updates Test Results```.
 
-![Feature update validation](Media/Feature-update-validation-04.png)
+![Feature update validation allows you to review results quickly](Media/Feature-update-validation-04.png)
 
 
 ## Next steps

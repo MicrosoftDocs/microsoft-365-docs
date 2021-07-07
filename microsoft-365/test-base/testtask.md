@@ -1,5 +1,5 @@
 ---
-title: Set your Test Tasks #Required; page title displayed in search results. Include the brand.
+title: Set Test Tasks #Required; page title displayed in search results. Include the brand.
 description: n/a #Required; article description that is displayed in search results.
 author: mansipatel-usl #Required; your GitHub user alias, with correct capitalization.
 ms.author: mapatel #Required; microsoft alias of author; optional team alias.
@@ -7,7 +7,7 @@ ms.service: virtual-desktop #Required; service per approved list. service slug a
 ms.topic: quickstart	 #Required
 ms.date: 01/04/2021 #Required; mm/dd/yyyy format.
 ---
-# Step 4: The Tasks Tab
+# Step 4: Set Test Tasks
 
 On the Tasks tab, you are expected to provide the paths to your test scripts which are in the zip folder you uploaded under the Binaries tab.
 
@@ -16,6 +16,8 @@ On the Tasks tab, you are expected to provide the paths to your test scripts whi
   
     The scripts are run in upload sequence and a failure in a particular script will stop subsequent scripts from executing.
     You also have the option of selecting additional settings for each script provided.
+
+## Set script path
 
 ![](Media/testtask.png)
 
