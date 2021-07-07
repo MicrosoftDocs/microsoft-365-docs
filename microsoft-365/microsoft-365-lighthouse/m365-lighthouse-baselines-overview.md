@@ -15,16 +15,16 @@ ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse                         
 search.appverid: MET150
-description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, get an overview of standard tenant configurations with Lighthouse Baselinese."
+description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, get an overview of standard tenant configurations with Lighthouse Baselines."
 ---
 
 # Deploy standard tenant configurations with Microsoft 365 Lighthouse Baselines 
 
-Microsoft 365 Lighthouse Baselines provide a repeatable and scalable way for you to assess and manage Microsoft 365 security settings across multiple tenants. Baselines also enable you to monitor core security policies and tenant compliance standards with configurations that secure users, devices, and data.
+Microsoft 365 Lighthouse Baselines provide a repeatable and scalable way for you to assess and manage Microsoft 365 security settings across multiple tenants. Baselines also help monitor core security policies and tenant compliance standards with configurations that secure users, devices, and data.
 
-Designed to help partners help their customers adopt a security posture at their own pace, Microsoft 365 Lighthouse provides a standard set of Baseline parameters and pre-defined configurations for Microsoft 365 services. These security configurations will also help you measure how your tenants are doing with respect to Microsoft 365 service security progress and compliance.
+Designed to help partners enable customer adoption of security at their own pace, Microsoft 365 Lighthouse provides a standard set of Baseline parameters and pre-defined configurations for Microsoft 365 services. These security configurations help measure how your tenants are doing with their Microsoft 365 service security progress and compliance.
 
-You can view the default Baselines and the steps that make up a Baseline from within the Microsoft 365 Lighthouse platform. Baselines can be applied to a tenant by going to Tenants on the left navigation, then select a tenant, go to the Deployment plan tab and then implementing the desired Baseline for your tenant.
+You can view the default Baselines and the steps that make up a Baseline from within the Microsoft 365 Lighthouse platform. Baselines can be applied to a tenant by going to Tenants on the left navigation and selecting a tenant. Next go to the Deployment plan tab and then implement the required tenant Baseline.
 
 ## Standard Baseline security templates
 
@@ -101,5 +101,5 @@ The following Baseline configurations come standard with the Microsoft 365 Light
 
 ##  Related topics
 
-Deploy M365 Lighthouse Baselines (article)  
+Deploy Microsoft 365 Lighthouse Baselines (article)  
 [Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq)
