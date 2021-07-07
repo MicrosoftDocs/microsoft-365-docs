@@ -1,6 +1,6 @@
 ---
-title: 'Upload your binaries'
-description: How to upload binaries and zip file
+title: Upload Application Binaries
+description: How to get started using Test Base for M365 #Required; article description that is displayed in search results.
 search.appverid: MET150
 author: mansipatel-usl
 ms.author: mapatel
@@ -20,6 +20,8 @@ f1.keywords: NOCSH
 
 On this tab, you will upload a single zip package containing your binaries, dependencies and scripts used to run your test suite.
 
+## Upload package zip file
+
 ![Upload your binaries](Media/AddBinaries.png)
 
   - Uploaded dependencies can include test frameworks, scripting engines or data that will be accessed to run your application or test cases. For example, you can upload Selenium and a webdriver installer to help run browser-based tests.
@@ -32,7 +34,7 @@ On this tab, you will upload a single zip package containing your binaries, depe
 **Currently, the portal only supports PowerShell scripts.**
 
 
-## Next steps
+## Next steps 
 
 Advance to the next article to go onto Step 4: **Set your Test Tasks**.
 > [!div class="nextstepaction"]
