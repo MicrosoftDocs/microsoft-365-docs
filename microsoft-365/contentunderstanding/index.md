@@ -17,7 +17,7 @@ description: "Learn how to find resources for Microsoft SharePoint Syntex."
 
 # Introduction to Microsoft SharePoint Syntex
 
-Microsoft SharePoint Syntex is an Microsoft 365 service that helps organizations to:
+SharePoint Syntex is an Microsoft 365 service that helps organizations to:
 
 - Use advanced AI and machine teaching to amplify human experiences
 - Automate content processing
@@ -51,7 +51,8 @@ Learn more about how to use and implement SharePoint Syntex in your organization
 | If you're looking for this information: | Go to this resource: |
 |:-----|:-----|
 |Learn how to start planning to use SharePoint Syntex |[SharePoint Syntex adoption: get started](./adoption-getstarted.md)| 
-|See example scenarios to give you ideas about how you can use SharePoint Syntex in your organization |[Scenarios and use cases for Microsoft SharePoint Syntex](./adoption-scenarios.md)| 
+|See example scenarios to give you ideas about how you can use SharePoint Syntex in your organization |[Scenarios and use cases for SharePoint Syntex](./adoption-scenarios.md)| 
+|Set up and run a trial pilot program for SharePoint Syntex |[Run a trial](./trial-syntex.md)|
 |Learn how to use SharePoint Syntex to automate document processes |[Manage contracts using a Microsoft 365 solution](./solution-manage-contracts-in-microsoft-365.md)| 
 
 ## Set up SharePoint Syntex
@@ -60,7 +61,7 @@ The resources in this section help your admin in your organization to set up and
 
 | If you're looking for this information: | Go to this resource: |
 |:-----|:-----|
-|Set up and configure SharePoint Syntex|[Set up Microsoft SharePoint Syntex](./set-up-content-understanding.md)|
+|Set up and configure SharePoint Syntex|[Set up SharePoint Syntex](./set-up-content-understanding.md)|
 |Learn about image tagging and how to disable|[Image tagging in SharePoint Syntex](./image-tagging.md)|
 
 ## Models
@@ -71,6 +72,7 @@ The resources in this section help your users learn how to create and configure 
 |:-----|:-----|
 |Learn how to work with models|[Create a content center](./create-a-content-center.md)<br><br>[Create a classifier](./create-a-classifier.md)<br><br>[Create an extractor](./create-an-extractor.md)<br><br>[Create a form processing model](./create-a-form-processing-model.md)<br><br>[Explanation types](./explanation-types-overview.md)<br><br>[Apply a document understanding model](./apply-a-model.md)<br><br>[Learn about document understanding models through the sample model](./learn-about-document-understanding-models-through-the-sample-model.md)<br><br>|
 |Apply a retention label to your model|[Apply a retention label to a document understanding model](./apply-a-retention-label-to-a-model.md)|
+|Apply a sensitivity label to your model|[Apply a sensitivity label to a document understanding model](./apply-a-sensitivity-label-to-a-model.md)|
 |Use Managed Metadata services term store taxonomy when creating an extractor|[Leverage term store taxonomy when creating an extractor](./leverage-term-store-taxonomy.md)|
 |Learn how to see data about your models|[Model usage analytics](./model-usage-analytics.md)|
 |Learn how to use accessibility mode when training a model|[SharePoint Syntex accessibility mode](./accessibility-mode.md)|
