@@ -33,7 +33,7 @@
     - name: Manage threats
       items:
         - name: Threat management page overview
-          href: requirements-for-m365-lighthouse.md
+          href: m365-lighthouse-threat-management-page-overview.md
 - name: Get help and support
   items: 
     - name: Get help and support
