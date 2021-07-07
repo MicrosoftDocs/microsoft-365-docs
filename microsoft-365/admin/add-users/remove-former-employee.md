@@ -43,16 +43,20 @@ You need to be a global administrator to complete the steps in this solution.
 
 :::image type="content" source="../../media/delete-user-account.png" alt-text="Screenshot: Steps for removing a former employee from your organization":::
 
-|||
-|:-----|:-----|
-|**Step** <br/> |**Why do this** <br/> |
-|[Step 1 - Prevent a former employee from logging in and block access to Microsoft 365 services](remove-former-employee-step-1.md) <br/> |This blocks your former employee from logging in to Microsoft 365 and prevents the person from accessing Microsoft 365 services. <br/> |
-|[Step 2 - Save the contents of a former employee's mailbox](remove-former-employee-step-2.md) <br/> |This is useful for the person who is going to take over the employee's work, or if there is litigation. <br/> |
-|[Step 3 - Forward a former employee's email to another employee or convert to a shared mailbox](remove-former-employee-step-3.md) <br/> |This lets you keep the former employee's email address active. If you have customers or partners still sending email to the former employee's address, this gets them to the person taking over the work. <br/> |
-|[Step 4 - Give another employee access to OneDrive and Outlook data](remove-former-employee-step-4.md) <br/> |If you only remove a user's license but don't delete the account, the content in the user's OneDrive will remain accessible to you even after 30 days. <br/><br/> Before you delete the account, you should give access of their OneDrive and Outlook to another user. After you delete an employee's account, the content in their OneDrive and Outlook is retained for **30** days. During that 30 days, however, you can restore the user's account, and gain access to their content. If you restore the user's account, the OneDrive and Outlook content will remain accessible to you even after 30 days. <br/> |
-|[Step 5 - Wipe and block a former employee's mobile device](remove-former-employee-step-5.md) <br/> |Removes your business data from the phone or tablet.  <br/> |
-|[Step 6 - Remove and delete the Microsoft 365 license from a former employee](remove-former-employee-step-6.md) <br/> |When you remove a license, you can assign it to someone else. Or, you can delete the license so you don't pay for it until you hire another person. <br/><br/> When you remove or delete a license, the user's old email, contacts, and calendar are retained for **30 days**, then permanently deleted. If you remove or delete a license but don't delete the account, the content in the user's OneDrive will remain accessible to you even after 30 days.  <br/> |
-|[Step 7 - Delete a former employee's user account](remove-former-employee-step-7.md) <br/> |This removes the account from your admin center. Keeps things clean. <br/> |
+<br>
+
+****
+
+|Step|Why do this|
+|---|---|
+|[Step 1 - Prevent a former employee from logging in and block access to Microsoft 365 services](remove-former-employee-step-1.md)|This blocks your former employee from logging in to Microsoft 365 and prevents the person from accessing Microsoft 365 services.|
+|[Step 2 - Save the contents of a former employee's mailbox](remove-former-employee-step-2.md)|This is useful for the person who is going to take over the employee's work, or if there is litigation.|
+|[Step 3 - Forward a former employee's email to another employee or convert to a shared mailbox](remove-former-employee-step-3.md)|This lets you keep the former employee's email address active. If you have customers or partners still sending email to the former employee's address, this gets them to the person taking over the work.|
+|[Step 4 - Give another employee access to OneDrive and Outlook data](remove-former-employee-step-4.md)|If you only remove a user's license but don't delete the account, the content in the user's OneDrive will remain accessible to you even after 30 days. <p> Before you delete the account, you should give access of their OneDrive and Outlook to another user. After you delete an employee's account, the content in their OneDrive and Outlook is retained for **30** days. During that 30 days, however, you can restore the user's account, and gain access to their content. If you restore the user's account, the OneDrive and Outlook content will remain accessible to you even after 30 days.|
+|[Step 5 - Wipe and block a former employee's mobile device](remove-former-employee-step-5.md)|Removes your business data from the phone or tablet.|
+|[Step 6 - Remove and delete the Microsoft 365 license from a former employee](remove-former-employee-step-6.md)|When you remove a license, you can assign it to someone else. Or, you can delete the license so you don't pay for it until you hire another person. <p> When you remove or delete a license, the user's old email, contacts, and calendar are retained for **30 days**, then permanently deleted. If you remove or delete a license but don't delete the account, the content in the user's OneDrive will remain accessible to you even after 30 days.|
+|[Step 7 - Delete a former employee's user account](remove-former-employee-step-7.md)|This removes the account from your admin center. Keeps things clean.|
+|
 
 ## Related content
 
