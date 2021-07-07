@@ -64,5 +64,5 @@ Follow these steps to acquire the Microsoft 365 Lighthouse service plan:
 
 ## Related content
 
-[Overview of Microsoft](overview-m365-lighthouse.md) (article)\
-[Microsoft 365 Lighthouse FAQ]() (article)
+[Overview of Microsoft](m365-lighthouse-overview.md) (article)\
+[Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)

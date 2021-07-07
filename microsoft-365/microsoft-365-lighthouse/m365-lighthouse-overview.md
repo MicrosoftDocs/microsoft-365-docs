@@ -21,7 +21,7 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 # Overview of Microsoft 365 Lighthouse
 
 > [!NOTE]
-> The features described in this article are in Preview, are subject to change, and are only available to partners who meet the [requirements](requirements-for-m365-lighthouse.md). If your organization does not have Microsoft 365 Lighthouse, see [Sign up for Microsoft 365 Lighthouse](sign-up-m365-lighthouse.md).
+> The features described in this article are in Preview, are subject to change, and are only available to partners who meet the [requirements](requirements-for-m365-lighthouse.md). If your organization does not have Microsoft 365 Lighthouse, see [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
 
 Microsoft 365 Lighthouse is an admin portal that helps Managed Service Providers (MSPs) secure and manage devices, data, and users at scale for small- and medium-sized business (SMB) customers who are using Microsoft 365 Business Premium. 
 
@@ -53,11 +53,11 @@ Microsoft 365 Lighthouse helps partners secure and manage Microsoft 365 services
 - Providing insights into Microsoft 365 service incidents and advisories that impact the customer tenants they manage.
 
 > [!NOTE] 
-> For more information on how to sign up, see [Sign up for Microsoft 365 Lighthouse](sign-up-m365-lighthouse.md).
+> For more information on how to sign up, see [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
 
 ## Related content
 
-[Sign up for Microsoft 365 Lighthouse](sign-up-m365-lighthouse.md) (article)\
-[Overview of managing tenants]() (article)\
-[Overview of managing devices]() (article)\
-[Microsoft 365 Lighthouse FAQ]() (article)
+[Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md) (article)\
+[Microsoft 365 Lighthouse tenant list overview]() (article)\
+[Microsoft 365 Lighthouse Device compliance page overview]() (article)\
+[Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)
