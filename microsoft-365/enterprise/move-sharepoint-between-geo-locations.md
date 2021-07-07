@@ -23,7 +23,7 @@ With SharePoint site geo move, you can move SharePoint sites to other geo locati
 
 The following types of site can be moved between geo locations:
 
-- Microsoft 365 Group-connected sites
+- Microsoft 365 Group-connected sites, including those associated with Microsoft Teams
 - Modern sites without a Microsoft 365 Group association
 - Classic SharePoint sites
 - Communication sites
