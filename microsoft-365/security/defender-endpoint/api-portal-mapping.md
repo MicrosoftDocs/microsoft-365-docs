@@ -28,7 +28,7 @@ ms.technology: mde
 
 >Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-apiportalmapping-abovefoldlink)
 
-Understand what data fields are exposed as part of the detections API and how they map to Microsoft 2365 Defender.
+Understand what data fields are exposed as part of the detections API and how they map to Microsoft 365 Defender.
 
 >[!Note]
 >- [Defender for Endpoint Alert](alerts.md) is composed from one or more detections.
