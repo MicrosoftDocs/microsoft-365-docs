@@ -387,7 +387,6 @@ For more information about the PowerShell cmdlets that support auto-labeling pol
 - [Set-AutoSensitivityLabelPolicy](/powershell/module/exchange/set-autosensitivitylabelpolicy)
 - [Set-AutoSensitivityLabelRule](/powershell/module/exchange/set-autosensitivitylabelrule)
 
-<<<<<<< HEAD
 ## Opt in to the new preview for auto-labeling policies
 
 The new preview version of auto-labeling policies for OneDrive and SharePoint has the following improvements from the general availability version:
@@ -418,7 +417,7 @@ Before you submit the form, be aware of the following conditions:
 - After your tenant is running the preview, you cannot opt out and return to the general availability version. The tenant will continue to run the preview until this version becomes generally available.
 
 - If had any auto-labeling policies that are still in simulation mode when your preview request was accepted, you must re-run the simulation. If this scenario applies to you, you'll be prompted to select **Restart Simulation**. If you don't, the simulation won't complete and the preview won't be enabled.
-=======
+
 ## Tips to increase labeling reach
 
 Although auto-labeling is one of the most efficient ways to classify, label, and protect Office files that your organization owns, check whether you can supplement it with any of the additional methods to increase your labeling reach:
@@ -432,4 +431,3 @@ Although auto-labeling is one of the most efficient ways to classify, label, and
 - Encourage [manual labeling](https://support.microsoft.com/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9) after providing users with training which sensitivity labels to apply. When you're confident that users understand which label to apply, consider configuring a default label and mandatory labeling as [policy settings](sensitivity-labels.md#what-label-policies-can-do).
 
 Additionally, consider [marking new files as sensitive by default](/sharepoint/sensitive-by-default) in SharePoint to prevent guests from accessing newly added files until at least one DLP policy scans the content of the file.
->>>>>>> 4c29ef3e8f65b270135386b8286d021862e8a0fb
