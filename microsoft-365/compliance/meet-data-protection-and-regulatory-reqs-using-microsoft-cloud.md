@@ -113,7 +113,7 @@ For example, the User Access Management assessment control shown below has a ver
 
 ![Compliance Manager - Assessment control high severity - score 10](../media/174ecb2c-aaed-436e-9950-74da7dadf5db.png)
 
- By comparison, the Information Backup assessment control shown below has a lower severity risk ranking, and displays an assigned value of 3.
+By comparison, the Information Backup assessment control shown below has a lower severity risk ranking, and displays an assigned value of 3.
 
 ![Compliance Manager - Assessment control low severity - score 3](../media/11749f20-5f22-40c2-bbc1-eaccbf29e2ae.png)
 
