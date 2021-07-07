@@ -1,6 +1,6 @@
 ---
-title: 'Upload your binaries'
-description: How to upload binaries and zip file
+title: Upload Application Binaries
+description: How to get started using Test Base for M365 #Required; article description that is displayed in search results.
 search.appverid: MET150
 author: mansipatel-usl
 ms.author: mapatel
