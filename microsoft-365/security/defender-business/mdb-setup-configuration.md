@@ -38,13 +38,13 @@ The following table lists the basic requirements for Microsoft Defender for busi
 
 If you don’t already have Microsoft Defender for business, you can sign up for a free trial or buy a subscription. The first person to sign your company up is a global administrator (also referred as the global admin). The global admin can purchase licenses, upgrade services, set up user accounts, and configure settings for your organization. 
 
-1.	Go to the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)), and sign in.
+1. Go to the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)), and sign in.
 
-2.	In the navigation bar, go to **Billing**. 
+2. In the navigation bar, go to **Billing**. 
 
-3.	To view your current subscription(s), select **Your products**.
+3. To view your current subscription(s), select **Your products**.
 
-4.	To add a subscription, such as Microsoft Defender for business, choose **Purchase services**. Search for *Microsoft Defender for business*, and then complete the purchase process.
+4. To add a subscription, such as Microsoft Defender for business, choose **Purchase services**. Search for *Microsoft Defender for business*, and then complete the purchase process.
 
 > [!TIP]
 > To learn more about purchasing services, see [Microsoft 365 Business Premium Setup](../../business-video/setup-overview.md).
@@ -192,8 +192,4 @@ The following table lists your settings and options:
 | Process exclusions | Exclude files that are opened by specific processes from Microsoft Defender Antivirus scans. [Learn more about process exclusions](../defender-endpoint/configure-process-opened-file-exclusions-microsoft-defender-antivirus.md). |
 | File and extension exclusions | Exclude specific files or files with specific extensions from Microsoft Defender Antivirus scans. [Learn more about file and extension exclusions](../defender-endpoint/configure-extension-file-exclusions-microsoft-defender-antivirus.md). |
 | File and folder exclusions | Exclude files that are in specific folders from Microsoft Defender Antivirus scans. [Learn more about file and folder exclusions](../defender-endpoint/configure-extension-file-exclusions-microsoft-defender-antivirus.md). |
-
-
-
-
 
