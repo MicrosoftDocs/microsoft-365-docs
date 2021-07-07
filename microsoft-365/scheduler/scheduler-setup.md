@@ -57,13 +57,13 @@ Get-mailbox | where {$_.PersistedCapabilities -Match "SchedulerAssistant"}
 > It might take up to two hours for the Scheduler mailbox to complete full provisioning to set the SchedulerAssistant capability.
 
 ## Exchange Online mailbox
-A Scheduler license is an add-on to Microsoft 365, that enables the meeting organizer to delegate their meeting scheduling tasks to their Scheduler assistant. For the Scheduler to work, typically through Microsoft 365 licence, meeting organizers require the following:
+A Scheduler license is an add-on to Microsoft 365, that enables the meeting organizer to delegate their meeting scheduling tasks to their Scheduler assistant. For the Scheduler to work, typically through Microsoft 365 license, meeting organizers require the following components:
 
 - A mailbox designated as Scheduler assistant mailbox
 - Scheduler license
 - Exchange Online mailbox and calendar
 
-The meeting attendees do not require Scheduler or Microsoft 365 licence.
+The meeting attendees do not require Scheduler or Microsoft 365 license.
 
 ## Scheduler end-user license requirements
 
