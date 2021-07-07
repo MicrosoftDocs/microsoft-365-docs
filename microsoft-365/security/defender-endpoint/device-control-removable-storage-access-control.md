@@ -57,11 +57,10 @@ You can use the following properties to create a removable storage group:
 
 **Property name: DescriptorIdList**
 
-1. Description: List the device properties you want to use to cover in the group.
-List the device properties you want to use to cover in the group.
+2. Description: List the device properties you want to use to cover in the group.
 For each device property, see **Device Properties** section above for more detail.
 
-1. Options:
+3. Options:
 
     - Primary ID
         - RemovableMediaDevices
@@ -82,7 +81,7 @@ For each device property, see **Device Properties** section above for more detai
 
 1. Description: When there are multiple device properties being used in the DescriptorIDList, MatchType defines the relationship.
 
-1. Options:
+2. Options:
 
     - MatchAll: Any attributes under the DescriptorIdList will be **And** relationship; for example, if administrator puts DeviceID and InstancePathID, for every connected USB, system will check to see whether the USB meets both values.
     - MatchAny: The attributes under the DescriptorIdList will be **Or** relationship; for example, if administrator puts DeviceID and InstancePathID, for every connected USB, system will do the enforcement as long as the USB has either an identical **DeviceID** or **InstanceID** value.
@@ -319,6 +318,7 @@ DeviceEvents
 :::image type="content" source="images/block-removable-storage.png" alt-text="The screen depicting the blockage of the removable storage":::
 
 ## Frequently asked questions
+
 **What is the removable storage media limitation for the maximum number of USBs?**
 
 We have validated one USB group with 100,000 media - up to 7 MB in size. The policy works in both Intune and GPO without performance issues.
