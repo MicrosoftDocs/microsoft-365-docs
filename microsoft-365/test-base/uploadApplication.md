@@ -1,21 +1,29 @@
 ---
-title: Upload your package #Required; page title displayed in search results. Include the brand.
-description: How to get started using Test Base for M365 #Required; article description that is displayed in search results.
-author: mansipatel-usl #Required; your GitHub user alias, with correct capitalization.
-ms.author: mapatel #Required; microsoft alias of author; optional team alias.
-ms.service: virtual-desktop #Required; service per approved list. service slug assigned to your service by ACOM.
-ms.topic: quickstart #Required
-ms.date: 12/31/2020 #Required; mm/dd/yyyy format.
+title: 'Upload your package'
+description: How to upload your appplication, binaries and dependencies onto Test Base
+search.appverid: MET150
+author: mansipatel-usl
+ms.author: mapatel
+manager: rshastri
+audience: Software-Vendor
+ms.topic: troubleshooting
+ms.date: 07/06/2021
+ms.service: virtual-desktop
+localization_priority: Normal
+ms.collection: TestBase-M365
+ms.custom:                 # This is an optional, free-form field you can use to define your own collection of articles. If you have more than one value, format as a bulleted list. This field truncates to something like 144 characters (inclusive of spaces) so keep it short.
+ms.reviewer: mapatel
+f1.keywords: NOCSH
 ---
 
 # Step 2: Uploading a Package
 
 On the Test Base portal page, navigate to the ‘Upload new package option on the left navigation bar as shown below:
-![Upload new package](Media/Upload-New-Package.png)
+![Upload a new package](Media/Upload-New-Package.png)
 
 Once there, follow the steps below to upload a new package.
 
-### Step 1: Fill out your package's details
+## Enter details for your package
 
 On the Test details tab, type in your package's name, version and other details as requested. 
 
@@ -31,7 +39,7 @@ The steps below provides a guide on how to fill out your package details:
   - If you choose to re-use an package's name, then the version number must be unique (i.e. never been used with an package bearing that particular name).
   - If the combination of the package name + version does not pass the uniqueness check, you will see an error message which reads, *“Package with this package version already exists”*. 
 
-![Instructions](Media/Instructions.png)
+![Image for uploading package instructions](Media/Instructions.png)
 
 2. **Enter a version in the “Package version” field.**
 
@@ -69,7 +77,7 @@ In the multi-select dropdown, select the OS version(s) of Windows your package w
 > If you select to test your package against both Server and Client OSes, please make sure that the package is compatible and can run on both OSes
 
 
-![OS version](Media/OSVersion.png)
+![Selecting an OS version](Media/OSVersion.png)
 <!---
 Change to the correct picture
 -->
@@ -89,11 +97,11 @@ Note to actual note format for markdown
 <!---
 Change to the correct picture
 -->
-![Feature update](Media/FeatureUpdate.png)
+![Feature update testing](Media/FeatureUpdate.png)
 
 7.	A completed Test details page should look like this: 
 
-![Test details](Media/TestDetails.png)
+![Viewing test details](Media/TestDetails.png)
 ## Next steps
 
 Our next article covers Uploading your Binaries to our serivce.

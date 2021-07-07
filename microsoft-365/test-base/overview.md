@@ -1,25 +1,24 @@
 ---
-title: Overview #Required; page title displayed in search results. Include the brand.
-description: n/a #Required; article description that is displayed in search results.
-author: mansipatel-usl #Required; your GitHub user alias, with correct capitalization.
-ms.author: mapatel #Required; microsoft alias of author; optional team alias.
-ms.service: virtual-desktop #Required; service per approved list. service slug assigned to your service by ACOM.
-ms.topic: overview #Required
-ms.date: 12/30/2020 #Required; mm/dd/yyyy format.
+title: 'Overview'
+description: Understanding TEst Base
+search.appverid: MET150
+author: mansipatel-usl
+ms.author: mapatel
+manager: rshastri
+audience: Software-Vendor
+ms.topic: how-to
+ms.date: 07/06/2021
+ms.service: virtual-desktop
+localization_priority: Normal
+ms.collection: TestBase-M365
+ms.custom:                 # This is an optional, free-form field you can use to define your own collection of articles. If you have more than one value, format as a bulleted list. This field truncates to something like 144 characters (inclusive of spaces) so keep it short.
+ms.reviewer: mapatel
+f1.keywords: NOCSH 
 ---
 
-<!---Recommended: Remove all the comments in this template before you sign-off or merge to master.--->
-
-<!---overview articles are for new customers and explain the service from a technical point of view.
-They are not intended to define benefits or value prop; that would be in marketing content.
---->
-
 # What is Test Base for Microsoft 365? 
-<!---Required: 
-For the H1 - that's the primary heading at the top of the article - use the format "What is <service>?"
-You can also use this in the TOC if your service name doesn’t cause the phrase to wrap.
---->
-Test Base for Microsoft 365 (Test Base), or previously known as Update Staging Lab is Microsoft’s validation service based in the secure Azure environment.  
+
+Test Base for Microsoft 365 (Test Base) is Microsoft’s validation service based in the secure Azure environment.  
 With Test Base, Software Vendors (SVs) and System Integrators (SIs) can accelerate the validation of their applications against pre-released Windows security and feature builds. This is a highly engaged collaboration between SV partners and Microsoft enabling joint testing, validation and remediation.
 
 Test Base provides a great opportunity to build and maintain a secure validation service on Azure, where customers and partners can stage and test their application's workloads against our pre-released security updates.
@@ -41,17 +40,19 @@ This new service will help SVs make testing efforts simpler and more efficient. 
 
 ### Guide to navigating the Test Base portal
 
-This guide is divided into three (3) parts to ensure a hitch free experience while using our service:
+This guide is divided into four (4) parts to ensure a hitch free experience while using our service:
 
-1. The **Onboarding User Guide** which provides detailed, step-by-step guidelines on how to upload your application via our self-serve onboarding portal. 
+1. The **Overview** which provides detailed, step-by-step guidelines on how to upload your application via our self-serve onboarding portal. 
 
-2. The **Test Base Content Guidelines** section which provides information on the format for the zippped folder structure and what you need to know when preparing your test scripts.
+2. The **Quickstarts** section which provides information on the format for the zippped folder structure and what you need to know when preparing your test scripts.
 
-3. The **Frequently Asked Questions** section that provides answers to the typical questions we receive from our customers.
+3. The **How-to guide** which provides detailed outline on how to use Test Base to infer test results.
+
+4. The **Reference** section that provides answers to the typical questions we receive from our customers.
 
 ### Test Base is in public preview!
 
-Test Base has officially been declared ```Public Preview``` during the Microsoft Inspire conference in July 2020. 
+Test Base has officially been declared ```Public Preview``` during the Microsoft Inspire conference in July 2021. 
 
 This means anyone with a valid enterprise Azure account is able to onboard their test collateral and quickly start testing their applications on the service.
 
@@ -59,10 +60,9 @@ This means anyone with a valid enterprise Azure account is able to onboard their
 
 We are encouraging all Software Vendors (SVs), System Integrators (SIs) to onboard their applications, binaries and test scripts onto the service.
 
-<!--- Eventually we will edit this section to include Enterprise partners as well. We will need to re-evaluate when we get closer to public preview --->
-
 ## Next steps
 
 Follow the link to get started
 > [!div class="nextstepaction"]
-> [Next step](Onboarding.md)
+> [Next step](createaccount.md)
+

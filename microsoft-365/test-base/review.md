@@ -1,6 +1,6 @@
 ---
-title: review #Required; page title displayed in search results. Include the brand.
-description: n/a #Required; article description that is displayed in search results.
+title: Review #Required; page title displayed in search results. Include the brand.
+description: Review your package detail #Required; article description that is displayed in search results.
 author: mansipatel-usl #Required; your GitHub user alias, with correct capitalization.
 ms.author: mapatel #Required; microsoft alias of author; optional team alias.
 ms.service: virtual-desktop #Required; service per approved list. service slug assigned to your service by ACOM.
@@ -15,6 +15,8 @@ ms.date: 01/04/2021 #Required; mm/dd/yyyy format.
 
 2.	Review your test details and if satisfied, click on the ```Create``` button. 
 
+
+## Validate package details
 
 ![](Media/validation.png)
 

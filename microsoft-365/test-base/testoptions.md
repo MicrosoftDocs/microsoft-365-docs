@@ -8,13 +8,14 @@ manager: rshastri
 audience: Software-Vendor
 ms.topic: troubleshooting
 ms.date: 07/06/2021
-ms.prod: 'ms.prod'
+ms.service: virtual-desktop
 localization_priority: Normal
 ms.collection: TestBase-M365
 ms.custom:                 # This is an optional, free-form field you can use to define your own collection of articles. If you have more than one value, format as a bulleted list. This field truncates to something like 144 characters (inclusive of spaces) so keep it short.
 ms.reviewer: mapatel
 f1.keywords: NOCSH
 ---
+
 # Step 5: Choose your test options. 
 
 The ```Test Options``` tab is for users who wish to perform functional tests to indicate when the Windows Update patch should be applied in the sequence of executing their functional test scripts.
