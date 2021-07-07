@@ -23,6 +23,7 @@ ms.technology: mde
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
 
 Microsoft Defender for Endpoint Device Control Removable Storage Access Control enables you to do the following task:
+
 - auditing, allowing or preventing the read, write or execute access to removable storage with or without exclusion
 
 |Privilege |Permission  |
@@ -41,6 +42,8 @@ Deploy Removable Storage Access Control on Windows 10 devices that have antimalw
 - **4.18.2104 or later**: Add SerialNumberId, VID_PID, filepath-based GPO support, ComputerSid
 
 - **4.18.2105 or later**: Add Wildcard support for HardwareId/DeviceId/InstancePathId/FriendlyNameId/SerialNumberId, the combination of specific user on specific machine, removeable SSD (a SanDisk Extreme SSD)/USB Attached SCSI (UAS) support
+
+- **4.18.2107 or later**: Add Windows Portable Device (WPD) support (for mobile devices, such as tablets)
 
 :::image type="content" source="images/powershell.png" alt-text="The PowerShell interface":::
 
@@ -61,10 +64,10 @@ You can use the following properties to create a removable storage group:
 For each device property, see **Device Properties** section above for more detail.
 
 3. Options:
-
-    - Primary ID
+    - PrimaryId
         - RemovableMediaDevices
         - CdRomDevices
+        - WpdDevices
     - DeviceId
     - HardwareId
     - InstancePathId: InstancePathId is a string that uniquely identifies the device in the system, for example, USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0. The number at the end (for example **&0**) represents the available slot and may change from device to device. For best results, use a wildcard at the end. For example, USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*
@@ -94,9 +97,9 @@ Following are the access control policy properties:
 
 **Property name: IncludedIdList**
 
-2. Description: The group(s) that the policy will be applied to. If multiple groups are added, the policy will be applied to any media in all those groups.
+1. Description: The group(s) that the policy will be applied to. If multiple groups are added, the policy will be applied to any media in all those groups.
 
-3. Options: The Group ID/GUID must be used at this instance.
+2. Options: The Group ID/GUID must be used at this instance.
 
 The following example shows the usage of GroupID:
 
@@ -344,4 +347,3 @@ DeviceFileEvents
 | summarize dcount(DeviceName) by PlatformVersion // check how many machines are using which platformVersion
 | order by PlatformVersion desc
 ```
-
