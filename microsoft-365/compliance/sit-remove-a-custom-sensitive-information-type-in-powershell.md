@@ -23,7 +23,7 @@ description: "Learn how to remove a custom sensitive information type using Powe
 
 In Compliance center PowerShell, there are two methods to remove custom sensitive information types:
 
-- **Remove individual custom sensitive information types**: Use the method documented in [Modify a custom sensitive information type](#modify-a-custom-sensitive-information-type). You export the custom rule package that contains the custom sensitive information type, remove the sensitive information type from the XML file, and import the updated XML file back into the existing custom rule package.
+- **Remove individual custom sensitive information types**: Use the method documented in [Modify a custom sensitive information type using PowerShell](sit-modify-a-custom-sensitive-information-type-in-powershell.md#modify-a-custom-sensitive-information-type-using-powershell). You export the custom rule package that contains the custom sensitive information type, remove the sensitive information type from the XML file, and import the updated XML file back into the existing custom rule package.
 
 - **Remove a custom rule package and all custom sensitive information types that it contains**: This method is documented in this section.
 
