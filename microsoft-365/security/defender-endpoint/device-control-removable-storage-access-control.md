@@ -134,7 +134,7 @@ Description: Local computer Sid or the Sid of the AD object, defines whether to 
 
 **Property name: ComputerSid**
 
-Description: Local coomputer Sid or the Sid of the AD object, defines whether apply this policy over specific machine or machine group; one entry can have maximum one ComputerSid and an entry without any ComputerSid means applying the policy over the machine. If you want to apply an Entry to a specific user and specific machine, add both Sid and ComputerSid into the same Entry.
+Description: Local computer Sid or the Sid of the AD object, defines whether to apply this policy over a specific machine or machine group; one entry can have a maximum of one ComputerSid and an entry without any ComputerSid means applying the policy over the machine. If you want to apply an Entry to a specific user and specific machine, add both Sid and ComputerSid into the same Entry.
 
 **Property name: Options**
 
