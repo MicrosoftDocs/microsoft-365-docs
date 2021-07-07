@@ -193,3 +193,6 @@ The following table lists your settings and options:
 | File and extension exclusions | Exclude specific files or files with specific extensions from Microsoft Defender Antivirus scans. [Learn more about file and extension exclusions](../defender-endpoint/configure-extension-file-exclusions-microsoft-defender-antivirus.md). |
 | File and folder exclusions | Exclude files that are in specific folders from Microsoft Defender Antivirus scans. [Learn more about file and folder exclusions](../defender-endpoint/configure-extension-file-exclusions-microsoft-defender-antivirus.md). |
 
+## Next step
+
+[Get started with Microsoft Defender for business](mdb-get-started.md)
