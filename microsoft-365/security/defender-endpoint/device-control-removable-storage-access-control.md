@@ -130,7 +130,7 @@ When there are conflict types for the same media, the system will apply the firs
 
 **Property name: Sid**
 
-Description: Local coomputer Sid or the Sid of the AD object, defines whether apply this policy over specific user or user group; one entry can have maximum one Sid and an entry without any Sid means applying the policy over the machine.
+Description: Local computer Sid or the Sid of the AD object, defines whether to apply this policy over a specific user or user group; one entry can have a maximum of one Sid and an entry without any Sid means applying the policy over the machine.
 
 **Property name: ComputerSid**
 
@@ -344,4 +344,3 @@ DeviceFileEvents
 | summarize dcount(DeviceName) by PlatformVersion // check how many machines are using which platformVersion
 | order by PlatformVersion desc
 ```
-
