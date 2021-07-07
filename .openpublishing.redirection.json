@@ -4172,7 +4172,7 @@
     },
     {
       "source_path": "microsoft-365/compliance/insider-risk-management-alerts.md",
-      "redirect_url": "microsoft-365/compliance/insider-risk-management-activities",
+      "redirect_url": "/microsoft-365/compliance/insider-risk-management-activities",
       "redirect_document_id": false
     }
   ]
