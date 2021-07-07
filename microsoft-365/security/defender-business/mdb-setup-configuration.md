@@ -58,7 +58,7 @@ To find a solution provider in your area, take the following steps:
 
 ### Get Microsoft Defender for business on your own 
 
- sign up for a free trial or buy a subscription. The first person to sign your company up is a global administrator (also referred as the global admin). The global admin can purchase licenses, upgrade services, set up user accounts, and configure settings for your organization. 
+If you prefer to get Microsoft Defender for business directly, the first person to sign your company up is a global administrator (also referred as the global admin). The global admin can purchase licenses, upgrade services, set up user accounts, and configure settings for your organization. 
 
 1. Go to the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)), and sign in.
 
@@ -69,7 +69,7 @@ To find a solution provider in your area, take the following steps:
 4. To add a subscription, such as Microsoft Defender for business, choose **Purchase services**. Search for *Microsoft Defender for business*, and then complete the purchase or trial process.
 
 > [!TIP]
-> To learn more about purchasing services, see [Microsoft 365 Business Premium Setup](../../business-video/setup-overview.md).
+> To learn more about the process of purchasing a Microsoft 365 subscription, see [Try or buy a Microsoft 365 for business subscription](../../commerce/try-or-buy-microsoft-365.md).
 
 ## Assign roles and permissions
 
