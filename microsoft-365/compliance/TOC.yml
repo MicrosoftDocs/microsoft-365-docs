@@ -54,8 +54,8 @@
           href: insider-risk-management-settings.md
         - name: Create and manage insider risk policies
           href: insider-risk-management-policies.md
-        - name: Investigate insider risk alerts
-          href: insider-risk-management-alerts.md
+        - name: Investigate insider risk activities
+          href: insider-risk-management-activities.md
         - name: Take action on insider risk cases
           href: insider-risk-management-cases.md
         - name: Review activities with the insider risk audit log
@@ -114,10 +114,16 @@
           href: sit-modify-edm-schema-configurable-match.md
         - name: Create notifications for exact data match activities (preview)
           href: sit-edm-notifications-activities.md  
-        - name: Create a custom sensitive information type - Compliance Center
+        - name: Get started with custom sensitive information types - Compliance Center
           href: create-a-custom-sensitive-information-type.md
         - name: Create a custom sensitive information type - PowerShell
           href: create-a-custom-sensitive-information-type-in-scc-powershell.md
+        - name: Remove a custom sensitive information type - PowerShell
+          href: sit-remove-a-custom-sensitive-information-type-in-powershell.md
+        - name: Modify a custom sensitive information type - PowerShell
+          href: sit-modify-a-custom-sensitive-information-type-in-powershell.md
+        - name: Custom sensitive information type filters reference
+          href: sit-custom-sit-filters.md
         - name: Create a keyword dictionary
           href: create-a-keyword-dictionary.md
         - name: Modify a keyword dictionary
@@ -417,6 +423,8 @@
               href: archive-reuterseikon-data.md
             - name: Reuters FX
               href: archive-reutersfx-data.md
+            - name: RingCentral (preview)
+              href: archive-ringcentral-data.md   
             - name: Salesforce Chatter
               href: archive-salesforcechatter-data.md
             - name: ServiceNow
@@ -497,6 +505,8 @@
               href: archive-17a-4-servicenow-data.md
             - name: Slack DataParser (preview)
               href: archive-17a-4-slack-data.md
+            - name: SQL DataParser (preview)
+              href: archive-17a-4-sql-database-data.md
             - name: Symphony DataParser (preview)
               href: archive-17a-4-symphony-data.md
             - name: Zoom DataParser (preview)
@@ -551,7 +561,7 @@
       href: ediscovery.md
     - name: Content search
       items:
-        - name: Overview of content search
+        - name: Overview of Content search
           href: search-for-content.md
         - name: Search for content
           href: content-search.md

@@ -45,7 +45,7 @@ To review accounts with these roles, [view Permissions in the Microsoft 365 secu
 
 **Custom role** access is a new capability in Microsoft 365 Defender and allows you to manage access to specific data, tasks, and capabilities in Microsoft Defender 365. Custom roles offer more control than global Azure AD roles, providing users only the access they need with the least-permissive roles necessary.  Custom roles can be created in addition to global Azure AD roles. [Learn more about custom roles](custom-roles.md).
 
-> ![NOTE]
+> [!NOTE]
 > This article applies only to managing global Azure Active Directory roles. For more information about using custom role-based access control, see [Custom roles for role-based access control](custom-roles.md)
 
 ## Access to functionality

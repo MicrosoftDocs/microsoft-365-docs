@@ -36,18 +36,9 @@ In this article:
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-If your organization has [Microsoft Defender for Office 365](defender-for-office-365.md), and you have the [permissions](#required-licenses-and-permissions), you can use **Explorer** or **Real-time detections** to detect and remediate threats. 
+If your organization has [Microsoft Defender for Office 365](defender-for-office-365.md), and you have the [permissions](#required-licenses-and-permissions), you can use **Explorer** or **Real-time detections** to detect and remediate threats.
 
-In the **Microsoft 365 Defender portal**, go to **Email & collaboration**, and then choose **Explorer**.
-
-<br>
-
-****
-
-|With Microsoft Defender for Office 365 Plan 2, you see:|With Microsoft Defender for Office 365 Plan 1, you see:|
-|---|---|
-|![Threat explorer](../../media/path-to-explorer.png)|![Real-time detections](../../media/threatmgmt-realtimedetections.png)|
-|
+In the Microsoft 365 Defender portal (<https://security.microsoft.com>), go to **Email & collaboration**, and then choose **Explorer** or **Real-time detections**. To do directly to the page, use <https://security.microsoft.com/threatexplorer> or <https://security.microsoft.com/realtimereports>
 
 With these tools, you can:
 
@@ -56,7 +47,7 @@ With these tools, you can:
 - Start an automated investigation and response process from a view in Explorer
 - Investigate malicious email, and more
 
-For more information, see [Email security with Threat Explorer](email-security-in-microsoft-defender.md). 
+For more information, see [Email security with Threat Explorer](email-security-in-microsoft-defender.md).
 
 ## Threat Explorer walk-through
 
@@ -64,7 +55,7 @@ In Microsoft Defender for Office 365, there are two subscription plans—Plan 1 
 
 Defender for Office 365 Plan 1 uses *Real-time detections*, which is a subset of the *Threat Explorer* (also called *Explorer*) hunting tool in Plan 2. In this series of articles, most of the examples were created using the full Threat Explorer. Admins should test any steps in Real-time detections to see where they apply.
 
-To open the Explorer tool, go to **Microsoft 365 Defender portal** > **Email & collaboration** > **Explorer**. By default, you’ll arrive on the **Malware** page, but use the **View** drop down to get familiar with your options. If you’re hunting Phish, or digging into a threat campaign, choose those views.
+After you go to **Explorer**, by default, you'll arrive on the **Malware** page, but use the **View** drop down to get familiar with your options. If you're hunting Phish, or digging into a threat campaign, choose those views.
 
 > [!div class="mx-imgBorder"]
 > ![View drop down in Threat Explorer](../../media/view-drop-down.png)
@@ -77,19 +68,19 @@ Once a security operations (Sec Ops) person selects the data they want to see, w
 Refining focus in Explorer or Real-time detection can be thought of in layers. The first is **View**. The second can be thought of as a *filtered focus*. For example, you can retrace the steps you took in finding a threat by recording your decisions like this: To find the issue in Explorer, **I chose the Malware View with a Recipient filter focus**. This makes retracing your steps easier.
 
 > [!TIP]
-> If Sec Ops uses **Tags** to mark accounts they consider high valued targets, they can make selections like *Phish View with a Tags filter focus (include a date range if used)*. This will show them any phishing attempts directed at their high value user targets during a time-range (like dates when certain phishing attacks are happening a lot for their industry). 
+> If Sec Ops uses **Tags** to mark accounts they consider high valued targets, they can make selections like *Phish View with a Tags filter focus (include a date range if used)*. This will show them any phishing attempts directed at their high value user targets during a time-range (like dates when certain phishing attacks are happening a lot for their industry).
 
-Refinements can be made on date ranges by using the date range controls. Here you can see Explorer in **Malware** view, with a **Detection Technology** filter focus. But it’s the **Advanced filter** button that lets Sec Ops teams dig deep. 
+Refinements can be made on date ranges by using the date range controls. Here you can see Explorer in **Malware** view, with a **Detection Technology** filter focus. But it's the **Advanced filter** button that lets Sec Ops teams dig deep.
 
 > [!div class="mx-imgBorder"]
 > ![Advanced filter in Threat Explorer](../../media/advanced-filter.png)
 
-Clicking the **Advanced filter** pops a panel that will let Sec Ops hunters build queries themselves, letting them include or exclude the information they need to see. Both the chart and table on the Explorer page will reflect their results. 
+Clicking the **Advanced filter** pops a panel that will let Sec Ops hunters build queries themselves, letting them include or exclude the information they need to see. Both the chart and table on the Explorer page will reflect their results.
 
 > [!div class="mx-imgBorder"]
 > ![Results from a query](../../media/threat-explorer-chart-table.png)
 
-Use the **Column options** button to get the kind of information on the table that would be most helpful: 
+Use the **Column options** button to get the kind of information on the table that would be most helpful:
 
 > [!div class="mx-imgBorder"]
 > ![Column options button highlighted](../../media/threat-explorer-column-options.png)
@@ -97,7 +88,7 @@ Use the **Column options** button to get the kind of information on the table th
 > [!div class="mx-imgBorder"]
 > ![Available options in Columns](../../media/column-options.png)
 
-In the same mien, make sure to test your display options. Different audiences will react well to different presentations of the same data. For some viewers, the **Email Origins** map can show that a threat is widespread or discreet more quickly than the **Campaign display** option right next to it. Sec Ops can make use of these displays to best make points that underscore the need for security and protection, or for later comparison, to demonstrate the effectiveness of their actions. 
+In the same mien, make sure to test your display options. Different audiences will react well to different presentations of the same data. For some viewers, the **Email Origins** map can show that a threat is widespread or discreet more quickly than the **Campaign display** option right next to it. Sec Ops can make use of these displays to best make points that underscore the need for security and protection, or for later comparison, to demonstrate the effectiveness of their actions.
 
 > [!div class="mx-imgBorder"]
 > ![Email Origins map](../../media/threat-explorer-email-origin-map.png)
@@ -109,9 +100,9 @@ In the same mien, make sure to test your display options. Different audiences wi
 
 When you see a suspicious email, click the name to expand the flyout on the right. Here, the banner that lets Sec Ops see the [email entity page](mdo-email-entity-page.md) is available.
 
-The email entity page pulls together contents that can be found under **Details**, **Attachments**, **Devices**, but includes more organized data. This includes things like DMARC results, plain text display of the email header with a copy option, verdict information on attachments that were securely detonated, and files those detonations dropped (can include IP addresses that were contacted and screenshots of pages or files). URLs and their verdicts are also listed with similar details reported. 
+The email entity page pulls together contents that can be found under **Details**, **Attachments**, **Devices**, but includes more organized data. This includes things like DMARC results, plain text display of the email header with a copy option, verdict information on attachments that were securely detonated, and files those detonations dropped (can include IP addresses that were contacted and screenshots of pages or files). URLs and their verdicts are also listed with similar details reported.
 
-When you reach this stage, the email entity page will be critical to the final step—*remediation*. 
+When you reach this stage, the email entity page will be critical to the final step—*remediation*.
 
 > [!div class="mx-imgBorder"]
 > ![The email entity page](../../media/threat-explorer-email-entity-page.png)
@@ -148,13 +139,13 @@ Finally, alert ID is included in the URL, for example: `https://https://security
 > [!div class="mx-imgBorder"]
 > ![Alert ID in details flyout](../../media/AlertID-DetailsFlyout.png)
 
-### Extending Explorer (and Real-time detections) data retention and search limit for trial tenants 
+### Extending Explorer (and Real-time detections) data retention and search limit for trial tenants
 
-As part of this change, analysts will be able to search for, and filter email data across 30 days (increased from seven days) in Threat Explorer and Real-time detections for both Defender for Office P1 and P2 trial tenants. This doesn’t impact any production tenants for both P1 and P2 E5 customers, where the retention default is already 30 days.
+As part of this change, analysts will be able to search for, and filter email data across 30 days (increased from seven days) in Threat Explorer and Real-time detections for both Defender for Office P1 and P2 trial tenants. This doesn't impact any production tenants for both P1 and P2 E5 customers, where the retention default is already 30 days.
 
-### Updated Export limit 
+### Updated Export limit
 
-The number of Emails records that can be exported from Threat Explorer is now 200,000 (was 9990). The set of columns that can be exported is unchanged. 
+The number of Emails records that can be exported from Threat Explorer is now 200,000 (was 9990). The set of columns that can be exported is unchanged.
 
 ### Tags in Threat Explorer
 
@@ -174,7 +165,7 @@ When analysts look at the **Tags** column the email grid, they are seeing all ta
 
 #### Filtering
 
-Tags can be used as filters. Hunt among priority accounts only, or use specific user tags scenarios this way. You can also exclude results that have certain tags. Combine Tags with other filters and date ranges to narrow your scope of investigation. 
+Tags can be used as filters. Hunt among priority accounts only, or use specific user tags scenarios this way. You can also exclude results that have certain tags. Combine Tags with other filters and date ranges to narrow your scope of investigation.
 
 [![Filter tags](../../media/tags-filter-normal.png)](../../media/tags-filter-normal.png#lightbox)
 
@@ -183,7 +174,7 @@ Tags can be used as filters. Hunt among priority accounts only, or use specific 
 
 #### Email detail flyout
 
-To view the individual tags for sender and recipient, select an email to open the message details flyout. On the **Summary** tab, the sender and recipient tags are shown separately. The information about individual tags for sender and recipient can be exported as CSV data. 
+To view the individual tags for sender and recipient, select an email to open the message details flyout. On the **Summary** tab, the sender and recipient tags are shown separately. The information about individual tags for sender and recipient can be exported as CSV data.
 
 > [!div class="mx-imgBorder"]
 > ![Email Details tags](../../media/tags-flyout.png)
@@ -201,18 +192,18 @@ Learn more by watching [this video](https://www.youtube.com/watch?v=UoVzN0lYbfY&
 
 ### Top targeted users
 
-Top Malware Families shows the **top targeted users** in the Malware section. Top targeted users will be extended through Phish and All Email views too. Analysts will be able to see the top-five targeted users, along with the number of attempts for each user in each view. 
+Top Malware Families shows the **top targeted users** in the Malware section. Top targeted users will be extended through Phish and All Email views too. Analysts will be able to see the top-five targeted users, along with the number of attempts for each user in each view.
 
-Security operations people be able to export the list of targeted users, up to a limit of 3,000, along with the number of attempts made, for offline analysis for each email view. Also, selecting the number of attempts (for example, 13 attempts in the image below) will open a filtered view in Threat Explorer, so you can see more details across emails, and threats for that user.  
+Security operations people be able to export the list of targeted users, up to a limit of 3,000, along with the number of attempts made, for offline analysis for each email view. Also, selecting the number of attempts (for example, 13 attempts in the image below) will open a filtered view in Threat Explorer, so you can see more details across emails, and threats for that user.
 
 > [!div class="mx-imgBorder"]
 > ![Top targeted users](../../media/Top_Targeted_Users.png)
 
 ### Exchange transport rules
 
-The security operations team will be able to see all the Exchange transport rules (or Mail flow rules) applied to a message, in the Email grid view. Select **Column options** in the grid and then **Add Exchange Transport Rule** from the column options. The Exchange transport rules option is also visible on the **Details** flyout in the email. 
+The security operations team will be able to see all the Exchange transport rules (or Mail flow rules) applied to a message, in the Email grid view. Select **Column options** in the grid and then **Add Exchange Transport Rule** from the column options. The Exchange transport rules option is also visible on the **Details** flyout in the email.
 
-Names and GUIDs of the transport rules applied to the message appear. Analysts will be able to search for messages by using the name of the transport rule. This is a CONTAINS search, which means you can do partial searches as well. 
+Names and GUIDs of the transport rules applied to the message appear. Analysts will be able to search for messages by using the name of the transport rule. This is a CONTAINS search, which means you can do partial searches as well.
 
 > [!IMPORTANT]
 > Exchange transport rule search and name availability depend on the specific role assigned to you. You need to have one of the following roles or permissions to view the transport rule names and search. However, even without the roles or permissions below, an analyst may see the transport rule label and GUID information in the Email Details. Other record-viewing experiences in Email Grids, Email flyouts, Filters, and Export are not affected.
@@ -231,9 +222,9 @@ Names and GUIDs of the transport rules applied to the message appear. Analysts w
 
 ### Inbound connectors
 
-Connectors are a collection of instructions that customize how your email flows to and from your Microsoft 365 or Office 365 organization. They enable you to apply any security restrictions or controls. In Threat Explorer, you can view the connectors that are related to an email and search for emails using connector names. 
+Connectors are a collection of instructions that customize how your email flows to and from your Microsoft 365 or Office 365 organization. They enable you to apply any security restrictions or controls. In Threat Explorer, you can view the connectors that are related to an email and search for emails using connector names.
 
-The search for connectors is a CONTAINS query, which means partial keyword searches can work: 
+The search for connectors is a CONTAINS query, which means partial keyword searches can work:
 
 > [!div class="mx-imgBorder"]
 > ![Connector details](../../media/Connector_Details.png)
@@ -246,16 +237,13 @@ You must have [Microsoft Defender for Office 365](defender-for-office-365.md) to
 - The Real-time detections report is included in Defender for Office 365 Plan 1.
 - Plan to assign licenses for all users who should be protected by Defender for Office 365. Explorer and Real-time detections show detection data for licensed users.
 
-To view and use Explorer or Real-time detections, you must have the following:
+To view and use Explorer or Real-time detections, you must have the following permissions:
 
 - For the Microsoft 365 Defender portal:
-
   - Organization Management
   - Security Administrator (this can be assigned in the Azure Active Directory admin center (<https://aad.portal.azure.com>)
   - Security Reader
-
 - For Exchange Online:
-
   - Organization Management
   - View-Only Organization Management
   - View-Only Recipients
@@ -269,9 +257,9 @@ To learn more about roles and permissions, see the following resources:
 
 ## More information
 
-- [Find and investigate malicious email that was delivered](investigate-malicious-email-that-was-delivered.md) 
-- [View malicious files detected in SharePoint Online, OneDrive, and Microsoft Teams](mdo-for-spo-odb-and-teams.md) 
-- [Get an overview of the views in Threat Explorer (and Real-time detections)](threat-explorer-views.md) 
-- [Threat protection status report](view-email-security-reports.md#threat-protection-status-report) 
-- [Automated investigation and response in Microsoft Threat Protection](automated-investigation-response-office.md) 
+- [Find and investigate malicious email that was delivered](investigate-malicious-email-that-was-delivered.md)
+- [View malicious files detected in SharePoint Online, OneDrive, and Microsoft Teams](mdo-for-spo-odb-and-teams.md)
+- [Get an overview of the views in Threat Explorer (and Real-time detections)](threat-explorer-views.md)
+- [Threat protection status report](view-email-security-reports.md#threat-protection-status-report)
+- [Automated investigation and response in Microsoft Threat Protection](automated-investigation-response-office.md)
 - [Investigate emails with the Email Entity Page](mdo-email-entity-page.md)
