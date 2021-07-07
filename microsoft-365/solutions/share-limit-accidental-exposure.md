@@ -21,7 +21,7 @@ description: "Learn how to limit accidental exposure of information when sharing
 
 # Limit accidental exposure to files when sharing with people outside your organization
 
-When sharing files and folders with people outside your organization, there are a variety of options to reduce the chances of accidentally sharing sensitive information. You can choose from the options in this article to best meet the needs of your organization.
+When sharing files and folders with people outside your organization, there are a various options to reduce the chances of accidentally sharing sensitive information. You can choose from the options in this article to best meet the needs of your organization.
 
 ## Use best practices for Anyone links
 
