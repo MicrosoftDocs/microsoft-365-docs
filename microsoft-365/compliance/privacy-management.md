@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Privacy management"
+title: "Microsoft Privacy management (preview)"
 f1.keywords:
 - NOCSH
 ms.author: v-jgriffee
@@ -18,4 +18,4 @@ search.appverid:
 description: "Microsoft privacy management offers solutions for evaluating personal data your organization stores in Microsoft 365, and helps you identify and remediate privacy risks."
 ---
 
-# Microsoft privacy management
+# Microsoft privacy management (preview)

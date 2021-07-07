@@ -1,5 +1,5 @@
 ---
-title: "Manage subject rights requests in Microsoft privacy management"
+title: "Manage subject rights requests in Microsoft privacy management (preview)"
 f1.keywords:
 - CSH
 ms.author: v-jgriffee

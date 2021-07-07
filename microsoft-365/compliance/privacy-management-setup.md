@@ -1,5 +1,5 @@
 ---
-title: "Get started with Microsoft privacy management"
+title: "Get started with Microsoft privacy management (preview)"
 f1.keywords:
 - CSH
 ms.author: v-jgriffee

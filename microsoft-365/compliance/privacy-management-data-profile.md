@@ -1,5 +1,5 @@
 ---
-title: "Find and visualize personal data in Microsoft privacy management"
+title: "Find and visualize personal data in Microsoft privacy management (preview)"
 f1.keywords:
 - CSH
 ms.author: v-jgriffee
@@ -15,7 +15,7 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: "Learn about the overview and data profile in privacy management and how to gain insights into the personal data in your Microsoft 365 environment."
+description: "Learn about the overview and data profile in privacy management and how to gain insights into the personal data in your organization's Microsoft 365 environment."
 ---
 
 # Find and visualize personal data in privacy management (preview)
