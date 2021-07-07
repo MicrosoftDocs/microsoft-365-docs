@@ -71,12 +71,12 @@ In an Active Directory environment, you can use the `Get-WindowsAutoPilotInfo` P
 - Make sure that Windows Firewall allows access to WMI. To do that, follow these steps:
 
     1. Open the **Windows Defender Firewall** control panel and select **Allow an app or feature through Windows Defender Firewall**.
-    
+
     2. Find **Windows Management Instrumentation (WMI)** in the list, enable for both **Private and Public**, and then select **OK**.
 
-1.	Open a PowerShell prompt with administrative rights.
+1. Open a PowerShell prompt with administrative rights.
 
-2.	Run *either one* of these scripts:
+2. Run *either one* of these scripts:
 
     ```powershell
     Install-script -name Get-WindowsAutoPilotInfo 
@@ -98,9 +98,9 @@ Now you can proceed to [register devices](#register-devices-by-using-the-admin-p
 
 #### Manual PowerShell script method
 
-1.	Open a PowerShell prompt with administrative rights.
-2.	Run `Install-Script -Name Get-WindowsAutoPilotInfo`
-3.	Run `powershell -ExecutionPolicy Unrestricted Get-WindowsAutoPilotInfo -OutputFile <path>\hardwarehash.csv`
+1. Open a PowerShell prompt with administrative rights.
+2. Run `Install-Script -Name Get-WindowsAutoPilotInfo`
+3. Run `powershell -ExecutionPolicy Unrestricted Get-WindowsAutoPilotInfo -OutputFile <path>\hardwarehash.csv`
 4. [Merge the hash data.](#merge-hash-data)
 
 #### Flash drive method
@@ -116,10 +116,8 @@ Now you can proceed to [register devices](#register-devices-by-using-the-admin-p
 9. Remove the USB drive, and then shut down the device by running `shutdown -s -t 0`
 10. [Merge the hash data.](#merge-hash-data)
 
->[!IMPORTANT]
->Do not power on the device you are registering again until you've completed registration for it. 
-
-
+> [!IMPORTANT]
+> Do not power on the device you are registering again until you've completed registration for it. 
 
 ### Merge hash data
 
@@ -131,16 +129,13 @@ Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformatio
 
 With the hash data merged into one CSV file, you can now proceed to [register the devices](#register-devices-by-using-the-admin-portal).
 
-
 ## Register devices by using the Admin Portal
 
 In [Microsoft Endpoint Manager](https://endpoint.microsoft.com/), select **Devices** in the left navigation pane. Look for the Microsoft Managed Desktop section of the menu and select **Devices**. In the Microsoft Managed Desktop Devices workspace, Select **+ Register devices**, which opens a fly-in to register new devices.
 
 <!-- Update with new picture [![Fly-in after selecting Register devices, listing devices with columns for assigned users, serial number, status, last-seen date, and age](../../media/new-registration-ui.png)](../../media/new-registration-ui.png) -->
 
-
 <!--Registering any existing devices with Managed Desktop will completely re-image them; make sure you've backed up any important data prior to starting the registration process.-->
-
 
 Follow these steps:
 
@@ -183,12 +178,3 @@ You’re also welcome to apply the image on your own if you prefer. To get start
 > Before you hand off the device to your user, make sure you have obtained and applied the [appropriate licenses](../get-ready/prerequisites.md) for that user.
 
 If all the licenses are applied, you can [get your users ready to use devices](get-started-devices.md), and then your user can start up the device and proceed through the Windows setup experience.
-
-
-
-
-
-
-
-
-
