@@ -1,11 +1,19 @@
 ---
-title: Memory Regression Analysis #Required; page title displayed in search results. Include the brand.
-description: Memory Regression Analysis #Required; article description that is displayed in search results.
-author: mansipatel-usl #Required; your GitHub user alias, with correct capitalization.
-ms.author: mapatel #Required; microsoft alias of author; optional team alias.
-ms.service: virtual-desktop #Required; service per approved list. service slug assigned to your service by ACOM.
-ms.topic: how-to #Required
-ms.date: 01/04/2021 #Required; mm/dd/yyyy format.
+title: 'Memory regression analysis'
+description: How to infer memory regression
+search.appverid: MET150
+author: mansipatel-usl
+ms.author: mapatel
+manager: rshastri
+audience: Software-Vendor
+ms.topic: how-to
+ms.date: 07/06/2021
+ms.service: virtual-desktop
+localization_priority: Normal
+ms.collection: TestBase-M365
+ms.custom:                 # This is an optional, free-form field you can use to define your own collection of articles. If you have more than one value, format as a bulleted list. This field truncates to something like 144 characters (inclusive of spaces) so keep it short.
+ms.reviewer: mapatel
+f1.keywords: NOCSH 
 ---
 
 
@@ -27,12 +35,12 @@ Now let's look at this feature in detail and discuss how you can troubleshoot me
 
 The failure signal caused by a memory regression is shown in the Test Base for M365 dashboard on the Test results page under Memory Utilization:
 
-![](Media/01_memory-utilization-results.png)
+![Memory utilization results](Media/01_memory-utilization-results.png)
 
 
 Failure for the application due to higher memory consumption, will also be displayed as ```Fail``` on the Test Summary page:
 
-![](Media/02_test-summary.png)
+![Test summary results](Media/02_test-summary.png)
 
 By providing these failure signals upfront, our goal is to clearly flag potential issues that can disrupt and impact the end user experience for your application. 
 
@@ -40,7 +48,7 @@ You can then download the log files and use the Windows Performance Analyzer, or
 
 Memory signals are captured in the Memory Utilization tab in the Test Base for M365 service for all test runs. The example below shows a recent test run with the onboarded application “Smoke Test Memory Stress” against the pre-release August 2020 security update. (This application was written by our team to illustrate memory regressions.)
 
-![](Media/03_memory-regression%20comparison.png)
+![Memory regression results](Media/03_memory-regression%20comparison.png)
 
 In this example, the favorite process “USLTestMemoryStress.exe” process consumed an average of approximately 100 MB on the pre-release August update compared to the released July update, hence the Test Base for M365 identified a regression. 
 
@@ -54,7 +62,7 @@ The next step is to understand what caused the memory regression. You can downlo
 
 These zip files contain the results of your test run, including script results and memory and CPU performance data which is included in the ETL file.
 
-![](Media/04_memory-regression-test-files.png)
+![Memory regression test files](Media/04_memory-regression-test-files.png)
 
 You can download and unzip the logs for the two test runs, then locate the ETL file within each folder and rename them as target.etl (for the test run on the pre-release update) and baseline.etl (for the test run on last released update) to simplify exploration and navigation.
  

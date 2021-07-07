@@ -4162,7 +4162,12 @@
     },
     {
       "source_path": "microsoft-365/security/defender-endpoint/microsoft-defender-advanced-threat-protection.md",
-      "redirect_url": "microsoft-365/security/defender-endpoint",
+      "redirect_url": "/microsoft-365/security/defender-endpoint",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-in-windows-10.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-windows",
       "redirect_document_id": false
     }
   ]
