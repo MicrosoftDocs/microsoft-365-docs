@@ -42,7 +42,7 @@ Deploy Removable Storage Access Control on Windows 10 devices that have antimalw
 
 - **4.18.2105 or later**: Add Wildcard support for HardwareId/DeviceId/InstancePathId/FriendlyNameId/SerialNumberId, the combination of specific user on specific machine, removeable SSD (a SanDisk Extreme SSD)/USB Attached SCSI (UAS) support
 
-- **4.18.2107 or later**: Add WPD (Iphone/Android/tablet/etc.) support
+- **4.18.2107 or later**: Add Windows Portable Device (WPD) support
 
 :::image type="content" source="images/powershell.png" alt-text="The PowerShell interface":::
 
@@ -347,4 +347,3 @@ DeviceFileEvents
 | summarize dcount(DeviceName) by PlatformVersion // check how many machines are using which platformVersion
 | order by PlatformVersion desc
 ```
-
