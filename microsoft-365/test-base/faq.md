@@ -1,5 +1,5 @@
 ---
-title: 'Frequently asked questions'
+title: Test Base FAQ
 description: Review frequently asked questions
 search.appverid: MET150
 author: mansipatel-usl
@@ -8,7 +8,7 @@ manager: rshastri
 audience: Software-Vendor
 ms.topic: troubleshooting
 ms.date: 07/06/2021
-ms.prod: 
+ms.service: virtual-desktop
 localization_priority: Normal
 ms.collection: TestBase-M365
 ms.custom:                 # This is an optional, free-form field you can use to define your own collection of articles. If you have more than one value, format as a bulleted list. This field truncates to something like 144 characters (inclusive of spaces) so keep it short.
@@ -17,10 +17,6 @@ f1.keywords: NOCSH
 ---
 
 # Test Base FAQ
-
-## Onboarding
-
-<!--- add onboarding link and add link to onboarding.md file -->
 
 **Q: How do we submit our packages to Test Base team?**
 
@@ -58,13 +54,6 @@ Please see the onboarding user guide for more information or contact our team at
 
 **A:** Test Base securely collects and manages your test data on the Azure environment. 
 
-<!--- Below is the architecture diagram: -->
-
-<!--- ![Test Base architecture diagram](Media/architecturediagram.png) -->
-
-
-<!--- Need to double check if we can include architecture diagram. commenting out for now -->
-
 **Q: Can Test Base support our automated tests?**
 
 Yes, Test Base supports automated tests however, we do not support manual tests at this time due to service capabilities.
@@ -77,9 +66,7 @@ You will also need to provide (upload) the dependent binaries of the required fr
 
 **Q: How soon does Test Base provide test results?**
 
-
 **A:** For each test that we run against the pre-release builds, we will provide results within 48 hours on your [Azure Portal](https://www.aka.ms/testbaseportal "Test Base Homepage") dashboard.
-
 
 **Q: Can you reboot after install?**
 
