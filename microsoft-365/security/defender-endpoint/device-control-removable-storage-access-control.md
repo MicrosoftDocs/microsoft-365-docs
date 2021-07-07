@@ -23,6 +23,7 @@ ms.technology: mde
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
 
 Microsoft Defender for Endpoint Device Control Removable Storage Access Control enables you to do the following task:
+
 - auditing, allowing or preventing the read, write or execute access to removable storage with or without exclusion
 
 |Privilege |Permission  |
@@ -63,7 +64,7 @@ You can use the following properties to create a removable storage group:
 List the device properties you want to use to cover in the group.
 For each device property, see **Device Properties** section above for more detail.
 
-1. Options:
+2. Options:
 
     - PrimaryId
         - RemovableMediaDevices
@@ -85,7 +86,7 @@ For each device property, see **Device Properties** section above for more detai
 
 1. Description: When there are multiple device properties being used in the DescriptorIDList, MatchType defines the relationship.
 
-1. Options:
+2. Options:
 
     - MatchAll: Any attributes under the DescriptorIdList will be **And** relationship; for example, if administrator puts DeviceID and InstancePathID, for every connected USB, system will check to see whether the USB meets both values.
     - MatchAny: The attributes under the DescriptorIdList will be **Or** relationship; for example, if administrator puts DeviceID and InstancePathID, for every connected USB, system will do the enforcement as long as the USB has either an identical **DeviceID** or **InstanceID** value.
@@ -98,9 +99,9 @@ Following are the access control policy properties:
 
 **Property name: IncludedIdList**
 
-2. Description: The group(s) that the policy will be applied to. If multiple groups are added, the policy will be applied to any media in all those groups.
+1. Description: The group(s) that the policy will be applied to. If multiple groups are added, the policy will be applied to any media in all those groups.
 
-3. Options: The Group ID/GUID must be used at this instance.
+2. Options: The Group ID/GUID must be used at this instance.
 
 The following example shows the usage of GroupID:
 
