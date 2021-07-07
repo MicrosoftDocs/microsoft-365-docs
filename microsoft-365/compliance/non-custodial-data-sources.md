@@ -39,6 +39,7 @@ Follow these steps to add and manage non-custodial data sources in an Advanced e
 
    > [!NOTE]
    > You can use the **SharePoint** and **Exchange** sections to add sites and mailboxes associated with a Team or Yammer group as non-custodial data sources. You have to separately add the mailbox and site associated with a Team or Yammer group.
+   >Adding a Root Site URL such as data source  "https://contoso-my.sharepoint.com/personal" or  "https://contoso-my.sharepoint.com/" will yield no results. Please use Sharepoint_All instead.
 
 4. After you add non-custodial data sources, you have the option to place those locations on hold or not. Select or unselect the **Hold** checkbox next to the data source to place it on hold.
 
