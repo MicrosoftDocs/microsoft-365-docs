@@ -211,11 +211,11 @@ Make sure that any security baseline policies you have exclude Microsoft Managed
 
 ### Unlicensed admins
 
-Microsoft Managed Desktop requires this setting to be enabled to ensure that we can continue to provide the highest quality of support to your organization. Without this setting enabled, we have experienced a lack of permissions error when interacting with customer tenants. 
+This setting must be enabled to avoid a "lack of permissions" error when we interact with your Azure AD organization. 
 
 **Not ready**
 
-**Allow access to unlicensed admins** should be enabled. For the required steps, see [Prerequisites for guest accounts](/microsoft-365/managed-desktop/get-ready/guest-accounts?view=o365-worldwide).
+**Allow access to unlicensed admins** should be enabled. For the required steps, see [Prerequisites for guest accounts](/microsoft-365/managed-desktop/get-ready/guest-accounts).
 
 ### Windows apps
 
