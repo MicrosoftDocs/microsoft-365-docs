@@ -101,7 +101,7 @@ It's worth repeating this illustration from the overview to this Microsoft 365 D
 
 ![How Microsoft 365 Defender stops a chain of threats](../../media/defender/m365-defender-eval-threat-chain.png)
 
-Focusing on the right side of this illustration, Microsoft Cloud App Security notices anomalous behavior like impossible-travel, credential access, and unusual download, file share, or mail forwarding activity and reports these to the security team. Consequently, Cloud App Security helps prevent lateral movement by hackers and exfiltration of sensitive data. 
+Focusing on the right side of this illustration, Microsoft Cloud App Security notices anomalous behavior like impossible-travel, credential access, and unusual download, file share, or mail forwarding activity and reports these to the security team. Consequently, Cloud App Security helps prevent lateral movement by hackers and exfiltration of sensitive data. Microsoft 356 Defender correlates the signals from all the components to provide the full attack story.
 
 ## Understand key concepts
 
