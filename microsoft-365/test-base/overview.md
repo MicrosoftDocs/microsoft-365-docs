@@ -8,25 +8,17 @@ manager: rshastri
 audience: Software-Vendor
 ms.topic: how-to
 ms.date: 07/06/2021
-ms.prod: 'ms.prod'
+ms.service: virtual-desktop
 localization_priority: Normal
 ms.collection: TestBase-M365
 ms.custom:                 # This is an optional, free-form field you can use to define your own collection of articles. If you have more than one value, format as a bulleted list. This field truncates to something like 144 characters (inclusive of spaces) so keep it short.
 ms.reviewer: mapatel
 f1.keywords: NOCSH 
 ---
-<!---Recommended: Remove all the comments in this template before you sign-off or merge to master.--->
-
-<!---overview articles are for new customers and explain the service from a technical point of view.
-They are not intended to define benefits or value prop; that would be in marketing content.
---->
 
 # What is Test Base for Microsoft 365? 
-<!---Required: 
-For the H1 - that's the primary heading at the top of the article - use the format "What is <service>?"
-You can also use this in the TOC if your service name doesn’t cause the phrase to wrap.
---->
-Test Base for Microsoft 365 (Test Base), or previously known as Update Staging Lab is Microsoft’s validation service based in the secure Azure environment.  
+
+Test Base for Microsoft 365 (Test Base) is Microsoft’s validation service based in the secure Azure environment.  
 With Test Base, Software Vendors (SVs) and System Integrators (SIs) can accelerate the validation of their applications against pre-released Windows security and feature builds. This is a highly engaged collaboration between SV partners and Microsoft enabling joint testing, validation and remediation.
 
 Test Base provides a great opportunity to build and maintain a secure validation service on Azure, where customers and partners can stage and test their application's workloads against our pre-released security updates.
@@ -68,10 +60,9 @@ This means anyone with a valid enterprise Azure account is able to onboard their
 
 We are encouraging all Software Vendors (SVs), System Integrators (SIs) to onboard their applications, binaries and test scripts onto the service.
 
-<!--- Eventually we will edit this section to include Enterprise partners as well. We will need to re-evaluate when we get closer to public preview --->
-
 ## Next steps
 
 Follow the link to get started
 > [!div class="nextstepaction"]
-> [Next step](createAccount.md)
+> [Next step](createaccount.md)
+
