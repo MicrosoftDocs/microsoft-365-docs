@@ -8,7 +8,7 @@ ms.topic: how-to #Required
 ms.date: 01/04/2021 #Required; mm/dd/yyyy format.
 ---
 
-# Intelligent CPU Regression Analysis
+# CPU Regression Analysis
 
 CPU utilization can indicate whether an application is affected by an operating system update. 
 
