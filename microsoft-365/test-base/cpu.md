@@ -1,23 +1,30 @@
 ---
-title: CPU regression analysis #Required; page title displayed in search results. Include the brand.
-description: n/a #Required; article description that is displayed in search results.
-author: mansipatel-usl #Required; your GitHub user alias, with correct capitalization.
-ms.author: mapatel #Required; microsoft alias of author; optional team alias.
-ms.service: virtual-desktop #Required; service per approved list. service slug assigned to your service by ACOM.
-ms.topic: how-to #Required
-ms.date: 01/04/2021 #Required; mm/dd/yyyy format.
+title: 'CPU regression analysis'
+description: Understanding regression results and metrics for CPU consumption
+search.appverid: MET150
+author: mansipatel-usl
+ms.author: mapatel
+manager: rshastri
+audience: Software-Vendor
+ms.topic: how-to
+ms.date: 07/06/2021
+ms.prod: ms.prod
+localization_priority: Normal
+ms.collection: TestBase-M365
+ms.custom:                 # This is an optional, free-form field you can use to define your own collection of articles. If you have more than one value, format as a bulleted list. This field truncates to something like 144 characters (inclusive of spaces) so keep it short.
+ms.reviewer: mapatel
+f1.keywords: NOCSH
 ---
-
-# Intelligent CPU Regression Analysis
+# Intelligent CPU regression analysis
 
 CPU utilization can indicate whether an application is affected by an operating system update. 
 
-Test Base for Microsoft 365 provides software developers with an insight into CPU performance regressions which occur when their application is running on a pre-release version of an upcoming Windows Operating System (OS) update. 
+Test Base for Microsoft 365 provides software developers with an insight into CPU performance regressions which occur when their application is running on different versions of an upcoming Windows Operating System (OS) update. 
 
 These CPU regressions enable developers to detect and resolve application issues (and potential failures) before the OS update is deployed broadly, thus preventing a bad experience for the end user.
 
 
-### How CPU Regression Analysis works ###
+### How CPU regression analysis works ###
 
 As a Test Base user, you can upload your application's binaries (in a single .zip file), along with associated test scripts and select the Windows OS version against which you would like to test your application on the Test Base portal on Azure. 
 
