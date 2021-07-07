@@ -74,10 +74,10 @@ For each of the planned use cases, identify users who are subject matter experts
 When you initiate a trial, you need to:
 
 - Assign licenses to the relevant users.
-- Perform [additional setup of SharePoint Syntex](https://docs.microsoft.com/microsoft-365/contentunderstanding/set-up-content-understanding).
-    - You might want to [create additional content centers](https://docs.microsoft.com/microsoft-365/contentunderstanding/create-a-content-center).
+- Perform [additional setup of SharePoint Syntex](set-up-content-understanding.md).
+    - You might want to [create additional content centers](create-a-content-center.md).
 
-After the trial is activated, you can create models and process files. See [guidance for model creation](https://docs.microsoft.com/microsoft-365/contentunderstanding/create-a-content-center).
+After the trial is activated, you can create models and process files. See [guidance for model creation](create-a-content-center.md).
 
 ## During a trial
 
@@ -105,4 +105,4 @@ If you don’t purchase licenses following the trial:
 
 ## See also
 
-[Microsoft SharePoint Syntex adoption: Get started](adoption-getstarted)
+[Microsoft SharePoint Syntex adoption: Get started](adoption-getstarted.md)
