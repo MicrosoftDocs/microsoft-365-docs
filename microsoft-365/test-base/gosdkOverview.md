@@ -1,13 +1,20 @@
 ---
-title: Test Base libraries for GO #Required; page title displayed in search results. Include the brand.
-description: n/a #Required; article description that is displayed in search results.
-author: v-zhifufeng #Required; your GitHub user alias, with correct capitalization.
-ms.author: v-zhifufeng #Required; microsoft alias of author; optional team alias.
-ms.service: virtual-desktop #Required; service per approved list. service slug assigned to your service by ACOM.
-ms.topic: faq #Required
-ms.date: 01/04/2021 #Required; mm/dd/yyyy format.
+title: 'Test Base libraries for GO'
+description: Details on test base libraries. Not public yet.
+search.appverid: MET150
+author: mansipatel-usl
+ms.author: mapatel
+manager: rshastri
+audience: Software-Vendor
+ms.topic: article
+ms.date: 07/06/2021
+ms.service: virtual-desktop
+localization_priority: Normal
+ms.collection: TestBase-M365
+ms.custom:                 # This is an optional, free-form field you can use to define your own collection of articles. If you have more than one value, format as a bulleted list. This field truncates to something like 144 characters (inclusive of spaces) so keep it short.
+ms.reviewer: mapatel
+f1.keywords: NOCSH
 ---
-
 # Test Base SDK for GO
 
 ## Overview
