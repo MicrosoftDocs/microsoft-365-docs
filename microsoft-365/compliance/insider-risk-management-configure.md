@@ -69,7 +69,7 @@ Depending on the structure of your compliance management team, you have options 
 
 Complete the following steps to add users to an insider risk management role group:
 
-1. Sign into [https://protection.office.com/permissions](https://protection.office.com/permissions) using credentials for an admin account in your Microsoft 365 organization.
+1. Sign into [https://compliance.microsoft.com/permissions](https://compliance.microsoft.com/permissions) using credentials for an admin account in your Microsoft 365 organization.
 
 2. In the Security &amp; Compliance Center, go to **Permissions**. Select the link to view and manage roles in Office 365.
 
@@ -246,4 +246,4 @@ Insider risk management policies include assigned users and define which types o
 
 After you've completed these steps to create your first insider risk management policy, you'll start to receive alerts from activity indicators after about 24 hours. Configure additional policies as needed using the guidance in Step 4 of this article or the steps in [Create a new insider risk policy](insider-risk-management-policies.md#create-a-new-policy).
 
-To learn more about investigating insider risk alerts and the **Alerts dashboard**, see [Insider risk management alerts](insider-risk-management-alerts.md).
+To learn more about investigating insider risk alerts and the **Alerts dashboard**, see [Insider risk management activities](insider-risk-management-activities.md#alert-dashboard).

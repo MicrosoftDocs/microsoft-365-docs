@@ -42,6 +42,7 @@ None
 |Publications|yes|MachineLearningPublicationEntityData[]|The collection of MachineLearningPublicationEntityData each of which specifies the model and target document library.|
 
 ### MachineLearningPublicationEntityData
+
 | Name | Required | Type | Description |
 |--------|-------|--------|------------|
 |ModelUniqueId|yes|string|The unique ID of the model file.|
@@ -56,6 +57,7 @@ None
 |200 OK||This is a customized API to support removing a model from multi document libraries. In the case of partial success, 200 OK could still be returned and the caller needs to inspect the response body to understand if the model has been successfully removed from a document library.|
 
 ## Response Body
+
 | Name   | Type  | Description|
 |--------|-------|------------|
 |TotalSuccesses|int|The total number of a model being successfully removed from a document library.|
@@ -63,6 +65,7 @@ None
 |Details|MachineLearningPublicationResult[]|The collection of MachineLearningPublicationResult each of which specifies the detailed result of removing the model from a document library.|
 
 ### MachineLearningPublicationResult
+
 | Name   | Type  | Description|
 |--------|-------|------------|
 |StatusCode|int|The HTTP status code.|
@@ -70,6 +73,7 @@ None
 |Publication|MachineLearningPublicationEntityData|It specifies the model info and the target document library.| 
 
 ### MachineLearningPublicationEntityData
+
 | Name | Type | Description |
 |--------|--------|------------|
 |ModelUniqueId|string|The unique ID of the model file.|
@@ -87,17 +91,16 @@ In this sample, the ID of the Contoso Contract document understanding model is `
 
 ```HTTP
 { 
-	"publications": [ 
-		{ 
-			"ModelUniqueId": "7645e69d-21fb-4a24-a17a-9bdfa7cb63dc", 
-			"TargetSiteUrl": "https://constco.sharepoint-df.com/sites/docsite", 
-			"TargetWebServerRelativeUrl": "/sites/docsite ", 
-			"TargetLibraryServerRelativeUrl": "/sites/dcocsite/joedcos" 
-		} 
-	] 
+    "publications": [ 
+        { 
+            "ModelUniqueId": "7645e69d-21fb-4a24-a17a-9bdfa7cb63dc", 
+            "TargetSiteUrl": "https://constco.sharepoint-df.com/sites/docsite", 
+            "TargetWebServerRelativeUrl": "/sites/docsite ", 
+            "TargetLibraryServerRelativeUrl": "/sites/dcocsite/joedcos" 
+        } 
+    ] 
 } 
 ```
-
 
 #### Sample response
 
@@ -107,21 +110,21 @@ In the response, TotalFailures and TotalSuccesses refer to the number of failure
 
 ```JSON
 {
-	"Details": [
-		{
-			"ErrorMessage": null,
-			"Publication": {
-				"ModelUniqueId": "7645e69d-21fb-4a24-a17a-9bdfa7cb63dc",
-				"TargetSiteUrl": "https://contoso.sharepoint.com/sites/repository/",
-				"TargetWebServerRelativeUrl": "/sites/repository",
-				"TargetLibraryServerRelativeUrl": "/sites/repository/contracts",
-				"ViewOption": "NewViewAsDefault"
-			},
-			"StatusCode": 200
-		}
-	],
-	"TotalFailures": 0,
-	"TotalSuccesses": 1
+    "Details": [
+        {
+            "ErrorMessage": null,
+            "Publication": {
+                "ModelUniqueId": "7645e69d-21fb-4a24-a17a-9bdfa7cb63dc",
+                "TargetSiteUrl": "https://contoso.sharepoint.com/sites/repository/",
+                "TargetWebServerRelativeUrl": "/sites/repository",
+                "TargetLibraryServerRelativeUrl": "/sites/repository/contracts",
+                "ViewOption": "NewViewAsDefault"
+            },
+            "StatusCode": 200
+        }
+    ],
+    "TotalFailures": 0,
+    "TotalSuccesses": 1
 }
 ```
 
