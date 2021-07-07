@@ -95,7 +95,7 @@ There will always be a need for a mixture of AI-defined and human-created topics
 When you initiate a trial, you need to:
 
 - Assign licenses to the relevant users.
-- Perform [additional setup](set-up-topic-experiences) of Viva Topics.
+- Perform [additional setup](set-up-topic-experiences.md) of Viva Topics.
 
 When the trial is activated, the topic discovery process begins.
 
@@ -132,5 +132,5 @@ If you don’t purchase licenses following the trial:
 
 ## See also
 
-[Get started driving adoption of Microsoft Viva Topics](topics-adoption-getstarted)
+[Get started driving adoption of Microsoft Viva Topics](topics-adoption-getstarted.md)
 
