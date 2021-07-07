@@ -5,16 +5,16 @@ f1.keywords:
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 
+ms.date:
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: M365-security-compliance 
-search.appverid: 
+ms.collection: M365-security-compliance
+search.appverid:
 - MOE150
 - MET150
-ms.assetid: 
+ms.assetid:
 description: "Learn about the conversation reconstruction feature in Advanced eDiscovery (called conversation threading) to reconstruct, review, and export chat conversations in Microsoft Teams and Yammer groups."
 ms.custom: seo-marvel-mar2020
 ---
@@ -39,7 +39,7 @@ With Conversation Reconstruction, you can use built-in capabilities to reconstru
 
 Here are few definitions to help you get start using Conversation Reconstruction.
 
-- **Messages:** Represent the smallest unit of a conversation. Messages may vary in size, structure, and metadata. 
+- **Messages:** Represent the smallest unit of a conversation. Messages may vary in size, structure, and metadata.
 
 - **Conversation:** Represents a grouping of one or more messages. Across different applications, conversations may be represented in different ways. In some applications, there is an explicit action that results from replying to an existing message. Conversations are formed explicitly as a result of this user action. For example, here is a screenshot of a channel conversation in Microsoft Teams.
 
@@ -58,15 +58,15 @@ After you have reviewed and finalized the search query in a collection, you can 
 When you add items from conversations to a review set, you can use the threaded conversations option to collect contextual messages from conversations that contain items that match the search criteria of the collection. After you select the thread conversations option, the following things can happen:
 
   ![Conversation Retrieval](../media/messagesandconversations.png)
-  
+
 1. Using a keyword and date range query, the search returned a hit on *Message 3*. This message was part of a larger conversation, illustrated by *CRC1*.
-  
+
 2. When you add the data into a review set and enable the conversation retrieval options, Advanced eDiscovery will go back and collect other items in *CRC1*.
-  
+
 3. After the items have been added to the review set, you can review all the individual messages from *CRC1*.
 
 To enabled the threaded conversations option, see [Commit a draft collection to a review set](commit-draft-collection.md#commit-a-draft-collection-to-a-review-set).
-  
+
 ## Step 3: Review and export threaded conversations
 
 After the content has been processed and added to the review set, you can start reviewing the data in the review set. The review capabilities are different depending on whether the content was added to a standard review set or a conversation review set.
@@ -79,7 +79,7 @@ In a standard review set, messages are processed and displayed as individual ite
 
 ### Reviewing conversations in a conversation review set
 
-In a conversation review set, individual messages are threaded together and presented as conversations. This lets you review and export contextual conversations. 
+In a conversation review set, individual messages are threaded together and presented as conversations. This lets you review and export contextual conversations.
 
   ![Conversation review set](../media/ConversationRSOptions.PNG)
 
@@ -91,10 +91,10 @@ In a conversation review set, you can use the following options to facilitate th
 
 - **Group by conversation:** Groups messages within the same conversation together to help users simplify and expedite their review process.
 
-- **Summary view:** Displays the threaded conversation. In this view, you can see the entire conversation and also access the metadata for each individual message.  
-  
+- **Summary view:** Displays the threaded conversation. In this view, you can see the entire conversation and also access the metadata for each individual message.
+
    - View metadata for individual messages
-   
+
    - Download individual messages
 
 - **Text view:** Provides the extracted text for the entire conversation.
@@ -111,25 +111,19 @@ In a conversation review set, you can set the following options to export conver
 
 ![Export options for conversations](../media/export.png)
 
-a. Metadata options
+1. Metadata options:
+   - **Load file:** Metadata is included for each individual message, email, and document. There is one row for each message in a conversation.
+   - **Tags:** Tags from your review process are included in the metadata file. Messages in a conversation share the same tags.
 
-   - **Load file:** Metadata is included for each individual message, email, and document. There is one row for each message in a conversation. 
-
-   - **Tags:** Tags from your review process are included in the metadata file. Messages in a conversation share the same tags. 
-
-b. Conversation options
-  
-   - **Conversation files:** When you export conversation files, the annotated view is converted to a PDF file and downloaded to the export folder. Messages in one conversation file point to the PDF version of the same conversation file.  
-  
+2. Conversation options:
+   - **Conversation files:** When you export conversation files, the annotated view is converted to a PDF file and downloaded to the export folder. Messages in one conversation file point to the PDF version of the same conversation file.
    - **Individual chat messages:** When you export individual messages, each unique message in the conversation is exported as a standalone item. The file is exported in the same format that it was saved as in the mailbox. For a specific conversation, you receive multiple .msg files.
 
-     >[!NOTE]
+     > [!NOTE]
      > If you applied annotations to the conversation file, these annotations won't be transferred to the individual messages.
 
-c. Other options
-
+3. Other options:
    - **Generate text files for all exported content:** Generates a text file for each conversation exported from the review set.
-
    - **Replace exported content with redacted PDFs:** If redacted conversation files are generated during the review process, then these files are available during export. You can decided whether to export only the native files (by not selecting this option) or to replace the native files with the redacted versions of the native files (by selecting this option), which are exported as PDF files.
 
 ## More information
@@ -137,7 +131,5 @@ c. Other options
 To learn more about how to review case data in Advanced eDiscovery, see the following articles:
 
 - [View case data](view-documents-in-review-set.md)
-
 - [Analyze case data](analyzing-data-in-review-set.md)
-
 - [Export case data](exporting-data-ediscover20.md)

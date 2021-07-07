@@ -25,15 +25,12 @@
           href: service-description/device-images.md
         - name: Device names
           href: service-description/device-names.md
-        - name: Program devices
-          href: service-description/device-list.md
-          items: 
-            - name: Archived program devices
-              href: service-description/archived-device-list.md
         - name: Device services
           href: service-description/device-services.md
         - name: Device profiles
           href: service-description/profiles.md
+        - name: Device deployment groups
+          href: service-description/deployment-groups.md
         - name: Device configuration
           href: service-description/device-policies.md
         - name: Security technologies
@@ -48,6 +45,8 @@
           href: service-description/support.md
         - name: Operations and monitoring
           href: service-description/operations-and-monitoring.md
+        - name: Diagnostic logs
+          href: service-description/diagnostic-logs.md
         - name: Application requirements
           href: service-description/mmd-app-requirements.md
         - name: Application control
@@ -104,6 +103,8 @@
           href: get-started/enterprise-state-roaming.md
         - name: Localize the user experience
           href: get-started/localization.md
+        - name: Validate new devices
+          href: get-started/validate-device.md
         - name: Set up devices
           href: get-started/set-up-devices.md
           items: 
@@ -143,14 +144,6 @@
           items:
             - name: Device inventory report
               href: working-with-managed-desktop/device-inventory-report.md
-            - name: Usage insights
-              href: working-with-managed-desktop/usage-insights.md
-            - name: Reliability insights
-              href: working-with-managed-desktop/reliability-insights.md
-            - name: Battery insights
-              href: working-with-managed-desktop/battery-insights.md
-            - name: Windows security update insights
-              href: working-with-managed-desktop/security-update-insights.md
         - name: Admin support
           href: working-with-managed-desktop/admin-support.md
         - name: User support
@@ -161,6 +154,8 @@
           href: working-with-managed-desktop/work-with-app-control.md
         - name: Change device profile
           href: working-with-managed-desktop/change-device-profile.md
+        - name: Assign devices to deployment
+          href: working-with-managed-desktop/assign-deployment-group.md
         - name: Remove devices
           href: working-with-managed-desktop/remove-devices.md
         - name: Configurable settings

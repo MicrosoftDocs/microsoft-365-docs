@@ -14,7 +14,8 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+MS.technology: mde
+ms.custom: api
 ---
 
 # Get file statistics API
@@ -95,10 +96,10 @@ Here is an example of the response.
 {
     "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#microsoft.windowsDefenderATP.api.InOrgFileStats",
     "sha1": "0991a395da64e1c5fbe8732ed11e6be064081d9f",
-    "orgPrevalence": "14850",
+    "organizationPrevalence": 14850,
     "orgFirstSeen": "2019-12-07T13:44:16Z",
     "orgLastSeen": "2020-01-06T13:39:36Z",
-    "globalPrevalence": "705012",
+    "globallyPrevalence": 705012,
     "globalFirstObserved": "2015-03-19T12:20:07.3432441Z",
     "globalLastObserved": "2020-01-06T13:39:36Z",
     "topFileNames": [

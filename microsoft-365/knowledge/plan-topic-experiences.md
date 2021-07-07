@@ -27,6 +27,8 @@ In this article we'll examine these planning decisions:
 
 Security and privacy of your data is respected, and topic experiences does not grant users additional access to files they don’t have rights to. We recommend you also read [Microsoft Viva Topics security and privacy](topic-experiences-security-privacy.md) as part of your planning process.
 
+To learn more about the AI technology behind Viva Topics, read [Alexandria in Microsoft Viva Topics: from big data to big knowledge](https://www.microsoft.com/research/blog/alexandria-in-microsoft-viva-topics-from-big-data-to-big-knowledge).
+
 ## Requirements
 
 You must be [subscribed to Viva Topics](https://www.microsoft.com/microsoft-viva/topics) and be a global administrator or SharePoint administrator to access the Microsoft 365 admin center and set up Topics.
@@ -35,7 +37,9 @@ All users who are going to use Topics require a **Topic Experiences** license. A
 
 ## Topic discovery
 
-The topic discovery settings specify which SharePoint sites are used as sources for topics. You can choose to include all SharePoint sites, a specific list of sites, or no sites. We recommend that you choose all sites so that topic experiences can discover a large number of good topics for your users.
+The topic discovery settings specify which SharePoint sites are used as sources for topics. This includes both classic and modern sites, as well as sites associated with Microsoft Teams and Microsoft 365 Groups. OneDrive sites are not included.
+
+You can choose to include all SharePoint sites, a specific list of sites, or no sites. We recommend that you choose all sites so that topic experiences can discover a large number of good topics for your users.
 
 When you set up Topics, you can choose from the following options:
 

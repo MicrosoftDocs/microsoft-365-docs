@@ -44,9 +44,9 @@ After you run an eDiscovery search, the total number and size of partially index
   
 ## Calculating the ratio of partially indexed items in your organization
 
-To understand your organization's exposure to partially indexed items, you can run a search for all content in all mailboxes (by using a blank keyword query). In the following example below, there are 56,208 (4,830 MB) fully indexed items and 470 (316 MB) partially indexed items.
+To understand your organization's exposure to partially indexed items, you can run a search for all content in all mailboxes (by using a blank keyword query). In the following example, there are 1,629,904 (146.46 GB) fully indexed items and 10,025 (10.27 GB) partially indexed items.
   
-![Example of search statistics showing partially indexed items](../media/0f6a5cf7-4c98-44a0-a0dd-5aed67124641.png)
+![Example of search statistics showing partially indexed items](../media/PartiallyIndexedItemsTest.png)
   
 You can determine the percentage of partially indexed items by using the following calculations.
   
@@ -54,23 +54,23 @@ You can determine the percentage of partially indexed items by using the followi
 
 `(Total number of partially indexed items/Total number of items) x 100`
 
-`(470/56,208) x 100 = 0.84%`
+`(10025/1629904) x 100 = 0.62%`
 
-By using the search results from the previous example, .84% of all mailboxes items are partially indexed.
+By using the search results from the previous example, 0.62% of all mailboxes items are partially indexed.
   
  **To calculate the percentage of the size of partially indexed items in your organization:**
 
 `(Size of all partially indexed items/Size of all items) x 100`
 
-`(316 MB/4830 MB) x 100 = 6.54%`
+`(10.27 GB/146.46 MB) x 100 = 7.0%`
 
-So in the previous example, 6.54% of the total size of mailbox items are from partially indexed items. As previously stated, most organizations customers have less than 1% of content by volume and less than 12% of content by size that is partially indexed.
+So in the previous example, 7% of the total size of mailbox items are from partially indexed items. As previously stated, most organizations customers have less than 1% of content by volume and less than 12% of content by size that is partially indexed.
 
 ## Working with partially indexed items
 
 In cases when you need to examine partially items to validate that they don't contain relevant information, you can [export a content search report](export-a-content-search-report.md) that contains information about partially indexed items. When you export a content search report, be sure to choose one of the export options that includes partially indexed items.
   
-![Choose the second or third option to export partially indexed items](../media/624a62b4-78f7-4329-ab5d-e62e3b369885.png)
+![Choose the second or third option to export partially indexed items](../media/PartiallyIndexedItemsExportOptions.png)
   
 When you export eDiscovery search results or a search report using one of these options, the export includes a report named Unindexed Items.csv. This report includes most of the same information as the ResultsLog.csv file; however, the Unindexed Items.csv file also includes two fields related to partially indexed items: **Error Tags** and **Error Properties**. These fields contain information about the indexing error for each partially indexed item. Using the information in these two fields can help you determine whether or not the indexing error for a particular impacts your investigation. If it does, you can perform a targeted search and retrieve and export specific email messages and SharePoint or OneDrive documents so that you can examine them to determine if they're relevant to your investigation. For step-by-step instructions, see [Prepare a CSV file for a targeted search in Office 365](csv-file-for-an-id-list-content-search.md).
 

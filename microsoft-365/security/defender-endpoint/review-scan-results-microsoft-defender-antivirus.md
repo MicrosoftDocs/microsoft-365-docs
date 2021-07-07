@@ -7,14 +7,15 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 09/28/2020
+ms.date: 06/17/2021
 ms.reviewer: 
 manager: dansimp
 ms.technology: mde
+ms.topic: article
 ---
 
 # Review Microsoft Defender Antivirus scan results
@@ -41,7 +42,7 @@ The following cmdlet will return each detection on the endpoint. If there are mu
 Get-MpThreatDetection
 ```
 
-![screenshot of PowerShell cmdlets and outputs](images/defender/wdav-get-mpthreatdetection.png)
+:::image type="content" source="../../media/wdav-get-mpthreatdetection.png" alt-text="screenshot of PowerShell cmdlets and outputs":::
 
 You can specify `-ThreatID` to limit the output to only show the detections for a specific threat.
 
@@ -51,7 +52,7 @@ If you want to list threat detections, but combine detections of the same threat
 Get-MpThreat
 ```
 
-![screenshot of PowerShell](images/defender/wdav-get-mpthreat.png)
+:::image type="content" source="../../media/wdav-get-mpthreat.png" alt-text="PowerShell code":::
 
 See [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender cmdlets](/powershell/module/defender/) for more information on how to use PowerShell with Microsoft Defender Antivirus.
 

@@ -22,7 +22,7 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 1136115a-75af-4497-b693-640c4ce70bc6
-description: "Create quick links to your email, documents, apps, SharePoint sites, external sites, and other resources by adding custom tiles to the app launcher. "
+description: "Create quick links to your email, documents, apps, SharePoint sites, external sites, and other resources by adding custom tiles to the app launcher."
 ---
 
 # Add custom tiles to the app launcher
@@ -43,19 +43,28 @@ You can add your own custom tiles to the app launcher that point to SharePoint s
   
 4. Enter a **Tile name** for the new tile. The name will appear in the tile. 
     
-5. Enter a **URL of website** for the tile. This is the location where you want your users to go when they select the tile on the app launcher. Use HTTPS in the URL.<br/>TIP: If you're creating a tile for a SharePoint site, navigate to that site, copy the URL, and paste it here. The URL of your default team site looks like this: `https://<company_name>.sharepoint.com` 
+5. Enter a **URL of website** for the tile. This is the location where you want your users to go when they select the tile on the app launcher. Use HTTPS in the URL.
+
+    > [!TIP]
+    > If you're creating a tile for a SharePoint site, navigate to that site, copy the URL, and paste it here. The URL of your default team site looks like this: `https://<company_name>.sharepoint.com` 
   
-6. Enter an **URL of the image** for the tile. The image appears on the My apps page and app launcher.<br/>TIP: The image should be 60x60 pixels and be available to everyone in your organization without requiring authentication.
+6. Enter a **URL of the image** for the tile. The image appears on the My apps page and app launcher.
+
+    > [!TIP]
+    > The image should be 60x60 pixels and be available to everyone in your organization without requiring authentication.
 
 7. Enter a **Description** for the tile. You see this when you select the tile on the My apps page and select **App details**. 
   
 8. Select **Save changes** to create the custom tile. 
     
-Your custom tile now appears in the app launcher on the **All** tab for you and your users. 
+    Your custom tile now appears in the app launcher on the **All** tab for you and your users. 
+
+    > [!NOTE]
+    > If you don't see the custom tile created in the previous steps, make sure you have an Exchange Online mailbox assigned to you and you've signed into your mailbox at least once. These steps are required for custom tiles in Microsoft 365. 
   
 ## Edit or delete a custom tile
 
-1. In the admin center, go to the **Settings** > **Org Settings** > **Organization profile**</a> tab.
+1. In the admin center, go to the **Settings** > **Org Settings** > **Organization profile** tab.
     
 2. On the **Organization profile** page, next to   **Add custom tiles for your organization**, select **Edit**.
 
@@ -65,6 +74,12 @@ Your custom tile now appears in the app launcher on the **All** tab for you and 
     
 To delete a custom tile, from the **Custom tiles** window, select the tile, select **Remove tile** > **Delete**. 
   
-## What's next?
+## Next steps
 
 In addition to adding tiles to the app launcher, you can add app launcher tiles to the navigation bar ([learn more](https://support.microsoft.com/office/eb34a21b-52fa-4fbf-a8d5-146132242985)). To customize the look and feel of Microsoft 365 to match your organization's brand, see [Customize the Microsoft 365 theme](../setup/customize-your-organization-theme.md).
+
+## Related content
+
+[Pin apps to your users' app launcher](pin-apps-to-app-launcher.md) (article)\
+[Upgrade your Microsoft 365 for business users to the latest Office client](../setup/upgrade-users-to-latest-office-client.md) (article)\
+[Manage add-ins in the admin center](../manage/manage-addins-in-the-admin-center.md) (article)

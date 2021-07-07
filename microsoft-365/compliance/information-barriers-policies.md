@@ -33,8 +33,8 @@ When you define policies for information barriers, you'll work with user account
 - User account attributes are defined in Azure Active Directory (or Exchange Online). These attributes can include department, job title, location, team name, and other job profile details. 
 - Segments are sets of users that are defined in the Security & Compliance Center using a selected **user account attribute**. (See the [list of supported attributes](information-barriers-attributes.md).)
 - Information barrier policies determine communication limits or restrictions. When you define information barrier policies, you choose from two kinds of policies:
-    - "Block" policies prevent one segment from communicating with another segment.
-    - "Allow" policies allow one segment to communicate with only certain other segments.
+  - "Block" policies prevent one segment from communicating with another segment.
+  - "Allow" policies allow one segment to communicate with only certain other segments.
 - Policy application is done after all information barrier policies are defined, and you are ready to apply them in your organization.
 
 ## The work flow at a glance
@@ -65,13 +65,13 @@ In addition to the [required licenses and permissions](information-barriers.md#r
 
 - No address book policies -  Before you define and apply information barrier policies, make sure no Exchange address book policies are in place. Information barriers are based on address book policies, but the two kinds of policies are not compatible. If you do have such policies, make sure to [remove your address book policies](/exchange/address-books/address-book-policies/remove-an-address-book-policy) first. Once information barrier policies are enabled and you have hierarchical address book enabled, all users ***who are not included*** in an information barrier segment will see the [hierarchical address book](/exchange/address-books/hierarchical-address-books/hierarchical-address-books) in Exchange online.
 
-- PowerShell -  Currently, information barrier policies are defined and managed in the Office 365 Security & Compliance Center using PowerShell cmdlets. Although several examples are provided in this article, you'll need to be familiar with PowerShell cmdlets and parameters. You will also need the Azure PowerShell module.
-    - [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell)
-    - [Install the Azure PowerShell module](/powershell/azure/install-az-ps?view=azps-2.3.2)
+- PowerShell - Currently, information barrier policies are defined and managed in the Office 365 Security & Compliance Center using PowerShell cmdlets. Although several examples are provided in this article, you'll need to be familiar with PowerShell cmdlets and parameters. You will also need the Azure PowerShell module.
+  - [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell)
+  - [Install the Azure PowerShell module](/powershell/azure/install-az-ps)
 
 - Admin consent for information barriers in Microsoft Teams -  When your IB policies are in place, they can remove non-IB compliance users from Groups (i.e. Teams channels, which are based on groups). This configuration helps ensure your organization remains compliant with policies and regulations. Use the following procedure to enable information barrier policies to work as expected in Microsoft Teams.
 
-   1. Pre-requisite: Install Azure PowerShell from [Install Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps).
+   1. Pre-requisite: Install Azure PowerShell from [Install Azure PowerShell](/powershell/azure/install-az-ps).
 
    1. Run the following PowerShell cmdlets:
 
@@ -86,10 +86,9 @@ In addition to the [required licenses and permissions](information-barriers.md#r
    1. When prompted, sign in using your work or school account for Office 365.
 
    1. In the **Permissions requested** dialog box, review the information, and then choose **Accept**. The permissions requested by the App is given below.
-      
+
       > [!div class="mx-imgBorder"]
       > ![image](https://user-images.githubusercontent.com/8932063/107690955-b1772300-6c5f-11eb-9527-4235de860b27.png)
-
 
 When all the prerequisites are met, proceed to the next section.
 
