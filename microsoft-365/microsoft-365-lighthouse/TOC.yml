@@ -1,30 +1,42 @@
 - name: Microsoft 365 Lighthouse
   items: 
     - name: Overview of Microsoft 365 Lighthouse
-      href: overview-m365-lighthouse.md
+      href: m365-lighthouse-overview.md
+    - name: Requirements for Microsoft 365 Lighthouse
+      href: requirements-for-m365-lighthouse.md
 - name: Get started
   items: 
     - name: Sign up for Microsoft 365 Lighthouse
-      href: sign-up-m365-lighthouse.md
-    - name: Requirements for Microsoft 365 Lighthouse
-      href: requirements-for-m365-lighthouse.md
+      href: m365-lighthouse-sign-up.md
 - name: Secure Microsoft 365 Lighthouse
   items: 
     - name: Configure portal security
       href: 
-- name: Protect new customers with Baselines
+- name: Protect customers with Baselines
   items: 
-    - name: Overview of Baselines
+    - name: Deploy Baselines
       href: 
-    - name: Deploy standard configurations to tenants
+    - name: Deploy standard configurations
       href: 
 - name: Manage tenants
   items: 
-    - name: Overview of tenants
+    - name: Tenant list overview
       href: 
+- name: Manage users within tenants
+  items: 
+    - name: Users page overview
+      href: 
+- name: Manage devices
+  items: 
+    - name: Device compliance page overview
+      href: requirements-for-m365-lighthouse.md
+    - name: Manage threats
+      items:
+        - name: Threat management page overview
+          href: requirements-for-m365-lighthouse.md
 - name: Get help and support
   items: 
     - name: Get help and support
-      href: get-help-and-support.md
+      href: m365-lighthouse-get-help-and-support.md
     - name: Microsoft 365 Lighthouse FAQ
       href: m365-lighthouse-faq.yml

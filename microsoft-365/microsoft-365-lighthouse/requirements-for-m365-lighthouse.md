@@ -14,10 +14,14 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse                         
-description: "Managed Service Providers (MSPs) can use Microsoft 365 Lighthouse to secure and manage customer devices at scale."
+search.appverid: MET150
+description: "Managed Service Providers (MSPs) can use Microsoft 365 Lighthouse to secure and manage customer devices, data, and users at scale for small- and medium-sized business (SMB) customers."
 ---
 
 # Requirements for Microsoft 365 Lighthouse
+
+> [!NOTE]
+> The features described in this article are in Preview, are subject to change, and are only available to partners who meet the requirements listed in this article. If your organization does not have Microsoft 365 Lighthouse, see [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
 
 Microsoft 365 Lighthouse is an admin portal that helps Managed Service Providers (MSPs) secure and manage devices, data, and users at scale for small- and medium-sized business (SMB) customers.  
 
@@ -52,12 +56,12 @@ For more information, see [Enroll devices in Microsoft Intune](/mem/intune/enrol
 Microsoft Defender Antivirus is part of the Windows operating system and is enabled by default on devices running Windows 10.  
 
 > [!NOTE] 
-> If you’re using a non-Microsoft antivirus solution and not Microsoft Defender Antivirus, Microsoft Defender Antivirus is disabled automatically. When you uninstall the non-Microsoft antivirus solution, Microsoft Defender Antivirus is activated automatically to protect your Windows devices from threats.    
+> If you're using a non-Microsoft antivirus solution and not Microsoft Defender Antivirus, Microsoft Defender Antivirus is disabled automatically. When you uninstall the non-Microsoft antivirus solution, Microsoft Defender Antivirus is activated automatically to protect your Windows devices from threats.    
 
 ## Related content   
 
 [Overview of device management]() (article)\
 [Overview of user management]() (article)\
 [Overview of threat management]() (article)\
-[Microsoft 365 Lighthouse FAQs](m365-lighthouse-faq.yml) (article)
+[Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)
 

@@ -84,7 +84,10 @@ conceptualContent:
       links:
         - url: https://www.microsoft.com/microsoft-365/partners/business
           itemType: overview
-          text: Partner page 
+          text: Partner page
+        - url: ../microsoft-365-lighthouse/m365-lighthouse-overview.md
+          itemType: overview
+          text: Learn about Microsoft 365 Lighthouse 
         - url: https://assetsprod.microsoft.com/mpn/smb-advanced-security-customer-pitch-deck.pptx
           itemType: download
           text: Pitch deck (customer focus)

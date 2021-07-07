@@ -37,8 +37,6 @@ A global admin for a Microsoft cloud service can use the [Azure Active Directory
 
 This guide applies to other providers, such as Intune and Microsoft 365, which also rely on Azure AD for identity and directory services. Password expiration is the only part of the policy that can be changed.
 
-> [!NOTE]
-> Only passwords for user accounts that are not synchronized through directory synchronization can be configured to not expire. For more information about directory synchronization, see [Connect AD with Azure AD](/azure/active-directory/connect/active-directory-aadconnect).
 
 ## How to check the expiration policy for a password
 
