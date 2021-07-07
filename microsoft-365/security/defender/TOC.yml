@@ -86,7 +86,7 @@
               href: eval-defender-investigate-respond.md  
             - name: Simulate an attack
               href: eval-defender-investigate-respond-simulate-attack.md    
-            - name: Try additional capabilities
+            - name: Try capabilities
               href: eval-defender-investigate-respond-additional.md    
         - name: Promote the trial to production
           href: eval-defender-promote-to-production.md                    

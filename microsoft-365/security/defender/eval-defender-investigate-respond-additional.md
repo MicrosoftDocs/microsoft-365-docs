@@ -1,6 +1,6 @@
 ---
-title: Try additional Microsoft 365 Defender incident response capabilities in a pilot environment
-description: Try additional incident response capabilities.
+title: Try Microsoft 365 Defender incident response capabilities in a pilot environment
+description: Try incident response capabilities.
 keywords: Microsoft 365 Defender trial, try Microsoft 365 Defender, evaluate Microsoft 365 Defender, Microsoft 365 Defender evaluation lab, Microsoft 365 Defender pilot, cyber security, advanced persistent threat, enterprise security, devices, device, identity, users, data, applications, incidents, automated investigation and remediation, advanced hunting
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -23,21 +23,21 @@ ms.topic: conceptual
 ms.technology: m365d
 ---
 
-# Try additional Microsoft 365 Defender incident response capabilities in a pilot environment
+# Try Microsoft 365 Defender incident response capabilities in a pilot environment
 
 **Applies to:**
 - Microsoft 365 Defender
 
 This article is [Step 2 of 2](eval-defender-investigate-respond.md) in the process of performing an investigation and response of an incident in Microsoft 365 Defender using a pilot environment. For more information about this process, see the [overview](eval-defender-investigate-respond.md) article.
 
-Once you have performed an [incident response for a simulated attack](eval-defender-investigate-respond-simulate-attack.md), here are some additional Microsoft 365 Defender capabilities to explore:
+Once you have performed an [incident response for a simulated attack](eval-defender-investigate-respond-simulate-attack.md), here are some Microsoft 365 Defender capabilities to explore:
 
 | Capability | Description |
 |:-------|:-----|
 | [Prioritize incidents](#prioritize-incidents) | Use filtering and sorting of the incidents queue to determine which incidents to address next. |
 | [Manage incidents](#manage-incidents) | Modify incident properties to ensure correct assignment, add tags and comments, and to resolve an incident. |
 | [Automated investigation and response](#examine-automated-investigation-and-response-with-the-action-center) | Automated investigation and response (AIR) capabilities that can help your security operations team address threats more efficiently and effectively. The Action center is a "single pane of glass" experience for incident and alert tasks such as approving pending remediation actions. |
-| [Advanced hunting](#advanced-hunting) | A query-based threat-hunting tool that lets you proactively inspect events in your network and locate threat indicators and entities. |
+| [Advanced hunting](#advanced-hunting) | A query-based threat-hunting tool that lets you proactively inspect events in your network and locate threat indicators and entities. You also use advanced hunting during the investigation and remediation of an incident. |
 ||||
 
 ## Prioritize incidents
@@ -124,6 +124,9 @@ For more information, see [Automated investigation and response](m365d-autoir.md
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Bp7O]
 
+
+If the [optional fileless PowerShell attack simulation](eval-defender-investigate-respond-simulate-attack.md#simulate-an-attack-with-an-isolated-domain-controller-and-client-device-optional) were a real attack that had already reached the credential access stage, you can use advanced hunting at any point in the investigation to proactively search through events and records in the network using what you already know from the generated alerts and affected entities. For instance, you can query for any connections to the external IP address in the past 30 days.
+
 ### Hunting environment requirements
 
 There's a single internal mailbox and device required for this simulation. You'll also need an external email account to send the test message.
@@ -179,13 +182,7 @@ There's a single internal mailbox and device required for this simulation. You'l
         > [!NOTE]
         > Advanced hunting displays query results as tabular data. You can also opt to view the data in other format types such as charts.
 
-   1. Look at the results and see if you can identify the email you opened. It may take up to 2 hours for the message to show up in advanced hunting. If the email environment is large and there are many results, you might want to use the **Show Filters option** to find the message.
-
-      In the sample, the email was sent from a Yahoo account. Click the **+** icon beside **yahoo.com** under the SenderFromDomain section and then click **Apply** to add the selected domain to the query. Use the domain or email account that was used to send the test message in step 1 of Run the Simulation to filter your results. Run the query again to get a smaller result set to verify that you see the message from the simulation.
-
-      ![Example of using filters](../../media/mtp/fig20.png)
-
-      You should see this in the query window.
+   1. Look at the results and see if you can identify the email you opened. It may take up to two hours for the message to show up in advanced hunting. To narrow down the results, you can add the **where** condition to your query to only look for emails that have "yahoo.com" as their SenderMailFromDomain. Here is an example.
 
       ```console
       EmailEvents
@@ -287,6 +284,8 @@ Custom detections will run the query according to the frequency you set, and the
 
    ![Example of the email attachments page where you can see the status of the rule execution, triggered alerts and actions, edit the detection, and so on](../../media/mtp/fig28.png)
 
+<!--
+
 ### Advanced hunting walk-through exercises
 
 To learn more about advanced hunting, the following webcasts will walk you through the capabilities of advanced hunting within Microsoft 365 Defender to create cross-pillar queries, pivot to entities, and create custom detections and remediation actions.
@@ -301,6 +300,14 @@ To learn more about advanced hunting, the following webcasts will walk you throu
 |Episode 3: Summarizing, pivoting, and visualizing data|Now that we're able to filter, manipulate, and join data, it's time to start summarizing, quantifying, pivoting, and visualizing. In this episode, we'll cover the summarize operator and some of the calculations you can perform while diving into additional tables in the advanced hunting schema. We turn our datasets into charts that can help improve analysis.|[MP4](https://aka.ms/MTP29JUL20_MP4)|[YouTube](https://youtu.be/UKnk9U1NH6Y)|[Episode 3: CSL file in Git](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%203%20-%20Summarizing%2C%20Pivoting%2C%20and%20Joining.csl)|
 |Episode 4: Let's hunt! Applying KQL to incident tracking|Time to track some attacker activity! In this episode, we'll use our improved understanding of KQL and advanced hunting in Microsoft 365 Defender to track an attack. Learn some of the tips and tricks used in the field to track attacker activity, including the ABCs of cybersecurity and how to apply them to incident response.|[MP4](https://aka.ms/MTP5AUG20_MP4)|[YouTube](https://youtu.be/2EUxOc_LNd8)|[Episode 4: CSL file in Git](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%204%20-%20Lets%20Hunt.csl)|
 |
+
+--> 
+
+### Expert training on advanced hunting
+
+**Tracking the adversary** is a webcast series for new security analysts and seasoned threat hunters. It guides you through the basics of advanced hunting all the way to creating your own sophisticated queries. 
+
+See [Get expert training on advanced hunting](advanced-hunting-expert-training.md) to get started.
 
 ### Navigation you may need
 
