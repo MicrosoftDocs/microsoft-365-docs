@@ -57,11 +57,17 @@ Get-mailbox | where {$_.PersistedCapabilities -Match "SchedulerAssistant"}
 > It might take up to two hours for the Scheduler mailbox to complete full provisioning to set the SchedulerAssistant capability.
 
 ## Exchange Online mailbox
-Scheduler is an add-on to Microsoft 365. Meeting organizers must have an Exchange Online mailbox and calendar for Scheduler to work.
+A Scheduler license is an add-on to Microsoft 365, that enables the meeting organizer to delegate their meeting scheduling tasks to their Scheduler assistant. For the Scheduler to work, typically through Microsoft 365 licence, meeting organizers require the following:
 
-## Exchange requirements
+- A mailbox designated as Scheduler assistant mailbox
+- Scheduler license
+- Exchange Online mailbox and calendar
 
-In addition to licensing Scheduler, you must have one of the following licenses:
+The meeting attendees do not require Scheduler or Microsoft 365 licence.
+
+## Scheduler end-user license requirements
+
+A Scheduler license requires one of the following licenses:
 
 - Microsoft 365 E3, A3, E5, A5
 - Business Basic, Business, Business Standard, Business Premium
@@ -70,6 +76,11 @@ In addition to licensing Scheduler, you must have one of the following licenses:
 - Exchange Online Plan 1 or Plan 2 license. 
 
 > [!Note]
-> **Scheduler for Microsoft 365** isn't available for users of Office 365 operated by 21Vianet in China. It's also not available for users of Microsoft 365 with the German cloud that uses the data trustee German Telekom. It is supported for users in Germany whose data location isn't in the German datacenter.
->
->This feature is also not supported for users of the Government Cloud, including GCC, Consumer, GCC High, or DoD.
+> Scheduler for Microsoft 365 is available in worldwide multi-tenant environments in English only. **Scheduler for Microsoft 365** isn't available to users of:
+
+- Microsoft 365 operated by 21Vianet in China
+- Microsoft 365 with German cloud that uses the data trustee German Telekom
+- Government cloud including GCC, Consumer, GCC High, or DoD
+
+Scheduler does support users in Germany whose data location is not in the German datacenter.
+
