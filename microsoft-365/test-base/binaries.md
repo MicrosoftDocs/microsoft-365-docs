@@ -20,6 +20,8 @@ f1.keywords: NOCSH
 
 On this tab, you will upload a single zip package containing your binaries, dependencies and scripts used to run your test suite.
 
+## Upload package zip file
+
 ![Upload your binaries](Media/AddBinaries.png)
 
   - Uploaded dependencies can include test frameworks, scripting engines or data that will be accessed to run your application or test cases. For example, you can upload Selenium and a webdriver installer to help run browser-based tests.

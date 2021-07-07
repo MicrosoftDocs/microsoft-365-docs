@@ -15,7 +15,7 @@ On the Test Base portal page, navigate to the ‘Upload new package option on th
 
 Once there, follow the steps below to upload a new package.
 
-## Step 1: Enter details for your package
+## Enter details for your package
 
 On the Test details tab, type in your package's name, version and other details as requested. 
 

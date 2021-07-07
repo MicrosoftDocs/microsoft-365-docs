@@ -12,6 +12,8 @@ ms.date: 01/11/2021 #Required; mm/dd/yyyy format.
 # Step 1: Create a Test Base Account
 
 If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/en-us/free/) before you begin.
+
+## Enter details for test base account
  
 1. Search for **'Test Base'** in the Azure portal.
 

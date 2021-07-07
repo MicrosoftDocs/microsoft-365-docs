@@ -16,6 +16,8 @@ ms.date: 01/04/2021 #Required; mm/dd/yyyy format.
 2.	Review your test details and if satisfied, click on the ```Create``` button. 
 
 
+## Validate package details
+
 ![](Media/validation.png)
 
 3.	This will onboard your package to the Test Base environment. If your package is successfully created, an automated test which verifys whether your package can be successfully executed on Azure will be triggered.
