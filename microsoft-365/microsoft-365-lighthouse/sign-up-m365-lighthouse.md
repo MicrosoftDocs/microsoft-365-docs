@@ -60,7 +60,7 @@ Follow these steps to acquire the Microsoft 365 Lighthouse service plan:
 
 ## Next steps
 
-[Enable features for customers]() 
+[Configure Microsoft 365 Lighthouse portal security]() 
 
 ## Related content
 
