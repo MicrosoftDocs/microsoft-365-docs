@@ -84,33 +84,31 @@ You can enable recommended EOP and Defender for Office 365 protection policies f
 
 Here is the [Preset security policies in EOP and Microsoft Defender for Office 365](../office-365-security/preset-security-policies.md) article outlining the steps.
 
-1. Log on to your Microsoft 365 tenant. Use an account with access to the Security Center, added to Organization Management role in Office 365, or Security Administrator role in Microsoft 365.
-2. From the navigation menu, select "Polices & Rules" under Email & Collaboration.
+1. Log on to your Microsoft 365 tenant. Use an account with access to the Microsoft 365 Defender portal, added to Organization Management role in Office 365, or Security Administrator role in Microsoft 365.
+2. From the navigation menu, select *Polices & Rules* under Email & Collaboration.
 
 :::image type="content" source="../../media/MDOEval/5-MDO-eval-pilot.png" alt-text="Under Email & Collaboration on the navigation panel, click Policies & rules.":::
 
-3. On the Policy & Rules dashboard, click "Threat Policies".
+3. On the Policy & Rules dashboard, click *Threat Policies*.
 
 :::image type="content" source="../../media/MDOEval/6-MDO-eval-pilot.png" alt-text="a":::
 
-4. From the Security Admin Center, expand Threat Management from the navigation menu and then select Policy from the submenu.
-5. On the Policy dashboard, click the *Preset security policies* tile.
+4. From the Microsoft 365 Defender portal, expand Threat Management from the navigation menu and then select Policy from the submenu.
+5. On the Policy dashboard, click *Preset security policies*.
 
 :::image type="content" source="../../media/MDOEval/7-MDO-eval-pilot.png" alt-text="Click the Preset Security Policies tile.":::
 
 6. Click *Edit* to configure and assign the Standard policy and/or Strict policy. :::image type="content" source="../../media/MDOEval/8-MDO-eval-pilot.png" alt-text="On the Preset security policies panel, click Edit.":::
 7. Add conditions to apply baseline ***EOP*** protections to specific pilot users, or groups of users, as needed, and select *Next* to continue.
     - Example, a Defender for Office 365 condition for pilot evaluations could be applied if the recipients are *members* of a defined *Defender for Office 365 Standard Protection* group, and then managed by simply adding accounts to, or removing account from, the group.
-
  :::image type="content" source="../../media/MDOEval/9-MDO-eval-pilot.png" alt-text="Add the conditions needed to apply the EOP security level to your pilot group.":::
 
 8. Add conditions to apply baseline ***MDO*** protections to specific pilot users, or groups of users, as needed. Click *Next* to continue.
     - For example, a Defender for Office 365 condition for pilot evaluations could be applied if the recipients are *members* of a defined *Defender for Office 365 Standard Protection* group and then managed by simply adding / removing accounts via the group.
-
-:::image type="content" source="../../media/MDOEval/10-MDO-eval-pilot.png" alt-text="Add the conditions needed to apply the Defender for Office 365 security level to your pilot group.":::
+  :::image type="content" source="../../media/MDOEval/10-MDO-eval-pilot.png" alt-text="Add the conditions needed to apply the Defender for Office 365 security level to your pilot group.":::
 
 9. Review and confirm your changes for assigning preset security policies.
-10. Preset protection policies can be managed (re-configured, re-applied, disabled, etc.) by returning to the Security Admin Center and clicking the *Preset security policies* tile.
+10. Preset protection policies can be managed (re-configured, re-applied, disabled, etc.) by returning to the Microsoft 365 Defender portal > Policies & rules > Threat Policies > and clicking the *Preset security policies* tile.
 
 ### Configure custom protection policies
 
@@ -136,8 +134,8 @@ Now that your pilot is set up and configured, it's helpful to become familiar wi
 
 |Capability  |Description  |More information  |
 |---------|---------|---------|
-|Threat Explorer     | Threat Explorer is a powerful near real-time tool to help Security Operations teams investigate and respond to threats and displays information about suspected malware and phish in email and files in Office 365, as well as other security threats and risks to your organization.        | [Views in Threat Explorer and real-time detections ](../office-365-security/threat-explorer-views.md)       |
-|Attack Simulator     | You can use Attack Simulator in the Security & Compliance Center to run realistic attack scenarios in your organization which help you identify and find vulnerable users before a real attack impacts your environment.        |  [Attack Simulator in Microsoft Defender for Office 365](../office-365-security/attack-simulator.md)       |
+|Threat Explorer     | Threat Explorer is a powerful near real-time tool to help Security Operations teams investigate and respond to threats and displays information about suspected malware and phish in email and files in Office 365, as well as other security threats and risks to your organization.        | [Views in Threat Explorer and real-time detections ](../office-365-security/threat-explorer-views.md)       | 
+|Attack Simulator     | You can use Attack Simulation Training in the Microsoft Defender 365 portal to run realistic attack scenarios in your organization which help you identify and find vulnerable users before a real attack impacts your environment.        |  [Attack Simulator in Microsoft Defender for Office 365](../office-365-security/attack-simulator.md)       |
 |Reports dashboard     | On the left navigation menu, click Reports and expand the Email & collaboration heading. The Email & collaboration reports are about spotting security trends some of which will allow you to take action (through buttons like 'Go to submissions'), and others that will show trends, like Mailflow status summary, Top Malware, Spoof detections, Compromised users, Mail latency, Safe Links and Safe attachments reports. These metrics are generated automatically.  |    [View Reports](../office-365-security/view-email-security-reports.md)     |
 
 ## Next steps
