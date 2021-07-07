@@ -26,6 +26,8 @@ On the tasks tab, you are expected to provide the paths to your test scripts whi
     The scripts are run in upload sequence and a failure in a particular script will stop subsequent scripts from executing.
     You also have the option of selecting additional settings for each script provided.
 
+## Set script path
+
 ![Image of test task](Media/testtask.png)
 
 Sample of how to provide the relative path on a folder structure is below:

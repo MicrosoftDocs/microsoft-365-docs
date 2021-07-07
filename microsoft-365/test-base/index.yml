@@ -28,7 +28,7 @@ landingContent:
             url: overview.md
       - linkListType: get-started
         links:
-          - text: Create First Test Account
+          - text: Create Test Base Account
             url: createAccount.md
       - linkListType: tutorial
         links:
@@ -39,7 +39,7 @@ landingContent:
     linkLists:
       - linkListType: quickstart
         links:
-          - text: Create Test Account
+          - text: Create Test Base Account
             url: createAccount.md 
           - text: Upload your application
             url: uploadApplication.md
@@ -60,7 +60,7 @@ landingContent:
  # Card (optional)
   - title: Get references
     linkLists:
-      - linkListType: tutorial
+      - linkListType: reference
         links:
           - text: Frequently Asked Questions
             url: faq.md 

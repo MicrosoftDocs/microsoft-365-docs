@@ -1,11 +1,19 @@
 ---
-title: review #Required; page title displayed in search results. Include the brand.
-description: n/a #Required; article description that is displayed in search results.
-author: mansipatel-usl #Required; your GitHub user alias, with correct capitalization.
-ms.author: mapatel #Required; microsoft alias of author; optional team alias.
-ms.service: virtual-desktop #Required; service per approved list. service slug assigned to your service by ACOM.
-ms.topic: review #Required
-ms.date: 01/04/2021 #Required; mm/dd/yyyy format.
+title: 'Review'
+description: Review section after onboarding.
+search.appverid: MET150
+author: mansipatel-usl
+ms.author: mapatel
+manager: rshastri
+audience: Software-Vendor
+ms.topic: how-to
+ms.date: 07/06/2021
+ms.service: virtual-desktop
+localization_priority: Normal
+ms.collection: TestBase-M365
+ms.custom:                 # This is an optional, free-form field you can use to define your own collection of articles. If you have more than one value, format as a bulleted list. This field truncates to something like 144 characters (inclusive of spaces) so keep it short.
+ms.reviewer: mapatel
+f1.keywords: NOCSH
 ---
 # Step 6: Review your selections to create your package.
 
@@ -15,12 +23,11 @@ ms.date: 01/04/2021 #Required; mm/dd/yyyy format.
 
 2.	Review your test details and if satisfied, click on the ```Create``` button. 
 
-
-![](Media/validation.png)
+![View validation](Media/validation.png)
 
 3.	This will onboard your package to the Test Base environment. If your package is successfully created, an automated test which verifys whether your package can be successfully executed on Azure will be triggered.
 
-![](Media/successful.png)
+![Successful result](Media/successful.png)
 
 > [!Note]
 > You will get a notification from the Azure portal to notify you on the success or failure of the package verification. 
@@ -29,7 +36,7 @@ ms.date: 01/04/2021 #Required; mm/dd/yyyy format.
 
   - Peradventure this happens, you can view the status of your package on the ```Manage packages``` tab.
 
-![](Media/managepackages.png)
+![Image for managing packages](Media/managepackages.png)
 
   - For succesful tests, their results can be seen via the ```Test Summary```, ```Security Updates Results``` and ```Feature Updates Results``` pages at scheduled intervals, often starting a few days after your upload.
   
