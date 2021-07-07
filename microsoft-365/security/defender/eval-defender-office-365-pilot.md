@@ -85,7 +85,7 @@ You can enable recommended EOP and Defender for Office 365 protection policies f
 Here is the [Preset security policies in EOP and Microsoft Defender for Office 365](../office-365-security/preset-security-policies.md) article outlining the steps.
 
 1. Log on to your Microsoft 365 tenant. Use an account with access to the Microsoft 365 Defender portal, added to Organization Management role in Office 365, or Security Administrator role in Microsoft 365.
-2. From the navigation menu, select "Polices & Rules" under Email & Collaboration.
+2. From the navigation menu, select *Polices & Rules* under Email & Collaboration.
 
 :::image type="content" source="../../media/MDOEval/5-MDO-eval-pilot.png" alt-text="Under Email & Collaboration on the navigation panel, click Policies & rules.":::
 
