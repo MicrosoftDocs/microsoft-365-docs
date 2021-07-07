@@ -59,7 +59,7 @@ To turn off *Anyone* links for a site
 
 You can use domain allow or deny lists to specify which domains your users can use when sharing with people outside your organization.
 
-With an allow list, you can specify a list of domains where users in your organization can share with people outside your organization. Sharing with to other domains is blocked. If your organization only collaborates with people from a list of specific domains, you can use this feature to prevent sharing with other domains.
+With an allow list, you can specify a list of domains where users in your organization can share with people outside your organization. Sharing with other domains is blocked. If your organization only collaborates with people from a list of specific domains, you can use this feature to prevent sharing with other domains.
 
 With a deny list, you can specify a list of domains from which users in your organization cannot share with people outside your organization. Sharing with the listed domains is blocked. This can be useful if you have competitors, for example, who you want to prevent from accessing content in your organization.
 
