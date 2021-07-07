@@ -24,7 +24,7 @@ description: "This article describes how you can launch your portal using the Po
 A portal is a SharePoint communication site on your intranet that is high-traffic – a site that has anywhere from 10,000 to over 100,000 viewers over the course of several weeks. Use the Portal launch scheduler to launch your portal to ensure users have a smooth viewing experience when accessing your new SharePoint portal.
 <br>
 <br>
-The Portal launch scheduler is designed to help you follow a phased roll-out approach by batching viewers in waves and managing the URL redirects for the new portal. During the launch of each wave, you can gather user feedback, monitor portal performance, and pause the launch to resolve issues before proceeding with the next wave. Learn more about how to [plan a portal launch in SharePoint](/microsoft-365/Enterprise/Planportallaunchroll-out?view=o365-worldwide).
+The Portal launch scheduler is designed to help you follow a phased roll-out approach by batching viewers in waves and managing the URL redirects for the new portal. During the launch of each wave, you can gather user feedback, monitor portal performance, and pause the launch to resolve issues before proceeding with the next wave. Learn more about how to [plan a portal launch in SharePoint](/microsoft-365/Enterprise/Planportallaunchroll-out).
 
 **There are two types of redirections:**
 
@@ -111,7 +111,10 @@ Formerly, portal launches could only be scheduled through SharePoint PowerShell.
 7. Determine who needs to view the site right away and enter their information into the **Users exempt from waves** field. These users are excluded from waves and will not be redirected before, during, or after the launch.
 
     > [!NOTE]
-    > Up to 50 distinct users or security groups max can be added. Use security groups when you need more than 50 individuals to get access to the portal before the waves start launching.
+    > Up to 50 distinct users or security groups max can be used for the entire launch. Each launch is independent of each other, so if you schedule a launch on another portal, then you could use up to 50 users/security groups for that launch. Additionally, you can use up to 20 distinct users or security groups per wave. 
+
+>The portal launch scheduler supports security groups and mail enabled security groups. 
+
 
 8. Confirm portal launch details and select **Schedule**. Once the launch has been scheduled, any changes to the SharePoint portal home page will need to receive a healthy diagnostic result before the portal launch will resume.
 

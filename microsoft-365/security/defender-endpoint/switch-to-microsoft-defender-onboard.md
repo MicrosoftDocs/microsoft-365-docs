@@ -17,9 +17,11 @@ audience: ITPro
 ms.collection: 
   - M365-security-compliance
   - m365solution-migratetomdatp
+  - m365solution-mcafeemigrate
+  - m365solution-symantecmigrate
 ms.custom: migrationguides
 ms.topic: article
-ms.date: 05/20/2021
+ms.date: 06/14/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ---
 
@@ -96,7 +98,7 @@ To set Microsoft Defender Antivirus to passive mode on Windows Server, version 1
 1. Open Registry Editor, and then navigate to <br/>
    `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`.
 
-2. Edit (or create) a DWORD entry called **ForcePassiveMode**, and specify the following settings:
+2. Edit (or create) a DWORD entry called **ForceDefenderPassiveMode**, and specify the following settings:
    - Set the DWORD's value to **1**.
    - Under **Base**, select **Hexadecimal**.
 

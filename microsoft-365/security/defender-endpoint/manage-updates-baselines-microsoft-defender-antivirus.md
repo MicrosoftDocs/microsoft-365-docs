@@ -13,10 +13,10 @@ ms.topic: article
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.reviewer: pahuijbr
+ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 06/09/2021
+ms.date: 07/06/2021
 ---
 
 # Manage Microsoft Defender Antivirus updates and apply baselines
@@ -26,17 +26,13 @@ ms.date: 06/09/2021
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 - Microsoft Defender Antivirus
 
-There are two types of updates related to keeping Microsoft Defender Antivirus up to date:
+Keeping Microsoft Defender Antivirus up to date is critical to assure your devices have the latest technology and features needed to protect against new malware and attack techniques. Make sure to update your antivirus protection, even if Microsoft Defender Antivirus is running in [passive mode](microsoft-defender-antivirus-compatibility.md). There are two types of updates related to keeping Microsoft Defender Antivirus up to date:
 
 - Security intelligence updates
 - Product updates
 
-> [!IMPORTANT]
-> Keeping Microsoft Defender Antivirus up to date is critical to assure your devices have the latest technology and features needed to protect against new malware and attack techniques.
-> 
-> Make sure to update your antivirus protection even if Microsoft Defender Antivirus is running in [passive mode](./microsoft-defender-antivirus-compatibility.md).
-> 
-> To see the most current engine, platform, and signature date, visit the [Security intelligence updates for Microsoft Defender Antivirus and other Microsoft antimalware](https://www.microsoft.com/en-us/wdsi/defenderupdates).
+> [!TIP]
+> To see the most current engine, platform, and signature date, visit the [Security intelligence updates for Microsoft Defender Antivirus and other Microsoft antimalware](https://www.microsoft.com/en-us/wdsi/defenderupdates)
 
 ## Security intelligence updates
 
@@ -55,7 +51,7 @@ Engine updates are included with security intelligence updates and are released 
 
 ## Product updates
 
-Microsoft Defender Antivirus requires [monthly updates (KB4052623)](https://support.microsoft.com/help/4052623/update-for-windows-defender-antimalware-platform) (known as *platform updates*), and will receive major feature updates alongside Windows 10 releases.
+Microsoft Defender Antivirus requires [monthly updates (KB4052623)](https://support.microsoft.com/help/4052623/update-for-windows-defender-antimalware-platform) known as *platform updates*.
 
 You can manage the distribution of updates through one of the following methods: 
 
@@ -66,7 +62,10 @@ You can manage the distribution of updates through one of the following methods:
 For more information, see [Manage the sources for Microsoft Defender Antivirus protection updates](/mem/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus).
 
 > [!NOTE]
-> Monthly updates are released in phases, resulting in multiple packages visible in your [Window Server Update Services](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus).
+> - Monthly updates are released in phases, resulting in multiple packages visible in your [Window Server Update Services](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus).
+> - This article lists changes that are included in the broad release channel. [See the latest broad channel release here](https://www.microsoft.com/security/encyclopedia/adlpackages.aspx?action=info). 
+> - To learn more about the gradual rollout process, and to see more information about the next release, see [Manage the gradual rollout process for Microsoft Defender updates](manage-gradual-rollout.md).
+> - To learn more about security intelligence updates, see [Security intelligence updates for Microsoft Defender Antivirus and other Microsoft antimalware](https://www.microsoft.com/wdsi/defenderupdates). 
 
 ## Monthly platform and engine versions
 
@@ -78,6 +77,24 @@ All our updates contain
 - integration improvements (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)).
 <br/>
 <details>
+<summary> June-2021 (Platform: 4.18.2106.5 | Engine: 1.1.18300.4)</summary>
+
+&ensp;Security intelligence update version: **1.343.17.0**  
+&ensp;Released: **June 28, 2021**  
+&ensp;Platform: **4.18.2106.5**  
+&ensp;Engine: **1.1.18300.4**  
+&ensp;Support phase: **Security and Critical Updates**
+    
+### What's new
+- New controls for managing the gradual rollout process of Microsoft Defender updates. See [Manage the gradual rollout process for Microsoft Defender updates](manage-gradual-rollout.md).
+- Improvement to the behavior monitoring engine
+- Improvements to the rollout of antimalware definitions
+- Extended Edge network event inspections
+
+### Known Issues
+No known issues  
+<br/>
+</details><details>
 <summary> May-2021 (Platform: 4.18.2105.4 | Engine: 1.1.18200.4)</summary>
 
 &ensp;Security intelligence update version: **1.341.8.0**  
@@ -104,19 +121,26 @@ No known issues
     
 ### What's new
 - Additional behavior monitoring logic
-- Improved kernel mode keylogger detection
+- Improved kernel mode key logger detection
+- Added new controls to manage the gradual rollout process for [Microsoft Defender updates](manage-gradual-rollout.md)
+
 
 ### Known Issues
 No known issues  
 <br/>
-</details><details>
+</details>
+
+### Previous version updates: Technical upgrade support only
+
+After a new package version is released, support for the previous two versions is reduced to technical support only. Versions older than that are listed in this section, and are provided for technical upgrade support only. 
+<details>
 <summary> March-2021 (Platform: 4.18.2103.7 | Engine: 1.1.18000.5)</summary>
 
 &ensp;Security intelligence update version: **1.335.36.0**  
 &ensp;Released: **April 2, 2021**  
 &ensp;Platform: **4.18.2103.7**  
 &ensp;Engine: **1.1.18000.5**  
-&ensp;Support phase: **Security and Critical Updates**
+&ensp;Support phase: **Technical upgrade support (only)**
     
 ### What's new
 
@@ -127,13 +151,7 @@ No known issues
 ### Known Issues
 No known issues  
 <br/>
-</details>
-
-### Previous version updates: Technical upgrade support only
-
-After a new package version is released, support for the previous two versions is reduced to technical support only. Versions older than that are listed in this section, and are provided for technical upgrade support only. 
-<br/><br/>
-<details>
+</details><details>
 <summary> February-2021 (Platform: 4.18.2102.3 | Engine: 1.1.17900.7)</summary>
 
 &ensp;Security intelligence update version: **1.333.7.0**  
