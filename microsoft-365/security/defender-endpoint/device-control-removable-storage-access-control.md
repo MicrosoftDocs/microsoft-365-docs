@@ -60,12 +60,10 @@ You can use the following properties to create a removable storage group:
 
 **Property name: DescriptorIdList**
 
-1. Description: List the device properties you want to use to cover in the group.
-List the device properties you want to use to cover in the group.
+2. Description: List the device properties you want to use to cover in the group.
 For each device property, see **Device Properties** section above for more detail.
 
-2. Options:
-
+3. Options:
     - PrimaryId
         - RemovableMediaDevices
         - CdRomDevices
@@ -323,6 +321,7 @@ DeviceEvents
 :::image type="content" source="images/block-removable-storage.png" alt-text="The screen depicting the blockage of the removable storage":::
 
 ## Frequently asked questions
+
 **What is the removable storage media limitation for the maximum number of USBs?**
 
 We have validated one USB group with 100,000 media - up to 7 MB in size. The policy works in both Intune and GPO without performance issues.

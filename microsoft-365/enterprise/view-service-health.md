@@ -90,14 +90,14 @@ The advisory or incident summary provides the following information:
 - **Last updated** - The last time that the service health message was updated.
 - **Estimated Start time** - The estimated time when the issue started.
 - **Status** - How this problem affects the service.
-- **User Impact** - A brief descritpion of the impact this issue has on the end user.
+- **User Impact** - A brief description of the impact this issue has on the end user.
 - **All Updates** - We post frequent messages to let you know the progress that we're making in applying a solution.
 
 ![A screenshot showing issue details](../media/service-health-advisory-detail.png)
 
 ### Translate service health details
 
-We use machine translation to automatically display messages in your preferred language. Read [Language translation for Message center posts](language-translation-for-message-center-posts.md) for more information on how to set your language.
+We use machine translation to automatically display messages in your preferred language. Read [Language translation for Message center posts](/microsoft-365/admin/manage/language-translation-for-message-center-posts) for more information on how to set your language.
 
 ### Definitions
 
