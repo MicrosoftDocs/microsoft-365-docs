@@ -47,7 +47,7 @@ Communications are scanned every 24 hours from the time policies are created. Fo
 
 ## Pausing a policy (preview)
 
-After you've created a communication compliance policy, the policy may be temporarily paused if needed. Pausing a policy may be used for testing or troubleshooting policy matches, or for optimizing policy conditions. Instead of deleting a policy in these circumstances, pausing a policy also preserves existing policy alerts and messages for ongoing investigations and reviews. Pausing a policy prevents inspect and alert generation for all user message conditions defined in the policy for the time the policy is paused. To pause or restart a policy, users must be a member of the *Communication Compliance Admin* role group.
+After you've created a communication compliance policy, the policy may be temporarily paused if needed. Pausing a policy may be used for testing or troubleshooting policy matches, or for optimizing policy conditions. Instead of deleting a policy in these circumstances, pausing a policy also preserves existing policy alerts and messages for ongoing investigations and reviews. Pausing a policy prevents inspection and alert generation for all user message conditions defined in the policy for the time the policy is paused. To pause or restart a policy, users must be a member of the *Communication Compliance Admin* role group.
 
 To pause a policy, navigate to the **Policy** page, select a policy, and then select **Pause policy** from the actions toolbar. On the **Pause policy** pane, confirm you'd like to pause the policy by selecting **Pause**. In some cases, it may take up to 24 hours for a policy to be paused. Once the policy is paused, alerts for messages matching the policy aren't created. However, messages associated with alerts that were created prior to pausing the policy remain available for investigation, review, and remediation.
 
@@ -183,12 +183,13 @@ Built-in trainable and global classifiers scan sent or received messages across 
 
 Communication compliance built-in trainable and global classifiers scan communications for terms, images, and sentiment for the following types of language and content:
 
-- **Threat**: Scans for threats to commit violence or physical harm to a person or property.
-- **Targeted harassment**: Scans for offensive conduct targeting people regarding race, color, religion, national origin.
-- **Profanity**: Scans for profane expressions that embarrass most people.
 - **Adult images**: Scans for images that are sexually explicit in nature.
-- **Racy images**: Scans for images that are sexually suggestive in nature, but contain less explicit content than images deemed Adult.
+- **Discrimination (preview)**: Scans for explicit discriminatory language and is particularly sensitive to discriminatory language against the African American/Black communities when compared to other communities.
 - **Gory images**: Scans for images that depict violence and gore.
+- **Profanity**: Scans for profane expressions that embarrass most people.
+- **Racy images**: Scans for images that are sexually suggestive in nature, but contain less explicit content than images deemed Adult.
+- **Targeted harassment**: Scans for offensive conduct targeting people regarding race, color, religion, national origin.
+- **Threat**: Scans for threats to commit violence or physical harm to a person or property.
 
 The *Adult*, *Racy*, and *Gory* image classifiers scan files in .jpeg, .png, .gif, and .bmp formats. The size for image files must be less than 4 megabytes (MB) and the dimensions of the images must be greater than 50x50 pixels and greater than 50 kilobytes (KB) for the image to qualify for evaluation. Image identification is supported for Exchange Online email messages and Microsoft Teams channels and chats.
 
@@ -548,7 +549,7 @@ This example returns activities that match your current communication compliance
 Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -Operations SupervisionRuleMatch
 ```
 
-Communication compliance policy matches are stored in a supervision mailbox for each policy. In some cases, you may need to check the size of your supervision mailbox for a policy to make sure you aren't approaching the current 50 GB limit. If the mailbox limit is reached, policy matches aren't captured and you'll need to create a new policy (with the same settings) to continue to capture matches for the same activities.
+Communication compliance policy matches are stored in a supervision mailbox for each policy. In some cases, you may need to check the size of your supervision mailbox for a policy to make sure you aren't approaching the current 50-GB limit. If the mailbox limit is reached, policy matches aren't captured and you'll need to create a new policy (with the same settings) to continue to capture matches for the same activities.
 
 To check the size of a supervision mailbox for a policy, complete the following steps:
 
