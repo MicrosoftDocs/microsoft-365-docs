@@ -28,7 +28,7 @@ ms.technology: mde
 
 >Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink) 
 
-Enable security information and event management (SIEM) integration so you can pull detections from Microsoft Defender Security Center. Pull detections using your SIEM solution or by connecting directly to the detections REST API.
+Enable security information and event management (SIEM) integration so you can pull detections from Microsoft 365 Defender portal. Pull detections using your SIEM solution or by connecting directly to the detections REST API.
 
 >[!NOTE]
 >- [Microsoft Defender for Endpoint Alert](alerts.md) is composed from one or more detections.
@@ -47,7 +47,7 @@ Enable security information and event management (SIEM) integration so you can p
 - During the initial activation, a pop-up screen is displayed for credentials to be entered. Make sure that you allow pop-ups for this site.
 
 ## Enabling SIEM integration 
-1. In the navigation pane, select **Settings** > **SIEM**.
+1. In the navigation pane, select **Settings** > **Endpoints** > **APIs** > **SIEM**.
 
     ![Image of SIEM integration from Settings menu1](images/enable_siem.png)
 
@@ -80,7 +80,7 @@ Enable security information and event management (SIEM) integration so you can p
 
 6. Follow the instructions for [creating an Azure AD app registration for Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/exposed-apis-create-app-webapp) and assign the correct permissions to it to read alerts.
 
-You can now proceed with configuring your SIEM solution or connecting to the detections REST API through programmatic access. You'll need to use the tokens when configuring your SIEM solution to allow it to receive detections from Microsoft Defender Security Center.
+You can now proceed with configuring your SIEM solution or connecting to the detections REST API through programmatic access. You'll need to use the tokens when configuring your SIEM solution to allow it to receive detections from Microsoft 365 Defender portal.
 
 ## Integrate Microsoft Defender for Endpoint with IBM QRadar 
 You can configure IBM QRadar to collect detections from Microsoft Defender for Endpoint. For more information, see [IBM Knowledge Center](https://www.ibm.com/support/knowledgecenter/SS42VS_DSM/c_dsm_guide_MS_Win_Defender_ATP_overview.html?cp=SS42VS_7.3.1).

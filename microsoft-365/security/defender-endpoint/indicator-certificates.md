@@ -57,11 +57,11 @@ It's important to understand the following requirements prior to creating indica
 >[!IMPORTANT]
 > It can take up to 3 hours to create and remove a certificate IoC.
 
-1. In the navigation pane, select **Settings** > **Indicators**.  
+1. In the navigation pane, select **Settings** > **Endpoints** > **Rules** > **Indicators**.  
 
-2. Select the **Certificate** tab.
+2. Select the **Certificates** tab.
 
-3. Select **Add indicator**.
+3. Select **Add item**.
 
 4. Specify the following details:
    - Indicator - Specify the entity details and define the expiration of the indicator.

@@ -32,7 +32,7 @@ ms.technology: mde
 >Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
 
 
-1. In the navigation pane, select **Settings** > **Indicators**.
+1. In the navigation pane, select **Settings** > **Endpoints** > **Rules** > **Indicators**.
 
 2. Select the tab of the entity type you'd like to manage.  
 
@@ -44,7 +44,7 @@ You can also choose to upload a CSV file that defines the attributes of indicato
 
 Download the sample CSV to know the supported column attributes.
 
-1. In the navigation pane, select **Settings** > **Indicators**.
+1. In the navigation pane, select **Settings** > **Endpoints** > **Rules** > **Indicators**.
 
 2. Select the tab of the entity type you'd like to import indicators for.
 
