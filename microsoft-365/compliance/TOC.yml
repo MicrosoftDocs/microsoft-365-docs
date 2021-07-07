@@ -54,8 +54,8 @@
           href: insider-risk-management-settings.md
         - name: Create and manage insider risk policies
           href: insider-risk-management-policies.md
-        - name: Investigate insider risk alerts
-          href: insider-risk-management-alerts.md
+        - name: Investigate insider risk activities
+          href: insider-risk-management-activities.md
         - name: Take action on insider risk cases
           href: insider-risk-management-cases.md
         - name: Review activities with the insider risk audit log
