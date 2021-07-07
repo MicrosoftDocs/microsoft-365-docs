@@ -8,13 +8,14 @@ manager: rshastri
 audience: Software-Vendor
 ms.topic: troubleshooting
 ms.date: 07/06/2021
-ms.prod: ms.prod
+ms.service: virtual-desktop
 localization_priority: Normal
 ms.collection: TestBase-M365
 ms.custom:                 # This is an optional, free-form field you can use to define your own collection of articles. If you have more than one value, format as a bulleted list. This field truncates to something like 144 characters (inclusive of spaces) so keep it short.
 ms.reviewer: mapatel
 f1.keywords: NOCSH
 ---
+
 # Step 2: Uploading a Package
 
 On the Test Base portal page, navigate to the ‘Upload new package option on the left navigation bar as shown below:
@@ -22,7 +23,7 @@ On the Test Base portal page, navigate to the ‘Upload new package option on th
 
 Once there, follow the steps below to upload a new package.
 
-### Step 1: Fill out your package's details
+## Enter details for your package
 
 On the Test details tab, type in your package's name, version and other details as requested. 
 
