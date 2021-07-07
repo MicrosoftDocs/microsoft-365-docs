@@ -78,7 +78,7 @@
 #### [Microsoft Defender for Endpoint on macOS]()
 ##### [Overview of Microsoft Defender for Endpoint on macOS](microsoft-defender-endpoint-mac.md)
 ##### [What's New](mac-whatsnew.md)
- 
+
 ##### [Deploy]()
 ###### [Microsoft Intune-based deployment](mac-install-with-intune.md)
 ###### [JAMF Pro-based deployment]()
@@ -87,11 +87,11 @@
 ####### [Set up device groups](mac-jamfpro-device-groups.md)
 ####### [Set up policies](mac-jamfpro-policies.md)
 ####### [Enroll devices](mac-jamfpro-enroll-devices.md)
- 
+
 ###### [Deployment with a different Mobile Device Management (MDM) system](mac-install-with-other-mdm.md)
 ###### [Manual deployment](mac-install-manually.md)
 ##### [Update](mac-updates.md)
- 
+
 ##### [Configure]()
 ###### [Configure and validate exclusions](mac-exclusions.md)
 ###### [Set preferences](mac-preferences.md)
@@ -101,14 +101,14 @@
 ####### [JAMF examples](mac-device-control-jamf.md)
 ####### [Intune examples](mac-device-control-intune.md)
 ###### [Schedule scans](mac-schedule-scan.md)
- 
+
 ##### [Troubleshoot]()
 ###### [Troubleshoot installation issues](mac-support-install.md)
 ###### [Troubleshoot performance issues](mac-support-perf.md)
 ###### [Troubleshoot cloud connectivity](troubleshoot-cloud-connect-mdemac.md)
 ###### [Troubleshoot kernel extension issues](mac-support-kext.md)
 ###### [Troubleshoot license issues](mac-support-license.md)
- 
+
 ##### [Privacy](mac-privacy.md)
 ##### [Resources](mac-resources.md)
 
@@ -116,10 +116,10 @@
 #### [Microsoft Defender for Endpoint on iOS]()
 ##### [Overview of Microsoft Defender for Endpoint on iOS](microsoft-defender-endpoint-ios.md)
 ##### [What's New](ios-whatsnew.md)
- 
+
 ##### [Deploy]()
 ###### [Deploy Microsoft Defender for Endpoint on iOS via Intune](ios-install.md)
- 
+
 ##### [Configure]()
 ###### [Configure iOS features](ios-configure-features.md)
 
@@ -127,8 +127,8 @@
 ###### [FAQs and Troubleshoot issues](ios-troubleshoot.md)
 
 ##### [Privacy](ios-privacy.md)
- 
- 
+
+
 #### [Microsoft Defender for Endpoint on Linux]()
 ##### [Overview of Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
 ##### [What's New](linux-whatsnew.md)
@@ -139,7 +139,7 @@
 ###### [Deploy Defender for Endpoint on Linux with Chef](linux-deploy-defender-for-endpoint-with-chef.md)
 
 ##### [Update](linux-updates.md)
- 
+
 ##### [Configure]()
 ###### [Configure and validate exclusions](linux-exclusions.md)
 ###### [Static proxy configuration](linux-static-proxy-configuration.md)
@@ -148,29 +148,29 @@
 ###### [Schedule scans with Microsoft Defender for Endpoint on Linux](linux-schedule-scan-atp.md)
 ###### [Schedule an update of the Microsoft Defender for Endpoint (Linux)](linux-update-MDE-Linux.md)
 
- 
+
 ##### [Troubleshoot]()
 ###### [Troubleshoot installation issues](linux-support-install.md)
 ###### [Investigate agent health issues](health-status.md)
 ###### [Troubleshoot cloud connectivity issues](linux-support-connectivity.md)
 ###### [Troubleshoot performance issues](linux-support-perf.md)
 ###### [Troubleshoot missing events issues](linux-support-events.md)
- 
+
 ##### [Privacy](linux-privacy.md)
 ##### [Resources](linux-resources.md)
- 
+
 #### [Microsoft Defender for Endpoint on Android]()
 ##### [Overview of Microsoft Defender for Endpoint on Android](microsoft-defender-endpoint-android.md)
- 
+
 ##### [Deploy]()
 ###### [Deploy Microsoft Defender for Endpoint on Android with Microsoft Intune](android-intune.md)
- 
+
 ##### [Configure]()
 ###### [Configure Microsoft Defender for Endpoint on Android features](android-configure.md)
- 
+
 ##### [Privacy]()
 ###### [Microsoft Defender for Endpoint on Android - Privacy information](android-privacy.md)
- 
+
 ##### [Troubleshoot]()
 ###### [Troubleshoot issues](android-support-signin.md)
 
@@ -258,7 +258,8 @@
 #### [Use audit mode for attack surface reduction](audit-windows-defender.md)
 
 ### Next-generation protection
-#### [Overview of Microsoft Defender Antivirus](microsoft-defender-antivirus-in-windows-10.md)
+#### [Next-generation protection overview](next-generation-protection.md)
+##### [Overview of Microsoft Defender Antivirus](microsoft-defender-antivirus-windows.md)
 ##### [Microsoft Defender Antivirus on Windows Server](microsoft-defender-antivirus-on-windows-server.md)
 ##### [Better together: Microsoft Defender Antivirus and Microsoft Defender for Endpoint](why-use-microsoft-defender-antivirus.md)
 ##### [Better together: Microsoft Defender Antivirus and Office 365](office-365-microsoft-defender-antivirus.md)
@@ -333,13 +334,13 @@
 ##### [Enable exploit protection](enable-exploit-protection.md)
 ##### [Customize exploit protection](customize-exploit-protection.md)
 ##### [Import, export, and deploy exploit protection configurations](import-export-exploit-protection-emet-xml.md)
-##### [Exploit protection reference](exploit-protection-reference.md )
+##### [Exploit protection reference](exploit-protection-reference.md)
 
 #### [Network protection]()
 ##### [Protect your network](network-protection.md)
 ##### [Evaluate network protection](evaluate-network-protection.md)
 ##### [Turn on network protection](enable-network-protection.md)
- 
+
 #### [Web protection]()
 ##### [Web protection overview](web-protection-overview.md)
 ##### [Web threat protection]()
@@ -347,7 +348,7 @@
 ###### [Monitor web security](web-protection-monitoring.md)
 ###### [Respond to web threats](web-protection-response.md)
 ##### [Web content filtering](web-content-filtering.md)
- 
+
 #### [Controlled folder access]()
 ##### [Protect folders](controlled-folders.md)
 ##### [Evaluate controlled folder access](evaluate-controlled-folder-access.md)
@@ -383,7 +384,7 @@
 ##### [View and organize the Incidents queue](view-incidents-queue.md)
 ##### [Manage incidents](manage-incidents.md)
 ##### [Investigate incidents](investigate-incidents.md)
- 
+
 #### [Alerts queue]()
 ##### [View and organize the Alerts queue](alerts-queue.md)
 ##### [Review alerts](review-alerts.md)
@@ -395,12 +396,12 @@
 ##### [Investigate a domain](investigate-domain.md)
 ###### [Investigate connection events that occur behind forward proxies](investigate-behind-proxy.md)
 ##### [Investigate a user account](investigate-user.md)
- 
+
 #### [Devices list]()
 ##### [View and organize the Devices list](machines-view-overview.md)
 ##### [Device timeline event flags](device-timeline-event-flag.md)
 ##### [Manage device group and tags](machine-tags.md)
- 
+
 #### [Take response actions]()
 ##### [Take response actions on a device]()
 ###### [Response actions on devices](respond-machine-alerts.md)
@@ -559,7 +560,7 @@
 ####### [Restrict app execution](restrict-code-execution.md)
 ####### [Remove app restriction](unrestrict-code-execution.md)
 ####### [Run antivirus scan](run-av-scan.md)
-####### [Run live response](run-live-response.md) 
+####### [Run live response](run-live-response.md)
 ####### [Offboard machine](offboard-machine-api.md)
 ####### [Stop and quarantine file](stop-and-quarantine-file.md)
 ####### [Cancel machine action](cancel-machine-action.md)
@@ -673,7 +674,7 @@
 ##### [Inactive devices](fix-unhealthy-sensors.md#inactive-devices)
 ##### [Misconfigured devices](fix-unhealthy-sensors.md#misconfigured-devices)
 ##### [Review sensor events and errors on machines with Event Viewer](event-error-codes.md)
-  
+
 #### [Troubleshoot Microsoft Defender for Endpoint service issues]()
 ##### [Troubleshoot service issues](troubleshoot-mdatp.md)
 ##### [Check service health](service-status.md)
@@ -681,8 +682,8 @@
 
 #### [Troubleshoot live response issues](troubleshoot-live-response.md)
 
-#### [Collect support logs using LiveAnalyzer ](troubleshoot-collect-support-log.md)
- 
+#### [Collect support logs using LiveAnalyzer](troubleshoot-collect-support-log.md)
+
 #### [Troubleshoot attack surface reduction issues]()
 ##### [Network protection](troubleshoot-np.md)
 ##### [Attack surface reduction rules](troubleshoot-asr.md)
@@ -690,4 +691,4 @@
 
 # [Microsoft 365 Defender](../defender/index.yml)
 # [Defender for Office 365](../office-365-security/index.yml)
-# [Defender for Identity](https://docs.microsoft.com/defender-for-identity/)
+# [Defender for Identity](/defender-for-identity/)

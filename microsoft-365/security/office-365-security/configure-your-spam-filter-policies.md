@@ -136,7 +136,7 @@ Creating a custom anti-spam policy in the Microsoft 365 Defender portal creates 
 
      The available actions for spam filtering verdicts are described in the following table.
 
-     - A check mark ( ![Check mark](../../media/checkmark.png)) indicates the action is available (not all actions are available for all verdicts).
+     - A check mark ( ![Check mark](../../media/checkmark.png) ) indicates the action is available (not all actions are available for all verdicts).
      - An asterisk ( <sup>\*</sup> ) after the check mark indicates the default action for the spam filtering verdict.
 
      <br>
