@@ -48,8 +48,8 @@ Learn more about how to use and implement Viva Topics in your organization to he
 
 | If you're looking for this information: | Go to this resource: |
 |:-----|:-----|
-|Learn how to start planning to use Viva Topics. |[Get started](topics-adoption-getstarted.md)|  
-|Set up and run a trial pilot program for Viva Topics. |[Run a trial](trial-topics.md)|
+|Learn how to start planning to use Viva Topics |[Get started](topics-adoption-getstarted.md)|  
+|Set up and run a trial pilot program for Viva Topics |[Run a trial](trial-topics.md)|
 
 ## Set up and administration
 
