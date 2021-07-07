@@ -93,6 +93,21 @@ Outlook releases and updates:
 
 ## June 2021
 
+### Auditing
+
+- [Auditing solutions in Microsoft 365](auditing-solutions-overview.md) (new solutions topic that introduces and describes Basic Audit and Advanced Audit, and compares the key capabilities of each tool; includes licensing requirements, an overview of setting up each tool, and available training)
+
+### Data connectors
+
+- [Archive third-party data in Microsoft 365](archiving-third-party-data.md) (Microsoft has released [17 new data connectors in partnership with 17a-4 LLC](archiving-third-party-data#17a-4-data-connectors.md) and [one new connector in partnership with CellTrust](archiving-third-party-data.md?view=o365-worldwide#celltrust-data-connectors). We have also released additional data connectors in partnership with Veritas and [TeleMessage](archiving-third-party-data.md#telemessage-data-connectors). To date, this makes a total of 65 available data connectors to import and archive third-party data to Microsoft 365)
+
+
+### eDiscovery
+
+- [eDiscovery solutions in Microsoft 365](ediscovery.md) (new solutions topic that introduces the three Microsoft eDiscovery tools--Content search, Core eDiscovery, and Advanced eDiscovery--and compares the key capabilities of each tool; also includes licensing requirements and available training)
+
+- [Learn about predictive coding in Advanced eDiscovery](predictive-coding-overview.md) (the new predictive coding module in Advanced eDiscovery helps you reduce and cull large volumes of case content to a relevant set of items that you can prioritize for review; this is accomplished by creating and training your own predictive coding models that apply a prediction score to every document in a review set to help you prioritize the review of the most relevant items; new documentation also includes a [quick start guide](predictive-coding-quick-start.md))
+
 ### Sensitivity labels
 
 - The sensitivity label policy wizard now supports [Outlook-specific options for default label and mandatory labeling](sensitivity-labels-office-apps.md#outlook-specific-options-for-default-label-and-mandatory-labeling) as an easier configuration than the (still supported) PowerShell advanced settings.
