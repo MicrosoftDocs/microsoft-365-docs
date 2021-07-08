@@ -1,7 +1,7 @@
 ---
 title: "Microsoft Privacy management (preview)"
 f1.keywords:
-- NOCSH
+- CSH
 ms.author: v-jgriffee
 author: jmgriffee
 manager: laurawi
@@ -19,3 +19,23 @@ description: "Microsoft privacy management offers solutions for evaluating perso
 ---
 
 # Microsoft privacy management (preview)
+
+## What is privacy management
+
+## Risk management
+
+### Understand your data
+
+### Manage risk scenarios
+
+## Manage subject rights requests
+
+## How we evaluate your data
+
+### What privacy management evaluates
+
+### Where privacy management identifies personal data
+
+### Additional resources
+
+## Next steps

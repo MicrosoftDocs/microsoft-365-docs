@@ -19,3 +19,63 @@ description: "Learn about the overview and data profile in privacy management an
 ---
 
 # Find and visualize personal data in privacy management (preview)
+
+## Purpose of the overview and data profile
+
+### Overview page
+
+### Data profile page
+
+## Explore the overview page
+
+### Top tiles
+
+#### Policy matches over past 7 days
+
+#### Items with personal data
+
+#### Subject rights requests
+
+### Key insights
+
+#### Content items with the most personal data
+
+#### Policies with the most matches in the last week
+
+#### Users with the most policy matches in the last week
+
+#### Items with the most data subject content
+
+### Trendline graphs
+
+#### Active policy alerts
+
+#### Personal data found in organization
+
+#### Data transfers detected in organization
+
+#### Unused personal data
+
+#### Overexposed personal data
+
+#### Subject rights requests by regulation
+
+#### Subject rights requests by statu
+
+### Additional data views
+
+#### Subject rights requests at a glance
+
+#### Subject rights requests by residency
+
+## Explore the data profile page
+
+### Personal data type instances detected in Microsoft 365
+
+### Top personal data types across your organization
+
+### Personal data by region
+
+### Exploring content
+
+

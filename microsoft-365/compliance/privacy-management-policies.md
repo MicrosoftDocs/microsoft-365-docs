@@ -19,3 +19,41 @@ description: "Learn how to create and manage policies for handling your organiza
 ---
 
 # Create and manage policies in privacy management (preview)
+
+## Purpose of policies
+
+## Policy types
+
+### Data overexposure
+
+### Data transfer
+
+### Data minimization
+
+## Create a privacy management policy
+
+### Create a policy from a template
+
+### Create custom policy
+
+#### Choose data monitoring options
+
+#### Test your policy
+
+#### Set user email notifications
+
+## View policy details
+
+## Resolve policy alerts and issues
+
+### Alerts
+
+### Issues
+
+#### Issue overview
+
+#### Share the issue
+
+#### Review content and remediate
+
+## Delete a policy

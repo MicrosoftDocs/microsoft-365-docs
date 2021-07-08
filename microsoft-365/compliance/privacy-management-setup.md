@@ -19,3 +19,31 @@ description: "Learn how to set up privacy management for your organization, set 
 ---
 
 # Get started with privacy management (preview)
+
+## Sign up
+
+## Set user permissions and assign roles
+
+### In the Microsoft 365 compliance center
+
+### Learn about role groups and roles
+
+## Configure settings
+
+### Anonymization
+
+### User notification emails
+
+### Teams collaboration
+
+### Power Automate flows
+
+### Data matching
+
+### Data retention periods
+
+### Data review tags
+
+## Get started with policies
+
+## Get data insights
