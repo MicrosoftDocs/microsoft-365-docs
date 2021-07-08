@@ -246,7 +246,7 @@ You have to use [PSPing](/sysinternals/downloads/psping) or another tool that do
     
 2. Navigate to the folder where the tool (in this case PsPing) is installed and test these Office 365 URLs:
     
-  - psping portal.office.com:443
+  - psping admin.microsoft.com:443
     
   - psping microsoft-my.sharepoint.com:443
     
