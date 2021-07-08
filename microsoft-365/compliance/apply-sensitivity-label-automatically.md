@@ -408,6 +408,9 @@ The new preview version of auto-labeling policies for OneDrive and SharePoint ha
     - Additional metadata information for the sampled matched items.
     - Ability to export information about the matched items, such as the SharePoint site name and file owner. You can use this information to pivot and analyze the matched files, and delegate to file owners for review if needed.
 
+> [!TIP]
+> To take advantage of the higher number of policies and sites supported, use PowerShell to efficiently create new policies and add additional sites. For more information, see the [Use PowerShell for auto-labeling policies](#use-powerShell-for-auto-labeling-policies) section on this page.
+
 ### How to opt in to the new preview
 
 To opt in to this preview, use the request form for [Auto-labelling V2 Preview for OneDrive and SharePoint online files](https://aka.ms/AutoLabelV2-Preview]). Wait a few days and confirm your tenant has been enabled for the preview when you see **(Preview)** added to the **Auto-labeling** tab in the Microsoft 365 compliance center.
