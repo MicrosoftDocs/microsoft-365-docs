@@ -63,6 +63,8 @@ Teams Multi-Geo is seamless to the end user. Once you change the PDL of a user o
 
 ## See also
 
+[Microsoft 365 Multi-Geo tenant configuration](/microsoft-365/enterprise/multi-geo-tenant-configuration)
+
 [Administering a multi-geo environment](administering-a-multi-geo-environment.md)
 
 [Administering Exchange Online mailboxes in a multi-geo environment](administering-exchange-online-multi-geo.md)
