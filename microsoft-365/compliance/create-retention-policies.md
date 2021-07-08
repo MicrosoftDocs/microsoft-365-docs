@@ -70,7 +70,7 @@ When you have more than one retention policy, and when you also use retention la
     - **Teams chats**: Messages from private 1:1 chats, group chats, and meeting chats.
     - **Teams private channel messages**: Messages from private channel chats and private channel meetings. This option is currently rolling out in preview and if you don't see it displayed, try again in a few days.
     
-   By default, [all teams and all users are selected](#a-policy-that-applies-to-entire-locations), but you can refine this by selecting the [**Choose** and **Exclude** options](#a-policy-with-specific-inclusions-or-exclusions). However, before you change the default, be aware of the following consequences for a retention policy that deletes messages when it's configured for includes or excludes:
+   By default, [all teams and all users are selected](#a-policy-that-applies-to-entire-locations), but you can refine this by selecting the **Edit** options to configure a retention policy for [specific inclusions or exclusions](#a-policy-with-specific-inclusions-or-exclusions). However, before you change the default, be aware of the following consequences for a retention policy that deletes messages when it's configured for includes or excludes:
     
     - For group chat messages and private channel messages, because a copy of messages are saved in each user's mailbox who are included in the chat, copies of messages will continue to be returned in eDiscovery results from users who weren't assigned the policy.
     - For users who weren't assigned the policy, deleted messages will be returned in their Teams search results but won't display the contents of the message as a result of the permanent deletion from the policy assigned to users.
@@ -89,9 +89,9 @@ For technical details about how retention works for Teams, including what elemen
 
 - Although you can select the option to start the retention period when items were last modified, the value of **When items were created** is always used. For messages that are edited, a copy of the original message is saved with its original timestamp to identify when this pre-edited message was created, and the post-edited message has a newer timestamp.
 
-- When you select **Choose teams** for the **Teams channel messages** location, you might see Microsoft 365 groups that aren't also teams. Don't select these groups.
+- When you select **Edit** for the **Teams channel messages** location, you might see Microsoft 365 groups that aren't also teams. Don't select these groups.
 
-- When you select **Choose users for the Teams chats** location, you might see guests and non-mailbox users. Retention policies aren't designed for these users, so don't select them.
+- When you select **Edit** for the Teams chats location, you might see guests and non-mailbox users. Retention policies aren't designed for these users, so don't select them.
 
 
 #### Additional retention policy needed to support Teams
@@ -120,17 +120,17 @@ It's possible that a retention policy that's applied to Microsoft 365 groups, Sh
 
 2. Select **New retention policy** to create a new retention policy.
 
-3. For **Decide if you want to retain content, delete it, or both** page of the wizard, specify the configuration options for retaining and deleting content. 
-    
-    You can create a retention policy that just retains content without deleting, retains and then deletes after a specified period of time, or just deletes content after a specified period of time. For more information, see [Settings for retaining and deleting content](#settings-for-retaining-and-deleting-content) on this page.
-
-4. For the **Choose locations** page, select **Let me choose specific locations**. Then toggle on one or both of the locations for Yammer: **Yammer community message** and **Yammer user messages**.
+3. For the **Choose locations to apply the policy** page, toggle on one or both of the locations for Yammer: **Yammer community message** and **Yammer user messages**.
     
     By default, all communities and users are selected, but you can refine this by specifying communities and users to be included or excluded.
     
     For Yammer user messages: 
     - If you leave the default at **All**, Azure B2B guest users are not included. 
-    - If you select **Choose user**, you can apply a retention policy to external users if you know their account.
+    - If you select **Edit** for the **Included** column, you can apply a retention policy to external users if you know their account.
+
+4. For **Decide if you want to retain content, delete it, or both** page of the wizard, specify the configuration options for retaining and deleting content. 
+    
+    You can create a retention policy that just retains content without deleting, retains and then deletes after a specified period of time, or just deletes content after a specified period of time. For more information, see [Settings for retaining and deleting content](#settings-for-retaining-and-deleting-content) on this page.
 
 5. Complete the wizard to save your settings.
 
@@ -162,7 +162,7 @@ Use the following instructions for retention policies that apply to any of these
 
 2. Select **New retention policy** to start the Create retention policy wizard, and name your new retention policy.
 
-3. For the **Choose locations** page, toggle on or off any of the locations except the locations for Teams. For each location, you can leave it at the default to [apply the policy to the entire location](#a-policy-that-applies-to-entire-locations), or [specify includes and excludes](#a-policy-with-specific-inclusions-or-exclusions).
+3. For the **Choose locations to apply the policy** page, toggle on or off any of the locations except the locations for Teams. For each location, you can leave it at the default to [apply the policy to the entire location](#a-policy-that-applies-to-entire-locations), or [specify includes and excludes](#a-policy-with-specific-inclusions-or-exclusions).
 
     Information specific to locations:
     - [Exchange email and Exchange public folders](#configuration-information-for-exchange-email-and-exchange-public-folders)
