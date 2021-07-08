@@ -128,7 +128,7 @@ If Microsoft Defender Antivirus is running in active mode or passive mode, EDR i
 - Windows Server 2012 R2
 
 >[!NOTE]
->Windows Server 2016 and Windows Server 2012 R2 will need to be onboarded using the instructions in [Onboard Windows servers](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016) for this feature to work. 
+>Windows Server 2016 and Windows Server 2012 R2 will need to be onboarded using the instructions in [Onboard Windows servers](configure-server-endpoints.md) for this feature to work. 
 
 
 ## See also
