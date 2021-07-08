@@ -21,7 +21,7 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 # Overview of Microsoft 365 Lighthouse
 
 > [!NOTE]
-> The features described in this article are in Preview, are subject to change, and are only available to partners who meet the [requirements](requirements-for-m365-lighthouse.md). If your organization does not have Microsoft 365 Lighthouse, see [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
+> The features described in this article are in Preview, are subject to change, and are only available to partners who meet the [requirements](m365-lighthouse-requirements.md). If your organization does not have Microsoft 365 Lighthouse, see [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
 
 Microsoft 365 Lighthouse is an admin portal that helps Managed Service Providers (MSPs) secure and manage devices, data, and users at scale for small- and medium-sized business (SMB) customers who are using Microsoft 365 Business Premium. 
 
