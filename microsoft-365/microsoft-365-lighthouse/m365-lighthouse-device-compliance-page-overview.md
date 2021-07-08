@@ -53,5 +53,5 @@ The settings tab provides an aggregated report of non-compliant settings across 
 
 ## Related content
 
-Microsoft 365 Lighthouse Users page overview (article)\
+[Microsoft 365 Lighthouse Users page overview](m365-lighthouse-users-page-overview.md) (article)\
 [Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)
