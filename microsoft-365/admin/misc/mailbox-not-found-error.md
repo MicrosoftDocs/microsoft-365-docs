@@ -26,7 +26,7 @@ If you're using Outlook on the web and you get a  **Mailbox couldn't be found fo
 
 Your admin can assign a license to your account by following these steps:
 
-1. Open the  [Microsoft 365 admin center](https://portal.office.com/adminportal/home#/homepage)  and go to  **Active users**  under the  **Users**  section, and select the user who is seeing the error.
+1. Open the  [Microsoft 365 admin center](https://admin.microsoft.com/adminportal/home#/homepage)  and go to  **Active users**  under the  **Users**  section, and select the user who is seeing the error.
 1. In the user page that opens, go to the  **Licenses and Apps**  section, select the appropriate  **Location**  value, and assign a license that contains Exchange Online (expand the license to see its details). 
 1. When you're finished, click  **Save changes**.
 
