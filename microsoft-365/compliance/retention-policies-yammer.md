@@ -44,7 +44,7 @@ Reactions from others in the form of emoticons are not included in these message
 
 You can use a retention policy to retain and delete community messages and user messages in Yammer. User messages are stored in a hidden folder in the mailbox of each user included in the message, and community messages are stored in a similar hidden folder in the group mailbox for the community.
 
-Yammer messages are not affected by retention policies that are configured for user or group mailboxes. Even though Yammer messages are stored in Exchange, this Yammer data is included only by a retention policy that's configured for the **Yammer community messages** and **Yammer user messages** locations.
+Yammer messages are not affected by retention policies that are configured for Exchange mailboxes. Even though Yammer messages are stored in Exchange, this Yammer data is included only by a retention policy that's configured for the **Yammer community messages** and **Yammer user messages** locations.
 
 > [!NOTE]
 > If a user is included in an active retention policy that retains Yammer data and you a delete a mailbox of a user who is included in this policy, to retain the Yammer data, the mailbox is converted into an [inactive mailbox](inactive-mailboxes-in-office-365.md). If you don't need to retain this Yammer data for the user, exclude the user account from the retention policy before you delete their mailbox.
