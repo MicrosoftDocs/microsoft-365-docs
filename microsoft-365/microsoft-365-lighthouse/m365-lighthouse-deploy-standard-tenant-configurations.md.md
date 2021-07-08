@@ -32,72 +32,16 @@ Microsoft 365 Lighthouse’s standard Baseline configurations for security workl
 
 The following Baseline configurations come standard with the Microsoft 365 Lighthouse Default Baseline:<br><br>
 
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 66%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><blockquote>
-<p><strong>Baseline Configuration </strong></p>
-</blockquote></th>
-<th><blockquote>
-<p><strong>Description </strong></p>
-</blockquote></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><blockquote>
-<p>Require MFA for admins </p>
-</blockquote></td>
-<td><blockquote>
-<p>A report-only Conditional Access policy requiring multifactor authentication for admins. It is required for all cloud applications. </p>
-</blockquote></td>
-</tr>
-<tr class="even">
-<td><blockquote>
-<p>Require MFA for end users </p>
-</blockquote></td>
-<td><blockquote>
-<p>A report-only Conditional Access policy that requires multifactor authentication for end users. It is required for all cloud applications.</p>
-</blockquote></td>
-</tr>
-<tr class="odd">
-<td><blockquote>
-<p>Block legacy authorization</p>
-</blockquote></td>
-<td><blockquote>
-<p>A report-only Conditional Access policy to block legacy client authorizations.</p>
-</blockquote></td>
-</tr>
-<tr class="even">
-<td><blockquote>
-<p>Enroll devices in Microsoft Endpoint Manager – Azure AD Join</p>
-</blockquote></td>
-<td><blockquote>
-<p>Device enrollment to allow your tenant devices to enroll in Microsoft Endpoint Manager. This is done by setting up Auto Enrollment between Azure Active Directory and Microsoft Endpoint Manager.  </p>
-</blockquote></td>
-</tr>
-<tr class="odd">
-<td><blockquote>
-<p>Antivirus (AV) policy configuration</p>
-</blockquote></td>
-<td><blockquote>
-<p>A Device Configuration profile for Windows devices with pre-configured Microsoft Defender Antivirus settings.</p>
-</blockquote></td>
-</tr>
-<tr class="even">
-<td><blockquote>
-<p>Window 10 Compliance policy set up </p>
-</blockquote></td>
-<td><blockquote>
-<p>Windows device policy with pre-configured settings to meet basic compliance requirements.</p>
-</blockquote></td>
-</tr>
-</tbody>
-</table>
+
+| Baseline Configuration    | Description                 |
+| :------------------- | :------------------- |
+| Require MFA for admins  | A report-only Conditional Access policy requiring multifactor authentication for admins. It is required for all cloud applications. | 
+| Require MFA for end users | A report-only Conditional Access policy that requires multifactor authentication for end users. It is required for all cloud applications.| 
+| Block legacy authorization | A report-only Conditional Access policy to block legacy client authorizations.| 
+| Enroll devices in Microsoft Endpoint Manager – Azure AD Join | Device enrollment to allow your tenant devices to enroll in Microsoft Endpoint Manager. This is done by setting up Auto Enrollment between Azure Active Directory and Microsoft Endpoint Manager.| 
+| Antivirus (AV) policy configuration | A Device Configuration profile for Windows devices with pre-configured Microsoft Defender Antivirus settings. 
+| Window 10 Compliance policy set up | Windows device policy with pre-configured settings to meet basic compliance requirements.
+
 
 ##  Related topics
 
