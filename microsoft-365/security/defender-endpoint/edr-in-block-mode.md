@@ -38,7 +38,7 @@ ms.technology: mde
 
 EDR in block mode is also integrated with [threat & vulnerability management](next-gen-threat-and-vuln-mgt.md). Your organization's security team will get a [security recommendation](tvm-security-recommendation.md) to turn EDR in block mode on if it isn't already enabled. 
 
-:::image type="content" source="images/edrblockmode-TVMrecommendation.png" alt-text="recommendation to turn on EDR in block mode":::
+:::image type="content" source="images/enable-edr-in-block-mode.png" alt-text="recommendation to turn on EDR in block mode":::
 
 > [!NOTE]
 > To get the best protection, make sure to **[deploy Microsoft Defender for Endpoint baselines](configure-machines-security-baseline.md)**.
