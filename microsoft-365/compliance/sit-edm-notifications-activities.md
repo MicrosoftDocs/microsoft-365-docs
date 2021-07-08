@@ -39,7 +39,7 @@ The account you use must be one of the following:
 
 To learn more about DLP permissions, see [Permissions](data-loss-prevention-policies.md#permissions).
 
-EDM-based classification is included in these subscriptions
+EDM-based classification is included in these subscriptions:
 
 - Office 365 E5
 - Microsoft 365 E5
@@ -50,15 +50,15 @@ To learn more about DLP licensing, see [Microsoft 365 licensing guidance for sec
 
 ## Configure notifications for EDM activities
 
-1. Connect to the [Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell) 
+1. Connect to the [Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
-2. Run the `New-ProtectionAlert` cmdlet using the activity that you want to create the notification for.  For example, if you want to be notified when the **UploadDataCompleted** action occurred, run
+2. Run the `New-ProtectionAlert` cmdlet using the activity that you want to create the notification for.  For example, if you want to be notified when the **UploadDataCompleted** action occurred, run:
 
     ```powershell
     New-ProtectionAlert -Name "EdmUploadCompleteAlertPolicy" -Category Others -NotifyUser <***address to send  notification to***> -ThreatType Activity -Operation UploadDataCompleted -Description "Custom alert policy to track when EDM upload Completed" -AggregationType None
     ```
     
-    for the **UploadDataFailed** you can run
+    for the **UploadDataFailed** you can run:
     
     ```powershell
     New-ProtectionAlert -Name "EdmUploadFailAlertPolicy" -Category Others -NotifyUser <***SMTP address to send notification to***> -ThreatType Activity -Operation UploadDataFailed -Description "Custom alert policy to track when EDM upload Failed" -AggregationType None -Severity High
