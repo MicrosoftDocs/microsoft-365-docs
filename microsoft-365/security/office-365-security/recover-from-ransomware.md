@@ -139,13 +139,13 @@ You can report phishing messages that contain ransomware by using one of several
 
 ## Additional ransomware resources
 
-- [Human-operated ransomware overview](/security/compass/human-operated-ransomware)
+[Human-operated ransomware overview](/security/compass/human-operated-ransomware)
 
-- [Rapidly protect against ransomware and extortion](/security/compass/protect-against-ransomware)
+[Rapidly protect against ransomware and extortion](/security/compass/protect-against-ransomware)
 
-- [The latest Microsoft Security Intelligence Report PDF (search for "ransomware")](https://www.microsoft.com/securityinsights/)
+[The latest Microsoft Security Intelligence Report PDF)](https://www.microsoft.com/securityinsights/) (search for "ransomware"
 
-- **Ransomware: A pervasive and ongoing threat** report in the **Threat analytics node** of the Microsoft 365 Defender portal.
+**Ransomware: A pervasive and ongoing threat** report in the **Threat analytics node** of the Microsoft 365 Defender portal.
 
 Microsoft 365 protection:
 
@@ -156,6 +156,9 @@ Microsoft 365 protection:
 Microsoft Security team blog posts:
 
 - [Becoming resilient by understanding cybersecurity risks: Part 4—navigating current threats (May 2021)](https://www.microsoft.com/security/blog/2021/05/26/becoming-resilient-by-understanding-cybersecurity-risks-part-4-navigating-current-threats/)
+
+  See the **Ransomware** section.
+
 - [Human-operated ransomware attacks: A preventable disaster (March 2020)](https://www.microsoft.com/security/blog/2020/03/05/human-operated-ransomware-attacks-a-preventable-disaster/)
 - [Ransomware response—to pay or not to pay? (December 2019)](https://www.microsoft.com/security/blog/2019/12/16/ransomware-response-to-pay-or-not-to-pay/)
 - [Norsk Hydro responds to ransomware attack with transparency (December 2019)](https://www.microsoft.com/security/blog/2019/12/17/norsk-hydro-ransomware-attack-transparency/)
