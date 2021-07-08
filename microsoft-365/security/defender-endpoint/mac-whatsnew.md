@@ -35,6 +35,7 @@ ms.technology: mde
 
 ## 101.34.20 (20.121051.13420.0)
 
+- [Device control for macOS](mac-device-control-overview.md) is now in general availability
 - Addressed an issue where a quick scan could not be started from the status menu on macOS 11 (Big Sur)
 - Other bug fixes
 
