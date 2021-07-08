@@ -268,8 +268,6 @@ As stated earlier, many customers are looking to achieve a more granular delegat
 - **Stream** - (/stream/assign-administrator-user-role)
 - **Information barriers** - (../compliance/information-barriers.md)
 
-For the rest, search in Docs has been really good lately - <https://docs.microsoft.com/>.
-
 ### Activity Logs
 
 Office 365 has a [unified audit log](../compliance/search-the-audit-log-in-security-and-compliance.md). It’s a very [detailed log](/office/office-365-management-api/office-365-management-activity-api-schema), but don’t read too much into the name. It may not contain everything you want or need for your security and compliance needs. Also, some customers are really interested in [Advanced Audit](../compliance/advanced-audit.md).
