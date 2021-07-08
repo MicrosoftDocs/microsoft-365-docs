@@ -34,7 +34,7 @@ Devices in your organization must be configured so that the Defender for Endpoin
 
 In general, you'll identify the Windows device you're onboarding, then follow the corresponding tool appropriate to the device or your environment.
 
-![Image of onboarding tools and methods](images/onboarding-tools-methods.png)
+![Image of onboarding tools and methods](images/onboarding-config-tools.png)
 
 ## Endpoint onboarding tools
 Depending on the Windows endpoint you want to onboard, use the corresponding tool or method described in the following table.
