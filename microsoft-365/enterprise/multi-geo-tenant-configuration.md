@@ -78,7 +78,7 @@ Follow the process in [Azure Active Directory Connect sync: Configure preferred 
 We recommend that you include setting the user's Preferred Data Location as a part of your standard user creation workflow.
 
 > [!IMPORTANT]
-> For new users with no OneDrive provisioned, wait at least 24 hours after a user's PDL is synchronized to Azure AD for the changes to propagate before the user logs in to OneDrive for Business. (Setting the preferred data location before the user logs in to provision their OneDrive for Business ensures that the user's new OneDrive will be provisioned in the correct location.)
+> For new users with no OneDrive provisioned, license the account and wait at least 48 hours after a user's PDL is synchronized to Azure AD for the changes to propagate before the user logs in to OneDrive for Business. (Setting the preferred data location before the user logs in to provision their OneDrive for Business ensures that the user's new OneDrive will be provisioned in the correct location.)
 
 ### Setting Preferred Data Location for cloud only users 
 
@@ -101,7 +101,7 @@ The procedures in this section require the [Microsoft Azure Active Directory Mod
 We recommend that you include setting the user's Preferred Data Location as a part of your standard user creation workflow.
 
 > [!IMPORTANT]
-> For new users with no OneDrive provisioned, wait at least 24 hours after a user's PDL is set for the changes to propagate before the user logs in to OneDrive. (Setting the preferred data location before the user logs in to provision their OneDrive for Business ensures that the user's new OneDrive will be provisioned in the correct location.)
+> For new users with no OneDrive provisioned, license the account and wait at least 48 hours after a user's PDL is set for the changes to propagate before the user logs in to OneDrive. (Setting the preferred data location before the user logs in to provision their OneDrive for Business ensures that the user's new OneDrive will be provisioned in the correct location.)
 
 ## OneDrive Provisioning and the effect of PDL
 
