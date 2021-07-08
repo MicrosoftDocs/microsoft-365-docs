@@ -34,19 +34,19 @@ Devices in your organization must be configured so that the Defender for Endpoin
 
 In general, you'll identify the Windows device you're onboarding, then follow the corresponding tool appropriate to the device or your environment.
 
-![Image of onboarding tools and methods](images/onboarding-tools-methods.png)
+![Image of onboarding tools and methods](images/onboarding-config-tools.png)
 
 ## Endpoint onboarding tools
 Depending on the Windows endpoint you want to onboard, use the corresponding tool or method described in the following table.
 
 Windows device | Onboarding tool or method
 :---|:---
-|<ul><li> Windows 10</li> <li>Windows Server 1803 and 2019</li> <li>Windows Server 2012 R2 and 2016</li></ul>  |   [Local script (up to 10 devices)](configure-endpoints-script.md)<br><br>   [Group Policy](configure-endpoints-gp.md)<br><br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)  <br><br> [Microsoft Endpoint Manager/ Mobile Device Manager](configure-endpoints-mdm.md) <br><br>    [VDI scripts](configure-endpoints-vdi.md) 
+|<ul><li> Windows 10</li> <li>Windows Server 1803 and 2019</li> <li>Windows Server 2012 R2 and 2016<sup>[[1](#fn1)]<sup></li></ul>  |   [Local script (up to 10 devices)](configure-endpoints-script.md)<br><br>   [Group Policy](configure-endpoints-gp.md)<br><br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)  <br><br> [Microsoft Endpoint Manager/ Mobile Device Manager](configure-endpoints-mdm.md) <br><br>    [VDI scripts](configure-endpoints-vdi.md) 
 |<ul><li> Windows Server 2008 R2 SP1 </li></ul>| [Microsoft Monitoring Agent (MMA)](onboard-server-2008r2.md#option-1-onboard-by-installing-and-configuring-microsoft-monitoring-agent-mma) or [Azure Defender](onboard-server-2008r2.md#option-2-onboard-windows-servers-through-azure-security-center)
 |<ul><li> Windows 7 SP1 </li> <li>  Windows 7 SP1 Pro </li> <li>  Windows 8.1 Pro </li> <li> Windows 8.1 Enterprise</li></ul>  | [Microsoft Monitoring Agent (MMA)](onboard-downlevel.md)
 
 
 
-
+(<a id="fn1">1</a>) Windows Server 2016 and Windows Server 2012 R2 will need to be onboarded using the instructions in [Onboard Windows servers](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016).
 
 

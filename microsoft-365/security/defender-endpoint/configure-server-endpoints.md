@@ -32,6 +32,7 @@ ms.technology: mde
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configserver-abovefoldlink)
 
+Defender for Endpoint extends support to also include the Windows Server operating system. This support provides advanced attack detection and investigation capabilities seamlessly through the Microsoft 365 Defender console.
 
 This topic describes how to onboard specific Windows Servers to Microsoft Defender for Endpoint. 
 
@@ -73,6 +74,11 @@ For more information, see [Integration with Azure Defender](azure-server-integra
 
 ## Windows Server 2012 R2 and Windows Server 2016
 
+>[!NOTE]
+>While this method of onboarding Windows Server 2012 R2 and Windows Server 2016 is in preview, you can choose to use the previous onboarding method using Microsoft Monitoring Agent (MMA). For more information see, [Install and configure endpoints using MMA](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma).
+
+
+
 ### Prerequisites
 
 **Prerequisites for Windows Server 2012 R2** 
@@ -105,6 +111,8 @@ Verify that Microsoft Defender Antivirus is installed and is active.
 
 ## Options to install Microsoft Defender for Endpoint
 In the previous section, you downloaded an installation package. The installation package contains the installer for all Microsoft Defender for Endpoint components. 
+
+1. In the Microsoft 365 Defender navigation pane, select **Settings** > **Endpoints** > **Device management** > **Onboarding**.
 
 
 ### Install Microsoft Defender For Endpoint using command line

@@ -38,7 +38,7 @@ ms.technology: mde
 
 EDR in block mode is also integrated with [threat & vulnerability management](next-gen-threat-and-vuln-mgt.md). Your organization's security team will get a [security recommendation](tvm-security-recommendation.md) to turn EDR in block mode on if it isn't already enabled. 
 
-:::image type="content" source="images/edrblockmode-TVMrecommendation.png" alt-text="recommendation to turn on EDR in block mode":::
+:::image type="content" source="images/enable-edr-in-block-mode.png" alt-text="recommendation to turn on EDR in block mode":::
 
 > [!NOTE]
 > To get the best protection, make sure to **[deploy Microsoft Defender for Endpoint baselines](configure-machines-security-baseline.md)**.
@@ -64,7 +64,7 @@ The following image shows an instance of unwanted software that was detected and
 3. Turn on **EDR in block mode**.
 
 > [!NOTE]
-> EDR in block mode can be turned on only in the Microsoft Defender Security Center. You cannot use registry keys, Intune, or group policies to enable or disable EDR in block mode.
+> EDR in block mode can be turned on only in the Microsoft 365 Defender portal. You cannot use registry keys, Intune, or group policies to enable or disable EDR in block mode.
 
 ## Requirements for EDR in block mode
 
@@ -128,7 +128,7 @@ If Microsoft Defender Antivirus is running in active mode or passive mode, EDR i
 - Windows Server 2012 R2
 
 >[!NOTE]
->Windows Server 2016 and Windows Server 2012 R2 will need to be onboarded using the instructions in [Onboard Windows servers](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016) for this feature to work. 
+>Windows Server 2016 and Windows Server 2012 R2 will need to be onboarded using the instructions in [Onboard Windows servers](configure-server-endpoints.md) for this feature to work. 
 
 
 ## See also

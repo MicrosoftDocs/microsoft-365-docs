@@ -1,7 +1,7 @@
 ---
-title: Server migration scenarios in Microsoft Defender for Endpoint
-description: 
-keywords: migrate server, server, 2012r2, 2016, 2019, server migration, device management, configure Microsoft Defender for Endpoint servers, onboard Microsoft Defender for Endpoint servers
+title: Server migration scenarios for the new version of Microsoft Defender for Endpoint
+description: Read this article to get an overview of how to migrate your servers to Defender for Endpoint.
+keywords: migrate server, server, 2012r2, 2016, server migration, device management, configure Microsoft Defender for Endpoint servers, onboard Microsoft Defender for Endpoint servers
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -26,184 +26,126 @@ ms.technology: mde
 
 - Windows Server 2012 R2
 - Windows Server 2016
-- Windows Server Semi-Annual Channel
-- Windows Server 2019 and later
-- Windows Server 2019 core edition
 
+> [!NOTE]
+> Always ensure Microsoft Defender Antivirus is fully updated on Windows Server 2016 before proceeding. The platform version must be on the June 2021 release (4.18.2106.5 or greater).
 
-This chapter contains high level instructions for various possible migration
-scenarios. Please note that these high-level steps are intended as guidelines
-and based on this early release. We will provide updated instructions for the
-various management products at a later stage.
+In September 2021, we released a new version of Microsoft Defender for Endpoint for Windows Server 2012 R2 and Windows Server 2016. This article contains high-level instructions for various possible migration scenarios from the previous to the current solution. These high-level steps are intended as guidelines to be adjusted to the deployment and configuration tools available in your environment.
 
- 
+> [!NOTE]
+> Full Microsoft Endpoint Configuration Manager (MECM) automation and integration to perform an automated upgrade will be available in the 2111 release of MECM. From the 2107 release, you CAN use the Endpoint Protection node for configuration as well as Group Policy, PowerShell, Microsoft Endpoint Manager tenant attach or local configuration. In addition, you can leverage existing functionality in MECM to automate manual upgrade steps; methods described below.
 
->[!NOTE]
->Full Microsoft Endpoint Configuration Manager automation and integration
-and Microsoft Defender for Endpoint attach will be available for testing at a later date. Use Group
-Policy, PowerShell, Microsoft Endpoint Manager tenant attach or local configuration in the
-interim. Azure Defender automated deployment and onboarding is also not
-available currently.
+## Installer script
 
- 
+To facilitate upgrades when Microsoft Endpoint Manager or Azure Defender* are not in use or available to perform the upgrade, you can use this upgrade script(link to Github tbc). It will automate the following required steps:
 
-## Microsoft Endpoint Configuration Manager migration scenarios 
+1. Remove the OMS workspace for Microsoft Defender for Endpoint
 
-### We are currently using Microsoft Endpoint Configuration Manager to manage our servers,  including System Center Endpoint Protection (SCEP) and Microsoft Monitoring Agent (MMA), and want to move to the new Microsoft Defender for Endpoint instead. How do we proceed? (SCEP & MMA \> Microsoft Endpoint Manager tenant attach)
+2. Remove System Center Endpoint Protection client if installed
 
-Preferred method: Microsoft Endpoint Manager tenant attach (connect Microsoft Endpoint
-Configuration Manager to Intune using a few clicks, then
-configure Microsoft Defender Antivirus policies in Microsoft Endpoint Manager for these devices) 
+3. Download and install (Windows Server 2012 R2) [prerequisites](configure-server-endpoints.md#prerequisites) if required.
 
-Migration steps: 
+4. Install Microsoft Defender for Endpoint
 
-1. Create a new collection with membership rules to include machines running
-Microsoft Defender for Endpoint on the machines to be migrated (tenant attach scope). 
+5. Apply the onboarding script **for use with Group Policy** downloaded from Microsoft Defender Security Center(https://securitycenter.microsoft.com).
 
-2. Enable tenant attach and include (sync) the collections for which you want to
-move Endpoint Protection Platform (EPP) policy management to Microsoft Endpoint Manager. 
+To use the script, download it to an installation directory where you have also placed the installation and onboarding packages (see [Configure server endpoints](configure-server-endpoints.md).
 
-3. Exclude machines that are to be migrated from the collection you use to
-target SCEP and Microsoft Defender Antivirus onboarding policies to your servers. 
+EXAMPLE: .\install.ps1 -RemoveMMA <YOUR_WORKSPACE_ID> -OnboardingScript ".\WindowsDefenderATPOnboardingScript.cmd"
 
-4. Author your policies (antivirus, endpoint detection and response (EDR) onboarding, firewall) in Microsoft Endpoint Manager and target to the Microsoft Endpoint Manager collection you created. 
+*this script is not intended for use with machines that have been onboarded through Azure Defender
 
-5. Create a package to remove MMA workspace configuration for Microsoft Defender for Endpoint. Uninstall SCEP. Then install the Microsoft Defender Antivirus package on the target collection and update the platform and definitions. 
+## Microsoft Endpoint Configuration Manager (MECM) migration scenarios 
 
-6. Apply the onboarding package. 
-
- 
-
-### We're using Microsoft Endpoint Configuration Manager to manage our servers. We have a 3rd party AV + MMA and want to move to new Microsoft Defender for Endpoint  instead. How do we proceed? (Third-party \> Microsoft Endpoint Manager tenant attach) 
-
-Preferred method: Tenant attach 
+### If you are currently using MECM to manage your servers, including System Center Endpoint Protection (SCEP) and are running the Microsoft Monitoring Agent (MMA)-based sensor, and want to upgrade to the new Microsoft Defender for Endpoint BEFORE the 2111 release of MECM.
 
 Migration steps: 
 
-1. Create a new collection with membership rules to include machines running Defender on the machines to be migrated (tenant attach scope). 
+1. Create a new collection with membership rules to include machines to be migrated. 
 
-2. Enable tenant attach and include the collections for which you want to move EPP policy management to Microsoft Endpoint Manager. 
+2. [Create an application](/mem/configmgr/apps/deploy-use/create-applications) to perform the following tasks: 
+   1. Remove the MMA workspace configuration for Microsoft Defender for Endpoint. See [Remove a workspace using PowerShell](/azure/azure-monitor/agents/agent-manage).
+   2. Uninstall SCEP.
+   3. Install the [prerequisites](configure-server-endpoints.md#prerequisites) where applicable.
+   4. Install Microsoft Defender for Endpoint (see [Configure server endpoints](configure-server-endpoints.md)).
+   5. Apply the onboarding package. 
 
-3. Ensure third-party Microsoft Defender Antivirus management no longer pushes antivirus to these machines. 
+   > [!TIP]
+> You can use the [installer script](server-migration.md#installer-script) as part of your application to automate the above steps.
 
-4. Author your policies in Microsoft Endpoint Manager and target to the Microsoft Endpoint Manager collection 
+3. Deploy the application to the new collection.
 
-5. Create a package to Install the Defender package on the target collection,
-set to passive mode and update Defender, remove MMA workspace config for MDE. 
+4. Create and/or assign (existing) endpoint protection policies to the collection.
 
-6. Remove 3rd party AV, either using the 3rd party console or Microsoft Endpoint Configuration Manager as
-appropriate, remove passive mode configuration 
+### If you are currently using MECM to manage your servers, are running a non-Microsoft antivirus solution and MMA-based sensor and want to upgrade to the new Microsoft Defender for Endpoint BEFORE the 2111 release of MECM.
 
-7. Apply the onboarding package: 
+Migration steps:
 
-    Create a program in Microsoft Endpoint Configuration Manager that will allow you to define custom installer logic (prereqs) and use scripted installation (for example, PowerShell) to customize install
-operations. For example, uninstall MMA after if so desired. 
-    
-    These steps will eventually be fully automated by Microsoft Endpoint Configuration Manager 
+1. Create a new collection with membership rules to include machines to be migrated. 
 
- 
+2. Ensure third-party antivirus management no longer pushes antivirus to these machines.*
 
-If you want to move **from tenant attach to MDE attach**, ensure the server is a part of an Azure Active Directory group that has the required policies targeted then proceedto **uninstall** the Microsoft Endpoint Configuration Manager agent. 
+3. Author your policies in the Endpoint Protection node of MECM and target to the newly created collection.*
 
--   MDE attach will not work if the client is managed by Microsoft Endpoint Configuration Manager. Therefore, a server can be in scope for MDE attach but only after Microsoft Endpoint Configuration Manager agent is removed, policies will be applied. 
+4. Create an application to perform the following tasks:
+   1. Remove the MMA workspace configuration for Microsoft Defender for Endpoint. See [Remove a workspace using PowerShell](/azure/azure-monitor/agents/agent-manage). 
+   2. Install the [prerequisites](configure-server-endpoints.md#prerequisites) where applicable.
+   3. Install the Microsoft Defender for Endpoint for Windows Server 2012 R2 and 2016 package and **enable passive mode**. See [Install Microsoft Defender Antivirus using command line](configure-server-endpoints.md#install-microsoft-defender-antivirus-using-command-line).
+   4. Apply the onboarding package. 
 
-### INCLUDE HERE??? We're using Microsoft Endpoint Configuration Manager to manage our servers, including SCEP&MMA, and want to move to Microsoft Defender for Endpoint instead but keep using Microsoft Endpoint Configuration Manager for configuration of endpoint security policies. How do we proceed? (SCEP&MMA \> Microsoft Endpoint Configuration Manager) 
+5. Apply updates.
 
-Timelines TBC. 
+6. Remove your non-Microsoft antivirus software by either using the non-Microsoft antivirus console or by using Microsoft Endpoint Configuration Manager as
+appropriate. Make sure to remove passive mode configuration.*
 
-Options: 
+7. Apply the onboarding package.
 
-In the design partner phase, follow the steps described in 1.1 to switch to Microsoft Endpoint Manager
-tenant attach. 
+TIP: you can use the [installer script](server-migration.md#installer script) as part of your application to automate the above steps. To enable passive mode, apply the -Passive flag. EXAMPLE: .\install.ps1 -RemoveMMA <YOUR_WORKSPACE_ID> -OnboardingScript ".\WindowsDefenderATPOnboardingScript.cmd" -Passive
 
-In the public preview phase, you can use Microsoft Endpoint Configuration Manager for configuration only and will need to manually deploy. 
+*These steps only apply if you intend to replace your non-Microsoft antivirus solution. See [Better together: Microsoft Defender Antivirus and Microsoft Defender for Endpoint](why-use-microsoft-defender-antivirus.md).
 
- 
+If you want to move **from tenant attach to Defender for Endpoint attach**, make sure the server is a part of an Azure Active Directory group that has the required policies targeted then proceed to **uninstall** the Microsoft Endpoint Configuration Manager agent. 
 
-### We're using a non-Microsoft antivirus solution today and want to move to Microsoft Defender Antivirus. How do we proceed? 
+- Defender for Endpoint attach will not work if the client is managed by Microsoft Endpoint Configuration Manager. Therefore, a server can be in scope for Defender for Endpoint attach, but only after Microsoft Endpoint Configuration Manager agent is removed will policies be applied. 
 
-Preferred method: MDE Attach 
+## Other migration scenarios 
 
-Migration steps: 
+### You have a server that has been onboarded using the MMA-based Microsoft Defender for Endpoint. It has SCEP installed (Windows Server 2012 R2) or Microsoft Defender Antivirus (Windows Server 2016). This machine is **not** managed through Azure Defender, Microsoft Endpoint Manager or Microsoft Endpoint Configuration Manager.
 
-1.  Set up your policies beforehand in Microsoft Endpoint Manager and target to the intended group. 
+1. Remove the MMA workspace configuration for Microsoft Defender for Endpoint. See [Remove a workspace using PowerShell](/azure/azure-monitor/agents/agent-manage).
 
-2.  Install the new unified package. 
+2. Uninstall System Center Endpoint Protection (Windows Server 2012 R2).
 
-3.  Set Microsoft Defender Antivirus to passive mode, update the platform and definitions.
+3. Install the [prerequisites](configure-server-endpoints.md#prerequisites) where applicable. 
 
-4.  Apply the onboarding package.
+4. Install Microsoft Defender for Endpoint (see [Configure server endpoints](configure-server-endpoints.md).)
 
-5.  Add server to policy target group. 
+5. Apply the onboarding package.
 
-6.  Remove the non-Microsoft antivirus solution and remove passive mode settings.
+6. Create and apply policies using Group Policy, PowerShell, or Microsoft Endpoint Manager for Defender Security Management.
 
+> [!TIP]
+> You can use the installer script to automate the above steps.
 
-## Non-Microsoft scenarios 
+### You have a server on which you want to install Microsoft Defender for Endpoint. It has a non-Microsoft endpoint protection or endpoint detection and response solution installed. You do not intend to use Microsoft Endpoint Configuration Manager or Azure Defender. You use your own deployment mechanism. 
 
-### We have a server We would like to install to. We have another solution running a non-Microsoft antivirus solution. 
+1. Install the prerequisites and fully update the machine including Microsoft Defender Antivirus (Windows Server 2016)
 
-Preferred method: MDE Attach 
+2. Install the Microsoft Defender for Endpoint for Windows Server 2012 R2 & 2016 package and **enable passive mode**. See [Install Microsoft Defender Antivirus using command line](configure-server-endpoints.md#install-microsoft-defender-antivirus-using-command-line).
 
-1.  Set up your policies beforehand in Microsoft Endpoint Manager and target to the intended Azure Active Directory group (for devices).
+3. Apply the onboarding package.
 
-2.  Download the installer and deploy using desired mechanism (Group Policy is one option).
+4. Remove the non-Microsoft endpoint protection or endpoint detection and response solution, and remove passive mode.*
 
-3.  Set Microsoft Defender Antivirus to passive mode and update it.
+5. Create and apply policies using Group Policy, PowerShell, or Microsoft Endpoint Manager for Defender Security Management.
 
-4.  Apply the onboarding package.
+> [!TIP]
+> You can use the [installer script](server-migration.md#installer-script) to help automate steps 1 through 4. To enable passive mode, apply the -Passive flag. EXAMPLE: `.\install.ps1 -OnboardingScript ".\WindowsDefenderATPOnboardingScript.cmd" -Passive`
 
-5.  Remove non-Microsoft antivirus solution or EDR and remove passive mode.
+*This step only applies if you intend to replace your non-Microsoft antivirus solution. See [Better together: Microsoft Defender Antivirus and Microsoft Defender for Endpoint](why-use-microsoft-defender-antivirus.md). 
 
- 
+## Azure Defender scenarios
 
-### We have a clean server that we would like to install to
+### You're using Azure Defender, Microsoft Monitoring Agent (MMA) and Microsoft Antimalware for Azure/SCEP are installed and you want to upgrade.
 
-Preferred method: MDE Attach 
-
-1.  Set up your policies beforehand in Microsoft Endpoint Manager and target to the intended Azure Active Directory group (for devices).
-
-2.  Download the installer and deploy using desired mechanism (Group policy is one  option).
-
-3.  Set Microsoft Defender Antivirus to passive mode and update it.
-
-4.  Apply the onboarding package.
-
-5.  Remove the non-Microsoft antivirus solution and remove passive mode settings.
-
- 
-### We have a clean server would like to install to. We don't want to use Azure Defender or  Microsoft Endpoint Manager. 
-
-Preferred method: Group Policy. 
-
-1.  Set up your policies beforehand in Group Policy (same policy configuration as
-    Defender AV on Server 2019) and target to the intended AAD group (for
-    devices) 
-
-2.  Download the installer and deploy using desired mechanism.  
-
-3.  Apply the onboarding package. 
-
- 
-
-If you want to use a different/3rd party management solution, we will support
-existing Group Policy/PowerShell/WMI interfaces. For deployment, you can use the same MSI and the onboarding instructions.
-
-## Azure scenarios
-
-### We're using Azure Defender, Microsoft Monitoring Agent (MMA) and SCEP are installed and we want to upgrade. How do we proceed?
-
-1. Uninstall SCEP if it is present. 
-
-2. Remove the workspace configuration from the Microsoft Monitoring Agent. 
-
-3. Proceed with instructions from the Installation and onboarding steps. 
-
-4. [Re-connect the machine to Azure Security Center](/azure/security-center/quickstart-onboard-machines?pivots=azure-portal).
-
-
-### We're using Group policy / PowerShell / other tools to manage SCEP today and want to move to Azure Defender. How do we proceed?
-
-Follow the steps outlined in the previous section. To ensure continued application of settings, adjust your existing policy configuration mechanism to be the equivalent of Windows Server 2019. Microsoft Defender for Endpoint for downlevel server supports GPO/PowerShell/WMI interfaces as well as MDE Attach. 
-
-
+If you're using Azure Defender, you can automate the upgrade process. See <TBD LINK>.

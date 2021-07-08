@@ -157,7 +157,7 @@ New-SecOpsOverridePolicy -Name SecOpsOverridePolicy -SentTo <EmailAddress1>,<Ema
 This example creates the SecOps mailbox policy.
 
 ```powershell
-New-SecOpsOverridePolicy -Name SecOpsOverridePolicy -SendTo secops@contoso.com
+New-SecOpsOverridePolicy -Name SecOpsOverridePolicy -SentTo secops@contoso.com
 ```
 
 For detailed syntax and parameter information, see [New-SecOpsOverridePolicy](/powershell/module/exchange/new-secopsoverridepolicy).

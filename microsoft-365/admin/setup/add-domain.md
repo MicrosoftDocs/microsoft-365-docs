@@ -76,8 +76,6 @@ Follow these steps to add, set up, or continue setting up a domain.
 
     If the portal doesn't recognize your registrar, you can [follow these general instructions.](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)
     
-    Check our list of [host-specific instructions](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md) to find your host and follow the steps to add all the records you need. 
-    
     If you don't know the DNS hosting provider or domain registrar for your domain, see [Find your domain registrar or DNS hosting provider](../get-help-with-domains/find-your-domain-registrar.md).
     
     If you want to wait for later, either unselect all the services and click **Continue**, or in the previous domain connection step choose **More Options** and select **Skip this for now**.
@@ -134,4 +132,3 @@ If you have a website that you use with your business, it will keep working wher
 [Domains FAQ](domains-faq.yml) (article)\
 [What is a domain?](../get-help-with-domains/what-is-a-domain.md) (article)\
 [Buy a domain name in Microsoft 365](../get-help-with-domains/buy-a-domain-name.md) (article)\
-[Set up your domain](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md) (article)
