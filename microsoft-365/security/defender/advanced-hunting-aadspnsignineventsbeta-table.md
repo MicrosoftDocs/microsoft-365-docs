@@ -68,7 +68,7 @@ reference](/windows/security/threat-protection/microsoft-defender-atp/advanced-h
 | `Latitude`             | string        | The north to south coordinates of the sign-in location |
 | `Longitude`            | string        | The east to west coordinates of the sign-in location |
 | `RequestId`            | string        | Unique identifier of the request |
-|`ReportId` | string | Unique identifier for the event | 
+|`ReportId` | string | Unique identifier for the event |
 
  
 
