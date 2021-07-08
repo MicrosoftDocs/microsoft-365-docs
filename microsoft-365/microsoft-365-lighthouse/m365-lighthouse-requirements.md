@@ -30,9 +30,7 @@ MSPs must be enrolled in the Cloud Solution Provider (CSP) program as an Indirec
 In addition, each MSP customer tenant must qualify for Microsoft 365 Lighthouse by meeting the following requirements: 
  
 - Delegated Admin Privileges (DAP) for the MSP 
-
 - At least one Microsoft 365 Business Premium license 
-
 - Fewer than 500 licensed users  
 
 ## Requirements for enabling device management   
@@ -40,7 +38,6 @@ In addition, each MSP customer tenant must qualify for Microsoft 365 Lighthouse 
 To view customer tenant devices on the device management pages, a MSP must:    
 
 - Enroll all customer devices in Microsoft Endpoint Manager (MEM). For more information, see [Enroll devices in Microsoft Intune](/mem/intune/enrollment/).
-
 - Assign compliance policies to all customer devices. For more information, see [Create a compliance policy in Microsoft Intune](/mem/intune/protect/create-compliance-policy). 
 
 ## Requirements for enabling user management 
