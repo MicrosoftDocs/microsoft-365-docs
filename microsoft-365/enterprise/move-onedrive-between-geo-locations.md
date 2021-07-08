@@ -118,8 +118,8 @@ The move statuses are described in the following table.
 <table>
 <thead>
 <tr class="header">
-<th align="left"><strong>Status</strong></th>
-<th align="left"><strong>Description</strong></th>
+<th align="left">Status</th>
+<th align="left">Description</th>
 </tr>
 </thead>
 <tbody>

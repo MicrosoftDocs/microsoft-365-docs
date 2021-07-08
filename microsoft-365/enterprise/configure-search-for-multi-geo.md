@@ -60,9 +60,9 @@ Some search features you might be familiar with, work differently in a multi-geo
 <table>
 <thead>
 <tr class="header">
-<th align="left"><strong>Feature</strong></th>
-<th align="left"><strong>How it works</strong></th>
-<th align="left"><strong>Workaround</strong></th>
+<th align="left">Feature</th>
+<th align="left">How it works</th>
+<th align="left">Workaround</th>
 </tr>
 </thead>
 <tbody>
@@ -107,8 +107,8 @@ Some of the search features you might be familiar with, aren't supported in a mu
 <table>
 <thead>
 <tr class="header">
-<th align="left"><strong>Search feature</strong></th>
-<th align="left"><strong>Note</strong></th>
+<th align="left">Search feature</th>
+<th align="left">Note</th>
 </tr>
 </thead>
 <tbody>
