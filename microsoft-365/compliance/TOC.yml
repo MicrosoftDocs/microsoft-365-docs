@@ -54,8 +54,8 @@
           href: insider-risk-management-settings.md
         - name: Create and manage insider risk policies
           href: insider-risk-management-policies.md
-        - name: Investigate insider risk alerts
-          href: insider-risk-management-alerts.md
+        - name: Investigate insider risk activities
+          href: insider-risk-management-activities.md
         - name: Take action on insider risk cases
           href: insider-risk-management-cases.md
         - name: Review activities with the insider risk audit log
@@ -921,7 +921,7 @@
         - name: Compliance Configuration Analyzer tool
           href: compliance-manager-mcca.md
         - name: Frequently asked questions (FAQ)
-          href: compliance-manager-faq.md
+          href: compliance-manager-faq.yml
         - name: Compliance Manager (classic)
           href: meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md
     - name: Microsoft Service Trust Portal
