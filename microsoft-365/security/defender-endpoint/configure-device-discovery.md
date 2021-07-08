@@ -38,8 +38,8 @@ Discovery can be configured to be on standard or basic mode. Use the standard op
 You can customize the list of devices that are used to perform standard discovery. You can either enable standard discovery on all the onboarded devices that also support this capability (currently - Windows 10 devices only) or select a subset or subsets of your devices by specifying their device tags.
 
 > [!IMPORTANT]
-> For preview, you'll first need to turn on the Preview features in Microsoft Defender Security Center.
-> You can then access the device discovery configuration in Microsoft 365 security center. The list of unmanaged devices and security recommendations will be available in both Microsoft Defender Security Center and Microsoft 365 security center, while the dashboard tiles will only be available in Microsoft 365 security center.
+> For preview, you'll first need to turn on the Preview features in Microsoft 365 Defender.
+> You can then access the device discovery configuration in Microsoft 365 security center. The list of unmanaged devices and security recommendations will be available in both Microsoft 365 Defender and Microsoft 365 security center, while the dashboard tiles will only be available in Microsoft 365 security center.
 
 Take the following configuration steps in Microsoft 365 security center:
 
