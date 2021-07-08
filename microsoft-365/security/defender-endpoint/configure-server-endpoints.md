@@ -45,7 +45,7 @@ For guidance on how to download and use Windows Security Baselines for Windows s
 
 ## Windows Server onboarding overview
 
-You'll need to complete the following genaral steps to succesfully onboard servers.
+You'll need to complete the following general steps to successfully onboard servers.
 
 
 ![Illustration of onboarding flow for Windows Servers and Windows 10 devices](images/server-onboarding-tools-methods.png)
@@ -95,35 +95,39 @@ Verify that Microsoft Defender Antivirus is installed and is active.
 ### Download installation and onboarding packages 
 
 1. In Microsoft Defender Security Center, go to **Settings > Device Management > Onboarding**.
+
 2. Select **Windows Server 2012 R2 and 2016**.
-3. Select **Download installation package** and save the .msi file. You can run the msi package through the installation wizard, or follow the command line steps in [Install Microsoft Defender Antivirus using command line](#install-microsoft-defender-antivirus-using-command-line).
+
+3. Select **Download installation package** and save the .msi file. You can run the msi package through the installation wizard, or follow the command-line steps in [Install Microsoft Defender for Endpoint using the command line](#install-microsoft-defender-for-endpoint-using-command-line).
           
     >[!NOTE]
     >Microsoft Defender Antivirus will get installed and will be active unless you set it to passive mode. 
  
 4. Select **Download onboarding package** and save the .zip file.
-5. Install the installation package using any of the [Options to install Microsoft Defender Antivirus](#options-to-install-microsoft-defender-antivirus).
+
+5. Install the installation package using any of the options to install Microsoft Defender Antivirus. (See [Microsoft Defender Antivirus on Windows Server](microsoft-defender-antivirus-on-windows-server.md).)
+
 6. Follow the steps provided in the [onboarding steps](#onboarding-steps) section.
 
-## Options to install Microsoft Defender Antivirus
-In the previous section, you downloaded an installation package. The installation package contains the installer for Microsoft Defender Antivirus. 
+## Options to install Microsoft Defender for Endpoint
+In the previous section, you downloaded an installation package. The installation package contains the installer for all Microsoft Defender for Endpoint components. 
 
 1. In the Microsoft 365 Defender navigation pane, select **Settings** > **Endpoints** > **Device management** > **Onboarding**.
 
 
-### Install Microsoft Defender Antivirus using command line
-Use the installation package from the previous step to install Microsoft Defender Antivirus. 
+### Install Microsoft Defender For Endpoint using command line
+Use the installation package from the previous step to install Microsoft Defender for Endpoint. 
 
-Run the following command to install Microsoft Defender Antivirus:
+Run the following command to install Microsoft Defender for Endpoint:
 
 ```
-Msiexec /i md4ws.msi /quiet FORCEPASSIVEMODE=1
+Msiexec /i md4ws.msi /quiet
 ```
 
-The `/quiet` command suppresses all notifications, while `FORCEPASSIVEMODE=1` immediately sets Microsoft Defender Antivirus to Passive mode.
+The `/quiet` command suppresses all notifications, while `FORCEPASSIVEMODE=1` immediately sets the Microsoft Defender Antivirus component to Passive mode.
 
->[!NOTE]
->Microsoft Defender Antivirus doesn't automatically go into passive mode. You can choose to set Microsoft Defender Antivirus to run on passive mode if you are running a non-Microsoft antivirus/antimalware solution. <br><br>
+> [!NOTE]
+> Microsoft Defender Antivirus doesn't automatically go into passive mode. You can choose to set Microsoft Defender Antivirus to run in passive mode if you are running a non-Microsoft antivirus/antimalware solution. <br><br>
 >For more information, see [Need to set Microsoft Defender Antivirus to passive mode?](microsoft-defender-antivirus-on-windows-server.md#need-to-set-microsoft-defender-antivirus-to-passive-mode).
 
 
@@ -133,9 +137,13 @@ The onboarding package for Windows Server 2019 through Microsoft Endpoint Manage
 
 
 ### Download package
+
 1. In Microsoft Defender Security Center, go to **Settings > Device Management > Onboarding**.
+
 2. Select **Windows Server 1803 and 2019**.
+
 3. Select **Download package**. Save it as WindowsDefenderATPOnboardingPackage.zip.
+
 4. Follow the steps provided in the [onboarding steps](#onboarding-steps) section. 
 
 
@@ -143,7 +151,7 @@ The onboarding package for Windows Server 2019 through Microsoft Endpoint Manage
 
 1. Now that you have downloaded the required onboarding packages use the guidance listed in [onboarding tools and methods](configure-endpoints.md#endpoint-onboarding-tools) for your server.
 
-2. (Only applicable if you're using a third-party anti-malware solution). You'll need to apply the following Microsoft Defender AV passive mode settings. Verify that it was configured correctly:
+2. (Only applicable if you're using a third-party anti-malware solution). You'll need to apply the following Microsoft Defender Antivirus passive mode settings. Verify that it was configured correctly:
 
     1. Set the following registry entry:
        - Path: `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`
@@ -151,13 +159,13 @@ The onboarding package for Windows Server 2019 through Microsoft Endpoint Manage
        - Type: REG_DWORD
        - Value: 1
 
-    1. Run the following PowerShell command to verify that the passive mode was configured:
+    2. Run the following PowerShell command to verify that the passive mode was configured:
 
        ```PowerShell
        Get-WinEvent -FilterHashtable @{ProviderName="Microsoft-Windows-Sense" ;ID=84}
        ```
 
-    1. Confirm  that a recent event containing the passive mode event is found:
+    3. Confirm  that a recent event containing the passive mode event is found:
 
        ![Image of passive mode verification result](images/atp-verify-passive-mode.png)
 
@@ -165,25 +173,23 @@ The onboarding package for Windows Server 2019 through Microsoft Endpoint Manage
 
 ## Verify the onboarding and installation
 
-Verify that Microsoft Defender AV and Microsoft Defender for Endpoint are running. 
+Verify that Microsoft Defender Antivirus and Microsoft Defender for Endpoint are running. 
 
 
 
 > [!NOTE]
-> Running Microsoft Defender AV is not required but it is recommended. If another antivirus vendor product is the primary endpoint protection solution, you can run Defender Antivirus in Passive mode. You can only confirm that passive mode is on after verifying that Microsoft Defender for Endpoint sensor (SENSE) is running. 
+> Running Microsoft Defender Antivirus is not required but it is recommended. If another antivirus vendor product is the primary endpoint protection solution, you can run Defender Antivirus in Passive mode. You can only confirm that passive mode is on after verifying that Microsoft Defender for Endpoint sensor (SENSE) is running. 
 
-1. Run the following command to verify that Microsoft Defender AV is installed:
+1. Run the following command to verify that Microsoft Defender Antivirus is installed:
 
     >[!NOTE]
-    >This verifcation step is only required if you're using Microsoft Defender AV as your active antimalware solution. 
+    >This verifcation step is only required if you're using Microsoft Defender Antivirus as your active antimalware solution. 
 
    ```sc.exe query Windefend```
 
-    If the result is 'The specified service doesn't exist as an installed service', then you'll need to install Microsoft Defender AV. For more information, see [Microsoft Defender Antivirus on Windows Server](microsoft-defender-antivirus-on-windows-server.md).
+    If the result is 'The specified service doesn't exist as an installed service', then you'll need to install Microsoft Defender Antivirus. For more information, see [Microsoft Defender Antivirus on Windows Server](microsoft-defender-antivirus-on-windows-server.md).
 
     For information on how to use Group Policy to configure and manage Microsoft Defender Antivirus on your Windows servers, see [Use Group Policy settings to configure and manage Microsoft Defender Antivirus](use-group-policy-microsoft-defender-antivirus.md).
-
-
 
 2. Run the following command to verify that Microsoft Defender for Endpoint is running:
 
