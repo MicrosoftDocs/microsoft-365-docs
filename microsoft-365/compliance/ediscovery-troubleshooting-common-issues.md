@@ -118,7 +118,7 @@ An eDiscovery search fails with error the `recipient not found`. This error may 
 
 ## Error/issue: Exporting search results is slow
 
-When exporting search results from eDiscovery or Content Search in the Security and Compliance center, the download takes longer than expected.  You can check to see the amount of data to be download and possibly increase the export speed.
+When exporting search results from Core eDiscovery or Content search in the Microsoft 365 compliance center, the download takes longer than expected.  You can check to see the amount of data to be download and possibly increase the export speed.
 
 ### Resolution
 
@@ -142,14 +142,15 @@ When exporting search results from eDiscovery or Content Search in the Security 
 
 6. If you still have issues, consider dividing searches that return a large set of results into smaller searches. For example, you can use date ranges in search queries to return a smaller set of results that can be downloaded faster.
 
-## Error/issue: Exporting not progressing or is stuck
+## Error/issue: Export process not progressing or is stuck
 
-Exporting search results from eDiscovery or Content Search in the Security and Compliance Center appears stuck or is not progressing.
+When exporting search results from Core eDiscovery or Content search in the Microsoft 365 compliance center, the export process is not progressing or appears to be stuck.
 
 ### Resolution
 
-1. Re-run the search.
-2. Export the content.
+1. If necessary, rerun the search. If the search was last ran more than 7 days ago, you have to rerun the search.
+
+2. Restart the export.
 
 ## Error/issue: "Internal server error (500) occurred"
 
@@ -227,7 +228,7 @@ After a successful export, the completed download via the export tool shows zero
 
 ### Resolution
 
-This is a client-side issue and in order to remediate it, please attempt the following steps:
+This is a client-side issue. To remediate it, follow these steps:
 
 1. Try using another client/machine to download.
 
@@ -239,6 +240,6 @@ This is a client-side issue and in order to remediate it, please attempt the fol
 
 5. Make sure that no other export is downloading to the same folder or any parent folder.
 
-6. If the previous steps did not work, disable zipping and de-duplication.
+6. If the previous steps don't work, disable zipping and de-duplication.
 
 7. If this works then the issue is due to a local virus scanner or a disk issue.
