@@ -39,7 +39,7 @@ Office applications such as Word, Excel, and PowerPoint will automatically detec
 
 ## OneDrive sync app
 
-The OneDrive sync app (version 17.3.6943.0625 and later) will automatically detect the correct OneDrive geo location for the user. Sync client support includes the ability to sync groups-based sites regardless of their geo location. Note that the Groove sync client is not supported for multi-geo. 
+The OneDrive sync app (version 17.3.6943.0625 and later) will automatically detect the correct OneDrive geo location for the user. Sync app support includes the ability to sync groups-based sites regardless of their geo location. Note that the Groove sync client is not supported for multi-geo. 
 
 ## OneDrive location
 
