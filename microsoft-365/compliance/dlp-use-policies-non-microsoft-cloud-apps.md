@@ -22,7 +22,7 @@ ms.custom:
 description: Learn how to use dlp policies for non-Microsoft cloud apps.
 ---
 
-# Use data loss prevention policies for non-Microsoft cloud apps (preview)
+# Use data loss prevention policies for non-Microsoft cloud apps
 
 Data loss prevention (DLP) policies to non-Microsoft cloud apps are part of the Microsoft 365 DLP suite of features; using these features, you can discover and protect sensitive items across Microsoft 365 services. For more information about all Microsoft DLP offerings, see [Learn about data loss prevention](dlp-learn-about-dlp.md).
 
