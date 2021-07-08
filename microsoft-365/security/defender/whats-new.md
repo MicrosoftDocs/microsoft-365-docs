@@ -34,6 +34,10 @@ RSS feed: Get notified when this page is updated by copying and pasting the foll
 /api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+365+defender%22&locale=en-us
 ```
 
+## July 2021
+- [Professional services catalog](https://sip.security.microsoft.com/interoperability/professional_services)<br>Enhance the detection, investigation, and threat intelligence capabilities of the platform with supported partner connections.
+    
+
 ## May 2021
 
 - [New alert page in the Microsoft 365 Defender portal](https://techcommunity.microsoft.com/t5/microsoft-365-defender/easily-find-anomalies-in-incidents-and-alerts/ba-p/2339243) <br> Provides enhanced information for the context into an attack. You can see which other triggered alert caused the current alert and all the affected entities and activities involved in the attack, including files, users and mailboxes. See [Investigate alerts](/microsoft-365/security/defender/investigate-alerts) for more information.
