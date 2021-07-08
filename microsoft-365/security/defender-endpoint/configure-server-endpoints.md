@@ -32,6 +32,7 @@ ms.technology: mde
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configserver-abovefoldlink)
 
+Defender for Endpoint extends support to also include the Windows Server operating system. This support provides advanced attack detection and investigation capabilities seamlessly through the Microsoft 365 Defender console.
 
 This topic describes how to onboard specific Windows Servers to Microsoft Defender for Endpoint. 
 
@@ -106,6 +107,8 @@ Verify that Microsoft Defender Antivirus is installed and is active.
 
 ## Options to install Microsoft Defender Antivirus
 In the previous section, you downloaded an installation package. The installation package contains the installer for Microsoft Defender Antivirus. 
+
+1. In the Microsoft 365 Defender navigation pane, select **Settings** > **Endpoints** > **Device management** > **Onboarding**.
 
 
 ### Install Microsoft Defender Antivirus using command line

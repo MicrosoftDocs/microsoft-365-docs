@@ -295,6 +295,9 @@ If the verification fails and your environment is using a proxy to connect to th
 
 ## Troubleshoot onboarding issues 
 
+>[!NOTE]
+>The following troubleshooting guidance is only applicable for Windows Server 2016 and lower.
+
 If you encounter issues while onboarding a server, go through the following verification steps to address possible issues.
 
 >[!NOTE]
