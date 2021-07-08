@@ -38,20 +38,15 @@ Whether it be adding new solutions to the [Microsoft 365 compliance center](micr
 
 ## June 2021
 
-### Auditing
+### Customer Key
 
-- [Auditing solutions in Microsoft 365](auditing-solutions-overview.md) (new solutions topic that introduces and describes Basic Audit and Advanced Audit, and compares the key capabilities of each tool; includes licensing requirements, an overview of setting up each tool, and available training)
-
-### Data connectors
-
-- [Archive third-party data in Microsoft 365](archiving-third-party-data.md) (Microsoft has released [17 new data connectors in partnership with 17a-4 LLC](archiving-third-party-data#17a-4-data-connectors.md) and [one new connector in partnership with CellTrust](archiving-third-party-data.md?view=o365-worldwide#celltrust-data-connectors). We have also released additional data connectors in partnership with Veritas and [TeleMessage](archiving-third-party-data.md#telemessage-data-connectors). To date, this makes a total of 65 available data connectors to import and archive third-party data to Microsoft 365)
-
+- [Service encryption with Customer Key](customer-key-overview.md) (Customer Key tenant level DEPs now encrypt sensitivity label configuration for Microsoft Information Protection.)
 
 ### eDiscovery
 
-- [eDiscovery solutions in Microsoft 365](ediscovery.md) (new solutions topic that introduces the three Microsoft eDiscovery tools--Content search, Core eDiscovery, and Advanced eDiscovery--and compares the key capabilities of each tool; also includes licensing requirements and available training)
-
-- [Learn about predictive coding in Advanced eDiscovery](predictive-coding-overview.md) (the new predictive coding module in Advanced eDiscovery helps you reduce and cull large volumes of case content to a relevant set of items that you can prioritize for review; this is accomplished by creating and training your own predictive coding models that apply a prediction score to every document in a review set to help you prioritize the review of the most relevant items; new documentation also includes a [quick start guide](predictive-coding-quick-start.md))
+- [Query and filter content in a review set](review-set-search.md) (new query and filtering capability in a new UX format to filter and search for content in a review set)
+- [Tag documents in a review set in Advanced eDiscovery](tagging-documents.md) (new tag functionality and UX to make tagging documents in a review set faster and easier; includes new capability of tagging documents by using a query and using filters to quickly find or exclude review set items based on how an item is tagged)
+- [Set up compliance boundaries for eDiscovery investigations](set-up-compliance-boundaries.md) (Microsoft has removed the requirement to contact MS Support to request that a compliance attribute is synced to OneDrive accounts; now a Mailbox search permissions filter is used to enforce the compliance boundaries for OneDrive)
 
 ### Sensitivity labels
 
