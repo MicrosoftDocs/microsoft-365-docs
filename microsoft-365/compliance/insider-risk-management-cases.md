@@ -142,7 +142,7 @@ The **User activity** tab is one of the most powerful tools for internal risk an
 
 The **Activity explorer** tab allows risk analysts and investigators to review activity details associated with risk alerts. For example, as part of the case management actions, investigators and analysts may need to review all the risk activities associated with the case for more details. With the **Activity explorer**, reviewers can quickly review a timeline of detected risky activity and identify and filter all risk activities associated with alerts.
 
-For more information about the Activity explorer, see the [Insider risk management alerts](insider-risk-management-alerts.md#activity-explorer-preview) article.
+For more information about the Activity explorer, see the [Insider risk management alerts](insider-risk-management-activities.md#activity-explorer-preview) article.
 
 ### Content explorer
 
