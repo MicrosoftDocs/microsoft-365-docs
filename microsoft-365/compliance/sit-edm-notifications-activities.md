@@ -52,7 +52,7 @@ To learn more about DLP licensing, see [Microsoft 365 licensing guidance for sec
 
 1. Connect to the [Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell) 
 
-2. Run the `New-ProtectionAlert` cmdlet using the activity that you want to create the notification for.  For example, if you want to be notified when the **UploadDataCompleted** action occured, run
+2. Run the `New-ProtectionAlert` cmdlet using the activity that you want to create the notification for.  For example, if you want to be notified when the **UploadDataCompleted** action occurred, run
 
     ```powershell
     New-ProtectionAlert -Name "EdmUploadCompleteAlertPolicy" -Category Others -NotifyUser <***address to send  notification to***> -ThreatType Activity -Operation UploadDataCompleted -Description "Custom alert policy to track when EDM upload Completed" -AggregationType None
