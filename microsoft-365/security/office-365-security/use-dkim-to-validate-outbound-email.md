@@ -89,7 +89,7 @@ Since both 1024 and 2048 bitness are supported for DKIM keys, these directions w
 - When you **already have DKIM configured**, you rotate bitness by running the following command:
 
   ```powershell
-  Rotate-DkimSigningConfig -KeySize 2048 -Identity {Guid of the existing Signing Config}
+  Rotate-DkimSigningConfig -KeySize 2048 -Identity <DkimSigningConfigIdParameter>
   ```
 
   **or**
@@ -141,22 +141,22 @@ If you have provisioned custom domains in addition to the initial domain in Micr
 Use the following format for the CNAME records.
 
 > [!IMPORTANT]
-> If you are one of our GCC High customers, we calculate _domainGuid_ differently! Instead of looking up the MX record for your _initialDomain_ to calculate _domainGuid_, instead we calculate it directly from the customized domain. For example, if your customized domain is "contoso.com" your domainGuid becomes "contoso-com", any periods are replaced with a dash. So, regardless of what MX record your initialDomain points to, you'll always use the above method to calculate the domainGuid to use in your CNAME records.
+> If you are one of our GCC High customers, we calculate _customDomainIdentifier_ differently! Instead of looking up the MX record for your _initialDomain_ to calculate _customDomainIdentifier_, instead we calculate it directly from the customized domain. For example, if your customized domain is "contoso.com" your _customDomainIdentifier_ becomes "contoso-com", any periods are replaced with a dash. So, regardless of what MX record your _initialDomain_ points to, you'll always use the above method to calculate the _customDomainIdentifier_ to use in your CNAME records.
 
 ```console
 Host name:            selector1._domainkey
-Points to address or value:    selector1-<domainGUID>._domainkey.<initialDomain>
+Points to address or value:    selector1-<customDomainIdentifier>._domainkey.<initialDomain>
 TTL:                3600
 
 Host name:            selector2._domainkey
-Points to address or value:    selector2-<domainGUID>._domainkey.<initialDomain>
+Points to address or value:    selector2-<customDomainIdentifier>._domainkey.<initialDomain>
 TTL:                3600
 ```
 
 Where:
 
 - For Microsoft 365, the selectors will always be "selector1" or "selector2".
-- _domainGUID_ is the same as the _domainGUID_ in the customized MX record for your custom domain that appears before mail.protection.outlook.com. For example, in the following MX record for the domain contoso.com, the _domainGUID_ is contoso-com:
+- _customDomainIdentifier_ is the same as the _customDomainIdentifier_ in the customized MX record for your custom domain that appears before mail.protection.outlook.com. For example, in the following MX record for the domain contoso.com, the _customDomainIdentifier_ is contoso-com:
 
   > contoso.com.  3600  IN  MX   5 contoso-com.mail.protection.outlook.com
 
