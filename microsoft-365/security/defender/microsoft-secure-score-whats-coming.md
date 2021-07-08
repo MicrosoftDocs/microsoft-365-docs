@@ -47,7 +47,7 @@ We're making some changes in the near future to make [Microsoft Secure Score](mi
 - Set 'Enforce password history' to '24 or more password(s)' in macOS
 - Set 'Maximum password age' to '90 or fewer days, but not 0' in macOS
 - Set account lockout threshold to 5 or lower in macOS
-- Turn on Firewall on macOs
+- Turn on Firewall on macOS
 - Enable Gatekeeper
 - Enable System Integrity Protection (SIP)
 - Enable FileVault Disk Encryption
