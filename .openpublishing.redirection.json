@@ -4169,6 +4169,11 @@
       "source_path": "microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-in-windows-10.md",
       "redirect_url": "/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-windows",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/insider-risk-management-alerts.md",
+      "redirect_url": "/microsoft-365/compliance/insider-risk-management-activities",
+      "redirect_document_id": false
     }
   ]
 }

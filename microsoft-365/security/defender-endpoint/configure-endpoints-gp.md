@@ -98,7 +98,7 @@ You can use Group Policy (GP) to configure settings, such as settings for the sa
 
 4. Click **Policies**, then **Administrative templates**.
 
-5. Click **Windows components** and then **Windows Defender SmartScreen**.
+5. Click **Windows components** and then **Windows Defender ATP**.
 
 6. Choose to enable or disable sample sharing from your devices.
 
