@@ -123,7 +123,7 @@
               href: microsoft-365-client-support-certificate-based-authentication.md
             - name: Conditional Access
               href: microsoft-365-client-support-conditional-access.md
-            - name: Multi-factor authentication
+            - name: Multifactor authentication
               href: microsoft-365-client-support-multi-factor-authentication.md
             - name: Single sign-on
               href: microsoft-365-client-support-single-sign-on.md
@@ -645,7 +645,7 @@
           href: federated-identity-for-your-microsoft-365-dev-test-environment.md
         - name: Azure AD Seamless Single Sign-on
           href: single-sign-on-m365-ent-test-environment.md
-        - name: Multi-factor authentication
+        - name: Multifactor authentication
           href: multi-factor-authentication-microsoft-365-test-environment.md
         - name: Protect global administrator accounts
           href: protect-global-administrator-accounts-microsoft-365-test-environment.md

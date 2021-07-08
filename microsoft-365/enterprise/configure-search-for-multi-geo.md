@@ -117,8 +117,8 @@ Some of the search features you might be familiar with, aren't supported in a mu
 <td align="left">App-only authentication (privileged access from services) isn't supported in multi-geo search.</td>
 </tr>
 <tr class="even">
-<td align="left">Guest users</td>
-<td align="left">Guest users only get results from the geo location that they're searching from.</td>
+<td align="left">Guests</td>
+<td align="left">Guests only get results from the geo location that they're searching from.</td>
 </tr>
 </tbody>
 </table>
