@@ -71,7 +71,7 @@ Administrators can set and manage sharing policies for each of their locations. 
 
 ## Stream
 
-Stream hosts videos in SharePoint.
+Videos uploaded to Stream are stored in the OneDrive of the person uploading. Meeting recordings are stored in the OneDrive of each attendee who records the meeting.
 
 ## Taxonomy
 
