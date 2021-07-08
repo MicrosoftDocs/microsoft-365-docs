@@ -26,37 +26,21 @@ ms.custom: seo-marvel-apr2020
 Need to find if a user viewed a specific document or purged an item from their mailbox? If so, you can use the Microsoft 365 compliance center to search the unified audit log to view user and administrator activity in your organization. Why a unified audit log? Because you can search for the following types of [user and admin activity](#audited-activities) in Microsoft 365:
 
 - User activity in SharePoint Online and OneDrive for Business
-
 - User activity in Exchange Online (Exchange mailbox audit logging)
-
 - Admin activity in SharePoint Online
-
 - Admin activity in Azure Active Directory (the directory service for Microsoft 365)
-
 - Admin activity in Exchange Online (Exchange admin audit logging)
-
 - eDiscovery activities in the security and compliance center
-
 - User and admin activity in Power BI
-
 - User and admin activity in Microsoft Teams
-
 - User and admin activity in Dynamics 365
-
 - User and admin activity in Yammer
-
 - User and admin activity in Microsoft Power Automate
-
 - User and admin activity in Microsoft Stream
-
 - Analyst and admin activity in Microsoft Workplace Analytics
-
 - User and admin activity in Microsoft Power Apps
-
 - User and admin activity in Microsoft Forms
-
 - User and admin activity for sensitivity labels for sites that use SharePoint Online or Microsoft Teams
-
 - Admin activity in Briefing email and MyAnalytics
 
 ## Requirements to search the audit log
@@ -68,6 +52,7 @@ Be sure to read the following items before you start searching the audit log.
   ```powershell
   Get-AdminAuditLogConfig | FL UnifiedAuditLogIngestionEnabled
   ```
+
   The value of `True` for the *UnifiedAuditLogIngestionEnabled* property indicates that audit log search is turned on. For more information, see [Turn audit log search on or off](turn-audit-log-search-on-or-off.md).
 
 - You have to be assigned the View-Only Audit Logs or Audit Logs role in Exchange Online to search the audit log. By default, these roles are assigned to the Compliance Management and Organization Management role groups on the **Permissions** page in the Exchange admin center. Note global administrators in Office 365 and Microsoft 365 are automatically added as members of the Organization Management role group in Exchange Online. To give a user the ability to search the audit log with the minimum level of privileges, you can create a custom role group in Exchange Online, add the View-Only Audit Logs or Audit Logs role, and then add the user as a member of the new role group. For more information, see [Manage role groups in Exchange Online](/Exchange/permissions-exo/role-groups).
@@ -109,8 +94,12 @@ Be sure to read the following items before you start searching the audit log.
 
 - It can take up to 30 minutes or up to 24 hours after an event occurs for the corresponding audit log record to be returned in the results of an audit log search. The following table shows the time it takes for the different services in Office 365.
 
+  <br>
+
+  ****
+
   |Microsoft 365 service or feature|30 minutes|24 hours|
-  |:-----|:-----:|:-----:|
+  |---|:---:|:---:|
   |Defender for Office 365 and Threat Intelligence|![Check mark](../media/checkmark.png)||
   |Azure Active Directory (user login events)||![Check mark](../media/checkmark.png)|
   |Azure Active Directory (admin events)||![Check mark](../media/checkmark.png)|
@@ -128,9 +117,9 @@ Be sure to read the following items before you start searching the audit log.
   |Sensitivity labels||![Check mark](../media/checkmark.png)|
   |SharePoint Online and OneDrive for Business|![Check mark](../media/checkmark.png)||
   |Workplace Analytics|![Check mark](../media/checkmark.png)||
-  |Yammer||![Check mark](../media/checkmark.png)||
-  |Microsoft Forms|![Check mark](../media/checkmark.png)|
-  ||||
+  |Yammer||![Check mark](../media/checkmark.png)|
+  |Microsoft Forms|![Check mark](../media/checkmark.png)||
+  |
 
 - Azure Active Directory (Azure AD) is the directory service for Office 365. The unified audit log contains user, group, application, domain, and directory activities performed in the Microsoft 365 admin center or in the Azure management portal. For a complete list of Azure AD events, see [Azure Active Directory Audit Report Events](/azure/active-directory/reports-monitoring/concept-audit-logs).
 
@@ -918,11 +907,11 @@ Where noted below in the descriptions, some operations contain additional activi
 |Friendly name|Operation|Description|
 |:-----|:-----|:-----|
 |Created comment|CreateComment|Form owner adds comment or score to a quiz.|
-|Created form|CreateForm|Form owner creates a new form.|
-|Edited form|EditForm|Form owner edits a form such, as creating, removing, or editing a question. The property *EditOperation:string* indicates the edit operation name. The possible operations are:<br/>- CreateQuestion<br/>- CreateQuestionChoice <br/>- DeleteQuestion <br/>- DeleteQuestionChoice <br/>- DeleteFormImage <br/>- DeleteQuestionImage <br/>- UpdateQuestion <br/>- UpdateQuestionChoice <br/>- UploadFormImage/Bing/Onedrive <br/>- UploadQuestionImage <br/>- ChangeTheme <br><br>FormImage includes any place within Forms that user can upload an image, such as in a query or as a background theme.|
-|Moved form|MoveForm|Form owner moves a form. <br><br>Property DestinationUserId:string indicates the user ID of the person who moved the form. Property NewFormId:string is the new ID for the newly copied form.|
+|Created form|CreateForm|Form owner creates a new form. <br><br>Property DataMode:string indicates the current form is set to sync with a new or existing Excel workbook if the property value equals DataSync. Property ExcelWorkbookLink:string indicates the associated Excel workbook ID of the current form.|
+|Edited form|EditForm|Form owner edits a form such as creating, removing, or editing a question. The property *EditOperation:string* indicates the edit operation name. The possible operations are:<br/>- CreateQuestion<br/>- CreateQuestionChoice <br/>- DeleteQuestion <br/>- DeleteQuestionChoice <br/>- DeleteFormImage <br/>- DeleteQuestionImage <br/>- UpdateQuestion <br/>- UpdateQuestionChoice <br/>- UploadFormImage/Bing/Onedrive <br/>- UploadQuestionImage <br/>- ChangeTheme <br><br>FormImage includes any place within Forms that user can upload an image, such as in a query or as a background theme.|
+|Moved form|MoveForm|Form owner moves a form. <br><br>Property DestinationUserId:string indicates the user ID of the person who moved the form. Property NewFormId:string is the new ID for the newly copied form. Property IsDelegateAccess:boolean indicates the current form move action is performed through the admin delegate page.|
 |Deleted form|DeleteForm|Form owner deletes a form. This includes SoftDelete (delete option used and form moved to recycle bin) and HardDelete (Recycle bin is emptied).|
-|Viewed form (design time)|ViewForm|Form owner opens an existing form for editing.|
+|Viewed form (design time)|ViewForm|Form owner opens an existing form for editing. <br><br>Property AccessDenied:boolean indicates access of current form is denied due to permission check. Property FromSummaryLink:boolean indicates current request comes from the summary link page.|
 |Previewed form|PreviewForm|Form owner previews a form using the Preview function.|
 |Exported form|ExportForm|Form owner exports results to Excel. <br><br>Property ExportFormat:string indicates if the Excel file is Download or Online.|
 |Allowed share form for copy|AllowShareFormForCopy|Form owner creates a template link to share the form with other users. This event is logged when the form owner clicks to generate template URL.|
@@ -941,10 +930,21 @@ Where noted below in the descriptions, some operations contain additional activi
 |Updated form phishing status|UpdatePhishingStatus|This event is logged whenever the detailed value for the internal security status was changed, regardless of whether this changed the final security state (for example, form is now Closed or Opened). This means you may see duplicate events without a final security state change. The possible status values for this event are:<br/>- Take Down <br/>- Take Down by Admin <br/>- Admin Unblocked <br/>- Auto Blocked <br/>- Auto Unblocked <br/>- Customer Reported <br/>- Reset Customer Reported|
 |Updated user phishing status|UpdateUserPhishingStatus|This event is logged whenever the value for the user security status was changed. The value of the user status in the audit record is **Confirmed as Phisher** when the user created a phishing form that was taken down by the Microsoft Online safety team. If an admin unblocks the user, the value of the user's status is set to **Reset as Normal User**.|
 |Sent Forms Pro invitation|ProInvitation|User clicks to activate a Pro trial.|
-|Updated form setting|UpdateFormSetting|Form owner updates a form setting. <br><br>Property FormSettingName:string indicates the setting's name and new value.|
+|Updated form setting|UpdateFormSetting|Form owner updates one or multiple form settings. <br><br>Property FormSettingName:string indicates updated sensitive settings' name. Property NewFormSettings:string indicates updated settings' name and new value. Property thankYouMessageContainsLink:boolean indicates updated thankyou message contains a URL link.|
 |Updated user setting|UpdateUserSetting|Form owner updates a user setting. <br><br>Property UserSettingName:string indicates the setting's name and new value|
 |Listed forms|ListForms|Form owner is viewing a list of forms. <br><br>Property ViewType:string indicates which view the form owner is looking at: All Forms, Shared with Me, or Group Forms|
 |Submitted response|SubmitResponse|A user submits a response to a form. <br><br>Property IsInternalForm:boolean indicates if the responder is within the same organization as the form owner.|
+|Enabled anyone can respond setting|AllowAnonymousResponse|Form owner turns on the setting allowing any one to respond to the form.|
+|Disabled anyone can respond setting|DisallowAnonymousResponse|Form owner turns off the setting allowing any one to respond to the form.|
+|Enabled specific people can respond setting|EnableSpecificResponse|Form owner turns on the setting allowing only specific people or specific groups in the current organization to respond to the form.|
+|Disabled specific people can respond setting|DisableSpecificResponse|Form owner turns off the setting allowing only specific people or specific groups in the current organization to respond to the form.|
+|Added specific responder|AddSpecificResponder|Form owner adds a new user or group to the specific responders list.|
+|Removed specific responder|RemoveSpecificResponder|Form owner removes a user or group from the specific responders list.|
+|Disabled collaboration|DisableCollaboration|Form owner turns off the setting of collaboration on the form.|
+|Enabled Office 365 work or school account collaboration|EnableWorkOrSchoolCollaboration|Form owner turns on the setting allowing users with an Office 365 work or school account to view and edit the form.|
+|Enabled people in my organization collaboration|EnableSameOrgCollaboration|Form owner turns on the setting allowing users in the current organization to view and edit the form.|
+|Enabled specific people collaboration|EnableSpecificCollaboaration|Form owner turns on the setting allowing only specific people or specific groups in the current organization to view and edit the form.|
+|Connected to Excel workbook|ConnectToExcelWorkbook|Connected the form to an Excel workbook. <br><br>Property ExcelWorkbookLink:string indicates the associated Excel workbook ID of the current form.|
 ||||
 
 #### Forms activities performed by coauthors and anonymous responders

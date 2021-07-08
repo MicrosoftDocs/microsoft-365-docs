@@ -36,6 +36,13 @@ Once you add the connector, Microsoft 365 Defender incidents&mdash;which include
 
 Once in Azure Sentinel, incidents remain bi-directionally synchronized with Microsoft 365 Defender, allowing you to take advantage of the benefits of both the Microsoft 365 security center and Azure Sentinel in the Azure portal for incident investigation and response.
 
+Watch this short overview of Azure Sentinel integration with Microsoft 365 Defender (4 minutes).
+
+<br>
+
+>[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWFIRo]
+
+
 Here's how it works.
 
 :::image type="content" source="../../media/microsoft-365-defender-integration-with-azure-sentinel/microsoft-365-defender-integration-with-azure-sentinel.png" alt-text="The flow and sharing of incident data between Microsoft 365 Defender and Azure Sentinel":::

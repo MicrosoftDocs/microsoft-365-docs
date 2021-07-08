@@ -293,9 +293,15 @@ If the verification fails and your environment is using a proxy to connect to th
    > - `<Key Path="SYSTEM\CurrentControlSet\Services\WdBoot"><KeyValue Value="0" ValueKind="DWord" Name="Start"/></Key>`
    > - `<Key Path="SYSTEM\CurrentControlSet\Services\WdFilter"><KeyValue Value="0" ValueKind="DWord" Name="Start"/></Key>`
 
-## Troubleshoot onboarding issues on a server
+## Troubleshoot onboarding issues 
+
+>[!NOTE]
+>The following troubleshooting guidance is only applicable for Windows Server 2016 and lower.
 
 If you encounter issues while onboarding a server, go through the following verification steps to address possible issues.
+
+>[!NOTE]
+>The following troubleshooting guidance is only applicable for Windows Server 2008 R2 SP1.
 
 - [Ensure Microsoft Monitoring Agent (MMA) is installed and configured to report sensor data to the service](configure-server-endpoints.md)
 - [Ensure that the server proxy and Internet connectivity settings are configured properly](configure-server-endpoints.md)

@@ -9,10 +9,10 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
-ms.collection: 
+ms.collection:
 - M365-security-compliance
 - SPO_Content
-search.appverid: 
+search.appverid:
 - MOE150
 - MET150
 description: "How you can use retention labels to manage the lifecycle of documents in SharePoint by using metadata to classify the content, automatically apply the labels, and use event-based retention to start the retention period."
@@ -116,19 +116,19 @@ The following screenshot shows the settings when you create the Product Specific
 ### Create an event type when you create a retention label
 
 1. On the **Define retention settings** page of the Create retention label wizard, after **Start the retention period based on**, select **Create new event type**:
-    
+
     ![Create a new event type for the Product Specification label dialog box](../media/SPRetention6.png)
 
 3. On the **Name your event type** page, enter **Product Cessation** and an optional description. Then select **Next**, **Submit**, and **Done**.
 
 4. Back on the **Define retention settings** page, for **Start the retention period based on**, use the dropdown box to select the **Product Cessation** event type that you created.
-    
-    Here's what the settings look like for the Product Specification retention label: 
-    
+
+    Here's what the settings look like for the Product Specification retention label:
+
    ![Settings for the new Product Specification label](../media/SPRetention7.png)
 
-6. Select **Create label**, and on the next page when you see the options to publish the label, auto-apply the label, or just save the label: Select **Just save the label for now**, and then select **Done**. 
-    
+6. Select **Create label**, and on the next page when you see the options to publish the label, auto-apply the label, or just save the label: Select **Just save the label for now**, and then select **Done**.
+
     > [!TIP]
     > For more detailed steps, see [Create a label whose retention period is based on an event](event-driven-retention.md#step-1-create-a-label-whose-retention-period-is-based-on-an-event).
 
@@ -183,9 +183,9 @@ To map the **ows\_Doc\_x0020\_Type** crawled property, follow these steps:
 
 1. In the **Managed property** filter box, type ***RefinableString00*** and select the green arrow.
 
-2. In the results list, select the **RefinableString00** link, and then scroll down to the **Mappings to crawled properties** section.  
+2. In the results list, select the **RefinableString00** link, and then scroll down to the **Mappings to crawled properties** section.
 
-3. Select **Add a Mapping**, and then type ***ows\_Doc\_x0020\_Type*** in the **Search for a crawled property name** box in the **Crawled property selection** window. Select **Find**.  
+3. Select **Add a Mapping**, and then type ***ows\_Doc\_x0020\_Type*** in the **Search for a crawled property name** box in the **Crawled property selection** window. Select **Find**.
 
 4. In the results list, select **ows\_Doc\_x0020\_Type** and then select **OK**.
 
@@ -217,19 +217,19 @@ Now that we've verified that the KQL query is working, let's create an auto-appl
 2. In the Create auto-labeling policy wizard, on the **Name your auto-labeling policy** page, enter a name such as **Auto-apply Product Specification label**, and an optional description. Then select **Next**.
 
 3. On the **Choose the type of content you want to apply this label to** page, select **Apply label to content that contains specific words or phrases, or properties**, and then select **Next**.
-    
+
    [ ![Select Apply label to content that contains specific words or phrases, or properties](../media/SPRetention17.png) ](../media/SPRetention17.png#lightbox)
-    
+
    This option lets us provide the same KQL search query that we tested in the previous section. The query returns all Product Specification documents that have a status of *Final*. When we use this same query in the auto-apply label policy, the Product Specification retention label will be automatically applied to all documents that match it.
 
 4. On the **Apply label to content matching this query** page, type **RefinableString00:"Product Specification" AND RefinableString01:Final**, and then select **Next**.
 
    ![Specify the query in the Keyword query editor box](../media/SPRetention19.png)
 
-5. On the **Choose locations to apply the policy** page, you select the content locations that you want to apply the policy to. For this scenario, we apply the policy only to SharePoint locations, because all the production documents are stored in SharePoint document libraries. Toggle the status for **Exchange email**, **OneDrive accounts**, and **Microsoft 365 Groups** to **Off**. Make sure that the status for SharePoint sites is set to **On** before you select **Next**: 
-    
+5. On the **Choose locations to apply the policy** page, you select the content locations that you want to apply the policy to. For this scenario, we apply the policy only to SharePoint locations, because all the production documents are stored in SharePoint document libraries. Toggle the status for **Exchange email**, **OneDrive accounts**, and **Microsoft 365 Groups** to **Off**. Make sure that the status for SharePoint sites is set to **On** before you select **Next**:
+
     ![Choose specific sites to auto-apply labels to](../media/SPRetentionSPlocations.png)
-    
+
    > [!TIP]
    > Instead of applying the policy to all SharePoint sites, you can select **Choose site** and add the URLs for specific SharePoint sites.
 
@@ -242,9 +242,9 @@ Now that we've verified that the KQL query is working, let's create an auto-appl
     ![Settings to auto-apply the label](../media/SPRetention18.png)
 
 9. Select **Submit** to create the auto-apply label policy.
-    
-   >[!NOTE]
-   >It takes up to 7 days to automatically apply the Product Specification label to all documents that match the KQL search query.
+
+   > [!NOTE]
+   > It takes up to 7 days to automatically apply the Product Specification label to all documents that match the KQL search query.
 
 ### Verify that the retention label was automatically applied
 
@@ -282,7 +282,7 @@ To create this flow, start from a SharePoint connector and select the **When an 
 - **URI**: `https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent`
 - **Headers**: Key = Content-Type, Value = application/atom+xml
 - **Body**:
-    
+
     ```xml
     <?xml version='1.0' encoding='utf-8' standalone='yes'>
     <entry xmlns:d='http://schemas.microsoft.com/ado/2007/08/dataservices' xmlns:m='http://schemas.microsoft.com/ado/2007/08/dataservices/metadata' xmlns='https://www.w3.org/2005/Atom'>
@@ -319,10 +319,10 @@ Select the event to view the details on the flyout page. Notice that even though
 
 ![Event details](../media/SPRetention29.png)
 
-But after a delay, the event status shows that a SharePoint site and a SharePoint document have been processed.  
+But after a delay, the event status shows that a SharePoint site and a SharePoint document have been processed.
 
 ![Event details show that documents were processed.](../media/SPRetention31.png)
- 
+
 This shows that the retention period for the label applied to the Spinning Widget product document has been initiated, based on the event date of the *Cessation Production Spinning Widget* event. Assuming that you implemented the scenario in your test environment by configuring a one-day retention period, you can go to the document library for your product documents a few days after the event was created and verify that the document was deleted (after the deletion job in SharePoint has run).
 
 ### More about asset IDs

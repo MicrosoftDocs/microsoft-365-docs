@@ -19,7 +19,7 @@ ms.date: 04/16/2020
 ms.technology: mde
 ---
 
-# Onboard non-persistent virtual desktop infrastructure (VDI) devices to Microsoft Defender Endpoint
+# Onboard non-persistent virtual desktop infrastructure (VDI) devices in Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -31,7 +31,7 @@ ms.technology: mde
 
 >Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configvdi-abovefoldlink)
 
-## Onboard non-persistent virtual desktop infrastructure (VDI) devices
+## Onboarding non-persistent virtual desktop infrastructure (VDI) devices
 
 Defender for Endpoint supports non-persistent VDI session onboarding. 
 
@@ -56,9 +56,11 @@ The following steps will guide you through onboarding VDI devices and will highl
 > For environments where there are low resource configurations, the VDI boot procedure might slow the Defender for Endpoint sensor onboarding. 
 
 
-1.  Open the VDI configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from [Microsoft Defender Security Center](https://securitycenter.windows.com/):
+### For Windows 10 or Windows Server 2019
 
-    1.  In the navigation pane, select **Settings** > **Onboarding**.
+1.  Open the VDI configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from [Microsoft 365 Defender portal](https://security.microsoft.com/):
+
+    1. In the navigation pane, select **Settings** > **Endpoints** > **Device management** > **Onboarding**.
 
     1. Select the operating system.
 
@@ -104,11 +106,11 @@ The following steps will guide you through onboarding VDI devices and will highl
    
       - For single entry for each device: 
     
-        Check only one entry in Microsoft Defender Security Center.
+        Check only one entry in Microsoft 365 Defender portal.
 
       - For multiple entries for each device: 
        
-        Check multiple entries in Microsoft Defender Security Center.
+        Check multiple entries in Microsoft 365 Defender portal.
 
 6. Click **Devices list** on the Navigation pane.
 
