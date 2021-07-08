@@ -90,7 +90,7 @@ Migration steps:
 4. Create an application to perform the following tasks:
    1. Remove the MMA workspace configuration for Microsoft Defender for Endpoint. See [Remove a workspace using PowerShell](/azure/azure-monitor/agents/agent-manage). 
    2. Install the [prerequisites](configure-server-endpoints.md#prerequisites) where applicable.
-   3. Install the Microsoft Defender for Endpoint for Windows Server 2012 R2 and 2016 package and **enable passive mode**. See [Install Microsoft Defender Antivirus using command line](configure-server-endpoints.md#install-microsoft-defender-antivirus-using-command-line).
+   3. Install the Microsoft Defender for Endpoint for Windows Server 2012 R2 and 2016 package and **enable passive mode**. See [Install Microsoft Defender Antivirus using command line](configure-server-endpoints.md#install-microsoft-defender-for-endpoint-using-command-line).
    4. Apply the onboarding package. 
 
 5. Apply updates.
@@ -131,7 +131,7 @@ If you want to move **from tenant attach to Defender for Endpoint attach**, make
 
 1. Install the prerequisites and fully update the machine including Microsoft Defender Antivirus (Windows Server 2016)
 
-2. Install the Microsoft Defender for Endpoint for Windows Server 2012 R2 & 2016 package and **enable passive mode**. See [Install Microsoft Defender Antivirus using command line](configure-server-endpoints.md#install-microsoft-defender-antivirus-using-command-line).
+2. Install the Microsoft Defender for Endpoint for Windows Server 2012 R2 & 2016 package and **enable passive mode**. See [Install Microsoft Defender Antivirus using command line](configure-server-endpoints.md#install-microsoft-defender-for-endpoint-using-command-line).
 
 3. Apply the onboarding package.
 
