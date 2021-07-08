@@ -16,8 +16,8 @@
   items: 
     - name: Deploy Baselines
       href: 
-    - name: Deploy standard configurations
-      href: 
+    - name: Overview of deploying standard tenant configurations
+      href: m365-lighthouse-deploying-standard-tenant-configurations-overview.md
 - name: Manage tenants
   items: 
     - name: Tenant list overview
