@@ -1,5 +1,5 @@
 ---
-title: Onboarding tools and methods for Windows 10 devices
+title: Onboarding methods and tools for Windows 10 devices
 f1.keywords:
     NOCSH
 ms.author: chrfox
