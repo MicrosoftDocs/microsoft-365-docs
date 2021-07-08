@@ -23,7 +23,7 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 > [!NOTE]
 > The features described in this article are in Preview, are subject to change, and are only available to partners who meet the [requirements](m365-lighthouse-requirements.md). If your organization does not have Microsoft 365 Lighthouse, see [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
 
-Microsoft 365 Lighthouse lets you view insights and information related to Intune device compliance for all your tenants by selecting **Devices** in the left navigation pane. This opens the Device compliance page, where you can get an overview of compliance status across tenants, view a list of devices for each tenant, and get status reports on compliance policies and settings.
+Microsoft 365 Lighthouse lets you view insights and information related to Intune device compliance for all your tenants by selecting **Devices** in the left navigation to open the Device compliance page. From this page, you can get an overview of compliance status across tenants, view a list of devices for each tenant, and get status reports on compliance policies and settings.
 
 ## Overview tab  
   
@@ -53,5 +53,5 @@ The settings tab provides an aggregated report of non-compliant settings across 
 
 ## Related content
 
-Microsoft 365 Lighthouse Users page overview (article)\
+[Microsoft 365 Lighthouse Users page overview](m365-lighthouse-users-page-overview.md) (article)\
 [Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)

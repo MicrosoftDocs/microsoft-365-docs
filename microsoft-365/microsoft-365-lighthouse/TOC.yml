@@ -25,7 +25,7 @@
 - name: Manage users within tenants
   items: 
     - name: Users page overview
-      href: 
+      href: m365-lighthouse-users-page-overview.md
 - name: Manage devices
   items: 
     - name: Device compliance page overview
