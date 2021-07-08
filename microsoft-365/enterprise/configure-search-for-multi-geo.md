@@ -12,7 +12,7 @@ ms.collection: Strat_SP_gtc
 localization_priority: Normal
 f1.keywords:
 - NOCSH
-description: Learn how to configure search in a multi-geo environment. Only some clients, such as OneDrive for Business, can return results in a multi-geo environment.
+description: Learn how to configure search in a multi-geo environment. Only some clients, such as OneDrive, can return results in a multi-geo environment.
 ---
 
 # Configure Search for Microsoft 365 Multi-Geo
@@ -25,13 +25,13 @@ For example, a user in one geo location can search for content stored in another
 
 These clients can return results from all geo locations:
 
-- OneDrive for Business
+- OneDrive
 - Delve
 - The SharePoint home page
 - The Search Center
 - Custom search applications that use the SharePoint Search API
 
-### OneDrive for Business
+### OneDrive
 
 As soon as the multi-geo environment has been set up, users that search in OneDrive get results from all geo locations.
 
