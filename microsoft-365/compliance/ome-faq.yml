@@ -191,7 +191,7 @@ sections:
       - question: |
           Can I use message encryption with compliance features such as eDiscovery?
         answer: |
-          Yes. All encrypted email messages are discoverable by Microsoft 365 compliance features.
+          Yes. All encrypted email messages are discoverable by Microsoft 365 compliance features.  See [eDiscovery activities tha that suppport encrypted items](https://docs.microsoft.com/microsoft-365/compliance/ediscovery-decryption?view=o365-worldwide#ediscovery-activities-that-support-encrypted-items) for details.
 
       - question: |
           Can I remove encryption from email?
@@ -211,7 +211,7 @@ sections:
       - question: |
           Can I open encrypted messages sent to a shared mailbox?
         answer: |
-          Yes! Encrypted messages are supported for a shared mailbox.
+          Yes! Encrypted messages are supported for a shared mailbox when logged into a supported Outlook client.
           
           - Users can open protected mails in a shared mailbox where the shared mailbox received a protected mail as part of a distribution group.
           
@@ -247,8 +247,8 @@ sections:
       - question: |
           Can I open encrypted messages sent to another user's mailbox with Fullaccess?
         answer: |
-          Users can open encrypted messages as long as they are given direct access and automapping is turned ON. Access is not allowed if the access is granted via an email-enabled security group.
-
+          No, users can open encrypted messages in shared mailbox.
+          
       - question: |
           What do I do if I don’t receive the one-time pass code after I requested it?
         answer: |
