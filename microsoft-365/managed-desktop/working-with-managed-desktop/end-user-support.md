@@ -22,19 +22,19 @@ If you've reached the point in the [workflow](../service-description/user-suppor
 
 Before you request elevated access to a device, it's best to review which actions are best suited.
 
-- Typical actions are what this process is intended for and would be performed routinely while troubleshooting problems with Microsoft Managed Desktop devices. Examples include:
+- **Typical actions** are what this process is intended for and would be performed routinely while troubleshooting problems with Microsoft Managed Desktop devices. Examples include:
     - Elevating built-in system troubleshooters, the command prompt, or Windows PowerShell
     - Troubleshooting line-of-business applications
     - Using a workaround to correct something that should function by design (such as BitLocker activation or system time not updating)
     - Elevating Device Manager to do things like update drivers, uninstall a device, or scan for new changes
 
-- Actions that aren't recommended include the following:
+- **Actions that aren't recommended** include the following:
     - Installing software or browsers
     - Installing drivers outside of Windows settings, including those for peripherals
     - Installing .msi or .exe files
     - Installing Windows features
 
-- Actions that aren't supported include the following:
+- **Actions that aren't supported** include the following:
     - Installing software or features that conflict with Microsoft Managed Desktop security or management capabilities or operations
     - Disabling a Windows feature that is required for Microsoft Managed Desktop, such as BitLocker
     - Modifying settings managed by your org
@@ -53,9 +53,8 @@ Before you request elevated access to a device, it's best to review which action
 
 ## Escalation requests
 
-{SHOULD WE SAY SOMETHING GENERAL ABOUT WHEN/WHY TO REQUEST ESCALATION?}
 
-If you need to escalate an issue to Microsoft, follow these steps:
+If you need to [escalate](../service-description/user-support.md#escalation-portal) an issue to Microsoft, follow these steps:
 
 1. Go to the portal at [https://aka.ms/mmdelevationrequest](https://aka.ms/mmdelevationrequest) and sign in with your Azure Active Directory credentials.
 2. Select **Escalation requests**, and then select **New escalation request**.
@@ -66,3 +65,6 @@ If you need to escalate an issue to Microsoft, follow these steps:
     - **Primary contact information**: Provide info about how to contact the main person responsible for working with our team.
 4. Select **Submit**.
 5. Revisit the ticket in the same portal to interact with our team.
+
+> [!NOTE]
+> Only Severity C issues can be escalated through this path. For other issues, contact your IT admin to file the request through the Admin portal.
