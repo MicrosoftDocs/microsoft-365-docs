@@ -219,7 +219,6 @@
 ##### [Exceptions for security recommendations](tvm-exception.md)
 ##### [Plan for end-of-support software](tvm-end-of-support-software.md)
 ##### [Mitigate zero-day vulnerabilities](tvm-zero-day-vulnerabilities.md)
-##### [Configure vulnerability email notifications](configure-vulnerability-email-notifications.md)
 #### [Understand vulnerabilities on your devices]()
 ##### [Software inventory](tvm-software-inventory.md)
 ##### [Vulnerabilities in my organization](tvm-weaknesses.md)
