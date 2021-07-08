@@ -20,12 +20,14 @@ Updates available models settings (associated retention label and model descript
 ## HTTP request
 
 ```HTTP
-POST /_api/machinelearning/models/updatemodelsettings HTTP/1.1
+POST /_api/machinelearning/models/getbytitle('{modelFileName}')/updatemodelsettings HTTP/1.1
 ```
 
 ## URI parameters
 
-None
+|Name |In |Required|Type|Description|
+|-----|---|--------|----|-----------|
+|modelFileName|query|True|string|Name of the Syntex model file.|
 
 ## Request headers
 
@@ -59,7 +61,7 @@ In this example, the model description and "Standard Hold" retention label are u
 
 ```HTTP
 {
-	"ModelSettings": "{\"Description\":\"This model is used to set files classified as Contoso Contracts with a standard hold retention.\", \"RetentionLabel\":{\"Id\":\"27c5fcba-abfd-4c34-823d-0b4a48f7ffe6\",\"Name\":\"Standard Hold\"}}"
+    "ModelSettings": "{\"Description\":\"This model is used to set files classified as Contoso Contracts with a standard hold retention.\", \"RetentionLabel\":{\"Id\":\"27c5fcba-abfd-4c34-823d-0b4a48f7ffe6\",\"Name\":\"Standard Hold\"}}"
 }
 
 ```

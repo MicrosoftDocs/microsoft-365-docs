@@ -53,7 +53,7 @@ Good password practices fall into a few broad categories:
 
 The primary goal of a more secure password system is password diversity. You want your password policy to contain lots of different and hard to guess passwords. Here are a few recommendations for keeping your organization as secure as possible.
   
-- Maintain an 8-character minimum length requirement (longer isn't necessarily better)
+- Maintain an 8-character minimum length requirement
 
 - Don't require character composition requirements. For example, \*&amp;(^%$
 
@@ -126,6 +126,8 @@ Risk-based multi-factor authentication ensures that when our system detects susp
 ## Next steps
 
 Want to know more about managing passwords? Here is some recommended reading:
+
+- [Forget passwords, go passwordless](https://www.microsoft.com/security/business/identity-access-management/passwordless-authentication)
 
 - [Microsoft Password Guidance](https://www.microsoft.com/research/wp-content/uploads/2016/06/Microsoft_Password_Guidance-1.pdf)
 
