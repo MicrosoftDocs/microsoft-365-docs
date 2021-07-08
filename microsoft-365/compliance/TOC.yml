@@ -463,9 +463,9 @@
               href: archive-enterprise-number-data.md
             - name: O2 Telefonica SMS and Voice Network Archiver
               href: archive-o2-network-data.md
-            - name: Signal
+            - name: Signal Archiver
               href: archive-signal-archiver-data.md
-            - name: Telegram
+            - name: Telegram Archiver
               href: archive-telegram-archiver-data.md
             - name: TELUS Network
               href: archive-telus-network-data.md
