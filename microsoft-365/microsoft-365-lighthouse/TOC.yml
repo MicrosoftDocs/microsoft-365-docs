@@ -3,7 +3,7 @@
     - name: Overview of Microsoft 365 Lighthouse
       href: m365-lighthouse-overview.md
     - name: Requirements for Microsoft 365 Lighthouse
-      href: requirements-for-m365-lighthouse.md
+      href: m365-lighthouse-requirements.md
 - name: Get started
   items: 
     - name: Sign up for Microsoft 365 Lighthouse
@@ -29,7 +29,7 @@
 - name: Manage devices
   items: 
     - name: Device compliance page overview
-      href: requirements-for-m365-lighthouse.md
+      href: m365-lighthouse-device-compliance-page-overview.md
     - name: Manage threats
       items:
         - name: Threat management page overview

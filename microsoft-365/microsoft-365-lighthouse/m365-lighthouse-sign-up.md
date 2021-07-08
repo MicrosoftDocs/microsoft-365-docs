@@ -21,7 +21,7 @@ description: "Managed Service Providers (MSPs) can follow the steps in this arti
 # Sign up for Microsoft 365 Lighthouse
 
 > [!NOTE]
-> The features described in this article are in Preview, are subject to change, and are only available to partners who meet the [requirements](requirements-for-m365-lighthouse.md). If your organization does not have Microsoft 365 Lighthouse, follow the instructions in this article to sign up.
+> The features described in this article are in Preview, are subject to change, and are only available to partners who meet the [requirements](m365-lighthouse-requirements.md). If your organization does not have Microsoft 365 Lighthouse, follow the instructions in this article to sign up.
 
 ## Before you begin
 
