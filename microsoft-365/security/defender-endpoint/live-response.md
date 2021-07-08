@@ -109,9 +109,9 @@ The dashboard also gives you access to:
 
 ## Initiate a live response session on a device 
 
-1. Sign in to Microsoft Defender Security Center.
+1. Sign in to Microsoft 365 Defender portal.
 
-2. Navigate to the devices list page and select a device to investigate. The devices page opens.
+2. Navigate to **Endpoints > Device inventory** and select a device to investigate. The devices page opens.
 
 3. Launch the live response session by selecting **Initiate live response session**. A command console is displayed. Wait while the session connects to the device.
 

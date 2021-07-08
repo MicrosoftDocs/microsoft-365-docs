@@ -261,9 +261,9 @@ In order to preview new features and provide early feedback, it is recommended t
 
 ## Download the onboarding package
 
-Download the onboarding package from Microsoft Defender Security Center:
+Download the onboarding package from Microsoft 365 Defender portal:
 
-1. In Microsoft Defender Security Center, go to **Settings > Device Management > Onboarding**.
+1. In the Microsoft 365 Defender portal, go to **Settings > Endpoints > Device management > Onboarding**.
 2. In the first drop-down menu, select **Linux Server** as the operating system. In the second drop-down menu, select **Local Script (for up to 10 devices)** as the deployment method.
 3. Select **Download onboarding package**. Save the file as WindowsDefenderATPOnboardingPackage.zip.
 

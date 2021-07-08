@@ -42,14 +42,14 @@ Before you get started, see [the main Microsoft Defender for Endpoint on macOS p
 
 ## Download installation and onboarding packages
 
-Download the installation and onboarding packages from Microsoft Defender Security Center:
+Download the installation and onboarding packages from Microsoft 365 Defender portal:
 
-1. In Microsoft Defender Security Center, go to **Settings > Device Management > Onboarding**.
+1. In Microsoft 365 Defender portal, go to **Settings > Endpoints > Device management > Onboarding**.
 2. In Section 1 of the page, set operating system to **macOS** and Deployment method to **Local script**.
 3. In Section 2 of the page, select **Download installation package**. Save it as wdav.pkg to a local directory.
 4. In Section 2 of the page, select **Download onboarding package**. Save it as WindowsDefenderATPOnboardingPackage.zip to the same directory.
 
-    ![Microsoft Defender Security Center screenshot](images/atp-portal-onboarding-page.png)
+    ![Microsoft 365 Defender portal screenshot](images/atp-portal-onboarding-page.png)
 
 5. From a command prompt, verify that you have the two files.
     
@@ -102,7 +102,7 @@ To complete this process, you must have admin privileges on the device.
 
 5. Repeat steps 3 & 4 for all system extensions distributed with Microsoft Defender for Endpoint on Mac.
 
-6. As part of the Endpoint Detection and Response capabilities, Microsoft Defender for Endpoint on Mac inspects socket traffic and reports this information to the Microsoft Defender Security Center portal. When prompted to grant Microsoft Defender for Endpoint permissions to filter network traffic, select **Allow**.
+6. As part of the Endpoint Detection and Response capabilities, Microsoft Defender for Endpoint on Mac inspects socket traffic and reports this information to the Microsoft 365 Defender portal. When prompted to grant Microsoft Defender for Endpoint permissions to filter network traffic, select **Allow**.
 
     ![System extension security preferences2](images/big-sur-install-4.png)
 
@@ -209,7 +209,7 @@ To complete this process, you must have admin privileges on the device.
 
     In a few minutes an alert named "macOS EDR Test Alert" should be raised.
 
-12.	Go to Microsoft Defender Security Center (https://SecurityCenter.microsoft.com).
+12.	Go to Microsoft 365 Defender portal (https://security.microsoft.com/).
 
 13.	Go to the Alert Queue.
 
