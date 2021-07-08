@@ -35,7 +35,7 @@ You may need to change someone's email address and display name if, for example,
 
 If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](../../business-video/index.yml).
 
-You must be a [global admin](about-admin-roles.md) to do these steps.
+You must be a [global admin](about-admin-roles.md) to complete these steps.
 
 ## Change a user's email address
 

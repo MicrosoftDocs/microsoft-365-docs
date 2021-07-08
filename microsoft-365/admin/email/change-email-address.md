@@ -53,7 +53,7 @@ When you change your domain's email to come to Microsoft 365, by updating your d
   
 ## Change your email address to use your custom domain using the Microsoft 365 admin center
 
-You must have a global admin account to perform these steps.
+You must be a global admin to perform these steps.
 
 ::: moniker range="o365-worldwide"
 
