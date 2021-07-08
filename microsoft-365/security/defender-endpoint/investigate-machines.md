@@ -184,7 +184,7 @@ The **Logged on users** card shows how many users have logged on in the past 30 
 ![Image of user details pane](images/logged-on-users.png)
 > [!NOTE]
 > The 'Most frequent' user value is calculated only based on evidence of users who successfully logged on interactively. 
-> However, the "All users" side-pane calculates all sorts of user logons so it is expected to see more freqent users in the side-pane, given that those users may not be interactive.
+> However, the "All users" side-pane calculates all sorts of user logons so it is expected to see more frequent users in the side-pane, given that those users may not be interactive.
 
 ### Security assessments
 
