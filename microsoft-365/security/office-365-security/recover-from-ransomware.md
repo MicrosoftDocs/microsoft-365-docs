@@ -143,9 +143,9 @@ You can report phishing messages that contain ransomware by using one of several
 
 [Rapidly protect against ransomware and extortion](/security/compass/protect-against-ransomware)
 
-[The latest Microsoft Security Intelligence Report PDF)](https://www.microsoft.com/securityinsights/) (search for "ransomware"
+[The latest Microsoft Security Intelligence Report PDF)](https://www.microsoft.com/securityinsights/) (search for "ransomware")
 
-**Ransomware: A pervasive and ongoing threat** report in the **Threat analytics node** of the Microsoft 365 Defender portal.
+**Ransomware: A pervasive and ongoing threat** report in the **Threat analytics node** of the Microsoft 365 Defender portal
 
 Microsoft 365 protection:
 
