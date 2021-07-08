@@ -37,12 +37,15 @@ Defender for Endpoint can block what Microsoft deems as malicious IPs/URLs, thro
 
 The threat intelligence data set for this has been managed by Microsoft.
 
-By creating indicators for IPs and URLs or domains, you can now allow or block IPs, URLs, or domains based on your own threat intelligence. You can do this through the settings page or by machine groups if you deem certain groups to be more or less at risk than others.
+By creating indicators for IPs and URLs or domains, you can now allow or block IPs, URLs, or domains based on your own threat intelligence. You can also warn users with a prompt if they open a risky app. The prompt won't stop  them from using the app but you can provide a custom message and links to a company page that describes appropriate usage of the app. Users can still bypass the warning and continue to use the app if they need.
+
+
+You can do this through the settings page or by machine groups if you deem certain groups to be more or less at risk than others.
 
 > [!NOTE]
 > Classless Inter-Domain Routing (CIDR) notation for IP addresses is not supported. 
 
-### Before you begin
+## Before you begin
 It's important to understand the following prerequisites prior to creating indicators for IPS, URLs, or domains:
 - URL/IP allow and block relies on the Defender for Endpoint component Network Protection to be enabled in block mode. For more information on Network Protection and configuration instructions, see [Enable network protection](enable-network-protection.md).
 - The Antimalware client version must be 4.18.1906.x or later. 
@@ -67,7 +70,23 @@ It's important to understand the following prerequisites prior to creating indic
 > [!NOTE]
 > There may be up to 2 hours of latency (usually less) between the time the action is taken, and the URL and IP being blocked. 
 
-### Create an indicator for IPs, URLs, or domains from the settings page
+
+When using the warn mode, you can configure the following controls:
+
+**Bypass ability**
+- Allow button in Edge
+- Allow button on toast (Non-Microsoft browsers)
+- Bypass duration parameter on the indicator
+- Bypass enforcement across Microsoft and Non-Microsoft browsers 
+
+**Redirect URL** 
+- Redirect URL parameter on the indicator
+- Redirect URL in Edge
+- Redirect URL on toast (Non-Microsoft browsers)
+
+
+
+## Create an indicator for IPs, URLs, or domains from the settings page
 
 1. In the navigation pane, select **Settings** > **Indicators**.  
 

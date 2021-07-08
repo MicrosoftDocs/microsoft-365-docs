@@ -54,6 +54,12 @@ The current supported actions are:
 - Allow
 - Alert only
 - Alert and block
+- Warn
+  - 
+
+
+>[!NOTE]
+> Using Warn mode will prompt your users with a warning if they open a risky app. The prompt won’t block them from using the app, but you can provide a custom message and links to a company page that describes appropriate usage of the app. Users can still bypass the warning and continue to use the app if they need. For more information, see [Govern apps discovered by Microsoft Defender for Endpoint](/cloud-app-security/mde-govern).
 
 
 You can create an indicator for:
