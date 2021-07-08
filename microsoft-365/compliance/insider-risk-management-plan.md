@@ -77,7 +77,7 @@ If you don't see any alerts immediately after configuring an insider risk manage
 Share insider risk management documentation with the stakeholders in your organization that are included in your management and remediation workflow:
 
 - [Create and manage insider risk policies](insider-risk-management-policies.md)
-- [Investigate insider risk alerts](insider-risk-management-alerts.md)
+- [Investigate insider risk activities](insider-risk-management-activities.md)
 - [Take action on insider risk cases](insider-risk-management-cases.md)
 - [Review case data with the insider risk Content explorer](insider-risk-management-content-explorer.md)
 - [Create insider risk notice templates](insider-risk-management-notices.md)
