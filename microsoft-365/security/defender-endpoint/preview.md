@@ -49,7 +49,7 @@ When working with features in public preview, these features:
 - Are fully supported by Microsoft.
 - May only be available in selected geographic regions or cloud environments. For example, the feature may not exist in the government cloud.
 - Individual features in preview may have more usage and support restrictions. If so, this information is typically noted in the feature documentation.
-- The preview versions are provided with a standard support level, and can be used for production workloads. 
+- The preview versions are provided with a standard support level, and can be used for production environments. 
 
 
 
