@@ -93,7 +93,7 @@ The People Picker experience shows all users regardless of their geo location. T
 
 ## Teams Experience
 
-Teams is multi-geo aware. OneDrive files and recently viewed files are shown regardless of the user's geo location. @ mentions work with users from all geo-locations.
+Teams is a multi-geo service. OneDrive files and recently viewed files are shown regardless of the user's geo location. @ mentions work with users from all geo-locations.
 
 ## User profiles
 
