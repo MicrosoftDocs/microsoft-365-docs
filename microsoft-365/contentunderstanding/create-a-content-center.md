@@ -66,7 +66,7 @@ In SharePoint Syntex, the first content center created during setup is the *defa
 
 ![Screenshot of the Model library in the default content center.](../media/content-understanding/model-library-default-content-center.png)
 
-The **Model** library in the default content center view groups the created models by content center for a summary view of all document understanding models that were created. This also includes any form processing models that were created.
+The **Models** library in the default content center view groups the created models by content center for a summary view of all document understanding models and form processing models that have been created.
 
 > [!NOTE]
 > You can't change the designated default content center. It's always the first content center created during setup. 
