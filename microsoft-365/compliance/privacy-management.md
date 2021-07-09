@@ -46,12 +46,44 @@ To learn more, see [Create and manage policies](privacy-management-policies.md).
 
 ## Manage subject rights requests
 
+In accordance with certain privacy regulations, for example General Data Protection Regulation (GDPR) in the EU, individuals may make requests to review or manage the personal data about themselves that companies have collected. For companies that store large amounts of information, finding the relevant data may seem like a formidable task.
+
+Privacy management in Microsoft 365 can help you handle these inquiries through the subject rights request solution. It provides automation and workflow capabilities for helping you search for subject data that you’ve stored in Microsoft 365, review the findings, select the appropriate files, and produce reports. Along the way, you can securely collaborate with other experts in your organization to bring the request to completion.
+
+Note that this subject rights request solution provides additional capabilities beyond the original data subject requests (DSR) solution in the compliance center, and there is no connection or sharing of workflows between the two. The legacy DSR page will be retired at a later date.
+
+To learn more, see [Manage subject rights requests](privacy-management-subject-rights-requests.md).
+
 ## How we evaluate your data
+
+To comply with privacy regulations, you need to know where personal data is collected and how it moves across your organization. Privacy management shows where personal data is stored in your Microsoft 365 environment and delivers key insights to help you protect that data and remediate issues before they become problems.
 
 ### What privacy management evaluates
 
+- Sensitive information, which we call personal data and is the data supported by Microsoft data classification, for example, name, address, or Social Security number
+- Personal data of people connected to your organization, such as customers and employees
+- Data handling activities of employees who work with personal data, such as file owners and business operations staff
+
+For additional information about how Microsoft 365 defines sensitive information, see [Learn about sensitive information types](sensitive-information-type-learn-about.md).
+
 ### Where privacy management identifies personal data
+
+The privacy management solution for Microsoft 365 evaluates data and files stored by your business in Microsoft 365’s cloud service to help you identify and manage privacy risks in that space. This includes:
+
+- Microsoft Exchange
+- Microsoft SharePoint
+- Microsoft OneDrive
+- Microsoft Teams
+
+Since this focuses on the data specific to your business, any personal accounts your employees or customers may have on these services will not be in scope.
 
 ### Additional resources
 
+For more information about how Microsoft approaches privacy and safeguards your data, see the following resources:
+
+- [Microsoft Privacy Principles](https://www.microsoft.com/en-us/trust-center/privacy)
+- [Privacy overview](assurance-privacy.md)
+
 ## Next steps
+
+To continue, see [Get started with privacy management](privacy-management-setup.md).
