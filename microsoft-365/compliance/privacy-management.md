@@ -42,7 +42,7 @@ Complex data environments can present potentially risky scenarios for personal d
 
 To help you address these risks and establish ongoing practices for handling these scenarios, privacy management provides built-in policy templates. You can use these to create policies that evaluate your Microsoft 365 data, alert you to potential issues, and help you remediate these issues. The templates can either be used as provided or customized to meet your company’s specific needs.
 
-To learn more, see [Create and manage policies](privacy-management-policies).
+To learn more, see [Create and manage policies](privacy-management-policies.md).
 
 ## Manage subject rights requests
 
