@@ -17,6 +17,9 @@ ms.topic: article
 
 To enable Enterprise State Roaming, follow the steps in [Enable Enterprise State Roaming in Azure Active Directory](/azure/active-directory/devices/enterprise-state-roaming-enable).
 
+>[!NOTE]
+>If you enable Enterprise State Roaming, your preferred language list will over-write the language selected at OOBE. Although this is easy to fix by the end-user, it may cause an inconsistent localization experience initially. Determine if Enterprise State Roaming is right for your end-users before going through OOBE.
+
 ## Steps to get started with Microsoft Managed Desktop
 
 1. [Add and verify admin contacts in the Admin portal](add-admin-contacts.md)
