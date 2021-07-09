@@ -54,7 +54,9 @@ The first step in creating a form processing model is to name the model, define 
 
 3. You can now automatically extract and save information from a *collection* of structured files that share a similar layout—such as invoices or tax documents—that are in a SharePoint document library. This lets you compose several models into a single model and extract specific table item information.
 
-   The collection name is saved to a dedicated column in the document library where the model is applied, allowing you to distinguish different file layouts processed by the same model. The extracted table information is saved to a specified list and associated with the uploaded file for easy viewing or for additional business process automation.
+   The collection name is saved to a dedicated column in the document library where the model is applied, allowing you to distinguish different file layouts processed by the same model.
+
+   In addition, the extracted table information is saved to a specified list and associated with the uploaded file for easy viewing or for additional business process automation.
 
    To extract table information to an associated list:<br><br>
 
