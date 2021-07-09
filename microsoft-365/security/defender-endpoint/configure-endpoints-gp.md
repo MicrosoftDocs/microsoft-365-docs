@@ -64,7 +64,7 @@ Check out the [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/publ
 
 7. Select **Run whether user is logged on or not** and check the **Run with highest privileges** check box.
 
-8. Go to the **Actions** tab and click **New...** Ensure that **Start a program** is selected in the **Action** field. Enter the file name and location of the shared *WindowsDefenderATPOnboardingScript.cmd* file.
+8. Go to the **Actions** tab and click **New...** Ensure that **Start a program** is selected in the **Action** field. Enter the NetBIOS path of the shared  *WindowsDefenderATPOnboardingScript.cmd* file.
 
 9. Click **OK** and close any open GPMC windows.
 
