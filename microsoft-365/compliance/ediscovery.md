@@ -11,7 +11,7 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.collection: 
 - m365-security-compliance
-- m365solution-aed
+- m365solution-ediscovery
 - m365initiative-compliance
 - m365solution-overview
 localization_priority: Normal
