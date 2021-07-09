@@ -122,8 +122,9 @@ It's possible that a retention policy that's applied to Microsoft 365 groups, Sh
 
 3. For the **Choose locations to apply the policy** page, toggle on one or both of the locations for Yammer: **Yammer community message** and **Yammer user messages**.
     
-    > [!NOTE]
-    > Although you can create a retention policy for just Yammer user messages, a retention policy for this location can delete community messages from the Yammer app for all community members. If you choose this option and the retention policy will be configured to delete user messages, make sure you understand this implication before you save the policy. For more information, see [How retention works with Yammer](retention-policies-yammer.md#how-retention-works-with-yammer).
+    > [!IMPORTANT]
+    > Although you can create a retention policy for just Yammer user messages, a retention policy for this location can delete community messages from the Yammer app for all community members.
+    > If you choose this option and the retention policy will be configured to delete user messages, make sure you understand this implication. For more information, see [How retention works with Yammer](retention-policies-yammer.md#how-retention-works-with-yammer).
     
     By default, all communities and users are selected, but you can refine this by specifying communities and users to be included or excluded.
     
