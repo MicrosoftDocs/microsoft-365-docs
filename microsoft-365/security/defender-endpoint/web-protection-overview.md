@@ -30,7 +30,7 @@ ms.technology: mde
 
 >Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
 
-## What is web protection?
+## About web protection
 
 Web protection in Microsoft Defender for Endpoint is a capability made up of [Web threat protection](web-threat-protection.md) and [Web content filtering](web-content-filtering.md). Web protection lets you secure your devices against web threats and helps you regulate unwanted content. You can find Web protection reports in the Microsoft Defender Security Center by going to **Reports > Web protection**.
 
@@ -64,9 +64,9 @@ Web content filtering includes:
 
 For more information, see [Web content filtering](web-content-filtering.md).
 
-## How does web protection work?
+## Components of web protection
 
-Web Protection is made up of the following components, listed in order of precedence. Each of these components is enforced by the SmartScreen client in Microsoft Edge and by the Network Protection client in all other browsers and processes. 
+Web protection is made up of the following components, listed in order of precedence. Each of these components is enforced by the SmartScreen client in Microsoft Edge and by the Network Protection client in all other browsers and processes. 
 
 - Custom indicator (IP URL/AB, Microsoft Cloud App Security (MCAS) Block/Warn (Preview))
 
@@ -75,113 +75,64 @@ Web Protection is made up of the following components, listed in order of preced
     - SmartScreen Intel, including Exchange Online Protection (EOP)
     - Escalations
 
-- Windows Communication Foundation (WCF)
+- Web Content Filtering (WCF)
 
 - MCAS allow
 
-The order of precedence relates to the order of operations by which a URL or IP is evaluated. For example, a customer who has a web content filtering policy can create exclusions through custom IP/URL indicators, as custom IoC’s are higher in the order of precedence than WCF blocks. 
+The order of precedence relates to the order of operations by which a URL or IP is evaluated. For example, if you have a web content filtering policy you can create exclusions through custom IP/URL indicators. Custom Indicator of compromises (IoC) are higher in the order of precedence than WCF blocks. 
 
 During a conflict, MCAS allow always take precedence over blocks (override logic), which means that an allow indicator will win over any block indicator further down the stack. Similarly, for web threats, the E5 custom indicator list is checked before web threats. But, MCAS allow won't remediate WCF or SmartScreen.
 
+The table below summarizes some common configurations that would present conflicts within the web protection stack, and identifies the resulting determinations based on the precedence listed above. 
+
+<br>
+
+****
+
+|Custom IoC policy|Web threat policy|WCF policy|MCAS policy|Result|
+|---|---|---|---|---|
+|Allow|Block|Block|Block|Allow (Web protection override)|
+|Allow|Allow|Block|Block|Allow (WCF exception)|
+|Warn|Block|Block|Block|Warn (override)|
+|No policy|Allow|Block|Sanctioned (allow)|Block (MCAS allow does not generate indicators)|
+
 Internal IP addresses are not supported by custom indicators. For a warn policy when bypassed by the end user, the site will be unblocked for 24 hours for that user by default. This time frame can be modified by the Admin and is passed down by the SmartScreen cloud service. The ability to bypass a warning can also be disabled via CSP for web threat blocks (malware/phish). For more information, see [Policy CSP - Browser - Windows Client Management](/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverride).
 
-### Network protection (NP) client
+## Use the SmartScreen and Network Protection clients together
 
-Here's the order of checks for Network Protection: 
+In all web protection scenarios, SmartScreen (SS) and Network Protection (NP) can be used together to provide multiple browser supports. SmartScreen is built directly into Edge and can be used even if defender is in passive mode, which means that the NP client does not evaluate the Edge traffic. Conversely, the NP client is responsible for evaluating traffic in third-party browsers and processes, meaning that the SmartScreen client is not involved in evaluating traffic in third-party browsers. 
 
-- Local cache of allows/warns/blocks
+The diagram below illustrates this concept. Both clients call into the same SmartScreen cloud service, but which client calls in is entirely dependent on the browser being used. 
 
-- Local Bloom filter (BF)
+This diagram of the two clients working together to provide multiple browser/app coverage is accurate for all features in the Web Protection stack (WT, WCF, MCAS, Indicators). 
 
-    - Known bad sites (a hit on the BF means the site is likely malicious) (supportUris)
+(Add image)
 
-    - Hash of custom indicators for the device (customSupportedUris)
-
-- Service call (SmartScreen service, regardless of BF hit)
-
-    - Check E5 custom list (check if the URL is a custom indicator and what the policy is)
-
-    - Check intel (top traffic, escalations)
-
-    - Check E5 categories
-
-In the above stack, an allow/block will result in an immediate break and the response will be issued to the client. Otherwise, the checks will continue until the above list is exhausted. If no matches are found, an allow response is issued. 
-
-### SmartScreen (SS) client 
-
-The SmartScreen flow is slightly more complicated than the Network Protection flow. SmartScreen makes both synchronous and asynchronous calls to the service, but Network Protection makes only synchronous calls.  
-
-The order of checks for SmartScreen is as follows: 
-
-- Local cache of allows (blocks aren't cached)
-
-- Local Bloom filter
-
-    - Contains known bad sites 
-
-- Make synchronous calls
-
-    - E5 custom list
-
-- Make asynchronous calls
-
-    - Top traffic
-
-    - Web content filtering
-
-### Use the SmartScreen and Network Protection clients together
-
-In all our web protection scenarios, SmartScreen and Network Protection can be used together to provide multiple browser supports. SmartScreen is built directly into Edge and can be used even if defender is in passive mode, which means that the NP client does not evaluate the Edge traffic. Conversely, the NP client is responsible for evaluating traffic in third-party browsers and processes, meaning that the SmartScreen client is not involved in evaluating traffic in third-party browsers. 
+## Troubleshoot endpoint blocks
 
 Both the Network Protection client and the SmartScreen client use the SmartScreen cloud service for information. Which means, the responses sent back to the client are standardized across the board. Tools like Fiddler can be used to inspect the response from the service, which will help determine the source of the block in cases where it is unclear. 
 
 When the SmartScreen cloud service responds with an allow, block, or warn response, there is a response category and server context relayed back to the client. In Edge, the response category is what is used to determine the appropriate block page to show (for example, malicious, phishing, organizational policy).
 
-### SmartScreen cloud service
+The table below shows the responses and their correlated features.  
 
-The SmartScreen cloud service uses multiple sources of information to provide URL determinations to the SmartScreen and Network Protection clients, including third-party feeds, internal graders and researchers, detonation services, Machine Learning models, and other algorithms. When a request is received from the client, it goes through all the checks. 
+<br>
 
-One of the more important aspects of this service is how it determines whether a URL should be blocked by policy. When a customer creates an indicator, MCAS, or WCF policy, the policy is created using the Indicator API. The Indicator API provides definitions for typical indicator policies and for web content filtering policies. Once a policy is created using one of these definitions, the ATP sync service ensures that the policy is stored in the List API, which is used by the SmartScreen cloud service when making URL determinations. 
+****
 
-### Bloom filter and top traffic
+|ResponseCategory|Feature responsible for the block|
+|---|---|
+|CustomPolicy|WCF|
+|CustomBlockList|Custom indicators|
+|CasbPolicy|MCAS|
+|Malicious|Web threats|
+|Phishing|Web threats|
 
-Both the SmartScreen client and the Network Protection client contain bloom filters that can be checked prior to making a call to the cloud service. Below is a summary of specifically what is included in each filter. 
+## Advanced hunting for web protection
 
-**Bloom Filter (Non-Custom)**: 
+The advanced hunting query can easily be used to summarize the web protection blocks in your organization for the past 30 days. It uses the information listed above to distinguish between the various sources of blocks and summarize them in a user-friendly manner. Note that this query is only for Network Protection.  
 
-- For NP: 
-
-    - Size: 4 MB 
-
-    - Number of Entries: 5000. 
-
-    - It contains malicious content and exploits.  
-
-    - BF (for the NP) stores all results (Blocked- shorter cache time and Allowed- longer cache time) 
-
-- For SmartScreen client for Edge: 
-
-    - Uses the BF for exploits synchronously. 
-
-    - Functions asynchronously by making a reputation call to the server. It will start loading content while waiting for reputation call check to come back for both WCF and top traffic. 
-
-    - BF captures only allows not blocks. It will send another reputation call for allowed URLs after a while. 
-
-**Top Traffic (TT)**: It means a reputation call to the server should not be made. 
-
-- For SS client for Edge:  
-
-    - It is a bloom filter that is used to check for a top traffic URL without a reputation call. 
-
-- For NP: 
-
-    - NP includes TT information in its telemetry before sending it to the server.  
-
-**Bloom Filter for E5 Customers (Custom Indicator Bloom filter)**: If an organization sets a custom indicator to allow/block specific sites, BF for E5 will be constructed, and it will be sent to the SSC for synchronous check reputation. 
-
-**WCF**: It does not use a BF. Organizations have several categories to choose from, such as allow or block. If WCF is enabled, a cloud call is ALWAYS made to determine the category through a flag on the client (ForceServiceDetermination = True). 
-
-**Do Not Call List**: It is a hash BF that works only for NP. More specifically, it contains domains that should never trigger a service call (like Windows Update requests).
+(Add code example)
 
 ## User experience based on block type
 
@@ -199,12 +150,17 @@ In any case, no block pages are shown in third-party browsers, and the user sees
 
 ## Report false positives
 
-Reporting false positives for SmartScreen, WCF and other services is offered through many different options.  
+Reporting false positives for SmartScreen, WCF, and other services is offered through many different options.  
 
-For WCF, customers report inaccuracies in WCF categorizations through the M365D Security Center. Customers can navigate to the ‘Domains’ tab of their Web Content Filtering reports where they will see a small vertical ellipsis beside each domain. Clicking ‘Report Inaccuracy’ will trigger a panel that allows the customers to set the priority of the dispute and provide some additional details, such as the suggested category. 
+For WCF, you can report inaccuracies in WCF categorizations through the Microsoft 365 security center. Navigate to the **Domains** tab of the WCF reports and then click **Report Inaccuracy**. A flyout will open which will alow you to set the priority of the incident and provide some additional details, such as the suggested category. For more information on how to turn on WCF and report inaccuracies, see [Web content filtering](web-content-filtering.md).
 
-When being blocked in Edge by Web Threats (malware/phishing), customers can click the feedback link on the block page to report the site as safe.
+When being blocked in Edge by Web Threats (malware/phishing), you can click the feedback link on the block page to report the site as safe.
 
 (Add image)
 
 For more information on how to submit false positives/negatives, see [Address false positives/negatives in Microsoft Defender for Endpoint](defender-endpoint-false-positives-negatives.md).
+
+## Related information
+
+- [Create indicators](manage-indicators.md)
+- [Turn on network protection](enable-network-protection.md)
