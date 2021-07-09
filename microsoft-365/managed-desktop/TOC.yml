@@ -41,8 +41,10 @@
           href: service-description/privacy-personal-data.md
         - name: Updates
           href: service-description/updates.md
-        - name: Support
+        - name: Admin support
           href: service-description/support.md
+        - name: User support
+          href: service-description/user-support.md
         - name: Operations and monitoring
           href: service-description/operations-and-monitoring.md
         - name: Diagnostic logs
