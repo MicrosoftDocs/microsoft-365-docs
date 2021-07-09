@@ -50,5 +50,5 @@ You can tag your customer tenants with a custom label within Microsoft 365 Light
 
 ## Related content
 
-[Requirements for Microsoft 365 Lighthouse]((m365-lighthouse-requirements.md)) (article)\
+[Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md) (article)\
 [Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)
