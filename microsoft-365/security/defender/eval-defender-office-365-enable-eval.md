@@ -1,5 +1,5 @@
 ---
-title: Enable the evaluation environment
+title: Enable the evaluation environment for Microsoft Defender for Office 365 in your production environment, activate your evaluation, activation
 description: Steps to activate Microsoft Defender for Office365 evaluation, with trial licenses, MX record handling, & auditing of accepted domains and inbound connections.
 keywords: Microsoft 365 Defender trial, try Microsoft 365 Defender, evaluate Microsoft 365 Defender, Microsoft 365 Defender evaluation lab, Microsoft 365 Defender pilot, cyber security, advanced persistent threat, enterprise security, devices, device, identity, users, data, applications, incidents, automated investigation and remediation, advanced hunting
 search.product: eADQiWindows 10XVcnh
