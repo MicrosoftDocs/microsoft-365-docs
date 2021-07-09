@@ -1,5 +1,5 @@
 ---
-title: "Set up a connector to archive ServiceNow data in Microsoft 365"
+title: "Set up a connector to archive ServiceNow 17a-4 DataParser data in Microsoft 365"
 f1.keywords:
 - NOCSH
 ms.author: markjjo

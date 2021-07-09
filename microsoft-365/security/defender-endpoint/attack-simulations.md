@@ -44,7 +44,7 @@ Read the walkthrough document provided with each attack scenario. Each document 
 
 ## Run a simulation
 
-1. In **Help** > **Simulations & tutorials**, select which of the available attack scenarios you would like to simulate:
+1. In **Endpoints** > **Evaluation & tutorials** > **Tutorials & simulations**, select which of the available attack scenarios you would like to simulate:
 
    - **Scenario 1: Document drops backdoor** - simulates delivery of a socially engineered lure document. The document launches a specially crafted backdoor that gives attackers control.
 

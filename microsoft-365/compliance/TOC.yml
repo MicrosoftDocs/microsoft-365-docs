@@ -54,8 +54,8 @@
           href: insider-risk-management-settings.md
         - name: Create and manage insider risk policies
           href: insider-risk-management-policies.md
-        - name: Investigate insider risk alerts
-          href: insider-risk-management-alerts.md
+        - name: Investigate insider risk activities
+          href: insider-risk-management-activities.md
         - name: Take action on insider risk cases
           href: insider-risk-management-cases.md
         - name: Review activities with the insider risk audit log
@@ -118,6 +118,12 @@
           href: create-a-custom-sensitive-information-type.md
         - name: Create a custom sensitive information type - PowerShell
           href: create-a-custom-sensitive-information-type-in-scc-powershell.md
+        - name: Remove a custom sensitive information type - PowerShell
+          href: sit-remove-a-custom-sensitive-information-type-in-powershell.md
+        - name: Modify a custom sensitive information type - PowerShell
+          href: sit-modify-a-custom-sensitive-information-type-in-powershell.md
+        - name: Custom sensitive information type filters reference
+          href: sit-custom-sit-filters.md
         - name: Create a keyword dictionary
           href: create-a-keyword-dictionary.md
         - name: Modify a keyword dictionary
@@ -417,13 +423,13 @@
               href: archive-reuterseikon-data.md
             - name: Reuters FX
               href: archive-reutersfx-data.md
-            - name: RingCentral
+            - name: RingCentral (preview)
               href: archive-ringcentral-data.md   
             - name: Salesforce Chatter
               href: archive-salesforcechatter-data.md
             - name: ServiceNow
               href: archive-servicenow-data.md
-            - name: Skype for Business (preview)
+            - name: Skype for Business
               href: archive-skypeforbusiness-data.md
             - name: Slack eDiscovery
               href: archive-slack-data.md    
@@ -457,9 +463,9 @@
               href: archive-enterprise-number-data.md
             - name: O2 Telefonica SMS and Voice Network Archiver
               href: archive-o2-network-data.md
-            - name: Signal (preview)
+            - name: Signal Archiver
               href: archive-signal-archiver-data.md
-            - name: Telegram (preview)
+            - name: Telegram Archiver
               href: archive-telegram-archiver-data.md
             - name: TELUS Network
               href: archive-telus-network-data.md
@@ -915,7 +921,7 @@
         - name: Compliance Configuration Analyzer tool
           href: compliance-manager-mcca.md
         - name: Frequently asked questions (FAQ)
-          href: compliance-manager-faq.md
+          href: compliance-manager-faq.yml
         - name: Compliance Manager (classic)
           href: meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md
     - name: Microsoft Service Trust Portal
