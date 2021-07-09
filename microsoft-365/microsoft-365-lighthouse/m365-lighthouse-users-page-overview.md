@@ -20,6 +20,9 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 
 # Microsoft 365 Lighthouse Users page overview 
 
+> [!NOTE]
+> The features described in this article are in Preview, are subject to change, and are only available to partners who meet the [requirements](m365-lighthouse-requirements.md). If your organization does not have Microsoft 365 Lighthouse, see [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
+
 Microsoft 365 Lighthouse lets you manage users across tenant accounts by selecting **Users** in the left navigation pane to open the Users page. From this page, you can search for users and assess and act on the security state of your user accounts. You can also view insights into risky users and the status of multifactor authentication and self-service password reset.  
   
 ## Search users tab  

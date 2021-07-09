@@ -67,9 +67,9 @@ sections:
           1. Find the tenant that you want to inactivate, select the three dots next to the tenant name, and then select **Inactivate tenant**.
           1. In the confirmation message that appears, select **Confirm** to inactivate the tenant.
               > [!NOTE]
-              > Once you inactivate a tenant, you'll be unable to take action on the tenant until inactivation is complete.
+              > Once you inactivate a tenant, you can't take action on the tenant until inactivation is complete. It may take up to 48 hours for inactivation to complete.
           
-          To learn more about tenants, see [Microsoft 365 Lighthouse tenant list overview]().
+          To learn more about tenants, see [Microsoft 365 Lighthouse tenant list overview](m365-lighthouse-tenant-list-overview.md).
       - question: Will Microsoft 365 Lighthouse work if my customer tenants have other subscriptions besides Microsoft 365 Business Premium?
         answer: |
           Microsoft 365 Lighthouse helps you manage customer tenants that have Microsoft 365 Business Premium licenses in place for their users. For users in customer tenants who don't have Business Premium licenses, Microsoft 365 Lighthouse functionality will be limited. For example, if a user is missing a license that includes Intune, that user's devices, device compliance status, and threats status will be unavailable; and if a user is missing a license that includes Azure AD P1, that user's password and sign-in management will be unavailable. For more information, see [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).    
