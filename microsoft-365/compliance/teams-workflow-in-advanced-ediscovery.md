@@ -18,7 +18,7 @@ description: "Learn how to preserve, collect, review, and export content from Mi
 
 # Advanced eDiscovery workflow for content in Microsoft Teams
 
-This article provides a comprehensive set of guidelines and best practices for using Advanced eDiscovery to preserve, collect, review, and export content in Microsoft Teams. The goal of this article is to help you optimize your eDiscovery workflow for Teams content.
+This article provides a comprehensive set of procedures, guidelines, and best practices for using Advanced eDiscovery to preserve, collect, review, and export content from Microsoft Teams. The goal of this article is to help you optimize your eDiscovery workflow for Teams content.
 
 There are four categories of Teams content that you can collect and process using Advanced eDiscovery:
 
@@ -32,6 +32,7 @@ There are four categories of Teams content that you can collect and process usin
 
 ## Where Teams content is stored
 
+A prerequisite to managing Teams content in Advanced eDiscovery is to understand the type Teams content that you can collect, process and review in Advanced eDiscovery and where that content is stored in Microsoft 365. The following table lists Teams content type and where each are stored.
 
 ||Location of chat messages and posts  |Location of files and attachments |
 |:---------|:---------|:---------|
@@ -41,11 +42,17 @@ There are four categories of Teams content that you can collect and process usin
 |Private Teams channels     |Messages sent in a private channel are stored in the Exchange Online mailboxes of all members of the private channel.|Files shared in a private Channel are stored in a dedicated SharePoint Online site associated with the private channel.|
 ||||
 
-
 ## Create a case for Teams content
 
-During case creation, users have the option to create a large case or a normal case. To collect Teams messages as transcript HTML items (recommended), select Large Case during case creation. If you select normal case, Teams and Yammer messages will be collected individually and threaded as a PDF.  
+The first step to managing Teams content in Advanced eDiscovery is to create a case using the large case format that's optimized for managing Teams content. Here's the benefits of using the large case format for Teams content:
 
+- Conversation threading, in which additional messages in the same conversation that include responsive items are are automatically collected and added to review sets.
+
+- Teams chat conversations (that include the original post and all replies) are automatically added to review sets as an HTML transcript file.
+
+- Collections up to 1 TB can be added to reviews sets, which enables you to collect and amounts large amounts of Teams content in a case.
+
+To 
 
 ## Add Teams data sources and preserve Teams content  
 
