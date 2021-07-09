@@ -53,7 +53,7 @@ These hidden folders are not designed to be directly accessible to users or admi
 > [!IMPORTANT]
 > Because copies of community messages can also be stored in user mailboxes, a retention policy with a delete action for Yammer user messages can result in the original community message no longer visible to users in the Yammer app.
 > 
-> However, if you also configure a retention policy for Yammer community messages with a retain action, a copy of the original message is still available in the hidden folder of the community group mailbox, and accessible with eDiscovery searches for compliance purposes.
+> However, a copy of the original message is still available in the hidden folder of the community group mailbox, and accessible with eDiscovery searches for compliance purposes.
 
 Yammer messages are not affected by retention policies that are configured for Exchange mailboxes. Even though Yammer messages are stored in Exchange, this Yammer data is included only by a retention policy that's configured for the **Yammer community messages** and **Yammer user messages** locations.
 
