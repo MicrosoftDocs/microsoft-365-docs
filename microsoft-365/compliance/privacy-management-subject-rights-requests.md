@@ -124,7 +124,7 @@ When you finish editing your search query, a new search will run to replace your
 
 ### Data retention
 
-Reports generated through this tool and the associated data, such as annotated files saved in Azure, are stored for a specified length of time. This duration is defined at a global level through **Settings** in the **Data retention periods** section, which allow you to choose between 30 and 90 days. To learn more, see [Get started with privacy management](pivacy-management-setup.md).
+Reports generated through this tool and the associated data, such as annotated files saved in Azure, are stored for a specified length of time. This duration is defined at a global level through **Settings** in the **Data retention periods** section, which allow you to choose between 30 and 90 days. To learn more, see [Get started with privacy management](privacy-management-setup.md).
 
 ## Collaborate on requests with Teams
 
