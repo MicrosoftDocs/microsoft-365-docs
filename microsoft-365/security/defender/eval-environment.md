@@ -1,7 +1,6 @@
 ---
-title: Create the Microsoft 365 Defender Evaluation Environment
-description: Set up your Microsoft 365 Defender trial lab or pilot environment.
-keywords: Microsoft 365 Defender trial, try Microsoft 365 Defender, evaluate Microsoft 365 Defender, Microsoft 365 Defender evaluation lab, Microsoft 365 Defender pilot, cyber security, advanced persistent threat, enterprise security, devices, device, identity, users, data, applications, incidents, automated investigation and remediation, advanced hunting
+title: Evaluate Microsoft 365 Defender in a production Microsoft 365 environment with Defender for Identity, then Defender for Office 365, Defender for Endpoint, and Microsoft Cloud App Security.
+description: Set up your Microsoft 365 Defender trial lab or pilot environment starting with Defender for Identity, and continuing with Defender for Office 365, Defender for Endpoint, and Microsoft Cloud App Security.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -23,7 +22,7 @@ ms.collection:
 ms.topic: how-to
 ms.technology: m365d
 ---
-# Create the Microsoft 365 Defender Evaluation Environment
+# Create a Microsoft 365 Defender Evaluation
 
 - [**Return to the Eval Overview** 'Evaluate and pilot Microsoft 365 Defender' | Microsoft Docs](../office-365-security/defender/eval-overview.md) 
 - [What's next?](#whats-next)
