@@ -88,7 +88,7 @@ Check out the [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/publ
 >[!TIP]
 > After onboarding the device, you can choose to run a detection test to verify that an device is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Defender for Endpoint device](run-detection-test.md).
 >
-> Note that it is possible to create a detection rule on a Configuration Manager application to continuously check if a device has been onboarded. An application is a different type of object than a package and program.
+> Note that it's possible to create a detection rule on a Configuration Manager application to continuously check if a device has been onboarded. An application is a different type of object than a package and program.
 > If a device is not yet onboarded (due to pending OOBE completion or any other reason), Configuration Manager will retry to onboard the device until the rule detects the status change.
 > 
 > This behavior can be accomplished by creating a detection rule checking if the "OnboardingState" registry value (of type REG_DWORD) = 1.

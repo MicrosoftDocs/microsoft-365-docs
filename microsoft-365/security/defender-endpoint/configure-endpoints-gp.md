@@ -87,7 +87,7 @@ You can use Group Policy (GP) to configure settings, such as settings for the sa
 
     - Copy _AtpConfiguration.adml_ into _C:\\Windows\\PolicyDefinitions\\en-US_
 
-    If you are using a [Central Store for Group Policy Administrative Templates](https://support.microsoft.com/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra), copy the following files from the
+    If you're using a [Central Store for Group Policy Administrative Templates](https://support.microsoft.com/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra), copy the following files from the
     configuration package:
     
     - Copy _AtpConfiguration.admx_ into _\\\\\<forest.root\>\\SysVol\\\<forest.root\>\\Policies\\PolicyDefinitions_
@@ -188,7 +188,7 @@ Configure Controlled folder access|	Enabled, Audit Mode
 
 
 ## Offboard devices using Group Policy
-For security reasons, the package used to Offboard devices will expire 30 days after the date it was downloaded. Expired offboarding packages sent to a device will be rejected. When downloading an offboarding package you will be notified of the packages expiry date and it will also be included in the package name.
+For security reasons, the package used to Offboard devices will expire 30 days after the date it was downloaded. Expired offboarding packages sent to a device will be rejected. When downloading an offboarding package you'll be notified of the packages expiry date and it will also be included in the package name.
 
 > [!NOTE]
 > Onboarding and offboarding policies must not be deployed on the same device at the same time, otherwise this will cause unpredictable collisions.

@@ -31,7 +31,7 @@ ms.technology: mde
 
 ## Overview
 
-Today's threat landscape is overrun by [fileless malware](/windows/security/threat-protection/intelligence/fileless-threats) and that lives off the land, highly polymorphic threats that mutate faster than traditional solutions can keep up with, and human-operated attacks that adapt to what adversaries find on compromised devices. Traditional security solutions are not sufficient to stop such attacks; you need artificial intelligence (AI) and device learning (ML) backed capabilities, such as behavioral blocking and containment, included in [Defender for Endpoint](/windows/security).
+Today's threat landscape is overrun by [fileless malware](/windows/security/threat-protection/intelligence/fileless-threats) and that lives off the land, highly polymorphic threats that mutate faster than traditional solutions can keep up with, and human-operated attacks that adapt to what adversaries find on compromised devices. Traditional security solutions aren't sufficient to stop such attacks; you need artificial intelligence (AI) and device learning (ML) backed capabilities, such as behavioral blocking and containment, included in [Defender for Endpoint](/windows/security).
 
 Behavioral blocking and containment capabilities can help identify and stop threats, based on their behaviors and process trees even when the threat has started execution. Next-generation protection, EDR, and Defender for Endpoint components and features work together in behavioral blocking and containment capabilities.
 
@@ -53,13 +53,13 @@ The following image shows an example of an alert that was triggered by behaviora
 
 ## Components of behavioral blocking and containment
 
-- **On-client, policy-driven [attack surface reduction rules](attack-surface-reduction.md)** Predefined common attack behaviors are prevented from executing, according to your attack surface reduction rules. When such behaviors attempt to execute, they can be seen in the Microsoft 365 Defender portal([https://security.microsoft.com](https://security.microsoft.com)) as informational alerts. Attack surface reduction rules are not enabled by default; you configure your policies in the [Microsoft 365 Defender portal](microsoft-defender-security-center.md).
+- **On-client, policy-driven [attack surface reduction rules](attack-surface-reduction.md)** Predefined common attack behaviors are prevented from executing, according to your attack surface reduction rules. When such behaviors attempt to execute, they can be seen in the Microsoft 365 Defender portal([https://security.microsoft.com](https://security.microsoft.com)) as informational alerts. Attack surface reduction rules aren't enabled by default; you configure your policies in the [Microsoft 365 Defender portal](microsoft-defender-security-center.md).
 
 - **[Client behavioral blocking](client-behavioral-blocking.md)** Threats on endpoints are detected through machine learning, and then are blocked and remediated automatically. (Client behavioral blocking is enabled by default.)
 
 - **[Feedback-loop blocking](feedback-loop-blocking.md)** (also referred to as rapid protection) Threat detections are observed through behavioral intelligence. Threats are stopped and prevented from running on other endpoints. (Feedback-loop blocking is enabled by default.)
 
-- **[Endpoint detection and response (EDR) in block mode](edr-in-block-mode.md)** Malicious artifacts or behaviors that are observed through post-breach protection are blocked and contained. EDR in block mode works even if Microsoft Defender Antivirus is not the primary antivirus solution. (EDR in block mode is not enabled by default; you turn it on in Microsoft 365 Defender.)
+- **[Endpoint detection and response (EDR) in block mode](edr-in-block-mode.md)** Malicious artifacts or behaviors that are observed through post-breach protection are blocked and contained. EDR in block mode works even if Microsoft Defender Antivirus isn't the primary antivirus solution. (EDR in block mode isn't enabled by default; you turn it on in Microsoft 365 Defender.)
 
 Expect more to come in the area of behavioral blocking and containment, as Microsoft continues to improve threat protection features and capabilities. To see what's planned and rolling out now, visit the [Microsoft 365 roadmap](https://www.microsoft.com/microsoft-365/roadmap).
 
@@ -108,7 +108,7 @@ Minutes after the alert was triggered, the file was analyzed, and confirmed to b
 
 :::image type="content" source="images/Artifactblockedjuicypotato.png" alt-text="Artifact blocked":::
 
-A few minutes after the artifact was blocked, multiple instances of the same file were blocked on the same device, preventing additional attackers or other malware from deploying on the device.
+A few minutes after the artifact was blocked, multiple instances of the same file were blocked on the same device, preventing more attackers or other malware from deploying on the device.
 
 This example shows that with behavioral blocking and containment capabilities, threats are detected, contained, and blocked automatically.
 

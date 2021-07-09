@@ -1,6 +1,6 @@
 ---
 title: Onboard Windows 10 devices using Mobile Device Management tools
-description: Use Mobile Device Management tools to deploy configuration package on devices so that they are onboarded to the service.
+description: Use Mobile Device Management tools to deploy configuration package on devices so that they're onboarded to the service.
 keywords: onboard devices using mdm, device management, onboard Microsoft Defender for Endpoint devices, mdm
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -33,7 +33,7 @@ You can use mobile device management (MDM) solutions to configure devices. Defen
 For more information on using Defender for Endpoint CSP see, [WindowsAdvancedThreatProtection CSP](https://msdn.microsoft.com/library/windows/hardware/mt723296(v=vs.85).aspx) and [WindowsAdvancedThreatProtection DDF file](https://msdn.microsoft.com/library/windows/hardware/mt723297(v=vs.85).aspx).
 
 ## Before you begin
-If you're using Microsoft Intune, you must have the device MDM Enrolled. Otherwise, settings will not be applied successfully. 
+If you're using Microsoft Intune, you must have the device MDM Enrolled. Otherwise, settings won't be applied successfully. 
 
 For more information on enabling MDM with Microsoft Intune, see [Device enrollment (Microsoft Intune)](/mem/intune/enrollment/device-enrollment).
 
@@ -60,7 +60,7 @@ For more information on using Defender for Endpoint CSP see, [WindowsAdvancedThr
 Check out the [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)  or  [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) to see the various paths in deploying Microsoft Defender for Endpoint.
 
 ## Offboard and monitor devices using Mobile Device Management tools
-For security reasons, the package used to Offboard devices will expire 30 days after the date it was downloaded. Expired offboarding packages sent to a device will be rejected. When downloading an offboarding package you will be notified of the packages expiry date and it will also be included in the package name.
+For security reasons, the package used to Offboard devices will expire 30 days after the date it was downloaded. Expired offboarding packages sent to a device will be rejected. When downloading an offboarding package you'll be notified of the packages expiry date and it will also be included in the package name.
 
 > [!NOTE]
 > Onboarding and offboarding policies must not be deployed on the same device at the same time, otherwise this will cause unpredictable collisions.
