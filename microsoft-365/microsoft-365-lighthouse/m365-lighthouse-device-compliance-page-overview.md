@@ -41,7 +41,7 @@ Select any device to view more information on why the device is in its current c
 
 :::image type="content" 
 source="../media/m365-lighthouse-device-compliance-page-overview/devices-device-tab.png" 
-alt-text="Screenshot of the Default baseline page.>.":::
+alt-text="Screenshot of the Devices tab.>.":::
 
 ## Policies tab
 
