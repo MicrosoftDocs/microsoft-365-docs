@@ -69,8 +69,8 @@ Role groups can be customized if needed. To avoid accidental loss of access, we 
 
 To see the specific roles included in each role group, see the following table.
 
-**Role group**|**Roles included**
-|:-----:|:-----: |
+| **Role group**      | **Roles included**                        |
+|:-- |:--|
 | Privacy Management  | Case Management                           |
 |                     | Data Classification Content Viewer        |
 |                     | Data Classification List Viewer           |
@@ -78,26 +78,26 @@ To see the specific roles included in each role group, see the following table.
 |                     | Privacy Management Analysis               |
 |                     | Privacy Management Investigation          |
 |                     | Privacy Management Permanent Contribution |
-|                     |Privacy Management Temporary Contribution  | 
- |Privacy Management Viewer
- |Subject Rights Request Admin
- |View-Only Case
-Privacy Management Admin|Case Management
- |Privacy Management Admin
- |View-Only Case
-Privacy Management Analysts|Case Management
- |Data Classification List Viewer
- |Privacy Management Analysis
- |View-Only Case
-Privacy Management Investigators|Case Management
- |Data Classification Content Viewer
- |Data Classification List Viewer
- |Privacy Management Investigation
- |View-Only Case
-Privacy Management Viewer|Privacy Management Viewer
-Subject Rights Request Administrator|Subject Rights Request Admin
-Privacy Management Contributors|Privacy Management Temporary Contribution
- |Privacy Management Permanent Contribution
+|                     | Privacy Management Temporary Contribution |
+|                     | Privacy Management Viewer                 |
+|                     | Subject Rights Request Admin              |
+|                     | View-Only Case                            |
+| Privacy Management Admin | Case Management                      |
+|                          | Privacy Management Admin             |
+|                          | View-Only Case                       |
+| Privacy Management Analysts | Case Management                   |
+|                             | Data Classification List Viewer   |
+|                             | Privacy Management Analysis       |
+|                             | View-Only Case                    |
+| Privacy Management Investigators | Case Management              |
+|                                  | Data Classification Content Viewer |
+|                                  | Data Classification List Viewer    |
+|                                  | Privacy Management Investigation   |
+|                                  | View-Only Case                     |
+| Privacy Management Viewer        | Privacy Management Viewer          |
+| Subject Rights Request Administrator | Subject Rights Request Admin   |
+|Privacy Management Contributors       | Privacy Management Temporary Contribution |
+|                                      | Privacy Management Permanent Contribution |
 
 ## Configure settings
 
