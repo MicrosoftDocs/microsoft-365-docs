@@ -60,9 +60,9 @@ Some search features you might be familiar with, work differently in a multi-geo
 <table>
 <thead>
 <tr class="header">
-<th align="left"><strong>Feature</strong></th>
-<th align="left"><strong>How it works</strong></th>
-<th align="left"><strong>Workaround</strong></th>
+<th align="left">Feature</th>
+<th align="left">How it works</th>
+<th align="left">Workaround</th>
 </tr>
 </thead>
 <tbody>
@@ -107,8 +107,8 @@ Some of the search features you might be familiar with, aren't supported in a mu
 <table>
 <thead>
 <tr class="header">
-<th align="left"><strong>Search feature</strong></th>
-<th align="left"><strong>Note</strong></th>
+<th align="left">Search feature</th>
+<th align="left">Note</th>
 </tr>
 </thead>
 <tbody>
@@ -249,18 +249,22 @@ With a GET request, you specify the query parameters in the URL. With a POST req
 
 #### Sample GET request that's fanned out to **all** geo locations
 
+```http
 https:// \<tenant\>/\_api/search/query?querytext='sharepoint'&Properties='EnableMultiGeoSearch:true'&ClientType='my\_client\_id'
+```
 
 #### Sample GET request to fan out to **some** geo locations
 
+```http
 https:// \<tenant\>/\_api/search/query?querytext='site'&ClientType='my_client_id'&Properties='EnableMultiGeoSearch:true, MultiGeoSearchConfiguration:[{DataLocation\\:"NAM"\\,Endpoint\\:"https\\://contosoNAM.sharepoint.com"\\,SourceId\\:"B81EAB55-3140-4312-B0F4-9459D1B4FFEE"}\\,{DataLocation\\:"CAN"\\,Endpoint\\:"https\\://contosoCAN.sharepoint-df.com"}]'
+```
 
 > [!NOTE]
 > Commas and colons in the list of geo locations for the MultiGeoSearchConfiguration property are preceded by the **backslash** character. This is because GET requests use colons to separate properties and commas to separate arguments of properties. Without the backslash as an escape character, the MultiGeoSearchConfiguration property is interpreted wrongly.
 
 #### Sample POST request that's fanned out to **all** geo locations
 
-```text
+```http
     {
     "request": {
             "__metadata": {
@@ -285,7 +289,7 @@ https:// \<tenant\>/\_api/search/query?querytext='site'&ClientType='my_client_id
 
 #### Sample POST request that's fanned out to **some** geo locations
 
-```text
+```http
     {
         "request": {
             "Querytext": "SharePoint",
@@ -316,7 +320,7 @@ https:// \<tenant\>/\_api/search/query?querytext='site'&ClientType='my_client_id
 
 Here's a sample CSOM query that's fanned out to **all** geo locations:
 
-```text
+```CSOM
 var keywordQuery = new KeywordQuery(ctx);
 keywordQuery.QueryText = query.SearchQueryText;
 keywordQuery.ClientType = <enter a string here>;
