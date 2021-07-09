@@ -31,7 +31,7 @@ On the Overview tab, you can view device compliance status across your tenants, 
 
 :::image type="content" 
 source="../media/m365-lighthouse-device-compliance-page-overview/device-overview-tab.png" 
-alt-text="Screenshot of the Device overview tab.>.":::
+alt-text="Screenshot of the Overview tab.":::
 
 ## Devices tab
 
@@ -41,7 +41,7 @@ Select any device to view more information on why the device is in its current c
 
 :::image type="content" 
 source="../media/m365-lighthouse-device-compliance-page-overview/devices-device-tab.png" 
-alt-text="Screenshot of the Devices tab.>.":::
+alt-text="Screenshot of the Devices tab.":::
 
 ## Policies tab
 
@@ -49,7 +49,7 @@ On the Policies tab, you can view compliance policies across your tenants and co
 
 :::image type="content" 
 source="../media/m365-lighthouse-device-compliance-page-overview/devices-policies-tab.png" 
-alt-text="Screenshot of the Policies tab.>.":::
+alt-text="Screenshot of the Policies tab.":::
 
 ## Settings tab
 
@@ -57,7 +57,7 @@ The settings tab provides an aggregated report of non-compliant settings across 
 
 :::image type="content" 
 source="../media/m365-lighthouse-device-compliance-page-overview/device-settings-tab.png" 
-alt-text="Screenshot of the Device settings tab.>.":::
+alt-text="Screenshot of the Settings tab.":::
 
 ## Related content
 
