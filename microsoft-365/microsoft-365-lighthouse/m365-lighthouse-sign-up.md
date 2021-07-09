@@ -32,9 +32,7 @@ You must be a Global Administrator in the partner tenant you're signing into.
 
 ## Steps to sign up to Microsoft 365 Lighthouse
 
-Follow these steps to acquire the Microsoft 365 Lighthouse service plan:
-
-1. Open a browser and go to the [Microsoft 365 admin center](https://admin.microsoft.com). 
+1. Go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>. 
 
 1. Go to **Billing** > **Purchase Services** > **Other Services**.
 
@@ -49,9 +47,9 @@ Follow these steps to acquire the Microsoft 365 Lighthouse service plan:
     > [!NOTE]
     > Microsoft 365 Lighthouse requires one license for the tenant. No additional per-user licenses are required. 
 
-    To verify that Microsoft 365 Lighthouse was successfully added to your tenant, look for Microsoft 365 Lighthouse under **Billing > Your Products** in the [Microsoft 365 admin center](https://admin.microsoft.com).
+    To verify that Microsoft 365 Lighthouse was successfully added to your tenant, look for Microsoft 365 Lighthouse under **Billing > Your Products** in the Microsoft 365 admin center.
 
-1. If you aren't redirected to the Microsoft 365 Lighthouse portal, go to `https://lighthouse.microsoft.com/` in your browser.
+1. If you aren't redirected to the Microsoft 365 Lighthouse portal, go to `https://lighthouse.microsoft.com/`.
 
 1. Select **Agree & Continue** to complete the partner agreement amendment.
 
