@@ -47,5 +47,5 @@ The Baseline configurations in the following table come standard with the Micros
 
 ## Related content
 
-Deploy Microsoft 365 Lighthouse Baselines (article)\
+[Deploy Microsoft 365 Lighthouse Baselines](m365-lighthouse-deploy-baselines.md) (article)\
 [Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)
