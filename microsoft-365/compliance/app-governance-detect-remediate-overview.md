@@ -30,18 +30,7 @@ With Microsoft app governance, you can:
 >Anomalous activities from Azure-only apps that are not granted permissions to access Microsoft 365 resources are not included in app governance detection and alerting.
 >
 
-Here's a quick review of required administrator roles for alerts and remediation.
-
-| Role | Read alerts | Update alerts |
-|:-------|:-----|:-------|
-| Compliance Administrator | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) |
-| Compliance Reader | ![Check mark](..\media\checkmark.png) |  |
-| Global Administrator | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) |
-| Global Reader  | ![Check mark](..\media\checkmark.png) |  |
-| Security Administrator | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) |
-| Security Reader  | ![Check mark](..\media\checkmark.png) |  |
-| Security Operator | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) |
-||||
+See the [administrator roles](app-governance-get-started.md#administrator_roles) for which roles can access app governance pages.
 
 
 ## App governance integration with Azure Active Directory and Microsoft Cloud App Security
@@ -81,4 +70,4 @@ CFA #3 Scenario 3: As an admin, I can configure policies to perform automatic
 
 ## Next step
 
-[Get started with app threat detection and remediation.](mapg-detect-remediate-get-started.md)
+[Get started with app threat detection and remediation.](app-governance-detect-remediate-get-started.md)

@@ -31,18 +31,7 @@ With app governance visibility and insights, you can see:
 >Azure-only apps that are not granted permissions to access Microsoft 365 resources are not displayed in app governance.
 >
 
-Here's a quick review of required administrator roles for visibility and insights.
-
-| Role | Read the dashboard | Read all apps |
-|:-------|:-----|:-------|
-| Compliance Administrator | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) |
-| Compliance Reader | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) |
-| Global Administrator | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) |
-| Global Reader  | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) |
-| Security Administrator | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) |
-| Security Reader  | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) |
-| Security Operator | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) |
-||||
+See [administrator roles](app-governance-get-started.md#Administrator_roles) for an overview of required administrator roles for visibility and insights.
 
 <!--
 From messaging doc, page 21:

@@ -139,7 +139,7 @@ On the **Define Policy Actions** page, select **Disable app** if you want MAPG t
 
 On the **Define Policy Status** page, select one of these options:
 
-- **Test mode**: Policies are evaluated but configured actions will not occur. Test mode policies appear with the status of **Test** in the list of policies.
+- **Audit mode**: Policies are evaluated but configured actions will not occur. Audit mode policies appear with the status of **Audit** in the list of policies.
 - **Active**: Policies are evaluated and configured actions will occur.
 - **Inactive**: Policies are not evaluated and configured actions will not occur.
 
@@ -163,7 +163,7 @@ If the number of alerts is an unexpectedly low value, edit the settings of the a
 
 Here is an example of a process for creating a new policy, testing it, and then making it active:
 
-1. Create the new policy with severity, apps, conditions, and actions set to initial values and the status set to **Test mode**.
+1. Create the new policy with severity, apps, conditions, and actions set to initial values and the status set to **Audit mode**.
 2. Check for expected behavior, such as alerts generated.
 3. If the behavior is not expected, edit the policy apps, conditions, and action settings as needed and go back to step 2.
 4. If the behavior is expected, edit the policy and change its status to **Active**.

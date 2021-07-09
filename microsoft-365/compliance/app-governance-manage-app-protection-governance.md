@@ -22,7 +22,7 @@ description: "Implement Microsoft app governance capabilities to govern your app
 
 Cyberattacks have become increasingly sophisticated in the ways they exploit the apps you have deployed in your on-premises and cloud infrastructures to establish a starting point for privilege escalation, lateral movement, and exfiltration of your data. To understand the potential risks and stop these types of attacks, you need to gain clear visibility into your organization’s app compliance posture to quickly identify when an app exhibits anomalous behaviors and to respond when these behaviors present risks to your environment, data, and users.
 
-The app governance add-on feature to Microsoft Cloud App Security is a security and compliance solution for business productivity and line of business apps built by third-party vendors and published for the Microsoft 365 application platform. App governance delivers full visibility, oversight, and governance into how these publishers and apps access, use, and share your sensitive data stored in Microsoft 365 through automated app-specific services and open Internet authentication protocols.
+The app governance add-on feature to Microsoft Cloud App Security is a security and policy management capability designed for OAuth-enabled apps that access Microsoft 365 data through Microsoft Graph APIs. App governance delivers full visibility, oversight, and governance into how these apps and their users access, use, and share your sensitive data stored in Microsoft 365 through automated app-specific services and open Internet authentication protocols.
 
 <!--
 The scale of ongoing cybersecurity incidents affecting large enterprises and smaller businesses highlights the dangers of supply chain attacks and the need to strengthen the security and compliance posture of every organization. Accelerated cloud adoption with Microsoft 365 and its rich application ecosystem are constantly growing. Attackers are gaining organizational footholds through applications because:
@@ -48,7 +48,7 @@ Microsoft allows developers to build cloud applications using Azure Active Direc
 
 ## A first glimpse at app governance
 
-To see the App Governance dashboard, go to [https://compliance.microsoft.com/m365appprotection](https://compliance.microsoft.com/m365appprotection). Note that your sign-in account must have one of the above administrator roles to view any app governance data.
+To see the App Governance dashboard, go to [https://compliance.microsoft.com/appgovernance](https://compliance.microsoft.com/appgovernance). Note that your sign-in account must have one of the [administrator roles](app-governance-get-started.md#Administrator_roles) to view any app governance data.
 
 ## App governance integration with Azure Active Directory and Microsoft Cloud App Security
 
@@ -109,7 +109,7 @@ Using app governance to protect your tenant and its data from potentially malici
 
 | Capability | Description |
 |:-------|:-----|
-| [App visibility and insights](mapg-visibility-insights-overview.md) | Get a 360° view on traffic and activity of the Microsoft 365 applications in your tenant. |
-| [App policies for reinforced governance](mapg-app-policies-overview.md) | Create proactive or reactive app policies, which will allow you to enforce governance for your Microsoft 3635 apps. |
-| [Detection and remediation](mapg-detect-remediate-overview.md) | Based on platform detection alerts or policy-generated detection alerts, monitor your apps for anomalous app behavior and remediate them, either automatically based on app policy settings or manually. |
+| [App visibility and insights](app-governance-visibility-insights-overview.md) | Get a 360° view on traffic and activity of the Microsoft 365 applications in your tenant. |
+| [App policies for reinforced governance](app-governance-app-policies-overview.md) | Create proactive or reactive app policies, which will allow you to enforce governance for your Microsoft 3635 apps. |
+| [Detection and remediation](app-governance-detect-remediate-overview.md) | Based on platform detection alerts or policy-generated detection alerts, monitor your apps for anomalous app behavior and remediate them, either automatically based on app policy settings or manually. |
 |||

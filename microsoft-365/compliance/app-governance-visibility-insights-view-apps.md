@@ -44,6 +44,9 @@ You will see a list of apps and this information:
   Indicates whether the app is compatible with Microsoft technologies, compliant with cloud app security best practices, and supported by Microsoft.
 
 - Last modified
+
+  Shows the date app governance was installed in client if that date is more recent than the date the app was last modified.
+
 - Date installed
 - Privilege level
 - Number of users
