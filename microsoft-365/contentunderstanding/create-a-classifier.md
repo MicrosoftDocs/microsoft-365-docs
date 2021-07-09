@@ -127,7 +127,7 @@ To create an explanation:
 
     If you receive a **Mismatch** on the labeled files, you might need to create an additional explanation to provide the model more information to identify the document type. If this happens, click on the file to get more information about why the mismatch occurred.
 
-Once you've trained an extractor, that trained extractor can be used as an explanation. In the **Explanations** section, this is shown in the **Type** column as **Model reference**.
+Once you've trained an extractor, that trained extractor can be used as an explanation. In the **Explanations** section, this is shown as a **Model reference**.
 
 ![Screenshot of the Explanations section showing the type Model reference.](../media/content-understanding/explanations-model-reference.png)
 
