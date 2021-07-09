@@ -49,6 +49,56 @@ Permissions and role assignments for privacy management can be handled within th
 
 ### Learn about role groups and roles
 
+This section outlines the role groups and roles relevant to privacy management. Members should be assigned to role groups by the top-level admin depending on what tasks they need to accomplish and what level of file access is appropriate. Each role group includes one or more roles. These roles may pertain to specific privacy management tasks or may correspond to key functions that are enabled or restricted for that group’s members.
+
+Role groups can be customized if needed. To avoid accidental loss of access, we recommend creating a copy of the existing role group you wish to customize, giving the copy an identifiable name, making and verifying your changes to the new group, and assigning people to it as appropriate.
+
+**Privacy Management**: This group contains all the privacy management permission roles in a single group. This is the easiest way to quickly get started with privacy management and manage access control for other groups that will use privacy management. It is also a good fit for organizations that do not need separate permissions defined for separate groups of users.
+
+**Privacy Management Administrators**: Members of this role group focus on configuration and administration tasks, and have broad access to privacy management functions, including creating, reading, updating, and deleting privacy management policies, subject rights requests, privacy management permissions, and privacy management settings.
+
+**Privacy Management Analysts**: Members of this role group act as privacy management case analysts. They can investigate policy matches, view file metadata, and take remediation actions. This group cannot access full files through the Content Explorer.
+
+**Privacy Management Investigators**: Members of this group act as privacy management data investigators. They can investigate policy matches, view the associated file content, and take remediation actions. This group can access files through the Content Explorer.
+
+**Privacy Management Viewer**: Members of this group can view analytical information in privacy management, like the overview, data profile, and subject request reports.
+
+**Subject Rights Request Administrators**: Members of this group have full access to administer and create subject rights requests.
+
+**Privacy Management Contributors**: Members of this group have contributor access to subject rights requests.
+
+To see the specific roles included in each role group, see the following table.
+
+**Role group**|**Roles included**
+:-----:|:-----:
+Privacy Management|Case Management
+ |Data Classification Content Viewer
+ |Data Classification List Viewer
+ |Privacy Management Admin
+ |Privacy Management Analysis
+ |Privacy Management Investigation
+ |Privacy Management Permanent Contribution
+ |Privacy Management Temporary Contribution
+ |Privacy Management Viewer
+ |Subject Rights Request Admin
+ |View-Only Case
+Privacy Management Admin|Case Management
+ |Privacy Management Admin
+ |View-Only Case
+Privacy Management Analysts|Case Management
+ |Data Classification List Viewer
+ |Privacy Management Analysis
+ |View-Only Case
+Privacy Management Investigators|Case Management
+ |Data Classification Content Viewer
+ |Data Classification List Viewer
+ |Privacy Management Investigation
+ |View-Only Case
+Privacy Management Viewer|Privacy Management Viewer
+Subject Rights Request Administrator|Subject Rights Request Admin
+Privacy Management Contributors|Privacy Management Temporary Contribution
+ |Privacy Management Permanent Contribution
+
 ## Configure settings
 
 ### Anonymization
