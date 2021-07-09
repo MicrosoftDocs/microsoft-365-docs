@@ -48,7 +48,7 @@ Microsoft allows developers to build cloud applications using Azure Active Direc
 
 ## A first glimpse at app governance
 
-To see the App Governance dashboard, go to [https://compliance.microsoft.com/appgovernance](https://compliance.microsoft.com/appgovernance). Note that your sign-in account must have one of the [administrator roles](app-governance-get-started.md#Administrator_roles) to view any app governance data.
+To see the App Governance dashboard, go to [https://compliance.microsoft.com/appgovernance](https://compliance.microsoft.com/appgovernance). Note that your sign-in account must have one of the [administrator roles](app-governance-get-started.md#administrator-roles) to view any app governance data.
 
 ## App governance integration with Azure Active Directory and Microsoft Cloud App Security
 

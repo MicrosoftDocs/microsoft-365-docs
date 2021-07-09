@@ -30,7 +30,7 @@ With Microsoft app governance, you can:
 >Anomalous activities from Azure-only apps that are not granted permissions to access Microsoft 365 resources are not included in app governance detection and alerting.
 >
 
-See the [administrator roles](app-governance-get-started.md#administrator_roles) for which roles can access app governance pages.
+See the [administrator roles](app-governance-get-started.md#administrator-roles) for which roles can access app governance pages.
 
 
 ## App governance integration with Azure Active Directory and Microsoft Cloud App Security
