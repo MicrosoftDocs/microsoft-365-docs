@@ -31,7 +31,7 @@ From the Search users tab, you can quickly search across tenants for specific us
 
 :::image type="content" 
 source="../media/m365-lighthouse-users-page-overview\users-search-users-tab.png" 
-alt-text="Screenshot of the Default baseline page.>.":::
+alt-text="Screenshot of the Search users tab.>.":::
 
 ## Risky users tab
 
@@ -39,7 +39,7 @@ The Risky Users tab shows user accounts across your tenants that have been flagg
 
 :::image type="content" 
 source="../media/m365-lighthouse-users-page-overview\users-risky-users-tab.png" 
-alt-text="Screenshot of the Default baseline page.>.":::
+alt-text="Screenshot of the Risky users tab.>.":::
 
 ## Multifactor Authentication tab
 
@@ -47,7 +47,7 @@ The Multifactor Authentication tab provides detailed information on the status o
 
 :::image type="content" 
 source="../media/m365-lighthouse-users-page-overview\users-mfa-tab.png" 
-alt-text="Screenshot of the Default baseline page.>.":::
+alt-text="Screenshot of the MFA tab.>.":::
 
 ## Password reset tab
 
@@ -55,7 +55,7 @@ The Password reset tab shows detailed information on the status of self-service 
 
 :::image type="content" 
 source="../media/m365-lighthouse-users-page-overview\users-password-reset-tab.png" 
-alt-text="Screenshot of the Default baseline page.>.":::
+alt-text="Screenshot of the Password reset tab.>.":::
 
 ## Related content
 
