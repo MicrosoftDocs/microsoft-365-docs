@@ -78,7 +78,7 @@ If a user issue needs to be escalated to Microsoft Managed Desktop, it's helpful
 
 ### Elevation portal 
 
-Since Microsoft Managed Desktop devices run on standard user by default, some tasks require elevation of privileges. (For more information about user account control, see [User account control](/windows/security/identity-protection/user-account-control/user-account-control-overview)) In order for support staff to be able to [perform tasks](../working-with-managed-desktop/end-user-support.md#elevation-requests) while troubleshooting issues for users, we provide "just-in-time" access to an admin account. This password accessed securely by only those you designate, and rotates every couple hours.  
+Since Microsoft Managed Desktop devices run on standard user by default, some tasks require elevation of privileges. For more information about user account control, see [User account control](/windows/security/identity-protection/user-account-control/user-account-control-overview). In order for support staff to be able to [perform tasks](../working-with-managed-desktop/end-user-support.md#elevation-requests) while troubleshooting issues for users, we provide "just-in-time" access to an admin account. This password accessed securely by only those you designate, and rotates every couple hours.  
 
 For steps on how to set up users for access to this portal, see [Enable user support features](../get-started/enable-support.md).
 
