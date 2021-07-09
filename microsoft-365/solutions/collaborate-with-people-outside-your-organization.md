@@ -17,6 +17,7 @@ ms.custom:
 - seo-marvel-jun2020
 localization_priority: Normal
 f1.keywords: NOCSH
+recommendations: false
 description: Learn how to configure Microsoft 365 apps like Teams, OneDrive, and SharePoint for collaboration with people outside your organization.
 ---
 
@@ -28,6 +29,8 @@ Collaborating with people outside your organization consists of two major compon
 
 - **Enable sharing** - Configure the sharing controls across Azure Active Directory, Teams, Microsoft 365 Groups, and SharePoint to allow the level of sharing that you want for your organization.
 - **Enable additional security** - While the basic sharing features can be configured to require people outside your organization to authenticate, Microsoft 365 provides many additional security and compliance features to help you protect your data and maintain your governance policies while sharing externally.
+
+Read [Set up secure collaboration with Microsoft 365 and Microsoft Teams](/microsoft-365/solutions/setup-secure-collaboration-with-teams) to learn how external sharing ties in with the overall Microsoft 365 collaboration guidance.
 
 ## Enable sharing
 

@@ -19,10 +19,12 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Learn how to easily share your business files externally."
+description: "Learn how to use an Anyone link in Microsoft 365 to easily share your business files externally."
 ---
 
 # Easily share files externally
+
+## Watch: Share files with an Anyone link
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2dCOV?autoplay=false]
 

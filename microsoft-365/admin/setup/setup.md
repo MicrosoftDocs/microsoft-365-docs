@@ -36,3 +36,9 @@ Not a business? See [Set up for Microsoft 365 Family or Microsoft 365 Personal](
 - [Set up Microsoft Business Standard](setup-business-standard.md)
 - [Set up Microsoft 365 Business Premium](../../business/set-up.md)
 - [Set up Microsoft 365 Apps for business](setup-apps-for-business.md)
+
+## Related content
+
+[Get started](../setup/index.yml) (link page)\
+[How to sign up - Admin Help](../admin-overview/sign-up-for-office-365.md) (video)\
+[Try or buy a Microsoft 365 for business subscription](../../commerce/try-or-buy-microsoft-365.md) (article)

@@ -23,6 +23,7 @@ ms.custom:
 - AdminSurgePortfolio
 ms.assetid: f6b00895-b5fd-4af6-a656-b7788ea20cbb
 description: Learn about how to upgrade Microsoft Office to the latest Office client for users in your organization.
+ms.topic: article
 ---
 
 # Upgrade your Microsoft 365 for business users to the latest Office client
@@ -86,7 +87,7 @@ Switch to a subscription that includes Office. See [Switch to a different Micros
 
 **Option 2: Buy individual, one-time purchases of Office, or buy Office through a volume license**
 
- - Buy an individual, one-time purchase of Office. See [Office Home &amp; Business](https://products.office.com/home-and-business) or [Office Professional](https://products.office.com/professional)
+ - Buy an individual, one-time purchase of Office. See [Office Home &amp; Business](https://www.microsoft.com/microsoft-365/buy/compare-all-microsoft-365-products-b) or [Office Professional](https://www.microsoft.com/microsoft-365/p/office-professional-2019/CFQ7TTC0K7C5/)
 
      OR
 

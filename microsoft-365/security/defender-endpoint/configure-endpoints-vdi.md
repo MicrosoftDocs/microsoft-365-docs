@@ -1,7 +1,7 @@
 ---
 title: Onboard non-persistent virtual desktop infrastructure (VDI) devices
-description: Deploy the configuration package on virtual desktop infrastructure (VDI) device so that they are onboarded to Microsoft Defender ATP the service.
-keywords: configure virtual desktop infrastructure (VDI) device, vdi, device management, configure Windows ATP endpoints, configure Microsoft Defender for Endpoint endpoints
+description: Deploy the configuration package on virtual desktop infrastructure (VDI) device so that they are onboarded to Microsoft Defender for Endpoint service.
+keywords: configure virtual desktop infrastructure (VDI) device, vdi, device management, configure Microsoft Defender for Endpoint, endpoints
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -19,7 +19,7 @@ ms.date: 04/16/2020
 ms.technology: mde
 ---
 
-# Onboard non-persistent virtual desktop infrastructure (VDI) devices
+# Onboard the non-persistent virtual desktop infrastructure (VDI) devices
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -58,9 +58,9 @@ The following steps will guide you through onboarding VDI devices and will highl
 
 ### For Windows 10 or Windows Server 2019
 
-1.  Open the VDI configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from [Microsoft Defender Security Center](https://securitycenter.windows.com/):
+1.  Open the VDI configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from [Microsoft 365 Defender portal](https://security.microsoft.com/):
 
-    1.  In the navigation pane, select **Settings** > **Onboarding**.
+    1. In the navigation pane, select **Settings** > **Endpoints** > **Device management** > **Onboarding**.
 
     1. Select Windows 10 as the operating system.
 
@@ -106,11 +106,11 @@ The following steps will guide you through onboarding VDI devices and will highl
    
       - For single entry for each device: 
     
-        Check only one entry in Microsoft Defender Security Center.
+        Check only one entry in Microsoft 365 Defender portal.
 
       - For multiple entries for each device: 
        
-        Check multiple entries in Microsoft Defender Security Center.
+        Check multiple entries in Microsoft 365 Defender portal.
 
 6. Click **Devices list** on the Navigation pane.
 
@@ -150,9 +150,9 @@ DISM /Unmount-Image /MountDir:"C:\Temp\OfflineServicing" /commit
 ```
 
 For more information on DISM commands and offline servicing, please refer to the articles below:
-- [Modify a Windows image using DISM](https://docs.microsoft.com/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism)
-- [DISM Image Management Command-Line Options](https://docs.microsoft.com/windows-hardware/manufacture/desktop/dism-image-management-command-line-options-s14)
-- [Reduce the Size of the Component Store in an Offline Windows Image](https://docs.microsoft.com/windows-hardware/manufacture/desktop/reduce-the-size-of-the-component-store-in-an-offline-windows-image)
+- [Modify a Windows image using DISM](/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism)
+- [DISM Image Management Command-Line Options](/windows-hardware/manufacture/desktop/dism-image-management-command-line-options-s14)
+- [Reduce the Size of the Component Store in an Offline Windows Image](/windows-hardware/manufacture/desktop/reduce-the-size-of-the-component-store-in-an-offline-windows-image)
 
 If offline servicing is not a viable option for your non-persistent VDI environment, the following steps should be taken to ensure consistency and sensor health:
 

@@ -43,19 +43,17 @@ Complete the following steps to create a case and add members. The user who crea
 
    The new case is created and the **Settings** tab in the new case is displayed.
 
-6. In the **Access & permissions** tile on the **Settings** tab, click **Select**, and then click **Update**.
+6. In the **Access & permissions** tile on the **Settings** tab, click **Select**.
 
-7. Click **Update**.
+7. On the **Manage this case** flyout page, under **Manage members**, click **Add** to add members to the case.
 
-8. On the **Manage this case** flyout page, under **Manage members**, click **Add** to add members to the case.
+8. In the list of people, select the check box next to the names of the people that you want to add to the case. As previously explained, be sure that the people you add to the case have been assigned the appropriate eDiscovery permissions.
 
-9. In the list of people, select the check box next to the names of the people that you want to add to the case. As previously explained, be sure that the people you add to the case have been assigned the appropriate eDiscovery permissions.
+9. After you've selected the people to add as members of the case, click **Add**.
 
-10. After you've selected the people to add as members of the case, click **Add**.
+10. In the **Manage this case** flyout page, click **Save** to save the new list of case members.
 
-11. In the **Manage this case** flyout page, click **Save** to save the new list of case members.
-
-12. Click the **Home** tab to go to the case home page.
+11. Click the **Home** tab to go to the case home page.
 
 ## Manage the workflow
 

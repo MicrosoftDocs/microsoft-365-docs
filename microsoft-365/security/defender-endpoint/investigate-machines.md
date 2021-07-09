@@ -34,7 +34,7 @@ ms.technology: mde
 Investigate the details of an alert raised on a specific device to identify other behaviors or events that might be related to the alert or the potential scope of the breach.
 
 > [!NOTE]
-> As part of the investigation or response process, you can collect an investigation package from a device. Here's how: [Collect investigation package from devices](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/respond-machine-alerts#collect-investigation-package-from-devices).
+> As part of the investigation or response process, you can collect an investigation package from a device. Here's how: [Collect investigation package from devices](/microsoft-365/security/defender-endpoint/respond-machine-alerts#collect-investigation-package-from-devices).
 
 You can click on affected devices whenever you see them in the portal to open a detailed report about that device. Affected devices are identified in the following areas:
 
@@ -104,12 +104,12 @@ The **Timeline** tab provides a chronological view of the events and associated 
 The timeline also enables you to selectively drill down into events that occurred within a given time period. You can view the temporal sequence of events that occurred on a device over a selected time period. To further control your view, you can filter by event groups or customize the columns.
 
 >[!NOTE]
-> For firewall events to be displayed, you'll need to enable the audit policy, see [Audit Filtering Platform connection](https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-filtering-platform-connection).
+> For firewall events to be displayed, you'll need to enable the audit policy, see [Audit Filtering Platform connection](/windows/security/threat-protection/auditing/audit-filtering-platform-connection).
 >Firewall covers the following events
 >
->- [5025](https://docs.microsoft.com/windows/security/threat-protection/auditing/event-5025) - firewall service stopped
->- [5031](https://docs.microsoft.com/windows/security/threat-protection/auditing/event-5031) - application blocked from accepting incoming connections on the network
->- [5157](https://docs.microsoft.com/windows/security/threat-protection/auditing/event-5157) - blocked connection
+>- [5025](/windows/security/threat-protection/auditing/event-5025) - firewall service stopped
+>- [5031](/windows/security/threat-protection/auditing/event-5031) - application blocked from accepting incoming connections on the network
+>- [5157](/windows/security/threat-protection/auditing/event-5157) - blocked connection
 
 ![Image of device timeline with events](images/timeline-device.png)
 
@@ -167,12 +167,12 @@ The **Missing KBs** tab lists the missing security updates for the device.
 
 ### Active alerts
 
-The **Azure Advanced Threat Protection** card will display a high-level overview of alerts related to the device and their risk level, if you have enabled the Azure ATP feature, and there are any active alerts. More information is available in the "Alerts" drill down.
+The **Azure Advanced Threat Protection** card will display a high-level overview of alerts related to the device and their risk level, if you have enabled the Microsoft Defender for Identity feature, and there are any active alerts. More information is available in the "Alerts" drill down.
 
 ![Image of active alerts card](images/risk-level-small.png)
 
 >[!NOTE]
->You'll need to enable the integration on both Azure ATP and Defender for Endpoint to use this feature. In Defender for Endpoint, you can enable this feature in advanced features. For more information on how to enable advanced features, see [Turn on advanced features](advanced-features.md).
+>You'll need to enable the integration on both Microsoft Defender for Identity and Defender for Endpoint to use this feature. In Defender for Endpoint, you can enable this feature in advanced features. For more information on how to enable advanced features, see [Turn on advanced features](advanced-features.md).
 
 ### Logged on users
 

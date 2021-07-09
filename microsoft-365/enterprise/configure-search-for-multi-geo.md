@@ -12,7 +12,7 @@ ms.collection: Strat_SP_gtc
 localization_priority: Normal
 f1.keywords:
 - NOCSH
-description: Learn how to configure search in a multi-geo environment. Only some clients, such as OneDrive for Business, can return results in a multi-geo environment.
+description: Learn how to configure search in a multi-geo environment. Only some clients, such as OneDrive, can return results in a multi-geo environment.
 ---
 
 # Configure Search for Microsoft 365 Multi-Geo
@@ -25,13 +25,13 @@ For example, a user in one geo location can search for content stored in another
 
 These clients can return results from all geo locations:
 
-- OneDrive for Business
+- OneDrive
 - Delve
 - The SharePoint home page
 - The Search Center
 - Custom search applications that use the SharePoint Search API
 
-### OneDrive for Business
+### OneDrive
 
 As soon as the multi-geo environment has been set up, users that search in OneDrive get results from all geo locations.
 
@@ -117,8 +117,8 @@ Some of the search features you might be familiar with, aren't supported in a mu
 <td align="left">App-only authentication (privileged access from services) isn't supported in multi-geo search.</td>
 </tr>
 <tr class="even">
-<td align="left">Guest users</td>
-<td align="left">Guest users only get results from the geo location that they're searching from.</td>
+<td align="left">Guests</td>
+<td align="left">Guests only get results from the geo location that they're searching from.</td>
 </tr>
 </tbody>
 </table>
@@ -324,5 +324,5 @@ Here's a sample CSOM query that's fanned out to **all** geo locations:
 var keywordQuery = new KeywordQuery(ctx);
 keywordQuery.QueryText = query.SearchQueryText;
 keywordQuery.ClientType = <enter a string here>;
-keywordQuery["EnableMultiGeoSearch"] = true;
+keywordQuery.Properties["EnableMultiGeoSearch"] = true;
 ```

@@ -41,8 +41,6 @@ Devices must meet these requirements:
     
 ## Use the setup guide to create devices and profiles
 
-[![Label to let you know the admin center is changing and you can find more details at aka.ms/aboutM365preview.](../media/m365admincenterchanging.png)](/office365/admin/microsoft-365-admin-center-preview)
-
 If you haven't created device groups or profiles yet, the best way to get started is by using the step-by-step guide. You can also [add devices](create-and-edit-autopilot-devices.md) and [assign profiles](create-and-edit-autopilot-profiles.md) to them without using the guide. 
   
 1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
@@ -89,3 +87,8 @@ If you haven't created device groups or profiles yet, the best way to get starte
     Choose **Next**.
     
 6. **You're done** indicates that the profile you created (or chose) will be applied to the device group you created by uploading the list of devices. The settings will be in effect when the device users sign in next. Choose **Close**.
+
+## Related content
+
+[About AutoPilot Profile settings](autopilot-profile-settings.md) (article)\
+[Options for protecting your devices and app data](../admin/devices/choose-device-security.md) (article)
