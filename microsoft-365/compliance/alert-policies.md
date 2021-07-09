@@ -59,7 +59,7 @@ Go to <https://compliance.microsoft.com> and then select **Policies** > **Alert*
 ![In the compliance center, select Policies,and under Alert, select Alert policies to view and create alert policies](../media/LaunchAlertPoliciesMCC.png)
 
 > [!NOTE]
-> You have to be assigned the View-Only Manage Alerts role to view alert policies in the Microsoft 365 compliance center. You have to be assigned the Manage Alerts role to create and edit alert policies. For more information, see [Permissions in the security and compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md).
+> You have to be assigned the View-Only Manage Alerts role to view alert policies in the Microsoft 365 compliance center. You have to be assigned the Manage Alerts role to create and edit alert policies. For more information, see [Permissions in the security and compliance center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md).
 
 An alert policy consists of the following settings and conditions.
 
