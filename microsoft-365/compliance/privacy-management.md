@@ -82,7 +82,7 @@ Since this focuses on the data specific to your business, any personal accounts 
 For more information about how Microsoft approaches privacy and safeguards your data, see the following resources:
 
 - [Microsoft Privacy Principles](https://www.microsoft.com/en-us/trust-center/privacy)
-- [Privacy overview](assurance-privacy.md)
+- [Privacy overview](/assurance/assurance-privacy.md)
 
 ## Next steps
 
