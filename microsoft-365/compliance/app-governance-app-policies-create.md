@@ -168,7 +168,7 @@ Here is an example of a process for creating a new policy, testing it, and then 
 3. If the behavior is not expected, edit the policy apps, conditions, and action settings as needed and go back to step 2.
 4. If the behavior is expected, edit the policy and change its status to **Active**.
 
-![The create app policy workflow](../media/manage-app-protection-governance/app-governance-create-new-policy-process.png)
+![The create app policy workflow](../media/manage-app-protection-governance/mapg-create-new-policy-process.png)
 
 ## Next step
 
