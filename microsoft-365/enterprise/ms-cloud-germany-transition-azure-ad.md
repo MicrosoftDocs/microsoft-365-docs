@@ -78,7 +78,7 @@ If you publish an application that is available to users who are outside of your
 
 **What about adding new multi-tenant applications during migration?**
 
-If you want to consume a new application that is published by another organization (multi-tenant application) you will be restricted from adding that application during the migration process (phases 2 through phase 9).  You may execute this task once your organization completes phase 9 and is fully transitioned to the Azure public instance.
+If you want to consume a new application that is published by another organization (multi-tenant application) you will be restricted from adding that application during the migration process (phases 2 through phase 9).  You may execute this task when your organization completes phase 9 and is fully transitioned to the Azure public instance.
 
 ## Additional considerations
 
