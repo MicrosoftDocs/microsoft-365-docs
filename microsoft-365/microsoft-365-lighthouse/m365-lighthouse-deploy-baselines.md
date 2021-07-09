@@ -42,11 +42,11 @@ Select **Baselines** from the left navigation pane to open the Baselines page. Y
 
 \[screenshot placeholder\]
 
-## Deploy a new Baseline configuration  
+## Deploy a Baseline configuration  
 
 1. In the left navigation page, select **Tenants** to view a list of your onboarded tenants.
 
-2. Select the tenant you want to deploy the new Baseline configuration to.
+2. Select the tenant you want to deploy the Baseline configuration to.
 
 3. Select the **Deployment plan** tab to see all the deployment steps from the Baseline that have been added to the tenant's deployment plan.
 
