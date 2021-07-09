@@ -71,7 +71,7 @@ Administrators can set and manage sharing policies for each of their locations. 
 
 ## Stream
 
-Videos uploaded to Stream are stored in the OneDrive of the person uploading. Meeting recordings are stored in the OneDrive of each attendee who records the meeting.
+Videos uploaded to Stream in a 1:1 chat are stored in the OneDrive of the person uploading. Meeting recordings are stored in the OneDrive of each attendee who records the meeting.
 
 ## Taxonomy
 
