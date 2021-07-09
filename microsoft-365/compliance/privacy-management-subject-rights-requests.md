@@ -20,44 +20,149 @@ description: "The subject rights request solution in Microsoft privacy managemen
 
 # Manage subject rights requests in privacy management (preview)
 
+In this article: learn about how to use the subject rights request solution to **find personal data** in your environment, **collaborate on reviews**, create **reports**, and **automate** key tasks.
+
 ## Purpose of subject rights requests
+
+Privacy management provides powerful subject rights requests capabilities to help you handle requests from people seeking to manage their personal data within your organization. These are sometimes also referred to as data subject requests (DSRs), data subject access requests (DSARs), or consumer rights requests. Privacy management empowers personnel responsible for fulfilling subject rights requests to easily identify data subjects and find their personal information among your organization’s data in Exchange, SharePoint, OneDrive, and Teams.
+
+Privacy management is uniquely capable in helping you prioritize items to review within the data you collect for these requests. The solution is aware of Microsoft Information Protection sensitivity labels, which indicate content that is potentially confidential in nature and may necessitate special review, and flags items that are labeled in this way. In addition, the solution can detect and flag items containing the data of multiple people, where you may need to redact content prior to supplying it to the data subject.
+
+Once data has been collected and evaluated, you can select the most relevant items to include in your reports and exports, and securely collaborate with other team members to move the requests toward completion.
 
 ## Get started with subject rights requests
 
+Privacy management provides a central hub for your privacy administrators to handle subject rights requests that your organization has received.
+
+To begin handling a new request case or to work on a request in progress, visit the main **Subject rights requests*** page. It provides a visual overview of the cases that your team has created within privacy management, their status (active, closed, or overdue), and the request types, as well as a filterable list of all requests. This is also where you can go to open a new request.
+
+To view details about open cases, select any request in the list and choose **Go to request details**. For more information, see [Review and take action on requests](#review-and-take-action-on-requests).
+
+To open a new request, see [Create a request](#create-a-request).
+
 ## Create a request
+
+Subject rights management administrators can use privacy management’s wizard to create requests. This will guide you through the process of finding personal data about a specified data subject and fulfilling their request.
+
+The four main steps include the following.
 
 ### Identify the data subject
 
+Provide the name of the subject who made the request and specify their relationship to your company.
+
 ### Select the request type
+
+Choose a request type based on what the data subject wants you to do with their data. If the request relates to a specific data privacy regulation, you can also select it from a provided list to add more context. Setting a deadline (required) will make it easy to sort for approaching or overdue requests and resolve them in a timely manner. Request types include:
+
+- **Access**: Provides a summary of the data subject’s personal information held by your organization in Microsoft 365.
+- **Export**: Provides a summary and an export of the data subject’s personal information, as collected and annotated during review.
+- **Tagged list for follow u**p: Generates a summary of files which may require additional action outside of privacy management. One example scenario may be if you need to facilitate deletion of the data subject’s personal information per their request.
 
 ### Confirm the request name
 
+This step allows you to confirm the name of this request and add an optional description for reference.
+
 ### Review and finish
+
+A summary of what you’ve entered during the previous steps. Any field can be edited before you select **Create request**.
+
+Note that at this level, some properties can be edited after the request has been created, including the deadline, request name, and description, but key properties like the identity of the subject cannot be changed. To edit an existing request, find it in your list of requests on the Subject rights requests page and use the **Edit request details** action.
 
 ## Review and take action on requests
 
+Once a request has been opened, privacy management will begin searching your Microsoft 365 data to find data about your subject. To see the initial results, select that request in the list and choose **Go to request details**. Here you can learn more about the request’s properties, the search findings, and the request’s status. This will also become your hub to work and collaborate on managing the files found, creating reports and exports, and completing the request.
+
+Tiles on this page include:
+
+- **Details**: The core details about the request, including its deadline and request date, its description, and the related privacy regulation.
+- **Progress**: A timeline indicating completed steps and any tasks yet to be finished.
+- **Data estimate summary**: An overview of the data evaluated in your search. To learn more about this information, see View and edit search queries.
+- **Priority items to review**: If applicable, this will show information about important items that privacy management has detected for you, including confidential information already bearing a Microsoft sensitivity label, or items with data about multiple individuals that may require redaction. Priority items can be found under Data collected by filtering by the “Priority Types” column.
+
 ### Monitor progress and complete requests
+
+Subject rights requests go through multiple stages on the way to completion. Some automatically progress as privacy management does its data evaluation, and others are advanced by subject rights requests administrators and contributors completing essential steps like reviewing, selecting, and redacting files.
+
+Since requests may need to be worked on over time or by multiple contributors, privacy management gives continual updates on a request’s status and guidance on the next necessary steps to take. These can be viewed on the subject rights request’s overview page. The progress stages include the following.
 
 #### Data estimate
 
+This represents the initial stage of data evaluation. After a request is created, privacy management will identify how many items in your organization’s data include potential matches to your data subject and where these items are located (e.g. in Exchange, SharePoint, etc.). Once the data estimate is done, you can preview the results and review the details of your original search query. If you preview the search results and wish to edit your search query, you can do so, refer to View and edit search queries section for more information. If your initial results look satisfactory, you can proceed to **retrieve data**.
+
+- Up to 10,000 individual items can be retrieved from any search. Files associated with a matching item (for example, file attachments on an email) may count toward your total. If your search exceeds the file count threshold, try revising your search to refine its scope. See the View and edit search queries section for more information. You will not be able to edit your search query once you initiate the retrieve data stage.
+
 #### Retrieve data
+
+This stage indicates that privacy management is in the process of retrieving your data. Once it is complete, it will automatically advance to **review data**.
 
 #### Review data
 
+At this stage, your contributors should review the findings under the Data collected tab. Essential steps include:
+
+- Choose whether to include the identified items in your summaries and/or exports. If a reported match is not required in the export or report, select the option to "Exclude." If the content appears to be a false positive, you can choose "Not a match" to both exclude the file from your final reports and flag the item as something that should not have been picked up by the request. To set the status of an item, use the action menu (vertical ellipses) beside the name of the item and select your desired choice. If prompted, add a note for internal reference to explain your decision. Notes are required when excluding files.
+- Use the **Apply tags** option to help you identify items that need attention. The available tags may be provided by the system, for instance tagging an item for follow-up, or may be custom tags as defined under Settings.
+- Use **Annotate** to create inline mark-ups or redactions on a selected file. For example, if you need to include a file for an individual that also contains the personal information of others, you can use **Area redaction** (under the Drawing button in the command bar) to black out all information that does not pertain to the person who made the request. When your edits are complete, select Include to add the redacted file to the request. Note that annotation creates a copy of the file, so that nothing in the original file is altered and will remain in its original location. The copy is stored in your Azure blob and will remain for the duration of your stated data retention period. For more information, see [Data retention](#data-retention) below.
+- To review notes on an item, select it and go to the File Notes tab. You can also use the Add file note option to create a new comment. To review or add notes at an overall case level, go to the main Notes tab above and use **Add case note**. These notes will be visible to those working on the request, but will not be included in the final report or otherwise shared with the data subject.
+
+When all items have been reviewed and their statuses set, select **Complete review** to open a flyover pane where you can review a summary of the data and add any relevant notes. These notes are for internal record keeping and aren’t shared with the data subject. Select Complete review again to move on to the next stage. Summaries of your decisions will be provided later under the Reports tab.
+
 #### Generate reports
+
+This stage indicates that your reports are being generated. When complete, these can be found under the **Reports** tab. Your finished files here can be exported for delivery to the data subject who made the request.
 
 #### Close the request
 
+When you have performed the necessary actions to resolve your subject rights request, choose **Close the request**. This will create a final report, which will be encrypted and made available in the **Reports** tab. This might take a while depending on the number of files in the request.
+
 ### View and edit search queries
+
+To see detailed information about the data search behind a subject rights request, select **View search query details** from the data estimate summary card. This opens a pane summarizing the query and showing further details about what was found.
+
+You will have the option here to **Preview search results** to see what type of content will be returned for this query. If you determine that you would like to change the properties of this search, and you have not begun the Retrieve Data phase, you can use the **Edit search query** option. This wizard offers the ability to change or add properties for data subject identification, your search filters and conditions, and the locations in which to look for data (including Exchange, SharePoint, OneDrive, and/or Teams). Use these options to reach your desired level of specificity. You can review the final version of your new query before hitting **Save**.
+
+When you finish editing your search query, a new search will run to replace your previous search results. This resets your status in the Progress section to the first step, **Data estimate**. The new search may take up to 60 minutes to complete. Once it’s done, you’ll see updated results on the request’s details page.
 
 ### Data retention
 
+Reports generated through this tool and the associated data, such as annotated files saved in Azure, are stored for a specified length of time. This duration is defined at a global level through **Settings** in the **Data retention periods** section, which allow you to choose between 30 and 90 days. To learn more, see [Get started with privacy management](pivacy-management-setup.md).
+
 ## Collaborate on requests with Teams
+
+Privacy management supports collaboration through Microsoft Teams to allow your group to work together on subject rights requests. When you create a new request, a Teams channel is automatically created and associated to your request by default. Here you can discuss the request and safely share input and contributions as it moves toward completion. To join the conversation, open your request and use the **Chat with collaborators** option. This will open Microsoft Teams and place you within the General channel for your subject rights request's Team site.
+
+To review the list of active collaborators that can view and contribute to your Team site, within your subject rights request open the **Collaborators** tab. To add additional users to collaborate on this request, select the option to Add a collaborator.
+
+To change the default behavior of generating Teams sites when creating a subject rights request, click on the **Settings** gear in the upper right corner of the main subject rights request page and select **Teams collaboration** to unselect the option.
+
+You can also use the **Share** option in the upper right within a subject rights request to loop people in via Teams or email, or to copy the link to the page in privacy management. Sharing via Teams will allow you to select an existing Teams site available to your account, and select a specific channel within that site where it will post the link to this case along with any message you supply.
 
 ## Automate subject rights request tasks
 
+Microsoft Power Automate is a workflow service that automates actions across applications and services. When you enable Power Automate flows for privacy management, you can automate important tasks for cases and users. To learn more about Power Automate, visit their [documentation site](/power-automate/getting-started).
+
+Customers with Microsoft 365 subscriptions that include privacy management do not need additional Power Automate licenses to use the recommended privacy management Power Automate templates. These templates can be customized to support your organization and cover core privacy management scenarios. If you choose to use premium Power Automate features in these templates, create a custom template using the Microsoft 365 compliance connector, or use Power Automate templates for other compliance areas in Microsoft 365, you may need more Power Automate licenses.
+
+The following Power Automate templates are included in privacy management:
+
+- **Create record for privacy management case in ServiceNow**: This template is for organizations that want to use their ServiceNow solution to track subject rights request cases. You will be asked to enter your ServiceNow instance details. Once connected to your instance, subject rights requests administrators will be able to create a record for the case in ServiceNow and can customize what the template will populate into selected fields if needed. For more information on the connector, please see the [ServiceNow Connector reference page](/connectors/service-now/).
+- **Create a calendar reminder**: This template is for setting due date reminders in your Outlook calendar for subject rights requests. The tool will populate certain details for you from the properties of the request, such as the name of the request and its due date. You can add descriptive details, specify recipients, and adjust other advanced settings.
+
 ### Create a new Power Automate flow from a template
 
+To begin, open the subject rights request you want to work with, select **Automate**, and then select **Manage Power Automate flows**. This opens the Flows flyout pane. Use the New option and choose the template you want to use from the available options. From here, follow the prompts to complete setup.
+
+After you save an instance of the template, you must execute it from the subject rights request’s detail page so that the flow instance has the right context and ID. Open the request, return to the **Automate** menu, select the template, and select **Run flow**. You can see your past activities by selecting **See flow run activity**.
+
 ### Share a Power Automate flow
+
+By sharing a Power Automate flow, you can add another owner and allow them to edit, update, and delete the flow. All owners can also access the run history and add or remove other owners. To share a flow, open the subject rights request you want to work with, select **Automate**, and then select **Manage Power Automate flows**. From this pane you can select an existing flow, then use the Share option to add a user or a group.
+
+This pane also gives you the option to manage the embedded connections to services being used in the Power Automate flow. Note that changing these may affect your ability to execute the flow.
+
+### Edit or delete Power Automate flow
+
+To adjust details of a Power Automate flow, open the subject rights request, select **Automate**, and select **Manage Power Automate flows**. From this pane you can select an existing flow to view details. Use Edit in any section to change the properties, then save.
+
+To remove the flow entirely, use the **Delete** option. This will remove the flow for all owners and uninstall it for all users. Previous flow instances will continue to run to avoid data loss. You can confirm your choice before the deletion is final.
 
 ## Data matching
