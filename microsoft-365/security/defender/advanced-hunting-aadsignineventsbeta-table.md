@@ -85,7 +85,6 @@ reference](/windows/security/threat-protection/microsoft-defender-atp/advanced-h
 |`RequestId`|string|Unique identifier of the request|
 |`ReportId`|string|Unique identifier for the event|
 
-
 ## Related articles
 
 - [AADSpnSignInEventsBeta](./advanced-hunting-aadspnsignineventsbeta-table.md)
