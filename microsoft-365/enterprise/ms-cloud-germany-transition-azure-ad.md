@@ -76,6 +76,10 @@ An application could be any of the following:
 
 If you publish an application that is available to users who are outside of your tenant, you may need to change your application registration to ensure continuity. Other tenants that use your application may be moved at a different time than your tenant. To ensure that they never lose access to your application, you'll need to consent to your app being synchronized from Azure Germany to Azure public.
 
+**What about adding new multi-tenant applications during migration?**
+
+If you want to consume a new application that is published by another organization (multi-tenant application) you will be restricted from adding that application during the migration process (phases 2 through phase 9).  You may execute this task when your organization completes phase 9 and is fully transitioned to the Azure public instance.
+
 ## Additional considerations
 
 Here are some additional considerations for Azure AD:
