@@ -115,6 +115,8 @@
                   href: get-started/register-devices-partner.md
             - name: Register existing devices yourself
               href: get-started/register-reused-devices-self.md
+        - name: Enable user support features
+          href: get-started/enable-support.md
         - name: Get your users ready to use devices
           href: get-started/get-started-devices.md
         - name: First-run experience with Autopilot and the Enrollment Status Page 
