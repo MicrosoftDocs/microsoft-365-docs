@@ -58,11 +58,11 @@ The first step is to enable the archive mailbox for each user in your organizati
 > [!NOTE]
 > You can enable archive mailboxes any time during this process, just as long as they're enabled at some point before you complete the process. If an archive mailbox isn't enabled, no action is taken on any items that have an archive or deletion policy assigned to it.
   
-1. Go to [https://protection.office.com](https://protection.office.com).
+1. Go to <https://compliance.microsoft.com>.
 
 2. Sign in using your global administrator account.
     
-3. In the Security & Compliance Center, go to **Information governance** \> **Archive**.
+3. In the Microsoft 365 compliance center, click **Information governance**, and then click the **Archive** tab.
 
     A list of the mailboxes in your organization is displayed and whether the corresponding archive mailbox is enabled or disabled.
 

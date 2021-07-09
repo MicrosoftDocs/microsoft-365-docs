@@ -1,6 +1,6 @@
 ---
 title: Onboard Windows 10 devices to Microsoft Defender for Endpoint via Group Policy
-description: Use Group Policy to deploy the configuration package on Windows 10 devices so that they are onboarded to the service.
+description: Use Group Policy to deploy the configuration package on the Windows 10 devices so that they are onboarded to the service.
 keywords: configure devices using group policy, device management, configure Microsoft Defender for Endpoint devices, onboard Microsoft Defender for Endpoint devices, group policy
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,7 +19,7 @@ ms.date: 04/24/2018
 ms.technology: mde
 ---
 
-# Onboard Windows 10 devices using Group Policy 
+# Onboard the Windows 10 devices using Group Policy 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -42,9 +42,9 @@ ms.technology: mde
 
 Check out the [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)  or  [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) to see the various paths in deploying Defender for Endpoint.
 
-1. Open the GP configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from [Microsoft Defender Security Center](https://securitycenter.windows.com/):
+1. Open the GP configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from [Microsoft 365 Defender portal](https://security.microsoft.com/):
 
-    1. In the navigation pane, select **Settings** > **Onboarding**.
+    1. In the navigation pane, select **Settings** > **Endpoints** > **Device management**  > **Onboarding**.
 
     1. Select Windows 10 as the operating system.
 
@@ -64,7 +64,7 @@ Check out the [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/publ
 
 7. Select **Run whether user is logged on or not** and check the **Run with highest privileges** check box.
 
-8. Go to the **Actions** tab and click **New...** Ensure that **Start a program** is selected in the **Action** field. Enter the file name and location of the shared *WindowsDefenderATPOnboardingScript.cmd* file.
+8. Go to the **Actions** tab and click **New...** Ensure that **Start a program** is selected in the **Action** field. Enter the NetBIOS path of the shared  *WindowsDefenderATPOnboardingScript.cmd* file.
 
 9. Click **OK** and close any open GPMC windows.
 
@@ -72,7 +72,7 @@ Check out the [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/publ
 > After onboarding the device, you can choose to run a detection test to verify that the device is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Defender for Endpoint device](run-detection-test.md).
 
 ## Additional Defender for Endpoint configuration settings
-For each device, you can state whether samples can be collected from the device when a request is made through Microsoft Defender Security Center to submit a file for deep analysis.
+For each device, you can state whether samples can be collected from the device when a request is made through Microsoft 365 Defender to submit a file for deep analysis.
 
 You can use Group Policy (GP) to configure settings, such as settings for the sample sharing used in the deep analysis feature.
 
@@ -186,9 +186,9 @@ For security reasons, the package used to Offboard devices will expire 30 days a
 > [!NOTE]
 > Onboarding and offboarding policies must not be deployed on the same device at the same time, otherwise this will cause unpredictable collisions.
 
-1. Get the offboarding package from [Microsoft Defender Security Center](https://securitycenter.windows.com/):
+1. Get the offboarding package from [Microsoft 365 Defender portal](https://security.microsoft.com/):
 
-    1. In the navigation pane, select **Settings** > **Offboarding**.
+    1. In the navigation pane, select **Settings** > **Endpoints** > **Device management** > **Offboarding**.
 
     1. Select Windows 10 as the operating system.
 
@@ -221,8 +221,8 @@ With Group Policy there isn’t an option to monitor deployment of policies on t
 
 ## Monitor devices using the portal
 
-1. Go to [Microsoft Defender Security Center](https://securitycenter.windows.com/).
-2. Click **Devices list**.
+1. Go to [Microsoft 365 Defender portal](https://security.microsoft.com/).
+2. Click **Devices inventory**.
 3. Verify that devices are appearing.
 
 > [!NOTE]
