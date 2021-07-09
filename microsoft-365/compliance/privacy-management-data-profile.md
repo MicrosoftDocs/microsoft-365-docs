@@ -72,7 +72,7 @@ This insight also addresses matches from policies in either “Testing” or “
 
 #### Items with the most data subject content
 
-This insight regards information from the data matching feature in subject rights requests, and surfaces items discovered within Microsoft 365 that contain the most data subjects within their content. To learn more about that setting, see Manage subject rights requests.
+This insight regards information from the data matching feature in subject rights requests, and surfaces items discovered within Microsoft 365 that contain the most data subjects within their content. To learn more about that setting, see [Manage subject rights requests](privacy-management-subject-rights-requests.md).
 
 These items can help confirm your data matching configuration and help you mitigate privacy risks related to these items. Select View summary for a summary view. Select Explore for a detailed view of up to 100 of these items. Here you can preview these items and determine relevance, and export the list in .csv format.
 
@@ -107,6 +107,7 @@ This graph is related to data overexposure policies. It can help you identify sh
 This view provides insights into what regulations most prevalently drive your subject rights requests over time. This graph’s legend shows various regulations. Hovering over the trend lines will show the totals of subject rights requests open for that regulation during the selected time.
 
 #### Subject rights requests by status
+
 This graph displays how your organization is doing with completing subject rights requests, broken out into requests that are either Active, Closed, or Overdue. This may help indicate where you could benefit from allocating additional resources to closing out your requests and meeting targets.
 
 ### Additional data views
@@ -138,4 +139,3 @@ For multi-geo environments, this card regionally aggregates personal data type i
 ### Exploring content
 
 Selecting Explore on any data profile card will open the content explorer. At this time, you cannot search for a specific content item, and you will not see Teams data in this view. This means that numbers within the content explorer may not match the numbers shown on the data profile page, since the data profile page does include Teams content. Privacy administrators that want to dive deeper into understanding their privacy data may do so here based on personal data type (sensitive information type) or by location (Exchange, OneDrive, or SharePoint).
-
