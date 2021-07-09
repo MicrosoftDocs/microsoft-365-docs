@@ -70,7 +70,7 @@ The following table lists the different threat statuses and their definition:<br
 
 The Antivirus protection tab on the Threats management page shows the devices across all your tenants and their Microsoft Defender antivirus protection state. You can assess the status and take action for one or more devices that may be vulnerable. You can also select a device to view more information, such as Device Overview, Current Threats, and Device Action statuses.
 
-\[screenshot placeholder\]
+:::image type="content" source="../media/m365-lighthouse-threat-management-page-overview/threatmanagement-antivirus-tab.png" alt-text="Screenshot of the Overview tab.":::
 
 ## Related content
 
