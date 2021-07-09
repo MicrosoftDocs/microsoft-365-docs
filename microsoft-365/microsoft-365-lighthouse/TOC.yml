@@ -11,7 +11,7 @@
 - name: Secure Microsoft 365 Lighthouse
   items: 
     - name: Configure portal security
-      href: 
+      href: m365-lighthouse-configure-portal-security.md
 - name: Protect customers with Baselines
   items: 
     - name: Deploy Baselines
