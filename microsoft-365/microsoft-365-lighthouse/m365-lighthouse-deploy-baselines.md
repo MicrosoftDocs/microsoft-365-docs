@@ -40,7 +40,7 @@ Make sure you meet the requirements listed in [Requirements for Microsoft 365 Li
 
 Select **Baselines** from the left navigation pane to open the Baselines page. You'll see that the default Baseline has already been added to the Default tenant group (all tenants). To view the default Baseline configurations, select **View baseline** to open the Default baseline page. The configurations are listed as deployment steps. Select any of the deployment steps to view deployment details and user impact.
 
-\[screenshot placeholder\]
+:::image type="content" source="../media/m365-lighthouse-deploy-baselines/default-baseline-page.png" alt-text="Screenshot of the Default baseline page.>.":::
 
 ## Deploy a Baseline configuration  
 
