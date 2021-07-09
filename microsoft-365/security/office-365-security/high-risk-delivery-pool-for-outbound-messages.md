@@ -78,3 +78,5 @@ In cases where we can authenticate the sender, we use Sender Rewriting Scheme (S
 For DKIM to work, make sure you enable DKIM for sending domain. For example, fabrikam.com is part of contoso.com and is defined in the accepted domains of the organization. If the message sender is sender@fabrikam.com, DKIM needs to be enabled for fabrikam.com. you can read on how to enable at [Use DKIM to validate outbound email sent from your custom domain](use-dkim-to-validate-outbound-email.md).
 
 To add a custom domains follow the steps in [Add a domain to Microsoft 365](../../admin/setup/add-domain.md).
+
+If MX record for your domain is pointed to a 3rd party or on-premises server, you should utilize Enhanced Filtering to ensure the SPF validation is correct for inbound email to avoid sending email through relay pool.
