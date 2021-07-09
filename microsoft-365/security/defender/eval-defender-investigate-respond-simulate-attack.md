@@ -1,7 +1,6 @@
 ---
-title: Run an attack simulation in a Microsoft 365 Defender pilot environment 
-description: Run attack simulations for Microsoft 365 Defender to see how it unfolds and is quickly remediated.
-keywords: Microsoft 365 Defender pilot attack simulation, run Microsoft 365 Defender pilot attack simulation, simulate attack in Microsoft 365 Defender, Microsoft 365 Defender pilot project, cyber security, advanced persistent threat, enterprise security, devices, device, identity, users, data, applications, incidents, automated investigation and remediation, advanced hunting
+title: Run an attack simulation in a Microsoft 365 Defender pilot environment, isolated environment for attack simulation, response, remediation
+description: Run attack simulations for Microsoft 365 Defender to see how how alerts and incidents are presented, insights are gained, and threats are quickly remediated.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -12,6 +11,7 @@ f1.keywords:
   - NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
+ms.date: 07/09/2021
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -30,7 +30,8 @@ This article is [Step 1 of 2](eval-defender-investigate-respond.md) in the proce
 
 After preparing your [pilot environment](eval-defender-investigate-respond.md), it's time to test Microsoft 365 Defender's incident response and automated investigation and remediation capabilities by creating an incident with a simulated attack and using the Microsoft 365 Defender portal to investigate and respond.
 
-An incident in Microsoft 365 Defender is a collection of correlated alerts and associated data that make up the story of an attack. 
+An incident in Microsoft 365 Defender is a collection of correlated alerts and associated data that make up the story of an attack.
+
 Microsoft 365 services and apps create alerts when they detect a suspicious or malicious event or activity. Individual alerts provide valuable clues about a completed or ongoing attack. However, attacks typically employ various techniques against different types of entities, such as devices, users, and mailboxes. The result is multiple alerts for multiple entities in your tenant.
 
 >[!Note]
@@ -71,18 +72,18 @@ For more information, see [Simulations](/microsoft-365/security/office-365-secur
 
 Here are the Defender for Endpoint simulations from Microsoft:
 
-- Document drops backdoor 
+- Document drops backdoor
 - Automated investigation (backdoor)
 
-There are additional simulations from Attack IQ and SafeBreach. There are also a set of tutorials. 
+There are additional simulations from Attack IQ and SafeBreach. There are also a set of tutorials.
 
 For each simulation or tutorial:
 
-1. Download and read the corresponding walkthrough document provided with your selected simulation or scenario.
+1. Download and read the corresponding walk through document provided with your selected simulation or scenario.
 
 2. Download the simulation file. You can choose to download the file or script on the test device but it's not mandatory.
 
-3. Run the simulation file or script on the test device as instructed in the walkthrough document.
+3. Run the simulation file or script on the test device as instructed in the walk through document.
 
  For more information, see [Experience Microsoft Defender for Endpoint through simulated attack](/microsoft-365/security/defender-endpoint/attack-simulations).
 

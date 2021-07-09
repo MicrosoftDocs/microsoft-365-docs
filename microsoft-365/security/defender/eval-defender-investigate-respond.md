@@ -1,7 +1,6 @@
 ---
-title: Investigate and respond using Microsoft 365 Defender in a pilot environment
-description: Set up your Microsoft 365 Defender trial lab or pilot environment to try out and experience the security solution designed to protect devices, identity, data, and applications in your organization.
-keywords: Microsoft 365 Defender trial, try Microsoft 365 Defender, evaluate Microsoft 365 Defender, Microsoft 365 Defender evaluation lab, Microsoft 365 Defender pilot, cyber security, advanced persistent threat, enterprise security, devices, device, identity, users, data, applications, incidents, automated investigation and remediation, advanced hunting
+title: Investigate and respond using Microsoft 365 Defender in a pilot environment, and use Attack Simulator, teach users to detect, investigate attack surfaces, and strengthen your security posture
+description: Set up attack simulations in Microsoft 365 Defender trial lab or pilot environment to try out the security solution designed to teach users to protect devices, identity, data, and applications.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -13,6 +12,7 @@ f1.keywords:
 localization_priority: Normal
 ms.author: josephd
 author: JoeDavies-MSFT
+ms.date: 07/09/2021
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -28,7 +28,7 @@ ms.technology: m365d
 **Applies to:**
 - Microsoft 365 Defender
 
-This article outlines the process to create incidents with attack simulations and tutorials and use Microsoft 365 Defender to investigate and respond. Before starting this process, be sure you've reviewed the overall process for [evaluating Microsoft 365 Defender](eval-overview.md) and you have [created the Microsoft 365 Defender evaluation environment](eval-create-eval-environment.md). 
+This article outlines the process to create incidents with attack simulations and tutorials and use Microsoft 365 Defender to investigate and respond. Before starting this process, be sure you've reviewed the overall process for [evaluating Microsoft 365 Defender](eval-overview.md) and you have [created the Microsoft 365 Defender evaluation environment](eval-create-eval-environment.md).
 
 Use the following steps.
 

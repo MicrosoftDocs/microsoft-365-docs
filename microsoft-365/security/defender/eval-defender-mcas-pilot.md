@@ -1,7 +1,6 @@
 ---
-title: Pilot Microsoft Cloud App Security with Microsoft 365 Defender
-description: Set up your Microsoft 365 Defender trial lab or pilot environment to try out and experience the security solution designed to protect devices, identity, data, and applications in your organization.
-keywords: Microsoft 365 Defender trial, try Microsoft 365 Defender, evaluate Microsoft 365 Defender, Microsoft 365 Defender evaluation lab, Microsoft 365 Defender pilot, cyber security, advanced persistent threat, enterprise security, devices, device, identity, users, data, applications, incidents, automated investigation and remediation, advanced hunting
+title: Pilot Microsoft Cloud App Security with Microsoft 365 Defender, create pilot groups, configure conditional access control, try out capabilities, setup as part of Microsoft 365 Defender
+description: Set up your Microsoft 365 Defender trial lab or pilot environment to test and experience the security solution designed to protect devices, identity, data, and applications.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -12,6 +11,7 @@ f1.keywords:
   - NOCSH
 ms.author: bcarter
 author: brendacarter
+ms.date: 07/09/2021
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -31,7 +31,7 @@ ms.technology: m365d
 
 This article is [Step 3 of 3](eval-defender-mcas-overview.md) in the process of setting up the evaluation environment for Microsoft Cloud App Security. For more information about this process, see the [overview article](eval-defender-mcas-overview.md).
 
-Use the following steps to setup and configure the pilot for Microsoft Cloud App Security. 
+Use the following steps to setup and configure the pilot for Microsoft Cloud App Security.
 
 
 ![Steps for piloting Microsoft Cloud App Security](../../media/defender/m365-defender-mcas-pilot-steps.png)

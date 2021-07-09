@@ -1,7 +1,6 @@
 ---
-title: Review architecture requirements and key concepts for Microsoft Cloud App Security
-description: Set up your Microsoft 365 Defender trial lab or pilot environment to try out and experience the security solution designed to protect devices, identity, data, and applications in your organization.
-keywords: Microsoft 365 Defender trial, try Microsoft 365 Defender, evaluate Microsoft 365 Defender, Microsoft 365 Defender evaluation lab, Microsoft 365 Defender pilot, cyber security, advanced persistent threat, enterprise security, devices, device, identity, users, data, applications, incidents, automated investigation and remediation, advanced hunting
+title: Review architecture requirements and the structure for Microsoft Cloud App Security, plan the configuration and design by knowing the framework of Cloud App Security in Microsoft 365 Defender
+description: Learn Microsoft Cloud App Security architecture in Microsoft 365 Defender to build a pilot environment to try out the security solution designed to protect devices, identity, data, and applications in your organization.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -12,6 +11,7 @@ f1.keywords:
   - NOCSH
 ms.author: bcarter
 author: brendacarter
+ms.date: 07/09/2021
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
