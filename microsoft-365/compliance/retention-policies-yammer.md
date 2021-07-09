@@ -42,7 +42,6 @@ Reactions from others in the form of emoticons are not included in these message
 
 ## How retention works with Yammer
 
-<<<<<<< HEAD
 Use this section to understand how your compliance requirements are met by backend storage and processes, and should be verified by eDiscovery tools rather than by messages that are currently visible in the Yammer app.
 
 You can use a retention policy to retain data from community messages and user messages in Yammer, and delete these messages. Behind the scenes, Exchange mailboxes are used to store data copied from these messages. Data from Yammer user messages is stored in a hidden folder in the mailbox of each user included in the user message, and a similar hidden folder in a group mailbox is used for community messages.
