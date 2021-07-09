@@ -42,7 +42,18 @@ Reactions from others in the form of emoticons are not included in these message
 
 ## How retention works with Yammer
 
-You can use a retention policy to retain and delete community messages and user messages in Yammer. User messages are stored in a hidden folder in the mailbox of each user included in the message, and community messages are stored in a similar hidden folder in the group mailbox for the community.
+Use this section to understand how your compliance requirements are met by backend storage and processes, and should be verified by eDiscovery tools rather than by messages that are currently visible in the Yammer app.
+
+You can use a retention policy to retain data from community messages and user messages in Yammer, and delete these messages. Behind the scenes, Exchange mailboxes are used to store data copied from these messages. Data from Yammer user messages is stored in a hidden folder in the mailbox of each user included in the user message, and a similar hidden folder in a group mailbox is used for community messages.
+
+Copies of community messages can also be stored in the hidden folder of user mailboxes when they @ mention users or notify the user of a reply. Although these messages originate as a community message, a retention policy for Yammer user messages will often include copies of community messages.
+
+These hidden folders are not designed to be directly accessible to users or administrators, but instead, store data that compliance administrators can search with eDiscovery tools.
+
+> [!IMPORTANT]
+> Because copies of community messages can also be stored in user mailboxes, a retention policy with a delete action for Yammer user messages can result in the original community message no longer visible to users in the Yammer app.
+> 
+> However, a copy of the original message is still available in the hidden folder of the community group mailbox, and accessible with eDiscovery searches for compliance purposes.
 
 Yammer messages are not affected by retention policies that are configured for Exchange mailboxes. Even though Yammer messages are stored in Exchange, this Yammer data is included only by a retention policy that's configured for the **Yammer community messages** and **Yammer user messages** locations.
 
