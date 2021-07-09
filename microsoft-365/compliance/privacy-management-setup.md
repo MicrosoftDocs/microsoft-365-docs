@@ -109,11 +109,11 @@ This feature enables you to show anonymized versions of usernames within privacy
 
 ### User notification emails
 
-When we detect a match for your data handling policies, privacy management can send an email to the affected users with corrective actions to take and a link to privacy training. In Settings you can enable or disable the email notification capability of privacy management as a whole. You can activate individual notifications, set email frequency, and specify a training URL when you create or edit a policy. If notification capability is turned off in Settings, any policy-level configuration for specific notification mails will be disabled. To learn more about policies, see [Create and manage policies](privacy-management-policies).
+When we detect a match for your data handling policies, privacy management can send an email to the affected users with corrective actions to take and a link to privacy training. In Settings you can enable or disable the email notification capability of privacy management as a whole. You can activate individual notifications, set email frequency, and specify a training URL when you create or edit a policy. If notification capability is turned off in Settings, any policy-level configuration for specific notification mails will be disabled. To learn more about policies, see [Create and manage policies](privacy-management-policies.md).
 
 ### Teams collaboration
 
-Integrate Microsoft Teams capabilities with privacy management to enhance collaboration with stakeholders. Every time a subject rights request is created, an associated team will be created. Users can be added to a team from the request’s Collaborators tab. To learn more about subject rights requests, see [Manage subject rights requests](privacy-management-subject-rights-requests).
+Integrate Microsoft Teams capabilities with privacy management to enhance collaboration with stakeholders. Every time a subject rights request is created, an associated team will be created. Users can be added to a team from the request’s Collaborators tab. To learn more about subject rights requests, see [Manage subject rights requests](privacy-management-subject-rights-requests.md).
 
 ### Power Automate flows
 
@@ -141,4 +141,4 @@ After signing into privacy management, you’ll arrive at the **Overview** page.
 
 For further insights into your data over time, your **Data profile** page will provide additional visualizations and analytics and give you a high-level view of your organization’s data by geographic location and by Microsoft 365 service.
 
-To learn more about these pages, see [Find and visualize your data](privacy-management-data-profile).
+To learn more about these pages, see [Find and visualize your data](privacy-management-data-profile.md).
