@@ -340,9 +340,9 @@ Advanced eDiscovery v1.0, which is the version of Advanced eDiscovery available 
 
 To determine if your organization is using Advanced eDiscovery v1.0:
 
-1. Go to the [Office 365 Security & Compliance Center](https://protection.office.com).
+1. Go to the [Microsoft 365 compliance center](https://compliance.microsoft.com).
 
-2. In the left navigation pane of the Security & Compliance Center, click **eDiscovery > eDiscovery**, and open a Core eDiscovery case.
+2. In the left navigation pane of the compliance center, click **eDiscovery > Core**, and open a Core eDiscovery case.
 
 3. If you see the **Switch to Advanced eDiscovery** button, then clicking it will take you to the 1.0 version of Advanced eDiscovery, which is being retired. The ability to create and manage cases in Core eDiscovery won't be affected. Only the ability to add and analyze case data in Advanced eDiscovery v1.0 (by clicking **Switch to Advanced eDiscovery**) is being retired.
 
