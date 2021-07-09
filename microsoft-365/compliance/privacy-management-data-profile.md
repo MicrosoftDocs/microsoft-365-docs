@@ -20,11 +20,19 @@ description: "Learn about the overview and data profile in privacy management an
 
 # Find and visualize personal data in privacy management (preview)
 
+In this article: learn about the features of the **overview** and **data profile** pages and how they can give insights into your data.
+
 ## Purpose of the overview and data profile
+
+Privacy management automates discovery of personal data assets within Microsoft 365 and provides dashboards that provide visibility into your organization’s personal data. These dashboards provide key insights and highlight where the data resides within Exchange, SharePoint, OneDrive, and Teams. Your privacy administrators can act upon these insights to strengthen your organization’s approach to privacy.
 
 ### Overview page
 
+The Overview page serves as an overall dashboard for the privacy management solution, surfacing dynamic insights about your organization’s ecosystem of personal data. Privacy administrators can monitor data trends and activities, identify and investigate potential risks on personal data, and springboard into key activities such as policy management or subject rights request actions. For more on the overview page, see [Explore the overview page](#explore-the-overview-page).
+
 ### Data profile page
+
+The data profile page in privacy management provides a snapshot view of the personal data your organization stores in Microsoft 365. This helps you visualize where personal data lives, what types are the most prevalent in your organization, and how many different types exist across your Microsoft 365 services. You will also be able to explore personal data from this location. To learn more, see Explore the data profile page.
 
 ## Explore the overview page
 

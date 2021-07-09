@@ -28,7 +28,7 @@ Privacy management will be available within the Microsoft 365 compliance center.
 
 Note that the public preview of privacy management will not be available to US Government Community (GCC) Moderate, GCC High, or Department of Defense (DoD) customers.
 
-To get started with the public preview, obtain the preview subscription from the admin center. If you do not yet have the license when you first select privacy management in the compliance center, you will be directed to the admin center to get started. We recommend the global admin sign in and set user permissions as outlined below when visiting privacy management for the first time. If you don’t hold the required role to obtain the subscription or consent to the terms of using privacy management, you’ll be prompted to contact your global admin for assistance.
+To get started with the public preview, obtain the preview subscription from the admin center. If you do not yet have the license when you first select privacy management in the compliance center, you will be directed to the admin center to get started. We recommend that the global admin sign in and set user permissions as outlined below when visiting privacy management for the first time. If you don’t hold the required role to obtain the subscription or consent to the terms of using privacy management, you’ll be prompted to contact your global admin for assistance.
 
 Confirming that you would like to start using privacy management signals that you agree to the terms and the personal data evaluation process. You can review the provided links in full before proceeding.
 
@@ -45,7 +45,6 @@ Permissions and role assignments for privacy management can be handled within th
 - Scroll to find the privacy management groups, or search by keyword, for example “privacy.”
 - Select the relevant role group to see a description, the assigned roles, and a list of members.
 - Use the Edit link beside these sections to add or change users or edit the settings.
-  - Note that significantly editing or removing a role group or its key members may interfere with your or your team members’ ability to use privacy management.
 
 ### Learn about role groups and roles
 
@@ -105,11 +104,11 @@ The Settings page is accessible via the gear wheel in the upper right corner of 
 
 ### Anonymization
 
-This feature enables you to show anonymized versions of usernames within privacy management features to users in certain roles. This will replace identifiable display names like “Grace Taylor” with a generic signifier like “AnonyIS8-988” in order to help mask your users’ identities while reviewing sensitive data. This option does not apply to the subject rights request module.
+This feature enables you to show anonymized versions of usernames within privacy management features to users in certain roles. This will replace identifiable display names like “Grace Taylor” with a generic label like “AnonyIS8-988” in order to help mask your users’ identities while reviewing sensitive data. This option does not apply to the subject rights request module.
 
 ### User notification emails
 
-When we detect a match for your data handling policies, privacy management can send an email to the affected users with corrective actions to take and a link to privacy training. In Settings you can enable or disable the email notification capability of privacy management as a whole. You can activate individual notifications, set email frequency, and specify a training URL when you create or edit a policy. If notification capability is turned off in Settings, any policy-level configuration for specific notification mails will be disabled. To learn more about policies, see [Create and manage policies](privacy-management-policies.md).
+When we detect a match for your data handling policies, privacy management can send an email to the affected users with corrective actions to take and a link to privacy training. In Settings, you can enable or disable the email notification capability of privacy management as a whole. You can activate individual notifications, set email frequency, and specify a training URL when you create or edit a policy. If notification capability is turned off in Settings, any policy-level configuration for specific notification mails will be disabled. To learn more about policies, see [Create and manage policies](privacy-management-policies.md).
 
 ### Teams collaboration
 
@@ -139,6 +138,6 @@ Privacy management will help kickstart your data evaluation process by creating 
 
 After signing into privacy management, you’ll arrive at the **Overview** page. This page provides dynamic insights about the personal data stored in your Microsoft 365 environment in order to help you quickly spot issues, identify risk indicators, and take action to fix issues. Your Overview should populate with initial insights within the first 24 hours of signing up. As you continue to use privacy management, the overview page will refresh to continue to provide current information.
 
-For further insights into your data over time, your **Data profile** page will provide additional visualizations and analytics and give you a high-level view of your organization’s data by geographic location and by Microsoft 365 service.
+For further insights into your data over time, your **Data profile** page will provide more visualizations and analytics and give you a high-level view of your organization’s data by geographic location and by Microsoft 365 service.
 
 To learn more about these pages, see [Find and visualize your data](privacy-management-data-profile.md).
