@@ -101,20 +101,44 @@ To see the specific roles included in each role group, see the following table.
 
 ## Configure settings
 
+The Settings page is accessible via the gear wheel in the upper right corner of privacy management’s main pages. It allows privacy management administrators to configure essential properties across privacy management. Options include the following.
+
 ### Anonymization
+
+This feature enables you to show anonymized versions of usernames within privacy management features to users in certain roles. This will replace identifiable display names like “Grace Taylor” with a generic signifier like “AnonyIS8-988” in order to help mask your users’ identities while reviewing sensitive data. This option does not apply to the subject rights request module.
 
 ### User notification emails
 
+When we detect a match for your data handling policies, privacy management can send an email to the affected users with corrective actions to take and a link to privacy training. In Settings you can enable or disable the email notification capability of privacy management as a whole. You can activate individual notifications, set email frequency, and specify a training URL when you create or edit a policy. If notification capability is turned off in Settings, any policy-level configuration for specific notification mails will be disabled. To learn more about policies, see [Create and manage policies](privacy-management-policies).
+
 ### Teams collaboration
+
+Integrate Microsoft Teams capabilities with privacy management to enhance collaboration with stakeholders. Every time a subject rights request is created, an associated team will be created. Users can be added to a team from the request’s Collaborators tab. To learn more about subject rights requests, see [Manage subject rights requests](privacy-management-subject-rights-requests).
 
 ### Power Automate flows
 
+Use Power Automate flows to automatically manage privacy-related processes and tasks. You can create flows in the Settings section using built-in privacy management templates, or use the Power Automate console to create custom flows. To learn more about Power Automate, see the [Power Automate](/power-automate/) documentation.
+
 ### Data matching
+
+Use this section to upload data schemas that describe attributes of your data subjects, which will help identify the correct data subject when searching for personal data within your Microsoft 365 environment. Schemas and rule packages are created and uploaded in XML format. Under Personal data upload, you can also submit personal data that matches a provided schema. You can create and upload your own file or choose to upload personal data from Azure. To learn more about subject rights requests, see [Manage subject rights requests](privacy-management-subject-rights-requests.md).
 
 ### Data retention periods
 
+For subject rights requests, choose how long you want to retain the final data collected and report after a request is closed. You can select between 30 or 90 days. To learn more about subject rights requests, see [Manage subject rights requests](privacy-management-subject-rights-requests.md).
+
 ### Data review tags
+
+Manage the tags you’ll use to mark files retrieved in a subject rights request. In this section, you can edit the names and descriptions for custom tags. You can also edit tag descriptions for the built-in tags provided by the system. Names for system tags cannot be changed. To learn more about subject rights requests, see [Manage subject rights requests](privacy-management-subject-rights-requests.md).
 
 ## Get started with policies
 
-## Get data insights
+Privacy management will help kickstart your data evaluation process by creating three policies with default settings, using the templates for data minimization, data overexposure, and data transfers. These policies will be on by default, but will not automatically trigger notification mails or remediation prompts. After your initial setup, you can proceed to create and customize your own policies. To learn more, see Create and manage policies.
+
+## Get initial data insights
+
+After signing into privacy management, you’ll arrive at the **Overview** page. This page provides dynamic insights about the personal data stored in your Microsoft 365 environment in order to help you quickly spot issues, identify risk indicators, and take action to fix issues. Your Overview should populate with initial insights within the first 24 hours of signing up. As you continue to use privacy management, the overview page will refresh to continue to provide current information.
+
+For further insights into your data over time, your **Data profile** page will provide additional visualizations and analytics and give you a high-level view of your organization’s data by geographic location and by Microsoft 365 service.
+
+To learn more about these pages, see [Find and visualize your data](privacy-management-data-profile).
