@@ -20,6 +20,9 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 
 # Overview of deploying standard tenant configurations by using Microsoft 365 Lighthouse Baselines 
 
+> [!NOTE]
+> The features described in this article are in Preview, are subject to change, and are only available to partners who meet the [requirements](m365-lighthouse-requirements.md). If your organization does not have Microsoft 365 Lighthouse, see [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
+
 Microsoft 365 Lighthouse Baselines provide a repeatable and scalable way for you to assess and manage Microsoft 365 security settings across multiple tenants. Baselines also help monitor core security policies and tenant compliance standards with configurations that secure users, devices, and data.
 
 Designed to help partners enable customer adoption of security at their own pace, Microsoft 365 Lighthouse provides a standard set of Baseline parameters and pre-defined configurations for Microsoft 365 services. These security configurations help measure your tenants' Microsoft 365 security and compliance progress.
@@ -33,7 +36,7 @@ Microsoft 365 Lighthouse standard Baseline configurations for security workloads
 The Baseline configurations in the following table come standard with the Microsoft 365 Lighthouse Default Baseline.<br><br>
 
 | Baseline configuration | Description |
-|:-|:-|
+|--|--|
 | Require MFA for admins | A report-only Conditional Access policy requiring multifactor authentication for admins. It's required for all cloud applications. |
 | Require MFA for end users | A report-only Conditional Access policy that requires multifactor authentication for users. It's required for all cloud applications. |
 | Block legacy authorization | A report-only Conditional Access policy to block legacy client authorizations. |
@@ -45,4 +48,4 @@ The Baseline configurations in the following table come standard with the Micros
 ## Related content
 
 Deploy Microsoft 365 Lighthouse Baselines (article)\
-[Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml)
+[Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)

@@ -67,7 +67,7 @@ sections:
           1. Find the tenant that you want to inactivate, select the three dots next to the tenant name, and then select **Inactivate tenant**.
           1. In the confirmation message that appears, select **Confirm** to inactivate the tenant.
               > [!NOTE]
-              > Once you inactivate a tenant, you'll be unable to take action on the tenant until inactivation is complete.
+              > Once you inactivate a tenant, you can't take action on the tenant until inactivation is complete. It may take up to 48 hours for inactivation to complete.
           
           To learn more about tenants, see [Microsoft 365 Lighthouse tenant list overview]().
       - question: Will Microsoft 365 Lighthouse work if my customer tenants have other subscriptions besides Microsoft 365 Business Premium?
