@@ -173,9 +173,20 @@ To leverage the data matching capability, you will need to be a member of the Pr
 
 ### Prepare for data import
 
+Before defining the schema or uploading data, you will need to identify the source of your data subject information. The required file format is .csv, which can be read by an application such as Microsoft Excel. Structure this export so that your column headers appear in the first row. These headers should include the names of the attributes for your personal data schema. Check the format of the data in each field. If any of the data contains commas, surround these values with double quotes to ensure it will not be parsed into separate fields.
+
 ### Define the personal data schema
 
+The personal data schema will describe the attributes for your data subjects. Upload this schema on the first tab of the data matching settings area. This includes a **personal data schema** XML file and a **rule package** XML file.
+
 #### Personal data schema XML
+
+The personal data schema file is an XML file that will define what column names are expected.
+
+- Name this schema file pdm.xml.
+- Define each column name using the Field Name tag as seen in the example below.
+- Use searchable = “true” for fields you want to be searchable, up to a maximum of 5 fields. At least one of your field names must be searchable. Sample syntax: `\<Field name="" searchable=""/>`.
+- The personal data schema has a DataStore tag section. We have 4 mandatory fields which must be mapped to your field names:  primaryKeyField, upnField, firstNameField, lastNameField.
 
 #### Rule package XML
 
