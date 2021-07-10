@@ -183,10 +183,30 @@ The personal data schema will describe the attributes for your data subjects. Up
 
 The personal data schema file is an XML file that will define what column names are expected.
 
-- Name this schema file pdm.xml.
+- Name this schema file *pdm.xml*.
 - Define each column name using the Field Name tag as seen in the example below.
 - Use searchable = “true” for fields you want to be searchable, up to a maximum of 5 fields. At least one of your field names must be searchable. Sample syntax: `\<Field name="" searchable=""/>`.
 - The personal data schema has a DataStore tag section. We have 4 mandatory fields which must be mapped to your field names:  primaryKeyField, upnField, firstNameField, lastNameField.
+
+As an example, the following XML file defines a sample schema, with five fields specified as searchable: PatientID, MRN, SSN, Phone, and DOB. The primaryKeyField is mapped to PatientID, upnField is mapped to MRN, firstNameField is mapped to FirstName, and lastNameField is mapped to LastName.
+
+You can copy, modify, and use our example.
+
+ ```xml
+<PdmSchema xmlns="http://schemas.microsoft.com/office/2020/pdm">
+      <DataStore name="Patientrecords" description="Schema for patient records" version="1" primaryKeyField="PatientID" upnField="MRN" firstNameField="FirstName" lastNameField="LastName">
+            <Field name="PatientID" searchable="true"/>
+            <Field name="MRN" searchable="true" />
+            <Field name="FirstName" />
+            <Field name="LastName" />
+            <Field name="SSN" searchable="true" />
+            <Field name="Phone" searchable="true" />
+            <Field name="DOB" searchable="true" />
+            <Field name="Gender" />
+            <Field name="Address" />
+      </DataStore>
+</PdmSchema>
+ ```
 
 #### Rule package XML
 
