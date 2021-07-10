@@ -30,7 +30,7 @@ Several options are available to you if you need help. Start by checking the cur
 
 To check the current health of the Microsoft 365 Lighthouse tenant services:
 
-1. Go to the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339) and sign in with admin credentials.
+1. Go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
 2. In the left navigation pane, select **Health** > **Service health**.
 3. In the list of services, find **Microsoft 365 suite**, and then expand it to show all the services in the suite.
 4. Find **Microsoft 365 Lighthouse** and check the health.
