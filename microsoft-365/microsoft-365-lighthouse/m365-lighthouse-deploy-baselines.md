@@ -56,5 +56,5 @@ Select **Baselines** from the left navigation pane to open the Baselines page. Y
 
 ## Related content
 
-[Overview of deploying standard tenant configurations by using baselines](m365-lighthouse-deploying-standard-tenant-configurations-overview.md) (article)\
+[Overview of using baselines to deploy standard tenant configurations](m365-lighthouse-deploying-standard-tenant-configurations-overview.md) (article)\
 [Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)
