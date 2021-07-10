@@ -166,3 +166,17 @@ To adjust details of a Power Automate flow, open the subject rights request, sel
 To remove the flow entirely, use the **Delete** option. This will remove the flow for all owners and uninstall it for all users. Previous flow instances will continue to run to avoid data loss. You can confirm your choice before the deletion is final.
 
 ## Data matching
+
+With data matching, organizations can enable the privacy management solution to identify data subjects based on exact supplied data values. This can help increase the accuracy of locating data subject content both for your internal personnel and for external users you interact with. It also simplifies the need to supply fields manually during subject rights request creation, and provides context within subject rights requests and for the Overview tile that showcases items with the most data subject content in your organization. To learn more about that view, see [Find and visualize your data](privacy-management-data-profile.md#items-with-the-most-data-subject-content).
+
+To leverage the data matching capability, you will need to be a member of the Privacy Management role group. Select the settings gear icon from the upper right of the main subject rights requests page and select **Data matching**. From here, you will need to define the personal data schema and provide a personal data upload as shown below. Note that you can add items, and you can delete items you add via the UI. However, you cannot modify an item in place from the UI at this time.
+
+### Prepare for data import
+
+### Define the personal data schema
+
+#### Personal data schema XML
+
+#### Rule package XML
+
+### Perform personal data upload
