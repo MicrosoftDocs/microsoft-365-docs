@@ -29,32 +29,25 @@ Microsoft 365 Lighthouse lets you manage users across tenant accounts by selecti
   
 From the Search users tab, you can quickly search across tenants for specific users and perform basic user management actions such as resetting an account password.
 
-:::image type="content" source="../media/m365-lighthouse-users-page-overview/users-search-users-tab.png" 
-alt-text="Screenshot of the Search users tab.":::
+:::image type="content" source="../media/m365-lighthouse-users-page-overview/users-search-users-tab.png" alt-text="Screenshot of the Search users tab.":::
 
 ## Risky users tab
 
 The Risky Users tab shows user accounts across your tenants that have been flagged for risky behavior. Select any of the users to view more information on a detected risk or to mitigate a risk by resetting a user's password or blocking sign-in.
 
-:::image type="content" 
-source="../media/m365-lighthouse-users-page-overview/users-risky-users-tab.png" 
-alt-text="Screenshot of the Risky users tab.":::
+:::image type="content" source="../media/m365-lighthouse-users-page-overview/users-risky-users-tab.png" alt-text="Screenshot of the Risky users tab.":::
 
 ## Multifactor Authentication tab
 
 The Multifactor Authentication tab provides detailed information on the status of multifactor authentication (MFA) enablement across your tenants. Select any tenant in the list to see more details for that tenant, including which Conditional Access policies requiring MFA are already configured and which users have not yet registered for MFA.
 
-:::image type="content" 
-source="../media/m365-lighthouse-users-page-overview/users-mfa-tab.png" 
-alt-text="Screenshot of the Multifactor Authentication tab.":::
+:::image type="content" source="../media/m365-lighthouse-users-page-overview/users-mfa-tab.png" alt-text="Screenshot of the Multifactor Authentication tab.":::
 
 ## Password reset tab
 
 The Password reset tab shows detailed information on the status of self-service password reset enablement across your tenants.
 
-:::image type="content" 
-source="../media/m365-lighthouse-users-page-overview/users-password-reset-tab.png" 
-alt-text="Screenshot of the Password reset tab.":::
+:::image type="content" source="../media/m365-lighthouse-users-page-overview/users-password-reset-tab.png" alt-text="Screenshot of the Password reset tab.":::
 
 ## Related content
 
