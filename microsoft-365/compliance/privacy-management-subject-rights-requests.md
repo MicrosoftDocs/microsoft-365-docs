@@ -210,4 +210,69 @@ You can copy, modify, and use our example.
 
 #### Rule package XML
 
+When you set up your rule package, make sure to correctly reference your personal data schema file created above: pdm.xml. In the following sample rule package XML, the following fields need to be customized to create your data match sensitive type:
+
+- **RulePack id** & **PrivacyMatch id**: Use New-GUID to generate a GUID.
+- **Datastore**: This field specifies the personal data match lookup data store to be used. Provide the defined DataStore name of a configured personal data schema.
+- **idMatch**: This field points to the primary element for the personal data match.
+  - **Matches**: Specifies the field to be used in exact lookup. Provide a searchable field name from the personal data schema.
+  - **Classification**: This field specifies the sensitive type match that triggers personal data match lookup. You can provide the Name or GUID of an existing built-in or custom sensitive information type. In order to avoid causing performance issues, if you use a custom sensitive information type as the Classification element in personal data match,  do not use a custom sensitive information type that will match a large percentage of content (such as "any number" or "any five-letter word"). We recommend adding supporting keywords or including formatting in the definition of the custom classification sensitive information type.
+- **Match**: This field points to additional evidence found in proximity of idMatch.
+  - **Matches**: Provide any field name in the personal data schema for DataStore.
+- **Resource**: This section specifies the name and description for sensitive type in multiple locales.
+  - **idRef**: Provide GUID for ExactMatch ID.
+  - **Name & descriptions**: customize as required.
+
+In our rule package XML example below, note that we are referencing the pdm.xml example file from the previous step that creates the personal data schema XML:
+
+- **Datastore**: The dataStore name references the schema file we created earlier: dataStore = "PatientRecords".
+- **idMatch**: The idMatch value references a searchable field that is listed in the pdm.xml file we created earlier: idMatch matches = "SSN".
+  - **Classification**: The classification value references an existing or custom sensitive information type: classification = "U.S. Social Security Number (SSN)". (In this case, we use the existing sensitive information type of U.S. Social Security Number.)
+
+Create a rule package in XML format (with Unicode encoding), like in the following example code. You can copy, modify, and use this example.
+
+ ```xml
+<RulePackage xmlns="http://schemas.microsoft.com/office/2020/pdm">
+  <RulePack id="fd098e03-1796-41a5-8ab6-198c93c62b21">
+    <Version build="0" major="2" minor="0" revision="0" />
+    <Publisher id="eb553734-8306-44b4-9ad5-c388ad970528" />
+    <Details defaultLangCode="en-us">
+      <LocalizedDetails langcode="en-us">
+        <PublisherName>IP DLP</PublisherName>
+        <Name>Health Care PDM Rulepack</Name>
+        <Description>This rule package contains the Personal Data Match sensitive type for health care sensitive types.</Description>
+      </LocalizedDetails>
+    </Details>
+  </RulePack>
+  <Rules>
+    <PrivacyMatch id = "E1CC861E-3FE9-4A58-82DF-4BD259EAB381" patternsProximity = "300" dataStore ="PatientRecords" recommendedConfidence = "65" >
+      <Pattern confidenceLevel="65">
+        <idMatch matches = "SSN" classification = "U.S. Social Security Number (SSN)" />
+      </Pattern>
+      <Pattern confidenceLevel="75">
+        <idMatch matches = "SSN" classification = "U.S. Social Security Number (SSN)" />
+        <Any minMatches ="3" maxMatches ="6">
+          <match matches="PatientID" />
+          <match matches="MRN"/>
+          <match matches="FirstName"/>
+          <match matches="LastName"/>
+          <match matches="Phone"/>
+          <match matches="DOB"/>
+        </Any>
+      </Pattern>
+    </PrivacyMatch>
+    <LocalizedStrings>
+      <Resource idRef="E1CC861E-3FE9-4A58-82DF-4BD259EAB381">
+        <Name default="true" langcode="en-us">Patient SSN Exact Match.</Name>
+        <Description default="true" langcode="en-us">PDM Sensitive type for detecting Patient SSN.</Description>
+      </Resource>
+    </LocalizedStrings>
+  </Rules>
+</RulePackage>
+ ```
+
 ### Perform personal data upload
+After completing the steps to define the personal data schema, you can perform the **personal data upload** on the second tab of the data matching settings page. When you select **Add**, choose the personal schema that you defined in the first step, then upload the file containing the personal data.
+
+You can upload this personal data by choosing a local file, or by supplying an SAS URL to an existing Microsoft Azure Storage location containing your personal data file.
+If you prepared a file as the first step in this process that conforms to the schema created, you can use that file for the upload now.
