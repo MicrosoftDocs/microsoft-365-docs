@@ -1,7 +1,6 @@
 ---
-title: Pilot Microsoft Defender for Identity 
-description: Set up your Microsoft 365 Defender trial lab or pilot environment to try out and experience the security solution designed to protect devices, identity, data, and applications in your organization.
-keywords: Microsoft 365 Defender trial, try Microsoft 365 Defender, evaluate Microsoft 365 Defender, Microsoft 365 Defender evaluation lab, Microsoft 365 Defender pilot, cyber security, advanced persistent threat, enterprise security, devices, device, identity, users, data, applications, incidents, automated investigation and remediation, advanced hunting
+title: Pilot Microsoft Defender for Identity, set up configuration benchmarks, standards, guidelines, and take tutorials about detecting, and remediating various Identity threats like reconnaissance, compromised credential, lateral movement, domain dominance, and exfiltration alerts, conduct user, computer, entity, and lateral movement paths investigation.
+description: Pilot Microsoft Defender for Identity, set benchmarks, take tutorials on reconnaissance, compromised credential, lateral movement, domain dominance, and exfiltration alerts, among others.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -10,8 +9,9 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 
   - NOCSH
-ms.author: 
-author: 
+ms.author: josephd
+author: JoeDavies-MSFT
+ms.date: 07/09/2021
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -33,7 +33,6 @@ This article is [Step 3 of 3](eval-defender-identity-overview.md) in the process
 
 Use the following steps to setup and configure the pilot for Microsoft Defender for identity. Note that the recommendations don't include setting up a pilot group. The best practice is to go ahead and install the sensor on all of your servers running Active Directory Domain Services (AD DS) and Active Directory Federated Services (AD FS).
 
-
 ![Steps for adding Microsoft Defender for Identity to the Defender evaluation environment](../../media/defender/m365-defender-identity-pilot-steps.png)
 
 The following table describes the steps in the illustration.
@@ -45,12 +44,11 @@ The following table describes the steps in the illustration.
 
 Microsoft provides security benchmark recommendations for customers using Microsoft Cloud services. The [Azure Security Benchmark](/security/benchmark/azure/overview) (ASB) provides prescriptive best practices and recommendations to help improve the security of workloads, data, and services on Azure.
 
-These benchmark recommendations include [Azure security baseline for Microsoft Defender for Identity](/security/benchmark/azure/baselines/defender-for-identity-security-baseline). Implementing these recommendations can take some time to plan and implement. While these will greatly increase the security of your identity environment, they shouldn't prevent you from continuing to evaluate and implement Microsoft Defender for Identity. These are provided here for your awareness. 
-
+These benchmark recommendations include [Azure security baseline for Microsoft Defender for Identity](/security/benchmark/azure/baselines/defender-for-identity-security-baseline). Implementing these recommendations can take some time to plan and implement. While these will greatly increase the security of your identity environment, they shouldn't prevent you from continuing to evaluate and implement Microsoft Defender for Identity. These are provided here for your awareness.
 
 ## Step 2. Try out capabilities — Walk through tutorials for identifying and remediating different attack types
 
-The Microsoft Defender for Identity documentation includes a series of tutorials that walk through the process of identifying and remediating various attack types. 
+The Microsoft Defender for Identity documentation includes a series of tutorials that walk through the process of identifying and remediating various attack types.
 
 Try out Defender for Identity tutorials:
 - [Reconnaissance alerts](/defender-for-identity/reconnaissance-alerts)
@@ -62,7 +60,6 @@ Try out Defender for Identity tutorials:
 - [Investigate a computer](/defender-for-identity/investigate-a-computer)
 - [Investigate lateral movement paths](/defender-for-identity/investigate-lateral-movement-path)
 - [Investigate entities](/defender-for-identity/investigate-entity)
-
 
 ## Next steps
 

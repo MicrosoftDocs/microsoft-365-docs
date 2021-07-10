@@ -1,7 +1,6 @@
 ---
-title: Evaluate Microsoft 365 Defender for Identity overview
-description: Set up your Microsoft 365 Defender trial lab or pilot environment to try out and experience the security solution designed to protect devices, identity, data, and applications in your organization.
-keywords: Microsoft 365 Defender trial, try Microsoft 365 Defender, evaluate Microsoft 365 Defender, Microsoft 365 Defender evaluation lab, Microsoft 365 Defender pilot, cyber security, advanced persistent threat, enterprise security, devices, device, identity, users, data, applications, incidents, automated investigation and remediation, advanced hunting
+title: Evaluate Microsoft 365 Defender for Identity overview, set up evaluation, eval and pilot
+description: Steps for the evaluation of Microsoft 365 Defender for Identity including requirements, enabling or activating the eval, and set up of the pilot or test.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -10,8 +9,9 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 
   - NOCSH
-ms.author: 
-author: 
+ms.author: josephd
+author: JoeDavies-MSFT
+ms.date: 07/09/2021
 localization_priority: Normal
 manager: dansimp
 audience: ITPro

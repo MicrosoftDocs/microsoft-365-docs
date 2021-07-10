@@ -1,7 +1,6 @@
 ---
-title: Review architecture requirements and key concepts for Microsoft Defender for Identity
-description: Set up your Microsoft 365 Defender trial lab or pilot environment to try out and experience the security solution designed to protect devices, identity, data, and applications in your organization.
-keywords: Microsoft 365 Defender trial, try Microsoft 365 Defender, evaluate Microsoft 365 Defender, Microsoft 365 Defender evaluation lab, Microsoft 365 Defender pilot, cyber security, advanced persistent threat, enterprise security, devices, device, identity, users, data, applications, incidents, automated investigation and remediation, advanced hunting
+title: Review architecture requirements and the technical framework for Microsoft Defender for Identity, architecture diagram, MDI
+description: The technical diagram for Microsoft Defender for Identity in Microsoft 365 Defender will help you understand identity in Microsoft 365 before you build your trial lab or pilot environment.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -10,8 +9,9 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 
   - NOCSH
-ms.author: 
-author: 
+ms.author: josephd
+author: JoeDavies-MSFT
+ms.date: 07/09/2021
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -31,7 +31,7 @@ ms.technology: m365d
 
 This article is [Step 1 of 3](eval-defender-identity-overview.md) in the process of setting up the evaluation environment for Microsoft Defender for Identity. For more information about this process, see the [overview article](eval-defender-identity-overview.md).
 
-Before enabling Microsoft Defender for Identity, be sure you understand the architecture and can meet the requirements. 
+Before enabling Microsoft Defender for Identity, be sure you understand the architecture and can meet the requirements.
 
 Microsoft Defender for Identity uses machine learning and behavioral analytics to identify attacks across your on-premises network along with detecting and proactively preventing user sign-in risks associated with cloud identities. For more information, see [What is Microsoft Defender for Identity?](/defender-for-identity/what-is)
 

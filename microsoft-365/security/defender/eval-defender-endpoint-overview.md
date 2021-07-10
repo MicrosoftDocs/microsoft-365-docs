@@ -1,7 +1,6 @@
 ---
-title: Evaluate Microsoft Defender for Endpoint overview
-description: Set up a Microsoft 365 Defender trial lab or pilot environment. Test and experience how the security solution is designed to protect devices, identity, data, and apps in your organization.
-keywords: Microsoft 365 Defender trial, try Microsoft 365 Defender, evaluate Microsoft 365 Defender, Microsoft 365 Defender evaluation lab, Microsoft 365 Defender pilot, cyber security, advanced persistent threat, enterprise security, devices, device, identity, users, data, applications, incidents, automated investigation and remediation, advanced hunting
+title: Evaluate Microsoft Defender for Endpoint overview, including reviewing the architecture, enabling or activating the evaluation environment, and building a pilot.
+description: Steps for the set up for a Microsoft 365 Defender trial lab or pilot environment. Test and experience how the security solution is designed to protect devices, identity, data, and apps in your organization.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -12,6 +11,7 @@ f1.keywords:
   - NOCSH
 ms.author: v-jweston
 author: jweston-1
+ms.date: 07/09/2021
 localization_priority: Normal
 manager: dansimp
 audience: ITPro

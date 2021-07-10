@@ -1,6 +1,6 @@
 ---
 title: Evaluate Microsoft Defender for Office 365 overview, how to evaluate, evaluation steps
-description: Set up your Microsoft 365 Defender trial lab or pilot environment to try out and experience the security solution designed to protect devices, identity, data, and applications.
+description: Use this overview to learn the steps to set up an MDO pilot, including requirements, enabling or activating the eval, and setting up the pilot.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security

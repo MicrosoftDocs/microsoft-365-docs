@@ -1,7 +1,6 @@
 ---
-title: Enable the evaluation environment for Microsoft Defender for Identity
-description: Set up your Microsoft 365 Defender trial lab or pilot environment to try out and experience the security solution designed to protect devices, identity, data, and applications in your organization.
-keywords: Microsoft 365 Defender trial, try Microsoft 365 Defender, evaluate Microsoft 365 Defender, Microsoft 365 Defender evaluation lab, Microsoft 365 Defender pilot, cyber security, advanced persistent threat, enterprise security, devices, device, identity, users, data, applications, incidents, automated investigation and remediation, advanced hunting
+title: Enable the evaluation environment for Microsoft Defender for Identity, set up the MDI instance, install and configure MDI sensor, let MDI sensor detect local admins  
+description: Set up Microsoft Defender for Identity in Microsoft 365 Defender trial lab or pilot environment by installing & configuring the sensor, and discovering local admins on other computers.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -10,8 +9,9 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 
   - NOCSH
-ms.author: 
-author: 
+ms.author: josephd
+author: JoeDavies-MSFT
+ms.date: 07/09/2021
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -25,18 +25,12 @@ ms.technology: m365d
 
 # Enable the evaluation environment for Microsoft Defender for Identity
 
-
-
-
 **Applies to:**
 - Microsoft 365 Defender
 
 This article is [Step 2 of 2](eval-defender-identity-overview.md) in the process of setting up the evaluation environment for Microsoft Defender for Identity. For more information about this process, see the [overview article](eval-defender-identity-overview.md).
 
-
-
 Use the following steps to set up your Microsoft Defender for Identity environment. 
-
 
 ![Steps to enable Microsoft Defender for Identity in the Microsoft Defender evaluation environment](../../media/defender/m365-defender-identity-eval-enable-steps.png)
 
@@ -44,7 +38,6 @@ Use the following steps to set up your Microsoft Defender for Identity environme
 - [Step 2. Install and configure the sensor](#step-2-install-and-configure-the-sensor)
 - [Step 3. Configure event log and proxy settings on machines with the sensor](#step-3-configure-event-log-and-proxy-settings-on-machines-with-the-sensor)
 - [Step 4. Allow Defender for Identity to identify local admins on other computers](#step-4-allow-defender-for-identity-to-identify-local-admins-on-other-computers)
-
 
 ## Step 1. Set up the Defender for Identity Instance
 
@@ -56,10 +49,9 @@ Sign in to the Defender for Identity portal to create your instance and then con
 |2     | Connect the Defender for Identity instance to your Active Directory forest   | [Quickstart: Connect to your Active Directory Forest](/defender-for-identity/install-step2)  |
 | | |
 
-
 ## Step 2. Install and configure the sensor
 
-Next, download, install, and configure the Defender for Identity sensor on the domain controllers and AD FS servers in your on-premises environment. 
+Next, download, install, and configure the Defender for Identity sensor on the domain controllers and AD FS servers in your on-premises environment.
 
 |  |Step     |More information  |
 |---------|---------|---------|
@@ -87,11 +79,10 @@ To ensure Windows clients and servers allow your Defender for Identity account t
 
 For instructions on how to do this, see [Configure Microsoft Defender for Identity to make remote calls to SAM](/defender-for-identity/install-step8-samr). 
 
-
 ## Next steps
 
 Step 3 of 3: [Pilot Microsoft Defender for Identity](eval-defender-identity-pilot.md)
 
 Return to the overview for [Evaluate Microsoft Defender for Identity](eval-defender-identity-overview.md)
 
-Return to the overview for [Evaluate and pilot Microsoft 365 Defender](../office-365-security/defender/eval-overview.md) 
+Return to the overview for [Evaluate and pilot Microsoft 365 Defender](../office-365-security/defender/eval-overview.md)

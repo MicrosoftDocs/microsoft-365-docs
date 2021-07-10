@@ -1,7 +1,6 @@
 ---
-title: Create the Microsoft 365 Defender Evaluation Environment
-description: Set up your Microsoft 365 Defender trial lab or pilot environment.
-keywords: Microsoft 365 Defender trial, try Microsoft 365 Defender, evaluate Microsoft 365 Defender, Microsoft 365 Defender evaluation lab, Microsoft 365 Defender pilot, cyber security, advanced persistent threat, enterprise security, devices, device, identity, users, data, applications, incidents, automated investigation and remediation, advanced hunting
+title: Create the Microsoft 365 Defender Evaluation Environment, by activating or enabling trial licenses, and continue on to Microsoft Defender for Identity (MDI) eval.
+description: Set up your Microsoft 365 Defender trial lab or pilot environment by activating trial licenses before setup of Microsoft Defender for Identity (MDI) and other M365D evaluations.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -25,14 +24,11 @@ ms.technology: m365d
 ---
 # Create the Microsoft 365 Defender Evaluation Environment
 
-
-
 There are two common ways to create an evaluation environment. This article assumes you already have a production Microsoft 365 tenant and will activate E5 trial licenses to evaluate Microsoft 365 Defender in *the current environment* in order to ultimately retain these features with the purchase of licenses after the evaluation period.
 
 The second is to  [Set up your Microsoft 365 Defender trial lab environment](setup-m365deval.md) for the purpose of evaluation. It may not have many real signals from the business, so be aware of that caveat.
 
 ## To activate E5 trial licenses to evaluate Microsoft 365 Defender 
-
 1. Logon to your existing M365 tenant administration portal.
 2. Select "Purchase Services" from the navigation menu.
 
@@ -51,7 +47,6 @@ The second is to  [Set up your Microsoft 365 Defender trial lab environment](set
 :::image type="content" source="../../media/MDOEval/4. Four.PNG" alt-text="There is a 'Try Now' buttong on the 'Check out, confirm your order' panel (for a Office 365 E5 trial of a month for 25 users).":::
 
 ## Next steps
-
 [Enable Microsoft 365 for Identity](eval-defender-identity-overview.md)
 
 Return to the overview for [Evaluate and pilot Microsoft 365 Defender](eval-overview.md)

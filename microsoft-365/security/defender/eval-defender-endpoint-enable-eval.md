@@ -1,7 +1,6 @@
 ---
-title: Enable Microsoft Defender for Endpoint evaluation
-description: Enable your Microsoft 365 Defender trial lab or pilot environment.
-keywords: Microsoft 365 Defender trial, try Microsoft 365 Defender, evaluate Microsoft 365 Defender, Microsoft 365 Defender evaluation lab, Microsoft 365 Defender pilot, cyber security, advanced persistent threat, enterprise security, devices, device, identity, users, data, applications, incidents, automated investigation and remediation, advanced hunting
+title: Enable Microsoft Defender for Endpoint evaluation, activate the evaluation for MDE
+description: Enable your Microsoft 365 Defender trial lab or pilot environment, including checking license state, and onboarding enpoints
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -12,6 +11,7 @@ f1.keywords:
   - NOCSH
 ms.author: macapara
 author: mjcaparas
+ms.date: 07/09/2021
 localization_priority: Normal
 manager: dansimp
 audience: ITPro

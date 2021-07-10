@@ -1,7 +1,6 @@
 ---
 title: Review Microsoft Defender for Endpoint architecture requirements and key concepts
-description: Architecture for Microsoft 365 Defender trial lab or pilot environment.
-keywords: Microsoft 365 Defender trial, try Microsoft 365 Defender, evaluate Microsoft 365 Defender, Microsoft 365 Defender evaluation lab, Microsoft 365 Defender pilot, cyber security, advanced persistent threat, enterprise security, devices, device, identity, users, data, applications, incidents, automated investigation and remediation, advanced hunting
+description: The technical diagram for Microsoft Defender for Endpoint in Microsoft 365 Defender will help you understand identity in Microsoft 365 before you build your trial lab or pilot environment.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -12,6 +11,7 @@ f1.keywords:
   - NOCSH
 ms.author: v-jweston
 author: jweston-1
+ms.date: 07/09/2021
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -31,7 +31,6 @@ Microsoft 365 Defender
 This article will guide you in the process of setting up the evaluation for Microsoft Defender for Endpoint environment.
 
 For more information about this process, see the [overview article](eval-defender-endpoint-overview.md).
-
 
 Before enabling Microsoft Defender for Endpoint, be sure you understand the architecture and can meet the requirements.
 

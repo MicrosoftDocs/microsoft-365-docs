@@ -1,6 +1,6 @@
 ---
 title: Review architecture requirements and planning concepts for Microsoft Defender for Office 365, construction, building, and design frameworks
-description: Set up your Microsoft 365 Defender trial lab or pilot environment to try out and experience the security solution designed to protect devices, identity, data, and applications in your organization.
+description: The technical diagram for Microsoft Defender for Office 365 in Microsoft 365 Defender will help you understand identity in Microsoft 365 before you build your trial lab or pilot environment.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security

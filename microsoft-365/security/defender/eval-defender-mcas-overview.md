@@ -1,6 +1,6 @@
 ---
 title: Evaluate Microsoft Cloud App Security overview, setup or set up an evaluation of device, identity, data, and app protection, as part of Microsoft 365 Defender
-description: Set up your Microsoft 365 Defender trial lab or pilot environment to try out and experience the security solution designed to protect devices, identity, data, and applications in your organization.
+description: Steps to set up your Microsoft 365 Defender trial lab or pilot environment to try out and experience the security solution designed to protect devices, identity, data, and applications in your organization.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -11,6 +11,7 @@ f1.keywords:
   - NOCSH
 ms.author: bcarter
 author: brendacarter
+ms.date: 07/09/2021
 localization_priority: Normal
 manager: dansimp
 audience: ITPro

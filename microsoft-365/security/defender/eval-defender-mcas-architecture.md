@@ -1,6 +1,6 @@
 ---
 title: Review architecture requirements and the structure for Microsoft Cloud App Security, plan the configuration and design by knowing the framework of Cloud App Security in Microsoft 365 Defender
-description: Learn Microsoft Cloud App Security architecture in Microsoft 365 Defender to build a pilot environment to try out the security solution designed to protect devices, identity, data, and applications in your organization.
+description: Microsoft Cloud App Security technical diagrams explain the architecture in Microsoft 365 Defender, which will help you build a pilot environment.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security

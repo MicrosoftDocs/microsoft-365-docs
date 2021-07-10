@@ -1,7 +1,6 @@
 ---
-title: Pilot Microsoft Defender for Endpoint 
-description: Learn how to run a pilot for Microsoft Defender for Endpoint 
-keywords: Microsoft 365 Defender trial, try Microsoft 365 Defender, evaluate Microsoft 365 Defender, Microsoft 365 Defender evaluation lab, Microsoft 365 Defender pilot, cyber security, advanced persistent threat, enterprise security, devices, device, identity, users, data, applications, incidents, automated investigation and remediation, advanced hunting
+title: Pilot Microsoft Defender for Endpoint, set up a pilot, test capabilities in evaluation
+description: Learn how to run a pilot for Microsoft Defender for Endpoint, including verifying the pilot group and trying out capabilities
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -12,6 +11,7 @@ f1.keywords:
   - NOCSH
 ms.author: v-jweston
 author: jweston-1
+ms.date: 07/09/2021
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -23,8 +23,7 @@ ms.topic: conceptual
 ms.technology: m365d
 ---
 
-# Pilot Microsoft Defender for Endpoint 
-
+# Pilot Microsoft Defender for Endpoint
 
 This article will guide you in the process of running a pilot for Microsoft Defender for Endpoint. 
 
@@ -44,35 +43,23 @@ After completing the onboarding steps outlined in the [Enable evaluation](eval-d
 
 When you see your onboarded devices you can then proceed with trying out capabilities. 
 
-
 ## Step 2. Try out capabilities
+Now that you've completed onboarding some devices and verified that they are reporting to the service, familiarize yourself with the product by trying out the powerful capabilities that are available right out of the box.
 
-Now that you've completed onboarding some devices and verified that they are reporting to the service, familiarize yourself with the product by trying out the powerful capabilities that are available right out of the box. 
+During the pilot, you can easily get started with trying out some of the features to see the product in action without going through complex configuration steps.
 
-
-During the pilot, you can easily get started with trying out some of the features to see the product in action without going through complex configuration steps. 
-
-Let's start by checking out the dashboards. 
-
+Let's start by checking out the dashboards.
 
 ### View the device inventory
-
 The device inventory is where you'll see the list of endpoints, network devices, and IoT devices in your network. Not only does it provide you with a view of the devices in your network, but it also gives your in-depth information about them such as  domain, risk level, OS platform, and other details for easy identification of devices most at risk.
 
-
 ### View the Threat and vulnerability management dashboard 
-
 Threat and vulnerability management helps you focus on the weaknesses that pose the most urgent and the highest risk to the organization. From the dashboard, get a high-level view of the organization exposure score, Microsoft Secure Score for Devices, device exposure distribution, top security recommendations, top vulnerable software, top remediation activities, and top exposed device data. 
 
-
-
 ### Run a simulation
-
 Microsoft Defender for Endpoint comes with ["Do It Yourself" attack scenarios](https://securitycenter.windows.com/tutorials) that you can run on your pilot devices.  Each document includes OS and application requirements as well as detailed instructions that are specific to an attack scenario. These scripts are safe, documented, and easy to use. These scenarios will reflect Defender for Endpoint capabilities and walk you through investigation experience.
 
-
 To run any of the provided simulations, you need at least [one onboarded device](../defender-endpoint/onboard-configure.md).
-
 
 1. In **Help** > **Simulations & tutorials**, select which of the available attack scenarios you would like to simulate:
 
@@ -91,9 +78,7 @@ To run any of the provided simulations, you need at least [one onboarded device]
 > [!NOTE]
 > Simulation files or scripts mimic attack activity but are actually benign and will not harm or compromise the test device.
 
-
 ## Next steps
-
 [Evaluate Microsoft Cloud App Security](eval-defender-mcas-overview.md)
 
 Return to the overview for [Evaluate Microsoft Defender for Endpoint](eval-defender-endpoint-overview.md)
