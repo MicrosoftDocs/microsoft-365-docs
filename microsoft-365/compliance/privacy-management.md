@@ -71,7 +71,7 @@ To learn more, see [Manage subject rights requests](privacy-management-subject-r
 
 ## How we evaluate your data
 
-To comply with privacy regulations, you need to know where personal data is collected and how it moves across your organization. Privacy management shows where personal data is stored in your Microsoft 365 environment and delivers key insights to help you protect that data and remediate issues before they become problems.
+To show personal information in your Microsoft 365 environment and provide capabilities for managing that data and remediating issues, privacy management evaluates data within the following scope.
 
 ### What privacy management evaluates
 
