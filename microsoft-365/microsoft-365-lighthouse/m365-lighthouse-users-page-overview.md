@@ -29,7 +29,7 @@ Microsoft 365 Lighthouse lets you manage users across tenant accounts by selecti
   
 From the Search users tab, you can quickly search across tenants for specific users and perform basic user management actions such as resetting an account password.
 
-:::image type="content" source="../media/365-lighthouse-users-page-overview/users-search-users-tab.png" 
+:::image type="content" source="../media/m365-lighthouse-users-page-overview/users-search-users-tab.png" 
 alt-text="Screenshot of the Search users tab.":::
 
 ## Risky users tab
