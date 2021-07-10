@@ -940,11 +940,11 @@
           href: privacy-management.md
         - name: Get started with privacy management
           href: privacy-management-setup.md
-        - name: Find and visualize your data
+        - name: Find and visualize personal data in privacy management
           href: privacy-management-data-profile.md
-        - name: Create and manage policies
+        - name: Create and manage policies in privacy management
           href: privacy-management-policies.md
-        - name: Manage subject rights requests
+        - name: Manage subject rights requests in privacy management
           href: privacy-management-subject-rights-requests.md
 - name: Hybrid compliance capabilities
   items: 
