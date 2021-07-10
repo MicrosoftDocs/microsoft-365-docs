@@ -933,19 +933,17 @@
         - name: Energy services security and compliance
           href: ../solutions/energy-secure-collaboration.md
 - name: Manage privacy risks
-  items: 
-    - name: Privacy management
-      items: 
-        - name: Learn about privacy management
-          href: privacy-management.md
-        - name: Get started with privacy management
-          href: privacy-management-setup.md
-        - name: Find and visualize personal data in privacy management
-          href: privacy-management-data-profile.md
-        - name: Create and manage policies in privacy management
-          href: privacy-management-policies.md
-        - name: Manage subject rights requests in privacy management
-          href: privacy-management-subject-rights-requests.md
+  items:
+    - name: Learn about privacy management
+      href: privacy-management.md
+    - name: Get started with privacy management
+      href: privacy-management-setup.md
+    - name: Find and visualize personal data in privacy management
+      href: privacy-management-data-profile.md
+    - name: Create and manage policies in privacy management
+      href: privacy-management-policies.md
+    - name: Manage subject rights requests in privacy management
+      href: privacy-management-subject-rights-requests.md
 - name: Hybrid compliance capabilities
   items: 
     - name: Exchange Online mail encryption with AD RMS

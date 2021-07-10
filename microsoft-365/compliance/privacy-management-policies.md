@@ -36,8 +36,6 @@ To learn more about the capabilities of each template, see below.
 
 ## Policy types
 
-As introduced above, privacy management has templates for these scenarios that can be used as-is or customized to meet your company’s needs.
-
 ### Data overexposure
 
 Privacy management can help you detect and handle situations in which data that you’ve stored is insufficiently secure. For example, if access to an internal site is open to too wide a group or your permission settings have not been kept up to date, personal data stored on that site may be vulnerable to a breach. You can use privacy management’s data policy template to evaluate your data and alert you to potential issues.
