@@ -24,7 +24,7 @@ In this article: learn how to set up **access to privacy management** for your o
 
 ## Sign up
 
-Privacy management will be available within the Microsoft 365 compliance center. The public preview of privacy management is available to organizations with E1, E3, and E5 Office 365 and Microsoft 365 enterprise licenses (free of cost during public preview). Upon general availability of privacy management, organizations with E1, E3, and E5 Office 365 and Microsoft 365 enterprise licenses will need to purchase privacy management licenses to access and use the solution.
+Privacy management will be available within the Microsoft 365 compliance center. The public preview of privacy management is available to organizations with E1, E3, and E5 Office 365 and Microsoft 365 enterprise licenses. Upon general availability of privacy management, organizations will need to obtain a new license.
 
 Note that the public preview of privacy management will not be available to US Government Community (GCC) Moderate, GCC High, or Department of Defense (DoD) customers.
 
@@ -129,10 +129,6 @@ For subject rights requests, choose how long you want to retain the final data c
 ### Data review tags
 
 Manage the tags you’ll use to mark files retrieved in a subject rights request. In this section, you can edit the names and descriptions for custom tags. You can also edit tag descriptions for the built-in tags provided by the system. Names for system tags cannot be changed. To learn more about subject rights requests, see [Manage subject rights requests](privacy-management-subject-rights-requests.md).
-
-## Get started with policies
-
-Privacy management will help kickstart your data evaluation process by creating three policies with default settings, using the templates for data minimization, data overexposure, and data transfers. These policies will be on by default, but will not automatically trigger notification mails or remediation prompts. After your initial setup, you can proceed to create and customize your own policies. To learn more, see Create and manage policies.
 
 ## Get initial data insights
 

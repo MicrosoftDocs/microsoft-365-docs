@@ -44,7 +44,7 @@ Privacy management can help you detect and handle situations in which data that 
 
 ### Data transfer
 
-Transferring data across departments or regional borders can increase the risk of data exposure, for example if it’s sent via unencrypted emails or to unauthorized recipients. This can have regulatory impact or may go against established practices for privacy. Using the data transfer template to create privacy management policies can spot and help limit such transfers.
+Transferring data across departments or regional borders can increase the risk of data exposure, for example if it’s sent via unencrypted emails or to unauthorized recipients. Such actions can have regulatory impact or may go against established practices for privacy. Using the data transfer template to create privacy management policies can spot and help limit such transfers.
 
 > [!NOTE]
 > During public preview, some tenants running data transfer policies to detect transfers across regions may encounter synchronization issues that impact visibility into policy matches in Exchange and Teams data. We recommend focusing on SharePoint and OneDrive data while previewing this policy type. An update for this issue is expected in fall 2021.
@@ -52,6 +52,10 @@ Transferring data across departments or regional borders can increase the risk o
 ### Data minimization
 
 Over time, companies can collect large amounts of personal data from customers or employees. Sometimes this includes data that was collected in excess of need, or is otherwise being unused and should be reduced to limit privacy risks around that information. The data minimization template can be used to address risks of this type.
+
+## Get started with default templates
+
+Privacy management will help kickstart your data evaluation process by creating three policies with default settings, using the templates for data minimization, data overexposure, and data transfers. These policies will be on by default, but will not automatically trigger notification mails or remediation prompts. After your initial setup, you can proceed to create and customize your own policies.
 
 ## Create a privacy management policy
 
@@ -61,7 +65,7 @@ There are two paths into creating privacy management policies. The first option 
 
 To get started right away with a policy, select one of the three pre-set policy types. To review details about any of them, you can select View settings to see the specific properties that make up the policy, including data types, data locations, and the conditions that trigger policy matches.
 
-When creating a policy directly from a template, many settings will be chosen for you automatically. This includes turning the policy on by default. If you want to preview the policy in action before fully activating it, find it in your list after creation, edit the policy, and toggle it to test mode. For more information, see [Test your policy](#test-your-policy).
+When creating a policy directly from a template, many settings will be chosen for you automatically. This includes turning on the policy by default. If you want to preview the policy in action before fully activating it, find it in your list after creation, edit the policy, and toggle it to test mode. For more information, see [Test your policy](#test-your-policy).
 
 ### Create custom policy
 
@@ -75,7 +79,7 @@ Customizable properties include:
 - **Locations**: Choose the locations within Microsoft 365 that your policy should cover, such as your organization’s SharePoint or Exchange data.
 - **Conditions**: Select the relevant conditions for your type of policy. For example, you can specify what types of transfers a data transfer policy should look for, or how recently data has been used for a data minimization policy.
 - **Outcomes**: Define outcomes when a policy match is detected. Your options depend on the policy type you’re starting with. Possible outcomes include:
-  - **Email notifications**: This allows you to trigger digest email notifications, including links to related training. For further information, see Set user email notifications below.
+  - **Email notifications**: This setting allows you to trigger digest email notifications, including links to related training. For more information, see Set user email notifications below.
   - **Teams**: Give users in Teams policy tips and recommendations, along with links to related training. This option is available for data transfer policies.
 - **Alerts**: Decide the frequency of alerts to admins when a policy match is detected. Options include no alerts, alerts for every policy match, or alerts when a specific threshold is reached. If you choose the threshold option, set your desired parameters.
 - **Mode**: Decide whether to run a policy in test mode first or turn it on immediately. For more information, see Test your policy.
@@ -96,13 +100,13 @@ When setting up a custom policy, you will be asked to select which types of data
   - U.S. Patriot Act Enhanced
   - U.S. Personally Identifiable Information (PII) Data Enhanced
   - U.S. State Breach Notification Laws Enhanced
-- **Individual sensitive info types**: By choosing specific types of sensitive information yourself, like Social Security numbers or driver’s license information, you can customize your own group or groups of data of to look out for. This wizard allows you to select from the complete list of sensitive information types within privacy management. Each information type has its own properties. Use the info button beside any of them for details and notes about recommended settings. If you create more than one group, the wizard lets you apply Boolean operators to relate them and define their order of operations.
+- **Individual sensitive info types**: By choosing specific sensitive information types yourself, like Social Security numbers or driver’s license information, you can customize your own group or groups of data of to look out for. This wizard allows you to select from the complete list of sensitive information types within privacy management. Each information type has its own properties. Use the info button beside any of them for details and notes about recommended settings. If you create more than one group, the wizard lets you apply Boolean operators to relate them and define their order of operations.
 
 If you use pre-set classification groups, you cannot also select individual types or create your own groups. For the most flexibility, choose individual sensitive info types. To utilize the most common standards, choose from the classification groups.
 
 #### Test your policy
 
-If you would like to assess a new policy before fully activating it, set your policy to test mode. Test mode enables you to look for matches from the last 30 days, gauge the policy’s behavior, and review the types of alerts generated. We recommend running test policies for at least 5 days to get representative results. You have the option during the test phase to edit and adjust the policy’s settings. After you have gained insights from running the test, you can proceed to turn on the policy. Note that while a policy is running in test mode, no user notification mails will be delivered.
+If you would like to assess a new policy before fully activating it, set your policy to test mode. Test mode enables you to look for matches from the last 30 days, gauge the policy’s behavior, and review the types of alerts generated. We recommend running test policies for at least five days to get representative results. You have the option during the test phase to edit and adjust the policy’s settings. After you have gained insights from running the test, you can proceed to turn on the policy. While a policy is running in test mode, no user notification mails will be delivered.
 
 #### Set user email notifications
 
@@ -110,11 +114,11 @@ With email notifications, users receive direct notifications about policy matche
 
 Notifications can be enabled for individual policies during custom policy creation or when editing any policy. Use the Outcomes section to define what happens when a policy match is detected, including the option to enable these notifications, and set how often you want these digests to be delivered.
 
-Email notification capability is controlled at a global level within Settings. It is enabled by default. Turning this off will stop all emails even if specific notifications have been configured at an individual policy level. For more information, see **Settings** under [Get started with privacy management](privacy-management-setup.md).
+Email notification capability is controlled at a global level within Settings. It is enabled by default. Turning this setting off will stop all emails even if specific notifications have been configured at an individual policy level. For more information, see **Settings** under [Get started with privacy management](privacy-management-setup.md).
 
 ## View policy details
 
-After your policy has been created, select it on the main Policies page to see its full overview. The policy details page will provide insights into your data, enable you to view content about specific policy matches, and advise you on next steps. If you were running your policy in test mode, this is also where you can turn on your policy when testing is complete.
+After your policy has been created, select it on the main Policies page to see its full overview. The policy details page will provide insights into your data, enable you to view content about specific policy matches, and advise you on next steps. If your policy is running in test mode, this page is also where you can turn on your policy when testing is complete.
 
 After your policy is active, you can continue to review its policy details page to see ongoing insights on problem areas, alert severity and trends, and corrective actions taken.
 
@@ -128,13 +132,13 @@ Privacy management’s Overview page provides a view into these findings with dy
 
 To evaluate your active alerts and specify which issues require follow-up, access your **Alerts** page. It provides a filterable list of alerts generated by your policies, which you can individually review to determine the circumstances under which they were triggered.
 
-Selecting any alert will open a flyover pane with additional details, such as the policy type, the number of matching items, and the severity as judged by your policy settings. Under the **Content** tab, you can review the files involved in this alert. This can provide additional insights as to the specific event that triggered the alert, where the files reside, and what types of personal data are involved. Triggers for alerts are determined by each policy’s specific conditions. For instance, an alert might be triggered on a data transfer policy if privacy management detects a transfer between the policy’s specified departments or regions.
+Selecting any alert will open a flyover pane with additional details, such as the policy type, the number of matching items, and the severity as judged by your policy settings. Under the **Content** tab, you can review the files involved in this alert. This information can provide additional insights as to the specific event that triggered the alert, where the files reside, and what types of personal data are involved. Triggers for alerts are determined by each policy’s specific conditions. For instance, an alert might be triggered on a data transfer policy if privacy management detects a transfer between the policy’s specified departments or regions.
 
 After assessing any alert in the list, you can use the **Create issue** action to prompt further investigation and action. You will be asked to name the issue and add any relevant comments for context. You can also dismiss alerts here if they don’t require a follow-up.
 
 ### Issues
 
-As described in the Alerts section, issues are created while assessing alerts about policy matches. To follow up on these and resolve the indicated concerns, visit the Issues page. From here you can review individual issues, investigate the instigating conditions, review the data, and take the necessary steps to close the case.
+As described in the Alerts section, issues are created while assessing alerts about policy matches. To follow up and resolve the indicated concerns, visit the Issues page. From here you can review individual issues, investigate the instigating conditions, review the data, and take the necessary steps to close the case.
 
 This page provides a list of all open issues. Issues are listed by name and sorted by severity to help you prioritize cases, including high, medium, and low categories, along with unassigned. Select any issue in the list to review its content and take action to resolve it. You can give unassigned issues a severity rating during review.
 
@@ -150,9 +154,9 @@ Adding people as collaborators allows you to share the issue with additional mem
 
 #### Review content and remediate
 
-To review the content associated with an issue, choose the Review content action if prompted or open the Content tab. Select any file in the list to view it in full. This will also give you a view into details about the file, any activities on record, and its remediation history, if previous steps have been taken to manage this file.
+To review the content associated with an issue, choose the **Review content** action if prompted or open the Content tab. Select any file in the list to view it in full. Here you can see details about the file, any activities on record, and its remediation history, if previous steps have been taken to manage this file.
 
-Use the Remediate button to make your own data handling decisions for this content. Selecting the button allows you to choose from one or more remediation actions. Options include:
+Use the **Remediate** button to make your own data handling decisions for this content. Selecting the button allows you to choose from one or more remediation actions. Options include:
 
 **All policies**
 
