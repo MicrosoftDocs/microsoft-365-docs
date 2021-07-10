@@ -1,5 +1,5 @@
 ---
-title: "Overview of deploying standard tenant configurations by using Microsoft 365 Lighthouse Baselines"
+title: "Overview of deploying standard tenant configurations by using Microsoft 365 Lighthouse baselines"
 f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
@@ -15,25 +15,25 @@ ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse                         
 search.appverid: MET150
-description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, get an overview of deploying standard tenant configurations by using Baselines."
+description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, get an overview of deploying standard tenant configurations by using baselines."
 ---
 
-# Overview of deploying standard tenant configurations by using Microsoft 365 Lighthouse Baselines 
+# Overview of deploying standard tenant configurations by using Microsoft 365 Lighthouse baselines 
 
 > [!NOTE]
 > The features described in this article are in Preview, are subject to change, and are only available to partners who meet the [requirements](m365-lighthouse-requirements.md). If your organization does not have Microsoft 365 Lighthouse, see [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
 
-Microsoft 365 Lighthouse Baselines provide a repeatable and scalable way for you to assess and manage Microsoft 365 security settings across multiple tenants. Baselines also help monitor core security policies and tenant compliance standards with configurations that secure users, devices, and data.
+Microsoft 365 Lighthouse baselines provide a repeatable and scalable way for you to assess and manage Microsoft 365 security settings across multiple tenants. Baselines also help monitor core security policies and tenant compliance standards with configurations that secure users, devices, and data.
 
-Designed to help partners enable customer adoption of security at their own pace, Microsoft 365 Lighthouse provides a standard set of Baseline parameters and pre-defined configurations for Microsoft 365 services. These security configurations help measure your tenants' Microsoft 365 security and compliance progress.
+Designed to help partners enable customer adoption of security at their own pace, Microsoft 365 Lighthouse provides a standard set of baseline parameters and pre-defined configurations for Microsoft 365 services. These security configurations help measure your tenants' Microsoft 365 security and compliance progress.
 
-You can view the default Baselines and the deployment steps for each Baseline from within Microsoft 365 Lighthouse. To apply Baselines to a tenant, select **Tenants** in the left navigation pane, and then select a tenant. Next, go to the **Deployment plans** tab and implement the desired Baseline.
+You can view the default baselines and the deployment steps for each baseline from within Microsoft 365 Lighthouse. To apply baselines to a tenant, select **Tenants** in the left navigation pane, and then select a tenant. Next, go to the **Deployment plans** tab and implement the desired baseline.
 
-## Standard Baseline security templates
+## Standard baseline security templates
 
-Microsoft 365 Lighthouse standard Baseline configurations for security workloads are designed to help all managed tenants reach an acceptable state of security coverage and compliance.
+Microsoft 365 Lighthouse standard baseline configurations for security workloads are designed to help all managed tenants reach an acceptable state of security coverage and compliance.
 
-The Baseline configurations in the following table come standard with the Microsoft 365 Lighthouse Default Baseline.<br><br>
+The baseline configurations in the following table come standard with the Microsoft 365 Lighthouse default baseline.<br><br>
 
 | Baseline configuration | Description |
 |--|--|
@@ -47,5 +47,5 @@ The Baseline configurations in the following table come standard with the Micros
 
 ## Related content
 
-[Deploy Microsoft 365 Lighthouse Baselines](m365-lighthouse-deploy-baselines.md) (article)\
+[Deploy Microsoft 365 Lighthouse baselines](m365-lighthouse-deploy-baselines.md) (article)\
 [Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)

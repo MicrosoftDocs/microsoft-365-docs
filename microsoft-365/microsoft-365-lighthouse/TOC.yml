@@ -12,9 +12,9 @@
   items: 
     - name: Configure portal security
       href: m365-lighthouse-configure-portal-security.md
-- name: Protect customers with Baselines
+- name: Protect customers with baselines
   items: 
-    - name: Deploy Baselines
+    - name: Deploy baselines
       href: m365-lighthouse-deploy-baselines.md
     - name: Overview of deploying standard tenant configurations
       href: m365-lighthouse-deploying-standard-tenant-configurations-overview.md
