@@ -62,5 +62,5 @@ You must be a Global Administrator in the partner tenant you're signing into.
 
 ## Related content
 
-[Overview of Microsoft](m365-lighthouse-overview.md) (article)\
+[Overview of Microsoft 365 Lighthouse](m365-lighthouse-overview.md) (article)\
 [Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)

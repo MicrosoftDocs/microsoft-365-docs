@@ -41,7 +41,7 @@ On the Overview tab of the Threat management page, you can monitor the antivirus
 
 On the Threats tab of the Threat management page, you can see the Active, Mitigated, Resolved, and Allowed threats across all your tenants. You can also remediate multiple threats at the same time across all your tenants by filtering and drilling down into each threat to learn which devices, users, or tenants are affected.
 
-:::image type="content" source="../media/m365-lighthouse-threat-management-page-overview/threatmanagement-threats-tab.png" alt-text="Screenshot of the Threats tab.":::
+:::image type="content" source="../media/m365-lighthouse-threat-management-page-overview/threatmanagement-threats-tab.png" alt-text="Screenshot of the Default baseline page.>.":::
   
 You can filter threats by:
 
@@ -74,5 +74,5 @@ The Antivirus protection tab on the Threats management page shows the devices ac
 
 ## Related content
 
-[Deploy Microsoft 365 Lighthouse Baselines](m365-lighthouse-deploy-baselines.md) (article)\
+[Deploy Microsoft 365 Lighthouse baselines](m365-lighthouse-deploy-baselines.md) (article)\
 [Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)
