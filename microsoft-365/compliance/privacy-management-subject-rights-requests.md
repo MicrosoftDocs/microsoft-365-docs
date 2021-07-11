@@ -26,7 +26,7 @@ In this article: learn about how to use the subject rights request solution to *
 
 Privacy management provides powerful subject rights requests capabilities to help you handle requests from people seeking to manage their personal data within your organization. These requests are sometimes also referred to as data subject requests (DSRs), data subject access requests (DSARs), or consumer rights requests. Privacy management empowers personnel responsible for fulfilling subject rights requests to easily identify data subjects and find their personal information among your organization’s data in Exchange, SharePoint, OneDrive, and Teams.
 
-Privacy management is uniquely capable in helping you prioritize items to review within the data you collect for these requests. The solution is aware of Microsoft Information Protection sensitivity labels, which indicate content that is potentially confidential and may necessitate special review, and flags items with these labels. In addition, privacy management can detect and flag items containing the data of multiple people, where you may need to redact content prior to supplying it to the data subject.
+Privacy management is uniquely capable in helping you prioritize items to review within the data you collect for these requests. The solution is aware of Microsoft Information Protection sensitivity labels, which indicate content that is potentially confidential and may necessitate special review, and flags items with these labels. For more information about sensitivity labels, see [Learn about sensitive info types](sensitive-information-type-learn-about.md). In addition, privacy management can detect and flag items containing the data of multiple people, where you may need to redact content prior to supplying it to the data subject.
 
 Once data has been collected and evaluated, you can select the most relevant items to include in your reports and exports, and securely collaborate with other team members to move the requests toward completion.
 
@@ -34,7 +34,7 @@ Once data has been collected and evaluated, you can select the most relevant ite
 
 Privacy management provides a central hub for your privacy administrators to handle subject rights requests that your organization has received.
 
-To begin handling a new request case or to work on a request in progress, visit the main **Subject rights requests*** page. It provides a visual overview of the cases that your team has created within privacy management, their status (active, closed, or overdue), and the request types, and a filterable list of all requests. This page is also where you can go to open a new request.
+To begin handling a new request case or to work on a request in progress, visit the main **Subject rights requests** page. It provides a visual overview of the cases that your team has created within privacy management, their status (active, closed, or overdue), and the request types, and a filterable list of all requests. This page is also where you can go to open a new request.
 
 To view details about open cases, select any request in the list and choose **Go to request details**. For more information, see [Review and take action on requests](#review-and-take-action-on-requests).
 
