@@ -50,7 +50,7 @@ To see the privacy management solution’s automated discovery capabilities at w
 
 #### Subject rights requests
 
-The top tiles of the overview page include two tiles related to subject rights requests. The first shows the count of requests created over the last 7 days. The second tile tallies up requests that are overdue and may need immediate attention. Clicking on these tiles will take users with the appropriate permissions to the subject rights request page of privacy management.
+The top tiles of the overview page include two tiles related to subject rights requests. The first shows the count of requests created over the last seven days. The second tile tallies up requests that are overdue and may need immediate attention. Clicking on these tiles will take users with the appropriate permissions to the subject rights request page of privacy management.
 
 ### Key insights
 
