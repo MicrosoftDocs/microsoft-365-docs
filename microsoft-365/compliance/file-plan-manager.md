@@ -27,7 +27,7 @@ Although you can create and manage retention labels from **Information governanc
 
 - You can bulk-create retention labels by importing the relevant information from a spreadsheet.
 
-- You can export the information from existing retention labels for analysis and offline collaboration, or for bulk-editing.
+- You can export the information from existing retention labels for analysis and offline collaboration.
 
 - More information about the retention labels is displayed to make it easier to see into and across the settings of all your retention labels from one view.
 
@@ -94,7 +94,7 @@ All columns except the label **Name** can be displayed or hidden by selecting th
 
 File plan lets you include more information as part of your retention labels. These file plan descriptors provide more options to improve the manageability and organization of the content you need to label.
 
-By default, starting with **Reference ID**, the next few columns display these file plan descriptors that you can specify when you create a retention label, or edit an existing label. 
+By default, starting with **Reference ID**, the next few columns display these optional file plan descriptors that you can specify when you create a retention label, or edit an existing label. 
 
 To get you started, there are some out-of-box values for the following file plan descriptors: 
 - Business function/department
@@ -124,7 +124,7 @@ A *.csv file that contains all existing retention labels opens. For example:
 
 ## Import retention labels into your file plan
 
-In file plan, you can bulk-import new retention labels, and use the same method to bulk-modify existing retention labels.
+In file plan, you can bulk-import new retention labels by using a .csv file with a specific format. After the labels are imported, you can make edits in the .csv file and import the file again for easier bulk-editing of existing retention labels.
 
 To import new retention labels and modify existing retention labels: 
 
@@ -134,7 +134,7 @@ To import new retention labels and modify existing retention labels:
 
    ![Option to download a blank file plan template](../media/file-plan-blank-template-option.png)
 
-2. Download a blank template to import new retention labels. Alternatively, you can start with the .csv file that is exported when you export the existing retention labels in your organization.
+2. Download a blank template as instructed:
 
    ![Blank file plan template opens in Excel](../media/file-plan-blank-template.png)
 
@@ -171,15 +171,19 @@ To import new retention labels and modify existing retention labels:
 
    ![File plan template with information filled in](../media/file-plan-filled-out-template.png)
 
-4. Under step 3 on the **Fill out and import your file plan** page, click **Browse for files** to upload the filled-out template. 
+4. Under step 3 on the **Fill out and import your file plan** page, click **Browse for files** to upload the filled-out template, and then select **Next**.
 
-   File plan validates the entries and displays the import statistics.
+   File plan uploads the file and validates the entries, displaying the import statistics.
 
    ![File plan import statistics](../media/file-plan-import-statistics.png)
 
-   If there's a validation error, file plan import continues to validate every entry in the import file and displays all errors  referencing the line and row numbers in the import file. Copy the displayed error results so you can correct them when you return to the import file.
+5. Depending on the validation results:
+    
+    - If validation fails: Note the row number and column name to correct in the import file. Select **Close**, and then **Yes** to confirm. Correct the errors in the file and save it, select the **Import** option again, and return to step 4.
+    
+    - If validation passes: You can select **Go Live** to make the retention labels available in your tenant. Or, select the Close icon for the page, and **Yes** to confirm you want to close the wizard without making the retention labels available in your tenant at this time.
 
-When the import is complete, you can now add the retention labels to a new retention label policy, or auto-apply them. You can do this right from the **File plan** page by selecting the dropdown from **+ Create a label** and then **Policy to publish labels**, or **Policy to auto-apply a label**.
+When the imported labels are added to your tenant, you can now add them to a new retention label policy, or auto-apply them. You can do this right from the **File plan** page by selecting the dropdown from **+ Create a label** and then **Policy to publish labels**, or **Policy to auto-apply a label**.
 
 ## Next steps
 
