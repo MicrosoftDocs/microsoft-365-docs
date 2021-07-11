@@ -34,7 +34,7 @@ In today's data landscape, organizations must invest in managing and protecting 
 Microsoft 365 privacy management provides solutions that enable you to:
 
 - **Find and visualize personal data**: Protecting data starts with having a thorough understanding of what your organization is storing, where it lives across the services you use, and the conditions under which it's managed in the long term.
-- **Manage privacy risks**: Evaluate your data for key risk scenarios and use built-in tools to set alerts and remediate issues like unintended oversharing, exposure, or unnecessary storage of personal information.
+- **Manage privacy risks**: Use privacy management to evaluate your data for key risk scenarios, and use built-in tools to set alerts and remediate issues like unintended oversharing, exposure, or unnecessary storage of personal information.
 - **Efficiently fulfill personal data requests**: When individuals request to manage the personal data that you store about them, use the privacy management solution to collect data, review the findings, and produce reports.
 
 Privacy management gives you tools to help you navigate these situations, automate key tasks, and easily manage your data handling workflows.

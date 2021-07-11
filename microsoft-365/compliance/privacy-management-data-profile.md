@@ -24,7 +24,7 @@ In this article: learn about the features of the **overview** and **data profile
 
 ## Purpose of the overview and data profile
 
-Micorosft 365 privacy management provides you with capabilities to find and visualize the personal data in your environment. The solution automates discovery of personal data assets in Exchange, SharePoint, OneDrive, and Teams, and provides dashboards that give key insights into the data. Your privacy administrators can act upon these insights to strengthen your organization's approach to privacy and reduce risk.
+Microsoft 365 privacy management provides you with capabilities to find and visualize the personal data in your environment. The solution automates discovery of personal data assets in Exchange, SharePoint, OneDrive, and Teams, and provides dashboards that give key insights into the data. Your privacy administrators can act upon these insights to strengthen your organization's approach to privacy and reduce risk.
 
 ### Overview page
 
@@ -32,7 +32,7 @@ The Overview page serves as an overall dashboard for the privacy management solu
 
 ### Data profile page
 
-The data profile page in privacy management provides a snapshot view of the personal data your organization stores in Microsoft 365. This helps you visualize where personal data lives, what types are the most prevalent in your organization, and how many different types exist across your Microsoft 365 services. You will also be able to explore personal data from this location. To learn more, see Explore the data profile page.
+The data profile page in privacy management provides a snapshot view of the personal data your organization stores in Microsoft 365. This helps you visualize where personal data lives, what types are the most prevalent in your organization, and how many different types exist across your Microsoft 365 services. You will also be able to explore personal data from this location. To learn more, see [Explore the data profile page](#explore-the-data-profile-page).
 
 ## Explore the overview page
 
@@ -42,11 +42,11 @@ The overview page consists of three main sections. Tiles at the top of the page 
 
 #### Policy matches over past 7 days
 
-When policies are set within privacy management, your data will be evaluated for certain conditions that might present privacy risks. Policy matches indicate data discoveries that may need further review or remediation. This card shows the count of any policy matches that have occurred within the last 7 days. Matches will be surfaced here whether policies are on or are running in testing mode, so that you can see the results of all your active policies. Clicking this tile will take you to a filtered view of the Policies page of privacy management, showing the policies that have had a match occur within the past 7 days.
+When policies are set within privacy management, your data will be evaluated for certain conditions that might present privacy risks. Policy matches indicate data discoveries that may need further review or remediation. This card shows the count of any policy matches that have occurred within the last seven days. Matches will be surfaced here whether policies are on or are running in testing mode, so that you can see the results of all your active policies. Clicking this tile will take you to a filtered view of the Policies page of privacy management, showing the policies that have had a match occur within the past seven days.
 
 #### Items with personal data
 
-To see the privacy management solution’s automated discovery capabilities at work, review the Items with personal data tile. This will display how many new items containing personal data have been discovered in your organization’s Microsoft 365 environment over the last 7 days. Clicking this tile will load a view of the newest 100 items discovered.
+To see the privacy management solution’s automated discovery capabilities at work, review the Items with personal data tile. This will display how many new items containing personal data have been discovered in your organization’s Microsoft 365 environment over the last seven days. Clicking this tile will load a view of the newest 100 items discovered.
 
 #### Subject rights requests
 
@@ -58,17 +58,17 @@ The top tiles of the overview page include two tiles related to subject rights r
 
 Content in your organization’s Microsoft 365 environment that contains a large amount of personal data may present a higher risk of exposure. You may wish to review these items to ensure they are covered by a privacy management policy. To help raise these items to your attention, the overview page provides a view into your content items that contain the most personal data. Here you can see the number of unique personal data types detected, how many unique content owners have been identified, and how many data subjects have been identified according to the data matching settings for subject rights requests.
 
-Select View summary for a summary view of the items found. You can also choose to Explore these findings to preview individual files. Note that this view shows a maximum of 100 items. Users in the Privacy Management role group can select files to review details and determine relevance, and export the list in .csv format for reference.
+Select View summary for a summary view of the items found. You can also choose to Explore these findings to preview individual files. This view shows a maximum of 100 items. Users in the Privacy Management role group can select files to review details and determine relevance, and export the list in .csv format for reference.
 
 #### Policies with the most matches in the last week
 
-This insight showcases which policies have been matched the most frequently over the last 7 days, whether in “On” mode or “Testing.” This may illustrate both the performance of your policies and the effects of ongoing work as your privacy management users receive training and are empowered to resolve issues with content and refine their privacy behaviors.
+This insight showcases which policies have been matched the most frequently over the last seven days, whether in “On” mode or “Testing.” This helps illustrate both the performance of your policies and the effects of ongoing work as your privacy management users receive training and are empowered to resolve issues with content and refine their privacy behaviors.
 
 Select View summary for a summary of the top 10 policies matched and the content owners of the associated content. You will also see how many user notifications were sent due to these policy matches and the number of user actions taken. Select Investigate to view the policies page in privacy management, filtered to show the policies from the summary view. This investigative view will show statistics for the full lifetime of the policy. Select it to see details such as when matched items were initially detected.
 
-#### Users with the most policy matches in the last week
+#### Users with the most policy matched in the last week
 
-This insight also addresses matches from policies in either “Testing” or “On” mode. It allows you to view a summary of the users with the most policy matches over the last week and which policies they are matching. This includes totals of the unique content owners, notifications sent to these users, and how many actions were taken from those notifications. Selecting Investigate takes you to the policies page, filtered to show the policies from the summary view. In the investigative view you will not find user information, but you can select a policy to see policy details related to these matches.
+This insight also addresses matches from policies in either “Testing” or “On” mode. It allows you to view a summary of the users with the most policy matches over the last week and which policies they are matching. This includes totals of the unique content owners, notifications sent to these users, and how many actions were taken from those notifications. Selecting Investigate takes you to the policies page, filtered to show the policies from the summary view. In the investigative view, you will not find user information, but you can select a policy to see policy details related to these matches.
 
 #### Items with the most data subject content
 
@@ -84,11 +84,11 @@ Results related to policies will include data from policies in both “Testing�
 
 #### Active policy alerts
 
-This area shows a snapshot of active alerts triggered by policy matches. Over time, this can help you more easily detect abnormalities, such as large spikes in volume. Select View alerts to navigate to the policies page within privacy management, where you can further investigate alerts and create issues for remediation.
+This area shows a snapshot of active alerts triggered by policy matches. Over time, this view can help you more easily detect abnormalities, such as large spikes in volume. Select View alerts to navigate to the policies page within privacy management, where you can further investigate alerts and create issues for remediation.
 
 #### Personal data found in organization
 
-This graph shows trends in how much personal data has been discovered over time in your Microsoft 365 environment and where it is located. This will begin populating after privacy management has been running for sufficient time and after content with personal data has been found within SharePoint, OneDrive, Teams, and/or Exchange.
+This graph shows trends in how much personal data has been discovered over time in your Microsoft 365 environment and where it is located. It will begin populating after privacy management has been running for sufficient time and after content with personal data has been found within SharePoint, OneDrive, Teams, and/or Exchange.
 
 #### Data transfers detected in organization
 
@@ -108,13 +108,13 @@ This view provides insights into what regulations most prevalently drive your su
 
 #### Subject rights requests by status
 
-This graph displays how your organization is doing with completing subject rights requests, broken out into requests that are either Active, Closed, or Overdue. This may help indicate where you could benefit from allocating additional resources to closing out your requests and meeting targets.
+This graph displays how your organization is doing with completing subject rights requests, broken out into requests that are either Active, Closed, or Overdue. Findings here may help indicate where you could benefit from allocating more resources to closing out your requests and meeting targets.
 
 ### Additional data views
 
 #### Subject rights requests at a glance
 
-This provides a high-level view of active subject rights requests, including the time remaining to complete requests by their defined deadlines. It summarizes how many total requests you have, how many are active, and how many are closed. Select View all requests to go to the subject rights request page, where you can view further details and work on the active requests to progress them to completion.
+This view provides a high-level view of active subject rights requests, including the time remaining to complete requests by their defined deadlines. It summarizes how many total requests you have, how many are active, and how many are closed. Select View all requests to go to the subject rights request page, where you can view further details and work on the active requests to progress them to completion.
 
 #### Subject rights requests by residency
 
@@ -126,7 +126,7 @@ This map view helps you visualize your volume of subject rights requests by the 
 
 This card helps you visualize how much personal data exists in your Microsoft 365 environment and how that data is distributed across Exchange, OneDrive, SharePoint, and Teams.
 
-The bar graph shows the approximate aggregate count of unique personal data type instances found within your content. Examples of data types may include things like credit card numbers and social security numbers. Therefore, a discovered file that contains three credit card numbers and one social security number would contain two unique personal data types and four instances. The lower person of this card shows the unique personal data types within each Microsoft 365 location. This provides a view into the diversity of personal data types detected in your organization’s content.
+The bar graph shows the approximate aggregate count of unique personal data type instances found within your content. Examples of data types may include things like credit card numbers and social security numbers. Therefore, a discovered file that contains three credit card numbers and one social security number would contain two unique personal data types and four instances. The lower person of this card shows the unique personal data types within each Microsoft 365 location. It provides a view into the diversity of personal data types detected in your organization’s content.
 
 ### Top personal data types across your organization
 
@@ -138,4 +138,4 @@ For multi-geo environments, this card regionally aggregates personal data type i
 
 ### Exploring content
 
-Selecting Explore on any data profile card will open the content explorer. At this time, you cannot search for a specific content item, and you will not see Teams data in this view. This means that numbers within the content explorer may not match the numbers shown on the data profile page, since the data profile page does include Teams content. Privacy administrators that want to dive deeper into understanding their privacy data may do so here based on personal data type (sensitive information type) or by location (Exchange, OneDrive, or SharePoint).
+Selecting **Explore** on any data profile card will open the content explorer. At this time, you cannot search for a specific content item, and you will not see Teams data in this view. This means that numbers within the content explorer may not match the numbers shown on the data profile page, since the data profile page does include Teams content. Privacy administrators who want further insights into their privacy data may do so here based on personal data type (sensitive information type) or by location (Exchange, OneDrive, or SharePoint).
