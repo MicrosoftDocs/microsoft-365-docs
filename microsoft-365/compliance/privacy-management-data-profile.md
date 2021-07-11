@@ -24,7 +24,7 @@ In this article: learn about the features of the **overview** and **data profile
 
 ## Purpose of the overview and data profile
 
-Privacy management automates discovery of personal data assets within Microsoft 365 and provides dashboards that provide visibility into your organization’s personal data. These dashboards provide key insights and highlight where the data resides within Exchange, SharePoint, OneDrive, and Teams. Your privacy administrators can act upon these insights to strengthen your organization’s approach to privacy.
+Micorosft 365 privacy management provides you with capabilities to find and visualize the personal data in your environment. The solution automates discovery of personal data assets in Exchange, SharePoint, OneDrive, and Teams, and provides dashboards that give key insights into the data. Your privacy administrators can act upon these insights to strengthen your organization's approach to privacy and reduce risk.
 
 ### Overview page
 

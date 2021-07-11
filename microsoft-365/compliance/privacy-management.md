@@ -31,11 +31,11 @@ As your company’s cloud data grows in size and complexity, so does your need t
 
 In today's data landscape, organizations must invest in managing and protecting the personal data they store. Privacy regulations around the world have established standards to follow and the rights of individuals to control their own personal information, and best practices for businesses are continually evolving to keep information about their employees and customers safe.
 
-These important scenarios often present pain points due to their inherent complexities:
+Microsoft 365 privacy management provides solutions that enable you to:
 
-- **Understanding your data**: Protecting data starts with having a thorough understanding of what your organization is storing, where it lives across the services you use, and the conditions under which it's managed in the long term.
-- **Managing personal data risks**: Your data environment must be kept secure and regularly assessed to limit unintended oversharing, exposure, or unnecessary storage of personal information.
-- **Fulfilling personal data requests**: Individuals may request to manage personal data that organizations store about them, which requires organizations to collect, review, and report on their findings.
+- **Find and visualize personal data**: Protecting data starts with having a thorough understanding of what your organization is storing, where it lives across the services you use, and the conditions under which it's managed in the long term.
+- **Manage privacy risks**: Evaluate your data for key risk scenarios and use built-in tools to set alerts and remediate issues like unintended oversharing, exposure, or unnecessary storage of personal information.
+- **Efficiently fulfill personal data requests**: When individuals request to manage the personal data that you store about them, use the privacy management solution to collect data, review the findings, and produce reports.
 
 Privacy management gives you tools to help you navigate these situations, automate key tasks, and easily manage your data handling workflows.
 
@@ -43,19 +43,19 @@ Privacy management gives you tools to help you navigate these situations, automa
 
 With privacy management, you can gain insights into your organization's entire Microsoft 365 privacy landscape. The solution will evaluate your data for personal information, give you a clear view into what you store, and offer opportunities to investigate areas of key interest.
 
-These insights are presented across your **Overview** dashboard, which provides dynamic updates about your data and your current trends, and the **data profile**, which allows you to explore ongoing analytics. The findings and alerts here can inform your next actions for managing data.
+These insights are presented across your **Overview** dashboard, which provides dynamic updates about your data and important trends, and the **data profile**, which allows you to explore ongoing analytics. The findings and alerts here can inform your next actions for managing data.
 
 To learn more, see [Find and visualize your personal data](privacy-management-data-profile.md).
 
 ### Manage risk scenarios
 
-Complex data environments can present potentially risky scenarios for personal data. Privacy management provides easy ways to detect risks in the following areas and establish ongoing practices for handling these scenarios:
+Complex data environments can present potentially risky scenarios for personal data. Privacy management provides easy ways to detect risks in the following areas and establish ongoing processes for handling these scenarios.
 
 - **Overexposed personal data**: Companies may collect various types of information that can be used to identify individual customers or employees. Access rights to this data must be properly managed to protect privacy and prevent inappropriate use.
 - **Data transfers**: Transferring personal data between departments in your organization or across country or regional borders may increase the risk of exposure of data, or of stepping out of accordance with privacy regulations and laws.
 - **Data minimization**: Companies may collect excess information or keep it longer than necessary, resulting in storage of unused personal data. This data should be minimized to help prevent privacy risks.
 
-Privacy management provides built-in templates you can use to set up data-handling policies in these areas. These policies can evaluate your Microsoft 365 data on an ongoing basis, alert you to potential issues, and help you remediate these issues. The templates can either be used as provided or customized to meet your company’s specific needs.
+Privacy management provides built-in templates for setting up data-handling policies in these areas. These policies can evaluate your Microsoft 365 data on an ongoing basis, alert you to potential issues, and help you remediate these issues. As a result, your employees can better follow best privacy practices and stay aware of recommended actions to take. The templates can either be used as provided or customized to meet your company’s specific needs.
 
 To learn more, see [Create and manage policies](privacy-management-policies.md).
 
