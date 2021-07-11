@@ -112,11 +112,11 @@ With email notifications, users receive direct notifications about policy matche
 
 Notifications can be enabled for individual policies during custom policy creation or when editing any policy. Use the Outcomes section to define what happens when a policy match is detected, including the option to enable these notifications, and set how often you want these digests to be delivered.
 
-Email notification capability is controlled at a global level within Settings. It is enabled by default. Turning this setting off will stop all emails even if specific notifications have been configured at an individual policy level. For more information, see **Settings** under [Get started with privacy management](privacy-management-setup.md).
+Email notification capability is controlled at a global level within Settings. It is enabled by default. Turning this setting off will stop all emails even if specific notifications have been configured at an individual policy level. For more information, see Configure settings under [Get started with privacy management](privacy-management-setup.md#configure-settings).
 
 ## View policy details
 
-After your policy has been created, select it on the main Policies page to see its full overview. The policy details page will provide insights into your data, enable you to view content about specific policy matches, and advise you on next steps. If your policy is running in test mode, this page is also where you can turn on your policy when testing is complete.
+After your policy has been created, select it on the main **Policies** page to see its full overview. The policy details page will provide insights into your data, enable you to view content about specific policy matches, and advise you on next steps. If your policy is running in test mode, this page is also where you can turn on your policy when testing is complete.
 
 After your policy is active, you can continue to review its policy details page to see ongoing insights on problem areas, alert severity and trends, and corrective actions taken.
 
