@@ -267,7 +267,7 @@ Download the onboarding package from Microsoft 365 Defender portal:
 2. In the first drop-down menu, select **Linux Server** as the operating system. In the second drop-down menu, select **Local Script (for up to 10 devices)** as the deployment method.
 3. Select **Download onboarding package**. Save the file as WindowsDefenderATPOnboardingPackage.zip.
 
-    ![Microsoft Defender Security Center screenshot](images/atp-portal-onboarding-linux.png)
+    ![Microsoft 365 Defender portal screenshot](images/portal-onboarding-linux.png)
 
 4. From a command prompt, verify that you have the file.
     Extract the contents of the archive:

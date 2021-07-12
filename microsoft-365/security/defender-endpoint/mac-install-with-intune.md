@@ -64,7 +64,7 @@ Download the onboarding packages from Microsoft 365 Defender portal:
 
 2. Set the operating system to **macOS** and the deployment method to **Mobile Device Management / Microsoft Intune**.
 
-    ![Onboarding settings screenshot](images/atp-mac-install.png)
+    ![Onboarding settings screenshot](images/macos-install-with-intune.png)
 
 3. Select **Download onboarding package**. Save it as _WindowsDefenderATPOnboardingPackage.zip_ to the same directory.
 

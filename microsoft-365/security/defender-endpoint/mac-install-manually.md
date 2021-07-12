@@ -49,7 +49,7 @@ Download the installation and onboarding packages from Microsoft 365 Defender po
 3. In Section 2 of the page, select **Download installation package**. Save it as wdav.pkg to a local directory.
 4. In Section 2 of the page, select **Download onboarding package**. Save it as WindowsDefenderATPOnboardingPackage.zip to the same directory.
 
-    ![Microsoft 365 Defender portal screenshot](images/atp-portal-onboarding-page.png)
+    ![Microsoft 365 Defender portal screenshot](images/portal-onboarding-macos.png)
 
 5. From a command prompt, verify that you have the two files.
     
