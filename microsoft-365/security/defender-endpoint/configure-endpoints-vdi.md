@@ -103,11 +103,11 @@ The following steps will guide you through onboarding VDI devices and will highl
       
    1. Depending on the method you'd like to implement, follow the appropriate steps:
 
-          - For single entry for each device: 
+        - For single entry for each device: 
 
             Check only one entry in Microsoft 365 Defender portal.
 
-          - For multiple entries for each device: 
+        - For multiple entries for each device: 
 
             Check multiple entries in Microsoft 365 Defender portal.
 
