@@ -58,6 +58,9 @@ Go to <https://compliance.microsoft.com> and then select **Policies** > **Alert*
 
 ![In the compliance center, select Policies,and under Alert, select Alert policies to view and create alert policies](../media/LaunchAlertPoliciesMCC.png)
 
+> [!NOTE]
+> You have to be assigned the View-Only Manage Alerts role to view alert policies in the Microsoft 365 compliance center. You have to be assigned the Manage Alerts role to create and edit alert policies. For more information, see [Permissions in the security and compliance center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md).
+
 An alert policy consists of the following settings and conditions.
 
 - **Activity the alert is tracking**. You create a policy to track an activity or in some cases a few related activities, such a sharing a file with an external user by sharing it, assigning access permissions, or creating an anonymous link. When a user performs the activity defined by the policy, an alert is triggered based on the alert threshold settings.
