@@ -1,6 +1,6 @@
 ---
 title: Onboard Windows 10 devices using a local script
-description: Use a local script to deploy the configuration package on the devices so that they are onboarded to the service.
+description: Use a local script to deploy the configuration package on devices to enable onboarding of the devices to the service.
 keywords: configure devices using a local script, device management, configure Microsoft Defender for Endpoint devices
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,7 +18,8 @@ ms.topic: article
 ms.technology: mde
 ---
 
-# Onboard Windows 10 devices using local script
+
+# Onboard the Windows 10 devices using a local script
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -42,9 +43,9 @@ You can also manually onboard individual devices to Defender for Endpoint. You m
 Check out the [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)  or  [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) to see the various paths in deploying Defender for Endpoint. 
 
 
-1.  Open the GP configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from [Microsoft 365 Defender](https://security.microsoft.com/):
+1.  Open the GP configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from [Microsoft 365  Defender portal](https://security.microsoft.com/):
 
-    1. In the navigation pane, select **Settings** > **Endpoints** > **Onboarding** (under **Device Management**).
+    1. In the navigation pane, select **Settings** > **Endpoints** > **Device management** > **Onboarding**.
 
     1. Select Windows 10 as the operating system.
 
@@ -100,9 +101,9 @@ For security reasons, the package used to Offboard devices will expire 30 days a
 > [!NOTE]
 > Onboarding and offboarding policies must not be deployed on the same device at the same time, otherwise this will cause unpredictable collisions.
 
-1. Get the offboarding package from [Microsoft 365 Defender](https://security.microsoft.com/):
+1. Get the offboarding package from [Microsoft 365 Defender portal](https://security.microsoft.com/):
 
-    1. In the navigation pane, select **Settings** > **Endpoints** > **Offboarding** (under **Device Management**).
+    1. In the navigation pane, select **Settings** > **Endpoints** > **Device management** > **Offboarding**.
 
     1. Select Windows 10 as the operating system.
 

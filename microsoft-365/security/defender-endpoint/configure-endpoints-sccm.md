@@ -1,6 +1,6 @@
 ---
 title: Onboard Windows 10 devices using Configuration Manager
-description: Use Configuration Manager to deploy the configuration package on devices so that they are onboarded to service.
+description: Use Configuration Manager to deploy the configuration package on devices so that devices are onboarded to the service.
 keywords: onboard devices using sccm, device management, configure Microsoft Defender for Endpoint devices
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,7 +19,7 @@ ms.date: 02/07/2020
 ms.technology: mde
 ---
 
-# Onboard Windows 10 devices using the Configuration Manager
+# Onboard the Windows 10 devices using Configuration Manager
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -65,10 +65,9 @@ Starting in Configuration Manager version 2002, you can onboard the following op
 Check out the [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)  or  [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) to see the various paths in deploying Microsoft Defender for Endpoint. 
 
 
+1. Open the Configuration Manager configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from [Microsoft 365 Defender portal](https://security.microsoft.com/):
 
-1. Open the Configuration Manager configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from [Microsoft 365 Defender](https://security.microsoft.com):
-
-    1. In the navigation pane, select **Settings** > **Endpoints** > **Onboarding** (under **Device Management**).
+    1. In the navigation pane, select **Settings** > **Endpoints** > **Device management** > **Onboarding**.
     
     1. Select Windows 10 as the operating system.
 
@@ -100,7 +99,7 @@ For more information, see [Configure Detection Methods in System Center 2012 R2 
 For each device, you can set a configuration value to state whether samples can be collected from the device when a request is made through Microsoft 365 Defender to submit a file for deep analysis.
 
 >[!NOTE]
->These configuration settings are typically done through Configuration Manager. 
+>These configuration settings are typically done through Configuration Manager.
 
 You can set a compliance rule for configuration item in Configuration Manager to change the sample share setting on a device.
 
@@ -175,9 +174,10 @@ If you use Microsoft Endpoint Manager current branch, see [Create an offboarding
 
 ### Offboard devices using System Center 2012 R2 Configuration Manager
 
-1. Get the offboarding package from [Microsoft 365 Defender](https://security.microsoft.com/):
 
-    1. In the navigation pane, select **Settings** > **Endpoints** > **Offboarding** (under **Device Management**).
+1. Get the offboarding package from [Microsoft 365 Defender portal](https://security.microsoft.com/):
+
+    1. In the navigation pane, select **Settings** > **Endpoints** > **Device management** >  **Offboarding**.
 
     1. Select Windows 10 as the operating system.
 

@@ -65,7 +65,7 @@ If you found this video helpful, check out the [complete training series for sma
   
 ### 1: Set up Microsoft 365 for business (Admin)
 
-Sign in to [Microsoft 365 admin center](https://portal.office.com/adminportal/home) with your global admin credentials, and complete the following steps to set up Microsoft 365 for business. 
+Sign in to [Microsoft 365 admin center](https://admin.microsoft.com/adminportal/home) with your global admin credentials, and complete the following steps to set up Microsoft 365 for business. 
   
 1. [Prerequisites for protecting data on devices with Microsoft 365 for business](pre-requisites-for-data-protection.md)
     

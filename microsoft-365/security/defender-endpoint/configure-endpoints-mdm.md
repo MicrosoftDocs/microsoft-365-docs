@@ -18,7 +18,8 @@ ms.topic: article
 ms.technology: mde
 ---
 
-# Onboard Windows 10 devices using the Mobile Device Management tools
+
+# Onboard the Windows 10 devices using Mobile Device Management tools
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -65,9 +66,10 @@ For security reasons, the package used to Offboard devices will expire 30 days a
 > [!NOTE]
 > Onboarding and offboarding policies must not be deployed on the same device at the same time, otherwise this will cause unpredictable collisions.
 
-1. Get the offboarding package from [Microsoft 365 Defender](https://security.microsoft.com/):
 
-   1. In the navigation pane, select **Settings** > **Endpoints** > **Offboarding** (under **Device Management**).
+1. Get the offboarding package from [Microsoft 365 Defender portal](https://security.microsoft.com/):
+
+   1. In the navigation pane, select **Settings** > **Endpoints** > **Device management** > **Offboarding**.
 
    1. Select Windows 10 as the operating system.
 

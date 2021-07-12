@@ -49,26 +49,24 @@ Client behavioral blocking is effective because it not only helps prevent an att
 
 Behavior-based detections are named according to the [MITRE ATT&CK Matrix for Enterprise](https://attack.mitre.org/matrices/enterprise). The naming convention helps identify the attack stage where the malicious behavior was observed:
 
-
-|Tactic |	Detection threat name |
+|Tactic | Detection threat name |
 |----|----|
-|Initial Access	| `Behavior:Win32/InitialAccess.*!ml` |
-|Execution	| `Behavior:Win32/Execution.*!ml` |
-|Persistence	| `Behavior:Win32/Persistence.*!ml` |
-|Privilege Escalation	| `Behavior:Win32/PrivilegeEscalation.*!ml` |
-|Defense Evasion	| `Behavior:Win32/DefenseEvasion.*!ml` |
-|Credential Access	| `Behavior:Win32/CredentialAccess.*!ml` |
-|Discovery	| `Behavior:Win32/Discovery.*!ml` |
-|Lateral Movement |	`Behavior:Win32/LateralMovement.*!ml` |
-|Collection |	`Behavior:Win32/Collection.*!ml` |
+|Initial Access | `Behavior:Win32/InitialAccess.*!ml` |
+|Execution | `Behavior:Win32/Execution.*!ml` |
+|Persistence | `Behavior:Win32/Persistence.*!ml` |
+|Privilege Escalation | `Behavior:Win32/PrivilegeEscalation.*!ml` |
+|Defense Evasion | `Behavior:Win32/DefenseEvasion.*!ml` |
+|Credential Access | `Behavior:Win32/CredentialAccess.*!ml` |
+|Discovery | `Behavior:Win32/Discovery.*!ml` |
+|Lateral Movement | `Behavior:Win32/LateralMovement.*!ml` |
+|Collection | `Behavior:Win32/Collection.*!ml` |
 |Command and Control | `Behavior:Win32/CommandAndControl.*!ml` |
-|Exfiltration	| `Behavior:Win32/Exfiltration.*!ml` |
-|Impact	| `Behavior:Win32/Impact.*!ml` |
-|Uncategorized	| `Behavior:Win32/Generic.*!ml` |
+|Exfiltration | `Behavior:Win32/Exfiltration.*!ml` |
+|Impact | `Behavior:Win32/Impact.*!ml` |
+|Uncategorized | `Behavior:Win32/Generic.*!ml` |
 
 > [!TIP]
 > To learn more about specific threats, see **[recent global threat activity](https://www.microsoft.com/wdsi/threats)**.
-
 
 ## Configuring client behavioral blocking
 
@@ -83,4 +81,3 @@ If your organization is using Defender for Endpoint, client behavioral blocking 
 - [Attack surface reduction](attack-surface-reduction.md)
 
 - [Next-generation protection](configure-microsoft-defender-antivirus-features.md) (antivirus, antimalware, and other threat protection capabilities)
-

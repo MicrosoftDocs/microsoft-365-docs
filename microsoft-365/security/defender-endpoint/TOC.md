@@ -174,6 +174,7 @@
 #### [General]()
 ##### [Verify data storage location and  update data retention settings](data-retention-settings.md)
 ##### [Configure alert notifications](configure-email-notifications.md)
+##### [Configure vulnerability email notifications](configure-vulnerability-email-notifications.md)
 ##### [Configure advanced features](advanced-features.md)
 
 #### [Permissions]()
@@ -246,7 +247,8 @@
 #### [Use audit mode for attack surface reduction](audit-windows-defender.md)
 
 ### Next-generation protection
-#### [Overview of Microsoft Defender Antivirus](microsoft-defender-antivirus-in-windows-10.md)
+#### [Next-generation protection overview](next-generation-protection.md)
+##### [Overview of Microsoft Defender Antivirus](microsoft-defender-antivirus-windows.md)
 ##### [Microsoft Defender Antivirus on Windows Server](microsoft-defender-antivirus-on-windows-server.md)
 ##### [Better together: Microsoft Defender Antivirus and Microsoft Defender for Endpoint](why-use-microsoft-defender-antivirus.md)
 ##### [Better together: Microsoft Defender Antivirus and Office 365](office-365-microsoft-defender-antivirus.md)
