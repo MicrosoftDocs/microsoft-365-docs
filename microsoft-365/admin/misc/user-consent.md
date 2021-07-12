@@ -13,7 +13,9 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
-ms.custom: AdminSurgePortfolio
+ms.custom: 
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
@@ -31,7 +33,6 @@ If you turn this setting on, those apps will ask users for permission to access 
 A user can give access only to apps they own that access their Office 365 information. They can't give an app access to any other user's information.
 
 ## Turning user consent on or off
-<a name="__toc379982114"> </a>
 
 Here's how to turn User consent to apps on or off.
 
@@ -40,7 +41,6 @@ Here's how to turn User consent to apps on or off.
 2. On the **User consent to apps** page, select the option to turn user consent on or off.
 
 ## Related content 
-<a name="__toc379982114"> </a>
 
 [Configure the admin consent workflow](/azure/active-directory/manage-apps/configure-admin-consent-workflow) (article)\
 [Managing consent to applications and evaluating consent requests](/azure/active-directory/manage-apps/manage-consent-requests) (article)
