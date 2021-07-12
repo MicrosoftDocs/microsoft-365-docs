@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 Connectivity Telemetry"
+title: "Microsoft 365 Connectivity Optics"
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -19,10 +19,10 @@ search.appverid:
 - MET150
 - BCS160
 ms.assetid: f5ee6c33-bcd7-4b0b-b0f8-dc1d9fb8d132
-description: This article contains information about Microsoft 365 Connectivity Telemetry.
+description: This article contains information about Microsoft 365 Connectivity Optics.
 ---
 
-# Microsoft 365 Connectivity Telemetry
+# Microsoft 365 Connectivity Optics
 
 This article is in progress.
 
