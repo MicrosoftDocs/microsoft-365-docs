@@ -26,7 +26,7 @@ ms.topic: article
 **Applies to:**
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
--  Microsoft Defender Antivirus
+- Microsoft Defender Antivirus
 
 You can manage and configure Microsoft Defender Antivirus with the following tools:
 
