@@ -21,6 +21,7 @@ ms.custom:
 - OKR_SMB_Videos
 - AdminSurgePortfolio
 - commerce_billing
+- AdminTemplateSet
 description: "Find your invoice or billing statement in the Microsoft 365 admin center. You can also save and print a copy of your bill."
 ms.date: 07/31/2020
 ---
@@ -100,5 +101,5 @@ If you have a balance and would like to pay it, you can do that online. To learn
 
 [Pay by invoice, credit card, or bank account](pay-for-your-subscription.md) (article) \
 [Manage payment methods](manage-payment-methods.md) (article) \
-[Billing information for Microsoft 365 for business in Mexico](/microsoft-365/commerce/billing-and-payments/mexico-billing-info) (article) \
+[Billing information for Microsoft 365 for business in Mexico](mexico-billing-info.md) (article) \
 [Minecraft: Education Edition payment options](/education/windows/school-get-minecraft) (article)

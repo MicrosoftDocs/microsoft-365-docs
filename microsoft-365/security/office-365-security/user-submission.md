@@ -64,9 +64,8 @@ After you've verified that your mailbox meets all applicable prerequisites, you 
 
 - To modify the configuration for User submissions, you need to be a member of one of the following role groups:
 
-  - **Organization Management** or **Security Administrator** in the [Microsoft 365 Defender portal](permissions-in-the-security-and-compliance-center.md).
-  - **Organization Management** in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups).
-
+  - **Organization Management** or **Security Administrator** in the [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).
+  
 - You need access to Exchange Online PowerShell. If the account that you're trying to use doesn't have access to Exchange Online PowerShell, you'll receive an error that looks like this when specify the submissions mailbox:
 
   > Specify an email address in your domain
@@ -130,24 +129,19 @@ The message formatting requirements are described in the next section. The forma
 
 To correctly identify the original attached messages, messages that are sent to the custom mailbox require specific formatting. If the messages don't use this format, the original attached messages are always identified as phishing submissions.
 
-For correct identification of the original attached messages, messages that are sent to the custom mailbox need to use the following syntax for the Subject (Envelope Title):
+If you want to specify the reported reason for the original attached messages, messages that are sent to the custom mailbox (don't modify the attachment) need to start with one of the following prefixes in the Subject (Envelope Title):
 
-`SafetyAPIAction|NetworkMessageId|SenderIp|FromAddress|(Message Subject)`
+- 1| or Junk:
+- 2| or Not junk
+- 3| or Phishing
 
-where SafetyAPIAction is one of the following integer values:
+For example:
 
-- 1: Junk
-- 2: Not junk
-- 3: Phishing
+`3|This part is ignored by the system` <br>
+`Not Junk:This part of the subject is ignored as well`
 
-This example uses the following values:
+- Both of these messages are being reported as Not Junk based on Subject.
+- The rest is ignored.
 
-- The message is being reported as phishing.
-- The Network Message ID is 49871234-6dc6-43e8-abcd-08d797f20abe.
-- The Sender IP is 167.220.232.101.
-- The From address is test@contoso.com.
-- The message's subject line is "test phishing submission"
-
-`3|49871234-6dc6-43e8-abcd-08d797f20abe|167.220.232.101|test@contoso.com|(test phishing submission)`
 
 Messages that don't follow this format will not display properly in the Submissions portal.

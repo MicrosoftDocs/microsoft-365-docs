@@ -137,9 +137,11 @@ For more information, see [Identify suspicious messages in Outlook.com and Outlo
 The **Show first contact safety tip** settings is available in EOP and Defender for Office 365 organizations, and has no dependency on spoof intelligence or impersonation protection settings. The safety tip is shown to recipients in the following scenarios:
 
 - The first time they get a message from a sender
-- If they don't often get messages from the sender.
+- They don't often get messages from the sender.
 
-![The text of the safety tip for impersonation protection with multiple recipients.](../../media/safety-tip-first-contact-multiple-recipients.png)
+![First contact safety tip for messages with one recipient.](../../media/safety-tip-first-contact-one-recipient.png)
+
+![First contact safety tip for messages with with multiple recipients.](../../media/safety-tip-first-contact-multiple-recipients.png)
 
 This capability adds an extra layer of security protection against potential impersonation attacks, so we recommend that you turn it on.
 
@@ -169,7 +171,7 @@ The following impersonation settings are only available in anti-phishing policie
 
   > [!NOTE]
   >
-  > - In each anti-phishing policy, you can specify a maximum of 60 protected users (sender email addresses). You can't specify the same protected user in multiple policies. So, regardless of how many policies apply to a recipient, the maximum number of protected users (sender email addresses) for each individual recipient is 60. For more information about policy priority and how policy processing stops after the first policy is applied, see [Order and precedence of email protection](how-policies-and-protections-are-combined.md).
+  > - In each anti-phishing policy, you can specify a maximum of 350 protected users (sender email addresses). You can't specify the same protected user in multiple policies. So, regardless of how many policies apply to a recipient, the maximum number of protected users (sender email addresses) for each individual recipient is 350. For more information about policy priority and how policy processing stops after the first policy is applied, see [Order and precedence of email protection](how-policies-and-protections-are-combined.md).
   > - User impersonation protection does not work if the sender and recipient have previously communicated via email. If the sender and recipient have never communicated via email, the message will be identified as an impersonation attempt.
 
   By default, no sender email addresses are configured for impersonation protection in **Users to protect**. Therefore, by default, no sender email addresses are covered by impersonation protection, either in the default policy or in custom policies.
