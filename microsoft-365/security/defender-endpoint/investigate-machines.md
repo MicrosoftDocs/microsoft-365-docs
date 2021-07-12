@@ -53,9 +53,10 @@ When you investigate a specific device, you'll see:
 - Cards (active alerts, logged on users, security assessment)
 
 ![Image of device view](images/specific-device.png)
+
 > [!NOTE]
-> For internal product reasons, the device profile (as reflected also in the device page) does not consider all cyber evidence when determining the 'Last Seen' timeframe.
-> I.e., the Device page 'Last seen' may show older time frame even though more recent alerts or data is available in the machine's timeline.
+> Due to product constrains, the device profile does not consider all cyber evidence when determining the 'Last Seen' timeframe (as seen on the device page as well).
+> For example, the 'Last seen' value in the Device page may show an older time frame even though more recent alerts or data is available in the machine's timeline.
 
 ## Device details
 
