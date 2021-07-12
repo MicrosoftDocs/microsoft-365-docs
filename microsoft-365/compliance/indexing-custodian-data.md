@@ -20,7 +20,7 @@ description: "When a custodian is added to an Advanced eDiscovery case, any cont
 
 # Advanced indexing of custodian data
 
-When a custodian is added to an Advanced eDiscovery case, any content that was deemed as partially indexed is reprocessed to make it fully searchable.  This process is called *Advanced indexing*. Content can be partially indexed for a number of reasons including the existence of images, unsupported file types or when indexing file size limits are encountered.
+When a custodian is added to an Advanced eDiscovery case, any content that was deemed as partially indexed or with errors is reprocessed to make it fully searchable.  This process is called *Advanced indexing*. Content can be partially indexed or processed with errors for a number of reasons including the existence of images, unsupported file types or when indexing file size limits are encountered. Please note that advanced indexing only runs on items that are marked as errors or partially processed files in SharePoint. For example, emails with image attachments are not marked as errors or partially processed in Exchange so those files will not be processed through advanced indexing.
 
 To learn more about processing support and partially indexed items, see:
 

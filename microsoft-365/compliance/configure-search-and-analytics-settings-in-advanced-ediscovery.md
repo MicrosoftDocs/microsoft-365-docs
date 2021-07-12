@@ -81,7 +81,7 @@ There are situations where certain text will diminish the quality of analytics, 
 
 When this setting is turned on, OCR processing will be run on image files. OCR processing is run in the following situations:
 
-- When custodians and [non-custodial data sources](non-custodial-data-sources.md) are added to a case. OCR processing is performed during the Advanced indexing process. This means that text in image files that matches the search criteria will be returned in a collection search.
+- When custodians and [non-custodial data sources](non-custodial-data-sources.md) are added to a case. OCR processing is performed during the [Advanced indexing](indexing-custodian-data.md) process. Please note that OCR is run on items processed through advanced indexing only. For example, a large PDF that failed in processing due to size will be advanced indexed, then the file will have OCR applied. There would be cases where when custodians are added, some emails with attachment will not have OCR applied since advanced indexing is not run. On files where OCR is applied, the text in image files that matches the search criteria will be returned in a collection search.
 
 - When content from other data sources (that aren't associated with a custodian and added to the case in a non-custodial data source) is added to a review set.
 
