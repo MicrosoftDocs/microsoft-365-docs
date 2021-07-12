@@ -9,7 +9,9 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - Adm_O365
-ms.custom: AdminSurgePortfolio
+ms.custom: 
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - MET150
 - MOE150
@@ -31,7 +33,7 @@ We've changed some of our Office 365 and Microsoft 365 subscription names. You d
 
 ## Related content
 
-[Subscriptions and billing](../commerce/index.yml) (links)\
+[Subscriptions and billing](../commerce/index.yml) (link page)\
 [View your bill or invoice](../commerce/billing-and-payments/view-your-bill-or-invoice.md) (article)\
 [Paying for your subscription](../commerce/billing-and-payments/pay-for-your-subscription.md) (article)\
 [Change your billing addresses](../commerce/billing-and-payments/change-your-billing-addresses.md) (article)
