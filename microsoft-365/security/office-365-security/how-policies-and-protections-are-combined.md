@@ -57,7 +57,6 @@ There are two major factors that determine which policy is applied to a message:
 
 - **The priority of the policy**: For each type of policy (anti-spam, anti-malware, anti-phishing, etc.), there's a default policy that applies to everyone, but you can create custom policies that apply to specific users. Each custom policy has a priority value that determines the order that the policies are applied in. The default policy is always applied last.
 
-  
  > [!NOTE]
  > If a user is defined in multiple policies of the same type, only the policy with the highest priority is applied to them. Any remaining policies of that type are not evaluated for the user (including the default policy).
 
