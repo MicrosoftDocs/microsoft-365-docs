@@ -12,6 +12,8 @@ ms.topic: article
 audience: Admin
 ---
 
+# Prerequisites for guest accounts
+
 ## External collaboration settings
 
 Microsoft Managed Desktop requires the following settings in your Azure AD organization for guest account access. You can adjust these settings at the [Azure portal](https://portal.azure.com) under **External Identities / External collaboration settings**:
