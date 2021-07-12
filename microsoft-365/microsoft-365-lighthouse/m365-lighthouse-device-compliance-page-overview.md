@@ -15,7 +15,7 @@ ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse                         
 search.appverid: MET150
-description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, get an overview of the Device compliance page."
+description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, learn about the Device compliance page."
 ---
 
 # Microsoft 365 Lighthouse Device compliance page overview
@@ -23,11 +23,11 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 > [!NOTE]
 > The features described in this article are in Preview, are subject to change, and are only available to partners who meet the [requirements](m365-lighthouse-requirements.md). If your organization does not have Microsoft 365 Lighthouse, see [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
 
-Microsoft 365 Lighthouse lets you view insights and information related to Intune device compliance for all your tenants by selecting **Devices** in the left navigation to open the Device compliance page. From this page, you can get an overview of compliance status across tenants, view a list of devices for each tenant, and get status reports on compliance policies and settings.
+Microsoft 365 Lighthouse lets you view insights and information related to Intune device compliance for all your tenants by selecting **Devices** in the left navigation pane to open the Device compliance page. From this page, you can get an overview of compliance status across tenants, view a list of devices for each tenant, and get status reports on compliance policies and settings.
 
 ## Overview tab  
   
-On the Overview tab, you can view device compliance status across your tenants, see monthly device compliance trends, and track whether devices have compliance policies assigned to them. You can also view information on tenant device compliance actions and requirements based on conditional access policies.
+On the Overview tab, you can view device compliance status across your tenants, see monthly device compliance trends, and track whether devices have compliance policies assigned to them. You can also view information on tenant device compliance actions and requirements based on Conditional Access policies.
 
 :::image type="content" source="../media/m365-lighthouse-device-compliance-page-overview/device-overview-tab.png" alt-text="Screenshot of the Overview tab.":::
 

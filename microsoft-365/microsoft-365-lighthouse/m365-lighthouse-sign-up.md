@@ -15,7 +15,7 @@ ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse                         
 search.appverid: MET150
-description: "Managed Service Providers (MSPs) can follow the steps in this article to sign up for Microsoft 365 Lighthouse."
+description: "For Managed Service Providers (MSPs), learn how to sign up for Microsoft 365 Lighthouse."
 ---
 
 # Sign up for Microsoft 365 Lighthouse
@@ -25,12 +25,11 @@ description: "Managed Service Providers (MSPs) can follow the steps in this arti
 
 ## Before you begin
 
-You must be a Global Administrator in the partner tenant you're signing into.
+- Make sure you and your customer tenants meet the requirements listed in [Microsoft 365 Lighthouse requirements](m365-lighthouse-requirements.md).
 
-> [!IMPORTANT] 
-> Partners must have a CSP relationship and establish Delegated Admin Privileges (DAP) with customers through Partner Center for customers to be active within Microsoft 365 Lighthouse. Customers also must have at least one Microsoft 365 Business Premium subscription and less than 500 licensed users in their tenant.   
+- You must be a Global Administrator in the partner tenant you're signing into.
 
-## Steps to sign up to Microsoft 365 Lighthouse
+## Steps to sign up for Microsoft 365 Lighthouse
 
 1. Go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>. 
 
@@ -54,7 +53,7 @@ You must be a Global Administrator in the partner tenant you're signing into.
 1. Select **Agree & Continue** to complete the partner agreement amendment.
 
     > [!NOTE]
-    > After you complete sign up, it can take up to 48 hours for customer data to appear in Microsoft 365 Lighthouse.
+    > After you complete sign-up, it can take up to 48 hours for customer data to appear in Microsoft 365 Lighthouse.
 
 ## Next steps
 

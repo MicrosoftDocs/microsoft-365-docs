@@ -15,7 +15,7 @@ ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse                         
 search.appverid: MET150
-description: "Managed Service Providers (MSPs) can follow the steps in this article to configure Microsoft 365 Lighthouse portal security."
+description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, learn how to configure portal security."
 ---
 
 # Configure Microsoft 365 Lighthouse portal security
@@ -39,7 +39,7 @@ Access to customer tenant data and settings in Microsoft 365 Lighthouse is restr
 
 You can check which users in the partner tenant have the Admin Agent and Helpdesk Agent roles by reviewing the security group memberships on the [Azure AD – All Groups](https://portal.azure.com/#blade/Microsoft_AAD_IAM/GroupsManagementMenuBlade/AllGroups) page. To learn how to assign CSP program roles and other permissions to users, see [Assign roles and permissions to users](/partner-center/permissions-overview). As an MSP, if you don't already have delegated access privileges to customer tenants, learn how to get them in the article [Obtain permissions to manage a customer's service or subscription](/partner-center/customers-revoke-admin-privileges).
 
-The following table lists the permissions required per Microsoft 365 Lighthouse page to view and act on customer tenant data and settings for the Admin Agent and Helpdesk Agent roles.<br><br>
+The following table lists the different Microsoft 365 Lighthouse pages and the permissions required to view and act on customer tenant data and settings for the Admin Agent and Helpdesk Agent roles.<br><br>
 
 | Microsoft 365 Lighthouse page | Admin Agent permissions | Helpdesk Agent permissions |
 |--|--|--|

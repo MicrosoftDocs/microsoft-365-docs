@@ -15,7 +15,7 @@ ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse                         
 search.appverid: MET150
-description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, get an overview of using baselines to deploy standard tenant configurations."
+description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, learn about using baselines to deploy standard tenant configurations."
 ---
 
 # Overview of using baselines to deploy standard tenant configurations 

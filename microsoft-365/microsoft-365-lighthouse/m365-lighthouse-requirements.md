@@ -15,7 +15,7 @@ ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse                         
 search.appverid: MET150
-description: "Managed Service Providers (MSPs) can use Microsoft 365 Lighthouse to secure and manage customer devices, data, and users at scale for small- and medium-sized business (SMB) customers."
+description: "For Managed Service Providers (MSPs), get a list of requirements to use Microsoft 365 Lighthouse."
 ---
 
 # Requirements for Microsoft 365 Lighthouse
@@ -42,7 +42,7 @@ To view customer tenant devices on the device management pages, a MSP must: �
 
 ## Requirements for enabling user management 
 
-For user management pages including Risky users, Multifactor authentication, and Password reset, customer tenants must have licenses for Azure Active Directory Premium P1 or later for customer data to show up in reports. Azure AD Premium P1 is included with Microsoft 365 Business Premium.   
+For customer data to show up in reports on user management pages, including Risky users, Multifactor authentication, and Password reset, customer tenants must have licenses for Azure Active Directory Premium P1 or later. Azure AD Premium P1 is included with Microsoft 365 Business Premium.   
 
 ## Requirements for enabling threat management 
 

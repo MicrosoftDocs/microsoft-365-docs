@@ -15,7 +15,7 @@ ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse                         
 search.appverid: MET150
-description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, get an overview of the Users page."
+description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, learn about the Users page."
 ---
 
 # Microsoft 365 Lighthouse Users page overview 

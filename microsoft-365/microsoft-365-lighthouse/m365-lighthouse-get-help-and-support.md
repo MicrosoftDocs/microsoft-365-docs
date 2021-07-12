@@ -23,7 +23,7 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 > [!NOTE]
 > The features described in this article are in Preview, are subject to change, and are only available to partners who meet the [requirements](m365-lighthouse-requirements.md). If your organization does not have Microsoft 365 Lighthouse, see [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
 
-Several options are available to you if you need help. Start by checking the current health of customer tenant services:
+Several options are available if you need help. Start by checking the current health of customer tenant services:
 
 1. In the left navigation pane of Microsoft 365 Lighthouse, select **Service health**.
 2. View detailed information about current and past issues.
@@ -52,7 +52,7 @@ If you're experiencing an issue that isn't listed in either of the Service healt
     
     -  If you're on the page of the portal where the issue occurred, select **Show diagnostics**.
 
-        This will create a JSON file with information to help support agents troubleshoot your issue. Save the file so you can attach it to your service request.
+        This will create a JSON file with information to help Support agents troubleshoot your issue. Save the file so you can attach it to your service request.
 
         > [!NOTE]
         > The JSON file will contain personally identifiable information.

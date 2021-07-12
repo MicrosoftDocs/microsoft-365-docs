@@ -15,7 +15,7 @@ ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse                         
 search.appverid: MET150
-description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, get an overview of the tenant list."
+description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, learn about the tenant list."
 ---
 
 # Microsoft 365 Lighthouse tenant list overview
@@ -23,13 +23,15 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 > [!NOTE]
 > The features described in this article are in Preview, are subject to change, and are only available to partners who meet the [requirements](m365-lighthouse-requirements.md). If your organization does not have Microsoft 365 Lighthouse, see [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
 
-The Microsoft 365 Lighthouse tenant list provides insights into the different tenants you have a relationship with. This list also provides insights into tenant onboarding status relative to Microsoft 365 Lighthouse, lets you tag tenants to provide different filters throughout Microsoft 365 Lighthouse, and lets you drill down to learn more about a given tenant and the status of their deployment plan.
+The Microsoft 365 Lighthouse tenant list provides insights into the different tenants you have a contract with, including tenant onboarding status relative to Microsoft 365 Lighthouse. The tenant list also lets you tag tenants to provide different filters throughout Microsoft 365 Lighthouse, and drill down to learn more about a given tenant and the status of their deployment plan.
 
 After your tenants meet the [Microsoft 365 Lighthouse onboarding requirements](m365-lighthouse-requirements.md), their status will show as **Active** in the tenant list.
 
-## Tenant list
+To access the tenant list in Microsoft 365 Lighthouse, select **Tenants** in the left navigation pane to open the Tenants page.
 
-The tenant list provides an overview of all tenants you have a contract with and their onboarding status relative to Microsoft 365 Lighthouse. The following table shows the different status messages and their meanings.<br><br>
+## Tenant status
+
+The following table shows the different status messages and their meaning.<br><br>
 
 | Status message | Description |
 |--|--|

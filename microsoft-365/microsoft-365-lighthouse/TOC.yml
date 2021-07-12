@@ -6,7 +6,7 @@
       href: m365-lighthouse-requirements.md
 - name: Get started
   items: 
-    - name: Sign up for Microsoft 365 Lighthouse
+    - name: Sign up
       href: m365-lighthouse-sign-up.md
 - name: Secure Microsoft 365 Lighthouse
   items: 
@@ -38,5 +38,5 @@
   items: 
     - name: Get help and support
       href: m365-lighthouse-get-help-and-support.md
-    - name: Microsoft 365 Lighthouse FAQ
+    - name: Frequently asked questions (FAQs)
       href: m365-lighthouse-faq.yml

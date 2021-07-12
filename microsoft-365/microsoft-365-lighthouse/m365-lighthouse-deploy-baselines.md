@@ -34,7 +34,7 @@ Microsoft 365 Lighthouse baselines let you deploy standard managed tenant config
 
 ## Before you begin
 
-Make sure you meet the requirements listed in [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
+Make sure you and your customer tenants meet the requirements listed in [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
 
 ## Learn more about the default baseline
 
