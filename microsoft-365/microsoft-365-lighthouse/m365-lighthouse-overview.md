@@ -32,7 +32,7 @@ No additional costs are associated with using Microsoft 365 Lighthouse to manage
 Note that CSP indirect providers aren't currently supported by Microsoft 365 Lighthouse. 
 
 > [!IMPORTANT] 
-> To use Microsoft 365 Lighthouse, MSPs and their customers must meet the requirements listed in [Microsoft 365 Lighthouse requirements](m365-lighthouse-requirements).     
+> To use Microsoft 365 Lighthouse, MSPs and their customers must meet the requirements listed in [Microsoft 365 Lighthouse requirements](m365-lighthouse-requirements.md).     
 
 For more information about the CSP program, see the [Cloud Solution Provider program overview](/partner-center/csp-overview).
 

@@ -25,7 +25,7 @@ description: "Managed Service Providers (MSPs) can follow the steps in this arti
 
 ## Before you begin
 
-- Make sure you meet the requirements listed in [Microsoft 365 Lighthouse requirements](m365-lighthouse-requirements).
+- Make sure you meet the requirements listed in [Microsoft 365 Lighthouse requirements](m365-lighthouse-requirements.md).
 
 - You must be a Global Administrator in the partner tenant you're signing into.
 
