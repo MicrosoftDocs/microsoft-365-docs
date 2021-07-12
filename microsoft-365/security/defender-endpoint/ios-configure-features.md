@@ -61,6 +61,26 @@ While enabled by default, there might be some cases that require you to disable 
 
 Apple iOS does not support multiple device-wide VPNs to be active simultaneously. While multiple VPN profiles can exist on the device, only one VPN can be active at a time.
 
+## Configure Microsoft Defender for Endpoint risk signal in app protection policy (MAM)
+
+Microsoft Defender for Endpoint can be configured to send threat signals to be used in App Protection Policies (APP, also known as MAM) on iOS/iPadOS. With this capability, you can use Microsoft Defender for Endpoint to protect access to corporate data from unenrolled devices as well.
+
+Steps to setup app protection policies with Microsoft Defender for Endpoint are as below:
+
+1. Set up the connection from your Microsoft Endpoint Manager tenant to Microsoft Defender for Endpoint. In [Microsoft Endpoint manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Tenant Administration** > **Connectors and tokens** > **Microsoft Defender for Endpoint** (under Cross platform) or **Endpoint Security** > **Microsoft Defender for Endpoint** (under Setup) and turn on the toggles under **App Protection Policy Settings for iOS**.
+1. Select Save. You should see **Connection status** is now set to **Enabled**.
+1. Create app protection policy: After your Microsoft Defender for Endpoint connector setup is complete, navigate to **Apps** > **App protection policies** (under Policy) to create a new policy or update an existing one.
+1. Select the platform, **Apps, Data protection, Access requirements** settings that your organization requires for your policy.
+1. Under **Conditional launch** > **Device conditions**, you will find the setting **Max allowed device threat level**. This will need to be configured to either Low, Medium, High, or Secured. The actions available to you will be **Block access** or **Wipe data**. You may see an informational dialog to make sure you have your connector set up prior to this setting take effect. If your connector is already set up, you may ignore this dialog.
+1. Finish with Assignments and save your policy.
+
+For more details on MAM or app protection policy, see [iOS app protection policy settings](/mem/intune/apps/app-protection-policy-settings-ios).
+
+### Deploying Microsoft Defender for Endpoint for MAM or on unenrolled devices
+
+Microsoft Defender for Endpoint on iOS enables the App Protection Policy scenario and is available in the Apple app store.
+
+End-users should install the latest version of the app directly from the Apple app store.
 
 ## Configure compliance policy against jailbroken devices
 
@@ -82,12 +102,12 @@ Follow the steps below to create a compliance policy against jailbroken devices.
     > [!div class="mx-imgBorder"]
     > ![Policy Settings](images/ios-jb-settings.png)
 
-4. In the *Action for noncompliance* section, select the actions as per your requirements and select **Next**.
+4. In the **Action for noncompliance** section, select the actions as per your requirements and select **Next**.
 
     > [!div class="mx-imgBorder"]
     > ![Policy Actions](images/ios-jb-actions.png)
 
-5. In the *Assignments* section, select the user groups that you want to include for this policy and then select **Next**.
+5. In the **Assignments** section, select the user groups that you want to include for this policy and then select **Next**.
 6. In the **Review+Create** section, verify that all the information entered is correct and then select **Create**.
 
 ## Configure custom indicators
