@@ -161,6 +161,10 @@ Only users who hold a Global Administrator or  Compliance Manager Administration
 
 Compliance Manager offers the option to add your own controls and improvement actions to an existing Microsoft-provided template. This process is called extending a Microsoft template. When you extend a template, it can still receive updates released by Microsoft, which may happen when there are changes to the related regulation or product (see [Accept updates to assessments](compliance-manager-assessments.md#accept-updates-to-assessments)).
 
+Note that if you're setting up assessments for products other than Microsoft 365, your process will differ. To learn more, see [Extend universal assessment templates](#extend-universal-assessment-templates).
+
+### Prepare template data and create extension
+
 To prepare, you’ll need to assemble a specially formatted Excel spreadsheet to import the necessary template data. The Excel files follow the same general format outlined above, but there are special requirements for extensions. See these additional points to help prevent errors:
 
 - Your spreadsheet should contain only the actions and controls you want to add to the assessment.
