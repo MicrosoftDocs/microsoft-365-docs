@@ -55,7 +55,7 @@ The following table lists the different threat statuses and their definition:<br
 | Threat status | Definition |
 |--|--|
 | Active | Threat is active on the device. |
-| No status | Threat status is unavailable. Run a full scan on the device to have Microsoft Defender antivirus redetect the threat. |
+| No status | Threat status is unavailable. Run a full scan on the device to have Microsoft Defender Antivirus redetect the threat. |
 | Action failed | The device is not at risk. An action has failed but a potential threat has been stopped and isn't active on the device. Run a full scan on the device. |
 | Manual steps required | The threat has been stopped but it requires a manual step to be completed, such as a full scan or a reboot of the device. |
 | Full scan required | A full scan of the device is required. |
@@ -68,7 +68,7 @@ The following table lists the different threat statuses and their definition:<br
 
 ## Antivirus protection tab
 
-The Antivirus protection tab on the Threats management page shows the devices across all your tenants and their Microsoft Defender antivirus protection state. You can assess the status and take action for one or more devices that may be vulnerable. You can also select a device to view more information, such as Device Overview, Current Threats, and Device Action statuses.
+The Antivirus protection tab on the Threats management page shows the devices across all your tenants and their Microsoft Defender Antivirus protection state. You can assess the status and take action for one or more devices that may be vulnerable. You can also select a device to view more information, such as Device Overview, Current Threats, and Device Action statuses.
 
 :::image type="content" source="../media/m365-lighthouse-threat-management-page-overview/threatmanagement-antivirus-tab.png" alt-text="Screenshot of the Antivirus tab.":::
 

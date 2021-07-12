@@ -25,14 +25,14 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 
 Microsoft 365 Lighthouse is an admin portal that helps Managed Service Providers (MSPs) secure and manage devices, data, and users at scale for small- and medium-sized business (SMB) customers who are using Microsoft 365 Business Premium. 
 
-Microsoft 365 Lighthouse simplifies onboarding of Microsoft 365 Business Premium tenants by recommending security configuration baselines tailored to SMB customers and providing multi-tenant views across all customer environments. With Microsoft 365 Lighthouse, partners can scale the management of their customers, focus on what's most important, quickly find and investigate risks, and take action to get their customers to a healthy and secure state. With Microsoft 365 Lighthouse, partners can scale the management of their customers, focus on what's most important, quickly find and investigate risks, and take action to get their customers to a healthy and secure state.
+Microsoft 365 Lighthouse simplifies onboarding of Microsoft 365 Business Premium tenants by recommending security configuration baselines tailored to SMB customers and providing multi-tenant views across all customer environments. With Microsoft 365 Lighthouse, MSPs can scale the management of their customers, focus on what's most important, quickly find and investigate risks, and take action to get their customers to a healthy and secure state.
 
-No additional costs are associated with using Microsoft 365 Lighthouse to manage Microsoft 365 services and connected devices. Microsoft 365 Lighthouse is currently in preview and available to MSPs enrolled in the Cloud Solution Provider (CSP) program and serving SMB customers with a Microsoft 365 Business Premium subscription.
+No additional costs are associated with using Microsoft 365 Lighthouse to manage Microsoft 365 services and connected devices. Microsoft 365 Lighthouse is currently in Preview and available to MSPs enrolled in the Cloud Solution Provider (CSP) program and serving SMB customers with a Microsoft 365 Business Premium subscription.
 
 Note that CSP indirect providers aren't currently supported by Microsoft 365 Lighthouse. 
 
 > [!IMPORTANT] 
-> Partners must have a CSP relationship and establish Delegated Admin Privileges (DAP) with customers through Partner Center for customers to be active within Microsoft 365 Lighthouse. Customers also must have at least one Microsoft 365 Business Premium subscription and fewer than 500 licensed users in their tenant.     
+> To use Microsoft 365 Lighthouse, MSPs and their customers must meet the requirements listed in [Microsoft 365 Lighthouse requirements](m365-lighthouse-requirements).     
 
 For more information about the CSP program, see the [Cloud Solution Provider program overview](/partner-center/csp-overview).
 
@@ -41,7 +41,7 @@ For more information about the CSP program, see the [Cloud Solution Provider pro
 
 ## Microsoft 365 Lighthouse benefits
 
-Microsoft 365 Lighthouse helps partners secure and manage Microsoft 365 services and connected endpoints at scale by:
+Microsoft 365 Lighthouse helps MSPs secure and manage Microsoft 365 services and connected endpoints at scale by:
 
 - Providing tenant deployment journeys so technicians can follow a consistent set of steps to secure and configure customer tenants. 
 - Using a default SMB security baseline that prescribes best practices targeted to small- and medium-sized business tenants. 
@@ -49,7 +49,7 @@ Microsoft 365 Lighthouse helps partners secure and manage Microsoft 365 services
 - Simplifying common tasks like resetting a password.
 - Configuring multifactor authentication and self-service password reset, including tools to help drive adoption by users. 
 - Understanding and protecting against risky sign-ins.
-- Managing threats on Windows 10 devices by providing details on threats detected by Microsoft Defender and actions to take to resolve issues and keep devices up to date.   
+- Managing threats on Windows 10 devices by providing details on threats detected by Microsoft Defender and actions to take to resolve issues and keep devices up to date.
 - Providing insights into Microsoft 365 service incidents and advisories that impact the customer tenants they manage.
 
 > [!NOTE] 
