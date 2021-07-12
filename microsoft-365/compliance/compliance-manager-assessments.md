@@ -22,7 +22,7 @@ description: "Build assessments in Microsoft Compliance Manager to help you meet
 
 ## Introduction to assessments
 
-Compliance Manager helps you create assessments that evaluate your compliance with industry and regional regulations that apply to your organization. Assessments are built upon the framework of assessment templates, which contain the necessary controls, improvement actions, and Microsoft actions for completing the assessment. Setting up the most relevant assessments for your organization can help you implement policies and operational procedures to limit your compliance risk.
+Compliance Manager helps you create assessments that evaluate your compliance with industry and regional regulations that apply to your organization. Assessments are built upon the framework of assessment templates, which contain the necessary controls, improvement actions, and, where applicable, Microsoft actions for completing the assessment. Setting up the most relevant assessments for your organization can help you implement policies and operational procedures to limit your compliance risk.
 
 All of your assessments are listed on the assessments tab of Compliance Manager. Learn more about [how to filter your view of your assessments and interpret status states](compliance-manager-setup.md#assessments-page).
 
@@ -49,7 +49,7 @@ Below are examples of two groups and their underlying assessments:
   - ISO 27001:2013
   - ISO 27018:2014
 
-When two different assessments in the same group share improvement actions that you manage, any updates you make to an action's implementation details or status will automatically synchronize throughout the group. This synchronization allows you to implement one improvement action and meet several requirements simultaneously.
+Different assessments within a group or groups may share improvement actions. Improvement actions may be changes you make within technical solutions mapped to your tenant, like turning on two-factor authentication, or to non-technical actions you perform outside the system, like instituting a new workplace policy. Any updates in details or status that you make to a technical improvement action will be picked up by assessments across all groups. Non-technical improvement action updates will be recognized by assessments within the group where you apply them. This allows you to implement one improvement action and meet several requirements simultaneously.
 
 ### Create a group
 
@@ -63,7 +63,6 @@ You can create a group while creating a new assessment. Groups can't be created 
 - Once you add an assessment to a group, the grouping can't be changed.
 - If you add a new assessment to an existing group, common information from assessments in that group are copied to the new assessment.
 - Related assessment controls in different assessments within the same group automatically update when completed.
-- When a change is made to an improvement that appears in multiple groups, that change is reflected in all instances of that improvement action.
 - Groups can contain assessments for the same certification or regulation, but each group can only contain one assessment for a specific product-certification pair. For example, a group can't contain two assessments for Office 365 and NIST CSF. A group can contain multiple assessments for the same product only if the corresponding certification or regulation for each one is different.
 - Deleting an assessment breaks the relationship between that assessment and the group.
 - Groups can't be manually deleted.
@@ -83,7 +82,9 @@ To begin building assessments, follow these steps.
 
 3. **Select a template**: If you didn't already choose a template in step 2, choose a template to serve as the basis for your assessment. You’ll see the list of templates divided into included and premium categories (see [Template types](compliance-manager-templates.md#template-availability-and-licensing) for more information). Select the radio button next to your chosen template, then select **Next**.
 
-4. **Name and group:** Set these properties to identify your assessment and assign it to a group.
+4. **Product, name, and group:** Set these properties to identify your assessment, choose which product it will be evaluating, and assign it to a group.
+
+    - **Product**: If you’re using a universal template, select whether you’re creating this assessment for a new product or an existing custom product you have already defined in Compliance Manager. If you choose a new product, enter its name. Note that you cannot select Microsoft 365 as the product when using a universal template. If you are using a Microsoft 365 template, this field will be populated for you to indicate Microsoft 365 and cannot be changed.
     - **Name**: Enter a name for your assessment in the **Assessment name** field. Assessment names must be unique within groups. If the name of your assessment matches the name of another assessment in any given group, you’ll receive an error asking you to create a different name.
     - **Group**: Assign your assessment to a group. You can either:
         - Select **Use existing group** to assign it to a group you’ve already created; or
@@ -143,7 +144,7 @@ Select an improvement action to view its details page, and select the **Launch n
 
 ### Microsoft actions tab
 
-The Microsoft actions tab lists all the actions in the assessment that are managed by Microsoft. The list shows key action details, including: test status, points that contribute to your overall compliance score, associated regulations and standards, applicable solution, action type, and control family. Select an improvement action to view its details page.
+The Microsoft actions tab appears for assessments based on the Microsoft 365 versions of the templates. It lists all the actions in the assessment that are managed by Microsoft. The list shows key action details, including: test status, points that contribute to your overall compliance score, associated regulations and standards, applicable solution, action type, and control family. Select an improvement action to view its details page.
 
 Learn more about [how controls and improvement actions are tracked and scored.](compliance-score-calculation.md)
 
