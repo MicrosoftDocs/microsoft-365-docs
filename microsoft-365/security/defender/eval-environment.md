@@ -1,6 +1,6 @@
 ---
-title: Create a Microsoft 365 Defender evaluation in a production, Microsoft 365 environment with Defender for Identity, then Defender for Office 365, Defender for Endpoint, and Microsoft Cloud App Security.
-description: Set up your Microsoft 365 Defender trial lab or pilot environment starting with Defender for Identity, and continuing with Defender for Office 365, Defender for Endpoint, and Microsoft Cloud App Security.
+title: Create a Microsoft 365 Defender evaluation in a production. An environment with Defender for Identity, then Defender for Office 365, Defender for Endpoint, and Microsoft Cloud App Security.
+description: Set up your Microsoft 365 Defender trial lab or pilot environment. Start with Defender for Identity, and add Defender for Office 365, Defender for Endpoint, and Microsoft Cloud App Security.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -27,11 +27,11 @@ ms.technology: m365d
 - [**Return to the Eval Overview** 'Evaluate and pilot Microsoft 365 Defender' | Microsoft Docs](../office-365-security/defender/eval-overview.md) 
 - [What's next?](#whats-next)
 
-There are two common ways to do this next step in evaluation. This document assumes you already have a production M365 tenant, and will activate E5 trial licenses to evaluate M365 Defender in *the current environment* in order to ultimately retain these features with the purchase of licenses after the evaluation period.
+There are two common ways to do this next step in evaluation. This document assumes you already have a production M365 tenant, and will activate E5 trial licenses to evaluate M365 Defender in *the current environment*. An in-place evaluation will let you keep any security methods with the purchase of licenses after the evaluation period.
 
 The second is to [Set up your Microsoft 365 Defender trial lab environment](setup-m365deval.md) for the purpose of evaluation. It may not have many real signals from the business, so be aware of that caveat.
 
-1. Logon to your existing Microsoft 365 tenant administration portal.
+1. Log on to your existing Microsoft 365 tenant administration portal.
 2. Select "Purchase Services" from the navigation menu.
 
 :::image type="content" source="../../media/MDOEval/1. One.PNG" alt-text="Selecting Billing > Purchase Services on the left navigation bar in the Microsoft 365 admin center.":::
