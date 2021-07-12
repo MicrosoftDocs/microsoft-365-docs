@@ -44,14 +44,12 @@ You can view the activations in the Office 365 report by choosing the **Groups a
 
 Select **Choose columns** to add or remove columns from the report.
 
-![Office 365 groups activity report - choose columns](../../media/1600556a-f5f1-47d9-b325-cd77c78f4004.png)
-:::image type="content" alt-text="Office 365 groups activity report - choose columns" source="../../media/1600556a-f5f1-47d9-b325-cd77c78f4004.png" lightbox="../../media/1600556a-f5f1-47d9-b325-cd77c78f4004.png":::
+:::image type="content" alt-text="Office 365 groups activity report - choose columns" source="../../media/1600556a-f5f1-47d9-b325-cd77c78f4004.png":::
 
 You can also export the report data into an Excel .csv file by selecting the **Export** link. This exports data of all users and enables you to do simple sorting and filtering for further analysis. If you have less than 2000 users, you can sort and filter within the table in the report itself. If you have more than 2000 users, in order to filter and sort, you will need to export the data. 
 
-|Item|Description|
+|Metric|Definition|
 |:-----|:-----|
-|**Metric**|**Definition**|
 |Group name |The name of the group. |
 |Deleted |The number of deleted groups. If the group is deleted, but had activity in the reporting period it will show up in the grid with this flag set to true. |
 |Group owner |The name of the group owner. |
