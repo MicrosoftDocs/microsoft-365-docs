@@ -145,7 +145,7 @@ This may be due to an older version of Transport Layer Security (TLS). To connec
 
 ### Solution
 
-Upgrade to TLS 1.2: [https://docs.microsoft.com/mem/configmgr/core/plan-design/security/enable-tls-1-2](/mem/configmgr/core/plan-design/security/enable-tls-1-2)
+Upgrade to TLS 1.2: (/mem/configmgr/core/plan-design/security/enable-tls-1-2)
 
 <!--
 ## Uninstall the MSCommerce module

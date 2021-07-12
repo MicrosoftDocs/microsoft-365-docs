@@ -47,8 +47,8 @@ Insider risk management templates are pre-defined policy conditions that define 
 
 When users leave your organization, there are specific risk indicators typically associated with data theft by departing users. This policy template uses exfiltration indicators for risk scoring and focuses on detection and alerts in this risk area. Data theft for departing users may include downloading files from SharePoint Online, printing files, and copying data to personal cloud messaging and storage services near their employment resignation and end dates. By using either the Microsoft 365 HR connector or the option to automatically monitor for user account deletion in Azure Active Directory for your organization, this template starts scoring for risk indicators relating to these activities and how they correlate with user employment status.
 
->[!IMPORTANT]
->When using this template, you can configure a Microsoft 365 HR connector to periodically import resignation and termination date information for users in your organization. See the [Import data with the HR connector](import-hr-data.md) article for step-by-step guidance to configure the Microsoft 365 HR connector for your organization. If you choose not to use the HR connector, you must select the User account deleted from Azure AD option when configuring trigger events in the policy wizard.
+> [!IMPORTANT]
+> When using this template, you can configure a Microsoft 365 HR connector to periodically import resignation and termination date information for users in your organization. See the [Import data with the HR connector](import-hr-data.md) article for step-by-step guidance to configure the Microsoft 365 HR connector for your organization. If you choose not to use the HR connector, you must select the User account deleted from Azure AD option when configuring trigger events in the policy wizard.
 
 ### General data leaks
 
@@ -69,8 +69,8 @@ When creating or modifying DLP policies for use with insider risk management pol
 
     ![DLP policy alert setting](../media/insider-risk-DLP-policy-high-severity.png)
 
-     >[!NOTE]
-     >When creating a new DLP policy using the built-in templates, you'll need to select the **Create or customize advanced DLP rules** option to configure the **Incident reports** setting for the *High* severity level.
+     > [!NOTE]
+     > When creating a new DLP policy using the built-in templates, you'll need to select the **Create or customize advanced DLP rules** option to configure the **Incident reports** setting for the *High* severity level.
 
 Each insider risk management policy created from the **Data leaks** template can only have one DLP policy assigned. Consider creating a dedicated DLP policy that combines the different activities you want to detect and act as triggering events for  insider risk policies that use the **Data leaks** template.
 
@@ -159,8 +159,8 @@ These insider risk management policies can use specific indicators and the order
 - **Obfuscation**: These category signals focus on the masking of risky activities by in-scope policy users. An example activity in this category would be renaming files on a device.
 - **Clean-up**: These category signals focus on deletion activities by in-scope policy users. An example activity in this category would be deleting files from a device.
 
->[!NOTE]
->Sequence detection uses indicators that are enabled in the global settings for insider risk management and indicators that are selected in a policy. If appropriate indicators are not selected, sequence detection will not work.
+> [!NOTE]
+> Sequence detection uses indicators that are enabled in the global settings for insider risk management and indicators that are selected in a policy. If appropriate indicators are not selected, sequence detection will not work.
 
 You can customize individual threshold settings for each sequence detection type when configured in the policy. These threshold settings adjust alerts based on the volume of files associated with the sequence.
 
@@ -177,8 +177,8 @@ Cumulative exfiltration detection is enabled by default when using the following
 - Data leaks by priority users
 - Data leaks by disgruntled users
 
->[!NOTE]
->Cumulative exfiltration detection uses exfiltration indicators that are enabled in the global settings for insider risk management and exfiltration indicators that are selected in a policy. As such, cumulative exfiltration detection is only evaluated for the necessary exfiltration indicators selected.
+> [!NOTE]
+> Cumulative exfiltration detection uses exfiltration indicators that are enabled in the global settings for insider risk management and exfiltration indicators that are selected in a policy. As such, cumulative exfiltration detection is only evaluated for the necessary exfiltration indicators selected.
 
 When cumulative exfiltration detection is enabled for data theft or data leak policies, insights from cumulative exfiltration activities are displayed on the **User activity** tab within an insider risk management case.
 
@@ -255,8 +255,8 @@ Complete the following steps to create a new policy:
 2. Select **Create policy** to open the policy wizard.
 3. On the **Policy template** page, choose a policy category and then select the template for the new policy. These templates are made up of conditions and indicators that define the risk activities you want to detect and investigate. Review the template prerequisites, triggering events, and detected activities to confirm this policy template fits your needs.
 
-    >[!IMPORTANT]
-    >Some policy templates have prerequisites that must be configured for the policy to generate relevant alerts. If you haven't configured the applicable policy prerequisites, see **Step 4** above.
+    > [!IMPORTANT]
+    > Some policy templates have prerequisites that must be configured for the policy to generate relevant alerts. If you haven't configured the applicable policy prerequisites, see **Step 4** above.
 
 4. Select **Next** to continue.
 5. On the **Name and description** page, complete the following fields:
@@ -282,8 +282,8 @@ Complete the following steps to create a new policy:
 12. Select **Next** to continue.
 13. On the **Indicators and triggering events** page, you'll see the [indicators](insider-risk-management-settings.md#indicators) that you've defined as available on the **Insider risk settings** > **Indicators** page. If you selected a *Data leaks* template at the beginning of the wizard, you must select a DLP policy from the **DLP policy** dropdown list to enable triggering indicators for the policy or select the built-in triggering event.
 
-    >[!IMPORTANT]
-    >If indicators on this page can't be selected, you'll need to select the indicators you want to enable for all policies. You can use the **Turn on indicators** button in the wizard or select indicators on the **Insider risk management** > **Settings** > **Policy indicators** page.
+    > [!IMPORTANT]
+    > If indicators on this page can't be selected, you'll need to select the indicators you want to enable for all policies. You can use the **Turn on indicators** button in the wizard or select indicators on the **Insider risk management** > **Settings** > **Policy indicators** page.
 
     Select the indicators you want to apply to the policy. If you prefer not to use the default policy threshold settings for these indicators, disable the **Use default thresholds recommended by Microsoft** and enter the threshold values for each selected indicator.
 
@@ -327,8 +327,8 @@ Complete the following steps to manage an existing policy:
 12. Select **Next** to continue.
 13. On the **Indicators and triggering events** page, you'll see the [indicators](insider-risk-management-settings.md#indicators) that you've defined as available on the **Insider risk settings** > **Indicators** page. If you selected a *Data leaks* template at the beginning of the wizard, you must select a DLP policy from the **DLP policy** dropdown list to enable triggering indicators for the policy or select the built-in triggering event.
 
-    >[!IMPORTANT]
-    >If indicators on this page can't be selected, you'll need to select the indicators you want to enable for all policies. You can use the **Turn on indicators** button in the wizard or select indicators on the **Insider risk management** > **Settings** > **Policy indicators** page.
+    > [!IMPORTANT]
+    > If indicators on this page can't be selected, you'll need to select the indicators you want to enable for all policies. You can use the **Turn on indicators** button in the wizard or select indicators on the **Insider risk management** > **Settings** > **Policy indicators** page.
 
     Select the indicators you want to apply to the policy. If you prefer not to use the default policy threshold settings for these indicators, disable the **Use default thresholds recommended by Microsoft** and enter the threshold values for each selected indicator.
 
@@ -361,8 +361,8 @@ Some scenarios where you may want to immediately start scoring user activities:
 - When there is an incident that may require you to immediately start assigning risk scores to involved users' activity for one or more of your policies
 - When you have not configured your HR connector yet, but you want to start assigning risk scores to user activities for HR events by uploading a .csv file for the users
 
->[!NOTE]
->It may take several hours for new manually-added users to appear in the **Users** dashboard. Activities for the previous 90 days for these users may take up to 24 hours to display. To view activities for manually added users, navigate to the **Users** tab and select the user on the **Users** dashboard and open the **User activity** tab on the details pane.
+> [!NOTE]
+> It may take several hours for new manually-added users to appear in the **Users** dashboard. Activities for the previous 90 days for these users may take up to 24 hours to display. To view activities for manually added users, navigate to the **Users** tab and select the user on the **Users** dashboard and open the **User activity** tab on the details pane.
 
 To manually start scoring activity for users in one or more insider risk management policies, complete the following steps:
 
@@ -388,8 +388,8 @@ To stop scoring users in a policy, see the [Insider risk management users: Remov
 
 ## Delete a policy
 
->[!NOTE]
->Deleting a policy does not delete active or archived alerts generated from the policy.
+> [!NOTE]
+> Deleting a policy does not delete active or archived alerts generated from the policy.
 
 To delete an existing insider risk management policy, complete the following steps:
 

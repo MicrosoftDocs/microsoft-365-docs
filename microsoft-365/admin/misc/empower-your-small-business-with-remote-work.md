@@ -9,9 +9,9 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: 
+ms.collection:
 - Adm_O365
-ms.custom: 
+ms.custom:
 - AdminSurgePortfolio
 - adminvideo
 description: "Find the latest how-to information, tips, resources, and guidance on remote work for businesses using Microsoft 365."
@@ -21,8 +21,8 @@ description: "Find the latest how-to information, tips, resources, and guidance 
 
 As businesses adapt to the increased need to have people work remotely and connect with their customers virtually, this site is updated with the latest how-to information, tips, resources, and guidance on remote work for businesses using Microsoft 365.
 
->[!TIP]
->Don't have Microsoft_Teams? Get 6 months of Microsoft Teams in Office for free (when you sign up for 1 year). Get the technologies described in this article as part of the offer. For details, see [Try 1 month free](https://aka.ms/SMBTeamsOffer).
+> [!TIP]
+> Don't have Microsoft_Teams? Get 6 months of Microsoft Teams in Office for free (when you sign up for 1 year). Get the technologies described in this article as part of the offer. For details, see [Try 1 month free](https://aka.ms/SMBTeamsOffer).
 
 ## Remote work for your small business (video)
 
@@ -38,7 +38,7 @@ Already have a subscription but need to get set up? See [Microsoft 365 small bu
 
 ## Connect with employees and customers
 
-You can still connect with employees, customers, clients, and partners, even if you can’t meet face to face. Use Microsoft Teams to continue doing business and connecting with your customers. 
+You can still connect with employees, customers, clients, and partners, even if you can’t meet face to face. Use Microsoft Teams to continue doing business and connecting with your customers.
 
 ### Meet up in Teams
 
@@ -70,7 +70,7 @@ For more information, see [Turn on multi-factor authentication](../../business-v
 
 ### Secure your devices
 
-Remotely manage PCs and phones​ and ensure that they are protected and up-to-date. Requires Microsoft 365 Business.
+Remotely manage PCs and phones and ensure that they are protected and up-to-date. Requires Microsoft 365 Business.
 
 For more information, see [Manage devices](../../business-video/secure-win-10-pro-devices.md).
 
@@ -78,11 +78,11 @@ For more information, see [Manage devices](../../business-video/secure-win-10-pr
 
 Technical documentation hub for Microsoft 365 Business is updated with new secure remote work guidance.
 
-For details, see [Microsoft 365 Business resources](https://docs.microsoft.com/microsoft-365/business).
+For details, see [Microsoft 365 Business resources](/microsoft-365/business).
 
-## Need to ask a question? 
+## Need to ask a question?
 
 Ask in the [Teams forum](https://answers.microsoft.com/msteams/forum) or the [Office Admins forum](https://answers.microsoft.com).
 
 > [!NOTE]
-> Most of the tasks in this article and video can be accomplished with a subscription to Microsoft 365 Business Basic (formerly Office 365 Business Essentials), but some require a premium subscription. 
+> Most of the tasks in this article and video can be accomplished with a subscription to Microsoft 365 Business Basic (formerly Office 365 Business Essentials), but some require a premium subscription.
