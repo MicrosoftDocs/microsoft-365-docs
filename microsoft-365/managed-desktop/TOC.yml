@@ -41,8 +41,10 @@
           href: service-description/privacy-personal-data.md
         - name: Updates
           href: service-description/updates.md
-        - name: Support
+        - name: Admin support
           href: service-description/support.md
+        - name: User support
+          href: service-description/user-support.md
         - name: Operations and monitoring
           href: service-description/operations-and-monitoring.md
         - name: Diagnostic logs
@@ -115,6 +117,8 @@
                   href: get-started/register-devices-partner.md
             - name: Register existing devices yourself
               href: get-started/register-reused-devices-self.md
+        - name: Enable user support features
+          href: get-started/enable-support.md
         - name: Get your users ready to use devices
           href: get-started/get-started-devices.md
         - name: First-run experience with Autopilot and the Enrollment Status Page 
