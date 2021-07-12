@@ -37,11 +37,11 @@ productDirectory:
       summary: Antivirus management and Universal Print are now available in Microsoft 365 Business Premium.
       url: https://aka.ms/M365BPQ1Update
     # Card
-    - title: Join the partner webinar series
+    - title: Join the Microsoft 365 Lighthouse partner webinar on July 28
       # imageSrc should be square in ratio with no whitespace
       imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
-      summary: Accelerate business growth through managed services with Microsoft 365 Business Premium.
-      url: https://aka.ms/acceleratewithm365bp 
+      summary: Using Microsoft 365 Lighthouse to Secure and Standardize Microsoft 365 Business Premium Customers.
+      url: https://aka.ms/m365lighthousewebinar 
 # conceptualContent section (optional)
 conceptualContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
