@@ -79,13 +79,13 @@ If you encounter issues with accessing the portal, missing data, or restricted a
 - `*.blob.core.windows.net`
 - `crl.microsoft.com`
 - `https://*.microsoftonline-p.com`
-- `https://*.security.windows.com` 
-- `https://automatediracs-eus-prd.security.windows.com`
+- `https://*.securitycenter.windows.com` 
+- `https://automatediracs-eus-prd.securitycenter.windows.com`
 - `https://login.microsoftonline.com`
 - `https://login.windows.net`
 - `https://onboardingpackagescusprd.blob.core.windows.net`
 - `https://secure.aadcdn.microsoftonline-p.com` 
-- `https://security.windows.com` 
+- `https://securitycenter.windows.com` 
 - `https://static2.sharepointonline.com` 
 
 
