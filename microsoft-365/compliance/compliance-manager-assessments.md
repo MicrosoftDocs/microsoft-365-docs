@@ -134,7 +134,7 @@ Beneath the chart, a table lists detailed information about each control within 
 
 To view a control’s details, select it from its row in the table. The control details page shows a graph indicating the test status of the actions within that control. A table below the graph shows key improvement actions for that control.
 
-Select an improvement action from the list to drill into the improvement action’s details page. The details pages shows test status, implementation notes, and launch into the recommended solution.
+Select an improvement action from the list to drill into the improvement action’s details page. The details page shows test status and implementation notes, and launch into the recommended solution.
 
 ### Your improvement actions tab
 
