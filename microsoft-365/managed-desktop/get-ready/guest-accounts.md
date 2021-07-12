@@ -12,7 +12,7 @@ ms.topic: article
 audience: Admin
 ---
 
-# Prerequisites for guest accounts
+## External collaboration settings
 
 Microsoft Managed Desktop requires the following settings in your Azure AD organization for guest account access. You can adjust these settings at the [Azure portal](https://portal.azure.com) under **External Identities / External collaboration settings**:
 
@@ -24,6 +24,20 @@ Microsoft Managed Desktop requires the following settings in your Azure AD organ
 
 If you set restrictions that interact with these settings, make sure to exclude the Azure Active Directory **Modern Workplace Service Accounts**. For example, if you have a conditional access policy that prevents guest accounts from accessing the Intune portal, exclude the **Modern Workplace Service Accounts** group from this policy.
 
+## Unlicensed Intune admin
+
+The **Allow access to unlicensed admins** setting must be enabled. Without this setting enabled, errors can occur when we try to access your Azure AD organization for service. You can safely enable this setting without worrying about security implications, since the scope of access is defined by the roles assigned to users, including our operations staff.
+
+To enable this setting, follow these steps:
+
+1. Go to the Microsoft Endpoint Manager [admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Navigate to **Tenant administration** > **Roles** > **Administrator licensing**.
+3. In **Allow access to unlicensed admins**, select **Yes**.
+
+> [!IMPORTANT]
+> You cannot undo this setting after you select **Yes**.
+
+For more information, see [Unlicensed admins in Microsoft Intune](/mem/intune/fundamentals/unlicensed-admins).
 ## Steps to get ready
 
 1. Review [prerequisites for Microsoft Managed Desktop](prerequisites.md).
