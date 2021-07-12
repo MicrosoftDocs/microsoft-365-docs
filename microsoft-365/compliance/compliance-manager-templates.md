@@ -201,7 +201,7 @@ After you format your spreadsheet, follow the steps below.
 
 Universal versions of templates can also be extended to customize your product-specific assessments. You will receive a special extension template when you create an assessment using a universal template and the assessment has a unique product and certification combination. This can be modified to meet your needs. For guidance on how to edit the template, see the instructions below on modifying a template.
 
-Note that when editing a universal template, all content in the template can be changed, but doing so will break inheritance with the parent template. This means that it will no longer automatically receive updates from Microsoft if the parent template is refreshed.
+When editing a universal template, all content in the template can be changed, but doing so will break inheritance with the parent template. This means that it will no longer automatically receive updates from Microsoft if the parent template is refreshed.
 
 ## Modify a template
 
