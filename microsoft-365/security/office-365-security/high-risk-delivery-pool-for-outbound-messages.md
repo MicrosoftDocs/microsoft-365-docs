@@ -79,4 +79,5 @@ For DKIM to work, make sure you enable DKIM for sending domain. For example, fab
 
 To add a custom domains follow the steps in [Add a domain to Microsoft 365](../../admin/setup/add-domain.md).
 
-If MX record for your domain is pointed to a 3rd party or on-premises server, you should utilize Enhanced Filtering to ensure the SPF validation is correct for inbound email to avoid sending email through relay pool.
+If the MX record for your domain points to a third party service or an on-premises email server, you should use [Enhanced Filtering for Connectors](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors). Enhanced Filtering ensures SPF validation is correct for inbound mail and will avoid sending email through the relay pool.
+
