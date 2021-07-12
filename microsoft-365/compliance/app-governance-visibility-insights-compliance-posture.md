@@ -22,7 +22,7 @@ description: "Determine your app compliance posture."
 
 Microsoft app governance allows you to quickly assess the compliance posture of the third-party apps and their access to data in your Microsoft 365 tenant from the app governance Overview page in the [Microsoft 365 Compliance Center](https://compliance.microsoft.com/appgovernance).
 
-![The App Governance overview page in the Microsoft 365 Compliance Center](..\media\manage-app-protection-governance\mapg-cc-overview.png)
+![The app governance overview page in the Microsoft 365 Compliance Center](..\media\manage-app-protection-governance\mapg-cc-overview.png)
 
 >[!Note]
 > Your sign-in account must have one of [these roles](app-governance-get-started.md#administrator-roles) to view any app governance data.

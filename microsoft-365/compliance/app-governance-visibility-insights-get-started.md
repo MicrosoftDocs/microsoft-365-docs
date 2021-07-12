@@ -20,11 +20,11 @@ description: "Get started with visibility and insights."
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
-The first place to get started is the Microsoft App Governance dashboard at [https://compliance.microsoft.com/appgovernance](https://compliance.microsoft.com/appgovernance). Note that your sign-in account must have one of [these app governance administrator roles](app-governance-get-started.md#administrator-roles) to view any app governance data.
+The first place to get started is the app governance dashboard at [https://compliance.microsoft.com/appgovernance](https://compliance.microsoft.com/appgovernance). Note that your sign-in account must have one of [these app governance administrator roles](app-governance-get-started.md#administrator-roles) to view any app governance data.
 
-![The App Governance overview page in the Microsoft 365 Compliance Center](..\media\manage-app-protection-governance\mapg-cc-overview.png)
+![The app governance overview page in the Microsoft 365 Compliance Center](..\media\manage-app-protection-governance\mapg-cc-overview.png)
 
-You can also access the App Governance dashboard from **Microsoft 365 admin center > Microsoft 365 Compliance Center > App governance > Overview page**.
+You can also access the app governance dashboard from **Microsoft 365 admin center > Microsoft 365 Compliance Center > App governance > Overview page**.
 
 ## What’s available on the dashboard
 
