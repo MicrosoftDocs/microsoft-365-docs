@@ -1,5 +1,5 @@
 ---
-title: Evaluate Microsoft 365 Defender in a production Microsoft 365 environment with Defender for Identity, then Defender for Office 365, Defender for Endpoint, and Microsoft Cloud App Security.
+title: Create a Microsoft 365 Defender evaluation in a production, Microsoft 365 environment with Defender for Identity, then Defender for Office 365, Defender for Endpoint, and Microsoft Cloud App Security.
 description: Set up your Microsoft 365 Defender trial lab or pilot environment starting with Defender for Identity, and continuing with Defender for Office 365, Defender for Endpoint, and Microsoft Cloud App Security.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
