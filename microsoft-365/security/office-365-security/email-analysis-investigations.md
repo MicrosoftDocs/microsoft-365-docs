@@ -69,7 +69,7 @@ To ensure investigation actions are up to date, any investigation that has pendi
 
 Email-based evidence in the Evidence and Response tab for an incident now displays the following information.
 
-:::image type="content" source="../../media/email-analysis-in-investigations/email-analysis-evidence-example.png" alt-text="Example of email analysis information in Evidence and Response":::
+:::image type="content" source="../../media/email-analysis-investigations/email-analysis-evidence-example.png" alt-text="Example of email analysis information in Evidence and Response" lightbox="../../media/email-analysis-investigations/email-analysis-evidence-example.png":::
 
 From the numbered callouts in the figure:
 
@@ -86,7 +86,7 @@ From the numbered callouts in the figure:
 
 For email or email clusters in the **Entities** tab of an incident, **Prevented** means that there was no malicious emails in the mailbox for this item (mail or cluster). Here is an example.
 
-:::image type="content" source="../../media/email-analysis-in-investigations/email-analysis-evidence-example-prevented.png" alt-text="Example of email analysis information in Evidence and Response":::
+:::image type="content" source="../../media/email-analysis-investigations/email-analysis-evidence-example-prevented.png" alt-text="Example of a prevented email" lightbox="../../media/email-analysis-investigations/email-analysis-evidence-example-prevented.png":::
 
 In this example, the email is malicious but not in a mailbox.
 

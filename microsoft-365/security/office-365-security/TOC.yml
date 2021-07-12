@@ -35,7 +35,7 @@
        - name: How automated investigation and response works
          href: automated-investigation-response-office.md
        - name: Email analysis in investigations
-         href: email-analysis-in-investigations.md
+         href: email-analysis-investigations.md
        - name: Remediation actions
          href: air-remediation-actions.md
        - name: Anti-malware protection
