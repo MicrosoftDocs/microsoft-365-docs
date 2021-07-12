@@ -41,7 +41,7 @@ To access Advanced eDiscovery or added as a member of an Advanced eDiscovery cas
 
 Complete the following steps to add users to the eDiscovery Manager role group:
 
-1. Go to <https://protection.office.com/permissions> and sign in using the credentials for an admin account in your Microsoft 365 organization.
+1. Go to <https://compliance.microsoft.com/permissions> and sign in using the credentials for an admin account in your Microsoft 365 organization.
 
 2. On the **Permissions** page, select the **eDiscovery Manager** role group.
 
