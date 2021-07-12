@@ -56,6 +56,8 @@ Distribution groups can be [upgraded to Microsoft 365 groups](../manage/upgrade-
 
 Distribution groups can be added to a team in Microsoft Teams.
 
+Microsoft 365 groups can't be members of distribution groups.
+
 ## Security groups
 
 [Security groups](../email/create-edit-or-delete-a-security-group.md) are used for granting access to Microsoft 365 resources, such as SharePoint. They can make administration easier because you need only administer the group rather than adding users to each resource individually.
@@ -65,6 +67,8 @@ Security groups can contain users or devices. Creating a security group for devi
 Security groups can be [configured for dynamic membership in Azure Active Directory](/azure/active-directory/users-groups-roles/groups-change-type), allowing group members or devices to be added or removed automatically based on user attributes such as department, location, or title; or device attributes such as operating system version.
 
 Security groups can be added to a team.
+
+Microsoft 365 groups can't be members of security groups.
 
 ## Mail-enabled security groups
 
