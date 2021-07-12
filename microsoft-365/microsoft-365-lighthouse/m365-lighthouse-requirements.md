@@ -15,7 +15,7 @@ ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse                         
 search.appverid: MET150
-description: "Managed Service Providers (MSPs) can use Microsoft 365 Lighthouse to secure and manage customer devices, data, and users at scale for small- and medium-sized business (SMB) customers."
+description: "For Managed Service Providers (MSPs), get a list of requirements to use Microsoft 365 Lighthouse."
 ---
 
 # Requirements for Microsoft 365 Lighthouse

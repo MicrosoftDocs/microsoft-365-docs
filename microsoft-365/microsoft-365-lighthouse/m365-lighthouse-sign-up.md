@@ -15,7 +15,7 @@ ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse                         
 search.appverid: MET150
-description: "Managed Service Providers (MSPs) can follow the steps in this article to sign up for Microsoft 365 Lighthouse."
+description: "For Managed Service Providers (MSPs), learn how to sign up for Microsoft 365 Lighthouse."
 ---
 
 # Sign up for Microsoft 365 Lighthouse

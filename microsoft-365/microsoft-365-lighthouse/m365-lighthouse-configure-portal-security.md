@@ -15,7 +15,7 @@ ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse                         
 search.appverid: MET150
-description: "Managed Service Providers (MSPs) can follow the steps in this article to configure Microsoft 365 Lighthouse portal security."
+description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, learn how to configure portal security."
 ---
 
 # Configure Microsoft 365 Lighthouse portal security

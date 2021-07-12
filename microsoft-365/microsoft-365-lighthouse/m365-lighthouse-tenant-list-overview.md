@@ -15,7 +15,7 @@ ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse                         
 search.appverid: MET150
-description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, get an overview of the tenant list."
+description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, learn about the tenant list."
 ---
 
 # Microsoft 365 Lighthouse tenant list overview

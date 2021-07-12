@@ -15,7 +15,7 @@ ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse                         
 search.appverid: MET150
-description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, learn about managing user access and more for all of your customers in one location."
+description: "For Managed Service Providers (MSPs), learn how Microsoft 365 Lighthouse can help you secure and manage customer tenants in one location."
 ---
 
 # Overview of Microsoft 365 Lighthouse
