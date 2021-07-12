@@ -54,8 +54,8 @@
           href: insider-risk-management-settings.md
         - name: Create and manage insider risk policies
           href: insider-risk-management-policies.md
-        - name: Investigate insider risk alerts
-          href: insider-risk-management-alerts.md
+        - name: Investigate insider risk activities
+          href: insider-risk-management-activities.md
         - name: Take action on insider risk cases
           href: insider-risk-management-cases.md
         - name: Review activities with the insider risk audit log
@@ -429,7 +429,7 @@
               href: archive-salesforcechatter-data.md
             - name: ServiceNow
               href: archive-servicenow-data.md
-            - name: Skype for Business (preview)
+            - name: Skype for Business
               href: archive-skypeforbusiness-data.md
             - name: Slack eDiscovery
               href: archive-slack-data.md    
@@ -463,9 +463,9 @@
               href: archive-enterprise-number-data.md
             - name: O2 Telefonica SMS and Voice Network Archiver
               href: archive-o2-network-data.md
-            - name: Signal (preview)
+            - name: Signal Archiver
               href: archive-signal-archiver-data.md
-            - name: Telegram (preview)
+            - name: Telegram Archiver
               href: archive-telegram-archiver-data.md
             - name: TELUS Network
               href: archive-telus-network-data.md
@@ -921,7 +921,7 @@
         - name: Compliance Configuration Analyzer tool
           href: compliance-manager-mcca.md
         - name: Frequently asked questions (FAQ)
-          href: compliance-manager-faq.md
+          href: compliance-manager-faq.yml
         - name: Compliance Manager (classic)
           href: meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md
     - name: Microsoft Service Trust Portal
@@ -932,6 +932,18 @@
           href: ../solutions/financial-services-secure-collaboration.md
         - name: Energy services security and compliance
           href: ../solutions/energy-secure-collaboration.md
+- name: Manage privacy risks
+  items:
+    - name: Learn about privacy management
+      href: privacy-management.md
+    - name: Get started with privacy management
+      href: privacy-management-setup.md
+    - name: Find and visualize personal data in privacy management
+      href: privacy-management-data-profile.md
+    - name: Create and manage policies in privacy management
+      href: privacy-management-policies.md
+    - name: Manage subject rights requests in privacy management
+      href: privacy-management-subject-rights-requests.md
 - name: Hybrid compliance capabilities
   items: 
     - name: Exchange Online mail encryption with AD RMS

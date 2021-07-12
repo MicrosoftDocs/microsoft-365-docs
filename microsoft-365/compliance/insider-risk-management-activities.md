@@ -1,6 +1,6 @@
 ---
-title: Insider risk management alerts
-description: Learn about insider risk management alerts in Microsoft 365
+title: Investigate insider risk management activities
+description: Learn about investigating insider risk management activities in Microsoft 365
 keywords: Microsoft 365, insider risk, risk management, compliance
 localization_priority: Normal
 ms.prod: microsoft-365-enterprise
@@ -14,13 +14,39 @@ audience: itpro
 ms.collection: m365-security-compliance
 ---
 
-# Insider risk management alerts
+# Investigate insider risk management activities
+
+Investigating risky user activities is an important first step in minimizing insider risks for your organization. These risks may be activities that generate alerts from insider risk management policies, or risks from activities that are detected by policies but do not immediately create an insider risk management alert for users. You can investigate these types of activities by using the **User activity reports (preview)** or with the **Alert dashboard**.
+
+## User activity reports (preview)
+
+User activity reports allow you to examine activities for specific users for a defined time period without having to assign them temporarily or explicitly to an insider risk management policy. In most insider risk management scenarios, users are explicitly defined in policies, and they may have policy alerts (depending on triggering events) and risk scores associated with the activities. But in some scenarios, you may want to examine the activities for users that aren't explicitly defined in a policy. These may be users that you've received a tip about the user and potentially risky activities, or users that typically don't need to be assigned to an insider risk management policy.
+
+After you've configured indicators on the insider risk management **Settings** page, user activity is detected for risky activity associated with the selected indicators. You do not have to configure a policy for user activity reports to detect and report risky activities by users in your organization. Activities included in user activity reports do not require triggering events for the activities to be displayed. This configuration means that all detected activity for the user is available for review, regardless if it has a triggering event or if it creates an alert. Reports are created on a per-user basis and can include all activities for a custom 90-day period. Multiple reports for the same user aren't supported.
+
+After examining activities for a user, investigators can dismiss individual activities as benign, share or email a link to the report with other investigators, or choose to assign the user temporarily or explicitly to an insider risk management policy. Users must be assigned to the *Insider Risk Management Investigators* role group to view the **User activity reports** page.  
+
+![Insider risk management user activity report overview](../media/insider-risk-user-activity-report-overview.png)
+
+You can get started by selecting **Manage reports** in the **Investigate user activity** section on the insider risk management **Overview** page. To view activities for a user, first select **Create user activity report** and complete the following fields in the **New user activity report** pane:
+
+- **User**: Search for a user by name or email address
+- **Start date**: Use the calendar control to select the start date for user activities.
+- **End date**: Use the calendar control to select the end date for user activities. The end date selected must be greater than two days after the selected start date and no greater than 90 days from the selected start date.
+New reports typically take up to 10 hours before they are ready for review. When the report is ready, you'll see *Report ready* in the **Status** column on the User activity report page. Select the user to view the detailed report:
+
+![Insider risk management user activity report](../media/insider-risk-user-activity-report.png)
+
+The **User activity report** for the selected user contains the **User activity** and **Activity explorer** tabs:
+
+- **User activity**: Use this chart view to investigate activities and view potential activities that occur in sequences. This tab is structured to enable quick review of a case, including a historical timeline of all activities, activity details, the current risk score for the user in the case, the sequence of risk events, and filtering controls to help with investigative efforts.
+- **Activity explorer**: The **Activity explorer** tab provides risk investigators with a comprehensive analytic tool that provides detailed information about activities. With the Activity explorer, reviewers can quickly review a timeline of detected risky activity and identify and filter all risk activities associated with alerts. To learn more about using the Activity explorer, see the *Activity explorer* section later in this article.
+
+## Alert dashboard
 
 Insider risk management alerts are automatically generated by risk indicators defined in insider risk management policies. These alerts give compliance analysts and investigators an all-up view of the current risk status and allow your organization to triage and take actions for discovered risks. By default, policies generate a certain amount of low, medium, and high severity alerts, but you can [increase or decrease the alert volume](insider-risk-management-settings.md#alert-volume) to suit your needs. Additionally, you can configure the [alert threshold for policy indicators](insider-risk-management-settings.md#indicator-level-settings-preview) when creating a new policy with the policy wizard.
 
 Check out the [Insider Risk Management Alerts Triage Experience video](https://www.youtube.com/watch?v=KgmpxBLJLPI) for an overview of how alerts provide details, context, and related content for risky activity and how to make your investigation process more effective.
-
-## Alert dashboard
 
 The insider risk **Alert dashboard** allows you to view and act on alerts generated by insider risk policies. Each report widget displays information for last 30 days.
 
@@ -114,4 +140,4 @@ As alert is reviewed and triaged, you can create a new case to further investiga
 4. On the **Confirm alert and create insider risk case** dialog, enter a name for the case, select users to add as contributors, and add comments as applicable. Comments are automatically added to the case as a case note.
 5. Select **Create case** to create a new case or select **Cancel** to close the dialog without creating a case.
 
-After the case is created, investigators and analysts can manage and act on the case. See the [Insider risk management case](insider-risk-management-cases.md) article for more details.
+After the case is created, investigators and analysts can manage and act on the case. For more information, see the [Insider risk management case](insider-risk-management-cases.md) article.

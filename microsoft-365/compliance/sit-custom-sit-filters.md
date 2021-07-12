@@ -144,7 +144,7 @@ you can use this xml
 
 ### TextMatchFilter Full
 
-Description: Allows you to blacklist certain matches and prevent them from triggering the rule. For example, exclude 4111111111111111 from the list of valid credit card matches.
+Description: Allows you to prohibit certain matches to prevent them from triggering the rule. For example, exclude 4111111111111111 from the list of valid credit card matches.
 
 For example, to exclude credit card numbers like 4111111111111111 and 3241891031113111 in a list like this:
 
