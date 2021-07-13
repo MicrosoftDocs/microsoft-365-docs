@@ -144,7 +144,7 @@ A map of the perimeter network for your organization users at the location is sh
 - **SharePoint optimal service front door** - One of the recommended SharePoint service front doors that users in this office location should connect to
 - **SharePoint sub-optimal service front door** - A SharePoint service front door that users are connected to, but is not recommended
 - **DNS recursive resolver server** - The location from a geo IP database of the detected DNS recursive resolver used for Exchange Online (if available)
-- **Your proxy server** - The location from a geo IP database of the detected proxy server (if available) 
+- **Your proxy server** - The location from a geo IP database of the detected proxy server (if available)
 
 The office location summary page additionally shows the location's network assessment, network assessment history, a comparison of this location's assessment to other customers in the same city, and a list of specific insights and recommendations that you can undertake to improve network performance and reliability.
 
@@ -156,7 +156,6 @@ The details tab on the office location page shows the specific measurement resul
 
 > [!div class="mx-imgBorder"]
 > ![Location-specific details](../media/m365-mac-perf/m365-mac-perf-locations-plan-details-all.png)
-
 
 ## Sharing network assessment data with Microsoft
 
