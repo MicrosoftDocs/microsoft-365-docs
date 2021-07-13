@@ -67,12 +67,12 @@ For more information, see the following articles:
 
 Admins have many ways to configure Office in an organization. For example:
 
-- **Office cloud policy service**: Set up a user based policy which applies to a user on any device accessing files in Office apps with their AAD account. In the [Office Cloud Policy Service](https://config.office.com/officeSettings/officePolicies), See steps for  [creating an Office cloud policy configuration](/DeployOffice/overview-office-cloud-policy-service)
-- **Office policies in Intune**: Use the Intune Settings catalog or Administrative templates to deploy HKCU policies to Windows 10 PCs: In the [MEM admin center](https://endpoint.microsoft.com/#blade/Microsoft_Intune_DeviceSettings/DevicesMenu/configurationProfiles) under **Devices > Configuration Profiles**.
-  - ***Administrative Templates***: See instructions to use Windows 10 templates to configure [Administrative Templates](mem/intune/configuration/administrative-templates-windows)
-  - ***Settings catalog (preview)***: See instructions to use the [Settings catalog (preview)](mem/intune/configuration/settings-catalog)
+- **Office cloud policy service**: Set up a user-based policy that applies to a user on any device accessing files in Office apps with their Azure AD account. See the steps for [creating an Office cloud policy configuration](/DeployOffice/overview-office-cloud-policy-service) in the [Office Cloud Policy Service](https://config.office.com/officeSettings/officePolicies).
+- **Office policies in Intune**: Use the Intune Settings catalog or Administrative templates to deploy HKCU policies to Windows 10 PCs: In the [MEM admin center](https://endpoint.microsoft.com/#blade/Microsoft_Intune_DeviceSettings/DevicesMenu/configurationProfiles) under **Devices** \> **Configuration Profiles**.
+  - ***Administrative Templates***: See instructions to use Windows 10 templates to configure [Administrative Templates](/mem/intune/configuration/administrative-templates-windows).
+  - ***Settings catalog (preview)***: See instructions to use the [Settings catalog (preview)](/mem/intune/configuration/settings-catalog).
 - **Group policy**: Use your on-premise AD DS to deploy Group Policy Objects (GPO) to users and computers. To create a GPO for this setting, download the latest 
-[Administrative Template files (ADMX/ADML) and Office Customization Tool for Microsoft 365 Apps for enterprise, Office 2019, and Office 2016](https://www.microsoft.com/download/details.aspx?id=49030)
+[Administrative Template files (ADMX/ADML) and Office Customization Tool for Microsoft 365 Apps for enterprise, Office 2019, and Office 2016](https://www.microsoft.com/download/details.aspx?id=49030).
 
 ## Admin options for restricting active content
 
