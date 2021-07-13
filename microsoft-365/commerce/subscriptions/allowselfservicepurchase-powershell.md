@@ -20,7 +20,7 @@ search.appverid:
 - MET150
 description: "Learn how to use the AllowSelfServicePurchase PowerShell cmdlet to turn self-service purchase on or off."
 ROBOTS: NOINDEX, NOFOLLOW
-ms.date: 03/18/2021
+ms.date: 07/16/2021
 ---
 
 # Use AllowSelfServicePurchase for the MSCommerce PowerShell module
@@ -99,7 +99,9 @@ The following table lists the available products and their **ProductId**.
 | Project Plan 3 | CFQ7TTC0KXNC |
 | Visio Plan 1 | CFQ7TTC0KXN9 |
 | Visio Plan 2 | CFQ7TTC0KXN8 |
-
+| Cloud PC Enterprise | CFQ7TTC0HHS9 |
+| Cloud PC Business | CFQ7TTC0J203 |
+| Cloud PC Business with Windows Hybrid Benefit | CFQ7TTC0HX99 |
 ## View or set the status for AllowSelfServicePurchase
 
 After you view the list of products available for self-service purchase, you can view or modify the setting for a specific product.
