@@ -50,7 +50,7 @@ There are parts of the service that you manage, like app deployment, where it mi
     - You can report compatibility issues by filing a ticket in the Microsoft Managed Desktop Admin portal.
     - Feature and quality updates are paused independently. Pause is in effect for 35 days by default, but can be reduced or extended depending on whether the issue is mitigated.
 3. Once the groups are unpaused, deployment resumes according to the schedule in the table.
-4. Users are empowered to respond to restart notifications for a set period (known as the deadline and measured from the time the update is offered to the device), during which time the device will only automatically restart outside active hours. After this period expires, the deadline has been reached and the device will restart at the next available opportunity, regardless of active hours. The deadline for quality updates is three days; for feature updates it is 5 days.
+4. Users are empowered to respond to restart notifications for a set period (known as the deadline and measured from the time the update is offered to the device), during which time the device will only automatically restart outside active hours. After this period expires, the deadline has been reached and the device will restart at the next available opportunity, regardless of active hours. The deadline for quality updates is three days; for feature updates it is five days.
 
 This deployment process applies to both feature and quality updates, though the timeline varies for each.
 
