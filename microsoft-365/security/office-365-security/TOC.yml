@@ -160,6 +160,11 @@
        href: advanced-spam-filtering-asf-options.md
      - name: Manage the Tenant Allow/Block List
        href: tenant-allow-block-list.md
+       items:
+       - name: Manage the Tenant Block List
+         href: manage-tenant-blocks.md
+       - name: Manage the Tenant Allow List
+         href: manage-tenant-allows.md
      - name: Message trace in the Security & Compliance Center
        href: message-trace-scc.md
      - name: Report messages and files to Microsoft

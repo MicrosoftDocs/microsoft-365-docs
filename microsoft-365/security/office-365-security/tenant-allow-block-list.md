@@ -31,8 +31,7 @@ ms.prod: m365-security
 > [!NOTE]
 >
 > The features described in this article are in Preview, are subject to change, and are not available in all organizations.  If your organization does not have the spoof features as described in this article, see the older spoof management experience at [Manage spoofed senders using the spoof intelligence policy and spoof intelligence insight in EOP](walkthrough-spoof-intelligence-insight.md).
->
-> You can't **configure** allowed URL or file items in the Tenant Allow/Block List at this time.
+
 
 In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, you might disagree with the EOP filtering verdict. For example, a good message might be marked as bad (a false positive), or a bad message might be allowed through (a false negative).
 
@@ -41,6 +40,8 @@ The Tenant Allow/Block List in the Microsoft 365 Defender portal gives you a way
 - URLs to block.
 - Files to block.
 - Spoofed senders to allow or block. If you override the allow or block verdict in the [spoof intelligence insight](learn-about-spoof-intelligence.md), the spoofed sender becomes a manual allow or block entry that only appears on the **Spoof** tab in the Tenant Allow/Block List. You can also manually create allow or block entries for spoofed senders here before they're detected by spoof intelligence.
+- URLs to allow.
+- Files to allow. 
 
 This article describes how to configure entries in the Tenant Allow/Block List in the Microsoft 365 Defender portal or in PowerShell (Exchange Online PowerShell for Microsoft 365 organizations with mailboxes in Exchange Online; standalone EOP PowerShell for organizations without Exchange Online mailboxes).
 
@@ -86,147 +87,13 @@ This article describes how to configure entries in the Tenant Allow/Block List i
   >
   > - The **View-Only Organization Management** role group in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) also gives read-only access to the feature.
 
-## Use the Microsoft 365 Defender portal to create block URL entries in the Tenant Allow/Block List
+## Use the Microsoft 365 Defender portal to manage the Tenant Allow/Block List
 
-1. In the Microsoft 365 Defender portal, go to **Policies & rules** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
+In the Microsoft 365 Defender portal, go to **Policies & rules** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
 
-2. On the **Tenant Allow/Block List** page, verify that the **URLs** tab is selected, and then click ![Block icon](../../media/m365-cc-sc-create-icon.png) **Block**.
+To add, edit, and delete all blocks, see [Manage the tenant block list](manage-tenant-blocks.md).
 
-3. In the **Block URLs** flyout that appears, configure the following settings:
-   - **Add URLs with wildcards**: Enter one URL per line, up to a maximum of 20. For details about the syntax for URL entries, see the [URL syntax for the Tenant Allow/Block List](#url-syntax-for-the-tenant-allowblock-list) section later in this article.
-   - **Never expire**: Do one of the following steps:
-     - Verify the setting is turned off (![Toggle off](../../media/scc-toggle-off.png)) and use the **Remove on** box to specify the expiration date for the entries.
-
-       or
-
-     - Move the toggle to the right to configure the entries to never expire: ![Toggle on](../../media/scc-toggle-on.png).
-   - **Optional note**: Enter descriptive text for the entries.
-
-4. When you're finished, click **Add**.
-
-## Use the Microsoft 365 Defender portal to create block file entries in the Tenant Allow/Block List
-
-1. In the Microsoft 365 Defender portal, go to **Policies & rules** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
-
-2. On the **Tenant Allow/Block List** page, select the **Files** tab, and then click ![Block icon](../../media/m365-cc-sc-create-icon.png) **Block**.
-
-3. In the **Block files** flyout that appears, configure the following settings:
-   - **Add file hashes**: Enter one SHA256 hash value per line, up to a maximum of 20.
-   - **Never expire**: Do one of the following steps:
-     - Verify the setting is turned off (![Toggle off](../../media/scc-toggle-off.png)) and use the **Remove on** box to specify the expiration date for the entries.
-
-     or
-
-     - Move the toggle to the right to configure the entries to never expire: ![Toggle on](../../media/scc-toggle-on.png).
-   - **Optional note**: Enter descriptive text for the entries.
-
-4. When you're finished, click **Add**.
-
-## Use the Microsoft 365 Defender portal to create allow or block spoofed sender entries in the Tenant Allow/Block List
-
-**Notes**:
-
-- Only the _combination_ of the spoofed user _and_ the sending infrastructure as defined in the domain pair is specifically allowed or blocked from spoofing.
-- When you configure an allow or block entry for a domain pair, messages from that domain pair no longer appear in the spoof intelligence insight.
-- Entries for spoofed senders never expire.
-
-1. In the Microsoft 365 Defender portal, go to **Policies & rules** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
-
-2. On the **Tenant Allow/Block List** page, select the **Spoofing** tab, and then click ![Block icon](../../media/m365-cc-sc-create-icon.png) **Add**.
-
-3. In the **Add new domain pairs** flyout that appears, configure the following settings:
-   - **Add new domain pairs with wildcards**: Enter one domain pair per line, up to a maximum of 20. For details about the syntax for spoofed sender entries, see the [Domain pair syntax for spoofed sender entries in the Tenant Allow/Block List](#domain-pair-syntax-for-spoofed-sender-entries-in-the-tenant-allowblock-list) section later in this article.
-   - **Spoof type**: Select one of the following values:
-     - **Internal**: The spoofed sender is in a domain that belongs to your organization (an [accepted domain](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)).
-     - **External**: The spoofed sender is in an external domain.
-   - **Action**: Select **Allow** or **Block**.
-
-4. When you're finished, click **Add**.
-
-## Use the Microsoft 365 Defender portal to view entries in the Tenant Allow/Block List
-
-1. In the Microsoft 365 Defender portal, go to **Policies & rules** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
-
-2. Select the tab you want. The columns that are available depend on the tab you selected:
-
-   - **URLs**:
-     - **Value**: The URL.
-     - **Action**: The value **Block**.
-     - **Last updated**
-     - **Remove on**
-     - **Notes**
-   - **Files**
-     - **Value**: The file hash.
-     - **Action**: The value **Block**.
-     - **Last updated**
-     - **Remove on**
-     - **Notes**
-   - **Spoofing**
-     - **Spoofed user**
-     - **Sending infrastructure**
-     - **Spoof type**: The value **Internal** or **External**.
-     - **Action**: The value **Block** or **Allow**.
-
-   You can click on a column heading to sort in ascending or descending order.
-
-   You can click **Group** to group the results. The values that are available depend on the tab you selected:
-
-   - **URLs**: You can group the results by **Action**.
-   - **Files**: You can group the results by **Action**.
-   - **Spoofing**: You can group the results by **Action** or **Spoof type**.
-
-   Click **Search**, enter all or part of a value, and then press ENTER to find a specific value. When you're finished, click ![Clear search icon](../../media/m365-cc-sc-close-icon.png) **Clear search**.
-
-   Click **Filter** to filter the results. The values that are available in **Filter** flyout that appears depend on the tab you selected:
-
-   - **URLs**
-     - **Action**
-     - **Never expire**
-     - **Last updated date**
-     - **Remove on**
-   - **Files**
-     - **Action**
-     - **Never expire**
-     - **Last updated**
-     - **Remove on**
-   - **Spoofing**
-     - **Action**
-     - **Spoof type**
-
-   When you're finished, click **Apply**. To clear existing filters, click **Filter**, and in the **Filter** flyout that appears, click **Clear filters**.
-
-## Use the Microsoft 365 Defender portal to modify entries in the Tenant Allow/Block List
-
-1. In the Microsoft 365 Defender portal, go to **Policies & rules** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
-
-2. Select the tab that contains the type of entry that you want to modify:
-   - **URLs**
-   - **Files**
-   - **Spoofing**
-
-3. Select the entry that you want to modify, and then click ![Edit icon](../../media/m365-cc-sc-edit-icon.png) **Edit**. The values that you are able to modify in the flyout that appears depend on the tab you selected in the previous step:
-   - **URLs**
-     - **Never expire** and/or expiration date.
-     - **Optional note**
-   - **Files**
-     - **Never expire** and/or expiration date.
-     - **Optional note**
-   - **Spoofing**
-     - **Action**: You can change the value to **Allow** or **Block**.
-4. When you're finished, click **Save**.
-
-## Use the Microsoft 365 Defender portal to remove entries from the Tenant Allow/Block List
-
-1. In the Microsoft 365 Defender portal, go to **Policies & rules** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
-
-2. Select the tab that contains the type of entry that you want to remove:
-   - **URLs**
-   - **Files**
-   - **Spoofing**
-
-3. Select the entry that you want to remove, and then click ![Delete icon](../../media/m365-cc-sc-delete-icon.png) **Delete**.
-
-4. In the warning dialog that appears, click **Delete**.
+To add, edit, and delete all allows, see [Manage the tenant allow list](manage-tenant-allows.md).
 
 ## Use Exchange Online PowerShell or standalone EOP PowerShell to configure the Tenant Allow/Block List
 
