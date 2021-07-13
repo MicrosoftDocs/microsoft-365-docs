@@ -63,8 +63,8 @@ The following image shows an instance of unwanted software that was detected and
 
 3. Turn on **EDR in block mode**.
 
-> [!NOTE]
-> EDR in block mode can be turned on only in the Microsoft 365 Defender portal. You cannot use registry keys, Intune, or group policies to enable or disable EDR in block mode.
+   > [!NOTE]
+   > EDR in block mode can be turned on only in the Microsoft 365 Defender portal. You cannot use registry keys, Intune, or group policies to enable or disable EDR in block mode.
 
 ## Requirements for EDR in block mode
 
