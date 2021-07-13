@@ -139,16 +139,19 @@ You can report phishing messages that contain ransomware by using one of several
 
 ## Additional ransomware resources
 
-[Human-operated ransomware overview](/security/compass/human-operated-ransomware)
+Key industry information:
 
-[Rapidly protect against ransomware and extortion](/security/compass/protect-against-ransomware)
+- [Human-operated ransomware overview](/security/compass/human-operated-ransomware)
 
-[The latest Microsoft Security Intelligence Report](https://www.microsoft.com/securityinsights/) (search for "ransomware")
+- [Rapidly protect against ransomware and extortion](/security/compass/protect-against-ransomware)
 
-**Ransomware: A pervasive and ongoing threat** report in the **Threat analytics node** of the Microsoft 365 Defender portal
+- [The latest Microsoft Security Intelligence Report](https://www.microsoft.com/securityinsights/) (see pages 22-24)
+
+- **Ransomware: A pervasive and ongoing threat** report in the **Threat analytics node** of the Microsoft 365 Defender portal (see these [licensing requirements](/microsoft-365/security/defender/prerequisites#licensing-requirements))
 
 Microsoft 365 protection:
 
+- [Malware and ransomware protection](/compliance/assurance/assurance-malware-and-ransomware-protection)
 - [Ransomware detection and recovering your files in OneDrive](https://support.microsoft.com/office/0d90ec50-6bfd-40f4-acc7-b8c12c73637f)
 - [Enable or disable macros in Office files](https://support.microsoft.com/office/12b036fd-d140-4e74-b45e-16fed1a7e5c6)
 - [Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365.md)
