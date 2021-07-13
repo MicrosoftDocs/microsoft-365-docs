@@ -59,9 +59,9 @@ The following image shows an instance of unwanted software that was detected and
 
 1. Go to the [Microsoft 365 Defender portal](microsoft-defender-security-center.md) and sign in. 
 
-2. Choose **Settings** > **Advanced features**.
+2. Choose **Settings** > **Endpoints** > **Advanced features**.
 
-3. Turn on **EDR in block mode**.
+3. Turn on **Enable EDR in block mode**.
 
 > [!NOTE]
 > EDR in block mode can be turned on only in the Microsoft 365 Defender portal. You cannot use registry keys, Intune, or group policies to enable or disable EDR in block mode.
