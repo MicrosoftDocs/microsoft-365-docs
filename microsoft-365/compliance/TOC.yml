@@ -331,6 +331,8 @@
           items:
             - name: Retention policies and labels
               href: retention.md
+            - name: Retention flowchart
+              href: retention-flowchart.md
             - name: Retention for SharePoint and OneDrive
               href: retention-policies-sharepoint.md
             - name: Retention for Microsoft Teams
