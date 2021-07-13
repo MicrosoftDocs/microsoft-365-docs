@@ -1,7 +1,7 @@
 ---
 title: Generate a test Microsoft 365 Defender alert
 description: Generate a test alert to try how your Microsoft 365 Defender lab environment works
-keywords: Microsoft Threat Protection simulation, try Microsoft Threat Protection, generate test alert in Microsoft Threat Protection, test alert in Microsoft Threat Protection evaluation lab
+keywords: Microsoft 365 Defender simulation, try Microsoft 365 Defender, generate test alert in Microsoft 365 Defender, test alert in Microsoft 365 Defender evaluation lab
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security

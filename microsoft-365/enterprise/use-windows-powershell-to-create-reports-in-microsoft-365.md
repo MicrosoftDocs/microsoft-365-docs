@@ -52,7 +52,7 @@ These articles describe how to use PowerShell for Microsoft 365 to get informati
   - [Use Exchange Online PowerShell to display mailbox](/exchange/recipients-in-exchange-online/manage-user-mailboxes/use-powershell-to-display-mailbox-information)
     
     
-## Related articlesl
+## Related articles
 
 [Manage Microsoft 365 with PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
   

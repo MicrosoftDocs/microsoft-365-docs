@@ -19,7 +19,6 @@ Your gateway to the Microsoft Managed Desktop service is [Microsoft Endpoint Man
 > [!NOTE]
 > In [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) the following browsers are supported:
 > - Microsoft Edge (latest version)
-> - Microsoft Internet Explorer 11
 > - Safari (latest version, Mac only)
 > - Chrome (latest version)
 > - Firefox (latest version)
@@ -57,12 +56,12 @@ If you need help with assigning Azure Active Directory roles, see [Administrator
 ### Assigning built-in roles to user
 
 For easy management of built-in roles, there is a security group for each custom role with the name "Modern Workplace Roles - _Role Name_"(for example, “Modern Workplace Roles – Security Manager”). To assign users to one of these security groups, follow these steps:
-1.	Go the Microsoft Endpoint Manager portal.
-2.	Select **Groups** on the left side.
-3.	Search for **Modern Workplace Roles**, and then select the group associated with the role you want to assign. 
-4.	Select **Members** on the left side, and then select **+ Add members** on the command bar.
-5.	Enter the email of the person being added. If they are a guest, you must invite them before you can assign the group.
-6.	Select **Select** at the bottom.
+1. Go the Microsoft Endpoint Manager portal.
+2. Select **Groups** on the left side.
+3. Search for **Modern Workplace Roles**, and then select the group associated with the role you want to assign. 
+4. Select **Members** on the left side, and then select **+ Add members** on the command bar.
+5. Enter the email of the person being added. If they are a guest, you must invite them before you can assign the group.
+6. Select **Select** at the bottom.
 
 > [!NOTE]
 > Nesting security groups for role assignment is not currently supported. 
@@ -70,6 +69,7 @@ For easy management of built-in roles, there is a security group for each custom
 ### Assigning built-in roles to groups
 
 If you need to assign one or more of the built-in roles to a existing group, follow these steps:
+
 1. Go to [portal.azure.com](https://portal.azure.com/).
 2. Search for and open **Enterprise applications**.
 3. Change the **Application type** filter to _Microsoft Applications_ and, then select **Apply**.

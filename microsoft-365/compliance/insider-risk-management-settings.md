@@ -55,7 +55,7 @@ Alerts are triggered by policies when users perform activities related to policy
 Policy indicators are segmented into the following areas. You can choose the indicators to activate and customize indicator event limits for each indicator level when creating an insider risk policy:
 
 - **Office indicators**: These include policy indicators for SharePoint sites, Microsoft Teams, and email messaging.
-- **Device indicators**: These include policy indicators for activity such as sharing files over the network or with devices. Indicators include activities involving Microsoft Office files, .csv (comma-separated values) files, and .pdf (portable document format) files. If you select **Device indicators**, activity is processed only for devices with Windows 10 Build 1809 or higher and you must first onboard devices to the compliance center. For more information on configuring devices for integration with insider risk, see the following [Enable device indicators and onboard devices](insider-risk-management-settings.md#OnboardDevices) section in this article.
+- **Device indicators**: These include policy indicators for activity such as sharing files over the network or with devices. Indicators include activities involving all file types, excluding executable (.exe) and dynamic link library (.dll) file activity. If you select **Device indicators**, activity is processed only for devices with Windows 10 Build 1809 or higher and you must first onboard devices to the compliance center. For more information on configuring devices for integration with insider risk, see the following [Enable device indicators and onboard devices](insider-risk-management-settings.md#OnboardDevices) section in this article.
 - **Security policy violation indicator (preview)**: These include indicators from Microsoft Defender for Endpoint related to unapproved or malicious software installation or bypassing security controls. To receive alerts in insider risk management, you must have an active Defender for Endpoint license and insider risk integration enabled. For more information on configuring Defender for Endpoint for insider risk management integration, see [Configure advanced features in Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/advanced-features\#share-endpoint-alerts-with-microsoft-compliance-center).
 - **Physical access indicators (preview)**: These include policy indicators for physical access to sensitive assets. For example, attempted access to a restricted area in your physical badging system logs can be shared with insider risk management policies. To receive these types of alerts in insider risk management, you must have priority physical assets enabled in insider risk management and the [Physical badging data connector](import-physical-badging-data.md) configured. To learn more about configuring physical access, see the [Priority physical access section](#priority-physical-assets-preview) in this article.
 - **Microsoft Cloud App Security indicators (preview)**: These include policy indicators from shared alerts from Cloud App Security. Automatically enabled anomaly detection in Cloud App Security immediately starts detecting and collating results, targeting numerous behavioral anomalies across your users and the machines and devices connected to your network. To include these activities in insider risk management policy alerts, select one or more indicators in this section. To learn more about Cloud App Security analytics and anomaly detection, see [Get behavioral analytics and anomaly detection](/cloud-app-security/anomaly-detection-policy).
@@ -65,8 +65,8 @@ In some cases, you may want to limit the insider risk policy indicators that are
 
 To define the insider risk policy indicators that are enabled in all insider risk policies, navigate to **Insider risk settings** > **Indicators** and select one or more policy indicators. The indicators selected on the Indicators settings page cannot be individually configured when creating or editing an insider risk policy in the policy wizard.
 
->[!NOTE]
->It may take several hours for new manually-added users to appear in the **Users dashboard**. Activities for the previous 90 days for these users may take up to 24 hours to display. To view activities for manually added users, select the user on the **Users dashboard** and open the **User activity** tab on the details pane.
+> [!NOTE]
+> It may take several hours for new manually-added users to appear in the **Users dashboard**. Activities for the previous 90 days for these users may take up to 24 hours to display. To view activities for manually added users, select the user on the **Users dashboard** and open the **User activity** tab on the details pane.
 
 ### Enable device indicators and onboard devices
 <a name="OnboardDevices"> </a>
@@ -78,7 +78,7 @@ To enable the monitoring of risk activities on devices and include policy indica
 Make sure that the Windows 10 devices that you plan on reporting in insider risk management meet these requirements.
 
 1. Must be running Windows 10 x64 build 1809 or later and must have installed the [Windows 10 update (OS Build 17763.1075)](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818) from February 20, 2020.
-2. All devices must be [Azure Active Directory (AAD) joined](/azure/active-directory/devices/concept-azure-ad-join), or Hybrid Azure AD joined.
+2. The user account used to log into the Windows 10 device must be an active Azure Active Directory (AAD) account. The Windows 10 device may be [AAD](/azure/active-directory/devices/concept-azure-ad-join), hybrid AAD, or Active Directory joined, or AAD registered.
 3. Install Microsoft Chromium Edge browser on the endpoint device to monitor actions for the cloud upload activity. See, [Download the new Microsoft Edge based on Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium).
 
 #### Step 2: Onboarding devices
@@ -194,8 +194,8 @@ Alerts from Defender for Endpoint are imported daily. Depending on the triage st
 
 For example, if you select *New*, *In progress*, and *Resolved* for this setting, when a Microsoft Defender for Endpoint alert is generated and the status is *New*, an initial alert activity is imported for the user in insider risk. When the Defender for Endpoint triage status changes to *In progress*, a second activity for this alert is imported for the user in insider risk. When the final Defender for Endpoint triage status of *Resolved* is set, a third activity for this alert is imported for the user in insider risk. This functionality allows investigators to follow the progression of the Defender for Endpoint alerts and choose the level of visibility that their investigation requires.
 
->[!IMPORTANT]
->You'll need to have Microsoft Defender for Endpoint configured in your organization and enable Defender for Endpoint for insider risk management integration in the Defender Security Center to import security violation alerts. For more information on configuring Defender for Endpoint for insider risk management integration, see [Configure advanced features in Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/advanced-features\#share-endpoint-alerts-with-microsoft-compliance-center).
+> [!IMPORTANT]
+> You'll need to have Microsoft Defender for Endpoint configured in your organization and enable Defender for Endpoint for insider risk management integration in the Defender Security Center to import security violation alerts. For more information on configuring Defender for Endpoint for insider risk management integration, see [Configure advanced features in Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/advanced-features\#share-endpoint-alerts-with-microsoft-compliance-center).
 
 ### Domains (preview)
 
@@ -301,8 +301,8 @@ Complete the following steps to edit a priority user group:
 
 To delete an existing priority user group, you'll use setting controls in the **Insider risk management** solution in the Microsoft 365 compliance center. To delete a priority user group, you must be a member of the *Insider Risk Management* or *Insider Risk Management Admin* role group.
 
->[!IMPORTANT]
->Deleting a priority user group will remove it from any active policy to which it is assigned. If you delete a priority user group that is assigned to an active policy, the policy will not contain any in-scope users and will effectively be idle and will not create alerts.
+> [!IMPORTANT]
+> Deleting a priority user group will remove it from any active policy to which it is assigned. If you delete a priority user group that is assigned to an active policy, the policy will not contain any in-scope users and will effectively be idle and will not create alerts.
 
 Complete the following steps to delete a priority user group:
 
@@ -331,8 +331,8 @@ Complete the following steps to configure priority physical assets:
 
 1. Follow the configuration steps for insider risk management in the [Getting started with insider risk management](insider-risk-management-configure.md) article. In Step 3, make sure you configure the Physical badging connector.
 
-    >[!IMPORTANT]
-    >For insider risk management policies to use and correlate signal data related to departing and terminated users with event data from your physical control and access platforms, you must also configure the Microsoft 365 HR connector. If you enable the Physical badging connector without enabling the Microsoft 365 HR connector, insider risk management policies will only process events for physical access activities for users in your organization.
+    > [!IMPORTANT]
+    > For insider risk management policies to use and correlate signal data related to departing and terminated users with event data from your physical control and access platforms, you must also configure the Microsoft 365 HR connector. If you enable the Physical badging connector without enabling the Microsoft 365 HR connector, insider risk management policies will only process events for physical access activities for users in your organization.
 
 2. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select **Insider risk settings** > **Priority physical assets**.
 3. On the **Priority physical assets** page, you can either manually add the physical asset IDs you want to monitor for the asset events imported by the Physical badging connector or import a .csv file of all physical assets IDs imported by the Physical badging connector:
@@ -346,8 +346,8 @@ Complete the following steps to configure priority physical assets:
 
 To delete an existing priority physical asset, you'll use setting controls in the Insider risk management solution in the Microsoft 365 compliance center. To delete a priority physical asset, you must be a member of the Insider Risk Management or Insider Risk Management Admin role group.
 
->[!IMPORTANT]
->Deleting a priority physical asset removes it from examination by any active policy to which it was previously included. Alerts generated by activities associated with the priority physical asset aren't deleted.
+> [!IMPORTANT]
+> Deleting a priority physical asset removes it from examination by any active policy to which it was previously included. Alerts generated by activities associated with the priority physical asset aren't deleted.
 
 Complete the following steps to delete a priority physical asset:
 
@@ -371,8 +371,6 @@ The following Power Automate templates are provided to customers to support proc
     - Severity level of the alert
 
     The flow automatically updates the case notes that the message was sent and that the flow was activated. If you've chosen to anonymize users in **Privacy settings**, flows created from this template will not function as intended so that user privacy is maintained. Power Automate flows using this template are available on the **Cases dashboard**.
-
-- **Add calendar reminder to follow up on an insider risk case**: This template allows risk investigators and analysts to add calendar reminders for cases to their Office 365 Outlook calendar. This flow eliminates the need for users to exit or switch out of the insider risk management workflow when processing cases and triaging alerts. When this flow is configured and selected, a reminder is added to Office 365 Outlook calendar for the user running the flow. Power Automate flows using this template are available on the **Cases dashboard**.
 - **Create record for insider risk case in ServiceNow**: This template is for organizations that want to use their ServiceNow solution to track insider risk management cases.  When in a case, insider risk analysts and investigators can create a record for the case in ServiceNow. You can customize this template to populate selected fields in ServiceNow based on your organization's requirements. Power Automate flows using this template are available on the **Cases dashboard**. For more information on available ServiceNow fields, see the [ServiceNow Connector reference](/connectors/service-now/) article.
 
 ### Create a Power Automate flow from insider risk management template
@@ -391,8 +389,8 @@ Complete the following steps to create a Power Automate flow from a recommended 
 6. Select **Save draft** to save the flow for further configuration or select **Save** to complete the configuration for the flow.
 7. Select **Close** to return to the **Power Automate flow** page. The new template will be listed as a flow on the **My flows** tabs and is automatically available from the **Automate** dropdown control when working with insider risk management cases for the user creating the flow.
 
->[!IMPORTANT]
->If other users in your organization need access to the flow, the flow must be shared.
+> [!IMPORTANT]
+> If other users in your organization need access to the flow, the flow must be shared.
 
 ![Insider risk management power automate flows](../media/insider-risk-settings-power-automate-flows.png)
 
@@ -423,7 +421,7 @@ To share a Power Automate flow in the settings area, you must be a member of the
 
 Complete the following steps to share a Power Automate flow:
 
-1. In the [Microsoft 365 compliance center](htttps://compliance.microsoft.com), go to **Insider risk management** and select **Insider risk settings** > **Power Automate flows**. You can also access from the **Cases** or **Users dashboards** pages by choosing **Automate** > **Manage Power Automate flows**.
+1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select **Insider risk settings** > **Power Automate flows**. You can also access from the **Cases** or **Users dashboards** pages by choosing **Automate** > **Manage Power Automate flows**.
 2. On the **Power Automate flows** page, select the **My flows** or **Team flows** tab.
 3. Select the flow to share, then select **Share** from the flow options menu.
 4. On the flow sharing page, enter the name of the user or group you want to add as an owner for the flow.
@@ -437,7 +435,7 @@ To edit a Power Automate flow in the settings area, you must be a member of the 
 
 Complete the following steps to edit a Power Automate flow:
 
-1. In the [Microsoft 365 compliance center](htttps://compliance.microsoft.com), go to **Insider risk management** and select **Insider risk settings** > **Power Automate flows**. You can also access from the **Cases** or **Users dashboards** pages by choosing **Automate** > **Manage Power Automate flows**.
+1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select **Insider risk settings** > **Power Automate flows**. You can also access from the **Cases** or **Users dashboards** pages by choosing **Automate** > **Manage Power Automate flows**.
 2. On the **Power Automate flows** page, select a flow to edit and select **Edit** from the flow control menu.
 3. Select the **ellipsis** > **Settings** to change a flow component setting or **ellipsis** > **Delete** to delete a flow component.
 4. Select **Save** and then **Close** to complete editing the flow.
@@ -450,7 +448,7 @@ To delete a Power Automate flow in the settings area, you must be a member of th
 
 Complete the following steps to delete a Power Automate flow:
 
-1. In the [Microsoft 365 compliance center](htttps://compliance.microsoft.com), go to **Insider risk management** and select **Insider risk settings** > **Power Automate flows**. You can also access from the **Cases** or **Users dashboards** pages by choosing **Automate** > **Manage Power Automate flows**.
+1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select **Insider risk settings** > **Power Automate flows**. You can also access from the **Cases** or **Users dashboards** pages by choosing **Automate** > **Manage Power Automate flows**.
 2. On the **Power Automate flows** page, select a flow to delete and select **Delete** from the flow control menu.
 3. On the deletion confirmation dialog, select **Delete** to remove the flow or select **Cancel** to exit the deletion action.
 
@@ -468,7 +466,7 @@ For more information on how to use teams and channels in Microsoft Teams, see [O
 
 Enabling Microsoft Teams support for cases is quick and easy to configure. To enable Microsoft Teams for insider risk management, complete the following steps:
 
-1. In the [Microsoft 365 compliance center](htttps://compliance.microsoft.com), go to **Insider risk management** > **Insider risk settings**.
+1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** > **Insider risk settings**.
 2. Select the **Microsoft Teams** tab.
 3. Enable Microsoft Teams integration for insider risk management.
 4. Select **Save** to configure and exit.
@@ -483,7 +481,7 @@ Users need permission to create Microsoft 365 groups in your organization to cre
 
 To create a team for a case, you'll use the Create Microsoft Team control when working directly in an existing case. Complete the following steps to create a new team:
 
-1. In the [Microsoft 365 compliance center](htttps://compliance.microsoft.com), go to **Insider risk management** > **Cases** and select an existing case.
+1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** > **Cases** and select an existing case.
 2. On the case action menu, select **Create Microsoft Team**.
 3. In the **Team name** field, enter a name for the new Microsoft Teams team.
 4. Select **Create Microsoft team** and then select **Close**.
@@ -514,7 +512,7 @@ Analytics insights from scans are based on the same risk activity signals used b
 To enable insider risk analytics, you must be a member of the Insider Risk Management, Insider Risk Management Admin or Microsoft 365 Global admin role group.
 Complete the following steps to enable insider risk analytics:
 
-1. In the [Microsoft 365 compliance center](htttps://compliance.microsoft.com), go to **Insider risk management**.
+1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management**.
 2. Select **Run scan** on the **Scan for insider risks in your organization** card on the insider risk management **Overview** tab. This turns on analytics scanning for your organization. You can also turn on scanning in your organization by navigating to **Insider risk settings** > **Analytics** and enabling **Scan your tenant's user activity to identify potential insider risks**.
 3. On the **Analytics details** pane, select **Run scan** to start the scan for your organization. Analytics scan results may take up to 24 hours before insights are available as reports for review.
 
@@ -544,6 +542,6 @@ To turn off insider risk analytics, you must be a member of the *Insider Risk Ma
 
 Complete the following steps to turn off insider risk analytics:
 
-1. In the [Microsoft 365 compliance center](htttps://compliance.microsoft.com), go to **Insider risk management**.
+1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management**.
 2. Select **Insider risk settings** > **Analytics** page.
 3. On the **Analytics** page, turn off **Scan your tenant's user activity to identify potential insider risks**.

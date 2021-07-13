@@ -44,7 +44,7 @@ A trial allows organizations to easily set up and configure the Defender for Off
 
 By default, these policies are scoped to all users in the organization, but admins can customize the policies during or after setup so they apply only to specific users.
 
-During setup, MDO response functionality (found in MDO P2 or equivalent) is also set up for the entire organization. No policy scoping is required.
+During setup, Defender for Office 365 response functionality (found in Defender for Office 365 P2 or equivalent) is also set up for the entire organization. No policy scoping is required.
 
 ## Licensing
 
@@ -97,7 +97,7 @@ Powerful experiences help identify, prioritize, and investigate threats, with ad
 
 ### Response and remediation
 
-Extensive incident response and automation capabilities amplify your security team’s effectiveness and efficiency.
+Extensive incident response and automation capabilities amplify your security team's effectiveness and efficiency.
 
 - [Automated investigation and response (AIR) in Microsoft Defender for Office 365](office-365-air.md)
 

@@ -37,6 +37,8 @@ Safe Attachments protection for email messages is controlled by Safe Attachments
 
 The following table describes scenarios for Safe Attachments in Microsoft 365 and Office 365 organizations that include Microsoft Defender for Office 365 (in other words, lack of licensing is never an issue in the examples).
 
+<br>
+
 ****
 
 |Scenario|Result|
@@ -50,10 +52,9 @@ The following table describes scenarios for Safe Attachments in Microsoft 365 an
 Safe Attachments scanning takes place in the same region where your Microsoft 365 data resides. For more information about datacenter geography, see [Where is your data located?](https://products.office.com/where-is-your-data-located?geo=All)
 
 > [!NOTE]
-> The following features are located in the global settings of Safe Attachments policies in the Security & Compliance Center. But, these settings are enabled or disabled globally, and don't require Safe Attachments policies:
+> The following features are located in the global settings of Safe Attachments policies in the Microsoft 365 Defender portal. But, these settings are enabled or disabled globally, and don't require Safe Attachments policies:
 >
 > - [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](mdo-for-spo-odb-and-teams.md).
->
 > - [Safe Documents in Microsoft 365 E5](safe-docs.md)
 
 ## Safe Attachments policy settings
@@ -62,14 +63,16 @@ This section describes the settings in Safe Attachments policies:
 
 - **Safe Attachments unknown malware response**: This setting controls the action for Safe Attachments malware scanning in email messages. The available options are described in the following table:
 
+  <br>
+
   ****
 
   |Option|Effect|Use when you want to:|
   |---|---|---|
   |**Off**|Attachments aren't scanned for malware by Safe Attachments. Messages are still scanned for malware by [anti-malware protection in EOP](anti-malware-protection.md).|Turn scanning off for selected recipients. <p> Prevent unnecessary delays in routing internal mail. <p> **This option is not recommended for most users. You should only use this option to turn off Safe Attachments scanning for recipients who only receive messages from trusted senders.**|
   |**Monitor**|Delivers messages with attachments and then tracks what happens with detected malware. <p> Delivery of safe messages might be delayed due to Safe Attachments scanning.|See where detected malware goes in your organization.|
-  |**Block**|Prevents messages with detected malware attachments from being delivered. <p> Messages are [quarantined](manage-quarantined-messages-and-files.md) where only admins (not end-users) can review, release, or delete the messages. <p> Automatically blocks future instances of the messages and attachments. <p> Delivery of safe messages might be delayed due to Safe Attachments scanning.|Protects your organization from repeated attacks using the same malware attachments. <p> This is the default value, and the recommended value in Standard and Strict [preset security policies](preset-security-policies.md).|
-  |**Replace**|Removes detected malware attachments. <p> Notifies recipients that attachments have been removed. <p>  Messages are [quarantined](manage-quarantined-messages-and-files.md) where only admins (not end-users) can review, release, or delete the messages. <p> Delivery of safe messages might be delayed due to Safe Attachments scanning.|Raise visibility to recipients that attachments were removed because of detected malware.|
+  |**Block**|Prevents messages with detected malware attachments from being delivered. <p> Messages are [quarantined](manage-quarantined-messages-and-files.md) where only admins (not users) can review, release, or delete the messages. <p> Automatically blocks future instances of the messages and attachments. <p> Delivery of safe messages might be delayed due to Safe Attachments scanning.|Protects your organization from repeated attacks using the same malware attachments. <p> This is the default value, and the recommended value in Standard and Strict [preset security policies](preset-security-policies.md).|
+  |**Replace**|Removes detected malware attachments. <p> Notifies recipients that attachments have been removed. <p>  Messages are [quarantined](manage-quarantined-messages-and-files.md) where only admins (not users) can review, release, or delete the messages. <p> Delivery of safe messages might be delayed due to Safe Attachments scanning.|Raise visibility to recipients that attachments were removed because of detected malware.|
   |**Dynamic Delivery**|Delivers messages immediately, but replaces attachments with placeholders until Safe Attachments scanning is complete. <p> For details, see the [Dynamic Delivery in Safe Attachments policies](#dynamic-delivery-in-safe-attachments-policies) section later in this article.|Avoid message delays while protecting recipients from malicious files. <p> Enable recipients to preview attachments in safe mode while scanning is taking place.|
   |
 
@@ -80,7 +83,6 @@ This section describes the settings in Safe Attachments policies:
 - **Apply the above selection if malware scanning for attachments times out or error occurs**: The action specified by **Safe Attachments unknown malware response** is taken on messages even when Safe Attachments scanning can't complete. Always select this option if you select **Enable redirect**. Otherwise, messages might be lost.
 
 - **Recipient filters**: You need to specify the recipient conditions and exceptions that determine who the policy applies to. You can use these properties for conditions and exceptions:
-
   - **The recipient is**
   - **The recipient domain is**
   - **The recipient is a member of**
@@ -98,7 +100,7 @@ This section describes the settings in Safe Attachments policies:
 
 The Dynamic Delivery action in Safe Attachments policies seeks to eliminate any email delivery delays that might be caused by Safe Attachments scanning. The body of the email message is delivered to the recipient with a placeholder for each attachment. The placeholder remains until the attachment is found to be safe, and then the attachment becomes available to open or download.
 
-If an attachment is found to be malicious, the message is quarantined. Only admins (not end-users) can review, release, or delete messages that were quarantined by Safe Attachments scanning. For more information, see [Manage quarantined messages and files as an admin](manage-quarantined-messages-and-files.md).
+If an attachment is found to be malicious, the message is quarantined. Only admins (not users) can review, release, or delete messages that were quarantined by Safe Attachments scanning. For more information, see [Manage quarantined messages and files as an admin](manage-quarantined-messages-and-files.md).
 
 Most PDFs and Office documents can be previewed in safe mode while Safe Attachments scanning is underway. If an attachment is not compatible with the Dynamic Delivery previewer, the recipients will see a placeholder for the attachment until Safe Attachments scanning is complete.
 
@@ -107,29 +109,21 @@ If you're using a mobile device, and PDFs aren't rendering in the Dynamic Delive
 Here are some considerations for Dynamic Delivery and forwarded messages:
 
 - If the forwarded recipient is protected by a Safe Attachments policy that uses the Dynamic Delivery option, then the recipient sees the placeholder, with the ability to preview compatible files.
-
 - If the forwarded recipient is not protected by a Safe Attachments policy, the message and attachments will be delivered without any Safe Attachments scanning or attachment placeholders.
 
 There are scenarios where Dynamic Delivery is unable to replace attachments in messages. These scenarios include:
 
 - Messages in public folders.
-
 - Messages that are routed out of and then back into a user's mailbox using custom rules.
-
 - Messages that are moved (automatically or manually) out of cloud mailboxes to other locations, including archive folders.
-
+- Inbox rules move the message out of the Inbox into a different folder.
 - Deleted messages.
-
 - The user's mailbox search folder is in an error state.
-
-- Exchange Online organizations where Exclaimer is enabled. To resolve this, see [KB4014438](https://support.microsoft.com/help/4014438).
-
-- [S/MIME)](s-mime-for-message-signing-and-encryption.md) encrypted messages.
-
+- Exchange Online organizations where Exclaimer is enabled. To resolve this issue, see [KB4014438](https://support.microsoft.com/help/4014438).
+- [S/MIME)](/exchange/security-and-compliance/smime-exo/smime-exo) encrypted messages.
 - You configured the Dynamic Delivery action in a Safe Attachments policy, but the recipient doesn't support Dynamic Delivery (for example, the recipient is a mailbox in an on-premises Exchange organization). However, [Safe Links in Microsoft Defender for Office 365](set-up-safe-links-policies.md) is able to scan Office file attachments that contain URLs (depending on how the [global settings for Safe Links](configure-global-settings-for-safe-links.md) are configured).
 
 ## Submitting files for malware analysis
 
 - If you receive a file that you want to send to Microsoft for analysis, see [Submit malware and non-malware to Microsoft for analysis](submitting-malware-and-non-malware-to-microsoft-for-analysis.md).
-
 - If you receive an email message (with or without an attachment) that you want to submit to Microsoft for analysis, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).

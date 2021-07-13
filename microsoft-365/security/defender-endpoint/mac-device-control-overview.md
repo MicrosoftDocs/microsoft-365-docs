@@ -1,7 +1,7 @@
 ---
 title: Device control for macOS
-description: Learn how to configure Microsoft Defender for Endpoint for Mac to reduce threats from removable storage such as USB devices.
-keywords: microsoft, defender, atp, mac, device, control, usb, removable, media
+description: Learn how to configure Microsoft Defender for Endpoint on Mac to reduce threats from removable storage such as USB devices.
+keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, device, control, usb, removable, media
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -30,38 +30,14 @@ ms.technology: mde
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-[!include[Prerelease information](../../includes/prerelease.md)]
-
 ## Requirements
 
 Device control for macOS has the following prerequisites:
 
 >[!div class="checklist"]
 > - Microsoft Defender for Endpoint entitlement (can be trial)
-> - Minimum OS version: macOS 10.15.4 or higher
-> - Minimum product version: 101.24.59
-> - Your device must be running with system extensions (this is the default on macOS 11 Big Sur). 
-> 
->   You can check if your device is running on system extensions by running the following command and verify that it is printing `endpoint_security_extension` to the console: 
-> 
->   ```bash
->   mdatp health --field real_time_protection_subsystem 
->   ```
-> - Your device must be in `Beta` (previously called `InsiderFast`) Microsoft AutoUpdate update channel. For more information, see [Deploy updates for Microsoft Defender for Endpoint for Mac](mac-updates.md).
-> 
->   You can check the update channel using the following command: 
-> 
->    ```bash
->    mdatp health --field release_ring 
->    ```
->
->    If the above command does not print either `Beta` or `InsiderFast`, execute the following command from the Terminal. The channel update takes effect next time the product starts (when the next product update is installed or when the device is rebooted). 
-> 
->    ```bash
->    defaults write com.microsoft.autoupdate2 ChannelName -string Beta
->    ```
->
->    Alternatively, if you are in a managed environment (JAMF or Intune), you can configure the update channel remotely. For more information, see [Deploy updates for Microsoft Defender for Endpoint for Mac](mac-updates.md). 
+> - Minimum OS version: macOS 11 or higher
+> - Minimum product version: 101.34.20
 
 ## Device control policy
 
@@ -71,7 +47,7 @@ The device control policy is included in the configuration profile used to confi
 
 Within the configuration profile, the device control policy is defined in the following section:
 
-|||
+|Section|Value|
 |:---|:---|
 | **Domain** | `com.microsoft.wdav` |
 | **Key** | deviceControl |
@@ -91,7 +67,7 @@ When the device control policy that you have put in place is enforced on a devic
 
 When end users click this notification, a web page is opened in the default browser. You can configure the URL that is opened when end users click the notification.
 
-|||
+|Section|Value|
 |:---|:---|
 | **Domain** | `com.microsoft.wdav` |
 | **Key** | navigationTarget |
@@ -105,7 +81,7 @@ The removable media section of the device control policy is used to restrict acc
 > [!NOTE]
 > The following types of removable media are currently supported and can be included in the policy: USB storage devices.
 
-|||
+|Section|Value|
 |:---|:---|
 | **Domain** | `com.microsoft.wdav` |
 | **Key** | removableMediaPolicy |
@@ -138,7 +114,10 @@ Under the removable media section, there is an option to set the enforcement lev
 - `audit` - Under this enforcement level, if access to a device is restricted, a notification is displayed to the user, however the device can still be used. This enforcement level can be useful to evaluate the effectiveness of a policy.
 - `block` - Under this enforcement level, the operations that the user can perform on the device are limited to what is defined in the policy. Furthermore, a notification is raised to the user. 
 
-|||
+> [!NOTE] 
+> By default, the enforcement level is set to `audit`. 
+
+|Section|Value|
 |:---|:---|
 | **Domain** | `com.microsoft.wdav` |
 | **Key** | enforcementLevel |
@@ -163,7 +142,7 @@ This setting can be set to:
 > [!NOTE]
 > The `execute` permission only refers to execution of Mach-O binaries. It does not include execution of scripts or other types of payloads.
 
-|||
+|Section|Value|
 |:---|:---|
 | **Domain** | `com.microsoft.wdav` |
 | **Key** | permission |
@@ -178,7 +157,7 @@ At the top level of the removable media policy, you can optionally define more g
 
 The `vendors` dictionary contains one or more entries, with each entry being identified by the vendor ID.
 
-|||
+|Section|Value|
 |:---|:---|
 | **Domain** | `com.microsoft.wdav` |
 | **Key** | vendors |
@@ -186,7 +165,7 @@ The `vendors` dictionary contains one or more entries, with each entry being ide
 
 For each vendor, you can specify the desired permission level for devices from that vendor.
 
-|||
+|Section|Value|
 |:---|:---|
 | **Domain** | `com.microsoft.wdav` |
 | **Key** | permission |
@@ -195,7 +174,7 @@ For each vendor, you can specify the desired permission level for devices from t
 
 Furthermore, you can optionally specify the set of products belonging to that vendor for which more granular permissions are defined. The `products` dictionary contains one or more entries, with each entry being identified by the product ID. 
 
-|||
+|Section|Value|
 |:---|:---|
 | **Domain** | `com.microsoft.wdav` |
 | **Key** | products |
@@ -203,7 +182,7 @@ Furthermore, you can optionally specify the set of products belonging to that ve
 
 For each product, you can specify the desired permission level for that product.
 
-|||
+|Section|Value|
 |:---|:---|
 | **Domain** | `com.microsoft.wdav` |
 | **Key** | permission |
@@ -214,7 +193,7 @@ Furthermore, you can specify an optional set of serial numbers for which more gr
 
 The `serialNumbers` dictionary contains one or more entries, with each entry being identified by the serial number.
 
-|||
+|Section|Value|
 |:---|:---|
 | **Domain** | `com.microsoft.wdav` |
 | **Key** | serialNumbers |
@@ -222,7 +201,7 @@ The `serialNumbers` dictionary contains one or more entries, with each entry bei
 
 For each serial number, you can specify the desired permission level.
 
-|||
+|Section|Value|
 |:---|:---|
 | **Domain** | `com.microsoft.wdav` |
 | **Key** | permission |
@@ -325,13 +304,13 @@ You can view mount, unmount, and volume change events originating from USB devic
 
 ```
 DeviceEvents 
-    | where ActionType == "UsbDriveMount" or ActionType == "UsbDriveUnmount" or ActionType == "UsbDriveDriveLetterChanged"
+    | where ActionType == "UsbDriveMounted" or ActionType == "UsbDriveUnmounted" or ActionType == "UsbDriveDriveLetterChanged"
     | where DeviceId == "<device ID>"
 ```
 
 ## Device control policy deployment
 
-The device control policy must be included next to the other product settings, as described in [Set preferences for Microsoft Defender for Endpoint for Mac](mac-preferences.md).
+The device control policy must be included next to the other product settings, as described in [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md).
 
 This profile can be deployed using the instructions listed in [Configuration profile deployment](mac-preferences.md#configuration-profile-deployment).
 

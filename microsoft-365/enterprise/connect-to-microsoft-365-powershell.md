@@ -3,7 +3,6 @@ title: "Connect to Microsoft 365 with PowerShell"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/17/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -31,6 +30,11 @@ There are two versions of the PowerShell module that you can use to connect to M
 - Microsoft Azure Active Directory Module for Windows PowerShell, whose cmdlets include *Msol* in their name
 
 Currently, the Azure Active Directory PowerShell for Graph module doesn't completely replace the functionality of the Microsoft Azure Active Directory Module for Windows PowerShell module for user, group, and license administration. In some cases, you need to use both versions. You can safely install both versions on the same computer.
+
+>[!Note]
+>You can also connect with the [Azure Cloud Shell](#connect-with-the-azure-cloud-shell) from the Microsoft 365 admin center.
+>
+
 
 ## What do you need to know before you begin?
 
@@ -125,7 +129,7 @@ PowerShell Core doesn't support the Microsoft Azure Active Directory Module for 
 
 These steps are required only one time on your computer. But you'll likely need to update the software periodically.
   
-1.  If you're not running Windows 10, install the 64-bit version of the Microsoft Online Services Sign-in Assistant: [Microsoft Online Services Sign-in Assistant for IT Professionals RTW](https://www.microsoft.com/Download/details.aspx?id=28177).
+1.  If you're not running Windows 10, install the 64-bit version of the Microsoft Online Services Sign-in Assistant: [Microsoft Online Services Sign-in Assistant for IT Professionals RTW](https://download.microsoft.com/download/7/1/E/71EF1D05-A42C-4A1F-8162-96494B5E615C/msoidcli_32bit.msi).
     
 2. Follow these steps to install the Microsoft Azure Active Directory Module for Windows PowerShell:
     
@@ -183,6 +187,14 @@ If you get an error message, check the following issues:
    ```powershell
      (dir "C:\Program Files\WindowsPowerShell\Modules\MSOnline").Name
    ```
+
+## Connect with the Azure Cloud Shell
+
+To connect with and use the Azure Cloud Shell from the Microsoft 365 admin center, select the PowerShell window icon from the upper-right corner of the task bar. In the **Welcome to Azure Cloud Shell** pane, select **PowerShell**.
+
+You will need an active Azure subscription for your organization that is tied to your Microsoft 365 subscription. If you don't already have one, you can create one. Once you have an Azure subscription, a PowerShell window opens from which you can run PowerShell commands and scripts.
+
+For more information, see [Azure Cloud Shell](/azure/cloud-shell/overview).
 
 ## See also
 

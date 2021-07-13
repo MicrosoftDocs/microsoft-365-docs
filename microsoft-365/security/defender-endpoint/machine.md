@@ -14,7 +14,8 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+MS.technology: mde
+ms.custom: api
 ---
 
 # Machine resource type
@@ -49,6 +50,7 @@ Method|Return Type |Description
 [Find machines by tag](find-machines-by-tag.md) | [machine](machine.md) collection | Find machines by [Tag](machine-tags.md).
 [Get missing KBs](get-missing-kbs-machine.md) | KB collection | Get a list of missing KBs associated with the machine ID
 [Set device value](set-device-value.md)| [machine](machine.md) collection | Set the [value of a device](tvm-assign-device-value.md).
+[Update machine](update-machine-method.md) |[machine](machine.md) collection | Get the update status of a machine.
 
 ## Properties
 
@@ -59,7 +61,7 @@ computerDnsName | String | [machine](machine.md) fully qualified name.
 firstSeen | DateTimeOffset | First date and time where the [machine](machine.md) was observed by Microsoft Defender for Endpoint.
 lastSeen | DateTimeOffset |Time and date of the last received full device report. A device typically sends a full report every 24 hours.
 osPlatform | String | Operating system platform.
-osProcessor | String | Operating system processor.
+osProcessor | String | Operating system processor. Use osArchitecture property instead.
 version | String | Operating system Version.
 osBuild | Nullable long | Operating system build number.
 lastIpAddress | String | Last IP on local NIC on the [machine](machine.md).
@@ -73,5 +75,6 @@ machineTags | String collection | Set of [machine](machine.md) tags.
 exposureLevel | Nullable Enum | Exposure level as evaluated by Microsoft Defender for Endpoint. Possible values are: 'None', 'Low', 'Medium' and 'High'.
 deviceValue | Nullable Enum | The [value of the device](tvm-assign-device-value.md). Possible values are: 'Normal', 'Low' and 'High'.
 ipAddresses | IpAddress collection | Set of ***IpAddress*** objects. See [Get machines API](get-machines.md).
+osArchitecture | String | Operating system architecture. Possible values are: "32-bit", "64-bit". Use this property instead of osProcessor.
 
 

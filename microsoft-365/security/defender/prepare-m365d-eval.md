@@ -1,7 +1,7 @@
 ---
 title: Prepare your Microsoft 365 Defender trial lab environment
 description: Prepare stakeholder sign-off, timelines, environment considerations, and adoption order when setting up your Microsoft 365 Defender trial lab or pilot environment
-keywords: MTP trial prep, MTP pilot prep, prep for running an MTP pilot project, run a pilot MTP project, deploy, prepare, stakeholder, timeline, environment, endpoint, server, management, adoption
+keywords: Microsoft 365 Defender trial prep, Microsoft 365 Defender pilot prep, prep for running a Microsoft 365 Defender pilot project, run a pilot Microsoft 365 Defender project, deploy, prepare, stakeholder, timeline, environment, endpoint, server, management, adoption
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -41,7 +41,7 @@ You're currently in the preparation phase.
 Preparation is key to any successful deployment. This section will guide you through what you need to consider as you prepare to create a trial lab or pilot environment for your Microsoft 365 Defender deployment.
 
 ## Prerequisites
-Learn about the licensing, hardware and software requirements, and other configuration settings to provision and use Microsoft 365 Defender. See the minimum requirements for [Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/defender/prerequisites), [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements), [Microsoft Defender for Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description), [Microsoft Defender for Identity](https://docs.microsoft.com/azure-advanced-threat-protection/atp-prerequisites), [Microsoft Cloud App Security](https://docs.microsoft.com/azure-advanced-threat-protection/atp-prerequisites).
+Learn about the licensing, hardware and software requirements, and other configuration settings to provision and use Microsoft 365 Defender. See the minimum requirements for [Microsoft 365 Defender](/microsoft-365/security/defender/prerequisites), [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements), [Microsoft Defender for Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description), [Microsoft Defender for Identity](/azure-advanced-threat-protection/atp-prerequisites), [Microsoft Cloud App Security](/azure-advanced-threat-protection/atp-prerequisites).
 
 ## Stakeholders and sign-off
 Identify all the stakeholders that are involved in the project and who may need to sign-off, review, or stay informed, whether for evaluation or running a pilot project.

@@ -152,11 +152,11 @@ Key resources:
 
 - [What's new in Project Server 2013 upgrade](/project/what-s-new-in-project-server-2013-upgrade) covers important changes for this version, including:
 
-   - There's no in-place upgrade to Project Server 2013. The database-attach method is the only supported way to upgrade from Project Server 2010 to Project Server 2013.
+  - There's no in-place upgrade to Project Server 2013. The database-attach method is the only supported way to upgrade from Project Server 2010 to Project Server 2013.
 
-   - The upgrade process will not only convert your Project Server 2010 data to Project Server 2013 format but will also consolidate the four Project Server 2010 databases into a single Project Web App database.
+  - The upgrade process will not only convert your Project Server 2010 data to Project Server 2013 format but will also consolidate the four Project Server 2010 databases into a single Project Web App database.
 
-   - Both SharePoint Server 2013 and Project Server 2013 changed to claims-based authentication from the previous version. If you're using classic authentication, you'll need to consider this when you upgrade. For more information, see [Migrate from classic-mode to claims-based authentication in SharePoint 2013]( https://docs.microsoft.com/sharepoint/upgrade-and-update/migrate-from-classic-mode-to-claims-based-authentication-in-sharepoint-2013).
+  - Both SharePoint Server 2013 and Project Server 2013 changed to claims-based authentication from the previous version. If you're using classic authentication, you'll need to consider this when you upgrade. For more information, see [Migrate from classic-mode to claims-based authentication in SharePoint 2013](/sharepoint/upgrade-and-update/migrate-from-classic-mode-to-claims-based-authentication-in-sharepoint-2013).
 
 Key resources:
 
@@ -208,9 +208,9 @@ Key resources:
 
 - [Things you need to know about Project Server 2019 upgrade](/project/plan-for-upgrade-to-project-server-2016)<br/><br/>Learn about important changes for upgrading to this version, which include:
 
-   - The upgrade process will migrate your data from your Project Server 2016 database to the SharePoint Server 2019 Content database.  Project Server 2019 will no longer create its own Project Server database in the SharePoint Server farm.
+  - The upgrade process will migrate your data from your Project Server 2016 database to the SharePoint Server 2019 Content database.  Project Server 2019 will no longer create its own Project Server database in the SharePoint Server farm.
 
-   - After the upgrade, be aware of several changes in Project Web App.  For details, see [What's new in Project Server 2019](/project/what-s-new-for-it-pros-in-project-server-2019#PWAChanges).
+  - After the upgrade, be aware of several changes in Project Web App.  For details, see [What's new in Project Server 2019](/project/what-s-new-for-it-pros-in-project-server-2019#PWAChanges).
 
 **Other resources**:
 

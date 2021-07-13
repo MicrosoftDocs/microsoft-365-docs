@@ -17,6 +17,7 @@ ms.collection:
 - m365solution-securecollab
 ms.custom:
 - Ent_Solutions
+recommendations: false
 description: "Learn how to deploy teams with protection for highly sensitive data."
 ---
 
@@ -32,6 +33,13 @@ The highly sensitive tier offers the following additional protections over the b
 - A more restrictive default sharing link type
 - Only team owners can create private channels.
 - Access requests for the associated SharePoint site are turned off.
+
+## Video demonstration
+
+Watch this video for a walkthrough of the procedures described in this article.
+<br>
+<br>
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4NzI7]
 
 ## Guest sharing
 
@@ -109,31 +117,19 @@ You can also use [teams policies](/MicrosoftTeams/teams-policies) to control who
 
 Each time you create a new team with the highly sensitive label, there are two steps to do in SharePoint:
 
-- Update the guest sharing settings for the site in the SharePoint admin center to match what you chose when you created the label, and update the default sharing link to *People with existing access*.
+- Update the guest sharing settings for the site in the SharePoint admin center to update the default sharing link to *People with existing access*.
 - Update the site sharing settings in the site itself to prevent members from sharing files, folders, or the site, and turn off access requests.
 
-### Site guest sharing settings
+### Site default sharing link settings
 
-The guest sharing setting that you chose when you created the label (which only affects team membership) should match the guest sharing settings for the associated SharePoint site as follows:
+To update the site default sharing link type
 
-|Label setting|SharePoint site setting|
-|:------------|:----------------------|
-|**Let Office 365 group owners add people outside the organization to the group** selected|**New and existing guests** (default for new teams)|
-|**Let Office 365 group owners add people outside the organization to the group** not selected|**Only people in your organization**|
-
-To update site settings
 1. Open the [SharePoint admin center](https://admin.microsoft.com/sharepoint).
 2. Under **Sites**, click **Active sites**.
 3. Click the site that is associated with team.
 4. On the **Policies** tab, under **External sharing**, click **Edit**.
-5. If you allowed guest sharing when you created the Highly sensitive label, ensure that **New and existing guests** is selected. If you didn't allow sharing when you created the label, choose **Only people in your organization**.
-6. Under Default sharing link type, clear the **Same as organization-level setting** check box, and select **People with existing access**.
-7. Click **Save**.
-
-If you want to script this as part of your team creation process, you can use [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) with the following parameters:
-
-- `-SharingCapability Disabled` to turn off guest sharing (it's on by default)
-- `-DefaultSharingLinkType Internal` to change the default sharing link to *Specific people*
+5. Under Default sharing link type, clear the **Same as organization-level setting** check box, and select **People with existing access**.
+6. Click **Save**.
 
 #### Private channels
 

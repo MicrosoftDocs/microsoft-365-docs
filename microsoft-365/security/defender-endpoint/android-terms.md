@@ -1,8 +1,8 @@
 ---
-title: Microsoft Defender ATP for Android Application license terms
+title: Microsoft Defender for Endpoint on Android Application license terms
 ms.reviewer: 
-description: Describes the Microsoft Defender ATP for Android license terms
-keywords: microsoft, defender, atp, android,license, terms, application, use, installation, service, feedback, scope,
+description: Describes the Microsoft Defender for Endpoint on Android license terms
+keywords: microsoft, defender, Microsoft Defender for Endpoint, android, license, terms, application, use, installation, service, feedback, scope,
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,7 +20,7 @@ hideEdit: true
 ms.technology: mde
 ---
 
-# Microsoft Defender for Endpoint for Android application license terms
+# Microsoft Defender for Endpoint on Android application license terms
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -57,9 +57,7 @@ DO NOT USE THE APPLICATION.**
 
     1.  **Installation and Use.** You may install and use any number of copies
         of this application on Android enabled device or devices that you own
-        or control. You may use this application with your company's valid
-        subscription of Microsoft Defender for Endpoint or
-        an online service that includes Microsoft Defender for Endpoint functionalities.
+        or control. 
 
     2.  **Updates.** Updates or upgrades to Microsoft Defender for Endpoint may be required for full
         functionality. Some functionality may not be available in all countries.
@@ -167,7 +165,7 @@ DO NOT USE THE APPLICATION.**
         enforce and rely upon any provision of these Terms that grants them a
         benefit or rights.
 
-9.  **TRADEMARK NOTICES.** Microsoft, Microsoft Defender ATP, MDATP, and
+9.  **TRADEMARK NOTICES.** Microsoft, Microsoft Defender for Endpoint, and
     Microsoft 365 are registered or common-law trademarks of Microsoft
     Corporation in the United States and/or other countries.
 

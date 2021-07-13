@@ -30,7 +30,13 @@ ms.technology: m365d
 To make Microsoft Secure Score a better representative of your security posture, we have made some changes. To learn about planned changes, see [What's coming in Microsoft Secure Score?](microsoft-secure-score-whats-coming.md)
 
 Microsoft Secure Score can be found at https://security.microsoft.com/securescore in the [Microsoft 365 security center](overview-security-center.md).
-    
+
+## June 2021
+
+### Remove improvement action related to Microsoft Cloud App Security
+
+- Use Cloud App Security to detect anomalous behavior.
+
 ## February 2021
 
 ### Compatibility with Graph API
@@ -45,7 +51,7 @@ Microsoft Teams customers will see "Restrict anonymous users from joining meetin
 
 ## December 2020
 
-### Added six accounts-related improvement actions for Microsoft Defender for Endpoint (previously Microsoft Defender ATP):
+### Added six accounts-related improvement actions for Microsoft Defender for Endpoint:
 
 - Set 'Minimum password length' to '14 or more characters'
 - Set 'Enforce password history' to '24 or more password(s)'
@@ -60,7 +66,7 @@ Microsoft Teams customers will see "Restrict anonymous users from joining meetin
 
 The ability to create ServiceNow tickets through Secure Score by going to **Share > ServiceNow** is no longer available. Thank you for your feedback and continued support while we determine next steps.
 
-### Added three services-related improvement actions for Microsoft Defender for Endpoint (previously Microsoft Defender ATP):
+### Added three services-related improvement actions for Microsoft Defender for Endpoint:
 
 - Fix unquoted service path for Windows services
 - Change service executable path to a common protected location

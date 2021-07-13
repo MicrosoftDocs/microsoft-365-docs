@@ -127,6 +127,6 @@ The `ignoredDelimiters` flag doesn't support:
 - [Create a custom sensitive information type with Exact Data Match based classification](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
 - [Sensitive information type-entity definitions](sensitive-information-type-entity-definitions.md)
 - [Custom sensitive information types](./sensitive-information-type-learn-about.md)
-- [Overview of DLP policies](data-loss-prevention-policies.md)
+- [Learn about data loss prevention](dlp-learn-about-dlp.md)
 - [Microsoft Cloud App Security](/cloud-app-security)
 - [New-DlpEdmSchema](/powershell/module/exchange/new-dlpedmschema)
