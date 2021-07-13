@@ -16,6 +16,7 @@ ms.collection:
 ms.custom: 
 - AdminSurgePortfolio
 - okr_smb
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
@@ -46,6 +47,8 @@ Microsoft 365 groups can be accessed through mobile apps such as Outlook for iOS
 
 Group members can send as or send on behalf of the group email address if this has been [enabled by the administrator](../../solutions/allow-members-to-send-as-or-send-on-behalf-of-group.md).
 
+Microsoft 365 groups don't support nesting with other Microsoft 365 groups or with distribution or security groups.
+
 ## Distribution groups
 
 [Distribution groups](/exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups) are used for sending notifications to a group of people. They can receive external email if enabled by the administrator.
@@ -56,6 +59,8 @@ Distribution groups can be [upgraded to Microsoft 365 groups](../manage/upgrade-
 
 Distribution groups can be added to a team in Microsoft Teams.
 
+Microsoft 365 groups can't be members of distribution groups.
+
 ## Security groups
 
 [Security groups](../email/create-edit-or-delete-a-security-group.md) are used for granting access to Microsoft 365 resources, such as SharePoint. They can make administration easier because you need only administer the group rather than adding users to each resource individually.
@@ -65,6 +70,8 @@ Security groups can contain users or devices. Creating a security group for devi
 Security groups can be [configured for dynamic membership in Azure Active Directory](/azure/active-directory/users-groups-roles/groups-change-type), allowing group members or devices to be added or removed automatically based on user attributes such as department, location, or title; or device attributes such as operating system version.
 
 Security groups can be added to a team.
+
+Microsoft 365 groups can't be members of security groups.
 
 ## Mail-enabled security groups
 
@@ -84,9 +91,12 @@ Shared mailboxes include a calendar that can be used for collaboration.
 
 Users with permissions to the group mailbox can send as or send on behalf of the mailbox email address if the administrator has given that user permissions to do that. This is particularly useful for help and support mailboxes because users can send emails from "Contoso Support" or "Building A Reception Desk."
 
-Currently it's not possible to migrate a shared mailbox to a Microsoft 365 group. Is this something you want? Let us know. **[Vote here](https://go.microsoft.com/fwlink/?linkid=871518)**.
+It's not possible to migrate a shared mailbox to a Microsoft 365 group. 
 
 ## Related content
 
-[Learn about Microsoft 365 groups](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2) (article)\
-[Why you should upgrade your distribution lists to groups in Outlook](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188) (article)
+[Learn about Microsoft 365 groups](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
+
+[Upgrade distribution lists to Microsoft 365 Groups in Outlook](/microsoft-365/admin/manage/upgrade-distribution-lists)
+
+[Why you should upgrade your distribution lists to groups in Outlook](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188)

@@ -15,7 +15,7 @@ localization_priority: Normal
 ms.custom: 
   - next-gen
   - edr
-ms.date: 05/08/2021
+ms.date: 06/11/2021
 ms.collection: 
   - m365-security-compliance
   - m365initiative-defender-endpoint
@@ -38,7 +38,7 @@ ms.technology: mde
 
 EDR in block mode is also integrated with [threat & vulnerability management](next-gen-threat-and-vuln-mgt.md). Your organization's security team will get a [security recommendation](tvm-security-recommendation.md) to turn EDR in block mode on if it isn't already enabled. 
 
-:::image type="content" source="images/edrblockmode-TVMrecommendation.png" alt-text="recommendation to turn on EDR in block mode":::
+:::image type="content" source="images/enable-edr-in-block-mode.png" alt-text="recommendation to turn on EDR in block mode":::
 
 > [!NOTE]
 > To get the best protection, make sure to **[deploy Microsoft Defender for Endpoint baselines](configure-machines-security-baseline.md)**.
@@ -57,14 +57,14 @@ The following image shows an instance of unwanted software that was detected and
 > [!IMPORTANT]
 > Make sure the [requirements](#requirements-for-edr-in-block-mode) are met before turning on EDR in block mode.
 
-1. Go to the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)) and sign in. 
+1. Go to the [Microsoft 365 Defender portal](microsoft-defender-security-center.md) and sign in. 
 
 2. Choose **Settings** > **Advanced features**.
 
 3. Turn on **EDR in block mode**.
 
-> [!NOTE]
-> EDR in block mode can be turned on only in the Microsoft Defender Security Center. You cannot use registry keys, Intune, or group policies to enable or disable EDR in block mode.
+   > [!NOTE]
+   > EDR in block mode can be turned on only in the Microsoft 365 Defender portal. You cannot use registry keys, Intune, or group policies to enable or disable EDR in block mode.
 
 ## Requirements for EDR in block mode
 
@@ -72,7 +72,7 @@ The following image shows an instance of unwanted software that was detected and
 |---------|---------|
 |Permissions |Global Administrator or Security Administrator role assigned in [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal). See [Basic permissions](basic-permissions.md). |
 |Operating system     |One of the following versions: <br/>- Windows 10 (all releases) <br/>- Windows Server, version 1803 or newer <br/>- Windows Server 2019 <br/>- Windows Server 2016 (only when Microsoft Defender Antivirus is in active mode)     |
-|Windows E5 enrollment     |Windows E5 is included in the following subscriptions: <br/>- Microsoft 365 E5 <br/>- Microsoft 365 E3 together with the Identity & Threat Protection offering <br/><br/>See [Components](/microsoft-365/enterprise/microsoft-365-overview#components) and [features and capabilities for each plan](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans).       |
+|Windows E5 enrollment     |Windows E5 is included in the following subscriptions: <br/>- Microsoft 365 E5 <br/>- Microsoft 365 E3 together with the Microsoft 365 E5 Security Add-on <br/><br/>See [Components](/microsoft-365/enterprise/microsoft-365-overview#components) and [features and capabilities for each plan](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans).       |
 |Microsoft Defender Antivirus  |Microsoft Defender Antivirus must be installed and running in either active mode or passive mode. (You can use Microsoft Defender Antivirus alongside a non-Microsoft antivirus solution.) [Confirm Microsoft Defender Antivirus is in active or passive mode](#how-do-i-confirm-microsoft-defender-antivirus-is-in-active-or-passive-mode). |
 |Cloud-delivered protection |Make sure Microsoft Defender Antivirus is configured such that [cloud-delivered protection is enabled](enable-cloud-protection-microsoft-defender-antivirus.md). |
 |Microsoft Defender Antivirus antimalware client |Make sure your client is up to date. Using PowerShell, run the [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus) cmdlet as an administrator. In the **AMProductVersion** line, you should see **4.18.2001.10** or above. |

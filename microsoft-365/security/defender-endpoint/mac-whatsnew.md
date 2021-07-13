@@ -33,6 +33,16 @@ ms.technology: mde
 > [!IMPORTANT]
 > On macOS 11 (Big Sur), Microsoft Defender for Endpoint requires additional configuration profiles. If you are an existing customer upgrading from earlier versions of macOS, make sure to deploy the additional configuration profiles listed on [this page](mac-sysext-policies.md).
 
+## 101.34.20 (20.121051.13420.0)
+
+- [Device control for macOS](mac-device-control-overview.md) is now in general availability
+- Addressed an issue where a quick scan could not be started from the status menu on macOS 11 (Big Sur)
+- Other bug fixes
+
+## 101.32.69 (20.121042.13269.0)
+
+- Addressed an issue where concurrent access to the keychain from Microsoft Defender for Endpoint and other applications can lead to keychain corruption.
+
 ## 101.29.64 (20.121042.12964.0)
 
 - Starting with this version, threats detected during on-demand antivirus scans triggered through the command-line client are automatically remediated. Threats detected during scans triggered through the user interface still require manual action.
@@ -158,7 +168,7 @@ ms.technology: mde
 
 ## 101.00.31
 
-- Improved [product onboarding experience for Intune users](https://docs.microsoft.com/mem/intune/apps/apps-advanced-threat-protection-macos)
+- Improved [product onboarding experience for Intune users](/mem/intune/apps/apps-advanced-threat-protection-macos)
 - Antivirus [exclusions now support wildcards](mac-exclusions.md#supported-exclusion-types)
 - Added the ability to trigger antivirus scans from the macOS contextual menu. You can now right-click a file or a folder in Finder and select **Scan with Microsoft Defender for Endpoint**
 - In-place product downgrades are now explicitly disallowed by the installer. If you need to downgrade, first uninstall the existing version and reconfigure your device
