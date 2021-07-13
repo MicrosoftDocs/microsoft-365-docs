@@ -97,7 +97,7 @@ This feature enables you to block potentially malicious files in your network. B
 
 To turn **Allow or block** files on:
 
-1. In the navigation pane, select **Settings** > **Advanced features** > **Allow or block file**.
+1. In the navigation pane, select **Settings** > **Endpoints** > **General** > **Advanced features** > **Allow or block file**.
 
 1. Toggle the setting between **On** and **Off**.
 
@@ -157,7 +157,7 @@ The integration with Microsoft Defender for Identity allows you to pivot directl
 
 This feature is only available if you have an active Office 365 E5 or the Threat Intelligence add-on. For more information, see the Office 365 Enterprise E5 product page.
 
-When you turn this feature on, you'll be able to incorporate data from Microsoft Defender for Office 365 into Microsoft Defender Security Center to conduct a comprehensive security investigation across Office 365 mailboxes and Windows devices.
+When you turn this feature on, you'll be able to incorporate data from Microsoft Defender for Office 365 into Microsoft 365 Defender to conduct a comprehensive security investigation across Office 365 mailboxes and Windows devices.
 
 > [!NOTE]
 > You'll need to have the appropriate license to enable this feature.

@@ -1,6 +1,6 @@
 ---
-title: Access the Microsoft Defender Security Center MSSP customer portal
-description: Access the Microsoft Defender Security Center MSSP customer portal
+title: Access the Microsoft 365 Defender MSSP customer portal
+description: Access the Microsoft 365 Defender MSSP customer portal
 keywords: managed security service provider, mssp, configure, integration
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,7 +18,7 @@ ms.topic: article
 ms.technology: mde
 ---
 
-# Access the Microsoft Defender Security Center MSSP customer portal
+# Access the Microsoft 365 Defender MSSP customer portal
 
 **Applies to:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)

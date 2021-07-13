@@ -22,7 +22,7 @@ This article describes the key concepts and metrics of the predictive coding too
 
 ## Confidence level
 
-The confidence level is an advanced setting when you create a predictive coding model. It defines that the model's performance metrics (for example, richness, precision, and recall) fall within a specified range (that's determined the margin of error defined for the model) that's representative of the true values of the prediction scores the model assigns to items in the review set.​ The values for the confidence level and margin of error also help determine how many items are included in the control set. The default value for the confidence level is 0.95 or 95%.
+The confidence level is an advanced setting when you create a predictive coding model. It defines that the model's performance metrics (for example, richness, precision, and recall) fall within a specified range (that's determined the margin of error defined for the model) that's representative of the true values of the prediction scores the model assigns to items in the review set. The values for the confidence level and margin of error also help determine how many items are included in the control set. The default value for the confidence level is 0.95 or 95%.
 
 ## Control set
 
@@ -31,18 +31,22 @@ A control set is used during the training process of a predictive coding model. 
 ## Control set confusion matrix
 
 After you complete a training round, the model assigns a prediction score to the 10 items in the control set that you labeled during the training round. The model compares the prediction score of these 10 items with the actual label that you assigned to the item during the training round. Based on this comparison, the model identifies the following classifications to assess the model's prediction performance:
-  
-  |          |Model predicts item is relevant |Model predicts item is not relevant |
-  |:---------|:---------|:---------|
-  |**Reviewer labels item as relevant**| True positive| False positive |
-  |**Reviewer labels item as not relevant**| False negative |True negative |
-  ||||
 
-  Based on these comparisons, the model derives values for the F-score, precision, and recall metrics and the margin of error for each one. The number of each of the confusion types from the matrix is displayed on the flyout page for a training round.
+<br>
+
+****
+
+|Label|Model predicts item is relevant|Model predicts item is not relevant|
+|---|---|---|
+|**Reviewer labels item as relevant**|True positive|False positive|
+|**Reviewer labels item as not relevant**|False negative|True negative|
+|
+
+Based on these comparisons, the model derives values for the F-score, precision, and recall metrics and the margin of error for each one. The number of each of the confusion types from the matrix is displayed on the flyout page for a training round.
 
 ## F-score
 
-The F-score is a weighted average of the scores for the precision and recall metrics.  The range of scores for this metric is from **0** to **1**. A score closer to **1** indicates the model will more accurately detect relevant items.​ The F-score metric is displayed on the model dashboard and on the flyout page for each training round.
+The F-score is a weighted average of the scores for the precision and recall metrics.  The range of scores for this metric is from **0** to **1**. A score closer to **1** indicates the model will more accurately detect relevant items. The F-score metric is displayed on the model dashboard and on the flyout page for each training round.
 
 ## Margin of error
 
@@ -54,7 +58,7 @@ Model stability indicates the model's ability to accurately predict whether a do
 
 ## Overturn rate
 
-The overturn rate is the percentage of items in the review set where the prediction score changed between training rounds.​ A model is considered stable when the overturn rate is less than 5%. The overturn rate metric is displayed on the model dashboard and on the flyout page for each training round. The overturn rate for the first training round is zero because there isn't a previous prediction score to overturn.
+The overturn rate is the percentage of items in the review set where the prediction score changed between training rounds. A model is considered stable when the overturn rate is less than 5%. The overturn rate metric is displayed on the model dashboard and on the flyout page for each training round. The overturn rate for the first training round is zero because there isn't a previous prediction score to overturn.
 
 ## Precision
 

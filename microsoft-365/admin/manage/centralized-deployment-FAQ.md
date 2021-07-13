@@ -39,7 +39,7 @@ Centralized Deployment supports assignments to individual users, groups, and eve
 
 It is better to use groups assignments instead of individual user assignment for easier management.
  
-For more details, see [User and Group assignments](./centralized-deployment-of-add-ins.md?view=o365-worldwide#user-and-group-assignments).  
+For more details, see [User and Group assignments](./centralized-deployment-of-add-ins.md#user-and-group-assignments).  
    
 ## How long does it take for add-ins to show up for all users?  
 
@@ -96,4 +96,4 @@ Global Admin is the recommended role with complete access to add-in management l
  
 Your subscription comes with a set of admin roles that you can assign to other users in your organization. Each admin role maps to common business functions and gives people in your organization permissions to perform specific tasks in the Microsoft 365 admin center.  
  
-For more information, see [Assign admin roles](../add-users/assign-admin-roles.md?view=o365-worldwide). 
+For more information, see [Assign admin roles](../add-users/assign-admin-roles.md). 

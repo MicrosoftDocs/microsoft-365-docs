@@ -394,7 +394,7 @@
             - name: Privacy and security
               href: basic-mobility-security/privacy-and-security.md
             - name: Frequently asked questions
-              href: basic-mobility-security/frequently-asked-questions.md
+              href: basic-mobility-security/frequently-asked-questions.yml
             - name: Wipe mobile devices
               href: basic-mobility-security/wipe-mobile-device.md
             - name: Turn off Basic Mobility and Security
