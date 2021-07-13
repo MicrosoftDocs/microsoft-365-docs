@@ -36,23 +36,7 @@ If you're ordering a device from HP that has been approved as an [exception](cu
 - Global: mmd@hp.com
 
 ### Lenovo
-When you order devices from Lenovo for use in Microsoft Managed Desktop, you'll need to indicate a specific part number included as part of the order. Contact your Lenovo sales representative or Lenovo Channel Partner and ask them to create a "*special bid model*" with a system that meets our [device requirements](device-requirements.md#minimum-requirements). To include a pre-loaded image compatible with Microsoft Managed Desktop, ask the sales representative to reference "*system building block part number SBB0Q94938 – MMD Enablement*."
-
-The following products are currently enabled for Microsoft Managed Desktop support:
-
-- L13 Gen 1
-- L13 Yoga Gen 1
-- L14 Gen 1 (Intel)
-- L14 Gen 1 (AMD)
-- L15 Gen 1 (Intel)
-- L15 Gen 1 (AMD)
-- X1 Carbon Gen 8
-- X1 Yoga Gen 5
-- T14 Gen 1 (Intel)
-- T14 Gen 1 (AMD)
-- T15 Gen 1
-- X13 Gen 1 (Intel)
-
+When you order devices from Lenovo for use in Microsoft Managed Desktop, you'll need to indicate a specific part number included as part of the order. Contact your Lenovo sales representative or Lenovo Channel Partner and ask them to create a "*special bid model*" with a system that meets our [device requirements](device-requirements.md#minimum-requirements). To include a pre-loaded image compatible with Microsoft Managed Desktop, ask the sales representative to reference "*system building block part number SBB0Q94938 – MMD Enablement*." Please work with your Lenovo sales representative or Lenovo Channel Partner for recommended services, support, and imaging services.
 
 ### Microsoft
 All Microsoft devices that meet device requirements come with an image that works with Microsoft Managed Desktop. No other steps are required.
