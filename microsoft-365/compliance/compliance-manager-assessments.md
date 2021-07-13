@@ -69,6 +69,8 @@ You can create a group while creating a new assessment. Groups can't be created 
 
 ## Create assessments
 
+To create an assessment, you will use a wizard to select the template it should use and set the assessment’s properties. Templates contain the controls and action recommendations for the assessment, based on certifications for different privacy regulations and standards. Your organization’s available templates may include one or more templates that were included as part of your licensing agreement, along with any additional premium templates that you have purchased. Each template, whether included or premium, exists in two versions: one for use with Microsoft 365, and a universal version that can be tailored to other products that you use. To learn more about templates, see [Working with assessment templates](compliance-manager-templates.md).
+
 > [!NOTE]
 > Only users who hold a Global Administrator, Compliance Manager Administration, or Compliance Manager Assessor role can create and modify assessments. Learn more about [roles and permissions](compliance-manager-setup.md#set-user-permissions-and-assign-roles).
 
@@ -130,7 +132,7 @@ Beneath the chart, a table lists detailed information about each control within 
 - **Control ID**: the control’s identification number, assigned by its corresponding regulation, standard, or policy
 - **Points achieved**: the number of points earned by completing actions, out of the total number of achievable points 
 - **Your actions**: the number of your actions completed out of the total number of actions to be done
-- **Microsoft actions**: the number of actions completed by Microsoft 
+- **Microsoft actions**: the number of actions completed by Microsoft
 
 To view a control’s details, select it from its row in the table. The control details page shows a graph indicating the test status of the actions within that control. A table below the graph shows key improvement actions for that control.
 
