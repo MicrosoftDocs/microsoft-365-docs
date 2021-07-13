@@ -269,8 +269,6 @@ For policy deployment in Intune, the account must have permissions to create, ed
       ./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyGroups/%7b9b28fae8-72f7-4267-a1a5-685f747a7146%7d/GroupData
 
     - Data Type: String (XML file)
-    
-      :::image type="content" source="images/xml-data-type-string.png" alt-text="The xml file for the STRING data type":::
 
 2. For each policy, also create an OMA-URI:
 
@@ -284,7 +282,6 @@ For policy deployment in Intune, the account must have permissions to create, ed
 
     - Data Type: String (XML file)
 
-      :::image type="content" source="images/xml-data-type-string-2.png" lightbox="images/xml-data-type-string-2.png" alt-text="Display of XML file for the STRING data type":::
 
 ## Deploying and managing policy by using Intune user interface
 
