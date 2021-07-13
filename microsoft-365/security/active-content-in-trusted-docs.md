@@ -31,23 +31,29 @@ The updated Trust Center logic is described in the following diagram:
 
 1. A user opens an Office document that contains active content.
 
-2. If the document is from a trusted location, the document is opened. If the document is not from a trusted location, the evaluation continues.
+2. If the document is from a trusted location, the document is opened with the active content enabled. If the document is not from a trusted location, the evaluation continues.
 
 3. This is where the updated behavior takes effect:
-   - Previously, the next evaluated setting would have been if the user had identified this document as a trusted document. If they did, the document would open.
-   - Now, whether or not the user identified the document as a trusted document is not considered here (now at step 6).
+   - Previously, the next evaluated setting would have been if the user had identified this document as a trusted document. If they did, the document would open with the active content enabled.
+   - Now, whether or not the user identified the document as a trusted document is not considered here (now at step 8).
 
-     Cloud policies are checked to see if this type of active content is allowed or blocked. If the content is blocked, the opening of the document is blocked with a notification in the trust bar. If the active content is not blocked, the evaluation continues.
+     This is the fundamental change in behavior: cloud policies (step 4), group policies (step 6) and local settings (step 7) are checked _before_ the user designation of a trusted document is even considered. If any of those steps block access to the active content **and** none of the steps allow user overrides, then user identification of the document as a trusted document is basically irrelevant.
 
-     This is the fundamental change in behavior: cloud policies (this step), group policies (step 4) and local settings (step 5) are checked _before_ the user designation of a trusted document is even considered. If any of those steps block access to the active content **and** none of the steps allow user overrides, then user identification of the document as a trusted document is basically irrelevant.
+4. Cloud policies are checked to see if this type of active content is allowed or blocked. If the active content is not blocked, the evaluation continues to step 6.
 
-4. Group policies are checked to see if this type of active content is allowed or blocked. If the content is blocked, the opening of the document is blocked with a notification in the trust bar. If the active content is not blocked, the evaluation continues.
+   If the active content is blocked by policy, the experience is described in step 5.
 
-5. Local settings are checked to see if this type of active content is allowed or blocked. If the content is blocked, the opening of the document is blocked with a notification in the trust bar. If the active content is not blocked, the evaluation continues.
+5. The opening of the document is blocked with a notification in the trust bar. What happens next is controlled by the user override settings in the policy:
+   a. **User override not allowed**: The user can't open the document and the evaluation stops.
+   b. **User override allowed**: The user can click the link in the trust bar to open the document with the active content enabled.
 
-6. If the user has previously identified the document as a trusted document, the document is opened. If not, the evaluation continues.
+6. Group policies are checked to see if this type of active content is allowed or blocked. If the active content is not blocked, the evaluation continues to step 7.
 
-7. If any of the previously evaluated policies block the active content **and** that policy is configured with an override option, the document is blocked with a notification in the trust bar **along with** the option to open the document.
+   If the active content is blocked by policy, the experience is described in step 5.
+
+7. Local settings are checked to see if this type of active content is allowed or blocked. If the active content is blocked, the opening of the document is blocked with a notification in the trust bar. If the active content is not blocked, the evaluation continues.
+
+8. If the user previously identified the document as a trusted document, the document is opened with the active content enabled. If not, the opening of the document is blocked.
 
 ## What is a trusted document?
 
@@ -71,8 +77,7 @@ Admins have many ways to configure Office in an organization. For example:
 - **Office policies in Intune**: Use the Intune Settings catalog or Administrative templates to deploy HKCU policies to Windows 10 PCs: In the [MEM admin center](https://endpoint.microsoft.com/#blade/Microsoft_Intune_DeviceSettings/DevicesMenu/configurationProfiles) under **Devices** \> **Configuration Profiles**.
   - ***Administrative Templates***: See instructions to use Windows 10 templates to configure [Administrative Templates](/mem/intune/configuration/administrative-templates-windows).
   - ***Settings catalog (preview)***: See instructions to use the [Settings catalog (preview)](/mem/intune/configuration/settings-catalog).
-- **Group policy**: Use your on-premise AD DS to deploy Group Policy Objects (GPO) to users and computers. To create a GPO for this setting, download the latest 
-[Administrative Template files (ADMX/ADML) and Office Customization Tool for Microsoft 365 Apps for enterprise, Office 2019, and Office 2016](https://www.microsoft.com/download/details.aspx?id=49030).
+- **Group policy**: Use your on-premise Active Directory to deploy group policy objects (GPOs) to users and computers. To create a GPO for this setting, download the latest [Administrative Template files (ADMX/ADML) and Office Customization Tool for Microsoft 365 Apps for enterprise, Office 2019, and Office 2016](https://www.microsoft.com/download/details.aspx?id=49030).
 
 ## Admin options for restricting active content
 
