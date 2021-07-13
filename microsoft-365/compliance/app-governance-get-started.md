@@ -13,7 +13,7 @@ localization_priority: Priority
 search.appverid: 
 - MOE150
 - MET150
-description: "Implement Microsoft app governance capabilities to govern your apps."
+description: "Get started with app governance capabilities to govern your apps."
 ---
 
 # Get started with app governance (in preview)
