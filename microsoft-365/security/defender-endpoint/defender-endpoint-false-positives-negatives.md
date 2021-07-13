@@ -136,7 +136,7 @@ When you're done reviewing and undoing actions that were taken as a result of fa
 
 ### Review completed actions
 
-1. Go to the Action center (<https://security.microsoft.com/action-center>) and sign in.
+1. In the left navigation pane of the Microsoft 365 Defender portal, click **Action center**.
 
 2. Select the **History** tab to view a list of actions that were taken.
 
@@ -144,7 +144,7 @@ When you're done reviewing and undoing actions that were taken as a result of fa
 
 ### Restore a quarantined file from the Action Center
 
-1. Go to the Action center (<https://security.microsoft.com/action-center>) and sign in.
+1. In the left navigation pane of the Microsoft 365 Defender portal, click **Action center**.
 
 2. On the **History** tab, select an action that you want to undo.
 
@@ -152,7 +152,7 @@ When you're done reviewing and undoing actions that were taken as a result of fa
 
 ### Undo multiple actions at one time
 
-1. Go to the Action center (<https://security.microsoft.com/action-center>) and sign in.
+1. In the left navigation pane of the Microsoft 365 Defender portal, click **Action center**.
 
 2. On the **History** tab, select the actions that you want to undo.
 
@@ -163,7 +163,7 @@ When you're done reviewing and undoing actions that were taken as a result of fa
 > [!div class="mx-imgBorder"]
 > ![Quarantine file](images/autoir-quarantine-file-1.png)
 
-1. Go to the Action center (<https://security.microsoft.com/action-center>) and sign in.
+1. In the left navigation pane of the Microsoft 365 Defender portal, click **Action center**.
 
 2. On the **History** tab, select a file that has the Action type **Quarantine file**.
 

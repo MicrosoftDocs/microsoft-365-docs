@@ -97,11 +97,10 @@ Grant-CsExternalAccessPolicy -Identity "Alex Darrow" -PolicyName $Null
 ```
 
 This command sets the name of the external access policy assigned to Alex to a null value ($Null). Null means "nothing". In other words, no external access policy is assigned to Alex. When no external access policy is assigned to a user, that user then gets managed by the global policy.
-  
 
 ## Managing large numbers of users
 
-To manage large numbers of users (1000 or more), you need to batch the commands via a script block using the [Invoke-Command](/powershell/module/microsoft.powershell.core/invoke-command?view=powershell-7) cmdlet.  In previous examples, each time a cmdlet is executed, it must set up the call and then wait for the result before sending it back.  When using a script block, this allows the cmdlets to be executed remotely, and once completed, send the data back. 
+To manage large numbers of users (1000 or more), you need to batch the commands via a script block using the [Invoke-Command](/powershell/module/microsoft.powershell.core/invoke-command) cmdlet.  In previous examples, each time a cmdlet is executed, it must set up the call and then wait for the result before sending it back.  When using a script block, this allows the cmdlets to be executed remotely, and once completed, send the data back.
 
 ```powershell
 $users = Get-CsOnlineUser -Filter { ClientPolicy -eq $null } -ResultSize 500

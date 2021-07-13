@@ -107,8 +107,8 @@ These are the specific network insights for each office location:
 - [Low download speed from SharePoint front door](../enterprise/office-365-network-mac-perf-insights.md#low-download-speed-from-sharepoint-front-door)
 - [China user optimal network egress](../enterprise/office-365-network-mac-perf-insights.md#china-user-optimal-network-egress)
 
->[!IMPORTANT]
->Network insights, performance recommendations and assessments in the Microsoft 365 Admin Center is currently in preview status. It is only available for Microsoft 365 tenants that have been enrolled in the feature preview program.
+> [!IMPORTANT]
+> Network insights, performance recommendations and assessments in the Microsoft 365 Admin Center is currently in preview status. It is only available for Microsoft 365 tenants that have been enrolled in the feature preview program.
 
 For more information, see [Microsoft 365 Network Insights](../enterprise/office-365-network-mac-perf-insights.md).
 
