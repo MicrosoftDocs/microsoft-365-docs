@@ -20,9 +20,9 @@ description: "Implement Microsoft app governance capabilities to govern your app
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
-Cyberattacks have become increasingly sophisticated in the ways they exploit the apps you have deployed in your on-premises and cloud infrastructures to establish a starting point for privilege escalation, lateral movement, and exfiltration of your data. To understand the potential risks and stop these types of attacks, you need to gain clear visibility into your organization’s app compliance posture to quickly identify when an app exhibits anomalous behaviors and to respond when these behaviors present risks to your environment, data, and users.
+Cyberattacks have become increasingly sophisticated in the ways they exploit the apps you have deployed in your on-premises and cloud infrastructures, establishing a starting point for privilege escalation, lateral movement, and exfiltration of your data. To understand the potential risks and stop these types of attacks, you need to gain clear visibility into your organization’s app compliance posture to quickly identify when an app exhibits anomalous behaviors and to respond when these behaviors present risks to your environment, data, and users.
 
-The app governance add-on feature to Microsoft Cloud App Security is a security and policy management capability designed for OAuth-enabled apps that access Microsoft 365 data through Microsoft Graph APIs. App governance delivers full visibility, oversight, and governance into how these apps and their users access, use, and share your sensitive data stored in Microsoft 365 through automated app-specific services and open Internet authentication protocols.
+The app governance add-on feature to Microsoft Cloud App Security is a security and policy management capability designed for OAuth-enabled apps that access Microsoft 365 data through Microsoft Graph APIs. App governance delivers full visibility, remediation, and governance into how these apps and their users access, use, and share your sensitive data stored in Microsoft 365 through actionable insights and automated policy alerts and actions.
 
 <!--
 The scale of ongoing cybersecurity incidents affecting large enterprises and smaller businesses highlights the dangers of supply chain attacks and the need to strengthen the security and compliance posture of every organization. Accelerated cloud adoption with Microsoft 365 and its rich application ecosystem are constantly growing. Attackers are gaining organizational footholds through applications because:
@@ -50,12 +50,12 @@ Microsoft allows developers to build cloud applications using Azure Active Direc
 
 To see the app governance dashboard, go to [https://compliance.microsoft.com/appgovernance](https://compliance.microsoft.com/appgovernance). Note that your sign-in account must have one of the [administrator roles](app-governance-get-started.md#administrator-roles) to view any app governance data.
 
-## App governance integration with Azure Active Directory and Microsoft Cloud App Security
+## App governance integration with Azure AD and Microsoft Cloud App Security
 
 App governance, Azure AD, and Microsoft Cloud App Security collect and provide different data sets:
 
-- Azure AD provides foundational app metadata and detailed information on sign-ins to apps.
 - App governance provides detailed information about an app’s activity at the API level.
+- Azure AD provides foundational app metadata and detailed information on sign-ins to apps.
 - Microsoft Cloud App Security provides app risk information.
 
 By sharing information across app governance, Azure AD, and Microsoft Cloud App Security, you can display aggregate information in one portal and easily link to another portal for more information. Here are some examples:
@@ -64,10 +64,11 @@ By sharing information across app governance, Azure AD, and Microsoft Cloud App 
 
   From the app governance portal, you can see the aggregated sign-in activity for each app and link back to the Azure Active Directory admin center for the details of sign-in events.
 
+<!--
 - App API usage information in the Azure Active Directory admin center:
 
   From the Azure Active Directory admin center, you can see the aggregated app usage information and link to the app governance portal for the details of app usage.
-
+-->
 - API usage information in the Microsoft Cloud App Security portal:
 
   From the Microsoft Cloud App Security portal, you can see API usage level and aggregate data transfer and link to the app governance portal for the details.

@@ -85,27 +85,26 @@ For additional information about each role, see [Administrator role permissions]
 
 ## Add app governance to your Microsoft 365 account
 
-1. Navigate to your Microsoft 365 admin center [Microsoft 365 admin center](https://admin.microsoft.com) and click on Add-ons.
-1. In the app governance card, click Details.
+For existing Microsoft 365 customers:
+
+1. In your [Microsoft 365 admin center](https://admin.microsoft.com), navigate to **Billing - Purchase services** and click **Add-ons**.
+1. In the app governance card, click **Details**.
 1. Click **Start free trial**.
 1. Complete the requested information to add app governance to your selected tenant. I you are a new customer, you must first provide information to establish an account and create a tenant for your trial period. Once this is done you can add app governance to the trial.
 
-## Submit feedback on app governance 
+For new Microsoft 365 customers:
 
-In order to submit feedback on the app governance add-on to Microsoft Cloud App Security:
+1. At the top of this page, click the **Free Account** button.
+1. Under **Try Microsoft 365 for business** click **Try 1 month free**.
 
-- In the lower right corner on any page you’d like to submit feedback on, click the black feedback button.
+For both:
 
-- If submitting feature feedback:
-  1. Provide a star rating and comments in the text box  
-  1. If you select **Include this screenshot** a screenshot of the page you are on will be shared.  
-  1. If you select “You can contact me about this feedback”, your email address will be shared with Microsoft.
-  1. Select **Submit** to send your feedback.
+1. In the sign-up portal, provide your email address to use for the trial. If you are an existing customer, use the email associated with your account. Click **Next**
+1. Once you have signed in, click **Try now** to get the free trial.
+1. Click **Continue** to close page and begin trial setup. For new app governance customers, it will take up to two hours for your app governance instance to become available. For existing customers, there will be no interruption of existing services.
+  > [!NOTE]
+If you do not already have an account you will be prompted to set up a new account before you can proceed with the trial.
 
-- If you are submitting feedback on malicious app activity:
-
-  1. Provide a five star rating (it’s a required field).
-  1. In the text box, type the app name and app ID of the app you are flagging as malicious and any supporting detail you can provide.
-  1. If you select “Include this screenshot” a screenshot of the page you are on will be shared.  
-  1. If you select “You can contact me about this feedback”, your email address will be shared with Microsoft.
-  1. Select Submit to send your feedback.
+1. Enter in an available domain name for your AAD tenant and click **Check availability**. You will automatically be assigned an Admin role (if you don’t have an existing role for app governance) and can always change the domain name and/or purchase more tenants later through the Microsoft 365 admin center.
+1. Enter the username and password you would like to use to login to your account. Click **Sign up**.
+1. Click **Get started** to go to the app governance portal or **Manage your subscription** to go to the Microsoft 365 admin center.
