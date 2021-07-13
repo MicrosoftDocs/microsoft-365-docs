@@ -21,6 +21,7 @@ ms.technology: mde
 
 # Onboarding non-persistent virtual desktop infrastructure devices
 
+
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
@@ -58,9 +59,9 @@ The following steps will guide you through onboarding VDI devices and will highl
 
 ### For Windows 10 or Windows Server 2019
 
-1.  Open the VDI configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from [Microsoft 365 Defender](https://securitycenter.windows.com/):
+1.  Open the VDI configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from the [Microsoft 365 Defender portal](https://security.microsoft.com/):
 
-    1.  In the navigation pane, select **Settings** > **Onboarding**.
+    1. In the navigation pane, select **Settings** > **Endpoints** > **Device management** > **Onboarding**.
 
     1. Select Windows 10 as the operating system.
 

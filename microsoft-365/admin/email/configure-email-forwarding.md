@@ -44,6 +44,8 @@ Before you set up email forwarding, note the following:
 
 You must be an Exchange administrator or Global administrator in Microsoft 365 to do these steps. For more information, see the topic [About admin roles](../add-users/about-admin-roles.md).
 
+::: moniker range="o365-worldwide"
+
 1. In the admin center, go to the **Users** \> **[Active users](https://go.microsoft.com/fwlink/p/?linkid=834822)** page.
 
 2. Select the name of the user whose email you want to forward, then open the properties page.

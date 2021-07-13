@@ -45,7 +45,7 @@ Step 1: Create a third-party application
 Step 2: Get access and refresh tokens from your customer's tenant
  
 Step 3: allow your application on Microsoft 365 Defender
- 
+
 ### Step 1: Create an application in Azure Active Directory (Azure AD)
  
 You'll need to create an application and grant it permissions to fetch alerts from your customer's Microsoft Defender for Endpoint tenant.
@@ -163,7 +163,7 @@ You'll need to have **Manage portal system settings** permission to allow the ap
 
 1. Go to `https://security.microsoft.com?tid=<customer_tenant_id>` (replace \<customer_tenant_id\> with the customer's tenant ID.
 
-2. Click **Settings** > **Endpoints** > **SIEM**. 
+2. Click **Settings** > **Endpoints** > **APIs** > **SIEM**. 
 
 3. Select the **MSSP** tab.
 

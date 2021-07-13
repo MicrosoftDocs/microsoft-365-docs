@@ -60,9 +60,10 @@ It's important to understand the following requirements prior to creating indica
 1. In the navigation pane, select **Settings** > **Endpoints** > 
 **Indicators** (under **Rules**).  
 
-2. Select the **Certificate** tab.
 
-3. Select **Add indicator**.
+2. Select the **Certificates** tab.
+
+3. Select **Add item**.
 
 4. Specify the following details:
    - Indicator - Specify the entity details and define the expiration of the indicator.

@@ -51,6 +51,7 @@ This scenario requires placing the script in a golden image and uses local group
 
 Use the instructions in [Onboard non-persistent virtual desktop infrastructure (VDI) devices](configure-endpoints-vdi.md#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices).
 
+
 Follow the instructions for a single entry for each device.
 
 #### *Scenario 2: Using domain group policy*

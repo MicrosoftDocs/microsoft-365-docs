@@ -182,13 +182,13 @@ When approved, the requested devices will be added to your lab set up and you’
 Use the test devices to run your own attack simulations by connecting to them. 
 
 You can simulate attack scenarios using:
-- The ["Do It Yourself" attack scenarios](https://securitycenter.windows.com/tutorials)
+- The ["Do It Yourself" attack scenarios](https://security.microsoft.com/tutorials/all)
 - Threat simulators
 
 You can also use [Advanced hunting](advanced-hunting-overview.md) to query data and [Threat analytics](threat-analytics.md) to view reports about emerging threats.
 
 ### Do-it-yourself attack scenarios
-If you are looking for a pre-made simulation, you can use our ["Do It Yourself" attack scenarios](https://securitycenter.windows.com/tutorials). These scripts are safe, documented, and easy to use. These scenarios will reflect Defender for Endpoint capabilities and walk you through investigation experience.
+If you are looking for a pre-made simulation, you can use our ["Do It Yourself" attack scenarios](https://security.microsoft.com/tutorials/all). These scripts are safe, documented, and easy to use. These scenarios will reflect Defender for Endpoint capabilities and walk you through investigation experience.
 
 
 >[!NOTE]

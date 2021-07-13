@@ -165,7 +165,7 @@ Please see the following guidance to eliminate the wildcard (*) requirement for 
 
 1. Onboard a previous operating system with the Microsoft Monitoring Agent (MMA) into Defender for Endpoint (for more information, see [Onboard previous versions of Windows on Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2010326) and [Onboard Windows servers](configure-server-endpoints.md#windows-server-2008-r2-sp1-windows-server-2012-r2-and-windows-server-2016).
 
-2.	Ensure the machine is successfully reporting into the Microsoft 365 Defender portal.
+2. Ensure the machine is successfully reporting into the Microsoft 365 Defender portal.
 
 3. Run the TestCloudConnection.exe tool from “C:\Program Files\Microsoft Monitoring Agent\Agent” to validate the connectivity and to see the required URLs for your specific workspace.
 
@@ -173,8 +173,7 @@ Please see the following guidance to eliminate the wildcard (*) requirement for 
 
     ![Image of administrator in Windows PowerShell](images/admin-powershell.png)
 
-
-The wildcards (*) used in *.ods.opinsights.azure.com, *.oms.opinsights.azure.com, and *.agentsvc.azure-automation.net URL endpoints can be replaced with your specific Workspace ID. The Workspace ID is specific to your environment and workspace and can be found in the Onboarding section of your tenant within the Microsoft 365 Defender portal.
+The wildcards (\*) used in \*.ods.opinsights.azure.com, \*.oms.opinsights.azure.com, and \*.agentsvc.azure-automation.net URL endpoints can be replaced with your specific Workspace ID. The Workspace ID is specific to your environment and workspace and can be found in the Onboarding section of your tenant within the Microsoft 365 Defender portal.
 
 The \*.blob.core.windows.net URL endpoint can be replaced with the URLs shown in the "Firewall Rule: \*.blob.core.windows.net" section of the test results.
 
