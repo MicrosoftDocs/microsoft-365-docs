@@ -86,8 +86,8 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Zero Trust Guidance Center
-            url: /security/zero-trust         
+          - text: Secure data with Zero Trust
+            url: /security/zero-trust/data         
           - text: Deploy information protection for data privacy regulations
             url: ../solutions/information-protection-deploy.md
           - text: Information protection and compliance illustrations
