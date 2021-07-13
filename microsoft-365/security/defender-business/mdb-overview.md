@@ -50,7 +50,7 @@ Next-generation protection includes antimalware and antivirus protection — on 
 - Cloud-delivered protection, which includes near-instant detection and blocking of new and emerging threats. As threats are detected, they’re sent to the cloud for immediate analysis. If they’re determined to be malicious, they’re logged as such, and are blocked immediately. Detection, blocking, analysis, and determination happens almost instantly. Other users/customers (in addition to your organization) benefit from these capabilities, too, as the newly identified threats are now blocked on their devices.
 - Dedicated protection and product updates, including updates related to Microsoft Defender Antivirus. Microsoft works continuously to deliver updates that include antimalware, antivirus, and security intelligence updates. 
 
-To learn more, see [Next-generation protection in Windows](../defender-endpoint/microsoft-defender-antivirus-in-windows-10.md).
+To learn more, see [Next-generation protection](../defender-endpoint/next-generation-protection.md).
 
 ## Attack surface reduction
 
