@@ -28,7 +28,7 @@ As you probably already know, Microsoft offers a variety of cloud solutions and 
 
 <br/>
 
-| Feature/Capability | Microsoft Defender for business | [Microsoft 365 Business Premium](../../business/microsoft-365-business-overview.md) |
+| Feature/Capability | [Microsoft Defender for business](mdb-overview.md) | [Microsoft 365 Business Premium](../../business/microsoft-365-business-overview.md) |
 |:---|:---|:---|
 | Antispam protection | Yes (for devices) | Yes (for Microsoft 365 email content, such as messages and attachments) |
 | Antimalware protection | Yes (for devices) | Yes (for Microsoft 365 email content, such as messages and attachments) |
