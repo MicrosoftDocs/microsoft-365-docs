@@ -31,7 +31,7 @@ With app governance visibility and insights, you can see:
 >Azure-only apps that are not granted permissions to access Microsoft 365 resources are not displayed in app governance.
 >
 
-See [administrator roles](app-governance-get-started.md#Administrator_roles) for an overview of required administrator roles for visibility and insights.
+See [administrator roles](app-governance-get-started.md#Administrator-roles) for an overview of required administrator roles for visibility and insights.
 
 <!--
 From messaging doc, page 21:
@@ -78,4 +78,4 @@ You can also:
 
 ## Next step
 
-[Get started with application insights.](mapg-visibility-insights-get-started.md)
+[Get started with application insights.](app-governance-visibility-insights-get-started.md)

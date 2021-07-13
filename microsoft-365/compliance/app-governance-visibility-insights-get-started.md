@@ -38,11 +38,11 @@ The dashboard contains a summary of the components of the Microsoft 365 app ecos
   
   - **All categories**: Sorts across all available categories.
   - **High privilege**: High privilege is an internally determined category based on platform machine learning and signals.
-  - **Overprivileged**: When app governance receives telemetry that indicates that a permission granted to an application has not been used in the last 90 days, that application is overpermissioned. App governance must be operating for at least 90 days to determine if any app is overpermissioned.  
+  - **Overprivileged**: When app governance receives telemetry that indicates that a permission granted to an application has not been used in the last 90 days, that application is overprivileged. App governance must be operating for at least 90 days to determine if any app is overprivileged.  
   - **Unverified**: Applications that have not received [publisher certification](https://docs.microsoft.com/azure/active-directory/develop/publisher-verification-overview) are considered unverified.
   - **App only**: [Application permissions](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#permission-types) are used by apps that can run without a signed-in user present. Apps with permissions to access data across the tenant are potentially a higher risk.
   - **New apps**: New Microsoft 365 apps that have been registered in the last seven days.  
 
 ## Next step
 
-[Get detailed insights on a specific app](mapg-visibility-insights-view-apps.md).
+[Get detailed insights on a specific app](app-governance-visibility-insights-view-apps.md).

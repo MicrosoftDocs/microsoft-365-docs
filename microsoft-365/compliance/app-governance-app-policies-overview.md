@@ -57,4 +57,4 @@ App policy templates
 
 ## Next step
 
-[Get started with app policies.](mapg-app-policies-get-started.md)
+[Get started with app policies.](app-governance-app-policies-get-started.md)
