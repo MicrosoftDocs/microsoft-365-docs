@@ -119,7 +119,7 @@ Here are the available conditions for a custom app policy.
 | App consented by | Select user(s) from list |  |
 | Consenting user’s role | Select one or more: Teams Administrator, Directory Readers, Security Reader, Compliance Administrator, Security Administrator, Helpdesk Administrator, SharePoint Administrator, Exchange Administrator, Global Reader, Global Administrator, Compliance Data Administrator, User Administrator, Service Support Administrator | Multiple selections allowed. <br><br> Any Azure AD role with assigned member should be made available in this list. |
 | Workload accessed | OneDrive and/or SharePoint and/or Exchange | Multiple selections allowed. |
-| Error rate | Error rate is greater than X% in the last 7 days |  |
+| Error rate | Error rate is greater than X% in the last 7 days, where X is an admin-defined value |  |
 ||||
 
 <!--
