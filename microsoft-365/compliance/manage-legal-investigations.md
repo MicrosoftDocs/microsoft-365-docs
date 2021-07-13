@@ -31,9 +31,9 @@ eDiscovery cases let you control who can create, access, and manage eDiscovery c
   
 - [Manage your eDiscovery workflow](./get-started-core-ediscovery.md) by creating and using eDiscovery cases for every legal investigation your organization has to undertake.
 
-- [Assign eDiscovery permissions](assign-advanced-ediscovery-permissions.md) to control who can create and manage eDiscovery cases in your organization.
+- [Assign eDiscovery permissions](assign-ediscovery-permissions.md) to control who can create and manage eDiscovery cases in your organization.
 
-- [Set up compliance boundaries](set-up-core-ediscovery-compliance-boundaries.md) to control the user content locations that eDiscovery managers can search.
+- [Set up compliance boundaries](set-up-compliance-boundaries.md) to control the user content locations that eDiscovery managers can search.
 
 - [Search for content](search-for-content.md) in your organization.
 

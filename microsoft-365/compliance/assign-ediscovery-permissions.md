@@ -108,7 +108,11 @@ For more information, see [Work with communications in Advanced eDiscovery](mana
 
 This role lets users run the Content Search tool in the Microsoft 365 compliance center to search mailboxes and public folders, SharePoint Online sites, OneDrive for Business sites, Skype for Business conversations, Microsoft 365 groups, and Microsoft Teams, and Yammer groups. This role allows a user to get an estimate of the search results and create export reports, but other roles are needed to initiate content search actions such as previewing, exporting, or deleting search results.
 
-For more information, see [Content search in Office 365](content-search.md).
+In  Content search and Core eDiscovery, users who are assigned the Compliance Search role but don't have the Preview role can preview the results of a search in which the preview action has been initiated by a user who is assigned the Preview role. The user without the Preview role can preview results for up to two weeks after the initial preview action was created.
+
+Similarly, users in Content search and Core eDiscovery who are assigned the Compliance Search role but don't have the Export role can download the results of a search in which the export action was initiated by a user who is assigned the Export role. The user without the Export role can download the results of a search for up to two weeks after the initial export action was created. After that, they can't download the results unless someone with the Export role restarts the export.
+
+The two-week grace period for previewing and exporting search results (without the corresponding search and export roles) doesn't apply to Advanced eDiscovery. Users must be assigned the Preview and Export roles to preview and export content in Advanced eDiscovery.
 
 ### Custodian
 

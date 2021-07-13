@@ -71,7 +71,7 @@ There are two subgroups in the eDiscovery Manager role group. The difference bet
 
   Because of the broad scope of access, an organization should have only a few admins who are members of the eDiscovery Administrators subgroup.
 
-For more information about eDiscovery permissions and a description of each role that's assigned to the eDiscovery Manager role group, see [Assign eDiscovery permissions](assign-advanced-ediscovery-permissions.md).
+For more information about eDiscovery permissions and a description of each role that's assigned to the eDiscovery Manager role group, see [Assign eDiscovery permissions](assign-ediscovery-permissions.md).
 
 ## Step 3: Configure global settings for Advanced eDiscovery
 

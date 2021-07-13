@@ -155,7 +155,7 @@ There are two ways to replicate this functionality today. The first is to use [r
 
 **How do I control which content locations (such as mailboxes or sites) that can an eDiscovery manager can search using the new tools?**
 
-The Microsoft 365 compliance center also uses [compliance boundaries](set-up-core-ediscovery-compliance-boundaries.md) to control which content locations an eDiscovery Manager can search. Compliance boundaries are useful in government entities that need to stay within agency boundaries or multi-national corporations required to respect geographical boarders.
+The Microsoft 365 compliance center also uses [compliance boundaries](set-up-compliance-boundaries.md) to control which content locations an eDiscovery Manager can search. Compliance boundaries are useful in government entities that need to stay within agency boundaries or multi-national corporations required to respect geographical boarders.
 
 **How can I move my current searches and holds to the Microsoft 365 compliance center?**
 

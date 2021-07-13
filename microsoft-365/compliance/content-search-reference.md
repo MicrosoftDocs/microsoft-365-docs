@@ -255,4 +255,4 @@ Keep the following things in mind when using search permissions filters to searc
 
 - The **Region** parameter doesn't control searches of Exchange mailboxes. All datacenters are searched when you search mailboxes.
 
-For more information about using search permissions filters in a multi-geo environment, see the "Searching and exporting content in Multi-Geo environments" section in [Set up compliance boundaries for eDiscovery investigations](set-up-core-ediscovery-compliance-boundaries.md#searching-and-exporting-content-in-multi-geo-environments).
+For more information about using search permissions filters in a multi-geo environment, see the "Searching and exporting content in Multi-Geo environments" section in [Set up compliance boundaries for eDiscovery investigations](set-up-compliance-boundaries.md#searching-and-exporting-content-in-multi-geo-environments).

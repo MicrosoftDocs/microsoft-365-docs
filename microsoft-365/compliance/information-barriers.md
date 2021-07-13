@@ -42,7 +42,7 @@ To learn more about the user experience with information barriers, see:
 - [Information barriers in OneDrive](/onedrive/information-barriers)
 
 > [!IMPORTANT]
-> Currently, information barriers do not apply to email communications. In addition, information barriers are independent from [compliance boundaries](set-up-core-ediscovery-compliance-boundaries.md).<p> Before you define and apply information barrier policies, make sure your organization does not have [Exchange address book policies](/exchange/address-books/address-book-policies/address-book-policies) in effect. (Information barriers are based on address book policies.)
+> Currently, information barriers do not apply to email communications. In addition, information barriers are independent from [compliance boundaries](set-up-compliance-boundaries.md).<p> Before you define and apply information barrier policies, make sure your organization does not have [Exchange address book policies](/exchange/address-books/address-book-policies/address-book-policies) in effect. (Information barriers are based on address book policies.)
 
 ## What happens with information barriers
 
