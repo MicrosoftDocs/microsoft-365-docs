@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 07/07/2021
+ms.date: 07/13/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -18,8 +18,7 @@ f1.keywords: NOCSH
 # What is Microsoft Defender for business?
 
 Microsoft Defender for business is a security solution designed to help protect the devices and data your business uses. 
-
-Microsoft Defender for business includes all of the following features and capabilities:
+Microsoft Defender for business includes the features and capabilities listed in the following table:
 
 | Symbol | Capability | Description |
 |---|---|---|
@@ -32,6 +31,8 @@ Microsoft Defender for business includes all of the following features and capab
 | [![Secure document symbol](/office/media/icons/secure-document-blue.png)](#centralized-management-and-reporting) | [Centralized management and reporting](#centralized-management-and-reporting) | Defender for Endpoint enables your security operations team to centrally manage your organization’s threat protection solution and settings.  |
 | [![Connector symbol](/office/media/icons/connector-blue.png)](#cross-platform-support) | [Cross-platform support](#cross-platform-support) | Most organizations use a variety of devices and operating systems, such as computers running Windows, macOS, or Linux, and mobile devices running iOS or Android. Initially, Microsoft Defender for business supports Windows 10 devices only, with plans to add support for more operating systems soon. |
 | [![API symbol](/office/media/icons/api.png)](#apis) | [APIs](#apis) (for integration)| Application programming interfaces (APIs) like the Defender for Endpoint APIs enable applications to communicate with each other. |
+
+The following sections provide more details about what's included in Microsoft Defender for business.
 
 ## Threat and vulnerability management
 
