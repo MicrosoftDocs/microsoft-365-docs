@@ -1,0 +1,51 @@
+### YamlMime:Landing
+
+title: Microsoft Defender for business
+summary: Microsoft Defender for business documentation
+metadata:
+  title: Microsoft Defender for business documentation
+  description: Get an overview and setup information for Microsoft Defender for business
+  ms.prod: 365-security
+  ms.technology: mdb
+  ms.topic: landing-page
+  ms.collection: SMB
+  author: denisebmsft
+  ms.author: deniseb
+  ms.date: 07/13/2021
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: About Microsoft Defender for business
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What is Microsoft Defender for business?
+            url: mdb-overview.md
+      - linkListType: overview
+        links:
+          - text: Compare plans for small and mid-sized businesses
+            url: compare-mdb-m365bp.md
+
+  # Card (optional)
+  - title: Get started
+    linkLists:
+      - linkListType: get-started
+        links:
+          - text: Get started with Microsoft Defender for business
+            url: mdb-get-started.md
+      - linkListType: get-started
+        links:
+          - text: Learn how to use Microsoft Defender for business
+            url: mdb-use.md
+
+  # Card
+  - title: Setup
+    linkLists:
+      - linkListType: deploy
+        links:
+          - text: Set up and configure Microsoft Defender for business
+            url: mdb-setup-configuration.md
