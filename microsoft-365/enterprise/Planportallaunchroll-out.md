@@ -27,7 +27,9 @@ This article describes how to plan your deployment and roll-out plan to SharePoi
 
 To help in creating a successful portal, follow the basic principles, practices and recommendations detailed in the [Creating, launching and maintaining a healthy portal](/sharepoint/portal-health) 
 
-Use the portal launch scheduler to release your portal to users in your organization in scheduled phases. Learn more: [Portal Launch Scheduler](https://docs.microsoft.com/en-us/microsoft-365/enterprise/portallaunchscheduler)
+Use the portal launch scheduler to release your portal to users in your organization in scheduled phases. Learn more: 
+
+![Calendar icon](/Office/media/icons/calendar-blue.png "Portal launch scheduler")  [Portal Launch Scheduler](https://docs.microsoft.com/en-us/microsoft-365/enterprise/portallaunchscheduler)
 
 The deployment approach is highlighted below.
 
