@@ -6,6 +6,11 @@
     href: compare-mdb-m365bp.md
   - name: Set up and configure Microsoft Defender for business
     href: mdb-setup-configuration.md
+    items:
+    - name: View or edit device policies
+    href: mdb-view-edit-device-policies.md
+    - name: Understand configuration settings
+    href: mdb-configuration-settings.md
   - name: Get started with Microsoft Defender for business
     href: mdb-get-started.md
   - name: How to use Microsoft Defender for business
