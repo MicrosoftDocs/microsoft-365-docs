@@ -36,7 +36,7 @@ If you're ordering a device from HP that has been approved as an [exception](cu
 - Global: mmd@hp.com
 
 ### Lenovo
-When you order devices from Lenovo for use in Microsoft Managed Desktop, you'll need to indicate a specific part number included as part of the order. Contact your Lenovo sales representative or Lenovo Channel Partner and ask them to create a "*special bid model*" with a system that meets our [device requirements](device-requirements.md#minimum-requirements). To include a pre-loaded image compatible with Microsoft Managed Desktop, ask the sales representative to reference "*system building block part number SBB0Q94938 – MMD Enablement*." Please work with your Lenovo sales representative or Lenovo Channel Partner for recommended services, support, and imaging services.
+When you order devices from Lenovo for use in Microsoft Managed Desktop, you'll need to indicate a specific part number included as part of the order. Contact your Lenovo sales representative or Lenovo Channel Partner and ask them to create a "*special bid model*" with a system that meets our [device requirements](device-requirements.md#minimum-requirements). To include a pre-loaded image compatible with Microsoft Managed Desktop, ask the sales representative to reference "*system building block part number SBB0Q94938 – MMD Enablement*." Work with your Lenovo sales representative or Lenovo Channel Partner for recommended services, support, and imaging services.
 
 ### Microsoft
 All Microsoft devices that meet device requirements come with an image that works with Microsoft Managed Desktop. No other steps are required.
