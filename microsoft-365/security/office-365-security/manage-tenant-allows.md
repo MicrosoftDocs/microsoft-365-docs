@@ -28,7 +28,7 @@ ms.prod: m365-security
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-## Use the Submissions portal to add allow files, URLs, and senders
+## Use the Submissions portal to allow files, URLs, and senders
 
 1. In the Microsoft 365 Defender portal, go to **Email & collaboration** \> **Submissions**.
 
