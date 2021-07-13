@@ -89,3 +89,23 @@ For additional information about each role, see [Administrator role permissions]
 1. In the app governance card, click Details.
 1. Click **Start free trial**.
 1. Complete the requested information to add app governance to your selected tenant. I you are a new customer, you must first provide information to establish an account and create a tenant for your trial period. Once this is done you can add app governance to the trial.
+
+## Submit feedback on app governance 
+
+In order to submit feedback on the app governance add-on to Microsoft Cloud App Security:
+
+- In the lower right corner on any page you’d like to submit feedback on, click the black feedback button.
+
+- If submitting feature feedback:
+  1. Provide a star rating and comments in the text box  
+  1. If you select **Include this screenshot** a screenshot of the page you are on will be shared.  
+  1. If you select “You can contact me about this feedback”, your email address will be shared with Microsoft.
+  1. Select **Submit** to send your feedback.
+
+- If you are submitting feedback on malicious app activity:
+
+  1. Provide a five star rating (it’s a required field).
+  1. In the text box, type the app name and app ID of the app you are flagging as malicious and any supporting detail you can provide.
+  1. If you select “Include this screenshot” a screenshot of the page you are on will be shared.  
+  1. If you select “You can contact me about this feedback”, your email address will be shared with Microsoft.
+  1. Select Submit to send your feedback.

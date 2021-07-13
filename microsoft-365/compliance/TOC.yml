@@ -488,7 +488,9 @@
     - name: Protect and govern your apps
       href: app-governance-manage-app-protection-governance.md
     - name: Get Started with app governance
-      href: app-governance-get-started.md 
+      href: app-governance-get-started.md
+    - name: Submit feedback on app governance
+      href: app-governance-feedback.md
     - name: Get visibility and insights
       items:
         - name: Learn about visibility and insights
