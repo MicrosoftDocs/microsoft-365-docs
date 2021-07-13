@@ -122,6 +122,13 @@ Formerly, portal launches could only be scheduled through SharePoint PowerShell.
 
 If you are planning to launch a portal with over 100,000 users, submit a support request following the steps listed below. Make sure to include all the requested information.
 
+> [!NOTE]
+>
+> - This process should only be followed if you meet the following requirements:
+> - The Launch Page has been completed.
+> - [Portal Health Guidance](https://aka.ms/portalhealth) has been followed.
+> - The Launch date is within 14 days.
+
 **Follow these steps:**
 
 1. Go to <https://admin.microsoft.com>.
