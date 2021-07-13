@@ -20,13 +20,13 @@ audience: Admin
 Whether you order [new devices](#new-devices) or reuse [existing](#existing-devices) ones, you have several options to ensure the image on the device meets our [device requirements](device-requirements.md#check-hardware-requirements).
 
 ## New devices
-When you order a new device from an [approved manufacturer](device-requirements.md#minimum-requirements), follow these steps to make sure they ship devices with the right Microsoft Managed Desktop image and software configuration.
+When you order a new device from an [approved manufacturer](device-requirements.md#minimum-requirements), follow these steps to make sure they ship devices with the right Microsoft Managed Desktop image and software configuration. Anytime you plan to enroll a particular device model in the service for the first time, you should test an example to ensure it'll deliver the user experience you expect. For more information, see [Validate new devices](/microsoft-365/managed-desktop/get-started/validate-device).
 
 ### Dell
 Work directly with the Dell sales representative, who will make sure that the image approved by Microsoft Managed Desktop is applied to devices for your order. For more questions on Dell devices, the image, and the ordering process, contact MMD_at_dell@dell.com.
 
 ### HP 
-When you order new devices from HP, be sure to use the specific SKU listed in the Additional requirements section for each model found in the [Shop Windows 10 Pro business devices](https://www.microsoft.com/windowsforbusiness/view-all-devices) site (filter the view to show Microsoft Managed Desktop devices).
+When you order new devices from HP, be sure to use the specific SKU listed in the Additional requirements section for each model found in the [Shop Windows 10 Pro business devices](https://www.microsoft.com/windowsforbusiness/view-all-devices#view-all-filter) site (filter the view to show Microsoft Managed Desktop devices).
 
 If you're ordering a device from HP that has been approved as an [exception](customizing.md) but isn't currently listed on the Device List page, be sure to request the SKU to be used for your model. We'll work with HP to get you this information by using your exception request. You can also contact HP directly for any questions about devices and device ordering instructions by using these addresses:
  

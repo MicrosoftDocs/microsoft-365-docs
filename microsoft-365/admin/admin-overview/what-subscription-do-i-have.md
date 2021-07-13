@@ -18,6 +18,7 @@ ms.custom:
 - okr_smb
 - AdminSurgePortfolio
 - commerce_subscriptions
+- AdminTemplateSet
 search.appverid: MET150
 description: "Learn to verify which subscriptions your organization has by going to the Your products page."
 ms.date: 01/21/2021
@@ -36,7 +37,7 @@ If you're an admin, you can verify which subscriptions your organization has by 
 
 ## Related content
   
-[Subscriptions and billing](../../commerce/index.yml) (links)\
+[Subscriptions and billing](../../commerce/index.yml) (link page)\
 [View your bill or invoice](../../commerce/billing-and-payments/view-your-bill-or-invoice.md) (article)\
 [Paying for your subscription](../../commerce/billing-and-payments/pay-for-your-subscription.md) (article)\
 [Change your billing addresses](../../commerce/billing-and-payments/change-your-billing-addresses.md) (article)

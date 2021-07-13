@@ -40,7 +40,7 @@ If the program that you use to connect to Exchange Online supports IPv6, it will
   
 If the program that you use to connect to SharePoint Online supports IPv6, it will use IPv6 by default on both wired and wireless networks. If you want to control communications to SharePoint Online, use the IP address ranges in [Office 365 URLs and IP address ranges](urls-and-ip-address-ranges.md).
   
- **Office 365 Government G1/G3/G4/K1** If the program that you use to connect to SharePoint Online supports IPv6, it will attempt to use IPv6 by default.
+ 
   
 ### Skype for Business and IPv6
 
