@@ -18,3 +18,7 @@
     href: mdb-view-edit-device-policies.md
   - name: Configuration settings
     href: mdb-configuration-settings.md
+  - name: Getting started
+    href: mdb-get-started.md
+  - name: Use Microsoft Defender for business
+    href: mdb-use.md
