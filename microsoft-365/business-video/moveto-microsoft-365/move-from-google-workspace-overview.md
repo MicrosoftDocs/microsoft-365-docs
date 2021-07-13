@@ -39,4 +39,4 @@ Complete the following steps to move your data, email, and users from Google Wor
 |Step 7 | [Connect domain to Microsoft 365](connect-domain-tom365.md). </br> After you connect the domain email will start going to Microsoft 365, and all your Microsoft 365 services will work.|
 |Step 8|Use [Migration Manager to move everyone's data](/sharepointmigration/mm-google-overview) from Drive to OneDrive and from shared Drives to Team sites.</br> In this step, all the data in personal and shared Drives is copied and moved to Microsoft 365.|
 |Step 9| [Discontinue Google Workspace](cancel-google.md) but keep your domain. </br> If Google manages your domain, you can keep it there even after you discontinue your Google Workspace subscription. You can also choose to move it to another DNS host if you want.|
-|||
+
