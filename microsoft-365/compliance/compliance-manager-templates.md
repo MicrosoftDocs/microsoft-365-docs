@@ -120,7 +120,7 @@ The **Actions** tab is required.  It designates improvement actions managed by y
 
 - **actionScore**: In this required field, provide a numeric score value for your action. The value must be a whole number ranging from 1 to 99; it cannot be 0, null, or blank. The higher the number, the greater its value toward improving your compliance posture. The image below demonstrates how Compliance Manager scores controls:
 
-![Compliance Manager controls point values](../media/compliance-score-action-scoring.png "Compliance Manager controls point values")
+  ![Compliance Manager controls point values](../media/compliance-score-action-scoring.png "Compliance Manager controls point values")
 
 - **actionDescriptionTitle**: This is the title of the description and is required. This description title allows you to have the same action in multiple templates and surface a different description in each template.  This field helps you clarify what template the description is referencing. In most cases, you can put the name of the template you're creating in this field.
 
