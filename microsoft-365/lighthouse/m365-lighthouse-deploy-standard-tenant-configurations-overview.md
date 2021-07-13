@@ -44,7 +44,6 @@ The baseline configurations in the following table come standard with the Micros
 | Antivirus (AV) policy configuration | A Device Configuration profile for Windows devices with pre-configured Microsoft Defender Antivirus settings. |
 | Window 10 Compliance policy set up | A Windows device policy with pre-configured settings to meet basic compliance requirements. |
 
-
 ## Related content
 
 [Deploy Microsoft 365 Lighthouse baselines](m365-lighthouse-deploy-baselines.md) (article)\
