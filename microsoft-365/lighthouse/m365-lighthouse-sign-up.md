@@ -57,7 +57,7 @@ description: "For Managed Service Providers (MSPs), learn how to sign up for Mic
 
 ## Next steps
 
-[Configure Microsoft 365 Lighthouse portal security]() 
+[Configure Microsoft 365 Lighthouse portal security](m365-lighthouse-configure-portal-security.md) 
 
 ## Related content
 
