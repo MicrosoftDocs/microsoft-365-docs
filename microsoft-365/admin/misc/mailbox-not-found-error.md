@@ -11,6 +11,7 @@ ms.service: o365-administration
 localization_priority: Priority
 ms.collection:
 - M365-subscription-management
+ms.custom: AdminTemplateSet
 ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MET150
