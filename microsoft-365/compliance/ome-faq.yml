@@ -247,7 +247,7 @@ sections:
       - question: |
           Can I open encrypted messages sent to another user's mailbox with Fullaccess?
         answer: |
-          No, users can open encrypted messages in shared mailbox.
+          No, users can open encrypted messages in a shared mailbox.
           
       - question: |
           What do I do if I don’t receive the one-time pass code after I requested it?
