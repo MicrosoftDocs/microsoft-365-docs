@@ -30,7 +30,7 @@ Microsoft app governance allows you to quickly assess the compliance posture of 
 
 From this page, you can see:
 
-- For apps:
+- For OAuth-enabled apps that use the Microsoft Graph API:
 
   - How many are in your tenant
   - How many might be overprivileged
@@ -40,7 +40,7 @@ From this page, you can see:
 
 - For alerts:
 
-  - How many alerts your tenant has
+  - How many active alerts your tenant has
   - How many are based on app governance detections (**Threat alerts**)
   - How many are based on app policies you have in place (**Policy alerts**)
   - The 10 latest alerts

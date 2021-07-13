@@ -20,11 +20,11 @@ description: "Learn about visibility and insights."
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
-With Microsoft app governance, you can quickly gain visibility and meaningful insights on your Microsoft 365 application ecosystem. You start from the app governance dashboard that provides a high-level summary of the apps in your tenant and from there you can efficiently navigate to top tasks.
+With Microsoft app governance, you can quickly gain visibility and meaningful insights on your Microsoft 365 application ecosystem. You start from the app governance dashboard that provides a high-level summary of the alerts and apps in your tenant that require administrator attention.
 
 With app governance visibility and insights, you can see:
 
-- A list of all the third-party Microsoft 365 platform apps with their compliance status in your tenant on a single dashboard.
+- A list of the OAuth-enabled apps that access Microsoft 365 data via Microsoft Graph APIs.
 - A rich view on app activities so that you can react or respond to them.
 
 >[!Note]
@@ -51,36 +51,30 @@ M365 API Error Analysis per App
 With app governance, you can see:
 
 - A dashboard of all insights.
-- Network insights of single and all apps with workload and user level insights.
-- Data insights of single and all apps with workload and user level insights.
+- Data accessed by single and all apps with workload and user level insights.
 - App information and metadata, such as permissions, registration date, and certification.
 - Publisher information and metadata, such as name and verification status.
+- Usage of top resources (emails and files) across the tenant.
 - Insights on:
 
   - High-privileged apps.
   - Overprivileged apps.
   - High-usage apps.
-  - Users whose data a specific app can access.
-  - High Value Entity (HVE) users who have data that a specific app can access.
+  - Top consented users whose data a specific app can access.
+  - Priority accounts who have data that a specific app can access.
 
 - A cumulative view of users accessing apps.
-- Error insights for a single or all apps.
 - Alerts insights.
 - Policy list insights.
-- Policy hit and success rates insight.
-- Insights from Microsoft Cloud App Security (MCAS).
+<!-->
 - Policies created in MCAS in the app governance portal.
+-->
 - Alerts for OAuth apps generated in MCAS, in the app governance portal.
 
 You can also:
 
-- Customize the dashboard to select the insights you want to view.
 - Drill down to a single app (app page) with all its associated insights.
-- Drill-down into users.
-
-<!--
-NOTE TO WRITER: Above list was taken from an internal spec. It will need to be scrubbed for the public preview.
--->
+- Drill-down into top users by data, and priority accounts within a single app.
 
 ## Next step
 

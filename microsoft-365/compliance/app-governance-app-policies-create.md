@@ -39,13 +39,12 @@ To create a new app policy based on an app policy template, on the **Choose App 
 
 App governance has three categories of app policy templates.
 
-### App usage
+### App users and data access
 
 App governance includes these templates to generate alerts for app usage.
 
 | Template name | Description |
 |:-------|:-----|
-| Increase in app users | Highlights apps with recently increased users to identify apps that have recently gained a larger footprint in your tenant and that may need further investigation. <br><br> By default, this policy will flag all apps that have had a more than 50% increase in use in the last 7 days, and can be customized with extra conditions and actions. |
 | New app with a high volume of data access | Highlights any recently registered apps with high volume data access to ensure those data patterns are expected. <br><br> By default, this policy will flag all apps that have been registered in the last 7 days and that have had more than 1 GB in data access over that period. This policy can be customized with more conditions and actions. |
 |||
 
@@ -55,9 +54,8 @@ App governance includes these templates to generate alerts for app permissions.
 
 | Template name | Description |
 |:-------|:-----|
-| Overpermissioned apps | Highlights any apps with more granted permissions than are being used by those apps to identify opportunities for potential permission reduction. <br><br> By default, this policy will flag all apps that are marked as overpermissioned if not used for 90 days. This time period filter can be customized with more conditions and actions. |
+| Overprivileged apps | Highlights any apps with more granted permissions than are being used by those apps to identify opportunities for potential permission reduction. <br><br> By default, this policy will flag all apps that are marked as Overprivileged if not used for 90 days. This time period filter can be customized with more conditions and actions. |
 | New app with high-privilege permissions | Highlights all new apps with high privilege permissions to identify potential high-footprint apps that may need further investigation. <br><br> By default, this policy will flag all apps registered within the last 7 days that have high-scoped permissions. |
-| New app with app-only permissions | Highlights all new apps with permissions to access data across the tenant, which are potentially a higher risk set of permissions. <br><br> By default, this policy will flag all apps registered within the last 7 days that have app-only permissions. |
 |||
 
 ### App certification
@@ -66,7 +64,6 @@ App governance includes these templates to generate alerts for app certification
 
 | Template name | Description |
 |:-------|:-----|
-| App certification loss | Highlights all previously certified apps that recently lost their app certification, enabling you to ensure that this status change is expected. <br><br> By default, this policy will flag all apps that are uncertified and have had their app certification changed in the last 7 days. |
 | New uncertified app | Highlights new apps that haven't been through the app certification process to ensure that they are expected in the tenant. <br><br> By default, this policy will flag all apps that were registered in the last 7 days and are uncertified. |
 |||
 
@@ -107,24 +104,22 @@ Here are the available conditions for a custom app policy.
 |Condition | Condition values accepted | More information |
 |:-------|:-----|:-------|
 | App registration age | Within last X days |  |
-| App certification | Yes or No | [Microsoft 365 Certification](https://docs.microsoft.com/microsoft-365-app-certification/docs/enterprise-app-certification-guide) |
-| App certification changed | Yes or No |  |
+| App certification | Basic compliance, MCAS Compliance, or N/A | [Microsoft 365 Certification](https://docs.microsoft.com/microsoft-365-app-certification/docs/enterprise-app-certification-guide) |
 | Publisher verification | Yes or No | [Publisher Verification](https://docs.microsoft.com/azure/active-directory/develop/publisher-verification-overview) |
-| Permission granted | Select one or more API permission from list | [Microsoft Graph permissions reference](https://docs.microsoft.com/graph/permissions-reference) |
-| Has high scoped permission | Yes or No | This is an internal designation based on the same logic used by MCAS. |
+| Application Permission | Select one or more API permission from list | [Microsoft Graph permissions reference](https://docs.microsoft.com/graph/permissions-reference) |
+| Delegated Permission | Select one or more API permission from list | [Microsoft Graph permissions reference](https://docs.microsoft.com/graph/permissions-reference) |
+| High privilege | Yes or No | This is an internal designation based on the same logic used by MCAS. |
 | Overprivileged app | Yes or No | Apps with more granted permissions than are being used by those apps. |
-| Last used | Within last X days |  |
 | App data access | Greater than X GB data access per hour |  |
 | App data access trend | X% increase in data usage in last 7 days |  |
 | App API Access | Greater than X API calls per hour |  |
 | App API Access trend | X% increase in API Calls in last 7 days	 |  |
 | Users consented | (Greater than or Less than) X consented users |  |
-| Users consented trend | X% increase in last 90 days |  |
-| HVE user consented | Yes or No | A user with a [priority account](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts). |
-| Delegating user | Select user(s) from list |  |
-| Delegating user’s role | Select one or more: Teams Administrator, Directory Readers, Security Reader, Compliance Administrator, Security Administrator, Helpdesk Administrator, SharePoint Administrator, Exchange Administrator, Global Reader, Global Administrator, Compliance Data Administrator, User Administrator, Service Support Administrator | Multiple selections allowed. <br><br> Any Azure AD role with assigned member should be made available in this list. |
+| Priority user consented | Yes or No | A user with a [priority account](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts). |
+| App consented by | Select user(s) from list |  |
+| Consenting user’s role | Select one or more: Teams Administrator, Directory Readers, Security Reader, Compliance Administrator, Security Administrator, Helpdesk Administrator, SharePoint Administrator, Exchange Administrator, Global Reader, Global Administrator, Compliance Data Administrator, User Administrator, Service Support Administrator | Multiple selections allowed. <br><br> Any Azure AD role with assigned member should be made available in this list. |
 | Workload accessed | OneDrive and/or SharePoint and/or Exchange | Multiple selections allowed. |
-| Error rate | Error rate is greater than X% |  |
+| Error rate | Error rate is greater than X% in the last 7 days |  |
 ||||
 
 <!--
@@ -135,7 +130,7 @@ All of the specified conditions must be met for this app policy to apply.
 
 When you are done specifying the conditions, select **Save**, and then select **Next**.
 
-On the **Define Policy Actions** page, select **Disable app** if you want MAPG to disable the app when an alert based on this policy is generated, and then select **Next**.
+On the **Define Policy Actions** page, select **Disable app** if you want app governance to disable the app when an alert based on this policy is generated, and then select **Next**.
 
 On the **Define Policy Status** page, select one of these options:
 

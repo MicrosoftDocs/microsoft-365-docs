@@ -22,7 +22,7 @@ description: "View your apps."
 
 Microsoft app governance allows you to quickly gain deep insights into the Microsoft 365 apps in your tenant. For example, you can see:
 
-- A list of all OAuth-enabled Microsoft 365 apps in the tenant, together with relevant app metadata and usage data.
+- A list of OAuth-enabled apps in the tenant that use the Microsoft Graph API, together with relevant app metadata and usage data.
 - App details with deeper insights and information by selecting an app in the list.
 
 ## Getting a list of all the apps in your tenant
@@ -54,13 +54,13 @@ You will see a list of apps and this information:
 
   The sum of the app’s data upload and download in the tenant over the last day, along with the change over the prior day.
 
-App governance sorts the app list by **Last modified** by default. To sort the list by another app attribute, select the attribute name.
+App governance sorts the app list by **App name** by default. To sort the list by another app attribute, select the attribute name.
 
 You can also select **Search** to search for an app by name.
 
 ## Getting detailed information on an app
 
-For detailed information on a specific app in your tenant, go to **Microsoft 365 Compliance Center > App protection & governance > Apps page > *app name***.
+For detailed information on a specific app in your tenant, go to **Microsoft 365 Compliance Center > App governance > Apps page > *app name***.
 
 ![The app governance app details pane in the Microsoft 365 Compliance Center](..\media\manage-app-protection-governance\mapg-cc-apps-app.png)
 
