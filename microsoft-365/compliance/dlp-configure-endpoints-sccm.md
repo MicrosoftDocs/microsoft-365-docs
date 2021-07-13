@@ -10,10 +10,10 @@ audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: 
-- M365-security-compliance 
+ms.collection:
+- M365-security-compliance
 search.appverid:
-- MET150 
+- MET150
 description: Use Configuration Manager to deploy the configuration package on devices so that they are onboarded to the service.
 ---
 
@@ -31,7 +31,7 @@ description: Use Configuration Manager to deploy the configuration package on de
 2. In the navigation pane, select **Settings** > **Device Onboarding** > **Onboarding**.
 
 3. In the **Deployment method** field, select **Microsoft Endpoint Configuration Manager 2012/2012 R2/1511/1602**.
- 
+
 4. Select **Download package**, and save the .zip file.
 
 5. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the network administrators who will deploy the package. You should have a file named *DeviceComplianceOnboardingScript.cmd*.
@@ -43,12 +43,12 @@ description: Use Configuration Manager to deploy the configuration package on de
 > [!NOTE]
 > Microsoft 365 Endpoint data loss prevention doesn't support onboarding during the [Out-Of-Box Experience (OOBE)](https://answers.microsoft.com/en-us/windows/wiki/windows_10/how-to-complete-the-windows-10-out-of-box/47e3f943-f000-45e3-8c5c-9d85a1a0cf87) phase. Make sure users complete OOBE after running Windows installation or upgrading.
 
->[!TIP]
-> After onboarding the device, you can choose to run a detection test to verify that an device is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Microsoft Defender ATP device](/windows/security/threat-protection/microsoft-defender-atp/run-detection-test).
+> [!TIP]
+> After onboarding the device, you can choose to run a detection test to verify that an device is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Microsoft Defender for Endpoint device](/windows/security/threat-protection/microsoft-defender-atp/run-detection-test).
 >
 > Note that it is possible to create a detection rule on a Configuration Manager application to continuously check if a device has been onboarded. An application is a different type of object than a package and program.
 > If a device is not yet onboarded (due to pending OOBE completion or any other reason), Configuration Manager will retry to onboard the device until the rule detects the status change.
-> 
+>
 > This behavior can be accomplished by creating a detection rule checking if the "OnboardingState" registry value (of type REG_DWORD) = 1.
 > This registry value is located under "HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection\Status".
 For more information, see [Configure Detection Methods in System Center 2012 R2 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg682159(v=technet.10)#step-4-configure-detection-methods-to-indicate-the-presence-of-the-deployment-type).
@@ -57,8 +57,8 @@ For more information, see [Configure Detection Methods in System Center 2012 R2 
 
 For each device, you can set a configuration value to state whether samples can be collected from the device when a request is made through Microsoft Defender Security Center to submit a file for deep analysis.
 
->[!NOTE]
->These configuration settings are typically done through Configuration Manager. 
+> [!NOTE]
+> These configuration settings are typically done through Configuration Manager.
 
 You can set a compliance rule for configuration item in Configuration Manager to change the sample share setting on a device.
 
@@ -109,7 +109,7 @@ The following configuration settings are recommended:
 **Attack surface reduction**
 Configure all available rules to Audit.
 
->[!NOTE]
+> [!NOTE]
 > Blocking these activities may interrupt legitimate business processes. The best approach is setting everything to audit, identifying which ones are safe to turn on, and then enabling those settings on endpoints which do not have false positive detections.
 
 **Network protection**
@@ -144,7 +144,7 @@ If you use Microsoft Endpoint Configuration Manager current branch, see [Create 
 3. Select Windows 10 as the operating system.
 
 4. In the **Deployment method** field, select **Microsoft Endpoint Configuration Manager 2012/2012 R2/1511/1602**.
-    
+
 5. Select **Download package**, and save the .zip file.
 
 6. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the network administrators who will deploy the package. You should have a file named *DeviceComplianceOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
@@ -159,7 +159,7 @@ If you use Microsoft Endpoint Configuration Manager current branch, see [Create 
 
 ## Monitor device configuration
 
-If you're using Microsoft Endpoint Configuration Manager current branch, use the built-in Microsoft Defender ATP dashboard in the Configuration Manager console. For more information, see [Microsoft Defender Advanced Threat Protection - Monitor](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#monitor).
+If you're using Microsoft Endpoint Configuration Manager current branch, use the built-in Microsoft Defender for Endpoint dashboard in the Configuration Manager console. For more information, see [Microsoft Defender Advanced Threat Protection - Monitor](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#monitor).
 
 If you're using System Center 2012 R2 Configuration Manager, monitoring consists of two parts:
 
@@ -203,5 +203,5 @@ For more information, see [Introduction to compliance settings in System Center 
 - [Onboard Windows 10 devices using Mobile Device Management tools](dlp-configure-endpoints-mdm.md)
 - [Onboard Windows 10 devices using a local script](dlp-configure-endpoints-script.md)
 - [Onboard non-persistent virtual desktop infrastructure (VDI) devices](dlp-configure-endpoints-vdi.md)
-- [Run a detection test on a newly onboarded Microsoft Defender ATP device](/windows/security/threat-protection/microsoft-defender-atp/run-detection-test)
+- [Run a detection test on a newly onboarded Microsoft Defender for Endpoint device](/windows/security/threat-protection/microsoft-defender-atp/run-detection-test)
 - [Troubleshoot Microsoft Defender Advanced Threat Protection onboarding issues](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)

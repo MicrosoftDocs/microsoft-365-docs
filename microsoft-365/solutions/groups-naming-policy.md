@@ -16,6 +16,7 @@ ms.collection:
 search.appverid:
 - MET150
 ms.assetid: 6ceca4d3-cad1-4532-9f0f-d469dfbbb552
+recommendations: false
 description: "Learn how to create a naming policy for Microsoft 365 groups."
 ---
 

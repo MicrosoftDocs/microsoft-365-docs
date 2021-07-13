@@ -11,6 +11,7 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: 
 - MET150
+ROBOTS: NOINDEX, NOFOLLOW
 ms.collection: M365-security-compliance
 description: "The Relevance module in Advanced eDiscovery will be retired on March 10, 2021. This article explains what to do before Relevance is retired. Specifically, finishing any unfinished models by running Batch calculation so that you can retain the metadata from the model."
 ---

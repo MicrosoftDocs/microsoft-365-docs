@@ -13,7 +13,9 @@ ms.collection:
 - M365-subscription-management 
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom: 
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
@@ -99,13 +101,11 @@ You can change how your organization receives Microsoft 365 updates by following
 8. Choose **Select users** to add users one at a time, or **Upload users** to add them in bulk.
     
 9. When you're done adding users, select **Save changes**.
-
-
   
-## Learn more
+## Next steps
 
 Discover how to [manage messages](/office365/admin/manage/message-center) in your [Microsoft 365 Message center](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter) to get notifications about upcoming Microsoft 365 updates and releases.
 
-## Related Articles
+## Related content
 
-[Office Insider](https://insider.office.com/join/windows)
+[Join the Office Insider Program](https://insider.office.com/join/windows) (article)

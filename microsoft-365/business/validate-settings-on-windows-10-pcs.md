@@ -1,5 +1,5 @@
 ---
-title: "Validate app protection settings on Windows 10 PCs"
+title: "Validate app protection settings for Windows 10 PCs"
 f1.keywords:
 - NOCSH
 ms.author: sharik
@@ -28,7 +28,7 @@ ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
 description: "Learn how to verify that Microsoft 365 for business app protection settings took effect on your users' Windows 10 devices."
 ---
 
-# Validate device protection settings on Windows 10 PCs
+# Validate device protection settings for Windows 10 PCs
 
 ## Verify that Windows 10 device policies are set
 

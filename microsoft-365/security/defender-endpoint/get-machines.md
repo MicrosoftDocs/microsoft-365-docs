@@ -1,6 +1,6 @@
 ---
 title: List machines API
-description: Learn how to use the List machines API to retrieve a collection of machines that have communicated with Microsoft Defender ATP cloud.
+description: Learn how to use the List machines API to retrieve a collection of machines that have communicated with Microsoft Defender for Endpoint cloud.
 keywords: apis, graph api, supported apis, get, devices
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -12,8 +12,10 @@ author: mjcaparas
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
 ms.topic: article
+ms.collection: M365-security-compliance
+MS.technology: mde
+ms.custom: api
 ---
 
 # List machines API

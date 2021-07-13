@@ -19,10 +19,12 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Learn how to sign up for Microsoft 365 Business Premium."
+description: "Learn how to sign up for Microsoft 365 Business Premium (previously called Microsoft 365 Business)."
 ---
 
 # Sign up for Microsoft 365 Business Premium subscription
+
+## Watch: Sign up for Microsoft 365 Business Premium
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3znhX?autoplay=false]
 

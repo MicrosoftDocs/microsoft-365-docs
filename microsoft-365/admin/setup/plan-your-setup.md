@@ -51,7 +51,7 @@ The setup wizard walks you through installing the Microsoft 365 apps on your com
   
 If you don't complete the setup wizard, you can complete setup tasks at any time from [admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339) > **Setup**. From here you can migrate email and contacts from another email service, change the domain of your admin account, manage your billing information, add or remove users, reset passwords, and do other business functions. For more information about the differences between the setup wizard and the **Setup** page, see [Differences between the Microsoft 365 setup wizard and the Setup page](o365-setup-wizard-and-setup-page.md).
 
-If you get stuck at any point, call us. [We're here to help!](../contact-support-for-business-products.md)
+If you get stuck at any point, call us. [We're here to help!](../../business-video/get-help-support.md)
   
 ## When not to use the setup wizard: Active Directory synchronization and hybrid environments
 
@@ -110,7 +110,7 @@ If you're going to use Microsoft 365 for your email account, you can bring your 
 
 ## Plan for file storage and migration
 
-Microsoft 365 provides cloud storage for individuals, small organizations, and enterprises. For guidance about what to store where, see [Where you can store documents in Microsoft 365](https://support.microsoft.com/office/c7c20284-bc94-47f4-9728-d28e9daf0790).
+Microsoft 365 provides cloud storage for individuals, small organizations, and enterprises. For guidance about what to store where, see [Where you can store documents in Microsoft 365](../../business-video/store-files.md).
   
 - **You can move hundreds of files** to [OneDrive](https://support.microsoft.com/office/45114744-6D42-45CD-8975-F9617819BDEB) or to a [SharePoint team site](https://support.microsoft.com/office/da549fb1-1fcb-4167-87d0-4693e93cb7a0#__toc384119242). You can upload 100 files at a time. Avoid uploading files larger than 2GB, which is the maximum file size by default.
   
@@ -133,7 +133,7 @@ For larger organizations or if you're starting from Skype for Business, on-premi
 - **If you have fewer than 50 employees:**
 
   - **Ask for help and we'll call you**. After you buy Microsoft 365, you can access the admin center (you don't need to run setup to get to it). At the bottom of the admin center, select **Need help?** Describe your problem, and we'll call you. 
-  - **Call [Microsoft 365 for Business Support](../contact-support-for-business-products.md) with your questions**. We're here to help! 
+  - **Call [Microsoft 365 for Business Support](../../business-video/get-help-support.md) with your questions**. We're here to help! 
   - **Consider hiring a [Microsoft partner](https://go.microsoft.com/fwlink/?linkid=391089)**. If you're short on time, or have advanced requirements (like moving thousands of files to Microsoft 365 cloud storage or integrating with other software), an experienced partner can be a big help. 
 
 - **If you have more than 50 employees**, the [FastTrack Onboarding Center](https://go.microsoft.com/fwlink/?LinkId=517115) is available to help you with your deployment.
