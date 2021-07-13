@@ -39,11 +39,10 @@ The baseline configurations in the following table come standard with the Micros
 |--|--|
 | Require MFA for admins | A report-only Conditional Access policy requiring multifactor authentication for admins. It's required for all cloud applications. |
 | Require MFA for end users | A report-only Conditional Access policy that requires multifactor authentication for users. It's required for all cloud applications. |
-| Block legacy authorization | A report-only Conditional Access policy to block legacy client authorizations. |
+| Block legacy authentication | A report-only Conditional Access policy to block legacy client authentication. |
 | Enroll devices in Microsoft Endpoint Manager – Azure AD Join | Device enrollment to allow your tenant devices to enroll in Microsoft Endpoint Manager. This is done by setting up Auto Enrollment between Azure Active Directory and Microsoft Endpoint Manager. |
 | Antivirus (AV) policy configuration | A Device Configuration profile for Windows devices with pre-configured Microsoft Defender Antivirus settings. |
 | Window 10 Compliance policy set up | A Windows device policy with pre-configured settings to meet basic compliance requirements. |
-
 
 ## Related content
 

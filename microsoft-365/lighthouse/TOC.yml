@@ -15,7 +15,7 @@
 - name: Protect customers with baselines
   items: 
     - name: Overview of using baselines to deploy standard tenant configurations
-      href: m365-lighthouse-deploying-standard-tenant-configurations-overview.md
+      href: m365-lighthouse-deploy-standard-tenant-configurations-overview.md
     - name: Deploy baselines
       href: m365-lighthouse-deploy-baselines.md
 - name: Manage tenants
