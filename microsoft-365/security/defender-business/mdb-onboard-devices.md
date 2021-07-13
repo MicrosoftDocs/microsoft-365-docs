@@ -15,7 +15,7 @@ ms.reviewer: inbadian, shlomiakirav
 f1.keywords: NOCSH 
 ---
 
-# Configuration settings in Microsoft Defender for business
+# Onboard devices to Microsoft Defender for business
 
 Microsoft Defender for business is designed with the busy small business in mind. With preconfigured policies and settings based on industry best practices, Microsoft Defender for business helps protect your company’s devices as soon as they are onboarded. You can onboard devices in the Microsoft 365 Defender portal.
 
