@@ -87,7 +87,7 @@ In order to preview new features and provide early feedback, it is recommended t
     sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/centos/7/prod.repo
     ```
 
-    Or if you wish to explore new features on selected devices, you might want to deploy MDE for Linux to *insiders-fast* channel:
+    Or if you wish to explore new features on selected devices, you might want to deploy Microsoft Defender for Endpoint on Linux to *insiders-fast* channel:
 
     ```bash
     sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/centos/7/insiders-fast.repo
@@ -115,7 +115,7 @@ In order to preview new features and provide early feedback, it is recommended t
     sudo zypper addrepo -c -f -n microsoft-[channel] https://packages.microsoft.com/config/[distro]/[version]/[channel].repo
     ```
 
-    For example, if you are running SLES 12 and wish to deploy MDE for Linux from the *prod* channel:
+    For example, if you are running SLES 12 and wish to deploy Microsoft Defender for Endpoint on Linux from the *prod* channel:
 
     ```bash
     sudo zypper addrepo -c -f -n microsoft-prod https://packages.microsoft.com/config/sles/12/prod.repo
@@ -345,6 +345,21 @@ Download the onboarding package from Microsoft Defender Security Center:
         mdatp threat list
         ```
 
+## Experience Linux endpoint detection and response (EDR) capabilities with simulated attacks
+
+To test out the functionalities of EDR for Linux, follow the steps below to simulate a detection on your Linux server and investigate the case. 
+
+1.	Verify that the onboarded Linux server appears in Microsoft Defender Security Center. If this is the first onboarding of the machine, it can take up to 20 minutes until it appears. 
+
+2.	Download and extract the [script file](https://aka.ms/LinuxDIY) to an onboarded Linux server and run the following command: `./mde_linux_edr_diy.sh`
+
+3.	After a few minutes, a detection should be raised in Microsoft Defender Security Center.
+
+4.	Look at the alert details, machine timeline, and perform your typical investigation steps.
+
+
+
+
 ## Installer script
 
 Alternatively, you can use an automated [installer bash script](https://github.com/microsoft/mdatp-xplat/blob/master/linux/installation/mde_installer.sh) provided in our [public GitHub repository](https://github.com/microsoft/mdatp-xplat/).
@@ -380,13 +395,13 @@ When upgrading your operating system to a new major version, you must first unin
 
 ## How to migrate from Insiders-Fast to Production channel
 
-1. Uninstall the “Insiders-Fast channel” version of MDE for Linux.
+1. Uninstall the “Insiders-Fast channel” version of Defender for Endpoint on Linux.
 
     ``
     sudo yum remove mdatp
     ``
 
-1. Disable the MDE for Linux Insiders-Fast repo
+1. Disable the Defender for Endpoint on Linux Insiders-Fast repo
     ``
     sudo yum repolist
     ``

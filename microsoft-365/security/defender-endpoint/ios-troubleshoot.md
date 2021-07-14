@@ -53,7 +53,7 @@ While enabled by default, there might be some cases that require you to disable 
 > [!NOTE]
 > Web Protection will not be available when VPN is disabled. To re-enable Web Protection, open the Microsoft Defender for Endpoint app on the device and click or tap **Start VPN**.
 
-## Issues with multiple VPN profiles
+## Co-existence with multiple VPN profiles
 
 Apple iOS does not support multiple **device-wide** VPNs to be active simultaneously. While multiple VPN profiles can exist on the device, only one VPN can be active at a time.
 
@@ -69,7 +69,11 @@ Also, the VPN used is a local VPN and unlike a traditional VPN, network traffic 
 
 ## Data usage
 
-Microsoft Defender for Endpoint uses a local/loopback VPN to check web traffic for any malicious websites or connections. Due to this reason, Microsoft Defender for Endpoint data usage can be inaccurately accounted for. The actual data usage by Microsoft Defender for Endpoint is not significant and lesser than what is shown on the Data Usage Settings on the device.
+Microsoft Defender for Endpoint uses a local/loopback VPN to check web traffic for any malicious websites or connections. Due to this reason, Microsoft Defender for Endpoint data usage can be inaccurately accounted for. We have also observed that if the device is on cellular network only, the data usage reported by service provider is very close to the actual consumption whereas in the Settings app, Apple shows about 1.5x to 2x of actual data consumed.
+
+We have similar observations with other VPN services as well and have reported this to Apple.
+
+In addition, it is critical for Microsoft Defender for Endpoint to be up to date with our backend services to provide better protection. However, we are working on optimizing the data usage by Microsoft Defender for Endpoint.
 
 ## Report unsafe site
 

@@ -123,7 +123,7 @@
               href: microsoft-365-client-support-certificate-based-authentication.md
             - name: Conditional Access
               href: microsoft-365-client-support-conditional-access.md
-            - name: Multi-factor authentication
+            - name: Multifactor authentication
               href: microsoft-365-client-support-multi-factor-authentication.md
             - name: Single sign-on
               href: microsoft-365-client-support-single-sign-on.md
@@ -187,8 +187,6 @@
               href: microsoft-365-isolation-in-microsoft-365.md
             - name: Tenant Isolation in Search
               href: microsoft-365-isolation-in-microsoft-365-search.md
-            - name: Tenant Isolation in Video
-              href: microsoft-365-isolation-in-microsoft-365-video.md
             - name: Tenant Isolation in the Office Graph and Delve
               href: microsoft-365-isolation-in-graph-and-delve.md
     - name: Deploy
@@ -215,6 +213,8 @@
       items: 
         - name: Microsoft 365 Multi-Geo
           href: microsoft-365-multi-geo.md
+        - name: Teams multi-geo
+          href: multi-geo-capabilities-in-teams-in-microsoft-365.md
         - name: OneDrive and SharePoint multi-geo
           href: multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md
         - name: Exchange Multi-Geo
@@ -645,7 +645,7 @@
           href: federated-identity-for-your-microsoft-365-dev-test-environment.md
         - name: Azure AD Seamless Single Sign-on
           href: single-sign-on-m365-ent-test-environment.md
-        - name: Multi-factor authentication
+        - name: Multifactor authentication
           href: multi-factor-authentication-microsoft-365-test-environment.md
         - name: Protect global administrator accounts
           href: protect-global-administrator-accounts-microsoft-365-test-environment.md

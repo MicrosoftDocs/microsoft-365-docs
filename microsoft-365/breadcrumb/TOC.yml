@@ -1,0 +1,7 @@
+- name: Microsoft 365
+  tocHref: /
+  topicHref: /microsoft-365/index
+  items:
+  - name: Lighthouse
+    tocHref: /microsoft-365/lighthouse/
+    topicHref: /microsoft-365/lighthouse/m365-lighthouse-overview

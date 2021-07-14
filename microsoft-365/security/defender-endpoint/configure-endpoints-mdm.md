@@ -1,6 +1,6 @@
 ---
 title: Onboard Windows 10 devices using Mobile Device Management tools
-description: Use Mobile Device Management tools to deploy the configuration package on devices so that they are onboarded to the service.
+description: Use Mobile Device Management tools to deploy the configuration package on devices so that the devices are onboarded to the service.
 keywords: onboard devices using mdm, device management, onboard Microsoft Defender for Endpoint devices, mdm
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,7 +18,7 @@ ms.topic: article
 ms.technology: mde
 ---
 
-# Onboard Windows 10 devices using Mobile Device Management tools
+# Onboard the Windows 10 devices using Mobile Device Management tools
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -65,9 +65,9 @@ For security reasons, the package used to Offboard devices will expire 30 days a
 > [!NOTE]
 > Onboarding and offboarding policies must not be deployed on the same device at the same time, otherwise this will cause unpredictable collisions.
 
-1. Get the offboarding package from [Microsoft Defender Security Center](https://securitycenter.windows.com/):
+1. Get the offboarding package from [Microsoft 365 Defender portal](https://security.microsoft.com/):
 
-   1. In the navigation pane, select **Settings** > **Offboarding**.
+   1. In the navigation pane, select **Settings** > **Endpoints** > **Device management** > **Offboarding**.
 
    1. Select Windows 10 as the operating system.
 

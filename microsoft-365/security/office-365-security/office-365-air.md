@@ -51,7 +51,7 @@ An alert is triggered, and a security playbook starts an automated investigation
 
 1. An automated investigation is initiated in one of the following ways:
    - Either [an alert is triggered](#which-alert-policies-trigger-automated-investigations) by something suspicious in email (such as a message, attachment, URL, or compromised user account). An incident is created, and an automated investigation begins; or
-   - A security analyst [starts an automated investigation](automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer) while using [Threat Explorer](threat-explorer.md).
+   - A security analyst [starts an automated investigation](automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer) while using [Explorer](threat-explorer.md).
 2. While an automated investigation runs, it gathers data about the email in question and entities related to that email. Such entities can include files, URLs, and recipients. The investigation's scope can increase as new and related alerts are triggered.
 3. During and after an automated investigation, [details and results](air-view-investigation-results.md) are available to view. Results include [recommended actions](air-remediation-actions.md) that can be taken to respond to and remediate any threats that were found.
 4. Your security operations team reviews the [investigation results and recommendations](air-view-investigation-results.md), and [approves or rejects remediation actions](air-review-approve-pending-completed-actions.md).
@@ -77,8 +77,6 @@ AIR capabilities are included in [Microsoft Defender for Office 365](defender-fo
 - [Anti-phishing protection](../office-365-security/protect-against-threats.md#part-2---anti-phishing-protection-in-eop-and-defender-for-office-365)
 - [Anti-spam protection](protect-against-threats.md#part-3---anti-spam-protection-in-eop)
 - [Safe Links and Safe Attachments](protect-against-threats.md#part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365)
-- [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](protect-against-threats.md#part-5---verify-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on)
-- [Zero-hour auto purge for email](protect-against-threats.md#zero-hour-auto-purge-for-email-in-eop)
 
 In addition, make sure to [review your organization's alert policies](../../compliance/alert-policies.md), especially the [default policies in the Threat management category](../../compliance/alert-policies.md#default-alert-policies).
 
@@ -113,9 +111,8 @@ Permissions are granted through certain roles, such as those that are described 
 
 |Task|Role(s) required|
 |---|---|
-|Set up AIR features|One of the following roles: <ul><li>Global Administrator</li><li>Security Administrator</li></ul> <p> These roles can be assigned in [Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) or in the [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).|
-|Start an automated investigation <p> --- or --- <p> Approve or reject recommended actions|One of the following roles, assigned in [Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) or in the [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md): <ul><li>Global Administrator</li><li>Security Administrator</li><li>Security Operator</li><li>Security Reader <br> --- and --- </li><li>Search and Purge (this role is assigned only in the [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md). You might have to create a new role group there and add the Search and Purge role to that new role group.</li></ul>|
-|
+|Set up AIR features|One of the following roles: <ul><li>Global Administrator</li><li>Security Administrator</li></ul> <p> These roles can be assigned in [Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) or in the [Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).|
+|Start an automated investigation <p> --- or --- <p> Approve or reject recommended actions|One of the following roles, assigned in [Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) or in the [Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md): <ul><li>Global Administrator</li><li>Security Administrator</li><li>Security Operator</li><li>Security Reader <br> --- and --- </li><li>Search and Purge (this role is assigned only in the [Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md). You might need to create a new **Email & collaboration** role group there and add the Search and Purge role to that new role group.</li></ul>|
 
 ## Required licenses
 
@@ -136,7 +133,7 @@ The new and improved Microsoft 365 Defender portal brings together AIR capabilit
 > [!TIP]
 > The new Microsoft 365 Microsoft 365 Defender portal (<https://security.microsoft.com>) replaces the following centers:
 >
-> - Office 365 Security & Compliance Center (<https://protection.office.com>)
+> - Security & Compliance Center (<https://protection.office.com>)
 > - Microsoft Defender Security Center (<https://securitycenter.windows.com>)
 >
 > In addition to the URL changing, there's a new look and feel, designed to give your security team a more streamlined experience, with visibility to more threat detections in one place.
@@ -154,10 +151,10 @@ The following table lists changes and improvements coming to AIR in Microsoft De
 |**Investigations** page|The updated **Investigations** page is more consistent with what you see in [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/automated-investigations). You'll see some general format and styling changes that align with the new, unified **Investigations** view. For example, the investigation graph has a more unified format.|
 |**Users** tab|The **Users** tab is now the **Mailboxes** tab. Details about users are listed on the **Mailbox** tab.|
 |**Email** tab|The **Email** tab has been removed; visit the **Entities** tab to see a list of email and email cluster items.|
-|**Entities** tab|The **Entities** tab has a tab-in-tab style that includes an all-summary view, and the ability to filter by entity type. The **Entities** tab now includes a **Go hunting** option in addition to the **Open in Explorer** option. You can now use either [Threat Explorer](threat-explorer.md) or [advanced hunting](../defender-endpoint/advanced-hunting-overview.md) to find entities and threats, and filter on results.|
+|**Entities** tab|The **Entities** tab has a tab-in-tab style that includes an all-summary view, and the ability to filter by entity type. The **Entities** tab now includes a **Go hunting** option in addition to the **Open in Explorer** option. You can now use either [Explorer](threat-explorer.md) or [advanced hunting](../defender-endpoint/advanced-hunting-overview.md) to find entities and threats, and filter on results.|
 |**Actions** tab|The updated **Actions** tab now includes a **Pending actions** tab and an **Actions history** tab. Actions can be approved (or rejected) in a side pane that opens when you select a pending action.|
 |**Evidence** tab|A new **Evidence** tab shows the key entity findings related to actions. Actions related to each piece of evidence can be approved (or rejected) in a side pane that opens when you select a pending action.|
-|**Action center**|The updated **Action center** ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)) brings together pending and completed actions across email, devices, and identities. To learn more, see Action center. (To learn more, see [The Action center](../defender/m365d-action-center.md).)|
+|**Action center**|The updated **Action center** (<https://security.microsoft.com/action-center>) brings together pending and completed actions across email, devices, and identities. To learn more, see Action center. (To learn more, see [The Action center](../defender/m365d-action-center.md).)|
 |**Incidents** page|The **Incidents** page now correlates multiple investigations together to provide a better consolidated view of investigations. ([Learn more about Incidents](../defender/incidents-overview.md).)|
 |
 

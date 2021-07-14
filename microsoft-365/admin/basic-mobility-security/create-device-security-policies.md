@@ -15,6 +15,7 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - MET150
 description: "Use Basic Mobility and Security to create device policies that protect your organization information."
@@ -34,14 +35,14 @@ You can use Basic Mobility and Security to create device policies that help prot
 - To create and deploy Basic Mobility and Security policies in Microsoft 365, you need to be a Microsoft 365 global admin. For more info, see [Permissions in the Security & Compliance Center](../../security/office-365-security/permissions-in-the-security-and-compliance-center.md).
 - Before you deploy policies, let your organization know the potential impacts of enrolling a device in Basic Mobility and Security. Depending on how you set up the policies, noncompliant devices can be blocked from accessing Microsoft 365 and data, including installed applications, photos, and personal information on an enrolled device, and data can be deleted.
 
->[!NOTE]
->Policies and access rules created in Basic Mobility and Security for Microsoft 365 Business Standard override Exchange ActiveSync mobile device mailbox policies and device access rules created in the Exchange admin center. After a device is enrolled in Basic Mobility and Security for Microsoft 365 Business Standard, any Exchange ActiveSync mobile device mailbox policy or device access rule applied to the device is ignored. To learn more about Exchange ActiveSync, see [Exchange ActiveSync in Exchange Online](/exchange/clients-and-mobile-in-exchange-online/exchange-activesync/exchange-activesync).
+> [!NOTE]
+> Policies and access rules created in Basic Mobility and Security for Microsoft 365 Business Standard override Exchange ActiveSync mobile device mailbox policies and device access rules created in the Exchange admin center. After a device is enrolled in Basic Mobility and Security for Microsoft 365 Business Standard, any Exchange ActiveSync mobile device mailbox policy or device access rule applied to the device is ignored. To learn more about Exchange ActiveSync, see [Exchange ActiveSync in Exchange Online](/exchange/clients-and-mobile-in-exchange-online/exchange-activesync/exchange-activesync).
 
 ## Step 1: Create a device policy and deploy to a test group
 
 Before you can start, make sure you have activated and set up Basic Mobility and Security. For instructions, see [Overview of Basic Mobility and Security](overview.md).
 
-1. From your browser, type [https://protection.office.com/devicev2](https://protection.office.com/devicev2).
+1. From your browser, type <https://protection.office.com/devicev2>.
 
 2. Select **Create a policy**.
 
