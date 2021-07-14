@@ -161,7 +161,7 @@ You'll need to allow the application you created in Microsoft 365 Defender.
  
 You'll need to have **Manage portal system settings** permission to allow the application. Otherwise, you'll need to request your customer to allow the application for you.
 
-1. Go to `https://security.microsoft.com?tid=<customer_tenant_id>` (replace \<customer_tenant_id\> with the customer's tenant ID.
+1. Go to `https://security.microsoft.com?tid=<customer_tenant_id>` (replace \<customer_tenant_id\> with the customer's tenant ID).
 
 2. Click **Settings** > **Endpoints** > **APIs** > **SIEM**. 
 
