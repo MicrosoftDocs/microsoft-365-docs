@@ -38,7 +38,9 @@
       href: /defender-for-identity
     - name: Microsoft 365 for Enterprise
       href: ../enterprise/index.yml
-    - name: Microsoft 365 for Business
+    - name: Microsoft Defender for business
+      href: ./defender-business/mdb-overview.md
+    - name: Microsoft 365 for business
       href: ./index.yml
     - name: Microsoft 365 Compliance
       href: ../compliance/index.yml
