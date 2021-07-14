@@ -163,30 +163,43 @@ To create a collection of Teams content:
 
    1. **Save collection as draft**. Choose this option to create a draft collection. As previously explained, a draft collection doesn't add the collection results to a review set. It returns an estimate of the search results that match the search query for the data sources in the collection scope. This gives you the opportunity to view [collection statistics and reports[(collection-statistics-reports.md)] and edit and rerun the draft collection. When you satisfied with the result of a draft collection, you can commit it to a review set. For more information, see [Create a draft collection](create-draft-collection.md).
 
-   2. **Collect items and add to a review set**. Choose this option to run the collection and then add the results to a review set. You can add the collection to a new or existing review set. Also note that the options to collect contextual Teams conversation messages (also called *conversation threading*) and collect cloud attachments are selected by default and can't be unselected. These options are automatically applied because of the large case format that you used when you initially created the new case for Teams content. For more information about committing collections to a review set, see [Commit a draft collection to a review set](commit-draft-collection.md).
+   2. **Collect items and add to a review set**. Choose this option to run the collection and then add the results to a review set. You can add the collection to a new or existing review set. Note that the options to collect contextual Teams conversation messages (also called *conversation threading*) and collect cloud attachments are selected by default and can't be unselected. These options are automatically applied because of the large case format that you used when you initially created the new case for Teams content. For more information about committing collections to a review set, see [Commit a draft collection to a review set](commit-draft-collection.md).
 
 10. After you're finished configuring the collection, submit the collection to create a draft collection or collect items and add them to a review set.
 
+   When the process of adding the collection to the review set is completed, the status value for the collection on the **Collections** tab is set to **Committed**.
+
 ## Review Teams content in a review set
 
+After you add collections of Teams content to a review set, the next step is to review the content for its relevance to your investigation and cull it if necessary. An important prerequisite to reviewing Teams content is understanding how Advanced eDiscovery processes Teams chat conversations and attachments when adding them to a review set. This processing of Teams content results in the following three things:
 
+- **[Grouping](#grouping)**. How posts and replies in chat conversations are grouped together and presented in the review set. This also includes how child items in chat conversations are extracted and group within the conversation.
 
-Understand grouping, threading, and extraction behavior for Teams messages to optimize review of Teams content.  
+- **[Conversation threading](#conversation-threading)**. How Advanced eDiscovery determines that additional content from a chat conversation to add to a review set to provide context around items that matched the collection criteria.
 
- 
+- **[Metadata](#metadata-for-teams-content)**. Additional metadata properties that Advanced eDiscovery adds to Teams content when it's added to a review set.
 
-### Grouping 
+Understand grouping, conversation threading, and Teams metadata will help you optimize the review and analysis of Teams content.
 
-After Teams content is collected into a review set, Team chat messages are grouped by family or by conversation.  
+### Grouping
 
-Transcript  
+When content from Teams chat conversations is added to a review set, posts and replies from conversations are added to HTML transcript files. A single chat conversation can have multiple transcript files. An important function of these transcript files is to present Teams content as conversations and not as individual (or separate) messages. This helps provides context for items that matched the search criteria of your collections in the previous step. Items are group in transcript files by *family* and *conversation*. Items in the same family will have the same value for the **FamilyId** metadata property. Items in the same conversation will have the same value for the **ConversationId** metadata property.
 
+The following table describes how the different types of Teams chat content is grouped by family and conversation.
 
 | Teams content type|Group by family  |Group by conversation  |
 |:---------|:---------|:---------|
-|Teams 1:1 and group chats   | A transcript and its attachments/extracted items will share the same FamilyId        |ll transcripts and their family items within the same conversation/thread would share the same ConversationId. For Teams 1-1 chat, transcripts of different time windows, but same conversation thread would be grouped together.           |
-|Teams channel and private channels    | A transcript and its attachments/extracted items will share the same FamilyId. Each post and all its replies would be its own transcript.        |Each post has its unique conversationId. If there are recent replies for a post that weren’t collected initially, these replies will continue to be grouped via ConversationId with the originally collect post.           |
+|Teams 1:1 and group chats   | A transcript and all of its attachments and extracted items share the same **FamilyId**. |All transcript files and their family items within the same conversation share the same **ConversationId**. This includes the following items:<br/><br/>  - All extracted items that are attachments of a transcript <br/> - All transcripts within the same chat conversation<br/> - All custodian copies of each transcript<br/> - Transcripts from subsequent collections from the same chat conversation <br/><br/>  For Teams 1:1 chat conversations, you might have multiple transcript files, each one corresponding to a different time frame within the conversation. Because these transcript files contain content from the same conversation, they share the same **ConversationId**.
+|Teams channel and private channel chats    | Each post and all replies and attachments are saved to its own transcript. This transcript and all of its attachments and extracted items share the same **FamilyId**.         |Each post has a unique **ConversationId**. If there are subsequent collections from the same post, the transcripts resulting from those collections will have the same **ConversationId**.|
 ||||
+
+Use the **Group** control in the menu bar of a review set to view Teams content grouped by family or conversation.
+
+To view Teams content grouped by family, select the **Group family attachments** group option in a review set.
+
+
+
+To view Teams content grouped by conversation, select the **Group Teams or Yammer conversations** group option in a review set.
 
 
 ### Conversation threading
@@ -196,6 +209,8 @@ Transcript HTML Threading
 - **Teams 1:1 chats and group chats**. All messages that were posted within a 24-hour time window of responsive items are grouped in a single transcript.  
 
 - **Teams channel messages and private channel messages**. Each post and all its corresponding replies are grouped in a single transcript.
+
+### Metadata for Teams content
 
 
 
