@@ -43,7 +43,7 @@ Get-MultiGeoRegion -EntityType User -EntityId <UPN>
 
 ## Channel messages
 
-Each Microsoft 365 group has a Preferred Data Location (PDL) which denotes the geo location where related data is to be stored. Teams uses the PDL for the group associated with each team to determine where to store channel messaging data for that team. This includes Private Channels as well as chat that occurs within a channel meeting.
+Each Microsoft 365 group has a Preferred Data Location (PDL) which denotes the geo location where related data is to be stored. Teams uses the PDL for the group associated with each team to determine where to store channel messaging data for that team. This includes private channels as well as chat that occurs within a channel meeting.
 
 When a user creates a new team, that user's PDL determines what PDL is assigned to the Microsoft 365 group. The group PDL determines where that team's data is stored. If that user's PDL later changes, the group's PDL is not changed.
 
