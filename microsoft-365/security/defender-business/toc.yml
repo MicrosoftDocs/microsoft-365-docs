@@ -2,8 +2,13 @@
   href: index.yml
   expanded: true
   items:
-    - name: Overview of Defender for business
-      href: mdb-overview.md          
+    - name: What is Microsoft Defender for business?
+      href: 
+      items:
+          - name: Overview of Defender for business
+            href: defender-business/mdb-overview.md
+          - name: Comparing plans for small and midsized businesses
+            href: compare-mdb-m365b.md
     - name: Set up and configure Microsoft Defender for business
       href: mdb-setup-configuration.md
       items:
@@ -21,8 +26,22 @@
             href: mdb-view-edit-device-policies.md
           - name: Configuration settings
             href: mdb-configuration-settings.md
+          - name: Get help with setup and configuration
+            href: 
     - name: Getting started with Defender for business
       href: mdb-get-started.md
+      items:
+          - name: Portal overview
+            href:
+          - name: Navigation
+            href: 
     - name: How to use Defender for business
       href: mdb-use.md
+      items: 
+          - name: View and manage incidents
+            href: 
+          - name: Respond to and mitigate threats
+            href:
+          - name: Review pending and completed actions
+            href: 
 
