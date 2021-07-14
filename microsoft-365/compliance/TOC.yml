@@ -561,6 +561,45 @@
           href: record-versioning.md
         - name: Resources for regulatory requirements
           href: retention-regulatory-requirements.md
+- name: Manage app governance
+  items: 
+    - name: Protect and govern your apps
+      href: app-governance-manage-app-protection-governance.md
+    - name: Get Started with app governance
+      href: app-governance-get-started.md
+    - name: Submit feedback on app governance
+      href: app-governance-feedback.md
+    - name: Get visibility and insights
+      items:
+        - name: Learn about visibility and insights
+          href: app-governance-visibility-insights-overview.md
+        - name: Get started
+          href: app-governance-visibility-insights-get-started.md
+        - name: View your apps
+          href: app-governance-visibility-insights-view-apps.md
+        - name: Determine compliance posture
+          href: app-governance-visibility-insights-compliance-posture.md
+    - name: Implement app policies
+      items:
+        - name: Learn about app policies
+          href: app-governance-app-policies-overview.md
+        - name: Get started
+          href: app-governance-app-policies-get-started.md
+        - name: Create app policies
+          href: app-governance-app-policies-create.md
+        - name: Manage app policies
+          href: app-governance-app-policies-manage.md
+    - name: Detect and remediate app threats
+      items:
+        - name: Learn about detection and remediation
+          href: app-governance-detect-remediate-overview.md
+        - name: Get started
+          href: app-governance-detect-remediate-get-started.md
+        - name: Investigate anomaly detection alerts
+          href: app-governance-anomaly-detection-alerts.md
+        - name: Remediate app threats
+          href: app-governance-detect-remediate-detect-threats.md
+
 - name: Manage eDiscovery
   items:
     - name: Microsoft 365 eDiscovery solutions
@@ -938,6 +977,18 @@
           href: ../solutions/financial-services-secure-collaboration.md
         - name: Energy services security and compliance
           href: ../solutions/energy-secure-collaboration.md
+- name: Manage privacy risks
+  items:
+    - name: Learn about privacy management
+      href: privacy-management.md
+    - name: Get started with privacy management
+      href: privacy-management-setup.md
+    - name: Find and visualize personal data in privacy management
+      href: privacy-management-data-profile.md
+    - name: Create and manage policies in privacy management
+      href: privacy-management-policies.md
+    - name: Manage subject rights requests in privacy management
+      href: privacy-management-subject-rights-requests.md
 - name: Hybrid compliance capabilities
   items: 
     - name: Exchange Online mail encryption with AD RMS

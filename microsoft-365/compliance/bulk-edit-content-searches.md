@@ -27,7 +27,7 @@ For more information about using the Search Statistics tool, see [View keyword s
 
 ## Use the Bulk Search Editor to change queries
 
-1. Go to <https://protection.office.com>, and then select **Search** \> **Content search**.
+1. Go to <https://compliance.microsoft.com>, and then select **Content search**.
 
 2. In the list of searches, select one or more searches, and then select **Bulk Search Editor** ![Bulk Search Editor button](../media/1ddb3d18-2f00-4a7b-98a6-817ca5ec7014.png).
 
