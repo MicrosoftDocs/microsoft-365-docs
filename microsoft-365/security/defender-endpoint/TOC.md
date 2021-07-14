@@ -681,3 +681,4 @@
 # [Microsoft 365 Defender](../defender/index.yml)
 # [Defender for Office 365](../office-365-security/index.yml)
 # [Defender for Identity](/defender-for-identity/)
+# [Microsoft Defender for business](../defender-business/index.yml)
