@@ -31,10 +31,9 @@ Watch the videos below to learn how insider risk management can help your organi
 **Insider risk management solution & development**:
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4j9CN]
 <br>
-<br>
 
 **Insider risk management workflow**:
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4j9CN]
+>[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4OUXB]
 
 ## Configure insider risk management for Microsoft 365
 
