@@ -94,7 +94,7 @@ File plan lets you include more information as part of your retention labels. Th
 
 By default, starting with **Reference ID**, the next few columns display these optional file plan descriptors that you can specify when you create a retention label, or edit an existing label. 
 
-To get you started, there are some out-of-box values for the following file plan descriptors, but you can also create your own values: 
+To get you started, there are some out-of-box values for the following file plan descriptors: 
 - Business function/department
 - Category
 - Authority type
@@ -104,9 +104,9 @@ Example of file plan descriptors when you create or edit a retention label:
 
 ![File plan descriptors when you create or edit a retention label](../media/file-plan-descriptors.png)
 
-Example view of the file plan descriptors columns:
+When you select **Choose** for each of these optional descriptors, you can select one of the out-of-box values, or create your own and then select it. For example: 
 
-![File plan descriptors columns](../media/file-plan-descriptors-on-labels-tab.png)
+![Create new file plan descriptor for provision/citation](../media/file-plan-descriptors-create.png)
 
 ## Export all retention labels to analyze or enable offline reviews
 
