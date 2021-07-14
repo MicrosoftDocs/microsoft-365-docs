@@ -24,6 +24,17 @@ Increasingly, employees have more access to create, manage, and share data acros
 
 Insider risk management in Microsoft 365 uses the full breadth of service and 3rd-party indicators to help you quickly identify, triage, and act on risky user activity. By using logs from Microsoft 365 and Microsoft Graph, insider risk management allows you to define specific policies to identify risk indicators and to take action to mitigate these risks.
 
+Watch the videos below to learn how insider risk management can help your organization prevent, detect, and contain risks while prioritizing your organization values, culture, and user experience:
+<br>
+<br>
+
+**Insider risk management solution & development**:
+>[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4j9CN]
+<br>
+
+**Insider risk management workflow**:
+>[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4OUXB]
+
 ## Configure insider risk management for Microsoft 365
 
 Use the following steps to configure insider risk management for your organization:
