@@ -1,5 +1,5 @@
 - name: Microsoft Defender for business
-  href: index.yml
+  href:
   expanded: true
   items:
     - name: What is Microsoft Defender for business?
