@@ -112,15 +112,21 @@ Formerly, portal launches could only be scheduled through SharePoint PowerShell.
 
     > [!NOTE]
     > Up to 50 distinct users or security groups max can be used for the entire launch. Each launch is independent of each other, so if you schedule a launch on another portal, then you could use up to 50 users/security groups for that launch. Additionally, you can use up to 20 distinct users or security groups per wave. 
-
->The portal launch scheduler supports security groups and mail enabled security groups. 
-
+    >
+    > The portal launch scheduler supports security groups and mail enabled security groups. 
 
 8. Confirm portal launch details and select **Schedule**. Once the launch has been scheduled, any changes to the SharePoint portal home page will need to receive a healthy diagnostic result before the portal launch will resume.
 
 ### Launch a portal with over 100k users
 
 If you are planning to launch a portal with over 100,000 users, submit a support request following the steps listed below. Make sure to include all the requested information.
+
+> [!NOTE]
+>
+> - This process should only be followed if you meet the following requirements:
+> - The Launch Page has been completed.
+> - [Portal Health Guidance](https://aka.ms/portalhealth) has been followed.
+> - The Launch date is within 14 days.
 
 **Follow these steps:**
 
@@ -155,7 +161,7 @@ Launches scheduled using the Portal launch scheduler tool can be canceled, or de
 
 2. Then, select **Delete** and then when you see the message below select **Delete** again.
 
-   ![Image of the Portal launch scheduler tool](../media/portal-launch-delete-2.png)
+   ![Image of the prompt that asks if you want to delete or keep a scheduled launch](../media/portal-launch-delete-2.png)
 
 ## Use the PowerShell Portal launch scheduler
 
