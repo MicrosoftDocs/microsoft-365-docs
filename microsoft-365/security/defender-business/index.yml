@@ -45,7 +45,18 @@ landingContent:
         links:
           - text: Set up and configure Microsoft Defender for business
             url: mdb-setup-configuration.md
+          - text: View the requirements
+            url: mdb-requirements.md
+          - text: Get Microsoft Defender for business
+            url: get-defender-business.md
+          - text: Assign roles and permissions
+            url: mdb-roles-permissions.md
+          - text: Choose your portal
+            url: mdb-choose-portal.md
+          - text: Onboard devices
+            url: mdb-onboard-devices.md
           - text: View or edit device policies
             url: mdb-view-edit-device-policies.md
-          - text: Understand configuration settings
-            url: mdb-configuration-settings.md
+  
+  # Card
+  - title: How do I ...?
