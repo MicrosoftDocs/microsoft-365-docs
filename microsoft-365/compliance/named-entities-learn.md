@@ -20,14 +20,14 @@ description: "Learn how named entities help you detect sensitive items containin
 
 # Learn about named entities (preview)
 
- *Named entities* are [Sensitive information types](sensitive-information-type-learn-about.md) (SIT). They're complex dictionary and pattern-based classifiers that you can use to detect person names, physical addresses, and medical terms and conditions. You can see them in the **Compliance Center > Data classification > Sensitive info types**. Here is a partial list of where you can use SITs:
+ *Named entities* are [sensitive information types](sensitive-information-type-learn-about.md) (SIT). They're complex dictionary and pattern-based classifiers that you can use to detect person names, physical addresses, and medical terms and conditions. You can see them in the **Compliance Center > Data classification > Sensitive info types**. Here is a partial list of where you can use SITs:
 
 - [Data loss prevention policies (DLP)](data-loss-prevention-policies.md) 
 - [Sensitivity labels](sensitivity-labels.md)
 - [Retention labels](retention.md)
 - [Communication compliance](communication-compliance.md)
 - [Inside risk management](insider-risk-management-solution-overview.md)
-- [Auto-labelling policies](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)
+- [Autolabeling policies](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)
 
 DLP makes special use of named entities in *enhanced policy templates*, which are pre-configured DLP policies that you can customize for your organizations needs. You can also [create your own DLP policies](create-test-tune-dlp-policy.md) from a [blank template](create-a-dlp-policy-from-a-template.md) 
  and use a named entity SIT as a condition.
@@ -40,7 +40,7 @@ Named entity SITs come in two flavors, *bundled* and *unbundled*
 
 Bundled named entity SITs detect all possible matches. Use them as broad criteria in your DLP policies for detecting sensitive items.
 
-Unbundled named entity SITs have a narrower focus, like a single country. Use them when you need a DLP policy with a more refined detection scope.
+Unbundled named entity SITs have a narrower focus, like a single country. Use them when you need a DLP policy with a narrower detection scope.
  
 Here are some examples of named entity SITs. You can find all 52 of them in the **Compliance Center > Data classification > Sensitive info types**.
 
@@ -61,7 +61,7 @@ Here are some examples of enhanced DLP policies that use named entity SITs. You 
 |---------|---------|---------|
 |Financial|U.S. Gramm-Leach-Bliley Act (GLBA) Enhanced         |Helps detect the presence of information subject to Gramm-Leach-Bliley Act (GLBA), including information like social security numbers or credit card numbers. This enhanced template extends the original by also detecting people's full names, U.S./U.K. passport number, U.S. driver's license number and U.S. physical addresses.         |
 | Medical and health   |Australia Health Records Act (HRIP Act) Enhanced         |Helps detect the presence of information commonly considered to be subject to the Health Records and Information Privacy (HRIP) act in Australia, like medical account number and tax file number. This enhanced template extends the original by also detecting people's full names, medical terms and conditions, and Australia physical addresses.         |
-|Privacy   |General Data Protection Regulation (GDPR) Enhanced         | Helps detect the presence of personal information for individuals inside the European Union (EU) to assist in meeting GDPR privacy obligations. This enhanced template extends the original by also detecting people's full names and physical addresses for countries in the EU.        |
+|Privacy   |General Data Protection Regulation (GDPR) Enhanced         | Helps detect the presence of personal information for individuals inside the European Union (EU) to help meet GDPR privacy obligations. This enhanced template detects people's full names and physical addresses for countries in the EU.        |
 
 
 ## Next steps
@@ -78,6 +78,6 @@ Here are some examples of enhanced DLP policies that use named entity SITs. You 
 - [Sensitivity labels](sensitivity-labels.md)
 - [Retention labels](retention.md)
 - [Communication compliance](communication-compliance.md)
-- [Auto-labelling policies](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)
+- [Autolabelling policies](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)
 - [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md)
 - [Create a DLP policy from a template](create-a-dlp-policy-from-a-template.md) 

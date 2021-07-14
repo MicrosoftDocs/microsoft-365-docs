@@ -58,9 +58,9 @@ To create or edit a DLP policy, use the procedures in [Create, test, and tune a 
 
 ## Workloads and services that support named entities
 
-- **Microsoft Information Governance** (MIG) does not support the use of named entities in Exchange transport rules and data-at-rest.
+- **Microsoft Information Governance** (MIG) doesn't support the use of named entities in Exchange transport rules and data-at-rest.
 - **Microsoft 3655 eDiscovery** supports the use of named entities in Substrate services.
-- **Communication Compliance** does not support the use of named entities in Exchange transport rules and data-at-rest.
+- **Communication Compliance** doesn't support the use of named entities in Exchange transport rules and data-at-rest.
 - **Microsoft Cloud App Security (MCAS)** supports the use of named entities in MCAS policies.
 - **Insider Risk Management** supports the use of named entities in Substrate services.
 
@@ -77,10 +77,10 @@ To create or edit a DLP policy, use the procedures in [Create, test, and tune a 
 |OneDrive for Business data-at-rest     |supported         |
 |SharePoint Online data-at-rest     |supported         |
 |Teams data-at-rest     |supported         |
-|Email messages data-at-res     |not supported         |
+|Email messages data-at-rest     |not supported         |
 |Microsoft Cloud App Security (MCAS)     |supported         |
 
-### Auto-labeling
+### Autolabeling
 
 |Workload/Services |Public Preview Support for Named Entities  |
 |---------|---------|
