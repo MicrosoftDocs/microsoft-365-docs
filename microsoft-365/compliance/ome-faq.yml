@@ -191,7 +191,7 @@ sections:
       - question: |
           Can I use message encryption with compliance features such as eDiscovery?
         answer: |
-          Yes. All encrypted email messages are discoverable by Microsoft 365 compliance features.  See [eDiscovery activities that support encrypted items](/microsoft-365/compliance/ediscovery-decryption?view=o365-worldwide#ediscovery-activities-that-support-encrypted-items) for details.
+          Yes. All encrypted email messages are discoverable by Microsoft 365 compliance features. See [eDiscovery activities that support encrypted items](/microsoft-365/compliance/ediscovery-decryption#ediscovery-activities-that-support-encrypted-items) for details.
 
       - question: |
           Can I remove encryption from email?
