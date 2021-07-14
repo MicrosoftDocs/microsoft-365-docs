@@ -36,7 +36,7 @@ Sensitive information types are pattern-based classifiers. They detect sensitive
 - [Insider risk management](insider-risk-management.md)
 - [Communication compliance](communication-compliance.md)
 - [Auto-labelling policies](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)
-- [Privacy management (preview)](privacy-management.md)]
+- [Privacy management (preview)](privacy-management.md)
 
 ## Fundamental parts of a sensitive information type
 
