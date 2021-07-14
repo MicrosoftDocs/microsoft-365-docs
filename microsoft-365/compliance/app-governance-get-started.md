@@ -25,7 +25,7 @@ To begin using the app governance add-on to Microsoft Cloud App Security:
 
 ## Licensing for app governance
 
-Before you get started with the app governance, you should confirm your [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) and any add-ons. To access and use app governance, your organization must have one of the following subscriptions or add-ons:
+Before you get started with app governance, you should confirm your [Microsoft 365 admin center - subscriptions](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) and any add-ons. To access and use app governance, your organization must have one of the following subscriptions or add-ons:
 
 - Microsoft Cloud App Security
 - Microsoft 365 E5
@@ -52,7 +52,7 @@ Before you get started with the app governance, you should confirm your [Microso
 
 ## Administrator roles
 
-One of the following administrator roles are required to see app governance pages or manage policies and settings:
+One of the following administrator roles is required to see app governance pages or manage policies and settings:
 
 - Application Administrator
 - Cloud Application Administrator
@@ -64,6 +64,9 @@ One of the following administrator roles are required to see app governance page
 - Security Administrator
 - Security Operator
 - Security Reader (read-only)
+
+> [!NOTE]
+> Only a Global Admin can activate the app governance free trial.
 
 Here are the capabilities for each role.
 
