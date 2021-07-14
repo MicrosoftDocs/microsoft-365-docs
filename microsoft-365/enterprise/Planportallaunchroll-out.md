@@ -33,7 +33,7 @@ The deployment approach is highlighted below.
 
 Use the portal launch scheduler to release your portal to users in your organization in scheduled phases. Learn more: 
 
-![Calendar icon](https://docs.microsoft.com/Office/media/icons/calendar-blue.png "Portal launch scheduler")  [Portal Launch Scheduler](https://docs.microsoft.com/microsoft-365/enterprise/portallaunchscheduler)
+![Calendar icon](https://docs.microsoft.com/Office/media/icons/calendar.png "Portal launch scheduler")  [Portal Launch Scheduler](https://docs.microsoft.com/microsoft-365/enterprise/portallaunchscheduler)
 
 
 
