@@ -15,7 +15,7 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: 
 - M365-security-compliance
-description: ""
+description: "Learn how to identify types of sensitive information so that you know what to protect."
 ---
 
 # Learn about sensitive information types
