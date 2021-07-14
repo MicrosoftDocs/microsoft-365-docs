@@ -18,7 +18,7 @@ description: "Get started with app governance capabilities to govern your apps."
 
 # Get started with app governance (in preview)
 
-To begin using the app governance feature for Microsoft Cloud App Security:
+To begin using the app governance add-on to Microsoft Cloud App Security:
 
 1. Verify your account has the appropriate level of licensing. App governance is an add-on feature for Microsoft Cloud App Security (MCAS), and thus MCAS must be present in your account as either a standalone product or as part of the various license packages listed below.
 1. You must have one of the administrator roles listed below to access the app governance pages in the portal.
