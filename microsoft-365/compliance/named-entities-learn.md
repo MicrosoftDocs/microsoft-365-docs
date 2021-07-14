@@ -24,10 +24,8 @@ description: "Learn how named entities help you detect sensitive items containin
 
 - [Data loss prevention policies (DLP)](data-loss-prevention-policies.md) 
 - [Sensitivity labels](sensitivity-labels.md)
-- [Retention labels](retention.md)
-- [Communication compliance](communication-compliance.md)
 - [Inside risk management](insider-risk-management-solution-overview.md)
-- [Autolabeling policies](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)
+- [Microsoft Cloud App Security](https://cloud-app-security/what-is-cloud-app-security)
 
 DLP makes special use of named entities in *enhanced policy templates*, which are pre-configured DLP policies that you can customize for your organizations needs. You can also [create your own DLP policies](create-test-tune-dlp-policy.md) from a [blank template](create-a-dlp-policy-from-a-template.md) 
  and use a named entity SIT as a condition.
@@ -55,7 +53,7 @@ Here are some examples of named entity SITs. You can find all 52 of them in the 
 
 ## Examples of enhanced DLP policies
 
-Here are some examples of enhanced DLP policies that use named entity SITs. You can find all 10 of them in the **Compliance Center > Data loss prevention > Create policy**.
+Here are some examples of enhanced DLP policies that use named entity SITs. You can find all 10 of them in the **Compliance Center > Data loss prevention > Create policy**. Enhanced templates can be used in DLP and auto-labeling.
 
 |Policy category  |Template  |Description  |
 |---------|---------|---------|
@@ -78,6 +76,6 @@ Here are some examples of enhanced DLP policies that use named entity SITs. You 
 - [Sensitivity labels](sensitivity-labels.md)
 - [Retention labels](retention.md)
 - [Communication compliance](communication-compliance.md)
-- [Autolabelling policies](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)
+- [Autolabeling policies](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)
 - [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md)
 - [Create a DLP policy from a template](create-a-dlp-policy-from-a-template.md) 
