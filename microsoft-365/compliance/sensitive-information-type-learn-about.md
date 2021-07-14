@@ -30,12 +30,13 @@ Sensitive information types are pattern-based classifiers. They detect sensitive
 
 ## Sensitive information types are used in
 
-- [Data loss prevention policies](dlp-learn-about-dlp.md) 
+- [Data loss prevention policies](dlp-learn-about-dlp.md)
 - [Sensitivity labels](sensitivity-labels.md)
 - [Retention labels](retention.md)
 - [Insider risk management](insider-risk-management.md)
 - [Communication compliance](communication-compliance.md)
 - [Auto-labelling policies](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)
+- [Privacy management (preview)](privacy-management.md)]
 
 ## Fundamental parts of a sensitive information type
 
