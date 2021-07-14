@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 07/13/2021
+ms.date: 07/14/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -24,7 +24,7 @@ Microsoft Defender for business includes the features and capabilities listed in
 |---|---|---|
 | [![Threat protection symbol](../../media/security/security-threat-castle-32.png)](#threat-and-vulnerability-management) | [Threat and vulnerability management](#threat-and-vulnerability-management) | Threat & vulnerability management (TVM) provides you with actionable information that can help mitigate threats and vulnerabilities in your environment.|
 | [![Next-generation protection symbol](../../media/security/security-shield-divided-32.png)](#next-generation-protection) | [Next-generation protection](#next-generation-protection) |Next-generation protection includes antimalware and antivirus protection—on your devices and in the cloud—to protect against threats. |
-| [![Attack surface reduction symbol](../../media/security/security-shield-slash-32.png)](#attack-surface-reduction) | [Attack surface reduction](#attack-surface-reduction) | Your attack surfaces are all the places and ways that your company is vulnerable to a cyberattack. |
+| [![Attack surface reduction symbol](../../media/security/security-shield-slash-32.png)](#attack-surface-reduction) | [Attack surface reduction](#attack-surface-reduction) | Your attack surfaces are all the places and ways that your company is vulnerable to a cyberattack. <br/>-[Ransomware mitigation](#ransomware-mitigation)  <br/>- [Attack surface reduction rules](#attack-surface-reduction-rules) <br/>- [Application control](#application-control) <br/>- [Web protection](#web-protection) <br/>- [Network protection](#network-protection) <br/>- [Network firewall](#network-firewall) |
 | [![Endpoint detection and response symbol](../../media/security/security-shield-lightning-32.png)](#endpoint-detection-and-response) | [Endpoint detection and response](#endpoint-detection-and-response) | Endpoint detection and response (EDR) receives security signals across your network, devices, and kernel behavior. |
 | [![Automated investigation and response symbol](../../media/security/security-toolkit-32.png)](#automated-investigation-and-response) | [Automated investigation and response](#automated-investigation-and-response) | Automated investigation and response (AIR) capabilities are designed to examine alerts and take immediate action to resolve breaches.|
 | [![Lightbulb symbol](/office/media/icons/lightbulb-idea-capture-blue.png)](#threat-intelligence) | [Threat intelligence](#threat-intelligence) | Threat intelligence capabilities include indicators of compromise and threat analytics.  |
