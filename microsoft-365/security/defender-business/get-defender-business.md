@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 07/13/2021
+ms.date: 07/14/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -51,4 +51,6 @@ If you prefer to get Microsoft Defender for business directly, the first person 
 
 > [!TIP]
 > To learn more about the process of purchasing a Microsoft 365 subscription, see [Try or buy a Microsoft 365 for business subscription](../../commerce/try-or-buy-microsoft-365.md).
+
+## Next steps
 

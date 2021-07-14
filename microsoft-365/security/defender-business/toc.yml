@@ -12,7 +12,7 @@
     - name: Set up and configure Microsoft Defender for business
       href: mdb-setup-configuration.md
       items:
-          - name: Requirements for Microsoft Defender for business
+          - name: Review the requirements
             href: mdb-requirements.md
           - name: Get Microsoft Defender for business
             href: get-defender-business.md
