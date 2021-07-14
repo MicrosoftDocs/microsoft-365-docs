@@ -26,9 +26,10 @@
             href: mdb-configuration-settings.md
     - name: Get started in the portal
       href: mdb-get-started.md
-    - name: Use Defender for business
-      href: mdb-use.md
+    - name: How to use Defender for business
       items: 
+          - name: Use Defender for business
+            href: mdb-use.md
           - name: View and manage incidents
             href: 
           - name: Respond to and mitigate threats
