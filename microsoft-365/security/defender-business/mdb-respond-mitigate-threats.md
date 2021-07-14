@@ -1,13 +1,13 @@
 ---
-title: How to use Microsoft Defender for business
-description: Learn how to view & manage alerts, respond to threats, manage devices, and review remediation actions
+title: Respond to and mitigate threats in Microsoft Defender for business
+description: As threats are detected, you can take actions to respond to and mitigate those threats.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: how-to
-ms.date: 06/30/2021
+ms.date: 07/14/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -15,42 +15,8 @@ ms.reviewer: inbadian, shlomiakirav
 f1.keywords: NOCSH 
 ---
 
-# How to use Microsoft Defender for business
+# Respond to and mitigate threats in Microsoft Defender for business
 
-After you have setup and configured Microsoft Defender for business, you are ready to start using the features and capabilities. Key tasks you can perform with Microsoft Defender for business include:
-
-- Monitoring alerts and incidents
-- Responding to and mitigating detected threats
-- Managing devices
-- Reviewing remediation actions
-
-## Monitor your incidents & alerts
-
-In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, select **Incidents**. Any incidents that were created are listed on the page.
-
-:::image type="content" source="../../media/defender-business/mdb-incidents-list.png" alt-text="Screenshot of the Incidents list":::
-
-Select an alert to open its flyout pane, where you can learn more about the alert. 
-
-:::image type="content" source="../../media/defender-business/mdb-incident-flyout.png" alt-text="Screenshot of incident selected with flyout open":::
-
-In the flyout pane, you can see the alert title, view a list of assets (such as endpoints or user accounts) that were affected, take available actions, and use links to view more information and even open the details page for the selected alert. 
-
-Microsoft Defender for business is designed to help you address detected threats by offering up recommended actions. When you view an alert, look for the recommended actions to take. Also take note of the alert severity, which is determined not only on the basis of the threat severity, but also on the level of risk to your company. 
-
-### Alert severity
-
-When Microsoft Defender Antivirus assigns an alert severity based on the absolute severity of a detected threat (malware) and the potential risk to an individual endpoint (if infected).
-Microsoft Defender for business assigns an alert severity based on the severity of the detected behavior, the actual risk to an endpoint (device), and more importantly, the potential risk to your company. The following table lists a few examples:
-
-| Scenario | Alert severity | Reason |
-|:---|:---|:---|
-| Microsoft Defender Antivirus detects and stops a threat before it does any damage. | Informational | The threat was stopped before any damage was done. |
-| Microsoft Defender Antivirus detects malware that was executing within your company. The malware is stopped and remediated. | Low | Although some damage might have been done to an individual endpoint, the malware now poses no threat to your company. |
-| Malware that is executing is detected by Microsoft Defender for business. The malware is blocked almost immediately. | Medium or High | The malware poses a threat to individual endpoints and to your company. |
-| Suspicious behavior is detected but no remediation actions are taken yet. | Low, Medium, or High | The severity depends on the degree to which the behavior poses a threat to your company. |
-
-## Respond to and mitigate threats
 
 When you sign into the Microsoft 365 Defender portal, on the Home page, you’ll see cards that tell you at a glance how many threats were detected, along with how many user accounts, endpoints (devices), and other assets were affected. 
 
@@ -70,25 +36,3 @@ On the flyout, you can view information and take one of several actions. Select 
 
 On the flyout, select an action. For example, you might choose **Run antivirus scan**, which will cause Microsoft Defender Antivirus to start a quick scan on the device. Or, you could select **Initiate Automated Investigation** to trigger an automated investigation on the device.
 
-
-## Review remediation actions in the Action center
-
-As threats are detected, remediation actions come into play. Depending on the particular threat and how your security settings are configured, remediation actions might be taken automatically or only upon approval. Examples of remediation actions include sending a file to quarantine, stopping a process from running, and removing a scheduled task. All remediation actions are tracked in the Action center.
-
-:::image type="content" source="../../media/defender-business/mdb-actioncenter.png" alt-text="Screenshot of the Action center":::
-
-### Visit the Action center
-
-1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and sign in.
-
-2. In the navigation pane, choose **Action center**.
-
-3. Select the **Pending** tab to view and approve (or reject) any pending actions. Such actions can arise from antivirus/antimalware protection, automated investigations, manual response activities, or live response sessions.
-
-4. Select the **History** tab to view a list of completed actions. 
-
-
-### Remediation actions in Microsoft Defender for business
-
-
-## Manage devices
