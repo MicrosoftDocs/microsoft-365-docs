@@ -140,8 +140,6 @@ In file plan, you can bulk-import new retention labels by using a .csv file with
 4. Select **Browse for files** to upload the filled-out template.
     
    File plan uploads the file and validates the entries, displaying the import statistics.
-    
-   ![File plan import statistics](../media/file-plan-import-statistics.png)
 
 5. Depending on the validation results:
     
