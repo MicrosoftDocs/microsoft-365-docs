@@ -35,8 +35,6 @@ Although you can create and manage retention labels from **Information governanc
 
 File plan can be used for all retention labels, even if they don't mark content as a record.
 
-![File plan page](../media/compliance-file-plan.png)
-
 For information about what retention labels are and how to use them, see [Learn about retention policies and retention labels](retention.md).
 
 ## Accessing file plan
