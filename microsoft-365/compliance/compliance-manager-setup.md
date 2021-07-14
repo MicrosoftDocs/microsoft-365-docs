@@ -51,7 +51,7 @@ The person holding the global admin role for your organization can set user perm
 
 To set permissions and assign roles in the Microsoft 365 compliance center, follow the steps below:
 
-1. Go to the [Microsoft 365 Compliance Center](https://compliance.microsoft.com/homepage) and select **Permissions** on the left navigation.
+1. Go to the [Microsoft 365 Compliance Center](https://compliance.microsoft.com/compliancemanager) and select **Permissions** on the left navigation.
 
 2. Under the **Compliance center** dropdown, select **Roles**. 
 
