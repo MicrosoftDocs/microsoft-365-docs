@@ -48,7 +48,7 @@ description: "For Managed Service Providers (MSPs), learn how to sign up for Mic
 
     To verify that Microsoft 365 Lighthouse was successfully added to your tenant, look for Microsoft 365 Lighthouse under **Billing > Your Products** in the Microsoft 365 admin center.
 
-1. If you aren't redirected to the Microsoft 365 Lighthouse portal, go to `https://lighthouse.microsoft.com/`.
+1. If you aren't redirected to the Microsoft 365 Lighthouse portal, go to <a href="https://lighthouse.microsoft.com" target="_blank">https://lighthouse.microsoft.com</a>.
 
 1. Select **Agree & Continue** to complete the partner agreement amendment.
 
@@ -57,7 +57,7 @@ description: "For Managed Service Providers (MSPs), learn how to sign up for Mic
 
 ## Next steps
 
-[Configure Microsoft 365 Lighthouse portal security]() 
+[Configure Microsoft 365 Lighthouse portal security](m365-lighthouse-configure-portal-security.md) 
 
 ## Related content
 
