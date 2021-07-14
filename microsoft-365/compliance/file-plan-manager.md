@@ -51,8 +51,6 @@ In the Microsoft 365 compliance center, go to **Solutions** > **Records manageme
 
 If **Records management** doesn't display in the navigation pane, first scroll down, and select **Show all**.
 
-![File plan page](../media/compliance-file-plan.png)
-
 ## Navigating your file plan
 
 If you've already created retention labels from **Information governance** in the Microsoft 365 compliance center, these labels automatically display in your file plan. 
@@ -96,7 +94,7 @@ File plan lets you include more information as part of your retention labels. Th
 
 By default, starting with **Reference ID**, the next few columns display these optional file plan descriptors that you can specify when you create a retention label, or edit an existing label. 
 
-To get you started, there are some out-of-box values for the following file plan descriptors: 
+To get you started, there are some out-of-box values for the following file plan descriptors, but you can also create your own values: 
 - Business function/department
 - Category
 - Authority type
