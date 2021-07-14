@@ -733,6 +733,8 @@
           href: get-started-with-advanced-ediscovery.md
         - name: Create and manage a case
           href: create-and-manage-advanced-ediscoveryv2-case.md
+        - name: Advanced eDiscovery workflow for Teams content
+          href: teams-workflow-in-advanced-ediscovery.md
         - name: Manage custodians and non-custodial data sources
           href: managing-custodians.md
           items: 
