@@ -56,7 +56,7 @@ Please see the onboarding user guide for more information or contact our team at
 
 **Q: Can Test Base support our automated tests?**
 
-**A:** Yes, Test Base supports automated tests however, we do not support manual tests at this time due to service capabilities.
+**A:** Yes, Test Base supports automated tests, however, we do not support manual tests at this time due to service capabilities.
 
 **Q: What languages and frameworks of automated tests do you support?**
 
