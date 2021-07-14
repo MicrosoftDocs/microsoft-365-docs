@@ -19,8 +19,7 @@ f1.keywords: NOCSH
 
 As a preview customer, you likely have assistance in setting up Microsoft Defender for business for your company. However, you can do the setup and configuration process yourself as well. Use this article as a guide.
 
-The setup and configuration process is as follows:
-
+## Setup and configuration process
 
 | Step  | Description  |
 |---------|---------|
