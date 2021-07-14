@@ -50,7 +50,7 @@ The first step to managing Teams content in Advanced eDiscovery is to create a c
 
 - Teams chat conversations (that include the original post and all replies) are automatically added to review sets as an HTML transcript file. This helps provides context the conversations with responsive items and reduce total number of items produced by chat-based content.   
 
-- Collections up to 1 TB can be added to reviews sets, which enables you to collect and amounts large amounts of Teams content in a case.
+- Collections up to 1 TB can be added to reviews sets, which lets you collect and amounts large amounts of Teams content in a case.
 
 To create a large case:
 
@@ -103,17 +103,17 @@ To add custodians to a case and preserve custodial data sources:
 
 ## Collect Teams content and add to review set
 
-After adding custodians to the case and preserving content in custodian data sources, the next step in the workflow is to search for Teams content that's relevant to your investigation and add it to a review set for further review and analysis. Though it's typical to collect Teams content together with content content from other Microsoft 365 services such as email in Exchange and documents in SharePoint, this section will specifically focus on collecting Teams content in a collection. You can create additional collections that collect non-Teams content to add to a review set.
+After adding custodians to the case and preserving content in custodian data sources, the next step in the workflow is to search for Teams content that's relevant to your investigation and add it to a review set for further review and analysis. Though it's typical to collect Teams content together with content from other Microsoft 365 services such as email in Exchange and documents in SharePoint, this section will specifically focus on collecting Teams content in a collection. You can create additional collections that collect non-Teams content to add to a review set.
 
 When you collect Teams content for a case, there are two steps in the workflow:
 
-1. **Create a draft collection**.  The first step is to create a *draft collection*, which is an estimate of the items that match your search criteria. You can view information about the results that matched the search query, such as the total number and size of items found, the different data sources where they were found, and statistics about the search query. You can also preview a sample of items that were returned by the collection. Using these statistics, you can change the search query and rerun the draft collection as many times as is necessary to narrow your results until you're satisfied you're collecting the content relevant to your case.
+1. **Create a draft collection**.  The first step is to create a *draft collection*, which is an estimate of the items that match your search criteria. You can view information about the results that matched the search query, such as the total number and size of items found, the different data sources where they were found, and statistics about the search query. You can also preview a sample of items that were returned by the collection. Using these statistics, you can change the search query and rerun the draft collection as many times as is necessary to narrow the results until you're satisfied you're collecting the content relevant to your case.
 
 2. **Commit a draft collection to a review set**. Once you're satisfied with the results of a draft collection, you can commit the collection to a review set. When you commit a draft collection, the items returned by the collection are added to a review set for review, analysis, and export.
 
-You also have the option of not running a draft collection and adding the collection results directly to a review set.
+You also have the option of not running a draft collection and adding the collection results directly to a review set when you create and run the collection.
 
-To create a draft collection of Teams items:
+To create a collection of Teams content:
 
 1. Go to the Advanced eDiscovery case that you added the custodians to in the previous section, and then click **Collections**.
 
@@ -127,47 +127,47 @@ To create a draft collection of Teams items:
 
 5. Select one or more custodians and then click **Add**.
 
-   After you add specific custodians to the collection, a list of specific data sources for each custodian is displayed. These are the data sources that you configured when you added the custodian to the case. All custodian data sources are selected by default.
+   After you add specific custodians to the collection, a list of specific data sources for each custodian is displayed. These are the data sources that you configured when you added the custodian to the case. All custodian data sources are selected by default. This includes any Teams and private channels that you associated with a custodian.
 
-6. We recommending removing custodians' OneDrive accounts from the collection (by un-selecting the checkbox in the **Custodian's OneDrive** column for each custodian). This prevents the collection of duplicate files that where attached to 1:1 chats and group chats. To collect these files, you can enable the option of collecting cloud attachments when you commit the draft collection to the review set. By using this method (instead of searching OneDrive accounts as part of the collection) files that attached to 1:1 and group chats are grouped in the conversation transcript.
+   We recommend doing the two following things when collecting Teams content:
 
-7. After you configure the custodial data sources
+   - Remove custodians' OneDrive accounts from the collection scope (by unselecting the checkbox in the **Custodian's OneDrive** column for each custodian). This prevents the collection of duplicate files that were attached to 1:1 chats and group chats. Cloud attachments are automatically collected from each data source that was searched in the collection when you commit the draft collection to the review set. By using this method (instead of searching OneDrive accounts as part of the collection), files attached to 1:1 and group chats are grouped in the conversation they were shared in.
 
-Teams 1-1, Group chat, and Private Channel messages will automatically be included as part of this collection scope given that Custodian’s mailbox are automatically selected by default.  
+   - Remove private channels from the collection scope (by unselecting the appropriate checkbox in the **Additional site** column) to eliminate collecting duplicate files that were attached to private channel conversations. Files attached to private channel conversations are automatically added to the review set when you commit the draft collection and grouped in the conversations that were shared in.
 
-We recommend removing all custodian’s OneDrive to avoid bringing in unnecessary duplicate items attachment items by de-selecting the checkbox next to the OneDrive column. There is a collection setting in Step 7 that enables you to collect cloud attachments to ensure that attachments are included as part of your collection and grouped with the transcript in which they are shared.  
+6. On the **Non-custodial data sources** wizard page, you can choose non-custodial data sources that contain Teams content that you may have added to the case to search in the collection. For more information, see [Add non-custodial data sources to a case](non-custodial-data-sources.md).
 
-If you have associated Teams Channels with Custodians when you added a Custodian, then Teams Channel should also be automatically included in the scope of this collection. To confirm, horizontally scroll to the end of the table and ensure that all checkboxes under Additional teams are selected.  
+7. On the **Additional locations** wizard page, you can add other data sources to search in the collection. For example, you could add the mailbox and site for a team that wasn't added as a custodial or non-custodial data source.
 
-On the Non-custodial data sources page, do one of the following things to identify the non-custodial data sources to collect content from: 
+8. On the **Conditions** wizard page, configure the search query to collect Teams content from the data sources that you specified on the previous wizard pages. You can use various keywords and search conditions to narrow the scope of the collection. For more information, see [Build search queries for collections](building-search-queries.md).
 
-Click Select non-custodial data sources to select specific non-custodial data sources that were added to the case.  
+   To limit the collection to only Teams chat conversations (including 1:1, group, channel, and private chats) use the following query, which also includes a date range:
 
-Even though you have added a SharePoint Site for Teams Private Channels during data source identification to place a hold on this content, we don’t recommend including as part of search to avoid bringing unnecessary duplicate attachments. There is a collection setting in Step 7 that enables you to collect cloud attachments to ensure that attachments are included as part of your collection and grouped with the transcript in which they are shared. 
+   ```text
+   (kind:im AND kind:microsoftteams) AND date:<date range>
+   ```
 
-Select Next to skip over this step.  
+   You can type this query in the **Keywords** box or add it using conditions; for example: 
 
-On the Additional data sources page, select Next to skip over this step.  
+   ### Keywords box
 
-On the Conditions page, you can create the search query that is used to collect items from the data sources that you've identified in the previous wizard pages. You can also add various search conditions to narrow the scope of the collection. For more information, see Build search queries for collections. 
+   ![Keyword query](..\media\TeamsKeywordQuery.png)
 
-To limited your collection to just Teams content, add the following condition into your keyword condition 
+   ### Conditions
 
-“kind:microsoftteams(c:c)(date=2021-03-28..2021-06-30)” 
+   ![Conditions query](..\media\TeamsConditionsQuery.png)
 
-On the Save as draft or add to review set page, select  Add to review set 
+9. On the **Save draft or collect** wizard page, do one of the following depending on whether you want to create a draft collection or commit the collection to a review set.
 
-Select a new review set and provide a name 
+   ![Save draft collection or commit collection](..\media\TeamsDraftCommitCollection.png)
 
-Collection of cloud attachments and contextual messages are selected by default for all Large cases.  
+   1. **Save collection as draft**. Choose this option to create a draft collection. As previously explained, a draft collection doesn't add the collection results to a review set. It returns an estimate of the search results that match the search query for the data sources in the collection scope. This gives you the opportunity to view [collection statistics and reports[(collection-statistics-reports.md)] and edit and rerun the draft collection. When you satisfied with the result of a draft collection, you can commit it to a review set. For more information, see [Create a draft collection](create-draft-collection.md).
 
+   2. **Collect items and add to a review set**. Choose this option to run the collection and then add the results to a review set. You can add the collection to a new or existing review set. Also note that the options to collect contextual Teams conversation messages (also called *conversation threading*) and collect cloud attachments are selected by default and can't be unselected. These options are automatically applied because of the large case format that you used when you initially created the new case for Teams content. For more information about committing collections to a review set, see [Commit a draft collection to a review set](commit-draft-collection.md).
 
+10. After you're finished configuring the collection, submit the collection to create a draft collection or collect items and add them to a review set.
 
-
-
-
-
-## Review Teams content 
+## Review Teams content in a review set
 
 
 
