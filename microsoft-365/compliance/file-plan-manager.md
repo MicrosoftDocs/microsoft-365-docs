@@ -35,8 +35,6 @@ Although you can create and manage retention labels from **Information governanc
 
 File plan can be used for all retention labels, even if they don't mark content as a record.
 
-![File plan page](../media/compliance-file-plan.png)
-
 For information about what retention labels are and how to use them, see [Learn about retention policies and retention labels](retention.md).
 
 ## Accessing file plan
@@ -131,10 +129,7 @@ In file plan, you can bulk-import new retention labels by using a .csv file with
 
    ![Option to download a blank file plan template](../media/file-plan-blank-template-option.png)
 
-
-   ![Blank file plan template opens in Excel](../media/file-plan-blank-template.png)
-
-3. After the template downloads, add one entry for each label, and save the file. Use the following information that describes the properties and valid values for each property. For import, some values have a maximum length:
+3. After the template downloads, add one row for each label, and save the file. Use the following information that describes the properties and valid values for each property. For import, some values have a maximum length:
     
     - **LabelName**: Maximum length of 64 characters
     - **Comment** and **Notes**: Maximum length of 1024 characters
