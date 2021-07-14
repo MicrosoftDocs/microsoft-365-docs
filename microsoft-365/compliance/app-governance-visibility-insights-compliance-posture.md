@@ -49,7 +49,7 @@ From this page, you can see:
 
 - For data and resources access:
 
-  - The application API data access in the last 90 days
-  - The usage of the top resources in the last 90 days
+  - Total data accessed by apps in the tenant through Graph API over the current and previous three calendar months. (Currently only includes Mail and File upload and download usage)
+  - Data usage over the current and previous three calendar months, broken down by resource type. (Currently only includes Mail and File upload and download usage)
 
   From this information, you can determine if there are anomalous spikes in access to the data in your Microsoft 365 tenant.

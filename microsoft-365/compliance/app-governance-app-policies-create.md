@@ -27,7 +27,7 @@ Along with a built-in set of capabilities to detect anomalous app behavior and g
 
 You can create app policies from provided templates that can be customized, or you can create your own custom app policy.
 
-To create a new app policy, go to **Microsoft 365 Compliance Center > App protection & governance > Overview page > Policies**:
+To create a new app policy, go to **Microsoft 365 Compliance Center > App governance > Overview page > Policies**:
 
 - To create a new app policy with templates designed for app usage, select **Create policy** under **Create an app usage policy**.
 - To create a new app policy with templates designed for app permissions, select **Create policy** under **Create a permissions policy**.

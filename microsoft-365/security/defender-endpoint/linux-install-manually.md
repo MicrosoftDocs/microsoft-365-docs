@@ -300,7 +300,12 @@ Download the onboarding package from Microsoft Defender Security Center:
     mdatp health --field org_id
     ```
 
-2. Run MicrosoftDefenderATPOnboardingLinuxServer.py, and note that, in order to run this command, you must have `python` installed on the device:
+2. Run MicrosoftDefenderATPOnboardingLinuxServer.py. 
+   
+    >[!NOTE]
+    >To run this command, you must have `python` installed on the device. If you're running RHEL 8.x or Ubuntu 20.04 or higher, then you will need to use Python 3 instead of Python.
+
+
 
     ```bash
     python MicrosoftDefenderATPOnboardingLinuxServer.py
