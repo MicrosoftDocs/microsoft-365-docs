@@ -4,7 +4,7 @@
     - name: What is Microsoft Defender for business?
       items:
           - name: Overview of Defender for business
-            href: defender-business/mdb-overview.md
+            href: mdb-overview.md
           - name: Compare plans for small and midsized businesses
             href: compare-mdb-m365b.md
     - name: Set up and configure Microsoft Defender for business
