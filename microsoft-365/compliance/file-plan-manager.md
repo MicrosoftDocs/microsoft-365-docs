@@ -179,7 +179,7 @@ In file plan, you can bulk-import new retention labels by using a .csv file with
     
     - If validation passes: You can select **Go Live** to make the retention labels available in your tenant. Or, select the Close icon for the page, and **Yes** to confirm you want to close the wizard without making the retention labels available in your tenant at this time.
 
-When the imported labels are added to your tenant, you can now add them to a new retention label policy, or auto-apply them. You can do this right from the **File plan** page by selecting the dropdown from **+ Create a label** and then **Policy to publish labels**, or **Policy to auto-apply a label**.
+When the imported labels are added to your tenant, you can now make them available to users by publishing them, or auto-apply them. You can do both from the **Label policies** tab, and then select **Publish labels**, or **Auto-apply a label**.
 
 ## Next steps
 
