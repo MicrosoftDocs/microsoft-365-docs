@@ -77,15 +77,17 @@ Improve your security configuration by remediating issues from the security reco
 
 2. Select an item on the list. The flyout panel will open with details related to the recommendation. Select **Remediation options**.
 
-   ![Security controls related security recommendations](images/security-controls.png)
+   :::image type="content" alt-text="Security controls related security recommendations." source="images/security-controls.png":::
 
 3. Read the description to understand the context of the issue and what to do next. Select a due date, add notes, and select **Export all remediation activity data to CSV** so you can attach it to an email for follow-up.
 
 4. **Submit request**. You'll see a confirmation message that the remediation task has been created.
-   ![Remediation task creation confirmation](images/remediation-task-created.png)
+
+   :::image type="content" alt-text="Remediation task creation confirmation." source="images/remediation-task-created.png":::
 
 5. Save your CSV file.
-   ![Save csv file](images/tvm_save_csv_file.png)
+
+   :::image type="content" alt-text="Save csv file." source="images/tvm_save_csv_file.png":::
 
 6. Send a follow-up email to your IT Administrator and allow the time that you've allotted for the remediation to propagate in the system.
 

@@ -53,11 +53,11 @@ To add device tags using API, see [Add or remove device tags API](add-or-remove-
 
 2. Select **Manage Tags** from the row of Response actions.
 
-    ![Image of manage tags button](images/manage-tags-option.png)
+    :::image type="content" alt-text="Image of manage tags button." source="images/manage-tags-option.png":::
 
 3. Type to find or create tags
 
-    ![Image of adding tags on a device1](images/create-new-tag.png)
+    :::image type="content" alt-text="Image of adding tags on a device1." source="images/create-new-tag.png":::
 
 Tags are added to the device view and will also be reflected on the **Devices list** view. You can then use the **Tags** filter to see the relevant list of devices.
 
@@ -67,7 +67,7 @@ Tags are added to the device view and will also be reflected on the **Devices li
 
 You can also delete tags from this view.
 
-![Image of adding tags on a device2](images/new-tag-label-display.png)
+:::image type="content" alt-text="Image of adding tags on a device2." source="images/new-tag-label-display.png":::
 
 ## Add device tags by setting a registry key value
 
