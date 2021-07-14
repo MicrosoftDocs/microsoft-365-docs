@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 07/13/2021
+ms.date: 07/14/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -17,7 +17,11 @@ f1.keywords: NOCSH
 
 # Set up and configure Microsoft Defender for business
 
-As a preview customer, you likely have assistance in setting up and configuring Microsoft Defender for business. As reference information, this article provides guidance on how to plan, configure, and onboard to the service. This information might be helpful if you are interested in the resources and information that are available to you.
+As a preview customer, you likely have assistance in setting up Microsoft Defender for business for your company. However, you can do the setup and configuration process yourself as well.
+
+The setup and configuration process is as follows:
+
+ 
 
 1. Review the requirements
 
