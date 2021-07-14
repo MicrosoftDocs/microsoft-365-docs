@@ -161,7 +161,7 @@ Launches scheduled using the Portal launch scheduler tool can be canceled, or de
 
 2. Then, select **Delete** and then when you see the message below select **Delete** again.
 
-   ![Image of the Portal launch scheduler tool](../media/portal-launch-delete-2.png)
+   ![Image of the prompt that asks if you want to delete or keep a scheduled launch](../media/portal-launch-delete-2.png)
 
 ## Use the PowerShell Portal launch scheduler
 
