@@ -28,12 +28,18 @@
       href: mdb-get-started.md
     - name: How do I ...?
       items: 
-          - name: Use Defender for business
-            href: mdb-use.md
           - name: View and manage incidents
             href: 
           - name: Respond to and mitigate threats
             href:
-          - name: Review pending and completed actions
+          - name: Review remediation actions
+            href: 
+          - name: Manage devices
+            href:
+    - name: Additional resources
+      items:
+          - name: Learning paths
+            href:
+          - name: DIY labs
             href: 
 
