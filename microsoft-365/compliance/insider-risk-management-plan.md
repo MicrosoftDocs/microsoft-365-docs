@@ -22,7 +22,6 @@ Watch the video below to learn how the insider risk management workflow can help
 <br>
 <br>
 
-**Insider risk management workflow**:
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4OUXB]
 
 ## Work with stakeholders in your organization
