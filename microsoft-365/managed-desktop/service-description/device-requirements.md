@@ -45,7 +45,7 @@ The device must have this software preinstalled:
 - All applicable device drivers
 
 > [!NOTE]
-> Windows 11 will be an additional option for preinstalled software once it has reached General Availability (GA).
+> Windows 11 will be an additional option for preinstalled software once it has reached general availability.
 >
 ### Physical features
 
@@ -60,7 +60,7 @@ For more about these capabilities and the technologies related to them that the 
 
 > [!NOTE]
 >- ARM processors are not supported.
->- Windows 11 has additional [hardware requirements.](https://docs.microsoft.com/en-us/windows/whats-new/windows-11-requirements)
+>- Windows 11 has additional [hardware requirements].(https://docs.microsoft.com/windows/whats-new/windows-11-requirements)
 
 Devices should meet or exceed following limits for storage and memory:
 
