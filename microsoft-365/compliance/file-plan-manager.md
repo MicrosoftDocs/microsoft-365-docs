@@ -106,9 +106,9 @@ Example of file plan descriptors when you create or edit a retention label:
 
 ![File plan descriptors when you create or edit a retention label](../media/file-plan-descriptors.png)
 
-Example view of the file plan descriptors columns:
+When you select **Choose** for each of these optional descriptors, you can select one of the out-of-box values, or create your own and then select it. For example: 
 
-![File plan descriptors columns](../media/file-plan-descriptors-on-labels-tab.png)
+![Create new file plan descriptor for provision/citation](../media/file-plan-descriptors-create.png)
 
 ## Export all retention labels to analyze or enable offline reviews
 
@@ -124,9 +124,7 @@ A *.csv file that contains all existing retention labels opens. For example:
 
 ## Import retention labels into your file plan
 
-In file plan, you can bulk-import new retention labels by using a .csv file with a specific format. After the labels are imported, you can make edits in the .csv file and import the file again for easier bulk-editing of existing retention labels.
-
-To import new retention labels and modify existing retention labels: 
+In file plan, you can bulk-import new retention labels by using a .csv file with a specific format: 
 
 1. On the **File plan** page, click **Import** to use the **Fill out and import your file plan** page:
 
