@@ -29,13 +29,13 @@
     - name: How do I ...?
       items: 
           - name: View and manage incidents
-            href: 
+            href: mdb-view-manage-incidents.md
           - name: Respond to and mitigate threats
-            href:
+            href: mdb-respond-mitigate-threats.md
           - name: Review remediation actions
-            href: 
+            href: mdb-review-remediation-actions.md
           - name: Manage devices
-            href:
+            href: mdb-manage-devices.md
     - name: Additional resources
       items:
           - name: Learning paths
