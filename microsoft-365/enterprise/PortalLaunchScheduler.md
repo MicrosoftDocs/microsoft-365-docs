@@ -112,9 +112,8 @@ Formerly, portal launches could only be scheduled through SharePoint PowerShell.
 
     > [!NOTE]
     > Up to 50 distinct users or security groups max can be used for the entire launch. Each launch is independent of each other, so if you schedule a launch on another portal, then you could use up to 50 users/security groups for that launch. Additionally, you can use up to 20 distinct users or security groups per wave. 
-
->The portal launch scheduler supports security groups and mail enabled security groups. 
-
+    >
+    > The portal launch scheduler supports security groups and mail enabled security groups. 
 
 8. Confirm portal launch details and select **Schedule**. Once the launch has been scheduled, any changes to the SharePoint portal home page will need to receive a healthy diagnostic result before the portal launch will resume.
 
