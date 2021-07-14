@@ -159,11 +159,12 @@
      - name: Advanced Spam Filter (ASF) settings
        href: advanced-spam-filtering-asf-options.md
      - name: Manage the Tenant Allow/Block List
-       href: tenant-allow-block-list.md
        items:
-       - name: Manage the Tenant Block List
+       - name: Tenant Allow/Block List overview
+         href: tenant-allow-block-list.md
+       - name: Manage blocks in the Tenant Allow/Block List
          href: manage-tenant-blocks.md
-       - name: Manage the Tenant Allow List
+       - name: Manage allows in the Tenant Allow/Block List
          href: manage-tenant-allows.md
      - name: Message trace in the Security & Compliance Center
        href: message-trace-scc.md

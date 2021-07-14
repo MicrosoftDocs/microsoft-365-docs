@@ -19,7 +19,7 @@ ms.technology: mdo
 ms.prod: m365-security
 ---
 
-# Manage the Tenant Allow List
+# Manage allows in the Tenant Allow/Block List
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
