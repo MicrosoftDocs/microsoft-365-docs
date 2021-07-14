@@ -47,7 +47,9 @@ ms.prod: m365-security
 > [!div class="mx-imgBorder"]
 > ![False positive submission example](../../media/admin-submission-allow-messages.png)
 
-## Use the Microsoft 365 Defender portal to modify entries in the Tenant Allow/Block List
+## Use the Microsoft 365 Defender portal 
+
+### Modify entries in the Tenant Allow/Block List
 
 1. In the Microsoft 365 Defender portal, go to **Policies & rules** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
 
@@ -67,7 +69,7 @@ ms.prod: m365-security
      - **Action**: You can change the value to **Allow** or **Block**.
 4. When you're finished, click **Save**.
 
-## Use the Microsoft 365 Defender portal to remove entries from the Tenant Allow/Block List
+## Remove entries from the Tenant Allow/Block List
 
 1. In the Microsoft 365 Defender portal, go to **Policies & rules** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
 
@@ -79,6 +81,40 @@ ms.prod: m365-security
 3. Select the entry that you want to remove, and then click ![Delete icon](../../media/m365-cc-sc-delete-icon.png) **Delete**.
 
 4. In the warning dialog that appears, click **Delete**.
+
+## Use PowerShell
+
+### Modify block file and URL entries in the Tenant Allow/Block List
+
+To modify block file and URL entries in the Tenant Allow/Block List, use the following syntax:
+
+```powershell
+Set-TenantAllowBlockListItems -ListType <FileHash | Url> -Ids <"Id1","Id2",..."IdN"> [<-ExpirationDate Date | -NoExpiration>] [-Notes <String>]
+```
+
+This example changes the expiration date of the specified block URL entry.
+
+```powershell
+Set-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBywBwCqfQNJY8hBTbdlKFkv6BcUAAAl_QCZAACqfQNJY8hBTbdlKFkv6BcUAAAl_oSRAAAA" -ExpirationDate "5/30/2020"
+```
+
+For detailed syntax and parameter information, see [Set-TenantAllowBlockListItems](/powershell/module/exchange/set-tenantallowblocklistitems).
+
+### Remove URL or file entries from the Tenant Allow/Block List
+
+To remove file and URL entries from the Tenant Allow/Block List, use the following syntax:
+
+```powershell
+Remove-TenantAllowBlockListItems -ListType <FileHash | Url> -Ids <"Id1","Id2",..."IdN">
+```
+
+This example removes the specified block URL entry from the Tenant Allow/Block List.
+
+```powershell
+Remove-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBywBwCqfQNJY8hBTbdlKFkv6BcUAAAl_QCZAACqfQNJY8hBTbdlKFkv6BcUAAAl_oSPAAAA0"
+```
+
+For detailed syntax and parameter information, see [Remove-TenantAllowBlockListItems](/powershell/module/exchange/remove-tenantallowblocklistitems).
 
 ## Related articles
 
