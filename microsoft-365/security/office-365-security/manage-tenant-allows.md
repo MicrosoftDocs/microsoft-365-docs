@@ -28,7 +28,9 @@ ms.prod: m365-security
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-## Use the Submissions portal to allow files, URLs, and senders
+## Use the Submissions portal 
+
+Allow files, URLs, and senders in the Submissions section of Microsoft 365 Defender. 
 
 1. In the Microsoft 365 Defender portal, go to **Email & collaboration** \> **Submissions**.
 
@@ -69,7 +71,7 @@ ms.prod: m365-security
      - **Action**: You can change the value to **Allow** or **Block**.
 4. When you're finished, click **Save**.
 
-## Remove entries from the Tenant Allow/Block List
+### Remove entries from the Tenant Allow/Block List
 
 1. In the Microsoft 365 Defender portal, go to **Policies & rules** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
 
