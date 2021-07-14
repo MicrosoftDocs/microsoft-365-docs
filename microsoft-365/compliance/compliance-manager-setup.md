@@ -208,7 +208,7 @@ To delete a user’s history, follow the steps below:
 
 The Compliance Manager dashboard is designed to provide you an at-a-glance view of your current compliance posture.
 
-![Compliance Manager - dashboard](../media/compliance-manager-dashboard.png "Compliance Manager dashboard")
+:::image type="content" alt-text="Compliance Manager - dashboard." source="../media/compliance-manager-dashboard.png" lightbox="../media/compliance-manager-dashboard.png":::
 
 ### Overall compliance score
 
