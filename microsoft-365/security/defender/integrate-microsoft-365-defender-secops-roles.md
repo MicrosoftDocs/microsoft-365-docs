@@ -3,7 +3,7 @@ title: Step 4. Define Microsoft 365 Defender roles, responsibilities, and oversi
 description: The basics of defining roles, responsibilities, and oversight when integrating Microsoft 365 Defender into your security operations.
 keywords: incidents, alerts, investigate, correlation, attack, devices, users, identities, identity, mailbox, email, 365, microsoft, Microsoft 365, incident response, cyber-attack, secops, security operations, soc
 search.product: eADQiWindows 10XVcnh
-ms.prod: Microsoft 365-security
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

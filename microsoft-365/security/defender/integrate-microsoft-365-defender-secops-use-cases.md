@@ -42,7 +42,7 @@ This figure shows an example of a formal use case process.
 
 <<validate figure with latest
  
-:::image type="content" source="../media/m365-defender-secops-overview/use-case-decision-process.png" alt-text="The use case decision process":::
+:::image type="content" source="../media/integrate-microsoft-365-defender-secops/use-case-decision-process.png" alt-text="The use case decision process":::
 
 Once a high-level use case standard has been defined and approved, the next step is to create and test an actual use case. This process will be explored using an anti-phishing scenario as an example.
 
@@ -50,13 +50,13 @@ Once a high-level use case standard has been defined and approved, the next step
 
 The first step in creating a use case is to outline the workflow via a story board. Here’s an example high-level story board for a new phishing exploit notification to a Threat Intelligence Team.
  
-:::image type="content" source="../media/m365-defender-secops-overview/example-use-case-workflow-storyboard-phishing.png" alt-text="An example use case workflow for an anti-phishing campaign":::
+:::image type="content" source="../media/integrate-microsoft-365-defender-secops/example-use-case-workflow-storyboard-phishing.png" alt-text="An example use case workflow for an anti-phishing campaign":::
 
 ### Invoke the use case workflow for example 1
 
 Once the story board has been approved, the next step is to invoke the use case workflow. Here is the process for the example anti-phishing campaign. 
  
-:::image type="content" source="../media/m365-defender-secops-overview/example-detailed-use-case-workflow.png" alt-text="An example of a detailed use case workflow for an anti-phishing campaign":::
+:::image type="content" source="../media/integrate-microsoft-365-defender-secops/example-detailed-use-case-workflow.png" alt-text="An example of a detailed use case workflow for an anti-phishing campaign":::
 
 ## Use case example 2: Threat & vulnerability scanning
 
@@ -64,10 +64,11 @@ Another scenario where a use case could be used is for threat and vulnerability 
 
 Here is the high-level storyboard for the threat and vulnerability management of assets as part of Threat and Vulnerability Management services.
  
-:::image type="content" source="../media/m365-defender-secops-overview/example-use-case-workflow-storyboard-tvm.png" alt-text="An example use case workflow for an anti-phishing campaign":::
+:::image type="content" source="../media/integrate-microsoft-365-defender-secops/example-use-case-workflow-storyboard-tvm.png" alt-text="An example use case workflow for an anti-phishing campaign":::
 
 ### Invoke the use case workflow for example 2
 
+:::image type="content" source="../media/m365-defender-secops-overview/example-detailed-use-case-workflow-tvm.png" alt-text="An example of a detailed use case workflow for threat and vulnerability management":::
  
 ### Analyze the use case output and lessons learned
 
@@ -75,37 +76,22 @@ After a use case has been approved and tested, gaps among your security teams sh
 
 For example, in the anti-phishing scenario example, the SOC teams could have made the discoveries in this table.
 
-SOC team	Requirement	People to Meet Requirement	Process to Meet Requirement	Relevant Technology	Gap Identified	Use Case Change Log	Exempt
-(Y/N)
-Threat Intelligence and Analytics Team	Data sources are properly feeding the threat intelligence engines	Threat Intelligence Analyst/ Engineer	Data feed requirements established, Threat Intelligence triggers from approved sources	Microsoft 365 Defender for Identity, Defender for Endpoint	Threat Intelligence team did not use automation script to link Defender API with Threat Intel Engines	Add Defender as data sources to Threat engines
-Update Use Case Run Book	N
-Monitoring Team	Data sources are properly feeding the monitoring dashboards
-	Tier 1,2 SOC Analyst –Monitoring & Alerts
-	Workflow for reporting Security & Compliance Center Secure Score
-	[Alerts in Security & Compliance Center](/microsoft-365/security/office-365-security/alerts) 
-Secure Score monitoring	No mechanism for SOC analysts to report successful new phishing variant detection to improve Secure Score
-[Reporting in Security & Compliance Center](/microsoft-365/security/office-365-security/reports-and-insights-in-security-and-compliance) 	Add a process for tracking Secure Score improvement to Reporting workflows	N
-Engineering and SecOps Team
-	Change control updates are made in the SOC team runbooks	Tier 2 SOC Engineer	Change Control notification procedure for SOC team Runbooks	Approved Changes to Security Devices 	Changes to Microsoft 365 Defender connectivity to SOC security technology requires approval	Add Cloud App Security, Defender for Identity, Defender for Endpoint, Security & Compliance Center to SOC Runbooks	Y
+
+| SOC team | Requirement | People to meet requirement | Process to meet requirement | Relevant technology | Gap identified | Use case change log | Exempt (Y/N) |
+|:-------|:-----|:-------|:-------|:-------|:-----|:-------|:-------|
+| Threat Intelligence and Analytics Team | Data sources are properly feeding the threat intelligence engines. | Threat Intelligence Analyst/Engineer | Data feed requirements established, threat intelligence triggers from approved sources | Microsoft 365 Defender for Identity, Defender for Endpoint | Threat Intelligence team did not use automation script to link Microsoft 365 Defender API with threat intel engines | Add Microsoft 365 Defender as data sources to threat engines <BR> <BR> Update use case run book | N |
+| Monitoring team | Data sources are properly feeding the monitoring dashboards | Tier 1,2 SOC Analyst–Monitoring & Alerts | Workflow for reporting Security & Compliance Center Secure Score | [Alerts in Security & Compliance Center](/microsoft-365/security/office-365-security/alerts)  <br><br> Secure Score monitoring	| No mechanism for SOC analysts to report successful new phishing variant detection to improve Secure Score <br><br> [Reporting in Security & Compliance Center](/microsoft-365/security/office-365-security/reports-and-insights-in-security-and-compliance)| Add a process for tracking Secure Score improvement to Reporting workflows | N | 
+| Engineering and SecOps Team | Change control updates are made in the SOC team runbooks | Tier 2 SOC Engineer | Change Control notification procedure for SOC team Runbooks | Approved Changes to Security Devices | Changes to Microsoft 365 Defender connectivity to SOC security technology requires approval | Add Cloud App Security, Defender for Identity, Defender for Endpoint, Security & Compliance Center to SOC Runbooks | Y |
+|||||||||
 
 Additionally, the SOC Teams could have made the discoveries outlined in the table below in regard to the threat and vulnerability management scenario outlined above:
 
-SOC Team	Requirement	People to Meet Requirement	Process to Meet Requirement	Relevant Technology	Gap Identified	Use Case Change Log	Exempt
-(Y/N)
-Soc Oversight	All assets connected to approved networks are identified and categorized 	SOC Oversight, BU owners, Application owners, IT asset owners, etc.	Centralized asset management system (CMDB) to discover, list asset category and attributes based on risk	ServiceNow or other CMDB assets. 
-
-[Microsoft 365 Device Inventory](/security/defender-endpoint/device-discovery)
-	Only 70% of assets have been discovered. Microsoft 365 Defender Remediation tracking only effective for known assets	Mature asset lifecycle management services to ensure Microsoft 365 Defender has 100% coverage	N
-Engineering & SecOps Teams	High Impact and Critical vulnerabilities in assets are remediated according to policy
-	SecOps Engineers, SOC Analysts: Vulnerability & Compliance, 
-Security Engineering
-	Defined process for categorizing High Risk and Critical Vulnerabilities
-	[Threat and Vulnerability Management Dashboards](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-	Microsoft 365 Defender for Endpoint has identified high impact, high alert devices with no remediation plan or implementation of Microsoft recommended activity
- 	Add a workflow for notifying asset owners when remediation activity is required within 30 days per policy; Implement a ticketing system to notify asset owners of remediation steps	N
-
-Monitoring Teams	Threat and Vulnerability status is reported via company intranet portal	Tier 2 SOC Analyst	Auto-generated reports from Microsoft 365 Defender showing remediation progress of assets	[Alerts in Security & Compliance Center](/microsoft-365/security/office-365-security/alerts)  
-Secure Score monitoring	No views or dashboard reports being communicated to asset owners regarding threat and vulnerability status of assets	Create automation script to populate status of high risk and critical asset vulnerability remediation to the organization	N
+| SOC team | Requirement | People to meet requirement | Process to meet requirement | Relevant technology | Gap identified | Use case change log | Exempt (Y/N) |
+|:-------|:-----|:-------|:-------|:-------|:-----|:-------|:-------|
+| Soc Oversight | All assets connected to approved networks are identified and categorized | SOC Oversight, BU owners, Application owners, IT asset owners, etc. | Centralized asset management system (CMDB) to discover, list asset category and attributes based on risk. | ServiceNow or other CMDB assets. <br><br>[Microsoft 365 Device Inventory](/security/defender-endpoint/device-discovery) | Only 70% of assets have been discovered. Microsoft 365 Defender Remediation tracking only effective for known assets | Mature asset lifecycle management services to ensure Microsoft 365 Defender has 100% coverage | N |
+| Engineering & SecOps Teams | High Impact and Critical vulnerabilities in assets are remediated according to policy | SecOps Engineers, SOC Analysts: Vulnerability & Compliance, Security Engineering | Defined process for categorizing High Risk and Critical Vulnerabilities | [Threat and Vulnerability Management Dashboards](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt) | Microsoft 365 Defender for Endpoint has identified high impact, high alert devices with no remediation plan or implementation of Microsoft recommended activity | Add a workflow for notifying asset owners when remediation activity is required within 30 days per policy; Implement a ticketing system to notify asset owners of remediation steps | N |
+| Monitoring Teams | Threat and Vulnerability status is reported via company intranet portal | Tier 2 SOC Analyst | Auto-generated reports from Microsoft 365 Defender showing remediation progress of assets | [Alerts in Security & Compliance Center](/microsoft-365/security/office-365-security/alerts) <br><br> Secure Score monitoring | No views or dashboard reports being communicated to asset owners regarding threat and vulnerability status of assets. | Create automation script to populate status of high risk and critical asset vulnerability remediation to the organization | N |
+|||||||||
 
 In these example use cases, the testing revealed several gaps in the SOC team’s requirements that were established as baselines for the responsibilities of each team. The use case checklist can be as comprehensive as needed to ensure that the SOC team is prepared for the Microsoft 365 Defender integration with new or existing SOC requirements. Since this will be an iterative process, the use case development process and the use case output content will naturally serve to update and mature the SOC’s runbooks with lessons learned.
 
@@ -132,10 +118,12 @@ One of the core foundations of an escalation playbook is to ensure there is litt
 
 For example, the Preparation phase could include an if/then or XoR matrix of tasks. In the case of the new phishing variant use case, such a matrix could look like this:
 
-Why is Escalation Warranted?	Next Step:
-Alert in SOC Monitoring rated as critical triggered >500/hour	Example: Go to Playbook A, Section 2, Activity 5: Link to Playbook 
-eCommerce reported potential DDoS 	Example: Invoke Playbook B-Section C, Activity 19: Link to Playbook
-Executive reported a suspicious email as spear phishing attempt	Example: Go to Playbook 5, Section 2, Activity 5: Link to Playbook
+| Why is Escalation Warranted? | Next Step |
+|:-------|:-----|
+| Alert in SOC Monitoring rated as **critical** triggered > **500/hour** | Example: Go to Playbook A, Section 2, Activity 5: Link to Playbook |
+| eCommerce reported potential DDoS | Example: Invoke Playbook B-Section C, Activity 19: Link to Playbook |
+| Executive reported a suspicious email as spear phishing attempt | Example: Go to Playbook 5, Section 2, Activity 5: Link to Playbook |
+|||
 
 After executing the Preparation phase, organizations should invoke the remaining phases as outlined by NIST:
 
