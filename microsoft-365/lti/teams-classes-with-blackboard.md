@@ -17,9 +17,6 @@ description: "Use Microsoft Teams classes with Blackboard Learn Ultra"
 
 # Use Microsoft Teams classes with Blackboard Learn Ultra
 
-> [!IMPORTANT]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
-
 Teamwork is at the core of every modern organization. By fostering collaboration, it’s a defining characteristic of every successful institution. You can enhance all the capabilities and features of Blackboard Learn Ultra by pairing them up with Microsoft Teams classes.
 
 Your classes might include real-time conversations, video meetings, or asynchronous interactions. You can add file sharing and cocreation experiences for your students, all in one place. Microsoft Teams classes with Learn Ultra redefine the dynamics of teaching and what effective learning means.

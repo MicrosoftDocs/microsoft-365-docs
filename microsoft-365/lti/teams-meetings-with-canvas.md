@@ -18,9 +18,6 @@ description: "Integrate Microsoft Teams meetings with Canvas"
 
 # Use Microsoft Teams meetings with Canvas
 
-> [!IMPORTANT]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
-
 Microsoft Teams meetings is a Learning Tools Interoperability (LTI) app that helps educators and students easily navigate between their Learning Management System (LMS) and Teams. Users can access their class teams associated with their course directly from within their LMS.
 
 ## Microsoft Office 365 Admin
