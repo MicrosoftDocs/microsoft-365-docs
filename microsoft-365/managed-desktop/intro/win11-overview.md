@@ -33,7 +33,7 @@ More than 95% of Microsoft Managed Desktop devices are eligible for Windows 11, 
 
 For Microsoft Managed Desktop devices, you can request to add test devices to the **\[Modern Workplace\] Windows 11 Pre-Release Test Devices device group**. This group receives Windows 11 preview builds along with a Microsoft Managed Desktop baseline configuration. Microsoft Managed Desktop doesn't manage the release cadence of Windows 11 preview builds, so members of this device group might receive updates more frequently than Windows 10 device groups.
 
-For your devices that aren't managed by Microsoft Managed Desktop, you can join the [Windows Insider Program](https://docs.microsoft.com/windows-insider/) to download preview builds and get guidance on deploying Windows 11 yourself. If you have devices running Windows 11 pre-release builds and later enroll them in Microsoft Managed Desktop, they won't revert back to Windows 10.
+For your devices that aren't managed by Microsoft Managed Desktop, you can join the [Windows Insider Program](/windows-insider/) to download preview builds and get guidance on deploying Windows 11 yourself. If you have devices running Windows 11 pre-release builds and later enroll them in Microsoft Managed Desktop, they won't revert back to Windows 10.
 
 ## Support for pre-release Windows 11 devices
 
@@ -53,4 +53,4 @@ Application compatibility is one of the most common concerns in any platform mig
 
 ### Reactive measures
 
-If you encounter app compatibility issues in test or production environments, you can get support by engaging [App Assure](https://docs.microsoft.com/fasttrack/products-and-capabilities#app-assure) or FastTrack, as appropriate. For Windows 11, this includes any functionality with Office, Microsoft Edge, and Teams applications running on the latest operating system builds. App Assure directly engages app publishers to prioritize and resolve app compatibility issues.
+If you encounter app compatibility issues in test or production environments, you can get support by engaging [App Assure](/fasttrack/products-and-capabilities) or FastTrack, as appropriate. For Windows 11, this includes any functionality with Office, Microsoft Edge, and Teams applications running on the latest operating system builds. App Assure directly engages app publishers to prioritize and resolve app compatibility issues.
