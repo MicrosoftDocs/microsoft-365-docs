@@ -35,8 +35,6 @@ landingContent:
         links:
           - text: Get started with Microsoft Defender for business
             url: mdb-get-started.md
-          - text: Learn how to use Microsoft Defender for business
-            url: mdb-use.md
 
   # Card
   - title: Setup
