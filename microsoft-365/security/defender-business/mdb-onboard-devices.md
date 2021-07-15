@@ -54,7 +54,8 @@ Soon after the script runs, the device is onboarded to Microsoft Defender for bu
 1. Make sure you meet the following requirements:
 
    - Your company has [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis) (Azure AD).
-   - Your company has Microsoft Intune configured for users to [perform auto-enrollment](/mem/intune/enrollment/windows-enroll). For more information, see [Set up Intune](/mem/intune/fundamentals/setup-steps). 
+   - Your company has Microsoft Intune configured for users to [perform auto-enrollment](/mem/intune/enrollment/windows-enroll). For more information, see [Set up Intune](/mem/intune/fundamentals/setup-steps).
+   - You  
 
 2. On a Windows 10 device, follow these steps:
 
@@ -64,8 +65,6 @@ Soon after the script runs, the device is onboarded to Microsoft Defender for bu
    4. Select **Enroll only in device management**.
 
 3. A few minutes after enrolling a device, go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)), and choose **Devices** to view enrollment status.
-
-
 
 ## Run a detection test
 
@@ -80,3 +79,10 @@ After each device is onboarded, you can run a detection test.
    ```
 
 3. Wait a few minutes, and then, in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), go to **Incidents**. You should see a new alert indicating the detection test was successful.
+
+
+## Next steps
+
+[Manage devices in Microsoft Defender for business](mdb-manage-devices.md)
+
+[View or edit device policies in Microsoft Defender for business](mdb-view-edit-device-policies.md)
