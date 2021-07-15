@@ -17,7 +17,7 @@ f1.keywords: NOCSH
 
 # Choose where to manage your policies and settings
 
-You can manage your security policies and settings in Microsoft Defender for business using one of two portals described in the following table:
+When you begin to use Microsoft Defender for business, you will be asked whether you want to use Endpoint Manager or your Microsoft 365 Defender portal. The following table describes each portal:
 
 
 | Portal  | Description  |
@@ -25,7 +25,6 @@ You can manage your security policies and settings in Microsoft Defender for bus
 |The Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) <p>*Recommended*    | The Microsoft 365 Defender portal is where you'll view and manage incidents, respond to and mitigate threats, view reports, review pending or completed actions, and more. This portal is your one-stop shop for your company's security settings and threat protection capabilities. Plus, you get a simplified experience to help you get started quickly and efficiently.        |
 |Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) <p>*Endpoint Manager now includes Microsoft Intune*     | Microsoft Endpoint Manager includes Microsoft Intune, a cloud-based mobile device management (MDM) and mobile application management (MAM) provider for apps and devices. Many enterprise organizations use Intune to manage devices, such as mobile phones, tablets, and laptops. To learn more, see [Microsoft Intune is an MDM and MAM provider for your devices](/mem/intune/fundamentals/what-is-intune).       |
 
-When you begin to use Microsoft Defender for business, you will be asked whether you want to use Endpoint Manager or your Microsoft 365 Defender portal. 
 
 We recommend using the Microsoft 365 Defender portal and its wizard-like experience for managing your devices and security settings. 
 
