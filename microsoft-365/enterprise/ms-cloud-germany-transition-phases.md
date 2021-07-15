@@ -154,6 +154,7 @@ Additional considerations:
 - Microsoft Cloud Deutschland customers whose SharePoint Online instance is not yet migrated need to stay on SharePoint Online PowerShell module/Microsoft.SharePointOnline.CSOM version 16.0.20616.12000 or below. Otherwise, connections to SharePoint Online via PowerShell or the client-side object model will fail.
 - During this phase, the IP addresses behind the SharePoint URLs will change. After the transition to Office 365 Global services, the addresses for the preserved tenant URLs (for example, `contoso.sharepoint.de` and `contoso-my.sharepoint.de`) will be changed to the [Worldwide Microsoft 365 URLs and IP address ranges (SharePoint Online and OneDrive for Business)](/microsoft-365/enterprise/urls-and-ip-address-ranges#sharepoint-online-and-onedrive-for-business).
 - While SharePoint and OneDrive services are transitioned, Office Online may not work as expected.
+- If a custom search configuration have been applied, ensure to import the search configuration after the transition finished. The search configuration has to be exported before the transistion as described in the [pre-migration steps for SharePoint Online](ms-cloud-germany-transition-add-pre-work.md#SharePoint-online).
 
 > [!NOTE]
 > In case you are using eDiscovery, make sure you are aware of the [eDiscovery migration experience](ms-cloud-germany-transition-add-scc.md).
