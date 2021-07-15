@@ -80,6 +80,10 @@ After each device is onboarded, you can run a detection test.
 
 3. Wait a few minutes, and then, in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), go to **Incidents**. You should see a new alert indicating the detection test was successful.
 
+## What if I want to offboard a device?
+
+See 
+
 ## Next steps
 
 [Manage devices in Microsoft Defender for business](mdb-manage-devices.md)
