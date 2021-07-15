@@ -19,7 +19,7 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
-  - title: About Microsoft Defender for business
+  - title: Overview
     linkLists:
       - linkListType: overview
         links:
