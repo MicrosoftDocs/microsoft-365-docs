@@ -479,43 +479,43 @@
               href: archive-whatsapp-data.md
         - name: 17a-4 data connectors
           items:
-            - name: BlackBerry DataParser (preview)
+            - name: BlackBerry DataParser 
               href: archive-17a-4-blackberry-data.md
-            - name: Bloomberg DataParser (preview)
+            - name: Bloomberg DataParser 
               href: archive-17a-4-bloomberg-data.md
-            - name: Cisco Jabber DataParser (preview)
+            - name: Cisco Jabber DataParser 
               href: archive-17a-4-cisco-jabber-data.md
-            - name: Cisco Webex DataParser (preview)
+            - name: Cisco Webex DataParser 
               href: archive-17a-4-webex-teams-data.md
-            - name: FactSet DataParser (preview)
+            - name: FactSet DataParser 
               href: archive-17a-4-factset-data.md
-            - name: Fuze DataParser (preview)
+            - name: Fuze DataParser 
               href: archive-17a-4-fuze-data.md
-            - name: FX Connect DataParser (preview)
+            - name: FX Connect DataParser 
               href: archive-17a-4-fxconnect-data.md
-            - name: ICE DataParser (preview)
+            - name: ICE DataParser 
               href: archive-17a-4-ice-im-data.md
-            - name: InvestEdge DataParser (preview)
+            - name: InvestEdge DataParser 
               href: archive-17a-4-investedge-data.md
-            - name: LivePerson Conversational Cloud DataParser (preview)
+            - name: LivePerson Conversational Cloud DataParser 
               href: archive-17a-4-liveperson-data.md
-            - name: Quip DataParser (preview)
+            - name: Quip DataParser 
               href: archive-17a-4-quip-data.md
-            - name: Refinitiv Eikon Messenger DataParser (preview)
+            - name: Refinitiv Eikon Messenger DataParser 
               href: archive-17a-4-refinitiv-messenger-data.md
-            - name: ServiceNow DataParser (preview)
+            - name: ServiceNow DataParser 
               href: archive-17a-4-servicenow-data.md
-            - name: Slack DataParser (preview)
+            - name: Slack DataParser 
               href: archive-17a-4-slack-data.md
-            - name: SQL DataParser (preview)
+            - name: SQL DataParser 
               href: archive-17a-4-sql-database-data.md
-            - name: Symphony DataParser (preview)
+            - name: Symphony DataParser 
               href: archive-17a-4-symphony-data.md
-            - name: Zoom DataParser (preview)
+            - name: Zoom DataParser 
               href: archive-17a-4-zoom-data.md
         - name: CellTrust connectors
           items:
-            - name: CellTrust SL2 (preview)
+            - name: CellTrust SL2 
               href: archive-data-from-celltrustsl2.md
         - name: Work with a partner to archive third-party data
           href: work-with-partner-to-archive-third-party-data.md

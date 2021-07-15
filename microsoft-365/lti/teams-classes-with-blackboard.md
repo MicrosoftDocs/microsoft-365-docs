@@ -1,5 +1,5 @@
 ---
-title: Integrate Microsoft Teams classes with Blackboard Learn Ultra
+title: Use Microsoft Teams classes with Blackboard Learn Ultra
 ms.author: v-cichur
 author: cichur
 manager: serdars
@@ -12,7 +12,7 @@ f1.keywords:
 ms.collection: M365-modern-desktop
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
-description: "Integrate Microsoft Teams classes with Blackboard Learn Ultra"
+description: "Use Microsoft Teams classes with Blackboard Learn Ultra"
 ---
 
 # Use Microsoft Teams classes with Blackboard Learn Ultra
@@ -22,15 +22,15 @@ Teamwork is at the core of every modern organization. By fostering collaboration
 Your classes might include real-time conversations, video meetings, or asynchronous interactions. You can add file sharing and cocreation experiences for your students, all in one place. Microsoft Teams classes with Learn Ultra redefine the dynamics of teaching and what effective learning means.
 
 > [!IMPORTANT]
-> Ensure that you have successfully set up the Institution Email field in your Student Information System (SIS) `help.blackboard.com/Learn/Administrator/SaaS/Integrations/Student\_Information\_System/SIS\_Planning`
+> Ensure that you have successfully set up the Institution Email field in your [Student Information System (SIS)](https://help.blackboard.com/Learn/Administrator/SaaS/Integrations/Student_Information_System/SIS_Planning)
 >
->The Microsoft Teams classes integration relies on the institution email field in your SIS to map to the correct Microsoft Azure Active Directory’s (AAD) User Principal Name (UPN). If no institution email has been provisioned, this will default to the existing email. It’s recommended that this field be set for every user to ensure their data is synchronized correctly and that there is no conflict of email data between Microsoft AAD and Blackboard Learn Ultra.
+>The Microsoft Teams classes integration relies on the institution email field in your SIS to map to the correct Microsoft Azure Active Directory’s (AAD) [User Principle Name (UPN)](/azure/active-directory/hybrid/howto-troubleshoot-upn-changes). If no institution email has been provisioned, this will default to the existing email. It’s recommended that this field be set for every user to ensure their data is synchronized correctly and that there is no conflict of email data between AAD and Blackboard Learn Ultra.
 >
 > If you haven’t set this field appropriately in your SIS mapping, the integration will continue to work, but users might not appear in the Teams classes created, and errors could occur.
 
 ## Supporting Institutional Data Mapping – Institution Email SIS Field
 
-As part of the evolution with Cloud provider integrations, Blackboard Learn Ultra has created a new **Institution Email** field, in both the Student Information System Framework integration and public REST APIs, allowing institutions to manage the data synchronization process effectively between Blackboard Learn Ultra and Microsoft AAD.
+As part of the evolution with Cloud provider integrations, Blackboard Learn Ultra has created a new **Institution Email** field, in both the Student Information System Framework integration and public REST APIs, allowing institutions to manage the data synchronization process effectively between Blackboard Learn Ultra and AAD.
 
 ### What does the Institution Email mean and what does it support?
 
@@ -55,6 +55,8 @@ The **Institution Email** field mapping is now available for all existing SIS in
 The Microsoft Teams classes integration is available for **Ultra Course View courses only**. Your institution needs to complete these requirements to use it:
 
 - Have Blackboard Learn Ultra Learn SaaS with Ultra Base Navigation enabled
+
+  ![an example of the feature is enabled in courses](media/feature-availability.png)
 
 - Enable LTI for use in courses.
 
@@ -153,6 +155,10 @@ If you choose to approve the Blackboard Learn Ultra Teams Classes Azure app befo
 > [!NOTE]
 > You’ll replace **{Tenant}** with your specific institutional Microsoft Azure tenant ID.
 
+You'll see a permissions window that explains you're giving permission to Blackboard Learn Ultra to access Microsoft Teams.
+
+![the permissions window for Microsoft and Blackboard](media/permissions1.png)
+
 ### After Configuring the LTI Applications
 
 1. On the **Administrator Panel**, navigate to **Tools and Utilities** and select **Microsoft Teams Integration Admin**.
@@ -168,3 +174,5 @@ If you choose to approve the Blackboard Learn Ultra Teams Classes Azure app befo
    - If consent hasn’t been approved, follow the steps described to generate the URL for consent and send it to the Microsoft 365 Global Admin for approval.
 
 5. Once you've confirmation of approval, select **Retry** to confirm, and then select **Submit**.
+
+   ![A dialog that indicates your access has been blocked](media/blocked-access.png)

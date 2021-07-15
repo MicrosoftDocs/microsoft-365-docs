@@ -18,14 +18,14 @@ description: "Get started with app governance capabilities to govern your apps."
 
 # Get started with app governance (in preview)
 
-To begin using the app governance feature for Microsoft Cloud App Security:
+To begin using the app governance add-on to Microsoft Cloud App Security:
 
 1. Verify your account has the appropriate level of licensing. App governance is an add-on feature for Microsoft Cloud App Security (MCAS), and thus MCAS must be present in your account as either a standalone product or as part of the various license packages listed below.
 1. You must have one of the administrator roles listed below to access the app governance pages in the portal.
 
 ## Licensing for app governance
 
-Before you get started with the app governance, you should confirm your [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) and any add-ons. To access and use app governance, your organization must have one of the following subscriptions or add-ons:
+Before you get started with app governance, you should confirm your [Microsoft 365 admin center - subscriptions](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) and any add-ons. To access and use app governance, your organization must have one of the following subscriptions or add-ons:
 
 - Microsoft Cloud App Security
 - Microsoft 365 E5
@@ -52,7 +52,7 @@ Before you get started with the app governance, you should confirm your [Microso
 
 ## Administrator roles
 
-One of the following administrator roles are required to see app governance pages or manage policies and settings:
+One of the following administrator roles is required to see app governance pages or manage policies and settings:
 
 - Application Administrator
 - Cloud Application Administrator
@@ -64,6 +64,9 @@ One of the following administrator roles are required to see app governance page
 - Security Administrator
 - Security Operator
 - Security Reader (read-only)
+
+> [!NOTE]
+> Only a Global Admin can activate the app governance free trial.
 
 Here are the capabilities for each role.
 
