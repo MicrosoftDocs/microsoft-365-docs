@@ -263,7 +263,9 @@ Users in your organization may have different levels of risk depending on their 
 
 ![Insider risk management priority user group settings](../media/insider-risk-settings-priority-users.png)
 
-For example, you need to protect against data leaks for a highly confidential project where users have access to sensitive information. You choose to create *Confidential Project* *Users* priority user group for users in your organization that work on this project. Using the policy wizard and the *Data leaks by priority users* policy template, you create a new policy and assign the *Confidential Project Users* priority users group to the policy. Activities examined by the policy for members of the *Confidential Project Users* priority user group are more sensitive to risk and activities by these users will be more likely to generate an alert and have alerts with higher severity levels.
+Instead of being open to review by all analysts and investigators, Priority users groups may also need to restrict review activities to specific users or insider risk role groups. You can choose to assign individual users and role groups to review users, alerts, cases, and reports for each priority user group. Priority user groups can have review permissions assigned to the built-in *Insider Risk Management*, *Insider Risk Management Analysts*, and *Insider Risk Management Investigators* role groups, one or more of these role groups, or to a custom selection of users.
+
+For example, you need to protect against data leaks for a highly confidential project where users have access to sensitive information. You choose to create *Confidential Project* *Users* priority user group for users in your organization that work on this project. Additionally, this priority user group should not have users, alerts, cases, and reports associated with group visible to all the default insider risk management admins, analysts, and investigators. In **Settings**, you create the *Confidential Project Users* priority users group and assign two users as reviewer that can view data related to the groups. Using the policy wizard and the *Data leaks by priority users* policy template, you create a new policy and assign the *Confidential Project Users* priority users group to the policy. Activities examined by the policy for members of the *Confidential Project Users* priority user group are more sensitive to risk and activities by these users will be more likely to generate an alert and have alerts with higher severity levels.
 
 ### Create a priority user group
 
@@ -272,16 +274,18 @@ To create a new priority user group, you'll use setting controls in the **Inside
 Complete the following steps to create a priority user group:
 
 1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select **Insider risk settings**.
-2. Select the **Priority user groups** tab
-3. On the **Priority user groups** tab, select **Create priority user group** to start the group creation wizard.
-4. On the **Define group** page, complete the following fields:
+2. Select the **Priority user groups (preview)** tab.
+3. On the **Priority user groups (preview)** tab, select **Create priority user group** to start the group creation wizard.
+4. On the **Name and describe** page, complete the following fields:
     - **Name (required)**: Enter a friendly name for the priority user group. You can't change the name of the priority user group after you complete the wizard.
     - **Description (optional)**: Enter a description for the priority user group.
 5. Select **Next** to continue.
 6. On the **Choose members** page, select **Choose members** to search and select which mail-enabled user accounts are included in the group or select the **Select all** checkbox to add all users in your organization to the group. Select **Add** to continue or **Cancel** to close without adding any users to the group.
 7. Select **Next** to continue.
-8. On the **Review** page, review the settings you've chosen for the priority user group. Select **Edit** to change any of the group values or select **Submit** to create and activate the priority user group.
-9. On the confirmation page, select **Done** to exit the wizard.
+8. On the **Choose who can view this group** page, you must define who can review users, alerts, cases, and reports for the priority user group. At least one user or insider risk management role group must be assigned. Select **Choose users and role groups** and select the users or insider risk management role groups you want to assign to the priority user group. Select **Add** to assign the selected users or role groups to the group.
+9. Select Next to continue.
+10. On the **Review** page, review the settings you've chosen for the priority user group. Select the **Edit** links to change any of the group values or select **Submit** to create and activate the priority user group.
+11. On the confirmation page, select **Done** to exit the wizard.
 
 ### Update a priority user group
 
@@ -290,12 +294,14 @@ To update an existing priority user group, you'll use setting controls in the **
 Complete the following steps to edit a priority user group:
 
 1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select **Insider risk settings**.
-2. Select the **Priority user groups** tab
+2. Select the **Priority user groups (preview)** tab.
 3. Select the priority user group you want to edit and select **Edit group**.
-4. On the **Define group** page, update the Description field if needed. You can't update the name of the priority user group. Select **Next** to continue.
+4. On the **Name and describe** page, update the Description field if needed. You can't update the name of the priority user group. Select **Next** to continue.
 5. On the **Choose members** page, add new members to the group using the **Choose members** control. To remove a user from the group, select the 'X' next to the user you wish to remove. Select **Next** to continue.
-6. On the **Review** page, review the update settings you've chosen for the priority user group. Select **Edit** to change any of the group values or select **Submit** to update the priority user group.
-7. On the confirmation page, select **Done** to exit the wizard.
+6. On the **Choose who can view this group** page, add or remove users or role groups that can review users, alerts, cases, and reports for the priority user group.
+7. Select **Next** to continue.
+8. On the **Review** page, review the update settings you've chosen for the priority user group. Select the **Edit** links to change any of the group values or select **Submit** to update the priority user group.
+9. On the confirmation page, select **Done** to exit the wizard.
 
 ### Delete a priority user group
 
@@ -363,7 +369,7 @@ Customers with Microsoft 365 subscriptions that include insider risk management 
 
 The following Power Automate templates are provided to customers to support process automation for insider risk management users and cases:
 
-- **Notify users when they're added to an insider risk policy**: This template is for organizations that have internal policies, privacy, or regulatory requirements that users must be notified when they are subject to insider risk management policies. When this flow is configured and selected for a user in the users page, users and their managers are sent an email message when the user is added to an insider risk management policy. This template also supports updating a SharePoint list hosted on a SharePoint site to help track notification message details like date/time and the message recipient. If you've chosen to anonymize users in **Privacy settings**, flows created from this template will not function as intended so that user privacy is maintained. Power Automate flows using this template are available on the **Users dashboard**.
+- **Notify users when they're added to an insider risk policy**: This template is for organizations that have internal policies, privacy, or regulatory requirements that users must be notified when they are subject to insider risk management policies. When this flow is configured and selected for a user in the **Users** page, users and their managers are sent an email message when the user is added to an insider risk management policy. This template also supports updating a SharePoint list hosted on a SharePoint site to help track notification message details like date/time and the message recipient. If you've chosen to anonymize users in **Privacy settings**, flows created from this template will not function as intended so that user privacy is maintained. Power Automate flows using this template are available on the **Users dashboard**.
 - **Request information from HR or business about a user in an insider risk case**: When acting on a case, insider risk analysts and investigators may need to consult with HR or other stakeholders to understand the context of the case activities. When this flow is configured and selected for a case, analysts and investigators send an email message to HR and business stakeholders configured for this flow. Each recipient is sent a message with pre-configured or customizable response options. When recipients select a response option, the response is recorded as a case note and includes recipient and date/time information. If you've chosen to anonymize users in **Privacy settings**, flows created from this template will not function as intended so that user privacy is maintained. Power Automate flows using this template are available on the **Cases dashboard**.
 - **Notify manager when a user has an insider risk alert**: Some organizations may need to have immediate management notification when a user has an insider risk management alert. When this flow is configured and selected, the manager for the case user is sent an email message with the following information about all case alerts:
     - Applicable policy for the alert
