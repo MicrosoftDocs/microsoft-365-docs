@@ -35,8 +35,6 @@ Although you can create and manage retention labels from **Information governanc
 
 File plan can be used for all retention labels, even if they don't mark content as a record.
 
-![File plan page](../media/compliance-file-plan.png)
-
 For information about what retention labels are and how to use them, see [Learn about retention policies and retention labels](retention.md).
 
 ## Accessing file plan
@@ -106,9 +104,9 @@ Example of file plan descriptors when you create or edit a retention label:
 
 ![File plan descriptors when you create or edit a retention label](../media/file-plan-descriptors.png)
 
-Example view of the file plan descriptors columns:
+When you select **Choose** for each of these optional descriptors, you can select one of the out-of-box values, or create your own and then select it. For example: 
 
-![File plan descriptors columns](../media/file-plan-descriptors-on-labels-tab.png)
+![Create new file plan descriptor for provision/citation](../media/file-plan-descriptors-create.png)
 
 ## Export all retention labels to analyze or enable offline reviews
 
@@ -124,9 +122,7 @@ A *.csv file that contains all existing retention labels opens. For example:
 
 ## Import retention labels into your file plan
 
-In file plan, you can bulk-import new retention labels by using a .csv file with a specific format. After the labels are imported, you can make edits in the .csv file and import the file again for easier bulk-editing of existing retention labels.
-
-To import new retention labels and modify existing retention labels: 
+In file plan, you can bulk-import new retention labels by using a .csv file with a specific format: 
 
 1. On the **File plan** page, click **Import** to use the **Fill out and import your file plan** page:
 
@@ -183,7 +179,7 @@ To import new retention labels and modify existing retention labels:
     
     - If validation passes: You can select **Go Live** to make the retention labels available in your tenant. Or, select the Close icon for the page, and **Yes** to confirm you want to close the wizard without making the retention labels available in your tenant at this time.
 
-When the imported labels are added to your tenant, you can now add them to a new retention label policy, or auto-apply them. You can do this right from the **File plan** page by selecting the dropdown from **+ Create a label** and then **Policy to publish labels**, or **Policy to auto-apply a label**.
+When the imported labels are added to your tenant, you can now make them available to users by publishing them, or auto-apply them. You can do both from the **Label policies** tab, and then select **Publish labels**, or **Auto-apply a label**.
 
 ## Next steps
 
