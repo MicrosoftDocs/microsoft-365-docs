@@ -48,9 +48,9 @@ The first step to managing Teams content in Advanced eDiscovery is to create a c
 
 - Support for conversation threading, in which additional messages in the same conversation that include responsive items are automatically collected and added to review sets.
 
-- Teams chat conversations (that include the original post and all replies) are automatically added to review sets as an HTML transcript file. This helps provides context the conversations with responsive items and reduce total number of items produced by chat-based content.   
+- Teams chat conversations (that include the original post and all replies) are automatically added to review sets as an HTML transcript file. This helps provides context the conversations with responsive items and reduce total number of items produced by chat-based content.
 
-- Collections up to 1 TB can be added to reviews sets, which lets you collect and amounts large amounts of Teams content in a case.
+- Collections up to 1 TB can be added to review sets, which lets you collect and amounts large amounts of Teams content in a case.
 
 To create a large case:
 
@@ -151,7 +151,7 @@ To create a collection of Teams content:
 
    1. **Save collection as draft**. Choose this option to create a draft collection. As previously explained, a draft collection doesn't add the collection results to a review set. It returns an estimate of the search results that match the search query for the data sources in the collection scope. This gives you the opportunity to view [collection statistics and reports[(collection-statistics-reports.md)] and edit and rerun the draft collection. When you satisfied with the result of a draft collection, you can commit it to a review set. For more information, see [Create a draft collection](create-draft-collection.md).
 
-   2. **Collect items and add to a review set**. Choose this option to run the collection and then add the results to a review set. You can add the collection to a new or existing review set. Note that the options to collect contextual Teams conversation messages (also called *conversation threading*) and collect cloud attachments are selected by default and can't be unselected. These options are automatically applied because of the large case format that you used when you initially created the new case for Teams content. For more information about committing collections to a review set, see [Commit a draft collection to a review set](commit-draft-collection.md).
+   2. **Collect items and add to a review set**. Choose this option to run the collection and then add the results to a review set. You can add the collection to a new or existing review set. The options to collect contextual Teams conversation messages (also called *conversation threading*) and collect cloud attachments are selected by default and can't be unselected. These options are automatically applied because of the large case format that you used when you initially created the new case for Teams content. For more information about committing collections to a review set, see [Commit a draft collection to a review set](commit-draft-collection.md).
 
 10. After you're finished configuring the collection, submit the collection to create a draft collection or collect items and add them to a review set.
 
@@ -167,7 +167,7 @@ After you add collections of Teams content to a review set, the next step is to 
 
 - **[Deduplication](#deduplication-of-teams-content)**. How Advanced eDiscovery handles duplicate Teams content.
 
-- **[Metadata](#metadata-for-teams-content)**. Additional metadata properties that Advanced eDiscovery adds to Teams content after it's collected and added to a review set.
+- **[Metadata](#metadata-for-teams-content)**. Metadata properties that Advanced eDiscovery adds to Teams content after it's collected and added to a review set.
 
 Understand grouping, conversation threading, deduplication, and Teams metadata will help you optimize the review and analysis of Teams content. This section also has [tips for viewing Teams content in a review set](#tips-for-viewing-teams-content-in-a-review-set).
 
@@ -175,7 +175,7 @@ Understand grouping, conversation threading, deduplication, and Teams metadata w
 
 When content from Teams chat conversations is added to a review set, posts and replies from conversations are added to HTML transcript files. A single chat conversation can have multiple transcript files. An important function of these transcript files is to present Teams content as conversations and not as individual (or separate) messages. This helps provides context for items that matched the search criteria of your collections in the previous step. Items are group in transcript files by *family* and *conversation*. Items in the same family will have the same value for the **FamilyId** metadata property. Items in the same conversation will have the same value for the **ConversationId** metadata property.
 
-The following table describes how the different types of Teams chat content is grouped by family and conversation.
+The following table describes how the different types of Teams chat content are grouped by family and conversation.
 
 | Teams content type|Group by family  |Group by conversation  |
 |:---------|:---------|:---------|
@@ -196,11 +196,11 @@ Use the **Group** control in the command bar of a review set to view Teams conte
 
 #### Tip for viewing transcript files for conversations
 
-When viewing transcript files in a review set, some of the messages are highlighted in purple. The messages that are highlighted depends on which custodian copy of the transcript you're viewing. For example, in a 1:1 chat begween User1 and User2, the messages posted by User1 are highlighted in purple when you view the transcript collected from User1's mailbox. When you view User2's transcript of the same conversation, messages posted by User2 are highlighted in purple. This highlighting behavior is based on the same Teams client experience, where a user's posts are highlighted in purple in the Teams client.
+When viewing transcript files in a review set, some of the messages are highlighted in purple. The messages that are highlighted depend on which custodian copy of the transcript you're viewing. For example, in a 1:1 chat between User1 and User2, the messages posted by User1 are highlighted in purple when you view the transcript collected from User1's mailbox. When you view User2's transcript of the same conversation, messages posted by User2 are highlighted in purple. This highlighting behavior is based on the same Teams client experience, where a user's posts are highlighted in purple in the Teams client.
 
 ### Conversation threading
 
-Conversation threading functionality in the large case format in Advanced eDiscovery helps you identify contextual content related to items that may be relevant to your investigation. This feature produces produce distinct conversation views that include chat messages that precede and follow the items match the search query during collection. This capability allows you to efficiently and rapidly review complete chat conversations (called *threaded conversations*) in Microsoft Teams. As previous explained, chat conversations are reconstructed in HTML transcript files when Advanced eDiscovery adds Teams content to a review set.
+Conversation threading functionality in the large case format in Advanced eDiscovery helps you identify contextual content related to items that may be relevant to your investigation. This feature produces distinct conversation views that include chat messages that precede and follow the items match the search query during collection. This capability allows you to efficiently and rapidly review complete chat conversations (called *threaded conversations*) in Microsoft Teams. As previous explained, chat conversations are reconstructed in HTML transcript files when Advanced eDiscovery adds Teams content to a review set.
 
 Here's the logic used by Advanced eDiscovery to include additional messages and replies transcript files that provide context around the items match the collection query (called *responsive items*) you used when collecting Teams content. Different threading behaviors are based on the types of chats and the search query used to collect the responsive items. The two types of collection criteria are:
 
@@ -210,7 +210,7 @@ Here's the logic used by Advanced eDiscovery to include additional messages and 
 
 | Teams content type|Queries with search parameters  |Queries with date ranges  |
 |:---------|:---------|:---------|
-|Teams 1:1 and group chats   |Messages that were posted 12 hours before and 12 hours after responsive items are grouped with the responsive item in a single transcript file.   |Messages in a 24 hour window are grouped in a single transcript file.|
+|Teams 1:1 and group chats   |Messages that were posted 12 hours before and 12 hours after responsive items are grouped with the responsive item in a single transcript file.   |Messages in a 24-hour window are grouped in a single transcript file.|
 |Teams channel and private channel chats    |Each post that contains responsive items and all corresponding replies are grouped in a single transcript file. |Same as queries with search parameters.|
 ||||
 
@@ -224,7 +224,7 @@ The following list describes the deduplication (and duplication) behavior when c
 
 - Each transcript file added to a review set should be a one-to-one mapping to an item from workload. That means Advanced eDiscovery doesn't add any Teams content item that has already been added to the review set.
 
-- For 1:1 and group chats, copies of messages are store in the mailbox of each conversation participant. So if all participants of a 1:1 or group chat are added as custodians in a case and include in the scope of a collection, then copies of each transcript (for the same conservation) are added to the review set. Each of these copies are associated with an corresponding custodian. **Tip**: The **Custodian** column in the review set list identifies the custodian for the corresponding transcript file.
+- For 1:1 and group chats, copies of messages are store in the mailbox of each conversation participant. So if all participants of a 1:1 or group chat are added as custodians in a case and include in the scope of a collection, then copies of each transcript (for the same conservation) are added to the review set. Each of these copies is associated with a corresponding custodian. **Tip**: The **Custodian** column in the review set list identifies the custodian for the corresponding transcript file.
 
 - In subsequent collections of items from the same conversation, only the delta content that wasn't previously collected previously is added to the review set and grouped (by sharing the same **ConversationId**) with the previously collected transcripts from the same conversation. Here's an example of this behavior:
 
@@ -232,76 +232,49 @@ The following list describes the deduplication (and duplication) behavior when c
 
    2. Collection B collects messages from the same conversation, but there are new messages between User1 and User2 since Collection A was run.
 
-   3. Only the new messages in Collection B are added to the review set. These messages are added to separate transcript file, but the file is group with the transcripts from Collection A by the same **ConversationId**. 
-Example:  
+   3. Only the new messages in Collection B are added to the review set. These messages are added to a separate transcript file, but the file is group with the transcripts from Collection A by the same **ConversationId**.
 
    This behavior applies to all the types of Teams chats.
 
 ### Metadata for Teams content
 
-In large review sets with thousands or millions of items, it can be difficult to narrow the scope of your review to Teams content. To help you focus your review on Teams content, there a number of metadata properties that are specific to Teams content. You can use these properties to organize the columns in the review list and [configure filters and queries](review-set-search.md) to optimize the review of Teams content. These metadata properties are also included when you export Teams content from Advanced eDiscovery, to help you organize and view content post-export or in third-party eDiscovery tools.
+In large review sets with thousands or millions of items, it can be difficult to narrow the scope of your review to Teams content. To help you focus your review on Teams content, there are metadata properties that are specific to Teams content. You can use these properties to organize the columns in the review list and [configure filters and queries](review-set-search.md) to optimize the review of Teams content. These metadata properties are also included when you export Teams content from Advanced eDiscovery, to help you organize and view content post-export or in third-party eDiscovery tools.
 
-The following table describes metadata properties for Teams content. 
+The following table describes metadata properties for Teams content.
 
 |Metadata property  |Description  |
 |:---------|:---------|
-|ContainsEditedMessages      |         |
-|ConversationName     |         |
-|ConversationType     |         |
-|Date |         |
-|File Class     |         |
-|Message kind     |         |
-|Recipients     |         |
-|TeamsChannelName     |         |
+|ContainsDeletedMessage      | Indicates whether a transcript file contains a deleted message. Deleted messages are identified when viewing the transcript file.|
+|ContainsEditedMessage      | Indicates whether a transcript file contains an edited message. Edited messages are identified when viewing the transcript file.|
+|ConversationId|A GUID that identifies the conversation that the item is associated with. Transcript files and attachments from the same conversation have the same value for this property.|
+|Conversation name     | The name of the conversation the transcript file or attachment is associated with. For Teams 1:1 and group chats, the value of this property is the UPN of all participants of the conversation are concatenated. For example, `User3 <User3@contoso.onmicrosoft.com>,User4 <User4@contoso.onmicrosoft.com>,User2 <User2@contoso.onmicrosoft.com>`. Teams channel and private channel chats use the following format for conversation name: `<Team name>,<Channel name>`.  For example, `eDiscovery vNext, General`.          |
+|ConversationType     | Indicates the type of Team chat. For Teams 1:1 and group chats, the value for this property is `Group`. For Teams channel and private channel chats, the value is `Channel`.|
+|Date | The time stamp of the first message in the transcript file.|
+|FamilyId|A GUID that identifies the transcript file for a chat conversation. Attachments will have the same value for this property as the transcript file that contains the message the file was attached to.|
+|FileClass     |Indicates that type of content. Items from Teams chats have the value `Conversation`. In contrast, Exchange email messages have the value `Email`.|          |
+|MessageKind     | The message kind property. Teams content has the value `microsoftteams , im`. |
+|Recipients     | A list of all users who were sent a copy of the message in a transcript file.|
+|TeamsChannelName     | The name of Teams channel for transcript files for channel and private channel chat messages.|
 |||
 
+For descriptions of other Advanced eDiscovery metadata properties, see [Document metadata fields in Advanced eDiscovery](document-metadata-fields-in-Advanced-eDiscovery.md).
 
+## Export Teams content
 
-ConversationName 
+After you have reviewed and culled Teams content in a review set, you can export the transcript files that contain content that's responsive to your investigation. There aren't any specific export settings for Teams content. Each transcript file is exported as an HTML message file. This file also  contains hidden CDATA tags with all metadata for the individual chat messages. The metadata properties discussed in the previous section are included when Teams content is exported.  
 
-For Teams 1-1 or Group Chats, ConversationName would be the upn of all members in that conversation 
-
-For Teams Channel or Private Channel, the ConversationName would be the following format: 
-
-[Teams Team], [Channel Name]  
-
-Example: 'eDiscovery vNext, General' 
-
-Yammer: Yammer provides the first 120 characters of their messages as the topic field, so we have kept this consistent for ConversationName of Yammer transcript 
-
-File Class 
-
-We have a new file class for Teams / Yammer content called 'Conversation' 
-
-ContainsEditedMessages 
-
-We have a booean flag to help users determine whether this transcript contains edited messages. Only works for Teams content  
-
-ConversationType 
-
-Group - All Teams 1-1 / 1-N and all Yammer transcripts will have ConversationType: Group assigned to it as meta-data 
-
-Channel - All transcripts from Teams Channels will have ConversationType: Channel assigned to it as meta-data 
-
-Recipients 
-
-All individuals who were sent a message within the transcript  
-
-Message kind:"microsoftteams , im" 
-
-This is kept consistent with previous behavior for teams content in Normal Cases 
-
-Date 
-
-Time stamp of first message in the transcript 
-
-TeamsChannelName 
-
-Name of the teams channel 
-
-## Export Teams content 
-
+Each transcript file is referenced in the load file and can be located using the relative path in the Export_native_path field in the load file. Transcript files are located in the Conversations folder in the root export folder.
 
 ## Tips for viewing Teams content in a review set
 
+Here are some tips and best practices for viewing Teams content in a review set.
 
+- Use the **Customize columns** control in the command bar to add and organize columns to optimize the review of Teams content.
+
+  ![Use the Edit column flyout page to add, remove, and organize columns](..\media\EditReviewSetColumns.png)
+
+   You can add and remove columns that are useful for Teams content. You can also sequence the order of columns by dragging and dropping them in the **Edit column** flyout page. You can also sort on columns to group Teams content with similar values for the column you sort on.
+
+- Add the **ConversationId** and **FamilyId** columns and move them to the left. This lets you sort conversation and family items and quickly views the column values at a glance. Other useful columns that to help you review Teams content include **Custodian**, **Recipients**, and **File type** or **Message kind**.
+
+- Use [filters](review-set-search.md) for Teams-related properties to quickly display Teams content. There are filters for most of the metadata properties described in the previous section.
