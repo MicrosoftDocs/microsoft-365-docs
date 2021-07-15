@@ -29,7 +29,7 @@ landingContent:
             url: compare-mdb-m365bp.md
 
   # Card
-  - title: Setup
+  - title: Set up
     linkLists:
       - linkListType: deploy
         links:
@@ -48,7 +48,7 @@ landingContent:
           - text: View or edit device policies
             url: mdb-view-edit-device-policies.md
 
-  # Card (optional)
+  # Card
   - title: Get started
     linkLists:
       - linkListType: get-started
@@ -59,7 +59,7 @@ landingContent:
   # Card
   - title: How do I ...?
     linkLists:
-        linkListType: how-to-guide
+      - linkListType: how-to-guide
         links:
           - text: View and manage incidents
             url: mdb-view-manage-incidents.md
