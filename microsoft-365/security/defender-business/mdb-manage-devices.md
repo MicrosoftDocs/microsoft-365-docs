@@ -101,6 +101,6 @@ Policies are applied to devices through device groups. You can edit a policy to 
 
 ## Next steps
 
-[View or edit device policies in Microsoft Defender for business](mdb-view-edit-device-policies.md).
+- [View or edit device policies in Microsoft Defender for business](mdb-view-edit-device-policies.md).
 
-[Respond to and mitigate threats in Microsoft Defender for business](mdb-respond-mitigate-threats.md)
+- [Respond to and mitigate threats in Microsoft Defender for business](mdb-respond-mitigate-threats.md)

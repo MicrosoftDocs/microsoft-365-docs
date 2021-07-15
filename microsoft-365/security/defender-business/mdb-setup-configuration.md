@@ -33,6 +33,6 @@ As a preview customer, you likely have assistance in setting up Microsoft Defend
  
 ## Next steps
 
-[Review the requirements](mdb-requirements.md)
+- [Review the requirements](mdb-requirements.md)
 
-[Get a detailed overview of Microsoft Defender for business](mdb-overview.md)
+- [Get a detailed overview of Microsoft Defender for business](mdb-overview.md)

@@ -45,6 +45,6 @@ The following table lists remediation actions that are available:
 
 ## Next steps
 
-[Respond to and mitigate threats in Microsoft Defender for business](mdb-respond-mitigate-threats.md)
+- [Respond to and mitigate threats in Microsoft Defender for business](mdb-respond-mitigate-threats.md)
 
-[Manage devices in Microsoft Defender for business](mdb-manage-devices.md)
+- [Manage devices in Microsoft Defender for business](mdb-manage-devices.md)

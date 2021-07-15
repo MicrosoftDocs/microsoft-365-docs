@@ -30,9 +30,8 @@ The following table describes roles to consider as you plan for Microsoft Defend
 
 ## Next steps
 
-[Choose where to manage your policies and settings](mdb-choose-portal.md)
+- [Choose where to manage your policies and settings](mdb-choose-portal.md)
 
-[Onboard devices to Microsoft Defender for business](mdb-onboard-devices.md)
+- [Onboard devices to Microsoft Defender for business](mdb-onboard-devices.md)
 
-[View or edit device policies in Microsoft Defender for business](mdb-view-edit-device-policies.md)
-
+- [View or edit device policies in Microsoft Defender for business](mdb-view-edit-device-policies.md)

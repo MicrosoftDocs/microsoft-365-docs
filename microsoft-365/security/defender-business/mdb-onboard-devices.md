@@ -86,6 +86,6 @@ See [Offboard a device](mdb-manage-devices.md#offboard-a-device).
 
 ## Next steps
 
-[Manage devices in Microsoft Defender for business](mdb-manage-devices.md)
+- [Manage devices in Microsoft Defender for business](mdb-manage-devices.md)
 
-[View or edit device policies in Microsoft Defender for business](mdb-view-edit-device-policies.md)
+- [View or edit device policies in Microsoft Defender for business](mdb-view-edit-device-policies.md)

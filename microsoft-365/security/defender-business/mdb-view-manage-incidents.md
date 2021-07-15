@@ -48,8 +48,8 @@ Microsoft Defender for business assigns an alert severity based on the severity 
 
 ## Next steps
 
-[Respond to and mitigate threats in Microsoft Defender for business](mdb-respond-mitigate-threats.md)
+- [Respond to and mitigate threats in Microsoft Defender for business](mdb-respond-mitigate-threats.md)
 
-[Review remediation actions in the Action center](mdb-review-remediation-actions.md)
+- [Review remediation actions in the Action center](mdb-review-remediation-actions.md)
 
-[View or edit device policies in Microsoft Defender for business](mdb-view-edit-device-policies.md)
+- [View or edit device policies in Microsoft Defender for business](mdb-view-edit-device-policies.md)

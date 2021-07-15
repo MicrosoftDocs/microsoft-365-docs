@@ -40,4 +40,4 @@ If you have chosen a portal and later on change your mind, contact support. They
 
 ## Next step
 
-[Onboard devices to Microsoft Defender for business](mdb-onboard-devices.md)
+- [Onboard devices to Microsoft Defender for business](mdb-onboard-devices.md)

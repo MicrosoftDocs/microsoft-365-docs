@@ -104,6 +104,6 @@ As you define policies, you’ll notice that an order of priority is assigned. Y
 
 ## Next steps
 
-[Get started using Defender for business](mdb-get-started.md)
+- [Get started using Defender for business](mdb-get-started.md)
 
-[Manage devices](mdb-manage-devices.md)
+- [Manage devices](mdb-manage-devices.md)

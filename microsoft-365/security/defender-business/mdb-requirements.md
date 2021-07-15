@@ -32,6 +32,6 @@ The following table lists the basic requirements for Microsoft Defender for busi
 
 ## Next step
 
-[Get Microsoft Defender for business](get-defender-business.md)
+- [Get Microsoft Defender for business](get-defender-business.md)
 
-[Learn more about  Microsoft Defender for business](mdb-overview.md)
+- [Learn more about  Microsoft Defender for business](mdb-overview.md)

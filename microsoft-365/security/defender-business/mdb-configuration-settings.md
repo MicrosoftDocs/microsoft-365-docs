@@ -43,8 +43,8 @@ The following table lists your settings and options:
 
 ## Next step
 
-[Get started with Microsoft Defender for business](mdb-get-started.md)
+- [Get started with Microsoft Defender for business](mdb-get-started.md)
 
-[Review the setup and configuration process](mdb-setup-configuration.md)
+- [Review the setup and configuration process](mdb-setup-configuration.md)
 
-[View or edit device policies in Microsoft Defender for business](mdb-view-edit-device-policies.md)
+- [View or edit device policies in Microsoft Defender for business](mdb-view-edit-device-policies.md)
