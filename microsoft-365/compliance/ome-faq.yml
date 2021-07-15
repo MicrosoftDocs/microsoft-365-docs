@@ -171,12 +171,12 @@ sections:
       - question: |
           Can I automatically remove encryption on incoming and outgoing mail?
         answer: |
-          Admins can set up a mail flow rule to remove encryption for outgoing mail. You can't set up a rule to remove encryption for incoming mail.
+          Admins can set up a mail flow rule to remove encryption for outgoing mail. You can only set up a rule to remove encryption for incoming mail that originates from your organization.
 
       - question: |
-          Can I automatically encrypt messages by setting up policies in Data Loss Prevention (DLP) through the Security &amp; Compliance Center?
+          Can I automatically encrypt messages by setting up policies in Data Loss Prevention (DLP) through the Microsoft 365 compliance center?
         answer: |
-          Yes! You can set up mail flow rules in Exchange Online or by using DLP in the Security &amp; Compliance Center.
+          Yes! You can set up mail flow rules in Exchange Online or by using DLP in the Microsoft 365 compliance center.
 
       - question: |
           Can I customize encrypted messages with my company branding?
