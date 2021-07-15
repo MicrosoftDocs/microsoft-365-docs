@@ -14,7 +14,7 @@ ms.collection: M365-security-compliance
 description: "Learn how to set up and use a 17a-4 Symphony DataParser connector to import and archive Symphony data in Microsoft 365."
 ---
 
-# Set up a connector to archive Symphony data
+# Set up a connector to archive data from Symphony
 
 Use the [Symphony DataParser](https://www.17a-4.com/Symphony-dataparser/) from 17a-4 LLC to import and archive Symphony communications data to user mailboxes in your Microsoft 365 organization. The DataParser includes a Symphony connector that's configured to capture items from a third-party data source and import those items to Microsoft 365. The Symphony DataParser connector converts Symphony data to an email message format and then imports those items to user mailboxes in Microsoft 365.
 
