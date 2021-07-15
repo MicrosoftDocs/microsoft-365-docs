@@ -24,18 +24,7 @@ Microsoft app governance detects anomalous app behavior in your Microsoft 365 te
 
 These policies for app and user patterns and behaviors can protect your users from using non-compliant or malicious apps and limit the access of risky apps to your tenant data.
 
-Here's a quick review of required administrator roles for app policy management.
-
-| Role | Read policies | Create, update, or delete policies |
-|:-------|:-----|:-------|
-| Compliance Administrator | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) |
-| Compliance Reader | ![Check mark](..\media\checkmark.png) |  |
-| Global Administrator | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) |
-| Global Reader  | ![Check mark](..\media\checkmark.png) |  |
-| Security Administrator | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) |
-| Security Reader  | ![Check mark](..\media\checkmark.png) |  |
-| Security Operator | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) |
-||||
+See [Administrator roles](app-governance-get-started.md#administrator-roles) for information on which roles can modify policies.
 
 <!--
 How app policies are the method by which MAPG detects app anomolies resulting in detection (alerts) and remediation (manual or automatic) 
