@@ -40,7 +40,7 @@ Use the navigation bar on the left side of the screen to access your incidents, 
 | **Action center** | Takes you to your list of response actions, including completed or pending actions. <br/>- Select the **History** tab to see the actions that were taken. Some actions are taken automatically; others are taken manually or complete after they are approved. <br/>- Select the **Pending** tab to view actions that require approval to proceed.  |
 | **Threat analytics** | Takes you to a view of current threats and provides you with an at-a-glance view of your threat landscape. |
 | **Secure score** | Provides you with a representation of your company’s security position and offers suggestions to improve it. |
-| **Learning hub** | Provides access to learning paths. Several learning paths are available to help you learn more about Microsoft 365 Defender capabilities.  |
+| **Tutorials** | Provides access to walkthroughs and simulations to help you learn more about how your threat protection features work.  |
 | **Endpoints** > **Search** | Enables you to search for one or more devices that were onboarded to Microsoft Defender for business. |
 | **Endpoints** > **Device inventory** | Enables you to search for one or more devices that were onboarded to Microsoft Defender for business. |
 | **Endpoints** > **Vulnerability management** | Provides you with a dashboard, recommendations, remediation activities, a software inventory, and a list of potential weaknesses within your company. |
