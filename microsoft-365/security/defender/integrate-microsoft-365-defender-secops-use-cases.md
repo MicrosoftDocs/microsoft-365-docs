@@ -40,9 +40,7 @@ The SOC should define a high-level standard for developing use cases, which woul
 
 This figure shows an example of a formal use case process.
 
-<<validate figure with latest
- 
-:::image type="content" source="../media/integrate-microsoft-365-defender-secops/use-case-decision-process.png" alt-text="The use case decision process":::
+:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/use-case-decision-process.png" alt-text="The use case decision process":::
 
 Once a high-level use case standard has been defined and approved, the next step is to create and test an actual use case. This process will be explored using an anti-phishing scenario as an example.
 
@@ -50,13 +48,13 @@ Once a high-level use case standard has been defined and approved, the next step
 
 The first step in creating a use case is to outline the workflow via a story board. Here’s an example high-level story board for a new phishing exploit notification to a Threat Intelligence Team.
  
-:::image type="content" source="../media/integrate-microsoft-365-defender-secops/example-use-case-workflow-storyboard-phishing.png" alt-text="An example use case workflow for an anti-phishing campaign":::
+:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-use-case-workflow-storyboard-phishing.png" alt-text="An example use case workflow for an anti-phishing campaign":::
 
 ### Invoke the use case workflow for example 1
 
 Once the story board has been approved, the next step is to invoke the use case workflow. Here is the process for the example anti-phishing campaign. 
  
-:::image type="content" source="../media/integrate-microsoft-365-defender-secops/example-detailed-use-case-workflow.png" alt-text="An example of a detailed use case workflow for an anti-phishing campaign":::
+:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-detailed-use-case-workflow.png" alt-text="An example of a detailed use case workflow for an anti-phishing campaign":::
 
 ## Use case example 2: Threat & vulnerability scanning
 
@@ -64,11 +62,11 @@ Another scenario where a use case could be used is for threat and vulnerability 
 
 Here is the high-level storyboard for the threat and vulnerability management of assets as part of Threat and Vulnerability Management services.
  
-:::image type="content" source="../media/integrate-microsoft-365-defender-secops/example-use-case-workflow-storyboard-tvm.png" alt-text="An example use case workflow for an anti-phishing campaign":::
+:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-use-case-workflow-storyboard-tvm.png" alt-text="An example use case workflow for an anti-phishing campaign":::
 
 ### Invoke the use case workflow for example 2
 
-:::image type="content" source="../media/m365-defender-secops-overview/example-detailed-use-case-workflow-tvm.png" alt-text="An example of a detailed use case workflow for threat and vulnerability management":::
+:::image type="content" source="../../media/m365-defender-secops-overview/example-detailed-use-case-workflow-tvm.png" alt-text="An example of a detailed use case workflow for threat and vulnerability management":::
  
 ### Analyze the use case output and lessons learned
 

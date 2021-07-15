@@ -15,13 +15,13 @@ localization_priority: Normal
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - Microsoft 365-security-compliance
-  - Microsoft 365initiative-Microsoft 365-defender
+  - M365-security-compliance
+  - m365initiative-m365-defender
 ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
-ms.technology: Microsoft 365d
+ms.technology: m365d
 ---
 # Step 4. Define Microsoft 365 Defender roles, responsibilities, and oversight
 
