@@ -31,7 +31,7 @@ We'll consult and advise admins to develop and implement migration plans for eac
 
 More than 95% of Microsoft Managed Desktop devices are eligible for Windows 11, so you might want to preview the upgrade on test devices prior to production deployment. For more about Windows 11 system requirements, see [Windows 11 requirements](/windows/whats-new/windows-11-requirements). You can request details about the eligibility status of your devices from Microsoft Managed Desktop.
 
-For Microsoft Managed Desktop devices, you can request to add test devices to the **\[Modern Workplace\] Windows 11 Pre-Release Test Devices device group**. This group receives Windows 11 preview builds along with a Microsoft Managed Desktop baseline configuration. Microsoft Managed Desktop doesn't manage the release cadence of Windows 11 preview builds, so members of this device group might receive updates more frequently than Windows 10 device groups.
+For Microsoft Managed Desktop devices, you can request to add test devices to the **\[Modern Workplace\] Windows 11 Pre-Release Test Devices** device group. This group receives Windows 11 preview builds along with a Microsoft Managed Desktop baseline configuration. Microsoft Managed Desktop doesn't manage the release cadence of Windows 11 preview builds, so members of this device group might receive updates more frequently than Windows 10 device groups.
 
 For your devices that aren't managed by Microsoft Managed Desktop, you can join the [Windows Insider Program](/windows-insider/) to download preview builds and get guidance on deploying Windows 11 yourself. If you have devices running Windows 11 pre-release builds and later enroll them in Microsoft Managed Desktop, they won't revert back to Windows 10.
 
