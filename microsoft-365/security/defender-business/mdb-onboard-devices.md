@@ -56,7 +56,7 @@ Soon after the script runs, the device is onboarded to Microsoft Defender for bu
    - Your company has [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis).
    - Your company has Microsoft Intune configured for users to [perform auto-enrollment](/mem/intune/enrollment/windows-enroll). (See [Set up Intune](/mem/intune/fundamentals/setup-steps).) 
 
-
+2. 
 
 ## Run a detection test
 
@@ -69,4 +69,5 @@ After each device is onboarded, you can run a detection test.
    ```powershell
    powershell.exe -NoExit -ExecutionPolicy Bypass -WindowStyle Hidden $ErrorActionPreference= 'silentlycontinue';(New-Object System.Net.WebClient).DownloadFile('http://127.0.0.1/1.exe', 'C:\\test-WDATP-test\\invoice.exe');Start-Process 'C:\\test-WDATP-test\\invoice.exe'
    ```
-3. Wait a few minutes, and then, in the Microsoft 365 Defender portal (https://security.microsoft.com), go to **Incidents**. You should see a new alert indicating the detection test was successful.
+
+3. Wait a few minutes, and then, in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), go to **Incidents**. You should see a new alert indicating the detection test was successful.
