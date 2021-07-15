@@ -70,7 +70,7 @@ Soon after the script runs, the device is onboarded to Microsoft Defender for bu
 
 After each device is onboarded, you can run a detection test. 
 
-1. Open Command Prompt as an administrator.
+1. On a Windows 10 device, open Command Prompt as an administrator.
 
 2. Run the following command:
 
@@ -79,7 +79,6 @@ After each device is onboarded, you can run a detection test.
    ```
 
 3. Wait a few minutes, and then, in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), go to **Incidents**. You should see a new alert indicating the detection test was successful.
-
 
 ## Next steps
 
