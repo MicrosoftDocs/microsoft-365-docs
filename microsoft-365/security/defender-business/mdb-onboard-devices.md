@@ -53,10 +53,19 @@ Soon after the script runs, the device is onboarded to Microsoft Defender for bu
 
 1. Make sure you meet the following requirements:
 
-   - Your company has [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis).
-   - Your company has Microsoft Intune configured for users to [perform auto-enrollment](/mem/intune/enrollment/windows-enroll). (See [Set up Intune](/mem/intune/fundamentals/setup-steps).) 
+   - Your company has [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis) (Azure AD).
+   - Your company has Microsoft Intune configured for users to [perform auto-enrollment](/mem/intune/enrollment/windows-enroll). For more information, see [Set up Intune](/mem/intune/fundamentals/setup-steps). 
 
-2. 
+2. On a Windows 10 device, follow these steps:
+
+   1. Go to **Settings** > **Accounts**, and then select **Access work or school**.
+   2. If you do not see that you are already connected to Azure AD, select **Join this device to Azure Active Directory**.
+   3. Type your username and password to sign in.
+   4. Select **Enroll only in device management**.
+
+3. A few minutes after enrolling a device, go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)), and choose **Devices** to view enrollment status.
+
+
 
 ## Run a detection test
 
