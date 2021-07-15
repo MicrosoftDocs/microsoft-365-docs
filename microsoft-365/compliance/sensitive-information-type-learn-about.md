@@ -15,7 +15,7 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: 
 - M365-security-compliance
-description: ""
+description: "Learn how to identify types of sensitive information so that you know what to protect."
 ---
 
 # Learn about sensitive information types
@@ -30,12 +30,13 @@ Sensitive information types are pattern-based classifiers. They detect sensitive
 
 ## Sensitive information types are used in
 
-- [Data loss prevention policies](dlp-learn-about-dlp.md) 
+- [Data loss prevention policies](dlp-learn-about-dlp.md)
 - [Sensitivity labels](sensitivity-labels.md)
 - [Retention labels](retention.md)
 - [Insider risk management](insider-risk-management.md)
 - [Communication compliance](communication-compliance.md)
 - [Auto-labelling policies](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)
+- [Privacy management (preview)](privacy-management.md)
 
 ## Fundamental parts of a sensitive information type
 
@@ -140,14 +141,23 @@ To create custom sensitive information types in the Security & Compliance Center
 
 > [!NOTE]
 > Improved confidence levels are available for immediate use within Data Loss Prevention for Microsoft 365 services, Microsoft Information Protection for Microsoft 365 services, Communication Compliance, Information Governance, and Records Management.
-
-> Microsoft 365 Information Protection now  supports in preview double byte character set languages for:
+> Microsoft 365 Information Protection now  supports double byte character set languages for:
 > - Chinese (simplified)
 > - Chinese (traditional)
 > - Korean
 > - Japanese
+> 
+> This support is available for sensitive information types. See, [Information protection support for double byte character sets release notes (preview)](mip-dbcs-relnotes.md) for more information.
 
->This support is available for sensitive information types. See, [Information protection support for double byte character sets release notes (preview)](mip-dbcs-relnotes.md) for more information.
+> [!TIP]
+> To detect patterns containing Chinese/Japanese characters and single byte characters or to detect patterns containing Chinese/Japanese and English, define two variants of the keyword or regex.
+> 
+> For example, to detect a keyword like "机密的document", use two variants of the keyword; one with a space between the Japanese and English text and another without a space between the Japanese and English text. So, the keywords to be added in the SIT should be "机密的 document" and "机密的document". Similarly, to detect a phrase "東京オリンピック2020", two variants should be used; "東京オリンピック 2020" and "東京オリンピック2020".
+> 
+> While creating a regex using a double byte hyphen or a double byte period, make sure to escape both the characters like one would escape a hyphen or period in a regex. Here is a sample regex for reference:
+>    - (?<!\d)([４][０-９]{3}[\-?\－\t]*[０-９]{4}
+>
+> We recommend using string match instead of word match in a keyword list.
 
 ## For further information
 - [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)

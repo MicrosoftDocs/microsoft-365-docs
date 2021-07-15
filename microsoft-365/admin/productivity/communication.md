@@ -9,8 +9,8 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: 
-- M365-subscription-management 
+ms.collection:
+- M365-subscription-management
 - Adm_O365
 - Adm_TOC
 ms.custom: AdminSurgePortfolio
@@ -37,7 +37,7 @@ For more information, see [assign licenses to users](../manage/assign-licenses-t
 
 After people have been active in the above products at least once in the last 28 days, you will start to see the insights.
 
-## Why your organization’s Communication score matters 
+## Why your organization’s Communication score matters
 
 Microsoft understands that people have different communication needs. To get a quick response to a question, you might choose to send an instant message. If you want to send status updates to your leadership, you may choose an email message. To reach a broader audience, you may choose to post a community message. Microsoft 365 enables this flexibility in communication modes to fit everyone's needs. Research shows that using real-time communication tools creates a more unified organization and builds morale, regardless of location.
 
@@ -57,7 +57,7 @@ Microsoft 365 provides people the flexibility to fit everyone's communication st
    - Sending messages through Teams
    - Posting on communities in Yammer
 
-   This key metric is shown as a percentage of all people who are using two or more of Exchange, Teams, or Yammer. 
+   This key metric is shown as a percentage of all people who are using two or more of Exchange, Teams, or Yammer.
 
 2. **Body:** Provides more information on how flexibility in the modes of communication is valuable to people in your org.
 
@@ -79,7 +79,7 @@ Microsoft 365 provides people the flexibility to fit everyone's communication st
 
 ### Scoring model
 
-The communication score for your organization measures at an aggregate (organization) level whether people are consistently communicating using multiple modes among email, chat, and community posts over a 28-day window.  
+The communication score for your organization measures at an aggregate (organization) level whether people are consistently communicating using multiple modes among email, chat, and community posts over a 28-day window.
 
 Scores are not provided at the individual user level.
 
@@ -98,20 +98,20 @@ We also provide you with information that helps you gain visibility into how you
 3. **Visualization:** The breakdown represents the use for each mode. The colored portion and the fraction on each bar represent the number of people sending emails,messages, or community posts as a percentage of number of people enabled for that mode:
 
    - **People sending emails:** The colored portion and the fraction represent the percentage of users enabled for Exchange who are sending emails. This fraction is constructed from:
-   
+
      - **Numerator**: People sending emails in the last 28 days.
      - **Denominator**: People enabled for Exchange in the last 28 days.
-	 
+
    - **People sending messages in Microsoft Teams:** The colored portion and the fraction represent the percentage of users enabled for Microsoft Teams who are sending messages. This fraction is constructed from:
-   
+
      - **Numerator**: People sending messages on Microsoft Teams in the last 28 days.
      - **Denominator**: People enabled for Microsoft Teams in the last 28 days.
-	 
+
    - **People posting in communities:** The colored portion and the fraction represent the percentage of users enabled for Yammer that are posting in communities. This fraction is constructed from:
-   
+
      - **Numerator:** People posting in Yammer communities in the last 28 days.
      - **Denominator:** People enabled for Yammer in the last 28 days.
-		  
+
 4. **View related content:** Select this link to view collated videos, and other related help content.
 
 ### @mentions in emails
@@ -125,15 +125,15 @@ We also provide you with information that helps you gain visibility into how you
 3. **Visualization:** Breaks down the response rate for new email threads based on whether they had @mentions or not:
 
    - **Responses to emails with \@mentions:** The colored portion and the fraction represent the response rate for new email threads containing @mentions. This fraction is constructed from:
-   
+
      - **Numerator:** New email threads containing @mentions that were started and received a response in the last 28 days.
      - **Denominator:** New email threads containing @mentions that were started in the last 28 days.
-	 
+
    - **Responses to emails without \@mentions:** The colored portion and the fraction represent the response rate for new email threads containing @mentions. This fraction is constructed from:
-   
+
      - **Numerator:** New email threads that do not contain @mentions, which were started and also received a response in the last 28 days.
      - **Denominator:** New email threads not containing @mentions that were started in the last 28 days.
-	 
+
 4. **View related content:** Select this link to view collated videos, and other related help content.
 
 
@@ -148,20 +148,20 @@ We also provide you with information that helps you gain visibility into how you
 3. **Visualization:** Breaks down the use of chat and channel messages:
 
       - **People sending chat messages:** The colored portion and the fraction represent the use of chat messages within people who sent messages on Microsoft Teams. The fraction is constructed from:
-	  
+
         - **Numerator:** People who sent chat messages on Microsoft Teams in the last 28 days.
         - **Denominator:** People who sent messages on Microsoft Teams in the last 28 days.
-		
+
       - **People sending Channel messages:** The colored portion and the fraction represent the use of channel messages within people sending messages on Microsoft Teams. The fraction is constructed from:
-	  
+
         - **Numerator:** People who sent channel messages on Microsoft Teams in the last 28 days.
         - **Denominator:** People who sent messages on Microsoft Teams in the last 28 days.
-		
+
 4. **View related content:** Select this link to view collated videos, and other related help content.
 
 ### Questions and Answers in Yammer
 
-:::image type="content" source="../../media/yammerqsandas.png" alt-text="[Questions and answers in Yammer]"::: 
+:::image type="content" source="../../media/yammerqsandas.png" alt-text="[Questions and answers in Yammer]":::
 
 1. **Header:** Highlights the posts marked as questions on Yammer that have received an answer marked as &quot;Best answer&quot; as a percentage of all posts marked as questions on Yammer in the last 28 days.
 
@@ -172,7 +172,7 @@ We also provide you with information that helps you gain visibility into how you
    - **Questions:** The colored portion of the bar and associated number represents the total number of posts marked as questions in the last 28 days.
    - **Questions with answers:** The colored portion of the bar and the associated number represents the number of posts marked as questions and have received answers in the last 28 days.
    - **Questions with best answers:** The colored portion of the bar and the associated number represents the number of posts that were marked as questions and have also received a &quot;best answer&quot; in the last 28 days.
-	  
+
 4. **View related content:** Select this link to view collated videos, and other related help content.
 
 ## Related content

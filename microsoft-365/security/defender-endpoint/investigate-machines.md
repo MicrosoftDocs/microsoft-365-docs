@@ -54,6 +54,10 @@ When you investigate a specific device, you'll see:
 
 ![Image of device view](images/specific-device.png)
 
+> [!NOTE]
+> Due to product constrains, the device profile does not consider all cyber evidence when determining the 'Last Seen' timeframe (as seen on the device page as well).
+> For example, the 'Last seen' value in the Device page may show an older time frame even though more recent alerts or data is available in the machine's timeline.
+
 ## Device details
 
 The device details section provides information such as the domain, OS, and health state of the device. If there's an investigation package available on the device, you'll see a link that allows you to download the package.
@@ -179,6 +183,9 @@ The **Azure Advanced Threat Protection** card will display a high-level overview
 The **Logged on users** card shows how many users have logged on in the past 30 days, along with the most and least frequent users. Selecting the "See all users" link opens the details pane, which displays information such as user type, log on type, and when the user was first and last seen. For more information, see [Investigate user entities](investigate-user.md).
 
 ![Image of user details pane](images/logged-on-users.png)
+> [!NOTE]
+> The 'Most frequent' user value is calculated only based on evidence of users who successfully logged on interactively. 
+> However, the "All users" side-pane calculates all sorts of user logons so it is expected to see more frequent users in the side-pane, given that those users may not be interactive.
 
 ### Security assessments
 

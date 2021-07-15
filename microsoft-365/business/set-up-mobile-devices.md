@@ -100,7 +100,7 @@ Open Outlook again, and enter and confirm a PIN. Your Outlook app is now ready f
   
 ![Set  PIN for Outlook app in Android](../media/edb91afb-f1ed-451a-bc6b-8ccba664e055.png)
 
-## See also
+## Related content
 
 [Microsoft 365 for business training videos](../business-video/index.yml)
 
