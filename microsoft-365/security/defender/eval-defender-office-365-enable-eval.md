@@ -58,11 +58,11 @@ Log on to your existing Microsoft Defender for Office 365 environment or tenant 
 
 5. Click the *Start free trial* link.
 
-:::image type="content" source="../../media/mdo-eval/3-mdo-eval-pilot-group-type.png" alt-text="Click the Start free trial *hyperlink* on this panel.":::
+:::image type="content" source="../../media/mdo-eval/3-m365-purchase-button.png" alt-text="Click the Start free trial *hyperlink* on this panel.":::
 
 6. Confirm your request and click the *Try now* button.
 
-:::image type="content" source="../../media/mdo-eval/4_mdo-eval-activate-eval.png" alt-text="Now click the Try now *button*.":::
+:::image type="content" source="../../media/mdo-eval/4_mdo-trial-order.png" alt-text="Now click the Try now *button*.":::
 
 ## Step 2: Audit and verify the public MX record
 

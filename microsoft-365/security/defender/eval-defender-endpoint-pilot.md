@@ -23,7 +23,7 @@ ms.topic: conceptual
 ms.technology: m365d
 ---
 
-# Pilot Microsoft Defender for Endpoint (MDE)
+# Pilot Microsoft Defender for Endpoint
 
 This article will guide you in the process of running a pilot for Microsoft Defender for Endpoint. 
 
