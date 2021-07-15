@@ -36,27 +36,27 @@ At each optics collection interval, one or more of the following measurements ma
 | Measurement | Description |
 | --- | --- |
 | Latency | Time taken to retrieve a small file via HTTP |
-| Throughput | Time taken to retrive a larger file via HTTP, measured very infrequently to avoid excessive bandwidth consumption |
+| Throughput | Time taken to retrieve a larger file via HTTP, measured rarely to avoid excessive bandwidth consumption |
 | Round Trip Time (RTT) | ICMP ping |
 | Traceroute | ICMP traceroute |
 
-Each measurement is typically associated with additional contextual information which may include the following properties:
+Each measurement is typically associated with additional contextual information, which may include the following properties:
 
 | Item | Description |
 | --- | --- |
-| Tenant Id | Unique identifier for the customer's Azure Active Directory tenant associated with the end-user device. |
-| Monitor Id | Identifier for the application generating the request (such as Outlook, OneDrive, etc.), provided by the client application which is performing the measurement. |
-| Request Id | Identifier for the measurement request, specified in the measurement configuration provided by Microsoft. |
-| Remote IP | Masked source IP associated with the request from client to service endpoint, provided by the server which received the measurement request and computed based upon the client source IP address which is visible to Microsoft. IP addresses are masked to a /24 subnet for IPv4 addresses or a /48 subnet for IPv6 addresses to ensure that Microsoft cannot identify individual devices or users. |
-| Front-end | Microsoft 365 service front-end identifier, provided by the server which received the measurement request. |
-| Endpoint | Microsoft 365 service endpoint location, provided by the server which received the measurement request. |
+| Tenant ID | Unique identifier for the customer's Azure Active Directory tenant associated with the end-user device. |
+| Monitor ID | Identifier for the application generating the request (such as Outlook, OneDrive, etc.), provided by the client application that is performing the measurement. |
+| Request ID | Identifier for the measurement request, specified in the measurement configuration provided by Microsoft. |
+| Remote IP | Masked source IP associated with the request from client to service endpoint, provided by the server that received the measurement request and computed based upon the client source IP address that is visible to Microsoft. IP addresses are masked to a /24 subnet for IPv4 addresses or a /48 subnet for IPv6 addresses to ensure that Microsoft cannot identify individual devices or users. |
+| Front-end | Microsoft 365 service front-end identifier, provided by the server that received the measurement request. |
+| Endpoint | Microsoft 365 service endpoint location, provided by the server that received the measurement request. |
 | Certificate Issued By | The "certificate issued by" property of the SSL certificate presented while connecting to the service endpoint, which indicates the certificate authority who issued the certificate to the service endpoint. |
 | Certificate Thumbprint | The "certificate thumbprint" property of the SSL certificate presented while connecting to the service endpoint, which is a publicly accessible unique identifier of the certificate. |
 | Latitude/Longitude | The abstracted latitude and longitude of the end-user device, only collected for tenants who have enabled Windows Location Service on end-user devices and have also [enabled collection of this information in the Microsoft 365 admin portal](office-365-network-mac-perf-overview.md#1-enable-windows-location-services). |
 
 ## Measurement process
 
-Each end-user device will typically perform a measurement either on a scheduled basis (for installed applications) or based on the action of loading browser pages (for web-based applications). Measurement activities are performed as background operations and do not impact application experience for users. As the measurement types and destinations which will be used for a particular iteration of this process are randomized, customers may notice occasional requests to Microsoft service endpoints in their region which are like the typical requests made by end-user devices for normal application connectivity. In addition, customers may notice occasional requests to Microsoft service endpoints which are well outside of their local region. These measurements are often used to ensure optimal routing of customer requests to the best service endpoint, as changes to customer and ISP infrastructure may require Microsoft to change our request routing policies on an ongoing basis. Learn more about how Microsoft routes traffic to the best service endpoint and how to optimize connectivity to Microsoft 365 services in the [Microsoft 365 networking connectivity overview](microsoft-365-networking-overview.md).
+Each end-user device will typically perform a measurement either on a scheduled basis (for installed applications) or based on the action of loading browser pages (for web-based applications). Measurement activities are performed as background operations and do not impact application experience for users. As the measurement types and destinations which will be used for a particular iteration of this process are randomized, customers may notice occasional requests to Microsoft service endpoints in their region that are similar to the typical requests made by end-user devices for normal application connectivity. In addition, customers may notice occasional requests to Microsoft service endpoints that are well outside of their local region. These measurements are often used to ensure optimal routing of customer requests to the best service endpoint, as changes to customer and ISP infrastructure may require Microsoft to change our request routing policies on an ongoing basis. Learn more about how Microsoft routes traffic to the best service endpoint and how to optimize connectivity to Microsoft 365 services in the [Microsoft 365 networking connectivity overview](microsoft-365-networking-overview.md).
 
 ## Service endpoints
 
