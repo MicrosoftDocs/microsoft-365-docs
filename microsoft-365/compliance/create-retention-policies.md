@@ -238,7 +238,7 @@ By choosing the settings for retaining and deleting content in your retention po
 
 - Retain-only
 
-    For this configuration, choose **Retain items for a specific period** and **At end of the retention period: Do nothing**. Or, select **Retain items forever**.
+    For this configuration, choose **Retain items for a specific period** and **At end of the retention period: Do nothing**. Or, select **Retain items forever**. Note that this action type is treated as a hold, so Retention Policy tags are not displayed when the message is viewed in Outlook.
 
 - Retain and then delete
 
