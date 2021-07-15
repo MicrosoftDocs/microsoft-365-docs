@@ -222,3 +222,6 @@ After the add-in is installed and enabled, you'll see the following icons:
 2. Find and select the **Report Phishing** add-in.
 
 3. In the **Edit Report Phishing** flyout that appears, review, and edit settings as appropriate for your organization. When you're finished, click **Save**.
+
+
+DELETE
