@@ -17,12 +17,12 @@ f1.keywords: NOCSH
 
 # Compare Microsoft Defender for business to Microsoft 365 Business Premium
 
-As you probably already know, Microsoft offers a variety of cloud solutions and services, including several different plans for small and midsized businesses like yours. For example, [Microsoft 365 Business Premium](../../business/microsoft-365-business-overview.md) offers advanced cyberthreat protection and device management capabilities. 
+As you probably already know, Microsoft offers various cloud solutions and services, including several different plans for small and midsized businesses like yours. For example, [Microsoft 365 Business Premium](../../business/microsoft-365-business-overview.md) offers advanced cyberthreat protection and device management capabilities. 
 
 **You don't have to have Microsoft 365 Business Premium or any other Microsoft 365 subscription to buy and use Microsoft Defender for business**. If you want to see how Microsoft 365 Business Premium compares to Microsoft Defender for business, this article summarizes important features and capabilities of these two plans. 
 
 > [!NOTE]
-> This article is intended to provide a high-level overview of threat protection features included in Microsoft Defender for business and Microsoft 365 Business Premium. This article is not intended to serve as a service description or licensing contract document. Please see the following resources for more details about what the various plans include:
+> This article is intended to provide a high-level overview of threat protection features included in Microsoft Defender for business and Microsoft 365 Business Premium. This article is not intended to serve as a service description or licensing contract document. For more inforamtion, see the following resources:
 > - [Microsoft 365 Business Premium service description](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description)
 > - [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
 

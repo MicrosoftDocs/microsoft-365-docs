@@ -52,6 +52,12 @@ Use the navigation bar on the left side of the screen to access your incidents, 
 | **Settings** | Enables you to edit settings for the Microsoft 365 Defender portal and Microsoft Defender for business. For example, you can onboard (or offboard) and your company’s devices (also referred to as endpoints). You can also define rules, such as alert suppression rules, and set up indicators to block or allow certain files or processes.  |
 | **More resources** | Navigate to other portals, such as Azure Active Directory. Keep in mind that the Microsoft 365 Defender portal should meet your needs without requiring you to navigate to other portals. |
 
-## Next step
+## Next steps
 
-[Learn how to use Microsoft Defender for business](mdb-use.md)
+[View and manage incidents in Microsoft Defender for business](mdb-view-manage-incidents.md)
+
+[Respond to and mitigate threats in Microsoft Defender for business](mdb-respond-mitigate-threats.md)
+
+[Review remediation actions in the Action center](mdb-review-remediation-actions.md)
+
+[Manage devices in Microsoft Defender for business](mdb-manage-devices.md)
