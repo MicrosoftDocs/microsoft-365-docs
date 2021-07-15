@@ -28,14 +28,6 @@ landingContent:
           - text: Compare plans for small and mid-sized businesses
             url: compare-mdb-m365bp.md
 
-  # Card (optional)
-  - title: Get started
-    linkLists:
-      - linkListType: get-started
-        links:
-          - text: Get started with Microsoft Defender for business
-            url: mdb-get-started.md
-
   # Card
   - title: Setup
     linkLists:
@@ -55,7 +47,15 @@ landingContent:
             url: mdb-onboard-devices.md
           - text: View or edit device policies
             url: mdb-view-edit-device-policies.md
-  
+
+  # Card (optional)
+  - title: Get started
+    linkLists:
+      - linkListType: get-started
+        links:
+          - text: Get started with Microsoft Defender for business
+            url: mdb-get-started.md
+
   # Card
   - title: How do I ...?
     linkLists:
