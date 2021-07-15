@@ -4174,6 +4174,16 @@
       "source_path": "microsoft-365/compliance/insider-risk-management-alerts.md",
       "redirect_url": "/microsoft-365/compliance/insider-risk-management-activities",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/junk-email-reporting-add-in-for-microsoft-outlook.md",
+      "redirect_url": "microsoft-365-docs-pr/microsoft-365/security/office-365-security/enable-the-report-message-add-in",
+      "redirect_document_id": false
+    },
+    {
+    "source_path": "microsoft-365/security/office-365-security/enable-the-report-phish-add-in.md",
+    "redirect_url": "microsoft-365-docs-pr/microsoft-365/security/office-365-security/enable-the-report-message-add-in",
+    "redirect_document_id": false
     }
   ]
 }
