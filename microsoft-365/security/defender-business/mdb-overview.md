@@ -26,10 +26,10 @@ Microsoft Defender for business includes the features and capabilities listed in
 | [![Next-generation protection symbol](../../media/security/security-shield-divided-32.png)](#next-generation-protection) | [Next-generation protection](#next-generation-protection) |Next-generation protection includes antimalware and antivirus protection—on your devices and in the cloud—to protect against threats. |
 | [![Attack surface reduction symbol](../../media/security/security-shield-slash-32.png)](#attack-surface-reduction) | [Attack surface reduction](#attack-surface-reduction) | Your attack surfaces are all the places and ways that your company is vulnerable to a cyberattack. Attack surface reduction capabilities include: <br/>- [Ransomware mitigation](#ransomware-mitigation)  <br/>- [Attack surface reduction rules](#attack-surface-reduction-rules) <br/>- [Application control](#application-control) <br/>- [Web protection](#web-protection) <br/>- [Network protection](#network-protection) <br/>- [Network firewall](#network-firewall) |
 | [![Endpoint detection and response symbol](../../media/security/security-shield-lightning-32.png)](#endpoint-detection-and-response) | [Endpoint detection and response](#endpoint-detection-and-response) | Endpoint detection and response (EDR) receives security signals across your network, devices, and kernel behavior. EDR capabilities include: <br/>- [Behavioral-based detection](#behavioral-based-detection) <br/>- [Manual response actions](#manual-response-actions) <br/>- [Live response](#live-response) |
-| [![Automated investigation and response symbol](../../media/security/security-toolkit-32.png)](#automated-investigation-and-response) | [Automated investigation and response](#automated-investigation-and-response) | Automated investigation and response (AIR) capabilities are designed to examine alerts and take immediate action to resolve breaches. AIR can save your security team a lot of time and effort. All remediation actions are tracked, and you can undo actions if needed. |
+| [![Automated investigation and response symbol](../../media/security/security-toolkit-32.png)](#automated-investigation-and-response) | [Automated investigation and response](#automated-investigation-and-response) | Automated investigation and response (AIR) capabilities are designed to examine alerts and take immediate action to resolve breaches. AIR can save your security team much time and effort. All remediation actions are tracked, and you can undo actions if needed. |
 | [![Lightbulb symbol](/office/media/icons/lightbulb-idea-capture-blue.png)](#threat-intelligence) | [Threat intelligence](#threat-intelligence) | Threat intelligence capabilities include indicators of compromise and threat analytics.  |
 | [![Secure document symbol](/office/media/icons/secure-document-blue.png)](#centralized-management-and-reporting) | [Centralized management and reporting](#centralized-management-and-reporting) | Defender for Endpoint enables your security operations team to centrally manage your organization’s threat protection solution and settings. Your centralized management and reporting capabilities include: <br/>- [Reports](#reporting) <br/>- [Simplified setup experience](#simplified-setup-experience) <br/>- [Role-based access control](#role-based-access-control) |
-| [![Connector symbol](/office/media/icons/connector-blue.png)](#cross-platform-support) | [Cross-platform support](#cross-platform-support) | Most organizations use a variety of devices and operating systems, such as computers running Windows, macOS, or Linux, and mobile devices running iOS or Android. Initially, Microsoft Defender for business supports Windows 10 devices only, with plans to add support for more operating systems soon. |
+| [![Connector symbol](/office/media/icons/connector-blue.png)](#cross-platform-support) | [Cross-platform support](#cross-platform-support) | Most organizations use various devices and operating systems, such as computers running Windows, macOS, or Linux, and mobile devices running iOS or Android. Initially, Microsoft Defender for business supports Windows 10 devices only, with plans to add support for more operating systems soon. |
 | [![API symbol](/office/media/icons/api.png)](#apis) | [APIs](#apis) (for integration)| Application programming interfaces (APIs) like the Defender for Endpoint APIs enable applications to communicate with each other. See [APIs](#apis). |
 
 The following sections provide more details about what's included in Microsoft Defender for business.
@@ -44,7 +44,7 @@ To learn more, see [Threat and vulnerability management](../defender-endpoint/ne
 
 ## Next-generation protection
 
-Next-generation protection includes antimalware and antivirus protection — on your devices and in the cloud — to protect against threats. Next-generation protection in Microsoft Defender for business includes:
+Next-generation protection includes antimalware and antivirus protection—on your devices and in the cloud—to protect against threats. Next-generation protection in Microsoft Defender for business includes:
 
 - Behavior-based, heuristic, and real-time antivirus protection. Files or processes that have suspicious attributes or exhibit malicious behaviors are stopped in their tracks, and are analyzed immediately.
 - Cloud-delivered protection, which includes near-instant detection and blocking of new and emerging threats. As threats are detected, they’re sent to the cloud for immediate analysis. If they’re determined to be malicious, they’re logged as such, and are blocked immediately. Detection, blocking, analysis, and determination happens almost instantly. Other users/customers (in addition to your organization) benefit from these capabilities, too, as the newly identified threats are now blocked on their devices.
@@ -158,7 +158,7 @@ To learn more, see [Overview of automated investigations](../defender-endpoint/a
 
 ## Threat intelligence
 
-Threat intelligence capabilities include [indicators of compromise](#indicators-of-compromise) and [threat analytics](#threat-analytics). Together, these capabilities enable you to block (or allow) certain entities, such as files or processes, as well as learn about current and relevant threats. 
+Threat intelligence capabilities include [indicators of compromise](#indicators-of-compromise) and [threat analytics](#threat-analytics). Together, these capabilities enable you to block (or allow) certain entities, such as files or processes, and learn about current and relevant threats. 
 
 ### Indicators of compromise
 
@@ -220,9 +220,9 @@ To learn more, see [Manage portal access using role-based access control](../def
 
 ## Cross-platform support
 
-People often use a variety of devices and operating systems at work. For example, many companies use computers running Windows, macOS, or Linux, and mobile devices running iOS or Android OS. 
+People often use various devices and operating systems at work. For example, many companies use computers running Windows, macOS, or Linux, and mobile devices running iOS or Android OS. 
 
-Initially, Microsoft Defender for business supports Windows 10 devices only; however, we are planning to support additional operating systems in the future. 
+Initially, Microsoft Defender for business supports Windows 10 devices only; however, we are planning to support other operating systems in the future. 
 
 To learn more, see [Defender for Endpoint (Windows)](../defender-endpoint/microsoft-defender-endpoint.md).
 
