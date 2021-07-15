@@ -143,9 +143,9 @@ For more information about these options, see the following guidance from the DL
 
 To consider when using sensitive information types to auto-apply retention labels:
 
-- When you use built-in sensitive information types, new, modified, and existing items can be auto-labeled.
+- When you use built-in sensitive information types: New, modified, and existing items can be auto-labeled.
 
-- When you use custom sensitive information types, only new and modified items can be auto-labeled, not existing items.
+- When you use custom sensitive information types: New and modified items can be auto-labeled, but not existing items.
 
 
 #### Auto-apply labels to content with keywords or searchable properties
