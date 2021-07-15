@@ -21,7 +21,7 @@ For specific steps to follow to get Windows 11 installed on your Microsoft Manag
 
 Windows 11 preview builds are available starting June 28, 2021 through the [Windows Insider Program](/windows-insider/). We expect release builds to be generally available by the end of calendar year 2021.
 
-You are welcome to install preview builds on devices whether they are managed by Microsoft Managed Desktop or not. Once Windows 11 is generally available, we'll support both Windows 10 and Windows 11 devices in parallel until Windows 10 reaches end of support.
+You are welcome to install preview builds on devices whether they are managed by Microsoft Managed Desktop or not. We’ll continue to support Windows 10 in parallel until it reaches end of support.
 
 When Windows 11 is generally available, we'll do more validation testing. We expect that January 2022 will be the soonest that Windows 11 will be offered to Microsoft Managed Desktop production devices through our standard deployment groups.
 
