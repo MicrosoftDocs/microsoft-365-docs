@@ -50,14 +50,14 @@ The following sections provide more information about your security policies in 
 
 5. On the **General information** tab, specify a name and description. This information will help you and your team identify the policy later on.
 
-6. Review the policy order and edit if necessary. (See the **Policy order** section for more details).
+6. Review the policy order and edit if necessary. For more information, see [Policy order](#edit-an-existing-policy).
 
 7. On the **Device groups** tab, either create a new device group, or use an existing group. Policies are assigned to devices through device groups. Here are some things to keep in mind:
 
    - Initially, you might only have your default device group, which includes the devices people in your company are using to access company data and email.
    - Create a new device group to apply a policy with specific settings that are different from the default policy. 
    - When you set up your device group, you specify certain criteria, such as the operating system version. Devices that meet the criteria are included in that device group, unless you exclude them. 
-   - All device groups—including the default and custom device groups that you define—are stored in in Azure Active Directory (Azure AD).
+   - All device groups—including the default and custom device groups that you define—are stored in Azure Active Directory (Azure AD).
    - As you add (or remove) devices in a device group, the devices receive (or are released from) the policies that target the device group. 
 
 8. On the **Configuration settings** tab, specify the settings for your policy, and then choose Next. For more information about the individual settings, see [Configuration settings for next-generation protection](#understand-configuration-settings-for-next-generation-protection).
