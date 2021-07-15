@@ -35,6 +35,10 @@ To help you decide which portal to use, see the following table:
 
 Microsoft Defender for business is designed to provide strong protection while saving you time and effort in configuring your security settings. The streamlined experience in the Microsoft 365 Defender portal makes it simple to onboard devices and manage them. In addition, default policies are included so that your company's devices are protected as soon as they are onboarded. You can keep your default settings as they are, or make changes to suit your business needs. You can also add new policies to manage devices.
 
+## What if you change your mind?
+
+If you have chosen a portal and later on change your mind, contact support. They'll help you transition your settings to the other portal.
+
 ## Next step
 
 [Onboard devices to Microsoft Defender for business](mdb-onboard-devices.md)
