@@ -73,7 +73,7 @@ sections:
       - question: |
           Is all the functionality of the original Bookings Web app available in Microsoft Teams?
         answer: |
-          A lightweight version of Bookings is now available as an app in Teams. The initial announcement is [here](https://www.microsoft.com/microsoft-365/blog/2020/03/06/empowering-care-teams-with-new-tools-in-microsoft-365/). There is deep link functionality to pop out in the Web app, and after setup, day-to-day use of Bookings can be done without ever leaving Teams. Information flows across platforms.
+          A lightweight version of Bookings is now available as an app in Teams. More information on it can be found [here](https://support.microsoft.com/office/overview-of-the-bookings-app-in-teams-7b8569e1-0c8a-444e-b712-d9968b05110b). There is deep link functionality to pop out in the Web app, and after setup, day-to-day use of Bookings can be done without ever leaving Teams. Information flows across platforms.
           
       - question: |
           Is Bookings a small business offering or an Enterprise offering or both?
