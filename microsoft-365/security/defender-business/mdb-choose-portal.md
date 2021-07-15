@@ -17,7 +17,9 @@ f1.keywords: NOCSH
 
 # Choose where to manage your policies and settings
 
-When you begin to use Microsoft Defender for business, you will be asked whether you want to use Endpoint Manager or your Microsoft 365 Defender portal. The following table describes each portal:
+When you begin to use Microsoft Defender for business, you will be asked whether you want to use Endpoint Manager or your Microsoft 365 Defender portal. You'll be asked which portal to use only once, and you can't easily switch back and forth between portals.
+
+To help you decide which portal to use, see the following table:
 
 
 | Portal  | Description  |
@@ -26,7 +28,8 @@ When you begin to use Microsoft Defender for business, you will be asked whether
 |Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) <p>*Endpoint Manager now includes Microsoft Intune*     | Microsoft Endpoint Manager includes Microsoft Intune, a cloud-based mobile device management (MDM) and mobile application management (MAM) provider for apps and devices. Many enterprise organizations use Intune to manage devices, such as mobile phones, tablets, and laptops. To learn more, see [Microsoft Intune is an MDM and MAM provider for your devices](/mem/intune/fundamentals/what-is-intune).       |
 
 
-We recommend using the Microsoft 365 Defender portal and its wizard-like experience for managing your devices and security settings. 
+> [!TIP]
+> We recommend using the Microsoft 365 Defender portal and its wizard-like experience for using and managing Defender for business. 
 
 ## Why we recommend using the Microsoft 365 Defender portal to manage your security solution
 
