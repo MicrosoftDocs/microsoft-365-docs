@@ -17,12 +17,21 @@ f1.keywords: NOCSH
 
 # Manage devices in Microsoft Defender for business
 
-In Microsoft Defender for business, devices are managed through policies that are assigned to device groups. Microsoft Defender for business includes a default device group for all your devices, and default policies that are applied to the default device group. You can keep your default settings, or make changes to suit your company's needs. 
+In Microsoft Defender for business, you can manage devices as follows:
 
-## View your device groups
+- View a list of onboarded devices to see their risk level, exposure level, and health state
+- Take action on a device that has threat detections
+- Add or remove devices from a policy
+
+> [!NOTE]
+> The procedures in this article assume that you are using the Microsoft 365 Defender portal for Defender for business. For more information, see [Why we recommend using the Microsoft 365 Defender portal to manage your security solution](mdb-choose-portal.md#why-we-recommend-using-the-microsoft-365-defender-portal-to-manage-your-security-solution).
+
+## View the list of onboarded devices
 
 1. step
+
 1. step
+
 1. step
 
 ## Create a new device group
