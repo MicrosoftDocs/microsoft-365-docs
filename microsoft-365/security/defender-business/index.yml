@@ -11,7 +11,7 @@ metadata:
   ms.collection: SMB
   author: denisebmsft
   ms.author: deniseb
-  ms.date: 07/13/2021
+  ms.date: 07/15/2021
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
 
@@ -60,3 +60,14 @@ landingContent:
   
   # Card
   - title: How do I ...?
+    linkLists:
+        linkListType: how-to-guide
+        links:
+          - text: View and manage incidents
+            url: mdb-view-manage-incidents.md
+          - text: Respond to threats
+            url: mdb-respond-mitigate-threats.md
+          - text: Review remediation actions
+            url: mdb-review-remediation-actions.md
+          - text: Manage devices
+            url: mdb-manage-devices.md
