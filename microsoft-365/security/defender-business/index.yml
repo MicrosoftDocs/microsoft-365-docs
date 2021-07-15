@@ -23,7 +23,7 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: What is Microsoft Defender for business?
+          - text: What is Defender for business?
             url: mdb-overview.md
           - text: Compare plans for small and mid-sized businesses
             url: compare-mdb-m365bp.md
