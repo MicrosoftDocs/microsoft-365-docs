@@ -100,11 +100,13 @@ In the term store, you can view the status of requests by:
 
 1. On the **Term store** page, search for and select the term set for which you want to view the status.
 2. On the term page, select the **Usage settings** tab.
+
     In the **Create topics from terms** section, you can see the percentage of terms that have created new topics so far and the total number of requests.
-3. Select **View all requests**.
-4. On the **All requested terms for topic creation** panel, view the status of the term requests.
-5. If you have many requests, select **Load more** to keep loading additional items.
-6. To review requests that are in a particular state, use the filter option on the **Status** column.
+
+2. Select **View all requests**.
+3. On the **All requested terms for topic creation** panel, view the status of the term requests.
+4. If you have many requests, select **Load more** to keep loading additional items.
+5. To review requests that are in a particular state, use the filter option on the **Status** column.
 
 **--Insert screenshots from final UX--**
 
