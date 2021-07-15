@@ -10,8 +10,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
   - NOCSH
-ms.author: dolmont
-author: DulceMontemayor
+ms.author: v-lsaldanha
+author: lovina-saldanha
 localization_priority: Normal
 manager: dansimp
 audience: ITPro

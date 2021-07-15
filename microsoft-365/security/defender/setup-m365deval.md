@@ -8,8 +8,8 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: dolmont
-author: DulceMontemayor
+ms.author: v-lsaldanha
+author: lovina-saldanha
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -29,13 +29,11 @@ ms.technology: m365d
 **Applies to:**
 - Microsoft 365 Defender 
 
-
 Creating a Microsoft 365 Defender trial lab or pilot environment and deploying it is a three-phase process:
 
 |[![Phase 1: Prepare](../../media/phase-diagrams/prepare.png)](prepare-m365d-eval.md)<br/>[Phase 1: Prepare](prepare-m365d-eval.md) |![Phase 2: Set up](../../media/phase-diagrams/setup.png)<br/>Phase 2: Set up |[![Phase 3: Onboard](../../media/phase-diagrams/onboard.png)](config-m365d-eval.md)<br/>[Phase 3: Onboard](config-m365d-eval.md) | [![Back to pilot](../../media/phase-diagrams/backtopilot.png)](m365d-pilot.md)<br/>[Back to pilot playbook](m365d-pilot.md) |
 |--|--|--|--|
 ||*You are here!*  | | |
-
 
 You're currently in the set up phase. Take the initial steps to access Microsoft 365 Security Center then set up your trial lab or pilot environment.
 
@@ -47,7 +45,6 @@ Sign up for an Office 365 or Azure Active Directory subscription to generate a *
 In this phase, you'll be guided to:
 - Create an Office 365 E5 trial tenant
 - Enable Microsoft 365 trial subscription
-
 
 ## Create an Office 365 E5 trial tenant
 >[!NOTE]

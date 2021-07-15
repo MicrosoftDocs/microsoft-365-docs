@@ -299,9 +299,9 @@
     - name: How-to guides
       items: 
        - name: Create a trial lab or pilot environment
-         href: m365d-evaluation.md
+         href: eval-overview.md
        - name: Run pilot playbook
-         href: m365d-pilot.md
+         href: eval-overview.md
        - name: Turn on FAQ
          href: m365d-enable-faq.md
 
