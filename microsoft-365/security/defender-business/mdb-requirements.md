@@ -29,3 +29,7 @@ The following table lists the basic requirements for Microsoft Defender for busi
 
 > [!TIP]
 > To learn more, see [Minimum requirements for Defender for Endpoint](../defender-endpoint/minimum-requirements.md).
+
+## Next step
+
+[Get Microsoft Defender for business](get-defender-business.md)
