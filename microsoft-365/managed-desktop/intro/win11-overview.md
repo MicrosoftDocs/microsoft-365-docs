@@ -15,9 +15,11 @@ ms.collection: M365-modern-desktop
 
 Following the announcement of Windows 11, you might have started planning Windows 11 migrations as part of your efforts to keep Windows 10 devices up to date. This article outlines important considerations and how Microsoft Managed Desktop will support smooth transitions in your environments. For information about Windows 11 itself, see [Windows 11 overview](/windows/whats-new/windows-11).
 
+For specific steps to follow to get Windows 11 installed on your Microsoft Managed Desktop devices, see [Preview and test Windows 11 with Microsoft Managed Desktop](../working-with-managed-desktop/test-win11-mmd.md).
+
 ## Timeline for Windows 11
 
-Windows 11 preview builds are available starting June 28, 2021 through the Windows Insider Program [Windows Insider Program](https://docs.microsoft.com/windows-insider/). We expect release builds to be generally available by the end of calendar year 2021.
+Windows 11 preview builds are available starting June 28, 2021 through the [Windows Insider Program](/windows-insider/). We expect release builds to be generally available by the end of calendar year 2021.
 
 You are welcome to install preview builds on devices whether they are managed by Microsoft Managed Desktop or not. Once Windows 11 is generally available, we'll support both Windows 10 and Windows 11 devices in parallel until Windows 10 reaches end of support.
 

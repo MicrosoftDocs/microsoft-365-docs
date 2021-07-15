@@ -19,7 +19,7 @@ ms.collection: M365-modern-desktop
 
 To date, more than 95% of Microsoft Managed Desktop devices meet [eligibility criteria for Windows 11](/windows/whats-new/windows-11-requirements). You can request details about the eligibility status of your devices from Microsoft Managed Desktop. To file the request, follow these steps:
 
-1. Open a new service request with Severity C with the Microsoft Managed Desktop Service Engineering team. If you need more info on how to do file the request, see [Admin support](admin-support.md).
+1. Open a new service request with the Microsoft Managed Desktop Service Engineering team. If you need more info on how to do file the request, see [Admin support](admin-support.md).
 2. Use these values for the fields:
     - Title: Windows 11 device eligibility
     - Request type: Request for information
@@ -35,7 +35,7 @@ You can choose any of your existing or new devices for Windows 11 testing, but y
 
 To enroll your devices in the pre-release test group:
 
-1. Open a new service request with Severity C with the Microsoft Managed Desktop Service Engineering team.
+1. Open a new service request with the Microsoft Managed Desktop Service Engineering team.
 2. Use these values for the fields:
     - Title: Windows 11 compatibility enrollment
     - Request type: Change request
@@ -47,7 +47,7 @@ To enroll your devices in the pre-release test group:
 
 Business-critical applications are the best candidates for more validation in a closed Windows 11 environment. We can help you prioritize apps for Windows 11 testing based on usage and reliability data. To request our recommendations, follow these steps:
 
-1. Open a new service request with Severity C with the Microsoft Managed Desktop Service Engineering team. If you need more info on how to do file the request, see [Admin support](admin-support.md).
+1. Open a new service request with the Microsoft Managed Desktop Service Engineering team. If you need more info on how to do file the request, see [Admin support](admin-support.md).
 2. Use these values for the fields:
     - Title: Windows 11 Test Base candidates
     - Request type: Request for information
@@ -58,7 +58,7 @@ Business-critical applications are the best candidates for more validation in a 
 
 If you encounter Windows 11 compatibility issues with your line-of-business or Microsoft 365 apps, report them to us for investigation and remediation. To report an issue, follow these steps:
 
-1. Open a new service request of Severity C with the Microsoft Managed Desktop Service Engineering team.
+1. Open a new service request with the Microsoft Managed Desktop Service Engineering team.
 2. Use these values for the fields:
     - Title: Windows 11 compatibility testing
     - Request type: Incident
