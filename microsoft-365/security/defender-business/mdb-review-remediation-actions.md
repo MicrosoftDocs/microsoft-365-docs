@@ -30,3 +30,16 @@ As threats are detected, remediation actions come into play. Depending on the pa
 3. Select the **Pending** tab to view and approve (or reject) any pending actions. Such actions can arise from antivirus/antimalware protection, automated investigations, manual response activities, or live response sessions.
 
 4. Select the **History** tab to view a list of completed actions. 
+
+## Remediation actions
+
+Microsoft Defender for business includes several remediation actions. These actions include manual response actions, actions following automated investigation, and live response actions.
+
+The following table lists remediation actions that are available:
+
+
+| Source  | Actions  |
+|---------|---------|
+| Automated investigations <br/> [Learn more about automated investigations](../defender-endpoint/automated-investigations.md)      | - Quarantine a file <br/>- Remove a registry key <br/>- Kill a process <br/>- Stop a service <br/>- Disable a driver <br/>- Remove a scheduled task        |
+| Manual response <br/> [Learn more about manual response actions](../defender-endpoint/respond-machine-alerts.md)   | - Run antivirus scan <br/>- Isolate device <br/>- Stop and quarantine <br/>- Add an indicator to block or allow a file       |
+| Live response  <br/> [Learn more about live response](../defender-endpoint/live-response.md)   | - Collect forensic data <br/>- Analyze a file <br/>- Run a script <br/>- Send a suspicious entity to Microsoft for analysis <br/>- Remediate a file <br/>- Proactively hunt for threats         |

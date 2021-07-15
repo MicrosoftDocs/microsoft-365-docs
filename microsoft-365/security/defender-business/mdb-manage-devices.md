@@ -28,11 +28,15 @@ In Microsoft Defender for business, you can manage devices as follows:
 
 ## View the list of onboarded devices
 
-1. step
+:::image type="content" source="../../media/defender-business/mdb-deviceinventory.png" alt-text="Screenshot of device inventory":::
 
-1. step
+1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
-1. step
+2. In the navigation pane, choose **Device inventory**.
+
+3. Select a device to open its flyout, where you can learn more about its status and take action. 
+
+   :::image type="content" source="../../media/defender-business/mdb-selected-device.png" alt-text="Screenshot of a selected device with details and actions available":::
 
 ## Create a new device group
 
