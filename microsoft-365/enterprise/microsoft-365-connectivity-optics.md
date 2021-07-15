@@ -26,7 +26,7 @@ description: This article contains information about Microsoft 365 Connectivity 
 
 This document describes some of the connectivity optics Microsoft typically collects from customer devices, and describes some of the ways Microsoft uses such data to analyze and optimize service delivery and to assess and ensure the best possible end-user experience.
 
-Connectivity optics are generally collected from Microsoft applications installed on end-user devices, or when Microsoft 365 services are accessed from browsers. Unlike optional data collection within Microsoft 365 services, many of the connectivity optics described here are integral to ensuring that Microsoft meets our availability and performance commitment to customers by quickly detecting and responding to any issues in the connectivity path between end-users and Microsoft service endpoints. Some of these optics are also used to provide additional value to customers within features such as [Network connectivity in the Microsoft 365 Admin Center](office-365-network-mac-perf-overview.md).
+Connectivity optics are generally collected from Microsoft applications, which may be installed on end-user devices or accessed from browsers. Unlike optional data collection within Microsoft 365 services, many of the connectivity optics described here are integral to ensuring that Microsoft meets our availability and performance commitment to customers. These optics allow Microsoft to quickly detect and respond to any issues in the connectivity path between end-users and Microsoft service endpoints. Some of these optics are also used to enable features such as [Network connectivity in the Microsoft 365 Admin Center](office-365-network-mac-perf-overview.md).
 
 ## Optics collected from Microsoft 365 applications
 
@@ -40,7 +40,7 @@ At each optics collection interval, one or more of the following measurements ma
 | Round Trip Time (RTT) | ICMP ping |
 | Traceroute | ICMP traceroute |
 
-Each measurement is typically associated with additional contextual information, which may include the following properties:
+Each measurement is typically associated with additional information, which may include the following items:
 
 | Item | Description |
 | --- | --- |
@@ -52,7 +52,7 @@ Each measurement is typically associated with additional contextual information,
 | Endpoint | Microsoft 365 service endpoint location, provided by the server that received the measurement request. |
 | Certificate Issued By | The "certificate issued by" property of the SSL certificate presented while connecting to the service endpoint, which indicates the certificate authority who issued the certificate to the service endpoint. |
 | Certificate Thumbprint | The "certificate thumbprint" property of the SSL certificate presented while connecting to the service endpoint, which is a publicly accessible unique identifier of the certificate. |
-| Latitude/Longitude | The abstracted latitude and longitude of the end-user device, only collected for tenants who have enabled Windows Location Service on end-user devices and have also [enabled collection of this information in the Microsoft 365 admin portal](office-365-network-mac-perf-overview.md#1-enable-windows-location-services). |
+| Latitude/Longitude | The abstracted latitude and longitude of the end-user device. This is only collected for tenants who have enabled Windows Location Service on end-user devices and have also [enabled collection of this information in the Microsoft 365 admin portal](office-365-network-mac-perf-overview.md#1-enable-windows-location-services). |
 
 ## Measurement process
 
