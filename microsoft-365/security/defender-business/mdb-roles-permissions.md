@@ -28,3 +28,11 @@ The following table describes roles to consider as you plan for Microsoft Defend
 | Security operator | Security operators can perform security reader tasks plus the following tasks: <br/>- View, investigate, and respond to security threats alerts  |
 | Security reader | Security readers can perform the following tasks: <br/>- View security-related policies across Microsoft 365 services <br/>- View security threats and alerts <br/>- View reports  |
 
+## Next steps
+
+[Choose where to manage your policies and settings](mdb-choose-portal.md)
+
+[Onboard devices to Microsoft Defender for business](mdb-onboard-devices.md)
+
+[View or edit device policies in Microsoft Defender for business](mdb-view-edit-device-policies.md)
+
