@@ -26,13 +26,13 @@ description: Learn about recommended cloud pc sizing options for your Deschutes 
 
 # Deschutes Business sizing options
 
-Deschutes Business offers fixed-price licensing (through Microsoft 365) for different cloud PC sizes. You should assess your business requirements to determine which sizes make sense for your users. 
+Deschutes Business offers fixed-price licensing (through Microsoft 365) for different cloud PC sizes. When you assign a license to a user, you need to select one of several options. Each has a different number of CPUs, RAM, and storage. You should assess your business requirements to determine which sizes make sense for your users. 
 
 This table shows examples of the different sizes available for a cloud PC.
 
 > [!NOTE]  
-> Deschutes Business is automatically using the right images per SKU, meaning that Microsoft 365 Apps and Teams are pre-installed where its supported and where its not.   
-  
+> Deschutes Business automatically uses the right images per SKU, meaning that Microsoft 365 Apps and Teams are pre-installed where its supported and where its not.   
+
 
 |CPUs, RAM, and storage|Example scenarios|Recommended apps|
 |:-------------------------------------------------------------------------------|:----------------------------------|:----------------------------------|

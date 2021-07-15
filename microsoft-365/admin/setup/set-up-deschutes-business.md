@@ -114,7 +114,7 @@ After being assigned a license, end users can access their cloud PCs in two diff
 
 End users can navigate to deschutes.microsoft.com to access their cloud PCs.  
 
-   ![Deschutes home](../media/deschutes/deschutes-home.png) </br>
+   ![Deschutes home](../../media/deschutes/deschutes-home.png) </br>
 
 #### Requirements
 
@@ -128,7 +128,7 @@ To access their cloud PC from this website, the end user's device must meet the 
 
 While on deschutes.microsoft.com, end users can perform actions on their cloud PCs by selecting the gear icon on a cloud PC card.
 
-   ![Card menu](../media/deschutes/cloudpc-gear.png) </br>
+   ![Card menu](../../media/deschutes/cloudpc-gear.png) </br>
 
 - **Restart**: Restarts the cloud PC.
 - **Rename**: Changes the name of the cloud PC shown to the user on Deschutes.com. This action won’t affect any name in MEM, AAD, on the device, or in the Remote Desktop Apps. 
@@ -167,7 +167,7 @@ To set up their Remote Desktop client, users follow these steps:
 1. Download the Remote Desktop app from the Download App page on deschutes.microsoft.com.
 2. Subscribe to a workspace as described in [Remote Desktop Workspaces](https://docs.microsoft.com/windows-server/remote/remote-desktop-services/clients/windowsdesktop#workspaces).
 
-   ![Remote desktop clients](../media/deschutes/deschutes-remote-desktop-apps.png) </br> 
+   ![Remote desktop clients](../../media/deschutes/deschutes-remote-desktop-apps.png) </br> 
 
 
 #### End user hardware requirements for accessing cloud PCs
