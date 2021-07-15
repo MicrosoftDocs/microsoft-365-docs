@@ -83,7 +83,25 @@ Policies are applied to devices through device groups. You can edit a policy to 
 
 ## Offboard a device
 
+1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
+2. In the navigation pane, choose **Settings**, and then choose **Endpoints**.
+
+3. Under **Device management**, choose **Offboarding**.
+
+4. Select the Windows 10 operating system.
+
+5. In the **Offboard a device** section, in the **Deployment method** list, select **Local Script**, and then choose **Download package**.
+
+6. Save the zipped folder to a location, such as a removable drive.
+
+7. On each device, follow these steps: 
+
+   1. Copy the configuration package to the device.
+   2. Extract its contents to a location you can find easily (such as the Desktop or to a `C:\Temp folder`). Notice that the folder contains a file called `WindowsDefenderATPOffboardingPackage_valid_until_YYYY-MM-DD.zip` (where `YYYY-MM-DD` refers to the expiry date of the package.
+   3. Select the Start menu, and then type `cmd` to find the Command Prompt app. Then run Command Prompt as an administrator.
+   4. In the Command Prompt window, type the location of the script file that you saved in step 7b. For example, if you saved it to the Desktop, you’d type `%userprofile%\Desktop\WindowsDefenderATPOffboardingPackage_valid_until_YYYY-MM-DD.cmd`.
+   5. Press the Enter key, or select **OK**.
 
 ## Next steps
 
