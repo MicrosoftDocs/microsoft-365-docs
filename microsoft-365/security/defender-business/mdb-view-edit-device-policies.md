@@ -58,7 +58,6 @@ The following sections provide more information about your security policies in 
    - Create a new device group to apply a policy with specific settings that are different from the default policy. 
    - When you set up your device group, you specify certain criteria, such as the operating system version. Devices that meet the criteria are included in that device group, unless you exclude them. 
    - All device groups—including the default and custom device groups that you define—are stored in Azure Active Directory (Azure AD).
-   - As you add (or remove) devices in a device group, the devices receive (or are released from) the policies that target the device group. 
 
 8. On the **Configuration settings** tab, specify the settings for your policy, and then choose Next. For more information about the individual settings, see [Configuration settings for next-generation protection](#understand-configuration-settings-for-next-generation-protection).
 
