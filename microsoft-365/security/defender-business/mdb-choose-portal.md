@@ -21,7 +21,6 @@ When you begin to use Microsoft Defender for business, you will be asked whether
 
 To help you decide which portal to use, see the following table:
 
-
 | Portal  | Description  |
 |---------|---------|
 |The Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) <p>*Recommended*    | The Microsoft 365 Defender portal is where you'll view and manage incidents, respond to and mitigate threats, view reports, review pending or completed actions, and more. This portal is your one-stop shop for your company's security settings and threat protection capabilities. Plus, you get a simplified experience to help you get started quickly and efficiently.        |
