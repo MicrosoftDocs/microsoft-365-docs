@@ -4178,7 +4178,7 @@
     {
       "source_path": "microsoft-365/security/defender/m365d-evaluation.md",
       "redirect_url": "/microsoft-365/security/defender/eval-overview.md", 
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/defender/prepare-m365d-eval.md",
@@ -4213,7 +4213,7 @@
     {
       "source_path": "microsoft-365/security/defender/m365d-pilot-simulate.md",
       "redirect_url": "/microsoft-365/security/defender/eval-defender-investigate-respond-simulate-attack.md", 
-      "redirect_document_id": true
+      "redirect_document_id": false
     }
   ]
 }
