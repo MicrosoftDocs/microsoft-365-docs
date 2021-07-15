@@ -1,0 +1,58 @@
+---
+title: Step 1. Plan for Microsoft 365 Defender operations readiness
+description: The basics of planning for Microsoft 365 Defender operations readiness when integrating Microsoft 365 Defender into your security operations.
+keywords: incidents, alerts, investigate, correlation, attack, devices, users, identities, identity, mailbox, email, 365, microsoft, m365, incident response, cyber-attack, secops, security operations, soc
+search.product: eADQiWindows 10XVcnh
+ms.prod: m365-security
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.pagetype: security
+f1.keywords: 
+  - NOCSH
+ms.author: josephd
+author: JoeDavies-MSFT
+localization_priority: Normal
+manager: dansimp
+audience: ITPro
+ms.collection: 
+  - M365-security-compliance
+  - m365initiative-m365-defender
+ms.topic: conceptual
+search.appverid: 
+  - MOE150
+  - MET150
+ms.technology: m365d
+---
+# Step 1. Plan for Microsoft 365 Defender operations readiness
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
+**Applies to:**
+- Microsoft 365 Defender
+
+Whether your organization is starting from scratch, outsourcing, or modernizing their existing security operations, it is important for you to align with the intended purpose of the SOC. While there is not a “one size fits all” option, many IT and security professionals would agree there are certain aspects that are more common than others. 
+
+The following sections describe the core functions of the SOC.
+
+## Provide situational awareness of modern threats
+
+A SOC team prepares for and hunts new and incoming threats so that they can work with the organization to establish countermeasures and responses. Your SOC team should have personnel that are highly trained in modern attack methods and techniques and have a grasp of the motivations of threat actors. Shared threat intelligence and frameworks like the [Cyber Kill Chain](https://www.microsoft.com/security/blog/2016/11/28/disrupting-the-kill-chain/) or [MITRE ATT&CK framework](https://attack.mitre.org/) can empower your staff of threat analysts and threat hunters.
+
+## Provide first, second, and potentially third level responses to cyber incidents and events
+
+The SOC is the frontline of defense to security events and incidents. When an event, threat, attack, policy violation, or audit finding triggers an alert or call to action, the SOC team is usually called upon to make an assessment and either triage and contain it or escalate it for deeper investigation to the broader team. Therefore, the SOC first line responders must have broad technical knowledge of security events and indicators.
+
+## Centralize monitoring and logging of your organization’s security sources 
+
+For the most part, the SOC team’s core function is to make sure all security devices such as firewalls, intrusion prevention systems, data loss prevention systems, threat and vulnerability management systems, and identity systems are functioning correctly and being monitored. The SOC teams will work with the broader network operations such as identity, DevOps, cloud, application, data science and other business teams to ensure the analysis of security information is centralized and secured. Additionally, the SOC team is responsible for maintaining logs of the data in useable and readable formats, which could include parsing and normalizing disparate formats.
+
+## Establish Red, Blue, and Purple team operational readiness
+
+Every SOC team should test its preparedness in responding to a cyber incident. This could be done via training exercises, such as table-tops and practice runs with various individuals in IT, security, and at the business level. Individual SOC teams are created based on their roles in the exercise and are either playing the role of a defender (Blue Team), an attacker (Red Team) or as observers seeking to improve methods and techniques of both the Blue and Red teams through strengths and weakness that are uncovered during the exercise (Purple Team).
+
+## Next step
+
+[Step 2. Perform a SOC integration readiness assessment using the Zero Trust Framework](integrate-microsoft-365-defender-secops-readiness.md)
+
+
+

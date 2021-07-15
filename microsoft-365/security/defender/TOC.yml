@@ -122,6 +122,22 @@
                       href: first-incident-path-phishing.md
                     - name: Identity
                       href: first-incident-path-identity.md
+              - name: Integrate Microsoft 365 Defender into your security operations
+                items: 
+                 - name: Introduction
+                   href: integrate-microsoft-365-defender-secops.md
+                 - name: Step 1. Plan for operations readiness
+                   href: integrate-microsoft-365-defender-secops-plan.md
+                 - name: Step 2. Perform a SOC integration readiness assessment using Zero Trust
+                   href: integrate-microsoft-365-defender-secops-readiness.md
+                 - name: Step 3. Plan for integration with your SOC services
+                   href: integrate-microsoft-365-defender-secops-services.md
+                 - name: Step 4. Define roles, responsibilities, and oversight
+                   href: integrate-microsoft-365-defender-secops-roles.md
+                 - name: Step 5. Develop and test use cases
+                   href: integrate-microsoft-365-defender-secops-use-cases.md
+                 - name: Step 6. Identify SOC maintenance tasks
+                   href: integrate-microsoft-365-defender-secops-tasks.md
               - name: Incident response playbooks
                 href: /security/compass/incident-response-playbooks
               - name: Email notifications
