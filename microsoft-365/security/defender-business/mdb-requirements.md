@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 07/13/2021
+ms.date: 07/15/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -22,7 +22,7 @@ The following table lists the basic requirements for Microsoft Defender for busi
 | Requirement | Description |
 |:---|:---|
 | Licensing requirements | Microsoft Defender for business |
-| Users | User accounts created <br/> Microsoft Defender for business licenses assigned <p>(See [Add users and assign licenses](../../admin/add-users/add-users.md)) |
+| Users | User accounts created <br/> Microsoft Defender for business licenses assigned <br/> See [Add users and assign licenses](../../admin/add-users/add-users.md) |
 | Browser requirements | Microsoft Edge <br/> Internet Explorer version 11 <br/> Google Chrome |
 | Operating system | Windows 10 |
 | Datacenter | One of the following datacenter locations: <br/>- European Union <br/>- United Kingdom <br/>- United States |
