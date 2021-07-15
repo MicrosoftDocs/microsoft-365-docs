@@ -37,7 +37,7 @@ landingContent:
             url: mdb-setup-configuration.md
           - text: View the requirements
             url: mdb-requirements.md
-          - text: Get Microsoft Defender for business
+          - text: Get Defender for business
             url: get-defender-business.md
           - text: Assign roles and permissions
             url: mdb-roles-permissions.md
