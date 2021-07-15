@@ -46,3 +46,10 @@ Microsoft Defender for business assigns an alert severity based on the severity 
 | Malware that is executing is detected by Microsoft Defender for business. The malware is blocked almost immediately. | Medium or High | The malware poses a threat to individual endpoints and to your company. |
 | Suspicious behavior is detected but no remediation actions are taken yet. | Low, Medium, or High | The severity depends on the degree to which the behavior poses a threat to your company. |
 
+## Next steps
+
+[Respond to and mitigate threats in Microsoft Defender for business](mdb-respond-mitigate-threats.md)
+
+[Review remediation actions in the Action center](mdb-review-remediation-actions.md)
+
+[View or edit device policies in Microsoft Defender for business](mdb-view-edit-device-policies.md)

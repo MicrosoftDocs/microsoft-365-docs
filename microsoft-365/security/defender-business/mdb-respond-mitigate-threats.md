@@ -41,4 +41,10 @@ The Microsoft 365 Defender portal enables your security team to respond to and m
 
 6. Select an available action. For example, you might choose **Run antivirus scan**, which will cause Microsoft Defender Antivirus to start a quick scan on the device. Or, you could select **Initiate Automated Investigation** to trigger an automated investigation on the device.
 
+## Next steps
 
+[Review remediation actions in the Action center](mdb-review-remediation-actions.md)
+
+[Manage devices in Microsoft Defender for business](mdb-manage-devices.md)
+
+[View and manage incidents in Microsoft Defender for business](mdb-view-manage-incidents.md)

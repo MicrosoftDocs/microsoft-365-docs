@@ -82,7 +82,7 @@ After each device is onboarded, you can run a detection test.
 
 ## What if I want to offboard a device?
 
-See 
+See [Offboard a device](mdb-manage-devices.md#offboard-a-device).
 
 ## Next steps
 

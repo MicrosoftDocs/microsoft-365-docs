@@ -31,3 +31,8 @@ As a preview customer, you likely have assistance in setting up Microsoft Defend
 | [6. View or edit device policies](mdb-view-edit-device-policies.md)     | Your company's devices are managed through device policies. Default policies are included in Microsoft Defender for business; however, you can edit those policies or define new policies to suit your company's needs. See [View or edit device policies in Microsoft Defender for business](mdb-view-edit-device-policies.md).         |
 | [7. Get started](mdb-get-started.md)     | After you have completed steps 1-6, you're ready to get started using Microsoft Defender for business. See [Get started with Microsoft Defender for business](mdb-get-started.md).        |
  
+## Next steps
+
+[Review the requirements](mdb-requirements.md)
+
+[Get a detailed overview of Microsoft Defender for business](mdb-overview.md)
