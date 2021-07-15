@@ -66,7 +66,7 @@ Here is the high-level storyboard for the threat and vulnerability management of
 
 ### Invoke the use case workflow for example 2
 
-:::image type="content" source="../../media/m365-defender-secops-overview/example-detailed-use-case-workflow-tvm.png" alt-text="An example of a detailed use case workflow for threat and vulnerability management":::
+:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-detailed-use-case-workflow-tvm.png" alt-text="An example of a detailed use case workflow for threat and vulnerability management":::
  
 ### Analyze the use case output and lessons learned
 
