@@ -30,9 +30,24 @@ ms.technology: m365d
 **Applies to:**
 - Microsoft 365 Defender
 
-An established SOC should have a catalogue of services that might look like the functions outlined in this figure.
- 
-:::image type="content" source="../media/m365-defender-secops-overview/mapping-soc-services-to-m365-defender.png" alt-text="Mapping SOC services to Microsoft 365 Defender services and capabilities":::
+An established SOC should have a catalogue of services that might include:
+
+- Intrusion & malware analysis
+- Attribution & reverse engineering
+- Threat intelligence
+- Analytics
+- Hunting investigation
+- Forensics
+- Incident response 
+- CSIRT (that may be segregated from SOC) 
+- Compliance testing
+- Insider threat & fraud monitoring
+- Security incident & event monitoring 
+- Vulnerability scanning
+- XDR/SOAR
+- Phishing
+- Data loss prevention
+- Brand monitoring
 
 Because Microsoft 365 Defender technologies cross various functions, your SOC Team will need to determine which roles and responsibilities are best suited to manage each component of Defender and align to service function.
 
@@ -47,6 +62,7 @@ The components of Microsoft 365 Defender are:
 - **Microsoft Cloud App Security** is a Cloud Access Security Broker (CASB) that supports various deployment modes including log collection, API connectors, and reverse proxy. It provides rich visibility, control over data travel, and sophisticated analytics to identify and combat cyberthreats across all Microsoft and third-party cloud services.
 
 Because Microsoft 365 Defender components and technologies cross various functions, your SOC team will need to determine which roles and responsibilities are best suited to manage each component of Microsoft 365 Defender and align to service function.
+
 To integrate the capabilities of Microsoft 365 Defender, you will need to refine the SOC services. For more information about the capabilities of Microsoft 365 Defender, see the following:
 
 - [What is Microsoft Defender for Endpoint?](/defender-endpoint/microsoft-defender-endpoint)
