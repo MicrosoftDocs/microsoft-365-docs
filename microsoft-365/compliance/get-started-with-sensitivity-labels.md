@@ -66,7 +66,7 @@ A successful strategy to deploy sensitivity labels for an organization is to cre
 
 Using the table in the next section, we recommend identifying your top one or two scenarios that map to your most impactful business requirements. After these scenarios are deployed, return to the list to identify the next one or two priorities for deployment.
 
-You'll find additional general deployment guidance in the downloadable Data Loss Prevention and Microsoft Information Protection Deployment Acceleration Guide. For more information, see the blog post, [Microsoft 365 Information Protection and Compliance Deployment Acceleration Guides](https://techcommunity.microsoft.com/t5/microsoft-security-and/microsoft-365-information-protection-and-compliance-deployment/ba-p/2076404).
+You'll find additional general deployment guidance and best practices in the [Deployment Acceleration Guide for Microsoft Information Protection and Data Loss Prevention](https://microsoft.github.io/ComplianceCxE/dag/mip-dlp/) as one of the resources from the [Customer Acceleration Team (CAT)](https://microsoft.github.io/ComplianceCxE/) site.
 
 ## Common scenarios for sensitivity labels
 
