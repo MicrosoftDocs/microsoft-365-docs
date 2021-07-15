@@ -54,7 +54,7 @@ As part of the process of creating a device group, you'll:
 
 ## Create a device group
 
-1. In the navigation pane, select **Settings** > **Device groups**.
+1. In the navigation pane, select **Settings** > **Endpoints** > **Permissions** > **Device groups**.
 
 2. Click **Add device group**.
 
