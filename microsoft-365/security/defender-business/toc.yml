@@ -1,45 +1,38 @@
 - name: Microsoft Defender for business
   expanded: true
   items:
-    - name: Overview
-      items:
-          - name: What is Defender for business?
-            href: mdb-overview.md
-          - name: Compare plans for small and midsized businesses
-            href: compare-mdb-m365bp.md
-    - name: Setup and configuration
-      href: mdb-setup-configuration.md
-      items:
-          - name: Review the requirements
-            href: mdb-requirements.md
-          - name: Get Microsoft Defender for business
-            href: get-defender-business.md
-          - name: Assign roles and permissions
-            href: mdb-roles-permissions.md
-          - name: Choose where to manage Defender for business
-            href: mdb-choose-portal.md
-          - name: Onboard devices 
-            href: mdb-onboard-devices.md
-          - name: View or edit device policies
-            href: mdb-view-edit-device-policies.md
-          - name: Understand configuration settings
-            href: mdb-configuration-settings.md
-    - name: Get started
-      href: mdb-get-started.md
-    - name: How do I ...?
-      items: 
-          - name: View and manage incidents
-            href: mdb-view-manage-incidents.md
-          - name: Respond to and mitigate threats
-            href: mdb-respond-mitigate-threats.md
-          - name: Review remediation actions
-            href: mdb-review-remediation-actions.md
-          - name: Manage devices
-            href: mdb-manage-devices.md
-    - name: Additional resources
-      items:
-          - name: Learning paths
-            href:
-          - name: DIY labs
-            href: 
-
+  - name: Overview
+    items:
+    - name: What is Defender for business?
+      href: mdb-overview.md
+    - name: Compare plans for small and midsized businesses
+      href: compare-mdb-m365bp.md
+  - name: Setup and configuration
+    href: mdb-setup-configuration.md
+    items:
+    - name: Review the requirements
+      href: mdb-requirements.md
+    - name: Get Microsoft Defender for business
+      href: get-defender-business.md
+    - name: Assign roles and permissions
+      href: mdb-roles-permissions.md
+    - name: Choose where to manage Defender for business
+      href: mdb-choose-portal.md
+    - name: Onboard devices 
+      href: mdb-onboard-devices.md
+    - name: View or edit device policies
+      href: mdb-view-edit-device-policies.md
+    - name: Understand configuration settings
+      href: mdb-configuration-settings.md
+  - name: Get started
+    href: mdb-get-started.md
+  - name: How do I ...?
+    items: 
+    - name: View and manage incidents
+      href: mdb-view-manage-incidents.md
+    - name: Respond to and mitigate threats
+      href: mdb-respond-mitigate-threats.md
+    - name: Review remediation actions
+      href: mdb-review-remediation-actions.md
+    - name: Manage devices
+      href: mdb-manage-devices.md
