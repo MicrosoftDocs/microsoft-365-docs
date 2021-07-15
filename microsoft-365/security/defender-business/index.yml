@@ -33,7 +33,7 @@ landingContent:
     linkLists:
       - linkListType: deploy
         links:
-          - text: The setup and configuration process
+          - text: Review the process
             url: mdb-setup-configuration.md
           - text: View the requirements
             url: mdb-requirements.md
