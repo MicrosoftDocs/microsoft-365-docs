@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 
   - NOCSH
-ms.author: 
-author: 
+ms.author: v-lsaldanha
+author: lovina-saldanha
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -22,7 +22,7 @@ ms.topic: conceptual
 ms.technology: m365d
 ---
 
-# Evaluate Microsoft Defender for Office 365
+# Enable and pilot Microsoft Defender for Office 365
 
 **Applies to:**
 - Microsoft 365 Defender

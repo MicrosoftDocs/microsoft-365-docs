@@ -89,4 +89,4 @@ Step 3 of 3: [Pilot Microsoft Cloud App Security](eval-defender-mcas-pilot.md)
 
 Return to the overview for [Evaluate Microsoft Cloud App Security](eval-defender-mcas-overview.md)
 
-Return to the overview for [Evaluate and pilot Microsoft 365 Defender](../office-365-security/defender/eval-overview.md)
+Return to the overview for [Evaluate and pilot Microsoft 365 Defender](eval-overview.md)

@@ -126,8 +126,8 @@ Use the instructions here to activate your Microsoft Defender for Office 365 eva
 
 ## Next steps
 
-Step 3 of 3: [Set up the pilot for Microsoft Defender for Office 365](eval-defender-office-pilot.md)
+Step 3 of 3: Set up the pilot for Microsoft Defender for Office 365
 
 Return to the overview for [Evaluate Microsoft Defender for Office 365](eval-defender-office-365-overview.md)
 
-Return to the overview for [Evaluate and pilot Microsoft 365 Defender](../office-365-security/defender/eval-overview.md)
+Return to the overview for [Evaluate and pilot Microsoft 365 Defender](eval-overview.md)

@@ -94,5 +94,5 @@ Step 2 of 3: [Enable the evaluation environment Microsoft Defender for Office 36
 
 Return to the overview for [Evaluate Microsoft Defender for Office 365](eval-defender-office-365-overview.md)
 
-Return to the overview for [Evaluate and pilot Microsoft 365 Defender](../office-365-security/defender/eval-overview.md) 
+Return to the overview for [Evaluate and pilot Microsoft 365 Defender](eval-overview.md) 
 
