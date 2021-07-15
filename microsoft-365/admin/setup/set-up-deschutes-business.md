@@ -85,9 +85,9 @@ It takes a short time for Microsoft to finish setting up a new plan.
 
 
 
-### Purchase licenses through the Microsoft admin center
+### Buy a subscription through the Microsoft admin center
 
-If you already have a Microsoft 365 tenant and are an admin, you can easily purchase Deschutes Business licenses to your users in the Microsoft admin center.
+If you already have a Microsoft 365 tenant and are an admin, you can easily buy a Deschutes Business subscription for your users in the Microsoft admin center.
 
 1. In the Microsoft admin center, expand **Billing**, then select **Purchase services**.
 2. On the **Purchase services** page, search for **Deschutes Business**. When you locate it, select **Details**.
