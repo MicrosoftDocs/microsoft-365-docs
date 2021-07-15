@@ -62,7 +62,10 @@ Policies are applied to devices through device groups. You can edit a policy to 
 
 2. In the navigation pane, choose **Device configuration**. 
 
-3. Either select an existing policy, or choose **+ Add** to create a new policy.
+3. Take one of the following actions:
+
+   1. Select an existing policy, and then choose **Edit**.
+   2. Choose **+ Add** to create a new policy.
 
 4. On the **General information** step, review the information, edit if necessary, and then choose **Next**.
 
