@@ -171,7 +171,7 @@
               href: working-with-managed-desktop/config-setting-ref.md
             - name: Deploy configurable settings
               href: working-with-managed-desktop/config-setting-deploy.md
-        - name: Test Windows 11 with Microsoft Managed Desktop
-          href: test-win11-mmd.md
+        - name: Preview and test Windows 11 with Microsoft Managed Desktop
+          href: working-with-managed-desktop/test-win11-mmd.md
     - name: Change history for Microsoft Managed Desktop documentation
       href: change-history-managed-desktop.md

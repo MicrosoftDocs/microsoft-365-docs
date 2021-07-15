@@ -17,7 +17,7 @@ Following the announcement of Windows 11, you might have started planning Window
 
 ## Timeline for Windows 11
 
-Windows 11 preview builds are available starting June 28, 2021 through the Windows Insider Program [Windows Insider Program](https://docs.microsoft.com/en-us/windows-insider/). We expect release builds to be generally available by the end of calendar year 2021.
+Windows 11 preview builds are available starting June 28, 2021 through the Windows Insider Program [Windows Insider Program](https://docs.microsoft.com/windows-insider/). We expect release builds to be generally available by the end of calendar year 2021.
 
 You are welcome to install preview builds on devices whether they are managed by Microsoft Managed Desktop or not. Once Windows 11 is generally available, we'll support both Windows 10 and Windows 11 devices in parallel until Windows 10 reaches end of support.
 
@@ -31,7 +31,7 @@ More than 95% of Microsoft Managed Desktop devices are eligible for Windows 11, 
 
 For Microsoft Managed Desktop devices, you can request to add test devices to the **\[Modern Workplace\] Windows 11 Pre-Release Test Devices device group**. This group receives Windows 11 preview builds along with a Microsoft Managed Desktop baseline configuration. Microsoft Managed Desktop doesn't manage the release cadence of Windows 11 preview builds, so members of this device group might receive updates more frequently than Windows 10 device groups.
 
-For your devices that aren't managed by Microsoft Managed Desktop, you can join the [Windows Insider Program](https://docs.microsoft.com/en-us/windows-insider/) to download preview builds and get guidance on deploying Windows 11 yourself. If you have devices running Windows 11 pre-release builds and later enroll them in Microsoft Managed Desktop, they won't revert back to Windows 10.
+For your devices that aren't managed by Microsoft Managed Desktop, you can join the [Windows Insider Program](https://docs.microsoft.com/windows-insider/) to download preview builds and get guidance on deploying Windows 11 yourself. If you have devices running Windows 11 pre-release builds and later enroll them in Microsoft Managed Desktop, they won't revert back to Windows 10.
 
 ## Support for pre-release Windows 11 devices
 
