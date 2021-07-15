@@ -69,4 +69,4 @@ After each device is onboarded, you can run a detection test.
    ```powershell
    powershell.exe -NoExit -ExecutionPolicy Bypass -WindowStyle Hidden $ErrorActionPreference= 'silentlycontinue';(New-Object System.Net.WebClient).DownloadFile('http://127.0.0.1/1.exe', 'C:\\test-WDATP-test\\invoice.exe');Start-Process 'C:\\test-WDATP-test\\invoice.exe'
    ```
-3. Wait a few minutes, and then, in the Microsoft 365 Defender portal (https://security.microsoft.com), go to Incidents. You should see a new alert indicating the detection test was successful.
+3. Wait a few minutes, and then, in the Microsoft 365 Defender portal (https://security.microsoft.com), go to **Incidents**. You should see a new alert indicating the detection test was successful.
