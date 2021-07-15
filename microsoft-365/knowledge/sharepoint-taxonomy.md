@@ -33,7 +33,7 @@ When someone requests to create a topic from a term, the taxonomy service relays
 The topic that gets created uses the original name from the term, considers the synonyms to be the topic’s alternate names, and uses the description from the term for the topic description. The files that are tagged with the taxonomy term are considered “suggested” files on the topic. The AI then continues to discover additional content for the topic.
 
 > [!Note]
-> For topic creation to succeed, the taxonomy term should have at least one file tagged with it. If it doesn’t, the system declines the request.
+> For topic creation to succeed, the taxonomy term must have at least one file tagged with it. If it doesn’t, the system declines the request.
 
 After a topic is created from a term, the term continues to exist in the SharePoint term store and is unaffected by topic creation. You’ll continue to be able to use it in SharePoint lists and libraries.
 
@@ -62,9 +62,11 @@ You can request a single term or multiple terms in a term set. You initiate the 
 2. On the **Term store** page, search for and select the term set you want to use.
 3. On the term page, select the **Usage settings** tab.
 4. In the **Create topics from terms** section, select **Get started**. If you’ve raised requests in the past, the option that appears is **Request terms for creation**.
-    a. On the **Select terms for creating topics** panel, the hierarchy of terms within this term set is available for selection.
-    b. To select specific terms, select each term individually.
-    c. You can also select all immediate children of a node in the hierarchy. 
+
+    1. On the **Select terms for creating topics** panel, the hierarchy of terms within this term set is available for selection.
+    2. To select specific terms, select each term individually.
+    3. You can also select all immediate children of a node in the hierarchy. 
+
 5. After you select the terms for which you want to create topics, select **Next**.
 
 Viva Topics creates the request and queues it to be processed. Viva Topics evaluates the terms and their associated resources and creates new topics or merges with existing topics. After the initial request, the topic will be created within 24 hours.
@@ -98,7 +100,7 @@ In the term store, you can view the status of requests by:
 
 1. On the **Term store** page, search for and select the term set for which you want to view the status.
 2. On the term page, select the **Usage settings** tab.
-    - In the **Create topics from terms** section, you can see the percentage of terms that have created new topics so far and the total number of requests.
+    In the **Create topics from terms** section, you can see the percentage of terms that have created new topics so far and the total number of requests.
 3. Select **View all requests**.
 4. On the **All requested terms for topic creation** panel, view the status of the term requests.
 5. If you have many requests, select **Load more** to keep loading additional items.
