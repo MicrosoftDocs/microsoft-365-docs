@@ -1,5 +1,5 @@
 ---
-title: Experience Microsoft Defender for Endpoint through simulated attacks
+title: Experience Microsoft Defender for Endpoint (MDE) through simulated attacks
 description: Pilot your Microsoft 365 Defender trial lab or pilot environment.
 keywords: Microsoft 365 Defender trial, try Microsoft 365 Defender, evaluate Microsoft 365 Defender, Microsoft 365 Defender evaluation lab, Microsoft 365 Defender pilot, cyber security, advanced persistent threat, enterprise security, devices, device, identity, users, data, applications, incidents, automated investigation and remediation, advanced hunting
 search.product: eADQiWindows 10XVcnh
@@ -23,7 +23,7 @@ ms.topic: conceptual
 ms.technology: m365d
 ---
 
-# Experience Microsoft Defender for Endpoint through simulated attacks
+# Experience Microsoft Defender for Endpoint (MDE) through simulated attacks
 
 >[!TIP]
 >
