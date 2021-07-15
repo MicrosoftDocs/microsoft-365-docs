@@ -55,7 +55,7 @@ Soon after the script runs, the device is onboarded to Microsoft Defender for bu
 
    - Your company has [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis) (Azure AD).
    - Your company has Microsoft Intune configured for users to [perform auto-enrollment](/mem/intune/enrollment/windows-enroll). For more information, see [Set up Intune](/mem/intune/fundamentals/setup-steps).
-   - You  
+   - You have appropriate permissions to view onboarded devices. For more information, see [Assign roles and permissions](mdb-roles-permissions.md). 
 
 2. On a Windows 10 device, follow these steps:
 
