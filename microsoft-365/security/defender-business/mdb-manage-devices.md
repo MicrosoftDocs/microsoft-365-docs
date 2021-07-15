@@ -56,11 +56,17 @@ See [View or edit device policies in Microsoft Defender for business](mdb-view-e
 
 ## Add or remove devices from a group
 
-1. step
+Policies are applied to devices through device groups. You can edit a policy to include or exclude specific devices.
 
-1. step
+1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
-1. step
+2. In the navigation pane, choose **Device configuration**. 
+
+3. Either select an existing policy, or choose **+ Add** to create a new policy.
+
+4. On the General information step, review the information, edit if necessary, and then choose **Next**.
+
+5. 
 
 ## Offboard a device
 
