@@ -53,7 +53,7 @@ landingContent:
     linkLists:
       - linkListType: get-started
         links:
-          - text: Get started with Microsoft Defender for business
+          - text: Navigate the portal
             url: mdb-get-started.md
 
   # Card
