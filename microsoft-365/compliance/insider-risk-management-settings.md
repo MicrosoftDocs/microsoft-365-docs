@@ -313,7 +313,7 @@ To delete an existing priority user group, you'll use setting controls in the **
 Complete the following steps to delete a priority user group:
 
 1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select **Insider risk settings**.
-2. Select the **Priority user groups** tab
+2. Select the **Priority user groups (preview)** tab.
 3. Select the priority user group you want to edit and select **Delete** from the dashboard menu.
 4. On the **Delete** dialog, select **Yes** to delete the priority user group or select **Cancel** to return to the dashboard.
 
