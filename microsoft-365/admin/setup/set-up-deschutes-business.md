@@ -144,11 +144,20 @@ While on deschutes.microsoft.com, end users can perform actions on their cloud P
 </br>  
 
 |Return state|Description|
-|:------------------------- |:----------------------------------|
+|:---------------------------------------------------------------------- |:-----------------------------------------------------------------------------------------------------------------------------------------|
 |No issues detected |None of the checks ran discovered an issue with the cloud PC.|</br>
 |Issues resolved |An issue was detected and fixed. |</br>
 |Can’t connect to cloud PC. We’re working to fix it, try again later. |A Microsoft service required for connectivity is unavailable. Try connecting again later.  |</br>
 |We couldn’t fix issues with your cloud PC. Contact your administrator.|An issue was detected but it was unable to be fixed. This could be due to a ongoing Windows update or another issue. If this error persists for an extended period of time the cloud PC may need to be reprovisioned. |
+</br>
+
+|**Return state**|**Description**|
+|:-----|:-----|
+|No issues detected  <br/> |None of the checks ran discovered an issue with the cloud PC.  <br/> |
+|Issues resolved  <br/> |An issue was detected and fixed.  <br/> |
+|Can’t connect to cloud PC. We’re working to fix it, try again later.  <br/> |A Microsoft service required for connectivity is unavailable. Try connecting again later.   <br/> |
+|We couldn’t fix issues with your cloud PC. Contact your administrator. <br/> |An issue was detected but it was unable to be fixed. This could be due to a ongoing Windows update or another issue. If this error persists for an extended period of time the cloud PC may need to be reprovisioned.  <br/> |
+
 </br>
 
 
