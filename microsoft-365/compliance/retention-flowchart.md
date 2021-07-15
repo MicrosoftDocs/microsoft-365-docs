@@ -30,5 +30,3 @@ Use the following flowchart to apply the [principles of retention](retention.md#
 - There is a retention label and one or more retention policies
 
    ![Flowchart to determine when an item will be retained or permanently deleted](../media/retention-flowchart.png)
-
-
