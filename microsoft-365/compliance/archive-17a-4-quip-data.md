@@ -14,7 +14,7 @@ ms.collection: M365-security-compliance
 description: "Learn how to set up and use a 17a-4 Quip DataParser connector to import and archive Quip data in Microsoft 365."
 ---
 
-# Set up a connector to archive Quip data (preview)
+# Set up a connector to archive Quip data
 
 Use the [Quip DataParser](https://www.17a-4.com/quip-dataparser/) from 17a-4 LLC to import and archive data from Quip to user mailboxes in your Microsoft 365 organization. The DataParser includes a Quip connector that's configured to capture items from a third-party data source and import those items to Microsoft 365. The Quip DataParser connector converts Quip data to an email message format and then imports those items to user mailboxes in Microsoft 365.
 
