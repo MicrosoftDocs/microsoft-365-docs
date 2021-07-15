@@ -48,7 +48,7 @@ In Microsoft Defender for business, you can manage devices as follows:
 
 3. Select the ellipsis (**...**) to open the actions menu. 
 
-4. Select an action, such as **Run antivirus scan** or **Initiate Automated Ineestigation**. 
+4. Select an action, such as **Run antivirus scan** or **Initiate Automated Investigation**. 
 
 ## View or edit your device policies
 
