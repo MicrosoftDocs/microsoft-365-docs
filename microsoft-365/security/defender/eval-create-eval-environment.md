@@ -37,11 +37,11 @@ The second is to  [Set up your Microsoft 365 Defender trial lab environment](set
 
 4. Select *Start free trial* link.
 
-:::image type="content" source="../../media/MDOEval/3. Three.PNG" alt-text="Click 'Start free trial' (there's a 35$ fee).":::
+:::image type="content" source="../../media/MDOEval/3-three.PNG" alt-text="Click 'Start free trial' (there's a 35$ fee).":::
 
 5. Confirm your request and click *Try now* button.
 
-:::image type="content" source="../../media/MDOEval/4. Four.PNG" alt-text="There is a 'Try Now' buttong on the 'Check out, confirm your order' panel (for a Office 365 E5 trial of a month for 25 users).":::
+:::image type="content" source="../../media/MDOEval/4-four.PNG" alt-text="There is a 'Try Now' buttong on the 'Check out, confirm your order' panel (for a Office 365 E5 trial of a month for 25 users).":::
 
 ## Next steps
 [Enable Microsoft 365 for Identity](eval-defender-identity-overview.md)
