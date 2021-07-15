@@ -14,12 +14,12 @@ search.appverid:
   - MET150
 ms.collection: 
   - M365-security-compliance
-description: Admins can learn how to configure allows and blocks in the Tenant Allow/Block List in the Security portal.
+description: Admins can learn how to manage allows and blocks in the Tenant Allow/Block List in the Security portal.
 ms.technology: mdo
 ms.prod: m365-security
 ---
 
-# Tenant Allow/Block List overview
+# Manage the Tenant Allow/Block List
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
