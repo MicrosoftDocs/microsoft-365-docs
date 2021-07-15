@@ -64,9 +64,19 @@ Policies are applied to devices through device groups. You can edit a policy to 
 
 3. Either select an existing policy, or choose **+ Add** to create a new policy.
 
-4. On the General information step, review the information, edit if necessary, and then choose **Next**.
+4. On the **General information** step, review the information, edit if necessary, and then choose **Next**.
 
-5. 
+5. Choose **+ Create new group**. 
+
+6. Specify a name and description for the device group, and then choose **Next**.
+
+7. Select the devices to include in the group, and then choose **Create group**.
+
+8. On the **Device groups** step, review the list of device groups for the policy. If needed, remove a group from the list. Then choose **Next**.
+
+9. On the **Configuration settings** page, review and edit settings as needed, and then choose **Next**. For more information about these settings, see [Configuration settings](mdb-configuration-settings.md#configuration-settings-in-microsoft-defender-for-business).
+
+10. On the **Review your policy** step, review all the settings, make any needed edits, and then choose **Create policy** or **Update policy**.
 
 ## Offboard a device
 
