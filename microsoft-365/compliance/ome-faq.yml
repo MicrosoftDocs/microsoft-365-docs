@@ -6,7 +6,7 @@ metadata:
   ms.author: krowley
   author: kccross
   manager: laurawi
-  ms.date: 05/22/2020
+  ms.date: 07/14/2021
   audience: ITPro
   ms.topic: overview
   ms.service: O365-seccomp
@@ -46,7 +46,7 @@ sections:
         answer: |
           To use the new OME capabilities, you need one of the following plans:
             
-          - Office 365 Message Encryption is offered as part of Office 365 Enterprise E3 and E5, Microsoft Enterprise E3 and E5, Microsoft 365 Business Premium, Office 365 A1, A3, and A5, and Office 365 Government G3 and G5. Customers do not need additional licenses to receive the new protection capabilities powered by Azure Information Protection.
+          - Office 365 Message Encryption is offered as part of Office 365 Enterprise E3 and E5, Microsoft Enterprise E3 and E5, Microsoft 365 Business Premium, Office 365 A1, A3, and A5, and Office 365 Government G3 and G5. You don't need additional licenses to receive the new protection capabilities powered by Azure Information Protection.
           
           - You can also add Azure Information Protection Plan 1 to the following plans to receive the new Office 365 Message Encryption capabilities: Exchange Online Plan 1, Exchange Online Plan 2, Office 365 F1, Microsoft 365 Business Basic, Microsoft 365 Business Standard, or Office 365 Enterprise E1.
           
@@ -64,7 +64,7 @@ sections:
       - question:  |
           Do OME and BYOK with Azure Information Protection change Microsoft's approach to third-party data requests such as subpoenas?
         answer: |
-          No. OME and the option to provide and control your own encryption keys, called BYOK, from Azure Information Protection were not designed to respond to law enforcement subpoenas. OME, with BYOK for Azure Information Protection, was designed for compliance-focused customers. Microsoft takes third-party requests for customer data seriously. As a cloud service provider, we always advocate for the privacy of customer data. In the event we get a subpoena, we always attempt to redirect the third party to the customer to obtain the information. (Read Brad Smith's blog: [Protecting customer data from government snooping](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)). We periodically publish detailed information of the request we receive. For more information regarding third-party data requests, see [Responding to government and law enforcement requests to access customer data](https://www.microsoft.com/trustcenter/privacy/govt-requests-for-data) on the Microsoft Trust Center. Also, see "Disclosure of Customer Data" in the [Online Services Terms (OST)](https://www.microsoft.com/Licensing/product-licensing/products.aspx).
+          No. OME and the option to provide and control your own encryption keys, called BYOK, from Azure Information Protection were not designed to respond to law enforcement subpoenas. OME, with BYOK for Azure Information Protection, was designed for compliance-focused organizations. Microsoft takes third-party requests for customer data seriously. As a cloud service provider, we always advocate for the privacy of your data. In the event we get a subpoena, we always attempt to redirect the third party directly to you to obtain the information. (Read Brad Smith's blog: [Protecting customer data from government snooping](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)). We periodically publish detailed information of the request we receive. For more information regarding third-party data requests, see [Responding to government and law enforcement requests to access customer data](https://www.microsoft.com/trustcenter/privacy/govt-requests-for-data) on the Microsoft Trust Center. Also, see "Disclosure of Customer Data" in the [Online Services Terms (OST)](https://www.microsoft.com/Licensing/product-licensing/products.aspx).
             
       - question: |
           How is this feature related to legacy Office 365 Message Encryption (OME) and Information Rights Management (IRM) features?
@@ -89,7 +89,7 @@ sections:
       - question: |
           Will the previous version of OME be deprecated?
         answer: |
-          You can still use the previous version of OME, it will not be deprecated at this time. However, we highly encourage organizations to use the new and improved OME solution. Customers that have not already deployed OME cannot set up a new deployment of the previous version of OME.
+          You can still use the previous version of OME, it will not be deprecated at this time. However, we highly encourage organizations to use the new and improved OME solution. If you have not already deployed OME, you can't set up a new deployment of the previous version of OME.
 
       - question: |
           My organization uses Active Directory Rights Management, can I use this functionality?
@@ -191,7 +191,7 @@ sections:
       - question: |
           Can I use message encryption with compliance features such as eDiscovery?
         answer: |
-          Yes. All encrypted email messages are discoverable by Microsoft 365 compliance features.
+          Yes. Microsoft 365 compliance features can discover all encrypted email messages. See [eDiscovery activities that support encrypted items](/microsoft-365/compliance/ediscovery-decryption#ediscovery-activities-that-support-encrypted-items) for details.
 
       - question: |
           Can I remove encryption from email?
@@ -211,7 +211,7 @@ sections:
       - question: |
           Can I open encrypted messages sent to a shared mailbox?
         answer: |
-          Yes! Encrypted messages are supported for a shared mailbox.
+          Yes! You can open encrypted messages for a shared mailbox when you're logged into a supported Outlook client.
           
           - Users can open protected mails in a shared mailbox where the shared mailbox received a protected mail as part of a distribution group.
           
@@ -247,8 +247,8 @@ sections:
       - question: |
           Can I open encrypted messages sent to another user's mailbox with Fullaccess?
         answer: |
-          Users can open encrypted messages as long as they are given direct access and automapping is turned ON. Access is not allowed if the access is granted via an email-enabled security group.
-
+          No. You can only open encrypted messages in a shared mailbox.
+          
       - question: |
           What do I do if I don’t receive the one-time pass code after I requested it?
         answer: |
