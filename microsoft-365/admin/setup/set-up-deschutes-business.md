@@ -139,17 +139,10 @@ While on deschutes.microsoft.com, end users can perform actions on their cloud P
     - Removes your apps.
     > [!NOTE]  
     > To keep any files, make sure they are backed up to a cloud storage service such as OneDrive or saved locally on an another device or external storage. 
-- **Troubleshoot**: Troubleshoot and attempt to resolve any issues that may be preventing a user from connecting to their cloud PC. The checks run include checking whether any files or agents required for connectivity are correctly installed and ensuring that the Azure resources are available. 
+- **Troubleshoot**: Troubleshoot and attempt to resolve any issues that may be preventing a user from connecting to their cloud PC. The checks run include checking whether any files or agents required for connectivity are correctly installed and ensuring that the Azure resources are available. The following table describes the return states that can result from the checks.
 
 </br>  
 
-|Return state|Description|
-|:---------------------------------------------------------------------- |:-----------------------------------------------------------------------------------------------------------------------------------------|
-|No issues detected |None of the checks ran discovered an issue with the cloud PC.|</br>
-|Issues resolved |An issue was detected and fixed. |</br>
-|Can’t connect to cloud PC. We’re working to fix it, try again later. |A Microsoft service required for connectivity is unavailable. Try connecting again later.  |</br>
-|We couldn’t fix issues with your cloud PC. Contact your administrator.|An issue was detected but it was unable to be fixed. This could be due to a ongoing Windows update or another issue. If this error persists for an extended period of time the cloud PC may need to be reprovisioned. |
-</br>
 
 |**Return state**|**Description**|
 |:-----|:-----|
