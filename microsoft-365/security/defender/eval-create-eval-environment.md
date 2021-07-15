@@ -33,7 +33,7 @@ The second is to  [Set up your Microsoft 365 Defender trial lab environment](set
 2. Select *Purchase Services* from the navigation menu.
 3. Scroll down to the *Office 365* section and select "Details" button under Office 365 E5 license.
 
-:::image type="content" source="../../media/MDOEval/2. Two.PNG" alt-text="The Office 365 section has a Details button to click.":::
+:::image type="content" source="../../media/MDOEval/2-two.PNG" alt-text="The Office 365 section has a Details button to click.":::
 
 4. Select *Start free trial* link.
 
