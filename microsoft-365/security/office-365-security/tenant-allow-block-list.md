@@ -87,21 +87,30 @@ This article describes how to configure entries in the Tenant Allow/Block List i
   >
   > - The **View-Only Organization Management** role group in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) also gives read-only access to the feature.
 
-## Use the Microsoft 365 Defender portal to manage the Tenant Allow/Block List
+## Configure the Tenant Allow/Block List
+
+### Use the Microsoft 365 Defender portal
 
 In the Microsoft 365 Defender portal, go to **Policies & rules** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
 
-To add, edit, and delete all blocks, see [Manage blocks in the Tenant Allow/Block List](manage-tenant-blocks.md).
+To add, edit, and delete all blocks, see [Add blocks in the Tenant Allow/Block List](manage-tenant-blocks.md).
 
-To add, edit, and delete all allows, see [Manage allows in the Tenant Allow/Block List](manage-tenant-allows.md).
+To add, edit, and delete all allows, see [Add allows in the Tenant Allow/Block List](manage-tenant-allows.md).
 
-### Create allow or block spoofed sender entries in the Tenant Allow/Block List
+### Use Exchange Online PowerShell or standalone EOP PowerShell
+
+To manage all allows and blocks, see [Add blocks in the Tenant Allow/Block List](manage-tenant-blocks.md) and [Add allows in the Tenant Allow/Block List](manage-tenant-allows.md).
+
+## Use PowerShell to manage spoofed sender entries to the Tenant Allow/Block List
+
+### Create allow or block spoofed sender entries
 
 **Notes**:
 
 - Only the _combination_ of the spoofed user _and_ the sending infrastructure as defined in the domain pair is specifically allowed or blocked from spoofing.
 - When you configure an allow or block entry for a domain pair, messages from that domain pair no longer appear in the spoof intelligence insight.
 - Entries for spoofed senders never expire.
+- Spoof supports both allow and block. URL supports only allow.
 
 1. In the Microsoft 365 Defender portal, go to **Policies & rules** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
 
@@ -116,13 +125,7 @@ To add, edit, and delete all allows, see [Manage allows in the Tenant Allow/Bloc
 
 4. When you're finished, click **Add**.
 
-## Use Exchange Online PowerShell or standalone EOP PowerShell to configure the Tenant Allow/Block List
-
-To manage all allows and blocks, see [Manage blocks in the Tenant Allow/Block List](manage-tenant-blocks.md) and [Manage allows in the Tenant Allow/Block List](manage-tenant-allows.md).
-
-## Use PowerShell to manage spoofed sender entries to the Tenant Allow/Block List
-
-### Add allow or block spoofed sender entries to the Tenant Allow/Block List
+### Add allow or block spoofed sender entries
 
 To add spoofed sender entries in the Tenant Allow/Block List, use the following syntax:
 
@@ -132,7 +135,7 @@ New-TenantAllowBlockListSpoofItems -SpoofedUser <Domain | EmailAddress | *> -Sen
 
 For detailed syntax and parameter information, see [New-TenantAllowBlockListSpoofItems](/powershell/module/exchange/new-tenantallowblocklistspoofitems).
 
-### View allow or block spoofed sender entries in the Tenant Allow/Block List
+### View allow or block spoofed sender entries
 
 To view spoofed sender entries in the Tenant Allow/Block List, use the following syntax:
 
@@ -160,7 +163,7 @@ Get-TenantAllowBlockListSpoofItems -Action Block -SpoofType External
 
 For detailed syntax and parameter information, see [Get-TenantAllowBlockListSpoofItems](/powershell/module/exchange/get-tenantallowblocklistspoofitems).
 
-### Modify allow or block spoofed sender entries in the Tenant Allow/Block List
+### Modify allow or block spoofed sender entries
 
 To modify allow or block spoofed sender entries in the Tenant Allow/Block List, use the following syntax:
 
@@ -176,7 +179,7 @@ Set-TenantAllowBlockListItems -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBywBwCqfQNJY8hBTbdl
 
 For detailed syntax and parameter information, see [Set-TenantAllowBlockListSpoofItems](/powershell/module/exchange/set-tenantallowblocklistspoofitems).
 
-### Remove allow or block spoofed sender entries from the Tenant Allow/Block List
+### Remove allow or block spoofed sender entries
 
 To remove allow or block spoof sender entries from the Tenant Allow/Block List, use the following syntax:
 
