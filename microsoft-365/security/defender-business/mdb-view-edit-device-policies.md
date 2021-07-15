@@ -102,7 +102,7 @@ As you define policies, you’ll notice that an order of priority is assigned. Y
 
 **The important thing to remember about multiple policies is that devices will receive the first applied policy only.** Referring to our earlier example of three next-generation policies, suppose that you have devices that are targeted by all three policies. In this case, those devices will receive policy number 1, but will not receive policies numbered 2 and 3. 
 
-## Next step
+## Next steps
 
 [Get started using Defender for business](mdb-get-started.md)
 
