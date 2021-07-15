@@ -33,7 +33,7 @@ landingContent:
     linkLists:
       - linkListType: deploy
         links:
-          - text: Set up and configure Microsoft Defender for business
+          - text: The setup and configuration process
             url: mdb-setup-configuration.md
           - text: View the requirements
             url: mdb-requirements.md
