@@ -105,7 +105,7 @@ You can choose to assign different Deschutes Business license types to a user, b
 
 ## Accessing a Cloud PC
 
-End users can access their cloud PCs in two different ways:
+After being assigned a license, end users can access their cloud PCs in two different ways:
 
 - Deschutes.microsoft.com
 - Microsoft Remote Desktop
@@ -114,7 +114,7 @@ End users can access their cloud PCs in two different ways:
 
 End users can navigate to deschutes.microsoft.com to access their cloud PCs.  
 
-(Screenshot of end user portal.)
+   ![Deschutes home](../media/deschutes/deschutes-home.png) </br>
 
 #### Requirements
 
@@ -128,10 +128,17 @@ To access their cloud PC from this website, the end user's device must meet the 
 
 While on deschutes.microsoft.com, end users can perform actions on their cloud PCs by selecting the gear icon on a cloud PC card.
 
-(Screenshot of card with gear icon selected.)
+   ![Card menu](../media/deschutes/cloudpc-gear.png) </br>
 
-- **Rename**: Changes the name of the cloud PC shown to the user on Deschutes.com. This action won’t affect any name in MEM, AAD, on the device, or in the Remote Desktop Apps.  
 - **Restart**: Restarts the cloud PC.
+- **Rename**: Changes the name of the cloud PC shown to the user on Deschutes.com. This action won’t affect any name in MEM, AAD, on the device, or in the Remote Desktop Apps. 
+- **Reset**:  Reset does the following:
+    - Reinstalls Windows 10.
+    - Removes your personal files.
+    - Removes any changes you made to settings.
+    - Removes your apps.
+    > [!NOTE]  
+    > To keep any files, make sure they are backed up to a cloud storage service such as OneDrive or saved locally on an another device or external storage. 
 - **Troubleshoot**: Troubleshoot and attempt to resolve any issues that may be preventing a user from connecting to their cloud PC. The checks run include checking whether any files or agents required for connectivity are correctly installed and ensuring that the Azure resources are available. </br>  
 
 |Return state|Description|
@@ -141,7 +148,6 @@ While on deschutes.microsoft.com, end users can perform actions on their cloud P
 |Can’t connect to cloud PC. We’re working to fix it, try again later. |A Microsoft service required for connectivity is unavailable. Try connecting again later.  |
 |We couldn’t fix issues with your cloud PC. Contact your administrator.|An issue was detected but it was unable to be fixed. This could be due to a ongoing Windows update or another issue. If this error persists for an extended period of time the cloud PC may need to be reprovisioned. |
 </br>
-
 
 
 ### Remote Desktop
@@ -156,6 +162,9 @@ To set up their Remote Desktop client, users follow these steps:
 
 1. Download the Remote Desktop app from the Download App page on deschutes.microsoft.com.
 2. Subscribe to a workspace as described in [Remote Desktop Workspaces](https://docs.microsoft.com/windows-server/remote/remote-desktop-services/clients/windowsdesktop#workspaces).
+
+   ![Remote desktop clients](../media/deschutes/deschutes-remote-desktop-apps.png) </br> 
+
 
 #### End user hardware requirements for accessing cloud PCs
 
