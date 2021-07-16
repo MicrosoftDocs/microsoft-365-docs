@@ -16,7 +16,7 @@ ms.collection: M365-security-compliance
 description: "Learn how to preserve, collect, review, and export content from Microsoft Teams in Advanced eDiscovery."
 ---
 
-# Advanced eDiscovery workflow for content in Microsoft Teams using the large case format
+# Advanced eDiscovery workflow for content in Microsoft Teams using large cases
 
 This article provides a comprehensive set of procedures, guidelines, and best practices for using Advanced eDiscovery to preserve, collect, review, and export content from Microsoft Teams. The goal of this article is to help you optimize your eDiscovery workflow for Teams content.
 
