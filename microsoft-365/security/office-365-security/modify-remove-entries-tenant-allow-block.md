@@ -98,3 +98,29 @@ Remove-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBy
 ```
 
 For detailed syntax and parameter information, see [Remove-TenantAllowBlockListItems](/powershell/module/exchange/remove-tenantallowblocklistitems).
+
+### Modify allow or block spoofed sender entries
+
+To modify allow or block spoofed sender entries in the Tenant Allow/Block List, use the following syntax:
+
+```powershell
+Set-TenantAllowBlockListSpoofItems -Ids <"Id1","Id2",..."IdN"> -Action <Allow | Block>
+```
+
+This example changes spoofed sender entry from allow to block.
+
+```powershell
+Set-TenantAllowBlockListItems -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBywBwCqfQNJY8hBTbdlKFkv6BcUAAAl_QCZAACqfQNJY8hBTbdlKFkv6BcUAAAl_oSRAAAA" -Action Block
+```
+
+For detailed syntax and parameter information, see [Set-TenantAllowBlockListSpoofItems](/powershell/module/exchange/set-tenantallowblocklistspoofitems).
+
+### Remove allow or block spoofed sender entries
+
+To remove allow or block spoof sender entries from the Tenant Allow/Block List, use the following syntax:
+
+```powershell
+Remove-TenantAllowBlockListSpoofItems -Ids <"Id1","Id2",..."IdN">
+```
+
+For detailed syntax and parameter information, see [Remove-TenantAllowBlockListSpoofItems](/powershell/module/exchange/remove-tenantallowblocklistspoofitems).
