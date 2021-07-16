@@ -71,8 +71,8 @@ You'll need to have the data in the CSV files combined into a single file to com
 
 `Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformation | % {$_.Replace('"', '')} | Out-File .\aggregatedDevices.csv`
 
-> [!IMPORTANT]
-> Extra columns are not supported. Quotes are not supported. Only ANSI-format text files can be used (not Unicode). Headers are case-sensitive. Editing the file in Excel and saving as a CSV file will not generate a usable file due to these requirements.
+> [!NOTE]
+> Extra columns are not supported. Quotes are not supported. Only ANSI-format text files can be used (not Unicode). Headers are case-sensitive. Editing the file in Excel and saving as a CSV file will not generate a usable file due to these requirements. Please make sure that any leading zeroes are preserved in the device serial numbers.
 
 ### Register devices by using the Admin Portal
 
