@@ -77,6 +77,16 @@
         href: deploy-threat-protection.md
       - name: Steps to deploy threat protection
         href: deploy-threat-protection-configure.md
+    - name: Deploy protection against ransomware with Microsoft 365
+      items:
+      - name: Overview   
+        href: protect-against-ransomware-microsoft-365.md
+      - name: Phase 1
+        href: protect-against-ransomware-microsoft-365-phase1.md
+      - name: Phase 2
+        href: protect-against-ransomware-microsoft-365-phase2.md
+      - name: Phase 3
+        href: protect-against-ransomware-microsoft-365-phase3.md
     - name: Deploy information protection for data privacy regulations
       items:
       - name: Overview
