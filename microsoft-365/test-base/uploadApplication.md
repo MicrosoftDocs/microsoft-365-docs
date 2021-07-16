@@ -33,17 +33,17 @@ The steps below provides a guide on how to fill out your package details:
 
 1.	**Enter the name to be given your package in the ```Package name``` field.**
 
-> [!Note]  
-> The package name and version combination entered must be unique within your organization. This is validated by the checkmark as shown below.
+    > [!Note]  
+    > The package name and version combination entered must be unique within your organization. This is validated by the checkmark as shown below.
   
-  - If you choose to reuse a package's name, then the version number must be unique (that is, never been used with a package bearing that particular name).
-  - If the combination of the package name + version doesn't pass the uniqueness check, you'll see an error message that reads, *“Package with this package version already exists”*. 
+    - If you choose to reuse a package's name, then the version number must be unique (that is, never been used with a package bearing that particular name).
+    - If the combination of the package name + version doesn't pass the uniqueness check, you'll see an error message that reads, *“Package with this package version already exists”*. 
 
-![Image for uploading package instructions](Media/Instructions.png)
+    ![Image for uploading package instructions](Media/Instructions.png)
 
 2. **Enter a version in the “Package version” field.**
 
-![Package version](Media/ApplicationVersion.png)
+    ![Package version](Media/ApplicationVersion.png)
 
 3.	**Select the type of test you want to run on this package**
 
@@ -53,55 +53,56 @@ The steps below provides a guide on how to fill out your package details:
 
     A **Functional test** would execute your uploaded test script(s) on your package. The scripts are run in upload sequence and a failure in a particular script will stop subsequent scripts from executing.
 
-> [!Note]
-> **All** scripts run for 80 minutes at the most. 
+    > [!Note]
+    > **All** scripts run for 80 minutes at the most. 
     
 4.	**Select the OS update type**
 
-   - The ‘Security updates’ enables your package to be tested against incremental churns of Windows pre-release monthly security updates. 
-   - The ‘Feature updates’ enables your package to be tested against Windows pre-release bi-annual feature updates builds from the Windows Insider Program.
-<!---
-Change to the correct picture
--->
-![OS update type](Media/OSUpdateType.png)
+    - The ‘Security updates’ enables your package to be tested against incremental churns of Windows pre-release monthly security updates. 
+    - The ‘Feature updates’ enables your package to be tested against Windows pre-release bi-annual feature updates builds from the Windows Insider Program.
+    <!---
+    Change to the correct picture
+    -->
+    ![OS update type](Media/OSUpdateType.png)
 
 5.	**Select the OS version(s) for Security update tests.**
 
-In the multi-select dropdown, select the OS version(s) of Windows your package will be installed on. 
+    In the multi-select dropdown, select the OS version(s) of Windows your package will be installed on. 
 
-  - To test your package only against Windows client operating systems, select the applicable Windows 11 OS versions from the menu list.
-  - To test your package only against Windows Server operating systems, select the applicable Windows Server OS versions from the menu list.
-  - To test your package only against Windows client and Windows Server operating systems, select all applicable operating systems from the menu list. 
+    - To test your package only against Windows client operating systems, select the applicable Windows 11 OS versions from the menu list.
+    - To test your package only against Windows Server operating systems, select the applicable Windows Server OS versions from the menu list.
+    - To test your package only against Windows client and Windows Server operating systems, select all applicable operating systems from the menu list. 
 
-> [!Note]
-> If you select to test your package against both Server and Client OSes, please make sure that the package is compatible and can run on both OSes
+    > [!Note]
+    > If you select to test your package against both Server and Client OSes, please make sure that the package is compatible and can run on both OSes
 
+    ![Selecting an OS version](Media/OSVersion.png)
+    <!---
+    Change to the correct picture
+    -->
 
-![Selecting an OS version](Media/OSVersion.png)
-<!---
-Change to the correct picture
--->
 6.	**Select options for Feature update tests:**
 
-  - On the option to “Select Insider Channel”, select the ```Windows Insider Program Channel``` as the build that your packages should be tested against.
+    - On the option to “Select Insider Channel”, select the ```Windows Insider Program Channel``` as the build that your packages should be tested against.
   
-    We currently use builds flighted in the Insider Beta Channel.
+      We currently use builds flighted in the Insider Beta Channel.
 
-  - On the option to “Select OS baseline for Insight”, select the Windows OS version to be used as a baseline in comparing your test results. 
+    - On the option to “Select OS baseline for Insight”, select the Windows OS version to be used as a baseline in comparing your test results. 
 
-> [!Note]
-> We DO NOT support Feature update testing for Server OSes at this time
-<!---
-Note to actual note format for markdown
--->
-<!---
-Change to the correct picture
--->
-![Feature update testing](Media/FeatureUpdate.png)
+    > [!Note]
+    > We DO NOT support Feature update testing for Server OSes at this time
+    <!---
+    Note to actual note format for markdown
+    -->
+    <!---
+    Change to the correct picture
+    -->
+    ![Feature update testing](Media/FeatureUpdate.png)
 
 7.	A completed Test details page should look like this: 
 
-![Viewing test details](Media/TestDetails.png)
+    ![Viewing test details](Media/TestDetails.png)
+
 ## Next steps
 
 Our next article covers Uploading your Binaries to our service.
