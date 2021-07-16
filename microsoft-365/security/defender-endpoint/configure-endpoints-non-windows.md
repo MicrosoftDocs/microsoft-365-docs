@@ -33,7 +33,7 @@ ms.technology: mde
 
 >Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-nonwindows-abovefoldlink) 
 
-Defender for Endpoint provides a centralized security operations experience for Windows as well as non-Windows platforms. You'll be able to see alerts from various supported operating systems (OS) in Microsoft Defender Security Center and better protect your organization's network. 
+Defender for Endpoint provides a centralized security operations experience for Windows as well as non-Windows platforms. You'll be able to see alerts from various supported operating systems (OS) in Microsoft 365 Defender and better protect your organization's network. 
 
 You'll need to know the exact Linux distros and macOS versions that are compatible with Defender for Endpoint for the integration to work. For more information, see:
 - [Microsoft Defender for Endpoint on Linux system requirements](microsoft-defender-endpoint-linux.md#system-requirements)  
@@ -45,7 +45,7 @@ You'll need to take the following steps to onboard non-Windows devices:
 
    - For macOS devices, you can choose to onboard through Microsoft Defender for Endpoint or through a third-party solution. For more information, see [Microsoft Defender for Endpoint on Mac](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-mac).
 
-   - For other non-Windows devices choose **Onboard non-Windows devices through third-party integration**.   
+   - For other non-Windows devices, choose **Onboard non-Windows devices through third-party integration**.   
     1. In the navigation pane, select **Interoperability** > **Partners**. Make sure the third-party solution is listed.
     2. In the **Partner Applications** tab, select the partner that supports your non-Windows devices.
     3. Select **Open partner page** to open the partner's page. Follow the instructions provided on the page.

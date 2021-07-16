@@ -87,7 +87,7 @@ In order to preview new features and provide early feedback, it is recommended t
     sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/centos/7/prod.repo
     ```
 
-    Or if you wish to explore new features on selected devices, you might want to deploy MDE for Linux to *insiders-fast* channel:
+    Or if you wish to explore new features on selected devices, you might want to deploy Microsoft Defender for Endpoint on Linux to *insiders-fast* channel:
 
     ```bash
     sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/centos/7/insiders-fast.repo
@@ -115,7 +115,7 @@ In order to preview new features and provide early feedback, it is recommended t
     sudo zypper addrepo -c -f -n microsoft-[channel] https://packages.microsoft.com/config/[distro]/[version]/[channel].repo
     ```
 
-    For example, if you are running SLES 12 and wish to deploy MDE for Linux from the *prod* channel:
+    For example, if you are running SLES 12 and wish to deploy Microsoft Defender for Endpoint on Linux from the *prod* channel:
 
     ```bash
     sudo zypper addrepo -c -f -n microsoft-prod https://packages.microsoft.com/config/sles/12/prod.repo
@@ -261,13 +261,13 @@ In order to preview new features and provide early feedback, it is recommended t
 
 ## Download the onboarding package
 
-Download the onboarding package from Microsoft Defender Security Center:
+Download the onboarding package from Microsoft 365 Defender portal:
 
-1. In Microsoft Defender Security Center, go to **Settings > Device Management > Onboarding**.
-2. In the first drop-down menu, select **Linux Server** as the operating system. In the second drop-down menu, select **Local Script (for up to 10 devices)** as the deployment method.
+1. In the Microsoft 365 Defender portal, go to **Settings > Endpoints > Device management > Onboarding**.
+2. In the first drop-down menu, select **Linux Server** as the operating system. In the second drop-down menu, select **Local Script** as the deployment method.
 3. Select **Download onboarding package**. Save the file as WindowsDefenderATPOnboardingPackage.zip.
 
-    ![Microsoft Defender Security Center screenshot](images/atp-portal-onboarding-linux.png)
+    ![Microsoft 365 Defender portal screenshot](images/atp-portal-onboarding-linux.png)
 
 4. From a command prompt, verify that you have the file.
     Extract the contents of the archive:
@@ -300,7 +300,12 @@ Download the onboarding package from Microsoft Defender Security Center:
     mdatp health --field org_id
     ```
 
-2. Run MicrosoftDefenderATPOnboardingLinuxServer.py, and note that, in order to run this command, you must have `python` installed on the device:
+2. Run MicrosoftDefenderATPOnboardingLinuxServer.py. 
+   
+    >[!NOTE]
+    >To run this command, you must have `python` installed on the device. If you're running RHEL 8.x or Ubuntu 20.04 or higher, then you will need to use Python 3 instead of Python.
+
+
 
     ```bash
     python MicrosoftDefenderATPOnboardingLinuxServer.py
@@ -349,11 +354,11 @@ Download the onboarding package from Microsoft Defender Security Center:
 
 To test out the functionalities of EDR for Linux, follow the steps below to simulate a detection on your Linux server and investigate the case. 
 
-1.	Verify that the onboarded Linux server appears in Microsoft Defender Security Center. If this is the first onboarding of the machine, it can take up to 20 minutes until it appears. 
+1.	Verify that the onboarded Linux server appears in Microsoft 365 Defender. If this is the first onboarding of the machine, it can take up to 20 minutes until it appears. 
 
 2.	Download and extract the [script file](https://aka.ms/LinuxDIY) to an onboarded Linux server and run the following command: `./mde_linux_edr_diy.sh`
 
-3.	After a few minutes, a detection should be raised in Microsoft Defender Security Center.
+3.	After a few minutes, a detection should be raised in Microsoft 365 Defender.
 
 4.	Look at the alert details, machine timeline, and perform your typical investigation steps.
 
@@ -395,13 +400,13 @@ When upgrading your operating system to a new major version, you must first unin
 
 ## How to migrate from Insiders-Fast to Production channel
 
-1. Uninstall the “Insiders-Fast channel” version of MDE for Linux.
+1. Uninstall the “Insiders-Fast channel” version of Defender for Endpoint on Linux.
 
     ``
     sudo yum remove mdatp
     ``
 
-1. Disable the MDE for Linux Insiders-Fast repo
+1. Disable the Defender for Endpoint on Linux Insiders-Fast repo
     ``
     sudo yum repolist
     ``

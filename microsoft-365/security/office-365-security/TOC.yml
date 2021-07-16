@@ -34,6 +34,8 @@
          href: office-365-air.md
        - name: How automated investigation and response works
          href: automated-investigation-response-office.md
+       - name: Email analysis in investigations
+         href: email-analysis-investigations.md
        - name: Remediation actions
          href: air-remediation-actions.md
        - name: Anti-malware protection
@@ -326,8 +328,6 @@
        href: mail-flow-intelligence-in-office-365.md
      - name: "Reference:Policies, practices, and guidelines"
        href: reference-policies-practices-and-guidelines.md
-     - name: Safety tips in email messages
-       href: safety-tips-in-office-365.md
      - name: Sending mail to Office 365
        href: sending-mail-to-office-365.md
      - name: Services for non-customers

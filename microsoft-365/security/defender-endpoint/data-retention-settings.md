@@ -36,13 +36,13 @@ After completing the onboarding, you can verify your selection in the data reten
 ## Verify data storage location
 During the [Set up phase](production-deployment.md), you would have selected the location to store your data. 
 
-You can verify the data location by navigating to **Settings** > **Data retention**.
+You can verify the data location by navigating to **Settings** > **Endpoints** > **Data retention**.
 
 ## Update data retention settings
 
 You can update the data retention settings. By default, the retention period is 180 days. 
 
-1. In the navigation pane, select **Settings** > **Data retention**.
+1. In the navigation pane, select **Settings** > **Endpoints** > **Data retention**.
 
 2. Select the data retention duration from the drop-down list.
 
