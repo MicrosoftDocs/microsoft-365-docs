@@ -19,7 +19,8 @@ f1.keywords: NOCSH
 # Step 2: Uploading a Package
 
 On the Test Base portal page, navigate to the **Upload new package** option on the left navigation bar as shown below:
-![Upload a new package](Media/Upload-New-Package.png)
+
+:::image type="content" alt-text="Upload a new package." source="Media/Upload-New-Package.png" lightbox="Media/Upload-New-Package.png":::
 
 Once there, follow the steps below to upload a new package.
 
@@ -37,13 +38,14 @@ The steps below provides a guide on how to fill out your package details:
     > The package name and version combination entered must be unique within your organization. This is validated by the checkmark as shown below.
   
     - If you choose to reuse a package's name, then the version number must be unique (that is, never been used with a package bearing that particular name).
+
     - If the combination of the package name + version doesn't pass the uniqueness check, you'll see an error message that reads, *“Package with this package version already exists”*. 
 
-    ![Image for uploading package instructions](Media/Instructions.png)
+    :::image type="content" alt-text="Image for uploading package instructions." source="Media/Instructions.png":::
 
 2. Enter a version in the “Package version” field.
 
-    ![Package version](Media/ApplicationVersion.png)
+    :::image type="content" alt-text="Package version." source="Media/ApplicationVersion.png":::
 
 3.	Select the type of test you want to run on this package.
 
@@ -63,7 +65,7 @@ The steps below provides a guide on how to fill out your package details:
     <!---
     Change to the correct picture
     -->
-    ![OS update type](Media/OSUpdateType.png)
+    :::image type="content" alt-text="OS update type." source="Media/OSUpdateType.png":::
 
 5.	Select the OS version(s) for Security update tests.
 
@@ -76,7 +78,7 @@ The steps below provides a guide on how to fill out your package details:
     > [!Note]
     > If you select to test your package against both Server and Client OSes, please make sure that the package is compatible and can run on both OSes
 
-    ![Selecting an OS version](Media/OSVersion.png)
+    :::image type="content" alt-text="Selecting an OS version." source="Media/OSVersion.png":::
     <!---
     Change to the correct picture
     -->
@@ -97,11 +99,11 @@ The steps below provides a guide on how to fill out your package details:
     <!---
     Change to the correct picture
     -->
-    ![Feature update testing](Media/FeatureUpdate.png)
+    :::image type="content" alt-text="Feature update testing." source="Media/FeatureUpdate.png":::
 
 7.	A completed Test details page should look like this: 
 
-    ![Viewing test details](Media/TestDetails.png)
+    :::image type="content" alt-text="Viewing test details." source="Media/TestDetails.png":::
 
 ## Next steps
 
