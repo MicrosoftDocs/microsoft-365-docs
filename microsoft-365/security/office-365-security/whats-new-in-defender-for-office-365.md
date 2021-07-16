@@ -38,6 +38,10 @@ Learn more by watching [this video](https://www.youtube.com/watch?v=Tdz6KfruDGo&
 > [!TIP]
 > Don't have Microsoft Defender for Office 365 yet? [Contact sales to start a trial](https://info.microsoft.com/ww-landing-M365SMB-web-contact.html).
 
+## August 2021
+
+- [Admin review for reported messages](admin-review-reported-message.md): admins can now send templated messages back to end users after they review reported messages. This can be customized for your organization and based on your admin's verdict as well. 
+
 ## June 2021
 
 - New first contact safety tip setting within anti-phishing policies. This safety tip is shown when recipients first receive an email from a sender or do not often receive email from a sender. For more information on this setting and how to configure it, see the following articles:
