@@ -18,17 +18,6 @@ There are several ways that Microsoft Managed Desktop service communicates with 
 > [!IMPORTANT]
 > You might have already added these contacts in the Admin portal. If so, take a moment now to double-check that the contact list is accurate, since Microsoft Managed Desktop **must** be able to reach them if a severe incident occurs.
 
-## Azure Active Directory access for Microsoft Managed Desktop Admin portal
-
-Microsoft Managed Desktop Admin portal requires that people accessing the portal have one of these Azure Active Directory (AD) roles:
-
-- Global Administrator
-- Intune Service Administrator
-- Global Reader
-- Service Support Administrator
-
-The Global Administrator must be the one to enroll your organization in Microsoft Managed Desktop. All five roles have the same access within the Admin portal to initiate and view tasks. For more information on assigning these roles in Azure AD, see [Administrator role permissions in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles).
-
 ## Admin contact areas of focus
 
 Admin contacts should be the best person or group that can answer questions and make decisions for different areas of focus. **Microsoft Managed Desktop Operations will contact these Admin contacts for questions involving support requests filed by the customer.** These Admin contacts will receive notifications for support request updates and new messages. These areas include:
