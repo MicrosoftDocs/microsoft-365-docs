@@ -34,6 +34,7 @@ This article provides information about attack reduction rules:
 Links to information about operating system versions referenced in this table are listed below this table.
 
 > [!Note]
+>
 > - Unless otherwise indicated, the minimum Windows&nbsp;10 build is version 1709 (RS3, build 16299) or later; the minimum Windows&nbsp;Server build is version is 1809 or later.
 >
 > - \* All rules support file and folder exclusions, unless stated otherwise.
@@ -73,7 +74,7 @@ Links to information about operating system versions referenced in this table ar
 
 Links to information about configuration management system versions referenced in this table are listed below this table.
 
-|Rule name | Intune | Microsoft Endpoint Manager | Microsoft Endpoint Configuration Manager xxxx and later | Group Policy | PowerShell |
+|Rule name | Intune | Microsoft Endpoint Manager | Microsoft Endpoint Configuration Manager | Group Policy | PowerShell |
 |---|---|---|---|---|---|
 |[Block abuse of exploited vulnerable signed drivers](#block-abuse-of-exploited-vulnerable-signed-drivers) | ![supported](images/checkmark.png) <br><br>  |  ![supported](images/checkmark.png) <br><br> MEM OMA-URI |   |   |  ![supported](images/checkmark.png) <br><br> |
 |[Block Adobe Reader from creating child processes](#block-adobe-reader-from-creating-child-processes) | ![supported](images/checkmark.png) |   | ![supported](images/checkmark.png) |   |   |
@@ -107,7 +108,7 @@ The **Block abuse of exploited vulnerable signed drivers** rule does not block a
 
 >[!NOTE]
 >
-> You can configure this rule using [MEM OMA-URI](enable-attack-surface-reduction.md#mem) for MEM OMA-URI custom rules procedural information.
+> You can configure this rule using MEM OMA-URI. See [MEM OMA-URI](enable-attack-surface-reduction.md#mem) for configuring custom rules.
 >
 > You can also configure this rule using [PowerShell](enable-attack-surface-reduction.md#powershell).
 >
