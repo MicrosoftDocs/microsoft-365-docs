@@ -38,7 +38,7 @@ The following table lists the search limits when using the content search tool i
 |The maximum number of mailboxes or sites that can be searched in a single search|No limit <sup>1</sup>|
 |The maximum number of searches that can run at the same time in your organization.|30|
 |The maximum number of organization-wide searches that can be run at the same time.|3|
-|The maximum number of searches that a single user can start at the same time. This limit is most likely hit when the user tries to start multiple searches by using the `Get-ComplianceSearch |Start-ComplianceSearch` command in Security & Compliance Center PowerShell.|10|
+|The maximum number of searches that a single user can start at the same time. This limit is most likely hit when the user tries to start multiple searches by using the **Get-ComplianceSearch \|Start-ComplianceSearch** command in Security & Compliance Center PowerShell.|10|
 |The maximum number of items per user mailbox that are displayed on the preview page when previewing Content Search results.|100|
 |The maximum number of items found in all user mailboxes that can possibly be displayed on the preview page when previewing search results. The newest items are displayed.|1,000 <sup>2</sup>|
 |The maximum number of user mailboxes that can be previewed for search results. If there are more than 1000 mailboxes that contain content that matches the search query, at most, only the top 1000 mailboxes with the most search results will be available for preview.|1,000|
