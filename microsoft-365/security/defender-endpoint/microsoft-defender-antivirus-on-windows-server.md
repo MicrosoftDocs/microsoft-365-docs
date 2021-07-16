@@ -31,7 +31,7 @@ Microsoft Defender Antivirus is available on the following editions/versions of 
 - Windows Server 2016
 - Windows Server 2012 R2 (Requires Microsoft Defender for Endpoint)
 
-In some instances, Microsoft Defender Antivirus is referred to as *Endpoint Protection*; however, the protection engine is the same. Although the functionality, configuration, and management are largely the same for [Microsoft Defender Antivirus on Windows 10](microsoft-defender-antivirus-in-windows-10.md), there are a few key differences on Windows Server:
+In some instances, Microsoft Defender Antivirus is referred to as *Endpoint Protection*; however, the protection engine is the same. Although the functionality, configuration, and management are largely the same for [Microsoft Defender Antivirus on Windows 10](microsoft-defender-antivirus-windows.md), there are a few key differences on Windows Server:
 
 - On Windows Server, [automatic exclusions](configure-server-exclusions-microsoft-defender-antivirus.md) are applied based on your defined Server Role.
  
@@ -58,7 +58,7 @@ If the GUI is not installed on your server, and you want to install it, either t
 
 
 >[!NOTE]
->This option is not available for Windows Server 2012 R2. 
+>This option is not available for Windows Server 2012 R2. For more information, see [Options to install Microsoft Defender for Endpoint](configure-server-endpoints.md#options-to-install-microsoft-defender-for-endpoint).
 
 ### Turn on the GUI using the Add Roles and Features Wizard
 
@@ -229,5 +229,5 @@ You can now run Microsoft Defender Antivirus in passive mode on Windows Server 2
 
 ## See also
 - [Install Microsoft Defender Antivirus on Windows Server]()
-- [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-windows.md)
 - [Microsoft Defender Antivirus compatibility](microsoft-defender-antivirus-compatibility.md)
