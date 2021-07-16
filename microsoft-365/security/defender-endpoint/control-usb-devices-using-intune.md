@@ -227,12 +227,6 @@ Using Intune, you can limit the services that can use Bluetooth through the ["Bl
 > [!div class="mx-imgBorder"]
 > ![screenshot of Bluetooth settings page](images/bluetooth.png)
 
-### Use Microsoft Defender for Endpoint baseline settings
-
-The Microsoft Defender for Endpoint baseline settings represent the recommended configuration for threat protection. Configuration settings for baseline are located in the edit profile page of the configuration settings.
-
-> [!div class="mx-imgBorder"]
-> ![Baselines in MEM](images/baselines.png)
 
 ## Prevent threats from removable storage
   
