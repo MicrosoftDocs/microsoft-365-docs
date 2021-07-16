@@ -57,7 +57,7 @@ The following table lists the search limits when using the content search tool i
 > [!NOTE]
 > <sup>1</sup> Although you can search an unlimited number of mailboxes in a single search, you can only download the exported search results from a maximum of 100,000 mailboxes using the eDiscovery Export Tool in the Microsoft 365 compliance center.
 >
-> <sup>2</sup> The intent of the preview page is to show a limited sample of the results. Even for massive searches with thousands of results, the number of items that are shown on the preview page can, and often will, be much less than maximum possible value of 1000. This discrepancy is often due to the nature of the search and the types of items found. To see the complete search results, you need to export the results.
+> <sup>2</sup> The intent of the preview page is to show a limited sample of the results. Even for massive searches with thousands of results, the number of items that are shown on the preview page can, and often will, be much less than maximum possible value of 1000. To see the complete search results, you need to export the results.
 >
 > <sup>3</sup> When searching SharePoint and OneDrive for Business locations, the characters in the URLs of the sites being searched are counted against this limit.
 >
