@@ -23,7 +23,7 @@ f1.keywords: NOCSH
 
 2.	Review your test details and if satisfied, click on the **Create** button. 
 
-    ![View validation](Media/validation.png)
+    :::image type="content" alt-text="View validation." source="Media/validation.png" lightbox="Media/validation.png":::
 
 3.	This will onboard your package to the Test Base environment. If your package is successfully created, an automated test which verifys whether your package can be successfully executed on Azure will be triggered.
 
@@ -36,7 +36,7 @@ f1.keywords: NOCSH
 
     - Peradventure this happens, you can view the status of your package on the **Manage packages** tab.
 
-      ![Image for managing packages](Media/managepackages.png)
+      :::image type="content" alt-text="Image for managing packages." source="Media/managepackages.png" lightbox="Media/managepackages.png":::
 
     - For succesful tests, their results can be seen via the **Test Summary**, **Security Updates Results** and **Feature Updates Results** pages at scheduled intervals, often starting a few days after your upload.
   
