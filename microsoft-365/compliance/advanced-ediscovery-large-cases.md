@@ -64,11 +64,7 @@ The performance will be negatively impacted and may cause instability in some in
 
 **If cloud attachments are included by default in the large case format; how can I remove that content from my review experience?**  
 
-Use review set filters to filter by message kind or to exclude IsAttachment value. For more information, see [Query and filter content in a review set](review-set-search.md).
-
-**For the new Teams HTML transcript feature for chat messages, will I be able to sort and filter by individual chat messages**? 
- 
-
+Use review set filters to filter by message kind or to exclude cloud attachments by using the HasAttachment filter. For more information, see [Query and filter content in a review set](review-set-search.md).
 
 **When exporting chat conversation transcripts, will the load file contain all of the expanded metadata and a single item for each transcript?**
 
