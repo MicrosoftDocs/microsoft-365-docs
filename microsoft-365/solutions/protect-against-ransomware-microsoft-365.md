@@ -30,7 +30,7 @@ TBD
 Use these steps to secure and optimize access to your organization's servers and cloud services and maximize your hybrid worker's productivity.
 
 1. [Phase 1](protect-against-ransomware-microsoft-365-phase1.md)
-2. [Phase 2](eprotect-against-ransomware-microsoft-365-phase2.md)
+2. [Phase 2](protect-against-ransomware-microsoft-365-phase2.md)
 3. [Phase 3](protect-against-ransomware-microsoft-365-phase3.md)
 
 <!--

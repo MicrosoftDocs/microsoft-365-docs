@@ -27,7 +27,7 @@ TBD
 
 ## Next step
 
-[Phase 2](eprotect-against-ransomware-microsoft-365-phase2.md)
+[Phase 2](protect-against-ransomware-microsoft-365-phase2.md)
 
 <!--
 
