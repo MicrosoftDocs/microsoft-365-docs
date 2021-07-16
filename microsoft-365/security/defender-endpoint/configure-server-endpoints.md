@@ -176,6 +176,20 @@ The onboarding package for Windows Server 2019 through Microsoft Endpoint Manage
 Verify that Microsoft Defender Antivirus and Microsoft Defender for Endpoint are running. 
 
 
+## Offboard Windows servers
+
+You can offboard Windows Server (SAC), Windows Server 2019, and Windows Server 2019 Core edition in the same method available for Windows 10 client devices.
+
+- [Offboarding using Group Policy](configure-endpoints-gp.md#offboard-devices-using-group-policy)
+- [Offboard devices using Configuration Manager](configure-endpoints-sccm.md#offboard-devices-using-configuration-manager)
+- [Offboard and monitor devices using Mobile Device Management tools](configure-endpoints-mdm.md#offboard-and-monitor-devices-using-mobile-device-management-tools)
+- [Offboard devices using a local script](configure-endpoints-script.md#offboard-devices-using-a-local-script)
+
+
+For other Windows server versions, you have two options to offboard Windows servers from the service:
+
+- Uninstall the MMA agent
+- Remove the Defender for Endpoint workspace configuration
 
 > [!NOTE]
 > Running Microsoft Defender Antivirus is not required but it is recommended. If another antivirus vendor product is the primary endpoint protection solution, you can run Defender Antivirus in Passive mode. You can only confirm that passive mode is on after verifying that Microsoft Defender for Endpoint sensor (SENSE) is running. 

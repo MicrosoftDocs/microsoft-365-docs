@@ -45,7 +45,7 @@ You'll need to take the following steps to onboard non-Windows devices:
 
    - For macOS devices, you can choose to onboard through Microsoft Defender for Endpoint or through a third-party solution. For more information, see [Microsoft Defender for Endpoint on Mac](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-mac).
 
-   - For other non-Windows devices choose **Onboard non-Windows devices through third-party integration**.   
+   - For other non-Windows devices, choose **Onboard non-Windows devices through third-party integration**.   
     1. In the navigation pane, select **Interoperability** > **Partners**. Make sure the third-party solution is listed.
     2. In the **Partner Applications** tab, select the partner that supports your non-Windows devices.
     3. Select **Open partner page** to open the partner's page. Follow the instructions provided on the page.

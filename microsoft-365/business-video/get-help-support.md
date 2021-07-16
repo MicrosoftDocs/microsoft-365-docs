@@ -14,6 +14,7 @@ ms.collection:
 ms.custom: 
 - AdminSurgePortfolio
 - adminvideo
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
