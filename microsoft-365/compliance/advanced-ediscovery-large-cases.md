@@ -50,7 +50,11 @@ Here's a list of other benefits of large cases in Advanced eDiscovery workflow.
 
 - **Review**: Each review set will support up to 1 TB of pre-expansion content. Additional metadata will be available for filters and queries including Team name, channel name and conversation name for Teams content. Each transcript will include time-based content for before and after the responsive item. For Channel conversations, the root post and all replies will be collected for responsive content.  
 
-- **Export**: Now you will be able to export large sets of content within a single job, 5 million documents or 500 GB, whichever is smaller.
+- **Export**: You can export large sets of content in a single export job. The large case format lets you can export 5 million documents or 500 GB, whichever is smaller in an export job.
+
+Additionally, the new large case format includes an updated user interface that displays the total size of each review set in the case. Review set sizes are displayed in a column on the **Review sets** tab and in a flyout pane that persists of every tab in the case.
+
+![Large case statistics in Advanced eDiscovery user interface](..\media\LargeCaseUI.png)
 
 ## Frequently asked questions
 
@@ -65,7 +69,6 @@ Use review set filters to filter by message kind or to exclude IsAttachment valu
 **For the new Teams HTML transcript feature for chat messages, will I be able to sort and filter by individual chat messages**? 
  
 
- 
 
 **When exporting chat conversation transcripts, will the load file contain all of the expanded metadata and a single item for each transcript?**
 
