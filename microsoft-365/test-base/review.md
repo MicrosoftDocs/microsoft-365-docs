@@ -42,7 +42,7 @@ f1.keywords: NOCSH
   
   - While failed tests, require you to upload a new package. 
   
-    You can download the ```test logs``` for further analysis from the ‘```Security update results``` and ```Feature updates results``` pages.
+    You can download the ```test logs``` for further analysis from the ```Security update results``` and ```Feature updates results``` pages.
 
   - If you experience repeated test failures, please reach out to testbasepreview@microsoft.com with details of your error. 
 
