@@ -239,6 +239,7 @@
 #### [Overview of attack surface reduction](overview-attack-surface-reduction.md)
 #### [Configure attack surface reduction capabilities](configure-attack-surface-reduction.md)
 #### [Learn about attack surface reduction rules](attack-surface-reduction.md)
+#### [Attack surface reduction rules](attack-surface-reduction-rules.md)
 #### [Evaluate attack surface reduction rules](evaluate-attack-surface-reduction.md)
 #### [Enable attack surface reduction rules](enable-attack-surface-reduction.md)
 #### [Customize attack surface reduction rules](customize-attack-surface-reduction.md)
