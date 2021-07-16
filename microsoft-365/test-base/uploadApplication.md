@@ -1,6 +1,6 @@
 ---
 title: 'Upload your package'
-description: How to upload your appplication, binaries and dependencies onto Test Base
+description: How to upload your application, binaries and dependencies onto Test Base
 search.appverid: MET150
 author: mansipatel-usl
 ms.author: mapatel
@@ -25,7 +25,7 @@ Once there, follow the steps below to upload a new package.
 
 ## Enter details for your package
 
-On the Test details tab, type in your package's name, version and other details as requested. 
+On the Test details tab, type in your package's name, version, and other details as requested. 
 
 **Out-of-Box** and **Functional testing** can be done via this dashboard.
 
@@ -36,8 +36,8 @@ The steps below provides a guide on how to fill out your package details:
 > [!Note]  
 > The package name and version combination entered must be unique within your organization. This is validated by the checkmark as shown below.
   
-  - If you choose to re-use an package's name, then the version number must be unique (i.e. never been used with an package bearing that particular name).
-  - If the combination of the package name + version does not pass the uniqueness check, you will see an error message which reads, *“Package with this package version already exists”*. 
+  - If you choose to reuse a package's name, then the version number must be unique (that is, never been used with a package bearing that particular name).
+  - If the combination of the package name + version doesn't pass the uniqueness check, you'll see an error message that reads, *“Package with this package version already exists”*. 
 
 ![Image for uploading package instructions](Media/Instructions.png)
 
@@ -47,7 +47,7 @@ The steps below provides a guide on how to fill out your package details:
 
 3.	**Select the type of test you want to run on this package**
 
-    An **Out-of-Box (OOB)** test performs an *install*, *launch*, *close* and *uninstall* of your package. After the install, the launch-close routine is repeated 30 times before a single uninstall is run. 
+    An **Out-of-Box (OOB)** test performs an *install*, *launch*, *close*, and *uninstall* of your package. After the install, the launch-close routine is repeated 30 times before a single uninstall is run. 
     
     This OOB test provides you with standardized telemetry on your package to compare across Windows builds.
 
@@ -69,9 +69,9 @@ Change to the correct picture
 
 In the multi-select dropdown, select the OS version(s) of Windows your package will be installed on. 
 
-  - To test your package against Windows Client OSes only, select the applicable Windows 11 OS versions from the menu list.
-  - To test your package against Windows Server OSes only, select the applicable Windows Server OS versions from the menu list.
-  - To test your package against Windows Client and Server OSes, select all applicable OSes from the menu list. 
+  - To test your package only against Windows client operating systems, select the applicable Windows 11 OS versions from the menu list.
+  - To test your package only against Windows Server operating systems, select the applicable Windows Server OS versions from the menu list.
+  - To test your package only against Windows client and Windows Server operating systems, select all applicable operating systems from the menu list. 
 
 > [!Note]
 > If you select to test your package against both Server and Client OSes, please make sure that the package is compatible and can run on both OSes
@@ -83,7 +83,7 @@ Change to the correct picture
 -->
 6.	**Select options for Feature update tests:**
 
-  - On the option to “Select Insider Channel”, select the ```Windows Insider Program Channel``` as the build which your packages should be tested against.
+  - On the option to “Select Insider Channel”, select the ```Windows Insider Program Channel``` as the build that your packages should be tested against.
   
     We currently use builds flighted in the Insider Beta Channel.
 
@@ -104,7 +104,7 @@ Change to the correct picture
 ![Viewing test details](Media/TestDetails.png)
 ## Next steps
 
-Our next article covers Uploading your Binaries to our serivce.
+Our next article covers Uploading your Binaries to our service.
 > [!div class="nextstepaction"]
 > [Next step](binaries.md)
 
