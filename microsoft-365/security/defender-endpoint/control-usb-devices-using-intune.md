@@ -57,7 +57,7 @@ The following table describes the ways Microsoft Defender for Endpoint can allow
 | [Allow installation and usage of specifically approved peripherals with matching device instance IDs](#allow-installation-and-usage-of-specifically-approved-peripherals-with-matching-device-instance-ids) | You can only install and use approved peripherals that match any of these device instance IDs. |
 | [Prevent installation and usage of specifically prohibited peripherals with matching device instance IDs](#prevent-installation-and-usage-of-specifically-prohibited-peripherals-with-matching-device-instance-ids) | You can't install or use prohibited peripherals that match any of these device instance IDs. |
 | [Limit services that use Bluetooth](#limit-services-that-use-bluetooth) | You can limit the services that can use Bluetooth. |
-| [Use Microsoft Defender for Endpoint baseline settings](#use-microsoft-defender-for-endpoint-baseline-settings) | You can set the recommended configuration for ATP by using the Defender for Endpoint security baseline. |
+
 
 ### Restrict USB drives and other peripherals
 
