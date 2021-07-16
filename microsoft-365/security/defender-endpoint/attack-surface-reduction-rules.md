@@ -40,7 +40,7 @@ Links to information about operating system versions referenced in this table ar
 > - \* All rules support file and folder exclusions, unless stated otherwise.
 
 |Rule name |  Windows&nbsp;10 | Windows&nbsp;Server 2019 | Windows&nbsp;Server | Windows&nbsp;Server 2016 |Windows&nbsp;Server 2012 R2 |
-|---|---|---|---|---|---|
+|---|:---:|:---:|:---:|:---:|:---:|
 |[Block abuse of exploited vulnerable signed drivers](#block-abuse-of-exploited-vulnerable-signed-drivers) | ![supported](images/checkmark.png) <br><br> | ![supported](images/checkmark.png) <br><br> | ![supported](images/checkmark.png) <br><br> version 1803 (Semi-Annual Channel) or later |  |  |
 |[Block Adobe Reader from creating child processes](#block-adobe-reader-from-creating-child-processes) | ![supported](images/checkmark.png) <br><br> version 1809 or later | ![supported](images/checkmark.png) | ![supported](images/checkmark.png)  <br><br> |  |  |
 |[Block all Office applications from creating child processes](#block-all-office-applications-from-creating-child-processes) | ![supported](images/checkmark.png) <br><br> | ![supported](images/checkmark.png) | ![supported](images/checkmark.png) <br><br> |  |  |
@@ -75,7 +75,7 @@ Links to information about operating system versions referenced in this table ar
 Links to information about configuration management system versions referenced in this table are listed below this table.
 
 |Rule name | Intune | Microsoft Endpoint Manager | Microsoft Endpoint Configuration Manager | Group Policy | PowerShell |
-|---|---|---|---|---|---|
+|---|:---:|:---:|:---:|:---:|:---:|
 |[Block abuse of exploited vulnerable signed drivers](#block-abuse-of-exploited-vulnerable-signed-drivers) | ![supported](images/checkmark.png) <br><br>  |  ![supported](images/checkmark.png) <br><br> MEM OMA-URI |   |   |  ![supported](images/checkmark.png) <br><br> |
 |[Block Adobe Reader from creating child processes](#block-adobe-reader-from-creating-child-processes) | ![supported](images/checkmark.png) |   | ![supported](images/checkmark.png) |   |   |
 |[Block all Office applications from creating child processes](#block-all-office-applications-from-creating-child-processes) | ![supported](images/checkmark.png) |   | ![supported](images/checkmark.png) <br><br> CB 1710 |   |   |
