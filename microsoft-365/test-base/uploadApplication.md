@@ -31,7 +31,7 @@ On the Test details tab, type in your package's name, version, and other details
 
 The steps below provides a guide on how to fill out your package details:
 
-1.	**Enter the name to be given your package in the ```Package name``` field.**
+1.	Enter the name to be given your package in the `Package name` field.
 
     > [!Note]  
     > The package name and version combination entered must be unique within your organization. This is validated by the checkmark as shown below.
@@ -41,11 +41,11 @@ The steps below provides a guide on how to fill out your package details:
 
     ![Image for uploading package instructions](Media/Instructions.png)
 
-2. **Enter a version in the “Package version” field.**
+2. Enter a version in the “Package version” field.
 
     ![Package version](Media/ApplicationVersion.png)
 
-3.	**Select the type of test you want to run on this package**
+3.	Select the type of test you want to run on this package.
 
     An **Out-of-Box (OOB)** test performs an *install*, *launch*, *close*, and *uninstall* of your package. After the install, the launch-close routine is repeated 30 times before a single uninstall is run. 
     
@@ -56,7 +56,7 @@ The steps below provides a guide on how to fill out your package details:
     > [!Note]
     > **All** scripts run for 80 minutes at the most. 
     
-4.	**Select the OS update type**
+4.	Select the OS update type.
 
     - The ‘Security updates’ enables your package to be tested against incremental churns of Windows pre-release monthly security updates. 
     - The ‘Feature updates’ enables your package to be tested against Windows pre-release bi-annual feature updates builds from the Windows Insider Program.
@@ -65,7 +65,7 @@ The steps below provides a guide on how to fill out your package details:
     -->
     ![OS update type](Media/OSUpdateType.png)
 
-5.	**Select the OS version(s) for Security update tests.**
+5.	Select the OS version(s) for Security update tests.
 
     In the multi-select dropdown, select the OS version(s) of Windows your package will be installed on. 
 
@@ -81,9 +81,9 @@ The steps below provides a guide on how to fill out your package details:
     Change to the correct picture
     -->
 
-6.	**Select options for Feature update tests:**
+6.	Select options for Feature update tests:
 
-    - On the option to “Select Insider Channel”, select the ```Windows Insider Program Channel``` as the build that your packages should be tested against.
+    - On the option to “Select Insider Channel”, select the `Windows Insider Program Channel` as the build that your packages should be tested against.
   
       We currently use builds flighted in the Insider Beta Channel.
 
@@ -106,6 +106,7 @@ The steps below provides a guide on how to fill out your package details:
 ## Next steps
 
 Our next article covers Uploading your Binaries to our service.
+
 > [!div class="nextstepaction"]
 > [Next step](binaries.md)
 
