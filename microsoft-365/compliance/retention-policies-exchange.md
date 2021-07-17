@@ -80,7 +80,7 @@ When the retention settings are retain-only, or delete-only, the contents paths 
 
 If a user leaves your organization and the user's mailbox is included in a policy for retention, the mailbox becomes an inactive mailbox when the user's Microsoft 365 account is deleted. The contents of an inactive mailbox are still subject to any retention policy that was placed on the mailbox before it was made inactive, and the contents are available to an eDiscovery search. For more information, see [Inactive mailboxes in Exchange Online](inactive-mailboxes-in-office-365.md).
 
-When the retention settings no longer apply because the data is permanently deleted or the retention period has expired, the Exchange admin can now delete the mailbox. In this scenario, the inactive mailbox isn't automatically deleted.
+When the retention settings no longer apply because the data is permanently deleted or the retention period has expired, the Exchange admin can now [delete the mailbox](delete-an-inactive-mailbox.md). In this scenario, the inactive mailbox isn't automatically deleted.
 
 ## Configuration guidance
 
