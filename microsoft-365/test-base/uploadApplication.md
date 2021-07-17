@@ -18,7 +18,7 @@ f1.keywords: NOCSH
 
 # Step 2: Uploading a Package
 
-On the Test Base portal page, navigate to the ‘Upload new package option on the left navigation bar as shown below:
+On the Test Base portal page, navigate to the **Upload new package** option on the left navigation bar as shown below:
 ![Upload a new package](Media/Upload-New-Package.png)
 
 Once there, follow the steps below to upload a new package.
@@ -31,7 +31,7 @@ On the Test details tab, type in your package's name, version and other details 
 
 The steps below provides a guide on how to fill out your package details:
 
-1.	**Enter the name to be given your package in the ```“Package name``` field.**
+1.	**Enter the name to be given your package in the ```Package name``` field.**
 
 > [!Note]  
 > The package name and version combination entered must be unique within your organization. This is validated by the checkmark as shown below.
