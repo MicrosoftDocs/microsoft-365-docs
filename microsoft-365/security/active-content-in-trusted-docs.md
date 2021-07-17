@@ -75,8 +75,8 @@ Admins have many ways to configure Office in an organization. For example:
 
 - **Office cloud policy service**: Set up a user-based policy that applies to a user on any device accessing files in Office apps with their Azure AD account. See the steps for [creating an Office cloud policy configuration](/DeployOffice/overview-office-cloud-policy-service) in the [Office Cloud Policy Service](https://config.office.com/officeSettings/officePolicies).
 - **Office policies in Intune**: Use the Intune Settings catalog or Administrative templates to deploy HKCU policies to Windows 10 PCs: In the [MEM admin center](https://endpoint.microsoft.com/#blade/Microsoft_Intune_DeviceSettings/DevicesMenu/configurationProfiles) under **Devices** \> **Configuration Profiles**.
-  - ***Administrative Templates***: See instructions to use Windows 10 templates to configure [Administrative Templates](/mem/intune/configuration/administrative-templates-windows).
-  - ***Settings catalog (preview)***: See instructions to use the [Settings catalog (preview)](/mem/intune/configuration/settings-catalog).
+| - ***Administrative Templates***: See instructions to use Windows 10 templates to configure [Administrative Templates](/mem/intune/configuration/administrative-templates-windows).
+| - ***Settings catalog (preview)***: See instructions to use the [Settings catalog (preview)](/mem/intune/configuration/settings-catalog).
 - **Group policy**: Use your on-premise Active Directory to deploy group policy objects (GPOs) to users and computers. To create a GPO for this setting, download the latest [Administrative Template files (ADMX/ADML) and Office Customization Tool for Microsoft 365 Apps for enterprise, Office 2019, and Office 2016](https://www.microsoft.com/download/details.aspx?id=49030).
 
 ## Admin options for restricting active content
@@ -90,3 +90,65 @@ The following policies are are available:
 - **Turn off Trusted Locations**: Exceptions for groups available.
 - **Turn off Trusted Documents**: Exceptions for groups available.
 - **Turn off all active content**: Exceptions for individuals.
+
+### HKEY_CURRENT_USER settings
+
+<p>
+
+****
+|Category|Policy setting name|User prompt and<br>override available?|
+|---|---|---|
+|ActiveX|ActiveX Control Initialization|**Yes** for the following values: <ul><li>**3**</li><li>**4**</li><li>**5**</li><li>**6**</li></ul>|
+|ActiveX|Allow Active X One Off Forms|n/a|
+|ActiveX|Load Controls in Forms3|**Yes** for the following values: <ul><li>**2**</li><li>**3**</li></ul>|
+|DDE - Excel|Don't allow Dynamic Data Exchange (DDE) server launch in Excel|**Yes** for the value **Not configured**.|
+|DDE - Excel|Don't allow Dynamic Data Exchange (DDE) server lookup in Excel|**Yes** for the following values: <ul><li>**Disabled**</li><li>**Not configured**</li></ul>|
+|DDE - Word|Dynamic Data Exchange|n/a|
+|Jscript & VBScript|Allow scripts in one-off Outlook forms|n/a|
+|Jscript & VBScript|Do not allow Outlook object model scripts to run for public folders|n/a|
+|Jscript & VBScript|Do not allow Outlook object model scripts to run for shared folders|n/a|
+|Macros - Access <p> Macros - Excel <p> Macros - PowerPoint <p> Macros - Visio <p> Macros - Word|Block macros from running in Office files from the Internet|**Yes** for the following values: <ul><li>**Disabled**</li><li>**Not configured**</li></ul>|
+|Macros - Access <p> Macros - Excel <p> Macros - PowerPoint <p> Macros - Project <p> Macros - Publisher <p> Macros - Visio <p> Macros - Word|VBA Macro Notification Settings|**Yes** for the following values: <ul><li>**Disabled**</li><li>**Not configured**</li></ul>|
+|Macros - Excel|Scan encrypted macros in Excel Open XML workbooks|n/a|
+|Macros - General & Embedded|Allow VBA to load typelib references by path from untrusted intranet locations|n/a|
+|Macros - General & Embedded|Automation Security|n/a|
+|Macros - General & Embedded|Disable additional security checks on VBA library references that may refer to unsafe locations on the local machine|n/a|
+|Macros - General & Embedded|Macro Runtime Scan Scope|n/a|
+|Macros - Outlook|Security setting for macros|**Yes** for the following values: <ul><li>**Always warn**</li><li>**Warn for signed, disable unsigned**</li><li>**Disabled**</li><li>**Not configured**</li></ul>|
+|Macros - Outlook|Outlook Security Mode|Required to enable all Outlook GPO settings. <p> Mentioned as a dependency (this policy doesn't block active content itself).|
+|Macros - PowerPoint|Scan encrypted macros in PowerPoint Open XML presentations|n/a|
+|Macros - Publisher|Publisher Automation Security Level|n/a|
+|Macros - Word|Scan encrypted macros in Word Open XML documents|n/a|
+|ActiveX|Disable All ActiveX|**Yes** for the following values: <ul><li>**Disabled**</li><li>**Not configured**</li></ul>|
+|ActiveX|Check ActiveX objects|n/a|
+|Macros|Only trust VBA macros that use V3 signatures|n/a|
+|Add-ins & Extensibility - Excel|Do not show AutoRepublish warning alert|n/a|
+|Add-ins & Extensibility - Excel <p> Add-ins & Extensibility - PowerPoint <p> Add-ins & Extensibility - Project <p> Add-ins & Extensibility - Publisher <p> Add-ins & Extensibility - Visio <p> Add-ins & Extensibility - Word|Disable Trust Bar Notification for unsigned application add-ins and block them|**Yes** for the value **Disabled**.|
+|Add-ins & Extensibility - Excel <p> Add-ins & Extensibility - PowerPoint <p> Add-ins & Extensibility - Project <p> Add-ins & Extensibility - Publisher <p> Add-ins & Extensibility - Visio <p> Add-ins & Extensibility - Word|Require that application add-ins are signed by Trusted Publisher|n/a|
+|Add-ins & Extensibility - Excel|WEBSERVICE Function Notification Settings|**Yes** for the following values: <ul><li>**Disable all with notification**</li><li>**Disabled**</li><li>**Not configured**</li></ul>|
+|Add-ins & Extensibility - Office|Disable the Office client from polling the SharePoint Server for published links|n/a|
+|Add-ins & Extensibility - Office|Disable UI extending from documents and templates|n/a|
+|Add-ins & Extensibility - Outlook|Configure Outlook object model prompt when accessing an address book|**Yes** for the following values: <ul><li>**Prompt user**</li><li>**Prompt user based on computer security**</li><li>**Disabled**</li><li>**Not configured**</li></ul>|
+|Add-ins & Extensibility - Outlook|Configure Outlook object model prompt When accessing the Formula property of a UserProperty object|**Yes** for the following values: <ul><li>**Prompt user**</li><li>**Prompt user based on computer security**</li><li>**Disabled**</li><li>**Not configured**</li></ul>|
+|Add-ins & Extensibility - Outlook|Configure Outlook object model prompt when executing Save As|**Yes** for the following values: <ul><li>**Prompt user**</li><li>**Prompt user based on computer security**</li><li>**Disabled**</li><li>**Not configured**</li></ul>|
+|Add-ins & Extensibility - Outlook|Configure Outlook object model prompt when reading address information|**Yes** for the following values: <ul><li>**Prompt user**</li><li>**Prompt user based on computer security**</li><li>**Disabled**</li><li>**Not configured**</li></ul>|
+|Add-ins & Extensibility - Outlook|Configure Outlook object model prompt when responding to meeting and task requests|**Yes** for the following values: <ul><li>**Prompt user**</li><li>**Prompt user based on computer security**</li><li>**Disabled**</li><li>**Not configured**</li></ul>|
+|Add-ins & Extensibility - Outlook|Configure Outlook object model prompt when sending mail|**Yes** for the following values: <ul><li>**Prompt user**</li><li>**Prompt user based on computer security**</li><li>**Disabled**</li><li>**Not configured**</li></ul>|
+|Add-ins & Extensibility - Outlook|Set Outlook object model custom actions execution prompt|**Yes** for the following values: <ul><li>**Prompt user**</li><li>**Prompt user based on computer security**</li><li>**Disabled**</li><li>**Not configured**</li></ul>|
+|Add-ins & Extensibility - PowerPoint|Run Programs|**Yes** for the value **Enable (prompt user before running)**|
+|Add-ins & Extensibility (Word/Excel)|Disable Smart Document's use of manifests|n/a|
+|
+
+### HKEY_LOCAL_MACHINE settings
+
+<p>
+
+****
+|Category|Policy setting name|User prompt and<br>override available?|
+|---|---|:---:|
+|ActiveX|Restrict ActiveX Install|n/a|
+|Add-ins & Extensibility - Office|Add-on Management|n/a|
+|Add-ins & Extensibility - Office|Block Flash activation in Office documents|n/a|
+|Jscript & VBScript|Restrict legacy JScript execution for Office|n/a|
+|Jscript & VBScript|Scripted Window Security Restrictions|n/a|
+|
