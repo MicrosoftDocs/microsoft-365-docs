@@ -58,7 +58,7 @@ Multi-workload DEPs don't encrypt the following types of data. Instead, Microsof
 - SharePoint and OneDrive for Business data.
 - Microsoft Teams files and some Teams call and meeting recordings saved in OneDrive for Business and SharePoint Online are encrypted using the SharePoint Online DEP.
 - Other Microsoft 365 workloads such as Yammer and Planner that aren't currently supported by Customer Key.
-- Teams Live Events and Q&A in Live Events. For Teams, this scenario is the only one that isn't encrypted by Customer Key using multi-workload DEP.
+- Teams Live Event data.
 
 You can create multiple DEPs per tenant but only assign one DEP at a time. When you assign the DEP, encryption begins automatically but takes some time to complete depending on the size of your tenant.
 
