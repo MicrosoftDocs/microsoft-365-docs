@@ -18,9 +18,6 @@ description: "Integrate Microsoft Teams meetings with Canvas"
 
 # Use Microsoft Teams meetings with Canvas
 
-> [!IMPORTANT]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
-
 Microsoft Teams meetings is a Learning Tools Interoperability (LTI) app that helps educators and students easily navigate between their Learning Management System (LMS) and Teams. Users can access their class teams associated with their course directly from within their LMS.
 
 ## Microsoft Office 365 Admin
@@ -74,3 +71,9 @@ As a Canvas Admin, you'll need to add the Microsoft Teams meetings LTI app withi
 5. Select **Install**.
 
    The Microsoft Teams meetings LTI app will be added to the list of external apps.
+   
+## Enable for Canvas Courses
+
+In order to use the LTI within a course, an instructor of the Canvas course must enable the integrations sync. Each course must be enabled by an instructor for a corresponding Teams to be created; there is no global mechanism for Teams creation. This is designed out of caution to prevent unwanted Teams being created.
+
+Please refer your instructors to [educator documentation](https://support.microsoft.com/en-us/topic/use-microsoft-teams-classes-in-your-lms-preview-ac6a1e34-32f7-45e6-b83e-094185a1e78a#ID0EBD=Instructure_Canvas) for enabling the LTI for each course and finishing the integration setup.
