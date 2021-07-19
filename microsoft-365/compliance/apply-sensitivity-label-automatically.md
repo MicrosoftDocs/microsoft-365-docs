@@ -58,7 +58,7 @@ There are two different methods for automatically applying a sensitivity label t
         - These files can be auto-labeled at rest before or after the auto-labeling policies are created. Files cannot be auto-labeled if they are part of an open session (the file is open).
         - Currently, attachments to list items aren't supported and won't be auto-labeled.
     - Maximum of 25,000 automatically labeled files in your tenant per day.
-    - Maximum of 10 auto-labeling policies per tenant, each targeting up to 10 sites (SharePoint or OneDrive). Recent enhancements: With the [recent enhancements now rolling out](#recent-enhancements-for-auto-labeling-policies), these numbers increase to 100 policies and 100 sites when they are specified individually. You can also specify all sites, and this configuration is exempt from the 100 sites maximum.
+    - Maximum of 10 auto-labeling policies per tenant, each targeting up to 10 sites (SharePoint or OneDrive). With the [recent enhancements now rolling out](#recent-enhancements-for-auto-labeling-policies), these numbers increase to 100 policies and 100 sites when they are specified individually. You can also specify all sites, and this configuration is exempt from the 100 sites maximum.
     - Existing values for modified, modified by, and the date are not changed as a result of auto-labeling policies—for both simulation mode and when labels are applied.
     - When the label applies encryption, the [Rights Management issuer and Rights Management owner](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) is the account that last modified the file.
 
@@ -201,10 +201,10 @@ Specific to the Azure Information Protection unified labeling client:
 
 ## How to configure auto-labeling policies for SharePoint, OneDrive, and Exchange
 
-> [!NOTE]
-> New enhancements are currently rolling out for auto-labeling policies. For more information, see [Recent enhancements for auto-labeling policies](#recent-enhancements-for-auto-labeling-policies).
+> [!IMPORTANT]
+> New enhancements are currently rolling out for auto-labeling policies that include faster simulation results, support for more files and more sites, and email notifications. For more information, see [Recent enhancements for auto-labeling policies](#recent-enhancements-for-auto-labeling-policies).
 
-Make sure you're aware of the prerequisites before you configure auto-labeling policies. 
+Make sure you're aware of the prerequisites before you configure auto-labeling policies.
 
 ### Prerequisites for auto-labeling policies
 
