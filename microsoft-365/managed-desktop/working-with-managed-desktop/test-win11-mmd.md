@@ -29,7 +29,7 @@ To date, more than 95% of Microsoft Managed Desktop devices meet [eligibility cr
 
 ## Add devices to the Windows 11 test group
 
-Start by adding devices to the device group (**\[Modern Workplace\] Windows 11 Pre-Release Test Devices**) created for testing and evaluating Windows 11. Devices in this group get new Windows 11 builds and Microsoft Managed Desktop baseline configurations as they become available and are monitored for reliability issues.
+Start by adding devices to the device group (**Modern Workplace - Windows 11 Pre-Release Test Devices**) created for testing and evaluating Windows 11. Devices in this group get new Windows 11 builds and Microsoft Managed Desktop baseline configurations as they become available and are monitored for reliability issues.
 
 You can choose any of your existing or new devices for Windows 11 testing, but you shouldn't enroll production devices in this group due to the elevated risk of defects or compatibility issues in pre-release builds. Prior device group assignments are removed upon assignment to this group.
 
