@@ -51,7 +51,7 @@ In this interactive guide, you'll learn how Microsoft Defender for Endpoint can 
 
   - **Organization Management** in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups).
 
-- For more information about how you can submit spam, phish, URLs to Microsoft, see [Report messages and files to Microsoft](../office-365-security/report-junk-email-messages-to-microsoft.md).
+- For more information about how you can submit spam, phish, URLs, files, and file hashes (SHAs) to Microsoft, see [Report messages and files to Microsoft](../office-365-security/report-junk-email-messages-to-microsoft.md).
 
 ## Report suspicious content to Microsoft
 
@@ -66,15 +66,13 @@ If you have a file that you suspect might be malware or is being incorrectly det
 
 2. Use the **Submit items to Microsoft for review** flyout that appears to submit the **File** or **File hash**.  
 
-3. In the **Submission type** box, select **File** from the drop-down list. 
+3. In the **Submission type** box, select **File** or **File hash** from the drop-down list. 
 
 4. Click **Browse files**. In the dialog that opens, find and select the file, and then click **Open**. Note that for **File hash** submissions, you'll either have to copy or type in the file hash. 
 
 5. In the **How would you categorize this submission?** section, choose either **Malware**, or **Unwanted software**, or **Clean** (false positive).
   
 6. Next, **Choose the priority**. Note that for **File hash** submissions, **Low - bulk files and SHA submissions** is the only choice, and is automatically selected.
-
-7. In the **Submission name** section, provide a name for your submission, and then add any additional note or comment you might have in the **Notes for Microsoft** text box. 
 
 > [!div class="mx-imgBorder"]
 > ![Submit items to Microsoft for review](../../media/unified-admin-submission-file.png) (Image not final)
