@@ -145,25 +145,26 @@ By default, you should be able to download files that are in quarantine.
 
 ### Download quarantined files
 
-While this setting is on, quarantined files will be backed up to a secure and compliant location so they can be downloaded directly from quarantine. The **Download file** button will always be available for you to use from the file's detailed profile page. **This feature is turned 'On' by default**.
+While this setting is on, quarantined files will be saved in [Microsoft’s malware submission storage location](configure-network-connections-microsoft-defender-antivirus.md#services-and-urls) so they can be downloaded directly from quarantine. Your security team can download the files directly from the file’s detail page via the "Download file" button. **This feature is turned 'On' by default**.
 
-Newly quarantined files from any supported endpoint in your organization will be copied to the same secure Azure storage location as your existing sample submission files. A quarantined file will only be collected once per organization.
+The location depends on your organization's geo settings (either EU, UK, or US). A quarantined file will only be collected once per organization. Learn more about Microsoft's data protection from the Service Trust Portal at https://aka.ms/STP.
 
 Go to **Settings** > **Endpoints** > **Advanced features** > **Download quarantined files** to adjust the setting. [Learn more about advanced features](advanced-features.md)
 
 #### Backing up quarantined files
 
-Users may be prompted to provide explicit consent before backing up the quarantined file, depending on your [automatic sample submission configuration](enable-cloud-protection-microsoft-defender-antivirus.md#use-intune-to-turn-on-cloud-delivered-protection).
+Users may be prompted to provide explicit consent before backing up the quarantined file, depending on your [sample submission configuration](enable-cloud-protection-microsoft-defender-antivirus.md#use-group-policy-to-turn-on-cloud-delivered-protection).
 
-This feature will not work if automatic sample submission is turned off. If automatic sample submission set to request permission from the user, only samples that the user agrees to send will be collected.
+This feature will not work if sample submission is turned off. If automatic sample submission is set to request permission from the user, only samples that the user agrees to send will be collected.
 
 >[!IMPORTANT]
 >Download quarantined file requirements:
 >- Your organization uses Microsoft Defender Antivirus 
+>- Microsoft Defender Antivirus is in active mode
 >- Cloud–based protection is enabled. See [Turn on cloud-delivered protection](enable-cloud-protection-microsoft-defender-antivirus.md)
->- Microsoft Defender for Endpoint is in active mode
+>- Sample submission is turned on
 >- Engine version is 1.1.17300.4 or later
->- Devices have Windows 10 version 1703 or later, or Windows server 2016 and 2019
+>- Devices have Windows 10 version 1703 or later, or Windows server 2016 or 2019
 
 ### Collect files
 
