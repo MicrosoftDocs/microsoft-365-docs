@@ -33,8 +33,13 @@ ms.technology: mde
 > [!IMPORTANT]
 > On macOS 11 (Big Sur), Microsoft Defender for Endpoint requires additional configuration profiles. If you are an existing customer upgrading from earlier versions of macOS, make sure to deploy the additional configuration profiles listed on [this page](mac-sysext-policies.md).
 
+## 101.34.27 (20.121052.13427.0)
+
+- Bug fixes
+
 ## 101.34.20 (20.121051.13420.0)
 
+- [Device control for macOS](mac-device-control-overview.md) is now in general availability
 - Addressed an issue where a quick scan could not be started from the status menu on macOS 11 (Big Sur)
 - Other bug fixes
 

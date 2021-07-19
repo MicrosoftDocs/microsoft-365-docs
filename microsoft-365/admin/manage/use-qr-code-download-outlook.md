@@ -14,6 +14,7 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
+- AdminTemplateSet
 description: "Learn how to use a QR code to authenticate and download Outlook mobile."
 ---
 
