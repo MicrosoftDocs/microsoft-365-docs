@@ -42,7 +42,7 @@ The Defender PowerShell cmdlet helps in determining the following details:
     - Files per extension
     - Folders per path
 
-# Process for tuning performance
+## Process for tuning performance
 
 The process of tuning the performance of Microsoft Defender for Endpoint involves the following steps:
 
@@ -67,6 +67,7 @@ For information on how the above steps are executed as a process, see [Record sc
     `Get-MpPerformanceReport -Path <recording.etl> -TopFiles 10`
 
 You will see a list of results based on the PowerShell options selected.
+
 
 
     
