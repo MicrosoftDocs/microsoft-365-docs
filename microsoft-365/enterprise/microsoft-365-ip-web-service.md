@@ -126,7 +126,7 @@ This URI returns the latest version of the specified Office 365 service instance
 }
 ```
 
-Example 3 request URI: <https://endpoints.office.com/version/Worldwide?Format=CSV&amp;ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7>
+Example 3 request URI: <https://endpoints.office.com/version/Worldwide?Format=CSV&ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7>
 
 This URI shows output in CSV format. Example result:
 
@@ -135,7 +135,7 @@ instance,latest
 Worldwide,2018063000
 ```
 
-Example 4 request URI: <https://endpoints.office.com/version/Worldwide?AllVersions=true&amp;ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7>
+Example 4 request URI: <https://endpoints.office.com/version/Worldwide?AllVersions=true&ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7>
 
 This URI shows all prior versions that have been published for the Office 365 worldwide service instance. Example result:
 
