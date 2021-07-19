@@ -17,6 +17,7 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
@@ -35,7 +36,7 @@ You may need to change someone's email address and display name if, for example,
 
 If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](../../business-video/index.yml).
 
-You must be a [global admin](about-admin-roles.md) to do these steps.
+You must be a [global admin](about-admin-roles.md) to complete these steps.
 
 ## Change a user's email address
 
@@ -59,7 +60,7 @@ You must be a [global admin](about-admin-roles.md) to do these steps.
 
 1. Select the user's name, and then on the **Account** tab select **Manage username**.
 
-1. In the first box, type the first part of the new email address. If you added your own domain to Microsoft 365, choose the domain for the new email alias by using the drop-down list.
+1. In the first box, type the first part of the new email address. If you added your own domain to Microsoft 365, choose the domain for the new email alias by using the drop-down list. [Learn how to add a domain](../setup/add-domain.md).
 
 1. Select **Save changes**.
 
@@ -113,7 +114,7 @@ You must be a [global admin](about-admin-roles.md) to do these steps.
 
 ::: moniker range="o365-worldwide"
 
-1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.
+1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page. 
 
 ::: moniker-end
 
@@ -172,6 +173,7 @@ To learn how to change someone's username in Active Directory, in Windows Server
 
 ## Related content
 
-[Admins: Reset a password for one or more users](reset-passwords.md) (article)\
-[Add another email address to a user](../email/add-another-email-alias-for-a-user.md) (article)\
-[Create a shared mailbox](../email/create-a-shared-mailbox.md) (article)
+[Add a domain](../setup/add-domain.md)
+[Admins: Reset a password for one or more users](reset-passwords.md)
+[Add another email address to a user](../email/add-another-email-alias-for-a-user.md)
+[Create a shared mailbox](../email/create-a-shared-mailbox.md)
