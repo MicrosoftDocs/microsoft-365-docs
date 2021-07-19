@@ -34,7 +34,7 @@ ms.technology: mde
 
 ## Configure Microsoft Defender for Endpoint risk signals in app protection policy (MAM)
 
-Microsoft Defender for Endpoint can be configured to send threat signals to be used in App Protection Policies (APP, also known as MAM) on iOS/iPadOS. With this capability, you can use Microsoft Defender for Endpoint to protect access to corporate data from unenrolled devices as well.
+Microsoft Defender for Endpoint can be configured to send threat signals to be used in app protection policies (APP, also known as MAM) on iOS/iPadOS. With this capability, you can use Microsoft Defender for Endpoint to protect access to corporate data from unenrolled devices as well.
 
 Steps to setup app protection policies with Microsoft Defender for Endpoint are as below:
 
