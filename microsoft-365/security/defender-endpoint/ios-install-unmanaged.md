@@ -36,7 +36,7 @@ ms.technology: mde
 
 Microsoft Defender for Endpoint can be configured to send threat signals to be used in app protection policies (APP, also known as MAM) on iOS/iPadOS. With this capability, you can use Microsoft Defender for Endpoint to protect access to corporate data from unenrolled devices as well.
 
-Steps to setup app protection policies with Microsoft Defender for Endpoint are as below:
+Steps to setup app protection policies with Microsoft Defender for Endpoint are as follows:
 
 1. Set up the connection from your Microsoft Endpoint Manager tenant to Microsoft Defender for Endpoint. In [Microsoft Endpoint manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Tenant Administration** > **Connectors and tokens** > **Microsoft Defender for Endpoint** (under Cross platform) or **Endpoint Security** > **Microsoft Defender for Endpoint** (under Setup) and turn on the toggles under **App Protection Policy Settings for iOS**.
 1. Select Save. You should see **Connection status** is now set to **Enabled**.
