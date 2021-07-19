@@ -42,7 +42,6 @@ ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 3. [Add Defender for Endpoint to the exclusion list for your existing solution](#add-microsoft-defender-for-endpoint-to-the-exclusion-list-for-your-existing-solution).
 4. [Add your existing solution to the exclusion list for Microsoft Defender Antivirus](#add-your-existing-solution-to-the-exclusion-list-for-microsoft-defender-antivirus).
 5. [Set up your device groups, device collections, and organizational units](#set-up-your-device-groups-device-collections-and-organizational-units).
-6. [Configure antimalware policies and real-time protection](#configure-antimalware-policies-and-real-time-protection).
 
 
 ## Reinstall/enable Microsoft Defender Antivirus on your endpoints
