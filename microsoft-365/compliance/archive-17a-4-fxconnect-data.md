@@ -14,7 +14,7 @@ ms.collection: M365-security-compliance
 description: "Learn how to set up and use a 17a-4 FX Connect DataParser connector to import and archive FX Connect data in Microsoft 365."
 ---
 
-# Set up a connector to archive FX Connect data (preview)
+# Set up a connector to archive data from FX Connect
 
 Use the [FX Connect DataParser](https://www.17a-4.com/dataparser-roadmap/) from 17a-4 LLC to import and archive data from FX Connect to user mailboxes in your Microsoft 365 organization. The DataParser includes a FX Connect connector that's configured to capture items from a third-party data source and import those items to Microsoft 365. The FX Connect DataParser connector converts FX Connect data to an email message format and then imports those items to user mailboxes in Microsoft 365.
 
