@@ -202,7 +202,7 @@ Use the **Group** control in the command bar of a review set to view Teams conte
 > [!NOTE]
 > Cloud attachments are grouped with the conversations they appear in. This grouping is accomplished by assigning the same **FamilyId** as the transcript file of the message the file was attached to and the same **ConversationId** as the conversation the message appeared in. This means multiple copies of cloud attachments may be added to the review set if they were attached to different conversations.
 
-#### Tip for viewing transcript files for conversations
+#### Viewing transcript files for conversations
 
 When viewing transcript files in a review set, some of the messages are highlighted in purple. The messages that are highlighted depend on which custodian copy of the transcript you're viewing. For example, in a 1:1 chat between User4 and User2, the messages posted by User4 are highlighted in purple when you view the transcript collected from User4's mailbox. When you view User2's transcript of the same conversation, messages posted by User2 are highlighted in purple. This highlighting behavior is based on the same Teams client experience, where a user's posts are highlighted in purple in the Teams client.
 
