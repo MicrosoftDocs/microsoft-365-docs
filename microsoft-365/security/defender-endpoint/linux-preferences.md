@@ -493,7 +493,7 @@ The following configuration profile contains entries for all settings described 
          }
       ],
       "allowedThreats":[
-         "EICAR-Test-File (not a virus)"
+         "<EXAMPLE DO NOT USE>EICAR-Test-File (not a virus)"
       ],
       "disallowedThreatActions":[
          "allow",

@@ -110,6 +110,7 @@ Retention policies can be applied to the following locations:
 - Exchange public folders
 - Teams channel messages
 - Teams chats
+- Teams private channel messages
 - Yammer community messages
 - Yammer user messages
 
