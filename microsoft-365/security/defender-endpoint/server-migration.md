@@ -30,14 +30,14 @@ ms.technology: mde
 > [!NOTE]
 > Always ensure Microsoft Defender Antivirus is fully updated on Windows Server 2016 before proceeding. The platform version must be on the June 2021 release (4.18.2106.6 or greater).
 
-In September 2021, we released a new version of Microsoft Defender for Endpoint for Windows Server 2012 R2 and Windows Server 2016. This article contains high-level instructions for various possible migration scenarios from the previous to the current solution. These high-level steps are intended as guidelines to be adjusted to the deployment and configuration tools available in your environment.
+These instructions apply to the new unified solution and installer package of Microsoft Defender for Endpoint for Windows Server 2012 R2 and Windows Server 2016. This article contains high-level instructions for various possible migration scenarios from the previous to the current solution. These high-level steps are intended as guidelines to be adjusted to the deployment and configuration tools available in your environment.
 
 > [!NOTE]
-> Full Microsoft Endpoint Configuration Manager (MECM) automation and integration to perform an automated upgrade will be available in the 2111 release of MECM. From the 2107 release, you CAN use the Endpoint Protection node for configuration as well as Group Policy, PowerShell, Microsoft Endpoint Manager tenant attach or local configuration. In addition, you can leverage existing functionality in MECM to automate manual upgrade steps; methods described below.
+> Full Microsoft Endpoint Configuration Manager (MECM) automation and integration to perform an automated upgrade will be available in the 2111 release of MECM. From the 2107 release, you CAN use the Endpoint Protection node for configuration as well as Group Policy, PowerShell, Microsoft Endpoint Manager tenant attach or local configuration. In addition, you can leverage existing functionality in MECM to automate manual upgrade steps; methods for which are described below.
 
 ## Installer script
 
-To facilitate upgrades when Microsoft Endpoint Manager or Azure Defender* are not in use or not yet available to perform the upgrade, you can use this [upgrade script](https://github.com/microsoft/mdefordownlevelserver). It will automate the following required steps:
+To facilitate upgrades when Microsoft Endpoint Configuration Manager or Azure Defender are not in use or not yet available to perform the upgrade, you can use this [upgrade script](https://github.com/microsoft/mdefordownlevelserver). It will automate the following required steps:
 
 1. Remove the OMS workspace for Microsoft Defender for Endpoint
 
@@ -53,11 +53,9 @@ To use the script, download it to an installation directory where you have also 
 
 EXAMPLE: .\install.ps1 -RemoveMMA <YOUR_WORKSPACE_ID> -OnboardingScript ".\WindowsDefenderATPOnboardingScript.cmd"
 
-*this script is not intended for use with machines that have been onboarded through Azure Defender
-
 ## Microsoft Endpoint Configuration Manager (MECM) migration scenarios 
 
-### If you are currently using MECM to manage your servers, including System Center Endpoint Protection (SCEP) and are running the Microsoft Monitoring Agent (MMA)-based sensor, and want to upgrade to the new Microsoft Defender for Endpoint BEFORE the 2111 release of MECM.
+### You are currently using MECM to manage your servers, including System Center Endpoint Protection (SCEP) and are running the Microsoft Monitoring Agent (MMA)-based sensor. You want to upgrade to the new Microsoft Defender for Endpoint unified solution.
 
 Migration steps: 
 
@@ -77,7 +75,7 @@ Migration steps:
 
 4. Create and/or assign (existing) endpoint protection policies to the collection.
 
-### If you are currently using MECM to manage your servers, are running a non-Microsoft antivirus solution and MMA-based sensor and want to upgrade to the new Microsoft Defender for Endpoint BEFORE the 2111 release of MECM.
+### You are currently using MECM to manage your servers, are running a non-Microsoft antivirus solution and the MMA-based sensor. You want to upgrade to the new Microsoft Defender for Endpoint.
 
 Migration steps:
 
@@ -103,6 +101,8 @@ appropriate. Make sure to remove passive mode configuration.*
 TIP: you can use the [installer script](server-migration.md#installer script) as part of your application to automate the above steps. To enable passive mode, apply the -Passive flag. EXAMPLE: .\install.ps1 -RemoveMMA <YOUR_WORKSPACE_ID> -OnboardingScript ".\WindowsDefenderATPOnboardingScript.cmd" -Passive
 
 *These steps only apply if you intend to replace your non-Microsoft antivirus solution. See [Better together: Microsoft Defender Antivirus and Microsoft Defender for Endpoint](why-use-microsoft-defender-antivirus.md).
+
+## Moving from Microsoft Endpoint Configuration Manager to Defender Security Management only
 
 If you want to move **from tenant attach to Defender for Endpoint attach**, make sure the server is a part of an Azure Active Directory group that has the required policies targeted then proceed to **uninstall** the Microsoft Endpoint Configuration Manager agent. 
 
@@ -133,7 +133,7 @@ If you want to move **from tenant attach to Defender for Endpoint attach**, make
 
 2. Install the Microsoft Defender for Endpoint for Windows Server 2012 R2 & 2016 package and **enable passive mode**. See [Install Microsoft Defender Antivirus using command line](configure-server-endpoints.md#install-microsoft-defender-for-endpoint-using-command-line).
 
-3. Apply the onboarding script, appropriate to your environmen, downloaded from [Microsoft Defender Security Center](https://securitycenter.microsoft.com). 
+3. Apply the onboarding script, appropriate to your environment, downloaded from [Microsoft Defender Security Center](https://securitycenter.microsoft.com). 
 
 4. Remove the non-Microsoft endpoint protection or endpoint detection and response solution, and remove passive mode.*
 
