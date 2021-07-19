@@ -73,7 +73,7 @@ You will see a list of results based on the PowerShell options selected.
 Parameters refer to the factors about which the Defender PowerShell cmdlet describes. Such parameters have two types of help information attached to them:
 
 - **Help**: The information presented as part of online help (`Get-Help`).
-- **Help message**: This is a **help**-related string wherein the embedded information is about the parameter or its value.
+- **Help message**: A **help**-related string wherein the embedded information is about the parameter or its value.
 
 Below are descriptions of the **Help**-**Help message** data for the following parameters:
 
