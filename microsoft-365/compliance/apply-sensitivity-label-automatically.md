@@ -416,7 +416,7 @@ When your tenant has the new enhancements, you'll see the following banner on th
 
 ![Banner to confirm a tenant has the new enhancements](../media/auto-labeling-updatedbanner.png)
 
-If you don't see this banner, refresh this page in a few days.
+If you don't see this banner, your tenant hasn't got the new enhancements but check again in a few days.
 
 > [!NOTE]
 > If you had any auto-labeling policies that were in simulation mode when your tenant received the new enhancements, you must re-run the simulation. If this scenario applies to you, you'll be prompted to select **Restart Simulation** when you review the simulation. If you don't restart the simulation, it won't complete.
