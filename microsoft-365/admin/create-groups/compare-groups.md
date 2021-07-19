@@ -37,10 +37,10 @@ In the **Groups** section of the Microsoft 365 admin center, you can create and 
 
 Some groups allow dynamic membership or email.
 
-|-|Microsoft 365 groups|Distribution groups|Security groups|Mail-enabled security groups|Shared mailboxes|
+||Microsoft 365 groups|Distribution groups|Security groups|Mail-enabled security groups|Shared mailboxes|
 |:----|:----|:----|:----|:----|:----|
-|Mail-enabled|Yes|Yes|No|Yes|Yes|
-|Dynamic membership in Azure AD|Yes|No|Yes|No|No|
+|**Mail-enabled**|Yes|Yes|No|Yes|Yes|
+|**Dynamic membership in Azure AD**|Yes|No|Yes|No|No|
 
 All of these group types can be used with Power Automate.
 
