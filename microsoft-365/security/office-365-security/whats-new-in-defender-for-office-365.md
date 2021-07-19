@@ -40,7 +40,7 @@ Learn more by watching [this video](https://www.youtube.com/watch?v=Tdz6KfruDGo&
 
 ## August 2021
 
-- [Admin review for reported messages](admin-review-reported-message.md): admins can now send templated messages back to end users after they review reported messages. This can be customized for your organization and based on your admin's verdict as well. 
+- [Admin review for reported messages](admin-review-reported-message.md): Admins can now send templated messages back to end users after they review reported messages. This can be customized for your organization and based on your admin's verdict as well. 
 
 ## June 2021
 
