@@ -24,11 +24,11 @@ In this article: learn how to set up **access to privacy management** for your o
 
 ## Sign up
 
-Privacy management will be available within the Microsoft 365 compliance center. The public preview of privacy management is available to organizations with E1, E3, and E5 Office 365 and Microsoft 365 enterprise licenses. Upon general availability of privacy management, organizations will need to obtain a new license.
+Privacy management is available within the Microsoft 365 compliance center. The public preview of privacy management is available to organizations with E1, E3, and E5 Office 365 and Microsoft 365 enterprise licenses. Upon general availability of privacy management, organizations will need to obtain a new license.
 
 Note that the public preview of privacy management will not be available to US Government Community (GCC) Moderate, GCC High, or Department of Defense (DoD) customers.
 
-To get started with the public preview, obtain the preview subscription from the admin center. If you do not yet have the license when you first select privacy management in the compliance center, you will be directed to the admin center to get started. We recommend that the global admin sign in and set user permissions as outlined below when visiting privacy management for the first time. If you don’t hold the required role to obtain the subscription or consent to the terms of using privacy management, you’ll be prompted to contact your global admin for assistance.
+To get started with the public preview, obtain the preview subscription from the admin center. If you do not yet have a subscription when you first select privacy management in the compliance center, you will be directed to the admin center to get started. We recommend that the global admin sign in and set user permissions as outlined below when visiting privacy management for the first time. If you don’t hold the required role to obtain the subscription or consent to the terms of using privacy management, you’ll be prompted to contact your global admin for assistance.
 
 Confirming that you would like to start using privacy management signals that you agree to the terms and the personal data evaluation process. You can review the provided links in full before proceeding.
 
