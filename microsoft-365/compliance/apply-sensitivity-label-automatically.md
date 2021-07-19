@@ -141,7 +141,7 @@ Also similarly to DLP policy configuration, you can choose whether a condition m
 
 ### Configuring trainable classifiers for a label
 
-This option is currently in preview. If you use this option, make sure you have published in your tenant at least one other sensitivity label that's configured for auto-labeling and the [sensitive info types option](#configuring-sensitive-info-types-for-a-label).
+If you use this option, make sure you have published in your tenant at least one other sensitivity label that's configured for auto-labeling and the [sensitive info types option](#configuring-sensitive-info-types-for-a-label).
 
 When you select the **Trainable classifiers** option, select one or more of the built-in trainable classifiers from Microsoft. If you've created your own custom trainable classifiers, these are also available to select:
 
@@ -152,7 +152,7 @@ When you select the **Trainable classifiers** option, select one or more of the 
 
 For more information about these classifiers, see [Learn about trainable classifiers](classifier-learn-about.md).
 
-During the preview period for this option, the following apps support trainable classifiers for sensitivity labels:
+The following apps support trainable classifiers for sensitivity labels:
 
 - Microsoft 365 Apps for enterprise ([formerly Office 365 ProPlus](/deployoffice/name-change)) for Windows, now rolling out to the [Current Channel](/deployoffice/overview-update-channels#current-channel-overview) in version 2006 and later:
     - Word
