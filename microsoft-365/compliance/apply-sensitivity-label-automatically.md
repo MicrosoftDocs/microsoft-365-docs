@@ -414,8 +414,12 @@ The recent enhancements now rolling out for auto-labeling policies for OneDrive 
 
 When your tenant has the new enhancements, you'll see the following banner on the **Auto-labeling **tab:
 
+![Banner to confirm a tenant has the new enhancements](../media/auto-labeling-updatedbanner.png)
+
 > [!NOTE]
-> If you had any auto-labeling policies that were in simulation mode when your tenant received the new enhancements, you must re-run the simulation. If this scenario applies to you, you'll be prompted to select **Restart Simulation**. If you don't, the simulation won't complete.
+> If you had any auto-labeling policies that were in simulation mode when your tenant received the new enhancements, you must re-run the simulation. If this scenario applies to you, you'll be prompted to select **Restart Simulation** when you review the simulation. If you don't restart the simulation, it won't complete.
+> 
+> However, the enhancements still apply to any auto-labeling policies running without simulation and all new auto-labeling policies you create.
 
 ## Tips to increase labeling reach
 
