@@ -28,6 +28,8 @@ ms.prod: m365-security
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
+Allows cannot be added directly to the Tenant Allow/Block List. Use the admin submission process to add URL, file, and/or sender allows to the Tenant Allow/Block List. Microsoft doesn't let admins add allows directly, but determines what was blocked and provides an allow for you. In most cases, the allows are added to give the system some time and allow it naturally if warranted. In some cases, Microsoft manages the allow for you.
+
 ## Add allows using the Submissions portal 
 
 Allow files, URLs, and senders in the Submissions section of Microsoft 365 Defender. 

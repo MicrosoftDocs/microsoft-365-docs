@@ -157,6 +157,28 @@ To manage all allows and blocks, see [Add blocks in the Tenant Allow/Block List]
 
 4. When you're finished, click **Add**.
 
+## View block file or URL entries in the Tenant Allow/Block List
+
+To view block file or URL entries in the Tenant Allow/Block List, use the following syntax:
+
+```powershell
+Get-TenantAllowBlockListItems -ListType <FileHash | URL> [-Entry <FileHashValue | URLValue>] [<-ExpirationDate Date | -NoExpiration>]
+```
+
+This example returns information for the specified file hash value.
+
+```powershell
+Get-TenantAllowBlockListItems -ListType FileHash -Entry "9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08"
+```
+
+This example returns all blocked URLs.
+
+```powershell
+Get-TenantAllowBlockListItems -ListType Url -Block
+```
+
+For detailed syntax and parameter information, see [Get-TenantAllowBlockListItems](/powershell/module/exchange/get-tenantallowblocklistitems).
+
 ## View spoofed sender entries
 
 To view spoofed sender entries in the Tenant Allow/Block List, use the following syntax:
