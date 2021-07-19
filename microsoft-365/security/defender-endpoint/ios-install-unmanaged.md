@@ -42,7 +42,7 @@ Steps to setup app protection policies with Microsoft Defender for Endpoint are 
 1. Select **Save**. You should see **Connection status** is now set to **Enabled**.
 1. Create the app protection policy: After your Microsoft Defender for Endpoint connector setup is complete, navigate to **Apps** > **App protection policies** (under Policy) to create a new policy or update an existing one.
 1. Select the platform, **Apps, Data protection, Access requirements** settings that your organization requires for your policy.
-1. Under **Conditional launch** > **Device conditions**, you will find the setting **Max allowed device threat level**. This will need to be configured to either Low, Medium, High, or Secured. The actions available to you will be **Block access** or **Wipe data**. You may see an informational dialog to make sure you have your connector set up prior to this setting take effect. If your connector is already set up, you may ignore this dialog.
+1. Under **Conditional launch** > **Device conditions**, you will find the setting **Max allowed device threat level**. This needs to be configured to either Low, Medium, High, or Secured. The actions available to you will be **Block access** or **Wipe data**. You may see an informational dialog to make sure you have your connector set up prior to this setting taking effect. If your connector is already set up, you may ignore this dialog.
 1. Finish with Assignments and save your policy.
 
 For more details on MAM or app protection policy, see [iOS app protection policy settings](/mem/intune/apps/app-protection-policy-settings-ios).
