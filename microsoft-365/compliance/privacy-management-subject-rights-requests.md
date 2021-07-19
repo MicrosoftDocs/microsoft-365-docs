@@ -42,7 +42,7 @@ To open a new request, see [Create a request](#create-a-request).
 
 ## Create a request
 
-Subject rights management administrators can use privacy management’s wizard to create requests. This wizard will guide you through the process of finding personal data about a data subject and fulfilling their request.
+Subject rights management administrators can use privacy management’s wizard to create requests. The wizard will guide you through the process of finding personal data about a data subject and fulfilling their request.
 
 The four main steps include the following.
 
