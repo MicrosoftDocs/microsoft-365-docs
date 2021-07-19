@@ -29,6 +29,10 @@ description: "Learn how to save the content of a former employee's mailbox."
 
 # Step 2 - Save the contents of a former employee's mailbox
 
+In this step, place a Litigation Hold or In-place Hold on the user or export their Outlook data to a .pst file.
+
+## Place hold or export user's data to a .pst file
+
 Once you've blocked a user from being able to log into your organization you can save the contents of their mailbox. There are two ways you can save the contents of the former employee's mailbox.
   
 1. Place a Litigation Hold or In-Place Hold on the mailbox before the deleting the user account. This is much more complicated than the second option but worth doing if: your Enterprise plan includes archiving and legal hold, litigation is a possibility, and you have a technically strong IT department.
@@ -42,3 +46,10 @@ Once you've blocked a user from being able to log into your organization you can
     **OR**
 
 2. Add the former employee's email address to your version of Outlook on Desktop, and then export the data to a .pst file. You can import the data to another email account as needed. Check out [Step 6 - Give another employee access to OneDrive and Outlook data](remove-former-employee-step-6.md).
+
+## Related content
+
+[Restore a user](restore-user.md) (article)\
+[Add a new employee to Microsoft 365](add-new-employee.md) (article)\
+[Assign licenses to users](../manage/assign-licenses-to-users.md) (article)\
+[Unassign licenses from users](../manage/remove-licenses-from-users.md) (article)
