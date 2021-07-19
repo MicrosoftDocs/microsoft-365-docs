@@ -96,7 +96,7 @@ If you plan to manage your machines using a management tool, you can onboard dev
 For more information, see [Onboard Windows 10 devices using Configuration Manager](configure-endpoints-sccm.md).
 
 > [!WARNING]
-> If you plan to use [Attack Surface reduction Rules](attack-surface-reduction.md), note that the rule “[Block process creations originating from PSExec and WMI commands](attack-surface-reduction.md#block-process-creations-originating-from-psexec-and-wmi-commands)" should not be used, because that rule is incompatible with management through Microsoft Endpoint Configuration Manager. The rule blocks WMI commands that the Configuration Manager client uses to function correctly. 
+> If you plan to use [Attack Surface reduction Rules](attack-surface-reduction-rules.md), note that the rule “[Block process creations originating from PSExec and WMI commands](attack-surface-reduction-rules.md#block-process-creations-originating-from-psexec-and-wmi-commands)" should not be used, because that rule is incompatible with management through Microsoft Endpoint Configuration Manager. The rule blocks WMI commands that the Configuration Manager client uses to function correctly.
 
 > [!TIP]
 > After onboarding the device, you can choose to run a detection test to verify that the device is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Microsoft Defender for Endpoint device](run-detection-test.md). 
