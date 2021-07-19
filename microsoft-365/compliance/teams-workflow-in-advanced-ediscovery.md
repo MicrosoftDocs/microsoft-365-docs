@@ -204,7 +204,17 @@ Use the **Group** control in the command bar of a review set to view Teams conte
 
 #### Tip for viewing transcript files for conversations
 
-When viewing transcript files in a review set, some of the messages are highlighted in purple. The messages that are highlighted depend on which custodian copy of the transcript you're viewing. For example, in a 1:1 chat between User1 and User2, the messages posted by User1 are highlighted in purple when you view the transcript collected from User1's mailbox. When you view User2's transcript of the same conversation, messages posted by User2 are highlighted in purple. This highlighting behavior is based on the same Teams client experience, where a user's posts are highlighted in purple in the Teams client.
+When viewing transcript files in a review set, some of the messages are highlighted in purple. The messages that are highlighted depend on which custodian copy of the transcript you're viewing. For example, in a 1:1 chat between User4 and User2, the messages posted by User4 are highlighted in purple when you view the transcript collected from User4's mailbox. When you view User2's transcript of the same conversation, messages posted by User2 are highlighted in purple. This highlighting behavior is based on the same Teams client experience, where a user's posts are highlighted in purple in the Teams client.
+
+The following screenshots show an example of conversation in the Teams client and the transcript file of the same conversation in the review set. The purple highlighting in the transcript file indicates that the transcript was collected from User2's mailbox.
+
+##### Conversation in Teams client
+
+![Conversation shown in the transcript file in the review set](..\media\TeamsClient1.png)
+
+##### Conversation in transcript file
+
+![Same conversation shown in Teams client](..\media\TeamsTranscript1.png)
 
 ### Transcript conversation threading
 
