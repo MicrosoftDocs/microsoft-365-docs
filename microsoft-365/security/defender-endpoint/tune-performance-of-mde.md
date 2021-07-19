@@ -24,7 +24,7 @@ The performance of Microsoft Defender for Endpoint needs to be tuned for the fol
 
 - Microsoft Defender for Endpoint scans specific files and folders.
 - These files and folders have a need to be analyzed for the following purpose:
-    - whether these files and folders have the potential to cause issues. For information on how to find out this possibility, see [Defender PowerShell cmdlet](#defender-powershell-cmdlet).
+    - Whether these files and folders have the potential to cause issues. For information on how to find out this possibility, see [Defender PowerShell cmdlet](#defender-powershell-cmdlet).
 - The files and folders being scanned should turn out to be error free
 
 ## Defender PowerShell cmdlet
