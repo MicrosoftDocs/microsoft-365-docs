@@ -56,31 +56,38 @@ If you're using Azure Active Directory, see the [Remove-MsolUser](/powershell/mo
 ## What you need to know about terminating an employee's email session
 
 Here's information about how to get an employee out of email (Exchange).
-  
-|||
+
+<br>
+
+****
+
+|What you can do|How you do it|
 |:-----|:-----|
-|**What you can do** <br/> |**How you do it** <br/> |
-|Terminate a session (such as Outlook on the web, Outlook, Exchange active sync, etc.) and force to open a new session  <br/> |Reset password  <br/> |
-|Terminate a session and block access to future sessions (for all protocols)  <br/> |Disable the account. For example, (in the Exchange admin center or using PowerShell):  <br/>  `Set-Mailbox user@contoso.com -AccountDisabled:$true` <br/> |
-|Terminate the session for a particular protocol (such as ActiveSync)  <br/> |Disable the protocol. For example, (in the Exchange admin center or using PowerShell):  <br/>  `Set-CASMailbox user@contoso.com -ActiveSyncEnabled:$false` <br/> |
+|Terminate a session (such as Outlook on the web, Outlook, Exchange active sync, etc.) and force to open a new session|Reset password|
+|Terminate a session and block access to future sessions (for all protocols)|Disable the account. For example, (in the Exchange admin center or using PowerShell): <p>  `Set-Mailbox user@contoso.com -AccountDisabled:$true`|
+|Terminate the session for a particular protocol (such as ActiveSync)|Disable the protocol. For example, (in the Exchange admin center or using PowerShell): <p>  `Set-CASMailbox user@contoso.com -ActiveSyncEnabled:$false`|
+|
 
 The above operations can be done in three places:
   
-|||
-|:-----|:-----|
-|**If you terminate the session here** <br/> |**How long it takes** <br/> |
-|In the Exchange admin center or using PowerShell  <br/> |Expected delay is within 30 min  <br/> |
-|In the Azure Active Directory admin center  <br/> |Expected delay is 60 min  <br/> |
-|In an on-premises environment  <br/> |Expected delay is 3 hours or more  <br/> |
+<br>
+
+****
+
+|If you terminate the session here|How long it takes|
+|---|---|
+|In the Exchange admin center or using PowerShell|Expected delay is within 30 min|
+|In the Azure Active Directory admin center|Expected delay is 60 min|
+|In an on-premises environment|Expected delay is 3 hours or more|
+|
 
 ### How to get fastest response for account termination
 
- **Fastest**: Use the Exchange admin center (use PowerShell) or Azure Active Directory admin center. In an on-premises environment, it can take several hours to sync the change through DirSync.
+**Fastest**: Use the Exchange admin center (use PowerShell) or Azure Active Directory admin center. In an on-premises environment, it can take several hours to sync the change through DirSync.
   
- **Fastest for a user with presence on-premises and in the Exchange Datacenter**: Terminate the session using Azure Active Directory admin center/Exchange admin center AND make the change in the on-premises environment as well. Otherwise, the change in Azure Active Directory admin center/Exchange admin center will be overwritten by DirSync.
+**Fastest for a user with presence on-premises and in the Exchange Datacenter**: Terminate the session using Azure Active Directory admin center/Exchange admin center AND make the change in the on-premises environment as well. Otherwise, the change in Azure Active Directory admin center/Exchange admin center will be overwritten by DirSync.
   
-## Related articles
+## Related content
 
-[Restore a user](restore-user.md)
-
-[Reset passwords](reset-passwords.md)
+[Restore a user](restore-user.md) (article)/
+[Reset passwords](reset-passwords.md) (article)

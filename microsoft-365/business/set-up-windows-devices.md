@@ -22,6 +22,7 @@ ms.custom:
 - seo-marvel-mar
 - AdminSurgePortfolio
 - okr_smb
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150

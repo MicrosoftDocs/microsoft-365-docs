@@ -54,7 +54,7 @@ As part of the process of creating a device group, you'll:
 
 ## Create a device group
 
-1. In the navigation pane, select **Settings** > **Device groups**.
+1. In the navigation pane, select **Settings** > **Endpoints** > **Permissions** > **Device groups**.
 
 2. Click **Add device group**.
 
@@ -106,4 +106,4 @@ For more information on linking to device groups definitions, see [Device groups
 
 - [Manage portal access using role-based based access control](rbac.md)
 - [Create and manage device tags](machine-tags.md)
-- [Get list of tenant device groups using Graph API](https://docs.microsoft.com/graph/api/device-list-memberof)
+- [Get list of tenant device groups using Graph API](/graph/api/device-list-memberof)

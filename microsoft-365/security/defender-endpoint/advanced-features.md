@@ -97,7 +97,7 @@ This feature enables you to block potentially malicious files in your network. B
 
 To turn **Allow or block** files on:
 
-1. In the navigation pane, select **Settings** > **Advanced features** > **Allow or block file**.
+1. In the navigation pane, select **Settings** > **Endpoints** > **General** > **Advanced features** > **Allow or block file**.
 
 1. Toggle the setting between **On** and **Off**.
 
@@ -157,12 +157,12 @@ The integration with Microsoft Defender for Identity allows you to pivot directl
 
 This feature is only available if you have an active Office 365 E5 or the Threat Intelligence add-on. For more information, see the Office 365 Enterprise E5 product page.
 
-When you turn this feature on, you'll be able to incorporate data from Microsoft Defender for Office 365 into Microsoft Defender Security Center to conduct a comprehensive security investigation across Office 365 mailboxes and Windows devices.
+When you turn this feature on, you'll be able to incorporate data from Microsoft Defender for Office 365 into Microsoft 365 Defender to conduct a comprehensive security investigation across Office 365 mailboxes and Windows devices.
 
 > [!NOTE]
 > You'll need to have the appropriate license to enable this feature.
 
-To receive contextual device integration in Office 365 Threat Intelligence, you'll need to enable the Defender for Endpoint settings in the Security & Compliance dashboard. For more information, see [Threat investigation and response](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-ti).
+To receive contextual device integration in Office 365 Threat Intelligence, you'll need to enable the Defender for Endpoint settings in the Security & Compliance dashboard. For more information, see [Threat investigation and response](/microsoft-365/security/office-365-security/office-365-ti).
 
 ## Microsoft Threat Experts - Targeted Attack Notifications
 
@@ -207,7 +207,7 @@ After configuring the [Security policy violation indicators](/microsoft-365/comp
 
 ## Microsoft Intune connection
 
-Defender for Endpoint can be integrated with [Microsoft Intune](https://docs.microsoft.com/intune/what-is-intune) to [enable device risk-based conditional access](https://docs.microsoft.com/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune). When you [turn on this feature](configure-conditional-access.md), you'll be able to share Defender for Endpoint device information with Intune, enhancing policy enforcement.
+Defender for Endpoint can be integrated with [Microsoft Intune](/intune/what-is-intune) to [enable device risk-based conditional access](/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune). When you [turn on this feature](configure-conditional-access.md), you'll be able to share Defender for Endpoint device information with Intune, enhancing policy enforcement.
 
 > [!IMPORTANT]
 > You'll need to enable the integration on both Intune and Defender for Endpoint to use this feature. For more information on specific steps, see [Configure Conditional Access in Defender for Endpoint](configure-conditional-access.md).
@@ -215,7 +215,7 @@ Defender for Endpoint can be integrated with [Microsoft Intune](https://docs.mic
 This feature is only available if you have the following:
 
 - A licensed tenant for Enterprise Mobility + Security E3, and Windows E5 (or Microsoft 365 Enterprise E5)
-- An active Microsoft Intune environment, with Intune-managed Windows 10 devices [Azure AD-joined](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join/).
+- An active Microsoft Intune environment, with Intune-managed Windows 10 devices [Azure AD-joined](/azure/active-directory/devices/concept-azure-ad-join/).
 
 
 ### Conditional Access policy
@@ -223,7 +223,7 @@ This feature is only available if you have the following:
 When you enable Intune integration, Intune will automatically create a classic Conditional Access (CA) policy. This classic CA policy is a prerequisite for setting up status reports to Intune. It should not be deleted.
 
 > [!NOTE]
-> The classic CA policy created by Intune is distinct from modern [Conditional Access policies](https://docs.microsoft.com/azure/active-directory/conditional-access/overview/), which are used for configuring endpoints.
+> The classic CA policy created by Intune is distinct from modern [Conditional Access policies](/azure/active-directory/conditional-access/overview/), which are used for configuring endpoints.
 
 
 ## Device discovery

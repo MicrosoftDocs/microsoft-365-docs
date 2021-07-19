@@ -17,24 +17,22 @@ ms.collection:
   - M365-security-compliance
   - m365solution-migratetomdatp
   - m365solution-overview
+  - m365solution-mcafeemigrate
+  - m365solution-symantecmigrate
 ms.topic: conceptual
 ms.custom: migrationguides
-ms.date: 05/20/2021
+ms.date: 06/14/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ms.technology: mde
 ---
 
 # Make the switch from non-Microsoft endpoint protection to Microsoft Defender for Endpoint
 
-If you are thinking about switching from your non-Microsoft endpoint protection to [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) (Defender for Endpoint), you're in the right place. Use this article as a guide.
+If you are thinking about switching from a non-Microsoft endpoint protection solution to [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) (Defender for Endpoint), you're in the right place. Use this article as a guide.
 
 :::image type="content" source="images/nonms-mde-migration.png" alt-text="Overview of migrating to Defender for Endpoint":::
 
-When you make the switch to Defender for Endpoint, you begin with your non-Microsoft solution operating in active mode, configure Defender for Endpoint in passive mode, onboard to Defender for Endpoint, set Defender for Endpoint to active mode, and then remove the non-Microsoft solution.
-
-> [!TIP]
-> - If you're currently using McAfee Endpoint Security (McAfee), see [Migrate from McAfee to Defender for Endpoint](mcafee-to-microsoft-defender-migration.md).
-> - If you're currently using Symantec Endpoint Protection (Symantec), see [Migrate from Symantec to Defender for Endpoint](symantec-to-microsoft-defender-endpoint-migration.md).
+When you make the switch to Defender for Endpoint, you begin with your non-Microsoft solution operating in active mode. Then, you configure Defender for Endpoint in passive mode, and onboard your devices to Defender for Endpoint. Next, you set Defender for Endpoint to active mode. Finally, you remove the non-Microsoft solution.
 
 ## The migration process
 
@@ -44,7 +42,7 @@ The process of migrating to Defender for Endpoint can be divided into three phas
 
 |Phase |Description |
 |--|--|
-|[Prepare for your migration](switch-to-microsoft-defender-prepare.md) |During [the **Prepare** phase](switch-to-microsoft-defender-prepare.md): <p>1. Update your organization's devices. <p>2. Get Defender for Endpoint. <p>3. Plan your roles and permissions, and grant access to the Microsoft Defender Security Center. <p>4. Configure your device proxy and internet settings to enable communication between your organization's devices and Defender for Endpoint. |
+|[Prepare for your migration](switch-to-microsoft-defender-prepare.md) |During [the **Prepare** phase](switch-to-microsoft-defender-prepare.md): <p>1. Update your organization's devices. <p>2. Get Defender for Endpoint. <p>3. Plan your roles and permissions, and grant access to the Microsoft 365 Defender portal. <p>4. Configure your device proxy and internet settings to enable communication between your organization's devices and Defender for Endpoint. |
 |[Set up Defender for Endpoint](switch-to-microsoft-defender-setup.md) |During [the **Setup** phase](switch-to-microsoft-defender-setup.md): <p>1. Enable/reinstall Microsoft Defender Antivirus. <p>2. Configure Defender for Endpoint. <p>3. Add Defender for Endpoint to the exclusion list for your existing solution. <p>4. Add your existing solution to the exclusion list for Microsoft Defender Antivirus. <p>5. Set up your device groups, collections, and organizational units. <p>6. Configure your antimalware policies and real-time protection settings.|
 |[Onboard to Defender for Endpoint](switch-to-microsoft-defender-onboard.md) |During [the **Onboard** phase](switch-to-microsoft-defender-onboard.md): <p>1. Onboard your devices to Defender for Endpoint. <p>2. Run a detection test. <p>3. Confirm that Microsoft Defender Antivirus is running in passive mode. <p>4. Get updates for Microsoft Defender Antivirus. <p>5. Uninstall your existing endpoint protection solution. <p>6. Make sure that Defender for Endpoint working correctly. |
 

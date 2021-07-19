@@ -90,7 +90,7 @@ For security reasons, the package used to Offboard devices will expire 30 days a
 
 
 ## Monitor device configuration
-You can follow the different verification steps in the [Troubleshoot onboarding issues]((https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding) to verify that the script completed successfully and the agent is running.
+You can follow the different verification steps in the [Troubleshoot onboarding issues]((/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding) to verify that the script completed successfully and the agent is running.
 
 Monitoring can also be done directly on the portal, or by using the different deployment tools.
 
