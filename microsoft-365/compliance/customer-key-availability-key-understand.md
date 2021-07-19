@@ -60,7 +60,7 @@ Microsoft employs a defense-in-depth strategy to prevent malicious actors from i
 
 Microsoft 365 is built to prevent misuse of the availability key. The application layer is the only method through which keys, including the availability key, can be used to encrypt and decrypt data. Only Microsoft 365 service code has the ability to interpret and traverse the key hierarchy for encryption and decryption activities. Logical isolation exists between the storage locations of Customer Keys, availability keys, other hierarchical keys, and customer data. This isolation mitigates the risk of data exposure in the event one or more locations are compromised. Each layer in the hierarchy has built in 24x7 intrusion detection capabilities to protect data and secrets stored.
 
-Access controls are implemented to prevent unauthorized access to internal systems, including availability key secret stores. Microsoft engineers don't have direct access to the availability key secret stores. For additional detail on access controls, review [Administrative Access Controls in Microsoft 365](/Office365/securitycompliance/office-365-administrative-access-controls-overview).
+Access controls are implemented to prevent unauthorized access to internal systems, including availability key secret stores. Microsoft engineers don't have direct access to the availability key secret stores. For additional detail on access controls, review [Administrative Access Controls in Microsoft 365](/compliance/office-365-administrative-access-controls-overview).
 
 Technical controls prevent Microsoft personnel from logging into highly-privileged service accounts, which might otherwise be used by attackers to impersonate Microsoft services. For example, these controls prevent interactive logon.
 
