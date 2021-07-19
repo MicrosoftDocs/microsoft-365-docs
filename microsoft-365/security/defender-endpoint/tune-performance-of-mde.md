@@ -68,6 +68,86 @@ For information on how the above steps are executed as a process, see [Record sc
 
 You will see a list of results based on the PowerShell options selected.
 
+## Parameter help strings
+
+Parameters refer to the factors about which the Defender PowerShell cmdlet describes. Such parameters have two types of help information attached to them:
+
+- **Help**: The information presented as part of online help (`Get-Help`).
+- **Help message**: This is a **help**-related string wherein the embedded information is about the parameter or its value.
+
+Below are descriptions of the **Help**-**Help message** data for the following parameters:
+
+1. **RecordTo**
+    
+    - **Help**: Specifies the literal path to the Microsoft Defender Antivirus performance recording that is to be produced.
+    - **Help message**: Literal path to the performance recording that is to be produced.
+    
+1. **Path**
+
+    - **Help**: Specifies a path to one or more files or directories containing Microsoft Defender Antivirus performance recordings. 
+    
+> [!NOTE]
+> Note that wildcards are permitted.
+
+   - **Help message**: Path to one or more locations.
+
+1. **LiteralPath**
+
+    - **Help**: Specifies a path to one or more files or directories containing Microsoft Defender Antivirus performance recordings.
+
+     Unlike the **Path** parameter, the value of the **LiteralPath** parameter is used exactly as it is typed. No characters are interpreted as wildcards. If the path includes "escape" characters, enclose it in single quotation marks. Single quotation marks tell Windows PowerShell not to interpret any characters as "escape sequences".
+
+    - **Help message**: Literal path to one or more locations.
+
+1. **TopPaths**
+
+    - **Help**: Specifies number of top paths to output, sorted by "Duration (ms)".
+    
+1. **TopFiles**
+
+    - **Help**: Specifies number of top files to output, sorted by "Duration (ms)".
+
+1. **TopProcessesPerFile**
+
+    - **Help**: Specifies number of top processes to output per each top file, sorted by "Duration (ms)". 
+
+1. **TopExtensions**
+
+    - **Help**: Specifies number of top extensions to output, sorted by "Duration (ms)".
+
+1. **TopPathsPerExtension**
+
+    - **Help**: Specifies number of top paths to output per each top extension, sorted by "Duration (ms)".
+    
+1. **TopFilesPerExtension**
+
+    - **Help**: Specifies number of top files to output per each top extension, sorted by "Duration (ms)".
+
+1. **TopProcesses**
+
+    - **Help**: Specifies number of top processes to output, sorted by "Duration (ms)".
+    
+1. **TopPathsPerProcess**
+
+    - **Help**: Specifies number of top paths to output for each top process, sorted by "Duration (ms)".
+
+1. **TopFilesPerProcess**
+
+    - **Help**: Specifies number of top files to output for each top process, sorted by "Duration (ms)".
+    
+1. **AllScans**
+
+    - **Help**: Output all scans, sorted by "Duration (ms)".
+    
+1. **Recurse**
+
+    - **Help**: Specifies whether to recursively scan any directories provided on the **Path** or **LiteralPath** arguments.
+
+> [!IMPORTANT]
+> THis parameter may not be included in the initial release.
+
+
+
 
 
     
