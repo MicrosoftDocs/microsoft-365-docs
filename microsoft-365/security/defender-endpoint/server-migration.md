@@ -28,7 +28,7 @@ ms.technology: mde
 - Windows Server 2016
 
 > [!NOTE]
-> Always ensure Microsoft Defender Antivirus is fully updated on Windows Server 2016 before proceeding. The platform version must be on the June 2021 release (4.18.2106.5 or greater).
+> Always ensure Microsoft Defender Antivirus is fully updated on Windows Server 2016 before proceeding. The platform version must be on the June 2021 release (4.18.2106.6 or greater).
 
 In September 2021, we released a new version of Microsoft Defender for Endpoint for Windows Server 2012 R2 and Windows Server 2016. This article contains high-level instructions for various possible migration scenarios from the previous to the current solution. These high-level steps are intended as guidelines to be adjusted to the deployment and configuration tools available in your environment.
 
@@ -37,7 +37,7 @@ In September 2021, we released a new version of Microsoft Defender for Endpoint 
 
 ## Installer script
 
-To facilitate upgrades when Microsoft Endpoint Manager or Azure Defender* are not in use or available to perform the upgrade, you can use this upgrade script(link to Github tbc). It will automate the following required steps:
+To facilitate upgrades when Microsoft Endpoint Manager or Azure Defender* are not in use or not yet available to perform the upgrade, you can use this [upgrade script](https://github.com/microsoft/mdefordownlevelserver). It will automate the following required steps:
 
 1. Remove the OMS workspace for Microsoft Defender for Endpoint
 
@@ -47,7 +47,7 @@ To facilitate upgrades when Microsoft Endpoint Manager or Azure Defender* are no
 
 4. Install Microsoft Defender for Endpoint
 
-5. Apply the onboarding script **for use with Group Policy** downloaded from Microsoft Defender Security Center(https://securitycenter.microsoft.com).
+5. Apply the onboarding script **for use with Group Policy** downloaded from [Microsoft Defender Security Center](https://securitycenter.microsoft.com).
 
 To use the script, download it to an installation directory where you have also placed the installation and onboarding packages (see [Configure server endpoints](configure-server-endpoints.md).
 
@@ -68,10 +68,10 @@ Migration steps:
    2. Uninstall SCEP.
    3. Install the [prerequisites](configure-server-endpoints.md#prerequisites) where applicable.
    4. Install Microsoft Defender for Endpoint (see [Configure server endpoints](configure-server-endpoints.md)).
-   5. Apply the onboarding package. 
+   5. Apply the onboarding script **for use with Group Policy** downloaded from [Microsoft Defender Security Center](https://securitycenter.microsoft.com). 
 
    > [!TIP]
-> You can use the [installer script](server-migration.md#installer-script) as part of your application to automate the above steps.
+   > You can use the [installer script](server-migration.md#installer-script) as part of your application to automate the above steps.
 
 3. Deploy the application to the new collection.
 
@@ -91,7 +91,7 @@ Migration steps:
    1. Remove the MMA workspace configuration for Microsoft Defender for Endpoint. See [Remove a workspace using PowerShell](/azure/azure-monitor/agents/agent-manage). 
    2. Install the [prerequisites](configure-server-endpoints.md#prerequisites) where applicable.
    3. Install the Microsoft Defender for Endpoint for Windows Server 2012 R2 and 2016 package and **enable passive mode**. See [Install Microsoft Defender Antivirus using command line](configure-server-endpoints.md#install-microsoft-defender-for-endpoint-using-command-line).
-   4. Apply the onboarding package. 
+   4. Apply the onboarding script **for use with Group Policy** downloaded from [Microsoft Defender Security Center](https://securitycenter.microsoft.com).
 
 5. Apply updates.
 
@@ -120,7 +120,7 @@ If you want to move **from tenant attach to Defender for Endpoint attach**, make
 
 4. Install Microsoft Defender for Endpoint (see [Configure server endpoints](configure-server-endpoints.md).)
 
-5. Apply the onboarding package.
+5. Apply the onboarding script **for use with Group Policy** downloaded from [Microsoft Defender Security Center](https://securitycenter.microsoft.com). 
 
 6. Create and apply policies using Group Policy, PowerShell, or Microsoft Endpoint Manager for Defender Security Management.
 
@@ -133,7 +133,7 @@ If you want to move **from tenant attach to Defender for Endpoint attach**, make
 
 2. Install the Microsoft Defender for Endpoint for Windows Server 2012 R2 & 2016 package and **enable passive mode**. See [Install Microsoft Defender Antivirus using command line](configure-server-endpoints.md#install-microsoft-defender-for-endpoint-using-command-line).
 
-3. Apply the onboarding package.
+3. Apply the onboarding script, appropriate to your environmen, downloaded from [Microsoft Defender Security Center](https://securitycenter.microsoft.com). 
 
 4. Remove the non-Microsoft endpoint protection or endpoint detection and response solution, and remove passive mode.*
 
@@ -142,10 +142,10 @@ If you want to move **from tenant attach to Defender for Endpoint attach**, make
 > [!TIP]
 > You can use the [installer script](server-migration.md#installer-script) to help automate steps 1 through 4. To enable passive mode, apply the -Passive flag. EXAMPLE: `.\install.ps1 -OnboardingScript ".\WindowsDefenderATPOnboardingScript.cmd" -Passive`
 
-*This step only applies if you intend to replace your non-Microsoft antivirus solution. See [Better together: Microsoft Defender Antivirus and Microsoft Defender for Endpoint](why-use-microsoft-defender-antivirus.md). 
+*This step only applies if you intend to replace your non-Microsoft antivirus solution. We recommend using Microsoft Defender Antivirus, included  in Microsoft Defender for Endpoint, to provide the full set of capabilities. See [Better together: Microsoft Defender Antivirus and Microsoft Defender for Endpoint](why-use-microsoft-defender-antivirus.md). 
 
 ## Azure Defender scenarios
 
-### You're using Azure Defender, Microsoft Monitoring Agent (MMA) and Microsoft Antimalware for Azure/SCEP are installed and you want to upgrade.
+### You're using Azure Defender. The Microsoft Monitoring Agent (MMA) and Microsoft Antimalware for Azure/SCEP are installed and you want to upgrade.
 
-If you're using Azure Defender, you can automate the upgrade process. See <TBD LINK>.
+If you're using Azure Defender, you can leverage the automated upgrade process. See [Protect your endpoints with Security Center's integrated EDR solution: Microsoft Defender for Endpoint](https://docs.microsoft.com/en-us/azure/security-center/security-center-wdatp#enable-the-microsoft-defender-for-endpoint-integration).
