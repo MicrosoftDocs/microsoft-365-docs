@@ -412,7 +412,7 @@ The recent enhancements now rolling out for auto-labeling policies for OneDrive 
 
 ### How to determine whether your tenant has the new enhancements
 
-When your tenant has the new enhancements, you'll see the following banner on the **Auto-labeling **tab:
+When your tenant has the new enhancements, you'll see the following banner on the **Auto-labeling** tab:
 
 ![Banner to confirm a tenant has the new enhancements](../media/auto-labeling-updatedbanner.png)
 
