@@ -90,7 +90,7 @@ HTTP GET  https://api.securitycenter.microsoft.com/api/alerts?$top=10&$expand=ev
             ],
             "relatedUser": {
                 "userName": "temp123",
-                "domainName": "MIDDLEEAST"
+                "domainName": "DOMAIN"
             },
             "comments": [
                 {
@@ -120,8 +120,8 @@ HTTP GET  https://api.securitycenter.microsoft.com/api/alerts?$top=10&$expand=ev
                     "registryHive": null,
                     "registryValueType": null,
                     "registryValue": null,
-                    "accountName": "eranb",
-                    "domainName": "MIDDLEEAST",
+                    "accountName": "name",
+                    "domainName": "DOMAIN",
                     "userSid": "S-1-5-21-11111607-1111760036-109187956-75141",
                     "aadUserId": "11118379-2a59-1111-ac3c-a51eb4a3c627",
                     "userPrincipalName": "temp123@microsoft.com",
@@ -234,7 +234,7 @@ HTTP GET  https://api.securitycenter.microsoft.com/api/alerts?$filter=lastUpdate
             ],
             "relatedUser": {
                 "userName": "temp123",
-                "domainName": "MIDDLEEAST"
+                "domainName": "DOMAIN"
             },
             "comments": [
                 {
