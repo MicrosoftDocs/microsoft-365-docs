@@ -199,11 +199,6 @@ sections:
           Admins can set up a mail flow rule to remove encryption. You can't remove encryption using a mail flow rule from mail that is applied by another organization, unless the mail is encrypted using encrypt-only protection.
 
       - question: |
-          Is delegated access supported?
-        answer: |
-          Not at this time.
-
-      - question: |
           Can I send as a shared mailbox and encrypt emails?
         answer: |
           When someone sends an email message that matches an encryption mail flow rule, the message is encrypted before it's sent.
@@ -243,11 +238,11 @@ sections:
              ```powershell
              Add-MailboxPermission -Identity support@contoso.onmicrosoft.com -User ayla@contoso.com -AccessRights FullAccess -AutoMapping $true
              ```
-          
+
       - question: |
-          Can I open encrypted messages sent to another user's mailbox with Fullaccess?
+          Is delegated access supported with opening encrypted messages? Even if delegate has Fullaccess on another user's mailbox?
         answer: |
-          No. You can only open encrypted messages in a shared mailbox.
+          Delegate access of encrypted mail is supported in Outlook on the web, Outlook for Mac, Outlook for iOS, and Outlook for Android.  Outlook for Windows do not support delegate access.
           
       - question: |
           What do I do if I don’t receive the one-time pass code after I requested it?
