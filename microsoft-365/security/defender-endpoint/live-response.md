@@ -89,7 +89,7 @@ You'll need to enable, at least, the minimum Remediation Level for a given Devic
     Only users who have been provisioned with the appropriate permissions can initiate a session. For more information on role assignments, see [Create and manage roles](user-roles.md). 
 
     > [!IMPORTANT]
-    > The option to upload a file to the library is only available to users with with "Manage Security Settings" permession.
+    > The option to upload a file to the library is only available to users with with "Manage Security Settings" permission.
     >  The button is greyed out for users with only delegated permissions.
     
 
