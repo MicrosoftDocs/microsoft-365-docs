@@ -87,7 +87,7 @@ The following table lists the metadata fields for documents in a review set in a
 |FamilyDuplicateSet*||Family_duplicate_set|Numeric identifier for families that are exact duplicates of each other (same content and all the same attachments).|
 |Family ID|FamilyId|Family_ID|Groups together attachments and extracted items from email and chats with its parent item. This includes the chat or email and all attachments and extracted items.|
 |Family Size||Family_size|Number of documents in the family.|
-|File class|FileClass|File_class|For content from SharePoint and OneDrive: **Document**. For content from Exchange: **Email** or **Attachment**. For content from Teams or Yammer: **Conversations**. |
+|File class|FileClass|File_class|For content from SharePoint and OneDrive: **Document**. <br/>For content from Exchange: **Email** or **Attachment**. <br/>For content from Teams or Yammer: **Conversations**. |
 |File ID|FileId|File_ID|Document identifier unique within the case.|
 |File system date created||File_system_date_created|Created date from file system (only applies to non-Office 365 data).|
 |File system date modified||File_system_date_modified|Modified date from file system (only applies to non-Office 365 data).|
