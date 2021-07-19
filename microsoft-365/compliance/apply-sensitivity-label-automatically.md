@@ -237,7 +237,7 @@ Workflow for an auto-labeling policy:
 
 2. Run the policy in simulation mode, which can take 48 hours to complete.
     
-    Recent enhancements: With the [recent enhancements](#recent-enhancements-for-auto-labeling-policies) now rolling out, this time is reduced to 12 hours and the completed simultation triggers an email notification.
+    With the [recent enhancements](#recent-enhancements-for-auto-labeling-policies) now rolling out, this time is reduced to 12 hours and the completed simultation triggers an email notification.
 
 3. Review the results, and if necessary, refine your policy. Rerun simulation mode and wait for it to complete again.
 
@@ -277,15 +277,14 @@ Finally, you can use simulation mode to provide an approximation of the time nee
 6. For the page **Choose locations where you want to apply the label**: Select and specify locations for Exchange, SharePoint sites, and OneDrive. Then select **Next**.
 
     ![Choose locations page auto-labelingwizard](../media/locations-auto-labeling-wizard.png)
+    
+    If your tenant has the [recent enhancements](#recent-enhancements-for-auto-labeling-policies) now rolling out, you can now specify **All sites**.
 
-    You must specify individual SharePoint sites and OneDrive accounts. For OneDrive, the URL for a user's OneDrive account is in the following format: `https://<tenant name>-my.sharepoint.com/personal/<user_name>_<tenant name>_com`
+    Alternatively, specify individual SharePoint sites and OneDrive accounts. For OneDrive, the URL for a user's OneDrive account is in the following format: `https://<tenant name>-my.sharepoint.com/personal/<user_name>_<tenant name>_com`
 
     For example, for a user in the contoso tenant that has a user name of "rsimone": `https://contoso-my.sharepoint.com/personal/rsimone_contoso_onmicrosoft_com`
 
     To verify the syntax for your tenant and identify URLs for users, see [Get a list of all user OneDrive URLs in your organization](/onedrive/list-onedrive-urls).
-    
-    Recent enhancements: With the [recent enhancements](#recent-enhancements-for-auto-labeling-policies) now rolling out, you can specify **All sites**.
-
 
 7. For the **Set up common or advanced rules** page: Keep the default of **Common rules** to define rules that identify content to label across all your selected locations. If you need different rules per location, select **Advanced rules**. Then select **Next**.
 
@@ -411,11 +410,12 @@ The recent enhancements now rolling out for auto-labeling policies for OneDrive 
 > [!TIP]
 > To take advantage of the higher number of policies and sites supported, use PowerShell to efficiently create new policies and add additional sites to existing policies. For more information, see the [Use PowerShell for auto-labeling policies](#use-powershell-for-auto-labeling-policies) section on this page.
 
-## How to determine whether your tenant has the new enhancements
+### How to determine whether your tenant has the new enhancements
 
-On the **Auto-labeling **tab, you'll see a banner
+When your tenant has the new enhancements, you'll see the following banner on the **Auto-labeling **tab:
 
-If had any auto-labeling policies that are still in simulation mode when your preview request was accepted, you must re-run the simulation. If this scenario applies to you, you'll be prompted to select **Restart Simulation**. If you don't, the simulation won't complete.
+> [!NOTE]
+> If you had any auto-labeling policies that were in simulation mode when your tenant received the new enhancements, you must re-run the simulation. If this scenario applies to you, you'll be prompted to select **Restart Simulation**. If you don't, the simulation won't complete.
 
 ## Tips to increase labeling reach
 
