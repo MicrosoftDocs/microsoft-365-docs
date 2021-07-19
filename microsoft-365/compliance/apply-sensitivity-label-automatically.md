@@ -58,7 +58,7 @@ There are two different methods for automatically applying a sensitivity label t
         - These files can be auto-labeled at rest before or after the auto-labeling policies are created. Files cannot be auto-labeled if they are part of an open session (the file is open).
         - Currently, attachments to list items aren't supported and won't be auto-labeled.
     - Maximum of 25,000 automatically labeled files in your tenant per day.
-    - Maximum of 10 auto-labeling policies per tenant, each targeting up to 10 sites (SharePoint or OneDrive). Preview improvements: With the new [preview](#opt-in-to-the-new-preview-for-auto-labeling-policies), these numbers increase to 100 policies and 100 sites when they are specified individually. You can also specify all sites, and this configuration is exempt from the 100 sites maximum.
+    - Maximum of 10 auto-labeling policies per tenant, each targeting up to 10 sites (SharePoint or OneDrive). Recent enhancements: With the [recent enhancements now rolling out](#recent-enhancements-for-auto-labeling-policies), these numbers increase to 100 policies and 100 sites when they are specified individually. You can also specify all sites, and this configuration is exempt from the 100 sites maximum.
     - Existing values for modified, modified by, and the date are not changed as a result of auto-labeling policies—for both simulation mode and when labels are applied.
     - When the label applies encryption, the [Rights Management issuer and Rights Management owner](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) is the account that last modified the file.
 
@@ -202,7 +202,7 @@ Specific to the Azure Information Protection unified labeling client:
 ## How to configure auto-labeling policies for SharePoint, OneDrive, and Exchange
 
 > [!NOTE]
-> Consider opting in to the current preview that contains many improvements from the general availability version for auto-labeling policies. For more information, see [Opt in to the new preview for auto-labeling policies](#opt-in-to-the-new-preview-for-auto-labeling-policies).
+> New enhancements are currently rolling out for auto-labeling policies. For more information, see [Recent enhancements for auto-labeling policies](#recent-enhancements-for-auto-labeling-policies).
 
 Make sure you're aware of the prerequisites before you configure auto-labeling policies. 
 
@@ -237,7 +237,7 @@ Workflow for an auto-labeling policy:
 
 2. Run the policy in simulation mode, which can take 48 hours to complete.
     
-    Preview improvements: With the new [preview](#opt-in-to-the-new-preview-for-auto-labeling-policies), this time is reduced to 12 hours and the completed simultation triggers an email notification.
+    Recent enhancements: With the [recent enhancements](#recent-enhancements-for-auto-labeling-policies) now rolling out, this time is reduced to 12 hours and the completed simultation triggers an email notification.
 
 3. Review the results, and if necessary, refine your policy. Rerun simulation mode and wait for it to complete again.
 
@@ -284,7 +284,7 @@ Finally, you can use simulation mode to provide an approximation of the time nee
 
     To verify the syntax for your tenant and identify URLs for users, see [Get a list of all user OneDrive URLs in your organization](/onedrive/list-onedrive-urls).
     
-    Preview improvements: If you opt in to the new [preview](#opt-in-to-the-new-preview-for-auto-labeling-policies), you can specify **All sites**.
+    Recent enhancements: With the [recent enhancements](#recent-enhancements-for-auto-labeling-policies) now rolling out, you can specify **All sites**.
 
 
 7. For the **Set up common or advanced rules** page: Keep the default of **Common rules** to define rules that identify content to label across all your selected locations. If you need different rules per location, select **Advanced rules**. Then select **Next**.
@@ -387,9 +387,9 @@ For more information about the PowerShell cmdlets that support auto-labeling pol
 - [Set-AutoSensitivityLabelPolicy](/powershell/module/exchange/set-autosensitivitylabelpolicy)
 - [Set-AutoSensitivityLabelRule](/powershell/module/exchange/set-autosensitivitylabelrule)
 
-## Opt in to the new preview for auto-labeling policies
+## Recent enhancements for auto-labeling policies
 
-The new preview version of auto-labeling policies for OneDrive and SharePoint has the following improvements from the general availability version:
+The recent enhancements now rolling out for auto-labeling policies for OneDrive and SharePoint have the following improvements from the previous version:
 
 - Maximum of 100 auto-labeling policies per tenant instead of 10.
 
@@ -409,17 +409,13 @@ The new preview version of auto-labeling policies for OneDrive and SharePoint ha
     - Ability to export information about the matched items, such as the SharePoint site name and file owner. You can use this information to pivot and analyze the matched files, and delegate to file owners for review if needed.
 
 > [!TIP]
-> To take advantage of the higher number of policies and sites supported, use PowerShell to efficiently create new policies and add additional sites. For more information, see the [Use PowerShell for auto-labeling policies](#use-powershell-for-auto-labeling-policies) section on this page.
+> To take advantage of the higher number of policies and sites supported, use PowerShell to efficiently create new policies and add additional sites to existing policies. For more information, see the [Use PowerShell for auto-labeling policies](#use-powershell-for-auto-labeling-policies) section on this page.
 
-### How to opt in to the new preview
+## How to determine whether your tenant has the new enhancements
 
-To opt in to this preview, use the request form for [Auto-labelling V2 Preview for OneDrive and SharePoint online files](https://aka.ms/AutoLabelV2-Preview]). Wait a few days and confirm your tenant has been enabled for the preview when you see **(Preview)** added to the **Auto-labeling** tab in the Microsoft 365 compliance center.
+On the **Auto-labeling **tab, you'll see a banner
 
-Before you submit the form, be aware of the following conditions:
-
-- After your tenant is running the preview, you cannot opt out and return to the general availability version. The tenant will continue to run the preview until this version becomes generally available.
-
-- If had any auto-labeling policies that are still in simulation mode when your preview request was accepted, you must re-run the simulation. If this scenario applies to you, you'll be prompted to select **Restart Simulation**. If you don't, the simulation won't complete and the preview won't be enabled.
+If had any auto-labeling policies that are still in simulation mode when your preview request was accepted, you must re-run the simulation. If this scenario applies to you, you'll be prompted to select **Restart Simulation**. If you don't, the simulation won't complete.
 
 ## Tips to increase labeling reach
 
