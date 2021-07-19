@@ -58,7 +58,7 @@ After you create a content center site, you will see it listed on the **Active s
 
 ### Give access to additional users
  
-After you create the site, you can give additional users access to the site through the standard [SharePoint site permissions model.](/sharepoint/modern-experience-sharing-permissions).
+After you create the site, you can give additional users access to the site through the standard [SharePoint site permissions model](/sharepoint/modern-experience-sharing-permissions).
 
 ### Roll up of models in the default content center
 
