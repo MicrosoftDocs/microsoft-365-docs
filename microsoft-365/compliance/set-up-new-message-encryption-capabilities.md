@@ -68,13 +68,13 @@ You can verify that your Microsoft 365 tenant is properly configured to use the 
 3. Run the Test-IRMConfiguration cmdlet using the following syntax:
 
      ```powershell
-     Test-IRMConfiguration [-Sender <email address >]
+     Test-IRMConfiguration [-Sender <email address> -Recipient <email address>]
      ```
 
    **Example**:
 
      ```powershell
-     Test-IRMConfiguration -Sender securityadmin@contoso.com
+     Test-IRMConfiguration -Sender securityadmin@contoso.com -Recipient securityadmin@contoso.com
      ```
 
      - Providing a sender email is optional, but forces the system to perform additional checks. Use the email address of any user in your Microsoft 365 tenant.
