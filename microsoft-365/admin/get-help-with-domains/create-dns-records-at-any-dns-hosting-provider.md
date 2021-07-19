@@ -20,6 +20,7 @@ description: "Connect a domain at any DNS hosting provider to Microsoft 365 by v
 ms.custom: 
 - okr_smb
 - AdminSurgePortfolio
+- AdminTemplateSet
 ---
 
 # Add DNS records to connect your domain

@@ -16,6 +16,7 @@ ms.collection:
 ms.custom: 
 - AdminSurgePortfolio
 - commerce_billing
+- AdminTemplateSet
 search.appverid: MET150
 description: "Learn about billing accounts and how they're used to manage account settings, invoices, payment methods, and purchases."
 ms.date: 03/17/2021

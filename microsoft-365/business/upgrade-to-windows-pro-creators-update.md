@@ -21,6 +21,7 @@ ms.custom:
 - OKR_SMB_Videos
 - seo-marvel-mar
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - MET150
 - MOE150

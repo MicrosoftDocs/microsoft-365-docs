@@ -114,21 +114,22 @@ sections:
           [public documentation](/microsoft-365/security/defender-endpoint/attack-surface-reduction).
            spanning across multiple pillars of protection, like Office, Credentials, Scripts, E-Mail, etc. All ASR rules, except for Block persistence through WMI event subscription, are supported on Windows 1709 and later:
           
-          * [Block executable content from email client and webmail](attack-surface-reduction.md#block-executable-content-from-email-client-and-webmail)
-          * [Block all Office applications from creating child processes](attack-surface-reduction.md#block-all-office-applications-from-creating-child-processes)
-          * [Block Office applications from creating executable content](attack-surface-reduction.md#block-office-applications-from-creating-executable-content)
-          * [Block Office applications from injecting code into other processes](attack-surface-reduction.md#block-office-applications-from-injecting-code-into-other-processes)
-          * [Block JavaScript or VBScript from launching downloaded executable content](attack-surface-reduction.md#block-javascript-or-vbscript-from-launching-downloaded-executable-content)
-          * [Block execution of potentially obfuscated scripts](attack-surface-reduction.md#block-execution-of-potentially-obfuscated-scripts)
-          * [Block Win32 API calls from Office macro](attack-surface-reduction.md#block-win32-api-calls-from-office-macros)
-          * [Use advanced protection against ransomware](attack-surface-reduction.md#use-advanced-protection-against-ransomware)
-          * [Block credential stealing from the Windows local security authority subsystem](attack-surface-reduction.md#block-credential-stealing-from-the-windows-local-security-authority-subsystem) (lsass.exe)
-          * [Block process creations originating from PSExec and WMI commands](attack-surface-reduction.md#block-process-creations-originating-from-psexec-and-wmi-commands)
-          * [Block untrusted and unsigned processes that run from USB](attack-surface-reduction.md#block-untrusted-and-unsigned-processes-that-run-from-usb)
-          * [Block executable files from running unless they meet a prevalence, age, or trusted list criteria](attack-surface-reduction.md#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion)
-          * [Block Office communication applications from creating child processes](attack-surface-reduction.md#block-office-communication-application-from-creating-child-processes)
-          * [Block Adobe Reader from creating child processes](attack-surface-reduction.md#block-adobe-reader-from-creating-child-processes)
-          * [Block persistence through WMI event subscription](attack-surface-reduction.md#block-persistence-through-wmi-event-subscription)
+          * [Block abuse of exploited vulnerable signed drivers](attack-surface-reduction-rules.md#block-abuse-of-exploited-vulnerable-signed-drivers)
+          * [Block executable content from email client and webmail](attack-surface-reduction-rules.md#block-executable-content-from-email-client-and-webmail)
+          * [Block all Office applications from creating child processes](attack-surface-reduction-rules.md#block-all-office-applications-from-creating-child-processes)
+          * [Block Office applications from creating executable content](attack-surface-reduction-rules.md#block-office-applications-from-creating-executable-content)
+          * [Block Office applications from injecting code into other processes](attack-surface-reduction-rules.md#block-office-applications-from-injecting-code-into-other-processes)
+          * [Block JavaScript or VBScript from launching downloaded executable content](attack-surface-reduction-rules.md#block-javascript-or-vbscript-from-launching-downloaded-executable-content)
+          * [Block execution of potentially obfuscated scripts](attack-surface-reduction-rules.md#block-execution-of-potentially-obfuscated-scripts)
+          * [Block Win32 API calls from Office macro](attack-surface-reduction-rules.md#block-win32-api-calls-from-office-macros)
+          * [Use advanced protection against ransomware](attack-surface-reduction-rules.md#use-advanced-protection-against-ransomware)
+          * [Block credential stealing from the Windows local security authority subsystem](attack-surface-reduction-rules.md#block-credential-stealing-from-the-windows-local-security-authority-subsystem) (lsass.exe)
+          * [Block process creations originating from PSExec and WMI commands](attack-surface-reduction-rules.md#block-process-creations-originating-from-psexec-and-wmi-commands)
+          * [Block untrusted and unsigned processes that run from USB](attack-surface-reduction-rules.md#block-untrusted-and-unsigned-processes-that-run-from-usb)
+          * [Block executable files from running unless they meet a prevalence, age, or trusted list criteria](attack-surface-reduction-rules.md#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion)
+          * [Block Office communication applications from creating child processes](attack-surface-reduction-rules.md#block-office-communication-application-from-creating-child-processes)
+          * [Block Adobe Reader from creating child processes](attack-surface-reduction-rules.md#block-adobe-reader-from-creating-child-processes)
+          * [Block persistence through WMI event subscription](attack-surface-reduction-rules.md#block-persistence-through-wmi-event-subscription)
           
       - question: |
           What are some good recommendations for getting started with ASR?
