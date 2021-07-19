@@ -49,7 +49,5 @@ Once you've blocked a user from being able to log into your organization you can
 
 ## Related content
 
-[Restore a user](restore-user.md) (article)\
-[Add a new employee to Microsoft 365](add-new-employee.md) (article)\
-[Assign licenses to users](../manage/assign-licenses-to-users.md) (article)\
-[Unassign licenses from users](../manage/remove-licenses-from-users.md) (article)
+[Exchange admin center in Exchange Online](/exchange/exchange-admin-center)
+[Restore a user](restore-user.md)
