@@ -15,6 +15,7 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - MET150
 description: "Use Basic Mobility and Security to set device security policies and access rules."

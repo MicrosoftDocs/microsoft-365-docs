@@ -16,6 +16,7 @@ ms.collection:
 ms.custom: 
 - AdminSurgePortfolio
 - okr_smb
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
@@ -28,11 +29,20 @@ description: "Microsoft 365 group members get a group email and shared workspace
 
 In the **Groups** section of the Microsoft 365 admin center, you can create and manage these types of groups: 
 
-- **Microsoft 365 groups** (formerly Office 365 groups) are used for collaboration between users, both inside and outside your company.
+- **Microsoft 365 groups** are used for collaboration between users, both inside and outside your company. They include collaboration services such as SharePoint and Planner.
 - **Distribution groups** are used for sending email notifications to a group of people.
 - **Security groups** are used for granting access to resources such as SharePoint sites.
 - **Mail-enabled security groups** are used for granting access to resources such as SharePoint, and emailing notifications to those users.
 - **Shared mailboxes** are used when multiple people need access to the same mailbox, such as a company information or support email address.
+
+Some groups allow dynamic membership or email.
+
+||Microsoft 365 groups|Distribution groups|Security groups|Mail-enabled security groups|Shared mailboxes|
+|:----|:----|:----|:----|:----|:----|
+|**Mail-enabled**|Yes|Yes|No|Yes|Yes|
+|**Dynamic membership in Azure AD**|Yes|No|Yes|No|No|
+
+All of these group types can be used with Power Automate.
 
 ## Microsoft 365 groups
 
@@ -45,6 +55,8 @@ Microsoft 365 groups can be [configured for dynamic membership in Azure Active D
 Microsoft 365 groups can be accessed through mobile apps such as Outlook for iOS and Outlook for Android.
 
 Group members can send as or send on behalf of the group email address if this has been [enabled by the administrator](../../solutions/allow-members-to-send-as-or-send-on-behalf-of-group.md).
+
+Microsoft 365 groups don't support nesting with other Microsoft 365 groups or with distribution or security groups.
 
 ## Distribution groups
 
@@ -92,5 +104,8 @@ It's not possible to migrate a shared mailbox to a Microsoft 365 group.
 
 ## Related content
 
-[Learn about Microsoft 365 groups](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2) (article)\
-[Why you should upgrade your distribution lists to groups in Outlook](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188) (article)
+[Learn about Microsoft 365 groups](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
+
+[Upgrade distribution lists to Microsoft 365 Groups in Outlook](/microsoft-365/admin/manage/upgrade-distribution-lists)
+
+[Why you should upgrade your distribution lists to groups in Outlook](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188)

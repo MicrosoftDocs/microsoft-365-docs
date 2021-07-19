@@ -14,7 +14,7 @@ ms.collection: M365-security-compliance
 description: "Learn how to set up and use a 17a-4 Fuze DataParser connector to import and archive Fuze data in Microsoft 365."
 ---
 
-# Set up a connector to archive Fuze data (preview)
+# Set up a connector to archive Fuze data
 
 Use the [Fuze DataParser](https://www.17a-4.com/fuze-dataparser/) from 17a-4 LLC to import and archive data from Fuze to user mailboxes in your Microsoft 365 organization. The DataParser includes a Fuze connector that's configured to capture items from a third-party data source and import those items to Microsoft 365. The Fuze DataParser connector converts Fuze data to an email message format and then imports those items to user mailboxes in Microsoft 365.
 
