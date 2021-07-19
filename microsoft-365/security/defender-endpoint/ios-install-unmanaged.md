@@ -49,6 +49,6 @@ For more details on MAM or app protection policy, see [iOS app protection policy
 
 ## Deploy Microsoft Defender for Endpoint for MAM or on unenrolled devices
 
-Microsoft Defender for Endpoint on iOS enables the App Protection Policy scenario and is available in the Apple app store.
+Microsoft Defender for Endpoint on iOS enables the app protection policy scenario and is available in the Apple app store.
 
 When app protection policies are configured for apps to include device risk signals from Microsoft Defender for Endpoint, user will be redirected to install Microsoft Defender for Endpoint when using such apps. Alternately, end-users can also install the latest version of the app directly from the Apple app store.
