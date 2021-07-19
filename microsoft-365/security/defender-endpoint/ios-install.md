@@ -162,4 +162,5 @@ Intune allows you to configure the Defender for iOS app through an App Configura
 
 ## Next Steps
 
+[Configure app protection policy to include Defender for Endpoint risk signals (MAM)](ios-install-unmanaged.md)
 [Configure Defender for Endpoint on iOS features](ios-configure-features.md)

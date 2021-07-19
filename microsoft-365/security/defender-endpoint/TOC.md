@@ -107,12 +107,12 @@
 
 ##### [Deploy]()
 ###### [Deploy Microsoft Defender for Endpoint on iOS via Intune](ios-install.md)
+###### [Deploy Microsoft Defender for Endpoint on iOS for unenrolled devices](ios-install-unmanaged.md)
 
 ##### [Configure]()
 ###### [Configure iOS features](ios-configure-features.md)
 
-##### [Troubleshoot]()
-###### [FAQs and Troubleshoot issues](ios-troubleshoot.md)
+##### [FAQs and Troubleshooting](ios-troubleshoot.md)
 
 ##### [Privacy](ios-privacy.md)
 

@@ -1,7 +1,7 @@
 ---
-title: "Onboard Windows 10 multi-session devices in Windows Virtual Desktop"
-description: "Read more in this article about Onboarding Windows 10 multi-session devices in Windows Virtual Desktop"
-keywords: Windows Virtual Desktop, WVD, microsoft defender, endpoint, onboard
+title: "Onboard Windows 10 multi-session devices in Azure Virtual Desktop"
+description: "Read more in this article about Onboarding Windows 10 multi-session devices in Azure Virtual Desktop"
+keywords: Azure Virtual Desktop, WVD, microsoft defender, endpoint, onboard
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -17,23 +17,23 @@ ms.reviewer:
 manager: dansimp
 ---
 
-# Onboard Windows 10 multi-session devices in Windows Virtual Desktop 
+# Onboard Windows 10 multi-session devices in Azure Virtual Desktop 
 6 minutes to read 
 
 Applies to: 
-- Windows 10 multi-session running on Windows Virtual Desktop (WVD) 
+- Windows 10 multi-session running on Azure Virtual Desktop (AVD) 
 
-Microsoft Defender for Endpoint supports monitoring both VDI and Windows Virtual Desktop sessions. Depending on your organization's needs, you might need to implement VDI or Windows Virtual Desktop sessions to help your employees access corporate data and apps from an unmanaged device, remote location, or similar scenario. With Microsoft Defender for Endpoint, you can monitor these virtual machines for anomalous activity.
+Microsoft Defender for Endpoint supports monitoring both VDI and Azure Virtual Desktop sessions. Depending on your organization's needs, you might need to implement VDI or Azure Virtual Desktop sessions to help your employees access corporate data and apps from an unmanaged device, remote location, or similar scenario. With Microsoft Defender for Endpoint, you can monitor these virtual machines for anomalous activity.
 
  ## Before you begin
-Familiarize yourself with the [considerations for non-persistent VDI](/microsoft-365/security/defender-endpoint/configure-endpoints-vdi#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-1). While [Windows Virtual Desktop](/azure/virtual-desktop/overview) doesn't provide non-persistence options, it does provide ways to use a golden Windows image that can be used to provision new hosts and redeploy machines. This increases volatility in the environment and thus impacts what entries are created and maintained in the Microsoft Defender for Endpoint portal, potentially reducing visibility for your security analysts.
+Familiarize yourself with the [considerations for non-persistent VDI](/microsoft-365/security/defender-endpoint/configure-endpoints-vdi#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-1). While [Azure Virtual Desktop](/azure/virtual-desktop/overview) doesn't provide non-persistence options, it does provide ways to use a golden Windows image that can be used to provision new hosts and redeploy machines. This increases volatility in the environment and thus impacts what entries are created and maintained in the Microsoft Defender for Endpoint portal, potentially reducing visibility for your security analysts.
 
 > [!NOTE]
 > Depending on your choice of onboarding method, devices can appear in Microsoft Defender for Endpoint portal as either: 
 > - Single entry for each virtual desktop 
 > - Multiple entries for each virtual desktop 
 
-Microsoft recommends onboarding Windows Virtual Desktop as a single entry per virtual desktop. This ensures that the investigation experience in the Microsoft Defender Endpoint portal is in the context of one device based on the machine name. Organizations that frequently delete and redeploy WVD hosts should strongly consider using this method as it prevents multiple objects for the same machine from being created in the Microsoft Defender for Endpoint portal. This can lead to confusion when investigating incidents. For test or non-volatile environments, you may opt to choose differently. 
+Microsoft recommends onboarding Azure Virtual Desktop as a single entry per virtual desktop. This ensures that the investigation experience in the Microsoft Defender Endpoint portal is in the context of one device based on the machine name. Organizations that frequently delete and redeploy WVD hosts should strongly consider using this method as it prevents multiple objects for the same machine from being created in the Microsoft Defender for Endpoint portal. This can lead to confusion when investigating incidents. For test or non-volatile environments, you may opt to choose differently. 
 
 Microsoft recommends adding the Microsoft Defender for Endpoint onboarding script to the WVD golden image. This way, you can be sure that this onboarding script runs immediately at first boot. It's executed as a startup script at first boot on all the WVD machines that are provisioned from the WVD golden image. However, if you're using one of the gallery images without modification, place the script in a shared location and call it from either local or domain group policy. 
 
