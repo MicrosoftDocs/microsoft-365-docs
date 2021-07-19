@@ -18,6 +18,7 @@ ms.custom:
 - okr_smb
 - AdminSurgePortfolio
 - commerce_billing
+- AdminTemplateSet
 search.appverid: MET150
 description: "Interpret charges, billing, and payment info on your Microsoft 365 for business bill or invoice, and how to change a purchase order number."
 ms.date: 05/04/2021
