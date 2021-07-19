@@ -68,7 +68,7 @@ Role groups can be customized if needed. To avoid accidental loss of access, we 
 
 To see the specific roles included in each role group, see the following table.
 
-| **Role group**      | **Roles included**                        |
+|   Role group        |   Roles included                          |
 |:-- |:--|
 | Privacy Management  | Case Management                           |
 |                     | Data Classification Content Viewer        |
