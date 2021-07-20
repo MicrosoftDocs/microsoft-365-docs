@@ -2,6 +2,7 @@
   expanded: true
   items:
   - name: Overview
+    expanded: true
     items:
     - name: What is Defender for business?
       href: mdb-overview.md
@@ -9,6 +10,7 @@
       href: compare-mdb-m365bp.md
   - name: Setup and configuration
     href: mdb-setup-configuration.md
+    expanded: true
     items:
     - name: Review the requirements
       href: mdb-requirements.md
@@ -27,6 +29,7 @@
   - name: Get started
     href: mdb-get-started.md
   - name: How do I ...?
+    expanded: true
     items: 
     - name: View and manage incidents
       href: mdb-view-manage-incidents.md
