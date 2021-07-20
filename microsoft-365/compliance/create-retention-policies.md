@@ -48,6 +48,7 @@ Although a retention policy can support multiple services that are identified as
 - Exchange public folders
 - Teams channel messages
 - Teams chats
+- Teams private channel messages
 - Yammer community messages
 - Yammer user messages
 
