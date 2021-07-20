@@ -92,18 +92,12 @@ After you create your new form processing model, your browser opens a new PowerA
 
 > [!NOTE]
 > When you look for example files to use, see the [form processing model input document requirements and optimization tips](/ai-builder/form-processing-model-requirements). 
-
-   ![Power Apps AI Builder](../media/content-understanding/powerapps.png)
  
-1. Select **Add documents** to begin adding example documents analyzed to determine the named value pairs that can be extracted. You can then choose either **Upload from local storage**, **SharePoint**, or **Azure Blob storage**. You need to use at least five files for training.
+1. You first define the fields and tables you want to teach your model to extract on the **Choose information to extract** page. For detailed information, see [Define fields and tables to extract](https://docs.microsoft.com/en-us/ai-builder/create-form-processing-model#define-fields-and-tables-to-extract). 
 
-2. After adding files, select **Analyze** to check for any information common is all files. This step might take several minutes to complete.
- 
-    ![Analyze files](../media/content-understanding/analyze.png)
+2.  You can create as many collections of document layouts you want your model to process. For detailed information, see [Group documents by collections](https://docs.microsoft.com/en-us/ai-builder/create-form-processing-model#group-documents-by-collections). 
 
-3. After the files have been analyzed, in the **Select the form fields you want to save** page select the file to view the detected fields.
-
-    ![Select form fields](../media/content-understanding/select-form-fields.png)
+3. After you create your collections and add the example files for each, AI Builder will examine the uploaded documents to detect the fields and tables. This usually takes a few minutes. When the analysis is complete, you can proceed with tagging the documents.
 
 ## Step 3: Select your form fields
 
