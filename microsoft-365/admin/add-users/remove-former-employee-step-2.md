@@ -19,6 +19,7 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - AdminSurgePortfolio
+- m365solution-removeemployee
 search.appverid:
 - BCS160
 - MET150
@@ -27,6 +28,10 @@ description: "Learn how to save the content of a former employee's mailbox."
 ---
 
 # Step 2 - Save the contents of a former employee's mailbox
+
+In this step, place a Litigation Hold or In-place Hold on the user or export their Outlook data to a .pst file.
+
+## Place hold or export user's data to a .pst file
 
 Once you've blocked a user from being able to log into your organization you can save the contents of their mailbox. There are two ways you can save the contents of the former employee's mailbox.
   
@@ -41,3 +46,8 @@ Once you've blocked a user from being able to log into your organization you can
     **OR**
 
 2. Add the former employee's email address to your version of Outlook on Desktop, and then export the data to a .pst file. You can import the data to another email account as needed. Check out [Step 6 - Give another employee access to OneDrive and Outlook data](remove-former-employee-step-6.md).
+
+## Related content
+
+[Exchange admin center in Exchange Online](/exchange/exchange-admin-center)
+[Restore a user](restore-user.md)
