@@ -206,7 +206,7 @@ kind:externaldata
 
 You can use this query in the **Keywords** box for a Content search, a search associated with a Core eDiscovery case, or a collection in Advanced eDiscovery.
 
-![](..\media\SearchThirdPartyData1.png)
+![Query to search for third-party data](..\media\SearchThirdPartyData1.png)
 
 You can also use the `kind:externaldata` property:value pair to to narrow the scope of searches to third-party data. For example, to search for items imported from any third-party data source that contain the word *contoso* in the **Subject** property of the imported item, use the following query in the **Keywords** box:
 
@@ -216,7 +216,7 @@ subject:contoso AND kind:externaldata
 
 Alternatively, you can use the **Message kind** condition to configure the same query.
 
-![](..\media\SearchThirdPartyData2.png)
+![Use Message kind condition to narrow searches to third-party data](..\media\SearchThirdPartyData2.png)
 
 To search for a specific type of archived third-party data, use the **itemclass** mailbox property in a search query. Use the following property:value format:
 
