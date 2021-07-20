@@ -46,7 +46,7 @@ In the Compliance Center, when you create a DLP policy, you can configure the us
 
   - For Excel, PowerPoint, and Word documents that are stored on a OneDrive for Business site or SharePoint Online site that's included in the DLP policy, the policy tip appears on the Message Bar and the Backstage view (**File** menu \> **Info**).
 
-## Add user notifications to a DLP policy
+<!-- ## Add user notifications to a DLP policy MOVED TO HOW TO CREATE A DLP POLICY
 
 When you create a DLP policy, you can enable **User notifications**. When user notifications are enabled, Microsoft 365 sends out both email notifications and policy tips. You can customize who notification emails are sent to, the email text and the policy tip text.
 
@@ -84,7 +84,7 @@ When you create a DLP policy, you can enable **User notifications**. When user n
 
 > [!NOTE]
 > DLP policies apply to all documents that match the policy, whether those documents are new or existing. However, an email notification is only generated when new content matches an existing DLP policy. Existing content is protected, but will not generate a user notification via email.
-
+-->
 ## Options for configuring email notifications
 
 For each rule in a DLP policy, you can:
@@ -155,6 +155,7 @@ Here are some fine points to understand about using a policy tip to override a r
 - It's possible for content to match several rules in a DLP policy, but only the policy tip from the most restrictive, highest-priority rule will be shown. For example, a policy tip from a rule that blocks access to content will be shown over a policy tip from a rule that simply sends a notification. This prevents people from seeing a cascade of policy tips.
 
 - If the policy tips in the most restrictive rule allow people to override the rule, then overriding this rule also overrides any other rules that the content matched.
+
 
 ## Policy tips on OneDrive for Business sites and SharePoint Online sites
 
