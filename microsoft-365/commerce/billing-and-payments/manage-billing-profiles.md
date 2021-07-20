@@ -18,6 +18,7 @@ ms.collection:
 ms.custom: 
 - AdminSurgePortfolio
 - commerce_billing
+- AdminTemplateSet
 search.appverid: MET150
 description: "Learn how billing profiles support invoices."
 ms.date: 04/02/2021 
