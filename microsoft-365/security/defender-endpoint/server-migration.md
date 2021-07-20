@@ -148,4 +148,4 @@ If you want to move **from tenant attach to Defender for Endpoint attach**, make
 
 ### You're using Azure Defender. The Microsoft Monitoring Agent (MMA) and Microsoft Antimalware for Azure/SCEP are installed and you want to upgrade.
 
-If you're using Azure Defender, you can leverage the automated upgrade process. See [Protect your endpoints with Security Center's integrated EDR solution: Microsoft Defender for Endpoint](/azure/security-center/security-center-wdatp#enable-the-microsoft-defender-for-endpoint-integration).
+If you're using Azure Defender, you can leverage the automated upgrade process. See [Protect your endpoints with Security Center's integrated EDR solution: Microsoft Defender for Endpoint](/azure/security-center/security-center-wdatp.md#enable-the-microsoft-defender-for-endpoint-integration).
