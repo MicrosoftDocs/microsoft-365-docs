@@ -110,7 +110,7 @@ You need to tag the documents to teach the model to understand the fields and ta
 
     ![Screenshot in AI Builder showing the Create a flow panel.](../media/content-understanding/ai-builder-create-a-flow.png)
  
-3. When completed, you'll see the message: *Your flow has been successfully created*.
+3. When completed, you'll see the message: *Your flow was successfully created*.
 
     ![Screenshot in AI Builder showing flow was successfully created.](../media/content-understanding/ai-builder-flow-created.png)
 
