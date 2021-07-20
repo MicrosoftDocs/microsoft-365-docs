@@ -29,11 +29,11 @@ ms.technology: m365d
 
 The Microsoft Defender for Endpoint Client Analyzer (MDECA) can be useful when
 diagnosing sensor health or reliability issues on [onboarded
-devices](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/onboard-configure)
+devices](/microsoft-365/security/defender-endpoint/onboard-configure)
 running either Windows, Linux, or macOS. For example, you may want to run the
 analyzer on a machine that appears to be unhealthy according to the displayed
 [sensor health
-status](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/fix-unhealthy-sensors)
+status](/microsoft-365/security/defender-endpoint/fix-unhealthy-sensors)
 (Inactive, No Sensor Data or Impaired Communications) in the security
 portal.
 
@@ -42,7 +42,7 @@ and diagnostic information for troubleshooting complex scenarios such
 as:  
 Application compatibility (AppCompat), performance, network connectivity, or
 unexpected behavior related to [Endpoint Data Loss
-Prevention](https://docs.microsoft.com/microsoft-365/compliance/endpoint-dlp-learn-about).
+Prevention](/microsoft-365/compliance/endpoint-dlp-learn-about).
 
 ## Privacy notice
 
@@ -63,7 +63,7 @@ Prevention](https://docs.microsoft.com/microsoft-365/compliance/endpoint-dlp-lea
     collaboration on a support issue, you may be asked to send the compressed
     data to Microsoft CSS using Secure File Exchange to facilitate the investigation of the issue.
 
-For more information about Secure File Exchange, see [How to use Secure File Exchange to exchange files with Microsoft Support](https://docs.microsoft.com/troubleshoot/azure/general/secure-file-exchange-transfer-files)  
+For more information about Secure File Exchange, see [How to use Secure File Exchange to exchange files with Microsoft Support](/troubleshoot/azure/general/secure-file-exchange-transfer-files)  
 
 For more information about our privacy statement, see [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement).
 
@@ -71,20 +71,20 @@ For more information about our privacy statement, see [Microsoft Privacy Stateme
 
 -   Before running the analyzer, we recommend ensuring your proxy or firewall
     configuration allows access to [Microsoft Defender for Endpoint service
-    URLs](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-proxy-internet#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server).
+    URLs](/microsoft-365/security/defender-endpoint/configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server).
 
 -   The analyzer can run on supported editions of
-    [Windows](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/minimum-requirements#supported-windows-versions),
-    [Linux](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-linux#system-requirements),
+    [Windows](/microsoft-365/security/defender-endpoint/minimum-requirements.md#supported-windows-versions),
+    [Linux](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-linux.md#system-requirements),
     or
-    [macOS](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-mac#system-requirements)
+    [macOS](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-mac.md#system-requirements)
     either before of after onboarding to Microsoft Defender for Endpoint.
 
 -   For Windows devices, if you are running the analyzer directly on specific machines and not
     remotely via [Live
-    Response](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/troubleshoot-collect-support-log),
+    Response](/microsoft-365/security/defender-endpoint/troubleshoot-collect-support-log),
     then SysInternals
-    [PsExec.exe](https://docs.microsoft.com/sysinternals/downloads/psexec)
+    [PsExec.exe](/sysinternals/downloads/psexec)
     should be allowed (at least temporarily) to run.  
     The analyzer calls into PsExec.exe tool to run cloud connectivity checks as
     Local System and emulate the behavior of the SENSE service.
@@ -92,8 +92,8 @@ For more information about our privacy statement, see [Microsoft Privacy Stateme
     > [!NOTE]
     > On Windows devices, if you use Attack Surface Reduction (ASR) rule [Block process creations
     originating from PSExec and WMI
-    commands](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/attack-surface-reduction#block-process-creations-originating-from-psexec-and-wmi-commands),
+    commands](/microsoft-365/security/defender-endpoint/attack-surface-reduction.md#block-process-creations-originating-from-psexec-and-wmi-commands),
     then you should temporarily disable the rule or [configure an exclusion to
     the ASR
-    rule](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/enable-attack-surface-reduction#exclude-files-and-folders-from-asr-rules)
+    rule](/microsoft-365/security/defender-endpoint/enable-attack-surface-reduction.md#exclude-files-and-folders-from-asr-rules)
     to allow the analyzer to run connectivity checks to cloud as expected.
