@@ -110,6 +110,7 @@ Retention policies can be applied to the following locations:
 - Exchange public folders
 - Teams channel messages
 - Teams chats
+- Teams private channel messages
 - Yammer community messages
 - Yammer user messages
 
@@ -429,7 +430,7 @@ To use the retention cmdlets, you must first [connect to the Office 365 Security
 
 - [Remove-RetentionCompliancePolicy](/powershell/module/exchange/remove-retentioncompliancepolicy)
 
-- [Set-RecordReviewNotificationTemplateConfig](/powershell/module/exchange/set-recordreviewnotificationtemplateconfig )
+- [Set-RecordReviewNotificationTemplateConfig](/powershell/module/exchange/set-recordreviewnotificationtemplateconfig)
 
 - [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy)
 

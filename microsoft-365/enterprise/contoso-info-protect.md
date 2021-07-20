@@ -60,11 +60,11 @@ Contoso followed these steps to prepare Microsoft 365 for enterprise for their i
 
    Contoso created sensitivity labels for their data levels, with their highly regulated label that includes encryption, permissions, and watermarks.
 
-4.	Move data from on-premises SharePoint sites and file shares to their new SharePoint sites
+4. Move data from on-premises SharePoint sites and file shares to their new SharePoint sites
 
     The files migrated to the new SharePoint sites inherited the default retention labels assigned to the site.
 
-5.	Train employees how to use sensitivity labels for new documents, how to interact with Contoso IT when creating new SharePoint sites, and to always store digital assets on SharePoint sites
+5. Train employees how to use sensitivity labels for new documents, how to interact with Contoso IT when creating new SharePoint sites, and to always store digital assets on SharePoint sites
 
     Changing bad worker information-storage habits is often considered the hardest part of the information protection transition for the cloud. Contoso IT and management needed to get employees to always label and store their digital assets in the cloud, refrain from using on-premises file shares, and not use third-party cloud storage services or USB drives.
 
