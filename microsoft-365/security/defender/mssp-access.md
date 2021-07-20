@@ -45,10 +45,9 @@ To implement a multi-tenant delegated access solution, take the following steps:
 
     These groups will be linked to the Roles you create in Defender for Endpoint in Microsoft 365 security center. To do so, in the customer AD tenant, create three groups. In our example approach, we create the following groups:
 
-    - Tier 1 Analyst 
-    - Tier 2 Analyst 
+    - Tier 1 Analyst
+    - Tier 2 Analyst
     - MSSP Analyst Approvers  
-
 
 2. Create Defender for Endpoint roles for appropriate access levels in Customer Defender for Endpoint in Microsoft 365 security center roles and groups.
 
@@ -68,12 +67,10 @@ To implement a multi-tenant delegated access solution, take the following steps:
 
     For more information, see [Use role-based access control](/windows/security/threat-protection/microsoft-defender-atp/rbac).
 
-
-
 ## Configure Governance Access Packages
 
-1.	**Add MSSP as Connected Organization in Customer AAD: Identity Governance**
-    
+1. **Add MSSP as Connected Organization in Customer AAD: Identity Governance**
+
     Adding the MSSP as a connected organization will allow the MSSP to request and have accesses provisioned. 
 
     To do so, in the customer AD tenant, access Identity Governance: Connected organization. Add a new organization and search for your MSSP Analyst tenant via Tenant ID or Domain. We suggest creating a separate AD tenant for your MSSP Analysts.
@@ -82,12 +79,11 @@ To implement a multi-tenant delegated access solution, take the following steps:
 
     Resource catalogs are a logical collection of access packages, created in the customer AD tenant.
 
-    To do so, in the customer AD tenant,  access Identity Governance: Catalogs, and add **New Catalog**. In our example, we will call it **MSSP Accesses**. 
+    To do so, in the customer AD tenant,  access Identity Governance: Catalogs, and add **New Catalog**. In our example, we will call it **MSSP Accesses**.
 
     ![Image of new catalog](../../media/goverance-catalog.png)
 
     Further more information, see [Create a catalog of resources](/azure/active-directory/governance/entitlement-management-catalog-create).
-
 
 3. **Create access packages for MSSP resources Customer AAD: Identity Governance**
 
@@ -104,29 +100,27 @@ To implement a multi-tenant delegated access solution, take the following steps:
 
     For more information, see [Create a new access package](/azure/active-directory/governance/entitlement-management-access-package-create).
 
-
 4. **Provide access request link to MSSP resources from Customer AAD: Identity Governance**
 
     The My Access portal link is used by MSSP SOC analysts to request access via the access packages created. The link is durable, meaning the same link may be used over time for new analysts. The analyst request goes into a queue for approval by the **MSSP Analyst Approvers**.
-
 
     ![Image of access properties](../../media/access-properties.png)
 
     The link is located on the overview page of each access package.
 
-## Manage access 
+## Manage access
 
 1. Review and authorize access requests in Customer and/or MSSP myaccess.
 
     Access requests are managed in the customer My Access, by members of the MSSP Analyst Approvers group.
 
-    To do so, access the customer's myaccess using: 
-    `https://myaccess.microsoft.com/@<Customer Domain >`. 
+    To do so, access the customer's myaccess using: `https://myaccess.microsoft.com/@<Customer Domain>`.
 
-    Example:  `https://myaccess.microsoft.com/@M365x440XXX.onmicrosoft.com#/`   
+    Example: `https://myaccess.microsoft.com/@M365x440XXX.onmicrosoft.com#/`
+
 2. Approve or deny requests in the **Approvals** section of the UI.
 
-     At this point, analyst access has been provisioned, and each analyst should be able to access the customer's Microsoft 365 Security Center: 
+     At this point, analyst access has been provisioned, and each analyst should be able to access the customer's Microsoft 365 Security Center:
 
     `https://security.microsoft.com/?tid=<CustomerTenantId>` with the permissions and roles they were assigned.
 

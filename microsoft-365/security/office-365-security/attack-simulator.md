@@ -1,5 +1,5 @@
 ---
-title: Attack Simulator in Microsoft Defender for Office 365
+title: Attack Simulator in the Security & Compliance Center
 f1.keywords: 
   - NOCSH
 ms.author: chrisda
@@ -18,12 +18,12 @@ ms.collection:
   - m365initiative-defender-office365
 ms.custom: 
   - seo-marvel-apr2020
-description: Admins can learn how to use Attack Simulator to run simulated phishing and password attacks in their Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2 organizations.
+description: Admins can learn how to use Attack Simulator in the Security & Complance Center to run simulated phishing and password attacks in their Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2 organizations.
 ms.technology: mdo
 ms.prod: m365-security
 ---
 
-# Attack Simulator in Microsoft Defender for Office 365
+# Attack Simulator in the Security & Compliance Center
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 

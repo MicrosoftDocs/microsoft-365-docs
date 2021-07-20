@@ -22,7 +22,7 @@ description: "Expand your Microsoft 365 presence to multiple geographic regions 
 
 # Multi-Geo Capabilities in OneDrive and SharePoint Online
 
-Multi-Geo capabilities in OneDrive and SharePoint Online enables control of shared resources like SharePoint team sites and Microsoft 365 Group mailboxes stored at rest in a country or region.
+Multi-Geo capabilities in OneDrive and SharePoint Online enables control of shared resources like SharePoint team sites and Microsoft 365 Group mailboxes stored at rest in a specified geo location.
 
 Each user, Group mailbox, and SharePoint site has a Preferred Data Location (PDL) which denotes the geo location where related data is to be stored. Users' personal data (Exchange mailbox and OneDrive) along with any Microsoft 365 Groups or SharePoint sites that they create can be stored in the specified geo location to meet data residency requirements. You can [specify different administrators for each geo location](add-a-sharepoint-geo-admin.md).
 
@@ -38,7 +38,7 @@ Management of the Multi-Geo feature is available through the SharePoint admin ce
 
 When a user creates a SharePoint group-connected site in a multi-geo environment, their PDL is used to determine the geo location where the site and its associated Group mailbox is created. (If the user's PDL value hasn't been set, or has been set to geo location that hasn't been configured as a satellite location, then the site and mailbox are created in the central location.)
 
-Microsoft 365 services other than Exchange, OneDrive, and SharePoint are not Multi-Geo. However, Microsoft 365 Groups that are created by these services will be stamped with the PDL of the creator and their Exchange Group mailbox and SharePoint O365 Group Site provisioned in the corresponding geo. 
+Microsoft 365 services other than Exchange, OneDrive, SharePoint, and Teams are not Multi-Geo. However, Microsoft 365 Groups that are created by these services will be configured with the PDL of the creator and their Exchange Group mailbox, SharePoint site are provisioned in the corresponding geo. 
 
 ## Managing the multi-geo environment
 
