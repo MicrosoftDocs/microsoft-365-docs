@@ -20,6 +20,7 @@ ms.custom:
 - okr_SMB
 - manage_licenses
 - commerce_licensing
+- AdminTemplateSet
 search.appverid: MET150
 description: "Assign licenses depending on whether you want to assign product licenses to specific users or assign users licenses to a specific product."
 ms.date: 04/26/2021

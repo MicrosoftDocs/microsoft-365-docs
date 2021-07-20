@@ -15,9 +15,9 @@ description: "Learn how to set up and use a CellTrust SL2 data connector to impo
 ---
 
 
-# Archive data from CellTrust SL2 to Microsoft 365 (preview)
+# Archive data from CellTrust SL2 to Microsoft 365
 
-CellTrust SL2 captures mobile communications data and integrates with the leading archiving technologies to meet the electronic discovery requirements for regulations such as FINRA, HIPAA, FOIA, and TCPA. The SL2 Data Connector imports mobile communication items to Microsoft 365. This article describes the process for integrating SL2 with Microsoft 365 by using the CellTrust SL2 Data Connector for archiving. Completing this process assumes that you have subscribed to CellTrust SL2 service and are familiar with the SL2 architecture. For information about SL2, see <www.celltrust.com>.
+CellTrust SL2 captures mobile communications data and integrates with the leading archiving technologies to meet the electronic discovery requirements for regulations such as FINRA, HIPAA, FOIA, and TCPA. The SL2 Data Connector imports mobile communication items to Microsoft 365. This article describes the process for integrating SL2 with Microsoft 365 by using the CellTrust SL2 Data Connector for archiving. Completing this process assumes that you have subscribed to CellTrust SL2 service and are familiar with the SL2 architecture. For information about CellTrust SL2, see <https://www.celltrust.com>.
 
 After data is imported to user mailboxes in Microsoft 365, you can apply Microsoft 365 compliance features such as Litigation Hold, eDiscovery, Microsoft 365 retention policies, and communication compliance. Using the CellTrust SL2 Data Connector to import and archive data in Microsoft 365 can help your organization stay compliant with government and regulatory policies.
 
@@ -27,7 +27,7 @@ CellTrust's SL2 platform captures communication data from multiple sources. SL2 
 
 ![Archiving workflow for CellTrust SL2 service](../media/CellTrustSL2ConnectorWorkflow.png)
 
-1. SL2 users send and receive data to and from SL2 services in the Microsoft Azure cloud.
+1. SL2 users send and receive data to and from SL2 services in Microsoft Azure.
 
 2. Your organization has an SL2 domain in CellTrust's SL2 Cloud Service environment. Your domain may have one or more organizational units (OUs). The SL2 Cloud Service transfers your data to a highly secure area in the Microsoft Azure platform, so that your data never leaves the Microsoft Azure environment. Depending on your SL2 plan (Enterprise, SMB, or Government), your domain is either hosted on Microsoft Azure Global or Microsoft Azure Government.
 
