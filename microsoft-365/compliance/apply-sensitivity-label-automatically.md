@@ -237,7 +237,7 @@ Workflow for an auto-labeling policy:
 
 2. Run the policy in simulation mode, which can take 48 hours to complete.
     
-    With the [recent enhancements](#recent-enhancements-for-auto-labeling-policies) now rolling out, this time is reduced to 12 hours and the completed simultation triggers an email notification.
+    With the [recent enhancements](#recent-enhancements-for-auto-labeling-policies) now rolling out, this time is reduced to 12 hours and the completed simultation triggers an email notification that's sent to the user configured to receive [activity alerts](alert-policies.md).
 
 3. Review the results, and if necessary, refine your policy. Rerun simulation mode and wait for it to complete again.
 
