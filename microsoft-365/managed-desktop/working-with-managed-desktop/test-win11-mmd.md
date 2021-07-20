@@ -19,7 +19,7 @@ ms.collection: M365-modern-desktop
 
 To date, more than 95% of Microsoft Managed Desktop devices meet [eligibility criteria for Windows 11](/windows/whats-new/windows-11-requirements). You can request details about the eligibility status of your devices from Microsoft Managed Desktop. To file the request, follow these steps:
 
-1. Open a new service request with the Microsoft Managed Desktop Service Engineering team. If you need more info on how to do file the request, see [Admin support](admin-support.md).
+1. Open a new service request with the Microsoft Managed Desktop Service Engineering team. If you need more info on how to file the request, see [Admin support](admin-support.md).
 2. Use these values for the fields:
     - Title: Windows 11 device eligibility
     - Request type: Request for information
@@ -29,7 +29,7 @@ To date, more than 95% of Microsoft Managed Desktop devices meet [eligibility cr
 
 ## Add devices to the Windows 11 test group
 
-Start by adding devices to the device group (**\[Modern Workplace\] Windows 11 Pre-Release Test Devices**) created for testing and evaluating Windows 11. Devices in this group get new Windows 11 builds and Microsoft Managed Desktop baseline configurations as they become available and are monitored for reliability issues.
+Upon request, we will create the device group (**Modern Workplace - Windows 11 Pre-Release Test Devices**) for testing and evaluating Windows 11. Devices in this group get new Windows 11 builds and Microsoft Managed Desktop baseline configurations as they become available, and are monitored for reliability issues.
 
 You can choose any of your existing or new devices for Windows 11 testing, but you shouldn't enroll production devices in this group due to the elevated risk of defects or compatibility issues in pre-release builds. Prior device group assignments are removed upon assignment to this group.
 
@@ -47,7 +47,7 @@ To enroll your devices in the pre-release test group:
 
 Business-critical applications are the best candidates for more validation in a closed Windows 11 environment. We can help you prioritize apps for Windows 11 testing based on usage and reliability data. To request our recommendations, follow these steps:
 
-1. Open a new service request with the Microsoft Managed Desktop Service Engineering team. If you need more info on how to do file the request, see [Admin support](admin-support.md).
+1. Open a new service request with the Microsoft Managed Desktop Service Engineering team. If you need more info on how to file the request, see [Admin support](admin-support.md).
 2. Use these values for the fields:
     - Title: Windows 11 Test Base candidates
     - Request type: Request for information
