@@ -13,16 +13,16 @@ ms.topic: article
 
 # Work with reports
 
-The Microsoft Endpoint Manager console brings together reporting from several products into a single location to help you monitor and investigate issues with your Azure AD organization ("tenant") configuration and devices. Microsoft Managed desktop has a section Reports where you can find reports specific to Microsoft Managed Desktop's management of the devices you’ve registered. Additionally, in several locations throughout Microsoft Endpoint Manager you can filter reports from other product groups to specifically include or exclude your devices that are managed by Microsoft Managed Desktop. 
+The Microsoft Endpoint Manager console brings together reporting from several products into a single location to help you monitor and investigate issues with your Azure AD organization ("tenant") configuration and devices. Microsoft Managed desktop has a section in the **Reports** menu where you can find reports specific to Microsoft Managed Desktop's management of the devices you’ve registered. Additionally, in several locations throughout Microsoft Endpoint Manager you can filter reports from other product groups to specifically include or exclude your devices that are managed by Microsoft Managed Desktop. 
 
 ## Microsoft Managed Desktop reports
 Microsoft Managed Desktop provides several reports and dashboards that IT admins in your organization can use to understand various aspects of the population of devices. You can find these reports by navigating to **Managed devices** under the *Microsoft Managed Desktop* section of the **Reports** menu in Microsoft Endpoint Manager. 
 
-On the **Summary** tab you'll find quick metrics about device updates. Selecting **View details** of any metric will allow you to download additional information for offline analysis, including the underlying dataset for the metric.
+On the **Summary** tab, you'll find quick metrics about device updates. Selecting **View details** of any metric will allow you to download additional information for offline analysis, including the underlying dataset for the metric.
 
 When you select the **Reports** tab, you will see descriptions for the available detailed reports. These reports are more comprehensive and support visualization and filtering of the data in the portal as well as exporting the underlying data for offline analysis or distribution. The following reports are available today:
 - The **Device status** *(preview)* shows your use of the Microsoft Managed Desktop service based on device activity and usage. 
-- You can use **Device status trend** *(preview)* to monitor trends in device status over the last 60 days for your Microsoft Managed Desktop devices. Doing this can help  you associate device status with other changes over time, for example, new deployments. 
+- You can use **Device status trend** *(preview)* to monitor trends in device status over the last 60 days for your Microsoft Managed Desktop devices. Trends can help  you associate device status with other changes over time, for example, new deployments. 
 - The **Windows security updates** *(preview)* report shows how Windows security updates are released across your Microsoft Managed Desktop devices.
 
 > [!NOTE]
