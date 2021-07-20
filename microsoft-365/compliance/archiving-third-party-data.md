@@ -238,6 +238,7 @@ Here are a few examples for **itemclass** values for different types of third-pa
 | CellTrust                 | ipm.externaldata.celltrust*        |
 | Pivot                     | ipm.externaldata.pivot*            |
 | WhatsApp Archiver         | ipm.externaldata.whatsapparchiver* |
+|||
 
 Values for the *itemclass* property are not case-sensitive. In general, use the name of the third-party data type (without spaces) followed by a wildcard ( * ) character.
 
