@@ -25,7 +25,9 @@ description: "Understand how to use and manage templates for building assessment
 
 ## Templates overview
 
-A template is a framework of controls for creating an assessment in Compliance Manager. Our comprehensive set of templates can help your organization comply with national, regional, and industry-specific requirements governing the collection and use of data. We refer to templates by the same name as their underlying certification or regulation, such as the EU GDPR template and the ISO/IEC 27701:2019 template. Since Compliance Manger can be used to assess different types of products, each template comes in two versions: one that applies to Microsoft 365, and a universal version that can be tailored to suit your chosen product.
+A template is a framework of controls for creating an assessment in Compliance Manager. Our comprehensive set of templates can help your organization comply with national, regional, and industry-specific requirements governing the collection and use of data.
+
+We refer to templates by the same name as their underlying certification or regulation, such as the EU GDPR template and the ISO/IEC 27701:2019 template. Since Compliance Manger can be used to assess different types of products, each template comes in two versions: one that applies to Microsoft 365, and a universal version that can be tailored to suit your chosen product.
 
 Note that US Government Community (GCC) Moderate, GCC High, and Department of Defense (DoD) customers can currently use the Microsoft 365 template versions, but not universal.
 
