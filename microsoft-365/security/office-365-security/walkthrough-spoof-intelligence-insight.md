@@ -44,9 +44,6 @@ You can manage spoof intelligence in the Microsoft 365 Defender portal, or in Po
 - You open the Microsoft 365 Defender portal at <https://security.microsoft.com>.
   - To go directly to the **Anti-spam policies** page, use <https://security.microsoft.com/antispam>.
 
-- You open the Security & Compliance Center at <https://protection.office.com/>.
-  - To go directly to the **Security dashboard** page for the spoof intelligence insight, use <https://protection.office.com/searchandinvestigation/dashboard>.
-
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - You need to be assigned permissions in **Exchange Online** before you can do the procedures in this article:
