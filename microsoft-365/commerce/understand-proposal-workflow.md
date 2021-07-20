@@ -5,17 +5,21 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: presharm, jmueller
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: 
-- commerce
-ms.custom: AdminSurgePortfolio
-search.appverid:
-- MET150
+- M365-subscription-management
+- Adm_O365
+ms.custom: 
+- AdminSurgePortfolio
+- commerce_purchase
+search.appverid: MET150 
 description: "Learn about proposals to help you buy Microsoft products and services."
 ROBOTS: NOINDEX
+ms.date: 03/17/2021
 ---
 
 # Understand the proposal workflow
@@ -75,7 +79,7 @@ you automatically become the billing account owner, provided you:
 
 - Are the person named in the proposal\
     OR
-- Are already an [Azure Active Directory global admin](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) for your
+- Are already an [Azure Active Directory global admin](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) for your
     organization
 
 ## What is the overall workflow?
@@ -84,19 +88,14 @@ The overall proposal workflow looks like this:
 
 - Your Microsoft representative creates a proposal and sends a link to
     you in an email.
-
 - You use the link to go to the proposal sign-in page.
-
 - You review your organization's information.
-
 - You review the proposal, accept the MCA if needed, and finish the
     checkout process.
-
     > [!IMPORTANT]
     > You must have the authority to sign an MCA on behalf of
     > your organization. If you don't have that authority, then someone who
     > does must do this step.
-
 - After checkout is finished, you're given additional links to set up
     your products and services.
 
@@ -137,7 +136,7 @@ incorrect, contact the representative to make changes for you. After
 you've accepted an MCA, you can review and change your organization's
 address and contact information on the [Billing accounts](https://go.microsoft.com/fwlink/p/?linkid=2084771) page in the
 Microsoft 365 admin center. If your organization name changes, open a
-service request to have it updated. [Learn how to open a service request](../admin/contact-support-for-business-products.md)
+service request to have it updated. [Learn how to open a service request](../business-video/get-help-support.md)
 
 ### Your information
 
@@ -218,13 +217,10 @@ This section shows a list of all items included in the proposal. The list can in
 - **Supplemental terms** A list of any amendments to the MCA that
     contain terms for your organization. For example, this list might
     include HIPAA or GDPR terms.
-
 - **Purchase now** A list of items that you pay for during checkout at
     the end of the proposal acceptance workflow.
-
 - **Discounts (applied to future charges)** A list of discounts that
     you receive as part of the proposal.
-
 - **Included** A list of items included as part of the proposal
     package at no additional charge. Some of these items might have a
     cost associated with them in the future.
@@ -234,7 +230,7 @@ This section shows a list of all items included in the proposal. The list can in
 This section shows the number of items being paid for, the subtotal, estimated
 taxes, and the total amount for the order.
 
-To place the order, select **Place order** or **Accept agreement & place
+To place the order, select **Place order** or **Accept agreement &amp; place
 order**.
 
 After you place the order, you receive a confirmation with next steps to
@@ -245,14 +241,14 @@ billing account in the Azure portal.
 
 If you're a new customer and have bought Azure products as part of the
 proposal, your next step is to set up your new billing account. To learn
-how, see [Set up your billing account for a Microsoft Customer Agreement](https://docs.microsoft.com/azure/cost-management-billing/manage/mca-setup-account).
+how, see [Set up your billing account for a Microsoft Customer Agreement](/azure/cost-management-billing/manage/mca-setup-account).
 
 If you're an existing Azure customer with an Enterprise Agreement, and
 you're signing an MCA for the first time, your next step is to learn
 about the changes between the agreements, and how to complete tasks with
 your new billing account. To learn more, see [Complete Enterprise
 Agreement tasks in your billing account for a Microsoft Customer
-Agreement](https://docs.microsoft.com/azure/cost-management-billing/manage/mca-enterprise-operations).
+Agreement](/azure/cost-management-billing/manage/mca-enterprise-operations).
 
 ## Understand invoicing
 

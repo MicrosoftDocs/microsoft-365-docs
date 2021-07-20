@@ -1,6 +1,6 @@
 ---
-title: Investigate malicious email that was delivered in Office 365, Find and investigate malicious email
-keywords: TIMailData-Inline, Security Incident, incident, ATP PowerShell, email malware, compromised users, email phish, email malware, read email headers, read headers, open email headers,special actions
+title: Investigate malicious email that was delivered in Microsoft 365, Find and investigate malicious email
+keywords: TIMailData-Inline, Security Incident, incident, Microsoft Defender for Endpoint PowerShell, email malware, compromised users, email phish, email malware, read email headers, read headers, open email headers,special actions
 f1.keywords: 
   - NOCSH
 ms.author: tracyp
@@ -23,16 +23,16 @@ ms.technology: mdo
 ms.prod: m365-security
 ---
 
-# Investigate malicious email that was delivered in Office 365
+# Investigate malicious email that was delivered in Microsoft 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-**Applies to**
+**Applies to:**
 
-- [Microsoft Defender for Office 365 plan 1 and plan 2](office-365-atp.md)
-- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-[Microsoft Defender for Office 365](office-365-atp.md) enables you to investigate activities that put people in your organization at risk, and to take action to protect your organization. For example, if you are part of your organization's security team, you can find and investigate suspicious email messages that were delivered. You can do this by using [Threat Explorer (or real-time detections)](threat-explorer.md).
+[Microsoft Defender for Office 365](defender-for-office-365.md) enables you to investigate activities that put people in your organization at risk, and to take action to protect your organization. For example, if you are part of your organization's security team, you can find and investigate suspicious email messages that were delivered. You can do this by using [Threat Explorer (or real-time detections)](threat-explorer.md).
 
 > [!NOTE]
 > Jump to the remediation article [here](remediate-malicious-email-delivered-office-365.md).
@@ -41,49 +41,50 @@ ms.prod: m365-security
 
 Make sure that the following requirements are met:
 
-- Your organization has [Microsoft Defender for Office 365](office-365-atp.md) and [licenses are assigned to users](../../admin/manage/assign-licenses-to-users.md).
+- Your organization has [Microsoft Defender for Office 365](defender-for-office-365.md) and [licenses are assigned to users](../../admin/manage/assign-licenses-to-users.md).
 
-- [audit logging](../../compliance/turn-audit-log-search-on-or-off.md) is turned on for your organization.
+- [Audit logging](../../compliance/turn-audit-log-search-on-or-off.md) is turned on for your organization.
 
 - Your organization has policies defined for anti-spam, anti-malware, anti-phishing, and so on. See [Protect against threats in Office 365](protect-against-threats.md).
 
-- You are a global administrator, or you have either the Security Administrator or the Search and Purge role assigned in the Security & Compliance Center. See [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md). For some actions, you must also have a new Preview role assigned.
+- You are a global administrator, or you have either the Security Administrator or the Search and Purge role assigned in the Microsoft 365 Defender portal. For more information, see [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md). For some actions, you must also have the Preview role assigned.
 
 ### Preview role permissions
 
-To perform certain actions, such as viewing message headers or downloading email message content, you must have a new role called *Preview* added to another appropriate role group. The following table clarifies required roles and permissions.
+To perform certain actions, such as viewing message headers or downloading email message content, you must have the *Preview* role added to another appropriate role group. The following table clarifies required roles and permissions.
+
+<br>
 
 ****
 
 |Activity|Role group|Preview role needed?|
 |---|---|---|
-|Use Threat Explorer (and real-time detections) to analyze threats |Global Administrator <p> Security Administrator <p> Security Reader|No|
-|Use Threat Explorer (and real-time detections) to view headers for email messages as well as preview and download quarantined email messages|Global Administrator <p> Security Administrator <p> Security Reader|No|
+|Use Threat Explorer (and Real-time detections) to analyze threats |Global Administrator <p> Security Administrator <p> Security Reader|No|
+|Use Threat Explorer (and Real-time detections) to view headers for email messages as well as preview and download quarantined email messages|Global Administrator <p> Security Administrator <p> Security Reader|No|
 |Use Threat Explorer to view headers, preview email (only in the email entity page) and download email messages delivered to mailboxes|Global Administrator <p> Security Administrator <p> Security Reader <p> Preview|Yes|
 |
 
 > [!NOTE]
-> *Preview* is a role and not a role group; the Preview role must be added to an existing role group for Office 365 (at <https://protection.office.com>). Go to **Permissions**, and then either edit an existing role group or add a new role group with the **Preview** role assigned.
-> The Global Administrator role is assigned the Microsoft 365 admin center (<https://admin.microsoft.com>), and the Security Administrator and Security Reader roles are assigned in the Security & Compliance Center (<https://protection.office.com>). To learn more about roles and permissions, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+> *Preview* is a role, not a role group. The Preview role must be added to an existing role group in the Microsoft 365 Defender portal  (<https://security.microsoft.com>). Go to **Permissions**, and then either edit an existing role group or add a new role group with the **Preview** role assigned.
+>
+> The Global Administrator role is assigned the Microsoft 365 admin center (<https://admin.microsoft.com>), and the Security Administrator and Security Reader roles are assigned in Microsoft 365 Defender (<https://security.microsoft.com>). To learn more about roles and permissions, see [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).
 
-We understand previewing and downloading email are sensitive activities, and so we auditing is enabled for these. Once an admin performs these activities on emails, audit logs are generated for the same and can be seen in the Office 365 Security & Compliance Center (<https://protection.office.com>). Go to **Search** > **Audit log search** and filter on the admin name in Search section. The filtered results will show activity **AdminMailAccess**. Select a row to view details in the **More information** section about previewed or downloaded email.
+We understand previewing and downloading email are sensitive activities, and so we auditing is enabled for these. Once an admin performs these activities on emails, audit logs are generated for the same and can be seen in the Microsoft 365 Defender portal (<https://security.microsoft.com>). Go to **Audit** \> **Search** tab, and filter on the admin name in **Users** box. The filtered results will show activity **AdminMailAccess**. Select a row to view details in the **More information** section about previewed or downloaded email.
 
 ## Find suspicious email that was delivered
 
 Threat Explorer is a powerful report that can serve multiple purposes, such as finding and deleting messages, identifying the IP address of a malicious email sender, or starting an incident for further investigation. The following procedure focuses on using Explorer to find and delete malicious email from recipient's mailboxes.
 
 > [!NOTE]
-> Default searches in Explorer don't currently include Zapped items.  This applies to all views, for example malware or phish views. To include Zapped items you need to add a **Delivery action** set to include **Removed by ZAP**. If you include all options, you'll see all delivery action results, including Zapped items.
+> Default searches in Explorer don't currently include delivered items that were removed from the cloud mailbox by zero-hour auto protection (ZAP). This limitation applies to all views (for example, the **Email \> Malware** or **Email \> Phish** views). To include items removed by ZAP, you need to add a **Delivery action** set to include **Removed by ZAP**. If you include all options, you'll see all delivery action results, including items removed by ZAP.
 
-1. **Navigate to Threat Explorer**: Go to <https://protection.office.com> and sign in using your work or school account for Office 365. This takes you to the Security & Compliance Center.
+1. Open the Microsoft 365 Defender portal <https://security.microsoft.com> and sign in using your work or school account for Office 365.
 
-2. In the left navigation quick-launch, choose **Threat management** \> **Explorer**.
+2. Go to **Threat Explorer** by choosing **Email & collaboration** \> **Explorer** in the left navigation. To go to **Threat Explorer** directly, use <https://security.microsoft.com/threatexplorer>.
 
-    ![Explorer with Delivery Action and Delivery Location fields.](../../media/ThreatExFields.PNG)
+   On the **Explorer** page, the **Additional actions** column shows admins the outcome of processing an email. The **Additional actions** column can be accessed in the same place as **Delivery action** and **Delivery location**. Special actions might be updated at the end of Threat Explorer's email timeline, which is a new feature aimed at making the hunting experience better for admins.
 
-    You may notice the new **Special actions** column. This feature is aimed at telling admins the outcome of processing an email. The **Special actions** column can be accessed in the same place as **Delivery action** and **Delivery location**. Special actions might be updated at the end of Threat Explorer's email timeline, which is a new feature aimed at making the hunting experience better for admins.
-
-3. **Views in Threat Explorer**: In the **View** menu, choose **All email**.
+3. In the **View** menu, choose **Email** \> **All email** from the drop down list.
 
     ![Threat explorer View menu, and Email - Malware, Phish, Submissions and All Email options, also Content - Malware.](../../media/tp-InvestigateMalEmail-viewmenu.png)
 
@@ -103,11 +104,11 @@ Threat Explorer is a powerful report that can serve multiple purposes, such as f
 
 5. **Advanced filters**: With these filters, you can build complex queries and filter your data set. Clicking on *Advanced Filters* opens a flyout with options.
 
-   Advanced filtering is a great addition to search capabilities. A boolean **NOT** filter has been introduced on *Recipient*, *Sender* and *Sender domain* to allow admins to investigate by excluding values. This option appears under selection parameter *Contains none of*. **NOT** will let admins exclude alert mailboxes, default reply mailboxes from their investigations, and is useful for cases where admins search for a specific subject (subject="Attention") where the Recipient can be set to *none of defaultMail\@contoso.com*. This is an exact value search.
+   Advanced filtering is a great addition to search capabilities. A boolean NOT on the **Recipient**, **Sender** and **Sender domain** filters allows admins to investigate by excluding values. This option is the **Equals none of** selection. This option allows admins to exclude unwanted mailboxes from investigations (for example, alert mailboxes and default reply mailboxes), and is useful for cases where admins search for a specific subject (for example, Attention) where the Recipient can be set to *Equals none of: defaultMail@contoso.com*. This is an exact value search.
 
    ![The Recipients - 'Contains none of' Advanced filter.](../../media/tp-InvestigateMalEmail-AdvancedFilter.png)
 
-   *Filtering by hours* will help your organization's security team drill down quickly. The shortest allowed time duration is 30 minutes. If you can narrow the suspicious action by time-frame (e.g. it happened 3 hours ago), this will limit the context and help pinpoint the problem.
+   Adding a time filter to the start date and end date helps your security team to drill down quickly. The shortest allowed time duration is 30 minutes. If you can narrow the suspicious action by time-frame (e.g., it happened 3 hours ago), this will limit the context and help pinpoint the problem.
 
    ![The filtering by hours option to narrow the amount of data security teams have to process, and whose shortest duration is 30 minutes.](../../media/tp-InvestigateMalEmail-FilterbyHours.png)
 
@@ -133,6 +134,8 @@ Threat Explorer is a powerful report that can serve multiple purposes, such as f
     **Directionality**: This option allows your security operations team to filter by the 'direction' a mail comes from, or is going. Directionality values are *Inbound*, *Outbound*, and *Intra-org* (corresponding to mail coming into your org from outside, being sent out of your org, or being sent internally to your org, respectively). This information can help security operations teams spot spoofing and impersonation, because a mismatch between the Directionality value (ex. *Inbound*), and the domain of the sender (which *appears* to be an internal domain) will be evident! The Directionality value is separate, and can differ from, the Message Trace. Results can be exported to spreadsheet.
 
     **Overrides**: This filter takes information that appears on the mail's details tab and uses it to expose where organizational, or user policies, for allowing and blocking mails have been *overridden*. The most important thing about this filter is that it helps your organization's security team see how many suspicious emails were delivered due to configuration. This gives them an opportunity to modify allows and blocks as needed. This result set of this filter can be exported to spreadsheet.
+
+    <br>
 
     ****
 
@@ -164,33 +167,23 @@ In [Threat Explorer (and real-time detections)](threat-explorer.md), you now hav
 Delivery Status is now broken out into two columns:
 
 - **Delivery action** - What is the status of this email?
-
 - **Delivery location** - Where was this email routed as a result?
 
 Delivery action is the action taken on an email due to existing policies or detections. Here are the possible actions an email can take:
 
 - **Delivered** – email was delivered to inbox or folder of a user and the user can directly access it.
-
 - **Junked** – email was sent to either user's junk folder or deleted folder, and the user has access to email messages in their Junk or Deleted folder.
-
 - **Blocked** – any email messages that are quarantined, that failed, or were dropped. (This is completely inaccessible by the user.)
-
 - **Replaced** – any email where malicious attachments are replaced by .txt files that state the attachment was malicious.
 
 Delivery location shows the results of policies and detections that run post-delivery. It's linked to a Delivery Action. This field was added to give insight into the action taken when a problem mail is found. Here are the possible values of delivery location:
 
 - **Inbox or folder** – The email is in the inbox or a folder (according to your email rules).
-
 - **On-prem or external** – The mailbox doesn't exist on cloud but is on-premises.
-
 - **Junk folder** – The email is in a user's Junk folder.
-
 - **Deleted items folder** – The email is in a user's Deleted items folder.
-
 - **Quarantine** – The email in quarantine, and not in a user's mailbox.
-
 - **Failed** – The email failed to reach the mailbox.
-
 - **Dropped** – The email gets lost somewhere in the mail flow.
 
 ### View the timeline of your email
@@ -208,4 +201,4 @@ Delivery location shows the results of policies and detections that run post-del
 
 [Protect against threats in Office 365](protect-against-threats.md)
 
-[View reports for Defender for Office 365](view-reports-for-atp.md)
+[View reports for Defender for Office 365](view-reports-for-mdo.md)

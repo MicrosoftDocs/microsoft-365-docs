@@ -39,5 +39,5 @@ When we detect significant issues within Microsoft's global network or with inte
 Use these resources to improve your network utilization for Microsoft services.
 
 - [Optimize Microsoft 365 connectivity for remote users using VPN split tunneling](microsoft-365-vpn-split-tunnel.md)
-- [Microsoft 365 principles of network connectivity](https://aka.ms/pnc)
-- [Working remotely using Azure Networking services](https://docs.microsoft.com/azure/networking/working-remotely-support)
+- [Microsoft 365 principles of network connectivity](./microsoft-365-network-connectivity-principles.md)
+- [Working remotely using Azure Networking services](/azure/networking/working-remotely-support)

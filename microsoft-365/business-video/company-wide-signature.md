@@ -2,8 +2,8 @@
 title: "Create a company-wide signature"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -24,6 +24,8 @@ description: "Learn how to create a company-wide email signature."
 ---
 
 # Create a company-wide email signature
+
+## Watch: Create a company-wide email signature
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1IEWf?autoplay=false]
 

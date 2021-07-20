@@ -8,8 +8,8 @@ metadata:
   description: Manage email settings, distribution groups, security settings, and set up shared mailboxes # Required; article description that is displayed in search results. < 160 chars.
   ms.service: O365-administration #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: landing-page # Required
-  author: sirkkuw #Required; your GitHub user alias, with correct capitalization.
-  ms.author: sirkkuw #Required; microsoft alias of author; optional team alias.
+  author: kwekua #Required; your GitHub user alias, with correct capitalization.
+  ms.author: kwekua #Required; microsoft alias of author; optional team alias.
   ms.date: 04/16/2020 #Required; mm/dd/yyyy format.
   localization_priority: Priority
   ms.custom: AdminSurgePortfolio
@@ -69,10 +69,10 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: Find and fix email delivery issues
-            url: https://docs.microsoft.com/exchange/troubleshoot/mail-delivery/email-delivery-issues
+            url: /exchange/troubleshoot/mail-delivery/email-delivery-issues
           - text: Fix and find issues after adding your domain or DNS records
             url: ../get-help-with-domains/find-and-fix-issues.md
           - text: Recover deleted emails in a user mailbox 
-            url: https://docs.microsoft.com/microsoft-365/enterprise/recover-deleted-items-in-a-mailbox
+            url: /Exchange/recipients-in-exchange-online/manage-user-mailboxes/recover-deleted-messages
           - text: Fix Outlook connection problems in Microsoft 365 and Exchange Online
             url: https://support.microsoft.com/office/e90bb691-c2a7-4697-a94f-88836856c72f

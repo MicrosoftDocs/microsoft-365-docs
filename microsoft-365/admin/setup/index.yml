@@ -8,8 +8,8 @@ metadata:
   description: Set up your subscription and email. add users, and install apps # Required; article description that is displayed in search results. < 160 chars.
   ms.service: O365-administration #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: landing-page # Required
-  author: sirkkuw #Required; your GitHub user alias, with correct capitalization.
-  ms.author: sirkkuw #Required; microsoft alias of author; optional team alias.
+  author: efrene #Required; your GitHub user alias, with correct capitalization.
+  ms.author: efrene #Required; microsoft alias of author; optional team alias.
   ms.date: 04/16/2020 #Required; mm/dd/yyyy format.
   localization_priority: Priority
   ms.custom: AdminSurgePortfolio
@@ -57,7 +57,7 @@ landingContent:
           - text: Install apps
             url: install-applications.md
           - text: Roll out Teams
-            url: https://docs.microsoft.com/microsoftteams/how-to-roll-out-teams
+            url: /microsoftteams/how-to-roll-out-teams
       - linkListType: video
         links:      
           - text: Install apps on Android
@@ -67,4 +67,4 @@ landingContent:
           - text: Train users
             url: https://support.microsoft.com/training  
           - text: Connect PCs to Microsoft 365 Business Premium
-            url: https://support.microsoft.com/office/cd5716f6-05de-430b-ac94-662d5ee71d07 
+            url: https://support.microsoft.com/office/cd5716f6-05de-430b-ac94-662d5ee71d07

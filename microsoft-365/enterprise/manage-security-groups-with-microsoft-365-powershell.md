@@ -70,7 +70,7 @@ $groupName="<display name of the group>"
 Get-AzureADGroup | Where { $_.DisplayName -eq $groupName } | Select *
 ```
 
-Then, use the [Set-AzureADGroup](https://docs.microsoft.com/powershell/module/azuread/set-azureadgroup) article to determine how to change a setting.
+Then, use the [Set-AzureADGroup](/powershell/module/azuread/set-azureadgroup) article to determine how to change a setting.
 
 ### Remove a security group
 
@@ -154,7 +154,7 @@ $groupName="<display name of the group>"
 Get-MsolGroup | Where { $_.DisplayName -eq $groupName } | Select *
 ```
 
-Then, use the [Set-MsolGroup](https://docs.microsoft.com/powershell/module/msonline/set-msolgroup) article to determine how to change a setting.
+Then, use the [Set-MsolGroup](/powershell/module/msonline/set-msolgroup) article to determine how to change a setting.
 
 ### Remove a security group
 
@@ -172,4 +172,3 @@ Remove-MsolGroup -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq $group
 [Manage Microsoft 365 with PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
   
 [Getting started with PowerShell for Microsoft 365](getting-started-with-microsoft-365-powershell.md)
-

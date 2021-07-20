@@ -2,10 +2,10 @@
 title: "Sign in to Microsoft 365"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: sirkkuw
+ms.author: sharik
+author: SKjerland
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -37,6 +37,6 @@ If you signed up for Microsoft 365, you're the Microsoft 365 admin. Here's how t
 
 ## For staff
 
-Set up staff as described in [Add users](../business/add-users-m365b.md?toc=/microsoft-365/campaigns/toc.json)
+Set up staff as described in [Add users](../admin/add-users/add-users.md?toc=%2fmicrosoft-365%2fcampaigns%2ftoc.json)
 You can also reset and resend passwords on the **Add users** page.
 All staff can sign in at <a href="https://office.com" target="_blank">https://Office.com</a>.

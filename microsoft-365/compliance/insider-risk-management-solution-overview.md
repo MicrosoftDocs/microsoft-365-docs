@@ -24,6 +24,17 @@ Increasingly, employees have more access to create, manage, and share data acros
 
 Insider risk management in Microsoft 365 uses the full breadth of service and 3rd-party indicators to help you quickly identify, triage, and act on risky user activity. By using logs from Microsoft 365 and Microsoft Graph, insider risk management allows you to define specific policies to identify risk indicators and to take action to mitigate these risks.
 
+Watch the videos below to learn how insider risk management can help your organization prevent, detect, and contain risks while prioritizing your organization values, culture, and user experience:
+<br>
+<br>
+
+**Insider risk management solution & development**:
+>[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4j9CN]
+<br>
+
+**Insider risk management workflow**:
+>[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4OUXB]
+
 ## Configure insider risk management for Microsoft 365
 
 Use the following steps to configure insider risk management for your organization:
@@ -33,11 +44,11 @@ Use the following steps to configure insider risk management for your organizati
 1. Learn about [insider risk management](insider-risk-management.md) in Microsoft 365
 2. Plan for [insider risk management and verify licensing](insider-risk-management-plan.md)
 3. Configure [insider risk management settings](insider-risk-management-settings.md)
-4. Configure [permissions](insider-risk-management-configure.md#step-1-enable-permissions-for-insider-risk-management) and [policy prerequisites & connectors](insider-risk-management-configure.md#step-3-configure-prerequisites-for-templates)
-5. Create and configure [insider risk management policies](insider-risk-management-configure.md#step-5-create-an-insider-risk-management-policy)
+4. Configure [permissions](insider-risk-management-configure.md#step-1-enable-permissions-for-insider-risk-management) and [policy prerequisites & connectors](insider-risk-management-configure.md#step-4-configure-prerequisites-for-policies)
+5. Create and configure [insider risk management policies](insider-risk-management-configure.md#step-6-create-an-insider-risk-management-policy)
 
 ## More information about insider risk management
 
 - [Manage insider risk policies](insider-risk-management-policies.md)
-- [Investigate insider risk alerts](insider-risk-management-alerts.md)
+- [Investigate insider risk activities](insider-risk-management-activities.md)
 - [Act on insider risk cases](insider-risk-management-cases.md)

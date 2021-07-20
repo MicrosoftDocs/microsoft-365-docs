@@ -2,14 +2,14 @@
 title: Payment information for Austria
 f1.keywords:
 - NOCSH
-author: cmcatee-MSFT
 ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
+ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Learn where to send the payment for your subscription.
 ROBOTS: NOINDEX, NOFOLLOW
@@ -25,17 +25,19 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 If you have an invoice billed by **Microsoft Ireland Operations Limited**, use this bank information:
 
-Bank: Citibank, London\
-SWIFT Code: CITIGB2L\
-IBAN Code: GB31CITI18500812207591\
-SORT Code: 185008\
-Account Number: 12207591\
-Account Name: MICROSOFT
+**Bank:** Citibank, London  
+**SWIFT Code:** CITIGB2L  
+**IBAN Code:** GB31CITI18500812207591  
+**SORT Code:** 185008  
+**Account Number:** 12207591  
+**Account Name:** MICROSOFT
 
 If you have an invoice billed by **MICROSOFT Österreich GmbH** for orders and consumption starting March 1, 2021, use this bank information:
 
-Bank: Citibank Europe plc\
-SWIFT Code: CITIIE2X\
-IBAN Code: IE81CITI99005170000124\
-Account Number: 70000124\
-Account Name: MICROSOFT
+**Bank:** Citibank Europe plc  
+**SWIFT Code:** CITIIE2X  
+**IBAN Code:** IE81CITI99005170000124  
+**Account Number:** 70000124  
+**Account Name:** MICROSOFT  
+
+Invoices issued from a local Microsoft Subsidiary are issued with the standard rate of VAT/Sales Tax/GST and deemed a domestic supply of services for VAT/Sales Tax/GST purposes.

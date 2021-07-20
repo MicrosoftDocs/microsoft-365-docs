@@ -21,10 +21,10 @@ Once app control has been deployed in your environment, both you and Microsoft M
 
 To add a new app, follow these steps:
 
-1. Add the app to [Microsoft Intune](https://docs.microsoft.com/mem/intune/apps/apps-win32-app-management).
+1. Add the app to [Microsoft Intune](/mem/intune/apps/apps-win32-app-management).
 2. Deploy the app to any device in the Test ring. 
 3. Test your app according to your standard business processes. 
-4. Check Event Viewer under **Application and Services Logs\Microsoft\Windows\AppLocker**, looking for any **8003** or **8006** events. These events indicate that the app would be blocked. For more information about all App Locker events and their meanings, see [Using Event Viewer with AppLocker](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/applocker/using-event-viewer-with-applocker).
+4. Check Event Viewer under **Application and Services Logs\Microsoft\Windows\AppLocker**, looking for any **8003** or **8006** events. These events indicate that the app would be blocked. For more information about all App Locker events and their meanings, see [Using Event Viewer with AppLocker](/windows/security/threat-protection/windows-defender-application-control/applocker/using-event-viewer-with-applocker).
 5. If you find any of these events, open a signer request with Microsoft Managed Desktop Operations.
 
 ## Add (or remove) a trusted signer
@@ -70,4 +70,4 @@ To access the publisher data for an app, follow these steps:
     - Application name 
     - Application version 
     - Description 
-    - Publisher details (for example: “O=<publisher name>, L=<location>, S=State, C=Country”) 
+    - Publisher details (for example: “O=<publisher name>, L=<location>, S=State, C=Country”)

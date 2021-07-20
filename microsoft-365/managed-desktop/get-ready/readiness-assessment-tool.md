@@ -9,6 +9,7 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
+audience: Admin
 ---
 
 # Readiness assessment tools
@@ -84,3 +85,15 @@ For each check, the tool will report one of four possible results:
 ## After enrollment
 
 After you've completed enrollment in Microsoft Managed Desktop, remember to go back and adjust certain Intune and Azure AD settings. For details, see [Adjust settings after enrollment](../get-started/conditional-access.md).
+
+## Steps to get ready
+
+1. Review [prerequisites for Microsoft Managed Desktop](prerequisites.md).
+2. Use [readiness assessment tools](readiness-assessment-tool.md). (This article)
+3. [Prerequisites for guest accounts](guest-accounts.md)
+4. [Network configuration for Microsoft Managed Desktop](network.md)
+5. [Prepare certificates and network profiles for Microsoft Managed Desktop](certs-wifi-lan.md)
+6. [Prepare on-premises resources access for Microsoft Managed Desktop](authentication.md)
+7. [Apps in Microsoft Managed Desktop](apps.md)
+8. [Prepare mapped drives for Microsoft Managed Desktop](mapped-drives.md)
+9. [Prepare printing resources for Microsoft Managed Desktop](printing.md)

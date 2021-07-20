@@ -5,27 +5,23 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: tugu, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
-- commerce
-ms.custom: AdminSurgePortfolio
-search.appverid:
-- MET150
+- M365-subscription-management 
+- Adm_O365
+ms.custom: 
+- AdminSurgePortfolio
+- commerce_subscriptions
+search.appverid: MET150
 description: "Learn how to work with Microsoft-certified solution providers (partners) to purchase and manage products and services for your organization or school."
+ms.date: 04/13/2021
 ---
 
 # Manage partner relationships
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> The admin center is changing. If your experience doesn't match the details presented here, see 
-[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
-
-::: moniker-end
 
 You can work with Microsoft-certified solution providers (partners) to purchase and manage products and services for your organization or school. There are a few steps involved in getting things set up.
 
@@ -82,13 +78,13 @@ If you already have a partner but haven’t yet signed a Microsoft Customer Agre
 
 ## Remove partner admin roles
 
-Depending on the request made by the partner, when you accept the invitation, you agree to give them Global and Helpdesk admin roles. When you give these admin roles to a partner, you automatically grant them delegated admin privileges in Azure AD. To learn more, see [Delegated admin privileges in Azure AD](https://docs.microsoft.com/partner-center/customers_revoke_admin_privileges#delegated-admin-privileges-in-azure-ad).
+Depending on the request made by the partner, when you accept the invitation, you agree to give them Global and Helpdesk admin roles. When you give these admin roles to a partner, you automatically grant them delegated admin privileges in Azure AD. To learn more, see [Delegated admin privileges in Azure AD](/partner-center/customers_revoke_admin_privileges#delegated-admin-privileges-in-azure-ad).
 
 If you don't want to give the admin roles to the partner, cancel the invitation instead of accepting it.
 
 You can remove admin roles from a partner at any time. Removing the admin roles doesn’t remove the partner relationship. They can still work with you in a different capacity, such as a Reseller. If you decide that you don’t want to work with a partner anymore, contact your partner to end the relationship.
 
-1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">Partner relationships</a> page.
+1. In the admin center, go to the **Settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">Partner relationships</a> page.
 2. On the **Partner relationships** page, select the row that contains the name of the partner that you want to remove.
 3. Select the row that contains the name of the partner.
 4. On the partner page, select **Remove roles**.

@@ -15,14 +15,13 @@ ms.custom:
 - M365solutions
 - seo-marvel-jun2020
 f1.keywords: NOCSH
+recommendations: false
 description: Learn how to set up secure content collaboration in Teams to protect your data based on its sensitivity.
 ---
 
-# Set up secure collaboration with Microsoft 365
+# Set up secure collaboration with Microsoft 365 and Microsoft Teams
 
 Being able to easily share information with the right people while preventing oversharing is key to an organization's success. This includes being able to share sensitive data safely with only those who should have access to it. Depending on the project, this might include sharing sensitive data with people outside your organization.
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWxMmL?autoplay=false]
 
 This collaboration solution guidance includes two components to help you:
 - Deploy Microsoft Teams with the right level of protection for each project
@@ -31,6 +30,8 @@ This collaboration solution guidance includes two components to help you:
 ![Deploy Teams with appropriate protection and configure external sharing with appropriate security settings](..\media\solutions-architecture-center\secure-collaboration-overview.png)
 
 If versatile and easy-to-use content collaboration tools aren't available, users will often collaborate by emailing documents. This is a tedious and error-prone method of collaboration, and can increase the risk of inappropriate sharing of information. If people find sharing information too difficult, they could revert to using consumer products that are not governed by IT. This can pose an even greater risk.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWxMmL?autoplay=false]
 
 With Microsoft 365, you can deploy Teams with a variety of configurations that help:
 
@@ -135,7 +136,7 @@ These training modules from Microsoft Learn can help you learn the collaboration
 |![Teams collaboration training icon](../media/manage-team-collaboration-with-microsoft-teams.svg)|Manage team collaboration with Microsoft Teams introduces you to the features and capabilities of Microsoft Teams, the central hub for team collaboration in Microsoft 365. You’ll learn how you can use Teams to facilitate teamwork and communication within your organization, both on and off premises, on a wide range of devices—from desktops to tablets to phones—while taking advantage of all the rich functionality of Office 365 applications. You’ll gain an understanding of how Teams provides a comprehensive and flexible environment for collaboration across applications and devices. This learning path can help you prepare for the Microsoft 365 Certified: Teams Administrator Associate certification.<br><br>2 hr 17 min - Learning Path - 5 Modules|
 
 > [!div class="nextstepaction"]
-> [Start >](https://docs.microsoft.com/learn/modules/m365-teams-collab-prepare-deployment/introduction/)
+> [Start >](/learn/modules/m365-teams-collab-prepare-deployment/introduction/)
 
 #### SharePoint
 
@@ -144,7 +145,7 @@ These training modules from Microsoft Learn can help you learn the collaboration
 |![SharePoint training icon](../media/collaborate-with-sharepoint-in-microsoft-365.svg)|Manage shared content with Microsoft SharePoint introduces you to the features and capabilities of SharePoint, and how it works with Microsoft 365. You'll learn about the different types of SharePoint sites, including hub sites, as well as information protection, reporting, and monitoring. You'll also learn how to use SharePoint file and folder sharing to optimize collaboration, how to share files externally, and how to manage SharePoint sites in the SharePoint admin center. This learning path can help you prepare for the Microsoft 365 Certified: Teamwork Administrator Associate certification.<br><br>1 hr 14 min - Learning Path - 4 Modules|
 
 > [!div class="nextstepaction"]
-> [Start >](https://docs.microsoft.com/learn/modules/m365-teams-sharepoint-plan-sharepoint/introduction/)
+> [Start >](/learn/modules/m365-teams-sharepoint-plan-sharepoint/introduction/)
 
 #### Information protection
 
@@ -153,7 +154,7 @@ These training modules from Microsoft Learn can help you learn the collaboration
 |![Teams info protection training icon](../media/protect-enterprise-information-microsoft-365.svg)|Protecting and securing your organization's information is more challenging than ever. The Protect enterprise information with Microsoft 365 learning path discusses how to protect your sensitive information from accidental oversharing or misuse, how to discover and classify data, how to protect it with sensitivity labels, and how to both monitor and analyze your sensitive information to protect against its loss. This learning path can help you prepare for the Microsoft 365 Certified: Security Administrator Associate and Microsoft 365 Certified: Enterprise Administration Expert certifications..<br><br>1 hr - Learning Path - 5 Modules|
 
 > [!div class="nextstepaction"]
-> [Start >](https://docs.microsoft.com/learn/modules/m365-security-info-overview/introduction/)
+> [Start >](/learn/modules/m365-security-info-overview/introduction/)
 
 #### Identity and access
 
@@ -162,7 +163,7 @@ These training modules from Microsoft Learn can help you learn the collaboration
 |![Identity and access training icon](../media/protect-identity-and-access-with-microsoft-365.svg)|The Identity and Access learning path covers the latest identity and access technologies, tools for strengthening authentication, and guidance on identity protection within your organization. Microsoft access and identity technologies enable you to secure your organization’s identity, whether it is on-premises or in the cloud, and empower your users to work securely from any location. This learning path can help you prepare for the Microsoft 365 Certified: Security Administrator Associate and Microsoft 365 Certified: Enterprise Administration Expert certifications.<br><br>2 hr 52 min - Learning Path - 6 Modules|
 
 > [!div class="nextstepaction"]
-> [Start >](https://docs.microsoft.com/learn/modules/m365-identity-overview/introduction/)
+> [Start >](/learn/modules/m365-identity-overview/introduction/)
 
 ## Training for end users
 
@@ -172,7 +173,7 @@ These training modules can help your users use Teams, groups, and SharePoint for
 |:---|:---|
 |![Set up and customize your team training icon](../media/set-up-customize-team-training.png)<br>**[Set up and customize your team](https://support.microsoft.com/office/702a2977-e662-4038-bef5-bdf8ee47b17b)**|![SharePoint share and sync training icon](../media/sharepoint-share-sync-training.png)<br>**[Share and sync](https://support.microsoft.com/office/98cb2ff2-c27e-42ea-b055-c2d895f8a5de)**|
 |![Teams upload and find files training icon](../media/smc-teams-upload-find-files-training.png)<br>**[Upload and find files](https://support.microsoft.com/office/57b669db-678e-424e-b0a0-15d19215cb12)**||
-|![Collaborate in teams and channels icon](../media/teams-collaborate-channels-training.png)<br>**[Collaborate in teams and channels](https://support.microsoft.com/office/c3d63c10-77d5-4204-a566-53ddcf723b46)**|||
+|![Collaborate in teams and channels icon](../media/teams-collaborate-channels-training.png)<br>**[Collaborate in teams and channels](https://support.microsoft.com/office/c3d63c10-77d5-4204-a566-53ddcf723b46)**||
 
 ## Illustrations
 
@@ -200,8 +201,8 @@ When you're ready to deploy this solution, continue with these steps:
 
 ## See also
 
-[Microsoft 365 security documentation](https://docs.microsoft.com/microsoft-365/security)
+[Microsoft 365 security documentation](../security/index.yml)
 
-[Microsoft 365 compliance documentation](https://docs.microsoft.com/microsoft-365/compliance)
+[Microsoft 365 compliance documentation](../compliance/index.yml)
 
-[Welcome to Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/Teams-overview)
+[Welcome to Microsoft Teams](/MicrosoftTeams/Teams-overview)

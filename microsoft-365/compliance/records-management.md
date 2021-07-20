@@ -5,16 +5,16 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 
+ms.date:
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Priority
-ms.collection: 
+ms.collection:
 - M365-security-compliance
 - m365solution-mig
 - m365initiative-compliance
-search.appverid: 
+search.appverid:
 - MOE150
 - MET150
 ms.custom:
@@ -25,7 +25,7 @@ description: With records management in Microsoft 365, you can apply your retent
 
 # Learn about records management in Microsoft 365
 
->*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
+>*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Organizations of all types require a records-management solution to manage regulatory, legal, and business-critical records across their corporate data. Records management in Microsoft 365 helps an organization manage their legal obligations, provides the ability to demonstrate compliance with regulations, and increases efficiency with regular disposition of items that are no longer required to be retained, no longer of value, or no longer required for business purposes.
 
@@ -65,11 +65,11 @@ By using retention labels to declare records, you can implement a single and con
 
 ### Compare restrictions for what actions are allowed or blocked
 
-Use the following table to identify what restrictions are placed on content as a result of applying a standard retention label, and retention labels that mark content as a record or regulatory record. 
+Use the following table to identify what restrictions are placed on content as a result of applying a standard retention label, and retention labels that mark content as a record or regulatory record.
 
 A standard retention label has retention settings and actions but doesn't mark content as a record or a regulatory record.
 
->[!NOTE] 
+> [!NOTE]
 > For completeness, the table includes columns for a locked and unlocked record, which is applicable to SharePoint and OneDrive, but not Exchange. The ability to lock and unlock a record uses [record versioning](record-versioning.md) that isn't supported for Exchange items. So for all Exchange items that are marked as a record, the behavior maps to the **Record - locked** column, and the **Record - unlocked column** is not relevant.
 
 
@@ -90,26 +90,23 @@ Footnotes:
 <sup>1</sup>
 Supported by OneDrive and Exchange by retaining a copy in a secured location, but blocked by SharePoint.
 
-Message a user sees if they try to delete a labeled document in SharePoint:
-
-![Message that item wasn't deleted from SharePoint](../media/d0020726-1593-4a96-b07c-89b275e75c49.png)
+When you apply a retention label to a list item that has a document attachment, that document doesn't inherit the retention settings and can be deleted from the list item. In comparison, if that list item was declared a record with a retention label, the document attachment would inherit the retention settings and couldn't be deleted.
 
 <sup>2</sup>
 Containers include SharePoint document libraries, OneDrive accounts, and Exchange mailboxes.
 
->[!IMPORTANT] 
-> The most important difference for a regulatory record is that after it is applied to content, nobody, not even a global administrator, can remove the label. 
+> [!IMPORTANT]
+> The most important difference for a regulatory record is that after it is applied to content, nobody, not even a global administrator, can remove the label.
 >
 > Retention labels configured for regulatory records also have the following admin restrictions:
+>
 > - The retention period can't be made shorter after the label is saved, only extended.
-> - These labels aren't supported by auto-labeling policies, and must be applied by using [retention label policies](create-apply-retention-labels.md). 
+> - These labels aren't supported by auto-labeling policies, and must be applied by using [retention label policies](create-apply-retention-labels.md).
 >
 > In addition, a regulatory label can't be applied to a document that's checked out in SharePoint.
-> 
+>
 > Because of the restrictions and irreversible actions, make sure you really do need to use regulatory records before you select this option for your retention labels. To help prevent accidental configuration, this option is not available by default but must first be enabled by using PowerShell. Instructions are included in [Declare records by using retention labels](declare-records.md).
 
 ## Configuration guidance
 
-See [Get started with records management](get-started-with-records-management.md).
-
-To mark content as a record, see [Declare records by using retention labels](declare-records.md).
+See [Get started with records management](get-started-with-records-management.md). This article has information about subscriptions, permissions, and links to end-to-end configuration guidance for records management scenarios.

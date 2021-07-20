@@ -41,7 +41,7 @@ The booking calendar is where all relevant information about that booking calend
 
 ## Delete a booking calendar using Exchange Online PowerShell
 
-See [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps) for prerequisites and guidance for connecting to Exchange Online PowerShell.
+See [Connect to Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell-v2) for prerequisites and guidance for connecting to Exchange Online PowerShell.
 
 To perform these steps, you must be using an active Microsoft PowerShell command window that you ran by choosing the “Run as administrator” option.
 
@@ -52,7 +52,7 @@ To perform these steps, you must be using an active Microsoft PowerShell command
    ```
 
    > [!NOTE]
-   > If you've already [installed the EXO V2 module](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps#install-and-maintain-the-exo-v2-module), the previous command will work as written.
+   > If you've already [installed the EXO V2 module](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module), the previous command will work as written.
    
 2. The command that you need to run uses the following syntax:
 
@@ -67,7 +67,7 @@ To perform these steps, you must be using an active Microsoft PowerShell command
 4. Once this command is done processing, enter the following command to get a list of the booking mailboxes in your tenant:
 
    ```powershell
-   Get-EXOMailbox -RecipientTypeDetails Scheduling
+   Get-EXOMailbox -RecipientTypeDetails SchedulingMailbox
    ```
 
 5. Type the following command:
@@ -82,7 +82,7 @@ To perform these steps, you must be using an active Microsoft PowerShell command
 6. To verify that the calendar has been deleted, enter the following command:
 
    ```powershell
-    Get-EXOMailbox -RecipientTypeDetails Scheduling
+    Get-EXOMailbox -RecipientTypeDetails SchedulingMailbox
    ```
 
    The deleted calendar will not appear in the output.

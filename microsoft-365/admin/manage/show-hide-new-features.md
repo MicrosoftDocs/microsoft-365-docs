@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: danbrown
 author: DHB-MSFT
-manager: scotv
+manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -55,15 +55,14 @@ You can filter which features appear on the **Manage which ‎Office‎ features
 
 New features appear on the page based on the following schedule:
 
-||||
+|Channel|Date|Take action|
 |:-----|:-----|:-----|
-|**Channel** <br/> |**Date** <br/> |**Take action** <br/> |
 |**Current** <br/> |15th of the month  <br/> |1 - 3 weeks before the monthly release <br/> |
 |**Monthly Enterprise** <br/> |First of the month  <br/> |Two weeks before the major release that brings new features |
 |**Semi-Annual Enterprise (Preview)** <br/> |Sept 1 and March 1 <br/> | 2 weeks before the major release that brings new features|
 |**Semi-Annual Enterprise** <br/> |Jan 1 and July 1 <br/> | 2 weeks before the major release that brings new features<br/> |
 
-For more information about when new versions are released to each update channel, see [Update history for Microsoft 365 Apps (listed by date)](https://docs.microsoft.com/officeupdates/update-history-microsoft365-apps-by-date).
+For more information about when new versions are released to each update channel, see [Update history for Microsoft 365 Apps (listed by date)](/officeupdates/update-history-microsoft365-apps-by-date).
 
 ## Add the "What's new in Office" card to the admin center home page
 

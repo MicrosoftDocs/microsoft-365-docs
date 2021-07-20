@@ -1,11 +1,11 @@
 ---
-title: "Configure and view alerts for DLP policies (preview)"
+title: "Configure and view alerts for data loss prevention policies"
 f1.keywords:
 - CSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 10/15/2020
+ms.date:
 audience: ITPro
 ms.topic: article
 f1_keywords:
@@ -19,20 +19,21 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: Learn how to define and manage alerts for DLP policies. 
+description: Learn how to define and manage alerts for data loss prevention policies. 
 ---
 
-# Configure and view alerts for DLP polices (preview)
+# Configure and view alerts for data loss prevention polices
 
-This article shows you how to define rich alert policies that are linked
-to your data loss prevention (DLP) policies. You'll see how to use the
+Data loss prevention (DLP) polices can take protective actions to prevent unintentional sharing of sensitive items. When an action is taken on a sensitive item, you can be notified by configuring alerts for DLP. This article shows you how to define rich alert policies that are linked to your data loss prevention (DLP) policies. You'll see how to use the
 new DLP alert management dashboard in the [Microsoft 365 compliance
 center](https://compliance.microsoft.com/) to view alerts, events, and
 associated metadata for DLP policy violations.
 
+<!-- LEFT OFF HERE-->
+
 ## Features
 
-The following features are part of this preview:
+The following features are part of this:
 
 -   **DLP alert management dashboard**: In the [Microsoft 365 compliance 
     center](https://compliance.microsoft.com/), this dashboard shows
@@ -62,14 +63,10 @@ management dashboard. To get started, you should be eligible for Office
 Business. For more information about the licensing requirements for
 Office 365 DLP, see [Which licenses provide the rights for a user to
 benefit from the
-service?](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#which-licenses-provide-the-rights-for-a-user-to-benefit-from-the-service-16).
+service?](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#which-licenses-provide-the-rights-for-a-user-to-benefit-from-the-service-16).
 
-Customers who participate in the [Endpoint
-DLP](https://docs.microsoft.com/microsoft-365/compliance/endpoint-dlp-learn-about?view=o365-worldwide)
-public preview or who are eligible for [Teams
-DLP](https://docs.microsoft.com/microsoft-365/compliance/dlp-microsoft-teams?view=o365-worldwide)
-will see their endpoint DLP policy alerts and Teams DLP policy alerts in
-the DLP alert management dashboard.
+Customers who use [Endpoint DLP](endpoint-dlp-learn-about.md) who are eligible for [Teams
+DLP](dlp-microsoft-teams.md) will see their endpoint DLP policy alerts and Teams DLP policy alerts in the DLP alert management dashboard.
 
 ### Licensing for alert configuration options
 

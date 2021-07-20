@@ -2,8 +2,8 @@
 title: "Move your files to OneDrive"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -22,6 +22,8 @@ search.appverid:
 description: "Learn how to move your files to OneDrive."
 ---
 # Move files to OneDrive
+
+## Watch: Move your files to OneDrive for Business
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/d74b083c-1f44-43ea-8a14-2e1fc600b341?autoplay=false]
 

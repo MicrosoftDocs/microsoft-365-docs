@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,24 +13,16 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-search.appverid:
-- MET150
+search.appverid: MET150
 description: "Learn what payment options are available to pay for your subscription with a billing profile."
 ms.custom: 
 - okr_SMB
 - AdminSurgePortfolio
-- commerce
+- commerce_billing
+ms.date: 04/02/2021
 ---
 
 # How to pay for your subscription with a billing profile
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> The admin center is changing. If your experience doesn't match the details presented here, see 
-[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
-
-::: moniker-end
 
 When you buy a subscription, you pay for it with a billing profile. The billing profile is linked to a specific payment method and can be a credit or debit card, or an invoice, but not a bank account.
 
@@ -65,6 +58,7 @@ If your billing profile is backed by an invoice, you get an email when your bill
  **Choose your "bill-to" country or region from the drop-down menu below.**
 
 > [!div class="op_single_selector"]
+>
 > - **Choose your country or region**
 > - [Afghanistan](../pay/afghanistan.md)
 > - [Albania](../pay/albania.md)

@@ -31,10 +31,12 @@ The following table lists the limits for cases and review sets in Advanced eDisc
 |Total number of documents that can be added to a case (for all review sets in a case).  <br/> |3 million <br/> |
 |Total file size per load set. This includes loading non-Office 365 into a review set.  <br/> |300 GB <br/> |
 |Total amount of data loaded into all review sets in the organization per day.<br/> |2 TB <br/> |
-|Maximum number of loads sets per case.  <br/> |200 <br/> |
+|Maximum number of load sets per case.  <br/> |200 <br/> |
 |Maximum number of review sets per case.  <br/> |20 <br/> |
 |Maximum number of tag groups per case.  <br/> |1000 <br/> |
 |Maximum number of tags per case.  <br/> |1000 <br/> |
+|Maximum concurrent jobs in your organization to add content to a review set. These jobs are named **Adding data to a review set** and are displayed on the **Jobs** tab in a case.| 10 <sup>4</sup> |
+|Maximum concurrent jobs to add content to a review set per user. These jobs are named **Adding data to a review set** and are displayed on the **Jobs** tab in a case. | 3 |
 |||
 
 ## Hold limits
@@ -68,7 +70,8 @@ The limits described in this section are related to using the search tool on the
 |Maximum number of mailboxes or sites that can be searched in a single search. |No limit|
 |Maximum number of searches that can run at the same time. |No limit |
 |Maximum number of searches that a single user can start at the same time. |10 | 
-|Maximum number of characters for a search query (including operators and conditions). |10,000&nbsp;<sup>2</sup>|
+|Maximum number of characters for a search query (including operators and conditions). |10,000 &nbsp;<sup>2</sup>|
+|Maximum number of characters for a search query for SharePoint and OneDrive for Business sites (including operators and conditions). |10,000<br>4,000 with Wildcards&nbsp;<sup>2</sup>|
 |Minimum number of alpha characters for prefix wildcards; for example, **one\*** or **set\***.|3 |  
 |Maximum variants returned when using prefix wildcard to search for an exact phrase or when using a prefix wildcard and the **NEAR** Boolean operator. |10,000&nbsp;<sup>3</sup>|
 |Maximum number of items per user mailbox that are displayed on preview page for searches. The newest items are displayed. |100|
@@ -85,7 +88,7 @@ The limits described in this section are related to using the search tool on the
 
 Microsoft collects performance information for searches run by all organizations. While the complexity of the search query can impact search times, the biggest factor that affects how long searches take is the number of mailboxes searched. Although Microsoft doesn't provide a Service Level Agreement for search times, the following table lists average search times for collection searches based on the number of mailboxes included in the search.
   
-  |**Number of mailboxes**|**Average search time**|
+  | Number of mailboxes | Average search time |
   |:-----|:-----|
   |100  <br/> |30 seconds  <br/> |
   |1,000  <br/> |45 seconds  <br/> |
@@ -102,15 +105,13 @@ Microsoft collects performance information for searches run by all organizations
 |Maximum size of Excel file that can be viewed in the native viewer.  <br/> |4 MB  <br/> |
 |||
 
-## Export limits
+## Export limits - Final export out of Review Set
+
+The limits described in this section are related to exporting documents out of a review set.
 
 | Description of limit | Limit |
 |:-----|:-----|
-|Maximum size of a single export.|3 million documents or 100 GB, whichever is smaller|
-|Maximum amount of data in a single day. | 2 TB |
-|Maximum concurrent exports in your organization. | 10 <sup>4</sup> |
-|Maximum concurrent exports per user. | 3 |
-|Maximum size of a single PST file. | 10 GB |
+|Maximum size of a single export.|5 million documents or 500 GB, whichever is smaller|
 |Maximum concurrent exports per review set. | 1 |
 |||
 
@@ -127,11 +128,15 @@ Microsoft collects performance information for searches run by all organizations
 > [!NOTE]
 > <sup>1</sup> Any item that exceeds a single file limit will show up as a processing error.
 >
-> <sup>2</sup> When searching SharePoint and OneDrive for Business locations, the characters in the URLs of the sites being searched count against this limit.
+> <sup>2</sup> When searching SharePoint and OneDrive for Business locations, the characters in the URLs of the sites being searched count against this limit. The total number of characters consists of:<br>
+> - All characters in both the Users and Filters fields.
+> - All search permissions filters that apply to the user.
+> - The characters from any location properties in the search; this includes ExchangeLocation,PublicFolderLocation,SharPointLocation,ExchangeLocationExclusion,PublicFolderLocationExclusion,SharePointLocationExclusion, OneDriveLocationExclusion.
+>   For example, including all SharePoint sites and OneDrive accounts in the search will count as six characters, as the word "ALL" will appear for both the SharePointLocation and OneDriveLocation field.
 >
 > <sup>3</sup> For non-phrase queries (a keyword value that doesn't use double quotation marks) we use a special prefix index. This tells us that a word occurs in a document, but not where it occurs in the document. To do a phrase query (a keyword value with double quotation marks), we need to compare the position within the document for the words in the phrase. This means that we can't use the prefix index for phrase queries. In this case, we internally expand the query with all possible words that the prefix expands to; for example,  **time\*** can expand to  **"time OR timer OR times OR timex OR timeboxed OR …"**. The limit of 10,000 is the maximum number of variants the word can expand to, not the number of documents matching the query. There is no upper limit for non-phrase terms.
 >
-> <sup>4</sup> This limit is shared across all eDiscovery tools. This means that concurrent exports in Content search, Core eDiscovery, and Advanced eDiscovery are applied against this limit.
+> <sup>4</sup> This limit is shared with exporting content in other eDiscovery tools. This means that concurrent exports in Content search and Core eDiscovery (and adding content to review sets in Advanced eDiscovery) are all applied against this limit.
 >
 > <sup>5</sup> This limit applies to downloading selected documents from a review set. It doesn't apply to exporting documents from a review set. For more information about downloading and exporting documents, see [Export case data in Advanced eDiscovery](exporting-data-ediscover20.md).
 >

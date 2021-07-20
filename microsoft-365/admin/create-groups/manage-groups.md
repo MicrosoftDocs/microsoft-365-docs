@@ -49,7 +49,7 @@ Go to the Microsoft 365 admin center at [https://admin.microsoft.com](https://ad
 
 ## Send copies of conversations to group members' inboxes
   
-When you use the admin center to create a group, by default users  do not get copies of group emails and meeting invitations sent to their inboxes. They'll need to go to the group to see conversations and meetings. You can change this setting in the admin center.
+When you use the admin center to create a group, by default users do not get copies of group emails sent to their inboxes though users get copies of group meeting invitations sent to their inboxes. They'll need to go to the group to see conversations. You can change this setting in the admin center.
 
 When you turn this setting on, group members will get a copy of group emails and meeting invitations sent to their Outlook Inbox. They can read and delete this copy of the email and not affect anyone else. In the Group inbox, a copy of the email still exists.
 
@@ -108,4 +108,4 @@ To confirm that the group has been successfully purged, run the  *Get-AzureADMSD
 
 [Upgrade distribution lists to Microsoft 365 groups](../manage/upgrade-distribution-lists.md)
 
-[Manage Microsoft 365 groups with PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-groups-with-powershell)
+[Manage Microsoft 365 groups with PowerShell](../../enterprise/manage-microsoft-365-groups-with-powershell.md)

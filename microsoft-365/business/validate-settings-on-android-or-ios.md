@@ -2,8 +2,8 @@
 title: "Validate app protection settings on Android or iOS devices"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: sharik
+author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -37,7 +37,7 @@ After you [set app configurations for Android devices](app-protection-settings-f
   
 First, make sure that the policy applies to the app in which you're going to validate it.
   
-1. In the Microsoft 365 Business Premium [admin center](https://portal.office.com), go to **Policies** \> **Edit policy**.
+1. In the Microsoft 365 Business Premium [admin center](https://admin.microsoft.com), go to **Policies** \> **Edit policy**.
     
 2. Choose **Application policy for Android** for the settings you created at setup, or another policy you created, and verify that it's enforced for Outlook, for example. 
     
@@ -126,7 +126,7 @@ After you [set app configurations for iOS devices](app-protection-settings-for-a
   
 First, make sure that the policy applies to the app in which you're going to validate it.
   
-1. In the Microsoft 365 Business Premium [admin center](https://portal.office.com), go to **Policies** \> **Edit policy**.
+1. In the Microsoft 365 Business Premium [admin center](https://admin.microsoft.com), go to **Policies** \> **Edit policy**.
     
 2. Choose **Application policy for iOS** for the settings you created at setup, or another policy you created, and verify that it's enforced for Outlook for example. 
     

@@ -2,8 +2,8 @@
 title: "Get started with Microsoft Compliance Manager"
 f1.keywords:
 - NOCSH
-ms.author: chvukosw
-author: chvukosw
+ms.author: v-jgriffee
+author: jmgriffee
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -25,7 +25,7 @@ description: "Set Microsoft Compliance Manager user permissions and roles, and c
 
 ## Who can access Compliance Manager
 
-Compliance Manager is available to organizations with Office 365 and Microsoft 365 licenses, and to US Government Community Cloud (GCC) Moderate and GCC High customers. Assessment availability and management capabilities depend on your licensing agreement.  [View service description details](https://go.microsoft.com/fwlink/?linkid=2132371).
+Compliance Manager is available to organizations with Office 365 and Microsoft 365 licenses, and to US Government Community Cloud (GCC) Moderate, GCC High, and Department of Defense (DoD) customers. Assessment availability and management capabilities depend on your licensing agreement.  [View service description details](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 ## Before you begin
 
@@ -44,49 +44,47 @@ Compliance Manager uses a role-based access control (RBAC) permission model. Onl
 
 ### Where to set permissions
 
-The person holding the global admin role for your organization can set user permissions for Compliance Manager. Permissions can be set in the Office 365 Security & Compliance center as well as in Azure Active Directory (Azure AD).
+The person holding the global admin role for your organization can set user permissions for Compliance Manager. Permissions can be set in the Microsoft 365 compliance center as well as in Azure Active Directory (Azure AD).
 
 > [!NOTE]
-> Customers in US Government Community (GCC) High environments can only set user permissions and roles for Compliance Manager in Azure AD. See below for Azure AD instructions and role type definitions.
+> Customers in US Government Community (GCC) High and Department of Defense (DoD) environments can only set user permissions and roles for Compliance Manager in Azure AD. See below for Azure AD instructions and role type definitions.
 
-To set permissions and assign roles in the Office 365 Security & Compliance center, follow the steps below:
+To set permissions and assign roles in the Microsoft 365 compliance center, follow the steps below:
 
-1. Go to the [Office 365 Security & Compliance Center](https://protection.office.com/) and select **Permissions** on the left navigation.
+1. Go to the [Microsoft 365 compliance center](https://compliance.microsoft.com/compliancemanager) and select **Permissions** on the left navigation.
 
-2. Find the role group to which you want to add one or more users, and check the box to the left of the group name. (See the [list of roles and related functions below](#role-types). The role group names mimic the role name.)
+2. Under the **Compliance center** dropdown, select **Roles**. 
 
-3. On the flyout pane for that group, select **Edit** under the **Members** header.
+3. Find the role group to which you want to add one or more users, and check the box to the left of the group name. (See the [list of roles and related functions below](#role-types). The role group names mimic the role name.)
 
-4. Select **Choose members**. Another flyout window will appear.
+4. On the flyout pane for that group, select **Edit** under the **Members** header.
 
-5. Select **+ Add** to choose one or more users to add to the group.
+5. Select **Choose members**. Another flyout window will appear.
 
-6. Select the checkbox next to the names you want to add, then select the **Add** button at the bottom.
+6. Select **+ Add** to choose one or more users to add to the group.
 
-7. When you’re done assigning users, select **Done**, then select **Save**, then **Close**.
+7. Select the checkbox next to the names you want to add, then select the **Add** button at the bottom.
 
-##### More about the Office 365 Security & Compliance Center
+8. When you’re done assigning users, select **Done**, then select **Save**, then **Close**.
 
-Learn more about [permissions in the Office 365 Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center).
-
-If you don't have access to the Office 365 Security and Compliance Center, or if you need to access the classic version of Compliance Manager in the Microsoft Service Trust Portal,  the Admin settings in the Service Trust Portal provides another way to assign roles ([view instructions](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#assigning-compliance-manager-roles-to-users)). Be aware that such roles are more limited in their functionality.
+If you need to access the classic version of Compliance Manager in the Microsoft Service Trust Portal,  the Admin settings in the Service Trust Portal provides another way to assign roles ([view instructions](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#assigning-compliance-manager-roles-to-users)). Be aware that such roles are more limited in their functionality.
 
 ##### More about Azure AD
 
-To assign roles and set permissions in Azure AD, see [Assign administrator and non-administrator roles to users with Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal).
+To assign roles and set permissions in Azure AD, see [Assign administrator and non-administrator roles to users with Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal).
 
 Users with Azure AD identities who don't have Office 365 or Microsoft 365 subscriptions won't be able to access Compliance Manager in the Microsoft 365 compliance center. To seek assistance in accessing Compliance Manager, contact [cmresearch@microsoft.com](mailto:cmresearch@microsoft.com).
 
 ### Role types
 
-The table below shows the functions allowed by each role in Compliance Manager. The table also shows how each [Azure AD role](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) maps to Compliance Manager roles. Users will need at least the Compliance Manager reader role, or Azure AD global reader role, to access Compliance Manager.
+The table below shows the functions allowed by each role in Compliance Manager. The table also shows how each [Azure AD role](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) maps to Compliance Manager roles. Users will need at least the Compliance Manager reader role, or Azure AD global reader role, to access Compliance Manager.
 
 
 | User can: | Compliance Manager role | Azure AD role | 
 | :------------- | :-------------: | :------------: |
 | **Read but not edit data**| Compliance Manager Reader  | Azure AD Global reader, Security reader | 
 | **Edit data**| Compliance Manager Contribution | Compliance Administrator | 
-| **Edit test results**| Compliance Manager Assessment | Compliance Administrator | 
+| **Edit test results**| Compliance Manager Assessor | Compliance Administrator | 
 | **Manage assessments, and template and tenant data**| Compliance Manager Administration | Compliance Administrator, Compliance Data Administrator, Security Administrator  | 
 | **Assign users**| Global Administrator | Global Administrator | 
 
@@ -95,11 +93,11 @@ The table below shows the functions allowed by each role in Compliance Manager. 
 The Compliance Manager settings in the Microsoft 365 compliance center allow you to enable and disable automatic testing of improvement actions. The settings also allow you to manage the data of users associated to improvement actions, including the ability to reassign improvement actions to a different user.  Only people with a global administrator or Compliance Manager Administrator role can access the Compliance Manager settings.
 
 > [!NOTE]
-> The automated testing feature is not available to customers in GCC High environments because Secure Score isn't available in these environments. GCC High customers will need to manually implement and test their improvement actions.
+> The automated testing feature is not available to customers in GCC High and DoD environments because Secure Score isn't available in these environments. GCC High and DoD customers will need to manually implement and test their improvement actions.
 
 ### Set up automated testing
 
-Some improvement actions in Compliance Manager are also monitored by [Microsoft Secure Score](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score). You can set up automated testing of actions that are jointly monitored, which means that when an action is tested and updated in Secure Score, those results synch with the same actions in Compliance Manager and count toward your compliance score.
+Some improvement actions in Compliance Manager are also monitored by [Microsoft Secure Score](../security/defender/microsoft-secure-score.md). You can set up automated testing of actions that are jointly monitored, which means that when an action is tested and updated in Secure Score, those results synch with the same actions in Compliance Manager and count toward your compliance score.
 
 Automatic testing is turned on by default for organizations new to Compliance Manager. When you first deploy Microsoft 365 or Office 365, it takes approximately seven days for Secure Score to fully collect data and factor it into your compliance score.  When automated testing is turned on, the action’s test date won’t be updated, but its test status will update. When new assessments are created, scores automatically include Microsoft control scores and Secure Score integration.
 
@@ -182,7 +180,7 @@ You can reassign improvement actions from one user to another. When you reassign
 8. When the reassignment is complete, you’ll see a confirmation message in the flyout pane confirming that all improvement actions from the previous user have been reassigned to the new user. If you receive a reassignment failure notice, close the window and try again. To close the flyout pane, select **Done**.
 
 The new assignee receives an email that they've been assigned to an improvement action. The email contains a direct link into the improvement action's details page.
- 
+
  > [!NOTE]
 > If you reassign an action that has a pending update, the direct link to the action in the reassignment email will break if the update is accepted after reassignment. You can fix this by re-assigning the action to the user after the update is accepted. Learn more about [updates to improvement actions](compliance-manager-improvement-actions.md#accepting-updates-to-improvement-actions).
 
@@ -210,7 +208,7 @@ To delete a user’s history, follow the steps below:
 
 The Compliance Manager dashboard is designed to provide you an at-a-glance view of your current compliance posture.
 
-![Compliance Manager - dashboard](../media/compliance-manager-dashboard.png "Compliance Manager dashboard")
+:::image type="content" alt-text="Compliance Manager - dashboard." source="../media/compliance-manager-dashboard.png" lightbox="../media/compliance-manager-dashboard.png":::
 
 ### Overall compliance score
 
@@ -317,7 +315,7 @@ There are two ways you can take action from this screen:
 
 The assessments page lists all the [assessments](compliance-manager-assessments.md) you set up for your organization. Your compliance score denominator is determined by all your tracked assessments. As you add more assessments, you'll see more improvement actions listed on your improvement actions page, and your compliance score denominator increases.
 
-The **activated templates** counter near the top of the page shows the number of active assessment templates currently in use out of the total number of templates available for your organization to use. See [Template type](compliance-manager-templates.md#template-types-included-and-premium-active-and-inactive) for more information.
+The **activated templates** counter near the top of the page shows the number of active assessment templates currently in use out of the total number of templates available for your organization to use. See [Template availability and licensing](compliance-manager-templates.md#template-availability-and-licensing) for more information.
 
 The assessments page summarizes key information about each assessment:
 
@@ -352,7 +350,7 @@ By default, you'll see the [Data Protection Baseline](compliance-manager-assessm
 
 A template is a framework for creating an assessment in Compliance Manager. The assessment templates page displays a list of templates and key details. The list includes templates provided by Compliance Manager as well as any templates your organization has modified or created. You can apply filters to find a template based on certification, product scope, country, industry, and who created it.
 
-The **activated templates** counter near the top of the page shows the number of active assessment templates currently in use out of the total number of templates available for your organization to use. See [Template type](compliance-manager-templates.md#template-types-included-and-premium-active-and-inactive) for more information.
+The **activated templates** counter near the top of the page shows the number of active assessment templates currently in use out of the total number of templates available for your organization to use. See [Template availability and licensing](compliance-manager-templates.md#template-availability-and-licensing) for more information.
 
 Select a template from its row to bring up its details page, which contains a description of the template and further information about certification, scope, and controls details. From this page you can select the appropriate buttons to create an assessment, export the template data to Excel, or modify the template.
 

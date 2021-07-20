@@ -23,7 +23,7 @@ description: "Contains links to other articles that tell you how to improve perf
 
 # Tune SharePoint Online performance
 
-This article contains links to other articles that tell you how to improve performance of page download times for SharePoint Online. This article is part of the [Network planning and performance tuning for Office 365](https://aka.ms/tune) project.
+This article contains links to other articles that tell you how to improve performance of page download times for SharePoint Online. This article is part of the [Network planning and performance tuning for Office 365](./network-planning-and-performance.md) project.
 
 ## Articles about fine tuning SharePoint Online performance
 
@@ -35,7 +35,7 @@ Use these articles to fine tune SharePoint Online performance.
 
 - [Navigation options for SharePoint Online](navigation-options-for-sharepoint-online.md)
 
-- [Performance guidance for SharePoint Online portals](https://docs.microsoft.com/sharepoint/dev/solution-guidance/portal-performance)
+- [Performance guidance for SharePoint Online portals](/sharepoint/dev/solution-guidance/portal-performance)
 
 - [Image optimization for SharePoint Online](image-optimization-for-sharepoint-online.md)
 
@@ -53,7 +53,7 @@ Use these articles to fine tune SharePoint Online performance.
 
 - [Using the object cache with SharePoint Online](using-the-object-cache-with-sharepoint-online.md)
 
-- [How to: Avoid getting throttled or blocked in SharePoint Online](https://msdn.microsoft.com/library/office/dn889829.aspx)
+- [How to: Avoid getting throttled or blocked in SharePoint Online](/sharepoint/dev/general-development/how-to-avoid-getting-throttled-or-blocked-in-sharepoint-online)
 
 - [Optimize iFrames in SharePoint Online modern portal pages](modern-iframe-optimization.md)
 

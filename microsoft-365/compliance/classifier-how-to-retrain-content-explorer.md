@@ -91,7 +91,7 @@ To understand more about the overall workflow of retraining a classifier, see [P
 
 12. Review the recommended action, and the prediction comparisons of the retrained and currently published versions of the classifier.
 13. If you satisfied with the results of the retraining, choose **Re-publish**.
-14. If you are not satisfied with the results of the retraining, you can choose to provide additional feedback to the classifier in the Communications compliance interface and start another retraining cycle or do nothing in which case the currently published version of the classifier will continue to be used. 
+14. If you are not satisfied with the results of the retraining, you can choose to provide additional feedback to the classifier in the Content Explorer interface and start another retraining cycle or do nothing in which case the currently published version of the classifier will continue to be used. 
 
 ## Details on republishing recommendations
 
@@ -107,4 +107,4 @@ We compare the performance numbers on both sets of items for the retrained and p
 ## See also
 
 - [Learn about trainable classifiers](classifier-learn-about.md)
-- [Default crawled file name extensions and parsed file types in SharePoint Server](https://docs.microsoft.com/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)
+- [Default crawled file name extensions and parsed file types in SharePoint Server](/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)

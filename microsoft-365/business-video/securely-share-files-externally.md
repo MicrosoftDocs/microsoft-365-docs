@@ -2,8 +2,8 @@
 title: "Securely share files outside your business"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -19,10 +19,12 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Learn how to securely share your business files externally."
+description: "Learn how to securely share your business files to people outside of your organization with a secure link."
 ---
 
 # Securely share files externally
+
+## Watch: Securely share files outside your organization
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE22Yf0?autoplay=false]
 

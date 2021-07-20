@@ -2,8 +2,8 @@
 title: "Use the step-by-step guide to add Autopilot devices and profile"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -19,6 +19,7 @@ ms.custom:
 - OKR_SMB_M365
 - seo-marvel-mar
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
@@ -40,8 +41,6 @@ Devices must meet these requirements:
 - New devices that haven't been through Windows out-of-box experience
     
 ## Use the setup guide to create devices and profiles
-
-[![Label to let you know the admin center is changing and you can find more details at aka.ms/aboutM365preview.](../media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
 If you haven't created device groups or profiles yet, the best way to get started is by using the step-by-step guide. You can also [add devices](create-and-edit-autopilot-devices.md) and [assign profiles](create-and-edit-autopilot-profiles.md) to them without using the guide. 
   
@@ -65,7 +64,7 @@ If you haven't created device groups or profiles yet, the best way to get starte
     
     You can get this information from your hardware vendor, or you can use the [Get-WindowsAutoPilotInfo PowerShell script](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) to generate a CSV file. 
     
-    For more information, see [Device list CSV-file](https://docs.microsoft.com/microsoft-365/admin/misc/device-list). You can also download a sample file on the **Upload .csv file with list of devices** page. 
+    For more information, see [Device list CSV-file](../admin/misc/device-list.md). You can also download a sample file on the **Upload .csv file with list of devices** page. 
     
 > [!NOTE]
 > This script uses WMI to retrieve properties needed for a customer to register a device with Windows Autopilot. Note that it is normal for the resulting CSV file to not collect a Windows Product ID (PKID) value since this is not required to register a device and PKID being NULL in the output CSV is totally fine. Only the serial number and hardware hash will be populated.
@@ -89,4 +88,8 @@ If you haven't created device groups or profiles yet, the best way to get starte
     Choose **Next**.
     
 6. **You're done** indicates that the profile you created (or chose) will be applied to the device group you created by uploading the list of devices. The settings will be in effect when the device users sign in next. Choose **Close**.
-    
+
+## Related content
+
+[About AutoPilot Profile settings](autopilot-profile-settings.md) (article)\
+[Options for protecting your devices and app data](../admin/devices/choose-device-security.md) (article)

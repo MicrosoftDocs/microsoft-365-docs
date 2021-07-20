@@ -16,6 +16,7 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Priority
 f1.keywords: NOCSH
+recommendations: false
 description: Learn about available options to create a secure guest sharing environment in Microsoft 365, providing guest access for improved collaboration.
 ---
 
@@ -34,13 +35,13 @@ This article includes:
 - Automatically assigning a sensitivity label to documents that contain a sensitive information type.
 - Automatically removing guest access from files with a sensitivity label.
 
-Some of the options discussed in this article require guests to have an account in Azure Active Directory. To ensure that guests are included in the directory when you share files and folders with them, use the [SharePoint and OneDrive integration with Azure AD B2B Preview](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview).
+Some of the options discussed in this article require guests to have an account in Azure Active Directory. To ensure that guests are included in the directory when you share files and folders with them, use the [SharePoint and OneDrive integration with Azure AD B2B Preview](/sharepoint/sharepoint-azureb2b-integration-preview).
 
 Note that we won't discuss enabling guest sharing settings in this article. See [Collaborating with people outside your organization](collaborate-with-people-outside-your-organization.md) for details about enabling guest sharing for different scenarios.
 
 ## Set up multi-factor authentication for guests
 
-Multi-factor authentication greatly reduces the chances of an account being compromised. Since guest users may be using personal email accounts that don't adhere to any governance policies or best practices, it's especially important to require multi-factor authentication for guests. If a guest user's username and password is stolen, requiring a second factor of authentication greatly reduces the chances of unknown parties gaining access to your sites and files.
+Multi-factor authentication greatly reduces the chances of an account being compromised. Since guests may be using personal email accounts that don't adhere to any governance policies or best practices, it's especially important to require multi-factor authentication for guests. If a guest's username and password is stolen, requiring a second factor of authentication greatly reduces the chances of unknown parties gaining access to your sites and files.
 
 In this example, we'll set up multi-factor authentication for guests by using a conditional access policy in Azure Active Directory.
 
@@ -61,11 +62,11 @@ Now, guest will be required to enroll in multi-factor authentication before they
 
 ### More information
 
-[Planning an Azure AD Multi-Factor Authentication deployment](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted)
+[Planning an Azure AD Multi-Factor Authentication deployment](/azure/active-directory/authentication/howto-mfa-getstarted)
 
 ## Set up a terms of use for guests
 
-In some situations guest users may not have signed non-disclosure agreements or other legal agreements with your organization. You can require guests to agree to a terms of use before accessing files that are shared with them. The terms of use can be displayed the first time they attempt to access a shared file or site.
+In some situations guests may not have signed non-disclosure agreements or other legal agreements with your organization. You can require guests to agree to a terms of use before accessing files that are shared with them. The terms of use can be displayed the first time they attempt to access a shared file or site.
 
 To create a terms of use, you first need to create the document in Word or another authoring program, and then save it as a .pdf file. This file can then be uploaded to Azure AD.
 
@@ -84,7 +85,7 @@ To create an Azure AD terms of use
 9. Under **Conditional Access**, in the **Enforce with Conditional Access policy template** list choose **Create conditional access policy later**.
 10. Click **Create**.
 
-Once you've created the terms of use, the next step is to create a conditional access policy that displays the terms of use to guest users.
+Once you've created the terms of use, the next step is to create a conditional access policy that displays the terms of use to guests.
 
 To create a conditional access policy
 
@@ -100,62 +101,55 @@ To create a conditional access policy
 10. On the **Grant** blade, select **Guest terms of use**, and then click **Select**.
 11. On the **New** blade, under **Enable policy**, click **On**, and then click **Create**.
 
-Now, the first time a guest user attempts to access content or a team or site in your organization, they will be required to accept the terms of use.
+Now, the first time a guest attempts to access content or a team or site in your organization, they will be required to accept the terms of use.
 
 > [!NOTE]
-> Using Conditional Access requires an Azure AD Premium P1 license. For more information, see [What is Conditional Access](https://docs.microsoft.com/azure/active-directory/conditional-access/overview).
+> Using Conditional Access requires an Azure AD Premium P1 license. For more information, see [What is Conditional Access](/azure/active-directory/conditional-access/overview).
 
 ### More information
 
-[Azure Active Directory terms of use](https://docs.microsoft.com/azure/active-directory/conditional-access/terms-of-use)
+[Azure Active Directory terms of use](/azure/active-directory/conditional-access/terms-of-use)
 
 ## Set up guest access reviews
 
-With access reviews in Azure AD, you can automate a periodic review of user access to various teams and groups. By requiring an access review for guests specifically, you can help ensure guest users do not retain access to your organization's sensitive information for longer than is necessary.
+With access reviews in Azure AD, you can automate a periodic review of user access to various teams and groups. By requiring an access review for guests specifically, you can help ensure guests do not retain access to your organization's sensitive information for longer than is necessary.
 
-Access reviews can be organized into programs. A program is a grouping of similar access reviews that can be used to organize access reviews for reporting and auditing purposes.
-
-To create a program
-
-1. Sign in to the Azure portal and open the [Identity Governance page](https://portal.azure.com/#blade/Microsoft_AAD_ERM/DashboardBlade).
-2. In the left menu, click **Programs**
-3. Click **New program**.
-4. Type a **Name**  and **Description**.
-5. Click **Create**.
-
-Once the program has been created, we can create a guest access review and associate it with the program.
-
-To set up a guest user access review
+To set up a guest access review
 
 1. On the [Identity Governance page](https://portal.azure.com/#blade/Microsoft_AAD_ERM/DashboardBlade), in the left menu, click **Access reviews**.
 2. Click **New access review**.
+3. Choose the **Teams + Groups** option.
+4. Choose the **All Microsoft 365 groups with guest users** option. Click **Select group(s) to exclude** if you want to exclude any groups.
+5. Choose the **Guest users only** option, and then click **Next: Reviews**.
+6. Under **Select reviewers**, choose **Group Owner(s)**.
+7. Click **Select fallback reviewers**, choose who should be the fallback reviewers, and then click **Select**.
+8. Under **Specify recurrence of review**, choose **Quarterly**.
+9. Select a start date and duration.
+10. For **End**, choose **Never**, and then click **Next: Settings**.
 
-   ![Screenshot of Azure AD access review settings](../media/azure-ad-create-access-review.png)
+    ![Screenshot of Azure AD access review tab](../media/azure-ad-create-access-review.png)
 
-3. In the **Name** box, type a name.
-4. For **Frequency**, choose **Quarterly**.
-5. For **End**, choose **Never**.
-6. For **Scope**, choose **Guest users only**.
-7. Click **Group**, select the groups that you want to include in the access review, and then click **Select**.
-8. Under **Programs**, click **Link to program**.
-9. On the **Select a program** blade, choose **Guest access review program**
-10. Click **Start**.
+11. On the **Settings** tab, review the settings for compliance with your business rules.
 
-A separate access review is created for each group that you specify. Group owners of each group will be emailed quarterly to approve or deny guest access to their groups.
+    ![Screenshot of Azure AD access review settings tab](../media/azure-ad-create-access-review-settings.png)
 
-It's important to note that guests can be given access to teams or groups, or to individual files and folders. When given access to files and folders, guests may not be added to any particular group. If you want to do access reviews on guest users who don't belong to a team or group, you can create a dynamic group in Azure AD to contain all guests and then create an access review for that group. Site owners can also manage [guest expiration for the site](https://support.microsoft.com/office/25bee24f-42ad-4ee8-8402-4186eed74dea)
+12. Click **Next: Review + Create**.
+13. Type a **Review name** and review the settings.
+14. Click **Create**.
+
+It's important to note that guests can be given access to teams or groups, or to individual files and folders. When given access to files and folders, guests may not be added to any particular group. If you want to do access reviews on guests who don't belong to a team or group, you can create a dynamic group in Azure AD to contain all guests and then create an access review for that group. Site owners can also manage [guest expiration for the site](https://support.microsoft.com/office/25bee24f-42ad-4ee8-8402-4186eed74dea)
 
 ### More information
 
-[Manage guest access with Azure AD access reviews](https://docs.microsoft.com/azure/active-directory/governance/manage-guest-access-with-access-reviews)
+[Manage guest access with Azure AD access reviews](/azure/active-directory/governance/manage-guest-access-with-access-reviews)
 
-[Create an access review of groups or applications in Azure AD access reviews](https://docs.microsoft.com/azure/active-directory/governance/create-access-review)
+[Create an access review of groups or applications in Azure AD access reviews](/azure/active-directory/governance/create-access-review)
 
-## Set up web-only access for guest users
+## Set up web-only access for guests
 
-You can reduce your attack surface and ease administration by requiring guest users to access your teams, sites, and files by using a web browser only.
+You can reduce your attack surface and ease administration by requiring guests to access your teams, sites, and files by using a web browser only.
 
-For Microsoft 365 Groups and Teams, this is done with an Azure AD conditional access policy. For SharePoint, this is configured in the SharePoint admin center. (You can also [use sensitivity labels to restrict guests to web-only access](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites).)
+For Microsoft 365 Groups and Teams, this is done with an Azure AD conditional access policy. For SharePoint, this is configured in the SharePoint admin center. (You can also [use sensitivity labels to restrict guests to web-only access](../compliance/sensitivity-labels-teams-groups-sites.md).)
 
 To restrict guests to web-only access for Groups and Teams:
 
@@ -187,9 +181,9 @@ To restrict guests to web-ony access for SharePoint
 
 Note that this setting in the SharePoint admin center creates a supporting conditional access policy in Azure AD.
 
-## Configure a session timeout for guest users
+## Configure a session timeout for guests
 
-Requiring guests to authenticate on a regular basis can reduce the possibility of unknown users accessing your organization's content if a guest user's device isn't kept secure. You can configure a session timeout conditional access policy for guest users in Azure AD.
+Requiring guests to authenticate on a regular basis can reduce the possibility of unknown users accessing your organization's content if a guest's device isn't kept secure. You can configure a session timeout conditional access policy for guests in Azure AD.
 
 To configure a guest session timeout policy
 
@@ -224,7 +218,7 @@ To create a sensitive information type
 
 ### More information
 
-[Custom sensitive information types](https://docs.microsoft.com/Office365/SecurityCompliance/custom-sensitive-info-types)
+[Custom sensitive information types](/Office365/SecurityCompliance/custom-sensitive-info-types)
 
 ## Create an auto-labeling policy to assign a sensitivity label based on a sensitive information type
 
@@ -254,11 +248,11 @@ With the policy in place, when a user types "Project Saturn" into a document, th
 
 ### More information
 
-[Apply a sensitivity label to content automatically](https://docs.microsoft.com/microsoft-365/compliance/apply-sensitivity-label-automatically)
+[Apply a sensitivity label to content automatically](../compliance/apply-sensitivity-label-automatically.md)
 
 ## Create a DLP policy to remove guest access to highly sensitive files
 
-You can use [data loss prevention (DLP)](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies) to prevent unwanted guest sharing of sensitive content. Data loss prevention can take action based on a file's sensitivity label and remove guest access.
+You can use [data loss prevention (DLP)](../compliance/dlp-learn-about-dlp.md) to prevent unwanted guest sharing of sensitive content. Data loss prevention can take action based on a file's sensitivity label and remove guest access.
 
 To create a DLP rule
 
@@ -289,9 +283,9 @@ It's important to note that this policy doesn't remove access if the guest is a 
 
 There are some additional options in Microsoft 365 and Azure Active Directory that can help secure your guest sharing environment.
 
-- You can create a list of allowed or denied sharing domains to limit who users can share with. See [Restrict sharing of SharePoint and OneDrive content by domain](https://docs.microsoft.com/sharepoint/restricted-domains-sharing) and [Allow or block invitations to B2B users from specific organizations](https://docs.microsoft.com/azure/active-directory/b2b/allow-deny-list) for more information.
-- You can limit which other Azure Active Directory tenants your users can connect to. See [Use tenant restrictions to manage access to SaaS cloud applications](https://docs.microsoft.com/azure/active-directory/manage-apps/tenant-restrictions) for information.
-- You can create a managed environment where partners can help manage guest accounts. See [Create a B2B extranet with managed guests](https://docs.microsoft.com/Office365/Enterprise/b2b-extranet) for information.
+- You can create a list of allowed or denied sharing domains to limit who users can share with. See [Restrict sharing of SharePoint and OneDrive content by domain](/sharepoint/restricted-domains-sharing) and [Allow or block invitations to B2B users from specific organizations](/azure/active-directory/b2b/allow-deny-list) for more information.
+- You can limit which other Azure Active Directory tenants your users can connect to. See [Use tenant restrictions to manage access to SaaS cloud applications](/azure/active-directory/manage-apps/tenant-restrictions) for information.
+- You can create a managed environment where partners can help manage guest accounts. See [Create a B2B extranet with managed guests](/Office365/Enterprise/b2b-extranet) for information.
 
 ## See Also
 

@@ -19,6 +19,56 @@ ms.localizationpriority: normal
 
 This article lists new and updated articles in the [Microsoft Managed Desktop documentation](index.yml). "Updated" articles have had material additions or corrections--minor fixes such as correction of typos, style, or formatting issues are not listed. You can always view the history of specific commits (including details of any changes) by visiting the [repo on GitHub](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop).
 
+## May 2021
+New or changed article | Description
+--- | ---
+[Set up Microsoft Managed Desktop devices](get-started/set-up-devices.md) | Updated article
+[Device inventory report](working-with-managed-desktop/device-inventory-report.md) | Updated article
+[Network configuration for Microsoft Managed Desktop](get-ready/network.md) | Updated article
+[Diagnostic logs](service-description/diagnostic-logs.md) | New article
+[Microsoft Managed Desktop technologies](intro/technologies.md) | Updated article
+[Prerequisites for guest accounts](get-ready/guest-accounts.md) | Updated article
+[Work with reports](working-with-managed-desktop/reports.md) | Updated article
+
+## April 2021
+New or changed article | Description
+--- | ---
+[Device profiles](service-description/profiles.md) | New article
+[Steps for Partners to register devices](get-started/register-devices-partner.md) | Updated article
+[Register new devices yourself](get-started/register-devices-self.md) | Updated article
+[Register existing devices yourself](get-started/register-reused-devices-self.md) | Updated article
+[Address device name dependency](get-ready/address-device-names.md) | New article
+[Device names](service-description/device-names.md) | New article
+[Remove devices](working-with-managed-desktop/remove-devices.md) | New article
+[Prerequisites for Microsoft Managed Desktop](get-ready/prerequisites.md) | Updated article
+[Apps in Microsoft Managed Desktop](get-ready/apps.md) | Updated article
+[Validate new devices](get-started/validate-device.md) | New article
+[Set up Microsoft Managed Desktop devices](get-started/set-up-devices.md) | Updated article
+[Microsoft Managed Desktop product lifecycle](service-description/device-lifecycle.md) | Updated article
+[Microsoft Managed Desktop devices](service-description/device-list.md) |Updated article
+
+## March 2021
+New or changed article | Description
+--- | ---
+[Admin support for Microsoft Managed Desktop](working-with-managed-desktop/admin-support.md) | Updated article
+[First-run experience with Autopilot and the Enrollment Status Page](get-started/esp-first-run.md) | Updated article
+[Windows 10 location service](get-started/device-location.md) | New article
+[Device images](service-description/device-images.md) | New article
+[Microsoft Managed Desktop supported regions](service-description/regions-languages.md) | Updated article
+[Localize the user experience](get-started/localization.md) | New article
+
+## February 2021
+New or changed article | Description
+--- | ---
+[Access the admin portal](get-started/access-admin-portal.md) | Updated article
+[Microsoft Managed Desktop technologies](intro/technologies.md) | Updated article
+[Device requirements](service-description/device-requirements.md) | Updated article
+[Fix issues found by the readiness assessment tool](get-ready/readiness-assessment-fix.md) | Updated article
+[Microsoft OneDrive](get-started/onedrive.md) | New article
+[Compliance](intro/compliance.md) | Updated
+[Microsoft 365 Apps for enterprise](get-started/m365-apps.md) | Updated article
+[Readiness assessment tools](get-ready/readiness-assessment-tool.md) | Updated article
+
 ## January 2021
 New or changed article | Description
 --- | ---
@@ -35,7 +85,7 @@ New or changed article | Description
 ## December 2020
 New or changed article | Description
 --- | ---
-[What is Microsoft Managed Desktop?](https://docs.microsoft.com/microsoft-365/managed-desktop/intro/index) | Updated article
+[What is Microsoft Managed Desktop?](./intro/index.md) | Updated article
 [Work with reports](working-with-managed-desktop/reports.md) | Updated article
 [Privacy and personal data](service-description/privacy-personal-data.md) | Updated article
 [Compliance](intro/compliance.md) | Updated article
@@ -59,7 +109,7 @@ New or changed article | Description
 New or changed article | Description
 --- | ---
 [Prerequisites](get-ready/prerequisites.md) | Updated article
-[Work with insights](working-with-managed-desktop/insights.md) | Updated article
+Work with insights | Updated article
 [Steps for Partners to register devices](get-started/register-devices-partner.md) | Updated article
 [Access the admin portal](get-started/access-admin-portal.md) | Updated article
 [Deploy apps to devices](get-started/deploy-apps.md) | Updated article
@@ -82,7 +132,7 @@ New or changed article | Description
 [Register new devices yourself](get-started/register-devices-self.md) | Updated article
 [Prepare certificates and network profiles for Microsoft Managed Desktop](get-ready/certs-wifi-lan.md) | Updated article
 [Prerequisites for Microsoft Managed Desktop](get-ready/prerequisites.md) | Updated article
-[Work with insights](working-with-managed-desktop/insights.md) | Updated article
+Work with insights| Updated article
 
 ## August 2020
 New or changed article | Description
@@ -152,8 +202,8 @@ New or changed article | Description
 New or changed article | Description
 --- | ---
 [Security in Microsoft Managed Desktop](service-description/security.md)| Updated article
-[Work with insights](working-with-managed-desktop/insights.md) | Updated article
-[Windows security update insights](working-with-managed-desktop/security-update-insights.md) | New article
+Work with insights | Updated article
+Windows security update insights| New article
 [How updates are handled in Microsoft Managed Desktop](service-description/updates.md) | Updated article
 [Microsoft Managed Desktop device services](service-description/device-services.md) | Updated article
 
@@ -179,12 +229,12 @@ New or changed article | Description
 ## November 2019
 New or changed article | Description
 --- | ---
-[Work with insights](working-with-managed-desktop/insights.md) | New article
-[Usage insights](working-with-managed-desktop/usage-insights.md) | New article
-[Reliability insights](working-with-managed-desktop/reliability-insights.md) | New article
+Work with insights | New article
+Usage insights | New article
+Reliability insights | New article
 [Microsoft Managed Desktop devices](service-description/device-list.md) | Updated article
-[Microsoft Managed Desktop main page](https://docs.microsoft.com/microsoft-365/managed-desktop/) | Updated article
-[What is Microsoft Managed Desktop?](https://docs.microsoft.com/microsoft-365/managed-desktop/intro/index) | Updated article
+[Microsoft Managed Desktop main page](./index.yml) | Updated article
+[What is Microsoft Managed Desktop?](./intro/index.md) | Updated article
 [Get your users ready to use devices](get-started/get-started-devices.md) | Updated article
 [Exceptions to the service plan](service-description/customizing.md) | Updated article
 
@@ -301,5 +351,4 @@ New or changed article | Description
 [Support for Microsoft Managed Desktop](service-description/support.md)<br />and [User support for Microsoft Managed Desktop](working-with-managed-desktop/end-user-support.md) | Updated to include Australia.
 
 ## October 30, 2018
-Content reorganized: added section for [Microsoft Managed Desktop service description](service-description/index.md). 
-
+Content reorganized: added section for [Microsoft Managed Desktop service description](service-description/index.md).

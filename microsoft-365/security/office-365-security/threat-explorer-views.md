@@ -14,7 +14,7 @@ search.appverid:
 ms.collection: 
   - M365-security-compliance
   - m365initiative-defender-office365
-description: Learn about how to use Threat Explorer and the real-time detections report to investigate and respond to threats in the Security & Compliance Center.
+description: Learn about how to use Threat Explorer and the real-time detections report to investigate and respond to threats in the Microsoft 365 Defender portal.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
@@ -25,18 +25,18 @@ ms.prod: m365-security
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Applies to**
-- [Microsoft Defender for Office 365 plan 1 and plan 2](office-365-atp.md)
-- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 
-![Threat Explorer](../../media/ThreatExplorerFirstOpened.png)
+![Threat Explorer](../../media/explorer.png)
 
-[Threat Explorer](threat-explorer.md) (and the real-time detections report) is a powerful, near real-time tool to help Security Operations teams investigate and respond to threats in the Security & Compliance Center. Explorer (and the real-time detections report) displays information about suspected malware and phish in email and files in Office 365, as well as other security threats and risks to your organization.
+[Threat Explorer](threat-explorer.md) (and the real-time detections report) is a powerful, near real-time tool to help Security Operations teams investigate and respond to threats in the Microsoft 365 Defender portal. Explorer (and the real-time detections report) displays information about suspected malware and phish in email and files in Office 365, as well as other security threats and risks to your organization.
 
-- If you have [Microsoft Defender for Office 365](office-365-atp.md) Plan 2, then you have Explorer.
+- If you have [Microsoft Defender for Office 365](defender-for-office-365.md) Plan 2, then you have Explorer.
 - If you have Microsoft Defender for Office 365 Plan 1, then you have real-time detections.
 
-When you first open Explorer (or the real-time detections report), the default view shows email malware detections for the past 7 days. This report can also show Microsoft Defender for Office 365 detections, such as malicious URLs detected by [Safe Links](atp-safe-links.md), and malicious files detected by [Safe Attachments](atp-safe-attachments.md). This report can be modified to show data for the past 30 days (with a Microsoft Defender for Office 365 P2 paid subscription). Trial subscriptions will include data for the past seven days only.
+When you first open Explorer (or the real-time detections report), the default view shows email malware detections for the past 7 days. This report can also show Microsoft Defender for Office 365 detections, such as malicious URLs detected by [Safe Links](safe-links.md), and malicious files detected by [Safe Attachments](safe-attachments.md). This report can be modified to show data for the past 30 days (with a Microsoft Defender for Office 365 P2 paid subscription). Trial subscriptions will include data for the past seven days only.
 
 ****
 
@@ -54,7 +54,7 @@ When you first open Explorer (or the real-time detections report), the default v
 
 Use the **View** menu to change what information is displayed. Tooltips help you determine which view to use.
 
-![Threat Explorer View menu](../../media/ThreatExplorerViewMenu.png)
+![Threat Explorer View menu](../../media/all-email.png)
 
 Once you have selected a view, you can apply filters and set up queries to conduct further analysis. The following sections provide a brief overview of the various views available in Explorer (or real-time detections).
 
@@ -62,7 +62,7 @@ Once you have selected a view, you can apply filters and set up queries to condu
 
 To view this report, in Explorer (or real-time detections), choose **View** \> **Email** \> **Malware**. This view shows information about email messages that were identified as containing malware.
 
-![View data about email identified as malware](../../media/ExplorerEmailMalwareMenu.png)
+![View data about email identified as malware](../../media/detection-technology.png)
 
 Click **Sender** to open your list of viewing options. Use this list to view data by sender, recipients, sender domain, subject, detection technology, protection status, and more.
 
@@ -78,13 +78,13 @@ Below the chart, view more details about specific messages. When you select an i
 
 To view this report, in Explorer (or real-time detections), choose **View** \> **Email** \> **Phish**. This view shows email messages identified as phishing attempts.
 
-![View data about email identified as phishing attempts](../../media/ThreatExplorerEmailPhish.png)
+![View data about email identified as phishing attempts](../../media/phish.png)
 
 Click **Sender** to open your list of viewing options. Use this list to view data by sender, recipients, sender domain, sender IP, URL domain, click verdict, and more.
 
 For example, to see what actions were taken when people clicked on URLs that were identified as phishing attempts, choose **Click verdict** in the list, select one or more options, and then click the Refresh button.
 
-![Click verdict options for the Phish report](../../media/ThreatExplorerEmailPhishClickVerdictOptions.png)
+![Click verdict options for the Phish report](../../media/click-verdict.png)
 
 Below the chart, view more details about specific messages, URL clicks, URLs, and email origin.
 
@@ -127,11 +127,11 @@ Below the chart, view more details about specific email messages, such as subjec
 
 ## Content > Malware
 
-To view this report, in Explorer (or real-time detections), choose **View** \> **Content** \> **Malware**. This view shows files that were identified as malicious by [Microsoft Defender for Office 365 in SharePoint Online, OneDrive for Business, and Microsoft Teams](atp-for-spo-odb-and-teams.md).
+To view this report, in Explorer (or real-time detections), choose **View** \> **Content** \> **Malware**. This view shows files that were identified as malicious by [Microsoft Defender for Office 365 in SharePoint Online, OneDrive for Business, and Microsoft Teams](mdo-for-spo-odb-and-teams.md).
 
 View information by malware family, detection technology (how the malware was detected), and workload (OneDrive, SharePoint, or Teams).
 
-![View data about detected malware](../../media/d11dc568-b091-4159-b261-df13d76b520b.png)
+![View data about detected malware](../../media/malware-family.png)
 
 Below the chart, view more details about specific files, such as attachment filename, workload, file size, who last modified the file, and more.
 
@@ -145,7 +145,7 @@ Clicking **ATP Detonation** in this chart results in a view like this:
 
 ![Explorer filtered to display only Defender for Office 365 Detonation results](../../media/7241d7dd-27bc-467d-9db8-6e806c49df14.png)
 
-In this view, we are now looking at data for files that were detonated by [Safe Attachments](atp-safe-attachments.md). Below the chart, we can see details about specific email messages that had attachments that were detected by Safe Attachments.
+In this view, we are now looking at data for files that were detonated by [Safe Attachments](safe-attachments.md). Below the chart, we can see details about specific email messages that had attachments that were detected by Safe Attachments.
 
 ![Specific details about email messages with detected attachments](../../media/c91fb05c-d1d4-4085-acc6-f7008a415c2a.png)
 

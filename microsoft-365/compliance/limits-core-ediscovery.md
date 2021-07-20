@@ -21,7 +21,7 @@ description: "This article describes the limits in core eDiscovery case in Micro
 
 # Limits in Core eDiscovery
 
-The following table lists the limits for core eDiscovery cases and holds associated with a core eDiscovery case. For more information about Core eDiscovery, see [Overview of Core eDiscovery](ediscovery-cases.md).
+The following table lists the limits for core eDiscovery cases and holds associated with a core eDiscovery case. For more information about Core eDiscovery, see [Overview of Core eDiscovery](./get-started-core-ediscovery.md).
     
   | Description of limit | Limit |
   |:-----|:-----|
@@ -35,9 +35,9 @@ The following table lists the limits for core eDiscovery cases and holds associa
    > [!NOTE]
    > <sup>1</sup> To view a list of more than 1,000 cases, holds, searches, or exports, you can use the corresponding Office 365 Security & Compliance PowerShell cmdlets:
    > 
-   > - [Get-ComplianceCase](https://docs.microsoft.com/powershell/module/exchange/get-compliancecase)
-   > - [Get-CaseHoldPolicy](https://docs.microsoft.com/powershell/module/exchange/get-caseholdpolicy)
-   > - [Get-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/get-compliancesearch)
-   > - [Get-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/get-compliancesearchaction)
+   > - [Get-ComplianceCase](/powershell/module/exchange/get-compliancecase)
+   > - [Get-CaseHoldPolicy](/powershell/module/exchange/get-caseholdpolicy)
+   > - [Get-ComplianceSearch](/powershell/module/exchange/get-compliancesearch)
+   > - [Get-ComplianceSearchAction](/powershell/module/exchange/get-compliancesearchaction)
 
-For more information about limits related to content searches and exports associated with a Core eDiscovery case, see [Limits for Content Search and Core eDiscovery](limits-for-content-search.md).
+For more information about limits related to searches and exports associated with a Core eDiscovery case, see [Limits for Content search and Core eDiscovery](limits-for-content-search.md).

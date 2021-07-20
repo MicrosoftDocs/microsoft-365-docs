@@ -1,15 +1,15 @@
 ---
 title: Payment information for Colombia
-author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
+ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Learn where to send the payment for your subscription.
 ROBOTS: NOINDEX, NOFOLLOW
@@ -28,4 +28,4 @@ Please pay in Colombian Pesos only. For payment to be processed, your company na
 **SWIFT Code:** CITICOBB  
 **NIT:** 800.198.591-3  
 **Account Number:** 0060534055  
-**Account Name:** Branch of Microsoft Colombia Inc.   
+**Account Name:** Branch of Microsoft Colombia Inc.

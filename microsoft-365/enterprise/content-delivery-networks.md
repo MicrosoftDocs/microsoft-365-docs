@@ -78,11 +78,11 @@ Although not a part of the Office 365 CDN, you can use these CDNs in your Office
 
 You can use the **Azure CDN** to deploy your own CDN instance for hosting custom web parts, libraries and other resource assets, which allows you to apply access keys to your CDN storage and exert greater control over your CDN configuration. Use of the Azure CDN is not free, and requires an Azure subscription.
 
-For more information on how to configure an Azure CDN instance, see [Quickstart: Integrate an Azure storage account with Azure CDN](https://docs.microsoft.com/azure/cdn/cdn-create-a-storage-account-with-cdn).
+For more information on how to configure an Azure CDN instance, see [Quickstart: Integrate an Azure storage account with Azure CDN](/azure/cdn/cdn-create-a-storage-account-with-cdn).
 
-For an example of how the Azure CDN can be used to host SharePoint web parts, see [Deploy your SharePoint client-side web part to Azure CDN](https://docs.microsoft.com/sharepoint/dev/spfx/web-parts/get-started/deploy-web-part-to-cdn).
+For an example of how the Azure CDN can be used to host SharePoint web parts, see [Deploy your SharePoint client-side web part to Azure CDN](/sharepoint/dev/spfx/web-parts/get-started/deploy-web-part-to-cdn).
 
-For information about the Azure CDN PowerShell module, see [Manage Azure CDN with PowerShell](https://docs.microsoft.com/azure/cdn/cdn-manage-powershell).
+For information about the Azure CDN PowerShell module, see [Manage Azure CDN with PowerShell](/azure/cdn/cdn-manage-powershell).
 
 ### Microsoft Ajax CDN
 
@@ -94,7 +94,7 @@ To include these scripts in your project, simply replace any references to these
 <script src=https://ajax.aspnetcdn.com/ajax/jquery-2.1.1.js> </script>
 ```
 
-For more information about how to use the Microsoft Ajax CDN, see [Microsoft Ajax CDN](https://docs.microsoft.com/aspnet/ajax/cdn/overview).
+For more information about how to use the Microsoft Ajax CDN, see [Microsoft Ajax CDN](/aspnet/ajax/cdn/overview).
 
 ## How does Office 365 use content from a CDN?
 
@@ -116,7 +116,7 @@ The CDN figures out the closest datacenter to the user's browser and, using redi
 
 Minimizing latency between clients on your network and CDN endpoints is the key consideration for ensuring optimal performance. You can use the best practices outlined in [Managing Office 365 endpoints](managing-office-365-endpoints.md) to ensure that your network configuration permits client browsers to access the CDN directly rather than routing CDN traffic through central proxies to avoid introducing unnecessary latency.
 
-You can also read [Office 365 Network Connectivity Principles](https://aka.ms/o365networkingprinciples) to understand the concepts behind optimizing Office 365 network performance.
+You can also read [Office 365 Network Connectivity Principles](./microsoft-365-network-connectivity-principles.md) to understand the concepts behind optimizing Office 365 network performance.
 
 ## Is there a list of all the CDNs that Office 365 uses?
 
@@ -126,13 +126,13 @@ The CDNs in use by Office 365 are always subject to change and in many cases the
 |---------|---------|---------|---------|
 |Office 365 CDN     |Akamai         |Generic assets in public origins, SharePoint user content in private origins         |[Use the Office 365 content delivery network with SharePoint Online](use-microsoft-365-cdn-with-spo.md)         |
 |Azure CDN     |Microsoft         |Custom code, SharePoint Framework solutions         |[Microsoft Azure CDN](https://azure.microsoft.com/documentation/services/cdn/)         |
-|Microsoft Ajax CDN (read only)     |Microsoft         |Common libraries for Ajax, jQuery, ASP.NET, Bootstrap, Knockout.js etc.         |[Microsoft Ajax CDN](https://docs.microsoft.com/aspnet/ajax/cdn/overview)         |
+|Microsoft Ajax CDN (read only)     |Microsoft         |Common libraries for Ajax, jQuery, ASP.NET, Bootstrap, Knockout.js etc.         |[Microsoft Ajax CDN](/aspnet/ajax/cdn/overview)         |
 
 ## What performance gains does a CDN provide?
 
 There are many factors involved in measuring specific differences in performance between data downloaded directly from Office 365 and data downloaded from a specific CDN, such as your location relative to your tenant and to the nearest CDN endpoint, the number of assets on a page that are served by the CDN, and transient changes in network latency and bandwidth. However, a simple A/B test can help to show the difference in download time for a specific file.
 
-The following screen shots illustrate the difference in download speed between the native file location in Office 365 and the same file hosted on the [Microsoft Ajax Content Delivery Network](https://docs.microsoft.com/aspnet/ajax/cdn/overview). These screen shots are from the **Network** tab in the Internet Explorer 11 developer tools. These screen shots show the latency on the popular library jQuery. To bring up this screen, in Internet Explorer, press **F12** and select the **Network** tab which is symbolized with a Wi-Fi icon.
+The following screen shots illustrate the difference in download speed between the native file location in Office 365 and the same file hosted on the [Microsoft Ajax Content Delivery Network](/aspnet/ajax/cdn/overview). These screen shots are from the **Network** tab in the Internet Explorer 11 developer tools. These screen shots show the latency on the popular library jQuery. To bring up this screen, in Internet Explorer, press **F12** and select the **Network** tab which is symbolized with a Wi-Fi icon.
   
 ![Screenshot of F12 Network](../media/930541fd-af9b-434a-ae18-7bda867be128.png)
   
@@ -167,7 +167,7 @@ For customers that want to segregate requests destined for a Microsoft or Office
 
 ## Is there a list of all the FQDNs that leverage CDNs?
 
-The list of FQDNs and how they leverage CDNs change over time. Refer to our published [Office 365 URLs and IP address ranges](https://go.microsoft.com/fwlink/p/?LinkID=293744) page to get up to date on the latest FQDNs that leverage CDNs.
+The list of FQDNs and how they leverage CDNs change over time. Refer to our published [Office 365 URLs and IP address ranges](./urls-and-ip-address-ranges.md) page to get up to date on the latest FQDNs that leverage CDNs.
 
 You can also use the [Office 365 IP Address and URL Web service](microsoft-365-ip-web-service.md) to request the current Office 365 URLs and IP address ranges formatted as CSV or JSON.
 
@@ -175,7 +175,7 @@ You can also use the [Office 365 IP Address and URL Web service](microsoft-365-i
 
 We're continually looking for new ways to support our customers needs and are currently exploring the use of caching proxy solutions and other on-premises CDN solutions.
 
-Although it is not a part of the Office 365 CDN, you can also use the **Azure CDN** for hosting custom web parts, libraries and other resource assets, which allows you to apply access keys to your CDN storage and exert greater control over your CDN configuration. Use of the Azure CDN is not free, and requires an Azure subscription. For more information on how to configure an Azure CDN instance, see [Quickstart: Integrate an Azure storage account with Azure CDN](https://docs.microsoft.com/azure/cdn/cdn-create-a-storage-account-with-cdn).
+Although it is not a part of the Office 365 CDN, you can also use the **Azure CDN** for hosting custom web parts, libraries and other resource assets, which allows you to apply access keys to your CDN storage and exert greater control over your CDN configuration. Use of the Azure CDN is not free, and requires an Azure subscription. For more information on how to configure an Azure CDN instance, see [Quickstart: Integrate an Azure storage account with Azure CDN](/azure/cdn/cdn-create-a-storage-account-with-cdn).
 
 ## I'm using Azure ExpressRoute for Office 365, does that change things?
 
@@ -185,17 +185,17 @@ Although it is not a part of the Office 365 CDN, you can also use the **Azure CD
 
 Using CDNs only makes sense in a SharePoint Online context and should be avoided with SharePoint Server. This is because all of the advantages around geographic location do not hold true if the server is located on-premises or geographically close anyway. Additionally, if there is a network connection to the servers where it's hosted, then the site may be used without an Internet connection and therefore cannot retrieve the CDN files. Otherwise, you should use a CDN if there is one available and stable for the library and files you need for your site.
   
-Here's a short link you can use to come back: [https://aka.ms/o365cdns](https://aka.ms/o365cdns)
+Here's a short link you can use to come back: [https://aka.ms/o365cdns]()
   
 ## See also
 
-[Office 365 Network Connectivity Principles](https://aka.ms/o365networkingprinciples)
+[Office 365 Network Connectivity Principles](./microsoft-365-network-connectivity-principles.md)
 
 [Assessing Office 365 network connectivity](assessing-network-connectivity.md)
 
 [Managing Office 365 endpoints](managing-office-365-endpoints.md)
 
-[Office 365 URLs and IP address ranges](https://go.microsoft.com/fwlink/p/?LinkID=293744)
+[Office 365 URLs and IP address ranges](./urls-and-ip-address-ranges.md)
 
 [Use the Office 365 content delivery network with SharePoint Online](use-microsoft-365-cdn-with-spo.md)
 
