@@ -107,12 +107,12 @@
 
 ##### [Deploy]()
 ###### [Deploy Microsoft Defender for Endpoint on iOS via Intune](ios-install.md)
+###### [Deploy Microsoft Defender for Endpoint on iOS for unenrolled devices](ios-install-unmanaged.md)
 
 ##### [Configure]()
 ###### [Configure iOS features](ios-configure-features.md)
 
-##### [Troubleshoot]()
-###### [FAQs and Troubleshoot issues](ios-troubleshoot.md)
+##### [FAQs and Troubleshooting](ios-troubleshoot.md)
 
 ##### [Privacy](ios-privacy.md)
 
@@ -239,6 +239,7 @@
 #### [Overview of attack surface reduction](overview-attack-surface-reduction.md)
 #### [Configure attack surface reduction capabilities](configure-attack-surface-reduction.md)
 #### [Learn about attack surface reduction rules](attack-surface-reduction.md)
+#### [Attack surface reduction rules](attack-surface-reduction-rules.md)
 #### [Evaluate attack surface reduction rules](evaluate-attack-surface-reduction.md)
 #### [Enable attack surface reduction rules](enable-attack-surface-reduction.md)
 #### [Customize attack surface reduction rules](customize-attack-surface-reduction.md)

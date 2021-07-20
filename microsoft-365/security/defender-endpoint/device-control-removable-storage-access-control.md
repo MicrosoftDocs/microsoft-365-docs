@@ -35,6 +35,13 @@ Microsoft Defender for Endpoint Device Control Removable Storage Access Control 
 |User-based Support     |   Yes      |
 |Machine-based Support    |    Yes     |
 
+## Licensing
+
+Before you get started with Removable Storage Access Control, you should [confirm your Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1). To access and use Removable Storage Access Control, you must have the following:
+
+- Microsoft 365 E3 for functionality/policy deployment.
+- Microsoft 365 E5 for reporting.
+
 ## Prepare your endpoints
 
 Deploy Removable Storage Access Control on Windows 10 devices that have antimalware client version **4.18.2103.3 or later**.
@@ -269,8 +276,6 @@ For policy deployment in Intune, the account must have permissions to create, ed
       ./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyGroups/%7b9b28fae8-72f7-4267-a1a5-685f747a7146%7d/GroupData
 
     - Data Type: String (XML file)
-    
-      :::image type="content" source="images/xml-data-type-string.png" alt-text="The xml file for the STRING data type":::
 
 2. For each policy, also create an OMA-URI:
 
@@ -284,7 +289,6 @@ For policy deployment in Intune, the account must have permissions to create, ed
 
     - Data Type: String (XML file)
 
-      :::image type="content" source="images/xml-data-type-string-2.png" lightbox="images/xml-data-type-string-2.png" alt-text="Display of XML file for the STRING data type":::
 
 ## Deploying and managing policy by using Intune user interface
 
