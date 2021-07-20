@@ -53,7 +53,7 @@ The first step in creating a form processing model is to name the model, define 
 
 3. You can now automatically extract and save information from a *collection* of structured files that share a similar layout—such as invoices or tax documents—that are in a SharePoint document library. This lets you compose several models into a single model and extract specific table item information.
 
-   The collection name is saved to a dedicated column in the document library where the model is applied, allowing you to distinguish different file layouts processed by the same model.
+   The collection name is saved to a dedicated column in the document library where the model is applied, which allows you to distinguish different file layouts processed by the same model.
 
    In addition, the extracted table information is saved to a specified list and associated with the uploaded file for easy viewing or for additional business process automation.
 
@@ -104,7 +104,7 @@ You need to tag the documents to teach the model to understand the fields and ta
 
 ## Step 4: Train and publish your model
 
-1. After you create and train your model, you are ready to publish it and use it in SharePoint. For detailed steps, see [Train and publish your form processing model](https://docs.microsoft.com/ai-builder/form-processing-train). 
+1. After you create and train your model, you're ready to publish it and use it in SharePoint. For detailed steps, see [Train and publish your form processing model](https://docs.microsoft.com/ai-builder/form-processing-train). 
 
 2. After the model is published, select **Use model**, and then select **Create flow**. This creates a Power Automate flow that can run in your SharePoint document library and that extracts the fields that have been identified in the model.
 
