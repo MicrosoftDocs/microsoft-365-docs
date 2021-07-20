@@ -50,7 +50,7 @@ It's important to understand the following prerequisites prior to creating indic
 - URL/IP allow and block relies on the Defender for Endpoint component Network Protection to be enabled in block mode. For more information on Network Protection and configuration instructions, see [Enable network protection](enable-network-protection.md).
 - The Antimalware client version must be 4.18.1906.x or later. 
 - Supported on machines on Windows 10, version 1709 or later. 
-- Ensure that **Custom network indicators** is enabled in **Microsoft Defender Security Center > Settings > Advanced features**. For more information, see [Advanced features](advanced-features.md).
+- Ensure that **Custom network indicators** is enabled in **Microsoft 365 Defender > Settings > Endpoints> Advanced features**. For more information, see [Advanced features](advanced-features.md).
 - For support of indicators on iOS, see [Configure custom indicators](/microsoft-365/security/defender-endpoint/ios-configure-features#configure-custom-indicators).
 
 
