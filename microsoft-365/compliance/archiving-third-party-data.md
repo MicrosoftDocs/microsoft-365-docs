@@ -200,7 +200,7 @@ After you use data connectors to import and archive third-party data in user mai
 
 To search for (or place a hold on) any type of third-party data that you've imported to user mailboxes using a data connector, you can use the following search query. Be sure to scope the search to user mailboxes.
 
-```text
+```powershell
 kind:externaldata
 ```
 
@@ -210,7 +210,7 @@ You can use this query in the **Keywords** box for a Content search, a search as
 
 You can also use the `kind:externaldata` property:value pair to to narrow the scope of searches to third-party data. For example, to search for items imported from any third-party data source that contain the word *contoso* in the **Subject** property of the imported item, use the following query in the **Keywords** box:
 
-```text
+```powershell
 subject:contoso AND kind:externaldata
 ```
 
@@ -220,13 +220,13 @@ Alternatively, you can use the **Message kind** condition to configure the same 
 
 To search for a specific type of archived third-party data, use the **itemclass** mailbox property in a search query. Use the following property:value format:
 
-```text
+```powershell
 itemclass:ipm.externaldata.<third-party data type>
 ```
 
 Every item imported by a third-party data connector includes the **itemclass** property with a value that corresponds to the third-party data type. For example, to search for Facebook data that contains the word *contoso*, in the **Subject** property of the imported item, use the following query:
 
-```text
+```powershell
 subject:contoso AND itemclass:ipm.externaldata.Facebook*
 ```
 
