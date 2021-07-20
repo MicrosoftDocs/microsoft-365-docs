@@ -9,8 +9,8 @@ metadata:
   ms.service: O365-administration #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.subservice: subservice # Optional; Remove if no subservice is used.
   ms.topic: landing-page # Required
-  author: cmcatee #Required; your GitHub user alias, with correct capitalization.
-  ms.author: cmcatee-MSFT #Required; microsoft alias of author; optional team alias.
+  author: cmcatee-MSFT #Required; your GitHub user alias, with correct capitalization.
+  ms.author: cmcatee #Required; microsoft alias of author; optional team alias.
   ms.date: 01/27/2020 #Required; mm/dd/yyyy format.
   localization_priority: Priority
   ms.custom: AdminSurgePortfolio

@@ -30,9 +30,43 @@ Microsoft Secure Score can be found at https://security.microsoft.com/securescor
 
 We're making some changes in the near future to make [Microsoft Secure Score](microsoft-secure-score.md) a better representative of your security posture and improve usability. Your score and the maximum possible score may change.
 
-### No Planned Changes
+### July 2021
 
-There are no planned changes at this time.
+#### Add improvement action related to Microsoft Teams
+
+- Restrict dial-in users from bypassing a meeting lobby.
+- Limit external participants from having control in a Teams meeting.
+- Restrict anonymous users from starting Teams meetings.
+- Require lobbies to be set up for Teams meetings.
+- Configure which users are allowed to be present in Teams meetings.
+
+#### Add improvement action related to Microsoft Defender for Endpoint
+- Fix Microsoft Defender for Endpoint sensor data collection for macOS
+- Fix Microsoft Defender for Endpoint impaired communications for macOS
+- Set minimum password length to 15 or more characters in macOS
+- Set 'Enforce password history' to '24 or more password(s)' in macOS
+- Set 'Maximum password age' to '90 or fewer days, but not 0' in macOS
+- Set account lockout threshold to 5 or lower in macOS
+- Turn on Firewall on macOS
+- Enable Gatekeeper
+- Enable System Integrity Protection (SIP)
+- Enable FileVault Disk Encryption
+- Set screen to lock when screensaver starts in macOS
+- Ensure screensaver is set to start in 20 minutes or less in macOS
+- Secure Home Folders
+- Turn on Microsoft Defender Antivirus real-time protection for macOS
+- Turn on Microsoft Defender Antivirus PUA protection in block mode for macOS
+- Enable Microsoft Defender Antivirus cloud-delivered protection for macOS
+- Update Microsoft Defender Antivirus definitions for macOS
+- Fix Microsoft Defender for Endpoint sensor data collection for Linux
+- Fix Microsoft Defender for Endpoint impaired communications for Linux
+- Unrestricted Access Accounts
+- Turn on Microsoft Defender Antivirus real-time protection for Linux
+- Turn on Microsoft Defender Antivirus PUA protection in block mode for Linux
+- Enable Microsoft Defender Antivirus cloud-delivered protection for Linux
+- Update Microsoft Defender Antivirus definitions for Linux
+
+
 
 ## Related resources
 

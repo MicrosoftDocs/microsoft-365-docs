@@ -7,7 +7,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-ms.localizationpriority: medium
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -15,6 +15,7 @@ ms.date: 06/29/2020
 ms.reviewer: 
 manager: dansimp
 ms.technology: mde
+ms.topic: article
 ---
 
 # Collect Microsoft Defender AV diagnostic data
@@ -37,9 +38,9 @@ On at least two devices that are experiencing the same issue, obtain the .cab di
 
     a. Open the **Start** menu.
 
-    b. Type **cmd**. Right-click on **Command Prompt** and click **Run as administrator**.
+    b. Type **cmd**. Right-click on **Command Prompt** and then select **Run as administrator**.
 
-    c. Enter administrator credentials or approve the prompt.
+    c. Specify administrator credentials or approve the prompt.
 
 2. Navigate to the Microsoft Defender directory. By default, this is `C:\Program Files\Windows Defender`.
 

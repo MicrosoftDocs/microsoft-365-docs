@@ -1,7 +1,7 @@
 ---
 title: Get security recommendations
 description: Retrieves a collection of security recommendations related to a given device ID.
-keywords: apis, graph api, supported apis, get, list, file, information, security recommendation per device, threat & vulnerability management api, mdatp tvm api
+keywords: apis, graph api, supported apis, get, list, file, information, security recommendation per device, threat & vulnerability management api, Microsoft Defender for Endpoint tvm api
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -14,6 +14,8 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
+MS.technology: mde
+ms.custom: api
 ---
 
 # Get security recommendations
@@ -105,5 +107,5 @@ Here is an example of the response.
 ```
 
 ## Related topics
-- [Risk-based Threat & Vulnerability Management](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [Threat & Vulnerability security recommendation](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-security-recommendation)
+- [Risk-based Threat & Vulnerability Management](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Threat & Vulnerability security recommendation](/microsoft-365/security/defender-endpoint/tvm-security-recommendation)

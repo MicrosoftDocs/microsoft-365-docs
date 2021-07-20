@@ -1,7 +1,7 @@
 ---
 title: Onboard Windows 10 devices using a local script
-description: Use a local script to deploy the configuration package on devices so that they are onboarded to the service.
-keywords: configure devices using a local script, device management, configure Windows ATP devices, configure Microsoft Defender for Endpoint devices
+description: Use a local script to deploy the configuration package on devices to enable onboarding of the devices to the service.
+keywords: configure devices using a local script, device management, configure Microsoft Defender for Endpoint devices
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,7 +18,7 @@ ms.topic: article
 ms.technology: mde
 ---
 
-# Onboard Windows 10 devices using a local script
+# Onboard the Windows 10 devices using a local script
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -42,9 +42,9 @@ You can also manually onboard individual devices to Defender for Endpoint. You m
 Check out the [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)  or  [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) to see the various paths in deploying Defender for Endpoint. 
 
 
-1.  Open the GP configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from [Microsoft Defender Security Center](https://securitycenter.windows.com/):
+1.  Open the GP configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from [Microsoft 365  Defender portal](https://security.microsoft.com/):
 
-    1. In the navigation pane, select **Settings** > **Onboarding**.
+    1. In the navigation pane, select **Settings** > **Endpoints** > **Device management** > **Onboarding**.
 
     1. Select Windows 10 as the operating system.
 
@@ -53,7 +53,7 @@ Check out the [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/publ
     1. Click **Download package** and save the .zip file.
 
   
-2.  Extract the contents of the configuration package to a location on the device you want to onboard (for example, the Desktop). You should have a file named *WindowsDefenderATPOnboardingScript.cmd*.
+2.  Extract the contents of the configuration package to a location on the device you want to onboard (for example, the Desktop). You should have a file named *WindowsDefenderATPLocalOnboardingScript.cmd*.
 
 3.  Open an elevated command-line prompt on the device and run the script:
 
@@ -63,7 +63,7 @@ Check out the [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/publ
 
         ![Window Start menu pointing to Run as administrator](images/run-as-admin.png)
 
-4.  Type the location of the script file. If you copied the file to the desktop, type: *%userprofile%\Desktop\WindowsDefenderATPOnboardingScript.cmd*
+4.  Type the location of the script file. If you copied the file to the desktop, type: *%userprofile%\Desktop\WindowsDefenderATPLocalOnboardingScript.cmd*
 
 5.  Press the **Enter** key or click **OK**.
 
@@ -74,7 +74,7 @@ For information on how you can manually validate that the device is compliant an
 > After onboarding the device, you can choose to run a detection test to verify that an device is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Microsoft Defender for Endpoint endpoint](run-detection-test.md).
 
 ## Configure sample collection settings
-For each device, you can set a configuration value to state whether samples can be collected from the device when a request is made through Microsoft Defender Security Center to submit a file for deep analysis.
+For each device, you can set a configuration value to state whether samples can be collected from the device when a request is made through Microsoft 365 Defender to submit a file for deep analysis.
 
 You can manually configure the sample sharing setting on the device by using *regedit* or creating and running a *.reg* file.  
 
@@ -100,9 +100,9 @@ For security reasons, the package used to Offboard devices will expire 30 days a
 > [!NOTE]
 > Onboarding and offboarding policies must not be deployed on the same device at the same time, otherwise this will cause unpredictable collisions.
 
-1. Get the offboarding package from [Microsoft Defender Security Center](https://securitycenter.windows.com/):
+1. Get the offboarding package from [Microsoft 365 Defender portal](https://security.microsoft.com/):
 
-    1. In the navigation pane, select **Settings** > **Offboarding**.
+    1. In the navigation pane, select **Settings** > **Endpoints** > **Device management** >**Offboarding**.
 
     1. Select Windows 10 as the operating system.
 
@@ -134,9 +134,9 @@ You can follow the different verification steps in the [Troubleshoot onboarding 
 Monitoring can also be done directly on the portal, or by using the different deployment tools.
 
 ### Monitor devices using the portal
-1. Go to Microsoft Defender Security Center.
+1. Go to Microsoft 365 Defender portal.
 
-2. Click **Devices list**.
+2. Click **Devices inventory**.
 
 3. Verify that devices are appearing.
 

@@ -4,22 +4,21 @@ description: Configure what Microsoft Defender Antivirus should do when it detec
 keywords: remediation, fix, remove, threats, quarantine, scan, restore
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
+ms.technology: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-ms.localizationpriority: medium
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
+ms.topic: article
 ms.custom: nextgen
 ms.date: 03/16/2021
 ms.reviewer: 
 manager: dansimp
-ms.technology: mde
 ---
 
 # Configure remediation for Microsoft Defender Antivirus detections
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Applies to:**

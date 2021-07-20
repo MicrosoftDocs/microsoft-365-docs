@@ -58,10 +58,10 @@ This topic provides instructions on how to run the tool via Live Response.
 
     ```console
     Run MDELiveAnalyzer.ps1
-    GetFile "C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\MDEClientAnalyzerResult.zip" -auto
+    GetFile "C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\MDEClientAnalyzerResult.zip"
     ```
 
-    ![Image of commands](images/analyzer-commands.png)
+    [ ![Image of commands](images/analyzer-commands.png) ](images/analyzer-commands.png#lightbox)
 
 
 >[!NOTE]
@@ -74,7 +74,7 @@ This topic provides instructions on how to run the tool via Live Response.
 >   ```console
 >   PutFile MDEClientAnalyzerPreview.zip -overwrite
 >   Run MDELiveAnalyzer.ps1
->   GetFile "C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\MDEClientAnalyzerResult.zip" -auto
+>   GetFile "C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\MDEClientAnalyzerResult.zip" 
 >   ```
 > 
 > - For more information on gathering data locally on a machine in case the machine isn't communicating with Microsoft Defender for Endpoint cloud services, or does not appear in Microsoft Defender for Endpoint portal as expected, see [Verify client connectivity to Microsoft Defender for Endpoint service URLs](configure-proxy-internet.md#verify-client-connectivity-to-microsoft-defender-atp-service-urls).
@@ -87,3 +87,4 @@ This topic provides instructions on how to run the tool via Live Response.
 - [Run the client analyzer on macOS or Linux](run-analyzer-macos-linux.md)
 - [Data collection for advanced troubleshooting on Windows](data-collection-analyzer.md)
 - [Understand the analyzer HTML report](analyzer-report.md)
+

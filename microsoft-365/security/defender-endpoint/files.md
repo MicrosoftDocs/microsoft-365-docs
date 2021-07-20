@@ -14,7 +14,8 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+MS.technology: mde
+ms.custom: api
 ---
 
 # File resource type
@@ -30,10 +31,10 @@ ms.technology: mde
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-
 Represent a file entity in Defender for Endpoint.
 
 ## Methods
+
 Method|Return Type |Description
 :---|:---|:---
 [Get file](get-file-information.md) | [file](files.md) | Get a single file 
@@ -43,7 +44,8 @@ Method|Return Type |Description
 
 
 ## Properties
-|Property |	Type	|	Description |
+
+|Property | Type | Description |
 |:---|:---|:---|
 |sha1 | String | Sha1 hash of the file content |
 |sha256 | String | Sha256 hash of the file content |
@@ -62,26 +64,25 @@ Method|Return Type |Description
 |determinationType | String | The determination type of the file |
 |determinationValue | String | Determination value |
 
-
 ## Json representation
 
 ```json
 {
-	"sha1": "4388963aaa83afe2042a46a3c017ad50bdcdafb3",
-	"sha256": "413c58c8267d2c8648d8f6384bacc2ae9c929b2b96578b6860b5087cd1bd6462",
-	"globalPrevalence": 180022,
-	"globalFirstObserved": "2017-09-19T03:51:27.6785431Z",
-	"globalLastObserved": "2020-01-06T03:59:21.3229314Z",
-	"size": 22139496,
-	"fileType": "APP",
-	"isPeFile": true,
-	"filePublisher": "CHENGDU YIWO Tech Development Co., Ltd.",
-	"fileProductName": "EaseUS MobiSaver for Android",
-	"signer": "CHENGDU YIWO Tech Development Co., Ltd.",
-	"issuer": "VeriSign Class 3 Code Signing 2010 CA",
-	"signerHash": "6c3245d4a9bc0244d99dff27af259cbbae2e2d16",
-	"isValidCertificate": false,
-	"determinationType": "Pua",
-	"determinationValue": "PUA:Win32/FusionCore"
+    "sha1": "4388963aaa83afe2042a46a3c017ad50bdcdafb3",
+    "sha256": "413c58c8267d2c8648d8f6384bacc2ae9c929b2b96578b6860b5087cd1bd6462",
+    "globalPrevalence": 180022,
+    "globalFirstObserved": "2017-09-19T03:51:27.6785431Z",
+    "globalLastObserved": "2020-01-06T03:59:21.3229314Z",
+    "size": 22139496,
+    "fileType": "APP",
+    "isPeFile": true,
+    "filePublisher": "CHENGDU YIWO Tech Development Co., Ltd.",
+    "fileProductName": "EaseUS MobiSaver for Android",
+    "signer": "CHENGDU YIWO Tech Development Co., Ltd.",
+    "issuer": "VeriSign Class 3 Code Signing 2010 CA",
+    "signerHash": "6c3245d4a9bc0244d99dff27af259cbbae2e2d16",
+    "isValidCertificate": false,
+    "determinationType": "Pua",
+    "determinationValue": "PUA:Win32/FusionCore"
 }
 ```

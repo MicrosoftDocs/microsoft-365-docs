@@ -10,8 +10,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
+author: JoeDavies-MSFT
+ms.author: josephd
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -40,6 +40,7 @@ The investigation page has recently been updated to include information across y
 ## Open the investigation details view
 
 You can open the investigation details view by using one of the following methods:
+
 - [Select an item in the Action center](#select-an-item-in-the-action-center)
 - [Select an investigation from an incident details page](#open-an-investigation-from-an-incident-details-page)
 
@@ -77,14 +78,14 @@ In the Investigation details view, you can see information on the **Investigatio
 
 | Tab | Description |
 |:--------|:--------|
-| **Investigation graph**	| Provides a visual representation of the investigation. Depicts entities and lists threats found, along with alerts and whether any actions are awaiting approval.<br/>You can select an item on the graph to view more details. For example, selecting the **Evidence** icon takes you to the **Evidence** tab, where you can see detected entities and their verdicts. |
-| **Alerts**	| Lists alerts associated with the investigation. Alerts can come from threat protection features on a user's device, in Office apps, Cloud App Security, and other Microsoft 365 Defender features.|
+| **Investigation graph** | Provides a visual representation of the investigation. Depicts entities and lists threats found, along with alerts and whether any actions are awaiting approval.<br/>You can select an item on the graph to view more details. For example, selecting the **Evidence** icon takes you to the **Evidence** tab, where you can see detected entities and their verdicts. |
+| **Alerts** | Lists alerts associated with the investigation. Alerts can come from threat protection features on a user's device, in Office apps, Cloud App Security, and other Microsoft 365 Defender features.|
 | **Devices** | Lists devices included in the investigation along with their remediation level. (Remediation levels correspond to the [automation level for device groups](automation-levels.md).) |
 | **Mailboxes** |Lists mailboxes that are impacted by detected threats.  |
 | **Users**  | Lists user accounts that are impacted by detected threats. |
 | **Evidence** | Lists pieces of evidence raised by alerts/investigations. Includes verdicts (*Malicious*, *Suspicious*, or *No threats found*) and remediation status. |
-| **Entities**	| Provides details about each analyzed entity, including a verdict for each entity type (*Malicious*, *Suspicious*, or *No threats found*).|
-|**Log**	| Provides a chronological, detailed view of all the investigation actions taken after an alert was triggered.|
+| **Entities** | Provides details about each analyzed entity, including a verdict for each entity type (*Malicious*, *Suspicious*, or *No threats found*).|
+|**Log** | Provides a chronological, detailed view of all the investigation actions taken after an alert was triggered.|
 | **Pending actions** | Lists items that require approval to proceed. Go to the Action center ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)) to approve pending actions. |
 
 ## See also

@@ -1,6 +1,6 @@
 ---
-title: Configure Conditional Access in Microsoft Defender ATP
-description: Learn about steps that you need to do in Intune, Microsoft Defender Security Center, and Azure to implement Conditional access
+title: Configure Conditional Access in Microsoft Defender for Endpoint
+description: Learn about steps that you need to do in Intune, Microsoft 365 Defender, and Azure to implement Conditional access
 keywords: conditional access, conditional, access, device risk, risk level, integration, intune integration
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -39,16 +39,16 @@ This section guides you through all the steps you need to take to properly imple
 You need to make sure that all your devices are enrolled in Intune. You can use any of the following options to enroll devices in Intune:
 
 
-- IT Admin: For more information on how to enabling auto-enrollment, see [Windows Enrollment](https://docs.microsoft.com/intune/windows-enroll#enable-windows-10-automatic-enrollment)
-- End-user: For more information on how to enroll your Windows 10 device in Intune, see [Enroll your Windows 10 device in Intune](https://docs.microsoft.com/intune/quickstart-enroll-windows-device)
-- End-user alternative: For more information on joining an Azure AD domain, see [How to: Plan your Azure AD join implementation](https://docs.microsoft.com/azure/active-directory/devices/azureadjoin-plan).
+- IT Admin: For more information on how to enabling auto-enrollment, see [Windows Enrollment](/intune/windows-enroll#enable-windows-10-automatic-enrollment)
+- End-user: For more information on how to enroll your Windows 10 device in Intune, see [Enroll your Windows 10 device in Intune](/intune/quickstart-enroll-windows-device)
+- End-user alternative: For more information on joining an Azure AD domain, see [How to: Plan your Azure AD join implementation](/azure/active-directory/devices/azureadjoin-plan).
 
 
 
-There are steps you'll need to take in Microsoft Defender Security Center, the Intune portal, and Azure AD portal.
+There are steps you'll need to take in Microsoft 365 Defender, the Intune portal, and Azure AD portal.
 
 It's important to note the required roles to access these portals and implement Conditional access:
-- **Microsoft Defender Security Center** - You'll need to sign into the portal with a global administrator role to turn on the integration.
+- **Microsoft 365 Defender** - You'll need to sign into the portal with a global administrator role to turn on the integration.
 - **Intune** - You'll need to sign in to the portal with security administrator rights with management permissions. 
 - **Azure AD portal** - You'll need to sign in as a global administrator, security administrator, or Conditional Access administrator.
 
@@ -57,7 +57,7 @@ It's important to note the required roles to access these portals and implement 
 > You'll need a Microsoft Intune environment, with Intune managed and Azure AD joined Windows 10 devices.
 
 Take the following steps to enable Conditional Access:
-- Step 1: Turn on the Microsoft Intune connection from Microsoft Defender Security Center
+- Step 1: Turn on the Microsoft Intune connection from Microsoft 365 Defender
 - Step 2: Turn on the Defender for Endpoint integration in Intune
 - Step 3: Create the compliance policy in Intune
 - Step 4: Assign the policy 
@@ -65,7 +65,7 @@ Take the following steps to enable Conditional Access:
 
 
 ### Step 1: Turn on the Microsoft Intune connection
-1. In the navigation pane, select **Settings** > **Advanced features** > **Microsoft Intune connection**.
+1. In the navigation pane, select **Settings** > **Endpoints** > **General** > **Advanced features** > **Microsoft Intune connection**.
 2. Toggle the Microsoft Intune setting to **On**.
 3. Click **Save preferences**.
 
@@ -93,7 +93,7 @@ Take the following steps to enable Conditional Access:
 
 ### Step 4: Assign the policy
 1. In the [Azure portal](https://portal.azure.com), select **All services**, filter on **Intune**, and select **Microsoft Intune**.
-2. Select **Device compliance** > **Policies**> select your Microsoft Defender ATP compliance policy.
+2. Select **Device compliance** > **Policies**> select your Microsoft Defender for Endpoint compliance policy.
 3. Select **Assignments**.
 4. Include or exclude your Azure AD groups to assign them the policy.
 5. To deploy the policy to the groups, select **Save**. The user devices targeted by the policy are evaluated for compliance.
@@ -109,6 +109,6 @@ Take the following steps to enable Conditional Access:
 
 6. Select **Enable policy**, and then **Create** to save your changes.
 
-For more information, see [Enable Microsoft Defender ATP with Conditional Access in Intune](https://docs.microsoft.com/intune/advanced-threat-protection).
+For more information, see [Enforce compliance for Microsoft Defender for Endpoint with Conditional Access in Intune](/intune/advanced-threat-protection).
 
 >Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-conditionalaccess-belowfoldlink)

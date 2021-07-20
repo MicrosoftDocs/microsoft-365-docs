@@ -26,7 +26,7 @@ IRM protection can be applied by users in Microsoft Outlook or Outlook on the we
   
 ## Changes to how IRM works with Office 365 Message Encryption (OME) and Azure Active Directory
 
-As of September 2017, when you set up the new Office 365 Message Encryption capabilities for your organization, you also set up IRM for use with Azure Rights Management (Azure RMS). You no longer set up IRM with Azure RMS separately. Instead, OME and rights management work seamlessly together. For more details about the new capabilities, see [Office 365 Message Encryption FAQ](./ome-faq.md). If you're ready to get started using the new OME capabilities within your organization, see [Set up new Office 365 Message Encryption capabilities built on top of Azure Information Protection](./set-up-new-message-encryption-capabilities.md).
+As of September 2017, when you set up the new Office 365 Message Encryption capabilities for your organization, you also set up IRM for use with Azure Rights Management (Azure RMS). You no longer set up IRM with Azure RMS separately. Instead, OME and rights management work seamlessly together. For more details about the new capabilities, see [Office 365 Message Encryption FAQ](./ome-faq.yml). If you're ready to get started using the new OME capabilities within your organization, see [Set up new Office 365 Message Encryption capabilities built on top of Azure Information Protection](./set-up-new-message-encryption-capabilities.md).
   
 ## How IRM works with Exchange Online and Active Directory Rights Management Services
 

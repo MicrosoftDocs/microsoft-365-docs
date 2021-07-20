@@ -7,14 +7,15 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-ms.localizationpriority: medium
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 12/16/2020
+ms.date: 07/13/2021
 ms.reviewer: 
 manager: dansimp
 ms.technology: mde
+ms.topic: article
 ---
 
 # Manage Microsoft Defender Antivirus in your business
@@ -25,6 +26,7 @@ ms.technology: mde
 **Applies to:**
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-windows)
 
 You can manage and configure Microsoft Defender Antivirus with the following tools:
 
@@ -43,4 +45,4 @@ The following articles provide further information, links, and resources for usi
 |[Manage Microsoft Defender Antivirus with Group Policy settings](use-group-policy-microsoft-defender-antivirus.md)|List of all Group Policy settings located in ADMX templates |
 |[Manage Microsoft Defender Antivirus with PowerShell cmdlets](use-powershell-cmdlets-microsoft-defender-antivirus.md)|Instructions for using PowerShell cmdlets to manage Microsoft Defender Antivirus, plus links to documentation for all cmdlets and allowed parameters |
 |[Manage Microsoft Defender Antivirus with Windows Management Instrumentation (WMI)](use-wmi-microsoft-defender-antivirus.md)| Instructions for using WMI to manage Microsoft Defender Antivirus, plus links to documentation for the WMIv2 APIs (including all classes, methods, and properties) |
-|[Manage Microsoft Defender Antivirus with the mpcmdrun.exe command-line tool](command-line-arguments-microsoft-defender-antivirus.md)|Instructions on using the dedicated command-line tool to manage and use Microsoft Defender Antivirus |
+|[Manage Microsoft Defender Antivirus with the MpCmdRun.exe command-line tool](command-line-arguments-microsoft-defender-antivirus.md)| Instructions on using the dedicated command-line tool to manage and use Microsoft Defender Antivirus |
