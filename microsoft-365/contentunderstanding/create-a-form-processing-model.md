@@ -27,12 +27,11 @@ Using [AI Builder](/ai-builder/overview)—a feature in Microsoft PowerApps—Sh
 
 Creating a form processing model involves the following steps:
 
- - Step 1: Create the from processing model to create the content type
- - Step 2: Add and analyze example files
- - Step 3: Select your form fields
- - Step 4: Train and test your model
- - Step 5: Publish your model
- - Step 6: Use your model
+ - [Step 1: Create a form processing model](create-a-form-processing-model.md#step-1-create-a-form-processing-model)
+ - [Step 2: Add and analyze documents](create-a-form-processing-model.md#step-2-add-and-analyze-documents)
+ - [Step 3: Tag fields and tables](create-a-form-processing-model.md#step-3-tag-fields-and-tables)
+ - [Step 4: Train and publish your model](reate-a-form-processing-model.md#step-4-train-and-publish-your-model)
+ - [Step 5: Use your model](create-a-form-processing-model.md#step-5-use-your-model)
 
 ## Requirements
 
@@ -93,75 +92,43 @@ After you create your new form processing model, your browser opens a new PowerA
 > [!NOTE]
 > When you look for example files to use, see the [form processing model input document requirements and optimization tips](/ai-builder/form-processing-model-requirements). 
  
-1. You first define the fields and tables you want to teach your model to extract on the **Choose information to extract** page. For detailed information, see [Define fields and tables to extract](https://docs.microsoft.com/en-us/ai-builder/create-form-processing-model#define-fields-and-tables-to-extract). 
+1. You first define the fields and tables you want to teach your model to extract on the **Choose information to extract** page. For detailed steps, see [Define fields and tables to extract](https://docs.microsoft.com/en-us/ai-builder/create-form-processing-model#define-fields-and-tables-to-extract). 
 
-2.  You can create as many collections of document layouts you want your model to process. For detailed information, see [Group documents by collections](https://docs.microsoft.com/en-us/ai-builder/create-form-processing-model#group-documents-by-collections). 
+2.  You can create as many collections of document layouts you want your model to process. For detailed steps, see [Group documents by collections](https://docs.microsoft.com/en-us/ai-builder/create-form-processing-model#group-documents-by-collections). 
 
 3. After you create your collections and add the example files for each, AI Builder will examine the uploaded documents to detect the fields and tables. This usually takes a few minutes. When the analysis is complete, you can proceed with tagging the documents.
 
-## Step 3: Select your form fields
+## Step 3: Tag fields and tables
 
-After analyzing the documents for fields, you can now see the fields that were found and identify the ones that you want to save. Saved fields display as columns in your model's document library view and show the values extracted from each document.
+You need to tag the documents to teach the model to understand the fields and table data you want to extract. For detailed steps, see [Tag documents](https://docs.microsoft.com/en-us/ai-builder/create-form-processing-model#tag-documents).
 
-1. The next page displays one of your sample files and will highlight all common fields that were automatically detected by the system.
+## Step 4: Train and publish your model
 
-    ![Select fields page](../media/content-understanding/select-fields-page.png)
-
-2. Select the fields that you want to save and select the checkbox to confirm your selection. For example, in the Purchase Order model, choose to select the *Date*, *PO*, and *Total* fields. You can also choose to rename a field if you want to.
-
-    ![Select PO#](../media/content-understanding/po.png)
-
-3. If a field was not detected by analysis, you can still choose to add it. Highlight the information you want to extract, and in the name box type in the name you want. Then select the check box. Note that you need to confirm undetected fields in your remaining sample files.
-
-4. Select **Confirm fields** after you've selected the fields that you want to save.
- 
-    ![Confirm fields after selecting fields](../media/content-understanding/confirm-fields.png)
- 
-5. On the **Select the form fields you want to save** page, it shows the number of fields you've selected. Select **Done**.
-
-## Step 4: Train and test your model
-
-After selecting the fields you want to save, the **Model Summary** page lets you train and test your model.
-
-1. On the **Model Summary** page, the saved fields will show in the **Selected fields** section. Select **Train** to begin training on your example files. This step might take a few minutes to complete.
-
-     ![Select fields train](../media/content-understanding/select-fields-train.png) 
-
-2. When you see the notification that training has completed, select **Go to details page**. 
-
-3. On the **Model details** page, you can choose to test how your model works by selecting **Quick test**. This lets you drag and drop files to the page and see if the fields are detected.
-
-    ![Confirm fields](../media/content-understanding/select-fields-train.png)
-
-2. When you see the notification that training has completed, select **Go to details page**. 
-
-3. On the **Model details** page, choose to test how your model works by selecting **Quick test**. This lets you drag and drop files to the page and see if the fields are detected.
-
-## Step 5: Publish your model
-
-1. If you're satisfied with the results of your model, select **Publish** to make it available for use.
+1. After you create and train your model, you are ready to publish it and use it in SharePoint. For detailed steps, see [Train and publish your form processing model](https://docs.microsoft.com/ai-builder/form-processing-train). 
 
 2. After the model is published, select **Use model**. This creates a Power Automate flow that can run in your SharePoint document library and extracts the fields that have been identified in the model, then select **Create Flow**.
-  
-3. When completed, you'll see the message: *Your flow has been successfully created*.
+
+    ![Document library model applied.](../media/content-understanding/doc-lib-view.png)
  
-## Step 6: Use your model
+3. When completed, you'll see the message: *Your flow has been successfully created*.
 
-After publishing your model and creating its Power Automate flow, you can use your model in your SharePoint document library.
+    ![Document library model applied.](../media/content-understanding/doc-lib-view.png)
 
-1. After publishing your model, select **Go to SharePoint** to go to your document library.
+4. Select the **Go to SharePoint** button to see the document library updated with your model.
 
-2. In the document library model view, notice that the fields you selected now display as columns.
+## Step 5: Use your model
 
-    ![Document library model applied](../media/content-understanding/doc-lib-view.png)
+1. In the document library model view, notice that the fields you selected now display as columns.
 
-3. Notice that the information link next to **Documents** notes that a forms processing model is applied to this document library.
+    ![Document library model applied.](../media/content-understanding/doc-lib-view.png)
 
-    ![Info button](../media/content-understanding/info-button.png)  
+2. Notice that the information link next to **Documents** notes that a forms processing model is applied to this document library.
 
-4. Upload files to your document library. Any files that the model identifies as its content type lists the files in your view and displays the extracted data in the columns.
+    ![Info button.](../media/content-understanding/info-button.png)  
 
-    ![Done](../media/content-understanding/doc-lib-done.png) 
+3. Upload files to your document library. Any files that the model identifies as its content type lists the files in your view and displays the extracted data in the columns.
+
+    ![Done.](../media/content-understanding/doc-lib-done.png) 
 
 ## See Also
   
