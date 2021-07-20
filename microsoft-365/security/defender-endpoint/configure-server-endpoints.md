@@ -62,10 +62,25 @@ You'll need to complete the following general steps to successfully onboard serv
 
 
 ### Previous onboarding implementation
-Earlier implementation of onboarding Windows Server 2012 R2 and Windows Server 2016 required the use of Microsoft Monitoring Agent (MMA). The updated guidance makes it easier to onboard servers. 
+Earlier implementation of onboarding Windows Server 2012 R2 and Windows Server 2016 required the use of Microsoft Monitoring Agent (MMA). The new unified solution package makes it easier to onboard servers. In addition, this unified solution package comes with the following major improvements:
 
-If you onboarded your servers using MMA, follow the guidance provided in [Server migration](server-migration.md) to migrate to the new solution.
+- [Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-windows) with [Next-generation protection](/microsoft-365/security/defender-endpoint/next-generation-protection) for Windows Server 2012 R2
+- [Attack Surface Reduction (ASR) rules](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules)
+- [Network Protection](/microsoft-365/security/defender-endpoint/network-protection)
+- [Controlled Folder Access](/microsoft-365/security/defender-endpoint/controlled-folders)
+- [Potentially Unwanted Application (PUA) blocking](/microsoft-365/security/defender-endpoint/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)
+- [Improved detection capabilities](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response)
+- [Expanded response capabilities](/microsoft-365/security/defender-endpoint/respond-machine-alerts) on devices and [files](/microsoft-365/security/defender-endpoint/respond-file-alerts)
+- [EDR in Block Mode](/microsoft-365/security/defender-endpoint/edr-in-block-mode)
+- [Live Response](/microsoft-365/security/defender-endpoint/live-response)
+- [Automated Investigation and Response (AIR)](/microsoft-365/security/defender-endpoint/automated-investigations)
 
+If you have previously onboarded your servers using MMA, follow the guidance provided in [Server migration](server-migration.md) to migrate to the new solution.
+
+### Known issues and limitations
+The following specifics apply to the new unified solution package:
+- On Windows Server 2012 R2, there is no user interface for Microsoft Defender Antivirus. In addition, the user interface on Windows Server 2016 only allows for basic operations. To perform operations on a device locally, please refer to [Manage Microsoft Defender for Endpoint with PowerShell, WMI, and MPCmdRun.exe](/microsoft-365/security/defender-endpoint/manage-atp-post-migration-other-tools). As a result, features that specifically rely on user interaction, such as where the user is prompted to make a decision or perform a specific task, may not work as expected. It is generally recommended to not enable the user interface nor require user interaction on any managed server
+- Connectivity requirements match those for Windows Server 2019. Previously, the use of the Microsoft Monitoring Agent (MMA) on Windows Server 2016 and below allowed for the OMS gateway to provide connectivity to Defender cloud services. The new solution, like Microsoft Defender for Endpoint on Windows Server 2019 and Windows 10, does not support this gateway.
 
 ## Integration with Azure Defender
 Microsoft Defender for Endpoint integrates seamlessly with Azure Defender. You can onboard servers automatically, have servers monitored by Azure Defender appear in Defender for Endpoint, and conduct detailed investigations as an Azure Defender customer. 
