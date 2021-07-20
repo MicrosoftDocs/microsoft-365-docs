@@ -28,7 +28,6 @@ Use the following flowchart to apply the [principles of retention](retention.md#
 This logic flow is used for an item when either of the following conditions apply:
 
 - There is more than one retention policy applied
-
 - There is a retention label and one or more retention policies
 
 If any of the terms used in this flowchart are unfamiliar to you, see [Learn about retention policies and retention labels](retention.md).
