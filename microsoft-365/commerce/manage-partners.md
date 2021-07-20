@@ -5,16 +5,20 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: tugu, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
-- commerce
-ms.custom: AdminSurgePortfolio
-search.appverid:
-- MET150
+- M365-subscription-management 
+- Adm_O365
+ms.custom: 
+- AdminSurgePortfolio
+- commerce_subscriptions
+search.appverid: MET150
 description: "Learn how to work with Microsoft-certified solution providers (partners) to purchase and manage products and services for your organization or school."
+ms.date: 04/13/2021
 ---
 
 # Manage partner relationships

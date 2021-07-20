@@ -16,6 +16,7 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Priority
 f1.keywords: NOCSH
+recommendations: false
 description: Learn about the Microsoft 365 configuration steps necessary to set up a team for task, conversation, and documentation collaboration with guests in Teams.
 ---
 
@@ -45,7 +46,7 @@ To set external collaboration settings
 2. In the left navigation pane, click **Azure Active Directory**.
 3. Click **External identities**.
 4. On the **Get started** screen, in the left navigation pane, click **External collaboration settings**.
-5. Ensure that **Admins and users in the guest inviter role can invite** and **Members can invite** are both set to **Yes**.
+5. Ensure that **Member users and users assigned to specific admin roles can invite guest users including guests with member permissions** is selected.
 6. If you made changes, click **Save**.
 
 Note the settings in the **Collaboration restrictions** section. Make sure that the domains of the guests that you want to collaborate with aren't blocked.

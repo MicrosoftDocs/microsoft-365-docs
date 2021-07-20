@@ -1,5 +1,5 @@
 ---
-title: "Multi-factor authentication for Microsoft 365"
+title: "Multifactor authentication for Microsoft 365"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -16,20 +16,21 @@ ms.collection:
 ms.custom: 
 - AdminSurgePortfolio
 - okr_smb
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
-description: "Learn about multi-factor authentication in Microsoft 365."
+description: "Multi-factor authentication (MFA) uses both a password, which should be strong, and an additional verification method."
 ---
 
-# Multi-factor authentication for Microsoft 365
+# Multifactor authentication for Microsoft 365
 
 Passwords are the most common method of authenticating a sign-in to a computer or online service, but they are also the most vulnerable. People can choose easy passwords and use the same passwords for multiple sign-ins to different computers and services.
 
-To provide an additional level of security for sign-ins, you must use multi-factor authentication (MFA), which uses both a password, which should be strong, and an additional verification method based on:
+To provide an additional level of security for sign-ins, you must use multifactor authentication (MFA), which uses both a password, which should be strong, and an additional verification method based on:
 
 - Something you have with you that is not easily duplicated, such as a smart phone.
 - Something you uniquely and biologically have, such as your fingerprints, face, or other biometric attribute.
@@ -145,7 +146,7 @@ After being enabled, the next time the user signs in, they will be prompted to r
 
 This table shows the results of enabling MFA with security defaults, Conditional Access policies, and per-user account settings.
 
-||Enabled|Disabled|Secondary authentication method|
+|*Item*|Enabled|Disabled|Secondary authentication method|
 |---|---|---|---|
 |**Security defaults**|Can't use Conditional Access policies|Can use Conditional Access policies|Microsoft Authenticator app|
 |**Conditional Access policies**|If any are enabled, you can't enable security defaults|If all are disabled, you can enable security defaults|User-specified during MFA registration|
@@ -165,12 +166,11 @@ In the Azure portal, you can:
 
 In the Microsoft 365 admin center, you can configure per-user and service MFA settings.
 
-## Your next step
+## Next steps
 
 [Set up MFA for Microsoft 365](set-up-multi-factor-authentication.md)
 
-## Related topics
+## Related content
 
-[Video: Turn on multi-factor authentication](../../business-video/turn-on-mfa.md)
-
-[Video: Turn on multi-factor authentication for your phone](../../business-video/set-up-mfa.md)
+[Turn on multifactor authentication](../../business-video/turn-on-mfa.md) (video)\
+[Turn on multifactor authentication for your phone](../../business-video/set-up-mfa.md) (video)

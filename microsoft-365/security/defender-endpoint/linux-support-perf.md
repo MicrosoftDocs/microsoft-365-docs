@@ -143,3 +143,6 @@ The following steps can be used to troubleshoot and mitigate these issues:
 5. Configure Microsoft Defender for Endpoint on Linux with exclusions for the processes or disk locations that contribute to the performance issues and re-enable real-time protection.
 
     For more information, see [Configure and validate exclusions for Microsoft Defender for Endpoint on Linux](linux-exclusions.md).
+
+## See also
+- [Investigate agent health issues](health-status.md)

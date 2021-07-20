@@ -86,8 +86,8 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: Mail flow rules (transport rules) in standalone EOP
-            url: mail-flow-rules-transport-rules-0.md
+          - text: Mail flow rules (transport rules) in Exchange Online
+            url: /exchange/security-and-compliance/mail-flow-rules/mail-flow-rules
           - text: Threat Trackers
             url: threat-trackers.md
           - text: Smart reports and insights in the Security & Compliance Center
@@ -112,8 +112,8 @@ landingContent:
         links:
           - text: Reporting and message trace in EOP
             url: reporting-and-message-trace-in-exchange-online-protection.md
-          - text: View the admin audit log in standalone EOP
-            url: view-the-admin-audit-log-eop.md
+          - text: View the admin audit log
+            url: /exchange/security-and-compliance/exchange-auditing-reports/view-administrator-audit-log
        # Card
   - title: Respond
     linkLists:

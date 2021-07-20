@@ -35,6 +35,9 @@ End-of-support (EOS), otherwise known as end-of-life (EOL), for software or soft
 
 It's crucial for Security and IT Administrators to work together and ensure that the organization's software inventory is configured for optimal results, compliance, and a healthy network ecosystem. They should examine the options to remove or replace apps that have reached end-of-support and update versions that are no longer supported. It's best to create and implement a plan **before** the end of support dates.
 
+>[!NOTE]
+> End-of-support capability is currently available only for Windows products.
+
 ## Find software or software versions that are no longer supported
 
 1. From the threat and vulnerability management menu, navigate to [**Security recommendations**](tvm-security-recommendation.md).

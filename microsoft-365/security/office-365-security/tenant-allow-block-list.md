@@ -14,7 +14,7 @@ search.appverid:
   - MET150
 ms.collection: 
   - M365-security-compliance
-description: Admins can learn how to configure allows and blocks in the Tenant Allow/Block List in the Security portal.
+description: Admins can learn how to manage allows and blocks in the Tenant Allow/Block List in the Security portal.
 ms.technology: mdo
 ms.prod: m365-security
 ---
@@ -29,17 +29,25 @@ ms.prod: m365-security
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!NOTE]
-> You can't **configure** allowed items in the Tenant Allow/Block List at this time.
+>
+> The features described in this article are in Preview, are subject to change, and are not available in all organizations.  If your organization does not have the spoof features as described in this article, see the older spoof management experience at [Manage spoofed senders using the spoof intelligence policy and spoof intelligence insight in EOP](walkthrough-spoof-intelligence-insight.md).
+
 
 In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, you might disagree with the EOP filtering verdict. For example, a good message might be marked as bad (a false positive), or a bad message might be allowed through (a false negative).
 
-The Tenant Allow/Block List in the Security & Compliance Center gives you a way to manually override the Microsoft 365 filtering verdicts. The Tenant Allow/Block List is used during mail flow and at the time of user clicks. You can specify URLs or files to always block.
+The Tenant Allow/Block List in the Microsoft 365 Defender portal gives you a way to manually override the Microsoft 365 filtering verdicts. The Tenant Allow/Block List is used during mail flow for incoming messages (does not apply to intra-org messages) and at the time of user clicks. You can specify the following types of overrides:
 
-This article describes how to configure entries in the Tenant Allow/Block List in the Security & Compliance Center or in PowerShell (Exchange Online PowerShell for Microsoft 365 organizations with mailboxes in Exchange Online; standalone EOP PowerShell for organizations without Exchange Online mailboxes).
+- URLs to block.
+- Files to block.
+- Spoofed senders to allow or block. If you override the allow or block verdict in the [spoof intelligence insight](learn-about-spoof-intelligence.md), the spoofed sender becomes a manual allow or block entry that only appears on the **Spoof** tab in the Tenant Allow/Block List. You can also manually create allow or block entries for spoofed senders here before they're detected by spoof intelligence.
+- URLs to allow.
+- Files to allow. 
+
+This article describes how to configure entries in the Tenant Allow/Block List in the Microsoft 365 Defender portal or in PowerShell (Exchange Online PowerShell for Microsoft 365 organizations with mailboxes in Exchange Online; standalone EOP PowerShell for organizations without Exchange Online mailboxes).
 
 ## What do you need to know before you begin?
 
-- You open the Security & Compliance Center at <https://protection.office.com/>. To go directly to the **Tenant Allow/Block List** page, use <https://protection.office.com/tenantAllowBlockList>.
+- You open the Microsoft 365 Defender portal at <https://security.microsoft.com/>. To go directly to the **Tenant Allow/Block Lists** page, use <https://security.microsoft.com/tenantAllowBlockList>.
 
 - You specify files by using the SHA256 hash value of the file. To find the SHA256 hash value of a file in Windows, run the following command in a Command Prompt:
 
@@ -63,160 +71,98 @@ This article describes how to configure entries in the Tenant Allow/Block List i
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- You need to be assigned permissions in **Exchange Online** before you can do the procedures in this article:
-  - To add and remove values from the Tenant Allow/Block List, you need to be a member of the **Organization Management** or **Security Administrator** role groups.
-  - For read-only access to the Tenant Allow/Block List, you need to be a member of the **Global Reader** or **Security Reader** role groups.
+- You need to be assigned permissions in Exchange Online before you can do the procedures in this article:
+  - **URLs and files**:
+    - To add and remove values from the Tenant Allow/Block List, you need to be a member of the **Organization Management** or **Security Administrator** role groups.
+    - For read-only access to the Tenant Allow/Block List, you need to be a member of the **Global Reader** or **Security Reader** role groups.
+  - **Spoofing**: One of the following combinations:
+    - **Organization Management**
+    - **Security Administrator** <u>and</u> **View-Only Configuration** or **View-Only Organization Management**.
 
   For more information, see [Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo).
 
   > [!NOTE]
-  > 
+  >
   > - Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
+  >
   > - The **View-Only Organization Management** role group in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) also gives read-only access to the feature.
 
-## Use the Security & Compliance Center to create URL entries in the Tenant Allow/Block List
+## Configure the Tenant Allow/Block List
 
-For details about the syntax for URL entries, see the [URL syntax for the Tenant Allow/Block List](#url-syntax-for-the-tenant-allowblock-list) section later in this article.
+### Use the Microsoft 365 Defender portal
 
-1. In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Tenant Allow/Block Lists**.
+In the Microsoft 365 Defender portal, go to **Policies & rules** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
 
-2. On the **Tenant Allow/Block List** page, verify that the **URLs** tab is selected, and then click **Block**
+To add all blocks, see [Add blocks in the Tenant Allow/Block List](manage-tenant-blocks.md).
 
-3. In the **Block URLs** flyout that appears, configure the following settings:
+To add all allows, see [Add allows in the Tenant Allow/Block List](manage-tenant-allows.md).
 
-   - **Add URLs to block**: Enter one URL per line, up to a maximum of 20.
+To modify and remove all blocks and allows, see [Modify and remove entries in the Tenant Allow/Block List](modify-remove-entries-tenant-allow-block.md).
 
-   - **Never expire**: Do one of the following steps:
+### Use Exchange Online PowerShell or standalone EOP PowerShell
 
-     - Verify the setting is turned off (![Toggle off](../../media/scc-toggle-off.png)) and use the **Expires on** box to specify the expiration date for the entries.
+To manage all allows and blocks, see [Add blocks in the Tenant Allow/Block List](manage-tenant-blocks.md), [Add allows in the Tenant Allow/Block List](manage-tenant-allows.md), and [Modify and remove entries in the Tenant Allow/Block List](modify-remove-entries-tenant-allow-block.md).
 
-       or
+## View entries in the Tenant Allow/Block List
 
-     - Move the toggle to the right to configure the entries to never expire: ![Toggle on](../../media/scc-toggle-on.png).
+1. In the Microsoft 365 Defender portal, go to **Policies & rules** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
 
-   - **Optional note**: Enter descriptive text for the entries.
+2. Select the tab you want. The columns that are available depend on the tab you selected:
+
+   - **URLs**:
+     - **Value**: The URL.
+     - **Action**: The value **Block**.
+     - **Last updated**
+     - **Remove on**
+     - **Notes**
+   - **Files**
+     - **Value**: The file hash.
+     - **Action**: The value **Block**.
+     - **Last updated**
+     - **Remove on**
+     - **Notes**
+   - **Spoofing**
+     - **Spoofed user**
+     - **Sending infrastructure**
+     - **Spoof type**: The value **Internal** or **External**.
+     - **Action**: The value **Block** or **Allow**.
+
+   You can click on a column heading to sort in ascending or descending order.
+
+   You can click **Group** to group the results. The values that are available depend on the tab you selected:
+
+   - **URLs**: You can group the results by **Action**.
+   - **Files**: You can group the results by **Action**.
+   - **Spoofing**: You can group the results by **Action** or **Spoof type**.
+
+   Click **Search**, enter all or part of a value, and then press ENTER to find a specific value. When you're finished, click ![Clear search icon](../../media/m365-cc-sc-close-icon.png) **Clear search**.
+
+   Click **Filter** to filter the results. The values that are available in **Filter** flyout that appears depend on the tab you selected:
+
+   - **URLs**
+     - **Action**
+     - **Never expire**
+     - **Last updated date**
+     - **Remove on**
+   - **Files**
+     - **Action**
+     - **Never expire**
+     - **Last updated**
+     - **Remove on**
+   - **Spoofing**
+     - **Action**
+     - **Spoof type**
+
+   When you're finished, click **Apply**. To clear existing filters, click **Filter**, and in the **Filter** flyout that appears, click **Clear filters**.
 
 4. When you're finished, click **Add**.
 
-## Use the Security & Compliance Center to create file entries in the Tenant Allow/Block List
+## View block file or URL entries in the Tenant Allow/Block List
 
-1. In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Tenant Allow/Block Lists**.
-
-2. On the **Tenant Allow/Block List** page, select **Files** tab, and then click **Block**.
-
-3. In the **Add files to block** flyout that appears, configure the following settings:
-
-   - **Add file hashes**: Enter one SHA256 hash value per line, up to a maximum of 20.
-
-   - **Never expire**: Do one of the following steps:
-
-     - Verify the setting is turned off (![Toggle off](../../media/scc-toggle-off.png)) and use the **Expires on** box to specify the expiration date for the entries.
-
-     or
-
-     - Move the toggle to the right to configure the entries to never expire: ![Toggle on](../../media/scc-toggle-on.png).
-
-   - **Optional note**: Enter descriptive text for the entries.
-
-4. When you're finished, click **Add**.
-
-## Use the Security & Compliance Center to view entries in the Tenant Allow/Block List
-
-1. In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Tenant Allow/Block Lists**.
-
-2. Select the **URLs** tab or the **Files** tab.
-
-Click on the following column headings to sort in ascending or descending order:
-
-- **Value**: The URL or the file hash.
-- **Last updated date**
-- **Expiration date**
-- **Note**
-
-Click **Search**, enter all or part of a value, and then press ENTER to find a specific value. When you're finished, click **Clear search** ![Clear search icon](../../media/b6512677-5e7b-42b0-a8a3-3be1d7fa23ee.gif).
-
-Click **Filter**. In the **Filter** flyout that appears, configure any of the following settings:
-
-- **Never expire**: Select off: ![Toggle off](../../media/scc-toggle-off.png) or on: ![Toggle on](../../media/scc-toggle-on.png).
-
-- **Last updated**: Select a start date (**From**), an end date (**To**) or both.
-
-- **Expiration date**: Select a start date (**From**), an end date (**To**) or both.
-
-When you're finished, click **Apply**.
-
-To clear existing filters, click **Filter**, and in the **Filter** flyout that appears, click **Clear filters**.
-
-## Use the Security & Compliance Center to modify block entries in the Tenant Allow/Block List
-
-You can't modify the existing blocked URL or file values within an entry. To modify these values, you need to delete and recreate the entry.
-
-1. In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Tenant Allow/Block Lists**.
-
-2. Select the **URLs** tab or the **Files** tab.
-
-3. Select the block entry that you want to modify, and then click **Edit** ![Edit icon](../../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png).
-
-4. In the flyout that appears, configure the following settings:
-
-   - **Never expire**: Do one of the following steps:
-
-     - Verify the setting is turned off (![Toggle off](../../media/scc-toggle-off.png)) and use the **Expires on** box to specify the expiration date for the entry.
-
-       or
-
-     - Move the toggle to the right to configure the entry to never expire: ![Toggle on](../../media/scc-toggle-on.png).
-
-   - **Optional note**: Enter descriptive text for the entry.
-
-5. When you're finished, click **Save**.
-
-## Use the Security & Compliance Center to remove block entries from the Tenant Allow/Block List
-
-1. In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Tenant Allow/Block Lists**.
-
-2. Select the **URLs** tab or the **Files** tab.
-
-3. Select the block entry that you want to remove, and then click **Delete** ![Delete icon](../../media/87565fbb-5147-4f22-9ed7-1c18ce664392.png).
-
-4. In the warning dialog that appears, click **Delete**.
-
-## Use Exchange Online PowerShell or standalone EOP PowerShell to configure the Tenant Allow/Block List
-
-### Use PowerShell to add block entries to the Tenant Allow/Block List
-
-To add block entries in the Tenant Allow/Block List, use the following syntax:
+To view block file or URL entries in the Tenant Allow/Block List, use the following syntax:
 
 ```powershell
-New-TenantAllowBlockListItems -ListType <Url | FileHash> -Block -Entries <String[]> [-ExpirationDate <DateTime>] [-NoExpiration] [-Notes <String>]
-```
-
-This example adds a block URL entry for contoso.com and all subdomains (for example, contoso.com, www.contoso.com, and xyz.abc.contoso.com). Because we didn't use the ExpirationDate or NoExpiration parameters, the entry expires after 30 days.
-
-```powershell
-New-TenantAllowBlockListItems -ListType Url -Block -Entries ~contoso.com
-```
-
-This example adds a block file entry for the specified files that never expires.
-
-```powershell
-New-TenantAllowBlockListItems -ListType FileHash -Block -Entries "768a813668695ef2483b2bde7cf5d1b2db0423a0d3e63e498f3ab6f2eb13ea3","2c0a35409ff0873cfa28b70b8224e9aca2362241c1f0ed6f622fef8d4722fd9a" -NoExpiration
-```
-
-For detailed syntax and parameter information, see [New-TenantAllowBlockListItems](/powershell/module/exchange/new-tenantallowblocklistitems).
-
-### Use PowerShell to view entries in the Tenant Allow/Block List
-
-To view entries in the Tenant Allow/Block List, use the following syntax:
-
-```powershell
-Get-TenantAllowBlockListItems -ListType <Url | FileHash> [-Entry <URLValue | FileHashValue>] [-Block] [-ExpirationDate <DateTime>] [-NoExpiration]
-```
-
-This example returns all blocked URLs.
-
-```powershell
-Get-TenantAllowBlockListItems -ListType Url -Block
+Get-TenantAllowBlockListItems -ListType <FileHash | URL> [-Entry <FileHashValue | URLValue>] [<-ExpirationDate Date | -NoExpiration>]
 ```
 
 This example returns information for the specified file hash value.
@@ -225,41 +171,41 @@ This example returns information for the specified file hash value.
 Get-TenantAllowBlockListItems -ListType FileHash -Entry "9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08"
 ```
 
+This example returns all blocked URLs.
+
+```powershell
+Get-TenantAllowBlockListItems -ListType Url -Block
+```
+
 For detailed syntax and parameter information, see [Get-TenantAllowBlockListItems](/powershell/module/exchange/get-tenantallowblocklistitems).
 
-### Use PowerShell to modify block entries in the Tenant Allow/Block List
+## View spoofed sender entries
 
-You can't modify the existing URL or file values within a block entry. To modify these values, you need to delete and recreate the entry.
-
-To modify block entries in the Tenant Allow/Block List, use the following syntax:
+To view spoofed sender entries in the Tenant Allow/Block List, use the following syntax:
 
 ```powershell
-Set-TenantAllowBlockListItems -ListType <Url | FileHash> -Ids <"Id1","Id2",..."IdN"> [-Block] [-ExpirationDate <DateTime>] [-NoExpiration] [-Notes <String>]
+Get-TenantAllowBlockListSpoofItems [-Action <Allow | Block>] [-SpoofType <External | Internal>
 ```
 
-This example changes the expiration date of the specified block entry.
+This example returns all spoofed sender entries in the Tenant Allow/Block List.
 
 ```powershell
-Set-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBywBwCqfQNJY8hBTbdlKFkv6BcUAAAl_QCZAACqfQNJY8hBTbdlKFkv6BcUAAAl_oSRAAAA" -ExpirationDate (Get-Date "5/30/2020 9:30 AM").ToUniversalTime()
+Get-TenantAllowBlockListSpoofItems
 ```
 
-For detailed syntax and parameter information, see [Set-TenantAllowBlockListItems](/powershell/module/exchange/set-tenantallowblocklistitems).
-
-### Use PowerShell to remove block entries from the Tenant Allow/Block List
-
-To remove block entries from the Tenant Allow/Block List, use the following syntax:
+This example returns all allow spoofed sender entries that are internal.
 
 ```powershell
-Remove-TenantAllowBlockListItems -ListType <Url | FileHash> -Ids <"Id1","Id2",..."IdN">
+Get-TenantAllowBlockListSpoofItems -Action Allow -SpoofType Internal
 ```
 
-This example removes the specified block URL entry from the Tenant Allow/Block List.
+This example returns all blocked spoofed sender entries that are external.
 
 ```powershell
-Remove-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBywBwCqfQNJY8hBTbdlKFkv6BcUAAAl_QCZAACqfQNJY8hBTbdlKFkv6BcUAAAl_oSPAAAA0"
+Get-TenantAllowBlockListSpoofItems -Action Block -SpoofType External
 ```
 
-For detailed syntax and parameter information, see [Remove-TenantAllowBlockListItems](/powershell/module/exchange/remove-tenantallowblocklistitems).
+For detailed syntax and parameter information, see [Get-TenantAllowBlockListSpoofItems](/powershell/module/exchange/get-tenantallowblocklistspoofitems).
 
 ## URL syntax for the Tenant Allow/Block List
 
@@ -289,10 +235,6 @@ For detailed syntax and parameter information, see [Remove-TenantAllowBlockListI
   - A right wildcard must follow a forward slash (/) to specify a path.
 
     For example, `contoso.com/*` is allowed; `contoso.com*` or `contoso.com/ab*` are not allowed.
-
-  - All subpaths are not implied by a right wildcard.
-
-    For example, `contoso.com/*` does not include `contoso.com/a`.
 
   - `*.com*` is invalid (not a resolvable domain and the right wildcard does not follow a forward slash).
 
@@ -499,3 +441,33 @@ The following entries are invalid:
 
   - contoso.com/\*\*
   - contoso.com/\*/\*
+
+## Domain pair syntax for spoofed sender entries in the Tenant Allow/Block List
+
+A domain pair for a spoofed sender in the Tenant Allow/Block List uses the following syntax: `<Spoofed user>, <Sending infrastructure>`.
+
+- **Spoofed user**: This value involves the email address of the spoofed user that's displayed in the **From** box in email clients. This address is also known as the `5322.From` address. Valid values include:
+  - An individual email address (for example, chris@contoso.com).
+  - An email domain (for example, contoso.com).
+  - The wildcard character (for example, \*).
+
+- **Sending infrastructure**: This value indicates the source of messages from the spoofed user. Valid values include:
+  - The domain found in a reverse DNS lookup (PTR record) of the source email server's IP address (for example, fabrikam.com).
+  - If the source IP address has no PTR record, then the sending infrastructure is identified as \<source IP\>/24 (for example, 192.168.100.100/24).
+
+Here are some examples of valid domain pairs to identify spoofed senders:
+
+- `contoso.com, 192.168.100.100/24`
+- `chris@contoso.com, fabrikam.com`
+- `*, contoso.net`
+
+The maximum number of spoofed sender entries is 1000.
+
+Adding a domain pair only allows or blocks the *combination* of the spoofed user *and* the sending infrastructure. It does not allow email from the spoofed user from any source, nor does it allow email from the sending infrastructure source for any spoofed user. 
+
+For example, you add an allow entry for the following domain pair:
+
+- **Domain**: gmail.com
+- **Infrastructure**: tms.mx.com
+
+Only messages from that domain *and* sending infrastructure pair are allowed to spoof. Other senders attempting to spoof gmail.com aren't allowed. Messages from senders in other domains originating from tms.mx.com are checked by spoof intelligence.

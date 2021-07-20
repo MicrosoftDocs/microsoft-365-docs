@@ -14,7 +14,8 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+MS.technology: mde
+ms.custom: api
 ---
 
 # Delete Indicator API
@@ -33,24 +34,25 @@ ms.technology: mde
 
 
 ## API description
+
 Deletes an [Indicator](ti-indicator.md) entity by ID.
 
-
 ## Limitations
-1. Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
 
+Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Get started](apis-intro.md)
 
-Permission type |	Permission	|	Permission display name
+Permission type | Permission | Permission display name
 :---|:---|:---
-Application |	Ti.ReadWrite |	'Read and write TI Indicators'
-Application |	Ti.ReadWrite.All |	'Read and write Indicators'
-
+Application | Ti.ReadWrite | 'Read and write TI Indicators'
+Application | Ti.ReadWrite.All | 'Read and write Indicators'
 
 ## HTTP request
-```
+
+```http
 Delete https://api.securitycenter.microsoft.com/api/indicators/{id}
 ```
 
@@ -62,17 +64,19 @@ Name | Type | Description
 :---|:---|:---
 Authorization | String | Bearer {token}. **Required**.
 
-
 ## Request body
+
 Empty
 
 ## Response
+
 If Indicator exist and deleted successfully - 204 OK without content.
+
 If Indicator with the specified id was not found - 404 Not Found.
 
 ## Example
 
-**Request**
+### Request
 
 Here is an example of the request.
 

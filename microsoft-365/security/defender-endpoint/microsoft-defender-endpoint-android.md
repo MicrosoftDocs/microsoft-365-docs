@@ -43,19 +43,19 @@ This topic describes how to install, configure, update, and use Defender for End
 
 -   **For end users**
 
-    -   Microsoft Defender for Endpoint license assigned to the end user(s) of the app. See [Microsoft Defender for Endpoint licensing requirements](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/minimum-requirements#licensing-requirements)
+    -   Microsoft Defender for Endpoint license assigned to the end user(s) of the app. See [Microsoft Defender for Endpoint licensing requirements](/microsoft-365/security/defender-endpoint/minimum-requirements#licensing-requirements)
 
     -   Intune Company Portal app can be downloaded from [Google
         Play](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal)
         and is available on the Android device.
 
         -   Additionally, device(s) can be
-            [enrolled](https://docs.microsoft.com/mem/intune/user-help/enroll-device-android-company-portal)
+            [enrolled](/mem/intune/user-help/enroll-device-android-company-portal)
             via the Intune Company Portal app to enforce Intune device compliance
             policies. This requires the end user to be assigned a Microsoft Intune license.
 
     -   For more information on how to assign licenses, see [Assign licenses to
-        users](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-assign).
+        users](/azure/active-directory/users-groups-roles/licensing-groups-assign).
         
 
 -   **For Administrators**
@@ -68,10 +68,15 @@ This topic describes how to install, configure, update, and use Defender for End
     -   Access [Microsoft Endpoint Manager admin
         center](https://go.microsoft.com/fwlink/?linkid=2109431), to deploy the
         app to enrolled user groups in your organization.
+        
+### Network Requirements
+
+- For Microsoft Defender for Endpoint on Android to function when connected to a network the firewall/proxy will need to be configured to [enable access to Microsoft Defender for Endpoint service URLs](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server).
 
 ### System Requirements
 
--   Android devices running Android 6.0 and above.
+-   Mobile phones running Android 6.0 and above. **Tablets and other mobile devices running Android are not currently supported.** 
+
 -   Intune Company Portal app is downloaded from [Google
     Play](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal)
     and installed. Device enrollment is required for Intune device compliance policies to be enforced.

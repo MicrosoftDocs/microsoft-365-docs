@@ -6,10 +6,10 @@ ms.author: chrfox
 author: chrfox
 manager: laurawi
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 ms.date: 
-localization_priority: Priority
+localization_priority: Normal
 ms.collection: 
 - M365-security-compliance
 search.appverid: 
@@ -21,7 +21,7 @@ ms.custom: seo-marvel-apr2020
 
 # Use the Exact Data Match Schema and Sensitive Information Type Wizard
 
-[Creating a custom sensitive information type with Exact Data Match (EDM) based classification](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)  involves many steps.  You can use this wizard to create your schema and sensitive information type pattern (rule package) files to help simplify the process.
+[Creating a custom sensitive information type with Exact Data Match (EDM) based classification](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)  involves many steps.  You can use this wizard to create your schema and sensitive information type (SIT) pattern (rule package) files to help simplify the process.
 
 > [!NOTE]
 > The Exact Data Match Schema and Sensitive Information Type Wizard is only available for the World Wide and GCC clouds only.
@@ -37,7 +37,7 @@ steps in [Part 1: Set up EDM-based classification](create-custom-sensitive-infor
 
 1. Familiarize yourself with the steps to create a custom sensitive information type with EDM [work flow at a glance](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md#the-work-flow-at-a-glance).
 
-2. Perform the steps in the [Save sensitive data in .csv format](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md#save-sensitive-data-in-csv-format) section.
+2. Perform the steps in [Save sensitive data in .csv or .tsv format](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md#save-sensitive-data-in-csv-or-tsv-format).
 
 ## Use the exact data match schema and sensitive information type pattern wizard
 
@@ -49,7 +49,7 @@ steps in [Part 1: Set up EDM-based classification](create-custom-sensitive-infor
 
 3. Fill in an appropriate **Name** and **Description**.
 
-4. Choose **Ignore delimiters and punctuations for all schema fields** if you want that behavior. To learn more about configuring EDM to ignore case or delimitere, see [Creating a custom sensitive information type with Exact Data Match (EDM) based classification](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md).
+4. Choose **Ignore delimiters and punctuation for all schema fields** if you want that behavior. To learn more about configuring EDM to ignore case or delimiters, see [Creating a custom sensitive information type with Exact Data Match (EDM) based classification](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md).
 
 5. Fill in your desired values for your **Schema field #1** and add more fields as needed. 
 
@@ -72,7 +72,7 @@ steps in [Part 1: Set up EDM-based classification](create-custom-sensitive-infor
 
 13. Choose your desired **Confidence level and character proximity**.  This will be the default value for the whole EDM sensitive info type
 
-13. Choose **Create pattern** if you want to creaet additional patterns for your EDM sensitive info type.
+13. Choose **Create pattern** if you want to create additional patterns for your EDM sensitive info type.
 
 14. Choose **Next** and fill in a **Name** and **Description for admins**.
 
@@ -83,6 +83,23 @@ You can delete or edit the sensitive information type pattern by selecting it wh
 > [!IMPORTANT]
 > If you want to remove a schema, and it is already associated with an EDM sensitive info type, you must first delete the EDM sensitive info type, then you can delete the schema.
 
-## Post steps
+## Post creation steps
 
 After you have used this wizard to create your EDM schema and pattern (rule package) files, you still have to perform the steps in [Part 2: Hash and upload the sensitive data](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md#part-2-hash-and-upload-the-sensitive-data) before you can use the EDM custom sensitive information type.
+
+After verifying that your sensitive information table has correctly been uploaded, you can test that it's working properly.
+
+1. Open **Compliance center** > **Data classification** > **Sensitive Information Types**.
+2. Select your EDM SIT from the list and then select **Test** in the flyout pane. 
+3. Upload an item that contains data you want to detect, for example create an item that contains some of the data in your sensitive information table. If you used the configurable match feature in your schema to define ignored delimiters, make sure the item includes examples with and without those delimiters.
+4. After the file has been uploaded and scanned, check for matches to your EDM SIT.
+5. If the **Test** function in the SIT detects a match, check that it is not trimming it or extracting it incorrectly. For example by extracting only a substring of the full string it is supposed to detect, or picking up only the first word in a multi-word string, or including extra symbols or characters in the extraction. See [Regular Expression Language - Quick Reference](/dotnet/standard/base-types/regular-expression-language-quick-reference) for the regular expression language reference. 
+
+### Troubleshooting
+
+If you don't find any matches, try the following:
+- Confirm that your sensitive data was uploaded correctly using the commands explained in [the guidance for uploading your sensitive data using the EDM tool](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md).
+- Check that the examples you entered in the item are present in your sensitive information table and that the ignored delimiters are correct.
+- **Test** the SIT you used when you configured the primary element in each of your patterns. This will confirm that the SIT is able to match the examples in the item. 
+  -  If the SIT you selected for a primary element in the EDM type doesn't find a match in the item or finds fewer matches than you expected, check that it supports separators and delimiters that exist in the content. Be sure to include the ignored delimiters defined in your schema. 
+  -  If the **Test** function does not detect any content at all, check if the SIT you selected includes requirements for additional keywords or other validations. For the built-in SITs, see [Sensitive information types entity definitions](sensitive-information-type-entity-definitions.md) to verify what the minimum requirements are for matching each type.

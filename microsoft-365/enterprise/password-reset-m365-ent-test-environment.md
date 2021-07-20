@@ -85,7 +85,7 @@ Next, test password reset for the User 3 account.
 1. Enter the User 3 account name, enter the characters from the CAPTCHA, and then select **Next**.
 1. For **verification step 1**, select **Email my alternate email**, and then select **Email**. When you receive the email, enter the verification code, and then select **Next**.
 1. In **Get back into your account**, enter a new password for the User 3 account, and then select **Finish**. Note the changed password of the User 3 account and store it in a safe location.
-1. In a separate tab of the same browser, go to [https://portal.office.com](https://portal.office.com), and then sign in with the User 3 account name and its new password. You should see the **Microsoft Office Home** page.
+1. In a separate tab of the same browser, go to [https://admin.microsoft.com](https://admin.microsoft.com), and then sign in with the User 3 account name and its new password. You should see the **Microsoft Office Home** page.
 
 ## Next step
 

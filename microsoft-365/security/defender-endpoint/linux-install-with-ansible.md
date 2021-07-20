@@ -1,6 +1,6 @@
 ---
 title: Deploy Microsoft Defender for Endpoint on Linux with Ansible
-ms.reviewer: 
+ms.reviewer:
 description: Describes how to deploy Microsoft Defender for Endpoint on Linux using Ansible.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
 search.product: eADQiWindows 10XVcnh
@@ -44,13 +44,13 @@ Before you get started, see [the main Defender for Endpoint on Linux page](micro
 
 In addition, for Ansible deployment, you need to be familiar with Ansible administration tasks, have Ansible configured, and know how to deploy playbooks and tasks. Ansible has many ways to complete the same task. These instructions assume availability of supported Ansible modules, such as *apt* and *unarchive* to help deploy the package. Your organization might use a different workflow. Refer to the [Ansible documentation](https://docs.ansible.com/) for details.
 
-- Ansible needs to be installed on at least one computer (we will call it the primary computer).
-- SSH must be configured for an administrator account between the primary computer and all clients, and it is recommended be configured with public key authentication.
-- The following software must be installed on all clients:
+- Ansible needs to be installed on at least one computer (Ansible calls this the control node).
+- SSH must be configured for an administrator account between the control node and all managed nodes (devices that will have Defender for Endpoint installed on them), and it is recommended to be configured with public key authentication.
+- The following software must be installed on all managed nodes:
   - curl
   - python-apt
 
-- All hosts must be listed in the following format in the `/etc/ansible/hosts` or relevant file:
+- All managed nodes must be listed in the following format in the `/etc/ansible/hosts` or relevant file:
 
     ```bash
     [servers]
@@ -93,7 +93,7 @@ Download the onboarding package from Microsoft Defender Security Center:
 
 ## Create Ansible YAML files
 
-Create a subtask or role files that contribute to an playbook or task.
+Create a subtask or role files that contribute to a playbook or task.
 
 - Create the onboarding task, `onboarding_setup.yml`:
 
@@ -122,7 +122,7 @@ Create a subtask or role files that contribute to an playbook or task.
       when: not mdatp_onboard.stat.exists
     ```
 
-- Add the Defender for Endpoint repository and key.
+- Add the Defender for Endpoint repository and key, `add_apt_repo.yml`:
 
     Defender for Endpoint on Linux can be deployed from one of the following channels (denoted below as *[channel]*): *insiders-fast*, *insiders-slow*, or *prod*. Each of these channels corresponds to a Linux software repository.
 
@@ -143,8 +143,8 @@ Create a subtask or role files that contribute to an playbook or task.
   ```bash
   - name: Add Microsoft APT key
     apt_key:
-      keyserver: https://packages.microsoft.com/
-      id: BC528686B50D79E339D3721CEB3E94ADBE1229CF
+      url: https://packages.microsoft.com/keys/microsoft.asc
+      state: present
     when: ansible_os_family == "Debian"
 
   - name: Add Microsoft apt repository for MDATP
@@ -152,7 +152,7 @@ Create a subtask or role files that contribute to an playbook or task.
       repo: deb [arch=arm64,armhf,amd64] https://packages.microsoft.com/[distro]/[version]/prod [channel] main
       update_cache: yes
       state: present
-      filename: microsoft-[channel].list
+      filename: microsoft-[channel]
     when: ansible_os_family == "Debian"
 
   - name: Add Microsoft DNF/YUM key
@@ -277,3 +277,6 @@ When upgrading your operating system to a new major version, you must first unin
 - [Add and remove APT repositories](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/apt_repository_module.html)
 
 - [Manage apt-packages](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/apt_module.html)
+
+## See also
+- [Investigate agent health issues](health-status.md)

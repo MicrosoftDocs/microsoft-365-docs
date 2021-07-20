@@ -12,8 +12,10 @@ author: mjcaparas
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
 ms.topic: article
+ms.collection: M365-security-compliance
+MS.technology: mde
+ms.custom: api
 ---
 
 # List machines API
