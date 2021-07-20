@@ -48,5 +48,5 @@ Server endpoint monitoring utilizing this integration has been disabled for Offi
 
 
 ## Related topics
-- [Onboard Windows Server 2008 R2 SP1](onboard-server-2008r2.md)
+- [Onboard previous versions of Windows](onboard-downlevel.md)
 - [Onboard Windows Server 2012 R2, 2016, SAC version 1803, and 2019](configure-server-endpoints.md)

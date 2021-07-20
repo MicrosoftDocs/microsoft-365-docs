@@ -52,7 +52,9 @@ For more information about onboarding methods, see the following articles:
 
 - Setup Azure Log Analytics (formerly known as OMS Gateway) to act as proxy or hub:
   - [Azure Log Analytics Agent](/azure/azure-monitor/platform/gateway#download-the-log-analytics-gateway)
-  - [Install and configure Microsoft Monitoring Agent (MMA)](onboard-server-2008r2.md#install-and-configure-microsoft-monitoring-agent-mma-to-report-sensor-data-to-microsoft-defender-for-endpoint) point to Defender for Endpoint Workspace key & ID
+  - [Install and configure Microsoft Monitoring Agent (MMA)](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma) point to Defender for Endpoint Workspace key & ID
+
+[Onboard previous versions of Windows](onboard-downlevel.md)
 
 - Offline devices in the same network of Azure Log Analytics
   -  Configure MMA to point to:

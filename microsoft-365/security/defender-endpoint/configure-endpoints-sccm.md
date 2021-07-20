@@ -41,7 +41,7 @@ There are several options you can use to onboard devices using Configuration Man
 - MDE attach - LINK TBD
 
 
-For Windows Server 2012 R2 and Windows Server 2016 - after completing the onboarding steps, you'll need to [Configure and update System Center Endpoint Protection clients](onboard-server-2008r2.md#configure-and-update-system-center-endpoint-protection-clients).
+For Windows Server 2012 R2 and Windows Server 2016 - after completing the onboarding steps, you'll need to [Configure and update System Center Endpoint Protection clients](onboard-downlevel.md#configure-and-update-system-center-endpoint-protection-clients).
 
 > [!NOTE]
 > Defender for Endpoint doesn't support onboarding during the [Out-Of-Box Experience (OOBE)](https://answers.microsoft.com/en-us/windows/wiki/windows_10/how-to-complete-the-windows-10-out-of-box/47e3f943-f000-45e3-8c5c-9d85a1a0cf87) phase. Make sure users complete OOBE after running Windows installation or upgrading.

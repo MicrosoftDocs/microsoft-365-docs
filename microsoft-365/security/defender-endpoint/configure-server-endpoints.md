@@ -237,7 +237,7 @@ You can offboard servers in the same method available for other Windows devices.
 After successfully onboarding devices to the service, you'll need to configure the individual components of Microsoft Defender for Endpoint. Follow the [Adoption order](prepare-deployment.md#adoption-order) to be guided on enabling the various components.
 
 ## Related topics
-- [Onboard Windows Server 2008 R2 SP1](onboard-server-2008r2.md)
+- [Onboard previous versions of Windows](onboard-downlevel.md)
 - [Onboard Windows 10 devices](configure-endpoints.md)
 - [Onboard non-Windows devices](configure-endpoints-non-windows.md)
 - [Configure proxy and Internet connectivity settings](configure-proxy-internet.md)
