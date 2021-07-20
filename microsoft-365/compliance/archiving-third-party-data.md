@@ -227,7 +227,7 @@ itemclass:ipm.externaldata.<third-party data type>
 Every item imported by a third-party data connector includes the **itemclass** property with a value that corresponds to the third-party data type. For example, to search for Facebook data that contains the word *contoso*, in the **Subject** property of the imported item, use the following query:
 
 ```powershell
-subject:contoso AND itemclass:ipm.externaldata.Facebook*
+subject:contoso AND itemclass:ipm.externaldata.facebook*
 ```
 
 Here are a few examples for **itemclass** values for different types of third-party data.
