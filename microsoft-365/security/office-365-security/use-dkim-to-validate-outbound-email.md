@@ -204,6 +204,8 @@ Once you have published the CNAME records in DNS, you are ready to enable DKIM s
 
 5. Repeat these step for each custom domain.
 
+6. If you are configuring DKIM for the first time and see the error 'No DKIM keys saved for this domain' you will have to use Windows PowerShell to enable DKIM signing as explained in the next step.
+
 #### To enable DKIM signing for your custom domain by using PowerShell
 
 > [!IMPORTANT]
