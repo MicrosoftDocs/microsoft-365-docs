@@ -54,7 +54,7 @@ If you want to test Azure AD Identity Protection in a simulated enterprise, foll
 
 Under **Protect**, select various polices to see how to configure them. If you create and activate a policy, make sure that it's not blocking access for all users, or you might not be able to sign in. To prevent this, exclude specific user accounts, such as global admins.
 
-For further testing and experimentation, see [Simulating risk events](https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection-playbook).
+For further testing and experimentation, see [Simulating risk events](/azure/active-directory/active-directory-identityprotection-playbook).
 
 ## Next step
 
@@ -68,4 +68,4 @@ Explore additional [identity](m365-enterprise-test-lab-guides.md#identity) featu
 
 [Microsoft 365 for enterprise overview](microsoft-365-overview.md)
 
-[Microsoft 365 for enterprise documentation](https://docs.microsoft.com/microsoft-365-enterprise/)
+[Microsoft 365 for enterprise documentation](/microsoft-365-enterprise/)

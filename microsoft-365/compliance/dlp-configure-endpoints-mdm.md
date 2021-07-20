@@ -21,7 +21,7 @@ description: Use Mobile Device Management tools to deploy the configuration pack
 
 **Applies to:**
 
-- [Microsoft 365 Endpoint data loss prevention (DLP)](/microsoft-365/compliance/endpoint-dlp-learn-about)
+- [Microsoft 365 Endpoint data loss prevention (DLP)](./endpoint-dlp-learn-about.md)
 
 You can use mobile device management (MDM) solutions to configure devices. Microsoft 365 Endpoint data loss prevention supports MDMs by providing OMA-URIs to create policies to manage devices.
 
@@ -29,11 +29,11 @@ You can use mobile device management (MDM) solutions to configure devices. Micro
 ## Before you begin
 If you're using Microsoft Intune, you must have the device MDM Enrolled. Otherwise, settings will not be applied successfully. 
 
-For more information on enabling MDM with Microsoft Intune, see [Device enrollment (Microsoft Intune)](https://docs.microsoft.com/mem/intune/enrollment/device-enrollment).
+For more information on enabling MDM with Microsoft Intune, see [Device enrollment (Microsoft Intune)](/mem/intune/enrollment/device-enrollment).
 
 ## Onboard devices using Microsoft Intune
 
-Follow the instructions from [Intune](https://docs.microsoft.com/intune/advanced-threat-protection).
+Follow the instructions from [Intune](/intune/advanced-threat-protection).
 
 > [!NOTE]
 > - The **Health Status for onboarded devices** policy uses read-only properties and can't be remediated.
@@ -61,7 +61,7 @@ For security reasons, the package used to Offboard devices will expire 30 days a
       Date type: String      
       Value: [Copy and paste the value from the content of the DeviceCompliance_valid_until_YYYY-MM-DD.offboarding file]
 
-For more information on Microsoft Intune policy settings see, [Windows 10 policy settings in Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/windows-10-policy-settings-in-microsoft-intune).
+For more information on Microsoft Intune policy settings see, [Windows 10 policy settings in Microsoft Intune](/intune/deploy-use/windows-10-policy-settings-in-microsoft-intune).
 
 > [!NOTE]
 > The **Health Status for offboarded devices** policy uses read-only properties and can't be remediated.
@@ -74,4 +74,4 @@ For more information on Microsoft Intune policy settings see, [Windows 10 policy
 - [Onboard Windows 10 devices using Microsoft Endpoint Configuration Manager](dlp-configure-endpoints-sccm.md)
 - [Onboard Windows 10 devices using a local script](dlp-configure-endpoints-script.md)
 - [Onboard non-persistent virtual desktop infrastructure (VDI) devices](dlp-configure-endpoints-vdi.md)
-- [Troubleshoot Microsoft Defender Advanced Threat Protection onboarding issues](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)
+- [Troubleshoot Microsoft Defender Advanced Threat Protection onboarding issues](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)

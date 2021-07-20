@@ -18,7 +18,7 @@ audience: ITPro
 
 ## Initial deployment
 
-Most hardware vendors don't yet include Teams as a part of their images, so Microsoft Managed Desktop deploys Teams to your devices by using Microsoft Intune. All managed devices have the [Teams .msi package](https://docs.microsoft.com/MicrosoftTeams/msi-deployment#how-the-microsoft-teams-msi-package-works) installed, ensuring that all users who sign in to a device have Microsoft Teams ready to use. When the package first finishes installing, Teams automatically starts and adds a shortcut to the desktop.
+Most hardware vendors don't yet include Teams as a part of their images, so Microsoft Managed Desktop deploys Teams to your devices by using Microsoft Intune. All managed devices have the [Teams .msi package](/MicrosoftTeams/msi-deployment#how-the-microsoft-teams-msi-package-works) installed, ensuring that all users who sign in to a device have Microsoft Teams ready to use. When the package first finishes installing, Teams automatically starts and adds a shortcut to the desktop.
 
 ### Microsoft Intune changes
 
@@ -31,7 +31,7 @@ Microsoft Managed Desktop adds two applications to your Azure AD organization fo
 
 Teams follows a separate update path from Microsoft 365 Apps for enterprise and the desktop client updates itself automatically. Teams checks for updates every few hours, downloads them, and then waits for the computer to be idle before silently installing the update.  
 
-The Teams product group doesn't allow admins to control updates, so Microsoft Managed Desktop uses the [standard automatic update channel](https://docs.microsoft.com/microsoftteams/teams-client-update#can-admins-deploy-updates-instead-of-teams-auto-updating).
+The Teams product group doesn't allow admins to control updates, so Microsoft Managed Desktop uses the [standard automatic update channel](/microsoftteams/teams-client-update#can-admins-deploy-updates-instead-of-teams-auto-updating).
 
 ### Manually updating Teams
 
@@ -39,4 +39,4 @@ Individual users can also download updates by selecting **Check for updates** 
 
 ## Delivery optimization of updates
 
-Delivery optimization for Teams updates is turned on by default and requires no action from admins or users. 
+Delivery optimization for Teams updates is turned on by default and requires no action from admins or users.

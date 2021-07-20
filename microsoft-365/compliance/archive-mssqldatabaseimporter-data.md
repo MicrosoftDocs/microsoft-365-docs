@@ -16,7 +16,7 @@ description: "Admins can set up a connector to import and archive data from MS S
 
 # Set up a connector to archive data from MS SQL Database
 
-Use a Globanet connector in the Microsoft 365 compliance center to import and archive data from MS SQL Database to user mailboxes in your Microsoft 365 organization. Globanet provides you with an MS SQL Database Importer connector that's configured to capture items from a database using an XML configuration file and import those items to Microsoft 365. The connector converts content from MS SQL Database to an email message format and then imports those items to user mailboxes in Microsoft 365.
+Use a Veritas connector in the Microsoft 365 compliance center to import and archive data from MS SQL Database to user mailboxes in your Microsoft 365 organization. Veritas provides you with an MS SQL Database Importer connector that's configured to capture items from a database using an XML configuration file and import those items to Microsoft 365. The connector converts content from MS SQL Database to an email message format and then imports those items to user mailboxes in Microsoft 365.
 
 After content from MS SQL Database stored in user mailboxes, you can apply Microsoft 365 compliance features such as Litigation Hold, eDiscovery, retention policies and retention labels. Using an MS SQL Database connector to import and archive data in Microsoft 365 can help your organization stay compliant with government and regulatory policies.
 
@@ -28,17 +28,17 @@ The following overview explains the process of using a connector to archive MS S
 
 1. Your organization works with an MS SQL Database provider to set up and configure an MS SQL Database site.
 
-2. Once every 24 hours, MS SQL Database items are copied to the Globanet Merge1 site. The connector also converts this content to an email message format.
+2. Once every 24 hours, MS SQL Database items are copied to the Veritas Merge1 site. The connector also converts this content to an email message format.
 
-3. The MS SQL Database Importer connector that you create in the Microsoft 365 compliance center, connects to the Globanet Merge1 site every day and transfers the messages to a secure Azure Storage location in the Microsoft cloud.
+3. The MS SQL Database Importer connector that you create in the Microsoft 365 compliance center, connects to the Veritas Merge1 site every day and transfers the messages to a secure Azure Storage location in the Microsoft cloud.
 
 4. The connector imports the converted MS SQL Database items to the mailboxes of specific users using the value of the *Email* property of the automatic user mapping as described in [Step 3](#step-3-map-users-and-complete-the-connector-setup). A subfolder in the Inbox folder named **MS SQL Database Importer** is created in the user mailboxes, and the items are imported to that folder. The connector determines which mailbox to import items to by using the value of the *Email* property. Every item from the MS SQL Database contains this property, which is populated with the email address of every participant of the item.
 
 ## Before you begin
 
-- Create a Globanet Merge1 account for Microsoft connectors. To create an account, contact [Globanet Customer Support](https://globanet.com/contact-us/). You need to sign into this account when you create the connector in Step 1.
+- Create a Veritas Merge1 account for Microsoft connectors. To create an account, contact [Veritas Customer Support](https://www.veritas.com/content/support/). You need to sign into this account when you create the connector in Step 1.
 
-- The user who creates the MS SQL Database Importer connector in Step 1 (and completes it in Step 3) must be assigned to the Mailbox Import Export role in Exchange Online. This role is required to add connectors on the Data connectors page in the Microsoft 365 compliance center. By default, this role is not assigned to any role group in Exchange Online. You can add the Mailbox Import Export role to the Organization Management role group in Exchange Online. Or you can create a role group, assign the Mailbox Import Export role, and then add the appropriate users as members. For more information, see the [Create role groups](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) or [Modify role groups](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) sections in the article "Manage role groups in Exchange Online".
+- The user who creates the MS SQL Database Importer connector in Step 1 (and completes it in Step 3) must be assigned to the Mailbox Import Export role in Exchange Online. This role is required to add connectors on the Data connectors page in the Microsoft 365 compliance center. By default, this role is not assigned to any role group in Exchange Online. You can add the Mailbox Import Export role to the Organization Management role group in Exchange Online. Or you can create a role group, assign the Mailbox Import Export role, and then add the appropriate users as members. For more information, see the [Create role groups](/Exchange/permissions-exo/role-groups#create-role-groups) or [Modify role groups](/Exchange/permissions-exo/role-groups#modify-role-groups) sections in the article "Manage role groups in Exchange Online".
 
 ## Step 1: Set up the MS SQL Database Importer connector
 
@@ -54,7 +54,7 @@ The first step is to access to the **Data Connectors** page in the Microsoft365 
 
 5. Sign in to your Merge1 account to configure the connector.
 
-## Step 2: Configure the MS SQL Database Importer connector on the Globanet Merge1 site
+## Step 2: Configure the MS SQL Database Importer connector on the Veritas Merge1 site
 
 The second step is to configure the MS SQL Database Importer connector on the Merge1 site. For information about how to configure the MS SQL Database Importer, see [Merge1 Third-Party Connectors User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20MS%20SQL%20Database%20Importer%20User%20Guide%20.pdf).
 

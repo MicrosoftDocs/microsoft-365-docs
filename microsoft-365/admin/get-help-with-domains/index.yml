@@ -1,0 +1,66 @@
+### YamlMime:Landing
+
+title: Manage domains # < 60 chars
+summary: Check out these resources with common domains tasks, or see the navigation pane on the left for a complete list. # < 160 chars
+
+metadata:
+  title: Manage domains # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Manage all aspects of domains in Microsoft 365. # Required; article description that is displayed in search results. < 160 chars.
+  ms.service: O365-administration #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.topic: landing-page # Required
+  author: pebaum #Required; your GitHub user alias, with correct capitalization.
+  ms.author: pebaum #Required; microsoft alias of author; optional team alias.
+  ms.date: 03/25/2021 #Required; mm/dd/yyyy format.
+  localization_priority: Priority
+  ms.custom: AdminSurgePortfolio
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: Manage domains
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Domains Frequently Asked Questions (FAQ)
+            url: https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq
+      - linkListType: how-to-guide
+        links:
+          - text: Add a domain
+            url: https://docs.microsoft.com/microsoft-365/admin/setup/add-domain
+          - text: Buy a domain name
+            url: https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/buy-a-domain-name
+          - text: Remove a domain
+            url: https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/remove-a-domain
+  # Card (optional)
+  - title: Transfer a domain
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Transfer a domain from Microsoft to another host
+            url: https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/transfer-a-domain-from-microsoft-to-another-host
+  # Card
+  - title: Pilot Microsoft 365
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Pilot Microsoft 365 from my custom domain
+            url: https://docs.microsoft.com/microsoft-365/admin/misc/pilot-microsoft-365-from-my-custom-domain   
+   # Card
+  - title: Nameserver & DNS Records
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Change nameservers at any DNS host
+            url: https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/change-nameservers-at-any-domain-registrar
+          - text: Create DNS records at any DNS host
+            url: https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider
+   # Card
+  - title: Troubleshooting 
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Find and fix issues after adding your domain or DNS records
+            url: https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/find-and-fix-issues

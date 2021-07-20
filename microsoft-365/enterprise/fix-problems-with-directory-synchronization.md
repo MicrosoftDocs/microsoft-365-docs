@@ -37,24 +37,24 @@ In the [Microsoft 365 admin center](https://admin.microsoft.com), navigate to **
   
 Follow the [instructions in the wizard](set-up-directory-synchronization.md) to download Azure AD Connect. 
   
-If you are still using Azure Active Directory (Azure AD) Sync (DirSync), take a look at [How to troubleshoot Azure Active Directory Sync Tool installation and Configuration Wizard error messages in Microsoft 365](https://go.microsoft.com/fwlink/p/?LinkId=396717) for information about the system requirements to install dirsync, the permissions you need, and how to troubleshoot common errors. 
+If you are still using Azure Active Directory (Azure AD) Sync (DirSync), take a look at [How to troubleshoot Azure Active Directory Sync Tool installation and Configuration Wizard error messages in Microsoft 365](/troubleshoot/azure/active-directory/installation-configuration-wizard-errors) for information about the system requirements to install dirsync, the permissions you need, and how to troubleshoot common errors. 
   
-To update from Azure AD Sync to Azure AD Connect, see [the upgrade instructions](https://go.microsoft.com/fwlink/p/?LinkId=733240).
+To update from Azure AD Sync to Azure AD Connect, see [the upgrade instructions](/azure/active-directory/hybrid/how-to-dirsync-upgrade-get-started).
   
 ## Resolving common causes of problems with directory synchronization in Microsoft 365
 
 ### Synchronized objects aren't appearing or updating online, or I'm getting synchronization error reports from the Service.
 
-- [Identity synchronization and duplicate attribute resiliency](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-syncservice-duplicate-attribute-resiliency)
+- [Identity synchronization and duplicate attribute resiliency](/azure/active-directory/hybrid/how-to-connect-syncservice-duplicate-attribute-resiliency)
 
 ### I have an alert in the admin center, or am receiving automated emails that there hasn't been a recent synchronization event
-- [Troubleshoot connectivity issues with Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/tshoot-connect-connectivity)
-- [Azure AD Connect Accounts and permissions](https://go.microsoft.com/fwlink/p/?LinkId=820598)
-- [Azure AD Connect sync: How to manage the Azure AD service account](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-azureadaccount)
+- [Troubleshoot connectivity issues with Azure AD Connect](/azure/active-directory/hybrid/tshoot-connect-connectivity)
+- [Azure AD Connect Accounts and permissions](/azure/active-directory/hybrid/reference-connect-accounts-permissions)
+- [Azure AD Connect sync: How to manage the Azure AD service account](/azure/active-directory/hybrid/how-to-connect-azureadaccount)
 - [Directory synchronization to Azure Active Directory stops or you're warned that sync hasn't registered in more than a day](https://support.microsoft.com/help/2882421/directory-synchronization-to-azure-active-directory-stops-or-you-re-warned-that-sync-hasn-t-registered-in-more-than-a-day)
 
 ### Password hashes aren't synchronizing, or I'm seeing an alert in the admin center that there hasn't been a recent password hash synchronization
-- [Implementing password hash synchronization with Azure AD Connect sync](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization)
+- [Implementing password hash synchronization with Azure AD Connect sync](/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization)
 
 ### I'm seeing an alert that Object quota exceeded
 - We have a built-in object quota to help protect the service. If you have too many objects in your directory that need to sync to Microsoft 365, you'll have to [Contact support for business products](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b) to increase your quota.
@@ -63,18 +63,18 @@ To update from Azure AD Sync to Azure AD Connect, see [the upgrade instructions]
 - You can find a list of all the attributes that are synced between on-premises and the cloud [right here](https://go.microsoft.com/fwlink/p/?LinkId=396719).
 
 ### I can't manage or remove objects that were synchronized to the cloud
-- Are you ready to manage objects in the cloud only? Or is there an object that was deleted on-premises, but is stuck in the cloud? Take a look at this [Troubleshooting Errors during synchronization](https://go.microsoft.com/fwlink/p/?linkid=842044) and [support article](https://go.microsoft.com/fwlink/p/?LinkId=396720) for guidance on how to resolve these issues.
+- Are you ready to manage objects in the cloud only? Or is there an object that was deleted on-premises, but is stuck in the cloud? Take a look at this [Troubleshooting Errors during synchronization](/azure/active-directory/hybrid/tshoot-connect-sync-errors) and [support article](/troubleshoot/azure/active-directory/cannot-manage-objects) for guidance on how to resolve these issues.
 
 ### I got an error message that my company has exceeded the number of objects that can be synchronized
-- You can read more about this issue [here](https://go.microsoft.com/fwlink/p/?LinkId=396721).
+- You can read more about this issue [here](/troubleshoot/azure/active-directory/exceed-number-objects-synced).
    
 ## Other resources
 
-- [Script to fix duplicate user principal names](https://go.microsoft.com/fwlink/p/?LinkId=396725)
+- [Script to fix duplicate user principal names](/samples/browse/?redirectedfrom=TechNet-Gallery)
     
 - [How to prepare a non-routable domain (such as .local domain) for directory synchronization](prepare-a-non-routable-domain-for-directory-synchronization.md)
     
-- [Script to count total synchronized objects](https://go.microsoft.com/fwlink/p/?LinkId=396726)
+- [Script to count total synchronized objects](/samples/browse/?redirectedfrom=TechNet-Gallery)
     
 - [Troubleshoot AD FS 2.0](https://go.microsoft.com/fwlink/p/?LinkId=396727)
     
@@ -83,4 +83,3 @@ To update from Azure AD Sync to Azure AD Connect, see [the upgrade instructions]
 - [Use PowerShell to fix duplicate UPN](https://go.microsoft.com/fwlink/p/?LinkId=396730)
     
 - [Use PowerShell to fix duplicate email addresses](https://go.microsoft.com/fwlink/p/?LinkId=396731)
-    

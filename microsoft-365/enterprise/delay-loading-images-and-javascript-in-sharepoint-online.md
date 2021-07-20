@@ -96,9 +96,9 @@ Save the text file as a JavaScript file with the extension .js, for example dela
   
 Once you've finished writing delayLoadImages.js, you can add the contents of the file to a master page in SharePoint Online. You do this by adding a script link to the header in the master page. Once it's in a master page, the JavaScript will be applied to all pages in your SharePoint Online site that use that master page layout. Alternatively, if you intend to only use this on one page of your site, use the script editor Web Part to embed the JavaScript into the page. See these topics for more information:
   
-- [How to: Apply a master page to a site in SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkId=525627)
+- [How to: Apply a master page to a site in SharePoint 2013](/sharepoint/dev/general-development/how-to-apply-a-master-page-to-a-site-in-sharepoint)
 
-- [How to: Create a page layout in SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkId=525628)
+- [How to: Create a page layout in SharePoint 2013](/sharepoint/dev/general-development/how-to-create-a-page-layout-in-sharepoint)
 
 ### Example: Referencing the JavaScript delayLoadImages.js file from a master page in SharePoint Online
   
@@ -120,6 +120,6 @@ Don't miss the article and code sample on [JavaScript injection](https://go.micr
 
 [Supported browsers in Office 2013 and Microsoft 365 Apps for enterprise](https://support.office.com/article/57342811-0dc4-4316-b773-20082ced8a82)
   
-[How to: Apply a master page to a site in SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkId=525627)
+[How to: Apply a master page to a site in SharePoint 2013](/sharepoint/dev/general-development/how-to-apply-a-master-page-to-a-site-in-sharepoint)
   
-[How to: Create a page layout in SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkId=525628)
+[How to: Create a page layout in SharePoint 2013](/sharepoint/dev/general-development/how-to-create-a-page-layout-in-sharepoint)

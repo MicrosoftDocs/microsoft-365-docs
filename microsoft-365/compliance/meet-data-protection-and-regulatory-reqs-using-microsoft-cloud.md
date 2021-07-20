@@ -21,11 +21,11 @@ ms.custom: seo-marvel-apr2020
 # Microsoft Compliance Manager (classic)
 
 > [!IMPORTANT]
-> **Compliance Manager (classic) will soon be removed from the Microsoft Service Trust Portal.** We recommend that you transition to the new [Compliance Manager in the Microsoft 365 compliance center](https://compliance.microsoft.com/), which provides an enhanced user experience and updated control mapping. Customers who have assessments in the classic version will need to create new assessments in the new Compliance Manager. Any existing data, including your assessments, controls, and other data, will not be transferred over to the new Compliance Manager. [Learn more about the transition](compliance-manager-faq.md#whats-happening-to-compliance-manager-classic-in-the-service-trust-portal).
+> **Compliance Manager (classic) will soon be removed from the Microsoft Service Trust Portal.** We recommend that you transition to the new [Compliance Manager in the Microsoft 365 compliance center](https://compliance.microsoft.com/), which provides an enhanced user experience and updated control mapping. Customers who have assessments in the classic version will need to create new assessments in the new Compliance Manager. Any existing data, including your assessments, controls, and other data, will not be transferred over to the new Compliance Manager. [Learn more about the transition](compliance-manager-faq.yml#what-s-happening-to-compliance-manager--classic--in-the-service-trust-portal-).
 
 *Compliance Manager isn't available in Office 365 operated by 21Vianet, Office 365 Germany, Office 365 U.S. Government Community High (GCC High), or Office 365 Department of Defense.*
 
-Compliance Manager, a workflow-based risk assessment tool in the Microsoft [Service Trust Portal](https://docs.microsoft.com/microsoft-365/compliance/get-started-with-service-trust-portal), enables you to track, assign, and verify your organization's regulatory compliance activities related to Microsoft Professional Services and Microsoft cloud services, such as Microsoft Office 365, Microsoft Dynamics 365, and Microsoft Azure.
+Compliance Manager, a workflow-based risk assessment tool in the Microsoft [Service Trust Portal](./get-started-with-service-trust-portal.md), enables you to track, assign, and verify your organization's regulatory compliance activities related to Microsoft Professional Services and Microsoft cloud services, such as Microsoft Office 365, Microsoft Dynamics 365, and Microsoft Azure.
 
 Compliance Manager:
 
@@ -60,23 +60,23 @@ An Assessment is made of several components, which are:
 
   Here's an example of three Microsoft-managed controls in the **Security** control family from an Assessment of Office 365 and the GDPR.
 
-    ![Details of Microsoft-managed controls in the Compliance Manager](../media/d1351212-1ebf-424e-91b8-930c2b2edef1.png)
+  ![Details of Microsoft-managed controls in the Compliance Manager](../media/d1351212-1ebf-424e-91b8-930c2b2edef1.png)
 
-  a. Specifies the following information from the certification or regulation that maps to the Microsoft-managed control.
+  1. Specifies the following information from the certification or regulation that maps to the Microsoft-managed control.
 
-  - **Control ID** - The section or article number from the certification or regulation that the control maps to.
+     - **Control ID** - The section or article number from the certification or regulation that the control maps to.
 
-  - **Title** - The title from the corresponding certification or regulation.
+     - **Title** - The title from the corresponding certification or regulation.
 
-  - **Article ID** - This field is included only for GDPR assessments, as it specifies the corresponding GDPR article number.
+     - **Article ID** - This field is included only for GDPR assessments, as it specifies the corresponding GDPR article number.
 
-  - **Description** - Text of the standard or regulation that maps to the selected Microsoft-managed control.
+     - **Description** - Text of the standard or regulation that maps to the selected Microsoft-managed control.
 
-  b. The Compliance Score for the control, which indicates the level of risk (due to non-compliance or control failure) associated with each Microsoft-managed control. See [Understanding the Compliance Score](#understanding-the-compliance-score) for more information. Note that Compliance Scores are rated from 1 to 10 and are color-coded. Yellow indicates low risk controls, orange indicates medium-risk controls, and red indicated high-risk controls.
+  1. The Compliance Score for the control, which indicates the level of risk (due to non-compliance or control failure) associated with each Microsoft-managed control. See [Understanding the Compliance Score](#understanding-the-compliance-score) for more information. Note that Compliance Scores are rated from 1 to 10 and are color-coded. Yellow indicates low risk controls, orange indicates medium-risk controls, and red indicated high-risk controls.
 
-  c. Information about the implementation status of a control, the date the control was tested, who performed the test, and the test result.
+  1. Information about the implementation status of a control, the date the control was tested, who performed the test, and the test result.
 
-  d. For each control, you can click **More** to see additional information, including details about Microsoft's implementation of the control and details about how the control was tested and validated by an independent third-party auditor.
+  1. For each control, you can click **More** to see additional information, including details about Microsoft's implementation of the control and details about how the control was tested and validated by an independent third-party auditor.
 
 - **Customer-Managed Controls** - This is the collection of controls that are managed by your organization. Your organization is responsible for implementing these controls as part of your compliance process for a given standard or regulation. Customer-managed controls are also organized into control families for the corresponding certification or regulation. Use the customer-managed controls to implement the recommended actions suggested by Microsoft as part of your compliance activities. Your organization can use the prescriptive guidance and recommended Customer Actions in each customer-managed control to manage the implementation and assessment process for that control.
 
@@ -113,7 +113,7 @@ For example, the User Access Management assessment control shown below has a ver
 
 ![Compliance Manager - Assessment control high severity - score 10](../media/174ecb2c-aaed-436e-9950-74da7dadf5db.png)
 
- By comparison, the Information Backup assessment control shown below has a lower severity risk ranking, and displays an assigned value of 3.
+By comparison, the Information Backup assessment control shown below has a lower severity risk ranking, and displays an assigned value of 3.
 
 ![Compliance Manager - Assessment control low severity - score 3](../media/11749f20-5f22-40c2-bbc1-eaccbf29e2ae.png)
 
@@ -203,9 +203,9 @@ The essence of the control is based on whether the control is Mandatory or Discr
 
 ### Mandatory or discretionary
 
- *Mandatory controls*  are controls that cannot be bypassed either intentionally or accidentally. An example of a common mandatory control is a centrally-managed password policy that sets requirements for password length, complexity, and expiration. Users must comply with these requirements in order to access the system.
+*Mandatory controls*  are controls that cannot be bypassed either intentionally or accidentally. An example of a common mandatory control is a centrally-managed password policy that sets requirements for password length, complexity, and expiration. Users must comply with these requirements in order to access the system.
 
- *Discretionary controls*  rely upon users to understand policy and act accordingly. For example, a policy requiring users to lock their computer when they leave it is a discretionary control because it relies on the user.
+*Discretionary controls*  rely upon users to understand policy and act accordingly. For example, a policy requiring users to lock their computer when they leave it is a discretionary control because it relies on the user.
 
 ### Preventative, detective, or corrective
 
@@ -321,7 +321,7 @@ By clicking the **Office 365 — GDPR** assessment, and using the filter control
 
 ![Compliance Manager Assessment — shared controls](../media/aafb106e-0abc-4918-8038-de11cf326dfe.png)
 
- Here we show the completion of the implementation and testing of GDPR control 6.10.1.2.
+Here we show the completion of the implementation and testing of GDPR control 6.10.1.2.
 
 ![Compliance Manager Assessment control GDPR 6.10.1.2 — passed](../media/ee9e83b6-9d51-4b3b-85eb-96bec0fef2e1.png)
 
@@ -504,9 +504,9 @@ To add an Assessment to Compliance Manager:
 
 3. Click **Next**, and do the following:
 
-   a. Choose a Microsoft cloud service to assess for compliance from the **Select a product** drop-down list.
+   1. Choose a Microsoft cloud service to assess for compliance from the **Select a product** drop-down list.
 
-   b. Choose a certification to assess the selected cloud service against from the **Select a certification** drop-down list.
+   1. Choose a certification to assess the selected cloud service against from the **Select a certification** drop-down list.
 
 4. Click **Add to Dashboard** to create the Assessment; the assessment will be added to the Compliance Manager dashboard as a new tile at the end of the list of existing tiles.
 

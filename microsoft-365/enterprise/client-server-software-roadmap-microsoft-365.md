@@ -39,41 +39,41 @@ Organizations both large and small often use a combination of older versions of 
 - Aren't optimized to use the Microsoft cloud technologies that help you digitally transform your business.
 - Don't provide the latest features.
 
-Microsoft 365 for Enterprise includes Microsoft 365 Apps for enterprise. This version of the Office client products is available with a Microsoft 365 for Enterprise license. It's installed and updated from the Microsoft cloud. Microsoft 365 Apps for enterprise includes security updates and the latest features. For more information, see [About Microsoft 365 Apps for enterprise](https://docs.microsoft.com/deployoffice/about-microsoft-365-apps).
+Microsoft 365 for Enterprise includes Microsoft 365 Apps for enterprise. This version of the Office client products is available with a Microsoft 365 for Enterprise license. It's installed and updated from the Microsoft cloud. Microsoft 365 Apps for enterprise includes security updates and the latest features. For more information, see [About Microsoft 365 Apps for enterprise](/deployoffice/about-microsoft-365-apps).
 
 ### Office 2007
 
-For versions of Office in the Office 2007 release, the end of support has already passed. For more information, see [Office 2007 end-of-support roadmap](https://docs.microsoft.com/deployoffice/office-2007-end-support-roadmap).
+For versions of Office in the Office 2007 release, the end of support has already passed. For more information, see [Office 2007 end-of-support roadmap](/deployoffice/office-2007-end-support-roadmap).
 
 Rather than upgrading your computers that run Office 2007 to Office 2010, Office 2013, or Office 2016, consider taking the following steps:
 
 1. Get and assign a Microsoft 365 license for your users.
 2. Uninstall Office 2007 on their computers.
-3. Install Microsoft 365 Apps for enterprise, either individually or during an IT rollout. For more information, see [Deployment guide for Microsoft 365 Apps](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps).
+3. Install Microsoft 365 Apps for enterprise, either individually or during an IT rollout. For more information, see [Deployment guide for Microsoft 365 Apps](/deployoffice/deployment-guide-microsoft-365-apps).
 
 Microsoft 365 Apps for enterprise installs updates automatically. It can take advantage of cloud-based services for enhanced security and productivity.
 
 ### Office 2010
 
-For versions of Office in the Office 2010 release, support ended on *October 13, 2020*. For more information, see [Office 2010 end-of-support roadmap](https://docs.microsoft.com/deployoffice/office-2010-end-support-roadmap).
+For versions of Office in the Office 2010 release, support ended on *October 13, 2020*. For more information, see [Office 2010 end-of-support roadmap](/deployoffice/office-2010-end-support-roadmap).
 
 You might consider upgrading your computers that run Office 2010 to Office 2013 or Office 2016. However, both of those versions must be manually updated. So consider taking the following steps instead:
 
 1. Get and assign a Microsoft 365 license for your users.
 2. Uninstall Office 2010 on their computers.
-3. Install Microsoft 365 Apps for enterprise, either individually or during an IT rollout. For more information, see [Deployment guide for Microsoft 365 Apps](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps).
+3. Install Microsoft 365 Apps for enterprise, either individually or during an IT rollout. For more information, see [Deployment guide for Microsoft 365 Apps](/deployoffice/deployment-guide-microsoft-365-apps).
 
 Microsoft 365 Apps for enterprise automatically installs both security updates and new feature updates. It can take advantage of cloud-based services in Microsoft 365 for enhanced security and productivity.
 
 ### Office 2013 and Office 2016
 
-See the [end-of-support roadmap for Office 2013](https://docs.microsoft.com/lifecycle/products/microsoft-office-2013). The end of support for Office 2016 hasn't yet been determined. In these versions, like Office 2010, you must still [install security updates](https://support.office.com/article/install-office-updates-2ab296f3-7f03-43a2-8e50-46de917611c5). This task might not scale well, depending on the size of your organization.
+See the [end-of-support roadmap for Office 2013](/lifecycle/products/microsoft-office-2013). The end of support for Office 2016 hasn't yet been determined. In these versions, like Office 2010, you must still [install security updates](https://support.office.com/article/install-office-updates-2ab296f3-7f03-43a2-8e50-46de917611c5). This task might not scale well, depending on the size of your organization.
 
 Rather than keeping your computers current with the latest security updates for Office 2013 or Office 2016, or updating your computers from Office 2013 to Office 2016, consider taking the following steps:
 
 1. Get and assign a Microsoft 365 license for your users.
 2. Uninstall Office 2013 or Office 2016 on their computers.
-3. Install Microsoft 365 Apps for enterprise, either individually or during an IT rollout. For more information, see [Deployment guide for Microsoft 365 Apps](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps).
+3. Install Microsoft 365 Apps for enterprise, either individually or during an IT rollout. For more information, see [Deployment guide for Microsoft 365 Apps](/deployoffice/deployment-guide-microsoft-365-apps).
 
 Microsoft 365 Apps for enterprise installs both security updates and new feature updates automatically. It can take advantage of cloud-based services in Microsoft 365 for enhanced security and productivity.
 
@@ -90,9 +90,9 @@ Microsoft 365 for Enterprise includes cloud-based versions of Office server serv
 
 Use the following resources for information about migrating users and data for specific Microsoft 365 workloads:
 
-- [Move mailboxes from on-premises Exchange Server to Exchange Online](https://docs.microsoft.com/exchange/hybrid-deployment/move-mailboxes)
-- [Migrate SharePoint data from SharePoint Server to SharePoint Online](https://docs.microsoft.com/sharepointmigration/migrate-to-sharepoint-online)
-- [Migrate Skype for Business Online to Microsoft Teams](https://docs.microsoft.com/microsoftteams/migration-interop-guidance-for-teams-with-skype)
+- [Move mailboxes from on-premises Exchange Server to Exchange Online](/exchange/hybrid-deployment/move-mailboxes)
+- [Migrate SharePoint data from SharePoint Server to SharePoint Online](/sharepointmigration/migrate-to-sharepoint-online)
+- [Migrate Skype for Business Online to Microsoft Teams](/microsoftteams/migration-interop-guidance-for-teams-with-skype)
 
 ### Office 2007 server products
 
@@ -101,7 +101,7 @@ For server products in the Office 2007 release, the end of support has already p
 - [Exchange 2007 end-of-support roadmap](exchange-2007-end-of-support.md)
 - [SharePoint Server 2007 end-of-support roadmap](sharepoint-2007-end-of-support.md)
 - [Project Server 2007 end-of-support roadmap](project-server-2007-end-of-support.md)
-- [Office Communications Server end-of-support roadmap](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade)
+- [Office Communications Server end-of-support roadmap](/skypeforbusiness/plan-your-deployment/upgrade)
 - [PerformancePoint Server 2007 end-of-support roadmap](pps-2007-end-of-support.md)
 
 Rather than upgrading your server products in the Office 2007 release with server products in the releases for Office 2010, Office 2013, or Office 2016, consider taking the following steps:
@@ -142,7 +142,7 @@ For server products in the Office 2016 release, the end of support hasn't been d
 
 Support ended for Windows 7 on *January 14, 2020*. To migrate your devices that run Windows 7 or Windows 8.1, you can do an in-place upgrade.
 
-For additional methods, see [Windows 10 deployment scenarios](https://docs.microsoft.com/windows/deployment/windows-10-deployment-scenarios). You can also [plan for Windows 10 deployment](https://aka.ms/planforwin10deployment) on your own.
+For additional methods, see [Windows 10 deployment scenarios](/windows/deployment/windows-10-deployment-scenarios). You can also [plan for Windows 10 deployment](/windows/deployment/planning/) on your own.
 
 ## Office 2010 clients and servers and Windows 7
 

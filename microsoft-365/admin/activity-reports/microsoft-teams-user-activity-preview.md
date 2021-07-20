@@ -1,7 +1,7 @@
 ---
 title: "Microsoft 365 Reports in the admin center - Microsoft Teams user activity"
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article

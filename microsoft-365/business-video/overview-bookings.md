@@ -2,14 +2,13 @@
 title: "Microsoft Bookings - overview"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
@@ -20,10 +19,12 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Learn about Microsoft Bookings."
+description: "Learn about Microsoft Bookings, an online and mobile app for small businesss that provides appointment booking for your customers."
 ---
 
 # Overview of Microsoft Bookings
+
+## Watch: Overview of Microsoft Bookings
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE26B1q?autoplay=false]
 

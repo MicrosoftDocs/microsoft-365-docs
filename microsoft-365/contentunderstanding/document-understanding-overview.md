@@ -1,8 +1,9 @@
 ---
 title: "Document understanding overview"
-ms.author: efrene
-author: efrene
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
+ms.reviewer: ssquires
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -26,12 +27,12 @@ description: "Get an overview of the document understanding in Microsoft SharePo
 Document understanding uses artificial intelligence (AI) models to automate classification of files and extraction of information. It works best with unstructured documents, such as letters or contracts. These documents must have text that can be identified based on phrases or patterns. The identified text designates both the type of file it is (its classification) and what you'd like to extract (its extractors).
 
 > [!NOTE]
-> See the [SharePoint Syntex adoption: Get started guide](https://docs.microsoft.com/microsoft-365/contentunderstanding/adoption-getstarted#document-understanding-scenario-example) for more information about document understanding scenario examples.
+> See the [SharePoint Syntex adoption: Get started guide](./adoption-getstarted.md) for more information about document understanding scenario examples.
 
 Document understanding models are created and managed in a type of SharePoint site called a *content center*. When applied to a SharePoint document library, the model is associated with a content type has columns to store the information being extracted. The content type you create is stored in the SharePoint content type gallery. You can also choose to use existing content types to use their schema.
 
 > [!NOTE]
-> Read-only or sealed content types cannot be updated, so they cannot be used in a model.
+> Read-only or sealed content types cannot be updated, so they can't be used in a model.
 
 Add *classifiers* and *extractors* to your document understanding models to do the following: 
 
@@ -43,16 +44,40 @@ You can use example files to train and test your classifiers and extractors in y
 
 After publishing your model, use the content center to apply it to any SharePoint document library that you have access to.  
 
-### File limitations
+## File limitations
 
 Document understanding models use Optical Character Recognition (OCR) technology to scan PDFs, images, and TIFF files, both when you train a model with example files and when you run the model against files in a document library.
 
-Note the following differences in regards to Microsoft Office text-based files and OCR-scanned files (PDF, image, or TIFF):
+Note the following differences with regard to Microsoft Office text-based files and OCR-scanned files (PDF, image, or TIFF):
 
-- Office files: We truncate at 64K characters (in training and when run against files in a document library).
-- OCR-scanned files: There is a 20 page limit.  
+- Office files: Truncated at 64,000 characters (in training and when run against files in a document library).
 
-#### Supported file types
+- OCR-scanned files: There's a 20-page limit.  
+
+### Requirements
+
+OCR processing works best on documents that meet the following requirements:
+
+- JPG, PNG, or PDF format (text or scanned). Text-embedded PDFs are better, because there won't be any errors in character extraction and location.
+
+- If your PDFs are password-locked, you must remove the lock before submitting them.
+
+- The combined file size of the documents used for training per collection must not exceed 50 MB, and PDF documents shouldn't have more than 500 pages.
+
+- For images, dimensions must be between 50 × 50 and 10,000 × 10,000 pixels.
+   > [!NOTE]
+   > Images that are very wide or have odd dimensions (for example, floor plans) might get truncated in the OCR process and lose accuracy.
+ 
+- For PDF files, dimensions must be at most 17 x 17 inches, corresponding to Legal or A3 paper sizes and smaller.
+
+- If scanned from paper documents, scans should be high-quality images.
+
+- Must use the Latin alphabet (English characters).
+
+> [!NOTE]
+> AI Builder doesn't currently support the following types of form processing input data:<br>- Check boxes or radio buttons<br>- Signatures<br>- Fillable PDFs
+
+### Supported file types
 
 Document understanding models support the following file types:
 

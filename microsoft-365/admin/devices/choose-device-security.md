@@ -2,8 +2,8 @@
 title: "Compare different device and app data protection methods"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: sharik
+author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -40,7 +40,7 @@ Or use the subscriptions that include some, or all of the previous standalone pl
  
 - **Microsoft Intune** is a stand-alone plan that is also included with some Microsoft 365 for business or enterprise plans. If you have Intune either as a stand-alone or a part of your subscription, it provides ability to fine-tune your device and app-data management. For more information on availability with Microsoft 365, see [availability of Intune](../basic-mobility-security/choose-between-basic-mobility-and-security-and-intune.md#availability-of-basic-mobility-and-security-and-intune).
 
-    Microsoft Intune is a cloud-based service that focuses on mobile device management (MDM) and mobile application management (MAM). You control how your organization’s devices are used, including mobile phones, tablets, and laptops. You can also configure specific policies to control applications. For more information, see [Microsoft Intune documentation](https://docs.microsoft.com/mem/intune/).
+    Microsoft Intune is a cloud-based service that focuses on mobile device management (MDM) and mobile application management (MAM). You control how your organization’s devices are used, including mobile phones, tablets, and laptops. You can also configure specific policies to control applications. For more information, see [Microsoft Intune documentation](/mem/intune/).
 
 - **Azure Active Directory (AD) Premium** plans are standalone plans that also come with some of the Microsoft 365 for business and enterprise plans. For more information, see [Azure AD pricing](https://azure.microsoft.com/pricing/details/active-directory/).
 

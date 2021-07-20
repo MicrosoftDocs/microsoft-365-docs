@@ -56,7 +56,7 @@ Based on rapid deployment goals of the latest release, this example organization
 
 The overall goal is to perform a broad deployment of the latest Semi-Annual Channel release after validation of Release Preview Channel changes by a group of representative users and their devices.
 
-See [Windows 10 deployment](https://docs.microsoft.com/windows/deployment/) for more information on Windows 10 deployment methods and strategies.
+See [Windows 10 deployment](/windows/deployment/) for more information on Windows 10 deployment methods and strategies.
 
 | Stage | Channel | Deployment group |
 |:-------|:-------|:-----|
@@ -80,7 +80,7 @@ Ongoing updates process:
 
 The overall goal is to perform a broad deployment of the latest Current Channel release after validation of Current Channel (Preview) changes by a group of representative users.
 
-See [Microsoft 365 Apps deployment](https://docs.microsoft.com/deployoffice/plan-office-365-proplus) for more information on Microsoft 365 Apps deployment methods and strategies.
+See [Microsoft 365 Apps deployment](/deployoffice/plan-office-365-proplus) for more information on Microsoft 365 Apps deployment methods and strategies.
 
 | Stage | Channel | Deployment group |
 |:-------|:-------|:-----|

@@ -228,7 +228,7 @@ A holistic approach to enhanced security should include consideration of the fol
   - Ensures local egress for Microsoft 365 traffic
 - Improvements can be addressed incrementally as described in the [Incremental optimization](microsoft-365-network-connectivity-principles.md#BKMK_IncOpt) section. Some optimization techniques may offer better cost/benefit ratios depending on your network architecture, and you should choose optimizations that make the most sense for your organization.
 
-For more information on Microsoft 365 security and compliance, see the articles [Microsoft 365 security](https://docs.microsoft.com/microsoft-365/security) and [Microsoft 365 compliance](https://docs.microsoft.com/microsoft-365/compliance).
+For more information on Microsoft 365 security and compliance, see the articles [Microsoft 365 security](../security/index.yml) and [Microsoft 365 compliance](../compliance/index.yml).
   
 ## Incremental optimization
 <a name="BKMK_IncOpt"> </a>

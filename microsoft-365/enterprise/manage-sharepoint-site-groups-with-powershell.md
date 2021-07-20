@@ -13,7 +13,7 @@ search.appverid:
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom: 
+ms.custom:
 - PowerShell
 - Ent_Office_Other
 - SPO_Content
@@ -30,7 +30,7 @@ Although you can use the Microsoft 365 admin center, you can also use PowerShell
 
 ## Before you begin
 
-The procedures in this article require you to connect to SharePoint Online. For instructions, see [Connect to SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps).
+The procedures in this article require you to connect to SharePoint Online. For instructions, see [Connect to SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
 
 ## View SharePoint Online with PowerShell for Microsoft 365
 
@@ -79,23 +79,22 @@ foreach ($y in $x)
         $z = Get-SPOSiteGroup -Site $y.Url
         foreach ($a in $z)
             {
-                 $b = Get-SPOSiteGroup -Site $y.Url -Group $a.Title 
+                 $b = Get-SPOSiteGroup -Site $y.Url -Group $a.Title
                  Write-Host $b.Title -ForegroundColor "Cyan"
                  $b | Select-Object -ExpandProperty Users
                  Write-Host
             }
     }
 ```
-    
+
 ## See also
 
-[Connect to SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
+[Connect to SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
 
 [Create SharePoint Online sites and add users with PowerShell](create-sharepoint-sites-and-add-users-with-powershell.md)
 
 [Manage SharePoint Online users and groups with PowerShell](manage-sharepoint-users-and-groups-with-powershell.md)
 
 [Manage Microsoft 365 with PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
-  
-[Getting started with PowerShell for Microsoft 365](getting-started-with-microsoft-365-powershell.md)
 
+[Getting started with PowerShell for Microsoft 365](getting-started-with-microsoft-365-powershell.md)

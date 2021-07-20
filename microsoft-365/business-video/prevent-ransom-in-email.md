@@ -2,14 +2,13 @@
 title: "Create email rules for ransomware"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
@@ -39,7 +38,7 @@ Microsoft 365 helps protect your business against ransomware by preventing poten
 1. Under **Apply this rule if**, select **Any attachment**, and then select **file extension includes these words**.
 1. In the box under **specify words or phrases**, enter the file extensions that you want the rule to be applied to, such as file extensions that can contain macros. Use the plus (+) symbol to add them one at a time.
 
-    Learn more about file types by reading [Protect against ransomware](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/secure-your-business-data#ransomware).
+    Learn more about file types by reading [Protect against ransomware](../admin/security-and-compliance/secure-your-business-data.md#ransomware).
 
 1. Scroll down to review your list, and then choose **OK**.
 1. On the **new rule** page, choose **add condition**, and then choose a condition under **Do the following**.

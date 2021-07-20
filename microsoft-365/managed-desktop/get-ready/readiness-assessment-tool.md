@@ -9,6 +9,7 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
+audience: Admin
 ---
 
 # Readiness assessment tools
@@ -21,7 +22,7 @@ For details about using the downloadable readiness assessment checker, see [Down
 
 ## Online readiness assessment tool for management settings
 
-The online tool checks settings in Microsoft Endpoint Manager (specifically, Microsoft Intune), Azure Active Directory (Azure AD), and Microsoft 365 to ensure they will work with Microsoft Managed Desktop. Microsoft Managed Desktop retains the data associated with these checks for 12 months after the last time you run a check in your Azure AD organization (tenant). After 12 months, we retain it in de-identified form. You can choose to delete the data we collect.
+The [online tool](https://aka.ms/mmdart) checks settings in Microsoft Endpoint Manager (specifically, Microsoft Intune), Azure Active Directory (Azure AD), and Microsoft 365 to ensure they will work with Microsoft Managed Desktop. Microsoft Managed Desktop retains the data associated with these checks for 12 months after the last time you run a check in your Azure AD organization (tenant). After 12 months, we retain it in de-identified form. You can choose to delete the data we collect.
 
 Anyone with at least the Global Reader or Intune Administrator role will be able to run this tool, but two of the checks ([Conditional access policies](readiness-assessment-fix.md#conditional-access-policies) and [Multifactor authentication](readiness-assessment-fix.md#multifactor-authentication) require additional permissions.
  
@@ -84,3 +85,15 @@ For each check, the tool will report one of four possible results:
 ## After enrollment
 
 After you've completed enrollment in Microsoft Managed Desktop, remember to go back and adjust certain Intune and Azure AD settings. For details, see [Adjust settings after enrollment](../get-started/conditional-access.md).
+
+## Steps to get ready
+
+1. Review [prerequisites for Microsoft Managed Desktop](prerequisites.md).
+2. Use [readiness assessment tools](readiness-assessment-tool.md). (This article)
+3. [Prerequisites for guest accounts](guest-accounts.md)
+4. [Network configuration for Microsoft Managed Desktop](network.md)
+5. [Prepare certificates and network profiles for Microsoft Managed Desktop](certs-wifi-lan.md)
+6. [Prepare on-premises resources access for Microsoft Managed Desktop](authentication.md)
+7. [Apps in Microsoft Managed Desktop](apps.md)
+8. [Prepare mapped drives for Microsoft Managed Desktop](mapped-drives.md)
+9. [Prepare printing resources for Microsoft Managed Desktop](printing.md)

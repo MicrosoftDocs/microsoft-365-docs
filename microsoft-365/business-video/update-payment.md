@@ -2,14 +2,13 @@
 title: "Update your payment method"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
@@ -24,7 +23,9 @@ search.appverid:
 description: "Learn how to update your payment method for Microsoft 365 for business."
 ---
 
-# Update yor payment method for your subscription
+# Update the payment method for your subscription
+
+## Watch: Update your payment method
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3AVxy?autoplay=false]
 

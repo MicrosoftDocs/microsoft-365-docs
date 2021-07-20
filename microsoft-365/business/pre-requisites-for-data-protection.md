@@ -2,8 +2,8 @@
 title: "Prerequisites for protecting data on devices with Microsoft 365 for business"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: sharik
+author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: conceptual
@@ -36,12 +36,12 @@ The first step in setting up your organization with Microsoft 365 for business i
     
     [Upgrade Windows devices to Windows Pro Creators Update](upgrade-to-windows-pro-creators-update.md)
     
-    If you're running Windows 10 Home, then you must **purchase** Windows  10 Pro. See [upgrade Windows 10 Home to Windows 10 Pro](https://support.microsoft.com/office/0aee10c1-4d34-43ee-a325-579c6c2df90e) for instructions. 
+    If you're running Windows 10 Home, then you must **purchase** Windows  10 Pro. See [upgrade Windows 10 Home to Windows 10 Pro](../business-video/upgrade.md) for instructions. 
     
 - Remove devices from mobile management solutions (Mobile Iron, AirWatch, and so on). You'll enroll all the people in your organization in Microsoft 365 for business mobile management.
     
 - Apple iOS 8.0 and later.
     
-    Google Android 4.0 and later (including Samsung KNOX Standard 4.0 and higher). For more information, see [Intune supported devices](https://go.microsoft.com/fwlink/p/?linkid=852307).
+    Google Android 4.0 and later (including Samsung KNOX Standard 4.0 and higher). For more information, see [Intune supported devices](/mem/intune/fundamentals/supported-devices-browsers).
     
-- If you have existing Office applications on user computers, read [prepare for Office client installation](prepare-for-office-client-deployment.md) to understand steps you might need to take before you can set up Microsoft 365 for business to install Office 2016 on user computers. 
+- If you have existing Office applications on user computers, read [prepare for Office client installation](prepare-for-office-client-deployment.md) to understand steps you might need to take before you can set up Microsoft 365 for business to install Office 2016 on user computers.

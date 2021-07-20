@@ -15,21 +15,30 @@ ms.collection:
 ms.custom: 
 - AdminSurgePortfolio
 - okr_smb
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
-description: "Learn how to make your organization more secure against password attacks, and why you should ban common passwords and enable risk-based multi-factor authentication."
+description: "Make your organization more secure against password attacks, and ban common passwords and enable risk-based multi-factor authentication."
 ---
 
 # Password policy recommendations
 
-As the admin of an organization, you're responsible for setting password policy for users in your organization. Setting password policy can be complicated and confusing, and this article provides recommendations to make your organization more secure against password attacks.
+As the admin of an organization, you're responsible for setting the password policy for users in your organization. Setting the password policy can be complicated and confusing, and this article provides recommendations to make your organization more secure against password attacks.
   
 To determine how often Microsoft 365 passwords expire in your organization, see [Set password expiration policy for Microsoft 365](../manage/set-password-expiration-policy.md).
 
-For more information about Microsoft 365 passwords, see these [related articles](#related-articles).
+For more information about Microsoft 365 passwords, see:
+
+[Reset passwords](../add-users/reset-passwords.md) (article)
+
+[Set an individual user's password to never expire](../add-users/set-password-to-never-expire.md) (article)
+
+[Let users reset their own passwords](../add-users/let-users-reset-passwords.md) (article)
+
+[Resend a user's password - Admin Help](../add-users/resend-user-password.md) (article)
   
 ## Understanding password recommendations
 
@@ -45,7 +54,7 @@ Good password practices fall into a few broad categories:
 
 The primary goal of a more secure password system is password diversity. You want your password policy to contain lots of different and hard to guess passwords. Here are a few recommendations for keeping your organization as secure as possible.
   
-- Maintain an 8-character minimum length requirement (longer isn't necessarily better)
+- Maintain an 8-character minimum length requirement
 
 - Don't require character composition requirements. For example, \*&amp;(^%$
 
@@ -99,7 +108,7 @@ In contrast, here are some recommendations in encouraging password diversity.
   
 ### Ban common passwords
 
-The most important password requirement you should put on your users when creating passwords is to ban the use of common passwords to reduce your organization's susceptibility to brute force password attacks. Common user passwords include, **abcdefg**, **password**, **monkey**.
+The most important password requirement you should put on your users when creating passwords is to ban the use of common passwords to reduce your organization's susceptibility to brute force password attacks. Common user passwords include: **abcdefg**, **password**, **monkey**.
   
 ### Educate users to not re-use organization passwords anywhere else
 
@@ -115,7 +124,13 @@ To learn more, see [Set up multi-factor authentication](../security-and-complian
 
 Risk-based multi-factor authentication ensures that when our system detects suspicious activity, it can challenge the user to ensure that they are the legitimate account owner. 
   
-## Want to know more? Recommended reading
+## Next steps
+
+Want to know more about managing passwords? Here is some recommended reading:
+
+- [Forget passwords, go passwordless](https://www.microsoft.com/security/business/identity-access-management/passwordless-authentication)
+
+- [Microsoft Password Guidance](https://www.microsoft.com/research/wp-content/uploads/2016/06/Microsoft_Password_Guidance-1.pdf)
 
 - [Do Strong Web Passwords Accomplish Anything?](https://go.microsoft.com/fwlink/p/?linkid=861008)
 
@@ -129,12 +144,9 @@ Risk-based multi-factor authentication ensures that when our system detects susp
 
 - [Worst Passwords of 2015](https://go.microsoft.com/fwlink/p/?linkid=861020)
 
-## Related articles
+## Related content
 
-[Reset passwords](https://docs.microsoft.com/microsoft-365/admin/add-users/reset-passwords)
-
-[Set an individual user's password to never expire](https://docs.microsoft.com/microsoft-365/admin/add-users/set-password-to-never-expire)
-
-[Let users reset their own passwords](https://docs.microsoft.com/microsoft-365/admin/add-users/let-users-reset-passwords)
-
-[Resend a user's password - Admin Help](https://docs.microsoft.com/microsoft-365/admin/add-users/resend-user-password)
+[Reset passwords](../add-users/reset-passwords.md) (article)\
+[Set an individual user's password to never expire](../add-users/set-password-to-never-expire.md) (article)\
+[Let users reset their own passwords](../add-users/let-users-reset-passwords.md) (article)\
+[Resend a user's password - Admin Help](../add-users/resend-user-password.md) (article)

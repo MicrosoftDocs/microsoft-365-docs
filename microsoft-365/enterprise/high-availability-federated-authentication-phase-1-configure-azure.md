@@ -104,7 +104,7 @@ For the set of local network address spaces, fill in Table L. Note that three bl
 Now let's begin building the Azure infrastructure to host your federated authentication for Microsoft 365.
   
 > [!NOTE]
-> The following command sets use the latest version of Azure PowerShell. See [Get started with Azure PowerShell](https://docs.microsoft.com/powershell/azure/get-started-azureps). 
+> The following command sets use the latest version of Azure PowerShell. See [Get started with Azure PowerShell](/powershell/azure/get-started-azureps). 
   
 First, start an Azure PowerShell prompt and login to your account.
   
@@ -248,7 +248,7 @@ $vnetConnection=New-AzVirtualNetworkGatewayConnection -Name $vnetConnectionName 
 ```
 
 > [!NOTE]
-> Federated authentication of individual users does not rely on any on-premises resources. However, if this site-to-site VPN connection becomes unavailable, the domain controllers in the VNet will not receive updates to user accounts and groups made in the on-premises Active Directory Domain Services. To ensure this does not happen, you can configure high availability for your site-to-site VPN connection. For more information, see [Highly Available Cross-Premises and VNet-to-VNet Connectivity](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-highlyavailable)
+> Federated authentication of individual users does not rely on any on-premises resources. However, if this site-to-site VPN connection becomes unavailable, the domain controllers in the VNet will not receive updates to user accounts and groups made in the on-premises Active Directory Domain Services. To ensure this does not happen, you can configure high availability for your site-to-site VPN connection. For more information, see [Highly Available Cross-Premises and VNet-to-VNet Connectivity](/azure/vpn-gateway/vpn-gateway-highlyavailable)
   
 Next, record the public IPv4 address of the Azure VPN gateway for your virtual network from the display of this command:
   
@@ -256,7 +256,7 @@ Next, record the public IPv4 address of the Azure VPN gateway for your virtual n
 Get-AzPublicIpAddress -Name $publicGatewayVipName -ResourceGroupName $rgName
 ```
 
-Next, configure your on-premises VPN device to connect to the Azure VPN gateway. For more information, see [Configure your VPN device](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices).
+Next, configure your on-premises VPN device to connect to the Azure VPN gateway. For more information, see [Configure your VPN device](/azure/vpn-gateway/vpn-gateway-about-vpn-devices).
   
 To configure your on-premises VPN device, you will need the following:
   
@@ -309,8 +309,6 @@ Use [Phase 2: Configure domain controllers](high-availability-federated-authenti
   
 [Federated identity for your Microsoft 365 dev/test environment](federated-identity-for-your-microsoft-365-dev-test-environment.md)
   
-[Microsoft 365 solution and architecture center](../solutions/solution-architecture-center.md)
+[Microsoft 365 solution and architecture center](../solutions/index.yml)
 
 [Understanding Microsoft 365 identity and Azure Active Directory](about-microsoft-365-identity.md)
-
-

@@ -2,14 +2,13 @@
 title: "Sign up for Microsoft 365 Business Premium subscription"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
@@ -20,10 +19,12 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Learn how to sign up for Microsoft 365 Business Premium."
+description: "Learn how to sign up for Microsoft 365 Business Premium (previously called Microsoft 365 Business)."
 ---
 
 # Sign up for Microsoft 365 Business Premium subscription
+
+## Watch: Sign up for Microsoft 365 Business Premium
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3znhX?autoplay=false]
 

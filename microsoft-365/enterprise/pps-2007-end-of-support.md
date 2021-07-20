@@ -52,14 +52,14 @@ There have been lots of changes to Microsoft BI applications since 2007, and you
   
 |**If you were using this ...**|**Explore these options ...**|**And keep this in mind ...**|
 |:-----|:-----|:-----|
-| PerformancePoint Server 2007 Monitoring &amp; Analytics capabilities, including:<br/>- PerformancePoint Monitoring Server <br/>- PerformancePoint Dashboard Designer<br/>- Dashboard Viewer for SharePoint Services (used for rendering PerformancePoint dashboards, scorecards, and reports)<br/> |**Excel with Excel in a browser** (in the cloud or on-premises). For an overview, see [BI capabilities in Excel and Microsoft 365](https://support.office.com/article/26c0548e-124c-4fd3-aab3-5f64568cb743.aspx).<br/><br/> **Power BI** (in the cloud or on-premises). For an overview, see [What is Power BI?](https://go.microsoft.com/fwlink/?linkid=841341) <br/><br/> **SQL Server Reporting Services** (on-premises). For an overview, see [SQL Server Reporting Services (SSRS): Create, deploy, and manage mobile and paginated reports](https://go.microsoft.com/fwlink/?linkid=841342). <br/><br/> **PerformancePoint Services** (on-premises). For an overview, see [What's new for PerformancePoint Services (SharePoint Server 2010)](https://go.microsoft.com/fwlink/?linkid=841343). <br/> |Excel is available as an online (cloud-based) or on-premises solution. Many reporting and dashboard needs can be met with Excel.  <br/><br/> Power BI is available as an online or on-premises solution. Power BI isn't included in Microsoft 365. But you can start using Power BI for free. Later, depending on your data usage and business needs, you can upgrade to Power BI Pro with Microsoft 365 E5.<br/> <br/> Reporting Services and PerformancePoint Services are both on-premises solutions. <br/><br/> PerformancePoint Services is available in SharePoint Server 2010, SharePoint Server 2013, and SharePoint Server 2016. <br/> <br/> Some features and report types that were available in PerformancePoint Server 2007 aren't available in Excel, Power BI, Reporting Services, or PerformancePoint Services. Review the available features to determine the best solution for your business needs. <br/> |
+| PerformancePoint Server 2007 Monitoring &amp; Analytics capabilities, including:<br/>- PerformancePoint Monitoring Server <br/>- PerformancePoint Dashboard Designer<br/>- Dashboard Viewer for SharePoint Services (used for rendering PerformancePoint dashboards, scorecards, and reports)<br/> |**Excel with Excel in a browser** (in the cloud or on-premises). For an overview, see [BI capabilities in Excel and Microsoft 365](https://support.office.com/article/26c0548e-124c-4fd3-aab3-5f64568cb743.aspx).<br/><br/> **Power BI** (in the cloud or on-premises). For an overview, see [What is Power BI?](https://go.microsoft.com/fwlink/?linkid=841341) <br/><br/> **SQL Server Reporting Services** (on-premises). For an overview, see [SQL Server Reporting Services (SSRS): Create, deploy, and manage mobile and paginated reports](/sql/reporting-services/create-deploy-and-manage-mobile-and-paginated-reports). <br/><br/> **PerformancePoint Services** (on-premises). For an overview, see [What's new for PerformancePoint Services (SharePoint Server 2010)](/previous-versions/office/sharepoint-server-2010/ee661741(v=office.14)). <br/> |Excel is available as an online (cloud-based) or on-premises solution. Many reporting and dashboard needs can be met with Excel.  <br/><br/> Power BI is available as an online or on-premises solution. Power BI isn't included in Microsoft 365. But you can start using Power BI for free. Later, depending on your data usage and business needs, you can upgrade to Power BI Pro with Microsoft 365 E5.<br/> <br/> Reporting Services and PerformancePoint Services are both on-premises solutions. <br/><br/> PerformancePoint Services is available in SharePoint Server 2010, SharePoint Server 2013, and SharePoint Server 2016. <br/> <br/> Some features and report types that were available in PerformancePoint Server 2007 aren't available in Excel, Power BI, Reporting Services, or PerformancePoint Services. Review the available features to determine the best solution for your business needs. <br/> |
 | ProClarity software, including:<br/>- ProClarity Desktop Professional<br/> - ProClarity Analytics Server<br/>- ProClarity SharePoint Viewer<br/> |**Work with a Microsoft partner** to identify a solution that best meets your needs. Visit the [Microsoft Partner Center](https://go.microsoft.com/fwlink/?linkid=841249). <br/><br/> You can also consider using Excel with Excel in a browser, Power BI, SQL Server Reporting Services, or PerformancePoint Services.  <br/> |Several but not all features of ProClarity software are available in other Microsoft offerings, including Excel, Power BI, Reporting Services, and PerformancePoint Services.  <br/> |
 |SharePoint Server 2007 KPIs (also called MOSS KPIs)  <br/> |**Excel with Excel Services**. For an overview, see [Business intelligence in Excel and Excel Services (SharePoint Server 2013)](https://support.office.com/article/2740f10c-579d-4b40-a1d9-7beb5d38547c.aspx). <br/> |MOSS KPIs that were created using SharePoint Server 2007 can be used in SharePoint Server 2010, SharePoint Server 2013, and SharePoint Server 2016. But you can't create new MOSS KPIs.  <br/> |
 |Excel 2007  <br/> |**Excel** (in the cloud or on-premises). For an overview, see [BI capabilities in Excel and Office 365](https://support.office.com/article/26c0548e-124c-4fd3-aab3-5f64568cb743.aspx). <br/><br/> **Power BI** (in the cloud or on-premises). For an overview, see [What is Power BI?](https://go.microsoft.com/fwlink/?linkid=841341) <br/> |Both Excel and Power BI offer your organization cloud-based and on-premises solutions, with support for a wide variety of data sources.  <br/> |
    
 ### Help selecting a solution
 
-With so many BI choices available, it might seem overwhelming to determine which option is best. We have an online guide available to help. See [Choosing Microsoft Business Intelligence (BI) tools for analysis and reporting](https://go.microsoft.com/fwlink/?linkid=839877).
+With so many BI choices available, it might seem overwhelming to determine which option is best. We have an online guide available to help. See [Choosing Microsoft Business Intelligence (BI) tools for analysis and reporting](/sql/reporting-services/choosing-microsoft-business-intelligence-bi-tools-for-analysis-and-reporting).
   
 ### What if I don't upgrade now?
 
@@ -106,7 +106,7 @@ You can configure PerformancePoint Services in your new version of SharePoint Se
   
 To learn more about your SharePoint upgrade options, see [SharePoint Server 2007 end of support Roadmap](sharepoint-2007-end-of-support.md).
   
-To learn more about Excel Services, see [Excel Services overview (SharePoint Server 2010)](https://go.microsoft.com/fwlink/?linkid=841362).
+To learn more about Excel Services, see [Excel Services overview (SharePoint Server 2010)](/previous-versions/office/sharepoint-server-2010/ee424405(v=office.14)).
   
 ### Use Power BI (in the cloud or on-premises)
 
@@ -116,7 +116,7 @@ Power BI isn't part of Microsoft 365 or SharePoint Server. It's a separate offer
   
 ### Use Reporting Services (on-premises)
 
-SQL Server Reporting Services provides a robust reporting solution. You can configure Reporting Services in either native mode or SharePoint-integrated mode. You can use several different tools to author reports, including Report Designer, Report Builder, and Power View. With the latest release of SQL Server, you can also use SQL Server Mobile Report Publisher to deliver reports that scale to any screen size. This lets viewers consume reports on their mobile devices. To learn more, see [SQL Server Reporting Services (SSRS): Create, deploy, and manage mobile and paginated reports](https://go.microsoft.com/fwlink/?linkid=841342).
+SQL Server Reporting Services provides a robust reporting solution. You can configure Reporting Services in either native mode or SharePoint-integrated mode. You can use several different tools to author reports, including Report Designer, Report Builder, and Power View. With the latest release of SQL Server, you can also use SQL Server Mobile Report Publisher to deliver reports that scale to any screen size. This lets viewers consume reports on their mobile devices. To learn more, see [SQL Server Reporting Services (SSRS): Create, deploy, and manage mobile and paginated reports](/sql/reporting-services/create-deploy-and-manage-mobile-and-paginated-reports).
   
 ### Use PerformancePoint Services (on-premises)
 
@@ -124,7 +124,7 @@ PerformancePoint Server 2007 was sold separately from SharePoint Server 2007. Be
   
 To move from PerformancePoint Server 2007 to PerformancePoint Services, you move to a more recent version of SharePoint Server and configure PerformancePoint Services. The version of SharePoint Server that you move to determines whether you can import your existing dashboard content from PerformancePoint Server 2007 to PerformancePoint Services.
   
-- If you upgrade to SharePoint Server 2010, you can import your PerformancePoint dashboard content from PerformancePoint Server 2007 to PerformancePoint Services in SharePoint Server 2010. To learn more, see [Import Wizard: PerformancePoint Server 2007 content to SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=838873).
+- If you upgrade to SharePoint Server 2010, you can import your PerformancePoint dashboard content from PerformancePoint Server 2007 to PerformancePoint Services in SharePoint Server 2010. To learn more, see [Import Wizard: PerformancePoint Server 2007 content to SharePoint Server 2010](/previous-versions/office/sharepoint-server-2010/ee681485(v=office.14)).
     
 - If you move to SharePoint Server 2013 or SharePoint Server 2016, you'll most likely need to create new dashboard content (data sources, reports, scorecards, and dashboard pages).
     
@@ -134,13 +134,13 @@ To get started on your PerformancePoint Services upgrade plan, see the following
     
 - When you know which version of SharePoint you're moving to, see the corresponding article for PerformancePoint Services:
     
-  - [Plan for PerformancePoint Services (SharePoint Server 2010)](https://go.microsoft.com/fwlink/?linkid=841363)
+  - [Plan for PerformancePoint Services (SharePoint Server 2010)](/previous-versions/office/sharepoint-server-2010/ee681486(v=office.14))
     
-  - [PerformancePoint Services in SharePoint Server 2013 overview](https://go.microsoft.com/fwlink/?linkid=841551)
+  - [PerformancePoint Services in SharePoint Server 2013 overview](/sharepoint/administration/performancepoint-services-overview)
     
-  - [PerformancePoint Services in SharePoint Server 2016 overview](https://go.microsoft.com/fwlink/?linkid=874704)
+  - [PerformancePoint Services in SharePoint Server 2016 overview](/sharepoint/administration/performancepoint-services-overview)
     
-When you upgrade to PerformancePoint Services, you get several new features and enhancements. PerformancePoint Services offers improved scorecards; new visualizations, such as the Decomposition Tree and KPI Details report; more chart types; better Time Intelligence filtering capabilities; and improved accessibility compliance. To learn more, see [What's new for PerformancePoint Services (SharePoint Server 2010)](https://go.microsoft.com/fwlink/?linkid=841343).
+When you upgrade to PerformancePoint Services, you get several new features and enhancements. PerformancePoint Services offers improved scorecards; new visualizations, such as the Decomposition Tree and KPI Details report; more chart types; better Time Intelligence filtering capabilities; and improved accessibility compliance. To learn more, see [What's new for PerformancePoint Services (SharePoint Server 2010)](/previous-versions/office/sharepoint-server-2010/ee661741(v=office.14)).
   
 ## Where can I get help with my upgrade?
 

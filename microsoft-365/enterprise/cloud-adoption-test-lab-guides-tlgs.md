@@ -48,6 +48,6 @@ For additional TLGs that apply to both Office 365 and Microsoft 365, go to [Test
     
 ## Related topics
 
-[Microsoft 365 solution and architecture center](../solutions/solution-architecture-center.md)
+[Microsoft 365 solution and architecture center](../solutions/index.yml)
   
 [Hybrid solutions](hybrid-solutions.md)

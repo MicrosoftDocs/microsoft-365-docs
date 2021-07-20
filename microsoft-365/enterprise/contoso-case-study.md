@@ -73,7 +73,7 @@ See these additional IT scenarios and configurations:
 
   To create a secure collaboration environment for a top-secret project, Contoso used a team with security isolation.
 
-- [Teams voice migration](https://docs.microsoft.com/MicrosoftTeams/voice-case-study-overview)
+- [Teams voice migration](/MicrosoftTeams/voice-case-study-overview)
 
   Learn how Contoso migrated their on-premises users to Microsoft Teams for unified communication, collaboration, and voice.
 

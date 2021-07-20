@@ -1,12 +1,16 @@
 ---
 title: Register existing devices yourself
 description: Register reused devices you might already have yourself so they can be managed by Microsoft Managed Desktop
-ms.prod: w10
+ms.service: m365-md
 author: jaimeo
 f1.keywords:
 - NOCSH
 ms.author: jaimeo
-ms.localizationpriority: medium
+ms.localizationpriority: normal
+ms.collection: M365-modern-desktop
+manager: laurawi
+ms.topic: article
+audience: Admin
 ---
 
 # Register existing devices yourself
@@ -67,12 +71,12 @@ In an Active Directory environment, you can use the `Get-WindowsAutoPilotInfo` P
 - Make sure that Windows Firewall allows access to WMI. To do that, follow these steps:
 
     1. Open the **Windows Defender Firewall** control panel and select **Allow an app or feature through Windows Defender Firewall**.
-    
+
     2. Find **Windows Management Instrumentation (WMI)** in the list, enable for both **Private and Public**, and then select **OK**.
 
-1.	Open a PowerShell prompt with administrative rights.
+1. Open a PowerShell prompt with administrative rights.
 
-2.	Run *either one* of these scripts:
+2. Run *either one* of these scripts:
 
     ```powershell
     Install-script -name Get-WindowsAutoPilotInfo 
@@ -94,9 +98,9 @@ Now you can proceed to [register devices](#register-devices-by-using-the-admin-p
 
 #### Manual PowerShell script method
 
-1.	Open a PowerShell prompt with administrative rights.
-2.	Run `Install-Script -Name Get-WindowsAutoPilotInfo`
-3.	Run `powershell -ExecutionPolicy Unrestricted Get-WindowsAutoPilotInfo -OutputFile <path>\hardwarehash.csv`
+1. Open a PowerShell prompt with administrative rights.
+2. Run `Install-Script -Name Get-WindowsAutoPilotInfo`
+3. Run `powershell -ExecutionPolicy Unrestricted Get-WindowsAutoPilotInfo -OutputFile <path>\hardwarehash.csv`
 4. [Merge the hash data.](#merge-hash-data)
 
 #### Flash drive method
@@ -112,10 +116,8 @@ Now you can proceed to [register devices](#register-devices-by-using-the-admin-p
 9. Remove the USB drive, and then shut down the device by running `shutdown -s -t 0`
 10. [Merge the hash data.](#merge-hash-data)
 
->[!IMPORTANT]
->Do not power on the device you are registering again until you've completed registration for it. 
-
-
+> [!IMPORTANT]
+> Do not power on the device you are registering again until you've completed registration for it. 
 
 ### Merge hash data
 
@@ -127,23 +129,22 @@ Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformatio
 
 With the hash data merged into one CSV file, you can now proceed to [register the devices](#register-devices-by-using-the-admin-portal).
 
-
-#### Register devices by using the Admin Portal
+## Register devices by using the Admin Portal
 
 In [Microsoft Endpoint Manager](https://endpoint.microsoft.com/), select **Devices** in the left navigation pane. Look for the Microsoft Managed Desktop section of the menu and select **Devices**. In the Microsoft Managed Desktop Devices workspace, Select **+ Register devices**, which opens a fly-in to register new devices.
 
 <!-- Update with new picture [![Fly-in after selecting Register devices, listing devices with columns for assigned users, serial number, status, last-seen date, and age](../../media/new-registration-ui.png)](../../media/new-registration-ui.png) -->
 
-
 <!--Registering any existing devices with Managed Desktop will completely re-image them; make sure you've backed up any important data prior to starting the registration process.-->
-
 
 Follow these steps:
 
 1. In **File upload**, provide a path to the CSV file you created previously.
+2. Select a [device profile](../service-description/profiles.md) in the drop-down menu.
+3. Select **Register devices**. The system will add the devices to your list of devices on the **Devices blade**, marked as **Registration Pending**. Registration typically takes less than 10 minutes, and when successful the device will show as **Ready for user** meaning it's ready and waiting for a user to start using.
 
-1. Select **Register devices**. The system will add the devices to your list of devices on the **Devices blade**, marked as **Registration Pending**. Registration typically takes less than 10 minutes, and when successful the device will show as **Ready for user** meaning it's ready and waiting for a user to start using.
-
+> [!NOTE]
+> If you manually change the Azure Active Directory (AAD) group membership of a device, it will be automatically reassigned to the group for its device profile and removed from any conflicting groups.
 
 You can monitor the progress of device registration on the main page. Possible states reported there include:
 
@@ -155,7 +156,7 @@ You can monitor the progress of device registration on the main page. Possible s
 | Active | The device has been delivered to the user and they have registered with your tenant. This also indicates that they are regularly using the device. |
 | Inactive | The device has been delivered to the user and they have registered with your tenant. However, they have not used the device recently (in the last 7 days).  | 
 
-#### Troubleshooting device registration
+### Troubleshooting device registration
 
 | Error message | Details |
 |---------------|-------------|
@@ -165,24 +166,15 @@ You can monitor the progress of device registration on the main page. Possible s
 | Device claimed by another organization | This device has already been claimed by another organization. Check with your device supplier. |
 | Unexpected error | Your request could not be automatically processed. Contact Support and provide the Request ID: <requestId> |
 
-### Check the image
+## Check the image
 
 If your device has come from a Microsoft Managed Desktop partner supplier, the image should be correct.
 
 You’re also welcome to apply the image on your own if you prefer. To get started, contact the Microsoft representative you’re working with and they will provide you the location and steps for applying the image.
 
-### Deliver the device
+## Deliver the device
 
 > [!IMPORTANT]
 > Before you hand off the device to your user, make sure you have obtained and applied the [appropriate licenses](../get-ready/prerequisites.md) for that user.
 
 If all the licenses are applied, you can [get your users ready to use devices](get-started-devices.md), and then your user can start up the device and proceed through the Windows setup experience.
-
-
-
-
-
-
-
-
-

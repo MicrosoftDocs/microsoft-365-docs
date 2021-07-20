@@ -41,7 +41,7 @@ First, you need to fill out the **Virtual machine name** column of Table M and m
    
  **Table M - Virtual machines for the high availability federated authentication for Microsoft 365 in Azure**
   
-For the complete list of virtual machine sizes, see [Sizes for virtual machines](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-windows-sizes).
+For the complete list of virtual machine sizes, see [Sizes for virtual machines](/azure/virtual-machines/virtual-machines-windows-sizes).
   
 The following Azure PowerShell command block creates the virtual machines for the two domain controllers. Specify the values for the variables, removing the \< and > characters. Note that this Azure PowerShell command block uses values from the following tables:
   
@@ -60,7 +60,7 @@ The following Azure PowerShell command block creates the virtual machines for th
 Recall that you defined Tables R, V, S, I, and A in [Phase 1: Configure Azure](high-availability-federated-authentication-phase-1-configure-azure.md).
   
 > [!NOTE]
-> The following command sets use the latest version of Azure PowerShell. See [Get started with Azure PowerShell](https://docs.microsoft.com/powershell/azure/get-started-azureps). 
+> The following command sets use the latest version of Azure PowerShell. See [Get started with Azure PowerShell](/powershell/azure/get-started-azureps). 
   
 When you have supplied all the correct values, run the resulting block at the Azure PowerShell prompt or in the PowerShell Integrated Script Environment (ISE) on your local computer.
   
@@ -252,6 +252,4 @@ Use [Phase 3: Configure AD FS servers](high-availability-federated-authenticatio
   
 [Federated identity for your Microsoft 365 dev/test environment](federated-identity-for-your-microsoft-365-dev-test-environment.md)
   
-[Microsoft 365 solution and architecture center](../solutions/solution-architecture-center.md)
-
-
+[Microsoft 365 solution and architecture center](../solutions/index.yml)

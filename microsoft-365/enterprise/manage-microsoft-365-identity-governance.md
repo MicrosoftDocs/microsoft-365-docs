@@ -28,7 +28,7 @@ description: "Learn about how to use Microsoft 365 identity governance features.
 
 Identity governance is all about protecting, monitoring, and auditing access to critical assets while ensuring employee productivity. For example, with identity governance, you can ensure that the right users have the right access to the right resources and determine if that access changes over time.
 
-For more information, See this [overview of identity governance for Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/governance/identity-governance-overview).
+For more information, See this [overview of identity governance for Azure Active Directory (Azure AD)](/azure/active-directory/governance/identity-governance-overview).
 
 ## Set up Azure AD access reviews
 
@@ -40,13 +40,13 @@ Azure AD access reviews allow you to review a user's access to ensure only the r
 
 This is especially important if your organization is subject to security audits to determine if user accounts have too much access, which could result in fines if in violation of industry or regional regulations.
 
-For more information, see the [overview of access reviews](https://docs.microsoft.com/azure/active-directory/governance/access-reviews-overview).
+For more information, see the [overview of access reviews](/azure/active-directory/governance/access-reviews-overview).
 
 See these articles to configure different types of access reviews:
 
-- [Groups and apps](https://docs.microsoft.com/azure/active-directory/governance/create-access-review)
-- [Azure AD roles](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-how-to-start-security-review?toc=%2fazure%2factive-directory%2fgovernance%2ftoc.json)
-- [Azure resource roles](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-resource-roles-start-access-review?toc=%2fazure%2factive-directory%2fgovernance%2ftoc.json)
+- [Groups and apps](/azure/active-directory/governance/create-access-review)
+- [Azure AD roles](/azure/active-directory/privileged-identity-management/pim-how-to-start-security-review?toc=%2fazure%2factive-directory%2fgovernance%2ftoc.json)
+- [Azure resource roles](/azure/active-directory/privileged-identity-management/pim-resource-roles-start-access-review?toc=%2fazure%2factive-directory%2fgovernance%2ftoc.json)
 
 ## Set up Azure AD entitlement management
 
@@ -56,4 +56,4 @@ Your employees need access to various groups, applications, and sites to perform
 
 Azure AD entitlement management can help you more efficiently manage access to groups, applications, and SharePoint sites for internal and outside users.
  
-For more information, see the [overview of Azure AD entitlement management](https://docs.microsoft.com/azure/active-directory/governance/entitlement-management-overview).
+For more information, see the [overview of Azure AD entitlement management](/azure/active-directory/governance/entitlement-management-overview).

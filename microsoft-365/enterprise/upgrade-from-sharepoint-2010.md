@@ -78,7 +78,7 @@ SharePoint Server 2013 and SharePoint Foundation 2013 can be installed on-premis
 
 - Do both of the above.
 
-- Implement a [SharePoint hybrid](https://docs.microsoft.com/sharepoint/hybrid/hybrid) solution.
+- Implement a [SharePoint hybrid](/sharepoint/hybrid/hybrid) solution.
 
 Consider the hidden costs of maintaining a server farm, including maintaining or migrating customizations and upgrading hardware. If you've accounted for these factors, it will be easier to upgrade on-premises. If you run your farm on legacy SharePoint Servers without heavy customization, you could benefit from a planned migration to SharePoint Online. For an on-premises SharePoint Server environment, you can also consider moving some data in SharePoint Online to reduce hardware management overhead.
 
@@ -92,11 +92,11 @@ Consider the hidden costs of maintaining a server farm, including maintaining or
 |One-time cost in migration|One-time cost repeated per future migration|
 |Low total cost of ownership/maintenance|High total cost of ownership/maintenance|
 
-A one-time move to Microsoft 365 will have a higher cost while you organize data and decide what to take to the cloud and what to leave behind. But after your data is migrated, future upgrades will be automatic, as you'll no longer need to manage hardware and software updates. And the up time of your farm will be backed by a [Microsoft service level agreement (SLA)](https://go.microsoft.com/fwlink/?linkid=843153).
+A one-time move to Microsoft 365 will have a higher cost while you organize data and decide what to take to the cloud and what to leave behind. But after your data is migrated, future upgrades will be automatic, as you'll no longer need to manage hardware and software updates. And the up time of your farm will be backed by a [Microsoft service level agreement (SLA)](/office365/servicedescriptions/office-365-platform-service-description/service-level-agreement).
 
 ### Migrate to SharePoint Online
 
-Make sure SharePoint Online offers all the features you need. See [SharePoint service description](https://docs.microsoft.com/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-service-description).
+Make sure SharePoint Online offers all the features you need. See [SharePoint service description](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-service-description).
 
 You can't migrate directly from SharePoint Server 2010 (or SharePoint Foundation 2010) to SharePoint Online. So much of the migration work is manual. But this stage gives you the opportunity to prune data and sites that are no longer needed before the move. You can archive other data into storage. 
 
@@ -109,9 +109,9 @@ If you upgrade to SharePoint Server 2013 or SharePoint Server 2016 and decide to
 |Microsoft supplies SPO hardware and all hardware administration.|Available features may differ between SharePoint Server on-premises and SPO.|
 |You're the global administrator of your subscription and can assign administrators to SPO sites.|Some actions available to a farm administrator in SharePoint Server on-premises don't exist (or aren't necessary) in the SharePoint Administrator role in Microsoft 365. But SharePoint Administration, Site Collection Administration, and Site Ownership are local to your org.|
 |Microsoft applies patches, fixes, and updates to underlying hardware and software, including SQL servers on which SharePoint Online runs.|Because there's no access to the underlying file system in the service, customization is limited.|
-|Microsoft publishes [service level agreements](https://go.microsoft.com/fwlink/?linkid=843153) and moves quickly to resolve service-level incidents.|Backup and restore and other recovery options are automated by the service in SharePoint Online. Backups are overwritten if not used.|
+|Microsoft publishes [service level agreements](/office365/servicedescriptions/office-365-platform-service-description/service-level-agreement) and moves quickly to resolve service-level incidents.|Backup and restore and other recovery options are automated by the service in SharePoint Online. Backups are overwritten if not used.|
 |Security testing and server performance tuning are carried out continuously in the service by Microsoft.|Changes to the user interface and other SharePoint features are installed by the service and may need to be toggled on or off.|
-|Microsoft 365 meets many industry standards: [Microsoft compliance offerings](https://go.microsoft.com/fwlink/?linkid=843165).|[FastTrack](https://go.microsoft.com/fwlink/?linkid=518597) assistance for migration is limited.  <br/> Much of the upgrade will be manual or via the SPO Migration API described in the [SharePoint Online and OneDrive Migration Content Roadmap](https://go.microsoft.com/fwlink/?linkid=843184).|
+|Microsoft 365 meets many industry standards: [Microsoft compliance offerings](/compliance/regulatory/offering-home).|[FastTrack](https://go.microsoft.com/fwlink/?linkid=518597) assistance for migration is limited.  <br/> Much of the upgrade will be manual or via the SPO Migration API described in the [SharePoint Online and OneDrive Migration Content Roadmap](/sharepointmigration/upload-on-premises-content-to-sharepoint-online-using-powershell-cmdlets).|
 |Microsoft Support engineers and datacenter employees don't have unrestricted admin access to your subscription.|There can be additional costs if hardware infrastructure needs to be upgraded to support the newer version of SharePoint or if a secondary farm is required for upgrade.|
 |Solution providers can help with the one-time job of migrating your data to SharePoint Online.|Not all changes to SharePoint Online are within your control. After migration, design differences in menus, libraries, and other features may temporarily affect usability.|
 |Online products are updated automatically across the service. Features may deprecate, but there's no true end of support lifecycle.|There's an end-of-support lifecycle for SharePoint Server or SharePoint Foundation as well as underlying SQL servers.|
@@ -131,23 +131,23 @@ It will take time and planning to follow the entire path from SharePoint 2010 to
 
 Remember to review the *supported and unsupported upgrade paths*:
 
-- [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843156)
+- [SharePoint Server 2010](/previous-versions/office/sharepoint-2007-products-and-technologies/cc262747(v=office.12))
 
-- [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843157)
+- [SharePoint Server 2013](/SharePoint/upgrade-and-update/review-supported-editions-and-products-for-upgrading-to-sharepoint-2013)
 
 If you have *customizations*, it's critical that you plan for each step in the migration path:
 
-- [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843160)
+- [SharePoint Server 2010](/previous-versions/office/sharepoint-server-2010/cc263203(v=office.14))
 
-- [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843162)
+- [SharePoint Server 2013](/SharePoint/upgrade-and-update/create-a-communication-plan-for-the-upgrade-to-sharepoint-2013)
 
 |On-premises advantage|On-premises disadvantage|
 |---|---|
 |Full control of all aspects of your SharePoint Farm (and its SQL), from the server hardware up.|All breaks and fixes are the responsibility of your company. But you can engage paid Microsoft Support if your product isn't past end of support.|
 |Full feature set of SharePoint Server on-premises with the option to connect your on-premises farm to a SharePoint Online subscription via hybrid.|Upgrade, patches, security fixes, hardware upgrades, and all maintenance of SharePoint Server and its SQL farm are managed on-premises.|
-|Full access for greater customization options than with SharePoint Online.|[Microsoft compliance offerings](https://go.microsoft.com/fwlink/?linkid=843165) must be manually configured on-premises.|
+|Full access for greater customization options than with SharePoint Online.|[Microsoft compliance offerings](/compliance/regulatory/offering-home) must be manually configured on-premises.|
 |Security testing and server performance tuning are carried out on your premises under your control.|Microsoft 365 may make features available to SharePoint Online that don't interoperate with SharePoint Server on-premise.|
-|Solution providers can help migrate data to the next version of SharePoint Server (and beyond).|Your SharePoint Server sites will not automatically use [SSL/TLS](https://go.microsoft.com/fwlink/?linkid=843167) certificates as is seen in SharePoint Online.|
+|Solution providers can help migrate data to the next version of SharePoint Server (and beyond).|Your SharePoint Server sites will not automatically use [SSL/TLS](/SharePoint/security-for-sharepoint-server/enable-tls-1-1-and-tls-1-2-support-in-sharepoint-server-2016) certificates as is seen in SharePoint Online.|
 |Full control of naming conventions and backup and restore and other recovery options in SharePoint Server on-premises.|SharePoint Server on-premises is sensitive to product lifecycles.|
 
 ### Upgrade resources
@@ -158,15 +158,15 @@ You may decide to move some of your sites to the "evergreen" hardware of SharePo
 
 - *Hardware/software requirements for:*
 
-    [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843204) | [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843206) | [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843207)
+    [SharePoint Server 2010](/previous-versions/office/sharepoint-server-2010/cc262485(v=office.14)) | [SharePoint Server 2013](/SharePoint/install/hardware-and-software-requirements-0) | [SharePoint Server 2016](/SharePoint/install/hardware-and-software-requirements)
 
 - *Software boundaries and limits for:*
 
-    [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843247) | [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843248) | [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843249)
+    [SharePoint Server 2010](/previous-versions/office/sharepoint-server-2010/cc262787(v=office.14)) | [SharePoint Server 2013](/SharePoint/install/software-boundaries-and-limits) | [SharePoint Server 2016](/SharePoint/install/software-boundaries-and-limits-0)
 
 - *The upgrade process overview for:*
 
-    [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843251) | [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843252) | [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843359)
+    [SharePoint Server 2010](/previous-versions/office/sharepoint-server-2010/cc303420(v=office.14)) | [SharePoint Server 2013](/SharePoint/upgrade-and-update/upgrade-to-sharepoint-server-2016) | [SharePoint Server 2016](/SharePoint/upgrade-and-update/upgrade-to-sharepoint-server-2016)
 
 ### Create a hybrid solution with SharePoint Online and SharePoint Server on-premises
 
@@ -178,7 +178,7 @@ Be sure to familiarize yourself with the existing types of hybrids and how to co
 
 |Option|Description|
 |---|---|
-|[Microsoft compliance offerings](https://go.microsoft.com/fwlink/?linkid=843165).|[FastTrack](https://www.microsoft.com/fasttrack/microsoft-365) assistance for migration is limited.<br/><br/> Much of the upgrade will be manual or via the SPO Migration API described in the [SharePoint Online and OneDrive Migration Content Roadmap](https://go.microsoft.com/fwlink/?linkid=843184).|
+|[Microsoft compliance offerings](/compliance/regulatory/offering-home).|[FastTrack](https://www.microsoft.com/fasttrack/microsoft-365) assistance for migration is limited.<br/><br/> Much of the upgrade will be manual or via the SPO Migration API described in the [SharePoint Online and OneDrive Migration Content Roadmap](/sharepointmigration/upload-on-premises-content-to-sharepoint-online-using-powershell-cmdlets).|
 |Microsoft Support engineers and datacenter employees don't have unrestricted admin access to your subscription.|There may be additional costs if hardware infrastructure needs to be upgraded to support the newer version of SharePoint, or if a secondary farm is required.|
 |Partners can assist with the one-time job of migrating your data to SharePoint Online.||
 |Online products are updated automatically across the service. Features may deprecate, but there's no true end of support.||
@@ -200,27 +200,27 @@ Make sure to clean your environment prior to upgrade. Be certain your existing f
 
 Remember to review the *supported and unsupported upgrade paths*:
 
-- [SharePoint Server 2007](https://go.microsoft.com/fwlink/?linkid=843156)
+- [SharePoint Server 2007](/previous-versions/office/sharepoint-2007-products-and-technologies/cc262747(v=office.12))
 
-- [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843156)
+- [SharePoint Server 2010](/previous-versions/office/sharepoint-2007-products-and-technologies/cc262747(v=office.12))
 
-- [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843157)
+- [SharePoint Server 2013](/SharePoint/upgrade-and-update/review-supported-editions-and-products-for-upgrading-to-sharepoint-2013)
 
 If you have *customizations*, it's critical to plan your upgrade for each step in the migration path:
 
-- [SharePoint 2007](https://go.microsoft.com/fwlink/?linkid=843158)
+- [SharePoint 2007](/previous-versions/office/sharepoint-2007-products-and-technologies/cc263203(v=office.12))
 
-- [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843160)
+- [SharePoint Server 2010](/previous-versions/office/sharepoint-server-2010/cc263203(v=office.14))
 
-- [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843162)
+- [SharePoint Server 2013](/SharePoint/upgrade-and-update/create-a-communication-plan-for-the-upgrade-to-sharepoint-2013)
 
 |On-premises pro|On-premises con|
 |---|---|
 |Full control of all aspects of your SharePoint Farm, from the server hardware up.|All breaks and fixes are the responsibility of your company. (But you can engage paid Microsoft Support if your product isn't past end of support.)|
 |Full feature set of SharePoint Server on-premises with the option to connect your on-premises farm to a SharePoint Online subscription via hybrid.|Upgrade, patches, security fixes, and all maintenance of SharePoint Server managed on-premises.|
-|Full access for greater customization.|[Microsoft compliance offerings](https://go.microsoft.com/fwlink/?linkid=843165) must be manually configured on-premises.|
+|Full access for greater customization.|[Microsoft compliance offerings](/compliance/regulatory/offering-home) must be manually configured on-premises.|
 |Security testing and server performance tuning is carried out on your premises under your control.|Microsoft 365 may make features available to SharePoint Online that don't interoperate with SharePoint Server on-premises.|
-|Partners can help migrate data to the next version of SharePoint Server (and beyond).|Your SharePoint Server sites will not automatically use [SSL/TLS](https://go.microsoft.com/fwlink/?linkid=843167) certificates as is seen in SharePoint Online.|
+|Partners can help migrate data to the next version of SharePoint Server (and beyond).|Your SharePoint Server sites will not automatically use [SSL/TLS](/SharePoint/security-for-sharepoint-server/enable-tls-1-1-and-tls-1-2-support-in-sharepoint-server-2016) certificates as is seen in SharePoint Online.|
 |Full control of naming conventions and backup and restore and other recovery options in SharePoint Server on-premises.|SharePoint Server on-premises is sensitive to product lifecycles.|
 
 ### Upgrade resources
@@ -229,15 +229,15 @@ Begin by knowing that you meet hardware and software requirements, then follow s
 
 - *Hardware/software requirements for*:
 
-    [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843204) | [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843204) | [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843206) | [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843207)
+    [SharePoint Server 2010](/previous-versions/office/sharepoint-server-2010/cc262485(v=office.14)) | [SharePoint Server 2010](/previous-versions/office/sharepoint-server-2010/cc262485(v=office.14)) | [SharePoint Server 2013](/SharePoint/install/hardware-and-software-requirements-0) | [SharePoint Server 2016](/SharePoint/install/hardware-and-software-requirements)
 
 - *Software boundaries and limits for*:
 
-    [SharePoint Server 2007](https://go.microsoft.com/fwlink/?linkid=843245) | [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843247) | [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843248) | [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843249)
+    [SharePoint Server 2007](/previous-versions/office/sharepoint-2007-products-and-technologies/cc262787(v=office.12)) | [SharePoint Server 2010](/previous-versions/office/sharepoint-server-2010/cc262787(v=office.14)) | [SharePoint Server 2013](/SharePoint/install/software-boundaries-and-limits) | [SharePoint Server 2016](/SharePoint/install/software-boundaries-and-limits-0)
 
 - *The upgrade process overview for*:
 
-    [SharePoint Server 2007](https://go.microsoft.com/fwlink/?linkid=843250) | [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843251) | [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843252) | [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843359)
+    [SharePoint Server 2007](/previous-versions/office/sharepoint-2007-products-and-technologies/cc303420(v=office.12)) | [SharePoint Server 2010](/previous-versions/office/sharepoint-server-2010/cc303420(v=office.14)) | [SharePoint Server 2013](/SharePoint/upgrade-and-update/upgrade-to-sharepoint-server-2016) | [SharePoint Server 2016](/SharePoint/upgrade-and-update/upgrade-to-sharepoint-server-2016)
 
 ### Create a SharePoint hybrid solution between SharePoint Online and on-premises
 
@@ -264,14 +264,14 @@ You can also [download](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/
 
 [Resources to help you upgrade from Office 2007 or 2010 servers and clients](upgrade-from-office-2010-servers-and-products.md)
 
-[Overview of the upgrade process from SharePoint 2010 to SharePoint 2013](https://technet.microsoft.com/library/mt493301%28v=office.16%29.aspx)
+[Overview of the upgrade process from SharePoint 2010 to SharePoint 2013](/SharePoint/upgrade-and-update/overview-of-the-upgrade-process-from-sharepoint-2010-to-sharepoint-2013)
 
-[Best practices for upgrading from SharePoint 2010 to SharePoint 2013](https://technet.microsoft.com/library/mt493305%28v=office.16%29.aspx)
+[Best practices for upgrading from SharePoint 2010 to SharePoint 2013](/SharePoint/upgrade-and-update/best-practices-for-upgrading-from-sharepoint-2010-to-sharepoint-2013)
 
-[Troubleshoot database upgrade issues in SharePoint 2013](https://go.microsoft.com/fwlink/?linkid=843195)
+[Troubleshoot database upgrade issues in SharePoint 2013](/SharePoint/upgrade-and-update/troubleshoot-database-upgrade-issues-in-sharepoint-2013)
 
 [Search for Microsoft solution providers to help with your upgrade](https://go.microsoft.com/fwlink/?linkid=841249)
 
-[Updated Product Servicing Policy for SharePoint 2013](https://technet.microsoft.com/library/mt493253%28v=office.16%29.aspx)
+[Updated Product Servicing Policy for SharePoint 2013](/SharePoint/product-servicing-policy/updated-product-servicing-policy-for-sharepoint-2013)
 
-[Updated Product Servicing Policy for SharePoint Server 2016](https://technet.microsoft.com/library/mt782882%28v=office.16%29.aspx)
+[Updated Product Servicing Policy for SharePoint Server 2016](/SharePoint/product-servicing-policy/updated-product-servicing-policy-for-sharepoint-server-2016)

@@ -1,15 +1,14 @@
 ---
-title: "Turn on multi-factor authentication"
+title: "Turn on multifactor authentication"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
@@ -21,14 +20,16 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Learn how to turn on multi-factor authentication."
+description: "Learn how to turn on multifactor authentication, sometimes known as two-factor authentication."
 ---
 
-# Turn on multi-factor authentication
+# Turn on multifactor authentication
+
+## Watch: Turn on multifactor authentication
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2MuO3?autoplay=false]
 
-Multi-factor authentication means you and your employees must provide more than one way to sign in to Microsoft 365 is one of the easiest ways to secure your business.
+Multifactor authentication means you and your employees must provide more than one way to sign in to Microsoft 365 is one of the easiest ways to secure your business.
 
 ## Try it!
 

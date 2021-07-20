@@ -28,7 +28,7 @@ description: "Learn about how to manage Microsoft 365 user account passwords."
 
 *This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*
 
-You can manage Microsoft 365 user account passwords in several different ways, depending on your identity configuration. You can manage user accounts in the [Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/add-users/), in Active Directory Domain Services (AD DS), or in the Azure Active Directory (Azure AD) admin center.
+You can manage Microsoft 365 user account passwords in several different ways, depending on your identity configuration. You can manage user accounts in the [Microsoft 365 admin center](../admin/add-users/index.yml), in Active Directory Domain Services (AD DS), or in the Azure Active Directory (Azure AD) admin center.
 
 ## Plan for where and how you will manage your user account passwords
 
@@ -38,7 +38,7 @@ Where and how you can manage your user accounts depends on the identity model yo
 
 You manage user account passwords in:
 
-- [The Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/add-users/)
+- [The Microsoft 365 admin center](../admin/add-users/index.yml)
 - The Azure AD admin center
     
 ### Hybrid
@@ -59,13 +59,13 @@ To prevent users from creating an easily-determined password, use Azure AD passw
 - Company-specific internal terms
 - Abbreviations that have specific company meaning
 
-You can ban bad passwords [in the cloud](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad) and for your [on-premises AD DS](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad-on-premises).
+You can ban bad passwords [in the cloud](/azure/active-directory/authentication/concept-password-ban-bad) and for your [on-premises AD DS](/azure/active-directory/authentication/concept-password-ban-bad-on-premises).
 
 ## Simplify user sign-in
 
 Azure AD Seamless Single Sign-On (Azure AD Seamless SSO) works with PHS and Pass-Through Authentication (PTA), to allow your users to sign in to services that use Azure AD user accounts without having to type in their passwords, and in many cases, their usernames. This gives your users easier access to cloud-based applications, such as Office 365, without needing any additional on-premises components such as identity federation servers.
 
-You configure Azure AD Seamless SSO with the Azure AD Connect tool. See the [instructions to configure Azure AD Seamless SSO](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-sso-quick-start).
+You configure Azure AD Seamless SSO with the Azure AD Connect tool. See the [instructions to configure Azure AD Seamless SSO](/azure/active-directory/connect/active-directory-aadconnect-sso-quick-start).
 
 <a name="pw_writeback"></a>
 ## Simplify password updates to AD DS
@@ -74,15 +74,14 @@ With password writeback, you can allow users to reset their passwords through Az
 
 Password writeback is required to fully utilize Azure AD Identity Protection capabilities, such as requiring users to change their on-premises passwords when there has been a high risk of account compromise detected.
 
-For additional information and configuration instructions, see [Azure AD SSPR with password writeback](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-writeback).
+For additional information and configuration instructions, see [Azure AD SSPR with password writeback](/azure/active-directory/active-directory-passwords-writeback).
 
 >[!Note]
->Upgrade to the latest version of Azure AD Connect to ensure the best possible experience and new features as they are released. For more information, see [Custom installation of Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-get-started-custom).
+>Upgrade to the latest version of Azure AD Connect to ensure the best possible experience and new features as they are released. For more information, see [Custom installation of Azure AD Connect](/azure/active-directory/connect/active-directory-aadconnect-get-started-custom).
 >
 
 ## Simplify password resets
 
 Self-service password reset (SSPR) allows users to reset or unlock their passwords or accounts. To alert you to misuse or abuse, you can use the detailed reporting that tracks when users access the system, along with notifications. You must enable [password writeback](#pw_writeback) before you can deploy password resets.
 
-See the [instructions to roll out password reset](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-deployment).
-
+See the [instructions to roll out password reset](/azure/active-directory/authentication/howto-sspr-deployment).

@@ -22,18 +22,18 @@ ms.prod: m365-security
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender for Office 365 plan 1 and plan 2](office-365-atp.md)
-- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, the technical support resources listed in this article will help you find answers if you are having difficulty with EOP. Microsoft provides help for EOP in a variety of places and methods including self-support and assisted-support.
 
 ## Self-support options
 
-Upon logging in, the Microsoft 365 admin center provides information about the status of your organization's services. Also, the service health section shows the current status of your services, details about disruptions and outages, and lists planned maintenance times. The Microsoft 365 admin center also provides information about known issues and expected resolutions. If you're affected by a service-wide event, then you should see a communication alert (typically accompanied by a bell icon). We recommend that you read and act on any items as appropriate. For more information about the service health area, see [Service health and continuity](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity). You might be able to find more help on your own by using the tools, forums, and community sites listed here.
+Upon logging in, the Microsoft 365 admin center provides information about the status of your organization's services. Also, the service health section shows the current status of your services, details about disruptions and outages, and lists planned maintenance times. The Microsoft 365 admin center also provides information about known issues and expected resolutions. If you're affected by a service-wide event, then you should see a communication alert (typically accompanied by a bell icon). We recommend that you read and act on any items as appropriate. For more information about the service health area, see [Service health and continuity](/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity). You might be able to find more help on your own by using the tools, forums, and community sites listed here.
 
 [Product Overview for Exchange Online Protection](https://products.office.com/exchange/exchange-email-security-spam-protection)
 
-[Contact support for business products - Admin Help](../../admin/contact-support-for-business-products.md)
+[Contact support for business products - Admin Help](../../business-video/get-help-support.md)
 
 [Microsoft 365 community](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
 
@@ -89,4 +89,4 @@ Microsoft provides local or toll-free telephone numbers for product support arou
 
 ## For more information about EOP documentation
 
-[Accessibility in Exchange Online](https://docs.microsoft.com/Exchange/accessibility/accessibility)
+[Accessibility in Exchange Online](/Exchange/accessibility/accessibility)

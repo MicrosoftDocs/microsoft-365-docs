@@ -69,14 +69,14 @@ When you initiate the use of any of the above services, the computations needed 
 
 If a temporary transfer is required, we will always employ state of the art encryption in the transfer and we will always return your data to your chosen data storage location immediately thereafter. We rely on our compliance with European law through the Standard Contractual Clauses (SCCs) for these temporary transfers, along with our supplemental measures to ensure the data is protected. 
 
-To learn more, see [European Union Model Clauses](https://docs.microsoft.com/microsoft-365/compliance/offering-eu-model-clauses).
+To learn more, see [European Union Model Clauses](/compliance/regulatory/offering-EU-Model-Clauses).
 
 >[!Note]
 >Customer data for Sway and Workplace Analytics will be stored and computed in the United States if you elect to use these services.
 >
 
 >[!Note]
->Microsoft 365 services may query and store portions of tenant directory/identity data information in regions other than the EU where necessary to facilitate certain scenarios. For example, in scenarios of cross regional e-mail routing, call routing and authentication, Microsoft 365 systems may need some information about EU recipients to route these requests properly. Microsoft 365 systems also depend on Azure Active Directory for identity and authentication functions. To learn more, see  [Identity data storage for European customers in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-data-storage-eu).
+>Microsoft 365 services may query and store portions of tenant directory/identity data information in regions other than the EU where necessary to facilitate certain scenarios. For example, in scenarios of cross regional e-mail routing, call routing and authentication, Microsoft 365 systems may need some information about EU recipients to route these requests properly. Microsoft 365 systems also depend on Azure Active Directory for identity and authentication functions. To learn more, see  [Identity data storage for European customers in Azure Active Directory](/azure/active-directory/fundamentals/active-directory-data-storage-eu).
 >
 
 ## How Microsoft protects your data
@@ -87,7 +87,7 @@ Microsoft secures your data using multiple layers of security and encryption pro
 
 By default, Microsoft Managed Keys protect your customer data. Data that persists on any physical media is always encrypted using FIPS 140-2 compliant encryption protocols. You can also employ customer-managed keys (CMK), [double encryption](../compliance/double-key-encryption.md), and/or hardware security modules (HSMs) for increased data protection.
 
-All data traffic moving between datacenters is also protected using IEEE 802.1AE MAC Security Standards, preventing physical "man-in-the-middle" attacks.
+In addition, Microsoft by default uses the [Transport Layer Security (TLS)](https://wikipedia.org/wiki/Transport_Layer_Security) protocol to encrypt data when it’s traveling between the cloud services and customers. Microsoft Services negotiate a TLS connection with client systems that connect to Microsoft 365 services. 
 
 To prevent unauthorized physical access to datacenters, we employ rigorous operational controls and processes that include 24×7 video monitoring, trained security personnel and processes, and smart card or biometric multifactor access controls. Upon end of life, data disks are shredded and destroyed. If a disk drive used for storage suffers a hardware failure or reaches its end of life, it is securely erased or destroyed. The data on the drive is completely overwritten to ensure the data cannot be recovered by any means. When such devices are decommissioned, they are shredded and destroyed in line with NIST SP 800-88 R1, Guidelines for Media Sanitization. Records of the destruction are retained and reviewed as part of the Microsoft audit and compliance process. All Microsoft 365 services utilize approved media storage and disposal management services.
 
@@ -121,8 +121,7 @@ To learn more, see [Frequently Asked Questions](https://blogs.microsoft.com/data
 ## Additional resources
  
 - [Trusted data protection](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4FhZn) provides an overview of how Microsoft protects your data when you use Microsoft Online Services and Professional Services. It’s also suggested that you consult the [Microsoft Online Services Terms (OST) and Data Protection Addendum (DPA)](https://www.microsoft.com/licensing/product-licensing/products) that govern your use of these services.
-- [Office 365 Data Subject Requests for the GDPR](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365) helps you find and act on personal data or personal information to respond to DSRs using Microsoft 365 products, services, and administrative tools. 
-- [Data Protection Impact Assessments: Guidance for Data Controllers Using Microsoft Office 365](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dpia-office365) helps you determine whether your organization needs to draft a DPIA, provides “how to” guidance, includes a customizable DPIA template document, and provides a DPIA Service Elements Matrix for many Microsoft 365 services.
-- [Learn how modules](https://docs.microsoft.com/learn/paths/audit-safeguard-customer-data/) are designed for people in audit, compliance, risk, and legal roles who seek an overall understanding  provide an in-depth review of how Microsoft 365’s fundamental security and privacy practices to safeguard customer data.
-- [Microsoft Compliance Offerings](https://docs.microsoft.com/microsoft-365/compliance/offering-home) shows how Microsoft 365 services help your organization meet regulatory compliance standards. 
-
+- [Office 365 Data Subject Requests for the GDPR](/compliance/regulatory/gdpr-dsr-Office365) helps you find and act on personal data or personal information to respond to DSRs using Microsoft 365 products, services, and administrative tools. 
+- [Data Protection Impact Assessments: Guidance for Data Controllers Using Microsoft Office 365](/compliance/regulatory/gdpr-dpia-office365) helps you determine whether your organization needs to draft a DPIA, provides “how to” guidance, includes a customizable DPIA template document, and provides a DPIA Service Elements Matrix for many Microsoft 365 services.
+- [Learn how modules](/learn/paths/audit-safeguard-customer-data/) are designed for people in audit, compliance, risk, and legal roles who seek an overall understanding  provide an in-depth review of how Microsoft 365’s fundamental security and privacy practices to safeguard customer data.
+- [Microsoft Compliance Offerings](/compliance/regulatory/offering-home) shows how Microsoft 365 services help your organization meet regulatory compliance standards.

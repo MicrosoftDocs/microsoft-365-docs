@@ -11,7 +11,7 @@ ms.service: o365-administration
 localization_priority: Priority
 ms.collection:
 - Adm_O365
-ms.custom: 
+ms.custom:
 search.appverid:
 - BCS160
 - MET150
@@ -27,7 +27,7 @@ You can pilot Microsoft 365 with these requirements and limitations:
 
 - You must manage your Microsoft 365 DNS records at your DNS hosting provider, rather than have Microsoft 365 manage these records for you.
 
-    To learn more, see [Add DNS records to connect your domain](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
+    To learn more, see [Add DNS records to connect your domain](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).
 
 - Free/busy information for users on the other email server is not available.
 
@@ -55,7 +55,7 @@ Follow these steps to set up a Microsoft 365 pilot:
 
 3. Select the services you want to test with your domain, like email and instant messaging.
 
-5. On the **Verify** domain page, follow the step-by-step instructions, amd then select **Verify**.
+4. On the **Verify** domain page, follow the step-by-step instructions, amd then select **Verify**.
 
     It takes between a few minutes and 72 hours for DNS changes to take effect.
 
@@ -65,7 +65,7 @@ Follow these steps to set up a Microsoft 365 pilot:
 
 1. In the Exchange admin center, in the **Mail flow** section, select **Accepted domains**, and then select the domain you want to modify.
 
-2. Double-click to open the window, and then select **Internal Relay**. 
+2. Double-click to open the window, and then select **Internal Relay**.
 
 3. Select **Save**.
 
@@ -76,11 +76,11 @@ Follow these steps to set up a Microsoft 365 pilot:
 Microsoft 365 uses Exchange Online Protection (EOP) for spam protection. EOP might block your existing mail server if it detects a high volume of spam being forwarded by your current mail server. If you trust the spam protection for your other email provider, you can unblock the server in Microsoft 365.
 
 > [!NOTE]
-> Unblocking your existing email server allows any spam that arrives through your original server to come to the Microsoft 365 mailboxes, and you can’t evaluate how well Microsoft 365 prevents spam.
+> Unblocking your existing email server allows any spam that arrives through your original server to come to the Microsoft 365 mailboxes, and you can't evaluate how well Microsoft 365 prevents spam.
 
 1. In the Exchange admin center navigation pane, select **Protection**, and then select **Connection filter**.
 
-2. In the **IP Allow list**, select **+**, and add the mail server IP address for your current email provider. 
+2. In the **IP Allow list**, select **+**, and add the mail server IP address for your current email provider.
 
 ### Step 5: Create user accounts and set the primary reply-to address
 
@@ -90,11 +90,11 @@ Microsoft 365 uses Exchange Online Protection (EOP) for spam protection. EOP mig
 
     For each account, select **+ Add a user**, and fill out the required information, including the password method you want to test.
 
-    To ensure a user’s email stays the same, the **User name** field must match the user’s current email address.
+    To ensure a user's email stays the same, the **User name** field must match the user's current email address.
 
-3. Choose the appropriate license, click **Next**, and then click **Finish adding**. 
+3. Choose the appropriate license, click **Next**, and then click **Finish adding**.
 
-4. Next to **User name**, select your custom domain name from the drop-down list. 
+4. Next to **User name**, select your custom domain name from the drop-down list.
 
 5. Select **Create** > **Close**.
 
@@ -110,22 +110,22 @@ There are two steps for this:
 
 Make sure you have completed the following in Microsoft 365 or Office 365:
 
-1. To set up connectors, you need permissions assigned before you can begin. To check what permissions you need, see the Microsoft 365 and Office 365 connectors entry in the [Feature permissions in EOP](https://docs.microsoft.com/microsoft-365/security/office-365-security/feature-permissions-in-eop) topic.
+1. To set up connectors, you need permissions assigned before you can begin. To check what permissions you need, see the Microsoft 365 and Office 365 connectors entry in the [Feature permissions in Exchange Online](/exchange/permissions-exo/feature-permissions) topic.
 
 2. If you want EOP or Exchange Online to relay email from your email servers to the Internet, either:
 
-   - Use a certificate configured with a subject name that matches an accepted domain in Microsoft 365 or Office 365. We recommend that your certificate's common name or subject alternative name matches the primary SMTP domain for your organization. For details, see [Prerequisites for your on-premises email environment](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#prerequisites-for-your-on-premises-email-environment).
+   - Use a certificate configured with a subject name that matches an accepted domain in Microsoft 365 or Office 365. We recommend that your certificate's common name or subject alternative name matches the primary SMTP domain for your organization. For details, see [Prerequisites for your on-premises email environment](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#prerequisites-for-your-on-premises-email-environment).
 
    -OR-
 
    - Make sure that all your organization sender domains and subdomains are configured as accepted domains in Microsoft 365 or Office 365.
 
-   For more information about defining accepted domains, see [Manage accepted domains in Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) and [Enable mail flow for subdomains in Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/enable-mail-flow-for-subdomains).
+   For more information about defining accepted domains, see [Manage accepted domains in Exchange Online](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) and [Enable mail flow for subdomains in Exchange Online](/exchange/mail-flow-best-practices/manage-accepted-domains/enable-mail-flow-for-subdomains).
 
-3. Decide whether you want to use mail flow rules (also known as transport rules) or domain names to deliver mail from Microsoft 365 or Office 365 to your email servers. Most businesses choose to deliver mail for all accepted domains. For more information, see [Scenario: Conditional mail routing in Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/conditional-mail-routing).
+3. Decide whether you want to use mail flow rules (also known as transport rules) or domain names to deliver mail from Microsoft 365 or Office 365 to your email servers. Most businesses choose to deliver mail for all accepted domains. For more information, see [Scenario: Conditional mail routing in Exchange Online](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/conditional-mail-routing).
 
 > [!NOTE]
-> You can set up mail flow rules as described in [Mail flow rule actions in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions). For example, you might want to use mail flow rules with connectors if your mail is currently directed via distribution lists to multiple sites.
+> You can set up mail flow rules as described in [Mail flow rule actions in Exchange Online](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions). For example, you might want to use mail flow rules with connectors if your mail is currently directed via distribution lists to multiple sites.
 
 ### 2. Set up a connector from Microsoft 365 or Office 365 to your email server
 
@@ -135,13 +135,13 @@ Set up connectors using the wizard.
 
 To start the wizard, click the plus symbol **+**. On the first screen, choose **From** Office 365 and **To** Your Organization Mail server.
 
-Click **Next**, and follow the instructions in the wizard. Click the **Help** or **Learn More** links if you need more information. The wizard will guide you through setup. At the end, make sure your connector validates. If the connector does not validate, double-click the message displayed to get more information, and see [Validate connectors](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/validate-connectors) for help resolving issues.
+Click **Next**, and follow the instructions in the wizard. Click the **Help** or **Learn More** links if you need more information. The wizard will guide you through setup. At the end, make sure your connector validates. If the connector does not validate, double-click the message displayed to get more information, and see [Validate connectors](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/validate-connectors) for help resolving issues.
 
 
 
 ### Step 7: Update DNS records at your DNS hosting provider
 
-Sign in to your DNS hosting provider's website, and follow the instructions at [Add DNS records to connect your domain](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
+Sign in to your DNS hosting provider's website, and follow the instructions at [Add DNS records to connect your domain](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).
 
 **Make the following two exceptions:**
 
@@ -184,5 +184,4 @@ When you complete this step, all email sent to usera@yourcompany.com and userb@y
 
 Because you are moving only two test users, and User A and User B are both using Outlook, you can move the email by opening the old .PST file in the new Outlook profile and copying the messages, calendar items, contacts, and so on. For more information, see [Import email, contacts, and calendar from an Outlook .pst file](https://support.microsoft.com/office/import-email-contacts-and-calendar-from-an-outlook-pst-file-431a8e9a-f99f-4d5f-ae48-ded54b3440ac).
 
-After they’re imported to the appropriate locations in the Microsoft 365 mailbox, the items can be accessed from any device, anywhere.
-
+After they're imported to the appropriate locations in the Microsoft 365 mailbox, the items can be accessed from any device, anywhere.

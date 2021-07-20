@@ -2,14 +2,13 @@
 title: "Employee quick setup-guide"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
@@ -26,7 +25,7 @@ description: "Help your employees learn how to set up Office apps they get with 
 
 # Employee quick setup
 
-Are you new to Microsoft 365 for business? :::image type="icon" source="../media/video-call-icon.png" border="false"::: [Watch this video](https://support.microsoft.com/office/d6466f0d-5d13-464a-adcb-00906ae87029) to learn about it. Then follow these steps.
+Are you new to Microsoft 365 for business? :::image type="icon" source="../media/video-call-icon.png" border="false"::: [Watch this video](../business/microsoft-365-business-start.md) to learn about it. Then follow these steps.
 
 :::image type="content" source="../media/m365-employee-quick-setup.png" alt-text="Image showing quick employee setup steps.":::
 

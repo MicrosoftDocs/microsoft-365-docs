@@ -10,7 +10,7 @@ search.appverid:
 ms.collection: 
     - enabler-strategic
     - m365initiative-syntex
-localization_priority: Priority
+localization_priority: Normal
 description: "Learn how to apply a published a model to a SharePoint document library"
 ---
 
@@ -89,7 +89,7 @@ When a SharePoint Syntex document understanding or form processing model is appl
 
    ![Classification date column](../media/content-understanding/class-date-column.png)</br> 
 
-The Classification date field is used by the [<b>When a file is classified by a content understanding model</b> trigger](https://docs.microsoft.com/connectors/sharepointonline/#when-a-file-is-classified-by-a-content-understanding-model) to run a Power Automate flow after a Syntex content understanding model has finished processing a file and updated the "Classification date" field.
+The Classification date field is used by the [<b>When a file is classified by a content understanding model</b> trigger](/connectors/sharepointonline/#when-a-file-is-classified-by-a-content-understanding-model) to run a Power Automate flow after a Syntex content understanding model has finished processing a file and updated the "Classification date" field.
 
    ![Flow trigger](../media/content-understanding/trigger.png)</br>
 
@@ -103,5 +103,3 @@ The <b>When a file is classified by a content understanding model</b> trigger ca
 [Create an extractor](create-an-extractor.md)
 
 [Document Understanding overview](document-understanding-overview.md)
-
-

@@ -21,10 +21,10 @@ ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: "Summary: "
 ---
 
-# How to opt-in for migration from Microsoft Cloud Germany (Microsoft Cloud Deutschland) to Office 365 services in the new German datacenter regions
+# How to opt-in for new migration from Microsoft Cloud Germany (Microsoft Cloud Deutschland) to Office 365 services in the new German datacenter regions
 
->[!Note]
->This article only applies to Microsoft Cloud Germany (Microsoft Cloud Deutschland) customers.
+> [!NOTE]
+> This article only applies to Microsoft Cloud Germany (Microsoft Cloud Deutschland) customers.
 >
 
 ## How to request migration
@@ -79,6 +79,6 @@ Moving through the transition:
 
 Cloud apps:
 
-- [Dynamics 365 migration program information](https://aka.ms/d365ceoptin)
-- [Power BI migration program information](https://aka.ms/pbioptin)
-- [Getting started with your Microsoft Teams upgrade](https://aka.ms/SkypeToTeams-Home)
+- [Dynamics 365 migration program information](/dynamics365/get-started/migrate-data-german-region)
+- [Power BI migration program information](/power-bi/admin/service-admin-migrate-data-germany)
+- [Getting started with your Microsoft Teams upgrade](/microsoftteams/upgrade-start-here)

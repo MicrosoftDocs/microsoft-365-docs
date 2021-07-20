@@ -2,29 +2,32 @@
 title: "Move users to different subscriptions"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
 ms.custom: 
 - AdminSurgePortfolio
 - adminvideo
+- commerce_subscriptions
 monikerRange: 'o365-worldwide'
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Learn how to move users to a different subscription."
+description: "Learn how to move users to a different subscription when you need new features."
 ---
 
 # Move users to different subscriptions
+
+## Watch: Move users to a different subscription
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SBE2?autoplay=false]
 

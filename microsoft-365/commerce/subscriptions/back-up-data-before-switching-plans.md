@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,23 +13,23 @@ localization_priority: Normal
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
-- commerce
-- Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom: 
+- AdminSurgePortfolio
+- commerce_subscriptions
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 - BEA160
-ms.assetid: a1da52c9-2167-4973-9e6d-492314a79b87
 description: "Backup Outlook, OneDrive, Yammer, and SharePoint content before changing Microsoft 365 plans."
+ms.date: 03/17/2021
 ---
 
 # Back up data before switching Microsoft 365 for business plans
 
 If a user will be switched to another subscription that has fewer data-related services or a user leaves the organization, a copy of their data that's stored in Microsoft 365 can be downloaded before they are switched to the new subscription.
 
-If you're moving a user to a subscription that has the same or more services, you don't need to back up user data. See [Move users to a different subscription](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/move-users-different-subscription).
+If you're moving a user to a subscription that has the same or more services, you don't need to back up user data. See [Move users to a different subscription](./move-users-different-subscription.md).
   
 ## Save a copy of Outlook information
 
@@ -42,7 +43,7 @@ Before being switched to a different subscription, users can [download files and
   
 ## Save Yammer information
 
-Admins can export all messages, notes, files, topics, users, and groups to a .zip file. For more information, see [Export data from Yammer Enterprise](https://docs.microsoft.com/yammer/manage-security-and-compliance/export-yammer-enterprise-data). Developers can use the [Yammer API](https://go.microsoft.com/fwlink/p/?linkid=842495) to do this, as well.
+Admins can export all messages, notes, files, topics, users, and groups to a .zip file. For more information, see [Export data from Yammer Enterprise](/yammer/manage-security-and-compliance/export-yammer-enterprise-data). Developers can use the [Yammer API](https://go.microsoft.com/fwlink/p/?linkid=842495) to do this, as well.
   
 ## How to save SharePoint information
 
@@ -61,6 +62,6 @@ https://<orgDomain>/_layouts/15/start.aspx#/SitePages/Home.aspx
 
 where  _\<orgDomain\>_ is the organization's URL.
   
-For example, if the domain of the organization is contoso.onmicrosoft.com, then the direct URL to the team site would be https://contoso.onmicrosoft.com/_layouts/15/start.aspx#/SitePages/Home.aspx.
+For example, if the domain of the organization is contoso.onmicrosoft.com, then the direct URL to the team site would be `https://contoso.onmicrosoft.com/_layouts/15/start.aspx#/SitePages/Home.aspx`.
   
 Of course, users can also download SharePoint Online documents from the SharePoint team site to their local computer or to another location at any time.

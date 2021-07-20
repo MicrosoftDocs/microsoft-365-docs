@@ -27,6 +27,8 @@ In this article we'll examine these planning decisions:
 
 Security and privacy of your data is respected, and topic experiences does not grant users additional access to files they don’t have rights to. We recommend you also read [Microsoft Viva Topics security and privacy](topic-experiences-security-privacy.md) as part of your planning process.
 
+To learn more about the AI technology behind Viva Topics, read [Alexandria in Microsoft Viva Topics: from big data to big knowledge](https://www.microsoft.com/research/blog/alexandria-in-microsoft-viva-topics-from-big-data-to-big-knowledge).
+
 ## Requirements
 
 You must be [subscribed to Viva Topics](https://www.microsoft.com/microsoft-viva/topics) and be a global administrator or SharePoint administrator to access the Microsoft 365 admin center and set up Topics.
@@ -35,7 +37,9 @@ All users who are going to use Topics require a **Topic Experiences** license. A
 
 ## Topic discovery
 
-The topic discovery settings specify which SharePoint sites are used as sources for topics. You can choose to include all SharePoint sites, a specific list of sites, or no sites. We recommend that you choose all sites so that topic experiences can discover a large number of good topics for your users.
+The topic discovery settings specify which SharePoint sites are used as sources for topics. This includes both classic and modern sites, as well as sites associated with Microsoft Teams and Microsoft 365 Groups. OneDrive sites are not included.
+
+You can choose to include all SharePoint sites, a specific list of sites, or no sites. We recommend that you choose all sites so that topic experiences can discover a large number of good topics for your users.
 
 When you set up Topics, you can choose from the following options:
 
@@ -56,9 +60,18 @@ We don't recommend choosing **No sites** because it prevents topics from being a
 
 We recommend you create a process for users or knowledge managers to request individual sites be removed from topic discovery if needed in your organization.
 
+### Multi-geo
+
+If your organization has deployed [Microsoft 365 Multi-Geo](/microsoft-365/enterprise/microsoft-365-multi-geo), the topic center is provisioned in the central location and only SharePoint sites in the central location are available to use as sources for topics. (If you select **All sites**, Viva Topics will use all site in the central location.)
+
+All processing and storage of content is done in the central location.
+
 ## User permissions
 
 The user permissions that you specify determine which people in your organization interact with topics and what they can do.
+
+> [!Note] 
+> At this time, Viva Topics doesn't support providing licenses or user permissions for Guest (External) users. 
 
 *Manage topics*
 
