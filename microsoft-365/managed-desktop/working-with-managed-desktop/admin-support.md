@@ -23,7 +23,7 @@ You can submit support tickets or feedback requests to Microsoft using the Micro
 3. On **Support requests**, select **+ New Support ticket**.
 4. Select the **Support request type** that matches the help you need. The following table outlines the options. 
 5. Select the **Severity level**. For more information, see [Support request severity definitions](#sev).
-6. Provide as much information about the request as possible to help the team respond quickly. Depending on the type of request you may be required to provide different details.
+6. Provide as much information about the request as possible to help the team respond quickly. Depending on the type of request, you may be required to provide different details.
 7. Review all the information you provided for accuracy. 
 8. When you’re ready, select **Create**.
  
@@ -38,18 +38,18 @@ Change request | You require the Microsoft Managed Desktop Operations team to ma
 > When you create a support request you will need to list a Primary contact, responsible for working with our Service Engineers to resolve the issue or answer any questions about a requested change. We also require that you have previously [set up an Admin contact](../get-started/add-admin-contacts.md) who will be copied on all case notifications for their relevant area of focus and be asked to take over a case if the primary contact for a case is unreachable.
 
 ## Manage an active support request
-The primary contact for a case (and any [Admin contact](../get-started/add-admin-contacts.md) for that area of focus) will receive email notifications when a case is **Created**, **Assigned** to a Service Engineer to investigate and **Resolved**. If at any point you have a question about the case, the best way to get in touch with our team is to reply directly to one of those emails. If we have questions about your request or need additional details to take action we will email the Primary contact listed on the support requests (copying all the relevant Admin contacts).
+The primary contact for a case (and any [Admin contact](../get-started/add-admin-contacts.md) for that area of focus) will receive email notifications when a case is **Created**, **Assigned** to a Service Engineer to investigate, and **Resolved**. If at any point you have a question about the case, the best way to get in touch with our team is to reply directly to one of those emails. If we have questions about your request or need more details to take action, we will email the Primary contact listed on the support requests (copying all the relevant Admin contacts).
 
 ### View all your active cases
-While email is the recommended approach to interact with our team, you may want to see the summary status of all your support requests. At any time you can use the portal to see all support requests Active during the last 6 months.
+While email is the recommended approach to interact with our team, you may want to see the summary status of all your support requests. At any time, you can use the portal to see all support requests Active during the last six months.
 
 1.	Sign in to [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) and navigate to the **Tenant Administration** menu.
 2.	Look for the *Microsoft Managed Desktop* section, select **Service request**.
-3.	From this view you can export the summary view or click on any case to see the details
+3.	From this view, you can export the summary view or click on any case to see the details
 
 ### Edit case details
 If you need to edit the details of a case, for example updating the primary case contact, you will need to follow these steps:
-1.	From the **Service request** blade in **Tenant Administration** menu of [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) use the search bar or filters to find the case you’re interested in editing.
+1.	From the **Service request** blade, in **Tenant Administration** menu of [Microsoft Endpoint Manager](https://endpoint.microsoft.com/), use the search bar or filters to find the case you’re interested in editing.
 2.	Select the case to open up the request’s details 
 3.	Scroll to the bottom of the request details and select **Edit**.
 4.	Update the editable information, add attachments to the case, or add a note for the Service Engineering team, then select **Save**.
@@ -58,7 +58,7 @@ If you need to edit the details of a case, for example updating the primary case
 
 We appreciate your feedback and use it to improve the admin support experience.
 
-If you are the primary contact on for a support requests you will receive an email from Microsoft Managed Desktop Operations asking about your experience after your issue has been resolved. Feedback is actively monitored and shared with engineering to improve the service and prioritize future features. Be sure to focus on your experience and not include personal information in the feedback form. For more information about privacy, see the [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement).
+When you are the primary contact on for a support request, you will receive an email from Microsoft Managed Desktop Operations asking about your experience after your issue has been resolved. Feedback is actively monitored and shared with engineering to improve the service and prioritize future features. Be sure to focus on your experience and not include personal information in the feedback form. For more information about privacy, see the [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement).
 
 <span id="sev" />
 
