@@ -28,6 +28,7 @@
       href: mdb-configuration-settings.md
   - name: Get started
     href: mdb-get-started.md
+    expanded: true
     items: 
     - name: View and manage incidents
       href: mdb-view-manage-incidents.md
