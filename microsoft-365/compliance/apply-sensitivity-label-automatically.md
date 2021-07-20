@@ -278,13 +278,11 @@ Finally, you can use simulation mode to provide an approximation of the time nee
 
     ![Choose locations page auto-labelingwizard](../media/locations-auto-labeling-wizard.png)
     
-    If your tenant has the [recent enhancements](#recent-enhancements-for-auto-labeling-policies) now rolling out, you can now specify **All sites**.
-
-    Alternatively, specify individual SharePoint sites and OneDrive accounts. For OneDrive, the URL for a user's OneDrive account is in the following format: `https://<tenant name>-my.sharepoint.com/personal/<user_name>_<tenant name>_com`
+    To specify individual OneDrive accounts: The URL for a user's OneDrive account is in the following format: `https://<tenant name>-my.sharepoint.com/personal/<user_name>_<tenant name>_com`
 
     For example, for a user in the contoso tenant that has a user name of "rsimone": `https://contoso-my.sharepoint.com/personal/rsimone_contoso_onmicrosoft_com`
 
-    To verify the syntax for your tenant and identify URLs for users, see [Get a list of all user OneDrive URLs in your organization](/onedrive/list-onedrive-urls).
+    To verify the syntax for your tenant and identify OneDrive URLs for users, see [Get a list of all user OneDrive URLs in your organization](/onedrive/list-onedrive-urls).
 
 7. For the **Set up common or advanced rules** page: Keep the default of **Common rules** to define rules that identify content to label across all your selected locations. If you need different rules per location, select **Advanced rules**. Then select **Next**.
 
@@ -392,9 +390,9 @@ The recent enhancements now rolling out for auto-labeling policies for OneDrive 
 
 - Maximum of 100 auto-labeling policies per tenant instead of 10.
 
-- Support for all OneDrive and SharePoint sites by specifying **All sites** instead of having to enter each site by URL. As a result, all existing sites and any newly created sites are automatically selected, although you can still manually enter sites by their URL if needed.
+- Support for all OneDrive and SharePoint sites (the default for new policies) and the ability to select available SharePoint sites instead of having to enter each site by URL. When you use the new default of **All**, all existing SharePoint sites and OneDrive accounts in your tenant and any newly created sites and accounts are automatically included in the policy. When you select **Choose sites** for SharePoint, you can still manually enter sites by their URL if needed.
 
-- For the sites that you manually enter, up to 100 sites are now supported instead of 10 sites.
+- When you specify individual sites in an auto-labeling policy, up to 100 sites are now supported instead of 10 sites.
 
 - Maximum of 1,000,000 matched files per auto-labeling policy, although the total of 25,000 automatically labeled files in your tenant per day remains the same.
 
