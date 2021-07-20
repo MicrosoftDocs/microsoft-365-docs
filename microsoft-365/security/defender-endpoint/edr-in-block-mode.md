@@ -15,7 +15,7 @@ localization_priority: Normal
 ms.custom: 
   - next-gen
   - edr
-ms.date: 07/13/2021
+ms.date: 07/20/2021
 ms.collection: 
   - m365-security-compliance
   - m365initiative-defender-endpoint
