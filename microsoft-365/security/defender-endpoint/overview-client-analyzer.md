@@ -80,17 +80,17 @@ For more information about our privacy statement, see [Microsoft Privacy Stateme
     [macOS](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-mac#system-requirements)
     either before of after onboarding to Microsoft Defender for Endpoint.
 
--   If you are running the analyzer directly on specific machines and not
+-   For Windows devices, if you are running the analyzer directly on specific machines and not
     remotely via [Live
     Response](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/troubleshoot-collect-support-log),
     then SysInternals
     [PsExec.exe](https://docs.microsoft.com/sysinternals/downloads/psexec)
-    should be allowed to run.  
+    should be allowed (at least temporarily) to run.  
     The analyzer calls into PsExec.exe tool to run cloud connectivity checks as
     Local System and emulate the behavior of the SENSE service.
 
     > [!NOTE]
-    > If you use Attack Surface Reduction (ASR) rule [Block process creations
+    > On Windows devices, if you use Attack Surface Reduction (ASR) rule [Block process creations
     originating from PSExec and WMI
     commands](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/attack-surface-reduction#block-process-creations-originating-from-psexec-and-wmi-commands),
     then you should temporarily disable the rule or [configure an exclusion to
