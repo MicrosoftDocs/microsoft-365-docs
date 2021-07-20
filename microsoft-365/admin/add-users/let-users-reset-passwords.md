@@ -62,11 +62,9 @@ These steps turn on self-service password reset for everyone in your business.
 
 4. Under **Self-service password reset**, select **Go to the Azure portal to turn on self-service password reset**.
 
-5. In the left navigation pane, select **Users**, and then, on the **Users | All users** page, select **Password reset**.
+5. On the **Properties** page, select **All** to enable it for everyone in your business, and then select **Save**.
   
-6. On the **Properties** page, select **All** to enable it for everyone in your business, and then select **Save**.
-  
-7. When your users sign in, they will be prompted to enter additional contact information that will help them reset their password in the future.
+6. When your users sign in, they will be prompted to enter additional contact information that will help them reset their password in the future.
 
 ## Related content
 
