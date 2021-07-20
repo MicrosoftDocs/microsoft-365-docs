@@ -90,7 +90,7 @@
         "/admin": false,
         "/business": false,
         "/business-video": false,
-        "/commerce": false,
+        "/commerce": false
         },
       "titleSuffix": {
         "compliance/**/*.md": "Microsoft 365 Compliance",
