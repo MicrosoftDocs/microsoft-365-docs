@@ -53,7 +53,7 @@ Before you [create a shared mailbox](create-a-shared-mailbox.md), here are some 
 
 - **Signing in:** A shared mailbox is not intended for direct sign-in by its associated user account. You should always block sign-in for the shared mailbox account and keep it blocked.
 
-- **Too many users:** When there are too many designated users concurrently accessing a shared mailbox (no more than 25 is recommended), they may intermittently fail to connect to this mailbox or have inconsistencies like messages being duplicate on the outbox. In this case, you can consider reducing the number of the users or using a different workload, such a Microsoft 365 group or Public folder.
+- **Too many users:** When there are too many designated users concurrently accessing a shared mailbox (no more than 25 is recommended), they may intermittently fail to connect to this mailbox or have inconsistencies like messages being duplicated in the outbox. In this case, you can consider reducing the number of users or using a different workload, such as a Microsoft 365 group or a Public folder.
 
 - **Message deletion:** Unfortunately, you can't prevent people from deleting messages in a shared mailbox. The only way around this is to create a Microsoft 365 group instead of a shared mailbox. A group in Outlook is like a shared mailbox. For a comparison of the two, see [Compare groups](../create-groups/compare-groups.md). To learn more about groups, see [Learn more about groups](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2).
 
