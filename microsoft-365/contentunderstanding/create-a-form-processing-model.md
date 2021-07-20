@@ -106,13 +106,13 @@ You need to tag the documents to teach the model to understand the fields and ta
 
 1. After you create and train your model, you are ready to publish it and use it in SharePoint. For detailed steps, see [Train and publish your form processing model](https://docs.microsoft.com/ai-builder/form-processing-train). 
 
-2. After the model is published, select **Use model**. This creates a Power Automate flow that can run in your SharePoint document library and extracts the fields that have been identified in the model, then select **Create Flow**.
+2. After the model is published, select **Use model**. This creates a Power Automate flow that can run in your SharePoint document library and that extracts the fields that have been identified in the model. Then select **Create flow**.
 
-    ![Document library model applied.](../media/content-understanding/doc-lib-view.png)
+    ![Screenshot in AI Builder showing the Create a flow panel.](../media/content-understanding/ai-builder-create-a-flow.png)
  
 3. When completed, you'll see the message: *Your flow has been successfully created*.
 
-    ![Document library model applied.](../media/content-understanding/doc-lib-view.png)
+    ![Screenshot in AI Builder showing flow was successfully created.](../media/content-understanding/ai-builder-flow-created.png)
 
 4. Select the **Go to SharePoint** button to see the document library updated with your model.
 
