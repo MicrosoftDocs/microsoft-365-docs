@@ -242,7 +242,7 @@ sections:
       - question: |
           Is delegated access supported with opening encrypted messages? Even if a delegate has full access to another user's mailbox?
         answer: |
-          Delegate access of encrypted mail is supported in Outlook on the web, Outlook for Mac, Outlook for iOS, and Outlook for Android.  Outlook for Windows do not support delegate access.
+          Delegated access of encrypted mail is supported in Outlook on the web, Outlook for Mac, Outlook for iOS, and Outlook for Android.  Outlook for Windows does not support delegated access.
           
       - question: |
           What do I do if I don’t receive the one-time pass code after I requested it?
