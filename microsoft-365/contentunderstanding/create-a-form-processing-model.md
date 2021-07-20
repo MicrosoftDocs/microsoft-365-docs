@@ -30,7 +30,7 @@ Creating a form processing model involves the following steps:
  - [Step 1: Create a form processing model](create-a-form-processing-model.md#step-1-create-a-form-processing-model)
  - [Step 2: Add and analyze documents](create-a-form-processing-model.md#step-2-add-and-analyze-documents)
  - [Step 3: Tag fields and tables](create-a-form-processing-model.md#step-3-tag-fields-and-tables)
- - [Step 4: Train and publish your model](reate-a-form-processing-model.md#step-4-train-and-publish-your-model)
+ - [Step 4: Train and publish your model](create-a-form-processing-model.md#step-4-train-and-publish-your-model)
  - [Step 5: Use your model](create-a-form-processing-model.md#step-5-use-your-model)
 
 ## Requirements
