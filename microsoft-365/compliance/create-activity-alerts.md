@@ -24,10 +24,10 @@ description: Add and manage activity alerts in the Security & Compliance Center 
 
 You can create an activity alert that will send you an email notification when users perform specific activities in Office 365. Activity alerts are similar to searching for events in the audit log, except that you'll be sent an email message when an event for an activity that you've created an alert for happens.
 
- **Why use activity alerts instead of searching the audit log?** There might be certain kinds of activity or activity performed by specific users that you really want to know about. Instead of having to remember to search the audit log for those activities, you can use activity alerts to have Microsoft 365 send you an email message when users perform those activities. For example, you can create an activity alert to notify you when a user deletes files in SharePoint or you can create an alert to notify you when a user permanently deletes messages from their mailbox. The email notification sent to you includes information about which activity was performed and the user who performed it.
+ **Why use activity alerts instead of searching the audit log?** There might be certain kinds of activity or activity performed by specific users that you really want to know about. Instead of having to remember to search the audit log for those activities, you can use activity alerts to have Microsoft 365 send you an email message when users perform those activities. For example, you can create an activity alert to notify you when a user deletes files in SharePoint, or you can create an alert to notify you when a user permanently deletes messages from their mailbox. The email notification sent to you includes information about which activity was performed and the user who performed it.
 
 > [!NOTE]
-> Activity alerts are being deprecated. We recommend that you start using alert policies in the security and compliance center instead of creating new activity alerts. Alert policies provide addition functionality such as the ability to create an alert policy that triggers an alert when any user performs a specified activity, and displaying alerts on the **View alerts** page in the security and compliance center. For more information, see [Alert policies](alert-policies.md).
+> Activity alerts are being deprecated. We recommend that you start using alert policies in the security and compliance center instead of creating new activity alerts. Alert policies provide additional functionality such as the ability to create an alert policy that triggers an alert when any user performs a specified activity, and displaying alerts on the **View alerts** page in the security and compliance center. For more information, see [Alert policies](alert-policies.md).
 
 ## Confirm roles and configure audit logging
 
@@ -37,7 +37,7 @@ You can create an activity alert that will send you an email notification when u
 
 - You can create alerts for the same activities that you can search for in the audit log. See the [More information](#more-information) section for a list of common scenarios (and the specific activity to monitor) that you can create alerts for.
 
-- You can use the **Activity alerts** page in the Security & Compliance Center to create alerts only for activity performed by users who are listed in your organization's address book. You can't use this page to create alerts for activity performed by external users who aren't listed in the address book.
+- You can use the **Activity alerts** page in the Security & Compliance Center to create alerts only for activity performed by users who are listed in your organization's address book. You can't use this page to create alerts for activities performed by external users who aren't listed in the address book.
 
 ## Create an activity alert
 
@@ -56,17 +56,17 @@ You can create an activity alert that will send you an email notification when u
 
     a. **Name** - Type a name for the alert. Alert names must be unique within your organization.
 
-    b. **Description** (Optional) - Describe the alert, such as the activities and users being tracked, and the users that email notifications are sent to. Descriptions provide a quick and easy way to describe the purpose of the alert to other admins.
+    b. **Description** (Optional) - Describe the alert, such as the activities and users being tracked and the users that email notifications are sent to. Descriptions provide a quick and easy way to describe the purpose of the alert to other admins.
 
     c. **Alert type** - Make sure the **Custom** option is selected.
 
     d. **Send this alert when** - Click **Send this alert when** and then configure these two fields:
 
-    - **Activities** - Click the drop-down list to display the activities that you can create an alert for. This is the same activities list that's displayed when you search the audit log. You can select one or more specific activities or you can click the activity group name to select all activities in the group. For a description of these activities, see the "Audited activities" section in [Search the audit log](search-the-audit-log-in-security-and-compliance.md#audited-activities). When a user performs any of the activities that you've added to the alert, an email notification is sent.
+    - **Activities** - Click the drop-down list to display the activities that you can create an alert for. This is the same activities list that's displayed when you search the audit log. You can select one or more specific activities, or you can click the activity group name to select all activities in the group. For a description of these activities, see the "Audited activities" section in [Search the audit log](search-the-audit-log-in-security-and-compliance.md#audited-activities). When a user performs any of the activities that you've added to the alert, an email notification is sent.
 
      - **Users** - Click this box and then select one or more users. If the users in this box perform the activities that you added to the **Activities** box, an alert will be sent. Leave the **Users** box blank to send an alert when any user in your organization performs the activities specified by the alert.
 
-    e. **Send this alert to** - Click **Send this alert**, and then click in the **Recipients** box and type a name to add a users who will receive an email notification when a user (specified in the **Users** box) performs an activity (specified in the **Activities** box). Note that you are added to the list of recipients by default. You can remove your name from this list.
+    e. **Send this alert to** - Click **Send this alert**, and then click in the **Recipients** box and type a name to add users who will receive an email notification when a user (specified in the **Users** box) performs an activity (specified in the **Activities** box). Note that you are added to the list of recipients by default. You can remove your name from this list.
 
 5. Click **Save** to create the alert.
 
@@ -74,7 +74,7 @@ You can create an activity alert that will send you an email notification when u
 
     ![A list of alerts is displayed on the Activity alerts page](../media/02b774f2-1719-41de-bbc9-5e5b7576f335.png)
 
-    The status of the alert is set to **On**. Note that the recipients who will received an email notification when an alert is sent are also listed.
+    The status of the alert is set to **On**. Note that the recipients who will receive an email notification when an alert is sent are also listed.
 
 ## Turn off an activity alert
 
@@ -96,12 +96,12 @@ To turn an activity alert back on, just repeat these steps and click the **Off**
 
 - Here's an example of the email notification that is sent to the users that are specified in the Sent this alert to field (and listed under **Recipients** on the **Activity alerts** page) in the Security & Compliance Center.
 
-    ![Example of an email notifcation sent for an activity alert](../media/a5f91611-fae6-4fe9-82f5-58521a2e2541.png)
+    ![Example of an email notification sent for an activity alert](../media/a5f91611-fae6-4fe9-82f5-58521a2e2541.png)
 
-- Here's are some common document and email activities that you can create an activity alerts for. The tables describes the activity, the name of the activity to create an alert for, and the name of the activity group that the activity is listed under in the **Activities** drop-down list. To see a complete list of the activities that you can create activity alerts for, see the "Audited activities" section in [Search the audit log](search-the-audit-log-in-security-and-compliance.md#audited-activities).
+- Here's are some common document and email activities that you can create activity alerts for. The tables describe the activity, the name of the activity to create an alert for, and the name of the activity group that the activity is listed under in the **Activities** drop-down list. To see a complete list of the activities that you can create activity alerts for, see the "Audited activities" section in [Search the audit log](search-the-audit-log-in-security-and-compliance.md#audited-activities).
 
     > [!TIP]
-    > You might want to create an activity alert for just one activity that's performed by any user. Or you might want to create an activity alert that track multiple activities performed by one or mores users.
+    > You might want to create an activity alert for just one activity that's performed by any user. Or you might want to create an activity alert that tracks multiple activities performed by one or more users.
 
     The following table lists some common document-related activities in SharePoint or OneDrive for Business.
 
