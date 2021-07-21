@@ -92,19 +92,19 @@ After you create your new form processing model, your browser opens a new PowerA
 > [!NOTE]
 > When you look for example files to use, see the [form processing model input document requirements and optimization tips](/ai-builder/form-processing-model-requirements). 
  
-1. You first define the fields and tables you want to teach your model to extract on the **Choose information to extract** page. For detailed steps, see [Define fields and tables to extract](https://docs.microsoft.com/en-us/ai-builder/create-form-processing-model#define-fields-and-tables-to-extract). 
+1. You first define the fields and tables you want to teach your model to extract on the **Choose information to extract** page. For detailed steps, see [Define fields and tables to extract](/ai-builder/create-form-processing-model#define-fields-and-tables-to-extract). 
 
-2.  You can create as many collections of document layouts you want your model to process. For detailed steps, see [Group documents by collections](https://docs.microsoft.com/en-us/ai-builder/create-form-processing-model#group-documents-by-collections). 
+2.  You can create as many collections of document layouts you want your model to process. For detailed steps, see [Group documents by collections](/ai-builder/create-form-processing-model#group-documents-by-collections). 
 
 3. After you create your collections and add the example files for each, AI Builder will examine the uploaded documents to detect the fields and tables. This usually takes a few minutes. When the analysis is complete, you can proceed with tagging the documents.
 
 ## Step 3: Tag fields and tables
 
-You need to tag the documents to teach the model to understand the fields and table data you want to extract. For detailed steps, see [Tag documents](https://docs.microsoft.com/en-us/ai-builder/create-form-processing-model#tag-documents).
+You need to tag the documents to teach the model to understand the fields and table data you want to extract. For detailed steps, see [Tag documents](/ai-builder/create-form-processing-model#tag-documents).
 
 ## Step 4: Train and publish your model
 
-1. After you create and train your model, you're ready to publish it and use it in SharePoint. For detailed steps, see [Train and publish your form processing model](https://docs.microsoft.com/ai-builder/form-processing-train). 
+1. After you create and train your model, you're ready to publish it and use it in SharePoint. For detailed steps, see [Train and publish your form processing model](/ai-builder/form-processing-train). 
 
 2. After the model is published, select **Use model**, and then select **Create flow**. This creates a Power Automate flow that can run in your SharePoint document library and that extracts the fields that have been identified in the model.
 
