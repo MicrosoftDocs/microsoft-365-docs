@@ -39,9 +39,9 @@ What are the preventative steps to minimize the damage from a ransomware attack,
 
 Use these steps:
 
-1. [Step 1: Remove attacker financial leverage with data protection](protect-against-ransomware-microsoft-365-step1.md)
-2. [Step 2: Minimize privileged access and prevent credential escalation](protect-against-ransomware-microsoft-365-step2.md)
-3. [Step 3: Prevent attacker access](protect-against-ransomware-microsoft-365-step3.md)
+1. [Remove attacker financial leverage with data protection](protect-against-ransomware-microsoft-365-phase1.md)
+2. [Minimize privileged access and prevent credential escalation](protect-against-ransomware-microsoft-365-phase2.md)
+3. [Prevent attacker access](protect-against-ransomware-microsoft-365-phase3.md)
 
 <!--
 

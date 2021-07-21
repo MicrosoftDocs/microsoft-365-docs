@@ -81,11 +81,11 @@
       items:
       - name: Overview   
         href: protect-against-ransomware-microsoft-365.md
-      - name: Phase 1
+      - name: Step 1. Remove attacker financial leverage with data protection
         href: protect-against-ransomware-microsoft-365-phase1.md
-      - name: Phase 2
+      - name: Step 2. Minimize privileged access and prevent credential escalation
         href: protect-against-ransomware-microsoft-365-phase2.md
-      - name: Phase 3
+      - name: Step 3. Prevent attacker access
         href: protect-against-ransomware-microsoft-365-phase3.md
     - name: Deploy information protection for data privacy regulations
       items:

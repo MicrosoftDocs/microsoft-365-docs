@@ -27,35 +27,41 @@ Assume attacker has the credentials to access your tenant and can laterally move
 
 ## Elements of financial leverage
 
+- Data encryption or destruction
+- Data exfiltration: Attacker copies data outside the tenant
+- Attack recovery sabotage: Encrypt or destroy IT recovery plans
+
 ## Data encryption or destruction
 
-Attacker's goal: Make crucial organization data unusable, bringing normal business operations to a halt. 
+**Attacker's goal:** Make crucial organization data unusable, bringing normal business operations to a halt. 
 
-Financial leverage: Organization can’t operate and loses revenue.
+**Financial leverage:** Organization can’t operate normally and loses revenue.
 
 ### Prevent: Attacker can’t access data
 
 - Access to data through tight permissions
-Broad permissions review
-Audit and montor to new broad permission
+
+   Perform broad permissions review
+
+   Audit and monitor for new broad permissions
 
 - MIP, sensitive information types, and sensitivity labels (permissions and encryption)
 - Office 365 Message Encryption new capabilities (OME) and OME Advanced Message Encryption
-- Customer Key
-- Teams/SharePoint sites with security isolation
+- Customer Key, BYOK, and HYOK
 - Protected Folders/controlled folder access for malicious apps
+- Teams/SharePoint sites with security isolation
 
 ### Mitigate: attacker can access data, but can’t encrypt or destroy all copies
 
 - Offline, off-site, immutable backups
 
-
 ## Data exfiltration: Attacker copies data outside the tenant
 
-Financial leverage: Sharing data with competitors (loss of competitive advantage), other ciminals (future attacks), or the public (damage to reputation and brand) can result in lost revenue.
+**Attacker's goal:** Obtaining internal and critical data as proof of attack and being able to share it with others.
 
+**Financial leverage:** Sharing data with competitors (loss of competitive advantage), other criminals (for future attacks or additional extortion), or the public (damage to reputation and brand) can result in lost revenue.
 
-### Prevent: attacker can’t exfiltrate
+### Prevent: Attacker can’t exfiltrate data
 
 - DLP
 
