@@ -147,7 +147,7 @@ If a proxy or firewall is blocking anonymous traffic, as Defender for Endpoint s
 
 ### Microsoft Monitoring Agent (MMA) - proxy and firewall requirements for older versions of Windows client or Windows Server
 
-The information below list the proxy and firewall configuration information required to communicate with Log Analytics agent (often referred to as Microsoft Monitoring Agent) for the previous versions of Windows such as Windows 7 SP1, Windows 8.1, Windows Server 2008 R2, Windows Server 2012 R2, and Windows Server 2016.
+The information below list the proxy and firewall configuration information required to communicate with Log Analytics agent (often referred to as Microsoft Monitoring Agent) for the previous versions of Windows such as Windows 7 SP1, Windows 8.1, and Windows Server 2008 R2*
 
 |Agent Resource|Ports |Direction |Bypass HTTPS inspection|
 |------|---------|--------|--------|
@@ -155,6 +155,9 @@ The information below list the proxy and firewall configuration information requ
 |*.oms.opinsights.azure.com |Port 443 |Outbound|Yes |  
 |*.blob.core.windows.net |Port 443 |Outbound|Yes |
 |*.azure-automation.net |Port 443 |Outbound|Yes |  
+
+>[!NOTE]
+>*These connectivity requirements also apply to the previous Microsoft Defender for Endpoint for Windows Server 2016 and Windows Server 2012 R2 that requires the MMA. Instructions to onboard these operating systems with the new unified solution are at [Onboard Windows servers](configure-server-endpoints.md), or to migrate to the new unfiied solution at [Server migration scenarios in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/server-migration).
 
 > [!NOTE]
 > As a cloud-based solution, the IP range can change. It's recommended you move to DNS resolving setting.
