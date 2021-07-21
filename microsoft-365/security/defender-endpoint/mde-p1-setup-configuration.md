@@ -40,13 +40,13 @@ The following table lists the basic requirements for Defender for Endpoint Plan 
 
 | Requirement | Description |
 |:---|:---|
-| Licensing requirements | Defender for Endpoint Plan 1 |
-| Browser requirements | Microsoft Edge <p> Internet Explorer version 11 <p> Google Chrome |
-| Operating system | Windows 10 <p> Windows Server 2019 <p> Windows Server, version 1803 or later <p> Windows Server 2016 |
+| Licensing requirements | Defender for Endpoint Plan 1 (preview) |
+| Browser requirements | Microsoft Edge <br/> Internet Explorer version 11 <br/> Google Chrome |
+| Operating system | Windows 10, version 1709 or later <br/> macOS <br/>iOS <br/>Android OS  |
 | Datacenter | One of the following datacenter locations: <br/>- European Union <br/>- United Kingdom <br/>- United States |
 
 > [!TIP]
-> To learn more, see [Minimum requirements for Defender for Endpoint](minimum-requirements.md).
+> If you have Microsoft 365 E3 but not Microsoft 365 E5, contact support and ask to participate in the preview program!
 
 ## Plan your deployment
 
