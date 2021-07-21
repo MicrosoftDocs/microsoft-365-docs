@@ -19,6 +19,7 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - AdminSurgePortfolio
+- m365solution-removeemployee
 search.appverid:
 - BCS160
 - MET150
@@ -51,3 +52,10 @@ Follow these steps on how to [convert the user's mailbox to a shared mailbox](..
 4. Turn on **Forward all email sent to this mailbox**. In the **Forwarding address** box, type the email address of the current employee who's going to get the email.
 5. Select **Save**.
 6. Remember, don't delete the former employee's account.
+
+## Related content
+
+[Open and use a shared mailbox in Outlook](https://support.microsoft.com/office/open-and-use-a-shared-mailbox-in-outlook-d94a8e9e-21f1-4240-808b-de9c9c088afd)
+[Access another person's mailbox](https://support.microsoft.com/office/access-another-person-s-mailbox-a909ad30-e413-40b5-a487-0ea70b763081)
+[Exchange admin center in Exchange Online](/exchange/exchange-admin-center)
+[Manager another person's mail and calendar items](https://support.microsoft.com/office/manage-another-person-s-mail-and-calendar-items-afb79d6b-2967-43b9-a944-a6b953190af5)
