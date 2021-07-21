@@ -1,5 +1,5 @@
 ---
-title: "Deploy protection against ransomware with Microsoft 365, Phase 3"
+title: "Step 3: Prevent attacker access"
 author: JoeDavies-MSFT
 f1.keywords:
 - NOCSH
@@ -21,13 +21,9 @@ keywords:
 description: Step through protecting your Microsoft 365 resources from ransomware attacks.
 ---
 
-# Deploy protection against ransomware with Microsoft 365, Phase 3
+# Step 3: Prevent attacker access
 
-TBD
 
-## Next step
-
-[Phase 2](eprotect-against-ransomware-microsoft-365-phase3.md)
 
 <!--
 
