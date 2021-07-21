@@ -2,6 +2,7 @@
 
 ## [Overview]()
 ### [What is Microsoft Defender for Endpoint?](microsoft-defender-endpoint.md)
+### [Compare Defender for Endpoint Plan 1 (preview) to Plan 2](defender-endpoint-plan-1-2.md)
 ### [Minimum requirements](minimum-requirements.md)
 ### [What's new in Microsoft Defender for Endpoint?](whats-new-in-microsoft-defender-atp.md)
 ### [Preview features](preview.md)
@@ -11,10 +12,9 @@
 ### [Microsoft Defender for Endpoint for US Government customers](gov.md)
 ### [Microsoft Defender for Endpoint on non-Windows platforms](non-windows.md)
 ### [Defender for Endpoint Plan 1 (preview)](defender-endpoint-plan-1.md)
-#### [Compare Defender for Endpoint Plan 1 to Plan 2](defender-endpoint-plan-1-2.md)
-#### [Set up and configure Defender for Endpoint Plan 1](mde-p1-setup-configuration.md)
-#### [Get started with Defender for Endpoint Plan 1](mde-plan1-getting-started.md)
-#### [Manage Defender for Endpoint Plan 1](mde-p1-maintenance-operations.md)
+#### [Set up and configure Defender for Endpoint Plan 1 (preview)](mde-p1-setup-configuration.md)
+#### [Get started with Defender for Endpoint Plan 1 (preview)](mde-plan1-getting-started.md)
+#### [Manage Defender for Endpoint Plan 1 (preview)](mde-p1-maintenance-operations.md)
 
 ## [Evaluate capabilities](evaluation-lab.md)
 
