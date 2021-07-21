@@ -78,7 +78,7 @@ Web content filtering includes:
 
 For more information, see [Web content filtering](web-content-filtering.md).
 
-## Order of Precedence
+## Order of precedence
 
 Web protection is made up of the following components, listed in order of precedence. Each of these components is enforced by the SmartScreen client in Microsoft Edge and by the Network Protection client in all other browsers and processes.
 
