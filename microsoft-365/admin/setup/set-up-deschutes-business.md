@@ -1,5 +1,5 @@
 ---
-title: "Set up Deschutes Business"
+title: "Get started with Windows 365 Business and Cloud PCs"
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -21,117 +21,91 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: eb926624-018b-4486-bf11-5fba6ee4d645
-description: Learn about the requirements and considerations for setting up Deschutes Business.
+description: Learn how to buy Windows 365 Business for your organization, and help users start using their Cloud PCs.
 ---
 
-# Set up Deschutes Business
+# Set up Windows 365 Business
 
-This article is for people who plan to purchase and set up Deschutes Business.
+This article is for people who plan to buy and set up Windows 365 Business for their organization. 
   
-Deschutes Business is a version of [Deschutes](https://review.docs.microsoft.com/mem/cloudpc/overview?branch=release-cloudpc) that is made specifically for use in smaller companies (typically up to 300 seats). 
-
-Microsoft Deschutes business gives admins an easy, streamlined way of providing “cloud PCs” - a new type of Windows virtual machine - to their users.
-
-It is designed so that users in these businesses can experience:
-
-•	A simple, quick purchasing experience.</br>
-•	One-click provisioning.</br>
-•	Access on demand for users.</br>
-
-
+Windows 365 Business is a version of Windows 365 that is made specifically for use in smaller companies (up to 300 seats). It gives organizations an easy, streamlined way of providing Cloud PCs to their users.  With Windows 365 Cloud PCs, you can stream your apps, data, content, settings, and storage from the Microsoft cloud. 
 
 
 ## Prerequisites
-There are no perquisites to set up Deschutes Business.
+There are no perquisites to set up Windows 365 Business.
 
 
 ## Buy subscriptions
 
-You can buy Deschutes Business subscriptions for your users through two ways:
-- The [Microsoft products](https://www.microsoft.com/microsoft-365) site
+You can buy Windows 365 Business subscriptions for your users through two ways:
+- The [Windows 365 products site](https://www.microsoft.com/microsoft-365) site
 - Microsoft 365 admin center
 
-After buying your subscriptions, you can assign licenses to users in your business through the Microsoft 365 admin center.
+After you buy a subscription, you can use the Microsoft 365 admin center to assign licenses to users in your organization. 
 
 > [!NOTE]  
-> Users within your organization can also purchase licenses and assign them to either themselves or other users on the tenant by visiting Deschutes.com. Learn more about [self-service sign-up](/microsoft-365/commerce/subscriptions/self-service-purchase-faq).    
+>  Users in your organization can also buy licenses and assign them to either themselves or other users by visiting windows365.microsoft.com. Learn more about [self-service purchase](/microsoft-365/commerce/subscriptions/self-service-purchase-faq).    
 
 
-### Buy subscriptions through the Microsoft products site
+### Buy subscriptions through the Windows 365 products site
 
-If you don't have a Microsoft 365 tenant yet, you can buy your Deschutes Business subscriptions and create your tenant during the purchase process. For example, if you choose to buy Deschutes Business through the [Microsoft 365 products](https://www.microsoft.com/microsoft-365) page, you will see the **Thank you for choosing Deschutes Business** page and will need to do the following to complete your purchase.  
+If you don't already have Microsoft 365 subscription, you can buy your Windows 365 Business subscriptions on the Microsoft products site. Use the following steps to buy a Windows 365 Business subscription through the Windows 365 products page.   
 
 
-1. On the Deschutes Business page, select **See plans and pricing**. 
+1. On the Windows 365 Business page, select **See plans and pricing**. 
 2. On the next page, select the subscription you want to purchase, and then select **Buy now**.
-3. On the **Thank you for choosing Deschutes Business** page, enter your information to get started.
-4. In **step 1 - Let's get you started**, enter an email address that you already use. This can be your current work email address or any address you want Microsoft to use to communicate with you during setup. It is also the address where we'll send you information about your bill and renewals. Then select, **Set up account**.
-5. In **step 2 - Nice to meet you**, enter your name, business phone number, company name, and location. Select **Next**.
-6. In **step 3 - Thanks for creating your account**:
-
-    - Prove you're not a robot! Select either **Text me** or **Call me**, and enter a number where we can reach you. Select **Send Verification Code** and you'll receive a text or call right away. Enter your code and select **Verify**.
-    - Next, you will need to set up your domain name. If your email address doesn't include your business name and if you don't have a web site that uses your business name, you can easily buy a domain now. Enter the name of your business, then select **Check availability** to see whether your chosen domain is available. You can try multiple options before you make a decision. If your domain name is available, we'll let you know the cost and bill you directly with your new plan. 
-    - Select **Next** to create your user ID and business email address. Enter the name (also called an alias) that you want to use. For example, Robert Young might use RobY or RobYoung as a work alias. Add a password and select **Sign up**. Make a note of your password. We'll send an email to the address you entered in step 1 to remind you of your user ID.
-    - Select **Sign up** to create your account.
-7. In **step 4 - Payment and billing**: 
-
-    - Decide how many people in your business need a Deschutes business license, or leave the **Quantity** set to 1 for now and add more people later. Then select **Add payment method**.
-    - Add your credit card details. Then select **Save**.
-    - Confirm your information, then select **Place order**. 
-It takes a short time for Microsoft to finish setting up a new plan.
-
-8. In **step 5 - Confirmation details**, if you are ready to assign licenses to users, select **Get started**. This will take you to your Deschutes home page (deschutes.microsoft.com).
-9. On the Deschutes home page, in the **Quick actions** section, select **Manage your organization**. This will take you to the Microsoft 365 admin center where you will be able to [assign your licenses to users](/microsoft-365/business-video/set-up-cloud-pc-for-business#Assign-licenses-to-users).
+3. On the **Thank you for choosing Windows 365 Business** page, follow the steps to set up your account.
+4. In **step 5 - Confirmation details**, if you are ready to assign licenses to users, select **Get started** to go to your Cloud PC home page at windows365.microsoft.com.
+5. On the Cloud PC home page, in the **Quick actions** section, select **Manage your organization**. This takes you to the Microsoft 365 admin center where you can [assign licenses to users](/microsoft-365/business-video/set-up-cloud-pc-for-business#Assign-licenses-to-users).
 
 
 
 ### Buy a subscription through the Microsoft admin center
 
-If you already have a Microsoft 365 tenant and are an admin, you can easily buy a Deschutes Business subscription for your users in the Microsoft admin center.
+If you already have a Microsoft 365 tenant and are a Global or Billing admin, you can use the Microsoft 365 admin center to buy a Windows 365 Business subscription for your organization.
 
-1. In the Microsoft admin center, expand **Billing**, then select **Purchase services**.
-2. On the **Purchase services** page, search for **Deschutes Business**. When you locate it, select **Details**.
-3. On the **Deschutes Business** page, in the **Processor/Ram/Storage Options** section, select the **Select a subscription** menu to select a subscription for your users based on their RAM and storage needs.
-4. On the Checkout page, enter the number of subscriptions you want to buy, as well and your payment information. Then select **Place Order**.
+1. In the Microsoft admin center, go to the **Billing > Purchase services** page.
+2. On the **Purchase services** page, search for **Windows 365 Business**. When you find it, select **Details**.
+3. On the **Windows 365 Business** page, in the **Processor/Ram/Storage Options** section, use the **Select a subscription** menu to select a subscription for your users based on their CPU, RAM, and storage needs.
+4. On the **Checkout** page, enter the number of subscriptions you want to buy, as well and your payment information. Then select **Place Order**.
 5. The **You're all set!** page will appear confirming your purchase.
 
 
 ## Assign licenses to users 
 
-Whether you purchased your subscriptions through the Microsoft products site, or through the Microsoft 365 admin center, you can [assign licenses to users](/microsoft-365/admin/manage/assign-licenses-to-users) through the **Billing** page in the Microsoft 365 admin center.
+Whether you purchased your subscriptions through the Windows 365 products site, or through the Microsoft 365 admin center, you can [assign licenses to users](/microsoft-365/admin/manage/assign-licenses-to-users) through the **Billing** page in the Microsoft 365 admin center.
 
-You can choose to assign different Deschutes Business license types to a user, based on the users business need. See [Deschutes Business sizing](deschutes-sizing.md) for guidance on which license type might be suitable for your users. 
+You can assign different Windows 365 Business license types to a user, based on the users business need. See [Microsoft 365 Business sizing](Microsoft 365-sizing.md) for guidance on which license type might be suitable for your users. 
 
 
-## Accessing a Cloud PC
+## Get your users started with Cloud PC
 
-After being assigned a license, end users can access their cloud PCs in two different ways:
+After licenses are assigned, let your users know that they can access their Cloud PCs in two different ways:
 
-- Deschutes.microsoft.com
-- Microsoft Remote Desktop
+- Via the Cloud PC home page (windows365.microsoft.com)
+- By using a Microsoft Remote Desktop client
 
-### Deschutes.microsoft.com
+### Cloud PC home page
 
-End users can navigate to deschutes.microsoft.com to access their cloud PCs.  
+Users can navigate to **windows365.microsoft.com** to access their Cloud PCs.  
 
-   ![Deschutes home](../../media/deschutes/deschutes-home.png) </br>
+On their Cloud PC home page, users will see the Cloud PCs they have access to in the **Your cloud PCs** section. 
 
-#### Requirements
+![Windows 365 home](../../media/Microsoft 365/deschutes-home.png) </br>
 
-To access their cloud PC from this website, the end user's device must meet the following requirements:
+Users can select **Open in browser** to open their Cloud PC.
 
-- Supported OS versions: Windows, macOS, ChromeOS, Linux
-- A modern browser like Microsoft Edge, Internet Explorer 11, Google Chrome, Safari, or Mozilla Firefox (v55.0 and later).
-- Mobile devices aren't currently supported.
+> [!NOTE]  
+> Mobile devices aren’t currently supported.
 
-#### End-user actions
+#### User actions
 
-While on deschutes.microsoft.com, end users can perform actions on their cloud PCs by selecting the gear icon on a cloud PC card.
+While on the Cloud PC home page, users can perform actions on their Cloud PCs by selecting the gear icon on a Cloud PC card.
 
-   ![Card menu](../../media/deschutes/cloudpc-gear.png) </br>
+   ![Card menu](../../media/Microsoft 365/cloudpc-gear.png) </br>
 
-- **Restart**: Restarts the cloud PC.
-- **Rename**: Changes the name of the cloud PC shown to the user on Deschutes.com. This action won’t affect any name in MEM, AAD, on the device, or in the Remote Desktop Apps. 
+- **Restart**: Restarts the Cloud PC.
+- **Rename**: Changes the name of the Cloud PC shown to the user on Microsoft 365.com. This action won’t affect any name in MEM, AAD, on the device, or in the Remote Desktop Apps. 
 - **Reset**:  Reset does the following:
     - Reinstalls Windows 10.
     - Removes your personal files.
@@ -139,98 +113,49 @@ While on deschutes.microsoft.com, end users can perform actions on their cloud P
     - Removes your apps.
     > [!NOTE]  
     > To keep any files, make sure they are backed up to a cloud storage service such as OneDrive or saved locally on an another device or external storage. 
-- **Troubleshoot**: Troubleshoot and attempt to resolve any issues that may be preventing a user from connecting to their cloud PC. The checks run include checking whether any files or agents required for connectivity are correctly installed and ensuring that the Azure resources are available. The following table describes the return states that can result from the checks.
+- **Troubleshoot**: Troubleshoot and attempt to fix any issues that may be keeping a user from connecting to their Cloud PC. The checks run include checking whether any files or agents required for connectivity are correctly installed and ensuring that the Azure resources are available. The following table describes the return states that can result from the checks.
 
 </br>  
 
 
 |**Return state**|**Description**|
 |:-----|:-----|
-|No issues detected  <br/> |None of the checks ran discovered an issue with the cloud PC.  <br/> |
+|No issues detected  <br/> |None of the checks ran discovered an issue with the Cloud PC.  <br/> |
 |Issues resolved  <br/> |An issue was detected and fixed.  <br/> |
-|Can’t connect to cloud PC. We’re working to fix it, try again later.  <br/> |A Microsoft service required for connectivity is unavailable. Try connecting again later.   <br/> |
-|We couldn’t fix issues with your cloud PC. Contact your administrator. <br/> |An issue was detected but it was unable to be fixed. This could be due to a ongoing Windows update or another issue. If this error persists for an extended period of time the cloud PC may need to be reprovisioned.  <br/> |
+|Can’t connect to Cloud PC. We’re working to fix it, try again later.  <br/> |A Microsoft service required for connectivity is unavailable. Try connecting again later.   <br/> |
+|We couldn’t fix issues with your Cloud PC. Contact your administrator. <br/> |An issue was detected but it was unable to be fixed. This could be due to a ongoing Windows update or another issue. If this error persists for an extended period of time the Cloud PC may need to be reprovisioned.  <br/> |
 
 </br>
 
 
 ### Remote Desktop
 
-The Microsoft Remote Desktop app lets users access and control a remote PC, including a cloud PC.
-
-For a list of clients by operating system, see [Remote Desktop clients](https://docs.microsoft.com/windows-server/remote/remote-desktop-services/clients/remote-desktop-clients).
+The Microsoft Remote Desktop app lets users access and control a remote PC, including a Cloud PC. Windows 365 users can download and install the Remote Desktop client they need from the Cloud PC home page. 
 
 #### Install the Microsoft Remote Desktop app
 
 To set up their Remote Desktop client, users follow these steps:
 
-1. Download the Remote Desktop app from the Download App page on deschutes.microsoft.com.
-2. Subscribe to a workspace as described in [Remote Desktop Workspaces](https://docs.microsoft.com/windows-server/remote/remote-desktop-services/clients/windowsdesktop#workspaces).
+1. On the Cloud PC home page, select the Microsoft Remote Desktop apps icon (under the home icon). 
+2. On the Microsoft Remote Desktop apps page, download and install the Remote Desktop app you need. 
 
-   ![Remote desktop clients](../../media/deschutes/deschutes-remote-desktop-apps.png) </br> 
+   ![Remote desktop clients](../../media/Microsoft 365/Microsoft 365-remote-desktop-apps.png) </br> 
 
-
-#### End user hardware requirements for accessing cloud PCs
-
-Hardware requirements vary depending on which Microsoft Remote Desktop client the end user installs.
-
-#### Microsoft Remote Desktop client for Windows
-
-Downloads available for:
-
-- [Windows 64-bit](https://go.microsoft.com/fwlink/?linkid=2068602)
-- [Windows 32-bit](https://go.microsoft.com/fwlink/?linkid=2098960)
-
-Requirements:
-
-- **Operating systems**: Windows 10, Windows 8.1, Windows Server 2019, Windows Server 2016, Windows Server 2012 R2
-- **CPU**: 1vCPU with 1 GHz or faster processor
-- **RAM**: 1024 MB
-- **Hard drive**: 100 MB or more
-- **.NET Framework version**: 4.6.1 or later
-- **Video**: DirectX 9 or later with WDDM 1.0 driver
-
-If you'll be using Microsoft Teams on the cloud PCs, the following Window device requirements increase to:
-
-- **CPU**: At least 2vCPU with Minimum 1.6 GHz or faster processor. For higher video/screen share resolution and frame rate, a 4-core processor or better is recommended.
-- **RAM**: 1024 MB
-- **Hard drive**: 3 GB or more
-- **.NET Framework version**: 4.6.1 or later
-- **Video**: DirectX 9 or later with WDDM 1.0 driver. Background video effects require Windows 10 or a processor with AVX2 instruction set. Also, Teams audio and video offloading on a cloud PC benefits from a dedicated Graphics Processing Unit (GPU) within the device.
-
-#### Microsoft Remote Desktop client for Windows from the Microsoft Store
-
-Download from the [Microsoft Store](https://www.microsoft.com/store/p/microsoft-remote-desktop/9wzdncrfj3ps).
-
-Requirements:
-
-- **Operating systems**: Windows 10 1703 or later
-- **CPU**: 1 GHz or faster processor
-- **RAM**: 1024 MB
-- **Hard drive**: 100 MB or more
-- **Video**: DirectX 9 or later with WDDM 1.0 driver. o	Teams audio and video offloading on Cloud PC benefits from a dedicated Graphics Processing Unit (GPU) within your physical endpoint device.
-
-#### macOS, iOS/iPadOS, and Android
-
-You can install the client and find requirements for other platforms here:
-
-- [macOS](https://itunes.apple.com/app/microsoft-remote-desktop/id1295203466?mt=12)
-- [iOS/iPadOS](https://aka.ms/rdios)
-- [Android](https://play.google.com/store/apps/details?id=com.microsoft.rdc.androidx)
+For a list of clients by operating system, see [Remote Desktop clients](/windows-server/remote/remote-desktop-services/clients/remote-desktop-clients). 
 
 
 ## Installing apps
 
 Users can install apps on their Cloud PC as they would normally in Windows by either downloading them from the application’s website or by downloading them from the Microsoft Store.
 
-All Deschutes business users have local administrator privileges on their Cloud PC, so they should have the permissions required to install apps to their workspaces.
+All Windows 365 Business users have local administrator privileges on their Cloud PC, so they should have the permissions required to install apps to their workspaces.
 
 
  ## Management through Intune
 
-Deschutes business does not enroll Cloud PCs to [Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune) as part of the provisioning process. If the tenant and users are properly licensed, Cloud PCs can be enrolled to Intune using the same procedure for [enrolling Windows 10 machines to Intune](https://docs.microsoft.com/mem/intune/user-help/enroll-windows-10-device).
+Windows 365 Business does not enroll Cloud PCs to [Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune) as part of the provisioning process. If the tenant and users are properly licensed, Cloud PCs can be enrolled to Intune using the same procedure for [enrolling Windows 10 machines to Intune](https://docs.microsoft.com/mem/intune/user-help/enroll-windows-10-device).
 
 ## How to get help
 
-If you need to get help while setting up Deschutes Business in the Microsoft 365 admin center, see [Get help or support](https://docs.microsoft.com/microsoft-365/business-video/get-help-support?view=o365-worldwide).
+If you need to get help while setting up Windows 365 Business in the Microsoft 365 admin center, see [Get help or support](https://docs.microsoft.com/microsoft-365/business-video/get-help-support?view=o365-worldwide).
 
