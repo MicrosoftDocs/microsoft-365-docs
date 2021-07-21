@@ -433,7 +433,7 @@ For example, content like an Excel workbook on a OneDrive for Business site that
 > [!NOTE]
 > Notification emails are sent unprotected.
 
-You can also give people the option to override the policy, so that they're not blocked if they have a valid business need or if the policy is detecting a false positive.
+You can also give people the option to [override the policy](#user-overrides), so that they're not blocked if they have a valid business need or if the policy is detecting a false positive.
 
 The user notifications and policy tips configuration options vary depending on the monitoring locations you selected. If you selected:
 
@@ -461,12 +461,14 @@ If you selected Devices only, you will get all the same options that are availab
 > [!NOTE]
 > User notifications and policy tips are not available for the On-premises location
 
+> [!NOTE]
+> Only the policy tip from the highest priority, most restrictive rule will be shown. For example, a policy tip from a rule that blocks access to content will be shown over a policy tip from a rule that simply sends a notification. This prevents people from seeing a cascade of policy tips.
+
 To learn more about user notification and policy tip configuration and use, including how to customize the notification and tip text, see 
 - [Send email notifications and show policy tips for DLP policies](use-notifications-and-policy-tips.md#send-email-notifications-and-show-policy-tips-for-dlp-policies)
 - [Data Loss Prevention policy reference](dlp-policy-reference.md#data-loss-prevention-policy-reference)
 
-> [!NOTE]
-> Only the policy tip from the highest priority, most restrictive rule will be shown. For example, a policy tip from a rule that blocks access to content will be shown over a policy tip from a rule that simply sends a notification. This prevents people from seeing a cascade of policy tips.
+
   
 <!--The email can notify the person who sent, shared, or last modified the content and, for site content, the primary site collection administrator and document owner. In addition, you can add or remove whomever you choose from the email notification.
   
@@ -490,16 +492,26 @@ Here's what a policy tip looks like in a OneDrive for Business account.
 > The default behavior of a DLP policy, when there is no alert configured, is not to alert or trigger. This applies only to default information types. For custom information types, the system will alert even if there is no action defined in the policy.
 -->
 
+#### User overrides
+
+**User overrides** are enabled only when **Notify users in Office 365 services with a policy tip** is enabled, so user overrides go hand-in-hand with Notifications and Policy tips. The intent of user overrides is to give a user a way to bypass DLP policy blocking actions on sensitive items in Exchange, SharePoint, OneDrive or Teams.
+
+ that triggers a policy action, like block, to bypass the blocking action and continue their work.
+
+![User override options for a DLP policy](../media/dlp-user-overrides.png)
+
+> [!NOTE]
+> User overrides are not available for the On-premises repositories location.
+
+Typically, User overrides are useful when your organization is first rolling out a policy tuning, false positives, tuning,  scoping, user education,    educate your users, not block user activities,  and to identify false positivie 
 
 
 
-#### User Overrides
-
-<!-- This section covers what they are and how to best use them in conjunction with Test/Turn it on right away and link out to where to find the business justification for the override (DLP reports?  https://docs.microsoft.com/en-us/microsoft-365/compliance/view-the-dlp-reports?view=o365-worldwide)-->
+<!-- This section covers what they are and how to best use them in conjunction with Test/Turn it on right away and link out to where to find the business justification for the override (DLP reports?  https://docs.microsoft.com/en-us/microsoft-365/compliance/view-the-dlp-reports?view=o365-worldwide)  https://docs.microsoft.com/en-us/microsoft-365/compliance/view-the-dlp-reports?view=o365-worldwide#view-the-justification-submitted-by-a-user-for-an-override-->
 
 - If the policy tips in the most restrictive rule allow people to override the rule, then overriding this rule also overrides any other rules that the content matched.
  
-![User notifications and user overrides sections of DLP rule editor](../media/37b560d4-6e4e-489e-9134-d4b9daf60296.png)
+<!--![User notifications and user overrides sections of DLP rule editor](../media/37b560d4-6e4e-489e-9134-d4b9daf60296.png)-->
  
  
 - 
