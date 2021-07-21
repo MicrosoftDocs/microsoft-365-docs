@@ -67,7 +67,7 @@ sections:
       - question: |
           What determines which product keys are associated with my agreements?
         answer: |
-          Volume License product keys are provided for each Licensing ID listed in your [Microsoft Relationship Summary](licensing/license-faq). This Relationship Summary is on the Volume Licensing Service Center. For more information, see [What is a Licensing ID](/licensing/license-faq#what-is-a-licensing-id). You could have several Licensing IDs:
+          Volume License product keys are provided for each Licensing ID listed in your [Microsoft Relationship Summary](/licensing/license-faq). This Relationship Summary is on the Volume Licensing Service Center. For more information, see [What is a Licensing ID](/licensing/license-faq#what-is-a-licensing-id). You could have several Licensing IDs:
 
             - Enterprise Agreement (EA) and Select Plus customers receive product keys per product pool (Systems, Servers, and Applications).
             - Select Agreement customers receive product keys per product pool (Systems, Servers, and Applications) based on their purchasing forecasts.
