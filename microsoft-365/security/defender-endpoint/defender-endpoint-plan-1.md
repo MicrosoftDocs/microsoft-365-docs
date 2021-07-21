@@ -26,7 +26,7 @@ Soon, Defender for Endpoint will be available in two plans:
 - [Defender for Endpoint Plan 2](microsoft-defender-endpoint.md), available now.
 
 > [!TIP]
-> To learn more, see [Compare Microsoft Defender for Endpoint Plan 1 to Plan 2](defender-endpoint-plan-1-2.md).
+> To learn more about the differences between Plan 1 and Plan 2, see [Compare Microsoft Defender for Endpoint Plan 1 (preview) to Defender for Endpoint Plan 2](defender-endpoint-plan-1-2.md).
 
 This article focuses on Defender for Endpoint Plan 1, currently in preview. Use this article to:
 
