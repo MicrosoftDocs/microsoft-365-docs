@@ -103,14 +103,3 @@ Key cross-reference resources:
 - [Control which third-party cloud OAuth apps get permissions](https://docs.microsoft.com/cloud-app-security/manage-app-permissions)
 
 -->
-
-## Using app governance
-
-Using app governance to protect your tenant and its data from potentially malicious or ill-behaved apps falls into these three core capabilities:
-
-| Capability | Description |
-|:-------|:-----|
-| [App visibility and insights](app-governance-visibility-insights-overview.md) | Get a 360° view on traffic and activity of the Microsoft 365 applications in your tenant. |
-| [App policies for reinforced governance](app-governance-app-policies-overview.md) | Create proactive or reactive app policies, which will allow you to enforce governance for your Microsoft 3635 apps. |
-| [Detection and remediation](app-governance-detect-remediate-overview.md) | Based on platform detection alerts or policy-generated detection alerts, monitor your apps for anomalous app behavior and remediate them, either automatically based on app policy settings or manually. |
-|||
