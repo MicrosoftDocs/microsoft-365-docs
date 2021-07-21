@@ -10,7 +10,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+localization_priority: Priority
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -92,7 +92,7 @@ The attack surface reduction set of capabilities provides the first line of defe
 
 <a name="ngp"></a>
 
-**[Next-generation protection](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)**<br>
+**[Next-generation protection](next-generation-protection.md)**<br>
 To further reinforce the security perimeter of your network, Microsoft Defender for Endpoint uses next-generation protection designed to catch all types of emerging threats.
 
 <a name="edr"></a>
