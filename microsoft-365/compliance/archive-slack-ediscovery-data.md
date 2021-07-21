@@ -14,7 +14,6 @@ ms.collection: M365-security-compliance
 description: "Learn how to set up and use a Slack eDiscovery dat connector to import and archive instant messaging data."
 ---
 
-
 # Set up a connector to archive Slack eDiscovery data (preview)
 
 The Slack eDiscovery data connector provided by Microsoft helps you to import and archive instant messaging data (such as messages, attachments, links, and revisions) from your organization's Slack workspaces to Microsoft 365. The data connector pulls data from the Slack API, converts it to an email message format, and then imports those items to user mailboxes in Microsoft 364. After the Slack data is imported, you can apply compliance solutions, such as Litigation hold, Advanced eDiscovery, Communication compliance, and retention settings to the Slack content. Using a Slack eDiscovery data connector to import and archive data in Microsoft 365 can help your organization stay compliant with government and regulatory policies.
@@ -100,8 +99,6 @@ Besides messages, you can also specify what other options you would want to inge
 
 To see the status of the connector, please see the tab “Connectors” in the Data Connectors Home page. You should be able to locate your connector by the name you had provided above, the column “Connection status with source” should show whether your connector is set up \[If it displays “Connected”, that indicates connector set up is done and it's ready to fetch the data from Slack\]
 
-**Limitation:**
+## Known issues
 
-Following is the list of limitations in current architecture –
-
--   **Ingestion of attachments** – Currently we support attachments of maximum 10 MB for archiving into M365
+- At this time, we don't support importing attachments or items that are larger than 10 MB. Support for larger items will be available at a later date.
