@@ -236,10 +236,6 @@ For detailed syntax and parameter information, see [Get-TenantAllowBlockListSpoo
 
     For example, `contoso.com/*` is allowed; `contoso.com*` or `contoso.com/ab*` are not allowed.
 
-  - All subpaths are not implied by a right wildcard.
-
-    For example, `contoso.com/*` does not include `contoso.com/a`.
-
   - `*.com*` is invalid (not a resolvable domain and the right wildcard does not follow a forward slash).
 
   - Wildcards are not allowed in IP addresses.
