@@ -13,7 +13,7 @@ metadata:
   ms.collection: m365-security-compliance
   author: mjcaparas #Required; your GitHub user alias, with correct capitalization.
   ms.author: macapara #Required; microsoft alias of author; optional team alias.
-  ms.date: 02/5/2021 #Required; mm/dd/yyyy format.
+  ms.date: 07/21/2021
   localization_priority: Priority
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
@@ -28,6 +28,8 @@ landingContent:
         links:
         - text: What is Microsoft Defender for Endpoint?
           url:  microsoft-defender-endpoint.md
+        - text: Announcing Plan 1 and Plan 2
+          url: defender-endpoint-plan1-2.md
       - linkListType: whats-new
         links:
           - text: What's new in Microsoft Defender for Endpoint
