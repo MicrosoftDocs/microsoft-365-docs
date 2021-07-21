@@ -19,6 +19,8 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - AdminSurgePortfolio
+- AdminTemplateSet
+- m365solution-removeemployee
 search.appverid:
 - BCS160
 - MET150
