@@ -39,7 +39,7 @@ You will see a list of apps and this information:
 
 - App Name
 - Publisher
-- App certification
+- M365 certification
 
   Indicates whether the app is compatible with Microsoft technologies, compliant with cloud app security best practices, and supported by Microsoft.
 
@@ -74,7 +74,7 @@ The app details pane provides additional information on these tabs:
 | Permissions | See a summary of the permissions granted to and used by the app and the list of specific permissions. See the [Microsoft Graph permissions reference](/graph/permissions-reference) for more information. |
 |||
 
-For an enabled app, there is also a **Disable app** control to disable the use of the selected app and an **Enable app** control to enable the use of the disabled app. These actions require these [administrator roles](app-governance-get-started.md#administrator-roles):
+For an enabled app, there is also a **Disable app** control to disable the use of the selected app and an **Enable app** control to enable the use of the disabled app. These actions require these administrator roles:
 
 - Compliance Administrator
 - Global Administrator
