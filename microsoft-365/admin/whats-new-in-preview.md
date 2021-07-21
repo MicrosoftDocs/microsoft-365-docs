@@ -45,6 +45,32 @@ And if you'd like to know what's new with other Microsoft cloud services:
 - [Office updates](/OfficeUpdates/)
 - [How to check Windows release health](/windows/deployment/update/check-release-health)
 
+## July 2021
+
+### Microsoft 365 admin center search
+
+You can now search for incident IDs in the Microsoft 365 admin center. You may learn about current incidents through social media, industry publications or from other admins. You can now go to the admin center to look up more details about the incident and to understand the impact to your organization. Just search for the incident ID in the admin center.
+
+:::image type="content" source="../media/incident-id.png" alt-text="Screenshot: Searching for incident ID in the admin center":::
+
+### Support ticket insight for Premier organizations
+
+We've added 2 graphs called **Volume trend** and **Volume trend by product** to give you visual insights about your support volume.
+
+The liner graph under **Volume trend** tab highlights the trend if support cases are increasing or decreasing for your organization month over month. You can hover on the graph to check the number of support cases created in each month.
+
+:::image type="content" source="../media/SuppInsight-voltrnd.PNG" alt-text="Screenshot: Graph that highlights the trend if support cases are increasing or decreasing for your organization month over month":::
+
+The **Volume trend by product** graph shows the top 3 products of each month with the highest support cases. We've enabled filtering in the table and you can now filter the results by **Product**, **Severity**, and **Date**.
+
+:::image type="content" source="../media/SuppInsight-voltrndproduct.PNG" alt-text="Screenshot: Graph shows the top 3 products of each month with the highest support cases":::
+
+We've also added 2 new fields, **Severity** and **Closed Date** in the **View Service Request** table to give you more insights about your tickets.
+
+:::image type="content" source="../media/SuppInsight-date-sev.PNG" alt-text="Screenshot: Table that shows support ticket sorting by severity and date.":::
+
+To check out these updates in Microsoft 365 admin center, go to **Support** > **View Service requests** in left navigation pane.
+
 ## June 2021
 
 ### Microsoft 365 admin center search
@@ -287,7 +313,7 @@ We've heard from a lot of admins that they need to share information about group
 
 ### Microsoft 365 solution and architecture center
 
-Just this month, we released a new site on [https://docs.microsoft.com]() called the [Microsoft 365 solution and architecture center](../solutions/index.yml), which brings together the technical guidance you need to understand, plan, and implement integrated Microsoft 365 solutions for secure and compliant collaboration. In this center, you'll find:
+Just this month, we released a new site on docs.microsoft.com called the [Microsoft 365 solution and architecture center](../solutions/index.yml), which brings together the technical guidance you need to understand, plan, and implement integrated Microsoft 365 solutions for secure and compliant collaboration. In this center, you'll find:
 
 - Foundational solution guidance
 - Workload solutions and scenario guidance

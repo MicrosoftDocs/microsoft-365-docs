@@ -35,7 +35,7 @@ ms.technology: mde
 >[!NOTE]
 > Configuration score is now part of threat and vulnerability management as Microsoft Secure Score for Devices.
 
-Your score for devices is visible in the [threat and vulnerability management dashboard](tvm-dashboard-insights.md) of the Microsoft Defender Security Center. A higher Microsoft Secure Score for Devices means your endpoints are more resilient from cybersecurity threat attacks. It reflects the collective security configuration state of your devices across the following categories:
+Your score for devices is visible in the [threat and vulnerability management dashboard](tvm-dashboard-insights.md) of the Microsoft 365 Defender portal. A higher Microsoft Secure Score for Devices means your endpoints are more resilient from cybersecurity threat attacks. It reflects the collective security configuration state of your devices across the following categories:
 
 - Application
 - Operating system
@@ -51,7 +51,7 @@ Forward Microsoft Defender for Endpoint signals, giving Microsoft Secure Score v
 
 Changes might take up to a few hours to reflect in the dashboard.
 
-1. In the navigation pane, go to **Settings** > **Advanced features** 
+1. In the navigation pane, go to **Settings** > **Endpoints** > **General** > **Advanced features** 
 
 2. Scroll down to **Microsoft Secure Score** and toggle the setting to **On**.
 
@@ -73,19 +73,21 @@ The data in the Microsoft Secure Score for Devices card is the product of meticu
 
 Improve your security configuration by remediating issues from the security recommendations list. As you do so, your Microsoft Secure Score for Devices improves and your organization becomes more resilient against cybersecurity threats and vulnerabilities.
 
-1. From the Microsoft Secure Score for Devices card in the threat and vulnerability management dashboard, select the one of the categories. You'll view the list of recommendations related to that category. It will take you to the [**Security recommendations**](tvm-security-recommendation.md) page. If you want to see all security recommendations, once you get to the Security recommendations page, clear the search field.
+1. From the Microsoft Secure Score for Devices card in the threat and vulnerability management dashboard, select one of the categories. You'll view the list of recommendations related to that category. It will take you to the [**Security recommendations**](tvm-security-recommendation.md) page. If you want to see all security recommendations, once you get to the Security recommendations page, clear the search field.
 
 2. Select an item on the list. The flyout panel will open with details related to the recommendation. Select **Remediation options**.
 
-   ![Security controls related security recommendations](images/tvm_security_controls.png)
+   :::image type="content" alt-text="Security controls related security recommendations." source="images/security-controls.png":::
 
 3. Read the description to understand the context of the issue and what to do next. Select a due date, add notes, and select **Export all remediation activity data to CSV** so you can attach it to an email for follow-up.
 
 4. **Submit request**. You'll see a confirmation message that the remediation task has been created.
-   ![Remediation task creation confirmation](images/tvm_remediation_task_created.png)
+
+   :::image type="content" alt-text="Remediation task creation confirmation." source="images/remediation-task-created.png":::
 
 5. Save your CSV file.
-   ![Save csv file](images/tvm_save_csv_file.png)
+
+   :::image type="content" alt-text="Save csv file." source="images/tvm_save_csv_file.png":::
 
 6. Send a follow-up email to your IT Administrator and allow the time that you've allotted for the remediation to propagate in the system.
 

@@ -5,18 +5,18 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 
+ms.date:
 audience: ITPro
 ms.topic: conceptual
 f1_keywords:
 - 'ms.o365.cc.DLPLandingPage'
 ms.service: O365-seccomp
 localization_priority: Priority
-ms.collection: 
+ms.collection:
 - M365-security-compliance
 - m365solution-mip
 - m365initiative-compliance
-search.appverid: 
+search.appverid:
 - MET150
 description: "Prepare for and deploy the Microsoft Compliance Extension."
 ---
@@ -50,7 +50,7 @@ Before you get started, you should confirm your [Microsoft 365 subscription](htt
 - Microsoft 365 E5 information protection and governance
 - Microsoft 365 A5 information protection and governance
 
-For detailed licensing guidance, see [Microsoft 365 licensing guidance for security & compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection).
+For detailed licensing guidance, see [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection).
 
 - Your org must be licensed for Endpoint DLP
 - Your devices must be running Windows 10 x64 build 1809 or later.
@@ -79,11 +79,11 @@ Deploying Microsoft Compliance Extension is a multi-phase process. You can choos
 4. [Deploy using Group Policy](#deploy-using-group-policy)
 5. [Test the Extension](#test-the-extension)
 6. [Use the Alerts Management Dashboard to viewing Chrome DLP alerts](#use-the-alerts-management-dashboard-to-viewing-chrome-dlp-alerts)
-7. [Viewing Chrome DLP data in activity explorer](#viewing-chrome-dlp-data-in-activity-explorer) 
+7. [Viewing Chrome DLP data in activity explorer](#viewing-chrome-dlp-data-in-activity-explorer)
 
 ### Prepare infrastructure
 
-If you are rolling out the Microsoft Compliance Extension to all your monitored Windows 10 devices, you should remove Google Chrome from the unallowed app and unallowed browser lists. For more information, see [Unallowed browsers](endpoint-dlp-using.md#unallowed-browsers). If you are only rolling it out to a few devices, you can leave Chrome on the unallowed browser or unallowed app lists. The Microsoft Compliance Extension will bypass the restrictions of both lists for those computers where it is installed.  
+If you are rolling out the Microsoft Compliance Extension to all your monitored Windows 10 devices, you should remove Google Chrome from the unallowed app and unallowed browser lists. For more information, see [Unallowed browsers](endpoint-dlp-using.md#unallowed-browsers). If you are only rolling it out to a few devices, you can leave Chrome on the unallowed browser or unallowed app lists. The Microsoft Compliance Extension will bypass the restrictions of both lists for those computers where it is installed.
 
 ### Prepare your devices
 
@@ -94,43 +94,42 @@ If you are rolling out the Microsoft Compliance Extension to all your monitored 
 
 ### Basic Setup Single Machine Selfhost
 
-This is the recommended method. 
+This is the recommended method.
 
-1. Sign in to the Windows 10 computer on which you want to install the Microsoft Compliance Extension on, and run this PowerShell script as an administrator. 
+1. Sign in to the Windows 10 computer on which you want to install the Microsoft Compliance Extension on, and run this PowerShell script as an administrator.
 
    ```powershell
    Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
-   ``` 
+   ```
 
-2.	Navigate to [Microsoft Compliance Extension - Chrome Web Store (google.com)](https://chrome.google.com/webstore/detail/microsoft-compliance-exte/echcggldkblhodogklpincgchnpgcdco).
+2. Navigate to [Microsoft Compliance Extension - Chrome Web Store (google.com)](https://chrome.google.com/webstore/detail/microsoft-compliance-exte/echcggldkblhodogklpincgchnpgcdco).
 
-3.	Install the extension using the instructions on the Chrome Web Store page.
+3. Install the extension using the instructions on the Chrome Web Store page.
 
 ### Deploy using Microsoft Endpoint Manager
 
 Use this setup method for organization-wide deployments.
 
-
 ##### Enabling Required Registry Key via Microsoft Endpoint Manager
 
-1.	Create a PowerShell script with the following contents:
+1. Create a PowerShell script with the following contents:
 
     ```powershell
     Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
     ```
 
-2.	Sign in to the [Microsoft Endpoint Manager Admin Center](https://endpoint.microsoft.com).
+2. Sign in to the [Microsoft Endpoint Manager Admin Center](https://endpoint.microsoft.com).
 
-3.	Navigate to **Devices** > **Scripts** and select **Add**.
+3. Navigate to **Devices** > **Scripts** and select **Add**.
 
-4.	Browse to the location of the script created when prompted.
+4. Browse to the location of the script created when prompted.
 
-5.	Select the following settings:
+5. Select the following settings:
     1. Run this script using the logged-on credentials: YES
     1. Enforce script signature check: NO
     1. Run script in 64-bit PowerShell Host: YES
 
-6.	Select the proper device groups and apply the policy.
+6. Select the proper device groups and apply the policy.
 
 #### Microsoft Endpoint Manager Force Install Steps
 
@@ -138,112 +137,110 @@ Before adding the Microsoft Compliance Extension to the list of force-installed 
 
  After ingesting the ADMX, the steps below can be followed to create a configuration profile for this extension.
 
-1.	Sign in to the Microsoft Endpoint Manager Admin Center (https://endpoint.microsoft.com).
+1. Sign in to the Microsoft Endpoint Manager Admin Center (https://endpoint.microsoft.com).
 
-2.	Navigate to Configuration Profiles.
+2. Navigate to Configuration Profiles.
 
-3.	Select **Create Profile**.
+3. Select **Create Profile**.
 
-4.	Select **Windows 10** as the platform.
+4. Select **Windows 10** as the platform.
 
-5.	Select **Custom** as profile type.
+5. Select **Custom** as profile type.
 
-6.	Select the **Settings** tab.
+6. Select the **Settings** tab.
 
-7.	Select **Add**.
+7. Select **Add**.
 
-8.	Enter the following policy information.
-    
+8. Enter the following policy information.
+
     OMA-URI: `./Device/Vendor/MSFT/Policy/Config/Chrome~Policy~googlechrome~Extensions/ExtensionInstallForcelist`<br/>
     Data type: `String`<br/>
     Value: `<enabled/><data id="ExtensionInstallForcelistDesc" value="1&#xF000; echcggldkblhodogklpincgchnpgcdco;https://clients2.google.com/service/update2/crx"/>`
 
-9.	Click create.
+9. Click create.
 
 ### Deploy using Group Policy
 
 If you don't want to use Microsoft Endpoint Manager, you can use group policies to deploy the Microsoft Compliance Extension across your organization
 
-1. Your devices must be manageable via Group Policy, and you need to import all Chrome ADMXs into the Group Policy Central Store. For more information, see [How to create and manage the Central Store for Group Policy Administrative Templates in Windows](https://docs.microsoft.com/troubleshoot/windows-client/group-policy/create-and-manage-central-store).
+1. Your devices must be manageable via Group Policy, and you need to import all Chrome ADMXs into the Group Policy Central Store. For more information, see [How to create and manage the Central Store for Group Policy Administrative Templates in Windows](/troubleshoot/windows-client/group-policy/create-and-manage-central-store).
 
-2.	Create a PowerShell script using this PowerShell command:
+2. Create a PowerShell script using this PowerShell command:
 
     ```powershell
     Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
     ```
 
-3.	Open the **Group Policy Management Console** and navigate to your organizational unit (OU).
+3. Open the **Group Policy Management Console** and navigate to your organizational unit (OU).
 
-4.	Right-click and select **Create a GPO in this domain and Link it here**. When prompted, assign a descriptive name to this group policy object (GPO) and finish creating it.
+4. Right-click and select **Create a GPO in this domain and Link it here**. When prompted, assign a descriptive name to this group policy object (GPO) and finish creating it.
 
-5.	Right-click the GPO and select **Edit**.
+5. Right-click the GPO and select **Edit**.
 
-6.	Go to **Computer Configuration** > **Preferences** > **Control Panel Settings** > **Scheduled Tasks**.
+6. Go to **Computer Configuration** > **Preferences** > **Control Panel Settings** > **Scheduled Tasks**.
 
-7.	Create a new immediate task by selecting right-clicking and selecting **New** > **Immediate Task (At least Windows 7)**.
+7. Create a new immediate task by selecting right-clicking and selecting **New** > **Immediate Task (At least Windows 7)**.
 
-8.	Give the task a name & description.
+8. Give the task a name & description.
 
-9.	Choose the corresponding account to run the immediate task, for example NT Authority
+9. Choose the corresponding account to run the immediate task, for example NT Authority
 
-10.	Select **Run with highest privileges**.
+10. Select **Run with highest privileges**.
 
-11.	Configure the policy for Windows 10.
+11. Configure the policy for Windows 10.
 
-12.	In the **Actions** tab, select the action **Start a program**.
+12. In the **Actions** tab, select the action **Start a program**.
 
-13.	Enter the path to the Program/Script created in Step 1.
+13. Enter the path to the Program/Script created in Step 1.
 
-14.	Select **Apply**.
+14. Select **Apply**.
 
 #### Adding the Chrome Extension to the ForceInstall List
 
-1.	In the Group Policy Management Editor, navigate to your OU.
+1. In the Group Policy Management Editor, navigate to your OU.
 
-2.	Expand the following path **Computer/User configuration** > **Policies** > **Administrative templates** > **Classic administrative templates** > **Google** > **Google Chrome** > **Extensions**. This path may vary depending on your configuration.
+2. Expand the following path **Computer/User configuration** > **Policies** > **Administrative templates** > **Classic administrative templates** > **Google** > **Google Chrome** > **Extensions**. This path may vary depending on your configuration.
 
-3.	Select **Configure the list of force-installed extensions**.
+3. Select **Configure the list of force-installed extensions**.
 
-4.	Right click and select **Edit**.
+4. Right click and select **Edit**.
 
-5.	Select **Enabled**.
+5. Select **Enabled**.
 
-6.	Select **Show**.
+6. Select **Show**.
 
-7.	Under **Value**, add the following entry: `echcggldkblhodogklpincgchnpgcdco;https://clients2.google.com/service/update2/crx`
+7. Under **Value**, add the following entry: `echcggldkblhodogklpincgchnpgcdco;https://clients2.google.com/service/update2/crx`
 
-8.	Select **OK** and then **Apply**.
+8. Select **OK** and then **Apply**.
 
 ### Test the Extension
 
-#### Upload to cloud service, or access by unallowed browsers Cloud Egress  
+#### Upload to cloud service, or access by unallowed browsers Cloud Egress
 
 1. Create or get a sensitive item and, try to upload a file to one of your organization’s restricted service domains. The sensitive data must match one of our built-in [Sensitive Info Types](sensitive-information-type-entity-definitions.md), or one of your organization’s sensitive information types. You should get a DLP toast notification on the device you are testing from that shows that this action is not allowed when the file is open.
 
-#### Testing other DLP scenarios in Chrome 
+#### Testing other DLP scenarios in Chrome
 
 Now that you’ve removed Chrome from the disallowed browsers/apps list, you can test the scenarios below to confirm the behavior meets your organization’s requirements:
 
 - Copy data from a sensitive item to another document using the Clipboard
-    - To test, open a file that is protected against copy to clipboard actions in the Chrome browser and attempt to copy data from the file.
-    - Expected Result: A DLP toast notification showing that this action is not allowed when the file is open.
+  - To test, open a file that is protected against copy to clipboard actions in the Chrome browser and attempt to copy data from the file.
+  - Expected Result: A DLP toast notification showing that this action is not allowed when the file is open.
 - Print a document
-    - To test, open a file that is protected against print actions in the Chrome browser and attempt to print the file.
-    - Expected Result: A DLP toast notification showing that this action is not allowed when the file is open.
+  - To test, open a file that is protected against print actions in the Chrome browser and attempt to print the file.
+  - Expected Result: A DLP toast notification showing that this action is not allowed when the file is open.
 - Copy to USB Removeable Media
-    - To test, try to save the file to a removeable media storage.
-    - Expected Result: A DLP toast notification showing that this action is not allowed when the file is open.
+  - To test, try to save the file to a removeable media storage.
+  - Expected Result: A DLP toast notification showing that this action is not allowed when the file is open.
 - Copy to Network Share
-    - To test, try to save the file to a network share.
-    - Expected Result: A DLP toast notification showing that this action is not allowed when the file is open.
-
+  - To test, try to save the file to a network share.
+  - Expected Result: A DLP toast notification showing that this action is not allowed when the file is open.
 
 ### Use the Alerts Management Dashboard to viewing Chrome DLP alerts
 
 1. Open the **Data loss prevention** page in the [Microsoft 365 Compliance center](https://compliance.microsoft.com) and select **Alerts**.
 
 2. Refer to the procedures in [How to configure and view alerts for your DLP policies](dlp-configure-view-alerts-policies.md) to view alerts for your Endpoint DLP policies.
-
 
 ### Viewing Chrome DLP data in activity explorer
 
@@ -260,19 +257,20 @@ Now that you’ve removed Chrome from the disallowed browsers/apps list, you can
 2. Incognito mode is not supported and must be disabled.
 
 ## Next steps
+
 Now that you have onboarded devices and can view the activity data in Activity explorer, you are ready to move on to your next step where you create DLP policies that protect your sensitive items.
 
 - [Using Endpoint data loss prevention](endpoint-dlp-using.md)
 
 ## See also
 
-- [Learn about Endpoint data loss prevention ](endpoint-dlp-learn-about.md)
-- [Using Endpoint data loss prevention ](endpoint-dlp-using.md)
+- [Learn about Endpoint data loss prevention](endpoint-dlp-learn-about.md)
+- [Using Endpoint data loss prevention](endpoint-dlp-using.md)
 - [Learn about data loss prevention](dlp-learn-about-dlp.md)
 - [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md)
 - [Get started with Activity explorer](data-classification-activity-explorer.md)
-- [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/)
-- [Onboarding tools and methods for Windows 10 machines](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)
+- [Microsoft Defender for Endpoint](/windows/security/threat-protection/)
+- [Onboarding tools and methods for Windows 10 machines](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)
 - [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)
-- [Azure AD joined devices](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join)
+- [Azure AD joined devices](/azure/active-directory/devices/concept-azure-ad-join)
 - [Download the new Microsoft Edge based on Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)

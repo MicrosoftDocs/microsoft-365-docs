@@ -1,5 +1,5 @@
 ---
-title: Update incidents API
+title: Update incident API
 description: Learn how to update incidents using Microsoft 365 Defender API
 keywords: update, api, incident
 search.product: eADQiWindows 10XVcnh
@@ -107,17 +107,17 @@ Here's an example of the request.
     "determination": "Malware",
     "tags": ["Yossi's playground", "Don't mess with the Zohan"],
     "comments": [
-		  {
-			  "comment": "pen testing",
-			  "createdBy": "secop2@contoso.com",
-			  "createdTime": "2021-05-02T09:34:21.5519738Z"
-		  },
-		  {
-			  "comment": "valid incident",
-			  "createdBy": "secop2@contoso.comt",
-			  "createdTime": "2021-05-02T09:36:27.6652581Z"
-		  }
-	  ]
+          {
+              "comment": "pen testing",
+              "createdBy": "secop2@contoso.com",
+              "createdTime": "2021-05-02T09:34:21.5519738Z"
+          },
+          {
+              "comment": "valid incident",
+              "createdBy": "secop2@contoso.comt",
+              "createdTime": "2021-05-02T09:36:27.6652581Z"
+          }
+      ]
 }
 ```
 

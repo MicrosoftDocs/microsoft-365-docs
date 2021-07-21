@@ -14,7 +14,7 @@
          href: office-365-evaluation.md
        - name: What's new in Defender for Office 365
          href: whats-new-in-defender-for-office-365.md
-       - name: Defender for Office 365 in the Microsoft 365 security center
+       - name: Defender for Office 365 in the Microsoft 365 Defender portal
          href: ../defender/microsoft-365-security-center-mdo.md
        - name: Exchange Online Protection
          items: 
@@ -26,7 +26,7 @@
               href: quarantine-email-messages.md
        - name: Safe Attachments for SharePoint, OneDrive, and Microsoft Teams
          href: turn-on-mdo-for-spo-odb-and-teams.md
-       - name: Microsoft 365 security center overview
+       - name: Microsoft 365 Defender portal overview
          href: ../defender/overview-security-center.md
        - name: The Email entity page
          href: mdo-email-entity-page.md
@@ -34,6 +34,8 @@
          href: office-365-air.md
        - name: How automated investigation and response works
          href: automated-investigation-response-office.md
+       - name: Email analysis in investigations
+         href: email-analysis-investigations.md
        - name: Remediation actions
          href: air-remediation-actions.md
        - name: Anti-malware protection
@@ -66,7 +68,7 @@
        href: protect-against-threats.md
      - name: Integrate Defender for Office 365 with Defender for Endpoint
        href: integrate-office-365-ti-with-mde.md
-     - name: Permissions in the Microsoft 365 security center
+     - name: Permissions in the Microsoft 365 Defender portal
        href: permissions-microsoft-365-security-center.md
      - name: Permissions in the Security & Compliance Center
        href: permissions-in-the-security-and-compliance-center.md
@@ -156,8 +158,16 @@
        href: air-custom-reporting.md
      - name: Advanced Spam Filter (ASF) settings
        href: advanced-spam-filtering-asf-options.md
-     - name: Manage the Tenant Allow/Block List
-       href: tenant-allow-block-list.md
+     - name: Tenant Allow/Block List
+       items:
+       - name: Manage the Tenant Allow/Block List
+         href: tenant-allow-block-list.md
+       - name: Add blocks in the Tenant Allow/Block List
+         href: manage-tenant-blocks.md
+       - name: Add allows in the Tenant Allow/Block List
+         href: manage-tenant-allows.md
+       - name: Modify and remove entries in the Tenant Allow/Block List
+         href: modify-remove-entries-tenant-allow-block.md
      - name: Message trace in the Security & Compliance Center
        href: message-trace-scc.md
      - name: Report messages and files to Microsoft
@@ -326,8 +336,6 @@
        href: mail-flow-intelligence-in-office-365.md
      - name: "Reference:Policies, practices, and guidelines"
        href: reference-policies-practices-and-guidelines.md
-     - name: Safety tips in email messages
-       href: safety-tips-in-office-365.md
      - name: Sending mail to Office 365
        href: sending-mail-to-office-365.md
      - name: Services for non-customers
@@ -349,4 +357,4 @@
    - name: Microsoft Defender for Endpoint
      href: ../defender-endpoint/index.yml
    - name: Microsoft Defender for Identity
-     href: https://docs.microsoft.com/defender-for-identity/
+     href: /defender-for-identity/

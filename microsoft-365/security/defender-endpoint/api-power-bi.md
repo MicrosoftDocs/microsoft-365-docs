@@ -1,6 +1,6 @@
 ---
 title: Microsoft Defender for Endpoint APIs connection to Power BI
-ms.reviewer: 
+ms.reviewer:
 description: Create a Power Business Intelligence (BI) report on top of Microsoft Defender for Endpoint APIs.
 keywords: apis, supported apis, Power BI, reports
 search.product: eADQiWindows 10XVcnh
@@ -28,7 +28,7 @@ ms.custom: api
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-- Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -44,51 +44,50 @@ The first example demonstrates how to connect Power BI to Advanced Hunting API a
 
 - Click **Get Data** > **Blank Query**
 
-    ![Image of create blank query](images/power-bi-create-blank-query.png)
+  ![Image of create blank query](images/power-bi-create-blank-query.png)
 
 - Click **Advanced Editor**
 
-    ![Image of open advanced editor](images/power-bi-open-advanced-editor.png)
+  ![Image of open advanced editor](images/power-bi-open-advanced-editor.png)
 
 - Copy the below and paste it in the editor:
 
 ```
-	let 
-		AdvancedHuntingQuery = "DeviceEvents | where ActionType contains 'Anti' | limit 20",
+    let
+        AdvancedHuntingQuery = "DeviceEvents | where ActionType contains 'Anti' | limit 20",
 
-		HuntingUrl = "https://api.securitycenter.microsoft.com/api/advancedqueries",
+        HuntingUrl = "https://api.securitycenter.microsoft.com/api/advancedqueries",
 
-		Response = Json.Document(Web.Contents(HuntingUrl, [Query=[key=AdvancedHuntingQuery]])),
+        Response = Json.Document(Web.Contents(HuntingUrl, [Query=[key=AdvancedHuntingQuery]])),
 
-		TypeMap = #table(
-			{ "Type", "PowerBiType" },
-			{
-				{ "Double",   Double.Type },
-				{ "Int64",    Int64.Type },
-				{ "Int32",    Int32.Type },
-				{ "Int16",    Int16.Type },
-				{ "UInt64",   Number.Type },
-				{ "UInt32",   Number.Type },
-				{ "UInt16",   Number.Type },
-				{ "Byte",     Byte.Type },
-				{ "Single",   Single.Type },
-				{ "Decimal",  Decimal.Type },
-				{ "TimeSpan", Duration.Type },
-				{ "DateTime", DateTimeZone.Type },
-				{ "String",   Text.Type },
-				{ "Boolean",  Logical.Type },
-				{ "SByte",    Logical.Type },
-				{ "Guid",     Text.Type }
-			}),
+        TypeMap = #table(
+            { "Type", "PowerBiType" },
+            {
+                { "Double",   Double.Type },
+                { "Int64",    Int64.Type },
+                { "Int32",    Int32.Type },
+                { "Int16",    Int16.Type },
+                { "UInt64",   Number.Type },
+                { "UInt32",   Number.Type },
+                { "UInt16",   Number.Type },
+                { "Byte",     Byte.Type },
+                { "Single",   Single.Type },
+                { "Decimal",  Decimal.Type },
+                { "TimeSpan", Duration.Type },
+                { "DateTime", DateTimeZone.Type },
+                { "String",   Text.Type },
+                { "Boolean",  Logical.Type },
+                { "SByte",    Logical.Type },
+                { "Guid",     Text.Type }
+            }),
 
-		Schema = Table.FromRecords(Response[Schema]),
-		TypedSchema = Table.Join(Table.SelectColumns(Schema, {"Name", "Type"}), {"Type"}, TypeMap , {"Type"}),
-		Results = Response[Results],
-		Rows = Table.FromRecords(Results, Schema[Name]),
-		Table = Table.TransformColumnTypes(Rows, Table.ToList(TypedSchema, (c) => {c{0}, c{2}}))
+        Schema = Table.FromRecords(Response[Schema]),
+        TypedSchema = Table.Join(Table.SelectColumns(Schema, {"Name", "Type"}), {"Type"}, TypeMap , {"Type"}),
+        Results = Response[Results],
+        Rows = Table.FromRecords(Results, Schema[Name]),
+        Table = Table.TransformColumnTypes(Rows, Table.ToList(TypedSchema, (c) => {c{0}, c{2}}))
 
-	in Table
-
+    in Table
 ```
 
 - Click **Done**
@@ -113,34 +112,33 @@ The first example demonstrates how to connect Power BI to Advanced Hunting API a
 
 ## Connect Power BI to OData APIs
 
-- The only difference from the above example is the query inside the editor. 
+- The only difference from the above example is the query inside the editor.
 
 - Copy the below and paste it in the editor to pull all **Machine Actions** from your organization:
 
 ```
-	let
+    let
 
-		Query = "MachineActions",
+        Query = "MachineActions",
 
-		Source = OData.Feed("https://api.securitycenter.microsoft.com/api/" & Query, null, [Implementation="2.0", MoreColumns=true])
-	in
-		Source
-
+        Source = OData.Feed("https://api.securitycenter.microsoft.com/api/" & Query, null, [Implementation="2.0", MoreColumns=true])
+    in
+        Source
 ```
 
 - You can do the same for **Alerts** and **Machines**.
-
 - You also can use OData queries for queries filters, see [Using OData Queries](exposed-apis-odata-samples.md)
 
-
 ## Power BI dashboard samples in GitHub
+
 For more information see the [Power BI report templates](https://github.com/microsoft/MicrosoftDefenderATP-PowerBI).
 
 ## Sample reports
-View the Microsoft Defender for Endpoint Power BI report samples. For more information, see [Browse code samples](https://docs.microsoft.com/samples/browse/?products=mdatp).
 
+View the Microsoft Defender for Endpoint Power BI report samples. For more information, see [Browse code samples](/samples/browse/?products=mdatp).
 
-## Related topic
+## Related topics
+
 - [Defender for Endpoint APIs](apis-intro.md)
 - [Advanced Hunting API](run-advanced-query-api.md)
 - [Using OData Queries](exposed-apis-odata-samples.md)

@@ -100,10 +100,11 @@ Here is an example of the response.
             "exploitTypes": [],
             "exploitUris": []
         }
+    ]
 }
 ```
 
 ## See also
 
-- [Risk-based Threat & Vulnerability Management](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [Vulnerabilities in your organization](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-weaknesses)
+- [Risk-based Threat & Vulnerability Management](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Vulnerabilities in your organization](/microsoft-365/security/defender-endpoint/tvm-weaknesses)

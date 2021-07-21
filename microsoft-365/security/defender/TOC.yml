@@ -6,17 +6,17 @@
       items:
       - name: What is Microsoft 365 Defender?
         href: microsoft-365-defender.md
-      - name: Microsoft 365 security center
+      - name: Microsoft 365 Defender Overview
         href: overview-security-center.md  
       - name: What's new in Microsoft 365 Defender
         href: whats-new.md
-      - name: Defender for Endpoint in the Microsoft 365 security center
+      - name: Defender for Endpoint in Microsoft 365 Defender
         href: microsoft-365-security-center-mde.md
-      - name: Defender for Office 365 in the Microsoft 365 security center
+      - name: Defender for Office 365 in Microsoft 365 Defender
         href: microsoft-365-security-center-mdo.md  
-      - name: Redirecting Defender for Endpoint to Microsoft 365 security center
+      - name: Redirecting Defender for Endpoint to Microsoft 365 Defender
         href: microsoft-365-security-mde-redirection.md 
-      - name: Redirecting Office 365 Security and Compliance Center to Microsoft 365 security center
+      - name: Redirecting Office 365 Security and Compliance Center to Microsoft 365 Defender
         href: microsoft-365-security-mdo-redirection.md   
       - name: Microsoft 365 Defender integration with Azure Sentinel
         href: microsoft-365-defender-integration-with-azure-sentinel.md   
@@ -34,32 +34,62 @@
           href: data-privacy.md
         - name: Microsoft security portals
           href: portals.md
-    - name: Evaluate capabilities
+    - name: Evaluate and pilot
       items: 
-        - name: Create a trial lab
+        - name: Overview
+          href: eval-overview.md 
+        - name: Create the eval environment
+          href: eval-create-eval-environment.md  
+        - name: Defender for Identity
           items:
-            - name: Trial lab overview
-              href: m365d-evaluation.md
-            - name: Prepare
-              href: prepare-m365d-eval.md
-            - name: Setup
-              href: setup-m365deval.md
-            - name: Configure Microsoft 365 Defender pillars and onboard
-              href: config-m365d-eval.md
-            - name: Generate a test alert
-              href: generate-test-alert.md                       
-        - name: Run your pilot project in production
+            - name: Overview
+              href: eval-defender-identity-overview.md   
+            - name: Review architecture requirements
+              href: eval-defender-identity-architecture.md
+            - name: Enable the evaluation 
+              href: eval-defender-identity-enable-eval.md       
+            - name: Pilot Defender for Identity
+              href: eval-defender-identity-pilot.md                      
+        - name: Defender for Office 365
+          items:
+            - name: Overview
+              href: eval-defender-office-365-overview.md
+            - name: Review architecture requirements
+              href: eval-defender-office-365-architecture.md
+            - name: Enable the evaluation 
+              href: eval-defender-office-365-enable-eval.md
+            - name: Pilot Defender for Office
+              href: eval-defender-office-365-pilot.md        
+        - name: Defender for Endpoint
           items: 
-            - name: Pilot overview
-              href: m365d-pilot.md
-            - name: Plan
-              href: m365d-pilot-plan.md
-            - name: Prepare
-              href: prepare-m365d-eval.md
-            - name: Simulate attack
-              href: m365d-pilot-simulate.md
-            - name: Close and summarize
-              href: m365d-pilot-close.md                           
+            - name: Overview
+              href: eval-defender-endpoint-overview.md
+            - name: Review architecture requirements
+              href: eval-defender-endpoint-architecture.md
+            - name: Enable the evaluation
+              href: eval-defender-endpoint-enable-eval.md
+            - name: Pilot Defender for Endpoint
+              href: eval-defender-endpoint-pilot.md         
+        - name: Microsoft Cloud App Security
+          items:
+            - name: Overview
+              href: eval-defender-mcas-overview.md
+            - name: Review architecture requirements
+              href: eval-defender-mcas-architecture.md
+            - name: Enable the evaluation 
+              href: eval-defender-mcas-enable-eval.md
+            - name: Pilot Microsoft Cloud App Security
+              href: eval-defender-mcas-pilot.md  
+        - name: Investigate and respond    
+          items:
+            - name: Overview
+              href: eval-defender-investigate-respond.md  
+            - name: Simulate an attack
+              href: eval-defender-investigate-respond-simulate-attack.md    
+            - name: Try capabilities
+              href: eval-defender-investigate-respond-additional.md    
+        - name: Promote the trial to production
+          href: eval-defender-promote-to-production.md                    
     - name: Get started
       items:
         - name: Overview
@@ -131,7 +161,7 @@
                     - name: Identity
                       href: first-incident-path-identity.md
               - name: Incident response playbooks
-                href: https://docs.microsoft.com/security/compass/incident-response-playbooks
+                href: /security/compass/incident-response-playbooks
               - name: Email notifications
                 href: get-incident-notifications.md
        - name: Threat analytics
@@ -172,6 +202,8 @@
                    href: advanced-hunting-query-emails-devices.md
                  - name: Hunt for ransomware
                    href: advanced-hunting-find-ransomware.md
+                 - name: Advanced hunting example
+                   href: advanced-hunting-example.md
                  - name: Transition from Defender for Endpoint 
                    href: advanced-hunting-migrate-from-mde.md
              - name: Work with query results
@@ -275,9 +307,9 @@
     - name: How-to guides
       items: 
        - name: Create a trial lab or pilot environment
-         href: m365d-evaluation.md
+         href: eval-overview.md
        - name: Run pilot playbook
-         href: m365d-pilot.md
+         href: eval-overview.md
        - name: Turn on FAQ
          href: m365d-enable-faq.md
 
@@ -337,6 +369,8 @@
                       href: streaming-api-event-hub.md
                     - name: Stream advanced hunting events to your storage account
                       href: streaming-api-storage.md
+                    - name: Configure your Event hub
+                      href: configure-event-hub.md
                 - name: Advanced Hunting API
                   href: api-advanced-hunting.md
                 - name: Incidents APIs
@@ -347,6 +381,8 @@
                       href: api-list-incidents.md
                     - name: Update incidents
                       href: api-update-incidents.md
+                    - name: Get Incident
+                      href: api-get-incident.md
     - name: Microsoft Defender for Office 365
       href: ../office-365-security/index.yml
     - name: Microsoft Defender for Endpoint

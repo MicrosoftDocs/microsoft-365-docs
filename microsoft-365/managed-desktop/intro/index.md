@@ -20,7 +20,6 @@ Microsoft Managed Desktop is a cloud-based service that brings together [Microso
 - User device deployment
 - IT service management and operations
 - Security monitoring and response
-- User support
 
 Microsoft Managed Desktop offers a solution for several of the challenges facing businesses and their people today:
 - The transition to the agile world of software as a service is daunting.
@@ -28,7 +27,7 @@ Microsoft Managed Desktop offers a solution for several of the challenges facing
 - Many current IT management and security processes are outdated, time-intensive, and expensive.
 - Businesses want to focus on what makes them uniquely successful, rather than maintaining digital infrastructure.
 
-Your users will enjoy the latest versions of Windows 10 and Microsoft 365 Apps for enterprise apps (and more besides), using devices and software that are curated and rigorously tested for best performance and reliability. Also, you'll never have to worry about keeping any of this software up to date because that happens automatically, following a careful rollout sequence that is monitored every step of the way. And registered devices are monitored 24x7 for technical and security issues, so if something goes wrong, help will be on the way.
+Your users will enjoy the latest versions of Windows 10 and Microsoft 365 Apps for enterprise apps (and more besides), using devices and software that are curated and rigorously tested for best performance and reliability. Also, you'll never have to worry about keeping any of this software up to date because that happens automatically, following a careful rollout sequence that is monitored every step of the way. And registered devices are monitored 24 hours a day, seven days a week for technical and security issues, so if something goes wrong, help will be on the way.
 
 
 ## Unique to Microsoft Managed Desktop
@@ -56,7 +55,7 @@ Microsoft Managed Desktop takes on the burden of managing registered devices and
 
 - **Updates:** Microsoft Managed Desktop sets up and manages all aspects of [deployment groups](../service-description/updates.md) for Windows 10 quality and feature updates, drivers, firmware, anti-virus definitions, and Microsoft 365 Apps for enterprise updates. This includes extensive testing and verification of all updates, assuring that registered devices are always up to date and minimizing disruptions, freeing your IT department from that ongoing task.
 
-- **Apps:** As part of Microsoft 365 Enterprise, Microsoft provides (and manages) several key Microsoft apps for you. But you probably also have other apps that you need for your business. Instead of your IT department having to test, package, and deploy those apps, Microsoft helps you deploy them through the [FastTrack](https://www.microsoft.com/FastTrack) program. Additionally, Microsoft's [App Assure](https://docs.microsoft.com/fasttrack/products-and-capabilities#app-assuree) program can help remediate any app compatibility issues that arise when migrating to the latest versions of our products. Learn more at [Apps in Microsoft Managed Desktop](../get-ready/apps.md).
+- **Apps:** As part of Microsoft 365 Enterprise, Microsoft provides (and manages) several key Microsoft apps for you. But you probably also have other apps that you need for your business. Instead of your IT department having to test, package, and deploy those apps, Microsoft helps you deploy them through the [FastTrack](https://www.microsoft.com/FastTrack) program. Additionally, Microsoft's [App Assure](/fasttrack/products-and-capabilities#app-assuree) program can help remediate any app compatibility issues that arise when migrating to the latest versions of our products. Learn more at [Apps in Microsoft Managed Desktop](../get-ready/apps.md).
 
 
 ## Device monitoring

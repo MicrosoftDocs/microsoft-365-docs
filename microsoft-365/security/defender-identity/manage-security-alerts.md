@@ -1,6 +1,6 @@
 ---
-title: Microsoft Defender for Identity security alerts in Microsoft 365 Defender 
-description: Learn how to manage and review security alerts issued by Microsoft Defender for Identity in Microsoft 365 Defender 
+title: Microsoft Defender for Identity security alerts in Microsoft 365 Defender
+description: Learn how to manage and review security alerts issued by Microsoft Defender for Identity in Microsoft 365 Defender
 ms.date: 05/20/2021
 ms.topic: how-to
 author: dcurwin
@@ -26,12 +26,12 @@ One of the benefits of investigating alerts through [Microsoft 365 Defender](/mi
 
 Alerts originating from Defender for Identity can now trigger the [Microsoft 365 Defender automated investigation and response (AIR)](/microsoft-365/security/defender/m365d-autoir) capabilities, including automatically remediating alerts and the mitigation of tools and processes that can contribute to the suspicious activity.
 
->[!IMPORTANT]
->As part of the convergence with Microsoft 365 Defender, some options and details have changed from their location in the Defender for Identity portal. Please read the details below to discover where to find both the familiar and new features.
+> [!IMPORTANT]
+> As part of the convergence with Microsoft 365 Defender, some options and details have changed from their location in the Defender for Identity portal. Please read the details below to discover where to find both the familiar and new features.
 
 ## Review security alerts
 
-Alerts can be accessed from multiple locations, including the **Alerts** page, the **Incidents** page, the pages of individual **Devices**, and from the **Advanced hunting** page. In this example, we'll review the **Alerts page**.  
+Alerts can be accessed from multiple locations, including the **Alerts** page, the **Incidents** page, the pages of individual **Devices**, and from the **Advanced hunting** page. In this example, we'll review the **Alerts page**.
 
 In [Microsoft 365 Defender](https://security.microsoft.com/), go to **Incidents & alerts** and then to **Alerts**.
 
@@ -80,8 +80,8 @@ On the right pane, you'll see the **Alert details**. Here you can see more detai
 
     ![Manage alert](../../media/defender-identity/manage-alert.png)
 
-    >[!NOTE]
-    >In the Excel file, you now have two links available: **View in Microsoft Defender for Identity** and **View in Microsoft 365 Defender**. Each link will bring you to the relevant portal, and provide information about the alert there.
+    > [!NOTE]
+    > In the Excel file, you now have two links available: **View in Microsoft Defender for Identity** and **View in Microsoft 365 Defender**. Each link will bring you to the relevant portal, and provide information about the alert there.
 
 ## See also
 
