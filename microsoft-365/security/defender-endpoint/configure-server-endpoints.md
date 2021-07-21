@@ -81,7 +81,7 @@ If you have previously onboarded your servers using MMA, follow the guidance pro
 #### Known issues and limitations
 The following specifics apply to the new unified solution package:
 - On Windows Server 2012 R2, there is no user interface for Microsoft Defender Antivirus. In addition, the user interface on Windows Server 2016 only allows for basic operations. To perform operations on a device locally, please refer to [Manage Microsoft Defender for Endpoint with PowerShell, WMI, and MPCmdRun.exe](/microsoft-365/security/defender-endpoint/manage-atp-post-migration-other-tools). As a result, features that specifically rely on user interaction, such as where the user is prompted to make a decision or perform a specific task, may not work as expected. It is generally recommended to not enable the user interface nor require user interaction on any managed server.
-- [Connectivity requirements](microsoft-365/security/defender-endpoint/configure-proxy-internet) match those for Windows Server 2019. Previously, the use of the Microsoft Monitoring Agent (MMA) on Windows Server 2016 and below allowed for the OMS gateway to provide connectivity to Defender cloud services. The new solution, like Microsoft Defender for Endpoint on Windows Server 2019 and Windows 10, does not support this gateway.
+- [Connectivity requirements](configure-proxy-internet.md) match those for Windows Server 2019. Previously, the use of the Microsoft Monitoring Agent (MMA) on Windows Server 2016 and below allowed for the OMS gateway to provide connectivity to Defender cloud services. The new solution, like Microsoft Defender for Endpoint on Windows Server 2019 and Windows 10, does not support this gateway.
 - Not all Attack Surface Reduction rules are available on all operating systems. Please review [Attack Surface Reduction (ASR) rules](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules).
 - To enable [Network Protection](/microsoft-365/security/defender-endpoint/network-protection), additional configuration is required: 
     -- Set-MpPreference -EnableNetworkProtection Enabled
@@ -245,9 +245,6 @@ For other Windows server versions, you have two options to offboard Windows serv
 ## Run a detection test
 Follow the steps in [Run a detection test on a newly onboarded device](run-detection-test.md) to verify that the server is reporting to Defender for the Endpoint service.
 
-## Offboard Windows servers
-
-You can offboard servers in the same method available for other Windows devices. Following the offboarding steps provided within the guidance on each of the management tools. 
 
 ## Next steps
 After successfully onboarding devices to the service, you'll need to configure the individual components of Microsoft Defender for Endpoint. Follow the [Adoption order](prepare-deployment.md#adoption-order) to be guided on enabling the various components.
