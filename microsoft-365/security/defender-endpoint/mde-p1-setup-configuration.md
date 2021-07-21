@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: ITPro
 ms.topic: overview
-ms.date: 06/17/2021
+ms.date: 07/21/2021
 ms.prod: m365-security
 ms.technology: mde
 localization_priority: Normal
@@ -17,9 +17,9 @@ f1.keywords: NOCSH
 
 # Set up and configure Microsoft Defender for Endpoint Plan 1 (preview)
 
-As a preview customer, you likely have assistance in setting up and configuring Defender for Endpoint Plan 1. This article includes information on how to plan, configure, and onboard to Defender for Endpoint Plan 1. 
+As a preview customer, you likely have assistance in setting up and configuring Defender for Endpoint Plan 1. However, just in case you're curious about what the setup and configuration process looks like, use this article as a guide.
 
-The general setup and configuration process (described in this article) is as follows:
+The general setup and configuration process for Defender for Endpoint Plan 1 (preview) is as follows:
 
 1. [Review the requirements](#review-the-requirements) (including licensing and device requirements)
 2. [Plan your deployment](#plan-your-deployment)
@@ -34,7 +34,7 @@ The general setup and configuration process (described in this article) is as fo
  
 ## Review the requirements
 
-The following table lists the basic requirements for Defender for Endpoint Plan 1:
+The following table lists the basic requirements for Defender for Endpoint Plan 1 (preview):
 
 | Requirement | Description |
 |:---|:---|
