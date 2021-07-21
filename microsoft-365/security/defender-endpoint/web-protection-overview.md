@@ -82,7 +82,7 @@ For more information, see [Web content filtering](web-content-filtering.md).
 
 Web protection is made up of the following components, listed in order of precedence. Each of these components is enforced by the SmartScreen client in Microsoft Edge and by the Network Protection client in all other browsers and processes.
 
-- Custom indicator (IP/URL, Microsoft Cloud App Security (MCAS) allow)
+- Custom indicators (IP/URL, Microsoft Cloud App Security (MCAS) allow)
 
     - Allow
     - Warn
@@ -95,11 +95,11 @@ Web protection is made up of the following components, listed in order of preced
 
 - Web Content Filtering (WCF)
 
-The order of precedence relates to the order of operations by which a URL or IP is evaluated. For example, if you have a web content filtering policy you can create exclusions through custom IP/URL indicators. Custom Indicator of compromises (IoC) are higher in the order of precedence than WCF blocks. 
+The order of precedence relates to the order of operations by which a URL or IP is evaluated. For example, if you have a web content filtering policy you can create exclusions through custom IP/URL indicators. Custom Indicators of compromise (IoC) are higher in the order of precedence than WCF blocks. 
 
 Similarly, during a conflict between indicators, allows always take precedence over blocks (override logic), which means that an allow indicator will win over any block indicator that is present.
 
-The table below summarizes some common configurations that would present conflicts within the web protection stack, and identifies the resulting determinations based on the precedence listed above. 
+The table below summarizes some common configurations that would present conflicts within the web protection stack. It also identifies the resulting determinations based on the precedence listed above. 
 
 <br>
 
@@ -115,13 +115,13 @@ Internal IP addresses are not supported by custom indicators. For a warn policy 
 
 ## Protect browsers
 
-In all web protection scenarios, SmartScreen and Network Protection can be used together to ensure protection across both first and third party browsers and processes. SmartScreen is built directly into Microsoft Edge, while Network Protection monitors traffic in third party browsers and processes. The diagram below illustrates this concept. This diagram of the two clients working together to provide multiple browser/app coverages is accurate for all features of Web Protection (Indicators, Web Threats, Content Filtering).
+In all web protection scenarios, SmartScreen and Network Protection can be used together to ensure protection across both first and third-party browsers and processes. SmartScreen is built directly into Microsoft Edge, while Network Protection monitors traffic in third-party browsers and processes. The diagram below illustrates this concept. This diagram of the two clients working together to provide multiple browser/app coverages is accurate for all features of Web Protection (Indicators, Web Threats, Content Filtering).
 
 (Add image)
 
 ## Troubleshoot endpoint blocks
 
-Responses from the SmartScreen cloud are standardized, meaning that tools such as Fiddler can be used to inspect the response from the cloud service, which will help determine the source of the block in cases where it is unclear. 
+Responses from the SmartScreen cloud are standardized. Tools like Fiddler can be used to inspect the response from the cloud service, which will help determine the source of the block. 
 
 When the SmartScreen cloud service responds with an allow, block, or warn response, there is a response category and server context relayed back to the client. In Edge, the response category is what is used to determine the appropriate block page to show (malicious, phishing, organizational policy).
 
@@ -147,11 +147,11 @@ The advanced hunting query can easily be used to summarize the web protection bl
 
 ## User experience
 
-In the case that a user visits a web page that poses a risk of malware, phishing or other web threats, Edge will trigger a block page that reads ‘This site has been reported as unsafe’ along with information around related to the threat. In this case, it is made clear to the user that the site is dangerous. 
+If a user visits a web page that poses a risk of malware, phishing, or other web threats, Edge will trigger a block page that reads ‘This site has been reported as unsafe’ along with information related to the threat. It'd be clear to the user that the site is dangerous. 
 
 (Add image)
 
-When being blocked by WCF or a custom indicator, a block page shows in Edge that tells the user this site has been blocked by their organization.
+If blocked by WCF or a custom indicator, a block page shows in Edge that tells the user this site is blocked by their organization.
 
 (Add image)
 
@@ -163,7 +163,7 @@ In any case, no block pages are shown in third-party browsers, and the user sees
 
 To report a false positive for sites that have been deemed dangerous by SmartScreen, use the link that appears on the block page in Microsoft Edge (as shown above).
 
-For WCF, you can dispute the category of a domain through the Microsoft 365 security center. Navigate to the **Domains** tab of the WCF reports and then click **Report Inaccuracy**. A flyout will open which will allow you to set the priority of the incident and provide some additional details, such as the suggested category. For more information on how to turn on WCF and how to dispute categories, see [Web content filtering](web-content-filtering.md).
+For WCF, you can dispute the category of a domain. Navigate to the **Domains** tab of the WCF reports and then click **Report Inaccuracy**. A flyout will open. Set the priority of the incident and provide some additional details, such as the suggested category. For more information on how to turn on WCF and how to dispute categories, see [Web content filtering](web-content-filtering.md).
 
 For more information on how to submit false positives/negatives, see [Address false positives/negatives in Microsoft Defender for Endpoint](defender-endpoint-false-positives-negatives.md).
 
