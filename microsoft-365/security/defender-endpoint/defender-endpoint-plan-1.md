@@ -19,7 +19,11 @@ f1.keywords: NOCSH
 
 ## Overview
 
-Microsoft Defender for Endpoint is an enterprise endpoint security platform designed to help organizations like yours to prevent, detect, investigate, and respond to advanced threats. Soon, Defender for Endpoint will be available in two plans: Defender for Endpoint Plan 1 (currently in preview, and described in this article), and [Defender for Endpoint Plan 2](microsoft-defender-endpoint.md).
+Microsoft Defender for Endpoint is an enterprise endpoint security platform designed to help organizations like yours to prevent, detect, investigate, and respond to advanced threats. 
+
+Soon, Defender for Endpoint will be available in two plans: 
+- Defender for Endpoint Plan 1, currently in preview, and described in this article
+- [Defender for Endpoint Plan 2](microsoft-defender-endpoint.md), available now.
 
 > [!TIP]
 > To learn more, see [Compare Microsoft Defender for Endpoint Plan 1 to Plan 2](defender-endpoint-plan-1-2.md).
@@ -168,14 +172,18 @@ To learn more, see [Defender for Endpoint APIs](management-apis.md).
 
 ## Cross-platform support
 
-Most organizations use various devices and operating systems, such as computers running Windows, macOS, or Linux, and mobile devices running iOS or Android. 
+Most organizations use various devices and operating systems, such as computers running Windows, macOS, or Linux, and mobile devices running iOS or Android. Currently, Defender for Endpoint Plan 1 (preview) supports the following operating systems:
 
-Defender for Endpoint Plan 1 provides threat protection across your organization’s Windows and iOS devices (with plans to support other operating systems soon). 
+- Windows 10, version 1709 or later
+- macOS
+- iOS
+- Android OS
 
-To learn more, see the following resources:
-
-- [Defender for Endpoint on Windows](microsoft-defender-endpoint.md)
-- [Defender for Endpoint on iOS](microsoft-defender-endpoint-ios.md)
+> [!NOTE]
+> Defender for Endpoint Plan 2 supports Windows, macOS, iOS, Android OS, and Linux. To learn more, see the following resources:
+> 
+> - [Defender for Endpoint on Windows](microsoft-defender-endpoint.md)
+> - [Defender for Endpoint on iOS](microsoft-defender-endpoint-ios.md)
 
 ## Next steps
 
