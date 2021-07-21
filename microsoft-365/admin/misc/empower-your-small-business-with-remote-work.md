@@ -70,7 +70,7 @@ For more information, see [Turn on multi-factor authentication](../../business-v
 
 ### Secure your devices
 
-Remotely manage PCs and phones​ and ensure that they are protected and up-to-date. Requires Microsoft 365 Business.
+Remotely manage PCs and phones and ensure that they are protected and up-to-date. Requires Microsoft 365 Business.
 
 For more information, see [Manage devices](../../business-video/secure-win-10-pro-devices.md).
 
