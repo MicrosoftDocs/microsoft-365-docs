@@ -156,7 +156,7 @@ After clicking through to the content, it may be useful to bookmark this site an
 
 ## Send us your feedback
 
-We need your feedback. We're always looking to improve, so if there's something you'd like to see, [Watch this video to find out how you can trust us to read your feedback.](https://www.microsoft.com/videoplayer/embed/RE4K5Ci).
+We need your feedback. We're always looking to improve, so if there's something you'd like to see, [watch this video to find out how you can trust us to read your feedback](https://www.microsoft.com/videoplayer/embed/RE4K5Ci).
 
 You can also leave feedback from this article. In the 'Feedback' section at the end under 'Submit and view feedback for', the options are *This product*, or *This page*.
 
