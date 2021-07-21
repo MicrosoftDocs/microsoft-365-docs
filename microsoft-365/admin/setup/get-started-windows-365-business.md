@@ -24,7 +24,7 @@ ms.assetid: eb926624-018b-4486-bf11-5fba6ee4d645
 description: Learn how to buy Windows 365 Business for your organization, and help users start using their Cloud PCs.
 ---
 
-# Set up Windows 365 Business
+# Get started with Windows 365 Business and Cloud PCs
 
 This article is for people who plan to buy and set up Windows 365 Business for their organization. 
   
