@@ -334,6 +334,9 @@ Explanation for the four different principles:
 
 4. **The shortest deletion period wins.** Applicable to determine when items will be deleted from retention policies and the outcome couldn't be resolved from the previous level: Content is permanently deleted at the end of the shortest retention period.
     
+    When you calculate the end of the retention period, remember to factor in that for files, the start of the retention period can be based on the creation date, or last modified date. When you use the last modified date and the file is edited, the deletion period is effectively extended. So it's possible that one retention policy that has a delete action after 5 years 
+
+    
     Example: A document in a user's OneDrive account is subject to two retention policies. The first retention policy is scoped to include this user's OneDrive account and has a delete action after 10 years. The second retention policy is scoped to include this user's OneDrive account and has a delete action after seven years.
     
     This document will be permanently deleted after seven years because that's the shortest retention period for these two scoped retention policies.
