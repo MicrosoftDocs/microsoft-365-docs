@@ -94,7 +94,7 @@ The [DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-m
    `Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender-Features` <p>
    `Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender` <br/>
  
-   When using the DISM command within a task sequence running PS, the following path to cmd.exe is required.
+   When using the DISM command within a task sequence running PowerShell, the following path to cmd.exe is required.
    Example:<br/>
    
    `c:\windows\sysnative\cmd.exe /c Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender-Features`<p>
