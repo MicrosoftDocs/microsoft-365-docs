@@ -46,7 +46,7 @@ sections:
           A work or school account is intended for users to sign in to the organization Microsoft services. The sign-in typically uses the form username@orgname.com or username@orgname.onmicrosoft.com, where *orgname* is their organization email domain name.
 
       - question: |
-        How do I know if my organization already has an account?
+          How do I know if my organization already has an account?
         answer: |
           The organization name associated with your work or school account is taken from the License ID of the service you’re activating. If an account exists, the organization name is pre-populated in the Organizational Account set-up and already linked to your organization from the original online service order. The registration process validates whether your organization has an account. 
         

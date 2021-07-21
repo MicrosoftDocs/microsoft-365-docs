@@ -147,14 +147,14 @@ sections:
 
           **Important** The number of allowed MAK activations is based on your Volume Licensing agreement.
 
-        - question: |
+      - question: |
           Why doesn’t the number of MAK activations provided match the number of licenses we purchased?
         answer: |
           We recommend customers use KMS to activate Multiple Activation Keys (MAK). KMS is the preferred activation method for large scale deployments. Many factors determine the number of activations associated with each MAK, including licenses purchased, the customer purchase pricing level, and their Volume Licensing program.
 
           The number of activations available for a product won’t always match the number of licenses purchased. Usually, you receive a more activations in case you need to reinstall and activate some of your products. Check the Licensing Summary section of your agreement to view the number of licenses.
 
-        - question: |
+      - question: |
           How do I request an increase to MAK activation limits?
         answer: |
           Increases to MAK activation quantity can be requested via web form and are granted by exception. For Canada and the United States, submit [Volume Licensing Support Requests](https://support.microsoft.com/supportrequestform/2afa6f15-b710-db46-909a-8346017c802f). For all other countries, submit a [Support Web Form](/licensing/contact-us). 
@@ -167,7 +167,7 @@ sections:
             - The number of host activations required.
             - Business justification or reason for deployment.
 
-        - question: |
+      - question: |
           How do I activate licenses using a Multiple Activation Key (MAK)?
         answer: |
           You can activate licenses in one of two ways using MAK:
@@ -175,7 +175,7 @@ sections:
             - MAK Independent Activation Each computer individually connects to Microsoft by using the web or telephone to complete activation.
             - MAK Proxy Activation One centralized activation request is made on behalf of multiple computers with a single connection to Microsoft online or by telephone. This method uses the Volume Activation Management Tool (VAMT), which is a part of the Windows Automated Installation Kit (WAIK). VAMT enables IT Professionals to automate and centrally manage the Volume Activation process using MAK and includes a check on the number of activations on the MAK.
 
-        - question: |
+      - question: |
           What is the Volume Activation Management Tool (VAMT)?
         answer: |
           The Volume Activation Management Tool (VAMT) is a tool that allows network administrators and other IT professionals to automate and centrally manage the volume- and retail-activation process for Windows, Microsoft Office, and select other Microsoft products. VAMT can manage volume activation using Multiple Activation Keys (MAKs) or the Windows Key Management Service (KMS). VAMT is a standard Microsoft Management Console (MMC) snap-in that requires the Microsoft Management Console (MMC) 3.0.
@@ -186,7 +186,7 @@ sections:
             - [Managing Activation Using the Volume Activation Management Tool (VAMT)](/previous-versions/tn-archive/ff686876(v=technet.10))
             - Download [Volume Activation Management Tool (VAMT)](https://www.microsoft.com/download/details.aspx?id=11936)
 
-        - question: |
+      - question: |
           What should I know about using Windows Server as the KMS host to activate Windows clients?
         answer: |
           If you deploy Windows using Key Management Service (KMS) as the activation method, note that:
@@ -201,7 +201,7 @@ sections:
             - Run the KMS host on a Windows volume edition machine.
             - Run a Windows Server virtual machine.
 
-        - question: |
+      - question: |
           What should I know about Volume Activation for Office, Project, and Visio?
         answer: |
           The following Volume Activation changes are related to Office, Project and Visio:
@@ -218,7 +218,7 @@ sections:
             - Run the KMS host on a Windows PC.
             - Run a Windows Server virtual machine on a newer version of Windows Server.
 
-        - question: |
+      - question: |
           How do I activate Windows Terminal Server and Remote Desktop Service (RDS)?
         answer: |
           After you download your server media from the VLSC you can activate it by using the product activation wizard. You don’t need to locate a volume license key or product set up key in the VLSC. Completing all the activation wizard steps prompts the Server to connect with the Microsoft Clearing House via the internet to validate the data. Alternatively, for offline servers the activation wizard offers phone or web activation.
@@ -229,12 +229,12 @@ sections:
 
           For information about licensing Terminal Server, see [Terminal Server licensing](/troubleshoot/windows-server/remote/terminal-server-licensing). For information on how to install the remote desktop licensing role and activate the license server, see [Activate the Remote Desktop Services license server](/windows-server/remote/remote-desktop-services/rds-activate-license-server) and  [Cannot connect to RDS because no RD Licensing servers are available](/troubleshoot/windows-server/remote/cannot-connect-rds-no-license-server).
 
-        - question: |
+      - question: |
           Can organizations within the same ownership structure use the same key to deploy a product?
         answer: |
           License compliance and asset management are independent of key activation. Customers don’t have to use the keys provided under a specific Licensing ID (agreement, enrollment, affiliate, or license). If a parent organization has an individual agreement, it can use the same key to deploy a product across parent and child organizations. This flexibility allows customers to centrally manage their deployment image by using either keys specific to agreements/licenses or one set of keys for all.
 
-        - question: |
+      - question: |
           Can I use my Volume License Keys to exercise my re-imaging rights?
         answer: |
           Yes. Re-imaging rights are granted to all Microsoft Volume Licensing customers. Under these rights, customers can re-image Original Equipment Manufacturer (OEM) or Full Packaged Product (FPP) licensed copies by using media provided under their agreement if the copies made from the Volume Licensing media are identical to the original licensed product. As a Volume Licensing customer, you can find the Volume License Keys on the product key page or request your keys through a [Microsoft Activation Center](https://licensingapps.microsoft.com/product-activation).
@@ -243,7 +243,7 @@ sections:
 
           For more information on re-imaging rights, see [Product licensing briefs](/licensing/learn-more/volume-licensing-briefs).
 
-        - question: |
+      - question: |
           How do I download my keys to a local file?
         answer: |
           The Microsoft 365 admin center offers an option to download product keys to a local file for later use. When you download product keys from the Downloads and Keys page, the file contains all Volume License Keys associated with agreements in your admin center profile. However, if you download keys from the Licensing ID view on the Relationship Summary page, the file contains only the keys associated with the Licensing ID you’re viewing.
