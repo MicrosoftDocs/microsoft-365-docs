@@ -51,7 +51,7 @@ With app governance, you can see:
 - A cumulative view of users accessing apps.
 - Alerts insights.
 - Policy list insights.
-<!-->
+<!--
 - Policies created in MCAS in the app governance portal.
 -->
 - Alerts for OAuth apps generated in MCAS, in the app governance portal.
