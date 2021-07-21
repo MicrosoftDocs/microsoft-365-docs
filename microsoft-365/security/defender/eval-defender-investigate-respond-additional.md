@@ -128,7 +128,7 @@ For more information, see [Automated investigation and response](m365d-autoir.md
 
 If the [optional fileless PowerShell attack simulation](eval-defender-investigate-respond-simulate-attack.md#simulate-an-attack-with-an-isolated-domain-controller-and-client-device-optional) were a real attack that had already reached the credential access stage, you can use advanced hunting at any point in the investigation to proactively search through events and records in the network using what you already know from the generated alerts and affected entities. 
 
-For instance, based on information in the [User and IP address reconnaissance (SMB)](eval-defender-investigate-respond-simulate-attack#alert-user-and-ip-address-reconnaissance-smb-source-microsoft-defender-for-identity.md) alert, you can use the `IdentityDirectoryEvents` table to find all the SMB session enumeration events, or find more discovery activities in various other protocols in Microsoft Defender for Identity data using the `IdentityQueryEvents` table.
+For instance, based on information in the [User and IP address reconnaissance (SMB)](eval-defender-investigate-respond-simulate-attack.md#alert-user-and-ip-address-reconnaissance-smb-source-microsoft-defender-for-identity) alert, you can use the `IdentityDirectoryEvents` table to find all the SMB session enumeration events, or find more discovery activities in various other protocols in Microsoft Defender for Identity data using the `IdentityQueryEvents` table.
 
 
 ### Hunting environment requirements
