@@ -18,7 +18,7 @@ search.appverid:
 description: "Use large cases in Advanced eDiscovery so you can add more items to review sets and take advantage of other increased limits." 
 ---
 
-# Use large cases in Advanced eDiscovery
+# Use large cases in Advanced eDiscovery (preview)
 
 More organizations are using the Advanced eDiscovery solution in Microsoft 365 for critical eDiscovery processes. This includes responding to regulatory requests, investigations, and litigation. As usage of Advanced eDiscovery increases, a common customer requirement is to expand the total amount of content that can be managed in a single Advanced eDiscovery case. To help accommodate significant increases in case size, both for total data volume and the total number of items, you can now choose a large case format when you create an Advanced eDiscovery case.  
 
