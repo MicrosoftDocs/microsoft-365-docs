@@ -9,7 +9,7 @@ audience: ITPro
 ms.topic: overview
 ms.date: 07/21/2021
 ms.prod: m365-security
-ms.technology: mde
+ms.technology: mdep1
 localization_priority: Normal
 ms.reviewer: 
 f1.keywords: NOCSH
@@ -50,9 +50,7 @@ The following table lists the basic requirements for Defender for Endpoint Plan 
 
 ## Plan your deployment
 
-When you plan your deployment, you can choose from several different architectures and deployment methods. Every organization is unique, so you have several options to consider. 
-
-To help with these decisions, see [Plan your Defender for Endpoint deployment](deployment-strategy.md), which includes the downloadable poster that is depicted in the following image: 
+When you plan your deployment, you can choose from several different architectures and deployment methods. Every organization is unique, so you have several options to consider. To help with these decisions, see [Plan your Defender for Endpoint deployment](deployment-strategy.md), which includes the downloadable poster that is depicted in the following image: 
 
 :::image type="content" source="../../media/defender-endpoint/mdatp-deployment-strategy.png" alt-text="Deployment strategy poster thumbnail":::
 
@@ -60,11 +58,7 @@ To help with these decisions, see [Plan your Defender for Endpoint deployment](d
 
 ## Set up your tenant environment
 
-Setting up your tenant environment includes tasks, such as verifying your licenses and configuring your tenant. An important part of this process is making sure sensors are working correctly and reporting data to Defender for Endpoint. 
-
-As a preview customer, you’ll likely have help with this process.
-
-To learn more, see [Set up Defender for Endpoint](production-deployment.md).
+Setting up your tenant environment includes tasks, such as verifying your licenses and configuring your tenant. An important part of this process is making sure sensors are working correctly and reporting data to Defender for Endpoint. As a preview customer, you’ll likely have help with this process. To learn more, see [Set up Defender for Endpoint](production-deployment.md).
 
 ## Assign roles and permissions
 
@@ -83,13 +77,15 @@ When you’re ready to onboard your organization’s devices and users to Defend
 
 Then, proceed to [configure next-generation protection settings](#configure-next-generation-protection) and [configure your attack surface reduction rules](#configure-attack-surface-reduction-rules). 
 
-Defender for Endpoint enables you to edit and fine-tune your settings as needed.
+Defender for Endpoint enables you to edit and fine-tune your settings as needed. See [Manage Microsoft Defender for Endpoint Plan 1 (preview)](mde-p1-maintenance-operations.md).
 
 ## Configure next-generation protection
 
 We recommend using [Microsoft Endpoint Manager](/mem) to manage your organization’s devices and security settings, as shown in the following image:
  
 :::image type="content" source="../../media/mde-p1/endpoint-security-policies.png" alt-text="Microsoft Endpoint Manager endpoint security policies":::
+
+
 
 ## Review and edit your next-generation protection settings
 
