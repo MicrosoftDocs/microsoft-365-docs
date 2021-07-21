@@ -45,7 +45,7 @@ Privacy management can help you detect and handle situations in which data that 
 Transferring data across departments or regional borders can increase the risk of data exposure, for example if it’s sent via unencrypted emails or to unauthorized recipients. Such actions can have regulatory impact or may go against established practices for privacy. Using the data transfer template to create privacy management policies can spot and help limit such transfers.
 
 > [!NOTE]
-> During public preview, some tenants running data transfer policies to detect transfers across regions may encounter synchronization issues that impact visibility into policy matches in Exchange and Teams data. We recommend focusing on SharePoint and OneDrive data while previewing this policy type. An update for this issue is expected in fall 2021.
+> During public preview, some tenants running data transfer policies to detect transfers across regions may encounter synchronization issues that impact visibility into policy matches in Exchange and Teams data. We recommend focusing on SharePoint and OneDrive data while previewing this policy type.
 
 ### Data minimization
 
