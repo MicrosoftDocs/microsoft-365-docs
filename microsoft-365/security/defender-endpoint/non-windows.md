@@ -92,8 +92,8 @@ Linux
 ## Microsoft Defender for Endpoint on Android
 
 Microsoft Defender for Endpoint on Android is our mobile threat defense solution for
-devices running Android 6.0 and higher. Devices that are registered within a customer's tenant (enrolled or unenrolled) are supported. Both Android Enterprise (Work Profile)
-and Device Administrator modes are supported for enrolled devices. On Android, we offer web
+devices running Android 6.0 and higher. Both Android Enterprise (Work Profile)
+and Device Administrator modes are supported. On Android, we offer web
 protection, which includes anti-phishing, blocking of unsafe connections, and
 setting of custom indicators. The solution scans for malware and potentially
 unwanted applications (PUA) and offers additional breach prevention capabilities
@@ -108,8 +108,7 @@ Android
 ## Microsoft Defender for Endpoint on iOS
 
 Microsoft Defender for Endpoint on iOS is our mobile threat defense solution for devices
-running iOS 11.0 and higher. Devices that are registered within a customer's tenant (enrolled or unenrolled) are supported. 
-On iOS, we offer web protection, which includes anti-phishing, blocking unsafe connections and 
+running iOS 11.0 and higher. Devices that are registered within a customer's tenant (enrolled or unenrolled) are supported. Both supervised and unsupervised enrolled devices are supported. On iOS, we offer web protection, which includes anti-phishing, blocking unsafe connections and 
 setting custom indicators, and jailbreak detection. For more information about the key features and benefits, 
 read our [announcements](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/bg-p/MicrosoftDefenderATPBlog/label-name/iOS). 
 
