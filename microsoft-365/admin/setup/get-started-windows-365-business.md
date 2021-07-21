@@ -153,9 +153,9 @@ All Windows 365 Business users have local administrator privileges on their Clou
 
  ## Management through Intune
 
-Windows 365 Business does not enroll Cloud PCs to [Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune) as part of the provisioning process. If the tenant and users are properly licensed, Cloud PCs can be enrolled to Intune using the same procedure for [enrolling Windows 10 machines to Intune](https://docs.microsoft.com/mem/intune/user-help/enroll-windows-10-device).
+Windows 365 Business does not enroll Cloud PCs to [Intune](/mem/intune/fundamentals/what-is-intune) as part of the provisioning process. If the tenant and users are properly licensed, Cloud PCs can be enrolled to Intune using the same procedure for [enrolling Windows 10 machines to Intune](/mem/intune/user-help/enroll-windows-10-device).
 
 ## How to get help
 
-If you need to get help while setting up Windows 365 Business in the Microsoft 365 admin center, see [Get help or support](https://docs.microsoft.com/microsoft-365/business-video/get-help-support?view=o365-worldwide).
+If you need to get help while setting up Windows 365 Business in the Microsoft 365 admin center, see [Get help or support](/microsoft-365/business-video/get-help-support).
 
