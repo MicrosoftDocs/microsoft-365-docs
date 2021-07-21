@@ -158,6 +158,7 @@ The following apps support trainable classifiers for sensitivity labels:
     - Word
     - Excel
     - PowerPoint
+    - Outlook
 
 - Office for the web apps, when you have [enabled sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md):
     - Word
