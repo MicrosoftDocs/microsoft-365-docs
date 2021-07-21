@@ -26,15 +26,11 @@ description: Learn how to add a policy tip to a data loss prevention (DLP) polic
 
 You can use a data loss prevention (DLP) policy to identify, monitor, and protect sensitive information across Office 365. You want people in your organization who work with this sensitive information to stay compliant with your DLP policies, but you don't want to block them unnecessarily from getting their work done. This is where email notifications and policy tips can help.
 
-![Message bar shows policy tip in Excel 2016](../media/7002ff54-1656-4a6c-993f-37427d6508c8.png)
-
-
+moved to reference ![Message bar shows policy tip in Excel 2016](../media/7002ff54-1656-4a6c-993f-37427d6508c8.png)
 
 In the Compliance Center, when you create a DLP policy, you can configure the user notifications to:
 
 - Send an email notification to the people you choose that describes the issue.
-> [!NOTE]
-> Notification emails are sent unprotected.
 
 - Display a policy tip for content that conflicts with the DLP policy:
 
@@ -44,6 +40,8 @@ In the Compliance Center, when you create a DLP policy, you can configure the us
 
   - For Excel, PowerPoint, and Word documents that are stored on a OneDrive for Business site or SharePoint Online site that's included in the DLP policy, the policy tip appears on the Message Bar and the Backstage view (**File** menu \> **Info**).
 
+> [!NOTE]
+> Notification emails are sent unprotected.
 
 ## Options for configuring email notifications
 

@@ -107,7 +107,7 @@ A DLP policy can find and protect items that contain sensitive information acros
 |SharePoint online sites   |sites       | - data-at-rest </br> - data-in-use | no|
 |OneDrive for Business accounts| account or distribution group |- data-at-rest </br> - data-in-use|no|
 |Teams chat and channel messages     | account or distribution group |- data-in-motion </br> data-in-use |  no       |
-|Microsoft Cloud App Security    | cloud app instance       |- data-at-rest         | - [Use data loss prevention policies for non-Microsoft cloud apps (preview)](dlp-use-policies-non-microsoft-cloud-apps.md#use-data-loss-prevention-policies-for-non-microsoft-cloud-apps-preview)        |
+|Microsoft Cloud App Security (MCAS)   | cloud app instance       |- data-at-rest         | - [Use data loss prevention policies for non-Microsoft cloud apps (preview)](dlp-use-policies-non-microsoft-cloud-apps.md#use-data-loss-prevention-policies-for-non-microsoft-cloud-apps-preview)        |
 |Devices  |user or group         |-data-at-rest </br> - data-in-use </br> - data-in-motion         |- [Learn about Microsoft 365 Endpoint data loss prevention](endpoint-dlp-learn-about.md#learn-about-microsoft-365-endpoint-data-loss-prevention) </br> [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md#get-started-with-endpoint-data-loss-prevention) </br> [Configure device proxy and internet connection settings for Endpoint DLP](endpoint-dlp-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-endpoint-dlp)        |
 |On-premises repositories (file shares and SharePoint)    |repository         |- data-at-rest         | - [Learn about the Microsoft 365 data loss prevention on-premises scanner (preview)](dlp-on-premises-scanner-learn.md#learn-about-the-microsoft-365-data-loss-prevention-on-premises-scanner-preview) </br> - [Get started with the data loss prevention on-premises scanner (preview)](dlp-on-premises-scanner-get-started.md#get-started-with-the-data-loss-prevention-on-premises-scanner-preview)         |
 
@@ -415,21 +415,6 @@ Whether actions take effect or not depends on how you configure the mode of the 
 
 #### User notifications and policy tips
 
-When a user attempts an action on a sensitive item in a context that meets the conditions and exceptions of a rule, you can let them know about it through user notification emails and policy tips. These notifications are useful because they increase awareness and help educate people about your organization's DLP policies. 
-
-For example, content like an Excel workbook on a OneDrive for Business site that contains personally identifiable information (PII) and is shared with an external user.
-
-![Message bar shows policy tip in Excel 2016](../media/7002ff54-1656-4a6c-993f-37427d6508c8.png)
-
-
-. You can also give people the option to override the policy, so that they're not blocked if they have a valid business need or if the policy is detecting a false positive.
-
-USER NOTIFICATIONS NOT SUPPORTED FOR ON-PREMISES
-
-EDNPOINT DEVICES SHOWS UP WHEN THE DEVICES IS THE ONLY LOCATION CHOSEN
-
-WHEN ON-PREMISES AND DEVICES SELECTED, THE NON-DEVICES OPTIONS SHOWUP
-
 <!--This section introduces the business need for user notifications, what they are, their benefit, how to use them, how to customize them, and links out to 
 
 - https://docs.microsoft.com/en-us/microsoft-365/compliance/use-notifications-and-policy-tips?view=o365-worldwide
@@ -437,11 +422,53 @@ WHEN ON-PREMISES AND DEVICES SELECTED, THE NON-DEVICES OPTIONS SHOWUP
 
 for where they are used/expected behavior-->
 
-You can use notifications and overrides to educate your users about DLP policies and help them remain compliant without blocking their work. For example, if a user tries to share a document containing sensitive information, a DLP policy can both send them an email notification and show them a policy tip in the context of the document library that allows them to override the policy if they have a business justification.
+<!--You can use notifications and overrides to educate your users about DLP policies and help them remain compliant without blocking their work. For example, if a user tries to share a document containing sensitive information, a DLP policy can both send them an email notification and show them a policy tip in the context of the document library that allows them to override the policy if they have a business justification.-->
+
+When a user attempts an action on a sensitive item in a context that meets the conditions and exceptions of a rule, you can let them know about it through user notification emails and in context policy tips popups. These notifications are useful because they increase awareness and help educate people about your organization's DLP policies. 
+
+For example, content like an Excel workbook on a OneDrive for Business site that contains personally identifiable information (PII) and is shared with an external user.
+
+![Message bar shows policy tip in Excel 2016](../media/7002ff54-1656-4a6c-993f-37427d6508c8.png)
+
+> [!NOTE]
+> Notification emails are sent unprotected.
+
+You can also give people the option to override the policy, so that they're not blocked if they have a valid business need or if the policy is detecting a false positive.
+
+The user notifications and policy tips configuration options vary depending on the monitoring locations you selected. If you selected:
+
+- Exchange
+- SharePoint
+- OneDrive
+- Teams Chat and Channel
+- MCAS
+
+
+You can enable/disable user notifications for various Microsoft apps, see [Data Loss Prevention policy tips reference](dlp-policy-tips-reference.md#data-loss-prevention-policy-tips-reference)
+- You can enable/disable **Notifying users in Office 365 service with a policy tip.
+    - email notifications to the user who sen, shared, or last modified the content
+    OR
+    - notify specific people
+
+as well as choosing to customize the email text, subject and the policy tip text.
+
+![User notification and policy tip configuration options that are available for Exchange, SharePoint, OneDrive, Teams Chat and Channel, and MCAS](../media/dlp-user-notification-non-devices.png)
+
+If you selected Devices only, you will get all the same options that are available for Exchange, SharePoint, OneDrive, Teams Chat and Channel and MCAS plus the option to customize the notification title and content that appears on the Windows 10 device.
+
+![User notification and policy tip configuration options that are available for Devices](../media/dlp-user-notification-devices.png)  
+
+> [!NOTE]
+> User notifications and policy tips are not available for the On-premises location
+
+To learn more about user notification and policy tip configuration and use, including how to customize the notification and tip text, see 
+- [Send email notifications and show policy tips for DLP policies](use-notifications-and-policy-tips.md#send-email-notifications-and-show-policy-tips-for-dlp-policies)
+- [Data Loss Prevention policy reference](dlp-policy-reference.md#data-loss-prevention-policy-reference)
+
+> [!NOTE]
+> Only the policy tip from the highest priority, most restrictive rule will be shown. For example, a policy tip from a rule that blocks access to content will be shown over a policy tip from a rule that simply sends a notification. This prevents people from seeing a cascade of policy tips.
   
-![User notifications and user overrides sections of DLP rule editor](../media/37b560d4-6e4e-489e-9134-d4b9daf60296.png)
-  
-The email can notify the person who sent, shared, or last modified the content and, for site content, the primary site collection administrator and document owner. In addition, you can add or remove whomever you choose from the email notification.
+<!--The email can notify the person who sent, shared, or last modified the content and, for site content, the primary site collection administrator and document owner. In addition, you can add or remove whomever you choose from the email notification.
   
 In addition to sending an email notification, a user notification displays a policy tip:
   
@@ -461,22 +488,21 @@ Here's what a policy tip looks like in a OneDrive for Business account.
 
 > [!NOTE]
 > The default behavior of a DLP policy, when there is no alert configured, is not to alert or trigger. This applies only to default information types. For custom information types, the system will alert even if there is no action defined in the policy.
+-->
 
 
-Regarding policy tips, note that:
-  
-- Only the policy tip from the highest priority, most restrictive rule will be shown. For example, a policy tip from a rule that blocks access to content will be shown over a policy tip from a rule that simply sends a notification. This prevents people from seeing a cascade of policy tips.
-    
-- If the policy tips in the most restrictive rule allow people to override the rule, then overriding this rule also overrides any other rules that the content matched.
-
- [Create a DLP policy from a template](create-a-dlp-policy-from-a-template.md)
 
 
 #### User Overrides
 
 <!-- This section covers what they are and how to best use them in conjunction with Test/Turn it on right away and link out to where to find the business justification for the override (DLP reports?  https://docs.microsoft.com/en-us/microsoft-365/compliance/view-the-dlp-reports?view=o365-worldwide)-->
 
-
+- If the policy tips in the most restrictive rule allow people to override the rule, then overriding this rule also overrides any other rules that the content matched.
+ 
+![User notifications and user overrides sections of DLP rule editor](../media/37b560d4-6e4e-489e-9134-d4b9daf60296.png)
+ 
+ 
+- 
 #### Incident reports
 
 <!--DLP interacts with other M365 information protection services, like IR. Link this to a process outline for triaging/managing/resolving DLP incidents
