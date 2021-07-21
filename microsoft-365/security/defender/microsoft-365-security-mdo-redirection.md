@@ -64,15 +64,13 @@ To revert to the former portal:
 
 1. [Sign in](https://security.microsoft.com/) to Microsoft 365 Defender as a global administrator or using and account with security administrator permissions in Azure Active directory.
 
-2. Navigate to **Settings** > **Email & collaboration** > **Portal redirection**.   
+2. Navigate to **Settings** > **Email & collaboration** > **Portal redirection**.
 
 3. Toggle the Automatic redirection setting to **Off**.
 
 4. Click **Disable** & share feedback when prompted.
 
 This setting can be enabled again at any time.
-
-Once disabled, accounts will no longer be routed to security.microsoft.com.
 
 ## Related information
 - [Microsoft 365 Defender overview](overview-security-center.md)
