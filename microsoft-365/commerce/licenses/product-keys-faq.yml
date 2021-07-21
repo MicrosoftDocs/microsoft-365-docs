@@ -7,7 +7,7 @@ metadata:
   ms.reviewer: 
   - Rani Chegondi
   - Armando Valenzuela
-  ms.date: 07/19/2021
+  ms.date: 07/22/2021
   audience: Admin
   ms.topic: article
   ms.service: bookings
@@ -45,7 +45,7 @@ sections:
         answer: |
           The SQL license key is embedded in the software’s activation wizard rather than displayed in the admin center and is detected automatically during installation. For more information, see [The SQL Server Installation Guide] (/sql/database-engine/install-windows/install-sql-server).
 
-          You can also find the key by downloading the SQL ISO file from the admin center > ..\x64 folder > DefaultSetup.ini file. Make sure to back up any existing version before installing or upgrading SQL editions. If you need help troubleshooting technical issues during product installation or online service activation, contact Microsoft Technical Support by submitting a [Technical Support request] (https://support.microsoft.com/oas).
+          You can also find the key by downloading the SQL ISO file from the admin center > ..\x64 folder > DefaultSetup.ini file. Make sure to back up any existing version before installing or upgrading SQL editions. If you need help troubleshooting technical issues during product installation or online service activation, contact Microsoft Technical Support by submitting a [Technical Support request](https://support.microsoft.com/oas).
 
       - question: |
           How do I find a product key for Volume Licensing purchase?
@@ -62,20 +62,20 @@ sections:
           A setup key is used for each product/version combination to unlock the product by bypassing activation. You can get a setup key in one of two ways:
 
             - **Physical fulfillment** For products acquired through physical fulfillment, the setup key is printed on the media sleeve.
-            - **Download fulfillment** For products acquired by download from the admin center, the setup key is displayed on the download screen and could be accompanied by the following text: Some products available for download require setup keys. Please take note of this setup key as it will be needed during product installation. For more on setup keys, see [KMS client setup keys](/windows-server/get-started/kmsclientkeys).
+            - **Download fulfillment** For products acquired by download from the admin center, the setup key is displayed on the download screen and could be accompanied by the following text: Some products available for download require setup keys. Note the setup key as it's' needed during product installation. For more on setup keys, see [KMS client setup keys](/windows-server/get-started/kmsclientkeys).
 
       - question: |
           What determines which product keys are associated with my agreements?
         answer: |
-          Volume License product keys are provided for each Licensing ID listed in your [Microsoft Relationship Summary](licensing/license-faq). This Relationship Summary is on the Volume Licensing Service Center. For more information, see [What is a Licensing ID](https://docs.microsoft.com/en-us/licensing/license-faq#what-is-a-licensing-id). You could have several Licensing IDs:
+          Volume License product keys are provided for each Licensing ID listed in your [Microsoft Relationship Summary](licensing/license-faq). This Relationship Summary is on the Volume Licensing Service Center. For more information, see [What is a Licensing ID](/licensing/license-faq#what-is-a-licensing-id). You could have several Licensing IDs:
 
             - Enterprise Agreement (EA) and Select Plus customers receive product keys per product pool (Systems, Servers, and Applications).
             - Select Agreement customers receive product keys per product pool (Systems, Servers, and Applications) based on their purchasing forecasts.
             - Open License customers and Open Value customers receive applicable product keys based on their license purchases.
 
-          For more information, see the [License Summary FAQ](https://docs.microsoft.com/licensing/license-faq).
+          For more information, see the [License Summary FAQ](/licensing/license-faq).
 
-          **Note** All customers have the right to use product keys for re-imaging and downgrade purposes. Select Plus, Enterprise Agreement (EA), and Select customers have limited evaluation rights for training and back-up. For more information, see [Product licensing briefs]( /licensing/learn-more/volume-licensing-briefs).
+          **Note** All customers have the right to use product keys for re-imaging and downgrade purposes. Select Plus, Enterprise Agreement (EA), and Select customers have limited evaluation rights for training and back-up. For more information, see [Product licensing briefs](/licensing/learn-more/volume-licensing-briefs).
           
   - name: Volume activation
     questions:
@@ -192,7 +192,7 @@ sections:
           If you deploy Windows using Key Management Service (KMS) as the activation method, note that:
             
             - Windows Server is not supported as a KMS host to activate Windows.
-            - A Windows Server KMS key is required to get a patch to allow activation of Windows client machines. For the latest patch, see [Configure a KMS host computer to activate volume licensed versions of Office] (/deployoffice/vlactivation/configure-a-kms-host-computer-for-office). 
+            - A Windows Server KMS key is required to get a patch to allow activation of Windows client machines. For the latest patch, see [Configure a KMS host computer to activate volume licensed versions of Office](/deployoffice/vlactivation/configure-a-kms-host-computer-for-office). 
 
           If you’re using Windows Server as a KMS host, you can:
             
@@ -227,7 +227,7 @@ sections:
 
           During activation, you’re asked to select the License Program and Agreement Number. For Open License customers, enter your Authorization Number. For MPSA, enter your Purchase Account Number (not the MPSA Agreement number). If you’re unsure of the program type for the License ID used to purchase your CAL licenses, go to the **VLSC Relationship Summary** and refer to the **Parent Program** column.
 
-          For information about licensing Terminal Server, see [Terminal Server licensing]( /troubleshoot/windows-server/remote/terminal-server-licensing). For information on how to install the remote desktop licensing role and activate the license server, see [Activate the Remote Desktop Services license server]( /windows-server/remote/remote-desktop-services/rds-activate-license-server) and  [Cannot connect to RDS because no RD Licensing servers are available]( /troubleshoot/windows-server/remote/cannot-connect-rds-no-license-server).
+          For information about licensing Terminal Server, see [Terminal Server licensing](/troubleshoot/windows-server/remote/terminal-server-licensing). For information on how to install the remote desktop licensing role and activate the license server, see [Activate the Remote Desktop Services license server](/windows-server/remote/remote-desktop-services/rds-activate-license-server) and  [Cannot connect to RDS because no RD Licensing servers are available](/troubleshoot/windows-server/remote/cannot-connect-rds-no-license-server).
 
         - question: |
           Can organizations within the same ownership structure use the same key to deploy a product?
@@ -237,7 +237,7 @@ sections:
         - question: |
           Can I use my Volume License Keys to exercise my re-imaging rights?
         answer: |
-          Yes. Re-imaging rights are granted to all Microsoft Volume Licensing customers. Under these rights, customers can re-image Original Equipment Manufacturer (OEM) or Full Packaged Product (FPP) licensed copies by using media provided under their agreement if the copies made from the Volume Licensing media are identical to the original licensed product. As a Volume Licensing customer, you can find the Volume License Keys on the product key page or request your keys through a [Microsoft Activation Center]( https://licensingapps.microsoft.com/product-activation).
+          Yes. Re-imaging rights are granted to all Microsoft Volume Licensing customers. Under these rights, customers can re-image Original Equipment Manufacturer (OEM) or Full Packaged Product (FPP) licensed copies by using media provided under their agreement if the copies made from the Volume Licensing media are identical to the original licensed product. As a Volume Licensing customer, you can find the Volume License Keys on the product key page or request your keys through a [Microsoft Activation Center](https://licensingapps.microsoft.com/product-activation).
 
           **Note** If you’re an Open License customer, you must purchase at least one unit of the product that you want to re-image to obtain access to the product media and receive a product key.
 
@@ -269,6 +269,6 @@ additionalContent: |
 
   ## Additional resources
   
-  - [Downloads FAQ]()
+  - [Downloads FAQ](downloads-faq.yml)
 
-  - [Online service activation for Open programs FAQ]()
+  - [Online service activation for Open programs FAQ](online-service-activation-faq.yml)

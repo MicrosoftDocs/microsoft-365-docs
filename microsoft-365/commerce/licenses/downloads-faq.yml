@@ -7,7 +7,7 @@ metadata:
   ms.reviewer: 
   - Rani Chegondi
   - Armando Valenzuela
-  ms.date: 07/19/2021
+  ms.date: 07/22/2021
   audience: Admin
   ms.topic: article
   ms.service: bookings
@@ -131,6 +131,6 @@ additionalContent: |
 
   ## Additional resources
   
-  - [Product keys FAQ]()
+  - [Product keys FAQ](product-keys-faq.yml)
 
-  - [Online services activation for Open programs FAQ]()
+  - [Online services activation for Open programs FAQ](oneline-service-activation-faq.yml)
