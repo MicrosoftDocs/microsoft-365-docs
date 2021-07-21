@@ -31,7 +31,7 @@ This article focuses on Defender for Endpoint Plan 1, currently in preview. Use 
 - Get started using the Microsoft 365 Defender portal, where you can view incidents and alerts, manage devices, and use reports about detected threats.
 
 > [!IMPORTANT]
-> Some information in this guide relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. This guide includes links to online content that might describe some features that are not included in Defender for Endpoint Plan 1.
+> Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. This article includes links to online content that might describe some features that are not included in Defender for Endpoint Plan 1 (preview).
 
 ## What's included in Defender for Endpoint Plan 1?
 
