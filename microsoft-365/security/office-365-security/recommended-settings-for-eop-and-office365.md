@@ -304,7 +304,7 @@ In PowerShell, you use the [New-SafeAttachmentPolicy](/powershell/module/exchang
 
 |Security feature name|Default|Standard|Strict|Comment|
 |---|:---:|:---:|:---:|---|
-|**Safe Attachments unknown malware response** <p> _Action_|**Off** <p> `Block`|**Block** <p> `Block`|**Block** <p> `Block`||
+|**Safe Attachments unknown malware response** <p> _Action_|**Block** <p> `Block`|**Block** <p> `Block`|**Block** <p> `Block`||
 |**Redirect attachment with detected attachments** : **Enable redirect** <p> _Redirect_ <p> _RedirectAddress_|Not selected and no email address specified. <p> `$true` <p> none|Selected and specify an email address. <p> `$true` <p> an email address|Selected and specify an email address. <p> `$true` <p> an email address|Redirect messages to a security admin for review.|
 |**Apply the Safe Attachments detection response if scanning can't complete (timeout or errors)** <p> _ActionOnError_|Selected <p> `$true`|Selected <p> `$true`|Selected <p> `$true`||
 |
