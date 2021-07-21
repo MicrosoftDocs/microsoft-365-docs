@@ -86,6 +86,12 @@
       ]
     },
     "fileMetadata": {
+      "recommendations":{
+        "/admin": false,
+        "/business": false,
+        "/business-video": false,
+        "/commerce": false
+        },
       "titleSuffix": {
         "compliance/**/*.md": "Microsoft 365 Compliance",
         "security/mtp/**/*.md": "Microsoft 365 security",
