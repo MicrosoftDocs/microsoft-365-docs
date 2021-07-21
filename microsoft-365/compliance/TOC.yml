@@ -558,7 +558,7 @@
 - name: Manage app governance
   items: 
     - name: Protect and govern your apps
-      href: app-governance-manage-app-protection-governance.md
+      href: app-governance-manage-app-governance.md
     - name: Get Started with app governance
       href: app-governance-get-started.md
     - name: Submit feedback on app governance
@@ -735,9 +735,9 @@
           items:
             - name: Create and manage a case
               href: create-and-manage-advanced-ediscoveryv2-case.md
-            - name: Use large cases
+            - name: Use large cases (preview)
               href: advanced-ediscovery-large-cases.md
-        - name: Advanced eDiscovery workflow for Teams content
+        - name: Advanced eDiscovery workflow for Teams content (preview)
           href: teams-workflow-in-advanced-ediscovery.md
         - name: Manage custodians and non-custodial data sources
           href: managing-custodians.md
