@@ -47,11 +47,20 @@ The navigation bar on the left side of the screen enables you to move easily bet
 |:---|:---|
 | **Home** | Navigates to the Home page of the [Microsoft 365 Defender portal](../defender/microsoft-365-security-center-mde.md). |
 | **Incidents & alerts** | Expands to show **Incidents** and **Alerts**. |
-| **Incidents** | Navigates to the **Incidents** list. Incidents are created when alerts are triggered and/or threats are detected. By default, the **Incidents** list displays data for the last 30 days, with the most recent incident listed first. To learn more, see [Incidents](view-incidents-queue.md). |
-| **Alerts** | Navigates to the **Alerts** list (also referred to as the **Alerts queue**). Alerts are triggered when a suspicious or malicious file, process, or behavior is detected. By default, the **Alerts** list displays data for the last 30 days, with the most recent alert listed first. To learn more, see [Alerts](alerts-queue.md). |
+| **Incidents & alerts** > **Incidents** | Navigates to the **Incidents** list. Incidents are created when alerts are triggered and/or threats are detected. By default, the **Incidents** list displays data for the last 30 days, with the most recent incident listed first. To learn more, see [Incidents](view-incidents-queue.md). |
+| **Incidents & alerts** > **Alerts** | Navigates to the **Alerts** list (also referred to as the **Alerts queue**). Alerts are triggered when a suspicious or malicious file, process, or behavior is detected. By default, the **Alerts** list displays data for the last 30 days, with the most recent alert listed first. To learn more, see [Alerts](alerts-queue.md). |
 | **Action center** | Navigates to the Action center, which tracks remediation and manual response actions. The Action center tracks activities like these: <br/>- Microsoft Defender Antivirus encounters a malicious file and then blocks/removes that file. <br/>- Your security team isolates a device.<br/>- Defender for Endpoint detects and quarantines a file. <p>To learn more, see [Action center](auto-investigation-action-center.md). |
-| **Device inventory** | Navigates to your list of devices that are onboarded to Defender for Endpoint. Provides information about devices, such as their exposure and risk levels. To learn more, see [Device inventory](machines-view-overview.md). |
+| **Secure score** | Displays a representation of your organization's security posture along with a list of improvement actions and metrics. <p>To learn more, see [Microsoft Secure Score](../defender/microsoft-secure-score.md). |
+| **Learning hub** | Navigates to learning paths about security capabilities in Microsoft 365 Defender.  |
+| **Endpoints** > **Search** |  |
+|  **Endpoints** > **Device inventory** | Navigates to your list of devices that are onboarded to Defender for Endpoint. Provides information about devices, such as their exposure and risk levels. To learn more, see [Device inventory](machines-view-overview.md). |
+|  **Endpoints** > **Configuration & baselines** | Expands to show **Security baselines** and **Configuration management**. |
+|  **Endpoints** > **Configuration & baselines** > **Security baselines** |  |
+|  **Endpoints** > **Configuration & baselines** > **Configuration mangement** |  |
 | **Reports** | Navigates to your reports, such as your [Threat protection report](threat-protection-reports.md), [Device health and compliance report](machine-reports.md), and your [Web protection report](web-protection-overview.md). |
+| **Audit** |  |
+| **Health** |   |
+| **Permissions & roles** |   |
 | **Settings** | Navigates to general settings for your Microsoft 365 Defender portal and Defender for Endpoint. To learn more, see [Settings](../defender/overview-security-center.md). |
 | **More resources** | Displays a list of more portals and centers, such as Azure Active Directory and the Microsoft 365 compliance center. To learn more, see [Microsoft security portals and admin centers](../defender/portals.md). |
 
