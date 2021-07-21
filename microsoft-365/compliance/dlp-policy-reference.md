@@ -494,9 +494,7 @@ Here's what a policy tip looks like in a OneDrive for Business account.
 
 #### User overrides
 
-**User overrides** are enabled only when **Notify users in Office 365 services with a policy tip** is enabled, so user overrides go hand-in-hand with Notifications and Policy tips. The intent of user overrides is to give a user a way to bypass DLP policy blocking actions on sensitive items in Exchange, SharePoint, OneDrive or Teams.
-
- that triggers a policy action, like block, to bypass the blocking action and continue their work.
+The intent of **User overrides** is to give users a way to bypass, with justification, DLP policy blocking actions on sensitive items in Exchange, SharePoint, OneDrive or Teams so that they can continue their work. User overrides are enabled only when **Notify users in Office 365 services with a policy tip** is enabled, so user overrides go hand-in-hand with Notifications and Policy tips. 
 
 ![User override options for a DLP policy](../media/dlp-user-overrides.png)
 
