@@ -19,6 +19,7 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - AdminSurgePortfolio
+- m365solution-removeemployee
 search.appverid:
 - BCS160
 - MET150
@@ -39,3 +40,7 @@ If your former employee had an organization phone, you can use the Exchange admi
 5. Select **Save**.
    > [!TIP]
    > Be sure you remove or disable the user from your on-premises Blackberry Enterprise Service. You should also disable any Blackberry devices for the user. Refer to the Blackberry Business Cloud Services Administration Guide if you need specific steps on how to disable the user.
+
+## Related content
+
+[Exchange admin center in Exchange Online](/exchange/exchange-admin-center)
