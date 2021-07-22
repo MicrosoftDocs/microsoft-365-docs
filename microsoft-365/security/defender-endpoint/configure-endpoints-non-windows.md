@@ -50,7 +50,6 @@ You'll need to take the following steps to onboard non-Windows devices:
     2. In the **Partner Applications** page, select the partner that supports your non-Windows devices.
     3. Click **View** to open the partner's page. Follow the instructions provided on the page.
     4. After creating an account or subscribing to the partner solution, you should get to a stage where a tenant Global Admin in your organization is asked to accept a permission request from the partner application. Read the permission request carefully to make sure that it's aligned with the service that you require. 
-
         
 2. Run a detection test by following the instructions of the third-party solution.
 

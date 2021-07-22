@@ -283,6 +283,71 @@ For device compliance policies to be deployed, they must be assigned to user gro
 
 For step-by-step guidance on creating compliance policies in Intune, see [Create a compliance policy in Microsoft Intune](/mem/intune/protect/create-compliance-policy) in the Intune documentation.
 
+### Recommended settings for iOS
+
+iOS/iPadOS supports several enrollment scenarios, two of which are covered as part of this framework:
+
+- [Device enrollment for personally owned devices](/mem/intune/enrollment/ios-enroll) – these devices are personally owned and used for both work and personal use.
+- [Supervised automated device enrollment for corporate-owned devices](/mem/intune/enrollment/device-enrollment-program-enroll-ios) – these devices are corporate-owned, associated with a single user, and used exclusively for work and not personal use.
+
+The iOS/iPadOS security configuration framework is organized into several distinct configuration scenarios, providing guidance for personally owned and supervised devices.
+
+For personally owned devices:
+
+- Basic security (Level 1) – Microsoft recommends this configuration as the minimum security configuration for personal devices where users access work or school data. This is done by enforcing password policies, device lock characteristics, and disabling certain device functions (e.g., untrusted certificates).
+- Enhanced security (Level 2) – Microsoft recommends this configuration for devices where users access sensitive or confidential information. This configuration enacts data sharing controls. This configuration is applicable to most mobile users accessing work or school data on a device.
+- High security (Level 3) – Microsoft recommends this configuration for devices used by specific users or groups who are uniquely high risk (users who handle highly sensitive data where unauthorized disclosure causes considerable material loss to the organization). This configuration enacts stronger password policies, disables certain device functions, and enforces additional data transfer restrictions.
+
+For supervised devices:
+
+- Basic security (Level 1) – Microsoft recommends this configuration as the minimum security configuration for supervised devices where users access work or school data. This is done by enforcing password policies, device lock characteristics, and disabling certain device functions (e.g., untrusted certificates).
+- Enhanced security (Level 2) – Microsoft recommends this configuration for devices where users access sensitive or confidential information. This configuration enacts data sharing controls and blocks access to USB devices. This configuration is applicable to most mobile users accessing work or school data on a device.
+- High security (Level 3) – Microsoft recommends this configuration for devices used by specific users or groups who are uniquely high risk (users who handle highly sensitive data where unauthorized disclosure causes considerable material loss to the organization). This configuration enacts stronger password policies, disables certain device functions, enforces additional data transfer restrictions, and requires apps to be installed through Apple’s volume purchase program.
+
+Using the principles outlined in [Identity and device access configurations](microsoft-365-policies-configurations.md), the Baseline and Sensitive protection tiers map closely with the Level 2 enhanced security settings. The Highly regulated protection tier maps closely to the Level 3 high security settings.
+
+|Protection level  |Device policy |More information  |
+|---------|---------|---------|
+|Baseline     |Enhanced security (Level 2)         |The policy settings enforced in level 2 include all the policy settings recommended for level 1 and only adds to or updates the below policy settings to implement more controls and a more sophisticated configuration than level 1.         |
+|Sensitive     |Enhanced security (Level 2)         |The policy settings enforced in level 2 include all the policy settings recommended for level 1 and only adds to or updates the below policy settings to implement more controls and a more sophisticated configuration than level 1.         |
+|Highly Regulated     |High security (Level 3)         |The policy settings enforced in level 3 include all the policy settings recommended for level 1 and 2 and only adds to or updates the below policy settings to implement more controls and a more sophisticated configuration than level 2.         |
+
+To see the specific device compliance and device restriction recommendations for each configuration level, review the [iOS/iPadOS Security Configuration Framework](/mem/intune/enrollment/ios-ipados-configuration-framework).
+
+### Recommended settings for Android
+
+Android Enterprise supports several enrollment scenarios, two of which are covered as part of this framework:
+
+- [Android Enterprise work profile](/intune/android-work-profile-enroll) – this enrollment model is typically used for personally-owned devices, where IT wants to provide a clear separation boundary between work and personal data. Policies controlled by IT ensure that the work data cannot be transferred into the personal profile.
+- [Android Enterprise fully managed devices](/intune/android-fully-managed-enroll) – these devices are corporate-owned, associated with a single user, and used exclusively for work and not personal use.
+
+The Android Enterprise security configuration framework is organized into several distinct configuration scenarios, providing guidance for work profile and fully managed scenarios.
+
+For Android Enterprise work profile devices:
+
+- Work profile basic security (Level 1) – Microsoft recommends this configuration as the minimum security configuration for personal devices where users access work or school data. This configuration introduces password requirements, separates work and personal data, and validates Android device attestation.
+- Work profile high security (Level 3) – Microsoft recommends this configuration for devices used by specific users or groups who are uniquely high risk (users who handle highly sensitive data where unauthorized disclosure causes considerable material loss to the organization). This configuration introduces mobile threat defense or Microsoft Defender for Endpoint, sets the minimum Android version, enacts stronger password policies, and further restricts work and personal separation.
+
+For Android Enterprise fully managed devices:
+
+- Fully managed basic security (Level 1) – Microsoft recommends this configuration as the minimum security configuration for an enterprise device. This configuration is applicable to most mobile users accessing work or school data. This configuration introduces password requirements, sets the minimum Android version, and enacts certain device restrictions.
+- Fully managed enhanced security (Level 2) – Microsoft recommends this configuration for devices where users access sensitive or confidential information. This configuration enacts stronger password policies and disables user/account capabilities.
+- Fully managed high security (Level 3) - Microsoft recommends this configuration for devices used by specific users or groups who are uniquely high risk (users who handle highly sensitive data where unauthorized disclosure causes considerable material loss to the organization). This configuration increases the minimum Android version, introduces mobile threat defense or Microsoft Defender for Endpoint, and enforces additional device restrictions.
+
+Using the principles outlined in [Identity and device access configurations](microsoft-365-policies-configurations.md), the Baseline and Sensitive protection tiers map closely with the Level 1 basic security for personally owned devices and Level 2 enhanced security settings for fully managed devices. The Highly regulated protection tier maps closely to the Level 3 high security settings.
+
+For Android Enterprise work profile devices:
+
+|Protection level  |Device policy |More information  |
+|---------|---------|---------|
+|Baseline     |Work Profile: Basic security (Level 1)      |N/A         |
+|Sensitive     |Work Profile: Basic security (Level 1)         |N/A         |
+|Baseline     |Fully Managed: Enhanced Security (Level 2)       |The policy settings enforced in level 2 include all the policy settings recommended for level 1 and only adds to or updates the below policy settings to implement more controls and a more sophisticated configuration than level 1.         |
+|Sensitive     |Fully Managed: Enhanced Security (Level 2)         |The policy settings enforced in level 2 include all the policy settings recommended for level 1 and only adds to or updates the below policy settings to implement more controls and a more sophisticated configuration than level 1.         |
+|Highly Regulated     |High security (Level 3)         |The policy settings enforced in level 3 include all the policy settings recommended for level 1 and 2 and only adds to or updates the below policy settings to implement more controls and a more sophisticated configuration than level 2.         |
+
+To see the specific device compliance and device restriction recommendations for each configuration level, review the [Android Enterprise Security Configuration Framework](/mem/intune/enrollment/android-configuration-framework).
+
 ### Recommended settings for Windows 10 and later
 
 The following settings are recommended for PCs running Windows 10 and later, as configured in **Step 2: Compliance settings**, of the policy creation process.
@@ -344,9 +409,9 @@ To require compliant PCs:
 
 6. Under **Assignments**, choose **Cloud apps or actions**.
 
-7. For **Include**, choose **Select apps > Select**, and then select the desired apps from the **Cloud apps** list. For example, select Exchange Online. Choose **Select** when done.
+7. For **Include**, choose **Select apps > Select**, and then select the desired apps from the **Cloud apps** list. For example, select Office 365. Choose **Select** when done.
 
-8. To require compliant PCs (but not compliant phones and tablets), under **Assignments**, choose **Conditions > Device platforms**. Select **Yes** for **Configure**. Choose  **Select device platforms**, select **Windows** and **macOS**, and then choose **Done**.
+8. To require compliant PCs (but not compliant phones and tablets), under **Assignments**, choose **Conditions > Device platforms**. Select **Yes** for **Configure**. Choose  **Select device platforms**, select **Yes** and select **Any device** and under Exclude select **iOS** and **Android**, and then choose **Done**.
 
 9. Under **Access controls**, choose **Grant** .
 
@@ -370,7 +435,7 @@ To require compliance for all devices:
 
 6. Under **Assignments**, choose **Cloud apps or actions**.
 
-7. For **Include**, choose **Select apps > Select**, and then select the desired apps from the **Cloud apps** list. For example, select Exchange Online. Choose **Select** when done.
+7. For **Include**, choose **Select apps > Select**, and then select the desired apps from the **Cloud apps** list. For example, select Office 365. Choose **Select** when done.
 
 8. Under **Access controls**, choose **Grant** .
 

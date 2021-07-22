@@ -80,3 +80,5 @@ For more information, see [Deploy Microsoft Defender for Endpoint on iOS](ios-in
 
 - [Deploy Microsoft Defender for Endpoint on iOS](ios-install.md)
 - [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)
+- [Configure app protection policy to include Defender for Endpoint risk signals (MAM)](ios-install-unmanaged.md)
+- [Configure Conditional Access policy based on device risk score from Microsoft Defender for Endpoint](ios-configure-features.md#conditional-access-with-defender-for-endpoint-on-ios)
