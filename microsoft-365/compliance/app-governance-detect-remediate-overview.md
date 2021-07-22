@@ -47,10 +47,6 @@ By sharing information across app governance, Azure AD, and Microsoft Cloud App 
 
   From the app governance portal, you can see the aggregated sign-in activity for each app and link back to the Azure Active Directory admin center for the details of sign-in events.
 
-- App API usage information in the Azure Active Directory admin center:
-
-  From the Azure Active Directory admin center, you can see the aggregated app usage information and link to the app governance portal for the details of app usage.
-
 - API usage information in the Microsoft Cloud App Security portal: 
 
   From the Microsoft Cloud App Security portal, you can see API usage level and aggregate data transfer and link to the app governance portal for the details.
