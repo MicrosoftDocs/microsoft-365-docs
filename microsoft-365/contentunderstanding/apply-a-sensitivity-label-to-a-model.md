@@ -1,5 +1,5 @@
 ---
-title: "Apply a sensitivity label to a model in Microsoft SharePoint Syntex"
+title: Apply a sensitivity label to a model in Microsoft SharePoint Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,7 +12,7 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 localization_priority: Priority
-description: "Learn how to apply a sensitivity label to a model in SharePoint Syntex."
+description: Learn how to apply a sensitivity label to a model in SharePoint Syntex.
 ---
 
 # Apply a sensitivity label to a model in Microsoft SharePoint Syntex
