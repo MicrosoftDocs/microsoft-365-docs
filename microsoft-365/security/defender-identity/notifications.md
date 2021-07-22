@@ -77,7 +77,7 @@ Defender for Identity can notify you when it detects suspicious activities by se
 1. Enter the following details:
 
     - **Sensor** - From the drop-down list, choose the sensor that will send the alerts.
-    - **Service endpoint** and **Port** - Enter the IP address or fully qualified domain name (​FQDN) for the syslog server and specify the port number.
+    - **Service endpoint** and **Port** - Enter the IP address or fully qualified domain name (FQDN) for the syslog server and specify the port number.
     - **Transport** - Select the **Transport** protocol (TCP or UDP).
     - **Format** - Select the format (RFC 3164 or RFC 5424).
 
