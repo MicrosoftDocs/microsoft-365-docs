@@ -91,33 +91,34 @@ The following policies are are available:
 - **Turn off Trusted Documents**: Exceptions for groups available.
 - **Turn off all active content**: Exceptions for individuals.
 
-The following sections list policies that control active content, the recommended security baselines setting, and other settings where User prompt to override is available (allow the user to enable the active content).
+The tables in the following sections describe the settings that control active content. They also include the recommended security baselines setting, and other settings where User prompt to override is available (allow the user to enable the active content).
 
 ### HKEY_CURRENT_USER settings
 
 <p>
 
 ****
-|Category|App|Policy setting name|User prompt and<br>override available?|
-|---|---|---|---|
-|ActiveX|Office|ActiveX Control Initialization|**Yes** for the following values: <ul><li>**3**</li><li>**4**</li><li>**5**</li><li>**6**</li></ul>|
-|ActiveX|Office|Allow Active X One Off Forms|n/a|
-|ActiveX|Office|Load Controls in Forms3|**Yes** for the following values: <ul><li>**2**</li><li>**3**</li></ul>|
-|DDE|Excel|Don't allow Dynamic Data Exchange (DDE) server launch in Excel|**Yes** for the value **Not configured**.|
-|DDE|Excel|Don't allow Dynamic Data Exchange (DDE) server lookup in Excel|**Yes** for the following values: <ul><li>**Disabled**</li><li>**Not configured**</li></ul>|
-|DDE|Word|Dynamic Data Exchange|n/a|
-|Jscript & VBScript|Outlook|Allow scripts in one-off Outlook forms|n/a|
-|Jscript & VBScript|Outlook|Do not allow Outlook object model scripts to run for public folders|n/a|
-|Jscript & VBScript|Outlook|Do not allow Outlook object model scripts to run for shared folders|n/a|
-|Macros|Access <p> Excel <p> PowerPoint <p> Visio <p> Word|Block macros from running in Office files from the Internet|**Yes** for the following values: <ul><li>**Disabled**</li><li>**Not configured**</li></ul>|
-|Macros|Access <p> Excel <p> PowerPoint <p> Project <p> Publisher <p> Visio <p> Word|VBA Macro Notification Settings|**Yes** for the following values: <ul><li>**Disabled**</li><li>**Not configured**</li></ul>|
-|Macros|Excel|Scan encrypted macros in Excel Open XML workbooks|n/a|
-|Macros - General & Embedded|Office|Allow VBA to load typelib references by path from untrusted intranet locations|n/a|
-|Macros - General & Embedded|Office|Automation Security|n/a|
-|Macros - General & Embedded|Office|Disable additional security checks on VBA library references that may refer to unsafe locations on the local machine|n/a|
-|Macros - General & Embedded|Office|Macro Runtime Scan Scope|n/a|
-|Macros|Outlook|Security setting for macros|**Yes** for the following values: <ul><li>**Always warn**</li><li>**Warn for signed, disable unsigned**</li><li>**Disabled**</li><li>**Not configured**</li></ul>|
-|Macros|Outlook|Outlook Security Mode|Required to enable all Outlook GPO settings. <p> Mentioned as a dependency (this policy doesn't block active content itself).|
+|Category|App|Policy setting name|Security baseline<br>setting (recommended)|User prompt and<br>override available?|
+|---|---|---|---|---|
+|ActiveX|Office|ActiveX Control Initialization|**6**|**Yes** for the following values: <ul><li>**3**</li><li>**4**</li><li>**5**</li><li>**6**</li></ul>|
+|ActiveX|Office|Allow Active X One Off Forms|**Load only Outlook Controls**|n/a|
+|ActiveX|Office|Load Controls in Forms3|**1**|**Yes** for the following values: <ul><li>**2**</li><li>**3**</li></ul>|
+|DDE|Excel|Don't allow Dynamic Data Exchange (DDE) server launch in Excel|**Enabled**|**Yes** for the value **Not configured**.|
+|DDE|Excel|Don't allow Dynamic Data Exchange (DDE) server lookup in Excel|**Enabled**|**Yes** for the following values: <ul><li>**Disabled**</li><li>**Not configured**</li></ul>|
+|DDE|Word|Dynamic Data Exchange|???|n/a|
+|Jscript & VBScript|Outlook||Allow scripts in one-off Outlook forms|**Disabled**n/a|
+|Jscript & VBScript|Outlook|Do not allow Outlook object model scripts to run for public folders|**Enabled**|n/a|
+|Jscript & VBScript|Outlook|Do not allow Outlook object model scripts to run for shared folders|**Enabled**|n/a|
+|Macros|Access <p> Excel <p> PowerPoint <p> Visio <p> Word|Block macros from running in Office files from the Internet|**Enabled**|**Yes** for the following values: <ul><li>**Disabled**</li><li>**Not configured**</li></ul>|
+|Macros|Access <p> Excel <p> PowerPoint <p> Project <p> Publisher <p> Visio <p> Word|VBA Macro Notification Settings|F95
+**Disable all except digitally signed macros** <p> + <p> **Require macros to be signed by a trusted publisher**|**Yes** for the following values: <ul><li>**Disabled**</li><li>**Not configured**</li></ul>|
+|Macros|Excel|Scan encrypted macros in Excel Open XML workbooks|**Scan encrypted macros (default)**|n/a|
+|Macros - General & Embedded|Office|Allow VBA to load typelib references by path from untrusted intranet locations|**Disabled**|n/a|
+|Macros - General & Embedded|Office|Automation Security|**Use application macro security level**|n/a|
+|Macros - General & Embedded|Office|Disable additional security checks on VBA library references that may refer to unsafe locations on the local machine|**Disabled**|n/a|
+|Macros - General & Embedded|Office|Macro Runtime Scan Scope|**Enable for all documents**|n/a|
+|Macros|Outlook|Security setting for macros|**Warn for signed, disable unsigned**|**Yes** for the following values: <ul><li>**Always warn**</li><li>**Warn for signed, disable unsigned**</li><li>**Disabled**</li><li>**Not configured**</li></ul>|
+|Macros|Outlook|Outlook Security Mode|**Use Outlook Security Group Policy**|Required to enable all Outlook GPO settings. <p> Mentioned as a dependency (this policy doesn't block active content itself).|
 |Macros|PowerPoint|Scan encrypted macros in PowerPoint Open XML presentations|n/a|
 |Macros|Publisher|Publisher Automation Security Level|n/a|
 |Macros|Word|Scan encrypted macros in Word Open XML documents|n/a|
@@ -139,7 +140,7 @@ The following sections list policies that control active content, the recommende
 |Add-ins & Extensibility|Outlook|Set Outlook object model custom actions execution prompt|**Yes** for the following values: <ul><li>**Prompt user**</li><li>**Prompt user based on computer security**</li><li>**Disabled**</li><li>**Not configured**</li></ul>|
 |Add-ins & Extensibility|PowerPoint|Run Programs|**Yes** for the value **Enable (prompt user before running)**|
 |Add-ins & Extensibility|Word <p> Excel|Disable Smart Document's use of manifests|n/a|
-|||||
+|
 
 ### HKEY_LOCAL_MACHINE settings
 
@@ -153,4 +154,4 @@ The following sections list policies that control active content, the recommende
 |Add-ins & Extensibility|Office|Block Flash activation in Office documents|n/a|
 |Jscript & VBScript|Office|Restrict legacy JScript execution for Office|n/a|
 |Jscript & VBScript|Office|Scripted Window Security Restrictions|n/a|
-||||
+|
