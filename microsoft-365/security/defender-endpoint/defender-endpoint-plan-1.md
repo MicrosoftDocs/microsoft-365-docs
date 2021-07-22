@@ -9,7 +9,7 @@ audience: ITPro
 ms.topic: overview
 ms.date: 07/21/2021
 ms.prod: m365-security
-ms.technology: mdep1
+ms.technology: mde
 localization_priority: Normal
 ms.reviewer: 
 f1.keywords: NOCSH
