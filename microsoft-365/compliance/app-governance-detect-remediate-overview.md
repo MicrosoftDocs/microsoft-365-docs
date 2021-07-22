@@ -37,8 +37,8 @@ See the [administrator roles](app-governance-get-started.md#administrator-roles)
 
 App governance, Azure Active Directory (Azure AD), and Microsoft Cloud App Security collect and provide different data sets:
 
-- Azure AD provides foundational app metadata and detailed information on sign-ins to apps.
 - App governance provides detailed information about an app’s activity at the API level.
+- Azure AD provides foundational app metadata and detailed information on sign-ins to apps.
 - Microsoft Cloud App Security provides app risk information.
 
 By sharing information across app governance, Azure AD, and Microsoft Cloud App Security, you can display aggregate information in one portal and easily link to another portal for more information. Here are some examples:
@@ -46,10 +46,6 @@ By sharing information across app governance, Azure AD, and Microsoft Cloud App 
 - App sign-in information in app governance:
 
   From the app governance portal, you can see the aggregated sign-in activity for each app and link back to the Azure Active Directory admin center for the details of sign-in events.
-
-- App API usage information in the Azure Active Directory admin center:
-
-  From the Azure Active Directory admin center, you can see the aggregated app usage information and link to the app governance portal for the details of app usage.
 
 - API usage information in the Microsoft Cloud App Security portal: 
 

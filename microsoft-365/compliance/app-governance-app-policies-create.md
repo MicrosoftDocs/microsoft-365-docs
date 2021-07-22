@@ -27,7 +27,7 @@ Along with a built-in set of capabilities to detect anomalous app behavior and g
 
 You can create app policies from provided templates that can be customized, or you can create your own custom app policy.
 
-To create a new app policy, go to **Microsoft 365 Compliance Center > App protection & governance > Overview page > Policies**:
+To create a new app policy, go to **Microsoft 365 Compliance Center > App governance > Overview page > Policies**:
 
 - To create a new app policy with templates designed for app usage, select **Create policy** under **Create an app usage policy**.
 - To create a new app policy with templates designed for app permissions, select **Create policy** under **Create a permissions policy**.
@@ -58,13 +58,13 @@ App governance includes these templates to generate alerts for app permissions.
 | New app with high-privilege permissions | Highlights all new apps with high privilege permissions to identify potential high-footprint apps that may need further investigation. <br><br> By default, this policy will flag all apps registered within the last 7 days that have high-scoped permissions. |
 |||
 
-### App certification
+### M365 certification
 
-App governance includes these templates to generate alerts for app certification.
+App governance includes these templates to generate alerts for M365 certification.
 
 | Template name | Description |
 |:-------|:-----|
-| New uncertified app | Highlights new apps that haven't been through the app certification process to ensure that they are expected in the tenant. <br><br> By default, this policy will flag all apps that were registered in the last 7 days and are uncertified. |
+| New uncertified app | Highlights new apps that haven't been through the M365 certification process to ensure that they are expected in the tenant. <br><br> By default, this policy will flag all apps that were registered in the last 7 days and are uncertified. |
 |||
 
 ## Custom app policies
@@ -122,11 +122,7 @@ Here are the available conditions for a custom app policy.
 | Error rate | Error rate is greater than X% in the last 7 days, where X is an admin-defined value |  |
 ||||
 
-<!--
-NOTE TO WRITER: Replace X in the above table with correct values.
--->
-
-All of the specified conditions must be met for this app policy to apply.
+All of the specified conditions must be met for this app policy to generate an alert.
 
 When you are done specifying the conditions, select **Save**, and then select **Next**.
 

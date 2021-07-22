@@ -54,7 +54,7 @@ To enable an attack surface reduction rule in audit mode, use the following Powe
 Add-MpPreference -AttackSurfaceReductionRules_Ids <rule ID> -AttackSurfaceReductionRules_Actions AuditMode
 ```
 
-Where `<rule ID>` is a [GUID value of the attack surface reduction rule](attack-surface-reduction.md#attack-surface-reduction-rules).
+Where `<rule ID>` is a [GUID value of the attack surface reduction rule](attack-surface-reduction-rules.md).
 
 To enable all the added attack surface reduction rules in audit mode, use the following PowerShell cmdlet:
 
