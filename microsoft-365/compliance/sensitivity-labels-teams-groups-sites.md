@@ -137,6 +137,8 @@ Not all apps support authentication contexts. If a user with an unsupported app 
 
 - Office for the web, which includes Outlook for the web
 
+- Microsoft Teams for Windows and macOS (excludes Teams web app)
+
 - Microsoft Planner
 
 - Microsoft 365 Apps for Word, Excel, and PowerPoint; minimum versions:
