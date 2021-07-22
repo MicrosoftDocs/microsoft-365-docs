@@ -10,7 +10,7 @@ audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 localization_priority: Priority
-ms.collection: 
+ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - remotework
@@ -25,57 +25,56 @@ This article provides step-by-step instructions to create a [team with security 
 ![Configuration for the Company Strategy isolated team](../media/team-security-isolation-dev-test/team-security-isolation-dev-test-config.png)
 
 Use this dev/test environment to experiment and fine-tune settings for your specific needs before deploying this type of team in production.
-  
+
 ## Phase 1: Build out your Microsoft 365 Enterprise test environment
 
 If you just want to test sensitive and highly sensitive teams in a lightweight way with the minimum requirements, follow the instructions in [Lightweight base configuration](../enterprise/lightweight-base-configuration-microsoft-365-enterprise.md).
 
 If you want to test sensitive and highly sensitive teams in a simulated enterprise, follow the instructions in [Password hash synchronization](../enterprise/password-hash-sync-m365-ent-test-environment.md).
 
->[!Note]
->Testing a team with security isolation does not require the simulated enterprise test environment, which includes a simulated intranet connected to the Internet and directory synchronization for an Active Directory Domain Services (AD DS) forest. It is provided here as an option so that you can test a team with security isolation and experiment with it in an environment that represents a typical organization.
->
-    
+> [!NOTE]
+> Testing a team with security isolation does not require the simulated enterprise test environment, which includes a simulated intranet connected to the Internet and directory synchronization for an Active Directory Domain Services (AD DS) forest. It is provided here as an option so that you can test a team with security isolation and experiment with it in an environment that represents a typical organization.
+
 ## Phase 2: Create and configure your Azure Active Directory (Azure AD) group and users
 
 In this phase, you create and configure an Azure AD group and users for your fictional organization.
-  
+
 First, create a security group with the Azure portal.
-  
+
 1. Create a separate tab in your browser, and then go to the Azure portal at [https://portal.azure.com](https://portal.azure.com). If needed, sign in with the credentials of the global administrator account for your Microsoft 365 E5 trial or paid subscription.
-    
+
 2. In the Azure portal, click **Azure Active Directory > Groups**.
-    
+
 3. On the **Groups - All groups** blade, click **+ New group**.
-    
+
 4. On the **Group** blade:
-    
+
   - Select **Security** in **Group type**.
-    
+
   - Type **C-Suite** in **Name**.
-    
+
   - Select **Assigned** in **Membership type**.
-      
+
 5. Click **Create**, and then close the **Group** blade.
-    
+
 Next, configure automatic licensing so that members of the new **C-Suite** group are automatically assigned a Microsoft 365 E5 license.
-  
+
 1. In the Azure portal, click **Azure Active Directory > Licenses > All products**.
-    
+
 2. In the list, select **Microsoft 365 Enterprise E5**, and then click **Assign**.
-    
+
 3. In the **Assign license** blade, click **Users and groups**.
-    
+
 4. In the list of groups, select the **C-Suite** group.
-    
+
 5. Click **Select**, and then click **Assign**.
-    
+
 6. Close the Azure portal tab in your browser.
-    
+
 Next, [connect with the Azure Active Directory PowerShell for Graph module](../enterprise/connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
-  
+
 Fill in your organization name, your location, and a common password, and then run these commands from the PowerShell command prompt or Integrated Script Environment (ISE) to create new user accounts and add them to the C-Suite group:
-  
+
 ```powershell
 $orgName="<organization name, such as contoso-test for the contoso-test.onmicrosoft.com trial subscription domain name>"
 $location="<the ISO ALPHA2 country code, such as US for the United States>"
@@ -85,27 +84,27 @@ $PasswordProfile=New-Object -TypeName Microsoft.Open.AzureAD.Model.PasswordProfi
 $PasswordProfile.Password=$commonPassword
 
 $groupName="C-Suite"
-$userNames=@("CEO","CFO","CIO") 
+$userNames=@("CEO","CFO","CIO")
 $groupID=(Get-AzureADGroup | Where { $_.DisplayName -eq $groupName }).ObjectID
-ForEach ($element in $userNames){ 
-New-AzureADUser -DisplayName $element -PasswordProfile $PasswordProfile -UserPrincipalName ($element + "@" + $orgName + ".onmicrosoft.com") -AccountEnabled $true -MailNickName $element -UsageLocation $location 
+ForEach ($element in $userNames){
+New-AzureADUser -DisplayName $element -PasswordProfile $PasswordProfile -UserPrincipalName ($element + "@" + $orgName + ".onmicrosoft.com") -AccountEnabled $true -MailNickName $element -UsageLocation $location
 Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -eq $element }).ObjectID -ObjectId $groupID
 }
 ```
 
 > [!NOTE]
-> The use of a common password here is for automation and ease of configuration for a dev/test environment. Obviously, this is highly discouraged for production subscriptions. 
-  
+> The use of a common password here is for automation and ease of configuration for a dev/test environment. Obviously, this is highly discouraged for production subscriptions.
+
 Use these steps to verify that group-based licensing is working correctly.
-  
+
 1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com).
-    
+
 2. From the new **Microsoft 365 admin center** tab of your browser, click **Users**.
-    
+
 3. In the list of users, click **CEO**.
-    
+
 4. In the pane that lists the properties of the **CEO** user account, verify that it has been assigned the **Microsoft 365 Enterprise E5** license in **Product licenses**.
-    
+
 ## Phase 3: Create your team
 
 In this phase, you create and configure a team with security isolation for members of the senior leadership team to collaborate on company strategy.
@@ -155,7 +154,7 @@ Follow these steps:
 14. On the **Auto-labeling for Office apps** page, click **Next**.
 15. Click **Submit**, and then click **Done**.
 
-Next, publish the new label with these steps: 
+Next, publish the new label with these steps:
 
 1. In the Microsoft 365 compliance center, on the **Information protection** page, choose the **Label policies** tab.
 2. Click **Publish labels**.
@@ -172,7 +171,7 @@ Next, publish the new label with these steps:
 
 It may take some time for the **Company Strategy** label to become available after it's been published.
 
-Next, apply your new label to the **Company Strategy** team and update the default sharing link type to reduce the risk of accidentally sharing files and folders to a wider audience than intended. 
+Next, apply your new label to the **Company Strategy** team and update the default sharing link type to reduce the risk of accidentally sharing files and folders to a wider audience than intended.
 
 1. Open the [SharePoint admin center](https://admin.microsoft.com/sharepoint).
 2. Under **Sites**, click **Active sites**.

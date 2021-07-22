@@ -54,20 +54,22 @@ Retrieves a collection of Alerts.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md)
 
-Permission type |	Permission	|	Permission display name
+Permission type | Permission | Permission display name
 :---|:---|:---
-Application |	Alert.Read.All |	'Read all alerts'
-Application |	Alert.ReadWrite.All |	'Read and write all alerts'
+Application | Alert.Read.All | 'Read all alerts'
+Application | Alert.ReadWrite.All | 'Read and write all alerts'
 Delegated (work or school account) | Alert.Read | 'Read alerts'
 Delegated (work or school account) | Alert.ReadWrite | 'Read and write alerts'
 
->[!Note]
+> [!NOTE]
 > When obtaining a token using user credentials:
->- The user needs to have at least the following role permission: 'View Data' (See [Create and manage roles](user-roles.md) for more information)
->- The response will include only alerts that are associated with devices that the user can access, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)
+>
+> - The user needs to have at least the following role permission: 'View Data' (See [Create and manage roles](user-roles.md) for more information)
+> - The response will include only alerts that are associated with devices that the user can access, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)
 
 ## HTTP request
-```
+
+```http
 GET /api/alerts
 ```
 
@@ -77,17 +79,17 @@ Name | Type | Description
 :---|:---|:---
 Authorization | String | Bearer {token}. **Required**.
 
-
 ## Request body
+
 Empty
 
 ## Response
-If successful, this method returns 200 OK, and a list of [alert](alerts.md) objects in the response body.
 
+If successful, this method returns 200 OK, and a list of [alert](alerts.md) objects in the response body.
 
 ## Example 1 - Default
 
-**Request**
+### Request
 
 Here is an example of the request.
 
@@ -95,13 +97,12 @@ Here is an example of the request.
 GET https://api.securitycenter.microsoft.com/api/alerts
 ```
 
-**Response**
+### Response
 
 Here is an example of the response.
 
->[!NOTE]
->The response list shown here may be truncated for brevity. All alerts will be returned from an actual call.
-
+> [!NOTE]
+> The response list shown here may be truncated for brevity. All alerts will be returned from an actual call.
 
 ```json
 {
@@ -131,33 +132,33 @@ Here is an example of the response.
             "computerDnsName": "temp123.middleeast.corp.microsoft.com",
             "rbacGroupName": "MiddleEast",
             "aadTenantId": "a839b112-1253-6432-9bf6-94542403f21c",
-			"threatName": null,
-			"mitreTechniques": [
-				"T1064",
-				"T1085",
-				"T1220"
-			],
+            "threatName": null,
+            "mitreTechniques": [
+                "T1064",
+                "T1085",
+                "T1220"
+            ],
             "relatedUser": {
                 "userName": "temp123",
-                "domainName": "MIDDLEEAST"
+                "domainName": "DOMAIN"
             },
-			"comments": [
-				{
-					"comment": "test comment for docs",
-					"createdBy": "secop123@contoso.com",
-					"createdTime": "2020-07-21T01:00:37.8404534Z"
-				}
-			],
+            "comments": [
+                {
+                    "comment": "test comment for docs",
+                    "createdBy": "secop123@contoso.com",
+                    "createdTime": "2020-07-21T01:00:37.8404534Z"
+                }
+            ],
             "evidence": []
-		}
-		...
-	]
+        }
+        ...
+    ]
 }
 ```
 
 ## Example 2 - Get 10 latest Alerts with related Evidence
 
-**Request**
+### Request
 
 Here is an example of the request.
 
@@ -165,150 +166,148 @@ Here is an example of the request.
 GET https://api.securitycenter.microsoft.com/api/alerts?$top=10&$expand=evidence
 ```
 
-
-**Response**
+### Response
 
 Here is an example of the response.
 
->[!NOTE]
->The response list shown here may be truncated for brevity. All alerts will be returned from an actual call.
-
+> [!NOTE]
+> The response list shown here may be truncated for brevity. All alerts will be returned from an actual call.
 
 ```json
 {
     "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#Alerts",
     "value": [
-		{
-			"id": "da637472900382838869_1364969609",
-			"incidentId": 1126093,
-			"investigationId": null,
-			"assignedTo": null,
-			"severity": "Low",
-			"status": "New",
-			"classification": null,
-			"determination": null,
-			"investigationState": "Queued",
-			"detectionSource": "WindowsDefenderAtp",
-			"detectorId": "17e10bbc-3a68-474a-8aad-faef14d43952",
-			"category": "Execution",
-			"threatFamilyName": null,
-			"title": "Low-reputation arbitrary code executed by signed executable",
-			"description": "Binaries signed by Microsoft can be used to run low-reputation arbitrary code. This technique hides the execution of malicious code within a trusted process. As a result, the trusted process might exhibit suspicious behaviors, such as opening a listening port or connecting to a command-and-control (C&C) server.",
-			"alertCreationTime": "2021-01-26T20:33:57.7220239Z",
-			"firstEventTime": "2021-01-26T20:31:32.9562661Z",
-			"lastEventTime": "2021-01-26T20:31:33.0577322Z",
-			"lastUpdateTime": "2021-01-26T20:33:59.2Z",
-			"resolvedTime": null,
-			"machineId": "111e6dd8c833c8a052ea231ec1b19adaf497b625",
-			"computerDnsName": "temp123.middleeast.corp.microsoft.com",
-			"rbacGroupName": "A",
+        {
+            "id": "da637472900382838869_1364969609",
+            "incidentId": 1126093,
+            "investigationId": null,
+            "assignedTo": null,
+            "severity": "Low",
+            "status": "New",
+            "classification": null,
+            "determination": null,
+            "investigationState": "Queued",
+            "detectionSource": "WindowsDefenderAtp",
+            "detectorId": "17e10bbc-3a68-474a-8aad-faef14d43952",
+            "category": "Execution",
+            "threatFamilyName": null,
+            "title": "Low-reputation arbitrary code executed by signed executable",
+            "description": "Binaries signed by Microsoft can be used to run low-reputation arbitrary code. This technique hides the execution of malicious code within a trusted process. As a result, the trusted process might exhibit suspicious behaviors, such as opening a listening port or connecting to a command-and-control (C&C) server.",
+            "alertCreationTime": "2021-01-26T20:33:57.7220239Z",
+            "firstEventTime": "2021-01-26T20:31:32.9562661Z",
+            "lastEventTime": "2021-01-26T20:31:33.0577322Z",
+            "lastUpdateTime": "2021-01-26T20:33:59.2Z",
+            "resolvedTime": null,
+            "machineId": "111e6dd8c833c8a052ea231ec1b19adaf497b625",
+            "computerDnsName": "temp123.middleeast.corp.microsoft.com",
+            "rbacGroupName": "A",
             "aadTenantId": "a839b112-1253-6432-9bf6-94542403f21c",
-			"threatName": null,
-			"mitreTechniques": [
-				"T1064",
-				"T1085",
-				"T1220"
-			],
-			"relatedUser": {
+            "threatName": null,
+            "mitreTechniques": [
+                "T1064",
+                "T1085",
+                "T1220"
+            ],
+            "relatedUser": {
                 "userName": "temp123",
-                "domainName": "MIDDLEEAST"
+                "domainName": "DOMAIN"
             },
-			"comments": [
-				{
-					"comment": "test comment for docs",
-					"createdBy": "secop123@contoso.com",
-					"createdTime": "2021-01-26T01:00:37.8404534Z"
-				}
-			],
-			"evidence": [
-				{
-					"entityType": "User",
-					"evidenceCreationTime": "2021-01-26T20:33:58.42Z",
-					"sha1": null,
-					"sha256": null,
-					"fileName": null,
-					"filePath": null,
-					"processId": null,
-					"processCommandLine": null,
-					"processCreationTime": null,
-					"parentProcessId": null,
-					"parentProcessCreationTime": null,
-					"parentProcessFileName": null,
-					"parentProcessFilePath": null,
-					"ipAddress": null,
-					"url": null,
-					"registryKey": null,
-					"registryHive": null,
-					"registryValueType": null,
-					"registryValue": null,
-					"accountName": "eranb",
-					"domainName": "MIDDLEEAST",
-					"userSid": "S-1-5-21-11111607-1111760036-109187956-75141",
-					"aadUserId": "11118379-2a59-1111-ac3c-a51eb4a3c627",
-					"userPrincipalName": "temp123@microsoft.com",
-					"detectionStatus": null
-				},
-				{
-					"entityType": "Process",
-					"evidenceCreationTime": "2021-01-26T20:33:58.6133333Z",
-					"sha1": "ff836cfb1af40252bd2a2ea843032e99a5b262ed",
-					"sha256": "a4752c71d81afd3d5865d24ddb11a6b0c615062fcc448d24050c2172d2cbccd6",
-					"fileName": "rundll32.exe",
-					"filePath": "C:\\Windows\\SysWOW64",
-					"processId": 3276,
-					"processCommandLine": "rundll32.exe  c:\\temp\\suspicious.dll,RepeatAfterMe",
-					"processCreationTime": "2021-01-26T20:31:32.9581596Z",
-					"parentProcessId": 8420,
-					"parentProcessCreationTime": "2021-01-26T20:31:32.9004163Z",
-					"parentProcessFileName": "rundll32.exe",
-					"parentProcessFilePath": "C:\\Windows\\System32",
-					"ipAddress": null,
-					"url": null,
-					"registryKey": null,
-					"registryHive": null,
-					"registryValueType": null,
-					"registryValue": null,
-					"accountName": null,
-					"domainName": null,
-					"userSid": null,
-					"aadUserId": null,
-					"userPrincipalName": null,
-					"detectionStatus": "Detected"
-				},
-				{
-					"entityType": "File",
-					"evidenceCreationTime": "2021-01-26T20:33:58.42Z",
-					"sha1": "8563f95b2f8a284fc99da44500cd51a77c1ff36c",
-					"sha256": "dc0ade0c95d6db98882bc8fa6707e64353cd6f7767ff48d6a81a6c2aef21c608",
-					"fileName": "suspicious.dll",
-					"filePath": "c:\\temp",
-					"processId": null,
-					"processCommandLine": null,
-					"processCreationTime": null,
-					"parentProcessId": null,
-					"parentProcessCreationTime": null,
-					"parentProcessFileName": null,
-					"parentProcessFilePath": null,
-					"ipAddress": null,
-					"url": null,
-					"registryKey": null,
-					"registryHive": null,
-					"registryValueType": null,
-					"registryValue": null,
-					"accountName": null,
-					"domainName": null,
-					"userSid": null,
-					"aadUserId": null,
-					"userPrincipalName": null,
-					"detectionStatus": "Detected"
-				}
-			]
-		},
-		...
-	]
+            "comments": [
+                {
+                    "comment": "test comment for docs",
+                    "createdBy": "secop123@contoso.com",
+                    "createdTime": "2021-01-26T01:00:37.8404534Z"
+                }
+            ],
+            "evidence": [
+                {
+                    "entityType": "User",
+                    "evidenceCreationTime": "2021-01-26T20:33:58.42Z",
+                    "sha1": null,
+                    "sha256": null,
+                    "fileName": null,
+                    "filePath": null,
+                    "processId": null,
+                    "processCommandLine": null,
+                    "processCreationTime": null,
+                    "parentProcessId": null,
+                    "parentProcessCreationTime": null,
+                    "parentProcessFileName": null,
+                    "parentProcessFilePath": null,
+                    "ipAddress": null,
+                    "url": null,
+                    "registryKey": null,
+                    "registryHive": null,
+                    "registryValueType": null,
+                    "registryValue": null,
+                    "accountName": "name",
+                    "domainName": "DOMAIN",
+                    "userSid": "S-1-5-21-11111607-1111760036-109187956-75141",
+                    "aadUserId": "11118379-2a59-1111-ac3c-a51eb4a3c627",
+                    "userPrincipalName": "temp123@microsoft.com",
+                    "detectionStatus": null
+                },
+                {
+                    "entityType": "Process",
+                    "evidenceCreationTime": "2021-01-26T20:33:58.6133333Z",
+                    "sha1": "ff836cfb1af40252bd2a2ea843032e99a5b262ed",
+                    "sha256": "a4752c71d81afd3d5865d24ddb11a6b0c615062fcc448d24050c2172d2cbccd6",
+                    "fileName": "rundll32.exe",
+                    "filePath": "C:\\Windows\\SysWOW64",
+                    "processId": 3276,
+                    "processCommandLine": "rundll32.exe  c:\\temp\\suspicious.dll,RepeatAfterMe",
+                    "processCreationTime": "2021-01-26T20:31:32.9581596Z",
+                    "parentProcessId": 8420,
+                    "parentProcessCreationTime": "2021-01-26T20:31:32.9004163Z",
+                    "parentProcessFileName": "rundll32.exe",
+                    "parentProcessFilePath": "C:\\Windows\\System32",
+                    "ipAddress": null,
+                    "url": null,
+                    "registryKey": null,
+                    "registryHive": null,
+                    "registryValueType": null,
+                    "registryValue": null,
+                    "accountName": null,
+                    "domainName": null,
+                    "userSid": null,
+                    "aadUserId": null,
+                    "userPrincipalName": null,
+                    "detectionStatus": "Detected"
+                },
+                {
+                    "entityType": "File",
+                    "evidenceCreationTime": "2021-01-26T20:33:58.42Z",
+                    "sha1": "8563f95b2f8a284fc99da44500cd51a77c1ff36c",
+                    "sha256": "dc0ade0c95d6db98882bc8fa6707e64353cd6f7767ff48d6a81a6c2aef21c608",
+                    "fileName": "suspicious.dll",
+                    "filePath": "c:\\temp",
+                    "processId": null,
+                    "processCommandLine": null,
+                    "processCreationTime": null,
+                    "parentProcessId": null,
+                    "parentProcessCreationTime": null,
+                    "parentProcessFileName": null,
+                    "parentProcessFilePath": null,
+                    "ipAddress": null,
+                    "url": null,
+                    "registryKey": null,
+                    "registryHive": null,
+                    "registryValueType": null,
+                    "registryValue": null,
+                    "accountName": null,
+                    "domainName": null,
+                    "userSid": null,
+                    "aadUserId": null,
+                    "userPrincipalName": null,
+                    "detectionStatus": "Detected"
+                }
+            ]
+        },
+        ...
+    ]
 }
 ```
 
-
 ## See also
-- [OData queries with Microsoft Defender for Endpoint](exposed-apis-odata-samples.md)
+
+[OData queries with Microsoft Defender for Endpoint](exposed-apis-odata-samples.md)

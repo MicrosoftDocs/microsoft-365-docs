@@ -33,27 +33,31 @@ ms.custom: api
 
 
 ## API description
+
 Retrieves a specific incident by its ID
 
-
 ## Limitations
+
 1. Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
 
 
 ## Permissions
+
 One of the following permissions is required to call this API. 
 
-Permission type |	Permission	|	Permission display name
+Permission type | Permission | Permission display name
 :---|:---|:---
-Application |	Incident.Read.All |	'Read all Incidents'
-Application |	Incident.ReadWrite.All |	'Read and write all Incidents'
+Application | Incident.Read.All | 'Read all Incidents'
+Application | Incident.ReadWrite.All | 'Read and write all Incidents'
 Delegated (work or school account) | Incident.Read | 'Read Incidents'
 Delegated (work or school account) | Incident.ReadWrite | 'Read and write Incidents'
 
->[!Note]
+> [!NOTE]
+>
 > When obtaining a token using user credentials:
->- The user needs to have at least the following role permission: 'View Data'
->- The response will only include incidents that the user is exposed to
+>
+> - The user needs to have at least the following role permission: 'View Data'
+> - The response will only include incidents that the user is exposed to
 
 ## HTTP request
 
@@ -67,8 +71,8 @@ Name | Type | Description
 :---|:---|:---
 Authorization | String | Bearer {token}. **Required**.
 
-
 ## Request body
+
 Empty
 
 ## Response

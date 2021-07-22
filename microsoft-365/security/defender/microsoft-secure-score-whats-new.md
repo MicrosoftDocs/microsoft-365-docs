@@ -30,7 +30,41 @@ ms.technology: m365d
 To make Microsoft Secure Score a better representative of your security posture, we have made some changes. To learn about planned changes, see [What's coming in Microsoft Secure Score?](microsoft-secure-score-whats-coming.md)
 
 Microsoft Secure Score can be found at https://security.microsoft.com/securescore in the [Microsoft 365 security center](overview-security-center.md).
-    
+
+## July 2021
+
+### Added improvement action related to Microsoft Defender for Endpoint
+- Fix Microsoft Defender for Endpoint sensor data collection for macOS
+- Fix Microsoft Defender for Endpoint impaired communications for macOS
+- Set minimum password length to 15 or more characters in macOS
+- Set 'Enforce password history' to '24 or more password(s)' in macOS
+- Set 'Maximum password age' to '90 or fewer days, but not 0' in macOS
+- Set account lockout threshold to 5 or lower in macOS
+- Turn on Firewall on macOS
+- Enable Gatekeeper
+- Enable System Integrity Protection (SIP)
+- Enable FileVault Disk Encryption
+- Set screen to lock when screensaver starts in macOS
+- Ensure screensaver is set to start in 20 minutes or less in macOS
+- Secure Home Folders
+- Turn on Microsoft Defender Antivirus real-time protection for macOS
+- Turn on Microsoft Defender Antivirus PUA protection in block mode for macOS
+- Enable Microsoft Defender Antivirus cloud-delivered protection for macOS
+- Update Microsoft Defender Antivirus definitions for macOS
+- Fix Microsoft Defender for Endpoint sensor data collection for Linux
+- Fix Microsoft Defender for Endpoint impaired communications for Linux
+- Unrestricted Access Accounts
+- Turn on Microsoft Defender Antivirus real-time protection for Linux
+- Turn on Microsoft Defender Antivirus PUA protection in block mode for Linux
+- Enable Microsoft Defender Antivirus cloud-delivered protection for Linux
+- Update Microsoft Defender Antivirus definitions for Linux
+
+## June 2021
+
+### Removed improvement action related to Microsoft Cloud App Security
+
+- Use Cloud App Security to detect anomalous behavior.
+
 ## February 2021
 
 ### Compatibility with Graph API
@@ -68,7 +102,7 @@ The ability to create ServiceNow tickets through Secure Score by going to **Shar
 
 ## October 2020
 
-### Remove improvement action related to Microsoft Defender for Endpoint
+### Removed improvement action related to Microsoft Defender for Endpoint
 
 - Set Microsoft Defender SmartScreen Windows Store app web content checking to warn
 
