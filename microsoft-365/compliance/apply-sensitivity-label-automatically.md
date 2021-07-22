@@ -149,20 +149,6 @@ When you select the **Trainable classifiers** option, select one or more of the 
 
 For more information about these classifiers, see [Learn about trainable classifiers](classifier-learn-about.md).
 
-The following apps support trainable classifiers for sensitivity labels:
-
-- Microsoft 365 Apps for enterprise ([formerly Office 365 ProPlus](/deployoffice/name-change)) for Windows, now rolling out to the [Current Channel](/deployoffice/overview-update-channels#current-channel-overview) in version 2006 and later:
-    - Word
-    - Excel
-    - PowerPoint
-    - Outlook
-
-- Office for the web apps, when you have [enabled sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md):
-    - Word
-    - Excel
-    - PowerPoint
-    - Outlook
-
 ### Recommend that the user applies a sensitivity label
 
 If you prefer, you can recommend to your users that they apply the label. With this option, your users can accept the classification and any associated protection, or dismiss the recommendation if the label isn't suitable for their content.

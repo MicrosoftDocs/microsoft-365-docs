@@ -61,7 +61,8 @@ The numbers listed are the minimum Office application version required for each 
 |[Let users assign permissions: <br /> - Prompt users](encryption-sensitivity-labels.md#let-users-assign-permissions)                     |2004+ | 16.35+   | Under review   | Under review         | Under review                                                        |
 |[Audit label-related user activity](data-classification-activity-explorer.md)                      | 2011+ | 16.43+ | 2.46+ | Rolling out: 16.0.13628+ | Yes <sup>\*</sup>                                                        |
 |[Require users to apply a label to their email and documents](#require-users-to-apply-a-label-to-their-email-and-documents)   | 2101+             | 16.45+         | 2.47+ | 16.0.13628+ | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md)                                            
-|[Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md)                    | 2009+                                  | 16.44+ | Under review | Under review | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md) <br /> - Using sensitive info types                    | 2009+                                  | 16.44+ | Under review | Under review | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md) <br /> - Using trainable classifiers                    | 2009+                                  | 16.44+ | Under review | Under review | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Support co-authoring and AutoSave](sensitivity-labels-coauthoring.md) for labeled and encrypted documents | 2105: June 18+ |  16.50+ | Under review | Under review | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |
 
@@ -87,7 +88,8 @@ The numbers listed are the minimum Office application version required for each 
 |[Let users assign permissions: <br /> - Encrypt-Only](encryption-sensitivity-labels.md#let-users-assign-permissions)  |2011+ | 16.48+ <sup>\*</sup> | 4.2112.0+  | 4.2112.0+ | Yes |
 |[Require users to apply a label to their email and documents](#require-users-to-apply-a-label-to-their-email-and-documents)   | 2101+                        | 16.43+ <sup>\*</sup>                    | 4.2111+            | 4.2111+                | Yes                |
 |[Audit label-related user activity](data-classification-activity-explorer.md) | 2011+ | Rolling out: 16.51+ <sup>\*</sup> | Rolling out: 4.2126+ | Rolling out: 4.2126+ | Under review |
-|[Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md)                    | 2009+                      | 16.44+ <sup>\*</sup>                    | Under review           | Under review               | Yes |
+|[Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md) <br /> - Using sensitive info types                    | 2009+                      | 16.44+ <sup>\*</sup>                    | Under review           | Under review               | Yes |
+|[Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md) <br /> - Using trainable classifiers                    | 2009+                      | Under review                    | Under review           | Under review               | Yes |
 |[Different settings for default label and mandatory labeling](#outlook-specific-options-for-default-label-and-mandatory-labeling)                    | 2105+                      | 16.43+ <sup>\*</sup>                   | 4.2111+           | 4.2111+               | Yes |
 |
 
