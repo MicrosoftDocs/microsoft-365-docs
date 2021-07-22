@@ -58,10 +58,11 @@ The navigation bar on the left side of the screen enables you to move easily bet
 |  **Endpoints** > **Configuration & baselines** > **Security baselines** |  |
 |  **Endpoints** > **Configuration & baselines** > **Configuration mangement** |  |
 | **Reports** | Navigates to your reports, such as your [Threat protection report](threat-protection-reports.md), [Device health and compliance report](machine-reports.md), and your [Web protection report](web-protection-overview.md). |
-| **Audit** |  |
-| **Health** |   |
+| **Health** | Includes links to the **Service health** and **Message center**.  |
+| **Health** > **Service health** | Navigates to the Service health page in the Microsoft 365 admin center. This page enables you to view health status across all the services available with your organization's subscriptions.   |
+| **Health** > **Message center** | Navigates to the Message center in the Microsoft 365 admin center. The Message center provides information about planned changes. Each message describes what's coming, how it might affect users, and how to manage changes. |  
 | **Permissions & roles** |   |
-| **Settings** | Navigates to general settings for your Microsoft 365 Defender portal and Defender for Endpoint. To learn more, see [Settings](../defender/overview-security-center.md). |
+| **Settings** | Navigates to general settings for your Microsoft 365 Defender portal (listed as **Security center**) and Defender for Endpoint (listed as **Endpoints**). To learn more, see [Settings](../defender/overview-security-center.md). |
 | **More resources** | Displays a list of more portals and centers, such as Azure Active Directory and the Microsoft 365 compliance center. To learn more, see [Microsoft security portals and admin centers](../defender/portals.md). |
 
 > [!TIP]
