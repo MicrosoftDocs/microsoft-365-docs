@@ -112,7 +112,7 @@ Grant Full Disk Access to the following components:
 
 ### Network extension policy
 
-As part of the Endpoint Detection and Response capabilities, Microsoft Defender for Endpoint on macOS inspects socket traffic and reports this information to the Microsoft Defender Security Center portal. The following policy allows the network extension to perform this functionality.
+As part of the Endpoint Detection and Response capabilities, Microsoft Defender for Endpoint on macOS inspects socket traffic and reports this information to the Microsoft 365 Security Center portal. The following policy allows the network extension to perform this functionality.
 
 - Filter type: Plugin
 - Plugin bundle identifier: `com.microsoft.wdav`
