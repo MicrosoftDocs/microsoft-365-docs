@@ -54,18 +54,18 @@ The following table lists various tasks you can perform to configure Microsoft D
 |**Configure encryption and BitLocker** to protect information on your organization's devices running Windows |[BitLocker Group Policy settings](/windows/security/information-protection/bitlocker/bitlocker-group-policy-settings) |
 |**Configure Microsoft Defender Credential Guard** to protect against credential theft attacks |[Enable Windows Defender Credential Guard by using Group Policy](/windows/security/identity-protection/credential-guard/credential-guard-manage#enable-windows-defender-credential-guard-by-using-group-policy) |
 
-## Configure your Microsoft Defender Security Center
+## Configure your Microsoft 365 Defender portal
 
-If you haven't already done so, configure your Microsoft 365 Defender portal to view alerts, configure threat protection features, and view detailed information about your organization's overall security posture. See [Microsoft Defender Security Center](microsoft-defender-security-center.md). You can also configure whether and what features end users can see in the Microsoft 365 Defender portal.
+If you haven't already done so, configure your Microsoft 365 Defender portal to view alerts, configure threat protection features, and view detailed information about your organization's overall security posture. See [Microsoft 365 Defender](microsoft-defender-security-center.md). You can also configure whether and what features end users can see in the Microsoft 365 Defender portal.
 
-- [Overview of the Microsoft Defender Security Center](/microsoft-365/security/defender-endpoint/use)
+- [Overview of Microsoft 365 Defender](/microsoft-365/security/defender-endpoint/use)
 
-- [Endpoint protection: Microsoft Defender Security Center](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-security-center)
+- [Endpoint protection: Microsoft 365 Defender](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-security-center)
 
 ## Next steps
 
 - [Get an overview of threat and vulnerability management](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 
-- [Visit the Microsoft Defender Security Center security operations dashboard](/microsoft-365/security/defender-endpoint/security-operations-dashboard)
+- [Visit the Microsoft 365 Defender portal security operations dashboard](/microsoft-365/security/defender-endpoint/security-operations-dashboard)
 
 - [Manage Microsoft Defender for Endpoint with Intune](manage-atp-post-migration-intune.md)
