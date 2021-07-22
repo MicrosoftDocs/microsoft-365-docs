@@ -26,14 +26,27 @@ Microsoft Defender for Endpoint Device Control Removable Storage Access Control 
 
 - auditing, allowing or preventing the read, write or execute access to removable storage with or without exclusion
 
+#### Access Control
+
 |Privilege |Permission  |
 |---------|---------|
 |Access    |  Read, Write, Execute       |
 |Action Mode    |    Audit, Allow, Prevent     |
-|CSP Support   |   Yes      |
-|GPO Support    |   Yes      |
-|User-based Support     |   Yes      |
-|Machine-based Support    |    Yes     |
+
+#### Supported deployment method
+
+|  |  |
+|---------|---------|
+|CSP Support     |  Yes       |
+|GPO Support     |    Yes     |
+
+#### Supported target scenario
+
+|  |  |
+|---------|---------|
+|User-based Support   | Yes       |
+|Machine-based Support     | Yes     |
+
 
 ## Licensing
 
@@ -60,6 +73,32 @@ Deploy Removable Storage Access Control on Windows 10 devices that have antimalw
 ## Policy properties
 
 You can use the following properties to create a removable storage group:
+
+#### Removable Storage Group
+
+|Property Name  |Description  |Options  |
+|---------|---------|---------|
+|**GroupId**     |   [GUID](https://en.wikipedia.org/wiki/Universally_unique_identifier), a unique ID, represents the group and will be used in the policy.      |         |
+|**DescriptorIdList**     |  List the device properties you want to use to cover in the group. For each device property, see **Device Properties** section above for more detail.​       | PrimaryId​</br> DeviceId​ </br>HardwareId​</br>InstancePathId:​</br>FriendlyNameId​</br>SerialNumberId​</br>VID​</br>PID​</br>VID_PID    |
+|**MatchType​**     |    When there are multiple device properties being used in the DescriptorIDList, MatchType defines the relationship.     |  MatchAll: </br>​Any attributes under the DescriptorIdList will be And relationship; for example, if administrator puts DeviceID and InstancePathID, for every connected USB, system will check to see whether the USB meets both values.​ </br> </br>MatchAny:</br> ​The attributes under the DescriptorIdList will be Or relationship; for example, if administrator puts DeviceID and InstancePathID, for every connected USB, system will do the enforcement as long as the USB has either an identical DeviceID or InstanceID value.​       |
+
+#### Access Control Policy
+
+
+|Property Name  |Description  |Options  |
+|---------|---------|---------|
+|PolicyRuleId​     |         |         |
+|IncludedIdList     | The group(s) that the policy will be applied to. If multiple groups are added, the policy will be applied to any media in all those groups.        |    The Group ID/GUID must be used at this instance.​ </br> ​The following example shows the usage of GroupID:​ </br> `<IncludedIdList> <GroupId> {EAA4CCE5-F6C9-4760-8BAD-FDCC76A2ACA1}</GroupId> </IncludedIdList>​`    |
+|ExcludedIDList     | The group(s) that the policy will not be applied to.        |    The Group ID/GUID must be used at this instance.     |
+|Entry Id     |  One PolicyRule can have multiple entries; each entry with a unique GUID tells Device Control one restriction.​       |         |
+|Type|Defines the action for the removable storage groups in IncludedIDList.​ </br>Enforcement: Allow or Deny​ </br>Audit: AuditAllowed or AuditDenied​|Allow​ </br>Deny​</br> AuditAllowed: Defines notification and event when access is allowed​</br>AuditDenied: Defines notification and event when access is denied; has to work together with Deny entry.​ </br></br> When there are conflict types for the same media, the system will apply the first one in the policy. An example of a conflict type is Allow and Deny.​|
+|Sid|Local computer Sid or the Sid of the AD object, defines whether to apply this policy over a specific user or user group; one entry can have a maximum of one Sid and an entry without any Sid means applying the policy over the machine.​||
+|ComputerSid|Local computer Sid or the Sid of the AD object, defines whether to apply this policy over a specific machine or machine group; one entry can have a maximum of one ComputerSid and an entry without any ComputerSid means applying the policy over the machine. If you want to apply an Entry to a specific user and specific machine, add both Sid and ComputerSid into the same Entry.​||
+|Options|Defines whether to display notification or not​|0-4. When Type Allow or Deny is selected:​</br>0: nothing​</br>4: disable AuditAllowed and AuditDenied for this Entry. Even if Block happens and the AuditDenied is setting configured, the system will not show notification.​ </br> When Type AuditAllowed or AuditDenied is selected:​</br>0: nothing​</br>1: show notification​</br>2: send event​</br>3: show notification and send event​|
+|AccessMask|Defines the access.​|1-7:​ </br>1: Read​</br>2: Write​</br>3: Read and Write​</br>4: Execute​</br>5: Read and Execute​</br>6: Write and Execute​</br>7: Read and Write and Execute​|
+
+
+
 
 **Property name: Group Id**
 
