@@ -308,7 +308,7 @@ Explanation for the four different principles:
 
 2. **The longest retention period wins.** If content is subject to multiple retention settings that retain content for different periods of time, the content will be retained until the end of the longest retention period for the item.
     
-    For this principle, it's important to distinguish between the longest retention period for the item vs. the longest retention period for the retention settings in the policy or label. That's because for retention policies, files support the configuration to start the retention period from when the file is last modified, as well as when the file is created. Retention labels support additional settings for the start of the retention period (when labeled and events). It's possible that a retention period of 5 years wins over a retention period of 7 years because the 5-year period is configured to start based on when the file is created, and the 7-year period is configured to start from when the file is last modified. The first configuration has a fixed end of retention period, based on when the file was created. But for the second configuration, every time the file is modified, the start of the retention period is reset, which means that the end of the retention period is extended for another 7 years for the item.
+    For this principle, it's important to distinguish between the longest retention period for the item vs. the longest retention period for the retention settings in the policy or label. That's because for retention policies, files support the configuration to start the retention period from when the file is last modified, as well as when the file is created. Retention labels support additional settings for the start of the retention period (when labeled and events). It's possible that a retention period of 5 years wins over a retention period of 7 years because the 5-year period is configured to start based on when the file is last modified, and the 7-year period is configured to start from when the file is created. Whereas the 7-year configuration has a set end of retention period, based on when the file was created, every time the file is modified for the 5-year configuration, the start of the retention period is reset, which means that the end of the retention period is extended for another 5 years for the item.
     
     Example: Documents in the Marketing SharePoint site are subject to two retention policies. The first retention policy is configured for all SharePoint sites to retain items for five years after they are created. The second retention policy is configured for specific SharePoint sites to retain items for ten years after they are created.
     
@@ -344,7 +344,7 @@ Explanation for the four different principles:
 
 Note that items subject to eDiscovery hold also fall under the first principle of retention; they cannot be permanently deleted by any retention policy or retention label. When that hold is released, the principles of retention continue to apply to them. For example, they could then be subject to an unexpired retention period or a delete action.
 
-More complex examples that combine retain and delete actions:
+More complex examples that combine retain and delete actions, all using the default setting of starting the retention period when the item is created:
 
 1. An item has the following retention settings applied to it:
     
