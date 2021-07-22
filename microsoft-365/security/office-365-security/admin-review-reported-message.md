@@ -47,14 +47,14 @@ You will only be able to mark and notify users of review results if the message 
 
 ## Notify users from within the portal
 
-1. In the Microsoft 365 Defender portal, go directly to the **Submissions** page <https://security.microsoft.com/reportsubmission>.
+1. In the Microsoft 365 Defender portal, go directly to the **Submissions** page: [https://security.microsoft.com/reportsubmission}(https://security.microsoft.com/reportsubmission).
 
 2. Click **User reported messages**, and then select the message you want to mark and notify. 
 
 3. Select the **Mark as and notify** drop-down, and then select **No threats found**, **Phishing**, or **Junk**.  
 
-> [!div class="mx-imgBorder"]
-> ![Send messages from portal](../../media/admin-review-send-message-from-portal.png)
+   > [!div class="mx-imgBorder"]
+   > ![Send messages from portal](../../media/admin-review-send-message-from-portal.png)
 
 The reported message will be marked as either false positive or false negative, and an email will be automatically sent from within the portal notifying the user who reported the message. 
 
@@ -65,12 +65,13 @@ The reported message will be marked as either false positive or false negative, 
 2. On the **User submissions** page, if you want to specify the sender display name, check the box for **Specify Office 365 email address to use as sender** under the **Email notifications for admin review results** section, and enter in the name you wish to use. The email address that will be visible in Outlook and all the replies will go there.
 
 3. If you want to customize any of the templates, click **Customize email notification** at the bottom of the page. In the flyout that opens, you can customize only the following:
+
     - Phishing
     - Junk
     - No threats found
     - Footer
 
-> [!div class="mx-imgBorder"]
-> ![Customize messages send to users](../../media/admin-review-customize-message.png)
+    > [!div class="mx-imgBorder"]
+    > ![Customize messages send to users](../../media/admin-review-customize-message.png)
 
 4. When you're finished, click **Save**. To clear these values, click **Discard** on the User submissions page.
