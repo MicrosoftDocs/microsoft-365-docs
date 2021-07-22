@@ -36,9 +36,9 @@ ms.technology: mde
 >[!NOTE] 
 >These set of steps are directed towards the MSSP. 
 
-By default, MSSP customers access their Microsoft 365 Defender tenant through the following URL: `https://security.microsoft.com/`.
+By default, MSSP customers access their Microsoft 365 Defender tenant through the following URL: `https://securitycenter.microsoft.com/`.
  
-MSSPs however, will need to use a tenant-specific URL in the following format:  `https://security.microsoft.com?tid=customer_tenant_id` to access the MSSP customer portal. 
+MSSPs however, will need to use a tenant-specific URL in the following format:  `https://securitycenter.microsoft.com?tid=customer_tenant_id` to access the MSSP customer portal. 
 
 In general, MSSPs will need to be added to each of the MSSP customer's Azure AD that they intend to manage.
 
@@ -50,7 +50,7 @@ Use the following steps to obtain the MSSP customer tenant ID and then use the I
 
 3. Select **Azure Active Directory > Properties**. You'll find the tenant ID in the Directory ID field. 
 
-4. Access the MSSP customer portal by replacing the `customer_tenant_id` value in the following URL: `https://security.microsoft.com/?tid=customer_tenant_id`.
+4. Access the MSSP customer portal by replacing the `customer_tenant_id` value in the following URL: `https://securitycenter.microsoft.com/?tid=customer_tenant_id`.
 
 
 ## Related topics
