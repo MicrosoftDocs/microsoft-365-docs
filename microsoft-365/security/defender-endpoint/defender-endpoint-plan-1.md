@@ -41,7 +41,7 @@ This article focuses on Defender for Endpoint Plan 1, currently in preview. Use 
 
 <table>
 <td><center><a href="#next-generation-protection"><img src="images/ngp-icon.png" alt="Next-generation protection"><br> <b>Next-generation protection</b></a></center></td>
-<td><a href="attack-surface-reduction"><center><img src="images/asr-icon.png" alt="Attack surface reduction"><br><b>Attack surface reduction</b></center></a></td>
+<td><a href="#attack-surface-reduction"><center><img src="images/asr-icon.png" alt="Attack surface reduction"><br><b>Attack surface reduction</b></center></a></td>
 <td><center><a href="#centralized-management">Centralized configuration<br>Administration<br>APIs</a><br><a href="#cross-platform-support"><center>Cross-platform support</a></center></td>
 </tr>
 </table>
