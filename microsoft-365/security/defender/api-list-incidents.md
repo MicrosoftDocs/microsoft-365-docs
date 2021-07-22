@@ -101,6 +101,7 @@ lastUpdateTime | Time when the incident was last updated on the backend.<br /><b
 assignedTo | Owner of the incident, or *null* if no owner is assigned. | secop2@contoso.com
 classification | The specification for the incident. The property values are: *Unknown*, *FalsePositive*, *TruePositive* | Unknown
 determination | Specifies the determination of the incident. The property values are: *NotAvailable*, *Apt*, *Malware*, *SecurityPersonnel*, *SecurityTesting*, *UnwantedSoftware*, *Other* | NotAvailable
+detectionSource | Specifies source of detection. | MCAS
 status | Categorize incidents (as *Active*, or *Resolved*). It can help you organize and manage your response to incidents. | Active
 severity | Indicates the possible impact on assets. The higher the severity the bigger the impact. Typically higher severity items require the most immediate attention.<br /><br />One of the following values: *Informational*, *Low*, *Medium, and *High*. | Medium
 tags | Array of custom tags associated with an incident, for example to flag a group of incidents with a common characteristic. | \[\]
