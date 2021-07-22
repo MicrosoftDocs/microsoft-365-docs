@@ -29,7 +29,7 @@ ms.prod: m365-security
 
 In Microsoft 365 organizations with Exchange Online mailboxes and Microsoft Defender for Office 365, admins can now send templated messages back to end users after they review reported messages. This can be customized for your organization and based on your admin's verdict as well.
 
-This feature is designed to give feedback to your users but does not change the verdicts of messages in the system. To help Microsoft update and improve its filters, you will need to submit messages for analysis using [Admin submission](admin-submission.md).
+The feature is designed to give feedback to your users but does not change the verdicts of messages in the system. To help Microsoft update and improve its filters, you will need to submit messages for analysis using [Admin submission](admin-submission.md).
 
 You will only be able to mark and notify users of review results if the message was reported as a [false positives or false negatives](report-false-positives-and-false-negatives.md).
 
@@ -56,15 +56,15 @@ You will only be able to mark and notify users of review results if the message 
 > [!div class="mx-imgBorder"]
 > ![Send messages from portal](../../media/admin-review-send-message-from-portal.png)
 
-This will mark the reported message as either false positive or false negative, and will automatically send an email from within the portal notifying the user who reported the message. 
+The reported message will be marked as either false positive or false negative, and an email will be automatically send from within the portal notifying the user who reported the message. 
 
 ## Customize the messages used to notify users
 
 1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** page \> **Others** section \> **User reported message settings**.
 
-2. On the **User submissions** page, if you want to specify the sender display name, check the box for **Specify Office 365 email address to use as sender** under the **Email notifications for admin review results** section, and enter in the name you wish to use. This is the email address that will be visible in Outlook and where replies will go to.
+2. On the **User submissions** page, if you want to specify the sender display name, check the box for **Specify Office 365 email address to use as sender** under the **Email notifications for admin review results** section, and enter in the name you wish to use. The email address that will be visible in Outlook and all the replies will go there.
 
-3. If you want to customize any of the templates, click **Customize email notification** at the bottom of the page. In this flyout, you will be able to customize only the following:
+3. If you want to customize any of the templates, click **Customize email notification** at the bottom of the page. In the flyout that opens, you will be able to customize only the following:
     - Phishing
     - Junk
     - No threats found
