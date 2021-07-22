@@ -45,17 +45,32 @@ You will only be able to mark and notify users of review results if the message 
   - [Enable or disable access to Exchange Online PowerShell](/powershell/exchange/disable-access-to-exchange-online-powershell)
   - [Client Access Rules in Exchange Online](/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules)
 
-## Configure the messages used to notify users
+## Notify users from within the portal
+
+1. In the Microsoft 365 Defender portal, go directly to the **Submissions** page <https://security.microsoft.com/reportsubmission>.
+
+2. Click **User reported messages**, and select the message you want to mark and notify. 
+
+3. Select the **Mark as and notify** drop-down, and then select **No threats found**, **Phishing**, or **Junk**.  
+
+> [!div class="mx-imgBorder"]
+> ![Send messages from portal](../../media/admin-review-send-message-from-portal.png)
+
+This will mark the reported message as either false positive or false negative, and will automatically send an email from within the portal notifying the user who reported the message. 
+
+## Customize the messages used to notify users
 
 1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** page \> **Others** section \> **User reported message settings**.
 
 2. On the **User submissions** page, if you want to specify the sender display name, check the box for **Specify Office 365 email address to use as sender** under the **Email notifications for admin review results** section, and enter in the name you wish to use. This is the email address that will be visible in Outlook and where replies will go to.
 
-3. If you want to customize any of the templates, click **Customize email notification**. In this flyout, you will be able to customize only the following:
+3. If you want to customize any of the templates, click **Customize email notification** at the bottom of the page. In this flyout, you will be able to customize only the following:
     - Phishing
     - Junk
     - No threats found
-    - Awareness training
     - Footer
+
+> [!div class="mx-imgBorder"]
+> ![Customize messages send to users](../../media/admin-review-customize-message.png)
 
 4. When you're finished, click **Save**. To clear these values, click **Discard** on the User submissions page.
