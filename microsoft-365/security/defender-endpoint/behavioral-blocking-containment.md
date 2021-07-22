@@ -90,7 +90,7 @@ Behavior-based device learning models in Defender for Endpoint caught and stoppe
 - The first protection layer detected the exploit behavior. Device learning classifiers in the cloud correctly identified the threat as and immediately instructed the client device to block the attack.
 - The second protection layer, which helped stop cases where the attack got past the first layer, detected process hollowing, stopped that process, and removed the corresponding files (such as Lokibot).
 
-While the attack was detected and stopped, alerts, such as an "initial access alert," were triggered and appeared in the [Microsoft 365 Defender portal](microsoft-defender-security-center.md) (formerly Microsoft 365 Defender).
+While the attack was detected and stopped, alerts, such as an "initial access alert," were triggered and appeared in the [Microsoft 365 Defender portal](microsoft-defender-security-center.md).
 
 :::image type="content" source="images/behavblockcontain-initialaccessalert.png" alt-text="Initial access alert in the Microsoft 365 Defender portal":::
 
