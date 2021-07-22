@@ -45,7 +45,7 @@ There are several ways to onboard a WVD host machine:
 
 - Run the script in the golden image (or from a shared location) during startup.
 - Use a management tool to run the script.
-- Through [Integration with Azure Defender](/microsoft-365/security/defender-endpoint/azure-server-integration)
+- Through [Integration with Azure Defender](azure-server-integration.md)
 
 #### *Scenario 1: Using local group policy*
 This scenario requires placing the script in a golden image and uses local group policy to run early in the boot process.
