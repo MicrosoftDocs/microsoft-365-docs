@@ -308,9 +308,11 @@ Explanation for the four different principles:
 
 2. **The longest retention period wins.** If content is subject to multiple retention settings that retain content for different periods of time, the content will be retained until the end of the longest retention period for the item.
     
-    Example: Documents in the Marketing SharePoint site are subject to two retention policies. The first retention policy is configured for all SharePoint sites to retain items for five years. The second retention policy is configured for specific SharePoint sites to retain items for ten years.
+    For this principle, it's important to distinguish between the longest retention period for the item vs. the longest retention period for the retention settings in the policy or label. That's because for retention policies, files support the configuration to start the retention period from when the file is last modified, as well as when the file is created. Retention labels support additional settings for the start of the retention period (when labeled and events). It's possible that a retention period of 5 years wins over a retention period of 7 years because the 5-year period is configured to start based on when the file is created, and the 7-year period is configured to start from when the file is last modified. The first configuration has a fixed end of retention period, based on when the file was created. But for the second configuration, every time the file is modified, the start of the retention period is reset, which means that the end of the retention period is extended for another 7 years for the item.
     
-    Documents in this Marketing SharePoint site are retained for ten years because that's the longest retention period.
+    Example: Documents in the Marketing SharePoint site are subject to two retention policies. The first retention policy is configured for all SharePoint sites to retain items for five years after they are created. The second retention policy is configured for specific SharePoint sites to retain items for ten years after they are created.
+    
+    Documents in this Marketing SharePoint site are retained for ten years because that's the longest retention period for the item.
 
 3. **Explicit wins over implicit for deletions.** With conflicts now resolved for retention, only conflicts for deletions remain: 
     
@@ -334,9 +336,11 @@ Explanation for the four different principles:
 
 4. **The shortest deletion period wins.** Applicable to determine when items will be deleted from retention policies and the outcome couldn't be resolved from the previous level: Content is permanently deleted at the end of the shortest retention period for the item.
     
-    Example: A document in a user's OneDrive account is subject to two retention policies. The first retention policy is scoped to include this user's OneDrive account and has a delete action after 10 years. The second retention policy is scoped to include this user's OneDrive account and has a delete action after seven years.
+    For this principle, it's important to distinguish between the shortest deletion period for the item vs. the shortest retention period for the retention policies. That's because files support the configuration to start the retention period from when the file is last modified, as well as when the file is created. It's possible that a retention policy that has a retention period of 7 years wins over a retention policy of 5 years because the first policy is configured to start the retention period based on when the file is created and the second retention policy from when the file is last modified. The first retention policy has a fixed end of retention period, based on when the file was created. But for the second retention policy, every time the file is modified, the start of the retention period is reset, which means that the end of the retention period for this item is extended for another 5 years.
     
-    This document will be permanently deleted after seven years because that's the shortest retention period for these two scoped retention policies.
+    Example: A document in a user's OneDrive account is subject to two retention policies. The first retention policy is scoped to include this user's OneDrive account and has a delete action of 10 years after the file is created. The second retention policy is scoped to include this user's OneDrive account and has a delete action of seven years after the file is created.
+    
+    This document will be permanently deleted after seven years because that's the shortest retention period for the item from these two scoped retention policies.
 
 Note that items subject to eDiscovery hold also fall under the first principle of retention; they cannot be permanently deleted by any retention policy or retention label. When that hold is released, the principles of retention continue to apply to them. For example, they could then be subject to an unexpired retention period or a delete action.
 
