@@ -74,7 +74,7 @@ Name (required),Expansion,MatchType- Exact/Partial (required)
 In the CSV template, enter the following information about the topics you want to exclude:
 
 - **Name**: Type the name of the topic you want to exclude. There are two ways to do this:
-    - Exact match: You can include the exact name or acronym (for example, *Contoso* or *ATL*).
+    - Exact match: You can exclude the exact name or acronym (for example, *Contoso* or *ATL*).
     - Partial match: You can exclude all topics that have a specific word in it.  For example, *arc* will exclude all topics with the word *arc* in it, such as *Arc circle*, *Plasma arc welding*, or *Training arc*. Note that it will not exclude topics in which the text is included as part of a word, such as *Architecture*.
 - **Stands for (optional)**: If you want to exclude an acronym, type the words the acronym stands for.
 - **MatchType-Exact/Partial**: Type whether the name you entered was an *exact* or *partial* match type.

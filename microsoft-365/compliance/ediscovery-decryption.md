@@ -24,9 +24,9 @@ Encryption is an important part of your file protection and information protecti
 
 To execute common eDiscovery tasks on encrypted content, eDiscovery managers were required to decrypt email message content as it was exported from content searches, Core eDiscovery cases, and Advanced eDiscovery cases. Content encrypted with Microsoft encryption technologies wasn't available for review until after it was exported.
 
-To make it easier to manage encrypted content in the eDiscovery workflow, Microsoft 365 eDiscovery tools now incorporate decryption of encrypted files that are attached to email messages and sent in Exchange Online. Additionally, encrypted documents stored in SharePoint Online and OneDrive for Business are decrypted in Advanced eDiscovery.
+To make it easier to manage encrypted content in the eDiscovery workflow, Microsoft 365 eDiscovery tools now incorporate the decryption of encrypted files attached to email messages and sent in Exchange Online.<sup>1</sup> Additionally, encrypted documents stored in SharePoint Online and OneDrive for Business are decrypted in Advanced eDiscovery.
 
-Prior to this new capability, only the content of an email message protected by rights management (and not attached files) were decrypted. Encrypted documents in SharePoint and OneDrive couldn't be decrypted during the eDiscovery workflow. Now, if a file that's encrypted with a Microsoft encryption technology is attached to an email message or located on a SharePoint or OneDrive account, those encrypted items are decrypted when the search results are prepared for preview, added to a review set in Advanced eDiscovery, and exported. This allows eDiscovery managers to view the content of encrypted email attachments and site documents when previewing search results, and review them after they have been added to a review set in Advanced eDiscovery.
+Prior to this new capability, only the content of an email message protected by rights management (and not attached files) were decrypted. Encrypted documents in SharePoint and OneDrive couldn't be decrypted during the eDiscovery workflow. Now, files that are encrypted with a Microsoft encryption technology is located on a SharePoint or OneDrive account are searchable and decrypted when the search results are prepared for preview, added to a review set in Advanced eDiscovery, and exported. Additionally, encrypted documents in SharePoint and OneDrive that are attached to an email message are searchable. This decryption capability allows eDiscovery managers to view the content of encrypted email attachments and site documents when previewing search results, and review them after they have been added to a review set in Advanced eDiscovery.
 
 ## Supported encryption technologies
 
@@ -38,7 +38,7 @@ The following table identifies the supported tasks that can be performed in Micr
 
 |eDiscovery task  |Content search  |Core eDiscovery  |Advanced eDiscovery  |
 |:---------|:---------|:---------|:---------|
-|Search for content in encrypted files in email and sites     |Yes      |Yes      |Yes      |
+|Search for content in encrypted files in email and sites<sup>1</sup>     |Yes      |Yes      |Yes      |
 |Preview encrypted files attached to email     |Yes      |Yes     |Yes       |
 |Preview encrypted documents in SharePoint and OneDrive|No      |No    |Yes       |
 |Review encrypted files in a review set    |N/A      |N/A        | Yes        |
@@ -46,9 +46,14 @@ The following table identifies the supported tasks that can be performed in Micr
 |Export encrypted documents in SharePoint and OneDrive    |No       |No  |Yes    |
 |||||
 
-**Note:** eDiscovery doesn't support encrypted files in SharePoint and OneDrive when a sensitivity label that applied the encryption is configured with either of the following settings:
+> [!NOTE]
+> <sup>1</sup> Encrypted files that are located on a local computer (and not stored on a SharePoint or OneDrive site) aren't indexed for eDiscovery. That means if an encrypted local file is attached to an email message, the file won't be returned by a keyword search query, even if the file contains keywords that match the search query. However, email messages with local encrypted file can be returned by an eDiscovery search if an email property (such as sent date, sender, recipient, or subject) matches the search query.
 
-- Users can assign permissions when they manually apply the label to a document. This is sometimes referred to as *user-defined permissions*.<br/>
+### Decryption limitations with sensitivity labels
+
+eDiscovery doesn't support encrypted files in SharePoint and OneDrive when a sensitivity label that applied the encryption is configured with either of the following settings:
+
+- Users can assign permissions when they manually apply the label to a document. This is sometimes referred to as *user-defined permissions*.
 
 - User access to the document has an expiration setting that is set to a value other than **Never**.
 

@@ -4,6 +4,8 @@
     - name: What is Microsoft Managed Desktop?
       href: intro/index.md
       items: 
+        - name: Microsoft Managed Desktop and Windows 11
+          href: intro/win11-overview.md
         - name: Roles and responsibilities
           href: intro/roles-and-responsibilities.md
         - name: Technologies in Microsoft Managed Desktop
@@ -23,13 +25,14 @@
           href: service-description/device-requirements.md
         - name: Device images
           href: service-description/device-images.md
-        - name: Program devices
-          href: service-description/device-list.md
-          items: 
-            - name: Archived program devices
-              href: service-description/archived-device-list.md
+        - name: Device names
+          href: service-description/device-names.md
         - name: Device services
           href: service-description/device-services.md
+        - name: Device profiles
+          href: service-description/profiles.md
+        - name: Device deployment groups
+          href: service-description/deployment-groups.md
         - name: Device configuration
           href: service-description/device-policies.md
         - name: Security technologies
@@ -40,10 +43,14 @@
           href: service-description/privacy-personal-data.md
         - name: Updates
           href: service-description/updates.md
-        - name: Support
+        - name: Admin support
           href: service-description/support.md
+        - name: User support
+          href: service-description/user-support.md
         - name: Operations and monitoring
           href: service-description/operations-and-monitoring.md
+        - name: Diagnostic logs
+          href: service-description/diagnostic-logs.md
         - name: Application requirements
           href: service-description/mmd-app-requirements.md
         - name: Application control
@@ -81,6 +88,8 @@
           href: get-ready/mapped-drives.md
         - name: Prepare printing resources
           href: get-ready/printing.md
+        - name: Address device names
+          href: get-ready/address-device-names.md
     - name: Get started with Microsoft Managed Desktop
       href: get-started/index.md
       items: 
@@ -98,6 +107,8 @@
           href: get-started/enterprise-state-roaming.md
         - name: Localize the user experience
           href: get-started/localization.md
+        - name: Validate new devices
+          href: get-started/validate-device.md
         - name: Set up devices
           href: get-started/set-up-devices.md
           items: 
@@ -108,6 +119,8 @@
                   href: get-started/register-devices-partner.md
             - name: Register existing devices yourself
               href: get-started/register-reused-devices-self.md
+        - name: Enable user support features
+          href: get-started/enable-support.md
         - name: Get your users ready to use devices
           href: get-started/get-started-devices.md
         - name: First-run experience with Autopilot and the Enrollment Status Page 
@@ -137,14 +150,6 @@
           items:
             - name: Device inventory report
               href: working-with-managed-desktop/device-inventory-report.md
-            - name: Usage insights
-              href: working-with-managed-desktop/usage-insights.md
-            - name: Reliability insights
-              href: working-with-managed-desktop/reliability-insights.md
-            - name: Battery insights
-              href: working-with-managed-desktop/battery-insights.md
-            - name: Windows security update insights
-              href: working-with-managed-desktop/security-update-insights.md
         - name: Admin support
           href: working-with-managed-desktop/admin-support.md
         - name: User support
@@ -153,6 +158,12 @@
           href: working-with-managed-desktop/manage-apps.md
         - name: Work with app control
           href: working-with-managed-desktop/work-with-app-control.md
+        - name: Change device profile
+          href: working-with-managed-desktop/change-device-profile.md
+        - name: Assign devices to deployment
+          href: working-with-managed-desktop/assign-deployment-group.md
+        - name: Remove devices
+          href: working-with-managed-desktop/remove-devices.md
         - name: Configurable settings
           href: working-with-managed-desktop/config-setting-overview.md
           items: 
@@ -160,5 +171,7 @@
               href: working-with-managed-desktop/config-setting-ref.md
             - name: Deploy configurable settings
               href: working-with-managed-desktop/config-setting-deploy.md
+        - name: Preview and test Windows 11 with Microsoft Managed Desktop
+          href: working-with-managed-desktop/test-win11-mmd.md
     - name: Change history for Microsoft Managed Desktop documentation
       href: change-history-managed-desktop.md

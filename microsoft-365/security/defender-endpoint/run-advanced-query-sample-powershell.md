@@ -15,7 +15,8 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+MS.technology: mde
+ms.custom: api
 ---
 
 # Advanced Hunting using PowerShell
@@ -45,7 +46,7 @@ You first need to [create an app](apis-intro.md).
   Set-ExecutionPolicy -ExecutionPolicy Bypass
   ```
 
->For more information, see [PowerShell documentation](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy)
+>For more information, see [PowerShell documentation](/powershell/module/microsoft.powershell.security/set-executionpolicy)
 
 ## Get token
 

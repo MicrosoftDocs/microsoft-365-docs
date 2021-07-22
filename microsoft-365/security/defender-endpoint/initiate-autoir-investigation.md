@@ -14,7 +14,8 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+MS.technology: mde
+ms.custom: api
 ---
 # Start Investigation API
 
@@ -36,10 +37,8 @@ ms.technology: mde
 Start automated investigation on a device.
 <br>See [Overview of automated investigations](automated-investigations.md) for more information.
 
-
 ## Limitations
 1. Rate limitations for this API are 50 calls per hour.
-
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md)
@@ -57,7 +56,7 @@ Delegated (work or school account) | Alert.ReadWrite | 'Read and write alerts'
 
 ## HTTP request
 ```
-POST https://api.securitycenter.microsoft.com/api/machines/{id}/startInvestigation
+POST https://api.security.microsoft.com/api/machines/{id}/startInvestigation
 ```
 
 ## Request headers
@@ -86,7 +85,7 @@ If successful, this method returns 201 - Created response code and [Investigatio
 Here is an example of the request.
 
 ```https
-POST https://api.securitycenter.microsoft.com/api/machines/1e5bc9d7e413ddd7902c2932e418702b84d0cc07/startInvestigation
+POST https://api.security.microsoft.com/api/machines/1e5bc9d7e413ddd7902c2932e418702b84d0cc07/startInvestigation
 ```
 
 ```json

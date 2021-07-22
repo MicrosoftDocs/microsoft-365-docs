@@ -1,8 +1,9 @@
 ---
-title: "Apply a document understanding model to a document library"
-ms.author: efrene
-author: efrene
+title: Apply a document understanding model to a document library
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
+ms.reviewer: ssquires
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -10,8 +11,8 @@ search.appverid:
 ms.collection: 
     - enabler-strategic
     - m365initiative-syntex
-localization_priority: Priority
-description: "Learn how to apply a published a model to a SharePoint document library"
+localization_priority: Normal
+description: Learn how to apply a published a model to a SharePoint document library.
 ---
 
 # Apply a document understanding model in Microsoft SharePoint Syntex

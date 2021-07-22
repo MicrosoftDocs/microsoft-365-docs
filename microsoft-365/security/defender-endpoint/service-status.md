@@ -1,6 +1,6 @@
 ---
-title: Check the Microsoft Defender ATP service health
-description: Check Microsoft Defender ATP service health, see if the service is experiencing issues and review previous issues that have been resolved.
+title: Check the Microsoft Defender for Endpoint service health
+description: Check Microsoft Defender for Endpoint service health, see if the service is experiencing issues and review previous issues that have been resolved.
 keywords: dashboard, service, issues, service health, current status, status history, summary of impact, preliminary root cause, resolution, resolution time, expected resolution time
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -25,8 +25,6 @@ ms.technology: mde
 
 **Applies to:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
-
-
 
 >Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-servicestatus-abovefoldlink)
 

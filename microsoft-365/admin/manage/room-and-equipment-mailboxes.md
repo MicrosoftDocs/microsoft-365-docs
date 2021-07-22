@@ -83,7 +83,7 @@ To set up a room or equipment mailbox, go to the Microsoft 365 admin center. (Yo
 6. If you made changes, select **Save** and then **Close**.
 
 > [!Note]
-> To keep your room and equipment mailboxes secure, block sign-in to these mailboxes. For more information, see [Block sign-in for the shared mailbox account](/office365/admin/email/create-a-shared-mailbox?view=o365-worldwide#block-sign-in-for-the-shared-mailbox-account).
+> To keep your room and equipment mailboxes secure, block sign-in to these mailboxes. For more information, see [Block sign-in for the shared mailbox account](/office365/admin/email/create-a-shared-mailbox#block-sign-in-for-the-shared-mailbox-account).
 
 ## Common questions about room and equipment mailboxes
 

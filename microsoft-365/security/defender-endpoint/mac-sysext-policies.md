@@ -1,7 +1,7 @@
 ---
 title: New configuration profiles for macOS Catalina and newer versions of macOS
 description: This topic describes the changes that are must be made in order to benefit from the system extensions, which are a replacement for kernel extensions on macOS Catalina and newer versions of macOS.
-keywords: microsoft, defender, atp, mac, kernel, system, extensions, catalina
+keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, kernel, system, extensions, catalina
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -13,7 +13,7 @@ author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
   - m365-security-compliance
   - m365initiative-defender-endpoint
 ms.topic: conceptual
@@ -31,13 +31,13 @@ ms.technology: mde
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-In alignment with macOS evolution, we are preparing a Microsoft Defender for Endpoint for Mac update that leverages system extensions instead of kernel extensions. This update will only be applicable to macOS Catalina (10.15.4) and newer versions of macOS.
+In alignment with macOS evolution, we are preparing a Microsoft Defender for Endpoint on macOS update that leverages system extensions instead of kernel extensions. This update will only be applicable to macOS Catalina (10.15.4) and newer versions of macOS.
 
-If you have deployed Microsoft Defender for Endpoint for Mac in a managed environment (through JAMF, Intune, or another MDM solution), you must deploy new configuration profiles. Failure to do these steps will result in users getting approval prompts to run these new components.
+If you have deployed Microsoft Defender for Endpoint on macOS in a managed environment (through JAMF, Intune, or another MDM solution), you must deploy new configuration profiles. Failure to do these steps will result in users getting approval prompts to run these new components.
 
 ## JAMF
 
-### System Extensions Policy
+### JAMF System Extensions Policy
 
 To approve the system extensions, create the following payload:
 
@@ -64,10 +64,10 @@ Add the following JAMF payload to grant Full Disk Access to the Microsoft Defend
 
 ### Network Extension Policy
 
-As part of the Endpoint Detection and Response capabilities, Microsoft Defender for Endpoint for Mac inspects socket traffic and reports this information to the Microsoft Defender Security Center portal. The following policy allows the network extension to perform this functionality.
+As part of the Endpoint Detection and Response capabilities, Microsoft Defender for Endpoint on macOS inspects socket traffic and reports this information to the Microsoft 365 Defender portal. The following policy allows the network extension to perform this functionality.
 
 >[!NOTE]
->JAMF doesn’t have built-in support for content filtering policies, which are a pre-requisite for enabling the network extensions that Microsoft Defender for Endpoint for Mac installs on the device. Furthermore, JAMF sometimes changes the content of the policies being deployed.
+>JAMF doesn’t have built-in support for content filtering policies, which are a pre-requisite for enabling the network extensions that Microsoft Defender for Endpoint on macOS installs on the device. Furthermore, JAMF sometimes changes the content of the policies being deployed.
 >As such, the following steps provide a workaround that involve signing the configuration profile.
 
 1. Save the following content to your device as `com.microsoft.network-extension.mobileconfig` using a text editor:
@@ -144,13 +144,13 @@ As part of the Endpoint Detection and Response capabilities, Microsoft Defender 
     ```bash
     $ plutil -lint ~/Documents/com.microsoft.network-extension.mobileconfig
     ```
-    
+
     Verify that the command outputs `OK`.
-        
+
     ```bash
     <PathToFile>/com.microsoft.network-extension.mobileconfig: OK
     ```
-    
+
 3. Follow the instructions on [this page](https://www.jamf.com/jamf-nation/articles/649/creating-a-signing-certificate-using-jamf-pro-s-built-in-certificate-authority) to create a signing certificate using JAMF’s built-in certificate authority.
 
 4. After the certificate is created and installed to your device, run the following command from the Terminal to sign the file:
@@ -158,18 +158,18 @@ As part of the Endpoint Detection and Response capabilities, Microsoft Defender 
     ```bash
     $ security cms -S -N "<CertificateName>" -i <PathToFile>/com.microsoft.network-extension.mobileconfig -o <PathToSignedFile>/com.microsoft.network-extension.signed.mobileconfig
     ```
-    
+
     For example, if the certificate name is **SigningCertificate** and the signed file is going to be stored in Documents:
-    
+
     ```bash
     $ security cms -S -N "SigningCertificate" -i ~/Documents/com.microsoft.network-extension.mobileconfig -o ~/Documents/com.microsoft.network-extension.signed.mobileconfig
     ```
-    
+
 5. From the JAMF portal, navigate to **Configuration Profiles** and click the **Upload** button. Select `com.microsoft.network-extension.signed.mobileconfig` when prompted for the file.
 
 ## Intune
 
-### System Extensions Policy
+### Intune System Extensions Policy
 
 To approve the system extensions:
 
@@ -190,7 +190,7 @@ To approve the system extensions:
 
 ### Create and deploy the Custom Configuration Profile
 
-The following configuration profile enables the network extension and grants Full Disk Access to the Endpoint Security system extension. 
+The following configuration profile enables the network extension and grants Full Disk Access to the Endpoint Security system extension.
 
 Save the following content to a file named **sysext.xml**:
 
@@ -300,10 +300,10 @@ sysext.xml: OK
 
 To deploy this custom configuration profile:
 
-1.	In Intune, open **Manage** > **Device configuration**. Select **Manage** > **Profiles** > **Create profile**.
+1. In Intune, open **Manage** > **Device configuration**. Select **Manage** > **Profiles** > **Create profile**.
 2. Choose a name for the profile. Change **Platform=macOS** and **Profile type=Custom**. Select **Configure**.
-3.	Open the configuration profile and upload **sysext.xml**. This file was created in the preceding step.
-4.	Select **OK**.
+3. Open the configuration profile and upload **sysext.xml**. This file was created in the preceding step.
+4. Select **OK**.
 
     ![System extension in Intune screenshot](images/mac-system-extension-intune.png)
 

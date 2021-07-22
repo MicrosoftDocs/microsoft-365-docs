@@ -1,5 +1,5 @@
 ---
-title: View and organize the Microsoft Defender ATP devices list
+title: View and organize the Microsoft Defender for Endpoint devices list
 description: Learn about the available features that you can use from the Devices list such as sorting, filtering, and exporting the list to enhance investigations.
 keywords: sort, filter, export, csv, device name, domain, last seen, internal IP, health state, active alerts, active malware detections, threat category, review alerts, network, connection, malware, type, password stealer, ransomware, exploit, threat, general malware, unwanted software
 search.product: eADQiWindows 10XVcnh
@@ -46,7 +46,7 @@ During the onboarding process, the **Devices list** is gradually populated with 
 >[!NOTE]
 > If you export the device list, it will contain every device in your organization. It might take a significant amount of time to download, depending on how large your organization is. Exporting the list in CSV format displays the data in an unfiltered manner. The CSV file will include all devices in the organization, regardless of any filtering applied in the view itself.
 
-![Image of devices list with list of devices](images/device-list.png)
+![Image of devices list with list of devices](images/device-inventory.png)
 
 ## Sort and filter the device list
 

@@ -41,7 +41,7 @@ You can create indicators for certificates. Some common use cases include:
 
 It's important to understand the following requirements prior to creating indicators for certificates:
 
-- This feature is available if your organization uses Windows Defender Antivirus and Cloud-based protection is enabled. For more information, see [Manage cloud-based protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus).
+- This feature is available if your organization uses Windows Defender Antivirus and Cloud-based protection is enabled. For more information, see [Manage cloud-based protection](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus).
 - The Antimalware client version must be  4.18.1901.x or later.
 - Supported on machines on Windows 10, version 1703 or later, Windows server 2016 and 2019.
 - The virus and threat protection definitions must be up to date.
@@ -57,18 +57,20 @@ It's important to understand the following requirements prior to creating indica
 >[!IMPORTANT]
 > It can take up to 3 hours to create and remove a certificate IoC.
 
-1. In the navigation pane, select **Settings** > **Indicators**.  
+1. In the navigation pane, select **Settings** > **Endpoints** > 
+**Indicators** (under **Rules**).  
 
-2. Select the **Certificate** tab.
 
-3. Select **Add indicator**.
+2. Select the **Certificates** tab.
+
+3. Select **Add item**.
 
 4. Specify the following details:
    - Indicator - Specify the entity details and define the expiration of the indicator.
    - Action - Specify the action to be taken and provide a description.
    - Scope - Define the scope of the machine group.
 
-5. Review the details in the Summary tab, then click **Save**.
+5. Review the details in the **Summary** tab, then click **Save**.
 
 ## Related topics
 - [Create indicators](manage-indicators.md)

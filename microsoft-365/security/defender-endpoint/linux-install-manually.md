@@ -1,8 +1,8 @@
 ---
-title: Deploy Microsoft Defender for Endpoint for Linux manually
-ms.reviewer: 
-description: Describes how to deploy Microsoft Defender ATP for Linux manually from the command line.
-keywords: microsoft, defender, atp, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
+title: Deploy Microsoft Defender for Endpoint on Linux manually
+ms.reviewer:
+description: Describes how to deploy Microsoft Defender for Endpoint on Linux manually from the command line.
+keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -14,13 +14,13 @@ author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
   - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
 ---
 
-# Deploy Microsoft Defender for Endpoint for Linux manually
+# Deploy Microsoft Defender for Endpoint on Linux manually
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -31,9 +31,9 @@ ms.technology: mde
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-This article describes how to deploy Microsoft Defender for Endpoint for Linux manually. A successful deployment requires the completion of all of the following tasks:
+This article describes how to deploy Microsoft Defender for Endpoint on Linux manually. A successful deployment requires the completion of all of the following tasks:
 
-- [Deploy Microsoft Defender for Endpoint for Linux manually](#deploy-microsoft-defender-for-endpoint-for-linux-manually)
+- [Deploy Microsoft Defender for Endpoint on Linux manually](#deploy-microsoft-defender-for-endpoint-on-linux-manually)
   - [Prerequisites and system requirements](#prerequisites-and-system-requirements)
   - [Configure the Linux software repository](#configure-the-linux-software-repository)
     - [RHEL and variants (CentOS and Oracle Linux)](#rhel-and-variants-centos-and-oracle-linux)
@@ -49,11 +49,11 @@ This article describes how to deploy Microsoft Defender for Endpoint for Linux m
 
 ## Prerequisites and system requirements
 
-Before you get started, see [Microsoft Defender for Endpoint for Linux](microsoft-defender-endpoint-linux.md) for a description of prerequisites and system requirements for the current software version.
+Before you get started, see [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md) for a description of prerequisites and system requirements for the current software version.
 
 ## Configure the Linux software repository
 
-Defender for Endpoint for Linux can be deployed from one of the following channels (denoted below as *[channel]*): *insiders-fast*, *insiders-slow*, or *prod*. Each of these channels corresponds to a Linux software repository. Instructions for configuring your device to use one of these repositories are provided below.
+Defender for Endpoint on Linux can be deployed from one of the following channels (denoted below as *[channel]*): *insiders-fast*, *insiders-slow*, or *prod*. Each of these channels corresponds to a Linux software repository. Instructions for configuring your device to use one of these repositories are provided below.
 
 The choice of the channel determines the type and frequency of updates that are offered to your device. Devices in *insiders-fast* are the first ones to receive updates and new features, followed later by *insiders-slow* and lastly by *prod*.
 
@@ -75,19 +75,19 @@ In order to preview new features and provide early feedback, it is recommended t
     In the below commands, replace *[distro]* and *[version]* with the information you've identified:
 
     > [!NOTE]
-    > In case of Oracle Linux, replace *[distro]* with “rhel”.
+    > In case of Oracle Linux, replace *[distro]* with "rhel".
 
     ```bash
     sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/[distro]/[version]/[channel].repo
     ```
 
-    For example, if you are running CentOS 7 and want to deploy Defender for Endpoint for Linux from the *prod* channel:
+    For example, if you are running CentOS 7 and want to deploy Defender for Endpoint on Linux from the *prod* channel:
 
     ```bash
     sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/centos/7/prod.repo
     ```
 
-    Or if you wish to explore new features on selected devices, you might want to deploy MDE for Linux to *insiders-fast* channel:
+    Or if you wish to explore new features on selected devices, you might want to deploy Microsoft Defender for Endpoint on Linux to *insiders-fast* channel:
 
     ```bash
     sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/centos/7/insiders-fast.repo
@@ -115,7 +115,7 @@ In order to preview new features and provide early feedback, it is recommended t
     sudo zypper addrepo -c -f -n microsoft-[channel] https://packages.microsoft.com/config/[distro]/[version]/[channel].repo
     ```
 
-    For example, if you are running SLES 12 and wish to deploy MDE for Linux from the *prod* channel:
+    For example, if you are running SLES 12 and wish to deploy Microsoft Defender for Endpoint on Linux from the *prod* channel:
 
     ```bash
     sudo zypper addrepo -c -f -n microsoft-prod https://packages.microsoft.com/config/sles/12/prod.repo
@@ -160,11 +160,12 @@ In order to preview new features and provide early feedback, it is recommended t
     ```bash
     sudo mv ./microsoft.list /etc/apt/sources.list.d/microsoft-[channel].list
     ```
+
     For example, if you chose *prod* channel:
-    
+
     ```bash
     sudo mv ./microsoft.list /etc/apt/sources.list.d/microsoft-prod.list
-    ```   
+    ```
 
 - Install the `gpg` package if not already installed:
 
@@ -206,12 +207,14 @@ In order to preview new features and provide early feedback, it is recommended t
     # list all repositories
     yum repolist
     ```
+
     ```Output
     ...
     packages-microsoft-com-prod               packages-microsoft-com-prod        316
     packages-microsoft-com-prod-insiders-fast packages-microsoft-com-prod-ins      2
     ...
     ```
+
     ```bash
     # install the package from the production repository
     sudo yum --enablerepo=packages-microsoft-com-prod install mdatp
@@ -235,7 +238,9 @@ In order to preview new features and provide early feedback, it is recommended t
     XX | packages-microsoft-com-insiders-fast | microsoft-insiders-fast | ...
     XX | packages-microsoft-com-prod | microsoft-prod | ...
     ...
+
     ```
+
     ```bash
     sudo zypper install packages-microsoft-com-prod:mdatp
     ```
@@ -251,23 +256,25 @@ In order to preview new features and provide early feedback, it is recommended t
     ```bash
     cat /etc/apt/sources.list.d/*
     ```
+
     ```Output
     deb [arch=arm64,armhf,amd64] https://packages.microsoft.com/ubuntu/18.04/prod insiders-fast main
     deb [arch=amd64] https://packages.microsoft.com/ubuntu/18.04/prod bionic main
     ```
+
     ```bash
     sudo apt -t bionic install mdatp
     ```
 
 ## Download the onboarding package
 
-Download the onboarding package from Microsoft Defender Security Center:
+Download the onboarding package from Microsoft 365 Defender portal:
 
-1. In Microsoft Defender Security Center, go to **Settings > Device Management > Onboarding**.
-2. In the first drop-down menu, select **Linux Server** as the operating system. In the second drop-down menu, select **Local Script (for up to 10 devices)** as the deployment method.
+1. In the Microsoft 365 Defender portal, go to **Settings > Endpoints > Device management > Onboarding**.
+2. In the first drop-down menu, select **Linux Server** as the operating system. In the second drop-down menu, select **Local Script** as the deployment method.
 3. Select **Download onboarding package**. Save the file as WindowsDefenderATPOnboardingPackage.zip.
 
-    ![Microsoft Defender Security Center screenshot](images/atp-portal-onboarding-linux.png)
+    ![Microsoft 365 Defender portal screenshot](images/atp-portal-onboarding-linux.png)
 
 4. From a command prompt, verify that you have the file.
     Extract the contents of the archive:
@@ -284,11 +291,11 @@ Download the onboarding package from Microsoft Defender Security Center:
     ```bash
     unzip WindowsDefenderATPOnboardingPackage.zip
     ```
+
     ```Output
     Archive:  WindowsDefenderATPOnboardingPackage.zip
     inflating: MicrosoftDefenderATPOnboardingLinuxServer.py
     ```
-
 
 ## Client configuration
 
@@ -300,7 +307,10 @@ Download the onboarding package from Microsoft Defender Security Center:
     mdatp health --field org_id
     ```
 
-2. Run MicrosoftDefenderATPOnboardingLinuxServer.py, and note that, in order to run this command, you must have `python` installed on the device:
+2. Run MicrosoftDefenderATPOnboardingLinuxServer.py.
+
+    > [!NOTE]
+    > To run this command, you must have `python` installed on the device. If you're running RHEL 8.x or Ubuntu 20.04 or higher, then you will need to use Python 3 instead of Python.
 
     ```bash
     python MicrosoftDefenderATPOnboardingLinuxServer.py
@@ -320,10 +330,12 @@ Download the onboarding package from Microsoft Defender Security Center:
 
     > [!IMPORTANT]
     > When the product starts for the first time, it downloads the latest antimalware definitions. Depending on your Internet connection, this can take up to a few minutes. During this time the above command returns a value of `false`. You can check the status of the definition update using the following command:
+    >
     > ```bash
     > mdatp health --field definitions_status
     > ```
-    > Please note that you may also need to configure a proxy after completing the initial installation. See [Configure Defender for Endpoint for Linux for static proxy discovery: Post-installation configuration](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-static-proxy-configuration#post-installation-configuration).
+    >
+    > Please note that you may also need to configure a proxy after completing the initial installation. See [Configure Defender for Endpoint on Linux for static proxy discovery: Post-installation configuration](/microsoft-365/security/defender-endpoint/linux-static-proxy-configuration#post-installation-configuration).
 
 5. Run a detection test to verify that the device is properly onboarded and reporting to the service. Perform the following steps on the newly onboarded device:
 
@@ -336,14 +348,26 @@ Download the onboarding package from Microsoft Defender Security Center:
     - Open a Terminal window. Copy and execute the following command:
 
         ``` bash
-        curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt
+        curl -o /tmp/eicar.com.txt https://www.eicar.org/download/eicar.com.txt
         ```
 
-    - The file should have been quarantined by Defender for Endpoint for Linux. Use the following command to list all the detected threats:
+    - The file should have been quarantined by Defender for Endpoint on Linux. Use the following command to list all the detected threats:
 
         ```bash
         mdatp threat list
         ```
+
+## Experience Linux endpoint detection and response (EDR) capabilities with simulated attacks
+
+To test out the functionalities of EDR for Linux, follow the steps below to simulate a detection on your Linux server and investigate the case.
+
+1. Verify that the onboarded Linux server appears in Microsoft 365 Defender. If this is the first onboarding of the machine, it can take up to 20 minutes until it appears.
+
+2. Download and extract the [script file](https://aka.ms/LinuxDIY) to an onboarded Linux server and run the following command: `./mde_linux_edr_diy.sh`
+
+3. After a few minutes, a detection should be raised in Microsoft 365 Defender.
+
+4. Look at the alert details, machine timeline, and perform your typical investigation steps.
 
 ## Installer script
 
@@ -376,30 +400,35 @@ See [Log installation issues](linux-resources.md#log-installation-issues) for mo
 
 ## Operating system upgrades
 
-When upgrading your operating system to a new major version, you must first uninstall Defender for Endpoint for Linux, install the upgrade, and finally reconfigure Defender for Endpoint for Linux on your device.
+When upgrading your operating system to a new major version, you must first uninstall Defender for Endpoint on Linux, install the upgrade, and finally reconfigure Defender for Endpoint on Linux on your device.
 
 ## How to migrate from Insiders-Fast to Production channel
 
-1. Uninstall the “Insiders-Fast channel” version of MDE for macOS.
+1. Uninstall the "Insiders-Fast channel" version of Defender for Endpoint on Linux.
 
-    ``
+    ```bash
     sudo yum remove mdatp
-    ``
+    ```
 
-1. Disable the MDE for Linux Insiders-Fast repo
-    ``
+1. Disable the Defender for Endpoint on Linux Insiders-Fast repo
+
+    ```bash
     sudo yum repolist
-    ``
+    ```
 
     > [!NOTE]
-    > The output should show “packages-microsoft-com-fast-prod”.
+    > The output should show "packages-microsoft-com-fast-prod".
 
-    ``
+    ```bash
     sudo yum-config-manager --disable packages-microsoft-com-fast-prod
-    ``
-1. Redeploy MDE for Linux using the “Production channel”.
+    ```
 
+1. Redeploy MDE for Linux using the "Production channel".
 
 ## Uninstallation
 
-See [Uninstall](linux-resources.md#uninstall) for details on how to remove Defender for Endpoint for Linux from client devices.
+See [Uninstall](linux-resources.md#uninstall) for details on how to remove Defender for Endpoint on Linux from client devices.
+
+## See also
+
+- [Investigate agent health issues](health-status.md)

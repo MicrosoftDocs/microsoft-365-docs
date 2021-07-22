@@ -30,9 +30,16 @@ Microsoft Secure Score can be found at https://security.microsoft.com/securescor
 
 We're making some changes in the near future to make [Microsoft Secure Score](microsoft-secure-score.md) a better representative of your security posture and improve usability. Your score and the maximum possible score may change.
 
-### No Planned Changes
+### July 2021
 
-There are no planned changes at this time.
+#### Add improvement action related to Microsoft Teams
+
+- Restrict dial-in users from bypassing a meeting lobby.
+- Limit external participants from having control in a Teams meeting.
+- Restrict anonymous users from starting Teams meetings.
+- Require lobbies to be set up for Teams meetings.
+- Configure which users are allowed to be present in Teams meetings.
+
 
 ## Related resources
 
