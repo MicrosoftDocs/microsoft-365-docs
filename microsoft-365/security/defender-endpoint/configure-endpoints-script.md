@@ -49,7 +49,7 @@ Check out the [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/publ
 
     1. Select Windows 10 as the operating system.
 
-    1. In the **Deployment method** field, select **Local Script (for up to 10 devices)**.
+    1. In the **Deployment method** field, select **Local Script**.
 
     1. Click **Download package** and save the .zip file.
 
@@ -107,7 +107,7 @@ For security reasons, the package used to Offboard devices will expire 30 days a
 
     1. Select Windows 10 as the operating system.
 
-    1. In the **Deployment method** field, select **Local Script (for up to 10 devices)**.
+    1. In the **Deployment method** field, select **Local Script**.
 
     1. Click **Download package** and save the .zip file.
 
