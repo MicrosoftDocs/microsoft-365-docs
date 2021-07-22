@@ -80,7 +80,7 @@ Use the following table to help you identify the differences in behavior for the
 
 |Feature or behavior|Label setting: Auto-labeling for files and emails  |Policy: Auto-labeling|
 |:-----|:-----|:-----|
-|App dependency|[Yes](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps) |No \* |
+|App dependency|Yes [minimum versions](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps) |No \* |
 |Restrict by location|No |Yes |
 |Conditions: Trainable classifiers|Yes |No |
 |Conditions: Sharing options and additional options for email|No |Yes |
