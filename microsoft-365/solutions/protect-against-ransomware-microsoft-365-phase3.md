@@ -29,6 +29,8 @@ Three common ways that a ransomware attacker can access your Microsoft 365 tenan
 
 ## User accounts
 
+### Prevent: Attacker can’t compromise a user account
+
 Enforce strong MFA or passwordless sign-in for all users. Start with administrator and priority accounts using one or more of:
 
 - Passwordless authentication with Windows Hello or the Microsoft Authenticator app.
@@ -41,8 +43,14 @@ Increase password security:
 - For on-premises Active Directory Domain Services (AD DS) accounts, extend Azure AD Password Protection to AD DS accounts.
 
 
+### Mitigate: Detect compromised user account and remove it
+
+- Azure AD Identity Protection
+- Microsoft Defender for Identity
+
 ## Email and collaboration
 
+### Prevent: Attacker can't get past built-in Microsoft 365 security features
 
 - Enable AMSI for Office VBA.
 - Implement Advanced Email security using Defender for Office 365.
@@ -52,9 +60,13 @@ Increase password security:
 
    - Weaponized Office document activity such as advanced macro activity, executable content, process creation, and process injection initiated by Office applications.
 
+### Mitigate: Detect breaches based on built-in Microsoft 365 security features
+
+- Microsoft Defender for Office 365
 
 ## Endpoints
 
+### Prevent: Attacker can't get past Windows 10 security features
 
 - Block known threats with attack surface reduction rules, tamper protection, and block at first site.
 - Apply Security Baselines to harden internet-facing Windows servers and clients and Office applications.
@@ -68,7 +80,9 @@ Increase password security:
 - Isolate, disable, or retire insecure systems and protocols, including unsupported operating systems and legacy protocols (Block apps using legacy authentication with Conditional Access)
 - Block unexpected traffic with host-based firewall and network defenses (Windows Firewall with Advanced Security gfor Windows 10).
 
+## Mitigate: Detect breaches based on built-in Windows 10 security features
 
+- Microsoft Defender for Endpoint
 
 <!--
 

@@ -49,7 +49,7 @@ Assume attacker has the credentials to access your tenant and can laterally move
 - Protected Folders/controlled folder access for malicious apps
 - Teams/SharePoint sites with security isolation
 
-### Mitigate: attacker can access data, but can’t encrypt or destroy all copies
+### Mitigate: Attacker can access data, but can’t encrypt or destroy all copies
 
 - Offline, off-site, immutable backups
 
@@ -63,7 +63,7 @@ Assume attacker has the credentials to access your tenant and can laterally move
 
 - DLP
 
-### Mitigate: attacker can exfiltrate, but exfiltrated data is unusable to them
+### Mitigate: Attacker can exfiltrate, but exfiltrated data is unusable to them
 
 - MIP, sensitive information types, and sensitivity labels (permissions and encryption)
 - Office 365 Message Encryption new capabilities (OME) and OME Advanced Message Encryption
