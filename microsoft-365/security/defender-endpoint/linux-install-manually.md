@@ -264,7 +264,7 @@ In order to preview new features and provide early feedback, it is recommended t
 Download the onboarding package from Microsoft 365 Defender portal:
 
 1. In the Microsoft 365 Defender portal, go to **Settings > Endpoints > Device management > Onboarding**.
-2. In the first drop-down menu, select **Linux Server** as the operating system. In the second drop-down menu, select **Local Script (for up to 10 devices)** as the deployment method.
+2. In the first drop-down menu, select **Linux Server** as the operating system. In the second drop-down menu, select **Local Script** as the deployment method.
 3. Select **Download onboarding package**. Save the file as WindowsDefenderATPOnboardingPackage.zip.
 
     ![Microsoft 365 Defender portal screenshot](images/portal-onboarding-linux.png)
@@ -300,7 +300,12 @@ Download the onboarding package from Microsoft 365 Defender portal:
     mdatp health --field org_id
     ```
 
-2. Run MicrosoftDefenderATPOnboardingLinuxServer.py, and note that, in order to run this command, you must have `python` installed on the device:
+2. Run MicrosoftDefenderATPOnboardingLinuxServer.py. 
+   
+    >[!NOTE]
+    >To run this command, you must have `python` installed on the device. If you're running RHEL 8.x or Ubuntu 20.04 or higher, then you will need to use Python 3 instead of Python.
+
+
 
     ```bash
     python MicrosoftDefenderATPOnboardingLinuxServer.py
@@ -349,11 +354,11 @@ Download the onboarding package from Microsoft 365 Defender portal:
 
 To test out the functionalities of EDR for Linux, follow the steps below to simulate a detection on your Linux server and investigate the case. 
 
-1.	Verify that the onboarded Linux server appears in Microsoft Defender Security Center. If this is the first onboarding of the machine, it can take up to 20 minutes until it appears. 
+1.	Verify that the onboarded Linux server appears in Microsoft 365 Defender. If this is the first onboarding of the machine, it can take up to 20 minutes until it appears. 
 
 2.	Download and extract the [script file](https://aka.ms/LinuxDIY) to an onboarded Linux server and run the following command: `./mde_linux_edr_diy.sh`
 
-3.	After a few minutes, a detection should be raised in Microsoft Defender Security Center.
+3.	After a few minutes, a detection should be raised in Microsoft 365 Defender.
 
 4.	Look at the alert details, machine timeline, and perform your typical investigation steps.
 
