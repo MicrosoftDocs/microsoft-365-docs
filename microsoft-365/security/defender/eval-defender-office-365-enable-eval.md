@@ -119,9 +119,10 @@ Use the instructions here to activate your Microsoft Defender for Office 365 eva
 
 8. Review your settings and click the **Create Evaluation** button.
 
-   |   |   |
-   |---|---|
+   |Before|After|
+   |:---:|:---:|
    |:::image type="content" source="../../media/mdo-eval/7-mdo-eval-activate-review.png" alt-text="This pane has a drop-down to review your settings. It also has a clickable link to Edit your Routing type if you need to. When you're ready click the big blue Create Evaluation button.":::|:::image type="content" source="../../media/mdo-eval/8-mdo-eval-activate-complete.png" alt-text="And now the set up is complete. The blue button on this page says 'Go to Evaluation'.":::|
+   |
 
 ## Next steps
 
