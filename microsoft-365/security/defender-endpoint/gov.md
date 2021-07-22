@@ -36,9 +36,9 @@ Microsoft Defender for Endpoint for US Government customers requires one of the 
 ### Desktop licensing
 GCC | GCC High | DoD
 :---|:---|:---
+| Microsoft 365 GCC G5 | Microsoft 365 E5 for GCC High | Microsoft 365 G5 for DOD
+| Microsoft 365 G5 Security GCC | Microsoft 365 G5 Security for GCC High | Microsoft 365 G5 Security for DOD
 Windows 10 Enterprise E5 GCC | Windows 10 Enterprise E5 for GCC High | Windows 10 Enterprise E5 for DOD
-| | Microsoft 365 E5 for GCC High | Microsoft 365 G5 for DOD
-| | Microsoft 365 G5 Security for GCC High | Microsoft 365 G5 Security for DOD
 Microsoft Defender for Endpoint - GCC | Microsoft Defender for Endpoint for GCC High | Microsoft Defender for Endpoint for DOD
 
 ### Server licensing
@@ -85,8 +85,8 @@ Windows 7 SP1 Enterprise | ![Yes](images/svg/check-yes.svg) | ![Yes](images/svg/
 Windows 7 SP1 Pro | ![Yes](images/svg/check-yes.svg) | ![Yes](images/svg/check-yes.svg) | ![Yes](images/svg/check-yes.svg)
 Linux | ![Yes](images/svg/check-yes.svg) | ![Yes](images/svg/check-yes.svg) | ![Yes](images/svg/check-yes.svg)
 macOS | ![Yes](images/svg/check-yes.svg) | ![Yes](images/svg/check-yes.svg) | ![Yes](images/svg/check-yes.svg)
-Android | ![No](images/svg/check-no.svg) On engineering backlog | ![No](images/svg/check-no.svg) On engineering backlog | ![No](images/svg/check-no.svg) On engineering backlog
-iOS | ![No](images/svg/check-no.svg) On engineering backlog | ![No](images/svg/check-no.svg) On engineering backlog | ![No](images/svg/check-no.svg) On engineering backlog
+Android | ![No](images/svg/check-no.svg) In development | ![No](images/svg/check-no.svg) In development | ![No](images/svg/check-no.svg) In development
+iOS | ![No](images/svg/check-no.svg) In development | ![No](images/svg/check-no.svg) In development | ![No](images/svg/check-no.svg) In development
 
 > [!NOTE]
 > Where a patch is specified, it must be deployed prior to device onboarding in order to configure Defender for Endpoint to the correct environment.
@@ -156,13 +156,12 @@ These are the known gaps:
 
 Feature name | GCC | GCC High | DoD
 :---|:---|:---|:---
-Management and APIs: Streaming API | ![Yes](images/svg/check-yes.svg) | ![Yes](images/svg/check-yes.svg) | ![Yes](images/svg/check-yes.svg)
+Network discovery | ![No](images/svg/check-no.svg) In development | ![No](images/svg/check-no.svg) In development | ![No](images/svg/check-no.svg) In development
 Web content filtering | ![No](images/svg/check-no.svg) In development | ![No](images/svg/check-no.svg) In development | ![No](images/svg/check-no.svg) In development
 Integrations: Azure Sentinel | ![Yes](images/svg/check-yes.svg) | ![Yes](images/svg/check-yes.svg) Alerts <br /> ![No](images/svg/check-no.svg) Incidents & Raw data: In development | ![Yes](images/svg/check-yes.svg) Alerts <br /> ![No](images/svg/check-no.svg) Incidents & Raw data: In development
 Integrations: Microsoft Cloud App Security | ![Yes](images/svg/check-yes.svg) | ![No](images/svg/check-no.svg) In development | ![No](images/svg/check-no.svg) In development
-Integrations: Microsoft Compliance Manager | ![No](images/svg/check-no.svg) In development | ![No](images/svg/check-no.svg) In development | ![No](images/svg/check-no.svg) In development
-Integrations: Microsoft Defender for Identity | ![No](images/svg/check-no.svg) In development | ![No](images/svg/check-no.svg) In development | ![No](images/svg/check-no.svg) In development
+Integrations: Microsoft Compliance Manager | ![Yes](images/svg/check-yes.svg) | ![Yes](images/svg/check-yes.svg) | ![Yes](images/svg/check-yes.svg)
+Integrations: Microsoft Defender for Identity | ![No](images/svg/check-no.svg) Rolling out | ![No](images/svg/check-no.svg) Rolling out | ![No](images/svg/check-no.svg) Rolling out
 Integrations: Microsoft Endpoint DLP | ![No](images/svg/check-no.svg) In development | ![No](images/svg/check-no.svg) In development | ![No](images/svg/check-no.svg) In development
-Integrations: Microsoft Intune | ![Yes](images/svg/check-yes.svg) | ![Yes](images/svg/check-yes.svg) | ![Yes](images/svg/check-yes.svg)
-Integrations: Microsoft Power Automate & Azure Logic Apps | ![Yes](images/svg/check-yes.svg) | ![No](images/svg/check-no.svg) In development | ![No](images/svg/check-no.svg) In development
+Integrations: Microsoft Power Automate & Azure Logic Apps | ![Yes](images/svg/check-yes.svg) | ![Yes](images/svg/check-yes.svg) | ![Yes](images/svg/check-yes.svg) Azure Logic Apps <br /> ![No](images/svg/check-no.svg) Power Automate: In development
 Microsoft Threat Experts | ![No](images/svg/check-no.svg) On engineering backlog | ![No](images/svg/check-no.svg) On engineering backlog | ![No](images/svg/check-no.svg) On engineering backlog
