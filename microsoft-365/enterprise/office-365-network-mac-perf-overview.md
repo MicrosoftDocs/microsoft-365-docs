@@ -73,7 +73,7 @@ Test reports are linked to a location if it was added with LAN subnet informatio
 Measurement samples and office locations should start to appear 2-3 minutes after a test report is completed. For more information, see [Microsoft 365 network connectivity test](office-365-network-mac-perf-onboarding-tool.md).
 
 > [!NOTE]
-> When adding your office locations to Microsoft 365 network connectivity in the Microsoft 365 admin center, you can provide either IPv4 or IPv6 addresses for your LAN subnets. Egress IP addresses must use IPv4.
+> Currently, wWhen adding your office locations to Microsoft 365 network connectivity in the Microsoft 365 admin center, you can provide only IPv4 addresses for your LAN subnets. Egress IP addresses must use IPv4.
 
 ## How do I use this information?
 
@@ -144,7 +144,7 @@ A map of the perimeter network for your organization users at the location is sh
 - **SharePoint optimal service front door** - One of the recommended SharePoint service front doors that users in this office location should connect to
 - **SharePoint sub-optimal service front door** - A SharePoint service front door that users are connected to, but is not recommended
 - **DNS recursive resolver server** - The location from a geo IP database of the detected DNS recursive resolver used for Exchange Online (if available)
-- **Your proxy server** - The location from a geo IP database of the detected proxy server (if available) 
+- **Your proxy server** - The location from a geo IP database of the detected proxy server (if available)
 
 The office location summary page additionally shows the location's network assessment, network assessment history, a comparison of this location's assessment to other customers in the same city, and a list of specific insights and recommendations that you can undertake to improve network performance and reliability.
 
@@ -156,7 +156,6 @@ The details tab on the office location page shows the specific measurement resul
 
 > [!div class="mx-imgBorder"]
 > ![Location-specific details](../media/m365-mac-perf/m365-mac-perf-locations-plan-details-all.png)
-
 
 ## Sharing network assessment data with Microsoft
 
@@ -184,9 +183,9 @@ In the CSV file, a discovered city location shows in the userEntered column as b
    1. **Address** (required): The physical address of the office
    1. **Latitude** (optional): Populated from Bing maps lookup of the address if blank
    1. **Longitude** (optional): Populated from Bing maps lookup of the address if blank
-   1. **Egress IP Address ranges 1-5** (optional): For each range, enter the circuit name followed by a space separated list of valid IPv4 or IPv6 CIDR addresses. These values are used to differentiate multiple office locations where you use the same LAN subnet IP Addresses. Egress IP Address ranges all must be /24 network size and the /24 is not included in the input.
+   1. **Egress IP Address ranges 1-5** (optional): For each range, enter the circuit name followed by a space separated list of valid IPv4 CIDR addresses. These values are used to differentiate multiple office locations where you use the same LAN subnet IP Addresses. Egress IP Address ranges all must be /24 network size and the /24 is not included in the input.
    1. **LanIps** (required): List the LAN subnet ranges in use at this office location. LAN subnet IDs need to have a CIDR network size included where the network size can be between /8 and /29. Multiple LAN subnet ranges can be separated by a comma or a semicolon.
-   
+
 1. When you have added your office locations and saved the file, click the **Browse** button next to the **Upload the completed** field and select the saved CSV file.
 
 1. The file will be automatically validated. If there are validation errors, you will see the error message: _There are some errors in the import file. Review the errors, correct the import file, and then try again._ Click the link **Open error details** for a list of specific field validation errors.

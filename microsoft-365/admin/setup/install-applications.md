@@ -21,6 +21,7 @@ ms.custom:
 - seo-marvel-may2020
 - AdminSurgePortfolio
 - okr_smb
+- AdminTemplateSet
 description: "Now that you've set up Microsoft 365, learn how to install individual Office applications on your Mac, PC, or mobile devices."
 ---
 
