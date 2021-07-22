@@ -25,13 +25,13 @@ description: "For Managed Service Providers (MSPs), learn how to sign up for Mic
 
 ## Before you begin
 
-- Make sure you and your customer tenants meet the requirements listed in [Microsoft 365 Lighthouse requirements](m365-lighthouse-requirements.md).
+- Microsoft 365 Lighthouse is deployed in the partner tenant only&mdash;not in the customer tenants, but make sure you and your customer tenants meet the requirements listed in [Microsoft 365 Lighthouse requirements](m365-lighthouse-requirements.md).
 
 - You must be a Global Administrator in the partner tenant you're signing into.
 
 ## Steps to sign up for Microsoft 365 Lighthouse
 
-1. Go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>. 
+1. Go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> and log in using your partner tenant credentials. 
 
 1. Go to **Billing** > **Purchase Services** > **Other Services**.
 
