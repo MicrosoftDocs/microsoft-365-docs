@@ -62,7 +62,22 @@ Get-AzureADObjectSetting -TargetObjectId $groupID -TargetType Groups | fl Values
 The verification looks like this:
     
 ![Screenshot of PowerShell window showing that guest group access has been set to false.](../media/09ebfb4f-859f-44c3-a29e-63a59fd6ef87.png)
-  
+
+If you wish to toggle the setting back to allow guest access to a particular group, Run the following script, changing */<GroupName/>* to the name of the group where you want to allow guest access.
+
+```PowerShell
+$GroupName = "<GroupName>"
+
+Connect-AzureAD
+
+$template = Get-AzureADDirectorySettingTemplate | ? {$_.displayname -eq "group.unified.guest"}
+$settingsCopy = $template.CreateDirectorySetting()
+$settingsCopy["AllowToAddGuests"]=$True
+$groupID= (Get-AzureADGroup -SearchString $GroupName).ObjectId
+$id = (get-AzureADObjectSetting -TargetType groups -TargetObjectId $groupID).id
+Set-AzureADObjectSetting -TargetType Groups -TargetObjectId $groupID -DirectorySetting $settingsCopy -id $id
+```
+
 ## Allow or block guest access based on their domain
 
 You can allow or block guests who are using a specific domain. For example, if your business (Contoso) has a partnership with another business (Fabrikam), you can add Fabrikam to your Allow list so your users can add those guests to their groups.
