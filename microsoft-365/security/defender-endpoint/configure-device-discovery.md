@@ -98,12 +98,12 @@ You can use the following advanced hunting query to get more context about each 
 ```kusto
 DeviceNetworkInfo
 | where Timestamp > ago(7d)
-| summarize arg_max(Timestamp, *) by DeviceId
 | where ConnectedNetworks  != ""
 | extend ConnectedNetworksExp = parse_json(ConnectedNetworks)
 | mv-expand bagexpansion = array ConnectedNetworks=ConnectedNetworksExp
 | extend NetworkName = tostring(ConnectedNetworks ["Name"]), Description = tostring(ConnectedNetworks ["Description"]), NetworkCategory = tostring(ConnectedNetworks ["Category"])
 | where NetworkName == "<your network name here>"
+| summarize arg_max(Timestamp, *) by DeviceId
 ```
 
 ## See also
