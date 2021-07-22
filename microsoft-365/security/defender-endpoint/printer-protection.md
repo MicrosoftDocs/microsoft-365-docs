@@ -141,7 +141,7 @@ DeviceEvents
 | extend PrintPortName=tostring(parsed.PortName)
 | extend PrinterName=tostring(parsed.PrinterName)
 | extend Policy=tostring(parsed.RestrictionReason) 
-| project Timestamp, DeviceId, DeviceName, ActionType, InitiatingProcessAccountName,Policy, PrintedFile, PrinterName, PrintPortName, AdditionalFields
+| project Timestamp, DeviceId, DeviceName, ActionType, InitiatingProcessAccountName, Policy, PrintedFile, PrinterName, PrintPortName, AdditionalFields
 | order by Timestamp desc
 ```
 
