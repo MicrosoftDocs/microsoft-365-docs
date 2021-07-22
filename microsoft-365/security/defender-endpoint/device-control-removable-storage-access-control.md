@@ -114,7 +114,7 @@ The following example shows the usage of GroupID:
 
 **Property name: ExcludedIDList**
 
-Description: The group(s) that the policy will not be applied to.
+Description: The group(s) that the policy won't be applied to.
 
 Options: The Group ID/GUID must be used at this instance.
 
@@ -154,7 +154,7 @@ Description: Defines whether to display notification or not.
 Options: 0-4. When Type Allow or Deny is selected:
 
    - 0: nothing
-   - 4: disable **AuditAllowed** and **AuditDenied** for this Entry. Even if **Block** happens and the **AuditDenied** is setting configured, the system will not show notification.
+   - 4: disable **AuditAllowed** and **AuditDenied** for this Entry. Even if **Block** happens and the **AuditDenied** is setting configured, the system won't show notification.
 
    When Type **AuditAllowed** or **AuditDenied** is selected:
 
@@ -234,7 +234,7 @@ Before you get started with Removable Storage Access Control, you must confirm y
     
 2. Combine all rules within `<PolicyRules>` `</PolicyRules>` into one xml file. 
 
-    If you want to restrict a specific user, then use SID property into the Entry. If there is no SID in the policy Entry, the Entry will be applied to everyone login instance for the machine.
+    If you want to restrict a specific user, then use SID property into the Entry. If there's no SID in the policy Entry, the Entry will be applied to everyone login instance for the machine.
     
     The following image illustrates the usage of SID property, and an example of [Scenario 1: Prevent Write and Execute access to all but allow specific approved USBs](#scenario-1-prevent-write-and-execute-access-to-all-but-allow-specific-approved-usbs).
     
@@ -292,7 +292,7 @@ For policy deployment in Intune, the account must have permissions to create, ed
 
 ## Deploying and managing policy by using Intune user interface
 
-This capability (in Microsoft Endpoint Manager admin center (https://endpoint.microsoft.com/) > Devices > Configuration profiles > Create profile > Platform: Windows 10 and later & Profile: Device Control) is not yet available. 
+This capability (in Microsoft Endpoint Manager admin center (https://endpoint.microsoft.com/) > Devices > Configuration profiles > Create profile > Platform: Windows 10 and later & Profile: Device Control) isn't yet available. 
 
 ## View Device Control Removable Storage Access Control data in Microsoft Defender for Endpoint
 
@@ -303,7 +303,7 @@ The Microsoft 365 security portal shows removable storage blocked by the Device 
 ```kusto
 //events triggered by RemovableStoragePolicyTriggered
 DeviceEvents
-| where ActionType == &quot;RemovableStoragePolicyTriggered&quot; 
+| where ActionType == "RemovableStoragePolicyTriggered" 
 | extend parsed=parse_json(AdditionalFields) 
 | extend RemovableStorageAccess = tostring(parsed.RemovableStorageAccess)  
 | extend RemovableStoragePolicyVerdict = tostring(parsed.RemovableStoragePolicyVerdict)  
@@ -328,15 +328,15 @@ DeviceEvents
 
 **What is the removable storage media limitation for the maximum number of USBs?**
 
-We have validated one USB group with 100,000 media - up to 7 MB in size. The policy works in both Intune and GPO without performance issues.
+We've validated one USB group with 100,000 media - up to 7 MB in size. The policy works in both Intune and GPO without performance issues.
 
 **Why does the policy not work?**
 
-The most common reason is there is no required [antimalware client version](/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control#prepare-your-endpoints).
+The most common reason is there's no required [antimalware client version](/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control#prepare-your-endpoints).
 
-Another reason could be that the XML file is not correctly formatted, for example, not using the correct markdown formatting for the "&" character in the XML file, or the text editor might add a byte order mark (BOM) 0xEF 0xBB 0xBF at the beginning of the files which causes the XML parsing not to work. One simple solution is to download the [sample file](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) (select **Raw** and then **Save as**) and then update.
+Another reason could be that the XML file isn't correctly formatted, for example, not using the correct markdown formatting for the "&" character in the XML file, or the text editor might add a byte order mark (BOM) 0xEF 0xBB 0xBF at the beginning of the files, which causes the XML parsing not to work. One simple solution is to download the [sample file](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) (select **Raw** and then **Save as**) and then update.
 
-If there is a value and the policy is managed via Group Policy, check whether the client device can access the policy XML path.
+If there's a value and the policy is managed via Group Policy, check whether the client device can access the policy XML path.
 
 **How can I know which machine is using out of date antimalware client version in the organization?**
 
