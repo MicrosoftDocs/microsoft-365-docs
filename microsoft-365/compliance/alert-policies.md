@@ -70,6 +70,8 @@ An alert policy consists of the following settings and conditions.
 
 - **Activity conditions**. For most activities, you can define additional conditions that must be met to trigger an alert. Common conditions include IP addresses (so that an alert is triggered when the user performs the activity on a computer with a specific IP address or within an IP address range), whether an alert is triggered if a specific user or users perform that activity, and whether the activity is performed on a specific file name or URL. You can also configure a condition that triggers an alert when the activity is performed by any user in your organization. The available conditions are dependent on the selected activity.
 
+You can also define user tags as a condition of an alert policy. This results in the alerts triggered by the policy to include the context of the impacted user. You can use system user tags or custom user tags. For more information, see [User tags in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/user-tags).
+
 - **When the alert is triggered**. You can configure a setting that defines how often an activity can occur before an alert is triggered. This allows you to set up a policy to generate an alert every time an activity matches the policy conditions, when a certain threshold is exceeded, or when the occurrence of the activity the alert is tracking becomes unusual for your organization.
 
     ![Configure how alerts are triggered, based on when the activity occurs, a threshold, or unusual activity for your organization](../media/howalertsaretriggered.png)
@@ -144,10 +146,10 @@ The table also indicates the Office 365 Enterprise and Office 365 US Government 
 |**User impersonation phish delivered to inbox/folder**<sup>1,</sup><sup>2</sup>|Generates an alert when Microsoft detects that an admin or user override has allowed the delivery of a user impersonation phishing message to the inbox (or other user-accessible folder) of a mailbox. Examples of overrides include an inbox or mail flow rule that allows messages from a specific sender or domain, or an anti-spam policy that allows messages from specific senders or domains. This policy has a **Medium** severity setting.|Threat management|E5/G5 or Defender for Office 365 P2 add-on subscription|
 |**User restricted from sending email**|Generates an alert when someone in your organization is restricted from sending outbound mail. This typically results when an account is compromised, and the user is listed on the **Restricted Users** page in the Microsoft 365 compliance center. (To access this page, go to **Threat management > Review > Restricted Users**). This policy has a **High** severity setting. For more information about restricted users, see [Removing a user, domain, or IP address from a block list after sending spam email](/office365/securitycompliance/removing-user-from-restricted-users-portal-after-spam).|Threat management|E1/F1/G1, E3/F3/G3, or E5/G5|
 |**User restricted from sharing forms and collecting responses**|Generates an alert when someone in your organization has been restricted from sharing forms and collecting responses using Microsoft Forms due to detected repeated phishing attempt behavior. This policy has a **High** severity setting.|Threat management|E1, E3/F3, or E5|
-|||||
+
 
 > [!NOTE]
-> <sup>1</sup> We've temporarily removed this default alert policy based on customer feedback. We're working to improve it, and will replace it with a new version in the near future. Until then, you can create a custom alert policy to replace this functionality by using the following settings:<br/>&nbsp; * Activity is Phish email detected at time of delivery<br/>&nbsp; * Mail is not ZAP'd<br/>&nbsp; * Mail direction is Inbound<br/>&nbsp; * Mail delivery status is Delivered<br/>&nbsp; * Detection technology is Malicious URL retention, URL detonation, Advanced phish filter, General phish filter, Domain impersonation, User impersonation, and Brand impersonation<br/><br/>&nbsp;&nbsp;&nbsp;For more information about anti-phishing in Office 365, see [Set up anti-phishing and anti-phishing policies](../security/office-365-security/set-up-anti-phishing-policies.md).<br/><br/><sup>2</sup> To recreate this alert policy, follow the guidance in the previous footnote, but choose User impersonation as the only Detection technology.
+> <sup>1</sup> We've temporarily removed this default alert policy based on customer feedback. We're working to improve it, and will replace it with a new version in the near future. Until then, you can create a custom alert policy to replace this functionality by using the following settings: <ul><li>Activity is Phish email detected at time of delivery</li> <li>Mail is not ZAP'd</li> <li>Mail direction is Inbound</li> <li>Mail delivery status is Delivered</li> <li>Detection technology is Malicious URL retention, URL detonation, Advanced phish filter, General phish filter, Domain impersonation, User impersonation, and Brand impersonation</li></ul> For more information about anti-phishing in Office 365, see [Set up anti-phishing and anti-phishing policies](../security/office-365-security/set-up-anti-phishing-policies.md).<br/><br/><sup>2</sup> To recreate this alert policy, follow the guidance in the previous footnote, but choose User impersonation as the only Detection technology.
 
 The unusual activity monitored by some of the built-in policies is based on the same process as the alert threshold setting that was previously described. Microsoft establishes a baseline value that defines the normal frequency for "usual" activity. Alerts are then triggered when the frequency of activities tracked by the built-in alert policy greatly exceeds the baseline value.
 
@@ -192,7 +194,7 @@ The length of the aggregation interval depends on your Office 365 or Microsoft 3
 |E5 Compliance add-on or E5 Discovery and Audit add-on|1 minute|
 |Office 365 or Microsoft 365 E1/F1/G1 or E3/F3/G3|15 minutes|
 |Defender for Office 365 Plan 1 or Exchange Online Protection|15 minutes|
-|||
+
 
 When events that match the same alert policy occur within the aggregation interval, details about the subsequent event are added to the original alert. For all events, information about aggregated events is displayed in the details field and the number of times an event occurred with the aggregation interval is displayed in the activity/hit count field. You can view more information about all aggregated events instances by viewing the activity list.
 
@@ -253,7 +255,7 @@ To see which category a default alert policy is assigned to, see the table in [D
 |View-Only Recipients|||![Check mark](../media/checkmark.png)||||
 |View-Only Record Management|![Check mark](../media/checkmark.png)||||||
 |View-Only Retention Management|![Check mark](../media/checkmark.png)||||||
-|||||||
+
 
 > [!TIP]
 > To view the roles that are assigned to each of the default role groups, run the following commands in Security & Compliance Center PowerShell:

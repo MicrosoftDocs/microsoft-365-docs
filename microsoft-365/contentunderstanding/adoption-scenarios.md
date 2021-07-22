@@ -1,5 +1,5 @@
 ---
-title: "Scenarios and use cases for Microsoft SharePoint Syntex"
+title: Scenarios and use cases for Microsoft SharePoint Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -14,7 +14,7 @@ ms.collection:
 ms.custom: Adopt
 search.appverid: 
 localization_priority: Normal
-description: "Find scenarios about how to use SharePoint Syntex in your organization."
+description: Find scenarios about how to use SharePoint Syntex in your organization.
 ---
 
 # Scenarios and use cases for Microsoft SharePoint Syntex
