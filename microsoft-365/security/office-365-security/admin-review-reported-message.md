@@ -55,7 +55,6 @@ You will only be able to mark and notify users of review results if the message 
     - Phishing
     - Junk
     - No threats found
-    - Awareness training
     - Footer
 
 4. When you're finished, click **Save**. To clear these values, click **Discard** on the User submissions page.
