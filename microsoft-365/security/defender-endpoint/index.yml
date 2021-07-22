@@ -69,7 +69,7 @@ landingContent:
         links:
         - text: Endpoint detection and response
           url: overview-endpoint-detection-response.md  
-        - text: Behavioural blocking and containment
+        - text: Behavioral blocking and containment
           url: behavioral-blocking-containment.md
         - text: Automated investigation and response (AIR)
           url: automated-investigations.md
