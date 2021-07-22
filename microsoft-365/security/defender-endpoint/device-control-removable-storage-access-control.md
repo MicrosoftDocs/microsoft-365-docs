@@ -303,7 +303,7 @@ The Microsoft 365 security portal shows removable storage blocked by the Device 
 ```kusto
 //events triggered by RemovableStoragePolicyTriggered
 DeviceEvents
-| where ActionType == &quot;RemovableStoragePolicyTriggered&quot; 
+| where ActionType == "RemovableStoragePolicyTriggered" 
 | extend parsed=parse_json(AdditionalFields) 
 | extend RemovableStorageAccess = tostring(parsed.RemovableStorageAccess)  
 | extend RemovableStoragePolicyVerdict = tostring(parsed.RemovableStoragePolicyVerdict)  
