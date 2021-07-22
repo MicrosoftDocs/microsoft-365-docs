@@ -12,10 +12,8 @@ localization_priority: Priority
 ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
-- remotework
-- m365solution-remotework
-- m365solution-overview
-- M365initiative-coredeploy
+- ransomware
+- m365solution-ransomware
 ms.custom: seo-marvel-jun2020
 keywords: 
 description: Step through protecting your Microsoft 365 resources from ransomware attacks.
@@ -33,7 +31,7 @@ Assume attacker has the credentials to access your tenant and can laterally move
 
 ## Data encryption or destruction
 
-**Attacker's goal:** Make crucial organization data unusable, bringing normal business operations to a halt. 
+**Attacker's goal:** Make critical organization data unusable and bring normal business operations to a halt. 
 
 **Financial leverage:** Organization can’t operate normally and loses revenue.
 

@@ -12,10 +12,9 @@ localization_priority: Priority
 ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
-- remotework
-- m365solution-remotework
+- ransomware
+- m365solution-ransomware
 - m365solution-overview
-- M365initiative-coredeploy
 ms.custom: seo-marvel-jun2020
 keywords: 
 description: Step through protecting your Microsoft 365 resources from ransomware attacks.
