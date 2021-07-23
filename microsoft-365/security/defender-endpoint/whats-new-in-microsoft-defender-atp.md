@@ -89,7 +89,7 @@ For more information on preview features, see [Preview features](preview.md).
 
 - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md) <br> Microsoft Defender for Endpoint now adds support for Linux. Learn how to install, configure, update, and use Microsoft Defender for Endpoint on Linux.
 
-- [Attack simulators in the evaluation lab](evaluation-lab.md#threat-simulator-scenarios) <br> Microsoft Defender for Endpoint has partnered with various threat simulation platforms to give you convenient access to test the capabilities of the platform right from the within the portal.
+- [Attack simulators in the evaluation lab](evaluation-lab.md#threat-simulator-scenarios) <br> Microsoft Defender for Endpoint has partnered with various threat simulation platforms to give you convenient access to test the capabilities of the platform within the portal.
 
 ## April 2020
 
@@ -99,7 +99,7 @@ For more information on preview features, see [Preview features](preview.md).
 
 - [Microsoft Defender for Endpoint on macOS](microsoft-defender-endpoint-mac.md) <BR> Microsoft Defender for Endpoint on macOS brings the next-generation protection to Mac devices. Core components of the unified endpoint security platform will now be available for Mac devices, including [endpoint detection and response](microsoft-defender-endpoint-mac.md).
 
-- [Threat & Vulnerability Management application and application version end-of-life information](tvm-security-recommendation.md) <BR>Applications and application versions which have reached their end-of-life are tagged or labeled as such so you are aware that they will no longer be supported, and can take action to either uninstall or replace. Doing so will help lessen the risks related to various vulnerability exposures due to unpatched applications.
+- [Threat & Vulnerability Management application and application version end-of-life information](tvm-security-recommendation.md) <BR>Applications and application versions that have reached their end-of-life are tagged or labeled as such so that you are aware they will no longer be supported. You can then take action to either uninstall or replace such applications. Doing so will help lessen the risks related to various vulnerability exposures due to unpatched applications.
 
 - [Threat & Vulnerability Management Advanced Hunting Schemas](advanced-hunting-schema-reference.md) <BR>Use the Threat & Vulnerability Management tables in the Advanced hunting schema to query about software inventory, vulnerability knowledgebase, security configuration assessment, and security configuration knowledgebase.
 
