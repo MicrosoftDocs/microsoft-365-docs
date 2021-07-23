@@ -55,7 +55,7 @@ The blocking experience for 3rd party supported browsers is provided by Network 
 Before trying out this feature, make sure you meet the following requirements:
 
 - Windows 10 Enterprise E5, Microsoft 365 E5, Microsoft 365 E5 Security, Microsoft 365 E3 + Microsoft 365 E5 Security add-on or the Microsoft Defender for Endpoint standalone license. 
-- Access to Microsoft Defender Security Center portal (https://securitycenter.windows.com).
+- Access to Microsoft 365 Defender portal (https://security.microsoft.com).
 - Devices running Windows 10 Anniversary Update (version 1607) or later with the latest MoCAMP update.
 - Windows Defender SmartScreen and Network protection enabled.
 
@@ -66,11 +66,11 @@ Data is stored in the region that was selected as part of your [Microsoft Defend
 
 ## Turn on web content filtering
 
-From the left-hand navigation menu, select **Settings** > **General** > **Advanced Features**. Scroll down until you see the entry for **Web content filtering**. Switch the toggle to **On** and **Save preferences**.
+From the left-hand navigation menu, select **Settings** > **Endpoints** > **General** > **Advanced Features**. Scroll down until you see the entry for **Web content filtering**. Switch the toggle to **On** and **Save preferences**.
 
 ### Configure web content filtering policies
 
-Web content filtering policies specify which site categories are blocked on which device groups. To manage the policies, go to **Settings** > **Rules** > **Web content filtering**.
+Web content filtering policies specify which site categories are blocked on which device groups. To manage the policies, go to **Settings** > **Endpoints** > **Web content filtering** (under **Rules**).
 
 Use the filter to locate policies that contain certain blocked categories or are applied to specific device groups.
 
@@ -97,7 +97,7 @@ To add a new policy:
 
 It's possible to override the blocked category in web content filtering to allow a single site by creating a custom indicator policy. The custom indicator policy will supersede the web content filtering policy when it's applied to the device group in question.
 
-1. Create a custom indicator in the Microsoft Defender Security Center by going to **Settings** > **Indicators** > **URL/Domain** > **Add Item**.
+1. Create a custom indicator in the Microsoft 365 Defender portal by going to **Settings** > **Endpoints** > **Indicators** > **URL/Domain** > **Add Item**.
 
 2. Enter the domain of the site.
 
