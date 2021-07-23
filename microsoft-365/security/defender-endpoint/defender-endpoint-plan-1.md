@@ -30,7 +30,7 @@ Soon, Defender for Endpoint will be available in two plans:
 
 This article focuses on Defender for Endpoint Plan 1, currently in preview. Use this article to:
 
-- Get an overview of what’s included in Defender for Endpoint Plan 1.
+- Get an overview of what’s included in Defender for Endpoint Plan 1 (preview).
 - Learn how to set up and configure your threat protection capabilities.
 - Get started using the Microsoft 365 Defender portal, where you can view incidents and alerts, manage devices, and use reports about detected threats.
 
@@ -53,7 +53,7 @@ Next-generation protection includes robust antivirus and antimalware protection.
 
 - Behavior-based, heuristic, and real-time antivirus protection 
 - Cloud-delivered protection, which includes near-instant detection and blocking of new and emerging threats 
-- Dedicated protection and product updates, including updates related to Microsoft Defender Antivirus |
+- Dedicated protection and product updates, including updates related to Microsoft Defender Antivirus 
 
 To learn more, see [Next-generation protection in Windows](microsoft-defender-antivirus-in-windows-10.md).
 
