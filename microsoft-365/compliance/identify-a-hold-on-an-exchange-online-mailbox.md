@@ -231,34 +231,34 @@ Keep the following things in mind when managing a mailbox on delay hold:
 
 - As previous stated, a mailbox is considered to be on hold for an unlimited hold duration if either the DelayHoldApplied or DelayReleaseHoldApplied property is set to **True**. However, that doesn't mean that *all* content in the mailbox is preserved. It depends on the value that's set to each property. For example, let's say both properties are set to **True** because holds are removed from the mailbox. Then you remove only the delay hold that's applied to non-Outlook cloud data (by using the *RemoveDelayReleaseHoldApplied* parameter). The next time the Managed Folder Assistant processes the mailbox, the non-Outlook items marked for removal are purged. Any Outlook items marked for removal won't be purged because the DelayHoldApplied property is still set to **True**. The opposite would also be true: if DelayHoldApplied is set to **False** and DelayReleaseHoldApplied is set to **True**, then only Outlook items marked for removal would be purged.
 
-## How to confirm that a global hold is applied to a mailbox
+## How to confirm that an organization-wide retention policy is applied to a mailbox
 
-When a global hold is applied or removed you export the mailbox diagnostics logs can help you be certain that Exchange Online has actually applied or removed the hold on the mailbox. In order to view this information you need to first validate a couple of things in an Exchange Online PowerShell Session:
+When an organization-wide retention policy is applied or removed to a mailbox, exporting the mailbox diagnostics logs can help you be certain that Exchange Online has actually applied or removed the retention policy to the mailbox. To view this information, you first need to validate a few things using [Exchange Online Powershell](/powershell/exchange/connect-to-exchange-online-powershell).
 
-### First obtain the GUID(s) for any holds placed explicitly on a Exchange Online Mailbox
+### Obtain the GUIDs for any retention policies explicitly applied to a mailbox
 
 ```powershell
 Get-Mailbox <username> | Select-Object -ExpandProperty InPlaceHolds
 ```
 
-### Next obtain the GUID(s) for any holds placed on the Exchange Online Organization
+### Obtain the GUIDs for any organization-wide retention policies appled to mailboxes
 
 ```powershell
 Get-OrganizationConfig | Select-Object -ExpandProperty InPlaceHolds
 ```
 
-### Next get the Mailbox Diagnostics for HoldTracking
+### Get the Mailbox Diagnostics for HoldTracking
 
-The Hold Tracking Mailbox Diagnostics logs maintain a history of the legal holds applied on the user. 
+The Hold Tracking Mailbox Diagnostics logs maintain a history of the holds applied to a user mailbox.
 
 ```powershell
 $ht = Export-MailboxDiagnosticLogs <username> -ComponentName HoldTracking
 $ht.MailboxLog | Convertfrom-Json
 ```
 
-### Understand the results of the Mailbox Diagnostics Logs
+### Review the results of the Mailbox Diagnostics logs
 
-If you gather data from the step above then the resultant data may look something like this:
+If you gather data from the previous step, the resulting data may look something like this:
 
 > **ed**`  : 0001-01-01T00:00:00.0000000`
 > **hid**` : mbx7cfb30345d454ac0a989ab3041051209:1`
@@ -266,16 +266,17 @@ If you gather data from the step above then the resultant data may look somethin
 > **lsd**` : 2020-03-23T18:24:37.1884606Z`
 > **osd**` : 2020-03-23T18:24:37.1884606Z`
 
-You can use the following table to understand each of the values listed above that we track:
+Use the following table to help you understand each of the previous values listed in the diagnostics log.
 
-| Value   | Description                                                                                                               |
-| ------- | ------------------------------------------------------------------------------------------------------------------------- |
-| **osd** | Indicates the Original start date, which is the date that we saw the hold for the first time.                             |
-| **lsd** | Indicates the Last start date, which is the date that we saw the hold being enabled.                                      |
-| **ed**  | Indicates the End date, which is the date that we saw the hold being disabled.  MinValue means the hold is still enabled. |
-| **hid** | Indicated the Hold ID that will correlate to the data collected above from the mailbox and/or organization configuration  |
+| Value   | Description |
+|:------- |:----------- |
+| **ed**  | Indicates the End date, which is the date the retention policy was disabled. MinValue means the policy is still assigned to the mailbox. |
+| **hid** | Indicates the GUID for the retention policy. This value will correlate to the GUIDs that you collected for the explicit or organization-wide retention policies assigned to the mailbox.|
+| **lsd** | Indicates the Last start date, which is the date the retention policy was assigned to the mailbox.|
+| **osd** | Indicates the Original start date, which is the date that Exchange first recorded information about the retention policy. |
+|||
 
-When a hold is no longer applied, we will place a temporary delay hold on the user to prevent purging content. Delay hold can be disabled via `Set-Mailbox -RemoveDelayHoldApplied`.
+When a retention policy is no longer applied to a mailbox, we will place a temporary delay hold on the user to prevent purging content. A delay hold can be disabled by running the `Set-Mailbox -RemoveDelayHoldApplied` command.
 
 ## Next steps
 
