@@ -3,7 +3,7 @@ title: Difference between document understanding and form processing models
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
-ms.reviewer: lauriellis
+ms.reviewer: lauris
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -12,7 +12,7 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 localization_priority: Priority
-description: Learn about key difference between document understanding and form processing models.
+description: Learn about key difference between a document understanding model and a form processing model.
 ---
 
 # Difference between document understanding and form processing models 
