@@ -18,6 +18,7 @@ ms.topic: article
 ms.technology: mde
 ---
 
+
 # Onboard the Windows 10 devices using a local script
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -71,7 +72,7 @@ For information on how you can manually validate that the device is compliant an
 
 
 >[!TIP]
-> After onboarding the device, you can choose to run a detection test to verify that an device is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Microsoft Defender for Endpoint endpoint](run-detection-test.md).
+> After onboarding the device, you can choose to run a detection test to verify that a device is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Microsoft Defender for Endpoint endpoint](run-detection-test.md).
 
 ## Configure sample collection settings
 For each device, you can set a configuration value to state whether samples can be collected from the device when a request is made through Microsoft 365 Defender to submit a file for deep analysis.
@@ -95,14 +96,14 @@ The default value in case the registry key doesn’t exist is 1.
 
 
 ## Offboard devices using a local script
-For security reasons, the package used to Offboard devices will expire 30 days after the date it was downloaded. Expired offboarding packages sent to an device will be rejected. When downloading an offboarding package you will be notified of the packages expiry date and it will also be included in the package name.
+For security reasons, the package used to Offboard devices will expire 30 days after the date it was downloaded. Expired offboarding packages sent to a device will be rejected. When downloading an offboarding package you will be notified of the packages expiry date and it will also be included in the package name.
 
 > [!NOTE]
 > Onboarding and offboarding policies must not be deployed on the same device at the same time, otherwise this will cause unpredictable collisions.
 
 1. Get the offboarding package from [Microsoft 365 Defender portal](https://security.microsoft.com/):
 
-    1. In the navigation pane, select **Settings** > **Endpoints** > **Device management** >**Offboarding**.
+    1. In the navigation pane, select **Settings** > **Endpoints** > **Device management** > **Offboarding**.
 
     1. Select Windows 10 as the operating system.
 
@@ -139,7 +140,6 @@ Monitoring can also be done directly on the portal, or by using the different de
 2. Click **Devices inventory**.
 
 3. Verify that devices are appearing.
-
 
 ## Related topics
 - [Onboard Windows 10 devices using Group Policy](configure-endpoints-gp.md)
