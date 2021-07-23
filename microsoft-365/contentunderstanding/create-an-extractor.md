@@ -1,8 +1,9 @@
 ---
-title: "Create an extractor"
-ms.author: efrene
-author: efrene
+title: Create an extractor Microsoft SharePoint Syntex
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
+ms.reviewer: ssquires
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -11,7 +12,7 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 localization_priority: Priority
-description: "Learn how to create an extractor in Microsoft SharePoint Syntex."
+description: Learn how to create an extractor in Microsoft SharePoint Syntex.
 ---
 
 # Create an extractor in Microsoft SharePoint Syntex
@@ -23,12 +24,12 @@ description: "Learn how to create an extractor in Microsoft SharePoint Syntex."
 
 </br> 
 
-Before or after you create a classifier model to automate identification and classification of specific document types, you can optionally choose to add extractors to your model to pull out specific information from these documents. For example, you may want your model not only to identify all *Contract Renewal* documents added to your document library, but also to display the *Service Start date* for each document as a column value in the document library.
+Before or after you create a classifier model to automate identification and classification of specific document types, you can optionally choose to add extractors to your model to pull out specific information from these documents. For example, you might want your model not only to identify all *Contract Renewal* documents added to your document library, but also to display the *Service Start date* for each document as a column value in the document library.
 
 You need to create an extractor for each entity in the document that you want to extract. In our example, we want to extract the **Service Start Date** for each **Contract Renewal** document that is identified by the model. We want to be able to see a view in the document library of all **Contract Renewal** documents, with a column that shows the **Service Start** date value of each document. 
 
 > [!NOTE]
-> In order to create an extractor, you use the same files you previously uploaded to train the classifier. 
+> To create an extractor, you use the same files you previously uploaded to train the classifier. 
 
 ## Name your extractor
 
@@ -54,16 +55,17 @@ Creating the extractor opens the extractor page. Here you see a list of your sam
 Once you labeled five files, a notification banner displays informing you to move to training. You can choose to more label more documents or advance to training. 
 
 ### Use Find to search your file
-You can use the <b>Find</b> feature to search for an entity in your document that you want to label.
 
-   ![Find in file](../media/content-understanding/find-feature.png) 
+You can use the **Find** feature to search for an entity in your document that you want to label.
+
+   ![Find in file.](../media/content-understanding/find-feature.png) 
 
 The Find feature is useful if you are searching a large document or if there are multiple instances of the entity in the document. If you find multiple instances, you can select the one you need in the search results to go to that location in the viewer to label it.
 
 
 ## Add an explanation
 
-For our example, we are going to create an explanation that provides a hint about the entity format itself and variations it may have in the sample documents. For example, a date value can be in a number of different formats, such as:
+For our example, we are going to create an explanation that provides a hint about the entity format itself and variations it might have in the sample documents. For example, a date value can be in a number of different formats, such as:
 - 10/14/2019
 - October 14, 2019
 - Monday, October 14, 2019
@@ -94,24 +96,24 @@ For the *Service Start Date* sample, it is more efficient to use the pre-built e
 2. From the explanation library, select **Date**. You can view all variations of date that are recognized.
 3. Select **Add**.</br>
 
-    ![Explanation library](../media/content-understanding/explanation-library.png) 
+    ![Explanation library.](../media/content-understanding/explanation-library.png) 
 
 4. On the **Create an explanation** page, the *Date* information from the explanation library auto fills the fields. Select **Save**.</br>
 
-    ![Date](../media/content-understanding/date-explanation-library.png) 
+    ![Date.](../media/content-understanding/date-explanation-library.png) 
 
 ## Train the model 
 
 Saving your explanation start the training. If your model has enough information to extract the data from your labeled example files, you will see each file labeled with **Match**.  
 
-![Match](../media/content-understanding/match2.png) 
+![Match.](../media/content-understanding/match2.png) 
 
 If the explanation does not have enough information to find the data you want to extract, each file will be labeled with **Mismatch**. You can click on the **Mismatched** files to see more information about why there was a mismatch.
 
 
 ## Add another explanation
 
-Often the mismatch is an indication that the explanation we provided did not provide enough information to extract the service start date value to match our labeled files. You may need to edit it, or add another explanation.
+Often the mismatch is an indication that the explanation we provided did not provide enough information to extract the service start date value to match our labeled files. You might need to edit it, or add another explanation.
 
 For our example, notice that the text string *Start Service date of* always precedes the actual value. To help identify the Service Start Date, you need to create a phrase explanation.
 
@@ -120,7 +122,7 @@ For our example, notice that the text string *Start Service date of* always prec
 3. Use *Service Start Date of* as the value.
 4. Select **Save**.
 
-    ![Prefix string](../media/content-understanding/prefix-string.png) 
+    ![Prefix string.](../media/content-understanding/prefix-string.png) 
 
 ## Train the model again
 
@@ -135,7 +137,7 @@ If you receive a match on your labeled sample files, you can now test your model
 1. From the model home page, click the **Test** tab.  This runs the model on your unlabeled sample files.
 2. In the **Test files** list, your example files display to show if the model is able to extract the information you need. Use this information to help determine the effectiveness of your classifier in identifying your documents.
 
-    ![Test on your files](../media/content-understanding/test-filies-extractor.png) 
+    ![Test on your files.](../media/content-understanding/test-filies-extractor.png) 
 
 ## See Also
 [Create a classifier](create-a-classifier.md)
