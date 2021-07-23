@@ -304,7 +304,7 @@ Explanation for the four different principles:
     - [How retention works with Yammer](retention-policies-yammer.md#how-retention-works-with-yammer)
     - [How retention works for Exchange](retention-policies-exchange.md#how-retention-works-for-exchange)
     
-    **Example for this first principle**: An email message is subject to a retention policy for Exchange that is configured to delete items three years after they created, and it also has a retention label applied that is configured to retain items five years after they are created.
+    **Example for this first principle**: An email message is subject to a retention policy for Exchange that is configured to delete items three years after they are created, and it also has a retention label applied that is configured to retain items five years after they are created.
     
     The email message is retained for five years because this retention action takes precedence over deletion. The email message is permanently deleted at the end of the five years because of the delete action that was suspended while the retention action was in effect.
 
