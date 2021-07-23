@@ -38,7 +38,7 @@ Learn how to use data sensitivity labels to prioritize incident investigation.
 >[!NOTE]
 >Labels are detected for Windows 10, version 1809 or later.
 
-1. In Microsoft Defender Security Center, select **Incidents**. 
+1. In Microsoft 365 Defender portal, select **Incidents & alerts** > **Incidents**.
 
 2. Scroll to the right to see the **Data sensitivity** column. This column reflects sensitivity labels that have been observed on devices related to the incidents providing an indication of whether sensitive files may be impacted by the incident.
 

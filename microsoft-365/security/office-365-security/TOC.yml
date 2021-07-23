@@ -194,7 +194,7 @@
          href: real-time-detections.md
      - name: Use Threat Trackers
        href: threat-trackers.md
-     - name: View alerts
+     - name: Alert policies
        href: ../../compliance/alert-policies.md
      - name: Smart reports and insights in the Security & Compliance Center
        href: reports-and-insights-in-security-and-compliance.md
