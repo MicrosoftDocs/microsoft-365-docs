@@ -1,6 +1,6 @@
 ---
 title: 'Overview'
-description: Understanding TEst Base
+description: Understanding Test Base
 search.appverid: MET150
 author: mansipatel-usl
 ms.author: mapatel
@@ -27,7 +27,7 @@ With Test Base, SVs are provided with more visibility into potential issues that
 
 This new service will help SVs make testing efforts simpler and more efficient. Enterprise customers will benefit from SV and Microsoft testing together in a collaborative environment and gain more confidence that their applications will work as expected. 
 
-### Advantages Test Base offers Eenterprises and their SV partners include: 
+### Advantages Test Base offers Enterprises and their SV partners include: 
  
   *	Faster rollout of security updates to secure your devices; 
  
