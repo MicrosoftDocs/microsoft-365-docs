@@ -32,6 +32,9 @@ Prior to this new capability, only the content of an email message protected by 
 
 Microsoft eDiscovery tools support items encrypted with Microsoft encryption technologies. These technologies are Azure Rights Management and Microsoft Information Protection (specifically sensitivity labels). For more information about Microsoft encryption technologies, see [Encryption](encryption.md). Content encrypted by third-party encryption technologies isn't supported. For example, previewing or exporting content encrypted with non-Microsoft technologies isn't supported.
 
+> [!NOTE]
+> Office 365 Message (OME) decryption is not supported by Microsoft eDiscovery tools.
+
 ## eDiscovery activities that support encrypted items
 
 The following table identifies the supported tasks that can be performed in Microsoft 365 eDiscovery tools on encrypted files attached to email messages and encrypted documents in SharePoint and OneDrive. These supported tasks can be performed on encrypted files that match the criteria of a search. A value of `N/A` indicates the functionality isn't available in the corresponding eDiscovery tool.
@@ -66,6 +69,3 @@ Documents encrypted with the previous settings can still be returned by an eDisc
 You have to be assigned the RMS Decrypt role to preview, review, and export files encrypted with Microsoft encryption technologies. You also have to be assigned this role to review and query encrypted files that are added to a review set in Advanced eDiscovery.
 
 This role is assigned by default to the eDiscovery Manager role group on the **Permissions** page in the Office 365 Security & Compliance Center. For more information about the RMS Decrypt role, see [Assign eDiscovery permissions](assign-ediscovery-permissions.md#rms-decrypt).
-
-> [!NOTE]
-> OME decryption is not supported by eDiscovery.
