@@ -115,13 +115,13 @@ For more information on preview features, see [Preview features](preview.md).
 
 - [Connected Azure AD applications](connected-applications.md)<br> The Connected applications page provides information about the Azure AD applications connected to Microsoft Defender for Endpoint in your organization.
 
-- [API Explorer](api-explorer.md)<br> The API explorer makes it easy to construct and perform API queries, test and send requests for any available Microsoft Defender for Endpoint API endpoint.
+- [API Explorer](api-explorer.md)<br> The API explorer makes it easy to construct and perform API queries, test, and send requests for any available Microsoft Defender for Endpoint API endpoint.
 
 ## September 2019
 
-- [Tamper Protection settings using Intune](prevent-changes-to-security-settings-with-tamper-protection.md) <br/> You can now turn Tamper Protection on (or off) for your organization in the Microsoft 365 Device Management Portal (Intune).
+- [Tamper Protection settings using Intune](prevent-changes-to-security-settings-with-tamper-protection.md) <br/> You can now turn on Tamper Protection (or off) for your organization in the Microsoft 365 Device Management Portal (Intune).
 
-- [Live response](live-response.md) <BR> Get instantaneous access to a device using a remote shell connection. Do in-depth investigative work and take immediate response actions to promptly contain identified threats - real-time.
+- [Live response](live-response.md) <BR> Get instantaneous access to a device using a remote shell connection. Do in-depth investigative work and take immediate response actions to promptly contain identified threats - real time.
 
 - [Evaluation lab](evaluation-lab.md) <BR> The Microsoft Defender for Endpoint evaluation lab is designed to eliminate the complexities of device and environment configuration so that you can
  focus on evaluating the capabilities of the platform, running simulations, and seeing the prevention, detection, and remediation features in action.
@@ -138,7 +138,7 @@ For more information on preview features, see [Preview features](preview.md).
 
 - [Threat protection reports](threat-protection-reports.md)<BR>The threat protection report provides high-level information about alerts generated in your organization.
 
-- [Microsoft Threat Experts](microsoft-threat-experts.md)<BR> Microsoft Threat Experts is the new managed threat hunting service in Microsoft Defender for Endpoint that provides proactive hunting, prioritization, and additional context and insights that further empower security operations centers (SOCs) to identify and respond to threats quickly and accurately. It provides additional layer of expertise and optics that Microsoft customers can utilize to augment security operation capabilities as part of Microsoft 365.
+- [Microsoft Threat Experts](microsoft-threat-experts.md)<BR> Microsoft Threat Experts is the new managed threat hunting service in Microsoft Defender for Endpoint that provides proactive hunting, prioritization, and more context and insights that further empower security operations centers (SOCs) to identify and respond to threats quickly and accurately. It provides another layer of expertise and optics that Microsoft customers can utilize to augment security operation capabilities as part of Microsoft 365.
 
 - [Indicators](ti-indicator.md) <BR> APIs for indicators are now generally available.
 
