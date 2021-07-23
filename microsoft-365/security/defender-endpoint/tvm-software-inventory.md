@@ -63,7 +63,7 @@ Software that isn't currently supported by threat & vulnerability management may
 
 ![Unsupported software filter.](images/tvm-unsupported-software-filter.png)
 
-The following indicates that a software is not supported:
+The following indicates that software is not supported:
 
 - Weaknesses field shows "Not available"
 - Exposed devices field shows a dash
@@ -78,7 +78,7 @@ From the Microsoft 365 Defender portal navigation panel, go to the **[Device inv
 
 Software may be visible at the device level even if it is currently not supported by threat and vulnerability management. However, only limited data will be available. You'll know if software is unsupported because it will say "Not available" in the "Weakness" column.
 
-Software with no CPE can also show up under this device specific software inventory.
+Software with no CPE can also show up under this device-specific software inventory.
 
 ### Software evidence
 
