@@ -86,11 +86,11 @@ Here's a short link you can use to come back: [https://aka.ms/o365ip6]()
 
 Enabling customers to experience Microsoft 365 SaaS services from any location and any device is a priority for Microsoft.  This includes allowing customers to connect and consume Microsoft 365 from IPv6 enabled and IPv6 only clients and information systems and enable government customers meet IPv6 commitments on their networks while continuing to consume Microsoft 365 productivity scenarios without any interruption.  
 
-IPv6 support in Office 365 services - Microsoft 365 Enterprise | Microsoft Docs provides the list of Microsoft 365 SaaS services that allow direct IPv6 connectivity today.  The scope of services allowing direct IPv6 connectivity is expected to continue to expand.   Microsoft 365 services not explicitly mentioned for direct IPv6 support, to include Azure Active Directory (AAD) Authentication services, should be deemed requiring DNS64/NAT64 to be connected to from IPv6 only clients and environments.  This is in alignment with the intent currently outlined in existing NIST USGv6 documentation: Transition Mechanism Capability Requirements in NIST Special Publication 500-267A Revision 1 NAT64/DNS64 are acceptable technologies to employ.
+IPv6 support in Office 365 services - Microsoft 365 Enterprise | Microsoft Docs provides the list of Microsoft 365 SaaS services that allow direct IPv6 connectivity today.  The scope of services allowing direct IPv6 connectivity is expected to continue to expand.   Microsoft 365 services not explicitly mentioned for direct IPv6 support, to include Azure Active Directory (AAD) Authentication services, should be deemed requiring DNS64/NAT64 to be connected to from IPv6 only clients and environments.  This is in alignment with the intent currently outlined in existing NIST USGv6 documentation: Transition Mechanism Capability Requirements in [NIST Special Publication 500-267A Revision 1](https://nvlpubs.nist.gov/nistpubs/specialpublications/NIST.SP.500-267Ar1.pdf) NAT64/DNS64 are acceptable technologies to employ.
 
-- NAT64 support for transition mechanism NAT64 RFC6146
+- NAT64 support for transition mechanism NAT64 [RFC6146](https://datatracker.ietf.org/doc/html/rfc6146)
 Stateful NAT64: Network Address and Protocol Translation from IPv6 Clients to IPv4 Servers
-- DNS64 support for transition mechanism DNS64. RFC6147 
+- DNS64 support for transition mechanism DNS64. [RFC6147](https://datatracker.ietf.org/doc/html/rfc6147)
 DNS64: DNS Extensions for Network Address Translation from IPv6 Clients to IPv4 Server
 
   
