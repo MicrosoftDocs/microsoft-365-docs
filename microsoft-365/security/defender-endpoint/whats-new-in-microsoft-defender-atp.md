@@ -43,7 +43,7 @@ For more information on preview features, see [Preview features](preview.md).
 
 ## July 2021
 
-- Microsoft Defender for Endpoint Plan 1 (preview) <br/>Defender for Endpoint Plan 1 is an endpoint protection solution that includes next-generation protection, attack surface reduction, centralized management and reporting, and APIs. Defender for Endpoint Plan 1 is a new offering for customers who want to try our endpoint protection capabilities, have Microsoft 365 E3, and do not yet have Microsoft 365 E5. To learn more, see [Microsoft Defender for Endpoint Plan 1 (preview)](defender-endpoint-plan-1.md).
+- [Microsoft Defender for Endpoint Plan 1 (preview)](defender-endpoint-plan-1.md) <br/>Defender for Endpoint Plan 1 (preview) is an endpoint protection solution that includes next-generation protection, attack surface reduction, centralized management and reporting, and APIs. This is a new offering for customers who want to try our endpoint protection capabilities, have Microsoft 365 E3, and do not yet have Microsoft 365 E5. To learn more, see [Microsoft Defender for Endpoint Plan 1 (preview)](defender-endpoint-plan-1.md). Existing [Defender for Endpoint](microsoft-defender-endpoint.md) capabilities will be known as Defender for Endpoint Plan 2. 
 
 ## June 2021
 
