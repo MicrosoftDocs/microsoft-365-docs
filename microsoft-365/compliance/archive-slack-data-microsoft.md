@@ -11,7 +11,7 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-description: "Learn how to set up and use a Slack eDiscovery dat connector to import and archive instant messaging data."
+description: "Learn how to set up and use a Slack eDiscovery data connector provided by Microsoft to import and archive instant messaging data."
 ---
 
 # Set up a connector to archive Slack eDiscovery data (preview)
