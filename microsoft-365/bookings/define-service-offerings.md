@@ -19,15 +19,19 @@ You can also add customized information and URLs to the email confirmation and r
 
 ## Create the service details
 
-1. Go to the [Manage services page](https://outlook.office.com/bookings/services) and select **Add a service**.
+1. In Microsoft 365, select the App launcher, and then select **Bookings**.
 
-2. **Service name**: enter the name of your service. This is the name that will appear in the drop-down menu on the Calendar page. This name will also appear when anyone manually adds an appointment on the Calendar page, and it will appear as a tile on the Self-service page.
+2. Go to **Settings** -> [Manage services page](https://outlook.office.com/bookings/settings/services) and select **Add new service**.
 
-3. **Description**: The description you enter is what will appear when a user clicks the information icon on the Self-service page.
+3. On the **Basic details** page, add your selections.
 
-4. **Default location**: This location is what will be displayed on confirmation and reminder emails for both staff and customers, and it will be displayed on the calendar event created for the booking.
+**Service name**: enter the name of your service. This is the name that will appear in the drop-down menu on the Calendar page. This name will also appear when anyone manually adds an appointment on the Calendar page, and it will appear as a tile on the Self-service page.
 
-5. **Add online meeting**: This setting enables or disables online meetings for each appointment, either via Teams or Skype, depending on which one you configure as the default client for the staff member.
+**Description**: The description you enter is what will appear when a user clicks the information icon on the Self-service page.
+
+**Default location**: This location is what will be displayed on confirmation and reminder emails for both staff and customers, and it will be displayed on the calendar event created for the booking.
+
+**Add online meeting**: This setting enables or disables online meetings for each appointment, either via Teams or Skype, depending on which one you configure as the default client for the staff member.
 
     - Enabled:
 
@@ -42,13 +46,21 @@ You can also add customized information and URLs to the email confirmation and r
     - Disabled:
         - Appointments will not contain a meeting option, and all of the meeting-related fields that appear when **Add online meeting** is enabled will not be shown.
 
-6. **Default duration**: This is how long all meetings will be booked for. The time is blocked beginning from the start time, which is selected during booking. The full appointment time will be blocked on the staff's calendars.
+**Duration**: This is how long all meetings will be booked for. The time is blocked beginning from the start time, which is selected during booking. The full appointment time will be blocked on the staff's calendars.
 
-7. **Buffer time your customer can’t book**: Enabling this setting allows for the addition of extra time to the staff’s calendar every time an appointment is booked.
+**Buffer time**: Enabling this setting allows for the addition of extra time to the staff’s calendar every time an appointment is booked.
 
     The time will be blocked on the staff’s calendar and impact free/busy information. This means if an appointment ends at 3:00 pm and 10 minutes of buffer time has been added to the end of the meeting, the staff’s calendar will show as busy and non-bookable until 3:10pm. This can be useful if your staff needs time before a meeting to prepare, such as a doctor reviewing a patient’s chart, or a financial advisor preparing relevant account information. It can also be useful after a meeting, such as when someone needs time to travel to another location.
 
-8. **Let the customer manage their booking**: This setting determines whether or notthe customer can modify or cancel their booking, provided it was booked through the Calendar tab on the Bookings Web app.
+**Price not set**  Select the price options that will display on the Self-Service page. If **Price not set** is selected, then no price or reference to cost or pricing will appear.
+
+**Notes** This field appears in the booking event for booked staff, as well as on the event that appears on the Calendar tab in the Bookings web app.
+
+**Maximum attendees per event** This setting allows you to create services that require the ability for multiple people to book the same appointment time and the same staff (such as a fitness class). The appointment time slot for the selected service, staff, and time will be available to book until the maximum number of attendees, specified by you, has been reached. Current appointment capacity and attendees can be viewed in the Calendar tab in the Bookings Web app.
+
+    :::image type="content" source="media/bookings-maximum-attendees.jpg" alt-text="Example of setting maximum attendees in Bookings":::
+
+**Let the customer manage their booking**: This setting determines whether or not the customer can modify or cancel their booking, provided it was booked through the Calendar tab on the Bookings Web app.
 
     - Enabled:
 
@@ -67,23 +79,15 @@ You can also add customized information and URLs to the email confirmation and r
 
         We recommend disabling this setting if you want to limit access to the Self-Service page. Additionally, we suggest adding text to your confirmation and reminder emails that tells your customers how to make changes to their booking through other means, such as by calling the office or emailing the help desk.
 
-9. **Maximum attendees per event** This setting allows you to create services that require the ability for multiple people to book the same appointment time and the same staff (such as a fitness class). The appointment time slot for the selected service, staff, and time will be available to book until the maximum number of attendees, specified by you, has been reached. Current appointment capacity and attendees can be viewed in the Calendar tab in the Bookings Web app.
+4. On the **Availability options** page, you can see the options you've selected from your **Booking page** for your scheduling policy and availability for your staff. For more information, see [Set your scheduling policies](set-scheduling-policies.md).
 
-    :::image type="content" source="media/bookings-maximum-attendees.jpg" alt-text="Example of setting maximum attendees in Bookings":::
+1. On the **Assign staff** page.
 
-10. **Default price**  This is the price that will display on the Self-Service page. If **Price not set** is selected, then no price or reference to cost or pricing will appear.
-
-11. **Notes** This field appears in the booking event for booked staff, as well as on the event that appears on the Calendar tab in the Bookings web app.
-
-12. **Custom Fields** This section allows questions to be added, or removed, if the customer needs to answer any in order to successfully book.
+1. **Custom fields** can be useful when collecting information that is needed every time the specific appointment is booked. Examples include insurance provider prior to a clinic visit, loan type for loan consultations, major of study for academic advising, or applicant ID for candidate interviews. These fields will appear on the Booking page when your customers book appointments with you and your staff.
 
     - Customer email, phone number, address, and notes are non-removable fields, but you can make them optional by deselecting **Required** beside each field.
 
-    - You can add a multiple choice or text-response question by selecting **Add a question**.
-
-        Custom fields can be useful when collecting information that is needed every time the specific appointment is booked. Examples include insurance provider prior to a clinic visit, loan type for loan consultations, major of study for academic advising, or applicant ID for candidate interviews.
-
-13. **Reminders and Confirmations** Both types of emails are sent out to customers, staff members, or both, at a specified time period before the appointment. Multiple messages can be created for each appointment, according to your preference.
+5. On the **Reminders and Confirmations** page, you can set up reminders and notifications you send. Both types of emails are sent out to customers, staff members, or both, at a specified time period before the appointment. Multiple messages can be created for each appointment, according to your preference.
 
     - The default confirmation and reminder emails include basic information about the appointment, such as the customer/client name, staff member's name, the service or appointment booked, and the time of the appointment. For online meetings, a link to join will also be included. The ability to manage the booking can also be included, if this setting is enabled (as described above in step 8).
 
