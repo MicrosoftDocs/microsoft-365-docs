@@ -26,7 +26,7 @@ Here are the preventative and mitigation steps to minimize the damage from a ran
 
 1. Prevent a ransomware attacker from obtaining financial leverage and executing the activities leading to the ransom demand. The assumption is that your organization has already been infiltrated and the attacker has escalated privileges and is waiting for the right time to ransom you. 
 
-2. Prevent an attacker who has infiltrated your tenant from escalating their privileges through the credentials of an admin or priority account. The assumption is that your organization has already been infiltrated but and the attacker has not yet escalated their privileges.
+2. Prevent an attacker who has infiltrated your tenant from escalating their privileges through the credentials of an admin or priority account. The assumption is that your organization has already been infiltrated but the attacker has not yet escalated their privileges.
 
 2. Prevent a ransomware attacker from accessing your tenant. The assumption is that your organization has NOT already been infiltrated.
 
