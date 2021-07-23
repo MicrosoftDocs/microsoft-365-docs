@@ -36,10 +36,9 @@ ms.technology: mde
 
 Defender for Endpoint supports non-persistent VDI session onboarding. 
 
-
 There might be associated challenges when onboarding VDIs. The following are typical challenges for this scenario:
 
-- Instant early onboarding of a short-lived sessions, which must be onboarded to Defender for Endpoint prior to the actual provisioning.
+- Instant early onboarding of a short-lived session, which must be onboarded to Defender for Endpoint prior to the actual provisioning.
 - The device name is typically reused for new sessions.
 
 VDI devices can appear in Defender for Endpoint portal as either:
@@ -71,9 +70,9 @@ The following steps will guide you through onboarding VDI devices and will highl
 
 2. Copy the files from the WindowsDefenderATPOnboardingPackage folder extracted from the .zip file into the `golden/master` image under the path `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup`. 
 
-    1. If you are not implementing a single entry for each device, copy WindowsDefenderATPOnboardingScript.cmd.
+    1. If you aren't implementing a single entry for each device, copy WindowsDefenderATPOnboardingScript.cmd.
 
-    1. If you are implementing a single entry for each device, copy both Onboard-NonPersistentMachine.ps1 and WindowsDefenderATPOnboardingScript.cmd.
+    1. If you're implementing a single entry for each device, copy both Onboard-NonPersistentMachine.ps1 and WindowsDefenderATPOnboardingScript.cmd.
     
     > [!NOTE]
     > If you don't see the `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` folder, it might be hidden. You'll need to choose the **Show hidden files and folders** option from File Explorer.
@@ -87,7 +86,7 @@ The following steps will guide you through onboarding VDI devices and will highl
 
   - For single entry for each device:
    
-     Select the **PowerShell Scripts** tab, then click **Add** (Windows Explorer will open directly in the path where you copied the onboarding script earlier). Navigate to onboarding PowerShell script `Onboard-NonPersistentMachine.ps1`. There is no need to specify the other file, as it will be triggered automatically.
+     Select the **PowerShell Scripts** tab, then click **Add** (Windows Explorer will open directly in the path where you copied the onboarding script earlier). Navigate to onboarding PowerShell script `Onboard-NonPersistentMachine.ps1`. There's no need to specify the other file, as it will be triggered automatically.
    
   - For multiple entries for each device:
    
@@ -97,21 +96,22 @@ The following steps will guide you through onboarding VDI devices and will highl
 
    1. Create a pool with one device.
       
-   1. Logon to device.
+   1. Log on to device.
       
-   1. Logoff from device.
+   1. Log off from device.
 
-   1. Logon to device with another user.
+   1. Log on to device with another user.
       
    1. Depending on the method you'd like to implement, follow the appropriate steps:
-   
-      - For single entry for each device: 
-    
-        Check only one entry in Microsoft 365 Defender.
 
-      - For multiple entries for each device: 
-       
-        Check multiple entries in Microsoft 365 Defender.
+          - For single entry for each device: 
+
+            Check only one entry in Microsoft 365 Defender portal.
+
+           - For multiple entries for each device: 
+
+            Check multiple entries in Microsoft 365 Defender portal.
+
 
 6. Click **Devices list** on the Navigation pane.
 
@@ -150,12 +150,12 @@ DISM /Image:"C:\Temp\OfflineServicing" /Add-Package /Packagepath:"C:\temp\patch\
 DISM /Unmount-Image /MountDir:"C:\Temp\OfflineServicing" /commit
 ```
 
-For more information on DISM commands and offline servicing, please refer to the articles below:
+For more information on DISM commands and offline servicing, refer to the articles below:
 - [Modify a Windows image using DISM](/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism)
 - [DISM Image Management Command-Line Options](/windows-hardware/manufacture/desktop/dism-image-management-command-line-options-s14)
 - [Reduce the Size of the Component Store in an Offline Windows Image](/windows-hardware/manufacture/desktop/reduce-the-size-of-the-component-store-in-an-offline-windows-image)
 
-If offline servicing is not a viable option for your non-persistent VDI environment, the following steps should be taken to ensure consistency and sensor health:
+If offline servicing isn't a viable option for your non-persistent VDI environment, the following steps should be taken to ensure consistency and sensor health:
 
 1. After booting the master image for online servicing or patching, run an offboarding script to turn off the Defender for Endpoint sensor. For more information, see [Offboard devices using a local script](configure-endpoints-script.md#offboard-devices-using-a-local-script).
 
@@ -177,7 +177,7 @@ If offline servicing is not a viable option for your non-persistent VDI environm
     exit
     ```
 
-5. Re-seal the golden/master image as you normally would.
+5. Reseal the golden/master image as you normally would.
 
 ## Related topics
 - [Onboard Windows 10 devices using Group Policy](configure-endpoints-gp.md)

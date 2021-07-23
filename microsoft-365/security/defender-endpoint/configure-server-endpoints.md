@@ -60,10 +60,10 @@ If you're already using System Center Operations Manager (SCOM) or Azure Monitor
 
 In general, you'll need to take the following steps:
 
-1. Fulfill the onboarding requirements outlined in **Before you begin** section.
-2. Turn on server monitoring from Microsoft 365 Defender.
-3. Install and configure MMA for the server to report sensor data to Defender for Endpoint.
-4. Configure and update System Center Endpoint Protection clients.
+  1. Fulfill the onboarding requirements outlined in **Before you begin** section.
+  2. Turn on server monitoring from Microsoft 365 Defender.
+  3. Install and configure MMA for the server to report sensor data to Defender for Endpoint.
+  4. Configure and update System Center Endpoint Protection clients.
 
 > [!TIP]
 > After onboarding the device, you can choose to run a detection test to verify that it is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Defender for Endpoint endpoint](run-detection-test.md).
@@ -116,7 +116,7 @@ Once completed, you should see onboarded Windows servers in the portal within an
 
 ### Option 2: Onboard Windows servers through Azure Security Center
 
-1. In the Microsoft 365 Defender navigation pane, select **Settings** > **Endpoints** > **Device management** > **Onboarding**.
+In the Microsoft 365 Defender navigation pane, select **Settings** > **Endpoints** > **Device management** > **Onboarding**.
 
 2. Select **Windows Server 2008 R2 SP1, 2012 R2 and 2016** as the operating system.
 
