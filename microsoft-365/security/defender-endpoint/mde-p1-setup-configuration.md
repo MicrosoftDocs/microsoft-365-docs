@@ -42,7 +42,7 @@ The following table lists the basic requirements for Defender for Endpoint Plan 
 |:---|:---|
 | Licensing requirements | Defender for Endpoint Plan 1 (preview) <p>*If you have Microsoft 365 E3, you can join the preview program.* |
 | Browser requirements | Microsoft Edge <br/> Internet Explorer version 11 <br/> Google Chrome |
-| Operating system | Windows 10, version 1709 or later <p> macOS <br/> macOS Big Sur 11.5 <br/> macOS Catalina 10.15.7 <br/> macOS Mojave	10.14.6 <p> iOS <p> Android OS  |
+| Operating system | Windows 10, version 1709 or later <p> macOS: <br/> Big Sur 11.5 <br/> Catalina 10.15.7 <br/> Mojave	10.14.6 <p> iOS <p> Android OS  |
 | Datacenter | One of the following datacenter locations: <br/>- European Union <br/>- United Kingdom <br/>- United States |
 
 > [!TIP]
