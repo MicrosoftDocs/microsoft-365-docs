@@ -46,13 +46,13 @@ In addition, for Puppet deployment, you need to be familiar with Puppet administ
 
 ## Download the onboarding package
 
-Download the onboarding package from Microsoft Defender Security Center:
+Download the onboarding package from Microsoft 365 Defender portal:
 
-1. In Microsoft Defender Security Center, go to **Settings > Device Management > Onboarding**.
+1. In Microsoft 365 Defender portal, go to **Settings > Endpoints > Device management > Onboarding**.
 2. In the first drop-down menu, select **Linux Server** as the operating system. In the second drop-down menu, select **Your preferred Linux configuration management tool** as the deployment method.
 3. Select **Download onboarding package**. Save the file as WindowsDefenderATPOnboardingPackage.zip.
 
-    ![Microsoft Defender Security Center screenshot](images/atp-portal-onboarding-linux-2.png)
+    ![Microsoft 365 Defender portal screenshot](images/portal-onboarding-linux-2.png)
 
 4. From a command prompt, verify that you have the file. 
 
