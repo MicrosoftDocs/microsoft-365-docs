@@ -31,7 +31,7 @@ ms.technology: m365d
 
 This article is [Step 3 of 3](eval-defender-mcas-overview.md) in the process of setting up the evaluation environment for Microsoft Cloud App Security. For more information about this process, see the [overview article](eval-defender-mcas-overview.md).
 
-Use the following steps to setup and configure the pilot for Microsoft Cloud App Security.
+Use the following steps to set up and configure the pilot for Microsoft Cloud App Security.
 
 
 ![Steps for piloting Microsoft Cloud App Security](../../media/defender/m365-defender-mcas-pilot-steps.png)
