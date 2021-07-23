@@ -28,7 +28,8 @@ description: Learn how to buy Windows 365 Business for your organization, and he
 
 This article is for people who plan to buy and set up Windows 365 Business for their organization. 
   
-Windows 365 Business is a version of Windows 365 that is made specifically for use in smaller companies (up to 300 seats). It gives organizations an easy, streamlined way of providing Cloud PCs to their users.  With Windows 365 Cloud PCs, you can stream your apps, data, content, settings, and storage from the Microsoft cloud. 
+[Windows 365 Business](https://www.microsoft.com/windows-365/business) is a version of Windows 365 that is made specifically for use in smaller companies (up to 300 seats). It gives organizations an easy, streamlined way of providing Cloud PCs to their users.  With Windows 365 Cloud PCs, you can stream your apps, data, content, settings, and storage from the Microsoft cloud. 
+
 
 
 ## Prerequisites
@@ -38,18 +39,15 @@ There are no perquisites to set up Windows 365 Business.
 ## Buy subscriptions
 
 You can buy Windows 365 Business subscriptions for your users through two ways:
-- The [Windows 365 products site](https://www.microsoft.com/microsoft-365) site
+- The [Windows 365 products site](https://www.microsoft.com/windows-365/business/compare-plans-pricing)
 - Microsoft 365 admin center
 
 After you buy a subscription, you can use the Microsoft 365 admin center to assign licenses to users in your organization. 
 
-> [!NOTE]  
->  Users in your organization can also buy licenses and assign them to either themselves or other users by visiting windows365.microsoft.com. Learn more about [self-service purchase](/microsoft-365/commerce/subscriptions/self-service-purchase-faq).    
-
 
 ### Buy subscriptions through the Windows 365 products site
 
-If you don't already have Microsoft 365 subscription, you can buy your Windows 365 Business subscriptions on the Microsoft products site. Use the following steps to buy a Windows 365 Business subscription through the Windows 365 products page.   
+If you don't already have Microsoft 365 subscription, you can buy your Windows 365 Business subscriptions on the [Windows 365 products site](https://www.microsoft.com/windows-365/business/compare-plans-pricing). Use the following steps to buy a Windows 365 Business subscription through the Windows 365 products page.   
 
 
 1. On the Windows 365 Business page, select **See plans and pricing**. 
@@ -66,7 +64,7 @@ If you already have a Microsoft 365 tenant and are a Global or Billing admin, yo
 
 1. In the Microsoft admin center, go to the **Billing > Purchase services** page.
 2. On the **Purchase services** page, search for **Windows 365 Business**. When you find it, select **Details**.
-3. On the **Windows 365 Business** page, in the **Processor/Ram/Storage Options** section, use the **Select a subscription** menu to select a subscription for your users based on their CPU, RAM, and storage needs.
+3. On the **Windows 365 Business** page, in the **Processor/Ram/Storage Options** section, use the **Select a subscription** menu to select a subscription for your users based on their CPU, RAM, and storage needs. See [Windows 365 Business sizing options](windows-365-business-sizing.md) for guidance on selecting the subscription that best fits your users needs.
 4. On the **Checkout** page, enter the number of subscriptions you want to buy, as well and your payment information. Then select **Place Order**.
 5. The **You're all set!** page will appear confirming your purchase.
 
@@ -75,7 +73,7 @@ If you already have a Microsoft 365 tenant and are a Global or Billing admin, yo
 
 Whether you purchased your subscriptions through the Windows 365 products site, or through the Microsoft 365 admin center, you can [assign licenses to users](/microsoft-365/admin/manage/assign-licenses-to-users) through the **Billing** page in the Microsoft 365 admin center.
 
-You can assign different Windows 365 Business license types to a user, based on the users business need. See [Microsoft 365 Business sizing](Microsoft 365-sizing.md) for guidance on which license type might be suitable for your users. 
+You can assign different Windows 365 Business license types to a user, based on the users business need. See [Windows 365 Business sizing options](windows-365-business-sizing.md)  for guidance on which license type might be suitable for your users. 
 
 
 ## Get your users started with Cloud PC
@@ -105,15 +103,15 @@ While on the Cloud PC home page, users can perform actions on their Cloud PCs by
    ![Card menu](../../media/deschutes/cloudpc-gear.png) </br>
 
 - **Restart**: Restarts the Cloud PC.
-- **Rename**: Changes the name of the Cloud PC shown to the user on Microsoft 365.com. This action won’t affect any name in MEM, AAD, on the device, or in the Remote Desktop Apps. 
+- **Rename**: Changes the name of the Cloud PC shown to the user on Microsoft 365.com. 
 - **Reset**:  Reset does the following:
     - Reinstalls Windows 10.
     - Removes your personal files.
     - Removes any changes you made to settings.
     - Removes your apps.
-    > [!NOTE]  
-    > To keep any files, make sure they are backed up to a cloud storage service such as OneDrive or saved locally on an another device or external storage. 
-- **Troubleshoot**: Troubleshoot and attempt to fix any issues that may be keeping a user from connecting to their Cloud PC. The checks run include checking whether any files or agents required for connectivity are correctly installed and ensuring that the Azure resources are available. The following table describes the return states that can result from the checks.
+    > [Important]  
+    > Before resetting your Cloud PC, make sure to back up any important files you need to keep to a cloud storage service or external storage. Resetting your Cloud PC will delete these files. 
+- **Troubleshoot**: Troubleshoot and attempt to fix any issues that may be keeping a user from connecting to their Cloud PC. The following table describes the return states that can result from the checks.
 
 </br>  
 
@@ -123,7 +121,7 @@ While on the Cloud PC home page, users can perform actions on their Cloud PCs by
 |No issues detected  <br/> |None of the checks ran discovered an issue with the Cloud PC.  <br/> |
 |Issues resolved  <br/> |An issue was detected and fixed.  <br/> |
 |Can’t connect to Cloud PC. We’re working to fix it, try again later.  <br/> |A Microsoft service required for connectivity is unavailable. Try connecting again later.   <br/> |
-|We couldn’t fix issues with your Cloud PC. Contact your administrator. <br/> |An issue was detected but it was unable to be fixed. This could be due to a ongoing Windows update or another issue. If this error persists for an extended period of time the Cloud PC may need to be reprovisioned.  <br/> |
+|We couldn’t fix issues with your Cloud PC. Contact your administrator. <br/> |An issue was detected but it was unable to be fixed. This could be due to a ongoing Windows update or another issue. If this error persists for an extended period of time the Cloud PC may need to be reset.  <br/> |
 
 </br>
 
@@ -159,3 +157,6 @@ Windows 365 Business does not enroll Cloud PCs to [Intune](/mem/intune/fundament
 
 If you need to get help while setting up Windows 365 Business in the Microsoft 365 admin center, see [Get help or support](/microsoft-365/business-video/get-help-support).
 
+## Related content
+
+[Windows 365 Business sizing options](windows-365-business-sizing.md) 

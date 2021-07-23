@@ -1,5 +1,5 @@
 ---
-title: "Deschutes Business sizing options"
+title: "Windows 365 Business sizing options"
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -21,20 +21,20 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 
-description: Learn about recommended cloud pc sizing options for your Deschutes Business users.
+description: Learn about recommended cloud pc sizing options for your Windows 365 Business users.
 ---
 
-# Deschutes Business sizing options
+# Windows 365 Business sizing options
 
-Deschutes Business offers fixed-price licensing (through Microsoft 365) for different cloud PC sizes. When you assign a license to a user, you need to select one of several options. Each has a different number of CPUs, RAM, and storage. You should assess your business requirements to determine which sizes make sense for your users. 
+Windows 365 Business offers fixed-price licensing (through Microsoft 365) for different Cloud PC sizes. When you assign a license to a user, you need to select one of several size options. Each has a different number of CPUs, RAM, and storage, and is intended to support different usage scenarios. You should assess your business requirements to determine which sizes make sense for your users. 
 
-This table shows examples of the different sizes available for a cloud PC.
+This table shows examples of the different sizes available for a Cloud PC.
 
 > [!NOTE]  
-> Deschutes Business automatically uses the right images per SKU, meaning that Microsoft 365 Apps and Teams are pre-installed where its supported and where its not.   
+> If Microsoft 365 Apps and Microsoft Teams are included in the **Supported apps** column, they are pre-installed for those Cloud PC options. 
 
 
-|CPUs, RAM, and storage|Example scenarios|Recommended apps|
+|CPUs, RAM, and storage|Example scenarios|Supported apps|
 |:-------------------------------------------------------------------------------|:----------------------------------|:----------------------------------|
 |1vCPU/2GB/64GB |First-line workers, call centers, education/training/CRM access.|Office light (web-based), Microsoft Edge, OneDrive, lightweight line-of-business app (call center application – web-apps), Defender support. |
 |2vCPU/4GB/256GB</br> 2vCPU/4GB/128GB</br> 2vCPU/4GB/64GB |Mergers and acquisition, short-term and seasonal, customer services |Microsoft 365 Apps, Microsoft Teams light (Chat and Audio only), OneDrive, Adobe Reader, Edge, line-of-business apps, Defender support.  |
