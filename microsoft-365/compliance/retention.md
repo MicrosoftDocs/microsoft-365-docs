@@ -348,7 +348,9 @@ Explanation for the four different principles:
 
 Items subject to eDiscovery hold also fall under the first principle of retention; they cannot be permanently deleted by any retention policy or retention label. When that hold is released, the principles of retention continue to apply to them. For example, they could then be subject to an unexpired retention period or a delete action.
 
-More complex examples that combine retain and delete actions, with the default setting of starting the retention period when the item is created:
+### Principles of retention examples that combine retain and delete actions
+
+The following examples are more complex to illustrate the principles of retention when retain and delete actions are combined. To make the examples easier to follow, they use the default setting of starting the retention period when the item is created.
 
 1. An item has the following retention settings applied to it:
     
