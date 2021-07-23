@@ -20,11 +20,11 @@ description: "Learn about visibility and insights."
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
-With Microsoft app governance, you can quickly gain visibility and meaningful insights on your Microsoft 365 application ecosystem. You start from the app governance dashboard that provides a high-level summary of the alerts and apps in your tenant that require administrator attention.
+With Microsoft app governance, you can quickly gain visibility and meaningful insights on your Microsoft 365 application ecosystem. You start from the app governance dashboard that provides a high-level overview of the alerts and apps in your tenant that require administrator attention.
 
 With app governance visibility and insights, you can see:
 
-- A list of the OAuth-enabled apps that access Microsoft 365 data via Microsoft Graph APIs.
+- A list of the OAuth-enabled apps that access Microsoft 365 data via Microsoft Graph APIs in your tenant.
 - A rich view on app activities so that you can react or respond to them.
 
 >[!Note]
@@ -32,21 +32,6 @@ With app governance visibility and insights, you can see:
 >
 
 See [administrator roles](app-governance-get-started.md#administrator-roles) for an overview of required administrator roles for visibility and insights.
-
-<!--
-From messaging doc, page 21:
-
-View M365 App List & Metadata
-View M365 App List of Consented Users
-View M365 App Permissions
-View M365 App Permission Usage
-View Over permissioned Apps
-Aggregate M365 API Usage Data by Workload (count, download/upload)
-Per-App M365 API Usage Data by Workload (count, download/upload)
-Per-User M365 API Usage Data by Workload (count, download/upload)
-M365 API Usage Data For High-Value/Classified Assets (count, download/upload)
-M365 API Error Analysis per App
--->
 
 With app governance, you can see:
 
@@ -66,7 +51,7 @@ With app governance, you can see:
 - A cumulative view of users accessing apps.
 - Alerts insights.
 - Policy list insights.
-<!-->
+<!--
 - Policies created in MCAS in the app governance portal.
 -->
 - Alerts for OAuth apps generated in MCAS, in the app governance portal.

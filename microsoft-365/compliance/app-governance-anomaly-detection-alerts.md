@@ -22,9 +22,9 @@ description: "Investigate anomaly detection alerts."
 
 ## MITRE ATT&CK
 
-To make it easier to map the relationship between Microsoft app governance alerts and the familiar MITRE ATT&CK Matrix, we've categorized the alerts by their corresponding MITRE ATT&CK tactic. This additional reference makes it easier to understand the suspected attacks technique potentially in use when Microsoft Application Security and Governance alert is triggered.
+To make it easier to map the relationship between Microsoft app governance alerts and the familiar MITRE ATT&CK Matrix, we've categorized the alerts by their corresponding MITRE ATT&CK tactic. This additional reference makes it easier to understand the suspected attacks technique potentially in use when app governance alert is triggered.
 
-This guide provides information about investigating and remediating Microsoft app governance alerts in the following categories.
+This guide provides information about investigating and remediating app governance alerts in the following categories.
 
 - Initial Access
 - Execution
@@ -36,6 +36,7 @@ This guide provides information about investigating and remediating Microsoft ap
 - Exfiltration
 - Impact
 
+<!-->
 ## Security alert classifications
 
 Following proper investigation, all Microsoft app governance alerts can be classified as one of the following activity types:
@@ -43,6 +44,7 @@ Following proper investigation, all Microsoft app governance alerts can be class
 - True positive (TP): An alert on a confirmed malicious activity.
 - Benign true positive (B-TP): An alert on suspicious but not malicious activity, such as a penetration test or other authorized suspicious action.
 - False positive (FP): An alert on a non-malicious activity.
+-->
 
 ## General investigation steps
 

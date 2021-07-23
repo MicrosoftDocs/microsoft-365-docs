@@ -33,7 +33,7 @@ Depending on the Microsoft security products that you use, some advanced feature
 
 ## Enable advanced features
 
-1. In the navigation pane, select **Preferences setup** > **Advanced features**.
+1. In the navigation pane, select **Settings** >  **Endpoints** > **Advanced features**.
 2. Select the advanced feature you want to configure and toggle the setting between **On** and **Off**.
 3. Click **Save preferences**.
 
@@ -60,13 +60,13 @@ For more information about role assignments, see [Create and manage roles](user-
 Enabling this feature allows you to run unsigned scripts in a live response session.
 
 ## Always remediate PUA
-Potentially unwanted applications (PUA) are a category of software that can cause your machine to run slowly, display unexpected ads, or at worst, install other software which might be unexpected or unwanted. 
+Potentially unwanted applications (PUA) are a category of software that can cause your machine to run slowly, display unexpected ads, or at worst, install other software, which might be unexpected or unwanted. 
 
 Turn on this feature so that potentially unwanted applications (PUA) are remediated on all devices in your tenant even if PUA protection is not configured on the devices. This will help protect users from inadvertently installing unwanted applications on their device. When turned off, remediation is dependent on the device configuration. 
 
 
 ## Restrict correlation to within scoped device groups
-This configuration can be used for scenarios where local SOC operations would like to limit alert correlations only to device groups that they can access. By turning this setting on, an incident composed of alerts that cross device groups will no longer be considered a single incident. The local SOC can then take action on the incident because they have access to one of the device groups involved. However, global SOC will see several different incidents by device group instead of one incident. We do not recommend turning this setting on unless doing so outweighs the benefits of incident correlation across the entire organization
+This configuration can be used for scenarios where local SOC operations would like to limit alert correlations only to device groups that they can access. By turning on this setting, an incident composed of alerts that cross device groups will no longer be considered a single incident. The local SOC can then take action on the incident because they have access to one of the device groups involved. However, global SOC will see several different incidents by device group instead of one incident. We don't recommend turning on this setting unless doing so outweighs the benefits of incident correlation across the entire organization
 >[!NOTE]
 >Changing this setting impacts future alert correlations only.
 
@@ -76,10 +76,10 @@ Endpoint detection and response (EDR) in block mode provides protection from mal
 
 ## Autoresolve remediated alerts
 
-For tenants created on or after Windows 10, version 1809, the automated investigation and remediation capability is configured by default to resolve alerts where the automated analysis result status is "No threats found" or "Remediated".  If you don't want to have alerts auto-resolved, you'll need to manually turn off the feature.
+For tenants created on or after Windows 10, version 1809, the automated investigation, and remediation capability is configured by default to resolve alerts where the automated analysis result status is "No threats found" or "Remediated".  If you don't want to have alerts auto-resolved, you'll need to manually turn off the feature.
 
 > [!TIP]
-> For tenants created prior to that version, you'll need to manually turn this feature on from the [Advanced features](https://securitycenter.windows.com/preferences2/integration) page.
+> For tenants created prior to that version, you'll need to manually turn this feature on from the [Advanced features](https://security.microsoft.com//preferences2/integration) page.
 
 > [!NOTE]
 >
@@ -100,8 +100,8 @@ To turn **Allow or block** files on:
 1. In the navigation pane, select **Settings** > **Endpoints** > **General** > **Advanced features** > **Allow or block file**.
 
 1. Toggle the setting between **On** and **Off**.
-
-    ![Image of advanced settings for block file feature](images/atp-preferences-setup.png)
+ 
+    :::image type="content" source="../../media/alloworblockfile.png" alt-text="Image of advanced settings for block file feature":::
 
 1. Select **Save preferences** at the bottom of the page.
 
@@ -109,14 +109,14 @@ After turning on this feature, you can [block files](respond-file-alerts.md#allo
 
 ## Custom network indicators
 
-Turning on this feature allows you to create indicators for IP addresses, domains, or URLs, which determine whether they will be allowed or blocked based on your custom indicator list.
+Turning on this feature allows you to create indicators for IP addresses, domains, or URLs, which determine whether they'll be allowed or blocked based on your custom indicator list.
 
 To use this feature, devices must be running Windows 10 version 1709 or later. They should also have network protection in block mode and version 4.18.1906.3 or later of the antimalware platform [see KB 4052623](https://go.microsoft.com/fwlink/?linkid=2099834).
 
 For more information, see [Manage indicators](manage-indicators.md).
 
 > [!NOTE]
-> Network protection leverages reputation services that process requests in locations that might be outside of the location you have selected for your Defender for Endpoint data.
+> Network protection leverages reputation services that process requests in locations that might be outside of the location you've selected for your Defender for Endpoint data.
 
 ## Tamper protection
 During some kinds of cyber attacks, bad actors try to disable security features, such as anti-virus protection, on your machines. Bad actors like to disable your security features to get easier access to your data, to install malware, or to otherwise exploit your data, identity, and devices.
@@ -148,16 +148,16 @@ Enabling the Skype for Business integration gives you the ability to communicate
 
 ## Microsoft Defender for Identity integration
 
-The integration with Microsoft Defender for Identity allows you to pivot directly into another Microsoft Identity security product. Microsoft Defender for Identity augments an investigation with additional insights about a suspected compromised account and related resources. By enabling this feature, you'll enrich the device-based investigation capability by pivoting across the network from an identify point of view.
+The integration with Microsoft Defender for Identity allows you to pivot directly into another Microsoft Identity security product. Microsoft Defender for Identity augments an investigation with more insights about a suspected compromised account and related resources. By enabling this feature, you'll enrich the device-based investigation capability by pivoting across the network from an identify point of view.
 
 > [!NOTE]
 > You'll need to have the appropriate license to enable this feature.
 
 ## Office 365 Threat Intelligence connection
 
-This feature is only available if you have an active Office 365 E5 or the Threat Intelligence add-on. For more information, see the Office 365 Enterprise E5 product page.
+This feature is only available if you've an active Office 365 E5 or the Threat Intelligence add-on. For more information, see the Office 365 Enterprise E5 product page.
 
-When you turn this feature on, you'll be able to incorporate data from Microsoft Defender for Office 365 into Microsoft 365 Defender to conduct a comprehensive security investigation across Office 365 mailboxes and Windows devices.
+When you turn on this feature, you'll be able to incorporate data from Microsoft Defender for Office 365 into Microsoft 365 Defender to conduct a comprehensive security investigation across Office 365 mailboxes and Windows devices.
 
 > [!NOTE]
 > You'll need to have the appropriate license to enable this feature.
@@ -166,7 +166,7 @@ To receive contextual device integration in Office 365 Threat Intelligence, you'
 
 ## Microsoft Threat Experts - Targeted Attack Notifications
 
-Out of the two Microsoft Threat Expert components, targeted attack notification is in general availability. Experts-on-demand capability is still in preview. You can only use the experts-on-demand capability if you have applied for preview and your application has been approved. You can receive targeted attack notifications from Microsoft Threat Experts through your Defender for Endpoint portal's alerts dashboard and via email if you configure it.
+Out of the two Microsoft Threat Expert components, targeted attack notification is in general availability. Experts-on-demand capability is still in preview. You can only use the experts-on-demand capability if you've applied for preview and your application has been approved. You can receive targeted attack notifications from Microsoft Threat Experts through your Defender for Endpoint portal's alerts dashboard and via email if you configure it.
 
 > [!NOTE]
 > The Microsoft Threat Experts capability in Defender for Endpoint is available with an E5 license for [Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security).
@@ -195,7 +195,7 @@ To receive contextual device integration in Microsoft Defender for Identity, you
 After completing the integration steps on both portals, you'll be able to see relevant alerts in the device details or user details page.
 
 ## Web content filtering
-Block access to websites containing unwanted content and track web activity across all domains. To specify the web content categories you want to block, create a [web content filtering policy](https://security.microsoft.com/preferences2/web_content_filtering_policy). Ensure you have network protection in block mode when deploying the [Microsoft Defender for Endpoint security baseline](https://devicemanagement.microsoft.com/#blade/Microsoft_Intune_Workflows/SecurityBaselineSummaryMenu/overview/templateType/2).
+Block access to websites containing unwanted content and track web activity across all domains. To specify the web content categories you want to block, create a [web content filtering policy](https://security.microsoft.com/preferences2/web_content_filtering_policy). Ensure you've network protection in block mode when deploying the [Microsoft Defender for Endpoint security baseline](https://devicemanagement.microsoft.com/#blade/Microsoft_Intune_Workflows/SecurityBaselineSummaryMenu/overview/templateType/2).
 
 
 ## Share endpoint alerts with Microsoft Compliance Center
@@ -212,7 +212,7 @@ Defender for Endpoint can be integrated with [Microsoft Intune](/intune/what-is-
 > [!IMPORTANT]
 > You'll need to enable the integration on both Intune and Defender for Endpoint to use this feature. For more information on specific steps, see [Configure Conditional Access in Defender for Endpoint](configure-conditional-access.md).
 
-This feature is only available if you have the following:
+This feature is only available if you've the following:
 
 - A licensed tenant for Enterprise Mobility + Security E3, and Windows E5 (or Microsoft 365 Enterprise E5)
 - An active Microsoft Intune environment, with Intune-managed Windows 10 devices [Azure AD-joined](/azure/active-directory/devices/concept-azure-ad-join/).
@@ -220,13 +220,13 @@ This feature is only available if you have the following:
 
 ### Conditional Access policy
 
-When you enable Intune integration, Intune will automatically create a classic Conditional Access (CA) policy. This classic CA policy is a prerequisite for setting up status reports to Intune. It should not be deleted.
+When you enable Intune integration, Intune will automatically create a classic Conditional Access (CA) policy. This classic CA policy is a prerequisite for setting up status reports to Intune. It shouldn't be deleted.
 
 > [!NOTE]
 > The classic CA policy created by Intune is distinct from modern [Conditional Access policies](/azure/active-directory/conditional-access/overview/), which are used for configuring endpoints.
 
-
 ## Device discovery
+
 Helps you find unmanaged devices connected to your corporate network without the need for extra appliances or cumbersome process changes. Using onboarded devices, you can find unmanaged devices in your network and assess vulnerabilities and risks. For more information, see [Device discovery](device-discovery.md).
 
 > [!NOTE]
@@ -238,12 +238,9 @@ Learn about new features in the Defender for Endpoint preview release. Try upcom
 
 You'll have access to upcoming features, which you can provide feedback on to help improve the overall experience before features are generally available.
 
-
-
-
 ## Download quarantined files
 
-You can turn on a setting to backup quarantined files in a secure and compliant location so they can be downloaded directly from quarantine. Once this setting is enabled, the **Download file** button will always be available. [Learn more about requirements](respond-file-alerts.md#download-quarantined-files)
+Backup quarantined files in a secure and compliant location so they can be downloaded directly from quarantine. The **Download file** button will always be available in the file page. This setting is turned on by default. [Learn more about requirements](respond-file-alerts.md#download-quarantined-files)
 
 ## Related topics
 

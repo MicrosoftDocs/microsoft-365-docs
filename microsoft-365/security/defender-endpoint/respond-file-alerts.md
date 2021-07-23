@@ -207,7 +207,7 @@ You can also edit indicators from  the **Settings** page, under **Rules** > **In
 
 ## Consult a threat expert
 
-Consult a Microsoft threat expert for more insights on a potentially compromised device, or already compromised devices. Microsoft Threat Experts are engaged directly from within the Microsoft Defender Security Center for timely and accurate response. Experts provide insights on a potentially compromised device and help you understand complex threats and targeted attack notifications. They can also provide information about the alerts or a threat intelligence context that you see on your portal dashboard.
+Consult a Microsoft threat expert for more insights on a potentially compromised device, or already compromised devices. Microsoft Threat Experts are engaged directly from within the Microsoft 365 Defender portal for timely and accurate response. Experts provide insights on a potentially compromised device and help you understand complex threats and targeted attack notifications. They can also provide information about the alerts or a threat intelligence context that you see on your portal dashboard.
 
 See [Consult a Microsoft Threat Expert](/microsoft-365/security/defender-endpoint/configure-microsoft-threat-experts#consult-a-microsoft-threat-expert-about-suspicious-cybersecurity-activities-in-your-organization) for details.
 

@@ -89,7 +89,9 @@ You'll need to enable, at least, the minimum Remediation Level for a given Devic
     Only users who have been provisioned with the appropriate permissions can initiate a session. For more information on role assignments, see [Create and manage roles](user-roles.md). 
 
     > [!IMPORTANT]
-    > The option to upload a file to the library is only available to those with the appropriate RBAC permissions. The button is greyed out for users with only delegated permissions.
+    > The option to upload a file to the library is only available to users with with "Manage Security Settings" permission.
+    >  The button is greyed out for users with only delegated permissions.
+    
 
     Depending on the role that's been granted to you, you can run basic or advanced live response commands. Users permissions are controlled by RBAC custom role. 
 
@@ -109,9 +111,9 @@ The dashboard also gives you access to:
 
 ## Initiate a live response session on a device 
 
-1. Sign in to Microsoft Defender Security Center.
+1. Sign in to Microsoft 365 Defender portal.
 
-2. Navigate to the devices list page and select a device to investigate. The devices page opens.
+2. Navigate to **Endpoints > Device inventory** and select a device to investigate. The devices page opens.
 
 3. Launch the live response session by selecting **Initiate live response session**. A command console is displayed. Wait while the session connects to the device.
 
