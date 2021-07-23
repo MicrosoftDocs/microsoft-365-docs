@@ -99,13 +99,9 @@ The Intune Administrator role doesn't have sufficient permissions for this check
 
 Intune Device Compliance policies in your Azure AD organization might impact Microsoft Managed Desktop devices.
 
-**Not ready**
-
-You have at least one compliance policy that targets all users. Microsoft Managed Desktop includes compliance policies that will target your Microsoft Managed Desktop devices.  Change the policy to target a specific Azure AD group that does not include any Microsoft Managed Desktop users or devices. For steps, see [Create a compliance policy in Microsoft Intune](/mem/intune/protect/create-compliance-policy).
-
 **Advisory**
 
-Make sure that any compliance policies you have don't target any Microsoft Managed Desktop users. For steps, see [Create a compliance policy in Microsoft Intune](/mem/intune/protect/create-compliance-policy).
+You have at least one compliance policy that targets all users. Please note, Microsoft Managed Desktop also includes compliance policies that will target your Microsoft Managed Desktop devices. Review all of the compliance policies created by your organization that are targeting the Microsoft Managed Desktop devices to ensure there are no conflicts. For steps, see [Create a compliance policy in Microsoft Intune](/mem/intune/protect/create-compliance-policy).
 
 
 
