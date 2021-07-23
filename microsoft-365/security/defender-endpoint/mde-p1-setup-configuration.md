@@ -85,7 +85,7 @@ We recommend using [Microsoft Endpoint Manager](/mem) to manage your organizatio
  
 :::image type="content" source="../../media/mde-p1/endpoint-security-policies.png" alt-text="Microsoft Endpoint Manager endpoint security policies":::
 
-
+Go to Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and sign in.
 
 ## Review and edit your next-generation protection settings
 
