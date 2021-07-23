@@ -76,6 +76,8 @@ Try out Cloud App Security tutorials:
 - [Protect your files with admin quarantine](/cloud-app-security/use-case-admin-quarantine)
 - [Require step-up authentication upon risky action](/cloud-app-security/tutorial-step-up-authentication)
 
+For more information on advanced hunting in Microsoft Cloud App Security data, see the [video](https://www.microsoft.com/en-us/videoplayer/embed/RWFISa).
+
 ## Next steps
 
 [Investigate and respond using Microsoft 365 Defender in a pilot environment](eval-defender-investigate-respond.md)

@@ -41,7 +41,7 @@ Advanced hunting is a query-based threat-hunting tool that lets you explore up t
 
 You can use the same threat-hunting queries to build custom detection rules. These rules run automatically to check for and then respond to suspected breach activity, misconfigured machines, and other findings.
 
-This capability is similar to [advanced hunting in Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview). Available in Microsoft 365 security center, this capability supports queries that check a broader data set from:
+This capability is similar to [advanced hunting in Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview). Available in Microsoft 365 Defender, this capability supports queries that check a broader data set from:
 
 - Microsoft Defender for Endpoint
 - Microsoft Defender for Office 365
@@ -49,6 +49,8 @@ This capability is similar to [advanced hunting in Microsoft Defender for Endpoi
 - Microsoft Defender for Identity
 
 To use advanced hunting, [turn on Microsoft 365 Defender](m365d-enable.md).
+
+For more information on advanced hunting in Microsoft Cloud App Security data, see the [video](https://www.microsoft.com/en-us/videoplayer/embed/RWFISa). 
 
 ## Get started with advanced hunting
 
