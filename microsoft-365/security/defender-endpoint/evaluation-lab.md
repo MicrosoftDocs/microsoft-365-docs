@@ -145,7 +145,7 @@ Automated investigation settings will be dependent on tenant settings. It will b
     >[!NOTE]
     >The password is only displayed once. Be sure to save it for later use.
 
-    :::image type="content" source="../../media/add-machine-eval-labnew.png" alt-text="Image of device added with connection details":::
+    :::image type="content" source="../../media/add-machine-eval-lab-new.png" alt-text="Image of device added with connection details":::
 
 4. Device set up begins. This can take up to approximately 30 minutes. 
 
