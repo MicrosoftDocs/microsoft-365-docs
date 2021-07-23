@@ -28,15 +28,15 @@ ms.technology: mde
 
 >Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
 
-Web protection lets you monitor your organization’s web browsing security through reports under **Reports > Web protection** in the Microsoft Defender Security Center. The report contains cards that provide web threat detection statistics.
+Web protection lets you monitor your organization’s web browsing security through reports under **Reports > Web protection** in the Microsoft 365 Defender portal. The report contains cards that provide web threat detection statistics.
 
 - **Web threat protection detections over time** - this trending card displays the number of web threats detected by type during the selected time period (Last 30 days, Last 3 months, Last 6 months)
  
-    ![Image of the card showing web threats protection detections over time](images/wtp-blocks-over-time.png)
+  :::image type="content" alt-text="Image of the card showing web threats protection detections over time" source="images/wtp-blocks-over-time.png" lightbox="images/wtp-blocks-over-time.png":::
 
 - **Web threat protection summary** - this card displays the total web threat detections in the past 30 days, showing distribution across the different types of web threats. Selecting a slice opens the list of the domains that were found with malicious or unwanted websites.
 
-    ![Image of the card showing web threats protection summary](images/wtp-summary.png)
+  :::image type="content" alt-text="Image of the card showing web threats protection summary" source="images/wtp-summary.png" lightbox="images/wtp-summary.png":::
 
 >[!Note]
 >It can take up to 12 hours before a block is reflected in the cards or the domain list.

@@ -65,6 +65,7 @@ Take the following steps to enable Conditional Access:
 
 
 ### Step 1: Turn on the Microsoft Intune connection
+
 1. In the navigation pane, select **Settings** > **Endpoints** > **General** > **Advanced features** > **Microsoft Intune connection**.
 2. Toggle the Microsoft Intune setting to **On**.
 3. Click **Save preferences**.

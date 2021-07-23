@@ -54,7 +54,7 @@ Read the walkthrough document provided with each attack scenario. Each document 
 
 2. Download and read the corresponding walkthrough document provided with your selected scenario.
 
-3. Download the simulation file or copy the simulation script by navigating to **Help** > **Simulations & tutorials**. You can choose to download the file or script on the test device but it's not mandatory.
+3. Download the simulation file or copy the simulation script by navigating to **Evaluation & tutorials** > **Tutorials & simulations**. You can choose to download the file or script on the test device but it's not mandatory.
 
 4. Run the simulation file or script on the test device as instructed in the walkthrough document.
 

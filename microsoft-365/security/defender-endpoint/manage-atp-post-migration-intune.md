@@ -74,16 +74,16 @@ The following table lists various tasks you can perform to configure Microsoft D
 |**Configure Microsoft Defender Application Control** to choose whether to audit or trust apps on your organization's devices <br/><br/>*Microsoft Defender Application Control is also referred to as [AppLocker](/windows/security/threat-protection/windows-defender-application-control/applocker/applocker-overview).*|[Deploy Microsoft Defender Application Control policies by using Microsoft Intune](/windows/security/threat-protection/windows-defender-application-control/deploy-windows-defender-application-control-policies-using-intune)<br/><br/>[Endpoint protection: Microsoft Defender Application Control](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-application-control)<br/><br/>[AppLocker CSP](/windows/client-management/mdm/applocker-csp)|
 |**Configure device control and USB peripherals access** to help prevent threats in unauthorized peripherals from compromising your devices |[Control USB devices and other removable media using Microsoft Defender for Endpoint and Intune](/windows/security/threat-protection/device-control/control-usb-devices-using-intune)  |
 
-## Configure your Microsoft Defender Security Center
+## Configure your Microsoft 365 Defender portal
 
-If you haven't already done so, configure your Microsoft 365 Defender portal to view alerts, configure threat protection features, and view detailed information about your organization's overall security posture. See [Microsoft Defender Security Center](microsoft-defender-security-center.md). You can also configure whether and what features end users can see in the Microsoft 365 Defender portal.
+If you haven't already done so, configure your Microsoft 365 Defender portal to view alerts, configure threat protection features, and view detailed information about your organization's overall security posture. See [Microsoft 365 Defender](microsoft-defender-security-center.md). You can also configure whether and what features end users can see in the Microsoft 365 Defender portal.
 
-- [Overview of the Microsoft Defender Security Center](/microsoft-365/security/defender-endpoint/use)
+- [Overview of Microsoft 365 Defender](/microsoft-365/security/defender-endpoint/use)
 
-- [Endpoint protection: Microsoft Defender Security Center](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-security-center)
+- [Endpoint protection: Microsoft 365 Defender](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-security-center)
 
 ## Next steps
 
 - [Get an overview of threat and vulnerability management](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 
-- [Visit the Microsoft Defender Security Center security operations dashboard](/microsoft-365/security/defender-endpoint/security-operations-dashboard)
+- [Visit the Microsoft 365 Defender portal security operations dashboard](/microsoft-365/security/defender-endpoint/security-operations-dashboard)
