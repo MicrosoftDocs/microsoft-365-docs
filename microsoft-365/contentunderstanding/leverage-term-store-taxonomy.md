@@ -1,8 +1,9 @@
 ---
-title: "Leverage term store taxonomy when creating an extractor"
-ms.author: efrene
-author: efrene
+title: Leverage term store taxonomy when creating an extractor in Microsoft SharePoint Syntex
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
+ms.reviewer: ssquires
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -11,10 +12,10 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 localization_priority: Priority
-description: "Use term store taxonomy when creating an extractor in your document understanding model in Microsoft SharePoint Syntex."
+description: Use term store taxonomy when creating an extractor in your document understanding model in Microsoft SharePoint Syntex.
 ---
 
-# Leverage term store taxonomy when creating an extractor
+# Leverage term store taxonomy when creating an extractor in Microsoft SharePoint Syntex
 
 </br>
 
@@ -39,7 +40,6 @@ There could be many reasons why you might want to use a synonym in your term set
 To make the managed metadata field available to select when you create your extractor in your model, you need to [add it as a managed-metadata site column](https://support.microsoft.com/office/8fad9e35-a618-4400-b3c7-46f02785d27f). After you add the site column, you can select it when you create the extractor for your model.
 
    ![Contract service](../media/content-understanding/contract-services.png)</br>
-
 
 After applying your model to the document library, when documents are uploaded to library, the *Creative Services* column will display the preferred term (*Creative*) when the extractor finds any of the synonym values (*Design*, *Graphics*, and *Topography*).
 
