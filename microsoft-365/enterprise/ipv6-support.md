@@ -3,7 +3,7 @@ title: "IPv6 support in Office 365 services"
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 10/10/2018
+ms.date: 07/23/2021
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -81,6 +81,18 @@ These considerations might apply to your network:
 - If you use Active Directory Federation Services (AD FS) with Office 365, advertising your AD FS network endpoint to Office 365 using IPv6 is not supported. You should not include AAAA records in the AD FS DNS entry when using Exchange Online. 
 
 Here's a short link you can use to come back: [https://aka.ms/o365ip6]()
+
+## Microsoft 365
+
+Enabling customers to experience Microsoft 365 SaaS services from any location and any device is a priority for Microsoft.  This includes allowing customers to connect and consume Microsoft 365 from IPv6 enabled and IPv6 only clients and information systems and enable government customers meet IPv6 commitments on their networks while continuing to consume Microsoft 365 productivity scenarios without any interruption.  
+
+IPv6 support in Office 365 services - Microsoft 365 Enterprise | Microsoft Docs provides the list of Microsoft 365 SaaS services that allow direct IPv6 connectivity today.  The scope of services allowing direct IPv6 connectivity is expected to continue to expand.   Microsoft 365 services not explicitly mentioned for direct IPv6 support, to include Azure Active Directory (AAD) Authentication services, should be deemed requiring DNS64/NAT64 to be connected to from IPv6 only clients and environments.  This is in alignment with the intent currently outlined in existing NIST USGv6 documentation: Transition Mechanism Capability Requirements in NIST Special Publication 500-267A Revision 1 NAT64/DNS64 are acceptable technologies to employ.
+
+- NAT64 support for transition mechanism NAT64 RFC6146
+Stateful NAT64: Network Address and Protocol Translation from IPv6 Clients to IPv4 Servers
+- DNS64 support for transition mechanism DNS64. RFC6147 
+DNS64: DNS Extensions for Network Address Translation from IPv6 Clients to IPv4 Server
+
   
 ## See also
 
