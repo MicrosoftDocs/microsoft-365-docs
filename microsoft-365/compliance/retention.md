@@ -311,7 +311,7 @@ Explanation for the four different principles:
 2. **The longest retention period wins.** If content is subject to multiple retention settings that retain content for different periods of time, the content will be retained until the end of the longest retention period for the item.
     
     > [!NOTE]
-    > It's possible for a retention period of 5 years wins over a retention period of 7 years because the 5-year period is configured to start based on when the file is last modified, and the 7-year period is configured to start from when the file is created.
+    > It's possible for a retention period of 5 years in a retention policy or label wins over a retention period of 7 years in a retention policy or label, because the 5-year period is configured to start based on when the file is last modified, and the 7-year period is configured to start from when the file is created.
     
     Example: Documents in the Marketing SharePoint site are subject to two retention policies. The first retention policy is configured for all SharePoint sites to retain items for five years after they are created. The second retention policy is configured for specific SharePoint sites to retain items for ten years after they are created.
     
