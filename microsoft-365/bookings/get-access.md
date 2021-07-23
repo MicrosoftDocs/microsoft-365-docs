@@ -23,8 +23,6 @@ The first time you use [Bookings](https://outlook.office.com/bookings/onboarding
 
 1. Select **Get it now** and choose, **Add a booking calendar**. If this isn't your first time on this page, you can select another booking calendar or do a search for another booking calendar.
 
-:::image type="content" source="media/bookings - get it now.png" alt-text="Screenshot: Get it now bookings page. Select Get it now to start using Bookings":::
-
 2. Enter your business name and business type and select **Continue**.
 
 You're now ready to set up Bookings for your organization. You can get to the Bookings page with this [link](https://outlook.office.com/bookings/onboarding), from the app launcher or from office.com. Use the following topics to continue setting up your Bookings features.
