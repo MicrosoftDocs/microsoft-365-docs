@@ -42,11 +42,11 @@ Each security recommendation includes actionable remediation steps. To help with
 
 Each device in the organization is scored based on three important factors to help customers to focus on the right things at the right time.
 
-- **Threat** - Characteristics of the vulnerabilities and exploits in your organizations' devices and breach history. Based on these factors, the security recommendations show the corresponding links to active alerts, ongoing threat campaigns, and their corresponding threat analytic reports.
+- **Threat**—Characteristics of the vulnerabilities and exploits in your organizations' devices and breach history. Based on these factors, the security recommendations show the corresponding links to active alerts, ongoing threat campaigns, and their corresponding threat analytic reports.
 
-- **Breach likelihood** - Your organization's security posture and resilience against threats
+- **Breach likelihood**—Your organization's security posture and resilience against threats
 
-- **Business value** - Your organization's assets, critical processes, and intellectual properties
+- **Business value**—Your organization's assets, critical processes, and intellectual properties
 
 ## Navigate to the Security recommendations page
 
@@ -94,7 +94,7 @@ Useful icons also quickly call your attention to:
 
 Select the security recommendation that you want to investigate or process.
 
-![Example of a security recommendation flyout page.](images/secrec-flyouteolsw.png)
+:::image type="content" alt-text="Example of a security recommendation flyout page." source="images/secrec-flyouteolsw.png" lightbox="images/secrec-flyouteolsw.png":::
 
 From the flyout, you can choose any of the following options:
 

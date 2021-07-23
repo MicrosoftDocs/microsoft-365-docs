@@ -31,7 +31,7 @@ The Microsoft 365 security center is the new interface for monitoring and managi
 In Microsoft 365 security center, we offer you a complete look at the current ASR rules configuration and events in your estate. Note that your devices must be onboarded into the Microsoft Defender for Endpoint service for these reports to be populated.
 Here's a screenshot from the Microsoft 365 security center (under **Reports** > **Devices** > **Attack surface reduction**). At the device level, select **Configuration** from the **Attack surface reduction rules** pane. The following screen is displayed, where you can select a specific device and check its individual ASR rule configuration.
 
-:::image type="content" source="images/asrrulesnew.png" alt-text="ASR rules screen":::
+:::image type="content" source="images/asrrulesnew.png" lightbox="images/asrrulesnew.png" alt-text="ASR rules screen":::
 
 ## Microsoft Defender for Endpoint – Advanced hunting
 
@@ -45,7 +45,7 @@ ASR rules events are available to be queried from the DeviceEvents table in the 
 
 :::image type="content" source="images/adv-hunt-querynew.png" alt-text="Advanced hunting query":::
 
-:::image type="content" source="images/adv-hunt-sc-2new.png" alt-text="advanced hunting screen":::
+:::image type="content" source="images/adv-hunt-sc-2new.png" lightbox="images/adv-hunt-sc-2new.png" alt-text="advanced hunting screen":::
 
 With advanced hunting you can shape the queries to your liking, so that you can see what is happening, regardless of whether you want to pinpoint something on an individual machine, or you want to extract insights from your entire environment.
 
@@ -55,7 +55,7 @@ An alternative to advanced hunting, but with a narrower scope, is the Microsoft 
 
 Pictured below is a screenshot of the Timeline view of these events on a given endpoint.  From this view, you can filter the events list based on any of the Event Groups along the right-side pane. You can also enable or disable Flagged and Verbose events while viewing alerts and scrolling through the historical timeline.
 
-:::image type="content" source="images/mic-sec-def-timelinenew.png" alt-text="Microsoft 365 Defender timeline":::
+:::image type="content" source="images/mic-sec-def-timelinenew.png" lightbox="images/mic-sec-def-timelinenew.png" alt-text="Microsoft 365 Defender timeline":::
 
 ## How to troubleshoot ASR rules?
 
@@ -67,7 +67,7 @@ Here are a few other sources of information that Windows offers, to troubleshoot
 One of the easiest ways to determine if ASR rules are already enabled—and, is through a PowerShell cmdlet, Get-MpPreference.
 Here's an example:
 
-:::image type="content" source="images/getmpreferencescriptnew.png" alt-text="get mppreference script":::
+:::image type="content" source="images/getmpreferencescriptnew.png" lightbox="images/getmpreferencescriptnew.png" alt-text="get mppreference script":::
 
 There are multiple ASR rules active, with different configured actions.
 
@@ -92,7 +92,7 @@ ASR rule events can be viewed within the Windows Defender log.
 
 To access it, open Windows Event Viewer, and browse to **Applications and Services Logs** > **Microsoft** > **Windows** > **Windows Defender** > **Operational**.
 
-:::image type="content" source="images/eventviewerscrnew.png" alt-text="event viewer scr":::
+:::image type="content" source="images/eventviewerscrnew.png" lightbox="images/eventviewerscrnew.png" alt-text="event viewer scr":::
 
 ## Microsoft Defender Malware Protection Logs
 You can also view rule events through the Microsoft Defender Antivirus dedicated command-line tool, called `*mpcmdrun.exe*`, that can be used to manage and configure, and automate tasks if needed.

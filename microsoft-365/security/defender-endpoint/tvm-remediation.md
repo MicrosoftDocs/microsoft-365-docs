@@ -74,7 +74,7 @@ If you chose the "attention required" remediation option, there will be no progr
 
 Once you are in the Remediation page, select the remediation activity that you want to view. You can follow the remediation steps, track progress, view the related recommendation, export to CSV, or mark as complete.
 
-:::image type="content" source="../../media/remediation-flyouteolswnew.png" alt-text="Example of the Remediation page, with a selected remediation  activity, and that activity's flyout listing the description, IT service and device management tools, and device remediation":::
+:::image type="content" source="../../media/remediation-flyouteolswnew.png" lightbox="../../media/remediation-flyouteolswnew.png" alt-text="Example of the Remediation page, with a selected remediation  activity, and that activity's flyout listing the description, IT service and device management tools, and device remediation":::
 
 >[!NOTE]
 > There is a 180 day retention period for completed remediation activities. To keep the Remediation page performing optimally, the remediation activity will be removed 6 months after its completion.
@@ -87,7 +87,7 @@ Track who closed the remediation activity with the "Completed by" column on the 
 - **System confirmation**: The task was automatically completed (all devices remediated)
 - **N/A**: Information is not available because we don't know how this older task was completed
 
-![Created by and completed by columns with two rows. One row for completed by has example of an email, the other row says system confirmation.](images/tvm-completed-by.png)
+:::image type="content" alt-text="Created by and completed by columns with two rows. One row for completed by has example of an email, the other row says system confirmation." source="images/tvm-completed-by.png":::
 
 ### Top remediation activities in the dashboard
 

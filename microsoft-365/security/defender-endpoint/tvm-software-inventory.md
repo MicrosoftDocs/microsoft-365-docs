@@ -53,7 +53,7 @@ The **Software inventory** page opens with a list of software installed in your 
 
 You can filter the list view based on weaknesses found in the software, threats associated with them, and tags like whether the software has reached end-of-support.
 
-![Example of the landing page for software inventory.](images/tvm-software-inventory.png)
+:::image type="content" alt-text="Example of the landing page for software inventory." source="images/tvm-software-inventory.png" lightbox="images/tvm-software-inventory.png":::
 
 Select the software that you want to investigate. A flyout panel will open with a more compact view of the information on the page. You can either dive deeper into the investigation and select **Open software page**, or flag any technical inconsistencies by selecting **Report inaccuracy**.
 
@@ -61,7 +61,7 @@ Select the software that you want to investigate. A flyout panel will open with 
 
 Software that isn't currently supported by threat & vulnerability management may be present in the Software inventory page. Because it is not supported, only limited data will be available. Filter by unsupported software with the "Not available" option in the "Weakness" section.
 
-![Unsupported software filter.](images/tvm-unsupported-software-filter.png)
+:::image type="content" alt-text="Unsupported software filter." source="images/tvm-unsupported-software-filter.png" lightbox="images/tvm-unsupported-software-filter.png":::
 
 The following indicates that software is not supported:
 
@@ -86,7 +86,7 @@ See evidence of where we detected a specific software on a device from the regis
 
 Select a software name to open the flyout, and look for the section called "Software Evidence."
 
-![Software evidence example of Windows 10 from the devices list, showing software evidence registry path.](images/tvm-software-evidence.png)
+:::image type="content" alt-text="Software evidence example of Windows 10 from the devices list, showing software evidence registry path." source="images/tvm-software-evidence.png" lightbox="images/tvm-software-evidence.png":::
 
 ## Software pages
 
@@ -107,6 +107,7 @@ You can view software pages a few different ways:
     - Software version list (including number of devices the version is installed on, the number of discovered vulnerabilities, and the names of the installed devices).
 
     ![Software example page for Visual Studio 2017 with the software details, weaknesses, exposed devices, and more.](images/tvm-software-page-example.png)
+	:::image type="content" alt-text="Software example page for Visual Studio 2017 with the software details, weaknesses, exposed devices, and more." source="images/tvm-software-page-example.png" lightbox="images/tvm-software-page-example.png":::
 
 ## Report inaccuracy
 

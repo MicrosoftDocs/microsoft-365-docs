@@ -54,7 +54,7 @@ Watch this video for a quick overview of what is in the threat and vulnerability
 
 ## Threat and vulnerability management dashboard
 
- :::image type="content" source="../../media/tvmdashboard.png" alt-text="Threat and Vulnerability Management dashboard for Devices":::
+:::image type="content" source="../../media/tvmdashboard.png" lightbox="../../media/tvmdashboard.png" alt-text="Threat and Vulnerability Management dashboard for Devices":::
 
 Area | Description
 :---|:---
