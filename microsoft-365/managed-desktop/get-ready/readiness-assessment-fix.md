@@ -209,6 +209,13 @@ You have a security baseline profile that targets all users, all devices, or bot
 
 Make sure that any security baseline policies you have exclude Microsoft Managed Desktop devices. For steps, see [Use security baselines to configure Windows 10 devices in Intune](/mem/intune/protect/security-baselines). During enrollment, we apply a new security baseline to all Microsoft Managed Desktop devices. The **Modern Workplace Devices -All** Azure AD group is a dynamic group that we create when you enroll in Microsoft Managed Desktop, so you'll have to come back to exclude this group after enrollment. 
 
+### Unlicensed admins
+
+This setting must be enabled to avoid a "lack of permissions" error when we interact with your Azure AD organization. 
+
+**Not ready**
+
+**Allow access to unlicensed admins** should be enabled. For steps, see [Prerequisites for guest accounts](/microsoft-365/managed-desktop/get-ready/guest-accounts).
 
 ### Windows apps
 

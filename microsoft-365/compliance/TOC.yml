@@ -54,8 +54,8 @@
           href: insider-risk-management-settings.md
         - name: Create and manage insider risk policies
           href: insider-risk-management-policies.md
-        - name: Investigate insider risk alerts
-          href: insider-risk-management-alerts.md
+        - name: Investigate insider risk activities
+          href: insider-risk-management-activities.md
         - name: Take action on insider risk cases
           href: insider-risk-management-cases.md
         - name: Review activities with the insider risk audit log
@@ -118,6 +118,12 @@
           href: create-a-custom-sensitive-information-type.md
         - name: Create a custom sensitive information type - PowerShell
           href: create-a-custom-sensitive-information-type-in-scc-powershell.md
+        - name: Remove a custom sensitive information type - PowerShell
+          href: sit-remove-a-custom-sensitive-information-type-in-powershell.md
+        - name: Modify a custom sensitive information type - PowerShell
+          href: sit-modify-a-custom-sensitive-information-type-in-powershell.md
+        - name: Custom sensitive information type filters reference
+          href: sit-custom-sit-filters.md
         - name: Create a keyword dictionary
           href: create-a-keyword-dictionary.md
         - name: Modify a keyword dictionary
@@ -423,7 +429,7 @@
               href: archive-salesforcechatter-data.md
             - name: ServiceNow
               href: archive-servicenow-data.md
-            - name: Skype for Business (preview)
+            - name: Skype for Business
               href: archive-skypeforbusiness-data.md
             - name: Slack eDiscovery
               href: archive-slack-data.md    
@@ -457,9 +463,9 @@
               href: archive-enterprise-number-data.md
             - name: O2 Telefonica SMS and Voice Network Archiver
               href: archive-o2-network-data.md
-            - name: Signal (preview)
+            - name: Signal Archiver
               href: archive-signal-archiver-data.md
-            - name: Telegram (preview)
+            - name: Telegram Archiver
               href: archive-telegram-archiver-data.md
             - name: TELUS Network
               href: archive-telus-network-data.md
@@ -471,43 +477,43 @@
               href: archive-whatsapp-data.md
         - name: 17a-4 data connectors
           items:
-            - name: BlackBerry DataParser (preview)
+            - name: BlackBerry DataParser 
               href: archive-17a-4-blackberry-data.md
-            - name: Bloomberg DataParser (preview)
+            - name: Bloomberg DataParser 
               href: archive-17a-4-bloomberg-data.md
-            - name: Cisco Jabber DataParser (preview)
+            - name: Cisco Jabber DataParser 
               href: archive-17a-4-cisco-jabber-data.md
-            - name: Cisco Webex DataParser (preview)
+            - name: Cisco Webex DataParser 
               href: archive-17a-4-webex-teams-data.md
-            - name: FactSet DataParser (preview)
+            - name: FactSet DataParser 
               href: archive-17a-4-factset-data.md
-            - name: Fuze DataParser (preview)
+            - name: Fuze DataParser 
               href: archive-17a-4-fuze-data.md
-            - name: FX Connect DataParser (preview)
+            - name: FX Connect DataParser 
               href: archive-17a-4-fxconnect-data.md
-            - name: ICE DataParser (preview)
+            - name: ICE DataParser 
               href: archive-17a-4-ice-im-data.md
-            - name: InvestEdge DataParser (preview)
+            - name: InvestEdge DataParser 
               href: archive-17a-4-investedge-data.md
-            - name: LivePerson Conversational Cloud DataParser (preview)
+            - name: LivePerson Conversational Cloud DataParser 
               href: archive-17a-4-liveperson-data.md
-            - name: Quip DataParser (preview)
+            - name: Quip DataParser 
               href: archive-17a-4-quip-data.md
-            - name: Refinitiv Eikon Messenger DataParser (preview)
+            - name: Refinitiv Eikon Messenger DataParser 
               href: archive-17a-4-refinitiv-messenger-data.md
-            - name: ServiceNow DataParser (preview)
+            - name: ServiceNow DataParser 
               href: archive-17a-4-servicenow-data.md
-            - name: Slack DataParser (preview)
+            - name: Slack DataParser 
               href: archive-17a-4-slack-data.md
-            - name: SQL DataParser (preview)
+            - name: SQL DataParser 
               href: archive-17a-4-sql-database-data.md
-            - name: Symphony DataParser (preview)
+            - name: Symphony DataParser 
               href: archive-17a-4-symphony-data.md
-            - name: Zoom DataParser (preview)
+            - name: Zoom DataParser 
               href: archive-17a-4-zoom-data.md
         - name: CellTrust connectors
           items:
-            - name: CellTrust SL2 (preview)
+            - name: CellTrust SL2 
               href: archive-data-from-celltrustsl2.md
         - name: Work with a partner to archive third-party data
           href: work-with-partner-to-archive-third-party-data.md
@@ -549,6 +555,45 @@
           href: record-versioning.md
         - name: Resources for regulatory requirements
           href: retention-regulatory-requirements.md
+- name: Manage app governance
+  items: 
+    - name: Protect and govern your apps
+      href: app-governance-manage-app-governance.md
+    - name: Get Started with app governance
+      href: app-governance-get-started.md
+    - name: Submit feedback on app governance
+      href: app-governance-feedback.md
+    - name: Get visibility and insights
+      items:
+        - name: Learn about visibility and insights
+          href: app-governance-visibility-insights-overview.md
+        - name: Get started
+          href: app-governance-visibility-insights-get-started.md
+        - name: View your apps
+          href: app-governance-visibility-insights-view-apps.md
+        - name: Determine compliance posture
+          href: app-governance-visibility-insights-compliance-posture.md
+    - name: Implement app policies
+      items:
+        - name: Learn about app policies
+          href: app-governance-app-policies-overview.md
+        - name: Get started
+          href: app-governance-app-policies-get-started.md
+        - name: Create app policies
+          href: app-governance-app-policies-create.md
+        - name: Manage app policies
+          href: app-governance-app-policies-manage.md
+    - name: Detect and remediate app threats
+      items:
+        - name: Learn about detection and remediation
+          href: app-governance-detect-remediate-overview.md
+        - name: Get started
+          href: app-governance-detect-remediate-get-started.md
+        - name: Investigate anomaly detection alerts
+          href: app-governance-anomaly-detection-alerts.md
+        - name: Remediate app threats
+          href: app-governance-detect-remediate-detect-threats.md
+
 - name: Manage eDiscovery
   items:
     - name: Microsoft 365 eDiscovery solutions
@@ -686,8 +731,14 @@
           href: overview-ediscovery-20.md
         - name: Set up Advanced eDiscovery
           href: get-started-with-advanced-ediscovery.md
-        - name: Create and manage a case
-          href: create-and-manage-advanced-ediscoveryv2-case.md
+        - name: Create Advanced eDiscovery cases
+          items:
+            - name: Create and manage a case
+              href: create-and-manage-advanced-ediscoveryv2-case.md
+            - name: Use large cases (preview)
+              href: advanced-ediscovery-large-cases.md
+        - name: Advanced eDiscovery workflow for Teams content (preview)
+          href: teams-workflow-in-advanced-ediscovery.md
         - name: Manage custodians and non-custodial data sources
           href: managing-custodians.md
           items: 
@@ -915,7 +966,7 @@
         - name: Compliance Configuration Analyzer tool
           href: compliance-manager-mcca.md
         - name: Frequently asked questions (FAQ)
-          href: compliance-manager-faq.md
+          href: compliance-manager-faq.yml
         - name: Compliance Manager (classic)
           href: meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md
     - name: Microsoft Service Trust Portal
@@ -926,6 +977,18 @@
           href: ../solutions/financial-services-secure-collaboration.md
         - name: Energy services security and compliance
           href: ../solutions/energy-secure-collaboration.md
+- name: Manage privacy risks
+  items:
+    - name: Learn about privacy management
+      href: privacy-management.md
+    - name: Get started with privacy management
+      href: privacy-management-setup.md
+    - name: Find and visualize personal data in privacy management
+      href: privacy-management-data-profile.md
+    - name: Create and manage policies in privacy management
+      href: privacy-management-policies.md
+    - name: Manage subject rights requests in privacy management
+      href: privacy-management-subject-rights-requests.md
 - name: Hybrid compliance capabilities
   items: 
     - name: Exchange Online mail encryption with AD RMS
@@ -939,3 +1002,5 @@
   href: ../security/index.yml
 - name: Microsoft 365 Apps for business
   href: /office365/admin/admin-home
+- name: Troubleshooting
+  href: /office365/troubleshoot/microsoft-365-compliance-welcome
