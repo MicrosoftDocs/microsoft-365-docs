@@ -17,6 +17,7 @@ ms.custom:
 - AdminSurgePortfolio
 - fwlink 2133922 to Delete subscription heading
 - commerce_subscription
+- AdminTemplateSet
 search.appverid: MET150
 description: "When you close your account with Microsoft all information related to your account is deleted including licenses, users, and user data."
 ms.date: 04/02/2021

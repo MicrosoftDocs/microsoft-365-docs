@@ -81,8 +81,10 @@ Before you can archive third-party data in Microsoft 365, you have to work with 
 |[Reuters Dealing](archive-reutersdealing-data.md)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)||
 |[Reuters Eikon](archive-reuterseikon-data.md)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)||
 |[Reuters FX](archive-reutersfx-data.md)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)||
+|[RingCentral](archive-ringcentral-data.md)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|||
 |[Salesforce Chatter](archive-salesforcechatter-data.md)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|||
 |[ServiceNow](archive-servicenow-data.md)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|||
+|[Skype for Business](archive-skypeforbusiness-data.md)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|||
 |[Slack eDiscovery](archive-slack-data.md)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)||
 |[Symphony](archive-symphony-data.md)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)||
 |[Text-delimited](archive-text-delimited-data.md)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|||
@@ -101,7 +103,7 @@ The table in this section lists the third-party data connectors available in par
 
 Before you can archive third-party data in Microsoft 365, you have to work with TeleMessage to set up their archiving service for your organization. For more information, click the link in the **Third-party data** column to go the step-by-step instructions for creating a connector for that data type.
 
-TeleMessage data connectors are also available in GCC environments in the Microsoft 365 US Government cloud. For more information, see the Data connectors in the US Government cloud section in this article.
+TeleMessage data connectors are also available in GCC environments in the Microsoft 365 US Government cloud. For more information, see the [Data connectors in the US Government cloud](#data-connectors-in-the-us-government-cloud) section in this article.
 
 |Third-party data  |Litigation hold|eDiscovery  |Retention settings  |Records management  |Communication compliance  |Insider risk management  |
 |:---------|:---------|:---------|:---------|:---------|:---------|:---------|
@@ -110,6 +112,8 @@ TeleMessage data connectors are also available in GCC environments in the Micros
 |[Bell Network](archive-bell-network-data.md)     |![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)||
 |[Enterprise Number](archive-enterprise-number-data.md)     |![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)||
 |[O2 Network](archive-o2-network-data.md)     |![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)||
+|[Signal](archive-signal-archiver-data.md)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)||
+|[Telegram](archive-telegram-archiver-data.md)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)||
 |[TELUS Network](archive-telus-network-data.md)    |![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)||
 |[Verizon Network](archive-verizon-network-data.md)     |![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)||
 |[WeChat](archive-wechat-data.md)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)||
@@ -189,6 +193,56 @@ You can use [Communication compliance](communication-compliance.md) to examine t
 ### Insider risk management
 
 Signals from third-party data, like selective HR data, can be used by the [Insider risk management](insider-risk-management.md) solution to minimize internal risks by letting you to detect, investigate, and act on risky activities in your organization. For example, data imported by the HR data connector is used as risk indicators to help detect departing employee data theft.
+
+## Using eDiscovery tools to search for third-party data
+
+After you use data connectors to import and archive third-party data in user mailboxes, you can use Microsoft 365 eDiscovery tools to search for third-party data. You can also eDiscovery tools to create query-based holds associated with Core eDiscovery and Advanced eDiscovery cases to preserve third-party data. For more information about eDiscovery tools, see [eDiscovery solutions in Microsoft 365](ediscovery.md).
+
+To search for (or place a hold on) any type of third-party data that you've imported to user mailboxes using a data connector, you can use the following search query. Be sure to scope the search to user mailboxes.
+
+```powershell
+kind:externaldata
+```
+
+You can use this query in the **Keywords** box for a Content search, a search associated with a Core eDiscovery case, or a collection in Advanced eDiscovery.
+
+![Query to search for third-party data](..\media\SearchThirdPartyData1.png)
+
+You can also use the `kind:externaldata` property:value pair to to narrow the scope of searches to third-party data. For example, to search for items imported from any third-party data source that contain the word *contoso* in the **Subject** property of the imported item, use the following query in the **Keywords** box:
+
+```powershell
+subject:contoso AND kind:externaldata
+```
+
+Alternatively, you can use the **Message kind** condition to configure the same query.
+
+![Use Message kind condition to narrow searches to third-party data](..\media\SearchThirdPartyData2.png)
+
+To search for a specific type of archived third-party data, use the **itemclass** mailbox property in a search query. Use the following property:value format:
+
+```powershell
+itemclass:ipm.externaldata.<third-party data type>
+```
+
+Every item imported by a third-party data connector includes the **itemclass** property with a value that corresponds to the third-party data type. For example, to search for Facebook data that contains the word *contoso*, in the **Subject** property of the imported item, use the following query:
+
+```powershell
+subject:contoso AND itemclass:ipm.externaldata.facebook*
+```
+
+Here are a few examples for **itemclass** values for different types of third-party data.
+
+| **Third-party data type** | **Value for itemclass property**   |
+|---------------------------|-------------------------------------|
+| Bloomberg Message         | ipm.externaldata.bloombergmessage* |
+| CellTrust                 | ipm.externaldata.celltrust*        |
+| Pivot                     | ipm.externaldata.pivot*            |
+| WhatsApp Archiver         | ipm.externaldata.whatsapparchiver* |
+|||
+
+Values for the *itemclass* property are not case-sensitive. In general, use the name of the third-party data type (without spaces) followed by a wildcard ( * ) character.
+
+For more information about creating eDiscovery search queries, see [Keyword queries and search conditions for eDiscovery](keyword-queries-and-search-conditions.md).
 
 ## Data connectors in the US Government cloud
 
