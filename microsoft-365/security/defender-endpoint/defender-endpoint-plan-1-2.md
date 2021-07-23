@@ -8,7 +8,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: ITPro
 ms.topic: overview
-ms.date: 07/21/2021
+ms.date: 07/23/2021
 ms.prod: security
 ms.technology: mde
 localization_priority: Normal
@@ -34,6 +34,6 @@ The following table describes what's included in each plan at a high level.
 
 ## Next steps
 
-- [Get an overview of Microsoft Defender for Endpoint Plan 1](defender-endpoint-plan-1.md)
+- [Get an overview of Microsoft Defender for Endpoint Plan 1 (preview)](defender-endpoint-plan-1.md)
 - [Set up and configure Microsoft Defender for Endpoint Plan 1 (preview)](mde-p1-setup-configuration.md)
 - [Get started with Microsoft Defender for Endpoint Plan 1 (preview)](mde-plan1-getting-started.md)
