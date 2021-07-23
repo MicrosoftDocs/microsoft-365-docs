@@ -42,15 +42,18 @@ Increase password security:
 - For Azure AD accounts, use Azure AD Password Protection to detect and block known weak passwords and additional weak terms that are specific to your organization.
 - For on-premises Active Directory Domain Services (AD DS) accounts, extend Azure AD Password Protection to AD DS accounts.
 
+### Mitigate: Detect compromised user credentials and remove the account
 
-### Mitigate: Detect compromised user account and remove it
+Ways to prevent detect compromised user credentials:
 
 - Azure AD Identity Protection
 - Microsoft Defender for Identity
 
 ## Email and collaboration
 
-### Prevent: Attacker can't get past built-in Microsoft 365 security features
+### Prevent: Attacker can't get past Microsoft 365 security features
+
+Ways to prevent an attacker from using Microsoft 365 security features that have not been enabled:
 
 - Enable AMSI for Office VBA.
 - Implement Advanced Email security using Defender for Office 365.
@@ -60,13 +63,18 @@ Increase password security:
 
    - Weaponized Office document activity such as advanced macro activity, executable content, process creation, and process injection initiated by Office applications.
 
-### Mitigate: Detect breaches based on built-in Microsoft 365 security features
+### Mitigate: Detect breaches based on Microsoft 365 security features
+
+Ways to detect breaches based on Microsoft 365 security features:
 
 - Microsoft Defender for Office 365
+- Microsoft 365 Defender
 
 ## Endpoints
 
 ### Prevent: Attacker can't get past Windows 10 security features
+
+Ways to prevent an attacker from using Windows 10 security features that have not been enabled:
 
 - Block known threats with attack surface reduction rules, tamper protection, and block at first site.
 - Apply Security Baselines to harden internet-facing Windows servers and clients and Office applications.
@@ -80,9 +88,12 @@ Increase password security:
 - Isolate, disable, or retire insecure systems and protocols, including unsupported operating systems and legacy protocols (Block apps using legacy authentication with Conditional Access)
 - Block unexpected traffic with host-based firewall and network defenses (Windows Firewall with Advanced Security gfor Windows 10).
 
-## Mitigate: Detect breaches based on built-in Windows 10 security features
+### Mitigate: Detect breaches based on built-in Windows 10 security features and remove endpoint
+
+Ways to detect breaches based on built-in Windows 10 security features:
 
 - Microsoft Defender for Endpoint
+- Microsoft 365 Defender
 
 <!--
 

@@ -21,12 +21,14 @@ description: Step through protecting your Microsoft 365 resources from ransomwar
 
 # Step 1: Remove attacker financial leverage with data protection/Protect your ransomable targets
 
+<!--
 Assume attacker has the credentials to access your tenant and can laterally move around to discover targets.
+--> 
 
-## Elements of financial leverage
+Elements of financial leverage
 
-- Data encryption or destruction
-- Data exfiltration: Attacker copies data outside the tenant
+- Critical data encryption or destruction
+- Critical data exfiltration: Attacker copies data outside the tenant
 - Attack recovery sabotage: Encrypt or destroy IT recovery plans
 
 ## Data encryption or destruction
@@ -35,13 +37,15 @@ Assume attacker has the credentials to access your tenant and can laterally move
 
 **Financial leverage:** Organization can’t operate normally and loses revenue.
 
-### Prevent: Attacker can’t access data
+### Prevent: Attacker can’t access ransomable data
 
-- Access to data through tight permissions
+Ways to prevent access to ransomable data:
 
-   Perform broad permissions review
+- Tight permissions
 
-   Audit and monitor for new broad permissions
+   - Perform review of broad permissions and update
+
+   - Audit and monitor for new broad permissions
 
 - MIP, sensitive information types, and sensitivity labels (permissions and encryption)
 - Office 365 Message Encryption new capabilities (OME) and OME Advanced Message Encryption
@@ -49,7 +53,9 @@ Assume attacker has the credentials to access your tenant and can laterally move
 - Protected Folders/controlled folder access for malicious apps
 - Teams/SharePoint sites with security isolation
 
-### Mitigate: Attacker can access data, but can’t encrypt or destroy all copies
+### Mitigate: Attacker can access ransomable data, but they can’t encrypt or destroy all copies
+
+Ways to prevent encryption or destruction of all copies of ransomable data:
 
 - Offline, off-site, immutable backups
 
@@ -61,26 +67,36 @@ Assume attacker has the credentials to access your tenant and can laterally move
 
 ### Prevent: Attacker can’t exfiltrate data
 
+Ways to prevent ransomable data exfiltration:
+
 - DLP
 
 ### Mitigate: Attacker can exfiltrate, but exfiltrated data is unusable to them
+
+Ways to protect exfiltrated ransomable data:
 
 - MIP, sensitive information types, and sensitivity labels (permissions and encryption)
 - Office 365 Message Encryption new capabilities (OME) and OME Advanced Message Encryption
 
 ## Attack recovery sabotage: Encrypt or destroy IT recovery plans
 
-Financial leverage: Making it longer and more difficult to recover data, endpoints, and processes can result in additional lost revenue.
+**Attacker's goal:** Remove the ability to recover IT operations quickly.
+
+**Financial leverage:** Making it longer and more difficult to recover data, endpoints, and processes can result in lost revenue.
 
 ### Prevent: Attacker can’t access plans
 
-- Access through tight permissions
+Ways to prevent encryption or destruction of IT recovery plans:
+
+- Access only through tight permissions
 - MIP, sensitive information types, and sensitivity labels (permissions and encryption)
 - Office 365 Message Encryption new capabilities (OME) and OME Advanced Message Encryption
 - Customer Key
 - Teams/SharePoint sites with security isolation
 
 ### Mitigate: Attacker can access plans, but can’t encrypt or destroy all copies
+
+Ways to prevent encryption or destruction of all copies of IT recovery plans:
 
 - Offline, off-site, immutable backups of plans
 

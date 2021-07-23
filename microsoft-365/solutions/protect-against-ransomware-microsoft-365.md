@@ -22,17 +22,13 @@ description: Step through protecting your Microsoft 365 resources from ransomwar
 
 # Deploy protection against ransomware with Microsoft 365
 
-What are the preventative steps to minimize the damage from a ransomware attack, in order of urgency? 
+Here are the preventative and mitigation steps to minimize the damage from a ransomware attack, in order of urgency:
 
-1. Prevent a ransomware attacker from obtaining financial leverage and executing the activies leading to the ransom demand (already banked).
+1. Prevent a ransomware attacker from obtaining financial leverage and executing the activities leading to the ransom demand. The assumption is that your organization has already been infiltrated and the attacker has escalated privileges and is waiting for the right time to ransom you. 
 
-   Assume attacker has the credentials to access your tenant and can laterally move around to discover targets.
+2. Prevent an attacker who has infiltrated your tenant from escalating their privileges through the credentials of an admin or priority account. The assumption is that your organization has already been infiltrated but and the attacker has not yet escalated their privileges.
 
-   Protect your ransomable targets: Step 1
-
-   Prevent credential escalation and privileged access: Step 2
-
-2. Prevent a ransomware attacker from getting in (not banked). (Step 3)
+2. Prevent a ransomware attacker from accessing your tenant. The assumption is that your organization has NOT already been infiltrated.
 
 ## Next steps
 

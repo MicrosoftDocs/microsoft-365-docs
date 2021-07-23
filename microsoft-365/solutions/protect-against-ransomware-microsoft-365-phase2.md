@@ -21,44 +21,53 @@ description: Step through protecting your Microsoft 365 resources from ransomwar
 
 # Step 2: Minimize privileged access and prevent credential escalation
 
+The best ways to minimize privileged access and prevent credential escalation are through:
+
+- Executing a privileged access strategy
+- Detecting and responding to a credential escalation
+
+High-privilege accounts are those for IT admins or priority users with access to ransomable resources.
 
 ## Privileged access strategy
 
-High-privilege accounts: IT admins or users with access to ransomable assets.
+### Prevent: Attacker can’t obtain privileged access
 
-### Prevent: Attacker can’t gain privileged access
+Ways to prevent escalation to a high-privilege account:
 
-- Change authentication for all high-privilege accounts
+- Change authentication requirements
 
    - New and strong password
 
    - Multi-factor authentication
 
-   - Use Conditional Access policies to lock down high-privilege accounts
+   - Use Conditional Access policies to lock down access requirements for high-privilege accounts
 
 - Use governance to determine which high-privilege accounts can be removed
 
 ### Mitigate: Attacker has privileged access, but can’t use it easily
 
-No standing access, approval process required
+Ways to keep an attacker from using an admin account:
 
-- Secure admin workstations for all M365 admin procedures
+- Secure admin workstations for all Microsoft 365 admin procedures
 - Use Azure AD Privileged Identity Management
 
-   Enrollment and approval process before admin account becomes usable
+   Requires and enrollment and approval process before the admin account becomes usable.
 
 - Privileged access management (PAM)
 
-Request just-in-time access to complete elevated and privileged tasks through a highly scoped and time-bounded approval workflow
+   Requires a request for just-in-time access to complete elevated and privileged tasks through a highly scoped and time-bounded approval workflow.
 
 ## Detection and response of credential escalation
 
+Ways to determine whether an attacker has escalated their privileges to a high-privilege account:
+
 - Azure AD Identity Protection
 
-   Monitor for password spray
+   Monitor for password spray attacks.
 
-- M365 Defender
+- Microsoft 365 Defender and Micrsoft Defender for Identity
 
+Once you discover a compromised high-privilege account, remove it.
 
 ## Next step
 
