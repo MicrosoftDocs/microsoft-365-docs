@@ -1,5 +1,5 @@
 ---
-title: Form processing overview Microsoft SharePoint Syntex
+title: Form processing overview in Microsoft SharePoint Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
