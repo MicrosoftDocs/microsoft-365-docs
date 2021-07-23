@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: ITPro
 ms.topic: overview
-ms.date: 07/21/2021
+ms.date: 07/23/2021
 ms.prod: m365-security
 ms.technology: mde
 localization_priority: Normal
@@ -55,8 +55,8 @@ The navigation bar on the left side of the screen enables you to move easily bet
 | **Endpoints** > **Search** |  |
 |  **Endpoints** > **Device inventory** | Navigates to your list of devices that are onboarded to Defender for Endpoint. Provides information about devices, such as their exposure and risk levels. To learn more, see [Device inventory](machines-view-overview.md). |
 |  **Endpoints** > **Configuration & baselines** | Expands to show **Security baselines** and **Configuration management**. |
-|  **Endpoints** > **Configuration & baselines** > **Security baselines** |  |
-|  **Endpoints** > **Configuration & baselines** > **Configuration mangement** |  |
+|  **Endpoints** > **Configuration & baselines** > **Security baselines** | Security baselines are pre-configured policies and groups of settings that can help you apply recommended security settings efficiently and effectively. Baselines include settings that are based on industry best practices. You can keep the default settings, or customize your baselines to suit your organization's needs. |
+|  **Endpoints** > **Configuration & baselines** > **Configuration management** | Navigates to the **Device configuration management** page, where you can view information about onboarded devices, and take steps to onboard more devices. |
 | **Reports** | Navigates to your reports, such as your [Threat protection report](threat-protection-reports.md), [Device health and compliance report](machine-reports.md), and your [Web protection report](web-protection-overview.md). |
 | **Health** | Includes links to the **Service health** and **Message center**.  |
 | **Health** > **Service health** | Navigates to the Service health page in the Microsoft 365 admin center. This page enables you to view health status across all the services available with your organization's subscriptions.   |
