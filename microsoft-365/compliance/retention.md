@@ -350,7 +350,7 @@ Items subject to eDiscovery hold also fall under the first principle of retentio
 
 ### Principles of retention examples that combine retain and delete actions
 
-The following examples are more complex to illustrate the principles of retention when retain and delete actions are combined. To make the examples easier to follow, they use the default setting of starting the retention period when the item is created.
+The following examples are more complex to illustrate the principles of retention when different retain and delete actions are combined. To make the examples easier to follow, all retention policies and labels use the default setting of starting the retention period when the item is created so the end of the retention period is the same for the item.
 
 1. An item has the following retention settings applied to it:
     
