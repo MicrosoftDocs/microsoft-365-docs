@@ -143,9 +143,9 @@ By default, you should be able to download files that are in quarantine.
 
 ![Image of download file action](images/atp-download-file-action.png)
 
-### Download quarantined files (preview)
+### Download quarantined files
 
-Files that have been quarantined by Microsoft Defender Antivirus or your security team will be saved in a compliant way according to your [sample submission configurations](enable-cloud-protection-microsoft-defender-antivirus.md). Your security team can download the files directly from the file’s detail page via the "Download file" button. **This feature is turned 'On' by default**.
+Files that have been quarantined by Microsoft Defender Antivirus or your security team will be saved in a compliant way according to your [sample submission configurations](enable-cloud-protection-microsoft-defender-antivirus.md). Your security team can download the files directly from the file’s detail page via the "Download file" button. **This preview feature is turned 'On' by default**.
 
 The location depends on your organization's geo settings (either EU, UK, or US). A quarantined file will only be collected once per organization. Learn more about Microsoft's data protection from the Service Trust Portal at https://aka.ms/STP.
 
