@@ -38,8 +38,7 @@ Follow these steps to add and manage non-custodial data sources in an Advanced e
    - **Exchange** - Click **Edit** to add mailboxes. Type a name or alias (a minimum of three characters) in the search box for mailboxes or distribution groups. Select the mailboxes that you want to add as non-custodian data sources and click **Add**.
 
    > [!NOTE]
-   > You can use the **SharePoint** and **Exchange** sections to add sites and mailboxes associated with a Team or Yammer group as non-custodial data sources. You have to separately add the mailbox and site associated with a Team or Yammer group.
-   >Adding a Root Site URL such as data source  "https://contoso-my.sharepoint.com/personal" or  "https://contoso-my.sharepoint.com/" will yield no results. Please use Sharepoint_All instead.
+   > You can use the **SharePoint** and **Exchange** sections to add sites and mailboxes associated with a Team or Yammer group as non-custodial data sources. You have to separately add the mailbox and site associated with a Team or Yammer group.<br/> Also, adding a root site URL (such as `https://contoso-my.sharepoint.com/personal/` or  `https://contoso-my.sharepoint.com/`) as a SharePoint data source isn't supported. You have to add specific sites.
 
 4. After you add non-custodial data sources, you have the option to place those locations on hold or not. Select or unselect the **Hold** checkbox next to the data source to place it on hold.
 
