@@ -21,6 +21,7 @@ ms.custom:
 - MiniMaven
 - MSB365
 - seo-marvel-mar
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150

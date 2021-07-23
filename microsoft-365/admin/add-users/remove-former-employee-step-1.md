@@ -19,6 +19,7 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - AdminSurgePortfolio
+- m365solution-removeemployee
 search.appverid:
 - BCS160
 - MET150
@@ -36,7 +37,7 @@ If you need to immediately prevent a user's sign-in access, you should reset the
 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.
 2. Select the box next to the user's name, and then select **Reset password**.
 3. Enter a new password, and then select **Reset**. (Don't send it to them.)
-4. Select the user's name to go to their properties pane, and on the **Account** tab, select **Initiate sign-out**.
+4. Select the user's name to go to their properties pane, and on the **Account** tab, select **Sign out of all sessions**.
 
 Within an hour - or after they leave the current Microsoft 365 page they are on - they're prompted to sign in again. An access token is good for an hour, so the timeline depends on how much time is left on that token, and whether they navigate out of their current webpage.
   
@@ -60,7 +61,12 @@ For more information about how long it takes to get someone out of email, see [W
 
 If you have email as part of your Microsoft 365 subscription, sign in to the Exchange admin center and follow these steps to block your former employee from accessing their email.
   
-1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>.
+1. Go to the <a href="https://admin.exchange.microsoft.com/" target="_blank">Exchange admin center</a>.
 2. In the Exchange admin center, navigate to **Recipients** \> **Mailboxes**.
-3. Double-click the user and go to the **Mailbox features** page. Under **Mobile Devices**, select **Disable Exchange ActiveSync** and **Disable OWA for Devices,** and answer **Yes** to both when prompted.
-4. Under **Email Connectivity**, select **Disable** and answer **Yes** when prompted.
+3. Double-click the user and go to **Manage email apps settings** under **Email apps**. Turn **Off** the slider for all the options; **Mobile (Exchange ActiveSync)**, **Outlook on the web**, **Outlook desktop (MAPI)**, **Exchange web services**, **POP3**, and **IMAP**.
+4. Select **Save**.
+
+## Related content
+
+[Exchange admin center in Exchange Online](/exchange/exchange-admin-center)
+[Restore a user](restore-user.md)

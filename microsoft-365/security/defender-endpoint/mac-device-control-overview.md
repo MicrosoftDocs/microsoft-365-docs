@@ -30,38 +30,14 @@ ms.technology: mde
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-[!include[Prerelease information](../../includes/prerelease.md)]
-
 ## Requirements
 
 Device control for macOS has the following prerequisites:
 
 >[!div class="checklist"]
 > - Microsoft Defender for Endpoint entitlement (can be trial)
-> - Minimum OS version: macOS 10.15.4 or higher
-> - Minimum product version: 101.24.59
-> - Your device must be running with system extensions (this is the default on macOS 11 Big Sur). 
-> 
->   You can check if your device is running on system extensions by running the following command and verify that it is printing `endpoint_security_extension` to the console: 
-> 
->   ```bash
->   mdatp health --field real_time_protection_subsystem 
->   ```
-> - Your device must be in `Beta` (previously called `InsiderFast`) Microsoft AutoUpdate update channel. For more information, see [Deploy updates for Microsoft Defender for Endpoint on Mac](mac-updates.md).
-> 
->   You can check the update channel using the following command: 
-> 
->    ```bash
->    mdatp health --field release_ring 
->    ```
->
->    If the above command does not print either `Beta` or `InsiderFast`, execute the following command from the Terminal. The channel update takes effect next time the product starts (when the next product update is installed or when the device is rebooted). 
-> 
->    ```bash
->    defaults write com.microsoft.autoupdate2 ChannelName -string Beta
->    ```
->
->    Alternatively, if you are in a managed environment (JAMF or Intune), you can configure the update channel remotely. For more information, see [Deploy updates for Microsoft Defender for Endpoint on Mac](mac-updates.md). 
+> - Minimum OS version: macOS 11 or higher
+> - Minimum product version: 101.34.20
 
 ## Device control policy
 
@@ -137,6 +113,9 @@ Under the removable media section, there is an option to set the enforcement lev
 
 - `audit` - Under this enforcement level, if access to a device is restricted, a notification is displayed to the user, however the device can still be used. This enforcement level can be useful to evaluate the effectiveness of a policy.
 - `block` - Under this enforcement level, the operations that the user can perform on the device are limited to what is defined in the policy. Furthermore, a notification is raised to the user. 
+
+> [!NOTE] 
+> By default, the enforcement level is set to `audit`. 
 
 |Section|Value|
 |:---|:---|
@@ -325,7 +304,7 @@ You can view mount, unmount, and volume change events originating from USB devic
 
 ```
 DeviceEvents 
-    | where ActionType == "UsbDriveMount" or ActionType == "UsbDriveUnmount" or ActionType == "UsbDriveDriveLetterChanged"
+    | where ActionType == "UsbDriveMounted" or ActionType == "UsbDriveUnmounted" or ActionType == "UsbDriveDriveLetterChanged"
     | where DeviceId == "<device ID>"
 ```
 

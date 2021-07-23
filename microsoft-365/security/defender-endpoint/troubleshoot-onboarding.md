@@ -295,6 +295,9 @@ If the verification fails and your environment is using a proxy to connect to th
 
 ## Troubleshoot onboarding issues on a server
 
+>[!NOTE]
+>The following troubleshooting guidance is only applicable for Windows Server 2016 and lower.
+
 If you encounter issues while onboarding a server, go through the following verification steps to address possible issues.
 
 - [Ensure Microsoft Monitoring Agent (MMA) is installed and configured to report sensor data to the service](configure-server-endpoints.md)
@@ -328,6 +331,13 @@ The steps below provide guidance for the following scenario:
 - Sensor does not start because the Out-of-box experience (OOBE) or first user logon has not been completed
 - Device is turned off or restarted before the end user performs a first logon
 - In this scenario, the SENSE service will not start automatically even though onboarding package was deployed
+
+> [!NOTE]
+> User Logon after OOBE is no longer required for SENSE service to start on the following or more recent Windows versions: 
+> Windows 10, version 1809 or Windows Server 2019 with [April 22 2021 update rollup](https://support.microsoft.com/kb/5001384). 
+> Windows 10, version 1909 with [April 2021 update rollup](https://support.microsoft.com/kb/5001396). 
+> Windows 10, version 2004/20H2 with [April 28 2021 update rollup](https://support.microsoft.com/kb/5001391). 
+
 
 > [!NOTE]
 > The following steps are only relevant when using Microsoft Endpoint Configuration Manager. For more details about onboarding using Microsoft Endpoint Configuration Manager, see [Microsoft Defender for Endpoint](/mem/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection).

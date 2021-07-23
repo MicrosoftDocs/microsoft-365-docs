@@ -18,7 +18,7 @@ ms.collection:
   - M365-security-compliance
   - m365solution-scenario
 ms.topic: article
-ms.date: 09/22/2020
+ms.date: 06/11/2021
 ms.reviewer: chventou
 ---
 
@@ -48,20 +48,18 @@ We recommend using We recommend using [Microsoft Endpoint Manager](/mem), which 
 |**Enable Network Protection** to help prevent employees from using apps that malicious content on the Internet <br/><br/>*We recommend using [audit mode](/microsoft-365/security/defender-endpoint/evaluate-network-protection) at first for network protection in a test environment to see which apps would be blocked before rolling out.* |[Turn on network protection with Configuration Manager](/microsoft-365/security/defender-endpoint/enable-network-protection#microsoft-endpoint-configuration-manager)  |
 |**Configure controlled folder access** to protect against ransomware <br/><br/>*Controlled folder access is also referred to as antiransomware protection.*   |[Endpoint protection: Controlled folder access](/mem/intune/protect/endpoint-protection-windows-10#controlled-folder-access) <br/><br/>[Enable controlled folder access in Microsoft Endpoint Configuration Manage](/microsoft-365/security/defender-endpoint/enable-controlled-folders#microsoft-endpoint-configuration-manager) |
 
-## Configure your Microsoft Defender Security Center
+## Configure your Microsoft 365 Defender portal
 
-If you haven't already done so, **configure your Microsoft Defender Security Center** ([https://securitycenter.windows.com](https://securitycenter.windows.com)) to view alerts, configure threat protection features, and view detailed information about your organization's overall security posture. 
+If you haven't already done so, configure your Microsoft 365 Defender portal to view alerts, configure threat protection features, and view detailed information about your organization's overall security posture. See [Microsoft 365 Defender portal](microsoft-defender-security-center.md). You can also configure whether and what features end users can see in the Microsoft 365 Defender portal.
 
-You can also configure whether and what features end users can see in the Microsoft Defender Security Center.
+- [Overview of Microsoft 365 Defender](/microsoft-365/security/defender-endpoint/use)
 
-- [Overview of the Microsoft Defender Security Center](/microsoft-365/security/defender-endpoint/use)
-
-- [Endpoint protection: Microsoft Defender Security Center](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-security-center)
+- [Endpoint protection: Microsoft 365 Defender](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-security-center)
 
 ## Next steps
 
 - [Get an overview of threat and vulnerability management](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 
-- [Visit the Microsoft Defender Security Center security operations dashboard](/microsoft-365/security/defender-endpoint/security-operations-dashboard)
+- [Visit the Microsoft 365 Defender portal security operations dashboard](/microsoft-365/security/defender-endpoint/security-operations-dashboard)
 
 - [Manage Microsoft Defender for Endpoint with Intune](manage-atp-post-migration-intune.md)

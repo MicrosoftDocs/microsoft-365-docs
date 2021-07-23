@@ -27,13 +27,13 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 ## Overview
 
 Client behavioral blocking is a component of [behavioral blocking and containment capabilities](behavioral-blocking-containment.md) in Defender for Endpoint. As suspicious behaviors are detected on devices (also referred to as clients or endpoints), artifacts (such as files or applications) are blocked, checked, and remediated automatically. 
 
-:::image type="content" source="images/pre-execution-and-post-execution-detection-engines.png" alt-text="Cloud and client protection":::
+:::image type="content" alt-text="Cloud and client protection" source="images/pre-execution-and-post-execution-detection-engines.png" lightbox="images/pre-execution-and-post-execution-detection-engines.png":::
 
 Antivirus protection works best when paired with cloud protection.
 
@@ -41,7 +41,7 @@ Antivirus protection works best when paired with cloud protection.
 
 [Microsoft Defender Antivirus](microsoft-defender-antivirus-in-windows-10.md) can detect suspicious behavior, malicious code, fileless and in-memory attacks, and more on a device. When suspicious behaviors are detected, Microsoft Defender Antivirus monitors and sends those suspicious behaviors and their process trees to the cloud protection service. Machine learning differentiates between malicious applications and good behaviors within milliseconds, and classifies each artifact. In almost real time, as soon as an artifact is found to be malicious, it's blocked on the device. 
 
-Whenever a suspicious behavior is detected, an [alert](alerts-queue.md) is generated, and is visible in the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)).
+Whenever a suspicious behavior is detected, an [alert](alerts-queue.md) is generated, and is visible in the [Microsoft 365 Defender portal](microsoft-defender-security-center.md) (formerly Microsoft 365 Defender).
 
 Client behavioral blocking is effective because it not only helps prevent an attack from starting, it can help stop an attack that has begun executing. And, with [feedback-loop blocking](feedback-loop-blocking.md) (another capability of behavioral blocking and containment), attacks are prevented on other devices in your organization.
 
@@ -49,26 +49,24 @@ Client behavioral blocking is effective because it not only helps prevent an att
 
 Behavior-based detections are named according to the [MITRE ATT&CK Matrix for Enterprise](https://attack.mitre.org/matrices/enterprise). The naming convention helps identify the attack stage where the malicious behavior was observed:
 
-
-|Tactic |	Detection threat name |
+|Tactic | Detection threat name |
 |----|----|
-|Initial Access	| `Behavior:Win32/InitialAccess.*!ml` |
-|Execution	| `Behavior:Win32/Execution.*!ml` |
-|Persistence	| `Behavior:Win32/Persistence.*!ml` |
-|Privilege Escalation	| `Behavior:Win32/PrivilegeEscalation.*!ml` |
-|Defense Evasion	| `Behavior:Win32/DefenseEvasion.*!ml` |
-|Credential Access	| `Behavior:Win32/CredentialAccess.*!ml` |
-|Discovery	| `Behavior:Win32/Discovery.*!ml` |
-|Lateral Movement |	`Behavior:Win32/LateralMovement.*!ml` |
-|Collection |	`Behavior:Win32/Collection.*!ml` |
+|Initial Access | `Behavior:Win32/InitialAccess.*!ml` |
+|Execution | `Behavior:Win32/Execution.*!ml` |
+|Persistence | `Behavior:Win32/Persistence.*!ml` |
+|Privilege Escalation | `Behavior:Win32/PrivilegeEscalation.*!ml` |
+|Defense Evasion | `Behavior:Win32/DefenseEvasion.*!ml` |
+|Credential Access | `Behavior:Win32/CredentialAccess.*!ml` |
+|Discovery | `Behavior:Win32/Discovery.*!ml` |
+|Lateral Movement | `Behavior:Win32/LateralMovement.*!ml` |
+|Collection | `Behavior:Win32/Collection.*!ml` |
 |Command and Control | `Behavior:Win32/CommandAndControl.*!ml` |
-|Exfiltration	| `Behavior:Win32/Exfiltration.*!ml` |
-|Impact	| `Behavior:Win32/Impact.*!ml` |
-|Uncategorized	| `Behavior:Win32/Generic.*!ml` |
+|Exfiltration | `Behavior:Win32/Exfiltration.*!ml` |
+|Impact | `Behavior:Win32/Impact.*!ml` |
+|Uncategorized | `Behavior:Win32/Generic.*!ml` |
 
 > [!TIP]
 > To learn more about specific threats, see **[recent global threat activity](https://www.microsoft.com/wdsi/threats)**.
-
 
 ## Configuring client behavioral blocking
 
@@ -83,4 +81,3 @@ If your organization is using Defender for Endpoint, client behavioral blocking 
 - [Attack surface reduction](attack-surface-reduction.md)
 
 - [Next-generation protection](configure-microsoft-defender-antivirus-features.md) (antivirus, antimalware, and other threat protection capabilities)
-

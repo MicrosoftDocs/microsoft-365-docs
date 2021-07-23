@@ -29,17 +29,12 @@ ms.technology: mde
 - [Threat and vulnerability management](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> [!IMPORTANT]
-> **Scanning and managing network devices is currently in public preview**<br>
-> This preview version is provided without a service level agreement, and it's not recommended for production workloads. Certain features might not be supported or might have constrained capabilities.
-> For more information, see [Microsoft Defender for Endpoint preview features](preview.md).
-
 >Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 > [!NOTE]  
 > The [Network device discovery and vulnerability assessments](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/network-device-discovery-and-vulnerability-assessments/ba-p/2267548) Blog \(published 04-13-2021\) provides insights into the new **Network device discovery** capabilities in Defender for Endpoint. This article provides an overview of the challenge that **Network device discovery** is designed to address, and detailed information about how get started using these new capabilities.
 
-Network discovery capabilities are available in the **Device inventory** section of the Microsoft 365 security center and Microsoft Defender Security Center consoles.  
+Network discovery capabilities are available in the **Device inventory** section of the Microsoft 365 security center and Microsoft 365 Defender consoles.  
 
 A designated Microsoft Defender for Endpoint device will be used on each network segment to perform periodic authenticated scans of preconfigured network devices. Once discovered, Defender for Endpoint’s threat and vulnerability management capabilities provide integrated workflows to secure discovered switches, routers, WLAN controllers, firewalls, and VPN gateways.  
 
@@ -90,7 +85,7 @@ Your first step is to select a device that will perform the authenticated networ
 8. To allow the network scanner to be authenticated and work properly, it's essential that you add the following domains/URLs:
 
     - login.windows.net  
-    - *.securitycenter.windows.com
+    - *.security.microsoft.com
     - login.microsoftonline.com
     - *.blob.core.windows.net/networkscannerstable/ *
 
@@ -104,7 +99,7 @@ To configure assessment jobs, the following user permission option is required: 
 ## Install the network scanner
 
 1. Go to **Microsoft 365 security** > **Settings** > **Endpoints** > **Assessment jobs** (under **Network assessments**).
-    1. In the Microsoft Defender Security Center, go to Settings > Assessment jobs page.
+    1. In the Microsoft 365 Defender portal, go to Settings > Assessment jobs page.
 
 2. Download the network scanner and install it on the designated Defender for Endpoint assessment device.
 

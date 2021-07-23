@@ -29,7 +29,7 @@ The information in this article supplements [Learn about retention](retention.md
 
 ## What's included for retention and deletion
 
-The following Exchange items can be retained and deleted by using retention policies and retention labels: Mail messages (includes drafts) with any attachments, tasks when they have an end date, and notes. 
+The following Exchange items from user mailboxes and shared mailboxes can be retained and deleted by using retention policies and retention labels: Mail messages (includes received messages, drafts, sent messages) with any attachments, tasks when they have an end date, and notes. 
 
 Calendar items that have an end date are supported for retention policies but aren't supported for retention labels.
 
@@ -78,7 +78,9 @@ When the retention settings are retain-only, or delete-only, the contents paths 
 
 ## When a user leaves the organization 
 
-If a user leaves your organization and the user's mailbox is included in a retention policy, the mailbox becomes an inactive mailbox when the user's Microsoft 365 account is deleted. The contents of an inactive mailbox are still subject to any retention policy that was placed on the mailbox before it was made inactive, and the contents are available to an eDiscovery search. For more information, see [Inactive mailboxes in Exchange Online](inactive-mailboxes-in-office-365.md).
+If a user leaves your organization and the user's mailbox is included in a policy for retention, the mailbox becomes an inactive mailbox when the user's Microsoft 365 account is deleted. The contents of an inactive mailbox are still subject to any retention policy that was placed on the mailbox before it was made inactive, and the contents are available to an eDiscovery search. For more information, see [Inactive mailboxes in Exchange Online](inactive-mailboxes-in-office-365.md).
+
+When the retention settings no longer apply because the data is permanently deleted or the retention period has expired, the Exchange admin can now [delete the mailbox](delete-an-inactive-mailbox.md). In this scenario, the inactive mailbox isn't automatically deleted.
 
 ## Configuration guidance
 

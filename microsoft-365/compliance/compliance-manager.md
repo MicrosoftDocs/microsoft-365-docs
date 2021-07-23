@@ -2,8 +2,8 @@
 title: "Microsoft Compliance Manager"
 f1.keywords:
 - NOCSH
-ms.author: chvukosw
-author: chvukosw
+ms.author: v-jgriffee
+author: jmgriffee
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -30,7 +30,7 @@ Compliance Manager is now generally available (GA) as an end-to-end compliance m
 What began as the public preview of Compliance Score has evolved into a centralized tool with enhanced compliance management capabilities and greater ease of use.  The GA release brings a larger collection of pre-built assessments to help you scale your compliance activities.
 
 **Learn more about the GA release:**
-- Our [frequently asked questions](compliance-manager-faq.md) walk you through the evolution in greater detail.
+- Our [frequently asked questions](compliance-manager-faq.yml) walk you through the evolution in greater detail.
 - Read about GA feature enhancements in [this blog post](https://aka.ms/compliancemanager/GAblog).
 
 Watch the video below to learn how Compliance Manager can help simplify how your organization manages compliance:

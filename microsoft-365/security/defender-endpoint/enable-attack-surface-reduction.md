@@ -30,7 +30,10 @@ ms.date: 06/02/2021
 
 [Attack surface reduction rules](attack-surface-reduction.md) (ASR rules) help prevent actions that malware often abuses to compromise devices and networks.
 
-**Requirements**
+## Requirements
+
+Attack surface reduction features across Windows versions
+
 You can set attack surface reduction rules for devices that are running any of the following editions and versions of Windows:
 
 - Windows 10 Pro, [version 1709](/windows/whats-new/whats-new-windows-10-version-1709) or later
@@ -38,7 +41,13 @@ You can set attack surface reduction rules for devices that are running any of t
 - Windows Server, [version 1803 (Semi-Annual Channel)](/windows-server/get-started/whats-new-in-windows-server-1803) or later
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
-Although attack surface reduction rules don't require a [Windows E5 license](/windows/deployment/deploy-enterprise-licenses), if you have Windows E5, you get advanced management capabilities. These capabilities available only in Windows E5 include monitoring, analytics, and workflows available in [Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint?view=o365-worldwide&preserve-view=true), as well as reporting and configuration capabilities in the [Microsoft 365 security center](/microsoft-365/security/defender/overview-security-center?view=o365-worldwide&preserve-view=true). These advanced capabilities aren't available with a Windows Professional or Windows E3 license; however, if you do have those licenses, you can use Event Viewer and Microsoft Defender Antivirus logs to review your attack surface reduction rule events.
+To use the entire feature-set of attack surface reduction rules, you need:
+
+- Windows Defender Antivirus as primary AV (real-time protection on)
+- [Cloud-Delivery Protection](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) on (some rules require that)
+- Windows 10 Enterprise E5 or E3 License or Microsoft 365 Business License
+
+Although attack surface reduction rules don't require a [Windows E5 license](/windows/deployment/deploy-enterprise-licenses), with a Windows E5 license, you get advanced management capabilities including monitoring, analytics, and workflows available in Defender for Endpoint, as well as reporting and configuration capabilities in the Microsoft 365 security center. These advanced capabilities aren't available with an E3 license, but you can still use Event Viewer to review attack surface reduction rule events.
 
 Each ASR rule contains one of four settings:
 
@@ -50,7 +59,7 @@ Each ASR rule contains one of four settings:
 > [!IMPORTANT]
 > Currently, warn mode is not supported for three ASR rules when you configure ASR rules in Microsoft Endpoint Manager (MEM). To learn more, see [Cases where warn mode is not supported](attack-surface-reduction.md#cases-where-warn-mode-is-not-supported).
 
-It's highly recommended to use ASR rules with a Windows E5 license (or similar licensing SKU) to take advantage of the advanced monitoring and reporting capabilities available in [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) (Defender for Endpoint). However, if you have another license, such as Windows Professional or Windows E3 that don't include advanced monitoring and reporting capabilities, you can develop your own monitoring and reporting tools on top of the events that are generated at each endpoint when ASR rules are triggered (e.g., Event Forwarding).
+It's highly recommended to use ASR rules with a Windows E5 license (or similar licensing SKU) to take advantage of the advanced monitoring and reporting capabilities available in [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) (Defender for Endpoint). However, if you have another license, such as Windows Professional or Windows E3 that don't include advanced monitoring and reporting capabilities, you can develop your own monitoring and reporting tools on top of the events that are generated at each endpoint when ASR rules are triggered (for example, Event Forwarding).
 
 > [!TIP]
 > To learn more about Windows licensing, see [Windows 10 Licensing](https://www.microsoft.com/licensing/product-licensing/windows10?activetab=windows10-pivot:primaryr5) and get the [Volume Licensing guide for Windows 10](https://download.microsoft.com/download/2/D/1/2D14FE17-66C2-4D4C-AF73-E122930B60F6/Windows-10-Volume-Licensing-Guide.pdf).
@@ -95,7 +104,7 @@ The following procedures for enabling ASR rules include instructions for how to 
 
 ## MEM
 
-You can use Microsoft Endpoint Manager (MEM) OMA-URI to configure custom ASR rules. The following procedure uses the rule [Block abuse of exploited vulnerable signed drivers](attack-surface-reduction.md#block-abuse-of-exploited-vulnerable-signed-drivers) for the example.
+You can use Microsoft Endpoint Manager (MEM) OMA-URI to configure custom ASR rules. The following procedure uses the rule [Block abuse of exploited vulnerable signed drivers](attack-surface-reduction-rules.md#block-abuse-of-exploited-vulnerable-signed-drivers) for the example.
 
 1. Open the Microsoft Endpoint Manager (MEM) admin center. In the **Home** menu, click  **Devices**, select **Configuration profile**, and then click **Create profile**.
 
@@ -168,16 +177,16 @@ You can use Microsoft Endpoint Manager (MEM) OMA-URI to configure custom ASR rul
 
 >[!NOTE]
 > Conflict handling:
-> 
+>
 > If you assign a device two different ASR policies, the way conflict is handled is rules that are assigned different states, there is no conflict management in place, and the result is an error.
-> 
+>
 > Non-conflicting rules will not result in an error, and the rule will be applied correctly. The result is that the first rule is applied, and subsequent non-conflicting rules are merged into the policy.
 
 ## MDM
 
 Use the [./Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionRules](/windows/client-management/mdm/policy-csp-defender#defender-attacksurfacereductionrules) configuration service provider (CSP) to individually enable and set the mode for each rule.
 
-The following is a sample for reference, using [GUID values for ASR rules](attack-surface-reduction.md#attack-surface-reduction-rules).
+The following is a sample for reference, using GUID values for [attack surface reduction rules](attack-surface-reduction-rules.md).
 
 `OMA-URI path: ./Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionRules`
 

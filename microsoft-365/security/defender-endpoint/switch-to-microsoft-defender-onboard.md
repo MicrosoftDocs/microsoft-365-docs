@@ -17,9 +17,11 @@ audience: ITPro
 ms.collection: 
   - M365-security-compliance
   - m365solution-migratetomdatp
+  - m365solution-mcafeemigrate
+  - m365solution-symantecmigrate
 ms.custom: migrationguides
 ms.topic: article
-ms.date: 05/20/2021
+ms.date: 06/14/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ---
 
@@ -45,9 +47,9 @@ ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 
 ## Onboard devices to Microsoft Defender for Endpoint
 
-1. Go to the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)) and sign in.
+1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
-2. Choose **Settings** > **Device management** > **Onboarding**. 
+2. Choose **Settings** > **Endpoints** > **Onboarding** (under **Device management**). 
 
 3. In the **Select operating system to start onboarding process** list, select an operating system. 
 
@@ -62,7 +64,7 @@ Deployment methods vary, depending on operating system and preferred methods. Th
 | Windows 10     | [Group Policy](configure-endpoints-gp.md)<p>[Configuration Manager](configure-endpoints-sccm.md)<p>[Mobile Device Management (Intune)](configure-endpoints-mdm.md)<p>[Local script](configure-endpoints-script.md) <p>**NOTE**: A local script is suitable for a proof of concept but should not be used for production deployment. For a production deployment, we recommend using Group Policy, Microsoft Endpoint Configuration Manager, or Intune.         |
 | Windows 8.1 Enterprise <p>Windows 8.1 Pro <p>Windows 7 SP1 Enterprise <p>Windows 7 SP1 Pro     | [Microsoft Monitoring Agent](onboard-downlevel.md)<p>**NOTE**: Microsoft Monitoring Agent is now Azure Log Analytics agent. To learn more, see [Log Analytics agent overview](/azure/azure-monitor/platform/log-analytics-agent).        |
 | Windows Server 2019 and later <p>Windows Server 2019 core edition <p>Windows Server version 1803 and later | [Local script](configure-endpoints-script.md) <p>[Group Policy](configure-endpoints-gp.md) <p>[Configuration Manager](configure-endpoints-sccm.md) <p>[System Center Configuration Manager](configure-endpoints-sccm.md) <p>[VDI onboarding scripts for non-persistent devices](configure-endpoints-vdi.md) <p>**NOTE**: A local script is suitable for a proof of concept but should not be used for production deployment. For a production deployment, we recommend using Group Policy, Microsoft Endpoint Configuration Manager, or Intune.    |
-| Windows Server 2016 <p>Windows Server 2012 R2 <p>Windows Server 2008 R2 SP1  | [Microsoft Defender Security Center](configure-server-endpoints.md)<p>[Azure Defender](/azure/security-center/security-center-wdatp) |
+| Windows Server 2016 <p>Windows Server 2012 R2 <p>Windows Server 2008 R2 SP1  | [Microsoft 365 Defender portal](configure-server-endpoints.md)<p>[Azure Defender](/azure/security-center/security-center-wdatp) |
 | macOS:<p>11.3.1 (Big Sur) <p>10.15 (Catalina)<p>10.14 (Mojave) | [Onboard non-Windows devices](configure-endpoints-non-windows.md)  |
 | iOS | [Onboard non-Windows devices](configure-endpoints-non-windows.md)  |
 | Linux:<p>RHEL 7.2+<p>CentOS Linux 7.2+<p>Ubuntu 16 LTS, or higher LTS<p>SLES 12+<p>Debian 9+<p>Oracle Linux 7.2 | [Onboard non-Windows devices](configure-endpoints-non-windows.md)  |
@@ -96,7 +98,7 @@ To set Microsoft Defender Antivirus to passive mode on Windows Server, version 1
 1. Open Registry Editor, and then navigate to <br/>
    `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`.
 
-2. Edit (or create) a DWORD entry called **ForcePassiveMode**, and specify the following settings:
+2. Edit (or create) a DWORD entry called **ForceDefenderPassiveMode**, and specify the following settings:
    - Set the DWORD's value to **1**.
    - Under **Base**, select **Hexadecimal**.
 
@@ -144,5 +146,5 @@ Now that you have onboarded to Defender for Endpoint, and you have uninstalled y
 
 **Congratulations**! You have completed your [migration to Defender for Endpoint](switch-to-microsoft-defender-migration.md#the-migration-process)! 
 
-- [Visit your security operations dashboard](security-operations-dashboard.md) in the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)). 
+- [Visit your security operations dashboard](security-operations-dashboard.md) in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). 
 - [Manage Defender for Endpoint, post migration](manage-atp-post-migration.md).

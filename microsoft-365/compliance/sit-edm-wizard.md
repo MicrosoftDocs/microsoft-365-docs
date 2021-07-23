@@ -23,9 +23,6 @@ ms.custom: seo-marvel-apr2020
 
 [Creating a custom sensitive information type with Exact Data Match (EDM) based classification](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)  involves many steps.  You can use this wizard to create your schema and sensitive information type (SIT) pattern (rule package) files to help simplify the process.
 
-> [!NOTE]
-> The Exact Data Match Schema and Sensitive Information Type Wizard is only available for the World Wide and GCC clouds only.
-
 This wizard can be used instead of the:
 
 - [Define the schema for your database of sensitive information](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md#define-the-schema-for-your-database-of-sensitive-information)
@@ -37,7 +34,7 @@ steps in [Part 1: Set up EDM-based classification](create-custom-sensitive-infor
 
 1. Familiarize yourself with the steps to create a custom sensitive information type with EDM [work flow at a glance](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md#the-work-flow-at-a-glance).
 
-2. Perform the steps in the [Save sensitive data in .csv format](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md#save-sensitive-data-in-csv-format) section.
+2. Perform the steps in [Save sensitive data in .csv or .tsv format](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md#save-sensitive-data-in-csv-or-tsv-format).
 
 ## Use the exact data match schema and sensitive information type pattern wizard
 

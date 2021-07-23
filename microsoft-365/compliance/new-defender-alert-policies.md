@@ -51,7 +51,7 @@ For the following table identifies the default alert policies whose severity cla
 | **Unusual increase in email reported as phish** | A00D8C62-9320-4EEA-A7E5-966B9AC09558 | High| Medium |
 | **Admin Submission result completed** | AE9B83DD-6039-4EA9-B675-6B0AC3BF4A41 | Low| Informational |
 | **Creation of forwarding/redirect rule** | D59A8FD4-1272-41EE-9408-86F7BCF72479 | Low| Informational |
-| e**Discovery search started or exported**​| 6FDC5710-3998-47F0-AFBB-57CEFD7378AE | Medium| Informational |
+| **eDiscovery search started or exported** | 6FDC5710-3998-47F0-AFBB-57CEFD7378A | Meduim | Informational |
 |||||
 
 ## When will these changes happen

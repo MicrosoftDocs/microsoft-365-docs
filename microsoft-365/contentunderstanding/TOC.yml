@@ -48,6 +48,8 @@
           href: adoption-getstarted.md
         - name: Scenarios and use cases
           href: adoption-scenarios.md 
+        - name: Run a trial
+          href: trial-syntex.md 
 
         - name: Manage contracts in Microsoft 365
           items:
@@ -57,7 +59,7 @@
               href: solution-manage-contracts-step1.md
             - name: Step 2. Use Microsoft Teams
               href: solution-manage-contracts-step2.md
-            - name: Step 3. Power Automate
+            - name: Step 3. Use Power Automate
               href: solution-manage-contracts-step3.md
 
     - name: Setup and administration
@@ -77,8 +79,28 @@
           href: push-content-type-to-hub.md
         - name: Term store reports
           href: term-store-analytics.md
-        
-        
+     
+    - name: REST API
+      items:
+        - name: Overview
+          href: rest-api/syntex-model-rest-api.md
+        - name: Create model
+          href: rest-api/rest-createmodel-method.md
+        - name: GetByUniqueId
+          href: rest-api/rest-getbyuniqueid-method.md
+        - name: GetByTitle
+          href: rest-api/rest-getbytitle-method.md
+        - name: Apply model
+          href: rest-api/rest-applymodel-method.md
+        - name: Get model and library information
+          href: rest-api/rest-getmodelandlibraryinfo.md
+        - name: UpdateModelSettings
+          href: rest-api/rest-updatemodelsettings-method.md        
+        - name: BatchDelete
+          href: rest-api/rest-batchdelete-method.md
+        - name: Create classification request
+          href: rest-api/rest-createclassificationrequest.md
+
 
 
 

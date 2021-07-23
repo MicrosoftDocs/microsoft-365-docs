@@ -36,10 +36,15 @@ ms.technology: mde
 
 3. Create an Event Hub Namespace, go to **Event Hub > Add** and select the pricing tier, throughput units and Auto-Inflate appropriate for expected load. For more information, see [Pricing - Event Hub | Microsoft Azure](https://azure.microsoft.com/en-us/pricing/details/event-hubs/).  
 
-### Add contributor permissions 
-Once the Event Hub namespace is created you will need to add the App Registration Service Principal as Reader, Azure Event Hub Data Receiver, and the user who will be logging into Microsoft 365 Defender as Contributor (this can also be done at Resource Group or Subscription level). 
+### Add contributor permissions
 
-Go to **Event hubs namespace > Access control (IAM) > Add** and verify under **Role assignments**.
+Once the Event Hub namespace is created you will need to:
+
+1. Define the user who will be logging into Microsoft 365 Defender as Contributor.
+
+2. If you are connecting to an application, add the App Registration Service Principal as Reader, Azure Event Hub Data Receiver (this can also be done at Resource Group or Subscription level). 
+
+    Go to **Event hubs namespace > Access control (IAM) > Add** and verify under **Role assignments**.
 
 ## Enable raw data streaming
 
@@ -65,17 +70,17 @@ Go to **Event hubs namespace > Access control (IAM) > Add** and verify under **R
 
 ## The schema of the events in Azure Event Hub
 
-```
+```JSON
 {
-	"records": [
-					{
-						"time": "<The time Microsoft 365 Defender received the event>"
-						"tenantId": "<The Id of the tenant that the event belongs to>"
-						"category": "<The Advanced Hunting table name with 'AdvancedHunting-' prefix>"
-						"properties": { <Microsoft 365 Defender Advanced Hunting event as Json> }
-					}
-					...
-				]
+   "records": [
+               {
+                  "time": "<The time Microsoft 365 Defender received the event>"
+                  "tenantId": "<The Id of the tenant that the event belongs to>"
+                  "category": "<The Advanced Hunting table name with 'AdvancedHunting-' prefix>"
+                  "properties": { <Microsoft 365 Defender Advanced Hunting event as Json> }
+               }
+               ...
+            ]
 }
 ```
 
@@ -87,9 +92,6 @@ Go to **Event hubs namespace > Access control (IAM) > Add** and verify under **R
 
 - In Advanced Hunting, the **DeviceInfo** table has a column named **MachineGroup** which contains the group of the device. Here every event will be decorated with this column as well. 
 
-
-
-
 ## Data types mapping
 
 To get the data types for event properties do the following:
@@ -97,8 +99,8 @@ To get the data types for event properties do the following:
 1. Log in to [Microsoft 365 security center](https://security.microsoft.com) and go to [Advanced Hunting page](https://security.microsoft.com/hunting-package).
 
 2. Run the following query to get the data types mapping for each event:
- 
-   ```
+
+   ```kusto
    {EventType}
    | getschema
    | project ColumnName, ColumnType 
@@ -109,6 +111,7 @@ To get the data types for event properties do the following:
   ![Image of Event Hub resource Id2](../defender-endpoint/images/machine-info-datatype-example.png)
 
 ## Related topics
+
 - [Overview of Advanced Hunting](advanced-hunting-overview.md)
 - [Microsoft 365 Defender streaming API](streaming-api.md)
 - [Stream Microsoft 365 Defender events to your Azure storage account](streaming-api-storage.md)

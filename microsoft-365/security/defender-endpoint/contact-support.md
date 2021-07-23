@@ -51,12 +51,12 @@ Accessing the new support widget can be done in one of two ways:
 
 1.  Clicking on the question mark on the top right of the portal and then clicking on "Microsoft support":
 
-    ![Image of widget when question mark is selected](images/support-widget.png)
-
-2. Clicking on the **Need help?**  button in the bottom right of the Microsoft Defender Security Center:
+    :::image type="content" source="../../media/contactsupport.png" alt-text="Microsoft support":::
 
 
-    ![Image of the need help button](images/need-help.png)
+2. Clicking on the **Need help?**  button in the bottom right of the Microsoft 365 Defender portal:
+
+    ![Image of the need help button](images/need-help-option.png)
 
 In the widget you will be offered two options:
 
@@ -66,7 +66,7 @@ In the widget you will be offered two options:
 ## Find solutions to common problems
 This option includes articles that might be related to the question you may ask. Just start typing the question in the search box and articles related to your search will be surfaced.
 
-![Image of need help widget](images/Support3.png)
+:::image type="content" source="../../media/contactsupport1.png" alt-text="How can we help?":::
 
 In case the suggested articles are not sufficient, you can open a service request.
 
@@ -79,10 +79,11 @@ Learn how to open support tickets by contacting Defender for Endpoint support.
 
 ### Contact support
 This option is available by clicking the icon that looks like a headset. You will then get the following page to submit your support case:
+:::image type="content" source="../../media/contactsupport2.png" alt-text="contact support 2":::
 
-![Image of the open a service request widget](images/Support4.png)
+![Image of the open a service request widget](images/contact-support-screen.png)
 
-1. Fill in a title and description for the issue you are facing, as well as a phone number and email address where we may reach you. 
+1. Fill in a title and description for the issue you are facing, as well as a phone number and email address where we may reach you.
 
 2. (Optional) Include up to five attachments that are relevant to the issue in order to provide additional context for the support case. 
 
