@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: ITPro
 ms.topic: overview
-ms.date: 07/21/2021
+ms.date: 07/23/2021
 ms.prod: m365-security
 ms.technology: mde
 localization_priority: Normal
@@ -17,7 +17,7 @@ f1.keywords: NOCSH
 
 # Set up and configure Microsoft Defender for Endpoint Plan 1 (preview)
 
-As a preview customer, you likely have assistance in setting up and configuring Defender for Endpoint Plan 1. However, just in case you're curious about what the setup and configuration process looks like, use this article as a guide.
+As a preview customer, you likely have assistance in setting up and configuring Defender for Endpoint Plan 1 (preview). However, just in case you're curious about what the setup and configuration process looks like, use this article as a guide.
 
 ## The setup and configuration process at a glance
 
@@ -40,7 +40,7 @@ The following table lists the basic requirements for Defender for Endpoint Plan 
 
 | Requirement | Description |
 |:---|:---|
-| Licensing requirements | Defender for Endpoint Plan 1 (preview) |
+| Licensing requirements | Defender for Endpoint Plan 1 (preview) <p>*If you have Microsoft 365 E3, you can join the preview program.* |
 | Browser requirements | Microsoft Edge <br/> Internet Explorer version 11 <br/> Google Chrome |
 | Operating system | Windows 10, version 1709 or later <br/> macOS <br/>iOS <br/>Android OS  |
 | Datacenter | One of the following datacenter locations: <br/>- European Union <br/>- United Kingdom <br/>- United States |
