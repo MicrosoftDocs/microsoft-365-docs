@@ -75,8 +75,8 @@ The following steps guide you on how to create roles in Microsoft 365 Defender. 
 
 - **Live response capabilities**
     - **Basic** commands:
-        - Start a live response session
-        - Perform read only live response commands on remote device (excluding file copy and execution
+        - Start a live-response session
+        - Perform read-only live-response commands on remote device (excluding file copy and execution)
     - **Advanced** commands:
         - Download a file from the remote device via live response
         - Download PE and non-PE files from the file page
