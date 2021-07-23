@@ -9,7 +9,7 @@ manager: dansimp
 audience: ITPro
 ms.topic: overview
 ms.date: 07/23/2021
-ms.prod: security
+ms.prod: m365-security
 ms.technology: mde
 localization_priority: Normal
 f1.keywords: NOCSH  
