@@ -108,5 +108,5 @@ Extract that archive and you'll have many files available for troubleshooting pu
 The most relevant files are as follows:
 
 - **MPOperationalEvents.txt** - This file contains same level of information found in Event Viewer for Windows Defender’s Operational log.
-- **MPRegistry.txt** – In this file you will can analyze all the current Windows Defender configurations, from the moment the support logs were captured.
+- **MPRegistry.txt** – In this file you can analyze all the current Windows Defender configurations, from the moment the support logs were captured.
 - **MPLog.txt** – This log contains more verbose information about all the actions/operations of the Windows Defender.
