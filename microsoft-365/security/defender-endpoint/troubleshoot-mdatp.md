@@ -36,9 +36,9 @@ If you encounter a server error when trying to access the service, you’ll need
 Configure your browser to allow cookies.
 
 ## Elements or data missing on the portal
-If some elements or data is missing on Microsoft Defender Security Center it’s possible that proxy settings are blocking it.
+If some elements or data is missing on Microsoft 365 Defender it’s possible that proxy settings are blocking it.
 
-Make sure that `*.securitycenter.windows.com` is included the proxy allowlist.
+Make sure that `*.security.microsoft.com` is included the proxy allowlist.
 
 
 > [!NOTE]
@@ -76,10 +76,6 @@ Support of use of comma as a separator in numbers are not supported. Regions whe
 
 ## Microsoft Defender for Endpoint tenant was automatically created in Europe
 When you use Azure Defender to monitor servers, a Microsoft Defender for Endpoint tenant is automatically created. The Microsoft Defender for Endpoint data is stored in Europe by default.
-
-
-
-
 
 ## Related topics
 - [Troubleshoot Microsoft Defender for Endpoint onboarding issues](troubleshoot-onboarding.md)
