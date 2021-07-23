@@ -1,5 +1,5 @@
 ---
-title: Leverage term store taxonomy when creating an extractor
+title: Leverage term store taxonomy when creating an extractor in Microsoft SharePoint Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -15,7 +15,7 @@ localization_priority: Priority
 description: Use term store taxonomy when creating an extractor in your document understanding model in Microsoft SharePoint Syntex.
 ---
 
-# Leverage term store taxonomy when creating an extractor
+# Leverage term store taxonomy when creating an extractor in Microsoft SharePoint Syntex
 
 </br>
 
