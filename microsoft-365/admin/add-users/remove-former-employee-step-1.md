@@ -63,7 +63,7 @@ If you have email as part of your Microsoft 365 subscription, sign in to the Exc
   
 1. Go to the <a href="https://admin.exchange.microsoft.com/" target="_blank">Exchange admin center</a>.
 2. In the Exchange admin center, navigate to **Recipients** \> **Mailboxes**.
-3. Double-click the user and go to **Manage email apps settings** under **Email apps**. Turn **Off** the slider for all the options; **Mobile (Exchange ActiveSync)**, **Outlook on the web**, **Outlook desktop (MAPI)**, **Exchange web services**, **POP3**, and **IMAP**.
+3. Select the user mailbox from the list and then in the *Details Pane* (on the right hand side), click on **Manage email apps settings** under **Email apps**. Turn **Off** the slider for all the options; **Mobile (Exchange ActiveSync)**, **Outlook on the web**, **Outlook desktop (MAPI)**, **Exchange web services**, **POP3**, and **IMAP**.
 4. Select **Save**.
 
 ## Related content
