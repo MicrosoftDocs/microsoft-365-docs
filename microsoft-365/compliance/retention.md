@@ -304,7 +304,7 @@ Explanation for the four different principles:
     - [How retention works with Yammer](retention-policies-yammer.md#how-retention-works-with-yammer)
     - [How retention works for Exchange](retention-policies-exchange.md#how-retention-works-for-exchange)
     
-    Example for this first principle: An email message is subject to a retention policy for Exchange that is configured to delete items three years after they created, and it also has a retention label applied that is configured to retain items five years after they are created.
+    **Example for this first principle**: An email message is subject to a retention policy for Exchange that is configured to delete items three years after they created, and it also has a retention label applied that is configured to retain items five years after they are created.
     
     The email message is retained for five years because this retention action takes precedence over deletion. The email message is permanently deleted at the end of the five years because of the delete action that was suspended while the retention action was in effect.
 
@@ -313,7 +313,7 @@ Explanation for the four different principles:
     > [!NOTE]
     > It's possible for a retention period of 5 years in a retention policy or label wins over a retention period of 7 years in a retention policy or label, because the 5-year period is configured to start based on when the file is last modified, and the 7-year period is configured to start from when the file is created.
     
-    Example for this second principle: Documents in the Marketing SharePoint site are subject to two retention policies. The first retention policy is configured for all SharePoint sites to retain items for five years after they are created. The second retention policy is configured for specific SharePoint sites to retain items for ten years after they are created.
+    **Example for this second principle**: Documents in the Marketing SharePoint site are subject to two retention policies. The first retention policy is configured for all SharePoint sites to retain items for five years after they are created. The second retention policy is configured for specific SharePoint sites to retain items for ten years after they are created.
     
     Documents in this Marketing SharePoint site are retained for ten years because that's the longest retention period for the item.
 
@@ -321,7 +321,7 @@ Explanation for the four different principles:
     
     1. A retention label (however it was applied) provides explicit retention in comparison with retention policies, because the retention settings are applied to an individual item rather than implicitly assigned from a container. This means that a delete action from a retention label always takes precedence over a delete action from any retention policy.
         
-        Example for this third principle (label): A document is subject to two retention policies that have a delete action of five years and ten years respectively, and also a retention label that has a delete action of seven years.
+        **Example for this third principle (label)**: A document is subject to two retention policies that have a delete action of five years and ten years respectively, and also a retention label that has a delete action of seven years.
         
         The document is permanently deleted after seven years because the delete action from the retention label takes precedence.
     
@@ -329,11 +329,11 @@ Explanation for the four different principles:
         
         An unscoped retention policy is where a location is selected without specifying specific instances. For example, Exchange email and the default setting of all recipients is an unscoped retention policy. Or, SharePoint sites and the default setting of all sites. When retention policies are scoped, they have equal precedence at this level.
         
-        Example 1 for this third principle (policies): An email message is subject to two retention policies. The first retention policy is unscoped and deletes items after ten years. The second retention policy is scoped to specific mailboxes and deletes items after five years.
+        **Example 1 for this third principle (policies)**: An email message is subject to two retention policies. The first retention policy is unscoped and deletes items after ten years. The second retention policy is scoped to specific mailboxes and deletes items after five years.
         
         The email message is permanently deleted after five years because the deletion action from the scoped retention policy takes precedence over the unscoped retention policy.
         
-        Example 2 for this third principle (policies): A document in a user's OneDrive account is subject to two retention policies. The first retention policy is scoped to include this user's OneDrive account and has a delete action after 10 years. The second retention policy is scoped to include this user's OneDrive account and has a delete action after seven years.
+        **Example 2 for this third principle (policies)**: A document in a user's OneDrive account is subject to two retention policies. The first retention policy is scoped to include this user's OneDrive account and has a delete action after 10 years. The second retention policy is scoped to include this user's OneDrive account and has a delete action after seven years.
         
         When this document will be permanently deleted can't be determined at this level because both retention policies are scoped.
 
@@ -342,7 +342,7 @@ Explanation for the four different principles:
     > [!NOTE]
     > It's possible that a retention policy that has a retention period of 7 years wins over a retention policy of 5 years because the first policy is configured to start the retention period based on when the file is created, and the second retention policy from when the file is last modified.
     
-    Example for this fourth principle: A document in a user's OneDrive account is subject to two retention policies. The first retention policy is scoped to include this user's OneDrive account and has a delete action of 10 years after the file is created. The second retention policy is scoped to include this user's OneDrive account and has a delete action of seven years after the file is created.
+    **Example for this fourth principle**: A document in a user's OneDrive account is subject to two retention policies. The first retention policy is scoped to include this user's OneDrive account and has a delete action of 10 years after the file is created. The second retention policy is scoped to include this user's OneDrive account and has a delete action of seven years after the file is created.
     
     This document will be permanently deleted after seven years because that's the shortest retention period for the item from these two scoped retention policies.
 
