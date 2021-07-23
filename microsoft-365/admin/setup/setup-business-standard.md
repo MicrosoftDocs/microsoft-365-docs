@@ -53,7 +53,6 @@ To add, modify or remove domains you must be a global administrator. For more in
     > [!IMPORTANT]
     > If you purchased a domain during the sign-up, you will not see **Add a domain** step here. Go to [Add users](#add-users-and-assign-licenses) instead.
 
-
 4. Follow the steps in the wizard to [Create DNS records at any DNS hosting provider for Office 365](/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) that verifies you own the domain. If you know your domain host, see also [Add a domain to Microsoft 365](/microsoft-365/admin/setup/add-domain).
 
     If your hosting provider is GoDaddy or another host enabled with [domain connect](/office365/admin/get-help-with-domains/domain-connect), the process is easy and you'll be automatically asked to sign in and let Microsoft authenticate on your behalf.
@@ -161,5 +160,5 @@ Microsoft 365 doesn't include a public website for your business. If you want to
 
 ## Related content
 
-[Create a website](../../business-video/create-web-site.md) (video)\
+[Create a website](../../business-video/create-web-site.md) (video)
 [Microsoft 365 for your business](../../business-video/index.yml) (link page)

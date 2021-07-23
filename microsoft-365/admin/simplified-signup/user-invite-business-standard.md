@@ -101,3 +101,5 @@ Download Microsoft 365 apps by following the steps in this article.
 ## Next steps
 
 Add steps: **Accept a new invitation once its flipped from a personal email to a business email.**
+
+

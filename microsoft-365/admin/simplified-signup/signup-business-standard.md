@@ -99,3 +99,4 @@ In this scenario, you want to add an existing domain you already own or buy a ne
 [Set up Microsoft 365 Business Premium in the setup wizard](../../business/set-up.md)
 
 [Microsoft 365 for business training videos](../business-video/index.yml)
+
