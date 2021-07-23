@@ -321,19 +321,19 @@ Explanation for the four different principles:
     
     1. A retention label (however it was applied) provides explicit retention in comparison with retention policies, because the retention settings are applied to an individual item rather than implicitly assigned from a container. This means that a delete action from a retention label always takes precedence over a delete action from any retention policy.
         
-        Example for this third principle: A document is subject to two retention policies that have a delete action of five years and ten years respectively, and also a retention label that has a delete action of seven years.
+        Example for this third principle (label): A document is subject to two retention policies that have a delete action of five years and ten years respectively, and also a retention label that has a delete action of seven years.
         
         The document is permanently deleted after seven years because the delete action from the retention label takes precedence.
     
     2. When you have retention policies only: If a retention policy for a location is scoped to use an include configuration (such as specific users for Exchange email) that retention policy takes precedence over unscoped retention policies for the same location.
         
-        An unscoped retention policy is where a location is selected without specifying specific instances. For example, **Exchange email** and the default setting of **All recipients** is an unscoped retention policy. Or, **SharePoint sites** and the default setting of **All sites**. When retention policies are scoped, they have equal precedence at this level.
+        An unscoped retention policy is where a location is selected without specifying specific instances. For example, Exchange email and the default setting of all recipients is an unscoped retention policy. Or, SharePoint sites and the default setting of all sites. When retention policies are scoped, they have equal precedence at this level.
         
-        Example 1 for this third principle: An email message is subject to two retention policies. The first retention policy is unscoped and deletes items after ten years. The second retention policy is scoped to specific mailboxes and deletes items after five years.
+        Example 1 for this third principle (policies): An email message is subject to two retention policies. The first retention policy is unscoped and deletes items after ten years. The second retention policy is scoped to specific mailboxes and deletes items after five years.
         
         The email message is permanently deleted after five years because the deletion action from the scoped retention policy takes precedence over the unscoped retention policy.
         
-        Example 2 for this third principle: A document in a user's OneDrive account is subject to two retention policies. The first retention policy is scoped to include this user's OneDrive account and has a delete action after 10 years. The second retention policy is scoped to include this user's OneDrive account and has a delete action after seven years.
+        Example 2 for this third principle (policies): A document in a user's OneDrive account is subject to two retention policies. The first retention policy is scoped to include this user's OneDrive account and has a delete action after 10 years. The second retention policy is scoped to include this user's OneDrive account and has a delete action after seven years.
         
         When this document will be permanently deleted can't be determined at this level because both retention policies are scoped.
 
