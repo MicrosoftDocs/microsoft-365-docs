@@ -1,5 +1,5 @@
 ---
-title: "Use model discovery in Microsoft SharePoint Syntex"
+title: Use model discovery in Microsoft SharePoint Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,23 +12,30 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 localization_priority: Priority
-description: "Learn how and why to duplicate a model in Microsoft SharePoint Syntex."
+description: Learn how and why to duplicate a model in Microsoft SharePoint Syntex.
 ---
 
 # Use model discovery in Microsoft SharePoint Syntex
 
-You can make your trained document understanding models available for others to view and select directly from the document library.
+You can make your trained document understanding models available for others to view and use directly from the SharePoint document library. This feature is not yet available for form processing models.
 
-Content owners can discover and evaluate trained models, and select the model that is most useful for classifying their files or extracting specific information from them. You can evaluate up to 10 models against your content to help you find the most appropriate one.
+You can also find and evaluate trained models in other content centers that were created by others in your organization. You can then select the model that is most useful for classifying your files or extracting specific information from them. You can evaluate up to 10 models against your content to help you find the most appropriate one.
 
-## Add a model for discovery
+## Make your model available to others
 
-To make your trained model available for discovery:
+To make your trained model available for others to use:
 
+1. On the **Models** page, select **Model settings**.
+
+2. On the **Model settings** pane, in the **Where this model is visible** section, select where you want the model to be visible for other users to apply:
+
+   - **Not visible** – The model will not be available for others to use.
+   - **On all sites** – The model will be available in the content type gallery for others to use.
+   - **Only on specific sites** – You can choose which site or sites for which the model will be available. If you select this option, click in the text box to choose which sites you want the model applied.
 
 ## Discover trained models
 
-To find trained trained models that might be suitable for your content:
+To find trained models that might be suitable for your content:
 
 
 ## Apply a trained model
