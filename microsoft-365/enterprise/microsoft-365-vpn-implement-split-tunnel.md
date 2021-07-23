@@ -136,7 +136,6 @@ At the time of writing the IP ranges that these endpoints correspond to are as f
 132.245.0.0/16
 150.171.32.0/22
 150.171.40.0/22
-191.234.140.0/22
 204.79.197.215/32
 23.103.160.0/20
 40.104.0.0/15
