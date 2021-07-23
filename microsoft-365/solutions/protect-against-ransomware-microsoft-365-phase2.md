@@ -65,7 +65,7 @@ Ways to determine whether an attacker has escalated their privileges to a high-p
 
    Monitor for password spray attacks.
 
-- Microsoft 365 Defender and Micrsoft Defender for Identity
+- Microsoft 365 Defender and Microsoft Defender for Identity
 
 Once you discover a compromised high-privilege account, remove it.
 

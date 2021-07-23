@@ -19,7 +19,7 @@ keywords:
 description: Step through protecting your Microsoft 365 resources from ransomware attacks.
 ---
 
-# Step 1: Remove attacker financial leverage with data protection/Protect your ransomable targets
+# Step 1: Remove attacker financial leverage with data protection
 
 <!--
 Assume attacker has the credentials to access your tenant and can laterally move around to discover targets.

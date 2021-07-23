@@ -86,7 +86,7 @@ Ways to prevent an attacker from using Windows 10 security features that have no
   - Supported: Upgrade operating systems and software for versions supported by your vendors. (Upgrade Windows 7 and 8.1 and old versions of Office, remove Internet Explorer)
 
 - Isolate, disable, or retire insecure systems and protocols, including unsupported operating systems and legacy protocols (Block apps using legacy authentication with Conditional Access)
-- Block unexpected traffic with host-based firewall and network defenses (Windows Firewall with Advanced Security gfor Windows 10).
+- Block unexpected traffic with host-based firewall and network defenses (Windows Firewall with Advanced Security for Windows 10).
 
 ### Mitigate: Detect breaches based on built-in Windows 10 security features and remove endpoint
 
