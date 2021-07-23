@@ -33,7 +33,7 @@ Prior to this new capability, only the content of an email message protected by 
 Microsoft eDiscovery tools support items encrypted with Microsoft encryption technologies. These technologies are Azure Rights Management and Microsoft Information Protection (specifically sensitivity labels). For more information about Microsoft encryption technologies, see [Encryption](encryption.md). Content encrypted by third-party encryption technologies isn't supported. For example, previewing or exporting content encrypted with non-Microsoft technologies isn't supported.
 
 > [!NOTE]
-> Office 365 Message (OME) decryption is not supported by Microsoft eDiscovery tools.
+> The decryption of email messages encrypted with Office 365 Message Encryption (OME) is not supported by Microsoft eDiscovery tools.
 
 ## eDiscovery activities that support encrypted items
 
