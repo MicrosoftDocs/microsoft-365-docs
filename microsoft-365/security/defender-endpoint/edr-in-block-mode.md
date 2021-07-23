@@ -69,7 +69,7 @@ The following image shows an instance of unwanted software that was detected and
 
 2. Choose **Settings** > **Endpoints** > **General** > **Advanced features**.
 
-3. Scroll down, and then urn on **Enable EDR in block mode**.
+3. Scroll down, and then turn on **Enable EDR in block mode**.
 
 
 > [!NOTE]

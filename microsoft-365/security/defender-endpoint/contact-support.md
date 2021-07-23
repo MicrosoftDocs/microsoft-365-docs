@@ -79,6 +79,7 @@ Learn how to open support tickets by contacting Defender for Endpoint support.
 
 ### Contact support
 This option is available by clicking the icon that looks like a headset. You will then get the following page to submit your support case:
+:::image type="content" source="../../media/contactsupport2.png" alt-text="contact support 2":::
 
 
 :::image type="content" source="../../media/contactsupport2.png" alt-text="contact support 2":::
