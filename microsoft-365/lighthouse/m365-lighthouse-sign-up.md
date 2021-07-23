@@ -44,7 +44,7 @@ description: "For Managed Service Providers (MSPs), learn how to sign up for Mic
 1. Select **Buy**.
 
     > [!NOTE]
-    > Microsoft 365 Lighthouse requires one license for the managing partner tenant only. No additional per-user licenses are required for the managing partner and no additional licenses are required in any customer tenant. 
+    > Microsoft 365 Lighthouse requires one license for the partner tenant only. No additional per-user licenses are required for the partner, and no Microsoft 365 Lighthouse licenses are required in any customer tenant. 
 
     To verify that Microsoft 365 Lighthouse was successfully added to your tenant, look for Microsoft 365 Lighthouse under **Billing > Your Products** in the Microsoft 365 admin center.
 
