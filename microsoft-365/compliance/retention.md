@@ -310,7 +310,8 @@ Explanation for the four different principles:
 
 2. **The longest retention period wins.** If content is subject to multiple retention settings that retain content for different periods of time, the content will be retained until the end of the longest retention period for the item.
     
-    Note that it's possible for a retention period of 5 years wins over a retention period of 7 years because the 5-year period is configured to start based on when the file is last modified, and the 7-year period is configured to start from when the file is created.
+    > [!NOTE]
+    > It's possible for a retention period of 5 years wins over a retention period of 7 years because the 5-year period is configured to start based on when the file is last modified, and the 7-year period is configured to start from when the file is created.
     
     Example: Documents in the Marketing SharePoint site are subject to two retention policies. The first retention policy is configured for all SharePoint sites to retain items for five years after they are created. The second retention policy is configured for specific SharePoint sites to retain items for ten years after they are created.
     
@@ -338,7 +339,8 @@ Explanation for the four different principles:
 
 4. **The shortest deletion period wins.** Applicable to determine when items will be deleted from retention policies and the outcome couldn't be resolved from the previous level: Content is permanently deleted at the end of the shortest retention period for the item.
     
-    Note that it's possible that a retention policy that has a retention period of 7 years wins over a retention policy of 5 years because the first policy is configured to start the retention period based on when the file is created and the second retention policy from when the file is last modified.
+    > [!NOTE]
+    > It's possible that a retention policy that has a retention period of 7 years wins over a retention policy of 5 years because the first policy is configured to start the retention period based on when the file is created and the second retention policy from when the file is last modified.
     
     Example: A document in a user's OneDrive account is subject to two retention policies. The first retention policy is scoped to include this user's OneDrive account and has a delete action of 10 years after the file is created. The second retention policy is scoped to include this user's OneDrive account and has a delete action of seven years after the file is created.
     
