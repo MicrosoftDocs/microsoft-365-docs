@@ -49,7 +49,7 @@ With these capabilities, more threats can be prevented or blocked, even if they 
 
 The following image shows an example of an alert that was triggered by behavioral blocking and containment capabilities:
 
-:::image type="content" source="images/blocked-behav-alert.png" alt-text="Example of an alert through behavioral blocking and containment":::
+:::image type="content" alt-text="Example of an alert through behavioral blocking and containment" source="images/blocked-behav-alert.png" lightbox="images/blocked-behav-alert.png":::
 
 ## Components of behavioral blocking and containment
 
@@ -100,13 +100,13 @@ This example shows how behavior-based device learning models in the cloud add ne
 
 As described in the recent blog post, [Behavioral blocking and containment: Transforming optics into protection](https://www.microsoft.com/security/blog/2020/03/09/behavioral-blocking-and-containment-transforming-optics-into-protection), in January 2020, Defender for Endpoint detected a privilege escalation activity on a device in an organization. An alert called "Possible privilege escalation using NTLM relay" was triggered.
 
-:::image type="content" source="images/NTLMalertjuicypotato.png" alt-text="NTLM alert for Juicy Potato malware":::
+:::image type="content" alt-text="NTLM alert for Juicy Potato malware" source="images/NTLMalertjuicypotato.png" lightbox="images/NTLMalertjuicypotato.png":::
 
 The threat turned out to be malware; it was a new, not-seen-before variant of a notorious hacking tool called Juicy Potato, which is used by attackers to get privilege escalation on a device.
 
 Minutes after the alert was triggered, the file was analyzed, and confirmed to be malicious. Its process was stopped and blocked, as shown in the following image:
 
-:::image type="content" source="images/Artifactblockedjuicypotato.png" alt-text="Artifact blocked":::
+:::image type="content" alt-text="Artifact blocked" source="images/Artifactblockedjuicypotato.png" lightbox="images/Artifactblockedjuicypotato.png":::
 
 A few minutes after the artifact was blocked, multiple instances of the same file were blocked on the same device, preventing more attackers or other malware from deploying on the device.
 

@@ -81,19 +81,19 @@ Field numbers match the numbers in the images below.
 > |   | Not part of the schema    | deviceVersion  |    | Static value in the ArcSight   mapping - '2.0', used to identify the mapping versions. |
 
 
-![Image of alert with numbers](images/atp-alert-page.png)
+:::image type="content" alt-text="Image of alert with numbers." source="images/atp-alert-page.png" lightbox="images/atp-alert-page.png":::
 
-![Image of alert details pane with numbers](images/atp-siem-mapping13.png)
+:::image type="content" alt-text="Image of alert details pane with numbers." source="images/atp-siem-mapping13.png":::
 
-![Image of artifact timeline with numbers1](images/atp-siem-mapping3.png)
+:::image type="content" alt-text="Image of artifact timeline with numbers1." source="images/atp-siem-mapping3.png" lightbox="images/atp-siem-mapping3.png":::
 
-![Image of artifact timeline with numbers2](images/atp-siem-mapping4.png)
+:::image type="content" alt-text="Image of artifact timeline with numbers2." source="images/atp-siem-mapping4.png" lightbox="images/atp-siem-mapping4.png":::
 
-![Image machine view](images/atp-mapping6.png)
+:::image type="content" alt-text="Image machine view." source="images/atp-mapping6.png" lightbox="images/atp-mapping6.png":::
 
-![Image browser URL](images/atp-mapping5.png)
+:::image type="content" alt-text="Image browser URL." source="images/atp-mapping5.png" lightbox="images/atp-mapping5.png":::
 
-![Image actor alert](images/atp-mapping7.png)
+:::image type="content" alt-text="Image actor alert." source="images/atp-mapping7.png" lightbox="images/atp-mapping7.png":::
 
 
 ## Related topics
