@@ -29,50 +29,53 @@ ms.custom: api
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-
 ## API description
+
 Retrieves all domains related to a specific alert.
 
-
 ## Limitations
+
 1. You can query on alerts last updated according to your configured retention period.
 2. Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
 
-
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md)
 
-Permission type | Permission | Permission display name
+Permission type|Permission|Permission display name
 :---|:---|:---
-Application | URL.Read.All | 'Read URLs'
-Delegated (work or school account) | URL.Read.All | 'Read URLs'
+Application|URL.Read.All|'Read URLs'
+Delegated (work or school account)|URL.Read.All|'Read URLs'
 
->[!Note]
-> When obtaining a token using user credentials:
->- The user needs to have at least the following role permission: 'View Data' (See [Create and manage roles](user-roles.md) for more information)
->- The user needs to have access to the device associated with the alert, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)
+> [!NOTE]
+>  When obtaining a token using user credentials:
+>
+> - The user needs to have at least the following role permission: 'View Data' (See [Create and manage roles](user-roles.md) for more information)
+> - The user needs to have access to the device associated with the alert, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)
 
 ## HTTP request
-```
+
+```http
 GET /api/alerts/{id}/domains
 ```
 
 ## Request headers
 
-Name | Type | Description
+Name|Type|Description
 :---|:---|:---
-Authorization | String | Bearer {token}. **Required**.
-
+Authorization|String|Bearer {token}. **Required**.
 
 ## Request body
+
 Empty
 
 ## Response
-If successful and alert and domain exist - 200 OK. If alert not found - 404 Not Found.
+If successful a
+nd alert and domain exist - 200 OK. If alert not found - 404 Not Found.
 
 ## Example
 
-**Request**
+### Request example
 
 Here is an example of the request.
 
@@ -80,7 +83,7 @@ Here is an example of the request.
 GET https://api.securitycenter.microsoft.com/alerts/636688558380765161_2136280442/domains
 ```
 
-**Response**
+### Response example
 
 Here is an example of the response.
 
@@ -91,10 +94,10 @@ Here is an example of the response.
         {
             "host": "www.example.com"
         },
-		{
+        {
             "host": "www.example2.com"
         }
-		...
+        ...
     ]
 }
 
