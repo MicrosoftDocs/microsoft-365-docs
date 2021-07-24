@@ -65,7 +65,6 @@ Starting in Configuration Manager version 2002, you can onboard the following op
 Check out the [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)  or  [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) to see the various paths in deploying Microsoft Defender for Endpoint. 
 
 
-
 1. Open the Configuration Manager configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from [Microsoft 365 Defender portal](https://security.microsoft.com/):
 
     1. In the navigation pane, select **Settings** > **Endpoints** > **Device management** > **Onboarding**.
@@ -88,7 +87,7 @@ Check out the [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/publ
 >[!TIP]
 > After onboarding the device, you can choose to run a detection test to verify that an device is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Defender for Endpoint device](run-detection-test.md).
 >
-> Note that it is possible to create a detection rule on a Configuration Manager application to continuously check if a device has been onboarded. An application is a different type of object than a package and program.
+> Note that it's possible to create a detection rule on a Configuration Manager application to continuously check if a device has been onboarded. An application is a different type of object than a package and program.
 > If a device is not yet onboarded (due to pending OOBE completion or any other reason), Configuration Manager will retry to onboard the device until the rule detects the status change.
 > 
 > This behavior can be accomplished by creating a detection rule checking if the "OnboardingState" registry value (of type REG_DWORD) = 1.
@@ -174,6 +173,7 @@ For security reasons, the package used to Offboard devices will expire 30 days a
 If you use Microsoft Endpoint Manager current branch, see [Create an offboarding configuration file](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#create-an-offboarding-configuration-file).
 
 ### Offboard devices using System Center 2012 R2 Configuration Manager
+
 
 1. Get the offboarding package from [Microsoft 365 Defender portal](https://security.microsoft.com/):
 

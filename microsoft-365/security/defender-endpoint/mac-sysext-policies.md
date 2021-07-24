@@ -37,7 +37,7 @@ If you have deployed Microsoft Defender for Endpoint on macOS in a managed envir
 
 ## JAMF
 
-### System Extensions Policy
+### JAMF System Extensions Policy
 
 To approve the system extensions, create the following payload:
 
@@ -64,7 +64,7 @@ Add the following JAMF payload to grant Full Disk Access to the Microsoft Defend
 
 ### Network Extension Policy
 
-As part of the Endpoint Detection and Response capabilities, Microsoft Defender for Endpoint on macOS inspects socket traffic and reports this information to the Microsoft Defender Security Center portal. The following policy allows the network extension to perform this functionality.
+As part of the Endpoint Detection and Response capabilities, Microsoft Defender for Endpoint on macOS inspects socket traffic and reports this information to the Microsoft 365 Defender portal. The following policy allows the network extension to perform this functionality.
 
 >[!NOTE]
 >JAMF doesn't have built-in support for content filtering policies, which are a pre-requisite for enabling the network extensions that Microsoft Defender for Endpoint on macOS installs on the device. Furthermore, JAMF sometimes changes the content of the policies being deployed.
@@ -169,7 +169,7 @@ As part of the Endpoint Detection and Response capabilities, Microsoft Defender 
 
 ## Intune
 
-### System Extensions Policy
+### Intune System Extensions Policy
 
 To approve the system extensions:
 
@@ -300,10 +300,10 @@ sysext.xml: OK
 
 To deploy this custom configuration profile:
 
-1.	In Intune, open **Manage** > **Device configuration**. Select **Manage** > **Profiles** > **Create profile**.
+1. In Intune, open **Manage** > **Device configuration**. Select **Manage** > **Profiles** > **Create profile**.
 2. Choose a name for the profile. Change **Platform=macOS** and **Profile type=Custom**. Select **Configure**.
-3.	Open the configuration profile and upload **sysext.xml**. This file was created in the preceding step.
-4.	Select **OK**.
+3. Open the configuration profile and upload **sysext.xml**. This file was created in the preceding step.
+4. Select **OK**.
 
     ![System extension in Intune screenshot](images/mac-system-extension-intune.png)
 

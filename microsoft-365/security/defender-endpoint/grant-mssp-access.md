@@ -50,7 +50,6 @@ To implement a multi-tenant delegated access solution, take the following steps:
     - Tier 2 Analyst
     - MSSP Analyst Approvers
 
-
 2. Create Defender for Endpoint roles for appropriate access levels in Customer Defender for Endpoint.
 
     To enable RBAC in the customer Microsoft Defender Security Center, access **Settings > Permissions > Roles** and "Turn on roles", from a user account with Global Administrator or Security Administrator rights.
@@ -120,10 +119,10 @@ To implement a multi-tenant delegated access solution, take the following steps:
 
     Access requests are managed in the customer My Access, by members of the MSSP Analyst Approvers group.
 
-    To do so, access the customer's myaccess using:
-    `https://myaccess.microsoft.com/@<Customer Domain >`.
+    To do so, access the customer's myaccess using: `https://myaccess.microsoft.com/@<Customer Domain>`.
 
-    Example:  `https://myaccess.microsoft.com/@M365x440XXX.onmicrosoft.com#/`
+    Example: `https://myaccess.microsoft.com/@M365x440XXX.onmicrosoft.com#/`
+
 2. Approve or deny requests in the **Approvals** section of the UI.
 
     At this point, analyst access has been provisioned, and each analyst should be able to access the customer's Microsoft Defender Security Center: `https://securitycenter.Microsoft.com/?tid=<CustomerTenantId>`

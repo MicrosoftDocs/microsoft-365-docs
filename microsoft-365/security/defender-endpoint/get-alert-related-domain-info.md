@@ -20,10 +20,10 @@ ms.custom: api
 
 # Get alert related domain information API
 
-**Applies to:** 
+**Applies to:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -48,7 +48,7 @@ Application|URL.Read.All|'Read URLs'
 Delegated (work or school account)|URL.Read.All|'Read URLs'
 
 > [!NOTE]
->  When obtaining a token using user credentials:
+> When obtaining a token using user credentials:
 >
 > - The user needs to have at least the following role permission: 'View Data' (See [Create and manage roles](user-roles.md) for more information)
 > - The user needs to have access to the device associated with the alert, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)
@@ -70,12 +70,12 @@ Authorization|String|Bearer {token}. **Required**.
 Empty
 
 ## Response
-If successful a
-nd alert and domain exist - 200 OK. If alert not found - 404 Not Found.
+
+If successful and alert and domain exist - 200 OK. If alert not found - 404 Not Found.
 
 ## Example
 
-### Request example
+### Request
 
 Here is an example of the request.
 
@@ -100,5 +100,4 @@ Here is an example of the response.
         ...
     ]
 }
-
 ```

@@ -43,11 +43,11 @@ After successfully evaluating or piloting MDO, it can be promoted to your entire
 5. Decommission any third-party SMTP gateways and disable or delete any EXO connectors associated with this relay.
 
 ## Microsoft Defender for Endpoint
-To promote Microsoft Defender for Endpoint evaluation environment from a pilot to production, simply onboard more endpoints to the service using any of the [supported tools and methods](/defender-endpoint/onboard-configure).
+To promote Microsoft Defender for Endpoint evaluation environment from a pilot to production, simply onboard more endpoints to the service using any of the [supported tools and methods](onboard-configure.md).
 
 Use the following general guidelines to onboard more devices to Microsoft Defender for Endpoint. 
 
-1. Verify that the device fulfills the [minimum requirements](/defender-endpoint/minimum-requirements).
+1. Verify that the device fulfills the [minimum requirements](minimum-requirements.md).
 2. Depending on the device, follow the configuration steps provided in the onboarding section of the Defender for Endpoint portal.
 3. Use the appropriate management tool and deployment method for your devices.
 4.  Run a detection test to verify that the devices are properly onboarded and reporting to the service.

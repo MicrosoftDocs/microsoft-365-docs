@@ -31,8 +31,7 @@ ms.technology: mde
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
 
-
-1. In the navigation pane, select **Settings** > **Indicators**.
+1. In the navigation pane, select **Settings** > **Endpoints** > **Indicators** (under **Rules**).
 
 2. Select the tab of the entity type you'd like to manage.
 

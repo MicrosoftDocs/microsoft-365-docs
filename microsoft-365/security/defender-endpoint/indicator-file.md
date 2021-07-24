@@ -56,7 +56,7 @@ This feature is designed to prevent suspected malware (or potentially malicious 
 
 1. In the navigation pane, select **Settings** \> **Endpoints** \> **Indicators** (under **Rules**).
 
-2. Select the **File hash** tab.
+2. Select the **File hashes** tab.
 
 3. Select **Add indicator**.
 

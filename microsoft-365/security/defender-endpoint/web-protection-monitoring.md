@@ -36,7 +36,7 @@ Web protection lets you monitor your organization's web browsing security throug
 
 - **Web threat protection summary** - this card displays the total web threat detections in the past 30 days, showing distribution across the different types of web threats. Selecting a slice opens the list of the domains that were found with malicious or unwanted websites.
 
-    ![Image of the card showing web threats protection summary](images/wtp-summary.png)
+  :::image type="content" alt-text="Image of the card showing web threats protection summary" source="images/wtp-summary.png" lightbox="images/wtp-summary.png":::
 
 > [!NOTE]
 > It can take up to 12 hours before a block is reflected in the cards or the domain list.

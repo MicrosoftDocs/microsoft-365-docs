@@ -50,7 +50,7 @@ Each device in the organization is scored based on three important factors to he
 
 Access the Security recommendations page a few different ways:
 
-- Threat and vulnerability management navigation menu in the [Microsoft Defender Security Center](portal-overview.md)
+- Threat and vulnerability management navigation menu in the [Microsoft 365 Defender portal](portal-overview.md)
 - Top security recommendations in the [threat and vulnerability management dashboard](tvm-dashboard-insights.md)
 
 View related security recommendations in the following places:
@@ -60,7 +60,7 @@ View related security recommendations in the following places:
 
 ### Navigation menu
 
-Go to the threat and vulnerability management navigation menu and select **Security recommendations**. The page contains a list of security recommendations for the threats and vulnerabilities found in your organization.
+Go to the **Vulnerability management** navigation menu and select **Recommendations**. The page contains a list of security recommendations for the threats and vulnerabilities found in your organization.
 
 ### Top security recommendations in the threat and vulnerability management dashboard
 
@@ -93,7 +93,7 @@ Useful icons also quickly call your attention to:
 
 Select the security recommendation that you want to investigate or process.
 
-![Example of a security recommendation flyout page.](images/secrec-flyouteolsw.png)
+:::image type="content" alt-text="Example of a security recommendation flyout page." source="images/secrec-flyouteolsw.png" lightbox="images/secrec-flyouteolsw.png":::
 
 From the flyout, you can choose any of the following options:
 

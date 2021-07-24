@@ -50,7 +50,7 @@ Use the following steps to obtain the MSSP customer tenant ID and then use the I
 
 3. Select **Azure Active Directory > Properties**. You'll find the tenant ID in the Directory ID field.
 
-4. Access the MSSP customer portal by replacing the `customer_tenant_id` value in the following URL: `https://securitycenter.windows.com?tid=customer_tenant_id`.
+4. Access the MSSP customer portal by replacing the `customer_tenant_id` value in the following URL: `https://securitycenter.windows.com/?tid=customer_tenant_id`.
 
 ## Related topics
 

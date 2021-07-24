@@ -114,7 +114,7 @@ The following example shows the usage of GroupID:
 
 ### Property name: ExcludedIDList
 
-Description: The group(s) that the policy will not be applied to.
+Description: The group(s) that the policy won't be applied to.
 
 Options: The Group ID/GUID must be used at this instance.
 
@@ -295,11 +295,11 @@ The Microsoft 365 security portal shows removable storage blocked by the Device 
 ```kusto
 //events triggered by RemovableStoragePolicyTriggered
 DeviceEvents
-| where ActionType == &quot;RemovableStoragePolicyTriggered&quot; 
-| extend parsed=parse_json(AdditionalFields) 
-| extend RemovableStorageAccess = tostring(parsed.RemovableStorageAccess)  
-| extend RemovableStoragePolicyVerdict = tostring(parsed.RemovableStoragePolicyVerdict)  
-| extend MediaBusType = tostring(parsed.BusType)  
+| where ActionType == "RemovableStoragePolicyTriggered"
+| extend parsed=parse_json(AdditionalFields)
+| extend RemovableStorageAccess = tostring(parsed.RemovableStorageAccess) 
+| extend RemovableStoragePolicyVerdict = tostring(parsed.RemovableStoragePolicyVerdict) 
+| extend MediaBusType = tostring(parsed.BusType) 
 | extend MediaClassGuid = tostring(parsed.ClassGuid)
 | extend MediaClassName = tostring(parsed.ClassName)
 | extend MediaDeviceId = tostring(parsed.DeviceId)
@@ -320,15 +320,15 @@ DeviceEvents
 
 ### What is the removable storage media limitation for the maximum number of USBs?
 
-We have validated one USB group with 100,000 media - up to 7 MB in size. The policy works in both Intune and GPO without performance issues.
+We've validated one USB group with 100,000 media - up to 7 MB in size. The policy works in both Intune and GPO without performance issues.
 
 ### Why does the policy not work?
 
-The most common reason is there is no required [antimalware client version](/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control#prepare-your-endpoints).
+The most common reason is there's no required [antimalware client version](/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control#prepare-your-endpoints).
 
-Another reason could be that the XML file is not correctly formatted, for example, not using the correct markdown formatting for the "&" character in the XML file, or the text editor might add a byte order mark (BOM) 0xEF 0xBB 0xBF at the beginning of the files which causes the XML parsing not to work. One simple solution is to download the [sample file](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) (select **Raw** and then **Save as**) and then update.
+Another reason could be that the XML file isn't correctly formatted, for example, not using the correct markdown formatting for the "&" character in the XML file, or the text editor might add a byte order mark (BOM) 0xEF 0xBB 0xBF at the beginning of the files, which causes the XML parsing not to work. One simple solution is to download the [sample file](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) (select **Raw** and then **Save as**) and then update.
 
-If there is a value and the policy is managed via Group Policy, check whether the client device can access the policy XML path.
+If there's a value and the policy is managed via Group Policy, check whether the client device can access the policy XML path.
 
 ### How can I know which machine is using out of date antimalware client version in the organization?
 
