@@ -60,10 +60,10 @@ If you're already using System Center Operations Manager (SCOM) or Azure Monitor
 
 In general, you'll need to take the following steps:
 
-1. Fulfill the onboarding requirements outlined in **Before you begin** section.
-2. Turn on server monitoring from Microsoft 365 Defender portal.
-3. Install and configure MMA for the server to report sensor data to Defender for Endpoint.
-4. Configure and update System Center Endpoint Protection clients.
+  1. Fulfill the onboarding requirements outlined in **Before you begin** section.
+  2. Turn on server monitoring from Microsoft 365 Defender.
+  3. Install and configure MMA for the server to report sensor data to Defender for Endpoint.
+  4. Configure and update System Center Endpoint Protection clients.
 
 > [!TIP]
 > After onboarding the device, you can choose to run a detection test to verify that it is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Defender for Endpoint endpoint](run-detection-test.md).
@@ -116,7 +116,7 @@ Once completed, you should see onboarded Windows servers in the portal within an
 
 ### Option 2: Onboard Windows servers through Azure Security Center
 
-1. In the Microsoft 365 Defender navigation pane, select **Settings** > **Endpoints** > **Device management** > **Onboarding**.
+In the Microsoft 365 Defender navigation pane, select **Settings** > **Endpoints** > **Device management** > **Onboarding**.
 
 2. Select **Windows Server 2008 R2 SP1, 2012 R2 and 2016** as the operating system.
 
@@ -195,7 +195,8 @@ The following capabilities are included in this integration:
     > The integration between Azure Defender for Servers and Microsoft Defender for Endpoint has been expanded to support [Windows Server 2019 and Windows Virtual Desktop (WVD)](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview).
 
 - Windows servers monitored by Azure Defender will also be available in Defender for Endpoint - Azure Defender seamlessly connects to the Defender for Endpoint tenant, providing a single view across clients and servers.  In addition, Defender for Endpoint alerts will be available in the Azure Defender console.
-- Server investigation -  Azure Defender customers can access Microsoft 365 Defender portal to perform detailed investigation to uncover the scope of a potential breach.
+
+- Server investigation -  Azure Defender customers can access Microsoft 365 Defender to perform detailed investigation to uncover the scope of a potential breach.
 
 > [!IMPORTANT]
 > - When you use Azure Defender to monitor servers, a Defender for Endpoint tenant is automatically created (in the US for US users, in the EU for European and UK users).<br>
@@ -217,6 +218,12 @@ The following steps are required to enable this integration:
 ## Offboard Windows servers
 
 You can offboard Windows Server (SAC), Windows Server 2019, and Windows Server 2019 Core edition in the same method available for Windows 10 client devices.
+
+- [Offboarding using Group Policy](configure-endpoints-gp.md#offboard-devices-using-group-policy)
+- [Offboard devices using Configuration Manager](configure-endpoints-sccm.md#offboard-devices-using-configuration-manager)
+- [Offboard and monitor devices using Mobile Device Management tools](configure-endpoints-mdm.md#offboard-and-monitor-devices-using-mobile-device-management-tools)
+- [Offboard devices using a local script](configure-endpoints-script.md#offboard-devices-using-a-local-script)
+
 
 For other Windows server versions, you have two options to offboard Windows servers from the service:
 
