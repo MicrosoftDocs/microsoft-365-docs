@@ -111,7 +111,8 @@ The SecOps mailbox entries that you configured are displayed on the **SecOps mai
 
    To remove an existing value, click remove ![Remove icon](../../media/m365-cc-sc-remove-selection-icon.png) next to the value.
    
-   Note: You must specify at least one Sending Domain and at least one Sending IP to configure a third-party phishing simulation in Advanced Delivery. You may optionally include Simulation URLs to allow to ensure URLs present in simulation messages are not blocked. You may specify up to 10 entries for each field. There must be a match on at least one Sending Domain and one Sending IP but no association between values is maintained.
+   > [!NOTE]
+   > You must specify at least one Sending Domain and at least one Sending IP to configure a third-party phishing simulation in Advanced Delivery. You may optionally include Simulation URLs to allow to ensure URLs present in simulation messages are not blocked. You may specify up to 10 entries for each field. There must be a match on at least one Sending Domain and one Sending IP but no association between values is maintained.
 
 4. When you're finished, do one of the following steps:
    - **First time**: Click **Add**, and then click **Close**.
