@@ -114,7 +114,7 @@ The **Block abuse of exploited vulnerable signed drivers** rule does not block a
 >
 > You can also configure this rule using [PowerShell](enable-attack-surface-reduction.md#powershell).
 >
-> To have a driver examined, use this Web site to [Submit a driver for analysis](https://www.microsoft.com/en-us/wdsi/driversubmission).
+> To have a driver examined, use this Web site to [Submit a driver for analysis](https://www.microsoft.com/wdsi/driversubmission).
 
 Intune Name: `Block abuse of exploited vulnerable signed drivers`
 

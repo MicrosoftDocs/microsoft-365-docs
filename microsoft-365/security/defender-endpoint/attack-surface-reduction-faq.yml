@@ -63,7 +63,7 @@ sections:
       - question: |
           What rules to enable? All, or can I turn on individual rules?
         answer: |
-          To help you figure out what’s best for your environment, we recommended that you enable ASR rules in [audit mode](audit-windows-defender.md). With this approach, you’ll determine the possible affect to your organization. For example, your line-of-business applications.
+          To help you figure out what's best for your environment, we recommended that you enable ASR rules in [audit mode](audit-windows-defender.md). With this approach, you'll determine the possible affect to your organization. For example, your line-of-business applications.
           
       - question: |
           How do ASR rules exclusions work?
@@ -108,7 +108,7 @@ sections:
       - question: |
           What are the rules Microsoft recommends enabling?
         answer: |
-          We recommend enabling every possible rule. However, there are some cases where you shouldn’t enable a rule. For example, we don't recommend enabling the Block process creations originating from PSExec and WMI commands rule, if you’re using Microsoft Endpoint Configuration Manager (or, System Center Configuration Manager - SCCM) to manage your endpoints.
+          We recommend enabling every possible rule. However, there are some cases where you shouldn't enable a rule. For example, we don't recommend enabling the Block process creations originating from PSExec and WMI commands rule, if you're using Microsoft Endpoint Configuration Manager (or, System Center Configuration Manager - SCCM) to manage your endpoints.
           
           We highly recommend you that you read each rule-specific information and/or warnings, which are available in our
           [public documentation](/microsoft-365/security/defender-endpoint/attack-surface-reduction).
