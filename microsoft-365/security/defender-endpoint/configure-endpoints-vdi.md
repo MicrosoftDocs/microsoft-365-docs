@@ -84,13 +84,13 @@ The following steps will guide you through onboarding VDI devices and will highl
 
 4. Depending on the method you'd like to implement, follow the appropriate steps:
 
-   - For single entry for each device:
+    - For single entry for each device:
    
-     Select the **PowerShell Scripts** tab, then click **Add** (Windows Explorer will open directly in the path where you copied the onboarding script earlier). Navigate to onboarding PowerShell script `Onboard-NonPersistentMachine.ps1`. There's no need to specify the other file, as it will be triggered automatically.
+         Select the **PowerShell Scripts** tab, then click **Add** (Windows Explorer will open directly in the path where you copied the onboarding script earlier). Navigate to onboarding PowerShell script `Onboard-NonPersistentMachine.ps1`. There's no need to specify the other file, as it will be triggered automatically.
    
-   - For multiple entries for each device:
+    - For multiple entries for each device:
    
-     Select the **Scripts** tab, then click **Add** (Windows Explorer will open directly in the path where you copied the onboarding script earlier). Navigate to the onboarding bash script `WindowsDefenderATPOnboardingScript.cmd`.
+         Select the **Scripts** tab, then click **Add** (Windows Explorer will open directly in the path where you copied the onboarding script earlier). Navigate to the onboarding bash script `WindowsDefenderATPOnboardingScript.cmd`.
 
 5. Test your solution:
 
@@ -104,13 +104,14 @@ The following steps will guide you through onboarding VDI devices and will highl
       
    1. Depending on the method you'd like to implement, follow the appropriate steps:
 
-        - For single entry for each device: 
+   - For single entry for each device: 
 
-            Check only one entry in Microsoft 365 Defender portal.
+     Check only one entry in Microsoft 365 Defender portal.
 
-        - For multiple entries for each device: 
+   - For multiple entries for each device: 
 
-            Check multiple entries in Microsoft 365 Defender portal.
+     Check multiple entries in Microsoft 365 Defender portal.
+
 
 6. Click **Devices list** on the Navigation pane.
 
