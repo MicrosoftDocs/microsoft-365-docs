@@ -39,7 +39,7 @@ You use the _advanced delivery policy_ in Microsoft 365 to prevent these message
 
 - Filters in EOP and Microsoft Defender for Office 365 take no action on these messages.<sup>\*</sup>
 - [Zero-hour Purge (ZAP)](zero-hour-auto-purge.md) for spam and phishing take no action on these messages.<sup>\*</sup>
-- [Default system alerts](https://docs.microsoft.com/en-us/microsoft-365/compliance/alert-policies?view=o365-worldwide#default-alert-policies) aren't triggered for these scenarios.
+- [Default system alerts](/microsoft-365/compliance/alert-policies?view=o365-worldwide#default-alert-policies) aren't triggered for these scenarios.
 - [AIR and clustering in Defender for Office 365](office-365-air.md) ignores these messages.
 - Specifically for third-party phishing simulations:
   - [Admin submissions](admin-submission.md) generates an automatic response saying that the message is part of a phishing simulation campaign and isn't a real threat. Alerts and AIR will not be triggered. The admin submissions experience will show these messages as a simulated threat.
