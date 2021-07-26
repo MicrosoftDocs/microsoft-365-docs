@@ -29,30 +29,28 @@ ms.technology: mde
 - [Threat and vulnerability management](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 Cybersecurity weaknesses identified in your organization are mapped to actionable security recommendations and prioritized by their impact. Prioritized recommendations help shorten the time to mitigate or remediate vulnerabilities and drive compliance.
 
 Each security recommendation includes actionable remediation steps. To help with task management, the recommendation can also be sent using Microsoft Intune and Microsoft Endpoint Configuration Manager. When the threat landscape changes, the recommendation also changes as it continuously collects information from your environment.
 
->[!TIP]
->To get emails about new vulnerability events, see [Configure vulnerability email notifications in Microsoft Defender for Endpoint](configure-vulnerability-email-notifications.md)
+> [!TIP]
+> To get emails about new vulnerability events, see [Configure vulnerability email notifications in Microsoft Defender for Endpoint](configure-vulnerability-email-notifications.md)
 
 ## How it works
 
 Each device in the organization is scored based on three important factors to help customers to focus on the right things at the right time.
 
-- **Threat** - Characteristics of the vulnerabilities and exploits in your organizations' devices and breach history. Based on these factors, the security recommendations show the corresponding links to active alerts, ongoing threat campaigns, and their corresponding threat analytic reports.
-
-- **Breach likelihood** - Your organization's security posture and resilience against threats
-
-- **Business value** - Your organization's assets, critical processes, and intellectual properties
+- **Threat**: Characteristics of the vulnerabilities and exploits in your organizations' devices and breach history. Based on these factors, the security recommendations show the corresponding links to active alerts, ongoing threat campaigns, and their corresponding threat analytic reports.
+- **Breach likelihood**: Your organization's security posture and resilience against threats.
+- **Business value**: Your organization's assets, critical processes, and intellectual properties.
 
 ## Navigate to the Security recommendations page
 
 Access the Security recommendations page a few different ways:
 
-- Threat and vulnerability management navigation menu in the [Microsoft Defender Security Center](portal-overview.md)
+- Threat and vulnerability management navigation menu in the [Microsoft 365 Defender portal](portal-overview.md)
 - Top security recommendations in the [threat and vulnerability management dashboard](tvm-dashboard-insights.md)
 
 View related security recommendations in the following places:
@@ -62,7 +60,7 @@ View related security recommendations in the following places:
 
 ### Navigation menu
 
-Go to the threat and vulnerability management navigation menu and select **Security recommendations**. The page contains a list of security recommendations for the threats and vulnerabilities found in your organization.
+Go to the **Vulnerability management** navigation menu and select **Recommendations**. The page contains a list of security recommendations for the threats and vulnerabilities found in your organization.
 
 ### Top security recommendations in the threat and vulnerability management dashboard
 
@@ -78,14 +76,15 @@ View recommendations, the number of weaknesses found, related components, threat
 
 The color of the **Exposed devices** graph changes as the trend changes. If the number of exposed devices is on the rise, the color changes into red. If there's a decrease in the number of exposed devices, the color of the graph will change into green.
 
->[!NOTE]
->Threat and vulnerability management shows devices that were in use up to **30 days** ago. This is different from the rest of Microsoft Defender for Endpoint, where if a device has not been in use for more than 7 days it has in an ‘Inactive’ status.
+> [!NOTE]
+> Threat and vulnerability management shows devices that were in use up to **30 days** ago. This is different from the rest of Microsoft Defender for Endpoint, where if a device has not been in use for more than 7 days it has in an 'Inactive' status.
 
 ![Example of the landing page for security recommendations.](images/tvmsecrec-updated.png)
 
 ### Icons
 
 Useful icons also quickly call your attention to:
+
 - ![arrow hitting a target](images/tvm_alert_icon.png) possible active alerts
 - ![red bug](images/tvm_bug_icon.png) associated public exploits
 - ![light bulb](images/tvm_insight_icon.png) recommendation insights
@@ -94,7 +93,7 @@ Useful icons also quickly call your attention to:
 
 Select the security recommendation that you want to investigate or process.
 
-![Example of a security recommendation flyout page.](images/secrec-flyouteolsw.png)
+:::image type="content" alt-text="Example of a security recommendation flyout page." source="images/secrec-flyouteolsw.png" lightbox="images/secrec-flyouteolsw.png":::
 
 From the flyout, you can choose any of the following options:
 
@@ -127,7 +126,7 @@ Select a security recommendation you would like to request remediation for, and 
 
 As an alternative to a remediation request when a recommendation is not relevant at the moment, you can create exceptions for recommendations. [Learn more about exceptions](tvm-exception.md)
 
-Only users with “exceptions handling” permissions can add exception. [Learn more about RBAC roles](user-roles.md).
+Only users with "exceptions handling" permissions can add exception. [Learn more about RBAC roles](user-roles.md).
 
 When an exception is created for a recommendation, the recommendation is no longer active. The recommendation state will change to **Full exception** or **Partial exception** (by device group).
 

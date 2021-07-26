@@ -29,7 +29,7 @@ Microsoft 365 Lighthouse simplifies onboarding of Microsoft 365 Business Premium
 
 No additional costs are associated with using Microsoft 365 Lighthouse to manage Microsoft 365 services and connected devices. Microsoft 365 Lighthouse is currently in Preview and available to MSPs enrolled in the Cloud Solution Provider (CSP) program and serving SMB customers with a Microsoft 365 Business Premium subscription.
 
-Note that CSP indirect providers aren't currently supported by Microsoft 365 Lighthouse. 
+Use of Microsoft 365 Lighthouse by Microsoft CSP channel partners that have customers using Microsoft 365 Business Premium is supported. This includes CSP partners transacting directly with Microsoft and those transacting through an indirect provider (distributor). 
 
 > [!IMPORTANT] 
 > To use Microsoft 365 Lighthouse, MSPs and their customer tenants must meet the requirements listed in [Microsoft 365 Lighthouse requirements](m365-lighthouse-requirements.md).     
