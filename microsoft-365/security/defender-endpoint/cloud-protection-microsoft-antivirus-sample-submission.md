@@ -98,7 +98,7 @@ _Figure 2. Cloud-delivered protection flow_
 
 _Figure 3. Cloud-delivered protection and layered machine learning_
 
-:::image type="content" source="images/cloud-protection-detection-layered-machine-learning.png" alt-text="Figure 3. Cloud-delivered protection and layered machine learning":::
+:::image type="content" source="images/cloud-protection-detection-layered-machine-learning.png" lightbox="images/cloud-protection-detection-layered-machine-learning.png" alt-text="Figure 3. Cloud-delivered protection and layered machine learning":::
 
 > [!Note]
 >
