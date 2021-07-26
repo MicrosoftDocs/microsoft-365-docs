@@ -30,7 +30,7 @@ ms.technology: mde
 - Microsoft Endpoint Configuration Manager current branch
 - System Center 2012 R2 Configuration Manager
 
->Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configureendpointssccm-abovefoldlink)
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configureendpointssccm-abovefoldlink)
 
 ## Supported client operating systems
 
@@ -82,14 +82,14 @@ Check out the [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/publ
     a. Choose a predefined device collection to deploy the package to.
 
 > [!NOTE]
-> Defender for Endpoint doesn't support onboarding during the [Out-Of-Box Experience (OOBE)](https://answers.microsoft.com/en-us/windows/wiki/windows_10/how-to-complete-the-windows-10-out-of-box/47e3f943-f000-45e3-8c5c-9d85a1a0cf87) phase. Make sure users complete OOBE after running Windows installation or upgrading.
+> Defender for Endpoint doesn't support onboarding during the [Out-Of-Box Experience (OOBE)](https://answers.microsoft.com/windows/wiki/windows_10/how-to-complete-the-windows-10-out-of-box/47e3f943-f000-45e3-8c5c-9d85a1a0cf87) phase. Make sure users complete OOBE after running Windows installation or upgrading.
 
->[!TIP]
+> [!TIP]
 > After onboarding the device, you can choose to run a detection test to verify that an device is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Defender for Endpoint device](run-detection-test.md).
 >
 > Note that it's possible to create a detection rule on a Configuration Manager application to continuously check if a device has been onboarded. An application is a different type of object than a package and program.
 > If a device is not yet onboarded (due to pending OOBE completion or any other reason), Configuration Manager will retry to onboard the device until the rule detects the status change.
-> 
+>
 > This behavior can be accomplished by creating a detection rule checking if the "OnboardingState" registry value (of type REG_DWORD) = 1.
 > This registry value is located under "HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection\Status".
 For more information, see [Configure Detection Methods in System Center 2012 R2 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg682159\(v=technet.10\)#step-4-configure-detection-methods-to-indicate-the-presence-of-the-deployment-type).
@@ -98,68 +98,71 @@ For more information, see [Configure Detection Methods in System Center 2012 R2 
 
 For each device, you can set a configuration value to state whether samples can be collected from the device when a request is made through Microsoft 365 Defender to submit a file for deep analysis.
 
->[!NOTE]
->These configuration settings are typically done through Configuration Manager.
+> [!NOTE]
+> These configuration settings are typically done through Configuration Manager.
 
 You can set a compliance rule for configuration item in Configuration Manager to change the sample share setting on a device.
 
-This rule should be a *remediating* compliance rule configuration item that sets the value of a registry key on targeted devices to make sure they’re complaint.
+This rule should be a *remediating* compliance rule configuration item that sets the value of a registry key on targeted devices to make sure they're complaint.
 
 The configuration is set through the following registry key entry:
 
-```console
+```text
 Path: "HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection"
 Name: "AllowSampleCollection"
 Value: 0 or 1
 ```
 
-Where:<br>
-Key type is a D-WORD. <br>
-Possible values are:
-- 0 - doesn't allow sample sharing  from this device
-- 1 - allows sharing of all file types from this device
+Where Key type is a D-WORD. Possible values are:
 
-The default value in case the registry key doesn’t exist is 1.
+- 0: Doesn't allow sample sharing  from this device
+- 1: Allows sharing of all file types from this device
+
+The default value in case the registry key doesn't exist is 1.
 
 For more information about System Center Configuration Manager Compliance, see [Introduction to compliance settings in System Center 2012 R2 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg682139\(v=technet.10\)).
 
-
 ## Other recommended configuration settings
+
 After onboarding devices to the service, it's important to take advantage of the included threat protection capabilities by enabling them with the following recommended configuration settings.
 
 ### Device collection configuration
+
 If you're using Endpoint Configuration Manager, version 2002 or later, you can choose to broaden the deployment to include servers or down-level clients.
 
-
 ### Next generation protection configuration
+
 The following configuration settings are recommended:
 
-**Scan** <br>
+#### Scan
+
 - Scan removable storage devices such as USB drives: Yes
 
-**Real-time Protection** <br>
+#### Real-time Protection
+
 - Enable Behavioral Monitoring: Yes
 - Enable protection against Potentially Unwanted Applications at download and prior to installation: Yes
 
-**Cloud Protection Service**
+#### Cloud Protection Service
+
 - Cloud Protection Service membership type: Advanced membership
 
-**Attack surface reduction**
+#### Attack surface reduction
+
 Configure all available rules to Audit.
 
->[!NOTE]
+> [!NOTE]
 > Blocking these activities may interrupt legitimate business processes. The best approach is setting everything to audit, identifying which ones are safe to turn on, and then enabling those settings on endpoints which do not have false positive detections.
 
+#### Network protection
 
-**Network protection** <br>
-Prior to enabling network protection in audit or block mode, ensure that you've installed the antimalware platform update, which can be obtained from the [support page](https://support.microsoft.com/en-us/help/4560203/windows-defender-anti-malware-platform-binaries-are-missing).
+Prior to enabling network protection in audit or block mode, ensure that you've installed the antimalware platform update, which can be obtained from the [support page](https://support.microsoft.com/help/4560203/windows-defender-anti-malware-platform-binaries-are-missing).
 
+#### Controlled folder access
 
-**Controlled folder access**<br>
 Enable the feature in audit mode for at least 30 days. After this period, review detections and create a list of applications that are allowed to write to protected directories.
 
 For more information, see [Evaluate controlled folder access](evaluate-controlled-folder-access.md).
-
 
 ## Offboard devices using Configuration Manager
 
@@ -176,24 +179,19 @@ If you use Microsoft Endpoint Manager current branch, see [Create an offboarding
 
 
 1. Get the offboarding package from [Microsoft 365 Defender portal](https://security.microsoft.com/):
-
     1. In the navigation pane, select **Settings** > **Endpoints** > **Device management** >  **Offboarding**.
-
     1. Select Windows 10 as the operating system.
-
     1. In the **Deployment method** field, select **System Center Configuration Manager 2012/2012 R2/1511/1602**.
-    
     1. Select **Download package**, and save the .zip file.
 
 2. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the network administrators who will deploy the package. You should have a file named *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
 
 3. Deploy the package by following the steps in the [Packages and Programs in System Center 2012 R2 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg699369\(v=technet.10\)) article.
 
-    a. Choose a predefined device collection to deploy the package to.
+   Choose a predefined device collection to deploy the package to.
 
 > [!IMPORTANT]
 > Offboarding causes the device to stop sending sensor data to the portal but data from the device, including reference to any alerts it has had will be retained for up to 6 months.
-
 
 ## Monitor device configuration
 
@@ -236,6 +234,7 @@ Value: "1"
 For more information, see [Introduction to compliance settings in System Center 2012 R2 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg682139\(v=technet.10\)).
 
 ## Related topics
+
 - [Onboard Windows 10 devices using Group Policy](configure-endpoints-gp.md)
 - [Onboard Windows 10 devices using Mobile Device Management tools](configure-endpoints-mdm.md)
 - [Onboard Windows 10 devices using a local script](configure-endpoints-script.md)
