@@ -14,7 +14,7 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.topic: article
-ms.date: 06/03/2021
+ms.date: 07/22/2021
 ---
 
 # Cloud-delivered protection antivirus sample submission
@@ -23,8 +23,8 @@ Microsoft Defender for Endpoint Antivirus (Defender for Endpoint antivirus) uses
 
 ## Microsoft Defender for Endpoint Antivirus cloud protection overview
 
-Cloud protection is enabled by default in Defender for Endpoint Antivirus. It is recommended that customers do not disable Cloud protection in Defender for Endpoint Antivirus.  When cloud protection is enabled, you have the option of configuring what information Defender for Endpoint antivirus will provide to the cloud (including sample submission). This is useful when a high-confidence determination cannot be made based on other characteristics.
-The discussion of how to configure Sample Submission raises many questions about how it works; for example, how the data is stored and used. In examining the options for cloud protection sample submission, there are three options that raise the most questions:
+Cloud protection is enabled by default in Defender for Endpoint Antivirus. It is recommended that customers do not disable Cloud protection in Defender for Endpoint Antivirus.  When cloud protection is enabled, you have the option of configuring what information Defender for Endpoint antivirus will provide to the cloud (including sample submission). Cloud-protection-enabled is useful when a high-confidence determination cannot be made based on other characteristics.
+Configuring Sample Submission raises questions about how it works; for example, how the data is stored and used. The three cloud protection sample submission options that raise the most questions are:
 
 - “Send safe samples automatically,”  (the default behavior)
 - “Send all samples automatically,”  
@@ -34,7 +34,7 @@ For information about configuration options using Intune, Configuration Manager,
 
 ## Customer data, cloud protection, and sample submission
 
-When onboarding to Defender for Endpoint, Defender for Endpoint treats all file samples as customer data, honoring both the geo and data retention choices the customer selected. This is described here: [Microsoft Defender for Endpoint data storage and privacy](/security/defender-endpoint/data-storage-privacy#data-storage-location).
+When onboarding to Defender for Endpoint, Defender for Endpoint treats all file samples as customer data, honoring both the geo and data retention choices the customer selected. Geo and data retention choices are described here: [Microsoft Defender for Endpoint data storage and privacy](/security/defender-endpoint/data-storage-privacy#data-storage-location).
 The product has received multiple compliance certifications, demonstrating continued adherence to a sophisticated set of compliance controls:
 
 - ISO 27001
