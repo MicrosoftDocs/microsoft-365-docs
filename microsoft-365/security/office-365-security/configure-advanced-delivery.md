@@ -39,23 +39,23 @@ You use the _advanced delivery policy_ in Microsoft 365 to prevent these message
 
 - Filters in EOP and Microsoft Defender for Office 365 take no action on these messages.<sup>\*</sup>
 - [Zero-hour Purge (ZAP)](zero-hour-auto-purge.md) for spam and phishing take no action on these messages.<sup>\*</sup>
-- [Default system alerts](/microsoft-365/compliance/alert-policies?view=o365-worldwide#default-alert-policies) aren't triggered for these scenarios.
+- [Default system alerts](/microsoft-365/compliance/alert-policies#default-alert-policies) aren't triggered for these scenarios.
 - [AIR and clustering in Defender for Office 365](office-365-air.md) ignores these messages.
 - Specifically for third-party phishing simulations:
   - [Admin submissions](admin-submission.md) generates an automatic response saying that the message is part of a phishing simulation campaign and isn't a real threat. Alerts and AIR will not be triggered. The admin submissions experience will show these messages as a simulated threat.
-  - When a user reports a phish simulation message using the [Report Phishing add-in for Outlook](/microsoft-365/security/office-365-security/enable-the-report-message-add-in?view=o365-worldwide), the system will not generate an alert, investigation, or incident. The message will also show up on the User reported messages tab of the submissions page.
+  - When a user reports a phishing simulation message using the [Report Phishing add-in for Outlook](enable-the-report-message-add-in.md), the system will not generate an alert, investigation, or incident. The message will also show up on the User reported messages tab of the submissions page.
   - [Safe Links in Defender for Office 365](safe-links.md) doesn't block or detonate the specifically identified URLs in these messages.
   - [Safe Attachments in Defender for Office 365](safe-attachments.md) doesn't detonate attachments in these messages.
 
 <sup>\*</sup> You can't bypass malware filtering or ZAP for malware.
 
-Messages that are identified by the advanced delivery policy aren't security threats, so the messages are marked with system overrides. Admin experiences will show these messages as due to either a "phishing simulation" system override or a "SecOps mailbox" system override. Admins can filter and analyze on these system overrides in the following experiences:
+Messages that are identified by the advanced delivery policy aren't security threats, so the messages are marked with system overrides. Admin experiences will show these messages as due to either a **Phishing simulation** system override or a **SecOps mailbox** system override. Admins can filter and analyze on these system overrides in the following experiences:
 
-- [Threat Explorer/Real-time detections in Defender for Office 365 plan 2](threat-explorer.md): Admin can filter on "System override source" and select either "Phishing Simulation" or "SecOps Mailbox."
-- The [Email entity Page in Threat Explorer/Real-time detections](mdo-email-entity-page.md): Admin can view a message that was allowed by organization policy by either "SecOps mailbox" or "Phishing Simulation" under Tenant override in the Override(s) section.
-- The [Threat protection status report](view-email-security-reports.md#threat-protection-status-report): Admin can filter by "view data by System override" dropdown menu and select to see messages allowed due to a Phishing Simulation system override. To see messages allowed by the SecOps mailbox override, the admin can select "chart breakdown by delivery location" under the "chart breakdown by reason" dropdown menu.
-- [Advanced hunting in Microsoft Defender for Endpoint](../defender-endpoint/advanced-hunting-overview.md): Phishing Simulation and SecOps mailbox system overrides will show as options within OrgLevelPolicy in EmailEvents. 
-- [Campaign Views](campaigns.md): Admin can filter on "System override source" and select either "Phishing Simulation" or "SecOps Mailbox."
+- [Threat Explorer/Real-time detections in Defender for Office 365 plan 2](threat-explorer.md): Admin can filter on **System override source** and select either **Phishing simulation** or **SecOps Mailbox**.
+- The [Email entity Page in Threat Explorer/Real-time detections](mdo-email-entity-page.md): Admin can view a message that was allowed by organization policy by either **SecOps mailbox** or **Phishing simulation** under **Tenant override** in the **Override(s)** section.
+- The [Threat protection status report](view-email-security-reports.md#threat-protection-status-report): Admin can filter by **view data by System override** in the drop down menu and select to see messages allowed due to a phishing simulation system override. To see messages allowed by the SecOps mailbox override, you can select **chart breakdown by delivery location** in the **chart breakdown by reason** drop down menu.
+- [Advanced hunting in Microsoft Defender for Endpoint](../defender-endpoint/advanced-hunting-overview.md): Phishing simulation and SecOps mailbox system overrides will show as options within OrgLevelPolicy in EmailEvents. 
+- [Campaign Views](campaigns.md): Admin can filter on **System override source** and select either **Phishing simulation** or **SecOps Mailbox**.
 
 ## What do you need to know before you begin?
 
@@ -112,7 +112,7 @@ The SecOps mailbox entries that you configured are displayed on the **SecOps mai
    To remove an existing value, click remove ![Remove icon](../../media/m365-cc-sc-remove-selection-icon.png) next to the value.
    
    > [!NOTE]
-   > You must specify at least one Sending Domain and at least one Sending IP to configure a third-party phishing simulation in Advanced Delivery. You may optionally include Simulation URLs to allow to ensure URLs present in simulation messages are not blocked. You may specify up to 10 entries for each field. There must be a match on at least one Sending Domain and one Sending IP but no association between values is maintained.
+   > You must specify at least one **Sending domain** and at least one **Sending IP** to configure a third-party phishing simulation in Advanced Delivery. You may optionally include **Simulation URLs to allow** to ensure URLs present in simulation messages are not blocked. You may specify up to 10 entries for each field. There must be a match on at least one **Sending domain** and one **Sending IP** but no association between values is maintained.
 
 4. When you're finished, do one of the following steps:
    - **First time**: Click **Add**, and then click **Close**.
