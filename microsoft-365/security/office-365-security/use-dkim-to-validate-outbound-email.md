@@ -37,6 +37,7 @@ ms.prod: m365-security
 In this article:
 
 - [How DKIM works better than SPF alone to prevent malicious spoofing](#how-dkim-works-better-than-spf-alone-to-prevent-malicious-spoofing)
+- [Steps to enable and disable DKIM from Microsoft 365 Defender portal]
 - [Steps to manually upgrade your 1024-bit keys to 2048-bit DKIM encryption keys](#steps-to-manually-upgrade-your-1024-bit-keys-to-2048-bit-dkim-encryption-keys)
 - [Steps to manually set up DKIM](#steps-to-manually-set-up-dkim)
 - [Steps to configure DKIM for more than one custom domain](#to-configure-dkim-for-more-than-one-custom-domain)
@@ -76,6 +77,36 @@ In this example, if you had only published an SPF TXT record for your domain, th
 
 > [!TIP]
 > DKIM uses a private key to insert an encrypted signature into the message headers. The signing domain, or outbound domain, is inserted as the value of the **d=** field in the header. The verifying domain, or recipient's domain, then uses the **d=** field to look up the public key from DNS, and authenticate the message. If the message is verified, the DKIM check passes.
+
+## Steps to Create, enable and disable DKIM from Microsoft 365 Defender portal
+All the accepted domains of your tenant will be shown in Microsoft 365 Defender portal under DKIM page. If you do not see it, add your accepted domain from domains page https://docs.microsoft.com/en-us/microsoft-365/admin/setup/add-domain?view=o365-worldwide#add-a-domain.
+Once your domain is added, follow the steps as shown below to configure DKIM.
+
+Step 1: Click on the domain you wish to configure DKIM on DKIM page
+![image](https://user-images.githubusercontent.com/3039750/126996261-2d331ec1-fc83-4a9d-a014-bd7e1854eb07.png)
+
+Step 2: Click on Create keys
+![image](https://user-images.githubusercontent.com/3039750/126994199-cdadb566-ea71-41d5-a499-daf7a16522b9.png)
+
+Step 3: Copy the CNAMES shown in the pop up window
+![image](https://user-images.githubusercontent.com/3039750/126994285-d0d9c3a3-ab4d-4963-a3cb-bdc0883f9a37.png)
+
+Step 4: Publish the copied CNAME records to your DNS service provider. 
+On your DNS provider's website, add CNAME records for DKIM that you want to enable. Make sure that the fields are set to the following values for each:
+
+Record Type: CNAME (Alias)
+Host: Paste the values you copy from DKIM page.
+Points to address: Copy the value from DKIM page.
+TTL: 3600 (or your provider default)
+
+Step 5: Return to DKIM page to enable DKIM
+![image](https://user-images.githubusercontent.com/3039750/126995186-9b3fdefa-a3a9-4f5a-9304-1099a2ce7cef.png)
+
+If you see CNAME record doesnt exist error, it might be due to
+1. Syncronization with DNS server, which might take few seconds to hours, if the problem persists repeat the steps again
+2. Check for any copy paste errors, like additional space or tabs etc.
+
+If you wish to disable DKIM, toggle back to diable mode
 
 
 ## Steps to manually upgrade your 1024-bit keys to 2048-bit DKIM encryption keys
