@@ -25,7 +25,7 @@ You must be a SharePoint administrator or global administrator to perform these 
 
 ![Diagram showing the stages and statuses of creating a topic in the Term store.](../media/knowledge-management/taxonomy-diagram.png)
 
-When someone requests to create a topic from a term, the taxonomy service relays information about the term to Viva Topics for the creation of a corresponding topic. The includes the following:
+When someone requests to create a topic from a term, the taxonomy service relays information about the term to Viva Topics for the creation of a corresponding topic. This information includes the following:
 
 - Name (default label)
 - Synonyms
