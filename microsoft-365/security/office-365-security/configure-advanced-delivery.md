@@ -53,7 +53,7 @@ Messages that are identified by the advanced delivery policy aren't security thr
 
 - [Threat Explorer/Real-time detections in Defender for Office 365 plan 2](threat-explorer.md): Admin can filter on "System override source" and select either "Phishing Simulation" or "SecOps Mailbox."
 - The [Email entity Page in Threat Explorer/Real-time detections](mdo-email-entity-page.md): Admin can view a message was allowed by organization policy by either "SecOps mailbox" or "Phishing Simulation" under Tenant override in the Override(s) section.
-- The [Threat protection status report](view-email-security-reports.md#threat-protection-status-report): Admin can filter by "view data by System override" dropdown menu and select to see messages allowed due to a Phishing Simulation system override. To see messages allowed by the SecOps mailbox override, admin can select "chart breakdown by delivery location" under "chart breakdown by reason" dropdown menu.
+- The [Threat protection status report](view-email-security-reports.md#threat-protection-status-report): Admin can filter by "view data by System override" dropdown menu and select to see messages allowed due to a Phishing Simulation system override. To see messages allowed by the SecOps mailbox override, the admin can select "chart breakdown by delivery location" under the "chart breakdown by reason" dropdown menu.
 - [Advanced hunting in Microsoft Defender for Endpoint](../defender-endpoint/advanced-hunting-overview.md): Phishing Simulation and SecOps mailbox system overrides will show as options within OrgLevelPolicy in EmailEvents. 
 - [Campaign Views](campaigns.md): Admin can filter on "System override source" and select either "Phishing Simulation" or "SecOps Mailbox."
 
