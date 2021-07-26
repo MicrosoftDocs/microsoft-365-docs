@@ -26,11 +26,11 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-conditionalaccess-abovefoldlink)
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-conditionalaccess-abovefoldlink)
 
 Conditional Access is a capability that helps you better protect your users and enterprise information by making sure that only secure devices have access to applications.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4byD1]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4byD1]
 
 With Conditional Access, you can control access to enterprise information based on the risk level of a device. This helps keep trusted users on trusted devices using trusted applications.
 

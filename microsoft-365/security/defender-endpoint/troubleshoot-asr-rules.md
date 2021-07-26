@@ -27,13 +27,14 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-The Microsoft 365 security center is the new interface for monitoring and managing security across your Microsoft identities, data, devices, apps, and infrastructure. Here you can easily view the security health of your organization, act to configure devices, users, and apps, and get alerts for suspicious activity. The Microsoft 365 security center is intended for security admins and security operations teams to better manage and protect their organization. Visit the Microsoft 365 security center at https://security.microsoft.com.
+The Microsoft 365 security center is the new interface for monitoring and managing security across your Microsoft identities, data, devices, apps, and infrastructure. Here you can easily view the security health of your organization, act to configure devices, users, and apps, and get alerts for suspicious activity. The Microsoft 365 security center is intended for security admins and security operations teams to better manage and protect their organization. Visit the Microsoft 365 security center at <https://security.microsoft.com>.
+
 In Microsoft 365 security center, we offer you a complete look at the current ASR rules configuration and events in your estate. Note that your devices must be onboarded into the Microsoft Defender for Endpoint service for these reports to be populated.
-Here's a screenshot from the Microsoft 365 security center (under **Reports** > **Devices** > **Attack surface reduction**). At the device level, select **Configuration** from the **Attack surface reduction rules** pane. The following screen is displayed, where you can select a specific device and check its individual ASR rule configuration.
+Here's a screenshot from the Microsoft 365 security center (under **Reports** \> **Devices** \> **Attack surface reduction**). At the device level, select **Configuration** from the **Attack surface reduction rules** pane. The following screen is displayed, where you can select a specific device and check its individual ASR rule configuration.
 
 :::image type="content" source="images/asrrulesnew.png" lightbox="images/asrrulesnew.png" alt-text="ASR rules screen":::
 
-## Microsoft Defender for Endpoint – Advanced hunting
+## Microsoft Defender for Endpoint - Advanced hunting
 
 One of the most powerful features of Microsoft Defender for Endpoint is advanced hunting. If you're unfamiliar with advanced hunting, refer [proactively hunt for threats with advanced hunting](advanced-hunting-overview.md).
 
@@ -61,10 +62,12 @@ Pictured below is a screenshot of the Timeline view of these events on a given e
 
 The first and most immediate way is to check locally, on a Windows device, which ASR rules are enabled (and their configuration) is by using the PowerShell cmdlets.
 
-Here are a few other sources of information that Windows offers, to troubleshoot ASR rules’ impact and operation.
+Here are a few other sources of information that Windows offers, to troubleshoot ASR rules' impact and operation.
 
 ### Querying which rules are active
-One of the easiest ways to determine if ASR rules are already enabled—and, is through a PowerShell cmdlet, Get-MpPreference.
+
+One of the easiest ways to determine if ASR rules are already enabled is through a PowerShell cmdlet, Get-MpPreference.
+
 Here's an example:
 
 :::image type="content" source="images/getmpreferencescriptnew.png" lightbox="images/getmpreferencescriptnew.png" alt-text="get mppreference script":::
@@ -75,19 +78,24 @@ To expand the above information on ASR rules, you can use the properties **Attac
 
 Example:
 
-*Get-MPPreference | Select-Object -ExpandProperty**AttackSurfaceReductionRules_Ids*
+```powershell
+Get-MPPreference | Select-Object -ExpandProperty**AttackSurfaceReductionRules_Ids
+```
 
 :::image type="content" source="images/getmpref-examplenew.png" alt-text="get mpreference example":::
 
 The above shows all the IDs for ASR rules that have a setting different from 0 (Not Configured).
 
-The next step is then to list the actual actions (Block or Audit) that each rule is configured with. 
+The next step is then to list the actual actions (Block or Audit) that each rule is configured with.
 
-*Get-MPPreference | Select-Object -ExpandProperty**AttackSurfaceReductionRules_Actions*
+```powershell
+Get-MPPreference | Select-Object -ExpandProperty**AttackSurfaceReductionRules_Actions
+```
 
 :::image type="content" source="images/getmpref-example2new.png" alt-text="get mppreference example2":::
 
 ### Querying blocking and auditing events
+
 ASR rule events can be viewed within the Windows Defender log.
 
 To access it, open Windows Event Viewer, and browse to **Applications and Services Logs** > **Microsoft** > **Windows** > **Windows Defender** > **Operational**.
@@ -95,6 +103,7 @@ To access it, open Windows Event Viewer, and browse to **Applications and Servic
 :::image type="content" source="images/eventviewerscrnew.png" lightbox="images/eventviewerscrnew.png" alt-text="event viewer scr":::
 
 ## Microsoft Defender Malware Protection Logs
+
 You can also view rule events through the Microsoft Defender Antivirus dedicated command-line tool, called `*mpcmdrun.exe*`, that can be used to manage and configure, and automate tasks if needed.
 
 You can find this utility in *%ProgramFiles%\Windows Defender\MpCmdRun.exe*. You must run it from an elevated command prompt (that is, run as Admin).
@@ -107,6 +116,6 @@ Extract that archive and you'll have many files available for troubleshooting pu
 
 The most relevant files are as follows:
 
-- **MPOperationalEvents.txt** - This file contains same level of information found in Event Viewer for Windows Defender’s Operational log.
-- **MPRegistry.txt** – In this file you can analyze all the current Windows Defender configurations, from the moment the support logs were captured.
-- **MPLog.txt** – This log contains more verbose information about all the actions/operations of the Windows Defender.
+- **MPOperationalEvents.txt**: This file contains same level of information found in Event Viewer for Windows Defender's Operational log.
+- **MPRegistry.txt**: In this file you can analyze all the current Windows Defender configurations, from the moment the support logs were captured.
+- **MPLog.txt**: This log contains more verbose information about all the actions/operations of the Windows Defender.

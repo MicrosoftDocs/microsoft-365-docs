@@ -56,7 +56,7 @@ Devices must be running one of the following versions of Windows
     - [Version 1803 (RS 4)](/windows/whats-new/whats-new-windows-10-version-1803) with [KB4537795](https://support.microsoft.com/help/4537795/windows-10-update-kb4537795)
     - [Version 1709 (RS 3)](/windows/whats-new/whats-new-windows-10-version-1709) with [KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)
   
-  - **Windows Server 2019 - Only applicable for Public preview**
+  - **Windows Server 2019**
     - Version 1903 or (with [KB4515384](https://support.microsoft.com/en-us/help/4515384/windows-10-update-kb4515384)) later 
     - Version 1809 (with [KB4537818](https://support.microsoft.com/en-us/help/4537818/windows-10-update-kb4537818))
 
@@ -73,10 +73,6 @@ You'll need to enable the live response capability in the [Advanced features set
     
 - **Ensure that the device has an Automation Remediation level assigned to it**.<br>
 You'll need to enable, at least, the minimum Remediation Level for a given Device Group. Otherwise you won't be able to establish a Live Response session to a member of that group.
-
-    You'll receive the following error:
-
-    ![Image of error message](images/live-response-error.png)
 
 - **Enable live response unsigned script execution** (optional). <br>
 

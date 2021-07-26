@@ -225,8 +225,8 @@ When you enable Intune integration, Intune will automatically create a classic C
 > [!NOTE]
 > The classic CA policy created by Intune is distinct from modern [Conditional Access policies](/azure/active-directory/conditional-access/overview/), which are used for configuring endpoints.
 
-
 ## Device discovery
+
 Helps you find unmanaged devices connected to your corporate network without the need for extra appliances or cumbersome process changes. Using onboarded devices, you can find unmanaged devices in your network and assess vulnerabilities and risks. For more information, see [Device discovery](device-discovery.md).
 
 > [!NOTE]
@@ -237,6 +237,10 @@ Helps you find unmanaged devices connected to your corporate network without the
 Learn about new features in the Defender for Endpoint preview release. Try upcoming features by turning on the preview experience.
 
 You'll have access to upcoming features, which you can provide feedback on to help improve the overall experience before features are generally available.
+
+## Download quarantined files
+
+Backup quarantined files in a secure and compliant location so they can be downloaded directly from quarantine. The **Download file** button will always be available in the file page. This setting is turned on by default. [Learn more about requirements](respond-file-alerts.md#download-quarantined-files)
 
 ## Related topics
 
