@@ -26,9 +26,7 @@ ms.technology: mde
 **Applies to:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-
-
->Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-servicestatus-abovefoldlink)
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-servicestatus-abovefoldlink)
 
 **Service health** provides information on the current status of the Defender for Endpoint service. You'll be able to verify that the service health is healthy or if there are current issues. If there are issues, you'll see information such as when the issue was detected, what the preliminary root cause is, and the expected resolution time.
 
@@ -42,6 +40,7 @@ The **Service health** details page has the following tabs:
 - **Status history**
 
 ## Current status
+
 The **Current status** tab shows the current state of the Defender for Endpoint service. When the service is running smoothly a healthy service health is shown. If there are issues seen, the following service details are shown to help you gain better insight about the issue:
 
 - Date and time for when the issue was detected
@@ -57,7 +56,9 @@ Updates on the progress of an issue are reflected on the page as the issue gets 
 When an issue is resolved, it gets recorded in the **Status history** tab.
 
 ## Status history
+
 The **Status history** tab reflects all the historical issues that were seen and resolved. You'll see details of the resolved issues along with the other information that were included while it was being resolved.
 
 ### Related topic
+
 - [View the Security operations dashboard](security-operations-dashboard.md)

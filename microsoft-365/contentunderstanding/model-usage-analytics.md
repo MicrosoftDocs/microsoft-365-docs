@@ -1,8 +1,9 @@
 ---
-title: "Document understanding model usage analytics"
-ms.author: efrene
-author: efrene
+title: Document understanding model usage analytics in Microsoft SharePoint Syntex
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
+ms.reviewer: ssquires
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -11,10 +12,10 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 localization_priority: Priority
-description: "Learn how to apply a retention label to a document understanding model"
+description: Learn how to find and use usage analytics for a document understanding model.
 ---
 
-# Document understanding model usage analytics
+# Document understanding model usage analytics in Microsoft SharePoint Syntex
 
 </br>
 
@@ -23,7 +24,7 @@ description: "Learn how to apply a retention label to a document understanding m
 </br>
 
 
-Your Microsoft SharePoint Syntex content center provides you model usage analytics to provide more information about how your models that have been published from the content center are being used. The <b>How your models are performing in the last 30 days</b> section of the content center includes a 30 day roll-up of usage analytics data provided in the following charts and lists:
+Your SharePoint Syntex content center provides you model usage analytics to provide more information about how your models that have been published from the content center are being used. The <b>How your models are performing in the last 30 days</b> section of the content center includes a 30 day roll-up of usage analytics data provided in the following charts and lists:
 
 - Classification by model
 - Classification by library
