@@ -50,10 +50,10 @@ Enable security information and event management (SIEM) integration so you can p
 
 1. In the navigation pane, select **Settings** > **Endpoints** > **APIs** > **SIEM**.
 
-  :::image type="content" source="../../media/enable-siemnew.png" alt-text="Image of SIEM integration from Settings menu1":::
+      :::image type="content" source="../../media/enable-siemnew.png" alt-text="Image of SIEM integration from Settings menu1":::
 
-  >[!TIP]
-  >If you encounter an error when trying to enable the SIEM connector application, check the pop-up blocker settings of your browser. It might be blocking the new window being opened when you enable the capability. 
+      >[!TIP]
+      >If you encounter an error when trying to enable the SIEM connector application, check the pop-up blocker settings of your browser. It might be blocking the new window being opened when you enable the capability. 
 
 2. Select **Enable SIEM integration**. This activates the **SIEM connector access details** section with pre-populated values and an application is created under your Azure Active Directory (Azure AD) tenant.
 
