@@ -63,7 +63,7 @@ The verification looks like this:
     
 ![Screenshot of PowerShell window showing that guest group access has been set to false.](../media/09ebfb4f-859f-44c3-a29e-63a59fd6ef87.png)
 
-If you wish to toggle the setting back to allow guest access to a particular group, run the following script, changing */<GroupName/>* to the name of the group where you want to allow guest access.
+If you wish to toggle the setting back to allow guest access to a particular group, run the following script, changing ```<GroupName>``` to the name of the group where you want to allow guest access.
 
 ```PowerShell
 $GroupName = "<GroupName>"
