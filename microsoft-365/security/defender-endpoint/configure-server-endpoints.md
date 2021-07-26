@@ -107,7 +107,6 @@ For Windows Server 2008 R2 SP1 and Windows Server 2012 R2: [Configure and update
 If your servers need to use a proxy to communicate with Defender for Endpoint, use one of the following methods to configure the MMA to use the proxy server:
 
 - [Configure the MMA to use a proxy server](/azure/azure-monitor/platform/agent-windows#install-agent-using-setup-wizard)
-
 - [Configure Windows to use a proxy server for all connections](configure-proxy-internet.md)
 
 If a proxy or firewall is in use, please ensure that servers can access all of the Microsoft Defender for Endpoint service URLs directly and without SSL interception. For more information, see [enable access to Defender for Endpoint service URLs](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server). Use of SSL interception will prevent the system from communicating with the Defender for Endpoint service.
@@ -118,11 +117,11 @@ Once completed, you should see onboarded Windows servers in the portal within an
 
 In the Microsoft 365 Defender navigation pane, select **Settings** > **Endpoints** > **Device management** > **Onboarding**.
 
-2. Select **Windows Server 2008 R2 SP1, 2012 R2 and 2016** as the operating system.
+1. Select **Windows Server 2008 R2 SP1, 2012 R2 and 2016** as the operating system.
 
-3. Click **Onboard Servers in Azure Security Center**.
+2. Click **Onboard Servers in Azure Security Center**.
 
-4. Follow the onboarding instructions in [Microsoft Defender for Endpoint with Azure Defender](/azure/security-center/security-center-wdatp) and If you are using Azure ARC, Follow the onboarding instructions in [Enabling the Microsoft Defender for Endpoint integration](/azure/security-center/security-center-wdatp#enabling-the-microsoft-defender-for-endpoint-integration).
+3. Follow the onboarding instructions in [Microsoft Defender for Endpoint with Azure Defender](/azure/security-center/security-center-wdatp) and If you are using Azure ARC, Follow the onboarding instructions in [Enabling the Microsoft Defender for Endpoint integration](/azure/security-center/security-center-wdatp#enabling-the-microsoft-defender-for-endpoint-integration).
 
 After completing the onboarding steps, you'll need to [Configure and update System Center Endpoint Protection clients](#configure-and-update-system-center-endpoint-protection-clients).
 
@@ -177,7 +176,9 @@ Support for Windows Server provides deeper insight into server activities, cover
 
 3. Run the following command to check if Microsoft Defender AV is installed:
 
-   ```sc.exe query Windefend```
+   ```dos
+   sc.exe query Windefend
+   ```
 
     If the result is 'The specified service doesn't exist as an installed service', then you'll need to install Microsoft Defender AV. For more information, see [Microsoft Defender Antivirus in Windows 10](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10).
 
@@ -199,10 +200,12 @@ The following capabilities are included in this integration:
 - Server investigation -  Azure Defender customers can access Microsoft 365 Defender to perform detailed investigation to uncover the scope of a potential breach.
 
 > [!IMPORTANT]
-> - When you use Azure Defender to monitor servers, a Defender for Endpoint tenant is automatically created (in the US for US users, in the EU for European and UK users).<br>
+>
+> - When you use Azure Defender to monitor servers, a Defender for Endpoint tenant is automatically created (in the US for US users, in the EU for European and UK users).
 Data collected by Defender for Endpoint is stored in the geo-location of the tenant as identified during provisioning.
 > - If you use Defender for Endpoint before using Azure Defender, your data will be stored in the location you specified when you created your tenant even if you integrate with Azure Defender at a later time.
-> - Once configured, you cannot change the location where your data is stored. If you need to move your data to another location, you need to contact Microsoft Support to reset the tenant. <br>
+> - Once configured, you cannot change the location where your data is stored. If you need to move your data to another location, you need to contact Microsoft Support to reset the tenant.
+>
 Server endpoint monitoring utilizing this integration has been disabled for Office 365 GCC customers.
 
 ## Configure and update System Center Endpoint Protection clients
@@ -223,7 +226,6 @@ You can offboard Windows Server (SAC), Windows Server 2019, and Windows Server 2
 - [Offboard devices using Configuration Manager](configure-endpoints-sccm.md#offboard-devices-using-configuration-manager)
 - [Offboard and monitor devices using Mobile Device Management tools](configure-endpoints-mdm.md#offboard-and-monitor-devices-using-mobile-device-management-tools)
 - [Offboard devices using a local script](configure-endpoints-script.md#offboard-devices-using-a-local-script)
-
 
 For other Windows server versions, you have two options to offboard Windows servers from the service:
 
@@ -273,7 +275,6 @@ To offboard the Windows server, you can use either of the following methods:
     $AgentCfg.RemoveCloudWorkspace("WorkspaceID")
     # Reload the configuration and apply changes
     $AgentCfg.ReloadConfiguration()
-
     ```
 
 ## Onboarding Servers with no management solution
@@ -315,9 +316,9 @@ OPINSIGHTS_WORKSPACE_KEY=<your workspace key>== AcceptEndUserLicenseAgreement=1"
 
 ## Group Policy Configuration
 
-Create a new group policy specifically for onboarding devices such as “Microsoft Defender for Endpoint Onboarding”.
+Create a new group policy specifically for onboarding devices such as "Microsoft Defender for Endpoint Onboarding".
 
-- Create a Group Policy Folder named “c:\windows\MMA”
+- Create a Group Policy Folder named "c:\windows\MMA"
 
      :::image type="content" source="images/grppolicyconfig1.png" alt-text="folders":::
 
@@ -328,7 +329,7 @@ Create a new group policy specifically for onboarding devices such as “Microso
      :::image type="content" source="images/grppolicyconfig2.png" alt-text="group policy image1":::
 
 It copies the files from DOMAIN\NETLOGON\MMA\filename to
-C:\windows\MMA\filename – **so the installation files are local to the server**:
+C:\windows\MMA\filename - **so the installation files are local to the server**:
 
 :::image type="content" source="images/deploymma.png" alt-text="deploy mma cmd":::
 
@@ -347,7 +348,7 @@ The name of the file to run here is c:\windows\MMA\DeployMMA.cmd.
 Once the server is restarted as part of the start-up process it will install the Update for customer experience and diagnostic telemetry KB, and then install the MMA Agent, while setting the Workspace ID and Key, and the server will be onboarded.
 
 You could also use an **immediate task** to run the deployMMA.cmd if you don't want to reboot all the servers.
-This could be done in two phases. First create **the files and the folder in** GPO – Give the system time to ensure the GPO has been applied, and all the servers have the install files. Then, add the immediate task. This will achieve the same result without requiring a reboot.
+This could be done in two phases. First create **the files and the folder in** GPO. Give the system time to ensure the GPO has been applied, and all the servers have the install files. Then, add the immediate task. This will achieve the same result without requiring a reboot.
 
 As the Script has an exit method and wont re-run if the MMA is installed, you could also use a daily scheduled task to achieve the same result. Similar to a Configuration Manager compliance policy it will check daily to ensure the MMA is present.
 
@@ -368,7 +369,7 @@ For Windows Server 2008 R2 PS1, ensure that you fulfill the following requiremen
 - Install either [.NET framework 4.5](https://www.microsoft.com/download/details.aspx?id=30653) (or later) or [KB3154518](https://support.microsoft.com/help/3154518/support-for-tls-system-default-versions-included-in-the-net-framework)
 
 Please check the KBs are present before onboarding Windows Server 2008 R2
-This process allows you to onboard all the servers if you don’t have Configuration Manager managing Servers.
+This process allows you to onboard all the servers if you don't have Configuration Manager managing Servers.
 
 ## Related topics
 
