@@ -27,7 +27,7 @@ search.appverid:
 description: "Service health dashboard posts are in English only but can be displayed automatically in the language you specify for Microsoft 365."
 ---
 
-# How to check Microsoft 365 service health
+# Language translation for Service health dashboard
 
 Service health dashboard posts are written in English-only due to the timeliness of the information we are posting, but can be automatically displayed in the language specified by your personal language settings for Microsoft 365. If you set your preferred language to anything other than English, you'll see an option in the Service health dashboard to automatically translate posts. The messages are machine translated to your preferred language, meaning that a computer did the translation. This option controls the default view, but you can also use the drop-down menu to translate and display posts in any of the languages we support for translation. If you select English, we'll revert the message to the original English version.
 
