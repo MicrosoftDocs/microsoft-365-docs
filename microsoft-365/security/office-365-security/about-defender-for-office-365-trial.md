@@ -29,10 +29,28 @@ Microsoft Defender for Office 365 safeguards your organization against malicious
 - **Threat investigation and response capabilities**: Use leading-edge tools to investigate, understand, simulate, and prevent threats.
 - **Automated investigation and response capabilities**: Save time and effort investigating and mitigating threats.
 
-A Microsoft Defender for Office 365 trial is the easiest way to try the capabilities of Defender for Office 365, and setting it up only takes a couple of clicks. After the trial setup is complete, all Defender for Office 365 Plan 1 and Plan 2 capabilities are available in the organization for up to 90 days.
+A Microsoft Defender for Office 365 trial is the easiest way to try the capabilities of Defender for Office 365, and setting it up only takes a couple of clicks. After the trial setup is complete, all Defender for Office 365 Plan 1 and Plan 2 capabilities are available in the organization for up to 90 days. These high level features are described in the following list:
+
+<br>
+
+****
+
+|Feature|Description|
+|---|---|
+|[Exclusive settings in anti-phishing policies](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)|Get user impersonation protection, domain impersonation protection, mailbox intelligence, and advanced phishing thresholds.|
+|[Safe Attachments](safe-attachments.md)|Inspect email attachments and other files in a controlled detonation environment to catch new and evasive malware.|
+|[Safe Links](safe-links.md)|Perform time-of-click checks to ensure URLs that might have passed initial inspection have not been weaponized.|
+|[Threat Trackers](threat-trackers.md)<sup>\*</sup>|Use informative widgets and views to identify cybersecurity issues that might impact your organization.|
+|[Threat Explorer](threat-explorer.md)<sup>\*</sup>|Hunt with near real-time information about threats in your Office 365 email.|
+|[Automated investigation and response (AIR)](office-365-air.md)<sup>\*</sup>|Automatically locate and remediate threat objects as alerts are triggered.|
+|[Attack simulation training](attack-simulation-training.md)<sup>\*</sup>|Train your users to identify phishing attacks and respond appropriately.|
+|[Campaign Views](campaigns.md)<sup>\*</sup>|Investigate and respond to large-scale malicious email activity.|
+|[Reports using Defender for Office 365 capabilities](view-reports-for-mdo.md)|View reports including threat protection status, URL threat protection, mail latency, and more.|
+
+<sup>\*</sup> Defender for Office 365 Plan 2 features that are available as part of the trial.
 
 > [!NOTE]
-> The automated configuration that's described in this article is currently in Public Preview and might not be available in your location.
+> The automated configuration that's described in this article is currently in Public Preview and might not be available in your organization.
 
 ## Terms and conditions
 
@@ -44,7 +62,7 @@ A trial allows organizations to easily set up and configure the Defender for Off
 
 By default, these policies are scoped to all users in the organization, but admins can customize the policies during or after setup so they apply only to specific users.
 
-During setup, MDO response functionality (found in MDO P2 or equivalent) is also set up for the entire organization. No policy scoping is required.
+During setup, Defender for Office 365 response functionality (found in Defender for Office 365 P2 or equivalent) is also set up for the entire organization. No policy scoping is required.
 
 ## Licensing
 
@@ -107,7 +125,7 @@ Rich simulation and training capabilities along with integrated experiences with
 
 - [Get started using Attack simulation training](attack-simulation-training-get-started.md)
 
-### Secure posture
+### Security posture
 
 Recommended templates and configuration insights help customers get and stay secure.
 

@@ -14,7 +14,7 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: 
+ms.assetid:
 description: "Use the MailItemsAccessed mailbox auditing action to perform forensic investigations of compromised user accounts."
 ---
 
@@ -32,7 +32,7 @@ The MailItemsAccessed mailbox auditing action covers all mail protocols: POP, IM
 
 ### Auditing sync access
 
-Sync operations are only recorded when a mailbox is accessed by a desktop version of the Outlook client for Windows or Mac. During the sync operation, these clients typically download a large set of mail items from the cloud to a local computer. The audit volume for sync operations is huge. So, instead of generating an audit record for each mail item that's synched, we just generate an audit event for the mail folder containing items that were synched. This makes the assumption that *all* mail items in the synched folder have been compromised. The access type is recorded in the OperationProperties field of the audit record. 
+Sync operations are only recorded when a mailbox is accessed by a desktop version of the Outlook client for Windows or Mac. During the sync operation, these clients typically download a large set of mail items from the cloud to a local computer. The audit volume for sync operations is huge. So, instead of generating an audit record for each mail item that's synched, we just generate an audit event for the mail folder containing items that were synched. This makes the assumption that *all* mail items in the synched folder have been compromised. The access type is recorded in the OperationProperties field of the audit record.
 
 See step 2 in the [Use MailItemsAccessed audit records for forensic investigations](#use-mailitemsaccessed-audit-records-for-forensic-investigations) section for an example of displaying the sync access type in an audit record.
 
@@ -44,16 +44,13 @@ See step 4 in the [Use MailItemsAccessed audit records for forensic investigatio
 
 ### Throttling of MailItemsAccessed audit records
 
-If more than 1,000 MailItemsAccessed audit records are generated in less than 24 hours, Exchange Online will stop generating auditing records for MailItemsAccessed activity. When a mailbox is throttled, MailItemsAccessed activity will not be logged for 24 hours after the mailbox was throttled. If this occurs, there's a potential that mailbox could have been compromised during this period. The recording of MailItemsAccessed activity will be resumed following a 24-hour period.  
+If more than 1,000 MailItemsAccessed audit records are generated in less than 24 hours, Exchange Online will stop generating auditing records for MailItemsAccessed activity. When a mailbox is throttled, MailItemsAccessed activity will not be logged for 24 hours after the mailbox was throttled. If this occurs, there's a potential that mailbox could have been compromised during this period. The recording of MailItemsAccessed activity will be resumed following a 24-hour period.
 
 Here's a few things to keep in mind about throttling:
 
 - Less than 1% of all mailboxes in Exchange Online are throttled
-
 - When a mailbox is throttling, only audit records for MailItemsAccessed activity are not audited. Other mailbox auditing actions aren't affected.
-
 - Mailboxes are throttled only for Bind operations. Audit records for sync operations are not throttled.
-
 - If a mailbox is throttled, you can probably assume there was MailItemsAccessed activity that wasn't recorded in the audit logs.
 
 See step 1 in the [Use MailItemsAccessed audit records for forensic investigations](#use-mailitemsaccessed-audit-records-for-forensic-investigations) section for an example of displaying the IsThrottled property in an audit record.
@@ -62,17 +59,17 @@ See step 1 in the [Use MailItemsAccessed audit records for forensic investigatio
 
 Mailbox auditing generates audit records for access to email messages so that you can be confident that email messages haven't been compromised. For this reason, in circumstances where we're not certain that some data has been accessed, we assume that it has by recording all mail access activity.
 
-Using MailItemsAccessed audit records for forensics purposes is typically performed after a data breach has been resolved and the attacker has been evicted. To begin your investigation, you should identify the set of mailboxes that they have been compromised and determine the time frame when attacker had access to mailboxes in your organization. Then, you can use the **Search-UnifiedAuditLog** or **Search-MailboxAuditLog** cmdlets in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) to search audit records that correspond to the data breach. 
+Using MailItemsAccessed audit records for forensics purposes is typically performed after a data breach has been resolved and the attacker has been evicted. To begin your investigation, you should identify the set of mailboxes that they have been compromised and determine the time frame when attacker had access to mailboxes in your organization. Then, you can use the **Search-UnifiedAuditLog** or **Search-MailboxAuditLog** cmdlets in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) to search audit records that correspond to the data breach.
 
 You can run one of the following commands to search for MailItemsAccessed audit records:
 
-**Unified audit log**
+**Unified audit log**:
 
 ```powershell
 Search-UnifiedAuditLog -StartDate 01/06/2020 -EndDate 01/20/2020 -UserIds <user1,user2> -Operations MailItemsAccessed -ResultSize 1000
 ```
 
-**Mailbox audit log**
+**Mailbox audit log**:
 
 ```powershell
 Search-MailboxAuditLog -Identity <user> -StartDate 01/06/2020 -EndDate 01/20/2020 -Operations MailItemsAccessed -ResultSize 1000 -ShowDetails
@@ -87,13 +84,13 @@ Here are the steps for using MailItemsAccessed audit records to investigate a co
 
    To search for MailItemsAccessed records where the mailbox was throttled, run the following command:
 
-   **Unified audit log**
- 
+   **Unified audit log**:
+
    ```powershell
    Search-UnifiedAuditLog -StartDate 01/06/2020 -EndDate 01/20/2020 -UserIds <user1,user2> -Operations MailItemsAccessed -ResultSize 1000 | Where {$_.AuditData -like '*"IsThrottled","Value":"True"*'} | FL
    ```
 
-   **Mailbox audit log**
+   **Mailbox audit log**:
 
    ```powershell
    Search-MailboxAuditLog -StartDate 01/06/2020 -EndDate 01/20/2020 -Identity <user> -Operations MailItemsAccessed -ResultSize 10000 -ShowDetails | Where {$_.OperationProperties -like "*IsThrottled:True*"} | FL
@@ -103,13 +100,13 @@ Here are the steps for using MailItemsAccessed audit records to investigate a co
 
    To search for MailItemsAccessed records where the mail items were accessed by a sync operation, run the following command:
 
-   **Unified audit log**
+   **Unified audit log**:
 
    ```powershell
    Search-UnifiedAuditLog -StartDate 01/06/2020 -EndDate 02/20/2020 -UserIds <user1,user2> -Operations MailItemsAccessed -ResultSize 1000 | Where {$_.AuditData -like '*"MailAccessType","Value":"Sync"*'} | FL
    ```
 
-   **Mailbox audit log**
+   **Mailbox audit log**:
 
    ```powershell
    Search-MailboxAuditLog -StartDate 01/06/2020 -EndDate 01/20/2020 -Identity <user> -Operations MailItemsAccessed -ResultSize 10000 -ShowDetails | Where {$_.OperationProperties -like "*MailAccessType:Sync*"} | FL
@@ -119,63 +116,74 @@ Here are the steps for using MailItemsAccessed audit records to investigate a co
 
    Use the properties listed below to investigate. These properties are located in the AuditData or OperationProperties property. If any of the syncs occur in the same context as the attacker activity, assume the attacker has synced all mail items to their client, which means the entire mailbox has probably been compromised.
 
-   |Property         | Description |
-   |:---------------- | :----------|
-   |ClientInfoString | Describes protocol, client (includes version)|
-   |ClientIPAddress  | IP address of the client machine.|
-   |SessionId        | Session ID helps to differentiate attacker actions vs day-to-day user activities on the same account (in the case of a compromised account)|
-   |UserId           | UPN of the user reading the message.|
-   |||
+   <br>
+
+   ****
+
+   |Property|Description|
+   |---|---|
+   |ClientInfoString|Describes protocol, client (includes version)|
+   |ClientIPAddress|IP address of the client machine.|
+   |SessionId|Session ID helps to differentiate attacker actions vs day-to-day user activities on the same account (in the case of a compromised account)|
+   |UserId|UPN of the user reading the message.|
+   |
 
 4. Check for bind activities. After performing steps 2 and step 3, you can be confident that all other access to email messages by the attacker will be captured in the MailItemsAccessed audit records that have a MailAccessType property with a value of "Bind".
 
    To search for MailItemsAccessed records where the mail items were accessed by a Bind operation, run the following command.
 
-   **Unified audit log**
+   **Unified audit log**:
 
    ```powershell
    Search-UnifiedAuditLog -StartDate 01/06/2020 -EndDate 01/20/2020 -UserIds <user1,user2> -Operations MailItemsAccessed -ResultSize 1000 | Where {$_.AuditData -like '*"MailAccessType","Value":"Bind"*'} | FL
    ```
- 
-   **Mailbox audit log**
-   
+
+   **Mailbox audit log**:
+
    ```powershell
    Search-MailboxAuditLog -StartDate 01/06/2020 -EndDate 01/20/2020 -Identity <user> -Operations MailItemsAccessed -ResultSize 10000 -ShowDetails | Where {$_.OperationProperties -like "*MailAccessType:Bind*"} | FL
    ```
 
    Email messages that were accessed are identified by their internet message Id. You can also check to see if any audit records have the same context as the ones for other attacker activity. For more information, see the [Identifying the access contexts of different audit records](#identifying-the-access-contexts-of-different-audit-records) section.
- 
+
    You can use the audit data for bind operations in two different ways:
 
-     - Access or collect all email messages the attacker accessed by using the InternetMessageId to find them and then checking to see if any of those messages contains sensitive information.
-
-     - Use the InternetMessageId to search audit records related to a set of potentially sensitive email messages. This is useful if you're concerned only about a small number of messages.
+   - Access or collect all email messages the attacker accessed by using the InternetMessageId to find them and then checking to see if any of those messages contains sensitive information.
+   - Use the InternetMessageId to search audit records related to a set of potentially sensitive email messages. This is useful if you're concerned only about a small number of messages.
 
 ## Filtering of duplicate audit records
 
 Duplicate audit records for the same bind operations that occur within an hour of each other are filtered out to remove auditing noise. Sync operations are also filtered out at one-hour intervals. The exception to this de-duplication process occurs if, for the same InternetMessageId, any of the properties described in the following table are different. If one of these properties is different in a duplicate operation, a new audit record is generated. This process is described in more detail in the next section.
 
-| Property| Description|
-|:--------|:---------|
-|ClientIPAddress | IP address of the client computer.|
-|ClientInfoString| The client protocol, client used to access the mailbox.| 
-|ParentFolder    | The full folder path of the mail item that was accessed. |
-|Logon_type      | The logon type of the user who performed the action. The logon types (and their corresponding Enum value) are Owner (0), Admin (1), or Delegate (2).|
-|MailAccessType  | Whether the access is a bind or a sync operation.|
-|MailboxUPN      | The UPN of the mailbox where the message being read is located.|
-|User            | The UPN of the user reading the message.|
-|SessionId       | The Session Id helps to differentiate attacker actions and day-to-day user activities in the same mailbox (in the case of account compromise) For more information about sessions, see [Contextualizing attacker activity within sessions in Exchange Online](https://techcommunity.microsoft.com/t5/exchange-team-blog/contextualizing-attacker-activity-within-sessions-in-exchange/ba-p/608801).|
-||||
+<br>
+
+****
+
+|Property|Description|
+|---|---|
+|ClientIPAddress|IP address of the client computer.|
+|ClientInfoString|The client protocol, client used to access the mailbox.|
+|ParentFolder|The full folder path of the mail item that was accessed.|
+|Logon_type|The logon type of the user who performed the action. The logon types (and their corresponding Enum value) are Owner (0), Admin (1), or Delegate (2).|
+|MailAccessType|Whether the access is a bind or a sync operation.|
+|MailboxUPN|The UPN of the mailbox where the message being read is located.|
+|User|The UPN of the user reading the message.|
+|SessionId|The Session Id helps to differentiate attacker actions and day-to-day user activities in the same mailbox (in the case of account compromise) For more information about sessions, see [Contextualizing attacker activity within sessions in Exchange Online](https://techcommunity.microsoft.com/t5/exchange-team-blog/contextualizing-attacker-activity-within-sessions-in-exchange/ba-p/608801).|
+|
 
 ## Identifying the access contexts of different audit records
 
 It's common that an attacker may access a mailbox at the same time the mailbox owner is accessing it. To differentiate between access by the attacker and the mailbox owner, there are audit record properties that define the context of the access. As previously explained, when the values for these properties are different, even when the activity occurs within the aggregation interval, separate audit records are generated. In the following example, there are three different audit records. Each one is differentiated by the Session Id and ClientIPAddress properties. The messages that were accessed are also identified.
 
-|Audit record 1  |Audit record 2  |Audit record 3|
-|---------|---------|---------|
+<br>
+
+****
+
+|Audit record 1|Audit record 2|Audit record 3|
+|---|---|---|
 |ClientIPAddress**1**<br/>SessionId**2**|ClientIPAddress**2**<br/>SessionId**2**|ClientIPAddress**1**<br/>SessionId**3**|
-|InternetMessageId**A**<br/>InternetMessageId**D**<br/>InternetMessageId**E**<br/>InternetMessageId**F**<br/>|InternetMessageId**A**<br/>InternetMessageId**C**|InternetMessageId**B** |
-||||
+|InternetMessageId**A**<br/>InternetMessageId**D**<br/>InternetMessageId**E**<br/>InternetMessageId**F**<br/>|InternetMessageId**A**<br/>InternetMessageId**C**|InternetMessageId**B**|
+|
 
 If any of the properties listed in the table in the [previous section](#filtering-of-duplicate-audit-records) are different, a separate audit record is generated to track the new context. Accesses will be sorted into the separate audit records depending on the context in which the activity took place.
 

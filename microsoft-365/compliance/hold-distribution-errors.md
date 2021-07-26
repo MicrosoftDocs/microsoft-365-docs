@@ -31,7 +31,7 @@ To reduce the number of errors related to eDiscovery holds, we recommend the fol
 - Check whether a hold policy is pending before you make any further updates to it. Run the following commands or save them to a PowerShell script.
 
     ```powershell
-    $status = Get-CaseHoldPolicy -Identity <policyname> 
+    $status = Get-CaseHoldPolicy -Identity <policyname> -DistributionDetail
     if($status.DistributionStatus -ne "Pending"){
         # policy no longer pending
         Set-CaseHoldPolicy -Identity <policyname> -AddExchangeLocation $user1

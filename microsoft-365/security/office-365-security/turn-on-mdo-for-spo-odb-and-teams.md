@@ -90,7 +90,7 @@ For detailed syntax and parameter information, see [Set-SPOTenant](/powershell/m
 
 ## Step 3 (Recommended) Use the Microsoft 365 Defender portal to create an alert policy for detected files
 
-You can create an alert policy that notifies you and other admins when Safe Attachments for SharePoint, OneDrive, and Microsoft Teams detects a malicious file. To learn more about alerts, see [Create activity alerts in the Microsoft 365 Defender portal](../../compliance/create-activity-alerts.md).
+You can create an alert policy that notifies you and other admins when Safe Attachments for SharePoint, OneDrive, and Microsoft Teams detects a malicious file. To learn more about alerts, see [Alert policies](../../compliance/alert-policies.md).
 
 1. In the Microsoft 365 Defender portal, go to **Policies & rules** \> **Alert policy** or open <https://security.microsoft.com/alertpolicies>.
 
