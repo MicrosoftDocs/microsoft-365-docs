@@ -18,10 +18,15 @@ description: "Integrate Microsoft Teams classes with Canvas"
 
 # Use Microsoft Teams classes with Canvas
 
-> [!IMPORTANT]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
-
 Microsoft Teams classes is a Learning Tools Interoperability (LTI) app that helps educators and students easily navigate between their Learning Management System (LMS) and Teams. Users can access their class teams associated with their course directly from within their LMS.
+
+## Prerequisites Before Deployment
+
+> [!NOTE]
+> The current Class Teams LTI only supports syncing Canvas users with Microsoft Azure Active Directory (AAD) in a limited scope. 
+> - Your tenant must have an exact match between a Canvas field (email, user ID, or SIS ID) and the UPN in Microsoft AAD. We are working to expand flexibility to the syncing functionality, but in the meantime, any users in Canvas not matched to a UPN in AAD will not be added to the Teams class synced with Canvas. 
+> - Only a single Microsoft tenant can be used for mapping users between Canvas and Microsoft.
+> - You will have to turn off SDS before using the Class Teams LTI in order to avoid duplication of groups.
 
 ## Microsoft Office 365 Admin
 
@@ -74,3 +79,9 @@ As a Canvas Admin, you'll need to add the Microsoft Teams classes LTI app within
 5. Select **Install**.
 
    The Microsoft Teams classes LTI app will be added to the list of external apps.
+   
+## Enabling the LTI app for Canvas courses
+
+To use the LTI app within a course, an instructor of the Canvas course must enable integrations sync. Each course must be enabled by an instructor for a corresponding team to be created; there is no global mechanism for teams creation. This is designed as a precautionary measure to prevent unwanted teams from being created.
+
+Refer your instructors to the [educator documentation](https://support.microsoft.com/topic/use-microsoft-teams-classes-in-your-lms-preview-ac6a1e34-32f7-45e6-b83e-094185a1e78a#ID0EBD=Instructure_Canvas) for enabling the LTI app for each course and completing the integration setup.

@@ -27,6 +27,9 @@ You can use Microsoft 365 data loss prevention (DLP) to monitor the actions that
 
 **Endpoint data loss prevention** (Endpoint DLP) extends the activity monitoring and protection capabilities of DLP to sensitive items that are on Windows 10 devices. Once devices are onboarded into the Microsoft 365 compliance solutions, the information about what users are doing with sensitive items is made visible in [activity explorer](data-classification-activity-explorer.md) and you can enforce protective actions on those items via [DLP policies](create-test-tune-dlp-policy.md).
 
+> [!TIP]
+> If you are looking for device control for removable storage, see [Microsoft Defender for Endpoint Device Control Removable Storage Access Control](../security/defender-endpoint/device-control-removable-storage-access-control.md#microsoft-defender-for-endpoint-device-control-removable-storage-access-control).
+
 ## Endpoint activities you can monitor and take action on
 
 Microsoft Endpoint DLP enables you to audit and manage the following types of activities users take on sensitive items on devices running Windows 10.
@@ -45,7 +48,7 @@ Microsoft Endpoint DLP enables you to audit and manage the following types of ac
 
 ## Monitored files
 
-Endpoint DLP supports monitoring of these file types:
+Endpoint DLP supports monitoring of these file types. DLP audits the activities for these file types, even if there isn't a policy match. 
 
 - Word files
 - PowerPoint files
@@ -61,8 +64,11 @@ Endpoint DLP supports monitoring of these file types:
 - .cs files
 - .h files
 - .java files
+ 
+If you only want monitoring data from policy matches, you can turn off the **Always audit file activity for devices** in the endpoint DLP global settings.
 
-By default, endpoint DLP audits the activities for these file types, even if there isn't a policy match. If you only want monitoring data from policy matches, you can turn off the **Always audit file activity for devices** in the endpoint DLP global settings. If this setting is on, activities on any Word, PowerPoint, Excel, PDF, and .csv file are always audited even if the device is not targeted by any policy.
+> [!NOTE]
+> If the **Always audit file activity for devices** setting is on, activities on any Word, PowerPoint, Excel, PDF, and .csv file are always audited even if the device is not targeted by any policy.
 
 Endpoint DLP monitors activity-based on MIME type, so activities will be captured even if the file extension is changed.
 

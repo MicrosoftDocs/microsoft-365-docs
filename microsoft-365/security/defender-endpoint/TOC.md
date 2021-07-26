@@ -107,12 +107,12 @@
 
 ##### [Deploy]()
 ###### [Deploy Microsoft Defender for Endpoint on iOS via Intune](ios-install.md)
+###### [Deploy Microsoft Defender for Endpoint on iOS for unenrolled devices](ios-install-unmanaged.md)
 
 ##### [Configure]()
 ###### [Configure iOS features](ios-configure-features.md)
 
-##### [Troubleshoot]()
-###### [FAQs and Troubleshoot issues](ios-troubleshoot.md)
+##### [FAQs and Troubleshooting](ios-troubleshoot.md)
 
 ##### [Privacy](ios-privacy.md)
 
@@ -174,6 +174,7 @@
 #### [General]()
 ##### [Verify data storage location and  update data retention settings](data-retention-settings.md)
 ##### [Configure alert notifications](configure-email-notifications.md)
+##### [Configure vulnerability email notifications](configure-vulnerability-email-notifications.md)
 ##### [Configure advanced features](advanced-features.md)
 
 #### [Permissions]()
@@ -238,6 +239,7 @@
 #### [Overview of attack surface reduction](overview-attack-surface-reduction.md)
 #### [Configure attack surface reduction capabilities](configure-attack-surface-reduction.md)
 #### [Learn about attack surface reduction rules](attack-surface-reduction.md)
+#### [Attack surface reduction rules](attack-surface-reduction-rules.md)
 #### [Evaluate attack surface reduction rules](evaluate-attack-surface-reduction.md)
 #### [Enable attack surface reduction rules](enable-attack-surface-reduction.md)
 #### [Customize attack surface reduction rules](customize-attack-surface-reduction.md)
@@ -246,7 +248,8 @@
 #### [Use audit mode for attack surface reduction](audit-windows-defender.md)
 
 ### Next-generation protection
-#### [Overview of Microsoft Defender Antivirus](microsoft-defender-antivirus-in-windows-10.md)
+#### [Next-generation protection overview](next-generation-protection.md)
+##### [Overview of Microsoft Defender Antivirus](microsoft-defender-antivirus-windows.md)
 ##### [Microsoft Defender Antivirus on Windows Server](microsoft-defender-antivirus-on-windows-server.md)
 ##### [Better together: Microsoft Defender Antivirus and Microsoft Defender for Endpoint](why-use-microsoft-defender-antivirus.md)
 ##### [Better together: Microsoft Defender Antivirus and Office 365](office-365-microsoft-defender-antivirus.md)
@@ -480,6 +483,7 @@
 ####### [Get alert related IPs information](get-alert-related-ip-info.md)
 ####### [Get alert related device information](get-alert-related-machine-info.md)
 ####### [Get alert related user information](get-alert-related-user-info.md)
+####### [Alerts queue in Microsoft 365 Defender](alerts-queue-endpoint-detection-response.md)
 
 ###### [Assessments of vulnerabilities and secure configurations]()
 ####### [Export assessment methods and properties](get-assessment-methods-properties.md)

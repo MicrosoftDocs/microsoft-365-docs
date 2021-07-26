@@ -24,7 +24,7 @@ ms.technology: mde
 
 **Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-- Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -32,46 +32,53 @@ ms.technology: mde
 
 
 ## API description
-Updates properties of a batch of existing [Alerts](alerts.md).
-<br>Submission of **comment** is available with or without updating properties.
-<br>Updatable properties are: `status`, `determination`, `classification` and `assignedTo`.
 
+Updates properties of a batch of existing [Alerts](alerts.md).
+
+Submission of **comment** is available with or without updating properties.
+
+Updatable properties are: `status`, `determination`, `classification` and `assignedTo`.
 
 ## Limitations
+
 1. You can update alerts that are available in the API. See [List Alerts](get-alerts.md) for more information.
 2. Rate limitations for this API are 10 calls per minute and 500 calls per hour.
 
-
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md)
 
-Permission type |	Permission	|	Permission display name
+Permission type | Permission | Permission display name
 :---|:---|:---
-Application |	Alerts.ReadWrite.All |	'Read and write all alerts'
+Application | Alerts.ReadWrite.All | 'Read and write all alerts'
 Delegated (work or school account) | Alert.ReadWrite | 'Read and write alerts'
 
->[!Note]
+> [!NOTE]
 > When obtaining a token using user credentials:
->- The user needs to have at least the following role permission: 'Alerts investigation' (See [Create and manage roles](user-roles.md) for more information)
->- The user needs to have access to the device associated with the alert, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)
+>
+> - The user needs to have at least the following role permission: 'Alerts investigation' (See [Create and manage roles](user-roles.md) for more information)
+> - The user needs to have access to the device associated with the alert, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)
 
 ## HTTP request
+
 ```http
 POST /api/alerts/batchUpdate
 ```
 
 ## Request headers
 
-Name | Type | Description
+Name|Type|Description
 :---|:---|:---
 Authorization | String | Bearer {token}. **Required**.
 Content-Type | String | application/json. **Required**.
 
-
 ## Request body
+
 In the request body, supply the IDs of the alerts to be updated and the values of the relevant fields that you wish to update for these alerts.
-<br>Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. 
-<br>For best performance you shouldn't include existing values that haven't changed.
+
+Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.
+
+For best performance you shouldn't include existing values that haven't changed.
 
 Property | Type | Description
 :---|:---|:---
@@ -83,12 +90,12 @@ determination | String | Specifies the determination of the specified alerts. Th
 comment | String | Comment to be added to the specified alerts.
 
 ## Response
-If successful, this method returns 200 OK, with an empty response body.
 
+If successful, this method returns 200 OK, with an empty response body.
 
 ## Example
 
-**Request**
+### Request
 
 Here is an example of the request.
 

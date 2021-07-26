@@ -62,11 +62,15 @@ After you perform the first training round, a job is started that does the follo
 
 - The model assigns a prediction score to the 10 items in the control set that you labeled during the training round. The model compares the prediction score of these 10 items with the actual label that you assigned to the item during the training round. Based on this comparison, the model identifies the following classification (called the *Control set confusion matrix*) to assess the model's prediction performance:
 
-  |          |Model predicts item is relevant |Model predicts item is not relevant |
-  |:---------|:---------|:---------|
-  |**Reviewer labels item as relevant**| True positive| False positive |
-  |**Reviewer labels item as not relevant**| False negative |True negative |
-  ||||
+  <br>
+
+  ****
+
+  |Label|Model predicts item is relevant|Model predicts item is not relevant|
+  |---|---|---|
+  |**Reviewer labels item as relevant**|True positive|False positive|
+  |**Reviewer labels item as not relevant**|False negative|True negative|
+  |
 
   Based on these comparisons, the model derives values for the F-score, precision, and recall metrics and the margin of error for each one. Scores for these model performance metrics are displayed on a flyout page for the training round. For a description of these metrics, see [Predictive coding reference](predictive-coding-reference.md).
 

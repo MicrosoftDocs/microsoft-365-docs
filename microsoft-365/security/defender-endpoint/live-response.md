@@ -56,7 +56,7 @@ Devices must be running one of the following versions of Windows
     - [Version 1803 (RS 4)](/windows/whats-new/whats-new-windows-10-version-1803) with [KB4537795](https://support.microsoft.com/help/4537795/windows-10-update-kb4537795)
     - [Version 1709 (RS 3)](/windows/whats-new/whats-new-windows-10-version-1709) with [KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)
   
-  - **Windows Server 2019 - Only applicable for Public preview**
+  - **Windows Server 2019**
     - Version 1903 or (with [KB4515384](https://support.microsoft.com/en-us/help/4515384/windows-10-update-kb4515384)) later 
     - Version 1809 (with [KB4537818](https://support.microsoft.com/en-us/help/4537818/windows-10-update-kb4537818))
 
@@ -74,10 +74,6 @@ You'll need to enable the live response capability in the [Advanced features set
 - **Ensure that the device has an Automation Remediation level assigned to it**.<br>
 You'll need to enable, at least, the minimum Remediation Level for a given Device Group. Otherwise you won't be able to establish a Live Response session to a member of that group.
 
-    You'll receive the following error:
-
-    ![Image of error message](images/live-response-error.png)
-
 - **Enable live response unsigned script execution** (optional). <br>
 
     >[!WARNING]
@@ -89,7 +85,9 @@ You'll need to enable, at least, the minimum Remediation Level for a given Devic
     Only users who have been provisioned with the appropriate permissions can initiate a session. For more information on role assignments, see [Create and manage roles](user-roles.md). 
 
     > [!IMPORTANT]
-    > The option to upload a file to the library is only available to those with the appropriate RBAC permissions. The button is greyed out for users with only delegated permissions.
+    > The option to upload a file to the library is only available to users with with "Manage Security Settings" permission.
+    >  The button is greyed out for users with only delegated permissions.
+    
 
     Depending on the role that's been granted to you, you can run basic or advanced live response commands. Users permissions are controlled by RBAC custom role. 
 
@@ -109,9 +107,9 @@ The dashboard also gives you access to:
 
 ## Initiate a live response session on a device 
 
-1. Sign in to Microsoft Defender Security Center.
+1. Sign in to Microsoft 365 Defender portal.
 
-2. Navigate to the devices list page and select a device to investigate. The devices page opens.
+2. Navigate to **Endpoints > Device inventory** and select a device to investigate. The devices page opens.
 
 3. Launch the live response session by selecting **Initiate live response session**. A command console is displayed. Wait while the session connects to the device.
 

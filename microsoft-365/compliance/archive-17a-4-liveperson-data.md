@@ -14,7 +14,7 @@ ms.collection: M365-security-compliance
 description: "Learn how to set up and use a 17a-4 LivePerson Conversational Cloud DataParser connector to import and archive LivePerson Conversational Cloud data in Microsoft 365."
 ---
 
-# Set up a connector to archive LivePerson Conversational Cloud data (preview)
+# Set up a connector to archive LivePerson Conversational Cloud data
 
 Use the [LivePerson Conversational Cloud DataParser](https://www.17a-4.com/liveperson-dataparser/) from 17a-4 LLC to import and archive data from LivePerson Conversational Cloud to user mailboxes in your Microsoft 365 organization. The DataParser includes a LivePerson Conversational Cloud connector that's configured to capture items from a third-party data source and import those items to Microsoft 365. The LivePerson Conversational Cloud DataParser connector converts data to an email message format and then imports those items to user mailboxes in Microsoft 365.
 

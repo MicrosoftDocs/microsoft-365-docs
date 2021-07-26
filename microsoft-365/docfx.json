@@ -86,6 +86,12 @@
       ]
     },
     "fileMetadata": {
+      "recommendations":{
+        "admin/**/*.md": false,
+        "business/**/*.md": false,
+        "business-video/**/*.md": false,
+        "commerce/**/*.md": false
+        },
       "titleSuffix": {
         "compliance/**/*.md": "Microsoft 365 Compliance",
         "security/mtp/**/*.md": "Microsoft 365 security",
@@ -94,14 +100,24 @@
         "enterprise/**/*.md": "Microsoft 365 Enterprise",
         "campaigns/**/*.md": "Microsoft 365 for Campaigns",
         "business/**/*.md": "Microsoft 365 Business",
-        "admin/**/*.md": "Microsoft 365 admin"
+        "admin/**/*.md": "Microsoft 365 admin",
+        "lighthouse/**/*.md": "Microsoft 365 Lighthouse"
       },
       "feedback_product_url": {
         "compliance/**/*.md":"https://office365.uservoice.com/forums/289138-office-365-security-compliance",
-        "security/**/*.md":"https://office365.uservoice.com/forums/289138-office-365-security-compliance"
+        "security/**/*.md":"https://office365.uservoice.com/forums/289138-office-365-security-compliance",
+        "admin/**/*.md":"https://admin.microsoft.com/adminportal/home?showfeedback=DocsMacCampaign",
+        "bookings/**/*.md":"https://admin.microsoft.com/adminportal/home?showfeedback=DocsMacCampaign",
+        "business/**/*.md":"https://admin.microsoft.com/adminportal/home?showfeedback=DocsMacCampaign",
+        "business-video/**/*.md":"https://admin.microsoft.com/adminportal/home?showfeedback=DocsMacCampaign",
+        "campaigns/**/*.md":"https://admin.microsoft.com/adminportal/home?showfeedback=DocsMacCampaign",
+        "commerce/**/*.md":"https://admin.microsoft.com/adminportal/home?showfeedback=DocsMacCampaign",
+        "enterprise/**/*.md":"https://admin.microsoft.com/adminportal/home?showfeedback=DocsMacCampaign",
+        "lighthouse/**/*.md":"https://github.com/MicrosoftDocs/microsoft-365-docs/issues"
       },
       "searchScope": {
-        "security/office-365-security/**/*.md": "Defender for Office"
+        "security/office-365-security/**/*.md": "Defender for Office",
+        "lighthouse/**/*.md": "Microsoft 365 Lighthouse"
       }
     },
     "template": [],
