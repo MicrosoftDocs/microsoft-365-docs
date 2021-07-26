@@ -83,7 +83,7 @@ Here is an example of the request.
 GET https://api.securitycenter.microsoft.com/alerts/636688558380765161_2136280442/domains
 ```
 
-### Response:
+### Response example
 
 Here is an example of the response.
 
