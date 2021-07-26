@@ -106,27 +106,27 @@ The tables in the following sections describe the settings that control active c
 |DDE|Excel|Don't allow Dynamic Data Exchange (DDE) server launch in Excel|**Enabled**|**Yes** for the value **Not configured**.|
 |DDE|Excel|Don't allow Dynamic Data Exchange (DDE) server lookup in Excel|**Enabled**|**Yes** for the following values: <ul><li>**Disabled**</li><li>**Not configured**</li></ul>|
 |DDE|Word|Dynamic Data Exchange|**Disabled**|n/a|
-|Jscript & VBScript|Outlook||Allow scripts in one-off Outlook forms|**Disabled**n/a|
+|Jscript & VBScript|Outlook|Allow scripts in one-off Outlook forms|**Disabled**|n/a|
 |Jscript & VBScript|Outlook|Do not allow Outlook object model scripts to run for public folders|**Enabled**|n/a|
 |Jscript & VBScript|Outlook|Do not allow Outlook object model scripts to run for shared folders|**Enabled**|n/a|
 |Macros|Access <p> Excel <p> PowerPoint <p> Visio <p> Word|Block macros from running in Office files from the Internet|**Enabled**|**Yes** for the following values: <ul><li>**Disabled**</li><li>**Not configured**</li></ul>|
 |Macros|Access <p> Excel <p> PowerPoint <p> Project <p> Publisher <p> Visio <p> Word|VBA Macro Notification Settings|**Disable all except digitally signed macros** <p> and <p> **Require macros to be signed by a trusted publisher**|**Yes** for the following values: <ul><li>**Disabled**</li><li>**Not configured**</li></ul>|
 |Macros|Excel|Scan encrypted macros in Excel Open XML workbooks|**Scan encrypted macros (default)**|n/a|
-|Macros - General & Embedded|Office|Allow VBA to load typelib references by path from untrusted intranet locations|**Disabled**|n/a|
-|Macros - General & Embedded|Office|Automation Security|**Use application macro security level**|n/a|
-|Macros - General & Embedded|Office|Disable additional security checks on VBA library references that may refer to unsafe locations on the local machine|**Disabled**|n/a|
-|Macros - General & Embedded|Office|Macro Runtime Scan Scope|**Enable for all documents**|n/a|
+|Macros|Office|Allow VBA to load typelib references by path from untrusted intranet locations|**Disabled**|n/a|
+|Macros|Office|Automation Security|**Use application macro security level**|n/a|
+|Macros|Office|Disable additional security checks on VBA library references that may refer to unsafe locations on the local machine|**Disabled**|n/a|
+|Macros|Office|Macro Runtime Scan Scope|**Enable for all documents**|n/a|
 |Macros|Outlook|Security setting for macros|**Warn for signed, disable unsigned**|**Yes** for the following values: <ul><li>**Always warn**</li><li>**Warn for signed, disable unsigned**</li><li>**Disabled**</li><li>**Not configured**</li></ul>|
 |Macros|Outlook|Outlook Security Mode|**Use Outlook Security Group Policy**|Required to enable all Outlook GPO settings. <p> Mentioned as a dependency (this policy doesn't block active content itself).|
 |Macros|PowerPoint|Scan encrypted macros in PowerPoint Open XML presentations|**Scan encrypted macros (default)**|n/a|
 |Macros|Publisher|Publisher Automation Security Level|**By UI (prompted)**|n/a|
 |Macros|Word|Scan encrypted macros in Word Open XML documents|**Scan encrypted macros (default)**|n/a|
-|ActiveX|Office|Disable All ActiveX|???|**Yes** for the following values: <ul><li>**Disabled**</li><li>**Not configured**</li></ul>|
-|ActiveX|Office|Check ActiveX objects|???|n/a|
-|Macros|Office|Only trust VBA macros that use V3 signatures|???|n/a|
+|ActiveX|Office|Disable All ActiveX|Not a security baseline setting.|**Yes** for the following values: <ul><li>**Disabled**</li><li>**Not configured**</li></ul>|
+|ActiveX|Office|Check ActiveX objects|Not a security baseline setting.|n/a|
+|Macros|Office|Only trust VBA macros that use V3 signatures|Not a security baseline setting.|n/a|
 |Add-ins & Extensibility|Excel|Do not show AutoRepublish warning alert|**Disabled**|n/a|
 |Add-ins & Extensibility|Excel <p> PowerPoint <p> Project <p> Publisher <p> Visio <p> Word|Disable Trust Bar Notification for unsigned application add-ins and block them|**Enabled**|**Yes** for the value **Disabled**.|
-|Add-ins & Extensibility|Excel <p> PowerPoint <p> Project <p> Publisher <p> Visio <p> Word|**Enabled**|Require that application add-ins are signed by Trusted Publisher|n/a|
+|Add-ins & Extensibility|Excel <p> PowerPoint <p> Project <p> Publisher <p> Visio <p> Word|Require that application add-ins are signed by Trusted Publisher|**Enabled**|n/a|
 |Add-ins & Extensibility|Excel|WEBSERVICE Function Notification Settings|**Disable all with notification**|**Yes** for the following values: <ul><li>**Disable all with notification**</li><li>**Disabled**</li><li>**Not configured**</li></ul>|
 |Add-ins & Extensibility|Office|Disable the Office client from polling the SharePoint Server for published links|**Disabled**|n/a|
 |Add-ins & Extensibility|Office|Disable UI extending from documents and templates|Disallow in Word = True <p> Disallow in Project = False <p> Disallow in Excel = True <p> Disallow in Visio= False <p> Disallow in PowerPoint = True <p> Disallow in Access = True <p> Disallow in Outlook = True <p> Disallow in Publisher = True <p> Disallow in InfoPath = True|n/a|
@@ -148,9 +148,9 @@ The tables in the following sections describe the settings that control active c
 ****
 |Category|App|Policy setting name|Security baseline<br>setting (recommended)|User prompt and<br>override available?|
 |---|---|---|:---:|
-|ActiveX|Office|Restrict ActiveX Install|**Enabled**|n/a|
-|Add-ins & Extensibility|Office|???|Add-on Management|n/a|
-|Add-ins & Extensibility|Office|???|Block Flash activation in Office documents|n/a|
-|Jscript & VBScript|Office|Restrict legacy JScript execution for Office|**Enabled**|n/a|
-|Jscript & VBScript|Office|Scripted Window Security Restrictions|???|n/a|
+|ActiveX|Office|Restrict ActiveX Install|excel.exe = True <p> exprwd.exe = True <p> groove.exe = True <p> msaccess.exe = True <p> mse7.exe = True <p> mspub.exe = True <p> onent.exe = True <p> outlook.exe = True <p> powerpnt.exe = True <p> pptview.exe = True <p> spDesign.exe = True <p> visio.exe = True <p> winproj.exe = True <p> winword.exe = True|n/a|
+|Add-ins & Extensibility|Office||Add-on Management|excel.exe = True <p> exprwd.exe = True <p> groove.exe = True <p> msaccess.exe = True <p> mse7.exe = True <p> mspub.exe = True <p> onent.exe = True <p> outlook.exe = True <p> powerpnt.exe = True <p> pptview.exe = True <p> spDesign.exe = True <p> visio.exe = True <p> winproj.exe = True <p> winword.exe = True|n/a|
+|Add-ins & Extensibility|Office|Block Flash activation in Office documents|See Microsoft Security Guide ADMX/ADML for list of COM killbits to Block all activation for Flash in the M365 Apps for enterprise Security Baselines in the [Security Compliance Toolkit](https://www.microsoft.com/download/details.aspx?id=55319).|n/a|
+|Jscript & VBScript|Office|Restrict legacy JScript execution for Office|**Enabled**: <p> Access: 69632 <p> Excel: 69632 <p> OneNote: 69632 <p> Outlook: 69632 <p> PowerPoint: 69632 <p> Project: 69632 <p> Publisher: 69632 <p> Visio: 69632 <p> Word: 69632|n/a|
+|Jscript & VBScript|Office|Scripted Window Security Restrictions|excel.exe = True <p> exprwd.exe = True <p> groove.exe = True <p> msaccess.exe = True <p> mse7.exe = True <p> mspub.exe = True <p> onent.exe = True <p> outlook.exe = True <p> powerpnt.exe = True <p> pptview.exe = True <p> spDesign.exe = True <p> visio.exe = True <p> winproj.exe = True <p> winword.exe = True|n/a|
 |
