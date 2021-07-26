@@ -21,7 +21,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 
-description: Learn about recommended cloud pc sizing options for your Windows 365 Business users.
+description: Learn about recommended Cloud PC sizing options for your Windows 365 Business users.
 ---
 
 # Windows 365 Business sizing options
@@ -43,4 +43,9 @@ This table shows examples of the different sizes available for a Cloud PC.
 |8vCPU/32GB/512GB</br>8vCPU/32GB/256GB</br>8vCPU/32GB/128GB |Software developers, engineers, content creators, design and engineering workstations. |Microsoft 365 Apps, Microsoft Teams, Outlook, Access, OneDrive, Adobe Reader, Edge, PowerBI, Visual Studio Code, line-of-business apps, Defender support.  |
 
 
+## Related content
+
+[Get started with Windows 365 Business](get-started-windows-365-business.md) (link page)\
+[Windows 365 Business plan comparison](https://www.microsoft.com/windows-365/business/compare-plans-pricing) (link page)\
+[Windows 365 Business](https://www.microsoft.com/windows-365/business) (link page)\
 

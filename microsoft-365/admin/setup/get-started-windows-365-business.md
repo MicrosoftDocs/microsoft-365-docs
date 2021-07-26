@@ -159,4 +159,8 @@ If you need to get help while setting up Windows 365 Business in the Microsoft 3
 
 ## Related content
 
-[Windows 365 Business sizing options](windows-365-business-sizing.md) 
+## Related content
+
+[Windows 365 Business](https://www.microsoft.com/windows-365/business) (link page)\
+[Windows 365 Business sizing options](windows-365-business-sizing.md) (link page)\
+[Windows 365 Business plan comparison](https://www.microsoft.com/windows-365/business/compare-plans-pricing) (link page)\
