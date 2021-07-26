@@ -111,13 +111,18 @@ Note that you can still choose to reject a confirmed topic. To do this, go to th
 
 ## Published topics
 
-Published topics have been edited so that specific information will always appear to whoever encounters the page. Manually created topics are listed here as well.
+On the **Manage topics** page, topics that were discovered in your specified SharePoint source locations will be listed on the **Published** tab. Published topics have been edited so that specific information will always appear to whoever encounters the page. Manually created topics are listed here as well.
 
    ![Manage Topics](../media/knowledge-management/manage-topics-new.png)
 
 ## Removed topics
 
-*New info here*
+On the **Manage topics** page, topics that were discovered in your specified SharePoint source locations will be listed on the **Removed** tab. Some suggested topics can appear here based on the end user votes on topic cards in the topic center.
+
+If you want to move a topic from the **Removed** tab to another tab, select the review and publish option.
+
+You might want to remove topics with similar names (for example, Microsoft Excel vs. Excel).
+
 
 ## Topic count dashboard
 
