@@ -68,7 +68,7 @@ Deploy Removable Storage Access Control on Windows 10 devices that have antimalw
 :::image type="content" source="images/powershell.png" alt-text="The PowerShell interface":::
 
 > [!NOTE]
-> None of Windows Security components need to be active, you can run Removable Storage Access Control independent of Windows Security status.
+> None of Windows Security components need to be active as you can run Removable Storage Access Control independent of Windows Security status.
 
 ## Policy properties
 
@@ -79,13 +79,13 @@ You can use the following properties to create a removable storage group:
 |Property Name  |Description  |Options  |
 |---------|---------|---------|
 |**GroupId**     |   [GUID](https://en.wikipedia.org/wiki/Universally_unique_identifier), a unique ID, represents the group and will be used in the policy.      |         |
-|**DescriptorIdList**     |  List the device properties you want to use to cover in the group. For each device property, see [Device Properties](/microsoft-365/security/defender-endpoint/device-control-removable-storage-protection?view=o365-worldwide&preserve-view=true) for more detail.​       | PrimaryId​</br> DeviceId​ </br>HardwareId​</br>InstancePathId:​</br>FriendlyNameId​</br>SerialNumberId​</br>VID​</br>PID​</br>VID_PID    |
-|**MatchType​**     |    When there are multiple device properties being used in the DescriptorIDList, MatchType defines the relationship.     |  MatchAll: </br>​Any attributes under the DescriptorIdList will be And relationship; for example, if administrator puts DeviceID and InstancePathID, for every connected USB, system will check to see whether the USB meets both values.​ </br> </br>MatchAny:</br> ​The attributes under the DescriptorIdList will be Or relationship; for example, if administrator puts DeviceID and InstancePathID, for every connected USB, system will do the enforcement as long as the USB has either an identical DeviceID or InstanceID value.​       |
+|**DescriptorIdList**     |  List the device properties you want to use to cover in the group. For each device property, see [Device Properties](/microsoft-365/security/defender-endpoint/device-control-removable-storage-protection?view=o365-worldwide&preserve-view=true) for more detail.​       | PrimaryId​</br> DeviceId​ </br>HardwareId​</br>InstancePathId​</br>FriendlyNameId​</br>SerialNumberId​</br>VID​</br>PID​</br>VID_PID    |
+|**MatchType​**     |    When there are multiple device properties being used in the DescriptorIDList, MatchType defines the relationship.     |  **MatchAll**: </br>​Any attributes under the DescriptorIdList will be **And** relationship; for example, if administrator puts DeviceID and InstancePathID, for every connected USB, system will check to see whether the USB meets both values.​ </br> </br>**MatchAny**:</br> ​The attributes under the DescriptorIdList will be **Or** relationship; for example, if administrator puts DeviceID and InstancePathID, for every connected USB, system will do the enforcement as long as the USB has either an identical DeviceID or InstanceID value.​       |
 
 #### Access Control Policy
 
 
-|Property Name  |Description  |Options  |
+|Property Name  |Description  |Options  |`
 |---------|---------|---------|
 |PolicyRuleId​     |     [GUID](https://en.wikipedia.org/wiki/Universally_unique_identifier), a unique ID, represents the policy and will be used in the reporting and troubleshooting.    |         |
 |IncludedIdList     | The group(s) that the policy will be applied to. If multiple groups are added, the policy will be applied to any media in all those groups.        |    The Group ID/GUID must be used at this instance.​ </br> ​The following example shows the usage of GroupID:​ </br> `<IncludedIdList> <GroupId> {EAA4CCE5-F6C9-4760-8BAD-FDCC76A2ACA1}</GroupId> </IncludedIdList>​`    |
