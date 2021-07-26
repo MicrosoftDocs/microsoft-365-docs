@@ -27,7 +27,7 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -36,29 +36,33 @@ ms.technology: mde
 Retrieves a map of CVE's to KB's and CVE details.
 
 ## Permissions
+
 User needs read permissions.
 
 ## HTTP request
-```
+
+```http
 GET /testwdatppreview/cvekbmap
 ```
 
 ## Request headers
 
-Header | Value 
+Header|Value
 :---|:---
-Authorization | Bearer {token}. **Required**.
-Content type | application/json
+Authorization|Bearer {token}. **Required**.
+Content type|application/json
 
 ## Request body
+
 Empty
 
 ## Response
+
 If successful and map exists - 200 OK.
 
 ## Example
 
-**Request**
+### Request example
 
 Here is an example of the request.
 
@@ -66,7 +70,7 @@ Here is an example of the request.
 GET https://graph.microsoft.com/testwdatppreview/CveKbMap
 ```
 
-**Response**
+### Response example
 
 Here is an example of the response.
 
@@ -82,7 +86,6 @@ Here is an example of the response.
             "title": "Cumulative Security Update for Internet Explorer",
             "severity": "Critical"
         },
-    …
+    ...
 }
-
 ```
