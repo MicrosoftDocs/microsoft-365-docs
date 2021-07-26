@@ -70,20 +70,20 @@ Defender for Endpoint antivirus and cloud protection automatically blocks most n
       1. **Send safe samples automatically** (default)
          - Safe samples are samples considered to not commonly contain PII data like: .bat, .scr, .dll, .exe.
          - If file is likely to contain PII, the user will get a request to allow file sample submission.
-         - This is the default on Windows, MacOS and Linux.
+         - This is the default on Windows, macOS and Linux.
 
       2. **Always Prompt**
          - If configured, the user will always be prompted for consent before file submission
-         - This setting isn't available in MacOS cloud protection
+         - This setting isn't available in macOS cloud protection
 
       3. **Send all samples automatically**
          - If configured, all samples will be sent automatically
          - If you would like sample submission to include macros embedded in Word docs, you must choose “Send all samples automatically”  
-         - This setting isn't available on MacOS cloud protection
+         - This setting isn't available on macOS cloud protection
 
       4. **Do not send**
          - Prevents “block at first sight” based on file sample analysis
-         - "Do not send" is the equivalent to the “Disabled” setting in MacOS policy
+         - "Do not send" is the equivalent to the “Disabled” setting in macOS policy
          - Metadata is sent for detections even when sample submission is disabled
 
    3. After metadata and/or files are submitted to the Defender for Endpoint cloud, you can use **samples**, **detonation**, or **big data analysis** machine learning models to reach a verdict. This model is illustrated in Figure 3. Turning off Cloud-delivered Protection will limit analysis to only what the client can provide through local machine learning models, and similar functions.
