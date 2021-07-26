@@ -139,9 +139,31 @@ You can roll back and remove a file from quarantine if you’ve determined that 
 
 Selecting **Download file** from the response actions allows you to download a local, password-protected .zip archive containing your file. A flyout will appear where you can record a reason for downloading the file, and set a password.
 
-By default, you will not be able to download files that are in quarantine.
+By default, you should be able to download files that are in quarantine.
 
 ![Image of download file action](images/atp-download-file-action.png)
+
+### Download quarantined files
+
+Files that have been quarantined by Microsoft Defender Antivirus or your security team will be saved in a compliant way according to your [sample submission configurations](enable-cloud-protection-microsoft-defender-antivirus.md). Your security team can download the files directly from the file’s detail page via the "Download file" button. **This preview feature is turned 'On' by default**.
+
+The location depends on your organization's geo settings (either EU, UK, or US). A quarantined file will only be collected once per organization. Learn more about Microsoft's data protection from the Service Trust Portal at https://aka.ms/STP.
+
+Having this setting turned on can help security teams examine potentially bad files and investigate incidents quickly and in a less risky way. However, if you need to turn this setting off, go to **Settings** > **Endpoints** > **Advanced features** > **Download quarantined files** to adjust the setting. [Learn more about advanced features](advanced-features.md)
+
+#### Backing up quarantined files
+
+Users may be prompted to provide explicit consent before backing up the quarantined file, depending on your [sample submission configuration](enable-cloud-protection-microsoft-defender-antivirus.md#use-group-policy-to-turn-on-cloud-delivered-protection).
+
+This feature will not work if sample submission is turned off. If automatic sample submission is set to request permission from the user, only samples that the user agrees to send will be collected.
+
+>[!IMPORTANT]
+>Download quarantined file requirements:
+>- Your organization uses Microsoft Defender Antivirus in active mode 
+>- Antivirus engine version is 1.1.17300.4 or later. See [Monthly platform and engine versions](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions)
+>- Cloud–based protection is enabled. See [Turn on cloud-delivered protection](enable-cloud-protection-microsoft-defender-antivirus.md)
+>- Sample submission is turned on
+>- Devices have Windows 10 version 1703 or later, or Windows server 2016 or 2019
 
 ### Collect files
 
