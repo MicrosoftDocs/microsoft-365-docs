@@ -148,7 +148,7 @@ Description: Local computer Sid or the Sid of the AD object, defines whether to 
 
 Description: Defines whether to display notification or not.
 
-   :::image type="content" source="images/device-status.png" alt-text="The screen on which the status of the device can be seen":::
+   :::image type="content" source="https://user-images.githubusercontent.com/81826151/127073160-26a5f437-34dc-4431-8ca2-5f0d13baa441.png" alt-text="The screen on which the status of the device can be seen":::
 
 Options: 0-4. When Type Allow or Deny is selected:
 
