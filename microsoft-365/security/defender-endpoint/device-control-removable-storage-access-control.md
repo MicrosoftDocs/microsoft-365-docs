@@ -85,7 +85,7 @@ You can use the following properties to create a removable storage group:
 
 #### Access Control Policy
 
-|Property Name  |Description  |Options  |`
+|Property Name  |Description  |Options  |
 |---------|---------|---------|
 |PolicyRuleId​     |     [GUID](https://en.wikipedia.org/wiki/Universally_unique_identifier), a unique ID, represents the policy and will be used in the reporting and troubleshooting.    |         |
 |IncludedIdList     | The group(s) that the policy will be applied to. If multiple groups are added, the policy will be applied to any media in all those groups.        |    The Group ID/GUID must be used at this instance.​ </br> ​The following example shows the usage of GroupID:​ </br> `<IncludedIdList> <GroupId> {EAA4CCE5-F6C9-4760-8BAD-FDCC76A2ACA1}</GroupId> </IncludedIdList>​`    |
