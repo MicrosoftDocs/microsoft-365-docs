@@ -54,19 +54,19 @@ You can create an activity alert that will send you an email notification when u
 
 4. Complete the following fields to create an activity alert:
 
-    a. **Name** - Type a name for the alert. Alert names must be unique within your organization.
+    1. **Name** - Type a name for the alert. Alert names must be unique within your organization.
 
-    b. **Description** (Optional) - Describe the alert, such as the activities and users being tracked and the users that email notifications are sent to. Descriptions provide a quick and easy way to describe the purpose of the alert to other admins.
+    1. **Description** (Optional) - Describe the alert, such as the activities and users being tracked and the users that email notifications are sent to. Descriptions provide a quick and easy way to describe the purpose of the alert to other admins.
 
-    c. **Alert type** - Make sure the **Custom** option is selected.
+    1. **Alert type** - Make sure the **Custom** option is selected.
 
-    d. **Send this alert when** - Click **Send this alert when** and then configure these two fields:
+    1. **Send this alert when** - Click **Send this alert when** and then configure these two fields:
 
-    - **Activities** - Click the drop-down list to display the activities that you can create an alert for. This is the same activities list that's displayed when you search the audit log. You can select one or more specific activities, or you can click the activity group name to select all activities in the group. For a description of these activities, see the "Audited activities" section in [Search the audit log](search-the-audit-log-in-security-and-compliance.md#audited-activities). When a user performs any of the activities that you've added to the alert, an email notification is sent.
+       - **Activities** - Click the drop-down list to display the activities that you can create an alert for. This is the same activities list that's displayed when you search the audit log. You can select one or more specific activities, or you can click the activity group name to select all activities in the group. For a description of these activities, see the "Audited activities" section in [Search the audit log](search-the-audit-log-in-security-and-compliance.md#audited-activities). When a user performs any of the activities that you've added to the alert, an email notification is sent.
 
-     - **Users** - Click this box and then select one or more users. If the users in this box perform the activities that you added to the **Activities** box, an alert will be sent. Leave the **Users** box blank to send an alert when any user in your organization performs the activities specified by the alert.
+       - **Users** - Click this box and then select one or more users. If the users in this box perform the activities that you added to the **Activities** box, an alert will be sent. Leave the **Users** box blank to send an alert when any user in your organization performs the activities specified by the alert.
 
-    e. **Send this alert to** - Click **Send this alert**, and then click in the **Recipients** box and type a name to add users who will receive an email notification when a user (specified in the **Users** box) performs an activity (specified in the **Activities** box). Note that you are added to the list of recipients by default. You can remove your name from this list.
+    1. **Send this alert to** - Click **Send this alert**, and then click in the **Recipients** box and type a name to add users who will receive an email notification when a user (specified in the **Users** box) performs an activity (specified in the **Activities** box). Note that you are added to the list of recipients by default. You can remove your name from this list.
 
 5. Click **Save** to create the alert.
 
@@ -98,27 +98,27 @@ To turn an activity alert back on, just repeat these steps and click the **Off**
 
     ![Example of an email notification sent for an activity alert](../media/a5f91611-fae6-4fe9-82f5-58521a2e2541.png)
 
-- Here's are some common document and email activities that you can create activity alerts for. The tables describe the activity, the name of the activity to create an alert for, and the name of the activity group that the activity is listed under in the **Activities** drop-down list. To see a complete list of the activities that you can create activity alerts for, see the "Audited activities" section in [Search the audit log](search-the-audit-log-in-security-and-compliance.md#audited-activities).
+- Here are some common document and email activities that you can create activity alerts for. The tables describe the activity, the name of the activity to create an alert for, and the name of the activity group that the activity is listed under in the **Activities** drop-down list. To see a complete list of the activities that you can create activity alerts for, see the "Audited activities" section in [Search the audit log](search-the-audit-log-in-security-and-compliance.md#audited-activities).
 
     > [!TIP]
     > You might want to create an activity alert for just one activity that's performed by any user. Or you might want to create an activity alert that tracks multiple activities performed by one or more users.
 
     The following table lists some common document-related activities in SharePoint or OneDrive for Business.
 
-    |**When a user does this...**|**Create an alert for this activity**|**Activity group**|
+    | When a user does this... | Create an alert for this activity | Activity group |
     |:-----|:-----|:-----|
-    |Views a document on a site.  <br/> |Accessed file  <br/> |File and folder activities  <br/> |
-    |Edits or changes a document.  <br/> |Modified file  <br/> |File and folder activities  <br/> |
-    |Shares a document with a user outside of your organization.  <br/> |Share file, folder, or site  <br/> And  <br/> Created sharing invitation  <br/> For more information, see [Use sharing auditing in the audit log](use-sharing-auditing.md).  <br/> |Sharing and access request activities  <br/> |
-    |Uploads or downloads a document.  <br/> |Uploaded file  <br/> And/or  <br/> Downloaded file  <br/> |File and folder activities  <br/> |
-    |Changes the access permissions to a site.  <br/> |Modified site permissions  <br/> |Site administration activities  <br/> |
+    |Views a document on a site.  |Accessed file  |File and folder activities  |
+    |Edits or changes a document.  |Modified file  |File and folder activities  |
+    |Shares a document with a user outside of your organization.  |Share file, folder, or site  <br/> And  <br/> Created sharing invitation  <br/> For more information, see [Use sharing auditing in the audit log](use-sharing-auditing.md).  |Sharing and access request activities  |
+    |Uploads or downloads a document.  |Uploaded file  <br/> And/or  <br/> Downloaded file  |File and folder activities  |
+    |Changes the access permissions to a site.  |Modified site permissions  |Site administration activities  |
 
     The following table lists some common email-related activities in Exchange Online.
 
-    |**When a user does this...**|**Create an alert for this activity**|**Activity group**|
+    | When a user does this... | Create an alert for this activity | Activity group |
     |:-----|:-----|:-----|
-    |Permanently deletes (purges) an email message from their mailbox.  <br/> |Purged messages from mailbox  <br/> | Exchange mailbox activities  <br/> |
-    |Sends an email message from a shared mailbox.  <br/> |Sent message using Send As permissions  <br/> And  <br/> Sent message using Send On Behalf permissions  <br/> | Exchange mailbox activities  <br/> |
+    |Permanently deletes (purges) an email message from their mailbox.  |Purged messages from mailbox  | Exchange mailbox activities  |
+    |Sends an email message from a shared mailbox.  |Sent message using Send As permissions  <br/> And  <br/> Sent message using Send On Behalf permissions  | Exchange mailbox activities  |
 
 - You can also use the **New-ActivityAlert** and **Set-ActivityAlert** cmdlets in Security & Compliance Center PowerShell to create and edit activity alerts. Keep the following things in mind if you use these cmdlets to create or edit activity alerts:
 
