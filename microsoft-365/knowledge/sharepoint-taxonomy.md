@@ -25,7 +25,7 @@ You must be a SharePoint administrator or global administrator to perform these 
 
 ![Diagram showing the stages and statuses of creating a topic in the Term store.](../media/knowledge-management/taxonomy-diagram.png)
 
-When someone requests to create a topic from a term, the taxonomy service relays the following information about the term to Viva Topics for the creation of a corresponding topic.
+When someone requests to create a topic from a term, the taxonomy service relays information about the term to Viva Topics for the creation of a corresponding topic. The includes the following:
 
 - Name (default label)
 - Synonyms
@@ -41,13 +41,13 @@ After a topic is created from a term, the term continues to exist in the SharePo
 
 If a term is deleted, the deletion doesn’t automatically remove the topic. If Viva Topics identifies content related to the topic that’s not solely from the term and its tagged content, the topic continues to exist.
 
-If a term’s default label or description changes, Viva Topics evaluates the changes and updates the topic information if it determines that the change is appropriate. The content that’s tagged with the term is also passed periodically to Viva Topics. If there’s a point where there’s no longer any content tagged with the term, and Viva Topics hasn’t identified any other content associated with the topic, the topic might be removed.
+If a term’s default label or description changes, Viva Topics evaluates the changes and updates the topic information if it determines that the change is appropriate. The content that’s tagged with the term is also passed periodically to Viva Topics. If there’s no longer any content tagged with the term, and Viva Topics hasn’t identified any other content associated with the topic, the topic might be removed.
 
 Updates to the topic don't affect the original term.
 
 ## Initiate a topic creation request
 
-You can request a single term or multiple terms in a term set. You initiate the topic creation request in the modern SharePoint term store. Users who can edit the term set have permission to initiate the request. This includes term store admins, group managers, and contributors.
+You can request a single term or multiple terms in a term set. You initiate the topic creation request in the modern SharePoint term store. Users who can edit the term set have permission to initiate the request. These users include term store admins, group managers, and contributors.
 
 ### Request a single term
 
