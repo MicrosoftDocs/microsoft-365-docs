@@ -57,12 +57,6 @@ Before you can initiate a session on a device, make sure you fulfill the followi
     - [Version 1809 (RS 5)](/windows/whats-new/whats-new-windows-10-version-1809) with [with KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)
     - [Version 1803 (RS 4)](/windows/whats-new/whats-new-windows-10-version-1803) with [KB4537795](https://support.microsoft.com/help/4537795/windows-10-update-kb4537795)
     - [Version 1709 (RS 3)](/windows/whats-new/whats-new-windows-10-version-1709) with [KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)
-<<<<<<< Updated upstream
-  
-  - **Windows Server 2019**
-    - Version 1903 or (with [KB4515384](https://support.microsoft.com/en-us/help/4515384/windows-10-update-kb4515384)) later 
-    - Version 1809 (with [KB4537818](https://support.microsoft.com/en-us/help/4537818/windows-10-update-kb4537818))
-=======
 
   - **Windows Server 2019 - Only applicable for Public preview**
     - Version 1903 or (with [KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)) later
@@ -76,7 +70,6 @@ Before you can initiate a session on a device, make sure you fulfill the followi
   > Only users with manage security or global admin roles can edit these settings.
 
 - **Enable live response for servers from the advanced settings page** (recommended).
->>>>>>> Stashed changes
 
   > [!NOTE]
   > Only users with manage security or global admin roles can edit these settings.
@@ -87,16 +80,12 @@ Before you can initiate a session on a device, make sure you fulfill the followi
 
   You'll receive the following error:
 
-<<<<<<< Updated upstream
-- **Enable live response unsigned script execution** (optional). <br>
-=======
   ![Image of error message](images/live-response-error.png)
 
 - **Enable live response unsigned script execution** (optional).
 
   > [!WARNING]
   > Allowing the use of unsigned scripts may increase your exposure to threats.
->>>>>>> Stashed changes
 
   Running unsigned scripts is not recommended as it can increase your exposure to threats. If you must use them however, you'll need to enable the setting in the [Advanced features settings](advanced-features.md) page.
 
