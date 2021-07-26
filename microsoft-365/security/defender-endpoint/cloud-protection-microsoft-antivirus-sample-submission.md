@@ -42,7 +42,7 @@ The product has received multiple compliance certifications, demonstrating conti
 - SOC I, II, III
 - and PCI
 
-[Azure Compliance Offerings](https://docs.microsoft.com/azure/compliance/#compliance-offerings) provides more information on these certifications. All certification artifacts for Microsoft Defender for Endpoint can be found on Microsoft’s [Service Trust Portal](https://servicetrust.microsoft.com/) within each of the associated Azure Certification Reports.
+[Azure Compliance Offerings](/azure/compliance/#compliance-offerings) provides more information on these certifications. All certification artifacts for Microsoft Defender for Endpoint can be found on Microsoft’s [Service Trust Portal](https://servicetrust.microsoft.com/) within each of the associated Azure Certification Reports.
 
 ## Cloud Protection Mechanisms
 
@@ -50,49 +50,63 @@ The Microsoft Intelligent Security Graph monitors threat data from a vast networ
 
 Defender for Endpoint antivirus and cloud protection automatically blocks most new, never-before-seen threats at first sight using the following methods:
 
-1. Lightweight client-based machine learning models, blocking new and unknown malware
-2. Local behavioral analysis, stopping file-based and file-less attacks
-3. High-precision antivirus, detecting common malware through generic and heuristic techniques
+1. Lightweight client-based machine learning models, blocking new and unknown malware.
+
+2. Local behavioral analysis, stopping file-based and file-less attacks.
+
+3. High-precision antivirus, detecting common malware through generic and heuristic techniques.
+
 4. Advanced cloud-based protection is provided for cases when Defender for Endpoint antivirus running on the endpoint needs more intelligence to verify the intent of a suspicious file.
+
    1. In the event Microsoft Defender for Endpoint antivirus cannot make a clear determination, file metadata is sent to the cloud protection service. Usually, the cloud protection service can determine whether the file is safe or malicious, within milliseconds.  
       - The cloud query of file metadata can be a result of behavior, mark of the web, or other characteristics where a clear verdict is not determined.
       - A small metadata payload is sent, with the goal of reaching a clean vs malware verdict
       - Metadata can include PE attributes, static file attributes, dynamic and contextual attributes, and more (Figure 1).
       - Does not include personally identifiable information (PII). Information such as filenames, are hashed
       - Can be synchronous or asynchronous. For synchronous, the file will not open until the cloud renders a verdict. For asynchronous, the file will open while the cloud performs its analysis.
+
    2. After examining the metadata, if Defender for Endpoint antivirus cloud protection cannot reach a conclusive verdict, it can request a sample of the file for further inspection. This request honors the settings configuration for sample submission:
+
       1. **Send safe samples automatically** (default)
          - Safe samples are samples considered to not commonly contain PII data like: .bat, .scr, .dll, .exe.
          - If file is likely to contain PII, the user will get a request to allow file sample submission.
          - This is the default on Windows, MacOS and Linux.
+
       2. **Always Prompt**
          - If configured, the user will always be prompted for consent before file submission
          - This setting isn't available in MacOS cloud protection
+
       3. **Send all samples automatically**
          - If configured, all samples will be sent automatically
          - If you would like sample submission to include macros embedded in Word docs, you must choose “Send all samples automatically”  
          - This setting isn't available on MacOS cloud protection
+
       4. **Do not send**
          - Prevents “block at first sight” based on file sample analysis
          - "Do not send" is the equivalent to the “Disabled” setting in MacOS policy
          - Metadata is sent for detections even when sample submission is disabled
+
    3. After metadata and/or files are submitted to the Defender for Endpoint cloud, you can use **samples**, **detonation**, or **big data analysis** machine learning models to reach a verdict. This model is illustrated in Figure 3. Turning off Cloud-delivered Protection will limit analysis to only what the client can provide through local machine learning models, and similar functions.
 
-Figure 1  - Examples of Metadata Sent to Microsoft Defender Cloud Protection
+_Figure 1  - Examples of Metadata Sent to Microsoft Defender Cloud Protection_
 
 :::image type="content" source="images/cloud-protection-metadata-sample.png" alt-text="Figure 1. Examples of metadata sent to Microsoft Defender Cloud Protection":::
 
+_Figure 2. Cloud-delivered protection flow_
+
 :::image type="content" source="images/cloud-protection-flow.png" alt-text="Figure 2. Cloud-delivered protection flow":::
+
+_Figure 3. Cloud-delivered protection and layered machine learning_
 
 :::image type="content" source="images/cloud-protection-detection-layered-machine-learning.png" alt-text="Figure 3. Cloud-delivered protection and layered machine learning":::
 
 > [!Note]
 >
-> You may also have heard the phrase “Block at first sight (BAFS).” BAFS” refers to the more extensive analysis that the cloud can provide, including things like detonation to provide a more accurate verdict. This can also include delaying the opening of a file that is under interrogation by cloud protection until a verdict is reached. If you disable “Sample Submission,” BAFS is disabled, and you cannot do the more extensive analysis and are limited to analyzing file metadata only.
+> You may also have heard the phrase “Block at first sight (BAFS).” BAFS refers to the more extensive analysis that the cloud can provide, including things like detonation to provide a more accurate verdict. This can also include delaying the opening of a file that is under interrogation by cloud protection until a verdict is reached. If you disable “Sample Submission,” BAFS is disabled, and you cannot do the more extensive analysis and are limited to analyzing file metadata only.
 
 ## Cloud Delivered Protection Levels
 
-Malware detection requires striking a balance between providing the strongest possible protection, while minimizing the number of false positives. Different environments may have tolerance for protection versus risk of false positive. Cloud-delivered protection levels allow the customer to define the tolerance level appropriate for the specific environment. When you enable Cloud Delivered Protection, the protection level is automatically configured to provide strong detection without increasing the risk of detecting legitimate files. If you want to configure a different protection level, see [Specify the cloud-delivered protection level for Microsoft Defender Antivirus - Windows security](/security/threat-protection/microsoft-defender-antivirus/specify-cloud-protection-level-microsoft-defender-antivirus).  
+Malware detection requires striking a balance between providing the strongest possible protection, while minimizing the number of false positives. Different environments may have tolerance for protection versus risk of false positive. Cloud-delivered protection levels allow the customer to define the tolerance level appropriate for the specific environment. When you enable Cloud Delivered Protection, the protection level is automatically configured to provide strong detection without increasing the risk of detecting legitimate files. If you want to configure a different protection level, see [Specify the cloud-delivered protection level for Microsoft Defender Antivirus](/security/threat-protection/microsoft-defender-antivirus/specify-cloud-protection-level-microsoft-defender-antivirus).  
 
 > [!Note]
 >
