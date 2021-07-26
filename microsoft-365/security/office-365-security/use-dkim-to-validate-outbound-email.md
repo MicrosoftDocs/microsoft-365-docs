@@ -86,10 +86,10 @@ Step 1: Click on the domain you wish to configure DKIM on DKIM page
 ![image](https://user-images.githubusercontent.com/3039750/126996261-2d331ec1-fc83-4a9d-a014-bd7e1854eb07.png)
 
 Step 2: Click on Create keys
-![image](https://user-images.githubusercontent.com/3039750/126994199-cdadb566-ea71-41d5-a499-daf7a16522b9.png)
+![image](https://user-images.githubusercontent.com/3039750/127001645-4ccf89e6-6310-4a91-85d6-aaedbfd501d3.png)
 
 Step 3: Copy the CNAMES shown in the pop up window
-![image](https://user-images.githubusercontent.com/3039750/126994285-d0d9c3a3-ab4d-4963-a3cb-bdc0883f9a37.png)
+![image](https://user-images.githubusercontent.com/3039750/127001787-3cce2c29-e0e4-4712-af53-c51dcba33c46.png)
 
 Step 4: Publish the copied CNAME records to your DNS service provider. 
 On your DNS provider's website, add CNAME records for DKIM that you want to enable. Make sure that the fields are set to the following values for each:
