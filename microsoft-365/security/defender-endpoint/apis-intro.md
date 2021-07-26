@@ -27,19 +27,15 @@ ms.custom: api
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-
-**Applies to:** 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
-
-> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Defender for Endpoint exposes much of its data and actions through a set of programmatic APIs. Those APIs will enable you to automate workflows and innovate based on Defender for Endpoint capabilities. The API access requires OAuth2.0 authentication. For more information, see [OAuth 2.0 Authorization Code Flow](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
 Watch this video for a quick overview of Defender for Endpoint's APIs.
 
->[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4d73M]
+>[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4d73M]
 
-In general, you’ll need to take the following steps to use the APIs:
+In general, you'll need to take the following steps to use the APIs:
 
 - Create an [AAD application](/microsoft-365/security/defender-endpoint/exposed-apis-create-app-nativeapp)
 - Get an access token using this application
