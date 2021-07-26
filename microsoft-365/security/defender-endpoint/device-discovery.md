@@ -81,10 +81,10 @@ You can change and customize your discovery settings, for more information see [
 Devices that have been discovered but have not yet been onboarded and secured by Microsoft Defender for Endpoint will be listed in Device Inventory within the Endpoints tab.
 You can now use a new filter in the device inventory list called Onboarding status which can have any of the following values:
 
-- Onboarded – The endpoint is onboarded to Microsoft Defender for Endpoint.
-- Can be onboarded – The endpoint was discovered in the network and the Operating System was identified as one that is supported by Microsoft Defender for Endpoint, but it is not currently onboarded. We highly recommend onboarding these devices.
-- Unsupported – The endpoint was discovered in the network but is not supported by Microsoft Defender for Endpoint.
-- Insufficient info – The system could not determine the supportability of the device. Enabling standard discovery on more devices in the network can enrich the discovered attributes.
+- Onboarded: The endpoint is onboarded to Microsoft Defender for Endpoint.
+- Can be onboarded: The endpoint was discovered in the network and the Operating System was identified as one that is supported by Microsoft Defender for Endpoint, but it is not currently onboarded. We highly recommend onboarding these devices.
+- Unsupported: The endpoint was discovered in the network but is not supported by Microsoft Defender for Endpoint.
+- Insufficient info: The system could not determine the supportability of the device. Enabling standard discovery on more devices in the network can enrich the discovered attributes.
 
 ![Image of device inventory dashboard](images/2b62255cd3a9dd42f3219e437b956fb9.png)
 
@@ -116,7 +116,7 @@ The following action types have also been added:
 
 You can try this example query:
 
-```
+```text
 DeviceNetworkEvents
 | where ActionType == "ConnectionAcknowledged" or ActionType == "ConnectionAttempt"
 | take 10
@@ -127,7 +127,7 @@ DeviceNetworkEvents
 The following section lists the changes you'll observe in Microsoft Defender for Endpoint and/or Microsoft 365 Security Center when this capability is enabled.
 
 1. Devices that are not onboarded to Microsoft Defender to Endpoint are expected to appear in the device inventory, advanced hunting, and API queries. This may significantly increase the size of query results.
-    1. "DeviceInfo" and "DeviceNetworkInfo" tables in Advanced Hunting will now hold discovered device. You can filter out those devices by using “OnboardingStatus” attribute.
+    1. "DeviceInfo" and "DeviceNetworkInfo" tables in Advanced Hunting will now hold discovered device. You can filter out those devices by using "OnboardingStatus" attribute.
     2. Discovered devices are expected to appear in Streaming API query results. You can filter out those devices by using the `OnboardingStatus` filter in your query.
 2. Unmanaged devices will be assigned to existing device groups based on the defined criteria.
 3. In rare cases, Standard discovery might trigger alerts on network monitors or security tools. Please provide feedback, if you experience such events, to help prevent these issues from recurring. You can explicitly exclude specific targets or entire subnets from being actively probed by Standard discovery.
