@@ -117,11 +117,11 @@ On the **Manage topics** page, topics that were discovered in your specified Sha
 
 ## Removed topics
 
-On the **Manage topics** page, topics that were discovered in your specified SharePoint source locations will be listed on the **Removed** tab. Some suggested topics can appear here based on the end user votes on topic cards in the topic center.
+On the **Manage topics** page, topics that were discovered in your specified SharePoint source locations will be listed on the **Removed** tab. Some suggested topics can appear here based on the end user votes on topic cards in the topic center. You can choose to remove specific topics to prevent them from being viewed. Topics can be removed regardless if they are in a suggested or confirmed state.
 
-If you want to move a topic from the **Removed** tab to another tab, select the review and publish option.
+Removed topics can later be added back as viewable topics if needed. If you want to move a topic from the **Removed** tab to another tab, select the review and publish option.
 
-You might want to remove topics with similar names (for example, Microsoft Excel vs. Excel).
+To avoid confusion for users, you might want to remove topics that have similar names (for example, Microsoft Excel vs. Excel).
 
 
 ## Topic count dashboard
