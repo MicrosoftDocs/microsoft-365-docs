@@ -26,20 +26,20 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
-
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
 This section addresses issues that might arise as you use the Microsoft Defender for Endpoint service.
 
 ## Server error - Access is denied due to invalid credentials
-If you encounter a server error when trying to access the service, you’ll need to change your browser cookie settings.
+
+If you encounter a server error when trying to access the service, you'll need to change your browser cookie settings.
 Configure your browser to allow cookies.
 
 ## Elements or data missing on the portal
+
 If some elements or data is missing on Microsoft 365 Defender it’s possible that proxy settings are blocking it.
 
 Make sure that `*.security.microsoft.com` is included the proxy allowlist.
-
 
 > [!NOTE]
 > You must use the HTTPS protocol when adding the following endpoints.
@@ -56,27 +56,33 @@ For more information, see [Ensure that Microsoft Defender Antivirus is not disab
 
 ## Known issues with regional formats
 
-**Date and time formats**<br>
-There are some known issues with the time and date formats. 
+### Date and time formats
+
+There are some known issues with the time and date formats.
 
 The following date formats are supported:
+
 - MM/dd/yyyy
 - dd/MM/yyyy
 
 The following date and time formats are currently not supported:
+
 - Date format yyyy/MM/dd
 - Date format dd/MM/yy
 - Date format with yy. Will only show yyyy.
 - Time format HH:mm:ss is not supported (the 12 hour AM/PM format is not supported). Only the 24-hour format is supported.
 
-**Use of comma to indicate thousand**<br>
+### Use of comma to indicate thousand
+
 Support of use of comma as a separator in numbers are not supported. Regions where a number is separated with a comma to indicate a thousand, will only see the use of a dot as a separator. For example, 15,5K is displayed as 15.5K.
 
->Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-troubleshoot-belowfoldlink)
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-troubleshoot-belowfoldlink)
 
 ## Microsoft Defender for Endpoint tenant was automatically created in Europe
+
 When you use Azure Defender to monitor servers, a Microsoft Defender for Endpoint tenant is automatically created. The Microsoft Defender for Endpoint data is stored in Europe by default.
 
 ## Related topics
+
 - [Troubleshoot Microsoft Defender for Endpoint onboarding issues](troubleshoot-onboarding.md)
 - [Review events and errors using Event Viewer](event-error-codes.md)
