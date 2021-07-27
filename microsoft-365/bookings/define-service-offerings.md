@@ -13,7 +13,7 @@ description: "Instructions for entering service offerings information, including
 
 # Define your service offerings in Bookings
 
-When you define your service offerings in Microsoft Bookings, you set, a service name, description, location (choose whether you want to meet in person or have an online meeting), duration, default reminders to customers and staff, internal notes about the service, and pricing. You can also tag the employees who are qualified to provide the service. Then, when customers come to your business web site to book an appointment, they can see exactly what types of appointments are available, choose the person they want to provide the service, and how much their service will cost.
+When you define your service offerings in Microsoft Bookings, you set a service name, description, location (choose whether you want to meet in person or have an online meeting), duration, default reminders to customers and staff, internal notes about the service, and pricing. You can also tag the employees who are qualified to provide the service. Then, when customers come to your business web site to book an appointment, they can see exactly what types of appointments are available, choose the person they want to provide the service, and how much their service will cost.
 
 You can also add customized information and URLs to the email confirmation and reminders that you send when someone books a service through your booking page.
 
@@ -81,23 +81,21 @@ You can also add customized information and URLs to the email confirmation and r
 
 4. On the **Availability options** page, you can see the options you've selected from your **Booking page** for your scheduling policy and availability for your staff. For more information, see [Set your scheduling policies](set-scheduling-policies.md).
 
-1. On the **Assign staff** page.
+5. On the **Assign staff** page, choose the staff that you want to assign to this service. If you don't select a staff member, all staff will be available to book and assigned to the service.
 
-1. **Custom fields** can be useful when collecting information that is needed every time the specific appointment is booked. Examples include insurance provider prior to a clinic visit, loan type for loan consultations, major of study for academic advising, or applicant ID for candidate interviews. These fields will appear on the Booking page when your customers book appointments with you and your staff.
+6. **Custom fields** can be useful when collecting information that is needed every time the specific appointment is booked. Examples include insurance provider prior to a clinic visit, loan type for loan consultations, major of study for academic advising, or applicant ID for candidate interviews. These fields will appear on the Booking page when your customers book appointments with you and your staff.
 
     - Customer email, phone number, address, and notes are non-removable fields, but you can make them optional by deselecting **Required** beside each field.
 
-5. On the **Reminders and Confirmations** page, you can set up reminders and notifications you send. Both types of emails are sent out to customers, staff members, or both, at a specified time period before the appointment. Multiple messages can be created for each appointment, according to your preference.
+7. On the **Reminders and Confirmations** page, you can set up reminders and notifications you send. Reminders and notifications are sent out to customers, staff members, or both, at a specified time before the appointment. Multiple messages can be created for each appointment, according to your preference.
 
-    - The default confirmation and reminder emails include basic information about the appointment, such as the customer/client name, staff member's name, the service or appointment booked, and the time of the appointment. For online meetings, a link to join will also be included. The ability to manage the booking can also be included, if this setting is enabled (as described above in step 8).
+    - The default confirmation and reminder emails include basic information about the appointment, such as the customer or client name, staff member's name, the service or appointment booked, and the time of the appointment. For online meetings, a link to join will also be included. The ability to manage the booking can also be included, if this setting is enabled.
 
-        :::image type="content" source="media/bookings-remind-confirm.jpg" alt-text="A confirmation email from Bookings":::
-
-    - Optionally, you can include any additional text you would like here, such as information about rescheduling or what customers should bring for the appointment. The following is an example of customized text added to the original confirmation email, seen in the **Additional information for Email Confirmation** field:
+    - You can include any additional text you would like here, such as information about rescheduling or what customers should bring for the appointment. The following is an example of customized text added to the original confirmation email, seen in the **Additional information for Email Confirmation** field:
 
         :::image type="content" source="media/bookings-additional-info.jpg" alt-text="Additional information in a Bookings email":::
 
-14. **Enable text message notifications for your customer** If selected, SMS messages are sent to the customer, but only if they opt-in.
+8. **Enable text message notifications for your customer** If selected, SMS messages are sent to the customer, but only if they opt-in.
 
     - Opt-in box on the manual booking and Self-Service Page:
 
@@ -107,28 +105,6 @@ You can also add customized information and URLs to the email confirmation and r
 
         :::image type="content" source="media/bookings-text-notifications.jpg" alt-text="A text notification from Bookings":::
 
-15. **Publishing options** Choose whether to have this service appear as bookable on the Self-Service page, or to make the service bookable only on the Calendar tab within the Bookings Web app.
+9. The **Default scheduling options** is on by default. Turn the toggle off if you want to customize how customers book a particular staff member.
 
-16. **Scheduling Policy** This setting determines how appointment times are viewed, and the time period in which bookings can be made or cancelled.
-
-17. **Email notifications** Sets when emails are sent to organization staff and to customers or clients.
-
-18. **Staff** Selecting this checkbox allows customers or clients to choose a specific staff member for their appointment.
-
-    - Enabled:
-
-        Customers can choose from all staff assigned to the appointment when booking on the Self-Service page. Selecting the option of **Anyone** will make Bookings choose an available staff member at random to assign to the appointment.
-
-    - Disabled:
-
-        Customers booking via the Self-Service page can select a service and a time and date. The available staff will be booked at random. Note that specific staff can still be selected when booked through the Calendar tab in the Bookings Web app.
-
-19. **Availability** The following options determine when the service can be booked:
-
-    - **Bookable when staff are free** The service maintains availability based on when staff are free within business hours, with no extra time restrictions.
-
-    - **Custom hours (recurring weekly)** The service has an added layer of availability that can be further restricted (in addition to restricting by business hours or with staff hours). Use this option when your service can only be provided or performed at a specific time.
-
-    - **Set different availability for a date range** This setting impacts availability at a specific point in time, instead of a recurring basis. For example, this could be used when a machine that is needed for the service is temporarily being serviced and unavailable, or when an organization is closed for a holiday.
-
-20. **Assign Staff** Select the staff (provided you have added staff members to the Staff tab) who will be bookable for that specific service. Selecting no individual staff will result in all staff being assigned to the service.
+10. **Publishing options** Choose whether to have this service appear as bookable on the Self-Service page, or to make the service bookable only on the Calendar tab within the Bookings Web app.
