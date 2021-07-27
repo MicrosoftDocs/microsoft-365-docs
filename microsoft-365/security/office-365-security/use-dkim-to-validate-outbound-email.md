@@ -198,7 +198,7 @@ Once you have published the CNAME records in DNS, you are ready to enable DKIM s
 
 3. On the **DKIM** page, select the domain by clicking on the name.
 
-4. In the details flyout that appears, chang the **Sign messages for this domain with DKIM signatures** setting to **Enabled** (![Toggle on](../../media/scc-toggle-on.png))
+4. In the details flyout that appears, change the **Sign messages for this domain with DKIM signatures** setting to **Enabled** (![Toggle on](../../media/scc-toggle-on.png))
 
    When you're finished, click **Rotate DKIM keys**.
 

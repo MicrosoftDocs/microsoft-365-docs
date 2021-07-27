@@ -1,5 +1,5 @@
 ---
-title: "Document understanding overview"
+title: Document understanding overview in Microsoft SharePoint Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,10 +12,10 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 localization_priority: Priority
-description: "Get an overview of the document understanding in Microsoft SharePoint Syntex."
+description: Learn about document understanding in Microsoft SharePoint Syntex.
 ---
 
-# Document understanding overview
+# Document understanding overview in Microsoft SharePoint Syntex
 
 
 </br>

@@ -24,7 +24,7 @@ ms.custom: api
 
 **Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -35,42 +35,45 @@ ms.custom: api
 Retrieve a list of device references that has this software installed.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md) for details.
 
-Permission type |   Permission  |   Permission display name
+Permission type|Permission|Permission display name
 :---|:---|:---
-Application | Software.Read.All | 'Read Threat and Vulnerability Management Software information'
-Delegated (work or school account) | Software.Read | 'Read Threat and Vulnerability Management Software information'
+Application|Software.Read.All|'Read Threat and Vulnerability Management Software information'
+Delegated (work or school account)|Software.Read|'Read Threat and Vulnerability Management Software information'
 
 ## HTTP request
-```
+
+```http
 GET /api/Software/{Id}/machineReferences 
 ```
 
 ## Request headers
 
-| Name        | Type | Description
-|:--------------|:-------|:--------------|
-| Authorization | String | Bearer {token}.**Required**.
+|Name|Type|Description
+|---|---|---|
+|Authorization|String|Bearer {token}.**Required**.
 
 ## Request body
+
 Empty
 
 ## Response
-If successful, this method returns 200 OK and a list of devices with the software installed in the body. 
 
+If successful, this method returns 200 OK and a list of devices with the software installed in the body. 
 
 ## Example
 
-**Request**
+### Request example
 
 Here is an example of the request.
 
-```
+```http
 GET https://api.securitycenter.microsoft.com/api/Software/microsoft-_-edge/machineReferences
 ```
 
-**Response**
+### Response example
 
 Here is an example of the response.
 
@@ -91,11 +94,12 @@ Here is an example of the response.
             "osPlatform": "Windows10",
             "rbacGroupName": "GroupTwo"
         }
-		...
-	]
+        ...
+    ]
 }
 ```
 
 ## Related topics
+
 - [Risk-based Threat & Vulnerability Management](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [Threat & Vulnerability software inventory](/microsoft-365/security/defender-endpoint/tvm-software-inventory)

@@ -1,8 +1,9 @@
 ---
-title: "Learn about document understanding models through the sample model"
-ms.author: efrene
-author: efrene
+title: Learn about document understanding models through the sample model
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
+ms.reviewer: ssquires
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -11,7 +12,7 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 localization_priority: Priority
-description: "Learn about document understanding models through the sample model"
+description: Learn about document understanding models through the sample model.
 ---
 
 # Learn about document understanding models through a sample model

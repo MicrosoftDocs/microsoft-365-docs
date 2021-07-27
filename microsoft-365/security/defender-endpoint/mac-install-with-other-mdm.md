@@ -64,7 +64,7 @@ Most MDM solutions use the same model for managing macOS devices, with similar t
 ### Package
 
 Configure deployment of a [required application package](mac-install-with-jamf.md), 
-with the installation package (wdav.pkg) downloaded from [Microsoft Defender Security Center](mac-install-with-jamf.md).
+with the installation package (wdav.pkg) downloaded from [Microsoft 365 Defender portal](mac-install-with-jamf.md).
 
 In order to deploy the package to your enterprise, use the instructions associated with your MDM solution.
 
@@ -74,7 +74,7 @@ Set up [a system configuration profile](mac-install-with-jamf.md).
 
 Your MDM solution may call it something like "Custom Settings Profile", as Microsoft Defender for Endpoint on macOS is not part of macOS.
 
-Use the property list, jamf/WindowsDefenderATPOnboarding.plist, which can be extracted from an onboarding package downloaded from [Microsoft Defender Security Center](mac-install-with-jamf.md).
+Use the property list, jamf/WindowsDefenderATPOnboarding.plist, which can be extracted from an onboarding package downloaded from [Microsoft 365 Defender portal](mac-install-with-jamf.md).
 Your system may support an arbitrary property list in XML format. You can upload the jamf/WindowsDefenderATPOnboarding.plist file as-is in that case.
 Alternatively, it may require you to convert the property list to a different format first.
 
@@ -112,7 +112,7 @@ Grant Full Disk Access to the following components:
 
 ### Network extension policy
 
-As part of the Endpoint Detection and Response capabilities, Microsoft Defender for Endpoint on macOS inspects socket traffic and reports this information to the Microsoft Defender Security Center portal. The following policy allows the network extension to perform this functionality.
+As part of the Endpoint Detection and Response capabilities, Microsoft Defender for Endpoint on macOS inspects socket traffic and reports this information to the Microsoft 365 Defender portal. The following policy allows the network extension to perform this functionality.
 
 - Filter type: Plugin
 - Plugin bundle identifier: `com.microsoft.wdav`
