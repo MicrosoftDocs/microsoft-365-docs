@@ -52,13 +52,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 Permission type|Permission|Permission display name
 :---|:---|:---
-<<<<<<< Updated upstream
-Application |	AdvancedQuery.Read.All |	'Run advanced queries'
-Delegated (work or school account) | AdvancedQuery.Read.All | 'Run advanced queries'
-=======
 Application|AdvancedQuery.Read.All|'Run advanced queries'
 Delegated (work or school account)|AdvancedQuery.Read|'Run advanced queries'
->>>>>>> Stashed changes
 
 > [!NOTE]
 > When obtaining a token using user credentials:
@@ -93,7 +88,7 @@ If successful, this method returns 200 OK, and _QueryResponse_ object in the res
 
 ## Example
 
-### Request
+### Request example
 
 Here is an example of the request.
 
@@ -111,12 +106,12 @@ POST https://api.securitycenter.microsoft.com/api/advancedqueries/run
 }
 ```
 
-##### Response
+### Response example
 
 Here is an example of the response.
 
->[!NOTE]
->The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+> [!NOTE]
+> The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 
 ```json
 {
