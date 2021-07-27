@@ -40,15 +40,15 @@ A SOC team prepares for and hunts new and incoming threats so that they can work
 
 ## Provide first, second, and potentially third level responses to cyber incidents and events
 
-The SOC is the frontline of defense to security events and incidents. When an event, threat, attack, policy violation, or audit finding triggers an alert or call to action, the SOC team is usually called upon to make an assessment and either triage and contain it or escalate it for deeper investigation to the broader team. Therefore, the SOC first line responders must have broad technical knowledge of security events and indicators.
+The SOC is the frontline of defense to security events and incidents. When an event, threat, attack, policy violation, or audit finding triggers an alert or call to action, the SOC team is called upon to make an assessment and either triage and contain it or escalate it for deeper investigation to the broader team. Therefore, the SOC first line responders must have broad technical knowledge of security events and indicators.
 
 ## Centralize monitoring and logging of your organization’s security sources 
 
-For the most part, the SOC team’s core function is to make sure all security devices such as firewalls, intrusion prevention systems, data loss prevention systems, threat and vulnerability management systems, and identity systems are functioning correctly and being monitored. The SOC teams will work with the broader network operations such as identity, DevOps, cloud, application, data science, and other business teams to ensure the analysis of security information is centralized and secured. Additionally, the SOC team is responsible for maintaining logs of the data in useable and readable formats, which could include parsing and normalizing disparate formats.
+Usually, the SOC team’s core function is to make sure all security devices such as firewalls, intrusion prevention systems, data loss prevention systems, threat and vulnerability management systems, and identity systems are functioning correctly and being monitored. The SOC teams will work with the broader network operations such as identity, DevOps, cloud, application, data science, and other business teams to ensure the analysis of security information is centralized and secured. Additionally, the SOC team is responsible for maintaining logs of the data in useable and readable formats, which could include parsing and normalizing disparate formats.
 
 ## Establish Red, Blue, and Purple team operational readiness
 
-Every SOC team should test its preparedness in responding to a cyber incident. This could be done via training exercises, such as table-tops and practice runs with various individuals in IT, security, and at the business level. Individual training exercise teams are created based on representative roles and are either playing the role of a defender (Blue Team), an attacker (Red Team), or as observers seeking to improve methods and techniques of both the Blue and Red teams through strengths and weakness that are uncovered during the exercise (Purple Team).
+Every SOC team should test its preparedness in responding to a cyber incident. Testing can be done via training exercises, such as table-tops and practice runs with various individuals in IT, security, and at the business level. Individual training exercise teams are created based on representative roles and are either playing the role of a defender (Blue Team), an attacker (Red Team), or as observers seeking to improve methods and techniques of both the Blue and Red teams through strengths and weaknesses that are uncovered during the exercise (Purple Team).
 
 ## Next step
 
