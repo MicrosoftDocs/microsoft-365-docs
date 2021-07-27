@@ -88,13 +88,13 @@ Use the **Alerts**, **Devices**, and **Users** tabs to view more information, su
 
 To view and manage your organization’s devices, in the navigation bar, under **Endpoints**, select **Device inventory**. You’ll see a list of devices as shown in the following image:
 
-:::image type="content" source="../../media/mde-p1/deviceinventory.PNG" alt-text="Device inventory"::: 
+:::image type="content" source="../../media/mde-p1/device-inventory.PNG" alt-text="Device inventory"::: 
 
 The list includes devices for which alerts were generated. By default, the data shown is for the past 30 days, with the most recent items listed first. 
 
 Select a device to view more information about it. A flyout pane opens, as shown in the following image:
 
-:::image type="content" source="../../media/mde-p1/deviceinventory-selecteddevice.PNG" alt-text="Selected device details":::
+:::image type="content" source="../../media/mde-p1/device-inventory-selecteddevice.PNG" alt-text="Selected device details":::
 
 The flyout pane displays details, such as any active alerts for the device, and includes links to take action, such as isolating a device. 
 
@@ -124,7 +124,7 @@ In Defender for Endpoint Plan 1, several reports are available in the Microsoft 
 
 To access your Threat protection report, in the Microsoft 365 Defender portal, choose **Reports**, and then choose **Threat protection**. The Threat Protection report shows alert trends, status, categories, and more. Views are arranged in two columns: **Alert trends** and **Alert status**, as shown in the following image:
  
-:::image type="content" source="../../media/mde-p1/threatprotectionreport.PNG" alt-text="Threat protection report":::
+:::image type="content" source="../../media/mde-p1/threat-protection-report.PNG" alt-text="Threat protection report":::
 
 Scroll down to see all the views in each list. 
 
@@ -138,7 +138,7 @@ Scroll down to see all the views in each list.
 
 To access your Device health report, in the Microsoft 365 Defender portal, choose **Reports**, and then choose **Device health**. The Device health report shows health state and antivirus across devices in your organization. Similar to the [Threat protection report](#threat-protection-report), views are arranged in two columns: **Device trends** and **Device summary**, as shown in the following image: 
  
-:::image type="content" source="../../media/mde-p1/devicehealthreport.PNG" alt-text="Device health report":::
+:::image type="content" source="../../media/mde-p1/device-health-report.png" alt-text="Device health report":::
 
 Scroll down to see all the views in each list. By default, the views in the **Device trends** column display data for the past 30 days, but you can change a view to display data for the last three months, last six months, or a custom time range (up to 180 days). The **Device summary** views are snapshots for the previous business day.
 
@@ -149,7 +149,7 @@ Scroll down to see all the views in each list. By default, the views in the **De
 
 To access your Device health report, in the Microsoft 365 Defender portal, choose **Reports**, and then choose **Web protection**. The Web protection report shows detections over time, such as malicious URLs and attempts to access blocked URLs, as shown in the following image: 
  
-:::image type="content" source="../../media/mde-p1/webprotectionreport.PNG" alt-text="Web protection report":::
+:::image type="content" source="../../media/mde-p1/web-protection-report.png" alt-text="Web protection report":::
 
 Scroll down to see all the views in the Web protection report. Some views include links that enable you to view more details, configure your threat protection features, and even manage indicators that serve as exceptions in Defender for Endpoint.
 
