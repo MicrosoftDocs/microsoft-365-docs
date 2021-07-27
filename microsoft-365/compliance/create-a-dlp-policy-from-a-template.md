@@ -53,7 +53,7 @@ In this example, you'll create a DLP policy that identifies U.S. PII data, which
     
 ### Create a DLP policy from a template
 
-1. Go to [https://protection.office.com](https://protection.office.com).
+1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com).
     
 2. Sign in using your work or school account. You're now in the Security &amp; Compliance Center.
     
