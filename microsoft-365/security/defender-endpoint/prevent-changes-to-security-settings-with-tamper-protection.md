@@ -109,7 +109,7 @@ Tamper protection can be turned on or off for your tenant using the Microsoft 36
 
 ### Turn tamper protection on (or off) in the Microsoft 365 Defender portal
 
-::image type="content" source="../../media/mde-turn-tamperprotect-on-new.png" alt-text="Turn tamper protection ON in Microsoft 365 Defender portal":::
+**Replace with image**
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
