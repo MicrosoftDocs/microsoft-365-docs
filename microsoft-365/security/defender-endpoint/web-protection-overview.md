@@ -117,13 +117,14 @@ Internal IP addresses are not supported by custom indicators. For a warn policy 
 
 In all web protection scenarios, SmartScreen and Network Protection can be used together to ensure protection across both first and third-party browsers and processes. SmartScreen is built directly into Microsoft Edge, while Network Protection monitors traffic in third-party browsers and processes. The diagram below illustrates this concept. This diagram of the two clients working together to provide multiple browser/app coverages is accurate for all features of Web Protection (Indicators, Web Threats, Content Filtering).
 
-(Add image)
+> [!div class="mx-imgBorder"]
+> ![Using SmartScreen and Network Protection together](../../media/web-protection-protect-Browsers.png)
 
 ## Troubleshoot endpoint blocks
 
 Responses from the SmartScreen cloud are standardized. Tools like Fiddler can be used to inspect the response from the cloud service, which will help determine the source of the block. 
 
-When the SmartScreen cloud service responds with an allow, block, or warn response, there is a response category and server context relayed back to the client. In Edge, the response category is what is used to determine the appropriate block page to show (malicious, phishing, organizational policy).
+When the SmartScreen cloud service responds with an allow, block, or warn response, there is a response category and server context relayed back to the client. In Microsoft Edge, the response category is what is used to determine the appropriate block page to show (malicious, phishing, organizational policy).
 
 The table below shows the responses and their correlated features.  
 
@@ -143,38 +144,42 @@ The table below shows the responses and their correlated features.
 
 Kusto queries in advanced hunting can be used to summarize web protection blocks in your organization for up to 30 days. These queries use the information listed above to distinguish between the various sources of blocks and summarize them in a user-friendly manner. For example, the query below lists all WCF blocks originating from Microsoft Edge.
 
-    ```kusto
-        DeviceEvents  
-        | where ActionType == "SmartScreenUrlWarning" 
-        | extend ParsedFields=parse_json(AdditionalFields) 
-        | project DeviceName, ActionType, Timestamp, RemoteUrl, InitiatingProcessFileName, Experience=tostring(ParsedFields.Experience)
-        | where Experience == "CustomPolicy" 
-         ```
+```kusto
+DeviceEvents  
+| where ActionType == "SmartScreenUrlWarning" 
+| extend ParsedFields=parse_json(AdditionalFields) 
+| project DeviceName, ActionType, Timestamp, RemoteUrl, InitiatingProcessFileName, Experience=tostring(ParsedFields.Experience)
+| where Experience == "CustomPolicy" 
+```
+
 Similarly, you can use the query below to list all WCF blocks originating from Network Protection (e.g. a WCF block in a third-party browser). Note that the ActionType has been updated and 'Experience' has been changed to 'ResponseCategory'.
 
-    ```kusto
-        DeviceEvents  
-        | where ActionType == "ExploitGuardNetworkProtectionBlocked" 
-        | extend ParsedFields=parse_json(AdditionalFields) 
-        | project DeviceName, ActionType, Timestamp, RemoteUrl, InitiatingProcessFileName, ResponseCategory=tostring(ParsedFields.ResponseCategory)
-        | where ResponseCategory == "CustomPolicy" 
-         ```
+```kusto
+DeviceEvents  
+| where ActionType == "ExploitGuardNetworkProtectionBlocked" 
+| extend ParsedFields=parse_json(AdditionalFields) 
+| project DeviceName, ActionType, Timestamp, RemoteUrl, InitiatingProcessFileName, ResponseCategory=tostring(ParsedFields.ResponseCategory)
+| where ResponseCategory == "CustomPolicy" 
+```
 
 To list blocks that are due to other features (e.g. Custom Indicators), refer to the table above outlining each feature and their respective response category. These queries may also be modified to search for telemetry related to specific machines in your organization. Note that the ActionType shown in each query above will show only those connections that were blocked by a Web Protection feature, and not all network traffic.
 
 ## User experience
 
-If a user visits a web page that poses a risk of malware, phishing, or other web threats, Edge will trigger a block page that reads ‘This site has been reported as unsafe’ along with information related to the threat.
+If a user visits a web page that poses a risk of malware, phishing, or other web threats, Microsoft Edge will trigger a block page that reads ‘This site has been reported as unsafe’ along with information related to the threat.
 
-(Add image)
+> [!div class="mx-imgBorder"]
+> ![Page blocked by Microsoft Edge](../../media/web-protection-malicious-Block.png)
 
-If blocked by WCF or a custom indicator, a block page shows in Edge that tells the user this site is blocked by their organization.
+If blocked by WCF or a custom indicator, a block page shows in Microsoft Edge that tells the user this site is blocked by their organization.
 
-(Add image)
+> [!div class="mx-imgBorder"]
+> ![Page blocked by your organization](../../media/web-protection-indicator-BlockPage.png)
 
 In any case, no block pages are shown in third-party browsers, and the user sees a ‘Secure Connection Failed’ page along with a toast notification. Depending on the policy responsible for the block, a user will see a different message in the toast notification. For example, web content filtering will display the message ‘This content is blocked’. 
 
-(Add image)
+> [!div class="mx-imgBorder"]
+> ![Page blocked by WCF](../../media/web-protection-NP-Block.png)
 
 ## Report false positives
 
