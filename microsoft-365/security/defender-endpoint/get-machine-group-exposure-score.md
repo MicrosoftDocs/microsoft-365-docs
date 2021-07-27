@@ -26,7 +26,7 @@ ms.custom: api
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -40,22 +40,22 @@ Retrieves a collection of alerts related to a given domain address.
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md)
 
-Permission type |   Permission  |   Permission display name
+Permission type|Permission|Permission display name
 :---|:---|:---
-Application | Score.Read.All | 'Read Threat and Vulnerability Management score'
-Delegated (work or school account) | Score.Read | 'Read Threat and Vulnerability Management score'
+Application|Score.Read.All|'Read Threat and Vulnerability Management score'
+Delegated (work or school account)|Score.Read|'Read Threat and Vulnerability Management score'
 
 ## HTTP request
 
-```
+```http
 GET /api/exposureScore/ByMachineGroups
 ```
 
 ## Request headers
 
-| Name        | Type | Description
-|:--------------|:-------|:--------------|
-| Authorization | String | Bearer {token}.**Required**.
+|Name|Type|Description
+|---|---|---|
+|Authorization|String|Bearer {token}.**Required**.
 
 ## Request body
 
@@ -67,15 +67,15 @@ If successful, this method returns 200 OK, with a list of exposure score per dev
 
 ## Example
 
-### Request
+### Example request
 
 Here is an example of the request.
 
-```
+```http
 GET https://api.securitycenter.microsoft.com/api/exposureScore/ByMachineGroups
 ```
 
-### Response
+### Example response
 
 Here is an example of the response.
 
@@ -94,7 +94,7 @@ Here is an example of the response.
             "score": 37.403726933165366,
             "rbacGroupName": "GroupTwo"
         }
-		...
+        ...
     ]
 }
 ```
