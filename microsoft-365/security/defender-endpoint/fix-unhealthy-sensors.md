@@ -37,10 +37,10 @@ An inactive device is not necessarily flagged due to an issue. The following act
 
 ### Device is not in use
 
-If the device has not been in use for more than seven days for any reason, it will remain in an ‘Inactive’ status in the portal.
+If the device has not been in use for more than seven days for any reason, it will remain in an 'Inactive' status in the portal.
 
 ### Device was reinstalled or renamed
-A reinstalled or renamed device will generate a new device entity in Microsoft Defender Security Center. The previous device entity will remain with an ‘Inactive’ status in the portal. If you reinstalled a device and deployed the Defender for Endpoint package, search for the new device name to verify that the device is reporting normally.
+A reinstalled or renamed device will generate a new device entity in Microsoft Defender Security Center. The previous device entity will remain with an 'Inactive' status in the portal. If you reinstalled a device and deployed the Defender for Endpoint package, search for the new device name to verify that the device is reporting normally.
 
 ### Device was offboarded
 If the device was offboarded, it will still appear in devices list. After seven days, the device health state should change to inactive.
@@ -48,7 +48,7 @@ If the device was offboarded, it will still appear in devices list. After seven 
 ### Device is not sending signals
 If the device is not sending any signals for more than seven days to any of the Microsoft Defender for Endpoint channels for any reason including conditions that fall under misconfigured devices classification, a device can be considered inactive. 
 
-Do you expect a device to be in ‘Active’ status? [Open a support ticket](https://support.microsoft.com/getsupport?wf=0&tenant=ClassicCommercial&oaspworkflow=start_1.0.0.0&locale=en-us&supportregion=en-us&pesid=16055&ccsid=636206786382823561).
+Do you expect a device to be in 'Active' status? [Open a support ticket](https://support.microsoft.com/getsupport?wf=0&tenant=ClassicCommercial&oaspworkflow=start_1.0.0.0&locale=en-us&supportregion=en-us&pesid=16055&ccsid=636206786382823561).
 
 ## Misconfigured devices
 Misconfigured devices can further be classified to:
@@ -69,8 +69,8 @@ The following suggested actions can help fix issues related to a misconfigured d
 If you took corrective actions and the device status is still misconfigured, [open a support ticket](https://go.microsoft.com/fwlink/?LinkID=761093&clcid=0x409).
 
 ### No sensor data
-A misconfigured device with status ‘No sensor data’ has communication with the service but can only report partial sensor data.
-Follow theses actions to correct known issues related to a misconfigured device with status ‘No sensor data’:
+A misconfigured device with status 'No sensor data' has communication with the service but can only report partial sensor data.
+Follow theses actions to correct known issues related to a misconfigured device with status 'No sensor data':
 
 - [Ensure the device has Internet connection](troubleshoot-onboarding.md#troubleshoot-onboarding-issues-on-the-device)</br>
   The Microsoft Defender for Endpoint sensor requires Microsoft Windows HTTP (WinHTTP) to report sensor data and communicate with the Microsoft Defender for Endpoint service.

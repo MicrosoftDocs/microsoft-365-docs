@@ -28,35 +28,34 @@ ms.custom: api
 
 **Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-
-Retrieves your [Microsoft Secure Score for Devices](tvm-microsoft-secure-score-devices.md). A higher Microsoft Secure Score for Devices means your endpoints are more resilient from cybersecurity threat attacks. 
+Retrieves your [Microsoft Secure Score for Devices](tvm-microsoft-secure-score-devices.md). A higher Microsoft Secure Score for Devices means your endpoints are more resilient from cybersecurity threat attacks.
 
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md) for details.
 
-Permission type |	Permission	|	Permission display name
+Permission type|Permission|Permission display name
 :---|:---|:---
-Application |	Score.Read.Alll |	'Read Threat and Vulnerability Management score'
-Delegated (work or school account) | Score.Read | 'Read Threat and Vulnerability Management score'
+Application|Score.Read.All|'Read Threat and Vulnerability Management score'
+Delegated (work or school account)|Score.Read|'Read Threat and Vulnerability Management score'
 
 ## HTTP request
 
-```
+```http
 GET /api/configurationScore
 ```
 
 ## Request headers
 
-Name | Type | Description
+Name|Type|Description
 :---|:---|:---
-Authorization | String | Bearer {token}. **Required**.
+Authorization|String|Bearer {token}. **Required**.
 
 ## Request body
 
@@ -68,7 +67,7 @@ If successful, this method returns 200 OK, with the device secure score data in 
 
 ## Example
 
-### Request
+### Request example
 
 Here is an example of the request.
 
@@ -76,12 +75,12 @@ Here is an example of the request.
 GET https://api.securitycenter.microsoft.com/api/configurationScore
 ```
 
-### Response
+### Response example
 
 Here is an example of the response.
 
->[!NOTE]
->The response list shown here may be truncated for brevity. 
+> [!NOTE]
+> The response list shown here may be truncated for brevity.
 
 ```json
 {

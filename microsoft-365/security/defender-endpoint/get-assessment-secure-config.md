@@ -1,7 +1,7 @@
 ---
 title: Export secure configuration assessment per device
 description: Returns  an entry for every unique combination of DeviceId, ConfigurationId.
-keywords: api, apis, export assessment, per device assessment, vulnerability assessment report, device vulnerability assessment, device vulnerability report, secure configuration assessment, secure configuration report, software vulnerabilities assessment, software vulnerability report, vulnerability report by machine, 
+keywords: api, apis, export assessment, per device assessment, vulnerability assessment report, device vulnerability assessment, device vulnerability report, secure configuration assessment, secure configuration report, software vulnerabilities assessment, software vulnerability report, vulnerability report by machine,
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,8 +16,8 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
---- 
- 
+---
+
 # Export secure configuration assessment per device
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -29,7 +29,6 @@ ms.custom: api
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
->
 Returns all of the configurations and their status, on a per-device basis.
 
 There are different API calls to get different types of data. Because the amount of data can be large, there are two ways it can be retrieved:
@@ -44,8 +43,7 @@ There are different API calls to get different types of data. Because the amount
 
 Data that is collected (using either _JSON response_ or _via files_) is the current snapshot of the current state, and does not contain historic data. In order to collect historic data, customers must save the data in their own data storages.
 
-> [!Note]
->
+> [!NOTE]
 > Unless indicated otherwise, all export assessment methods listed are **_full export_** and **_by device_** (also referred to as **_per device_**).
 
 ## 1. Export secure configuration assessment (JSON response)
@@ -64,10 +62,10 @@ This API response contains the Secure Configuration Assessment on your exp
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md) for details.
 
-Permission type | Permission | Permission display name
+Permission type|Permission|Permission display name
 ---|---|---
-Application | Vulnerability.Read.All | \'Read Threat and Vulnerability Management vulnerability information\'
-Delegated (work or school account) | Vulnerability.Read | \'Read Threat and Vulnerability Management vulnerability information\'
+Application|Vulnerability.Read.All|\'Read Threat and Vulnerability Management vulnerability information\'
+Delegated (work or school account)|Vulnerability.Read|\'Read Threat and Vulnerability Management vulnerability information\'
 
 ### 1.3 URL
 
@@ -77,42 +75,44 @@ GET /api/machines/SecureConfigurationsAssessmentByMachine
 
 ### 1.4 Parameters
 
-- pageSize \(default = 50,000\) – number of results in response
-
-- \$top – number of results to return \(doesn’t return \@odata.nextLink and therefore doesn’t pull all the data\)
+- pageSize \(default = 50,000\): Number of results in response.
+- \$top: Number of results to return \(doesn't return \@odata.nextLink and therefore doesn't pull all the data\).
 
 ### 1.5 Properties
 
->[!Note]
+> [!NOTE]
 >
->- The properties defined in the following table are listed alphabetically, by property ID.  When running this API, the resulting output will not necessarily be returned in the same order listed in this table.
->
->- Some additional columns might be returned in the response. These columns are temporary and might be removed, please use only the documented columns.
->
+> - The properties defined in the following table are listed alphabetically, by property ID.  When running this API, the resulting output will not necessarily be returned in the same order listed in this table.
+> - Some additional columns might be returned in the response. These columns are temporary and might be removed, please use only the documented columns.
 
-Property (ID) | Data type | Description | Example of a returned value
-:---|:---|:---|:---
-ConfigurationCategory | string | Category or grouping to which the configuration belongs: Application, OS, Network, Accounts, Security controls | Security controls
-ConfigurationId | string | Unique identifier for a specific configuration | scid-10000
-ConfigurationImpact | string | Rated impact of the configuration to the overall configuration score (1-10) | 9
-ConfigurationName | string | Display name of the configuration | Onboard devices to Microsoft Defender for Endpoint
-ConfigurationSubcategory | string | Subcategory or subgrouping to which the configuration belongs. In many cases, this describes specific capabilities or features. | Onboard Devices
-DeviceId | string | Unique identifier for the device in the service. | 9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
-DeviceName | string | Fully qualified domain name (FQDN) of the device. | johnlaptop.europe.contoso.com
-IsApplicable | bool | Indicates whether the configuration or policy is applicable | true
-IsCompliant | bool | Indicates whether the configuration or policy is properly configured | false
-IsExpectedUserImpact | bool | Indicates whether there will be user impact if the configuration will be applied | true
-OSPlatform | string | Platform of the operating system running on the device. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7. See tvm supported operating systems and platforms for details. | Windows10
-RbacGroupName | string | The role-based access control (RBAC) group. If this device is not assigned to any RBAC group, the value will be “Unassigned.” If the organization doesn’t contain any RBAC groups, the value will be “None.” | Servers
-RecommendationReference | string | A reference to the recommendation ID related to this software. | sca-_-scid-20000
-Timestamp | string | Last time the configuration was seen on the device | 2020-11-03 10:13:34.8476880
+<br>
+
+****
+
+Property (ID)|Data type|Description|Example of a returned value
+---|---|---|---
+ConfigurationCategory|string|Category or grouping to which the configuration belongs: Application, OS, Network, Accounts, Security controls|Security controls
+ConfigurationId|string|Unique identifier for a specific configuration|scid-10000
+ConfigurationImpact|string|Rated impact of the configuration to the overall configuration score (1-10)|9
+ConfigurationName|string|Display name of the configuration|Onboard devices to Microsoft Defender for Endpoint
+ConfigurationSubcategory|string|Subcategory or subgrouping to which the configuration belongs. In many cases, this describes specific capabilities or features.|Onboard Devices
+DeviceId|string|Unique identifier for the device in the service.|9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
+DeviceName|string|Fully qualified domain name (FQDN) of the device.|johnlaptop.europe.contoso.com
+IsApplicable|bool|Indicates whether the configuration or policy is applicable|true
+IsCompliant|bool|Indicates whether the configuration or policy is properly configured|false
+IsExpectedUserImpact|bool|Indicates whether there will be user impact if the configuration will be applied|true
+OSPlatform|string|Platform of the operating system running on the device. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7. See tvm supported operating systems and platforms for details.|Windows10
+RbacGroupName|string|The role-based access control (RBAC) group. If this device is not assigned to any RBAC group, the value will be "Unassigned." If the organization doesn't contain any RBAC groups, the value will be "None."|Servers
+RecommendationReference|string|A reference to the recommendation ID related to this software.|sca-_-scid-20000
+Timestamp|string|Last time the configuration was seen on the device|2020-11-03 10:13:34.8476880
+|
 
 ### 1.6 Examples
 
 #### 1.6.1 Request example
 
 ```http
-GET https://api.securitycenter.microsoft.com/api/machines/SecureConfigurationsAssessmentByMachine?pageSize=5 
+GET https://api.securitycenter.microsoft.com/api/machines/SecureConfigurationsAssessmentByMachine?pageSize=5
 ```
 
 #### 1.6.2 Response example
@@ -135,7 +135,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SecureConfigurationsAs
             "isCompliant": true,
             "isApplicable": true,
             "isExpectedUserImpact": false,
-            "configurationName": "Disable insecure administration protocol – Telnet",
+            "configurationName": "Disable insecure administration protocol - Telnet",
             "recommendationReference": "sca-_-scid-10000"
         },
         {
@@ -169,7 +169,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SecureConfigurationsAs
             "isCompliant": true,
             "isApplicable": true,
             "isExpectedUserImpact": false,
-            "configurationName": "Disable insecure administration protocol – Telnet",
+            "configurationName": "Disable insecure administration protocol - Telnet",
             "recommendationReference": "sca-_-scid-10000"
         },
         {
@@ -225,10 +225,10 @@ Rate limitations for this API are 5 calls per minute and 20 calls per hour.
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs for details.](apis-intro.md)
 
-Permission type | Permission | Permission display name
+Permission type|Permission|Permission display name
 ---|---|---
-Application | Vulnerability.Read.All | \'Read "threat and vulnerability management" vulnerability information\'
-Delegated (work or school account) | Vulnerability.Read | \'Read "threat and vulnerability management" vulnerability information\'
+Application|Vulnerability.Read.All|\'Read "threat and vulnerability management" vulnerability information\'
+Delegated (work or school account)|Vulnerability.Read|\'Read "threat and vulnerability management" vulnerability information\'
 
 ### 2.3 URL
 
@@ -238,22 +238,25 @@ GET /api/machines/SecureConfigurationsAssessmentExport
 
 ### Parameters
 
-- sasValidHours – The number of hours that the download URLs will be valid for (Maximum 24 hours).
+- sasValidHours: The number of hours that the download URLs will be valid for (Maximum 24 hours).
 
 ### 2.5 Properties
 
->[!Note]
+> [!NOTE]
 >
->- The files are gzip compressed & in multiline Json format.
->
->- The download URLs are only valid for 3 hours; otherwise you can use the parameter.
->
->- For maximum download speed of your data, you can make sure you are downloading from the same Azure region in which your data resides.
->
-Property (ID) | Data type | Description | Example of a returned value
-:---|:---|:---|:---
-Export files | array\[string\] | A list of download URLs for files holding the current snapshot of the organization | [  Https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...1”, “https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...2” ]
-GeneratedTime | string | The time that the export was generated. | 2021-05-20T08:00:00Z  ]
+> - The files are gzip compressed & in multiline Json format.
+> - The download URLs are only valid for 3 hours; otherwise you can use the parameter.
+> - For maximum download speed of your data, you can make sure you are downloading from the same Azure region in which your data resides.
+
+<br>
+
+****
+
+Property (ID)|Data type|Description|Example of a returned value
+---|---|---|---
+Export files|array\[string\]|A list of download URLs for files holding the current snapshot of the organization|["Https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...1", "https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...2"]
+GeneratedTime|string|The time that the export was generated.|2021-05-20T08:00:00Z
+|
 
 ### 2.6 Examples
 
@@ -280,13 +283,10 @@ GET https://api.securitycenter.microsoft.com/api/machines/SecureConfigurationsAs
 ## See also
 
 - [Export assessment methods and properties per device](get-assessment-methods-properties.md)
-
 - [Export software inventory assessment per device](get-assessment-software-inventory.md)
-
 - [Export software vulnerabilities assessment per device](get-assessment-software-vulnerabilities.md)
 
 Other related
 
 - [Risk-based threat & vulnerability management](next-gen-threat-and-vuln-mgt.md)
-
 - [Vulnerabilities in your organization](tvm-weaknesses.md)
