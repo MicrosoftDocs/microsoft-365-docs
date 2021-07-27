@@ -170,7 +170,7 @@ Intune name: `Execution of executable content (exe, dll, ps, js, vbs, etc.) drop
 
 Microsoft Endpoint Manager name: `Block executable content from email client and webmail`
 
-GUID: `BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550`
+GUID: `be9ba2d9-53ea-4cdc-84e5-9b1eeee46550`
 
 > [!NOTE]
 > The rule **Block executable content from email client and webmail** has the following alternative descriptions, depending on which application you use:
@@ -212,7 +212,7 @@ Intune name: `Obfuscated js/vbs/ps/macro code`
 
 Configuration Manager name: `Block execution of potentially obfuscated scripts`
 
-GUID: `5BEB7EFE-FD9A-4556-801D-275E5FFC04CC`
+GUID: `5beb7efe-fd9a-4556-801d-275e5ffc04cc`
 
 ### Block JavaScript or VBScript from launching downloaded executable content
 
@@ -224,7 +224,7 @@ Intune name: `js/vbs executing payload downloaded from Internet (no exceptions)`
 
 Configuration Manager name: `Block JavaScript or VBScript from launching downloaded executable content`
 
-GUID: `D3E037E1-3EB8-44C8-A917-57927947596D`
+GUID: `d3e037e1-3eb8-44c8-a917-57927947596d`
 
 ### Block Office applications from creating executable content
 
@@ -236,7 +236,7 @@ Intune name: `Office apps/macros creating executable content`
 
 SCCM name: `Block Office applications from creating executable content`
 
-GUID: `3B576869-A4EC-4529-8536-B80A7769E899`
+GUID: `3b576869-a4ec-4529-8536-b80a7769e899`
 
 ### Block Office applications from injecting code into other processes
 
@@ -252,7 +252,7 @@ Intune name: `Office apps injecting code into other processes (no exceptions)`
 
 Configuration Manager name: `Block Office applications from injecting code into other processes`
 
-GUID: `75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84`
+GUID: `75668c1f-73b5-4cf0-bb93-3ecf5cb7cc84`
 
 ### Block Office communication application from creating child processes
 
@@ -324,7 +324,7 @@ Intune name: `Win32 imports from Office macro code`
 
 Configuration Manager name: `Block Win32 API calls from Office macros`
 
-GUID: `92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B`
+GUID: `92e97fa1-2edf-4476-bdd6-9dd0b4dddc7b`
 
 ### Use advanced protection against ransomware
 
