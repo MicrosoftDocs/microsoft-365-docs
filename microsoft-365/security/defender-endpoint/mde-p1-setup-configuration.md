@@ -29,7 +29,7 @@ The general setup and configuration process for Defender for Endpoint Plan 1 (pr
 4. [Assign roles and permissions](#assign-roles-and-permissions)
 5. [Onboard to Defender for Endpoint](#onboard-to-defender-for-endpoint)
 6. [Configure next-generation protection](#configure-next-generation-protection)
-7. [Configure attack surface reduction capabilities](#configure-attack-surface-reduction-rules)
+7. [Configure your attack surface reduction capabilities](#configure-your-attack-surface-reduction-capabilities)
  
 > [!TIP]
 > As soon as roles and permissions are assigned, your security team can get started using the Microsoft 365 Defender portal (see [Getting started with Defender for Endpoint Plan 1](mde-plan1-getting-started.md)).
@@ -100,39 +100,42 @@ Go to Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](
 
 4.	When you are finished specifying your settings, choose **Review + save**.
 
-## Configure attack surface reduction rules
+## Configure your attack surface reduction capabilities
 
-Attack surface reduction rules are available on devices running Windows. We recommend using Microsoft Endpoint Manager, as shown in the following image:
+To reduce your attack surfaces, configure the following capabilities: 
 
-:::image type="content" source="../../media/mde-p1/asr-rules-in-mem.png" alt-text="Attack surface reduction rules in Microsoft Endpoint Manager":::
+- [Ransomware mitigation](#ransomware-mitigation)
+- Device control
+- Web protection
+- Network protection
+- Network firewall
 
-1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and sign in.
+### Ransomware mitigation
 
-2. Choose **Endpoint security** > **Attack surface reduction** > **+ Create policy**.
+You get ransomware mitigation through [controlled folder access](controlled-folders.md#what-is-controlled-folder-access), which allows only trusted apps to access protected folders on your endpoints. 
 
-3. For **Platform**, select **Windows 10 and later**.
+1. Make sure Microsoft Defender Antivirus always-on protection is configured. See [Enable and configure Microsoft Defender Antivirus always-on protection](configure-real-time-protection-microsoft-defender-antivirus.md).
 
-4. For **Profile**, select **Attack surface reduction rules**, and then choose **Create**.
+2. On a Windows 10 device, open the Windows Security app.
 
-5. On the **Basics** tab, specify a name and description for the policy, and then choose **Next**.
+3. Select **Virus & threat protection**.
 
-6. On the **Configuration settings** tab, expand **Attack Surface Reduction Rules**.
+4. Under **Ransomware protection**, select **Manage ransomware protection**.
 
-7. Specify settings for each rule, and then choose **Next**. 
+5. If controlled folder access is turned off, you'll need to turn it on. Select **protected folders**.
 
-   > [!TIP]
-   > Need help? See [attack surface reduction rules](attack-surface-reduction.md) for more information about what each rule does.
+6. Take one of the following steps:
 
-8. On the **Scope tags** tab, if you are using scope tags in your organization, specify scope tags for the policy you are creating. (To learn more, see [Scope tags](/mem/intune/fundamentals/scope-tags).)
+   - To add a folder, select **+ Add a protected folder**.
+   - To remove a folder, select it, and then select **Remove**.
 
-9. On the **Assignments** tab, specify the users and groups to whom your policy should be applied, and then choose **Next**. (To learn more about assignments, see [Assign user and device profiles in Microsoft Intune](/mem/intune/configuration/device-profile-assign).)
+### Device control
 
-10. On the **Review + create** tab, review the settings, and then choose **Create**.
+### Web protection
 
-> [!TIP]
-> To learn more about attack surface reduction rules, see the following resources:
-> - [Use attack surface reduction rules to prevent malware infection](attack-surface-reduction.md)
-> - [Customize attack surface reduction rules](customize-attack-surface-reduction.md)
+### Network protection
+
+### Network firewall
 
 ## Next steps
 
