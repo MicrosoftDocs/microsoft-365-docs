@@ -83,7 +83,7 @@ Defender for Endpoint enables you to edit and fine-tune your settings as needed.
 
 We recommend using [Microsoft Endpoint Manager](/mem) to manage your organization’s devices and security settings, as shown in the following image:
  
-:::image type="content" source="../../media/mde-p1/endpoint-policies.png" alt-text="Microsoft Endpoint Manager endpoint security policies":::
+:::image type="content" source="../../media/mde-p1/endpoint-policies.png" alt-text="Endpoint security policies in MEM":::
 
 Go to Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and sign in.
 
