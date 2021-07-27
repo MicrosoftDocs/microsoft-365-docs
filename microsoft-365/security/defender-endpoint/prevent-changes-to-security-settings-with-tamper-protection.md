@@ -157,7 +157,7 @@ If you are using Windows Server 2016, Windows 10 version 1709, 1803, or [1809](/
    
 On Windows Server 2016, the Settings app will not accurately reflect the status of real-time protection when tamper protection is enabled.
    
-#### Use PowerShell to determine whether tamper protection and/or real-time protection are turned on
+#### Use PowerShell to determine whether tamper protection and real-time protection are turned on
 
 1. Open the Windows PowerShell app.
 
@@ -229,21 +229,21 @@ To learn more about Threat & Vulnerability Management, see [Threat & Vulnerabili
 
 ## Frequently asked questions
 
-### To which Windows OS versions is configuring tamper protection is applicable?
+### On which versions of Windows can I configure tamper protection?
 
 Windows 10 OS [1709](/windows/release-health/status-windows-10-1709), [1803](/windows/release-health/status-windows-10-1803), [1809](/windows/release-health/status-windows-10-1809-and-windows-server-2019), or later together with [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint).
 
 If you are using Configuration Manager, version 2006, with tenant attach, tamper protection can be extended to Windows Server 2019. See [Tenant attach: Create and deploy endpoint security Antivirus policy from the admin center (preview)](/mem/configmgr/tenant-attach/deploy-antivirus-policy).
 
-### Will tamper protection affect non-Microsoft antivirus registrations?
+### Will tamper protection affect non-Microsoft antivirus registration in the Windows Security app?
 
 No. Third-party antivirus offerings will continue to register with the Windows Security application.
 
 ### What happens if Microsoft Defender Antivirus is not active on a device?
 
-Devices that are onboarded to Microsoft Defender for Endpoint will have Microsoft Defender Antivirus running in passive mode. Tamper protection will continue to protect the service and its features. 
+Devices that are onboarded to Microsoft Defender for Endpoint will have Microsoft Defender Antivirus running in passive mode. In these cases, tamper protection will continue to protect the service and its features. 
 
-### How can I turn tamper protection on/off?
+### How do I turn tamper protection on or off?
 
 If you are a home user, see [Manage tamper protection on an individual device](#manage-tamper-protection-on-an-individual-device).
 
@@ -253,15 +253,15 @@ If you are an organization using [Microsoft Defender for Endpoint](/microsoft-36
 - [Manage tamper protection using Configuration Manager, version 2006](#manage-tamper-protection-for-your-organization-with-configuration-manager-version-2006)
 - [Manage tamper protection using the Microsoft 365 Defender portal](#manage-tamper-protection-for-your-organization-using-the-microsoft-365-defender-portal) 
 
-### How does configuring tamper protection in Intune affect how I manage Microsoft Defender Antivirus through my group policy?
+### How does configuring tamper protection in Intune affect how I manage Microsoft Defender Antivirus with Group Policy?
 
-Your regular group policy doesn’t apply to tamper protection, and changes to Microsoft Defender Antivirus settings are ignored when tamper protection is on. 
+Group policy doesn’t apply to tamper protection. Changes made to Microsoft Defender Antivirus settings are ignored when tamper protection is on. 
 
-### For Microsoft Defender for Endpoint, is configuring tamper protection in Intune targeted to the entire organization only?
+### If we use Microsoft Intune to configure tamper protection, does it apply only to the entire organization?
 
-Configuring tamper protection in Intune or Microsoft Endpoint Manager can be targeted to your entire organization and to specific devices and user groups.
+You have flexibility in configuring tamper protection with Intune. You can target your entire organization, or select specific devices and user groups.
 
-### Can I configure Tamper Protection in Microsoft Endpoint Configuration Manager?
+### Can I configure Tamper Protection with Microsoft Endpoint Configuration Manager?
 
 If you are using tenant attach, you can use Microsoft Endpoint Configuration Manager. See the following resources:
 - [Manage tamper protection for your organization with Configuration Manager, version 2006](#manage-tamper-protection-for-your-organization-with-configuration-manager-version-2006)
@@ -283,7 +283,7 @@ No. Local admins cannot change or modify tamper protection settings.
 
 If a device is off-boarded from Microsoft Defender for Endpoint, tamper protection is turned on, which is the default state for unmanaged devices. 
 
-### Will there be an alert about tamper protection status changing in the Microsoft 365 Defender portal?
+### If the status of tamper protection changes, are alerts shown in the Microsoft 365 Defender portal?
 
 Yes. The alert is shown in [https://security.microsoft.com](https://security.microsoft.com) under **Alerts**.
 
