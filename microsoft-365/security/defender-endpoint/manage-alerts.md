@@ -66,7 +66,7 @@ You can use the examples in the following table to help you choose the context f
 | **Suppress alert in my organization** | Alerts with the same alert title on any device will be suppressed.                                                                                         | <ul><li>A benign administrative tool is used by everyone in your organization.</li></ul>                                                                                                                               |
 
 ### Suppress an alert and create a new suppression rule:
-Create custom rules to control when alerts are suppressed, or resolved. You can control the context for when an alert is suppressed by specifying the alert title, Indicator of compromise, and the conditions. After specifying the context, you’ll be able to configure the action and scope on the alert. 
+Create custom rules to control when alerts are suppressed, or resolved. You can control the context for when an alert is suppressed by specifying the alert title, Indicator of compromise, and the conditions. After specifying the context, you'll be able to configure the action and scope on the alert. 
 
 1. Select the alert you'd like to suppress. This brings up the **Alert management** pane.
 

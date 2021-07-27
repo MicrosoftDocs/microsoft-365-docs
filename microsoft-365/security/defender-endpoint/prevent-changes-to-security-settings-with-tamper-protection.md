@@ -59,7 +59,7 @@ Tamper protection doesn't prevent you from viewing your security settings. And, 
 
 | To perform this task... | See this section... |
 |:---|:---|
-| Manage tamper protection across your tenant <p>Use the Microsoft Defender Security Center to turn tamper protection on or off | [Manage tamper protection for your organization using the Microsoft Defender Security Center](#manage-tamper-protection-for-your-organization-using-the-microsoft-defender-security-center) |
+| Manage tamper protection across your tenant <p>Use the Microsoft 365 Defender portal to turn tamper protection on or off | [Manage tamper protection for your organization using the Microsoft 365 Defender](#manage-tamper-protection-for-your-organization-using-the-microsoft-365-defender-portal) |
 | Fine-tune tamper protection settings in your organization <p>Use Intune (Microsoft Endpoint Manager) to turn tamper protection on or off. You can configure tamper protection for some or all users with this method. | [Manage tamper protection for your organization using Intune](#manage-tamper-protection-for-your-organization-using-intune) |
 | Turn tamper protection on (or off) for your organization with Configuration Manager | [Manage tamper protection for your organization using tenant attach with Configuration Manager, version 2006](#manage-tamper-protection-for-your-organization-with-configuration-manager-version-2006) |
 | Turn tamper protection on (or off) for an individual device | [Manage tamper protection on an individual device](#manage-tamper-protection-on-an-individual-device) |
@@ -75,22 +75,21 @@ The following table provides details on the methods, tools, and dependencies.
 |:----|:----|
 | Microsoft Intune  | No |
 | Microsoft Endpoint Configuration Manager + Tenant Attach  |     No  |
-| Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com))    |     Yes |
 | Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com))  |     Yes  |
 
-## Manage tamper protection for your organization using the Microsoft Defender Security Center
+## Manage tamper protection for your organization using the Microsoft 365 Defender portal
 
-Tamper protection can be turned on or off for your tenant using the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)). Here are a few points to keep in mind:
+Tamper protection can be turned on or off for your tenant using the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). Here are a few points to keep in mind:
 
-- Currently, the option to manage tamper protection in the Microsoft Defender Security Center is on by default for new deployments. For existing deployments, tamper protection is available on an opt-in basis, with plans to make opting in the default method in the near future. (To opt in, in the Microsoft Defender Security Center, choose **Settings** > **Advanced features** > **Tamper protection**.) 
+- Currently, the option to manage tamper protection in the Microsoft 365 Defender portal is on by default for new deployments. For existing deployments, tamper protection is available on an opt-in basis, with plans to make opting in the default method in the near future. (To opt in, in the Microsoft 365 Defender portal, choose **Settings** > **Endpoints** > **Advanced features** > **Tamper protection**.) 
 
-- When you use the Microsoft Defender Security Center to manage tamper protection, you do not have to use either Intune or the tenant attach method.
+- When you use the Microsoft 365 Defender portal to manage tamper protection, you do not have to use Intune or the tenant attach method.
 
-- When you manage tamper protection in the Microsoft Defender Security Center, the setting is applied tenant wide, affecting all of your devices that are running Windows 10, Windows Server 2016, or Windows Server 2019. To fine-tune tamper protection (such as having tamper protection on for some devices but off for others), use either [Intune](#manage-tamper-protection-for-your-organization-using-intune) or [Configuration Manager with tenant attach](#manage-tamper-protection-for-your-organization-with-configuration-manager-version-2006).
+- When you manage tamper protection in the Microsoft 365 Defender portal, the setting is applied tenant wide, affecting all of your devices that are running Windows 10, Windows Server 2016, or Windows Server 2019. To fine-tune tamper protection (such as having tamper protection on for some devices but off for others), use either [Intune](#manage-tamper-protection-for-your-organization-using-intune) or [Configuration Manager with tenant attach](#manage-tamper-protection-for-your-organization-with-configuration-manager-version-2006).
 
-- If you have a hybrid environment, tamper protection settings configured in Intune take precedence over settings configured in the Microsoft Defender Security Center. 
+- If you have a hybrid environment, tamper protection settings configured in Intune take precedence over settings configured in the Microsoft 365 Defender portal. 
 
-### Requirements for managing tamper protection in the Microsoft Defender Security Center
+### Requirements for managing tamper protection in the Microsoft 365 Defender portal
 
 - You must have appropriate [permissions](/microsoft-365/security/defender-endpoint/assign-portal-access), such as global admin, security admin, or security operations.
 
@@ -108,13 +107,13 @@ Tamper protection can be turned on or off for your tenant using the Microsoft De
 
 - [Cloud-delivered protection](enable-cloud-protection-microsoft-defender-antivirus.md) must be turned on.
 
-### Turn tamper protection on (or off) in the Microsoft Defender Security Center 
+### Turn tamper protection on (or off) in the Microsoft 365 Defender portal
 
-![Turn tamper protection on in the Microsoft Defender Security Center](images/mde-turn-tamperprotect-on.png)
+::image type="content" source="../../media/mde-turn-tamperprotect-on-new.png" alt-text="Turn tamper protection ON in Microsoft 365 Defender portal":::
 
-1. Go to the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)) and sign in.
+1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
-2. Choose **Settings**.
+2. Choose **Settings** > **Endpoints**.
 
 3. Go to **General** > **Advanced features**, and then turn tamper protection on.
 
@@ -146,7 +145,7 @@ If you are part of your organization's security team, and your subscription incl
 
     - **Platform: Windows 10 and later**
     - **Profile type: Endpoint protection**
-    - **Category: Microsoft Defender Security Center**
+    - **Category: Microsoft 365 Defender**
     - **Tamper Protection: Enabled**
 
 4. Assign the profile to one or more groups.
@@ -215,9 +214,9 @@ Here's what you see in the Windows Security app:
 
 Tampering attempts typically indicate bigger cyberattacks. Bad actors try to change security settings as a way to persist and stay undetected. If you're part of your organization's security team, you can view information about such attempts, and then take appropriate actions to mitigate threats.
 
-When a tampering attempt is detected, an alert is raised in the [Microsoft Defender Security Center](/microsoft-365/security/defender-endpoint/portal-overview) ([https://securitycenter.windows.com](https://securitycenter.windows.com)).
+When a tampering attempt is detected, an alert is raised in the [Microsoft 365 Defender portal](/microsoft-365/security/defender-endpoint/portal-overview) ([https://security.microsoft.com](https://security.microsoft.com)).
 
-![Microsoft Defender Security Center](images/tamperattemptalert.png)
+![Microsoft 365 Defender](images/tamperattemptalert.png)
 
 Using [endpoint detection and response](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response) and [advanced hunting](/microsoft-365/security/defender-endpoint/advanced-hunting-overview) capabilities in Microsoft Defender for Endpoint, your security operations team can investigate and address such attempts.
 
@@ -227,7 +226,7 @@ Tamper protection integrates with [Threat & Vulnerability Management](/microsoft
 
 ![Turn on tamper protection](images/tamperprotectsecurityrecos.png)
 
-To learn more about Threat & Vulnerability Management, see [Threat & Vulnerability Management in Microsoft Defender Security Center](/microsoft-365/security/defender-endpoint/tvm-dashboard-insights#threat--vulnerability-management-in-microsoft-defender-security-center).
+To learn more about Threat & Vulnerability Management, see [Threat & Vulnerability Management in Microsoft 365 Defender](/microsoft-365/security/defender-endpoint/tvm-dashboard-insights#threat--vulnerability-management-in-microsoft-defender-security-center).
 
 ## Frequently asked questions
 
@@ -253,7 +252,7 @@ If you are an organization using [Microsoft Defender for Endpoint](/microsoft-36
 
 - [Manage tamper protection using Intune](#manage-tamper-protection-for-your-organization-using-intune)
 - [Manage tamper protection using Configuration Manager, version 2006](#manage-tamper-protection-for-your-organization-with-configuration-manager-version-2006)
-- [Manage tamper protection using the Microsoft Defender Security Center](#manage-tamper-protection-for-your-organization-using-the-microsoft-defender-security-center) 
+- [Manage tamper protection using the Microsoft 365 Defender portal](#manage-tamper-protection-for-your-organization-using-the-microsoft-365-defender-portal) 
 
 ### How does configuring tamper protection in Intune affect how I manage Microsoft Defender Antivirus through my group policy?
 
@@ -285,9 +284,9 @@ No. Local admins cannot change or modify tamper protection settings.
 
 If a device is off-boarded from Microsoft Defender for Endpoint, tamper protection is turned on, which is the default state for unmanaged devices. 
 
-### Will there be an alert about tamper protection status changing in the Microsoft Defender Security Center?
+### Will there be an alert about tamper protection status changing in the Microsoft 365 Defender portal?
 
-Yes. The alert is shown in [https://securitycenter.microsoft.com](https://securitycenter.microsoft.com) under **Alerts**.
+Yes. The alert is shown in [https://security.microsoft.com](https://security.microsoft.com) under **Alerts**.
 
 Your security operations team can also use hunting queries, such as the following example:
 
