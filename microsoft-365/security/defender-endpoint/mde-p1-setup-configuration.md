@@ -104,7 +104,7 @@ Go to Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](
 
 Attack surface reduction rules are available on devices running Windows. We recommend using Microsoft Endpoint Manager, as shown in the following image:
 
-:::image type="content" source="../../media/mde-p1/asr-rules-mem.png" alt-text="Attack surface reduction rules in Microsoft Endpoint Manager":::
+:::image type="content" source="../../media/mde-p1/asr-rules-in-mem.png" alt-text="Attack surface reduction rules in Microsoft Endpoint Manager":::
 
 1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and sign in.
 
