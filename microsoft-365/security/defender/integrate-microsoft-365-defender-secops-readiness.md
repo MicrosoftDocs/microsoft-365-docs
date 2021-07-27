@@ -30,19 +30,19 @@ ms.technology: m365d
 **Applies to:**
 - Microsoft 365 Defender
 
-Once the core functions of the SOC team are defined, the next step for your organization is to prepare for the adoption of Microsoft Defender through a [Zero Trust approach](/security/zero-trust/). This can help you determine the requirements needed for deploying Microsoft 365 Defender using modern industry leading practices, while evaluating Defender’s capabilities against their environment. 
+Once the core functions of the Security Operations Center (SOC) team are defined, the next step for your organization is to prepare for the adoption of Microsoft Defender through a [Zero Trust approach](/security/zero-trust/). This can help you determine the requirements needed for deploying Microsoft 365 Defender using modern industry leading practices, while evaluating Defender’s capabilities against your environment. 
 
-This approach is based on a strong foundation of protections and includes key areas such as identity, endpoints (devices), data, apps, infrastructure, and network. The Readiness Assessment team will determine the areas where a foundational requirement for enabling Microsoft 365 Defender has not yet been met and will need remediation. 
+This approach is based on a strong foundation of protections and includes key areas such as identity, endpoints (devices), data, apps, infrastructure, and networking. The Readiness Assessment team will determine the areas where a foundational requirement for enabling Microsoft 365 Defender has not yet been met and will need remediation. 
 
 The following are some of the items that will need to be remediated in order for the SOC to fully optimize processes in the SOC:
 
-- **Identity:** 	Legacy Active Directory Domain Services (AD DS) domains, no MFA plan, no inventory of privileged accounts, and others.
+- **Identity:** 	Legacy on-premises Active Directory Domain Services (AD DS) domains, no MFA plan, no inventory of privileged accounts, and others.
 - **Endpoints (devices):**	Large number of legacy OSes, limited device inventory, and others.
-- **Apps/Data:** 	Lack of data governance standards, no inventory of custom apps that won’t integrate.
-- **Networking:**	Performance issues due to low bandwidth, flat network, wireless security issues, and others.
+- **Data and apps:** 	Lack of data governance standards, no inventory of custom apps that won’t integrate.
 - **Infrastructure:**	Large number of unsanctioned SaaS licenses, no container security, and others.
+- **Networking:**	Performance issues due to low bandwidth, flat network, wireless security issues, and others.
 
-Organizations should also follow the [turning on Microsoft 365 Defender](m365d-enable.md) article to capture the baseline set of configuration requirements. These steps will in turn capture remediation activities the SOC teams will have to carryout to effectively develop use cases. 
+Organizations should also follow the [turning on Microsoft 365 Defender](m365d-enable.md) article to capture the baseline set of configuration requirements. These steps will in turn determine remediation activities the SOC teams will have to carry out to effectively develop use cases. 
 
 Adoption procedures and use case creation are described in Steps 3 and 4.
 

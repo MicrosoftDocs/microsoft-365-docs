@@ -30,7 +30,7 @@ ms.technology: m365d
 **Applies to:**
 - Microsoft 365 Defender
 
-Whether your organization is starting from scratch, outsourcing, or modernizing their existing security operations, it is important for you to align with the intended purpose of the SOC. While there is not a “one size fits all” option, many IT and security professionals would agree there are certain aspects that are more common than others. 
+Whether your organization is starting from scratch, outsourcing, or modernizing their existing security operations, it is important for you to align with the intended purpose of the Security Operations Center (SOC). While there is not a “one size fits all” option, many IT and security professionals would agree there are certain aspects that are more common than others. 
 
 The following sections describe the core functions of the SOC.
 
@@ -44,11 +44,11 @@ The SOC is the frontline of defense to security events and incidents. When an ev
 
 ## Centralize monitoring and logging of your organization’s security sources 
 
-For the most part, the SOC team’s core function is to make sure all security devices such as firewalls, intrusion prevention systems, data loss prevention systems, threat and vulnerability management systems, and identity systems are functioning correctly and being monitored. The SOC teams will work with the broader network operations such as identity, DevOps, cloud, application, data science and other business teams to ensure the analysis of security information is centralized and secured. Additionally, the SOC team is responsible for maintaining logs of the data in useable and readable formats, which could include parsing and normalizing disparate formats.
+For the most part, the SOC team’s core function is to make sure all security devices such as firewalls, intrusion prevention systems, data loss prevention systems, threat and vulnerability management systems, and identity systems are functioning correctly and being monitored. The SOC teams will work with the broader network operations such as identity, DevOps, cloud, application, data science, and other business teams to ensure the analysis of security information is centralized and secured. Additionally, the SOC team is responsible for maintaining logs of the data in useable and readable formats, which could include parsing and normalizing disparate formats.
 
 ## Establish Red, Blue, and Purple team operational readiness
 
-Every SOC team should test its preparedness in responding to a cyber incident. This could be done via training exercises, such as table-tops and practice runs with various individuals in IT, security, and at the business level. Individual SOC teams are created based on their roles in the exercise and are either playing the role of a defender (Blue Team), an attacker (Red Team) or as observers seeking to improve methods and techniques of both the Blue and Red teams through strengths and weakness that are uncovered during the exercise (Purple Team).
+Every SOC team should test its preparedness in responding to a cyber incident. This could be done via training exercises, such as table-tops and practice runs with various individuals in IT, security, and at the business level. Individual training exercise teams are created based on representative roles and are either playing the role of a defender (Blue Team), an attacker (Red Team), or as observers seeking to improve methods and techniques of both the Blue and Red teams through strengths and weakness that are uncovered during the exercise (Purple Team).
 
 ## Next step
 

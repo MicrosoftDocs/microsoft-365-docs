@@ -30,9 +30,9 @@ ms.technology: m365d
 **Applies to:**
 - Microsoft 365 Defender
 
-Today’s modern security operations center (SOC) is an intelligence-driven, adaptive organization that embraces threat defense strategy of moving security processes earlier in the deployment process so that security is built in. This means that the traditional assignment of isolated technologies and processes to single security analysts no longer supports the vast increase in data coming in from multiple sources. Security analysts and engineers are being asked to take a more holistic approach and to use shared insights across different platforms and disciplines to take effective action. 
+A modern Security Operations Center (SOC) is an intelligence-driven, adaptive organization that embraces threat defense strategy of moving security processes earlier in the deployment process so that security is built in. This means that the traditional assignment of isolated technologies and processes to single security analysts no longer supports the vast increase in data coming in from multiple sources. Security analysts and engineers are being asked to take a more holistic approach and to use shared insights across different platforms and disciplines to take effective action. 
 
-For this reason, the deployment and implementation of Microsoft’s Defender platform will need careful planning with the SOC team to optimize the day-to-day operations and lifecycle management of the Defender service itself. This solution explores several concepts on how to operationalize and integrate Microsoft 365 Defender with either new or existing people, processes and technologies that form the basis for modern security operations.
+For this reason, the deployment and implementation of Microsoft’s Defender platform will need careful planning with the SOC team to optimize the day-to-day operations and lifecycle management of the Defender service itself. This content explores several concepts on how to operationalize and integrate Microsoft 365 Defender with either new or existing people, processes, and technologies that form the basis for modern security operations.
 
 If you are not already familiar with Microsoft 365 Defender, see these articles:
 
@@ -40,21 +40,20 @@ If you are not already familiar with Microsoft 365 Defender, see these articles:
 - [Turn on Microsoft 365 Defender](m365d-enable.md)
 
 >[!Note]
->If your organization has already implemented some aspects of Microsoft 365 Defender, these articles can either affirm or help improve the adequacy of the existing architecture and processes.
+>If your organization has already implemented some aspects of Microsoft 365 Defender, these articles can either affirm or help improve your existing architecture and processes.
 >
 
 ## Target audience
 
 This content is designed for the following:
 
-- Security Operations Teams
-- DevOps and SecOps Teams
-- Security Engineering Teams
-- IT Teams
+- DevOps and Security Operations (SecOps) teams
+- Security engineering teams
+- IT teams
 - CISOs and CTOs
 - Red, Blue, and Purple Teams
-- CSIRT & Forensic Teams
-- Microsoft 365 Administrators
+- CSIRT & forensic teams
+- Microsoft 365 administrators
 
 ## Next steps
 

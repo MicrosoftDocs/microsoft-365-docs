@@ -30,7 +30,7 @@ ms.technology: m365d
 **Applies to:**
 - Microsoft 365 Defender
 
-An established SOC should have a catalogue of services that might include:
+An established Security Operations Center (SOC) should have a catalogue of services that might include:
 
 - Intrusion & malware analysis
 - Attribution & reverse engineering
@@ -39,17 +39,17 @@ An established SOC should have a catalogue of services that might include:
 - Hunting investigation
 - Forensics
 - Incident response 
-- CSIRT (that may be segregated from SOC) 
+- Computer Security Incident Response Team (CSIRT) (that may be segregated from SOC) 
 - Compliance testing
 - Insider threat & fraud monitoring
 - Security incident & event monitoring 
 - Vulnerability scanning
-- XDR/SOAR
+- Extended Detection and Response (XDR)/Security Orchestration, Automation, and Response (SOAR)
 - Phishing
 - Data loss prevention
 - Brand monitoring
 
-Because Microsoft 365 Defender technologies cross various functions, your SOC Team will need to determine which roles and responsibilities are best suited to manage each component of Defender and align to service function.
+Because Microsoft 365 Defender technologies cross various functions, your SOC team will need to determine which roles and responsibilities are best suited to manage each component of Defender and align to service function.
 
 The components of Microsoft 365 Defender are:
 
