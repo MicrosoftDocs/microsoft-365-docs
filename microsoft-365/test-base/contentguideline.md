@@ -44,7 +44,7 @@ It is important you are aware of the content within your zip file before uploadi
 - ScriptX.ps1 - **"Contoso_App_Folder/ScriptX.ps1"**
 - Script.ps1 - **"Contoso_App_Folder/folder1/script.ps1"**
 
-Other times, your zip file may have your files or content right underneath it i.e. no 2nd-level folder:
+Other times, your zip file may have your files or content right underneath it (for example, no 2nd-level folder):
 
 **Zip_file_uploaded.zip**:
 
@@ -65,7 +65,7 @@ Other times, your zip file may have your files or content right underneath it i.
 
 ## 2. Script execution
 
-**Out-of-Box tests:** The application package needs to contain at least three PowerShell scripts that will execute unattended installing, launching, and closing of the application and its dependencies. Each script should handle checking its own prerequisites, validating it succeeded, as well as cleaning up after itself (if necessary).
+**Out-of-Box tests:** The application package needs to contain at least three PowerShell scripts. These scripts will execute unattended installing, launching, and closing of the application and its dependencies. Each script should handle checking its own prerequisites, validating its own success, and cleaning up after itself (if necessary).
 
 **Functional tests:** The application package needs to contain at least one PowerShell script. Where more than one script is provided, the scripts are run in upload sequence and a failure in a particular script will stop subsequent scripts from executing.
 
@@ -77,14 +77,14 @@ Other times, your zip file may have your files or content right underneath it i.
 - Validate success
 - Logging to script specific log folder
 
-Each script needs to run completely unattended to successfully execute in the test pipeline.
+Each script needs to run unattended (no user prompts) to successfully execute in the test pipeline.
 
 > [!NOTE]
 > Scripts should return "0" on successful completion and a non-zero error code if any error occurs during execution.
 
-Each script should validate that it ran successfully. E.g. the install script should check for the existence of certain binaries and/or registry keys on the system, after the installer binary finishes executing to ensure with a reasonable degree of confidence that the installation was successful.
+Each script should validate that it ran successfully. For example, the install script should check for the existence of certain binaries and/or registry keys on the system after the installer binary finishes executing. This check helps to ensure with a reasonable degree of confidence that the installation was successful.
 
-This is necessary to properly diagnose where errors occur during a test run, e.g. unable to install the application successfully versus being unable to launch it.
+Validation is necessary to properly diagnose where errors occur during a test run. For example, if the script is unable to install the application successfully versus being unable to launch it.
 
 > [!IMPORTANT]
 > **Avoid the following:**
@@ -102,7 +102,7 @@ The system will pick up the `install.log` file along with other files within oth
 
 Any binaries and dependencies should be included in the single zip file.
 
-These should include everything necessary for installation of the application (e.g. the application installer); if the application has a dependency on any frameworks, such as .NET Core/Standard or .NET Framework, these should be included in the file and referenced correctly in the provided scripts.
+These binaries should include everything necessary for installation of the application (for example, the application installer). If the application has a dependency on any frameworks, such as .NET Core/Standard or .NET Framework, these frameworks should be included in the file and referenced correctly in the provided scripts.
 
 > [!NOTE]
 > The uploaded zip file cannot have any spaces or special characters in its name
