@@ -35,48 +35,49 @@ ms.custom: api
 Retrieves a collection of security recommendations related to a given device ID.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md)
 
-Permission type |	Permission	|	Permission display name
+Permission type|Permission|Permission display name
 :---|:---|:---
-Application | SecurityRecommendation.Read.All |	'Read Threat and Vulnerability Management security recommendation information'
-Delegated (work or school account) | SecurityRecommendation.Read |	'Read Threat and Vulnerability Management security recommendation information'
+Application|SecurityRecommendation.Read.All|'Read Threat and Vulnerability Management security recommendation information'
+Delegated (work or school account)|SecurityRecommendation.Read|'Read Threat and Vulnerability Management security recommendation information'
 
 ## HTTP request
-```
+
+```http
 GET /api/machines/{machineId}/recommendations
 ```
 
 ## Request headers
 
-Name | Type | Description
+Name|Type|Description
 :---|:---|:---
-Authorization | String | Bearer {token}. **Required**.
-
+Authorization|String|Bearer {token}. **Required**.
 
 ## Request body
+
 Empty
 
 ## Response
-If successful, this method returns 200 OK with the security recommendations in the body.
 
+If successful, this method returns 200 OK with the security recommendations in the body.
 
 ## Example
 
-**Request**
+### Request example
 
 Here is an example of the request.
 
-```
+```http
 GET https://api.securitycenter.microsoft.com/api/machines/ac233fa6208e1579620bf44207c4006ed7cc4501/recommendations
 ```
 
-**Response**
+### Response example
 
 Here is an example of the response.
 
-
-```
+```json
 {
     "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#Recommendations",
     "value": [
@@ -102,10 +103,11 @@ Here is an example of the response.
             "nonProductivityImpactedAssets": 0,
             "relatedComponent": "Git"
         },
-…
+...
 }
 ```
 
 ## Related topics
+
 - [Risk-based Threat & Vulnerability Management](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [Threat & Vulnerability security recommendation](/microsoft-365/security/defender-endpoint/tvm-security-recommendation)

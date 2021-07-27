@@ -1,8 +1,7 @@
 ---
-title: 'Create a new topic in Microsoft Viva Topics'
-description: 'How to create a new topic in Microsoft Viva Topics.'
-author: efrene
-ms.author: efrene
+title: Create a new topic in Microsoft Viva Topics
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
 ms.reviewer: cjtan
 audience: admin
@@ -14,7 +13,7 @@ ms.collection:
 ms.service: 
 search.appverid: 
 localization_priority: Normal
-
+description: Learn how to create a new topic in Microsoft Viva Topics.
 
 ---
 
