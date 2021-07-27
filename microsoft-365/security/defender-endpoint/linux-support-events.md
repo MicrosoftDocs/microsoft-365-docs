@@ -28,7 +28,7 @@ ms.technology: mde
 
 - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
 
-This article provides some general steps to mitigate missing events or alerts in the [security center](https://securitycenter.windows.com/) portal.
+This article provides some general steps to mitigate missing events or alerts in the [Microsoft 365 Defender portal](https://security.microsoft.com/).
 
 Once **Microsoft Defender for Endpoint** has been installed properly on a device, a _device page_ will be generated in the portal. You can review all recorded events in the timeline tab in the device page, or in advanced hunting page. This section troubleshoots the case of some or all expected events are missing.
 For instance, if all _CreatedFile_ events are missing.
