@@ -105,8 +105,8 @@ Go to Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](
 To reduce your attack surfaces, configure the following capabilities: 
 
 - [Ransomware mitigation](#ransomware-mitigation)
-- Device control
-- Web protection
+- [Device control](#device-control)
+- [Web protection](#web-protection)
 - Network protection
 - Network firewall
 
@@ -131,11 +131,29 @@ You get ransomware mitigation through [controlled folder access](controlled-fold
 
 ### Device control
 
+You can configure Defender for Endpoint to block or allow removable devices and files on removable devices.
+
+Follow the guidance in [How to control USB devices and other removable media using Microsoft Defender for Endpoint](control-usb-devices-using-intune.md).
+
 ### Web protection
+
+With web protection, you can protect your organization's devices from web threats and unwanted content. Your web protection includes web threat protection and web content filtering (preview). Configure both sets of capabilities for your web protection.
+
+1. Follow the guidance in [Protect your organization against web threats](web-threat-protection.md).
+
+2. Follow the guidance in [Web content filtering](web-content-filtering.md).
 
 ### Network protection
 
+With network protection, you can help protect your organization against dangerous domains that might host phishing scams, exploits, and other malicious content on the Internet.
+
+Follow the guidance in [Turn on network protection](enable-network-protection.md).
+
 ### Network firewall
+
+Network firewall helps reduce the risk of network security threats. Your security team can set rules that determine which traffic is permitted to flow to or from your organization's devices. 
+
+See [Best practices for configuring Windows Defender Firewall](/windows/security/threat-protection/windows-firewall/best-practices-configuring).
 
 ## Next steps
 
