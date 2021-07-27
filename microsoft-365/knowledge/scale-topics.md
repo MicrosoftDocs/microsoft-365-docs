@@ -1,9 +1,9 @@
 ---
-title: "Manage topics at scale in Microsoft Viva Topics"
-author: chuckedmonson
+title: Manage topics at scale in Microsoft Viva Topics
 ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
-ms.reviewer: lauriellis
+ms.reviewer: lauris
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -12,8 +12,9 @@ ms.collection:
     - enabler-strategic 
     - m365initiative-viva-topics
 localization_priority: None
-description: "Learn about best practices to manage the many topics in your organization using Viva Topics."
+description: Learn about best practices to manage the many topics in your organization using Viva Topics.
 ---
+
 # Manage topics at scale in Microsoft Viva Topics
 
 When you index your SharePoint sites or your entire organization for Viva Topics, many topics might be generated. When this happens and you see thousands of suggested topics on the **Manage topics** page, it can be challenging to know where to start. This article describes how Viva Topics helps you optimize which topics and information are shown to users who are searching for information, even in large organizations with large numbers of topics.

@@ -190,5 +190,7 @@ For more information about SecOps across Microsoft's products, see these resourc
 
   - Perform [investigations](investigate-incidents.md) of incidents.
 
+- See how to [integrate Microsoft 365 Defender into your Security Operations Center (SOC)](integrate-microsoft-365-defender-secops.md).
+
 - See these [incident response playbooks](/security/compass/incident-response-playbooks) for detailed guidance for phishing, password spray, and app consent grant attacks.
 
