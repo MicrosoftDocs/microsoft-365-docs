@@ -143,10 +143,9 @@ For more information about these options, see the following guidance from the DL
 
 To consider when using sensitive information types to auto-apply retention labels:
 
-- When you use built-in sensitive information types: New, modified, and existing items can be auto-labeled.
+- When you use built-in sensitive information types, these can be used to auto-label new email messages and new, modified, and existing items in SharePoint and OneDrive.
 
-- When you use custom sensitive information types: New and modified items can be auto-labeled, but not existing items.
-
+- If you use custom sensitive information types, these can be used for new email messages, and new and modified but not existing items in SharePoint and OneDrive. 
 
 #### Auto-apply labels to content with keywords or searchable properties
 
