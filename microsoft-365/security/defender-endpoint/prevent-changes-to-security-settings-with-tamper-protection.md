@@ -99,7 +99,8 @@ Tamper protection can be turned on or off for your tenant using the Microsoft 36
    - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
    - Windows Server, version [1803](/windows/release-health/status-windows-10-1803) or later
    - [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)
-   - For more information about releases, see [Windows 10 release information](/windows/release-health/release-information).
+   
+  For more information about releases, see [Windows 10 release information](/windows/release-health/release-information).
 
 - Your devices must be [onboarded to Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/onboarding).
 
