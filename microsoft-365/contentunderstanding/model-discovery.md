@@ -39,19 +39,37 @@ To find trained models that might be suitable for your content:
 
 1. In the document library for your model, select **Automate** > **AI Builder** > **View document understanding models**.
 
-2. On the **Review models and apply new ones** page, you can:
+2. On the **Review models and apply new ones** page:
 
    - On the **Applied** tab, see the models that have been applied to your library.
    - On the **Available** tab, see the additional models that are available to be applied to your library.
 
-## Apply a trained model
+### Get a recommendation for a trained model
 
-To select and apply a trained model:
+If you are unsure which model is the best fit for your files, you can ask for a recommendation.
+
+1. On the **Review models and apply new ones** page, select the **Available** tab.
+
+2. On the first tile, select **Get recommendation**.
+
+3. On the **Select one or more models** page, select the models that you think might be the best fit, and then select **Next**.
+
+4. On the **Select a file** page, select a file of the same or similar type that will be stored in your library.
+
+5. On the **Review recommendation results** page, under **Our recommendation**, you'll see the recommended file. You don't have to apply the recommended model. You can choose to apply another model if you think it's a better fit.
+
+6. Select the model that you think will get you the best results, and then select **Apply to library**.
+
+### Remove an applied model
+
+To remove an applied model from your document library:
+
+1. On the **Review models and apply new ones** page, on the **Applied** tab, see the models that have been applied to your library.
+
+2. Select the model you want to remove, and then select **Remove from library**.
 
 
-## Remove a model from discovery
+## See also
 
-To unpublish a trained from a document library:
-
-
+[Apply a document understanding model](apply-a-model.md)
 
