@@ -91,7 +91,7 @@ The following policies are are available:
 - **Turn off Trusted Documents**: Exceptions for groups available.
 - **Turn off all active content**: Exceptions for individuals.
 
-The tables in the following sections describe the settings that control active content. These policies, if applied to users, will be enforced on Trusted Documents and the behavior end users had previously may not be the same. This table also includes the recommended security baselines setting, and other settings where User prompt to override is available (allowing the user to enable the active content).
+The tables in the following sections describe the settings that control active content. These policies, if applied to users, will be enforced on trusted documents, and the previous end user experience might not be the same. The tables also include the recommended security baselines setting, and identify other settings where the user prompt to override is available (allowing the user to enable the active content).
 
 ### HKEY_CURRENT_USER settings
 
