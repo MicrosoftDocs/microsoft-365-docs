@@ -26,7 +26,7 @@ ms.custom: api
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
@@ -42,22 +42,25 @@ Retrieves a collection of alerts related to a given user ID.
 
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md)
 
-Permission type |	Permission	|	Permission display name
+Permission type|Permission|Permission display name
 :---|:---|:---
-Application |	Alert.Read.All |	'Read all alerts'
-Application |	Alert.ReadWrite.All |	'Read and write all alerts'
+Application|Alert.Read.All|'Read all alerts'
+Application|Alert.ReadWrite.All|'Read and write all alerts'
 Delegated (work or school account) | Alert.Read | 'Read alerts'
 Delegated (work or school account) | Alert.ReadWrite | 'Read and write alerts'
 
->[!Note]
+> [!NOTE]
 > When obtaining a token using user credentials:
->- The user needs to have at least the following role permission: 'View Data'. For more information, see [Create and manage roles](user-roles.md).
+>
+> - The user needs to have at least the following role permission: 'View Data'. For more information, see [Create and manage roles](user-roles.md).
 >- Response will include only alerts, associated with devices, that the user have access to, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)
 
 ## HTTP request
-```
+
+```http
 GET /api/users/{id}/alerts
 ```
 
@@ -65,21 +68,21 @@ GET /api/users/{id}/alerts
 
 ## Request headers
 
-Name | Type | Description
+Name|Type|Description
 :---|:---|:---
 Authorization | String | Bearer {token}. **Required**.
 
-
 ## Request body
+
 Empty
 
 ## Response
-If successful and user exists - 200 OK. If the user does not exist - 404 Not Found. 
 
+If successful and user exists - 200 OK. If the user does not exist - 404 Not Found. 
 
 ## Example
 
-**Request**
+### Request
 
 Here is an example of the request.
 
