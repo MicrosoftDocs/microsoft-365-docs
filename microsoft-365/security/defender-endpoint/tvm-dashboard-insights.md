@@ -38,7 +38,7 @@ Threat and vulnerability management is a component of Defender for Endpoint, and
 - Invaluable device vulnerability context during incident investigations
 - Built-in remediation processes through Microsoft Intune and Microsoft Endpoint Configuration Manager  
   
-You can use the threat and vulnerability management capability in [Microsoft Defender Security Center](https://securitycenter.windows.com/) to:
+You can use the threat and vulnerability management capability in [Microsoft 365 Defender portal](https://security.microsoft.com/) to:
 
 - View you exposure score and Microsoft Secure Score for Devices, along with top security recommendations, software vulnerability, remediation activities, and exposed devices
 - Correlate EDR insights with endpoint vulnerabilities and process them
@@ -54,7 +54,7 @@ Watch this video for a quick overview of what is in the threat and vulnerability
 
 ## Threat and vulnerability management dashboard
 
- ![Microsoft Defender for Endpoint portal](images/tvm-dashboard-devices.png)
+:::image type="content" source="../../media/tvmdashboard.png" lightbox="../../media/tvmdashboard.png" alt-text="Threat and Vulnerability Management dashboard for Devices":::
 
 Area | Description
 :---|:---

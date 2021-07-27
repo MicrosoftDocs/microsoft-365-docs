@@ -87,10 +87,10 @@
     },
     "fileMetadata": {
       "recommendations":{
-        "/admin": false,
-        "/business": false,
-        "/business-video": false,
-        "/commerce": false
+        "admin/**/*.md": false,
+        "business/**/*.md": false,
+        "business-video/**/*.md": false,
+        "commerce/**/*.md": false
         },
       "titleSuffix": {
         "compliance/**/*.md": "Microsoft 365 Compliance",

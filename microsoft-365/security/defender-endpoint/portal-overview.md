@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender for Endpoint portal overview
-description: Microsoft Defender Security Center can monitor your enterprise network and assist in responding to potential advanced persistent threats (APT) or data breaches.
-keywords: Microsoft Defender Security Center, portal, cybersecurity threat intelligence, dashboard, alerts queue, devices list, settings, device management, advanced attacks
+description: Microsoft 365 Defender can monitor your enterprise network and assist in responding to potential advanced persistent threats (APT) or data breaches.
+keywords: Microsoft 365 Defender, portal, cybersecurity threat intelligence, dashboard, alerts queue, devices list, settings, device management, advanced attacks
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,7 +18,7 @@ ms.topic: conceptual
 ms.technology: mde
 ---
 
-# Microsoft Defender Security Center portal overview
+# Microsoft 365 Defender portal overview
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -30,15 +30,15 @@ ms.technology: mde
 
 >Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink) 
 
-Enterprise security teams can use Microsoft Defender Security Center to monitor and assist in responding to alerts of potential advanced persistent threat activity or data breaches.
+Enterprise security teams can use Microsoft 365 Defender to monitor and assist in responding to alerts of potential advanced persistent threat activity or data breaches.
 
-You can use [Microsoft Defender Security Center](https://securitycenter.windows.com/) to:
+You can use [Microsoft 365 Defender](https://security.microsoft.com) to:
 
 - View, sort, and triage alerts from your endpoints
 - Search for more information on observed indicators such as files and IP Addresses
 - Change Microsoft Defender for Endpoint settings, including time zone and review licensing information
 
-## Microsoft Defender Security Center
+## Microsoft 365 Defender
 
 When you open the portal, you'll see:
 
@@ -126,7 +126,7 @@ Icon | Description
 
 ## Related topics
 
-- [Overview of Microsoft Defender Security Center](use.md)
+- [Overview of Microsoft 365 Defender](use.md)
 - [View the Security operations dashboard](security-operations-dashboard.md)
 - [View the Threat & Vulnerability Management dashboard](tvm-dashboard-insights.md)
 - [View the Threat analytics dashboard and take recommended mitigation actions](threat-analytics.md)

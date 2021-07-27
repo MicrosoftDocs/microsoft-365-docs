@@ -80,7 +80,7 @@ Review the following details to verify minimum system requirements:
 1. Download the agent setup file: [Windows 64-bit agent](https://go.microsoft.com/fwlink/?LinkId=828603) or [Windows 32-bit agent](https://go.microsoft.com/fwlink/?LinkId=828604).
 
 2. Obtain the workspace ID:
-   - In the Defender for Endpoint navigation pane, select **Settings > Device management > Onboarding**
+   - In the Defender for Endpoint navigation pane, select **Settings > Endpoints > Device management > Onboarding**
    - Select **Windows 7 SP1 and 8.1** as the operating system
    - Copy the workspace ID and workspace key
 
