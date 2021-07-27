@@ -61,7 +61,7 @@ Use these steps to integrate Microsoft 365 Defender into your SOC.
 
 - [Step 1. Plan for Microsoft 365 Defender operations readiness](integrate-microsoft-365-defender-secops-plan.md)
 - [Step 2. Perform a SOC integration readiness assessment using the Zero Trust Framework](integrate-microsoft-365-defender-secops-readiness.md)
-- [Step 3. Plan for Microsoft 365 Defender integration with your SOC catalogue of services](integrate-microsoft-365-defender-secops-services.md)
+- [Step 3. Plan for Microsoft 365 Defender integration with your SOC catalog of services](integrate-microsoft-365-defender-secops-services.md)
 - [Step 4. Define Microsoft 365 Defender roles, responsibilities, and oversight](integrate-microsoft-365-defender-secops-roles.md)
 - [Step 5. Develop and test use cases](integrate-microsoft-365-defender-secops-use-cases.md)
 - [Step 6. Identify SOC maintenance tasks](integrate-microsoft-365-defender-secops-tasks.md)
