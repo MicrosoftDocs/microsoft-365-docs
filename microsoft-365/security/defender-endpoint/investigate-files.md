@@ -30,7 +30,7 @@ ms.technology: mde
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
->Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigatefiles-abovefoldlink)
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigatefiles-abovefoldlink)
 
 Investigate the details of a file associated with a specific alert, behavior, or event to help determine if the file exhibits malicious activities, identify the attack motivation, and understand the potential scope of the breach.
 
@@ -65,7 +65,7 @@ For more information on these actions, see [Take response action on a file](resp
 
 The file details, incident, malware detection, and file prevalence cards display various attributes about the file.
 
-You'll see details such as the file’s MD5, the Virus Total detection ratio, and Microsoft Defender AV detection if available, and the file’s prevalence.
+You'll see details such as the file's MD5, the Virus Total detection ratio, and Microsoft Defender AV detection if available, and the file's prevalence.
 
 The file prevalence card shows where the file was seen in devices in the organization and worldwide. 
 
