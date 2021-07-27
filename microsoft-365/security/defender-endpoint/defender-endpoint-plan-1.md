@@ -60,7 +60,6 @@ To learn more, see [Next-generation protection in Windows](microsoft-defender-an
 Your organization’s attack surfaces are all the places where you’re vulnerable to cyberattacks. With Defender for Endpoint Plan 1, you can reduce your attack surfaces by protecting the devices and applications that your organization uses. The attack surface reduction capabilities in Defender for Endpoint Plan 1 are described in the following sections.
 
 - [Ransomware mitigation](#ransomware-mitigation)
-- [Attack surface reduction rules](#attack-surface-reduction-rules)
 - [Device control](#device-control)
 - [Web protection](#web-protection)
 - [Network protection](#web-protection)
@@ -73,18 +72,6 @@ To learn more about attack surface reduction capabilities in Defender for Endpoi
 With controlled folder access, you get ransomware mitigation. Controlled folder access allows only trusted apps to access protected folders on your endpoints. Apps are added to the trusted apps list based on their prevalence and reputation. Your security operations team can add or remove apps from the trusted apps list, too.
 
 To learn more, see [Protect important folders with controlled folder access](controlled-folders.md).
-
-### Attack surface reduction rules
-
-Attack surface reduction rules target certain software behaviors that are considered risky. Such behaviors include:
-
-- Launching executable files and scripts that attempt to download or run other files
-- Running obfuscated or otherwise suspicious scripts
-- Initiating behaviors that apps don't usually initiate during normal work
-
-Legitimate business applications can exhibit such software behaviors; however, these behaviors are often considered risky because they are commonly abused by attackers through malware. Attack surface reduction rules can constrain risky behaviors and help keep your organization safe.
-
-To learn more, see [Use attack surface reduction rules to prevent malware infection](attack-surface-reduction.md).
 
 ### Device control
 
