@@ -4,6 +4,8 @@
     - name: What is Microsoft Managed Desktop?
       href: intro/index.md
       items: 
+        - name: Microsoft Managed Desktop and Windows 11
+          href: intro/win11-overview.md
         - name: Roles and responsibilities
           href: intro/roles-and-responsibilities.md
         - name: Technologies in Microsoft Managed Desktop
@@ -169,5 +171,7 @@
               href: working-with-managed-desktop/config-setting-ref.md
             - name: Deploy configurable settings
               href: working-with-managed-desktop/config-setting-deploy.md
+        - name: Preview and test Windows 11 with Microsoft Managed Desktop
+          href: working-with-managed-desktop/test-win11-mmd.md
     - name: Change history for Microsoft Managed Desktop documentation
       href: change-history-managed-desktop.md

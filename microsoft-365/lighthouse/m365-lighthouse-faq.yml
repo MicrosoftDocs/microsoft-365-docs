@@ -47,6 +47,12 @@ sections:
         answer: |
           For a list of current requirements, see [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
 
+      - question: In which countries and regions is Microsoft 365 Lighthouse available?
+        answer: |
+          Microsoft 365 Lighthouse is available in all countries where Microsoft 365 is available, except China and Palestinian Authority. However, features in Microsoft 365 Lighthouse such as device management and threat management rely on Microsoft Intune, and user management relies on Azure Active Directory (Azure AD), and Intune and Azure AD may not be available in certain countries and regions. For a complete list of Microsoft 365, Azure AD, and Intune availability, see [International availability](https://www.microsoft.com/microsoft-365/business/international-availability).
+
+          Microsoft 365 Lighthouse is not available in national clouds.
+
       - question: How do I sign up for Microsoft 365 Lighthouse?
         answer: |
           To sign up for Microsoft 365 Lighthouse, you'll need to be registered with the CSP program. We're currently unable to support indirect providers. For instructions on how to sign up, see [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md). To learn more about the CSP program, see the [Cloud Solution Provider program overview](/partner-center/csp-overview).

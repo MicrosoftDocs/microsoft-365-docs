@@ -26,7 +26,7 @@ ms.date: 06/02/2021
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!TIP]
-> Want to experience Defender for Endpoint? [Sign up for a free trial](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink).
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 [Attack surface reduction rules](attack-surface-reduction.md) (ASR rules) help prevent actions that malware often abuses to compromise devices and networks.
 
@@ -104,7 +104,7 @@ The following procedures for enabling ASR rules include instructions for how to 
 
 ## MEM
 
-You can use Microsoft Endpoint Manager (MEM) OMA-URI to configure custom ASR rules. The following procedure uses the rule [Block abuse of exploited vulnerable signed drivers](attack-surface-reduction.md#block-abuse-of-exploited-vulnerable-signed-drivers) for the example.
+You can use Microsoft Endpoint Manager (MEM) OMA-URI to configure custom ASR rules. The following procedure uses the rule [Block abuse of exploited vulnerable signed drivers](attack-surface-reduction-rules.md#block-abuse-of-exploited-vulnerable-signed-drivers) for the example.
 
 1. Open the Microsoft Endpoint Manager (MEM) admin center. In the **Home** menu, click  **Devices**, select **Configuration profile**, and then click **Create profile**.
 
@@ -160,7 +160,7 @@ You can use Microsoft Endpoint Manager (MEM) OMA-URI to configure custom ASR rul
 
 9. In step **5 Applicability Rules** for the following settings, do the following:
 
-   - In **Rule**, select either **Assign profile if**, or **Don’t assign profile if**
+   - In **Rule**, select either **Assign profile if**, or **Don't assign profile if**
    - In **Property**, select the property to which you want this rule to apply
    - In **Value**, enter the applicable value or value range
 
@@ -186,7 +186,7 @@ You can use Microsoft Endpoint Manager (MEM) OMA-URI to configure custom ASR rul
 
 Use the [./Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionRules](/windows/client-management/mdm/policy-csp-defender#defender-attacksurfacereductionrules) configuration service provider (CSP) to individually enable and set the mode for each rule.
 
-The following is a sample for reference, using [GUID values for ASR rules](attack-surface-reduction.md#attack-surface-reduction-rules).
+The following is a sample for reference, using GUID values for [attack surface reduction rules](attack-surface-reduction-rules.md).
 
 `OMA-URI path: ./Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionRules`
 

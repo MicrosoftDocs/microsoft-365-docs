@@ -50,11 +50,11 @@ As part of the process of creating a device group, you'll:
 - Rank the device group relative to other groups after it's created.
 
 >[!NOTE]
->A device group is accessible to all users if you don’t assign any Azure AD groups to it.
+>A device group is accessible to all users if you don't assign any Azure AD groups to it.
 
 ## Create a device group
 
-1. In the navigation pane, select **Settings** > **Device groups**.
+1. In the navigation pane, select **Settings** > **Endpoints** > **Permissions** > **Device groups**.
 
 2. Click **Add device group**.
 
