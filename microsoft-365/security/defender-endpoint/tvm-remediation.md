@@ -36,7 +36,7 @@ The threat and vulnerability management capability in Microsoft Defender for End
 
 ### Enable Microsoft Intune connection
 
-To use this capability, enable your Microsoft Intune connections. In the Microsoft Defender Security Center, navigate to **Settings** > **General** > **Advanced features**. Scroll down and look for **Microsoft Intune connection**. By default, the toggle is turned off. Turn your **Microsoft Intune connection** toggle **On**.
+To use this capability, enable your Microsoft Intune connections. In the Microsoft 365 Defender portal, navigate to **Settings** > **General** > **Advanced features**. Scroll down and look for **Microsoft Intune connection**. By default, the toggle is turned off. Turn your **Microsoft Intune connection** toggle **On**.
 
 **Note**: If you have the Intune connection enabled, you get an option to create an Intune security task when creating a remediation request. This option does not appear if the connection is not set.
 
@@ -44,7 +44,7 @@ See [Use Intune to remediate vulnerabilities identified by Microsoft Defender fo
 
 ### Remediation request steps
 
-1. Go to the threat and vulnerability management navigation menu in the Microsoft Defender Security Center, and select [**Security recommendations**](tvm-security-recommendation.md).
+1. Go to the threat and **Vulnerability management** navigation menu in the Microsoft 365 Defender portal, and select **Recommendations** [**Security recommendations**](tvm-security-recommendation.md).
 
 2. Select a security recommendation you would like to request remediation for, and then select **Remediation options**.
 
@@ -73,7 +73,8 @@ When you submit a remediation request from the Security recommendations page, it
 If you chose the "attention required" remediation option, there will be no progress bar, ticket status, or due date since there is no actual action we can monitor.
 
 Once you are in the Remediation page, select the remediation activity that you want to view. You can follow the remediation steps, track progress, view the related recommendation, export to CSV, or mark as complete.
-![Example of the Remediation page, with a selected remediation activity, and that activity's flyout listing the description, IT service and device management tools, and device remediation progress.](images/remediation_flyouteolsw.png)
+
+:::image type="content" source="../../media/remediation-flyouteolswnew.png" lightbox="../../media/remediation-flyouteolswnew.png" alt-text="Example of the Remediation page, with a selected remediation  activity, and that activity's flyout listing the description, IT service and device management tools, and device remediation":::
 
 >[!NOTE]
 > There is a 180 day retention period for completed remediation activities. To keep the Remediation page performing optimally, the remediation activity will be removed 6 months after its completion.
@@ -86,11 +87,11 @@ Track who closed the remediation activity with the "Completed by" column on the 
 - **System confirmation**: The task was automatically completed (all devices remediated)
 - **N/A**: Information is not available because we don't know how this older task was completed
 
-![Created by and completed by columns with two rows. One row for completed by has example of an email, the other row says system confirmation.](images/tvm-completed-by.png)
+:::image type="content" alt-text="Created by and completed by columns with two rows. One row for completed by has example of an email, the other row says system confirmation." source="images/tvm-completed-by.png":::
 
 ### Top remediation activities in the dashboard
 
-View **Top remediation activities** in the [threat and vulnerability management dashboard](tvm-dashboard-insights.md). Select any of the entries to go to the **Remediation** page. You can mark the remediation activity as completed after the IT admin team remediates the task.
+View **Top remediation activities** in the [threat and **Vulnerability management** dashboard](tvm-dashboard-insights.md). Select any of the entries to go to the **Remediation** page. You can mark the remediation activity as completed after the IT admin team remediates the task.
 
 ![Example of Top remediation activities card with a table that lists top activities that were generated from security recommendations.](images/tvm-remediation-activities-card.png)
 

@@ -48,8 +48,8 @@ When a PUA is detected on an endpoint, Microsoft Defender for Endpoint on macOS 
 PUA protection in Microsoft Defender for Endpoint on macOS can be configured in one of the following ways:
 
 - **Off**: PUA protection is disabled.
-- **Audit**: PUA files are reported in the product logs, but not in Microsoft Defender Security Center. No notification is presented to the user and no action is taken by the product.
-- **Block**: PUA files are reported in the product logs and in Microsoft Defender Security Center. The user is presented with a notification and action is taken by the product.
+- **Audit**: PUA files are reported in the product logs, but not in Microsoft 365 Defender portal. No notification is presented to the user and no action is taken by the product.
+- **Block**: PUA files are reported in the product logs and in Microsoft 365 Defender portal. The user is presented with a notification and action is taken by the product.
 
 >[!WARNING]
 >By default, PUA protection is configured in **Audit** mode.

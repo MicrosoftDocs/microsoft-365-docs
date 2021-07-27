@@ -40,15 +40,15 @@ These applications can increase the risk of your network being infected with mal
 
 Defender for Endpoint on Linux can detect and report PUA files. When configured in blocking mode, PUA files are moved to the quarantine.
 
-When a PUA is detected on an endpoint, Defender for Endpoint on Linux keeps a record of the infection in the threat history. The history can be visualized from the Microsoft Defender Security Center portal or through the `mdatp` command-line tool. The threat name will contain the word "Application".
+When a PUA is detected on an endpoint, Defender for Endpoint on Linux keeps a record of the infection in the threat history. The history can be visualized from the Microsoft 365 Defender Center portal or through the `mdatp` command-line tool. The threat name will contain the word "Application".
 
 ## Configure PUA protection
 
 PUA protection in Defender for Endpoint on Linux can be configured in one of the following ways:
 
 - **Off**: PUA protection is disabled.
-- **Audit**: PUA files are reported in the product logs, but not in Microsoft Defender Security Center. No record of the infection is stored in the threat history and no action is taken by the product.
-- **Block**: PUA files are reported in the product logs and in Microsoft Defender Security Center. A record of the infection is stored in the threat history and action is taken by the product.
+- **Audit**: PUA files are reported in the product logs, but not in Microsoft 365 Defender. No record of the infection is stored in the threat history and no action is taken by the product.
+- **Block**: PUA files are reported in the product logs and in Microsoft 365 Defender. A record of the infection is stored in the threat history and action is taken by the product.
 
 >[!WARNING]
 >By default, PUA protection is configured in **Audit** mode.

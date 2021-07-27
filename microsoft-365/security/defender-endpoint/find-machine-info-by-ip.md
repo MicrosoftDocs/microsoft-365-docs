@@ -12,7 +12,7 @@ author: mjcaparas
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
@@ -23,7 +23,7 @@ ms.topic: article
 
 **Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-- Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -31,55 +31,57 @@ ms.topic: article
 
 Find a device by internal IP.
 
->[!NOTE]
->The timestamp must be within the last 30 days.
+> [!NOTE]
+> The timestamp must be within the last 30 days.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md)
 
-Permission type | Permission | Permission display name
+Permission type|Permission|Permission display name
 :---|:---|:---
-Application | Machine.Read.All | 'Read all machine profiles'
-Application | Machine.ReadWrite.All | 'Read and write all machine information'
+Application|Machine.Read.All|'Read all machine profiles'
+Application|Machine.ReadWrite.All|'Read and write all machine information'
 
 ## HTTP request
-```
+
+```http
 GET /api/machines/find(timestamp={time},key={IP})
 ```
 
 ## Request headers
 
-Name | Type | Description
+Name|Type|Description
 :---|:---|:---
-Authorization | String | Bearer {token}. **Required**.
-
+Authorization|String|Bearer {token}. **Required**.
 
 ## Request body
+
 Empty
 
 ## Response
+
 If successful and machine exists - 200 OK.
 If no machine found - 404 Not Found.
 
-
 ## Example
 
-**Request**
+### Request example
 
 Here is an example of the request.
 
-```
+```http
 GET https://graph.microsoft.com/testwdatppreview/machines/find(timestamp=2018-06-19T10:00:00Z,key='10.166.93.61')
 Content-type: application/json
 ```
 
-**Response**
+### Response example
 
 Here is an example of the response.
 
-The response will return a list of all devices that reported this IP address within sixteen minutes prior and after the timestamp. 
+The response will return a list of all devices that reported this IP address within sixteen minutes prior and after the timestamp.
 
-```
+```json
 HTTP/1.1 200 OK
 Content-type: application/json
 {
@@ -90,6 +92,6 @@ Content-type: application/json
             "computerDnsName": "",
             "firstSeen": "2017-07-06T01:25:04.9480498Z",
             "osPlatform": "Windows10",
-…
+...
 }
 ```

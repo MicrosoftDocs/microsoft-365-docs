@@ -90,7 +90,7 @@ If you are looking for a pre-made simulation, you can use our ["Do It Yourself" 
     >If you don't have a copy of the password saved during the initial setup, you can reset the password by selecting **Reset password** from the menu:
     > ![Image of reset password](images/reset-password-test-machine.png)
     >
-    > The device will change it’s state to “Executing password reset", then you’ll be presented with your new password in a few minutes.
+    > The device will change it's state to "Executing password reset", then you'll be presented with your new password in a few minutes.
 
 3. Enter the password that was displayed during the device creation step.
 

@@ -24,7 +24,7 @@ The first place to get started is the app governance dashboard at [https://aka.m
 
 ![The app governance overview page in the Microsoft 365 Compliance Center](..\media\manage-app-protection-governance\mapg-cc-overview.png)
 
-You can also access the app governance dashboard from **Microsoft 365 admin center > Microsoft 365 Compliance Center > App governance > Overview page**.
+You can also access the app governance dashboard from **Office 365 admin center > Microsoft 365 Compliance Center > App governance > Overview page**.
 
 ## What’s available on the dashboard
 
