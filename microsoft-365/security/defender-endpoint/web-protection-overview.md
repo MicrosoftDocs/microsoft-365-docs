@@ -73,7 +73,7 @@ Web content filtering includes:
 
 - Users are prevented from accessing websites in blocked categories, when browsing on-premises or away.
 
-- You can deploy varied policies to various sets of users using the device groups defined in the [Microsoft Defender for Endpoint role-based access control settings](/microsoft-365/security/defender-endpoint/rbac).
+- You can deploy several policies to various sets of users using the device groups as defined in the [Microsoft Defender for Endpoint role-based access control settings](/microsoft-365/security/defender-endpoint/rbac).
 
 - You can access web reports in the same central location, with visibility over actual blocks and web usage.
 
@@ -98,7 +98,7 @@ Web protection is made up of the following components, listed in order of preced
 
 The order of precedence relates to the order of operations by which a URL or IP is evaluated. For example, if you have a web content filtering policy you can create exclusions through custom IP/URL indicators. Custom Indicators of compromise (IoC) are higher in the order of precedence than WCF blocks. 
 
-Similarly, during a conflict between indicators, allows always take precedence over blocks (override logic), which means that an allow indicator will win over any block indicator that is present.
+Similarly, during a conflict between indicators, allows always take precedence over blocks (override logic). That means that an allow indicator will win over any block indicator that is present.
 
 The table below summarizes some common configurations that would present conflicts within the web protection stack. It also identifies the resulting determinations based on the precedence listed above. 
 
@@ -112,7 +112,7 @@ The table below summarizes some common configurations that would present conflic
 |Allow|Allow|Block|Block|Allow (WCF exception)|
 |Warn|Block|Block|Block|Warn (override)|
 
-Internal IP addresses are not supported by custom indicators. For a warn policy when bypassed by the end user, the site will be unblocked for 24 hours for that user by default. This time frame can be modified by the Admin and is passed down by the SmartScreen cloud service. The ability to bypass a warning can also be disabled in Microsoft Edge via CSP for web threat blocks (malware/phishing). For more information, see [Microsoft Edge SmartScreen Settings](/DeployEdge/microsoft-edge-policies#smartscreen-settings-policies).
+Internal IP addresses are not supported by custom indicators. For a warn policy when bypassed by the end user, the site will be unblocked for 24 hours for that user by default. This time frame can be modified by the Admin and is passed down by the SmartScreen cloud service. The ability to bypass a warning can also be disabled in Microsoft Edge using CSP for web threat blocks (malware/phishing). For more information, see [Microsoft Edge SmartScreen Settings](/DeployEdge/microsoft-edge-policies#smartscreen-settings-policies).
 
 ## Protect browsers
 
@@ -125,7 +125,7 @@ In all web protection scenarios, SmartScreen and Network Protection can be used 
 
 Responses from the SmartScreen cloud are standardized. Tools like Fiddler can be used to inspect the response from the cloud service, which will help determine the source of the block. 
 
-When the SmartScreen cloud service responds with an allow, block, or warn response, there is a response category and server context relayed back to the client. In Microsoft Edge, the response category is what is used to determine the appropriate block page to show (malicious, phishing, organizational policy).
+When the SmartScreen cloud service responds with an allow, block, or warn response, a response category and server context is relayed back to the client. In Microsoft Edge, the response category is what is used to determine the appropriate block page to show (malicious, phishing, organizational policy).
 
 The table below shows the responses and their correlated features.  
 
@@ -153,7 +153,7 @@ DeviceEvents 
 | where Experience == "CustomPolicy" 
 ```
 
-Similarly, you can use the query below to list all WCF blocks originating from Network Protection (e.g. a WCF block in a third-party browser). Note that the ActionType has been updated and 'Experience' has been changed to 'ResponseCategory'.
+Similarly, you can use the query below to list all WCF blocks originating from Network Protection (for example, a WCF block in a third-party browser). Note that the ActionType has been updated and 'Experience' has been changed to 'ResponseCategory'.
 
 ```kusto
 DeviceEvents  
@@ -163,7 +163,7 @@ DeviceEvents 
 | where ResponseCategory == "CustomPolicy" 
 ```
 
-To list blocks that are due to other features (e.g. Custom Indicators), refer to the table above outlining each feature and their respective response category. These queries may also be modified to search for telemetry related to specific machines in your organization. Note that the ActionType shown in each query above will show only those connections that were blocked by a Web Protection feature, and not all network traffic.
+To list blocks that are due to other features (like Custom Indicators), refer to the table above outlining each feature and their respective response category. These queries may also be modified to search for telemetry related to specific machines in your organization. Note that the ActionType shown in each query above will show only those connections that were blocked by a Web Protection feature, and not all network traffic.
 
 ## User experience
 
