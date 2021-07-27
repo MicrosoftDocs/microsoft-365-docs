@@ -1,5 +1,5 @@
 ---
-title: What is Microsoft Defender for business?
+title: Overview of Microsoft Defender for business
 description: Learn about Microsoft Defender for business, including setup, getting started, and how to use the services
 search.appverid: MET150
 author: denisebmsft
@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 07/14/2021
+ms.date: 07/27/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -15,10 +15,19 @@ ms.reviewer: inbadian, shlomiakirav
 f1.keywords: NOCSH 
 ---
 
-# What is Microsoft Defender for business?
+# Overview of Microsoft Defender for business
 
-Microsoft Defender for business is a security solution designed to help protect the devices and data your business uses. 
-Microsoft Defender for business includes the features and capabilities listed in the following table:
+Microsoft Defender for business is a security solution designed to help protect the devices and data your business uses. With Microsoft Defender for business, you can configure your threat protection solution, monitor and respond to security issues, investigate and respond to threats, and view reports to see how your security solution is working.
+
+This guide is intended to:
+
+- Provide you with an overview of Microsoft Defender for business so you know what’s included and how it works.
+- Walk through setting up and configuring your threat protection capabilities.
+- Help you get started using your threat protection solution.
+
+## What's included in Microsoft Defender for business?
+
+The following table summarizes the features and capabilities available in Microsoft Defender for business and includes links to learn more.
 
 | Symbol | Capability | Description |
 |---|---|---|
