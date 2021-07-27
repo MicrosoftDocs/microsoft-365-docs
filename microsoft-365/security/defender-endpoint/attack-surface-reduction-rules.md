@@ -31,7 +31,7 @@ This article provides information about attack reduction rules:
 
 ## Supported operating systems
 
-Links to information about operating system versions referenced in this table are listed below this table.
+The following table lists attack surface reduction rules in alphabetical order. A check mark indicates the rule is supported by the operating system listed in that column.
 
 > [!Note]
 >
@@ -58,18 +58,6 @@ Links to information about operating system versions referenced in this table ar
 |[Block Win32 API calls from Office macros](#block-win32-api-calls-from-office-macros) | ![supported](images/checkmark.png) <br><br> | ![supported](images/checkmark.png) <br><br> | ![supported](images/checkmark.png) <br><br> |  |  |
 |[Use advanced protection against ransomware](#use-advanced-protection-against-ransomware) | ![supported](images/checkmark.png) <br><br> version 1803 or later | ![supported](images/checkmark.png) <br><br> | ![supported](images/checkmark.png) <br><br> |  |  |
 | **Rule name** |  **Windows&nbsp;10** | **Windows&nbsp;Server 2019** | **Windows&nbsp;Server** | **Windows&nbsp;Server 2016** | **Windows&nbsp;Server 2012 R2** |
-
-### Operating system version
-
-- [Windows 10, version 1709](/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windows 10 Pro, version 1709](/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windows 10 Enterprise, version 1709](/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windows 10, version 1803](/windows/whats-new/whats-new-windows-10-version-1803)
-- [Windows 10, version 1809](/windows/whats-new/whats-new-windows-10-version-1809)
-
-- [Windows Server, version 1803 (Semi-Annual Channel)](/windows-server/get-started/whats-new-in-windows-server-1803)
-- [Windows Server, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
-- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
 ## Supported configuration management systems
 
@@ -114,7 +102,7 @@ The **Block abuse of exploited vulnerable signed drivers** rule does not block a
 >
 > You can also configure this rule using [PowerShell](enable-attack-surface-reduction.md#powershell).
 >
-> To have a driver examined, use this Web site to [Submit a driver for analysis](https://www.microsoft.com/en-us/wdsi/driversubmission).
+> To have a driver examined, use this Web site to [Submit a driver for analysis](https://www.microsoft.com/wdsi/driversubmission).
 
 Intune Name: `Block abuse of exploited vulnerable signed drivers`
 
