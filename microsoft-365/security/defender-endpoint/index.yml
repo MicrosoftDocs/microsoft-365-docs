@@ -28,13 +28,13 @@ landingContent:
         links:
         - text: What is Microsoft Defender for Endpoint?
           url:  microsoft-defender-endpoint.md
-        - text: Defender for Endpoint Plans 1 and 2
+        - text: Get an overview of Microsoft Defender for Endpoint Plans 1 and 2
           url: defender-endpoint-plan-1-2.md
       - linkListType: whats-new
         links:
           - text: What's new in Microsoft Defender for Endpoint
             url: whats-new-in-microsoft-defender-atp.md
-          - text: Defender for Endpoint Plan 1 (preview)
+          - text: Announcing Microsoft Defender for Endpoint Plan 1 (preview)
             url: defender-endpoint-plan-1.md
       - linkListType: video
         links:
@@ -57,6 +57,8 @@ landingContent:
             url: deployment-phases.md
           - text: Onboard supported devices
             url: onboard-configure.md
+          - text: Set up and configure Defender for Endpoint Plan 1
+            url: mde-p1-setup-configuration.md
       - linkListType: how-to-guide
         links:
           - text: Migration guide
