@@ -31,34 +31,29 @@ ms.technology: mde
 
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
->Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-mssp-support-abovefoldlink)
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-mssp-support-abovefoldlink)
 
+> [!NOTE]
+> These set of steps are directed towards the MSSP.
 
+By default, MSSP customers access their Microsoft 365 Defender tenant through the following URL: `https://securitycenter.windows.com/`.
 
-
->[!NOTE] 
->These set of steps are directed towards the MSSP. 
-
-By default, MSSP customers access their Microsoft Defender Security Center tenant through the following URL: `https://securitycenter.windows.com`.
- 
-
-MSSPs however, will need to use a tenant-specific URL in the following format:  `https://securitycenter.windows.com?tid=customer_tenant_id` to access the MSSP customer portal. 
+MSSPs however, will need to use a tenant-specific URL in the following format:  `https://securitycenter.windows.com?tid=customer_tenant_id` to access the MSSP customer portal.
 
 In general, MSSPs will need to be added to each of the MSSP customer's Azure AD that they intend to manage.
 
-
 Use the following steps to obtain the MSSP customer tenant ID and then use the ID to access the tenant-specific URL:
 
-1. As an MSSP, login to Azure AD with your credentials. 
+1. As an MSSP, log in to Azure AD with your credentials.
 
 2. Switch directory to the MSSP customer's tenant.
 
-3.  Select **Azure Active Directory > Properties**. You'll find the tenant ID in the Directory ID field. 
+3. Select **Azure Active Directory > Properties**. You'll find the tenant ID in the Directory ID field.
 
-4. Access the MSSP customer portal by replacing the `customer_tenant_id` value in the following URL: `https://securitycenter.windows.com?tid=customer_tenant_id`.
-
+4. Access the MSSP customer portal by replacing the `customer_tenant_id` value in the following URL: `https://securitycenter.windows.com/?tid=customer_tenant_id`.
 
 ## Related topics
+
 - [Grant MSSP access to the portal](grant-mssp-access.md)
 - [Configure alert notifications](configure-mssp-notifications.md)
 - [Fetch alerts from customer tenant](fetch-alerts-mssp.md)

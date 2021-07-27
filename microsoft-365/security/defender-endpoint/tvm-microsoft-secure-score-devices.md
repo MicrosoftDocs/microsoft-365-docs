@@ -51,6 +51,7 @@ Forward Microsoft Defender for Endpoint signals, giving Microsoft Secure Score v
 
 Changes might take up to a few hours to reflect in the dashboard.
 
+
 1. In the navigation pane, go to **Settings** > **Endpoints** > **General** > **Advanced features** 
 
 2. Scroll down to **Microsoft Secure Score** and toggle the setting to **On**.
