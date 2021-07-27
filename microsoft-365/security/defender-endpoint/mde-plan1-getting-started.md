@@ -70,11 +70,11 @@ The navigation bar on the left side of the screen enables you to move easily bet
 
 When you sign into the Microsoft 365 Defender portal, make sure to view and manage your incidents and alerts. Start with your **Incidents** list. The following image shows a list of incidents, including one with high severity, and another with medium severity. 
 
-:::image type="content" source="../../media/mde-p1/incidents-list.png" alt-text="Incidents list":::
+:::image type="content" source="../../media/mde-p1/incidents.png" alt-text="Incidents list":::
  
 Select an incident to view details about the incident. Details include what alerts were triggered, how many devices and users were affected, and other details. The following image shows an example of incident details.
 
-:::image type="content" source="../../media/mde-p1/single-incident-view.png" alt-text="Incident details":::
+:::image type="content" source="../../media/mde-p1/single-incident.png" alt-text="Incident details":::
  
 > [!NOTE]
 > Your incident view might not have all the tabs shown in our example.
