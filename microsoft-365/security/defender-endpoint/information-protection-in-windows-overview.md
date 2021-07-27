@@ -27,13 +27,12 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
 Information protection is an integral part of Microsoft 365 Enterprise suite, providing intelligent protection to keep sensitive data secure while enabling productivity in the workplace.
-
 
 >[!TIP]
 > Read our blog post about how Microsoft Defender for Endpoint integrates with Microsoft Information Protection to [discover, protect, and monitor sensitive data on Windows devices](https://cloudblogs.microsoft.com/microsoftsecure/2019/01/17/windows-defender-atp-integrates-with-microsoft-information-protection-to-discover-protect-and-monitor-sensitive-data-on-windows-devices/).
@@ -41,8 +40,7 @@ Information protection is an integral part of Microsoft 365 Enterprise suite, pr
 Defender for Endpoint applies the following methods to discover, classify, and protect data:
 
 - **Data discovery** - Identify sensitive data on Windows devices at risk
-- **Data classification** - Automatically classify data based on common Microsoft Information Protection (MIP) policies managed in Office 365 Security & Compliance Center. Auto-classification allows you to protect sensitive data even if the end user hasn’t manually classified it.
-
+- **Data classification** - Automatically classify data based on common Microsoft Information Protection (MIP) policies managed in Office 365 Security & Compliance Center. Auto-classification allows you to protect sensitive data even if the end user hasn't manually classified it.
 
 ## Data discovery and data classification
 
@@ -65,7 +63,7 @@ Turn on the Azure Information Protection integration so that when a file that co
 
 ![Image of settings page with Azure Information Protection](images/atp-settings-aip.png)
 
-The reported signals can be viewed on the Azure Information Protection – Data discovery dashboard.
+The reported signals can be viewed on the Azure Information Protection - Data discovery dashboard.
 
 ## Azure Information Protection - Data discovery dashboard
 
@@ -77,8 +75,8 @@ Notice the Device Risk column on the right, this device risk is derived directly
 
 Click on a device to view a list of files observed on this device, with their sensitivity labels and information types.
 
->[!NOTE]
->Please allow approximately 15-20 minutes for the Azure Information Protection Dashboard Discovery to reflect discovered files.
+> [!NOTE]
+> Please allow approximately 15-20 minutes for the Azure Information Protection Dashboard Discovery to reflect discovered files.
 
 ## Log Analytics
 
@@ -90,16 +88,13 @@ Open Azure Log Analytics in Azure portal and open a query builder (standard or c
 
 To view Defender for Endpoint data, perform a query that contains:
 
-```
+```text
 InformationProtectionLogs_CL
 | where Workload_s == "Windows Defender"
 ```
 
-**Prerequisites:**
+### Prerequisites
 
 - Customers must have a subscription for Azure Information Protection.
 - Enable Azure Information Protection integration in Microsoft Defender Security Center:
-    - Go to **Settings** in Microsoft Defender Security Center, click on **Advanced Settings** under **General**.
-
-
-
+  - Go to **Settings** in Microsoft Defender Security Center, click on **Advanced Settings** under **General**.
