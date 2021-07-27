@@ -1,6 +1,6 @@
 ---
 title: Configure Microsoft Defender for Endpoint on iOS features
-description: Describes how to deploy Microsoft Defender for Endpoint on iOS features
+description: Describes how to deploy Microsoft Defender for Endpoint on iOS features.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, ios, configure, features, ios
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -13,7 +13,7 @@ author: mjcaparas
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
   - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
@@ -32,13 +32,15 @@ ms.technology: mde
 > [!NOTE]
 > Defender for Endpoint on iOS would use a VPN in order to provide the Web Protection feature. This is not a regular VPN and is a local/self-looping VPN that does not take traffic outside the device.
 
-## Conditional Access with Defender for Endpoint on iOS  
+## Conditional Access with Defender for Endpoint on iOS
+
 Microsoft Defender for Endpoint on iOS along with Microsoft Intune and Azure Active Directory enables enforcing Device compliance and Conditional Access policies
 based on device risk score. Defender for Endpoint is a Mobile Threat Defense (MTD) solution that you can deploy to leverage this capability via Intune.
 
 For more information about how to set up Conditional Access with Defender for Endpoint on iOS, see [Defender for Endpoint and Intune](/mem/intune/protect/advanced-threat-protection).
 
 ### Jailbreak detection by Microsoft Defender for Endpoint
+
 Microsoft Defender for Endpoint has the capability of detecting unmanaged and managed devices that are jailbroken. If a device is detected to be jailbroken, a **High**-risk alert will be reported to Security Center and if Conditional Access is setup based on device risk score, then the device will be blocked from accessing corporate data.
 
 ## Web Protection and VPN
@@ -120,4 +122,3 @@ Defender for Endpoint on iOS enables admins to configure custom indicators on iO
 ## Report unsafe site
 
 Phishing websites impersonate trustworthy websites for the purpose of obtaining your personal or financial information. Visit the [Provide feedback about network protection](https://www.microsoft.com/wdsi/filesubmission/exploitguard/networkprotection) page if you want to report a website that could be a phishing site.
-
