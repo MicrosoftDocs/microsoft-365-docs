@@ -26,7 +26,7 @@ ms.custom: api
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -37,35 +37,37 @@ ms.custom: api
 Retrieves a list of all the vulnerabilities.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md) for details.
 
-Permission type |	Permission	|	Permission display name
+Permission type|Permission|Permission display name
 :---|:---|:---
-Application |	Vulnerability.Read.All |	'Read Threat and Vulnerability Management vulnerability information'
-Delegated (work or school account) | Vulnerability.Read |	'Read Threat and Vulnerability Management vulnerability information'
+Application|Vulnerability.Read.All|'Read Threat and Vulnerability Management vulnerability information'
+Delegated (work or school account)|Vulnerability.Read|'Read Threat and Vulnerability Management vulnerability information'
 
 ## HTTP request
-```
+
+```http
 GET /api/vulnerabilities
 ```
 
 ## Request headers
 
-Name | Type | Description
+Name|Type|Description
 :---|:---|:---
-Authorization | String | Bearer {token}. **Required**.
-
+Authorization|String|Bearer {token}. **Required**.
 
 ## Request body
+
 Empty
 
 ## Response
-If successful, this method returns 200 OK with the list of vulnerabilities in the body.
 
+If successful, this method returns 200 OK with the list of vulnerabilities in the body.
 
 ## Example
 
-**Request**
+### Request example
 
 Here is an example of the request.
 
@@ -73,10 +75,9 @@ Here is an example of the request.
 GET https://api.securitycenter.microsoft.com/api/Vulnerabilities
 ```
 
-**Response**
+### Response example
 
 Here is an example of the response.
-
 
 ```json
 {
@@ -97,12 +98,13 @@ Here is an example of the response.
             "exploitTypes": [],
             "exploitUris": []
         }
-		...
+        ...
     ]
 
 }
 ```
 
 ## See also
+
 - [Risk-based Threat & Vulnerability Management](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [Vulnerabilities in your organization](/microsoft-365/security/defender-endpoint/tvm-weaknesses)

@@ -32,7 +32,7 @@ ms.custom: AIR
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-Want to see how it works? Watch the following video: <br/><br/>
+Want to see how it works? Watch the following video:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4bOeh]
 
@@ -41,16 +41,16 @@ The technology in automated investigation uses various inspection algorithms and
 This article provides an overview of AIR and includes links to next steps and additional resources.
 
 > [!TIP]
-> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-automated-investigations-abovefoldlink).
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-automated-investigations-abovefoldlink)
 
 ## How the automated investigation starts
 
 An automated investigation can start when an alert is triggered or when a security operator initiates the investigation.
 
-|Situation  |What happens  |
-|---------|---------|
-|An alert is triggered     | In general, an automated investigation starts when an [alert](review-alerts.md) is triggered, and an [incident](view-incidents-queue.md) is created. For example, suppose a malicious file resides on a device. When that file is detected, an alert is triggered, and incident is created. An automated investigation process begins on the device. As other alerts are generated because of the same file on other devices, they are added to the associated incident and to the automated investigation.         |
-|An investigation is started manually     | An automated investigation can be started manually by your security operations team. For example, suppose a security operator is reviewing a list of devices and notices that a device has a high risk level. The security operator can select the device in the list to open its flyout, and then select **Initiate Automated Investigation**. |
+|Situation|What happens|
+|---|---|
+|An alert is triggered|In general, an automated investigation starts when an [alert](review-alerts.md) is triggered, and an [incident](view-incidents-queue.md) is created. For example, suppose a malicious file resides on a device. When that file is detected, an alert is triggered, and incident is created. An automated investigation process begins on the device. As other alerts are generated because of the same file on other devices, they are added to the associated incident and to the automated investigation.|
+|An investigation is started manually|An automated investigation can be started manually by your security operations team. For example, suppose a security operator is reviewing a list of devices and notices that a device has a high risk level. The security operator can select the device in the list to open its flyout, and then select **Initiate Automated Investigation**.|
 
 ## How an automated investigation expands its scope
 
@@ -60,10 +60,11 @@ If an incriminated entity is seen in another device, the automated investigation
 
 ## How threats are remediated
 
-As alerts are triggered, and an automated investigation runs, a verdict is generated for each piece of evidence investigated. Verdicts can be 
+As alerts are triggered, and an automated investigation runs, a verdict is generated for each piece of evidence investigated. Verdicts can be:
+
 - *Malicious*;
-- *Suspicious*; or 
-- *No threats found*. 
+- *Suspicious*; or
+- *No threats found*.
 
 As verdicts are reached, automated investigations can result in one or more remediation actions. Examples of remediation actions include sending a file to quarantine, stopping a service, removing a scheduled task, and more. To learn more, see [Remediation actions](manage-auto-investigation.md#remediation-actions).  
 
@@ -74,12 +75,12 @@ All remediation actions, whether pending or completed, are tracked in the [Actio
 > [!TIP]
 > Check out the new, unified investigation page in the Microsoft 365 security center. To learn more, see [(NEW!) Unified investigation page](/microsoft-365/security/defender/m365d-autoir-results#new-unified-investigation-page).
 
-
 ## Requirements for AIR
 
 Your organization must have Defender for Endpoint (see [Minimum requirements for Microsoft Defender for Endpoint](minimum-requirements.md)).
 
 Currently, AIR only supports the following OS versions:
+
 - Windows Server 2019
 - Windows 10, version 1709 (OS Build 16299.1085 with [KB4493441](https://support.microsoft.com/help/4493441/windows-10-update-kb4493441)) or later
 - Windows 10, version 1803 (OS Build 17134.704 with [KB4493464](https://support.microsoft.com/help/4493464/windows-10-update-kb4493464)) or later
