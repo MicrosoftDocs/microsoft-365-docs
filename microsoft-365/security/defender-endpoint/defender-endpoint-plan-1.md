@@ -157,17 +157,20 @@ To learn more, see [Defender for Endpoint APIs](management-apis.md).
 
 ## Cross-platform support
 
-Most organizations use various devices and operating systems, such as computers running Windows, macOS, or Linux, and mobile devices running iOS or Android. Currently, Defender for Endpoint Plan 1 (preview) supports the following operating systems:
+Most organizations use various devices and operating systems. Currently, Defender for Endpoint Plan 1 (preview) supports the following operating systems:
 
 - Windows 10, version 1709 or later
-- macOS
+- macOS (Big Sur 11.5, Catalina 10.15.7, or Mojave 10.14.6)
 - iOS
 - Android OS
 
 > [!NOTE]
-> Defender for Endpoint Plan 2 supports Windows, macOS, iOS, Android OS, and Linux. To learn more, see the following resources:
+> Defender for Endpoint Plan 2 supports Windows clients and servers, macOS, iOS, Android OS, and Linux. To learn more, see the following resources:
 > - [Defender for Endpoint on Windows](microsoft-defender-endpoint.md)
+> - [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
 > - [Defender for Endpoint on iOS](microsoft-defender-endpoint-ios.md)
+> - [Microsoft Defender for Endpoint on Android](microsoft-defender-endpoint-android.md)
+> - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
 
 ## Next steps
 
