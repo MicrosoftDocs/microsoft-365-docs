@@ -27,7 +27,7 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 Defender for Endpoint has recently upgraded the support process to offer a more modern and advanced support experience. 
 
@@ -78,10 +78,10 @@ Learn how to open support tickets by contacting Defender for Endpoint support.
 > If you have a permier support contract with Microsoft, you will see the premier tag on the widget. If not, contact your Microsoft account manager.
 
 ### Contact support
-This option is available by clicking the icon that looks like a headset. You will then get the following page to submit your support case:
-:::image type="content" source="../../media/contactsupport2.png" alt-text="contact support 2":::
+This option is available by clicking the icon that looks like a headset. You will then get the following page to submit your support case: </br>
 
-![Image of the open a service request widget](images/contact-support-screen.png)
+:::image type="content" source="../../media/contactsupport2.png" alt-text="contact support 2"::: </br>
+
 
 1. Fill in a title and description for the issue you are facing, as well as a phone number and email address where we may reach you.
 
