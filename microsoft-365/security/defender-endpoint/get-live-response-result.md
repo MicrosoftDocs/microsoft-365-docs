@@ -32,7 +32,7 @@ ms.custom: api
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
->Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -44,7 +44,7 @@ Retrieves a specific live response command result by its index.
 
 ## Limitations
 
-1.  Rate limitations for this API are 100 calls per minute and 1500 calls per
+1. Rate limitations for this API are 100 calls per minute and 1500 calls per
     hour.
 
 ## Permissions
@@ -53,10 +53,10 @@ One of the following permissions is required to call this API. To learn more,
 including how to choose permissions, see [Get
 started](apis-intro.md).
 
-| Permission type                    | Permission           | Permission display name                   |
-|------------------------------------|----------------------|-------------------------------------------|
-| Application                        | Machine.LiveResponse | Run live response on a specific machine |
-| Delegated (work or school account) | Machine.LiveResponse | Run live response on a specific machine |
+|Permission type|Permission|Permission display name|
+|---|---|---|
+|Application|Machine.LiveResponse|Run live response on a specific machine|
+|Delegated (work or school account)|Machine.LiveResponse|Run live response on a specific machine|
 
 ## HTTP request
 
@@ -67,9 +67,9 @@ id}/GetLiveResponseResultDownloadLink(index={command-index})
 
 ## Request headers
 
-| Name      | Type | Description               |
-|---------------|----------|-------------------------------|
-| Authorization | String   | Bearer {token}. Required. |
+|Name|Type|Description|
+|---|---|---|
+|Authorization|String|Bearer {token}. Required.|
 
 ## Request body
 
@@ -85,25 +85,24 @@ need to run live response again.
 
 *Runscript transcript properties:*
 
-| Property  | Description                       |
-|---------------|---------------------------------------|
-| name          | Executed script name                  |
-| exit_code     | Executed script exit code             |
-| script_output | Executed script standard output       |
-| script_error  | Executed script standard error output |
+|Property|Description|
+|---|---|
+|name|Executed script name|
+|exit_code|Executed script exit code|
+|script_output|Executed script standard output|
+|script_error|Executed script standard error output|
 
 ## Example
 
-**Request**
+### Request example
 
 Here is an example of the request.
 
 ```HTTP
-GET
-https://api.securitycenter.microsoft.com/api/machineactions/988cc94e-7a8f-4b28-ab65-54970c5d5018/GetLiveResponseResultDownloadLink(index=0)
+GET https://api.securitycenter.microsoft.com/api/machineactions/988cc94e-7a8f-4b28-ab65-54970c5d5018/GetLiveResponseResultDownloadLink(index=0)
 ```
 
-**Response**
+### Response example
 
 Here is an example of the response.
 
@@ -118,7 +117,7 @@ Content-type: application/json
 }
 ```
 
-*File content:* 
+*File content:*
 
 ```JSON
 {
