@@ -56,7 +56,7 @@ Once a high-level use case standard has been defined and approved, the next step
 
 ## Use case example 1: New phishing variant
 
-The first step in creating a use case is to outline the workflow using a story board. Here’s an example high-level story board for a new phishing exploit notification to a Threat Intelligence team.
+The first step in creating a use case is to outline the workflow using a story board. Here’s an example of a high-level story board for a new phishing exploit notification to a Threat Intelligence team.
  
 :::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-use-case-workflow-storyboard-phishing.png" alt-text="An example use case workflow for an anti-phishing campaign":::
 
