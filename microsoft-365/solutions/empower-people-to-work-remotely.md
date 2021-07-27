@@ -77,22 +77,22 @@ For a seamless sign-in experience, your on-premises Active Directory Domain Serv
 
 To enable the capabilities of Microsoft 365 for your hybrid workers, use these Microsoft 365 features.
 
-| Capability or feature | Description | Licensing |
-|:-------|:-----|:-------|
-| MFA enforced with security defaults	| Protect against compromised identities and devices by requiring a second form of authentication for sign-ins. Security defaults requires MFA for all user accounts.	| Microsoft 365 E3 or E5 |
-| MFA enforced with Conditional Access| Require MFA based on the properties of the sign-in with Conditional Access policies.	| Microsoft 365 E3 or E5 |
-| MFA enforced with risk-based Conditional Access	| Require MFA based on the risk of the user sign-in with Microsoft Defender for Identity. | Microsoft 365 E5 or E3 with Azure AD Premium P2 licenses |
-| Self-Service Password Reset (SSPR)	| Allow your users to reset or unlock their passwords or accounts.	| Microsoft 365 E3 or E5 |
-| Azure AD Application Proxy	| Provide secure remote access for web-based applications hosted on intranet servers.	| Requires separate paid Azure subscription |
-| Azure Point-to-Site VPN	| Create a secure connection from a remote worker’s device to your intranet through an Azure virtual network.	| Requires separate paid Azure subscription |
-| Windows Virtual Desktop	| Support remote workers who can only use their personal and unmanaged devices with virtual desktops running in Azure. | Requires separate paid Azure subscription |
-| Remote Desktop Services (RDS)	| Allow employees to connect into Windows-based computers on your intranet.	| Microsoft 365 E3 or E5 |
-| Remote Desktop Services Gateway	| Encrypt communications and prevent the RDS hosts from being directly exposed to the Internet.	| Requires separate Windows Server licenses |
-| Microsoft Intune | Manage devices and applications.	| Microsoft 365 E3 or E5 |
-| Configuration Manager	| Manage software installations, updates, and settings on your devices | Requires separate Configuration Manager licenses |
-| Desktop Analytics	| Determine the update readiness of your Windows clients.	| Requires separate Configuration Manager licenses |
-| Windows Autopilot	| Set up and pre-configure new Windows 10 devices for productive use.	| Microsoft 365 E3 or E5 |
-| Microsoft Teams, Exchange Online, SharePoint Online and OneDrive, Microsoft 365 Apps, Microsoft Power Platform, and Yammer | Create, communicate, and collaborate. | Microsoft 365 E3 or E5 |
+|Capability or feature|Description|Licensing|
+|---|---|---|
+|MFA enforced with security defaults|Protect against compromised identities and devices by requiring a second form of authentication for sign-ins. Security defaults requires MFA for all user accounts.|Microsoft 365 E3 or E5|
+|MFA enforced with Conditional Access|Require MFA based on the properties of the sign-in with Conditional Access policies.|Microsoft 365 E3 or E5|
+|MFA enforced with risk-based Conditional Access|Require MFA based on the risk of the user sign-in with Microsoft Defender for Identity.|Microsoft 365 E5 or E3 with Azure AD Premium P2 licenses|
+|Self-Service Password Reset (SSPR)|Allow your users to reset or unlock their passwords or accounts.|Microsoft 365 E3 or E5|
+|Azure AD Application Proxy|Provide secure remote access for web-based applications hosted on intranet servers.|Requires separate paid Azure subscription|
+|Azure Point-to-Site VPN|Create a secure connection from a remote worker’s device to your intranet through an Azure virtual network.|Requires separate paid Azure subscription|
+|Windows Virtual Desktop|Support remote workers who can only use their personal and unmanaged devices with virtual desktops running in Azure.|Requires separate paid Azure subscription|
+|Remote Desktop Services (RDS)|Allow employees to connect into Windows-based computers on your intranet.|Microsoft 365 E3 or E5|
+|Remote Desktop Services Gateway|Encrypt communications and prevent the RDS hosts from being directly exposed to the Internet.|Requires separate Windows Server licenses|
+|Microsoft Intune|Manage devices and applications.|Microsoft 365 E3 or E5|
+|Configuration Manager|Manage software installations, updates, and settings on your devices|Requires separate Configuration Manager licenses|
+|Desktop Analytics|Determine the update readiness of your Windows clients.|Requires separate Configuration Manager licenses|
+|Windows Autopilot|Set up and pre-configure new Windows 10 devices for productive use.|Microsoft 365 E3 or E5|
+|Microsoft Teams, Exchange Online, SharePoint Online and OneDrive, Microsoft 365 Apps, Microsoft Power Platform, and Yammer|Create, communicate, and collaborate.|Microsoft 365 E3 or E5|
 ||||
 
 For security and compliance criteria, see [Deploy security and compliance for remote workers](empower-people-to-work-remotely-security-compliance.md).

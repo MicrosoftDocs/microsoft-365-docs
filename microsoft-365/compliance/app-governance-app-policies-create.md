@@ -10,7 +10,7 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.collection: m365-security-compliance
 localization_priority: Priority
-search.appverid: 
+search.appverid:
 - MOE150
 - MET150
 description: "Create app policies."
@@ -43,28 +43,40 @@ App governance has three categories of app policy templates.
 
 App governance includes these templates to generate alerts for app usage.
 
-| Template name | Description |
-|:-------|:-----|
-| New app with a high volume of data access | Highlights any recently registered apps with high volume data access to ensure those data patterns are expected. <br><br> By default, this policy will flag all apps that have been registered in the last 7 days and that have had more than 1 GB in data access over that period. This policy can be customized with more conditions and actions. |
+<br>
+
+****
+
+|Template name|Description|
+|---|---|
+|New app with a high volume of data access|Highlights any recently registered apps with high volume data access to ensure those data patterns are expected. <p> By default, this policy will flag all apps that have been registered in the last 7 days and that have had more than 1 GB in data access over that period. This policy can be customized with more conditions and actions.|
 |||
 
 ### App Permissions
 
 App governance includes these templates to generate alerts for app permissions.
 
-| Template name | Description |
-|:-------|:-----|
-| Overprivileged apps | Highlights any apps with more granted permissions than are being used by those apps to identify opportunities for potential permission reduction. <br><br> By default, this policy will flag all apps that are marked as Overprivileged if not used for 90 days. This time period filter can be customized with more conditions and actions. |
-| New app with high-privilege permissions | Highlights all new apps with high privilege permissions to identify potential high-footprint apps that may need further investigation. <br><br> By default, this policy will flag all apps registered within the last 7 days that have high-scoped permissions. |
+<br>
+
+****
+
+|Template name|Description|
+|---|---|
+|Overprivileged apps|Highlights any apps with more granted permissions than are being used by those apps to identify opportunities for potential permission reduction. <p> By default, this policy will flag all apps that are marked as Overprivileged if not used for 90 days. This time period filter can be customized with more conditions and actions.|
+|New app with high-privilege permissions|Highlights all new apps with high privilege permissions to identify potential high-footprint apps that may need further investigation. <p> By default, this policy will flag all apps registered within the last 7 days that have high-scoped permissions.|
 |||
 
 ### M365 certification
 
 App governance includes these templates to generate alerts for M365 certification.
 
-| Template name | Description |
-|:-------|:-----|
-| New uncertified app | Highlights new apps that haven't been through the M365 certification process to ensure that they are expected in the tenant. <br><br> By default, this policy will flag all apps that were registered in the last 7 days and are uncertified. |
+<br>
+
+****
+
+|Template name|Description|
+|---|---|
+|New uncertified app|Highlights new apps that haven't been through the M365 certification process to ensure that they are expected in the tenant. <p> By default, this policy will flag all apps that were registered in the last 7 days and are uncertified.|
 |||
 
 ## Custom app policies
@@ -101,25 +113,29 @@ The **Create rule** pane allows you to select conditions for a new rule. Select 
 
 Here are the available conditions for a custom app policy.
 
-|Condition | Condition values accepted | More information |
-|:-------|:-----|:-------|
-| App registration age | Within last X days |  |
-| M365 certification | Basic compliance, MCAS Compliance, or N/A | [Microsoft 365 Certification](https://docs.microsoft.com/microsoft-365-app-certification/docs/enterprise-app-certification-guide) |
-| Publisher verification | Yes or No | [Publisher Verification](https://docs.microsoft.com/azure/active-directory/develop/publisher-verification-overview) |
-| Application Permission | Select one or more API permission from list | [Microsoft Graph permissions reference](https://docs.microsoft.com/graph/permissions-reference) |
-| Delegated Permission | Select one or more API permission from list | [Microsoft Graph permissions reference](https://docs.microsoft.com/graph/permissions-reference) |
-| High privilege | Yes or No | This is an internal designation based on the same logic used by MCAS. |
-| Overprivileged app | Yes or No | Apps with more granted permissions than are being used by those apps. |
-| App data access | Greater than X GB data access per hour |  |
-| App data access trend | X% increase in data usage in last 7 days |  |
-| App API Access | Greater than X API calls per hour |  |
-| App API Access trend | X% increase in API Calls in last 7 days	 |  |
-| Users consented | (Greater than or Less than) X consented users |  |
-| Priority user consented | Yes or No | A user with a [priority account](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts). |
-| App consented by | Select user(s) from list |  |
-| Consenting user’s role | Select one or more: Teams Administrator, Directory Readers, Security Reader, Compliance Administrator, Security Administrator, Helpdesk Administrator, SharePoint Administrator, Exchange Administrator, Global Reader, Global Administrator, Compliance Data Administrator, User Administrator, Service Support Administrator | Multiple selections allowed. <br><br> Any Azure AD role with assigned member should be made available in this list. |
-| Workload accessed | OneDrive and/or SharePoint and/or Exchange | Multiple selections allowed. |
-| Error rate | Error rate is greater than X% in the last 7 days, where X is an admin-defined value |  |
+<br>
+
+****
+
+|Condition|Condition values accepted|More information|
+|---|---|---|
+|App registration age|Within last X days||
+|App certification|Basic compliance, MCAS Compliance, or N/A|[Microsoft 365 Certification](/microsoft-365-app-certification/docs/enterprise-app-certification-guide)|
+|Publisher verification|Yes or No|[Publisher Verification](/azure/active-directory/develop/publisher-verification-overview)|
+|Application Permission|Select one or more API permission from list|[Microsoft Graph permissions reference](/graph/permissions-reference)|
+|Delegated Permission|Select one or more API permission from list|[Microsoft Graph permissions reference](/graph/permissions-reference)|
+|High privilege|Yes or No|This is an internal designation based on the same logic used by MCAS.|
+|Overprivileged app|Yes or No|Apps with more granted permissions than are being used by those apps.|
+|App data access|Greater than X GB data access per hour||
+|App data access trend|X% increase in data usage in last 7 days||
+|App API Access|Greater than X API calls per hour||
+|App API Access trend|X% increase in API Calls in last 7 days||
+|Users consented|(Greater than or Less than) X consented users||
+|Priority user consented|Yes or No|A user with a [priority account](/microsoft-365/admin/setup/priority-accounts).|
+|App consented by|Select user(s) from list||
+|Consenting user's role|Select one or more: Teams Administrator, Directory Readers, Security Reader, Compliance Administrator, Security Administrator, Helpdesk Administrator, SharePoint Administrator, Exchange Administrator, Global Reader, Global Administrator, Compliance Data Administrator, User Administrator, Service Support Administrator|Multiple selections allowed. <p> Any Azure AD role with assigned member should be made available in this list.|
+|Workload accessed|OneDrive and/or SharePoint and/or Exchange|Multiple selections allowed.|
+|Error rate|Error rate is greater than X% in the last 7 days, where X is an admin-defined value||
 ||||
 
 All of the specified conditions must be met for this app policy to generate an alert.
@@ -146,7 +162,7 @@ Publish metadata-based policies
 
 ## Test and monitor your new app policy
 
-Now that your app policy is created, you should monitor it on the **Policies** page to ensure it is registering an expected number of active alerts and total alerts during testing. 
+Now that your app policy is created, you should monitor it on the **Policies** page to ensure it is registering an expected number of active alerts and total alerts during testing.
 
 ![The MAPG policies summary page in the Microsoft 365 Compliance Center with a highlighted policy](..\media\manage-app-protection-governance\mapg-cc-policies-policy.png)
 
