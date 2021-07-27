@@ -25,7 +25,7 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
 Attack surface reduction rules help prevent actions typically used by malware to compromise devices or networks. Attack surface reduction rules help close off many of the common entry points used by malware and ransomware.
 
@@ -54,7 +54,7 @@ To enable an attack surface reduction rule in audit mode, use the following Powe
 Add-MpPreference -AttackSurfaceReductionRules_Ids <rule ID> -AttackSurfaceReductionRules_Actions AuditMode
 ```
 
-Where `<rule ID>` is a [GUID value of the attack surface reduction rule](attack-surface-reduction.md#attack-surface-reduction-rules).
+Where `<rule ID>` is a [GUID value of the attack surface reduction rule](attack-surface-reduction-rules.md).
 
 To enable all the added attack surface reduction rules in audit mode, use the following PowerShell cmdlet:
 

@@ -22,7 +22,7 @@ description: "Summary: Additional Azure Active Directory information when moving
 
 # Additional Azure Active Directory information for the migration from Microsoft Cloud Deutschland
 
-To complete the move from the Azure German cloud to the Azure public cloud we recommend that the authentication endpoint, Azure Active Directory (Azure AD) Graph, and MS Graph endpoints for your applications be updated to those of the commercial cloud when the OpenID Connect (OIDC) endpoint, `https://login.microsoftonline.com/\<TenantIdOrDomain\>/.well-known/openid-configuration`, starts reporting commercial cloud endpoints. 
+To complete the move from the Azure German cloud to the Azure public cloud we recommend that the authentication endpoint, Azure Active Directory (Azure AD) Graph, and MS Graph endpoints for your applications be updated to those of the commercial cloud when the OpenID Connect (OIDC) endpoint, `https://login.microsoftonline.com/<TenantIdOrDomain>/.well-known/openid-configuration`, starts reporting commercial cloud endpoints. 
  
 **When should I make this change?**
 
@@ -30,7 +30,7 @@ You'll receive a notification in Azure/Office portal when your tenant completes 
  
 There are three preconditions to updating your sign-in authority:
 
- - OIDC discovery endpoint for your tenant `https://login.microsoftonline.com/\<TenantIdOrDomain\>/.well-known/openid-configuration` returns Azure AD public cloud endpoints.
+ - OIDC discovery endpoint for your tenant `https://login.microsoftonline.com/<TenantIdOrDomain>/.well-known/openid-configuration` returns Azure AD public cloud endpoints.
 
  - If your tenant is set up for federation, Active Directory Federation Services (AD FS) is updated to sync with Azure AD Public. You can follow instructions to update Azure AD Connect settings for making this change.
 
@@ -61,7 +61,7 @@ An application could be any of the following:
 
 2. Update Azure AD Graph endpoint to be `https://graph.windows.net`.
 
-3. Update MS Graph endpoint to be `https://graph.microsoft.com`.
+3. Update Microsoft Graph endpoint to be `https://graph.microsoft.com`.
 
 4. Update any German cloud endpoints (such as those for Exchange Online and SharePoint Online) that are used by your applications to be those of the public cloud.
 
