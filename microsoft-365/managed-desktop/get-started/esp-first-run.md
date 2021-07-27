@@ -79,7 +79,6 @@ The experience proceeds as follows:
 
 ![Start page of Autopilot setup showing "device preparation" and "device setup" phases.](../../media/mmd-autopilot-screenshot.png)
 
-## Autopilot for pre-provisioned deployment
 
 ## Additional prerequisites for Autopilot for pre-provisioned deployment
 
