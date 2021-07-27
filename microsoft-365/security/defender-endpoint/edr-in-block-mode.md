@@ -30,7 +30,7 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 ## What is EDR in block mode?
 
@@ -70,6 +70,7 @@ The following image shows an instance of unwanted software that was detected and
 2. Choose **Settings** > **Endpoints** > **General** > **Advanced features**.
 
 3. Scroll down, and then turn on **Enable EDR in block mode**.
+
 
 > [!NOTE]
 > EDR in block mode can be turned on only in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) or the former Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)). You cannot use registry keys, Microsoft Intune, or Group Policy to enable or disable EDR in block mode.

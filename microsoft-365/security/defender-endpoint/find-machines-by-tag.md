@@ -83,6 +83,7 @@ useStartsWithFilter|Boolean|When set to true, the search will find all devices w
 Empty
 
 ## Response
+
 If successful - 200 OK with list of the machines in the response body.
 
 ## Example

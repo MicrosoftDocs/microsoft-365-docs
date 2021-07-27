@@ -27,7 +27,7 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
 
 The Defender for Endpoint sensor requires Microsoft Windows HTTP (WinHTTP) to report sensor data and communicate with the Defender for Endpoint service.
 
@@ -39,9 +39,7 @@ The embedded Defender for Endpoint sensor runs in system context using the Local
 The WinHTTP configuration setting is independent of the Windows Internet (WinINet) Internet browsing proxy settings and can only discover a proxy server by using the following discovery methods:
 
 - Auto-discovery methods:
-
   - Transparent proxy
-
   - Web Proxy Auto-discovery Protocol (WPAD)
 
     > [!NOTE]
@@ -50,8 +48,7 @@ The WinHTTP configuration setting is independent of the Windows Internet (WinINe
 - Manual static proxy configuration:
 
   - Registry based configuration
-
-  - WinHTTP configured using netsh command – Suitable only for desktops in a stable topology (for example: a desktop in a corporate network behind the same proxy)
+  - WinHTTP configured using netsh command: Suitable only for desktops in a stable topology (for example: a desktop in a corporate network behind the same proxy)
 
 ## Configure the proxy server manually using a registry-based static proxy
 
@@ -60,10 +57,10 @@ Configure a registry-based static proxy to allow only Defender for Endpoint sens
 > [!NOTE]
 > When using this option on Windows 10 or Windows Server 2019, it is recommended to have the following (or later) build and cumulative update rollup:
 >
-> - Windows 10, version 1809 or Windows Server 2019 - https://support.microsoft.com/kb/5001384
-> - Windows 10, version 1909 - https://support.microsoft.com/kb/4601380
-> - Windows 10, version 2004 - https://support.microsoft.com/kb/4601382
-> - Windows 10, version 20H2 - https://support.microsoft.com/kb/4601382
+> - Windows 10, version 1809 or Windows Server 2019 - <https://support.microsoft.com/kb/5001384>
+> - Windows 10, version 1909 - <https://support.microsoft.com/kb/4601380>
+> - Windows 10, version 2004 - <https://support.microsoft.com/kb/4601382>
+> - Windows 10, version 20H2 - <https://support.microsoft.com/kb/4601382>
 >
 > These updates improve the connectivity and reliability of the CnC (Command and Control) channel.
 
@@ -103,9 +100,7 @@ Use netsh to configure a system-wide static proxy.
 > - Laptops that are changing topology (for example: from office to home) will malfunction with netsh. Use the registry-based static proxy configuration.
 
 1. Open an elevated command-line:
-
    1. Go to **Start** and type **cmd**.
-
    1. Right-click **Command prompt** and select **Run as administrator**.
 
 2. Enter the following command and press **Enter**:
@@ -130,9 +125,13 @@ If a proxy or firewall is blocking all traffic by default and allowing only spec
 
 The following downloadable spreadsheet lists the services and their associated URLs that your network must be able to connect to. You should ensure that there are no firewall or network filtering rules that would deny access to these URLs, or you may need to create an *allow* rule specifically for them.
 
-| Spreadsheet of domains list | Description |
-|:-----|:-----|
-|![Thumb image for Microsoft Defender for Endpoint URLs spreadsheet](images/mdatp-urls.png)<br/>  | Spreadsheet of specific DNS records for service locations, geographic locations, and OS. <br><br>[Download the spreadsheet here.](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)
+<br>
+
+**** 
+|Spreadsheet of domains list|Description|
+|---|---|
+|![Thumb image for Microsoft Defender for Endpoint URLs spreadsheet](images/mdatp-urls.png)|Spreadsheet of specific DNS records for service locations, geographic locations, and OS. <p> [Download the spreadsheet here.](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)|
+|
 
 If a proxy or firewall has HTTPS scanning (SSL inspection) enabled, exclude the domains listed in the above table from HTTPS scanning.
 
@@ -149,12 +148,16 @@ If a proxy or firewall is blocking anonymous traffic, as Defender for Endpoint s
 
 The information below list the proxy and firewall configuration information required to communicate with Log Analytics agent (often referred to as Microsoft Monitoring Agent) for the previous versions of Windows such as Windows 7 SP1, Windows 8.1, Windows Server 2008 R2, Windows Server 2012 R2, and Windows Server 2016.
 
-|Agent Resource|Ports |Direction |Bypass HTTPS inspection|
-|------|---------|--------|--------|
-|*.ods.opinsights.azure.com |Port 443 |Outbound|Yes |  
-|*.oms.opinsights.azure.com |Port 443 |Outbound|Yes |  
-|*.blob.core.windows.net |Port 443 |Outbound|Yes |
-|*.azure-automation.net |Port 443 |Outbound|Yes |  
+<br>
+
+****
+
+|Agent Resource|Ports|Direction|Bypass HTTPS inspection|
+|---|---|---|---|
+|*.ods.opinsights.azure.com|Port 443|Outbound|Yes|
+|*.oms.opinsights.azure.com|Port 443|Outbound|Yes|
+|*.blob.core.windows.net|Port 443|Outbound|Yes|
+|*.azure-automation.net|Port 443|Outbound|Yes|
 
 > [!NOTE]
 > As a cloud-based solution, the IP range can change. It's recommended you move to DNS resolving setting.
@@ -167,7 +170,7 @@ Please see the following guidance to eliminate the wildcard (*) requirement for 
 
 2. Ensure the machine is successfully reporting into the Microsoft 365 Defender portal.
 
-3. Run the TestCloudConnection.exe tool from “C:\Program Files\Microsoft Monitoring Agent\Agent” to validate the connectivity and to see the required URLs for your specific workspace.
+3. Run the TestCloudConnection.exe tool from "C:\Program Files\Microsoft Monitoring Agent\Agent" to validate the connectivity and to see the required URLs for your specific workspace.
 
 4. Check the Microsoft Defender for Endpoint URLs list for the complete list of requirements for your region (please refer to the Service URLs [Spreadsheet](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)).
 
@@ -189,9 +192,7 @@ Verify the proxy configuration completed successfully, that WinHTTP can discover
 2. Extract the contents of MDATPClientAnalyzer.zip on the device.
 
 3. Open an elevated command-line:
-
    1. Go to **Start** and type **cmd**.
-
    1. Right-click **Command prompt** and select **Run as administrator**.
 
 4. Enter the following command and press **Enter**:
