@@ -65,8 +65,6 @@ In accordance with certain privacy regulations, for example General Data Protect
 
 Privacy management in Microsoft 365 can help you handle these inquiries through the subject rights request solution. It provides automation and workflow capabilities for helping you search for subject data that you’ve stored in Microsoft 365, review the findings, select the appropriate files, and produce reports. Along the way, you can securely collaborate with other experts in your organization to bring the request to completion.
 
-Note that this subject rights request solution provides capabilities beyond the original data subject requests (DSR) solution in the compliance center, and there is no connection or sharing of workflows between the two. The legacy DSR page will be retired at a later date.
-
 To learn more, see [Manage subject rights requests](privacy-management-subject-rights-requests.md).
 
 ## How we evaluate your data

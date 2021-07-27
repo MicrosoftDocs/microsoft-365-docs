@@ -1,5 +1,5 @@
 ---
-title: Use role-based access control to grant fine-grained access to Microsoft Defender Security Center
+title: Use role-based access control to grant fine-grained access to Microsoft 365 Defender portal
 description: Create roles and groups within your security operations to grant access to the portal.
 keywords: rbac, role, based, access, control, groups, control, tier, aad
 search.product: eADQiWindows 10XVcnh
@@ -58,20 +58,18 @@ Before using RBAC, it's important that you understand the roles that can grant p
 > [!WARNING]
 > Before enabling the feature, it's important that you have a Global Administrator role or Security Administrator role in Azure AD and that you have your Azure AD groups ready to reduce the risk of being locked out of the portal. 
 
-When you first log in to Microsoft Defender Security Center, you're granted either full access or read only access. Full access rights are granted to users with Security Administrator or Global Administrator roles in Azure AD. Read only access is granted to users with a Security Reader role in Azure AD. 
+When you first log in to the Microsoft 365 Defender portal, you're granted either full access or read only access. Full access rights are granted to users with Security Administrator or Global Administrator roles in Azure AD. Read only access is granted to users with a Security Reader role in Azure AD. 
 
 Someone with a Defender for Endpoint Global administrator role has unrestricted access to all devices, regardless of their device group association and the Azure AD user groups assignments
 
 > [!WARNING]
-> Initially, only those with Azure AD Global Administrator or Security Administrator rights will be able to create and assign roles in Microsoft Defender Security Center, therefore, having the right groups ready in Azure AD is important.
+> Initially, only those with Azure AD Global Administrator or Security Administrator rights will be able to create and assign roles in the Microsoft 365 Defender portal, therefore, having the right groups ready in Azure AD is important.
 >
 > **Turning on role-based access control will cause users with read-only permissions (for example, users assigned to Azure AD Security reader role) to lose access until they are assigned to a role.** 
 >
 >Users with admin permissions are automatically assigned the default built-in Defender for Endpoint global administrator role with full permissions. After opting in to use RBAC, you can assign additional users that are not Azure AD Global or Security Administrators to the Defender for Endpoint global administrator role. 
 >
-> After opting in to use RBAC, you cannot revert to the initial roles as when you first logged into the portal. 
-
-
+> After opting in to use RBAC, you cannot revert to the initial roles as when you first logged into the portal.
 
 ## Related topic
 - [Create and manage device groups in Microsoft Defender for Endpoint](machine-groups.md)

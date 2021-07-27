@@ -158,8 +158,16 @@
        href: air-custom-reporting.md
      - name: Advanced Spam Filter (ASF) settings
        href: advanced-spam-filtering-asf-options.md
-     - name: Manage the Tenant Allow/Block List
-       href: tenant-allow-block-list.md
+     - name: Tenant Allow/Block List
+       items:
+       - name: Manage the Tenant Allow/Block List
+         href: tenant-allow-block-list.md
+       - name: Add blocks in the Tenant Allow/Block List
+         href: manage-tenant-blocks.md
+       - name: Add allows in the Tenant Allow/Block List
+         href: manage-tenant-allows.md
+       - name: Modify and remove entries in the Tenant Allow/Block List
+         href: modify-remove-entries-tenant-allow-block.md
      - name: Message trace in the Security & Compliance Center
        href: message-trace-scc.md
      - name: Report messages and files to Microsoft
@@ -186,7 +194,7 @@
          href: real-time-detections.md
      - name: Use Threat Trackers
        href: threat-trackers.md
-     - name: View alerts
+     - name: Alert policies
        href: ../../compliance/alert-policies.md
      - name: Smart reports and insights in the Security & Compliance Center
        href: reports-and-insights-in-security-and-compliance.md

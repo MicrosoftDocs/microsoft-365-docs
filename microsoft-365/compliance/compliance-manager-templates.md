@@ -25,7 +25,11 @@ description: "Understand how to use and manage templates for building assessment
 
 ## Templates overview
 
-A template is a framework of controls for creating an assessment in Compliance Manager. Our comprehensive set of templates can help your organization comply with national, regional, and industry-specific requirements governing the collection and use of data. We refer to templates by the same name as their underlying certification or regulation, such as the EU GDPR template and the ISO/IEC 27701:2019 template.
+A template is a framework of controls for creating an assessment in Compliance Manager. Our comprehensive set of templates can help your organization comply with national, regional, and industry-specific requirements governing the collection and use of data.
+
+We refer to templates by the same name as their underlying certification or regulation, such as the EU GDPR template and the ISO/IEC 27701:2019 template. Since Compliance Manger can be used to assess different types of products, each template comes in two versions: one that applies to Microsoft 365, and a universal version that can be tailored to suit your chosen product.
+
+Note that US Government Community (GCC) Moderate, GCC High, and Department of Defense (DoD) customers can currently use the Microsoft 365 template versions, but not universal.
 
 ## Template availability and licensing
 
@@ -45,7 +49,7 @@ Templates will display an activation status as either active or inactive:
 - A template is considered **active** once you create an assessment from that template.
 - A template is considered **inactive** if your organization isn’t using it for an assessment.
 
-When you purchase a premium template and create an assessment from it, that template is active for one year. Your purchase will automatically renew unless you cancel.
+If you link any assessments to a purchased premium template, that template will be active for one year. Your purchase will automatically renew unless you cancel.
 
 You may also try premium templates on a trial basis. Trial licenses are good for up to 25 templates for 30 days. Once your trial begins, the templates should become available in your tenant within 48 hours. Trials can be activated through the Microsoft 365 admin center.
 
@@ -56,6 +60,8 @@ Your assessment page and assessment templates page have an **activated templates
 For example, if your counter shows 2/5, this means your organization has activated 2 templates out of the 5 that are available to use.
 
 If your counter shows 5/2, this indicates that your organization exceeds its limits and needs to purchase 3 of the premium templates in use.
+
+Microsoft 365 and universal versions of templates have joint licensing, so that you can use the same underlying certification across more than one product. Using either or both versions of the same template will only count as one activated template.
 
 For further details, see [Compliance Manager licensing guidance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager).
 
@@ -118,7 +124,7 @@ The **Actions** tab is required.  It designates improvement actions managed by y
 
 - **actionScore**: In this required field, provide a numeric score value for your action. The value must be a whole number ranging from 1 to 99; it cannot be 0, null, or blank. The higher the number, the greater its value toward improving your compliance posture. The image below demonstrates how Compliance Manager scores controls:
 
-![Compliance Manager controls point values](../media/compliance-score-action-scoring.png "Compliance Manager controls point values")
+  ![Compliance Manager controls point values](../media/compliance-score-action-scoring.png "Compliance Manager controls point values")
 
 - **actionDescriptionTitle**: This is the title of the description and is required. This description title allows you to have the same action in multiple templates and surface a different description in each template.  This field helps you clarify what template the description is referencing. In most cases, you can put the name of the template you're creating in this field.
 
@@ -155,9 +161,13 @@ Only users who hold a Global Administrator or  Compliance Manager Administration
 7. The last screen confirms a new template has been created. Select **Done** to exit the wizard.
 8. You’ll arrive at your new template’s details page, where you can [create your assessment](compliance-manager-assessments.md#create-assessments).
 
-## Extend an assessment template
+## Extend Microsoft 365 assessment templates
 
 Compliance Manager offers the option to add your own controls and improvement actions to an existing Microsoft-provided template. This process is called extending a Microsoft template. When you extend a template, it can still receive updates released by Microsoft, which may happen when there are changes to the related regulation or product (see [Accept updates to assessments](compliance-manager-assessments.md#accept-updates-to-assessments)).
+
+Note that if you're setting up assessments for products other than Microsoft 365, your process will differ. To learn more, see [Extend universal assessment templates](#extend-universal-assessment-templates).
+
+### Prepare template data and create extension
 
 To prepare, you’ll need to assemble a specially formatted Excel spreadsheet to import the necessary template data. The Excel files follow the same general format outlined above, but there are special requirements for extensions. See these additional points to help prevent errors:
 
@@ -190,6 +200,12 @@ After you format your spreadsheet, follow the steps below.
 10. The last screen confirms a new template has been created. Select **Done** to exit the wizard.
 
 11. You’ll arrive at your new template’s details page. From here you can create your assessment by selecting **Create assessment**. For guidance, see [Build and manage assessments](compliance-manager-assessments.md#create-assessments).
+
+## Extend universal assessment templates
+
+Universal versions of templates can also be extended to customize your product-specific assessments. You will receive a special extension template when you create an assessment using a universal template and the assessment has a unique product and certification combination. This can be modified to meet your needs. For guidance on how to edit the template, see the instructions below on modifying a template.
+
+When editing a universal template, all content in the template can be changed, but doing so will break inheritance with the parent template. This means that it will no longer automatically receive updates from Microsoft if the parent template is refreshed.
 
 ## Modify a template
 
@@ -277,11 +293,11 @@ After your Excel file is completed and saved, follow these steps.
 Your template will now include the changes you made. Any assessments that use this modified template will now show pending updates, and you’ll need to accept the updates to the assessments to reflect the changes made in the template. Learn more about [updates to assessments](compliance-manager-assessments.md#accept-updates-to-assessments).
 
 > [!NOTE]
-> If you use Compliance Manager in a language other than English, you’ll notice that some text appears in English when you export a template to Excel. The titles of actions (both your improvement actions and Microsoft actions) must be in English to be recognized by controls. If you make changes to an action title, be sure to write it in English so that the file imports correctly.
+> If you use Compliance Manager in a language other than English, you’ll notice that some text appears in English when you export a template to Excel. The titles of actions (both your improvement actions and, where applicable, Microsoft actions) must be in English to be recognized by controls. If you make changes to an action title, be sure to write it in English so that the file imports correctly.
 
 ## Export a template
 
-You can export an Excel file that contains all of a template’s data. You’ll need to export a template in order to modify it, since this will be the Excel file you edit and upload in the [modification process](#modify-a-template).
+You can export an Excel file that contains all of a template’s data. You’ll need to export a template in order to modify it, since this will be the Excel file you edit and upload in the [modification process](#modify-a-template). You can also export a template for reference if you want to use data from it while constructing a new custom template.
 
 To export your template, go to your template details page and select the **Export to Excel** button.
 

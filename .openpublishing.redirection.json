@@ -4110,12 +4110,12 @@
       "redirect_url": "/microsoft-365/security/office-365-security/report-false-positives-and-false-negatives",
       "redirect_document_id": false
     },
-{
+    {
       "source_path": "microsoft-365/compliance/view-the-data-governance-reports.md",
       "redirect_url": "/microsoft-365/compliance/data-classification-overview",
       "redirect_document_id": false
     },
-{
+    {
       "source_path": "microsoft-365/compliance/view-label-activity-for-documents.md",
       "redirect_url": "/microsoft-365/compliance/data-classification-activity-explorer",
       "redirect_document_id": true
@@ -4174,6 +4174,76 @@
       "source_path": "microsoft-365/compliance/insider-risk-management-alerts.md",
       "redirect_url": "/microsoft-365/compliance/insider-risk-management-activities",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender/m365d-evaluation.md",
+      "redirect_url": "/microsoft-365/security/defender/eval-overview", 
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender/prepare-m365d-eval.md",
+      "redirect_url": "/microsoft-365/security/defender/eval-overview", 
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender/config-m365d-eval.md",
+      "redirect_url": "/microsoft-365/security/defender/eval-overview", 
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender/generate-test-alert.md",
+      "redirect_url": "/microsoft-365/security/defender/eval-overview", 
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender/m365d-pilot.md",
+      "redirect_url": "/microsoft-365/security/defender/eval-overview", 
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender/m365d-pilot-plan.md",
+      "redirect_url": "/microsoft-365/security/defender/eval-overview", 
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender/m365d-pilot-close.md",
+      "redirect_url": "/microsoft-365/security/defender/eval-overview", 
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender/m365d-pilot-simulate.md",
+      "redirect_url": "/microsoft-365/security/defender/eval-defender-investigate-respond-simulate-attack", 
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/junk-email-reporting-add-in-for-microsoft-outlook.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/enable-the-report-message-add-in",
+      "redirect_document_id": false
+    },
+    {
+     "source_path": "microsoft-365/security/office-365-security/enable-the-report-phish-add-in.md",
+     "redirect_url": "/microsoft-365/security/office-365-security/enable-the-report-message-add-in",
+     "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/microsoft-365-tenant-isolation-overview.md",
+      "redirect_url": "/compliance/assurance/assurance-microsoft-365-isolation-controls",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/microsoft-365-isolation-controls.md",
+      "redirect_url": "/compliance/assurance/assurance-microsoft-365-isolation-controls",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/isolation-in-graph-and-delve.md",
+      "redirect_url": "/compliance/assurance/assurance-microsoft-365-isolation-controls",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/isolation-in-microsoft-365-search.md",
+      "redirect_url": "/compliance/assurance/assurance-microsoft-365-isolation-controls",
+      "redirect_document_id": false
     }
   ]
 }

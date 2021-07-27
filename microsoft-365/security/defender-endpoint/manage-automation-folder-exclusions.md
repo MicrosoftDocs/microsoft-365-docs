@@ -54,7 +54,7 @@ You can specify the file names that you want to be excluded in a specific direct
 
 
 ## Add an automation folder exclusion
-1. In the navigation pane, select **Settings** > **Automation folder exclusions**.  
+1. In the navigation pane, select **Settings** > **Endpoints** > **Rules** > **Automation folder exclusions**.  
 
 2. Click **New folder exclusion**.  
 
@@ -64,7 +64,6 @@ You can specify the file names that you want to be excluded in a specific direct
     - Extensions
     - File names
     - Description
-    
 
 4. Click **Save**.
 
@@ -72,14 +71,14 @@ You can specify the file names that you want to be excluded in a specific direct
 > Live Response commands to collect or examine excluded files will fail with error: "File is excluded". In addition, automated investigations will ignore the excluded items.
 
 ## Edit an automation folder exclusion 
-1. In the navigation pane, select **Settings** > **Automation folder exclusions**. 
+1. In the navigation pane, select **Settings** > **Endpoints** > **Rules** > **Automation folder exclusions**. 
 
 2. Click **Edit** on the folder exclusion.  
 
 3. Update the details of the rule and click **Save**.
 
 ## Remove an automation folder exclusion 
-1. In the navigation pane, select **Settings** > **Automation folder exclusions**.  
+1. In the navigation pane, select **Settings** > **Endpoints** > **Rules** > **Automation folder exclusions**.  
 2. Click **Remove exclusion**. 
 
 

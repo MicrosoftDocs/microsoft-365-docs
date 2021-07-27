@@ -75,9 +75,6 @@ The report is made up of cards that display the following alert attributes:
 
 - **Classification & determination**: shows how you have classified alerts upon resolution, whether you have classified them as actual threats (true alerts) or as incorrect detections (false alerts). These cards also show the determination of resolved alerts, providing additional insight like the types of actual threats found or the legitimate activities that were incorrectly detected.
 
-
- 
-
 ## Filter data
 
 Use the provided filters to include or exclude alerts with certain attributes.
@@ -87,9 +84,9 @@ Use the provided filters to include or exclude alerts with certain attributes.
 
 For example, to show data about high-severity alerts only:
 
-1. Under **Filters > Severity**, select **High**
+1. Under **Incidents & alerts** > **Alerts** > **Filters > Severity**, select **High**.
 2. Ensure that all other options under **Severity** are deselected.
-3. Select **Apply**. 
+3. Select **Apply**.
 
 ## Related topic
 - [Device health and compliance report](machine-reports.md)
