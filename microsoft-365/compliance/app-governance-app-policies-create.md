@@ -2,8 +2,8 @@
 title: "Create app policies"
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -104,7 +104,7 @@ Here are the available conditions for a custom app policy.
 |Condition | Condition values accepted | More information |
 |:-------|:-----|:-------|
 | App registration age | Within last X days |  |
-| App certification | Basic compliance, MCAS Compliance, or N/A | [Microsoft 365 Certification](https://docs.microsoft.com/microsoft-365-app-certification/docs/enterprise-app-certification-guide) |
+| M365 certification | Basic compliance, MCAS Compliance, or N/A | [Microsoft 365 Certification](https://docs.microsoft.com/microsoft-365-app-certification/docs/enterprise-app-certification-guide) |
 | Publisher verification | Yes or No | [Publisher Verification](https://docs.microsoft.com/azure/active-directory/develop/publisher-verification-overview) |
 | Application Permission | Select one or more API permission from list | [Microsoft Graph permissions reference](https://docs.microsoft.com/graph/permissions-reference) |
 | Delegated Permission | Select one or more API permission from list | [Microsoft Graph permissions reference](https://docs.microsoft.com/graph/permissions-reference) |
