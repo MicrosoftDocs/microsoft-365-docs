@@ -79,7 +79,7 @@ In this example, if you had only published an SPF TXT record for your domain, th
 > DKIM uses a private key to insert an encrypted signature into the message headers. The signing domain, or outbound domain, is inserted as the value of the **d=** field in the header. The verifying domain, or recipient's domain, then uses the **d=** field to look up the public key from DNS, and authenticate the message. If the message is verified, the DKIM check passes.
 
 ## Steps to Create, enable and disable DKIM from Microsoft 365 Defender portal
-All the accepted domains of your tenant will be shown in Microsoft 365 Defender portal under DKIM page. If you do not see it, add your accepted domain from domains page https://docs.microsoft.com/en-us/microsoft-365/admin/setup/add-domain?view=o365-worldwide#add-a-domain.
+All the accepted domains of your tenant will be shown in Microsoft 365 Defender portal under DKIM page. If you do not see it, add your accepted domain from [domains page](/microsoft-365/admin/setup/add-domain?view=o365-worldwide#add-a-domain).
 Once your domain is added, follow the steps as shown below to configure DKIM.
 
 Step 1: Click on the domain you wish to configure DKIM on DKIM page
@@ -102,11 +102,11 @@ TTL: 3600 (or your provider default)
 Step 5: Return to DKIM page to enable DKIM
 ![image](https://user-images.githubusercontent.com/3039750/126995186-9b3fdefa-a3a9-4f5a-9304-1099a2ce7cef.png)
 
-If you see CNAME record doesnt exist error, it might be due to
-1. Syncronization with DNS server, which might take few seconds to hours, if the problem persists repeat the steps again
+If you see CNAME record doesn't exist error, it might be due to
+1. Synchronization with DNS server, which might take few seconds to hours, if the problem persists repeat the steps again
 2. Check for any copy paste errors, like additional space or tabs etc.
 
-If you wish to disable DKIM, toggle back to diable mode
+If you wish to disable DKIM, toggle back to disable mode
 
 
 ## Steps to manually upgrade your 1024-bit keys to 2048-bit DKIM encryption keys
