@@ -237,7 +237,7 @@ Windows 10 OS [1709](/windows/release-health/status-windows-10-1709), [1803](/wi
 
 If you are using Configuration Manager, version 2006, with tenant attach, tamper protection can be extended to Windows Server 2019. See [Tenant attach: Create and deploy endpoint security Antivirus policy from the admin center (preview)](/mem/configmgr/tenant-attach/deploy-antivirus-policy).
 
-### Will tamper protection have any impact on third-party antivirus registration?
+### Will tamper protection affect non-Microsoft antivirus registrations?
 
 No. Third-party antivirus offerings will continue to register with the Windows Security application.
 
