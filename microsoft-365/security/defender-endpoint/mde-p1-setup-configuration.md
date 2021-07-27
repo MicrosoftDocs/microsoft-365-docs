@@ -134,6 +134,6 @@ Attack surface reduction rules are available on devices running Windows. We reco
 > - [Use attack surface reduction rules to prevent malware infection](attack-surface-reduction.md)
 > - [Customize attack surface reduction rules](customize-attack-surface-reduction.md)
 
-## Next step
+## Next steps
 
 [Getting started with Defender for Endpoint Plan 1 (preview)](mde-plan1-getting-started.md)
