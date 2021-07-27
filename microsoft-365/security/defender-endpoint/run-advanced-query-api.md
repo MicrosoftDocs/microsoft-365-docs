@@ -53,7 +53,7 @@ One of the following permissions is required to call this API. To learn more, in
 Permission type |	Permission	|	Permission display name
 :---|:---|:---
 Application |	AdvancedQuery.Read.All |	'Run advanced queries'
-Delegated (work or school account) | AdvancedQuery.Read | 'Run advanced queries'
+Delegated (work or school account) | AdvancedQuery.Read.All | 'Run advanced queries'
 
 >[!Note]
 > When obtaining a token using user credentials:
