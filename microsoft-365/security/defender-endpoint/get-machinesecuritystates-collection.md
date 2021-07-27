@@ -24,7 +24,7 @@ ms.topic: article
 
 **Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -33,43 +33,48 @@ ms.topic: article
 Retrieves a collection of devices security states.
 
 ## Permissions
+
 User needs read permissions.
 
 ## HTTP request
-```
+
+```http
 GET /testwdatppreview/machinesecuritystates
 ```
 
 ## Request headers
 
-Header | Value 
+Header|Value
 :---|:---
-Authorization | Bearer {token}. **Required**.
-Content type | application/json
+Authorization|Bearer {token}. **Required**.
+Content type|application/json
 
 ## Request body
+
 Empty
 
 ## Response
+
 If successful - 200 OK.
 
 ## Example
 
-**Request**
+### Request example
 
 Here is an example of the request.
 
-```
+```http
 GET https://graph.microsoft.com/testwdatppreview/machinesecuritystates
 Content-type: application/json
 ```
 
-**Response**
+### Response example
 
 Here is an example of the response.
-Field *id* contains device id and equal to the field *id** in devices info. 
 
-```
+Field *id* contains device id and equal to the field *id** in devices info.
+
+```json
 HTTP/1.1 200 OK
 Content-type: application/json
 {
@@ -88,7 +93,7 @@ Content-type: application/json
                 "EdrImpairedCommunications"
             ]
         },
-        …
+        ...
     ]
 }
 ```

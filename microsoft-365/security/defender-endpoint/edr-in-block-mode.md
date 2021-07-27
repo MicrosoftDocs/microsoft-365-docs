@@ -15,7 +15,7 @@ localization_priority: Normal
 ms.custom: 
   - next-gen
   - edr
-ms.date: 07/13/2021
+ms.date: 07/20/2021
 ms.collection: 
   - m365-security-compliance
   - m365initiative-defender-endpoint
@@ -30,11 +30,11 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 ## What is EDR in block mode?
 
-[Endpoint detection and response](overview-endpoint-detection-response.md) (EDR) in block mode provides added protection from malicious artifacts when Microsoft Defender Antivirus is not the primary antivirus product and is running in passive mode. EDR in block mode remediates malicious artifacts that are detected using EDR. Such artifacts might have been missed by the primary, non-Microsoft antivirus product. EDR in block mode works behind the scenes to remediate malicious artifacts that are detected, post breach, on a device. 
+[Endpoint detection and response](overview-endpoint-detection-response.md) (EDR) in block mode provides added protection from malicious artifacts when Microsoft Defender Antivirus is not the primary antivirus product and is running in passive mode. EDR in block mode works behind the scenes to remediate malicious artifacts that were detected by EDR capabilities. Such artifacts might have been missed by the primary, non-Microsoft antivirus product. 
 
 > [!IMPORTANT]
 > EDR in block mode does not provide all the protection that is available when Microsoft Defender Antivirus real-time protection is enabled. All features that depend on Microsoft Defender Antivirus to be the active antivirus solution will not work, including the following key examples: 
@@ -69,7 +69,8 @@ The following image shows an instance of unwanted software that was detected and
 
 2. Choose **Settings** > **Endpoints** > **General** > **Advanced features**.
 
-3. Scroll down, and then urn on **Enable EDR in block mode**.
+3. Scroll down, and then turn on **Enable EDR in block mode**.
+
 
 > [!NOTE]
 > EDR in block mode can be turned on only in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) or the former Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)). You cannot use registry keys, Microsoft Intune, or Group Policy to enable or disable EDR in block mode.

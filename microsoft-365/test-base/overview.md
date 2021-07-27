@@ -1,6 +1,6 @@
 ---
 title: 'Overview'
-description: Understanding TEst Base
+description: Understanding Test Base
 search.appverid: MET150
 author: mansipatel-usl
 ms.author: mapatel
@@ -27,13 +27,13 @@ With Test Base, SVs are provided with more visibility into potential issues that
 
 This new service will help SVs make testing efforts simpler and more efficient. Enterprise customers will benefit from SV and Microsoft testing together in a collaborative environment and gain more confidence that their applications will work as expected. 
 
-### Advantages Test Base offers Eenterprises and their SV partners include: 
+### Advantages Test Base offers Enterprises and their SV partners include: 
  
   *	Faster rollout of security updates to secure your devices; 
  
   *	Lowered update validation costs by hosting the OS changes and application in the same environment; 
   
-  *	World-class intelligence report from Microsoft about your apps (code coverage, API impact analysis etc.); 
+  *	World-class intelligence report from Microsoft about your apps (code coverage, API impact analysis, and so on); 
   
   *	Microsoft's expertise in shifting test content and harnesses to Azure. 
 
@@ -44,7 +44,7 @@ This guide is divided into four (4) parts to ensure a hitch free experience whil
 
 1. The **Overview** which provides detailed, step-by-step guidelines on how to upload your application via our self-serve onboarding portal. 
 
-2. The **Quickstarts** section which provides information on the format for the zippped folder structure and what you need to know when preparing your test scripts.
+2. The **Quickstarts** section, which provides information on the format for the zipped folder structure and what you need to know when preparing your test scripts.
 
 3. The **How-to guide** which provides detailed outline on how to use Test Base to infer test results.
 
@@ -58,7 +58,7 @@ This means anyone with a valid enterprise Azure account is able to onboard their
 
 ### Who should onboard?
 
-We are encouraging all Software Vendors (SVs), System Integrators (SIs) to onboard their applications, binaries and test scripts onto the service.
+We're encouraging all Software Vendors (SVs), System Integrators (SIs) to onboard their applications, binaries, and test scripts onto the service.
 
 ## Next steps
 

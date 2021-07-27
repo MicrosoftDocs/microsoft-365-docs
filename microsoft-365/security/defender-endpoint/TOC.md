@@ -107,12 +107,12 @@
 
 ##### [Deploy]()
 ###### [Deploy Microsoft Defender for Endpoint on iOS via Intune](ios-install.md)
+###### [Deploy Microsoft Defender for Endpoint on iOS for unenrolled devices](ios-install-unmanaged.md)
 
 ##### [Configure]()
 ###### [Configure iOS features](ios-configure-features.md)
 
-##### [Troubleshoot]()
-###### [FAQs and Troubleshoot issues](ios-troubleshoot.md)
+##### [FAQs and Troubleshooting](ios-troubleshoot.md)
 
 ##### [Privacy](ios-privacy.md)
 
@@ -239,6 +239,7 @@
 #### [Overview of attack surface reduction](overview-attack-surface-reduction.md)
 #### [Configure attack surface reduction capabilities](configure-attack-surface-reduction.md)
 #### [Learn about attack surface reduction rules](attack-surface-reduction.md)
+#### [Attack surface reduction rules](attack-surface-reduction-rules.md)
 #### [Evaluate attack surface reduction rules](evaluate-attack-surface-reduction.md)
 #### [Enable attack surface reduction rules](enable-attack-surface-reduction.md)
 #### [Customize attack surface reduction rules](customize-attack-surface-reduction.md)
@@ -257,6 +258,7 @@
 #### [Cloud-delivered protection and Microsoft Defender Antivirus](cloud-protection-microsoft-defender-antivirus.md)
 ##### [Turn on cloud-delivered protection](enable-cloud-protection-microsoft-defender-antivirus.md)
 ##### [Specify the cloud-delivered protection level](specify-cloud-protection-level-microsoft-defender-antivirus.md)
+##### [Cloud-delivered protection Microsoft Defender Antivirus sample submission](cloud-protection-microsoft-antivirus-sample-submission.md)
 #### [Configure and validate Microsoft Defender Antivirus network connections](configure-network-connections-microsoft-defender-antivirus.md)
 #### [Protect security settings with tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md)
 #### [Turn on block at first sight](configure-block-at-first-sight-microsoft-defender-antivirus.md)
@@ -482,6 +484,7 @@
 ####### [Get alert related IPs information](get-alert-related-ip-info.md)
 ####### [Get alert related device information](get-alert-related-machine-info.md)
 ####### [Get alert related user information](get-alert-related-user-info.md)
+####### [Alerts queue in Microsoft 365 Defender](alerts-queue-endpoint-detection-response.md)
 
 ###### [Assessments of vulnerabilities and secure configurations]()
 ####### [Export assessment methods and properties](get-assessment-methods-properties.md)
