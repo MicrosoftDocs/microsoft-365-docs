@@ -28,7 +28,7 @@ ms.technology: mde
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
->Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 Connected applications integrates with the Defender for Endpoint platform using APIs. 
 
@@ -36,9 +36,7 @@ Applications use standard OAuth 2.0 protocol to authenticate and provide tokens 
  
 You'll need to follow [these steps](/microsoft-365/security/defender-endpoint/apis-intro) to use the APIs with the connected application.
  
-## Access the connected application page
-From the left navigation menu, select **Endpoints** > **Partners and APIs** > **Connected applications**.
-
+From the left navigation menu, select **Partners & APIs** (under **Endpoints**) > **Connected applications**.
  
 ## View connected application details
 The Connected applications page provides information about the Azure AD applications connected to Microsoft Defender for Endpoint in your organization. You can review the usage of the connected applications: last seen, number of requests in the past 24 hours, and request trends in the last 30 days.

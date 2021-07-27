@@ -31,9 +31,9 @@ ms.technology: mde
 - macOS
 - Linux
 
->Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-nonwindows-abovefoldlink) 
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-nonwindows-abovefoldlink)
 
-Defender for Endpoint provides a centralized security operations experience for Windows as well as non-Windows platforms. You'll be able to see alerts from various supported operating systems (OS) in Microsoft 365 Defender and better protect your organization's network. 
+Defender for Endpoint provides a centralized security operations experience for Windows and non-Windows platforms. You'll be able to see alerts from various supported operating systems (OS) in Microsoft 365 Defender and better protect your organization's network. 
 
 You'll need to know the exact Linux distros and macOS versions that are compatible with Defender for Endpoint for the integration to work. For more information, see:
 - [Microsoft Defender for Endpoint on Linux system requirements](microsoft-defender-endpoint-linux.md#system-requirements)  
@@ -45,18 +45,17 @@ You'll need to take the following steps to onboard non-Windows devices:
 
    - For macOS devices, you can choose to onboard through Microsoft Defender for Endpoint or through a third-party solution. For more information, see [Microsoft Defender for Endpoint on Mac](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-mac).
 
-   - For other non-Windows devices, choose **Onboard non-Windows devices through third-party integration**.   
-    1. In the navigation pane, select **Interoperability** > **Partners**. Make sure the third-party solution is listed.
-    2. In the **Partner Applications** tab, select the partner that supports your non-Windows devices.
-    3. Select **Open partner page** to open the partner's page. Follow the instructions provided on the page.
-    4. After creating an account or subscribing to the partner solution, you should get to a stage where a tenant Global Admin in your organization is asked to accept a permission request from the partner application. Read the permission request carefully to make sure that it is aligned with the service that you require. 
-
+   - For other non-Windows devices choose **Onboard non-Windows devices through third-party integration**.   
+    1. In the navigation pane, select **Partners and APIs** > **Partner Applications** . Make sure the third-party solution is listed.
+    2. In the **Partner Applications** page, select the partner that supports your non-Windows devices.
+    3. Click **View** to open the partner's page. Follow the instructions provided on the page.
+    4. After creating an account or subscribing to the partner solution, you should get to a stage where a tenant Global Admin in your organization is asked to accept a permission request from the partner application. Read the permission request carefully to make sure that it's aligned with the service that you require. 
         
 2. Run a detection test by following the instructions of the third-party solution.
 
 ## Offboard non-Windows devices
 
-1. Follow the third-party's documentation to disconnect the third-party solution from Microsoft Defender for Endpoint.
+1. Follow the third party's documentation to disconnect the third-party solution from Microsoft Defender for Endpoint.
 
 2. Remove permissions for the third-party solution in your Azure AD tenant.
    1. Sign in to the [Azure portal](https://portal.azure.com).
