@@ -67,7 +67,7 @@ If you are encountering problems with rules detecting files that you believe sho
 |:----|:----|
 | Block abuse of exploited vulnerable signed drivers | `56a863a9-875e-4185-98a7-b882c64b5ce5` |
 | Block Adobe Reader from creating child processes | `7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c` |
-| Block all Office applications from creating child processes | `D4F940AB-401B-4EFC-AADC-AD5F3C50688A` |
+| Block all Office applications from creating child processes | `d4f940ab-401b-4efc-aadc-ad5f3c50688a` |
 | Block credential stealing from the Windows local security authority subsystem (lsass.exe) | `9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2` |
 | Block executable content from email client and webmail | `be9ba2d9-53ea-4cdc-84e5-9b1eeee46550` |
 | Block executable files from running unless they meet a prevalence, age, or trusted list criteria | `01443614-cd74-433a-b99e-2ecdc07bfc25` |

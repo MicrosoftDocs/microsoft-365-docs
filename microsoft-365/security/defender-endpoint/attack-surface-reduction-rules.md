@@ -142,7 +142,7 @@ Intune name: `Office apps launching child processes`
 
 Configuration Manager name: `Block Office application from creating child processes`
 
-GUID: `D4F940AB-401B-4EFC-AADC-AD5F3C50688A`
+GUID: `d4f940ab-401b-4efc-aadc-ad5f3c50688a`
 
 ### Block credential stealing from the Windows local security authority subsystem
 

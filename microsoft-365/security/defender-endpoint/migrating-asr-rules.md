@@ -74,7 +74,7 @@ This article helps you to map common rules to Microsoft Defender for Endpoint.
 - **Processes**- winword.exe, powerpnt.exe, excel.exe
 - **Operation**- Process Execution
 - **Examples of Files/Folders, Registry Keys/Values, Processes, Services**- powershell.exe, cmd.exe, wscript.exe, mshta.exe, EQNEDT32.EXE, regsrv32.exe
-- **Attack Surface Reduction rules**- ASR rules have a built-in rule to prevent Office apps from launching child processes: "Block all Office applications from creating child processes", GUID "D4F940AB-401B-4EFC-AADC-AD5F3C50688A".
+- **Attack Surface Reduction rules**- ASR rules have a built-in rule to prevent Office apps from launching child processes: "Block all Office applications from creating child processes", GUID "d4f940ab-401b-4efc-aadc-ad5f3c50688a".
 - **Other recommended features**- N/A
     
 ### Block Office Apps from launching child processes and from creating executable content
