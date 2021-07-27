@@ -34,15 +34,27 @@ The recommended methods to deploy Microsoft 365 Defender in your SOC will depend
 
 Security tools are interrelated. Turning on one feature in a security technology or changing a process may in turn break another. For this reason, Microsoft recommends that your SOC team formalize a method for defining and prioritizing use cases. Use cases help define requirements and test processes for SOC operations across various teams. It creates a methodology for capturing metrics to determine if the right roles and mix of tasks are aligned to the right team with the right skillsets. 
 
-The SOC should define a high-level standard for developing use cases, which would be regulated by the SOC oversight team. The SOC oversight team should work with the business, IT, legal, HR and other groups to prioritize use cases for the SOC that will eventually make their way into the SOC team’s runbooks and playbooks.
-
 ## Develop and formalize use case process
 
-This figure shows an example of a formal use case process.
+The SOC should define a high-level standard and process for developing use cases, which would be regulated by the SOC oversight team. The SOC oversight team should work with the business, IT, legal, HR, and other groups to prioritize use cases for the SOC that will eventually make their way into the SOC team’s runbooks and playbooks.
+
+The first step is that the SOC Oversight team works with IT, security, business, HR, legal, peer groups, and privacy, to prioritize use cases. Priority of use cases are based on objectives, such as compliance or privacy.
+
+SOC Oversight activities related to use case development include: 
+
+- Requirements
+- Staffing or training needs
+- Software licenses
+- Vendor contracting
+- Managing plan
+- Maintaining use case registry
+- Maintaining/updating templates
+
+The second step is to create a use case decision tree. This figure shows an example.
 
 :::image type="content" source="../../media/integrate-microsoft-365-defender-secops/use-case-decision-process.png" alt-text="The use case decision process":::
 
-Once a high-level use case standard has been defined and approved, the next step is to create and test an actual use case. This process will be explored using an anti-phishing scenario as an example.
+Once a high-level use case standard has been defined and approved, the next step is to create and test an actual use case. This process will be explored using anti-phishing and threat and vulnerabiltiy scanning scenarios as examples.
 
 ## Use case example 1: New phishing variant
 
@@ -54,7 +66,7 @@ The first step in creating a use case is to outline the workflow via a story boa
 
 Once the story board has been approved, the next step is to invoke the use case workflow. Here is the process for the example anti-phishing campaign. 
  
-:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-detailed-use-case-workflow.png" alt-text="An example of a detailed use case workflow for an anti-phishing campaign":::
+:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-detailed-use-case-workflow-phishing.png" alt-text="An example of a detailed use case workflow for an anti-phishing campaign":::
 
 ## Use case example 2: Threat & vulnerability scanning
 
