@@ -119,7 +119,7 @@ First is a configuration policy to select which groups of users or devices will 
 Then you will continue by creating several different types of endpoint security policies:
 
 - [Next-generation protection](#next-generation-protection)
-- [Attack surface reduction](#attack-surface-reduction--attack-surface-reduction-rules)
+- [Attack surface reduction](#attack-surface-reduction---attack-surface-reduction-rules)
 
 ### Endpoint detection and response
 
@@ -316,7 +316,7 @@ Then you will continue by creating several different types of endpoint security 
 
 ## Validate configuration settings
 
-### Confirm Policies have been applied
+### Confirm policies have been applied
 
 Once the Configuration policy has been assigned, it will take some time to apply.
 
@@ -328,22 +328,22 @@ To confirm that the configuration policy has been applied to your test device, f
     steps above. The following example shows the next generation protection settings.
 
     > [!div class="mx-imgBorder"]
-    > [ ![Image of Microsoft Endpoint Manager portal33](images/43ab6aa74471ee2977e154a4a5ef2d39.png) ](images/43ab6aa74471ee2977e154a4a5ef2d39.png#lightbox)
+    > [![Image of Microsoft Endpoint Manager portal33](images/43ab6aa74471ee2977e154a4a5ef2d39.png)](images/43ab6aa74471ee2977e154a4a5ef2d39.png#lightbox)
 
 2. Select  the **Configuration Policy** to view the policy status.
 
     > [!div class="mx-imgBorder"]
-    > [ ![Image of Microsoft Endpoint Manager portal34](images/55ecaca0e4a022f0e29d45aeed724e6c.png) ](images/55ecaca0e4a022f0e29d45aeed724e6c.png#lightbox)
+    > [![Image of Microsoft Endpoint Manager portal34](images/55ecaca0e4a022f0e29d45aeed724e6c.png)](images/55ecaca0e4a022f0e29d45aeed724e6c.png#lightbox)
 
 3. Select  **Device Status** to see the status.
 
     > [!div class="mx-imgBorder"]
-    > [ ![Image of Microsoft Endpoint Manager portal35](images/18a50df62cc38749000dbfb48e9a4c9b.png) ](images/18a50df62cc38749000dbfb48e9a4c9b.png#lightbox)
+    > [![Image of Microsoft Endpoint Manager portal35](images/18a50df62cc38749000dbfb48e9a4c9b.png)](images/18a50df62cc38749000dbfb48e9a4c9b.png#lightbox)
 
 4. Select  **User Status** to see the status.
 
     > [!div class="mx-imgBorder"]
-    > [ ![Image of Microsoft Endpoint Manager portal36](images/4e965749ff71178af8873bc91f9fe525.png) ](images/4e965749ff71178af8873bc91f9fe525.png#lightbox)
+    > [![Image of Microsoft Endpoint Manager portal36](images/4e965749ff71178af8873bc91f9fe525.png)](images/4e965749ff71178af8873bc91f9fe525.png#lightbox)
 
 5. Select  **Per-setting status** to see the status.
 
@@ -351,29 +351,28 @@ To confirm that the configuration policy has been applied to your test device, f
     > This view is very useful to identify any settings that conflict with another policy.
 
     > [!div class="mx-imgBorder"]
-    > [ ![Image of Microsoft Endpoint Manager portal37](images/42acc69d0128ed09804010bdbdf0a43c.png) ](images/42acc69d0128ed09804010bdbdf0a43c.png#lightbox)
+    > [![Image of Microsoft Endpoint Manager portal37](images/42acc69d0128ed09804010bdbdf0a43c.png)](images/42acc69d0128ed09804010bdbdf0a43c.png#lightbox)
 
-### Endpoint detection and response
+### Confirm endpoint detection and response
 
-1. Before applying the configuration, the Defender for Endpoint
-    Protection service should not be started.
+1. Before applying the configuration, the Defender for Endpoint Protection service should not be started.
 
     > [!div class="mx-imgBorder"]
-    > [ ![Image of Services panel1](images/b418a232a12b3d0a65fc98248dbb0e31.png) ](images/b418a232a12b3d0a65fc98248dbb0e31.png#lightbox)
+    > [![Image of Services panel1](images/b418a232a12b3d0a65fc98248dbb0e31.png)](images/b418a232a12b3d0a65fc98248dbb0e31.png#lightbox)
 
 2. After the configuration has been applied, the Defender for Endpoint
     Protection Service should be started.
 
     > [!div class="mx-imgBorder"]
-    > [ ![Image of Services panel2](images/a621b699899f1b41db211170074ea59e.png) ](images/a621b699899f1b41db211170074ea59e.png#lightbox)
+    > [![Image of Services panel2](images/a621b699899f1b41db211170074ea59e.png)](images/a621b699899f1b41db211170074ea59e.png#lightbox)
 
 3. After the services are running on the device, the device appears in Microsoft
     Defender Security Center.
 
     > [!div class="mx-imgBorder"]
-    > [ ![Image of Microsoft Defender Security Center](images/df0c64001b9219cfbd10f8f81a273190.png) ](images/df0c64001b9219cfbd10f8f81a273190.png#lightbox)
+    > [![Image of Microsoft Defender Security Center](images/df0c64001b9219cfbd10f8f81a273190.png)](images/df0c64001b9219cfbd10f8f81a273190.png#lightbox)
 
-### Next-generation protection
+### Confirm next-generation protection
 
 1. Before applying the policy on a test device, you should be able to manually
     manage the settings as shown below.
@@ -391,7 +390,7 @@ To confirm that the configuration policy has been applied to your test device, f
     > [!div class="mx-imgBorder"]
     > ![Image of setting page2](images/9341428b2d3164ca63d7d4eaa5cff642.png)
 
-### Attack Surface Reduction - Attack surface reduction rules
+### Confirm Attack Surface Reduction - Attack surface reduction rules
 
 1. Before applying the policy on a test device, pen a PowerShell Window and type `Get-MpPreference`.
 
@@ -411,7 +410,7 @@ To confirm that the configuration policy has been applied to your test device, f
 
     ![Image of command line2](images/619fb877791b1fc8bc7dfae1a579043d.png)
 
-### Attack Surface Reduction - Web Protection
+### Confirm Attack Surface Reduction - Web Protection
 
 1. On the test device, open a PowerShell Windows and type
     `(Get-MpPreference).EnableNetworkProtection`.
