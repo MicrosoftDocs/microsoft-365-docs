@@ -51,7 +51,7 @@ To get the latest features, including preview capabilities (such as endpoint det
 
 ### Prerequisites
 
-- A Defender for Endpoint subscription and access to the Microsoft Defender Security Center portal
+- A Defender for Endpoint subscription and access to the Microsoft 365 Defender portal
 - Beginner-level experience in macOS and BASH scripting
 - Administrative privileges on the device (in case of manual deployment)
 

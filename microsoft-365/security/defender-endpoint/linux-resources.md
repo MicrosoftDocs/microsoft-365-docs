@@ -161,8 +161,8 @@ In the Defender for Endpoint portal, you'll see two categories of information:
 
 ### Known issues
 
-- You might see "No sensor data, impaired communications" in the machine information page of the Microsoft Defender Security Center portal, even though the product is working as expected. We are working on addressing this issue.
-- Logged on users do not appear in the Microsoft Defender Security Center portal.
+- You might see "No sensor data, impaired communications" in the machine information page of the Microsoft 365 Defender portal, even though the product is working as expected. We are working on addressing this issue.
+- Logged on users do not appear in the Microsoft 365 Defender portal.
 - In SUSE distributions, if the installation of *libatomic1* fails, you should validate that your OS is registered:
 
    ```bash

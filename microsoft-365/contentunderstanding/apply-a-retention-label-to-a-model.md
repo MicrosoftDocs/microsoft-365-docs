@@ -1,8 +1,9 @@
 ---
-title: "Apply a retention label to a model"
-ms.author: efrene
-author: efrene
+title: Apply a retention label to a model in SharePoint Syntex
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
+ms.reviewer: ssquires
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -11,7 +12,7 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 localization_priority: Normal
-description: "This article discusses how to apply a retention label to a model in SharePoint Syntex"
+description: Learn how to apply a retention label to a model in SharePoint Syntex.
 ---
 
 # Apply a retention label to a model in SharePoint Syntex
