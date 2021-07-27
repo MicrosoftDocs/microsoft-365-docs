@@ -16,7 +16,7 @@ author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.technology: mde
-ms.date: 06/23/2021
+ms.date: 07/27/2021
 ---
 
 # Protect security settings with tamper protection
