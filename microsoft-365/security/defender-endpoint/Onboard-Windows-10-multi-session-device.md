@@ -45,11 +45,13 @@ There are several ways to onboard a WVD host machine:
 
 - Run the script in the golden image (or from a shared location) during startup.
 - Use a management tool to run the script.
+- Through [Integration with Azure Defender](configure-server-endpoints.md#integration-with-azure-defender)
 
 #### *Scenario 1: Using local group policy*
 This scenario requires placing the script in a golden image and uses local group policy to run early in the boot process.
 
-Use the instructions in [Onboard the non-persistent virtual desktop infrastructure (VDI) devices](configure-endpoints-vdi.md#onboard-the-non-persistent-virtual-desktop-infrastructure-vdi-devices).
+Use the instructions in [Onboard non-persistent virtual desktop infrastructure (VDI) devices](configure-endpoints-vdi.md#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices).
+
 
 Follow the instructions for a single entry for each device.
 

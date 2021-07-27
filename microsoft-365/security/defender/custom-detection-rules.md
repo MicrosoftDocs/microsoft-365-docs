@@ -85,6 +85,9 @@ Simple queries, such as those that don't use the `project` or `summarize` operat
 
 There are various ways to ensure more complex queries return these columns. For example, if you prefer to aggregate and count by entity under a column such as `DeviceId`, you can still return `Timestamp` and `ReportId` by getting it from the most recent event involving each unique `DeviceId`.
 
+> [!IMPORTANT]
+> Avoid filtering custom detections using the `Timestamp` column. The data used for custom detections is pre-filtered based on the detection frequency.
+
 The sample query below counts the number of unique devices (`DeviceId`) with antivirus detections and uses this count to find only the devices with more than five detections. To return the latest `Timestamp` and the corresponding `ReportId`, it uses the `summarize` operator with the `arg_max` function.
 
 ```kusto

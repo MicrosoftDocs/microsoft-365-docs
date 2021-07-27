@@ -44,12 +44,12 @@ The **Weaknesses** page lists the software vulnerabilities your devices are expo
 
 Access the Weaknesses page a few different ways:
 
-- Selecting **Weaknesses** from the threat and vulnerability management navigation menu in the [Microsoft Defender Security Center](portal-overview.md)
+- Selecting **Weaknesses** from the **Vulnerability management** navigation menu in the [Microsoft 365 Defender portal] (portal-overview.md)
 - Global search
 
 ### Navigation menu
 
-Go to the threat and vulnerability management navigation menu and select **Weaknesses** to open the list of CVEs.
+Go to the **Vulnerability management** navigation menu and select **Weaknesses** to open the list of CVEs.
 
 ### Vulnerabilities in global search
 
@@ -95,7 +95,7 @@ CVEs for software that isn't currently supported by threat & vulnerability manag
 
 Exposed device information will not be available for CVEs with unsupported software. Filter by unsupported software by selecting the "Not available" option in the "Exposed devices" section.
 
- ![Exposed devices filter.](images/tvm-exposed-devices-filter.png)
+:::image type="content" alt-text="Exposed devices filter." source="images/tvm-exposed-devices-filter.png":::
 
 ## View Common Vulnerabilities and Exposures (CVE) entries in other places
 
@@ -106,7 +106,9 @@ Exposed device information will not be available for CVEs with unsupported softw
     ![Top vulnerable software card with four columns: software, weaknesses, threats, exposed devices.](images/tvm-top-vulnerable-software500.png)
 
 2. Select the software you want to investigate to go to a drilldown page.
+
 3. Select the **Discovered vulnerabilities** tab.
+
 4. Select the vulnerability you want to investigate for more information on vulnerability details
 
     ![Windows Server 2019 drill down overview.](images/windows-server-drilldown.png)
@@ -115,15 +117,17 @@ Exposed device information will not be available for CVEs with unsupported softw
 
 View related weaknesses information in the device page.
 
-1. Go to the Microsoft Defender Security Center navigation menu bar, then select the device icon. The **Devices list** page opens.
-2. In the **Devices list** page, select the device name that you want to investigate.
+1. Go to the Microsoft 365 Defender navigation menu bar, then select the device icon. The **Device inventory** page opens.
+
+2. In the **Device inventory** page, select the device name that you want to investigate.
 
     ![Device list with selected device to investigate.](images/tvm_machinetoinvestigate.png)
 
 3. The device page will open with details and response options for the device you want to investigate.
+
 4. Select **Discovered vulnerabilities**.
 
-    ![Device page with details and response options.](images/tvm-discovered-vulnerabilities.png)
+   :::image type="content" alt-text="Device page with details and response options." source="images/tvm-discovered-vulnerabilities.png" lightbox="images/tvm-discovered-vulnerabilities.png":::
 
 5. Select the vulnerability that you want to investigate to open up a flyout panel with the CVE details, such as: vulnerability description, threat insights, and detection logic.
 
@@ -133,7 +137,7 @@ Similar to the software evidence, we now show the detection logic we applied on 
 
 The "OS Feature" category is also shown in relevant scenarios. A CVE would affect devices that run a vulnerable OS only if a specific OS component is enabled. Let's say Windows Server 2019 has vulnerability in its DNS component. With this new capability, we’ll only attach this CVE to the Windows Server 2019 devices with the DNS capability enabled in their OS.
 
-![Detection Logic example which lists the software detected on the device and the KBs.](images/tvm-cve-detection-logic.png)
+:::image type="content" alt-text="Detection Logic example which lists the software detected on the device and the KBs." source="images/tvm-cve-detection-logic.png":::
 
 ## Report inaccuracy
 
