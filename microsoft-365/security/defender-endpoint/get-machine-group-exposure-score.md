@@ -41,7 +41,7 @@ Retrieves a collection of alerts related to a given domain address.
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md)
 
 Permission type|Permission|Permission display name
-:---|:---|:---
+---|---|---
 Application|Score.Read.All|'Read Threat and Vulnerability Management score'
 Delegated (work or school account)|Score.Read|'Read Threat and Vulnerability Management score'
 
@@ -53,8 +53,8 @@ GET /api/exposureScore/ByMachineGroups
 
 ## Request headers
 
-|Name|Type|Description
-|---|---|---|
+Name|Type|Description
+---|---|---
 |Authorization|String|Bearer {token}.**Required**.
 
 ## Request body
@@ -80,7 +80,6 @@ GET https://api.securitycenter.microsoft.com/api/exposureScore/ByMachineGroups
 Here is an example of the response.
 
 ```json
-
 {
     "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#ExposureScore",
     "value": [

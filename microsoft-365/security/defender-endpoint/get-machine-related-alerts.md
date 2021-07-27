@@ -1,6 +1,6 @@
 ---
-title: Get machine related alerts API
-description: Learn how to use the Get machine related alerts API to retrieve all alerts related to a specific device in Microsoft Defender for Endpoint.
+title: Get machine-related alerts API
+description: Learn how to use the Get machine-related alerts API. This API allows you to retrieve all alerts that are related to a specific device in Microsoft Defender for Endpoint.
 keywords: apis, graph api, supported apis, get, devices, related, alerts
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -18,7 +18,7 @@ MS.technology: mde
 ms.custom: api
 ---
 
-# Get machine related alerts  API
+# Get machine-related alerts  API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -49,8 +49,8 @@ Delegated (work or school account) | Alert.ReadWrite | 'Read and write alerts'
 > [!NOTE]
 > When obtaining a token using user credentials:
 >
-> - The user needs to have at least the following role permission: 'View Data' (See [Create and manage roles](user-roles.md) for more information)
-> - The user needs to have access to the device, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)
+> - The user needs to have at least the following role permission: 'View Data'. For more information about permissions, see [Create and manage roles](user-roles.md).
+> - The user needs to have access to the device, based on device group settings. For more information about device group settings, see [Create and manage device groups](machine-groups.md).
 
 ## HTTP request
 
@@ -70,4 +70,4 @@ Empty
 
 ## Response
 
-If successful and device exists - 200 OK with list of [alert](alerts.md) entities in the body. If device was not found - 404 Not Found.
+If successful and device exists: 200 OK with list of [alert](alerts.md) entities in the body. If device was not found: 404 Not Found.
