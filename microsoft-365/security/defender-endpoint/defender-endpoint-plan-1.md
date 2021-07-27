@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: ITPro
 ms.topic: overview
-ms.date: 07/21/2021
+ms.date: 07/26/2021
 ms.prod: m365-security
 ms.technology: mde
 localization_priority: Normal
@@ -17,16 +17,14 @@ f1.keywords: NOCSH
 
 # Microsoft Defender for Endpoint Plan 1 (preview)
 
+> [!IMPORTANT]
+> Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. This article includes links to online content that might describe some features that are not included in Defender for Endpoint Plan 1 (preview).
+
 ## Overview
 
-Microsoft Defender for Endpoint is an enterprise endpoint security platform designed to help organizations like yours to prevent, detect, investigate, and respond to advanced threats. 
-
-Soon, Defender for Endpoint will be available in two plans: 
+Microsoft Defender for Endpoint is an enterprise endpoint security platform designed to help organizations like yours to prevent, detect, investigate, and respond to advanced threats. Soon, Defender for Endpoint will be available in two plans: 
 - Defender for Endpoint Plan 1, currently in preview, and described in this article
 - [Defender for Endpoint Plan 2](microsoft-defender-endpoint.md), available now.
-
-> [!TIP]
-> To learn more about the differences between Plan 1 and Plan 2, see [Compare Microsoft Defender for Endpoint Plan 1 (preview) to Defender for Endpoint Plan 2](defender-endpoint-plan-1-2.md).
 
 This article focuses on Defender for Endpoint Plan 1, currently in preview. Use this article to:
 
@@ -34,8 +32,8 @@ This article focuses on Defender for Endpoint Plan 1, currently in preview. Use 
 - Learn how to set up and configure your threat protection capabilities.
 - Get started using the Microsoft 365 Defender portal, where you can view incidents and alerts, manage devices, and use reports about detected threats.
 
-> [!IMPORTANT]
-> Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. This article includes links to online content that might describe some features that are not included in Defender for Endpoint Plan 1 (preview).
+> [!TIP]
+> To learn more about the differences between Plan 1 and Plan 2, see [Compare Microsoft Defender for Endpoint Plan 1 (preview) to Defender for Endpoint Plan 2](defender-endpoint-plan-1-2.md).
 
 ## What's included in Defender for Endpoint Plan 1?
 
