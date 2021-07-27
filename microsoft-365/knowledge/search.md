@@ -1,5 +1,5 @@
 ---
-title: "Use Microsoft Search to find topics in Microsoft Viva Topics"
+title: Use Microsoft Search to find topics in Microsoft Viva Topics
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -9,7 +9,7 @@ ms.topic: article
 ms.service: o365-administration
 search.appverid: 
 localization_priority: None
-description: "Learn how you can search for topics in Microsoft Viva."
+description: Learn how to search for topics in Microsoft Viva Topics.
 ---
 
 # Use Microsoft Search to find topics in Microsoft Viva Topics

@@ -36,7 +36,7 @@ This topic describes how to install, configure, update, and use Defender for End
 > [!CAUTION]
 > Running other third-party endpoint protection products alongside Microsoft Defender for Endpoint on Mac is likely to lead to performance problems and unpredictable side effects. If non-Microsoft endpoint protection is an absolute requirement in your environment, you can still safely take advantage of Defender for Endpoint on Mac EDR functionality after configuring the antivirus functionality to run in [Passive mode](mac-preferences.md#enable--disable-passive-mode).
 
-## What’s new in the latest release
+## What's new in the latest release
 
 [What's new in Microsoft Defender for Endpoint](whats-new-in-microsoft-defender-atp.md)
 
@@ -104,13 +104,12 @@ Microsoft Defender for Endpoint on Mac requires one of the following Microsoft V
 
 The following downloadable spreadsheet lists the services and their associated URLs that your network must be able to connect to. You should ensure that there are no firewall or network filtering rules that would deny access to these URLs, or you may need to create an *allow* rule specifically for them.
 
-
-
-|**Spreadsheet of domains list**|**Description**|
-|:-----|:-----|
-|![Thumb image for Microsoft Defender for Endpoint URLs spreadsheet](images/mdatp-urls.png)<br/>  | Spreadsheet of specific DNS records for service locations, geographic locations, and OS. <br><br>Download the spreadsheet here: [mdatp-urls.xlsx](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx).
+|Spreadsheet of domains list|Description|
+|---|---|
+|![Thumb image for Microsoft Defender for Endpoint URLs spreadsheet](images/mdatp-urls.png)|Spreadsheet of specific DNS records for service locations, geographic locations, and OS. <p> Download the spreadsheet here: [mdatp-urls.xlsx](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx).
 
 Microsoft Defender for Endpoint can discover a proxy server by using the following discovery methods:
+
 - Proxy autoconfig (PAC)
 - Web Proxy Autodiscovery Protocol (WPAD)
 - Manual static proxy configuration
@@ -122,7 +121,7 @@ If a proxy or firewall is blocking anonymous traffic, make sure that anonymous t
 >
 > SSL inspection and intercepting proxies are also not supported for security reasons. Configure an exception for SSL inspection and your proxy server to directly pass through data from Microsoft Defender for Endpoint on macOS to the relevant URLs without interception. Adding your interception certificate to the global store will not allow for interception.
 
-To test that a connection is not blocked, open [https://x.cp.wd.microsoft.com/api/report](https://x.cp.wd.microsoft.com/api/report) and [https://cdn.x.cp.wd.microsoft.com/ping](https://cdn.x.cp.wd.microsoft.com/ping) in a browser.
+To test that a connection is not blocked, open <https://x.cp.wd.microsoft.com/api/report> and <https://cdn.x.cp.wd.microsoft.com/ping> in a browser.
 
 If you prefer the command line, you can also check the connection by running the following command in Terminal:
 
@@ -137,9 +136,10 @@ The output from this command should be similar to the following:
  `OK https://cdn.x.cp.wd.microsoft.com/ping`
 
 > [!CAUTION]
-> We recommend that you keep [System Integrity Protection](https://support.apple.com/en-us/HT204899) (SIP) enabled on client devices. SIP is a built-in macOS security feature that prevents low-level tampering with the OS, and is enabled by default.
+> We recommend that you keep [System Integrity Protection](https://support.apple.com/HT204899) (SIP) enabled on client devices. SIP is a built-in macOS security feature that prevents low-level tampering with the OS, and is enabled by default.
 
 Once Microsoft Defender for Endpoint is installed, connectivity can be validated by running the following command in Terminal:
+
 ```bash
 mdatp connectivity test
 ```
@@ -159,5 +159,4 @@ In alignment with macOS evolution, we are preparing a Microsoft Defender for End
 ## Resources
 
 - For more information about logging, uninstalling, or other topics, see [Resources for Microsoft Defender for Endpoint on Mac](mac-resources.md).
-
 - [Privacy for Microsoft Defender for Endpoint on Mac](mac-privacy.md).

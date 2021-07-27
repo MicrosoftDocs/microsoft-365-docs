@@ -26,7 +26,7 @@ ms.custom: api
 
 **Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -50,15 +50,16 @@ ms.custom: api
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md)
 
-Permission type |	Permission	|	Permission display name
+Permission type|Permission|Permission display name
 :---|:---|:---
-Application |	AdvancedQuery.Read.All |	'Run advanced queries'
-Delegated (work or school account) | AdvancedQuery.Read.All | 'Run advanced queries'
+Application|AdvancedQuery.Read.All|'Run advanced queries'
+Delegated (work or school account)|AdvancedQuery.Read|'Run advanced queries'
 
->[!Note]
+> [!NOTE]
 > When obtaining a token using user credentials:
->- The user needs to have 'View Data' AD role
->- The user needs to have access to the device, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)
+>
+> - The user needs to have 'View Data' AD role
+> - The user needs to have access to the device, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)
 
 ## HTTP request
 
@@ -68,27 +69,26 @@ POST https://api.securitycenter.microsoft.com/api/advancedqueries/run
 
 ## Request headers
 
-Header | Value 
+Header|Value
 :---|:---
-Authorization | Bearer {token}. **Required**.
-Content-Type	| application/json
+Authorization|Bearer {token}. **Required**.
+Content-Type|application/json
 
 ## Request body
 
 In the request body, supply a JSON object with the following parameters:
 
-Parameter |	Type	| Description
+Parameter|Type|Description
 :---|:---|:---
-Query |	Text |	The query to run. **Required**.
+Query|Text|The query to run. **Required**.
 
 ## Response
 
 If successful, this method returns 200 OK, and _QueryResponse_ object in the response body.
 
-
 ## Example
 
-##### Request
+### Request example
 
 Here is an example of the request.
 
@@ -98,55 +98,55 @@ POST https://api.securitycenter.microsoft.com/api/advancedqueries/run
 
 ```json
 {
-	"Query":"DeviceProcessEvents  
-    | where InitiatingProcessFileName =~ 'powershell.exe'
-    | where ProcessCommandLine contains 'appdata'
-    | project Timestamp, FileName, InitiatingProcessFileName, DeviceId
-    | limit 2"
+    "Query":"DeviceProcessEvents  
+|where InitiatingProcessFileName =~ 'powershell.exe'
+|where ProcessCommandLine contains 'appdata'
+|project Timestamp, FileName, InitiatingProcessFileName, DeviceId
+|limit 2"
 }
 ```
 
-##### Response
+### Response example
 
 Here is an example of the response.
 
->[!NOTE]
->The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+> [!NOTE]
+> The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 
 ```json
 {
-	"Schema": [
-		{
-			"Name": "Timestamp",
-			"Type": "DateTime"
-		},
-		{
-			"Name": "FileName",
-			"Type": "String"
-		},
-		{
-			"Name": "InitiatingProcessFileName",
-			"Type": "String"
-		},
-		{
-			"Name": "DeviceId",
-			"Type": "String"
-		}
-	],
-	"Results": [
-		{
-			"Timestamp": "2020-02-05T01:10:26.2648757Z",
-			"FileName": "csc.exe",
-			"InitiatingProcessFileName": "powershell.exe",
-			"DeviceId": "10cbf9182d4e95660362f65cfa67c7731f62fdb3"
-		},
-		{
-			"Timestamp": "2020-02-05T01:10:26.5614772Z",
-			"FileName": "csc.exe",
-			"InitiatingProcessFileName": "powershell.exe",
-			"DeviceId": "10cbf9182d4e95660362f65cfa67c7731f62fdb3"
-		}
-	]
+    "Schema": [
+        {
+            "Name": "Timestamp",
+            "Type": "DateTime"
+        },
+        {
+            "Name": "FileName",
+            "Type": "String"
+        },
+        {
+            "Name": "InitiatingProcessFileName",
+            "Type": "String"
+        },
+        {
+            "Name": "DeviceId",
+            "Type": "String"
+        }
+    ],
+    "Results": [
+        {
+            "Timestamp": "2020-02-05T01:10:26.2648757Z",
+            "FileName": "csc.exe",
+            "InitiatingProcessFileName": "powershell.exe",
+            "DeviceId": "10cbf9182d4e95660362f65cfa67c7731f62fdb3"
+        },
+        {
+            "Timestamp": "2020-02-05T01:10:26.5614772Z",
+            "FileName": "csc.exe",
+            "InitiatingProcessFileName": "powershell.exe",
+            "DeviceId": "10cbf9182d4e95660362f65cfa67c7731f62fdb3"
+        }
+    ]
 }
 ```
 
