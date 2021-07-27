@@ -180,7 +180,7 @@ Then you will continue by creating several different types of endpoint security 
     > [!div class="mx-imgBorder"]
     > ![Image of Microsoft Endpoint Manager portal12](images/6b728d6e0d71108d768e368b416ff8ba.png)
 
-3. Select **Platform - Windows 10 and Later - Windows and Profile – Microsoft
+3. Select **Platform - Windows 10 and Later - Windows and Profile - Microsoft
     Defender Antivirus > Create**.
 
 4. Enter name and description, then select  **Next**.
@@ -215,7 +215,7 @@ Then you will continue by creating several different types of endpoint security 
     > [!div class="mx-imgBorder"]
     > ![Image of Microsoft Endpoint Manager portal18](images/38180219e632d6e4ec7bd25a46398da8.png)
 
-### Attack Surface Reduction – Attack surface reduction rules
+### Attack Surface Reduction - Attack surface reduction rules
 
 1. Open the MEM portal.
 
@@ -223,7 +223,7 @@ Then you will continue by creating several different types of endpoint security 
 
 3. Select  **Create Policy**.
 
-4. Select **Platform - Windows 10 and Later – Profile - Attack surface reduction
+4. Select **Platform - Windows 10 and Later - Profile - Attack surface reduction
     rules > Create**.
 
     > [!div class="mx-imgBorder"]
@@ -265,7 +265,7 @@ Then you will continue by creating several different types of endpoint security 
     > [!div class="mx-imgBorder"]
     > ![Image of Microsoft Endpoint Manager portal25](images/7a631d17cc42500dacad4e995823ffef.png)
 
-### Attack Surface Reduction – Web Protection
+### Attack Surface Reduction - Web Protection
 
 1. Open the MEM portal.
 
@@ -273,7 +273,7 @@ Then you will continue by creating several different types of endpoint security 
 
 3. Select  **Create Policy**.
 
-4. Select **Windows 10 and Later – Web protection > Create**.
+4. Select **Windows 10 and Later - Web protection > Create**.
 
     > [!div class="mx-imgBorder"]
     > ![Image of Microsoft Endpoint Manager portal26](images/cd7b5a1cbc16cc05f878cdc99ba4c27f.png)
@@ -391,7 +391,7 @@ To confirm that the configuration policy has been applied to your test device, f
     > [!div class="mx-imgBorder"]
     > ![Image of setting page2](images/9341428b2d3164ca63d7d4eaa5cff642.png)
 
-### Attack Surface Reduction – Attack surface reduction rules
+### Attack Surface Reduction - Attack surface reduction rules
 
 1. Before applying the policy on a test device, pen a PowerShell Window and type `Get-MpPreference`.
 
@@ -411,7 +411,7 @@ To confirm that the configuration policy has been applied to your test device, f
 
     ![Image of command line2](images/619fb877791b1fc8bc7dfae1a579043d.png)
 
-### Attack Surface Reduction – Web Protection
+### Attack Surface Reduction - Web Protection
 
 1. On the test device, open a PowerShell Windows and type
     `(Get-MpPreference).EnableNetworkProtection`.
