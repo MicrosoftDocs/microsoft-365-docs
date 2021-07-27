@@ -107,8 +107,8 @@ To reduce your attack surfaces, configure the following capabilities:
 - [Ransomware mitigation](#ransomware-mitigation)
 - [Device control](#device-control)
 - [Web protection](#web-protection)
-- Network protection
-- Network firewall
+- [Network protection](#network-protection)
+- [Network firewall](#network-firewall)
 
 ### Ransomware mitigation
 
