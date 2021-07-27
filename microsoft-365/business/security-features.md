@@ -91,7 +91,7 @@ Advanced features in Microsoft 365 Business Premium are available to help you pr
 
 Your Microsoft 365 Business Premium subscription includes features that help you maintain compliance and regulatory standards.
 
-- **[Overview of data loss prevention policies](../compliance/data-loss-prevention-policies.md)** (DLP). 
+- **[Learn about data loss prevention](../compliance/dlp-learn-about-dlp.md))** (DLP). 
     
     You can set up DLP to automatically detect sensitive information, like credit card numbers, social security numbers, and so on, to prevent their inadvertent sharing outside your company.
     

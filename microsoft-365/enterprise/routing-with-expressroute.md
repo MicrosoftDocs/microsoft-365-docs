@@ -80,14 +80,6 @@ For Microsoft to route back to your network for these bi-directional traffic flo
 
 When you configure a peering relationship using the Microsoft peering routing domain and are approved for the appropriate access, you'll be able to see all PaaS and SaaS services available over ExpressRoute. The Office 365 services designed for ExpressRoute can be managed with [BGP communities](./bgp-communities-in-expressroute.md) or [route filters](/azure/expressroute/how-to-routefilter-portal).
   
-Other applications such as Office 365 Video, is an Office 365 application; however, Office 365 Video is comprised of three different components, the portal, the streaming service, and the content delivery network. The portal lives within SharePoint Online, the streaming service lives within Azure Media Services, and the content delivery network lives within the Azure CDN. The following table outlines these components.
-
-|**Component**|**Underlying application**|**Included in SharePoint Online BGP Community?**|**Use**|
-|:-----|:-----|:-----|:-----|
-|Office 365 Video portal  <br/> |SharePoint Online  <br/> |Yes  <br/> |Configuration, upload  <br/> |
-|Office 365 Video streaming service  <br/> |Azure Media Services  <br/> |No  <br/> |Streaming service, used in the event the video is unavailable from the CDN  <br/> |
-|Office 365 Video content delivery network  <br/> |Azure CDN  <br/> |No  <br/> |Primary source of video download/streaming. [Learn more about Office 365 video networking](https://support.office.com/article/Office-365-Video-networking-Frequently-Asked-Questions-FAQ-2bed67a1-4052-49ff-a4ce-b7e6530eb98e).  <br/> |
-
 Each of the Office 365 features that are available using Microsoft peering are listed in the [Office 365 endpoints article](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2) by application type and FQDN. The reason for using the FQDN in the tables is to allow customers to manage traffic using PAC files or other proxy configurations, see our guide to [managing Office 365 endpoints](./managing-office-365-endpoints.md) for example PAC files.
   
 In some situations we've used a wildcard domain where one or more sub-FQDNs are advertised differently than the higher-level wildcard domain. This usually happens when the wildcard represents a long list of servers that are all advertised to ExpressRoute and the Internet, while a small subset of destinations is only advertised to the Internet, or the reverse. Refer to the tables below to understand where the differences are.
@@ -101,7 +93,7 @@ This table displays the wildcard FQDNs that are advertised to both the internet 
 
 Usually PAC files are intended to send network requests to ExpressRoute advertised endpoints directly to the circuit and all other network requests to your proxy. If you're configuring a PAC file like this, compose your PAC file in the following order:
   
-1. Include the sub-FQDNs from column two in the above table at the top of your PAC file, sending the traffic towards your proxy. We've built a sample PAC file for you to use in our article on [managing Office 365 endpoints](./managing-expressroute-for-connectivity.md).
+1. Include the sub-FQDNs from column two in the above table at the top of your PAC file, sending the traffic towards your proxy. We've built a sample PAC file for you to use in our article on [managing Office 365 endpoints](./managing-office-365-endpoints.md).
 
 2. Include all FQDNs marked advertised to ExpressRoute in [this article](./urls-and-ip-address-ranges.md) below the first section, sending the traffic directly to your ExpressRoute circuit.
 

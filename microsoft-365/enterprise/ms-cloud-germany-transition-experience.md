@@ -71,6 +71,12 @@ Considerations to note:
 
 - Users of the Outlook Web App who access the service by using a URL where their mailbox does not reside will see an extra authentication prompt. For example, if the user's mailbox is in the Office 365 services and the user's Outlook Web App connection uses the legacy endpoint `outlook.office.de`, the user will first authenticate to `login.microsoftonline.de`, and then to `login.microsoftonline.com`. When migration is complete, the user can access the new URL (`https://outlook.office365.com`), and they'll see only the single, expected sign-in request. 
 
+## SharePoint Online
+
+In SharePoint Online and OneDrive for Business, you can share items via Outlook. After pressing the Outlook button, a shareable link is created and pushed into a new message in the Outlook Web App.
+
+Sharing items in SharePoint Online and OneDrive for Business via Outlook no longer works after the migration of SharePoint Online has been completed. We recognize this is a known issue. However, since this Outlook feature is in the path of deprecation, fixing the issue is not planned until the deprecation is rolled out.
+
 ## Office Services
 
 Office Online services are accessible via `office.de` before and during the transition. After users' mailboxes are transitioned to the Office 365 services, users should begin to use Office 365 services URLs. As subsequent workloads migrate to Office 365 services, their interface from the office.com portal will begin to work.

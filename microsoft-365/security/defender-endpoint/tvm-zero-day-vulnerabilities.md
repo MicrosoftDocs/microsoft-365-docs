@@ -1,7 +1,7 @@
 ---
 title: Mitigate zero-day vulnerabilities - threat and vulnerability management
 description: Learn how to find and mitigate zero-day vulnerabilities in your environment through threat and vulnerability management.
-keywords: mdatp tvm zero day vulnerabilities, tvm, threat & vulnerability management, zero day, 0-day, mitigate 0 day vulnerabilities, vulnerable CVE
+keywords: Microsoft Defender for Endpoint tvm zero day vulnerabilities, tvm, threat & vulnerability management, zero day, 0-day, mitigate 0 day vulnerabilities, vulnerable CVE
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -38,7 +38,10 @@ Threat and vulnerability management will only display zero-day vulnerabilities i
 
 ## Find information about zero-day vulnerabilities
 
-Once a zero-day vulnerability has been found, information about it will be conveyed through the following experiences in the Microsoft Defender Security Center.
+Once a zero-day vulnerability has been found, information about it will be conveyed through the following experiences in the Microsoft 365 Defender portal.
+
+>[!NOTE]
+> 0-day vulnerability capability is currently available only for Windows products.
 
 ### Threat and vulnerability management dashboard
 
@@ -58,19 +61,19 @@ Look for the named zero-day vulnerability along with a description and details.
 
 - If this vulnerability has no CVE-ID assigned, you'll find it under an internal, temporary name that looks like “TVM-XXXX-XXXX”. The name will be updated once an official CVE-ID has been assigned, but the previous internal name will still be searchable and found in the side-panel.
 
-![Zero day example for CVE-2020-17087 in weaknesses page.](images/tvm-zero-day-weakness-name.png)
+:::image type="content" alt-text="Zero day example for CVE-2020-17087 in weaknesses page." source="images/tvm-zero-day-weakness-name.png" lightbox="images/tvm-zero-day-weakness-name.png":::
 
 ### Software inventory page
 
 Look for software with the zero-day tag. Filter by the "zero day" tag to only see software with zero-day vulnerabilities.
 
-![Zero day example of Windows Server 2016 in the software inventory page.](images/tvm-zero-day-software-inventory.png)
+:::image type="content" alt-text="Zero day example of Windows Server 2016 in the software inventory page." source="images/tvm-zero-day-software-inventory.png" lightbox="images/tvm-zero-day-software-inventory.png":::
 
 ### Software page
 
 Look for a zero-day tag for each software that has been affected by the zero–day vulnerability.
 
-![Zero day example for Windows Server 2016 software page.](images/tvm-zero-day-software-page.png)
+:::image type="content" alt-text="Zero day example for Windows Server 2016 software page." source="images/tvm-zero-day-software-page.png" lightbox="images/tvm-zero-day-software-page.png":::
 
 ### Security recommendations page
 
@@ -78,7 +81,7 @@ View clear suggestions about remediation and mitigation options, including worka
 
 If there's software with a zero-day vulnerability and additional vulnerabilities to address, you'll get one recommendation about all vulnerabilities.
 
-![Zero day example of Windows Server 2016 in the security recommendations page.](images/tvm-zero-day-security-recommendation.png)
+:::image type="content" alt-text="Zero day example of Windows Server 2016 in the security recommendations page." source="images/tvm-zero-day-security-recommendation.png" lightbox="images/tvm-zero-day-security-recommendation.png":::
 
 ## Addressing zero-day vulnerabilities
 

@@ -53,7 +53,7 @@ In this example, you'll create a DLP policy that identifies U.S. PII data, which
     
 ### Create a DLP policy from a template
 
-1. Go to [https://protection.office.com](https://protection.office.com).
+1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com).
     
 2. Sign in using your work or school account. You're now in the Security &amp; Compliance Center.
     
@@ -181,14 +181,8 @@ In addition, you can turn off each rule individually by editing the policy and t
   
 ## More information
 
-- [Overview of data loss prevention policies](data-loss-prevention-policies.md)
-    
+- [Learn about data loss prevention](dlp-learn-about-dlp.md)
 - [Send notifications and show policy tips for DLP policies](use-notifications-and-policy-tips.md)
-    
 - [Create a DLP policy to protect documents with FCI or other properties](protect-documents-that-have-fci-or-other-properties.md)
-    
 - [What the DLP policy templates include](what-the-dlp-policy-templates-include.md)
-    
 - [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)
-    
-

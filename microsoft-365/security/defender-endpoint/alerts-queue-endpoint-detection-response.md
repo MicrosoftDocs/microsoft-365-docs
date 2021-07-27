@@ -1,7 +1,7 @@
 ---
-title: Alerts queue in Microsoft Defender Security Center
+title: Alerts queue in Microsoft 365 Defender
 ms.reviewer: 
-description: View and manage the alerts surfaced in Microsoft Defender Security Center
+description: View and manage the alerts surfaced in Microsoft 365 Defender
 keywords: 
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -20,7 +20,7 @@ ms.date: 09/03/2018
 ms.technology: mde
 ---
 
-# Alerts queue in Microsoft Defender Security Center
+# Alerts queue in Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

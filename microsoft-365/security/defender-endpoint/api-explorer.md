@@ -1,5 +1,5 @@
 ---
-title: API Explorer in Microsoft Defender ATP
+title: API Explorer in Microsoft Defender for Endpoint
 ms.reviewer: 
 description: Use the API Explorer to construct and do API queries, test, and send requests for any available API
 keywords: api, explorer, send, request, get, post,
@@ -17,6 +17,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
+ms.custom: api
 ---
 
 # API Explorer

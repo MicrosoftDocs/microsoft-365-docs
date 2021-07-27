@@ -1,7 +1,7 @@
 ### YamlMime:Hub
 
 title: Microsoft 365 Business Premium resources # < 60 chars
-summary: Microsoft 365 Business Premium (formerly Microsoft 365 Business) is a comprehensive subscription service for businesses with less than 300 employees. It integrates your favorite Office productivity apps and services and collaboration tools like Microsoft Teams  with advanced security and device management capabilities. # < 160 chars
+summary: Microsoft 365 Business Premium (formerly Microsoft 365 Business) is a comprehensive subscription service for businesses with fewer than 300 employees. It integrates your favorite Office productivity apps and services and collaboration tools like Microsoft Teams with advanced security and device management capabilities. # < 160 chars
 # brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-platform | sql | sql-server | vs | visual-studio | windows | xamarin
 brand: m365
 
@@ -21,10 +21,10 @@ productDirectory:
   title: Secure remote work with Microsoft 365 Business Premium # < 60 chars (optional)
   items:
     # Card
-    - title: Read
-      imageSrc: https://docs.microsoft.com/office/media/icons/sign-up-blue.svg
-      summary: Best ways to enable secure remote work with Microsoft 365 Business Premium.
-      url: https://techcommunity.microsoft.com/t5/small-and-medium-business-blog/using-microsoft-365-business-to-secure-your-remote-workforce/ba-p/1298623
+    - title: Watch
+      imageSrc: https://docs.microsoft.com/office/media/icons/video-play.svg
+      summary: Top five benefits of Microsoft 365 Business Premium.
+      url: https://aka.ms/M365BPvideo
     # Card
     - title: Get the free partner kit
       imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
@@ -37,11 +37,11 @@ productDirectory:
       summary: Antivirus management and Universal Print are now available in Microsoft 365 Business Premium.
       url: https://aka.ms/M365BPQ1Update
     # Card
-    - title: Join the partner webinar series
+    - title: Join the Microsoft 365 Lighthouse partner webinar on July 28
       # imageSrc should be square in ratio with no whitespace
       imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
-      summary: Accelerate business growth through managed services with Microsoft 365 Business Premium.
-      url: https://aka.ms/acceleratewithm365bp 
+      summary: Using Microsoft 365 Lighthouse to Secure and Standardize Microsoft 365 Business Premium Customers.
+      url: https://aka.ms/m365lighthousewebinar 
 # conceptualContent section (optional)
 conceptualContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
@@ -52,7 +52,7 @@ conceptualContent:
         - url: microsoft-365-business-overview.md
           itemType: overview
           text: Overview
-        - url: https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816
+        - url: ../business-video/index.yml
           itemType: video
           text: Microsoft 365 Business Premium training
         - url: /office365/servicedescriptions/microsoft-365-service-descriptions/licensing-microsoft-365-in-smb
@@ -76,7 +76,7 @@ conceptualContent:
         - url: /MicrosoftTeams/get-started-with-teams-quick-start
           itemType: video
           text: 3. Set up Teams
-        - url: https://support.microsoft.com/office/4d2a1b69-6d8c-45d1-88e0-6676a8efa5f1
+        - url: ../business-video/install-office.md
           itemType: get-started
           text: 4. Install Office
   #Card
@@ -84,7 +84,10 @@ conceptualContent:
       links:
         - url: https://www.microsoft.com/microsoft-365/partners/business
           itemType: overview
-          text: Partner page 
+          text: Partner page
+        - url: ../lighthouse/m365-lighthouse-overview.md
+          itemType: overview
+          text: Learn about Microsoft 365 Lighthouse 
         - url: https://assetsprod.microsoft.com/mpn/smb-advanced-security-customer-pitch-deck.pptx
           itemType: download
           text: Pitch deck (customer focus)
@@ -150,7 +153,7 @@ conceptualContent:
         - url: ./set-up-compliance.md#set-up-email-retention-with-exchange-online-archiving
           itemType: how-to-guide
           text: Set up email retention
-        - url: https://support.microsoft.com/office/2fb96b54-7dd2-4f0c-ac8d-170790d4b8b9
+        - url: ../business-video/create-sensitivity-labels.md
           itemType: video
           text: Create and use sensitivity labels
       # footerLink (optional)

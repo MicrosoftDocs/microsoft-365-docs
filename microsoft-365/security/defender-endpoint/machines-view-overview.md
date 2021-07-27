@@ -1,5 +1,5 @@
 ---
-title: View and organize the Microsoft Defender ATP devices list
+title: View and organize the Microsoft Defender for Endpoint devices list
 description: Learn about the available features that you can use from the Devices list such as sorting, filtering, and exporting the list to enhance investigations.
 keywords: sort, filter, export, csv, device name, domain, last seen, internal IP, health state, active alerts, active malware detections, threat category, review alerts, network, connection, malware, type, password stealer, ransomware, exploit, threat, general malware, unwanted software
 search.product: eADQiWindows 10XVcnh
@@ -29,7 +29,6 @@ ms.technology: mde
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-machinesview-abovefoldlink)
 
-
 The **Devices list** shows a list of the devices in your network where alerts were generated. By default, the queue displays devices seen in the last 30 days.  
 
 At a glance you'll see information such as domain, risk level, OS platform, and other details for easy identification of devices most at risk.
@@ -46,7 +45,7 @@ During the onboarding process, the **Devices list** is gradually populated with 
 >[!NOTE]
 > If you export the device list, it will contain every device in your organization. It might take a significant amount of time to download, depending on how large your organization is. Exporting the list in CSV format displays the data in an unfiltered manner. The CSV file will include all devices in the organization, regardless of any filtering applied in the view itself.
 
-![Image of devices list with list of devices](images/device-list.png)
+![Image of devices list with list of devices](images/device-inventory.png)
 
 ## Sort and filter the device list
 
@@ -62,7 +61,7 @@ The exposure level reflects the current exposure of the device based on the cumu
 
 If the exposure level says "No data available," there are a few reasons why this may be the case:
 
-- Device stopped reporting for more than 30 days – in that case it is considered inactive, and the exposure isn't computed
+- Device stopped reporting for more than 30 days. In that case it is considered inactive, and the exposure isn't computed
 - Device OS not supported - see [minimum requirements for Microsoft Defender for Endpoint](minimum-requirements.md)
 - Device with stale agent (very unlikely)
 
@@ -74,9 +73,9 @@ Select only the OS platforms you're interested in investigating.
 
 Filter by the following device health states:
 
-- **Active** – Devices that are actively reporting sensor data to the service.
-- **Inactive** – Devices that have completely stopped sending signals for more than 7 days.
-- **Misconfigured** – Devices that have impaired communications with service or are unable to send sensor data. Misconfigured devices can further be classified to:
+- **Active**: Devices that are actively reporting sensor data to the service.
+- **Inactive**: Devices that have completely stopped sending signals for more than 7 days.
+- **Misconfigured**: Devices that have impaired communications with service or are unable to send sensor data. Misconfigured devices can further be classified to:
   - No sensor data
   - Impaired communications
 

@@ -1,7 +1,7 @@
 ---
-title: Common Microsoft Defender ATP API errors
-description: List of common Microsoft Defender ATP API errors with descriptions.
-keywords: apis, mdatp api, errors, troubleshooting
+title: Common Microsoft Defender for Endpoint API errors
+description: List of common Microsoft Defender for Endpoint API errors with descriptions.
+keywords: APIs, Microsoft Defender for Endpoint API, errors, troubleshooting
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -14,7 +14,8 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+MS.technology: mde
+ms.custom: api
 ---
 
 # Common REST API error codes
@@ -27,7 +28,7 @@ ms.technology: mde
 * The message is a free text that can be changed.
 * At the bottom of the page, you can find response examples.
 
->Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 Error code |HTTP status code |Message 
 :---|:---|:---

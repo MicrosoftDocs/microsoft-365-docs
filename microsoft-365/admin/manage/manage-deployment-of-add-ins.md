@@ -16,6 +16,7 @@ ms.collection:
 ms.custom: 
 - AdminSurgePortfolio
 - okr_smb
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
@@ -33,7 +34,7 @@ For more information on how to determine if your organization can support Centra
 To learn more about managing add-ins after deployment, see [Manage add-ins in the admin center](manage-addins-in-the-admin-center.md)
   
 > [!NOTE]
->  For Word, Excel and PowerPoint use a [SharePoint App Catalog](https://dev.office.com/docs/add-ins/publish/publish-task-pane-and-content-add-ins-to-an-add-in-catalog) to deploy add-ins to users in an on-premises environment with no connection to Microsoft 365 and/or support for SharePoint add-ins required. For Outlook use Exchange control panel to deploy in an on-premises environment without a connection to Microsoft 365.
+>  For Word, Excel and PowerPoint use a [SharePoint App Catalog](/office/dev/add-ins/publish/publish-task-pane-and-content-add-ins-to-an-add-in-catalog) to deploy add-ins to users in an on-premises environment with no connection to Microsoft 365 and/or support for SharePoint add-ins required. For Outlook use Exchange control panel to deploy in an on-premises environment without a connection to Microsoft 365.
   
 ## Recommended approach for deploying Office add-ins
 
@@ -56,7 +57,7 @@ Before you begin, see [Determine if Centralized Deployment of add-ins works for 
 2. Select **Deploy Add-in** at the top of the page, and then select **Next**.
 
     > [!NOTE]
-    > The admin center is getting updated to deployment experience with Integrated Apps. Integrated Apps is only visible to Global administrators, while for others the old experience still exists. If you don't see the above steps, go to the Centralized Deployment section by going to **Settings** > **Integrated apps**. On the top of the **Integrated apps** page, choose **Add-ins**.
+    > You can also deploy add-ins in the admin center through [Integrated Apps](test-and-deploy-microsoft-365-apps.md). Integrated Apps is visible to Global and Exchange administrators. If you don't see the above steps, go to the Centralized Deployment section by going to **Settings** > **Integrated apps**. On the top of the **Integrated apps** page, choose **Add-ins**.
 
 3. Select an option and follow the instructions.
   
@@ -124,14 +125,10 @@ Updates for add-ins happen as follows:
 
 - **Office Store add-in:** When an admin selected an add-in from the Office Store, if an add-in updates in the Office Store, the add-in will update later in Centralized Deployment. The next time the relevant Office applications start, the add-in will update. The web application can change at any time.
   
-## Learn more
+## Related content
 
-[Manage add-ins in the admin center](manage-addins-in-the-admin-center.md)
-
-[Build your first Word task pane add-in](/office/dev/add-ins/quickstarts/word-quickstart?tabs=yeomangenerator).
-
-[Minors and acquiring add-ins from the store](minors-and-acquiring-addins-from-the-store.md)
-  
-[Use Centralized Deployment PowerShell cmdlets to manage add-ins](../../enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md)
-  
-[Troubleshoot: User not seeing add-ins](/office365/troubleshoot/access-management/user-not-seeing-add-ins)
+[Manage add-ins in the admin center](manage-addins-in-the-admin-center.md) (article)\
+[Build your first Word task pane add-in](/office/dev/add-ins/quickstarts/word-quickstart?tabs=yeomangenerator) (article\
+[Minors and acquiring add-ins from the store](minors-and-acquiring-addins-from-the-store.md) (article)\ 
+[Use Centralized Deployment PowerShell cmdlets to manage add-ins](../../enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md) (article)\  
+[Troubleshoot: User not seeing add-ins](/office365/troubleshoot/access-management/user-not-seeing-add-ins) (article)

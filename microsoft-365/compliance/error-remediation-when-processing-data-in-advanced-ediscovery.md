@@ -5,16 +5,16 @@ f1.keywords:
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 
+ms.date:
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: M365-security-compliance 
-search.appverid: 
+ms.collection: M365-security-compliance
+search.appverid:
 - MOE150
 - MET150
-ms.assetid: 
+ms.assetid:
 
 description: Learn how to use error remediation to correct data issues in Advanced eDiscovery that might prevent proper processing of content.
 ms.custom: seo-marvel-mar2020
@@ -28,8 +28,8 @@ Use the following workflow to remediate files with errors in Advanced eDiscovery
 
 ## Create an error remediation session to remediate files with processing errors
 
->[!NOTE]
->If the the error remediation wizard is closed at any time during the following procedure, you can return to the error remediation session from the **Processing** tab by selecting **Remediations** in the **View** drop-down menu.
+> [!NOTE]
+> If the the error remediation wizard is closed at any time during the following procedure, you can return to the error remediation session from the **Processing** tab by selecting **Remediations** in the **View** drop-down menu.
 
 1. On the **Processing** tab in the Advanced eDiscovery case, select **Errors** in the **View** drop-down menu and then select a review set or the entire case in the **Scope** drop-down menu. This section displays all errors from the case or error from a specific review set.
 
@@ -47,13 +47,13 @@ Use the following workflow to remediate files with errors in Advanced eDiscovery
 
     ![Download files](../media/6ac04b09-8e13-414a-9e24-7c75ba586363.png)
 
-5. To download files, specify the **Destination path for download**. This is a path to the parent folder on your local computer where the file will be downloaded.  The default path, %USERPROFILE%\Downloads\errors, points to the logged-in user's downloads folder. You can change this path if desired. If you do change it, we recommend that you use a local file path for the best performance. Don't use a remote network path. For example, you could use the path **C:\Remediation**. 
+5. To download files, specify the **Destination path for download**. This is a path to the parent folder on your local computer where the file will be downloaded.  The default path, %USERPROFILE%\Downloads\errors, points to the logged-in user's downloads folder. You can change this path if desired. If you do change it, we recommend that you use a local file path for the best performance. Don't use a remote network path. For example, you could use the path **C:\Remediation**.
 
    The path to the parent folder is automatically added to AzCopy command (as the value of the **/Dest** parameter).
 
-6. Copy the predefined command by clicking **Copy to clipboard**. Open a Windows Command Prompt, paste the AzCopy command, and then press **Enter**.  
+6. Copy the predefined command by clicking **Copy to clipboard**. Open a Windows Command Prompt, paste the AzCopy command, and then press **Enter**.
 
-    ![Prepare for error remediation](../media/f364ab4d-31c5-4375-b69f-650f694a2f69.png)    
+    ![Prepare for error remediation](../media/f364ab4d-31c5-4375-b69f-650f694a2f69.png)
 
     > [!NOTE]
     > You must use AzCopy v8.1 to successfully use the command that's provided on the **Download files** page. You also must use AzCopy v8.1 to upload the files in step 10. To install this version of AzCopy, see [Transfer data with the AzCopy v8.1 on Windows](/previous-versions/azure/storage/storage-use-azcopy). If the supplied AzCopy command fails, please see [Troubleshoot AzCopy in Advanced eDiscovery](troubleshooting-azcopy.md).
@@ -93,7 +93,7 @@ Use the following workflow to remediate files with errors in Advanced eDiscovery
 
 11. After you run the AzCopy command, click **Next: Process files**.
 
-    When processing is complete, you can go to review set and view the remediated files. 
+    When processing is complete, you can go to review set and view the remediated files.
 
 ## Remediating errors in container files
 
@@ -105,7 +105,7 @@ Sometimes it's not possible to remediate a file to native format that Advanced e
 
 ## What happens when files are remediated
 
-When remediated files are uploaded, the original metadata is preserved except for the following fields: 
+When remediated files are uploaded, the original metadata is preserved except for the following fields:
 
 - ExtractedTextSize
 - HasText

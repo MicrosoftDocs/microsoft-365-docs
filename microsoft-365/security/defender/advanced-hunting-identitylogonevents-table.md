@@ -1,7 +1,7 @@
 ---
 title: IdentityLogonEvents table in the advanced hunting schema
 description: Learn about authentication events recorded by Active Directory in the IdentityLogonEvents table of the advanced hunting schema
-keywords: advanced hunting, threat hunting, cyber threat hunting, microsoft threat protection, microsoft 365, mtp, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, IdentityLogonEvents, Azure AD, Active Directory, Azure ATP, identities
+keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, IdentityLogonEvents, Azure AD, Active Directory, Microsoft Defender for Identity, identities
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -36,7 +36,7 @@ The `IdentityLogonEvents` table in the [advanced hunting](advanced-hunting-overv
 > For detailed information about the events types (`ActionType` values) supported by a table, use the built-in schema reference  available in the security center.
 
 >[!NOTE]
->This table covers Azure Active Directory (AD) logon activities tracked by Cloud App Security, specifically interactive sign-ins and authentication activities using ActiveSync and other legacy protocols. Non-interactive logons that are not available in this table can be viewed in the Azure AD audit log. [Learn more about connecting Cloud App Security to Microsoft 365](/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security)
+>This table covers Azure Active Directory (Azure AD) logon activities tracked by Cloud App Security, specifically interactive sign-ins and authentication activities using ActiveSync and other legacy protocols. Non-interactive logons that are not available in this table can be viewed in the Azure AD audit log. [Learn more about connecting Cloud App Security to Microsoft 365](/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security)
 
 For information on other tables in the advanced hunting schema, [see the advanced hunting reference](advanced-hunting-schema-tables.md).
 

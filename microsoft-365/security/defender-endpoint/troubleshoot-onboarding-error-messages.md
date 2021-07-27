@@ -30,11 +30,11 @@ ms.technology: mde
 
 This page provides detailed steps to troubleshoot issues that might occur when setting up your Microsoft Defender for Endpoint service.
 
-If you receive an error message, Microsoft Defender Security Center will provide a detailed explanation on what the issue is and relevant links will be supplied.
+If you receive an error message, Microsoft 365 Defender will provide a detailed explanation on what the issue is and relevant links will be supplied.
 
 ## No subscriptions found
 
-If while accessing Microsoft Defender Security Center you get a **No subscriptions found** message, it means the Azure Active Directory (Azure AD) used to log in the user to the portal, does not have a Microsoft Defender for Endpoint license.
+If while accessing Microsoft 365 Defender you get a **No subscriptions found** message, it means the Azure Active Directory (Azure AD) used to log in the user to the portal, does not have a Microsoft Defender for Endpoint license.
 
 Potential reasons:
 - The Windows E5 and Office E5 licenses are separate licenses.
@@ -49,7 +49,7 @@ For both cases, you should contact Microsoft support at [General Microsoft Defen
 
 ## Your subscription has expired
 
-If while accessing Microsoft Defender Security Center you get a **Your subscription has expired** message, your online service subscription has expired. Microsoft Defender for Endpoint subscription, like any other online service subscription, has an expiration date. 
+If while accessing Microsoft 365 Defender you get a **Your subscription has expired** message, your online service subscription has expired. Microsoft Defender for Endpoint subscription, like any other online service subscription, has an expiration date. 
 
 You can choose to renew or extend the license at any point in time. When accessing the portal after the expiration date a **Your subscription has expired** message will be presented with an option to download the device offboarding package, should you choose to not renew the license.
 
@@ -61,7 +61,7 @@ You can choose to renew or extend the license at any point in time. When accessi
 ## You are not authorized to access the portal
 
 If you receive a **You are not authorized to access the portal**, be aware that Microsoft Defender for Endpoint is a security monitoring, incident investigation and response product, and as such, access to it is restricted and controlled by the user.
-For more information, see, [**Assign user access to the portal**](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/assign-portal-access-windows-defender-advanced-threat-protection).
+For more information, see, [**Assign user access to the portal**](/windows/threat-protection/windows-defender-atp/assign-portal-access-windows-defender-advanced-threat-protection).
 
 ![Image of not authorized to access portal](images/atp-not-authorized-to-access-portal.png)
 
@@ -70,7 +70,7 @@ If the portal dashboard and other sections show an error message such as "Data c
 
 ![Image of data currently isn't available](images/atp-data-not-available.png)
 
-You'll need to allow the `securitycenter.windows.com` and all subdomains under it. For example, `*.securitycenter.windows.com`.
+You'll need to allow the `security.windows.com` and all subdomains under it. For example, `*.security.windows.com`.
 
 
 ## Portal communication issues

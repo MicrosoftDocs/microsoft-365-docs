@@ -1,8 +1,8 @@
 ---
-title: Troubleshoot installation issues for Microsoft Defender ATP for Linux
-ms.reviewer: 
-description: Troubleshoot installation issues for Microsoft Defender ATP for Linux
-keywords: microsoft, defender, atp, linux, installation
+title: Troubleshoot installation issues for Microsoft Defender for Endpoint on Linux
+ms.reviewer:
+description: Troubleshoot installation issues for Microsoft Defender for Endpoint on Linux
+keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, installation
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -14,14 +14,14 @@ author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
   - m365-security-compliance
   - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
 ---
 
-# Troubleshoot installation issues for Microsoft Defender for Endpoint for Linux
+# Troubleshoot installation issues for Microsoft Defender for Endpoint on Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -35,8 +35,8 @@ ms.technology: mde
 
 An error in installation may or may not result in a meaningful error message by the package manager. To verify if the installation succeeded, obtain and check the installation logs using:
 
- ```bash
- sudo journalctl | grep 'microsoft-mdatp'  > installation.log
+```bash
+ sudo journalctl --no-pager | grep 'microsoft-mdatp' > installation.log
 ```
 
 ```bash
@@ -45,7 +45,7 @@ An error in installation may or may not result in a meaningful error message by 
 
 ```Output
  microsoft-mdatp-installer[102243]: postinstall end [2020-03-26 07:04:43OURCE +0000] 102216
- ```
+```
 
 An output from the previous command with correct date and time of installation indicates success.
 
@@ -72,6 +72,7 @@ Check if the mdatp service is running:
 ```bash
 systemctl status mdatp
 ```
+
 ```Output
  ● mdatp.service - Microsoft Defender for Endpoint
    Loaded: loaded (/lib/systemd/system/mdatp.service; enabled; vendor preset: enabled)
@@ -92,7 +93,7 @@ systemctl status mdatp
     id "mdatp"
     ```
 
-    If there’s no output, run
+    If there's no output, run
 
     ```bash
     sudo useradd --system --no-create-home --user-group --shell /usr/sbin/nologin mdatp
@@ -114,12 +115,11 @@ systemctl status mdatp
     sudo cp /opt/microsoft/mdatp/conf/mdatp.service <systemd_path>
     ```
 
-    where ```<systemd_path>``` is
-    ```/lib/systemd/system``` for Ubuntu and Debian distributions and
-    ```/usr/lib/systemd/system``` for Rhel, CentOS, Oracle and SLES.
+    where `<systemd_path>` is `/lib/systemd/system` for Ubuntu and Debian
+    distributions and `/usr/lib/systemd/system` for Rhel, CentOS, Oracle and SLES.
 Then rerun step 2.
 
-4. If the above steps don’t work, check if SELinux is installed and in enforcing mode. If so, try setting it to permissive (preferably) or disabled mode. It can be done by setting the parameter `SELINUX` to "permissive" or "disabled" in `/etc/selinux/config` file, followed by reboot. Check the man-page of selinux for more details.
+4. If the above steps don't work, check if SELinux is installed and in enforcing mode. If so, try setting it to permissive (preferably) or disabled mode. It can be done by setting the parameter `SELINUX` to "permissive" or "disabled" in `/etc/selinux/config` file, followed by reboot. Check the man-page of selinux for more details.
 Now try restarting the mdatp service using step 2. Revert the configuration change immediately though for security reasons after trying it and reboot.
 
 5. If `/opt` directory is a symbolic link, create a bind mount for `/opt/microsoft`.
@@ -154,7 +154,7 @@ Now try restarting the mdatp service using step 2. Revert the configuration chan
 
     Currently supported file systems for on-access activity are listed [here](microsoft-defender-endpoint-linux.md#system-requirements). Any files outside these file systems won't be scanned.
 
-## Command-line tool “mdatp” isn't working
+## Command-line tool "mdatp" isn't working
 
 1. If running the command-line tool `mdatp` gives an error `command not found`, run the following command:
 

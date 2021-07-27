@@ -1,7 +1,7 @@
 ---
 title: Examples of device control policies for Intune
 description: Learn how to use device control policies using examples that can be used with Intune.
-keywords: microsoft, defender, atp, mac, device, control, usb, removable, media, intune
+keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, device, control, usb, removable, media, intune
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -29,8 +29,6 @@ ms.technology: mde
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
-
-[!include[Prerelease information](../../includes/prerelease.md)]
 
 This document contains examples of device control policies that you can customize for your own organization. These examples are applicable if you are using Intune to manage devices in your enterprise.
 

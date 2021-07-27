@@ -1,7 +1,7 @@
 ---
-title: Manual deployment for Microsoft Defender for Endpoint for macOS
-description: Install Microsoft Defender for Endpoint for macOS manually, from the command line.
-keywords: microsoft, defender, atp, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, mojave, high sierra
+title: Manual deployment for Microsoft Defender for Endpoint on macOS
+description: Install Microsoft Defender for Endpoint on macOS manually, from the command line.
+keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -13,14 +13,14 @@ author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
   - m365-security-compliance
   - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
 ---
 
-# Manual deployment for Microsoft Defender for Endpoint for macOS
+# Manual deployment for Microsoft Defender for Endpoint on macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -28,9 +28,10 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Want to experience Defender for Endpoint? [Sign up for a free trial](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink).
 
-This topic describes how to deploy Microsoft Defender for Endpoint for macOS manually. A successful deployment requires the completion of all of the following steps:
+This topic describes how to deploy Microsoft Defender for Endpoint on macOS manually. A successful deployment requires the completion of all of the following steps:
+
 - [Download installation and onboarding packages](#download-installation-and-onboarding-packages)
 - [Application installation (macOS 10.15 and older versions)](#application-installation-macos-1015-and-older-versions)
 - [Application installation (macOS 11 and newer versions)](#application-installation-macos-11-and-newer-versions)
@@ -38,21 +39,21 @@ This topic describes how to deploy Microsoft Defender for Endpoint for macOS man
 
 ## Prerequisites and system requirements
 
-Before you get started, see [the main Microsoft Defender for Endpoint for macOS page](microsoft-defender-endpoint-mac.md) for a description of prerequisites and system requirements for the current software version.
+Before you get started, see [the main Microsoft Defender for Endpoint on macOS page](microsoft-defender-endpoint-mac.md) for a description of prerequisites and system requirements for the current software version.
 
 ## Download installation and onboarding packages
 
-Download the installation and onboarding packages from Microsoft Defender Security Center:
+Download the installation and onboarding packages from Microsoft 365 Defender portal:
 
-1. In Microsoft Defender Security Center, go to **Settings > Device Management > Onboarding**.
+1. In Microsoft 365 Defender portal, go to **Settings > Endpoints > Device management > Onboarding**.
 2. In Section 1 of the page, set operating system to **macOS** and Deployment method to **Local script**.
 3. In Section 2 of the page, select **Download installation package**. Save it as wdav.pkg to a local directory.
 4. In Section 2 of the page, select **Download onboarding package**. Save it as WindowsDefenderATPOnboardingPackage.zip to the same directory.
 
-    ![Microsoft Defender Security Center screenshot](images/atp-portal-onboarding-page.png)
+    ![Microsoft 365 Defender portal screenshot](images/portal-onboarding-macos.png)
 
 5. From a command prompt, verify that you have the two files.
-    
+
 ## Application installation (macOS 10.15 and older versions)
 
 To complete this process, you must have admin privileges on the device.
@@ -100,9 +101,9 @@ To complete this process, you must have admin privileges on the device.
 
     ![System extension security preferences1](images/big-sur-install-3.png)
 
-5. Repeat steps 3 & 4 for all system extensions distributed with Microsoft Defender for Endpoint for Mac.
+5. Repeat steps 3 & 4 for all system extensions distributed with Microsoft Defender for Endpoint on Mac.
 
-6. As part of the Endpoint Detection and Response capabilities, Microsoft Defender for Endpoint for Mac inspects socket traffic and reports this information to the Microsoft Defender Security Center portal. When prompted to grant Microsoft Defender for Endpoint permissions to filter network traffic, select **Allow**.
+6. As part of the Endpoint Detection and Response capabilities, Microsoft Defender for Endpoint on Mac inspects socket traffic and reports this information to the Microsoft 365 Defender portal. When prompted to grant Microsoft Defender for Endpoint permissions to filter network traffic, select **Allow**.
 
     ![System extension security preferences2](images/big-sur-install-4.png)
 
@@ -112,7 +113,7 @@ To complete this process, you must have admin privileges on the device.
 
 ## Client configuration
 
-1. Copy wdav.pkg and MicrosoftDefenderATPOnboardingMacOs.py to the device where you deploy Microsoft Defender for Endpoint for macOS.
+1. Copy wdav.pkg and MicrosoftDefenderATPOnboardingMacOs.py to the device where you deploy Microsoft Defender for Endpoint on macOS.
 
     The client device isn't associated with org_id. Note that the *org_id* attribute is blank.
 
@@ -133,10 +134,9 @@ To complete this process, you must have admin privileges on the device.
     ```
 
     After installation, you'll see the Microsoft Defender icon in the macOS status bar in the top-right corner.
-    
+
     > [!div class="mx-imgBorder"]
     > ![Microsoft Defender icon in status bar screenshot](images/mdatp-icon-bar.png)
-
 
 ## How to Allow Full Disk Access
 
@@ -159,7 +159,7 @@ To complete this process, you must have admin privileges on the device.
         curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt
         ```
 
-    1. The file should have been quarantined by Defender for Endpoint for Mac. Use the following command to list all the detected threats:
+    1. The file should have been quarantined by Defender for Endpoint on Mac. Use the following command to list all the detected threats:
 
         ```bash
         mdatp threat list
@@ -184,38 +184,38 @@ To complete this process, you must have admin privileges on the device.
 
    > [!TIP]
    > If you double-click, you will get the following message:
-   > 
+   >
    > > **"MDATP MacOS DIY" cannot be opened because the developer cannot be verifier.**<br/>
    > > macOS cannot verify that this app is free from malware.<br/>
-   > > **\[Move to Trash\]** **\[Cancel\]** 
-  
+   > > **\[Move to Trash\]** **\[Cancel\]**
+
 7. Click **Cancel**.
 
-8. Right-click **MDATP MacOS DIY**, and then click **Open**. 
+8. Right-click **MDATP MacOS DIY**, and then click **Open**.
 
     The system should display the following message:
 
-	> **macOS cannot verify the developer of **MDATP MacOS DIY**. Are you sure you want to open it?**<br/>
-	> By opening this app, you will be overriding system security which can expose your computer and personal information to malware that may harm your Mac or compromise your privacy.
+    > **macOS cannot verify the developer of MDATP MacOS DIY. Are you sure you want to open it?**<br/>
+    > By opening this app, you will be overriding system security which can expose your computer and personal information to malware that may harm your Mac or compromise your privacy.
+
+9. Click **Open**.
+
+    The system should display the following message:
+
+    > Microsoft Defender for Endpoint - macOS EDR DIY test file<br/>
+    > Corresponding alert will be available in the MDATP portal.
 
 10. Click **Open**.
 
-    The system should display the following message:
-
-	> Microsoft Defender ATP - macOS EDR DIY test file<br/>
-	> Corresponding alert will be available in the MDATP portal.
-
-11. Click **Open**.
-
     In a few minutes an alert named "macOS EDR Test Alert" should be raised.
 
-12.	Go to Microsoft Defender Security Center (https://SecurityCenter.microsoft.com).
+11. Go to Microsoft 365 Defender portal (https://security.microsoft.com/).
 
-13.	Go to the Alert Queue.
+12. Go to the Alert Queue.
 
-	:::image type="content" source="images/b8db76c2-c368-49ad-970f-dcb87534d9be.png" alt-text="Example of a macOS EDR test alert that shows severity, category, detection source, and a collapsed menu of actions.":::
-	
-	Look at the alert details and the device timeline, and perform the regular investigation steps.
+    :::image type="content" source="images/b8db76c2-c368-49ad-970f-dcb87534d9be.png" alt-text="Example of a macOS EDR test alert that shows severity, category, detection source, and a collapsed menu of actions.":::
+
+    Look at the alert details and the device timeline, and perform the regular investigation steps.
 
 ## Logging installation issues
 
@@ -223,4 +223,4 @@ See [Logging installation issues](mac-resources.md#logging-installation-issues) 
 
 ## Uninstallation
 
-See [Uninstalling](mac-resources.md#uninstalling) for details on how to remove Microsoft Defender for Endpoint for macOS from client devices.
+See [Uninstalling](mac-resources.md#uninstalling) for details on how to remove Microsoft Defender for Endpoint on macOS from client devices.

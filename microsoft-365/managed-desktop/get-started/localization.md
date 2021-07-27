@@ -57,43 +57,43 @@ If you are reusing existing devices, you might need to work with your Microsoft 
 
 The [universal image](../service-description/device-images.md#universal-image) provided by Microsoft Managed Desktop includes these languages and for Windows 10:
 
+- Arabic
+- Bulgarian
+- Chinese Simplified
+- Chinese Traditional
+- Croatian
+- Czech
+- Danish  
+- Dutch  
 - English (US, GB, AU, CA, IN)
-- Spanish (Spain, Mexico)
-- Japanese
+- Estonian
+- Finnish 
 - French (France, Canada)
 - German
-- Portuguese (Brazil)
-- Italian
-- Chinese Simplified
-- Dutch  
-- Swedish
-- Danish  
-- Finnish 
-- Russian 
-- Norwegian (Bokmal)
-- Korean
-- Chinese Traditional
-- Polish
-- Turkish
-- Arabic
-- Hebrew
-- Portuguese (Portugal)
-- Czech
-- Hungarian
-- Thai
-- Indonesian
 - Greek
-- Slovak
-- Vietnamese
-- Slovenian
-- Croatian
-- Romanian
-- Lithuanian
-- Bulgarian
-- Serbian (Latin alphabet)
+- Hebrew
+- Hungarian
+- Indonesian
+- Italian
+- Japanese
+- Korean
 - Latvian
+- Lithuanian
+- Norwegian (Bokmål)
+- Polish
+- Portuguese (Brazil)
+- Portuguese (Portugal)
+- Romanian
+- Russian 
+- Serbian (Latin alphabet)
+- Slovak
+- Slovenian
+- Spanish (Spain, Mexico)
+- Swedish
+- Thai
+- Turkish
 - Ukrainian
-- Estonian
+- Vietnamese
 
 Microsoft 365 Apps for Enterprise might support a slightly different list.
 

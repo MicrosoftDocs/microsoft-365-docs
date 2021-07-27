@@ -30,7 +30,7 @@ ms.technology: mde
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-responddile-abovefoldlink)
 
-Quickly respond to detected attacks by stopping and quarantining files or blocking a file. After taking action on files, you can check activity details in the Action center.
+Quickly respond to detected attacks by stopping and quarantining files or blocking a file. After taking action on files, you can check on activity details in the Action center.
 
 Response actions are available on a file's detailed profile page. Once on this page, you can switch between the new and old page layouts by toggling **new File page**. The rest of this article describes the newer page layout.
 
@@ -63,8 +63,8 @@ You can contain an attack in your organization by stopping the malicious process
 > You can only take this action if:
 >
 > - The device you're taking the action on is running Windows 10, version 1703 or later
-> - The file does not belong to trusted third-party publishers or not signed by Microsoft
-> - Microsoft Defender Antivirus must at least be running on Passive mode. For more information, see [Microsoft Defender Antivirus compatibility](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility).
+> - The file does not belong to trusted third-party publishers or is not signed by Microsoft
+> - Microsoft Defender Antivirus must at least be running on Passive mode. For more information, see [Microsoft Defender Antivirus compatibility](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility).
 
 The **Stop and Quarantine File** action includes stopping running processes, quarantining the files, and deleting persistent data such as registry keys.
 
@@ -77,7 +77,7 @@ This action takes effect on devices with Windows 10, version 1703 or later, wher
 
 1. Select the file you want to stop and quarantine. You can select a file from any of the following views or use the Search box:
 
-   - **Alerts** - click the corresponding links from the Description or Details in the Artifact timeline
+   - **Alerts** - click the corresponding links from the Description or Details in the Alert Story timeline
    - **Search box** - select **File** from the drop–down menu and enter the file name
 
    > [!NOTE]
@@ -123,14 +123,14 @@ You can roll back and remove a file from quarantine if you’ve determined that 
 
 2. Enter the following command, and press **Enter**:
 
-   ```powershell
+   ```console
    “%ProgramFiles%\Windows Defender\MpCmdRun.exe” –Restore –Name EUS:Win32/CustomEnterpriseBlock –All
    ```
 
-> [!NOTE]
-> In some scenarios, the **ThreatName** may appear as: EUS:Win32/CustomEnterpriseBlock!cl.
->
-> Defender for Endpoint will restore all custom blocked files that were quarantined on this device in the last 30 days.
+   > [!NOTE]
+   > In some scenarios, the **ThreatName** may appear as: EUS:Win32/CustomEnterpriseBlock!cl.
+   >
+   > Defender for Endpoint will restore all custom blocked files that were quarantined on this device in the last 30 days.
 
 > [!IMPORTANT]
 > A file that was quarantined as a potential network threat might not be recoverable. If a user attempts to restore the file after quarantine, that file might not be accessible. This can be due to the system no longer having network credentials to access the file. Typically, this is a result of a temporary log on to a system or shared folder and the access tokens expired.
@@ -139,9 +139,31 @@ You can roll back and remove a file from quarantine if you’ve determined that 
 
 Selecting **Download file** from the response actions allows you to download a local, password-protected .zip archive containing your file. A flyout will appear where you can record a reason for downloading the file, and set a password.
 
-By default, you will not be able to download files that are in quarantine.
+By default, you should be able to download files that are in quarantine.
 
 ![Image of download file action](images/atp-download-file-action.png)
+
+### Download quarantined files
+
+Files that have been quarantined by Microsoft Defender Antivirus or your security team will be saved in a compliant way according to your [sample submission configurations](enable-cloud-protection-microsoft-defender-antivirus.md). Your security team can download the files directly from the file’s detail page via the "Download file" button. **This preview feature is turned 'On' by default**.
+
+The location depends on your organization's geo settings (either EU, UK, or US). A quarantined file will only be collected once per organization. Learn more about Microsoft's data protection from the Service Trust Portal at https://aka.ms/STP.
+
+Having this setting turned on can help security teams examine potentially bad files and investigate incidents quickly and in a less risky way. However, if you need to turn this setting off, go to **Settings** > **Endpoints** > **Advanced features** > **Download quarantined files** to adjust the setting. [Learn more about advanced features](advanced-features.md)
+
+#### Backing up quarantined files
+
+Users may be prompted to provide explicit consent before backing up the quarantined file, depending on your [sample submission configuration](enable-cloud-protection-microsoft-defender-antivirus.md#use-group-policy-to-turn-on-cloud-delivered-protection).
+
+This feature will not work if sample submission is turned off. If automatic sample submission is set to request permission from the user, only samples that the user agrees to send will be collected.
+
+>[!IMPORTANT]
+>Download quarantined file requirements:
+>- Your organization uses Microsoft Defender Antivirus in active mode 
+>- Antivirus engine version is 1.1.17300.4 or later. See [Monthly platform and engine versions](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions)
+>- Cloud–based protection is enabled. See [Turn on cloud-delivered protection](enable-cloud-protection-microsoft-defender-antivirus.md)
+>- Sample submission is turned on
+>- Devices have Windows 10 version 1703 or later, or Windows server 2016 or 2019
 
 ### Collect files
 
@@ -155,7 +177,7 @@ Prevent further propagation of an attack in your organization by banning potenti
 
 > [!IMPORTANT]
 >
-> - This feature is available if your organization uses Microsoft Defender Antivirus and Cloud–delivered protection is enabled. For more information, see [Manage cloud–delivered protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus).
+> - This feature is available if your organization uses Microsoft Defender Antivirus and Cloud–delivered protection is enabled. For more information, see [Manage cloud–delivered protection](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus).
 >
 > - The Antimalware client version must be 4.18.1901.x or later.
 > - This feature is designed to prevent suspected malware (or potentially malicious files) from being downloaded from the web. It currently supports portable executable (PE) files, including _.exe_ and _.dll_ files. The coverage will be extended over time.
@@ -184,9 +206,9 @@ You can also edit indicators from  the **Settings** page, under **Rules** > **In
 
 ## Consult a threat expert
 
-Consult a Microsoft threat expert for more insights on a potentially compromised device, or already compromised devices. Microsoft Threat Experts are engaged directly from within the Microsoft Defender Security Center for timely and accurate response. Experts provide insights on a potentially compromised device and help you understand complex threats and targeted attack notifications. They can also provide information about the alerts or a threat intelligence context that you see on your portal dashboard.
+Consult a Microsoft threat expert for more insights on a potentially compromised device, or already compromised devices. Microsoft Threat Experts are engaged directly from within the Microsoft 365 Defender portal for timely and accurate response. Experts provide insights on a potentially compromised device and help you understand complex threats and targeted attack notifications. They can also provide information about the alerts or a threat intelligence context that you see on your portal dashboard.
 
-See [Consult a Microsoft Threat Expert](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-microsoft-threat-experts#consult-a-microsoft-threat-expert-about-suspicious-cybersecurity-activities-in-your-organization) for details.
+See [Consult a Microsoft Threat Expert](/microsoft-365/security/defender-endpoint/configure-microsoft-threat-experts#consult-a-microsoft-threat-expert-about-suspicious-cybersecurity-activities-in-your-organization) for details.
 
 ## Check activity details in Action center
 
@@ -229,15 +251,13 @@ You can also submit a sample through the [Microsoft Security Center Portal](http
 > [!NOTE]
 > Due to backend processing flows in the Microsoft Security Center Portal, there could be up to 10 minutes of latency between file submission and availability of the deep analysis feature in Defender for Endpoint.
 
-When the sample is collected, Defender for Endpoint runs the file in a secure environment. It then creates a detailed report of observed behaviors and associated artifacts, such as files dropped on devices, communication to IPs, and registry modifications.
-
 ### Submit files for deep analysis
 
 1. Select the file that you want to submit for deep analysis. You can select or search a file from any of the following views:
 
-    - Alerts - select the file links from the **Description** or **Details** in the Artifact timeline
+    - **Alerts** - select the file links from the **Description** or **Details** in the Alert Story timeline
     - **Devices list** - select the file links from the **Description** or **Details** in the **Device in organization** section
-    - Search box - select **File** from the drop–down menu and enter the file name
+    - **Search box** - select **File** from the drop–down menu and enter the file name
 
 2. In the **Deep analysis** tab of the file view, select **Submit**.
 
@@ -246,7 +266,7 @@ When the sample is collected, Defender for Endpoint runs the file in a secure en
    > [!NOTE]
    > Only PE files are supported, including _.exe_ and _.dll_ files.
 
-A progress bar is displayed and provides information on the different stages of the analysis. You can then view the report when the analysis is done.
+   A progress bar is displayed and provides information on the different stages of the analysis. You can then view the report when the analysis is done.
 
 > [!NOTE]
 > Depending on device availability, sample collection time can vary. There is a 3–hour timeout for sample collection. The collection will fail and the operation will abort if there is no online Windows 10 device reporting at that time. You can re–submit files for deep analysis to get fresh data on the file.
@@ -272,11 +292,14 @@ The details provided can help you investigate if there are indications of a pote
 If you come across a problem when trying to submit a file, try each of the following troubleshooting steps.
 
 1. Ensure that the file in question is a PE file. PE files typically have _.exe_ or _.dll_ extensions (executable programs or applications).
+
 2. Ensure the service has access to the file, that it still exists, and hasn't been corrupted or modified.
+
 3. Wait a short while and try to submit the file again. The queue may be full, or there was a temporary connection or communication error.
+
 4. If the sample collection policy isn't configured, then the default behavior is to allow sample collection. If it's configured, then verify the policy setting allows sample collection before submitting the file again. When sample collection is configured, then check the following registry value:
 
-    ```powershell
+    ```console
     Path: HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection
     Name: AllowSampleCollection
     Type: DWORD
@@ -286,6 +309,7 @@ If you come across a problem when trying to submit a file, try each of the follo
     ```
 
 1. Change the organizational unit through the Group Policy. For more information, see [Configure with Group Policy](configure-endpoints-gp.md).
+
 1. If these steps do not resolve the issue, contact [winatp@microsoft.com](mailto:winatp@microsoft.com).
 
 ## Related topics

@@ -1,7 +1,7 @@
 ---
 title: Hunt for exposed devices
 description: Learn how threat and vulnerability management can be used to help security admins, IT admins, and SecOps collaborate.
-keywords: mdatp-tvm scenarios, mdatp, tvm, tvm scenarios, reduce threat & vulnerability exposure, reduce threat and vulnerability, improve security configuration, increase Microsoft Secure Score for Devices, increase threat & vulnerability Microsoft Secure Score for Devices, Microsoft Secure Score for Devices, exposure score, security controls
+keywords: Microsoft Defender for Endpoint-tvm scenarios, Microsoft Defender for Endpoint, tvm, tvm scenarios, reduce threat & vulnerability exposure, reduce threat and vulnerability, improve security configuration, increase Microsoft Secure Score for Devices, increase threat & vulnerability Microsoft Secure Score for Devices, Microsoft Secure Score for Devices, exposure score, security controls
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -50,7 +50,7 @@ Advanced hunting is a query-based threat-hunting tool that lets you explore up t
 
 ## Check which devices are involved in high severity alerts
 
-1. Go to **Advanced hunting** from the left-hand navigation pane of the Microsoft Defender Security Center.
+1. Go to **Hunting** > **Advanced hunting** from the left-hand navigation pane of the Microsoft 365 Defender portal.
 
 2. Scroll down to the TVM advanced hunting schemas to familiarize yourself with the column names.
 

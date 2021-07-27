@@ -3,7 +3,6 @@ title: "Manage Customer Key"
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 02/05/2020
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -12,68 +11,144 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: "After you set up Customer Key, learn how to manage it by restoring AKV keys, and managing permissions and your data encryption policies."
+description: "After you set up Customer Key, learn how to manage it by restoring AKV keys, and managing permissions and creating and assigning data encryption policies."
 ---
 
 # Manage Customer Key
 
-After you've set up Customer Key for Office 365, you can manage your keys as described in this article. Learn more about Customer Key in the related topics.
+After you've set up Customer Key for Office 365, you'll need to create and assign one or more data encryption policies (DEP). Once you've assigned your DEPs, you can manage your keys as described in this article. Learn more about Customer Key in the related topics.
 
-## Restore Azure Key Vault keys
+## Create a DEP for use with multiple workloads for all tenant users
 
-Before performing a restore, use the recovery capabilities provided by soft delete. All keys that are used with Customer Key are required to have soft delete enabled. Soft delete acts like a recycle bin and allows recovery for up to 90 days without the need to restore. Restore should only be required in extreme or unusual circumstances, for example if the key or key vault is lost. If you must restore a key for use with Customer Key, in Azure PowerShell, run the Restore-AzureKeyVaultKey cmdlet as follows:
+Before you begin, ensure that you've completed the tasks required to set up Customer. For information, see [Set up Customer Key](customer-key-set-up.md). To create the DEP, you need the Key Vault URIs you obtained during setup. For information, see [Obtain the URI for each Azure Key Vault key](customer-key-set-up.md#obtain-the-uri-for-each-azure-key-vault-key).
+
+To create a multi-workload DEP, follow these steps:
+  
+1. On your local computer, using a work or school account that has global administrator or compliance admin permissions in your organization, [connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) in a Windows PowerShell window.
+
+2. To create a DEP, use the New-M365DataAtRestEncryptionPolicy cmdlet.
+
+   ```powershell
+   New-M365DataAtRestEncryptionPolicy -Name <PolicyName> -AzureKeyIDs <KeyVaultURI1, KeyVaultURI2> [-Description <String>]
+   ```
+
+   Where:
+
+   - *PolicyName* is the name you want to use for the policy. Names can't contain spaces. For example, Contoso_Global.
+
+   - *KeyVaultURI1* is the URI for the first key in the policy. For example, <https://contosoWestUSvault1.vault.azure.net/keys/Key_01>.
+
+   - *KeyVaultURI2* is the URI for the second key in the policy. For example, <https://contosoCentralUSvault1.vault.azure.net/keys/Key_02>. Separate the two URIs by a comma and a space.
+
+   - *Policy Description* is a user-friendly description of the policy that will help you remember what the policy is for. You can include spaces in the description. For example, "Root policy for multiple workloads for all users in the tenant.".
+
+Example:
+
+```powershell
+New-M365DataAtRestEncryptionPolicy -Name "Contoso_Global" -AzureKeyIDs "https://contosoWestUSvault1.vault.azure.net/keys/Key_01","https://contosoCentralUSvault1.vault.azure.net/keys/Key_02" -Description "Policy for multiple workloads for all users in the tenant."
+```
+
+### Assign multi-workload policy
+
+Assign the DEP by using the Set-M365DataAtRestEncryptionPolicyAssignment cmdlet. Once you assign the policy, Microsoft 365 encrypts the data with the key identified in the DEP.
+
+```powershell
+Set-M365DataAtRestEncryptionPolicyAssignment -DataEncryptionPolicy <PolicyName or ID>
+```
+
+ Where *PolicyName* is the name of the policy. For example, Contoso_Global.
+
+Example:
+
+```powershell
+Set-M365DataAtRestEncryptionPolicyAssignment -DataEncryptionPolicy "Contoso_Global"
+```
+
+## Create a DEP for use with Exchange Online mailboxes
+
+Before you begin, ensure that you've completed the tasks required to set up Azure Key Vault. For information, see [Set up Customer Key](customer-key-set-up.md). You'll complete these steps by remotely connecting to Exchange Online with Windows PowerShell.
+
+A DEP is associated with a set of keys stored in Azure Key Vault. You assign a DEP to a mailbox in Microsoft 365. Microsoft 365 will then use the keys identified in the policy to encrypt the mailbox. To create the DEP, you need the Key Vault URIs you obtained during setup. For information, see [Obtain the URI for each Azure Key Vault key](customer-key-set-up.md#obtain-the-uri-for-each-azure-key-vault-key).
+
+Remember! When you create a DEP, you specify two keys in two different Azure Key Vaults. Create these keys in two separate Azure regions to ensure geo-redundancy.
+
+To create a DEP to use with a mailbox, follow these steps:
+  
+1. On your local computer, using a work or school account that has global administrator or Exchange Online admin permissions in your organization, [connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) in a Windows PowerShell window.
+
+2. To create a DEP, use the New-DataEncryptionPolicy cmdlet by typing the following command.
+
+   ```powershell
+   New-DataEncryptionPolicy -Name <PolicyName> -Description "Policy Description" -AzureKeyIDs <KeyVaultURI1>, <KeyVaultURI2>
+   ```
+
+   Where:
+
+   - *PolicyName* is the name you want to use for the policy. Names can't contain spaces. For example, USA_mailboxes.
+
+   - *Policy Description* is a user-friendly description of the policy that will help you remember what the policy is for. You can include spaces in the description. For example, "Root key for mailboxes in USA and its territories".
+
+   - *KeyVaultURI1* is the URI for the first key in the policy. For example, <https://contoso_EastUSvault01.vault.azure.net/keys/USA_key_01>.
+
+   - *KeyVaultURI2* is the URI for the second key in the policy. For example, <https://contoso_EastUS2vault01.vault.azure.net/keys/USA_Key_02>. Separate the two URIs by a comma and a space.
+
+   Example:
+  
+   ```powershell
+   New-DataEncryptionPolicy -Name USA_mailboxes -Description "Root key for mailboxes in USA and its territories" -AzureKeyIDs https://contoso_EastUSvault02.vault.azure.net/keys/USA_key_01, https://contoso_CentralUSvault02.vault.azure.net/keys/USA_Key_02
+   ```
+
+For detailed syntax and parameter information, see [New-DataEncryptionPolicy](/powershell/module/exchange/new-data-encryptionpolicy).
+
+### Assign a DEP to a mailbox
+
+Assign the DEP to a mailbox by using the Set-Mailbox cmdlet. Once you assign the policy, Microsoft 365 can encrypt the mailbox with the key identified in the DEP.
   
 ```powershell
-Restore-AzKeyVaultKey -VaultName <vault name> -InputFile <filename>
+Set-Mailbox -Identity <MailboxIdParameter> -DataEncryptionPolicy <PolicyName>
 ```
 
-For example:
+Where *MailboxIdParameter* specifies a user mailbox. For more information about the Set-Mailbox cmdlet, see [Set-Mailbox](/powershell/module/exchange/set-mailbox).
+
+In hybrid environments, you can assign a DEP to the on-premises mailbox data that is synchronized into your Exchange Online tenant. To assign a DEP to this synchronized mailbox data, you'll use the Set-MailUser cmdlet. For more information about mailbox data in the hybrid environment, see [on-premises mailboxes using Outlook for iOS and Android with hybrid Modern Authentication](/exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth).
+
+```powershell
+Set-MailUser -Identity <MailUserIdParameter> -DataEncryptionPolicy <PolicyName>
+```
+
+Where *MailUserIdParameter* specifies a mail user (also known as a mail-enabled user). For more information about the Set-MailUser cmdlet, see [Set-MailUser](/powershell/module/exchange/set-mailuser).
+
+## Create a DEP for use with SharePoint Online, OneDrive for Business, and Teams files
+
+Before you begin, ensure that you've completed the tasks required to set up Azure Key Vault. For information, see [Set up Customer Key](customer-key-set-up.md).
   
-```powershell
-Restore-AzKeyVaultKey -VaultName Contoso-O365EX-NA-VaultA1 -InputFile Contoso-O365EX-NA-VaultA1-Key001-Backup-20170802.backup
-```
-
-If the key vault already contains a key with the same name, the restore operation fails. Restore-AzKeyVaultKey restores all key versions and all metadata for the key including the key name.
+To set up Customer Key for SharePoint Online, OneDrive for Business, and Teams files you complete these steps by remotely connecting to SharePoint Online with Windows PowerShell.
   
-## Manage key vault permissions
-
-Several cmdlets are available that enable you to view and, if necessary, remove key vault permissions. You might need to remove permissions, for example, when an employee leaves the team. For each of these tasks, you will use Azure PowerShell. For information about Azure Powershell, see [Overview of Azure PowerShell](/powershell/azure/).
-
-To view key vault permissions, run the Get-AzKeyVault cmdlet.
-
-```powershell
-Get-AzKeyVault -VaultName <vault name>
-```
-
-For example:
-
-```powershell
-Get-AzKeyVault -VaultName Contoso-O365EX-NA-VaultA1
-```
-
-To remove an administrator's permissions, run the Remove-AzKeyVaultAccessPolicy cmdlet:
+You associate a DEP with a set of keys stored in Azure Key Vault. You apply a DEP to all of your data in one geographic location, also called a geo. If you use the multi-geo feature of Office 365, you can create one DEP per geo with the capability to use different keys per geo. If you aren't using multi-geo, you can create one DEP in your organization for use with SharePoint Online, OneDrive for Business, and Teams files. Microsoft 365 uses the keys identified in the DEP to encrypt your data in that geo. To create the DEP, you need the Key Vault URIs you obtained during setup. For information, see [Obtain the URI for each Azure Key Vault key](customer-key-set-up.md#obtain-the-uri-for-each-azure-key-vault-key).
   
-```powershell
-Remove-AzKeyVaultAccessPolicy -VaultName <vault name> -UserPrincipalName <UPN of user>
-```
+Remember! When you create a DEP, you specify two keys in two different Azure Key Vaults. Create these keys in two separate Azure regions to ensure geo-redundancy.
+  
+To create a DEP, you need to remotely connect to SharePoint Online by using Windows PowerShell.
+  
+1. On your local computer, using a work or school account that has global administrator permissions in your organization, [Connect to SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?preserve-view=true&view=sharepoint-ps).
 
-For example:
+2. In the Microsoft SharePoint Online Management Shell, run the Register-SPODataEncryptionPolicy cmdlet as follows:
 
-```powershell
-Remove-AzKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1 -UserPrincipalName alice@contoso.com
-```
+   ```powershell
+   Register-SPODataEncryptionPolicy -Identity <adminSiteCollectionURL> -PrimaryKeyVaultName <PrimaryKeyVaultName> -PrimaryKeyName <PrimaryKeyName> -PrimaryKeyVersion <PrimaryKeyVersion> -SecondaryKeyVaultName <SecondaryKeyVaultName> -SecondaryKeyName <SecondaryKeyName> -SecondaryKeyVersion <SecondaryKeyVersion>
+   ```
 
-## Manage data encryption policies (DEPs) with Customer Key
+   Example:
+  
+   ```powershell
+   Register-SPODataEncryptionPolicy -Identity https://contoso.sharepoint.com -PrimaryKeyVaultName 'stageRG3vault' -PrimaryKeyName 'SPKey3' -PrimaryKeyVersion 'f635a23bd4a44b9996ff6aadd88d42ba' -SecondaryKeyVaultName 'stageRG5vault' -SecondaryKeyName 'SPKey5' -SecondaryKeyVersion '2b3e8f1d754f438dacdec1f0945f251a’
+   ```
 
-Customer Key handles DEPs differently between the different services. For example, you can create a different number of DEPs for the different services.
+   When you register the DEP, encryption begins on the data in the geo. Encryption can take some time. For more information on using this parameter, see [Register-SPODataEncryptionPolicy](/powershell/module/sharepoint-online/register-spodataencryptionpolicy?preserve-view=true&view=sharepoint-ps).
 
-**Exchange Online and Skype for Business:** You can create up to 50 DEPs. For instructions, see [Create a data encryption policy (DEP) for use with Exchange Online and Skype for Business](customer-key-set-up.md#create-a-data-encryption-policy-dep-for-use-with-exchange-online-and-skype-for-business).
+### View the DEPs you've created for Exchange Online mailboxes
 
-**SharePoint Online, OneDrive for Business, and Teams files:** A DEP applies to data in one geographic location, also called a _geo_. If you use the multi-geo feature of Office 365, you can create one DEP per geo. If you are not using multi-geo, you can create one DEP. Normally, you create the DEP when you set up Customer Key. For instructions, see [Create a data encryption policy (DEP) for each SharePoint Online and OneDrive for Business geo](customer-key-set-up.md#create-a-data-encryption-policy-dep-for-each-sharepoint-online-and-onedrive-for-business-geo).
-
-### View the DEPs you've created for Exchange Online and Skype for Business
-
-To view a list of all the DEPs you've created for Exchange Online and Skype for Business using the Get-DataEncryptionPolicy PowerShell cmdlet, complete these steps.
+To view a list of all the DEPs you've created for mailboxes, use the Get-DataEncryptionPolicy PowerShell cmdlet.
 
 1. Using a work or school account that has global administrator permissions in your organization, [connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
@@ -123,11 +198,11 @@ To determine the DEP assigned to a mailbox, use the Get-MailboxStatistics cmdlet
 
 ## Verify that Customer Key has finished encryption
 
-Whether you've just rolled a Customer Key, assigned a new DEP, or migrated a mailbox, use the steps in this section to ensure that encryption completes.
+Whether you've rolled a Customer Key, assigned a new DEP, or migrated a mailbox, use the steps in this section to ensure that encryption completes.
 
-### Verify encryption completes for Exchange Online and Skype for Business
+### Verify encryption completes for Exchange Online mailboxes
 
-Encrypting a mailbox can take some time. We recommend that you wait 72 hours before you attempt to validate encryption after you change a DEP or the first time you assign a DEP to a mailbox.
+Encrypting a mailbox can take some time. For first time encryption, the mailbox must also completely move from one database to another before the service can encrypt the mailbox.
   
 Use the Get-MailboxStatistics cmdlet to determine if a mailbox is encrypted.
   
@@ -135,16 +210,16 @@ Use the Get-MailboxStatistics cmdlet to determine if a mailbox is encrypted.
 Get-MailboxStatistics -Identity <GeneralMailboxOrMailUserIdParameter> | fl IsEncrypted
 ```
 
-The IsEncrypted property returns a value of **true** if the mailbox is encrypted and a value of **false** if the mailbox is not encrypted.
+The IsEncrypted property returns a value of **true** if the mailbox is encrypted and a value of **false** if the mailbox isn't encrypted. The time to complete mailbox moves depends on the number of mailboxes to which you assign a DEP for the first time, and the size of the mailboxes. If the mailboxes haven't been encrypted after a week from the time you assigned the DEP, contact Microsoft.
 
-The time to complete mailbox moves depends on the size of the mailbox. If Customer Key hasn't completely encrypted the mailbox after 72 hours from the time you assign a new DEP, contact Microsoft support for help. The New-MoveRequest cmdlet is no longer available for local mailbox moves. Refer to [this announcement](https://techcommunity.microsoft.com/t5/exchange-team-blog/disabling-new-moverequest-for-local-mailbox-moves/bc-p/1332141) for additional information.
+The New-MoveRequest cmdlet is no longer available for local mailbox moves. Refer to [this announcement](https://techcommunity.microsoft.com/t5/exchange-team-blog/disabling-new-moverequest-for-local-mailbox-moves/bc-p/1332141) for additional information.
 
 ### Verify encryption completes for SharePoint Online, OneDrive for Business, and Teams files
 
 Check on the status of encryption by running the Get-SPODataEncryptionPolicy cmdlet as follows:
 
-```powershell
-Get-SPODataEncryptionPolicy -Identity <SPOAdminSiteUrl>
+```PowerShell
+   Get-SPODataEncryptionPolicy -Identity <SPOAdminSiteUrl>
 ```
 
 The output from this cmdlet includes:
@@ -163,13 +238,112 @@ The output from this cmdlet includes:
 
   - **Rolling:** A key roll is in progress. If the key for the geo is rolling, you'll also be shown information on what percentage of sites have completed the key roll operation so that you can monitor progress.
 
+## Get details about DEPs you use with multiple workloads
+
+To get details about all of the DEPs you've created to use with multiple workloads, complete these steps:
+
+1. On your local computer, using a work or school account that has global administrator or compliance admin permissions in your organization, [connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) in a Windows PowerShell window.
+
+   - To return the list of all multi-workload DEPs in the organization, run this command.
+
+     ```powershell
+        Get-M365DataAtRestEncryptionPolicy
+     ```
+
+   - To return details about a specific DEP, run this command. This example returns detailed information for the DEP named "Contoso_Global".
+
+     ```powershell
+        Get-M365DataAtRestEncryptionPolicy -Identity "Contoso_Global"
+     ```
+
+## Get multi-workload DEP assignment information
+
+To find out which DEP is currently assigned to your tenant, follow these steps. 
+
+1. On your local computer, using a work or school account that has global administrator or compliance admin permissions in your organization, [connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) in a Windows PowerShell window.
+
+2. Type this command.
+
+   ```powershell
+      Get-M365DataAtRestEncryptionPolicyAssignment
+   ```
+
+## Disable a multi-workload DEP
+
+Before you disable a multi-workload DEP, unassign the DEP from workloads in your tenant. To disable a DEP used with multiple workloads, complete these steps:
+
+1. On your local computer, using a work or school account that has global administrator or compliance admin permissions in your organization, [connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) in a Windows PowerShell window.
+
+2. Run the Set-M365DataAtRestEncryptionPolicy cmdlet.
+  
+   ```powershell
+   Set-M365DataAtRestEncryptionPolicy -[Identity] "PolicyName" -Enabled $false
+   ```
+
+Where *PolicyName* is the name or unique ID of the policy. For example, Contoso_Global.
+
+Example:
+
+```powershell
+Set-M365DataAtRestEncryptionPolicy -Identity "Contoso_Global" -Enabled $false
+```
+
+## Restore Azure Key Vault keys
+
+Before performing a restore, use the recovery capabilities provided by soft delete. All keys that are used with Customer Key are required to have soft delete enabled. Soft delete acts like a recycle bin and allows recovery for up to 90 days without the need to restore. Restore should only be required in extreme or unusual circumstances, for example if the key or key vault is lost. If you must restore a key for use with Customer Key, in Azure PowerShell, run the Restore-AzureKeyVaultKey cmdlet as follows:
+  
+```powershell
+Restore-AzKeyVaultKey -VaultName <vault name> -InputFile <filename>
+```
+
+For example:
+  
+```powershell
+Restore-AzKeyVaultKey -VaultName Contoso-O365EX-NA-VaultA1 -InputFile Contoso-O365EX-NA-VaultA1-Key001-Backup-20170802.backup
+```
+
+If the key vault already contains a key with the same name, the restore operation fails. Restore-AzKeyVaultKey restores all key versions and all metadata for the key including the key name.
+  
+## Manage key vault permissions
+
+Several cmdlets are available that enable you to view and, if necessary, remove key vault permissions. You might need to remove permissions, for example, when an employee leaves the team. For each of these tasks, you will use Azure PowerShell. For information about Azure PowerShell, see [Overview of Azure PowerShell](/powershell/azure/).
+
+To view key vault permissions, run the Get-AzKeyVault cmdlet.
+
+```powershell
+Get-AzKeyVault -VaultName <vault name>
+```
+
+For example:
+
+```powershell
+Get-AzKeyVault -VaultName Contoso-O365EX-NA-VaultA1
+```
+
+To remove an administrator's permissions, run the Remove-AzKeyVaultAccessPolicy cmdlet:
+  
+```powershell
+Remove-AzKeyVaultAccessPolicy -VaultName <vault name> -UserPrincipalName <UPN of user>
+```
+
+For example:
+
+```powershell
+Remove-AzKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1 -UserPrincipalName alice@contoso.com
+```
+
 ## Roll back from Customer Key to Microsoft managed Keys
 
-For Customer Key at the tenant level, you'll need to reach out to Microsoft with a request for “offboarding” from Customer Key. The request will be handled by the On Call Engineering team.
+If you need to revert to Microsoft-managed keys, you can. When you offboard, your data is re-encrypted using default encryption supported by each individual workload. For example, Exchange Online supports default encryption using Microsoft-managed keys.
 
-For Customer Key at the application level, you do this by unassigning a DEP from mailboxes using the Set-mailbox PowerShell cmdlet and setting the `DataEncryptionPolicy` to `$NULL`. Running this cmdlet unassigns the currently assigned DEP and reencrypts the mailbox using the DEP associated with default Microsoft managed keys. You can't unassign the DEP used by Microsoft managed keys. If you don't want to use Microsoft managed keys, you can assign another Customer Key DEP to the mailbox.
+> [!IMPORTANT]
+> Offboarding is not the same as a data purge. A data purge permanently crypto-deletes your organization's data from Microsoft 365, offboarding does not. You can't perform a data purge for a multiple workload policy.
 
-To unassign the DEP from a mailbox using the Set-Mailbox PowerShell cmdlet, complete these steps.
+If you decide not to use Customer Key for assigning multi-workload DEPs anymore then you'll need to reach out to Microsoft support with a request to “offboard” from Customer Key. Ask the support team to file a service request against Microsoft 365 Customer Key team. Reach out to m365-ck@service.microsoft.com if you have any questions.
+
+If you do not want to encrypt individual mailboxes using mailbox level DEPs anymore, then you can unassign mailbox level DEPs from all your mailboxes.
+
+To unassign mailbox DEPs, use the Set-Mailbox PowerShell cmdlet.
 
 1. Using a work or school account that has global administrator permissions in your organization, [connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
@@ -179,9 +353,11 @@ To unassign the DEP from a mailbox using the Set-Mailbox PowerShell cmdlet, comp
    Set-Mailbox -Identity <mailbox> -DataEncryptionPolicy $NULL
    ```
 
+Running this cmdlet unassigns the currently assigned DEP and reencrypts the mailbox using the DEP associated with default Microsoft-managed keys. You can't unassign the DEP used by Microsoft managed keys. If you don't want to use Microsoft-managed keys, you can assign another Customer Key DEP to the mailbox.
+
 ## Revoke your keys and start the data purge path process
 
-You control the revocation of all root keys including the availability key. Customer Key provides control of the exit planning aspect of the regulatory requirements for you. If you decide to revoke your keys to purge your data and exit the service, the service deletes the availability key once the data purge process completes. You can't perform a data purge for a tenant-level policy.
+You control the revocation of all root keys including the availability key. Customer Key provides control of the exit planning aspect of the regulatory requirements for you. If you decide to revoke your keys to purge your data and exit the service, the service deletes the availability key once the data purge process completes. This is supported for Customer Key DEPs that are assigned to individual mailboxes.
 
 Microsoft 365 audits and validates the data purge path. For more information, see the SSAE 18 SOC 2 Report available on the [Service Trust Portal](https://servicetrust.microsoft.com/). In addition, Microsoft recommends the following documents:
 
@@ -189,7 +365,7 @@ Microsoft 365 audits and validates the data purge path. For more information, se
 
 - [O365 Exit Planning Considerations](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=77ea7ebf-ce1b-4a5f-9972-d2d81a951d99&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
 
-The data purge path differs slightly between the different services.
+Purging of multi-workload DEP is not supported for Microsoft 365 Customer Key. The multi-workload DEP is used to encrypt data across multiple workloads across all tenant users. Purging such DEP would result into data from across multiple workloads become inaccessible. If you decide to exit Microsoft 365 services altogether then you could pursue the path of tenant deletion per the documented process. See [how to delete a tenant in Azure Active Directoy](/azure/active-directory/enterprise-users/directory-delete-howto).
 
 ### Revoke your Customer Keys and the availability key for Exchange Online and Skype for Business
 

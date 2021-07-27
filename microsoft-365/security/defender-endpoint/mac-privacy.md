@@ -1,7 +1,7 @@
 ---
-title: Privacy for Microsoft Defender ATP for Mac
-description: Privacy controls, how to configure policy settings that impact privacy and information about the diagnostic data collected in Microsoft Defender ATP for Mac.
-keywords: microsoft, defender, atp, mac, privacy, diagnostic
+title: Privacy for Microsoft Defender for Endpoint on Mac
+description: Privacy controls, how to configure policy settings that impact privacy and information about the diagnostic data collected in Microsoft Defender for Endpoint on Mac.
+keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, privacy, diagnostic
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -19,7 +19,7 @@ ms.topic: conceptual
 ms.technology: mde
 ---
 
-# Privacy for Microsoft Defender for Endpoint for Mac
+# Privacy for Microsoft Defender for Endpoint on macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -27,16 +27,15 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-
-Microsoft is committed to providing you with the information and controls you need to make choices about how your data is collected and used when you’re using Microsoft Defender for Endpoint for Mac.
+Microsoft is committed to providing you with the information and controls you need to make choices about how your data is collected and used when you're using Microsoft Defender for Endpoint on macOS.
 
 This topic describes the privacy controls available within the product, how to manage these controls with policy settings and more details on the data events that are collected.
 
-## Overview of privacy controls in Microsoft Defender for Endpoint for Mac
+## Overview of privacy controls in Microsoft Defender for Endpoint on macOS
 
-This section describes the privacy controls for the different types of data collected by Microsoft Defender for Endpoint for Mac.
+This section describes the privacy controls for the different types of data collected by Microsoft Defender for Endpoint on macOS.
 
 ### Diagnostic data
 
@@ -46,7 +45,7 @@ Some diagnostic data is required, while some diagnostic data is optional. We giv
 
 There are two levels of diagnostic data for Microsoft Defender for Endpoint client software that you can choose from:
 
-* **Required**: The minimum data necessary to help keep Microsoft Defender for Endpoint secure, up-to-date, and performing as expected on the device it’s installed on.
+* **Required**: The minimum data necessary to help keep Microsoft Defender for Endpoint secure, up-to-date, and performing as expected on the device it's installed on.
 
 * **Optional**: Additional data that helps Microsoft make product improvements and provides enhanced information to help detect, diagnose, and remediate issues.
 
@@ -68,7 +67,7 @@ When this feature is enabled and the sample that is collected is likely to conta
 
 If you're an IT administrator, you might want to configure these controls at the enterprise level. 
 
-The privacy controls for the various types of data described in the preceding section are described in detail in [Set preferences for Microsoft Defender for Endpoint for Mac](mac-preferences.md).
+The privacy controls for the various types of data described in the preceding section are described in detail in [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md).
 
 As with any new policy settings, you should carefully test them out in a limited, controlled environment to ensure the settings that you configure have the desired effect before you implement the policy settings more widely in your organization.
 
@@ -89,7 +88,7 @@ The following fields are considered common for all events:
 | org_id                  | Unique identifier associated with the enterprise that the device belongs to. Allows Microsoft to identify whether issues are impacting a select set of enterprises and how many enterprises are impacted. |
 | hostname                | Local device name (without DNS suffix). Allows Microsoft to identify whether issues are impacting a select set of installs and how many users are impacted. |
 | product_guid            | Unique identifier of the product. Allows Microsoft to differentiate issues impacting different flavors of the product. |
-| app_version             | Version of the Microsoft Defender for Endpoint for Mac application. Allows Microsoft to identify which versions of the product are showing an issue so that it can correctly be prioritized.|
+| app_version             | Version of the Microsoft Defender for Endpoint on macOS application. Allows Microsoft to identify which versions of the product are showing an issue so that it can correctly be prioritized.|
 | sig_version             | Version of security intelligence database. Allows Microsoft to identify which versions of the security intelligence are showing an issue so that it can correctly be prioritized. |
 | supported_compressions  | List of compression algorithms supported by the application, for example `['gzip']`. Allows Microsoft to understand what types of compressions can be used when it communicates with the application. |
 | release_ring            | Ring that the device is associated with (for example Insider Fast, Insider Slow, Production). Allows Microsoft to identify on which release ring an issue may be occurring so that it can correctly be prioritized. |
@@ -97,7 +96,7 @@ The following fields are considered common for all events:
 
 ### Required diagnostic data
 
-**Required diagnostic data** is the minimum data necessary to help keep Microsoft Defender for Endpoint secure, up-to-date, and perform as expected on the device it’s installed on.
+**Required diagnostic data** is the minimum data necessary to help keep Microsoft Defender for Endpoint secure, up-to-date, and perform as expected on the device it's installed on.
 
 Required diagnostic data helps to identify problems with Microsoft Defender for Endpoint that may be related to a device or software configuration. For example, it can help determine if a Microsoft Defender for Endpoint feature crashes more frequently on a particular operating system version, with newly introduced features, or when certain Microsoft Defender for Endpoint features are disabled. Required diagnostic data helps Microsoft detect, diagnose, and fix these problems more quickly so the impact to users or organizations is reduced.
 
@@ -129,6 +128,7 @@ The following fields are collected:
 | cloud_service.service_uri                           | URI used to communicate with the cloud. |
 | cloud_service.diagnostic_level                      | Diagnostic level of the device (required, optional). |
 | cloud_service.automatic_sample_submission           | Whether automatic sample submission is turned on or not. |
+| cloud_service.automatic_definition_update_enabled   | Whether automatic definition update is turned on or not. |
 | edr.early_preview                                   | Whether the device should run EDR early preview features. |
 | edr.group_id                                        | Group identifier used by the detection and response component. |
 | edr.tags                                            | User-defined tags. |
@@ -169,7 +169,7 @@ The following fields are collected:
 
 | Field            | Description |
 | ---------------- | ----------- |
-| version          | Version of Microsoft Defender for Endpoint for Mac. |
+| version          | Version of Microsoft Defender for Endpoint on macOS. |
 | instance_id      | Unique identifier generated on kernel extension startup. |
 | trace_level      | Trace level of the kernel extension. |
 | subsystem        | The underlying subsystem used for real-time protection. |
@@ -184,8 +184,8 @@ The following fields are collected:
 Diagnostic logs are collected only with the consent of the user as part of the feedback submission feature. The following files are collected as part of the support logs:
 
 - All files under */Library/Logs/Microsoft/mdatp/*
-- Subset of files under */Library/Application Support/Microsoft/Defender/* that are created and used by Microsoft Defender for Endpoint for Mac
-- Subset of files under */Library/Managed Preferences* that are used by Microsoft Defender for Endpoint for Mac
+- Subset of files under */Library/Application Support/Microsoft/Defender/* that are created and used by Microsoft Defender for Endpoint on macOS
+- Subset of files under */Library/Managed Preferences* that are used by Microsoft Defender for Endpoint on macOS
 - /Library/Logs/Microsoft/autoupdate.log
 - $HOME/Library/Preferences/com.microsoft.autoupdate2.plist
 
@@ -215,6 +215,7 @@ The following fields are collected:
 | antivirus_engine.scan_cache_maximum                | Size of the product cache. |
 | antivirus_engine.maximum_scan_threads              | Maximum number of threads used for scanning. |
 | antivirus_engine.threat_restoration_exclusion_time | Time out before a file restored from the quarantine can be detected again. |
+| antivirus_engine.threat_type_settings              | Configuration for how different threat types are handled by the product. |
 | filesystem_scanner.full_scan_directory             | Full scan directory. |
 | filesystem_scanner.quick_scan_directories          | List of directories used in quick scan. |
 | edr.latency_mode                                   | Latency mode used by the detection and response component. |

@@ -2,8 +2,8 @@
 title: "Microsoft Compliance Manager"
 f1.keywords:
 - NOCSH
-ms.author: chvukosw
-author: chvukosw
+ms.author: v-jgriffee
+author: jmgriffee
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -30,7 +30,7 @@ Compliance Manager is now generally available (GA) as an end-to-end compliance m
 What began as the public preview of Compliance Score has evolved into a centralized tool with enhanced compliance management capabilities and greater ease of use.  The GA release brings a larger collection of pre-built assessments to help you scale your compliance activities.
 
 **Learn more about the GA release:**
-- Our [frequently asked questions](compliance-manager-faq.md) walk you through the evolution in greater detail.
+- Our [frequently asked questions](compliance-manager-faq.yml) walk you through the evolution in greater detail.
 - Read about GA feature enhancements in [this blog post](https://aka.ms/compliancemanager/GAblog).
 
 Watch the video below to learn how Compliance Manager can help simplify how your organization manages compliance:
@@ -160,3 +160,5 @@ Compliance Manager is available in the following languages:
 Learn how to sign in, assign permissions and roles, configure settings, and personalize your dashboard view at [Get started with Compliance Manager](compliance-manager-setup.md).
 
 Then start customizing Compliance Manager to help you comply with industry standards that matter most to your organization by [setting up assessments](compliance-manager-assessments.md).
+
+To help you comply with data privacy regulations, we’ve designed a workflow to guide you through an end-to-end process to plan and implement capabilities across Microsoft 365, including using Compliance Manager. For more information, see [Deploy information protection for data privacy regulations with Microsoft 365](../solutions/information-protection-deploy.md) (aka.ms/m365dataprivacy). 

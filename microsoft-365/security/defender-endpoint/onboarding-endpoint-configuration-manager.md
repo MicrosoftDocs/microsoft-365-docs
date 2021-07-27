@@ -1,7 +1,7 @@
 ---
 title: Onboarding using Microsoft Endpoint Configuration Manager
 description: Learn how to onboard to Microsoft Defender for Endpoint using Microsoft Endpoint Configuration Manager
-keywords: onboarding, configuration, deploy, deployment, endpoint configuration manager, mdatp, advanced threat protection, collection creation, endpoint detection response, next generation protection, attack surface reduction, microsoft endpoint configuration manager
+keywords: onboarding, configuration, deploy, deployment, endpoint configuration manager, Microsoft Defender for Endpoint, collection creation, endpoint detection response, next generation protection, attack surface reduction, microsoft endpoint configuration manager
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -125,11 +125,11 @@ This section guides you in configuring the following capabilities using Microsof
 
 ### Endpoint detection and response
 #### Windows 10
-From within the Microsoft Defender Security Center it is possible to download
+From within the Microsoft 365 Defender portal it is possible to download
 the '.onboarding' policy that can be used to create the policy in System Center Configuration
 Manager and deploy that policy to Windows 10 devices.
 
-1. From a Microsoft Defender Security Center Portal, select [Settings and then Onboarding](https://securitycenter.windows.com/preferences2/onboarding).
+1. From a Microsoft 365 Defender portal, select [Settings and then Onboarding](https://security.microsoft.com/preferences2/onboarding).
 
 
 
@@ -184,7 +184,7 @@ Manager and deploy that policy to Windows 10 devices.
 #### Previous versions of Windows Client (Windows 7 and Windows 8.1)
 Follow the steps below to identify the Defender for Endpoint Workspace ID and Workspace Key, that will be required for the onboarding of previous versions of Windows.
 
-1. From a Microsoft Defender Security Center Portal, select **Settings > Onboarding**.
+1. From a Microsoft 365 Defender portal, select **Settings** > **Endpoints** > **Onboarding** (under **Device Management**).
 
 2. Under operating system choose **Windows 7 SP1 and 8.1**.
 
@@ -247,9 +247,9 @@ Microsoft Defender Antivirus is a built-in antimalware solution that provides ne
 needs on how Antivirus is configured.
 
   
-    [Quick scan versus full scan and custom scan](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/scheduled-catch-up-scans-microsoft-defender-antivirus#quick-scan-versus-full-scan-and-custom-scan)
+    [Quick scan versus full scan and custom scan](/windows/security/threat-protection/microsoft-defender-antivirus/scheduled-catch-up-scans-microsoft-defender-antivirus#quick-scan-versus-full-scan-and-custom-scan)
 
-    For more details, see [Windows Security configuration framework](https://docs.microsoft.com/windows/security/threat-protection/windows-security-configuration-framework/windows-security-configuration-framework)
+    For more details, see [Windows Security configuration framework](/windows/security/threat-protection/windows-security-configuration-framework/windows-security-configuration-framework)
   
     ![Image of next generation protection pane2](images/cd7daeb392ad5a36f2d3a15d650f1e96.png)
 
@@ -282,7 +282,7 @@ Defender Antivirus.
 The attack surface reduction pillar of Defender for Endpoint includes the feature set that is available under Exploit Guard. Attack surface reduction (ASR) rules, Controlled Folder Access, Network Protection and Exploit
 Protection. 
 
-All these features provide an audit mode and a block mode. In audit mode there is no end-user impact. All it does is collect additional telemetry and make it available in the Microsoft Defender Security Center. The goal with a deployment is to step-by-step move security controls into block mode.
+All these features provide an audit mode and a block mode. In audit mode there is no end-user impact. All it does is collect additional telemetry and make it available in the Microsoft 365 Defender portal. The goal with a deployment is to step-by-step move security controls into block mode.
 
 To set ASR rules in Audit mode:
 
@@ -324,7 +324,7 @@ Below are additional steps to verify whether ASR rules are correctly applied to
 endpoints. (This may take few minutes)
 
 
-1. From a web browser, navigate to <https://securitycenter.windows.com>.
+1. From a web browser, navigate to <https://security.microsoft.com>.
 
 2.  Select **Configuration management** from left side menu.
 
@@ -341,7 +341,7 @@ endpoints. (This may take few minutes)
     ![A screenshot of attack surface reduction rules reports2](images/24bfb16ed561cbb468bd8ce51130ca9d.png)
 
 See [Optimize ASR rule deployment and
-detections](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-machines-asr)   for more details.  
+detections](/microsoft-365/security/defender-endpoint/configure-machines-asr)   for more details.  
 
 
 #### Set Network Protection rules in Audit mode:
