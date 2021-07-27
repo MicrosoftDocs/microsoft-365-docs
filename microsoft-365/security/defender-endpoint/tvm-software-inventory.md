@@ -13,7 +13,7 @@ author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
   - m365-security-compliance
   - m365initiative-defender-endpoint
 ms.topic: conceptual
@@ -28,9 +28,9 @@ ms.technology: mde
 - [Threat and vulnerability management](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
-The software inventory in threat and vulnerability management is a list of known software in your organization with official [Common Platform Enumerations (CPE)](https://nvd.nist.gov/products/cpe). Software products without an official CPE don’t have vulnerabilities published. It also includes details such as the name of the vendor, number of weaknesses, threats, and number of exposed devices.
+The software inventory in threat and vulnerability management is a list of known software in your organization with official [Common Platform Enumerations (CPE)](https://nvd.nist.gov/products/cpe). Software products without an official CPE don't have vulnerabilities published. It also includes details such as the name of the vendor, number of weaknesses, threats, and number of exposed devices.
 
 ## How it works
 
@@ -101,13 +101,12 @@ You can view software pages a few different ways:
 - Side panel with vendor information, prevalence of the software in the organization (including number of devices it's installed on, and exposed devices that aren't patched), whether and exploit is available, and impact to your exposure score.
 - Data visualizations showing the number of, and severity of, vulnerabilities and misconfigurations. Also, graphs with the number of exposed devices.
 - Tabs showing information such as:
-    - Corresponding security recommendations for the weaknesses and vulnerabilities identified.
-    - Named CVEs of discovered vulnerabilities.
-    - Devices that have the software installed (along with device name, domain, OS, and more).
-    - Software version list (including number of devices the version is installed on, the number of discovered vulnerabilities, and the names of the installed devices).
+  - Corresponding security recommendations for the weaknesses and vulnerabilities identified.
+  - Named CVEs of discovered vulnerabilities.
+  - Devices that have the software installed (along with device name, domain, OS, and more).
+  - Software version list (including number of devices the version is installed on, the number of discovered vulnerabilities, and the names of the installed devices).
 
-    ![Software example page for Visual Studio 2017 with the software details, weaknesses, exposed devices, and more.](images/tvm-software-page-example.png)
-	:::image type="content" alt-text="Software example page for Visual Studio 2017 with the software details, weaknesses, exposed devices, and more." source="images/tvm-software-page-example.png" lightbox="images/tvm-software-page-example.png":::
+    :::image type="content" alt-text="Software example page for Visual Studio 2017 with the software details, weaknesses, exposed devices, and more." source="images/tvm-software-page-example.png" lightbox="images/tvm-software-page-example.png":::
 
 ## Report inaccuracy
 
