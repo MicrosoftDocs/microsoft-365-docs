@@ -25,7 +25,7 @@ ms.date: 10/07/2018
 
 **Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-- Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -38,7 +38,8 @@ Retrieves a collection of RBAC device groups.
 User needs read permissions.
 
 ## HTTP request
-```
+
+```http
 GET /testwdatppreview/machinegroups
 ```
 
@@ -50,23 +51,25 @@ Authorization | Bearer {token}. **Required**.
 Content type | application/json
 
 ## Request body
+
 Empty
 
 ## Response
+
 If successful - 200 OK.
 
 ## Example
 
-**Request**
+### Request
 
 Here is an example of the request.
 
-```
+```http
 GET https://graph.microsoft.com/testwdatppreview/machinegroups
 Content-type: application/json
 ```
 
-**Response**
+### Response example
 
 Here is an example of the response.
 Field id contains device group **id** and equal to field **rbacGroupId** in devices info. 
@@ -84,6 +87,6 @@ Content-type: application/json
             "name":"UnassignedGroup",
             "description":"",
             "ungrouped":true},
-        …
+        ...
 }
 ```
