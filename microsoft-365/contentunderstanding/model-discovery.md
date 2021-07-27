@@ -12,14 +12,17 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 localization_priority: Priority
-description: Learn how and why to duplicate a model in Microsoft SharePoint Syntex.
+description: Learn how to make trained model available to others and how to apply other trained models in Microsoft SharePoint Syntex.
 ---
 
 # Use model discovery in Microsoft SharePoint Syntex
 
-You can make your trained document understanding models available for others to view and use directly from the SharePoint document library. This feature is not yet available for form processing models.
+You can make your trained document understanding models available for others to view and use directly from the SharePoint document library. 
 
-You can also find and evaluate trained models in other content centers that were created by others in your organization. You can then select the model that is most useful for classifying your files or extracting specific information from them. You can evaluate up to 10 models against your content to help you find the most appropriate one.
+You can also find and evaluate trained models in other content centers that were created by others in your organization. You can then select the model that is most useful for classifying your files or extracting specific information from them. 
+
+> [!NOTE]
+> This feature is not yet available for form processing models.
 
 ## Make your model discoverable to others
 
@@ -27,7 +30,7 @@ To make your trained model available for others to use:
 
 1. On the **Models** page, select **Model settings**.
 
-2. On the **Model settings** pane, in the **Where this model is visible** section, select where you want the model to be visible for other users to apply:
+2. On the **Model settings** panel, in the **Where this model is visible** section, select where you want the model to be visible for other users to apply:
 
    - **Not visible** – The model will not be available for others to use.
    - **On all sites** – The model will be available in the content type gallery for others to use.
@@ -42,7 +45,15 @@ To find trained models that might be suitable for your content:
 2. On the **Review models and apply new ones** page:
 
    - On the **Applied** tab, see the models that have been applied to your library.
-   - On the **Available** tab, see the additional models that are available to be applied to your library.
+   - On the **Available** tab, see up to 10 additional trained models that are available to be applied to your library.
+
+### Apply a trained model to your library
+
+You can evaluate up to 10 models against your content to help you find the most appropriate one. To select a model that you want to apply to your library:
+
+1. On the **Available** tab, review the models in the list.
+
+2. Select the model that you think will get you the best results, and then select **Apply to library**.
 
 ### Get a recommendation for a trained model
 
@@ -73,3 +84,4 @@ To remove an applied model from your document library:
 
 [Apply a document understanding model](apply-a-model.md)
 
+[Document understanding overview](document-understanding-overview.md)
