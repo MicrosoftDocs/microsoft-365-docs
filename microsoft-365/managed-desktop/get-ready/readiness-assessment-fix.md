@@ -99,13 +99,9 @@ The Intune Administrator role doesn't have sufficient permissions for this check
 
 Intune Device Compliance policies in your Azure AD organization might impact Microsoft Managed Desktop devices.
 
-**Not ready**
-
-You have at least one compliance policy that targets all users. Microsoft Managed Desktop includes compliance policies that will target your Microsoft Managed Desktop devices.  Change the policy to target a specific Azure AD group that does not include any Microsoft Managed Desktop users or devices. For steps, see [Create a compliance policy in Microsoft Intune](/mem/intune/protect/create-compliance-policy).
-
 **Advisory**
 
-Make sure that any compliance policies you have don't target any Microsoft Managed Desktop users. For steps, see [Create a compliance policy in Microsoft Intune](/mem/intune/protect/create-compliance-policy).
+You have at least one compliance policy that applies all users. Microsoft Managed Desktop also includes compliance policies that will apply to your Microsoft Managed Desktop devices. Review all of the compliance policies created by your organization that apply to Microsoft Managed Desktop devices to ensure there are no conflicts. For steps, see [Create a compliance policy in Microsoft Intune](/mem/intune/protect/create-compliance-policy).
 
 
 
@@ -115,7 +111,7 @@ Intune Device Configuration profiles in your Azure AD organization must not targ
 
 **Not ready**
 
-You have at least one configuration profile that targets all users, all devices, or both. Reset the profile to target a specific Azure AD group that does not include any Microsoft Managed Desktop devices. For steps, see [Create a profile with custom settings in Microsoft Intune](/mem/intune/configuration/custom-settings-configure).
+You have at least one configuration profile that applies to all users, all devices, or both. Reset the profile to apply to a specific Azure AD group that does not include any Microsoft Managed Desktop devices. For steps, see [Create a profile with custom settings in Microsoft Intune](/mem/intune/configuration/custom-settings-configure).
 
 **Advisory**
 

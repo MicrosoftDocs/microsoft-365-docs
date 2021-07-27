@@ -44,11 +44,13 @@ This guide describes how to configure your VMs for optimal protection and perfor
 You can also download the whitepaper [Microsoft Defender Antivirus on Virtual Desktop Infrastructure](https://demo.wd.microsoft.com/Content/wdav-testing-vdi-ssu.pdf), which looks at the new shared security intelligence update feature, alongside performance testing and guidance on how you can test antivirus performance on your own VDI.
 
 > [!IMPORTANT]
-> Although the VDI can be hosted on Windows Server 2012 or Windows Server 2016, the virtual machines (VMs) should be running Windows 10, 1607 at a minimum, due to increased protection technologies and features that are unavailable in earlier versions of Windows.<br/>There are performance and feature improvements to the way in which Microsoft Defender AV operates on virtual machines in Windows 10 Insider Preview, build 18323 (and later). We'll identify in this guide if you need to be using an Insider Preview build; if it isn't specified, then the minimum required version for the best protection and performance is Windows 10 1607.
+> Although the VDI can be hosted on Windows Server 2012 or Windows Server 2016, the virtual machines (VMs) should be running Windows 10, 1607 at a minimum, due to increased protection technologies and features that are unavailable in earlier versions of Windows.
+>
+> There are performance and feature improvements to the way in which Microsoft Defender AV operates on virtual machines in Windows 10 Insider Preview, build 18323 (and later). We'll identify in this guide if you need to be using an Insider Preview build; if it isn't specified, then the minimum required version for the best protection and performance is Windows 10 1607.
 
 ## Set up a dedicated VDI file share
 
-In Windows 10, version 1903, we introduced the shared security intelligence feature, which offloads the unpackaging of downloaded security intelligence updates onto a host machine—thus saving previous CPU, disk, and memory resources on individual machines. This feature has been backported and now works in Windows 10 version 1703 and above. You can set this feature with a Group Policy, or PowerShell.
+In Windows 10, version 1903, we introduced the shared security intelligence feature, which offloads the unpackaging of downloaded security intelligence updates onto a host machine, thus saving previous CPU, disk, and memory resources on individual machines. This feature has been backported and now works in Windows 10 version 1703 and above. You can set this feature with a Group Policy, or PowerShell.
 
 ### Use Group Policy to enable the shared security intelligence feature:
 
@@ -70,7 +72,7 @@ In Windows 10, version 1903, we introduced the shared security intelligence feat
 
 ### Use PowerShell to enable the shared security intelligence feature
 
-Use the following cmdlet to enable the feature. You’ll need to then push this as you normally would push PowerShell-based configuration policies onto the VMs:
+Use the following cmdlet to enable the feature. You'll need to then push this as you normally would push PowerShell-based configuration policies onto the VMs:
 
 ```PowerShell
 Set-MpPreference -SharedSignaturesPath \\<shared location>\wdav-update
@@ -80,7 +82,7 @@ See the [Download and unpackage](#download-and-unpackage-the-latest-updates) sec
 
 ## Download and unpackage the latest updates
 
-Now you can get started on downloading and installing new updates. We’ve created a sample PowerShell script for you below. This script is the easiest way to download new updates and get them ready for your VMs. You should then set the script to run at a certain time on the management machine by using a scheduled task (or, if you’re familiar with using PowerShell scripts in Azure, Intune, or SCCM, you could also use those scripts).
+Now you can get started on downloading and installing new updates. We've created a sample PowerShell script for you below. This script is the easiest way to download new updates and get them ready for your VMs. You should then set the script to run at a certain time on the management machine by using a scheduled task (or, if you're familiar with using PowerShell scripts in Azure, Intune, or SCCM, you could also use those scripts).
 
 ```PowerShell
 $vdmpathbase = "$env:systemdrive\wdav-update\{00000000-0000-0000-0000-"
@@ -95,34 +97,34 @@ Invoke-WebRequest -Uri 'https://go.microsoft.com/fwlink/?LinkID=121721&arch=x64'
 cmd /c "cd $vdmpath & c: & mpam-fe.exe /x"
 ```
 
-You can set a scheduled task to run once a day so that whenever the package is downloaded and unpacked then the VMs will receive the new update. 
-We suggest starting with once a day—but you should experiment with increasing or decreasing the frequency to understand the impact. 
+You can set a scheduled task to run once a day so that whenever the package is downloaded and unpacked then the VMs will receive the new update.
+We suggest starting with once a day, but you should experiment with increasing or decreasing the frequency to understand the impact.
 
-Security intelligence packages are typically published once every three to four hours. Setting a frequency shorter than four hours isn’t advised because it will increase the network overhead on your management machine for no benefit.
+Security intelligence packages are typically published once every three to four hours. Setting a frequency shorter than four hours isn't advised because it will increase the network overhead on your management machine for no benefit.
 
 ### Set a scheduled task to run the PowerShell script
 
-1. On the management machine, open the Start menu and type **Task Scheduler**. Open it and select **Create task…** on the side panel.
+1. On the management machine, open the Start menu and type **Task Scheduler**. Open it and select **Create task...** on the side panel.
 
-2. Enter the name as **Security intelligence unpacker**. Go to the **Trigger** tab. Select **New…** > **Daily**, and select **OK**.
+2. Enter the name as **Security intelligence unpacker**. Go to the **Trigger** tab. Select **New...** > **Daily**, and select **OK**.
 
-3. Go to the **Actions** tab. Select **New…** Enter **PowerShell** in the **Program/Script** field. Enter `-ExecutionPolicy Bypass c:\wdav-update\vdmdlunpack.ps1` in the **Add arguments** field. Select **OK**.
+3. Go to the **Actions** tab. Select **New...** Enter **PowerShell** in the **Program/Script** field. Enter `-ExecutionPolicy Bypass c:\wdav-update\vdmdlunpack.ps1` in the **Add arguments** field. Select **OK**.
 
 4. You can choose to configure additional settings if you wish.
 
 5. Select **OK** to save the scheduled task.
- 
+
 You can initiate the update manually by right-clicking on the task and clicking **Run**.
 
 ### Download and unpackage manually
 
-If you would prefer to do everything manually, here's what to do to replicate the script’s behavior:
+If you would prefer to do everything manually, here's what to do to replicate the script's behavior:
 
 1. Create a new folder on the system root called `wdav_update` to store intelligence updates, for example, create the folder `c:\wdav_update`.
 
 2. Create a subfolder under *wdav_update* with a GUID name, such as `{00000000-0000-0000-0000-000000000000}`
 
-Here's an example: `c:\wdav_update\{00000000-0000-0000-0000-000000000000}`
+   Here's an example: `c:\wdav_update\{00000000-0000-0000-0000-000000000000}`
 
    > [!NOTE]
    > In the script we set it so the last 12 digits of the GUID are the year, month, day, and time when the file was downloaded so that a new folder is created each time. You can change this so that the file is downloaded to the same folder each time.
@@ -152,7 +154,7 @@ You can specify the type of scan that should be performed during a scheduled sca
 
 3. Set the policy to **Enabled**, and then under **Options**, select  **Quick scan**.
 
-4. Select **OK**. 
+4. Select **OK**.
 
 5. Deploy your Group Policy object as you usually do.
 
@@ -162,7 +164,7 @@ Sometimes, Microsoft Defender Antivirus notifications may be sent to or persist 
 
 1. In your Group Policy Editor, go to **Windows components** > **Microsoft Defender Antivirus** > **Client Interface**.
 
-2. Select **Suppress all notifications** and then edit the policy settings. 
+2. Select **Suppress all notifications** and then edit the policy settings.
 
 3. Set the policy to **Enabled**, and then select **OK**.
 
@@ -172,6 +174,7 @@ Suppressing notifications prevents notifications from Microsoft Defender Antivir
 
 > [!TIP]
 > To open the Action Center on Windows 10, take one of the following steps:
+>
 > - On the right end of the taskbar, select the Action Center icon.
 > - Press the Windows logo key button + A.
 > - On a touchscreen device, swipe in from the right edge of the screen.
@@ -220,7 +223,7 @@ This policy forces a scan if the VM has missed two or more consecutive scheduled
 4. Click **OK**.
 
 5. Deploy your Group Policy Object as you usually do.
- 
+
 This policy hides the entire Microsoft Defender Antivirus user interface from end users in your organization.
 
 ## Exclusions
@@ -232,5 +235,5 @@ For more information, see [Configure Microsoft Defender Antivirus exclusions on 
 ## Additional resources
 
 - [Tech Community Blog: Configuring Microsoft Defender Antivirus for non-persistent VDI machines](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/configuring-microsoft-defender-antivirus-for-non-persistent-vdi/ba-p/1489633)
-- [TechNet forums on Remote Desktop Services and VDI](https://social.technet.microsoft.com/Forums/windowsserver/en-US/home?forum=winserverTS)
+- [TechNet forums on Remote Desktop Services and VDI](https://social.technet.microsoft.com/Forums/windowsserver/home?forum=winserverTS)
 - [SignatureDownloadCustomTask PowerShell script](https://www.powershellgallery.com/packages/SignatureDownloadCustomTask/1.4)

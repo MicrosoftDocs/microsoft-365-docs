@@ -52,4 +52,4 @@ You can also export the current alert list to a comma separated value (CSV) file
 
 ## Next step
 
-[Remediate app threats.](app-governance-detect-remediate-detect-threats.md)
+[Investigate anomaly detection alerts](app-governance-anomaly-detection-alerts.md)
