@@ -120,7 +120,7 @@ sections:
       - question: |
           Where can I find support for the topics covered in this FAQ?
         answer: |
-          For more training resources, including videos, see [Microsoft Volume Licensing Service Center training and resources](/licensing/existing-customer/vlsc-training-and-resources?activetab=vlsc-tab%3aprimaryr3).
+          For more training resources, including videos, see [Microsoft Volume Licensing Service Center training and resources](https://www.microsoft.com/licensing/existing-customer/vlsc-training-and-resources).
       
       - question: |
           How can I contact Microsoft Support?

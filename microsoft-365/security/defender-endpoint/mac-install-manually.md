@@ -13,7 +13,7 @@ author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
   - m365-security-compliance
   - m365initiative-defender-endpoint
 ms.topic: conceptual
@@ -28,9 +28,10 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Want to experience Defender for Endpoint? [Sign up for a free trial](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink).
 
 This topic describes how to deploy Microsoft Defender for Endpoint on macOS manually. A successful deployment requires the completion of all of the following steps:
+
 - [Download installation and onboarding packages](#download-installation-and-onboarding-packages)
 - [Application installation (macOS 10.15 and older versions)](#application-installation-macos-1015-and-older-versions)
 - [Application installation (macOS 11 and newer versions)](#application-installation-macos-11-and-newer-versions)
@@ -52,7 +53,7 @@ Download the installation and onboarding packages from Microsoft 365 Defender po
     ![Microsoft 365 Defender portal screenshot](images/portal-onboarding-macos.png)
 
 5. From a command prompt, verify that you have the two files.
-    
+
 ## Application installation (macOS 10.15 and older versions)
 
 To complete this process, you must have admin privileges on the device.
@@ -133,10 +134,9 @@ To complete this process, you must have admin privileges on the device.
     ```
 
     After installation, you'll see the Microsoft Defender icon in the macOS status bar in the top-right corner.
-    
+
     > [!div class="mx-imgBorder"]
     > ![Microsoft Defender icon in status bar screenshot](images/mdatp-icon-bar.png)
-
 
 ## How to Allow Full Disk Access
 
@@ -184,38 +184,38 @@ To complete this process, you must have admin privileges on the device.
 
    > [!TIP]
    > If you double-click, you will get the following message:
-   > 
+   >
    > > **"MDATP MacOS DIY" cannot be opened because the developer cannot be verifier.**<br/>
    > > macOS cannot verify that this app is free from malware.<br/>
-   > > **\[Move to Trash\]** **\[Cancel\]** 
-  
+   > > **\[Move to Trash\]** **\[Cancel\]**
+
 7. Click **Cancel**.
 
-8. Right-click **MDATP MacOS DIY**, and then click **Open**. 
+8. Right-click **MDATP MacOS DIY**, and then click **Open**.
 
     The system should display the following message:
 
-	> **macOS cannot verify the developer of **MDATP MacOS DIY**. Are you sure you want to open it?**<br/>
-	> By opening this app, you will be overriding system security which can expose your computer and personal information to malware that may harm your Mac or compromise your privacy.
+    > **macOS cannot verify the developer of MDATP MacOS DIY. Are you sure you want to open it?**<br/>
+    > By opening this app, you will be overriding system security which can expose your computer and personal information to malware that may harm your Mac or compromise your privacy.
+
+9. Click **Open**.
+
+    The system should display the following message:
+
+    > Microsoft Defender for Endpoint - macOS EDR DIY test file<br/>
+    > Corresponding alert will be available in the MDATP portal.
 
 10. Click **Open**.
 
-    The system should display the following message:
-
-	> Microsoft Defender for Endpoint - macOS EDR DIY test file<br/>
-	> Corresponding alert will be available in the MDATP portal.
-
-11. Click **Open**.
-
     In a few minutes an alert named "macOS EDR Test Alert" should be raised.
 
-12.	Go to Microsoft 365 Defender portal (https://security.microsoft.com/).
+11. Go to Microsoft 365 Defender portal (https://security.microsoft.com/).
 
-13.	Go to the Alert Queue.
+12. Go to the Alert Queue.
 
-	:::image type="content" source="images/b8db76c2-c368-49ad-970f-dcb87534d9be.png" alt-text="Example of a macOS EDR test alert that shows severity, category, detection source, and a collapsed menu of actions.":::
-	
-	Look at the alert details and the device timeline, and perform the regular investigation steps.
+    :::image type="content" source="images/b8db76c2-c368-49ad-970f-dcb87534d9be.png" alt-text="Example of a macOS EDR test alert that shows severity, category, detection source, and a collapsed menu of actions.":::
+
+    Look at the alert details and the device timeline, and perform the regular investigation steps.
 
 ## Logging installation issues
 

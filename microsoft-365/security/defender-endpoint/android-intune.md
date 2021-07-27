@@ -250,7 +250,7 @@ Defender for Endpoint supports Device configuration policies for managed devices
    Custom VPN in this case is Defender for Endpoint VPN which is used to provide the Web Protection feature.
 
    > [!NOTE]
-   > Microsoft Defender for Endpoint app must be installed on user’s device, in order to functioning of auto setup of this VPN.
+   > Microsoft Defender for Endpoint app must be installed on user's device, in order to functioning of auto setup of this VPN.
 
    - Enter **Package ID** of the Microsoft Defender for Endpoint app in Google Play store. For the Defender app URL <https://play.google.com/store/apps/details?id=com.microsoft.scmx>, Package ID is **com.microsoft.scmx**
    - **Lockdown mode** Not configured (Default)
