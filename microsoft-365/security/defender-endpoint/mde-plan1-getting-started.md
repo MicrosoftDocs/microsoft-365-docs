@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: ITPro
 ms.topic: overview
-ms.date: 07/23/2021
+ms.date: 07/26/2021
 ms.prod: m365-security
 ms.technology: mde
 localization_priority: Normal
@@ -30,7 +30,7 @@ The following sections describe how to get started using Defender for Endpoint:
 
 The Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) is where you'll view alerts, manage devices, and view reports. When you sign into the Microsoft 365 Defender portal, you’ll start with the Home page, as shown in the following image:
 
-:::image type="content" source="../../media/mde-p1/m365-security-center.png" alt-text="Microsoft 365 Defender portal":::
+:::image type="content" source="../../media/mde-p1/m365-defender-portal.png" alt-text="Microsoft 365 Defender portal":::
 
 The Home page provides your security team with a snapshot aggregate view of alerts, device status, and threats detected. The security center is set up so that your security operations team can find the information they are looking for quickly and easily.
 
