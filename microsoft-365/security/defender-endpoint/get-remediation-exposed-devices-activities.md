@@ -49,19 +49,19 @@ Returns information about exposed devices for the specified remediation task.
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs for details.](apis-intro.md)
 
-Permission type | Permission | Permission display name
+Permission type|Permission|Permission display name
 :---|:---|:---
-Application | RemediationTask.Read.All | \'Read Threat and Vulnerability Management vulnerability information\'
-Delegated (work or school account) | RemediationTask.Read.Read | \'Read Threat and Vulnerability Management vulnerability information\'
+Application|RemediationTask.Read.All|\'Read Threat and Vulnerability Management vulnerability information\'
+Delegated (work or school account)|RemediationTask.Read.Read|\'Read Threat and Vulnerability Management vulnerability information\'
 
 ## Properties details
 
-Property (id) | Data type | Description | Example
+Property (id)|Data type|Description|Example
 :---|:---|:---|:---
-id | String | Device ID | w2957837fwda8w9ae7f023dba081059dw8d94503
-computerDnsName | String | Device name | PC-SRV2012R2Foo.UserNameVldNet.local
-osPlatform | String | Device operating system | WindowsServer2012R2
-rbacGroupName | String | Name of the device group this device is associated with | Servers
+id|String|Device ID|w2957837fwda8w9ae7f023dba081059dw8d94503
+computerDnsName|String|Device name|PC-SRV2012R2Foo.UserNameVldNet.local
+osPlatform|String|Device operating system|WindowsServer2012R2
+rbacGroupName|String|Name of the device group this device is associated with|Servers
 
 ## Example
 
@@ -112,11 +112,7 @@ GET https://api-luna.securitycenter.windows.com/api/remediationtasks/03942ef5-ae
 ## See also
 
 - [Remediation methods and properties](get-remediation-methods-properties.md)
-
 - [Get one remediation activity by Id](get-remediation-one-activity.md)
-
 - [List all remediation activities](get-remediation-all-activities.md)
-
 - [Risk-based threat & vulnerability management](next-gen-threat-and-vuln-mgt.md)
-
 - [Vulnerabilities in your organization](tvm-weaknesses.md)

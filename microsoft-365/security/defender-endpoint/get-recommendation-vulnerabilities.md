@@ -35,43 +35,45 @@ ms.custom: api
 Retrieves a list of vulnerabilities associated with the security recommendation.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md) for details.
 
-Permission type |	Permission	|	Permission display name
+Permission type|Permission|Permission display name
 :---|:---|:---
-Application |	SecurityRecommendation.Read.All |	'Read Threat and Vulnerability Management security recommendation information'
-Delegated (work or school account) | SecurityRecommendation.Read |	'Read Threat and Vulnerability Management security recommendation information'
+Application|SecurityRecommendation.Read.All|'Read Threat and Vulnerability Management security recommendation information'
+Delegated (work or school account)|SecurityRecommendation.Read|'Read Threat and Vulnerability Management security recommendation information'
 
 ## HTTP request
-```
+
+```http
 GET /api/recommendations/{id}/vulnerabilities
 ```
 
 ## Request headers
 
-Name | Type | Description
+Name|Type|Description
 :---|:---|:---
-Authorization | String | Bearer {token}. **Required**.
-
+Authorization|String|Bearer {token}. **Required**.
 
 ## Request body
+
 Empty
 
 ## Response
-If successful, this method returns 200 OK, with the list of vulnerabilities associated with the security recommendation.
 
+If successful, this method returns 200 OK, with the list of vulnerabilities associated with the security recommendation.
 
 ## Example
 
-**Request**
+### Request example
 
 Here is an example of the request.
 
-```
+```http
 GET https://api.securitycenter.microsoft.com/api/recommendations/va-_-google-_-chrome/vulnerabilities
 ```
 
-**Response**
+### Response example
 
 Here is an example of the response.
 
@@ -94,11 +96,12 @@ Here is an example of the response.
             "exploitTypes": [],
             "exploitUris": []
         }
-		...
+        ...
      ]
 }
 ```
 
 ## Related topics
+
 - [Risk-based Threat & Vulnerability Management](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [Threat & Vulnerability security recommendation](/microsoft-365/security/defender-endpoint/tvm-security-recommendation)

@@ -44,7 +44,7 @@ Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md)
 
-Permission type |Permission|Permission display name
+Permission type|Permission|Permission display name
 :---|:---|:---
 Application |Machine.Read.All|'Read all machine profiles'
 Application |Machine.ReadWrite.All |'Read and write all machine information'
@@ -67,7 +67,7 @@ GET /api/users/{id}/machines
 
 ## Request headers
 
-Name | Type | Description
+Name|Type|Description
 :---|:---|:---
 Authorization | String | Bearer {token}. **Required**.
 
