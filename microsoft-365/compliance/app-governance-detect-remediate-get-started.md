@@ -2,8 +2,8 @@
 title: "Get started with app threat detection and remediation"
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -52,4 +52,4 @@ You can also export the current alert list to a comma separated value (CSV) file
 
 ## Next step
 
-[Remediate app threats.](app-governance-detect-remediate-detect-threats.md)
+[Investigate anomaly detection alerts](app-governance-anomaly-detection-alerts.md)

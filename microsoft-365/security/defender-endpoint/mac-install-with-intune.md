@@ -58,13 +58,13 @@ The following table summarizes the steps you would need to take to deploy and ma
 
 ## Download the onboarding package
 
-Download the onboarding packages from Microsoft Defender Security Center:
+Download the onboarding packages from Microsoft 365 Defender portal:
 
-1. In Microsoft Defender Security Center, go to **Settings** > **Device Management** > **Onboarding**.
+1. In Microsoft 365 Defender portal, go to **Settings** > **Endpoints** > **Device management** > **Onboarding**.
 
 2. Set the operating system to **macOS** and the deployment method to **Mobile Device Management / Microsoft Intune**.
 
-    ![Onboarding settings screenshot](images/atp-mac-install.png)
+    ![Onboarding settings screenshot](images/macos-install-with-intune.png)
 
 3. Select **Download onboarding package**. Save it as _WindowsDefenderATPOnboardingPackage.zip_ to the same directory.
 
@@ -171,7 +171,7 @@ Follow the instructions for [Onboarding blob](#onboarding-blob) from above, usin
 
 ### Network Filter
 
-As part of the Endpoint Detection and Response capabilities, Microsoft Defender for Endpoint on macOS inspects socket traffic and reports this information to the Microsoft Defender Security Center portal. The following policy allows the network extension to perform this functionality.
+As part of the Endpoint Detection and Response capabilities, Microsoft Defender for Endpoint on macOS inspects socket traffic and reports this information to the Microsoft 365 Defender portal. The following policy allows the network extension to perform this functionality.
 
 Download [**netfilter.mobileconfig**](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/netfilter.mobileconfig) from [our GitHub repository](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles).
 

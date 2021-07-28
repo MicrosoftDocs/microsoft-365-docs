@@ -24,55 +24,56 @@ ms.custom: api
 
 **Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
-
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
 Retrieves a security recommendation by its ID.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md) for details.
 
-Permission type |	Permission	|	Permission display name
+Permission type|Permission|Permission display name
 :---|:---|:---
-Application |	SecurityRecommendation.Read.All |	'Read Threat and Vulnerability Management security recommendation information'
-Delegated (work or school account) | SecurityRecommendation.Read |	'Read Threat and Vulnerability Management security recommendation information'
+Application|SecurityRecommendation.Read.All|'Read Threat and Vulnerability Management security recommendation information'
+Delegated (work or school account)|SecurityRecommendation.Read|'Read Threat and Vulnerability Management security recommendation information'
 
 ## HTTP request
-```
+
+```http
 GET /api/recommendations/{id}
 ```
 
 ## Request headers
 
-Name | Type | Description
+Name|Type|Description
 :---|:---|:---
-Authorization | String | Bearer {token}. **Required**.
-
+Authorization|String|Bearer {token}. **Required**.
 
 ## Request body
+
 Empty
 
 ## Response
-If successful, this method returns 200 OK with the security recommendations in the body.
 
+If successful, this method returns 200 OK with the security recommendations in the body.
 
 ## Example
 
-**Request**
+### Request example
 
 Here is an example of the request.
 
-```
+```http
 GET https://api.securitycenter.microsoft.com/api/recommendations/va-_-google-_-chrome
 ```
 
-**Response**
+### Response example
 
 Here is an example of the response.
 
@@ -103,5 +104,6 @@ Here is an example of the response.
 ```
 
 ## Related topics
+
 - [Risk-based Threat & Vulnerability Management](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [Threat & Vulnerability security recommendation](/microsoft-365/security/defender-endpoint/tvm-security-recommendation)
