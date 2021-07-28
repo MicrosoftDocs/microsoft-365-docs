@@ -40,9 +40,10 @@ Retrieves a collection of logged on users on a specific device.
 2. Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md)
 
-Permission type |Permission|Permission display name
+Permission type|Permission|Permission display name
 :---|:---|:---
 Application |User.Read.All |'Read user profiles'
 Delegated (work or school account) | User.Read.All | 'Read user profiles'
@@ -61,7 +62,7 @@ GET /api/machines/{id}/logonusers
 
 ## Request headers
 
-Name | Type | Description
+Name|Type|Description
 :---|:---|:---
 Authorization | String | Bearer {token}. **Required**.
 

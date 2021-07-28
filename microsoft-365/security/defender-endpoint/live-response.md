@@ -29,13 +29,14 @@ ms.technology: mde
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-Live response gives security operations teams instantaneous access to a device (also referred to as a machine) using a remote shell connection. This gives you the power to do in-depth investigative work and take immediate response actions to promptly contain identified threats—in real time. 
+Live response gives security operations teams instantaneous access to a device (also referred to as a machine) using a remote shell connection. This gives you the power to do in-depth investigative work and take immediate response actions to promptly contain identified threats in real time.
 
-Live response is designed to enhance investigations by enabling your security operations team to collect forensic data, run scripts, send suspicious entities for analysis, remediate threats, and proactively hunt for emerging threats.<br/><br/>
+Live response is designed to enhance investigations by enabling your security operations team to collect forensic data, run scripts, send suspicious entities for analysis, remediate threats, and proactively hunt for emerging threats.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4qLUW]
 
 With live response, analysts can do all of the following tasks:
+
 - Run basic and advanced commands to do investigative work on a device.
 - Download files such as malware samples and outcomes of PowerShell scripts.
 - Download files in the background (new!).
@@ -46,70 +47,74 @@ With live response, analysts can do all of the following tasks:
 
 Before you can initiate a session on a device, make sure you fulfill the following requirements:
 
-- **Verify that you're running a supported version of Windows**. <br/>
-Devices must be running one of the following versions of Windows
+- **Verify that you're running a supported version of Windows**.
+
+  Devices must be running one of the following versions of Windows
 
   - **Windows 10**
-    - [Version 1909](/windows/whats-new/whats-new-windows-10-version-1909) or later  
-    - [Version 1903](/windows/whats-new/whats-new-windows-10-version-1903) with [KB4515384](https://support.microsoft.com/en-us/help/4515384/windows-10-update-kb4515384)
+    - [Version 1909](/windows/whats-new/whats-new-windows-10-version-1909) or later
+    - [Version 1903](/windows/whats-new/whats-new-windows-10-version-1903) with [KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)
     - [Version 1809 (RS 5)](/windows/whats-new/whats-new-windows-10-version-1809) with [with KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)
     - [Version 1803 (RS 4)](/windows/whats-new/whats-new-windows-10-version-1803) with [KB4537795](https://support.microsoft.com/help/4537795/windows-10-update-kb4537795)
     - [Version 1709 (RS 3)](/windows/whats-new/whats-new-windows-10-version-1709) with [KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)
-  
+
   - **Windows Server 2019 - Only applicable for Public preview**
-    - Version 1903 or (with [KB4515384](https://support.microsoft.com/en-us/help/4515384/windows-10-update-kb4515384)) later 
-    - Version 1809 (with [KB4537818](https://support.microsoft.com/en-us/help/4537818/windows-10-update-kb4537818))
+    - Version 1903 or (with [KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)) later
+    - Version 1809 (with [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818))
 
-- **Enable live response from the advanced settings page**.<br>
-You'll need to enable the live response capability in the [Advanced features settings](advanced-features.md) page.
+- **Enable live response from the advanced settings page**.
 
-    >[!NOTE]
-    >Only users with manage security or global admin roles can edit these settings.
+  You'll need to enable the live response capability in the [Advanced features settings](advanced-features.md) page.
 
-- **Enable live response for servers from the advanced settings page** (recommended).<br>
+  > [!NOTE]
+  > Only users with manage security or global admin roles can edit these settings.
 
-    >[!NOTE]
-    >Only users with manage security or global admin roles can edit these settings.
-    
-- **Ensure that the device has an Automation Remediation level assigned to it**.<br>
-You'll need to enable, at least, the minimum Remediation Level for a given Device Group. Otherwise you won't be able to establish a Live Response session to a member of that group.
+- **Enable live response for servers from the advanced settings page** (recommended).
 
-    You'll receive the following error:
+  > [!NOTE]
+  > Only users with manage security or global admin roles can edit these settings.
 
-    ![Image of error message](images/live-response-error.png)
+- **Ensure that the device has an Automation Remediation level assigned to it**.
 
-- **Enable live response unsigned script execution** (optional). <br>
+  You'll need to enable, at least, the minimum Remediation Level for a given Device Group. Otherwise you won't be able to establish a Live Response session to a member of that group.
 
-    >[!WARNING]
-    >Allowing the use of unsigned scripts may increase your exposure to threats.
- 
+  You'll receive the following error:
+
+  ![Image of error message](images/live-response-error.png)
+
+- **Enable live response unsigned script execution** (optional).
+
+  > [!WARNING]
+  > Allowing the use of unsigned scripts may increase your exposure to threats.
+
   Running unsigned scripts is not recommended as it can increase your exposure to threats. If you must use them however, you'll need to enable the setting in the [Advanced features settings](advanced-features.md) page.
-    
-- **Ensure that you have the appropriate permissions**.<br>
-    Only users who have been provisioned with the appropriate permissions can initiate a session. For more information on role assignments, see [Create and manage roles](user-roles.md). 
 
-    > [!IMPORTANT]
-    > The option to upload a file to the library is only available to users with with "Manage Security Settings" permission.
-    >  The button is greyed out for users with only delegated permissions.
-    
+- **Ensure that you have the appropriate permissions**.
 
-    Depending on the role that's been granted to you, you can run basic or advanced live response commands. Users permissions are controlled by RBAC custom role. 
+  Only users who have been provisioned with the appropriate permissions can initiate a session. For more information on role assignments, see [Create and manage roles](user-roles.md).
+
+  > [!IMPORTANT]
+  > The option to upload a file to the library is only available to users with with "Manage Security Settings" permission.
+  > The button is greyed out for users with only delegated permissions.
+
+  Depending on the role that's been granted to you, you can run basic or advanced live response commands. Users permissions are controlled by RBAC custom role.
 
 ## Live response dashboard overview
-When you initiate a live response session on a device, a dashboard opens. The dashboard provides information about the session such as the following: 
+
+When you initiate a live response session on a device, a dashboard opens. The dashboard provides information about the session such as the following:
 
 - Who created the session
 - When the session started
 - The duration of the session
 
 The dashboard also gives you access to:
+
 - Disconnect session
-- Upload files to the library 
+- Upload files to the library
 - Command console
 - Command log
 
-
-## Initiate a live response session on a device 
+## Initiate a live response session on a device
 
 1. Sign in to Microsoft 365 Defender portal.
 
@@ -123,49 +128,48 @@ The dashboard also gives you access to:
 
 ## Live response commands
 
-Depending on the role that's been granted to you, you can run basic or advanced live response commands. User permissions are controlled by RBAC custom roles. For more information on role assignments, see [Create and manage roles](user-roles.md). 
+Depending on the role that's been granted to you, you can run basic or advanced live response commands. User permissions are controlled by RBAC custom roles. For more information on role assignments, see [Create and manage roles](user-roles.md).
 
-
->[!NOTE]
->Live response is a cloud-based interactive shell, as such, specific command experience may vary in response time depending on network quality and system load between the end user and the target device.
+> [!NOTE]
+> Live response is a cloud-based interactive shell, as such, specific command experience may vary in response time depending on network quality and system load between the end user and the target device.
 
 ### Basic commands
 
-The following commands are available for user roles that are granted the ability to run **basic** live response commands. For more information on role assignments, see [Create and manage roles](user-roles.md). 
+The following commands are available for user roles that are granted the ability to run **basic** live response commands. For more information on role assignments, see [Create and manage roles](user-roles.md).
 
-| Command | Description |
-|---|---|--- |
-|`cd` | Changes the current directory. | 
-|`cls` | Clears the console screen.  |
-|`connect` | Initiates a live response session to the device. |
-|`connections` | Shows all the active connections. |
-|`dir` | Shows a list of files and subdirectories in a directory. |
-|`drivers` |  Shows all drivers installed on the device. |
-|`fg <command ID>` | Place the specified job in the foreground in the foreground, making it the current job. <br> NOTE: fg takes a “command ID” available from jobs, not a PID |
-|`fileinfo` | Get information about a file. |
-|`findfile` | Locates files by a given name on the device. |
-|`getfile <file_path>` | Downloads a file. |
-|`help` | Provides help information for live response commands. |
-|`jobs` | Shows currently running jobs, their ID and status. |
-|`persistence` | Shows all known persistence methods on the device. |
-|`processes` | Shows all processes running on the device. |
-|`registry` | Shows registry values. |
-|`scheduledtasks` | Shows all scheduled tasks on the device. |
-|`services` | Shows all services on the device. |
-|`trace` | Sets the terminal's logging mode to debug. |
+|Command|Description|
+|---|---|---|
+|`cd`|Changes the current directory.|
+|`cls`|Clears the console screen.|
+|`connect`|Initiates a live response session to the device.|
+|`connections`|Shows all the active connections.|
+|`dir`|Shows a list of files and subdirectories in a directory.|
+|`drivers`|Shows all drivers installed on the device.|
+|`fg <command ID>`|Place the specified job in the foreground in the foreground, making it the current job. <br> NOTE: fg takes a "command ID" available from jobs, not a PID|
+|`fileinfo`|Get information about a file.|
+|`findfile`|Locates files by a given name on the device.|
+|`getfile <file_path>`|Downloads a file.|
+|`help`|Provides help information for live response commands.|
+|`jobs`|Shows currently running jobs, their ID and status.|
+|`persistence`|Shows all known persistence methods on the device.|
+|`processes`|Shows all processes running on the device.|
+|`registry`|Shows registry values.|
+|`scheduledtasks`|Shows all scheduled tasks on the device.|
+|`services`|Shows all services on the device.|
+|`trace`|Sets the terminal's logging mode to debug.|
 
 ### Advanced commands
-The following commands are available for user roles that are granted the ability to run **advanced** live response commands. For more information on role assignments, see [Create and manage roles](user-roles.md). 
 
-| Command | Description |
+The following commands are available for user roles that are granted the ability to run **advanced** live response commands. For more information on role assignments, see [Create and manage roles](user-roles.md).
+
+|Command|Description|
 |---|---|
-| `analyze` | Analyses the entity with various incrimination engines to reach a verdict. |
-| `run` | Runs a PowerShell script from the library on the device. |
-| `library` | Lists files that were uploaded to the live response library. |
-| `putfile` | Puts a file from the library to the device. Files are saved in a working folder and are deleted when the device restarts by default. |
-| `remediate` | Remediates an entity on the device. The remediation action will vary depending on the entity type:<br>- File: delete<br>- Process: stop, delete image file<br>- Service: stop, delete image file<br>- Registry entry: delete<br>- Scheduled task: remove<br>- Startup folder item: delete file <br> NOTE: This command has a prerequisite command. You can use the `-auto` command in conjunction with `remediate` to automatically run the prerequisite command. 
-|`undo` | Restores an entity that was remediated. |
-
+|`analyze`|Analyses the entity with various incrimination engines to reach a verdict.|
+|`run`|Runs a PowerShell script from the library on the device.|
+|`library`|Lists files that were uploaded to the live response library.|
+|`putfile`|Puts a file from the library to the device. Files are saved in a working folder and are deleted when the device restarts by default.|
+|`remediate`|Remediates an entity on the device. The remediation action will vary depending on the entity type:<br>- File: delete<br>- Process: stop, delete image file<br>- Service: stop, delete image file<br>- Registry entry: delete<br>- Scheduled task: remove<br>- Startup folder item: delete file <br> NOTE: This command has a prerequisite command. You can use the `-auto` command in conjunction with `remediate` to automatically run the prerequisite command.
+|`undo`|Restores an entity that was remediated.|
 
 ## Use live response commands
 
@@ -177,11 +181,12 @@ The advanced commands offer a more robust set of actions that allow you to take 
 
 For scenarios when you'd like get a file from a device you're investigating, you can use the `getfile` command. This allows you to save the file from the device for further investigation.
 
->[!NOTE]
->The following file size limits apply:
->- `getfile` limit: 3 GB
->- `fileinfo` limit: 10 GB
->- `library` limit: 250 MB
+> [!NOTE]
+> The following file size limits apply:
+>
+> - `getfile` limit: 3 GB
+> - `fileinfo` limit: 10 GB
+> - `library` limit: 250 MB
 
 ### Download a file in the background
 
@@ -193,24 +198,22 @@ To enable your security operations team to continue investigating an impacted de
 
 Here are some examples:
 
-
-|Command  |What it does  |
-|---------|---------|
-|`getfile "C:\windows\some_file.exe" &`     |Starts downloading a file named *some_file.exe* in the background.         |
-|`fg 1234`     |Returns a download with command ID *1234* to the foreground.         |
-
+|Command|What it does|
+|---|---|
+|`getfile "C:\windows\some_file.exe" &`|Starts downloading a file named *some_file.exe* in the background.|
+|`fg 1234`|Returns a download with command ID *1234* to the foreground.|
 
 ### Put a file in the library
 
 Live response has a library where you can put files into. The library stores files (such as scripts) that can be run in a live response session at the tenant level.
 
-Live response allows PowerShell scripts to run, however you must first put the files into the library before you can run them. 
+Live response allows PowerShell scripts to run, however you must first put the files into the library before you can run them.
 
-You can have a collection of PowerShell scripts that can run on devices that you initiate live response sessions with. 
+You can have a collection of PowerShell scripts that can run on devices that you initiate live response sessions with.
 
 #### To upload a file in the library
 
-1. Click **Upload file to library**. 
+1. Click **Upload file to library**.
 
 2. Click **Browse** and select the file.
 
@@ -220,45 +223,59 @@ You can have a collection of PowerShell scripts that can run on devices that you
 
 5. If you'd like to be,  know what parameters are needed for the script, select the script parameters check box. In the text field, enter an example and a description.
 
-6. Click **Confirm**. 
+6. Click **Confirm**.
 
 7. (Optional) To verify that the file was uploaded to the library, run the `library` command.
 
-
 ### Cancel a command
-Anytime during a session, you can cancel a command by pressing CTRL + C.  
 
->[!WARNING]
->Using this shortcut will not stop the command in the agent side. It will only cancel the command in the portal. So, changing operations such as "remediate" may continue, while the command is canceled. 
+Anytime during a session, you can cancel a command by pressing CTRL + C.
 
-## Run a PowerShell script 
+> [!WARNING]
+> Using this shortcut will not stop the command in the agent side. It will only cancel the command in the portal. So, changing operations such as "remediate" may continue, while the command is canceled.
 
-Before you can run a PowerShell script, you must first upload it to the library. 
+## Run a PowerShell script
+
+Before you can run a PowerShell script, you must first upload it to the library.
 
 After uploading the script to the library, use the `run` command to run the script.
 
 If you plan to use an unsigned script in the session, you'll need to enable the setting in the [Advanced features settings](advanced-features.md) page.
 
->[!WARNING]
->Allowing the use of unsigned scripts may increase your exposure to threats.
+> [!WARNING]
+> Allowing the use of unsigned scripts may increase your exposure to threats.
 
 ## Apply command parameters
 
 - View the console help to learn about command parameters. To learn about an individual command, run:
- 
-    `help <command name>`
+
+  ```powershell
+  help <command name>
+  ```
 
 - When applying parameters to commands, note that parameters are handled based on a fixed order:
- 
-    `<command name> param1 param2` 
+
+  ```powershell
+  <command name> param1 param2
+  ```
 
 - When specifying parameters outside of the fixed order, specify the name of the parameter with a hyphen before providing the value:
- 
-    `<command name> -param2_name param2`
+
+  ```powershell
+  <command name> -param2_name param2
+  ```
 
 - When using commands that have prerequisite commands, you can use flags:
 
-    `<command name> -type file -id <file path> - auto` or `remediate file <file path> - auto`.
+  ```powershell
+  <command name> -type file -id <file path> - auto
+  ```
+
+  or
+
+  ```powershell
+  remediate file <file path> - auto`
+  ```
 
 ## Supported output types
 
@@ -267,12 +284,12 @@ Live response supports table and JSON format output types. For each command, the
 - `-output json`
 - `-output table`
 
->[!NOTE]
->Fewer fields are shown in table format due to the limited space. To see more details in the output, you can use the JSON output command so that more details are shown.
+> [!NOTE]
+> Fewer fields are shown in table format due to the limited space. To see more details in the output, you can use the JSON output command so that more details are shown.
 
 ## Supported output pipes
 
-Live response supports output piping to CLI and file. CLI is the default output behavior. You can pipe the output to a file using the following command: [command] > [filename].txt.  
+Live response supports output piping to CLI and file. CLI is the default output behavior. You can pipe the output to a file using the following command: [command] > [filename].txt.
 
 Example:
 
@@ -282,8 +299,8 @@ processes > output.txt
 
 ## View the command log
 
-Select the **Command log** tab to see the commands used on the device during a session. 
-Each command is tracked with full details such as:
+Select the **Command log** tab to see the commands used on the device during a session. Each command is tracked with full details such as:
+
 - ID
 - Command line
 - Duration
@@ -292,13 +309,14 @@ Each command is tracked with full details such as:
 ## Limitations
 
 - Live response sessions are limited to 25 live response sessions at a time.
-- Live response session inactive timeout value is 30 minutes. 
+- Live response session inactive timeout value is 30 minutes.
 - A user can initiate up to 10 concurrent sessions.
 - A device can only be in one session at a time.
 - The following file size limits apply:
-   - `getfile` limit: 3 GB
-   - `fileinfo` limit: 10 GB
-   - `library` limit: 250 MB
+  - `getfile` limit: 3 GB
+  - `fileinfo` limit: 10 GB
+  - `library` limit: 250 MB
 
 ## Related article
+
 - [Live response command examples](live-response-command-examples.md)

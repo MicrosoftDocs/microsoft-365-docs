@@ -30,7 +30,7 @@ ms.technology: mde
 - Virtual desktop infrastructure (VDI) devices
 - Windows 10, Windows Server 2019, Windows Server 2008R2/2012R2/2016
 
->Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configvdi-abovefoldlink)
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configvdi-abovefoldlink)
 
 ## Onboard non-persistent virtual desktop infrastructure (VDI) devices
 
@@ -173,7 +173,7 @@ If offline servicing isn't a viable option for your non-persistent VDI environme
     PsExec.exe -s cmd.exe
     cd "C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Cyber"
     del *.* /f /s /q
-    REG DELETE “HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection" /v senseGuid /f
+    REG DELETE "HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection" /v senseGuid /f
     exit
     ```
 

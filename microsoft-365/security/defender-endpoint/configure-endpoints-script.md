@@ -26,7 +26,7 @@ ms.technology: mde
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
->Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
 
 You can also manually onboard individual devices to Defender for Endpoint. You might want to do this first when testing the service before you commit to onboarding all devices in your network.
 
@@ -82,7 +82,7 @@ You can manually configure the sample sharing setting on the device by using *re
 The configuration is set through the following registry key entry:
 
 ```console
-Path: “HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection”
+Path: "HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection"
 Name: "AllowSampleCollection"
 Value: 0 or 1
 ```
@@ -92,7 +92,7 @@ Possible values are:
 - 0 - doesn't allow sample sharing  from this device
 - 1 - allows sharing of all file types from this device
 
-The default value in case the registry key doesn’t exist is 1.
+The default value in case the registry key doesn't exist is 1.
 
 
 ## Offboard devices using a local script
