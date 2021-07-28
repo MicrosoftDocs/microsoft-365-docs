@@ -67,21 +67,21 @@ You can verify that your Microsoft 365 tenant is properly configured to use the 
 
 3. Run the Test-IRMConfiguration cmdlet using the following syntax:
 
-     ```powershell
-     Test-IRMConfiguration [-Sender <email address> -Recipient <email address>]
-     ```
+   ```powershell
+   Test-IRMConfiguration [-Sender <email address> -Recipient <email address>]
+   ```
 
    **Example**:
 
-     ```powershell
-     Test-IRMConfiguration -Sender securityadmin@contoso.com -Recipient securityadmin@contoso.com
-     ```
+   ```powershell
+   Test-IRMConfiguration -Sender securityadmin@contoso.com -Recipient securityadmin@contoso.com
+   ```
 
-     - For sender and recipient, use the email address of any user in your Microsoft 365 tenant.
+   - For sender and recipient, use the email address of any user in your Microsoft 365 tenant.
 
      Your results should be similar to:
 
-     ```text
+     ```console
      Results : Acquiring RMS Templates ...
                 - PASS: RMS Templates acquired.  Templates available: Contoso  - Confidential View Only, Contoso  - Confidential, Do Not
             Forward.
