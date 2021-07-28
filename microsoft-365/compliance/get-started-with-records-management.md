@@ -48,9 +48,7 @@ Members of your compliance team who are responsible for records management need 
 
 For a read-only role, you can create a new role group and add the **View-Only Record Management** role to this group.
 
-For more information about role groups and roles, see [Permissions in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center).
-
-For instructions to add users to role groups and assign roles, see [Give users access to the Security & Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
+For instructions to add users to the default roles or create your own role groups, see [Permissions in the Microsoft 365 compliance center](microsoft-365-compliance-center-permissions.md).
 
 These permissions are required only to create, configure, and apply retention labels that declare records, and manage disposition. The person configuring these labels doesn't require access to the content.
 

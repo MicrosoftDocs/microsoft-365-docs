@@ -187,9 +187,9 @@ The \*.blob.core.windows.net URL endpoint can be replaced with the URLs shown in
 
 Verify the proxy configuration completed successfully, that WinHTTP can discover and communicate through the proxy server in your environment, and that the proxy server allows traffic to the Defender for Endpoint service URLs.
 
-1. Download the [MDATP Client Analyzer tool](https://aka.ms/mdatpanalyzer) to the PC where Defender for Endpoint sensor is running on.
+1. Download the [Micrsofot Defender for Endpoint Client Analyzer tool](https://aka.ms/mdeanalyzer) to the PC where Defender for Endpoint sensor is running on.
 
-2. Extract the contents of MDATPClientAnalyzer.zip on the device.
+2. Extract the contents of MDEClientAnalyzer.zip on the device.
 
 3. Open an elevated command-line:
    1. Go to **Start** and type **cmd**.
@@ -198,20 +198,20 @@ Verify the proxy configuration completed successfully, that WinHTTP can discover
 4. Enter the following command and press **Enter**:
 
     ```PowerShell
-    HardDrivePath\MDATPClientAnalyzer.cmd
+    HardDrivePath\MDEClientAnalyzer.cmd
     ```
 
-    Replace *HardDrivePath* with the path where the MDATPClientAnalyzer tool was downloaded to, for example:
+    Replace *HardDrivePath* with the path where the MDEClientAnalyzer tool was downloaded to, for example:
 
     ```PowerShell
-    C:\Work\tools\MDATPClientAnalyzer\MDATPClientAnalyzer.cmd
+    C:\Work\tools\MDEClientAnalyzer\MDEClientAnalyzer.cmd
     ```
 
-5. Extract the *MDATPClientAnalyzerResult.zip* file created by tool in the folder used in the *HardDrivePath*.
+5. Extract the *MDEClientAnalyzerResult.zip* file created by tool in the folder used in the *HardDrivePath*.
 
-6. Open *MDATPClientAnalyzerResult.txt* and verify that you have performed the proxy configuration steps to enable server discovery and access to the service URLs.
+6. Open *MDEClientAnalyzerResult.txt* and verify that you have performed the proxy configuration steps to enable server discovery and access to the service URLs.
 
-   The tool checks the connectivity of Defender for Endpoint service URLs that Defender for Endpoint client is configured to interact with. It then prints the results into the *MDATPClientAnalyzerResult.txt* file for each URL that can potentially be used to communicate with the Defender for Endpoint services. For example:
+   The tool checks the connectivity of Defender for Endpoint service URLs that Defender for Endpoint client is configured to interact with. It then prints the results into the *MDEClientAnalyzerResult.txt* file for each URL that can potentially be used to communicate with the Defender for Endpoint services. For example:
 
    ```text
    Testing URL : https://xxx.microsoft.com/xxx
@@ -227,7 +227,7 @@ If at least one of the connectivity options returns a (200) status, then the Def
 However, if the connectivity check results indicate a failure, an HTTP error is displayed (see HTTP Status Codes). You can then use the URLs in the table shown in [Enable access to Defender for Endpoint service URLs in the proxy server](#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server). The URLs you'll use will depend on the region selected during the onboarding procedure.
 
 > [!NOTE]
-> The Connectivity Analyzer tool is not compatible with ASR rule [Block process creations originating from PSExec and WMI commands](/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction#attack-surface-reduction-rules). You will need to temporarily disable this rule to run the connectivity tool.
+> The Connectivity Analyzer tool cloud connectivity checks are not compatible with Attack Surface Reduction rule [Block process creations originating from PSExec and WMI commands](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules.md#block-process-creations-originating-from-psexec-and-wmi-commands). You will need to temporarily disable this rule to run the connectivity tool. Alternatively, you can temporarily add [ASR exclusions](/microsoft-365/security/defender-endpoint/customize-attack-surface-reduction.md#exclude-files-and-folders) when running the analyzer.
 >
 > When the TelemetryProxyServer is set, in Registry or via Group Policy, Defender for Endpoint will fall back to direct if it can't access the defined proxy.
 
