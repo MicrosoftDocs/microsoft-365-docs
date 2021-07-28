@@ -58,7 +58,7 @@ Before managing the Microsoft Teams integration within Instructure Canvas, it is
 
 Set up the Microsoft Teams LTI 1.3 Integration.
 
-As a Canvas Admin, you'll need to add the Microsoft Teams classes LTI app within your environment. Make a note of the LTI Client ID for the app.
+As a Canvas Admin, you'll need to add the Microsoft Teams classes LTI app within your environment. Access the the Developer Key listing in the main account, switch to the inherited keys, and  enable the Teams LTI tool. Make a note of the LTI Client ID for the app.
 
  - Microsoft Teams classes - 170000000000570
 
