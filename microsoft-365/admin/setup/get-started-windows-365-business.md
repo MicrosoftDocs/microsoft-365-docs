@@ -109,7 +109,7 @@ While on the Cloud PC home page, users can perform actions on their Cloud PCs by
     - Removes your personal files.
     - Removes any changes you made to settings.
     - Removes your apps.</br>
-    > [IMPORTANT]  
+    > [!IMPORTANT]  
     > Before resetting your Cloud PC, make sure to back up any important files you need to keep to a cloud storage service or external storage. Resetting your Cloud PC will delete these files. </br>
 - **Troubleshoot**: Troubleshoot and attempt to fix any issues that may be keeping a user from connecting to their Cloud PC. The following table describes the return states that can result from the checks.
 
