@@ -102,7 +102,7 @@ Go to Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](
 
 ## Configure your attack surface reduction capabilities
 
-To reduce your attack surfaces, configure the following capabilities: 
+Attack surface reduction is all about reducing the places and ways your organization is open to attack. Defender for Endpoint Plan 1 (preview) includes several features and capabilities to help you reduce your attack surfaces: 
 
 - [Ransomware mitigation](#ransomware-mitigation)
 - [Device control](#device-control)
