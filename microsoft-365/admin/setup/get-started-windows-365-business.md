@@ -161,3 +161,5 @@ If you need to get help while setting up Windows 365 Business in the Microsoft 3
 [Windows 365 Business](https://www.microsoft.com/windows-365/business) </br>
 [Windows 365 Business sizing options](windows-365-business-sizing.md) </br>
 [Windows 365 Business plan comparison](https://www.microsoft.com/windows-365/business/compare-plans-pricing) </br>
+[Remote Desktop client app comparison](https://docs.microsoft.com/windows-server/remote/remote-desktop-services/clients/remote-desktop-app-compare)</br>
+[Set up Microsoft Teams in your small business](https://docs.microsoft.com/microsoftteams/deploy-small-business)
