@@ -36,6 +36,16 @@ A question we often get is, "What should I do to secure data and protect access 
 
 You need to be a global administrator to complete the steps in this solution.
 
+To complete the steps in this series, you use these Microsoft 365 capabilities and features.
+
+|Product or component|Capability or feature|Licensing|
+|---|---|---|
+|Microsoft 365 admin center|Convert mailbox, forward email, revoke access, remove user |Microsoft 365 or Office 365 for business or enterprise subscription|
+|Exchange admin center|Block user, block access to email, wipe device |Microsoft 365 or Office 365 for business or enterprise subscription|
+|OneDrive and SharePoint |Give access to other users |Microsoft 365 or Office 365 for business or enterprise subscription|
+|Outlook|Import pst files, add mailbox |Microsoft 365 or Office 365 for business or enterprise subscription|
+|Active Directory|Remove users in hybrid environments |Microsoft 365 or Office 365 for business or enterprise subscription|
+
 ## Solution: Remove a former employee
 
 > [!IMPORTANT]
