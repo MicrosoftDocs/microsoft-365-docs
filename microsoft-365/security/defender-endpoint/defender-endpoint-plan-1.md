@@ -165,16 +165,9 @@ Most organizations use various devices and operating systems. Currently, Defende
 - iOS
 - Android OS
 
-> [!TIP]
-> **Defender for Endpoint Plan 2** supports Windows clients and servers, macOS, iOS, Android OS, and Linux. To learn more, see the following resources:
-> - [Defender for Endpoint on Windows](microsoft-defender-endpoint.md)
-> - [Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
-> - [Defender for Endpoint on iOS](microsoft-defender-endpoint-ios.md)
-> - [Defender for Endpoint on Android](microsoft-defender-endpoint-android.md)
-> - [Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
-
 ## Next steps
 
+- [Compare Microsoft Defender for Endpoint Plan 1 (preview) to Plan 2](defender-endpoint-plan-1-2.md)
 - [Set up and configure Defender for Endpoint Plan 1 (preview)](mde-p1-setup-configuration.md)
 - [Get started with Defender for Endpoint Plan 1 (preview)](mde-plan1-getting-started.md)
 - [Manage Defender for Endpoint Plan 1 (preview)](mde-p1-maintenance-operations.md)
