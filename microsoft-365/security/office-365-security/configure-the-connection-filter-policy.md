@@ -70,7 +70,7 @@ This article describes how to configure the default connection filter policy in 
 
 ## Use the Microsoft 365 Defender portal to modify the default connection filter policy
 
-1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Policies** section \> **Anti-spam**.
+1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** page \> **Policies** section \> **Anti-spam**.
 
 2. On the **Anti-spam policies** page, select **Connection filter policy (Default)** from the list by clicking on the name of the policy.
 
@@ -101,7 +101,7 @@ This article describes how to configure the default connection filter policy in 
 
 ## Use the Microsoft 365 Defender portal to view the default connection filter policy
 
-1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Policies** section \> **Anti-spam**.
+1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** page \> **Policies** section \> **Anti-spam**.
 
 2. On the **Anti-spam policies** page, the following properties are displayed in the list of policies:
 
@@ -148,7 +148,7 @@ For detailed syntax and parameter information, see [Set-HostedConnectionFilterPo
 
 To verify that you've successfully modified the default connection filter policy, do any of the following steps:
 
-- In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Policies** section \> **Anti-spam** \> select **Connection filter policy (Default)** from the list by clicking on the name of the policy, and verify the settings.
+- In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** page \> **Policies** section \> **Anti-spam** \> select **Connection filter policy (Default)** from the list by clicking on the name of the policy, and verify the settings.
 
 - In Exchange Online PowerShell or standalone EOP PowerShell, run the following command and verify the settings:
 

@@ -166,7 +166,7 @@ Set-OrganizationConfig -OAuth2ClientProfileEnabled $true
 
 ## Verify
 
-Once you enable HMA, a client's next login will use the new auth flow. Note that just turning on HMA won't trigger a reauthentication for any client. The clients reauthenticate based on the lifetime of the auth tokens and/or certs they have.
+Once you enable HMA, a client's next login will use the new auth flow. Note that just turning on HMA won't trigger a reauthentication for any client, and it might take a while for Exchange to pick up the new settings.
 
 You should also hold down the CTRL key at the same time you right-click the icon for the Outlook client (also in the Windows Notifications tray) and click 'Connection Status'. Look for the client's SMTP address against an 'Authn' type of 'Bearer\*', which represents the bearer token used in OAuth.
 

@@ -5,10 +5,9 @@ f1.keywords:
 ms.author: dansimp
 author: dansimp
 manager: dansimp
-ms.date: 
+ms.date: 06/28/2021
 audience: ITPro
 ms.topic: conceptual
-
 localization_priority: Normal
 search.appverid: 
   - MET150
@@ -71,7 +70,7 @@ To put it another way: as a security service, we're acting on your behalf to pre
 ## Exceptions
 
 > [!NOTE]
-> In July 2021, secure by default will be extended to Exchange mail flow rules (also known as transport rules). If you use mail flow rules to allow third-party phishing simulations or unfiltered delivery to security operation mailboxes, you eventually need to eliminate these rules and switch to using the [advanced delivery policy](configure-advanced-delivery.md) _when the feature is available to you_.
+> In August 2021, secure by default will be extended to Exchange mail flow rules (also known as transport rules). If you use mail flow rules to allow third-party phishing simulations or unfiltered delivery to security operation mailboxes, you eventually need to eliminate these rules and switch to using the [advanced delivery policy](configure-advanced-delivery.md) _when the feature is available to you_.
 
 The only override that allows high confidence phishing message to bypass filtering is mail flow rules. To use mail flow rules to bypass filtering, see [Use mail flow rules to set the SCL in messages](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl).
 

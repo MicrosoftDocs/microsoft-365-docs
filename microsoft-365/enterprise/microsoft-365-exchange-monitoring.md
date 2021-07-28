@@ -84,7 +84,7 @@ There are two ways you can provide feedback:
 
 ## Frequently asked questions
 
-#### 1.	Why don’t I see “Exchange Online monitoring” under Health in the Microsoft 365 admin center? 
+#### 1. Why don’t I see “Exchange Online monitoring” under Health in the Microsoft 365 admin center? 
 
 First, make sure you’ve enabled the new admin center on the **Home** page of the Microsoft 365 admin center. 
 
@@ -95,21 +95,21 @@ Then make sure you meet both of the following requirements:
 
 If the license count for your organization goes below 5,000 users and the monthly active users goes below 50 users, Exchange Online monitoring won’t be enabled until these requirements are met.
 
-#### 2.	The active user count in the dashboard for each client appears to be low. We have a lot of active licenses assigned to users. What does this mean? 
+#### 2. The active user count in the dashboard for each client appears to be low. We have a lot of active licenses assigned to users. What does this mean? 
 
 The active user count shown in monitoring is based on a 30-minute window where users have performed the activity called out in the feature. This shouldn’t be confused with usage numbers. To view usage numbers, use activity reports in the Microsoft 365 admin center (**Reports > Usage**).
 
-#### 3.	Will there be other monitoring scenarios for other services such as Teams and SharePoint? 
+#### 3. Will there be other monitoring scenarios for other services such as Teams and SharePoint? 
 
 Microsoft is integrating this experience directly inside the Service Health dashboard in the Microsoft 365 admin center. This will provide opportunities for Microsoft to extend monitoring scenarios for other services, which will be announced when there is news to share. 
 
-#### 4.	What is the plan for general availability of this experience? 
+#### 4. What is the plan for general availability of this experience? 
 
 Microsoft has integrated Exchange Online monitoring directly on the **Service Health** dashboard in the Microsoft 365 admin center. 
 
 With this new integrated experience, Microsoft's plan is to collect your feedback and then define our plan for general availability.
 
-#### 5.	Is this a free (included) or paid (extra) feature? 
+#### 5. Is this a free (included) or paid (extra) feature? 
 
 This feature is in Public preview and only available for customers that meet the requirements in question 1.
 
@@ -119,13 +119,12 @@ This feature is in Public preview and only available for customers that meet the
 >
 --> 
 
-#### 6.	How do I provide feedback? 
+#### 6. How do I provide feedback? 
 
 For general feedback, use the **Give feedback** icon on the bottom-right corner of the **Exchange Online** monitoring page. 
 
 For feedback on incidents or advisories, use the **Is this post helpful?** link.
 
-#### 7.	Where is the data instrumented for the scenarios that show activity trends?
+#### 7. Where is the data instrumented for the scenarios that show activity trends?
 
 The data is instrumented in the Exchange Online service. If there is a failure that happens before the request reaches Exchange Online or there is a failure in Exchange Online, you will see a drop in the activity signal.
-

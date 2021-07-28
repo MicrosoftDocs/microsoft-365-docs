@@ -110,7 +110,7 @@ Data from DLP on-premises scanner can be viewed in [Activity explorer](data-clas
 
 2. Refer to the procedures in [Get started with Activity explorer](data-classification-activity-explorer.md) to access and filter all the data for your on-premises scanner locations.
 
-3. Open the [Audit log in the Compliance center](https://security.microsoft.com/auditlogsearch). During the public preview the DLP rule matches are available in Audit log UI or accessible by [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog?view=exchange-ps) PowerShell 
+3. Open the [Audit log in the Compliance center](https://security.microsoft.com/auditlogsearch). During the public preview the DLP rule matches are available in Audit log UI or accessible by [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) PowerShell 
 
 
 ## Next steps

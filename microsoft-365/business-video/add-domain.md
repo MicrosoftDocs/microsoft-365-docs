@@ -15,6 +15,7 @@ ms.collection:
 ms.custom: 
 - AdminSurgePortfolio
 - adminvideo
+- AdminTemplateSet
 monikerRange: 'o365-worldwide'
 search.appverid:
 - BCS160

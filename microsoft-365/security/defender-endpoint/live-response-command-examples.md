@@ -33,8 +33,7 @@ Learn about common commands used in live response and see examples on how they a
 
 Depending on the role that's been granted to you, you can run basic or advanced live response commands. For more information on basic and advanced commands, see [Investigate entities on devices using live response](live-response.md).
 
-
-## analyze 
+## analyze
 
 ```console
 # Analyze the file malware.txt
@@ -105,16 +104,29 @@ getfile c:\Users\user\Desktop\work.txt -auto
 >
 > The following file types **cannot** be downloaded using this command from within Live Response:
 >
-> * [Reparse point files](/windows/desktop/fileio/reparse-points/)
-> * [Sparse files](/windows/desktop/fileio/sparse-files/)
-> * Empty files
-> * Virtual files, or files that are not fully present locally
+> - [Reparse point files](/windows/desktop/fileio/reparse-points/)
+> - [Sparse files](/windows/desktop/fileio/sparse-files/)
+> - Empty files
+> - Virtual files, or files that are not fully present locally
 >
-> These file types **are** supported by [PowerShell](/powershell/scripting/overview?view=powershell-6/?&preserve-view=true).
+> These file types **are** supported by [PowerShell](/powershell/scripting/overview).
 >
 > Use PowerShell as an alternative, if you have problems using this command from within Live Response.
 
+## library
+
+```console
+# List files in the library
+library
+```
+
+```console
+# Delete a file from the library
+library delete script.ps1
+```
+
 ## processes
+
 ```console
 # Show all processes
 processes
@@ -193,11 +205,12 @@ run script.ps1
 # Run PowerShell script from the library with arguments
 run get-process-by-name.ps1 -parameters "-processName Registry"
 ```
+
 >[!NOTE]
 >
 > For long running commands such as '**run**' or '**getfile**', you may want to use the '**&**' symbol at the end of the command to perform that action in the background.
 > This will allow you to continue investigating the machine and return to the background command when done using '**fg**' [basic command](live-response.md#basic-commands).
->
+
 ## scheduledtask
 
 ```console
@@ -215,7 +228,6 @@ scheduledtasks Microsoft\Windows\Subscription\LicenseAcquisition
 scheduledtasks "Microsoft\Configuration Manager\Configuration Manager Health Evaluation"
 ```
 
-
 ## undo
 
 ```console
@@ -231,17 +243,4 @@ undo scheduledtask Microsoft\Windows\Subscription\LicenseAcquisition
 ```console
 # Restore remediated file
 undo file c:\Users\user\Desktop\malware.exe
-```
-
-
-## library
-
-```console
-# List files in the library
-library
-```
-
-```console
-# Delete a file from the library
-library delete script.ps1
 ```

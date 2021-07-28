@@ -23,7 +23,7 @@ With SharePoint site geo move, you can move SharePoint sites to other geo locati
 
 The following types of site can be moved between geo locations:
 
-- Microsoft 365 Group-connected sites
+- Microsoft 365 Group-connected sites, including those associated with Microsoft Teams
 - Modern sites without a Microsoft 365 Group association
 - Classic SharePoint sites
 - Communication sites
@@ -172,11 +172,11 @@ While the move is in progress the site is set to read-only. Once the move is com
 
 Users with permissions to site will continue to have access to the site during the move and after it's complete.
 
-### Sync Client
+### Sync app
 
-The sync client will automatically detect and seamlessly transfer syncing to the new site location once the site move is complete. The user does not need to sign in again or take any other action. (Version 17.3.6943.0625 or later of the sync client required.)
+The sync app will automatically detect and seamlessly transfer syncing to the new site location once the site move is complete. The user does not need to sign in again or take any other action. (Version 17.3.6943.0625 or later of the sync app required.)
 
-If a user updates a file while the move is in progress, the sync client will notify them that file uploads are pending while the move is underway.
+If a user updates a file while the move is in progress, the sync app will notify them that file uploads are pending while the move is underway.
 
 ### Sharing links
 

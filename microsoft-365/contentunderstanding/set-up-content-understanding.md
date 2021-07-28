@@ -94,7 +94,7 @@ Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.co
 
     Click **Next**.
 
-5. On the **Create Content Center** page, you can create a SharePoint content center site on which your users can create and manage document understanding models.
+5. On the **Create Content Center** page, you can create a SharePoint content center site on which your users can create and manage document understanding models. If you previously created a content center from the SharePoint admin center, that information will display here and you can just select **Next**.
 
     1. For **Site name**, type the name you want to give your content center site.
     

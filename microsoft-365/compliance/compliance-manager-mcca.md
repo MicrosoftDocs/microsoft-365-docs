@@ -2,8 +2,8 @@
 title: "Microsoft Compliance Configuration Analyzer for Compliance Manager"
 f1.keywords:
 - NOCSH
-ms.author: chvukosw
-author: chvukosw
+ms.author: v-jgriffee
+author: jmgriffee
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -162,4 +162,4 @@ Select the dropdown next to the **Recommendation** label to the right of the imp
 
 For more detailed information on installing, setting up, and using MCCA, see the [README instructions on GitHub](https://github.com/OfficeDev/MCCA#overview) (no GitHub account required).
 
-For more information on Windows PowerShell, start at [How to use the PowerShell documentation](/powershell/scripting/how-to-use-docs?view=powershell-7). See also [Starting Windows PowerShell](/powershell/scripting/windows-powershell/starting-windows-powershell?view=powershell-7).
+For more information on Windows PowerShell, start at [How to use the PowerShell documentation](/powershell/scripting/how-to-use-docs). See also [Starting Windows PowerShell](/powershell/scripting/windows-powershell/starting-windows-powershell).

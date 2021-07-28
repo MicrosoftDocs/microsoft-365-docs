@@ -12,15 +12,12 @@ ms.author: deniseb
 ms.reviewer: marcmcc
 manager: dansimp
 ms.custom: nextgen
-ms.date: 04/28/2021
+ms.date: 06/17/2021
 ms.technology: mde
 ms.topic: article
 ---
 
 # Turn on block at first sight
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **Applies to:**
 
@@ -29,7 +26,7 @@ ms.topic: article
 This article describes an antivirus/antimalware feature known as "block at first sight", and describes how to enable block at first sight for your organization. 
 
 > [!TIP]
-> This article is intended for enterprise admins and IT Pros who manage security settings for organizations. If you are not an enteprise admin or IT Pro but you have questions about block at first sight, see [Not an enterprise admin or IT Pro?](#not-an-enterprise-admin-or-it-pro).
+> This article is intended for enterprise admins and IT Pros who manage security settings for organizations. If you are not an enteprise admin or IT Pro but you have questions about block at first sight, see the [Not an enterprise admin or IT Pro?](#not-an-enterprise-admin-or-it-pro) section.
 
 ## What is "block at first sight"?
 
@@ -50,7 +47,7 @@ Microsoft Defender Antivirus uses multiple detection and prevention technologies
 ![List of Microsoft Defender AV engines](images/microsoft-defender-atp-next-generation-protection-engines.png)  
 
 > [!TIP]
-> To learn more, see this blog: [Get to know the advanced technologies at the core of Microsoft Defender for Endpoint next-generation protection](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/).
+> To learn more, see [(Blog) Get to know the advanced technologies at the core of Microsoft Defender for Endpoint next-generation protection](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/).
 
 ## A few things to know about block at first sight
 
@@ -80,7 +77,7 @@ Microsoft Defender Antivirus uses multiple detection and prevention technologies
    - **Time extension for file scanning by the cloud**: 50
    - **Prompt users before sample submission**: Send all data without prompting
 
-   ![Intune config](images/defender/intune-block-at-first-sight.png)
+   :::image type="content" source="../../media/intune-block-at-first-sight.png" alt-text="Intune config block at first sight":::
 
 4. Save your settings.
 
@@ -134,7 +131,7 @@ You can confirm that block at first sight is enabled on individual client device
 
 2. Select **Virus & threat protection**, and then, under **Virus & threat protection settings**, select **Manage Settings**.
 
-   ![Screenshot of the Virus & threat protection settings label in the Windows Security app](images/defender/wdav-protection-settings-wdsc.png)
+   :::image type="content" source="../../media/wdav-protection-settings-wdsc.png" alt-text="Screenshot of the Virus & threat protection settings label in the Windows Security app":::
 
 3. Confirm that **Cloud-delivered protection** and **Automatic sample submission** are both turned on.
 
@@ -144,7 +141,9 @@ You can confirm that block at first sight is enabled on individual client device
 
 ## Validate block at first sight is working
 
-To validate that the feature is working, follow the guidance in [Validate connections between your network and the cloud](configure-network-connections-microsoft-defender-antivirus.md#validate-connections-between-your-network-and-the-cloud).
+To validate that the feature is working, download the [Block at first sight sample file](https://demo.wd.microsoft.com/Page/BAFS). To download the file, you will need an account in Azure AD that has either the Security Administrator or Global Administrator role assigned.
+
+To validate that cloud-enabled protection is working, follow the guidance in [Validate connections between your network and the cloud](configure-network-connections-microsoft-defender-antivirus.md#validate-connections-between-your-network-and-the-cloud). 
 
 ## Turn off block at first sight
 

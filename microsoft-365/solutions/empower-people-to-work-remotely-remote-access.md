@@ -9,13 +9,13 @@ audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 localization_priority: Priority
-ms.collection: 
+ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - remotework
 - m365solution-remotework
 - m365solution-scenario
-ms.custom: 
+ms.custom:
 description: Ensure that your remote workers can access on-premises resources while optimizing access to Microsoft 365 cloud services.
 ---
 
@@ -46,7 +46,7 @@ Without split tunneling, all of your remote work traffic gets sent across the VP
 
 ![Network traffic from VPN clients without tunneling](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-before-tunneling.png)
 
-Microsoft 365 traffic must take an indirect route through your organization, which could be forwarded to a Microsoft network entry point far away from the VPN client’s physical location. This indirect path adds latency to the network traffic and decreases overall performance. 
+Microsoft 365 traffic must take an indirect route through your organization, which could be forwarded to a Microsoft network entry point far away from the VPN client’s physical location. This indirect path adds latency to the network traffic and decreases overall performance.
 
 With split tunneling, you can configure your VPN client to exclude specific types of traffic from being sent over the VPN connection to the organization network.
 
@@ -62,7 +62,7 @@ For more information and guidance, see [Optimize Office 365 connectivity for rem
 
 ## Deploy remote access when all your apps are web apps and you have hybrid identity
 
-If your remote workers are not using a traditional VPN client and your on-premises user accounts and groups are synchronized with Azure AD, you can use Azure AD Application Proxy to provide secure remote access for web-based applications hosted on on-premises servers. Web-based applications include SharePoint Server sites, Outlook Web Access servers, or any other web-based line of business applications. 
+If your remote workers are not using a traditional VPN client and your on-premises user accounts and groups are synchronized with Azure AD, you can use Azure AD Application Proxy to provide secure remote access for web-based applications hosted on on-premises servers. Web-based applications include SharePoint Server sites, Outlook Web Access servers, or any other web-based line of business applications.
 
 Here are the components of Azure AD Application Proxy.
 
@@ -70,35 +70,32 @@ Here are the components of Azure AD Application Proxy.
 
 For more information, see this [overview of Azure AD Application Proxy](/azure/active-directory/manage-apps/application-proxy).
 
->[!Note]
->Azure AD Application Proxy is not included with a Microsoft 365 subscription. You must pay for usage with a separate Azure subscription.
->
+> [!NOTE]
+> Azure AD Application Proxy is not included with a Microsoft 365 subscription. You must pay for usage with a separate Azure subscription.
 
 ## Deploy remote access when not all your apps are web apps
 
 If your remote workers are not using a traditional VPN client and you have apps that are not web-based, you can use an Azure Point-to-Site (P2S) VPN.
 
-A P2S VPN connection creates a secure connection from a remote worker’s device to your organization network through an Azure virtual network. 
+A P2S VPN connection creates a secure connection from a remote worker’s device to your organization network through an Azure virtual network.
 
 ![Components of Azure P2S VPN](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-p2s-vpn.png)
 
 For more information, see this [overview of P2S VPN](/azure/vpn-gateway/point-to-site-about).
 
->[!Note]
->Azure P2S VPN is not included with a Microsoft 365 subscription. You must pay for usage with a separate Azure subscription.
->
+> [!NOTE]
+> Azure P2S VPN is not included with a Microsoft 365 subscription. You must pay for usage with a separate Azure subscription.
 
-## Deploy Windows Virtual Desktop to provide remote access for remote workers using personal devices 
+## Deploy Windows Virtual Desktop to provide remote access for remote workers using personal devices
 
 To support remote workers who can only use their personal and unmanaged devices, use Windows Virtual Desktop in Azure to create and allocate virtual desktops for your users to use from home. Virtualized PCs can act just like PCs connected to your organization network.
 
 ![Components of Azure Windows Virtual Desktop](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-windows-virtual-desktop.png)
 
-For more information, see this [overview of Windows Virtual Desktop](/azure/virtual-desktop/overview). 
+For more information, see this [overview of Windows Virtual Desktop](/azure/virtual-desktop/overview).
 
->[!Note]
+> [!NOTE]
 >Windows Virtual Desktop is not included with a Microsoft 365 subscription. You must pay for usage with a separate Azure subscription.
->
 
 ## Protect your Remote Desktop Services connections with the Remote Desktop Services Gateway
 

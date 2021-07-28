@@ -44,7 +44,9 @@ The device must have this software preinstalled:
 - the 64-bit version of Microsoft 365 Apps for enterprise 
 - All applicable device drivers
 
-
+> [!NOTE]
+> Windows 11 will be an additional option for preinstalled software once it has reached general availability.
+>
 ### Physical features
 
 Devices must have these capabilities:
@@ -57,7 +59,8 @@ Devices must have these capabilities:
 For more about these capabilities and the technologies related to them that the service uses, see [Microsoft Managed Desktop technologies](../intro/technologies.md).
 
 > [!NOTE]
-> ARM processors are not supported.
+>- ARM processors are not supported.
+>- Windows 11 has additional [hardware requirements](/windows/whats-new/windows-11-requirements).
 
 Devices should meet or exceed following limits for storage and memory:
 

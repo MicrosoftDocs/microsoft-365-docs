@@ -26,8 +26,7 @@ Follow these steps to configure threat protection across Microsoft 365.
 
 [Multi-factor authentication](/azure/active-directory/authentication/concept-mfa-howitworks) (MFA) requires users to verify their identity with a phone call or an authenticator app. [Conditional access policies](/azure/active-directory/conditional-access/overview) define certain requirements that must be met in order for users to access apps and data in Microsoft 365. MFA and Conditional Access policies work together to protect your organization. For example, if someone attempts to sign in from a mobile device using an account that is not enabled for MFA, and a Conditional Access policy requires MFA to be in effect, that user is prevented from signing in.  
 
-Microsoft has tested and recommends a specific set of Conditional Access and related policies for protecting access to all of your SaaS applications, especially Microsoft 365. Policies are recommended for baseline, sensitive, and highly regulated protection. Begin by implementing the policies for baseline protection. 
-
+Microsoft has tested and recommends a specific set of Conditional Access and related policies for protecting access to all of your SaaS applications, especially Microsoft 365. Policies are recommended for baseline, sensitive, and highly regulated protection. Begin by implementing the policies for baseline protection.
 
 [![Common policies for configuring identity and device access](../media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png)
 [See a larger version of this image](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png)
@@ -50,6 +49,7 @@ Microsoft has tested and recommends a specific set of Conditional Access and rel
 [Microsoft Defender for Identity](/defender-for-identity/what-is) is a cloud-based security solution that works with your on-premises Active Directory Domain Services (AD DS) signals to identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions directed at your organization.
 
 Microsoft Defender for Identity enables security operations (SecOps) analysts and security professionals struggling to detect advanced attacks in hybrid environments to:
+
 - Monitor users, entity behavior, and activities with learning-based analytics.
 - Protect user identities and credentials stored in Active Directory.
 - Identify and investigate suspicious user activities and advanced attacks throughout the kill chain.
@@ -92,9 +92,13 @@ Microsoft 365 Defender unifies alerts, incidents, automated investigation and re
 
 [Microsoft Defender for Office 365](../security/office-365-security/defender-for-office-365.md) safeguards your organization against malicious threats in email messages (attachments and URLs), Office documents, and collaboration tools. The following table lists Microsoft Defender for Office 365 features and capabilities that are included in Microsoft 365 E5:
 
+<br>
+
+****
+
 |Configuration, protection, and detection capabilities|Automation, investigation, remediation, and education capabilities|
-|:---|:---|
-|[Safe Attachments](../security/office-365-security/safe-attachments.md)<br/>[Safe Links](../security/office-365-security/safe-links.md)<br/>[Safe Documents](../security/office-365-security/safe-docs.md)<br/>[ATP for SharePoint, OneDrive, and Microsoft Teams](../security/office-365-security/mdo-for-spo-odb-and-teams.md)<br/> [Anti-phishing protection in Microsoft 365](../security/office-365-security/anti-phishing-protection.md)|[Threat Trackers](../security/office-365-security/threat-trackers.md)<br/>[Threat Explorer](../security/office-365-security/threat-explorer.md)<br/>[Automated investigation and response](../security/office-365-security/office-365-air.md)<br/>[Attack Simulator](../security/office-365-security/attack-simulator.md)|
+|---|---|
+|[Safe Attachments](../security/office-365-security/safe-attachments.md) <p> [Safe Links](../security/office-365-security/safe-links.md) <p> [Safe Documents](../security/office-365-security/safe-docs.md) <p> [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](../security/office-365-security/mdo-for-spo-odb-and-teams.md) <p> [Anti-phishing protection in Microsoft 365](../security/office-365-security/anti-phishing-protection.md)|[Threat Trackers](../security/office-365-security/threat-trackers.md) <p> [Threat Explorer](../security/office-365-security/threat-explorer.md) <p> [Automated investigation and response](../security/office-365-security/office-365-air.md) <p> [Attack simulation training](../security/office-365-security/attack-simulation-training.md)|
 |
 
 With Microsoft Defender for Office 365, people across your organization can communicate and collaborate more securely, with threat protection for their email content and Office documents.
@@ -114,8 +118,7 @@ With Microsoft Defender for Office 365, people across your organization can comm
 
 ## Step 5: Configure Microsoft Defender for Endpoint
 
-[Microsoft Defender for Endpoint](/windows/security/threat-protection) protects your organizations devices (also referred to as endpoints) from cyberthreats, advanced attacks, and data breaches. Security teams can be more efficient in managing the security of their endpoints. Robust tools help organizations keep up with unpatched systems using  vulnerability detection with [Threat and Vulnerability management](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt). Automated detection and remediation capabilities, such as [attack surface reduction](/windows/security/threat-protection/microsoft-defender-atp/overview-attack-surface-reduction), [next-generation protection](/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10), [endpoint detection and response](/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response), and [automated investigation and remediation](/windows/security/threat-protection/microsoft-defender-atp/automated-investigations) help keep your devices safe from malware. On top of these capabilities, customers can get proactive notifications and consult with Microsoft Threat Experts on demand, as part of the opt-in managed hunting service. 
-
+[Microsoft Defender for Endpoint](/windows/security/threat-protection) protects your organizations devices (also referred to as endpoints) from cyberthreats, advanced attacks, and data breaches. Security teams can be more efficient in managing the security of their endpoints. Robust tools help organizations keep up with unpatched systems using  vulnerability detection with [Threat and Vulnerability management](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt). Automated detection and remediation capabilities, such as [attack surface reduction](/windows/security/threat-protection/microsoft-defender-atp/overview-attack-surface-reduction), [next-generation protection](/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10), [endpoint detection and response](/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response), and [automated investigation and remediation](/windows/security/threat-protection/microsoft-defender-atp/automated-investigations) help keep your devices safe from malware. On top of these capabilities, customers can get proactive notifications and consult with Microsoft Threat Experts on demand, as part of the opt-in managed hunting service.
 
 ### Set up Microsoft Defender for Endpoint
 
@@ -151,11 +154,12 @@ With Microsoft Defender for Office 365, people across your organization can comm
 
 ## Step 7: Monitor status and take actions
 
-After you have set up and deployed your threat protection services and capabilities, your next step is to monitor threat detections, and take appropriate actions. Your best starting point is the Microsoft 365 security center ([https://security.microsoft.com](https://security.microsoft.com)), where you can monitor and managing security across your Microsoft identities, data, devices, apps, and infrastructure. 
+After you have set up and deployed your threat protection services and capabilities, your next step is to monitor threat detections, and take appropriate actions. Your best starting point is the Microsoft 365 security center ([https://security.microsoft.com](https://security.microsoft.com)), where you can monitor and managing security across your Microsoft identities, data, devices, apps, and infrastructure.
 
 ![Microsoft 365 security center](../media/solutions-architecture-center/m365-security-center.png)
 
 The Microsoft 365 security center is intended for security admins and security operations teams. In the Microsoft 365 security center, you can:
+
 - View the overall security health of your organization with [Secure Score](/microsoft-365/security/defender/microsoft-secure-score).
 - [Monitor and view reports](../security/defender-endpoint/threat-protection-reports.md) on the status of your identities, data, devices, apps, and infrastructure.
 - Connect the dots on alerts through [incidents](/microsoft-365/security/defender/incident-queue).
@@ -178,17 +182,24 @@ The Harvard Kennedy School [Cybersecurity Campaign Handbook](https://go.microsof
 
 Microsoft 365 provides the following resources to help inform users in your organization:
 
-|Concept  |Resources  |
-|---------|---------|
-|Microsoft 365     |[Customizable learning pathways](/office365/customlearning/) <p>These resources can help you put together training for end users in your organization        |
-|Microsoft 365 security |[Learning module: Secure your organization with built-in, intelligent security from Microsoft 365](/learn/modules/security-with-microsoft-365) <p>This module enables you to describe how Microsoft 365 security features work together and to articulate the benefits of these security features. |
-|Multi-factor authentication     | [Two-step verification: What is the additional verification page?](/azure/active-directory/user-help/multi-factor-authentication-end-user-first-time) <p>This article helps end users understand what multi-factor authentication is and why it's being used at your organization.    |
+<br>
+
+****
+
+|Concept|Resources|
+|---|---|
+|Microsoft 365|[Customizable learning pathways](/office365/customlearning/) <p> These resources can help you put together training for end users in your organization|
+|Microsoft 365 security|[Learning module: Secure your organization with built-in, intelligent security from Microsoft 365](/learn/modules/security-with-microsoft-365) <p> This module enables you to describe how Microsoft 365 security features work together and to articulate the benefits of these security features.|
+|Multi-factor authentication|[Two-step verification: What is the additional verification page?](/azure/active-directory/user-help/multi-factor-authentication-end-user-first-time) <p> This article helps end users understand what multi-factor authentication is and why it's being used at your organization.|
+|
 
 In addition to this guidance, Microsoft recommends that your users take the actions described in this article: [Protect your account and devices from hackers and malware](https://support.office.com/article/066d6216-a56b-4f90-9af3-b3a1e9a327d6.aspx). These actions include:
+
 - Using strong passwords
-- Protecting devices 
+- Protecting devices
 - Enabling security features on Windows 10 and Mac PCs (for unmanaged devices)
-    
+
 Microsoft also recommends that users protect their personal email accounts by taking the actions recommended in the following articles:
+
 - [Help protect your Outlook.com email account](https://support.microsoft.com/office/help-protect-your-outlook-com-email-account-a4f20fc5-4307-4ece-8231-6d4d4bd8a9ba)
 - [Protect your Gmail account with 2-step verification](https://go.microsoft.com/fwlink/?linkid=2015688&amp;clcid=0x409)

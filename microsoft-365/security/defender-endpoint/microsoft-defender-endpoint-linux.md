@@ -40,7 +40,7 @@ This topic describes how to install, configure, update, and use Microsoft Defend
 
 ### Prerequisites
 
-- Access to the Microsoft Defender Security Center portal
+- Access to the Microsoft 365 Defender portal
 - Linux distribution using the [systemd](https://systemd.io/) system manager
 - Beginner-level experience in Linux and BASH scripting
 - Administrative privileges on the device (in case of manual deployment)
@@ -49,8 +49,6 @@ This topic describes how to install, configure, update, and use Microsoft Defend
 >  Microsoft Defender for Endpoint on Linux agent is independent from [OMS agent](/azure/azure-monitor/agents/agents-overview#log-analytics-agent). Microsoft Defender for Endpoint relies on its own independent telemetry pipeline.
 > 
 > Microsoft Defender for Endpoint on Linux is not yet integrated into Azure Security Center.
-
-
 
 ### Installation instructions
 
@@ -65,7 +63,8 @@ In general you need to take the following steps:
   - Third-party management tools:
     - [Deploy using Puppet configuration management tool](linux-install-with-puppet.md)
     - [Deploy using Ansible configuration management tool](linux-install-with-ansible.md)
-
+    - [Deploy using Chef configuration management tool](linux-deploy-defender-for-endpoint-with-chef.md)
+    
 If you experience any installation failures, refer to [Troubleshooting installation failures in Microsoft Defender for Endpoint on Linux](linux-support-install.md).
 
 

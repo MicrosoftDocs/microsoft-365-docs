@@ -10,7 +10,7 @@ localization_priority: normal
 ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
-ms.date: 05/18/2021
+ms.date: 06/17/2021
 ms.reviewer: 
 manager: dansimp
 ms.custom: nextgen
@@ -141,7 +141,7 @@ For more information about allowed parameters, see [Windows Defender WMIv2 APIs]
 
 2. Select the **Virus & threat protection** tile (or the shield icon on the left menu bar) and then the **Virus & threat protection settings** label:
 
-    ![Screenshot of the Virus & threat protection settings label in the Windows Security app](images/defender/wdav-protection-settings-wdsc.png)
+    :::image type="content" source="../../media/wdav-protection-settings-wdsc.png" alt-text="Screenshot of the Virus & threat protection settings":::
 
 3. Confirm that **Cloud-based Protection** and **Automatic sample submission** are switched to **On**.
 
