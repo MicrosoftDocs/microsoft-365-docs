@@ -108,22 +108,19 @@ While on the Cloud PC home page, users can perform actions on their Cloud PCs by
     - Reinstalls Windows 10.
     - Removes your personal files.
     - Removes any changes you made to settings.
-    - Removes your apps.</br>
+    - Removes your apps.
     > [!IMPORTANT]  
     > Before resetting your Cloud PC, make sure to back up any important files you need to keep to a cloud storage service or external storage. Resetting your Cloud PC will delete these files. </br>
 - **Troubleshoot**: Troubleshoot and attempt to fix any issues that may be keeping a user from connecting to their Cloud PC. The following table describes the return states that can result from the checks.
 
-</br>  
+    |**Return state**|**Description**|
+    |:-----|:-----|
+    |No issues detected  <br/> |None of the checks ran discovered an issue with the Cloud PC.  <br/> |
+    |Issues resolved  <br/> |An issue was detected and fixed.  <br/> |
+    |Can’t connect to Cloud PC. We’re working to fix it, try again later.  <br/> |A Microsoft service required for connectivity is unavailable. Try connecting again later.   <br/> |
+    |We couldn’t fix issues with your Cloud PC. Contact your administrator. <br/> |An issue was detected but it was unable to be fixed. This could be due to a ongoing Windows update or another issue. If this error persists for an extended period of time the Cloud PC may need to be reset.  <br/> |
 
 
-|**Return state**|**Description**|
-|:-----|:-----|
-|No issues detected  <br/> |None of the checks ran discovered an issue with the Cloud PC.  <br/> |
-|Issues resolved  <br/> |An issue was detected and fixed.  <br/> |
-|Can’t connect to Cloud PC. We’re working to fix it, try again later.  <br/> |A Microsoft service required for connectivity is unavailable. Try connecting again later.   <br/> |
-|We couldn’t fix issues with your Cloud PC. Contact your administrator. <br/> |An issue was detected but it was unable to be fixed. This could be due to a ongoing Windows update or another issue. If this error persists for an extended period of time the Cloud PC may need to be reset.  <br/> |
-
-</br>
 
 
 ### Remote Desktop
