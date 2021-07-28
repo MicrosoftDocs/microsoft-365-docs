@@ -45,7 +45,6 @@ This table shows examples of the different sizes available for a Cloud PC.
 
 ## Related content
 
-[Get started with Windows 365 Business](get-started-windows-365-business.md) (link page)\
-[Windows 365 Business plan comparison](https://www.microsoft.com/windows-365/business/compare-plans-pricing) (link page)\
-[Windows 365 Business](https://www.microsoft.com/windows-365/business) (link page)\
-
+[Get started with Windows 365 Business](get-started-windows-365-business.md) </br>
+[Windows 365 Business plan comparison](https://www.microsoft.com/windows-365/business/compare-plans-pricing) </br>
+[Windows 365 Business](https://www.microsoft.com/windows-365/business) </br>

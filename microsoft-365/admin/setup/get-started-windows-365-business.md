@@ -108,9 +108,9 @@ While on the Cloud PC home page, users can perform actions on their Cloud PCs by
     - Reinstalls Windows 10.
     - Removes your personal files.
     - Removes any changes you made to settings.
-    - Removes your apps.
-    > [Important]  
-    > Before resetting your Cloud PC, make sure to back up any important files you need to keep to a cloud storage service or external storage. Resetting your Cloud PC will delete these files. 
+    - Removes your apps.</br>
+    > [IMPORTANT]  
+    > Before resetting your Cloud PC, make sure to back up any important files you need to keep to a cloud storage service or external storage. Resetting your Cloud PC will delete these files. </br>
 - **Troubleshoot**: Troubleshoot and attempt to fix any issues that may be keeping a user from connecting to their Cloud PC. The following table describes the return states that can result from the checks.
 
 </br>  
@@ -157,10 +157,10 @@ Windows 365 Business does not enroll Cloud PCs to [Intune](/mem/intune/fundament
 
 If you need to get help while setting up Windows 365 Business in the Microsoft 365 admin center, see [Get help or support](/microsoft-365/business-video/get-help-support).
 
-## Related content
+
 
 ## Related content
 
-[Windows 365 Business](https://www.microsoft.com/windows-365/business) (link page)\
-[Windows 365 Business sizing options](windows-365-business-sizing.md) (link page)\
-[Windows 365 Business plan comparison](https://www.microsoft.com/windows-365/business/compare-plans-pricing) (link page)\
+[Windows 365 Business](https://www.microsoft.com/windows-365/business) </br>
+[Windows 365 Business sizing options](windows-365-business-sizing.md) </br>
+[Windows 365 Business plan comparison](https://www.microsoft.com/windows-365/business/compare-plans-pricing) </br>
