@@ -33,8 +33,8 @@ sections:
       - question: |
           How do I find product keys in the Microsoft 365 admin center?
         answer: |
-          1.	Sign into the Microsoft 365 admin center. 
-          2.	Go to **Billing** > **Your products** > **Volume licensing** > **Downloads & keys** > hover on product and select **View keys**.
+          1. Sign into the Microsoft 365 admin center. 
+          2. Go to **Billing** > **Your products** > **Volume licensing** > **Downloads & keys** > hover on product and select **View keys**.
 
           You’ll find product key information for each product, the type of licensing (Volume Licensing Key, Key Management Service (KMS), and Multiple Activation Key (MAK)) and the number of used and available MAK activations.
 
@@ -251,10 +251,10 @@ sections:
           A downloadable product key file is in a tab-delimited format and can be opened in Excel or a text editor to sort and view keys. These are the columns included in the file: **License ID**, **Parent Program**, **Organization**, **Product**, **Product Key**, **Type**, and **MAK Activations-Used/Available, Seats and OSA Status**. 
 
           To open a downloaded file in Excel, complete these steps:
-            1.	Open Microsoft Excel.
-            2.	Select **File** > **Open**, and then select the downloaded CSV file.
-            3.	Select **Delimited** (the default), and then select **Tab-separated** (to prevent the display of all data in a single column).
-            4.	Select **Finish**. 
+            1. Open Microsoft Excel.
+            2. Select **File** > **Open**, and then select the downloaded CSV file.
+            3. Select **Delimited** (the default), and then select **Tab-separated** (to prevent the display of all data in a single column).
+            4. Select **Finish**. 
           
           The .CSV file opens in Excel and the data is displayed in separate columns.
 
