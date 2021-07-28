@@ -2,8 +2,8 @@
 title: "Learn about app threat detection and remediation"
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -46,10 +46,6 @@ By sharing information across app governance, Azure AD, and Microsoft Cloud App 
 - App sign-in information in app governance:
 
   From the app governance portal, you can see the aggregated sign-in activity for each app and link back to the Azure Active Directory admin center for the details of sign-in events.
-
-- App API usage information in the Azure Active Directory admin center:
-
-  From the Azure Active Directory admin center, you can see the aggregated app usage information and link to the app governance portal for the details of app usage.
 
 - API usage information in the Microsoft Cloud App Security portal: 
 
