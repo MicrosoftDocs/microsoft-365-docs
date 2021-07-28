@@ -58,7 +58,9 @@ When you plan your deployment, you can choose from several different architectur
 
 ## Set up your tenant environment
 
-Setting up your tenant environment includes tasks, such as verifying your licenses and configuring your tenant. An important part of this process is making sure sensors are working correctly and reporting data to Defender for Endpoint. As a preview customer, you’ll likely have help with this process. To learn more, see [Set up Defender for Endpoint](production-deployment.md).
+Setting up your tenant environment includes tasks, such as verifying your licenses and configuring your tenant. An important part of this process is making sure sensors are working correctly and reporting data to Defender for Endpoint. As a preview customer, you’ll likely have help with this process. 
+
+To learn more, see [Set up Defender for Endpoint](production-deployment.md).
 
 ## Assign roles and permissions
 
@@ -84,8 +86,6 @@ Defender for Endpoint enables you to edit and fine-tune your settings as needed.
 We recommend using [Microsoft Endpoint Manager](/mem) to manage your organization’s devices and security settings, as shown in the following image:
  
 :::image type="content" source="../../media/mde-p1/endpoint-policies.png" alt-text="Endpoint security policies in MEM":::
-
-Go to Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and sign in.
 
 ### Review and edit your next-generation protection settings
 
@@ -153,7 +153,7 @@ Follow the guidance in [Turn on network protection](enable-network-protection.md
 
 Network firewall helps reduce the risk of network security threats. Your security team can set rules that determine which traffic is permitted to flow to or from your organization's devices. 
 
-See [Best practices for configuring Windows Defender Firewall](/windows/security/threat-protection/windows-firewall/best-practices-configuring).
+Refer to [Best practices for configuring Windows Defender Firewall](/windows/security/threat-protection/windows-firewall/best-practices-configuring).
 
 ## Next steps
 
