@@ -28,7 +28,9 @@ We are pleased to announce that soon, Defender for Endpoint will be available in
 
 :::image type="content" source="../../media/mde-p1/mde-p1-overview-diagram.png" alt-text="Defender for Endpoint Plan 1 preview diagram":::
 
-This article focuses on Defender for Endpoint Plan 1, currently in preview. Use this article to:
+*This article focuses on Defender for Endpoint Plan 1, currently in preview.* 
+
+Use this article to:
 
 - Get an overview of what’s included in Defender for Endpoint Plan 1 (preview).
 - Learn how to set up and configure your threat protection capabilities.
