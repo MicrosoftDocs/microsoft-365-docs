@@ -26,7 +26,7 @@ We are pleased to announce that soon, Defender for Endpoint will be available in
 
 :::image type="content" source="../../media/mde-p1/mde-p1-overview-diagram.png" alt-text="Defender for Endpoint Plan 1 preview diagram":::
 
-*This article focuses on Defender for Endpoint Plan 1, currently in preview.* 
+*This article focuses on Defender for Endpoint Plan 1, currently in preview. To learn more, see [Microsoft Defender for Endpoint Plan 1 (preview) and Plan 2](defender-endpoint-plan-1-2.md).* 
 
 Use this article to:
 
