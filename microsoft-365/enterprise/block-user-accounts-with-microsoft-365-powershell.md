@@ -80,7 +80,7 @@ Set-AzureADUser -ObjectID (Get-AzureADUser | where {$_.DisplayName -eq $userName
 To check the blocked status of a user account use the following command:
 
 ```powershell
-Get-AzureADUser -UserPrincipalName <UPN of user account> | Select DisplayName,AccountEnabled
+Get-AzureADUser  -ObjectID <UPN of user account> | Select DisplayName,AccountEnabled
 ```
 
 ### Block multiple user accounts
