@@ -50,11 +50,11 @@ After you buy a subscription, you can use the Microsoft 365 admin center to assi
 If you don't already have a Microsoft 365 subscription, you can buy your Windows 365 Business subscriptions on the [Windows 365 products site](https://www.microsoft.com/windows-365/business/compare-plans-pricing). Use the following steps to buy a Windows 365 Business subscription through the Windows 365 products page.   
 
 
-1. On the Windows 365 Business page, select **See plans and pricing**. 
+1. On the [Windows 365 Business](https://www.microsoft.com/windows-365/business) page, select **See plans and pricing**. 
 2. On the next page, select the subscription you want to purchase, and then select **Buy now**.
 3. On the **Thank you for choosing Windows 365 Business** page, follow the steps to set up your account.
-4. In **step 5 - Confirmation details**, if you are ready to assign licenses to users, select **Get started** to go to your Cloud PC home page at windows365.microsoft.com.
-5. On the Cloud PC home page, in the **Quick actions** section, select **Manage your organization**. This takes you to the Microsoft 365 admin center where you can [assign licenses to users](/microsoft-365/business-video/set-up-cloud-pc-for-business#Assign-licenses-to-users).
+4. In **step 5 - Confirmation details**, if you are ready to assign licenses to users, select **Get started** to go to your Windows 365 home page at https://windows365.microsoft.com.
+5. On the Windows 365 home page, in the **Quick actions** section, select **Manage your organization**. This takes you to the Microsoft 365 admin center where you can [assign licenses to users](/microsoft-365/business-video/set-up-cloud-pc-for-business#Assign-licenses-to-users).
 
 
 
@@ -80,16 +80,16 @@ You can assign different Windows 365 Business license types to a user, based on 
 
 After licenses are assigned, let your users know that there are two different ways in which they can access their Cloud PCs:
 
-- Via the Cloud PC home page (https://windows365.microsoft.com)
+- Via the Windows 365 home page (https://windows365.microsoft.com)
 - By using a Microsoft Remote Desktop client
 
-### Cloud PC home page
+### Windows 365 home page
 
 Users can navigate to **https://windows365.microsoft.com** to access their Cloud PCs.  
 
-On their Cloud PC home page, users see the Cloud PCs they have access to in the **Your cloud PCs** section. 
+On their Windows 365 home page, users see the Cloud PCs they have access to in the **Your Cloud PCs** section. 
 
-![Windows 365 home](../../media/deschutes/deschutes-home.png)
+![Windows 365 home](../../media/deschutes/cloudpc-home.png)
 
 Users can select **Open in browser** to open their Cloud PC.
 
@@ -98,7 +98,7 @@ Users can select **Open in browser** to open their Cloud PC.
 
 #### User actions
 
-While on the Cloud PC home page, users can perform actions on their Cloud PCs by selecting the gear icon on a Cloud PC card.
+While on the Windows 365 home page, users can perform actions on their Cloud PCs by selecting the gear icon on a Cloud PC card.
 
    ![Card menu](../../media/deschutes/cloudpc-gear.png) </br>
 
@@ -111,9 +111,9 @@ While on the Cloud PC home page, users can perform actions on their Cloud PCs by
     - Removes your apps.
     > [!IMPORTANT]  
     > Before resetting your Cloud PC, make sure to back up any important files you need to keep to a cloud storage service or external storage. Resetting your Cloud PC will delete these files. </br>
-- **Troubleshoot**: Troubleshoot and attempt to fix any issues that may be keeping a user from connecting to their Cloud PC. The following table describes the return states that can result from the checks.
+- **Troubleshoot**: Troubleshoot and attempt to fix any issues that may be keeping a user from connecting to their Cloud PC. The following table describes the statuses that can result from the checks.
 
-    |**Return state**|**Description**|
+    |**Status**|**Description**|
     |:-----|:-----|
     |No issues detected  <br/> |None of the checks ran discovered an issue with the Cloud PC.  <br/> |
     |Issues resolved  <br/> |An issue was detected and fixed.  <br/> |
@@ -125,16 +125,16 @@ While on the Cloud PC home page, users can perform actions on their Cloud PCs by
 
 ### Remote Desktop
 
-The Microsoft Remote Desktop app lets users access and control a remote PC, including a Cloud PC. Windows 365 users can download and install the Remote Desktop client they need from the Cloud PC home page. 
+The Microsoft Remote Desktop app lets users access and control a remote PC, including a Cloud PC. Windows 365 users can download and install the Remote Desktop client they need from the Windows 365 home page. 
 
 #### Install the Microsoft Remote Desktop app
 
 To set up their Remote Desktop client, users follow these steps:
 
-1. On the **Cloud PC home page**, select the **Microsoft Remote Desktop apps** icon (under the home icon). 
+1. On the **Windows 365 home page**, select the **Microsoft Remote Desktop apps** icon (under the home icon). 
 2. On the **Microsoft Remote Desktop apps** page, download and install the Remote Desktop app you need. 
 
-   ![Remote desktop clients](../../media/deschutes/deschutes-remote-desktop-apps.png) </br> 
+   ![Remote desktop clients](../../media/deschutes/remote-desktop-apps.png) </br> 
 
 For a list of clients by operating system, see [Remote Desktop clients](/windows-server/remote/remote-desktop-services/clients/remote-desktop-clients). 
 
