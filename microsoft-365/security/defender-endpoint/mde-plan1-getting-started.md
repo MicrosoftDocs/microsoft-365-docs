@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: ITPro
 ms.topic: overview
-ms.date: 07/27/2021
+ms.date: 07/28/2021
 ms.prod: m365-security
 ms.technology: mde
 localization_priority: Normal
@@ -88,13 +88,13 @@ Use the **Alerts**, **Devices**, and **Users** tabs to view more information, su
 
 To view and manage your organization’s devices, in the navigation bar, under **Endpoints**, select **Device inventory**. You’ll see a list of devices as shown in the following image:
 
-:::image type="content" source="../../media/mde-p1/device-inventory.PNG" alt-text="Device inventory"::: 
+:::image type="content" source="../../media/mde-p1/device-inventory.png" alt-text="Device inventory"::: 
 
 The list includes devices for which alerts were generated. By default, the data shown is for the past 30 days, with the most recent items listed first. 
 
 Select a device to view more information about it. A flyout pane opens, as shown in the following image:
 
-:::image type="content" source="../../media/mde-p1/device-inventory-selecteddevice.PNG" alt-text="Selected device details":::
+:::image type="content" source="../../media/mde-p1/device-inventory-selecteddevice.png" alt-text="Selected device details":::
 
 The flyout pane displays details, such as any active alerts for the device, and includes links to take action, such as isolating a device. 
 
@@ -124,7 +124,7 @@ In Defender for Endpoint Plan 1, several reports are available in the Microsoft 
 
 To access your Threat protection report, in the Microsoft 365 Defender portal, choose **Reports**, and then choose **Threat protection**. The Threat Protection report shows alert trends, status, categories, and more. Views are arranged in two columns: **Alert trends** and **Alert status**, as shown in the following image:
  
-:::image type="content" source="../../media/mde-p1/threat-protection-report.PNG" alt-text="Threat protection report":::
+:::image type="content" source="../../media/mde-p1/threat-protection-report.png" alt-text="Threat protection report":::
 
 Scroll down to see all the views in each list. 
 
