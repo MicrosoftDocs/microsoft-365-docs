@@ -32,7 +32,7 @@ ms.technology: mde
 There are some minimum requirements for onboarding devices to the service. Learn about the licensing, hardware and software requirements, and other configuration settings to onboard devices to the service.
 
 > [!TIP]
-> - If you are looking for requirements for Defender for Endpoint Plan 1 (preview), see [Requirements for Defender for Endpoint Plan 1 (preview)](mde-p1-setup-configuration.md#review-the-requirements).
+> - This article describes the minimum requirements for Microsoft Defender for Endpoint Plan 2. If you are looking for information about Defender for Endpoint Plan 1 (preview), see [Requirements for Defender for Endpoint Plan 1 (preview)](mde-p1-setup-configuration.md#review-the-requirements).
 > - Learn about the latest enhancements in Defender for Endpoint: [Defender for Endpoint Tech Community](https://techcommunity.microsoft.com/t5/Windows-Defender-Advanced-Threat/ct-p/WindowsDefenderAdvanced).
 > - Defender for Endpoint demonstrated industry-leading optics and detection capabilities in the recent MITRE evaluation. Read: [Insights from the MITRE ATT&CK-based evaluation](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/).
 
