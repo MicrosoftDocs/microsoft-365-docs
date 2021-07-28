@@ -23,6 +23,9 @@ As you use Defender for Endpoint Plan 1 (preview) in your organization, your sec
 - [Fine-tune and adjust Defender for Endpoint](#fine-tune-and-adjust-defender-for-endpoint)
 - [Address false positives/negatives](#address-false-positivesnegatives)
 
+> [!IMPORTANT]
+> Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. This article includes links to online content that might describe some features that are not included in Defender for Endpoint Plan 1 (preview).
+
 ## Manage security intelligence and product updates
 
 Keeping Microsoft Defender Antivirus up to date is critical to protecting against new malware and attack techniques. Microsoft releases regular updates for security intelligence, antivirus, and antimalware protection. Updates are organized into two categories: 
