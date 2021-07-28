@@ -34,7 +34,7 @@ ms.technology: mde
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-Defining a device’s value helps you differentiate between asset priorities. The device value is used to incorporate the risk appetite of an individual asset into the threat and vulnerability management exposure score calculation. Devices assigned as “high value” will receive more weight.
+Defining a device's value helps you differentiate between asset priorities. The device value is used to incorporate the risk appetite of an individual asset into the threat and vulnerability management exposure score calculation. Devices assigned as "high value" will receive more weight.
 
 You can also use the [set device value API](set-device-value.md).
 
