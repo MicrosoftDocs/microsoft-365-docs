@@ -28,14 +28,13 @@ We are pleased to announce that soon, Defender for Endpoint will be available in
 
 *This article focuses on Defender for Endpoint Plan 1, currently in preview. To learn more, see [Microsoft Defender for Endpoint Plan 1 (preview) and Plan 2](defender-endpoint-plan-1-2.md).* 
 
-Use this article to:
+Use this guide to:
 
-- Get an overview of what’s included in Defender for Endpoint Plan 1 (preview).
-- Learn how to set up and configure your threat protection capabilities.
-- Get started using the Microsoft 365 Defender portal, where you can view incidents and alerts, manage devices, and use reports about detected threats.
-
-> [!TIP]
-> To learn more about the differences between Plan 1 and Plan 2, see [Compare Microsoft Defender for Endpoint Plan 1 (preview) to Defender for Endpoint Plan 2](defender-endpoint-plan-1-2.md).
+- [Get an overview of what’s included in Defender for Endpoint Plan 1 (preview)](#whats-included-in-defender-for-endpoint-plan-1)
+- [Compare Microsoft Defender for Endpoint Plan 1 (preview) to Plan 2](defender-endpoint-plan-1-2.md)
+- [Learn how to set up and configure Defender for Endpoint Plan 1 (preview)](mde-p1-setup-configuration.md)
+- [Get started using the Microsoft 365 Defender portal, where you can view incidents and alerts, manage devices, and use reports about detected threats](mde-plan1-getting-started.md)
+- [Find information about on maintenance and operations](mde-p1-maintenance-operations.md)
 
 ## What's included in Defender for Endpoint Plan 1?
 
