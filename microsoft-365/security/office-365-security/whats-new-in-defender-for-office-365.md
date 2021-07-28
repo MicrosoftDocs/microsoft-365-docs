@@ -39,7 +39,7 @@ Learn more by watching [this video](https://www.youtube.com/watch?v=Tdz6KfruDGo&
 
 ## July 2021
 
-- [Email analysis improvements in automated investigations](email-analysis-investigations)
+- [Email analysis improvements in automated investigations](email-analysis-investigations.md)
 
 
 ## June 2021
