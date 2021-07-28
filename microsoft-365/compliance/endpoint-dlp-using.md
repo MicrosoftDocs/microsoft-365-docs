@@ -66,6 +66,8 @@ When a policy's **Access by unallowed apps and browsers** setting is turned on a
 > Do not include the path to the executable, but only the executable name (such as browser.exe).
 
 #### Auto-quarantine
+
+
 ### Unallowed Bluetooth apps
 
 Prevent people from transferring files protected by your policies via specific Bluetooth apps.
