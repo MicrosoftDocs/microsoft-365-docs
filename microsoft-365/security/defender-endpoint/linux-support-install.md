@@ -93,7 +93,7 @@ systemctl status mdatp
     id "mdatp"
     ```
 
-    If there’s no output, run
+    If there's no output, run
 
     ```bash
     sudo useradd --system --no-create-home --user-group --shell /usr/sbin/nologin mdatp
@@ -119,7 +119,7 @@ systemctl status mdatp
     distributions and `/usr/lib/systemd/system` for Rhel, CentOS, Oracle and SLES.
 Then rerun step 2.
 
-4. If the above steps don’t work, check if SELinux is installed and in enforcing mode. If so, try setting it to permissive (preferably) or disabled mode. It can be done by setting the parameter `SELINUX` to "permissive" or "disabled" in `/etc/selinux/config` file, followed by reboot. Check the man-page of selinux for more details.
+4. If the above steps don't work, check if SELinux is installed and in enforcing mode. If so, try setting it to permissive (preferably) or disabled mode. It can be done by setting the parameter `SELINUX` to "permissive" or "disabled" in `/etc/selinux/config` file, followed by reboot. Check the man-page of selinux for more details.
 Now try restarting the mdatp service using step 2. Revert the configuration change immediately though for security reasons after trying it and reboot.
 
 5. If `/opt` directory is a symbolic link, create a bind mount for `/opt/microsoft`.
@@ -154,7 +154,7 @@ Now try restarting the mdatp service using step 2. Revert the configuration chan
 
     Currently supported file systems for on-access activity are listed [here](microsoft-defender-endpoint-linux.md#system-requirements). Any files outside these file systems won't be scanned.
 
-## Command-line tool “mdatp” isn't working
+## Command-line tool "mdatp" isn't working
 
 1. If running the command-line tool `mdatp` gives an error `command not found`, run the following command:
 

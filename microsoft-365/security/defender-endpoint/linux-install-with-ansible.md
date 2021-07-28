@@ -138,7 +138,7 @@ Create a subtask or role files that contribute to a playbook or task.
     In the following commands, replace *[distro]* and *[version]* with the information you've identified.
 
     > [!NOTE]
-    > In case of Oracle Linux, replace *[distro]* with “rhel”.
+    > In case of Oracle Linux, replace *[distro]* with "rhel".
 
   ```bash
   - name: Add Microsoft APT key
