@@ -496,8 +496,8 @@ If you currently use these older features, they will continue to work side by si
 - [Retention tags and retention policies](/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies), also known as [messaging records management (MRM)](/exchange/security-and-compliance/messaging-records-management/messaging-records-management) (deletion only)
     
     However, if you use the following MRM features, be aware that these aren't currently supported by Microsoft 365 retention policies:
-        - Applying different retention policies to different folders within a mailbox. Instead a Microsoft 365 retention policy applies to all folders in the mailbox. However, a user can apply different retention settings to folders by using a default retention label.
-        - Automatically move emails from a user's primary mailbox to their archive mailbox after a specified period of time.
+    - Applying different retention policies to different folders within a mailbox. Instead a Microsoft 365 retention policy applies to all folders in the mailbox. However, a user can apply different retention settings to folders by using a default retention label.
+    - Automatically move emails from a user's primary mailbox to their archive mailbox after a specified period of time.
 
 **Older features from SharePoint and OneDrive:**
 
