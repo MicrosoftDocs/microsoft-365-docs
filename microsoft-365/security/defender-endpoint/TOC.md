@@ -9,13 +9,14 @@
 ### [Data storage and privacy](data-storage-privacy.md)
 ### [Overview of Microsoft Defender Security Center](use.md)
 ### [Portal overview](portal-overview.md)
-### [Microsoft Defender for Endpoint for US Government customers](gov.md)
-### [Microsoft Defender for Endpoint on non-Windows platforms](non-windows.md)
 ### [Defender for Endpoint Plan 1 (preview)]()
 #### [Overview](defender-endpoint-plan-1.md)
 #### [Setup and configuration](mde-p1-setup-configuration.md)
 #### [Get started](mde-plan1-getting-started.md)
 #### [Maintenance and operations](mde-p1-maintenance-operations.md)
+### [Microsoft Defender for Endpoint for US Government customers](gov.md)
+### [Microsoft Defender for Endpoint on non-Windows platforms](non-windows.md)
+
 
 ## [Evaluate capabilities](evaluation-lab.md)
 
