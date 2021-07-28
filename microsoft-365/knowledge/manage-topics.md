@@ -25,13 +25,13 @@ localization_priority: None
 
 In the Viva Topics topic center, a knowledge manager can view the **Manage topics** page to review topics that have been identified in the source locations as specified by your knowledge admin.  
 
-   ![Topic Center](../media/knowledge-management/topic-center.png)  
+   ![Topic Center.](../media/knowledge-management/topic-center.png)  
 
 ## Topic stages
 
 Knowledge managers help to guide discovered topics through the various topic lifecycle stages: **Suggested**, **Confirmed**, **Published**, and **Removed**.
 
-   ![Topic Lifecycle chart](../media/knowledge-management/topic-lifecycle.png) 
+   ![Topic Lifecycle chart.](../media/knowledge-management/topic-lifecycle.png) 
 
 - **Suggested**: A topic has been identified by AI and has enough supporting resources, connections, and properties. (These are marked as a **Suggested Topic** in the UI.)
 
@@ -69,7 +69,7 @@ In the topic center, a knowledge manager can review topics that have been identi
 
 On the **Manage topics** page, topics that were discovered in your specified SharePoint source locations will be listed on the **Suggested** tab. If needed, a knowledge manager can review unconfirmed topics and choose to confirm or remove them.
 
-   ![Suggested Topics](../media/knowledge-management/quality-score.png) 
+   ![Screenshot of suggested topics.](../media/knowledge-management/quality-score.png) 
 
 To review a suggested topic:
 
@@ -117,12 +117,18 @@ On the **Manage topics** page, topics that were discovered in your specified Sha
 
 ## Removed topics
 
-On the **Manage topics** page, topics that were discovered in your specified SharePoint source locations will be listed on the **Removed** tab. Some suggested topics can appear here based on the end user votes on topic cards in the topic center. You can choose to remove specific topics to prevent them from being viewed. Topics can be removed regardless if they are in a suggested or confirmed state.
+On the **Manage topics** page, topics that were discovered in your specified SharePoint source locations will be listed on the **Removed** tab. Some suggested topics can appear here based on the end user votes on topic cards in the topic center.
 
-Removed topics can later be added back as viewable topics if needed. If you want to move a topic from the **Removed** tab to another tab, select the review and publish option.
+Removed topics can later be added back as viewable topics if needed. If you want to add a removed topic back as a viewable topic:
 
-To avoid confusion for users, you might want to remove topics that have similar names (for example, Microsoft Excel vs. Excel).
+1. On the **Removed** tab, select the topic.
 
+2. Select **Review and publish**.
+
+   ![Screenshot of Removed tab showing the Review and publish option.](../media/knowledge-management/review-and-publish-removed-topic.png)
+
+> [!Tip] 
+> To avoid confusion for users, you might want to remove topics that have similar names (for example, choose either Microsoft Excel or Excel). *[**Matt**- please confirm this is the intent; if not, please provide corrected wording. Thanks.]*
 
 ## Topic count dashboard
 
@@ -130,4 +136,4 @@ This chart in the dashboard view lets you see the number of topics in your Viva 
 
 Knowledge managers might see a different count of topics represented in the list of topics on the **Manage topics** page than they see in the dashboard. This is because a knowledge manager might not have access to all topics. The count presented in the dashboard view is taken before applying permission-trimming. 
 
-   ![Screenshot of topic count dashboard](../media/knowledge-management/topic-count-dashboard.png)
+   ![Screenshot of topic count dashboard.](../media/knowledge-management/topic-count-dashboard.png)
