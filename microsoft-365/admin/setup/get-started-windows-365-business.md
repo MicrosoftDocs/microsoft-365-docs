@@ -38,7 +38,7 @@ There are no perquisites to set up Windows 365 Business.
 
 ## Buy subscriptions
 
-You can buy Windows 365 Business subscriptions for your users through two ways:
+There are two different ways in which you can buy Windows 365 Business subscriptions for your users:
 - The [Windows 365 products site](https://www.microsoft.com/windows-365/business/compare-plans-pricing)
 - Microsoft 365 admin center
 
@@ -47,7 +47,7 @@ After you buy a subscription, you can use the Microsoft 365 admin center to assi
 
 ### Buy subscriptions through the Windows 365 products site
 
-If you don't already have Microsoft 365 subscription, you can buy your Windows 365 Business subscriptions on the [Windows 365 products site](https://www.microsoft.com/windows-365/business/compare-plans-pricing). Use the following steps to buy a Windows 365 Business subscription through the Windows 365 products page.   
+If you don't already have a Microsoft 365 subscription, you can buy your Windows 365 Business subscriptions on the [Windows 365 products site](https://www.microsoft.com/windows-365/business/compare-plans-pricing). Use the following steps to buy a Windows 365 Business subscription through the Windows 365 products page.   
 
 
 1. On the Windows 365 Business page, select **See plans and pricing**. 
@@ -66,7 +66,7 @@ If you already have a Microsoft 365 tenant and are a Global or Billing admin, yo
 2. On the **Purchase services** page, search for **Windows 365 Business**. When you find it, select **Details**.
 3. On the **Windows 365 Business** page, in the **Processor/Ram/Storage Options** section, use the **Select a subscription** menu to select a subscription for your users based on their CPU, RAM, and storage needs. See [Windows 365 Business sizing options](windows-365-business-sizing.md) for guidance on selecting the subscription that best fits your users needs.
 4. On the **Checkout** page, enter the number of subscriptions you want to buy, as well and your payment information. Then select **Place Order**.
-5. The **You're all set!** page will appear confirming your purchase.
+5. The **You're all set!** page appears confirming your purchase.
 
 
 ## Assign licenses to users 
@@ -78,16 +78,16 @@ You can assign different Windows 365 Business license types to a user, based on 
 
 ## Get your users started with Cloud PC
 
-After licenses are assigned, let your users know that they can access their Cloud PCs in two different ways:
+After licenses are assigned, let your users know that there are two different ways in which they can access their Cloud PCs:
 
-- Via the Cloud PC home page (windows365.microsoft.com)
+- Via the Cloud PC home page (https://windows365.microsoft.com)
 - By using a Microsoft Remote Desktop client
 
 ### Cloud PC home page
 
-Users can navigate to **windows365.microsoft.com** to access their Cloud PCs.  
+Users can navigate to **https://windows365.microsoft.com** to access their Cloud PCs.  
 
-On their Cloud PC home page, users will see the Cloud PCs they have access to in the **Your cloud PCs** section. 
+On their Cloud PC home page, users see the Cloud PCs they have access to in the **Your cloud PCs** section. 
 
 ![Windows 365 home](../../media/deschutes/deschutes-home.png)
 
@@ -131,8 +131,8 @@ The Microsoft Remote Desktop app lets users access and control a remote PC, incl
 
 To set up their Remote Desktop client, users follow these steps:
 
-1. On the Cloud PC home page, select the Microsoft Remote Desktop apps icon (under the home icon). 
-2. On the Microsoft Remote Desktop apps page, download and install the Remote Desktop app you need. 
+1. On the **Cloud PC home page**, select the **Microsoft Remote Desktop apps** icon (under the home icon). 
+2. On the **Microsoft Remote Desktop apps** page, download and install the Remote Desktop app you need. 
 
    ![Remote desktop clients](../../media/deschutes/deschutes-remote-desktop-apps.png) </br> 
 
@@ -148,7 +148,7 @@ All Windows 365 Business users have local administrator privileges on their Clou
 
  ## Management through Intune
 
-Windows 365 Business does not enroll Cloud PCs to [Intune](/mem/intune/fundamentals/what-is-intune) as part of the provisioning process. If the tenant and users are properly licensed, Cloud PCs can be enrolled to Intune using the same procedure for [enrolling Windows 10 machines to Intune](/mem/intune/user-help/enroll-windows-10-device).
+Windows 365 Business does not enroll Cloud PCs to [Intune](/mem/intune/fundamentals/what-is-intune) as part of the provisioning process. If the organization and users are properly licensed, Cloud PCs can be enrolled to Intune using the same procedure for [enrolling Windows 10 machines to Intune](/mem/intune/user-help/enroll-windows-10-device).
 
 ## How to get help
 
