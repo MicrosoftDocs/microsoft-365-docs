@@ -100,9 +100,7 @@ To view and manage your organization’s devices, in the navigation bar, under *
 
 :::image type="content" source="../../media/mde-p1/device-inventory.png" alt-text="Device inventory"::: 
 
-The list includes devices for which alerts were generated. By default, the data shown is for the past 30 days, with the most recent items listed first. 
-
-Select a device to view more information about it. A flyout pane opens, as shown in the following image:
+The list includes devices for which alerts were generated. By default, the data shown is for the past 30 days, with the most recent items listed first. Select a device to view more information about it. A flyout pane opens, as shown in the following image:
 
 :::image type="content" source="../../media/mde-p1/device-inventory-selecteddevice.png" alt-text="Selected device details":::
 
