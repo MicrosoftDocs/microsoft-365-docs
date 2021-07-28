@@ -33,7 +33,9 @@ Keeping Microsoft Defender Antivirus up to date is critical to protecting agains
 - Security intelligence updates
 - Product updates 
 
-You can manage your security intelligence and product updates using one of several methods. To learn more, see [Manage antivirus updates](manage-updates-baselines-microsoft-defender-antivirus.md).
+You can manage your security intelligence and product updates using one of several methods. 
+
+To learn more, see [Manage antivirus updates](manage-updates-baselines-microsoft-defender-antivirus.md).
 
 ## Fine-tune and adjust Defender for Endpoint
 
@@ -48,3 +50,7 @@ A false positive is an artifact, like a file or a process, that was detected as 
 :::image type="content" source="../../media/defender-endpoint/false-positives-overview.png" alt-text="False positives and negatives process overview":::
 
 If you’re seeing false positives/negatives in Defender for Endpoint, see [Address false positives/negatives in Microsoft Defender for Endpoint](defender-endpoint-false-positives-negatives.md).
+
+## Next steps
+
+[See what's new in Microsoft Defender for Endpoint](whats-new-in-microsoft-defender-atp.md)
