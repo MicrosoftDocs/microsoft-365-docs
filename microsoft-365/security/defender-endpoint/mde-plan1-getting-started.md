@@ -45,7 +45,7 @@ The Home page includes cards, such as the Active incidents card shown in the fol
 
 The card provides you with information at a glance, along with a link or button that you can select to view more detailed information. Referring to our example Active incidents card, we can select **View all incidents** to navigate to our list of incidents.
 
-
+:::image type="content" source="../../media/mde-p1/incidents.png" alt-text="Incidents list":::
 
 ### Navigation bar
 
