@@ -20,7 +20,7 @@ ms.custom:
 description: "Create alert policies in the Microsoft 365 compliance center or the Microsoft 365 Defender portal to monitor potential threats, data loss, and permissions issues."
 ---
 
-# Alert policies in the Microsoft 365
+# Alert policies in Microsoft 365
 
 You can use the alert policy and alert dashboard tools in the Microsoft 365 compliance center or the Microsoft 365 Defender portal to create alert policies and then view the alerts generated when users perform activities that match the conditions of an alert policy. There are several default alert policies that help you monitor activities such as assigning admin privileges in Exchange Online, malware attacks, phishing campaigns, and unusual levels of file deletions and external sharing.
 
