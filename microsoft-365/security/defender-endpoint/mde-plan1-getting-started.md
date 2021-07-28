@@ -37,6 +37,16 @@ The Home page provides your security team with a snapshot aggregate view of aler
 > [!NOTE]
 > Our examples shown in this article might differ from your Microsoft 365 Defender portal. What you see in your portal depends on your licenses and permissions. In addition, your security team can customize your page by adding, removing, and rearranging cards.
 
+### Cards
+
+The Home page includes cards, such as the Active incidents card shown in the following image:
+
+:::image type="content" source="../../media/mde-p1/active-incidents-card.png" alt-text="Active incidents card":::
+
+The card provides you with information at a glance, along with a link or button that you can select to view more detailed information. Referring to our example Active incidents card, we can select **View all incidents** to navigate to our list of incidents.
+
+
+
 ### Navigation bar
 
 The navigation bar on the left side of the screen enables you to move easily between incidents, alerts, the Action center, reports, and settings. The following table describes the navigation bar.
