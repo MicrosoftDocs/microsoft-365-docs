@@ -497,7 +497,7 @@ If you currently use these older features, they will continue to work side by si
     
     However, if you use the following MRM features, be aware that these aren't currently supported by Microsoft 365 retention policies:
     
-    - Applying different retention policies to different folders within a mailbox. Instead a Microsoft 365 retention policy applies to all folders in the mailbox. However, a user can apply different retention settings to folders by using a default retention label.
+    - Applying different retention policies to different folders within a mailbox. Instead, a Microsoft 365 retention policy applies to all folders in the mailbox. However, a user can apply different retention settings to folders by using a default retention label.
     
     - Automatically move emails from a user's primary mailbox to their archive mailbox after a specified period of time.
 
