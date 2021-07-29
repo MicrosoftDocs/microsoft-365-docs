@@ -33,7 +33,7 @@ ms.custom: api
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
->Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -62,58 +62,53 @@ Runs a sequence of live response commands on a device
 One of the following permissions is required to call this API. To learn more,
 including how to choose permissions, see [Get started](apis-intro.md).
 
-| Permission type                    | Permission           | Permission display name                   |
-|------------------------------------|----------------------|-------------------------------------------|
-| Application                        | Machine.LiveResponse | Run live response on a specific machine |
-| Delegated (work or school account) | Machine.LiveResponse | Run live response on a specific machine |
+|Permission type|Permission|Permission display name|
+|---|---|---|
+|Application|Machine.LiveResponse|Run live response on a specific machine|
+|Delegated (work or school account)|Machine.LiveResponse|Run live response on a specific machine|
 
 ## HTTP request
 
 ```HTTP
-POST
-https://api.securitycenter.microsoft.com/API/machines/{machine_id}/runliveresponse
+POST https://api.securitycenter.microsoft.com/API/machines/{machine_id}/runliveresponse
 ```
 
 ## Request headers
 
-| Name      | Type | Description                 |
-|---------------|----------|---------------------------------|
-| Authorization | String   | Bearer\<token>\. Required.   |
-| Content-Type  | string   | application/json. Required. |
+|Name|Type|Description|
+|---|---|---|
+|Authorization|String|Bearer\<token>\. Required.|
+|Content-Type|string|application/json. Required.|
 
 ## Request body
 
-| Parameter | Type | Description                                                        |
-|---------------|----------|------------------------------------------------------------------------|
-| Comment       | String   | Comment to associate with the action.                                 |
-| Commands      | Array    | Commands to run. Allowed values are PutFile, RunScript, GetFile. |
+|Parameter|Type|Description|
+|---|---|---|
+|Comment|String|Comment to associate with the action.|
+|Commands|Array|Commands to run. Allowed values are PutFile, RunScript, GetFile.|
 
-Commands:
+**Commands**:
 
-| Command Type | Parameters                                                                          | Description                                                                                                                      |
-|------------------|-----------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|
-| PutFile      | Key: FileName  <br><br>  Value: \<file name\>                                                                          | Puts a file from the library to the device. Files are saved in a working folder and are deleted when the device restarts by default.
-| RunScript    | Key: ScriptName<br>Value: \<Script from library\> <br><br> Key: Args  <br> Value: \<Script arguments\>                          | Runs a script from the library on a device.    <br><br>  The Args parameter is passed to your script. <br><br> Timeouts after 10 minutes.     
-| GetFile      | Key: Path <br> Value: \<File path\>                                                        | Collect file from a device. NOTE: Backslashes in path must be escaped.                                                                      |
+|Command Type|Parameters|Description|
+|---|---|---|
+|PutFile|Key: FileName <p> Value: \<file name\>|Puts a file from the library to the device. Files are saved in a working folder and are deleted when the device restarts by default.
+|RunScript|Key: ScriptName <br> Value: \<Script from library\> <p> Key: Args <br> Value: \<Script arguments\>|Runs a script from the library on a device. <p>  The Args parameter is passed to your script. <p> Timeouts after 10 minutes.|
+|GetFile|Key: Path <br> Value: \<File path\>|Collect file from a device. NOTE: Backslashes in path must be escaped.|
 
 ## Response
 
--   If successful, this method returns 200, Ok.
-    Action entity. If machine with the specified ID was not found - 404 Not Found.
+- If successful, this method returns 200, Ok.
+
+  Action entity. If machine with the specified ID was not found - 404 Not Found.
 
 ## Example
 
-**Request**
+### Request example
 
 Here is an example of the request.
 
 ```HTTP
-
-POST
-https://api.securitycenter.microsoft.com/api/machines/1e5bc9d7e413ddd7902c2932e418702b84d0cc07/runliveresponse
-
-```
-**JSON**
+POST https://api.securitycenter.microsoft.com/api/machines/1e5bc9d7e413ddd7902c2932e418702b84d0cc07/runliveresponse
 
 ```JSON
 {
@@ -146,7 +141,7 @@ https://api.securitycenter.microsoft.com/api/machines/1e5bc9d7e413ddd7902c2932e4
 }
 ```
 
-**Response**
+### Response example
 
 Here is an example of the response.
 
@@ -204,11 +199,10 @@ Content-type: application/json
         }
     ]
 }
-
-
 ```
 
 ## Related topics
+
 - [Get machine action API](get-machineaction-object.md)
 - [Get live response result](get-live-response-result.md)
 - [Cancel machine action](cancel-machine-action.md)
