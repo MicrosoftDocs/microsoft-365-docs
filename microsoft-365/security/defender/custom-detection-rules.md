@@ -41,6 +41,8 @@ To manage custom detections, you need to be assigned one of these roles:
 
 - **Security operator**—Users with this [Azure Active Directory role](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) can manage alerts and have global read-only access to security-related features, including all information in Microsoft 365 security center. This role is sufficient for managing custom detections only if role-based access control (RBAC) is turned off in Microsoft Defender for Endpoint. If you have RBAC configured, you also need the **manage security settings** permission for Defender for Endpoint.
 
+You can also manage custom detections that apply to data from specific Microsoft 365 Defender solutions if you have permissions for them. If you only have manage permissions for Microsoft 365 Defender for Office, for instance, you can create custom detections using `Email` tables but not `Identity` tables.  
+
 To manage required permissions, a **global administrator** can:
 
 - Assign the **security administrator** or **security operator** role in [Microsoft 365 admin center](https://admin.microsoft.com/) under **Roles** > **Security admin**.
