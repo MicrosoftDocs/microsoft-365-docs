@@ -108,7 +108,7 @@ DeviceNetworkInfo
 
 You can use the following advanced hunting query to get the latest complete information on a specific device.
 
-```
+```kusto
 DeviceInfo
 | where DeviceName == "<device name here>" and isnotempty(OSPlatform)
 | summarize arg_max(Timestamp, *) by DeviceId 
