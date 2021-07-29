@@ -26,7 +26,7 @@ ms.custom: nextgen
 
 Always-on protection consists of real-time protection, behavior monitoring, and heuristics to identify malware based on known suspicious and malicious activities.
 
-These activities include events, such as processes making unusual changes to existing files, modifying or creating automatic startup registry keys and startup locations (also known as auto-start extensibility points, or ASEPs), and other changes to the file system or file structure.
+These activities include events, such as processes making unusual changes to existing files, modifying or creating automatic startup registry keys and startup locations (also known as autostart extensibility points, or ASEPs), and other changes to the file system or file structure.
 
 ## Enable and configure always-on protection in Group Policy
 
@@ -48,10 +48,10 @@ To enable and configure always-on protection:
 
     1. In the **Microsoft Defender Antivirus** details pane on right, double-click the policy setting as specified in the following table:
 
-       | Setting | Description | Default setting |
-       |-----------------------------|------------------------|-------------------------------|
-       | Allow antimalware service to startup with normal priority | You can lower the priority of the Microsoft Defender Antivirus engine, which may be useful in lightweight deployments where you want to have as lean a startup process as possible. This may impact protection on the endpoint. | Enabled
-       | Allow antimalware service to remain running always | If protection updates have been disabled, you can set Microsoft Defender Antivirus to still run. This lowers the protection on the endpoint. | Disabled |
+       | Setting  | Default setting |
+       |-----------|---------------|
+       | Allow antimalware service to start up with normal priority <br/><br/> You can lower the priority of the Microsoft Defender Antivirus engine. Lowering the priority might be useful in cases where you want to have as lean a startup process as possible; however, taking this action could affect endpoint protection. Proceed with caution. | Enabled
+       | Allow antimalware service to remain running always <br/><br/> If protection updates have been disabled, you can set Microsoft Defender Antivirus to still run. Disabling protection updates reduces endpoint protection. | Disabled |
     
     2. Configure the setting as appropriate, and click **OK**.
     
