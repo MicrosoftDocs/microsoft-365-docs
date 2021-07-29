@@ -127,9 +127,6 @@ Removed topics can later be added back as viewable topics if needed. If you want
 
    ![Screenshot of Removed tab showing the Review and publish option.](../media/knowledge-management/review-and-publish-removed-topic.png)
 
-> [!Tip] 
-> To avoid confusion for users, you might want to remove topics that have similar names (for example, choose either Microsoft Excel or Excel). *[**Matt**- please confirm this is the intent; if not, please provide corrected wording. Thanks.]*
-
 ## Topic count dashboard
 
 This chart in the dashboard view lets you see the number of topics in your Viva Topics topic center. The chart shows the topic counts per topic lifecycle stage and also shows how topic counts have trended over time. Knowledge managers can visually monitor the rate at which new topics are being discovered by AI and the rate at which topics are getting confirmed or published by the knowledge manager or user actions.
