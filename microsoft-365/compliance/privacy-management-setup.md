@@ -108,7 +108,7 @@ This feature enables you to show anonymized versions of usernames within privacy
 
 ### User notification emails
 
-When we detect a match for your data handling policies, privacy management can send an email to the affected users with corrective actions to take and a link to privacy training. In Settings, you can enable or disable the email notification capability of privacy management as a whole. You can activate individual notifications, set email frequency, and specify a training URL when you create or edit a policy. If notification capability is turned off in Settings, any policy-level configuration for specific notification mails will be disabled. To learn more about policies, see [Create and manage policies](privacy-management-policies.md).
+When we detect a match for your data handling policies, privacy management can send an email to your users with corrective actions to take and a link to privacy training. In Settings, you can enable or disable the email notification capability of privacy management as a whole. You can activate individual notifications, set email frequency, and specify a training URL when you create or edit a policy. If notification capability is turned off in Settings, any policy-level configuration for specific notification mails will be disabled. To learn more about policies, see [Create and manage policies](privacy-management-policies.md).
 
 ### Teams collaboration
 
