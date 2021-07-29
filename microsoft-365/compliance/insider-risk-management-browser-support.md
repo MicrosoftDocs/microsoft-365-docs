@@ -92,7 +92,7 @@ For the Group Policy setup option, complete the following steps:
 
 **Step 1: Import the latest Microsoft Edge Administrative Template (.admx) file.**
 
-Devices must be manageable using Group Policies and all [Microsoft Edge Administrative Templates](https://www.microsoft.com/edge/business/download) need to be imported into the Group Policy Central Store. For more information, see [How to create and manage the Central Store for Group Policy Administrative Templates in Windows](https://docs.microsoft.com/troubleshoot/windows-client/group-policy/create-and-manage-central-store).
+Devices must be manageable using Group Policies and all [Microsoft Edge Administrative Templates](https://www.microsoft.com/edge/business/download) need to be imported into the Group Policy Central Store. For more information, see [How to create and manage the Central Store for Group Policy Administrative Templates in Windows](/troubleshoot/windows-client/group-policy/create-and-manage-central-store).
 
 **Step 2: Add the *Microsoft Insider Risk Management Extension* add-on to the *Force Install* list.**
 
