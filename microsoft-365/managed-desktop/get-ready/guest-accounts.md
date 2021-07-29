@@ -40,6 +40,7 @@ To enable this setting, follow these steps:
 > You cannot undo this setting after you select **Yes**.
 
 For more information, see [Unlicensed admins in Microsoft Intune](/mem/intune/fundamentals/unlicensed-admins).
+
 ## Steps to get ready
 
 1. Review [prerequisites for Microsoft Managed Desktop](prerequisites.md).
