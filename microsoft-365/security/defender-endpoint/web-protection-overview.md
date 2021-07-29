@@ -43,12 +43,6 @@ The cards that make up web threat protection are **Web threat detections over ti
 
 Web threat protection includes:
 
-- Comprehensive visibility into web threats affecting your organization
-
-- Investigation capabilities over web-related threat activity through alerts and comprehensive profiles of URLs and the devices that access these URLs
-
-- A full set of security features that track general access trends to malicious and unwanted websites
-
 - Comprehensive visibility into web threats affecting your organization.
 
 - Investigation capabilities over web-related threat activity through alerts and comprehensive profiles of URLs and the devices that access these URLs.
@@ -76,15 +70,10 @@ For more information, see [Create indicators for IPs and URLs/domains](indicator
 Web content filtering includes **Web activity by category**, **Web content filtering summary**, and **Web activity summary**.
 
 Web content filtering includes:
-- Users are prevented from accessing websites in blocked categories, whether they are browsing on-premises or away
 
-- You can conveniently deploy varied policies to various sets of users using the device groups defined in the [Microsoft Defender for Endpoint role-based access control settings](/microsoft-365/security/defender-endpoint/rbac)
+- Users are prevented from accessing websites in blocked categories, whether they are browsing on-premises or away.
 
-- You can access web reports in the same central location, with visibility over actual blocks and web usage
-
-- Users are prevented from accessing websites in blocked categories, when browsing on-premises or away.
-
-- You can deploy several policies to various sets of users using the device groups as defined in the [Microsoft Defender for Endpoint role-based access control settings](/microsoft-365/security/defender-endpoint/rbac).
+- You can conveniently deploy varied policies to various sets of users using the device groups defined in the [Microsoft Defender for Endpoint role-based access control settings](/microsoft-365/security/defender-endpoint/rbac).
 
 - You can access web reports in the same central location, with visibility over actual blocks and web usage.
 
@@ -208,6 +197,6 @@ For more information on how to submit false positives/negatives, see [Address fa
 
 Topic|Description
 ---|---
-[Web threat protection](web-threat-protection.md) | Stop access to phishing sites, malware vectors, exploit sites, untrusted or low-reputation sites, as well as sites that you have blocked.
+[Web threat protection](web-threat-protection.md) | Stop access to phishing sites, malware vectors, exploit sites, untrusted or low-reputation sites, and sites that you have blocked.
 [Web content filtering](web-content-filtering.md) | Track and regulate access to websites based on their content categories.
 
