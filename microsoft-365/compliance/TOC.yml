@@ -58,6 +58,8 @@
           href: insider-risk-management-activities.md
         - name: Take action on insider risk cases
           href: insider-risk-management-cases.md
+        - name: Learn about and configure browser signal detection
+          href: insider-risk-management-browser-support.md
         - name: Review activities with the insider risk audit log
           href: insider-risk-management-audit-log.md
         - name: Review data with the insider risk content explorer
