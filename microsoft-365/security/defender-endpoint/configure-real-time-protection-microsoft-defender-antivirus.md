@@ -12,7 +12,7 @@ localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.topic: article
-ms.date: 12/16/2019
+ms.date: 07/29/2021
 manager: dansimp
 ms.custom: nextgen
 ---
@@ -38,7 +38,7 @@ To enable and configure always-on protection:
 
     1. In your Windows 10 taskbar search box, type **gpedit**.
     
-    1. Under **Best match**, click **Edit group policy** to launch **Local Group Policy Editor**.
+    2. Under **Best match**, click **Edit group policy** to launch **Local Group Policy Editor**.
     
        ![GPEdit taskbar search result](images/gpedit-search.png)
 
@@ -53,34 +53,19 @@ To enable and configure always-on protection:
        | Allow antimalware service to startup with normal priority | You can lower the priority of the Microsoft Defender Antivirus engine, which may be useful in lightweight deployments where you want to have as lean a startup process as possible. This may impact protection on the endpoint. | Enabled
        | Allow antimalware service to remain running always | If protection updates have been disabled, you can set Microsoft Defender Antivirus to still run. This lowers the protection on the endpoint. | Disabled |
     
-    1. Configure the setting as appropriate, and click **OK**.
+    2. Configure the setting as appropriate, and click **OK**.
     
-    1. Repeat the previous steps for each setting in the table.
+    3. Repeat the previous steps for each setting in the table.
 
 4. Configure the Microsoft Defender Antivirus real-time protection policy settings. To do this:
 
     1. In the **Microsoft Defender Antivirus** details pane, double-click **Real-time Protection**. Or, from the **Microsoft Defender Antivirus** tree on left pane, click **Real-time Protection**.
     
-    1. In the **Real-time Protection** details pane on right, double-click the policy setting as specified in the following table:  
+    2. In the **Real-time Protection** details pane on right, double-click the policy setting as specified in [Real-time protection policy settings](#real-time-protection-policy-settings) (later in this article).  
 
-       | Setting | Description | Default setting |
-       |-----------------------------|------------------------|-------------------------------|
-       | Turn on behavior monitoring | The AV engine will monitor file processes, file and registry changes, and other events on your endpoints for suspicious and known malicious activity. | Enabled |
-       | Scan all downloaded files and attachments | Downloaded files and attachments are automatically scanned. This operates in addition to the Windows Defender SmartScreen filter, which scans files before and during downloading. | Enabled |
-       | Monitor file and program activity on your computer | The Microsoft Defender Antivirus engine makes note of any file changes (file writes, such as moves, copies, or modifications) and general program activity (programs that are opened or running and that cause other programs to run). | Enabled |
-       | Turn on raw volume write notifications | Information about raw volume writes will be analyzed by behavior monitoring. | Enabled |
-       | Turn on process scanning whenever real-time protection is enabled | You can independently enable the Microsoft Defender Antivirus engine to scan running processes for suspicious modifications or behaviors. This is useful if you have temporarily disabled real-time protection and want to automatically scan processes that started while it was disabled. | Enabled |
-       | Define the maximum size of downloaded files and attachments to be scanned | You can define the size in kilobytes. | Enabled |
-       | Configure local setting override for turn on behavior monitoring | Configure a local override for the configuration of behavior monitoring. This setting can only be set by Group Policy. If you enable this setting, the local preference setting will take priority over Group Policy. If you disable or do not configure this setting, Group Policy will take priority over the local preference setting.| Enabled |
-       | Configure local setting override for scanning all downloaded files and attachments | Configure a local override for the configuration of scanning for all downloaded files and attachments. This setting can only be set by Group Policy. If you enable this setting, the local preference setting will take priority over Group Policy. If you disable or do not configure this setting, Group Policy will take priority over the local preference setting.| Enabled |
-       | Configure local setting override for monitoring file and program activity on your computer | Configure a local override for the configuration of monitoring for file and program activity on your computer. This setting can only be set by Group Policy. If you enable this setting, the local preference setting will take priority over Group Policy. If you disable or do not configure this setting, Group Policy will take priority over the local preference setting.| Enabled |
-       | Configure local setting override to turn on real-time protection | Configure a local override for the configuration to turn on real-time protection. This setting can only be set by Group Policy. If you enable this setting, the local preference setting will take priority over Group Policy. If you disable or do not configure this setting, Group Policy will take priority over the local preference setting.| Enabled |
-       | Configure local setting override for monitoring for incoming and outgoing file activity | Configure a local override for the configuration of monitoring for incoming and outgoing file activity. This setting can only be set by Group Policy. If you enable this setting, the local preference setting will take priority over Group Policy. If you disable or do not configure this setting, Group Policy will take priority over the local preference setting. | Enabled |
-       | Configure monitoring for incoming and outgoing file and program activity | Specify whether monitoring should occur on incoming, outgoing, both, or neither direction. This is relevant for Windows Server installations where you have defined specific servers or Server Roles that see large amounts of file changes in only one direction and you want to improve network performance. Fully updated endpoints (and servers) on a network will see little performance impact irrespective of the number or direction of file changes. | Enabled (both directions) |
-
-    1. Configure the setting as appropriate, and click **OK**.
+    3. Configure the setting as appropriate, and click **OK**.
     
-    1. Repeat the previous steps for each setting in the table.
+    4. Repeat the previous steps for each setting in the table.
 
 5. Configure the Microsoft Defender Antivirus scanning policy setting. To do this:  
 
@@ -88,16 +73,32 @@ To enable and configure always-on protection:
     
        ![Microsoft Defender Antivirus Scan options](images/gpedit-windows-defender-antivirus-scan.png)
 
-    1. In the **Scan** details pane on right, double-click the policy setting as specified in the following table:
+    2. In the **Scan** details pane on right, double-click the policy setting as specified in the following table:
 
-       | Setting | Description | Default setting |
-       |-----------------------------|------------------------|-------------------------------|    
-       | Turn on heuristics | Heuristic protection will disable or block suspicious activity immediately before the Microsoft Defender Antivirus engine is asked to detect the activity. | Enabled |
+       | Setting  | Default setting |
+       |------------------|------------|    
+       | Turn on heuristics <br/><br/> Heuristic protection will disable or block suspicious activity immediately before the Microsoft Defender Antivirus engine is asked to detect the activity. | Enabled |
 
-    1. Configure the setting as appropriate, and click **OK**.
+    3. Configure the setting as appropriate, and click **OK**.
     
 6. Close **Local Group Policy Editor**.
 
+### Real-time protection policy settings
+
+| Setting | Default setting |
+|---------|------------------|
+| Turn on behavior monitoring <br/><br/> The antivirus engine will monitor file processes, file and registry changes, and other events on your endpoints for suspicious and known malicious activity. | Enabled |
+| Scan all downloaded files and attachments <br/><br/> Downloaded files and attachments are automatically scanned. This operates in addition to the Windows Defender SmartScreen filter, which scans files before and during downloading. | Enabled |
+| Monitor file and program activity on your computer <br/><br/> The Microsoft Defender Antivirus engine makes note of any file changes (file writes, such as moves, copies, or modifications) and general program activity (programs that are opened or running and that cause other programs to run). | Enabled |
+| Turn on raw volume write notifications <br/><br/> Information about raw volume writes will be analyzed by behavior monitoring. | Enabled |
+| Turn on process scanning whenever real-time protection is enabled <br/><br/> You can independently enable the Microsoft Defender Antivirus engine to scan running processes for suspicious modifications or behaviors. This is useful if you have temporarily disabled real-time protection and want to automatically scan processes that started while it was disabled. | Enabled |
+| Define the maximum size of downloaded files and attachments to be scanned <br/><br/> You can define the size in kilobytes. | Enabled |
+| Configure local setting override for turn on behavior monitoring <br/><br/> Configure a local override for the configuration of behavior monitoring. This setting can only be set by Group Policy. If you enable this setting, the local preference setting will take priority over Group Policy. If you disable or do not configure this setting, Group Policy will take priority over the local preference setting.| Enabled |
+| Configure local setting override for scanning all downloaded files and attachments <br/><br/> Configure a local override for the configuration of scanning for all downloaded files and attachments. This setting can only be set by Group Policy. If you enable this setting, the local preference setting will take priority over Group Policy. If you disable or do not configure this setting, Group Policy will take priority over the local preference setting.| Enabled |
+| Configure local setting override for monitoring file and program activity on your computer <br/><br/> Configure a local override for the configuration of monitoring for file and program activity on your computer. This setting can only be set by Group Policy. If you enable this setting, the local preference setting will take priority over Group Policy. If you disable or do not configure this setting, Group Policy will take priority over the local preference setting.| Enabled |
+| Configure local setting override to turn on real-time protection <br/><br/> Configure a local override for the configuration to turn on real-time protection. This setting can only be set by Group Policy. If you enable this setting, the local preference setting will take priority over Group Policy. If you disable or do not configure this setting, Group Policy will take priority over the local preference setting.| Enabled |
+| Configure local setting override for monitoring for incoming and outgoing file activity <br/><br/> Configure a local override for the configuration of monitoring for incoming and outgoing file activity. This setting can only be set by Group Policy. If you enable this setting, the local preference setting will take priority over Group Policy. If you disable or do not configure this setting, Group Policy will take priority over the local preference setting. | Enabled |
+| Configure monitoring for incoming and outgoing file and program activity <br/><br/> Specify whether monitoring should occur on incoming, outgoing, both, or neither direction. This is relevant for Windows Server installations where you have defined specific servers or Server Roles that see large amounts of file changes in only one direction and you want to improve network performance. Fully updated endpoints (and servers) on a network will see little performance impact irrespective of the number or direction of file changes. | Enabled (both directions) |
 
 ## Disable real-time protection in Group Policy
 
@@ -112,7 +113,7 @@ To disable real-time protection in Group policy:
 
    1. In your Windows 10 taskbar search box, type **gpedit**.
    
-   1. Under **Best match**, click **Edit group policy** to launch **Local Group Policy Editor**.
+   2. Under **Best match**, click **Edit group policy** to launch **Local Group Policy Editor**.
 
 2.  In the left pane of **Local Group Policy Editor**, expand the tree to **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Microsoft Defender Antivirus** > **Real-time Protection**.
 
