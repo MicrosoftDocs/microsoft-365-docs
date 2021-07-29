@@ -1,7 +1,7 @@
 ---
 title: Topic center overview in Microsoft Viva Topics
-author: chuckedmonson
 ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
 ms.reviewer: cjtan
 audience: admin
@@ -11,7 +11,6 @@ search.appverid:
 ms.collection:
 - enabler-strategic
 - m365initiative-viva-topics
-ROBOTS:
 localization_priority: None
 description: Learn about the topic center in Microsoft Viva Topics.
 ---

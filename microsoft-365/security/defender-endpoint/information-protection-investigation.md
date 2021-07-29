@@ -25,7 +25,7 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 
 A typical advanced persistent threat lifecycle involves data exfiltration. In a security incident, it's important to have the ability to prioritize investigations where sensitive files may be jeopardy so that corporate data and information are protected.
@@ -38,7 +38,7 @@ Learn how to use data sensitivity labels to prioritize incident investigation.
 >[!NOTE]
 >Labels are detected for Windows 10, version 1809 or later.
 
-1. In Microsoft Defender Security Center, select **Incidents**. 
+1. In Microsoft 365 Defender portal, select **Incidents & alerts** > **Incidents**.
 
 2. Scroll to the right to see the **Data sensitivity** column. This column reflects sensitivity labels that have been observed on devices related to the incidents providing an indication of whether sensitive files may be impacted by the incident.
 
@@ -65,4 +65,4 @@ Learn how to use data sensitivity labels to prioritize incident investigation.
 
 
 >[!TIP]
->These data points are also exposed through the ‘DeviceFileEvents’ in advanced hunting, allowing advanced queries and schedule detection to take into account sensitivity labels and file protection status. 
+>These data points are also exposed through the 'DeviceFileEvents' in advanced hunting, allowing advanced queries and schedule detection to take into account sensitivity labels and file protection status. 

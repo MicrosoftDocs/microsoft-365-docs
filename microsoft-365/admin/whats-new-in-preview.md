@@ -138,7 +138,7 @@ To learn more about the new features, check out [Message center](manage/message-
 
 ### What's new features
 
-We've made improvements to how you view the "What's new" features for users in the Office apps. You can now see the rich content in the Whats' new pane that your users can see. You can also learn more about the feature before you decide to let your users know about the feature. For more info, check out [Manage which Office‎ features appear in What's New](manage/show-hide-new-features.md).
+We've made improvements to how you view the "What's new" features for users in the Office apps. You can now see the rich content in the What's new pane that your users can see. You can also learn more about the feature before you decide to let your users know about the feature. For more info, check out [Manage which Office features appear in What's New](manage/show-hide-new-features.md).
 
 :::image type="content" source="../media/power-bi-whats-new2.png" alt-text="Screenshot: Office apps what's new page showing improvements to Power BI":::
 
