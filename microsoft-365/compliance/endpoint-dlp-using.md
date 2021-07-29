@@ -60,19 +60,28 @@ You can use this logic to construct your exclusion paths:
 
 ### Unallowed apps
 
-When a policy's **Access by unallowed apps and browsers** setting is turned on and users attempt to use these apps to access a protected file, the activity will be allowed, blocked, or blocked but users can override the restriction. All activity is audited and available to review in activity explorer.
+Unallowed apps is a list of applications that you create which will not be allowed to access a DLP protected file.
+When a policy's **Access by unallowed apps** setting is turned on, and an app that is on the unallowed list attempts to access a protected file, the activity will be allowed, blocked, or blocked but users can override the restriction. All activity is audited and available to review in activity explorer.
 
 > [!IMPORTANT]
 > Do not include the path to the executable, but only the executable name (such as browser.exe).
 
 #### Auto-quarantine
 
+When enabled, **Auto-quarantine** kicks in when an unallowed app attempts to access a DLP protected sensitive item. Auto-quarantine moves the sensitive item to an admin configured folder and can leave a placeholder .txt file in the place of the original. The placeholder file contains configurable text that tells the user what happened, and where their original file was moved to.  
+
+##### Auto-quarantine and cloud synchronization apps
+
+Some apps try to access files repeatedly, like *onedrive.exe* does when it is synchronizing files between your local computer and your OneDrive storage in the cloud. If a policy is configured to block unallowed apps (with *onedrive.exe* being an app you added to the **unallowed apps** list) from accessing a sensitive item, each time *onedrive.exe* attempts to access the sensitive item a DLP notification will be triggered.
+
+You can use auto-quarantine to prevent an endless chain of DLP notifications for the user and admins. See, [Scenario 4: Avoid looping DLP notifications from cloud synchronization apps with auto-quarantine](#scenario-4-avoid-looping-dlp-notifications-from-cloud-synchronization-apps-with-auto-quarantine).   
 
 ### Unallowed Bluetooth apps
 
 Prevent people from transferring files protected by your policies via specific Bluetooth apps.
 
 ### Browser and domain restrictions
+
 Restrict sensitive files that match your policies from being shared with unrestricted cloud service domains.
 
 #### Service domains
@@ -219,6 +228,47 @@ These scenarios require that you already have devices onboarded and reporting in
    > ![endpoint dlp client blocked override notification](../media/endpoint-dlp-3-using-dlp-client-blocked-override-notification.png)
 
 10. Check Activity explorer for the event.
+
+### Scenario 4: Avoid looping DLP notifications from cloud synchronization apps with Auto-quarantine
+
+In this scenario, synchronizing files with the **Highly Confidential** sensitivity label to OneDrive is being blocked.
+
+#### Configure Endpoint DLP unallowed app and Auto-quarantine settings
+
+1. Open [Endpoint DLP settings](https://compliance.microsoft.com/datalossprevention?viewid=globalsettings)
+
+2. Expand **Unallowed apps**.
+
+3. Choose **Add or edit unallowed apps** and add *OneDrive* as a display name and the executable name *onedrive.exe*  to disallow onedrive from accessing items labeled with the confidential of the app you want to disallow.
+
+4. Select **Auto-quarantine** and **Save**.
+
+5. Under **Auto-quarantine settings** choose **Edit auto-quarantine settings**.
+
+6. Enable **Auto-quarantine for unallowed apps**.
+
+7. Enter the path to the folder on local machines where you want the original sensitive files to be moved to. For example:
+   
+**'%homedrive%%homepath%\Microsoft DLP\Quarantine'** for the username *Isaiah langer* will place the moved items in a 
+
+*C:\Users\IsaiahLanger\Microsoft DLP\Quarantine\OneDrive* folder and append a date and time stamp to the original file name.
+
+> [!NOTE]
+> DLP Auto-quarantine will create a folder for the files for each unallowed app. So if you have both *Notepad* and *OneDrive* in your unallowed apps list, a **\OneDrive** and a **\Notepad** directory will be created.
+
+8. Choose **Replace the files with a .txt file that contains the following text** and enter the text you want in the placeholder file. For example for a file named *auto quar 1.docx*:
+    
+**%%FileName%% contains sensitive info that your organization is protecting with the data loss prevention (DLP) policy %%PolicyName%% and was moved to the quarantine folder: %%QuarantinePath%%.** 
+
+will leave a .txt file that contains this message
+
+*auto quar 1.docx contains sensitive info that your organization is protecting with the data loss prevention (DLP) policy and was moved to the quarantine folder: C:\Users\IsaiahLanger\Microsoft DLP\Quarantine\OneDrive\auto quar 1_20210728_151541.docx.*
+
+9. Choose **Save**
+
+#### Configure a policy to block OneDrive synchronization of files with the sensitivity label Highly Confidential
+
+1. 
 
 ## See also
 
