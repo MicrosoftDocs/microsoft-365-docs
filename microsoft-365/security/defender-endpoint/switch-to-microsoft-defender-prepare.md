@@ -74,7 +74,7 @@ Now that you've updated your organization's devices, the next step is to get Def
 
 2. Verify that your licenses are properly provisioned. [Check your license state](production-deployment.md#check-license-state).
 
-3. As a global administrator or security administrator, set up your dedicated cloud instance of Defender for Endpoint. See [Defender for Endpoint setup: Tenant configuration](production-deployment.md#tenant-configuration).
+3. Set up your dedicated cloud instance of Defender for Endpoint. See [Defender for Endpoint setup: Tenant configuration](production-deployment.md#tenant-configuration).
 
 4. If endpoints (such as devices) in your organization use a proxy to access the internet, see [Defender for Endpoint setup: Network configuration](production-deployment.md#network-configuration).
  
