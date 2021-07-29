@@ -135,22 +135,22 @@ This section defines how the "Contractor" will display on the card, and uses the
 
 ```JSON
                         {
-	                        "elmType": "div",
-	                        "txtContent": "Contractor",
-	                        "style": {
-	                          "color": "#767676",
-	                          "font-size": "12px",
-	                          "margin-bottom": "2px"
-	                        }
-	                      },
-	                      {
-	                        "elmType": "div",
-	                        "style": {
-	                          "margin-bottom": "12px",
-	                          "font-size": "14px"
-	                        },
-	                        "txtContent": "[$Contractor]"
-	                      },
+                          "elmType": "div",
+                          "txtContent": "Contractor",
+                          "style": {
+                            "color": "#767676",
+                            "font-size": "12px",
+                            "margin-bottom": "2px"
+                          }
+                        },
+                        {
+                          "elmType": "div",
+                          "style": {
+                            "margin-bottom": "12px",
+                            "font-size": "14px"
+                          },
+                          "txtContent": "[$Contractor]"
+                        },
 ```
 
 ### Fee amount

@@ -37,6 +37,7 @@ ms.prod: m365-security
 In this article:
 
 - [How DKIM works better than SPF alone to prevent malicious spoofing](#how-dkim-works-better-than-spf-alone-to-prevent-malicious-spoofing)
+- [Steps to Create, enable and disable DKIM from Microsoft 365 Defender portal](#steps-to-create-enable-and-disable-dkim-from-microsoft-365-defender-portal)
 - [Steps to manually upgrade your 1024-bit keys to 2048-bit DKIM encryption keys](#steps-to-manually-upgrade-your-1024-bit-keys-to-2048-bit-dkim-encryption-keys)
 - [Steps to manually set up DKIM](#steps-to-manually-set-up-dkim)
 - [Steps to configure DKIM for more than one custom domain](#to-configure-dkim-for-more-than-one-custom-domain)
@@ -77,6 +78,36 @@ In this example, if you had only published an SPF TXT record for your domain, th
 > [!TIP]
 > DKIM uses a private key to insert an encrypted signature into the message headers. The signing domain, or outbound domain, is inserted as the value of the **d=** field in the header. The verifying domain, or recipient's domain, then uses the **d=** field to look up the public key from DNS, and authenticate the message. If the message is verified, the DKIM check passes.
 
+## Steps to Create, enable and disable DKIM from Microsoft 365 Defender portal
+All the accepted domains of your tenant will be shown in Microsoft 365 Defender portal under DKIM page. If you do not see it, add your accepted domain from [domains page](/microsoft-365/admin/setup/add-domain?view=o365-worldwide#add-a-domain).
+Once your domain is added, follow the steps as shown below to configure DKIM.
+
+Step 1: Click on the domain you wish to configure DKIM on DKIM page
+![image](https://user-images.githubusercontent.com/3039750/126996261-2d331ec1-fc83-4a9d-a014-bd7e1854eb07.png)
+
+Step 2: Click on Create keys
+![image](https://user-images.githubusercontent.com/3039750/127001645-4ccf89e6-6310-4a91-85d6-aaedbfd501d3.png)
+
+Step 3: Copy the CNAMES shown in the pop up window
+![image](https://user-images.githubusercontent.com/3039750/127001787-3cce2c29-e0e4-4712-af53-c51dcba33c46.png)
+
+Step 4: Publish the copied CNAME records to your DNS service provider. 
+On your DNS provider's website, add CNAME records for DKIM that you want to enable. Make sure that the fields are set to the following values for each:
+
+Record Type: CNAME (Alias)
+Host: Paste the values you copy from DKIM page.
+Points to address: Copy the value from DKIM page.
+TTL: 3600 (or your provider default)
+
+Step 5: Return to DKIM page to enable DKIM
+![image](https://user-images.githubusercontent.com/3039750/126995186-9b3fdefa-a3a9-4f5a-9304-1099a2ce7cef.png)
+
+If you see CNAME record doesn't exist error, it might be due to
+1. Synchronization with DNS server, which might take few seconds to hours, if the problem persists repeat the steps again
+2. Check for any copy paste errors, like additional space or tabs etc.
+
+If you wish to disable DKIM, toggle back to disable mode
+
 
 ## Steps to manually upgrade your 1024-bit keys to 2048-bit DKIM encryption keys
 <a name="1024to2048DKIM"> </a>
@@ -109,7 +140,7 @@ Get-DkimSigningConfig -Identity <Domain for which the configuration was set> | F
 > [!TIP]
 > This new 2048-bit key takes effect on the RotateOnDate, and will send emails with the 1024-bit key in the interim. After four days, you can test again with the 2048-bit key (that is, once the rotation takes effect to the second selector).
 
-If you want to rotate to the second selector, your options are a) let the Microsoft 365 service rotate the selector and upgrade to 2048-bitness within the next 6 months, or b) after 4 days and confirming that 2048-bitness is in use, manually rotate the second selector key by using the appropriate cmdlet listed above.
+If you want to rotate to the second selector, after four days and confirming that 2048-bitness is in use, manually rotate the second selector key by using the appropriate cmdlet listed above.
 
 For detailed syntax and parameter information, see the following articles: [Rotate-DkimSigningConfig](/powershell/module/exchange/rotate-dkimsigningconfig), [New-DkimSigningConfig](/powershell/module/exchange/new-dkimsigningconfig), and [Get-DkimSigningConfig](/powershell/module/exchange/get-dkimsigningconfig).
 
@@ -198,11 +229,13 @@ Once you have published the CNAME records in DNS, you are ready to enable DKIM s
 
 3. On the **DKIM** page, select the domain by clicking on the name.
 
-4. In the details flyout that appears, chang the **Sign messages for this domain with DKIM signatures** setting to **Enabled** (![Toggle on](../../media/scc-toggle-on.png))
+4. In the details flyout that appears, change the **Sign messages for this domain with DKIM signatures** setting to **Enabled** (![Toggle on](../../media/scc-toggle-on.png))
 
    When you're finished, click **Rotate DKIM keys**.
 
 5. Repeat these step for each custom domain.
+
+6. If you are configuring DKIM for the first time and see the error 'No DKIM keys saved for this domain' you will have to use Windows PowerShell to enable DKIM signing as explained in the next step.
 
 #### To enable DKIM signing for your custom domain by using PowerShell
 
@@ -255,7 +288,7 @@ If at some point in the future you decide to add another custom domain and you w
 ## Disabling the DKIM signing policy for a custom domain
 <a name="DisableDKIMSigningPolicy"> </a>
 
-Disabling the signing policy does not completely disable DKIM. After a period of time, Microsoft 365 will automatically apply the default policy for your domain. For more information, see [Default behavior for DKIM and Microsoft 365](use-dkim-to-validate-outbound-email.md#DefaultDKIMbehavior).
+Disabling the signing policy does not completely disable DKIM. After a period of time, Microsoft 365 will automatically apply the default policy for your domain, if the default policy is still in the enabled state. If you wish to completely disable DKIM, you need to disable DKIM on both the custom and default domains. For more information, see [Default behavior for DKIM and Microsoft 365](use-dkim-to-validate-outbound-email.md#DefaultDKIMbehavior).
 
 ### To disable the DKIM signing policy by using Windows PowerShell
 
@@ -290,9 +323,9 @@ Disabling the signing policy does not completely disable DKIM. After a period of
 ## Default behavior for DKIM and Microsoft 365
 <a name="DefaultDKIMbehavior"> </a>
 
-If you do not enable DKIM, Microsoft 365 automatically creates a 1024-bit DKIM public key for your default domain and the associated private key which we store internally in our datacenter. By default, Microsoft 365 uses a default signing configuration for domains that do not have a policy in place. This means that if you do not set up DKIM yourself, Microsoft 365 will use its default policy and keys it creates to enable DKIM for your domain.
+If you do not enable DKIM, Microsoft 365 automatically creates a 1024-bit DKIM public key for your Microsoft Online Email Routing Address (MOERA)/initial domain and the associated private key which we store internally in our datacenter. By default, Microsoft 365 uses a default signing configuration for domains that do not have a policy in place. This means that if you do not set up DKIM yourself, Microsoft 365 will use its default policy and keys it creates to enable DKIM for your domain.
 
-Also, if you disable DKIM signing after enabling it, after a period of time, Microsoft 365 will automatically apply the default policy for your domain.
+Also, if you disable DKIM signing on your custom domain after enabling it, after a period of time, Microsoft 365 will automatically apply the MOERA/initial domain policy for your custom domain.
 
 In the following example, suppose that DKIM for fabrikam.com was enabled by Microsoft 365, not by the administrator of the domain. This means that the required CNAMEs do not exist in DNS. DKIM signatures for email from this domain will look something like this:
 

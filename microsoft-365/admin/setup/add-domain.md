@@ -20,6 +20,7 @@ ms.custom:
 - MSStore_Link
 - okr_smb
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150

@@ -233,7 +233,7 @@ Sample code to call the REST API:
 - **URL**: `https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent`
 - **Headers**: Key = Content-Type, Value = application/atom+xml
 - **Body**:
-    
+
     ```xml
     <?xml version='1.0' encoding='utf-8' standalone='yes'?>
     
@@ -265,10 +265,10 @@ Sample code to call the REST API:
     
     </entry>
     ```
-    
+
 - **Authentication**: Basic
 - **Username**: "Complianceuser"
-- **Password**:	"Compliancepassword"
+- **Password**: "Compliancepassword"
 
 
 ##### Available parameters
@@ -304,7 +304,6 @@ Sample code to call the REST API:
 - **Username**: "Complianceuser"
 
 - **Password**: "Compliancepassword"
-
 
 ###### Response codes
 
@@ -353,7 +352,6 @@ Sample code to call the REST API:
 - **Username**: "Complianceuser"
 
 - **Password**: "Compliancepassword"
-
 
 ###### Response codes
 
@@ -445,5 +443,4 @@ $event = Invoke-RestMethod -Body $body -Method 'POST' -Uri $url -ContentType "ap
 }
 
 $event | fl *
-
 ```

@@ -142,10 +142,10 @@
 | 1/10/2020 | [What happens if I cancel a subscription?](/Office365/Admin/misc/what-happens-if-i-cancel) | modified |
 | 1/10/2020 | [Why can't I switch Office 365 for business plans?](/Office365/Admin/misc/why-can-t-i-switch-plans) | modified |
 | 1/10/2020 | [Set up multi-factor authentication for users](/Office365/Admin/security-and-compliance/set-up-multi-factor-authentication) | modified |
-| 1/10/2020 | [Buy or try subscriptions for Office 365 operated by 21Vianet](/Office365/Admin/services-in-china/buy-or-try-subscriptions?view=o365-21vianet) | modified |
+| 1/10/2020 | [Buy or try subscriptions for Office 365 operated by 21Vianet](/Office365/Admin/services-in-china/buy-or-try-subscriptions?view=o365-21vianet&preserve-view=true) | modified |
 | 1/10/2020 | [Create DNS records for Office 365 when you manage your DNS records](/Office365/Admin/services-in-china/create-dns-records-when-you-manage-your-dns-records?view=o365-21vianet) | modified |
-| 1/10/2020 | [What's the purpose of the Office 365 CNAME record for MSOID?](/Office365/Admin/services-in-china/purpose-of-cname?view=o365-21vianet) | modified |
-| 1/10/2020 | [Office 365 operated by 21Vianet](/Office365/Admin/services-in-china/services-in-china?view=o365-21vianet) | modified |
+| 1/10/2020 | [What's the purpose of the Office 365 CNAME record for MSOID?](/Office365/Admin/services-in-china/purpose-of-cname?view=o365-21vianet&preserve-view=true) | modified |
+| 1/10/2020 | [Office 365 operated by 21Vianet](/Office365/Admin/services-in-china/services-in-china?view=o365-21vianet&preserve-view=true) | modified |
 | 1/10/2020 | [Add a domain to Office 365](/Office365/Admin/setup/add-domain) | modified |
 | 1/10/2020 | [Create distribution groups in the Microsoft 365 admin center](/Office365/Admin/setup/create-distribution-lists) | modified |
 | 1/10/2020 | [Domains FAQ](/Office365/Admin/setup/domains-faq) | modified |

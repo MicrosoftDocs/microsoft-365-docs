@@ -50,6 +50,7 @@ Although a retention policy can support multiple services that are identified as
 - Exchange public folders
 - Teams channel messages
 - Teams chats
+- Teams private channel messages
 - Yammer community messages
 - Yammer user messages
 
@@ -70,7 +71,6 @@ When you have more than one retention policy, and when you also use retention la
 
 2. Select **New retention policy** to start the Create retention policy wizard, and name your new retention policy.
 
-<<<<<<< HEAD
 3. For the **Choose the type of retention policy to create** page, select **Adaptive** or **Static**, depending on the choice you made from the [Before you begin](#before-you-begin) instructions. If you haven't already created adaptive scopes, you won't be able to select **Adaptive** and finish the wizard.
 
 4. Depending on your selected scope:
@@ -140,6 +140,11 @@ It's possible that a retention policy that's applied to Microsoft 365 groups, Sh
     
     - If you chose **Static**: On the **Choose locations to apply the policy** page, toggle on one or both of the locations for Yammer: **Yammer community message** and **Yammer user messages**.
         
+        > [!IMPORTANT]
+        > Although you can create a retention policy for just Yammer user messages, a retention policy for this location can delete community messages from the Yammer app for all community members.
+        > 
+        > If you choose this option and the retention policy will be configured to delete user messages, make sure you understand this implication. For more information, see [How retention works with Yammer](retention-policies-yammer.md#how-retention-works-with-yammer).
+        
         By default, all communities and users are selected, but you can refine this by specifying communities and users to be included or excluded.
         
         For Yammer user messages: 
@@ -187,7 +192,7 @@ Use the following instructions for retention policies that apply to any of these
     - If you chose **Adaptive**: On the **Define adaptive scope** page, select **Add scopes** and select one or more adaptive scopes that have been created. Then, select one or more locations. The locations that you can select depend on the scope types added. For example, if you only added a scope type of **User**, you will be able to select **Exchange email** but not **SharePoint sites**. 
     
     - If you chose **Static**: On the **Choose locations** page, toggle on or off any of the locations except the locations for Teams and Yammer. For each location, you can leave it at the default to [apply the policy to the entire location](configure-retention-settings.md#a-policy-that-applies-to-entire-locations), or [specify includes and excludes](configure-retention-settings.md#a-policy-with-specific-inclusions-or-exclusions).
-
+    
     Information specific to locations:
     - [Exchange email and Exchange public folders](configure-retention-settings.md#configuration-information-for-exchange-email-and-exchange-public-folders)
     - [SharePoint sites and OneDrive accounts](configure-retention-settings.md#configuration-information-for-sharepoint-sites-and-onedrive-accounts)
@@ -195,7 +200,7 @@ Use the following instructions for retention policies that apply to any of these
     - [Skype for Business](configure-retention-settings.md#configuration-information-for-skype-for-business)
 
 5. For **Decide if you want to retain content, delete it, or both** page of the wizard, specify the configuration options for retaining and deleting content.
-
+    
     You can create a retention policy that just retains content without deleting, retains and then deletes after a specified period of time, or just deletes content after a specified period of time. For more information, see [Settings for retaining and deleting content](configure-retention-settings.md#settings-for-retaining-and-deleting-content) on this page.
 
-6. Complete the wizard to save your settings.
+5. Complete the wizard to save your settings.

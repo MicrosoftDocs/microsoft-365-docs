@@ -61,7 +61,6 @@ To help you get started with an information protection scheme in Microsoft 365, 
 
 Microsoft [information protection solutions](../compliance/information-protection.md) include a number of integrated capabilities across Microsoft 365, Microsoft Azure, and Microsoft Windows. In Microsoft 365, information protection solutions include:
 
-- [Service encryption with Customer Key](../compliance/customer-key-overview.md)
 - [Sensitive information types](../compliance/sensitive-information-type-entity-definitions.md) (described in the [assess data privacy risks and identify sensitive items article](information-protection-deploy-assess.md))
 - [Sensitivity labels](../compliance/sensitivity-labels.md)
   - Service/container-level

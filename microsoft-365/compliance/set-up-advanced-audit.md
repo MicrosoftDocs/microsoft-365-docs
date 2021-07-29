@@ -27,7 +27,7 @@ If your organization has a subscription and end user licensing that supports Adv
 
 ![Workflow to set up Advanced Audit](../media/AdvancedAuditWorkflow.png)
 
-## Step1: Set up Advanced Audit for users
+## Step 1: Set up Advanced Audit for users
 
 Advanced Audit features such as the ability to log crucial events such as MailItemsAccessed and Send require an appropriate E5 license assigned to users. Additionally, the Advanced Auditing app/service plan must be enabled for those users. To verify that the Advanced Auditing app is assigned to users, perform the following steps for each user:
 

@@ -57,7 +57,7 @@ To access Core eDiscovery or be added as a member of a Core eDiscovery case, a u
 
 Complete the following steps to add users to the eDiscovery Manager role group:
 
-1. Go to [https://protection.office.com/permissions](https://protection.office.com/permissions) and sign in using the credentials for an admin account in your Microsoft 365 or Office 365 organization.
+1. Go to <https://compliance.microsoft.com/permissions> and sign in using the credentials for an admin account in your Microsoft 365 or Office 365 organization.
 
 2. On the **Permissions** page, select the **eDiscovery Manager** role group.
 

@@ -119,9 +119,6 @@ Name                   Status      Authentication
 FQDN of new domain     Verified    Managed
 ```
 
-
 ## See also
-
-####
 
 [Help for partners](https://go.microsoft.com/fwlink/p/?LinkID=533477)

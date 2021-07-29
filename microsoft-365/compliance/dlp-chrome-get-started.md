@@ -102,35 +102,34 @@ This is the recommended method.
    Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
    ```
 
-2.	Navigate to [Microsoft Compliance Extension - Chrome Web Store (google.com)](https://chrome.google.com/webstore/detail/microsoft-compliance-exte/echcggldkblhodogklpincgchnpgcdco).
+2. Navigate to [Microsoft Compliance Extension - Chrome Web Store (google.com)](https://chrome.google.com/webstore/detail/microsoft-compliance-exte/echcggldkblhodogklpincgchnpgcdco).
 
-3.	Install the extension using the instructions on the Chrome Web Store page.
+3. Install the extension using the instructions on the Chrome Web Store page.
 
 ### Deploy using Microsoft Endpoint Manager
 
 Use this setup method for organization-wide deployments.
 
-
 ##### Enabling Required Registry Key via Microsoft Endpoint Manager
 
-1.	Create a PowerShell script with the following contents:
+1. Create a PowerShell script with the following contents:
 
     ```powershell
     Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
     ```
 
-2.	Sign in to the [Microsoft Endpoint Manager Admin Center](https://endpoint.microsoft.com).
+2. Sign in to the [Microsoft Endpoint Manager Admin Center](https://endpoint.microsoft.com).
 
-3.	Navigate to **Devices** > **Scripts** and select **Add**.
+3. Navigate to **Devices** > **Scripts** and select **Add**.
 
-4.	Browse to the location of the script created when prompted.
+4. Browse to the location of the script created when prompted.
 
-5.	Select the following settings:
+5. Select the following settings:
     1. Run this script using the logged-on credentials: YES
     1. Enforce script signature check: NO
     1. Run script in 64-bit PowerShell Host: YES
 
-6.	Select the proper device groups and apply the policy.
+6. Select the proper device groups and apply the policy.
 
 #### Microsoft Endpoint Manager Force Install Steps
 
@@ -138,27 +137,27 @@ Before adding the Microsoft Compliance Extension to the list of force-installed 
 
  After ingesting the ADMX, the steps below can be followed to create a configuration profile for this extension.
 
-1.	Sign in to the Microsoft Endpoint Manager Admin Center (https://endpoint.microsoft.com).
+1. Sign in to the Microsoft Endpoint Manager Admin Center (https://endpoint.microsoft.com).
 
-2.	Navigate to Configuration Profiles.
+2. Navigate to Configuration Profiles.
 
-3.	Select **Create Profile**.
+3. Select **Create Profile**.
 
-4.	Select **Windows 10** as the platform.
+4. Select **Windows 10** as the platform.
 
-5.	Select **Custom** as profile type.
+5. Select **Custom** as profile type.
 
-6.	Select the **Settings** tab.
+6. Select the **Settings** tab.
 
-7.	Select **Add**.
+7. Select **Add**.
 
-8.	Enter the following policy information.
+8. Enter the following policy information.
 
     OMA-URI: `./Device/Vendor/MSFT/Policy/Config/Chrome~Policy~googlechrome~Extensions/ExtensionInstallForcelist`<br/>
     Data type: `String`<br/>
     Value: `<enabled/><data id="ExtensionInstallForcelistDesc" value="1&#xF000; echcggldkblhodogklpincgchnpgcdco;https://clients2.google.com/service/update2/crx"/>`
 
-9.	Click create.
+9. Click create.
 
 ### Deploy using Group Policy
 
@@ -166,53 +165,53 @@ If you don't want to use Microsoft Endpoint Manager, you can use group policies 
 
 1. Your devices must be manageable via Group Policy, and you need to import all Chrome ADMXs into the Group Policy Central Store. For more information, see [How to create and manage the Central Store for Group Policy Administrative Templates in Windows](/troubleshoot/windows-client/group-policy/create-and-manage-central-store).
 
-2.	Create a PowerShell script using this PowerShell command:
+2. Create a PowerShell script using this PowerShell command:
 
     ```powershell
     Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
     ```
 
-3.	Open the **Group Policy Management Console** and navigate to your organizational unit (OU).
+3. Open the **Group Policy Management Console** and navigate to your organizational unit (OU).
 
-4.	Right-click and select **Create a GPO in this domain and Link it here**. When prompted, assign a descriptive name to this group policy object (GPO) and finish creating it.
+4. Right-click and select **Create a GPO in this domain and Link it here**. When prompted, assign a descriptive name to this group policy object (GPO) and finish creating it.
 
-5.	Right-click the GPO and select **Edit**.
+5. Right-click the GPO and select **Edit**.
 
-6.	Go to **Computer Configuration** > **Preferences** > **Control Panel Settings** > **Scheduled Tasks**.
+6. Go to **Computer Configuration** > **Preferences** > **Control Panel Settings** > **Scheduled Tasks**.
 
-7.	Create a new immediate task by selecting right-clicking and selecting **New** > **Immediate Task (At least Windows 7)**.
+7. Create a new immediate task by selecting right-clicking and selecting **New** > **Immediate Task (At least Windows 7)**.
 
-8.	Give the task a name & description.
+8. Give the task a name & description.
 
-9.	Choose the corresponding account to run the immediate task, for example NT Authority
+9. Choose the corresponding account to run the immediate task, for example NT Authority
 
-10.	Select **Run with highest privileges**.
+10. Select **Run with highest privileges**.
 
-11.	Configure the policy for Windows 10.
+11. Configure the policy for Windows 10.
 
-12.	In the **Actions** tab, select the action **Start a program**.
+12. In the **Actions** tab, select the action **Start a program**.
 
-13.	Enter the path to the Program/Script created in Step 1.
+13. Enter the path to the Program/Script created in Step 1.
 
-14.	Select **Apply**.
+14. Select **Apply**.
 
 #### Adding the Chrome Extension to the ForceInstall List
 
-1.	In the Group Policy Management Editor, navigate to your OU.
+1. In the Group Policy Management Editor, navigate to your OU.
 
-2.	Expand the following path **Computer/User configuration** > **Policies** > **Administrative templates** > **Classic administrative templates** > **Google** > **Google Chrome** > **Extensions**. This path may vary depending on your configuration.
+2. Expand the following path **Computer/User configuration** > **Policies** > **Administrative templates** > **Classic administrative templates** > **Google** > **Google Chrome** > **Extensions**. This path may vary depending on your configuration.
 
-3.	Select **Configure the list of force-installed extensions**.
+3. Select **Configure the list of force-installed extensions**.
 
-4.	Right click and select **Edit**.
+4. Right click and select **Edit**.
 
-5.	Select **Enabled**.
+5. Select **Enabled**.
 
-6.	Select **Show**.
+6. Select **Show**.
 
-7.	Under **Value**, add the following entry: `echcggldkblhodogklpincgchnpgcdco;https://clients2.google.com/service/update2/crx`
+7. Under **Value**, add the following entry: `echcggldkblhodogklpincgchnpgcdco;https://clients2.google.com/service/update2/crx`
 
-8.	Select **OK** and then **Apply**.
+8. Select **OK** and then **Apply**.
 
 ### Test the Extension
 
