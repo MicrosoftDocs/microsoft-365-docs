@@ -69,4 +69,5 @@ If you have email as part of your Microsoft 365 subscription, sign in to the Exc
 ## Related content
 
 [Exchange admin center in Exchange Online](/exchange/exchange-admin-center)
+
 [Restore a user](restore-user.md)
