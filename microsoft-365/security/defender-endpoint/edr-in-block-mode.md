@@ -15,7 +15,7 @@ localization_priority: Normal
 ms.custom: 
   - next-gen
   - edr
-ms.date: 07/20/2021
+ms.date: 07/29/2021
 ms.collection: 
   - m365-security-compliance
   - m365initiative-defender-endpoint
@@ -79,7 +79,7 @@ The following image shows an instance of unwanted software that was detected and
 
 | Requirement  | Details  |
 |---------|---------|
-| Permissions | You must have the Global Administrator or Security Administrator role assigned in [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal). For more information, see [Basic permissions](basic-permissions.md). |
+| Permissions | You must have either the Global Administrator or Security Administrator role assigned in [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal). For more information, see [Basic permissions](basic-permissions.md). |
 | Operating system     | Devices must be running one of the following versions of Windows: <br/>- Windows 10 (all releases) <br/>- Windows Server, version 1803 or newer <br/>- Windows Server 2019 <br/>- Windows Server 2016 (only when Microsoft Defender Antivirus is in active mode)     |
 | Microsoft Defender for Endpoint     | Devices must be onboarded to Defender for Endpoint. See [Minimum requirements for Microsoft Defender for Endpoint](minimum-requirements.md).       |
 | Microsoft Defender Antivirus  | Devices must have Microsoft Defender Antivirus installed and running in either active mode or passive mode. [Confirm Microsoft Defender Antivirus is in active or passive mode](#how-do-i-confirm-microsoft-defender-antivirus-is-in-active-or-passive-mode). |
