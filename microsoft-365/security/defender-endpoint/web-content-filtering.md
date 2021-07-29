@@ -34,7 +34,7 @@ ms.technology: mde
 > [!TIP]
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
 
-Web content filtering is part of [Web protection](web-protection-overview.md) capabilities in Microsoft Defender for Endpoint. It enables your organization to track and regulate access to websites based on their content categories. Many of these websites, while not malicious, might be problematic because of compliance regulations, bandwidth usage, or other concerns.
+Web content filtering is part of the [Web protection](web-protection-overview.md) capabilities in Microsoft Defender for Endpoint. It enables your organization to track and regulate access to websites based on their content categories. Many of these websites, while not malicious, might be problematic because of compliance regulations, bandwidth usage, or other concerns.
 
 Configure policies across your device groups to block certain categories. Blocking a category prevents users within specified device groups from accessing URLs associated with the category. For any category that's not blocked, the URLs are automatically audited. Your users can access the URLs without disruption, and you'll gather access statistics to help create a more custom policy decision. Your users will see a block notification if an element on the page they're viewing is making calls to a blocked resource.
 
@@ -45,10 +45,6 @@ Summarizing the benefits:
 - Users are prevented from accessing websites in blocked categories, whether they're browsing on-premises or away
 - Your security team can conveniently deploy policies to groups of users using device groups defined in [Microsoft Defender for Endpoint role-based access control settings](/microsoft-365/security/defender-endpoint/rbac)
 - Your security team can access web reports in the same central location, with visibility over actual blocks and web usage
-
-## User experience
-
-The blocking experience for 3rd party supported browsers is provided by Network Protection, which provides a system-level toast notifying the user of a blocked connection. For a more user-friendly, in-browser experience, consider using Microsoft Edge.
 
 ## Prerequisites
 
@@ -93,6 +89,10 @@ To add a new policy:
 > - If you are removing a policy or changing device groups at the same time, this might cause a delay in policy deployment.
 > - Blocking the "Uncategorized" category may lead to unexpected and undesired results.  
 
+## User experience
+
+The blocking experience for 3rd party supported browsers is provided by Network Protection, which provides a system-level toast notifying the user of a blocked connection. For a more user-friendly, in-browser experience, consider using Microsoft Edge.
+
 ### Allow specific websites
 
 It's possible to override the blocked category in web content filtering to allow a single site by creating a custom indicator policy. The custom indicator policy will supersede the web content filtering policy when it's applied to the device group in question.
@@ -103,13 +103,17 @@ It's possible to override the blocked category in web content filtering to allow
 
 3. Set the policy action to **Allow**.  
 
-### Reporting inaccuracies
+### Dispute categories
 
-If you encounter a domain that has been incorrectly categorized, you can report inaccuracies directly to us from the Web Content Filtering reports page. This feature is available only in the new Microsoft 365 security center (security.microsoft.com).
-
-To report an inaccuracy, navigate to **Reports** > **Web protection** > **Web Content Filtering Details** > **Domains**. On the domains tab of our Web Content Filtering reports, you will see an ellipsis beside each of the domains. Hover over this ellipsis and select **Report Inaccuracy**.
+If you encounter a domain that has been incorrectly categorized, you can dispute the category directly from the portal. To dispute the category of a domain, navigate to **Reports** > **Web protection** > **Web Content Filtering Details** > **Domains**. On the domains tab of our Web Content Filtering reports, you will see an ellipsis beside each of the domains. Hover over this ellipsis and select **Dispute Category**.
 
 A panel will open where you can select the priority and add additional details such as the suggested category for re-categorization. Once you complete the form, select **Submit**. Our team will review the request within one business day. For immediate unblocking, create a [custom allow indicator](indicator-ip-domain.md).
+
+### URL Category Lookup
+
+To determine the category of a website, you can use the URL search function available on the Microsoft 365 Defender portal (https://security.microsoft.com). In the URL search results, the web content filtering category will be shown under the **URL/Domain details**. Administrators can also dispute the category of the domain directly from this page, as shown in the image below. If the category result is not shown, the URL is not currently assigned to an existing web content filtering category.
+
+![Image of web content filtering category lookup results](images/web-content-filtering-category-lookup.png)
 
 ## Web content filtering cards and details
 
