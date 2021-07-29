@@ -55,6 +55,26 @@ Before you get started with migrating DLP policies, you should confirm your [Mic
 
 To access and use the policy migration wizard, you must have one of these subscriptions or add-ons listed in [Microsoft 365 Licensing guidance for security & compliance, Information Protection](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection)
 
+<!--DLP for EXO and SPO/ODB is available for E3 tenants as well. So we should add those too
+
+Thanks,
+Prateek
+
+From: Christopher J Fox (OFFICE) <chrfox@exchange.microsoft.com> 
+Sent: Wednesday, July 28, 2021 11:49 PM
+To: Prateek Jain <pratj@microsoft.com>
+Subject: RE: Prateek Jain mentioned you in "dlp-migrate-exo-policy-to-unified-dlp".
+
+So these  - Microsoft 365 E5
+- Microsoft 365 A5 (EDU)
+- Microsoft 365 E5 compliance
+- Microsoft 365 A5 compliance
+- Microsoft 365 E5 information protection and governance
+- Microsoft 365 A5 information protection and governance
+- -->
+
+
+
 ### Permissions
 
 The account that you use to run the migration wizard must have access to both the Exchange Admin Console DLP page and to the Unified DLP console in the Compliance center.
