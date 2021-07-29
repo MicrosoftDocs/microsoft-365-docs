@@ -18,7 +18,7 @@ ms.collection:
   - M365-security-compliance
   - m365solution-scenario
 ms.topic: article
-ms.date: 06/11/2021
+ms.date: 07/29/2021
 ms.reviewer: chventou
 ---
 
@@ -39,7 +39,7 @@ This article describes how to find your Microsoft Defender for Endpoint settings
 ## Find your Microsoft Defender for Endpoint settings in Intune
 
 > [!IMPORTANT]
-> You must be a global administrator or service administrator in Intune to configure the settings described in this article. To learn more, see **[Types of administrators (Intune)](/mem/intune/fundamentals/users-add#types-of-administrators)**.
+> You must have either the global administrator or service administrator role assigned in Intune to configure the settings described in this article. To learn more, see **[Types of administrators (Intune)](/mem/intune/fundamentals/users-add#types-of-administrators)**.
 
 1. Go to the Azure portal ([https://portal.azure.com](https://portal.azure.com)) and sign in.
 
