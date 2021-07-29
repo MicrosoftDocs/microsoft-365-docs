@@ -46,12 +46,17 @@ You can also submit files for deep analysis, to run the file in a secure cloud s
 
 Some actions require certain permissions. The following table describes what action certain permissions can take on portable executable (PE) and non-PE files:
 
-| Permission             | PE files | Non-PE files |
-| :--------------------- | :------: | :----------: |
-| View data              |     X    |       X      |
-| Alerts investigation   | &#x2611; |       X      |
-| Live response basic    |     X    |       X      |
-| Live response advanced | &#x2611; |   &#x2611;   |
+<br>
+
+****
+
+|Permission|PE files|Non-PE files|
+|:---------------------|:------:|:----------:|
+|View data|X|X|
+|Alerts investigation|&#x2611;|X|
+|Live response basic|X|X|
+|Live response advanced|&#x2611;|&#x2611;|
+|
 
 For more information on roles, see [Create and manage roles for role-based access control](user-roles.md).
 
@@ -71,14 +76,14 @@ The **Stop and Quarantine File** action includes stopping running processes, qua
 This action takes effect on devices with Windows 10, version 1703 or later, where the file was observed in the last 30 days.
 
 > [!NOTE]
-> You’ll be able to restore the file from quarantine at any time.
+> You'll be able to restore the file from quarantine at any time.
 
 ### Stop and quarantine files
 
 1. Select the file you want to stop and quarantine. You can select a file from any of the following views or use the Search box:
 
    - **Alerts** - click the corresponding links from the Description or Details in the Alert Story timeline
-   - **Search box** - select **File** from the drop–down menu and enter the file name
+   - **Search box** - select **File** from the drop-down menu and enter the file name
 
    > [!NOTE]
    > The stop and quarantine file action is limited to a maximum of 1000 devices. To stop a file on a larger number of devices, see [Add indicator to block or allow file](#add-indicator-to-block-or-allow-a-file).
@@ -92,7 +97,7 @@ This action takes effect on devices with Windows 10, version 1703 or later, wher
    ![Image of stop and quarantine file modal window](images/atp-stop-quarantine.png)
 
    The Action center shows the submission information:
-   
+
    ![Image of stop and quarantine file action center](images/atp-stopnquarantine-file.png)
 
    - **Submission time** - Shows when the action was submitted.
@@ -102,7 +107,8 @@ This action takes effect on devices with Windows 10, version 1703 or later, wher
 
 4. Select any of the status indicators to view more information about the action. For example, select **Failed** to see where the action failed.
 
-**Notification on device user**:</br>
+#### Notification on device user
+
 When the file is being removed from a device, the following notification is shown:
 
 ![Image of notification on device user](images/atp-notification-file.png)
@@ -113,18 +119,18 @@ A warning is shown before the action is implemented for files widely used throug
 
 ## Restore file from quarantine
 
-You can roll back and remove a file from quarantine if you’ve determined that it’s clean after an investigation. Run the following command on each device where the file was quarantined.
+You can roll back and remove a file from quarantine if you've determined that it's clean after an investigation. Run the following command on each device where the file was quarantined.
 
-1. Open an elevated command–line prompt on the device:
+1. Open an elevated command-line prompt on the device:
 
    1. Go to **Start** and type _cmd_.
 
-   1. Right–click **Command prompt** and select **Run as administrator**.
+   1. Right-click **Command prompt** and select **Run as administrator**.
 
 2. Enter the following command, and press **Enter**:
 
-   ```console
-   “%ProgramFiles%\Windows Defender\MpCmdRun.exe” –Restore –Name EUS:Win32/CustomEnterpriseBlock –All
+   ```dos
+   "%ProgramFiles%\Windows Defender\MpCmdRun.exe" -Restore -Name EUS:Win32/CustomEnterpriseBlock -All
    ```
 
    > [!NOTE]
@@ -177,7 +183,7 @@ Prevent further propagation of an attack in your organization by banning potenti
 
 > [!IMPORTANT]
 >
-> - This feature is available if your organization uses Microsoft Defender Antivirus and Cloud–delivered protection is enabled. For more information, see [Manage cloud–delivered protection](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus).
+> - This feature is available if your organization uses Microsoft Defender Antivirus and Cloud-delivered protection is enabled. For more information, see [Manage cloud-delivered protection](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus).
 >
 > - The Antimalware client version must be 4.18.1901.x or later.
 > - This feature is designed to prevent suspected malware (or potentially malicious files) from being downloaded from the web. It currently supports portable executable (PE) files, including _.exe_ and _.dll_ files. The coverage will be extended over time.
@@ -192,6 +198,7 @@ Prevent further propagation of an attack in your organization by banning potenti
 ### Enable the block file feature
 
 To start blocking files, you first need to [turn the **Block or allow** feature on](advanced-features.md) in Settings.
+
 ### Allow or block file
 
 When you add an indicator hash for a file, you can choose to raise an alert and block the file whenever a device in your organization attempts to run it.
@@ -236,10 +243,11 @@ The deep analysis summary includes a list of observed *behaviors*, some of which
 
 Results of deep analysis are matched against threat intelligence and any matches will generate appropriate alerts.
 
-Use the deep analysis feature to investigate the details of any file, usually during an investigation of an alert or for any other reason where you suspect malicious behavior. This feature is available within the **Deep analysis** tab, on the file's profile page.<br/>
-<br/>
+Use the deep analysis feature to investigate the details of any file, usually during an investigation of an alert or for any other reason where you suspect malicious behavior. This feature is available within the **Deep analysis** tab, on the file's profile page.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4aAYy?rel=0]
+<br/><br/>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4aAYy?rel=0]
 
 **Submit for deep analysis** is enabled when the file is available in the Defender for Endpoint backend sample collection, or if it was observed on a Windows 10 device that supports submitting to deep analysis.
 
@@ -257,7 +265,7 @@ You can also submit a sample through the [Microsoft Security Center Portal](http
 
     - **Alerts** - select the file links from the **Description** or **Details** in the Alert Story timeline
     - **Devices list** - select the file links from the **Description** or **Details** in the **Device in organization** section
-    - **Search box** - select **File** from the drop–down menu and enter the file name
+    - **Search box** - select **File** from the drop-down menu and enter the file name
 
 2. In the **Deep analysis** tab of the file view, select **Submit**.
 
@@ -269,7 +277,7 @@ You can also submit a sample through the [Microsoft Security Center Portal](http
    A progress bar is displayed and provides information on the different stages of the analysis. You can then view the report when the analysis is done.
 
 > [!NOTE]
-> Depending on device availability, sample collection time can vary. There is a 3–hour timeout for sample collection. The collection will fail and the operation will abort if there is no online Windows 10 device reporting at that time. You can re–submit files for deep analysis to get fresh data on the file.
+> Depending on device availability, sample collection time can vary. There is a 3-hour timeout for sample collection. The collection will fail and the operation will abort if there is no online Windows 10 device reporting at that time. You can re-submit files for deep analysis to get fresh data on the file.
 
 ### View deep analysis reports
 
@@ -299,18 +307,18 @@ If you come across a problem when trying to submit a file, try each of the follo
 
 4. If the sample collection policy isn't configured, then the default behavior is to allow sample collection. If it's configured, then verify the policy setting allows sample collection before submitting the file again. When sample collection is configured, then check the following registry value:
 
-    ```console
+    ```text
     Path: HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection
     Name: AllowSampleCollection
     Type: DWORD
     Hexadecimal value :
-      Value = 0 – block sample collection
-      Value = 1 – allow sample collection
+      Value = 0 - block sample collection
+      Value = 1 - allow sample collection
     ```
 
-1. Change the organizational unit through the Group Policy. For more information, see [Configure with Group Policy](configure-endpoints-gp.md).
+5. Change the organizational unit through the Group Policy. For more information, see [Configure with Group Policy](configure-endpoints-gp.md).
 
-1. If these steps do not resolve the issue, contact [winatp@microsoft.com](mailto:winatp@microsoft.com).
+6. If these steps do not resolve the issue, contact [winatp@microsoft.com](mailto:winatp@microsoft.com).
 
 ## Related topics
 
