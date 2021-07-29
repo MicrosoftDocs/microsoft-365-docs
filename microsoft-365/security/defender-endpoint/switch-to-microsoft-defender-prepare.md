@@ -81,7 +81,7 @@ Now that you've updated your organization's devices, the next step is to get Def
 At this point, you are ready to grant access to your security administrators and security operators who will use the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). 
 
 > [!NOTE]
-> The Microsoft 365 Defender portal is sometimes referred to as the Defender for Endpoint portal, and can be accessed at [https://security.microsoft.com](https://security.microsoft.com). 
+> The Microsoft 365 Defender portal is sometimes referred to as the Defender for Endpoint portal, and can be accessed at [https://security.microsoft.com](https://security.microsoft.com). The former Microsoft Defender Security Center (https://securitycenter.windows.com) will soon redirect to the Microsoft 365 Defender portal. To learn more, see [Microsoft 365 Defender portal overview](portal-overview.md).
 
 ## Grant access to the Microsoft 365 Defender portal
 
