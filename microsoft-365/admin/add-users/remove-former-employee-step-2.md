@@ -50,4 +50,5 @@ Once you've blocked a user from being able to log into your organization you can
 ## Related content
 
 [Exchange admin center in Exchange Online](/exchange/exchange-admin-center)
+
 [Restore a user](restore-user.md)
