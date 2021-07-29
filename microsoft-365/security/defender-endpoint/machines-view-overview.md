@@ -51,6 +51,14 @@ During the onboarding process, the **Devices list** is gradually populated with 
 
 You can apply the following filters to limit the list of alerts and get a more focused view.
 
+### Device name
+
+Select the name of the device you're interested in investigating.
+
+### Domain
+
+Select the domain you're interested in investigating.
+
 ### Risk level
 
 The risk level reflects the overall risk assessment of the device based on a combination of factors, including the types and severity of active alerts on the device. Resolving active alerts, approving remediation activities, and suppressing subsequent alerts can lower the risk level.
@@ -69,6 +77,10 @@ If the exposure level says "No data available," there are a few reasons why this
 
 Select only the OS platforms you're interested in investigating.
 
+### Windows 10 versions
+
+Select only the Windows 10 versions you're interested in investigating.
+
 ### Health state
 
 Filter by the following device health states:
@@ -81,29 +93,21 @@ Filter by the following device health states:
 
   For more information on how to address issues on misconfigured devices see, [Fix unhealthy sensors](fix-unhealthy-sensors.md).
 
-### Antivirus status
+### Onboarding status
 
-Filter devices by antivirus status. Applies to active Windows 10 devices only.
+Need description/definition.
 
-- **Disabled** - Virus & threat protection is turned off.
-- **Not reporting** - Virus & threat protection is not reporting.
-- **Not updated** - Virus & threat protection is not up to date.
+### Last device update
 
-For more information, see [View the Threat & Vulnerability Management dashboard](tvm-dashboard-insights.md).
+Filter your view based on when the device was last updated.
 
-### Threat mitigation status
+### First seen
 
-To view devices that may be affected by a certain threat, select the threat from the dropdown menu, and then select what vulnerability aspect needs to be mitigated.
+Need description/definition.
 
-To learn more about certain threats, see [Threat analytics](threat-analytics.md). For mitigation information, see [Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md).
+### Tags
 
-### Windows 10 version
-
-Select only the Windows 10 versions you're interested in investigating.
-
-### Tags & Groups
-
-Filter the list based on the grouping and tagging that you've added to individual devices. See [Create and manage device tags](machine-tags.md) and [Create and manage device groups](machine-groups.md).
+Filter the list based on the grouping and tagging that you've added to individual devices. See [Create and manage device tags](machine-tags.md).
 
 ## Related topics
 
