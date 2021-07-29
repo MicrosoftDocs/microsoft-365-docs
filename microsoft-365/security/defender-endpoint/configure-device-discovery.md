@@ -104,6 +104,19 @@ DeviceNetworkInfo
 | where NetworkName == "<your network name here>"
 ```
 
+## Get information on device
+
+You can use the following advanced hunting query to get the latest complete information on a specific device.
+
+```
+DeviceInfo
+| where DeviceName == "<device name here>" and isnotempty(OSPlatform)
+| summarize arg_max(Timestamp, *) by DeviceId 
+```
+
+
+
+
 ## See also
 
 - [Device discovery overview](device-discovery.md)
