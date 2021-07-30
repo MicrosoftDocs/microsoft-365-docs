@@ -17,7 +17,42 @@ f1.keywords: NOCSH
 
 # Onboard devices to Microsoft Defender for business
 
-Microsoft Defender for business is designed with the busy small business in mind. With preconfigured policies and settings based on industry best practices, Microsoft Defender for business helps protect your company’s devices as soon as they are onboarded. You can onboard devices in the Microsoft 365 Defender portal or in the Microsoft Endpoint Manager (MEM) admin center.
+Microsoft Defender for business is designed with the busy small business in mind. With preconfigured policies and settings that are based on industry best practices, Microsoft Defender for business helps protect your company’s devices as soon as they are onboarded. 
+
+The process of onboarding devices consists of the following steps:
+
+1. Join devices to Azure Active Directory (Azure AD)
+2. Enroll devices in Microsoft Endpoint Manager
+3. Confirm that you have Microsoft Defender for business
+4. Onboard devices to Microsoft Defender for business
+5. Run a detection test
+
+## Join devices to Azure AD
+
+
+
+## Enroll devices in Microsoft Endpoint Manager
+
+## Confirm that you have Microsoft Defender for business
+
+> [!IMPORTANT]
+> You must be a Billing Admin or Global Admin to perform this task.
+
+1. Go to the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)), and sign in.
+
+2. Go to Billing > Licenses. Confirm that you have Microsoft Defender for business. 
+
+   > [!TIP]
+   > You might see Microsoft Defender for Endpoint - SMB listed. This subscription is Microsoft Defender for business.
+
+## Onboard devices to Microsoft Defender for business
+
+## Run a detection test
+
+
+You can onboard devices in the Microsoft 365 Defender portal or in the Microsoft Endpoint Manager (MEM) admin center.
+
+
 
 > [!NOTE]
 > Initially, Microsoft Defender for business supports Windows 10 devices only; however, we are planning to add support for additional operating systems soon. You can choose from several different methods to onboard devices:
