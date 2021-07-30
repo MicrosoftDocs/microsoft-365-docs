@@ -33,7 +33,16 @@ Microsoft Secure Score can be found at https://security.microsoft.com/securescor
 
 ## July 2021
 
+### Added improvement action related to Microsoft Teams
+
+- Restrict dial-in users from bypassing a meeting lobby
+- Limit external participants from having control in a Teams meeting
+- Restrict anonymous users from starting Teams meetings
+- Require lobbies to be set up for Teams meetings
+- Configure which users are allowed to be present in Teams meetings
+
 ### Added improvement action related to Microsoft Defender for Endpoint
+
 - Fix Microsoft Defender for Endpoint sensor data collection for macOS
 - Fix Microsoft Defender for Endpoint impaired communications for macOS
 - Set minimum password length to 15 or more characters in macOS
