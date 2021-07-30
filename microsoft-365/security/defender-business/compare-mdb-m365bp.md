@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: reference
-ms.date: 07/15/2021
+ms.date: 07/30/2021
 ms.prod: m365-security
 ms.technology: dforbiz
 localization_priority: Normal
@@ -30,6 +30,7 @@ As you probably already know, Microsoft offers various cloud solutions and servi
 
 | Feature/Capability | [Microsoft Defender for business](mdb-overview.md) | [Microsoft 365 Business Premium](../../business/microsoft-365-business-overview.md) |
 |:---|:---|:---|
+| Email protection | Yes (for non-Microsoft 365 email) | Yes (for Microsoft 365 email) |
 | Antispam protection | Yes (for devices) | Yes (for Microsoft 365 email content, such as messages and attachments) |
 | Antimalware protection | Yes (for devices) | Yes (for Microsoft 365 email content, such as messages and attachments) |
 | [Next-generation protection](../defender-endpoint/microsoft-defender-antivirus-in-windows-10.md) <br/> (antivirus and antimalware protection) | Yes (Microsoft Defender Antivirus is included in Windows 10)  | Yes (Microsoft Defender Antivirus is included in Windows 10) |
