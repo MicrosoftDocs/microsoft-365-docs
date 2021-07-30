@@ -22,6 +22,9 @@ If you don’t already have Microsoft Defender for business, you can choose from
 - [Work with a Microsoft solution provider](#work-with-a-microsoft-solution-provider)
 - [Get Microsoft Defender for business on your own](#get-microsoft-defender-for-business-on-your-own) by signing up for the preview program or by purchasing a subscription
 
+> [!TIP]
+> If you decide to purchase Microsoft Defender for business through a solution provider, that provider can help you with your setup and configuration process.
+
 ## Work with a Microsoft Solution Provider
 
 Microsoft has a list of solution providers who are authorized to sell offerings, such as Microsoft Defender for business. 
@@ -34,12 +37,9 @@ To find a solution provider in your area, take the following steps:
 
 3. Review the list of results. Select a provider to learn more about their expertise and the services they provide.
 
-> [!TIP]
-> If you decide to purchase Microsoft Defender for business through a solution provider, that provider can help you with your setup and configuration process.
-
 ## Get Microsoft Defender for business on your own 
 
-If you prefer to get Microsoft Defender for business directly, the first person to sign your company up is a global administrator (also referred as the global admin). The global admin can purchase licenses, upgrade services, set up user accounts, and configure settings for your organization. 
+If you prefer to get Microsoft Defender for business directly, keep in mind that the first person to sign your company up is a global administrator (also referred as the global admin). The global admin can purchase licenses, upgrade services, set up user accounts, and configure settings for your organization. 
 
 1. Go to the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)), and sign in.
 
