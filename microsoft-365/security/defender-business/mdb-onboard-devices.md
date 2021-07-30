@@ -68,7 +68,9 @@ The process of onboarding devices consists of the following steps:
 
 ### Confirm that devices are enrolled in Microsoft Intune
 
+1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com/](https://endpoint.microsoft.com/)) and sign in.
 
+2. Choose **Devices**, and then choose **Enrollment status**. If any devices failed to enroll, you will see them listed here.
 
 ## Onboard devices to Microsoft Defender for business
 
