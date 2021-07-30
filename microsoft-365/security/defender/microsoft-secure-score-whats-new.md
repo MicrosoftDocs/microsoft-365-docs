@@ -42,6 +42,7 @@ Microsoft Secure Score can be found at https://security.microsoft.com/securescor
 - Configure which users are allowed to be present in Teams meetings
 
 ### Added improvement action related to Microsoft Defender for Endpoint
+
 - Fix Microsoft Defender for Endpoint sensor data collection for macOS
 - Fix Microsoft Defender for Endpoint impaired communications for macOS
 - Set minimum password length to 15 or more characters in macOS
