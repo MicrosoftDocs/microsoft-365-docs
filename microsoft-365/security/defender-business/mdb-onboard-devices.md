@@ -39,10 +39,6 @@ The process of onboarding devices consists of the following steps:
    > [!TIP]
    > You might see **Microsoft Defender for Endpoint - SMB** listed. This subscription is Microsoft Defender for business.
 
-## Set up enrollment for Windows devices
-
-Follow the guidance in [Set up enrollment for Windows devices](/mem/intune/enrollment/windows-enroll).
-
 ## Join a device to Azure AD
 
 1. On a Windows 10 device, choose **Settings** > **Accounts** > **Access work or school**.
@@ -91,6 +87,10 @@ Follow the guidance in [Set up enrollment for Windows devices](/mem/intune/enrol
 2. Scroll down to **Microsoft Intune connection**, and turn this setting on.
 
 3. In the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com/](https://endpoint.microsoft.com/)), choose **Endpoint security**, and then under **Setup**, choose **Microsoft Defender for Endpoint**. 
+
+4. Under **MDM Compliance Policy Settings**, set the **Connect Windows devices to Microsoft Defender for Endpoint** to **On**.
+
+5. Choose **Save**.
 
 ## Run a detection test
 
