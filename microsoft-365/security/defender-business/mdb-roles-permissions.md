@@ -17,7 +17,7 @@ f1.keywords: NOCSH
 
 # Assign roles and permissions
 
-In order for your security team to perform tasks in the Microsoft 365 Defender portal, such as configuring Microsoft Defender for business, or taking response actions on detected threats, appropriate permissions must be assigned. Microsoft recommends granting people access to only what they need to perform their tasks. We call this concept *least privilege* for permissions. 
+To perform tasks in the Microsoft 365 Defender portal, such as configuring Microsoft Defender for business, or taking response actions on detected threats, appropriate permissions must be assigned to your security team. Microsoft recommends granting people access to only what they need to perform their tasks. We call this concept *least privilege* for permissions. 
 
 The following table describes roles to consider as you plan for Microsoft Defender for business. [Learn more about admin roles](../../admin/add-users/about-admin-roles.md). 
 
