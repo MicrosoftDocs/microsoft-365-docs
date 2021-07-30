@@ -23,7 +23,7 @@ description: "Microsoft Compliance Manager helps organizations simplify and auto
 
 **In this article:** Learn what Compliance Manager is, how it helps simplify compliance and reduce risk, and its key components.
 
-## What is Compliance Manager
+## What is Compliance Manager?
 
 [Microsoft Compliance Manager](https://compliance.microsoft.com/compliancemanager) is a feature in the [Microsoft 365 compliance center](microsoft-365-compliance-center.md) that helps you manage your organization’s compliance requirements with greater ease and convenience. Compliance Manager can help you throughout your compliance journey, from taking inventory of your data protection risks to managing the complexities of implementing controls, staying current with regulations and certifications, and reporting to auditors.
 
