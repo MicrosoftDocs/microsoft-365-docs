@@ -30,6 +30,8 @@ The information you provide here will be displayed on the page customers and cli
 
 1. On the **Basic details** section, enter your business name, address, and phone number you would like to use for your Bookings calendar.
 
+:::image type="content" source="../media/bookings-business-basic-details.png" alt-text="Screenshot: Page to enter your basic business information":::
+
 In **Send customer replies to**, type the preferred email address where email replies to booking confirmations and reminders should be forwarded.
 
 In the **Website URL** field, enter the URL of the home page for your business.
