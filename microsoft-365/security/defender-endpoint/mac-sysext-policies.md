@@ -73,7 +73,7 @@ As part of the Endpoint Detection and Response capabilities, Microsoft Defender 
 1. Save the following content to your device as `com.microsoft.network-extension.mobileconfig` using a text editor:
 
     ```xml
-    <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+    <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "https://www.apple.com/DTDs/PropertyList-1.0.dtd">
     <plist version="1">
         <dict>
             <key>PayloadUUID</key>
@@ -195,7 +195,7 @@ The following configuration profile enables the network extension and grants Ful
 Save the following content to a file named **sysext.xml**:
 
 ```xml
-<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "https://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1">
     <dict>
         <key>PayloadUUID</key>

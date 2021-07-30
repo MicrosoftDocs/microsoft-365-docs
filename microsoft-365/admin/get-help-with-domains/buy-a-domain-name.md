@@ -106,7 +106,7 @@ After you register your domain (at a domain registrar), you sign in to Microsoft
     
 - [HiChina](https://www.hichina.com/)
     
-- [east.net](http://www.east.net/)
+- [east.net](https://www.east.net/)
     
 - [BIZCN](https://www.bizcn.com/)
     

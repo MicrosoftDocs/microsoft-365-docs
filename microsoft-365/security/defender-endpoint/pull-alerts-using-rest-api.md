@@ -46,7 +46,7 @@ In general, the OAuth 2.0 protocol supports four types of flows:
 - Client credentials flow
 - Resource owner flow
 
-For more information about the OAuth specifications, see the [OAuth Website](http://www.oauth.net).
+For more information about the OAuth specifications, see the [OAuth Website](https://www.oauth.net).
 
 Microsoft Defender for Endpoint supports the _Authorization grant flow_ and _Client credential flow_ to obtain access to pull detections, with Azure Active Directory (AAD) as the authorization server.
 

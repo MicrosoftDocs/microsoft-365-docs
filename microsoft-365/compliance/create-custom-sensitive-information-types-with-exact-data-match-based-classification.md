@@ -119,7 +119,7 @@ If for business or technical reasons, you prefer not to use PowerShell or comman
       (You can copy, modify, and use our example.)
 
       ```xml
-      <EdmSchema xmlns="http://schemas.microsoft.com/office/2018/edm">
+      <EdmSchema xmlns="https://schemas.microsoft.com/office/2018/edm">
             <DataStore name="PatientRecords" description="Schema for patient records" version="1">
                   <Field name="PatientID" searchable="true" caseInsensitive="true" ignoredDelimiters="-,/,*,#,^" />
                   <Field name="MRN" searchable="true" />
@@ -215,7 +215,7 @@ In this example, where both `caseInsensitive` and `ignoredDelimiters` are used, 
         - Name & descriptions: customize as required.
 
       ```xml
-      <RulePackage xmlns="http://schemas.microsoft.com/office/2018/edm">
+      <RulePackage xmlns="https://schemas.microsoft.com/office/2018/edm">
         <RulePack id="fd098e03-1796-41a5-8ab6-198c93c62b11">
           <Version build="0" major="2" minor="0" revision="0" />
           <Publisher id="eb553734-8306-44b4-9ad5-c388ad970528" />

@@ -239,7 +239,7 @@ The explanation library also includes commonly used *regular expression* explana
 - 6 to 17 digit numbers: Matches any number from 6 to 17 digits long. US bank account numbers fit this pattern.
 - Email address: Matches a common type of email address like meganb@contoso.com.
 - US taxpayer ID number: Matches a three-digit number starting with 9 followed by a 6 digit number starting with 7 or 8.
-- Web address (URL): Matches the format of a web address, starting with http:// or https://.
+- Web address (URL): Matches the format of a web address, starting with https:// or https://.
 
 In addition, the explanation library includes three automatic template types that work with the data you've labeled in your example files:
 

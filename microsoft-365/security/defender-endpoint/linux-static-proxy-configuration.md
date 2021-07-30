@@ -40,13 +40,13 @@ During installation, the `HTTPS_PROXY` environment variable must be passed to th
 - The `HTTPS_PROXY` variable is defined in `/etc/environment` with the following line:
 
   ```bash
-  HTTPS_PROXY="http://proxy.server:port/"
+  HTTPS_PROXY="https://proxy.server:port/"
   ```
 
 - The `HTTPS_PROXY` variable is defined in the package manager global configuration. For example, in Ubuntu 18.04, you can add the following line to `/etc/apt/apt.conf.d/proxy.conf`:
   
   ```bash
-  Acquire::https::Proxy "http://proxy.server:port/";
+  Acquire::https::Proxy "https://proxy.server:port/";
   ```
 
   > [!CAUTION]
@@ -55,7 +55,7 @@ During installation, the `HTTPS_PROXY` environment variable must be passed to th
 - The `HTTPS_PROXY` variable is prepended to the installation or uninstallation commands. For example, with the APT package manager, prepend the variable as follows when installing Microsoft Defender for Endpoint: 
 
   ```bash  
-  HTTPS_PROXY="http://proxy.server:port/" apt install mdatp
+  HTTPS_PROXY="https://proxy.server:port/" apt install mdatp
   ```
 
   > [!NOTE]
@@ -72,12 +72,12 @@ After installation, the `HTTPS_PROXY` environment variable must be defined in th
 > [!NOTE]
 > On CentOS or RedHat Linux distributions the location of the Endpoint service file is `/usr/lib/systemd/system/mdatp.service`.
 
-- Uncomment the line `#Environment="HTTPS_PROXY=http://address:port"` and specify your static proxy address.
+- Uncomment the line `#Environment="HTTPS_PROXY=https://address:port"` and specify your static proxy address.
 
 - Add a line `EnvironmentFile=/path/to/env/file`. This path can point to `/etc/environment` or a custom file, either of which needs to add the following line:
   
   ```bash
-  HTTPS_PROXY="http://proxy.server:port/"
+  HTTPS_PROXY="https://proxy.server:port/"
   ```
 
 After modifying the `mdatp.service` file, save and close it. Restart the service so the changes can be applied. In Ubuntu, this involves two commands:  

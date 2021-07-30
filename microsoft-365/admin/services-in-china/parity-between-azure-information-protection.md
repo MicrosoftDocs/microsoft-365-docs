@@ -246,7 +246,7 @@ For more information, see [What is the Azure Information Protection unified labe
     Use one of the following syntaxes, depending on the type of repository you're adding:
 
     - For a network share, use `\\Server\Folder`.
-    - For a SharePoint library, use `http://sharepoint.contoso.com/Shared%20Documents/Folder`.
+    - For a SharePoint library, use `https://sharepoint.contoso.com/Shared%20Documents/Folder`.
     - For a local path: `C:\Folder`
     - For a UNC path: `\\Server\Folder`
 

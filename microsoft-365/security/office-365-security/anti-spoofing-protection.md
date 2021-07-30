@@ -154,7 +154,7 @@ To help mailing list messages pass anti-spoofing checks, do following steps base
 
   - Read the instructions at this blog post: [A tip for mailing list operators to interoperate with DMARC to avoid failures](/archive/blogs/tzink/a-tip-for-mailing-list-operators-to-interoperate-with-dmarc-to-avoid-failures).
 
-  - Consider installing updates on your mailing list server to support ARC, see <http://arc-spec.org>.
+  - Consider installing updates on your mailing list server to support ARC, see <https://arc-spec.org>.
 
 - Your organization doesn't own the mailing list:
 

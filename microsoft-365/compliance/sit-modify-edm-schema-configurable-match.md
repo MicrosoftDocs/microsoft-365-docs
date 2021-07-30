@@ -48,7 +48,7 @@ Exact Data Match (EDM) based classification enables you to create custom sensiti
 Here is a sample schema that simulates case insensitive match by creating the extra columns needed to recognize case variations in the sensitive data.
 
 ```xml
-<EdmSchema xmlns="http://schemas.microsoft.com/office/2018/edm">
+<EdmSchema xmlns="https://schemas.microsoft.com/office/2018/edm">
   <DataStore name="PatientRecords" description="Schema for patient records policy" version="1">
            <Field name="PolicyNumber" searchable="true" />
            <Field name="PolicyNumberLowerCase" searchable="true" />
@@ -63,7 +63,7 @@ In the above example, the variations of the original `PolicyNumber` column will 
 To update this schema so that EDM uses configurable match use the `caseInsensitive` and `ignoredDelimiters` flags.  Here's how that looks:
 
 ```xml
-<EdmSchema xmlns="http://schemas.microsoft.com/office/2018/edm">
+<EdmSchema xmlns="https://schemas.microsoft.com/office/2018/edm">
   <DataStore name="PatientRecords" description="Schema for patient records policy" version="1">
          <Field name="PolicyNumber" searchable="true" caseInsensitive="true" ignoredDelimiters="-,/,*,#,^" />
   </DataStore>

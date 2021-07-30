@@ -96,7 +96,7 @@ In order to preview new features and provide early feedback, it is recommended t
 - Install the Microsoft GPG public key:
 
     ```bash
-    sudo rpm --import http://packages.microsoft.com/keys/microsoft.asc
+    sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
     ```
 
 - Download and make usable all the metadata for the currently enabled yum repositories:
@@ -124,7 +124,7 @@ In order to preview new features and provide early feedback, it is recommended t
 - Install the Microsoft GPG public key:
 
     ```bash
-    sudo rpm --import http://packages.microsoft.com/keys/microsoft.asc
+    sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
     ```
 
 ### Ubuntu and Debian systems

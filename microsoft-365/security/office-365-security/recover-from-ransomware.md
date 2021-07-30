@@ -107,29 +107,29 @@ After you've recovered, you can prevent OneDrive for Business clients from synch
 
 ### Contact law enforcement
 
-You should contact your local or federal law enforcement agencies. For example, if you are in the United States you can contact the [FBI local field office](https://www.fbi.gov/contact-us/field), [IC3](http://www.ic3.gov/complaint/default.aspx) or [Secret Service](http://www.secretservice.gov/).
+You should contact your local or federal law enforcement agencies. For example, if you are in the United States you can contact the [FBI local field office](https://www.fbi.gov/contact-us/field), [IC3](https://www.ic3.gov/complaint/default.aspx) or [Secret Service](https://www.secretservice.gov/).
 
 ### Submit a report to your country's scam reporting website
 
 Scam reporting websites provide information about how to prevent and avoid scams. They also provide mechanisms to report if you were victim of scam.
 
-- Australia: [SCAMwatch](http://www.scamwatch.gov.au/)
+- Australia: [SCAMwatch](https://www.scamwatch.gov.au/)
 
-- Canada: [Canadian Anti-Fraud Centre](http://www.antifraudcentre-centreantifraude.ca/)
+- Canada: [Canadian Anti-Fraud Centre](https://www.antifraudcentre-centreantifraude.ca/)
 
-- France: [Agence nationale de la sécurité des systèmes d'information](http://www.ssi.gouv.fr/)
+- France: [Agence nationale de la sécurité des systèmes d'information](https://www.ssi.gouv.fr/)
 
 - Germany: [Bundesamt für Sicherheit in der Informationstechnik](https://www.bsi.bund.de/DE/Home/home_node.html)
 
-- Ireland: [An Garda Síochána](http://www.garda.ie/)
+- Ireland: [An Garda Síochána](https://www.garda.ie/)
 
-- New Zealand: [Consumer Affairs Scams](http://www.consumeraffairs.govt.nz/scams)
+- New Zealand: [Consumer Affairs Scams](https://www.consumeraffairs.govt.nz/scams)
 
 - Switzerland [Nationales Zentrum für Cybersicherheit NCSC](https://www.ncsc.admin.ch/ncsc/de/home.html)
 
-- United Kingdom: [Action Fraud](http://www.actionfraud.police.uk/)
+- United Kingdom: [Action Fraud](https://www.actionfraud.police.uk/)
 
-- United States: [On Guard Online](http://www.onguardonline.gov/)
+- United States: [On Guard Online](https://www.onguardonline.gov/)
 
 If your country isn't listed, ask your local or federal law enforcement agencies.
 
