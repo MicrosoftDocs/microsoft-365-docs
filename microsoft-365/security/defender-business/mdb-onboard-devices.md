@@ -21,11 +21,11 @@ Microsoft Defender for business is designed with the busy small business in mind
 
 The process of onboarding devices consists of the following steps:
 
-1. Confirm that you have Microsoft Defender for business
-2. Join devices to Azure Active Directory (Azure AD)
-3. Enroll devices in Microsoft Endpoint Manager
-4. Onboard devices to Microsoft Defender for business
-5. Run a detection test
+1. [Confirm that you have Microsoft Defender for business](#confirm-that-you-have-microsoft-defender-for-business).
+2. [Join devices to Azure Active Directory](#join-a-device-to-azure-ad) (Azure AD).
+3. [Enroll devices in Microsoft Endpoint Manager](#enroll-a-device-in-microsoft-endpoint-manager).
+4. [Onboard devices to Microsoft Defender for business](#onboard-devices-to-microsoft-defender-for-business).
+5. [Run a detection test](#run-a-detection-test).
 
 ## Confirm that you have Microsoft Defender for business
 
