@@ -61,7 +61,7 @@ This scenario uses a centrally located script and runs it using a domain-based g
 
 1. Open the VDI configuration package .zip file (WindowsDefenderATPOnboardingPackage.zip)  
 
-    1. In the Microsoft Defender Security Center navigation pane, select **Settings** > **Onboarding**. 
+    1. In the Microsoft 365 Defender portal navigation pane, select **Settings** > **Endpoints** > **Onboarding** (under **Device Management**). 
     1. Select Windows 10 as the operating system. 
     1. In the **Deployment method** field, select VDI onboarding scripts for non-persistent endpoints. 
     1. Click **Download package** and save the .zip file. 
@@ -97,7 +97,7 @@ If you plan to manage your machines using a management tool, you can onboard dev
 For more information, see [Onboard Windows 10 devices using Configuration Manager](configure-endpoints-sccm.md).
 
 > [!WARNING]
-> If you plan to use [Attack Surface reduction Rules](attack-surface-reduction-rules.md), note that the rule “[Block process creations originating from PSExec and WMI commands](attack-surface-reduction-rules.md#block-process-creations-originating-from-psexec-and-wmi-commands)" should not be used, because that rule is incompatible with management through Microsoft Endpoint Configuration Manager. The rule blocks WMI commands that the Configuration Manager client uses to function correctly.
+> If you plan to use [Attack Surface reduction Rules](attack-surface-reduction-rules.md), note that the rule "[Block process creations originating from PSExec and WMI commands](attack-surface-reduction-rules.md#block-process-creations-originating-from-psexec-and-wmi-commands)" should not be used, because that rule is incompatible with management through Microsoft Endpoint Configuration Manager. The rule blocks WMI commands that the Configuration Manager client uses to function correctly.
 
 > [!TIP]
 > After onboarding the device, you can choose to run a detection test to verify that the device is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Microsoft Defender for Endpoint device](run-detection-test.md). 

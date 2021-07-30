@@ -63,7 +63,7 @@ sections:
       - question: |
           What rules to enable? All, or can I turn on individual rules?
         answer: |
-          To help you figure out what’s best for your environment, we recommended that you enable ASR rules in [audit mode](audit-windows-defender.md). With this approach, you’ll determine the possible affect to your organization. For example, your line-of-business applications.
+          To help you figure out what's best for your environment, we recommended that you enable ASR rules in [audit mode](audit-windows-defender.md). With this approach, you'll determine the possible affect to your organization. For example, your line-of-business applications.
           
       - question: |
           How do ASR rules exclusions work?
@@ -73,7 +73,7 @@ sections:
           
           |Rule name|GUID|File & folder exclusions|
           |:--|:--|:--|
-          |Block JavaScript or VBScript from launching downloaded executable content|D3E037E1-3EB8-44C8-A917-57927947596D|Not supported|
+          |Block JavaScript or VBScript from launching downloaded executable content|d3e037e1-3eb8-44c8-a917-57927947596d|Not supported|
           |Block persistence through WMI event subscription|e6db77e5-3df2-4cf1-b95a-636979351e5b|Not supported|
           
           ASR rules exclusions support wildcards, paths, and environmental variables. For more information on how to use wildcards in ASR rules, see [configure and validate exclusions based on file extension and folder location](/windows/security/threat-protection/microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus).
@@ -108,7 +108,7 @@ sections:
       - question: |
           What are the rules Microsoft recommends enabling?
         answer: |
-          We recommend enabling every possible rule. However, there are some cases where you shouldn’t enable a rule. For example, we don't recommend enabling the Block process creations originating from PSExec and WMI commands rule, if you’re using Microsoft Endpoint Configuration Manager (or, System Center Configuration Manager - SCCM) to manage your endpoints.
+          We recommend enabling every possible rule. However, there are some cases where you shouldn't enable a rule. For example, we don't recommend enabling the Block process creations originating from PSExec and WMI commands rule, if you're using Microsoft Endpoint Configuration Manager (or, System Center Configuration Manager - SCCM) to manage your endpoints.
           
           We highly recommend you that you read each rule-specific information and/or warnings, which are available in our
           [public documentation](/microsoft-365/security/defender-endpoint/attack-surface-reduction).

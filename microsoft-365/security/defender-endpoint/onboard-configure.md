@@ -28,7 +28,7 @@ ms.technology: mde
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
->Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-onboardconfigure-abovefoldlink)
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-onboardconfigure-abovefoldlink)
 
 Deploying Microsoft Defender for Endpoint is a two-step process.
 
@@ -47,7 +47,7 @@ In general, to onboard devices to the service:
 - Use the appropriate management tool and deployment method for your devices
 - Run a detection test to verify that the devices are properly onboarded and reporting to the service
 
->[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4bGqr]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4bGqr]
 
 
 
@@ -64,6 +64,7 @@ The following table lists the available tools based on the endpoint that you nee
 | **Android**  | [Microsoft Endpoint Manager](android-intune.md)               | 
 
 
+The following table lists the available tools based on the endpoint that you need to onboard.
 
 ## Configure capabilities of the service
 Onboarding devices effectively enables the endpoint detection and response capability of Micorosft Defender for Endpoint.

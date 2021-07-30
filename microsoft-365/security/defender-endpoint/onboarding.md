@@ -12,7 +12,7 @@ author: mjcaparas
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
   - M365-security-compliance
   - m365solution-endpointprotect
   - m365solution-scenario
@@ -28,34 +28,30 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
-
-Learn about the various phases of deploying Microsoft Defender for Endpoint and how to configure the capabilities within the solution. 
+Learn about the various phases of deploying Microsoft Defender for Endpoint and how to configure the capabilities within the solution.
 
 
 These are the steps you need to take to deploy Defender for Endpoint:
 
-- Step 1: Onboard endpoints to the service 
-- Step 2: Configure capabilities 
+- Step 1: Onboard endpoints to the service
+- Step 2: Configure capabilities
 
 ![Illustration of the deployment steps](images/deployment-steps.png)
 
 
 
 ## Step 1: Onboard endpoints using any of the supported management tools
-The [Plan deployment](deployment-strategy.md) topic outlines the general steps you need to take to deploy Defender for Endpoint.  
 
+The [Plan deployment](deployment-strategy.md) topic outlines the general steps you need to take to deploy Defender for Endpoint.
 
 Watch this video for a quick overview of the onboarding process and learn about the available tools and methods.
-<br />
-<br />
-
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4bGqr]
 
 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4bGqr]
 
-After identifying your architecture, you'll need to decide which deployment method to use. The deployment tool you choose influences how you onboard endpoints to the service. 
+After identifying your architecture, you'll need to decide which deployment method to use. The deployment tool you choose influences how you onboard endpoints to the service.
 
 ### Onboarding tool options
 
@@ -82,20 +78,25 @@ After onboarding the endpoints, you'll then configure the capabilities. The foll
 | [Auto Investigation & Remediation (AIR)](automated-investigations.md) | Microsoft Defender for Endpoint uses Automated investigations to significantly reduce the volume of alerts that need to be investigated individually. The Automated investigation feature leverages various inspection algorithms, and processes used by analysts (such as playbooks) to examine alerts and take immediate remediation action to resolve breaches. This significantly reduces alert volume, allowing security operations experts to focus on more sophisticated threats and other high value initiatives. |
 | [Microsoft Threat Experts (MTE)](microsoft-threat-experts.md) | Microsoft Threat Experts is a managed hunting service that provides Security Operation Centers (SOCs) with expert level monitoring and analysis to help them ensure that critical threats in their unique environments don't get missed.      |
 
+After onboarding the endpoints, you'll then configure the various capabilities such as endpoint detection and response, next-generation protection, and attack surface reduction.
 
 ## Example deployments
+
 In this deployment guide, we'll guide you through using two deployment tools to onboard endpoints and how to configure capabilities.
 
 The tools in the example deployments are:
+
 - [Onboarding using Microsoft Endpoint Configuration Manager](onboarding-endpoint-configuration-manager.md)
 - [Onboarding using Microsoft Endpoint Manager](onboarding-endpoint-manager.md)
 
 Using the mentioned deployment tools above, you'll then be guided in configuring the following Defender for Endpoint capabilities:
+
 - Endpoint detection and response configuration
 - Next-generation protection configuration
 - Attack surface reduction configuration
 
 ## Related topics
+
 - [Onboarding using Microsoft Endpoint Configuration Manager](onboarding-endpoint-configuration-manager.md)
 - [Onboarding using Microsoft Endpoint Manager](onboarding-endpoint-manager.md)
 - [Safe Documents in Microsoft 365 E5](../office-365-security/safe-docs.md)
