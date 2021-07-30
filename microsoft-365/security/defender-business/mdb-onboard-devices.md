@@ -21,11 +21,23 @@ Microsoft Defender for business is designed with the busy small business in mind
 
 The process of onboarding devices consists of the following steps:
 
-1. Join devices to Azure Active Directory (Azure AD)
-2. Enroll devices in Microsoft Endpoint Manager
-3. Confirm that you have Microsoft Defender for business
+1. Confirm that you have Microsoft Defender for business
+2. Join devices to Azure Active Directory (Azure AD)
+3. Enroll devices in Microsoft Endpoint Manager
 4. Onboard devices to Microsoft Defender for business
 5. Run a detection test
+
+## Confirm that you have Microsoft Defender for business
+
+> [!IMPORTANT]
+> You must be a Billing Admin or Global Admin to perform this task.
+
+1. Go to the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)), and sign in.
+
+2. Go to Billing > Licenses. Confirm that you have Microsoft Defender for business. 
+
+   > [!TIP]
+   > You might see **Microsoft Defender for Endpoint - SMB** listed. This subscription is Microsoft Defender for business.
 
 ## Join a device to Azure AD
 
@@ -43,17 +55,20 @@ The process of onboarding devices consists of the following steps:
 
 3. Sign in using your work or school account for Microsoft 365.
 
-## Confirm that you have Microsoft Defender for business
+4. Select **Allow my organization to manage my device**, and then choose **Yes**.
 
-> [!IMPORTANT]
-> You must be a Billing Admin or Global Admin to perform this task.
+5. When your device has finished adding, choose **Done**. 
 
-1. Go to the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)), and sign in.
+6. In the Company Portal app, make sure that your device is connected to work. If it isn't, select **Connect this device to work**, and then follow the prompts.
 
-2. Go to Billing > Licenses. Confirm that you have Microsoft Defender for business. 
+7. In the Company Portal app, when you see **You're all set**, select **Done**.
 
-   > [!TIP]
-   > You might see Microsoft Defender for Endpoint - SMB listed. This subscription is Microsoft Defender for business.
+> [!TIP]
+> If you need help with this procedure, see [Quickstart: Enroll your Windows 10 device](/mem/intune/enrollment/quickstart-enroll-windows-device).
+
+### Confirm that devices are enrolled in Microsoft Intune
+
+
 
 ## Onboard devices to Microsoft Defender for business
 
