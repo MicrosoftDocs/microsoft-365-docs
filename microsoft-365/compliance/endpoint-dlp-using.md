@@ -310,7 +310,7 @@ will leave a .txt file that contains this message
 
 11. The new DLP policy will appear in the policy list.
 
-####
+#### Test Auto-quarantine on the Windows 10 device
 
 
 12. Check Activity explorer for data from the monitored endpoints. Set the location filter for devices and add the policy, then filter by policy name to see the impact of this policy. See, [Get started with activity explorer](data-classification-activity-explorer.md) if needed.
