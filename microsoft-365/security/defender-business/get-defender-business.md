@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 07/15/2021
+ms.date: 07/30/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -20,7 +20,7 @@ f1.keywords: NOCSH
 If you don’t already have Microsoft Defender for business, you can choose from several options:
 
 - [Work with a Microsoft solution provider](#work-with-a-microsoft-solution-provider)
-- [Get Microsoft Defender for business on your own](#get-microsoft-defender-for-business-on-your-own) by signing up for a free trial or purchasing a subscription
+- [Get Microsoft Defender for business on your own](#get-microsoft-defender-for-business-on-your-own) by signing up for the preview program or by purchasing a subscription
 
 ## Work with a Microsoft Solution Provider
 
@@ -35,7 +35,7 @@ To find a solution provider in your area, take the following steps:
 3. Review the list of results. Select a provider to learn more about their expertise and the services they provide.
 
 > [!TIP]
-> If you decide to purchase Microsoft Defender for business through a solution provider, the provider can help with all of your setup and configuration steps.
+> If you decide to purchase Microsoft Defender for business through a solution provider, that provider can help you with your setup and configuration process.
 
 ## Get Microsoft Defender for business on your own 
 
