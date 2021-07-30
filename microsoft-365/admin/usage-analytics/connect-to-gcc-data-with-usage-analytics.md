@@ -83,6 +83,6 @@ Microsoft 365 GCC users can download and use the Microsoft 365 Usage Analytics r
 
 ## Related content
 
-[About usage analytics](usage-analytics.md) (article)\
-[Get the latest version of usage analytics](get-the-latest-version-of-usage-analytics.md) (article)\
-[Navigate and utilize the reports in Microsoft 365 usage analytics](navigate-and-utilize-reports.md) (article)
+[About usage analytics](usage-analytics.md) </br>
+[Get the latest version of usage analytics](get-the-latest-version-of-usage-analytics.md) </br>
+[Navigate and utilize the reports in Microsoft 365 usage analytics](navigate-and-utilize-reports.md) </br>
