@@ -17,9 +17,9 @@ f1.keywords: NOCSH
 
 # Choose where to manage your policies and settings
 
-When you begin to use Microsoft Defender for business, you will be asked whether you want to use Endpoint Manager or your Microsoft 365 Defender portal. You'll be asked which portal to use only once, and you can't easily switch back and forth between portals.
+When it comes to configuring your security features on your company’s devices, you can choose from one of two portals: the Microsoft 365 Defender Portal and the Microsoft Endpoint Manager admin center. 
 
-To help you decide which portal to use, see the following table:
+When you begin to use Microsoft Defender for business, you will be asked which portal you want to use. You'll be asked only once. We recommend using the Microsoft 365 Defender portal. The following table describes each portal:
 
 | Portal  | Description  |
 |---------|---------|
@@ -36,7 +36,7 @@ Microsoft Defender for business is designed to provide strong protection while s
 
 ## What if you change your mind?
 
-If you have chosen a portal and later on change your mind, contact support. They'll help you transition your settings to the other portal.
+If you have chosen a portal and change your mind later, contact support. They'll help you make the switch to the other portal.
 
 ## Next step
 
