@@ -312,12 +312,31 @@ will leave a .txt file that contains this message
 
 #### Test Auto-quarantine on the Windows 10 device
 
+1. Login to the Windows 10 computer with the user account you specified in [Configure a policy to block OneDrive synchronization of files with the sensitivity label Highly Confidential](#configure-a-policy-to-block-onedrive-synchronization-of-files-with-the-sensitivity-label-highly-confidential) step 5.
 
-12. Check Activity explorer for data from the monitored endpoints. Set the location filter for devices and add the policy, then filter by policy name to see the impact of this policy. See, [Get started with activity explorer](data-classification-activity-explorer.md) if needed.
+2. Create a folder whose contents will not be synchronized to OneDrive. For example:
 
-13. Attempt to share a test that contains content that will trigger the U.S. Personally Identifiable Information (PII) Data condition with someone outside your organization. This should trigger the policy.
+    *C:\auto-quarantine source folder*
 
-14. Check Activity explorer for the event.
+3. Open Microsoft Word and create a file in the auto-quarantine source folder. Apply the **Highly confidential** sensitivity label. See, [Apply sensitivity labels to your files and email in Office](https://support.microsoft.com/topic/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9).
+
+4. Copy the file you just created to your OneDrive synchronization folder. A user notification toast should appear telling you that the action is not allowed and that the file will be quarantined. For example, for user name *Isaiah Langer*, and a document titled *auto-quarantine doc 1.docx* you would see this message:
+
+![Data loss prevention user notification popup stating that the OneDrive synchronization action is not allowed for the specified file and that the file will be quarantined](../media/auto-quarantine-user-notification-toast.png)
+
+The message reads:
+
+"Opening autoquarantine doc 1.docx with this app is not allowed. The file will be quarantined to 'C:\Users\IsaiahLanger\Microsoft DLP\OneDrive'"
+
+5. Choose **Dismiss**
+
+6. Open the place holder .txt file. It will be named **auto-quarantine doc 1.docx_*date_time*.txt**. 
+
+7. Open the quarantine folder and confirm that the original file is there.
+ 
+8. Check Activity explorer for data from the monitored endpoints. Set the location filter for devices and add the policy, then filter by policy name to see the impact of this policy. See, [Get started with activity explorer](data-classification-activity-explorer.md) if needed.
+
+9. Check Activity explorer for the event.
 
 ## See also
 
