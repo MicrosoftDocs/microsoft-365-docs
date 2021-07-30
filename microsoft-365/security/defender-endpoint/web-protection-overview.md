@@ -121,8 +121,7 @@ Internal IP addresses are not supported by custom indicators. For a warn policy 
 
 In all web protection scenarios, SmartScreen and Network Protection can be used together to ensure protection across both first and third-party browsers and processes. SmartScreen is built directly into Microsoft Edge, while Network Protection monitors traffic in third-party browsers and processes. The diagram below illustrates this concept. This diagram of the two clients working together to provide multiple browser/app coverages is accurate for all features of Web Protection (Indicators, Web Threats, Content Filtering).
 
-> [!div class="mx-imgBorder"]
-> ![Using SmartScreen and Network Protection together](../../media/web-protection-protect-Browsers.png)
+:::image type="content" alt-text="Using SmartScreen and Network Protection together." source="../../media/web-protection-protect-browsers.png" lightbox="../../media/web-protection-protect-browsers.png":::
 
 ## Troubleshoot endpoint blocks
 
@@ -173,17 +172,17 @@ To list blocks that are due to other features (like Custom Indicators), refer to
 If a user visits a web page that poses a risk of malware, phishing, or other web threats, Microsoft Edge will trigger a block page that reads ‘This site has been reported as unsafe’ along with information related to the threat.
 
 > [!div class="mx-imgBorder"]
-> ![Page blocked by Microsoft Edge](../../media/web-protection-malicious-Block.png)
+> ![Page blocked by Microsoft Edge](../../media/web-protection-malicious-block.png)
 
 If blocked by WCF or a custom indicator, a block page shows in Microsoft Edge that tells the user this site is blocked by their organization.
 
 > [!div class="mx-imgBorder"]
-> ![Page blocked by your organization](../../media/web-protection-indicator-BlockPage.png)
+> ![Page blocked by your organization](../../media/web-protection-indicator-blockpage.png)
 
 In any case, no block pages are shown in third-party browsers, and the user sees a ‘Secure Connection Failed’ page along with a toast notification. Depending on the policy responsible for the block, a user will see a different message in the toast notification. For example, web content filtering will display the message ‘This content is blocked’. 
 
 > [!div class="mx-imgBorder"]
-> ![Page blocked by WCF](../../media/web-protection-NP-Block.png)
+> ![Page blocked by WCF](../../media/web-protection-np-block.png)
 
 ## Report false positives
 
