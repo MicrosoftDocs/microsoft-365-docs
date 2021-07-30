@@ -29,7 +29,7 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 This topic describes how to install, configure, update, and use Microsoft Defender for Endpoint on Linux.
 
@@ -40,7 +40,7 @@ This topic describes how to install, configure, update, and use Microsoft Defend
 
 ### Prerequisites
 
-- Access to the Microsoft Defender Security Center portal
+- Access to the Microsoft 365 Defender portal
 - Linux distribution using the [systemd](https://systemd.io/) system manager
 - Beginner-level experience in Linux and BASH scripting
 - Administrative privileges on the device (in case of manual deployment)
@@ -49,8 +49,6 @@ This topic describes how to install, configure, update, and use Microsoft Defend
 >  Microsoft Defender for Endpoint on Linux agent is independent from [OMS agent](/azure/azure-monitor/agents/agents-overview#log-analytics-agent). Microsoft Defender for Endpoint relies on its own independent telemetry pipeline.
 > 
 > Microsoft Defender for Endpoint on Linux is not yet integrated into Azure Security Center.
-
-
 
 ### Installation instructions
 

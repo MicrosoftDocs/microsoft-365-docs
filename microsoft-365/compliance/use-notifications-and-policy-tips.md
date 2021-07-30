@@ -50,7 +50,7 @@ In the Compliance Center, when you create a DLP policy, you can configure the us
 
 When you create a DLP policy, you can enable **User notifications**. When user notifications are enabled, Microsoft 365 sends out both email notifications and policy tips. You can customize who notification emails are sent to, the email text and the policy tip text.
 
-1. Go to [https://protection.office.com](https://protection.office.com).
+1. Go to [https://(https://compliance.microsoft.com/permissions](https://(https://compliance.microsoft.com/permissions).
 
 2. Sign in using your work or school account. You're now in the Security &amp; Compliance Center.
 

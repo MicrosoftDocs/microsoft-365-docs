@@ -133,23 +133,15 @@ If the device isn't Intune joined, you can also deploy the policy via Group Poli
 
 The [Microsoft 365 security center](https://security.microsoft.com) shows printing blocked by the Device Control Printer Protection policy above.
 
-```sql
+```kusto
 DeviceEvents
-
-|where ActionType == 'PrintJobBlocked'
-
+| where ActionType == 'PrintJobBlocked'
 | extend parsed=parse_json(AdditionalFields)
-
 | extend PrintedFile=tostring(parsed.JobOrDocumentName)
-
 | extend PrintPortName=tostring(parsed.PortName)
-
 | extend PrinterName=tostring(parsed.PrinterName)
-
 | extend Policy=tostring(parsed.RestrictionReason) 
-
-| project Timestamp, DeviceId, DeviceName, ActionType, InitiatingProcessAccountName,Policy, PrintedFile, PrinterName, PrintPortName, AdditionalFields
-
+| project Timestamp, DeviceId, DeviceName, ActionType, InitiatingProcessAccountName, Policy, PrintedFile, PrinterName, PrintPortName, AdditionalFields
 | order by Timestamp desc
 ```
 

@@ -1,6 +1,6 @@
 ---
-title: Microsoft Defender for Identity notifications in Microsoft 365 Defender 
-description: Learn how to set Microsoft Defender for Identity notifications in Microsoft 365 Defender 
+title: Microsoft Defender for Identity notifications in Microsoft 365 Defender
+description: Learn how to set Microsoft Defender for Identity notifications in Microsoft 365 Defender.
 ms.date: 05/20/2021
 ms.topic: how-to
 author: dcurwin
@@ -18,8 +18,8 @@ manager: raynew
 
 This article explains how to work with [Microsoft Defender for Identity](/defender-for-identity) notifications in [Microsoft 365 Defender](/microsoft-365/security/defender/overview-security-center).
 
->[!IMPORTANT]
->As part of the convergence with Microsoft 365 Defender, some options and details have changed from their location in the Defender for Identity portal. Please read the details below to discover where to find both the familiar and new features.
+> [!IMPORTANT]
+> As part of the convergence with Microsoft 365 Defender, some options and details have changed from their location in the Defender for Identity portal. Please read the details below to discover where to find both the familiar and new features.
 
 ## Health issues notifications
 
@@ -39,8 +39,8 @@ In Microsoft 365 Defender, you can add recipients for email notifications of hea
 
     ![Example of health issue email](../../media/defender-identity/health-email.png)
 
-    >[!NOTE]
-    >The email provides two links for further details about the issue. You can either go to the **MDI Health Center** or the new **Health Center in M365D**.
+    > [!NOTE]
+    > The email provides two links for further details about the issue. You can either go to the **MDI Health Center** or the new **Health Center in M365D**.
 
 ## Alert notifications
 
@@ -77,7 +77,7 @@ Defender for Identity can notify you when it detects suspicious activities by se
 1. Enter the following details:
 
     - **Sensor** - From the drop-down list, choose the sensor that will send the alerts.
-    - **Service endpoint** and **Port** - Enter the IP address or fully qualified domain name (​FQDN) for the syslog server and specify the port number.
+    - **Service endpoint** and **Port** - Enter the IP address or fully qualified domain name (FQDN) for the syslog server and specify the port number.
     - **Transport** - Select the **Transport** protocol (TCP or UDP).
     - **Format** - Select the format (RFC 3164 or RFC 5424).
 

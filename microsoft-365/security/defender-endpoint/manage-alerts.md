@@ -27,7 +27,7 @@ ms.technology: mde
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-managealerts-abovefoldlink)
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-managealerts-abovefoldlink)
 
 Defender for Endpoint notifies you of possible malicious events, attributes, and contextual information through alerts. A summary of new alerts is displayed in the **Security operations dashboard**, and you can access all alerts in the **Alerts queue**.
 
@@ -66,7 +66,7 @@ You can use the examples in the following table to help you choose the context f
 | **Suppress alert in my organization** | Alerts with the same alert title on any device will be suppressed.                                                                                         | <ul><li>A benign administrative tool is used by everyone in your organization.</li></ul>                                                                                                                               |
 
 ### Suppress an alert and create a new suppression rule:
-Create custom rules to control when alerts are suppressed, or resolved. You can control the context for when an alert is suppressed by specifying the alert title, Indicator of compromise, and the conditions. After specifying the context, you’ll be able to configure the action and scope on the alert. 
+Create custom rules to control when alerts are suppressed, or resolved. You can control the context for when an alert is suppressed by specifying the alert title, Indicator of compromise, and the conditions. After specifying the context, you'll be able to configure the action and scope on the alert. 
 
 1. Select the alert you'd like to suppress. This brings up the **Alert management** pane.
 
