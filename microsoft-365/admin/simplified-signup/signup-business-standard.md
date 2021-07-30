@@ -20,7 +20,7 @@ description: "Purchase Microsoft 365 Business Standard and set up your organizat
 
 There are a couple of ways to get Microsoft 365 Business Standard:
 - **[Buy](https://go.microsoft.com/fwlink/?linkid=2109397) Microsoft 365 Business Standard and complete your own setup**: To purchase Microsoft 365 Business Standard, [follow the steps below](#sign-up-steps).
-- **For Microsoft partners**: If you're a partner, see [Get Microsoft 365 Business](get-microsoft-365-business.md).
+- **For Microsoft partners**: If you're a partner, see [Get Microsoft 365 Business](../../business/get-microsoft-365-business.md).
 
 **Need something different?** You can:
 
@@ -28,7 +28,7 @@ There are a couple of ways to get Microsoft 365 Business Standard:
 
 ## Before you begin
 
-Check out the [Overview of Microsoft 365 for business](microsoft-365-business-overview.md).
+Check out [Microsoft 365 for business](https://www.microsoft.com/microsoft-365/business).
 
 ## Sign up steps
 
@@ -61,11 +61,11 @@ You'll sign into Microsoft 365 with this email address. For example, alliebellew
 10. On the **Confirmation details** page, we'll give you some more info about your subscription. You can now go to the Microsoft 365 admin center to add users, install Office apps, invite your team to use Microsoft 365 and more. We'll also send you an email with set up steps for Microsoft 365 Business Standard.
 
 > [!IMPORTANT]
-> You can follow these steps to purchase Microsoft 365 Apps as well. For more info, see [Microsoft 365 Apps for business](setup-apps-for-business.md) after you purchase Microsoft 365 Apps for business.
+> You can follow these steps to purchase Microsoft 365 Apps as well. For more info, see [Set up Microsoft 365 Apps for business](../setup/setup-apps-for-business.md) after you purchase Microsoft 365 Apps for business.
 
 #### Next steps
 
-1. Do you have employees or partners that you want to add to your subscription? Follow the steps in the [Invite users to my subscription](owner-iw-invite.md) topic.
+1. Do you have employees or partners that you want to add to your subscription? Follow the steps in the [Invite users to Microsoft 365 Business Standard](user-invite-business-standard.md) topic.
 
 ### Create a new business email account (advanced)
 
@@ -98,4 +98,3 @@ In this scenario, you want to add an existing domain you already own or buy a ne
 
 [Set up Microsoft 365 Business Premium in the setup wizard](../../business/set-up.md)
 
-[Microsoft 365 for business training videos](../business-video/index.yml)

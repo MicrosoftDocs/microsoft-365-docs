@@ -117,3 +117,4 @@ Your email looks like this to set up your business user account. When you get th
 1. On the Review permissions page, choose **Accept**.
 
 1. On the Welcome to Microsoft 365 page, you can download Office desktop and mobile apps, and set up OneDrive.
+
