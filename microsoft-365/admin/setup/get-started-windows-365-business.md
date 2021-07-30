@@ -113,7 +113,7 @@ While on the Windows 365 home page, users can perform actions on their Cloud PCs
     > Before resetting your Cloud PC, make sure to back up any important files you need to keep to a cloud storage service or external storage. Resetting your Cloud PC will delete these files. </br>
 - **Troubleshoot**: Troubleshoot and attempt to fix any issues that may be keeping a user from connecting to their Cloud PC. The following table describes the statuses that can result from the checks.
 
-    |**Status**|**Description**|
+    | Status | Description 
     |:-----|:-----|
     |No issues detected  <br/> |None of the checks ran discovered an issue with the Cloud PC.  <br/> |
     |Issues resolved  <br/> |An issue was detected and fixed.  <br/> |
