@@ -29,7 +29,7 @@ As a preview customer, you likely have assistance in setting up Microsoft Defend
 | [4. Choose your portal](mdb-choose-portal.md)     | You can choose to manage Microsoft Defender for business in one of two portals: the Microsoft 365 Defender portal, or the Microsoft Endpoint Manager admin center. We recommend using the Microsoft 365 Defender portal. See [Choose where to manage your policies and settings](mdb-choose-portal.md).        |
 | [5. Onboard devices](mdb-onboard-devices.md)     | Microsoft Defender for business is set up so that your company's devices are protected as soon as they are onboarded. See [Onboard devices to Microsoft Defender for business](mdb-onboard-devices.md).         |
 | [6. View or edit device policies](mdb-view-edit-device-policies.md)     | Your company's devices are managed through device policies. Default policies are included in Microsoft Defender for business; however, you can edit those policies or define new policies to suit your company's needs. See [View or edit device policies in Microsoft Defender for business](mdb-view-edit-device-policies.md).         |
-| [7. Get started](mdb-get-started.md)     | After you have completed steps 1-6, you're ready to get started using Microsoft Defender for business. See [Get started with Microsoft Defender for business](mdb-get-started.md).        |
+| [7. Get started using Microsoft Defender for business](mdb-get-started.md)     | After you have completed steps 1-6, you're ready to get started using Microsoft Defender for business. See [Get started with Microsoft Defender for business](mdb-get-started.md).        |
  
 ## Next steps
 
