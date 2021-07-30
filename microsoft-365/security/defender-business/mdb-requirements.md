@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 07/15/2021
+ms.date: 07/30/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -21,7 +21,8 @@ The following table lists the basic requirements for Microsoft Defender for busi
 
 | Requirement | Description |
 |:---|:---|
-| Licensing requirements | Microsoft Defender for business |
+| Licensing requirements | Microsoft Defender for business (preview) <br/> Azure Active Directory (Azure AD) () <br/> Microsoft Intune   |
+| Permissions  | Permissions are assigned through roles in Azure AD <br/>- To activate your subscription, you must have the Billing admin or Global Admin role assigned <br/>- To access the Microsoft 365 Defender portal, you must have the Security Reader, Security Operator, or Global Admin role assigned |
 | Users | User accounts created <br/> Microsoft Defender for business licenses assigned <br/> See [Add users and assign licenses](../../admin/add-users/add-users.md) |
 | Browser requirements | Microsoft Edge <br/> Internet Explorer version 11 <br/> Google Chrome |
 | Operating system | Windows 10 |
