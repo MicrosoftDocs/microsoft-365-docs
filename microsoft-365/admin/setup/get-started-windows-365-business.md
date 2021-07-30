@@ -100,25 +100,30 @@ Users can select **Open in browser** to open their Cloud PC.
 
 While on the Windows 365 home page, users can perform actions on their Cloud PCs by selecting the gear icon on a Cloud PC card.
 
-   ![Card menu](../../media/deschutes/cloudpc-gear.png) </br>
+![Card menu](../../media/deschutes/cloudpc-gear.png) <br/>
 
 - **Restart**: Restarts the Cloud PC.
+
 - **Rename**: Changes the name of the Cloud PC shown to the user on Microsoft 365.com. 
+
 - **Reset**:  Reset does the following:
+
     - Reinstalls Windows 10.
     - Removes your personal files.
     - Removes any changes you made to settings.
     - Removes your apps.
+
     > [!IMPORTANT]  
-    > Before resetting your Cloud PC, make sure to back up any important files you need to keep to a cloud storage service or external storage. Resetting your Cloud PC will delete these files. </br>
+    > Before resetting your Cloud PC, make sure to back up any important files you need to keep to a cloud storage service or external storage. Resetting your Cloud PC will delete these files.
+
 - **Troubleshoot**: Troubleshoot and attempt to fix any issues that may be keeping a user from connecting to their Cloud PC. The following table describes the statuses that can result from the checks.
 
-    | Status | Description 
+    | Status | Description |
     |:-----|:-----|
-    |No issues detected  <br/> |None of the checks ran discovered an issue with the Cloud PC.  <br/> |
-    |Issues resolved  <br/> |An issue was detected and fixed.  <br/> |
-    |Can’t connect to Cloud PC. We’re working to fix it, try again later.  <br/> |A Microsoft service required for connectivity is unavailable. Try connecting again later.   <br/> |
-    |We couldn’t fix issues with your Cloud PC. Contact your administrator. <br/> |An issue was detected but it was unable to be fixed. This could be due to an ongoing Windows update or another issue. If this error persists for an extended period of time the Cloud PC may need to be reset.  <br/> |
+    |No issues detected |None of the checks ran discovered an issue with the Cloud PC. |
+    |Issues resolved |An issue was detected and fixed. |
+    |Can’t connect to Cloud PC. We’re working to fix it, try again later. |A Microsoft service required for connectivity is unavailable. Try connecting again later. |
+    |We couldn’t fix issues with your Cloud PC. Contact your administrator. |An issue was detected but it was unable to be fixed. This could be due to an ongoing Windows update or another issue. If this error persists for an extended period of time the Cloud PC may need to be reset. |
 
 
 
@@ -134,7 +139,7 @@ To set up their Remote Desktop client, users follow these steps:
 1. On the **Windows 365 home page**, select the **Microsoft Remote Desktop apps** icon (under the home icon). 
 2. On the **Microsoft Remote Desktop apps** page, download and install the Remote Desktop app you need. 
 
-   ![Remote desktop clients](../../media/deschutes/remote-desktop-apps.png) </br> 
+   ![Remote desktop clients](../../media/deschutes/remote-desktop-apps.png) <br/> 
 
 For a list of clients by operating system, see [Remote Desktop clients](/windows-server/remote/remote-desktop-services/clients/remote-desktop-clients). 
 
@@ -158,8 +163,8 @@ If you need to get help while setting up Windows 365 Business in the Microsoft 3
 
 ## Related content
 
-[Windows 365 Business](https://www.microsoft.com/windows-365/business) </br>
-[Windows 365 Business sizing options](windows-365-business-sizing.md) </br>
-[Windows 365 Business plan comparison](/windows-365/business/compare-plans-pricing) </br>
-[Remote Desktop client app comparison](/windows-server/remote/remote-desktop-services/clients/remote-desktop-app-compare)</br>
+[Windows 365 Business](https://www.microsoft.com/windows-365/business) <br/>
+[Windows 365 Business sizing options](windows-365-business-sizing.md) <br/>
+[Windows 365 Business plan comparison](/windows-365/business/compare-plans-pricing) <br/>
+[Remote Desktop client app comparison](/windows-server/remote/remote-desktop-services/clients/remote-desktop-app-compare)<br/>
 [Set up Microsoft Teams in your small business](/microsoftteams/deploy-small-business)
