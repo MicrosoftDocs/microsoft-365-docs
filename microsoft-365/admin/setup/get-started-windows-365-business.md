@@ -100,7 +100,7 @@ Users can select **Open in browser** to open their Cloud PC.
 
 While on the Windows 365 home page, users can perform actions on their Cloud PCs by selecting the gear icon on a Cloud PC card.
 
-![Card menu](../../media/deschutes/cloudpc-gear.png) <br/>
+![Card menu](../../media/deschutes/cloudpc-gear.png)
 
 - **Restart**: Restarts the Cloud PC.
 
@@ -139,7 +139,7 @@ To set up their Remote Desktop client, users follow these steps:
 1. On the **Windows 365 home page**, select the **Microsoft Remote Desktop apps** icon (under the home icon). 
 2. On the **Microsoft Remote Desktop apps** page, download and install the Remote Desktop app you need. 
 
-   ![Remote desktop clients](../../media/deschutes/remote-desktop-apps.png) <br/> 
+   ![Remote desktop clients](../../media/deschutes/remote-desktop-apps.png)
 
 For a list of clients by operating system, see [Remote Desktop clients](/windows-server/remote/remote-desktop-services/clients/remote-desktop-clients). 
 
