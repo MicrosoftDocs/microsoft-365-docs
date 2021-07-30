@@ -231,7 +231,19 @@ These scenarios require that you already have devices onboarded and reporting in
 
 ### Scenario 4: Avoid looping DLP notifications from cloud synchronization apps with Auto-quarantine
 
-In this scenario, synchronizing files with the **Highly Confidential** sensitivity label to OneDrive is being blocked.
+#### Before you begin
+
+In this scenario, synchronizing files with the **Highly Confidential** sensitivity label to OneDrive is being blocked. This is a complex scenario with multiple components and procedures. You will need:
+
+- An AAD user account to target on an onboarded Windows 10 computer that is already synchronizing a local OneDrive folder with OneDrive cloud storage.
+- Microsoft Word installed on the Windows 10 computer
+- Sensitivity labels configured and published. See, [Get started with sensitivity labels](get-started-with-sensitivity-labels.md#get-started-with-sensitivity-labels) and [Create and configure sensitivity labels and their policies](create-sensitivity-labels.md#create-and-configure-sensitivity-labels-and-their-policies)
+
+There are three procedures.
+
+1. Configure the Endpoint DLP Auto-quarantine settings.
+1. Create a policy that blocks sensitive items that have the **Highly Confidential** sensitivity label.
+1. Create a Word document on a Windows 10 device that the policy is targeted at, apply the label, and copy it to the user accounts local OneDrive folder that is being synchronized  
 
 #### Configure Endpoint DLP unallowed app and Auto-quarantine settings
 
@@ -254,7 +266,7 @@ In this scenario, synchronizing files with the **Highly Confidential** sensitivi
 *C:\Users\IsaiahLanger\Microsoft DLP\Quarantine\OneDrive* folder and append a date and time stamp to the original file name.
 
 > [!NOTE]
-> DLP Auto-quarantine will create a folder for the files for each unallowed app. So if you have both *Notepad* and *OneDrive* in your unallowed apps list, a **\OneDrive** and a **\Notepad** directory will be created.
+> DLP Auto-quarantine will create sub-folders for the files for each unallowed app. So if you have both *Notepad* and *OneDrive* in your unallowed apps list, a sub-folder will be created for **\OneDrive** and another sub-folder for **\Notepad**.
 
 8. Choose **Replace the files with a .txt file that contains the following text** and enter the text you want in the placeholder file. For example for a file named *auto quar 1.docx*:
     
@@ -268,7 +280,44 @@ will leave a .txt file that contains this message
 
 #### Configure a policy to block OneDrive synchronization of files with the sensitivity label Highly Confidential
 
-1. 
+1. Open the [Data loss prevention page](https://compliance.microsoft.com/datalossprevention?viewid=policies).
+
+2. Choose **Create policy**.
+
+3. For this scenario, choose **Custom**, then **Custom policy** and choose **Next**.
+
+4. Fill in the **Name** and **Description** fields, choose **Next**.
+
+5. Toggle the **Status** field to off for all locations except **Devices**. If you have a specific end user account that you want to test this from, be sure to select it in the scope. Choose **Next**.
+
+6. Accept the default **Create or customize advanced DLP rules** selection and choose **Next**.
+
+7. Create a rule with these values:
+    1. **Name** > *Scenario 4 Auto-quarantine*
+    1. **Conditions** > **Content contains** > **Sensitivity labels** > **Highly Confidential**
+    1.  **Actions** > **Audit or restrict activities on Windows devices** > **Access by unallowed apps** > **Block**. For the purposes of this scenario, clear all the other activities.
+    1. **User notifications** > **On**
+    1. **Endpoint devices** > Choose **Show users a policy tip notification when an activity** if not already enabled.
+    
+8. Choose **Save** and **Next**.
+
+9. Choose **Turn it on right away**. Choose **Next**.
+
+10. Review your settings and choose **Submit**.
+
+> [!NOTE]
+> Allow at least an hour for the new policy to be replicated and applied to the target Windows 10 computer.
+
+11. The new DLP policy will appear in the policy list.
+
+####
+
+
+12. Check Activity explorer for data from the monitored endpoints. Set the location filter for devices and add the policy, then filter by policy name to see the impact of this policy. See, [Get started with activity explorer](data-classification-activity-explorer.md) if needed.
+
+13. Attempt to share a test that contains content that will trigger the U.S. Personally Identifiable Information (PII) Data condition with someone outside your organization. This should trigger the policy.
+
+14. Check Activity explorer for the event.
 
 ## See also
 
