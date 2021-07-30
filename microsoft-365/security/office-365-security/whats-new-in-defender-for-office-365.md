@@ -40,6 +40,7 @@ Learn more by watching [this video](https://www.youtube.com/watch?v=Tdz6KfruDGo&
 ## July 2021
 
 - [Email analysis improvements in automated investigations](email-analysis-investigations.md)
+- [Safelinks for Microsoft Teams](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/safe-links?view=o365-worldwide#safe-links-settings-for-microsoft-teams)
 
 
 ## June 2021
