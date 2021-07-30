@@ -100,6 +100,20 @@ Download Microsoft 365 apps by following the steps in this article.
 
 ## Next steps
 
-Add steps: **Accept a new invitation once its flipped from a personal email to a business email.**
+## Accept a new invitation to change your personal email account to a business email account
 
+Your email looks like this to set up your business user account. When you get this email, you'll have to complete a few steps before you can start using your new user account.
 
+(**Add screenshot here**)
+
+1. From the invitation email, select **Accept**.
+
+2. On the **Join Microsoft 365 Business...** page, select **Next**.
+
+3. On the Sign up page, make sure you use the email used in the invitation email, and create a password. Select **Create account**.
+
+3. Choose **Accept** on the **Terms and Conditions** page.
+
+1. On the Review permissions page, choose **Accept**.
+
+1. On the Welcome to Microsoft 365 page, you can download Office desktop and mobile apps, and set up OneDrive.
