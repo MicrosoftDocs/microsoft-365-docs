@@ -17,15 +17,15 @@ f1.keywords: NOCSH
 
 # Microsoft Defender for business requirements
 
-The following table lists the basic requirements for Microsoft Defender for business.
+The following table lists the basic requirements to configure and use Microsoft Defender for business.
 
 | Requirement | Description |
 |:---|:---|
-| Licensing requirements | Microsoft Defender for business (preview) <br/> Azure Active Directory (Azure AD) () <br/> Microsoft Intune   |
+| Subscription and licensing | Microsoft Defender for business (preview) <br/> Azure Active Directory (Azure AD) (included with any Microsoft 365 subscription, including Microsoft Defender for business) <br/> Microsoft Intune (new or existing subscription)  |
 | Permissions  | Permissions are assigned through roles in Azure AD <br/>- To activate your subscription, you must have the Billing admin or Global Admin role assigned <br/>- To access the Microsoft 365 Defender portal, you must have the Security Reader, Security Operator, or Global Admin role assigned |
-| Users | User accounts created <br/> Microsoft Defender for business licenses assigned <br/> See [Add users and assign licenses](../../admin/add-users/add-users.md) |
-| Browser requirements | Microsoft Edge <br/> Internet Explorer version 11 <br/> Google Chrome |
-| Operating system | Windows 10 |
+| User accounts | - User accounts created <br/>- Microsoft Defender for business licenses assigned <br/> (See [Add users and assign licenses](../../admin/add-users/add-users.md)) |
+| Browser requirements | At least one of the following browsers: <br/>- Microsoft Edge <br/>- Internet Explorer version 11 <br/>- Google Chrome |
+| Operating system | Devices must be running Windows 10, version 1709 or later |
 | Datacenter | One of the following datacenter locations: <br/>- European Union <br/>- United Kingdom <br/>- United States |
 
 > [!TIP]
