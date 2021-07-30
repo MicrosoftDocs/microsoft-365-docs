@@ -42,6 +42,7 @@ As you probably already know, Microsoft offers various cloud solutions and servi
 | Centralized management and reporting | Yes. You can onboard Windows 10 devices and manage them in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), or choose to manage devices in Microsoft Endpoint Manager. | Yes. You can manage Windows 10 devices in the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)). Devices must be onboarded in Microsoft Endpoint Manager. |
 | [APIs](../defender-endpoint/apis-intro.md) <br/>(enables you to integrate with custom apps or reporting solutions)  | Yes | Yes |
 
+
 ## Next steps
 
 - [Get a more detailed overview of Microsoft Defender for business](mdb-overview.md)
