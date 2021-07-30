@@ -27,11 +27,21 @@ The process of onboarding devices consists of the following steps:
 4. Onboard devices to Microsoft Defender for business
 5. Run a detection test
 
-## Join devices to Azure AD
+## Join a device to Azure AD
 
+1. On a Windows 10 device, choose **Settings** > **Accounts** > **Access work or school**.
 
+2. Choose **+ Connect**, type your email address for Microsoft 365, and then choose **Next**. 
 
-## Enroll devices in Microsoft Endpoint Manager
+3. Sign in using your work or school account for Microsoft 365.
+
+## Enroll a device in Microsoft Endpoint Manager
+
+1. On a Windows 10 device, open the Microsoft Store app, and search for *Company Portal*.
+
+2. In the list of results, select **Company Portal**, and choose **Get**, and then choose **Launch**.
+
+3. Sign in using your work or school account for Microsoft 365.
 
 ## Confirm that you have Microsoft Defender for business
 
