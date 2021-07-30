@@ -50,6 +50,8 @@ When you set up Topics, you can choose from the following options:
 - **Only selected sites**: Only the sites that you specify. Sites created in the future will not be included as sources for topic discovery.
 - **No sites**: Do not include any SharePoint sites.
 
+We recommend selecting enough sites to include at least 20,000 documents to get the best results from Viva Topics.
+
 If you choose either **All, except selected sites** or **Only selected sites**, you can upload a .csv file with a list of sites. These options are useful if you're doing a pilot and you want to include a limited number of sites to start.
 
 You can copy the .csv template below:
