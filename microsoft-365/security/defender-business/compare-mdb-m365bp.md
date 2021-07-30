@@ -39,7 +39,7 @@ As you probably already know, Microsoft offers various cloud solutions and servi
 | [Automated investigation and response](../defender-endpoint/automated-investigations.md) | Yes | No |
 | Threat intelligence | Yes. Includes [threat analytics](../defender-endpoint/threat-analytics.md) and [custom indicators](../defender-endpoint/manage-indicators.md) | No |
 | [Threat & vulnerability management](../defender-endpoint/tvm-dashboard-insights.md) | Yes | No |
-| Centralized management and reporting | Yes. You can onboard Windows 10 devices and manage them in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), or choose to manage devices in Microsoft Endpoint Manager. | Yes. You can manage Windows 10 devices in the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)). Devices must be onboarded in Microsoft Endpoint Manager. |
+| Centralized management and reporting | Yes. You can onboard Windows 10 devices and manage them in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), or choose to manage devices in Microsoft Endpoint Manager ([https://admin.microsoft.com](https://admin.microsoft.com)). | Yes. You can manage Windows 10 devices in the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)). Devices must be onboarded in Microsoft Endpoint Manager. |
 | [APIs](../defender-endpoint/apis-intro.md) <br/>(enables you to integrate with custom apps or reporting solutions)  | Yes | Yes |
 
 
