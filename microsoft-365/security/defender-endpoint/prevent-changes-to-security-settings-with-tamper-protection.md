@@ -53,7 +53,7 @@ Tamper protection essentially locks Microsoft Defender Antivirus to its secure, 
 - Changing settings through PowerShell cmdlets
 - Editing or removing security settings through Group Policy
 
-Tamper protection doesn't prevent you from viewing your security settings. And, tamper protection doesn't affect how third-party antivirus apps register with the Windows Security app. If your organization is using Windows 10 Enterprise E5, individual users can't change the tamper protection setting; in those cases, tamper protection is managed by your security team.
+Tamper protection doesn't prevent you from viewing your security settings. And, tamper protection doesn't affect how non-Microsoft antivirus apps register with the Windows Security app. If your organization is using Windows 10 Enterprise E5, individual users can't change the tamper protection setting; in those cases, tamper protection is managed by your security team.
 
 ### What do you want to do?
 
@@ -91,7 +91,7 @@ Tamper protection can be turned on or off for your tenant using the Microsoft 36
 
 ### Requirements for managing tamper protection in the Microsoft 365 Defender portal
 
-- You must have appropriate [permissions](/microsoft-365/security/defender-endpoint/assign-portal-access), such as global admin, security admin, or security operations.
+- You must have appropriate [permissions](/microsoft-365/security/defender-endpoint/assign-portal-access) assigned, such as global admin, security admin, or security operations.
 
 - Your Windows devices must be running one of the following versions of Windows:
 
@@ -124,7 +124,7 @@ If you are part of your organization's security team, and your subscription incl
 
 ### Requirements for managing tamper protection in Intune
 
-- You must have appropriate [permissions](/microsoft-365/security/defender-endpoint/assign-portal-access), such as global admin, security admin, or security operations.
+- You must have appropriate [permissions](/microsoft-365/security/defender-endpoint/assign-portal-access) assigned, such as global admin, security admin, or security operations.
 
 - Your organization uses [Intune to manage devices](/intune/fundamentals/what-is-device-management). ([Intune licenses](/intune/fundamentals/licenses) are required; Intune is included in Microsoft 365 E5.)
 
@@ -138,7 +138,7 @@ If you are part of your organization's security team, and your subscription incl
 
 ![Turn tamper protection on with Intune](images/turnontamperprotect-MEM.png)
 
-1. Go to the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com) and sign in with your work or school account.
+1. Go to the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com) and sign in.
 
 2. Select **Devices** > **Configuration Profiles**.
 
@@ -193,7 +193,7 @@ See the following resources:
 > [!NOTE]
 > Tamper protection blocks attempts to modify Microsoft Defender Antivirus settings through the registry.
 >
-> To help ensure that tamper protection doesn't interfere with third-party security products or enterprise installation scripts that modify these settings, go to **Windows Security** and update **Security intelligence** to version 1.287.60.0 or later. (See [Security intelligence updates](https://www.microsoft.com/wdsi/definitions).)
+> To help ensure that tamper protection doesn't interfere with non-Microsoft security products or enterprise installation scripts that modify these settings, go to **Windows Security** and update **Security intelligence** to version 1.287.60.0 or later. (See [Security intelligence updates](https://www.microsoft.com/wdsi/definitions).)
 >
 > Once you've made this update, tamper protection continues to protect your registry settings, and logs attempts to modify them without returning errors.
 
@@ -237,7 +237,7 @@ If you are using Configuration Manager, version 2006, with tenant attach, tamper
 
 ### Will tamper protection affect non-Microsoft antivirus registration in the Windows Security app?
 
-No. Third-party antivirus offerings will continue to register with the Windows Security application.
+No. Non-Microsoft antivirus offerings will continue to register with the Windows Security application.
 
 ### What happens if Microsoft Defender Antivirus is not active on a device?
 
