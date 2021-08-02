@@ -190,7 +190,7 @@ When you configure a label policy, you can:
 
 - **Require users to apply a label** for documents and emails, just documents, for containers, and Power BI content. Also known as mandatory labeling, these options ensure a label must be applied before users can save documents and send emails, create new groups or sites, and when they use unlabeled content for Power BI.
     
-    For documents and emails, a label can be assigned manually by the user, automatically as a result of a condition that you configure, or be assigned by default (the default label option previously described). An example prompt shown in Outlook when a user is required to assign a label:
+    For documents and emails, a label can be assigned manually by the user, automatically as a result of a condition that you configure, or be assigned by default (the default label option previously described). An example prompt when a user is required to assign a label:
 
     ![Prompt in Outlook asking user to apply required label](../media/sensitivity-labels-mandatory-prompt-outlook.png)
     
