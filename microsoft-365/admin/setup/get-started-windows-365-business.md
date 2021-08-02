@@ -104,7 +104,6 @@ While on the Windows 365 home page, users can perform actions on their Cloud PCs
 
 - **Restart**: Restarts the Cloud PC.
 
-- **Rename**: Changes the name of the Cloud PC shown to the user on Microsoft 365.com. 
 
 - **Reset**:  Reset does the following:
 
@@ -115,6 +114,8 @@ While on the Windows 365 home page, users can perform actions on their Cloud PCs
 
     > [!IMPORTANT]  
     > Before resetting your Cloud PC, make sure to back up any important files you need to keep to a cloud storage service or external storage. Resetting your Cloud PC will delete these files.
+
+- **Rename**: Changes the name of the Cloud PC shown to the user on the Windows 365 home page. 
 
 - **Troubleshoot**: Troubleshoot and attempt to fix any issues that may be keeping a user from connecting to their Cloud PC. The following table describes the statuses that can result from the checks.
 
