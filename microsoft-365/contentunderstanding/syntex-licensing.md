@@ -52,4 +52,6 @@ A subscription to SharePoint Syntex features the following additional term store
 
 ## See also
 
+[Licensing overview for Microsoft Power Platform](/power-platform/admin/pricing-billing-skus)
 
+[Power Apps and Power Automate licensing FAQ](/power-platform/admin/powerapps-flow-licensing-faq)
