@@ -17,6 +17,9 @@ f1.keywords: NOCSH
 
 # Set up and configure Microsoft Defender for Endpoint Plan 1 (preview)
 
+> [!TIP]
+> If you have Microsoft 365 E3 but not Microsoft 365 E5, contact support and ask to participate in the preview program!
+
 As a preview customer, you likely have assistance in setting up and configuring Defender for Endpoint Plan 1 (preview). However, just in case you're curious about what the setup and configuration process looks like, use this article as a guide.
 
 ## The setup and configuration process at a high level
@@ -44,8 +47,6 @@ The following table lists the basic requirements for Defender for Endpoint Plan 
 | Operating systems | Windows 10, version 1709 or later <br/>macOS (Big Sur 11.5, Catalina 10.15.7, or Mojave 10.14.6) <br/>iOS <br/>Android OS  |
 | Datacenter | One of the following datacenter locations: <br/>- European Union <br/>- United Kingdom <br/>- United States |
 
-> [!TIP]
-> If you have Microsoft 365 E3 but not Microsoft 365 E5, contact support and ask to participate in the preview program!
 
 ## Plan your deployment
 
