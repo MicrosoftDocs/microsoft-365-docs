@@ -71,7 +71,7 @@ Check out the [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/publ
 
 9. Go to the **Actions** tab and click **New...** Ensure that **Start a program** is selected in the **Action** field. Enter the UNC path, using the file server's fully qualified domain name (FQDN), of the shared *WindowsDefenderATPOnboardingScript.cmd* file.
 
-10. Click **OK** and close any open GPMC windows.
+10. Select **OK** and close any open GPMC windows.
 
 > [!TIP]
 > After onboarding the device, you can choose to run a detection test to verify that the device is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Defender for Endpoint device](run-detection-test.md).
