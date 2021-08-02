@@ -86,9 +86,6 @@ Select an incident to view details about the incident. Details include what aler
 
 :::image type="content" source="../../media/mde-p1/single-incident.png" alt-text="Incident details":::
  
-> [!NOTE]
-> Your incident view might not have all the tabs shown in our example.
-
 Use the **Alerts**, **Devices**, and **Users** tabs to view more information, such as the alerts that were triggered, devices that were affected, and user accounts that were affected. From there, you can take manual response actions, such as isolating a device, stopping and quarantining a file, and so on. 
 
 > [!TIP]
