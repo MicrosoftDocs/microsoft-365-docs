@@ -52,16 +52,6 @@ To use form processing, you also need AI Builder credits. If you have 300 or mor
 
 For details about SharePoint Syntex licensing, see [SharePoint Syntex licensing](syntex-licensing.md)
 
-### AI Builder credits
-
-If you have 300 or more SharePoint Syntex licenses for SharePoint Syntex in your organization, you will be allocated one million AI Builder credits. If you have fewer than 300 licenses, you must purchase AI Builder credits in order to use forms processing.
-
-You can estimate the AI Builder capacity that’s right for you with the [AI Builder calculator](https://powerapps.microsoft.com/ai-builder-calculator).
-
-If you plan to use a custom Power Platform environment, you must [allocate credits to that environment](/power-platform/admin/capacity-add-on).
-
-Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/resources/capacity) to check your credits and usage.
-
 ## To set up SharePoint Syntex
 
 1. In the Microsoft 365 admin center, select **Setup**, and then view the **Files and content** section.
