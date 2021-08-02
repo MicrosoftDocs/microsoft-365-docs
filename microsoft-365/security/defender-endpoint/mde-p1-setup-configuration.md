@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: ITPro
 ms.topic: overview
-ms.date: 07/28/2021
+ms.date: 08/02/2021
 ms.prod: m365-security
 ms.technology: mde
 localization_priority: Normal
@@ -94,8 +94,8 @@ We recommend using [Microsoft Endpoint Manager](/mem) to manage your organizatio
 
 3.	Set or change your antivirus configuration settings. Need help? Refer to the following resources: <br/>
 
-   - [Settings for Windows 10 Microsoft Defender Antivirus policy in Microsoft Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-windows)
-   - [Configure Defender for Endpoint on iOS features](ios-configure-features.md)
+  - [Settings for Windows 10 Microsoft Defender Antivirus policy in Microsoft Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-windows)
+  - [Configure Defender for Endpoint on iOS features](ios-configure-features.md)
 
 4.	When you are finished specifying your settings, choose **Review + save**.
 
