@@ -67,7 +67,7 @@ Check out the [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/publ
 
 7. Select **Run whether user is logged on or not** and check the **Run with highest privileges** check box.
 
-8. Go to the **Actions** tab and click **New...** Ensure that **Start a program** is selected in the **Action** field. Enter the NetBIOS path of the shared  *WindowsDefenderATPOnboardingScript.cmd* file.
+8. Go to the **Actions** tab and click **New...** Ensure that **Start a program** is selected in the **Action** field. Enter the UNC path, using the file server's fully qualified domain name (FQDN), of the shared *WindowsDefenderATPOnboardingScript.cmd* file.
 
 9. Click **OK** and close any open GPMC windows.
 
@@ -212,7 +212,7 @@ For security reasons, the package used to Offboard devices will expire 30 days a
 
 7. Select **Run whether user is logged on or not** and check the **Run with highest privileges** check-box.
 
-8. Go to the **Actions** tab and click **New...**. Ensure that **Start a program** is selected in the **Action** field. Enter the NetBIOS path of the shared *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd* file.
+8. Go to the **Actions** tab and click **New...**. Ensure that **Start a program** is selected in the **Action** field. Enter the UNC path, using the file server's fully qualified domain name (FQDN), of the shared *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd* file.
 
 9. Click **OK** and close any open GPMC windows.
 
