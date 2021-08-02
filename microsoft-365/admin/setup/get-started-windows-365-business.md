@@ -54,7 +54,7 @@ If you don't already have a Microsoft 365 subscription, you can buy your Windows
 2. On the next page, select the subscription you want to purchase, and then select **Buy now**.
 3. On the **Thank you for choosing Windows 365 Business** page, follow the steps to set up your account.
 4. In **step 5 - Confirmation details**, if you are ready to assign licenses to users, select **Get started** to go to your Windows 365 home page at https://windows365.microsoft.com.
-5. On the Windows 365 home page, in the **Quick actions** section, select **Manage your organization**. This takes you to the Microsoft 365 admin center where you can [assign licenses to users](/microsoft-365/business-video/set-up-cloud-pc-for-business#Assign-licenses-to-users).
+5. On the Windows 365 home page, in the **Quick actions** section, select **Manage your organization**. This takes you to the Microsoft 365 admin center where you can assign licenses to users.
 
 
 
