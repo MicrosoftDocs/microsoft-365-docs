@@ -67,7 +67,7 @@ Check out the [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/publ
 
 7. Select **Run whether user is logged on or not** and check the **Run with highest privileges** check box.
 
-8. In the Name field, type an appropriate name for the scheduled task (e.g., Defender for Endpoint Deployment).
+8. In the Name field, type an appropriate name for the scheduled task (for example, Defender for Endpoint Deployment).
 
 9. Go to the **Actions** tab and click **New...** Ensure that **Start a program** is selected in the **Action** field. Enter the UNC path, using the file server's fully qualified domain name (FQDN), of the shared *WindowsDefenderATPOnboardingScript.cmd* file.
 
