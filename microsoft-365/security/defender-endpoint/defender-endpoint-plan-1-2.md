@@ -20,8 +20,8 @@ f1.keywords: NOCSH
 
 Microsoft Defender for Endpoint is an enterprise endpoint security platform designed to help enterprise networks prevent, detect, investigate, and respond to advanced threats. Defender for Endpoint provides advanced threat protection that includes antivirus, antimalware, ransomware mitigation, and more, together with centralized management and reporting. Soon, two plans will be available:   
  
-- [Defender for Endpoint Plan 1](defender-endpoint-plan-1.md), currently in preview
-- [Defender for Endpoint Plan 2](microsoft-defender-endpoint.md), available now, and known as [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md).
+- [Microsoft Defender for Endpoint Plan 1](defender-endpoint-plan-1.md), currently in preview
+- [Microsoft Defender for Endpoint Plan 2](microsoft-defender-endpoint.md), available now, and known as [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md).
 
 ## Compare Defender for Endpoint plans
 

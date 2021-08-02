@@ -51,4 +51,4 @@ If you’re seeing false positives/negatives in Defender for Endpoint, see [Addr
 
 ## Next steps
 
-[See what's new in Microsoft Defender for Endpoint](whats-new-in-microsoft-defender-atp.md)
+- [See what's new in Microsoft Defender for Endpoint](whats-new-in-microsoft-defender-atp.md)
