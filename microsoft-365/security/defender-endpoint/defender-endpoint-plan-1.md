@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender for Endpoint Plan 1 (preview)
+title: Overview of Microsoft Defender for Endpoint Plan 1 (preview)
 description: Get an overview of Defender for Endpoint Plan 1. Learn about the features and capabilities included in this endpoint protection subscription.
 search.appverid: MET150 
 author: denisebmsft
@@ -15,7 +15,7 @@ ms.reviewer: inbadian
 f1.keywords: NOCSH
 ---
 
-# Microsoft Defender for Endpoint Plan 1 (preview)
+# Overview of Microsoft Defender for Endpoint Plan 1 (preview)
 
 Microsoft Defender for Endpoint is an enterprise endpoint security platform designed to help organizations like yours to prevent, detect, investigate, and respond to advanced threats. 
 
