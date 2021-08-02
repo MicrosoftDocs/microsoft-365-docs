@@ -12,7 +12,7 @@ ms.collection:
     - m365initiative-syntex
 search.appverid: MET150
 localization_priority: Priority
-description: "Set up content understanding in Project Cortex"
+description: "Set up SharePoint Syntex"
 ---
 
 # Set up SharePoint Syntex
@@ -48,7 +48,9 @@ To use SharePoint Syntex, your organization must have a subscription to SharePoi
 - SharePoint Syntex - SPO type
 - Common Data Service for SharePoint Syntex
 
-If you cancel your SharePoint Syntex subscription at a future date (or your trial expires), users will no longer be able to create or run document understanding or form processing models, and the content center template will no longer be available. Additionally, term store reports, SKOS taxonomy import, and Content type push will no longer be available. No content will be deleted and site permissions will not be changed.
+To use form processing, you also need AI Builder credits. If you have 300 or more licensed users, an allocation of AI Builder credits is provided each month.
+
+For details about SharePoint Syntex licensing, see [SharePoint Syntex licensing](syntex-licensing.md)
 
 ### AI Builder credits
 
