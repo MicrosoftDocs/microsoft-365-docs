@@ -235,15 +235,15 @@ These scenarios require that you already have devices onboarded and reporting in
 
 In this scenario, synchronizing files with the **Highly Confidential** sensitivity label to OneDrive is being blocked. This is a complex scenario with multiple components and procedures. You will need:
 
-- An AAD user account to target on an onboarded Windows 10 computer that is already synchronizing a local OneDrive folder with OneDrive cloud storage.
-- Microsoft Word installed on the Windows 10 computer
+- An AAD user account to target and an onboarded Windows 10 computer that is already synchronizing a local OneDrive folder with OneDrive cloud storage.
+- Microsoft Word installed on the target Windows 10 computer
 - Sensitivity labels configured and published. See, [Get started with sensitivity labels](get-started-with-sensitivity-labels.md#get-started-with-sensitivity-labels) and [Create and configure sensitivity labels and their policies](create-sensitivity-labels.md#create-and-configure-sensitivity-labels-and-their-policies)
 
 There are three procedures.
 
 1. Configure the Endpoint DLP Auto-quarantine settings.
 1. Create a policy that blocks sensitive items that have the **Highly Confidential** sensitivity label.
-1. Create a Word document on a Windows 10 device that the policy is targeted at, apply the label, and copy it to the user accounts local OneDrive folder that is being synchronized  
+1. Create a Word document on the Windows 10 device that the policy is targeted to, apply the label, and copy it to the user accounts local OneDrive folder that is being synchronized  
 
 #### Configure Endpoint DLP unallowed app and Auto-quarantine settings
 
@@ -251,7 +251,7 @@ There are three procedures.
 
 2. Expand **Unallowed apps**.
 
-3. Choose **Add or edit unallowed apps** and add *OneDrive* as a display name and the executable name *onedrive.exe*  to disallow onedrive from accessing items labeled with the confidential of the app you want to disallow.
+3. Choose **Add or edit unallowed apps** and add *OneDrive* as a display name and the executable name *onedrive.exe*  to disallow onedrive.exe from accessing items the the **Highly Confidential** label.
 
 4. Select **Auto-quarantine** and **Save**.
 
