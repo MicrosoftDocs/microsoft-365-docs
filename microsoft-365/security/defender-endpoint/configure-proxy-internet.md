@@ -134,6 +134,7 @@ The following downloadable spreadsheet lists the services and their associated U
 |
 
 If a proxy or firewall has HTTPS scanning (SSL inspection) enabled, exclude the domains listed in the above table from HTTPS scanning.
+In your firewall, open all the URLs where the geography column is WW. For rows where the geography column is not WW, open the URLs to your specific data location. To verify your data location setting, see [Verify data storage location and update data retention settings for Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/data-retention-settings).
 
 > [!NOTE]
 > settings-win.data.microsoft.com is only needed if you have Windows 10 devices running version 1803 or earlier.<br>
@@ -190,7 +191,7 @@ The \*.blob.core.windows.net URL endpoint can be replaced with the URLs shown in
 
 Verify the proxy configuration completed successfully, that WinHTTP can discover and communicate through the proxy server in your environment, and that the proxy server allows traffic to the Defender for Endpoint service URLs.
 
-1. Download the [Micrsofot Defender for Endpoint Client Analyzer tool](https://aka.ms/mdeanalyzer) to the PC where Defender for Endpoint sensor is running on.
+1. Download the [Microsoft Defender for Endpoint Client Analyzer tool](https://aka.ms/mdeanalyzer) to the PC where Defender for Endpoint sensor is running on.
 
 2. Extract the contents of MDEClientAnalyzer.zip on the device.
 
