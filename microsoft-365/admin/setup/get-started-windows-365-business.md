@@ -30,7 +30,8 @@ This article is for people who plan to buy and set up Windows 365 Business for t
   
 [Windows 365 Business](https://www.microsoft.com/windows-365/business) is a version of Windows 365 that is made specifically for use in smaller companies (up to 300 seats). It gives organizations an easy, streamlined way of providing Cloud PCs to their users.  With Windows 365 Cloud PCs, you can stream your apps, data, content, settings, and storage from the Microsoft cloud. 
 
-
+> [!NOTE]  
+> Before starting, make sure that your Azure AD device settings for Users may join devices to Azure AD are set to All. 
 
 ## Prerequisites
 There are no prerequisites to set up Windows 365 Business.
