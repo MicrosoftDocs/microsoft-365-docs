@@ -24,7 +24,6 @@
 #### [Deployment rings](deployment-rings.md)
 #### [Onboarding using Microsoft Endpoint Configuration Manager](onboarding-endpoint-configuration-manager.md)
 #### [Onboarding using Microsoft Endpoint Manager](onboarding-endpoint-manager.md)
-#### [Onboard supported devices](onboard-configure.md)
 
 ## [Migration guides](migration-guides.md)
 ### [Switch from non-Microsoft endpoint protection to Defender for Endpoint]()
