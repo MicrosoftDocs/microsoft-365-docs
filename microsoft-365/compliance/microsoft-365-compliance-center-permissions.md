@@ -79,3 +79,48 @@ Complete the following steps to remove users from a compliance role group:
 6. Select **Remove** and then select the checkbox for all users you want to remove from the role group.
 7. Select **Remove**, then select **Done**.
 8. Select **Save** to remove the users from the role group. Select **Close** to complete the steps.
+
+## Create a custom role group
+
+Complete the following steps to create a custom role group:
+
+1. Sign into [https://compliance.microsoft.com/permissions](https://compliance.microsoft.com/permissions) using credentials for an admin account in your Microsoft 365 organization.
+2. In the Microsoft 365 compliance center, go to **Permissions**.
+3. On the **Permissions & roles** page, select **Compliance center > Roles**.
+4. On the **Compliance center roles** page, select **Create**.
+5. On the **Name your role group** page, enter a name for the custom role group in the **Name** field. The name of the role group cannot be changed after creation of the role group. If needed, enter a description for the custom role group in the **Description** field. Select **Next** to continue.
+6. On the **Choose roles** page, select **Choose roles**.
+7. Select **Add**, then choose the roles to add to the custom role group. Select **Add** to add the role group, then select **Done**.
+8. Select **Next** to continue.
+9. On the **Choose members** page, select **Choose members**.
+10. Select **Add**, then choose the members to add to the custom role group. Select **Add** to add the members, then select **Done**.
+11. Select **Next** to continue.
+12. On the **Review your settings** page, review the details for the custom role group. If you need to edit the information, select **Edit** in the appropriate section. When all the settings are correct, select **Create role group** to create the custom role group or select **Cancel** to discard the changes and not create the custom role group.
+
+## Update a custom role group
+
+Complete the following steps to update a custom role group:
+
+1. Sign into [https://compliance.microsoft.com/permissions](https://compliance.microsoft.com/permissions) using credentials for an admin account in your Microsoft 365 organization.
+2. In the Microsoft 365 compliance center, go to **Permissions**.
+3. On the **Permissions & roles** page, select **Compliance center > Roles**.
+4. On the **Compliance center roles** page and select the role group to update.
+5. On the details pane for the selected role group, select **Edit role group**.
+6. On the **Editing role group name** page, update the description for the custom role group in the **Description** field. The name of the custom role group cannot be changed.
+7. On the **Choose roles** page, select **Edit** to update the roles assigned to the role groups.
+8. Select **Add**, then choose the roles to add to the custom role group. Select **Add** to add the role group, then select **Done**.
+9. On the **Choose members** page, select **Edit**.
+10. Select **Add**, then choose the members to add to the custom role group. Select **Add** to add the members, then select **Done**.
+11. Select **Save** to save updated *Description*, *Role groups*, and *Members* values.
+12. On the details pane for the selected role group, select **Close**.
+
+## Delete a custom role group
+
+Complete the following steps to update a custom role group:
+
+1. Sign into [https://compliance.microsoft.com/permissions](https://compliance.microsoft.com/permissions) using credentials for an admin account in your Microsoft 365 organization.
+2. In the Microsoft 365 compliance center, go to **Permissions**.
+3. On the **Permissions & roles** page, select **Compliance center > Roles**.
+4. On the **Compliance center roles** page and select the role group to update.
+5. On the details pane for the selected role group, select **Delete role group**.
+6. On the **Warning** dialog, select **Yes** to delete the role group or select **No** to cancel the deletion process.
