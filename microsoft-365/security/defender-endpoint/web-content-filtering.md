@@ -38,7 +38,7 @@ Web content filtering is part of [Web protection](web-protection-overview.md) ca
 
 Configure policies across your device groups to block certain categories. Blocking a category prevents users within specified device groups from accessing URLs associated with the category. For any category that's not blocked, the URLs are automatically audited. Your users can access the URLs without disruption, and you'll gather access statistics to help create a more custom policy decision. Your users will see a block notification if an element on the page they're viewing is making calls to a blocked resource.
 
-Web content filtering is available on the major web browsers, with blocks performed by Windows Defender SmartScreen (Microsoft Edge) and Network Protection (Chrome, Firefox, Brave and Opera). For more information about browser support, see the prerequisites section.
+Web content filtering is available on the major web browsers, with blocks performed by Windows Defender SmartScreen (Microsoft Edge) and Network Protection (Chrome, Firefox, Brave, and Opera). For more information about browser support, see the prerequisites section.
 
 Summarizing the benefits:
 
@@ -46,19 +46,18 @@ Summarizing the benefits:
 - Your security team can conveniently deploy policies to groups of users using device groups defined in [Microsoft Defender for Endpoint role-based access control settings](/microsoft-365/security/defender-endpoint/rbac)
 - Your security team can access web reports in the same central location, with visibility over actual blocks and web usage
 
-## User experience
-
-The blocking experience for 3rd party supported browsers is provided by Network Protection, which provides a system-level toast notifying the user of a blocked connection. For a more user-friendly, in-browser experience, consider using Microsoft Edge.
-
 ## Prerequisites
 
 Before trying out this feature, make sure you meet the following requirements:
 
-- Windows 10 Enterprise E5, Microsoft 365 E5, Microsoft 365 E5 Security, Microsoft 365 E3 + Microsoft 365 E5 Security add-on or the Microsoft Defender for Endpoint standalone license. 
+- Windows 10 Enterprise E5, Microsoft 365 E5, Microsoft 365 E5 Security, Microsoft 365 E3 + Microsoft 365 E5 Security add-on, or the Microsoft Defender for Endpoint standalone license. 
 - Access to Microsoft 365 Defender portal (https://security.microsoft.com).
 - Devices running Windows 10 Anniversary Update (version 1607) or later with the latest MoCAMP update.
-- Windows Defender SmartScreen and Network protection enabled.
+- Windows Defender SmartScreen and Network Protection enabled.
 
+## User experience
+
+The blocking experience for third-party supported browsers is provided by Network Protection, which provides a system-level toast notifying the user of a blocked connection. For a more user-friendly, in-browser experience, consider using Microsoft Edge.
 
 ## Data handling
 
@@ -89,7 +88,7 @@ To add a new policy:
 5. Review the summary and save the policy. The policy refresh may take up to 2 hours to apply to your selected devices.
 
 > [!NOTE]
-> - You can deploy a policy without selecting any category on a device group. This action will create an audit only policy, to help you understand user behavior before creating a block policy.
+> - You can deploy a policy without selecting any category on a device group. This action will create an audit only policy to help you understand user behavior before creating a block policy.
 > - If you are removing a policy or changing device groups at the same time, this might cause a delay in policy deployment.
 > - Blocking the "Uncategorized" category may lead to unexpected and undesired results.  
 
@@ -103,13 +102,19 @@ It's possible to override the blocked category in web content filtering to allow
 
 3. Set the policy action to **Allow**.  
 
-### Reporting inaccuracies
+### Dispute categories
 
-If you encounter a domain that has been incorrectly categorized, you can report inaccuracies directly to us from the Web Content Filtering reports page. This feature is available only in the new Microsoft 365 security center (security.microsoft.com).
+If you encounter a domain that has been incorrectly categorized, you can dispute the category directly from the portal. 
 
-To report an inaccuracy, navigate to **Reports** > **Web protection** > **Web Content Filtering Details** > **Domains**. On the domains tab of our Web Content Filtering reports, you will see an ellipsis beside each of the domains. Hover over this ellipsis and select **Report Inaccuracy**.
+To dispute the category of a domain, navigate to **Reports** > **Web protection** > **Web Content Filtering Details** > **Domains**. On the domains tab of the Web Content Filtering reports, you will see an ellipsis beside each of the domains. Hover over this ellipsis and select **Dispute Category**.
 
 A panel will open where you can select the priority and add additional details such as the suggested category for re-categorization. Once you complete the form, select **Submit**. Our team will review the request within one business day. For immediate unblocking, create a [custom allow indicator](indicator-ip-domain.md).
+
+### URL category lookup
+
+To determine the category of a website, you can use the URL search function available on the Microsoft 365 Defender portal (https://security.microsoft.com). In the URL search results, the web content filtering category appears under **URL/Domain details**. Administrators can also dispute the category of the domain directly from this page, as shown in the image below. If the category result is not shown, the URL is not currently assigned to an existing web content filtering category.
+
+![Image of web content filtering category lookup results](../../media/web-content-filtering-category-lookup.png)
 
 ## Web content filtering cards and details
 
@@ -153,7 +158,7 @@ Use the time range filter at the top left of the page to select a time period. Y
 
 ### Limitations and known issues in this preview
 
-- Only Microsoft Edge is supported if your device's OS configuration is Server (**cmd** > **Systeminfo** > **OS Configuration**). Network Protection is only supported in Inspect mode on Server devices, which is responsible for securing traffic across supported 3rd party browsers.
+- Only Microsoft Edge is supported if your device's OS configuration is Server (**cmd** > **Systeminfo** > **OS Configuration**). Network Protection is only supported in Inspect mode on Server devices, which is responsible for securing traffic across supported third-party browsers.
 
 - Unassigned devices will have incorrect data shown within the report. In the **Report details** > **Device groups** pivot, you might see a row with a blank Device Group field. This group contains your unassigned devices before they get put into your specified group. The report for this row might not contain an accurate count of devices or access counts.
 
