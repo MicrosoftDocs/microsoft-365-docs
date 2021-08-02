@@ -28,7 +28,7 @@ ms.technology: mde
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Microsoft has been on a journey to extend its industry leading endpoint security
 capabilities beyond Windows and Windows Server to macOS, Linux, Android, and iOS.
@@ -108,9 +108,8 @@ Android
 ## Microsoft Defender for Endpoint on iOS
 
 Microsoft Defender for Endpoint on iOS is our mobile threat defense solution for devices
-running iOS 11.0 and higher. Both Supervised and Unsupervised devices are supported. 
-On iOS, we offer web protection which includes anti-phishing, blocking unsafe connections, and 
-setting custom indicators. For more information about the key features and benefits, 
+running iOS 11.0 and higher. Devices that are registered within a customer's tenant (enrolled or unenrolled) are supported. Both supervised and unsupervised enrolled devices are supported. On iOS, we offer web protection, which includes anti-phishing, blocking unsafe connections and 
+setting custom indicators, and jailbreak detection. For more information about the key features and benefits, 
 read our [announcements](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/bg-p/MicrosoftDefenderATPBlog/label-name/iOS). 
 
 For more details on how to get started, visit the Microsoft Defender for Endpoint 

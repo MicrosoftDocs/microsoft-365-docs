@@ -19,6 +19,7 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - commerce_purchase
+- AdminTemplateSet
 search.appverid: MET150
 description: "Add file storage in your Microsoft 365 subscription. With extra file storage, you can store more content in SharePoint Online and OneDrive."
 ms.date: 04/02/2021

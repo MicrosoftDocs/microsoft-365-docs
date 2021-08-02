@@ -15,6 +15,7 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - MET150
 description: "Basic Mobility and Security are part of the Microsoft 365 plans."
