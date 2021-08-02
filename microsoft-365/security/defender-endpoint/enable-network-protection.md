@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 localization_priority: Normal
 ms.topic: conceptual
-author: dansimp
-ms.author: dansimp
+author: denisebmsft
+ms.author: deniseb
 ms.reviewer: 
 manager: dansimp
 ms.technology: mde
@@ -116,7 +116,7 @@ Confirm network protection is enabled on a local computer by using Registry edit
 
 1. Select **Start** and type **regedit** to open **Registry Editor**.
 
-2. Navigate to **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Windows Defender Exploit Guard\Network Protection\EnableNetworkProtection**
+2. Navigate to **HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Windows Defender Exploit Guard\Network Protection\EnableNetworkProtection**
 
 3. Select **EnableNetworkProtection** and confirm the value:
    * 0=Off
