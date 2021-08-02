@@ -69,9 +69,9 @@ The exposure level reflects the current exposure of the device based on the cumu
 
 If the exposure level says "No data available," there are a few reasons why this may be the case:
 
-- Device stopped reporting for more than 30 days. In that case it is considered inactive, and the exposure isn't computed.
+- Device stopped reporting for more than 30 days. In that case it's considered inactive, and the exposure isn't computed.
 - Device OS not supported - see [minimum requirements for Microsoft Defender for Endpoint](minimum-requirements.md).
-- Device with stale agent (very unlikely).
+- Device with stale agent (unlikely).
 
 ### OS Platform
 
@@ -86,7 +86,7 @@ Select only the Windows 10 versions you're interested in investigating.
 Filter by the following device health states:
 
 - **Active**: Devices that are actively reporting sensor data to the service.
-- **Inactive**: Devices that have completely stopped sending signals for more than 7 days.
+- **Inactive**: Devices that have stopped sending signals for more than 7 days.
 - **Misconfigured**: Devices that have impaired communications with service or are unable to send sensor data. Misconfigured devices can further be classified to:
   - No sensor data
   - Impaired communications
@@ -99,11 +99,11 @@ Onboarding status indicates whether the device is currently onboarded to Microso
 
 - **Onboarded**: The endpoint is onboarded to Microsoft Defender for Endpoint.
 
-- **Can be onboarded**: The endpoint was discovered in the network as a supported device, but it is not currently onboarded. Microsoft highly recommends onboarding these devices.
+- **Can be onboarded**: The endpoint was discovered in the network as a supported device, but it's not currently onboarded. Microsoft highly recommends onboarding these devices.
 
 - **Unsupported**: The endpoint was discovered in the network, but is not supported by Microsoft Defender for Endpoint.
 
-- **Insufficient info**: The system could not determine the supportability of the device.
+- **Insufficient info**: The system couldn't determine the supportability of the device.
 
 ### Last device update
 
