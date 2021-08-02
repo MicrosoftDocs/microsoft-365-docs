@@ -48,6 +48,8 @@ Defender for Endpoint Plan 1 (preview) includes the following capabilities:
 - **[Centralized configuration and management](#centralized-management)** with the Microsoft 365 Defender portal and integration with Microsoft Endpoint Manager.
 - **[Cross-platform support](#cross-platform-support)** for Windows, macOS, iOS, and Android devices.
 
+The following sections provide more details about these capabilities. 
+
 > [!IMPORTANT]
 > Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. This article includes links to online content that might describe some features that are not included in Defender for Endpoint Plan 1 (preview).
 
