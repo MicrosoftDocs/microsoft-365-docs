@@ -161,7 +161,7 @@ Windows 365 Business does not enroll Cloud PCs to [Intune](/mem/intune/fundament
 
 ## Sending outbound email messages using port 25 is not supported
 
-Sending outbound email messages directly on port 25 from a Windows 365 Business Cloud PC is not supported. Communication over port tcp/25 is blocked at the Windows 365 Business network layer for security reasons. If your email service uses Simple Mail Transfer Protocol (SMTP) for your email client application, you can use their web interface, if available. Or you can ask your email service provider for help to configure their email client app to use secure SMTP over Transport Layer Security (TLS), which uses a different port.
+Sending outbound email messages directly on port 25 from a Windows 365 Business Cloud PC is not supported. Communication over port TCP/25 is blocked at the Windows 365 Business network layer for security reasons. If your email service uses Simple Mail Transfer Protocol (SMTP) for your email client application, you can use their web interface, if available. Or you can ask your email service provider for help to configure their email client app to use secure SMTP over Transport Layer Security (TLS), which uses a different port.
 
 ## How to get help
 
