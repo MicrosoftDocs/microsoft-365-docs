@@ -59,7 +59,7 @@ Next-generation protection includes robust antivirus and antimalware protection.
 - Cloud-delivered protection, which includes near-instant detection and blocking of new and emerging threats 
 - Dedicated protection and product updates, including updates related to Microsoft Defender Antivirus 
 
-To learn more, see [Next-generation protection in Windows](microsoft-defender-antivirus-in-windows-10.md).
+To learn more, see [Next-generation protection overview](next-generation-protection.md).
 
 ## Attack surface reduction
 
