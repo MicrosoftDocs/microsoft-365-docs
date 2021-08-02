@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: ITPro
 ms.topic: overview
-ms.date: 07/28/2021
+ms.date: 08/02/2021
 ms.prod: m365-security
 ms.technology: mde
 localization_priority: Normal
@@ -24,9 +24,12 @@ We are pleased to announce that soon, Defender for Endpoint will be available in
 - Defender for Endpoint Plan 1, currently in preview, and described in this article
 - [Defender for Endpoint Plan 2](microsoft-defender-endpoint.md), available now.
 
+This article focuses on Defender for Endpoint Plan 1, currently in preview. 
+
 :::image type="content" source="../../media/mde-p1/mde-p1-overview-diagram.png" alt-text="Defender for Endpoint Plan 1 preview diagram":::
 
-*This article focuses on Defender for Endpoint Plan 1, currently in preview. To learn more, see [Microsoft Defender for Endpoint Plan 1 (preview) and Plan 2](defender-endpoint-plan-1-2.md).* 
+> [!TIP]
+> [Learn more about the differences between Microsoft Defender for Endpoint Plan 1 (preview) and Plan 2](defender-endpoint-plan-1-2.md).
 
 Use this guide to:
 
