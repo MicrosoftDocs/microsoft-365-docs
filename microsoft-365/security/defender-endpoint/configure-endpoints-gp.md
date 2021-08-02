@@ -218,7 +218,7 @@ For security reasons, the package used to Offboard devices will expire 30 days a
 
 9. Go to the **Actions** tab and click **New...**. Ensure that **Start a program** is selected in the **Action** field. Enter the UNC path, using the file server's fully qualified domain name (FQDN), of the shared *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd* file.
 
-10. Click **OK** and close any open GPMC windows.
+10. Select **OK** and close any open GPMC windows.
 
 > [!IMPORTANT]
 > Offboarding causes the device to stop sending sensor data to the portal but data from the device, including reference to any alerts it has had will be retained for up to 6 months.
