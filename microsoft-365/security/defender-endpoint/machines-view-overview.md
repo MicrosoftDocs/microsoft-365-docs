@@ -69,9 +69,9 @@ The exposure level reflects the current exposure of the device based on the cumu
 
 If the exposure level says "No data available," there are a few reasons why this may be the case:
 
-- Device stopped reporting for more than 30 days. In that case it is considered inactive, and the exposure isn't computed
-- Device OS not supported - see [minimum requirements for Microsoft Defender for Endpoint](minimum-requirements.md)
-- Device with stale agent (very unlikely)
+- Device stopped reporting for more than 30 days. In that case it is considered inactive, and the exposure isn't computed.
+- Device OS not supported - see [minimum requirements for Microsoft Defender for Endpoint](minimum-requirements.md).
+- Device with stale agent (very unlikely).
 
 ### OS Platform
 
@@ -95,7 +95,15 @@ Filter by the following device health states:
 
 ### Onboarding status
 
-Need description/definition.
+Onboarding status indicates whether the device is currently onboarded to Microsoft Defender for Endpoint or not. You can filter by the following states:
+
+- **Onboarded**: The endpoint is onboarded to Microsoft Defender for Endpoint.
+
+- **Can be onboarded**: The endpoint was discovered in the network as a supported device, but it is not currently onboarded. Microsoft highly recommends onboarding these devices.
+
+- **Unsupported**: The endpoint was discovered in the network, but is not supported by Microsoft Defender for Endpoint.
+
+- **Insufficient info**: The system could not determine the supportability of the device.
 
 ### Last device update
 
@@ -103,7 +111,7 @@ Filter your view based on when the device was last updated.
 
 ### First seen
 
-Need description/definition.
+Filter your view based on when the device was first seen in the network or when it was first reported by the Microsoft Defender for Endpoint sensor.
 
 ### Tags
 
