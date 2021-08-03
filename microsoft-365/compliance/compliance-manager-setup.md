@@ -67,9 +67,7 @@ To set permissions and assign roles in the Microsoft 365 compliance center, foll
 
 8. When you’re done assigning users, select **Done**, then select **Save**, then **Close**.
 
-If you need to access the classic version of Compliance Manager in the Microsoft Service Trust Portal,  the Admin settings in the Service Trust Portal provides another way to assign roles ([view instructions](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#assigning-compliance-manager-roles-to-users)). Be aware that such roles are more limited in their functionality.
-
-##### More about Azure AD
+#### More about Azure AD
 
 To assign roles and set permissions in Azure AD, see [Assign administrator and non-administrator roles to users with Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal).
 
