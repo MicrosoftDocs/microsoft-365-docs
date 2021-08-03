@@ -133,7 +133,7 @@ Now you're ready to use the AzCopy.exe tool to upload PST files to Office 365. T
 3. Run the following command to upload the PST files to Office 365.
 
     ```powershell
-    AzCopy.exe /Source:<Location of PST files> /Dest:<SAS URL> /V:<Log file location> /Y
+    AzCopy.exe cp  "Location of PST files" "SAS URL" --recursive=true
     ```
 
     > [!IMPORTANT]
