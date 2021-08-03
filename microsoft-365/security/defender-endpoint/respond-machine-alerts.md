@@ -25,7 +25,7 @@ ms.technology: mde
 **Applies to:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-respondmachine-abovefoldlink)
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-respondmachine-abovefoldlink)
 
 Quickly respond to detected attacks by isolating devices or collecting an investigation package. After taking action on devices, you can check activity details on the Action center.
 
@@ -54,6 +54,7 @@ Response actions run along the top of a specific device page and include:
 >
 > - These response actions are only available for devices on Windows 10, version  1703 or later.
 > - For non-Windows platforms, response capabilities (such as Device isolation) are dependent on the third-party capabilities.
+> - For Microsoft first party agents, please refer to the "more information" link under each feature for minimum OS requirements.
 
 ## Manage tags
 
