@@ -1,8 +1,7 @@
 ---
-title: 'Manage topics in the topic center in Microsoft Viva Topics'
-description: 'How to manage topics in the topic center.'
-author: chuckedmonson
+title: Manage topics in the topic center in Microsoft Viva Topics
 ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
 ms.reviewer: ergradel
 audience: admin
@@ -13,6 +12,7 @@ ms.collection:
     - enabler-strategic 
     - m365initiative-viva-topics
 localization_priority: None
+description: Learn how to manage topics in the topic center in Microsoft Viva Topics.
 
 ---
 # Manage topics in the topic center in Microsoft Viva Topics
