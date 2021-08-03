@@ -25,7 +25,7 @@ ms.custom: api
 
 **Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -40,9 +40,10 @@ Retrieves a collection of logged on users on a specific device.
 2. Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md)
 
-Permission type |Permission|Permission display name
+Permission type|Permission|Permission display name
 :---|:---|:---
 Application |User.Read.All |'Read user profiles'
 Delegated (work or school account) | User.Read.All | 'Read user profiles'
@@ -61,7 +62,7 @@ GET /api/machines/{id}/logonusers
 
 ## Request headers
 
-Name | Type | Description
+Name|Type|Description
 :---|:---|:---
 Authorization | String | Bearer {token}. **Required**.
 
