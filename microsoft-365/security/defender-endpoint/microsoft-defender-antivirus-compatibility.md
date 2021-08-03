@@ -140,7 +140,7 @@ The table in this section summarizes the features and capabilities that are acti
 
 Consider onboarding your endpoints to Defender for Endpoint, even if you are using a non-Microsoft antivirus/antimalware solution. In most cases, when you onboard your devices to Defender for Endpoint, you can use Microsoft Defender Antivirus alongside your non-Microsoft antivirus solution for added protection. You also get additional antivirus/antimalware protection with Defender for Endpoint capabilities. For example, you can use [EDR in block mode](edr-in-block-mode.md), which blocks and remediates malicious artifacts that your primary antivirus solution might have missed. 
 
-The following table summarizes how it works:
+The following table summarizes how it works:<br/><br/>
 
 | Scenario  | What happens  |
 |---------|---------|
