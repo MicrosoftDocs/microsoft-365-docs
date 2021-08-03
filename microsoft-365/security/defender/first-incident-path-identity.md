@@ -38,7 +38,7 @@ Microsoft 365 Defender allows analysts to filter alerts by detection source on t
 
 :::image type="content" source="../../media/first-incident-path-identity/first-incident-identity-mdi-filter.png" alt-text="Example of filtering the detection source for Defender for Identity":::
 
-Selecting the **Suspected overpass-the-hash attack** alert goes to a page in Microsoft Cloud App Security that displays more detailed information. You can always find out more about an alert or attack by selecting **Learn more about this alert type** to read a [description of the attack](https://docs.microsoft.com/defender-for-identity/lateral-movement-alerts#suspected-overpass-the-hash-attack-kerberos-external-id-2002) as well as remediation suggestions.
+Selecting the **Suspected overpass-the-hash attack** alert goes to a page in Microsoft Cloud App Security that displays more detailed information. You can always find out more about an alert or attack by selecting **Learn more about this alert type** to read a [description of the attack](/defender-for-identity/lateral-movement-alerts#suspected-overpass-the-hash-attack-kerberos-external-id-2002) as well as remediation suggestions.
  
 :::image type="content" source="../../media/first-incident-path-identity/first-incident-identity-alert-example.png" alt-text="Example of a Suspected overpass-the-hash attack alert"::: 
 

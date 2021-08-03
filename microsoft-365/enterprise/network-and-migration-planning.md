@@ -99,8 +99,6 @@ These topics contain detailed Office 365 network reference information.
     
 - [Office 365 Network Connectivity Principles](./microsoft-365-network-connectivity-principles.md)
     
-- [Office 365 video networking Frequently Asked Questions (FAQ)](office-365-video-networking-faq.md)
-    
 - [Plan for network devices that connect to Office 365 services](plan-for-network-devices.md)
     
 - [Setup guides for Office 365 services](setup-guides-for-microsoft-365.md)

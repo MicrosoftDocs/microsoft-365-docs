@@ -24,7 +24,7 @@ ms.custom: api
 
 **Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+- Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -34,13 +34,13 @@ Retrieves missing KBs (security updates) by device ID
 
 ## HTTP request
 
-```
+```http
 GET /api/machines/{machineId}/getmissingkbs
 ```
 
 ## Request header
 
-Name | Type | Description
+Name|Type|Description
 :---|:---|:---
 Authorization | String | Bearer {token}. **Required**.
 
@@ -58,7 +58,7 @@ If successful, this method returns 200 OK, with the specified device missing kb 
 
 Here is an example of the request.
 
-```
+```http
 GET https://api.securitycenter.microsoft.com/api/machines/2339ad14a01bd0299afb93dfa2550136057bff96/getmissingkbs 
 ```
 
@@ -90,5 +90,5 @@ Here is an example of the response.
 
 ## Related topics
 
-- [Risk-based Threat & Vulnerability Management](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [Threat & Vulnerability software inventory](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-software-inventory)
+- [Risk-based Threat & Vulnerability Management](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Threat & Vulnerability software inventory](/microsoft-365/security/defender-endpoint/tvm-software-inventory)

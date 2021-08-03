@@ -181,7 +181,7 @@ Choose whether to use email or role authorization. DKE supports only one of thes
 
 - **Role authorization**. Allows your organization to authorize access to keys based on Active Directory groups, and requires that the web service can query LDAP.
 
-**To set key access settings for DKE using email authorization**
+##### To set key access settings for DKE using email authorization
 
 1. Open the **appsettings.json** file and locate the `AuthorizedEmailAddress` setting.
 
@@ -203,7 +203,7 @@ This image shows the **appsettings.json** file correctly formatted for email aut
 
    ![The appsettings.json file showing email authorization method](../media/dke-email-accesssetting.png)
 
-**To set key access settings for DKE using role authorization**
+##### To set key access settings for DKE using role authorization
 
 1. Open the **appsettings.json** file and locate the `AuthorizedRoles` setting.
 
@@ -229,7 +229,7 @@ This image shows the **appsettings.json** file correctly formatted for role auth
 
 DKE tenant and key settings are located in the **appsettings.json** file.
 
-**To configure tenant and key settings for DKE**
+##### To configure tenant and key settings for DKE
 
 1. Open the **appsettings.json** file.
 
@@ -240,6 +240,7 @@ DKE tenant and key settings are located in the **appsettings.json** file.
      "https://sts.windows.net/9c99431e-b513-44be-a7d9-e7b500002d4b/"
    ]
    ```
+
 > [!NOTE]
 > If you want to enable external B2B access to your key store, you will also need to include these external tenants as part of the valid issuers' list.
 
@@ -368,7 +369,7 @@ You may prefer other methods to deploy your keys. Select the method that works b
 
 For pilot deployments, you can deploy in Azure and get started right away.
 
-**To create an Azure Web App instance to host your DKE deployment**
+#### To create an Azure Web App instance to host your DKE deployment
 
 To publish the key store, you'll create an Azure App Service instance to host your DKE deployment. Next, you'll publish your generated keys to Azure.
 
@@ -528,7 +529,7 @@ To register the DKE service:
 
     4. Select **Save** at the top to save your changes.
 
-    5. Repeat these steps, but this time, define the client ID as `c00e9d32-3c8d-4a7d-832b-029040e7db99`. This value is the Azure Information Protection unified labeling client ID. 
+    5. Repeat these steps, but this time, define the client ID as `c00e9d32-3c8d-4a7d-832b-029040e7db99`. This value is the Azure Information Protection unified labeling client ID.
 
 Your DKE service is now registered. Continue by [creating labels using DKE](#create-sensitivity-labels-using-dke).
 

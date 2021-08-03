@@ -31,7 +31,3 @@ English: Mon-Fri 9 AM-6 PM
 ### Technical Support:
 
 English: 24 hours a day, 7 days a week
-
-Alternative Phone Number: 1800 200 2052
-
-Local toll-free

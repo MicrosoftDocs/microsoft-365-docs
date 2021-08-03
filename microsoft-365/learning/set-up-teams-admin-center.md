@@ -42,7 +42,7 @@ Because the Viva Learning (Preview) is not yet generally available, certain step
 
     b. Enable the app permission policy for users or groups who will perform Viva Learning (Preview) testing. See [Assign policies to users and groups](/microsoftteams/assign-policies-users-and-groups).
 
-3.	Notify users who will test Viva Learning (Preview) to [switch their build client to Public Preview for Teams](set-up-teams-admin-center.md#user-steps-for-public-preview-tenants).
+3. Notify users who will test Viva Learning (Preview) to [switch their build client to Public Preview for Teams](set-up-teams-admin-center.md#user-steps-for-public-preview-tenants).
 
 > [!IMPORTANT]
 > For Public Preview tenants, Viva Learning (Preview) will not be displayed in **Managed apps** in the Teams admin center until final product release. However, enabled Public Preview users can find Viva Learning (Preview) in the Teams app store and use it, once the correct policies and permissions have been set up.
@@ -52,13 +52,13 @@ Because the Viva Learning (Preview) is not yet generally available, certain step
 Users who have been enabled for Public Preview testing — by enabling the [policies previously described](set-up-teams-admin-center.md#administrator-steps-for-public-preview-tenants) — need to [switch to Public Preview](/microsoftteams/public-preview-doc-updates#enable-public-preview) in their Teams client.
 
 1. Users must select their profile image > **About** > **Public Preview**.
-   
+
     ![Upper navigation in the Teams application showing user's profile](../media/learning/learning-app-select-profile-teams.png)
-    
+
 2. Users must accept the Public Preview terms and conditions.
 
     ![Switch to public preview build](../media/learning/learning-app-switch-to-public-preview.png)
- 
+
 3. Users can now find Viva Learning (Preview) in the Teams app store and start using it.
 
 ## Private Preview tenants
@@ -78,7 +78,6 @@ For Private Preview tenants, there are no additional policies that need to be en
 3. On the **Viva Learning (Preview)** page, under **Status**, select **Allowed** to turn on Viva Learning (Preview).
 
    ![Learning page in the Teams admin center showing Status and App settings section.](../media/learning/learning-app-teams-learning-page.png)
-
 
 <!---
 The Teams admin installs Viva Learning (Preview) and applies permission policies through the Teams admin center.

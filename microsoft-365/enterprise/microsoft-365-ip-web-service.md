@@ -58,22 +58,22 @@ For more information, see:
 
 These parameters are common across all the web service methods:
 
-- **format=<JSON | CSV>** — By default, the returned data format is JSON. Use this optional parameter to return the data in comma-separated values (CSV) format.
-- **ClientRequestId=\<guid>** — A required GUID that you generate for client association. Generate a unique GUID for each machine that calls the web service (the scripts included on this page generate a GUID for you). Do not use the GUIDs shown in the following examples because they might be blocked by the web service in the future. GUID format is _xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx_, where x represents a hexadecimal number.
+- **format=\<JSON \| CSV\>** — By default, the returned data format is JSON. Use this optional parameter to return the data in comma-separated values (CSV) format.
+- **ClientRequestId=\<guid\>** — A required GUID that you generate for client association. Generate a unique GUID for each machine that calls the web service (the scripts included on this page generate a GUID for you). Do not use the GUIDs shown in the following examples because they might be blocked by the web service in the future. GUID format is _xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx_, where x represents a hexadecimal number.
 
-  To generate a GUID, you can use the [New-Guid](/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-6) PowerShell command, or use an online service such as [Online GUID Generator](https://www.guidgenerator.com/).
+  To generate a GUID, you can use the [New-Guid](/powershell/module/microsoft.powershell.utility/new-guid) PowerShell command, or use an online service such as [Online GUID Generator](https://www.guidgenerator.com/).
 
 ## Version web method
 
-Microsoft updates the Office 365 IP address and FQDN entries at the end of each month. Out-of-band updates are sometimes published due to support incidents, security updates or other operational requirements.
+Microsoft updates the Office 365 IP address and FQDN entries at the beginning of each month. Out-of-band updates are sometimes published due to support incidents, security updates or other operational requirements.
 
 The data for each published instance is assigned a version number, and the version web method enables you to check for the latest version of each Office 365 service instance. We recommend that you check the version not more than once an hour.
 
 Parameters for the version web method are:
 
-- **AllVersions=<true | false>** — By default, the version returned is the latest. Include this optional parameter to request all published versions since the web service was first released.
-- **Format=<JSON | CSV | RSS>** — In addition to the JSON and CSV formats, the version web method also supports RSS. You can use this optional parameter along with the _AllVersions=true_ parameter to request an RSS feed that can be used with Outlook or other RSS readers.
-- **Instance=<Worldwide | China | Germany | USGovDoD | USGovGCCHigh>** — This optional parameter specifies the instance to return the version for. If omitted, all instances are returned. Valid instances are: Worldwide, China, Germany, USGovDoD, USGovGCCHigh.
+- **AllVersions=\<true \| false\>** — By default, the version returned is the latest. Include this optional parameter to request all published versions since the web service was first released.
+- **Format=\<JSON \| CSV \| RSS\>** — In addition to the JSON and CSV formats, the version web method also supports RSS. You can use this optional parameter along with the _AllVersions=true_ parameter to request an RSS feed that can be used with Outlook or other RSS readers.
+- **Instance=\<Worldwide \| China \| Germany \| USGovDoD \| USGovGCCHigh\>** — This optional parameter specifies the instance to return the version for. If omitted, all instances are returned. Valid instances are: Worldwide, China, Germany, USGovDoD, USGovGCCHigh.
 
 The version web method is not rate limited and does not ever return 429 HTTP Response Codes. The response to the version web method does include a cache-control header recommending caching of the data for 1 hour. The result from the version web method can be a single record or an array of records. The elements of each record are:
 
@@ -81,9 +81,9 @@ The version web method is not rate limited and does not ever return 429 HTTP Res
 - latest — The latest version for endpoints of the specified instance.
 - versions — A list of all previous versions for the specified instance. This element is only included if the _AllVersions_ parameter is true.
 
-### Examples:
+### Version web method examples
 
-Example 1 request URI: [https://endpoints.office.com/version?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7](https://endpoints.office.com/version?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7)
+Example 1 request URI: <https://endpoints.office.com/version?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7>
 
 This URI returns the latest version of each Office 365 service instance. Example result:
 
@@ -115,7 +115,7 @@ This URI returns the latest version of each Office 365 service instance. Example
 > [!IMPORTANT]
 > The GUID for the ClientRequestID parameter in these URIs are only an example. To try the web service URIs out, generate your own GUID. The GUIDs shown in these examples may be blocked by the web service in the future.
 
-Example 2 request URI: [https://endpoints.office.com/version/Worldwide?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7](https://endpoints.office.com/version/Worldwide?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7)
+Example 2 request URI: <https://endpoints.office.com/version/Worldwide?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7>
 
 This URI returns the latest version of the specified Office 365 service instance. Example result:
 
@@ -126,7 +126,7 @@ This URI returns the latest version of the specified Office 365 service instance
 }
 ```
 
-Example 3 request URI: [https://endpoints.office.com/version/Worldwide?Format=CSV&amp;ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7](https://endpoints.office.com/version/Worldwide?Format=CSV&amp;ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7)
+Example 3 request URI: <https://endpoints.office.com/version/Worldwide?Format=CSV&ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7>
 
 This URI shows output in CSV format. Example result:
 
@@ -135,7 +135,7 @@ instance,latest
 Worldwide,2018063000
 ```
 
-Example 4 request URI: [https://endpoints.office.com/version/Worldwide?AllVersions=true&amp;ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7](https://endpoints.office.com/version/Worldwide?AllVersions=true&amp;ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7)
+Example 4 request URI: <https://endpoints.office.com/version/Worldwide?AllVersions=true&ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7>
 
 This URI shows all prior versions that have been published for the Office 365 worldwide service instance. Example result:
 
@@ -150,8 +150,7 @@ This URI shows all prior versions that have been published for the Office 365 wo
 }
 ```
 
-Example 5 RSS Feed URI:
-[https://endpoints.office.com/version/worldwide?clientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7&allVersions=true&format=RSS](https://endpoints.office.com/version/worldwide?clientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7&allVersions=true&format=RSS)
+Example 5 RSS Feed URI: <https://endpoints.office.com/version/worldwide?clientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7&allVersions=true&format=RSS>
 
 This URI shows an RSS feed of the published versions that include links to the list of changes for each version. Example result:
 
@@ -176,10 +175,10 @@ The endpoints web method returns all records for IP address ranges and URLs that
 
 Parameters for the endpoints web method are:
 
-- **ServiceAreas=<Common | Exchange | SharePoint | Skype>** — A comma-separated list of service areas. Valid items are _Common_, _Exchange_, _SharePoint_, and _Skype_. Because _Common_ service area items are a prerequisite for all other service areas, the web service always includes them. If you do not include this parameter, all service areas are returned.
-- **TenantName=<tenant_name>** — Your Office 365 tenant name. The web service takes your provided name and inserts it in parts of URLs that include the tenant name. If you don't provide a tenant name, those parts of URLs have the wildcard character (\*).
-- **NoIPv6=<true | false>** — Set the value to _true_ to exclude IPv6 addresses from the output if you don't use IPv6 in your network.
-- **Instance=<Worldwide | China | Germany | USGovDoD | USGovGCCHigh>** — This required parameter specifies the instance from which to return the endpoints. Valid instances are: _Worldwide_, _China_, _Germany_, _USGovDoD_, and _USGovGCCHigh_.
+- **ServiceAreas=\<Common \| Exchange \| SharePoint \| Skype\>** — A comma-separated list of service areas. Valid items are _Common_, _Exchange_, _SharePoint_, and _Skype_. Because _Common_ service area items are a prerequisite for all other service areas, the web service always includes them. If you do not include this parameter, all service areas are returned.
+- **TenantName=\<tenant_name\>** — Your Office 365 tenant name. The web service takes your provided name and inserts it in parts of URLs that include the tenant name. If you don't provide a tenant name, those parts of URLs have the wildcard character (\*).
+- **NoIPv6=\<true \| false\>** — Set the value to _true_ to exclude IPv6 addresses from the output if you don't use IPv6 in your network.
+- **Instance=\<Worldwide \| China \| Germany \| USGovDoD \| USGovGCCHigh\>** — This required parameter specifies the instance from which to return the endpoints. Valid instances are: _Worldwide_, _China_, _Germany_, _USGovDoD_, and _USGovGCCHigh_.
 
 If you call the endpoints web method too many times from the same client IP address, you might receive HTTP response code _429 (Too Many Requests)_. If you get this response code, wait 1 hour before repeating your request, or generate a new GUID for the request. As a general best practice, only call the endpoints web method when the version web method indicates that a new version is available.
 
@@ -196,9 +195,9 @@ The result from the endpoints web method is an array of records in which each re
 - required — _True_ if this endpoint set is required to have connectivity for Office 365 to be supported. _False_ if this endpoint set is optional.
 - notes — For optional endpoints, this text describes Office 365 functionality that would be unavailable if IP addresses or URLs in this endpoint set cannot be accessed at the network layer. Omitted if blank.
 
-### Examples:
+### Endpoints web method examples
 
-Example 1 request URI: [https://endpoints.office.com/endpoints/Worldwide?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7](https://endpoints.office.com/endpoints/Worldwide?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7)
+Example 1 request URI: <https://endpoints.office.com/endpoints/Worldwide?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7>
 
 This URI obtains all endpoints for the Office 365 worldwide instance for all workloads. Example result that shows an excerpt of the output:
 
@@ -275,9 +274,9 @@ The result from the changes web method is an array of records in which each reco
   — ips — Items to be removed from the _ips_ array.
   — urls- Items to be removed from the _urls_ array.
 
-### Examples:
+### Changes web method examples
 
-Example 1 request URI: [https://endpoints.office.com/changes/worldwide/0000000000?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7](https://endpoints.office.com/changes/worldwide/0000000000?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7)
+Example 1 request URI: <https://endpoints.office.com/changes/worldwide/0000000000?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7>
 
 This requests all previous changes to the Office 365 worldwide service instance. Example result:
 
@@ -315,7 +314,7 @@ This requests all previous changes to the Office 365 worldwide service instance.
      [
 ```
 
-Example 2 request URI: [https://endpoints.office.com/changes/worldwide/2018062700?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7](https://endpoints.office.com/changes/worldwide/2018062700?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7)
+Example 2 request URI: <https://endpoints.office.com/changes/worldwide/2018062700?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7>
 
 This requests changes since the specified version to the Office 365 Worldwide instance. In this case, the version specified is the latest. Example result:
 
@@ -346,7 +345,7 @@ This requests changes since the specified version to the Office 365 Worldwide in
 ]
 ```
 
-## Example PowerShell Script
+## Example PowerShell script
 
 You can run this PowerShell script to see if there are actions you need to take for updated data. You can run this script as a scheduled task to check for a version update. To avoid excessive load on the web service, try not to run the script more than once an hour.
 

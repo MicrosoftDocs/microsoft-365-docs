@@ -33,7 +33,7 @@ Use the **Disposition** page from **Records Management** in the Microsoft 365 co
 
 ## Prerequisites for viewing content dispositions
 
-To manage disposition reviews and confirm that records have been deleted, you must have sufficient permissions and auditing must be enabled.
+To manage disposition reviews and confirm that records have been deleted, you must have sufficient permissions and auditing must be enabled. Also be aware of any [limitations](retention-limits.md#maximum-number-of-items-for-disposition) for disposition.
 
 ### Permissions for disposition
 
@@ -44,7 +44,7 @@ To successfully access the **Disposition** tab in the Microsoft 365 compliance c
 
 To grant users just the permissions they need for disposition reviews without granting them permissions to view and configure other features for retention and records management, create a custom role group (for example, named "Disposition Reviewers") and grant this group the **Disposition Management** role.
 
-For instructions to configure these permissions, see [Give users access to the Office 365 Security & Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
+For instructions to add users to the default roles or create your own role groups, see [Permissions in the Microsoft 365 compliance center](microsoft-365-compliance-center-permissions.md).
 
 Additionally:
 
@@ -210,8 +210,6 @@ Use the **Disposition** tab from the **Records management** page to identify:
 These items display **Records Disposed** in the **Type** column. For example:
 
 ![Items that were disposed of without a disposition review](../media/records-disposed2.png)
-
-Items that are shown in the **Disposed Items** tab are kept for up to seven years after the item was disposed, with a limit of one million items per record for that period. If you see the **Count** number nearing this limit of one million, and you need proof of disposition for your records, contact [Microsoft Support](../business-video/get-help-support.md).
 
 > [!NOTE]
 > This functionality uses information from the [unified audit log](search-the-audit-log-in-security-and-compliance.md) and therefore requires auditing to be [enabled and searchable](turn-audit-log-search-on-or-off.md) so the corresponding events are captured.

@@ -128,6 +128,8 @@ The first step is to prepare the search results for exporting. When you prepare 
    2. Select the **Include versions for SharePoint files** checkbox to export all versions of SharePoint documents. This option appears only if the content sources of the search include SharePoint or OneDrive for Business sites.
   
    3. Select the **Export files in a compressed (zipped) folder. Includes only individual messages and SharePoint documents** checkbox to export search results to compressed folders. This option appears only when you choose to export Exchange items as individual messages and when the search results include SharePoint or OneDrive documents. This option is primarily used to work around the 260 character limit in Windows file path names when items are exported. See the "Filenames of exported items" in the [More information](#more-information) section.
+   > [!IMPORTANT]
+   > Exporting files in a compressed (zipped) folder will increase export times.
   
 6. Click **Export** to start the export process. The search results are prepared for downloading, which means they're collected from the original content locations and then uploaded to an Azure Storage location in the Microsoft cloud. This may take several minutes.
 

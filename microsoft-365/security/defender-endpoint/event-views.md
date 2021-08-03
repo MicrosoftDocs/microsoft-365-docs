@@ -21,11 +21,12 @@ ms.topic: article
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
+
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!TIP]
-> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink).
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
 Review attack surface reduction events in Event Viewer to monitor what rules or settings are working. You can also determine if any settings are too "noisy" or impacting your day to day workflow.
 
@@ -33,7 +34,7 @@ Reviewing events is handy when you're evaluating the features. You can enable au
 
 This article lists all the events, their associated feature or setting, and describes how to create custom views to filter to specific events.
 
-Get detailed reporting into events and blocks as part of Windows Security if you have an E5 subscription and use [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md).
+Get detailed reporting into events, blocks, and warnings as part of Windows Security if you have an E5 subscription and use [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md).
 
 ## Use custom views to review attack surface reduction capabilities
 
@@ -53,7 +54,8 @@ You can also manually navigate to the event area that corresponds to the feature
 
 3. Select **Action** > **Import Custom View...**
 
-    ![Animation highlighting Import custom view on the left of the Even viewer window](/windows/security/threat-protection/images/events-import)
+  > [!div class="mx-imgBorder"]
+  > ![Animation highlighting Import custom view on the left of the Even viewer window](images/events-import.gif)
 
 4. Navigate to where you extracted XML file for the custom view you want and select it.
 
@@ -67,15 +69,14 @@ You can also manually navigate to the event area that corresponds to the feature
 
 2. On the left panel, under **Actions**, select **Create Custom View...**
 
-    ![Animation highlighting the create custom view option on the Event viewer window](/windows/security/threat-protection/images/events-create)
+  > [!div class="mx-imgBorder"]
+  > ![Animation highlighting the create custom view option on the Event viewer window](images/events-create.gif)
 
 3. Go to the XML tab and select **Edit query manually**. You'll see a warning that you can't edit the query using the **Filter** tab if you use the XML option. Select **Yes**.
 
 4. Paste the XML code for the feature you want to filter events from into the XML section.
 
-5. Select **OK**. Specify a name for your filter.
-
-6. It will create a custom view that filters to only show the events related to that feature.
+5. Select **OK**. Specify a name for your filter. This creates a custom view that filters to only show the events related to that feature.
 
 ### XML for attack surface reduction rule events
 
@@ -140,7 +141,7 @@ You can access these events in Windows Event viewer:
 2. Expand **Applications and Services Logs > Microsoft > Windows** and then go to the folder listed under **Provider/source** in the table below.
 3. Double-click on the sub item to see events. Scroll through the events to find the one you're looking.
 
-   ![Animation showing using Event Viewer](/windows/security/threat-protection/images/event-viewer)
+   ![Animation showing using Event Viewer](images/event-viewer.gif)
 
 Feature | Provider/source | Event ID | Description
 :-|:-|:-:|:-

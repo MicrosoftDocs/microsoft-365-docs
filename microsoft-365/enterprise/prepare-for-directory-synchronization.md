@@ -175,7 +175,7 @@ It's best to align these attributes to reduce confusion. To meet the requirement
 
 You may need to add an alternative UPN suffix to associate the user's corporate credentials with the Microsoft 365 environment. A UPN suffix is the part of a UPN to the right of the @ character. UPNs that are used for single sign-on can contain letters, numbers, periods, dashes, and underscores, but no other types of characters.
 
-For more information on how to add an alternative UPN suffix to Active Directory, see [Prepare for directory synchronization]( https://go.microsoft.com/fwlink/p/?LinkId=525430).
+For more information on how to add an alternative UPN suffix to Active Directory, see [Prepare for directory synchronization](https://go.microsoft.com/fwlink/p/?LinkId=525430).
 
 ## 5. Match the AD DS UPN with the Microsoft 365 UPN
 

@@ -18,6 +18,7 @@ ms.custom:
 - okr_smb
 - AdminSurgePortfolio
 - commerce_billing
+- AdminTemplateSet
 search.appverid: MET150
 description: "Interpret charges, billing, and payment info on your Microsoft 365 for business bill or invoice, and how to change a purchase order number."
 ms.date: 05/04/2021
@@ -124,6 +125,7 @@ If you pay by invoice, you can add or change the purchase order (PO) number for 
 ## Related content
 
 [Learn how to find and view your bill or invoice](view-your-bill-or-invoice.md) (article)\
+[Billing information for Microsoft 365 for business in Mexico](mexico-billing-info.md) (article) \
 [Change your billing addresses](change-your-billing-addresses.md) (article)\
 [Change your organization's address, technical contact email, and other information](../../admin/manage/change-address-contact-and-more.md) (article)\
 [Pay for your Microsoft 365 for business subscription](pay-for-your-subscription.md) (article)\

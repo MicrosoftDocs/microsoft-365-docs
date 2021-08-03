@@ -159,7 +159,7 @@ Some things to consider when using keywords or searchable properties to auto-app
 
 - New, modified, and existing items will be auto-labeled for SharePoint, OneDrive, and Exchange.
 
-- For SharePoint, crawled properties and custom properties aren't supported for these KQL queries and you must use only predefined managed properties. However, you can use mappings at the tenant level with the predefined managed properties that are enabled as refiners by default (RefinableDate00-19, RefinableString00-99, RefinableInt00-49, RefinableDecimals00-09, and RefinableDouble00-09). For more information, see [Overview of crawled and managed properties in SharePoint Server](/SharePoint/technical-reference/crawled-and-managed-properties-overview), and for instructions, see [Create a new managed property](/sharepoint/manage-search-schema#create-a-new-managed-property).
+- For SharePoint, crawled properties and custom properties aren't supported for these KQL queries and you must use only predefined managed properties for documents. However, you can use mappings at the tenant level with the predefined managed properties that are enabled as refiners by default (RefinableDate00-19, RefinableString00-99, RefinableInt00-49, RefinableDecimals00-09, and RefinableDouble00-09). For more information, see [Overview of crawled and managed properties in SharePoint Server](/SharePoint/technical-reference/crawled-and-managed-properties-overview), and for instructions, see [Create a new managed property](/sharepoint/manage-search-schema#create-a-new-managed-property).
 
 - If you map a custom property to one of the refiner properties, wait 24 hours before you use it in your KQL query for a retention label.
 
@@ -225,7 +225,7 @@ Note that this final example uses the best practice of always including  operato
 
 To identify Microsoft Teams meeting recordings that are stored in users' OneDrive accounts or in SharePoint, specify the following for the **Keyword query editor**:
 
-```	
+```
 ProgID:Media AND ProgID:Meeting
 ```
 

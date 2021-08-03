@@ -41,7 +41,7 @@ Office 365 and Microsoft 365 E3 include DLP protection for SharePoint Online, On
 
 Support for DLP protection in Teams Chat requires E5.
 
-To learn more about licensing requirements, see [Microsoft 365 Tenant-Level Services Licensing Guidance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+To learn more about licensing requirements, see [Microsoft 365 Tenant-Level Services Licensing Guidance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 > [!IMPORTANT]
 > DLP applies only to the actual messages in the chat or channel thread. Activity notifications -- which include a short message preview and appear based on a user's notification settings -- are **not** included in Teams DLP. Any sensitive information present in the part of the message that appears in the preview will remain visible in the notification even after the DLP policy has been applied and removed sensitive information the message itself.
