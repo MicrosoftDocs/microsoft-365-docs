@@ -290,6 +290,8 @@
              href: usage-analytics/active-user-in-usage-reports.md
            - name: Customize reports
              href: usage-analytics/customize-reports.md
+           - name: Usage analytics with Microsoft 365 GCC 
+             href: usage-analytics/connect-to-gcc-data-with-usage-analytics.md
            - name: About the usage analytics data model
              href: usage-analytics/usage-analytics-data-model.md
            - name: Troubleshoot usage analytics errors
