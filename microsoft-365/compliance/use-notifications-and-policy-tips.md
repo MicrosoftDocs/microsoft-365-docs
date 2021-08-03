@@ -40,6 +40,42 @@ In the Compliance Center, when you create a DLP policy, you can configure the us
 
   - For Excel, PowerPoint, and Word documents that are stored on a OneDrive for Business site or SharePoint Online site that's included in the DLP policy, the policy tip appears on the Message Bar and the Backstage view (**File** menu \> **Info**).
 
+## Add user notifications to a DLP policy
+
+When you create a DLP policy, you can enable **User notifications**. When user notifications are enabled, Microsoft 365 sends out both email notifications and policy tips. You can customize who notification emails are sent to, the email text and the policy tip text.
+
+1. Go to [https://(https://compliance.microsoft.com/permissions](https://(https://compliance.microsoft.com/permissions).
+
+2. Sign in using your work or school account. You're now in the Security &amp; Compliance Center.
+
+3. In the Security &amp; Compliance Center \> left navigation \> **Data loss prevention** \> **Policy** \> **+ Create a policy**.
+
+    ![Create a policy button](../media/b1e48a08-92e2-47ca-abdc-4341694ddc7c.png)
+
+4. Choose the DLP policy template that protects the types of sensitive information that you need \> **Next**.
+
+    To start with an empty template, choose **Custom** \> **Custom policy** \> **Next**.
+
+5. Name the policy \> **Next**.
+
+6. To choose the locations that you want the DLP policy to protect, do one of the following:
+
+   - Choose **All locations in Office 365** \> **Next**.
+
+   - Choose **Let me choose specific locations** \> **Next**.
+
+   To include or exclude an entire location such as all Exchange email or all OneDrive accounts, switch the **Status** of that location on or off.
+
+   To include only specific SharePoint sites or OneDrive accounts, switch the **Status** to on, and then click the links under **Include** to choose specific sites or accounts.
+
+7. Choose **Use advanced settings** \> **Next**.
+
+8. Choose **+ New rule**.
+
+9. In the rule editor, under **User notifications**, switch the status on.
+
+    ![User notifications section of rule editor](../media/47705927-c60b-4054-a072-ab914f33d15d.png)
+
 > [!NOTE]
 > Notification emails are sent unprotected.
 

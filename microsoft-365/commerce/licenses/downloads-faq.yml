@@ -41,8 +41,8 @@ sections:
 
           To determine if a product is eligible for download:
 
-            1.	Select **Volume Licensing**, and then select the product or **View downloads**.
-            2.	Under **Download**, if the product is not available, you’ll see “This product is not available for download.”
+            1. Select **Volume Licensing**, and then select the product or **View downloads**.
+            2. Under **Download**, if the product is not available, you’ll see “This product is not available for download.”
 
       - question: |
           What is a Client Access License (CAL)?
@@ -65,14 +65,14 @@ sections:
         answer: |
           To run a volume licensing version of Office for Mac, you must download and install the following files:
             - The [Volume License (VL) Serializer](/deployoffice/mac/volume-license-serializer) package located in the Office for Mac download file.
-            - The [Office for Mac installation package](/officeupdates/update-history-office-for-mac#most-current-packages-for-office-for-mac. Installer package files for individual applications are also available on the Microsoft 365 admin center. Office for Mac doesn’t require a product key because the VL Serializer is used to activate a volume licensed version of Office for Mac.
+            - The [Office for Mac installation package](/officeupdates/update-history-office-for-mac#most-current-packages-for-office-for-mac). Installer package files for individual applications are also available on the Microsoft 365 admin center. Office for Mac doesn’t require a product key because the VL Serializer is used to activate a volume licensed version of Office for Mac.
 
       - question: |
           How do I download products in the admin center?
         answer: |
           To download products in the admin center:
-          1.	Select **Volume Licensing**, and then select the product or **View downloads**.
-          2.	Under **Download**, select a component and select a download action or the download icon. 
+          1. Select **Volume Licensing**, and then select the product or **View downloads**.
+          2. Under **Download**, select a component and select a download action or the download icon. 
 
           To access downloads in the admin center, a VLSC administrator in your organization can provide access by assigning you to one of these roles:
             - Administrator
@@ -83,8 +83,8 @@ sections:
           How do I change my download settings?
         answer: |
           To access download settings in the admin center:
-          1.	Select **Volume Licensing**, and then select the product or **View downloads**.
-          2.	Under **Download**, select the **Language** and **Operating System Type**.
+          1. Select **Volume Licensing**, and then select the product or **View downloads**.
+          2. Under **Download**, select the **Language** and **Operating System Type**.
           
           **Note** Pop-up blockers can block downloads. Make sure pop-up blockers are disabled when you download software from the admin center.
 
@@ -120,7 +120,7 @@ sections:
       - question: |
           Where can I find support for the topics covered in this FAQ?
         answer: |
-          For more training resources, including videos, see [Microsoft Volume Licensing Service Center training and resources](/licensing/existing-customer/vlsc-training-and-resources?activetab=vlsc-tab%3aprimaryr3).
+          For more training resources, including videos, see [Microsoft Volume Licensing Service Center training and resources](https://www.microsoft.com/licensing/existing-customer/vlsc-training-and-resources).
       
       - question: |
           How can I contact Microsoft Support?
@@ -134,3 +134,4 @@ additionalContent: |
   - [Product keys FAQ](product-keys-faq.yml)
 
   - [Online services activation for Open programs FAQ](online-service-activation-faq.yml)
+  
