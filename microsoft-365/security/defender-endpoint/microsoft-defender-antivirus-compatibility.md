@@ -47,7 +47,7 @@ This article describes what happens between Microsoft Defender Antivirus, non-Mi
 The operating system, antivirus product, and Defender for Endpoint affect whether Microsoft Defender Antivirus is in active mode, passive mode, or disabled. The following table summarizes what happens when Microsoft Defender Antivirus is used alongside a non-Microsoft antivirus/antimalware solution.
 
 > [!NOTE]
-> This section pertains only to antivirus/antimalware solutions installed on endpoints. If your organization is using Defender for Endpoint, make sure to review the section, [Defender for Endpoint together with antivirus solutions](#microsoft-defender-for-endpoint-together-with-antivirus-solutions). 
+> This section pertains only to antivirus/antimalware solutions installed on endpoints. If your organization is using Defender for Endpoint, make sure to review the section, [Defender for Endpoint together with antivirus solutions](#defender-for-endpoint-together-with-antivirus-solutions). 
 
 | Windows version   | Primary antivirus/antimalware solution  | Microsoft Defender Antivirus state    |
 |------|------|-------|-------|
