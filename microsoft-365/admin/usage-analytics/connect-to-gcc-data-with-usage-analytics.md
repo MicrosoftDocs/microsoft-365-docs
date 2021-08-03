@@ -79,7 +79,7 @@ Microsoft 365 GCC users can download and use the Microsoft 365 Usage Analytics r
  
 
 4. Save your changes to the report. 
-5. Select **Publish** in the Power BI Desktop menu to publish the report to the Power BI Online service where it can be viewed. This requires either a Power BI Pro license or Power BI Premium capacity. As part of the [publish process](https://docs.microsoft.com/power-bi/create-reports/desktop-upload-desktop-files#to-publish-a-power-bi-desktop-dataset-and-reports), you will need to select a destination to publish to an available workspace in the Power BI Online Service.
+5. Select **Publish** in the Power BI Desktop menu to publish the report to the Power BI Online service where it can be viewed. This requires either a Power BI Pro license or Power BI Premium capacity. As part of the [publish process](/power-bi/create-reports/desktop-upload-desktop-files#to-publish-a-power-bi-desktop-dataset-and-reports), you will need to select a destination to publish to an available workspace in the Power BI Online Service.
 
 ## Related content
 
