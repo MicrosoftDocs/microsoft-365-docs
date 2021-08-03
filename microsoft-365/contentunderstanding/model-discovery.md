@@ -1,5 +1,5 @@
 ---
-title: Use model discovery in Microsoft SharePoint Syntex
+title: Publish and discover models in Microsoft SharePoint Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -15,11 +15,11 @@ localization_priority: Priority
 description: Learn how to make trained model available to others and how to apply other trained models in Microsoft SharePoint Syntex.
 ---
 
-# Use model discovery in Microsoft SharePoint Syntex
+# Publish and discover models in Microsoft SharePoint Syntex
 
 You can make your trained document understanding models available for others to view and use directly from the SharePoint document library. 
 
-You can also find and evaluate trained models in other content centers that were created by others in your organization. You can then select the model that is most useful for classifying your files or extracting specific information from them. 
+You can also find and evaluate trained models in other content centers that were created by others in your organization. You can select the model that is most useful for classifying your files or extracting specific information from them. 
 
 > [!NOTE]
 > This feature is not yet available for form processing models.
@@ -34,7 +34,7 @@ To make your trained model available for others to use:
 
    - **Not visible** – The model will not be available for others to use.
    - **On all sites** – The model will be available in the content type gallery for others to use.
-   - **Only on specific sites** – You can choose which site or sites in which the model to be available. If you select this option, click in the text box to choose which sites you want the model applied.
+   - **Only on specific sites** – You can choose which site or sites in which the model will be available. If you select this option, click in the text box to choose which sites you want the model applied.
 
 ## Discover other trained models
 
