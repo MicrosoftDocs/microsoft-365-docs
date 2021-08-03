@@ -28,9 +28,9 @@ You can also find and evaluate trained models in other content centers that were
 
 To make your trained model available for others to use:
 
-1. On the **Models** page, select **Model settings**.
+1. On the **Models** page for your model, select **Model settings**.
 
-2. On the **Model settings** panel, in the **Where this model is visible** section, select where you want the model to be visible for other users to apply:
+2. On the **Model settings** panel, in the **Sites where this model is available** section, select where you want the model to be visible for other users to apply:
 
    - **Not visible** – The model will not be available for others to use.
    - **On all sites** – The model will be available in the content type gallery for others to use.
