@@ -85,7 +85,7 @@ The operating system, antivirus product, and Defender for Endpoint affect whethe
 
 ## Defender for Endpoint together with antivirus solutions
 
-Defender for Endpoint includes endpoint protection capabilities that further extend the antivirus protection that is installed on your device. When endpoints are onboarded to Defender for Endpoint, in most cases, Microsoft Defender Antivirus can run in passive mode alongside a non-Microsoft antivirus/antimalware solution. The following table summarizes what to expect:
+Defender for Endpoint includes endpoint protection capabilities that further extend the antivirus protection that is installed on your device. When endpoints are onboarded to Defender for Endpoint, in most cases, Microsoft Defender Antivirus can run in passive mode alongside a non-Microsoft antivirus/antimalware solution. The following table summarizes what to expect: <br/><br/>
 
 | Windows version   | Antivirus/antimalware solution  | Microsoft Defender Antivirus state <br/>(when endpoints are onboarded to Defender for Endpoint)    |
 |------|------|-------|-------|
@@ -111,6 +111,7 @@ The table in this section summarizes the features and capabilities that are acti
 
 > [!IMPORTANT]
 > The following table is designed to be informational only. **Do not turn off capabilities**, such as real-time protection, cloud-delivered protection, or limited periodic scanning if you are using Microsoft Defender Antivirus in passive mode, or if you are using [Endpoint detection and response](edr-in-block-mode.md) (EDR in block mode), which works behind the scenes to detect and remediate malicious artifacts that were detected post-breach. 
+<br/><br/>
 
 | Protection | Microsoft Defender Antivirus <br/> Active mode | Microsoft Defender Antivirus <br/> Passive mode |  Microsoft Defender Antivirus <br/> Disabled or uninstalled | [EDR in block mode](edr-in-block-mode.md) |
 |:---|:---|:---|:---|:---|
