@@ -27,8 +27,7 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-machinesview-abovefoldlink)
-
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-machinesview-abovefoldlink)
 
 The **Devices list** shows a list of the devices in your network where alerts were generated. By default, the queue displays devices seen in the last 30 days.  
 
@@ -62,7 +61,7 @@ The exposure level reflects the current exposure of the device based on the cumu
 
 If the exposure level says "No data available," there are a few reasons why this may be the case:
 
-- Device stopped reporting for more than 30 days – in that case it is considered inactive, and the exposure isn't computed
+- Device stopped reporting for more than 30 days. In that case it is considered inactive, and the exposure isn't computed
 - Device OS not supported - see [minimum requirements for Microsoft Defender for Endpoint](minimum-requirements.md)
 - Device with stale agent (very unlikely)
 
@@ -74,9 +73,9 @@ Select only the OS platforms you're interested in investigating.
 
 Filter by the following device health states:
 
-- **Active** – Devices that are actively reporting sensor data to the service.
-- **Inactive** – Devices that have completely stopped sending signals for more than 7 days.
-- **Misconfigured** – Devices that have impaired communications with service or are unable to send sensor data. Misconfigured devices can further be classified to:
+- **Active**: Devices that are actively reporting sensor data to the service.
+- **Inactive**: Devices that have completely stopped sending signals for more than 7 days.
+- **Misconfigured**: Devices that have impaired communications with service or are unable to send sensor data. Misconfigured devices can further be classified to:
   - No sensor data
   - Impaired communications
 

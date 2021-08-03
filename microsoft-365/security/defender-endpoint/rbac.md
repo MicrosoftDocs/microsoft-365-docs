@@ -26,34 +26,32 @@ ms.technology: mde
 - Azure Active Directory
 - Office 365
 
-> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-rbac-abovefoldlink)
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-rbac-abovefoldlink)
 
 Using role-based access control (RBAC), you can create roles and groups within your security operations team to grant appropriate access to the  portal. Based on the roles and groups you create, you have fine-grained control over what users with access to the portal can see and do. 
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4bJ2a]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4bJ2a]
 
 Large geo-distributed security operations teams typically adopt a tier-based model to assign and authorize access to security portals. Typical tiers include the following three levels:
 
-Tier | Description
+Tier|Description
 :---|:---
-Tier 1 | **Local security operations team / IT team** <br> This team usually triages and investigates alerts contained within their geolocation and escalates to Tier 2 in cases where an active remediation is required.
-Tier 2 | **Regional security operations team** <br> This team can see all the devices for their region and perform remediation actions.
-Tier 3 | **Global security operations team** <br> This team consists of security experts and are authorized to see and perform all actions from the portal.
+Tier 1|**Local security operations team / IT team** <br> This team usually triages and investigates alerts contained within their geolocation and escalates to Tier 2 in cases where an active remediation is required.
+Tier 2|**Regional security operations team** <br> This team can see all the devices for their region and perform remediation actions.
+Tier 3|**Global security operations team** <br> This team consists of security experts and are authorized to see and perform all actions from the portal.
 
 Defender for Endpoint RBAC is designed to support your tier- or role-based model of choice and gives you granular control over what roles can see, devices they can access, and actions they can take. The RBAC framework is centered around the following controls:
 
 - **Control who can take specific action**
   - Create custom roles and control what Defender for Endpoint capabilities they can access with granularity.
- 
 - **Control who can see information on specific device group or groups**
   - [Create device groups](machine-groups.md) by specific criteria such as names, tags, domains, and others, then grant role access to them using a specific  Azure Active Directory (Azure AD) user group.
 
 To implement role-based access, you'll need to define admin roles, assign corresponding permissions, and assign Azure AD user groups assigned to the roles.
 
-
 ### Before you begin
-Before using RBAC, it's important that you understand the roles that can grant permissions and the consequences of turning on RBAC.
 
+Before using RBAC, it's important that you understand the roles that can grant permissions and the consequences of turning on RBAC.
 
 > [!WARNING]
 > Before enabling the feature, it's important that you have a Global Administrator role or Security Administrator role in Azure AD and that you have your Azure AD groups ready to reduce the risk of being locked out of the portal. 
@@ -72,4 +70,5 @@ Someone with a Defender for Endpoint Global administrator role has unrestricted 
 > After opting in to use RBAC, you cannot revert to the initial roles as when you first logged into the portal.
 
 ## Related topic
+
 - [Create and manage device groups in Microsoft Defender for Endpoint](machine-groups.md)
