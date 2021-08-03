@@ -54,6 +54,7 @@ Response actions run along the top of a specific device page and include:
 >
 > - These response actions are only available for devices on Windows 10, version  1703 or later.
 > - For non-Windows platforms, response capabilities (such as Device isolation) are dependent on the third-party capabilities.
+> - For Microsoft first party agents, please refer to the "more information" link under each feature for minimum OS requirements.
 
 ## Manage tags
 
