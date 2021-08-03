@@ -47,6 +47,25 @@ Retrieves a specific live response command result by its index.
 1. Rate limitations for this API are 100 calls per minute and 1500 calls per
     hour.
 
+## Minimum requirements
+
+Before you can initiate a session on a device, make sure you fulfill the following requirements:
+
+- **Verify that you're running a supported version of Windows**.
+
+  Devices must be running one of the following versions of Windows
+
+  - **Windows 10**
+    - [Version 1909](/windows/whats-new/whats-new-windows-10-version-1909) or later
+    - [Version 1903](/windows/whats-new/whats-new-windows-10-version-1903) with [KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)
+    - [Version 1809 (RS 5)](/windows/whats-new/whats-new-windows-10-version-1809) with [with KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)
+    - [Version 1803 (RS 4)](/windows/whats-new/whats-new-windows-10-version-1803) with [KB4537795](https://support.microsoft.com/help/4537795/windows-10-update-kb4537795)
+    - [Version 1709 (RS 3)](/windows/whats-new/whats-new-windows-10-version-1709) with [KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)
+
+  - **Windows Server 2019 - Only applicable for Public preview**
+    - Version 1903 or (with [KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)) later
+    - Version 1809 (with [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818))
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more,
