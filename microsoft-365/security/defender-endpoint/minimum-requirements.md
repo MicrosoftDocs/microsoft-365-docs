@@ -70,7 +70,7 @@ For detailed licensing information, see the [Product Terms site](https://www.mic
 
 For more information on the array of features in Windows 10 editions, see [Compare Windows 10 editions](https://www.microsoft.com/windowsforbusiness/compare).
 
-For a detailed comparison table of Windows 10 commercial edition comparison, see the [comparison PDF](https://wfbdevicemanagementprod.blob.core.windows.net/windowsforbusiness/Windows10_CommercialEdition_Comparison.pdf).
+
 
 ## Browser requirements
 
