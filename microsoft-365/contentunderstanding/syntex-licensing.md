@@ -29,7 +29,7 @@ The following tasks require a SharePoint Syntex license for the user performing 
 - Uploading content to a library where a form processing model has been applied
 - Viewing the metadata extracted from files using a document understanding or forms processing model
  
-Unlicensed users can create document understanding models but can't apply them to a document library.
+Unlicensed users can be granted access to a content center and can create document understanding models there but can't apply them to a document library.
  
 ## Cost of running models
  
