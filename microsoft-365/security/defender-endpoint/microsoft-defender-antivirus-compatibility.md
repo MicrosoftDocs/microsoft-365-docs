@@ -112,7 +112,7 @@ The table in this section summarizes the features and capabilities that are acti
 > [!IMPORTANT]
 > The following table is designed to be informational only. **Do not turn off capabilities**, such as real-time protection, cloud-delivered protection, or limited periodic scanning if you are using Microsoft Defender Antivirus in passive mode, or if you are using [Endpoint detection and response](edr-in-block-mode.md) (EDR in block mode), which works behind the scenes to detect and remediate malicious artifacts that were detected post-breach. 
 
-| Protection | Microsoft Defender Antivirus <br/> Active mode | Microsoft Defender Antivirus <br/> Passive mode |  Microsoft Defender Antivirus <br/> Disabled or uninstalled | Endpoint detection and response <br/>[EDR in block mode](edr-in-block-mode.md) |
+| Protection | Microsoft Defender Antivirus <br/> Active mode | Microsoft Defender Antivirus <br/> Passive mode |  Microsoft Defender Antivirus <br/> Disabled or uninstalled | [EDR in block mode](edr-in-block-mode.md) |
 |:---|:---|:---|:---|:---|
 | [Real-time protection](configure-real-time-protection-microsoft-defender-antivirus.md) and [cloud-delivered protection](enable-cloud-protection-microsoft-defender-antivirus.md) | Yes | No <sup>[[5](#fn5)]<sup> | No | No |
 | [Limited periodic scanning availability](limited-periodic-scanning-microsoft-defender-antivirus.md) | No | No | Yes | No |
