@@ -85,12 +85,12 @@ Microsoft Defender for Endpoint includes endpoint protection capabilities that f
 
 | Windows version   | Antivirus/antimalware solution  | Microsoft Defender Antivirus state <br/>(with the endpoint onboarded to Defender for Endpoint)    |
 |------|------|-------|-------|
-| Windows 10  | Microsoft Defender Antivirus | Yes  | Active mode | 
-| Windows 10  | A non-Microsoft antivirus/antimalware solution | Yes  | Passive mode (automatically) |
-| Windows Server, version 1803 or newer <p> Windows Server 2019 | Microsoft Defender Antivirus  | Yes |         Active mode  |
-| Windows Server, version 1803 or newer <p> Windows Server 2019 | A non-Microsoft antivirus/antimalware solution | Yes  | Microsoft Defender Antivirus must be set to passive mode (manually) <sup>[[2](#fn2)]<sup>  | 
-| Windows Server 2016 | Microsoft Defender Antivirus | Yes | Active mode |
-| Windows Server 2016 | A non-Microsoft antivirus/antimalware solution | Yes | Microsoft Defender Antivirus must be disabled (manually) <sup>[[3](#fn3)]<sup> |
+| Windows 10  | Microsoft Defender Antivirus | Active mode | 
+| Windows 10  | A non-Microsoft antivirus/antimalware solution | Passive mode (automatically) |
+| Windows Server, version 1803 or newer <p> Windows Server 2019 | Microsoft Defender Antivirus  | Active mode  |
+| Windows Server, version 1803 or newer <p> Windows Server 2019 | A non-Microsoft antivirus/antimalware solution | Microsoft Defender Antivirus must be set to passive mode (manually) <sup>[[2](#fn2)]<sup>  | 
+| Windows Server 2016 | Microsoft Defender Antivirus | Active mode |
+| Windows Server 2016 | A non-Microsoft antivirus/antimalware solution | Microsoft Defender Antivirus must be disabled (manually) <sup>[[3](#fn3)]<sup> |
 
 (<a id="fn2">2</a>)  On Windows Server, version 1803 or newer, or Windows Server 2019, Microsoft Defender Antivirus does not enter passive mode automatically when you install a non-Microsoft antivirus product. In those cases, [set Microsoft Defender Antivirus to passive mode](microsoft-defender-antivirus-on-windows-server.md#need-to-set-microsoft-defender-antivirus-to-passive-mode) to prevent problems caused by having multiple antivirus products installed on a server. You can set Microsoft Defender Antivirus to passive mode using PowerShell, Group Policy, or a registry key.
 
