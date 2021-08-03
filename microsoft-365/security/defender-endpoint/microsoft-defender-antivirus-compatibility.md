@@ -140,21 +140,12 @@ Consider onboarding your endpoints to Defender for Endpoint, even if you are usi
 
 The following table summarizes how it works:
 
-
 | Scenario  | What happens  |
 |---------|---------|
-| Your organization's client devices are protected by a non-Microsoft antivirus/antimwalware solution     | When those devices are onboarded to Defender for Endpoint, Microsoft Defender Antivirus goes into passive mode automatically. In this case, threat detections occur, but real-time protection and threats are not remediated by Microsoft Defender Antivirus.  <br/><br/>**NOTE**: This particular scenario does not apply to endpoints running Windows Server.       |
-| Your organization's client devices are protected by a non-Microsoft antivirus/antimalware solution, and those devices are not onboarded to Microsoft Defender for Endpoint | When the non-Microsoft antivirus/antimalware solution is installed, Microsoft Defender Antivirus goes into disabled mode automatically. In this case, threats are not detected or remediated by Microsoft Defender Antivirus. <br/><br/>**NOTE**: This particular scenario does not apply to endpoints running Windows Server. |
-| Your organization's endpoints are running Windows Server and those endpoints are protected by a non-Microsoft antivirus/antimalware solution, when those endpoints are onboarded to Defender for Endpoint, Microsoft Defender Antivirus does not go into either passive mode or disabled mode automatically. In this particular scenario, you must configure your Windows Server endpoints appropriately. 
-
-   - On Windows Server, version 1803 or newer, and Windows Server 2019, you can set Microsoft Defender Antivirus to run in passive mode. 
-
-   - On Windows Server 2016, Microsoft Defender Antivirus must be disabled (passive mode is not supported on Windows Server 2016).
-
-- If your organization's endpoints are protected by a non-Microsoft antivirus/antimalware solution, when those devices are onboarded to Defender for Endpoint with [EDR in block mode](/microsoft-365/security/defender-endpoint/edr-in-block-mode) enabled, then Defender for Endpoint blocks and remediates malicious artifacts.
-   
-   > [!NOTE]
-   > This particular scenario does not apply to Windows Server 2016. EDR in block mode requires Microsoft Defender Antivirus to be enabled in either active mode or passive mode.
+| Your organization's client devices are protected by a non-Microsoft antivirus/antimwalware solution, and your organization is using Defender for Endpoint.     | When those devices are onboarded to Defender for Endpoint, Microsoft Defender Antivirus goes into passive mode automatically. In this case, threat detections occur, but real-time protection and threats are not remediated by Microsoft Defender Antivirus.  <br/><br/>**NOTE**: This particular scenario does not apply to endpoints running Windows Server.       |
+| Your organization's client devices are protected by a non-Microsoft antivirus/antimalware solution, and your organization is not using Defender for Endpoint. | When the non-Microsoft antivirus/antimalware solution is installed, on the endpoints, Microsoft Defender Antivirus goes into disabled mode automatically. In this case, threats are not detected or remediated by Microsoft Defender Antivirus. <br/><br/>**NOTE**: This particular scenario does not apply to endpoints running Windows Server. |
+| Your organization's endpoints are running Windows Server, and those endpoints are protected by a non-Microsoft antivirus/antimalware solution. Your organization is using Microsoft Defender for Endpoint. | When Windows Server endpoints are onboarded to Defender for Endpoint, you must set Microsoft Defender Antivirus to either passive mode or disabled mode. <br/><br/>On Windows Server, version 1803 or newer, and Windows Server 2019, set Microsoft Defender Antivirus to run in passive mode. <br/> <br/>On Windows Server 2016, disable (or uninstall) Microsoft Defender Antivirus. (Passive mode for Microsoft Defender Antivirus is not supported on Windows Server 2016). <br/><br/>For more information, see [Microsoft Defender Antivirus on Windows Server](microsoft-defender-antivirus-on-windows-server.md). |
+| Your organization's endpoints are protected by a non-Microsoft antivirus/antimalware solution, and your organization is using Defender for Endpoint, with [EDR in block mode](/microsoft-365/security/defender-endpoint/edr-in-block-mode) enabled. | When the endpoints are onboarded to Defender for Endpoint, and Microsoft Defender Antivirus is set to passive mode, EDR in block mode detects and remediates any malicious artifacts that were detected. Such artifacts might have been missed by your primary antivirus solution. <br/><br/>**NOTE**: This particular scenario does not apply to Windows Server 2016. EDR in block mode requires Microsoft Defender Antivirus to be enabled in either active mode or passive mode. |
 
 
 ## See also
