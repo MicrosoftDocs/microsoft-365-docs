@@ -24,7 +24,9 @@ ms.date: 08/03/2021
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
+- Microsoft Defender Antivirus
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+
 
 ## Summary
 
@@ -37,7 +39,7 @@ This article includes the following sections:
 The operating system, antivirus product, and Defender for Endpoint affect whether Microsoft Defender Antivirus is in active mode, passive mode, or disabled. The following table summarizes what happens when Microsoft Defender Antivirus is used alongside a non-Microsoft antivirus/antimalware solution.
 
 > [!NOTE]
-> This section pertains only to antivirus/antimalware solutions installed on endpoints 
+> This section pertains only to antivirus/antimalware solutions installed on endpoints. If your organization is using Microsoft Defender for Endpoint, make sure to review the section, __. 
 
 | Windows version   | Primary antivirus/antimalware solution  | Microsoft Defender Antivirus state    |
 |------|------|-------|-------|
@@ -54,13 +56,13 @@ See [Microsoft Defender Antivirus on Windows Server](microsoft-defender-antiviru
 
 > [!IMPORTANT]
 > Microsoft Defender Antivirus is only available on devices running Windows 10, Windows Server 2016, Windows Server, version 1803 or later, and Windows Server 2019.
->
+
 > In Windows 8.1 and Windows Server 2012, enterprise-level endpoint antivirus protection is offered as [System Center Endpoint Protection](/previous-versions/system-center/system-center-2012-R2/hh508760(v=technet.10)), which is managed through Microsoft Endpoint Configuration Manager.
 >
 > Windows Defender is also offered for [consumer devices on Windows 8.1 and Windows Server 2012](/previous-versions/windows/it-pro/windows-8.1-and-8/dn344918(v=ws.11)#BKMK_WindowsDefender), although it does not provide enterprise-level management (or an interface on Windows Server 2012 Server Core installations).
 
 
-## Important points to keep in mind
+## Important points about Microsoft Defender Antivirus
 
 - In active mode, Microsoft Defender Antivirus is used as the antivirus app on the machine. Settings configured by using Configuration Manager, Group Policy, Microsoft Intune, or other management products will apply. Files are scanned, threats are remediated, and detection information is reported in your configuration tool (such as Configuration Manager or the Microsoft Defender Antivirus app on the endpoint itself).
 
