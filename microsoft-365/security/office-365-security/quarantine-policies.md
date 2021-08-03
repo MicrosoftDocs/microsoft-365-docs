@@ -3,16 +3,16 @@ title: Quarantine policies
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.reviewer: 
-ms.date: 
+ms.reviewer:
+ms.date:
 audience: ITPro
 ms.topic: how-to
 
 localization_priority: Normal
-search.appverid: 
+search.appverid:
   - MET150
-ms.assetid: 
-ms.collection: 
+ms.assetid:
+ms.collection:
   - M365-security-compliance
 ROBOTS: NOINDEX
 description: Admins can learn how to use quarantine policies to control what users are able to do to their quarantined messages.
@@ -66,7 +66,7 @@ You create and assign quarantine policies in the Microsoft 365 Defender portal o
 
 ## Step 1: Create quarantine policies in the Microsoft 365 Defender portal
 
-1. In the Microsoft 365 Defender portal, go to **Email & collaboration** \>**Threat policies** \> **Rules** section \> **Quarantine policies** and then select **Quarantine policies**.
+1. In the Microsoft 365 Defender portal, go to **Email & collaboration** \> **Threat policies** \> **Rules** section \> **Quarantine policies** and then select **Quarantine policies**.
 
 2. On the **Quarantine policy** page, click ![Add custom policy icon](../../media/m365-cc-sc-create-icon.png) **Add custom policy**.
 
@@ -74,26 +74,25 @@ You create and assign quarantine policies in the Microsoft 365 Defender portal o
 
 4. On the **Recipient message access** page, select one of the following values:
    - **Limited access**
-   
 
    The individual permissions that are included in these permission groups are described earlier in this article.
 
    To specify custom permissions, select **Set specific access (Advanced)** and the configure the following settings that appear:
 
-     - **Select release action preference**: Select one of the following values:
-       - **No release action**: This is the default value.
-       - **Allow recipients to release a message from quarantine**
-       - **Allow recipients to request a message to be released from quarantine**
-     - **Select additional actions recipients can take on quarantined messages**: Select some, all, or none of the following values:
-       - **Delete**
-       - **Preview**
-       - **Block sender**
+   - **Select release action preference**: Select one of the following values:
+     - **No release action**: This is the default value.
+     - **Allow recipients to release a message from quarantine**
+     - **Allow recipients to request a message to be released from quarantine**
+   - **Select additional actions recipients can take on quarantined messages**: Select some, all, or none of the following values:
+     - **Delete**
+     - **Preview**
+     - **Block sender**
 
    These permissions and their effect on quarantined messages and in end-user spam notifications are described in the [Quarantine policy permission details](#quarantine-policy-permission-details) section later in this article.
 
    When you're finished, click **Next**.
-   
-5. On the **End user spam notification** page, enable the notification if needed. 
+
+5. On the **End user spam notification** page, enable the notification if needed.
 
 6. On the **Review policy** page that appears, review your settings. You can select **Edit** in each section to modify the settings within the section. Or you can click **Back** or select the specific page in the wizard.
 
@@ -150,7 +149,6 @@ This example creates a new quarantine policy name LimitedAccess that assigns the
 ```powershell
 New-QuarantineTag -Name LimitedAccess -EndUserQuarantinePermissionsValue 106
 ```
-
 
 For custom permissions, use the previous table to get the binary value that corresponds to the permissions you want. Convert the binary value to a decimal value and use the decimal value for the _EndUserQuarantinePermissionsValue_ parameter.
 
@@ -296,7 +294,7 @@ For detailed syntax and parameter information, see [Set-HostedContentFilterPolic
 
 The global settings for quarantine policies allow you to customize the end-user spam notifications that are sent to recipients of messages that were quarantined. For more information about these notifications, see [End-user spam notifications](use-spam-notifications-to-release-and-report-quarantined-messages.md).
 
-1. In the Microsoft 365 Defender portal, go to **Email & collaboration** \>**Threat policies** \> **Rules** section \> **Quarantine policies** and then select **Quarantine policies**.
+1. In the Microsoft 365 Defender portal, go to **Email & collaboration** \> **Threat policies** \> **Rules** section \> **Quarantine policies** and then select **Quarantine policies**.
 
 2. On the **Quarantine policy** page, select **Global settings**.
 
@@ -329,12 +327,12 @@ The global settings for quarantine policies allow you to customize the end-user 
      The following screenshot shows a custom logo in an end-user spam notification:
 
      ![A custom logo in an end-user spam notification](../../media/quarantine-tags-esn-customization-logo.png)
-  
-  - **Send end-user spam notification every (days)**: Select the frequency at which you would like the end user notification to go out in. 
+
+   - **Send end-user spam notification every (days)**: Select the frequency at which you would like the end user notification to go out in.
 
 ## View quarantine policies in the Microsoft 365 Defender portal
 
-1. In the Microsoft 365 Defender portal, go to **Email & collaboration** \>**Threat policies** \> **Rules** section \> **Quarantine policies** and then select **Quarantine policies**.
+1. In the Microsoft 365 Defender portal, go to **Email & collaboration** \> **Threat policies** \> **Rules** section \> **Quarantine policies** and then select **Quarantine policies**.
 
 2. The **Quarantine policy** page shows the list of policies by **Name** and **Last updated** date.
 
@@ -358,7 +356,7 @@ If you'd rather use PowerShell to view quarantine policies, do any of the follow
   Get-QuarantineTag -Identity "<QuarantinePolicyName>"
   ```
 
-- To view the global settings, run the following command:
+- To view the global settings for end-user spam notifications, run the following command:
 
   ```powershell
   Get-QuarantineTag -QuarantineTagType GlobalQuarantineTag
@@ -368,7 +366,7 @@ For detailed syntax and parameter information, see [Get-HostedContentFilterPolic
 
 ## Modify quarantine policies in the Microsoft 365 Defender portal
 
-1. In the Microsoft 365 Defender portal, go to **Email & collaboration** \>**Threat policies** \> **Rules** section \> **Quarantine policies** and then select **Quarantine policies**.
+1. In the Microsoft 365 Defender portal, go to **Email & collaboration** \> **Threat policies** \> **Rules** section \> **Quarantine policies** and then select **Quarantine policies**.
 
 2. On the **Quarantine policies** page, select the policy by clicking on the name.
 
@@ -405,7 +403,7 @@ For detailed syntax and parameter information, see [Set-QuarantineTag](/powershe
 
   If the quarantine policy is being used, [replace the assigned quarantine policy](#step-2-assign-a-quarantine-policy-to-supported-features) before you remove it.
 
-1. In the Microsoft 365 Defender portal, go to **Email & collaboration** \>**Threat policies** \> **Rules** section \> **Quarantine policies** and then select **Quarantine policies**.
+1. In the Microsoft 365 Defender portal, go to **Email & collaboration** \> **Threat policies** \> **Rules** section \> **Quarantine policies** and then select **Quarantine policies**.
 
 2. On the **Quarantine policy** page, select the custom quarantine policy that you want to remove by clicking on the name.
 
@@ -436,10 +434,7 @@ The individual permissions that are included in preset permission groups are lis
 If the quarantine policy assigns the **Admin Only access** permissions (no permissions), users will not able to see those messages that are quarantined:
 
 - **Quarantined message details**: No message will show in the end user view.
-
-
 - **End-user spam notifications**: No notification will be sent for those message
-
 
 #### Limited access
 
