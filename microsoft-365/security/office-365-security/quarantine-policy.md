@@ -330,7 +330,7 @@ The global settings for quarantine policies allow you to customize the end-user 
 
      ![A custom logo in an end-user spam notification](../../media/quarantine-tags-esn-customization-logo.png)
   
-  - **Send end-user spam notification every (days) **: Select the frequency at which you would like the end user notification to go out in. 
+  - **Send end-user spam notification every (days)**: Select the frequency at which you would like the end user notification to go out in. 
 
 ## View quarantine policies in the Microsoft 365 Defender portal
 
