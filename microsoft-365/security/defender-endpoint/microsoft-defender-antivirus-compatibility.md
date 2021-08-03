@@ -38,8 +38,11 @@ This article includes the following sections:
 |Section  | Description  |
 |---------|---------|
 | [Microsoft Defender Antivirus and non-Microsoft antivirus/antimalware solutions](#microsoft-defender-antivirus-and-non-microsoft-antivirusantimalware-solutions)      | Describes what happens with Microsoft Defender Antivirus if a non-Microsoft antivirus solution is installed on the device. <br/><br/>**NOTE** This section focuses only on antivirus solutions and does not cover what happens when endpoints are onboarded to Microsoft Defender for Endpoint.        |
-|Row2     |         |
-
+| [Important points about Microsoft Defender Antivirus](#important-points-about-microsoft-defender-antivirus) |  | 
+| [Microsoft Defender for Endpoint together with antivirus solutions](#microsoft-defender-for-endpoint-together-with-antivirus-solutions)     |  Describes what happens with Microsoft Defender Antivirus when a non-Microsoft antivirus solution is installed on devices that are onboarded to Defender for Endpoint.  |
+| [How Microsoft Defender Antivirus affects Defender for Endpoint functionality](#how-microsoft-defender-antivirus-affects-defender-for-endpoint-functionality)  |   |
+| [Important notes about Microsoft Defender for Endpoint and Microsoft Defender Antivirus](#important-notes-about-microsoft-defender-for-endpoint-and-microsoft-defender-antivirus)   |   |
+| [Why Defender for Endpoint matters](#why-defender-for-endpoint-matters)   |   |
 
 ## Microsoft Defender Antivirus and non-Microsoft antivirus/antimalware solutions
 
@@ -64,6 +67,24 @@ The operating system, antivirus product, and Defender for Endpoint affect whethe
 > [!TIP]
 > See [Microsoft Defender Antivirus on Windows Server](microsoft-defender-antivirus-on-windows-server.md) for key differences and management options for Windows Server installations.
 
+## Important points about Microsoft Defender Antivirus
+
+- Microsoft Defender Antivirus is only available on devices running Windows 10, Windows Server 2016, Windows Server, version 1803 or later, and Windows Server 2019.
+
+   - In Windows 8.1 and Windows Server 2012, enterprise-level endpoint antivirus protection is offered as [System Center Endpoint Protection](/previous-versions/system-center/system-center-2012-R2/hh508760(v=technet.10)), which is managed through Microsoft Endpoint Configuration Manager.
+
+   - Windows Defender is also offered for [consumer devices on Windows 8.1 and Windows Server 2012](/previous-versions/windows/it-pro/windows-8.1-and-8/dn344918(v=ws.11)#BKMK_WindowsDefender), although it does not provide enterprise-level management (or an interface on Windows Server 2012 Server Core installations).
+
+- In active mode, Microsoft Defender Antivirus is used as the antivirus app on the machine. Settings configured by using Configuration Manager, Group Policy, Microsoft Intune, or other management products will apply. Files are scanned, threats are remediated, and detection information is reported in your configuration tool (such as Configuration Manager or the Microsoft Defender Antivirus app on the endpoint itself).
+
+- In passive mode, Microsoft Defender Antivirus is not used as the antivirus app, and threats are *not* remediated by Microsoft Defender Antivirus. Files are scanned and reports are provided for threat detections that are shared with the Microsoft Defender for Endpoint service. You might see alerts in the [security center](microsoft-defender-security-center.md) showing Microsoft Defender Antivirus as a source, even when Microsoft Defender Antivirus is in passive mode.
+
+- When disabled, Microsoft Defender Antivirus is not used as the antivirus app. Files are not scanned and threats are not remediated. Disabling or uninstalling Microsoft Defender Antivirus is not recommended in general; if possible, keep Microsoft Defender Antivirus in passive mode if you are using a non-Microsoft antimalware/antivirus solution.
+
+- When Microsoft Defender Antivirus is in passive mode, you can still [manage updates for Microsoft Defender Antivirus](manage-updates-baselines-microsoft-defender-antivirus.md); however, you can't move Microsoft Defender Antivirus into active mode if your devices have a non-Microsoft antivirus product that is providing real-time protection from malware. For optimal security layered defense and detection efficacy, make sure to get your antivirus and antimwalware updates, even if Microsoft Defender Antivirus is running in passive mode. See [Manage Microsoft Defender Antivirus updates and apply baselines](manage-updates-baselines-microsoft-defender-antivirus.md).
+
+- When Microsoft Defender Antivirus is disabled automatically, it can be re-enabled automatically if the non-Microsoft antivirus/antimalware product expires or otherwise stops providing real-time protection from viruses, malware, or other threats. The automatic re-enabling of Microsoft Defender Antivirus helps to ensure that antivirus protection is maintained on your endpoints. You can also enable [limited periodic scanning](limited-periodic-scanning-microsoft-defender-antivirus.md), which uses the Microsoft Defender Antivirus engine to periodically check for threats if you are using a non-Microsoft antivirus app.
+
 ## Microsoft Defender for Endpoint together with antivirus solutions
 
 Microsoft Defender for Endpoint includes endpoint protection capabilities that further extend the antivirus protection that is installed on your device. When endpoints are onboarded to Microsoft Defender for Endpoint, in most cases, Microsoft Defender Antivirus can run in passive mode alongside a non-Microsoft antivirus/antimalware solution. The following table summarizes what to expect:
@@ -83,24 +104,6 @@ Microsoft Defender for Endpoint includes endpoint protection capabilities that f
 
 > [!TIP]
 > See [Microsoft Defender Antivirus on Windows Server](microsoft-defender-antivirus-on-windows-server.md) for key differences and management options for Windows Server installations.
-
-## Important points about Microsoft Defender Antivirus
-
-- Microsoft Defender Antivirus is only available on devices running Windows 10, Windows Server 2016, Windows Server, version 1803 or later, and Windows Server 2019.
-
-   - In Windows 8.1 and Windows Server 2012, enterprise-level endpoint antivirus protection is offered as [System Center Endpoint Protection](/previous-versions/system-center/system-center-2012-R2/hh508760(v=technet.10)), which is managed through Microsoft Endpoint Configuration Manager.
-
-   - Windows Defender is also offered for [consumer devices on Windows 8.1 and Windows Server 2012](/previous-versions/windows/it-pro/windows-8.1-and-8/dn344918(v=ws.11)#BKMK_WindowsDefender), although it does not provide enterprise-level management (or an interface on Windows Server 2012 Server Core installations).
-
-- In active mode, Microsoft Defender Antivirus is used as the antivirus app on the machine. Settings configured by using Configuration Manager, Group Policy, Microsoft Intune, or other management products will apply. Files are scanned, threats are remediated, and detection information is reported in your configuration tool (such as Configuration Manager or the Microsoft Defender Antivirus app on the endpoint itself).
-
-- In passive mode, Microsoft Defender Antivirus is not used as the antivirus app, and threats are *not* remediated by Microsoft Defender Antivirus. Files are scanned and reports are provided for threat detections that are shared with the Microsoft Defender for Endpoint service. You might see alerts in the [security center](microsoft-defender-security-center.md) showing Microsoft Defender Antivirus as a source, even when Microsoft Defender Antivirus is in passive mode.
-
-- When disabled, Microsoft Defender Antivirus is not used as the antivirus app. Files are not scanned and threats are not remediated. Disabling or uninstalling Microsoft Defender Antivirus is not recommended in general; if possible, keep Microsoft Defender Antivirus in passive mode if you are using a non-Microsoft antimalware/antivirus solution.
-
-- When Microsoft Defender Antivirus is in passive mode, you can still [manage updates for Microsoft Defender Antivirus](manage-updates-baselines-microsoft-defender-antivirus.md); however, you can't move Microsoft Defender Antivirus into active mode if your devices have a non-Microsoft antivirus product that is providing real-time protection from malware. For optimal security layered defense and detection efficacy, make sure to get your antivirus and antimwalware updates, even if Microsoft Defender Antivirus is running in passive mode. See [Manage Microsoft Defender Antivirus updates and apply baselines](manage-updates-baselines-microsoft-defender-antivirus.md).
-
-- When Microsoft Defender Antivirus is disabled automatically, it can be re-enabled automatically if the non-Microsoft antivirus/antimalware product expires or otherwise stops providing real-time protection from viruses, malware, or other threats. The automatic re-enabling of Microsoft Defender Antivirus helps to ensure that antivirus protection is maintained on your endpoints. You can also enable [limited periodic scanning](limited-periodic-scanning-microsoft-defender-antivirus.md), which uses the Microsoft Defender Antivirus engine to periodically check for threats if you are using a non-Microsoft antivirus app.
 
 ## How Microsoft Defender Antivirus affects Defender for Endpoint functionality
 
@@ -126,7 +129,7 @@ The table in this section summarizes the features and capabilities that are acti
 > [!NOTE]
 > [Microsoft 365 Endpoint data loss prevention](/microsoft-365/compliance/endpoint-dlp-learn-about) protection continues to operate normally when Microsoft Defender Antivirus is in active or passive mode.
 
-### Important notes about Microsoft Defender for Endpoint and Microsoft Defender Antivirus
+## Important notes about Microsoft Defender for Endpoint and Microsoft Defender Antivirus
 
 - Do not disable, stop, or modify any of the associated services that are used by Microsoft Defender Antivirus, Microsoft Defender for Endpoint, or the Windows Security app. This recommendation includes the *wscsvc*, *SecurityHealthService*, *MsSense*, *Sense*, *WinDefend*, or *MsMpEng* services and processes. Manually modifying these services can cause severe instability on your devices and can make your network vulnerable. Disabling, stopping, or modifying those services can also cause problems when using non-Microsoft antivirus solutions and how their information is displayed in the [Windows Security app](microsoft-defender-security-center-antivirus.md).
 
@@ -134,9 +137,9 @@ The table in this section summarizes the features and capabilities that are acti
 
 - If you are enrolled in Microsoft Defender for Endpoint and you are using a non-Microsoft antivirus/antimalware product, then Microsoft Defender Antivirus is enabled in passive mode. Defender for Endpoint requires common information sharing from Microsoft Defender Antivirus in order to properly monitor your devices and network for intrusion attempts and attacks. To learn more, see [Microsoft Defender Antivirus compatibility with Microsoft Defender for Endpoint](defender-compatibility.md). 
 
-## Why Defender for Endpoint matters
+## How Defender for Endpoint extends antivirus/antimalware protection
 
-Consider onboarding your endpoints to Defender for Endpoint, even if you are using a non-Microsoft antivirus/antimalware solution. In most cases, when you onboard your devices to Defender for Endpoint, you can use Microsoft Defender Antivirus alongside your non-Microsoft antivirus solution for added protection. For example, you can use [EDR in block mode](edr-in-block-mode.md), which blocks and remediates malicious artifacts that your primary antivirus solution might have missed. 
+Consider onboarding your endpoints to Defender for Endpoint, even if you are using a non-Microsoft antivirus/antimalware solution. In most cases, when you onboard your devices to Defender for Endpoint, you can use Microsoft Defender Antivirus alongside your non-Microsoft antivirus solution for added protection. You also get additional antivirus/antimalware protection with Defender for Endpoint capabilities. For example, you can use [EDR in block mode](edr-in-block-mode.md), which blocks and remediates malicious artifacts that your primary antivirus solution might have missed. 
 
 The following table summarizes how it works:
 
