@@ -281,7 +281,7 @@ This table provides month-over-month summary data about the license assignment f
 |**Column name**|**Column description**|
 |:-----|:-----|
 |LicenseName  <br/> |Name of the license.  <br/> |
-|AssignedCount  <br/> |Number of assigned license.  <br/> |
+|AssignedCount  <br/> |Number of assigned licenses.  <br/> |
 |Timeframe  <br/> |Month value.  <br/> |
 
 ### Data table - Tenant Office Activation
