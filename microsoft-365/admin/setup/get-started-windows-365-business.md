@@ -30,7 +30,10 @@ This article is for people who plan to buy and set up Windows 365 Business for t
   
 [Windows 365 Business](https://www.microsoft.com/windows-365/business) is a version of Windows 365 that is made specifically for use in smaller companies (up to 300 seats). It gives organizations an easy, streamlined way of providing Cloud PCs to their users.  With Windows 365 Cloud PCs, you can stream your apps, data, content, settings, and storage from the Microsoft cloud. 
 
+> [!NOTE]  
+> Before starting, make sure that your [Azure AD device settings](/azure/active-directory/devices/device-management-azure-portal#configure-device-settings) for **Users may join devices to Azure AD** are set to **All**. 
 
+   ![Users may join devices to Azure AD settings](../../media/deschutes/azure-device-settings.png)
 
 ## Prerequisites
 There are no prerequisites to set up Windows 365 Business.
@@ -54,7 +57,7 @@ If you don't already have a Microsoft 365 subscription, you can buy your Windows
 2. On the next page, select the subscription you want to purchase, and then select **Buy now**.
 3. On the **Thank you for choosing Windows 365 Business** page, follow the steps to set up your account.
 4. In **step 5 - Confirmation details**, if you are ready to assign licenses to users, select **Get started** to go to your Windows 365 home page at https://windows365.microsoft.com.
-5. On the Windows 365 home page, in the **Quick actions** section, select **Manage your organization**. This takes you to the Microsoft 365 admin center where you can [assign licenses to users](/microsoft-365/business-video/set-up-cloud-pc-for-business#Assign-licenses-to-users).
+5. On the Windows 365 home page, in the **Quick actions** section, select **Manage your organization**. This takes you to the Microsoft 365 admin center where you can assign licenses to users.
 
 
 
@@ -104,7 +107,6 @@ While on the Windows 365 home page, users can perform actions on their Cloud PCs
 
 - **Restart**: Restarts the Cloud PC.
 
-- **Rename**: Changes the name of the Cloud PC shown to the user on Microsoft 365.com. 
 
 - **Reset**:  Reset does the following:
 
@@ -115,6 +117,8 @@ While on the Windows 365 home page, users can perform actions on their Cloud PCs
 
     > [!IMPORTANT]  
     > Before resetting your Cloud PC, make sure to back up any important files you need to keep to a cloud storage service or external storage. Resetting your Cloud PC will delete these files.
+
+- **Rename**: Changes the name of the Cloud PC shown to the user on the Windows 365 home page. 
 
 - **Troubleshoot**: Troubleshoot and attempt to fix any issues that may be keeping a user from connecting to their Cloud PC. The following table describes the statuses that can result from the checks.
 
