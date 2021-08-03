@@ -128,6 +128,8 @@ The table in this section summarizes the features and capabilities that are acti
 
 ### Important notes about Microsoft Defender for Endpoint and Microsoft Defender Antivirus
 
+- Do not disable, stop, or modify any of the associated services that are used by Microsoft Defender Antivirus, Microsoft Defender for Endpoint, or the Windows Security app. This recommendation includes the *wscsvc*, *SecurityHealthService*, *MsSense*, *Sense*, *WinDefend*, or *MsMpEng* services and processes. Manually modifying these services can cause severe instability on your devices and can make your network vulnerable. Disabling, stopping, or modifying those services can also cause problems when using non-Microsoft antivirus solutions and how their information is displayed in the [Windows Security app](microsoft-defender-security-center-antivirus.md).
+
 - When [EDR in block mode](edr-in-block-mode.md) is turned on and Microsoft Defender Antivirus is not the primary antivirus solution, EDR in block mode detects and remediate malicious items that are found on the device (post breach). EDR in block mode requires Microsoft Defender Antivirus to be enabled in either active mode or passive mode.
 
 - If you are enrolled in Microsoft Defender for Endpoint and you are using a non-Microsoft antivirus/antimalware product, then Microsoft Defender Antivirus is enabled in passive mode. Defender for Endpoint requires common information sharing from Microsoft Defender Antivirus in order to properly monitor your devices and network for intrusion attempts and attacks. To learn more, see [Microsoft Defender Antivirus compatibility with Microsoft Defender for Endpoint](defender-compatibility.md). 
@@ -136,19 +138,14 @@ The table in this section summarizes the features and capabilities that are acti
 
 Consider onboarding your endpoints to Defender for Endpoint, even if you are using a non-Microsoft antivirus/antimalware solution. In most cases, when you onboard your devices to Defender for Endpoint, you can use Microsoft Defender Antivirus alongside your non-Microsoft antivirus solution for added protection. For example, you can use [EDR in block mode](edr-in-block-mode.md), which blocks and remediates malicious artifacts that your primary antivirus solution might have missed. 
 
-Here's how it works:
+The following table summarizes how it works:
 
-- If your organization's client devices are protected by a non-Microsoft antivirus/antimwalware solution, when those devices are onboarded to Defender for Endpoint, Microsoft Defender Antivirus goes into passive mode automatically. In this case, threat detections occur, but real-time protection and threats are not remediated by Microsoft Defender Antivirus.
-   
-   > [!NOTE]
-   > This particular scenario does not apply to endpoints running Windows Server.
 
-- If your organization's client devices are protected by a non-Microsoft antivirus/antimalware solution, and those devices are not onboarded to Microsoft Defender for Endpoint, then Microsoft Defender Antivirus goes into disabled mode automatically. In this case, threats are not detected or remediated by Microsoft Defender Antivirus.
-   
-   > [!NOTE]
-   > This particular scenario does not apply to endpoints running Windows Server.
-
-- If your organization's endpoints are running Windows Server and those endpoints are protected by a non-Microsoft antivirus/antimalware solution, when those endpoints are onboarded to Defender for Endpoint, Microsoft Defender Antivirus does not go into either passive mode or disabled mode automatically. In this particular scenario, you must configure your Windows Server endpoints appropriately. 
+| Scenario  | What happens  |
+|---------|---------|
+| Your organization's client devices are protected by a non-Microsoft antivirus/antimwalware solution     | When those devices are onboarded to Defender for Endpoint, Microsoft Defender Antivirus goes into passive mode automatically. In this case, threat detections occur, but real-time protection and threats are not remediated by Microsoft Defender Antivirus.  <br/><br/>**NOTE**: This particular scenario does not apply to endpoints running Windows Server.       |
+| Your organization's client devices are protected by a non-Microsoft antivirus/antimalware solution, and those devices are not onboarded to Microsoft Defender for Endpoint | When the non-Microsoft antivirus/antimalware solution is installed, Microsoft Defender Antivirus goes into disabled mode automatically. In this case, threats are not detected or remediated by Microsoft Defender Antivirus. <br/><br/>**NOTE**: This particular scenario does not apply to endpoints running Windows Server. |
+| Your organization's endpoints are running Windows Server and those endpoints are protected by a non-Microsoft antivirus/antimalware solution, when those endpoints are onboarded to Defender for Endpoint, Microsoft Defender Antivirus does not go into either passive mode or disabled mode automatically. In this particular scenario, you must configure your Windows Server endpoints appropriately. 
 
    - On Windows Server, version 1803 or newer, and Windows Server 2019, you can set Microsoft Defender Antivirus to run in passive mode. 
 
@@ -158,10 +155,6 @@ Here's how it works:
    
    > [!NOTE]
    > This particular scenario does not apply to Windows Server 2016. EDR in block mode requires Microsoft Defender Antivirus to be enabled in either active mode or passive mode.
-
-
-> [!WARNING]
-> Do not disable, stop, or modify any of the associated services that are used by Microsoft Defender Antivirus, Microsoft Defender for Endpoint, or the Windows Security app. This recommendation includes the *wscsvc*, *SecurityHealthService*, *MsSense*, *Sense*, *WinDefend*, or *MsMpEng* services and processes. Manually modifying these services can cause severe instability on your devices and can make your network vulnerable. Disabling, stopping, or modifying those services can also cause problems when using non-Microsoft antivirus solutions and how their information is displayed in the [Windows Security app](microsoft-defender-security-center-antivirus.md).
 
 
 ## See also
