@@ -130,15 +130,15 @@ The required order and values for each individual permission in preset permissio
 
 |Permission|Limited access|
 |---|:---:|
-|PermissionToBlockSender|0|1|1|
-|PermissionToDelete|0|1|1|
-|PermissionToDownload<sup>\*</sup>|0|0|0|
-|PermissionToPreview|0|1|1|
-|PermissionToRelease<sup>\*\*</sup>|0|0|1|
-|PermissionToRequestRelease<sup>\*\*</sup>|0|1|0|
-|PermissionToViewHeader<sup>\*</sup>|0|0|0|
-|Binary value|00000000|01101010|11101100|
-|Decimal value to use|0|106|236|
+|PermissionToBlockSender|1|
+|PermissionToDelete|1|
+|PermissionToDownload<sup>\*</sup>|0|
+|PermissionToPreview|1|
+|PermissionToRelease<sup>\*\*</sup>|0|
+|PermissionToRequestRelease<sup>\*\*</sup>|1|
+|PermissionToViewHeader<sup>\*</sup>|0|
+|Binary value|01101010|
+|Decimal value to use|106|
 |
 
 <sup>\*</sup> Currently, this value is always 0. For PermissionToViewHeader, the value 0 doesn't hide the **View message header** button in the details of the quarantined message (the button is always available).
@@ -176,15 +176,11 @@ $<VariableName> = New-QuarantinePermissions [-PermissionToBlockSender <$true | $
 
 The default value for any unused parameters is `$false`, so you only need to use the parameters where you want to set value to `$true`.
 
-The following example show how to create permission objects that correspond to the preset permissions groups:
+The following example shows how to create permission objects that correspond to the **Limited access** preset permissions group:
 
-
-- **Limited access**:
-
-  ```powershell
-  $LimitedAccess = New-QuarantinePermissions -PermissionToBlockSender $true -PermissionToDelete $true -PermissionToPreview $true -PermissionToRequestRelease $true
-  ```
-
+```powershell
+$LimitedAccess = New-QuarantinePermissions -PermissionToBlockSender $true -PermissionToDelete $true -PermissionToPreview $true -PermissionToRequestRelease $true
+```
 
 To see the values that you've set, run the variable name as a command (for example, run the command `$LimitedAccess`).
 
@@ -220,10 +216,10 @@ In _supported_ protection features that quarantine messages or files (automatica
 
 |Feature|Quarantine policies supported?|Default quarantine policies used|
 |---|:---:|---|
-|[Anti-spam policies](configure-your-spam-filter-policies.md): <ul><li>**Spam** (_SpamAction_)</li><li>**High confidence spam** (_HighConfidenceSpamAction_)</li><li>**Phishing** (_PhishSpamAction_)</li><li>**High confidence phishing** (_HighConfidencePhishAction_)</li><li>**Bulk** (_BulkSpamAction_)</li></ul>|Yes|<ul><li>DefaultFullAccessPolicy (Full access)</li><li>DefaultFullAccessPolicy (Full access)</li><li>DefaultFullAccessPolicy (Full access)</li><li>AdminOnlyAccessPolicy (No access)</li><li>DefaultFullAccessPolicy (Full access)</li></ul>
-|Anti-phishing policies: <ul><li>[Spoof intelligence protection](set-up-anti-phishing-policies.md#spoof-settings) (_AuthenticationFailAction_)</li><li>[Impersonation protection](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365):<sup>\*</sup> <ul><li>**If message is detected as an impersonated user** (_TargetedUserProtectionAction_)</li><li>**If message is detected as an impersonated domain** (_TargetedDomainProtectionAction_)</li><li>**If mailbox intelligence detects and impersonated user** (_MailboxIntelligenceProtectionAction_)</li></ul></li></ul></ul>|Yes|<ul><li>DefaultFullAccessPolicy (Full access)</li><li>DefaultFullAccessPolicy (Full access)</li></ul>
-|[Anti-malware policies](configure-anti-malware-policies.md): All detected messages are always quarantined.|Yes|<ul><li>AdminOnlyAccessPolicy (Admin only access)</li></ul>
-|[Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](mdo-for-spo-odb-and-teams.md)|Yes|<ul><li>AdminOnlyAccessPolicy (Admin only access)</li></ul>
+|[Anti-spam policies](configure-your-spam-filter-policies.md): <ul><li>**Spam** (_SpamAction_)</li><li>**High confidence spam** (_HighConfidenceSpamAction_)</li><li>**Phishing** (_PhishSpamAction_)</li><li>**High confidence phishing** (_HighConfidencePhishAction_)</li><li>**Bulk** (_BulkSpamAction_)</li></ul>|Yes|<ul><li>DefaultFullAccessPolicy (Full access)</li><li>DefaultFullAccessPolicy (Full access)</li><li>DefaultFullAccessPolicy (Full access)</li><li>AdminOnlyAccessPolicy (No access)</li><li>DefaultFullAccessPolicy (Full access)</li></ul>|
+|Anti-phishing policies: <ul><li>[Spoof intelligence protection](set-up-anti-phishing-policies.md#spoof-settings) (_AuthenticationFailAction_)</li><li>[Impersonation protection](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365):<sup>\*</sup> <ul><li>**If message is detected as an impersonated user** (_TargetedUserProtectionAction_)</li><li>**If message is detected as an impersonated domain** (_TargetedDomainProtectionAction_)</li><li>**If mailbox intelligence detects and impersonated user** (_MailboxIntelligenceProtectionAction_)</li></ul></li></ul></ul>|Yes|<ul><li>DefaultFullAccessPolicy (Full access)</li><li>DefaultFullAccessPolicy (Full access)</li></ul>|
+|[Anti-malware policies](configure-anti-malware-policies.md): All detected messages are always quarantined.|Yes|AdminOnlyAccessPolicy (Admin only access)|
+|[Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](mdo-for-spo-odb-and-teams.md)|Yes|AdminOnlyAccessPolicy (Admin only access)|
 |[Mail flow rules](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (also known as transport rules) with the action: **Deliver the message to the hosted quarantine** (_Quarantine_).|No|n/a|
 |
 
