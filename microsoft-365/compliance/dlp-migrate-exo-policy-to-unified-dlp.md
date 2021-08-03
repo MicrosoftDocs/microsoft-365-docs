@@ -91,11 +91,23 @@ After you have evaluated all your Exchange and Compliance center DLP policies fo
 1. Open the [Microsoft 365 Compliance center](https://compliance.microsoft.com/datalossprevention?viewid=policies) DLP console.
 2. If there are Exchange DLP policies that can be migrated, a banner will appear at the top of the page letting you know.
 3. Choose **Migrate policies** in the banner to open the migration wizard. All the Exchange DLP policies are listed. Previously migrated policies cannot be selected.
-4.  Select the policies you want to migrate. You can migrate them individually or in groups. Select **Next**.
+4.  Select the policies you want to migrate. You can migrate them individually, or in groups using a phased approach or all at once . Select **Next**.
 5. Review the flyout pane for any warnings or messages. Resolve any issues before proceeding.
 6. Select the mode you want the new Compliance center policy created in, **Active**, **Test**, or **Disabled**.  The default is **Test**. Select **Next**.
-7.  Review the migration wizard session settings. Select **Next**.
-8. Review the migration report.
+7. If desired, you can create additional policies that are based on the Exchange DLP policies for other unified DLP locations. This will result in one new unified DLP policy for the migrated Exchange policy and one new unified DLP policy for any additional locations that you pick here.
+
+> [!IMPORTANT]
+> Any Exchange DLP policy conditions and actions that are not supported by other DLP locations, like Devices, SharePoint, OneDrive, On-premises, MCAS or Teams chat and channel messages will be dropped from the additional policy. Also, there is pre-work that must be done for the other locations. See:
+>- [Learn about Microsoft 365 Endpoint data loss prevention](endpoint-dlp-learn-about.md#learn-about-microsoft-365-endpoint-data-loss-prevention)
+>- [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md#get-started-with-endpoint-data-loss-prevention)
+>- [Using Endpoint data loss prevention](endpoint-dlp-using.md#using-endpoint-data-loss-prevention)
+>- [Learn about the Microsoft 365 data loss prevention on-premises scanner](dlp-on-premises-scanner-learn.md#learn-about-the-microsoft-365-data-loss-prevention-on-premises-scanner)
+>- [Get started with the data loss prevention on-premises scanner](dlp-on-premises-scanner-get-started.md#get-started-with-the-data-loss-prevention-on-premises-scanner)
+>- [Use the Microsoft 365 data loss prevention on-premises scanner](dlp-on-premises-scanner-use.md#use-the-microsoft-365-data-loss-prevention-on-premises-scanner)
+>- [Use data loss prevention policies for non-Microsoft cloud apps](dlp-use-policies-non-microsoft-cloud-apps.md#use-data-loss-prevention-policies-for-non-microsoft-cloud-apps)
+ 
+8. Review the migration wizard session settings. Select **Next**.
+9. Review the migration report.
 
 The migrated policies will now appear in the list of DLP policies in the Compliance center DLP console. 
 
@@ -104,13 +116,29 @@ The migrated policies will now appear in the list of DLP policies in the Complia
 Test and review your policies.
 
 1. Follow the [Test a DLP policy](create-test-tune-dlp-policy.md#test-a-dlp-policy) procedures.
-2. Review the events created by the policy in [Activity explorer](data-classification-activity-explorer.md). 
+2. Review the events created by the policy in [Activity explorer](data-classification-activity-explorer.md).
+
+## Review the policy matches between Exchange Admin Center DLP and Microsoft 365 Unified DLP
+
+To ensure that the migrated policies behave as expected, you can export the reports from both admin centers and do a comparison of the policy matches.
+
+1. Connect to [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+2. Export the [EAC DLP report](/powershell/module/exchange/get-maildetaildlppolicyreport?view=exchange-ps). You can copy this cmdlet and insert the appropriate values:
+
+```powershell
+Get-MailDetailDlpPolicyReport -StartDate <dd/mm/yyyy -EndDate <dd/mm/yyyy> -PageSize 5000 | select Date, MessageId, DlpPolicy, TransportRule -Unique | Export-CSV <"C:\path\filename.csv"> 
+```
+3. Export the [Unified DLP report](/powershell/module/exchange/get-dlpdetailreport?view=exchange-ps). You can copy this cmdlet and insert the appropriate values:
+
+```powershell
+Get-DlpDetailReport -StartDate <dd/mm/yyyy> -EndDate <dd/mm/yyyy> -PageSize 5000 | select Date, Location, DlpCompliancePolicy, DlpComplianceRule -Unique | Export-CSV <"C:\path\filename.csv">  
+```
 
 ## Activate your migrated policies
 
 Once you are satisfied with how your migrated policies are functioning, you can set them to **Enforce**.
 
-1. Open the Exchange Admin Center DLP console (GET LINK).
+1. Open the Exchange Admin Center DLP console.
 2. Deactivate or delete the source policy.
 3. Open the [Microsoft 365 Compliance center](https://compliance.microsoft.com/datalossprevention?viewid=policies) DLP console and select the policy you want to make active to edit it.
 4. Change the status to **Turn on**.
