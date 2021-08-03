@@ -33,7 +33,7 @@ This topic provides info on how to:
 - Verify active sync between Intune and Microsoft Store for Business 
 
 ## Step 2 - Assign Company Portal to your users
-Following your enrollment in Microsoft Managed Desktop, Microsoft Managed Desktop Operations will automatically deploy Company Portal to your tenant and install the app on Microsoft Managed Desktop devices in your organization.
+Following your enrollment in Microsoft Managed Desktop, we will automatically deploy Company Portal to your tenant and install the app on Microsoft Managed Desktop devices in your organization.
 
 ## Step 3 - Communicate change to your users
 As the IT administrator for your organization, it’s important to let your users know how to use Company Portal in your organization. Microsoft Managed Desktop recommends:

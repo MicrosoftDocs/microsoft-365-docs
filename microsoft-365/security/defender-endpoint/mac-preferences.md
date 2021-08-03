@@ -13,7 +13,7 @@ author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
   - m365-security-compliance
   - m365initiative-defender-endpoint
 ms.topic: conceptual
@@ -23,7 +23,6 @@ ms.technology: mde
 # Set preferences for Microsoft Defender for Endpoint on macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **Applies to:**
 
@@ -53,10 +52,10 @@ The *antivirusEngine* section of the configuration profile is used to manage the
 
 |Section|Value|
 |:---|:---|
-| **Domain** | `com.microsoft.wdav` |
-| **Key** | antivirusEngine |
-| **Data type** | Dictionary (nested preference) |
-| **Comments** | See the following sections for a description of the dictionary contents. |
+|**Domain**|`com.microsoft.wdav`|
+|**Key**|antivirusEngine|
+|**Data type**|Dictionary (nested preference)|
+|**Comments**|See the following sections for a description of the dictionary contents.|
 
 #### Enable / disable real-time protection
 
@@ -64,14 +63,15 @@ Specify whether to enable real-time protection, which scans files as they are ac
 
 |Section|Value|
 |:---|:---|
-| **Domain** | `com.microsoft.wdav` |
-| **Key** | enableRealTimeProtection |
-| **Data type** | Boolean |
-| **Possible values** | true (default) <br/> false |
+|**Domain**|`com.microsoft.wdav`|
+|**Key**|enableRealTimeProtection|
+|**Data type**|Boolean|
+|**Possible values**|true (default) <p> false|
 
 #### Enable / disable passive mode
 
-Specify whether the antivirus engine runs in passive mode. Passive mode has the following implications: 
+Specify whether the antivirus engine runs in passive mode. Passive mode has the following implications:
+
 - Real-time protection is turned off
 - On-demand scanning is turned on
 - Automatic threat remediation is turned off
@@ -80,11 +80,11 @@ Specify whether the antivirus engine runs in passive mode. Passive mode has the 
 
 |Section|Value|
 |:---|:---|
-| **Domain** | `com.microsoft.wdav` |
-| **Key** | passiveMode |
-| **Data type** | Boolean |
-| **Possible values** | false (default) <br/> true |
-| **Comments** | Available in Microsoft Defender for Endpoint version 100.67.60 or higher. |
+|**Domain**|`com.microsoft.wdav`|
+|**Key**|passiveMode|
+|**Data type**|Boolean|
+|**Possible values**|false (default) <p> true|
+|**Comments**|Available in Microsoft Defender for Endpoint version 100.67.60 or higher.|
 
 #### Exclusion merge policy
 
@@ -92,22 +92,23 @@ Specify the merge policy for exclusions. This can be a combination of administra
 
 |Section|Value|
 |:---|:---|
-| **Domain** | `com.microsoft.wdav` |
-| **Key** | exclusionsMergePolicy |
-| **Data type** | String |
-| **Possible values** | merge (default) <br/> admin_only |
-| **Comments** | Available in Microsoft Defender for Endpoint version 100.83.73 or higher. |
+|**Domain**|`com.microsoft.wdav`|
+|**Key**|exclusionsMergePolicy|
+|**Data type**|String|
+|**Possible values**|merge (default) <p> admin_only|
+|**Comments**|Available in Microsoft Defender for Endpoint version 100.83.73 or higher.|
 
 #### Scan exclusions
 
 Specify entities excluded from being scanned. Exclusions can be specified by full paths, extensions, or file names.
+(Exclusions are specified as an array of items, administrator can specify as many elements as necessary, in any order.)
 
 |Section|Value|
 |:---|:---|
-| **Domain** | `com.microsoft.wdav` |
-| **Key** | exclusions |
-| **Data type** | Dictionary (nested preference) |
-| **Comments** | See the following sections for a description of the dictionary contents. |
+|**Domain**|`com.microsoft.wdav`|
+|**Key**|exclusions|
+|**Data type**|Dictionary (nested preference)|
+|**Comments**|See the following sections for a description of the dictionary contents.|
 
 ##### Type of exclusion
 
@@ -115,10 +116,10 @@ Specify content excluded from being scanned by type.
 
 |Section|Value|
 |:---|:---|
-| **Domain** | `com.microsoft.wdav` |
-| **Key** | $type |
-| **Data type** | String |
-| **Possible values** | excludedPath <br/> excludedFileExtension <br/> excludedFileName |
+|**Domain**|`com.microsoft.wdav`|
+|**Key**|$type|
+|**Data type**|String|
+|**Possible values**|excludedPath <p> excludedFileExtension <p> excludedFileName|
 
 ##### Path to excluded content
 
@@ -126,23 +127,44 @@ Specify content excluded from being scanned by full file path.
 
 |Section|Value|
 |:---|:---|
-| **Domain** | `com.microsoft.wdav` |
-| **Key** | path |
-| **Data type** | String |
-| **Possible values** | valid paths |
-| **Comments** | Applicable only if *$type* is *excludedPath* |
+|**Domain**|`com.microsoft.wdav`|
+|**Key**|path|
+|**Data type**|String|
+|**Possible values**|valid paths|
+|**Comments**|Applicable only if *$type* is *excludedPath*|
+
+## Supported exclusion types
+
+The follow table shows the exclusion types supported by Defender for Endpoint on Mac.
+
+Exclusion|Definition|Examples
+---|---|---
+File extension|All files with the extension, anywhere on the device|`.test`
+File|A specific file identified by the full path|`/var/log/test.log` <p> `/var/log/*.log` <p> `/var/log/install.?.log`
+Folder|All files under the specified folder (recursively)|`/var/log/` <p> `/var/*/`
+Process|A specific process (specified either by the full path or file name) and all files opened by it|`/bin/cat` <p> `cat` <p> `c?t`
+
+> [!IMPORTANT]
+> The paths above must be hard links, not symbolic links, in order to be successfully excluded. You can check if a path is a symbolic link by running `file <path-name>`.
+
+File, folder, and process exclusions support the following wildcards:
+
+Wildcard|Description|Example|Matches|Does not match
+---|---|---|---|---
+\*|Matches any number of any characters including none (note that when this wildcard is used inside a path it will substitute only one folder)|`/var/\*/\*.log`|`/var/log/system.log`|`/var/log/nested/system.log`
+?|Matches any single character|`file?.log`|`file1.log` <p> `file2.log`|`file123.log`
 
 ##### Path type (file / directory)
 
-Indicate if the *path* property refers to a file or directory. 
+Indicate if the *path* property refers to a file or directory.
 
 |Section|Value|
 |:---|:---|
-| **Domain** | `com.microsoft.wdav` |
-| **Key** | isDirectory |
-| **Data type** | Boolean |
-| **Possible values** | false (default) <br/> true |
-| **Comments** | Applicable only if *$type* is *excludedPath* |
+|**Domain**|`com.microsoft.wdav`|
+|**Key**|isDirectory|
+|**Data type**|Boolean|
+|**Possible values**|false (default) <p> true|
+|**Comments**|Applicable only if *$type* is *excludedPath*|
 
 ##### File extension excluded from the scan
 
@@ -150,11 +172,11 @@ Specify content excluded from being scanned by file extension.
 
 |Section|Value|
 |:---|:---|
-| **Domain** | `com.microsoft.wdav` |
-| **Key** | extension |
-| **Data type** | String |
-| **Possible values** | valid file extensions |
-| **Comments** | Applicable only if *$type* is *excludedFileExtension* |
+|**Domain**|`com.microsoft.wdav`|
+|**Key**|extension|
+|**Data type**|String|
+|**Possible values**|valid file extensions|
+|**Comments**|Applicable only if *$type* is *excludedFileExtension*|
 
 ##### Process excluded from the scan
 
@@ -162,11 +184,11 @@ Specify a process for which all file activity is excluded from scanning. The pro
 
 |Section|Value|
 |:---|:---|
-| **Domain** | `com.microsoft.wdav` |
-| **Key** | name |
-| **Data type** | String |
-| **Possible values** | any string |
-| **Comments** | Applicable only if *$type* is *excludedFileName* |
+|**Domain**|`com.microsoft.wdav`|
+|**Key**|name|
+|**Data type**|String|
+|**Possible values**|any string|
+|**Comments**|Applicable only if *$type* is *excludedFileName*|
 
 #### Allowed threats
 
@@ -174,9 +196,9 @@ Specify threats by name that are not blocked by Defender for Endpoint on Mac. Th
 
 |Section|Value|
 |:---|:---|
-| **Domain** | `com.microsoft.wdav` |
-| **Key** | allowedThreats |
-| **Data type** | Array of strings |
+|**Domain**|`com.microsoft.wdav`|
+|**Key**|allowedThreats|
+|**Data type**|Array of strings|
 
 #### Disallowed threat actions
 
@@ -184,11 +206,11 @@ Restricts the actions that the local user of a device can take when threats are 
 
 |Section|Value|
 |:---|:---|
-| **Domain** | `com.microsoft.wdav` |
-| **Key** | disallowedThreatActions |
-| **Data type** | Array of strings |
-| **Possible values** | allow (restricts users from allowing threats) <br/> restore (restricts users from restoring threats from the quarantine) |
-| **Comments** | Available in Microsoft Defender for Endpoint version 100.83.73 or higher. |
+|**Domain**|`com.microsoft.wdav`|
+|**Key**|disallowedThreatActions|
+|**Data type**|Array of strings|
+|**Possible values**|allow (restricts users from allowing threats) <p> restore (restricts users from restoring threats from the quarantine)|
+|**Comments**|Available in Microsoft Defender for Endpoint version 100.83.73 or higher.|
 
 #### Threat type settings
 
@@ -196,10 +218,10 @@ Specify how certain threat types are handled by Microsoft Defender for Endpoint 
 
 |Section|Value|
 |:---|:---|
-| **Domain** | `com.microsoft.wdav` |
-| **Key** | threatTypeSettings |
-| **Data type** | Dictionary (nested preference) |
-| **Comments** | See the following sections for a description of the dictionary contents. |
+|**Domain**|`com.microsoft.wdav`|
+|**Key**|threatTypeSettings|
+|**Data type**|Dictionary (nested preference)|
+|**Comments**|See the following sections for a description of the dictionary contents.|
 
 ##### Threat type
 
@@ -207,10 +229,10 @@ Specify threat types.
 
 |Section|Value|
 |:---|:---|
-| **Domain** | `com.microsoft.wdav` |
-| **Key** | key |
-| **Data type** | String |
-| **Possible values** | potentially_unwanted_application <br/> archive_bomb |
+|**Domain**|`com.microsoft.wdav`|
+|**Key**|key|
+|**Data type**|String|
+|**Possible values**|potentially_unwanted_application <p> archive_bomb|
 
 ##### Action to take
 
@@ -222,10 +244,10 @@ Specify what action to take when a threat of the type specified in the preceding
 
 |Section|Value|
 |:---|:---|
-| **Domain** | `com.microsoft.wdav` |
-| **Key** | value |
-| **Data type** | String |
-| **Possible values** | audit (default) <br/> block <br/> off |
+|**Domain**|`com.microsoft.wdav`|
+|**Key**|value|
+|**Data type**|String|
+|**Possible values**|audit (default) <p> block <p> off|
 
 #### Threat type settings merge policy
 
@@ -233,11 +255,11 @@ Specify the merge policy for threat type settings. This can be a combination of 
 
 |Section|Value|
 |:---|:---|
-| **Domain** | `com.microsoft.wdav` |
-| **Key** | threatTypeSettingsMergePolicy |
-| **Data type** | String |
-| **Possible values** | merge (default) <br/> admin_only |
-| **Comments** | Available in Microsoft Defender for Endpoint version 100.83.73 or higher. |
+|**Domain**|`com.microsoft.wdav`|
+|**Key**|threatTypeSettingsMergePolicy|
+|**Data type**|String|
+|**Possible values**|merge (default) <p> admin_only|
+|**Comments**|Available in Microsoft Defender for Endpoint version 100.83.73 or higher.|
 
 #### Antivirus scan history retention (in days)
 
@@ -245,11 +267,11 @@ Specify the number of days that results are retained in the scan history on the 
 
 |Section|Value|
 |:---|:---|
-| **Domain** | `com.microsoft.wdav` |
-| **Key** | scanResultsRetentionDays |
-| **Data type** | String |
-| **Possible values** | 90 (default). Allowed values are from 1 day to 180 days. |
-| **Comments** | Available in Microsoft Defender for Endpoint version 101.07.23 or higher. |
+|**Domain**|`com.microsoft.wdav`|
+|**Key**|scanResultsRetentionDays|
+|**Data type**|String|
+|**Possible values**|90 (default). Allowed values are from 1 day to 180 days.|
+|**Comments**|Available in Microsoft Defender for Endpoint version 101.07.23 or higher.|
 
 #### Maximum number of items in the antivirus scan history
 
@@ -257,11 +279,11 @@ Specify the maximum number of entries to keep in the scan history. Entries inclu
 
 |Section|Value|
 |:---|:---|
-| **Domain** | `com.microsoft.wdav` |
-| **Key** | scanHistoryMaximumItems |
-| **Data type** | String |
-| **Possible values** | 10000 (default). Allowed values are from 5000 items to 15000 items. |
-| **Comments** | Available in Microsoft Defender for Endpoint version 101.07.23 or higher. |
+|**Domain**|`com.microsoft.wdav`|
+|**Key**|scanHistoryMaximumItems|
+|**Data type**|String|
+|**Possible values**|10000 (default). Allowed values are from 5000 items to 15000 items.|
+|**Comments**|Available in Microsoft Defender for Endpoint version 101.07.23 or higher.|
 
 ### Cloud-delivered protection preferences
 
@@ -269,10 +291,10 @@ Configure the cloud-driven protection features of Microsoft Defender for Endpoin
 
 |Section|Value|
 |:---|:---|
-| **Domain** | `com.microsoft.wdav` |
-| **Key** | cloudService |
-| **Data type** | Dictionary (nested preference) |
-| **Comments** | See the following sections for a description of the dictionary contents. |
+|**Domain**|`com.microsoft.wdav`|
+|**Key**|cloudService|
+|**Data type**|Dictionary (nested preference)|
+|**Comments**|See the following sections for a description of the dictionary contents.|
 
 #### Enable / disable cloud-delivered protection
 
@@ -280,10 +302,10 @@ Specify whether to enable cloud-delivered protection the device or not. To impro
 
 |Section|Value|
 |:---|:---|
-| **Domain** | `com.microsoft.wdav` |
-| **Key** | enabled |
-| **Data type** | Boolean |
-| **Possible values** | true (default) <br/> false |
+|**Domain**|`com.microsoft.wdav`|
+|**Key**|enabled|
+|**Data type**|Boolean|
+|**Possible values**|true (default) <p> false|
 
 #### Diagnostic collection level
 
@@ -291,10 +313,10 @@ Diagnostic data is used to keep Microsoft Defender for Endpoint secure and up-to
 
 |Section|Value|
 |:---|:---|
-| **Domain** | `com.microsoft.wdav` |
-| **Key** | diagnosticLevel |
-| **Data type** | String |
-| **Possible values** | optional (default) <br/> required |
+|**Domain**|`com.microsoft.wdav`|
+|**Key**|diagnosticLevel|
+|**Data type**|String|
+|**Possible values**|optional (default) <p> required|
 
 #### Enable / disable automatic sample submissions
 
@@ -302,10 +324,10 @@ Determines whether suspicious samples (that are likely to contain threats) are s
 
 |Section|Value|
 |:---|:---|
-| **Domain** | `com.microsoft.wdav` |
-| **Key** | automaticSampleSubmission |
-| **Data type** | Boolean |
-| **Possible values** | true (default) <br/> false |
+|**Domain**|`com.microsoft.wdav`|
+|**Key**|automaticSampleSubmission|
+|**Data type**|Boolean|
+|**Possible values**|true (default) <p> false|
 
 #### Enable / disable automatic security intelligence updates
 
@@ -313,9 +335,9 @@ Determines whether security intelligence updates are installed automatically:
 
 |Section|Value|
 |:---|:---|
-| **Key** | automaticDefinitionUpdateEnabled |
-| **Data type** | Boolean |
-| **Possible values** | true (default) <br/> false |
+|**Key**|automaticDefinitionUpdateEnabled|
+|**Data type**|Boolean|
+|**Possible values**|true (default) <p> false|
 
 ### User interface preferences
 
@@ -323,10 +345,10 @@ Manage the preferences for the user interface of Microsoft Defender for Endpoint
 
 |Section|Value|
 |:---|:---|
-| **Domain** | `com.microsoft.wdav` |
-| **Key** | userInterface |
-| **Data type** | Dictionary (nested preference) |
-| **Comments** | See the following sections for a description of the dictionary contents. |
+|**Domain**|`com.microsoft.wdav`|
+|**Key**|userInterface|
+|**Data type**|Dictionary (nested preference)|
+|**Comments**|See the following sections for a description of the dictionary contents.|
 
 #### Show / hide status menu icon
 
@@ -334,10 +356,10 @@ Specify whether to show or hide the status menu icon in the top-right corner of 
 
 |Section|Value|
 |:---|:---|
-| **Domain** | `com.microsoft.wdav` |
-| **Key** | hideStatusMenuIcon |
-| **Data type** | Boolean |
-| **Possible values** | false (default) <br/> true |
+|**Domain**|`com.microsoft.wdav`|
+|**Key**|hideStatusMenuIcon|
+|**Data type**|Boolean|
+|**Possible values**|false (default) <p> true|
 
 #### Show / hide option to send feedback
 
@@ -345,11 +367,11 @@ Specify whether users can submit feedback to Microsoft by going to `Help` > `Sen
 
 |Section|Value|
 |:---|:---|
-| **Domain** | `com.microsoft.wdav` |
-| **Key** | userInitiatedFeedback |
-| **Data type** | String |
-| **Possible values** | enabled (default) <br/> disabled |
-| **Comments** | Available in Microsoft Defender for Endpoint version 101.19.61 or higher. |
+|**Domain**|`com.microsoft.wdav`|
+|**Key**|userInitiatedFeedback|
+|**Data type**|String|
+|**Possible values**|enabled (default) <p> disabled|
+|**Comments**|Available in Microsoft Defender for Endpoint version 101.19.61 or higher.|
 
 ### Endpoint detection and response preferences
 
@@ -357,23 +379,23 @@ Manage the preferences of the endpoint detection and response (EDR) component of
 
 |Section|Value|
 |:---|:---|
-| **Domain** | `com.microsoft.wdav` |
-| **Key** | edr |
-| **Data type** | Dictionary (nested preference) |
-| **Comments** | See the following sections for a description of the dictionary contents. |
+|**Domain**|`com.microsoft.wdav`|
+|**Key**|edr|
+|**Data type**|Dictionary (nested preference)|
+|**Comments**|See the following sections for a description of the dictionary contents.|
 
 #### Device tags
 
-Specify a tag name and its value. 
+Specify a tag name and its value.
 
 - The GROUP tag, tags the device with the specified value. The tag is reflected in the portal under the device page and can be used for filtering and grouping devices.
 
 |Section|Value|
 |:---|:---|
-| **Domain** | `com.microsoft.wdav` |
-| **Key** | tags |
-| **Data type** | Dictionary (nested preference) |
-| **Comments** | See the following sections for a description of the dictionary contents. |
+|**Domain**|`com.microsoft.wdav`|
+|**Key**|tags|
+|**Data type**|Dictionary (nested preference)|
+|**Comments**|See the following sections for a description of the dictionary contents.|
 
 ##### Type of tag
 
@@ -381,10 +403,10 @@ Specifies the type of tag
 
 |Section|Value|
 |:---|:---|
-| **Domain** | `com.microsoft.wdav` |
-| **Key** | key |
-| **Data type** | String |
-| **Possible values** | `GROUP` |
+|**Domain**|`com.microsoft.wdav`|
+|**Key**|key|
+|**Data type**|String|
+|**Possible values**|`GROUP`|
 
 ##### Value of tag
 
@@ -392,12 +414,13 @@ Specifies the value of tag
 
 |Section|Value|
 |:---|:---|
-| **Domain** | `com.microsoft.wdav` |
-| **Key** | value |
-| **Data type** | String |
-| **Possible values** | any string |
+|**Domain**|`com.microsoft.wdav`|
+|**Key**|value|
+|**Data type**|String|
+|**Possible values**|any string|
 
-> [!IMPORTANT]  
+> [!IMPORTANT]
+>
 > - Only one value per tag type can be set.
 > - Type of tags are unique, and should not be repeated in the same configuration profile.
 
@@ -406,6 +429,7 @@ Specifies the value of tag
 To get started, we recommend the following configuration for your enterprise to take advantage of all protection features that Microsoft Defender for Endpoint provides.
 
 The following configuration profile (or, in case of JAMF, a property list that could be uploaded into the custom settings configuration profile) will:
+
 - Enable real-time protection (RTP)
 - Specify how the following threat types are handled:
   - **Potentially unwanted applications (PUA)** are blocked
@@ -552,6 +576,8 @@ The following templates contain entries for all settings described in this docum
         <true/>
         <key>passiveMode</key>
         <false/>
+        <key>maximumOnDemandScanThreads</key>
+        <integer>1</integer>
         <key>exclusions</key>
         <array>
             <dict>
@@ -569,6 +595,14 @@ The following templates contain entries for all settings described in this docum
                 <true/>
                 <key>path</key>
                 <string>/home</string>
+            </dict>
+            <dict>
+                <key>$type</key>
+                <string>excludedPath</string>
+                <key>isDirectory</key>
+                <true/>
+                <key>path</key>
+                <string>/Users/*/git</string>
             </dict>
             <dict>
                 <key>$type</key>
@@ -640,7 +674,7 @@ The following templates contain entries for all settings described in this docum
         <key>hideStatusMenuIcon</key>
         <false/>
         <key>userInitiatedFeedback</key>
-		<string>enabled</string>
+        <string>enabled</string>
     </dict>
 </dict>
 </plist>
@@ -694,6 +728,8 @@ The following templates contain entries for all settings described in this docum
                     <true/>
                     <key>passiveMode</key>
                     <false/>
+                    <key>maximumOnDemandScanThreads</key>
+                    <integer>1</integer>
                     <key>exclusions</key>
                     <array>
                         <dict>
@@ -711,6 +747,14 @@ The following templates contain entries for all settings described in this docum
                             <true/>
                             <key>path</key>
                             <string>/home</string>
+                        </dict>
+                        <dict>
+                            <key>$type</key>
+                            <string>excludedPath</string>
+                            <key>isDirectory</key>
+                            <true/>
+                            <key>path</key>
+                            <string>/Users/*/git</string>
                         </dict>
                         <dict>
                             <key>$type</key>
@@ -782,7 +826,7 @@ The following templates contain entries for all settings described in this docum
                     <key>hideStatusMenuIcon</key>
                     <false/>
                     <key>userInitiatedFeedback</key>
-		            <string>enabled</string>
+                    <string>enabled</string>
                 </dict>
             </dict>
         </array>
@@ -795,6 +839,7 @@ The property list must be a valid *.plist* file. This can be checked by executin
 ```bash
 plutil -lint com.microsoft.wdav.plist
 ```
+
 ```Output
 com.microsoft.wdav.plist: OK
 ```
@@ -809,8 +854,8 @@ Once you've built the configuration profile for your enterprise, you can deploy 
 
 From the JAMF console, open **Computers** > **Configuration Profiles**, navigate to the configuration profile you'd like to use, then select **Custom Settings**. Create an entry with `com.microsoft.wdav` as the preference domain and upload the *.plist* produced earlier.
 
->[!CAUTION]
->You must enter the correct preference domain (`com.microsoft.wdav`); otherwise, the preferences will not be recognized by Microsoft Defender for Endpoint.
+> [!CAUTION]
+> You must enter the correct preference domain (`com.microsoft.wdav`); otherwise, the preferences will not be recognized by Microsoft Defender for Endpoint.
 
 ### Intune deployment
 
@@ -828,8 +873,8 @@ From the JAMF console, open **Computers** > **Configuration Profiles**, navigate
 
 7. Select **Manage** > **Assignments**. In the **Include** tab, select **Assign to All Users & All devices**.
 
->[!CAUTION]
->You must enter the correct custom configuration profile name; otherwise, these preferences will not be recognized by Microsoft Defender for Endpoint.
+> [!CAUTION]
+> You must enter the correct custom configuration profile name; otherwise, these preferences will not be recognized by Microsoft Defender for Endpoint.
 
 ## Resources
 

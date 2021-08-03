@@ -28,11 +28,8 @@ Microsoft Secure Score can be found at https://security.microsoft.com/securescor
 
 ## Proposed changes
 
-We're making some changes in the near future to make [Microsoft Secure Score](microsoft-secure-score.md) a better representative of your security posture and improve usability. Your score and the maximum possible score may change.
+No upcoming changes are scheduled at this time. Please check back later.
 
-### No Planned Changes
-
-There are no planned changes at this time.
 
 ## Related resources
 

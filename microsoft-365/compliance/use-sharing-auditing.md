@@ -91,26 +91,26 @@ A common requirement for administrators is creating a list of all resources that
 
 The first step is to search the audit log for sharing events. For more information (including the required permissions) about searching the audit log, see [Search the audit log in the Security & Compliance Center](search-the-audit-log-in-security-and-compliance.md).
   
-1. Go to [https://protection.office.com](https://protection.office.com).
-    
+1. Go to <https://compliance.microsoft.com>.
+
 2. Sign in using your work or school account.
-    
-3. In the left pane of the Security & Compliance Center, click **Search**  > **Audit log search**.
-    
-    The **Audit log search** page is displayed. 
-    
+
+3. In the left pane of the Microsoft 365 compliance center, click **Audit**.
+
+    The **Audit** page is displayed.
+
 4. Under **Activities**, click **Sharing and access request activities** to search for sharing-related events. 
-    
+
     ![Under Activities, select Sharing and access request activities](../media/46bb25b7-1eb2-4adf-903a-cc9ab58639f9.png)
   
-5.  Select a date and time range to find the sharing events that occurred within that period. 
-    
+5. Select a date and time range to find the sharing events that occurred within that period. 
+
 6. Click **Search** to run the search. 
-    
+
 7. When the search is finished running and the results are displayed, click **Export results** \> **Download all results**.
-    
+
     After you select the export option, a message at the bottom of the window prompts you to open or save the CSV file.
-    
+
 8. Click **Save** \> **Save as** and save the CSV file to a folder on your local computer. 
 
 ### Step 2: Use the PowerQuery Editor to format the exported audit log

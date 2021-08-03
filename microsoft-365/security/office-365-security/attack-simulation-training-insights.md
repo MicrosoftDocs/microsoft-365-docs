@@ -10,15 +10,18 @@ localization_priority: Normal
 ms.collection: 
   - M365-security-compliance
   - m365initiative-defender-office365
-description: Admins can learn how Attack simulation training in the Microsoft 365 security center affects employees and can gain insights from simulation and training outcomes.
+description: Admins can learn how Attack simulation training in the Microsoft 365 Defender portal affects employees and can gain insights from simulation and training outcomes.
 ms.technology: mdo
 ---
 
 # Gain insights through Attack simulation training
 
+**Applies to**
+ [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
+
 Within Attack simulation training, Microsoft provides you with insights based on outcomes of simulations and trainings that employees went through. These insights will help keep you informed on the threat readiness progress of your employees, as well as recommend next steps to better prepare your employees and your environment for attacks.
 
-We are continuously working on expanding the insights that are available to you. Behavior impact and recommended actions are currently available. To start, head over to [Attack simulation training in the Microsoft 365 security center](https://security.microsoft.com/attacksimulator?viewid=overview).
+We are continuously working on expanding the insights that are available to you. Behavior impact and recommended actions are currently available. To start, head over to [Attack simulation training in the Microsoft 365 Defender portal](https://security.microsoft.com/attacksimulator?viewid=overview).
 
 ## Behavior impact on compromise rate
 

@@ -16,6 +16,9 @@ ms.technology: mdo
 
 # Create a custom payload for Attack simulation training
 
+**Applies to**
+ [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
+
 Microsoft offers a robust payload catalog for various social engineering techniques to pair with your attack simulation training. However, you might want to create custom payloads that will work better for your organization. This article describes how to create a payload in Attack simulation training in Microsoft Defender for Office 365.
 
 You can create a payload by clicking on **Create a payload** in either the [dedicated **Payloads** tab](https://security.microsoft.com/attacksimulator?viewid=payload) or within the [simulation creation wizard](attack-simulation-training.md#selecting-a-payload).
@@ -25,6 +28,9 @@ The first step in the wizard will have you select a payload type. **Currently, o
 Next, select an associated technique. See more details on techniques at [Selecting a social engineering technique](attack-simulation-training.md#selecting-a-social-engineering-technique).
 
 In the next step name your payload. Optionally, you can give it a description.
+
+> [!NOTE]
+> Certain trademarks, logos, symbols, insignias and other source identifiers receive heighted protection under local, state and federal statutes and laws. Unauthorized use of such indicators can subject the users to penalties, including criminal fines. Though not an extensive list, this includes the Presidential, Vice Presidential, and Congressional seals, the CIA, the FBI, Social Security, Medicare and Medicaid, the United States Internal Revenue Service, and the Olympics. Beyond these categories of trademarks, use and modification of any third-party trademark carries an inherent amount of risk. Using your own trademarks and logos in a payload would be less risky, particularly where your organization permits the use. If you have any further questions about what is or is not appropriate to use when creating or configuring a payload, you should consult with your legal advisors.
 
 ## Configure payload
 

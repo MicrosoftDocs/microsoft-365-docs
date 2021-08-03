@@ -1,5 +1,5 @@
 ---
-title: "Rename an extractor in Microsoft SharePoint Syntex"
+title: Rename an extractor in Microsoft SharePoint Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,7 +12,7 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 localization_priority: Priority
-description: "Learn how and why to rename an extractor in Microsoft SharePoint Syntex."
+description: Learn how and why to rename an extractor in Microsoft SharePoint Syntex.
 ---
 
 # Rename an extractor in Microsoft SharePoint Syntex

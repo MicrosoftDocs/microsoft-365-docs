@@ -19,7 +19,7 @@ description: "Provide your users with up-to-date news headlines about your indus
 
 # Manage Industry news
 
-To provide your users with up-to-date news headlines about your industry and info from your organization, use the News service to enable a customized news feed for your organization. You can also enable a daily Industry Updates email, and manage settings for the Bing homepage and Microsoft Edge new tab page (starting with release of Edge 87). 
+To provide your users with up-to-date news headlines about your industry and info from your organization, use the News service to enable a customized news feed for your organization. You can also enable a daily Industry Updates email, and manage settings for the Bing homepage and Microsoft Edge new tab page. 
 
 ## What your users will see
 

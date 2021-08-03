@@ -16,7 +16,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 # Contact support for Croatia
 
-[Find another country or region](../contact-support-for-business-products.md).
+[Find another country or region](../../business-video/get-help-support.md).
 
 ## Phone number
 0800 222 225

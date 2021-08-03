@@ -45,7 +45,7 @@ Edge blocks are designed to be automatic. In the case of false positive, senders
 
 Features in sender intelligence are critical for catching spam, bulk, impersonation, and unauthorized spoof messages, and also factor into phish detection. Most of these features are individually configurable.
 
-:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase2.png" alt-text="Phase 2 of filtering in MDO is Sender intelligence.":::
+:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase2.png" alt-text="Phase 2 of filtering in Defender for Office 365 is Sender intelligence.":::
 
 1. **Account compromise detection** triggers and alerts are raised when an account has anomalous behavior, consistent with compromise. In some cases, the user account is blocked and prevented from sending any further email messages until the issue is resolved by an organization's security operations team.
 
@@ -55,7 +55,7 @@ Features in sender intelligence are critical for catching spam, bulk, impersonat
     - **DMARC** lets admins mark SPF and DKIM as required in their domain and enforces alignment between the results of these two technologies.
     - **ARC** is not customer configured, but builds on DMARC to work with forwarding in mailing lists, while recording an authentication chain.
 
-3. **Spoof intelligence** is capable of filtering those allowed to 'spoof' (that is, those sending mail on behalf of another account, or forwarding for a mailing list) from malicious spoofers imitating an organizational, or known external, domain. It separates legitimate 'on behalf of' mail from senders spoofing to deliver spam and phishing messages. 
+3. **Spoof intelligence** is capable of filtering those allowed to 'spoof' (that is, those sending mail on behalf of another account, or forwarding for a mailing list) from malicious senders who imitate organizational or known external domains. It separates legitimate 'on behalf of' mail from senders who spoof to deliver spam and phishing messages.
 
     **Intra-org spoof intelligence** detects and blocks spoof attempts from a domain within the organization.
 
@@ -105,13 +105,13 @@ The last stage takes place after mail or file delivery, acting on mail that is i
 
 :::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase4.png" alt-text="Phase 4 of filtering in Defender for Office 365 is Post-delivery protection.":::
 
-1. **Safe Links** is MDO's time-of-click protection. Every URL in every message is wrapped to point to Microsoft Safe Links servers. When a URL is clicked it is checked against the latest reputation, before the user is redirected to the target site. The URL is asynchronously sandboxed to update its reputation.
+1. **Safe Links** is Defender for Office 365's time-of-click protection. Every URL in every message is wrapped to point to Microsoft Safe Links servers. When a URL is clicked it is checked against the latest reputation, before the user is redirected to the target site. The URL is asynchronously sandboxed to update its reputation.
 
-2. **Phish Zero-Hour Auto-purge (ZAP)** retroactively detects and neutralizes malicious phishing messages that have already been delivered to Exchange Online mailboxes.
+2. **Zero-Hour Auto-purge (ZAP) for phishing** retroactively detects and neutralizes malicious phishing messages that have already been delivered to Exchange Online mailboxes.
 
-3. **Malware ZAP** retroactively detects and neutralizes malicious malware messages that have already been delivered to Exchange Online mailboxes.
+3. **ZAP for malware** retroactively detects and neutralizes malicious malware messages that have already been delivered to Exchange Online mailboxes.
 
-4. **Spam ZAP** retroactively detects and neutralizes malicious spam messages that have already been delivered to Exchange Online mailboxes.
+4. **ZAP for phishing** retroactively detects and neutralizes malicious spam messages that have already been delivered to Exchange Online mailboxes.
 
 5. **Campaign Views** let administrators see the big picture of an attack, faster and more completely, than any team could without automation. Microsoft leverages the vast amounts of anti-phishing, anti-spam, and anti-malware data across the entire service to help identify campaigns, and then allows admins to investigate them from start to end, including targets, impacts, and flows, that are also available in a downloadable campaign write-up.
 
@@ -123,12 +123,11 @@ The last stage takes place after mail or file delivery, acting on mail that is i
 
 9. When a URL that points to a file is selected post delivery, **linked content detonation** displays a warning page until the sandboxing of the file is complete, and the URL is found to be safe.
 
-
 ## The filtering stack diagram
 
 The final diagram (as with all parts of the diagram composing it) *is subject to change as the product grows and develops*. Bookmark this page and use the **feedback** option you'll find at the bottom if you need to ask after updates. For your records, this is the the stack with all the phases in order:
 
-:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase5.png" alt-text="All the phases of filtering in MDO in order, 1 to 4.":::
+:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase5.png" alt-text="All the phases of filtering in Defender for Office 365 in order, 1 to 4.":::
 
 ## More information
 
