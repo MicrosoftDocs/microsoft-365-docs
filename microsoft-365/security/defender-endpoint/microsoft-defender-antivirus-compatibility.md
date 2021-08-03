@@ -46,11 +46,13 @@ The operating system, antivirus product, and Defender for Endpoint affect whethe
 | Windows 10  | Microsoft Defender Antivirus  | Active mode |
 | Windows 10  | A non-Microsoft antivirus/antimalware solution | Disabled mode (happens automatically)    |
 | Windows Server, version 1803 or newer <p> Windows Server 2019 | Microsoft Defender Antivirus  | Active mode |
-| Windows Server, version 1803 or newer <p> Windows Server 2019 | A non-Microsoft antivirus/antimalware solution | Disabled (must be done manually) <sup>[[2](#fn2)]<sup></sup>  |
+| Windows Server, version 1803 or newer <p> Windows Server 2019 | A non-Microsoft antivirus/antimalware solution | Disabled (must be done manually) <sup>[[1](#fn1)]<sup></sup>  |
 | Windows Server 2016 | Microsoft Defender Antivirus | Active mode |
-| Windows Server 2016 | A non-Microsoft antivirus/antimalware solution | Disabled (must be done manually) or uninstalled (not recommended) <sup>[[1](#fn1)]<sup> |
+| Windows Server 2016 | A non-Microsoft antivirus/antimalware solution | Disabled (must be done manually) or uninstalled (not recommended) <sup>[[2](#fn2)]<sup> |
 
-(<a id="fn1">1</a>) On endpoints running Windows Server 2016, if you are using a non-Microsoft antivirus product, you cannot run Microsoft Defender Antivirus alongside in either passive mode or active mode. In such cases, [disable/uninstall Microsoft Defender Antivirus manually](microsoft-defender-antivirus-on-windows-server.md#are-you-using-windows-server-2016) to prevent problems caused by having multiple antivirus products installed on a server.
+(<a id="fn1">1</a>)  On Windows Server, version 1803 or newer, or Windows Server 2019, when you install a non-Microsoft antivirus product, set Microsoft Defender Antivirus to passive mode to prevent problems caused by having multiple antivirus products installed on a server. You can use PowerShell, Group Policy, or a registry key to perform this task. See [Microsoft Defender Antivirus on Windows Server: Need to set Microsoft Defender Antivirus to passive mode?](microsoft-defender-antivirus-on-windows-server.md#need-to-set-microsoft-defender-antivirus-to-passive-mode).
+
+(<a id="fn2">2</a>) On endpoints running Windows Server 2016, if you are using a non-Microsoft antivirus product, you cannot run Microsoft Defender Antivirus alongside in either passive mode or active mode. In such cases, [disable/uninstall Microsoft Defender Antivirus manually](microsoft-defender-antivirus-on-windows-server.md#are-you-using-windows-server-2016) to prevent problems caused by having multiple antivirus products installed on a server.
 
 See [Microsoft Defender Antivirus on Windows Server](microsoft-defender-antivirus-on-windows-server.md) for key differences and management options for Windows Server installations.
 
@@ -109,12 +111,14 @@ See [Microsoft Defender Antivirus on Windows Server](microsoft-defender-antiviru
 
 ## How Microsoft Defender Antivirus affects Defender for Endpoint functionality
 
+When devices are onboarded to Microsoft Defender for Endpoint, in most cases, Microsoft Defender Antivirus can run in either active mode as the primary antivirus solution, or in passive mode (alongside a non-Microsoft antivirus solution). Certain capabilities in Microsoft Defender for Endpoint are affected by the state of Microsoft Defender Antivirus, as summarized in the following table.
+
 The table in this section summarizes the functionality and features that are available in each state. The table is designed to be informational only. It is intended to describe the features & capabilities that are actively working or not, according to whether Microsoft Defender Antivirus is in active mode, in passive mode, or is disabled/uninstalled. 
 
 > [!IMPORTANT]
 > Do not turn off capabilities, such as real-time protection, cloud-delivered protection, or limited periodic scanning, if you are using Microsoft Defender Antivirus in passive mode or you are using EDR in block mode. 
 
-|Protection |Active mode |Passive mode |EDR in block mode |Disabled or uninstalled |
+| Protection | Microsoft Defender Antivirus <br/> Active mode | Microsoft Defender Antivirus <br/> Passive mode | EDR in block mode | Microsoft Defender Antivirus <br/> Disabled or uninstalled |
 |:---|:---|:---|:---|:---|
 | [Real-time protection](configure-real-time-protection-microsoft-defender-antivirus.md) and [cloud-delivered protection](enable-cloud-protection-microsoft-defender-antivirus.md) | Yes | No <sup>[[3](#fn3)]<sup> | No | No |
 | [Limited periodic scanning availability](limited-periodic-scanning-microsoft-defender-antivirus.md) | No | No | No | Yes |
