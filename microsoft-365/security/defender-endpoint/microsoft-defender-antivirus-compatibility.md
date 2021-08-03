@@ -34,6 +34,13 @@ Microsoft Defender Antivirus is automatically enabled and installed on endpoints
 
 This article includes the following sections:
 
+
+|Section  | Description  |
+|---------|---------|
+| [Microsoft Defender Antivirus and non-Microsoft antivirus/antimalware solutions](#microsoft-defender-antivirus-and-non-microsoft-antivirusantimalware-solutions)      | Describes what happens with Microsoft Defender Antivirus if a non-Microsoft antivirus solution is installed on the device. <br/><br/>**NOTE** This section focuses only on antivirus solutions and does not cover what happens when endpoints are onboarded to Microsoft Defender for Endpoint.        |
+|Row2     |         |
+
+
 ## Microsoft Defender Antivirus and non-Microsoft antivirus/antimalware solutions
 
 The operating system, antivirus product, and Defender for Endpoint affect whether Microsoft Defender Antivirus is in active mode, passive mode, or disabled. The following table summarizes what happens when Microsoft Defender Antivirus is used alongside a non-Microsoft antivirus/antimalware solution.
@@ -73,7 +80,7 @@ See [Microsoft Defender Antivirus on Windows Server](microsoft-defender-antiviru
 
 - When Microsoft Defender Antivirus is disabled automatically, it can be re-enabled automatically if the non-Microsoft antivirus/antimalware product expires or otherwise stops providing real-time protection from viruses, malware, or other threats. The automatic re-enabling of Microsoft Defender Antivirus helps to ensure that antivirus protection is maintained on your endpoints. You can also enable [limited periodic scanning](limited-periodic-scanning-microsoft-defender-antivirus.md), which uses the Microsoft Defender Antivirus engine to periodically check for threats if you are using a non-Microsoft antivirus app.
 
-## Microsoft Defender for Endpoint and antivirus solutions
+## Microsoft Defender for Endpoint together with antivirus solutions
 
 Microsoft Defender for Endpoint includes endpoint protection capabilities that further extend the antivirus protection that is installed on your device. When endpoints are onboarded to Microsoft Defender for Endpoint, in most cases, Microsoft Defender Antivirus can run in passive mode alongside a non-Microsoft antivirus/antimalware solution. The following table summarizes what to expect:
 
