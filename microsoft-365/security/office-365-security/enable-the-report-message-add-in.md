@@ -65,6 +65,9 @@ If you're a global administrator or an Exchange Online administrator, and Exchan
 
 - For more information on how to report a message using the Report Message feature, see [Report false positives and false negatives in Outlook](report-false-positives-and-false-negatives.md).
 
+- Organizations that have a URL filtering or security solution (such as Proxy and FireWall)  in place will need to have ipagave.azurewebsites.net and outlook.office.com endpoints allowed to be reached on HTTPS protocol.
+
+
 > [!IMPORTANT]
 > We don't recommend the built-in reporting experience in Outlook because it can't use the [user submission policy](./user-submission.md). We recommend using the Report Message add-in or the Report Phishing add-in instead.
 
