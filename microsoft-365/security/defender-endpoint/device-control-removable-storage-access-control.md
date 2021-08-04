@@ -36,18 +36,18 @@ Microsoft Defender for Endpoint Device Control Removable Storage Access Control 
 |||
 
 #### Supported deployment method
-|  |  |
+|&nbsp;  |&nbsp;  |
 |---------|---------|
 |CSP Support     |  Yes       |
 |GPO Support     |  Yes     |
-|||
+
 
 #### Supported target scenario
-|  |  |
+| &nbsp; | &nbsp; |
 |---------|---------|
 |User-based Support   | Yes       |
 |Machine-based Support     | Yes     |
-|||
+
 
 
 ## Licensing
