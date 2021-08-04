@@ -52,6 +52,9 @@ In order to get access to the content explorer tab, an account must be assigned 
 > [!IMPORTANT]
 > Membership in these role groups does not allow you to view the list of items in content explorer or to view the contents of the items in content explorer.
 
+> [!IMPORTANT]
+> only global admins can manage/assign permissions to other users in SCC. Please check this link for more details: https://docs.microsoft.com/en-in/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center?view=o365-worldwide
+> 
 ### Required permissions to access items in content explorer
 
 Access to content explorer is highly restricted because it lets you read the contents of scanned files.
