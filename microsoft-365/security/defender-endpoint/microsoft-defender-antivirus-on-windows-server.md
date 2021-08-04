@@ -207,9 +207,9 @@ To turn off the Microsoft Defender Antivirus GUI, use the following PowerShell c
 Uninstall-WindowsFeature -Name Windows-Defender-GUI
 ```
 
-### Are you using Windows Server 2016?
+### Uninstalling or disabling Microsoft Defender Antivirus on Windows Server 2016
 
-If you are using Windows Server 2016 and a third-party antimalware/antivirus product that is not offered or developed by Microsoft, you'll need to disable/uninstall Microsoft Defender Antivirus. 
+If you are using Windows Server 2016 with a non-Microsoft antimalware/antivirus product, you'll need to either disable or uninstall Microsoft Defender Antivirus. 
 
 > [!NOTE]
 > You can't uninstall the Windows Security app, but you can disable the interface with these instructions.
