@@ -14,7 +14,7 @@ ms.reviewer: pahuijbr, shwjha
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.date: 05/13/2021
+ms.date: 08/04/2021
 ---
 
 # Microsoft Defender Antivirus on Windows Server
@@ -173,7 +173,7 @@ To help ensure security and performance, certain exclusions are automatically ad
 
 See [Configure exclusions in Microsoft Defender Antivirus on Windows Server](configure-server-exclusions-microsoft-defender-antivirus.md). 
 
-## Need to set Microsoft Defender Antivirus to passive mode?
+## Passive mode and Windows Server
 
 If you are using a non-Microsoft antivirus product as your primary antivirus solution on Windows Server, you must set Microsoft Defender Antivirus to passive mode or disabled mode.
 
