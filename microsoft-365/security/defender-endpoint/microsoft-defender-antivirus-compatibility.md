@@ -30,17 +30,7 @@ ms.date: 08/04/2021
 
 Microsoft Defender Antivirus is automatically enabled and installed on endpoints and devices that are running Windows 10. But what happens when another (non-Microsoft) antivirus/antimalware solution is used? Can you run Microsoft Defender Antivirus alongside another antivirus product? The answers depend on several factors, such as your operating system and whether you're using [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) (Defender for Endpoint) together with your antivirus protection. 
 
-This article describes what happens between Microsoft Defender Antivirus, non-Microsoft antivirus/antimalware solutions, and Defender for Endpoint, and includes the following sections: <br/><br/>
-
-
-|Section  | Description  |
-|---------|---------|
-| [Microsoft Defender Antivirus and non-Microsoft antivirus/antimalware solutions](#microsoft-defender-antivirus-and-non-microsoft-antivirusantimalware-solutions)      | Describes what happens with Microsoft Defender Antivirus if a non-Microsoft antivirus solution is installed on the device. <br/><br/>**NOTE** This section focuses only on antivirus solutions and does not cover what happens when endpoints are onboarded to Defender for Endpoint.        |
-| [Important points about Microsoft Defender Antivirus](#important-points-about-microsoft-defender-antivirus) | Lists the versions of Windows that include Microsoft Defender Antivirus and describes active mode, passive mode, and disabled mode.  | 
-| [Defender for Endpoint together with antivirus solutions](#defender-for-endpoint-together-with-antivirus-solutions)     |  Describes what happens with Microsoft Defender Antivirus when a non-Microsoft antivirus solution is installed on devices that are onboarded to Defender for Endpoint.  |
-| [How Microsoft Defender Antivirus affects Defender for Endpoint functionality](#how-microsoft-defender-antivirus-affects-defender-for-endpoint-functionality)  | Summarizes Defender for Endpoint features and capabilities that are actively working or not, according to whether Microsoft Defender Antivirus is in active mode, passive mode, or disabled/uninstalled.   |
-| [Best practices regarding Defender for Endpoint and Microsoft Defender Antivirus](#best-practices-regarding-defender-for-endpoint-and-microsoft-defender-antivirus)  | Lists several important things to do (or not do) regarding Defender for Endpoint and your antivirus solution.   |
-| [How Defender for Endpoint extends antivirus/antimalware protection](#how-defender-for-endpoint-extends-your-antivirusantimalware-protection)   | Lists several scenarios showing how Defender for Endpoint extends your antivirus/antimwalware protection across your endpoints.   |
+This article describes what happens between Microsoft Defender Antivirus, non-Microsoft antivirus/antimalware solutions.
 
 ## Microsoft Defender Antivirus and non-Microsoft antivirus/antimalware solutions
 
