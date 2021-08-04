@@ -1,5 +1,5 @@
 ---
-title: Evaluate and pilot Microsoft 365 Defender, an XDR, to prevent, detect, investigate, respond, endpoints, identities, apps, email, collaborative applications, data.
+title: Evaluate and pilot Microsoft 365 Defender, an XDR
 description: Plan your Microsoft 365 Defender trial lab or pilot environment to test and experience a security solution designed to protect devices, identity, data, and applications.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
