@@ -174,7 +174,7 @@ To label an item in the Outlook desktop client, select the item. On the **Home**
   
 ![Assign Policy button](../media/30684dea-dd73-4e4a-9185-8e29f403b6ca.png)
   
-You can also right-click an item, click **Assign Policy** in the context menu, and then choose the retention label. When you select multiple items, you can use this method to efficiently assign the same retention label to multiple items at once.
+You can also right-click an item, click **Assign Policy** in the context menu, and then choose the retention label. When you select multiple items, you can use this method to assign the same retention label to multiple items at once.
 
 After the retention label is applied, you can view that retention label and what action it takes at the top of the item. If an email has a retention label applied that has an associated retention period, you can see at a glance when the email expires.
 
