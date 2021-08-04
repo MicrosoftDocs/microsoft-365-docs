@@ -46,7 +46,7 @@ The Overview tab also includes the following options:
 - **Export:** Select to export Cloud PC data to an Excel comma-separated values (.csv) file.
 - **Search:** Enter keywords to quickly locate a specific Cloud PC in the list.
 
-\[screenshot placeholder\]
+:::image type="content" source="../media/m365-lighthouse-win365-page-overview/win365-overview-tab.png" alt-text="Screenshot of the Windows 365 Overview tab.":::
 
 ## All Cloud PCs tab
 
@@ -74,7 +74,7 @@ The All Cloud PCs tab also includes the following options:
 
 To see a complete list of Cloud PC statuses and what they mean, see [Cloud PC overview page](/windows-365/device-management-overview#cloud-pc-overview-page) in the Windows 365 documentation library.
 
-\[screenshot placeholder\]
+:::image type="content" source="../media/m365-lighthouse-win365-page-overview/all-cloud-pcs-tab.png" alt-text="Screenshot of the Windows 365 All Cloud PCs tab.":::
 
 ## On-premises network connections tab
 
@@ -92,7 +92,7 @@ The On-premises network connections tab also includes the following options:
 - **Export:** Select to export connection data to an Excel comma-separated values (.csv) file.
 - **Search:** Enter keywords to quickly locate a specific connection.
 
-\[screenshot placeholder\]
+:::image type="content" source="../media/m365-lighthouse-win365-page-overview/on-prem-network-connections-tab.png" alt-text="Screenshot of the Windows 365 On-premises network connections tab.":::
 
 ## Related content
 
