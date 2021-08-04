@@ -82,6 +82,7 @@ Use the following table to help you identify the differences in behavior for the
 |:-----|:-----|:-----|
 |App dependency|Yes ([minimum versions](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps)) |No \* |
 |Restrict by location|No |Yes |
+|Conditions: Exact data match for custom sensitive info types|Yes |No |
 |Conditions: Trainable classifiers|Yes |No |
 |Conditions: Sharing options and additional options for email|No |Yes |
 |Conditions: Exceptions|No |Yes (email only) |
@@ -138,6 +139,12 @@ Also similarly to DLP policy configuration, you can choose whether a condition m
 
 > [!NOTE]
 > Auto-labeling based on custom sensitive information types applies only to newly created or modified content in OneDrive and SharePoint; not to existing content. This limitation also applies to auto-labeling polices.
+
+#### Custom sensitive information types with Exact Data Match
+
+You can configure a sensitivity label to use [Exact Data Match (EDM)-based classification](create-custom-sensitive-information-types-with-exact-data-match-based-classification) for custom sensitive types. However, currently, you must also specify at least one sensitive information type that doesn't use EDM. For example, one of the built-in sensitive information types.
+
+If you configure a sensitivity label with only EDM for your sensitive information type conditions, the auto-labeling setting is automatically turned off for the label.
 
 ### Configuring trainable classifiers for a label
 
