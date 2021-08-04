@@ -39,14 +39,14 @@ Microsoft Defender for Endpoint Device Control Removable Storage Access Control 
 |  |  |
 |---------|---------|
 |CSP Support     |  Yes       |
-|GPO Support     |    Yes     |
+|GPO Support     |  Yes     |
 |||
 
 #### Supported target scenario
 |  |  |
 |---------|---------|
 |User-based Support   | Yes       |
-|Machine-based Support     | mYes     |
+|Machine-based Support     | Yes     |
 |||
 
 
