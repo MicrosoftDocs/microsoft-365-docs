@@ -381,7 +381,7 @@ The recent enhancements now rolling out for auto-labeling policies for OneDrive 
 - Maximum of 1,000,000 matched files per auto-labeling policy, although the total of 25,000 automatically labeled files in your tenant per day remains the same.
 
 - Simulation improvements:
-    - Running the auto-labeling policy in simulation mode takes up to 12 hours to complete for the initial run, instead of up to 48 hours. Rerunning the policy takes less than 3 hours to complete.
+    - Running the auto-labeling policy in simulation mode completes within 12 hours for the initial run, instead of up to 48 hours. Rerunning the policy takes less than 3 hours to complete.
     - Better performance by providing up to 100 randomly sampled matched files for review for each site (OneDrive or SharePoint) instead of every matched item for review.
     - When simulation is complete, an email notification is sent to the user configured to receive [activity alerts](alert-policies.md).
 
