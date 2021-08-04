@@ -77,12 +77,12 @@ All our updates contain
 - integration improvements (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)).
 <br/>
 <details>
-<summary> July-2021 (Platform: 4.18.2107.4 | Engine: 1.1.18400.4)</summary>
+<summary> July-2021 (Platform: 4.18.2107.4 | Engine: 1.1.18400.x)</summary>
 
 &ensp;Security intelligence update version: **x.xxx.xx.x**  
 &ensp;Released: **date, 2021**  
 &ensp;Platform: **4.18.2107.4**  
-&ensp;Engine: **1.1.18400.4**  
+&ensp;Engine: **1.1.18400.x**  
 &ensp;Support phase: **Security and Critical Updates**
     
 ### What's new
