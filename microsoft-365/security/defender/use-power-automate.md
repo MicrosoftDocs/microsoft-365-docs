@@ -33,5 +33,13 @@ ms.technology: m365d
 > Want to experience Microsoft 365 Defender? You can [evaluate it in a lab environment](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) or [run your pilot project in production](m365d-pilot.md?ocid=cx-evalpilot).
 >
 
-Advanced hunting is a query-based threat hunting tool that lets you explore up to 30 days of raw data. You can proactively inspect events in your network to locate threat indicators and entities. The flexible access to data enables unconstrained hunting for both known and potential threats.
-<br><br>
+A few lines about power automate in Microsoft 365 Defender. 
+
+## What do you need to know before you begin?
+
+- 
+- 
+
+## 
+
+Link to the video
