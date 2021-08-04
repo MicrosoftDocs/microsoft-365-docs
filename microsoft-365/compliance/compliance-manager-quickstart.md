@@ -58,7 +58,7 @@ When you're comfortable managing assessments in Compliance Manager, you can work
 
 You can also set up automated testing of all or a subset of improvement actions. Visit the links below to understand more advanced functionality in Compliance Manager:
 
-- [Extend a Compliance Manager template by adding your own controls and improvement actions](compliance-manager-templates.md#extend-an-assessment-template)
+- [Extend a Compliance Manager template by adding your own controls and improvement actions](compliance-manager-templates.md#extend-microsoft-365-assessment-templates)
 - [Create your own custom template](compliance-manager-templates.md#create-an-assessment-template)
 - [Modify an existing template to add or remove controls and actions](compliance-manager-templates.md#modify-a-template)
 - [Set up automated testing of improvement actions](compliance-manager-setup.md#set-up-automated-testing)

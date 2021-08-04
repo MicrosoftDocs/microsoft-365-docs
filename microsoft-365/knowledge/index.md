@@ -1,5 +1,5 @@
 ---
-title: "Introduction to Microsoft Viva Topics"
+title: Introduction to Microsoft Viva Topics
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,7 +12,7 @@ ms.collection:
     - enabler-strategic
     - m365initiative-viva-topics
 localization_priority: None
-description: "Learn how to find resources for Microsoft Viva Topics."
+description: Learn how to find resources for Microsoft Viva Topics.
 ---
 
 # Introduction to Microsoft Viva Topics
@@ -34,11 +34,11 @@ The resources in this section help you learn more about what Viva Topics is and 
 
 | If you're looking for this information: | Go to this resource: |
 |:-----|:-----|
-|Learn more about Viva Topics|[Microsoft Viva Topics overview](topic-experiences-overview.md)|
+|Learn more about Viva Topics|[Viva Topics overview](topic-experiences-overview.md)|
 |Learn how topics are discovered and suggested by AI|[Microsoft Viva Topics discovery](topic-experiences-discovery.md)|
-|Learn about topic security|[Microsoft Viva security and privacy](topic-experiences-security-privacy.md)|
-|Learn how to get Viva Topics|[Microsoft Viva Topics product page](https://www.microsoft.com/microsoft-viva/topics?activetab=pivot%3aoverviewtab)|
-|See resources in the Microsoft Tech Community Resource Center|[Microsoft Viva Topics Tech Community](https://resources.techcommunity.microsoft.com/viva-topics/)|
+|Learn about topic security|[Viva Topics security and privacy](topic-experiences-security-privacy.md)|
+|Learn how to get Viva Topics|[Viva Topics product page](https://www.microsoft.com/microsoft-viva/topics?activetab=pivot%3aoverviewtab)|
+|See resources in the Microsoft Tech Community Resource Center|[Viva Topics Tech Community](https://resources.techcommunity.microsoft.com/viva-topics/)|
 
 
 
@@ -48,7 +48,8 @@ Learn more about how to use and implement Viva Topics in your organization to he
 
 | If you're looking for this information: | Go to this resource: |
 |:-----|:-----|
-|Learn how to start planning to use Microsoft Viva. |[Get started](topics-adoption-getstarted.md)<br><br>|  
+|Learn how to start planning to use Viva Topics |[Get started](topics-adoption-getstarted.md)|  
+|Set up and run a trial pilot program for Viva Topics |[Run a trial](trial-topics.md)|
 
 ## Set up and administration
 
@@ -56,7 +57,7 @@ The resources in this section help your admin in your organization to set up and
 
 | If you're looking for this information: | Go to this resource: |
 |:-----|:-----|
-|Learn how to set up and configure Microsoft Viva|[Set up Microsoft Viva](set-up-topic-experiences.md)|
+|Learn how to set up and configure Viva Topics|[Set up Viva Topics](set-up-topic-experiences.md)|
 |Learn how to configure user permissions|[Manage topic permissions](topic-experiences-user-permissions.md)|
 |Learn how to manage who can view topics|[Manage topic visibility](topic-experiences-knowledge-rules.md)|
 |Learn how to manage your topic discovery settings|[Manage topic discovery](topic-experiences-discovery.md)|

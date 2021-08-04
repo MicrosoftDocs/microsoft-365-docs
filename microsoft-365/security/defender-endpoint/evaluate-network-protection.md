@@ -50,7 +50,7 @@ Enable network protection in audit mode to see which IP addresses and domains wo
 
 The network connection will be allowed and a test message will be displayed.
 
-![Example notification that says Connection blocked: Your IT administrator caused Windows Security to block this network connection. Contact your IT help desk.](/microsoft-365/security/defender-endpoint/images/np-notif)
+![Example notification that says Connection blocked: Your IT administrator caused Windows Security to block this network connection. Contact your IT help desk.](images/np-notif.png)
 
 ## Review network protection events in Windows Event Viewer
 

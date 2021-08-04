@@ -15,6 +15,7 @@ ms.collection:
 ms.custom:
 - okr_smb
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - MET150
 description: "Each team member needs a user account before they can sign in and access Microsoft 365 for business. Learn how to add users and assign licenses."

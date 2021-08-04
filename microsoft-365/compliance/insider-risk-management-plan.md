@@ -18,6 +18,12 @@ ms.collection: m365-security-compliance
 
 Before getting started with [insider risk management](insider-risk-management.md) in your organization, there are important planning activities and considerations that should be reviewed by your information technology and compliance management teams. Thoroughly understanding and planning for deployment in the following areas will help ensure that your implementation and use of insider risk management features goes smoothly and is aligned with the best practices for the solution.
 
+Watch the video below to learn how the insider risk management workflow can help your organization prevent, detect, and contain risks while prioritizing your organization values, culture, and user experience:
+<br>
+<br>
+
+>[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4OUXB]
+
 ## Work with stakeholders in your organization
 
 Identify the appropriate stakeholders in your organization to collaborate for taking actions on insider risk management alerts and cases. Some recommended stakeholders to consider including in initial planning and the end-to-end [insider risk management workflow](insider-risk-management.md#workflow) are people from the following areas of your organization:
@@ -77,7 +83,7 @@ If you don't see any alerts immediately after configuring an insider risk manage
 Share insider risk management documentation with the stakeholders in your organization that are included in your management and remediation workflow:
 
 - [Create and manage insider risk policies](insider-risk-management-policies.md)
-- [Investigate insider risk alerts](insider-risk-management-alerts.md)
+- [Investigate insider risk activities](insider-risk-management-activities.md)
 - [Take action on insider risk cases](insider-risk-management-cases.md)
 - [Review case data with the insider risk Content explorer](insider-risk-management-content-explorer.md)
 - [Create insider risk notice templates](insider-risk-management-notices.md)

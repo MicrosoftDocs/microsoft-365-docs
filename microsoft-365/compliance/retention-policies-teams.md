@@ -192,12 +192,6 @@ If a user who has a mailbox in Exchange Online leaves your organization and thei
 
 If the user stored any files in Teams, see the [equivalent section](retention-policies-sharepoint.md#when-a-user-leaves-the-organization) for SharePoint and OneDrive.
 
-## Limitations
-
-We're continuously working on optimizing retention functionality in Teams. In the meantime, be aware of the following limitation when you use retention policies for Teams channel messages and chats:
-
-- **Incorrect display issue in Outlook**. If you create retention policies for Skype or Teams locations, one of those policies is shown as the default folder policy when a user views the properties of a mailbox folder in the Outlook desktop client. This is an incorrect display issue in Outlook and [a known issue](https://support.microsoft.com/help/4491013/outlook-client-displays-teams-or-skype-for-business-retention-policies). Instead, you should see the mailbox retention policy that's applied to the folder. The Skype or Teams retention policy is not applied to the user's mailbox.
-
 ## Configuration guidance
 
 If you're new to configuring retention in Microsoft 365, see [Get started with retention policies and retention labels](get-started-with-retention.md).

@@ -80,7 +80,7 @@ Audit log retention policies are listed on the **Audit retention policies** tab 
 
 ### View policies in the dashboard
 
-Audit log retention policies are listed in the dashboard. One advantage of viewing policies in the dashboard is that you can click the **Priority** column to list the policies in the priority in which they are applied. As previously explained, a higher value indicates a higher priority.
+Audit log retention policies are listed in the dashboard. One advantage of viewing policies in the dashboard is that you can click the **Priority** column to list the policies in the priority in which they are applied. As previously explained, a lower value indicates a higher priority.
 
 ![Priority column in the Audit retention policies dashboard](../media/AuditLogRetentionDashboardPriority.png)
 

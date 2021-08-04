@@ -15,7 +15,7 @@ description: "Learn how to transition from Microsoft Cloud Germany Exchange Onli
 ---
 # Update your MX records to transition to the global Exchange Online service
 
-1. Sign in to [Microsoft 365 admin portal](https://admin.microsoft.com), and go to **Settings** > **Domains**
+1. Sign in to [Microsoft 365 admin center](https://admin.microsoft.com), and go to **Settings** > **Domains**
 
 2. Status will be shown on the right side for each domain. If your organization’s domains point to Microsoft Cloud Germany Exchange Online, you'll need to update your MX record.
 

@@ -18,6 +18,7 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - commerce_purchase
+- AdminTemplateSet
 description: "Learn how to buy and manage add-ons for your Microsoft 365 for business subscription."
 ms.date: 04/02/2021
 ---
