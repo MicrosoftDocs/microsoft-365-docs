@@ -89,7 +89,6 @@ All our updates contain
 - Device control support added for Windows Portable Devices
 - Potentially unwanted applications (PUA) protection is turned on by default for consumers (See [Potentially unwanted apps will be blocked by default](https://support.microsoft.com/windows/potentially-unwanted-apps-will-be-blocked-by-default-b9f53cb9-7f1e-40bb-8c6b-a17e0ab6289e))
 - Scheduled scans for Group Policy Object managed systems will adhere to user configured scan time 
-- Improvements to the behavior monitoring engine
 
 ### Known Issues
 No known issues  
