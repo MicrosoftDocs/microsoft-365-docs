@@ -16,7 +16,7 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 07/12/2021
+ms.date: 08/04/2021
 ---
 
 # Manage Microsoft Defender Antivirus updates and apply baselines
@@ -110,14 +110,19 @@ No known issues
 ### Known Issues
 No known issues  
 <br/>
-</details><details>
+</details>
+
+### Previous version updates: Technical upgrade support only
+
+After a new package version is released, support for the previous two versions is reduced to technical support only. Versions older than that are listed in this section, and are provided for technical upgrade support only. 
+<details>
 <summary> April-2021 (Platform: 4.18.2104.14 | Engine: 1.1.18100.5)</summary>
 
 &ensp;Security intelligence update version: **1.337.2.0**  
 &ensp;Released: **April 26, 2021**  (Engine: 1.1.18100.6 released May 5, 2021)
 &ensp;Platform: **4.18.2104.14**  
 &ensp;Engine: **1.1.18100.5**  
-&ensp;Support phase: **Security and Critical Updates**
+&ensp;Support phase: **Technical upgrade support (only)**
     
 ### What's new
 - Additional behavior monitoring logic
@@ -128,12 +133,7 @@ No known issues
 ### Known Issues
 No known issues  
 <br/>
-</details>
-
-### Previous version updates: Technical upgrade support only
-
-After a new package version is released, support for the previous two versions is reduced to technical support only. Versions older than that are listed in this section, and are provided for technical upgrade support only. 
-<details>
+</details><details>
 <summary> March-2021 (Platform: 4.18.2103.7 | Engine: 1.1.18000.5)</summary>
 
 &ensp;Security intelligence update version: **1.335.36.0**  
