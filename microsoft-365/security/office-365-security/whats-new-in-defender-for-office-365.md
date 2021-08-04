@@ -41,14 +41,14 @@ Learn more by watching [this video](https://www.youtube.com/watch?v=Tdz6KfruDGo&
 
 - [Email analysis improvements in automated investigations](email-analysis-investigations.md)
 - [Advanced Delivery](configure-advanced-delivery.md): Introducing a new capability for configuring the delivery of third-party phishing simulations to users and unfiltered messages to security operation mailboxes.
+- [Safe Links for Microsoft Teams](safe-links.md#safe-links-settings-for-microsoft-teams)
 
 ## June 2021
 
 - New first contact safety tip setting within anti-phishing policies. This safety tip is shown when recipients first receive an email from a sender or do not often receive email from a sender. For more information on this setting and how to configure it, see the following articles:
-
-- [First contact safety tip](set-up-anti-phishing-policies.md#first-contact-safety-tip)
-- [Configure anti-phishing policies in EOP](configure-anti-phishing-policies-eop.md)
-- [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-mdo-anti-phishing-policies.md)
+  - [First contact safety tip](set-up-anti-phishing-policies.md#first-contact-safety-tip)
+  - [Configure anti-phishing policies in EOP](configure-anti-phishing-policies-eop.md)
+  - [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-mdo-anti-phishing-policies.md)
 
 ## April/May 2021
 
