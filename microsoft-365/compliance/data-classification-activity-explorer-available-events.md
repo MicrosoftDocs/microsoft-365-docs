@@ -58,7 +58,7 @@ This event is generated each time a sensitivity label is updated on the document
 |Source  |Reported in activity explorer|Note  |
 |---------|---------|---------| 
 |Word, Excel, PowerPoint         |yes         |
-|Outlook         |yes         |Win 32|
+|Outlook         |yes         | |
 |SharePoint Online, OneDrive         |yes         |
 |Exchange         |yes         |
 |AIP unified client         |yes         |
