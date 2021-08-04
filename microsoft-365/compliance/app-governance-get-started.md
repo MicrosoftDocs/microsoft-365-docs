@@ -22,7 +22,7 @@ To begin using the app governance add-on to Microsoft Cloud App Security:
 
 1. Verify your account has the [appropriate level of licensing](#licensing-for-app-governance). App governance is an add-on feature for Microsoft Cloud App Security (MCAS), and thus MCAS must be present in your account as either a standalone product or as part of the various license packages listed below.
 1. You must have one of the [administrator roles](#administrator-roles) listed below to access the app governance pages in the portal.
-1. Your organization's tenant registration must be within one of the [supported areas of North America, Europe, or Africa](app-governance-countries.md).
+1. Your organization's billing address must be within one of the [supported areas of North America, Europe, or Africa](app-governance-countries.md) in order to activate the free trial.
 
 ## Add app governance to your Microsoft 365 account
 
@@ -142,4 +142,3 @@ If you did not participate in private preview and would like to cancel your tria
 The app governance team has identified the following known issues for the preview: 
 
 - 2-way sync between Microsoft Defender and app governance alerts – currently alerts resolved in Defender will have to be manually resolved in app governance as well.
-- Priority accounts insights in App Users and Usage tabs will not work as expected for certain users.
