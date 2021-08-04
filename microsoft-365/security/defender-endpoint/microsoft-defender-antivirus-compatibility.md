@@ -15,7 +15,7 @@ ms.custom: nextgen
 ms.reviewer: mkaminska, pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.date: 08/03/2021
+ms.date: 08/04/2021
 ---
 
 # Microsoft Defender Antivirus compatibility
