@@ -63,9 +63,9 @@ In this phase, verify that the privileged access policy is working and that user
 
 ### Test the ability to execute a task NOT defined in a privileged access policy
 
-First, connect to Exchange Management PowerShell with the credentials of a user configured as a Global Administrator in your test environment and attempt to create a new Journal rule. The [New-JournalRule](/powershell/module/exchange/new-journalrule) task is not currently defined in a privileged access policy for your organization.
+First, connect to Exchange Management PowerShell with the credentials of a user configured with the Exchange Role Management role in your test environment and attempt to create a new Journal rule. The [New-JournalRule](/powershell/module/exchange/new-journalrule) task is not currently defined in a privileged access policy for your organization.
 
-1. On your local computer, open and sign in to the Exchange Online Remote PowerShell Module at **Microsoft Corporation** > **Microsoft Exchange Online Remote PowerShell Module** using the Global Admin account for your test environment.
+1. On your local computer, open and sign in to the Exchange Online Remote PowerShell Module at **Microsoft Corporation** > **Microsoft Exchange Online Remote PowerShell Module** using credentials with the Exchange Role Management role for your test environment.
 2. In Exchange Management PowerShell, create a new Journal rule for your organization:
 
    ```ExchangeManagementPowerShell
@@ -79,7 +79,7 @@ First, connect to Exchange Management PowerShell with the credentials of a user 
 >[!NOTE]
 >If you haven't already completed the Steps 1 and 2 from Phase 2 of this guide, be sure follow the steps to create an approver's group named "Privilege Access Approvers" to enable privileged access in your test environment.
 
-1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) using credentials the Global Admin account for your test environment.
+1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) using credentials with the Exchange Role Management role for your test environment.
 2. In the Admin Center, go to **Settings** > **Security & Privacy** > **Privileged access**.
 3. Select **Manage access policies and requests**.
 4. Select **Configure policies**, and then select **Add a policy**.
@@ -95,7 +95,7 @@ First, connect to Exchange Management PowerShell with the credentials of a user 
 
 ### Test approval requirement for the New-JournalRule task defined in a privileged access policy
 
-1. On your local computer, open and sign in to the Exchange Online Remote PowerShell Module at **Microsoft Corporation** > **Microsoft Exchange Online Remote PowerShell Module** using an using the Global Admin account for your test environment.
+1. On your local computer, open and sign in to the Exchange Online Remote PowerShell Module at **Microsoft Corporation** > **Microsoft Exchange Online Remote PowerShell Module** using credentials with the Exchange Role Management role for your test environment.
 
 2. In Exchange Management PowerShell, create a new Journal rule for your organization:
 
@@ -115,7 +115,7 @@ First, connect to Exchange Management PowerShell with the credentials of a user 
 
 ### Request access to create a new Journal Rule using the New-JournalRule task
 
-1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) using the Global Admin account for your test environment.
+1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) using credentials with the Exchange Role Management role for your test environment.
 
 2. In the Admin Center, go to **Settings** > **Security & Privacy** > **Privileged access**.
 
@@ -139,11 +139,11 @@ First, connect to Exchange Management PowerShell with the credentials of a user 
 
 3. Select **Manage access policies and requests**.
 
-4. Select the pending request, and then select **Approve** to grant access to the Global Admin account to create a new Journal Rule. The Global Admin account (the requesting user) will receive an email confirmation that approval was granted.
+4. Select the pending request, and then select **Approve** to grant access to the user account to create a new Journal Rule. The account (the requesting user) will receive an email confirmation that approval was granted.
 
 ### Test creating a new Journal Rule with privileged access approved for the New-JournalRule task
 
-1. On your local computer, open and sign in to the Exchange Online Remote PowerShell Module at **Microsoft Corporation** > **Microsoft Exchange Online Remote PowerShell Module** using the Global Admin account for your test environment.
+1. On your local computer, open and sign in to the Exchange Online Remote PowerShell Module at **Microsoft Corporation** > **Microsoft Exchange Online Remote PowerShell Module** using credentials with the Exchange Role Management role for your test environment.
 
 2. In Exchange Management PowerShell, create a new Journal rule for your organization:
 
