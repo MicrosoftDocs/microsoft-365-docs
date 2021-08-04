@@ -33,7 +33,7 @@ The migration wizard works by reading the configuration of your DLP policies in 
 > If you do not delete or deactivate the source policy in the EAC before you set the Compliance center version to **Enforce** both sets of policies will be attempting to enforce actions and you will receive duplicate events. ***This is an unsupported configuration.***
 
 
-The migration wizard only migrates EXO policies, not Exchange mail flow rules.
+The migration wizard only migrates EXO policies and associated mail flow rules. Standalone Exchange mail flow rules aren't migrated.
 
 ## Migration workflow
 
@@ -55,6 +55,7 @@ Before you get started with migrating DLP policies, you should confirm your [Mic
 
 To access and use the policy migration wizard, you must have one of these subscriptions or add-ons
 
+- Microsoft 365 E3
 - Microsoft 365 E5
 - Microsoft 365 A5 (EDU)
 - Microsoft 365 E5 compliance
@@ -107,7 +108,7 @@ After you have evaluated all your Exchange and Compliance center DLP policies fo
 >- [Use data loss prevention policies for non-Microsoft cloud apps](dlp-use-policies-non-microsoft-cloud-apps.md#use-data-loss-prevention-policies-for-non-microsoft-cloud-apps)
  
 8. Review the migration wizard session settings. Select **Next**.
-9. Review the migration report.
+9. Review the migration report. Pay attention to any failures involving Exchange mailflow rules. You can fix them and re-migrate the associated policies.
 
 The migrated policies will now appear in the list of DLP policies in the Compliance center DLP console. 
 
