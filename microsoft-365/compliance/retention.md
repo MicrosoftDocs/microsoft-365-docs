@@ -489,17 +489,17 @@ If you are using older eDiscovery tools to preserve data, see the following reso
 
 If you need to proactively retain or delete content in Microsoft 365 for information governance, we recommend that you use retention policies and retention labels instead of the following older features.
 
-If you currently use these older features, they will continue to work side by side with Microsoft 365 retention policies and retention labels. However, we recommend that going forward, you use Microsoft 365 retention policies and retention labels as applicable. They provide you with a single mechanism to centrally manage both retention and deletion of content across multiple workloads in Microsoft 365.
+If you currently use these older features, they will continue to work side by side with Microsoft 365 retention policies and retention labels. However, we recommend that going forward, you use Microsoft 365 retention policies and retention labels to benefit from a single solution to manage both retention and deletion of content across multiple workloads in Microsoft 365.
 
 **Older features from Exchange Online:**
 
 - [Retention tags and retention policies](/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies), also known as [messaging records management (MRM)](/exchange/security-and-compliance/messaging-records-management/messaging-records-management) (deletion only)
     
-    However, if you use the following MRM features, be aware that these aren't currently supported by Microsoft 365 retention policies:
-    
-    - Retention policies applied by an admin to specific folders within a mailbox. A Microsoft 365 retention policy applies to all folders in the mailbox. However, an admin can configure different retention settings by using retention labels that a user applies in Outlook as a [default retention label](create-apply-retention-labels.md#applying-a-default-retention-label-to-an-outlook-folder) to their folders, as needed.
+    However, if you use the following MRM features, be aware that they aren't currently supported by Microsoft 365 retention policies:
     
     - An archive policy for [archive mailboxes](enable-archive-mailboxes.md) to automatically move emails from a user's primary mailbox to their archive mailbox after a specified period of time. An archive policy (with any settings) can be used in conjunction with a Microsoft 365 retention policy that applies to a user's primary and archive mailbox.
+    
+    - Retention policies applied by an admin to specific folders within a mailbox. A Microsoft 365 retention policy applies to all folders in the mailbox. However, an admin can configure different retention settings by using retention labels that a user applies in Outlook as a [default retention label](create-apply-retention-labels.md#applying-a-default-retention-label-to-an-outlook-folder) to their folders, as needed.
 
 **Older features from SharePoint and OneDrive:**
 
