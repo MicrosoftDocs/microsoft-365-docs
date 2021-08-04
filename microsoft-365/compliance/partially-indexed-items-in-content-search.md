@@ -66,6 +66,9 @@ Similarly, messages with partially indexed file attachments and documents of a p
   
 For a list of email and document properties that you can search for by using the Search feature in the Security & Compliance Center, see [Keyword queries and search conditions for eDiscovery](keyword-queries-and-search-conditions.md).
   
+> [!NOTE]
+> When an item is moved from a folder that is part of Indexing, to a folder that is not part of Indexing, a flag is set to unindex the item and item would be removed from indexing. Later even if the item comes back from non-Indexed folder to Index folder, we do not reset the flag and so the item may still remain unindexed and non searchable.
+
 ## Partially indexed items included in the search results
 
 Your organization might be required to identify and perform additional analysis on partially indexed items to determine what they are, what they contain, and whether they're relevant to a specific investigation. As previously explained, the partially indexed items in the content locations that are searched are automatically included with the estimated search results. You have the option to include these partially indexed items when you export search results or prepare the search results for Advanced eDiscovery.
