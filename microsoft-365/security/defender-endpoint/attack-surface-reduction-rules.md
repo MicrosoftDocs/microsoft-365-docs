@@ -31,7 +31,7 @@ This article provides information about attack reduction rules:
 
 ## Supported operating systems
 
-Links to information about operating system versions referenced in this table are listed below this table.
+The following table lists attack surface reduction rules in alphabetical order. A check mark indicates the rule is supported by the operating system listed in that column.
 
 > [!Note]
 >
@@ -58,18 +58,6 @@ Links to information about operating system versions referenced in this table ar
 |[Block Win32 API calls from Office macros](#block-win32-api-calls-from-office-macros) | ![supported](images/checkmark.png) <br><br> | ![supported](images/checkmark.png) <br><br> | ![supported](images/checkmark.png) <br><br> |  |  |
 |[Use advanced protection against ransomware](#use-advanced-protection-against-ransomware) | ![supported](images/checkmark.png) <br><br> version 1803 or later | ![supported](images/checkmark.png) <br><br> | ![supported](images/checkmark.png) <br><br> |  |  |
 | **Rule name** |  **Windows&nbsp;10** | **Windows&nbsp;Server 2019** | **Windows&nbsp;Server** | **Windows&nbsp;Server 2016** | **Windows&nbsp;Server 2012 R2** |
-
-### Operating system version
-
-- [Windows 10, version 1709](/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windows 10 Pro, version 1709](/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windows 10 Enterprise, version 1709](/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windows 10, version 1803](/windows/whats-new/whats-new-windows-10-version-1803)
-- [Windows 10, version 1809](/windows/whats-new/whats-new-windows-10-version-1809)
-
-- [Windows Server, version 1803 (Semi-Annual Channel)](/windows-server/get-started/whats-new-in-windows-server-1803)
-- [Windows Server, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
-- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
 ## Supported configuration management systems
 
@@ -114,7 +102,7 @@ The **Block abuse of exploited vulnerable signed drivers** rule does not block a
 >
 > You can also configure this rule using [PowerShell](enable-attack-surface-reduction.md#powershell).
 >
-> To have a driver examined, use this Web site to [Submit a driver for analysis](https://www.microsoft.com/en-us/wdsi/driversubmission).
+> To have a driver examined, use this Web site to [Submit a driver for analysis](https://www.microsoft.com/wdsi/driversubmission).
 
 Intune Name: `Block abuse of exploited vulnerable signed drivers`
 
@@ -142,7 +130,7 @@ Intune name: `Office apps launching child processes`
 
 Configuration Manager name: `Block Office application from creating child processes`
 
-GUID: `D4F940AB-401B-4EFC-AADC-AD5F3C50688A`
+GUID: `d4f940ab-401b-4efc-aadc-ad5f3c50688a`
 
 ### Block credential stealing from the Windows local security authority subsystem
 
@@ -170,7 +158,7 @@ Intune name: `Execution of executable content (exe, dll, ps, js, vbs, etc.) drop
 
 Microsoft Endpoint Manager name: `Block executable content from email client and webmail`
 
-GUID: `BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550`
+GUID: `be9ba2d9-53ea-4cdc-84e5-9b1eeee46550`
 
 > [!NOTE]
 > The rule **Block executable content from email client and webmail** has the following alternative descriptions, depending on which application you use:
@@ -212,7 +200,7 @@ Intune name: `Obfuscated js/vbs/ps/macro code`
 
 Configuration Manager name: `Block execution of potentially obfuscated scripts`
 
-GUID: `5BEB7EFE-FD9A-4556-801D-275E5FFC04CC`
+GUID: `5beb7efe-fd9a-4556-801d-275e5ffc04cc`
 
 ### Block JavaScript or VBScript from launching downloaded executable content
 
@@ -224,7 +212,7 @@ Intune name: `js/vbs executing payload downloaded from Internet (no exceptions)`
 
 Configuration Manager name: `Block JavaScript or VBScript from launching downloaded executable content`
 
-GUID: `D3E037E1-3EB8-44C8-A917-57927947596D`
+GUID: `d3e037e1-3eb8-44c8-a917-57927947596d`
 
 ### Block Office applications from creating executable content
 
@@ -236,7 +224,7 @@ Intune name: `Office apps/macros creating executable content`
 
 SCCM name: `Block Office applications from creating executable content`
 
-GUID: `3B576869-A4EC-4529-8536-B80A7769E899`
+GUID: `3b576869-a4ec-4529-8536-b80a7769e899`
 
 ### Block Office applications from injecting code into other processes
 
@@ -252,7 +240,7 @@ Intune name: `Office apps injecting code into other processes (no exceptions)`
 
 Configuration Manager name: `Block Office applications from injecting code into other processes`
 
-GUID: `75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84`
+GUID: `75668c1f-73b5-4cf0-bb93-3ecf5cb7cc84`
 
 ### Block Office communication application from creating child processes
 
@@ -324,7 +312,7 @@ Intune name: `Win32 imports from Office macro code`
 
 Configuration Manager name: `Block Win32 API calls from Office macros`
 
-GUID: `92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B`
+GUID: `92e97fa1-2edf-4476-bdd6-9dd0b4dddc7b`
 
 ### Use advanced protection against ransomware
 

@@ -139,7 +139,7 @@ When you select an entry from the list, a details flyout appears that contains t
 - What you need to do.
 - A domain summary that includes most of the same information from the main spoof intelligence page.
 - WhoIs data about the sender.
-- A link to open [Threat Explorer](threat-explorer.md) to see additional details about the sender (Microsoft Defender for Office 365).
+- A link to open [Threat Explorer](threat-explorer.md) to see additional details about the sender under **View** \> **Phish** in Microsoft Defender for Office 365.
 - Similar messages we have seen in your tenant from the same sender.
 
 ### About allowed spoofed senders

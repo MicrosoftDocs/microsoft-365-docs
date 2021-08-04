@@ -74,9 +74,9 @@ You view and manage quarantined messages in the Microsoft 365 Defender portal or
 
 3. You can sort the results by clicking on an available column header. Click **Modify columns** to show a maximum of seven columns. The default values are marked with an asterisk (<sup>\*</sup>):
 
-   - **Received**<sup>\*</sup>
-   - **Sender**<sup>\*</sup>
    - **Subject**<sup>\*</sup>
+   - **Time Received**<sup>\*</sup>
+   - **Sender**<sup>\*</sup>
    - **Quarantine reason**<sup>\*</sup>
    - **Released?**<sup>\*</sup>
    - **Policy type**<sup>\*</sup>
@@ -84,10 +84,10 @@ You view and manage quarantined messages in the Microsoft 365 Defender portal or
    - **Recipient**
    - **Message ID**
    - **Policy name**
-   - **Size**
-   - **Direction**
+   - **Message size**
+   - **Mail direction**
 
-   When you're finished, click **Save**, or click **Set to default**.
+   When you're finished, click **Apply**.
 
 4. To filter the results, click **Filter**. The available filters are:
    - **Expires time**: Filter messages by when they will expire from quarantine:
@@ -99,7 +99,7 @@ You view and manage quarantined messages in the Microsoft 365 Defender portal or
    - **Quarantine reason**:
      - **Policy**: The message matched the conditions of a mail flow rule (also known as a transport rule).
      - **Bulk**
-     - **Phish**: The spam filter verdict was **Phishing email** or anti-phishing protection quarantined the message ([spoof settings](set-up-anti-phishing-policies.md#spoof-settings) or [impersonation protection](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)).
+     - **Phish**: The spam filter verdict was **Phishing** or anti-phishing protection quarantined the message ([spoof settings](set-up-anti-phishing-policies.md#spoof-settings) or [impersonation protection](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)).
      - **Malware**
      - **Spam**
      - **High Confidence Phish**
@@ -124,7 +124,7 @@ You view and manage quarantined messages in the Microsoft 365 Defender portal or
    - **Subject**: Use the entire subject of the message. The search is not case-sensitive.
    - **Policy name**: The name of the policy that was responsible for quarantining the message.
 
-   After you've entered the search criteria, click ![Refresh button](../../media/scc-quarantine-refresh.png) **Refresh** to filter the results.
+   After you've entered the search criteria, click !**Refresh** to filter the results.
 
 After you find a specific quarantined message, select the message to view details about it, and to take action on it (for example, view, release, download, or delete the message).
 
@@ -150,11 +150,11 @@ After you select a message, you have several options for what to do with the mes
 - **Release message**: In the flyout that appears, choose the following options:
   - **Report messages to Microsoft for analysis**: This is selected by default, and reports the erroneously quarantined message to Microsoft as a false positive. If the message was quarantined as spam, bulk, phishing, or containing malware, the message is also reported to the Microsoft Spam Analysis Team. Depending on their analysis, the service-wide spam filter rules might be adjusted to allow the message through.
   - Choose one of the following options:
-    - **Release messages to all recipients**
-    - **Release messages to specific recipients**
-    - **Release messages to other people**: Note that releasing malware messages to people other than original recipients is not supported.
+    - **Release to all recipients**
+    - **Release to specific recipients**
+  - **Report messages to Microsoft to improve detection**: This is selected by default, and reports the erroneously quarantined message to Microsoft as a false positive. If the message was quarantined as spam, bulk, phishing, or containing malware, the message is also reported to the Microsoft Spam Analysis Team. Depending on their analysis, the service-wide spam filter rules might be adjusted to allow the message through.
 
-  When you're finished, click **Release messages**.
+  When you're finished, click **Release message**.
 
   Notes about releasing messages:
 
@@ -189,7 +189,7 @@ When you select multiple quarantined messages in the list (up to 100), the **Bul
 
 - **Delete messages**:  After you click **Yes** in the warning that appears, the messages are immediately deleted without being sent to the original recipients.
 
-When you're finished, click **Close**.
+- **Download messages**
 
 ## Use the Microsoft 365 Defender portal to manage quarantined files in Defender for Office 365
 
@@ -207,13 +207,15 @@ In organizations with Defender for Office 365, admins can manage quarantined fil
 3. You can sort the results by clicking on an available column header. Click **Modify columns** to show a maximum of seven columns. The default columns are marked with an asterisk (<sup>\*</sup>):
    - **User**<sup>\*</sup>
    - **Location**<sup>\*</sup>
-   - **File name**<sup>\*</sup>
+   - **Attachment filename**<sup>\*</sup>
    - **File URL**<sup>\*</sup>
    - **File Size**<sup>\*</sup>
-   - **Expires**<sup>\*</sup>
    - **Released?**<sup>\*</sup>
+   - **Expires**<sup>\*</sup>
    - **Detected by**
    - **Modified by time**
+
+   When you're finished, click **Apply** or **Cancel**.
 
 4. To filter the results, click **Filter**. The available filters are:
    - **Expires time**: Filter messages by when they will expire from quarantine:
@@ -224,6 +226,8 @@ In organizations with Defender for Office 365, admins can manage quarantined fil
    - **Received time**
    - **Quarantine reason**: The only available value is **Malware**.
    - **Policy type**
+
+   When you're finished, click **Apply** or **Cancel**.
 
 After you find a specific quarantined file, select the file to view details about it, and to take action on it (for example, view, release, download, or delete the message).
 
