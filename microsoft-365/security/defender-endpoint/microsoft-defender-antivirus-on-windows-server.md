@@ -177,9 +177,13 @@ See [Configure exclusions in Microsoft Defender Antivirus on Windows Server](con
 
 If you are using a non-Microsoft antivirus product as your primary antivirus solution on Windows Server, you must set Microsoft Defender Antivirus to passive mode or disabled mode.
 
-- On Windows Server, version 1803 or newer, or Windows Server 2019, you can set Microsoft Defender Antivirus to passive mode.  
+- On Windows Server, version 1803 or newer, or Windows Server 2019, you can set Microsoft Defender Antivirus to passive mode.  See the following sections:
+   
+   - [Set Microsoft Defender Antivirus to passive mode using a registry key](#set-microsoft-defender-antivirus-to-passive-mode-using-a-registry-key)
+   - [Disable Microsoft Defender Antivirus using the Remove Roles and Features wizard](#disable-microsoft-defender-antivirus-using-the-remove-roles-and-features-wizard)
+   - [Turn off the Microsoft Defender Antivirus user interface using PowerShell](#turn-off-the-microsoft-defender-antivirus-user-interface-using-powershell) 
 
-- On Windows Server 2016, Microsoft Defender Antivirus is not supported alongside a non-Microsoft antivirus/antimalware product. In these cases, you must set Microsoft Defender Antivirus to disabled mode.
+- On Windows Server 2016, Microsoft Defender Antivirus is not supported alongside a non-Microsoft antivirus/antimalware product. In these cases, you must set Microsoft Defender Antivirus to disabled mode. See [Uninstalling or disabling Microsoft Defender Antivirus on Windows Server 2016](#uninstalling-or-disabling-microsoft-defender-antivirus-on-windows-server-2016)
 
 ### Set Microsoft Defender Antivirus to passive mode using a registry key
 
