@@ -33,13 +33,13 @@ ms.technology: m365d
 > Want to experience Microsoft 365 Defender? You can [evaluate it in a lab environment](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) or [run your pilot project in production](m365d-pilot.md?ocid=cx-evalpilot).
 >
 
-Modern security operations teams need automation to work effectively. To focus on hunting and investigating real threats, SecOps teams use Power Automate to triage through the list of alerts and eliminate the ones that are not threats.  
+Modern security operations teams need automation to work effectively. To focus on hunting and investigating real threats, SecOps teams use Power Automate to triage through the list of alerts and eliminate the ones that aren't threats.  
 
 ## Criteria for resolving alerts
 
 - User has Out-of-office message turned on
 
-- User is not tagged as high risk
+- User isn't tagged as high risk
 
 If both are true, SecOps marks the alert as legitimate travel and resolves it. A notification is posted in Microsoft Teams after the alert is resolved. 
 
