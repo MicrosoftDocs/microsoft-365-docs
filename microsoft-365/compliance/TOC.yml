@@ -507,6 +507,8 @@
               href: archive-17a-4-refinitiv-messenger-data.md
             - name: ServiceNow DataParser 
               href: archive-17a-4-servicenow-data.md
+            - name: Skype for Business Server DataParser 
+              href: archive-17a-4-skype-for-business-server-data.md
             - name: Slack DataParser 
               href: archive-17a-4-slack-data.md
             - name: SQL DataParser 
