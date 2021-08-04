@@ -84,7 +84,6 @@ reference](/windows/security/threat-protection/microsoft-defender-atp/advanced-h
 |`NetworkLocationDetails`|string|Network location details of the authentication processor of the sign-in event|
 |`RequestId`|string|Unique identifier of the request|
 |`ReportId`|string|Unique identifier for the event|
-|
 
 ## Related articles
 

@@ -3,7 +3,6 @@ title: What's new in Microsoft Defender for Office 365
 description: Learn about the new features and functionality available in the latest release of Microsoft Defender for Office 365.
 keywords: what's new in Microsoft Defender for Office 365, ga, generally available, capabilities, available, new
 search.appverid: met150
-
 ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
@@ -17,7 +16,7 @@ ms.collection:
   - M365-security-compliance
   - m365initiative-defender-office365
 ms.topic: conceptual
-ms.date: 01/12/2021
+ms.date: 07/27/2021
 ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
@@ -38,13 +37,18 @@ Learn more by watching [this video](https://www.youtube.com/watch?v=Tdz6KfruDGo&
 > [!TIP]
 > Don't have Microsoft Defender for Office 365 yet? [Contact sales to start a trial](https://info.microsoft.com/ww-landing-M365SMB-web-contact.html).
 
+## July 2021
+
+- [Email analysis improvements in automated investigations](email-analysis-investigations.md)
+- [Advanced Delivery](configure-advanced-delivery.md): Introducing a new capability for configuring the delivery of third-party phishing simulations to users and unfiltered messages to security operation mailboxes.
+- [Safe Links for Microsoft Teams](safe-links.md#safe-links-settings-for-microsoft-teams)
+
 ## June 2021
 
 - New first contact safety tip setting within anti-phishing policies. This safety tip is shown when recipients first receive an email from a sender or do not often receive email from a sender. For more information on this setting and how to configure it, see the following articles:
-
-- [First contact safety tip](set-up-anti-phishing-policies.md#first-contact-safety-tip)
-- [Configure anti-phishing policies in EOP](configure-anti-phishing-policies-eop.md)
-- [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-mdo-anti-phishing-policies.md)
+  - [First contact safety tip](set-up-anti-phishing-policies.md#first-contact-safety-tip)
+  - [Configure anti-phishing policies in EOP](configure-anti-phishing-policies-eop.md)
+  - [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-mdo-anti-phishing-policies.md)
 
 ## April/May 2021
 

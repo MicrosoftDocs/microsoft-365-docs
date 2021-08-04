@@ -18,6 +18,7 @@ ms.custom:
 - OKR_SMB_Videos
 - okr_smb
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - MET150
 - MOE150

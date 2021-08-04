@@ -16,6 +16,7 @@ ms.collection:
 ms.custom: 
 - AdminSurgePortfolio
 - commerce_subscriptions
+- AdminTemplateSet
 search.appverid: MET150
 description: "Learn what happens to your data when your Microsoft 365 for business subscription expires, is disabled, or if you cancel."
 ms.date: 04/08/2021

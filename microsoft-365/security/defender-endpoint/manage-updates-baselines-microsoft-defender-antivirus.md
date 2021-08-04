@@ -16,7 +16,7 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 07/06/2021
+ms.date: 07/12/2021
 ---
 
 # Manage Microsoft Defender Antivirus updates and apply baselines
@@ -32,7 +32,7 @@ Keeping Microsoft Defender Antivirus up to date is critical to assure your devic
 - Product updates
 
 > [!TIP]
-> To see the most current engine, platform, and signature date, visit the [Security intelligence updates for Microsoft Defender Antivirus and other Microsoft antimalware](https://www.microsoft.com/en-us/wdsi/defenderupdates)
+> To see the most current engine, platform, and signature date, visit the [Security intelligence updates for Microsoft Defender Antivirus and other Microsoft antimalware](https://www.microsoft.com/wdsi/defenderupdates)
 
 ## Security intelligence updates
 
@@ -467,7 +467,7 @@ Platform and engine updates are provided on a monthly cadence. To be fully suppo
 
 \* Technical support will continue to be provided for upgrades from the Windows 10 release version (see [Platform version included with Windows 10 releases](#platform-version-included-with-windows-10-releases)) to the latest platform version.
 
-During the technical support (only) phase, commercially reasonable support incidents will be provided through Microsoft Customer Service & Support and Microsoft’s managed support offerings (such as Premier Support). If a support incident requires escalation to development for further guidance, requires a non-security update, or requires a security update, customers will be asked to upgrade to the latest platform version or an intermediate update (*).
+During the technical support (only) phase, commercially reasonable support incidents will be provided through Microsoft Customer Service & Support and Microsoft's managed support offerings (such as Premier Support). If a support incident requires escalation to development for further guidance, requires a non-security update, or requires a security update, customers will be asked to upgrade to the latest platform version or an intermediate update (*).
 
 ### Platform version included with Windows 10 releases
 The below table provides the Microsoft Defender Antivirus platform and engine versions that are shipped with the latest Windows 10 releases:    
@@ -492,6 +492,20 @@ We recommend updating your Windows 10 (Enterprise, Pro, and Home editions), Wind
 For more information, see [Microsoft Defender update for Windows operating system installation images](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images).
 
 <details>
+<summary>1.1.2107.02</summary>
+
+&ensp;Package version: **1.1.2107.02**    
+&ensp;Platform version: **4.18.2105.5**   
+&ensp;Engine version: **1.1.18300.4**  
+&ensp;Signature version: **1.343.658.0**    
+    
+### Fixes
+- None
+
+### Additional information
+- None  
+<br/>
+</details><details>
 <summary>1.1.2106.01</summary>
 
 &ensp;Package version: **1.1.2106.01**    

@@ -69,7 +69,7 @@ After the mailbox is placed on hold or a retention policy is applied to it, the 
 
 To view a list of the inactive mailboxes in your organization:
 
-1. Go to <https://compliance.microsoft.com> and sign in using the credentials for an administrator account in your organization.
+1. Go to <https://compliance.microsoft.com> and sign in using the credentials for an Global administrator or a Compliance administrator account in your organization.
 
 2. In the left navigation pane of the Microsoft 365 compliance center, click **Show all**, and then click **Information governance > Retention**.
 

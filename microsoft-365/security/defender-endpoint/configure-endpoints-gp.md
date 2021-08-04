@@ -1,6 +1,6 @@
 ---
 title: Onboard Windows 10 devices to Microsoft Defender for Endpoint via Group Policy
-description: Use Group Policy to deploy the configuration package on Windows 10 devices so that they are onboarded to the service.
+description: Use Group Policy to deploy the configuration package on the Windows 10 devices so that they are onboarded to the service.
 keywords: configure devices using group policy, device management, configure Microsoft Defender for Endpoint devices, onboard Microsoft Defender for Endpoint devices, group policy
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,7 +19,8 @@ ms.date: 04/24/2018
 ms.technology: mde
 ---
 
-# Onboard Windows 10 devices using Group Policy 
+
+# Onboard the Windows 10 devices using Group Policy 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -29,7 +30,7 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configureendpointsgp-abovefoldlink)
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configureendpointsgp-abovefoldlink)
 
 > [!NOTE]
 > To use Group Policy (GP) updates to deploy the package, you must be on Windows Server 2008 R2 or later.
@@ -42,9 +43,11 @@ ms.technology: mde
 
 Check out the [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)  or  [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) to see the various paths in deploying Defender for Endpoint.
 
-1. Open the GP configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from [Microsoft Defender Security Center](https://securitycenter.windows.com/):
+1. Open the GP configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from [Microsoft 365 Defender portal](https://security.microsoft.com/):
 
-    1. In the navigation pane, select **Settings** > **Onboarding**.
+1. Open the GP configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from [Microsoft 365 Defender](https://security.microsoft.com/):
+ 
+    1. In the navigation pane, select **Settings** > **Endpoints** > **Device management**  > **Onboarding**.
 
     1. Select Windows 10 as the operating system.
 
@@ -64,15 +67,17 @@ Check out the [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/publ
 
 7. Select **Run whether user is logged on or not** and check the **Run with highest privileges** check box.
 
-8. Go to the **Actions** tab and click **New...** Ensure that **Start a program** is selected in the **Action** field. Enter the file name and location of the shared *WindowsDefenderATPOnboardingScript.cmd* file.
+8. In the Name field, type an appropriate name for the scheduled task (for example, Defender for Endpoint Deployment).
 
-9. Click **OK** and close any open GPMC windows.
+9. Go to the **Actions** tab and select **New...** Ensure that **Start a program** is selected in the **Action** field. Enter the UNC path, using the file server's fully qualified domain name (FQDN), of the shared *WindowsDefenderATPOnboardingScript.cmd* file.
+
+10. Select **OK** and close any open GPMC windows.
 
 > [!TIP]
 > After onboarding the device, you can choose to run a detection test to verify that the device is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Defender for Endpoint device](run-detection-test.md).
 
 ## Additional Defender for Endpoint configuration settings
-For each device, you can state whether samples can be collected from the device when a request is made through Microsoft Defender Security Center to submit a file for deep analysis.
+For each device, you can state whether samples can be collected from the device when a request is made through Microsoft 365 Defender to submit a file for deep analysis.
 
 You can use Group Policy (GP) to configure settings, such as settings for the sample sharing used in the deep analysis feature.
 
@@ -85,7 +90,7 @@ You can use Group Policy (GP) to configure settings, such as settings for the sa
 
     - Copy _AtpConfiguration.adml_ into _C:\\Windows\\PolicyDefinitions\\en-US_
 
-    If you are using a [Central Store for Group Policy Administrative Templates](https://support.microsoft.com/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra), copy the following files from the
+    If you're using a [Central Store for Group Policy Administrative Templates](https://support.microsoft.com/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra), copy the following files from the
     configuration package:
 
     - Copy _AtpConfiguration.admx_ into _\\\\\<forest.root\>\\SysVol\\\<forest.root\>\\Policies\\PolicyDefinitions_
@@ -98,7 +103,7 @@ You can use Group Policy (GP) to configure settings, such as settings for the sa
 
 4. Click **Policies**, then **Administrative templates**.
 
-5. Click **Windows components** and then **Windows Defender SmartScreen**.
+5. Click **Windows components** and then **Windows Defender ATP**.
 
 6. Choose to enable or disable sample sharing from your devices.
 
@@ -181,14 +186,15 @@ Configure Controlled folder access| Enabled, Audit Mode
 
 ## Offboard devices using Group Policy
 
-For security reasons, the package used to Offboard devices will expire 30 days after the date it was downloaded. Expired offboarding packages sent to a device will be rejected. When downloading an offboarding package you will be notified of the packages expiry date and it will also be included in the package name.
+For security reasons, the package used to Offboard devices will expire 30 days after the date it was downloaded. Expired offboarding packages sent to a device will be rejected. When downloading an offboarding package you'll be notified of the packages expiry date and it will also be included in the package name.
 
 > [!NOTE]
 > Onboarding and offboarding policies must not be deployed on the same device at the same time, otherwise this will cause unpredictable collisions.
 
-1. Get the offboarding package from [Microsoft Defender Security Center](https://securitycenter.windows.com/):
 
-    1. In the navigation pane, select **Settings** > **Offboarding**.
+1. Get the offboarding package from [Microsoft 365 Defender portal](https://security.microsoft.com/):
+
+    1. In the navigation pane, select **Settings** > **Endpoints** > **Device management** > **Offboarding**.
 
     1. Select Windows 10 as the operating system.
 
@@ -208,21 +214,23 @@ For security reasons, the package used to Offboard devices will expire 30 days a
 
 7. Select **Run whether user is logged on or not** and check the **Run with highest privileges** check-box.
 
-8. Go to the **Actions** tab and click **New...**. Ensure that **Start a program** is selected in the **Action** field. Enter the NetBIOS path of the shared *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd* file.
+8. In the Name field, type an appropriate name for the scheduled task (for example, Defender for Endpoint Deployment).
 
-9. Click **OK** and close any open GPMC windows.
+9. Go to the **Actions** tab and select **New...**. Ensure that **Start a program** is selected in the **Action** field. Enter the UNC path, using the file server's fully qualified domain name (FQDN), of the shared *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd* file.
+
+10. Select **OK** and close any open GPMC windows.
 
 > [!IMPORTANT]
 > Offboarding causes the device to stop sending sensor data to the portal but data from the device, including reference to any alerts it has had will be retained for up to 6 months.
 
 ## Monitor device configuration
 
-With Group Policy there isn’t an option to monitor deployment of policies on the devices. Monitoring can be done directly on the portal, or by using the different deployment tools.
+With Group Policy there isn't an option to monitor deployment of policies on the devices. Monitoring can be done directly on the portal, or by using the different deployment tools.
 
 ## Monitor devices using the portal
 
-1. Go to [Microsoft Defender Security Center](https://securitycenter.windows.com/).
-2. Click **Devices list**.
+1. Go to [Microsoft 365 Defender portal](https://security.microsoft.com/).
+2. Click **Devices inventory**.
 3. Verify that devices are appearing.
 
 > [!NOTE]

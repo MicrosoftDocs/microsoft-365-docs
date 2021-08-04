@@ -39,7 +39,7 @@ If you found this video helpful, check out the [complete training series for sma
 
 If a user has a computer that includes many personal files, you should first move those files to OneDrive for Business:
   
-1. Go to portal.office.com and sign in with the user's Microsoft 365 for business credentials.
+1. Go to admin.microsoft.com and sign in with the user's Microsoft 365 for business credentials.
 
 2. Click the app launcher ![The app launcher icon in Office 365](../media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png) and go to OneDrive. 
     

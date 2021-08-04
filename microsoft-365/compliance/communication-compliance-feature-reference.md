@@ -29,9 +29,6 @@ search.appverid:
 
 You create communication compliance policies for Microsoft 365 organizations in the Microsoft 365 compliance center. Communication compliance policies define which communications and users are subject to review in your organization, define which custom conditions the communications must meet, and specify who should do reviews. Users assigned the *Communication Compliance Admin* role can set up policies, and anyone who has this role assigned can access the **Communication compliance** page and global settings in the Microsoft 365 compliance center. If needed, you can export the history of modifications to a policy to a .csv (comma-separated values) file that also includes the status of alerts pending review, escalated items, and resolved items. Policies can't be renamed and can be deleted when no longer needed.
 
-> [!NOTE]
-> Supervision policies created in the Security & Compliance Center for Office 365 subscriptions cannot migrate to Microsoft 365. If you're migrating from an Office 365 subscription to a Microsoft 365 subscription, you'll need to create new communication compliance polices to replace existing Supervision policies.
-
 ## Policy templates
 
 Policy templates are pre-defined policy settings that you can use to quickly create policies to address common compliance scenarios. Each of these templates has differences in conditions and scope, and all templates use the same types of scanning signals. You can choose from the following policy templates:
@@ -45,9 +42,9 @@ Policy templates are pre-defined policy settings that you can use to quickly cre
 
 Communications are scanned every 24 hours from the time policies are created. For example, if you create an offensive language policy at 11:00 AM, the policy will gather communication compliance signals every 24 hours at 11:00 AM daily. Editing a policy doesn't change this time. To view the last scan date and time for a policy, navigate to the *Last policy scan* column on the **Policy** page. After creating a new policy, it may take up to 24 hours to view the first policy scan date and time. The date and time of the last scan are converted to the time zone of your local system.
 
-## Pausing a policy (preview)
+## Pause a policy (preview)
 
-After you've created a communication compliance policy, the policy may be temporarily paused if needed. Pausing a policy may be used for testing or troubleshooting policy matches, or for optimizing policy conditions. Instead of deleting a policy in these circumstances, pausing a policy also preserves existing policy alerts and messages for ongoing investigations and reviews. Pausing a policy prevents inspect and alert generation for all user message conditions defined in the policy for the time the policy is paused. To pause or restart a policy, users must be a member of the *Communication Compliance Admin* role group.
+After you've created a communication compliance policy, the policy may be temporarily paused if needed. Pausing a policy may be used for testing or troubleshooting policy matches, or for optimizing policy conditions. Instead of deleting a policy in these circumstances, pausing a policy also preserves existing policy alerts and messages for ongoing investigations and reviews. Pausing a policy prevents inspection and alert generation for all user message conditions defined in the policy for the time the policy is paused. To pause or restart a policy, users must be a member of the *Communication Compliance Admin* role group.
 
 To pause a policy, navigate to the **Policy** page, select a policy, and then select **Pause policy** from the actions toolbar. On the **Pause policy** pane, confirm you'd like to pause the policy by selecting **Pause**. In some cases, it may take up to 24 hours for a policy to be paused. Once the policy is paused, alerts for messages matching the policy aren't created. However, messages associated with alerts that were created prior to pausing the policy remain available for investigation, review, and remediation.
 
@@ -61,6 +58,36 @@ The policy status for paused policies may indicate several states:
 - **Error in pausing**: An error has been encountered when pausing the policy. For the error stack trace, hover your mouse over the *Error in pausing* status in the Status column on the Policy page.
 
 To resume a policy, navigate to the **Policy** page, select a policy, and then select **Resume policy** from the actions toolbar. On the **Resume policy** pane, confirm you'd like to resume the policy by selecting **Resume**. In some cases, it may take up to 24 hours for a policy to be resumed. Once the policy is resumed, alerts for messages matching the policy will be created and will be available for investigation, review, and remediation.
+
+## Copy a policy (preview)
+
+For organizations with existing communication compliance policies, there may be scenarios when creating a new policy from an existing policy may be helpful. Copying a policy creates an exact duplicate of an existing policy, including all in-scope users, all assigned reviewers, and all policy conditions. Some scenarios may include:
+
+- **Policy storage limit reached**: Active communication compliance policies have message storage limits. When the storage limit for a policy is reached, the policy is automatically deactivated. Organizations that need to continue to detect, capture, and act on inappropriate messages covered by the deactivated policy can quickly create a new policy with an identical configuration.
+- **Detect and review inappropriate messages for different groups of users**: Some organizations may prefer to create multiple policies with the same configuration but include different in-scope users and different reviewers for each policy.
+- **Similar policies with small changes**: For policies with complex configurations or conditions, it may save time to create a new policy from a similar policy.
+
+To copy a policy, users must be a member of the *Communication Compliance* or *Communication Compliance Admin* role groups. After a new policy is created from an existing policy, it may take up to 24 hours to view messages that match the new policy configuration.
+
+To copy a policy and create a new policy, complete the following steps:
+
+1. Select the policy you want to copy.
+2. Select **Copy policy** command bar button on the command bar, or select **Copy policy** from the action menu for the policy.
+3. In the **Copy policy** pane, you can accept the default name for the policy in the **Policy name** field or rename the policy. The policy name for the new policy cannot be the same as an existing active or deactivated policy. Complete the **Description** field as needed.
+4. If you don't need further customization of the policy, select **Copy policy** to complete the process. If you need to update the configuration of the new policy, select **Customize policy**. This starts the policy wizard to help you update and customize the new policy.
+
+## Storage limit notification (preview)
+
+Each communication compliance policy has a storage limit size of 100-GB or 1 million messages, whichever is reached first. As the policy approaches these limits, notification emails are automatically sent to users assigned to the *Communication Compliance* or *Communication Compliance Admin* role groups. Notifications messages are sent when the storage size or message count reach 80, 90, and 95 percent of the limit. When the policy limit is reached, the policy is automatically deactivated, and the policy stops processing messages for alerts.
+
+>[!IMPORTANT]
+>If a policy is deactivated due to reaching the storage and message limits, be sure to evaluate how to manage the deactivated policy. If you delete the policy, all messages, associated attachments, and message alerts will be permanently deleted. If you need to maintain these items for future use, do not delete the deactivated policy.
+
+To manage policies approaching the storage and message limits, consider making a copy of the policy to maintain coverage continuity or take the following actions to help minimize current policy storage size and message counts:
+
+- Consider reducing the number of users assigned to the policy. Removing users from the policy or creating different policies for different groups of users can help slow the growth of policy size and total messages.
+- Examine the policy for excessive false positive alerts. Consider adding exceptions or changes to the policy conditions to ignore common false positive alerts.
+- If a policy has reached the storage or message limits and has been deactivated, make a copy of the policy  to continue to detect and take action for the same conditions and users.
 
 ## Permissions
 
@@ -183,12 +210,13 @@ Built-in trainable and global classifiers scan sent or received messages across 
 
 Communication compliance built-in trainable and global classifiers scan communications for terms, images, and sentiment for the following types of language and content:
 
-- **Threat**: Scans for threats to commit violence or physical harm to a person or property.
-- **Targeted harassment**: Scans for offensive conduct targeting people regarding race, color, religion, national origin.
-- **Profanity**: Scans for profane expressions that embarrass most people.
 - **Adult images**: Scans for images that are sexually explicit in nature.
-- **Racy images**: Scans for images that are sexually suggestive in nature, but contain less explicit content than images deemed Adult.
+- **Discrimination (preview)**: Scans for explicit discriminatory language and is particularly sensitive to discriminatory language against the African American/Black communities when compared to other communities.
 - **Gory images**: Scans for images that depict violence and gore.
+- **Profanity**: Scans for profane expressions that embarrass most people.
+- **Racy images**: Scans for images that are sexually suggestive in nature, but contain less explicit content than images deemed Adult.
+- **Targeted harassment**: Scans for offensive conduct targeting people regarding race, color, religion, national origin.
+- **Threat**: Scans for threats to commit violence or physical harm to a person or property.
 
 The *Adult*, *Racy*, and *Gory* image classifiers scan files in .jpeg, .png, .gif, and .bmp formats. The size for image files must be less than 4 megabytes (MB) and the dimensions of the images must be greater than 50x50 pixels and greater than 50 kilobytes (KB) for the image to qualify for evaluation. Image identification is supported for Exchange Online email messages and Microsoft Teams channels and chats.
 
@@ -548,7 +576,7 @@ This example returns activities that match your current communication compliance
 Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -Operations SupervisionRuleMatch
 ```
 
-Communication compliance policy matches are stored in a supervision mailbox for each policy. In some cases, you may need to check the size of your supervision mailbox for a policy to make sure you aren't approaching the current 50 GB limit. If the mailbox limit is reached, policy matches aren't captured and you'll need to create a new policy (with the same settings) to continue to capture matches for the same activities.
+Communication compliance policy matches are stored in a supervision mailbox for each policy. In some cases, you may need to check the size of your supervision mailbox for a policy to make sure you aren't approaching the current 100-GB storage size or 1 million message limit. If the mailbox limit is reached, policy matches aren't captured and you'll need to create a new policy (with the same settings) to continue to capture matches for the same activities.
 
 To check the size of a supervision mailbox for a policy, complete the following steps:
 

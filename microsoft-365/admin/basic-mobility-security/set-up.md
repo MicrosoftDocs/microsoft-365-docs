@@ -15,6 +15,7 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - MET150
 description: "Set up Basic Mobility and Security to secure and manage your users' mobile devices by performing actions such as remotely wiping a device."

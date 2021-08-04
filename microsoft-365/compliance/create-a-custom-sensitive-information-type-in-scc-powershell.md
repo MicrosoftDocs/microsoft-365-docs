@@ -343,6 +343,86 @@ The Version element is also important. When you upload your rule package for the
 When complete, your RulePack element should look like this.
   
 ![XML markup showing RulePack element](../media/fd0f31a7-c3ee-43cd-a71b-6a3813b21155.png)
+
+## Validators
+
+Microsoft 365 exposes function processors for commonly used SITs as validators. Here's a list of them. 
+
+### List of validators currently available
+
+- Func_credit_card
+- Func_ssn
+- Func_unformatted_ssn
+- Func_randomized_formatted_ssn
+- Func_randomized_unformatted_ssn
+- Func_aba_routing
+- Func_south_africa_identification_number
+- Func_brazil_cpf
+- Func_iban
+- Func_brazil_cnpj
+- Func_swedish_national_identifier
+- Func_india_aadhaar
+- Func_uk_nhs_number
+- Func_Turkish_National_Id
+- Func_australian_tax_file_number
+- Func_usa_uk_passport
+- Func_canadian_sin
+- Func_formatted_itin
+- Func_unformatted_itin
+- Func_dea_number_v2
+- Func_dea_number
+- Func_japanese_my_number_personal
+- Func_japanese_my_number_corporate
+
+This gives you the ability to define your own regex and validate them. To use validators, define your own regex and while defining the regex use the validator property to add the function processor of your choice. Once defined, you can use this regex in an SIT. 
+
+In the example below, a regular expression - Regex_credit_card_AdditionalDelimiters is defined for Credit card which is then validated using the checksum function for credit card by using Func_credit_card as a validator.
+
+```xml
+<Regex id="Regex_credit_card_AdditionalDelimiters" validators="Func_credit_card"> (?:^|[\s,;\:\(\)\[\]"'])([0-9]{4}[ -_][0-9]{4}[ -_][0-9]{4}[ -_][0-9]{4})(?:$|[\s,;\:\(\)\[\]"'])</Regex>
+<Entity id="675634eb7-edc8-4019-85dd-5a5c1f2bb085" patternsProximity="300" recommendedConfidence="85">
+<Pattern confidenceLevel="85">
+<IdMatch idRef="Regex_credit_card_AdditionalDelimiters" />
+<Any minMatches="1">
+<Match idRef="Keyword_cc_verification" />
+<Match idRef="Keyword_cc_name" />
+<Match idRef="Func_expiration_date" />
+</Any>
+</Pattern>
+</Entity>
+```
+
+Microsoft 365 provides two generic validators
+
+### Checksum validator
+
+In this example, a checksum validator for employee ID is defined to validate the regex for EmployeeID.
+
+```xml
+<Validators id="EmployeeIDChecksumValidator">
+<Validator type="Checksum">
+<Param name="Weights">2, 2, 2, 2, 2, 1</Param>
+<Param name="Mod">28</Param>
+<Param name="CheckDigit">2</Param> <!-- Check 2nd digit -->
+<Param name="AllowAlphabets">1</Param> <!— 0 if no Alphabets -->
+</Validator>
+</Validators>
+<Regex id="Regex_EmployeeID" validators="ChecksumValidator">(\d{5}[A-Z])</Regex>
+<Entity id="675634eb7-edc8-4019-85dd-5a5c1f2bb085" patternsProximity="300" recommendedConfidence="85">
+<Pattern confidenceLevel="85">
+<IdMatch idRef="Regex_EmployeeID"/>
+</Pattern>
+</Entity>
+```
+
+### Date Validator
+
+In this example, a date validator is defined for a regex part of which is date.
+
+```xml
+<Validators id="date_validator_1"> <Validator type="DateSimple"> <Param name="Pattern">DDMMYYYY</Param> <!—supported patterns DDMMYYYY, MMDDYYYY, YYYYDDMM, YYYYMMDD, DDMMYYYY, DDMMYY, MMDDYY, YYDDMM, YYMMDD --> </Validator> </Validators>
+<Regex id="date_regex_1" validators="date_validator_1">\d{8}</Regex>
+```
   
 ## Changes for Exchange Online
 
@@ -351,8 +431,6 @@ Previously, you might have used Exchange Online PowerShell to import your custom
 Note that in the Compliance center, you use the **[New-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/new-dlpsensitiveinformationtyperulepackage)** cmdlet to upload a rule package. (Previously, in the Exchange admin center, you used the  **ClassificationRuleCollection**` cmdlet.) 
   
 ## Upload your rule package
-
-
 
 To upload your rule package, do the following steps:
   
@@ -455,121 +533,6 @@ Microsoft 365 uses the search crawler to identify and classify sensitive informa
   
 In Microsoft 365, you can't manually request a recrawl of an entire tenant, but you can do this for a site collection, list, or library — see [Manually request crawling and re-indexing of a site, a library or a list](/sharepoint/crawl-site-content).
   
-## Remove a custom sensitive information type
-
-> [!NOTE]
-> Before your remove a custom sensitive information type, verify that no DLP policies or Exchange mail flow rules (also known as transport rules) still reference the sensitive information type.
-
-In Compliance center PowerShell, there are two methods to remove custom sensitive information types:
-
-- **Remove individual custom sensitive information types**: Use the method documented in [Modify a custom sensitive information type](#modify-a-custom-sensitive-information-type). You export the custom rule package that contains the custom sensitive information type, remove the sensitive information type from the XML file, and import the updated XML file back into the existing custom rule package.
-
-- **Remove a custom rule package and all custom sensitive information types that it contains**: This method is documented in this section.
-
-1. [Connect to Compliance center PowerShell](/powershell/exchange/exchange-online-powershell)
-
-2. To remove a custom rule package, use the [Remove-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/remove-dlpsensitiveinformationtyperulepackage) cmdlet:
-
-   ```powershell
-   Remove-DlpSensitiveInformationTypeRulePackage -Identity "RulePackageIdentity"
-   ```
-
-   You can use the Name value (for any language) or the `RulePack id` (GUID) value to identify the rule package.
-
-   This example removes the rule package named "Employee ID Custom Rule Pack".
-
-   ```powershell
-   Remove-DlpSensitiveInformationTypeRulePackage -Identity "Employee ID Custom Rule Pack"
-   ```
-
-   For detailed syntax and parameter information, see [Remove-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/remove-dlpsensitiveinformationtyperulepackage).
-
-3. To verify that you've successfully removed a custom sensitive information type, do any of the following steps:
-
-   - Run the [Get-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/get-dlpsensitiveinformationtyperulepackage) cmdlet and verify the rule package is no longer listed:
-
-     ```powershell
-     Get-DlpSensitiveInformationTypeRulePackage
-     ```
-
-   - Run the [Get-DlpSensitiveInformationType](/powershell/module/exchange/get-dlpsensitiveinformationtype) cmdlet to verify the sensitive information types in the removed rule package are no longer listed:
-
-     ```powershell
-     Get-DlpSensitiveInformationType
-     ```
-
-     For custom sensitive information types, the Publisher property value will be something other than Microsoft Corporation.
-
-   - Replace \<Name\> with the Name value of the sensitive information type (for example, Employee ID) and run the [Get-DlpSensitiveInformationType](/powershell/module/exchange/get-dlpsensitiveinformationtype) cmdlet to verify the sensitive information type is no longer listed:
-
-     ```powershell
-     Get-DlpSensitiveInformationType -Identity "<Name>"
-     ```
-
-## Modify a custom sensitive information type
-
-In Compliance center PowerShell, modifying a custom sensitive information type requires you to:
-
-1. Export the existing rule package that contains the custom sensitive information type to an XML file (or use the existing XML file if you have it).
-
-2. Modify the custom sensitive information type in the exported XML file.
-
-3. Import the updated XML file back into the existing rule package.
-
-To connect to Compliance Center PowerShell, see [Connect to Compliance Center PowerShell](/powershell/exchange/exchange-online-powershell).
-
-### Step 1: Export the existing rule package to an XML file
-
-> [!NOTE]
-> If you have a copy of the XML file (for example, you just created and imported it), you can skip to the next step to modify the XML file.
-
-1. If you don't already know it, run the [Get-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/get-dlpsensitiveinformationtype) cmdlet to find the name of the custom rule package:
-
-   ```powershell
-   Get-DlpSensitiveInformationTypeRulePackage
-   ```
-
-   > [!NOTE]
-   > The built-in rule package that contains the built-in sensitive information types is named Microsoft Rule Package. The rule package that contains the custom sensitive information types that you created in the Compliance center UI is named Microsoft.SCCManaged.CustomRulePack.
-
-2. Use the [Get-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/get-dlpsensitiveinformationtyperulepackage) cmdlet to store the custom rule package to a variable:
-
-   ```powershell
-   $rulepak = Get-DlpSensitiveInformationTypeRulePackage -Identity "RulePackageName"
-   ```
-
-   For example, if the name of the rule package is "Employee ID Custom Rule Pack", run the following cmdlet:
-
-   ```powershell
-   $rulepak = Get-DlpSensitiveInformationTypeRulePackage -Identity "Employee ID Custom Rule Pack"
-   ```
-
-3. Use the [Set-Content](/powershell/module/microsoft.powershell.management/set-content) cmdlet to export the custom rule package to an XML file:
-
-   ```powershell
-   Set-Content -Path "XMLFileAndPath" -Encoding Byte -Value $rulepak.SerializedClassificationRuleCollection
-   ```
-
-   This example export the rule package to the file named ExportedRulePackage.xml in the C:\My Documents folder.
-
-   ```powershell
-   Set-Content -Path "C:\My Documents\ExportedRulePackage.xml" -Encoding Byte -Value $rulepak.SerializedClassificationRuleCollection
-   ```
-
-#### Step 2: Modify the sensitive information type in the exported XML file
-
-Sensitive information types in the XML file and other elements in the file are described earlier in this topic.
-
-#### Step 3: Import the updated XML file back into the existing rule package
-
-To import the updated XML back into the existing rule package, use the [Set-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/set-dlpsensitiveinformationtyperulepackage) cmdlet:
-
-```powershell
-Set-DlpSensitiveInformationTypeRulePackage -FileData ([Byte[]]$(Get-Content -Path "C:\My Documents\External Sensitive Info Type Rule Collection.xml" -Encoding Byte -ReadCount 0))
-```
-
-For detailed syntax and parameter information, see [Set-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/set-dlpsensitiveinformationtyperulepackage).
-
 ## Reference: Rule package XML schema definition
 
 You can copy this markup, save it as an XSD file, and use it to validate your rule package XML file.
