@@ -1,6 +1,6 @@
 ---
 title: How to use DKIM for email in your custom domain
-f1.keywords: 
+f1.keywords:
   - NOCSH
 ms.author: tracyp
 author: MSFTTracyP
@@ -10,13 +10,13 @@ audience: ITPro
 ms.topic: article
 
 localization_priority: Priority
-search.appverid: 
+search.appverid:
   - MET150
 ms.assetid: 56fee1c7-dc37-470e-9b09-33fff6d94617
-ms.collection: 
+ms.collection:
   - M365-security-compliance
   - m365initiative-defender-office365
-ms.custom: 
+ms.custom:
   - seo-marvel-apr2020
 description: Learn how to use DomainKeys Identified Mail (DKIM) with Microsoft 365 to ensure messages sent from your custom domain are trusted by the destination email systems.
 ms.technology: mdo
@@ -91,7 +91,7 @@ Step 2: Click on Create keys
 Step 3: Copy the CNAMES shown in the pop up window
 ![image](https://user-images.githubusercontent.com/3039750/127001787-3cce2c29-e0e4-4712-af53-c51dcba33c46.png)
 
-Step 4: Publish the copied CNAME records to your DNS service provider. 
+Step 4: Publish the copied CNAME records to your DNS service provider.
 On your DNS provider's website, add CNAME records for DKIM that you want to enable. Make sure that the fields are set to the following values for each:
 
 Record Type: CNAME (Alias)
@@ -225,7 +225,7 @@ Once you have published the CNAME records in DNS, you are ready to enable DKIM s
 
 1. Open the Microsoft 365 Defender portal [using your work or school account](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4).
 
-2. Go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** page \> **Rules** section \> **DKIM**. Or, to go directly to the DKIM page, use <https://security.microsoft.com/dkimv2>.
+2. Go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **DKIM** in the **Rules** section. Or, to go directly to the DKIM page, use <https://security.microsoft.com/dkimv2>.
 
 3. On the **DKIM** page, select the domain by clicking on the name.
 
