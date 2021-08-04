@@ -1,20 +1,20 @@
 ---
 title: Microsoft recommendations for EOP and Defender for Office 365 security settings
 keywords: Office 365 security recommendations, Sender Policy Framework, Domain-based Message Reporting and Conformance, DomainKeys Identified Mail, steps, how does it work, security baselines, baselines for EOP, baselines for Defender for Office 365 , set up Defender for Office 365 , set up EOP, configure Defender for Office 365, configure EOP, security configuration
-f1.keywords: 
+f1.keywords:
   - NOCSH
 ms.author: tracyp
 author: MSFTTracyP
-ms.date: 
+ms.date:
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
 
 localization_priority: Normal
-search.appverid: 
+search.appverid:
   - MET150
 ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
-ms.collection: 
+ms.collection:
   - M365-security-compliance
   - m365initiative-defender-office365
 description: What are best practices for Exchange Online Protection (EOP) and Defender for Office 365 security settings? What's the current recommendations for standard protection? What should be used if you want to be more strict? And what extras do you get if you also use Defender for Office 365?
@@ -304,7 +304,7 @@ In PowerShell, you use the [New-SafeAttachmentPolicy](/powershell/module/exchang
 
 |Security feature name|Default|Standard|Strict|Comment|
 |---|:---:|:---:|:---:|---|
-|**Safe Attachments unknown malware response** <p> _Enable_ and _Action_|**Off** <p> `-Enable $false`|**Block** <p> `-Enable $true` and `-Action Block`|**Block** <p> `-Enable $true` and `-Action Block`|When the _Enable_ parameter is $false, the value of the _Action_ parameter doesn't matter.|
+|**Safe Attachments unknown malware response** <p> _Enable_ and _Action_|**Off** <p> `-Enable $false` and `-Action Block`|**Block** <p> `-Enable $true` and `-Action Block`|**Block** <p> `-Enable $true` and `-Action Block`|When the _Enable_ parameter is $false, the value of the _Action_ parameter doesn't matter.|
 |**Redirect attachment with detected attachments** : **Enable redirect** <p> _Redirect_ <p> _RedirectAddress_|Not selected and no email address specified. <p> `-Redirect $false` <p> _RedirectAddress_ is blank (`$null`)|Selected and specify an email address. <p> `$true` <p> an email address|Selected and specify an email address. <p> `$true` <p> an email address|Redirect messages to a security admin for review.|
 |**Apply the Safe Attachments detection response if scanning can't complete (timeout or errors)** <p> _ActionOnError_|Selected <p> `$true`|Selected <p> `$true`|Selected <p> `$true`||
 |
