@@ -35,7 +35,7 @@ The [Prepare your environment](https://aka.ms/prepareyourenvironment) guide help
 
 ### Email setup guide
 
-The [Email setup guide](https://aka.ms/office365setup) provides you with the step-by-step guidance needed for configuring Exchange Online for your organization. This includes setting up new email accounts, migrating email, and configuring email protection. For a successful email set up, use this advisor and you'll receive the recommended migration method based on your organization's current mail system, the number of mailboxes being migrated, and how you want to manage users and their access.
+The [Email setup guide](https://aka.ms/office365setup) provides you with the step-by-step guidance needed for configuring Exchange Online for your organization. This includes setting up new email accounts, migrating email, and configuring email protection. For a successful email setup, use this advisor and you'll receive the recommended migration method based on your organization's current mail system, the number of mailboxes being migrated, and how you want to manage users and their access.
 
 ### Migrate Gmail contacts and calendar items
 
