@@ -215,9 +215,6 @@ Uninstall-WindowsFeature -Name Windows-Defender-GUI
 
 If you are using Windows Server 2016 with a non-Microsoft antimalware/antivirus product, you'll need to either disable or uninstall Microsoft Defender Antivirus. 
 
-> [!NOTE]
-> You can't uninstall the Windows Security app, but you can disable the interface with these instructions.
-
 The following PowerShell cmdlet uninstalls Microsoft Defender Antivirus on Windows Server 2016:
 
 ```PowerShell
