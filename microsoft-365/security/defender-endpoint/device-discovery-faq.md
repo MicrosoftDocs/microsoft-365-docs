@@ -91,3 +91,26 @@ You may notice differences between the number of listed devices under "can be on
 
 ## I've noticed that unmanaged device health state is always "Active", why is that?
 Temporarily, unmanaged device health state will be "Active" during the standard retention period of the device inventory, regardless of their actual state.
+
+
+## Does standard discovery look like malicious network activity?
+When considering Standard discovery, you may be wondering about the implications of probing, and specifically whether security tools might suspect such activity as malicious. The following subsection will explain why, in almost all cases, organizations should have no concerns around enabling Standard discovery.  
+
+### Probing is distributed across all Windows devices on the network
+As opposed to malicious activity, which would typically scan the entire network from a small number of compromised devices, Microsoft Defender for Endpoint’s Standard discovery probing is initiated from all onboarded Windows devices making the activity benign and non-anomalous. The probing is centrally managed from the cloud to balance the probing attempt between all the supported onboarded devices in the network.  
+
+### Active probing generates negligible amount of extra traffic
+Unmanaged devices would typically get probed no more than once in a three-week period and generate less than 50KB of traffic. Malicious activity usually includes high repetitive probing attempts and in some cases data exfiltration that generates a significant amount of network traffic that can be identified an anomaly by network monitoring tools. 
+
+### Your Windows device already runs active discovery
+Active discovery capabilities have always been embedded in the Windows operating system, to find nearby devices, endpoints, and printers, for easier "plug and play" experiences and file sharing between endpoints in the network. Similar functionality is implemented in mobile devices, network equipment and inventory applications just to name a few.  
+
+Standard discovery uses the same discovery methods to identify Enterprise IoT (such as printers, cameras, media streamers) and endpoints, to have a unified visibility for all the devices in your network in the Microsoft 365 Defender Device Inventory. For example – Standard discovery identifies nearby endpointsin the network the same way Windows lists available printers in the network. 
+
+Network security and monitoring tools are indifferent to such activities performed by devices on the network. 
+
+### Only unmanaged devices are being probed
+The device discovery capabilities have been built to only discover and identify unmanaged devices on your network. This means that previously discovered devices that are already onboarded with Microsoft Defender for Endpoint won’t be probed. 
+
+### You can exclude network lures from active probing
+Standard discovery supports exclusion of devices or ranges (subnets) from active probing. If you have network lures deployed in place, you can use the Device Discovery settings to define exclusions based on IP addresses or subnets (a range of IP addresses). Defining those exclusions will ensure that those devices won’t be actively probed and won’t be alerted. Those devices will be discovered using passive methods only (similar to Basic discovery mode).
