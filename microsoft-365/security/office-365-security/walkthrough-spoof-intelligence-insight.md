@@ -75,7 +75,7 @@ There are two ways to allow and block spoofed senders:
 
 ### Manage spoofed senders in the spoof intelligence policy
 
-1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** page \> **Policies** section \> **Anti-spam**.
+1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Anti-spam** in the **Policies** section.
 
 2. On the **Anti-spam policies** page, select **Spoof intelligence policy** by clicking on the name.
 
@@ -224,7 +224,7 @@ For detailed syntax and parameter information, see [Set-PhishFilterPolicy](/powe
 
 To verify that you've configured spoof intelligence with senders who are allowed and not allowed to spoof, use any of the following steps:
 
-- **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** page \> **Policies** section \> **Anti-spam** \> **Spoof intelligence policy** \> select **Show me senders I already reviewed** \> select the **Your Domains** or **External Domains** tab, and verify the **Allowed to spoof?** value for the sender.
+- **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Anti-spam** in the **Policies** section \> **Spoof intelligence policy** \> select **Show me senders I already reviewed** \> select the **Your Domains** or **External Domains** tab, and verify the **Allowed to spoof?** value for the sender.
 
 - In PowerShell, run the following commands to view the senders who are allowed and not allowed to spoof:
 
