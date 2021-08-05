@@ -20,7 +20,9 @@ ms.technology: mde
 
 # Microsoft Defender for Endpoint Device Control Removable Storage Access Control
 
-[!INCLUDE [Prerelease](../includes/prerelease.md)]
+> [!NOTE]
+> The Group Policy management of this product has been GAed (4.18.2106): [Protect your removable storage and printer with Microsoft Defender for Endpoint](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/protect-your-removable-storage-and-printers-with-microsoft/ba-p/2324806) 
+
 
 Microsoft Defender for Endpoint Device Control Removable Storage Access Control enables you to do the following task:
 
