@@ -50,9 +50,9 @@ This section describes what happens with Microsoft Defender Antivirus and non-Mi
 > [!TIP]
 > See [Microsoft Defender Antivirus on Windows Server](microsoft-defender-antivirus-on-windows-server.md) for key differences and management options for Windows Server installations.
 
-## Passive mode and Defender for Endpoint
+## Antivirus protection with Defender for Endpoint
 
-If your organization is using Defender for Endpoint, Microsoft Defender Antivirus can, depending on your operating system, run in passive mode. Defender for Endpoint includes capabilities that further extend the antivirus protection that is installed on your endpoint. For example, [Endpoint detection and response (EDR) in block mode](edr-in-block-mode.md) provides added protection from malicious artifacts even if Microsoft Defender Antivirus is not the primary antivirus product. Such capabilities require Microsoft Defender Antivirus to be installed and running in passive mode or active mode. <br/><br/>
+If your organization is using a non-Microsoft antivirus/antimalware solution together with Defender for Endpoint, Microsoft Defender Antivirus can, depending on your operating system, run in passive mode. Defender for Endpoint includes capabilities that further extend the antivirus protection that is installed on your endpoint. For example, [Endpoint detection and response (EDR) in block mode](edr-in-block-mode.md) provides added protection from malicious artifacts even if Microsoft Defender Antivirus is not the primary antivirus product. Such capabilities require Microsoft Defender Antivirus to be installed and running in passive mode or active mode. <br/><br/>
 
 | Windows version   | Primary antivirus/antimalware solution  | Microsoft Defender Antivirus state    |
 |------|------|-------|-------|
