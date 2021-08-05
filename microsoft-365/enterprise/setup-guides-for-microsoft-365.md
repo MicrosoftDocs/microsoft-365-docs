@@ -217,8 +217,8 @@ The setup guides are accessible from the [Setup guidance](https://aka.ms/setupgu
 
    ![Screenshot of the Setup guidance page in the Microsoft 365 admin center](../media/setup-guides-for-microsoft-365/adminportal-setupguidance.png)
 
->[!NOTE]
->Tenant administrator permissions are required to access the Microsoft 365 admin center.
+> [!NOTE]
+> Tenant administrator permissions are required to access the Microsoft 365 admin center.
 
 ## How do setup guides work in the Microsoft 365 admin center?
 
