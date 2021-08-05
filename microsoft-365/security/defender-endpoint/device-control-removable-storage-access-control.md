@@ -148,7 +148,7 @@ Options: 0-4. When Type Allow or Deny is selected:
    
 **Property name: Sid**
 
-Description: Defines whether apply this policy over specific user or user group; one entry can have maximum one Sid and an entry without any Sid means applying the policy over the machine.
+Description: Defines whether to apply this policy over a specific user or user group; one entry can have a maximum of one SID and an entry without any SID means applying the policy over the machine.
 
 **Property name: ComputerSid**
 
