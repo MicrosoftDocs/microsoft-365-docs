@@ -35,7 +35,8 @@ For new Microsoft 365 customers:
 
 For existing Microsoft 365 customers:
 
-Navigate to the [sign up page for the free trial](https://admin.microsoft.com/Commerce/Trial.aspx?OfferId=20be85b6-b196-402c-82b4-36b4e72862dc) and complete the steps to add app governance. Sign up is simple, as shown in the following graphic.
+1. Navigate to the [sign up page for the free trial](https://admin.microsoft.com/Commerce/Trial.aspx?OfferId=20be85b6-b196-402c-82b4-36b4e72862dc). 
+1. Complete the steps to add app governance. Sign up is simple, as shown in the following graphic.
 
 :::image type="content" source="../media/manage-app-protection-governance/app-governance-signup2.gif" alt-text="Simple steps to add app governance to your account":::
 
