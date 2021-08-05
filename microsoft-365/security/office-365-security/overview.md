@@ -1,12 +1,11 @@
 ---
-title: Office 365 Security, Microsoft Defender for Office 365, EOP, MSDO
+title: Office 365 Security including Microsoft Defender for Office 365 and Exchange Online Protection
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date: 06/11/2021
+ms.date: 07/21/2021
 audience: Admin
 ms.topic: conceptual
-
 localization_priority: Normal
 search.appverid: 
   - MET150

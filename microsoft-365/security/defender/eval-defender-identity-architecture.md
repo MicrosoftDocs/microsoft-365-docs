@@ -1,5 +1,5 @@
 ---
-title: Review architecture requirements and the technical framework for Microsoft Defender for Identity, architecture diagram, MDI
+title: Review architecture requirements and the technical framework for Microsoft Defender for Identity
 description: The technical diagram for Microsoft Defender for Identity in Microsoft 365 Defender will help you understand identity in Microsoft 365 before you build your trial lab or pilot environment.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150

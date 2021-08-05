@@ -1,5 +1,5 @@
 ---
-title: Pilot Microsoft Defender for Office 365, use the evaluation in your production environment, promote the evaluation to live in production, learn how to evaluate Defender 
+title: Pilot Microsoft Defender for Office 365, use the evaluation in your production environment 
 description: Steps to pilot your Evaluation with groups of active and existing users in order to properly test the features of Microsoft Defender for Office 365.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
