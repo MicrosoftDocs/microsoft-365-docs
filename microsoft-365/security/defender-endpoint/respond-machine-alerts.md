@@ -80,6 +80,10 @@ For more information on live response, see [Investigate entities on devices usin
 
 As part of the investigation or response process, you can collect an investigation package from a device. By collecting the investigation package, you can identify the current state of the device and further understand the tools and techniques used by the attacker.
 
+> [!IMPORTANT]
+>
+> - These response actions are only available for devices on Windows 10, version  1703 or later.
+
 To download the package (Zip file) and investigate the events that occurred on a device
 
 1. Select **Collect investigation package** from the row of response actions at the top of the device page.
