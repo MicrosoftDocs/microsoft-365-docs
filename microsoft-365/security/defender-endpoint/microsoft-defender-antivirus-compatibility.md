@@ -45,8 +45,8 @@ This section describes what happens with Microsoft Defender Antivirus and non-Mi
 |------|------|-------|-------|
 | Windows 10  | Microsoft Defender Antivirus  | Active mode |
 | Windows 10  | A non-Microsoft antivirus/antimalware solution | Disabled mode (happens automatically)    |
-| Windows Server 2016 <p> Windows Server, version 1803 or newer <p> Windows Server 2019 | Microsoft Defender Antivirus  | Active mode |
-| Windows Server 2016 <p> Windows Server, version 1803 or newer <p> Windows Server 2019 | A non-Microsoft antivirus/antimalware solution | Disabled (set manually) <sup>[[1](#fn1)]<sup></sup>  |
+| Windows Server 2016 <br/><br/> Windows Server, version 1803 or newer <br/><br/> Windows Server 2019 | Microsoft Defender Antivirus  | Active mode |
+| Windows Server 2016 <br/><br/> Windows Server, version 1803 or newer <br/><br/> Windows Server 2019 | A non-Microsoft antivirus/antimalware solution | Disabled (set manually) <sup>[[1](#fn1)]<sup></sup>  |
 
 (<a id="fn1">1</a>) On Windows Server, if you are running a non-Microsoft antivirus product, you can disable Microsoft Defender Antivirus by using the [DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware) registry key. Navigate to `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender`, and set or create a DWORD entry called `DisableAntiSpyware`. Set its value to `1` (which sets the registry key's value to true.) 
 
@@ -63,8 +63,8 @@ Defender for Endpoint includes capabilities that further extend the antivirus pr
 |------|------|-------|-------|
 | Windows 10 or later | Microsoft Defender Antivirus | Active mode |
 | Windows 10 or later | A non-Microsoft antivirus/antimalware solution | Passive mode (happens automatically) |
-| Windows Server 2016 <p> Windows Server, version 1803 or newer <p> Windows Server 2019 | Microsoft Defender Antivirus  | Active mode |
-| Windows Server, version 1803 or newer <p> Windows Server 2019 | A non-Microsoft antivirus/antimalware solution | Passive mode (set manually) <sup>[[2](#fn2)]<sup></sup>  |
+| Windows Server 2016 <br/><br/> Windows Server, version 1803 or newer <br/><br/> Windows Server 2019 | Microsoft Defender Antivirus  | Active mode |
+| Windows Server, version 1803 or newer <br/><br/> Windows Server 2019 | A non-Microsoft antivirus/antimalware solution | Passive mode (set manually) <sup>[[2](#fn2)]<sup></sup>  |
 | Windows Server 2016 | A non-Microsoft antivirus/antimalware solution | Disabled (set manually) <sup>[[3](#fn3)]<sup> |
 
 (<a id="fn2">2</a>)  On Windows Server, version 1803 or newer, or Windows Server 2019, when you install a non-Microsoft antivirus product, you can set Microsoft Defender Antivirus to passive mode manually to prevent problems caused by having multiple antivirus products installed on a server. You can use PowerShell, Group Policy, or the ForceDefenderPassiveMode registry key to perform this task. To use the registry key, navigate to `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`, and set or create a DWORD entry called `ForceDefenderPassiveMode`. Set its value to `1`. For more information, see [Passive mode and Windows Server](microsoft-defender-antivirus-on-windows-server.md#passive-mode-and-windows-server).
