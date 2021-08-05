@@ -1,5 +1,5 @@
 ---
-title: Pilot Microsoft Defender for Identity, set up configuration benchmarks, standards, guidelines, and take tutorials about detecting, and remediating various Identity threats like reconnaissance, compromised credential, lateral movement, domain dominance, and exfiltration alerts, conduct user, computer, entity, and lateral movement paths investigation.
+title: Pilot Microsoft Defender for Identity
 description: Pilot Microsoft Defender for Identity, set benchmarks, take tutorials on reconnaissance, compromised credential, lateral movement, domain dominance, and exfiltration alerts, among others.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150

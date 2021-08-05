@@ -56,6 +56,10 @@ Additionally, the new large case format includes an updated user interface that 
 
 ![Large case statistics in Advanced eDiscovery user interface](..\media\LargeCaseUI.png)
 
+## Known issues
+
+- At this time, the option to export content as **Loose files and PSTs** isn't supported in large cases (the option is currently greyed out). This export option will be supported soon. For more information about exporting content, see [Export documents from a review set in Advanced eDiscovery](export-documents-from-review-set.md).
+
 ## Frequently asked questions
 
 **If I attempt to collect over 1 TB in a single collection, will it work?**
