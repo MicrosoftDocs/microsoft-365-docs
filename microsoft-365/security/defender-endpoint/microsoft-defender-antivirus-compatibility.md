@@ -101,7 +101,7 @@ Certain capabilities in Defender for Endpoint are affected by the state of Micro
 
 - In Defender for Endpoint, turn EDR in block mode on, even if Microsoft Defender Antivirus is not your primary antivirus solution. EDR in block mode detects and remediate malicious items that are found on the device (post breach). EDR in block mode requires Microsoft Defender Antivirus to be enabled in either active mode or passive mode. To learn more, see [EDR in block mode](edr-in-block-mode.md).
 
-## Active mode, passive mode, and disabled mode
+## What happens with Microsoft Defender Antivirus in active mode, passive mode, and disabled mode?
 
 This section describes various states you might see with Microsoft Defender Antivirus. <br/><br/>
 
