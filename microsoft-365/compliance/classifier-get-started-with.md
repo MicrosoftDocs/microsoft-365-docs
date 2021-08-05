@@ -141,19 +141,19 @@ Once the trainable classifier has processed enough positive samples to build a p
 16. When the trainable classifier is done processing your test files, the status on the details page will change to `Ready to review`. If you need to increase the test sample size, choose `Add items to test` and allow the trainable classifier to process the additional items.
 
     > [!div class="mx-imgBorder"]
-	> ![ready to review screenshot](../media/classifier-trainable-ready-to-review-detail.png)
+    > ![ready to review screenshot](../media/classifier-trainable-ready-to-review-detail.png)
 
 17. Choose `Tested items to review` tab to review items.
 
 18. Microsoft 365 will present 30 items at a time. Review them and in the `We predict this item is "Relevant". Do you agree?` box choose either `Yes` or `No` or `Not sure, skip to next item`. Model accuracy is automatically updated after every 30 items.
 
     > [!div class="mx-imgBorder"]
-	> ![review items box](../media/classifier-trainable-review-detail.png)
+    > ![review items box](../media/classifier-trainable-review-detail.png)
 
 19. Review *at least* 200 items. Once the accuracy score has stabilized, the **publish** option will become available and the classifier status will say `Ready to use`.
 
     > [!div class="mx-imgBorder"]
-	> ![accuracy score and ready to publish](../media/classifier-trainable-review-ready-to-publish.png)
+    > ![accuracy score and ready to publish](../media/classifier-trainable-review-ready-to-publish.png)
 
 20. Publish the classifier.
 

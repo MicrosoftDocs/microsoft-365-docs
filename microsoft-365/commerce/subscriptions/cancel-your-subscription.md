@@ -16,6 +16,7 @@ ms.collection:
 ms.custom: 
 - AdminSurgePortfolio
 - commerce_subscriptions
+- AdminTemplateSet
 search.appverid: MET150
 description: "If you have fewer than 25 user licenses, you can cancel your Microsoft 365 for business trial or paid subscription in the admin center."
 ms.date: 04/08/2021
@@ -77,7 +78,7 @@ Your subscription now appears in a **Disabled** state, and has reduced functiona
 
 If you cancel a subscription before the end of your term, the subscription status moves directly into a disabled state. For most subscriptions, in most countries and regions, the disabled state lasts 90 days. Admins can still access and back up data for their organization while the subscription is in the disabled state, but we recommend that admins [back up their data](back-up-data-before-switching-plans.md) before they cancel a subscription, especially if it's their only subscription. Admins can also reactivate the subscription while it's in the disabled state.
 
-After 90 says, the subscription moves into the deleted state. Any data that you leave behind may be deleted after those 90 days is deleted no later than 180 days after cancellation. You can't remove a payment method from a canceled subscription until after it reaches the deleted state.
+After 90 days, the subscription moves into the deleted state. Any data you leave behind may be deleted after those 90 days but is deleted no later than 180 days after cancellation. You can't remove a payment method from a canceled subscription until after it reaches the deleted state.
 
 ### What to expect for you and your users if you cancel a subscription
   

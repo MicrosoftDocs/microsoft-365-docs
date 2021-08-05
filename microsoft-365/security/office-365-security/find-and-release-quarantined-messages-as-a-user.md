@@ -44,7 +44,7 @@ As a recipient of a quarantined message, what you can do to the message as a non
 |---|:---:|:---:|:---:|
 |Bulk|![Check mark](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)|
 |Spam|![Check mark](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)|
-|Phishing (not high confidence phishing)|![Check mark](../../media/checkmark.png)||![Check mark](../../media/checkmark.png)|
+|Phishing (not high confidence phishing)|![Check mark](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)|
 |
 
 You view and manage your quarantined messages in the Microsoft 365 Defender portal or (if an admin has set this up) in [end-user spam notifications](use-spam-notifications-to-release-and-report-quarantined-messages.md).

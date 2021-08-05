@@ -27,7 +27,7 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 Defender for Endpoint has recently upgraded the support process to offer a more modern and advanced support experience. 
 
@@ -51,12 +51,12 @@ Accessing the new support widget can be done in one of two ways:
 
 1.  Clicking on the question mark on the top right of the portal and then clicking on "Microsoft support":
 
-    ![Image of widget when question mark is selected](images/support-widget.png)
-
-2. Clicking on the **Need help?**  button in the bottom right of the Microsoft Defender Security Center:
+    :::image type="content" source="../../media/contactsupport.png" alt-text="Microsoft support":::
 
 
-    ![Image of the need help button](images/need-help.png)
+2. Clicking on the **Need help?**  button in the bottom right of the Microsoft 365 Defender portal:
+
+    ![Image of the need help button](images/need-help-option.png)
 
 In the widget you will be offered two options:
 
@@ -66,7 +66,7 @@ In the widget you will be offered two options:
 ## Find solutions to common problems
 This option includes articles that might be related to the question you may ask. Just start typing the question in the search box and articles related to your search will be surfaced.
 
-![Image of need help widget](images/Support3.png)
+:::image type="content" source="../../media/contactsupport1.png" alt-text="How can we help?":::
 
 In case the suggested articles are not sufficient, you can open a service request.
 
@@ -78,11 +78,12 @@ Learn how to open support tickets by contacting Defender for Endpoint support.
 > If you have a permier support contract with Microsoft, you will see the premier tag on the widget. If not, contact your Microsoft account manager.
 
 ### Contact support
-This option is available by clicking the icon that looks like a headset. You will then get the following page to submit your support case:
+This option is available by clicking the icon that looks like a headset. You will then get the following page to submit your support case: </br>
 
-![Image of the open a service request widget](images/Support4.png)
+:::image type="content" source="../../media/contactsupport2.png" alt-text="contact support 2"::: </br>
 
-1. Fill in a title and description for the issue you are facing, as well as a phone number and email address where we may reach you. 
+
+1. Fill in a title and description for the issue you are facing, as well as a phone number and email address where we may reach you.
 
 2. (Optional) Include up to five attachments that are relevant to the issue in order to provide additional context for the support case. 
 
