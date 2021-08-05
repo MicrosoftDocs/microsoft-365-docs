@@ -41,7 +41,7 @@ This article describes what happens with Microsoft Defender Antivirus and a non-
 
 This section describes what happens with Microsoft Defender Antivirus and non-Microsoft antivirus/antimalware products on endpoints that are not onboarded to Defender for Endpoint. The following table summarizes what to expect: <br/><br/>
 
-| Windows version   | Primary antivirus/antimalware solution  | [Microsoft Defender Antivirus state](#microsoft-defender-antivirus-in-active-mode-passive-mode-and-disabled-mode)    |
+| Windows version   | Primary antivirus/antimalware solution  | Microsoft Defender Antivirus state |
 |------|------|-------|-------|
 | Windows 10  | Microsoft Defender Antivirus  | Active mode |
 | Windows 10  | A non-Microsoft antivirus/antimalware solution | Disabled mode (happens automatically)    |
@@ -59,7 +59,7 @@ If your organization is using a non-Microsoft antivirus/antimalware solution tog
 
 Defender for Endpoint includes capabilities that further extend the antivirus protection that is installed on your endpoint. For example, [Endpoint detection and response (EDR) in block mode](edr-in-block-mode.md) provides added protection from malicious artifacts even if Microsoft Defender Antivirus is not the primary antivirus product. Such capabilities require Microsoft Defender Antivirus to be installed and running in passive mode or active mode. <br/><br/>
 
-| Windows version   | Primary antivirus/antimalware solution  | [Microsoft Defender Antivirus state](#microsoft-defender-antivirus-in-active-mode-passive-mode-and-disabled-mode)    |
+| Windows version   | Primary antivirus/antimalware solution  | Microsoft Defender Antivirus state |
 |------|------|-------|-------|
 | Windows 10 or later | Microsoft Defender Antivirus | Active mode |
 | Windows 10 or later | A non-Microsoft antivirus/antimalware solution | Passive mode (happens automatically) |
