@@ -75,7 +75,7 @@ Defender for Endpoint includes capabilities that further extend the antivirus pr
 
 In order for Microsoft Defender Antivirus to run in passive mode, endpoints must meet the following requirements:
 
-- Client endpoints must be running Windows 10 or later, Windows Server, version 1803 or newer, or Windows Server 2019
+- Endpoints must be running Windows 10 or later, Windows Server, version 1803 or newer, or Windows Server 2019
 - Microsoft Defender Antivirus must be installed
 - Another non-Microsoft antivirus/antimalware product must be installed 
 - Endpoints must be onboarded to Defender for Endpoint
