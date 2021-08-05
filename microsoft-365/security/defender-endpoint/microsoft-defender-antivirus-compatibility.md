@@ -115,7 +115,7 @@ The table in this section summarizes the features and capabilities that are acti
 
 ## More details about Microsoft Defender Antivirus states
 
-This section describes various states you might see with Microsoft Defender Antivirus. <br/><br/>
+The table in this section describes various states you might see with Microsoft Defender Antivirus. <br/><br/>
 
 | Microsoft Defender Antivirus state  | What happens  |
 |---------|---------|
