@@ -1,20 +1,20 @@
 ---
 title: Set up Safe Links policies in Microsoft Defender for Office 365
-f1.keywords: 
+f1.keywords:
   - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.date: 
+ms.date:
 
 localization_priority: Normal
-search.appverid: 
+search.appverid:
   - MET150
   - MOE150
 ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
-ms.collection: 
+ms.collection:
   - M365-security-compliance
 description: Admins can learn how to view, create, modify, and delete Safe Links policies and global Safe Links settings in Microsoft Defender for Office 365.
 ms.technology: mdo
@@ -163,13 +163,13 @@ Creating a custom Safe Links policy in the Microsoft 365 Defender portal creates
 
 2. On the **Safe Links** page, select a policy from the list by clicking on the name.
 
-3. In the policy details flyout that appears, select **Edit** in each section to modify the settings within the section. For more information about the settings, see the previous [Use the Microsoft 365 Defender portal to create Safe Links policies](#use-the-microsoft-365-defender-portal-to-create-safe-links-policies) section in this article.  
+3. In the policy details flyout that appears, select **Edit** in each section to modify the settings within the section. For more information about the settings, see the previous [Use the Microsoft 365 Defender portal to create Safe Links policies](#use-the-microsoft-365-defender-portal-to-create-safe-links-policies) section in this article.
 
 To enable or disable a policy or set the policy priority order, see the following sections.
 
 ### Enable or disable Safe Links policies
 
-1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** page \> **Policies** section \> **Safe Links**.
+1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Safe Links** in the **Policies** section.
 
 2. On the **Safe Links** page, select a policy from the list by clicking on the name.
 
@@ -194,7 +194,7 @@ To change the priority of a policy, you click **Increase priority** or **Decreas
 - In the Microsoft 365 Defender portal, you can only change the priority of the Safe Links policy after you create it. In PowerShell, you can override the default priority when you create the safe links rule (which can affect the priority of existing rules).
 - Safe Links policies are processed in the order that they're displayed (the first policy has the **Priority** value 0). For more information about the order of precedence and how multiple policies are evaluated and applied, see [Order and precedence of email protection](how-policies-and-protections-are-combined.md).
 
-1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** page \> **Policies** section \> **Safe Links**.
+1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Safe Links** in the **Policies** section.
 
 2. On the **Safe Links** page, select a policy from the list by clicking on the name.
 
@@ -209,7 +209,7 @@ To change the priority of a policy, you click **Increase priority** or **Decreas
 
 ## Use the Microsoft 365 Defender portal to remove Safe Links policies
 
-1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** page \> **Policies** section \> **Safe Links**.
+1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Safe Links** in the **Policies** section.
 
 2. On the **Safe Links** page, select a policy from the list by clicking on the name. At the top of the policy details flyout that appears, click ![More actions icon](../../media/m365-cc-sc-more-actions-icon.png) **More actions** \> ![Delete policy icon](../../media/m365-cc-sc-delete-icon.png) **Delete policy**.
 
