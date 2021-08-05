@@ -36,6 +36,26 @@ Whether it be adding new solutions to the [Microsoft 365 compliance center](micr
 >
 > And visit the [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap) to learn about Microsoft 365 features that were launched, are rolling out, are in development, have been cancelled, or previously released.
 
+## July 2021
+
+### App governance
+
+- The [app governance add-on for Microsoft Cloud App Security](app-governance-manage-app-governance.md) (MCAS) has gone into public preview. App governance provides monitoring of OAUth-based apps in your M365 tenant and generates alerts for activity that might represent malware or inappropriate levels of permissions.
+
+### Privacy management
+
+- Microsoft [privacy management](privacy-management.md) has gone into public preview.
+
+## Retention and records management
+- In preview: [Retention policies for Teams](create-retention-policies.md#retention-policy-for-teams-locations) now supports private channels as a new Teams location when you create or edit a retention policy
+- Instructions for [importing a file plan](file-plan-manager.md#import-retention-labels-into-your-file-plan) are updated to include regulatory records and dependencies are now listed for each entry
+
+## Sensitivity labels
+- Trainable classifiers are now generally available (GA) for [auto-labeling in Office apps](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps) for Windows and the web (Office Online)
+- Mandatory labeling is now extended to [Power BI (in preview)](/power-bi/admin/service-security-sensitivity-label-mandatory-label-policy)
+- For [co-authoring for files encrypted with sensitivity labels]( sensitivity-labels-coauthoring.md): Rolling out support for DLP policies that use sensitivity labels as conditions and unencrypted attachments for emails
+- Auditing events for Outlook is now available for macOS, iOS, and Android, and rolling out for Outlook on the web
+
 ## June 2021
 
 ### Customer Key
@@ -271,22 +291,3 @@ Content was added or updated in the following topics:
 
 - **SharePoint external sharing**. For [container labels](sensitivity-labels-teams-groups-sites.md) the option for external sharing from SharePoint sites is now released as generally available. Additionally, the Microsoft 365 admin center and Planner now support applying these sensitivity labels. 
 - **Co-authoring and AutoSave**. Support for [co-authoring and AutoSave](sensitivity-labels-coauthoring.md) for encrypted files is released as preview for testing in non-production tenants.
-
-## January 2021
-
-### Support for card content in Teams
-
-The following Microsoft 365 compliance solutions now support the detection of [card content](/microsoftteams/platform/task-modules-and-cards/what-are-cards) generated through apps in Teams messages:
-
-- **Core and Advanced eDiscovery**. Card content can now be [placed on hold](create-ediscovery-holds.md#preserve-card-content) or included in [searches](/microsoftteams/ediscovery-investigation#search-for-card-content) (applies to content search as well).
-- **Audit**. Card activity is now [recorded to the audit log](/microsoftteams/audit-log-events#teams-activities).
-- **Retention policies**. Can now use retention policies to [retain and delete card content](retention-policies-teams.md#whats-included-for-retention-and-deletion).
-
-### Information governance and records management
-
-[New assessment](retention-regulatory-requirements.md#new-zealand-public-records-act) to address using information governance and records management to help meet compliance obligations for the New Zealand Public Records Act.
-
-### Sensitivity labels
-
-- Sensitivity labels are now supported for US Government tenants (GCC and GCC-H).
-- New [automatic labeling](sensitivity-labels-office-apps.md) support for macOS.
