@@ -20,7 +20,7 @@ description: "Get started with app governance capabilities to govern your apps."
 
 To begin using the app governance add-on to Microsoft Cloud App Security:
 
-1. Verify your account has the [appropriate level of licensing](#licensing-for-app-governance). App governance is an add-on feature for Microsoft Cloud App Security (MCAS), and thus MCAS must be present in your account as either a standalone product or as part of the various license packages listed below.
+1. Verify your account has the [appropriate level of licensing](#licensing-for-app-governance). App governance is an add-on feature for Microsoft Cloud App Security (MCAS), and thus MCAS must be present in your account as either a standalone product or as part of the various license packages.
 1. You must have one of the [administrator roles](#administrator-roles) listed below to access the app governance pages in the portal.
 1. Your organization's billing address must be within one of the [supported areas of North America, Europe, or Africa](app-governance-countries.md) in order to activate the free trial.
 
@@ -28,31 +28,31 @@ To begin using the app governance add-on to Microsoft Cloud App Security:
 
 For new Microsoft 365 customers:
 
-1. At the top of this page, click the **Free Account** button.
-1. Under **Try Microsoft 365 for business** click **Try 1 month free**.
+1. At the top of this page, select the **Free Account** button.
+1. Under **Try Microsoft 365 for business** select **Try 1 month free**.
 1. Complete the steps for the sign-up.
 1. Continue with the steps for existing Microsoft 365 customers.
 
 For existing Microsoft 365 customers:
 
 1. Navigate to the [sign up page for the free trial](https://admin.microsoft.com/Commerce/Trial.aspx?OfferId=20be85b6-b196-402c-82b4-36b4e72862dc). 
-1. Complete the steps to add app governance. Sign up is simple, as shown in the following graphic.
+1. Complete the steps to add app governance. Sign-up is simple, as shown in the following graphic.
 
 :::image type="content" source="../media/manage-app-protection-governance/app-governance-signup2.gif" alt-text="Simple steps to add app governance to your account":::
 
-## Add integration with MCAS 
+## Add integration with MCAS
 
-Pre requisites:
+Prerequisites:
 
 - Office 365 is connected in Cloud App Security
 - Office 365 Azure AD apps are enabled
 
-To enable app governance sync with Cloud App Security follow these steps:
+To enable app governance sync with Cloud App Security, follow these steps:
 
 1. Go to your Microsoft Cloud App Security portal – [https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)
-1. Click the gear icon (top right corner) and select **Settings**.
+1. Select the gear icon (top right corner) and select **Settings**.
 1. Under **Threat Protection**, select **App Governance**.
-1. Click **Enable App Governance integration**, and then select **Save**.
+1. Select **Enable App Governance integration**, and then select **Save**.
 
 Next, review newly enabled policies in MCAS. The new policies might take few minutes to appear once integration is enabled.
 
@@ -61,8 +61,8 @@ Next, review newly enabled policies in MCAS. The new policies might take few min
 - Microsoft 365 OAuth App Governance
 - Review App Governance widget in MCAS dashboard
 - Review newly generated App Governance alerts in MCAS alerts
-- Review MCAS M365 OAuth policies in App Governance policy list
-- Review newly generated  MCAS M365 OAuth alerts  in App Governance alerts
+- Review MCAS Microsoft 365 OAuth policies in App Governance policy list
+- Review newly generated  MCAS Microsoft 365 OAuth alerts  in App Governance alerts
 
 ## Licensing for app governance
 
