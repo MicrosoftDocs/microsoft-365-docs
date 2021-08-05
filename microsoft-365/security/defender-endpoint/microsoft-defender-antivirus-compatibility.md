@@ -71,7 +71,9 @@ If your organization is using a non-Microsoft antivirus/antimalware solution tog
 
 ### Why run Microsoft Defender Antivirus in passive mode?
 
-Defender for Endpoint includes capabilities that further extend the antivirus protection that is installed on your endpoint. For example, [Endpoint detection and response (EDR) in block mode](edr-in-block-mode.md) provides added protection from malicious artifacts even if Microsoft Defender Antivirus is not the primary antivirus product. Such capabilities require Microsoft Defender Antivirus to be installed and running in passive mode or active mode.
+Defender for Endpoint includes capabilities that further extend the antivirus protection that is installed on your endpoint. You can benefit from running Microsoft Defender Antivirus alongside another antivirus solution. 
+
+For example, [Endpoint detection and response (EDR) in block mode](edr-in-block-mode.md) provides added protection from malicious artifacts even if Microsoft Defender Antivirus is not the primary antivirus product. Such capabilities require Microsoft Defender Antivirus to be installed and running in passive mode or active mode.
 
 ### Requirements for Microsoft Defender Antivirus to run in passive mode
 
