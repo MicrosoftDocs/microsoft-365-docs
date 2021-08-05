@@ -144,7 +144,7 @@ Options: 0-4. When Type Allow or Deny is selected:
    - 0: nothing
    - 1: show notification, only works for AuditDenied
    - 2: send event
-   - 3: show notification and send event. If apply this to AuditAllowed, will only fire event for reporting but not have notification.
+   - 3: show notification and send event. If applying this to AuditAllowed, will only fire the event for reporting but will not show the notification.
    
 **Property name: Sid**
 
@@ -346,4 +346,3 @@ DeviceFileEvents
 | summarize dcount(DeviceName) by PlatformVersion // check how many machines are using which platformVersion
 | order by PlatformVersion desc
 ```
-
