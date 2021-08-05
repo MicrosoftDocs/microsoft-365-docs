@@ -20,7 +20,7 @@ search.appverid:
 - MET150
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
-description: "Get step by step tools to plan, migrate and implement the features in your tenant’s licenses. Find a guide to set up a service or an app you need to run."
+description: "Get step-by-step tools to plan, migrate, and implement the features in your tenant’s licenses. Find a guide to set up a service or an app you need to run."
 ---
 
 # Setup guides for Microsoft 365 and Office 365 services
@@ -227,4 +227,3 @@ Each guide provides you with step-by-step instructions, resources, articles, and
 ![Example of a setup guide](../media/setup-guides-for-microsoft-365/m365-setupguide-example.png)
 
 You can use the guides to learn more about specific Microsoft 365 and Office 365 features during the planning phase, during deployment and rollout, or to revisit them after you've completed a deployment to modify a setting.
-
