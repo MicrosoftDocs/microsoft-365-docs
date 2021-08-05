@@ -90,7 +90,7 @@ It also includes essential information on enabling self-service password resets,
 
 ### Sync users from your Windows Server Active directory
 
-The [Sync users from your Windows Server Active directory wizard](https://aka.ms/directorysyncsetup) walks you through turning on directory synchronization. This brings your on-premises and cloud identities together for easier access and simplified management. Unlock new capabilities, like single sign-on, self-service options, automatic account provisioning, conditional access controls, and compliance policies. This ensures that your users have access to the resources they need from anywhere.
+The [Sync users from your Windows Server Active Directory wizard](https://aka.ms/directorysyncsetup) walks you through turning on directory synchronization. This brings your on-premises and cloud identities together for easier access and simplified management. Unlock new capabilities, like single sign-on, self-service options, automatic account provisioning, conditional access controls, and compliance policies. This ensures that your users have access to the resources they need from anywhere.
 
 ### Plan your passwordless deployment
 
