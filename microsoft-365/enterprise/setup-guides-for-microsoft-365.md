@@ -88,7 +88,7 @@ The [Azure AD setup guide](https://aka.ms/aadpguidance) provides information to 
 
 It also includes essential information on enabling self-service password resets, conditional access and integrated third-party sign-on including optional advanced identity protection and user provisioning automation.
 
-### Sync users from your Windows Server Active directory
+### Sync users from your Windows Server Active Directory
 
 The [Sync users from your Windows Server Active Directory wizard](https://aka.ms/directorysyncsetup) walks you through turning on directory synchronization. This brings your on-premises and cloud identities together for easier access and simplified management. Unlock new capabilities, like single sign-on, self-service options, automatic account provisioning, conditional access controls, and compliance policies. This ensures that your users have access to the resources they need from anywhere.
 
