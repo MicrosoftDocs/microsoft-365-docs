@@ -30,7 +30,7 @@ Microsoft Defender Antivirus is automatically installed on client devices runnin
 
 ## Active mode, passive mode, and disabled mode
 
-Microsoft Defender Antivirus can be set to active mode or passive mode, or can be disabled/uninstalled. The following table describes what happens in each state.
+This section describes various states you might see with Microsoft Defender Antivirus. <br/><br/>
 
 | Microsoft Defender Antivirus state  | Description  |
 |---------|---------|
