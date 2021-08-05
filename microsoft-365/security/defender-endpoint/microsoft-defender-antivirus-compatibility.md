@@ -26,7 +26,12 @@ ms.date: 08/05/2021
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 
-Microsoft Defender Antivirus is automatically installed on client devices running Windows 10 or later, and servers running Windows Server 2016, Windows Server, version 1803 or later, or Windows Server 2019. 
+Microsoft Defender Antivirus is automatically installed on endpoints running the following versions of Windows:
+
+- Windows 10 or later
+- Windows Server 2016
+- Windows Server, version 1803 or later
+- Windows Server 2019
 
 But what happens when another (non-Microsoft) antivirus/antimalware solution is used? Can you run Microsoft Defender Antivirus alongside another antivirus product? The answers depend on several factors, such as your operating system and whether you're using [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) (Defender for Endpoint) together with your antivirus protection. 
 
