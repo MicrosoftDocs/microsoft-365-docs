@@ -1,5 +1,5 @@
 ---
-title: Investigate and respond using Microsoft 365 Defender in a pilot environment, and use Attack Simulator, teach users to detect, investigate attack surfaces, and strengthen your security posture
+title: Investigate and respond using Microsoft 365 Defender in a pilot environment
 description: Set up attack simulations in Microsoft 365 Defender trial lab or pilot environment to try out the security solution designed to teach users to protect devices, identity, data, and applications.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150

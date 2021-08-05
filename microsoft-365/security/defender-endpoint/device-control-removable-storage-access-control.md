@@ -26,6 +26,9 @@ Microsoft Defender for Endpoint Device Control Removable Storage Access Control 
 
 - auditing, allowing or preventing the read, write or execute access to removable storage with or without exclusion
 
+
+#### Access Control
+
 <br>
 
 ****
@@ -34,11 +37,32 @@ Microsoft Defender for Endpoint Device Control Removable Storage Access Control 
 |---|---|
 |Access|Read, Write, Execute|
 |Action Mode|Audit, Allow, Prevent|
+|||
+
+#### Supported deployment method
+
+<br>
+
+****
+
+|Method|Supported?|
+|---|---|
 |CSP Support|Yes|
 |GPO Support|Yes|
+|||
+
+
+#### Supported target scenario
+
+<br>
+
+****
+
+|Scenario|Supported?|
+|---|---|
 |User-based Support|Yes|
 |Machine-based Support|Yes|
-|
+|||
 
 ## Licensing
 
@@ -52,15 +76,13 @@ Before you get started with Removable Storage Access Control, you should [confir
 Deploy Removable Storage Access Control on Windows 10 devices that have antimalware client version **4.18.2103.3 or later**.
 
 - **4.18.2104 or later**: Add SerialNumberId, VID_PID, filepath-based GPO support, ComputerSid
-
 - **4.18.2105 or later**: Add Wildcard support for HardwareId/DeviceId/InstancePathId/FriendlyNameId/SerialNumberId, the combination of specific user on specific machine, removeable SSD (a SanDisk Extreme SSD)/USB Attached SCSI (UAS) support
-
 - **4.18.2107 or later**: Add Windows Portable Device (WPD) support (for mobile devices, such as tablets)
 
 :::image type="content" source="images/powershell.png" alt-text="The PowerShell interface":::
 
 > [!NOTE]
-> None of Windows Security components need to be active, you can run Removable Storage Access Control independent of Windows Security status.
+> None of Windows Security components need to be active as you can run Removable Storage Access Control independent of Windows Security status.
 
 ## Policy properties
 
@@ -68,7 +90,7 @@ You can use the following properties to create a removable storage group:
 
 ### Property name: Group Id
 
-1. Description: [GUID](https://en.wikipedia.org/wiki/Universally_unique_identifier), a unique ID, represents the group and will be used in the policy.
+1. Description: GUID, a unique ID, represents the group and will be used in the policy.
 
 ### Property name: DescriptorIdList
 
@@ -101,7 +123,7 @@ Following are the access control policy properties:
 
 ### Property name: PolicyRuleId
 
-1. Description: [GUID](https://en.wikipedia.org/wiki/Universally_unique_identifier), a unique ID, represents the policy and will be used in the reporting and troubleshooting.
+1. Description: GUID, a unique ID, represents the policy and will be used in the reporting and troubleshooting.
 
 ### Property name: IncludedIdList
 
@@ -128,7 +150,6 @@ Options: The Group ID/GUID must be used at this instance.
     - Enforcement: Allow or Deny
     - Audit: AuditAllowed or AuditDenied
 2. Options:
-
     - Allow
     - Deny
     - AuditAllowed: Defines notification and event when access is allowed
@@ -271,7 +292,6 @@ For policy deployment in Intune, the account must have permissions to create, ed
     - Data Type: String (XML file)
 
 2. For each policy, also create an OMA-URI:
-
     - OMA-URI:
 
       ./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7bFA6BE102-0784-4A2A-B010-A0BEBEBF68E1%7d/RuleData
@@ -295,11 +315,12 @@ The Microsoft 365 security portal shows removable storage blocked by the Device 
 ```kusto
 //events triggered by RemovableStoragePolicyTriggered
 DeviceEvents
-| where ActionType == "RemovableStoragePolicyTriggered"
-| extend parsed=parse_json(AdditionalFields)
-| extend RemovableStorageAccess = tostring(parsed.RemovableStorageAccess) 
-| extend RemovableStoragePolicyVerdict = tostring(parsed.RemovableStoragePolicyVerdict) 
-| extend MediaBusType = tostring(parsed.BusType) 
+
+| where ActionType == "RemovableStoragePolicyTriggered" 
+| extend parsed=parse_json(AdditionalFields) 
+| extend RemovableStorageAccess = tostring(parsed.RemovableStorageAccess)  
+| extend RemovableStoragePolicyVerdict = tostring(parsed.RemovableStoragePolicyVerdict)  
+| extend MediaBusType = tostring(parsed.BusType)  
 | extend MediaClassGuid = tostring(parsed.ClassGuid)
 | extend MediaClassName = tostring(parsed.ClassName)
 | extend MediaDeviceId = tostring(parsed.DeviceId)
