@@ -126,6 +126,4 @@ This section describes various states you might see with Microsoft Defender Anti
 - [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
 - [Microsoft Defender Antivirus on Windows Server](microsoft-defender-antivirus-on-windows-server.md)
 - [EDR in block mode](edr-in-block-mode.md)
-- [Configure Endpoint Protection](/mem/configmgr/protect/deploy-use/endpoint-protection-configure)
-- [Address false positives/negatives in Defender for Endpoint](defender-endpoint-false-positives-negatives.md)
 - [Learn about Microsoft 365 Endpoint data loss prevention](/microsoft-365/compliance/endpoint-dlp-learn-about)
