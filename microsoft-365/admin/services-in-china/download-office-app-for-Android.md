@@ -41,9 +41,9 @@ A few Office app for Android features aren't available for Office 365 operated b
 
 Download the Office app for Android phones from any of these China stores:
 - [Baidu](https://shouji.baidu.com/software/26842919.html)
-- [Xiaomi](https://app.mi.com/details?id=com.microsoft.office.officehub&ref=search)
+- [Xiaomi](http://app.mi.com/details?id=com.microsoft.office.officehub&ref=search)
 - [Lenovo](https://www.lenovomm.com/appdetail/com.microsoft.office.officehub/43003745)
-- [360](https://zhushou.360.cn/detail/index/soft_id/708682?recrefer=SE_D_office%20mobile)
+- [360](http://zhushou.360.cn/detail/index/soft_id/708682?recrefer=SE_D_office%20mobile)
 - [tencent](https://sj.qq.com/myapp/detail.htm?apkName=com.microsoft.office.officehub)
 - [wandoujia](https://www.wandoujia.com/apps/1502895)
 

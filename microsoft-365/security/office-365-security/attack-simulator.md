@@ -107,18 +107,18 @@ If you're going to use one of the built-in templates or create the email message
 
    - **Phishing Login Server URL**: Click the drop down and select one of the available URLs from the list. This is the URL that users will be tempted to click. The choices are:
 
-     - <https://portal.docdeliveryapp.com>
-     - <https://portal.docdeliveryapp.net>
-     - <https://portal.docstoreinternal.com>
-     - <https://portal.docstoreinternal.net>
-     - <https://portal.hardwarecheck.net>
-     - <https://portal.hrsupportint.com>
-     - <https://portal.payrolltooling.com>
-     - <https://portal.payrolltooling.net>
-     - <https://portal.prizegiveaway.net>
-     - <https://portal.prizesforall.com>
-     - <https://portal.salarytoolint.com>
-     - <https://portal.salarytoolint.net>
+     - <http://portal.docdeliveryapp.com>
+     - <http://portal.docdeliveryapp.net>
+     - <http://portal.docstoreinternal.com>
+     - <http://portal.docstoreinternal.net>
+     - <http://portal.hardwarecheck.net>
+     - <http://portal.hrsupportint.com>
+     - <http://portal.payrolltooling.com>
+     - <http://portal.payrolltooling.net>
+     - <http://portal.prizegiveaway.net>
+     - <http://portal.prizesforall.com>
+     - <http://portal.salarytoolint.com>
+     - <http://portal.salarytoolint.net>
 
      > [!NOTE]
      >
@@ -183,18 +183,18 @@ If you're going to use one of the built-in templates or create the email message
 
    - **Phishing Login Server URL**: Click the drop down and select one of the available URLs from the list. This is the URL that users will be tempted to click. The choices are:
 
-     - <https://portal.docdeliveryapp.com>
-     - <https://portal.docdeliveryapp.net>
-     - <https://portal.docstoreinternal.com>
-     - <https://portal.docstoreinternal.net>
-     - <https://portal.hardwarecheck.net>
-     - <https://portal.hrsupportint.com>
-     - <https://portal.payrolltooling.com>
-     - <https://portal.payrolltooling.net>
-     - <https://portal.prizegiveaway.net>
-     - <https://portal.prizesforall.com>
-     - <https://portal.salarytoolint.com>
-     - <https://portal.salarytoolint.net>
+     - <http://portal.docdeliveryapp.com>
+     - <http://portal.docdeliveryapp.net>
+     - <http://portal.docstoreinternal.com>
+     - <http://portal.docstoreinternal.net>
+     - <http://portal.hardwarecheck.net>
+     - <http://portal.hrsupportint.com>
+     - <http://portal.payrolltooling.com>
+     - <http://portal.payrolltooling.net>
+     - <http://portal.prizegiveaway.net>
+     - <http://portal.prizesforall.com>
+     - <http://portal.salarytoolint.com>
+     - <http://portal.salarytoolint.net>
 
      > [!NOTE]
      >

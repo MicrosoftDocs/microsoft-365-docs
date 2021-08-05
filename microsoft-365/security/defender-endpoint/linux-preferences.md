@@ -450,7 +450,7 @@ The following configuration profile will:
       "automaticDefinitionUpdateEnabled":true,
       "automaticSampleSubmissionConsent":"safe",
       "enabled":true,
-      "proxy":"https://proxy.server:port/"
+      "proxy":"http://proxy.server:port/"
    }
 }
 ```
@@ -516,7 +516,7 @@ The following configuration profile contains entries for all settings described 
       "diagnosticLevel":"optional",
       "automaticSampleSubmissionConsent":"safe",
       "automaticDefinitionUpdateEnabled":true,
-      "proxy": "https://proxy.server:port/"
+      "proxy": "http://proxy.server:port/"
    }
 }
 ```

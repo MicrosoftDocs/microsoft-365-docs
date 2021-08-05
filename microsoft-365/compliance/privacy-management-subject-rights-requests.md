@@ -193,7 +193,7 @@ As an example, the following XML file defines a sample schema, with five fields 
 You can copy, modify, and use our example.
 
  ```xml
-<PdmSchema xmlns="https://schemas.microsoft.com/office/2020/pdm">
+<PdmSchema xmlns="http://schemas.microsoft.com/office/2020/pdm">
       <DataStore name="Patientrecords" description="Schema for patient records" version="1" primaryKeyField="PatientID" upnField="MRN" firstNameField="FirstName" lastNameField="LastName">
             <Field name="PatientID" searchable="true"/>
             <Field name="MRN" searchable="true" />
@@ -232,7 +232,7 @@ In our rule package XML example below, we are referencing the pdm.xml example fi
 Create a rule package in XML format (with Unicode encoding), like in the following example code. You can copy, modify, and use this example.
 
  ```xml
-<RulePackage xmlns="https://schemas.microsoft.com/office/2020/pdm">
+<RulePackage xmlns="http://schemas.microsoft.com/office/2020/pdm">
   <RulePack id="fd098e03-1796-41a5-8ab6-198c93c62b21">
     <Version build="0" major="2" minor="0" revision="0" />
     <Publisher id="eb553734-8306-44b4-9ad5-c388ad970528" />

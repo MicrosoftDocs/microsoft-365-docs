@@ -92,7 +92,7 @@ Here are some additional considerations for Azure AD:
 
 - For networking:
 
-  - Creating IPv6-named networks doesn't work in the Azure portal, `https://portal.microsoftazure.de/`. Use the Azure portal at `https://portal.azure.com` to create IPv6-named networks.
+  - Creating IPv6-named networks doesn't work in the Azure portal, `http://portal.microsoftazure.de/`. Use the Azure portal at `https://portal.azure.com` to create IPv6-named networks.
  
    - You can't create trusted IP address ranges for Azure Multi-Factor Authentication (MFA) service settings from the Microsoft Cloud Deutschland portal. Use the Azure AD portal for Office 365 services to create Azure MFA trusted IP address ranges.
 

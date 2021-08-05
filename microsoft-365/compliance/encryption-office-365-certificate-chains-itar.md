@@ -67,8 +67,8 @@ Expand the root and intermediate sections below to see additional details about 
 | **Thumbprint (SHA-1)** | 81B68D6CD2F221F8F534E677523BB236BBA1DC56 |
 | **Thumbprint (SHA-256)** | 2F6889961A7CA7067E8BA103C2CF9B9A924F8CA293F11178E23A1978D2F133D3 |
 | **Pin (SHA-256)** | UgpUVparimk8QCjtWQaUQ7EGrtrykc/L8N66EhFY3VE= |
-| **CRL URLs** | https://crl4.digicert.com/DigiCertGlobalRootCA.crl<br>https://crl3.digicert.com/DigiCertGlobalRootCA.crl |
-| **OCSP URLs** | https://ocsp.digicert.com |
+| **CRL URLs** | http://crl4.digicert.com/DigiCertGlobalRootCA.crl<br>http://crl3.digicert.com/DigiCertGlobalRootCA.crl |
+| **OCSP URLs** | http://ocsp.digicert.com |
 
 ### **DigiCert Cloud Services CA-1**
 
@@ -84,8 +84,8 @@ Expand the root and intermediate sections below to see additional details about 
 | **Authority Key Identifier** | KeyID:03:de:50:35:56:d1:4c:bb:66:f0:a3:e2:1b:1b:c3:97:b2:3d:d1:55 |
 | **Thumbprint (SHA-1)** | B3F6B64A07BB9611F47174407841F564FB991F29 |
 | **Thumbprint (SHA-256)** | 5F88694615E4C61686E106B84C3338C6720C535F60D36F61282ED15E1977DD44 |
-| **CRL URLs** | https://crl3.digicert.com/DigiCertGlobalRootCA.crl https://crl4.digicert.com/DigiCertGlobalRootCA.crl |
-| **OCSP URLs** | https://ocsp.digicert.com |
+| **CRL URLs** | http://crl3.digicert.com/DigiCertGlobalRootCA.crl http://crl4.digicert.com/DigiCertGlobalRootCA.crl |
+| **OCSP URLs** | http://ocsp.digicert.com |
 
 ### **DigiCert Global Root CA**
 
@@ -160,8 +160,8 @@ Expand the root and intermediate sections below to see additional details about 
 | **Authority Key Identifier** | KeyID:03:de:50:35:56:d1:4c:bb:66:f0:a3:e2:1b:1b:c3:97:b2:3d:d1:55 |
 | **Thumbprint (SHA-1)** | 1FB86B1168EC743154062E8C9CC5B171A4B7CCB4 |
 | **Thumbprint (SHA-256)** | 154C433C491929C5EF686E838E323664A00E6A0D822CCC958FB4DAB03E49A08F |
-| **CRL URLs** | https://crl3.digicert.com/DigiCertGlobalRootCA.crl https://crl4.digicert.com/DigiCertGlobalRootCA.crl |
-| **OCSP URLs** | https://ocsp.digicert.com |
+| **CRL URLs** | http://crl3.digicert.com/DigiCertGlobalRootCA.crl http://crl4.digicert.com/DigiCertGlobalRootCA.crl |
+| **OCSP URLs** | http://ocsp.digicert.com |
 
 ### **DigiCert SHA2 Secure Server CA**
 
@@ -177,8 +177,8 @@ Expand the root and intermediate sections below to see additional details about 
 | **Authority Key Identifier** | KeyID:03:de:50:35:56:d1:4c:bb:66:f0:a3:e2:1b:1b:c3:97:b2:3d:d1:55 |
 | **Thumbprint (SHA-1)** | 626D44E704D1CEABE3BF0D53397464AC8080142C |
 | **Thumbprint (SHA-256)** | C1AD7778796D20BCA65C889A2655021156528BB62FF5FA43E1B8E5A83E3D2EAA |
-| **CRL URLs** | https://crl3.digicert.com/DigiCertGlobalRootCA.crl https://crl4.digicert.com/DigiCertGlobalRootCA.crl |
-| **OCSP URLs** | https://ocsp.digicert.com |
+| **CRL URLs** | http://crl3.digicert.com/DigiCertGlobalRootCA.crl http://crl4.digicert.com/DigiCertGlobalRootCA.crl |
+| **OCSP URLs** | http://ocsp.digicert.com |
 
 ### **DigiCert TLS RSA SHA256 2020 CA1**
 
@@ -194,8 +194,8 @@ Expand the root and intermediate sections below to see additional details about 
 | **Authority Key Identifier** | KeyID:03:de:50:35:56:d1:4c:bb:66:f0:a3:e2:1b:1b:c3:97:b2:3d:d1:55 |
 | **Thumbprint (SHA-1)** | 6938FD4D98BAB03FAADB97B34396831E3780AEA1 |
 | **Thumbprint (SHA-256)** | 25768713D3B459F9382D2A594F85F34709FD2A8930731542A4146FFB246BEC69 |
-| **CRL URLs** | https://crl3.digicert.com/DigiCertGlobalRootCA.crl https://crl4.digicert.com/DigiCertGlobalRootCA.crl |
-| **OCSP URLs** | https://ocsp.digicert.com |
+| **CRL URLs** | http://crl3.digicert.com/DigiCertGlobalRootCA.crl http://crl4.digicert.com/DigiCertGlobalRootCA.crl |
+| **OCSP URLs** | http://ocsp.digicert.com |
 
 ### **Entrust Root Certification Authority**
 
@@ -254,8 +254,8 @@ Expand the root and intermediate sections below to see additional details about 
 | **Thumbprint (SHA-1)** | C53E73073F93CE7895DE7484126BC303DAB9E657 |
 | **Thumbprint (SHA-256)** | 0EE4DAF71A85D842D23F4910FD4C909B7271861931F1D5FEAC868225F52700E2 |
 | **Pin (SHA-256)** | VFv5NemtodoRftw8KsvFb8AoCWwOJL6bOJS+Ui0bQ94= |
-| **CRL URLs** | https://crl.entrust.net/2048ca.crl |
-| **OCSP URLs** | https://ocsp.entrust.net |
+| **CRL URLs** | http://crl.entrust.net/2048ca.crl |
+| **OCSP URLs** | http://ocsp.entrust.net |
 
 ### **Entrust Certification Authority - L1E**
 
@@ -271,8 +271,8 @@ Expand the root and intermediate sections below to see additional details about 
 | **Authority Key Identifier** | keyid:68:90:e4:67:a4:a6:53:80:c7:86:66:a4:f1:f7:4b:43:fb:84:bd:6d |
 | **Thumbprint (SHA-1)** | 8A000CC056F7D17349F045BEB0319A3B91C9F979 |
 | **Thumbprint (SHA-256)** | 3C7A634E5778A0F731972B702DAE24B2CF2060219F607E69878B164C61A06C41 |
-| **CRL URLs** | https://crl.entrust.net/rootca1.crl |
-| **OCSP URLs** | https://ocsp.entrust.net |
+| **CRL URLs** | http://crl.entrust.net/rootca1.crl |
+| **OCSP URLs** | http://ocsp.entrust.net |
 
 ### **Entrust Certification Authority - L1K**
 
@@ -289,8 +289,8 @@ Expand the root and intermediate sections below to see additional details about 
 | **Thumbprint (SHA-1)** | F21C12F46CDB6B2E16F09F9419CDFF328437B2D7 |
 | **Thumbprint (SHA-256)** | 13EFB39A2F6654E8C67BD04F4C6D4C90CD6CAB5091BCEDC73787F6B77D3D3FE7 |
 | **Pin (SHA-256)** | 980Ionqp3wkYtN9SZVgMzuWQzJta1nfxNPwTem1X0uc= |
-| **CRL URLs** | https://crl.entrust.net/g2ca.crl |
-| **OCSP URLs** | https://ocsp.entrust.net |
+| **CRL URLs** | http://crl.entrust.net/g2ca.crl |
+| **OCSP URLs** | http://ocsp.entrust.net |
 
 ### **Entrust Certification Authority - L1M**
 
@@ -306,8 +306,8 @@ Expand the root and intermediate sections below to see additional details about 
 | **Authority Key Identifier** | keyid:6a:72:26:7a:d0:1e:ef:7d:e7:3b:69:51:d4:6c:8d:9f:90:12:66:ab |
 | **Thumbprint (SHA-1)** | CC136695639065FAB47074D28C55314C66077E90 |
 | **Thumbprint (SHA-256)** | 75C5B3F01FD1F51A2C447AB7C785D72E69FA9C472C08571E7EADF3B8EABAE70C |
-| **CRL URLs** | https://crl.entrust.net/g2ca.crl |
-| **OCSP URLs** | https://ocsp.entrust.net |
+| **CRL URLs** | http://crl.entrust.net/g2ca.crl |
+| **OCSP URLs** | http://ocsp.entrust.net |
 
 ### **Microsoft Azure TLS Issuing CA 01**
 
@@ -323,8 +323,8 @@ Expand the root and intermediate sections below to see additional details about 
 | **Authority Key Identifier** | KeyID:4e:22:54:20:18:95:e6:e3:6e:e6:0f:fa:fa:b9:12:ed:06:17:8f:39 |
 | **Thumbprint (SHA-1)** | 2F2877C5D778C31E0F29C7E371DF5471BD673173 |
 | **Thumbprint (SHA-256)** | 24C7299864E0A2A6964F551C0E8DF2461532FA8C48E4DBBB6080716691F190E5 |
-| **CRL URLs** | https://crl3.digicert.com/DigiCertGlobalRootG2.crl https://crl4.digicert.com/DigiCertGlobalRootG2.crl |
-| **OCSP URLs** | https://ocsp.digicert.com |
+| **CRL URLs** | http://crl3.digicert.com/DigiCertGlobalRootG2.crl http://crl4.digicert.com/DigiCertGlobalRootG2.crl |
+| **OCSP URLs** | http://ocsp.digicert.com |
 
 ### **Microsoft Azure TLS Issuing CA 02**
 
@@ -340,8 +340,8 @@ Expand the root and intermediate sections below to see additional details about 
 | **Authority Key Identifier** | KeyID:4e:22:54:20:18:95:e6:e3:6e:e6:0f:fa:fa:b9:12:ed:06:17:8f:39 |
 | **Thumbprint (SHA-1)** | E7EEA674CA718E3BEFD90858E09F8372AD0AE2AA |
 | **Thumbprint (SHA-256)** | 15A98761EBE011554DA3A46D206B0812CB2EB69AE87AAA11A6DD4CB84ED5142A |
-| **CRL URLs** | https://crl3.digicert.com/DigiCertGlobalRootG2.crl https://crl4.digicert.com/DigiCertGlobalRootG2.crl |
-| **OCSP URLs** | https://ocsp.digicert.com |
+| **CRL URLs** | http://crl3.digicert.com/DigiCertGlobalRootG2.crl http://crl4.digicert.com/DigiCertGlobalRootG2.crl |
+| **OCSP URLs** | http://ocsp.digicert.com |
 
 ### **Microsoft Azure TLS Issuing CA 05**
 
@@ -357,8 +357,8 @@ Expand the root and intermediate sections below to see additional details about 
 | **Authority Key Identifier** | KeyID:4e:22:54:20:18:95:e6:e3:6e:e6:0f:fa:fa:b9:12:ed:06:17:8f:39 |
 | **Thumbprint (SHA-1)** | 6C3AF02E7F269AA73AFD0EFF2A88A4A1F04ED1E5 |
 | **Thumbprint (SHA-256)** | D6831BA43607F5AC19778D627531562AF55145F191CAB5EFAFA0E0005442B302 |
-| **CRL URLs** | https://crl3.digicert.com/DigiCertGlobalRootG2.crl https://crl4.digicert.com/DigiCertGlobalRootG2.crl |
-| **OCSP URLs** | https://ocsp.digicert.com |
+| **CRL URLs** | http://crl3.digicert.com/DigiCertGlobalRootG2.crl http://crl4.digicert.com/DigiCertGlobalRootG2.crl |
+| **OCSP URLs** | http://ocsp.digicert.com |
 
 ### **Microsoft Azure TLS Issuing CA 06**
 
@@ -374,8 +374,8 @@ Expand the root and intermediate sections below to see additional details about 
 | **Authority Key Identifier** | KeyID:4e:22:54:20:18:95:e6:e3:6e:e6:0f:fa:fa:b9:12:ed:06:17:8f:39 |
 | **Thumbprint (SHA-1)** | 30E01761AB97E59A06B41EF20AF6F2DE7EF4F7B0 |
 | **Thumbprint (SHA-256)** | 48FF8B494668C752304B48BFE818758987DEF6582E5F09B921F4B60BB3D6A8DD |
-| **CRL URLs** | https://crl3.digicert.com/DigiCertGlobalRootG2.crl https://crl4.digicert.com/DigiCertGlobalRootG2.crl |
-| **OCSP URLs** | https://ocsp.digicert.com |
+| **CRL URLs** | http://crl3.digicert.com/DigiCertGlobalRootG2.crl http://crl4.digicert.com/DigiCertGlobalRootG2.crl |
+| **OCSP URLs** | http://ocsp.digicert.com |
 
 ### **Microsoft IT TLS CA 1**
 
@@ -392,8 +392,8 @@ Expand the root and intermediate sections below to see additional details about 
 | **Thumbprint (SHA-1)** | 417E225037FBFAA4F95761D5AE729E1AEA7E3A42 |
 | **Thumbprint (SHA-256)** | 4FF404F02E2CD00188F15D1C00F4B6D1E38B5A395CF85314EAEBA855B6A64B75 |
 | **Pin (SHA-256)** | xjXxgkOYlag7jCtR5DreZm9b61iaIhd+J3+b2LiybIw= |
-| **CRL URLs** | https://crl3.digicert.com/Omniroot2025.crl |
-| **OCSP URLs** | https://ocsp.digicert.com |
+| **CRL URLs** | http://crl3.digicert.com/Omniroot2025.crl |
+| **OCSP URLs** | http://ocsp.digicert.com |
 
 ### **Microsoft IT TLS CA 2**
 
@@ -410,8 +410,8 @@ Expand the root and intermediate sections below to see additional details about 
 | **Thumbprint (SHA-1)** | 54D9D20239080C32316ED9FF980A48988F4ADF2D |
 | **Thumbprint (SHA-256)** | 4E107C981B42ACBE41C01067E16D44DB64814D4193E572317EA04B87C79C475F |
 | **Pin (SHA-256)** | wBdPad95AU7OgLRs0FU/E6ILO1MSCM84kJ9y0H+TT7s= |
-| **CRL URLs** | https://crl3.digicert.com/Omniroot2025.crl |
-| **OCSP URLs** | https://ocsp.digicert.com |
+| **CRL URLs** | http://crl3.digicert.com/Omniroot2025.crl |
+| **OCSP URLs** | http://ocsp.digicert.com |
 
 ### **Microsoft IT TLS CA 4**
 
@@ -428,8 +428,8 @@ Expand the root and intermediate sections below to see additional details about 
 | **Thumbprint (SHA-1)** | 8A38755D0996823FE8FA3116A277CE446EAC4E99 |
 | **Thumbprint (SHA-256)** | 5FFAC43E0DDC5B4AF2B696F6BC4DB7E91DF314BB8FE0D0713A0B1A7AD2A68FAC |
 | **Pin (SHA-256)** | wUY9EOTJmS7Aj4fDVCu/KeE++mV7FgIcbn4WhMz1I2k= |
-| **CRL URLs** | https://crl3.digicert.com/Omniroot2025.crl |
-| **OCSP URLs** | https://ocsp.digicert.com |
+| **CRL URLs** | http://crl3.digicert.com/Omniroot2025.crl |
+| **OCSP URLs** | http://ocsp.digicert.com |
 
 ### **Microsoft IT TLS CA 5**
 
@@ -446,8 +446,8 @@ Expand the root and intermediate sections below to see additional details about 
 | **Thumbprint (SHA-1)** | AD898AC73DF333EB60AC1F5FC6C4B2219DDB79B7 |
 | **Thumbprint (SHA-256)** | F0EE5914ED94C7252D058B4E39808AEE6FA8F62CF0974FB7D6D2A9DF16E3A87F |
 | **Pin (SHA-256)** | RCbqB+W8nwjznTeP4O6VjqcwdxIgI79eBpnBKRr32gc= |
-| **CRL URLs** | https://crl3.digicert.com/Omniroot2025.crl |
-| **OCSP URLs** | https://ocsp.digicert.com |
+| **CRL URLs** | http://crl3.digicert.com/Omniroot2025.crl |
+| **OCSP URLs** | http://ocsp.digicert.com |
 
 ### **Microsoft RSA TLS CA 01**
 
@@ -463,8 +463,8 @@ Expand the root and intermediate sections below to see additional details about 
 | **Authority Key Identifier** | KeyID:e5:9d:59:30:82:47:58:cc:ac:fa:08:54:36:86:7b:3a:b5:04:4d:f0 |
 | **Thumbprint (SHA-1)** | 703D7A8F0EBF55AAA59F98EAF4A206004EB2516A |
 | **Thumbprint (SHA-256)** | 04EEEA8E50B4775B3C24797262917EE50002EC4C75B56CDF3EE1C18CFCA5BA52 |
-| **CRL URLs** | https://crl3.digicert.com/Omniroot2025.crl |
-| **OCSP URLs** | https://ocsp.digicert.com |
+| **CRL URLs** | http://crl3.digicert.com/Omniroot2025.crl |
+| **OCSP URLs** | http://ocsp.digicert.com |
 
 ### **Microsoft RSA TLS CA 02**
 
@@ -480,5 +480,5 @@ Expand the root and intermediate sections below to see additional details about 
 | **Authority Key Identifier** | KeyID:e5:9d:59:30:82:47:58:cc:ac:fa:08:54:36:86:7b:3a:b5:04:4d:f0 |
 | **Thumbprint (SHA-1)** | B0C2D2D13CDD56CDAA6AB6E2C04440BE4A429C75 |
 | **Thumbprint (SHA-256)** | 05E4005DB0C382F3BD66B47729E9011577601BF6F7B287E9A52CED710D258346 |
-| **CRL URLs** | https://crl3.digicert.com/Omniroot2025.crl |
-| **OCSP URLs** | https://ocsp.digicert.com |
+| **CRL URLs** | http://crl3.digicert.com/Omniroot2025.crl |
+| **OCSP URLs** | http://ocsp.digicert.com |

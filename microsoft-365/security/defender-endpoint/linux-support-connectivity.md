@@ -86,7 +86,7 @@ OK https://cdn.x.cp.wd.microsoft.com/ping
 If a static proxy is required, add a proxy parameter to the above command, where `proxy_address:port` correspond to the proxy address and port:
 
 ```bash
-curl -x https://proxy_address:port -w ' %{url_effective}\n' 'https://x.cp.wd.microsoft.com/api/report' 'https://cdn.x.cp.wd.microsoft.com/ping'
+curl -x http://proxy_address:port -w ' %{url_effective}\n' 'https://x.cp.wd.microsoft.com/api/report' 'https://cdn.x.cp.wd.microsoft.com/ping'
 ```
 
 Ensure that you use the same proxy address and port as configured in the `/lib/system/system/mdatp.service` file. Check your proxy configuration if there are errors from the above commands.
@@ -97,7 +97,7 @@ Ensure that you use the same proxy address and port as configured in the `/lib/s
 To use a static proxy, the `mdatp.service` file must be modified. Ensure the leading `#` is removed to uncomment the following line from `/lib/systemd/system/mdatp.service`:
 
 ```bash
-#Environment="HTTPS_PROXY=https://address:port"
+#Environment="HTTPS_PROXY=http://address:port"
 ```
 
 Also ensure that the correct static proxy address is filled in to replace `address:port`.

@@ -158,7 +158,7 @@ PUA events are reported in the Windows Event Viewer, but not in Microsoft Endpoi
 CategoryID       : 27
 DidThreatExecute : False
 IsActive         : False
-Resources        : {webfile:_q:\Builds\Dalton_Download_Manager_3223905758.exe|https://d18yzm5yb8map8.cloudfront.net/
+Resources        : {webfile:_q:\Builds\Dalton_Download_Manager_3223905758.exe|http://d18yzm5yb8map8.cloudfront.net/
                     fo4yue@kxqdw/Dalton_Download_Manager.exe|pid:14196,ProcessStart:132378130057195714}
 RollupStatus     : 33
 SchemaVersion    : 1.0.0.0

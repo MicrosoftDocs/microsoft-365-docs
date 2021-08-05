@@ -246,7 +246,7 @@ For detailed syntax and parameter information, see [Get-TenantAllowBlockListSpoo
 
     For example `~contoso.com` includes `contoso.com` and `*.contoso.com`.
 
-- URL entries that contain protocols (for example, `https://`, `https://`, or `ftp://`) will fail, because URL entries apply to all protocols.
+- URL entries that contain protocols (for example, `http://`, `https://`, or `ftp://`) will fail, because URL entries apply to all protocols.
 
 - A username or password aren't supported or required.
 

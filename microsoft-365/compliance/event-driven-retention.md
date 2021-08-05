@@ -237,13 +237,13 @@ Sample code to call the REST API:
     ```xml
     <?xml version='1.0' encoding='utf-8' standalone='yes'?>
     
-    <entry xmlns:d='https://schemas.microsoft.com/ado/2007/08/dataservices'
+    <entry xmlns:d='http://schemas.microsoft.com/ado/2007/08/dataservices'
     
-    xmlns:m='https://schemas.microsoft.com/ado/2007/08/dataservices/metadata'
+    xmlns:m='http://schemas.microsoft.com/ado/2007/08/dataservices/metadata'
     
-    xmlns='https://www.w3.org/2005/Atom'>
+    xmlns='http://www.w3.org/2005/Atom'>
     
-    <category scheme='https://schemas.microsoft.com/ado/2007/08/dataservices/scheme' term='Exchange.ComplianceRetentionEvent' />
+    <category scheme='http://schemas.microsoft.com/ado/2007/08/dataservices/scheme' term='Exchange.ComplianceRetentionEvent' />
     
     <updated>9/9/2017 10:50:00 PM</updated>
     
@@ -386,13 +386,13 @@ Write-Host "Start to create an event with name: $EventName"
 
 $body = "<?xml version='1.0' encoding='utf-8' standalone='yes'?>
 
-<entry xmlns:d='https://schemas.microsoft.com/ado/2007/08/dataservices'
+<entry xmlns:d='http://schemas.microsoft.com/ado/2007/08/dataservices'
 
-xmlns:m='https://schemas.microsoft.com/ado/2007/08/dataservices/metadata'
+xmlns:m='http://schemas.microsoft.com/ado/2007/08/dataservices/metadata'
 
-xmlns='https://www.w3.org/2005/Atom'>
+xmlns='http://www.w3.org/2005/Atom'>
 
-<category scheme='https://schemas.microsoft.com/ado/2007/08/dataservices/scheme' term='Exchange.ComplianceRetentionEvent' />
+<category scheme='http://schemas.microsoft.com/ado/2007/08/dataservices/scheme' term='Exchange.ComplianceRetentionEvent' />
 
 <updated>7/14/2017 2:03:36 PM</updated>
 

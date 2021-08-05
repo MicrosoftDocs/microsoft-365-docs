@@ -50,7 +50,7 @@ The following code is the JSON used for this step in the Power Automate flow.
 
 ```JSON
 {
-"$schema": "https://adaptivecards.io/schemas/adaptive-card.json",
+"$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
 "type": "AdaptiveCard",
 "version": "1.0",
 "body": [
@@ -242,7 +242,7 @@ When a contract has been approved, the following things occur:
             ]
         }
     ],
-    "$schema": "https://adaptivecards.io/schemas/adaptive-card.json",
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
     "version": "1.2",
     "fallbackText": "This card requires Adaptive Cards v1.2 support to be rendered properly."
 }
@@ -338,7 +338,7 @@ The following code is the JSON used for this step in the Power Automate flow.
             ]
         }
     ],
-    "$schema": "https://adaptivecards.io/schemas/adaptive-card.json",
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
     "version": "1.2",
     "fallbackText": "This card requires Adaptive Cards v1.2 support to be rendered properly."
 }

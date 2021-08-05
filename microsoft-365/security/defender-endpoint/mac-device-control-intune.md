@@ -38,7 +38,7 @@ The following example restricts access to all removable media. Note the `none` p
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?> 
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "https://www.apple.com/DTDs/PropertyList-1.0.dtd"> 
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"> 
 <plist version="1"> 
     <dict> 
         <key>PayloadUUID</key> 
@@ -104,7 +104,7 @@ The following example configures all removable media to be read-only. Note the `
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?> 
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "https://www.apple.com/DTDs/PropertyList-1.0.dtd"> 
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"> 
 <plist version="1"> 
     <dict> 
         <key>PayloadUUID</key> 
@@ -170,7 +170,7 @@ The following example shows how program execution from removable media can be di
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?> 
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "https://www.apple.com/DTDs/PropertyList-1.0.dtd"> 
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"> 
 <plist version="1"> 
     <dict> 
         <key>PayloadUUID</key> 
@@ -237,7 +237,7 @@ The following example restricts all devices from specific vendors (in this case 
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?> 
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "https://www.apple.com/DTDs/PropertyList-1.0.dtd"> 
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"> 
 <plist version="1"> 
     <dict> 
         <key>PayloadUUID</key> 
@@ -322,7 +322,7 @@ The following example restricts two specific devices, identified by vendor ID `f
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?> 
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "https://www.apple.com/DTDs/PropertyList-1.0.dtd"> 
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"> 
 <plist version="1"> 
     <dict> 
         <key>PayloadUUID</key> 
