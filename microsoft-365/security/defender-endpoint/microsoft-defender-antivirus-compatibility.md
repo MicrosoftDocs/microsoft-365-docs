@@ -43,7 +43,7 @@ This section describes what happens with Microsoft Defender Antivirus and non-Mi
 | Windows Server, version 1803 or newer <p> Windows Server 2019 | Microsoft Defender Antivirus  | Active mode |
 | Windows Server, version 1803 or newer <p> Windows Server 2019 | A non-Microsoft antivirus/antimalware solution | Disabled (manually) <sup>[[1](#fn1)]<sup></sup>  |
 | Windows Server 2016 | Microsoft Defender Antivirus | Active mode |
-| Windows Server 2016 | A non-Microsoft antivirus/antimalware solution | Disabled (manually) or uninstalled <sup>[[1](#fn1)]<sup> |
+| Windows Server 2016 | A non-Microsoft antivirus/antimalware solution | Disabled (manually) <sup>[[1](#fn1)]<sup> or uninstalled|
 
 (<a id="fn1">1</a>) On Windows Server, if you are running a non-Microsoft antivirus product, you can disable Microsoft Defender Antivirus by using the [DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware) registry key. Navigate to `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender`, and set or create a DWORD entry called `DisableAntiSpyware`. Set its value to `1` (which sets the registry key's value to true.) 
 
