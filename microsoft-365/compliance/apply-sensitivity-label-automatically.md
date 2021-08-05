@@ -58,7 +58,7 @@ There are two different methods for automatically applying a sensitivity label t
         - These files can be auto-labeled at rest before or after the auto-labeling policies are created. Files cannot be auto-labeled if they are part of an open session (the file is open).
         - Currently, attachments to list items aren't supported and won't be auto-labeled.
     - Maximum of 25,000 automatically labeled files in your tenant per day.
-    - Maximum of 10 auto-labeling policies per tenant, each targeting up to 10 sites (SharePoint or OneDrive). With the [recent enhancements now rolling out](#recent-enhancements-for-auto-labeling-policies), these numbers increase to 100 policies and 100 sites when they are specified individually. You can also specify all sites, and this configuration is exempt from the 100 sites maximum.
+    - Maximum of 100 auto-labeling policies per tenant, each targeting up to 100 sites (SharePoint or OneDrive) when they are specified individually. You can also specify all sites, and this configuration is exempt from the 100 sites maximum.
     - Existing values for modified, modified by, and the date are not changed as a result of auto-labeling policies—for both simulation mode and when labels are applied.
     - When the label applies encryption, the [Rights Management issuer and Rights Management owner](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) is the account that last modified the file.
 
@@ -192,9 +192,6 @@ Specific to the Azure Information Protection unified labeling client:
 
 ## How to configure auto-labeling policies for SharePoint, OneDrive, and Exchange
 
-> [!IMPORTANT]
-> New enhancements are currently rolling out for auto-labeling policies that include faster simulation results, support for more files and more sites, and email notifications. For more information, see [Recent enhancements for auto-labeling policies](#recent-enhancements-for-auto-labeling-policies).
-
 Make sure you're aware of the prerequisites before you configure auto-labeling policies.
 
 ### Prerequisites for auto-labeling policies
@@ -226,9 +223,7 @@ Workflow for an auto-labeling policy:
 
 1. Create and configure an auto-labeling policy.
 
-2. Run the policy in simulation mode, which can take 48 hours to complete.
-    
-    With the [recent enhancements](#recent-enhancements-for-auto-labeling-policies) now rolling out, this time is reduced to 12 hours and the completed simulation triggers an email notification that's sent to the user configured to receive [activity alerts](alert-policies.md).
+2. Run the policy in simulation mode, which can take 12 hours to complete. The completed simulation triggers an email notification that's sent to the user configured to receive [activity alerts](alert-policies.md).
 
 3. Review the results, and if necessary, refine your policy. Rerun simulation mode and wait for it to complete again.
 
@@ -377,7 +372,7 @@ For more information about the PowerShell cmdlets that support auto-labeling pol
 
 ## Recent enhancements for auto-labeling policies
 
-The recent enhancements now rolling out for auto-labeling policies for OneDrive and SharePoint have the following improvements from the previous version:
+The recent enhancements for auto-labeling policies for OneDrive and SharePoint have the following improvements from the previous version:
 
 - Maximum of 100 auto-labeling policies per tenant instead of 10.
 
@@ -404,8 +399,6 @@ The recent enhancements now rolling out for auto-labeling policies for OneDrive 
 When your tenant has the new enhancements, you'll see the following notification on the **Auto-labeling** tab:
 
 ![Banner to confirm a tenant has the new enhancements](../media/auto-labeling-updatedbanner.png)
-
-If you don't see this notification, your tenant hasn't got the new enhancements but check again in a few days.
 
 > [!NOTE]
 > If you had any auto-labeling policies that were in simulation mode when your tenant received the new enhancements, you must re-run the simulation. If this scenario applies to you, you'll be prompted to select **Restart Simulation** when you review the simulation. If you don't restart the simulation, it won't complete.
