@@ -1,0 +1,40 @@
+- name: Test Base documentation
+  href: index.yml
+- name: Overview
+  items:
+  - name: What is Test Base?
+    href: overview.md 
+- name: Quickstarts
+  items:  
+    - name: Create Test Base Account
+      href: createAccount.md
+    - name: Uploading a Package
+      href: uploadApplication.md
+    - name: Upload Binaries & Dependencies
+      href: binaries.md
+    - name: Set Test Tasks
+      href: testtask.md
+    - name: Set Test Options
+      href: testoptions.md
+    - name: Review
+      href: review.md
+    - name: Package guideline
+      href: contentguideline.md
+- name: How-to guides
+  items:
+  - name: Server application testing
+    href: server.md
+  - name: Functional testing
+    href: functional.md
+  - name: Feature update validation
+    href: feature.md  
+  - name: Memory Regression Analysis
+    href: memory.md
+  - name: CPU Regression Analysis
+    href: cpu.md 
+- name: Reference
+  items:
+  - name: Frequently Asked Questions
+    href: faq.md
+
+

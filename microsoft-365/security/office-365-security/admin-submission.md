@@ -63,6 +63,9 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
 
 3. Use the **Submit to Microsoft for review** flyout that appears to submit the message, URL, or email attachment as described in the following sections.
 
+   > [!NOTE]
+   > File and URL submissions are not available in the clouds that do not allow for data to leave the environment. The ability to select File or URL will be greyed out.
+
 ### Submit a questionable email to Microsoft
 
 1. In the **Select the submission type** box, verify that **Email** is selected in the drop down list.

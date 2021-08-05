@@ -19,7 +19,7 @@ Creates a model and its associated content type. Note that this only creates the
 
 ## HTTP request
 
-```
+```http
 POST /_api/machinelearning/models HTTP/1.1
 ```
 ## URI Parameters
@@ -54,13 +54,13 @@ None
 
 #### Sample request
 
-```
+```json
 {
-	"__metadata": {
-		"type": "Microsoft.Office.Server.ContentCenter.SPMachineLearningModelEntityData"
-	},
-	"ContentTypeGroup": "Intelligent Document Content Types",
-	"ContentTypeName": "Contoso Contract"
+    "__metadata": {
+        "type": "Microsoft.Office.Server.ContentCenter.SPMachineLearningModelEntityData"
+    },
+    "ContentTypeGroup": "Intelligent Document Content Types",
+    "ContentTypeName": "Contoso Contract"
 }
 ```
 

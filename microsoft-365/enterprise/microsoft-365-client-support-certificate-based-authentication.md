@@ -41,12 +41,11 @@ The latest versions of the following clients and platforms support certificate-b
 
 [!INCLUDE [Certificate-based authentication services support table](../includes/microsoft-365-client-support-certificate-based-authentication-include.md)]
 
->[!NOTE]
->Edge for iOS and Android supports certificate-based authentication during account add flows. Edge for iOS and Android does not support certificate-based authentication when performing authentication against web sites, which are typically intranet sites. <br><br>  In this scenario, a user navigates to a web site (usually on the intranet) where the web site requires the user to authenticate via a certificate. This does not involve modern authentication at all and does not leverage a Microsoft authentication library. This is due to a limitation with iOS: iOS prevents third-party apps from accessing the system keychain where the certificates are stored (only Apple apps and the [Safari webview controller](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller) can access the system keychain). <br><br> As Edge relies on the [WebKit](https://developer.apple.com/documentation/webkit) framework for rendering web sites, Edge is unable to access the system keychain and present the user with a certificate choice. This, unfortunately, is by design due to Apple's architecture.
+> [!NOTE]
+> Edge for iOS and Android supports certificate-based authentication during account add flows. Edge for iOS and Android does not support certificate-based authentication when performing authentication against web sites, which are typically intranet sites. <br><br>  In this scenario, a user navigates to a web site (usually on the intranet) where the web site requires the user to authenticate via a certificate. This does not involve modern authentication at all and does not leverage a Microsoft authentication library. This is due to a limitation with iOS: iOS prevents third-party apps from accessing the system keychain where the certificates are stored (only Apple apps and the [Safari webview controller](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller) can access the system keychain). <br><br> As Edge relies on the [WebKit](https://developer.apple.com/documentation/webkit) framework for rendering web sites, Edge is unable to access the system keychain and present the user with a certificate choice. This, unfortunately, is by design due to Apple's architecture.
 
 ## Supported PowerShell modules
 
-- [Azure Active Directory PowerShell](/powershell/azure/active-directory/overview?view=azureadps-2.0)
+- [Azure Active Directory PowerShell](/powershell/azure/active-directory/overview)
 - [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell)
 - [SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
-

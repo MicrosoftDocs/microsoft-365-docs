@@ -5,14 +5,14 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 
+ms.date:
 audience: ITPro
 ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: 
+ms.collection:
 - M365-security-compliance
-search.appverid: 
+search.appverid:
 - MET150
 description: "Learn how to protect your sensitive information using Microsoft 365 data loss prevention policies and tools and take a tour through the DLP lifecycle."
 ---
@@ -30,7 +30,7 @@ In Microsoft 365, you implement data loss prevention by defining and applying DL
 - on-premises file shares and on-premises SharePoint.
 
 Microsoft 365 detects sensitive items by using deep content analysis, not by just a simple text scan. Content is analyzed for primary data matches to keywords, by the evaluation of regular expressions, by internal function validation, and by secondary data matches that are in proximity to the primary data match. Beyond that DLP also uses machine learning algorithms and other methods to detect content that matches your DLP policies.
-  
+
 ## DLP is part of the larger Microsoft 365 Compliance offering
 
 Microsoft 365 DLP is just one of the Microsoft 365 Compliance tools that you will use to help protect your sensitive items wherever they live or travel. You should understand the other tools in the Microsoft 365 Compliance tools set, how they interrelate, and work better together.  See, [Microsoft 365 compliance tools](protect-information.md) to learn more about the information protection process.
@@ -64,7 +64,7 @@ Microsoft 365 DLP monitoring and protection are native to the applications that 
 
 **Technology planning for DLP**
 
-Keep in mind that DLP as a technology can monitor and protect your data at rest, data in use and data in motion across Microsoft 365 services, Windows 10 devices, on-premises file shares, and on-premises SharePoint. There are planning implications for the different locations, the type of data you want to monitor and protect, and the actions to be taken when a policy match occurs.  
+Keep in mind that DLP as a technology can monitor and protect your data at rest, data in use and data in motion across Microsoft 365 services, Windows 10 devices, on-premises file shares, and on-premises SharePoint. There are planning implications for the different locations, the type of data you want to monitor and protect, and the actions to be taken when a policy match occurs.
 
 **Business processes planning for DLP**
 
@@ -116,7 +116,7 @@ While in test mode, monitor the outcomes of the policy and fine-tune it so that 
 
 #### Enable the control and tune your policies
 
-Once the policy meets all your objectives, turn it on. Continue to monitor the outcomes of the policy application and tune as needed. In general, policies take effect about an hour after being turned on. 
+Once the policy meets all your objectives, turn it on. Continue to monitor the outcomes of the policy application and tune as needed. In general, policies take effect about an hour after being turned on.
 
 <!--See, LINK TO topic for SLAs for location specific  details-->
 
@@ -128,7 +128,7 @@ You have flexibility in how you create and configure your DLP policies. You can 
     - A predefined policy template: Financial data, Medical and health data, Privacy data all for various countries and regions.
     - A custom policy that uses the available sensitive information types, retention labels, and sensitivity labels.
 2. **Choose where you want to monitor** - You pick one or more locations that you want DLP to monitor for sensitive information. You can monitor:
-    
+
 location | include/exclude by|
 |---------|---------|
 |Exchange email| distribution groups|
@@ -149,7 +149,7 @@ location | include/exclude by|
 
 - SharePoint/Exchange/OneDrive: Block people who are outside your organization form accessing the content. Show the user a tip and send them an email notification that they are taking an action that is prohibited by the DLP policy.
 - Teams Chat and Channel: Block sensitive information from being shared in the chat or channel
-- Windows 10 Devices: Audit or restrict copying a sensitive item to a removeable USB device 
+- Windows 10 Devices: Audit or restrict copying a sensitive item to a removeable USB device
 - Office Apps: Show a popup notifying the user that they are engaging in a risky behavior and block or block but allow override.
 - On-premises file shares: move the file from where it is stored to a quarantine folder
 
@@ -161,18 +161,18 @@ location | include/exclude by|
 All DLP policies are created and maintained in the Microsoft 365 Compliance center. See, INSERT LINK TO ARTICLE THAT WILL START WALKING THEM THROUGH THE POLICY CREATION PROCEDURES for more information.-->
 
 After you create a DLP policy in the Compliance Center, it's stored in a central policy store, and then synced to the various content sources, including:
-  
+
 - Exchange Online, and from there to Outlook on the web and Outlook.
 - OneDrive for Business sites.
 - SharePoint Online sites.
 - Office desktop programs (Excel, PowerPoint, and Word).
 - Microsoft Teams channels and chat messages.
-    
+
 After the policy's synced to the right locations, it starts to evaluate content and enforce actions.
 
 ## Viewing policy application results
 
-DLP reports a vast amount of information into Microsoft 365 from monitoring, policy matches and actions, and user activities. You'll need to consume and act on that information to tune your policies and triage actions taken on sensitive items. The telemetry goes into the [Microsoft 365 Compliance center Audit Logs](search-the-audit-log-in-security-and-compliance.md#search-the-audit-log-in-the-compliance-center) first, is processed, and makes its way to different reporting tools. Each reporting tool has a different purpose.  
+DLP reports a vast amount of information into Microsoft 365 from monitoring, policy matches and actions, and user activities. You'll need to consume and act on that information to tune your policies and triage actions taken on sensitive items. The telemetry goes into the [Microsoft 365 Compliance center Audit Logs](search-the-audit-log-in-security-and-compliance.md#search-the-audit-log-in-the-compliance-center) first, is processed, and makes its way to different reporting tools. Each reporting tool has a different purpose.
 
 ### DLP Alerts Dashboard
 
@@ -198,7 +198,7 @@ The [DLP reports](view-the-dlp-reports.md#view-the-reports-for-data-loss-prevent
 
 The Activity explorer tab on the DLP page has the *Activity* filter preset to *DLPRuleMatch*. Use this tool to review activity related to content that contains sensitive info or has labels applied, such as what labels were changed, files were modified, and matched a rule.
 
-![screenshot of the DLPRuleMatch scoped activity explorer ](../media/dlp-activity-explorer.png)
+![screenshot of the DLPRuleMatch scoped activity explorer](../media/dlp-activity-explorer.png)
 
 For more information, see [Get started with activity explorer](data-classification-activity-explorer.md)
 

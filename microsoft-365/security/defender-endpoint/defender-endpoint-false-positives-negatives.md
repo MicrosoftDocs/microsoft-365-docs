@@ -136,7 +136,7 @@ When you're done reviewing and undoing actions that were taken as a result of fa
 
 ### Review completed actions
 
-1. Go to the Action center (<https://security.microsoft.com/action-center>) and sign in.
+1. In the left navigation pane of the Microsoft 365 Defender portal, click **Action center**.
 
 2. Select the **History** tab to view a list of actions that were taken.
 
@@ -144,7 +144,7 @@ When you're done reviewing and undoing actions that were taken as a result of fa
 
 ### Restore a quarantined file from the Action Center
 
-1. Go to the Action center (<https://security.microsoft.com/action-center>) and sign in.
+1. In the left navigation pane of the Microsoft 365 Defender portal, click **Action center**.
 
 2. On the **History** tab, select an action that you want to undo.
 
@@ -152,7 +152,7 @@ When you're done reviewing and undoing actions that were taken as a result of fa
 
 ### Undo multiple actions at one time
 
-1. Go to the Action center (<https://security.microsoft.com/action-center>) and sign in.
+1. In the left navigation pane of the Microsoft 365 Defender portal, click **Action center**.
 
 2. On the **History** tab, select the actions that you want to undo.
 
@@ -163,7 +163,7 @@ When you're done reviewing and undoing actions that were taken as a result of fa
 > [!div class="mx-imgBorder"]
 > ![Quarantine file](images/autoir-quarantine-file-1.png)
 
-1. Go to the Action center (<https://security.microsoft.com/action-center>) and sign in.
+1. In the left navigation pane of the Microsoft 365 Defender portal, click **Action center**.
 
 2. On the **History** tab, select a file that has the Action type **Quarantine file**.
 
@@ -173,14 +173,14 @@ When you're done reviewing and undoing actions that were taken as a result of fa
 
 You can roll back and remove a file from quarantine if you've determined that it's clean after an investigation. Run the following command on each device where the file was quarantined.
 
-1. Open an elevated command–line prompt on the device:
+1. Open an elevated command-line prompt on the device:
    1. Go to **Start** and type _cmd_.
-   2. Right–click **Command prompt** and select **Run as administrator**.
+   2. Right-click **Command prompt** and select **Run as administrator**.
 
 2. Enter the following command, and press **Enter**:
 
     ```console
-    "ProgramFiles%\Windows Defender\MpCmdRun.exe" –Restore –Name EUS:Win32/CustomEnterpriseBlock –All
+    "ProgramFiles%\Windows Defender\MpCmdRun.exe" -Restore -Name EUS:Win32/CustomEnterpriseBlock -All
     ```
 
     > [!IMPORTANT]
