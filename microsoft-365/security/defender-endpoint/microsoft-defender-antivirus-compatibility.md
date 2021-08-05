@@ -69,11 +69,11 @@ If your organization is using a non-Microsoft antivirus/antimalware solution tog
 
 (<a id="fn3">3</a>)  On Windows Server 2016, you can disable Microsoft Defender Antivirus by using the [DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware) registry key. Navigate to `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender`, and set or create a DWORD entry called `DisableAntiSpyware`. Set its value to `1` (which sets the registry key's value to *true*). 
 
-## Why run Microsoft Defender Antivirus in passive mode?
+### Why run Microsoft Defender Antivirus in passive mode?
 
 Defender for Endpoint includes capabilities that further extend the antivirus protection that is installed on your endpoint. For example, [Endpoint detection and response (EDR) in block mode](edr-in-block-mode.md) provides added protection from malicious artifacts even if Microsoft Defender Antivirus is not the primary antivirus product. Such capabilities require Microsoft Defender Antivirus to be installed and running in passive mode or active mode.
 
-## Requirements for Microsoft Defender Antivirus to run in passive mode
+### Requirements for Microsoft Defender Antivirus to run in passive mode
 
 In order for Microsoft Defender Antivirus to run in passive mode, endpoints must meet the following requirements:
 
