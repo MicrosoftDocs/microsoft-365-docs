@@ -32,7 +32,7 @@ But what happens when another (non-Microsoft) antivirus/antimalware solution is 
 
 This article describes what happens with Microsoft Defender Antivirus and a non-Microsoft antivirus/antimalware solution, with or without Defender for Endpoint.
 
-## Antivirus protection without Microsoft Defender for Endpoint
+## Antivirus protection without Defender for Endpoint
 
 This section describes what happens with Microsoft Defender Antivirus and non-Microsoft antivirus/antimalware products on endpoints that are not onboarded to Defender for Endpoint. The following table summarizes what to expect: <br/><br/>
 
