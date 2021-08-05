@@ -42,6 +42,16 @@ Learn more by watching [this video](https://www.youtube.com/watch?v=Tdz6KfruDGo&
 - [Email analysis improvements in automated investigations](email-analysis-investigations.md)
 - [Advanced Delivery](configure-advanced-delivery.md): Introducing a new capability for configuring the delivery of third-party phishing simulations to users and unfiltered messages to security operation mailboxes.
 - [Safe Links for Microsoft Teams](safe-links.md#safe-links-settings-for-microsoft-teams)
+- New alert policies for the following scenarios: compromised mailboxes, Forms phishing, malicious mails delivered due to overrides and rounding out ZAP
+  - Suspicious email forwarding activity
+  - User restricted from sharing forms and collecting responses
+  - Form blocked due to potential phishing attempt
+  - Form flagged and confirmed as phishing
+  - [New alert policies for ZAP](new-defender-alert-policies.md)
+- Microsoft Defender for Office 365 alerts are now integrated into Microsoft 365 Defender - [Microsoft 365 Defender Unified Alerts Queue and Unified Alerts Queue](investigate-alerts.md)
+- [User Tags](user-tags.md) are now integrated into Microsoft Defender for Office 365 alerting experiences, including: the alerts queue and details in Office 365 Security & Compliance, and scoping custom alert policies to user tags to create targeted alert policies. 
+  - Tags are also available in the unified alerts queue in the Microsoft 365 Defender center (Microsoft Defender for Office 365 Plan 2)
+
 
 ## June 2021
 
