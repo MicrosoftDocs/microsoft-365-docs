@@ -1,5 +1,5 @@
 ---
-title: Evaluate Microsoft Defender for Endpoint overview, including reviewing the architecture, enabling or activating the evaluation environment, and building a pilot.
+title: Evaluate Microsoft Defender for Endpoint overview, including reviewing the architecture
 description: Steps for the set up for a Microsoft 365 Defender trial lab or pilot environment. Test and experience how the security solution is designed to protect devices, identity, data, and apps in your organization.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
