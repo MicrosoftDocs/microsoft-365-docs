@@ -20,8 +20,6 @@ ms.date: 08/05/2021
 
 # Microsoft Defender Antivirus compatibility
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 **Applies to:**
 
 - Microsoft Defender Antivirus
