@@ -152,7 +152,7 @@ Description: Defines whether to apply this policy over a specific user or user g
 
 **Property name: ComputerSid**
 
-Description: Defines whether apply this policy over specific machine or machine group; one entry can have maximum one ComputerSid and an entry without any ComputerSid means applying the policy over the machine. If you want to apply an Entry to a specific user and specific machine, add both Sid and ComputerSid into the same Entry.
+Description: Defines whether to apply this policy over a specific machine or machine group; one entry can have a maximum of one ComputerSID and an entry without any ComputerSID means applying the policy over the machine. If you want to apply an entry to a specific user and specific machine, add both SID and ComputerSID into the same entry.
 
 
 
