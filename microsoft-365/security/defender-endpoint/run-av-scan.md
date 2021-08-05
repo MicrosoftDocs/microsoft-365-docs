@@ -43,8 +43,7 @@ Initiate Microsoft Defender Antivirus scan on a device.
 > [!IMPORTANT]
 >
 > - This action is available for devices on Windows 10, version  1709 or later.
-> - This feature is available if your organization uses Microsoft Defender Antivirus.
-> - This action needs to meet the Windows Defender Application Control code integrity policy formats and signing requirements. For more information, see [Code integrity policy formats and signing](/windows/device-security/device-guard/requirements-and-deployment-planning-guidelines-for-device-guard#code-integrity-policy-formats-and-signing).
+> - A Microsoft Defender Antivirus (Microsoft Defender AV) scan can run alongside other antivirus solutions, whether Microsoft Defender AV is the active antivirus solution or not. Microsoft Defender AV can be in Passive mode. For more information, see [Microsoft Defender Antivirus compatibility](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility.md).
 
 ## Permissions
 
