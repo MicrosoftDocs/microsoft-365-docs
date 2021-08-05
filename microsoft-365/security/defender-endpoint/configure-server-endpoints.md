@@ -104,15 +104,16 @@ For more information, see [Integration with Azure Defender](azure-server-integra
 ### Prerequisites
 
 **Prerequisites for Windows Server 2012 R2** 
+If you have fully updated your machines with the latest [monthly rollup](/troubleshoot/windows-client/deployment/standard-terminology-software-updates#monthly-rollup) package, there are no additional prerequisites.
 
-Verify that you have installed the following hotfix:
+The installer will check if the following components have been installed via an update:
 
 - [Update for customer experience and diagnostic telemetry](https://support.microsoft.com/help/3080149/update-for-customer-experience-and-diagnostic-telemetry)
 - [Update for Universal C Runtime in Windows](https://support.microsoft.com/topic/update-for-universal-c-runtime-in-windows-c0514201-7fe6-95a3-b0a5-287930f3560c)
 
 **Prerequisites for Windows Server 2016** 
 
-Verify that Microsoft Defender Antivirus is installed and is active.
+Verify that Microsoft Defender Antivirus is installed, is active and up to date. The minimum version is **4.18.2106.6**. You can download and install the latest platform version using Windows Update. Alternatively, download the update package manually from the [Microsoft Update Catalog](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4052623).
 
 ### Download installation and onboarding packages 
 
