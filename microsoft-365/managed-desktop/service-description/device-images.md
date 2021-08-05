@@ -20,13 +20,13 @@ audience: Admin
 Whether you order [new devices](#new-devices) or reuse [existing](#existing-devices) ones, you have several options to ensure the image on the device meets our [device requirements](device-requirements.md#check-hardware-requirements).
 
 ## New devices
-When you order a new device from an [approved manufacturer](device-requirements.md#minimum-requirements), follow these steps to make sure they ship devices with the right Microsoft Managed Desktop image and software configuration.
+When you order a new device from an [approved manufacturer](device-requirements.md#minimum-requirements), follow these steps to make sure they ship devices with the right Microsoft Managed Desktop image and software configuration. Anytime you plan to enroll a particular device model in the service for the first time, you should test an example to ensure it'll deliver the user experience you expect. For more information, see [Validate new devices](/microsoft-365/managed-desktop/get-started/validate-device).
 
 ### Dell
 Work directly with the Dell sales representative, who will make sure that the image approved by Microsoft Managed Desktop is applied to devices for your order. For more questions on Dell devices, the image, and the ordering process, contact MMD_at_dell@dell.com.
 
 ### HP 
-When you order new devices from HP, be sure to use the specific SKU listed in the Additional requirements section for each model found in the [Shop Windows 10 Pro business devices](https://www.microsoft.com/windowsforbusiness/view-all-devices) site (filter the view to show Microsoft Managed Desktop devices).
+When you order new devices from HP, be sure to use the specific SKU listed in the Additional requirements section for each model found in the [Shop Windows 10 Pro business devices](https://www.microsoft.com/windowsforbusiness/view-all-devices#view-all-filter) site (filter the view to show Microsoft Managed Desktop devices).
 
 If you're ordering a device from HP that has been approved as an [exception](customizing.md) but isn't currently listed on the Device List page, be sure to request the SKU to be used for your model. We'll work with HP to get you this information by using your exception request. You can also contact HP directly for any questions about devices and device ordering instructions by using these addresses:
  
@@ -36,23 +36,7 @@ If you're ordering a device from HP that has been approved as an [exception](cu
 - Global: mmd@hp.com
 
 ### Lenovo
-When you order devices from Lenovo for use in Microsoft Managed Desktop, you'll need to indicate a specific part number included as part of the order. Contact your Lenovo sales representative or Lenovo Channel Partner and ask them to create a "*special bid model*" with a system that meets our [device requirements](device-requirements.md#minimum-requirements). To include a pre-loaded image compatible with Microsoft Managed Desktop, ask the sales representative to reference "*system building block part number SBB0Q94938 – MMD Enablement*."
-
-The following products are currently enabled for Microsoft Managed Desktop support:
-
-- L13 Gen 1
-- L13 Yoga Gen 1
-- L14 Gen 1 (Intel)
-- L14 Gen 1 (AMD)
-- L15 Gen 1 (Intel)
-- L15 Gen 1 (AMD)
-- X1 Carbon Gen 8
-- X1 Yoga Gen 5
-- T14 Gen 1 (Intel)
-- T14 Gen 1 (AMD)
-- T15 Gen 1
-- X13 Gen 1 (Intel)
-
+When you order devices from Lenovo for use in Microsoft Managed Desktop, you'll need to indicate a specific part number included as part of the order. Contact your Lenovo sales representative or Lenovo Channel Partner and ask them to create a "*special bid model*" with a system that meets our [device requirements](device-requirements.md#minimum-requirements). To include a pre-loaded image compatible with Microsoft Managed Desktop, ask the sales representative to reference "*system building block part number SBB0Q94938 – MMD Enablement*." Work with your Lenovo sales representative or Lenovo Channel Partner for recommended services, support, and imaging services.
 
 ### Microsoft
 All Microsoft devices that meet device requirements come with an image that works with Microsoft Managed Desktop. No other steps are required.

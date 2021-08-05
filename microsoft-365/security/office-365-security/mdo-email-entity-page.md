@@ -1,5 +1,5 @@
 ---
-title: "The Microsoft Defender for Office 365 (MDO) email entity page"
+title: "The Microsoft Defender for Office 365 email entity page"
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -24,11 +24,11 @@ description: Microsoft Defender for Office 365 E5 and P1 and P2 customers can no
 - [Use email entity page tabs](#use-email-entity-page-tabs)
 - [New to the email entity page](#new-to-the-email-entity-page)
 
-Admins of Microsoft Defender for Office 365 (or MDO) E5, and MDO P1 and P2 have a 360-degree view of email using the **Email entity page**. This go-to email page was created to enhance information delivered on the [Threat Explorer 'email details' fly-out](threat-explorer-views.md).
+Admins of Microsoft Defender for Office 365 E5, and Defender for Office P1 and P2 have a 360-degree view of email using the **Email entity page**. This go-to email page was created to enhance information delivered on the [Threat Explorer 'email details' fly-out](threat-explorer-views.md).
 
 ## Reach the email entity page
 
-The email entity page is available in the Microsoft 365 defender portal (<https://security.microsoft.com>) at **Email & collaboration** \> **Explorer**. Or, to go directly to the **Explorer** page, use <https://security.microsoft.com/threatexplorer>.
+The email entity page is available in the Microsoft 365 Defender portal (<https://security.microsoft.com>) at **Email & collaboration** \> **Explorer**. Or, to go directly to the **Explorer** page, use <https://security.microsoft.com/threatexplorer>.
 
 In **Explorer**, select the subject of an email you're investigating. A gold bar will display at the top of the email fly-out for that mail. This invitation to the new page, reads 'Try out our new email entity page with enriched data...'. Select to view the new page.
 

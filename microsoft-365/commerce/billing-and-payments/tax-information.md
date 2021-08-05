@@ -19,6 +19,7 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - commerce_billing
+- AdminTemplateSet
 ms.date: 03/17/2021
 ---
 
@@ -82,6 +83,7 @@ Businesses in the following countries can provide their VAT number or local equi
 - Sweden
 - Switzerland
 - Taiwan
+- Thailand
 - Turkey
 - United Arab Emirates
 - United Kingdom

@@ -1,5 +1,5 @@
 ---
-title: "Multi-factor authentication for Microsoft 365"
+title: "Multifactor authentication for Microsoft 365"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -16,6 +16,7 @@ ms.collection:
 ms.custom: 
 - AdminSurgePortfolio
 - okr_smb
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
@@ -25,11 +26,11 @@ ROBOTS: NOINDEX, NOFOLLOW
 description: "Multi-factor authentication (MFA) uses both a password, which should be strong, and an additional verification method."
 ---
 
-# Multi-factor authentication for Microsoft 365
+# Multifactor authentication for Microsoft 365
 
 Passwords are the most common method of authenticating a sign-in to a computer or online service, but they are also the most vulnerable. People can choose easy passwords and use the same passwords for multiple sign-ins to different computers and services.
 
-To provide an additional level of security for sign-ins, you must use multi-factor authentication (MFA), which uses both a password, which should be strong, and an additional verification method based on:
+To provide an additional level of security for sign-ins, you must use multifactor authentication (MFA), which uses both a password, which should be strong, and an additional verification method based on:
 
 - Something you have with you that is not easily duplicated, such as a smart phone.
 - Something you uniquely and biologically have, such as your fingerprints, face, or other biometric attribute.
@@ -171,5 +172,5 @@ In the Microsoft 365 admin center, you can configure per-user and service MFA se
 
 ## Related content
 
-[Turn on multi-factor authentication](../../business-video/turn-on-mfa.md) (video)\
-[Turn on multi-factor authentication for your phone](../../business-video/set-up-mfa.md) (video)
+[Turn on multifactor authentication](../../business-video/turn-on-mfa.md) (video)\
+[Turn on multifactor authentication for your phone](../../business-video/set-up-mfa.md) (video)

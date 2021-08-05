@@ -28,13 +28,8 @@ Microsoft Secure Score can be found at https://security.microsoft.com/securescor
 
 ## Proposed changes
 
-We're making some changes in the near future to make [Microsoft Secure Score](microsoft-secure-score.md) a better representative of your security posture and improve usability. Your score and the maximum possible score may change.
+No upcoming changes are scheduled at this time. Please check back later.
 
-### June 2021
-
-#### Remove improvement action related to Microsoft Cloud App Security
-
-- Use Cloud App Security to detect anomalous behavior
 
 ## Related resources
 

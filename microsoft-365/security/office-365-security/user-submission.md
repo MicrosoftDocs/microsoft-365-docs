@@ -65,8 +65,7 @@ After you've verified that your mailbox meets all applicable prerequisites, you 
 - To modify the configuration for User submissions, you need to be a member of one of the following role groups:
 
   - **Organization Management** or **Security Administrator** in the [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).
-  - **Organization Management** in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups).
-
+  
 - You need access to Exchange Online PowerShell. If the account that you're trying to use doesn't have access to Exchange Online PowerShell, you'll receive an error that looks like this when specify the submissions mailbox:
 
   > Specify an email address in your domain

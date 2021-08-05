@@ -30,7 +30,7 @@ ms.technology: mde
 - Windows Server 2016
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
 You might need to troubleshoot the Microsoft Defender for Endpoint onboarding process if you encounter issues.
 This page provides detailed steps to troubleshoot onboarding issues that might occur when deploying with one of the deployment tools and common errors that might occur on the devices.
@@ -295,6 +295,9 @@ If the verification fails and your environment is using a proxy to connect to th
 
 ## Troubleshoot onboarding issues on a server
 
+>[!NOTE]
+>The following troubleshooting guidance is only applicable for Windows Server 2016 and lower.
+
 If you encounter issues while onboarding a server, go through the following verification steps to address possible issues.
 
 - [Ensure Microsoft Monitoring Agent (MMA) is installed and configured to report sensor data to the service](configure-server-endpoints.md)
@@ -329,8 +332,13 @@ The steps below provide guidance for the following scenario:
 - Device is turned off or restarted before the end user performs a first logon
 - In this scenario, the SENSE service will not start automatically even though onboarding package was deployed
 
-<div class="alert"><b>NOTE:</b> User Logon after OOBE is no longer required for SENSE service to start on the following or more recent Windows versions: Windows 10, version 1809 or Windows Server 2019 with [April 22 2021 update rollup](https://support.microsoft.com/kb/5001384) </br> Windows 10, version 1909 with [April 2021 update rollup](https://support.microsoft.com/kb/5001396) </br> Windows 10, version 2004/20H2 with [April 28 2021 update rollup](https://support.microsoft.com/kb/5001391) </div> 
-<br></br>
+> [!NOTE]
+> User Logon after OOBE is no longer required for SENSE service to start on the following or more recent Windows versions: 
+> Windows 10, version 1809 or Windows Server 2019 with [April 22 2021 update rollup](https://support.microsoft.com/kb/5001384). 
+> Windows 10, version 1909 with [April 2021 update rollup](https://support.microsoft.com/kb/5001396). 
+> Windows 10, version 2004/20H2 with [April 28 2021 update rollup](https://support.microsoft.com/kb/5001391). 
+
+
 > [!NOTE]
 > The following steps are only relevant when using Microsoft Endpoint Configuration Manager. For more details about onboarding using Microsoft Endpoint Configuration Manager, see [Microsoft Defender for Endpoint](/mem/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection).
 

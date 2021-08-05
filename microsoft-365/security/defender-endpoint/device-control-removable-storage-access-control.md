@@ -46,11 +46,12 @@ Deploy Removable Storage Access Control on Windows 10 devices that have antimalw
 
 - **4.18.2104 or later**: Add SerialNumberId, VID_PID, filepath-based GPO support, ComputerSid
 - **4.18.2105 or later**: Add Wildcard support for HardwareId/DeviceId/InstancePathId/FriendlyNameId/SerialNumberId, the combination of specific user on specific machine, removeable SSD (a SanDisk Extreme SSD)/USB Attached SCSI (UAS) support
+- **4.18.2107 or later**: Add Windows Portable Device (WPD) support (for mobile devices, such as tablets)
 
 :::image type="content" source="images/powershell.png" alt-text="The PowerShell interface":::
 
 > [!NOTE]
-> None of Windows Security components need to be active, you can run Removable Storage Access Control independent of Windows Security status.
+> None of Windows Security components need to be active as you can run Removable Storage Access Control independent of Windows Security status.
 
 ## Policy properties
 
@@ -188,7 +189,7 @@ To help familiarize you with Microsoft Defender for Endpoint Removable Storage A
 1. Create groups
     1. Group 1: Any removable storage and CD/DVD. An example of a removable storage and CD/DVD is: Group **9b28fae8-72f7-4267-a1a5-685f747a7146** in the sample [Any Removable Storage and CD-DVD Group.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) file.
     2. Group 2: Approved USBs based on device properties. An example for this use case is:
-    Instance ID – Group **65fa649a-a111-4912-9294-fb6337a25038** in the sample [Approved USBs Group.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) file.
+    Instance ID - Group **65fa649a-a111-4912-9294-fb6337a25038** in the sample [Approved USBs Group.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) file.
 
     > [!NOTE]
     > You have to replace `&` with `&amp;` in the value.
@@ -235,7 +236,7 @@ Before you get started with Removable Storage Access Control, you must confirm y
 
     :::image type="content" source="images/usage-sid-property.png" alt-text="The screen displaying a code that indicates usage of the SID property attribute":::
 
-3. Save both rule and group XML files on network share folder and put network share folder path into the Group Policy setting: **Computer Configuration -> Administrative Templates -> Windows Components -> Microsoft Defender Antivirus -> Device Control: ‘Define device control policy groups’ and ‘Define device control policy rules’**.
+3. Save both rule and group XML files on network share folder and put network share folder path into the Group Policy setting: **Computer Configuration -> Administrative Templates -> Windows Components -> Microsoft Defender Antivirus -> Device Control: 'Define device control policy groups' and 'Define device control policy rules'**.
 
     - The target machine must be able to access the network share to have the policy. However, once the policy is read, the network share connection is no longer required, even after machine reboot.
 
@@ -245,7 +246,7 @@ Before you get started with Removable Storage Access Control, you must confirm y
 
 The Removable Storage Access Control feature enables you to apply policy via OMA-URI to either user or device, or both.
 
-### Licensing
+### Licensing requirements
 
 Before you get started with Removable Storage Access Control, you  must confirm your [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2). To access and use Removable Storage Access Control, you must have Microsoft 365 E3 or Microsoft 365 E5.
 
@@ -275,7 +276,6 @@ For policy deployment in Intune, the account must have permissions to create, ed
       :::image type="content" source="images/xml-data-type-string.png" alt-text="The xml file for the STRING data type":::
 
 2. For each policy, also create an OMA-URI:
-
     - OMA-URI:
 
       `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7bFA6BE102-0784-4A2A-B010-A0BEBEBF68E1%7d/RuleData`
@@ -286,11 +286,9 @@ For policy deployment in Intune, the account must have permissions to create, ed
 
     - Data Type: String (XML file)
 
-      :::image type="content" source="images/xml-data-type-string-2.png" lightbox="images/xml-data-type-string-2.png" alt-text="Display of XML file for the STRING data type":::
-
 ## Deploying and managing policy by using Intune user interface
 
-This capability (in Microsoft Endpoint Manager admin center (https://endpoint.microsoft.com/) > Devices > Configuration profiles > Create profile > Platform: Windows 10 and later & Profile: Device Control) is not yet available.
+This capability (in Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com/>) \> Devices \> Configuration profiles \> Create profile \> Platform: Windows 10 and later & Profile: Device Control) is not yet available.
 
 ## View Device Control Removable Storage Access Control data in Microsoft Defender for Endpoint
 
@@ -326,27 +324,29 @@ DeviceEvents
 
 **What is the removable storage media limitation for the maximum number of USBs?**
 
-We have validated one USB group with 100,000 media - up to 7 MB in size. The policy works in both Intune and GPO without performance issues.
+### What is the removable storage media limitation for the maximum number of USBs?
 
-**Why does the policy not work?**
+We've validated one USB group with 100,000 media - up to 7 MB in size. The policy works in both Intune and GPO without performance issues.
 
-The most common reason is there is no required [antimalware client version](/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control?view=o365-worldwide#prepare-your-endpoints).
+### Why does the policy not work?
 
-Another reason could be that the XML file is not correctly formatted, for example, not using the correct markdown formatting for the "&" character in the XML file, or the text editor might add a byte order mark (BOM) 0xEF 0xBB 0xBF at the beginning of the files which causes the XML parsing not to work. One simple solution is to download the [sample file](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) (select **Raw** and then **Save as**) and then update.
+The most common reason is there's no required [antimalware client version](/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control#prepare-your-endpoints).
 
-If there is a value and the policy is managed via Group Policy, check whether the client device can access the policy XML path.
+Another reason could be that the XML file isn't correctly formatted, for example, not using the correct markdown formatting for the "&" character in the XML file, or the text editor might add a byte order mark (BOM) 0xEF 0xBB 0xBF at the beginning of the files, which causes the XML parsing not to work. One simple solution is to download the [sample file](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) (select **Raw** and then **Save as**) and then update.
 
-**How can I know which machine is using out of date antimalware client version in the organization?**
+If there's a value and the policy is managed via Group Policy, check whether the client device can access the policy XML path.
+
+### How can I know which machine is using out of date antimalware client version in the organization?
 
 You can use following query to get antimalware client version on the Microsoft 365 security portal:
 
 ```kusto
 //check the antimalware client version
 DeviceFileEvents
-| where FileName == "MsMpEng.exe"
-| where FolderPath contains @"C:\ProgramData\Microsoft\Windows Defender\Platform\"
-| extend PlatformVersion=tostring(split(FolderPath, "\\", 5))
-//| project DeviceName, PlatformVersion // check which machine is using legacy platformVersion
-| summarize dcount(DeviceName) by PlatformVersion // check how many machines are using which platformVersion
-| order by PlatformVersion desc
+|where FileName == "MsMpEng.exe"
+|where FolderPath contains @"C:\ProgramData\Microsoft\Windows Defender\Platform\"
+|extend PlatformVersion=tostring(split(FolderPath, "\\", 5))
+//|project DeviceName, PlatformVersion // check which machine is using legacy platformVersion
+|summarize dcount(DeviceName) by PlatformVersion // check how many machines are using which platformVersion
+|order by PlatformVersion desc
 ```

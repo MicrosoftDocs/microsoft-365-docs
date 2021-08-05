@@ -8,19 +8,18 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-ms.date: 
+ms.date:
 localization_priority: Normal
-ms.collection: 
+ms.collection:
 - M365-security-compliance
-search.appverid: 
+search.appverid:
 - MOE150
 - MET150
 description: Learn how to create custom sensitive information types with Exact Data Match based classification.
 ms.custom: seo-marvel-apr2020
 ---
+
 # Create custom sensitive information types with Exact Data Match based classification
-
-
 
 [Custom sensitive information types](sensitive-information-type-learn-about.md) are used to help identify sensitive items so that you can prevent them from being inadvertently or inappropriately shared. You define a custom sensitive information type (SIT)based on:
 
@@ -45,14 +44,14 @@ But what if you wanted a custom sensitive information type (SIT) that uses exact
 EDM-based classification enables you to create custom sensitive information types that refer to exact values in a database of sensitive information. The database can be refreshed daily, and contain up to 100 million rows of data. So as employees, patients, or clients come and go, and records change, your custom sensitive information types remain current and applicable. And, you can use EDM-based classification with policies, such as [data loss prevention policies](dlp-learn-about-dlp.md) or [Microsoft Cloud App Security file policies](/cloud-app-security/data-protection-policies).
 
 > [!NOTE]
-> Microsoft 365 Information Protection supports in preview double byte character set languages for:
+> Microsoft 365 Information Protection supports double byte character set languages for:
+>
 > - Chinese (simplified)
 > - Chinese (traditional)
 > - Korean
 > - Japanese
-> 
+>
 > This support is available for sensitive information types. See, [Information protection support for double byte character sets release notes (preview)](mip-dbcs-relnotes.md) for more information.
- 
 
 ## Required licenses and permissions
 
@@ -67,21 +66,19 @@ EDM-based classification is included in these subscriptions
 
 ## Portal links for your subscription
 
-
-|Portal  |World Wide/GCC  |GCC-High  |DOD  |
-|---------|---------|---------|---------|
-|Office SCC     |  protection.office.com       |scc.office365.us         |scc.protection.apps.mil |
-|Microsoft 365 Security center     |security.microsoft.com         |security.microsoft.us         |security.apps.mil|
-|Microsoft 365 Compliance center     |compliance.microsoft.com         |compliance.microsoft.us         |compliance.apps.mil|
-
+|Portal|World Wide/GCC|GCC-High|DOD|
+|---|---|---|---|
+|Office SCC|protection.office.com|scc.office365.us|scc.protection.apps.mil|
+|Microsoft 365 Security center|security.microsoft.com|security.microsoft.us|security.apps.mil|
+|Microsoft 365 Compliance center|compliance.microsoft.com|compliance.microsoft.us|compliance.apps.mil|
 
 ## The work flow at a glance
 
-|Phase  |What's needed  |
-|---------|---------|
-|[Part 1: Set up EDM-based classification](#part-1-set-up-edm-based-classification)<br/><br/>(As needed)<br/>- [Edit the database schema](#editing-the-schema-for-edm-based-classification) <br/>- [Remove the schema](#removing-the-schema-for-edm-based-classification) |- Read access to the sensitive data<br/>- Database schema in XML format (example provided)<br/>- Rule package in XML format (example provided)<br/>- Admin permissions to the Security & Compliance Center (using PowerShell) |
-|[Part 2: Hash and upload the sensitive data](#part-2-hash-and-upload-the-sensitive-data)<br/><br/>(As needed)<br/>[Refresh the data](#refreshing-your-sensitive-information-database) |- Custom security group and user account<br/>- Local admin access to machine with EDM Upload Agent<br/>- Read access to the sensitive data<br/>- Process and schedule for refreshing the data|
-|[Part 3: Use EDM-based classification with your Microsoft cloud services](#part-3-use-edm-based-classification-with-your-microsoft-cloud-services) |- Microsoft 365 subscription with DLP<br/>- EDM-based classification feature enabled |
+|Phase|What's needed|
+|---|---|
+|[Part 1: Set up EDM-based classification](#part-1-set-up-edm-based-classification)<br/><br/>(As needed)<br/>- [Edit the database schema](#editing-the-schema-for-edm-based-classification) <br/>- [Remove the schema](#removing-the-schema-for-edm-based-classification)|- Read access to the sensitive data<br/>- Database schema in XML format (example provided)<br/>- Rule package in XML format (example provided)<br/>- Admin permissions to the Security & Compliance Center (using PowerShell)|
+|[Part 2: Hash and upload the sensitive data](#part-2-hash-and-upload-the-sensitive-data)<br/><br/>(As needed)<br/>[Refresh the data](#refreshing-your-sensitive-information-database)|- Custom security group and user account<br/>- Local admin access to machine with EDM Upload Agent<br/>- Read access to the sensitive data<br/>- Process and schedule for refreshing the data|
+|[Part 3: Use EDM-based classification with your Microsoft cloud services](#part-3-use-edm-based-classification-with-your-microsoft-cloud-services)|- Microsoft 365 subscription with DLP<br/>- EDM-based classification feature enabled|
 
 ### Part 1: Set up EDM-based classification
 
@@ -91,14 +88,13 @@ Setting up and configuring EDM-based classification involves:
 2. [Define your sensitive information database schema](#define-the-schema-for-your-database-of-sensitive-information)
 3. [Create a rule package](#set-up-a-rule-package)
 
-
 #### Save sensitive data in .csv or .tsv format
 
 1. Identify the sensitive information you want to use. Export the data to an app, such as Microsoft Excel, and save the file in a text file. The file can be saved in .csv (comma-separated values), .tsv (tab-separated values), or pipe-separated (|) format. The .tsv format is recommended in cases where your data values may included commas, such as street addresses.
 The data file can include a maximum of:
-      - Up to 100 million rows of sensitive data
-      - Up to 32 columns (fields) per data source
-      - Up to 5 columns (fields) marked as searchable
+   - Up to 100 million rows of sensitive data
+   - Up to 32 columns (fields) per data source
+   - Up to 5 columns (fields) marked as searchable
 
 2. Structure the sensitive data in the .csv or .tsv file such that the first row includes the names of the fields used for EDM-based classification. In your file you might have field names such as "ssn", "birthdate", "firstname", "lastname". The column header names can't include spaces or underscores. For example, the sample .csv file that we use in this article is named *PatientRecords.csv*, and its columns include *PatientID*, *MRN*, *LastName*, *FirstName*, *SSN*, and more.
 
@@ -111,7 +107,7 @@ If for business or technical reasons, you prefer not to use PowerShell or comman
 > [!NOTE]
 > The Exact Data Match Schema and Sensitive Information Type Wizard is only available for the World Wide and GCC clouds only.
 
-1. Define the schema for the database of sensitive information in XML format (similar to our example below). Name this schema file **edm.xml**, and configure it such that for each column in the database, there is a line that uses the syntax: 
+1. Define the schema for the database of sensitive information in XML format (similar to our example below). Name this schema file **edm.xml**, and configure it such that for each column in the database, there is a line that uses the syntax:
 
       `\<Field name="" searchable=""/\>`.
 
@@ -140,11 +136,12 @@ If for business or technical reasons, you prefer not to use PowerShell or comman
 
 ##### Configurable match using the caseInsensitive and ignoredDelimiters fields
 
-The above XML sample makes use of the `caseInsensitive` and the `ignoredDelimiters` fields. 
+The above XML sample makes use of the `caseInsensitive` and the `ignoredDelimiters` fields.
 
 When you include the ***caseInsensitive*** field set to the value of `true` in your schema definition, EDM will not exclude an item based on case differences for `PatientID` field. So EDM will see, `PatientID` **FOO-1234** and **fOo-1234** as being identical.
 
 When you include the ***ignoredDelimiters*** field with supported characters,  EDM will ignore those characters in the `PatientID`. So EDM will see, `PatientID` **FOO-1234** and `PatientID` **FOO#1234** as being identical. The `ignoredDelimiters` flag supports any non-alphanumeric character, here are some examples:
+
 - \.
 - \-
 - \/
@@ -160,20 +157,21 @@ When you include the ***ignoredDelimiters*** field with supported characters,  E
 - \}
 - \\
 - \~
-- \; 
+- \;
 
 The `ignoredDelimiters` flag doesn't support:
+
 - characters 0-9
 - A-Z
 - a-z
 - \"
 - \,
 
-In this example, where both `caseInsensitive` and `ignoredDelimiters` are used, EDM would see **FOO-1234** and **fOo#1234** as  identical and classify the item as a patient record sensitive information type. 
+In this example, where both `caseInsensitive` and `ignoredDelimiters` are used, EDM would see **FOO-1234** and **fOo#1234** as  identical and classify the item as a patient record sensitive information type.
 
-4. Connect to the Security & Compliance center using the procedures in [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
+1. Connect to the Security & Compliance Center PowerShell using the procedures in [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
-5. To upload the database schema, run the following cmdlets, one at a time:
+2. To upload the database schema, run the following cmdlets, one at a time:
 
       ```powershell
       $edmSchemaXml=Get-Content .\\edm.xml -Encoding Byte -ReadCount 0
@@ -202,13 +200,13 @@ In this example, where both `caseInsensitive` and `ignoredDelimiters` are used, 
 
       When you set up your rule package, make sure to correctly reference your .csv or .tsv file and **edm.xml** file. You can copy, modify, and use our example. In this sample xml the following fields needs to be customized to create your EDM sensitive type:
 
-      - **RulePack id & ExactMatch id**: Use [New-GUID](/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-6) to generate a GUID.
+      - **RulePack id & ExactMatch id**: Use [New-GUID](/powershell/module/microsoft.powershell.utility/new-guid) to generate a GUID.
 
       - **Datastore**: This field specifies EDM lookup data store to be used. You provide a data source name of a configured EDM Schema.
 
       - **idMatch**: This field points to the primary element for EDM.
         - Matches: Specifies the field to be used in exact lookup. You provide a searchable field name in EDM Schema for the DataStore.
-        - Classification: This field specifies the sensitive type match that triggers EDM lookup. You can provide the Name or GUID of an existing built-in or custom sensitive information type. Be aware that any string that matches the sensitive information type provided will be hashed and compared to every entry in the sensitive information table. In order to avoid causing performance issues, if you use a custom sensitive information type as the Classification element in EDM, avoid using one that will match a large percentage of content (such as "any number" or "any five-letter word") by adding supporting keywords or including formatting in the definition of the custom classification sensitive information type. 
+        - Classification: This field specifies the sensitive type match that triggers EDM lookup. You can provide the Name or GUID of an existing built-in or custom sensitive information type. Be aware that any string that matches the sensitive information type provided will be hashed and compared to every entry in the sensitive information table. In order to avoid causing performance issues, if you use a custom sensitive information type as the Classification element in EDM, avoid using one that will match a large percentage of content (such as "any number" or "any five-letter word") by adding supporting keywords or including formatting in the definition of the custom classification sensitive information type.
 
       - **Match:** This field points to additional evidence found in proximity of idMatch.
         - Matches: You provide any field name in EDM Schema for DataStore.
@@ -296,7 +294,7 @@ In this example, note that:
 
 > [!NOTE]
 > It can take between 10-60 minutes to update the EDMSchema with additions. The update must complete before you execute steps that use the additions.
- 
+
 After you have imported your rule package with your EDM sensitive info type and have imported your sensitive data table, you can test your newly created type by using the **Test** function in the EDM wizard in the compliance center. See [Use the Exact Data Match Schema and Sensitive Information Type Wizard](sit-edm-wizard.md) for instructions on using this functionality.
 
 #### Editing the schema for EDM-based classification
@@ -379,15 +377,15 @@ If you do not want to expose your clear text sensitive data file, you can hash i
 - a work or school account for Microsoft 365  that will be added to the **EDM\_DataUploaders** security group
 - a Windows 10 or Windows Server 2016 machine with .NET version 4.6.2 for running the EDMUploadAgent
 - a directory on your upload machine for the:
-    -  EDMUploadAgent
-    - your sensitive item file in .csv or .tsv format, **PatientRecords.csv** in our examples
-    -  and the output hash and salt files
-    - the datastore name from the **edm.xml** file, for this example its `PatientRecords`
+  - EDMUploadAgent
+  - your sensitive item file in .csv or .tsv format, **PatientRecords.csv** in our examples
+  - the output hash and salt files
+  - the datastore name from the **edm.xml** file, for this example its `PatientRecords`
 - If you used the [Exact Data Match schema and sensitive information type wizard](sit-edm-wizard.md) you ***must*** download it
 
 #### Set up the security group and user account
 
-1. As a global administrator, go to the admin center using the appropriate [link for your subscription](#portal-links-for-your-subscription) and [create a security group](/office365/admin/email/create-edit-or-delete-a-security-group?view=o365-worldwide) called **EDM\_DataUploaders**.
+1. As a global administrator, go to the admin center using the appropriate [link for your subscription](#portal-links-for-your-subscription) and [create a security group](/office365/admin/email/create-edit-or-delete-a-security-group) called **EDM\_DataUploaders**.
 
 2. Add one or more users to the **EDM\_DataUploaders** security group. (These users will manage the database of sensitive information.)
 
@@ -395,18 +393,17 @@ If you do not want to expose your clear text sensitive data file, you can hash i
 
 This computer must have direct access to your Microsoft 365 tenant.
 
->[!NOTE]
+> [!NOTE]
+>
 > Before you begin this procedure, make sure that you are a member of the **EDM\_DataUploaders** security group.
-
-> [!TIP]
+>
 > Optionally, you can run a validation against your .csv or .tsv file before uploading by running:
 >
->`EdmUploadAgent.exe /ValidateData /DataFile [data file] /Schema [schema file]`
+> `EdmUploadAgent.exe /ValidateData /DataFile [data file] /Schema [schema file]`
 >
->For more information on all the EdmUploadAgent.exe >supported parameters run
+> For more information on all the EdmUploadAgent.exe >supported parameters run
 >
 > `EdmUploadAgent.exe /?`
-
 
 #### Links to EDM upload agent by subscription type
 
@@ -426,28 +423,34 @@ This computer must have direct access to your Microsoft 365 tenant.
    > [!TIP]
    > To a get a list out of the supported command parameters, run the agent no arguments. For example 'EdmUploadAgent.exe'.
 
-2. Authorize the EDM Upload Agent, open  Command Prompt window (as an administrator), switch to the **C:\EDM\Data** directory and then run the following command:
+3. Authorize the EDM Upload Agent, open  Command Prompt window (as an administrator), switch to the **C:\EDM\Data** directory and then run the following command:
 
    `EdmUploadAgent.exe /Authorize`
 
-3. Sign in with your work or school account for Microsoft 365 that was added to the EDM_DataUploaders security group. Your tenant information is extracted from the user account to make the connection.
+4. Sign in with your work or school account for Microsoft 365 that was added to the EDM_DataUploaders security group. Your tenant information is extracted from the user account to make the connection.
 
    OPTIONAL: If you used the Exact Data Match schema and sensitive information type wizard to create your schema and pattern files, run the following command in a Command Prompt window:
 
-   `EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to output folder>`
+   ```dos
+   EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to output folder>
+   ```
 
-4. To hash and upload the sensitive data, run the following command in Command Prompt window:
+5. To hash and upload the sensitive data, run the following command in Command Prompt window:
 
-   `EdmUploadAgent.exe /UploadData /DataStoreName [DS Name] /DataFile [data file] /HashLocation [hash file location] /Schema [Schema file] /ColumnSeparator ["{Tab}"|"|"]`
+   ```dos
+   EdmUploadAgent.exe /UploadData /DataStoreName [DS Name] /DataFile [data file] /HashLocation [hash file location] /Schema [Schema file] /ColumnSeparator ["{Tab}"|"|"]
+   ```
 
    Example: **EdmUploadAgent.exe /UploadData /DataStoreName PatientRecords /DataFile C:\Edm\Hash\PatientRecords.csv /HashLocation C:\Edm\Hash /Schema edm.xml**
 
-   The default format for the sensitive data file is comma-separated values. You can specify a tab-separated file by indicating the "{Tab}" option with the /ColumnSeparator parameter, or you can specify a pipe-separated file by indicating the "|" option.  
+   The default format for the sensitive data file is comma-separated values. You can specify a tab-separated file by indicating the "{Tab}" option with the /ColumnSeparator parameter, or you can specify a pipe-separated file by indicating the "|" option.
    This command will automatically add a randomly generated salt value to the hash for greater security. Optionally, if you want to use your own salt value, add the **/Salt <saltvalue>** to the command. This value must be 64 characters in length and can only contain the a-z characters and 0-9 characters.
 
-5. Check the upload status by running this command:
+6. Check the upload status by running this command:
 
-   `EdmUploadAgent.exe /GetSession /DataStoreName \<DataStoreName\>`
+   ```dos
+   EdmUploadAgent.exe /GetSession /DataStoreName \<DataStoreName\>
+   ```
 
    Example: **EdmUploadAgent.exe /GetSession /DataStoreName PatientRecords**
 
@@ -459,17 +462,24 @@ Perform the hash on a computer in a secure environment.
 
 OPTIONAL: If you used the Exact Data Match schema and sensitive information type wizard to create your schema and pattern files, run the following command in a Command Prompt window:
 
-`EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to output folder>`
+```dos
+EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to output folder>
+````
 
 1. Run the following command in Command Prompt windows:
 
-   `EdmUploadAgent.exe /CreateHash /DataFile [data file] /HashLocation [hash file location] /Schema [Schema file] >`
+   ```dos
+   EdmUploadAgent.exe /CreateHash /DataFile [data file] /HashLocation [hash file location] /Schema [Schema file]
+   ```
 
    For example:
 
-   > **EdmUploadAgent.exe /CreateHash /DataFile C:\Edm\Data\PatientRecords.csv /HashLocation C:\Edm\Hash /Schema edm.xml**
+   ```dos
+   EdmUploadAgent.exe /CreateHash /DataFile C:\Edm\Data\PatientRecords.csv /HashLocation C:\Edm\Hash /Schema edm.xml
+   ```
 
    This will output a hashed file and a salt file with these extensions if you didn't specify the **/Salt <saltvalue>** option:
+
    - .EdmHash
    - .EdmSalt
 
@@ -477,22 +487,29 @@ OPTIONAL: If you used the Exact Data Match schema and sensitive information type
 
    To upload the hashed data, run the following command in Windows Command Prompt:
 
-   `EdmUploadAgent.exe /UploadHash /DataStoreName \<DataStoreName\> /HashFile \<HashedSourceFilePath\>`
+   ```dos
+   EdmUploadAgent.exe /UploadHash /DataStoreName \<DataStoreName\> /HashFile \<HashedSourceFilePath\>
+   ```
 
    For example:
 
-   > **EdmUploadAgent.exe /UploadHash /DataStoreName PatientRecords /HashFile C:\\Edm\\Hash\\PatientRecords.EdmHash**
-
+   ```dos
+   EdmUploadAgent.exe /UploadHash /DataStoreName PatientRecords /HashFile C:\\Edm\\Hash\\PatientRecords.EdmHash**
+   ```
 
    To verify that your sensitive data has been uploaded, run the following command in Command Prompt window:
 
-   `EdmUploadAgent.exe /GetDataStore`
+   ```dos
+   EdmUploadAgent.exe /GetDataStore
+   ```
 
    You'll see a list of data stores and when they were last updated.
 
    If you want to see all the data uploads to a particular store, run the following command in a Windows command prompt:
 
-   `EdmUploadAgent.exe /GetSession /DataStoreName <DataStoreName>`
+   ```dos
+   EdmUploadAgent.exe /GetSession /DataStoreName <DataStoreName>
+   ```
 
    Proceed to set up your process and schedule for [Refreshing your sensitive information database](#refreshing-your-sensitive-information-database).
 
@@ -511,11 +528,11 @@ You can refresh your sensitive information database daily, and the EDM Upload To
 
 3. Use [Task Scheduler](/windows/desktop/TaskSchd/task-scheduler-start-page) to automate steps 2 and 3 in the [Hash and upload the sensitive data](#part-2-hash-and-upload-the-sensitive-data) procedure. You can schedule tasks using several methods:
 
-      | Method             | What to do |
-      | ---------------------- | ---------------- |
-      | Windows PowerShell     | See the [ScheduledTasks](/powershell/module/scheduledtasks/?view=win10-ps) documentation and the [example PowerShell script](#example-powershell-script-for-task-scheduler) in this article |
-      | Task Scheduler API     | See the [Task Scheduler](/windows/desktop/TaskSchd/using-the-task-scheduler) documentation                                                                                                                                                                                                                                                                                |
-      | Windows user interface | In Windows, click **Start**, and type Task Scheduler. Then, in the list of results, right-click **Task Scheduler**, and choose **Run as administrator**.                                                                                                                                                                                                                                                                           |
+   |Method|What to do|
+   |---|---|
+   |Windows PowerShell|See the [ScheduledTasks](/powershell/module/scheduledtasks/) documentation and the [example PowerShell script](#example-powershell-script-for-task-scheduler) in this article|
+   |Task Scheduler API|See the [Task Scheduler](/windows/desktop/TaskSchd/using-the-task-scheduler) documentation|
+   |Windows user interface|In Windows, click **Start**, and type Task Scheduler. Then, in the list of results, right-click **Task Scheduler**, and choose **Run as administrator**.|
 
 #### Example PowerShell script for Task Scheduler
 
@@ -594,7 +611,6 @@ $password=\[Runtime.InteropServices.Marshal\]::PtrToStringAuto(\[Runtime.Interop
 \# Register the scheduled task
 $taskName = 'EDMUpload\_' + $dataStoreName
 Register-ScheduledTask -TaskName $taskName -InputObject $scheduledTask -User $user -Password $password
-
 ```
 
 ### Part 3: Use EDM-based classification with your Microsoft cloud services
@@ -632,7 +648,7 @@ These locations are support EDM sensitive information types:
 
       ![Content contains sensitive info types](../media/edm-dlp-newrule-conditions.png)
 
-11. Search for the sensitive information type you created when you set up your rule package, and then choose **+ Add**.  
+11. Search for the sensitive information type you created when you set up your rule package, and then choose **+ Add**.
     Then choose **Done**.
 
 12. Finish selecting options for your rule, such as **User notifications**, **User overrides**, **Incident reports**, and so on, and then choose **Save**.

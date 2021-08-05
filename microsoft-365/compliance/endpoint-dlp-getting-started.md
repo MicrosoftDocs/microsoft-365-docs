@@ -12,11 +12,11 @@ f1_keywords:
 - 'ms.o365.cc.DLPLandingPage'
 ms.service: O365-seccomp
 localization_priority: Priority
-ms.collection: 
+ms.collection:
 - M365-security-compliance
 - m365solution-mip
 - m365initiative-compliance
-search.appverid: 
+search.appverid:
 - MET150
 description: "Set up Microsoft 365 Endpoint data loss prevention to monitor file activities and implement protective actions for those files to endpoints."
 ---
@@ -39,7 +39,6 @@ Before you get started with Endpoint DLP, you should confirm your [Microsoft 365
 - Microsoft 365 A5 compliance
 - Microsoft 365 E5 information protection and governance
 - Microsoft 365 A5 information protection and governance
-
 
 ### Permissions
 
@@ -79,25 +78,26 @@ Make sure that the Windows 10 devices that you plan on deploying Endpoint DLP to
 
 1. Must be running Windows 10 x64 build 1809 or later.
 
-2. Antimalware Client Version is 4.18.2009.7 or newer. Check your current version by opening Windows Security app, select the Settings icon, and then select About. The version number is listed under Antimalware Client Version. Update to the latest Antimalware Client Version by installing Windows Update KB4052623. 
+2. Antimalware Client Version is 4.18.2009.7 or newer. Check your current version by opening Windows Security app, select the Settings icon, and then select About. The version number is listed under Antimalware Client Version. Update to the latest Antimalware Client Version by installing Windows Update KB4052623.
 
    > [!NOTE]
    > None of Windows Security components need to be active, you can run Endpoint DLP independent of Windows Security status, but the [Real-time protection and Behavior monitor](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)) must be enabled.
- 
-3. The following Windows Updates are installed. 
- 
+
+3. The following Windows Updates are installed.
+
    > [!NOTE]
    > These updates are not a pre-requisite to onboard a device to Endpoint DLP, but contain fixes for important issues thus must be installed before using the product.
 
-	- For Windows 10 1809 - KB4559003, KB4577069, KB4580390
-	- For Windows 10 1903 or 1909 - KB4559004, KB4577062, KB4580386
-	- For Windows 10 2004 - KB4568831, KB4577063
-	- For devices running Office 2016 (and not any other Office version) - KB4577063 
+   - For Windows 10 1809 - KB4559003, KB4577069, KB4580390
+   - For Windows 10 1903 or 1909 - KB4559004, KB4577062, KB4580386
+   - For Windows 10 2004 - KB4568831, KB4577063
+   - For devices running Office 2016 (and not any other Office version) - KB4577063
 
 4. All devices must be one of these:
-- [Azure Active Directory (Azure AD) joined](/azure/active-directory/devices/concept-azure-ad-join)
-- [Hybrid Azure AD joined](/azure/active-directory/devices/concept-azure-ad-join-hybrid)
-- [AAD registered](/azure/active-directory/user-help/user-help-register-device-on-network)
+
+   - [Azure Active Directory (Azure AD) joined](/azure/active-directory/devices/concept-azure-ad-join)
+   - [Hybrid Azure AD joined](/azure/active-directory/devices/concept-azure-ad-join-hybrid)
+   - [AAD registered](/azure/active-directory/user-help/user-help-register-device-on-network)
 
 5. Install Microsoft Chromium Edge browser on the endpoint device to enforce policy actions for the upload to cloud activity. See, [Download the new Microsoft Edge based on Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium).
 
@@ -119,7 +119,7 @@ In this deployment scenario, you'll onboard devices that have not been onboarded
 
 1. Open the [Microsoft compliance center](https://compliance.microsoft.com).
 
-2. Open the Compliance Center settings page and choose **Onboard devices**. 
+2. Open the Compliance Center settings page and choose **Onboard devices**.
 
    > [!div class="mx-imgBorder"]
    > ![enable device management](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
@@ -135,7 +135,7 @@ In this deployment scenario, you'll onboard devices that have not been onboarded
 
    > [!div class="mx-imgBorder"]
    > ![deployment method](../media/endpoint-dlp-getting-started-3-deployment-method.png)
-   
+
 6. Follow the appropriate procedures in [Onboarding tools and methods for Windows 10 machines](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). This link takes you to a landing page where you can access Microsoft Defender for Endpoint procedures that match the deployment package you selected in step 5:
 
     - Onboard Windows 10 machines using Group Policy
@@ -161,13 +161,12 @@ In this scenario, Microsoft Defender for Endpoint is already deployed and there 
 
    > [!div class="mx-imgBorder"]
    > ![device management](../media/endpoint-dlp-getting-started-2-device-management.png)
-   
+
 4. Choose **Onboarding** if you need to onboard additional devices.
 
 5. Choose the way you want to deploy to these additional devices from the **Deployment method** list and then **Download package**.
 
 6. Follow the appropriate procedures in [Onboarding tools and methods for Windows 10 machines](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). This link takes you to a landing page where you can access Microsoft Defender for Endpoint procedures that match the deployment package you selected in step 5:
-
     - Onboard Windows 10 machines using Group Policy
     - Onboard Windows machines using Microsoft Endpoint Configuration Manager
     - Onboard Windows 10 machines using Mobile Device Management tools
@@ -185,7 +184,6 @@ Once done and endpoint is onboarded, it should be visible under the **Devices** 
 
 2. Refer to the procedures in [How to configure and view alerts for your DLP policies](dlp-configure-view-alerts-policies.md) to view alerts for your Endpoint DLP policies.
 
-
 ### Viewing Endpoint DLP data in activity explorer
 
 1. Open the [Data classification page](https://compliance.microsoft.com/dataclassification?viewid=overview) for your domain in the Microsoft 365 Compliance center and choose Activity explorer.
@@ -196,14 +194,15 @@ Once done and endpoint is onboarded, it should be visible under the **Devices** 
    > ![activity explorer filter for endpoint devices](../media/endpoint-dlp-4-getting-started-activity-explorer.png)
 
 ## Next steps
+
 Now that you have onboarded devices and can view the activity data in Activity explorer, you are ready to move on to your next step where you create DLP policies that protect your sensitive items.
 
 - [Using Endpoint data loss prevention](endpoint-dlp-using.md)
 
 ## See also
 
-- [Learn about Endpoint data loss prevention ](endpoint-dlp-learn-about.md)
-- [Using Endpoint data loss prevention ](endpoint-dlp-using.md)
+- [Learn about Endpoint data loss prevention](endpoint-dlp-learn-about.md)
+- [Using Endpoint data loss prevention](endpoint-dlp-using.md)
 - [Learn about data loss prevention](dlp-learn-about-dlp.md)
 - [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md)
 - [Get started with Activity explorer](data-classification-activity-explorer.md)
