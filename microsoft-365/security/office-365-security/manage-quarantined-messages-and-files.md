@@ -69,61 +69,71 @@ You view and manage quarantined messages in the Microsoft 365 Defender portal or
 ### View quarantined email
 
 1. In the Microsoft 365 Defender portal, go to **Email & collaboration** \> **Review** \> **Quarantine**.
+2. On the **Quarantine** page, verify that the **Email** tab is selected.
 
-2. On the **Quarantine** page, verify that **View quarantined** is set to the default value **email**.
+3. You can sort the results by clicking on an available column header. Click **Customize columns**  to change the columns that are shown. The default values are marked with an asterisk (<sup>\*</sup>):
 
-3. You can sort the results by clicking on an available column header. Click **Modify columns** to show a maximum of seven columns. The default values are marked with an asterisk (<sup>\*</sup>):
-
-   - **Received**<sup>\*</sup>
-   - **Sender**<sup>\*</sup>
    - **Subject**<sup>\*</sup>
+   - **Time received**<sup>\*</sup>
+   - **Sender**<sup>\*</sup>
    - **Quarantine reason**<sup>\*</sup>
-   - **Released?**<sup>\*</sup>
+   - **Release status**<sup>\*</sup>
    - **Policy type**<sup>\*</sup>
    - **Expires**<sup>\*</sup>
    - **Recipient**
    - **Message ID**
-   - **Policy name**
-   - **Size**
-   - **Direction**
+   - **Message size**
+   - **Mail direction**
+   - **Recipient tag**
 
    When you're finished, click **Apply**.
 
-4. To filter the results, click **Filter**. The available filters are:
-   - **Expires time**: Filter messages by when they will expire from quarantine:
+4. To filter the results, click **Filter**. The following filters are available in the **Filters** flyout that appears:
+   - **Message ID**: The globally unique identifier of the message.
+
+     For example, you used [message trace](message-trace-scc.md) to look for a message that was sent to a user in your organization, and you determine that the message was quarantined instead of delivered. Be sure to include the full message ID value, which might include angle brackets (\<\>). For example: `<79239079-d95a-483a-aacf-e954f592a0f6@XYZPR00BM0200.contoso.com>`.
+
+   - **Sender address**
+   - **Recipient address**
+   - **Subject**
+   - **Time received**: Enter a **Start time** and **End time** (date).
+   - **Expires**: Filter messages by when they will expire from quarantine:
      - **Today**
      - **Next 2 days**
      - **Next 7 days**
      - **Custom**: Enter a **Start date** and **End date**.
-   - **Received time**: Enter a **Start date** and **End date**.
+   - **Recipient tag**
    - **Quarantine reason**:
      - **Transport rule** (mail flow rule)
      - **Bulk**
      - **Phish**: The spam filter verdict was **Phishing** or anti-phishing protection quarantined the message ([spoof settings](set-up-anti-phishing-policies.md#spoof-settings) or [impersonation protection](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)).
      - **Malware**
-     - **Spam**
-     - **High Confidence Phish**
+     - **Phishing**
+     - **High confidence phishing**
+   - **Recipient**: **All users** or **Only me**. End users can only manage quarantined messages sent to them.
+   - **Release status**: Any of the following values:
+     - **Needs review**
+     - **Approved**
+     - **Denied**
+     - **Release requested**
+     - **Released**
    - **Policy Type**: Filter messages by policy type:
      - **Anti-malware policy**
      - **Safe Attachments policy**
-     - **Anti-phish policy**
+     - **Anti-phishing policy**
      - **Anti-spam policy**
      - **Transport rule** (mail flow rule)
-   - **Email recipient**: All users or only messages sent to you. End users can only manage quarantined messages sent to them.
 
-   To clear the filter, click **Clear**. To hide the filter flyout, click **Filter** again.
+   When you're finished, click **Apply**. To clear the filters, click [Release email icon](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters**.
 
-5. Use **Sort results by** (the **Message ID** button by default) and a corresponding value to find specific messages. Wildcards aren't supported. You can search by the following values:
-   - **Message ID**: The globally unique identifier of the message.
+5. Use **Search** box and a corresponding value to find specific messages. Wildcards aren't supported. You can search by the following values:
+   - Message ID
+   - Sender email address
+   - Recipient email address
+   - Subject. Use the entire subject of the message. The search is not case-sensitive.
+   - Policy name. Use the entire policy name. The search is not case-sensitive.
 
-     For example, you used [message trace](message-trace-scc.md) to look for a message that was sent to a user in your organization, and you determine that the message was quarantined instead of delivered. Be sure to include the full message ID value, which might include angle brackets (\<\>). For example: `<79239079-d95a-483a-aacf-e954f592a0f6@XYZPR00BM0200.contoso.com>`.
-
-   - **Sender email address**: A single sender's email address.
-   - **Recipient email address**: A single recipient's email address.
-   - **Subject**: Use the entire subject of the message. The search is not case-sensitive.
-   - **Policy name**: Use the entire policy name. The search is not case-sensitive.
-
-   After you've entered the search criteria, click **Refresh** to filter the results.
+   After you've entered the search criteria, press ENTER to filter the results.
 
 After you find a specific quarantined message, select the message to view details about it, and to take action on it (for example, view, release, download, or delete the message).
 
@@ -236,36 +246,45 @@ If you don't release or remove the message, it will be deleted after the default
 
 #### Take action on multiple quarantined email messages
 
-When you select multiple quarantined messages in the list (up to 100), the **Bulk actions** flyout appears where you can take the following actions:
+When you select multiple quarantined message in the list (up to 100) by clicking in the blank area to the left of the **Subject** column, the **Bulk actions** drop down list appears where you can take the following actions:
 
-- **Release messages**: The options are the same as when you release a single message, except you can't select **Release messages to specific recipients**; you can only select **Release message to all recipients** or **Release messages to other people**.
+![Bulk actions drop down list in quarantine](../../media/quarantine-bulk-actions.png)
+
+- ![Release email icon](../../media/m365-cc-sc-check-mark-icon.png) **Release messages**: This action releases messages to all recipients. In the flyout that appears, you can choose the following options, which are the same as when you release a single message:
+  - **Add sender to your organization's allow list**
+  - **Send a copy of this message to other recipients**
+  - **Submit the message to Microsoft to improve detection (false positive)**
+  - **Allow messages like this**:
+    - **Remove after**: **1 day** to **30 days**
+    - **Optional note**
+
+  When you're finished, click **Release message**.
 
   > [!NOTE]
   > Consider the following scenario: john@gmail.com sends a message to faith@contoso.com and john@subsidiary.contoso.com. Gmail bifurcates this message into two copies that are both routed to quarantine as phishing in Microsoft. An admin releases both of these messages to admin@contoso.com. The first released message that reaches the admin mailbox is delivered. The second released message is identified as duplicate delivery and is skipped. Message are identified as duplicates if they have the same message ID and received time.
 
-- **Delete messages**:  After you click **Yes** in the warning that appears, the messages are immediately deleted without being sent to the original recipients.
-
-- **Download messages**
+- [Remove from quarantine icon](../../media/m365-cc-sc-delete-icon.png) **Delete messages**:  After you click **Yes** in the warning that appears, the messages are immediately removed from quarantine without being sent to the original recipients.
+- ![Download email icon](../../media/m365-cc-sc-download-icon.png) **Download messages**
+- ![Submit only icon](../../media/m365-cc-sc-create-icon.png) **Submit only**
 
 ## Use the Microsoft 365 Defender portal to manage quarantined files in Defender for Office 365
 
 > [!NOTE]
-> The procedures for quarantined files in this section are available only to Microsoft Defender for Office 365 Plan 1 and Plan 2 subscribers.
+> The procedures for quarantined files in this section are available only to Microsoft Defender for Office 365 Plan 1 or Plan 2 subscribers.
 
-In organizations with Defender for Office 365, admins can manage quarantined files in SharePoint Online, OneDrive for Business, and Microsoft Teams. To enable protection for these files, see [Turn on Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](turn-on-mdo-for-spo-odb-and-teams.md).
+In organizations with Defender for Office 365, admins can manage files that were quarantined by Safe Attachments in SharePoint Online, OneDrive for Business, and Microsoft Teams. To enable protection for these files, see [Turn on Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](turn-on-mdo-for-spo-odb-and-teams.md).
 
 ### View quarantined files
 
 1. In the Microsoft 365 Defender portal, go to **Email & collaboration** \> **Review** \> **Quarantine**.
+2. On the **Quarantine** page, select the **Files** tab (**Email** is the default tab).
 
-2. On the **Quarantine** page, change **View quarantined** to the value **files**. You can sort on a field by clicking on an available column header.
-
-3. You can sort the results by clicking on an available column header. Click **Modify columns** to show a maximum of seven columns. The default columns are marked with an asterisk (<sup>\*</sup>):
+3. You can sort the results by clicking on an available column header. Click **Customize columns** to change the columns that are shown. The default columns are marked with an asterisk (<sup>\*</sup>):
    - **User**<sup>\*</sup>
    - **Location**<sup>\*</sup>
    - **Attachment filename**<sup>\*</sup>
    - **File URL**<sup>\*</sup>
-   - **File Size**<sup>\*</sup>
+   - **File Size**
    - **Released?**<sup>\*</sup>
    - **Expires**<sup>\*</sup>
    - **Detected by**
@@ -273,13 +292,9 @@ In organizations with Defender for Office 365, admins can manage quarantined fil
 
    When you're finished, click **Apply** or **Cancel**.
 
-4. To filter the results, click **Filter**. The available filters are:
-   - **Expires time**: Filter messages by when they will expire from quarantine:
-     - **Today**
-     - **Next 2 days**
-     - **Next 7 days**
-     - A custom date/time range.
-   - **Received time**
+4. To filter the results, click **Filter**. The following filters are available in the **Filters** flyout that appears:
+   - **Time received**: **Start time** and **End time** (date).
+   - **Expires**: **Start time** and **End time** (date).
    - **Quarantine reason**: The only available value is **Malware**.
    - **Policy type**
 
@@ -317,7 +332,7 @@ If you don't release or remove the files, they will be deleted after the default
 
 #### Actions on multiple quarantined files
 
-When you select multiple quarantined files in the list (up to 100), the **Bulk actions** flyout appears where you can take the following actions:
+When you select multiple quarantined files in the list (up to 100) by click on the row to the left of the **Subject** column, the **Bulk actions** drop down list appears where you can take the following actions:
 
 - **Release files**
 - **Delete files**:  After you click **Yes** in the warning that appears, the files are immediately deleted.
