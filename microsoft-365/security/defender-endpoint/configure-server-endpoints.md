@@ -99,6 +99,9 @@ Microsoft Defender for Endpoint integrates seamlessly with Azure Defender. You c
 
 For more information, see [Integration with Azure Defender](azure-server-integration.md).
 
+>[!NOTE]
+For Windows Server 2012 R2 and 2016 running the modern unified solution preview, integration with Azure Security Center / Azure Defender for Servers for alerting and automated deployment is not yet available. Whilst you can install the new solution on these machines, no alerts will be displayed in Azure Security Center.
+
 ## Windows Server 2012 R2 and Windows Server 2016
 
 >[!NOTE]
@@ -108,9 +111,9 @@ For more information, see [Integration with Azure Defender](azure-server-integra
 ### Prerequisites
 
 **Prerequisites for Windows Server 2012 R2** 
-If you have fully updated your machines with the latest [monthly rollup](/troubleshoot/windows-client/deployment/standard-terminology-software-updates#monthly-rollup) package, there are no additional prerequisites.
+If you have fully updated your machines with the latest [monthly rollup](/troubleshoot/windows-client/deployment/standard-terminology-software-updates.md#monthly-rollup) package, there are **no** additional prerequisites.
 
-The installer will check if the following components have been installed via an update:
+The installer package will check if the following components have already been installed via an update:
 
 - [Update for customer experience and diagnostic telemetry](https://support.microsoft.com/help/3080149/update-for-customer-experience-and-diagnostic-telemetry)
 - [Update for Universal C Runtime in Windows](https://support.microsoft.com/topic/update-for-universal-c-runtime-in-windows-c0514201-7fe6-95a3-b0a5-287930f3560c)
@@ -162,7 +165,7 @@ You can also use the [installer script](/microsoft-365/security/defender-endpoin
 
 > [!NOTE]
 > Microsoft Defender Antivirus doesn't automatically go into passive mode. You can choose to set Microsoft Defender Antivirus to run in passive mode if you are running a non-Microsoft antivirus/antimalware solution. For command line installations, the optional `FORCEPASSIVEMODE=1` immediately sets the Microsoft Defender Antivirus component to Passive mode. <br><br>
->For more information, see [Need to set Microsoft Defender Antivirus to passive mode?](microsoft-defender-antivirus-on-windows-server.md#need-to-set-microsoft-defender-antivirus-to-passive-mode).
+>For more information, see [Need to set Microsoft Defender Antivirus to passive mode?](microsoft-defender-antivirus-on-windows-server.md#passive-mode-and-windows-server).
 
 
 ## Windows Server Semi-Annual Channel and Windows Server 2019
