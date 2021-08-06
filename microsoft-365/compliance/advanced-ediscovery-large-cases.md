@@ -58,7 +58,9 @@ Additionally, the new large case format includes an updated user interface that 
 
 ## Known issues
 
-- At this time, the option to export content as **Loose files and PSTs** isn't supported in large cases (the option is currently greyed out). This export option will be supported soon. For more information about exporting content, see [Export documents from a review set in Advanced eDiscovery](export-documents-from-review-set.md).
+- The option to export content as **Loose files and PSTs** is not currently supported in large cases (the option is greyed out). This export option for large cases will be supported soon. For more information about exporting content, see [Export documents from a review set in Advanced eDiscovery](export-documents-from-review-set.md).
+
+- The Advanced indexing that occurs when you add custodians and non-custodial data source to a case is not currently supported in large cases. The indexing job is created, but it doesn't complete. Advanced indexing in large cases will be supported soon. For more information about Advanced indexing, see [Advanced indexing of custodian data](indexing-custodian-data.md).
 
 ## Frequently asked questions
 
