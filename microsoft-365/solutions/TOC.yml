@@ -327,4 +327,4 @@
     - name: Deploy Microsoft 365
       href: ../enterprise/microsoft-365-overview.md
 - name: Navigation guide
-  href: ../microsoft-365-docs-navigation-guide.md
+  href: ../microsoft-365-docs-navigation-guide.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json

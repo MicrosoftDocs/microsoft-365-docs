@@ -715,7 +715,7 @@
       href: /compliance/assurance/assurance-microsoft-365-mitigations
 
 - name: Navigation guide
-  href: ../microsoft-365-docs-navigation-guide.md
+  href: ../microsoft-365-docs-navigation-guide.md?toc=/microsoft-365/Enterprise/toc.json&bc=/microsoft-365/enterprise/breadcrumb/toc.json
 
 - name: Microsoft 365 for Business
   href: ../admin/index.yml
