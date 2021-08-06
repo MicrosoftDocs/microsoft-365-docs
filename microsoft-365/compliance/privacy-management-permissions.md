@@ -24,7 +24,7 @@ In this article: learn how to set **permissions** and assign users to **role gro
 
 To give members of your organization permissions to use privacy management, assign them to the appropriate role groups in the Microsoft 365 compliance center. Note that roles specific to privacy management will not appear in Azure Active Directory.
 
-## Sign in
+## Sign in and set permissions
 
 1. Go to the [Microsoft 365 compliance center](https://compliance.microsoft.com/) and select **Permissions** in the left navigation.  
 2. Under the **Compliance center** dropdown, select **Roles**. The full list of role groups will appear.
