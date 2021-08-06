@@ -33,7 +33,9 @@ ms.custom: api
 ## API description
 Get a URI that allows downloading of an [Investigation package](collect-investigation-package.md).
 
-
+> [!IMPORTANT]
+>
+> - These actions are only available for devices on Windows 10, version  1703 or later.
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Access the Microsoft Defender for Endpoint APIs](apis-intro.md)
