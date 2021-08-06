@@ -1,5 +1,5 @@
 ---
-title: Create the Microsoft 365 Defender Evaluation Environment. Activate or enable trial licenses, and continue on to Microsoft Defender for Identity (MDI).
+title: Create the Microsoft 365 Defender Evaluation Environment
 description: Set up your Microsoft 365 Defender trial lab or pilot environment by activating trial licenses. Then set up Microsoft Defender for Identity (MDI) and all other M365D evaluations.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150

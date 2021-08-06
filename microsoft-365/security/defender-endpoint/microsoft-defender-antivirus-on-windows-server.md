@@ -14,7 +14,7 @@ ms.reviewer: pahuijbr, shwjha
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.date: 05/13/2021
+ms.date: 08/05/2021
 ---
 
 # Microsoft Defender Antivirus on Windows Server
@@ -47,7 +47,7 @@ The process of setting up and running Microsoft Defender Antivirus on a server p
 4. [Update your antimalware Security intelligence](#update-antimalware-security-intelligence).
 5. (As needed) [Submit samples](#submit-samples).
 6. (As needed) [Configure automatic exclusions](#configure-automatic-exclusions).
-7. (Only if necessary) [Set Microsoft Defender Antivirus to passive mode](#need-to-set-microsoft-defender-antivirus-to-passive-mode).
+7. (Only if necessary) Set [Windows Server to passive mode](#passive-mode-and-windows-server).
 
 ## Enable the user interface on Windows Server
 
@@ -183,7 +183,7 @@ To help ensure security and performance, certain exclusions are automatically ad
 
 See [Configure exclusions in Microsoft Defender Antivirus on Windows Server](configure-server-exclusions-microsoft-defender-antivirus.md). 
 
-## Need to set Microsoft Defender Antivirus to passive mode?
+## Passive mode and Windows Server
 
 If you are using a non-Microsoft antivirus product as your primary antivirus solution on Windows Server, you must set Microsoft Defender Antivirus to passive mode or disabled mode.
 
