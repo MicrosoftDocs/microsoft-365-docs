@@ -21,6 +21,9 @@ manager: dansimp
 **Applies to:**
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
+- Microsoft Defender Antivirus
+
+You can define exclusions for Microsoft Defender Antivirus that apply to [scheduled scans](schedule-antivirus-scans.md), [on-demand scans](run-scan-microsoft-defender-antivirus.md), and [always-on, real-time protection and monitoring](configure-real-time-protection-microsoft-defender-antivirus.md). This article describes how to configure exclusion lists for the files and folders. 
 
 > [!IMPORTANT]
 > Microsoft Defender Antivirus exclusions don't apply to other Microsoft Defender for Endpoint capabilities, including [endpoint detection and response (EDR)](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response), [attack surface reduction (ASR) rules](/microsoft-365/security/defender-endpoint/attack-surface-reduction), and [controlled folder access](/microsoft-365/security/defender-endpoint/controlled-folders). Files that you exclude using the methods described in this article can still trigger EDR alerts and other detections. To exclude files broadly, add them to the Microsoft Defender for Endpoint [custom indicators](/microsoft-365/security/defender-endpoint/manage-indicators).
@@ -31,11 +34,9 @@ You can exclude certain files from Microsoft Defender Antivirus scans by modifyi
 
 > [!NOTE]
 > Exclusions apply to Potentially Unwanted Apps (PUA) detections as well.
+>
+> Automatic exclusions apply only to Windows Server 2016 and later. These exclusions are not visible in the Windows Security app and in PowerShell.
 
-> [!NOTE]
-> Automatic exclusions apply only to Windows Server 2016 and above. These exclusions are not visible in the Windows Security app and in PowerShell.
-
-This article  describes how to configure exclusion lists for the files and folders. See [Recommendations for defining exclusions](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions) before defining your exclusion lists.
 
 | Exclusion | Examples | Exclusion list |
 |:---|:---|:---|
@@ -44,7 +45,7 @@ This article  describes how to configure exclusion lists for the files and folde
 | A specific file in a specific folder | The file `c:\sample\sample.test` only | File and folder exclusions |
 | A specific process | The executable file `c:\test\process.exe` | File and folder exclusions |
 
-Exclusion lists have the following characteristics:
+## Characteristics of exclusion lists
 
 - Folder exclusions apply to all files and folders under that folder, unless the subfolder is a reparse point. Reparse point subfolders must be excluded separately.
 - File extensions apply to any file name with the defined extension if a path or folder is not defined.
