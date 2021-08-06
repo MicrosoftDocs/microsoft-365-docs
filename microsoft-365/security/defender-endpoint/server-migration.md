@@ -27,6 +27,8 @@ ms.technology: mde
 - Windows Server 2012 R2
 - Windows Server 2016
 
+[!include[Prerelease information](../../includes/prerelease.md)]
+
 > [!NOTE]
 > Always ensure Microsoft Defender Antivirus is fully updated on Windows Server 2016 before proceeding. The platform version must be on the June 2021 release (4.18.2106.6 or greater).
 
