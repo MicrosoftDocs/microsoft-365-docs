@@ -1,5 +1,5 @@
 ---
-title: Evaluate Microsoft 365 Defender for Identity overview, set up evaluation, eval and pilot
+title: Evaluate Microsoft 365 Defender for Identity overview, set up evaluation
 description: Steps for the evaluation of Microsoft 365 Defender for Identity including requirements, enabling or activating the eval, and set up of the pilot or test.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150

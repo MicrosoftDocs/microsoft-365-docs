@@ -136,7 +136,7 @@
        href: tenant-wide-setup-for-increased-security.md
      - name: Preset security policies
        href: preset-security-policies.md
-     - name: Configuration analyzer for preset security policies
+     - name: Configuration analyzer for protection policies
        href: configuration-analyzer-for-security-policies.md
      - name: Attack Simulator in Defender for Office 365
        href: attack-simulator.md
