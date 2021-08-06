@@ -38,7 +38,7 @@ See [Recommendations for defining exclusions](configure-exclusions-microsoft-def
 
 ## Exclusion lists
 
-To exclude certain files from Microsoft Defender Antivirus scans, modify your exclusion lists. Microsoft Defender Antivirus includes many automatic exclusions based on known operating system behaviors and typical management files, such as those used in enterprise management, database management, and other enterprise scenarios and situations.
+To exclude certain files from Microsoft Defender Antivirus scans, you modify your exclusion lists. Microsoft Defender Antivirus includes many automatic exclusions based on known operating system behaviors and typical management files, such as those used in enterprise management, database management, and other enterprise scenarios and situations.
 
 > [!NOTE]
 > Exclusions apply to Potentially Unwanted Apps (PUA) detections as well.
@@ -64,9 +64,9 @@ The following table lists some examples of exclusions based on file extension an
 
 - Using wildcards such as the asterisk (\*) will alter how the exclusion rules are interpreted. See the [Use wildcards in the file name and folder path or extension exclusion lists](#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists) section for important information about how wildcards work.
 
-- You cannot exclude mapped network drives. You must specify the actual network path.
+- Don't exclude mapped network drives. Specify the actual network path.
 
-- Folders that are reparse points that are created after the Microsoft Defender Antivirus service starts and that have been added to the exclusion list will not be included. You must restart the service (by restarting Windows) for new reparse points to be recognized as a valid exclusion target.
+- Folders that are reparse points that are created after the Microsoft Defender Antivirus service starts and that have been added to the exclusion list will not be included. Restart the service (by restarting Windows) for new reparse points to be recognized as a valid exclusion target.
 
 - Exclusions apply to [scheduled scans](scheduled-catch-up-scans-microsoft-defender-antivirus.md), [on-demand scans](run-scan-microsoft-defender-antivirus.md), and [real-time protection](configure-real-time-protection-microsoft-defender-antivirus.md), but not across Defender for Endpoint. To define exclusions across Defender for Endpoint, use [custom indicators](manage-indicators.md).
 
