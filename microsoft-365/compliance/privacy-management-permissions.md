@@ -45,7 +45,7 @@ Role groups can be customized if needed. To avoid accidental loss of access, we 
 
 This group contains all the privacy management permission roles in a single group. This role group may be a good fit for organizations where the same individual may perform all duties within the privacy management solution. Providing membership in this role group will grant that account full access to all features of the privacy management solution.
 
-### Roles included:
+Roles include:
 
 - Case Management  
 - Data Classification Content Viewer  
@@ -63,7 +63,7 @@ This group contains all the privacy management permission roles in a single grou
 
 Members of this role group focus on configuration and administration tasks, and have broad access to privacy management functions, including creating, reading, updating, and deleting privacy management policies, subject rights requests, privacy management permissions, and privacy management settings.
 
- Roles included
+Roles include:
 
 - Case Management  
 - Privacy Management Admin  
@@ -73,7 +73,7 @@ Members of this role group focus on configuration and administration tasks, and 
 
 Members of this role group act as privacy management case analysts. They can investigate policy matches, view file metadata, and take remediation actions. This group cannot access full files through the Content Explorer.
 
-### Roles included
+Roles include:
 
 - Case Management  
 - Data Classification List Viewer  
@@ -84,7 +84,7 @@ Members of this role group act as privacy management case analysts. They can inv
 
 Members of this group act as privacy management data investigators. They can investigate policy matches, view the associated file content, and take remediation actions. This group can access files through the Content Explorer. 
 
-### Roles included
+Roles include:
 
 - Case Management  
 - Data Classification Content Viewer  
@@ -96,7 +96,7 @@ Members of this group act as privacy management data investigators. They can inv
 
 Members of this group can view analytical information in privacy management, like the overview, data profile, and subject request reports.
 
-### Roles included
+Roles include:
 
 - Privacy Management Viewer
 
@@ -104,7 +104,7 @@ Members of this group can view analytical information in privacy management, lik
 
 Members of this group have full access to administer and create subject rights requests.
 
-### Roles included
+Roles include:
 
 - Subject Rights Request Admin
 
@@ -112,7 +112,7 @@ Members of this group have full access to administer and create subject rights r
 
 Members of this group have contributor access to subject rights requests.  
 
-### Roles included
+Roles include:
 
 - Privacy Management Temporary Contribution  
 - Privacy Management Permanent Contribution
