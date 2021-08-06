@@ -61,19 +61,21 @@ The **Summary** page gives you a snapshot glance at the top things to notice abo
 
 :::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="Example of the Summary page for an incident in the Microsoft 365 security center":::
 
-The attack categories give you a visual and numeric view of how advanced the attack has progressed against the kill chain. As with other Microsoft security products, Microsoft 365 Defender is aligned to the [MITRE ATT&CK&trade;](https://attack.mitre.org/) framework.
+Information is organized in these sections.
 
-The scope section gives you a list of top impacted assets that are part of this incident. If there is specific information regarding this asset, such as risk level, investigation priority as well as any tagging on the assets this will also surface in this section.
+| Section | Description |
+|:-------|:-----|
+| Alerts and categories | A visual and numeric view of how advanced the attack has progressed against the kill chain. As with other Microsoft security products, Microsoft 365 Defender is aligned to the [MITRE ATT&CK&trade;](https://attack.mitre.org/) framework. The alerts timeline shows the chronological order in which the alerts occurred and for each, their status and name. |
+| Scope |  Displays the number of impacted devices, users, and mailboxes and lists the entities in order of risk level and investigation priority. |
+| Evidence | Displays the number of entities affected by the incident. |
+| Incident information | Displays the properties of the incident, such as tags, status, and severity. |
+|||
 
-The alerts timeline provides a sneak peek into the chronological order in which the alerts occurred, as well as the reasons that these alerts are linked to this incident.
-
-And last - the evidence section provides a summary of how many different artifacts were included in the incident and their remediation status, so you can immediately identify if any action is needed by you.
-
-This overview can assist in the initial triage of the incident by providing insight into the top characteristics of the incident that you should be aware of.
+Use the **Summary** page to assess the relative importance of the incident and quickly access the associated alerts and impacted entites.
 
 ## Alerts
 
-On the **Alert** tab, you can view the alert queue for alerts related to the incident and other information about them such as:
+On the **Alerts** tab, you can view the alert queue for alerts related to the incident and other information about them such as:
 
 - Severity.
 - The entities that were involved in the alert.
@@ -84,8 +86,7 @@ Here's an example.
 
 :::image type="content" source="../../media/investigate-incidents/incident-alerts.png" alt-text="Example of an Alerts page for an incident":::
 
-By default, the alerts are ordered chronologically to allow you to see how the incident played out over time. 
-When you select an alert within an incident, Microsoft 365 Defender displays the alert information specific to the context of the overall incident. 
+By default, the alerts are ordered chronologically to allow you to see how the attack played out over time. When you select an alert within an incident, Microsoft 365 Defender displays the alert information specific to the context of the overall incident. 
 
 You can see the events of the alert, which other triggered alerts caused the current alert, and all the affected entities and activities involved in the attack, including files, users, and mailboxes.
 
