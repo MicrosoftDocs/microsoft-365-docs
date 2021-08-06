@@ -243,3 +243,28 @@ This is a client-side issue. To remediate it, follow these steps:
 6. If the previous steps don't work, disable zipping and de-duplication.
 
 7. If this works then the issue is due to a local virus scanner or a disk issue.
+
+## Error: "Your request can't be started because the maximum number of jobs for your organization are currently running..."
+
+Your organization has reached the exports limit and now all new export jobs are being throttled.
+
+### Resolution
+
+To discover how many export jobs are running concurrently follow these steps:
+
+1. Connect to [Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell)
+
+2. Run the following script to find out how many jobs are triggering the throttle: 
+   ```powershell
+   $date = Get-Date;
+   $exports = Get-ComplianceSearchAction -Export -ResultSize Unlimited;
+   $inprogressExports = $exports | ?{$_.Results -eq $null -or (!$_.Results.Contains("Export status: Completed") -and !$_.Results.Contains("Export status: none"))};
+   $exportJobsRunning = $inprogressExports | ?{$_.JobStartTime -ge $date.AddDays(-7)} | Sort-Object JobStartTime -Descending;
+   ```
+
+3. Display the jobs that are currently running:
+   ```powershell
+   $exportJobsRunning | Format-Table Name, JobStartTime, JobEndTime, Status | More;
+   ```
+
+4. If there are 10 or more exports, then you have reached the maximum export jobs that are allowed to be ran concurrently. Wait for active jobs to finish before starting a new export job.
