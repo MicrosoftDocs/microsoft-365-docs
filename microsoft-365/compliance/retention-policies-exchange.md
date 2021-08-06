@@ -82,7 +82,7 @@ Retention policies for Exchange, unlike retention policies for the other Microso
 
 If a retention label is applied to an email message, the name of that label and corresponding expiry date is always displayed, and will replace the name and date from any retention policy applied to the mailbox.
 
-Remember, in this context, the expiry date is when users can expect the email message to automatically move to the Recoverable Items folder (if not already there). The email will be retained there for compliance purposes if it is subject to a retention policy to retain it, or it is under an eDiscovery hold for legal or investigative reasons.
+Remember, in this context, the expiry date for when an email will be deleted is when users can expect the email message to automatically move to the Recoverable Items folder (if not already there). Emails in the Recoverable Items folder will not be permanently deleted but remain there for compliance purposes if they are subject to any retention settings to retain it, or they are under an eDiscovery hold for legal or investigative reasons.
 
 ## When a user leaves the organization 
 

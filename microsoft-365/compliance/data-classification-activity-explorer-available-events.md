@@ -34,7 +34,7 @@ This event is generated each time an unlabeled document is labeled or an email i
 |Source  |Reported in activity explorer | Note  |
 |---------|---------|---------|
 | Word, Excel, PowerPoint|yes |
-|Outlook| yes |from Win 32 |
+|Outlook| yes | |
 |SharePoint online, OneDrive|yes | |
 |Exchange        |yes         | |
 |Azure Information Protection (AIP) unified client and AIP unified scanner |yes |the AIP *new label* action is mapped to *label applied* in activity explorer   |
@@ -58,7 +58,7 @@ This event is generated each time a sensitivity label is updated on the document
 |Source  |Reported in activity explorer|Note  |
 |---------|---------|---------| 
 |Word, Excel, PowerPoint         |yes         |
-|Outlook         |yes         |Win 32|
+|Outlook         |yes         |
 |SharePoint Online, OneDrive         |yes         |
 |Exchange         |yes         |
 |AIP unified client         |yes         |
@@ -79,7 +79,7 @@ This event is generated each time a sensitivity label is removed from a file or 
 |Source  |Reported in activity explorer | Note  |
 |---------|---------|---------| 
 |Word, Excel, PowerPoint         |yes         |
-|Outlook         |yes         |Win 32|
+|Outlook         |yes         ||
 |SharePoint Online, OneDrive         |yes         |
 |Exchange         |yes         |
 |AIP unified client         |yes         |the AIP *remove label* action is mapped to the *label removed* action in activity explorer|
