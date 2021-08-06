@@ -36,7 +36,7 @@ Depending on
 - the resulting verdict, and 
 - how your organization's [device groups](/microsoft-365/security/defender-endpoint/machine-groups) are configured, 
 
-remediation actions can occur automatically or only upon approval by your organization’s security operations team. 
+remediation actions can occur automatically or only upon approval by your organization's security operations team. 
 
 Here are a few examples:
 
@@ -75,7 +75,7 @@ Whether taken automatically or upon approval, an automated investigation can res
  
 ## Undo completed actions
 
-If you’ve determined that a device or a file is not a threat, you can undo remediation actions that were taken, whether those actions were taken automatically or manually. In the Action center, on the **History** tab, you can undo any of the following actions:  
+If you've determined that a device or a file is not a threat, you can undo remediation actions that were taken, whether those actions were taken automatically or manually. In the Action center, on the **History** tab, you can undo any of the following actions:  
 
 | Action source | Supported Actions |
 |:---|:---|

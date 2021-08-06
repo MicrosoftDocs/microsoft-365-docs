@@ -1,5 +1,5 @@
 ---
-title: Pilot Microsoft Cloud App Security with Microsoft 365 Defender, create pilot groups, configure conditional access control, try out capabilities, setup as part of Microsoft 365 Defender
+title: Pilot Microsoft Cloud App Security with Microsoft 365 Defender
 description: Set up your Microsoft 365 Defender trial lab or pilot environment to test and experience the security solution designed to protect devices, identity, data, and applications.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
