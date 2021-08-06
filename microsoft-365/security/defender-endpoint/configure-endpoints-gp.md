@@ -240,7 +240,7 @@ With Group Policy there isn't an option to monitor deployment of policies on the
 > [!NOTE]
 > It can take several days for devices to start showing on the **Devices list**. This includes the time it takes for the policies to be distributed to the device, the time it takes before the user logs on, and the time it takes for the endpoint to start reporting.
 
-## Setup Defender AV policies:
+## Setup Defender AV policies
 
 Create a new Group Policy or group these settings in with the other policies. This is dependent upon the customers environment and how they would like to roll out the service by targeting different OU’s (Organizational Units).
 
