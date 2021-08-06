@@ -38,9 +38,34 @@ Whether it be adding new solutions to the [Microsoft 365 compliance center](micr
 
 ## July 2021
 
+### Advanced eDiscovery
+
+- [Advanced eDiscovery workflow for content in Microsoft Teams using large cases](teams-workflow-in-advanced-ediscovery.md) added an end-to-end workflow of managing Teams content in Advanced eDiscovery; includes details about the preview of the new conversation transcript functionality.
+- [Use large cases in Advanced eDiscovery](advanced-ediscovery-large-cases.md) added a preview of new large case format that extends review set and case limits and supports conversation transcripts for Teams and Yammer chat conversations.
+
 ### App governance
 
 - The [app governance add-on for Microsoft Cloud App Security](app-governance-manage-app-governance.md) (MCAS) has gone into public preview. App governance provides monitoring of OAUth-based apps in your M365 tenant and generates alerts for activity that might represent malware or inappropriate levels of permissions.
+
+### Compliance offerings
+
+- [Compliance offerings](regulatory/offering-home.md) changes focusing on applicable service coverage and updates to align more closely with the [Azure offerings](/azure/compliance) for applicable regulations.
+
+### Compliance & service assurance
+
+- [Service assurance](/compliance/) (updated; quarterly review content updates for certifications and statements of applicability)
+    - Cloud background checks
+    - Employee transfer & termination
+    - Governance
+    - Human resources
+    - Incident management
+    - Pre-employment screening
+    - Security incident management (SIM)
+    - SIM – Containment, eradication, and recovery
+    - SIM – Detection & analysis
+    - SIM – Post-incident reporting
+    - SIM – Preparation
+    - Tenant isolation
 
 ### Data classification
 
@@ -54,6 +79,10 @@ Whether it be adding new solutions to the [Microsoft 365 compliance center](micr
 - [Use the Microsoft 365 data loss prevention on-premises scanner](dlp-on-premises-scanner-use.md) updated for GA release.
 - [Use data loss prevention policies for non-Microsoft cloud apps](dlp-use-policies-non-microsoft-cloud-apps.md) updated for GA release and MIP-MCAS integration.
 
+### Insider risk management
+
+- [Investigate insider risk management activities](insider-risk-management-activities.md) added content updates for new User activity reports and new dismiss multiple alerts preview features.
+- [Get started with insider risk management settings](insider-risk-management-settings.md) added content updates for new RBAC functionality to choose reviewers for priority user groups preview feature.
 
 ### Privacy management
 
