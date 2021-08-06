@@ -54,7 +54,7 @@ Before managing the Microsoft Teams integration within Instructure Canvas, it is
 7. Select **Accept**. 
 
 > [!NOTE]
-> Sync is a functionality that is managed by LMS partner and is used to sync membership at a course level to the Teams team using Microsoft graph APIs. This is primarily a functionality that an educator switches on as true at a course level. Subsequently any membership change done on LMS side for the addition/deletion of the members gets reflected using the Sync implemented by LMS partner. Even before this process is enabled for an Educator the M365 education institute admin allows their educators to access sync using the below Sync permission modal. These permissions are granted to LMS partner to enable educators to sync membership between LMS course and Teams Class teams.
+> Sync is a functionality that is managed by LMS partner and is used to sync membership at a course level to the Teams team using Microsoft graph APIs. This is primarily a functionality that an educator switches on as true at a course level. Subsequently any membership change done on LMS side for the addition or deletion of the members gets reflected using the Sync implemented by the LMS partner. Even before this process is enabled for an Educator the M365 education institute admin allows their educators to access sync using the Sync permission modal found below. These permissions are granted to the LMS partner to enable educators to sync membership between the LMS course and Teams Class teams.
 
 8. Enable the Microsoft Teams sync by turning the toggle on.
 
