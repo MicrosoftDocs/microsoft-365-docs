@@ -21,7 +21,7 @@ ms.collection:
   - m365solution-symantecmigrate
 ms.topic: article
 ms.custom: migrationguides
-ms.date: 07/19/2021
+ms.date: 08/06/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ---
 
