@@ -109,7 +109,7 @@ For Windows Server 2012 R2 and 2016 running the modern unified solution preview,
 ### Prerequisites
 
 **Prerequisites for Windows Server 2012 R2** 
-If you have fully updated your machines with the latest [monthly rollup](/troubleshoot/windows-client/deployment/standard-terminology-software-updates#monthly-rollup) package, there are **no** additional prerequisites.
+If you have fully updated your machines with the latest [monthly rollup](/troubleshoot/windows-client/deployment/standard-terminology-software-updates.md#monthly-rollup) package, there are **no** additional prerequisites.
 
 The installer package will check if the following components have been already installed via an update:
 
