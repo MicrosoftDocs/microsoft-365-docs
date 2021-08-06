@@ -21,7 +21,7 @@ ms.collection:
   - m365solution-symantecmigrate
 ms.topic: article
 ms.custom: migrationguides
-ms.date: 07/19/2021
+ms.date: 08/06/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ---
 
@@ -53,7 +53,7 @@ Now that you're planning to switch to Defender for Endpoint, you might need to t
 
 | Endpoint type  | What to do  |
 |---------|---------|
-| Windows clients (such as endpoints running Windows 10)     | In general, you do not need to take any action for Windows clients (unless Microsoft Defender Antivirus has been uninstalled). Here's why: <p>Microsoft Defender Antivirus should still be installed, but is most likely disabled at this point of the migration process.<p> When a non-Microsoft antivirus/antimalware solution is installed and the clients are not yet onboarded to Defender for Endpoint, Microsoft Defender Antivirus is disabled automatically. <p>Later, when the client endpoints are onboarded to Defender for Endpoint, if those endpoints are running a non-Microsoft antivirus solution, Microsoft Defender Antivirus goes into passive mode. <p>If the non-Microsoft antivirus solution is uninstalled, Microsoft Defender Antivirus goes into active mode automatically.  |
+| Windows clients (such as endpoints running Windows 10)     | In general, you do not need to take any action for Windows clients (unless Microsoft Defender Antivirus has been uninstalled). Here's why: <p>Microsoft Defender Antivirus should be installed, but is most likely disabled at this point of the migration process.<p> When a non-Microsoft antivirus/antimalware solution is installed and the clients are not yet onboarded to Defender for Endpoint, Microsoft Defender Antivirus is disabled automatically. <p>Later, when the client endpoints are onboarded to Defender for Endpoint, if those endpoints are running a non-Microsoft antivirus solution, Microsoft Defender Antivirus goes into passive mode. <p>If the non-Microsoft antivirus solution is uninstalled, Microsoft Defender Antivirus goes into active mode automatically.  |
 | Windows servers     | On Windows Server, you'll need to reinstall Microsoft Defender Antivirus, and set it to passive mode manually. Here's why: <p>On Windows servers, when a non-Microsoft antivirus/antimalware is installed, Microsoft Defender Antivirus cannot run alongside the non-Microsoft antivirus solution. In those cases, Microsoft Defender Antivirus is disabled or uninstalled manually. <p>To reinstall or enable Microsoft Defender Antivirus on Windows Server, perform the following tasks: <p>- [Set DisableAntiSpyware to false on Windows Server](#set-disableantispyware-to-false-on-windows-server) (only if necessary)<br/>- [Reinstall Microsoft Defender Antivirus on Windows Server](#reinstall-microsoft-defender-antivirus-on-windows-server)<br/>- [Set Microsoft Defender Antivirus to passive mode on Windows Server](#set-microsoft-defender-antivirus-to-passive-mode-on-windows-server)       |
 
 
@@ -119,8 +119,8 @@ The [DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-m
 > After onboarding to Defender for Endpoint, you might have to set Microsoft Defender Antivirus to passive mode on Windows Server. To validate that passive mode was set as expected, search for *event 5007* in the **Microsoft-Windows-Windows Defender Operational** log (located at `C:\Windows\System32\winevt\Logs`) and confirm either **ForcePassiveMode** or **PassiveMode** registry keys were set by to **0x1**.
 
 ### Are you using Windows Server 2012 R2 or Windows Server 2016?
-You can now run Microsoft Defender Antivirus in passive mode on Windows Server 2016. For more information, see [Options to install Microsoft Defender for Endpoint](configure-server-endpoints.md#options-to-install-microsoft-defender-for-endpoint).
 
+You can now run Microsoft Defender Antivirus in passive mode on Windows Server 2012 R2 and 2016 using the method above. For more information, see [Options to install Microsoft Defender for Endpoint](configure-server-endpoints.md#options-to-install-microsoft-defender-for-endpoint).
 
 ## Configure Defender for Endpoint
 
