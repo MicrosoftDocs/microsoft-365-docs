@@ -111,7 +111,7 @@ For Windows Server 2012 R2 and 2016 running the modern unified solution preview,
 **Prerequisites for Windows Server 2012 R2** 
 If you have fully updated your machines with the latest [monthly rollup](/troubleshoot/windows-client/deployment/standard-terminology-software-updates.md#monthly-rollup) package, there are **no** additional prerequisites.
 
-The installer package will check if the following components have been already installed via an update:
+The installer package will check if the following components have already been installed via an update:
 
 - [Update for customer experience and diagnostic telemetry](https://support.microsoft.com/help/3080149/update-for-customer-experience-and-diagnostic-telemetry)
 - [Update for Universal C Runtime in Windows](https://support.microsoft.com/topic/update-for-universal-c-runtime-in-windows-c0514201-7fe6-95a3-b0a5-287930f3560c)
