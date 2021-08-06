@@ -18,17 +18,17 @@ You can submit support tickets or feedback requests to Microsoft using the Micro
 ## Open a new support request
 
 1. Sign in to [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) and navigate to the **Tenant administration** menu.
-2. Look for the Microsoft Managed Desktop section, and then select **Service request**.
-3. On **Support requests**, select **+ New Support ticket**.
-4. Select the **Support request type** that matches the help you need. The following table outlines the options.
-5. Select the **Severity level**. For more information, see [Support request severity definitions](#sev).
+2. Look for the Microsoft Managed Desktop section, and then select **Service requests**.
+3. On the **Service requests** blade, select **+ New support request**.
+4. Select the **Request type** that matches the help you need. The following table outlines the options.
+5. Select the **Severity** level. For more information, see [Support request severity definitions](#sev).
 6. Provide as much information about the request as possible to help the team respond quickly. Depending on the type of request, you may be required to provide different details.
 7. Review all the information you provided for accuracy.
 8. When you're ready, select **Create**.
 
 Support request type|When to use
 ---|---
-Incident|You require the Microsoft Managed Desktop Operations team to investigate, for example, a widespread impact of a change or service outage.
+Incident|You require the Microsoft Managed Desktop Operations team to investigate a user issue caused by, for example, a widespread impact of a change or service outage.
 Request for information|You're planning a change in networking, proxy configuration, VPN systems, certificate expiration, or just need some information about the service. A response from the Microsoft Managed Desktop Operations team is advised when communicating a change within your organization.
 Change request|You require the Microsoft Managed Desktop Operations team to make a change, such as moving devices between update groups.
 
@@ -51,7 +51,7 @@ While email is the recommended approach to interact with our team, you may want 
 
 If you need to edit the details of a case, for example updating the primary case contact, you will need to follow these steps:
 
-1. From the **Service request** blade, in **Tenant Administration** menu of [Microsoft Endpoint Manager](https://endpoint.microsoft.com/), use the search bar or filters to find the case you're interested in editing.
+1. From the **Service requests** blade, in the **Tenant Administration** menu of [Microsoft Endpoint Manager](https://endpoint.microsoft.com/), use the search bar or filters to find the case you're interested in editing.
 2. Select the case to open up the request's details
 3. Scroll to the bottom of the request details and select **Edit**.
 4. Update the editable information, add attachments to the case, or add a note for the Service Engineering team, then select **Save**.
