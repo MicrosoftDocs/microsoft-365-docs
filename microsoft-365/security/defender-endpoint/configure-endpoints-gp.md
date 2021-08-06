@@ -240,16 +240,6 @@ With Group Policy there isn't an option to monitor deployment of policies on the
 > [!NOTE]
 > It can take several days for devices to start showing on the **Devices list**. This includes the time it takes for the policies to be distributed to the device, the time it takes before the user logs on, and the time it takes for the endpoint to start reporting.
 
-## Related topics
-
-- [Onboard Windows 10 devices using Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
-- [Onboard Windows 10 devices using Mobile Device Management tools](configure-endpoints-mdm.md)
-- [Onboard Windows 10 devices using a local script](configure-endpoints-script.md)
-- [Onboard non-persistent virtual desktop infrastructure (VDI) devices](configure-endpoints-vdi.md)
-- [Run a detection test on a newly onboarded Microsoft Defender for Endpoint devices](run-detection-test.md)
-- [Troubleshoot Microsoft Defender for Endpoint onboarding issues](troubleshoot-onboarding.md)
-
-
 ## Setup Defender AV policies:
 
 Create a new Group Policy or group these settings in with the other policies. This is dependent upon the customers environment and how they would like to roll out the service by targeting different OU’s (Organizational Units).
@@ -258,12 +248,14 @@ Create a new Group Policy or group these settings in with the other policies. Th
 2. Browse to **Computer Configuration** > **Policies** > **Administrative Templates** > **Windows Components** > **Windows Defender Antivirus** > **Real-time Protection**.
 :::image type="content" source="images/realtime-protect.png" alt-text="real time protection":::
 1. In the Quarantine folder, configure removal of items from Quarantine folder.
-:::image type="content" source="images/removal-items-quarantine1.png" alt-text="removal items quarantine folder":::
 
-:::image type="content" source="images/config-removal-items-quarantine2.png" alt-text="config-removal quarantine":::
+    :::image type="content" source="images/removal-items-quarantine1.png" alt-text="removal items quarantine folder":::
+
+    :::image type="content" source="images/config-removal-items-quarantine2.png" alt-text="config-removal quarantine":::
 
 1. In the Scan folder, configure the scan settings.
-:::image type="content" source="images/gpo-scans.png" alt-text="gpo scans":::
+
+    :::image type="content" source="images/gpo-scans.png" alt-text="gpo scans":::
 
 **Monitor all files in Real time protection**
 
@@ -274,13 +266,13 @@ Browse to **Computer Configuration** > **Policies** > **Administrative Templates
  
 #### Configure Windows Defender Smart Screen settings
 
-1. Browse to **Computer Configuration** > **Policies** > **Administrative Templates** > **Windows Components** > **Windows Defender SmartScreen** > **Explorer**
+1. Browse to **Computer Configuration** > **Policies** > **Administrative Templates** > **Windows Components** > **Windows Defender SmartScreen** > **Explorer**.
 
-:::image type="content" source="images/config-windows-def-smartscr-explorer.png" alt-text="config windows defender smart screen explorer":::
+    :::image type="content" source="images/config-windows-def-smartscr-explorer.png" alt-text="config windows defender smart screen explorer":::
  
 2. Browse to **Computer Configuration** > **Policies** > **Administrative Templates** > **Windows Components** > **Windows Defender SmartScreen** > **Microsoft Edge**.
 
-:::image type="content" source="images/config-windows-def-smartscr-explorer.png" alt-text="config windows defender smart screen Edge":::
+    :::image type="content" source="images/config-windows-def-smartscr-explorer.png" alt-text="config windows defender smart screen Edge":::
 
 #### Configure Potentially Unwanted Applications
 	 
@@ -317,3 +309,17 @@ When you configure cloud protection level policy to **Default Windows Defender A
 :::image type="content" source="images/config-extended-cloud-check.png" alt-text="config extended cloud check":::
 
 :::image type="content" source="images/cloud-protection-level.png" alt-text="config cloud protection level":::
+
+## Related topics
+
+- [Onboard Windows 10 devices using Microsoft Endpoint Configuration Manager]
+(configure-endpoints-sccm.md)
+- [Onboard Windows 10 devices using Mobile Device Management tools]
+(configure-endpoints-mdm.md)
+- [Onboard Windows 10 devices using a local script](configure-endpoints-script.md)
+- [Onboard non-persistent virtual desktop infrastructure (VDI) devices]
+(configure-endpoints-vdi.md)
+- [Run a detection test on a newly onboarded Microsoft Defender for Endpoint 
+devices](run-detection-test.md)
+- [Troubleshoot Microsoft Defender for Endpoint onboarding issues]
+(troubleshoot-onboarding.md)
