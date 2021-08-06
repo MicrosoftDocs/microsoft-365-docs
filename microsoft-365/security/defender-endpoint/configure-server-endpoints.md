@@ -163,7 +163,7 @@ You can also use the [installer script](/microsoft-365/security/defender-endpoin
 
 > [!NOTE]
 > Microsoft Defender Antivirus doesn't automatically go into passive mode. You can choose to set Microsoft Defender Antivirus to run in passive mode if you are running a non-Microsoft antivirus/antimalware solution. For command line installations, the optional `FORCEPASSIVEMODE=1` immediately sets the Microsoft Defender Antivirus component to Passive mode. <br><br>
->For more information, see [Need to set Microsoft Defender Antivirus to passive mode?](microsoft-defender-antivirus-on-windows-server.md#need-to-set-microsoft-defender-antivirus-to-passive-mode).
+>For more information, see [Need to set Microsoft Defender Antivirus to passive mode?](microsoft-defender-antivirus-on-windows-server.m#passive-mode-and-windows-server).
 
 
 ## Windows Server Semi-Annual Channel and Windows Server 2019
