@@ -116,4 +116,14 @@ With the tag structure in place, reviewers can apply tags to items in a review s
 
 ## Removing tags
 
-You can remove tags from items in a review set. However, you can't remove a single-choice tag that's been applied to a review set item. You can only change a single-choice tags to another single-choice tag within the same tag group.
+You can remove tags from items in a review set. However, you can't remove a single-choice tag that's been applied to a review set item. You can only change a single-choice tag to another single-choice tag within the same tag group.
+
+To remove a tag:
+
+1. Select the items the you want to remove the tag from.
+
+2. Click **Tag files** to display the tagging panel.
+
+3. Under **Assign tags**, unselect the tag, and then click **Apply tags**.
+
+You can also use the previous procedure to change the tag applied to selected items. After unselecting the current tag, you can select a different one.
