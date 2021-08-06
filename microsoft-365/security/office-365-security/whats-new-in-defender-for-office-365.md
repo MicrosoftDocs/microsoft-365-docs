@@ -40,16 +40,25 @@ Learn more by watching [this video](https://www.youtube.com/watch?v=Tdz6KfruDGo&
 ## July 2021
 
 - [Email analysis improvements in automated investigations](email-analysis-investigations.md)
+- [Advanced Delivery](configure-advanced-delivery.md): Introducing a new capability for configuring the delivery of third-party phishing simulations to users and unfiltered messages to security operation mailboxes.
 - [Safe Links for Microsoft Teams](safe-links.md#safe-links-settings-for-microsoft-teams)
+- New alert policies for the following scenarios: compromised mailboxes, Forms phishing, malicious mails delivered due to overrides and rounding out ZAP
+  - Suspicious email forwarding activity
+  - User restricted from sharing forms and collecting responses
+  - Form blocked due to potential phishing attempt
+  - Form flagged and confirmed as phishing
+  - [New alert policies for ZAP](../../compliance/new-defender-alert-policies.md)
+- Microsoft Defender for Office 365 alerts are now integrated into Microsoft 365 Defender - [Microsoft 365 Defender Unified Alerts Queue and Unified Alerts Queue](../defender/investigate-alerts.md)
+- [User Tags](user-tags.md) are now integrated into Microsoft Defender for Office 365 alerting experiences, including: the alerts queue and details in Office 365 Security & Compliance, and scoping custom alert policies to user tags to create targeted alert policies. 
+  - Tags are also available in the unified alerts queue in the Microsoft 365 Defender center (Microsoft Defender for Office 365 Plan 2)
 
 
 ## June 2021
 
 - New first contact safety tip setting within anti-phishing policies. This safety tip is shown when recipients first receive an email from a sender or do not often receive email from a sender. For more information on this setting and how to configure it, see the following articles:
-
-- [First contact safety tip](set-up-anti-phishing-policies.md#first-contact-safety-tip)
-- [Configure anti-phishing policies in EOP](configure-anti-phishing-policies-eop.md)
-- [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-mdo-anti-phishing-policies.md)
+  - [First contact safety tip](set-up-anti-phishing-policies.md#first-contact-safety-tip)
+  - [Configure anti-phishing policies in EOP](configure-anti-phishing-policies-eop.md)
+  - [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-mdo-anti-phishing-policies.md)
 
 ## April/May 2021
 
