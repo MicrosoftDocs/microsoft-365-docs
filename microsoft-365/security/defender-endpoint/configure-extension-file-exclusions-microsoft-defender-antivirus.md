@@ -104,7 +104,7 @@ See [How to create and deploy antimalware policies: Exclusion settings](/configm
 4. Open the **Path Exclusions** setting for editing, and add your exclusions.
 
     1. Set the option to **Enabled**.
-    2. Under the **Options** section, click **Show**.
+    2. Under the **Options** section, select **Show**.
     3. Specify each folder on its own line under the **Value name** column.
     4. If you are specifying a file, ensure that you enter a fully qualified path to the file, including the drive letter, folder path, file name, and extension. Enter **0** in the **Value** column.
 
@@ -342,7 +342,7 @@ For more information, see [Use PowerShell cmdlets to configure and run Microsoft
 
 You can validate that your exclusion lists are working by using PowerShell with either the `Invoke-WebRequest` cmdlet or the .NET WebClient class to download a test file.
 
-In the following PowerShell snippet, replace *test.txt* with a file that conforms to your exclusion rules. For example, if you have excluded the `.testing` extension, replace `test.txt` with `test.testing`. If you are testing a path, ensure you run the cmdlet within that path.
+In the following PowerShell snippet, replace `test.txt` with a file that conforms to your exclusion rules. For example, if you have excluded the `.testing` extension, replace `test.txt` with `test.testing`. If you are testing a path, ensure you run the cmdlet within that path.
 
 ```PowerShell
 Invoke-WebRequest "http://www.eicar.org/download/eicar.com.txt" -OutFile "test.txt"
@@ -350,7 +350,7 @@ Invoke-WebRequest "http://www.eicar.org/download/eicar.com.txt" -OutFile "test.t
 
 If Microsoft Defender Antivirus reports malware, then the rule is not working. If there is no report of malware and the downloaded file exists, then the exclusion is working. You can open the file to confirm the contents are the same as what is described on the [EICAR test file website](http://www.eicar.org/86-0-Intended-use.html).
 
-You can also use the following PowerShell code, which calls the .NET WebClient class to download the test file - as with the `Invoke-WebRequest` cmdlet; replace *c:\test.txt* with a file that conforms to the rule you are validating:
+You can also use the following PowerShell code, which calls the .NET WebClient class to download the test file - as with the `Invoke-WebRequest` cmdlet; replace `c:\test.txt` with a file that conforms to the rule you are validating:
 
 ```PowerShell
 $client = new-object System.Net.WebClient
