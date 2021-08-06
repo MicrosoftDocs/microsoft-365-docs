@@ -714,5 +714,8 @@
     - name: Service incident mitigation scenarios
       href: /compliance/assurance/assurance-microsoft-365-mitigations
 
+- name: Navigation guide
+  href: ../microsoft-365-docs-navigation-guide.md
+
 - name: Microsoft 365 for Business
   href: ../admin/index.yml

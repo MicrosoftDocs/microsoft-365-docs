@@ -326,3 +326,5 @@
   items: 
     - name: Deploy Microsoft 365
       href: ../enterprise/microsoft-365-overview.md
+- name: Navigation guide
+  href: ../microsoft-365-docs-navigation-guide.md
