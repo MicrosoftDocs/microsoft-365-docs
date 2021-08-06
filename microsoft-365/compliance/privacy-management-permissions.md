@@ -26,21 +26,14 @@ To give members of your organization permissions to use privacy management, assi
 
 ## Sign in
 
-Go to the [Microsoft 365 compliance center](https://compliance.microsoft.com/) and select **Permissions** in the left navigation.  
-
-Under the **Compliance center** dropdown, select **Roles**. The full list of role groups will appear.  
-
-Find the role group to which you want to add one or more users, and check the box to the left of the group name. See below for a list of privacy management roles.  
-
-On the flyout pane for that group, select **Edit** under the **Members** header.  
-
-Select **Choose members**. Another flyout window will appear.  
-
-Select **+ Add** to choose one or more users to add to the group.  
-
-Select the checkbox next to the names you want to add, then select the **Add** button at the bottom.  
-
-When you’re done assigning users, select **Done**, then **Save**, then **Close**.
+1. Go to the [Microsoft 365 compliance center](https://compliance.microsoft.com/) and select **Permissions** in the left navigation.  
+2. Under the **Compliance center** dropdown, select **Roles**. The full list of role groups will appear.
+3. Find the role group to which you want to add one or more users, and check the box to the left of the group name. See below for a list of privacy management roles.  
+4. On the flyout pane for that group, select **Edit** under the **Members** header.  
+5. Select **Choose members**. Another flyout window will appear.
+6. Select **+ Add** to choose one or more users to add to the group.  
+7. Select the checkbox next to the names you want to add, then select the **Add** button at the bottom.  
+8. When you’re done assigning users, select **Done**, then **Save**, then **Close**.
 
 ## Role groups and roles
 
