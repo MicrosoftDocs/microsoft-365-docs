@@ -58,9 +58,10 @@ You'll need to complete the following general steps to successfully onboard serv
 - Download the onboarding package
 - Follow the onboarding steps for the corresponding tool
 
+### New functionality in the modern unified solution for Windows Server 2012 R2 and 2016
+Previous implementation of onboarding Windows Server 2012 R2 and Windows Server 2016 required the use of Microsoft Monitoring Agent (MMA). 
 
-### Previous onboarding implementation
-Earlier implementation of onboarding Windows Server 2012 R2 and Windows Server 2016 required the use of Microsoft Monitoring Agent (MMA). The new unified solution package makes it easier to onboard servers. In addition, this unified solution package comes with the following major improvements:
+The new unified solution package makes it easier to onboard servers by removing dependencies and installation steps. In addition, this unified solution package comes with the following major improvements:
 
 - [Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-windows) with [Next-generation protection](/microsoft-365/security/defender-endpoint/next-generation-protection) for Windows Server 2012 R2
 - [Attack Surface Reduction (ASR) rules](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules)
@@ -72,6 +73,7 @@ Earlier implementation of onboarding Windows Server 2012 R2 and Windows Server 2
 - [EDR in Block Mode](/microsoft-365/security/defender-endpoint/edr-in-block-mode)
 - [Live Response](/microsoft-365/security/defender-endpoint/live-response)
 - [Automated Investigation and Response (AIR)](/microsoft-365/security/defender-endpoint/automated-investigations)
+- [Tamper Protection](/microsoft-365/security/defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection)
 
 If you have previously onboarded your servers using MMA, follow the guidance provided in [Server migration](server-migration.md) to migrate to the new solution.
 
