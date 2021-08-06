@@ -37,7 +37,7 @@ It is important to ensure that client components are up-to-date to deliver criti
 Capabilities are provided through several components: 
 
 - [Endpoint Detection & Response](overview-endpoint-detection-response.md) 
-- [Next-generation protection](microsoft-defender-antivirus-windows.md#microsoft-defender-antivirus-your-next-generation-protection) with [cloud-delivered protection](cloud-protection-microsoft-defender-antivirus.md) 
+- [Next-generation protection](microsoft-defender-antivirus-windows.md) with [cloud-delivered protection](cloud-protection-microsoft-defender-antivirus.md) 
 - [Attack Surface Reduction](overview-attack-surface-reduction.md)
 
 Updates are released monthly using a gradual release process. This process helps to enable early failure detection to catch impact as it occurs and address it quickly before a larger rollout. 
