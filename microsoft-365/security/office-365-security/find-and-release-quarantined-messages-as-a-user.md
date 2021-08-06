@@ -1,22 +1,22 @@
 ---
 title: Find and release quarantined messages as a user
-f1.keywords: 
+f1.keywords:
   - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date: 
+ms.date:
 audience: Consumer/IW
 ms.topic: how-to
 
 localization_priority: Priority
-search.appverid: 
+search.appverid:
   - MET150
   - MEW150
 ms.assetid: efff08ec-68ff-4099-89b7-266e3c4817be
-ms.collection: 
+ms.collection:
   - M365-security-compliance
-ms.custom: 
+ms.custom:
   - seo-marvel-apr2020
 description: Users can learn how to view and manage quarantined messages in Exchange Online Protection (EOP) that should have been delivered to them.
 ms.technology: mdo
@@ -101,10 +101,8 @@ You view and manage your quarantined messages in the Microsoft 365 Defender port
      - **Anti-malware policy**
      - **Safe Attachments policy** (Defender for Office 365)
      - **Anti-phish policy**
-     - **Hosted content filter policy** (anti-spam policy)
-     - **Transport rule**
-
-     <sup>\*</sup>
+     - **Anti-spam policy**
+     - **Transport rule** (mail flow rule)
 
    To clear the filter, click **Clear**. To hide the filter flyout, click **Filter** again.
 
@@ -112,9 +110,9 @@ You view and manage your quarantined messages in the Microsoft 365 Defender port
 
    - **Message ID**: The globally unique identifier of the message. If you select a message in the list, the **Message ID** value appears in the **Details** flyout pane that appears. Admins can use [message trace](message-trace-scc.md) to find messages and their corresponding Message ID values.
    - **Sender email address**: A single sender's email address.
-   - **Policy name**: Use the entire policy name of the message. The search is not case-sensitive.
    - **Recipient email address**: A single recipient's email address.
    - **Subject**: Use the entire subject of the message. The search is not case-sensitive.
+   - **Policy name**: Use the entire policy name. The search is not case-sensitive.
 
    After you've entered the search criteria, click ![Refresh button](../../media/scc-quarantine-refresh.png) **Refresh** to filter the results.
 
@@ -123,9 +121,7 @@ After you find a specific quarantined message, select the message to view detail
 ### Export message results
 
 1. Select the messages you're interested in, and click **Export results**.
-
 2. Click **Yes** in the confirmation message that warns you to keep the browser window open.
-
 3. When your export is ready, you can name and choose the download location for the .csv file.
 
 ### View quarantined message details
@@ -137,6 +133,9 @@ When you select an email message in the list, the following message details appe
 - **Received**: The date/time when the message was received.
 - **Subject**
 - **Quarantine reason**: Shows if a message has been identified as **Spam**, **Bulk** or **Phish**.
+- **Policy type**: The type of policy. For example, **Anti-spam policy**.
+- **Policy name**
+- **Recipient count**
 - **Recipients**: If the message contains multiple recipients, you need to click **Preview message** or **View message header** to see the complete list of recipients.
 - **Expires**: The date/time when the message will be automatically and permanently deleted from quarantine.
 - **Released to**: All email addresses (if any) to which the message has been released.
@@ -150,9 +149,9 @@ After you select a message, you have options for what to do with the messages in
 
   When you're finished, click **Release messages**.
 
-- **View message header**: Choose this link to see the message header text. To analyze the header fields and values in depth, copy the message header text to your clipboard, and then choose **Microsoft Message Header Analyzer** to go to the Remote Connectivity Analyzer (right-click and choose **Open in a new tab** if you don't want to leave Microsoft 365 to complete this task). Paste the message header onto the page in the Message Header Analyzer section, and choose **Analyze headers**:
+- **View message header**: Choose this link to see the message header text. To analyze the header fields and values in depth, click **Copy message header**, and then click **Microsoft Message Header Analyzer** to go to the Message Header Analyzer. Paste the message header into the **Insert the message header you would like to analyze** section (CTRL+V or right-click and choose **Paste**), and then click **Analyze headers**.
 
-- **Preview message**: In the flyout pane that appears, choose one of the following options:
+- **Preview message**: In the flyout pane that appears, choose one of the following tabs:
   - **Source view**: Shows the HTML version of the message body with all links disabled.
   - **Text view**: Shows the message body in plain text.
 
@@ -160,17 +159,15 @@ After you select a message, you have options for what to do with the messages in
 
 - **Block Sender**: Add the sender to the Blocked Senders list on your mailbox. For more information, see [Block a mail sender](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4).
 
-Add the sender to the Blocked Senders list on your mailbox. For more information, see [Block a mail sender](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4).
-
 When you're finished, click **Close**.
 
-If you don't release or remove the message, it will be deleted after the default quarantine retention period expires.
+If you don't release or remove the message, it will be deleted after the default quarantine retention period expires (as shown in the **Expires** column).
 
 #### Take action on multiple quarantined email messages
 
 When you select multiple quarantined messages in the list (up to 100), the **Bulk actions** flyout pane appears where you can take the following actions:
 
-- **Release messages**: The options are the same as when you release a single message, except you can't select **Release messages to specific recipients**; you can only select **Release message to all recipients** or **Release messages to other people**.
+- **Release messages**: The options are the same as when you release a single message.
 - **Delete messages**:  After you click **Yes** in the warning that appears, the message are immediately deleted without being sent to the original recipients.
 
 When you're finished, click **Close**.
