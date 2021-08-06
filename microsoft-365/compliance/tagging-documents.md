@@ -52,15 +52,21 @@ You can further organize tags by nesting them within a section. For example, if 
 
 ![Nested tags within a tag section](../media/NestingTags.png)
 
+## Creating and applying tags
+
+Tagging documents is a two-step process. The first step is to create the tags that are then applied to documents in a review set. After you create tags, you and other reviewers can apply them to documents. As previously explained, an Advanced eDiscovery case can only have one set of tags that reviewers can use to tag documents.
+
 ## Create tags
 
 Before applying tags to documents in the review set, you need to create a tag structure.
 
-1. Open a review set and navigate to the command bar and select **Tag by query**.
+1. Open a review set, go to the command bar, and select **Tag files**.
 
-2. In the tagging panel, select **Manage tag options**
+2. On the **Tag files** flyout page, click **Create/edit tags**.
 
-3. Select **Add tag section**.
+   ![Click Create/edit tags on the flyout page](../media/CreateAeDTags1.png)
+
+3. On the **Tags** page, select **Add section**.
 
 4. Type a tag group title and an optional description, and then click**Save**.
 
@@ -68,13 +74,30 @@ Before applying tags to documents in the review set, you need to create a tag st
 
 6. Type a name and description for the checkbox or option button.
 
-7. Repeat this process to create new tag sections, tag options, and checkboxes.
+7. Repeat this process to create new tag sections, tag options, and checkboxes. For example, the following screenshot shows a tag group named **Review**, which consists of **Responsive** and **Not-responsive** checkboxes.
 
    ![Configure tag structure](../media/ManageTagOptions3.png)
 
-## Applying tags
+## Apply tags
 
-With the tag structure in place, reviewers can apply tags to documents in a review set. There are two different ways to apply tags:
+With the tag structure in place, reviewers can apply tags to documents in a review set. 
+
+1. In the command bar in the review set, select **Tag files** to display the **Tag files** flyout page.
+
+   ![Click Tag files in the command bar to open the flyout page](../media/TagFilesFlyoutPage.png)
+
+2. On the **Tag files** flyout page, you can set the following options to configure how to tag the documents that are displayed on the review set. The filters or filter queries currently applied to the review set determine which documents are displayed and therefore the documents that you can apply tags to. For more information, see [Query and filter content in a review set](review-set-search.md).
+
+   - 
+
+   - 
+
+
+
+
+
+There are two different ways to apply tags:
+
 
 - Tag files
 
@@ -111,7 +134,7 @@ Tagging by query lets you apply tags to all items displayed by a filter query th
 
 ## Tag filter
 
-Use the tag filter in review set to quickly find or exclude items from the query results based on how an item is tagged. 
+Use the tag filter in review set to quickly find or exclude items from the query results based on how an item is tagged.
 
 1. Select **Filters** to expand the filter panel.
 
@@ -131,3 +154,8 @@ Use the tag filter in review set to quickly find or exclude items from the query
 
 > [!NOTE]
 > Be sure to refresh the page to ensure that the tag filter displays the latest changes to the tag structure.
+
+
+
+
+Before you open the **Tag files** flyout page, you can select one of more documents or leave all documents unselected. 
