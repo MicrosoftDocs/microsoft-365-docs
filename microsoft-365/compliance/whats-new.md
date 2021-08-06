@@ -49,7 +49,7 @@ Whether it be adding new solutions to the [Microsoft 365 compliance center](micr
 
 ### Compliance offerings
 
-- [Compliance offerings](regulatory/offering-home.md) changes focusing on applicable service coverage and updates to align more closely with the [Azure offerings](/azure/compliance) for applicable regulations.
+- [Compliance offerings](/compliance/regulatory/offering-home) changes focusing on applicable service coverage and updates to align more closely with the [Azure offerings](/azure/compliance) for applicable regulations.
 
 ### Compliance & service assurance
 
