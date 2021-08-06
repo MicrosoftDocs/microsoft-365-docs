@@ -3,19 +3,19 @@ title: Manage quarantined messages and files as an admin
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date: 
+ms.date:
 audience: Admin
 ms.topic: how-to
 
 localization_priority: Normal
-search.appverid: 
+search.appverid:
   - MOE150
   - MED150
   - MET150
 ms.assetid: 065cc2cf-2f3a-47fd-a434-2a20b8f51d0c
-ms.collection: 
+ms.collection:
   - M365-security-compliance
-ms.custom: 
+ms.custom:
   - seo-marvel-apr2020
 description: Admins can learn how to view and manage quarantined messages for all users in Exchange Online Protection (EOP). Admins in organizations with Microsoft Defender for Office 365 can also manage quarantined files in SharePoint Online, OneDrive for Business, and Microsoft Teams.
 ms.technology: mdo
@@ -74,9 +74,9 @@ You view and manage quarantined messages in the Microsoft 365 Defender portal or
 
 3. You can sort the results by clicking on an available column header. Click **Modify columns** to show a maximum of seven columns. The default values are marked with an asterisk (<sup>\*</sup>):
 
-   - **Subject**<sup>\*</sup>
-   - **Time Received**<sup>\*</sup>
+   - **Received**<sup>\*</sup>
    - **Sender**<sup>\*</sup>
+   - **Subject**<sup>\*</sup>
    - **Quarantine reason**<sup>\*</sup>
    - **Released?**<sup>\*</sup>
    - **Policy type**<sup>\*</sup>
@@ -84,8 +84,8 @@ You view and manage quarantined messages in the Microsoft 365 Defender portal or
    - **Recipient**
    - **Message ID**
    - **Policy name**
-   - **Message size**
-   - **Mail direction**
+   - **Size**
+   - **Direction**
 
    When you're finished, click **Apply**.
 
@@ -97,7 +97,7 @@ You view and manage quarantined messages in the Microsoft 365 Defender portal or
      - **Custom**: Enter a **Start date** and **End date**.
    - **Received time**: Enter a **Start date** and **End date**.
    - **Quarantine reason**:
-     - **Policy**: The message matched the conditions of a mail flow rule (also known as a transport rule).
+     - **Transport rule** (mail flow rule)
      - **Bulk**
      - **Phish**: The spam filter verdict was **Phishing** or anti-phishing protection quarantined the message ([spoof settings](set-up-anti-phishing-policies.md#spoof-settings) or [impersonation protection](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)).
      - **Malware**
@@ -107,8 +107,8 @@ You view and manage quarantined messages in the Microsoft 365 Defender portal or
      - **Anti-malware policy**
      - **Safe Attachments policy**
      - **Anti-phish policy**
-     - **Hosted content filter policy** (anti-spam policy)
-     - **Transport rule**
+     - **Anti-spam policy**
+     - **Transport rule** (mail flow rule)
    - **Email recipient**: All users or only messages sent to you. End users can only manage quarantined messages sent to them.
 
    To clear the filter, click **Clear**. To hide the filter flyout, click **Filter** again.
@@ -119,40 +119,61 @@ You view and manage quarantined messages in the Microsoft 365 Defender portal or
      For example, you used [message trace](message-trace-scc.md) to look for a message that was sent to a user in your organization, and you determine that the message was quarantined instead of delivered. Be sure to include the full message ID value, which might include angle brackets (\<\>). For example: `<79239079-d95a-483a-aacf-e954f592a0f6@XYZPR00BM0200.contoso.com>`.
 
    - **Sender email address**: A single sender's email address.
-   - **Policy name**: Use the entire policy name of the message. The search is not case-sensitive.
    - **Recipient email address**: A single recipient's email address.
    - **Subject**: Use the entire subject of the message. The search is not case-sensitive.
-   - **Policy name**: The name of the policy that was responsible for quarantining the message.
+   - **Policy name**: Use the entire policy name. The search is not case-sensitive.
 
-   After you've entered the search criteria, click !**Refresh** to filter the results.
+   After you've entered the search criteria, click **Refresh** to filter the results.
 
 After you find a specific quarantined message, select the message to view details about it, and to take action on it (for example, view, release, download, or delete the message).
 
 #### View quarantined message details
 
-When you select an email message in the list, the following message details are available in the details flyout that appears:
+When you select an email message in the list, the following message details are available in the details flyout that appears.
 
-- **Message ID**: The globally unique identifier for the message.
+![The details flyout of a quarantined message](../../media/quarantine-details-flyout.png)
+
+- **Message ID**: The globally unique identifier for the message. Available in the **Message-ID** header field in the message header.
 - **Sender address**
 - **Received**: The date/time when the message was received.
 - **Subject**
 - **Quarantine reason**: Shows if a message has been identified as **Spam**, **Bulk**, **Phish**, matched a mail flow rule (**Transport rule**), or was identified as containing **Malware**.
+- **Policy type**
 - **Recipient count**
 - **Recipients**: If the message contains multiple recipients, you need to click **Preview message** or **View message header** to see the complete list of recipients.
+- **Recipient tag**: For more information, see [User tags in Microsoft Defender for Office 365](user-tags.md).
 - **Expires**: The date/time when the message will be automatically and permanently deleted from quarantine.
 - **Released to**: All email addresses (if any) to which the message has been released.
 - **Not yet released to**: All email addresses (if any) to which the message has not yet been released.
 
+To take action on the message, see the next section.
+
+> [!NOTE]
+> To remain in the details flyout, but change the quarantined message that you're looking at, use the up and down arrows at the top of the flyout.
+>
+> ![The up and down arrows in the details flyout of a quarantined message](../../media/quarantine-details-flyout-up-down-arrows.png)
+
 ### Take action on quarantined email
 
-After you select a message, you have several options for what to do with the messages in the details flyout:
+After you select a message, you have several available actions for the quarantined message in the details flyout:
 
-- **Release message**: In the flyout that appears, choose the following options:
-  - **Report messages to Microsoft for analysis**: This is selected by default, and reports the erroneously quarantined message to Microsoft as a false positive. If the message was quarantined as spam, bulk, phishing, or containing malware, the message is also reported to the Microsoft Spam Analysis Team. Depending on their analysis, the service-wide spam filter rules might be adjusted to allow the message through.
+![Available actions in the details flyout of a quarantined message](../../media/quarantine-details-flyout-actions.png)
+
+- ![Release email icon](../../media/m365-cc-sc-check-mark-icon.png) **Release email**: In the flyout pane that appears, configure the following options:
+  - **Add sender to your organization's allow list**: Select this option to prevent messages from the sender from being quarantined.
   - Choose one of the following options:
     - **Release to all recipients**
-    - **Release to specific recipients**
-  - **Report messages to Microsoft to improve detection**: This is selected by default, and reports the erroneously quarantined message to Microsoft as a false positive. If the message was quarantined as spam, bulk, phishing, or containing malware, the message is also reported to the Microsoft Spam Analysis Team. Depending on their analysis, the service-wide spam filter rules might be adjusted to allow the message through.
+    - **Release to specific recipients**: Select the recipients in the **Recipients** box that appears
+  - **Send a copy of this message to other recipients**: Select this option an enter the recipient email addresses in the **Recipients** box that appears.
+
+    > [!NOTE]
+    > To send a copy of the message to other recipients, you must also release the message at least one of the original recipients (select **Release to all recipients** or **Release to specific recipients**).
+
+  - **Submit the message to Microsoft to improve detection (false positive)**: This option is selected by default, and reports the erroneously quarantined message to Microsoft as a false positive. If the message was quarantined as spam, bulk, phishing, or containing malware, the message is also reported to the Microsoft Spam Analysis Team. Depending on the results of their analysis, the service-wide spam filter rules might be adjusted to allow the message through.
+
+  - **Allow messages like this**: This option is turned off by default (![Toggle off](../../media/scc-toggle-off.png)). Turn it on (![Toggle on](../../media/scc-toggle-on.png)) to temporarily prevent messages with similar URLs, attachments, and other properties from being quarantined. When you turn this option on, the following options are available:
+    - **Remove after**: Select how long you want to allow messages like this. Select **1 day** to **30 days**. The default is 30.
+    - **Optional note**: Enter a useful description for the allow.
 
   When you're finished, click **Release message**.
 
@@ -161,22 +182,57 @@ After you select a message, you have several options for what to do with the mes
   - You can't release a message to the same recipient more than once.
   - Only recipients who haven't received the message will appear in the list of potential recipients.
 
-- **View message header**: Choose this link to see the message header text. To analyze the header fields and values in depth, copy the message header text to your clipboard, and then choose **Microsoft Message Header Analyzer** to go to the Remote Connectivity Analyzer (right-click and choose **Open in a new tab** if you don't want to leave Microsoft 365 to complete this task). Paste the message header onto the page in the Message Header Analyzer section, and choose **Analyze headers**:
-- **Preview message**: In the flyout that appears, choose one of the following options:
-  - **Source view**: Shows the HTML version of the message body with all links disabled.
-  - **Text view**: Shows the message body in plain text.
-- **Remove from quarantine**: After you click **Yes** in the warning that appears, the message is immediately deleted without being sent to the original recipients.
-- **Download message**: In the flyout that appears, select **I understand the risks from downloading this message** to save a local copy of the message in .eml format.
-- **Block Sender**: Add the sender to the Blocked Senders list on your mailbox. For more information, see [Block a mail sender](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4).
-- **Submit message**: In the flyout that appears, choose the following options:
-  - **Object type**: **Email** (default), **URL**, or **Attachment**.
-  - **Submission format**: **Network Message ID** (default, with the corresponding value in the **Network Message ID** box) or **File** (browse to a local .eml or .msg file). Note that if you select **File** and then select **Network Message ID**, the initial value is gone.
-  - **Recipients**: Type at lease one original recipient of the message, or click **Select All** to identify all recipients. You can also click **Select All** and then selectively remove individual recipients.
-  - **Reason for submission**: **Should not have been blocked** (default) or **Should have been blocked**.
+- ![View message headers icon](../../media/m365-cc-sc-eye-icon.png) **View message headers**: Choose this link to see the message header text. The **Message header** flyout appears with the following links:
+- **Copy message header**: Click this link to copy the message header (all header fields) to your clipboard.
+- **Microsoft Message Header Analyzer**: To analyze the header fields and values in depth, click this link to go to the Message Header Analyzer. Paste the message header into the **Insert the message header you would like to analyze** section (CTRL+V or right-click and choose **Paste**), and then click **Analyze headers**.
+
+The following actions are available after you click ![More actions icon](../../media/m365-cc-sc-more-actions-icon.png) **More actions**:
+
+- ![Preview message icon](../../media/m365-cc-sc-eye-icon.png) **Preview message**: In the flyout that appears, choose one of the following tabs:
+  - **Source**: Shows the HTML version of the message body with all links disabled.
+  - **Plain text**: Shows the message body in plain text.
+
+- ![Remove from quarantine icon](../../media/m365-cc-sc-delete-icon.png) **Remove from quarantine**: After you click **Yes** in the warning that appears, the message is immediately deleted without being sent to the original recipients.
+
+- ![Download email icon](../../media/m365-cc-sc-download-icon.png) **Download email**: In the flyout that appears, select **I understand the risks from downloading this message**, and then click **Download** to save a local copy of the message in .eml format.
+
+- ![Block sender icon](../../media/m365-cc-sc-block-sender-icon.png) **Block sender**: Add the sender to the Blocked Senders list in **your** mailbox. For more information, see [Block a mail sender](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4).
+
+- ![Submit only icon](../../media/m365-cc-sc-create-icon.png) **Submit only**: Reports the message to Microsoft for analysis. In the flyout that appears, choose the following options:
+  - **Select the submission type**: **Email** (default), **URL**, or **File**.
+  - **Add the network message ID or upload the email file**: Select one of the following options:
+    - **Add the email network message ID** (default, with the corresponding value in the box)
+    - **Upload the email file (.msg or eml)**: Click **Browse files** to find and select the .msg or .eml message file to submit.
+  - **Choose a recipient who had an issue**: Select one (preferred) or more original recipients of the message to analyze the policies that were applied to them.
+  - **Select a reason for submitting to Microsoft**: Choose one of the following options:
+    - **Should not have been blocked (false positive)** (default): The following options are available:
+      - **Allow messages like this**: This option is turned off by default (![Toggle off](../../media/scc-toggle-off.png)). Turn it on (![Toggle on](../../media/scc-toggle-on.png)) to temporarily prevent messages with similar URLs, attachments, and other properties from being quarantined. When you turn this option on, the following options are available:
+        - **Remove after**: Select how long you want to allow messages like this. Select **1 day** to **30 days**. The default is 30.
+        - **Optional note**: Enter a useful description for the allow.
+    - **Should have been blocked (false negative)**.
 
   When you're finished, click **Submit**.
 
-If you don't release or remove the message, it will be deleted after the default quarantine retention period expires.
+When you're finished, click **Close**.
+
+If you don't release or remove the message, it will be deleted after the default quarantine retention period expires (as shown in the **Expires** column).
+
+> [!NOTE]
+> On a mobile device, the description text isn't available on the action icons.
+>
+> ![Submit only icon](../../media/quarantine-details-flyout-mobile-actions.png)
+>
+> The icons in order and their corresponding descriptions are summarized in the following table:
+>
+> |Icon|Description|
+> |:---:|---|
+> |![Release email icon](../../media/m365-cc-sc-check-mark-icon.png)|**Release email**|
+> |![View message headers icon](../../media/m365-cc-sc-eye-icon.png)|**View message headers**|
+> |![Preview message icon](../../media/m365-cc-sc-eye-icon.png)|**Preview message**|
+> |![Remove from quarantine icon](../../media/m365-cc-sc-delete-icon.png)|**Remove from quarantine**|
+> |![Download email icon](../../media/m365-cc-sc-download-icon.png)|**Download email**|
+> |![Block sender icon](../../media/m365-cc-sc-block-sender-icon.png)|**Block sender**|
+> |![Submit only icon](../../media/m365-cc-sc-create-icon.png)|**Submit only**|
 
 #### Take action on multiple quarantined email messages
 
