@@ -12,7 +12,7 @@ ms.author: deniseb
 ms.reviewer: marcmcc
 manager: dansimp
 ms.custom: nextgen
-ms.date: 06/17/2021
+ms.date: 07/29/2021
 ms.technology: mde
 ms.topic: article
 ---
@@ -185,7 +185,7 @@ You might choose to disable block at first sight if you want to retain the prere
 
 ## Not an enterprise admin or IT Pro?
 
-If you are not an enterprise admin or IT Pro, but you have questions about block at first sight, this section is for you. Block at first sight is a threat protection feature that detects and blocks malware within seconds. Although there isn't a specific setting called "Block at first sight," the feature is enabled when certain settings are configured on your device.
+If you are not an enterprise admin or an IT Pro, but you have questions about block at first sight, this section is for you. Block at first sight is a threat protection feature that detects and blocks malware within seconds. Although there isn't a specific setting called "Block at first sight," the feature is enabled when certain settings are configured on your device.
 
 ### How to manage block at first sight on or off on your own device
 
