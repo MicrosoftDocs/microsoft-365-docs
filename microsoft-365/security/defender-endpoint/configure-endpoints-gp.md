@@ -43,9 +43,9 @@ ms.technology: mde
 
 Check out the [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)  or  [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) to see the various paths in deploying Defender for Endpoint.
 
-1. Open the GP configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from [Microsoft 365 Defender portal](https://security.microsoft.com/):
-
-1. Open the GP configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from [Microsoft 365 Defender](https://security.microsoft.com/):
+1. Open the GP configuration package .zip file (*WindowsDefenderATPOnboardingPackage.
+zip*) that you downloaded from the service onboarding wizard. You can also get the 
+package from [Microsoft 365 Defender portal](https://security.microsoft.com/):
  
     1. In the navigation pane, select **Settings** > **Endpoints** > **Device management**  > **Onboarding**.
 
@@ -56,6 +56,8 @@ Check out the [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/publ
     1. Click **Download package** and save the .zip file.
 
 2. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the device. You should have a folder called *OptionalParamsPolicy* and the file *WindowsDefenderATPOnboardingScript.cmd*.
+
+3. To create a new GPO, open the [Group Policy Management Console](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) (GPMC), right-click **Group Policy Objects** you want to configure and click **New**. Enter the name of the new GPO in the dialogue box that is displayed and click **OK**.
 
 3. Open the [Group Policy Management Console](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) (GPMC), right-click the Group Policy Object (GPO) you want to configure and click **Edit**.
 
@@ -70,6 +72,8 @@ Check out the [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/publ
 8. Go to the **Actions** tab and click **New...** Ensure that **Start a program** is selected in the **Action** field. Enter the NetBIOS path of the shared  *WindowsDefenderATPOnboardingScript.cmd* file.
 
 9. Click **OK** and close any open GPMC windows.
+
+1. To link the GPO to an Organization Unit (OU), right-click and select **Link an existing GPO**. In the dialogue box that is displayed, select the Group Policy Object that you wish to link. Click **OK**.
 
 > [!TIP]
 > After onboarding the device, you can choose to run a detection test to verify that the device is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Defender for Endpoint device](run-detection-test.md).
@@ -240,3 +244,39 @@ With Group Policy there isn't an option to monitor deployment of policies on the
 - [Onboard non-persistent virtual desktop infrastructure (VDI) devices](configure-endpoints-vdi.md)
 - [Run a detection test on a newly onboarded Microsoft Defender for Endpoint devices](run-detection-test.md)
 - [Troubleshoot Microsoft Defender for Endpoint onboarding issues](troubleshoot-onboarding.md)
+
+
+## Setup Defender AV policies:
+
+Create a new Group Policy or group these settings in with the other policies. This is dependent upon the customers environment and how they would like to roll out the service by targeting different OU’s (Organizational Units).
+
+1. After you choose the GP, or create a new one, edit the GP.
+2. Browse to **Computer Configuration** > **Policies** > **Administrative Templates** > **Windows Components** > **Windows Defender Antivirus** > **Real-time Protection**.
+3. In the Quarantine folder, configure removal of items from Quarantine folder.
+4. In the Scan folder, configure the scan settings.
+
+Monitor all files in Real time protection
+
+Browse to **Computer Configuration** > **Policies** > **Administrative Templates** > **Windows Components** > **Windows Defender Antivirus** > **Real-time Protection**.
+ 
+#### Configure Windows Defender Smart Screen settings
+
+1. Browse to **Computer Configuration** > **Policies** > **Administrative Templates** > **Windows Components** > **Windows Defender SmartScreen** > **Explorer**
+ 
+2. Browse to **Computer Configuration** > **Policies** > **Administrative Templates** > **Windows Components** > **Windows Defender SmartScreen** > **Microsoft Edge**.
+
+#### Configure Potentially Unwanted Applications
+	 
+Browse to **Computer Configuration** > **Policies** > **Administrative Templates** > **Windows Components** > **Windows Defender Antivirus**.
+
+#### Configure Cloud Deliver Protection and send samples automatically
+
+Browse to **Computer Configuration** > **Policies** > **Administrative Templates** > **Windows Components** > **Windows Defender Antivirus** > **MAPS**.
+
+#### Check for signature update.
+Browse to **Computer Configuration** > **Policies** > **Administrative Templates** > **Windows Components** > **Windows Defender Antivirus** > **Signature Updates**
+
+#### Configure cloud deliver timeout and protection level
+
+Browse to **Computer Configuration** > **Policies** > **Administrative Templates** > **Windows Components** > **Windows Defender Antivirus** > **MpEngine**.
+When you configure cloud protection level policy to **Default Windows Defender Antivirus blocking policy** this will disable the policy. This is what is required to set the protection level to the windows default.
