@@ -88,9 +88,9 @@ In addition, a notification is shown on the iOS device. Tapping on the notificat
 > [!div class="mx-imgBorder"]
 > ![Image of site reported as unsafe notification](images/ios-phish-alert.png)
 
-## Device not seen on the MDE console after onboarding.
+## Device not seen on the Defender for Endpoint console after onboarding.
 
-After onboarding, it takes few hours for device to show up in the Device Inventory in the MDE security console. Also, ensure that device is registered correctly with AAD and device has internet connectivity. For successful onboarding, device has to be registered via Microsoft Authenticator or Intune Company Portal and user needs to sign-in using the same account with which device is registered with Azure AD.
+After onboarding, it takes few hours for device to show up in the Device inventory in the Defender for Endpoint security console. Also, ensure that device is registered correctly with Azure Active Directory and device has internet connectivity. For successful onboarding, the device has to be registered via Microsoft Authenticator or Intune Company Portal and the user needs to sign-in using the same account with which device is registered with Azure AD.
 
 ## Data and Privacy
 
