@@ -93,7 +93,7 @@ Use the following table to help you identify the differences in behavior for the
 |Override IRM encryption applied without a label|Yes if the user has the minimum usage right of Export |Yes (email only) |
 |Label incoming email|No |Yes|
 
-\* Auto-labeling isn't currently available in all regions. If your tenant can't support this functionality, the Auto-labeling tab isn't visible in the admin labeling center.
+\* Auto-labeling isn't currently available in all regions. If your tenant can't support this functionality, the **Auto-labeling** tab isn't visible in the Compliance center.
 
 ## How multiple conditions are evaluated when they apply to more than one label
 
