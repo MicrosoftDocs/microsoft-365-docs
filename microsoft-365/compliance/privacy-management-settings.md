@@ -18,7 +18,7 @@ search.appverid:
 description: "Learn about the global settings options for privacy management."
 ---
 
-Manage privacy management settings (preview)
+# Manage privacy management settings (preview)
 
 In this article: learn about **settings** options for privacy management.
 
