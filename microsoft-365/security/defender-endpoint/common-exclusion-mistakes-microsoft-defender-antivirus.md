@@ -15,16 +15,12 @@ ms.reviewer:
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.date: 05/17/2021
+ms.date: 06/15/2021
 ---
 
 # Common mistakes to avoid when defining exclusions
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
-You can define an exclusion list for items that you don't want Microsoft Defender Antivirus to scan. Such excluded items could contain threats that make your device vulnerable. 
-
-This article describes some common mistake that you should avoid when defining exclusions. 
+You can define an exclusion list for items that you don't want Microsoft Defender Antivirus to scan. Such excluded items could contain threats that make your device vulnerable. This article describes some common mistake that you should avoid when defining exclusions. 
 
 Before defining your exclusion lists, see [Recommendations for defining exclusions](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions).
 
@@ -227,7 +223,9 @@ In general, do not define exclusions for the following processes:
 
 `dbgsvc.exe`  
 
-`dnx.exe`  
+`dnx.exe`
+
+`dotnet.exe`
 
 `fsi.exe`  
 
@@ -268,9 +266,3 @@ Microsoft Defender Antivirus Service runs in system context using the LocalSyste
 
 See [Use wildcards in the file name and folder path or extension exclusion lists](configure-extension-file-exclusions-microsoft-defender-antivirus.md#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists) for information on how to use wildcards in exclusion lists.
 
-## Related articles
-
-- [Configure and validate exclusions in Microsoft Defender Antivirus scans](configure-exclusions-microsoft-defender-antivirus.md)
-- [Configure and validate exclusions based on file extension and folder location](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
-- [Configure and validate exclusions for files opened by processes](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
-- [Configure Microsoft Defender Antivirus exclusions on Windows Server](configure-server-exclusions-microsoft-defender-antivirus.md)

@@ -16,6 +16,7 @@ ms.collection:
 ms.custom: 
 - AdminSurgePortfolio
 - okr_smb
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
@@ -58,7 +59,7 @@ Follow the steps below if you want to set user passwords to expire after a speci
   
 ## Important things you need to know about the password expiration feature
   
-- People who only use the Outlook app won't be forced to reset their Microsoft 365 password until it expires in the cache. This can be several days after the actual expiration date. There's no workaround for this at the admin level.
+People who only use the Outlook app won't be forced to reset their Microsoft 365 password until it expires in the cache. This can be several days after the actual expiration date. There's no workaround for this at the admin level.
 
 ## Prevent last password from being used again
 
@@ -80,10 +81,10 @@ You can set more password policies and restrictions in Azure active directory. C
 
 The Set-MsolPasswordPolicy cmdlet updates the password policy of a specified domain or tenant. Two settings are required; the first is to indicate the length of time that a password remains valid before it must be changed and the second is to indicate the number of days before the password expiration date that will trigger when users will receive their first notification that their password will soon expire.
 
-To learn how to update password policy for a specific domain or tenant, see [Set-MsolPasswordPolicy](/powershell/module/msonline/set-msolpasswordpolicy?view=azureadps-1.0).
+To learn how to update password policy for a specific domain or tenant, see [Set-MsolPasswordPolicy](/powershell/module/msonline/set-msolpasswordpolicy).
 
 ## Related content
 
-[Let users reset their own passwords](../add-users/let-users-reset-passwords.md) (article)
+[Let users reset their own passwords](../add-users/let-users-reset-passwords.md) (article)\
 
 [Reset passwords](../add-users/reset-passwords.md) (article)

@@ -3,6 +3,7 @@
 |:----------------------------|:-------|:---------------------------------|
 |Asia-Pacific                 |APC     |Southeast or East Asia datacenters|
 |Australia                    |AUS     |Southeast or East Asia datacenters|
+|Brazil                       |BRA     |(eDiscovery data location coming soon)|
 |Canada                       |CAN     |US datacenters                    |
 |Europe / Middle East / Africa|EUR     |Europe datacenters                |
 |France                       |FRA     |Europe datacenters                |

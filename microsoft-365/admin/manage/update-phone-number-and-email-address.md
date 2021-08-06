@@ -13,13 +13,15 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom: 
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 767349fa-f646-46d9-9dab-4a65049bdd1f
-description: "Update your administrator phone number and email address in the admin center. You'll need this information if you want to reset your own admin password."
+description: "Update your administrator phone number and email address in the admin center if you want to reset your own admin password."
 ---
 
 # Update your admin phone number and email address
@@ -53,10 +55,7 @@ For answers to billing questions, see:
 
 ## Related content
 
-[Change a user name and email address](../add-users/change-a-user-name-and-email-address.md) (video)
-
-[Add a new employee](../add-users/add-new-employee.md) (video)
-
-[Remove a former employee](../add-users/remove-former-employee.md) (video)
-
+[Change a user name and email address](../add-users/change-a-user-name-and-email-address.md) (video)\
+[Add a new employee](../add-users/add-new-employee.md) (video)\
+[Remove a former employee](../add-users/remove-former-employee.md) (video)\
 [Access and back up a former user's data](../add-users/get-access-to-and-back-up-a-former-user-s-data.md) (article)

@@ -75,9 +75,7 @@ Typically, this error means Microsoft 365 encountered a connection error when it
     1. In the EAC, go to **Mail flow** \> **Connectors**.
 
     2. Select the connector with the **From** value **Office 365** and the **To** value **Your organization's email server** and do one of the following steps:
-
        - Delete the connector by clicking **Delete** ![Remove icon](../../media/adf01106-cc79-475c-8673-065371c1897b.gif)
-
        - Disable the connector by clicking **Edit** ![Edit icon](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) and clearing **Turn it on**.
 
   - Change the accepted domain in Microsoft 365 that's associated with your on-premises email environment from **Internal Relay** to **Authoritative**. For instructions, see [Manage accepted domains in Exchange Online](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
@@ -91,13 +89,11 @@ Typically, this error means Microsoft 365 encountered a connection error when it
 Typically, this error means Microsoft 365 connected to the destination email server, but the server responded with an immediate error, or doesn't meet the connection requirements. The error details will explain the problem. For example:
 
 - The destination email server responded with a "Service not available" error, which indicates the server is unable to maintain communication with Microsoft 365.
-
 - The connector is configured to require TLS, but the destination email server doesn't support TLS.
 
 ### How do I fix error code 450 4.4.317?
 
 - Verify the TLS settings and certificates on your on-premises email servers, and the TLS settings on the connector.
-
 - If the error is from your partner organization (for example, a 3rd party cloud service provider), you need to contact your partner to fix the issue.
 
 ## Error code: 450 4.4.318 Connection was closed abruptly
@@ -105,17 +101,13 @@ Typically, this error means Microsoft 365 connected to the destination email ser
 Typically, this error means Microsoft 365 is having difficulty communicating with your on-premises email environment, so the connection was dropped. The possible causes for this error are:
 
 - Your firewall uses SMTP packet examination rules, and those rules aren't working correctly.
-
 - Your on-premises email server isn't working correctly (for example, service hangs, crashes, or low system resources), which is causing the server to time out and close the connection to Microsoft 365.
-
 - There are network issues between your on-premises environment and Microsoft 365.
 
 ### How do I fix error code 450 4.4.318?
 
 - Find out which scenario applies to you, and make the necessary corrections.
-
 - If the problem is caused by network issues between your on-premises environment and Microsoft 365, contact your network team to troubleshoot the issue.
-
 - If the error is from your partner organization (for example, a 3rd party cloud service provider), you need to contact your partner to fix the issue.
 
 ## Error code: 450 4.7.320 Certificate validation failed
@@ -123,15 +115,12 @@ Typically, this error means Microsoft 365 is having difficulty communicating wit
 Typically, this error means Microsoft 365 encountered an error while trying to validate the certificate of the destination email server. The error details will explain the error. For example:
 
 - Certificate expired
-
 - Certificate subject mismatch
-
 - Certificate is no longer valid
 
 ### How do I fix error code 450 4.7.320?
 
 - Fix the certificate or the settings on the connector so that queued messages in Microsoft 365 can be delivered.
-
 - If the error is from your partner organization (for example, a 3rd party cloud service provider), you need to contact your partner to fix the issue.
 
 ## Other error codes

@@ -10,6 +10,12 @@
           href: ../commerce/try-or-buy-microsoft-365.md
         - name: Plan your setup
           href: setup/plan-your-setup.md
+        - name: Plan for Windows 365 Business
+          items:
+           - name: Get started with Windows 365 Business and Cloud PCs
+             href: setup/get-started-windows-365-business.md
+           - name: Windows 365 Business sizing options
+             href: setup/windows-365-business-sizing.md
         - name: Set up your organization with the guided setup
           items:
            - name: Microsoft 365 Business Basic
@@ -74,14 +80,10 @@
       items: 
         - name: About Office 365 operated by 21Vianet
           href: services-in-china/services-in-china.md
-        - name: Buy or try subscriptions
-          href: services-in-china/buy-or-try-subscriptions.md
         - name: Download the Office app for Android for Office 365 operated by 21Vianet
           href: services-in-china/download-office-app-for-Android.md
         - name: Download the Office app for iOS for Office 365 operated by 21Vianet
           href: services-in-china/download-office-app-for-iOS.md
-        - name: View your bill or get a Fapiao
-          href: services-in-china/view-your-bill-or-get-a-fapiao.md
         - name: Apply for a Fapiao
           href: services-in-china/apply-for-a-fapiao.md
         - name: Azure Information Protection support
@@ -256,7 +258,7 @@
            href: manage/pin-apps-to-app-launcher.md
          - name: Upgrade users to the latest apps
            href: setup/upgrade-users-to-latest-office-client.md
-         - name: Test and deploy Microsoft 365 Apps in the Microsoft 365 admin center
+         - name: Integrated apps
            href: manage/test-and-deploy-microsoft-365-apps.md
          - name: Centralized deployment of add-ins
            items:
@@ -294,6 +296,8 @@
              href: usage-analytics/active-user-in-usage-reports.md
            - name: Customize reports
              href: usage-analytics/customize-reports.md
+           - name: Usage analytics with Microsoft 365 GCC 
+             href: usage-analytics/connect-to-gcc-data-with-usage-analytics.md
            - name: About the usage analytics data model
              href: usage-analytics/usage-analytics-data-model.md
            - name: Troubleshoot usage analytics errors
@@ -327,7 +331,7 @@
             - name: Set up compliance features
               href: ../business/set-up-compliance.md
         - name: Secure score
-          href: https://docs.microsoft.com/microsoft-365/security/defender/microsoft-secure-score
+          href: /microsoft-365/security/defender/microsoft-secure-score
         - name: A guide to GDPR compliance
           href: security-and-compliance/gdpr-compliance.md
     - name: Manage devices and app data
@@ -398,7 +402,7 @@
             - name: Privacy and security
               href: basic-mobility-security/privacy-and-security.md
             - name: Frequently asked questions
-              href: basic-mobility-security/frequently-asked-questions.md
+              href: basic-mobility-security/frequently-asked-questions.yml
             - name: Wipe mobile devices
               href: basic-mobility-security/wipe-mobile-device.md
             - name: Turn off Basic Mobility and Security

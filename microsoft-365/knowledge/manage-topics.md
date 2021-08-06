@@ -1,8 +1,7 @@
 ---
-title: 'Manage topics in the topic center in Microsoft Viva Topics'
-description: 'How to manage topics in the topic center.'
-author: chuckedmonson
+title: Manage topics in the topic center in Microsoft Viva Topics
 ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
 ms.reviewer: ergradel
 audience: admin
@@ -13,6 +12,7 @@ ms.collection:
     - enabler-strategic 
     - m365initiative-viva-topics
 localization_priority: None
+description: Learn how to manage topics in the topic center in Microsoft Viva Topics.
 
 ---
 # Manage topics in the topic center in Microsoft Viva Topics
@@ -25,21 +25,31 @@ localization_priority: None
 
 In the Viva Topics topic center, a knowledge manager can view the **Manage topics** page to review topics that have been identified in the source locations as specified by your knowledge admin.  
 
-   ![Topic Center](../media/knowledge-management/topic-center.png)  
+   ![Topic Center.](../media/knowledge-management/topic-center.png)  
 
 ## Topic stages
 
 Knowledge managers help to guide discovered topics through the various topic lifecycle stages: **Suggested**, **Confirmed**, **Published**, and **Removed**.
 
-   ![Topic Lifecycle chart](../media/knowledge-management/topic-lifecycle.png) 
+   ![Topic Lifecycle chart.](../media/knowledge-management/topic-lifecycle.png) 
 
 - **Suggested**: A topic has been identified by AI and has enough supporting resources, connections, and properties. (These are marked as a **Suggested Topic** in the UI.)
 
-- **Confirmed**: A topic that has been suggested by AI is validated. Topic validation must be confirmed by a knowledge manager. For a topic to be confirmed, there must be a net of two positive votes received from users who voted using the feedback mechanism on the topic card. For example, if one user voted positive and one user voted negative for a particular topic, you would still need two more positive votes for the topic to be confirmed.
- 
-- **Published**: A confirmed topic that has been curated: manual edits have been made to improve its quality.
+- **Confirmed**: A topic that has been discovered by AI and has been validated. Topic validation occurs when either:
 
-- **Removed**: A topic is rejected by a knowledge manager and will no longer be visible to viewers. A topic can be removed in any state (suggested, confirmed, or published). For a topic to be removed, there must be a net of two negative votes received from users who voted using the feedback mechanisms on the topic card. For example, if one user voted negative and one user voted positive for a particular topic, you would still need two more negative votes for the topic to be removed. When a published topic is removed, the page with the curated details will need to be deleted manually through the Pages Library of the topic center.
+   - A knowledge manager confirms a topic. A knowledge manager [confirms a topic](manage-topics.md#confirmed-topics) on the **Manage topics** page.
+
+   - Multiple users confirm a topic. There must be a net of two positive votes received from users who voted using the feedback mechanism on the topic card. For example, if one user voted positive and one user voted negative for a particular topic, you would still need two more positive votes for the topic to be confirmed.
+ 
+- **Published**: A topic that has been curated. Manual edits have been made to improve its quality, or it has been created by a user.
+
+- **Removed**: A topic that has been rejected and will no longer be visible to viewers. A topic can be removed in any state (suggested, confirmed, or published). Topic removal occurs when either:
+
+   - A knowledge manager removes a topic. A knowledge manager removes a topic on the **Manage topics** page.
+
+   - Multiple users cast negative votes using the feedback mechanism on the topic card. For a topic to be removed, there must be a net of two negative votes received from users. For example, if one user voted negative and one user voted positive for a particular topic, you would still need two more negative votes for the topic to be removed.
+
+  When a published topic is removed, the page with the curated details will need to be deleted manually through the Pages library of the topic center.
 
 > [!Note] 
 > On the **Manage topics** page, each knowledge manager will only be able to see topics where they have access to the underlying files and pages connected to the topic. This permission trimming will be reflected in the list of topics that appear in the **Suggested**, **Confirmed**, **Published**, and **Removed** tabs. The topic counts, however, show the total counts in the organization regardless of permissions.
@@ -55,11 +65,11 @@ You will not be able to view the **Manage topics** page in the topic center unle
 
 In the topic center, a knowledge manager can review topics that have been identified in the source locations you specified, and can either confirm or remove them. A knowledge manager can also create and publish new topic pages if one was not found in topic discovery, or edit existing ones if they need to be updated.
 
-## Review suggested topics
+## Suggested topics
 
 On the **Manage topics** page, topics that were discovered in your specified SharePoint source locations will be listed on the **Suggested** tab. If needed, a knowledge manager can review unconfirmed topics and choose to confirm or remove them.
 
-   ![Suggested Topics](../media/knowledge-management/quality-score.png) 
+   ![Screenshot of suggested topics.](../media/knowledge-management/quality-score.png) 
 
 To review a suggested topic:
 
@@ -101,6 +111,26 @@ Note that you can still choose to reject a confirmed topic. To do this, go to th
 
 ## Published topics
 
-Published topics have been edited so that specific information will always appear to whoever encounters the page. Manually created topics are listed here as well.
+On the **Manage topics** page, topics that were discovered in your specified SharePoint source locations will be listed on the **Published** tab. Published topics have been edited so that specific information will always appear to whoever encounters the page. Manually created topics are listed here as well.
 
    ![Manage Topics](../media/knowledge-management/manage-topics-new.png)
+
+## Removed topics
+
+On the **Manage topics** page, topics that were discovered in your specified SharePoint source locations will be listed on the **Removed** tab. Some suggested topics can appear here based on the end user votes on topic cards in the topic center.
+
+Removed topics can later be added back as viewable topics if needed. If you want to add a removed topic back as a viewable topic:
+
+1. On the **Removed** tab, select the topic.
+
+2. Select **Review and publish**.
+
+   ![Screenshot of Removed tab showing the Review and publish option.](../media/knowledge-management/review-and-publish-removed-topic.png)
+
+## Topic count dashboard
+
+This chart in the dashboard view lets you see the number of topics in your Viva Topics topic center. The chart shows the topic counts per topic lifecycle stage and also shows how topic counts have trended over time. Knowledge managers can visually monitor the rate at which new topics are being discovered by AI and the rate at which topics are getting confirmed or published by the knowledge manager or user actions.
+
+Knowledge managers might see a different count of topics represented in the list of topics on the **Manage topics** page than they see in the dashboard. This is because a knowledge manager might not have access to all topics. The count presented in the dashboard view is taken before applying permission-trimming. 
+
+   ![Screenshot of topic count dashboard.](../media/knowledge-management/topic-count-dashboard.png)

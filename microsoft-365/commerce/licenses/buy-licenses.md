@@ -18,8 +18,9 @@ ms.custom:
 - AdminSurgePortfolio
 - manage_licenses
 - commerce_licensing
+- AdminTemplateSet
 search.appverid: MET150
-description: "Learn how to buy more licenses or reduce the number of licenses for your Microsoft 365 for business subscription."
+description: "Use these steps to buy more licenses or reduce the number of licenses for your Microsoft 365 for business subscription."
 ms.date: 04/07/2021
 ---
 

@@ -17,6 +17,9 @@ audience: ITPro
 ms.collection: 
   - M365-security-compliance
   - m365initiative-m365-defender
+  - incidentresponse
+  - m365solution-incidentresponse
+  - m365solution-overview
 ms.topic: conceptual
 search.appverid: 
   - MOE150
@@ -81,7 +84,20 @@ Here's an example.
 
 :::image type="content" source="../../media/investigate-incidents/incident-alerts.png" alt-text="Example of an Alerts page for an incident":::
 
-By default, the alerts are ordered chronologically to allow you to see how the incident played out over time. Selecting each alert takes you to the alert's main page where you can conduct an in-depth analysis of that alert. 
+By default, the alerts are ordered chronologically to allow you to see how the incident played out over time. 
+When you select an alert within an incident, Microsoft 365 Defender displays the alert information specific to the context of the overall incident. 
+
+You can see the events of the alert, which other triggered alerts caused the current alert, and all the affected entities and activities involved in the attack, including files, users, and mailboxes.
+
+Here's an example.
+
+:::image type="content" source="../../media/investigate-incidents/incident-alert-example.png" alt-text="Example of an alert details page within an incident":::
+
+This incident alert page is composed of these sections:
+
+- Alert story, which includes a summary of what happened
+- Related events and alerts
+- Summary details
 
 Learn how to use the alert queue and alert pages in [investigate alerts](investigate-alerts.md).
 
@@ -106,8 +122,10 @@ The **Users** tab lists all the users that have been identified to be part of or
 
 :::image type="content" source="../../media/investigate-incidents/incident-users.png" alt-text="Example of a Users page for an incident":::
 
-You can select the check mark for a user to see details of the user account threat, exposure, and contact information. 
-Select the user name to see additional user account details.
+You can select the check mark for a user to see details of the user account threat, exposure, and contact information. Select the user name to see additional user account details.
+
+Learn how to view additional user information and manage the users of an incident in [investigate users](investigate-users.md).
+
 
 ## Mailboxes
 
@@ -123,7 +141,15 @@ The **Investigations** tab lists all the [automated investigations](m365d-autoir
 
 :::image type="content" source="../../media/investigate-incidents/incident-investigations.png" alt-text="Example of an Investigations page for an incident":::
 
-Select an investigation to navigate to the Investigation details page to get full information on the investigation and remediation status. If there are any actions pending for approval as part of the investigation, they will appear in the Pending actions tab. Take action as part of incident remediation.
+Select an investigation to navigate to its details page for full information on the investigation and remediation status. If there are any actions pending for approval as part of the investigation, they will appear in the **Pending actions history** tab. Take action as part of incident remediation.
+
+There is also an **Investigation graph** tab that shows:
+
+- The connection of alerts to the impacted assets in your organization.
+- Which entities are related to which alerts and how they are part of the story of the attack.
+- The alerts for the incident.
+
+The investigation graph helps you quickly understand the full scope of the attack by connecting the different suspicious entities that are part of the attack with their related assets such as users, devices, and mailboxes. 
 
 For more information, see [Automated investigation and response in Microsoft 365 Defender](m365d-autoir.md).
 
@@ -136,22 +162,6 @@ The **Evidence and Response** tab shows all the supported events and suspicious 
 Microsoft 365 Defender automatically investigates all the incidents' supported events and suspicious entities in the alerts, providing you with information about the important emails, files, processes, services, IP Addresses, and more. This helps you quickly detect and block potential threats in the incident.
 
 Each of the analyzed entities is marked with a verdict (Malicious, Suspicious, Clean) and a remediation status. This helps you understand the remediation status of the entire incident and what next steps can be taken.
-
-## Graph (in preview)
-
-With the new **Graph** tab (in preview), you can see:
-
-- The connection of alerts to the impacted assets in your organization.
-- Which entities are related to which alerts and how they are part of the story of the attack.
-- The alerts for the incident.
-
-Here's an example.
-
-:::image type="content" source="../../media/investigate-incidents/incident-graph.png" alt-text="Example of a Graph page for an incident":::
-
-The incident graph helps you quickly understand the full scope of the attack by connecting the different suspicious entities that are part of the attack with their related assets such as users, devices, and mailboxes. 
-
-Now you can understand how the attack spread through your network over time, where it started, and how far the attack went.
 
 ## Next steps
 

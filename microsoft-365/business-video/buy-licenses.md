@@ -23,6 +23,7 @@ search.appverid:
 - MET150
 - MOE150
 description: "Learn how to buy new Microsoft 365 for business licenses."
+ms.date: 05/11/2021
 ---
 
 # Buy Microsoft 365 licenses

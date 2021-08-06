@@ -28,7 +28,7 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 
 ## MICROSOFT APPLICATION LICENSE TERMS: MICROSOFT DEFENDER FOR ENDPOINT
@@ -57,9 +57,7 @@ DO NOT USE THE APPLICATION.**
 
     1.  **Installation and Use.** You may install and use any number of copies
         of this application on Android enabled device or devices that you own
-        or control. You may use this application with your company's valid
-        subscription of Microsoft Defender for Endpoint or
-        an online service that includes Microsoft Defender for Endpoint functionalities.
+        or control. 
 
     2.  **Updates.** Updates or upgrades to Microsoft Defender for Endpoint may be required for full
         functionality. Some functionality may not be available in all countries.

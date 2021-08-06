@@ -81,9 +81,6 @@ The wipe is sent immediately to the mobile device and the device is marked as no
 |Microsoft 365 app data is wiped if the device is protected by Intune App Protection policies. The apps aren't removed. For devices not protected by Mobile Application Management (MAM) policies, Outlook and OneDrive won't remove cached data.<br/>**Note** For applying Intune App protection policies you must have an Intune license.|Yes|Yes|
 |Policy settings applied by Basic Mobility and Security to devices are no longer enforced; users can change the settings.|Yes|Yes|
 |Email profiles created by Basic Mobility and Security are removed and cached email on the device is deleted.|Yes|N/A|
->[!NOTE]
->Company Portal app is available at the App Store for iOS and the Play Store for Android devices.
 
-## Related topics
-
-[Set up Basic Mobility and Security](set-up.md)
+> [!NOTE]
+> Company Portal app is available at the App Store for iOS and the Play Store for Android devices.

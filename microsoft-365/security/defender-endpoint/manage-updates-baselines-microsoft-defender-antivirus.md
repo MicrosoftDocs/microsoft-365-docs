@@ -13,10 +13,10 @@ ms.topic: article
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.reviewer: pahuijbr
+ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 05/13/2021
+ms.date: 08/05/2021
 ---
 
 # Manage Microsoft Defender Antivirus updates and apply baselines
@@ -26,17 +26,13 @@ ms.date: 05/13/2021
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 - Microsoft Defender Antivirus
 
-There are two types of updates related to keeping Microsoft Defender Antivirus up to date:
+Keeping Microsoft Defender Antivirus up to date is critical to assure your devices have the latest technology and features needed to protect against new malware and attack techniques. Make sure to update your antivirus protection, even if Microsoft Defender Antivirus is running in [passive mode](microsoft-defender-antivirus-compatibility.md). There are two types of updates related to keeping Microsoft Defender Antivirus up to date:
 
 - Security intelligence updates
 - Product updates
 
-> [!IMPORTANT]
-> Keeping Microsoft Defender Antivirus up to date is critical to assure your devices have the latest technology and features needed to protect against new malware and attack techniques.
-> 
-> Make sure to update your antivirus protection even if Microsoft Defender Antivirus is running in [passive mode](./microsoft-defender-antivirus-compatibility.md).
-> 
-> To see the most current engine, platform, and signature date, visit the [Security intelligence updates for Microsoft Defender Antivirus and other Microsoft antimalware](https://www.microsoft.com/en-us/wdsi/defenderupdates).
+> [!TIP]
+> To see the most current engine, platform, and signature date, visit the [Security intelligence updates for Microsoft Defender Antivirus and other Microsoft antimalware](https://www.microsoft.com/wdsi/defenderupdates)
 
 ## Security intelligence updates
 
@@ -55,7 +51,7 @@ Engine updates are included with security intelligence updates and are released 
 
 ## Product updates
 
-Microsoft Defender Antivirus requires [monthly updates (KB4052623)](https://support.microsoft.com/help/4052623/update-for-windows-defender-antimalware-platform) (known as *platform updates*), and will receive major feature updates alongside Windows 10 releases.
+Microsoft Defender Antivirus requires [monthly updates (KB4052623)](https://support.microsoft.com/help/4052623/update-for-windows-defender-antimalware-platform) known as *platform updates*.
 
 You can manage the distribution of updates through one of the following methods: 
 
@@ -66,7 +62,10 @@ You can manage the distribution of updates through one of the following methods:
 For more information, see [Manage the sources for Microsoft Defender Antivirus protection updates](/mem/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus).
 
 > [!NOTE]
-> Monthly updates are released in phases, resulting in multiple packages visible in your [Window Server Update Services](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus).
+> - Monthly updates are released in phases, resulting in multiple packages visible in your [Window Server Update Services](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus).
+> - This article lists changes that are included in the broad release channel. [See the latest broad channel release here](https://www.microsoft.com/security/encyclopedia/adlpackages.aspx?action=info). 
+> - To learn more about the gradual rollout process, and to see more information about the next release, see [Manage the gradual rollout process for Microsoft Defender updates](manage-gradual-rollout.md).
+> - To learn more about security intelligence updates, see [Security intelligence updates for Microsoft Defender Antivirus and other Microsoft antimalware](https://www.microsoft.com/wdsi/defenderupdates). 
 
 ## Monthly platform and engine versions
 
@@ -75,34 +74,91 @@ For information how to update or install the platform update, see [Update for Wi
 All our updates contain 
 - performance improvements;
 - serviceability improvements; and 
-- integration improvements (Cloud, Microsoft 365 Defender).
+- integration improvements (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)).
 <br/>
 <details>
-<summary> April-2021 (Platform: 4.18.2104.14 | Engine: 1.1.18100.5)</summary>
+<summary> July-2021 (Platform: 4.18.2107.4 | Engine: 1.1.18400.4)</summary>
 
-&ensp;Security intelligence update version: **1.337.2.0**  
-&ensp;Released: **April 1, 2021**  
-&ensp;Platform: **4.18.2104.14**  
-&ensp;Engine: **1.1.18100.5**  
+&ensp;Security intelligence update version: **1.345.13.0**  
+&ensp;Released: **August 5, 2021**  
+&ensp;Platform: **4.18.2107.4**  
+&ensp;Engine: **1.1.18400.4**  
 &ensp;Support phase: **Security and Critical Updates**
     
 ### What's new
-- Additional behavior monitoring logic
-- Improved kernel mode keylogger detection
+- Device control support added for Windows Portable Devices
+- Potentially unwanted applications (PUA) protection is turned on by default for consumers (See [Potentially unwanted apps will be blocked by default](https://support.microsoft.com/windows/potentially-unwanted-apps-will-be-blocked-by-default-b9f53cb9-7f1e-40bb-8c6b-a17e0ab6289e))
+- Scheduled scans for Group Policy Object managed systems will adhere to user configured scan time 
+- Improvements to the behavior monitoring engine
+
+### Known Issues
+No known issues  
+<br/>
+</details><details>
+<summary> June-2021 (Platform: 4.18.2106.5 | Engine: 1.1.18300.4)</summary>
+
+&ensp;Security intelligence update version: **1.343.17.0**  
+&ensp;Released: **June 28, 2021**  
+&ensp;Platform: **4.18.2106.5**  
+&ensp;Engine: **1.1.18300.4**  
+&ensp;Support phase: **Security and Critical Updates**
+    
+### What's new
+- New controls for managing the gradual rollout process of Microsoft Defender updates. See [Manage the gradual rollout process for Microsoft Defender updates](manage-gradual-rollout.md).
+- Improvement to the behavior monitoring engine
+- Improvements to the rollout of antimalware definitions
+- Extended Edge network event inspections
+
+### Known Issues
+No known issues  
+<br/>
+</details><details>
+<summary> May-2021 (Platform: 4.18.2105.4 | Engine: 1.1.18200.4)</summary>
+
+&ensp;Security intelligence update version: **1.341.8.0**  
+&ensp;Released: **June 3, 2021**  
+&ensp;Platform: **4.18.2105.4**  
+&ensp;Engine: **1.1.18200.4**  
+&ensp;Support phase: **Security and Critical Updates**
+    
+### What's new
+- Improvements to [behavior monitoring](client-behavioral-blocking.md) 
+- Fixed [network protection](network-protection.md) notification filtering feature
 
 ### Known Issues
 No known issues  
 <br/>
 </details>
 
+### Previous version updates: Technical upgrade support only
+
+After a new package version is released, support for the previous two versions is reduced to technical support only. Versions older than that are listed in this section, and are provided for technical upgrade support only. 
 <details>
+<summary> April-2021 (Platform: 4.18.2104.14 | Engine: 1.1.18100.5)</summary>
+
+&ensp;Security intelligence update version: **1.337.2.0**  
+&ensp;Released: **April 26, 2021**  (Engine: 1.1.18100.6 released May 5, 2021)
+&ensp;Platform: **4.18.2104.14**  
+&ensp;Engine: **1.1.18100.5**  
+&ensp;Support phase: **Technical upgrade support (only)**
+    
+### What's new
+- Additional behavior monitoring logic
+- Improved kernel mode key logger detection
+- Added new controls to manage the gradual rollout process for [Microsoft Defender updates](manage-gradual-rollout.md)
+
+
+### Known Issues
+No known issues  
+<br/>
+</details><details>
 <summary> March-2021 (Platform: 4.18.2103.7 | Engine: 1.1.18000.5)</summary>
 
 &ensp;Security intelligence update version: **1.335.36.0**  
-&ensp;Released: **April 1, 2021**  
+&ensp;Released: **April 2, 2021**  
 &ensp;Platform: **4.18.2103.7**  
 &ensp;Engine: **1.1.18000.5**  
-&ensp;Support phase: **Security and Critical Updates**
+&ensp;Support phase: **Technical upgrade support (only)**
     
 ### What's new
 
@@ -120,7 +176,7 @@ No known issues
 &ensp;Released: **March 9, 2021**  
 &ensp;Platform: **4.18.2102.3**  
 &ensp;Engine: **1.1.17900.7**  
-&ensp;Support phase: **Security and Critical Updates**
+&ensp;Support phase: **Technical upgrade support (only)**
     
 ### What's new
 
@@ -130,13 +186,7 @@ No known issues
 ### Known Issues
 No known issues  
 <br/>
-</details>
-
-### Previous version updates: Technical upgrade support only
-
-After a new package version is released, support for the previous two versions is reduced to technical support only. Versions older than that are listed in this section, and are provided for technical upgrade support only. 
-<br/><br/>
-<details>
+</details><details>
 <summary> January-2021 (Platform: 4.18.2101.9 | Engine: 1.1.17800.5)</summary>
 
 &ensp;Security intelligence update version: **1.327.1854.0**  
@@ -421,7 +471,7 @@ Support phase: **No support**
 - add MRT logs to support files
    
 ### Known Issues
-When this update is installed, the device needs the jump package 4.10.2001.10 to be able to update to the latest platform version.
+When this update is installed, the device needs the jump package 4.18.2001.10 to be able to update to the latest platform version.
 <br/>
 </details>
 
@@ -435,7 +485,7 @@ Platform and engine updates are provided on a monthly cadence. To be fully suppo
 
 \* Technical support will continue to be provided for upgrades from the Windows 10 release version (see [Platform version included with Windows 10 releases](#platform-version-included-with-windows-10-releases)) to the latest platform version.
 
-During the technical support (only) phase, commercially reasonable support incidents will be provided through Microsoft Customer Service & Support and Microsoft’s managed support offerings (such as Premier Support). If a support incident requires escalation to development for further guidance, requires a non-security update, or requires a security update, customers will be asked to upgrade to the latest platform version or an intermediate update (*).
+During the technical support (only) phase, commercially reasonable support incidents will be provided through Microsoft Customer Service & Support and Microsoft's managed support offerings (such as Premier Support). If a support incident requires escalation to development for further guidance, requires a non-security update, or requires a security update, customers will be asked to upgrade to the latest platform version or an intermediate update (*).
 
 ### Platform version included with Windows 10 releases
 The below table provides the Microsoft Defender Antivirus platform and engine versions that are shipped with the latest Windows 10 releases:    
@@ -460,6 +510,48 @@ We recommend updating your Windows 10 (Enterprise, Pro, and Home editions), Wind
 For more information, see [Microsoft Defender update for Windows operating system installation images](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images).
 
 <details>
+<summary>1.1.2108.01</summary>
+
+&ensp;Package version: **1.1.2108.01**    
+&ensp;Platform version: **4.18.2107.4**   
+&ensp;Engine version: **1.1.18300.4**  
+&ensp;Signature version: **1.343.2244.0**    
+    
+### Fixes
+- None
+
+### Additional information
+- None  
+<br/>
+</details><details>
+<summary>1.1.2107.02</summary>
+
+&ensp;Package version: **1.1.2107.02**    
+&ensp;Platform version: **4.18.2105.5**   
+&ensp;Engine version: **1.1.18300.4**  
+&ensp;Signature version: **1.343.658.0**    
+    
+### Fixes
+- None
+
+### Additional information
+- None  
+<br/>
+</details><details>
+<summary>1.1.2106.01</summary>
+
+&ensp;Package version: **1.1.2106.01**    
+&ensp;Platform version: **4.18.2104.14**   
+&ensp;Engine version: **1.1.18100.6**  
+&ensp;Signature version: **1.339.1923.0**    
+    
+### Fixes
+- None
+
+### Additional information
+- None  
+<br/>
+</details><details>
 <summary>1.1.2105.01</summary>
 
 &ensp;Package version: **1.1.2105.01**    

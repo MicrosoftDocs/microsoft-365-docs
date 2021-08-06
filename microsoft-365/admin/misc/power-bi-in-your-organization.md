@@ -78,19 +78,19 @@ If a tenant was created by Microsoft, you can claim and manage that tenant by fo
 
 ::: moniker range="o365-worldwide"
 
-3. Go to [https://admin.microsoft.com](https://admin.microsoft.com).
+3. Go to <a href="https://admin.microsoft.com" target="_blank">https://admin.microsoft.com</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-3. Go to [https://portal.office.de](https://portal.office.de).
+3. Go to <a href="https://portal.office.de" target="_blank">https://portal.office.de</a>
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-3. Go to [https://portal.partner.microsoftonline.cn](https://portal.partner.microsoftonline.cn).
+3. Go to <a href="https://portal.partner.microsoftonline.cn" target="_blank">https://portal.partner.microsoftonline.cn</a>.
 
 ::: moniker-end
 

@@ -8,13 +8,13 @@ ms.date: 09/30/2020
 ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: 
+ms.collection:
 - Ent_O365
 - M365-identity-device-management
 - M365-security-compliance
 f1.keywords:
 - CSH
-ms.custom: 
+ms.custom:
  - Adm_O365
  - seo-marvel-mar2020
 search.appverid:
@@ -41,7 +41,7 @@ Your first planning choice is the Microsoft 365 identity model.
 
 ## Microsoft 365 identity models
 
-To plan for user accounts, you first need to understand the two identity models in Microsoft 365. You can maintain your organization's identities only in the cloud, or you can maintain your on-premises Active Directory Domain Services (AD DS) identities and use them for authentication when users access Microsoft 365 cloud services.  
+To plan for user accounts, you first need to understand the two identity models in Microsoft 365. You can maintain your organization's identities only in the cloud, or you can maintain your on-premises Active Directory Domain Services (AD DS) identities and use them for authentication when users access Microsoft 365 cloud services.
 
 Here are the two types of identity and their best fit and benefits.
 
@@ -55,16 +55,16 @@ Here are the two types of identity and their best fit and benefits.
 
 ## Cloud-only identity
 
-A cloud-only identity uses user accounts that exist only in Azure AD. Cloud-only identity is typically used by small organizations that do not have on-premises servers or do not use AD DS to manage local identities. 
+A cloud-only identity uses user accounts that exist only in Azure AD. Cloud-only identity is typically used by small organizations that do not have on-premises servers or do not use AD DS to manage local identities.
 
 Here are the basic components of cloud-only identity.
- 
+
 ![Basic components of cloud-only identity](../media/about-microsoft-365-identity/cloud-only-identity.png)
 
 Both on-premises and remote (online) users use their Azure AD user accounts and passwords to access Microsoft 365 cloud services. Azure AD authenticates user credentials based on its stored user accounts and passwords.
 
 ### Administration
-Because user accounts are only stored in Azure AD, you manage cloud identities with tools such as the [Microsoft 365 admin center](../admin/add-users/index.yml) and [Windows PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md). 
+Because user accounts are only stored in Azure AD, you manage cloud identities with tools such as the [Microsoft 365 admin center](../admin/add-users/index.yml) and [Windows PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md).
 
 ## Hybrid identity
 
@@ -72,7 +72,7 @@ Hybrid identity uses accounts that originate in an on-premises AD DS and have a 
 
 Azure AD Connect provides the ongoing account synchronization. It runs on an on-premises server, checks for changes in the AD DS, and forwards those changes to Azure AD. Azure AD Connect provides the ability to filter which accounts are synchronized and whether to synchronize a hashed version of user passwords, known as password hash synchronization (PHS).
 
-When you implement hybrid identity, your on-premises AD DS is the authoritative source for account information. This means that you perform administration tasks mostly on-premises, which are then synchronized to Azure AD. 
+When you implement hybrid identity, your on-premises AD DS is the authoritative source for account information. This means that you perform administration tasks mostly on-premises, which are then synchronized to Azure AD.
 
 Here are the components of hybrid identity.
 
@@ -80,13 +80,12 @@ Here are the components of hybrid identity.
 
 The Azure AD tenant has a copy of the AD DS accounts. In this configuration, both on-premises and remote users accessing Microsoft 365 cloud services authenticate against Azure AD.
 
->[!Note]
->You always need to use Azure AD Connect to synchronize user accounts for hybrid identity. You need the synchronized user accounts in Azure AD to perform license assignment and group management, configure permissions, and other administrative tasks that involve user accounts.
->
+> [!NOTE]
+> You always need to use Azure AD Connect to synchronize user accounts for hybrid identity. You need the synchronized user accounts in Azure AD to perform license assignment and group management, configure permissions, and other administrative tasks that involve user accounts.
 
 ### Administration
 
-Because the original and authoritative user accounts are stored in the on-premises AD DS, you manage your identities with the same tools as you manage your AD DS. 
+Because the original and authoritative user accounts are stored in the on-premises AD DS, you manage your identities with the same tools as you manage your AD DS.
 
 You don't use the Microsoft 365 admin center or PowerShell for Microsoft 365 to manage synchronized user accounts in Azure AD.
 
@@ -95,7 +94,6 @@ You don't use the Microsoft 365 admin center or PowerShell for Microsoft 365 to 
 If you need the cloud-only identity model, see [Cloud-only identity](cloud-only-identities.md).
 
 If you need the hybrid identity model, see [Hybrid identity](plan-for-directory-synchronization.md).
-
 
 ## See also
 

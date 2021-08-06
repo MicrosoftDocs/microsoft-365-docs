@@ -1,17 +1,17 @@
 ---
-title: "Step 1. Use SharePoint Syntex to identify contract files and extract data"
+title: Step 1. Use SharePoint Syntex to identify contract files and extract data
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.date: 05/17/2021
+ms.date: 
 ms.prod: microsoft-365-enterprise
 search.appverid: 
 localization_priority: None
-ROBOTS: NOINDEX, NOFOLLOW
-description: "Learn how to use SharePoint Syntex to identify contract files and extract data by using a Microsoft 365 solution."
+ROBOTS: 
+description: Learn how to use SharePoint Syntex to identify contract files and extract data by using a Microsoft 365 solution.
 ---
 
 # Step 1. Use SharePoint Syntex to identify contract files and extract data
@@ -20,7 +20,9 @@ Your organization needs a way to identify and classify all contract documents fr
 
 ## Overview of the process
 
-[Document understanding](document-understanding-overview.md) uses artificial intelligence (AI) models to automate classification of files and extraction of information. Document understanding models are also optimal in extracting information from unstructured and semi-structured documents where the information you need isn't contained in tables or forms, such as contracts.
+[Document understanding](document-understanding-overview.md) uses artificial intelligence (AI) models to automate classification of files and extraction of information. Document understanding models are also optimal in extracting information from unstructured and semi-structured documents where the information you need isn't contained in tables or forms, such as contracts. 
+
+Document understanding models use Optical Character Recognition (OCR) technology to scan PDFs, images, and TIFF files, both when you train a model with example files and when you run the model against files in a document library.
 
 1. First, you need to find at least five example files that you can use to "train" the model to search for characteristics that are specific to the content type you're trying to identify (a contract). 
 
@@ -32,12 +34,12 @@ Your organization needs a way to identify and classify all contract documents fr
 
    ![Contracts in document library](../media/content-understanding/doc-lib-solution.png)
 
-5. If you have retention requirements for your contracts, you can also use your model to [apply a retention label](apply-a-retention-label-to-a-model.md) that will prevent your contracts from being deleted for a specified period of time.
+5. If you have retention or security requirements for your contracts, you can also use your model to apply a [retention label](apply-a-retention-label-to-a-model.md) or a [sensitivity label](apply-a-sensitivity-label-to-a-model.md) that will prevent your contracts from being deleted for a specified period of time or to restrict who can access the contracts.
 
 ## Steps to create and train your model
 
 > [!NOTE]
-> For these steps, you can use the example files in the [Microsoft SharePoint Syntex Samples repository](https://github.com/pnp/syntex-samples). The samples in this repository contain both the document understanding model files and the files used to train the model.
+> For these steps, you can use the example files in the [Contracts Management Solution Assets repository](https://github.com/pnp/syntex-samples/tree/main/scenario%20assets/Contracts%20Management). The examples in this repository contain both the document understanding model files and the files used to train the model.
 
 ### Create a Contract model
 
@@ -193,6 +195,11 @@ To apply your model to a SharePoint document library:
 6. On the **Models > Contract** page, in the **Libraries with this model** section, you'll see the URL to the SharePoint site listed.
 
     ![Screenshot of the Contract home page showing the Libraries with this model section.](../media/content-understanding/contract-libraries-with-this-model.png)
+
+7. Under **Settings** > **Library settings**:
+
+   - Add a column named **Status** and select **Choice** as the column type.
+   - Apply the **In review**, **Approved**, and **Rejected** values.
 
 After you apply the model to the document library, you can begin uploading documents to the site and see the results.
 
