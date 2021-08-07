@@ -30,11 +30,11 @@ Configuring Sample Submission raises questions about how it works; for example, 
 - “Send all samples automatically,”  
 - “Do not send samples.”  
 
-For information about configuration options using Intune, Configuration Manager, GPO, or PowerShell, see [Turn on cloud-delivered protection in Microsoft Defender Antivirus](/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus).  
+For information about configuration options using Intune, Configuration Manager, GPO, or PowerShell, see [Turn on cloud-delivered protection in Microsoft Defender Antivirus](enable-cloud-protection-microsoft-defender-antivirus.md).  
 
 ## Customer data, cloud protection, and sample submission
 
-When onboarding to Defender for Endpoint, Defender for Endpoint treats all file samples as customer data, honoring both the geo and data retention choices the customer selected. Geo and data retention choices are described here: [Microsoft Defender for Endpoint data storage and privacy](/security/defender-endpoint/data-storage-privacy#data-storage-location).
+When onboarding to Defender for Endpoint, Defender for Endpoint treats all file samples as customer data, honoring both the geo and data retention choices the customer selected. Geo and data retention choices are described here: [Microsoft Defender for Endpoint data storage and privacy](data-storage-privacy#data-storage-location.md).
 The product has received multiple compliance certifications, demonstrating continued adherence to a sophisticated set of compliance controls:
 
 - ISO 27001
@@ -42,7 +42,7 @@ The product has received multiple compliance certifications, demonstrating conti
 - SOC I, II, III
 - and PCI
 
-[Azure Compliance Offerings](/azure/compliance/#compliance-offerings) provides more information on these certifications. All certification artifacts for Microsoft Defender for Endpoint can be found on Microsoft’s [Service Trust Portal](https://servicetrust.microsoft.com/) within each of the associated Azure Certification Reports.
+[Azure Compliance Offerings](https://docs.microsoft.com/azure/storage/common/storage-compliance-offerings) provides more information on these certifications. All certification artifacts for Microsoft Defender for Endpoint can be found on Microsoft’s [Service Trust Portal](https://servicetrust.microsoft.com/) within each of the associated Azure Certification Reports.
 
 ## Cloud Protection Mechanisms
 
@@ -106,11 +106,12 @@ _Figure 3. Cloud-delivered protection and layered machine learning_
 
 ## Cloud Delivered Protection Levels
 
-Malware detection requires striking a balance between providing the strongest possible protection, while minimizing the number of false positives. Different environments may have tolerance for protection versus risk of false positive. Cloud-delivered protection levels allow the customer to define the tolerance level appropriate for the specific environment. When you enable Cloud Delivered Protection, the protection level is automatically configured to provide strong detection without increasing the risk of detecting legitimate files. If you want to configure a different protection level, see [Specify the cloud-delivered protection level for Microsoft Defender Antivirus](/security/threat-protection/microsoft-defender-antivirus/specify-cloud-protection-level-microsoft-defender-antivirus).  
+Malware detection requires striking a balance between providing the strongest possible protection, while minimizing the number of false positives. Different environments may have tolerance for protection versus risk of false positive. Cloud-delivered protection levels allow the customer to define the tolerance level appropriate for the specific environment. When you enable Cloud Delivered Protection, the protection level is automatically configured to provide strong detection without increasing the risk of detecting legitimate files. If you want to configure a different protection level, see [Specify the cloud-delivered protection level for Microsoft Defender Antivirus](specify-cloud-protection-level-microsoft-defender-antivirus.md).  
 
 > [!Note]
 >
 > Changing the protection level can result in a higher level of false positives and should be carefully evaluated before changing.
+>
 
 ## Other File Sample Submission Scenarios
 
@@ -120,10 +121,10 @@ There are two more scenarios where Defender for Endpoint may request a file samp
 
 When onboarding devices to Microsoft Defender for Endpoint EDR there is a setting to enable sample collections from the device, which can be confused with the settings discussed above. This setting controls file sample collection from devices when requested through the Defender for Endpoint administrative portal; it is subject to the roles and permissions already established. This setting can allow or block file collection from the endpoint for features such as deep analysis in the Defender for Endpoint portal. If this setting is not configured, the default is to enable sample collection.
 
-[Additional Defender for Endpoint Configuration Settings](/configure-endpoints#additional-defender-for-endpoint-configuration-settings)
+Learn about Defender for Endpoint configuration settings, see: [Onboarding tools and methods for Windows 10 devices in Defender for Endpoint](configure-endpoints.md)
 
 ### Automated Investigation and Response Content Analysis
 
 When Automated Investigations are running on devices (when configured to run automatically in response to an alert or manually run), files that are identified as suspicious can be collected from the endpoints for further inspection. The file content analysis feature for Automated Investigations can be disabled in the Defender for Endpoint portal. The file extension names can also be modified to add or remove extensions for other file types that will be automatically submitted during an automated investigation.
 
-[Manage automation file uploads](/manage-automation-file-uploads)
+[Manage automation file uploads](manage-automation-file-uploads.md)
