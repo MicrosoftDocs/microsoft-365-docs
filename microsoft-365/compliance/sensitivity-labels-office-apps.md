@@ -39,11 +39,16 @@ For each capability, the following tables list the minimum Office version that y
 New versions of Office apps are made available at different times for different update channels. For more information, including how to configure your update channel so that you can test a new labeling capability that you're interested in, see [Overview of update channels for Microsoft 365 Apps](/DeployOffice/overview-update-channels). New capabilities that are in private preview are not included in the table but you might be able to join these previews by nominating your organization for the [Microsoft Information Protection private preview program](https://aka.ms/mip-preview).
 
 > [!NOTE]
-> The names of the update channels for Office apps have recently changed. For example, Monthly Channel is now Current Channel, and Office Insider is now Beta Channel. For more information, see [Changes to update channels for Microsoft 365 Apps](/deployoffice/update-channels-changes).
+> The names of the update channels for Office apps have changed. For example, Monthly Channel is now Current Channel, and Office Insider is now Beta Channel. For more information, see [Changes to update channels for Microsoft 365 Apps](/deployoffice/update-channels-changes).
 
 Office for iOS and Office for Android: Sensitivity labels are built into the [Office app](https://www.microsoft.com/en-us/microsoft-365/blog/2020/02/19/new-office-app-android-ios-available/).
 
 Additional capabilities are available when you install the Azure Information Protection unified labeling client, which runs on Windows computers only. For these details, see [Compare the labeling clients for Windows computers](/azure/information-protection/rms-client/use-client#compare-the-labeling-clients-for-windows-computers).
+
+> [!TIP]
+> When you compare the minimum versions in the tables with the versions you have, remember that it's common practice for release versions to omit leading zeros.
+> 
+> For example, you have version 4.2128.0 and read that 4.7.1+ is the minimum version. For easier comparison, read 4.7.1 (no leading zeros) as 4.**0007**.1, (not 4.**7000**.1). Your version of 4.2128.0 is higher than 4.0007.1, so your version is supported.
 
 ### Sensitivity label capabilities in Word, Excel, and PowerPoint
 
