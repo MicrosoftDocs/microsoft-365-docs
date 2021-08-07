@@ -34,3 +34,6 @@ If any of the terms used in this flowchart are unfamiliar to you, see [Learn abo
 
 
    ![Flowchart to determine when an item will be retained or permanently deleted](../media/retention-flowchart.svg)
+
+> [!NOTE]
+> Especially for deletion, it's important to distinguish between the expiration period for the item vs. the specified period in the retention policy or retention label. For more information, see the explanation after the graphic in the [principles of retention](retention.md#the-principles-of-retention-or-what-takes-precedence) section.
