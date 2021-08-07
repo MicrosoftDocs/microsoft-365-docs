@@ -58,6 +58,8 @@
           href: insider-risk-management-activities.md
         - name: Take action on insider risk cases
           href: insider-risk-management-cases.md
+        - name: Learn about and configure browser signal detection
+          href: insider-risk-management-browser-support.md
         - name: Review activities with the insider risk audit log
           href: insider-risk-management-audit-log.md
         - name: Review data with the insider risk content explorer
@@ -249,7 +251,7 @@
             href: endpoint-dlp-learn-about.md
           - name: Learn about the default data loss prevention policy in Microsoft Teams (preview)
             href: dlp-teams-default-policy.md
-          - name: Learn about Microsoft 365 data loss prevention on-premises scanner (preview)
+          - name: Learn about Microsoft 365 data loss prevention on-premises scanner
             href: dlp-on-premises-scanner-learn.md
           - name: Learn about the Microsoft Compliance Extension
             href: dlp-chrome-learn-about.md
@@ -267,7 +269,7 @@
             href: create-a-dlp-policy-from-a-template.md
           - name: Create, test, and tune a DLP policy
             href: create-test-tune-dlp-policy.md
-          - name: Get started with Microsoft 365 data loss prevention on-premises scanner (preview)
+          - name: Get started with Microsoft 365 data loss prevention on-premises scanner
             href: dlp-on-premises-scanner-get-started.md
           - name: Get started with Endpoint data loss prevention
             href: endpoint-dlp-getting-started.md
@@ -297,7 +299,7 @@
               href: dlp-microsoft-teams.md
             - name: Using Endpoint data loss prevention
               href: endpoint-dlp-using.md
-            - name: Use Microsoft 365 data loss prevention on-premises scanner (preview)
+            - name: Use Microsoft 365 data loss prevention on-premises scanner
               href: dlp-on-premises-scanner-use.md  
             - name: Use notifications and policy tips in DLP policies
               href: use-notifications-and-policy-tips.md
@@ -425,7 +427,7 @@
               href: archive-reuterseikon-data.md
             - name: Reuters FX
               href: archive-reutersfx-data.md
-            - name: RingCentral (preview)
+            - name: RingCentral
               href: archive-ringcentral-data.md   
             - name: Salesforce Chatter
               href: archive-salesforcechatter-data.md
@@ -465,6 +467,8 @@
               href: archive-enterprise-number-data.md
             - name: O2 Telefonica SMS and Voice Network Archiver
               href: archive-o2-network-data.md
+            - name: Rogers Network Archiver (preview)
+              href: archive-rogers-network-archiver-data.md
             - name: Signal Archiver
               href: archive-signal-archiver-data.md
             - name: Telegram Archiver
@@ -505,6 +509,8 @@
               href: archive-17a-4-refinitiv-messenger-data.md
             - name: ServiceNow DataParser 
               href: archive-17a-4-servicenow-data.md
+            - name: Skype for Business Server DataParser (preview)
+              href: archive-17a-4-skype-for-business-server-data.md
             - name: Slack DataParser 
               href: archive-17a-4-slack-data.md
             - name: SQL DataParser 
@@ -969,8 +975,6 @@
           href: compliance-manager-mcca.md
         - name: Frequently asked questions (FAQ)
           href: compliance-manager-faq.yml
-        - name: Compliance Manager (classic)
-          href: meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md
     - name: Microsoft Service Trust Portal
       href: get-started-with-service-trust-portal.md
     - name: Industry-specific guidance

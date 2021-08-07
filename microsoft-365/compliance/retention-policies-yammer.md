@@ -36,9 +36,13 @@ For other workloads, see:
 
 ## What's included for retention and deletion
 
-The following Yammer items can be retained and deleted by using retention policies for Yammer: Community messages and user messages.
+Yammer user messages and community messages can be deleted by using retention policies for Yammer, and in addition to the text in the messages, the following items can be retained for compliance reasons: Hypertext links and links to other Yammer messages.
 
-Reactions from others in the form of emoticons are not included in these messages.
+User messages include all the names of the people in the chat, and community messages include the community name and the message title (if supplied).
+
+Reactions from others in the form of emoticons are not retained when you use retention policies for Yammer.
+
+Files that you use with Yammer aren't included in retention policies for Yammer. These items have their own retention policies.
 
 ## How retention works with Yammer
 

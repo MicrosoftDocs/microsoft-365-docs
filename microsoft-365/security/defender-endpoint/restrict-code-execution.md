@@ -28,7 +28,7 @@ ms.custom: api
 
 **Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+- Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -43,6 +43,13 @@ Restrict execution of all applications on the device except a predefined set.
 1. Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
 
 [!include[Device actions note](../../includes/machineactionsnote.md)]
+
+
+> [!IMPORTANT]
+>
+> - This action is available for devices on Windows 10, version  1709 or later.
+> - This feature is available if your organization uses Microsoft Defender Antivirus.
+> - This action needs to meet the Windows Defender Application Control code integrity policy formats and signing requirements. For more information, see [Code integrity policy formats and signing](/windows/device-security/device-guard/requirements-and-deployment-planning-guidelines-for-device-guard#code-integrity-policy-formats-and-signing).
 
 ## Permissions
 
