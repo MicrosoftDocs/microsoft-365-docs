@@ -48,7 +48,7 @@ Additional capabilities are available when you install the Azure Information Pro
 > [!TIP]
 > When you compare the minimum versions in the tables with the versions you have, remember the common practice of release versions to omit leading zeros.
 > 
-> For example, you have version 4.2128.0 and read that 4.7.1+ is the minimum version. For easier comparison, read 4.7.1 (no leading zeros) as 4.**0007**.1, (not 4.**7000**.1). Your version of 4.2128.0 is higher than 4.0007.1, so your version is supported.
+> For example, you have version 4.2128.0 and read that 4.7.1+ is the minimum version. For easier comparison, read 4.7.1 (no leading zeros) as 4.**0007**.1 (and not 4.**7000**.1). Your version of 4.2128.0 is higher than 4.0007.1, so your version is supported.
 
 ### Sensitivity label capabilities in Word, Excel, and PowerPoint
 
