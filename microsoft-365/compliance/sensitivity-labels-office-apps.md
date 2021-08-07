@@ -46,7 +46,7 @@ Office for iOS and Office for Android: Sensitivity labels are built into the [Of
 Additional capabilities are available when you install the Azure Information Protection unified labeling client, which runs on Windows computers only. For these details, see [Compare the labeling clients for Windows computers](/azure/information-protection/rms-client/use-client#compare-the-labeling-clients-for-windows-computers).
 
 > [!TIP]
-> When you compare the minimum versions in the tables with the versions you have, remember that it's common practice for release versions to omit leading zeros.
+> When you compare the minimum versions in the tables with the versions you have, remember the common practice of release versions to omit leading zeros.
 > 
 > For example, you have version 4.2128.0 and read that 4.7.1+ is the minimum version. For easier comparison, read 4.7.1 (no leading zeros) as 4.**0007**.1, (not 4.**7000**.1). Your version of 4.2128.0 is higher than 4.0007.1, so your version is supported.
 
