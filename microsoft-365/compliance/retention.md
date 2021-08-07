@@ -287,7 +287,7 @@ Advantages of using adaptive scopes:
 
 - No limits on the [number of items per policy](retention-limits.md#maximum-number-of-items-per-policy). Although adaptive scopes are still subject to the [maximum number of policies per tenant](retention-limits.md#maximum-number-of-policies-per-tenant) limitations, the more flexible configuration will likely result in far fewer policies.
 
-- More powerful targeting for your retention policies. For example, you can assign different retention settings to users according to their geographical location without the administrative overhead of creating and maintaining groups.
+- More powerful targeting for your retention requirements. For example, you can assign different retention settings to users according to their geographical location without the administrative overhead of creating and maintaining groups.
 
 - Query-based membership provides more robust targeting to accommodate business changes that might not be reliably reflected in group membership or external processes that rely on cross-department communication.
 
