@@ -34,7 +34,7 @@ For information about configuration options using Intune, Configuration Manager,
 
 ## Customer data, cloud protection, and sample submission
 
-When onboarding to Defender for Endpoint, Defender for Endpoint treats all file samples as customer data, honoring both the geo and data retention choices the customer selected. Geo and data retention choices are described here: [Microsoft Defender for Endpoint data storage and privacy](data-storage-privacy#data-storage-location.md).
+When onboarding to Defender for Endpoint, Defender for Endpoint treats all file samples as customer data, honoring both the geo and data retention choices the customer selected. Geo and data retention choices are described here: [Microsoft Defender for Endpoint data storage and privacy](data-storage-privacy.md#data-storage-location).
 The product has received multiple compliance certifications, demonstrating continued adherence to a sophisticated set of compliance controls:
 
 - ISO 27001
