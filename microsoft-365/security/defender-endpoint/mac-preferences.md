@@ -576,6 +576,8 @@ The following templates contain entries for all settings described in this docum
         <true/>
         <key>passiveMode</key>
         <false/>
+        <key>maximumOnDemandScanThreads</key>
+        <integer>1</integer>
         <key>exclusions</key>
         <array>
             <dict>
@@ -726,6 +728,8 @@ The following templates contain entries for all settings described in this docum
                     <true/>
                     <key>passiveMode</key>
                     <false/>
+                    <key>maximumOnDemandScanThreads</key>
+                    <integer>1</integer>
                     <key>exclusions</key>
                     <array>
                         <dict>
