@@ -160,4 +160,4 @@ For more detailed instructions, see [Set up Advanced Audit](set-up-advanced-audi
 
 ## Training
 
-Training your security operations team, IT administrators, and compliance investigators team in Basic Audit and Advanced Audit can help your organization get started more quickly using auditing to help with your investigations. Microsoft 365 provides the following resource to help these users in your organization getting started with auditing: [Describe the audit capabilities in Microsoft 365](/learn/modules/describe-audit-capabilities-microsoft-365).
+Training your security operations team, IT administrators, and compliance investigators team in the fundamentals for Basic Audit and Advanced Audit can help your organization get started more quickly using auditing to help with your investigations. Microsoft 365 provides the following resource to help these users in your organization getting started with auditing: [Describe the eDiscovery and audit capabilities of Microsoft 365](/learn/modules/describe-ediscovery-capabilities-of-microsoft-365).

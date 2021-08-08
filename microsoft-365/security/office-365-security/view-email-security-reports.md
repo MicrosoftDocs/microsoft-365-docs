@@ -54,22 +54,25 @@ The aggregate view shows data for the last 90 days and the detail view shows dat
 
 To view the report in the Microsoft 365 Defender portal, go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. On the **Email & collaboration reports** page, find **Compromised users** and then click **View details**. To go directly to the report, open <https://security.microsoft.com/reports/CompromisedUsers>.
 
-On the **Compromised users** page, you can filter both the chart and the details table by clicking **Filter** and selecting one or more of the following values in the flyout that appears:
+On the **Compromised users** page, the chart shows the following information for the specified date range:
 
-- **Date (UTC)**: **Start date** and **End date**.
-- **Activity**:
-  - **Suspicious**: The user account has sent suspicious email and is at risk of being restricted from sending email.
-  - **Restricted**: The user account has been restricted from sending email due to highly suspicious patterns.
+- **Restricted**: The user account has been restricted from sending email due to highly suspicious patterns.
+- **Suspicious**: The user account has sent suspicious email and is at risk of being restricted from sending email.
 
-When you're finished configuring the filters, click **Apply**, **Cancel**, or **Clear filters**.
-
-![Report view in the Compromised users report](../../media/compromised-users-report-activity-view.png)
-
-In the details table below the graph, you can see the following details:
+The details table below the graph shows the following information:
 
 - **Creation time**
 - **User ID**
 - **Action**
+
+You can filter both the chart and the details table by clicking **Filter** and selecting one or more of the following values in the flyout that appears:
+
+- **Date (UTC)**: **Start date** and **End date**.
+- **Activity**: **Restricted** or **Suspicious**
+
+When you're finished configuring the filters, click **Apply**, **Cancel**, or **Clear filters**.
+
+![Report view in the Compromised users report](../../media/compromised-users-report-activity-view.png)
 
 ## Exchange transport rule report
 
@@ -155,13 +158,33 @@ To view the report in the Microsoft 365 Defender portal, go to **Reports** \> **
 
 ![Type view in the Mailflow status report](../../media/mail-flow-status-report-type-view.png)
 
-On the **Mailflow status report** page, the **Type** tab is selected by default. By default, this view contains a chart and a details table that's configured with the following filters:
+On the **Mailflow status report** page, the **Type** tab is selected by default. The chart shows the following information for the specified date range:
 
-- **Date (UTC)** The last 7 days.
+- **Good mail**
+- **Total**
+- **Malware**
+- **Phishing email**
+- **Spam**
+- **Edge protection**
+- **Rule messages**
+
+The details table below the graph shows the following information:
+
+- **Direction**
+- **Type**
+- **24 hours**
+- **3 days**
+- **7 days**
+- **15 days**
+- **30 days**
+
+You can filter both the chart and the details table by clicking **Filter** and selecting one or more of the following values in the flyout that appears:
+
+- **Date (UTC)**: **Start date** and **End date**
 - **Mail direction**:
   - **Inbound**
   - **Outbound**
-  - **Intra-org**: this count is for messages within a tenant i.e sender abc@domain.com sends to recipient xyz@domain.com  (counted separately from **Inbound** and **Outbound**)
+  - **Intra-org**: Messages sent within the same tenant. For example, chris@contoso.com sends a message to michelle@contso.com.
 - **Type**:
   - **Good mail**
   - **Malware**
@@ -171,19 +194,7 @@ On the **Mailflow status report** page, the **Type** tab is selected by default.
   - **Phishing email**
 - **Domain**: **All**
 
-The chart is organized by the **Type** values.
-
-You can change these filters by clicking **Filter**.
-
-The following information is shown in the details table below the graph:
-
-- **Direction**
-- **Type**
-- **24 hours**
-- **3 days**
-- **7 days**
-- **15 days**
-- **30 days**
+When you're finished configuring the filters, click **Apply**, **Cancel**, or **Clear filters**.
 
 If you click **Choose a category for more details**, you can select from the following values:
 
@@ -202,13 +213,15 @@ Each exported .csv file is limited to 150,000 rows. If the data for that day con
 
 ![Direction view in the Mailflow status report](../../media/mail-flow-status-report-direction-view.png)
 
-If you click the **Direction** tab, the same default filters from the **Type** view are used.
+If you click the **Direction** tab, the chart shows the following information for the specified date range:
 
-The chart is organized by **Direction** values.
+- **Inbound**
+- **Outbound**
+- **Intra-org**
 
-You can change these filters by clicking **Filter**. The same filters from the **Type** view are used.
+The details table below the graph contains same information from the **Type** view.
 
-The details table contains same information from the **Type** view.
+You can filter both the chart and the details table by clicking **Filter**. The same filters from the **Type** view are available.
 
 The **Choose a category for more details** available selections and behavior are the same as the **Type** view.
 
@@ -224,58 +237,55 @@ The **Funnel** view shows you how Microsoft's email threat protection features f
 
 ![Funnel view in the Mailflow status report](../../media/mail-flow-status-report-funnel-view.png)
 
-If you click the **Funnel** tab, by default, this view contains a chart and a details table that's configured with the following filters:
-
-- **Date**: The last 7 days.
-
-- **Direction**:
-  - **Inbound**
-  - **Outbound**
-  - **Intra-org**: This count is for messages sent within a tenant; i.e, sender abc@domain.com sends to recipient xyz@domain.com (counted separately from Inbound and Outbound).
-
 The aggregate view and details table view allow for 90 days of filtering.
 
-You can change these filters by clicking **Filter**. The same filters from the **Type** view are used.
+If you click the **Funnel** tab, the chart shows messages organized into the following categories for the specified date range:
 
-This chart shows the email count organized by:
-
-- **Total email**
-- **Email after edge protection**
+- **Total email**: This value is always shown first. The remaining values are shown in descending order by message count.
+- **Email after Edge Protection**
 - **Email after transport rule** (mail flow rule)
 - **Email after anti-malware, file reputation, file type block**
-- **Email after anti-phish, URL reputation, brand impersonation, anti-spoof**
-- **Email after anti-spam, bulk mail filtering**
-- **Email after user and domain impersonation**<sup>\*</sup>
-- **Email after file and URL detonation**<sup>\*</sup>
-- **Email detected as benign after post-delivery protection (URL click time protection)**
-
-<sup>\*</sup> Defender for Office 365 only
-
-To view the email filtered by EOP or Defender for Office 365 separately, click on the value in the chart legend.
-
-The details table contains the following information, shown in descending date order:
-
-- **Date**
-- **Total email**
-- **Edge protection**
-- **Anti-malware, file reputation, file type block**:
   - **File reputation**: Messages filtered due to identification of an attached file by other Microsoft customers.
   - **File type block**: Messages filtered due to the type of malicious file identified in the message.
-- **Anti-phish, URL reputation, Brand impersonation, anti-spoof**:
+- **Email after anti-phish, URL reputation, brand impersonation, anti-spoof**
   - **URL reputation**: Messages filtered due to the identification of the URL by other Microsoft customers.
   - **Brand impersonation**: Messages filtered due to the message coming from well-known brand impersonating senders.
   - **Anti-spoof**: Messages filtered due to the message attempting to spoof a domain that the recipient belongs to, or a domain that the message sender doesn't own.
-- **Anti-spam, bulk mail filtering**:
+- **Email after anti-spam, bulk mail filtering**
   - **Bulk mail filtering**: Messages filtered based on the bulk complain level (BCL) threshold in an anti-spam policy.
-- **User and domain impersonation (Defender for Office 365)**:
-  - **User impersonation**: Messages filtered due to an attempt to impersonate a user (message sender) that's defined in the impersonation protection settings of an anti-phishing policy.
-  - **Domain impersonation**: Messages filtered due to an attempt to impersonate a domain that's defined in the impersonation protection settings of an anti-phishing policy.
-- **File and URL detonation (Defender for Office 365)**:
+- **Email after user and domain impersonation**
+  - **User impersonation**: Messages filtered due to an attempt to impersonate a user (message sender) that's defined in the impersonation protection settings of an anti-phishing policy in Defender for Office 365.
+  - **Domain impersonation**: Messages filtered due to an attempt to impersonate a domain that's defined in the impersonation protection settings of an anti-phishing policy in Defender for Office 365.
+- **Email after file and URL detonation**
   - **File detonation**: Messages filtered by a Safe Attachments policy.
   - **URL detonation**: Message filtered by a Safe Links policy.
-- **Post-delivery protection and ZAP (ATP), or ZAP (EOP)**: Zero-hour auto purge (ZAP) for malware, spam, and phishing.
+- **Email detected as benign after post-delivery protection (URL click time protection)**
+
+The categories are color coded by **EOP** or **Defender for Office 365**. To filter the categories in the chart, click **EOP** or **Defender for Office 365** in the chart legend (one click to eliminate; a second click to bring back).
+
+The details table below the chart contains the same information as the chart, but with different (shorter) descriptions:
+
+- **Total email**
+- **Edge protection**
+- **Rule messages**
+- **Anti-malware, file reputation, file type, file block**
+- **Anti-phish, URL reputation, brand impersonation, anti-spoof**
+- **Anti-spam, bulk mail filtering**
+- **User and domain impersonation**
+- **File and URL detonation (ATP)**: Defender for Office 365
+- **Post-delivery protection and ZAP (ATP)**: Defender for Office 365
 
 If you select a row in the details table, a further breakdown of the email counts are shown in the flyout.
+
+You can filter both the chart and the details table by clicking **Filter** and selecting one or more of the following values in the flyout that appears:
+
+- **Date (UTC)**: **Start date** and **End date**
+- **Mail direction**:
+  - **Inbound**
+  - **Outbound**
+  - **Intra-org**: Messages sent within the same tenant. For example, chris@contoso.com sends a message to michelle@contso.com.
+
+When you're finished configuring the filters, click **Apply**, **Cancel**, or **Clear filters**.
 
 #### Export from Funnel view
 
@@ -292,20 +302,11 @@ Each exported .csv file is limited to 150,000 rows. If the data contains more th
 
 The **Tech view** is similar to the **Funnel** view, providing more granular details for the configured threat protections features. From the chart, you can see how messages are categorized at the different stages of threat protection.
 
-If you click the **Tech view** tab, by default, this view contains a chart and a details table that's configured with the following filters:
+![Tech view in the Mailflow status report](../../media/mail-flow-status-report-tech-view.png)
 
-- **Date**: The last 7 days.
+The aggregate view and details table allow for 90 days of filtering.
 
-- **Direction**:
-  - **Inbound**
-  - **Outbound**
-  - **Intra-org**: this count is for messages within a tenant i.e sender abc@domain.com sends to recipient xyz@domain.com (counted separately from Inbound and Outbound)
-
-The aggregate view and details table view allow for 90 days of filtering.
-
-You can change these filters by clicking **Filter**. The same filters from the **Type** view are used.
-
-This chart shows messages organized into the following categories:
+If you click the **Tech view** tab, the chart shows messages organized into the following categories for the specified date range:
 
 - **Total email**
 - **Edge allow** and **Edge filtered**
@@ -320,13 +321,13 @@ This chart shows messages organized into the following categories:
 
 When you hover over a category in the chart, you can see the number of messages in that category.
 
-The details table contains the following information, shown in descending date order:
+The details table below the chart contains the following information
 
 - **Date (UTC)**
 - **Total email**
 - **Edge filtered**
 - **Rule messages**: Messages filtered due to  mail flow rules (also known as transport rules).
-- **Anti-malware engine**, **Safe Attachments**<sup>\*</sup>:
+- **Anti-malware engine, Safe Attachments**<sup>\*</sup>:
 - **DMARC, impersonation**<sup>\*</sup>, **spoof**, **phish filtered**:
   - **DMARC**: Messages filtered due to the message failing its DMARC authentication check.
 - **URL detonation detection**<sup>\*</sup>
@@ -337,6 +338,16 @@ The details table contains the following information, shown in descending date o
 <sup>\*</sup> Defender for Office 365
 
 If you select a row in the details table, a further breakdown of the email counts are shown in the flyout.
+
+You can filter both the chart and the details table by clicking **Filter** and selecting one or more of the following values in the flyout that appears:
+
+- **Date (UTC)**: **Start date** and **End date**
+- **Mail direction**:
+  - **Inbound**
+  - **Outbound**
+  - **Intra-org**: Messages sent within the same tenant. For example, chris@contoso.com sends a message to michelle@contso.com.
+
+When you're finished configuring the filters, click **Apply**, **Cancel**, or **Clear filters**.
 
 #### Export from Tech view
 
@@ -349,8 +360,6 @@ Under **Date**, choose a range, and then click **Apply**. Data for the current f
 
 Each exported .csv file is limited to 150,000 rows. If the data contains more than 150,000 rows, then multiple .csv files will be created.
 
-![Tech view in the Mailflow status report](../../media/mail-flow-status-report-tech-view.png)
-
 ## Malware detections report
 
 The **Malware detections report** report shows information about malware detections in incoming and outgoing email messages (malware detected by Exchange Online Protection or EOP). For more information about malware protection in EOP, see [Anti-malware protection in EOP](anti-malware-protection.md).
@@ -361,14 +370,14 @@ To view the report in the Microsoft 365 Defender portal, go to **Reports** \> **
 
 ![Malware detections in email widget on the Email & collaboration reports page](../../media/malware-detections-widget.png)
 
-On the **Malware detections report** page, you can filter both the chart and the details table by clicking **Filter** and selecting one of the following values:
+On the **Malware detections report** page, the chart shows the following information for the specified date range:
 
-- **Date (UTC)** **Start date** and **End date**
-- **Direction**: **Inbound** and **Outbound**
+- **Outbound**
+- **Inbound**
 
 ![Report view in the Malware detection in email report](../../media/malware-detections-report-view.png)
 
-In the details table below the graph, you can see the following details:
+The details table below the graph shows the following information:
 
 - **Date**
 - **Sender address**
@@ -377,6 +386,13 @@ In the details table below the graph, you can see the following details:
 - **Subject**
 - **Filename**
 - **Malware name**
+
+You can filter both the chart and the details table by clicking **Filter** and selecting one of the following values:
+
+- **Date (UTC)** **Start date** and **End date**
+- **Direction**: **Inbound** and **Outbound**
+
+When you're finished configuring the filters, click **Apply**, **Cancel**, or **Clear filters**.
 
 ## Mail latency report
 
@@ -425,7 +441,7 @@ On the **Spoof mail report** page, you can filter both the chart and the details
 
 ![Spoof mail report page in the Microsoft 365 Defender portal](../../media/spoof-detections-report-page.png)
 
-In the details table below the graph, you can see the following details:
+The details table below the graph shows the following information:
 
 - **Date**
 - **Spoofed user**
@@ -713,11 +729,11 @@ If you click **Filter**, the following filters are available:
 
 When you're finished configuring the filters, click **Apply**, **Cancel**, or **Clear filters**.
 
-### View data by System override
+### View data by System override and Chart breakdown by Reason
 
-![Message override view in the Threat protection status report](../../media/threat-protection-status-report-message-override-view.png)
+![Message override and Chart breakdown by Reason view in the Threat protection status report](../../media/threat-protection-status-report-system-override-view-breakdown-by-reason.png)
 
-In the **View data by System override** view, the following override reason information is shown in the chart:
+In the **View data by System override** and **Chart breakdown by Reason** view, the following override reason information is shown in the chart:
 
 - **On-premises skip**
 - **IP allow**
@@ -725,9 +741,10 @@ In the **View data by System override** view, the following override reason info
 - **Organization allowed senders**
 - **Organization allowed domains**
 - **ZAP not enabled**
-- **Junk Mail folder not enabled**
 - **User Safe Sender**
 - **User Safe Domain**
+- **Phishing simulation**: For more information, see [Configure the delivery of third-party phishing simulations to users and unfiltered messages to SecOps mailboxes](configure-advanced-delivery.md).
+- **Third party filter**
 
 In the details table below the chart, the following information is available:
 
@@ -735,26 +752,78 @@ In the details table below the chart, the following information is available:
 - **Subject**
 - **Sender**
 - **Recipients**
-- **Detected by**
-- **Delivery Status**
+- **System override**
 - **Source of Compromise**
 - **Tags**
 
 If you click **Filter**, the following filters are available:
 
 - **Date (UTC)** **Start date** and **End date**
-- **Detection**
-- **Protected by**: **MDO** (Defender for Office 365) or **EOP**
-- **Direction**
+- **Reason**
+- **Direction**:
+  - **All**
+  - **Inbound**
+  - **Outbound**
 - **Tag**: Filter the results by users or groups that have had the specified user tag applied (including priority accounts). For more information about user tags, see [User tags](user-tags.md).
 - **Domain**
-- **Policy type**
+- **Policy type**:
+  - **All**
+  - **Anti-malware**
+  - **Safe Attachments**<sup>\*</sup>
+  - **Anti-phish**
+  - **Anti-spam**
+  - **Mail flow rule** (transport rule)
+  - **Others**
 - **Policy name** (details table only)
 - **Recipients**
 
+<sup>\*</sup> Defender for Office 365 only
+
 When you're finished configuring the filters, click **Apply**, **Cancel**, or **Clear filters**.
 
+### View data by System override and Chart breakdown by Delivery location
+
+![Message override and Chart breakdown by Delivery Location view in the Threat protection status report](../../media/threat-protection-status-report-system-override-view-breakdown-by-delivery-location.png)
+
+In the **View data by System override** and **Chart breakdown by Delivery location** view, the following override reason information is shown in the chart:
+
+- **Junk Mail folder not enabled**
+- **SecOps mailbox**: For more information, see [Configure the delivery of third-party phishing simulations to users and unfiltered messages to SecOps mailboxes](configure-advanced-delivery.md).
+
+In the details table below the chart, the following information is available:
+
+- **Date**
+- **Subject**
+- **Sender**
+- **Recipients**
+- **System override**
+- **Source of Compromise**
+- **Tags**
+
+If you click **Filter**, the following filters are available:
+
+- **Date (UTC)** **Start date** and **End date**
+- **Reason**
+- **Direction**:
+  - **All**
+  - **Inbound**
+  - **Outbound**
+- **Tag**: Filter the results by users or groups that have had the specified user tag applied (including priority accounts). For more information about user tags, see [User tags](user-tags.md).
+- **Domain**
+- **Policy type**:
+  - **All**
+  - **Anti-malware**
+  - **Safe Attachments**<sup>\*</sup>
+  - **Anti-phish**
+  - **Anti-spam**
+  - **Mail flow rule** (transport rule)
+  - **Others**
+- **Policy name** (details table only)
+- **Recipients**
+
 <sup>\*</sup> Defender for Office 365 only
+
+When you're finished configuring the filters, click **Apply**, **Cancel**, or **Clear filters**.
 
 ## Top malware report
 
@@ -817,7 +886,7 @@ To group the entries, click **Group** and select one of the following values fro
 
 ![User reported messages report](../../media/user-reported-messages-report.png)
 
-In the details table below the graph, you can see the following details:
+The details table below the graph shows the following information:
 
 - **Email subject**
 - **Reported by**

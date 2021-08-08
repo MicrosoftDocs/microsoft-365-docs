@@ -134,23 +134,23 @@ This section defines how "Client" will display on the card, and uses the value f
 This section defines how the "Contractor" will display on the card, and uses the value for the specific contract.
 
 ```JSON
-                      {
-                        "elmType": "div",
-                        "style": {
-                          "color": "#767676",
-                          "font-size": "12px"
+                        {
+                          "elmType": "div",
+                          "txtContent": "Contractor",
+                          "style": {
+                            "color": "#767676",
+                            "font-size": "12px",
+                            "margin-bottom": "2px"
+                          }
                         },
-                        "txtContent": "Client"
-                      },
-                      {
-                        "elmType": "div",
-                        "style": {
-                          "margin-bottom": "12px",
-                          "font-size": "16px",
-                          "font-weight": "600"
+                        {
+                          "elmType": "div",
+                          "style": {
+                            "margin-bottom": "12px",
+                            "font-size": "14px"
+                          },
+                          "txtContent": "[$Contractor]"
                         },
-                        "txtContent": "[$Client]"
-},
 ```
 
 ### Fee amount

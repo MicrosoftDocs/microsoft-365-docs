@@ -24,7 +24,7 @@ description: "This article describes how you can launch your portal using the Po
 A portal is a SharePoint communication site on your intranet that is high-traffic – a site that has anywhere from 10,000 to over 100,000 viewers over the course of several weeks. Use the Portal launch scheduler to launch your portal to ensure users have a smooth viewing experience when accessing your new SharePoint portal.
 <br>
 <br>
-The Portal launch scheduler is designed to help you follow a phased roll-out approach by batching viewers in waves and managing the URL redirects for the new portal. During the launch of each wave, you can gather user feedback, monitor portal performance, and pause the launch to resolve issues before proceeding with the next wave. Learn more about how to [plan a portal launch in SharePoint](/microsoft-365/Enterprise/Planportallaunchroll-out?view=o365-worldwide).
+The Portal launch scheduler is designed to help you follow a phased roll-out approach by batching viewers in waves and managing the URL redirects for the new portal. During the launch of each wave, you can gather user feedback, monitor portal performance, and pause the launch to resolve issues before proceeding with the next wave. Learn more about how to [plan a portal launch in SharePoint](/microsoft-365/Enterprise/Planportallaunchroll-out).
 
 **There are two types of redirections:**
 
@@ -112,15 +112,21 @@ Formerly, portal launches could only be scheduled through SharePoint PowerShell.
 
     > [!NOTE]
     > Up to 50 distinct users or security groups max can be used for the entire launch. Each launch is independent of each other, so if you schedule a launch on another portal, then you could use up to 50 users/security groups for that launch. Additionally, you can use up to 20 distinct users or security groups per wave. 
-
->The portal launch scheduler supports security groups and mail enabled security groups. 
-
+    >
+    > The portal launch scheduler supports security groups and mail enabled security groups. 
 
 8. Confirm portal launch details and select **Schedule**. Once the launch has been scheduled, any changes to the SharePoint portal home page will need to receive a healthy diagnostic result before the portal launch will resume.
 
 ### Launch a portal with over 100k users
 
 If you are planning to launch a portal with over 100,000 users, submit a support request following the steps listed below. Make sure to include all the requested information.
+
+> [!NOTE]
+>
+> - This process should only be followed if you meet the following requirements:
+> - The Launch Page has been completed.
+> - [Portal Health Guidance](https://aka.ms/portalhealth) has been followed.
+> - The Launch date is within 14 days.
 
 **Follow these steps:**
 
@@ -155,7 +161,7 @@ Launches scheduled using the Portal launch scheduler tool can be canceled, or de
 
 2. Then, select **Delete** and then when you see the message below select **Delete** again.
 
-   ![Image of the Portal launch scheduler tool](../media/portal-launch-delete-2.png)
+   ![Image of the prompt that asks if you want to delete or keep a scheduled launch](../media/portal-launch-delete-2.png)
 
 ## Use the PowerShell Portal launch scheduler
 

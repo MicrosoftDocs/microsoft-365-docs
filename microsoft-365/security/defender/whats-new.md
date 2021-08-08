@@ -31,8 +31,12 @@ The following features are generally available (GA) in the latest release of Mic
 
 RSS feed: Get notified when this page is updated by copying and pasting the following URL into your feed reader:
 ```http
-/api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+365+defender%22&locale=en-us
+https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+365+defender%22&locale=en-us
 ```
+
+## July 2021
+- [Professional services catalog](https://sip.security.microsoft.com/interoperability/professional_services)<br>Enhance the detection, investigation, and threat intelligence capabilities of the platform with supported partner connections.
+    
 
 ## May 2021
 

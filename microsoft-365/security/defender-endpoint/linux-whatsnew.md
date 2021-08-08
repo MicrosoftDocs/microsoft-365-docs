@@ -24,6 +24,14 @@ ms.technology: mde
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
+## 101.39.98 (30.121062.13998.0)
+
+- Performance improvements & bug fixes
+
+## 101.34.27 (30.121052.13427.0)
+
+- Performance improvements & bug fixes
+
 ## 101.29.64 (30.121042.12964.0)
 
 - Starting with this version, threats detected during on-demand antivirus scans triggered through the command-line client are automatically remediated. Threats detected during scans triggered through the user interface still require manual action.
