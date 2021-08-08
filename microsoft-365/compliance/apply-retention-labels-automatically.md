@@ -36,7 +36,7 @@ Auto-applying retention labels are powerful because:
     
 - Users no longer need to know about data governance policies - they can focus on their work.
     
-You can apply retention labels to content automatically when that content contains sensitive information, keywords or searchable properties, or a match for [trainable classifiers](classifier-get-started-with.md). Now in preview, you can also automatically apply a retention label to cloud attachments that are stored in SharePoint, OneDrive, or Microsoft 365 Groups.
+You can apply retention labels to content automatically when that content contains sensitive information, keywords or searchable properties, or a match for [trainable classifiers](classifier-get-started-with.md). Now in preview, you can also automatically apply a retention label to cloud attachments that are stored in SharePoint or OneDrive.
 
 > [!TIP]
 > Use searchable properties to identify [Teams meeting recordings](#microsoft-teams-meeting-recordings).
