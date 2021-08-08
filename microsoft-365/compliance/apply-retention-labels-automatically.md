@@ -265,7 +265,13 @@ When you choose the option to apply a label to cloud attachments (embedded links
 
 If the file is modified and shared again, a new copy of the file as a new version is saved in the Preservation Hold library.
 
-The cloud attachments supported are files stored in SharePoint and OneDrive. When you configure the locations for this option, select **SharePoint sites** for shared files stored in SharePoint communication sites, team sites that aren't connected by Microsoft 365 groups, and classic sites. Select **Microsoft 365 Groups** for shared files that are stored in team sites connected by Microsoft 365 groups, and **OneDrive accounts** for shared files stored in users' OneDrive. You will need to create separate retention policies if you want to retain or delete the original files, email messages, or Teams messages.
+The cloud attachments supported are files stored in SharePoint and OneDrive. When you configure the locations for this option, select:
+
+- **SharePoint sites** for shared files stored in SharePoint communication sites, team sites that aren't connected by Microsoft 365 groups, and classic sites. 
+- **Microsoft 365 Groups** for shared files that are stored in team sites connected by Microsoft 365 groups.
+- **OneDrive accounts** for shared files stored in users' OneDrive. 
+
+You will need to create separate retention policies if you want to retain or delete the original files, email messages, or Teams messages.
 
 To consider when auto-applying retention labels to cloud attachments:
 
