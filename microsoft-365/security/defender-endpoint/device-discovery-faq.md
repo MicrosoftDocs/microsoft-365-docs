@@ -71,7 +71,7 @@ ARP, FTP, HTTP, HTTPS, ICMP, LLMNR, NBNS, RDP, SIP, SMTP, SNMP, SSH, Telnet, UPN
  As device discovery uses passive methods to discover devices in the network, any device that communicates with your onboarded devices in the corporate network can be discovered and listed in the inventory. You can exclude devices from active probing only.
 
 ## How frequent is the active probing?
- Devices will actively be probed when changes in device characteristics are observed (every 1 to 3 weeks) to make sure the existing information is up-to-date.
+ Devices will actively be probed when changes in device characteristics are observed to make sure the existing information is up-to-date (typically, devices probed no more than once in a three-week period)
 
 ## My security tool raised alert on UnicastScanner.ps1 or port scanning activity initiated by it, what should I do?
  The active probing scripts are signed by Microsoft and are safe. You can add the following path to your exclusion list:
@@ -105,7 +105,7 @@ Unmanaged devices would typically get probed no more than once in a three-w
 ### Your Windows device already runs active discovery
 Active discovery capabilities have always been embedded in the Windows operating system, to find nearby devices, endpoints, and printers, for easier "plug and play" experiences and file sharing between endpoints in the network. Similar functionality is implemented in mobile devices, network equipment and inventory applications just to name a few.  
 
-Standard discovery uses the same discovery methods to identify Enterprise IoT (such as printers, cameras, media streamers) and endpoints, to have a unified visibility for all the devices in your network in the Microsoft 365 Defender Device Inventory. For example – Standard discovery identifies nearby endpointsin the network the same way Windows lists available printers in the network. 
+Standard discovery uses the same discovery methods to identify devices and to have a unified visibility for all the devices in your network in the Microsoft 365 Defender Device Inventory. For example – Standard discovery identifies nearby endpoints in the network the same way Windows lists available printers in the network. 
 
 Network security and monitoring tools are indifferent to such activities performed by devices on the network. 
 
