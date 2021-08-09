@@ -106,7 +106,7 @@ Enable the required permission on Xiaomi devices.
 
 ## Unable to allow permission for 'Permanent protection' during onboarding on some OEM devices
 
-**Applies to:** Specific OEM devices only
+**Applies to:** Specific OEM devices only.
 
 -   **Xiaomi with Android 11** 
 
