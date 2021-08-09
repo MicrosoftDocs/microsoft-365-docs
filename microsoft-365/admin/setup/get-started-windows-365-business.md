@@ -43,6 +43,7 @@ There are two different ways in which you can buy Windows 365 Business subscript
 - Microsoft 365 admin center
 
 After you buy a subscription, you can use the Microsoft 365 admin center to assign licenses to users in your organization.
+
 ### Buy subscriptions through the Windows 365 products site
 
 If you don't already have a Microsoft 365 subscription, you can buy your Windows 365 Business subscriptions on the [Windows 365 products site](https://www.microsoft.com/windows-365/business/compare-plans-pricing). Use the following steps to buy a Windows 365 Business subscription through the Windows 365 products page.
@@ -52,6 +53,13 @@ If you don't already have a Microsoft 365 subscription, you can buy your Windows
 3. On the **Thank you for choosing Windows 365 Business** page, follow the steps to set up your account.
 4. In **step 5 - Confirmation details**, if you are ready to assign licenses to users, select **Get started** to go to your Windows 365 home page at https://windows365.microsoft.com.
 5. On the Windows 365 home page, in the **Quick actions** section, select **Manage your organization**. This takes you to the Microsoft 365 admin center where you can assign licenses to users.
+
+Users without the Global or Billing admin roles can use self-service purchase to buy a subscription for Windows 365 Business directly from the [Windows 365 Business products site](https://www.microsoft.com/windows-365/business?rtc=1). A user who buys a subscription this way is granted a limited view of the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339), where they can assign licenses for that subscription to other users in their organization. Assigning a license to another user automatically creates a Windows 365 Business Cloud PC for them, which can be accessed from the [Windows 365 home page](https://windows365.microsoft.com/).
+
+> [!NOTE]
+> Self-service purchase isn’t available in India or for government or education customers.
+
+To learn more about self-service purchase, see the [Self-service purchase FAQ](../../commerce/subscriptions/self-service-purchase-faq.yml).
 
 ### Buy a subscription through the Microsoft admin center
 
