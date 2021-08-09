@@ -109,8 +109,8 @@ Attack surface reduction is all about reducing the places and ways your organiza
 
 - [Ransomware mitigation](#ransomware-mitigation)
 - [Device control](#device-control)
-- [Web protection](#web-protection)
 - [Network protection](#network-protection)
+- [Web protection](#web-protection)
 - [Network firewall](#network-firewall)
 
 ### Ransomware mitigation
@@ -138,19 +138,36 @@ You can configure Defender for Endpoint to block or allow removable devices and 
 
 Follow the guidance in [How to control USB devices and other removable media using Microsoft Defender for Endpoint](control-usb-devices-using-intune.md).
 
-### Web protection
-
-With web protection, you can protect your organization's devices from web threats and unwanted content. Your web protection includes web threat protection and web content filtering (preview). Configure both sets of capabilities for your web protection.
-
-1. Follow the guidance in [Protect your organization against web threats](web-threat-protection.md).
-
-2. Follow the guidance in [Web content filtering](web-content-filtering.md).
-
 ### Network protection
 
 With network protection, you can help protect your organization against dangerous domains that might host phishing scams, exploits, and other malicious content on the Internet.
 
-Follow the guidance in [Turn on network protection](enable-network-protection.md).
+You can use PowerShell, Microsoft Endpoint Manager, or Group Policy to enable network protection. To learn more, see [Turn on network protection](enable-network-protection.md).
+
+### Web protection
+
+With web protection, you can protect your organization's devices from web threats and unwanted content. Your web protection includes web threat protection and web content filtering (preview). Configure both sets of capabilities for your web protection.
+
+1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)), and sign in.
+ 
+2. Choose **Endpoint security** > **Attack surface reduction**, and then choose **+ Create policy**.
+
+3. Select a platform, such as **Windows 10 and later**, select the **Web protection** profile, and then choose **Create**. 
+
+4. On the **Basics** tab, specify a name and description, and then choose **Next**.
+
+5. On the **Configuration settings** tab, expand **Web Protection**, specify your settings, and then choose **Next**.
+
+   - Set **Enable network protection** to **Enabled** so web protection is turned on. Alternately, you can set network protection to **Audit mode** to see how it will work in your environment. In audit mode, network protection does not prevent users from visiting sites or domains, but it does track detections as events. 
+   - To protect users from potential phishing scams and malicious software, turn **Require SmartScreen for Microsoft Edge Legacy** to **Yes**.
+   - To prevent users from bypassing warnings about potentially malicious sites, set **Block malicious site access** to **Yes**.
+   - To prevent users from bypassing the warnings and downloading unverified files, set **Block unverified file download** tl **Yes**. 
+
+6. On the **Scope tags** tab, if your organization is using scope tags, choose **+ Select scope tags**, and then choose **Next**. (If you are not using scope tags, choose **Next**.)
+
+3. Follow the guidance in [Web content filtering](web-content-filtering.md).
+
+
 
 ### Network firewall
 
