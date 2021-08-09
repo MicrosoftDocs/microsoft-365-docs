@@ -81,7 +81,7 @@ Admins can remove users from the Restricted users page in the Microsoft 365 Defe
 6. Click **Yes** to confirm the change.
 
    > [!NOTE]
-   > It might take up to 24 hours for all restrictions to be removed from the user.
+   > It might take up to 1 hours for all restrictions to be removed from the user.
 
 ## Verify the alert settings for restricted users
 
