@@ -104,7 +104,7 @@ Enable the required permission on Xiaomi devices.
 - Display pop-up windows while running in the background.
 
 
-## Unable to allow permission for 'Permanent protection' during onboarding, on some OEM devices
+## Unable to allow permission for 'Permanent protection' during onboarding on some OEM devices
 
 **Applies to:** Specific OEM devices only
 
