@@ -116,7 +116,7 @@ Defender App asks for Battery Optimization/Permanent Protection permission on de
 Xiomi changed the battery optimization permissions in Android 11. Defender is not allowed to configure this setting to ignore battery optimizations.
 
 **Solution:**
-We are working with OEMs for a solution to enable this permission form app onboarding screen. We will update the documentation as this is resolved.
+We are working with OEM to find a solution to enable this permission from the app onboarding screen. We will update the documentation when this is resolved.
 User can follow below steps to enable the same permissions form device settings.  
 
 1. Go to Settings on your device.
