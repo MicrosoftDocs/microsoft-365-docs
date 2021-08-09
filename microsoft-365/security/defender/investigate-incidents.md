@@ -59,7 +59,7 @@ You can also open the main page for an incident by selecting the incident name f
 
 The **Summary** page gives you a snapshot glance at the top things to notice about the incident.
 
-:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="Example of the Summary page for an incident in the Microsoft 365 security center":::
+:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="Example of the Summary page for an incident in the Microsoft 365 Defender portal":::
 
 Information is organized in these sections.
 
@@ -71,7 +71,7 @@ Information is organized in these sections.
 | Incident information | Displays the properties of the incident, such as tags, status, and severity. |
 |||
 
-Use the **Summary** page to assess the relative importance of the incident and quickly access the associated alerts and impacted entites.
+Use the **Summary** page to assess the relative importance of the incident and quickly access the associated alerts and impacted entities.
 
 ## Alerts
 
@@ -88,17 +88,25 @@ Here's an example.
 
 By default, the alerts are ordered chronologically to allow you to see how the attack played out over time. When you select an alert within an incident, Microsoft 365 Defender displays the alert information specific to the context of the overall incident. 
 
-You can see the events of the alert, which other triggered alerts caused the current alert, and all the affected entities and activities involved in the attack, including files, users, and mailboxes.
+You can see the events of the alert, which other triggered alerts caused the current alert, and all the affected entities and activities involved in the attack, including devices, files, users, and mailboxes.
 
 Here's an example.
 
 :::image type="content" source="../../media/investigate-incidents/incident-alert-example.png" alt-text="Example of an alert details page within an incident":::
 
-This incident alert page is composed of these sections:
+The incident alert page has these sections:
 
-- Alert story, which includes a summary of what happened
-- Related events and alerts
-- Summary details
+- Alert story, which includes:
+
+   - What happened
+
+   - Actions taken
+
+   - Related events
+
+- Alert properties in the right pane (state, details, description, and others)
+
+Not every alert will have all of the listed subsections in the **Alert story** section.
 
 Learn how to use the alert queue and alert pages in [investigate alerts](investigate-alerts.md).
 
@@ -108,14 +116,14 @@ The **Devices** tab lists all the devices related to the incident. Here's an exa
 
 :::image type="content" source="../../media/investigate-incidents/incident-devices.png" alt-text="Example of a Devices page for an incident":::
 
-You can select the check mark for a device to see details of the device, directory data, active alerts, and logged on users. Select the name of the device to see device details in the Microsoft Defender for Endpoints device inventory.
+You can select the check mark for a device to see details of the device, directory data, active alerts, and logged on users. Select the name of the device to see device details in the Microsoft Defender for Endpoints device inventory. Here's an example.
 
 :::image type="content" source="../../media/investigate-incidents/incident-devices-details.png" alt-text="Example of a devices page for Microsoft Defender for Endpoints":::
 
 From the device page, you can gather additional information about the device, such as all of its alerts, a timeline, and security recommendations. For example, from the **Timeline** tab, you can scroll through the machine timeline and view all events and behaviors observed on the machine in chronological order, interspersed with the alerts raised.
 
 > [!TIP]
-> You can do on-demand scans on a device page. In the Microsoft 365 security center, choose **Endpoints > Device inventory**. Select a device that has alerts, and then run an antivirus scan. Actions, such as antivirus scans, are tracked and are visible on the **Device inventory** page. To learn more, see [Run Microsoft Defender Antivirus scan on devices](/microsoft-365/security/defender-endpoint/respond-machine-alerts#run-microsoft-defender-antivirus-scan-on-devices).
+> You can do on-demand scans on a device page. In the Microsoft 365 Defender portal, choose **Endpoints > Device inventory**. Select a device that has alerts, and then run an antivirus scan. Actions, such as antivirus scans, are tracked and are visible on the **Device inventory** page. To learn more, see [Run Microsoft Defender Antivirus scan on devices](/microsoft-365/security/defender-endpoint/respond-machine-alerts#run-microsoft-defender-antivirus-scan-on-devices).
 
 ## Users
 
@@ -138,7 +146,7 @@ You can select the check mark for a mailbox to see a list of active alerts. Sele
 
 ## Investigations
 
-The **Investigations** tab lists all the [automated investigations](m365d-autoir.md) triggered by alerts in this incident. The investigations will perform remediation actions or wait for analyst approval of actions, depending on how you configured your automated investigations to run in Microsoft Defender for Endpoint and Defender for Office 365.
+The **Investigations** tab lists all the [automated investigations](m365d-autoir.md) triggered by alerts in this incident. Automated investigations will perform remediation actions or wait for analyst approval of actions, depending on how you configured your automated investigations to run in Microsoft Defender for Endpoint and Defender for Office 365.
 
 :::image type="content" source="../../media/investigate-incidents/incident-investigations.png" alt-text="Example of an Investigations page for an incident":::
 
