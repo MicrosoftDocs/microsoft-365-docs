@@ -72,7 +72,7 @@ In order to access the Microsoft 365 Defender portal, configure settings for Def
 > [!TIP]
 > Microsoft recommends using the concept of [least privileged access](/azure/active-directory/develop/secure-least-privileged-access), so that users and applications are granted only the minimum level of access needed to perform required tasks. 
 
-Defender for Endpoint leverages [built-in roles within Azure Active Directory](/azure/active-directory/roles/permissions-reference). Review the different roles that are available, and then choose an appropriate role for each persona in Defender for Endpoint. 
+Defender for Endpoint uses [built-in roles within Azure Active Directory](/azure/active-directory/roles/permissions-reference). Review the different roles that are available, and then choose an appropriate role for each persona in Defender for Endpoint. 
 
 To learn more, see [Prepare for your Defender for Endpoint deployment](prepare-deployment.md).
 
