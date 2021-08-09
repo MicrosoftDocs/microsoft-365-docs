@@ -148,6 +148,8 @@ You can use PowerShell, Microsoft Endpoint Manager, or Group Policy to enable ne
 
 With web protection, you can protect your organization's devices from web threats and unwanted content. Your web protection includes web threat protection and web content filtering (preview). Configure both sets of capabilities for your web protection.
 
+#### Configure web threat protection
+
 1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)), and sign in.
  
 2. Choose **Endpoint security** > **Attack surface reduction**, and then choose **+ Create policy**.
@@ -163,10 +165,30 @@ With web protection, you can protect your organization's devices from web threat
    - To prevent users from bypassing warnings about potentially malicious sites, set **Block malicious site access** to **Yes**.
    - To prevent users from bypassing the warnings and downloading unverified files, set **Block unverified file download** tl **Yes**. 
 
-6. On the **Scope tags** tab, if your organization is using scope tags, choose **+ Select scope tags**, and then choose **Next**. (If you are not using scope tags, choose **Next**.)
+6. On the **Scope tags** tab, if your organization is using scope tags, choose **+ Select scope tags**, and then choose **Next**. (If you are not using scope tags, choose **Next**.) To learn more about scope tags, see [Use role-based access control (RBAC) and scope tags for distributed IT](/mem/intune/fundamentals/scope-tags).
 
-3. Follow the guidance in [Web content filtering](web-content-filtering.md).
+7. On the **Assignments** tab, specify the users and devices to receive the web protection policy, and then choose **Next**.
 
+8. On the **Review + create** tab, review your policy settings, and then choose **Create**.
+
+#### Configure web content filtering
+
+1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com/](https://security.microsoft.com/)) and sign in.
+
+2. Choose **Settings** > **Endpoints**.
+
+3. Under **Rules**, choose **Web content filtering**, and then choose **+ Add policy**.
+
+4. In the **Add policy** flyout, on the **General** tab, specify a name for your policy, and then choose **Next**.
+
+5. On the **Blocked categories**, select one or more categories that you want to block, and then choose **Next**.
+
+6. On the **Scope** tab, select the device groups you want to receive this policy, and then choose **Next**.
+
+7. On the **Summary** tab, review your policy settings, and then choose **Save**.
+
+> [!TIP]
+> To learn more about configuring web content filtering, see [Web content filtering](web-content-filtering.md).
 
 
 ### Network firewall
