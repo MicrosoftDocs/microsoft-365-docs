@@ -50,8 +50,7 @@ The same list of indicators is honored by the prevention agent. Meaning, if Micr
 
 The automated investigation and remediation behave the same. If an indicator is set to "Allow", Automated investigation and remediation will ignore a "bad" verdict for it. If set to "Block", Automated investigation and remediation will treat it as "bad".
 
-> [!NOTE]
-> The EnableFileHashComputation setting computes the file hash for the cert and file IoC during file scans. It supports IoC enforcement of hashes and certs belong to trusted applications. It will be concurrently enabled and disabled with the allow or block file setting. EnableFileHashComputation is enabled manually through Group Policy, and is disabled by default.
+The EnableFileHashComputation setting computes the file hash for the cert and file IoC during file scans. It supports IoC enforcement of hashes and certs belong to trusted applications. It will be concurrently enabled and disabled with the allow or block file setting. EnableFileHashComputation is enabled manually through Group Policy, and is disabled by default.
 
 The current supported actions are:
 
@@ -76,8 +75,7 @@ You can create an indicator for:
 
 The automated investigation and remediation behave the same. If an indicator is set to "Allow", Automated investigation and remediation will ignore a "bad" verdict for it. If set to "Block", Automated investigation and remediation will treat it as "bad".
 
-> [!NOTE]
-> The EnableFileHashComputation setting computes the file hash for the cert and file IoC during file scans; it supports IoC enforcement of hashes and certs belonging to trusted applications. Currently, EnableFileHashComputation will be enabled and disabled with the allow or block file setting. EnableFileHashComputation is enabled manually through Group Policy, and is disabled by default.
+The EnableFileHashComputation setting computes the file hash for the cert and file IoC during file scans; it supports IoC enforcement of hashes and certs belonging to trusted applications. Currently, EnableFileHashComputation will be enabled and disabled with the allow or block file setting. EnableFileHashComputation is enabled manually through Group Policy, and is disabled by default.
 
 - **Allow** - The IoC will be allowed to run on your devices.
 - **Audit** - An alert will be triggered when the IoC runs.
@@ -97,10 +95,10 @@ The automated investigation and remediation behave the same. If an indicator is 
 | [URLs and domains](indicator-ip-domain.md) | Allow <br> Audit <br> Block execution |
 | [Certificates](indicator-certificates.md) | Allow <br> Block and remediate |
 
+There is a limit of 15,000 indicators per tenant. File and certificate indicators do not block [exclusions defined for Microsoft Defender Antivirus](/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus). Indicators are not supported in Microsoft Defender Antivirus when it is in passive mode.
+
 > [!Note]
 > The format for importing new indicators (IoCs) has changed according to the new updated actions and alerts settings. We recommend downloading the new CSV format that can be found at the bottom of the import panel.
-
-There is a limit of 15,000 indicators per tenant. File and certificate indicators do not block [exclusions defined for Microsoft Defender Antivirus](/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus). Indicators are not supported in Microsoft Defender Antivirus when it is in passive mode.
 
 ## Related topics
 
