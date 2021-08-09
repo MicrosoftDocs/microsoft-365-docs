@@ -1,5 +1,5 @@
 ---
-title: Try Microsoft 365 Defender incident response capabilities in a pilot environment, to prioritize and manage incidents, configure automated investigation and response, and use advanced hunting
+title: Try Microsoft 365 Defender incident response capabilities in a pilot environment
 description: Try incident response capabilities in Microsoft 365 Defender to prioritize and manage incidents, automate investigations, and use advanced hunting in threat detection.
 keywords: Microsoft 365 Defender trial, try Microsoft 365 Defender, evaluate Microsoft 365 Defender, Microsoft 365 Defender evaluation lab, Microsoft 365 Defender pilot, cyber security, advanced persistent threat, enterprise security, devices, device, identity, users, data, applications, incidents, automated investigation and remediation, advanced hunting
 search.product: eADQiWindows 10XVcnh
