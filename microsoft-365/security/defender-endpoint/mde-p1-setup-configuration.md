@@ -171,6 +171,9 @@ With web protection, you can protect your organization's devices from web threat
 
 8. On the **Review + create** tab, review your policy settings, and then choose **Create**.
 
+> [!TIP]
+> To learn more about web threat protection, see [Protect your organization against web threats](web-threat-protection.md).
+
 #### Configure web content filtering
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com/](https://security.microsoft.com/)) and sign in.
