@@ -92,6 +92,18 @@ Depending on the number and type of active insider risk management policies in y
 
 To search the alert name for a specific word, select the **Search** control and type the word to search. The search results display any policy alert containing the word defined in the search.
 
+## Dismiss multiple alerts (preview)
+
+It may help save triage time for analysts and investigators to immediately dismiss multiple alerts at once. The **Dismiss alerts** command bar option allows you to select one or more alerts with a *Needs review* status on the dashboard and quickly dismiss these alerts as benign as appropriate in your triage process. You can select up to 400 alerts to dismiss at one time.
+
+To dismiss an insider risk alert, complete the following steps:
+
+1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select the **Alerts** tab.
+2. On the **Alerts dashboard**, select the alert (or alerts) with a *Needs review* status that you want to dismiss.
+3. On the Alerts command bar, select **Dismiss alerts**.
+4. On the **Dismiss alerts** detail pane, you can review the user and policy details associated with the selected alerts.
+5. Select **Dismiss alerts** to resolve the alerts as benign or select **Cancel** to close the details pane without dismissing the alerts.
+
 ## Triage alerts
 
 To triage an insider risk alert, complete the following steps:
