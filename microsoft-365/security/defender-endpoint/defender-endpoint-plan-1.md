@@ -19,10 +19,10 @@ f1.keywords: NOCSH
 
 Microsoft Defender for Endpoint is an enterprise endpoint security platform designed to help organizations like yours to prevent, detect, investigate, and respond to advanced threats. 
 
-We are pleased to announce that soon, Microsoft Defender for Endpoint will be available in two plans: 
+We are pleased to announce that soon, Defender for Endpoint will be available in two plans: 
 
-- Microsoft Defender for Endpoint Plan 1, currently in preview, and described in this article
-- [Microsoft Defender for Endpoint Plan 2](microsoft-defender-endpoint.md), available now, and known as [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md).
+- Defender for Endpoint Plan 1, currently in preview, and described in this article
+- [Defender for Endpoint Plan 2](microsoft-defender-endpoint.md), available now, and known as [Defender for Endpoint](microsoft-defender-endpoint.md).
 
 The following image depicts what's included in Defender for Endpoint Plan 1 (preview):
 
@@ -31,13 +31,13 @@ The following image depicts what's included in Defender for Endpoint Plan 1 (pre
 This article focuses on Defender for Endpoint Plan 1, currently in preview. Use this guide to:
 
 - [Get an overview of what’s included in Defender for Endpoint Plan 1 (preview)](#whats-included-in-defender-for-endpoint-plan-1)
-- [Compare Microsoft Defender for Endpoint Plan 1 (preview) to Plan 2](defender-endpoint-plan-1-2.md)
+- [Compare Defender for Endpoint Plan 1 (preview) to Plan 2](defender-endpoint-plan-1-2.md)
 - [Learn how to set up and configure Defender for Endpoint Plan 1 (preview)](mde-p1-setup-configuration.md)
 - [Get started using the Microsoft 365 Defender portal, where you can view incidents and alerts, manage devices, and use reports about detected threats](mde-plan1-getting-started.md)
 - [Find information about on maintenance and operations](mde-p1-maintenance-operations.md)
 
 > [!TIP]
-> [Learn more about the differences between Microsoft Defender for Endpoint Plan 1 (preview) and Plan 2](defender-endpoint-plan-1-2.md).
+> [Learn more about the differences between Defender for Endpoint Plan 1 (preview) and Plan 2](defender-endpoint-plan-1-2.md).
 
 ## What's included in Defender for Endpoint Plan 1?
 
@@ -82,7 +82,7 @@ To learn more, see the following articles:
 
 ## Attack surface reduction
 
-Your organization’s attack surfaces are all the places where you’re vulnerable to cyberattacks. With Defender for Endpoint Plan 1, you can reduce your attack surfaces by protecting the devices and applications that your organization uses. The attack surface reduction capabilities in Defender for Endpoint Plan 1 are described in the following sections.
+Your organization’s attack surfaces are all the places where you’re vulnerable to cyberattacks. With Defender for Endpoint Plan 1 (preview), you can reduce your attack surfaces by protecting the devices and applications that your organization uses. The attack surface reduction capabilities that are included in Defender for Endpoint Plan 1 (preview) are described in the following sections.
 
 - [Ransomware mitigation](#ransomware-mitigation)
 - [Device control](#device-control)
