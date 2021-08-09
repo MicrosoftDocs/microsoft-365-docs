@@ -141,5 +141,3 @@ Defender for Endpoint directly integrates with various Microsoft solutions, incl
 With Microsoft 365 Defender, Defender for Endpoint and various Microsoft security solutions form a unified pre- and post-breach enterprise defense suite that natively integrates across endpoint, identity, email, and applications to detect, prevent, investigate, and automatically respond to sophisticated attacks.
 
 
-## Related topic
-[Microsoft Defender for Endpoint helps detect sophisticated threats](https://www.microsoft.com/itshowcase/microsoft-defender-atps-antivirus-capabilities-boost-malware-protection)

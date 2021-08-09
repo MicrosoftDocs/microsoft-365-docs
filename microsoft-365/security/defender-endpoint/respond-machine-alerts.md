@@ -54,6 +54,7 @@ Response actions run along the top of a specific device page and include:
 >
 > - These response actions are only available for devices on Windows 10, version  1703 or later.
 > - For non-Windows platforms, response capabilities (such as Device isolation) are dependent on the third-party capabilities.
+> - For Microsoft first party agents, please refer to the "more information" link under each feature for minimum OS requirements.
 
 ## Manage tags
 
@@ -78,6 +79,10 @@ For more information on live response, see [Investigate entities on devices usin
 ## Collect investigation package from devices
 
 As part of the investigation or response process, you can collect an investigation package from a device. By collecting the investigation package, you can identify the current state of the device and further understand the tools and techniques used by the attacker.
+
+> [!IMPORTANT]
+>
+> - These response actions are only available for devices on Windows 10, version  1703 or later.
 
 To download the package (Zip file) and investigate the events that occurred on a device
 
@@ -106,7 +111,7 @@ The package contains the following folders:
 |Autoruns|Contains a set of files that each represent the content of the registry of a known auto start entry point (ASEP) to help identify attacker's persistency on the device. <p> <div class="alert"><b>NOTE:</b> If the registry key is not found, the file will contain the following message: "ERROR: The system was unable to find the specified registry key or value."<div>|
 |Installed programs|This .CSV file contains the list of installed programs that can help identify what is currently installed on the device. For more information, see [Win32_Product class](https://go.microsoft.com/fwlink/?linkid=841509).|
 |Network connections|This folder contains a set of data points related to the connectivity information which can help in identifying connectivity to suspicious URLs, attacker's command and control (C&C) infrastructure, any lateral movement, or remote connections. <ul><li>ActiveNetConnections.txt: Displays protocol statistics and current TCP/IP network connections. Provides the ability to look for suspicious connectivity made by a process.</li><li>Arp.txt: Displays the current address resolution protocol (ARP) cache tables for all interfaces. ARP cache can reveal additional hosts on a network that have been compromised or suspicious systems on the network that might have been used to run an internal attack.</il><li>DnsCache.txt: Displays the contents of the DNS client resolver cache, which includes both entries preloaded from the local Hosts file and any recently obtained resource records for name queries resolved by the computer. This can help in identifying suspicious connections.</li><li>IpConfig.txt: Displays the full TCP/IP configuration for all adapters. Adapters can represent physical interfaces, such as installed network adapters, or logical interfaces, such as dial-up connections.</li><li>FirewallExecutionLog.txt and pfirewall.log</li></ul>|
-|Prefetch files|Windows Prefetch files are designed to speed up the application startup process. It can be used to track all the files recently used in the system and find traces for applications that might have been deleted but can still be found in the prefetch file list. <il><li>Prefetch folder: Contains a copy of the prefetch files from `%SystemRoot%\Prefetch`. NOTE: It is suggested to download a prefetch file viewer to view the prefetch files.</li><li>PrefetchFilesList.txt: Contains the list of all the copied files which can be used to track if there were any copy failures to the prefetch folder.</li></ul>|
+|Prefetch files|Windows Prefetch files are designed to speed up the application startup process. It can be used to track all the files recently used in the system and find traces for applications that might have been deleted but can still be found in the prefetch file list. <ul><li>Prefetch folder: Contains a copy of the prefetch files from `%SystemRoot%\Prefetch`. NOTE: It is suggested to download a prefetch file viewer to view the prefetch files.</li><li>PrefetchFilesList.txt: Contains the list of all the copied files which can be used to track if there were any copy failures to the prefetch folder.</li></ul>|
 |Processes|Contains a .CSV file listing the running processes, which provides the ability to identify current processes running on the device. This can be useful when identifying a suspicious process and its state.|
 |Scheduled tasks|Contains a .CSV file listing the scheduled tasks, which can be used to identify routines performed automatically on a chosen device to look for suspicious code which was set to run automatically.|
 |Security event log|Contains the security event log, which contains records of login or logout activity, or other security-related events specified by the system's audit policy. <p><div class="alert"><b>NOTE:</b> Open the event log file using Event viewer.</div>|

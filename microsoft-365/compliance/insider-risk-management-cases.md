@@ -146,7 +146,7 @@ For more information about the Activity explorer, see the [Insider risk manageme
 
 ### Content explorer
 
-The **Content explorer** tab allows risk analysts and investigators to review copies of all individual files and email messages associated with risk alerts. For example, if an alert is created when a user downloads hundreds of files from SharePoint Online and the activity triggers a policy alert, all the downloaded files for the alert are captured and copied to the insider risk management case from original storage sources.
+The **Content explorer** tab allows risk investigators to review copies of all individual files and email messages associated with risk alerts. For example, if an alert is created when a user downloads hundreds of files from SharePoint Online and the activity triggers a policy alert, all the downloaded files for the alert are captured and copied to the insider risk management case from original storage sources.
 
 The Content explorer is a powerful tool with basic and advanced search and filtering features. To learn more about using the Content explorer, see [Insider risk management Content explorer](insider-risk-management-content-explorer.md).
 
