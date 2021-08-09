@@ -28,7 +28,7 @@ This article focuses on Defender for Endpoint Plan 1, currently in preview.
 
 :::image type="content" source="../../media/mde-p1/mde-p1-overview-diagram.png" alt-text="Defender for Endpoint Plan 1 preview diagram":::
 
-*[Learn more about the differences between Microsoft Defender for Endpoint Plan 1 (preview) and Plan 2](defender-endpoint-plan-1-2.md).*
+[Learn more about the differences between Microsoft Defender for Endpoint Plan 1 (preview) and Plan 2](defender-endpoint-plan-1-2.md).
 
 Use this guide to:
 
