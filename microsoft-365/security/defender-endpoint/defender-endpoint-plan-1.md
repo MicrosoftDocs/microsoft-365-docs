@@ -43,8 +43,8 @@ This article focuses on Defender for Endpoint Plan 1, currently in preview. Use 
 
 Defender for Endpoint Plan 1 (preview) includes the following capabilities:
 
-- **[Next-generation protection](#next-generation-protection)** that includes industry leading antimalware and antivirus protection.
-- **[Manual response actions](#manual-response-actions)** that can be taken on devices or files when threats are detected.
+- **[Next-generation protection](#next-generation-protection)** that includes industry-leading, robust antimalware and antivirus protection.
+- **[Manual response actions](#manual-response-actions)** that your security team can take on devices or files when threats are detected.
 - **[Attack surface reduction capabilities](#attack-surface-reduction)** that harden devices, prevent zero-day attacks, and offer granular control over endpoint access and behaviors.
 - **[Centralized configuration and management](#centralized-management)** with the Microsoft 365 Defender portal and integration with Microsoft Endpoint Manager.
 - **[Cross-platform support](#cross-platform-support)** for Windows, macOS, iOS, and Android devices.
