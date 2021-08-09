@@ -151,9 +151,9 @@
             - name: Device inventory report
               href: working-with-managed-desktop/device-inventory-report.md
             - name: Device status report
-              href: device-status-report.md
+              href: working-with-managed-desktop/device-status-report.md
             - name: Security updates report
-              href: security-updates-report.md
+              href: working-with-managed-desktop/security-updates-report.md
         - name: Admin support
           href: working-with-managed-desktop/admin-support.md
         - name: User support
