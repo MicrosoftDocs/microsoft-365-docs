@@ -57,7 +57,7 @@ Before trying out this feature, make sure you meet the following requirements:
 
 ## User experience
 
-The blocking experience for third-party supported browsers is provided by Network Protection, which provides a system-level toast notifying the user of a blocked connection. For a more user-friendly, in-browser experience, consider using Microsoft Edge.
+The blocking experience for third-party supported browsers is provided by Network Protection, which provides a system-level message notifying the user of a blocked connection. For a more user-friendly, in-browser experience, consider using Microsoft Edge.
 
 ## Data handling
 
@@ -112,7 +112,7 @@ A panel will open where you can select the priority and add additional details s
 
 ### URL category lookup
 
-To determine the category of a website, you can use the URL search function available on the Microsoft 365 Defender portal (https://security.microsoft.com). In the URL search results, the web content filtering category appears under **URL/Domain details**. Administrators can also dispute the category of the domain directly from this page, as shown in the image below. If the category result is not shown, the URL is not currently assigned to an existing web content filtering category.
+To determine the category of a website, you can use the URL search function available on the Microsoft 365 Defender portal (https://security.microsoft.com) under **Endpoints** > **Search**. In the URL search results, the web content filtering category appears under **URL/Domain details**. Administrators can also dispute the category of the domain directly from this page, as shown in the image below. If the category result is not shown, the URL is not currently assigned to an existing web content filtering category.
 
 ![Image of web content filtering category lookup results](../../media/web-content-filtering-category-lookup.png)
 
