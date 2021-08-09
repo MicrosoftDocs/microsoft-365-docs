@@ -34,6 +34,9 @@ You can use the Content Search feature to search for and delete an email message
 > [!CAUTION]
 > Search and purge is a powerful feature that allows anyone that is assigned the necessary permissions to delete email messages from mailboxes in your organization.
 
+> [!NOTE]
+> While searching is supported for Teams, deleting is not. Purging Teams messages is not supported by Content Search purge action. eDiscovery will not remove content from the Teams workload.  
+
 ## Before you begin
 
 - To create and run a Content search, you have to be a member of the **eDiscovery Manager** role group or be assigned the **Compliance Search** role in Security & Compliance Center. To delete messages, you have to be a member of the **Organization Management** role group or be assigned the **Search And Purge** role in Security & Compliance Center. For information about adding users to a role group, see [Assign eDiscovery permissions in the Security & Compliance Center](assign-ediscovery-permissions.md).
