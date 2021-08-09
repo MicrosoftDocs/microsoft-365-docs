@@ -146,7 +146,7 @@ You can use PowerShell, Microsoft Endpoint Manager, or Group Policy to enable ne
 
 ### Web protection
 
-With web protection, you can protect your organization's devices from web threats and unwanted content. Your web protection includes web threat protection and web content filtering (preview). Configure both sets of capabilities for your web protection.
+With web protection, you can protect your organization's devices from web threats and unwanted content. Your web protection includes [web threat protection](#configure-web-threat-protection) and [web content filtering](#configure-web-content-filtering) (preview). Configure both sets of capabilities for your web protection.
 
 #### Configure web threat protection
 
@@ -189,7 +189,6 @@ With web protection, you can protect your organization's devices from web threat
 
 > [!TIP]
 > To learn more about configuring web content filtering, see [Web content filtering](web-content-filtering.md).
-
 
 ### Network firewall
 
