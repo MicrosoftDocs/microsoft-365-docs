@@ -32,53 +32,29 @@ As the admin of a Microsoft 365 organization, you can now see insights and data 
 - See contact information for user who submitted the feedback
 - Separate feedback by end-users or administrators
 
-there are now several policies to help you manage the feedback collection and the customer engagement experience of your users when using Microsoft 365 applications. You can create and use existing Azure Active directory groups in your organization for each of these policies. With these polices, you can control how different departments in your organization can send feedback to Microsoft. Microsoft reviews all feedback submitted by customers and uses this feedback to improve the product. Keeping the feedback experiences turned **On** allows you to see what your users are saying about the Microsoft products they're using. The feedback we collect from your users will soon be available in the Microsoft 365 admin center.
+## Before you begin
 
-Better understanding of customer voice. An effective insight solution allows surfacing of customer issues quickly for large volume of customer feedback. 
+You need to be a feedback or global administrator to view and read survey reports.
 
-Faster resolution of customer issues. Both IT admins and Microsoft desire to solve customer issues and increase productivity of the end user. Unsolicited feedback and survey responses are usually more in the moment and faster to resolve. However, the majority of customer pain points are usually solved via tickets, filed by admins.  
+## Survey insights
 
-Incentive for customers to keep the surveys on. Due to GDPR requirements, Microsoft will release survey controls so that customers can turn on/off surveys and feedback as they wish. Project ProSight can potentially help customers solve issues in the moment and provide valuable insights from feedback data. This is an incentive to keep the surveys on so both Microsoft and customer can work together to improve end users productivity and experience.  
+1. In the admin center, go to the **Health** > **Product feedback** > **NPS Survey Insights**.
+2. From the Overview page, select any survey for more details
 
-Improving NPS by addressing end user and admin feedback closer to the source. With Admins having ‘line of sight’ to their end user feedback, and addressing them before filing tickets, it is hypothesized that we can improve NPS for both admins and end users.  
+:::image type="content" source="../../media/prosight-product-feedback.png" alt-text="Screenshot: Microsoft 365 survey insights":::
 
-As an employee experience manager or IT admin, I want to understand the key issues that users in my organization are facing when they use Microsoft 365 products, so that I can work with Microsoft address them. I should be able to obtain this insight from NPS surveys that Microsoft collected, in the Admin Center portal.  
+1. **Response details**
 
-I should be able to see what NPS surveys are available 
+1. **Response volume by app**
 
-I should be able to see insights for each survey, and for each survey, 
+1. **Response volume by month**
 
-I should be able to see the geo locations of the users who have submitted feedback 
+1. **Response volume by month**
 
-I should be able to see the responses per OS or platform 
+1. **Top topic filters Export to CSV**
 
-I should be able to see total counts, and trend lines for the past 6 months. There is no customer data at present to support longer or shorter trends, so it is  
+1. **Export to CSV** and **Search**
 
-I should be able to see verbatim feedback, the top topics for those verbatim feedback if available, and be able to search with keywords.  
+1. **Filters**
 
-I should be able to select and filter on date, NPS surveys, product, platform, and build/version 
-
-I should be able to export the data as a raw csv file.  
-
-I should be able to see the contact information for the user who submitted the response if they provided contact information and allowed contact when they filled out the survey.
-
-I should be able to see feedback from different audiences, including admins and end users.  
-
-## Configure policies
-
-1. Go to [https://config.office.com](https://config.office.com) and login.
-1. Select **Customization** then **Policy Management**.
-1. Select **Create**.
-1. Enter **name** and **description**.
-1. Choose the Azure Active directory groups that you want to configure.
-1. Search for **Feedback** and **Survey**.
-1. For each policy listed, set the value you want.
-
-For more information, see [Overview of the Office cloud policy service](/deployoffice/overview-office-cloud-policy-service).
-
-These policy settings are also available if you use Group Policy. To use these policy settings, download at least version 5146.1000 of the [Administrative Template files (ADMX/ADML)](https://www.microsoft.com/download/details.aspx?id=49030), released on March 22, 2021.
-
-You can find these policy settings under User Configuration -> Policies -> Administrative Templates -> Microsoft Office 2016 -> Privacy -> Trust Center.
-
-> [!NOTE]
-> It takes a few hours for the client applications to update.
+1. 
