@@ -22,7 +22,7 @@ f1.keywords: NOCSH
 
 As a preview customer, you likely have assistance in setting up and configuring Defender for Endpoint Plan 1 (preview). However, just in case you're curious about what the setup and configuration process looks like, use this article as a guide.
 
-## The setup and configuration process at a high level
+## The setup and configuration process
 
 :::image type="content" source="images/mde-p1-deploymentflow.png" alt-text="Setup and deployment flow for Microsoft Defender for Endpoint Plan 1":::
 
