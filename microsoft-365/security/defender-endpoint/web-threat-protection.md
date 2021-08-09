@@ -45,6 +45,31 @@ To turn on network protection on your devices:
 > [!NOTE]
 > If you set network protection to **Audit only**, blocking will be unavailable. Also, you will be able to detect and log attempts to access malicious and unwanted websites on Microsoft Edge only.
 
+## Configure web threat protection
+
+The following procedure describes how to configure web threat protection using the Microsoft Endpoint Manager admin center.
+
+1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)), and sign in.
+ 
+2. Choose **Endpoint security** > **Attack surface reduction**, and then choose **+ Create policy**.
+
+3. Select a platform, such as **Windows 10 and later**, select the **Web protection** profile, and then choose **Create**. 
+
+4. On the **Basics** tab, specify a name and description, and then choose **Next**.
+
+5. On the **Configuration settings** tab, expand **Web Protection**, specify your settings, and then choose **Next**.
+
+   - Set **Enable network protection** to **Enabled** so web protection is turned on. Alternately, you can set network protection to **Audit mode** to see how it will work in your environment. In audit mode, network protection does not prevent users from visiting sites or domains, but it does track detections as events. 
+   - To protect users from potential phishing scams and malicious software, turn **Require SmartScreen for Microsoft Edge Legacy** to **Yes**.
+   - To prevent users from bypassing warnings about potentially malicious sites, set **Block malicious site access** to **Yes**.
+   - To prevent users from bypassing the warnings and downloading unverified files, set **Block unverified file download** tl **Yes**. 
+
+6. On the **Scope tags** tab, if your organization is using scope tags, choose **+ Select scope tags**, and then choose **Next**. (If you are not using scope tags, choose **Next**.) To learn more about scope tags, see [Use role-based access control (RBAC) and scope tags for distributed IT](/mem/intune/fundamentals/scope-tags).
+
+7. On the **Assignments** tab, specify the users and devices to receive the web protection policy, and then choose **Next**.
+
+8. On the **Review + create** tab, review your policy settings, and then choose **Create**.
+
 ## Related topics
 
 - [Web protection overview](web-protection-overview.md)
