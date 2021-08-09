@@ -55,7 +55,6 @@ You'll need to take the following steps:
 
 11. [Deploy Microsoft Defender for Endpoint on macOS](#step-11-deploy-microsoft-defender-for-endpoint-on-macos)
 
-
 ## Step 1: Get the Microsoft Defender for Endpoint onboarding package
 
 1. In [Microsoft Defender Security Center](https://securitycenter.microsoft.com), navigate to **Settings > Onboarding**.
@@ -76,7 +75,6 @@ You'll need to take the following steps:
 1. Locate the file `WindowsDefenderATPOnboarding.plist` from the previous section.
 
    ![Image of WindowsDefenderATPOnboarding file](images/plist-onboarding-file.png)
-
 
 2. In the Jamf Pro dashboard, select **New**.
 
@@ -200,8 +198,8 @@ All you need to do to have updates is to download an updated schema, edit existi
     - enableRealTimeProtection
     - passiveMode
 
-    >[!NOTE]
-    >Not turned on by default, if you are planning to run a third-party AV for macOS, set it to `true`.
+    > [!NOTE]
+    > Not turned on by default, if you are planning to run a third-party AV for macOS, set it to `true`.
 
     - exclusions
     - excludedPath
@@ -210,8 +208,8 @@ All you need to do to have updates is to download an updated schema, edit existi
     - exclusionsMergePolicy
     - allowedThreats
 
-    >[!NOTE]
-    >EICAR is on the sample, if you are going through a proof-of-concept, remove it especially if you are testing EICAR.
+    > [!NOTE]
+    > EICAR is on the sample, if you are going through a proof-of-concept, remove it especially if you are testing EICAR.
 
     - disallowedThreatActions
     - potentially_unwanted_application
@@ -372,7 +370,6 @@ All you need to do to have updates is to download an updated schema, edit existi
     >If you happen to upload the Intune file, you'll get the following error:<br>
     >![Image of configuration settings intune file upload](images/8e69f867664668796a3b2904896f0436.png)
 
-
 11. Select **Save**.
 
     ![Image of configuration settings Save image](images/1b6b5a4edcb42d97f1e70a6a0fa48e3a.png)
@@ -459,16 +456,16 @@ These steps are applicable of macOS 10.15 (Catalina) or newer.
    <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
    <plist version="1.0">
    <dict>
-	<key>ChannelName</key>
-	<string>Current</string>
-	<key>HowToCheck</key>
-	<string>AutomaticDownload</string>
-	<key>EnableCheckForUpdatesButton</key>
-	<true/>
+    <key>ChannelName</key>
+    <string>Current</string>
+    <key>HowToCheck</key>
+    <string>AutomaticDownload</string>
+    <key>EnableCheckForUpdatesButton</key>
+    <true/>
     <key>DisableInsiderCheckbox</key>
     <false/>
-	<key>SendAllTelemetryEnabled</key>
-	<true/>
+    <key>SendAllTelemetryEnabled</key>
+    <true/>
    </dict>
    </plist>
    ```
@@ -650,7 +647,6 @@ Alternatively, you can download [fulldisk.mobileconfig](https://github.com/micro
 
     ![Image of configuration settings approved kernel ext](images/30be88b63abc5e8dde11b73f1b1ade6a.png)
 
-
 4. In **Approved Kernel Extensions** Enter the following details:
 
     - Display Name: Microsoft Corp.
@@ -785,10 +781,9 @@ These steps are applicable of macOS 10.15 (Catalina) or newer.
 
 Alternatively, you can download [netfilter.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/netfilter.mobileconfig) and upload it to JAMF Configuration Profiles as described in [Deploying Custom Configuration Profiles using Jamf Pro|Method 2: Upload a Configuration Profile to Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).
 
-
 ## Step 10: Schedule scans with Microsoft Defender for Endpoint on macOS
-Follow the instructions on [Schedule scans with Microsoft Defender for Endpoint on macOS](/windows/security/threat-protection/microsoft-defender-atp/mac-schedule-scan-atp).
 
+Follow the instructions on [Schedule scans with Microsoft Defender for Endpoint on macOS](/windows/security/threat-protection/microsoft-defender-atp/mac-schedule-scan-atp).
 
 ## Step 11: Deploy Microsoft Defender for Endpoint on macOS
 
@@ -861,7 +856,6 @@ Follow the instructions on [Schedule scans with Microsoft Defender for Endpoint 
 
     ![Image of configuration settings recur checkin](images/68bdbc5754dfc80aa1a024dde0fce7b0.png)
 
-
 13. Select **Save**.
 
 14. Select **Packages > Configure**.
@@ -901,7 +895,3 @@ Follow the instructions on [Schedule scans with Microsoft Defender for Endpoint 
     ![Image of configuration settings do1img](images/99679a7835b0d27d0a222bc3fdaf7f3b.png)
 
     ![Image of configuration settings do2img](images/632aaab79ae18d0d2b8e0c16b6ba39e2.png)
-
-
-
-
