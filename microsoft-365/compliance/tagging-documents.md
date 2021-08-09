@@ -82,7 +82,7 @@ Before applying tags to items in a review set, you need to create a tag structur
 
 With the tag structure in place, reviewers can apply tags to items in a review set by configuring tagging settings.
 
-1. In the command bar in the review set, select **Tag files** to display the **Tag files** flyout page (which is also called the *tagging panel*).
+1. In the review set command bar, select **Tag files** to display the **Tag files** flyout page (also called the *tagging panel*).
 
    ![Click Tag files in the command bar to open the flyout page](../media/TagFilesFlyoutPage.png)
 
@@ -90,9 +90,9 @@ With the tag structure in place, reviewers can apply tags to items in a review s
 
    - **Choose selection**. Choose one the following options to determine the scope of items to apply tags to.
 
-      - **Tag selected items**: This option applies tags to the items that you select. You can select items before or after launching the **Tag files** flyout page. This option displays (in real time) the number of selected items that will be tagged.
+      - **Tag selected items**: This option applies tags to the items that you select. You can select items before or after launching the tagging panel. This option displays (in real time) the number of selected items that will be tagged.
 
-      - **Tag all items in list**: This option applies tags to all items displayed in the review set. This option displays the total number of items that will be tagged. 
+      - **Tag all items in list**: This option applies tags to all items displayed in the review set. This option displays the total number of items that will be tagged.
 
    - **Expand selection**: Use the following options to tag additional items that are related to tagged items in the review set.
 
@@ -105,14 +105,18 @@ With the tag structure in place, reviewers can apply tags to items in a review s
    > [!NOTE]
    > Including associated family or conversation items will not change the count of items shown in the **Tag selected items** or **Tag all items in list** options. In other words, the number of associated items that will be tagged is not displayed.
 
-   - **Assign tags**: This section displays the tags that you can apply to documents. You can only apply one single-choice tag (identified by a radio button) per tag group. However, you can apply multiple multi-choice tags (identified by a checkbox).
+   - **Assign tags**: This section displays the tags (organized by tag groups) that you can apply to documents. You can only apply one single-choice tag (identified by a radio button) per tag group. However, you can apply multiple multi-choice tags (which are identified by a checkbox).
 
 3. Click **Apply tags** to apply the tags based on your settings.
 
-   The **Applying tags** status message is displayed on the **Tag files** flyout page to indicating the tagging job has been started, and the tags in the **Assign tags** section are greyed out until the job is completed. A **Tagging documents** job is also created and the status of this job can be viewed on the **Jobs** tab in the case.
+   The **Applying tags** status message is displayed for each tag group on the tagging panel to indicate a tagging job has been started. Tags for each tag group in the **Assign tags** section are greyed out until the job is completed.
 
 > [!TIP]
-> If you're in the process of configuring the settings on the tagging panel, but want to start over, click **Reset tag assignment** to clear the current setting so you can start again. This control doesn't apply to items that are already tagged. In other words, it doesn't change or remove tags from previously tagged items.  
+> If you're in the process of configuring the settings on the tagging panel, but want to start over, click **Reset tag assignment** to clear the current setting. This control doesn't apply to items that are already tagged, and it doesn't change or remove tags from previously tagged items.  
+
+#### Monitor tagging jobs
+
+When you tag a large number of items (or select the **Tag all items in list**) option, a **Tagging documents** job is created. You view the status of this job on the **Jobs** tab in the case. This helps you track large tagging jobs that may take a long time to complete. In some cases, a tagging job might be complete, but the **Applying tags** status message in the tagging panel is still displayed. To update the status of tagging jobs, click **Refresh** in the review set command bar.
 
 ## Removing tags
 
