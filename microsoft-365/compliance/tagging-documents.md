@@ -84,7 +84,7 @@ With the tag structure in place, reviewers can apply tags to items in a review s
 
 1. In the review set command bar, select **Tag files** to display the **Tag files** flyout page (also called the *tagging panel*).
 
-   ![Click Tag files in the command bar to open the flyout page](../media/TagFilesFlyoutPage.png)
+   ![Click Tag files in the command bar to open the tagging panel](../media/TagFilesFlyoutPage.png)
 
 2. On the **Tag files** flyout page, you can set the following options to configure how to tag items displayed in the review set. The filters or filter queries currently applied to the review set determine which items are displayed and therefore the items that you can apply tags to. For more information, see [Query and filter content in a review set](review-set-search.md).
 
