@@ -110,7 +110,7 @@ Enable the required permission on Xiaomi devices.
 
 -   **Xiaomi with Android 11** 
 
-Defender App asks for Battery Optimization / Permanent Protection permission on the devices as part of app onboarding, and by clicking on "Allow" it brings back an error that the permission couldn't be set. It only affects the last permission called "Permanent Protection". 
+Defender App asks for Battery Optimization/Permanent Protection permission on devices as part of app onboarding, and selecting **Allow** returns an error that the permission couldn't be set. It only affects the last permission called "Permanent Protection." 
  
 **Cause:**
 Xiomi changed the battery optimization permissions in Android 11. Defender is not allowed to configure this setting to ignore battery optimizations.
