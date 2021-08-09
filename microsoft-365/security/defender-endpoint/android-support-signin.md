@@ -110,19 +110,19 @@ Enable the required permission on Xiaomi devices.
 
 -   **Xiaomi with Android 11** 
 
-Defender App asks for Battery Optimisation/Permanent Protection permission on the devices as part of app onboarding, and by clicking on "Allow" it brings back an error that the permission couldn't be set. It only affects the last permission called "Permanent Protection". 
+Defender App asks for Battery Optimization / Permanent Protection permission on the devices as part of app onboarding, and by clicking on "Allow" it brings back an error that the permission couldn't be set. It only affects the last permission called "Permanent Protection". 
  
 **Cause:**
-Xiomi changed the battery optimisation permissions in Android 11. Defneder is not allowed to configure this setting to ignore battery optimizations.
+Xiomi changed the battery optimization permissions in Android 11. Defender is not allowed to configure this setting to ignore battery optimizations.
 
 **Solution:**
-We are working with OEMs for a solution to enable this permission form onboarding screen. We will update the documentation as this is resolved.
-User can follow the below steps to enable the same permissions form device settings.  
+We are working with OEMs for a solution to enable this permission form app onboarding screen. We will update the documentation as this is resolved.
+User can follow below steps to enable the same permissions form device settings.  
 
 1. Go to Settings on your device.
-2. Search for "Battery Optimisation" and tap on "Battery Optimisation".
-3. On the Special app access, click on "Battery Optimisation".
+2. Search for "Battery Optimization" and tap on "Battery Optimization".
+3. On the Special app access, click on "Battery Optimization".
 4. Change the Drop down to show all Apps.
-5. Locate “Microsoft Defender Endpoint” and select “Don’t Optimise”.
+5. Locate “Microsoft Defender Endpoint” and select “Don’t Optimize”.
 
-Return back to Defender Onboarding screen, click on allow and you will be redirected to the dashboard screen.
+Return to Defender onboarding screen, click on allow and you will be redirected to the dashboard screen.
