@@ -45,16 +45,24 @@ You need to be a feedback or global administrator to view and read survey report
 
 1. **Response details**
 
+:::image type="content" source="../../media/prosight-response-details.png" alt-text="Screenshot: Microsoft 365 survey insights":::
+
 1. **Response volume by app**
 
-1. **Response volume by month**
+:::image type="content" source="../../media/prosight-response-volume-by-app.png" alt-text="Screenshot: Microsoft 365 survey insights":::
 
 1. **Response volume by month**
 
-1. **Top topic filters Export to CSV**
+:::image type="content" source="../../media/prosight-response-volume-by-month.png" alt-text="Screenshot: Microsoft 365 survey insights":::
+
+1. **Top topic filters**
+
+:::image type="content" source="../../media/prosight-top-topic-filters.png" alt-text="Screenshot: Microsoft 365 survey insights":::
 
 1. **Export to CSV** and **Search**
 
+:::image type="content" source="../../media/prosight-export-to-csv-and-search.png" alt-text="Screenshot: Microsoft 365 survey insights":::
+
 1. **Filters**
 
-1. 
+:::image type="content" source="../../media/prosight-filters.png" alt-text="Screenshot: Microsoft 365 survey insights":::
