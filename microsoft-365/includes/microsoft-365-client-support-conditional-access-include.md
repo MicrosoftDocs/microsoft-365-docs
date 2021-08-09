@@ -5,7 +5,6 @@
 |AZURE ACTIVE DIRECTORY ADMIN|N/A|N/A|N/A|Planned|N/A|
 |COMPANY PORTAL|Planned|Planned|Planned|N/A|Planned|
 |CORTANA|N/A|N/A|N/A|N/A|Planned|
-|DELVE|✔|✔|N/A|N/A|N/A|
 |EXCEL|✔|Planned|Planned|Planned|N/A|
 |EXCHANGE ADMIN|N/A|N/A|N/A|✔|N/A|
 |FORMS|N/A|N/A|N/A|N/A|N/A|
