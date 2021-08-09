@@ -96,7 +96,7 @@ We recommend using [Microsoft Endpoint Manager](/mem) to manage your organizatio
 
 2.	Select **Endpoint security** > **Antivirus**, and then select an existing policy. (If you don’t have an existing policy, create a new policy.)
 
-3.	Set or change your antivirus configuration settings. Need help? Refer to the following resources:
+3.	Set or change your antivirus configuration settings. Need help? Refer to the following resources: <br/>
 
    - [Settings for Windows 10 Microsoft Defender Antivirus policy in Microsoft Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-windows)
    - [Configure Defender for Endpoint on iOS features](ios-configure-features.md)
