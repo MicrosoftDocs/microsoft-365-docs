@@ -21,12 +21,10 @@ Microsoft Managed Desktop provides several reports and dashboards that IT admins
 On the **Summary** tab, you'll find quick metrics about device updates. Selecting **View details** of any metric will allow you to download additional information for offline analysis, including the underlying dataset for the metric.
 
 When you select the **Reports** tab, you will see descriptions for the available detailed reports. These reports are more comprehensive and support visualization and filtering of the data in the portal as well as exporting the underlying data for offline analysis or distribution. The following reports are available today:
-- The **Device status** *(preview)* shows your use of the Microsoft Managed Desktop service based on device activity and usage. 
-- You can use **Device status trend** *(preview)* to monitor trends in device status over the last 60 days for your Microsoft Managed Desktop devices. Trends can help  you associate device status with other changes over time, for example, new deployments. 
-- The **Windows security updates** *(preview)* report shows how Windows security updates are released across your Microsoft Managed Desktop devices.
+- The [**Device status** report](device-status-report.md) shows your use of the Microsoft Managed Desktop service based on device activity and usage. 
+- You can use **Device status trend** to monitor trends in device status over the last 60 days for your Microsoft Managed Desktop devices. Trends can help  you associate device status with other changes over time, for example, new deployments. 
+- The [**Windows security updates** report](security-updates-report.md) shows how Windows security updates are released across your Microsoft Managed Desktop devices.
 
-> [!NOTE]
-> Reports in *(preview)* can change with limited notice as we make improvements based on feedback we receive during the public preview.
 
 ## Endpoint analytics
 Microsoft Managed Desktop is now integrated with [Endpoint analytics](/mem/analytics/overview). These reports give you insights for measuring how your organization is working and the quality of the experience delivered to your users. Endpoint analytics is in the **Reports** menu of [Microsoft Endpoint Manager](https://endpoint.microsoft.com/). To pivot a score to only include devices being managed by Microsoft Managed Desktop go to any report, select the **Filter** drop down, and then select **Microsoft Managed Desktop devices**.

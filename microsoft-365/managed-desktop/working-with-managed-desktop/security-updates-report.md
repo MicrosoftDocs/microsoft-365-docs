@@ -1,6 +1,6 @@
 ---
 title: Windows security updates report
-description:  
+description:  Explains the info presented in this report
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
