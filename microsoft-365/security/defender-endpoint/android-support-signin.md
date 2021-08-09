@@ -117,7 +117,7 @@ Xiomi changed the battery optimization permissions in Android 11. Defender is no
 
 **Solution:**
 We are working with OEM to find a solution to enable this permission from the app onboarding screen. We will update the documentation when this is resolved.
-User can follow below steps to enable the same permissions form device settings.  
+Users can follow these steps to enable the same permissions from the device settings: 
 
 1. Go to Settings on your device.
 2. Search for "Battery Optimization" and tap on "Battery Optimization".
