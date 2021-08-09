@@ -42,7 +42,7 @@ The product has received multiple compliance certifications, demonstrating conti
 - SOC I, II, III
 - and PCI
 
-[Azure Compliance Offerings](https://docs.microsoft.com/azure/storage/common/storage-compliance-offerings) provides more information on these certifications. All certification artifacts for Microsoft Defender for Endpoint can be found on Microsoft’s [Service Trust Portal](https://servicetrust.microsoft.com/) within each of the associated Azure Certification Reports.
+[Azure Compliance Offerings](/azure/storage/common/storage-compliance-offerings) provides more information on these certifications. All certification artifacts for Microsoft Defender for Endpoint can be found on Microsoft’s [Service Trust Portal](https://servicetrust.microsoft.com/) within each of the associated Azure Certification Reports.
 
 ## Cloud Protection Mechanisms
 
