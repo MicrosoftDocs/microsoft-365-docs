@@ -30,7 +30,7 @@ The following image depicts what's included in Defender for Endpoint Plan 1 (pre
 
 This article focuses on Defender for Endpoint Plan 1, currently in preview. Use this guide to:
 
-- [Get an overview of what’s included in Defender for Endpoint Plan 1 (preview)](#whats-included-in-defender-for-endpoint-plan-1)
+- [Get an overview of what’s included in Defender for Endpoint Plan 1 (preview)](#defender-for-endpoint-plan-1-capabilities)
 - [Compare Defender for Endpoint Plan 1 (preview) to Plan 2](defender-endpoint-plan-1-2.md)
 - [Learn how to set up and configure Defender for Endpoint Plan 1 (preview)](mde-p1-setup-configuration.md)
 - [Get started using the Microsoft 365 Defender portal, where you can view incidents and alerts, manage devices, and use reports about detected threats](mde-plan1-getting-started.md)
@@ -39,7 +39,7 @@ This article focuses on Defender for Endpoint Plan 1, currently in preview. Use 
 > [!TIP]
 > [Learn more about the differences between Defender for Endpoint Plan 1 (preview) and Plan 2](defender-endpoint-plan-1-2.md).
 
-## What's included in Defender for Endpoint Plan 1?
+## Defender for Endpoint Plan 1 capabilities
 
 Defender for Endpoint Plan 1 (preview) includes the following capabilities:
 
