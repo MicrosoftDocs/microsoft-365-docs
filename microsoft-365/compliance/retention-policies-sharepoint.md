@@ -105,14 +105,13 @@ When the retention settings are retain-only, or delete-only, the contents paths 
 
 2. **If the content is not deleted** during the configured period: At the end of the configured period in the retention policy, the document is moved to the first-stage Recycle Bin. If a user deletes the document from there or empties this Recycle Bin (also known as purging), the document is moved to the second-stage Recycle Bin. A 93-day retention period spans both the first-stage and second-stage recycle bins. At the end of 93 days, the document is permanently deleted from wherever it resides, in either the first-stage or second-stage Recycle Bin. The Recycle Bin is not indexed and therefore unavailable for searching. As a result, an eDiscovery search can't find any Recycle Bin content on which to place a hold.
 
-## How retention works with cloud attachments
+## How retention works for cloud attachments
 
 When you [automatically apply a retention label to cloud attachments](apply-retention-labels-automatically.md#auto-apply-labels-to-cloud-attachments) (embedded links to files that users share in Outlook emails and Teams messages), the retention label is applied to a copy of the shared file, which is stored in the Preservation Holds library. If the file is modified and shared again, a new copy of the file as a new version is saved in the Preservation Hold library.
 
 In this scenario, the retention label is not applied to the original file, so the labeled file is never modified or deleted by a user. The labeled file remains in the Preservation Hold library until the timer job identifies that its retention period has expired. If the retention settings are configured to delete items, the file is then moved to the second-stage Recycle Bin, where it's permanently deleted at the end of 93 days:
 
 ![How retention works for cloud attachments stored in SharePoint and OneDrive](../media/retention_diagram_of_retention_flow_cloud-attachments.png)
-
 
 ## How retention works for OneNote content
 
