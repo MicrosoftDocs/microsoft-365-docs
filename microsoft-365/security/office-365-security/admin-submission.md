@@ -135,6 +135,7 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
      - **Reason for submitting**<sup>\*</sup>
      - **Rescan status**<sup>\*</sup>
      - **Rescan result**<sup>\*</sup>
+     - **Tags**<sup>\*</sup>
      - **Filter verdict**
      - **Delivery/Block reason**
      - **Submission ID**
@@ -154,6 +155,7 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
      - **Submission ID**: A GUID value that's assigned to every submission.
      - **Network Message ID**
      - **Sender**
+     - **Tags**
 
      When you're finished, click **Apply**.
 
@@ -196,6 +198,7 @@ If you've deployed the [Report Message add-in](enable-the-report-message-add-in.
      - **Sender**<sup>\*</sup>
      - **Reported reason**<sup>\*</sup>
      - **Rescan result**<sup>\*</sup>
+     - **Tags**<sup>\*</sup>
      - **Message reported ID**
      - **Network Message ID**
      - **Sender IP**
@@ -212,6 +215,7 @@ If you've deployed the [Report Message add-in](enable-the-report-message-add-in.
      - **Sender**
      - **Reported reason**: **Not junk**, **Phish**, or **Spam**.
      - **Phish simulation**: **Yes** or **No**
+     - **Tags**
 
      When you're finished, click **Apply**.
 
