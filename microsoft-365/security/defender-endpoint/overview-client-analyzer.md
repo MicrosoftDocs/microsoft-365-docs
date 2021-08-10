@@ -93,7 +93,7 @@ For more information about our privacy statement, see [Microsoft Privacy Stateme
     > On Windows devices, if you use Attack Surface Reduction (ASR) rule [Block process creations
     originating from PSExec and WMI
     commands](/microsoft-365/security/defender-endpoint/attack-surface-reduction.md#block-process-creations-originating-from-psexec-and-wmi-commands),
-    then you should temporarily disable the rule or [configure an exclusion to
+    then may want to temporarily disable the rule or [configure an exclusion to
     the ASR
     rule](/microsoft-365/security/defender-endpoint/enable-attack-surface-reduction.md#exclude-files-and-folders-from-asr-rules)
     to allow the analyzer to run connectivity checks to cloud as expected.
