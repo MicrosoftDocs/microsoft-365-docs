@@ -213,6 +213,10 @@ The onboarding package for Windows Server 2019 through Microsoft Endpoint Manage
 Verify that Microsoft Defender Antivirus and Microsoft Defender for Endpoint are running. 
 
 
+## Run a detection test to verify onboarding
+After onboarding the device, you can choose to run a detection test to verify that a device is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Microsoft Defender for Endpoint device](run-detection-test.md).
+
+
 ## Offboard Windows servers
 
 You can offboard Windows Server 2012 R2, Windows Server 2016, Windows Server (SAC), Windows Server 2019, and Windows Server 2019 Core edition in the same method available for Windows 10 client devices.
