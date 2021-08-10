@@ -1,5 +1,5 @@
 ---
-title: Manage access to Microsoft 365 Defender data in the Microsoft 365 security center
+title: Manage access to Microsoft 365 Defender data in the Microsoft 365 Defender portal
 description: Learn how to manage permissions to data in Microsoft 365 Defender
 keywords: access, permissions, Microsoft 365 Defender, M365, security, MCAS, Cloud App Security, Microsoft Defender for Endpoint, scope, scoping, RBAC
 search.product: eADQiWindows 10XVcnh
@@ -41,7 +41,7 @@ Accounts assigned the following **Global Azure Active Directory (AD) roles** can
 - Global Reader
 - Security Reader
 
-To review accounts with these roles, [view Permissions in the Microsoft 365 security center](https://security.microsoft.com/permissions).
+To review accounts with these roles, [view Permissions in the Microsoft 365 Defender portal](https://security.microsoft.com/permissions).
 
 **Custom role** access is a new capability in Microsoft 365 Defender and allows you to manage access to specific data, tasks, and capabilities in Microsoft Defender 365. Custom roles offer more control than global Azure AD roles, providing users only the access they need with the least-permissive roles necessary.  Custom roles can be created in addition to global Azure AD roles. [Learn more about custom roles](custom-roles.md).
 
