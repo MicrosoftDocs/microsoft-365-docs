@@ -317,14 +317,9 @@ When you configure cloud protection level policy to **Default Microsoft Defender
 
 ## Related topics
 
-- [Onboard Windows 10 devices using Microsoft Endpoint Configuration Manager]
-(configure-endpoints-sccm.md)
-- [Onboard Windows 10 devices using Mobile Device Management tools]
-(configure-endpoints-mdm.md)
+- [Onboard Windows 10 devices using Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
+- [Onboard Windows 10 devices using Mobile Device Management tools](configure-endpoints-mdm.md)
 - [Onboard Windows 10 devices using a local script](configure-endpoints-script.md)
-- [Onboard non-persistent virtual desktop infrastructure (VDI) devices]
-(configure-endpoints-vdi.md)
-- [Run a detection test on a newly onboarded Microsoft Defender for Endpoint 
-devices](run-detection-test.md)
-- [Troubleshoot Microsoft Defender for Endpoint onboarding issues]
-(troubleshoot-onboarding.md)
+- [Onboard non-persistent virtual desktop infrastructure (VDI) devices](configure-endpoints-vdi.md)
+- [Run a detection test on a newly onboarded Microsoft Defender for Endpoint devices](run-detection-test.md)
+- [Troubleshoot Microsoft Defender for Endpoint onboarding issues](troubleshoot-onboarding.md)
