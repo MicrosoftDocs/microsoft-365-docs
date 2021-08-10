@@ -120,9 +120,23 @@ We are working with OEM to find a solution to enable this permission from the ap
 Users can follow these steps to enable the same permissions from the device settings: 
 
 1. Go to **Settings** on your device.
+   
 2. Search for and select **Battery Optimization**.
+   
+   ![Search and select "Battery Optimisation](images/searchBatteryOptimisation.png)
+
 3. In **Special app access**, select **Battery Optimization**.
+   
+   ![In Special app access, select "Battery Optimisation"](images/specialAppAccess.png)
+
 4. Change the Dropdown to show **All Apps**.
+
+   ![Change dropdown to show All Apps](images/showAllApps2.png)
+
+   ![Change dropdown to show All Apps](images/showAllApps1.png)
+
 5. Locate “Microsoft Defender Endpoint” and select **Don’t Optimize**.
+
+   ![Locate "Microsoft Defender Endpoint" and select "Don't Optimise"](images/selectDontOptimise.png)
 
 Return to the Microsoft Defender Endpoint onboarding screen, select **Allow**, and you will be redirected to the dashboard screen.
