@@ -100,15 +100,6 @@ The [DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-m
    `c:\windows\sysnative\cmd.exe /c Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender-Features`<p>
    `c:\windows\sysnative\cmd.exe /c Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender`<br/>
 
-3. To verify Microsoft Defender Antivirus is running, can use the [Get-MpComputerStatus PowerShell cmdlet](/powershell/module/defender/get-mpcomputerstatus). 
-
-   1. On a Windows device, open Windows PowerShell.
-   
-   2. Run following PowerShell cmdlet: `Get-MpComputerStatus | select AMRunningMode`.
-
-   3. Review the results. You should see either **Normal** or **Passive** if Microsoft Defender Antivirus is enabled on the endpoint. [Learn more about Microsoft Defender Antivirus states](microsoft-defender-antivirus-compatibility.md#more-details-about-microsoft-defender-antivirus-states).
-
-
 ### Set Microsoft Defender Antivirus to passive mode on Windows Server
 
 1. Open Registry Editor, and then navigate to <br/>
@@ -134,6 +125,16 @@ Currently, you cannot run Microsoft Defender Antivirus in passive mode on Window
 > For more information, see the following articles:
 > - [Microsoft Defender Antivirus on Windows Server](microsoft-defender-antivirus-on-windows-server.md)
 > - [Microsoft Defender Antivirus compatibility with other security products](microsoft-defender-antivirus-compatibility.md)
+
+### Confirm that Microsoft Defender Antivirus is enabled
+
+To check the state of Microsoft Defender Antivirus, you can use the [Get-MpComputerStatus PowerShell cmdlet](/powershell/module/defender/get-mpcomputerstatus).
+
+1. On a Windows device, open Windows PowerShell.
+
+2. Run following PowerShell cmdlet: `Get-MpComputerStatus | select AMRunningMode`.
+
+3. Review the results. You should see either **Normal** or **Passive** if Microsoft Defender Antivirus is enabled on the endpoint. [Learn more about Microsoft Defender Antivirus states](microsoft-defender-antivirus-compatibility.md#more-details-about-microsoft-defender-antivirus-states).
 
 ## Configure Defender for Endpoint
 
