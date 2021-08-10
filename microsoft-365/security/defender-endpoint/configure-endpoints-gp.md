@@ -245,7 +245,7 @@ With Group Policy there isn't an option to monitor deployment of policies on the
 Create a new Group Policy or group these settings in with the other policies. This is dependent upon the customers environment and how they would like to roll out the service by targeting different OU’s (Organizational Units).
 
 1. After you choose the GP, or create a new one, edit the GP.
-2. Browse to **Computer Configuration** > **Policies** > **Administrative Templates** > **Windows Components** > **Windows Defender Antivirus** > **Real-time Protection**.
+2. Browse to **Computer Configuration** > **Policies** > **Administrative Templates** > **Windows Components** > **Microsoft Defender Antivirus** > **Real-time Protection**.
 :::image type="content" source="images/realtime-protect.png" alt-text="real time protection":::
 1. In the Quarantine folder, configure removal of items from Quarantine folder.
 
@@ -259,7 +259,7 @@ Create a new Group Policy or group these settings in with the other policies. Th
 
 **Monitor all files in Real time protection**
 
-Browse to **Computer Configuration** > **Policies** > **Administrative Templates** > **Windows Components** > **Windows Defender Antivirus** > **Real-time Protection**.
+Browse to **Computer Configuration** > **Policies** > **Administrative Templates** > **Windows Components** > **Microsoft Defender Antivirus** > **Real-time Protection**.
 
 :::image type="content" source="images/config-monitor-incoming-outgoing-file-act.png" alt-text="configure monitoring for incoming outgoing file activity":::
 
@@ -276,7 +276,7 @@ Browse to **Computer Configuration** > **Policies** > **Administrative Templates
 
 #### Configure Potentially Unwanted Applications
 	 
-Browse to **Computer Configuration** > **Policies** > **Administrative Templates** > **Windows Components** > **Windows Defender Antivirus**.
+Browse to **Computer Configuration** > **Policies** > **Administrative Templates** > **Windows Components** > **Microsoft Defender Antivirus**.
 
 :::image type="content" source="images/config-potential-unwanted-apps.png" alt-text="config potential unwanted app":::
 
@@ -284,7 +284,7 @@ Browse to **Computer Configuration** > **Policies** > **Administrative Templates
 
 #### Configure Cloud Deliver Protection and send samples automatically
 
-Browse to **Computer Configuration** > **Policies** > **Administrative Templates** > **Windows Components** > **Windows Defender Antivirus** > **MAPS**.
+Browse to **Computer Configuration** > **Policies** > **Administrative Templates** > **Windows Components** > **Microsoft Defender Antivirus** > **MAPS**.
 
 :::image type="content" source="images/gpo-maps1.png" alt-text="maps":::
 
@@ -295,7 +295,7 @@ Browse to **Computer Configuration** > **Policies** > **Administrative Templates
 :::image type="content" source="images/send-file-sample-further-analysis-require.png" alt-text="send file sample when further analysis is required":::
 
 #### Check for signature update
-Browse to **Computer Configuration** > **Policies** > **Administrative Templates** > **Windows Components** > **Windows Defender Antivirus** > **Signature Updates**
+Browse to **Computer Configuration** > **Policies** > **Administrative Templates** > **Windows Components** > **Microsoft Defender Antivirus** > **Signature Updates**
 
 :::image type="content" source="images/signature-update-1.png" alt-text="signature update":::
 
@@ -303,8 +303,8 @@ Browse to **Computer Configuration** > **Policies** > **Administrative Templates
 
 #### Configure cloud deliver timeout and protection level
 
-Browse to **Computer Configuration** > **Policies** > **Administrative Templates** > **Windows Components** > **Windows Defender Antivirus** > **MpEngine**.
-When you configure cloud protection level policy to **Default Windows Defender Antivirus blocking policy** this will disable the policy. This is what is required to set the protection level to the windows default.
+Browse to **Computer Configuration** > **Policies** > **Administrative Templates** > **Windows Components** > **Microsoft Defender Antivirus** > **MpEngine**.
+When you configure cloud protection level policy to **Default Microsoft Defender Antivirus blocking policy** this will disable the policy. This is what is required to set the protection level to the windows default.
 
 :::image type="content" source="images/config-extended-cloud-check.png" alt-text="config extended cloud check":::
 
