@@ -123,21 +123,21 @@ Users can follow these steps to enable the same permissions from the device sett
    
 2. Search for and select **Battery Optimization**.
    
-   ![Search for and select "Battery Optimization"](images/search-battery-optimization.png)
+   ![Search for and select "Battery Optimisation".](images/search-battery-optimisation.png)
 
 3. In **Special app access**, select **Battery Optimization**.
    
-   ![In Special app access, select "Battery Optimization"](images/special-app-access.png)
+   ![In Special app access, select "Battery Optimisation".](images/special-app-access.png)
 
 4. Change the Dropdown to show **All Apps**.
 
-   ![Change dropdown to show "All Apps"](images/show-all-apps-2.png)
+   ![Change dropdown to show "All Apps".](images/show-all-apps-2.png)
 
-   ![Change dropdown to show "All Apps"](images/show-all-apps-1.png)
+   ![Change dropdown to show "All Apps".](images/show-all-apps-1.png)
 
 5. Locate “Microsoft Defender Endpoint” and select **Don’t Optimize**.
 
-   ![Locate "Microsoft Defender Endpoint" and select "Don't Optimize"](images/select-dont-optimize.png)
+   ![Locate "Microsoft Defender Endpoint" and select "Don't Optimise".](images/select-dont-optimise.png)
 
 
 Return to the Microsoft Defender Endpoint onboarding screen, select **Allow**, and you will be redirected to the dashboard screen.
