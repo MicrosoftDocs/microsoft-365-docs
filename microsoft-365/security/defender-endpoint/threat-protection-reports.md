@@ -28,7 +28,7 @@ ms.technology: mde
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
 The threat protection report provides high-level information about alerts generated in your organization. The report includes trending information showing the detection sources, categories, severities, statuses, classifications, and determinations of alerts across time.
 
@@ -75,9 +75,6 @@ The report is made up of cards that display the following alert attributes:
 
 - **Classification & determination**: shows how you have classified alerts upon resolution, whether you have classified them as actual threats (true alerts) or as incorrect detections (false alerts). These cards also show the determination of resolved alerts, providing additional insight like the types of actual threats found or the legitimate activities that were incorrectly detected.
 
-
- 
-
 ## Filter data
 
 Use the provided filters to include or exclude alerts with certain attributes.
@@ -87,9 +84,9 @@ Use the provided filters to include or exclude alerts with certain attributes.
 
 For example, to show data about high-severity alerts only:
 
-1. Under **Filters > Severity**, select **High**
+1. Under **Incidents & alerts** > **Alerts** > **Filters > Severity**, select **High**.
 2. Ensure that all other options under **Severity** are deselected.
-3. Select **Apply**. 
+3. Select **Apply**.
 
 ## Related topic
 - [Device health and compliance report](machine-reports.md)
