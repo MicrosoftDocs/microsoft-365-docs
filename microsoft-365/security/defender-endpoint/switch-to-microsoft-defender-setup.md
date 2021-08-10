@@ -21,7 +21,7 @@ ms.collection:
   - m365solution-symantecmigrate
 ms.topic: article
 ms.custom: migrationguides
-ms.date: 07/19/2021
+ms.date: 08/10/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ---
 
@@ -100,10 +100,14 @@ The [DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-m
    `c:\windows\sysnative\cmd.exe /c Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender-Features`<p>
    `c:\windows\sysnative\cmd.exe /c Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender`<br/>
 
-3. To verify Microsoft Defender Antivirus is running, use the following PowerShell cmdlet: <br/>
-   `Get-Service -Name windefend`
+3. To verify Microsoft Defender Antivirus is running, can use the [Get-MpComputerStatus PowerShell cmdlet](/powershell/module/defender/get-mpcomputerstatus). 
 
-   Look for a status of *Running*.
+   1. On a Windows device, open Windows PowerShell.
+   
+   2. Run following PowerShell cmdlet: `Get-MpComputerStatus | select AMRunningMode`.
+
+   3. Review the results. You should see either **Normal** or **Passive** if Microsoft Defender Antivirus is enabled on the endpoint. [Learn more about Microsoft Defender Antivirus states](microsoft-defender-antivirus-compatibility.md#more-details-about-microsoft-defender-antivirus-states).
+
 
 ### Set Microsoft Defender Antivirus to passive mode on Windows Server
 
