@@ -27,7 +27,11 @@ Microsoft 365 Lighthouse lets you view insights and information related to Intun
 
 ## Overview tab  
   
-On the Overview tab, you can view device compliance status across your tenants, see monthly device compliance trends, and track whether devices have compliance policies assigned to them. You can also view information on tenant device compliance actions and requirements based on Conditional Access policies. To export device compliance data to an Excel comma-separated values (.csv) file, select **Export**.
+On the Overview tab, you can view device compliance status across your tenants, see monthly device compliance trends, and track whether devices have compliance policies assigned to them. You can also view information on tenant device compliance actions and requirements based on Conditional Access policies. 
+
+To get detailed device compliance information for a particular customer tenant, select a value under any of the status columns for that tenant. This will open the Devices tab so you can view device compliance details for the selected tenant.
+
+To export device compliance data to an Excel comma-separated values (.csv) file, select **Export**.
 
 :::image type="content" source="../media/m365-lighthouse-device-compliance-page-overview/device-overview-tab.png" alt-text="Screenshot of the Overview tab.":::
 
@@ -74,7 +78,7 @@ The settings tab provides an aggregated report of non-compliant settings across 
 
 To see non-compliant settings for devices on a specific platform, use the **Platform** dropdown menu to filter the list. To see non-compliant settings for one or more specific customer tenants, use the **Tenants** dropdown menu to filter the list.
 
-Select any non-compliant setting name in the list to view a list of tenants that have devices with that specific non-compliant setting. You can further drill down by selecting any tenant from the list to view information about the devices within that tenant that have the specific non-compliant setting. From here, you can sync or restart the device, or select **View device in Microsoft Endpoint Manager** if you need to troubleshoot or take further action.
+Select any non-compliant setting name in the list to open a pane where you can view a list of tenants that have devices with that specific non-compliant setting. From here, you can further drill down by selecting any tenant from the list to view information about the devices within that tenant that have the specific non-compliant setting. You can also sync or restart the device, or select **View device in Microsoft Endpoint Manager** if you need to troubleshoot or take further action.
 
 The Settings tab also includes the following options:
 
