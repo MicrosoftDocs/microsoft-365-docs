@@ -122,9 +122,9 @@ You can apply retention labels to content automatically when that content contai
 
 - [A match for trainable classifiers](#auto-apply-labels-to-content-by-using-trainable-classifiers)
 
-All three conditions can auto-label new emails. For SharePoint and OneDrive, use the following table to identify which items can be auto-labeled for each condition:
+All three conditions can automatically apply retention labels to emails as they sent. For items in SharePoint and OneDrive, use the following table to identify when retention labels can be automatically applied to them:
 
-|Condition|New or modified items |Existing items|
+|Condition|New or modified items |Existing items (data at rest)|
 |:-----|:-----|:-----|
 |Sensitive info types - built-in| Yes | Yes |
 |Sensitive info types - custom| Yes | No |
