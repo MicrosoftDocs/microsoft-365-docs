@@ -4226,6 +4226,16 @@
      "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365/security/office-365-security/quarantine-tags.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/quarantine-policies",
+      "redirect_document_id": true
+     },
+     {
+      "source_path": "microsoft-365/security/office-365-security/quarantine-policy.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/quarantine-policies",
+      "redirect_document_id": false
+     },
+    {
       "source_path": "microsoft-365/enterprise/microsoft-365-tenant-isolation-overview.md",
       "redirect_url": "/compliance/assurance/assurance-microsoft-365-isolation-controls",
       "redirect_document_id": false
