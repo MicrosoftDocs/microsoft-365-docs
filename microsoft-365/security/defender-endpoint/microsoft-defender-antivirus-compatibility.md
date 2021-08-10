@@ -118,6 +118,16 @@ The table in this section summarizes the features and capabilities that are acti
 
 - In Defender for Endpoint, turn EDR in block mode on, even if Microsoft Defender Antivirus is not your primary antivirus solution. EDR in block mode detects and remediate malicious items that are found on the device (post breach). To learn more, see [EDR in block mode](edr-in-block-mode.md).
 
+## How to confirm the state of Microsoft Defender Antivirus
+
+To check the state of Microsoft Defender Antivirus, use the `Get-MpComputerStatus` PowerShell cmdlet.
+
+1. On a Windows device, open Windows PowerShell.
+
+2. Run following PowerShell cmdlet: `Get-MpComputerStatus | select AMRunningMode`.
+
+3. Review the results. You should see either Normal or Passive if Microsoft Defender Antivirus is enabled on the endpoint.
+
 ## More details about Microsoft Defender Antivirus states
 
 The table in this section describes various states you might see with Microsoft Defender Antivirus. <br/><br/>
