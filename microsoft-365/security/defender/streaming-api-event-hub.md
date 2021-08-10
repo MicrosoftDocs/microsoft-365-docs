@@ -96,7 +96,7 @@ Once the Event Hub namespace is created you will need to:
 
 To get the data types for event properties do the following:
 
-1. Log in to [Microsoft 365 security center](https://security.microsoft.com) and go to [Advanced Hunting page](https://security.microsoft.com/hunting-package).
+1. Log in to [Microsoft 365 Defender portal](https://security.microsoft.com) and go to [Advanced Hunting page](https://security.microsoft.com/hunting-package).
 
 2. Run the following query to get the data types mapping for each event:
 

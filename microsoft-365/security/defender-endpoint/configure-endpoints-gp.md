@@ -80,6 +80,7 @@ package from [Microsoft 365 Defender portal](https://security.microsoft.com/):
 > [!TIP]
 > After onboarding the device, you can choose to run a detection test to verify that the device is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Defender for Endpoint device](run-detection-test.md).
 
+
 ## Additional Defender for Endpoint configuration settings
 For each device, you can state whether samples can be collected from the device when a request is made through Microsoft 365 Defender to submit a file for deep analysis.
 
@@ -187,6 +188,10 @@ Get the current list of attack surface reduction GUIDs from [Customize attack su
 Policy | Setting
 :---|:---
 Configure Controlled folder access| Enabled, Audit Mode
+
+## Run a detection test to verify onboarding
+After onboarding the device, you can choose to run a detection test to verify that a device is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Microsoft Defender for Endpoint device](run-detection-test.md).
+
 
 ## Offboard devices using Group Policy
 
