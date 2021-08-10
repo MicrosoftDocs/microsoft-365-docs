@@ -120,13 +120,13 @@ The table in this section summarizes the features and capabilities that are acti
 
 ## How to confirm the state of Microsoft Defender Antivirus
 
-To check the state of Microsoft Defender Antivirus, use the `Get-MpComputerStatus` PowerShell cmdlet.
+To check the state of Microsoft Defender Antivirus, you can use the [Get-MpComputerStatus PowerShell cmdlet](/powershell/module/defender/get-mpcomputerstatus).
 
 1. On a Windows device, open Windows PowerShell.
 
 2. Run following PowerShell cmdlet: `Get-MpComputerStatus | select AMRunningMode`.
 
-3. Review the results. You should see either Normal or Passive if Microsoft Defender Antivirus is enabled on the endpoint.
+3. Review the results. You should see either **Normal** or **Passive** if Microsoft Defender Antivirus is enabled on the endpoint.
 
 ## More details about Microsoft Defender Antivirus states
 
