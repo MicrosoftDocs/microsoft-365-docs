@@ -30,8 +30,8 @@ description: "Some domain registrars offer limited services, which means not all
 [Create DNS records at Freenom for Microsoft](#create-dns-records-at-freenom-for-microsoft)\
 [Create DNS records at MyDomain for Microsoft](#create-dns-records-at-mydomain-for-microsoft)\
 [Create DNS records for Microsoft using Windows-based DNS](#create-dns-records-for-microsoft-using-windows-based-dns)\
-[Create DNS records when your domain is managed by Google (eNom)](#create-dns-records-when-your-domain-is-managed-by-google-(enom))\
-[Create DNS records at 1&1 IONOS for Microsoft](#create-dns-records-at-1&1-ionos-for-microsoft)
+[Create DNS records when your domain is managed by Google (eNom)](#create-dns-records-when-your-domain-is-managed-by-google-enom)\
+[Create DNS records at 1&1 IONOS for Microsoft](#create-dns-records-at-11-ionos-for-microsoft)
 
 Some domain registrars have significant service limitations, which means not all Microsoft features will work with every domain. Specific limitations for some registrars are identified in this article. 
 
