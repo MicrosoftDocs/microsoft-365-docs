@@ -21,7 +21,7 @@ ms.collection:
   - m365solution-symantecmigrate
 ms.custom: migrationguides
 ms.topic: article
-ms.date: 06/14/2021
+ms.date: 08/10/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ---
 
@@ -86,7 +86,7 @@ Now that your endpoints have been onboarded to Defender for Endpoint, your next 
 | Method  | What to do  |
 |:-------|:-------|
 |Command Prompt     | 1. On a Windows device, open Command Prompt as an administrator.<p>2. Type `sc query windefend`, and then press Enter.<p>3. Review the results to confirm that Microsoft Defender Antivirus is running in passive mode.         |
-| PowerShell     | 1. On a Windows device, open Windows PowerShell as an administrator.<p>2. Run the [Get-MpComputerStatus](/powershell/module/defender/Get-MpComputerStatus) cmdlet. <p>3. In the list of results, look for either **AMRunningMode: Passive Mode** or **AMRunningMode: SxS Passive Mode**.    |
+| PowerShell     | 1. On a Windows device, open Windows PowerShell as an administrator.<p>2. Run following PowerShell cmdlet: `Get-MpComputerStatus | select AMRunningMode`. <p>Review the results. You should see **Passive mode**. [Learn more about Microsoft Defender Antivirus states](microsoft-defender-antivirus-compatibility.md#more-details-about-microsoft-defender-antivirus-states). |
 
 > [!NOTE]
 > You might see *Windows Defender Antivirus* instead of *Microsoft Defender Antivirus* in some versions of Windows.
