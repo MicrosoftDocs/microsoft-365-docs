@@ -34,7 +34,7 @@ To make your trained model available for others to use:
 
    - **Not visible** – The model will not be available for others to use.
    - **On all sites** – The model will be available in the content type gallery for others to use.
-   - **Only on specific sites** – You can choose which site or sites in which the model will be available. If you select this option, click in the text box to choose which sites you want the model applied.
+   - **Only on specific sites** – You can choose which site or sites in which the model will be available. If you select this option, click in the text box to search for and choose the sites to which you want the model applied. You will only see sites for which you have access.
 
 ## Discover other trained models
 
@@ -44,8 +44,8 @@ To find trained models that might be suitable for your content:
 
 2. On the **Review models and apply new ones** page:
 
-   - On the **Applied** tab, see the models that have been applied to your library.
-   - On the **Available** tab, see up to 10 additional trained models that are available to be applied to your library.
+   - On the **Applied** tab, see the models that have been applied to your library. You can select to view details to confirm extractors and other settings.
+   - On the **Available** tab, see the trained models that are available to be applied to your library.
 
 ### Apply a trained model to your library
 
