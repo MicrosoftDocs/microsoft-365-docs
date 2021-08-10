@@ -22,11 +22,11 @@ description: "Learn about the global settings options for privacy management."
 
 In this article: learn about **settings** options for privacy management.
 
-The global settings options for privacy management can be found under the gear icon in the upper right corner of the main pages. These allow you to set high-level preferences and customize key properties. This page provides an overview of the main Settings categories.
+The global settings options for privacy management can be found under the gear icon in the upper right corner of the main pages. These options allow you to set high-level preferences and customize key properties. This page provides an overview of the main Settings categories.
 
 ## Anonymization
 
-This feature enables you to show anonymized versions of usernames within privacy management features to users in certain roles. This will replace identifiable display names with a generic label in order to help mask your users’ identities while reviewing sensitive data. This option does not apply to the subject rights request module.
+This feature enables you to show anonymized versions of usernames within privacy management features to users in certain roles. It will replace identifiable display names with a generic label in order to help mask your users’ identities while reviewing sensitive data. This option does not apply to the subject rights request module.
 
 ## User notification emails  
 

@@ -37,7 +37,7 @@ To give members of your organization permissions to use privacy management, assi
 
 ## Role groups and roles
 
-Members should be assigned to role groups depending on what tasks they need to accomplish and what level of file access is appropriate. Each role group includes one or more roles. These roles may pertain to specific privacy management tasks or may correspond to key functions that are enabled or restricted for that group’s members.  
+Members should be assigned to role groups depending on what tasks they need to accomplish and what level of file access is appropriate. Each role group includes one or more roles. These roles may pertain to specific privacy management tasks or key functions that are enabled or restricted for that group’s members.  
 
 Role groups can be customized if needed. To avoid accidental loss of access, we recommend creating a copy of the existing role group you wish to customize, giving the copy an identifiable name, making and verifying your changes to the new group, and assigning people to it as appropriate.
 
