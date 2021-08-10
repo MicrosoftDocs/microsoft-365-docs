@@ -116,20 +116,20 @@ The [DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-m
    - Under **Base**, select **Hexadecimal**.
 
 > [!NOTE]
-> After onboarding to Defender for Endpoint, you might have to set Microsoft Defender Antivirus to passive mode on Windows Server. To validate that passive mode was set as expected, search for *event 5007* in the **Microsoft-Windows-Windows Defender Operational** log (located at `C:\Windows\System32\winevt\Logs`) and confirm either **ForcePassiveMode** or **PassiveMode** registry keys were set by to **0x1**.
+> After onboarding to Defender for Endpoint, you might have to set Microsoft Defender Antivirus to passive mode on Windows Server. To validate that passive mode was set as expected, search for *event 5007* in the **Microsoft-Windows-Windows Defender Operational** log (located at `C:\Windows\System32\winevt\Logs`), and confirm that either the  **ForceDefenderPassiveMode** or **PassiveMode** registry keys were set by to **0x1**.
 
 ### Are you using Windows Server 2016?
 
-If you have endpoints running Windows Server 2016, you cannot run Microsoft Defender Antivirus alongside a non-Microsoft antivirus/antimalware solution. Microsoft Defender Antivirus cannot run in passive mode on Windows Server 2016. In this case, you'll need to uninstall the non-Microsoft antivirus/antimalware solution, and install/enable Microsoft Defender Antivirus instead. To learn more, see [Antivirus solution compatibility with Defender for Endpoint](microsoft-defender-antivirus-compatibility.md).
-
-If you're using Windows Server 2016 and are having trouble enabling Microsoft Defender Antivirus, follow these steps:
+Currently, you cannot run Microsoft Defender Antivirus in passive mode on Windows Server 2016. Uninstall the non-Microsoft antivirus/antimalware solution, and install/enable Microsoft Defender Antivirus. If you're having trouble enabling Microsoft Defender Antivirus on Windows Server 2016, follow these steps:
 
 1. On the device, open PowerShell as an administrator.
 
 2. Type the following PowerShell cmdlet: `mpcmdrun -wdenable`
 
 > [!TIP]
-> For more information, see [Microsoft Defender Antivirus on Windows Server](microsoft-defender-antivirus-on-windows-server.md).
+> For more information, see the following articles:
+> - [Microsoft Defender Antivirus on Windows Server](microsoft-defender-antivirus-on-windows-server.md)
+> - [Microsoft Defender Antivirus compatibility with other security products](microsoft-defender-antivirus-compatibility.md)
 
 ## Configure Defender for Endpoint
 
