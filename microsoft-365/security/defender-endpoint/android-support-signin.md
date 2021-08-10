@@ -139,4 +139,5 @@ Users can follow these steps to enable the same permissions from the device sett
 
    ![Locate "Microsoft Defender Endpoint" and select "Don't Optimize"](images/select-dont-optimize.png)
 
+
 Return to the Microsoft Defender Endpoint onboarding screen, select **Allow**, and you will be redirected to the dashboard screen.
