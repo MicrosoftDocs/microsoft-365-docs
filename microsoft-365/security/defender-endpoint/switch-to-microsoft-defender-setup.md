@@ -120,16 +120,16 @@ The [DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-m
 
 ### Are you using Windows Server 2016?
 
-Currently, you cannot run Microsoft Defender Antivirus in passive mode on Windows Server 2016. Uninstall the non-Microsoft antivirus/antimalware solution, and install/enable Microsoft Defender Antivirus. 
-
-If you're using Windows Server 2016 and are having trouble enabling Microsoft Defender Antivirus, follow these steps:
+Currently, you cannot run Microsoft Defender Antivirus in passive mode on Windows Server 2016. Uninstall the non-Microsoft antivirus/antimalware solution, and install/enable Microsoft Defender Antivirus. If you're having trouble enabling Microsoft Defender Antivirus on Windows Server 2016, follow these steps:
 
 1. On the device, open PowerShell as an administrator.
 
 2. Type the following PowerShell cmdlet: `mpcmdrun -wdenable`
 
 > [!TIP]
-> For more information, see the following articles: [Microsoft Defender Antivirus on Windows Server](microsoft-defender-antivirus-on-windows-server.md) To learn more, see [Antivirus solution compatibility with Defender for Endpoint](microsoft-defender-antivirus-compatibility.md)..
+> For more information, see the following articles:
+> - [Microsoft Defender Antivirus on Windows Server](microsoft-defender-antivirus-on-windows-server.md)
+> - [Microsoft Defender Antivirus compatibility with other security products](microsoft-defender-antivirus-compatibility.md)
 
 ## Configure Defender for Endpoint
 
