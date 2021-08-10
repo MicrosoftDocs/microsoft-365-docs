@@ -39,6 +39,9 @@ To see which tenants have devices with a specific compliance status, select that
 
 Select any device name in the list to view more details about that device's current compliance state. You can sync or restart the device, or select **View device in Microsoft Endpoint Manager** if you need to troubleshoot or take further action.
 
+> [!NOTE]
+> When you restart a device, the device owner isn't automatically notified and may lose unsaved work. For this reason, you may want to notify the device owner before you restart a device.
+
 The Devices tab also includes the following options:
 
 - **Export:** Select to export device compliance data to an Excel comma-separated values (.csv) file.
@@ -47,9 +50,6 @@ The Devices tab also includes the following options:
 - **Restart:** Select one or more devices from the list that have a status of Not compliant, In grace period, or Not evaluated, and then select this option to restart those devices.
 - **Search:** Enter keywords to quickly locate a specific device in the list.
  
-> [!NOTE]
-> When you restart a device, the device owner isn't automatically notified and they may lose unsaved work. You may want to alert the device owner before taking this action.
-
 :::image type="content" source="../media/m365-lighthouse-device-compliance-page-overview/devices-device-tab.png" alt-text="Screenshot of the Devices tab.":::
 
 ## Policies tab
@@ -86,5 +86,5 @@ The Settings tab also includes the following options:
 
 ## Related content
 
-[Microsoft 365 Lighthouse Users page overview](m365-lighthouse-users-page-overview.md) (article)\
+[Windows 365 (Cloud PCs) page overview](m365-lighthouse-win365-page-overview.md) (article)\
 [Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)
