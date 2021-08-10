@@ -15,7 +15,6 @@ author: denisebmsft
 ms.author: deniseb
 ms.topic: article
 ms.custom: nextgen
-
 ms.date: 02/10/2021
 ---
 
@@ -43,6 +42,7 @@ Keep the following important points in mind:
 - Automatic exclusions only apply to Real-time protection (RTP) scanning. Automatic exclusions are not honored during a Full/Quick or On-demand scan.
 - Custom and duplicate exclusions do not conflict with automatic exclusions.
 - Microsoft Defender Antivirus uses the Deployment Image Servicing and Management (DISM) tools to determine which roles are installed on your computer.
+- Automatic exclusions for server roles don't work on Windows Server 2012 R2.
 
 ## Opt out of automatic exclusions
 
