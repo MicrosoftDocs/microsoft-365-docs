@@ -102,3 +102,42 @@ background."
 Enable the required permission on Xiaomi devices.
 
 - Display pop-up windows while running in the background.
+
+
+## Unable to allow permission for 'Permanent protection' during onboarding on some OEM devices
+
+**Applies to:** Specific OEM devices only.
+
+-   **Xiaomi with Android 11** 
+
+Defender App asks for Battery Optimization/Permanent Protection permission on devices as part of app onboarding, and selecting **Allow** returns an error that the permission couldn't be set. It only affects the last permission called "Permanent Protection." 
+ 
+**Cause:**
+Xiomi changed the battery optimization permissions in Android 11. Defender is not allowed to configure this setting to ignore battery optimizations.
+
+**Solution:**
+We are working with OEM to find a solution to enable this permission from the app onboarding screen. We will update the documentation when this is resolved.
+Users can follow these steps to enable the same permissions from the device settings: 
+
+1. Go to **Settings** on your device.
+   
+2. Search for and select **Battery Optimization**.
+   
+   ![Search for and select "Battery Optimisation".](images/search-battery-optimisation.png)
+
+3. In **Special app access**, select **Battery Optimization**.
+   
+   ![In Special app access, select "Battery Optimisation".](images/special-app-access.png)
+
+4. Change the Dropdown to show **All Apps**.
+
+   ![Change dropdown to show "All Apps".](images/show-all-apps-2.png)
+
+   ![Change dropdown to show "All Apps".](images/show-all-apps-1.png)
+
+5. Locate “Microsoft Defender Endpoint” and select **Don’t Optimize**.
+
+   ![Locate "Microsoft Defender Endpoint" and select "Don't Optimise".](images/select-dont-optimise.png)
+
+
+Return to the Microsoft Defender Endpoint onboarding screen, select **Allow**, and you will be redirected to the dashboard screen.

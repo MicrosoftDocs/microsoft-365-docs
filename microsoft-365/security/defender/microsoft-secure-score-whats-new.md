@@ -1,7 +1,7 @@
 ---
 title: What's new in Microsoft Secure Score
-description: Describes what new changes have happened to Microsoft Secure Score in the Microsoft 365 security center.
-keywords: microsoft secure score, secure score, office 365 secure score, microsoft security score, microsoft 365 security center
+description: Describes what new changes have happened to Microsoft Secure Score in the Microsoft 365 Defender portal.
+keywords: microsoft secure score, secure score, office 365 secure score, microsoft security score, Microsoft 365 Defender portal
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 localization_priority: Normal
@@ -29,7 +29,7 @@ ms.technology: m365d
 
 To make Microsoft Secure Score a better representative of your security posture, we have made some changes. To learn about planned changes, see [What's coming in Microsoft Secure Score?](microsoft-secure-score-whats-coming.md)
 
-Microsoft Secure Score can be found at https://security.microsoft.com/securescore in the [Microsoft 365 security center](overview-security-center.md).
+Microsoft Secure Score can be found at https://security.microsoft.com/securescore in the [Microsoft 365 Defender portal](overview-security-center.md).
 
 ## July 2021
 
@@ -78,7 +78,7 @@ Microsoft Secure Score can be found at https://security.microsoft.com/securescor
 
 ### Compatibility with Graph API
 
-Microsoft Secure Score recommendations delivered via Graph API will look and be weighted the same as the recommendations you currently see in the Microsoft 365 security center.
+Microsoft Secure Score recommendations delivered via Graph API will look and be weighted the same as the recommendations you currently see in the Microsoft 365 Defender portal.
 
 ## January 2021
 
