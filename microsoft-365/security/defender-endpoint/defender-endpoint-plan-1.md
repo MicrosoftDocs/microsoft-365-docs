@@ -34,7 +34,7 @@ This article focuses on Defender for Endpoint Plan 1, currently in preview. Use 
 - [Compare Defender for Endpoint Plan 1 (preview) to Plan 2](defender-endpoint-plan-1-2.md)
 - [Learn how to set up and configure Defender for Endpoint Plan 1 (preview)](mde-p1-setup-configuration.md)
 - [Get started using the Microsoft 365 Defender portal, where you can view incidents and alerts, manage devices, and use reports about detected threats](mde-plan1-getting-started.md)
-- [Find information about on maintenance and operations](mde-p1-maintenance-operations.md)
+- [Get an overview of maintenance and operations](mde-p1-maintenance-operations.md)
 
 > [!TIP]
 > [Learn more about the differences between Defender for Endpoint Plan 1 (preview) and Plan 2](defender-endpoint-plan-1-2.md).
