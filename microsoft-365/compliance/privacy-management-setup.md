@@ -47,7 +47,7 @@ If you don’t hold the required role to obtain the subscription or consent to t
 
 Privacy management uses a role-based access control (RBAC) permission model. Only users who are assigned a role may access privacy management, and the actions allowed by each user are restricted by role type.
 
-We recommend that the global admin sign in and set user permissions in the Compliance Center when using privacy management for the first time. For a quick start, the Privacy Management role group has permissions to access all features of privacy management. This may be a good fit for organizations where the same individual may perform all duties within the privacy management solution. Other privacy roles allow you to take more granular control and assign users to selected features or functions.
+We recommend that the global admin sign in and set user permissions in the Compliance Center when using privacy management for the first time. For a quick start, the Privacy Management role group has permissions to access all features of privacy management. This group may be a good fit for organizations where the same individual may perform all duties within the privacy management solution. Other privacy roles allow you to take more granular control and assign users to selected features or functions.
 
 To learn more about role groups and how to grant access, see [Set user permissions and assign roles](privacy-management-permissions.md).
 
