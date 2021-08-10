@@ -123,7 +123,7 @@ Users can follow these steps to enable the same permissions from the device sett
    
 2. Search for and select **Battery Optimization**.
    
-   ![Search and select "Battery Optimisation](images/searchBatteryOptimisation.png)
+   ![Search for and select "Battery Optimisation"](images/searchBatteryOptimisation.png)
 
 3. In **Special app access**, select **Battery Optimization**.
    
