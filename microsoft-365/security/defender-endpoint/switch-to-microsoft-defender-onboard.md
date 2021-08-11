@@ -65,9 +65,9 @@ Deployment methods vary, depending on operating system and preferred methods. Th
 | Windows 8.1 Enterprise <br/>Windows 8.1 Pro <br/>Windows 7 SP1 Enterprise <br/>Windows 7 SP1 Pro     | [Microsoft Monitoring Agent](onboard-downlevel.md)<br/><br/>**NOTE**: Microsoft Monitoring Agent is now Azure Log Analytics agent. To learn more, see [Log Analytics agent overview](/azure/azure-monitor/platform/log-analytics-agent).        |
 | Windows Server 2019 and later <br/>Windows Server 2019 core edition <br/>Windows Server version 1803 and later | [Local script](configure-endpoints-script.md) <br/>[Group Policy](configure-endpoints-gp.md) <br/>[Configuration Manager](configure-endpoints-sccm.md) <br/>[System Center Configuration Manager](configure-endpoints-sccm.md) <br/>[VDI onboarding scripts for non-persistent devices](configure-endpoints-vdi.md) <br/><br/>**NOTE**: A local script is suitable for a proof of concept but should not be used for production deployment. For a production deployment, we recommend using Group Policy, Microsoft Endpoint Configuration Manager, or Intune.    |
 | Windows Server 2016 <br/>Windows Server 2012 R2 <br/>Windows Server 2008 R2 SP1  | [Microsoft 365 Defender portal](configure-server-endpoints.md)<br/>[Azure Defender](/azure/security-center/security-center-wdatp) |
-| macOS (11.3.1 (Big Sur); 10.15 (Catalina); 10.14 (Mojave)) | [Onboard non-Windows devices](configure-endpoints-non-windows.md)  |
+| macOS: 11.3.1 (Big Sur); 10.15 (Catalina); 10.14 (Mojave) | [Onboard non-Windows devices](configure-endpoints-non-windows.md)  |
 | iOS | [Onboard non-Windows devices](configure-endpoints-non-windows.md)  |
-| Linux (RHEL 7.2+; CentOS Linux 7.2+; Ubuntu 16 LTS, or higher LTS; SLES 12+; Debian 9+; Oracle Linux 7.2) | [Onboard non-Windows devices](configure-endpoints-non-windows.md)  |
+| Linux: RHEL 7.2+; CentOS Linux 7.2+; Ubuntu 16 LTS, or higher LTS; SLES 12+; Debian 9+; Oracle Linux 7.2 | [Onboard non-Windows devices](configure-endpoints-non-windows.md)  |
 
 ## Run a detection test
 
@@ -77,7 +77,7 @@ To verify that your onboarded devices are properly connected to Defender for End
 |---------|---------|
 | Windows (Windows 10; Windows Server 2019; Windows Server, version 1803; Windows Server 2016; Windows Server 2012 R2)  | See [Run a detection test](run-detection-test.md). <br/>Visit the Defender for Endpoint demo scenarios site ([https://demo.wd.microsoft.com](https://demo.wd.microsoft.com)) and try one or more of the scenarios. For example, try the **Cloud-delivered protection** demo scenario.    |
 | macOS (11.3.1 (Big Sur); 10.15 (Catalina); or 10.14 (Mojave))    | Download and use the DIY app at [https://aka.ms/mdatpmacosdiy](https://aka.ms/mdatpmacosdiy). <br/><br/>For more information, see [Defender for Endpoint on macOS](microsoft-defender-endpoint-mac.md).        |
-| Linux (RHEL 7.2+; CentOS Linux 7.2+; Ubuntu 16 LTS, or higher LTS; SLES 12+; Debian 9+; Oracle Linux 7.2) | 1. Run the following command, and look for a result of **1**: <br/>`mdatp health --field real_time_protection_enabled`. <br/> 2. Open a Terminal window, and run the following command: <br/>`curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt`. <br/> 3. Run the following command to list any detected threats: <br/>`mdatp threat list`. <br/><br/>For more information, see [Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md). |
+| Linux: RHEL 7.2+; CentOS Linux 7.2+; Ubuntu 16 LTS, or higher LTS; SLES 12+; Debian 9+; Oracle Linux 7.2 | 1. Run the following command, and look for a result of **1**: <br/>`mdatp health --field real_time_protection_enabled`. <br/> 2. Open a Terminal window, and run the following command: <br/>`curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt`. <br/> 3. Run the following command to list any detected threats: <br/>`mdatp threat list`. <br/><br/>For more information, see [Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md). |
 
 ## Confirm that Microsoft Defender Antivirus is in passive mode on your endpoints
 
