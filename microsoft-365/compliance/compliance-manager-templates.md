@@ -53,7 +53,7 @@ To find template licenses in the admin center, choose the appropriate link for y
 - [GCC High license](https://portal.office365.us/SubscriptionDetails?OfferId=876da39d-2623-41fb-98e0-fa85aaad109e)
 - [DOD license](https://portal.apps.mil/Commerce/Trial.aspx?OfferId=7825C291-1712-4BAC-A334-F336F9ADE746) 
 
-You may also acquire licenses through your participation in the [Cloud Solution Provider program](https://partner.microsoft.com/membership/cloud-solution-provider) or [volume licensing](https://www.microsoft.com/licensing/licensing-programs/licensing-programs). Contact your account manager to learn more.
+You may also acquire licenses through your participation in the [Cloud Solution Provider program](https://partner.microsoft.com/membership/cloud-solution-provider) or [volume licensing](https://www.microsoft.com/licensing/licensing-programs/licensing-programs).
 
 Once your purchase has been finalized, the templates should become available in your tenant within 48 hours.
 
