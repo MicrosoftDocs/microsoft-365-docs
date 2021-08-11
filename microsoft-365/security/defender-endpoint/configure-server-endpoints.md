@@ -100,7 +100,7 @@ Microsoft Defender for Endpoint integrates seamlessly with Azure Defender. You c
 For more information, see [Integration with Azure Defender](azure-server-integration.md).
 
 >[!NOTE]
-For Windows Server 2012 R2 and 2016 running the modern unified solution preview, integration with Azure Security Center / Azure Defender for Servers for alerting and automated deployment is not yet available. Whilst you can install the new solution on these machines, no alerts will be displayed in Azure Security Center.
+>For Windows Server 2012 R2 and 2016 running the modern unified solution preview, integration with Azure Security Center / Azure Defender for Servers for alerting and automated deployment is not yet available. Whilst you can install the new solution on these machines, no alerts will be displayed in Azure Security Center.
 
 ## Windows Server 2012 R2 and Windows Server 2016
 
