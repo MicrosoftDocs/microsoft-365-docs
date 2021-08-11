@@ -2,8 +2,8 @@
 title: "Get started with visibility and insights"
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -24,15 +24,17 @@ The first place to get started is the app governance dashboard at [https://aka.m
 
 ![The app governance overview page in the Microsoft 365 Compliance Center](..\media\manage-app-protection-governance\mapg-cc-overview.png)
 
-You can also access the app governance dashboard from **Office 365 admin center > Microsoft 365 Compliance Center > App governance > Overview page**.
+You can also access the app governance dashboard from **Office 365 > Microsoft 365 Compliance Center > App governance > Overview page**.
 
 ## What’s available on the dashboard
 
 The dashboard contains a summary of the components of the Microsoft 365 app ecosystem in the tenant:
 
 - **Tenant summary**: The count of key app and alert categories.
-- **Detection and policy alerts**: The most recent active alerts in the tenant
-- **Data and resources access**: Aggregate application API access and overall usage of top resources in the tenant. Mouse over each month column in the graph to see the corresponding value.
+- **Top alerts**: The 10 most recent active alerts in the tenant
+- **Data and resources access**: Mouse over each month column in the graph to see the corresponding value.
+    - **Data access over the last four months**: Tracks total data accessed by all apps in the tenant through Graph API over the last four calendar months. Currently only includes Mail and File upload/download usage.
+    - **Top resources data access over the last four months**: Data usage over the last four calendar months, broken down by resource type. Currently only includes Mail and File upload/download usage
 - **Improve your app protection and governance**: Recommended actions such as creating an app usage or permissions policy.
 - **Top apps by categories**: The top apps sorted by these categories:
   

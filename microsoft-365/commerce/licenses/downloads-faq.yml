@@ -4,9 +4,7 @@ metadata:
   ms.author: cmcatee
   author: cmcatee-MSFT
   manager: scotv
-  ms.reviewer: 
-  - Rani Chegondi
-  - Armando Valenzuela
+  ms.reviewer: racheg, armanv
   ms.date: 07/22/2021
   audience: Admin
   ms.topic: article
@@ -41,8 +39,8 @@ sections:
 
           To determine if a product is eligible for download:
 
-            1.	Select **Volume Licensing**, and then select the product or **View downloads**.
-            2.	Under **Download**, if the product is not available, you’ll see “This product is not available for download.”
+            1. Select **Volume Licensing**, and then select the product or **View downloads**.
+            2. Under **Download**, if the product is not available, you’ll see “This product is not available for download.”
 
       - question: |
           What is a Client Access License (CAL)?
@@ -71,8 +69,8 @@ sections:
           How do I download products in the admin center?
         answer: |
           To download products in the admin center:
-          1.	Select **Volume Licensing**, and then select the product or **View downloads**.
-          2.	Under **Download**, select a component and select a download action or the download icon. 
+          1. Select **Volume Licensing**, and then select the product or **View downloads**.
+          2. Under **Download**, select a component and select a download action or the download icon. 
 
           To access downloads in the admin center, a VLSC administrator in your organization can provide access by assigning you to one of these roles:
             - Administrator
@@ -83,8 +81,8 @@ sections:
           How do I change my download settings?
         answer: |
           To access download settings in the admin center:
-          1.	Select **Volume Licensing**, and then select the product or **View downloads**.
-          2.	Under **Download**, select the **Language** and **Operating System Type**.
+          1. Select **Volume Licensing**, and then select the product or **View downloads**.
+          2. Under **Download**, select the **Language** and **Operating System Type**.
           
           **Note** Pop-up blockers can block downloads. Make sure pop-up blockers are disabled when you download software from the admin center.
 
@@ -134,3 +132,4 @@ additionalContent: |
   - [Product keys FAQ](product-keys-faq.yml)
 
   - [Online services activation for Open programs FAQ](online-service-activation-faq.yml)
+  

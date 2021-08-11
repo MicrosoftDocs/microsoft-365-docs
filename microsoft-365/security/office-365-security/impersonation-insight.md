@@ -1,20 +1,20 @@
 ---
 title: Impersonation insight
-f1.keywords: 
+f1.keywords:
   - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date: 
+ms.date:
 audience: ITPro
 ms.topic: overview
 
 localization_priority: Normal
-search.appverid: 
+search.appverid:
   - MET150
   - MOE150
 ms.assetid:
-ms.collection: 
+ms.collection:
   - M365-security-compliance
 description: Admins can learn how the impersonation insight works. They can quickly determine which senders are legitimately sending email into their organizations from domains that don't pass email authentication checks (SPF, DKIM, or DMARC).
 ms.custom: seo-marvel-apr2020
@@ -62,7 +62,7 @@ You can use the impersonation insight in the Microsoft 365 Defender portal to qu
 
 ## Open the impersonation insight in the Microsoft 365 Defender portal
 
-1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** page \> **Policies** section \> **Anti-phishing**.
+1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Anti-phishing** in the **Policies** section.
 
 2. On the **Anti-phishing** page, the impersonation insight looks like this:
 
