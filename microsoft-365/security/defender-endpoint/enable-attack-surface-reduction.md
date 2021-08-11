@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 localization_priority: Normal
 audience: ITPro
-author: denisebmsft
-ms.author: deniseb
+author: jweston-1
+ms.author: v-jweston
 ms.reviewer: oogunrinde
 manager: dansimp
 ms.technology: mde
