@@ -109,7 +109,7 @@ need to run live response again.
 |script_name|Executed script name|
 |exit_code|Executed script exit code|
 |script_output|Executed script standard output|
-|script_error|Executed script standard error output|
+|script_errors|Executed script standard error output|
 
 ## Example
 
@@ -144,7 +144,7 @@ Content-type: application/json
     "exit_code": 0,
     "script_output": "Transcript started, output file is C:\\ProgramData\\Microsoft\\Windows Defender Advanced Threat Protection\\Temp\\PSScriptOutputs\\PSScript_Transcript_{TRANSCRIPT_ID}.txt
 C:\\windows\\TEMP\\OfficeClickToRun.dmp.zip\n51 MB\n\u0000\u0000\u0000",
-    "script_error":""
+    "script_errors":""
 }
 ```
 
