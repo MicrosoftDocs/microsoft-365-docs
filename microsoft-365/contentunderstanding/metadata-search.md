@@ -28,11 +28,11 @@ End users can use these fields to more easily search using metadata. Advanced se
 
 1. From a SharePoint document library in SharePoint Syntex, in the search box, click or tap the metadata search icon.
 
-    ![Screenshot of a document library page showing the search box with the metadata search icon highlighted.](../media/content-understanding/metadate-search-box.png)
+    ![Screenshot of a document library page showing the search box with the metadata search icon highlighted.](../media/content-understanding/metadata-search-box.png)
 
 2. In the metadata search pane, type the string you want to find in one of the search fields.
 
-    ![Screenshot of a document library page showing the metadata search pane.](../media/content-understanding/metadate-search-pane.png)
+    ![Screenshot of a document library page showing the metadata search pane.](../media/content-understanding/metadata-search-pane.png)
 
 
 Currently, five metadata search fields are available. More fields will be added in the future.
