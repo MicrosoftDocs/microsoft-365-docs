@@ -1,7 +1,7 @@
 ---
 title: Provide managed security service provider (MSSP) access
-description: Learn about changes from the Microsoft Defender Security Center to the Microsoft 365 security center
-keywords: Getting started with the Microsoft 365 security center, Microsoft Defender for Office 365, Microsoft Defender for Endpoint, MDO, MDE, single pane of glass, converged portal, security portal, defender security portal
+description: Learn about changes from the Microsoft Defender Security Center to the Microsoft 365 Defender portal
+keywords: Getting started with the Microsoft 365 Defender portal, Microsoft Defender for Office 365, Microsoft Defender for Endpoint, MDO, MDE, single pane of glass, converged portal, security portal, defender security portal
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 localization_priority: Normal
@@ -33,25 +33,25 @@ ms.collection:
 
 To implement a multi-tenant delegated access solution, take the following steps:
 
-1. Enable [role-based access control](/windows/security/threat-protection/microsoft-defender-atp/rbac) in Defender for Endpoint in Microsoft 365 security center and connect with Azure Active Directory (Azure AD) groups.
+1. Enable [role-based access control](/windows/security/threat-protection/microsoft-defender-atp/rbac) in Defender for Endpoint in Microsoft 365 Defender portal and connect with Azure Active Directory (Azure AD) groups.
 
 2. Configure [Governance Access Packages](/azure/active-directory/governance/identity-governance-overview) for access request and provisioning.
 
 3. Manage access requests and audits in [Microsoft Myaccess](/azure/active-directory/governance/entitlement-management-request-approve).
 
-## Enable role-based access controls in Microsoft Defender for Endpoint in Microsoft 365 security center
+## Enable role-based access controls in Microsoft Defender for Endpoint in Microsoft 365 Defender portal
 
 1. **Create access groups for MSSP resources in Customer AAD: Groups**
 
-    These groups will be linked to the Roles you create in Defender for Endpoint in Microsoft 365 security center. To do so, in the customer AD tenant, create three groups. In our example approach, we create the following groups:
+    These groups will be linked to the Roles you create in Defender for Endpoint in Microsoft 365 Defender portal. To do so, in the customer AD tenant, create three groups. In our example approach, we create the following groups:
 
     - Tier 1 Analyst
     - Tier 2 Analyst
     - MSSP Analyst Approvers  
 
-2. Create Defender for Endpoint roles for appropriate access levels in Customer Defender for Endpoint in Microsoft 365 security center roles and groups.
+2. Create Defender for Endpoint roles for appropriate access levels in Customer Defender for Endpoint in Microsoft 365 Defender portal roles and groups.
 
-    To enable RBAC in the customer Microsoft 365 security center, access **Permissions >  Endpoints roles & groups > Roles** with a user account with Global Administrator or Security Administrator rights.
+    To enable RBAC in the customer Microsoft 365 Defender portal, access **Permissions >  Endpoints roles & groups > Roles** with a user account with Global Administrator or Security Administrator rights.
 
     ![Image of MSSP access](../../media/mssp-access.png)
 
@@ -120,9 +120,9 @@ To implement a multi-tenant delegated access solution, take the following steps:
 
 2. Approve or deny requests in the **Approvals** section of the UI.
 
-     At this point, analyst access has been provisioned, and each analyst should be able to access the customer's Microsoft 365 Security Center:
+     At this point, analyst access has been provisioned, and each analyst should be able to access the customer's Microsoft 365 Defender portal:
 
     `https://security.microsoft.com/?tid=<CustomerTenantId>` with the permissions and roles they were assigned.
 
 > [!IMPORTANT]
-> Delegated access to Microsoft Defender for Endpoint in the Microsoft 365 security center currently allows access to a single tenant per browser window.
+> Delegated access to Microsoft Defender for Endpoint in the Microsoft 365 Defender portal currently allows access to a single tenant per browser window.

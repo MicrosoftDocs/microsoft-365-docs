@@ -269,7 +269,7 @@
             - name: Manage add-ins in the admin center 
               href: manage/manage-addins-in-the-admin-center.md      
             - name: Centralized Deployment FAQ
-              href: manage/centralized-deployment-faq.md
+              href: manage/centralized-deployment-faq.yml
          - name: Manage industry news
            href: manage/manage-industry-news.md
          - name: Manage Office Scripts settings 
@@ -426,3 +426,5 @@
       href: /office/troubleshoot/
     - name: Contact support
       href: ../business-video/get-help-support.md
+    - name: Navigation guide
+      href: ../microsoft-365-docs-navigation-guide.md?bc=%2foffice365%2fadmin%2fbreadcrumb%2ftoc.json&toc=%2foffice365%2fadmin%2ftoc.json
