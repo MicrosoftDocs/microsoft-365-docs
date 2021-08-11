@@ -66,7 +66,7 @@ Security reader can find email threats, but can't take action on them without ha
 
 Permanent assignment of the Search and Purge Role doesn't hold with the Zero Trust security initiative, but PIM can be used to grant just-in-time access here too.
 
-### Part 1 - Create a Privileged Access Group
+### Create a Privileged Access Group
 
 In the Security Portal, create a custom role group that contains the permissions that we want. 
 
@@ -74,7 +74,7 @@ In the Security Portal, create a custom role group that contains the permissions
 2. Name your group to reflect its purpose such as 'Search and Purge PIM'.
 3. Don't add members, simply save the group and move on to the next part!
 
-### Part 2 - Create a security group in Azure AD for PIM
+### Create a security group in Azure AD for PIM
 
 1. Browse into **Azure AD** > **Groups** > **New Group**.
 2. Name your AAD group to reflect its purpose, **no owners or members are required** right now.
@@ -82,7 +82,7 @@ In the Security Portal, create a custom role group that contains the permissions
 4. Don't add any roles, members or owners, create the group.
 5. Go back into the group you've just created, and select **Privileged Access** > **Enable Privileged Access**.
 
-### Part 3 - Nest the group, set up the assignment time, and add the user who needs Search & Purge (Alex)
+### Nest the group, set up the assignment time, and add the user who needs Search & Purge (add Alex)
 
 1. In Powershell (Security & Compliance) run:
 
