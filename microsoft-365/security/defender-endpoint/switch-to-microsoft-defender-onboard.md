@@ -75,8 +75,8 @@ To verify that your onboarded devices are properly connected to Defender for End
 
 |Operating system  |Guidance  |
 |---------|---------|
-| Windows 10 <p>Windows Server 2019 <p>Windows Server, version 1803 <p>Windows Server 2016 <p>Windows Server 2012 R2     | See [Run a detection test](run-detection-test.md). <p>Visit the Defender for Endpoint demo scenarios site ([https://demo.wd.microsoft.com](https://demo.wd.microsoft.com)) and try one or more of the scenarios. For example, try the **Cloud-delivered protection** demo scenario.    |
-| macOS:<p>11.3.1 (Big Sur) <p>10.15 (Catalina)<p>10.14 (Mojave)    | Download and use the DIY app at [https://aka.ms/mdatpmacosdiy](https://aka.ms/mdatpmacosdiy). <p>For more information, see [Defender for Endpoint on macOS](microsoft-defender-endpoint-mac.md).        |
+| Windows 10 <br/> Windows Server 2019 <br/> Windows Server, version 1803 <br/> Windows Server 2016 <br/> Windows Server 2012 R2     | See [Run a detection test](run-detection-test.md). <br/>Visit the Defender for Endpoint demo scenarios site ([https://demo.wd.microsoft.com](https://demo.wd.microsoft.com)) and try one or more of the scenarios. For example, try the **Cloud-delivered protection** demo scenario.    |
+| macOS (11.3.1 (Big Sur); 10.15 (Catalina); or 10.14 (Mojave))    | Download and use the DIY app at [https://aka.ms/mdatpmacosdiy](https://aka.ms/mdatpmacosdiy). <p>For more information, see [Defender for Endpoint on macOS](microsoft-defender-endpoint-mac.md).        |
 | Linux:<p>RHEL 7.2+<p>CentOS Linux 7.2+<p>Ubuntu 16 LTS, or higher LTS<p>SLES 12+<p>Debian 9+<p>Oracle Linux 7.2 | 1. Run the following command, and look for a result of **1**: <br/>`mdatp health --field real_time_protection_enabled`. <p>2. Open a Terminal window, and run the following command: <br/>`curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt`. <p>3. Run the following command to list any detected threats: <br/>`mdatp threat list`. <p>For more information, see [Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md). |
 
 ## Confirm that Microsoft Defender Antivirus is in passive mode on your endpoints
@@ -85,8 +85,10 @@ Now that your endpoints have been onboarded to Defender for Endpoint, your next 
 
 | Method  | What to do  |
 |:-------|:-------|
-|Command Prompt     | 1. On a Windows device, open Command Prompt.<p>2. Type `sc query windefend`, and then press Enter.<p>3. Review the results to confirm that Microsoft Defender Antivirus is running in passive mode.         |
-| PowerShell     | 1. On a Windows device, open Windows PowerShell as an administrator.<p>2. Run following PowerShell cmdlet: `Get-MpComputerStatus | select AMRunningMode`. <p>Review the results. You should see **Passive mode**.  |
+|Command Prompt     | 1. On a Windows device, open Command Prompt. <br/> 2. Type `sc query windefend`, and then press Enter. <br/> 3. Review the results to confirm that Microsoft Defender Antivirus is running in passive mode.         |
+| PowerShell     | 1. On a Windows device, open Windows PowerShell as an administrator. <br/> 2. Run following PowerShell cmdlet: `Get-MpComputerStatus | select AMRunningMode`. <br/> Review the results. You should see **Passive mode**.  |
+| Windows Security app | 1. On a Windows device, open the Windows Security app. <br/>2. Select **Virus & threat protection**.<br/>3. Under **Who's protecting me?** select **Manage providers**. <br/>4. On the **Security providers** page, under **Antivirus**, you should see **Microsoft Defender Antivirus is turned on**. |
+| Task Manager | 1. On a Windows device, open the Task Manager app. <br/>2. Select the **Details** tab.<br/>3. Look for **MsMpEng.exe** in the list. |
 
 > [!NOTE]
 > You might see *Windows Defender Antivirus* instead of *Microsoft Defender Antivirus* in some versions of Windows.
