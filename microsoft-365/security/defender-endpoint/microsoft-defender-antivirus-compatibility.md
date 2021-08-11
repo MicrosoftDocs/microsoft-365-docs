@@ -128,6 +128,7 @@ You can use one of several methods to confirm the state of Microsoft Defender An
 | Task Manager | 1. On a Windows device, open the Task Manager app. <br/>2. Select the **Details** tab.<br/>3. Look for **MsMpEng.exe** in the list. |
 | Windows PowerShell <br/> (To confirm that Microsoft Defender Antivirus is running) | 1. On a Windows device, open Windows PowerShell.<br/>2. Run the following PowerShell cmdlet: `Get-Process`.<br/>3. Review the results. You should see **MsMpEng.exe** if Microsoft Defender Antivirus is enabled. |
 | Windows PowerShell <br/> (To confirm that antivirus protection is in place) | You can use the [Get-MpComputerStatus PowerShell cmdlet](/powershell/module/defender/get-mpcomputerstatus).<br/>1. On a Windows device, open Windows PowerShell.<br/>2. Run following PowerShell cmdlet: `Get-MpComputerStatus | select AMRunningMode`.<br/>3. Review the results. You should see either **Normal** or **Passive** if Microsoft Defender Antivirus is enabled on the endpoint. |
+| Command Prompt     | 1. On a Windows device, open Command Prompt.<p>2. Type `sc query windefend`, and then press Enter.<p>3. Review the results to confirm that Microsoft Defender Antivirus is running in passive mode.         |
 
 ## More details about Microsoft Defender Antivirus states
 
