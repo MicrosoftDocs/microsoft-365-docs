@@ -129,7 +129,7 @@ All three conditions can automatically apply retention labels to emails as they 
 |Sensitive info types - built-in| Yes | Yes |
 |Sensitive info types - custom| Yes | No |
 |Specific keywords or searchable properties| Yes |Yes |
-|Trainable classifiers| Yes | Yes (from the last six months) |
+|Trainable classifiers| Yes | Yes (last six months only) |
 
 
 #### Auto-apply labels to content with specific types of sensitive information
