@@ -465,6 +465,8 @@
               href: archive-enterprise-number-data.md
             - name: O2 Telefonica SMS and Voice Network Archiver
               href: archive-o2-network-data.md
+            - name: Rogers Network Archiver (preview)
+              href: archive-rogers-network-archiver-data.md
             - name: Signal Archiver
               href: archive-signal-archiver-data.md
             - name: Telegram Archiver
@@ -505,6 +507,8 @@
               href: archive-17a-4-refinitiv-messenger-data.md
             - name: ServiceNow DataParser 
               href: archive-17a-4-servicenow-data.md
+            - name: Skype for Business Server DataParser (preview)
+              href: archive-17a-4-skype-for-business-server-data.md
             - name: Slack DataParser 
               href: archive-17a-4-slack-data.md
             - name: SQL DataParser 
@@ -983,6 +987,10 @@
       href: privacy-management.md
     - name: Get started with privacy management
       href: privacy-management-setup.md
+    - name: Set user permissions in privacy management
+      href: privacy-management-permissions.md
+    - name: Manage privacy management settings
+      href: privacy-management-settings.md
     - name: Find and visualize personal data in privacy management
       href: privacy-management-data-profile.md
     - name: Create and manage policies in privacy management
