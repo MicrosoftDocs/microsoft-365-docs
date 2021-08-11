@@ -104,12 +104,6 @@ TIP: you can use the [installer script](server-migration.md#installer script) as
 
 *These steps only apply if you intend to replace your non-Microsoft antivirus solution. See [Better together: Microsoft Defender Antivirus and Microsoft Defender for Endpoint](why-use-microsoft-defender-antivirus.md).
 
-## Moving from Microsoft Endpoint Configuration Manager to Defender Security Management only
-
-If you want to move **from tenant attach to Defender for Endpoint attach**, make sure the server is a part of an Azure Active Directory group that has the required policies targeted then proceed to **uninstall** the Microsoft Endpoint Configuration Manager agent. 
-
-- Defender for Endpoint attach will not work if the client is managed by Microsoft Endpoint Configuration Manager. Therefore, a server can be in scope for Defender for Endpoint attach, but only after Microsoft Endpoint Configuration Manager agent is removed will policies be applied. 
-
 ## Other migration scenarios 
 
 ### You have a server that has been onboarded using the MMA-based Microsoft Defender for Endpoint. It has SCEP installed (Windows Server 2012 R2) or Microsoft Defender Antivirus (Windows Server 2016). This machine is **not** managed through Azure Defender, Microsoft Endpoint Manager or Microsoft Endpoint Configuration Manager.
