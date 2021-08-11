@@ -21,7 +21,7 @@ ms.collection:
   - m365solution-symantecmigrate
 ms.custom: migrationguides
 ms.topic: article
-ms.date: 06/14/2021
+ms.date: 08/10/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ---
 
@@ -86,7 +86,7 @@ Now that your endpoints have been onboarded to Defender for Endpoint, your next 
 | Method  | What to do  |
 |:-------|:-------|
 |Command Prompt     | 1. On a Windows device, open Command Prompt as an administrator.<p>2. Type `sc query windefend`, and then press Enter.<p>3. Review the results to confirm that Microsoft Defender Antivirus is running in passive mode.         |
-| PowerShell     | 1. On a Windows device, open Windows PowerShell as an administrator.<p>2. Run the [Get-MpComputerStatus](/powershell/module/defender/Get-MpComputerStatus) cmdlet. <p>3. In the list of results, look for either **AMRunningMode: Passive Mode** or **AMRunningMode: SxS Passive Mode**.    |
+| PowerShell     | 1. On a Windows device, open Windows PowerShell as an administrator.<p>2. Run following PowerShell cmdlet: `Get-MpComputerStatus | select AMRunningMode`. <p>Review the results. You should see **Passive mode**. [Learn more about Microsoft Defender Antivirus states](microsoft-defender-antivirus-compatibility.md#more-details-about-microsoft-defender-antivirus-states). |
 
 > [!NOTE]
 > You might see *Windows Defender Antivirus* instead of *Microsoft Defender Antivirus* in some versions of Windows.
@@ -110,7 +110,7 @@ To set Microsoft Defender Antivirus to passive mode on Windows Server, version 1
 
 ### Start Microsoft Defender Antivirus on Windows Server 2016
 
-If you are using Windows Server 2016, you might have to start Microsoft Defender Antivirus manually. You can do this by using the PowerShell cmdlet `mpcmdrun.exe -wdenable` on the device.
+If you are using Windows Server 2016, you might have to start Microsoft Defender Antivirus manually. You can perform this task by using the PowerShell cmdlet `mpcmdrun.exe -wdenable` on the device.
 
 ## Get updates for Microsoft Defender Antivirus
 
@@ -136,7 +136,7 @@ To get help with this task, reach out to your solution provider's technical supp
 
 ## Make sure Defender for Endpoint is working correctly
 
-Now that you have onboarded to Defender for Endpoint, and you have uninstalled your former non-Microsoft solution, your next step is to make sure that Defender for Endpoint working correctly. One good way to do this is by visiting the Defender for Endpoint demo scenarios site ([https://demo.wd.microsoft.com](https://demo.wd.microsoft.com)). Try one or more of the demo scenarios on that page, including at least the following:
+Now that you have onboarded to Defender for Endpoint, and you have uninstalled your former non-Microsoft solution, your next step is to make sure that Defender for Endpoint working correctly. One good way to perform this task is by visiting the Defender for Endpoint demo scenarios site ([https://demo.wd.microsoft.com](https://demo.wd.microsoft.com)). Try one or more of the demo scenarios on that page, including at least the following:
 
 - Cloud-delivered protection
 - Potentially Unwanted Applications (PUA)
