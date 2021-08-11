@@ -26,7 +26,7 @@ Advanced metadata search lets you use the metadata associated with a document to
 
 ## To use advanced metadata search
 
-1. From a SharePoint document library, in the **Search this library** box, click or tap the metadata search icon.
+1. From a SharePoint document library, in the **Search this library** box, click or tap the metadata search icon (![Screenshot of the metadata search icon.](../media/content-understanding/metadata-search-icon.png)).
 
     ![Screenshot of a document library page showing the search box with the metadata search icon highlighted.](../media/content-understanding/metadata-search-box.png)
 
