@@ -91,13 +91,13 @@ The [DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-m
 
 2. Run the following PowerShell cmdlets: <br/>   
 
-   `Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender-Features` <br/><br/>
+   `Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender-Features` <br/>
    `Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender` <br/>
  
    When using the DISM command within a task sequence running PowerShell, the following path to cmd.exe is required.
    Example:<br/>
    
-   `c:\windows\sysnative\cmd.exe /c Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender-Features`<br/><br/>
+   `c:\windows\sysnative\cmd.exe /c Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender-Features`<br/>
    `c:\windows\sysnative\cmd.exe /c Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender`<br/>
 
 ### Set Microsoft Defender Antivirus to passive mode on Windows Server
