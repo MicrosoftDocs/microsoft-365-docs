@@ -44,7 +44,7 @@ View the [full list of templates](compliance-manager-templates-list.md) availabl
 
 ### Purchase premium template licenses
 
-Template licenses can be purchased in the admin center ([learn more about subscriptions, licenses, and billing[(/microsoft-365/commerce/)). Select the quantity of licenses you wish to purchase and your payment plan.
+Template licenses can be purchased in the admin center ([learn more about subscriptions, licenses, and billing](/microsoft-365/commerce/)). Select the quantity of licenses you wish to purchase and your payment plan.
 
 To find template licenses in the admin center, choose the appropriate link for your organization:
 
