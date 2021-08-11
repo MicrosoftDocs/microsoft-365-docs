@@ -40,6 +40,14 @@ Stop execution of a file on a device and delete it.
 
 [!include[Device actions note](../../includes/machineactionsnote.md)]
 
+> [!IMPORTANT]
+> You can only take this action if:
+>
+> - The device you're taking the action on is running Windows 10, version 1703 or later
+> - The file does not belong to trusted third-party publishers or is not signed by Microsoft
+> - Microsoft Defender Antivirus must at least be running on Passive mode. For more information, see [Microsoft Defender Antivirus compatibility](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility).
+
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md)
