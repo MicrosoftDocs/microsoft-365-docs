@@ -19,21 +19,18 @@ description: Learn how to use advanced metadata search to find items in SharePoi
 
 The advanced metadata search feature for SharePoint document libraries in SharePoint Syntex lets you easily perform specific metadata-based queries. You can now make faster,  more precise queries based on specific metadata column values, rather than just searching for keywords or writing search queries in Keyword Query Language (KQL). 
 
-End users can use these fields to more easily search using metadata. Advanced search can be faster and can find any metadata or content (within the search scope).  
-
 > [!NOTE]
 > This feature is only available for users who are licensed for SharePoint Syntex. 
 
 ## To use advanced metadata search
 
-1. From a SharePoint document library in SharePoint Syntex, in the search box, click or tap the metadata search icon.
+1. From a SharePoint document library, in the **Search this library** box, click or tap the metadata search icon.
 
     ![Screenshot of a document library page showing the search box with the metadata search icon highlighted.](../media/content-understanding/metadata-search-box.png)
 
 2. In the metadata search pane, type the string you want to find in one of the search fields.
 
     ![Screenshot of a document library page showing the metadata search pane.](../media/content-understanding/metadata-search-pane.png)
-
 
 Currently, five metadata search fields are available. More fields will be added in the future.
 
@@ -45,4 +42,4 @@ Currently, five metadata search fields are available. More fields will be added 
 |Modified |Search in the **Modified** column in the library.         |
 |Type     |Search by file type.        |
 
-3. The result is 
+3. The results of your metadata search are shown on the page. 
