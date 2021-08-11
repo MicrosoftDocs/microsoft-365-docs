@@ -73,6 +73,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `UserLevelAction` | string | Action taken on the email in response to matches to a mailbox policy defined by the recipient |
 | `UserLevelPolicy` | string | End-user mailbox policy that triggered the action taken on the email |
 | `ReportId` | long | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the DeviceName and Timestamp columns. |
+| `AuthenticationDetails` | string | List of pass or fail verdicts by email authentication protocols like DMARC, DKIM, SPF or a combination of multiple authentication types (CompAuth) |
 
 ## Related topics
 

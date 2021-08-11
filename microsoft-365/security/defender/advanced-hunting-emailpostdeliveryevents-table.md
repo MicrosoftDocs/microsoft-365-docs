@@ -49,6 +49,8 @@ To get more information about individual email messages, you can also use the [`
 | `RecipientEmailAddress` | string | Email address of the recipient, or email address of the recipient after distribution list expansion |
 | `DeliveryLocation` | string | Location where the email was delivered: Inbox/Folder, On-premises/External, Junk, Quarantine, Failed, Dropped, Deleted items |
 | `ReportId` | long | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the DeviceName and Timestamp columns. |
+| `ThreatTypes` | string | Verdict from the email filtering stack on whether the email contains malware, phishing, or other threats |
+| `DetectionMethods` | string | Methods used to detect malware, phishing, or other threats found in the email |
 
 ## Supported event types
 This table captures events with the following `ActionType` values:
