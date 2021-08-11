@@ -34,7 +34,7 @@ ms.custom: api
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-Retrieves a collection of alerts related to a given Device Group.
+Retrieves the exposure score for each machine group.
 
 ## Permissions
 
