@@ -15,7 +15,7 @@ ms.custom: nextgen
 ms.reviewer: mkaminska, pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.date: 08/10/2021
+ms.date: 08/11/2021
 ---
 
 # Microsoft Defender Antivirus compatibility with other security products
@@ -120,7 +120,41 @@ The table in this section summarizes the features and capabilities that are acti
 
 ## How to confirm the state of Microsoft Defender Antivirus
 
-To check the state of Microsoft Defender Antivirus, you can use the [Get-MpComputerStatus PowerShell cmdlet](/powershell/module/defender/get-mpcomputerstatus).
+You can use one of several methods to confirm the state of Microsoft Defender Antivirus. You can:
+
+- Use the Windows Security app
+- Use the Task Manager app in Windows
+- Use Windows PowerShell
+
+### Use the Windows Security app to confirm Microsoft Defender Antivirus is running
+
+1. On a Windows device, open the Windows Security app.
+
+2. Select **Virus & threat protection**.
+
+3. Under **Who's protecting me?**, select **Manage providers**. On the **Security providers** page, under **Antivirus**, you should see **Microsoft Defender Antivirus is turned on**.
+
+### Use Task Manager to confirm that Microsoft Defender Antivirus is running
+
+1. On a Windows device, open the Task Manager app. 
+
+2. Select the **Details** tab.
+
+3. Look for **MsMpEng.exe** in the list.
+
+### Use Windows PowerShell
+
+#### To confirm that Microsoft Defender Antivirus is running
+
+1. On a Windows device, open Windows PowerShell.
+
+2. Run the following PowerShell cmdlet: `Get-Process`.
+
+3. Review the results. You should see **MsMpEng.exe** if Microsoft Defender Antivirus is enabled.
+
+#### To confirm that an antivirus solution is running
+
+To confirm that you have antivirus protection, you can use the [Get-MpComputerStatus PowerShell cmdlet](/powershell/module/defender/get-mpcomputerstatus).
 
 1. On a Windows device, open Windows PowerShell.
 
