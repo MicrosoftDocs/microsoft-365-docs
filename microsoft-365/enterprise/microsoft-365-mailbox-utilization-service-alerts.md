@@ -99,7 +99,7 @@ The following list describes each column in the previous table.
 
 - **HasPersonalArchiveTag**: Indicates if the retention policy includes a personal "move to archive" tag. If the retention policy does include a personal "move to archive" tag, then users can apply this tag to folders and messages in their mailbox to move items to the archive. Users can also set up an inbox rule to move messages to a folder with this tagged applied to it. In both cases, this can help move items to the archive to help avoid reaching the quota limits for their primary mailbox.
 
-## How often will I see mailbox utilization service alerts?**
+## How often will I see mailbox utilization service alerts?
 
 If you don't take action to resolve the quota issues, you can expect to see this type of service alert every four days. Subsequent service alerts may contain higher mailbox counts for other mailboxes that are nearing their quota limits. If you take action to resolve quota issues, this service alert will only occur when another mailbox with quota issues is identified.
 
