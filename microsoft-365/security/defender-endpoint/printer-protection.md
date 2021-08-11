@@ -146,3 +146,36 @@ DeviceEvents
 ```
 
  :::image type="content" source="../../media/device-control-advanced-hunting.png" alt-text="advanced hunting":::
+ 
+ You can use the PnP event to find the USB Printer used in the orgnization:
+ 
+```kusto
+//find the USB Printer VID/PID
+DeviceEvents
+| where ActionType == "PnpDeviceConnected"
+| extend parsed=parse_json(AdditionalFields)
+| extend DeviceDescription = tostring(parsed.DeviceDescription) 
+| extend PrinterDeviceId = tostring(parsed.DeviceId) 
+| extend VID_PID_Array = split(split(PrinterDeviceId, "\\")[1], "&")
+| extend VID_PID = replace_string(strcat(VID_PID_Array[0], '/', VID_PID_Array[1]), 'VID_', '')
+| extend VID_PID = replace_string(VID_PID, 'PID_', '')
+| extend ClassId = tostring(parsed.ClassId) 
+| extend VendorIds = tostring(parsed.VendorIds) 
+| where DeviceDescription == 'USB Printing Support'
+| project Timestamp , DeviceId, DeviceName, ActionType, DeviceDescription, VID_PID, ClassId, PrinterDeviceId, VendorIds, parsed
+| order by Timestamp desc
+```
+
+ :::image type="content" source="https://user-images.githubusercontent.com/81826151/128954383-71df3009-77ef-40db-b575-79c73fda332b.png" alt-text="advanced hunting":::
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+ 
