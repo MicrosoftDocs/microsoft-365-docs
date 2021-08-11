@@ -39,8 +39,10 @@ If you are not already familiar with Microsoft 365 Defender, see these articles:
 - [Get started with Microsoft 365 Defender](get-started.md)
 - [Turn on Microsoft 365 Defender](m365d-enable.md)
 
+If your organization has already implemented some aspects of Microsoft 365 Defender, these articles can either affirm or help improve your existing architecture and processes.
+
 >[!Note]
->If your organization has already implemented some aspects of Microsoft 365 Defender, these articles can either affirm or help improve your existing architecture and processes.
+>As a Microsoft partner, Protiviti contributed to and provided material feedback to this article.
 >
 
 ## Target audience
