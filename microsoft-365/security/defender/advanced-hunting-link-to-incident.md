@@ -37,7 +37,7 @@ The link to incident feature lets you select advanced hunting query results to a
 
 1. In the advanced hunting query page, first enter your query in the query field provided then select Run query to get your results.
 
-    [INSERT SCREENSHOT]
+    ![Image showing query page](../../media/link-to-incident-1.png)
 1. In the Results page, select the events or records that are related to a new or current investigation you are working on, then select Link to incident.
     ![Image showing link to incident button](../../media/link-to-incident-2.png)
 1. 	In the Alert details section, select **Create new incident** to group the selected records to a new incident, or **Link to an existing incident** to add the selected records to an existing one.
