@@ -32,15 +32,33 @@ We refer to templates by the same name as their underlying certification or regu
 Note that US Government Community (GCC) Moderate, GCC High, and Department of Defense (DoD) customers can currently use the Microsoft 365 template versions, but not universal.
 
 ## Template availability and licensing
+There are two categories of templates in Compliance Manager: included and premium.
 
-The templates available for use are based on your organization’s licensing agreement ([view licensing details](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)). There are two categories of templates: included and premium.
+1. **Included templates** are granted by your Compliance Manager license and cover key regulations and requirements. To learn more about what templates are available under your licensing agreement, see [licensing details](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+2. **Premium templates** to cover additional needs and scenarios can be obtained by purchasing template licenses.
 
-#### Included and premium templates
+When you begin creating assessments, Compliance Manager will track how many templates are active so you can monitor your usage. To learn more, see [Active and inactive templates](#active-and-inactive templates).
 
-1. **Included templates** are granted by your license and cover key regulations and requirements.
-2. **Premium templates** can be purchased to expand your library and cover specific needs. Once purchased, you may create as many assessments from a template as needed. [Learn how you can purchase premium templates](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager).
+View the [full list of templates](compliance-manager-templates-list.md) available in Compliance Manager.
 
-View the [full list of templates](compliance-manager-templates-list.md).
+### Purchase premium template licenses
+
+Template licenses can be purchased in the admin center ([learn more about subscriptions, licenses, and billing[(/microsoft-365/commerce/)). Select the quantity of licenses you wish to purchase and your payment plan.
+
+To find template licenses in the admin center, choose the appropriate link for your organization:
+
+- [Commercial license](https://admin.microsoft.com/Adminportal/Home?#/catalog/offer-details/compliance-manager-premium-assessment-add-on/46E9BF2A-3C8D-4A69-A7E7-3DA04687636D)
+- [GCC license](https://admin.microsoft.com/Adminportal/Home?#/catalog/offer-details/compliance-manager-premium-assessment-add-on/3129986D-5F4B-413B-A34B-B706DB5A7669)
+- [GCC High license](https://portal.office365.us/SubscriptionDetails?OfferId=876da39d-2623-41fb-98e0-fa85aaad109e)
+- [DOD license](https://portal.apps.mil/Commerce/Trial.aspx?OfferId=7825C291-1712-4BAC-A334-F336F9ADE746) 
+
+You may also acquire licenses through your participation in the [Cloud Solution Provider program](https://partner.microsoft.com/en-US/membership/cloud-solution-provider) or [volume licensing](https://www.microsoft.com/en-us/licensing/licensing-programs/licensing-programs). Contact your account manager to learn more.
+
+Once your purchase has been finalized, the templates should become available in your tenant within 48 hours.
+
+### Try out premium templates
+
+To try out premium templates before you make a purchase, you may also acquire trial versions of the licenses. Trial licenses are good for up to 25 templates for 90 days. Once you obtain your trial license, the templates should become available in your tenant within 48 hours.
 
 #### Active and inactive templates
 
