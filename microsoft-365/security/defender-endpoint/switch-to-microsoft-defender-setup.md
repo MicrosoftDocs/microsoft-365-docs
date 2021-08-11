@@ -21,7 +21,7 @@ ms.collection:
   - m365solution-symantecmigrate
 ms.topic: article
 ms.custom: migrationguides
-ms.date: 07/19/2021
+ms.date: 08/10/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ---
 
@@ -100,11 +100,6 @@ The [DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-m
    `c:\windows\sysnative\cmd.exe /c Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender-Features`<p>
    `c:\windows\sysnative\cmd.exe /c Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender`<br/>
 
-3. To verify Microsoft Defender Antivirus is running, use the following PowerShell cmdlet: <br/>
-   `Get-Service -Name windefend`
-
-   Look for a status of *Running*.
-
 ### Set Microsoft Defender Antivirus to passive mode on Windows Server
 
 1. Open Registry Editor, and then navigate to <br/>
@@ -116,20 +111,30 @@ The [DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-m
    - Under **Base**, select **Hexadecimal**.
 
 > [!NOTE]
-> After onboarding to Defender for Endpoint, you might have to set Microsoft Defender Antivirus to passive mode on Windows Server. To validate that passive mode was set as expected, search for *event 5007* in the **Microsoft-Windows-Windows Defender Operational** log (located at `C:\Windows\System32\winevt\Logs`) and confirm either **ForcePassiveMode** or **PassiveMode** registry keys were set by to **0x1**.
+> After onboarding to Defender for Endpoint, you might have to set Microsoft Defender Antivirus to passive mode on Windows Server. To validate that passive mode was set as expected, search for *event 5007* in the **Microsoft-Windows-Windows Defender Operational** log (located at `C:\Windows\System32\winevt\Logs`), and confirm that either the  **ForceDefenderPassiveMode** or **PassiveMode** registry keys were set by to **0x1**.
 
 ### Are you using Windows Server 2016?
 
-If you have endpoints running Windows Server 2016, you cannot run Microsoft Defender Antivirus alongside a non-Microsoft antivirus/antimalware solution. Microsoft Defender Antivirus cannot run in passive mode on Windows Server 2016. In this case, you'll need to uninstall the non-Microsoft antivirus/antimalware solution, and install/enable Microsoft Defender Antivirus instead. To learn more, see [Antivirus solution compatibility with Defender for Endpoint](microsoft-defender-antivirus-compatibility.md).
-
-If you're using Windows Server 2016 and are having trouble enabling Microsoft Defender Antivirus, follow these steps:
+Currently, you cannot run Microsoft Defender Antivirus in passive mode on Windows Server 2016. Uninstall the non-Microsoft antivirus/antimalware solution, and install/enable Microsoft Defender Antivirus. If you're having trouble enabling Microsoft Defender Antivirus on Windows Server 2016, follow these steps:
 
 1. On the device, open PowerShell as an administrator.
 
 2. Type the following PowerShell cmdlet: `mpcmdrun -wdenable`
 
 > [!TIP]
-> For more information, see [Microsoft Defender Antivirus on Windows Server](microsoft-defender-antivirus-on-windows-server.md).
+> For more information, see the following articles:
+> - [Microsoft Defender Antivirus on Windows Server](microsoft-defender-antivirus-on-windows-server.md)
+> - [Microsoft Defender Antivirus compatibility with other security products](microsoft-defender-antivirus-compatibility.md)
+
+### Confirm that Microsoft Defender Antivirus is enabled
+
+To check the state of Microsoft Defender Antivirus, you can use the [Get-MpComputerStatus PowerShell cmdlet](/powershell/module/defender/get-mpcomputerstatus).
+
+1. On a Windows device, open Windows PowerShell.
+
+2. Run following PowerShell cmdlet: `Get-MpComputerStatus | select AMRunningMode`.
+
+3. Review the results. You should see either **Normal** or **Passive** if Microsoft Defender Antivirus is enabled on the endpoint. [Learn more about Microsoft Defender Antivirus states](microsoft-defender-antivirus-compatibility.md#more-details-about-microsoft-defender-antivirus-states).
 
 ## Configure Defender for Endpoint
 

@@ -53,7 +53,7 @@ To set permissions and assign roles in the Microsoft 365 compliance center, foll
 
 1. Go to the [Microsoft 365 compliance center](https://compliance.microsoft.com/compliancemanager) and select **Permissions** on the left navigation.
 
-2. Under the **Compliance center** dropdown, select **Roles**. 
+2. Under the **Compliance center** dropdown, select **Roles**.
 
 3. Find the role group to which you want to add one or more users, and check the box to the left of the group name. (See the [list of roles and related functions below](#role-types). The role group names mimic the role name.)
 
