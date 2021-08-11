@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: article
-ms.date: 07/15/2021
+ms.date: 08/11/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -23,7 +23,7 @@ The following sections describe the kinds of things you can do in the Microsoft 
 
 ## Navigate the Microsoft 365 Defender portal
 
-The Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com) is your one-stop shop for using and managing Microsoft Defender for business. It includes a welcome banner and callouts to help you get started, cards that surface relevant information, and a navigation bar to give you easy access to the various features and capabilities.
+The Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) is your one-stop shop for using and managing Microsoft Defender for business. It includes a welcome banner and callouts to help you get started, cards that surface relevant information, and a navigation bar to give you easy access to the various features and capabilities.
  
 Take a moment to get acquainted with your Microsoft 365 Defender portal.
 
