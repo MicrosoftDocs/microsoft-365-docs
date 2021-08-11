@@ -49,7 +49,7 @@ To find trained models that might be suitable for your content:
 
 ### Apply a trained model to your library
 
-You can evaluate up to 10 models against your content to help you find the most appropriate one. To select a model that you want to apply to your library:
+You can evaluate trained models against your content to help you find the most appropriate one. To select a model that you want to apply to your library:
 
 1. On the **Available** tab, review the models in the list.
 
@@ -57,7 +57,7 @@ You can evaluate up to 10 models against your content to help you find the most 
 
 ### Get a recommendation for a trained model
 
-If you are unsure which model is the best fit for your files, you can ask for a recommendation.
+If you are unsure which model is the best fit for your files, you can ask for a recommendation. Your recommendation will include up to 10 models.
 
 1. On the **Review models and apply new ones** page, select the **Available** tab.
 
