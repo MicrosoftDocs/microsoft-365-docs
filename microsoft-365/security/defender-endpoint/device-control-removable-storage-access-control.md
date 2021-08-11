@@ -1,7 +1,6 @@
 ---
-title: Microsoft Defender for Endpoint Device Control Removable Storage Access Control
+title: Microsoft Defender for Endpoint Device Control Removable Storage Access Control, removable storage media
 description: A walk-through about Microsoft Defender for Endpoint
-keywords: removable storage media
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -96,8 +95,8 @@ You can use the following properties to create a removable storage group:
 |Type|Defines the action for the removable storage groups in IncludedIDList.​ </br>- Enforcement: Allow or Deny​ </br>- Audit: AuditAllowed or AuditDenied​|- Allow​ </br>- Deny​</br> - AuditAllowed: Defines notification and event when access is allowed​</br>- AuditDenied: Defines notification and event when access is denied; has to work together with **Deny** entry.​ </br></br> When there are conflict types for the same media, the system will apply the first one in the policy. An example of a conflict type is **Allow** and **Deny**.​|
 |Sid|Local computer Sid or the Sid of the AD object, defines whether to apply this policy over a specific user or user group; one entry can have a maximum of one Sid and an entry without any Sid means applying the policy over the machine.​||
 |ComputerSid|Local computer Sid or the Sid of the AD object, defines whether to apply this policy over a specific machine or machine group; one entry can have a maximum of one ComputerSid and an entry without any ComputerSid means applying the policy over the machine. If you want to apply an Entry to a specific user and specific machine, add both Sid and ComputerSid into the same Entry.​||
-|Options|Defines whether to display notification or not​|0-4. When Type Allow or Deny is selected:</br>​</br>0: nothing​</br>4: disable **AuditAllowed** and **AuditDenied** for this Entry. Even if **Block** happens and the AuditDenied is setting configured, the system will not show notification.​ </br> </br>When Type **AuditAllowed** or **AuditDenied** is selected:​</br>0: nothing​</br>1: show notification​</br>2: send event​</br>3: show notification and send event​|
-|AccessMask|Defines the access.​|1-7:​ </br></br>1: Read​</br>2: Write​</br>3: Read and Write​</br>4: Execute​</br>5: Read and Execute​</br>6: Write and Execute​</br>7: Read and Write and Execute​|
+|Options|Defines whether to display notification or not​|**0-4**: When Type Allow or Deny is selected.</br>​</br>0: nothing​</br>4: disable **AuditAllowed** and **AuditDenied** for this Entry. Even if **Block** happens and the AuditDenied is setting configured, the system will not show notification.​ </br> </br>When Type **AuditAllowed** or **AuditDenied** is selected:​</br>0: nothing​</br>1: show notification​</br>2: send event​</br>3: show notification and send event​|
+|AccessMask|Defines the access.​|**1-7**:​ </br></br>1: Read​</br>2: Write​</br>3: Read and Write​</br>4: Execute​</br>5: Read and Execute​</br>6: Write and Execute​</br>7: Read and Write and Execute​|
 ||||
 
 ## Common Removable Storage Access Control scenarios
