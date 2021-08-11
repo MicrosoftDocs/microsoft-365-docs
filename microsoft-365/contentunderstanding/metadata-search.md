@@ -36,12 +36,12 @@ Advanced metadata search lets you use the metadata associated with a document to
 
    Five metadata search fields are currently available. More fields will be added in the future.
 
-   |Field    |Purpose  |
+   |Field    |Use this field to  |
    |---------|---------|
    |Keywords |Search for a string match in metadata or in the full text of a document. |
    |Name     |Search in the **Name** column in the library.          |
    |People   |Search for a match on people in any column in the library.   |
-   |Modified |Search by date range in the **Modified** column in the library.         |
+   |Modified |Search by selected date range in the **Modified** column in the library.         |
    |Type     |Search by selected file type.        |
 
-3. Select **Search**. The results of your metadata search are shown on the page. 
+3. Select **Search**. Your matched documents are shown on the results page. 
