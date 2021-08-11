@@ -106,7 +106,7 @@ need to run live response again.
 
 |Property|Description|
 |---|---|
-|name|Executed script name|
+|script_name|Executed script name|
 |exit_code|Executed script exit code|
 |script_output|Executed script standard output|
 |script_error|Executed script standard error output|
