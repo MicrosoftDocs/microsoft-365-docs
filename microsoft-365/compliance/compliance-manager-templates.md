@@ -59,7 +59,7 @@ Once your purchase has been finalized, the templates should become available in 
 
 ### Try out premium templates
 
-To try out premium templates before you make a purchase, you may also acquire trial versions of the licenses. Trial licenses are good for up to 25 templates for 90 days. Once you obtain your trial license, the templates should become available in your tenant within 48 hours.
+To try out premium templates before you make a purchase, you may also acquire trial versions of the licenses from the links above. Trial licenses are good for up to 25 templates for 90 days. Once you obtain your trial license, the templates should become available in your tenant within 48 hours.
 
 #### Active and inactive templates
 
