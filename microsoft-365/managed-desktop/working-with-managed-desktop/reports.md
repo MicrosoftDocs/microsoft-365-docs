@@ -23,7 +23,7 @@ On the **Summary** tab, you'll find quick metrics about device updates. Selectin
 When you select the **Reports** tab, you will see descriptions for the available detailed reports. These reports are more comprehensive and support visualization and filtering of the data in the portal as well as exporting the underlying data for offline analysis or distribution. The following reports are available today:
 - The [**Device status** report](device-status-report.md) (*in preview*) shows your use of the Microsoft Managed Desktop service based on device activity and usage. 
 - You can use **Device status trend** (*in preview*) to monitor trends in device status over the last 60 days for your Microsoft Managed Desktop devices. Trends can help  you associate device status with other changes over time, for example, new deployments. 
-- The [**Windows security updates** report](security-updates-report.md) (*in preview) shows how Windows security updates are released across your Microsoft Managed Desktop devices.
+- The [**Windows security updates** report](security-updates-report.md) (*in preview*) shows how Windows security updates are released across your Microsoft Managed Desktop devices.
 
 
 ## Endpoint analytics
