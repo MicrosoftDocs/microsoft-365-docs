@@ -13,7 +13,9 @@ ms.topic: article
 
 # Device status report
 
-This report aggregates the status of all your registered devices to show your use of the Microsoft Managed Desktop service. We categorize devices based on their activity over the last 28 days and on our ability to keep the device updated. To be updated by Windows Update as soon as possible, a device must be connected to the internet and not hibernating or paused for a minimum of six hours, two of which must be continuous. Although it's possible that a device that doesn't meet these requirements will be updated, devices that meet them have the highest likelihood of being updated.  
+This report aggregates the status of all your registered devices to show your use of the Microsoft Managed Desktop service. We categorize devices based on their activity over the last 28 days and on our ability to keep the device updated. To be updated by Windows Update as soon as possible, a device must be connected to the internet and not hibernating or paused for a minimum of six hours, two of which must be continuous. Although it's possible that a device that doesn't meet these requirements will be updated, devices that meet them have the highest likelihood of being updated.
+
+:::image type="content" source="../../media/mmd-device-status.png" alt-text="Report showing donut graph of device activity status in upper left, view filters in upper right with a button to generate the report, and table of details along the bottom":::
 
 We report device status using these labels: 
 
