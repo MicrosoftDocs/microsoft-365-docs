@@ -22,7 +22,7 @@ The advanced metadata search feature in SharePoint Syntex lets you easily perfor
 Advanced metadata search lets you use the metadata associated with a document to help locate the file in a SharePoint document library. This is particularly useful when you have a specific piece of information you want to search for, such as when a document was last modified, a specific person associated with a file, or a specific file type.
 
 > [!NOTE]
-> This feature is only available for users who are licensed for SharePoint Syntex. 
+> This feature is available only for users who are licensed for SharePoint Syntex. 
 
 ## To use advanced metadata search
 
