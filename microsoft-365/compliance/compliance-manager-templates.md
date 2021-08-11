@@ -32,12 +32,13 @@ We refer to templates by the same name as their underlying certification or regu
 Note that US Government Community (GCC) Moderate, GCC High, and Department of Defense (DoD) customers can currently use the Microsoft 365 template versions, but not universal.
 
 ## Template availability and licensing
+
 There are two categories of templates in Compliance Manager: included and premium.
 
 1. **Included templates** are granted by your Compliance Manager license and cover key regulations and requirements. To learn more about what templates are available under your licensing agreement, see [licensing details](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager).
 2. **Premium templates** to cover additional needs and scenarios can be obtained by purchasing template licenses.
 
-When you begin creating assessments, Compliance Manager will track how many templates are active so you can monitor your usage. To learn more, see [here](compliance-manager-templates.md#active-and-inactive templates).
+When you begin creating assessments, Compliance Manager will track how many templates are active so you can monitor your usage. To learn more, see [Active and inactive templates](compliance-manager-templates.md#active-and-inactive templates).
 
 View the [full list of templates](compliance-manager-templates-list.md) available in Compliance Manager.
 
