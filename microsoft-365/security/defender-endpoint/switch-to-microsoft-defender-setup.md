@@ -138,7 +138,7 @@ You can use one of several methods to confirm the state of Microsoft Defender An
 | Windows PowerShell <br/> (To confirm that antivirus protection is in place) | You can use the [Get-MpComputerStatus PowerShell cmdlet](/powershell/module/defender/get-mpcomputerstatus).<br/>1. On a Windows device, open Windows PowerShell.<br/>2. Run following PowerShell cmdlet: `Get-MpComputerStatus | select AMRunningMode`.<br/>3. Review the results. You should see either **Normal** or **Passive** if Microsoft Defender Antivirus is enabled on the endpoint. |
 
 > [!TIP]
-> [More details about Microsoft Defender Antivirus states](microsoft-defender-antivirus-compatibility.md#more-details-about-microsoft-defender-antivirus-states)
+> [Learn more about Microsoft Defender Antivirus states](microsoft-defender-antivirus-compatibility.md#more-details-about-microsoft-defender-antivirus-states).
 
 ## Configure Defender for Endpoint
 
