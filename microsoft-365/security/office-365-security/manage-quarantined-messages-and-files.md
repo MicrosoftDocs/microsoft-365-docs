@@ -141,7 +141,7 @@ After you find a specific quarantined message, select the message to view detail
 
 When you select an email message in the list, the following message details are available in the details flyout that appears.
 
-![The details flyout of a quarantined message](../../media/quarantine-details-flyout.png)
+![The details flyout of a quarantined message](../../media/quarantine-message-details-flyout.png)
 
 - **Message ID**: The globally unique identifier for the message. Available in the **Message-ID** header field in the message header.
 - **Sender address**
@@ -161,13 +161,13 @@ To take action on the message, see the next section.
 > [!NOTE]
 > To remain in the details flyout, but change the quarantined message that you're looking at, use the up and down arrows at the top of the flyout.
 >
-> ![The up and down arrows in the details flyout of a quarantined message](../../media/quarantine-details-flyout-up-down-arrows.png)
+> ![The up and down arrows in the details flyout of a quarantined message](../../media/quarantine-message-details-flyout-up-down-arrows.png)
 
 ### Take action on quarantined email
 
 After you select a message, you have several available actions for the quarantined message in the details flyout:
 
-![Available actions in the details flyout of a quarantined message](../../media/quarantine-details-flyout-actions.png)
+![Available actions in the details flyout of a quarantined message](../../media/quarantine-message-details-flyout-actions.png)
 
 - ![Release email icon](../../media/m365-cc-sc-check-mark-icon.png) **Release email**: In the flyout pane that appears, configure the following options:
   - **Add sender to your organization's allow list**: Select this option to prevent messages from the sender from being quarantined.
@@ -230,7 +230,7 @@ If you don't release or remove the message, it will be deleted after the default
 > [!NOTE]
 > On a mobile device, the description text isn't available on the action icons.
 >
-> ![Submit only icon](../../media/quarantine-details-flyout-mobile-actions.png)
+> ![Details of a quarantined message with available actions highlighted](../../media/quarantine-message-details-flyout-mobile-actions.png)
 >
 > The icons in order and their corresponding descriptions are summarized in the following table:
 >
@@ -285,7 +285,7 @@ In organizations with Defender for Office 365, admins can manage files that were
    - **Attachment filename**<sup>\*</sup>
    - **File URL**<sup>\*</sup>
    - **File Size**
-   - **Released?**<sup>\*</sup>
+   - **Release status**<sup>\*</sup>
    - **Expires**<sup>\*</sup>
    - **Detected by**
    - **Modified by time**
@@ -310,7 +310,7 @@ When you select a file in the list, the following file details are available in 
 - **File URL**: URL that defines the location of the file (for example, in SharePoint Online).
 - **Malicious content detected on** The date/time the file was quarantined.
 - **Expires**: The date when the file will be deleted from quarantine.
-- **Detected By**: Defender for Office 365 or Microsoft's anti-malware engine.
+- **Detected by**
 - **Released?**
 - **Malware Name**
 - **Document ID**: A unique identifier for the document.
@@ -320,19 +320,23 @@ When you select a file in the list, the following file details are available in 
 - **Modified By**: The user who last modified the file.
 - **Secure Hash Algorithm 256-bit (SHA-256) value**: You can use this hash value to identify the file in other reputation stores or in other locations in your environment.
 
+To take action on the file, see the next section.
+
+> [!NOTE]
+> To remain in the details flyout, but change the quarantined file that you're looking at, use the up and down arrows at the top of the flyout.
+>
+> ![The up and down arrows in the details flyout of a quarantined file](../../media/quarantine-file-details-flyout-up-down-arrows.png)
+
 ### Take action on quarantined files
 
 When you select a file in the list, you can take the following actions on the file in the details flyout:
 
-- **Release files**: Select (default) or unselect **Report files to Microsoft for analysis**, and then click **Release files**.
-- **Download file**
-- **Remove file from quarantine**
-
-If you don't release or remove the files, they will be deleted after the default quarantine retention period expires.
+- ![Download file icon](../../media/m365-cc-sc-download-icon.png) **Download file**: In the flyout that appears, select **I understand the risks from downloading this file**, and then click **Download** to save a local copy of the file.
+- ![Block sender icon](../../media/m365-cc-sc-block-sender-icon.png) **Block sender**: Add the sender to the Blocked Senders list in **your** mailbox. For more information, see [Block a mail sender](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4).
 
 #### Actions on multiple quarantined files
 
-When you select multiple quarantined files in the list (up to 100) by click on the row to the left of the **Subject** column, the **Bulk actions** drop down list appears where you can take the following actions:
+When you select multiple quarantined message in the list (up to 100) by clicking in the blank area to the left of the **Subject** column, the **Bulk actions** drop down list appears where you can take the following actions:
 
 - **Release files**
 - **Delete files**:  After you click **Yes** in the warning that appears, the files are immediately deleted.
@@ -342,11 +346,7 @@ When you select multiple quarantined files in the list (up to 100) by click on t
 The cmdlets you use to view and manages messages and files in quarantine are:
 
 - [Delete-QuarantineMessage](/powershell/module/exchange/delete-quarantinemessage)
-
 - [Export-QuarantineMessage](/powershell/module/exchange/export-quarantinemessage)
-
 - [Get-QuarantineMessage](/powershell/module/exchange/get-quarantinemessage)
-
 - [Preview-QuarantineMessage](/powershell/module/exchange/preview-quarantinemessage): Note that this cmdlet is only for messages, not quarantined files from Safe Attachments for SharePoint, OneDrive, and Microsoft Teams.
-
 - [Release-QuarantineMessage](/powershell/module/exchange/release-quarantinemessage)
