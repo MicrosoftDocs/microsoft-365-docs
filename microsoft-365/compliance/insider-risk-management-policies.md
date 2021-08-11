@@ -205,6 +205,7 @@ For more details about any recommendations or warnings, select a policy on the *
 
 ![Insider risk management policy health](../media/insider-risk-policy-health.png)
 
+### Notification messages
 Use the following table to learn more about recommendations and warning notifications and actions to take to resolve potential issues.
 
 |**Notification messages**|**Policy templates**|**Causes / Try this action to fix**|
