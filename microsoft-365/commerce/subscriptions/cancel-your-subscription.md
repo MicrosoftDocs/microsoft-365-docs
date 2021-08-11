@@ -57,7 +57,6 @@ If you added your own domain name to use with your subscription, you must remove
 ::: moniker range="o365-21vianet"
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Your products</a> page.
-
 ::: moniker-end
 
 2. Find the subscription that you want to cancel. Select the three dots (more actions), then select **Cancel subscription**.
