@@ -55,6 +55,9 @@ ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 
 4. Under **Deployment method**, select an option. Follow the links and prompts to onboard your organization's devices. Need help? See [Onboarding methods](#onboarding-methods) (in this article).
 
+> [!NOTE]
+> If something goes wrong while onboarding, see [Troubleshoot Microsoft Defender for Endpoint onboarding issues](troubleshoot-onboarding.md). That article describes how to resolve onboarding issues and common errors on endpoints.
+
 ### Onboarding methods
  
 Deployment methods vary, depending on operating system and preferred methods. The following table lists resources to help you onboard to Defender for Endpoint:
@@ -114,9 +117,6 @@ To set Microsoft Defender Antivirus to passive mode on Windows Server, version 1
 ### Start Microsoft Defender Antivirus on Windows Server 2016
 
 If you are using Windows Server 2016, you might have to start Microsoft Defender Antivirus manually. You can perform this task by using the PowerShell cmdlet `mpcmdrun.exe -wdenable` on the device.
-
-> [!NOTE]
-> If something goes wrong while onboarding, see [Troubleshoot Microsoft Defender for Endpoint onboarding issues](troubleshoot-onboarding.md). That article describes how to resolve onboarding issues and common errors on endpoints.
 
 ## Get updates for Microsoft Defender Antivirus
 
