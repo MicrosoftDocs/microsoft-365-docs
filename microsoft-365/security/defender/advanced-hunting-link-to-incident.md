@@ -35,26 +35,27 @@ The link to incident feature lets you select advanced hunting query results to a
 
 ## Link results to new or existing incidents
 
-1. In the advanced hunting query page, first enter your query in the query field provided then select Run query to get your results.
+1. In the advanced hunting query page, first enter your query in the query field provided then select **Run query** to get your results.
 
     ![Image showing query page](../../media/link-to-incident-1.png)
-1. In the Results page, select the events or records that are related to a new or current investigation you are working on, then select Link to incident.
-    ![Image showing link to incident button](../../media/link-to-incident-2.png)
-1. 	In the Alert details section, select **Create new incident** to group the selected records to a new incident, or **Link to an existing incident** to add the selected records to an existing one.
+1. In the Results page, select the events or records that are related to a new or current investigation you are working on, then select **Link to incident**.
+    ![Image showing link to incident button](../../media/link-to-incident-1b.png)
+1. 	In the Alert details section, select **Create new incident** to group the selected records to a new incident:
 
-    1. For the **Create new incident** selection, provide the following details:
-        - Alert title - provide a descriptive title for the results that your incident responders can understand. This will become the alert title
-	    - Severity - Choose the severity applicable to the alert.
-		- Cateogry - [INSERT SAMPLE CATEGORIES]
-		- Description - [INSERT SAMPLE DESCRIPTIONS]
-		- Recommended actions - Provide remediation actions
-	
+ 
     ![Image showing event details showing create new incident](../../media/link-to-incident-3-create-new.png)	
-    2. For **Link to an existing incident**, choose the related incident from the dropdown list of existing incidents. 
+    
+    Or select **Link to an existing incident** to add the selected records to an existing one. Choose the related incident from the dropdown list of existing incidents. 
 
     ![Image showing event details showing link to existing](../../media/link-to-incident-3-link-to-existing.png)
-4. Then select **Next**.
-4. In the Impacted entities section, select the main affected or impacted entity. Only the possible entities based on the query results appear on this section. For example, in the example, the Sender is the impacted entity. There are four different senders, therefore four alerts are created and linked to the chosen incident. 
+4. For either selection, provide the following details, then select **Next**:
+      - Alert title - provide a descriptive title for the results that your incident responders can understand. This will become the alert title
+      - Severity - Choose the severity applicable to the alert.
+      - Category - [INSERT SAMPLE CATEGORIES]
+      - Description - [INSERT SAMPLE DESCRIPTIONS]
+      - Recommended actions - Provide remediation actions
+
+1. In the Impacted entities section, select the main affected or impacted entity. Only the possible entities based on the query results appear on this section. For example, in the example, the Sender is the impacted entity. There are four different senders, therefore four alerts are created and linked to the chosen incident. 
      ![Image showing impacted entities](../../media/link-to-incident-4-impacted-entities.png)   
 1. Select **Next**.
 1. Review the details you have provided in the Summary section.
