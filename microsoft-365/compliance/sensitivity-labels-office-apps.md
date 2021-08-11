@@ -54,7 +54,7 @@ Additional capabilities are available when you install the Azure Information Pro
 
 The numbers listed are the minimum Office application version required for each capability.
 
-|Capability                                                                                                        |Windows <sup>\*</sup> |Mac |iOS    |Android      |Web                                                         |
+|Capability                                                                                                        |Windows<sup>\*</sup> |Mac |iOS    |Android      |Web                                                         |
 |------------------------------------------------------------------------------------------------------------------|----------------|------------|-------|-------------|------------------------------------------------------------|
 |[Manually apply, change, or remove label](https://support.microsoft.com/en-us/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Apply a default label](sensitivity-labels.md#what-label-policies-can-do)                                         | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md)                                                        |
@@ -83,7 +83,7 @@ Currently, doesn't include justification text to remove a label or lower the cla
 
 The numbers listed are the minimum Office application version required for each capability.
 
-|Capability                                                                                                        |Outlook for Windows <sup>\*</sup> |Outlook for Mac |Outlook on iOS |Outlook on Android |Outlook on the web |
+|Capability                                                                                                        |Outlook for Windows<sup>\*</sup> |Outlook for Mac |Outlook on iOS |Outlook on Android |Outlook on the web |
 |------------------------------------------------------------------------------------------------------------------|---------------------------|------------------------|---------------|-------------------|-------------------|
 |[Manually apply, change, or remove label](https://support.microsoft.com/en-us/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Yes               |
 |[Apply a default label](sensitivity-labels.md#what-label-policies-can-do)                                         | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Yes               |
