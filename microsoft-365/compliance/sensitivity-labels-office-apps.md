@@ -71,7 +71,7 @@ The numbers listed are the minimum Office application version required for each 
 |[Support co-authoring and AutoSave](sensitivity-labels-coauthoring.md) for labeled and encrypted documents | 2106+ |  16.50+ | Under review | Under review | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |
 
-**Footnote:**
+**Footnotes:**
 
 <sup>\*</sup>
 Version numbers are for the **Current Channel**. Usually, newly released capabilities carry forward into the Monthly Enterprise Channel and then Semi-Annual Enterprise Channel. However, this isn't always the case because each update channel has release criteria for new features.
