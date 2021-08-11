@@ -173,6 +173,9 @@ To invite guests to a team
 4. Type the guest's full name and click the check mark.
 5. Click **Add**, and then click **Close**.
 
+> [!NOTE]
+> Currently Azure AD guests can only be invited using their UPN (alias@company.com). Inviting using EAS ID, or other email formats, is not supported.
+
 ## See also
 
 [Best practices for sharing files and folders with unauthenticated users](best-practices-anonymous-sharing.md)
