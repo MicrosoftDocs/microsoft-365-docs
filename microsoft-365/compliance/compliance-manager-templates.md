@@ -34,7 +34,7 @@ Note that US Government Community (GCC) Moderate, GCC High, and Department of De
 ## Template availability and licensing
 There are two categories of templates in Compliance Manager: included and premium.
 
-1. **Included templates** are granted by your Compliance Manager license and cover key regulations and requirements. To learn more about what templates are available under your licensing agreement, see [licensing details](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+1. **Included templates** are granted by your Compliance Manager license and cover key regulations and requirements. To learn more about what templates are available under your licensing agreement, see [licensing details](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager).
 2. **Premium templates** to cover additional needs and scenarios can be obtained by purchasing template licenses.
 
 When you begin creating assessments, Compliance Manager will track how many templates are active so you can monitor your usage. To learn more, see [Active and inactive templates](#active-and-inactive templates).
