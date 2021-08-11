@@ -80,7 +80,7 @@ For more information, see [Add-in states](./manage-addins-in-the-admin-center.md
 
 ##  Can admins delete or remove add-ins?
 
-Yes. Admins can delete add-ins they deployed for all users from the Microsoft admin center.
+Yes. Admins can delete add-ins they deployed for all users from the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
 
 For more information, see [Delete an add-in](./manage-addins-in-the-admin-center.md#delete-an-add-in). 
   
@@ -94,6 +94,6 @@ We suggest reaching out to the ISV Developer for the paid add-in to request a ma
 
 Global Admin is the recommended role with complete access to add-in management lifecycle. If you're the person who purchased your Microsoft 365 Business subscription, you are the Global admin. 
  
-Your subscription comes with a set of admin roles that you can assign to other users in your organization. Each admin role maps to common business functions and gives people in your organization permissions to perform specific tasks in the Microsoft 365 admin center.  
+Your subscription comes with a set of admin roles that you can assign to other users in your organization. Each admin role maps to common business functions and gives people in your organization permissions to perform specific tasks in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.  
  
 For more information, see [Assign admin roles](../add-users/assign-admin-roles.md). 
