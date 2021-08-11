@@ -75,7 +75,7 @@ The numbers listed are the minimum Office application version required for each 
 
 <sup>\*</sup>
 Version numbers are for the **Current Channel**. Usually, newly released capabilities carry forward into the Monthly Enterprise Channel and then Semi-Annual Enterprise Channel. However, this isn't always the case because each update channel has release criteria for new features.
-<br />
+<br /><br />
 <sup>\*\*</sup>
 Currently, doesn't include justification text to remove a label or lower the classification level
 
@@ -105,7 +105,7 @@ The numbers listed are the minimum Office application version required for each 
 
 <sup>\*</sup>
 Version numbers are for the **Current Channel**. Usually, newly released capabilities carry forward into the Monthly Enterprise Channel and then Semi-Annual Enterprise Channel. However, this isn't always the case because each update channel has release criteria for new features.
-<br />
+<br /><br />
 <sup>\*\*</sup>
 Requires the [new Outlook for Mac](https://support.microsoft.com/office/the-new-outlook-for-mac-6283be54-e74d-434e-babb-b70cefc77439)
 
