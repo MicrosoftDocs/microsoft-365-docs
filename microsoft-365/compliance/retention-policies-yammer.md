@@ -38,7 +38,7 @@ For other workloads, see:
 
 Yammer user messages and community messages can be deleted by using retention policies for Yammer, and in addition to the text in the messages, the following items can be retained for compliance reasons: Hypertext links and links to other Yammer messages.
 
-User messages include all the names of the people in the chat, and community messages include the community name and the message title (if supplied).
+User messages include all the names of the people in the conversation, and community messages include the community name and the message title (if supplied).
 
 Reactions from others in the form of emoticons are not retained when you use retention policies for Yammer.
 
