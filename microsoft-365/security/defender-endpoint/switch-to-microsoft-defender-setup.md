@@ -119,7 +119,7 @@ Currently, you cannot run Microsoft Defender Antivirus in passive mode on Window
 
 1. On the device, open PowerShell as an administrator.
 
-2. Type the following PowerShell cmdlet: `mpcmdrun -wdenable`
+2. Type the following PowerShell cmdlet: `mpcmdrun -wdenable`.
 
 > [!TIP]
 > For more information, see the following articles:
