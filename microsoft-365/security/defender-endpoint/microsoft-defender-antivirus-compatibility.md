@@ -132,7 +132,9 @@ You can use one of several methods to confirm the state of Microsoft Defender An
 
 2. Select **Virus & threat protection**.
 
-3. Under **Who's protecting me?**, select **Manage providers**. On the **Security providers** page, under **Antivirus**, you should see **Microsoft Defender Antivirus is turned on**.
+3. Under **Who's protecting me?** select **Manage providers**. 
+
+4. On the **Security providers** page, under **Antivirus**, you should see **Microsoft Defender Antivirus is turned on**.
 
 ### Use Task Manager to confirm that Microsoft Defender Antivirus is running
 
