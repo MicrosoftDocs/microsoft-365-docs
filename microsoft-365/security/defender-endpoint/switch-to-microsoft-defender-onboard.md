@@ -115,9 +115,8 @@ To set Microsoft Defender Antivirus to passive mode on Windows Server, version 1
 
 If you are using Windows Server 2016, you might have to start Microsoft Defender Antivirus manually. You can perform this task by using the PowerShell cmdlet `mpcmdrun.exe -wdenable` on the device.
 
-## Troubleshooting
-
-If something goes wrong while onboarding, see [Troubleshoot Microsoft Defender for Endpoint onboarding issues](troubleshoot-onboarding.md). That article describes how to resolve onboarding issues and common errors on endpoints.
+> [!NOTE]
+> If something goes wrong while onboarding, see [Troubleshoot Microsoft Defender for Endpoint onboarding issues](troubleshoot-onboarding.md). That article describes how to resolve onboarding issues and common errors on endpoints.
 
 ## Get updates for Microsoft Defender Antivirus
 
