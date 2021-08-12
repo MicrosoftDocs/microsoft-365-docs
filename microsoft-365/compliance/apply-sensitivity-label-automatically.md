@@ -260,7 +260,7 @@ Finally, you can use simulation mode to provide an approximation of the time nee
 
 5. For the page **Name your auto-labeling policy**: Provide a unique name, and optionally a description to help identify the automatically applied label, locations, and conditions that identify the content to label.
 
-6. For the page **Choose locations where you want to apply the label**: Select and specify locations for Exchange, SharePoint sites, and OneDrive. Then select **Next**.
+6. For the page **Choose locations where you want to apply the label**: Select and specify locations for Exchange, SharePoint, and OneDrive. If you don't want to keep the default of **All** for your chosen locations, select the link to choose specific instances. Then select **Next**.
 
     ![Choose locations page auto-labelingwizard](../media/locations-auto-labeling-wizard.png)
     
