@@ -17,7 +17,7 @@ description: Learn how to use advanced metadata search to find items in SharePoi
 
 # Search for metadata in document libraries in Microsoft SharePoint Syntex
 
-The advanced metadata search feature in SharePoint Syntex lets you perform specific metadata-based queries on SharePoint document libraries. You can make faster, more precise queries based on specific metadata column values, rather than just searching for keywords or writing search queries in Keyword Query Language (KQL).
+The advanced metadata search feature in SharePoint Syntex lets you perform specific metadata-based queries on SharePoint document libraries. You can make faster, more precise queries based on specific metadata column values, rather than just searching for keywords.
 
 Advanced metadata search lets you use the metadata associated with a document to help locate the file in a SharePoint document library. This is particularly useful when you have a specific piece of information you want to search for, such as when a document was last modified, a specific person associated with a file, or a specific file type.
 
