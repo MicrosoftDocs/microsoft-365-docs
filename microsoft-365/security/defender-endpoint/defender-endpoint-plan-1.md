@@ -66,7 +66,7 @@ To learn more, see [Next-generation protection overview](next-generation-protect
 
 ## Manual response actions
 
-Defender for Endpoint includes certain [response actions that can be taken when a device is detected as potentially compromised](respond-machine-alerts.md) or having suspicious content. You can also run [response actions on files that are detected as threats](respond-file-alerts.md). Manual response actions are actions that your security team can take when threats are detected on endpoints or in files. 
+Manual response actions are actions that your security team can take when threats are detected on endpoints or in files. Defender for Endpoint includes certain [manual response actions that can be taken on a device](respond-machine-alerts.md) that is detected as potentially compromised or has suspicious content. You can also run [response actions on files](respond-file-alerts.md) that are detected as threats. The following table summarizes the manual response actions that are available in Defender for Endpoint Plan 1. <br/><br/>
 
 | File/Device | Action | Description |
 |:---|:---|:---|
