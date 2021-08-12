@@ -144,12 +144,9 @@ Attack surface reduction is all about reducing the places and ways your organiza
 
 You get ransomware mitigation through [controlled folder access](controlled-folders.md#what-is-controlled-folder-access), which allows only trusted apps to access protected folders on your endpoints. 
 
-To configure controlled folder access, use one of the following methods:
+We recommend using Microsoft Endpoint Manager to configure controlled folder access.
 
-- Microsoft Endpoint Manager
-- The Windows Security app on a Windows device
-
-#### Use Microsoft Endpoint Manager to configure controlled folder access
+:::image type="content" source="../../media/mde-p1/mem-asrpolicies.png" alt-text="ASR policies in Microsoft Endpoint Manager":::
 
 1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and sign in. 
 
@@ -174,25 +171,6 @@ To configure controlled folder access, use one of the following methods:
 8. On the **Assignments** tab, select **Add all users** and **+ Add all devices**, and then choose **Next**. (You can alternately specify specific groups of users or devices.)
 
 9. On the **Review + create** tab, review the settings for your policy, and then choose **Create**. The policy will be applied to any endpoints that were onboarded to Defender for Endpoint shortly.
-
-#### Use the Windows Security app to configure controlled folder access on a single endpoint
-
-Most organizations manage security settings centrally, such as through Microsoft Endpoint Manager. However, you can configure settings on a single endpoint to see how it works before rolling it out in your organization.
-
-1. Make sure Microsoft Defender Antivirus always-on protection is configured. See [Enable and configure Microsoft Defender Antivirus always-on protection](configure-real-time-protection-microsoft-defender-antivirus.md).
-
-2. On a Windows 10 device, open the Windows Security app.
-
-3. Select **Virus & threat protection**.
-
-4. Under **Ransomware protection**, select **Manage ransomware protection**.
-
-5. If controlled folder access is turned off, you'll need to turn it on. Select **protected folders**.
-
-6. Take one of the following steps:
-
-   - To add a folder, select **+ Add a protected folder**.
-   - To remove a folder, select it, and then select **Remove**.
 
 ### Device control
 
