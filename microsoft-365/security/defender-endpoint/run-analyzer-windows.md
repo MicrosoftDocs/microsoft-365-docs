@@ -82,14 +82,14 @@ following items.
 
     -   CertValidate.log <br> Description:  Detailed result from certificate
         revocation executed by calling into
-        [CertUtil](https://docs.microsoft.com/windows-server/administration/windows-commands/certutil).
+        [CertUtil](/windows-server/administration/windows-commands/certutil).
 
     -   dsregcmd.txt <br> Description:  Output from running
-        [dsregcmd](https://docs.microsoft.com/azure/active-directory/devices/troubleshoot-device-dsregcmd).
+        [dsregcmd](/azure/active-directory/devices/troubleshoot-device-dsregcmd).
         This provides details about the Azure AD status of the machine.
 
     -   IFEO.txt <br> Description:  Output of [Image File Execution
-        Options](https://docs.microsoft.com/previous-versions/windows/desktop/xperf/image-file-execution-options)
+        Options](/previous-versions/windows/desktop/xperf/image-file-execution-options)
         configured on the machine
 
     -   MDEClientAnalyzer.txt <br> Description:  This is verbose text file showing
@@ -105,14 +105,14 @@ following items.
         configuration gathered in JSON format from the registry.
 
     -   SCHANNEL.txt <br> Description:  Details about [SCHANNEL
-        configuration](https://docs.microsoft.com/windows-server/security/tls/manage-tls)
+        configuration](/windows-server/security/tls/manage-tls)
         applied to the machine such gathered from registry.
 
     -   SessionManager.txt <br> Description:  Session Manager specific settings
         gather from registry.
 
     -   SSL_00010002.txt <br> Description:  Details about [SSL
-        configuration](https://docs.microsoft.com/windows-server/security/tls/manage-tls)
+        configuration](/windows-server/security/tls/manage-tls)
         applied to the machine gathered from registry.
 
 -   EventLogs [Folder]

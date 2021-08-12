@@ -95,9 +95,9 @@ reproduced on demand.
 
 -   mde_diagnostic.zip <br> Description: Same diagnostic output that gets generated when
     running *mdatp diagnostic create* on either
-    [macOS](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/mac-resources#collecting-diagnostic-information)
+    [macOS](/windows/security/threat-protection/microsoft-defender-atp/mac-resources#collecting-diagnostic-information)
     or
-    [Linux](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/linux-resources#collect-diagnostic-information)
+    [Linux](/windows/security/threat-protection/microsoft-defender-atp/linux-resources#collect-diagnostic-information)
 
 -   mde.xml <br> Description: XML output that is generated while running and is used to build
     the html report file.
@@ -115,5 +115,5 @@ reproduced on demand.
     HTML report.
 
 -   Auditd_info.txt <br> Description: details on auditd service and related components for
-    [Linux](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/linux-support-events)
+    [Linux](/windows/security/threat-protection/microsoft-defender-atp/linux-support-events)
     OS

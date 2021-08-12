@@ -40,28 +40,28 @@ parameters and their description:
 
 > [!NOTE]
 > When any advanced troubleshooting parameter is used, the analyzer also calls
-into [MpCmdRun.exe](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/collect-diagnostic-data-update-compliance)
+into [MpCmdRun.exe](/windows/security/threat-protection/microsoft-defender-antivirus/collect-diagnostic-data-update-compliance)
 to collect Microsoft Defender Antivirus related support logs.
 
 **-h** - Calls into [Windows Performance
-Recorder](https://docs.microsoft.com/windows-hardware/test/wpt/wpr-command-line-options)
+Recorder](/windows-hardware/test/wpt/wpr-command-line-options)
 to collect a verbose general performance trace in addition to the standard
 log set.
 
 **-l** - Calls into built-in [Windows Performance
-Monitor](https://docs.microsoft.com/windows-server/remote/remote-desktop-services/rds-rdsh-performance-counters)
+Monitor](/windows-server/remote/remote-desktop-services/rds-rdsh-performance-counters)
 to collect a lightweight perfmon trace. This may be useful when diagnosing slow
 performance degradation issues that occur over time but hard to reproduce on
 demand.
 
 **-c** - Calls into [process
-monitor](https://docs.microsoft.com/sysinternals/downloads/procmon) for advanced
+monitor](/sysinternals/downloads/procmon) for advanced
 monitoring of real-time file system, registry, and process/thread activity. This
 is especially useful when troubleshooting various application compatibility
 scenarios.
 
 **-i** - Calls into built-in
-[netsh.exe](https://docs.microsoft.com/windows/win32/winsock/netsh-exe) command
+[netsh.exe](/windows/win32/winsock/netsh-exe) command
 to start a network and windows firewall trace that is useful when
 troubleshooting various network-related issues.  
   
@@ -69,17 +69,17 @@ troubleshooting various network-related issues.
 boot and stopped only when the -b is used again.
 
 **-a** - Calls into [Windows Performance
-Recorder](https://docs.microsoft.com/windows-hardware/test/wpt/wpr-command-line-options)
+Recorder](/windows-hardware/test/wpt/wpr-command-line-options)
 to collect a verbose performance trace specific to analysis of high CPU
 issues related to the antivirus process (MsMpEng.exe).
 
 **-v** - Uses antivirus [MpCmdRun.exe command line
-argument](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/command-line-arguments-microsoft-defender-antivirus)
+argument](/windows/security/threat-protection/microsoft-defender-antivirus/command-line-arguments-microsoft-defender-antivirus)
 with most verbose -trace flags.
 
 **-t** - Starts verbose trace of all client-side components relevant to Endpoint
 DLP. This is useful for scenarios where [DLP
-actions](https://docs.microsoft.com/microsoft-365/compliance/endpoint-dlp-learn-about#endpoint-activities-you-can-monitor-and-take-action-on) are not happening as expected for files.
+actions](/microsoft-365/compliance/endpoint-dlp-learn-about#endpoint-activities-you-can-monitor-and-take-action-on) are not happening as expected for files.
 
 **-q** - Calls into DLPDiagnose.ps1 script from the analyzer 'Tools' directory
 that validates the basic configuration and requirements for Endpoint DLP.
@@ -88,18 +88,18 @@ that validates the basic configuration and requirements for Endpoint DLP.
 Server 2016 or older OS) and related processes.  
 \* This flag can be used in conjunction with above mentioned flags.  
 \*\* Capturing a memory dump of [PPL protected
-processes](https://docs.microsoft.com/windows-hardware/drivers/install/early-launch-antimalware)
+processes](/windows-hardware/drivers/install/early-launch-antimalware)
 such as MsSense.exe or MsMpEng.exe is not supported by the analyzer at this
 time.
 
 **-z** - Configures registry keys on the machine to prepare it for full machine
 memory dump collection via
-[CrashOnCtrlScroll](https://docs.microsoft.com/windows-hardware/drivers/debugger/forcing-a-system-crash-from-the-keyboard).
+[CrashOnCtrlScroll](/windows-hardware/drivers/debugger/forcing-a-system-crash-from-the-keyboard).
 This would be useful for analysis of computer freeze issues.  
 \* Hold down the rightmost CTRL key, then press the SCROLL LOCK key twice.
 
 **-k** - Uses
-[NotMyFault](https://docs.microsoft.com/sysinternals/downloads/notmyfault) tool
+[NotMyFault](/sysinternals/downloads/notmyfault) tool
 to force the system to crash and generate a machine memory dump. This would be
 useful for analysis of various OS stability issues.
 
