@@ -805,6 +805,9 @@ For a description of Shifts app activities, see [Search the audit log for events
 
 The following table lists the user and admin activities in Yammer that are logged in the audit log. To return Yammer-related activities from the audit log, you have to select **Show results for all activities** in the **Activities** list. Use the date range boxes and the **Users** list to narrow the search results.
 
+> [!NOTE]
+> Some Yammer audit activities are only available in Advanced Audit. That means users must be assigned the appropriate license before these activities are logged in the audit log. For more information about activities only available in Advanced Audit, see [Advanced Audit in Microsoft 365](advanced-audit.md#access-to-crucial-events-for-investigations). For Advanced Audit licensing requirements, see [Auditing solutions in Microsoft 365](auditing-solutions-overview.md#licensing-requirements). <br/><br/>In the following table, Advanced Audit activities are highlighted with an asterisk (*).
+
 |Friendly name|Operation|Description|
 |:-----|:-----|:-----|
 |Changed data retention policy|SoftDeleteSettingsUpdated|Verified admin updates the setting for the network data retention policy to either Hard Delete or Soft Delete. Only verified admins can perform this operation.|
@@ -814,16 +817,22 @@ The following table lists the user and admin activities in Yammer that are logge
 |Changed security configuration|NetworkSecurityConfigurationUpdated|Verified admin updates the Yammer network's security configuration. This includes setting password expiration policies and restrictions on IP addresses. Only verified admins can perform this operation.|
 |Created file|FileCreated|User uploads a file.|
 |Created group|GroupCreation|User creates a group.|
+|Created message<sup>*</sup>|MessageCreated|User creates a message.|
 |Deleted group|GroupDeletion|A group is deleted from Yammer.|
 |Deleted message|MessageDeleted|User deletes a message.|
 |Downloaded file|FileDownloaded|User downloads a file.|
 |Exported data|DataExport|Verified admin exports Yammer network data. Only verified admins can perform this operation.|
+|Failed to access community<sup>*</sup>|CommunityAccessFailure|User failed to access a community.|
+|Failed to access file<sup>*</sup>|FileAccessFailure|User failed to access a file.|
+|Failed to access message<sup>*</sup>|MessageAccessFailure|User failed to access a message.|
 |Shared file|FileShared|User shares a file with another user.|
 |Suspended network user|NetworkUserSuspended|Network or verified admin suspends (deactivates) a user from Yammer.|
 |Suspended user|UserSuspension|User account is suspended (deactivated).|
 |Updated file description|FileUpdateDescription|User changes the description of a file.|
 |Updated file name|FileUpdateName|User changes the name of a file.|
+|Updated message<sup>*</sup>|MessageUpdated|User updates a message.|
 |Viewed file|FileVisited|User views a file.|
+|Viewed message<sup>*</sup>|MessageViewed|User views a message.|
 ||||
 
 ### Microsoft Power Automate activities
@@ -862,12 +871,12 @@ The following table lists the quarantine activities that you can search for in t
 
 ### Microsoft Forms activities
 
-The following table lists the user and admin activities in Microsoft Forms that are logged in the audit log. Microsoft Forms is a forms/quiz/survey tool used to collect data for analysis. 
+The tables in this section the user and admin activities in Microsoft Forms that are logged in the audit log. Microsoft Forms is a forms/quiz/survey tool used to collect data for analysis. Where noted below in the descriptions, some operations contain additional activity parameters.
 
-Where noted below in the descriptions, some operations contain additional activity parameters.
+If a Forms activity is performed by a co-author or an anonymous responder, it will be logged slightly differently. For more information, see the [Forms activities performed by co-authors and anonymous responders](#forms-activities-performed-by-coauthors-and-anonymous-responders) section.
 
 > [!NOTE]
-> If a Forms activity is performed by a co-author or an anonymous responder, it will be logged slightly differently. For more information, see the [Forms activities performed by co-authors and anonymous responders](#forms-activities-performed-by-coauthors-and-anonymous-responders) section.
+> Some Forms audit activities are only available in Advanced Audit. That means users must be assigned the appropriate license before these activities are logged in the audit log. For more information about activities only available in Advanced Audit, see [Advanced Audit in Microsoft 365](advanced-audit.md#access-to-crucial-events-for-investigations). For Advanced Audit licensing requirements, see [Auditing solutions in Microsoft 365](auditing-solutions-overview.md#licensing-requirements). <br/><br/>In the following table, Advanced Audit activities are highlighted with an asterisk (*).
 
 |Friendly name|Operation|Description|
 |:-----|:-----|:-----|
@@ -895,21 +904,21 @@ Where noted below in the descriptions, some operations contain additional activi
 |Updated form phishing status|UpdatePhishingStatus|This event is logged whenever the detailed value for the internal security status was changed, regardless of whether this changed the final security state (for example, form is now Closed or Opened). This means you may see duplicate events without a final security state change. The possible status values for this event are:<br/>- Take Down <br/>- Take Down by Admin <br/>- Admin Unblocked <br/>- Auto Blocked <br/>- Auto Unblocked <br/>- Customer Reported <br/>- Reset Customer Reported|
 |Updated user phishing status|UpdateUserPhishingStatus|This event is logged whenever the value for the user security status was changed. The value of the user status in the audit record is **Confirmed as Phisher** when the user created a phishing form that was taken down by the Microsoft Online safety team. If an admin unblocks the user, the value of the user's status is set to **Reset as Normal User**.|
 |Sent Forms Pro invitation|ProInvitation|User clicks to activate a Pro trial.|
-|Updated form setting|UpdateFormSetting|Form owner updates one or multiple form settings. <br><br>Property FormSettingName:string indicates updated sensitive settings' name. Property NewFormSettings:string indicates updated settings' name and new value. Property thankYouMessageContainsLink:boolean indicates updated thankyou message contains a URL link.|
+|Updated form setting<sup>*</sup> |UpdateFormSetting|Form owner updates one or multiple form settings. <br><br>Property FormSettingName:string indicates updated sensitive settings' name. Property NewFormSettings:string indicates updated settings' name and new value. Property thankYouMessageContainsLink:boolean indicates updated thankyou message contains a URL link.|
 |Updated user setting|UpdateUserSetting|Form owner updates a user setting. <br><br>Property UserSettingName:string indicates the setting's name and new value|
-|Listed forms|ListForms|Form owner is viewing a list of forms. <br><br>Property ViewType:string indicates which view the form owner is looking at: All Forms, Shared with Me, or Group Forms|
+|Listed forms<sup>*</sup>|ListForms|Form owner is viewing a list of forms. <br><br>Property ViewType:string indicates which view the form owner is looking at: All Forms, Shared with Me, or Group Forms|
 |Submitted response|SubmitResponse|A user submits a response to a form. <br><br>Property IsInternalForm:boolean indicates if the responder is within the same organization as the form owner.|
-|Enabled anyone can respond setting|AllowAnonymousResponse|Form owner turns on the setting allowing any one to respond to the form.|
-|Disabled anyone can respond setting|DisallowAnonymousResponse|Form owner turns off the setting allowing any one to respond to the form.|
-|Enabled specific people can respond setting|EnableSpecificResponse|Form owner turns on the setting allowing only specific people or specific groups in the current organization to respond to the form.|
-|Disabled specific people can respond setting|DisableSpecificResponse|Form owner turns off the setting allowing only specific people or specific groups in the current organization to respond to the form.|
-|Added specific responder|AddSpecificResponder|Form owner adds a new user or group to the specific responders list.|
-|Removed specific responder|RemoveSpecificResponder|Form owner removes a user or group from the specific responders list.|
-|Disabled collaboration|DisableCollaboration|Form owner turns off the setting of collaboration on the form.|
-|Enabled Office 365 work or school account collaboration|EnableWorkOrSchoolCollaboration|Form owner turns on the setting allowing users with an Office 365 work or school account to view and edit the form.|
-|Enabled people in my organization collaboration|EnableSameOrgCollaboration|Form owner turns on the setting allowing users in the current organization to view and edit the form.|
-|Enabled specific people collaboration|EnableSpecificCollaboaration|Form owner turns on the setting allowing only specific people or specific groups in the current organization to view and edit the form.|
-|Connected to Excel workbook|ConnectToExcelWorkbook|Connected the form to an Excel workbook. <br><br>Property ExcelWorkbookLink:string indicates the associated Excel workbook ID of the current form.|
+|Enabled anyone can respond setting<sup>*</sup>|AllowAnonymousResponse|Form owner turns on the setting allowing any one to respond to the form.|
+|Disabled anyone can respond setting<sup>*</sup>|DisallowAnonymousResponse|Form owner turns off the setting allowing any one to respond to the form.|
+|Enabled specific people can respond setting<sup>*</sup>|EnableSpecificResponse|Form owner turns on the setting allowing only specific people or specific groups in the current organization to respond to the form.|
+|Disabled specific people can respond setting<sup>*</sup>|DisableSpecificResponse|Form owner turns off the setting allowing only specific people or specific groups in the current organization to respond to the form.|
+|Added specific responder<sup>*</sup>|AddSpecificResponder|Form owner adds a new user or group to the specific responders list.|
+|Removed specific responder<sup>*</sup>|RemoveSpecificResponder|Form owner removes a user or group from the specific responders list.|
+|Disabled collaboration<sup>*</sup>|DisableCollaboration|Form owner turns off the setting of collaboration on the form.|
+|Enabled Office 365 work or school account collaboration<sup>*</sup>|EnableWorkOrSchoolCollaboration|Form owner turns on the setting allowing users with an Office 365 work or school account to view and edit the form.|
+|Enabled people in my organization collaboration<sup>*</sup>|EnableSameOrgCollaboration|Form owner turns on the setting allowing users in the current organization to view and edit the form.|
+|Enabled specific people collaboration<sup>*</sup>|EnableSpecificCollaboaration|Form owner turns on the setting allowing only specific people or specific groups in the current organization to view and edit the form.|
+|Connected to Excel workbook<sup>*</sup>|ConnectToExcelWorkbook|Connected the form to an Excel workbook. <br><br>Property ExcelWorkbookLink:string indicates the associated Excel workbook ID of the current form.|
 ||||
 
 #### Forms activities performed by coauthors and anonymous responders
