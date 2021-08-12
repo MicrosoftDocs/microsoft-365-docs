@@ -8,15 +8,15 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: deniseb
-author: denisebmsft
+author: jweston-1
+ms.author: v-jweston
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.date: 06/02/2021
+ms.date: 08/11/2021
 ---
 
 # Configure attack surface reduction capabilities
