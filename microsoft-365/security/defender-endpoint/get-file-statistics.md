@@ -39,6 +39,7 @@ Retrieves the statistics for the given file.
 ## Limitations
 
 1. Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
+2. The maximum value for `lookbackhours` is 720 Hours(30 days).
 
 ## Permissions
 
