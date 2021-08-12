@@ -174,7 +174,7 @@ To invite guests to a team
 5. Click **Add**, and then click **Close**.
 
 > [!NOTE]
-> Currently Azure AD guests can only be invited using their UPN (alias@company.com). Inviting using EAS ID, or other email formats, is not supported.
+> Guests with a work or school account can only be invited by using their User Principal Name (UPN) (for example, adele@contoso.com). Inviting guests by using EAS ID, or other email formats, is not supported.
 
 ## See also
 
