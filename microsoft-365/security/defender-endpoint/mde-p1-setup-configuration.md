@@ -100,18 +100,16 @@ The following table describes key roles to consider for Defender for Endpoint in
 
 ## Onboard to Defender for Endpoint
 
-1. When you’re ready to onboard your organization’s endpoints, you can choose from several methods, as listed in the following table: <br/>
+When you’re ready to onboard your organization’s endpoints, you can choose from several methods, as listed in the following table: <br/>
 
-   |Endpoint Operating System | Onboarding methods|
-   |---|---|
-   | Windows 10 | [Local script (up to 10 devices)](configure-endpoints-script.md) <br>  [Group Policy](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/ Mobile Device Manager](configure-endpoints-mdm.md) <br> [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [VDI scripts](configure-endpoints-vdi.md) <br> [Integration with Azure Defender](configure-server-endpoints.md#integration-with-azure-defender) |
-   | macOS | [Local scripts](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [Mobile Device Management](mac-install-with-other-mdm.md) |
-   | iOS |[App-based](ios-install.md) |
-   | Android | [Microsoft Endpoint Manager](android-intune.md) |
+|Endpoint Operating System | Onboarding methods|
+|---|---|
+| Windows 10 | [Local script (up to 10 devices)](configure-endpoints-script.md) <br>  [Group Policy](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/ Mobile Device Manager](configure-endpoints-mdm.md) <br> [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [VDI scripts](configure-endpoints-vdi.md) <br> [Integration with Azure Defender](configure-server-endpoints.md#integration-with-azure-defender) |
+| macOS | [Local scripts](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [Mobile Device Management](mac-install-with-other-mdm.md) |
+| iOS |[App-based](ios-install.md) |
+| Android | [Microsoft Endpoint Manager](android-intune.md) |
 
-2. Proceed to [configure next-generation protection settings](#configure-next-generation-protection) and [configure your attack surface reduction capabilities](#configure-your-attack-surface-reduction-capabilities). 
-
-3. Edit and fine-tune your settings as needed. See [Manage Microsoft Defender for Endpoint Plan 1 (preview)](mde-p1-maintenance-operations.md).
+Then, proceed to configure your next-generation protection and attack surface reduction capabilities.
 
 ## Configure next-generation protection
 
@@ -119,18 +117,16 @@ We recommend using [Microsoft Endpoint Manager](/mem) to manage your organizatio
  
 :::image type="content" source="../../media/mde-p1/endpoint-policies.png" alt-text="Endpoint security policies in MEM":::
 
-### Review and edit your next-generation protection settings
+1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and sign in.
 
-1.	Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and sign in.
+2. Select **Endpoint security** > **Antivirus**, and then select an existing policy. (If you don’t have an existing policy, create a new policy.)
 
-2.	Select **Endpoint security** > **Antivirus**, and then select an existing policy. (If you don’t have an existing policy, create a new policy.)
-
-3.	Set or change your antivirus configuration settings. Need help? Refer to the following resources: <br/>
+3. Set or change your antivirus configuration settings. Need help? Refer to the following resources: <br/>
 
    - [Settings for Windows 10 Microsoft Defender Antivirus policy in Microsoft Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-windows)
    - [Configure Defender for Endpoint on iOS features](ios-configure-features.md)
 
-4.	When you are finished specifying your settings, choose **Review + save**.
+4. When you are finished specifying your settings, choose **Review + save**.
 
 ## Configure your attack surface reduction capabilities
 
