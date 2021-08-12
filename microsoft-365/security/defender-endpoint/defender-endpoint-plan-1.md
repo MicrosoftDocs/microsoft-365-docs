@@ -165,8 +165,8 @@ To learn more, see [Defender for Endpoint APIs](management-apis.md).
 
 Most organizations use various devices and operating systems. Currently, Defender for Endpoint Plan 1 (preview) supports the following operating systems:
 
-- Windows 10, version 1709 or later
-- macOS (Big Sur 11.5, Catalina 10.15.7, or Mojave 10.14.6)
+- Windows 10, version 1709, or later
+- macOS: 11.5 (Big Sur), 10.15.7 (Catalina), or 10.14.6 (Mojave)
 - iOS
 - Android OS
 
