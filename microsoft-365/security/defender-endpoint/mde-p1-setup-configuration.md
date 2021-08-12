@@ -100,7 +100,7 @@ The following table describes key roles to consider for Defender for Endpoint in
 
 ## Onboard to Defender for Endpoint
 
-1. When you’re ready to onboard your organization’s devices and users to Defender for Endpoint, follow the guidance in [Onboard to the Defender for Endpoint service](onboarding.md).
+1. When you’re ready to onboard your organization’s endpoints, you can choose from several methods, as listed in the following table: <br/>
 
    |Endpoint Operating System | Onboarding methods|
    |---|---|
