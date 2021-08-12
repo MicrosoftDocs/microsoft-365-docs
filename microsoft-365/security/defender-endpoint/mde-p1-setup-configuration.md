@@ -117,6 +117,8 @@ We recommend using [Microsoft Endpoint Manager](/mem) to manage your organizatio
  
 :::image type="content" source="../../media/mde-p1/endpoint-policies.png" alt-text="Endpoint security policies in MEM":::
 
+To configure your next-generation protection in Microsoft Endpoint Manager, follow these steps:
+
 1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and sign in.
 
 2. Select **Endpoint security** > **Antivirus**, and then select an existing policy. (If you don’t have an existing policy, create a new policy.)
@@ -130,7 +132,7 @@ We recommend using [Microsoft Endpoint Manager](/mem) to manage your organizatio
 
 ## Configure your attack surface reduction capabilities
 
-Attack surface reduction is all about reducing the places and ways your organization is open to attack. Defender for Endpoint Plan 1 (preview) includes several features and capabilities to help you reduce your attack surfaces: 
+Attack surface reduction is all about reducing the places and ways your organization is open to attack. Defender for Endpoint Plan 1 (preview) includes several features and capabilities to help you reduce your attack surfaces across your endpoints. These features and capabilities include: 
 
 - [Ransomware mitigation](#ransomware-mitigation)
 - [Device control](#device-control)
@@ -141,6 +143,8 @@ Attack surface reduction is all about reducing the places and ways your organiza
 ### Ransomware mitigation
 
 You get ransomware mitigation through [controlled folder access](controlled-folders.md#what-is-controlled-folder-access), which allows only trusted apps to access protected folders on your endpoints. 
+
+To configure controlled folder access, follow these steps:
 
 1. Make sure Microsoft Defender Antivirus always-on protection is configured. See [Enable and configure Microsoft Defender Antivirus always-on protection](configure-real-time-protection-microsoft-defender-antivirus.md).
 
