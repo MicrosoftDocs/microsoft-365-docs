@@ -77,7 +77,9 @@ These tasks are included in the setup phase for Defender for Endpoint. To learn 
 
 ## Assign roles and permissions
 
-In order to access the Microsoft 365 Defender portal, configure settings for Defender for Endpoint, or perform tasks, such as taking response actions on detected threats, appropriate permissions must be assigned. Defender for Endpoint uses [built-in roles within Azure Active Directory](/azure/active-directory/roles/permissions-reference). The following table describes roles to consider for your organization: <br/><br/>
+In order to access the Microsoft 365 Defender portal, configure settings for Defender for Endpoint, or perform tasks, such as taking response actions on detected threats, appropriate permissions must be assigned. Defender for Endpoint uses [built-in roles within Azure Active Directory](/azure/active-directory/roles/permissions-reference). Microsoft recommends assigning users only the level of permission they need to perform their tasks. 
+
+The following table describes roles to consider for your organization: <br/><br/>
 
 | Role | Description |
 |:---|:---|
@@ -88,14 +90,11 @@ In order to access the Microsoft 365 Defender portal, configure settings for Def
 
 You can assign permissions by using basic permissions management, or by using [role-based access control](rbac.md) (RBAC). 
 
-- With basic permissions management, global admins and security admins have full access, whereas security readers only have read access
+- With basic permissions management, global admins and security admins have full access, whereas security readers read-only access.
 - With RBAC, you can set more granular permissions through roles. 
 
-
-> [!NOTE]
-> Microsoft recommends using the concept of [least privileged access](/azure/active-directory/develop/secure-least-privileged-access), so that users and applications are granted only the minimum level of access needed to perform required tasks. 
-
-To learn more, see [Prepare for your Defender for Endpoint deployment](prepare-deployment.md).
+> [!TIP]
+> To learn more about roles in Azure Active Directory, see [Assign administrator and non-administrator roles to users with Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal). And, more information about roles for Defender for Endpoint, see [Role-based access control](prepare-deployment.md#role-based-access-control).
 
 ## Onboard to Defender for Endpoint
 
