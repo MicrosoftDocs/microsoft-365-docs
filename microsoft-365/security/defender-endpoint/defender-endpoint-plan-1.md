@@ -66,7 +66,7 @@ To learn more, see [Next-generation protection overview](next-generation-protect
 
 ## Manual response actions
 
-Defender for Endpoint includes certain [response actions that can be taken when a device is detected as potentially compromised](respond-machine-alerts.md) or having suspicious content. You can also run [response actions on files that are detected as threats](respond-file-alerts.md).  
+Defender for Endpoint includes certain [response actions that can be taken when a device is detected as potentially compromised](respond-machine-alerts.md) or having suspicious content. You can also run [response actions on files that are detected as threats](respond-file-alerts.md). Manual response actions are actions that your security team can take when threats are detected on endpoints or in files. 
 
 | File/Device | Action | Description |
 |:---|:---|:---|
@@ -90,10 +90,10 @@ Your organization’s attack surfaces are all the places where you’re vulnerab
 - [Network protection](#web-protection)
 - [Network firewall](#network-firewall)
 
-> [!NOTE]
-> Currently, Defender for Endpoint Plan 1 (preview) does not include central management and reporting for [attack surface reduction rules](attack-surface-reduction-rules.md).
+Currently, Defender for Endpoint Plan 1 (preview) does not include central management and reporting for [attack surface reduction rules](attack-surface-reduction-rules.md). However, attack surface reduction rules are available for certain versions of Windows. To learn more, see [Requirements for attack surface reduction rules](enable-attack-surface-reduction.md#requirements).
 
-To learn more about attack surface reduction capabilities in Defender for Endpoint, see [Overview of attack surface reduction](overview-attack-surface-reduction.md).
+> [!TIP]
+> To learn more about attack surface reduction capabilities in Defender for Endpoint, see [Overview of attack surface reduction](overview-attack-surface-reduction.md).
 
 ### Ransomware mitigation
 
