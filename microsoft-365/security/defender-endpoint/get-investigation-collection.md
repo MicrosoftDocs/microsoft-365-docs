@@ -39,7 +39,7 @@ Retrieves a collection of [Investigations](investigation.md).
 Supports [OData V4 queries](https://www.odata.org/documentation/).
 
 The OData's `$filter` query is supported on: `startTime`, `id`, `state`, `machineId` and `triggeringAlertId` properties.
-<br>```$top``` with max value of 10,000 
+<br>```$stop``` with max value of 10,000 
 <br>```$skip```
 
 See examples at [OData queries with Microsoft Defender for Endpoint](exposed-apis-odata-samples.md)
