@@ -69,17 +69,6 @@ Microsoft Defender for Endpoint Device Control Removable Storage Protection prev
 
 **Supported platform** - macOS Catalina 10.15.4+ (with system extensions enabled)
 
-### Windows Portable Device Access Control
-
-**Capabilities** - Deny Read or Write access to any [Windows Portable Device](/windows-hardware/drivers/portable/), for example: Tablet, iPhone.
-
-**Description**:
-
-- Applied at either machine or user or both.
-- Support MEM OMA-URI and GPO.
-
-**Supported Platform** - Windows 10
-
 ### Endpoint DLP Removable storage
 
 **Capabilities** - Audit or Warn or Prevent a user from copying an item or information to removable media or USB device.
