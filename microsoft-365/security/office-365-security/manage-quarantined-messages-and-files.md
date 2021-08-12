@@ -35,13 +35,13 @@ In Microsoft 365 organizations with mailboxes in Exchange Online or standalone E
 
 Admins can view, release, and delete all types of quarantined messages for all users. Only admins can manage messages that were quarantined as malware, high confidence phishing, or as a result of mail flow rules (also known as transport rules). Admins can also report false positives to Microsoft.
 
-Admins in organizations with Microsoft Defender for Office 365 can also view, download, and delete quarantined files in SharePoint Online, OneDrive for Business, and Microsoft Teams.
+Admins in organizations with Microsoft Defender for Office 365 can also manage files that were quarantined by quarantined by [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](mdo-for-spo-odb-and-teams.md).
 
 You view and manage quarantined messages in the Microsoft 365 Defender portal or in PowerShell (Exchange Online PowerShell for Microsoft 365 organizations with mailboxes in Exchange Online; standalone EOP PowerShell for organizations without Exchange Online mailboxes).
 
 ## What do you need to know before you begin?
 
-- To open the Microsoft 365 Defender portal, go to <https://security.microsoft.com>. To open the Quarantine page directly, go to <https://security.microsoft.com/quarantine>.
+- To open the Microsoft 365 Defender portal, go to <https://security.microsoft.com>. To open the **Quarantine** page directly, use <https://security.microsoft.com/quarantine>.
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
@@ -124,7 +124,7 @@ You view and manage quarantined messages in the Microsoft 365 Defender portal or
      - **Anti-spam policy**
      - **Transport rule** (mail flow rule)
 
-   When you're finished, click **Apply**. To clear the filters, click [Release email icon](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters**.
+   When you're finished, click **Apply**. To clear the filters, click ![Release email icon](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters**.
 
 5. Use **Search** box and a corresponding value to find specific messages. Wildcards aren't supported. You can search by the following values:
    - Message ID
@@ -139,7 +139,7 @@ After you find a specific quarantined message, select the message to view detail
 
 #### View quarantined message details
 
-When you select an email message in the list, the following message details are available in the details flyout that appears.
+When you select quarantined message from the list, the following information is available in the details flyout that appears.
 
 ![The details flyout of a quarantined message](../../media/quarantine-message-details-flyout.png)
 
@@ -165,11 +165,11 @@ To take action on the message, see the next section.
 
 ### Take action on quarantined email
 
-After you select a message, you have several available actions for the quarantined message in the details flyout:
+After you select a quarantined message from the list, the following actions are available in the details flyout:
 
 ![Available actions in the details flyout of a quarantined message](../../media/quarantine-message-details-flyout-actions.png)
 
-- ![Release email icon](../../media/m365-cc-sc-check-mark-icon.png) **Release email**: In the flyout pane that appears, configure the following options:
+- ![Release email icon](../../media/m365-cc-sc-check-mark-icon.png) **Release email**<sup>\*</sup>: In the flyout pane that appears, configure the following options:
   - **Add sender to your organization's allow list**: Select this option to prevent messages from the sender from being quarantined.
   - Choose one of the following options:
     - **Release to all recipients**
@@ -223,7 +223,7 @@ The following actions are available after you click ![More actions icon](../../m
 
   When you're finished, click **Submit**.
 
-When you're finished, click **Close**.
+<sup>\*</sup> This option is not available for messages that have already been released (the **Released status** value is **Released**).
 
 If you don't release or remove the message, it will be deleted after the default quarantine retention period expires (as shown in the **Expires** column).
 
@@ -235,7 +235,7 @@ If you don't release or remove the message, it will be deleted after the default
 > The icons in order and their corresponding descriptions are summarized in the following table:
 >
 > |Icon|Description|
-> |:---:|---|
+> |---:|---|
 > |![Release email icon](../../media/m365-cc-sc-check-mark-icon.png)|**Release email**|
 > |![View message headers icon](../../media/m365-cc-sc-eye-icon.png)|**View message headers**|
 > |![Preview message icon](../../media/m365-cc-sc-eye-icon.png)|**Preview message**|
@@ -246,9 +246,9 @@ If you don't release or remove the message, it will be deleted after the default
 
 #### Take action on multiple quarantined email messages
 
-When you select multiple quarantined message in the list (up to 100) by clicking in the blank area to the left of the **Subject** column, the **Bulk actions** drop down list appears where you can take the following actions:
+When you select multiple quarantined messages in the list (up to 100) by clicking in the blank area to the left of the **Subject** column, the **Bulk actions** drop down list appears where you can take the following actions:
 
-![Bulk actions drop down list in quarantine](../../media/quarantine-bulk-actions.png)
+![Bulk actions drop down list for messages in quarantine](../../media/quarantine-message-bulk-actions.png)
 
 - ![Release email icon](../../media/m365-cc-sc-check-mark-icon.png) **Release messages**: This action releases messages to all recipients. In the flyout that appears, you can choose the following options, which are the same as when you release a single message:
   - **Add sender to your organization's allow list**
@@ -263,7 +263,7 @@ When you select multiple quarantined message in the list (up to 100) by clicking
   > [!NOTE]
   > Consider the following scenario: john@gmail.com sends a message to faith@contoso.com and john@subsidiary.contoso.com. Gmail bifurcates this message into two copies that are both routed to quarantine as phishing in Microsoft. An admin releases both of these messages to admin@contoso.com. The first released message that reaches the admin mailbox is delivered. The second released message is identified as duplicate delivery and is skipped. Message are identified as duplicates if they have the same message ID and received time.
 
-- [Remove from quarantine icon](../../media/m365-cc-sc-delete-icon.png) **Delete messages**:  After you click **Yes** in the warning that appears, the messages are immediately removed from quarantine without being sent to the original recipients.
+- ![Remove from quarantine icon](../../media/m365-cc-sc-delete-icon.png) **Delete messages**:  After you click **Yes** in the warning that appears, the messages are immediately removed from quarantine without being sent to the original recipients.
 - ![Download email icon](../../media/m365-cc-sc-download-icon.png) **Download messages**
 - ![Submit only icon](../../media/m365-cc-sc-create-icon.png) **Submit only**
 
@@ -300,11 +300,13 @@ In organizations with Defender for Office 365, admins can manage files that were
 
    When you're finished, click **Apply** or **Cancel**.
 
-After you find a specific quarantined file, select the file to view details about it, and to take action on it (for example, view, release, download, or delete the message).
+After you find a specific quarantined file, select the file to view details about it, and to take action on it (for example, view, release, download, or delete the file).
 
 #### View quarantined file details
 
-When you select a file in the list, the following file details are available in the details flyout that opens:
+When you select a quarantined file from the list, the following information is available in the details flyout that opens:
+
+![The details flyout of a quarantined file](../../media/quarantine-file-details-flyout.png)
 
 - **File Name**
 - **File URL**: URL that defines the location of the file (for example, in SharePoint Online).
@@ -329,24 +331,39 @@ To take action on the file, see the next section.
 
 ### Take action on quarantined files
 
-When you select a file in the list, you can take the following actions on the file in the details flyout:
+After you select a quarantined file from the list, the following actions are available in the details flyout:
 
+![Available actions in the details flyout of a quarantined file](../../media/quarantine-file-details-flyout-actions.png)
+
+- ![Release file icon](../../media/m365-cc-sc-check-mark-icon.png) **Release file**<sup>\*</sup>: In the flyout pane that appears, turn on or turn off **Report files to Microsoft for analysis**, and then click **Release**.
 - ![Download file icon](../../media/m365-cc-sc-download-icon.png) **Download file**: In the flyout that appears, select **I understand the risks from downloading this file**, and then click **Download** to save a local copy of the file.
+- ![Remove from quarantine icon](../../media/m365-cc-sc-delete-icon.png) **Remove from quarantine**: After you click **Yes** in the warning that appears, the file is immediately deleted.
 - ![Block sender icon](../../media/m365-cc-sc-block-sender-icon.png) **Block sender**: Add the sender to the Blocked Senders list in **your** mailbox. For more information, see [Block a mail sender](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4).
 
-#### Actions on multiple quarantined files
+<sup>\*</sup> This option is not available for files that have already been released (the **Released status** value is **Released**).
 
-When you select multiple quarantined message in the list (up to 100) by clicking in the blank area to the left of the **Subject** column, the **Bulk actions** drop down list appears where you can take the following actions:
+If you don't release or remove the file, it will be deleted after the default quarantine retention period expires (as shown in the **Expires** column).
 
-- **Release files**
-- **Delete files**:  After you click **Yes** in the warning that appears, the files are immediately deleted.
+#### Take action on multiple quarantined files
+
+When you select multiple quarantined files in the list (up to 100) by clicking in the blank area to the left of the **Subject** column, the **Bulk actions** drop down list appears where you can take the following actions:
+
+![Bulk actions drop down list for files in quarantine](../../media/quarantine-file-bulk-actions.png)
+
+- ![Release file icon](../../media/m365-cc-sc-check-mark-icon.png) **Release file**: In the flyout pane that appears, turn on or turn off **Report files to Microsoft for analysis**, and then click **Release**.
+- ![Remove from quarantine icon](../../media/m365-cc-sc-delete-icon.png) **Remove from quarantine**: After you click **Yes** in the warning that appears, the file is immediately deleted.
+- ![Download file icon](../../media/m365-cc-sc-download-icon.png) **Download file**: In the flyout that appears, select **I understand the risks from downloading this file**, and then click **Download** to save a local copy of the file.
 
 ## Use Exchange Online PowerShell or standalone EOP PowerShell to view and manage quarantined messages and files
 
-The cmdlets you use to view and manages messages and files in quarantine are:
+The cmdlets that you use to view and manage messages and files in quarantine are described in the following list:
 
 - [Delete-QuarantineMessage](/powershell/module/exchange/delete-quarantinemessage)
 - [Export-QuarantineMessage](/powershell/module/exchange/export-quarantinemessage)
 - [Get-QuarantineMessage](/powershell/module/exchange/get-quarantinemessage)
 - [Preview-QuarantineMessage](/powershell/module/exchange/preview-quarantinemessage): Note that this cmdlet is only for messages, not quarantined files from Safe Attachments for SharePoint, OneDrive, and Microsoft Teams.
 - [Release-QuarantineMessage](/powershell/module/exchange/release-quarantinemessage)
+
+## For more information
+
+[Quarantined messages FAQ](quarantine-faq.yml)
