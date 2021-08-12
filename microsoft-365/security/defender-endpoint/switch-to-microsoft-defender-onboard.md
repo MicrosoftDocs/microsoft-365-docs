@@ -21,7 +21,7 @@ ms.collection:
   - m365solution-symantecmigrate
 ms.custom: migrationguides
 ms.topic: article
-ms.date: 08/11/2021
+ms.date: 08/12/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ---
 
@@ -84,7 +84,7 @@ To verify that your onboarded devices are properly connected to Defender for End
 
 ## Confirm that Microsoft Defender Antivirus is in passive mode on your endpoints
 
-Now that your endpoints have been onboarded to Defender for Endpoint, your next step is to make sure Microsoft Defender Antivirus is running in passive mode. You can use either Command Prompt or PowerShell to perform this task, as described in the following table:
+Now that your endpoints have been onboarded to Defender for Endpoint, your next step is to make sure Microsoft Defender Antivirus is running in passive mode. You can use one of several methods, as described in the following table:
 
 | Method  | What to do  |
 |:-------|:-------|
