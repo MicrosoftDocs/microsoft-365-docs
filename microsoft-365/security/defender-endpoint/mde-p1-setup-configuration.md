@@ -55,11 +55,14 @@ The following table lists the basic requirements for Defender for Endpoint Plan 
 
 When you plan your deployment, you can choose from several different architectures and deployment methods. Every organization is unique, so you have several options to consider. 
 
-To help with these decisions, see [Plan your Defender for Endpoint deployment](deployment-strategy.md), which includes the downloadable poster that is depicted in the following image: 
+To help with these decisions, see [Plan your Defender for Endpoint deployment](deployment-strategy.md), which includes the following poster: 
 
 [:::image type="content" source="../../media/defender-endpoint/mde-deployment-strategy.png" alt-text="Deployment strategy poster thumbnail":::](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)
 
 **[Get the deployment poster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)**
+
+> [!TIP]
+> For more detailed information about planning your deployment, see [Plan your Microsoft Defender for Endpoint deployment](deployment-strategy.md).
 
 ## Set up your tenant environment
 
