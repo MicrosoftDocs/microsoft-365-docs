@@ -66,9 +66,14 @@ To help with these decisions, see [Plan your Defender for Endpoint deployment](d
 
 ## Set up your tenant environment
 
-Setting up your tenant environment includes tasks, such as verifying your licenses and configuring your tenant. An important part of this process is making sure sensors are working correctly and reporting data to Defender for Endpoint. As a preview customer, you’ll likely have help with this process. 
+Setting up your tenant environment includes tasks, such as:
 
-To learn more, see [Set up Defender for Endpoint](production-deployment.md).
+- Verifying your licenses
+- Configuring your tenant
+- Configuring your proxy settings (only if necessary)
+- Making sure sensors are working correctly and reporting data to Defender for Endpoint 
+
+These tasks are included in the setup phase for Defender for Endpoint. To learn more, see [Set up Defender for Endpoint](production-deployment.md).
 
 ## Assign roles and permissions
 
