@@ -56,7 +56,7 @@ Runs a sequence of live response commands on a device
 
 5.  Live response commands cannot be queued up and can only be executed one at a time. 
 
-6.  Multiple Live response commands can be run on a single API call. However, When a live response command fails all followed actions will not be
+6.  Multiple live response commands can be run on a single API call. However, when a live response command fails all the following actions will not be
     executed.
 
 ## Minimum Requirements
