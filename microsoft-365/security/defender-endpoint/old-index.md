@@ -17,6 +17,7 @@ ms.topic: conceptual
 ---
  
 # Threat Protection
+
 [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-advanced-threat-protection) is a unified platform for preventative protection, post-breach detection, automated investigation, and response. Defender for Endpoint protects endpoints from cyber threats, detects advanced attacks and data breaches, automates security incidents, and improves security posture.
 
 > [!TIP]
@@ -44,8 +45,7 @@ ms.topic: conceptual
 
 <a name="tvm"></a>
 
-
->[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4obJq]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4obJq]
 
 **[Threat & vulnerability management](next-gen-threat-and-vuln-mgt.md)**<br>
 This built-in capability uses a game-changing risk-based approach to the discovery, prioritization, and remediation of endpoint vulnerabilities and misconfigurations.

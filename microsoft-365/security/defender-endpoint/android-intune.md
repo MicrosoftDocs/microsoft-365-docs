@@ -27,7 +27,7 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Learn how to deploy Defender for Endpoint on Android on Intune
 Company Portal enrolled devices. For more information about Intune device enrollment, see  [Enroll your
@@ -250,7 +250,7 @@ Defender for Endpoint supports Device configuration policies for managed devices
    Custom VPN in this case is Defender for Endpoint VPN which is used to provide the Web Protection feature.
 
    > [!NOTE]
-   > Microsoft Defender for Endpoint app must be installed on user’s device, in order to functioning of auto setup of this VPN.
+   > Microsoft Defender for Endpoint app must be installed on user's device, in order to functioning of auto setup of this VPN.
 
    - Enter **Package ID** of the Microsoft Defender for Endpoint app in Google Play store. For the Defender app URL <https://play.google.com/store/apps/details?id=com.microsoft.scmx>, Package ID is **com.microsoft.scmx**
    - **Lockdown mode** Not configured (Default)

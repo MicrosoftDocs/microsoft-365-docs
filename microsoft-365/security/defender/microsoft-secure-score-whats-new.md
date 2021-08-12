@@ -1,7 +1,7 @@
 ---
 title: What's new in Microsoft Secure Score
-description: Describes what new changes have happened to Microsoft Secure Score in the Microsoft 365 security center.
-keywords: microsoft secure score, secure score, office 365 secure score, microsoft security score, microsoft 365 security center
+description: Describes what new changes have happened to Microsoft Secure Score in the Microsoft 365 Defender portal.
+keywords: microsoft secure score, secure score, office 365 secure score, microsoft security score, Microsoft 365 Defender portal
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 localization_priority: Normal
@@ -29,11 +29,48 @@ ms.technology: m365d
 
 To make Microsoft Secure Score a better representative of your security posture, we have made some changes. To learn about planned changes, see [What's coming in Microsoft Secure Score?](microsoft-secure-score-whats-coming.md)
 
-Microsoft Secure Score can be found at https://security.microsoft.com/securescore in the [Microsoft 365 security center](overview-security-center.md).
+Microsoft Secure Score can be found at https://security.microsoft.com/securescore in the [Microsoft 365 Defender portal](overview-security-center.md).
+
+## July 2021
+
+### Added improvement action related to Microsoft Teams
+
+- Restrict dial-in users from bypassing a meeting lobby
+- Limit external participants from having control in a Teams meeting
+- Restrict anonymous users from starting Teams meetings
+- Require lobbies to be set up for Teams meetings
+- Configure which users are allowed to be present in Teams meetings
+
+### Added improvement action related to Microsoft Defender for Endpoint
+
+- Fix Microsoft Defender for Endpoint sensor data collection for macOS
+- Fix Microsoft Defender for Endpoint impaired communications for macOS
+- Set minimum password length to 15 or more characters in macOS
+- Set 'Enforce password history' to '24 or more password(s)' in macOS
+- Set 'Maximum password age' to '90 or fewer days, but not 0' in macOS
+- Set account lockout threshold to 5 or lower in macOS
+- Turn on Firewall on macOS
+- Enable Gatekeeper
+- Enable System Integrity Protection (SIP)
+- Enable FileVault Disk Encryption
+- Set screen to lock when screensaver starts in macOS
+- Ensure screensaver is set to start in 20 minutes or less in macOS
+- Secure Home Folders
+- Turn on Microsoft Defender Antivirus real-time protection for macOS
+- Turn on Microsoft Defender Antivirus PUA protection in block mode for macOS
+- Enable Microsoft Defender Antivirus cloud-delivered protection for macOS
+- Update Microsoft Defender Antivirus definitions for macOS
+- Fix Microsoft Defender for Endpoint sensor data collection for Linux
+- Fix Microsoft Defender for Endpoint impaired communications for Linux
+- Unrestricted Access Accounts
+- Turn on Microsoft Defender Antivirus real-time protection for Linux
+- Turn on Microsoft Defender Antivirus PUA protection in block mode for Linux
+- Enable Microsoft Defender Antivirus cloud-delivered protection for Linux
+- Update Microsoft Defender Antivirus definitions for Linux
 
 ## June 2021
 
-### Remove improvement action related to Microsoft Cloud App Security
+### Removed improvement action related to Microsoft Cloud App Security
 
 - Use Cloud App Security to detect anomalous behavior.
 
@@ -41,7 +78,7 @@ Microsoft Secure Score can be found at https://security.microsoft.com/securescor
 
 ### Compatibility with Graph API
 
-Microsoft Secure Score recommendations delivered via Graph API will look and be weighted the same as the recommendations you currently see in the Microsoft 365 security center.
+Microsoft Secure Score recommendations delivered via Graph API will look and be weighted the same as the recommendations you currently see in the Microsoft 365 Defender portal.
 
 ## January 2021
 
@@ -74,7 +111,7 @@ The ability to create ServiceNow tickets through Secure Score by going to **Shar
 
 ## October 2020
 
-### Remove improvement action related to Microsoft Defender for Endpoint
+### Removed improvement action related to Microsoft Defender for Endpoint
 
 - Set Microsoft Defender SmartScreen Windows Store app web content checking to warn
 

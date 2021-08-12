@@ -20,7 +20,7 @@ description: "Microsoft privacy management offers solutions for evaluating perso
 
 # Microsoft privacy management (preview)
 
-## What is privacy management
+## What is privacy management?
 
 As your company’s cloud data grows in size and complexity, so does your need to understand and safeguard the personal data held in your environment. Privacy management in Microsoft 365 empowers your employees to make smart data handling decisions and address critical privacy risks by providing efficient ways to find and manage personal data, automate privacy operations, and fulfill subject rights requests. These solutions will enable you to build a privacy resilient workplace and handle issues at scale.
 
