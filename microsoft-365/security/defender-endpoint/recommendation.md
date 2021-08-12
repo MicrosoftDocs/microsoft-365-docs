@@ -39,7 +39,7 @@ Method |Return Type |Description
 :---|:---|:---
 [List all recommendations](get-all-recommendations.md) | Recommendation collection | Retrieves a list of all security recommendations affecting the organization
 [Get recommendation by Id](get-recommendation-by-id.md) | Recommendation | Retrieves a security recommendation by its ID
-[Get recommendation software](get-recommendation-software.md)| [Software](software.md) | Retrieves a security recommendation related to a specific software
+[Get recommendation software](list-recommendation-software.md)| [Software](software.md) | Retrieves a security recommendation related to a specific software
 [Get recommendation devices](get-recommendation-machines.md)|MachineRef collection | Retrieves a list of devices associated with the security recommendation
 [Get recommendation vulnerabilities](get-recommendation-vulnerabilities.md) | [Vulnerability](vulnerability.md) collection | Retrieves a list of vulnerabilities associated with the security recommendation
 
