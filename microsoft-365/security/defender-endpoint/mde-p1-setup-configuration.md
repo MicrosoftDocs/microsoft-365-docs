@@ -144,7 +144,40 @@ Attack surface reduction is all about reducing the places and ways your organiza
 
 You get ransomware mitigation through [controlled folder access](controlled-folders.md#what-is-controlled-folder-access), which allows only trusted apps to access protected folders on your endpoints. 
 
-To configure controlled folder access, follow these steps:
+To configure controlled folder access, use one of the following methods:
+
+- Microsoft Endpoint Manager
+- The Windows Security app on a Windows device
+
+#### Use Microsoft Endpoint Manager to configure controlled folder access
+
+1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and sign in. 
+
+2. Select **Endpoint Security**, and then select **Attack Surface Reduction**.
+
+3. Choose **+ Create Policy**. 
+
+4. For **Platform**, select **Windows 10 and later**, and for **Profile**, select **Attack surface reduction rules**. Then choose **Create**. 
+
+5. On the **Basics** tab, Name the policy and add a description. Select **Next**. 
+
+6. On the **Configuration settings** tab, in the **Attack Surface Reduction Rules** section, scroll down to the bottom. In the **Enable folder protection** drop-down, select **Enable**. You can optionally specify these additional settings:
+
+   - Next to **List of additional folders that need to be protected**, select the drop-down menu, and then add folders that need to be protected.
+   - Next to **List of apps that have access to protected folders**, select the drop-down menu, and then add apps that should have access to protected folders.
+   - Next to **Exclude files and paths from attack surface reduction rules**, select the drop-down menu, and then add the files and paths that need to be excluded from attack surface reduction rules.
+
+   Then choose **Next**.
+
+7. On the **Scope tags** tab, if your organization is using scope tags, choose **+ Select scope tags**, and then choose **Next**. (If you are not using scope tags, choose **Next**.) To learn more about scope tags, see [Use role-based access control (RBAC) and scope tags for distributed IT](/mem/intune/fundamentals/scope-tags).
+
+8. On the **Assignments** tab, select **Add all users** and **+ Add all devices**, and then choose **Next**. (You can alternately specify specific groups of users or devices.)
+
+9. On the **Review + create** tab, review the settings for your policy, and then choose **Create**. The policy will be applied to any endpoints that were onboarded to Defender for Endpoint shortly.
+
+#### Use the Windows Security app to configure controlled folder access on a single endpoint
+
+Most organizations manage security settings centrally, such as through Microsoft Endpoint Manager. However, you can configure settings on a single endpoint to see how it works before rolling it out in your organization.
 
 1. Make sure Microsoft Defender Antivirus always-on protection is configured. See [Enable and configure Microsoft Defender Antivirus always-on protection](configure-real-time-protection-microsoft-defender-antivirus.md).
 
