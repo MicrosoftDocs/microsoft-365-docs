@@ -28,31 +28,31 @@ The following image depicts what's included in Defender for Endpoint Plan 1 (pre
 
 :::image type="content" source="../../media/mde-p1/mde-p1-overview-diagram.png" alt-text="Defender for Endpoint Plan 1 preview diagram":::
 
-This article focuses on Defender for Endpoint Plan 1, currently in preview. Use this guide to:
+Use this guide to:
 
-- [Get an overview of what’s included in Defender for Endpoint Plan 1 (preview)](#defender-for-endpoint-plan-1-capabilities)
-- [Compare Defender for Endpoint Plan 1 (preview) to Plan 2](defender-endpoint-plan-1-2.md)
-- [Learn how to set up and configure Defender for Endpoint Plan 1 (preview)](mde-p1-setup-configuration.md)
+- [Get an overview of what’s included in Defender for Endpoint Plan 1](#defender-for-endpoint-plan-1-capabilities)
+- [Compare Defender for Endpoint Plan 1 to Plan 2](defender-endpoint-plan-1-2.md)
+- [Learn how to set up and configure Defender for Endpoint Plan 1](mde-p1-setup-configuration.md)
 - [Get started using the Microsoft 365 Defender portal, where you can view incidents and alerts, manage devices, and use reports about detected threats](mde-plan1-getting-started.md)
 - [Get an overview of maintenance and operations](mde-p1-maintenance-operations.md)
 
 > [!TIP]
-> [Learn more about the differences between Defender for Endpoint Plan 1 (preview) and Plan 2](defender-endpoint-plan-1-2.md).
+> [Learn more about the differences between Defender for Endpoint Plan 1 and Plan 2](defender-endpoint-plan-1-2.md).
 
 ## Defender for Endpoint Plan 1 capabilities
 
 Defender for Endpoint Plan 1 (preview) includes the following capabilities:
 
-- **[Next-generation protection](#next-generation-protection)** that includes industry-leading, robust antimalware and antivirus protection.
-- **[Manual response actions](#manual-response-actions)**, such as sending a file to quarantine, that your security team can take on devices or files when threats are detected.
-- **[Attack surface reduction capabilities](#attack-surface-reduction)** that harden devices, prevent zero-day attacks, and offer granular control over endpoint access and behaviors.
-- **[Centralized configuration and management](#centralized-management)** with the Microsoft 365 Defender portal and integration with Microsoft Endpoint Manager.
-- **[Protection for a variety of platforms](#cross-platform-support)**, including Windows, macOS, iOS, and Android devices.
+- **[Next-generation protection](#next-generation-protection)** that includes industry-leading, robust antimalware and antivirus protection
+- **[Manual response actions](#manual-response-actions)**, such as sending a file to quarantine, that your security team can take on devices or files when threats are detected
+- **[Attack surface reduction capabilities](#attack-surface-reduction)** that harden devices, prevent zero-day attacks, and offer granular control over endpoint access and behaviors
+- **[Centralized configuration and management](#centralized-management)** with the Microsoft 365 Defender portal and integration with Microsoft Endpoint Manager
+- **[Protection for a variety of platforms](#cross-platform-support)**, including Windows, macOS, iOS, and Android devices
 
 The following sections provide more details about these capabilities. 
 
 > [!IMPORTANT]
-> Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. This article includes links to online content that might describe some features that are not included in Defender for Endpoint Plan 1 (preview).
+> Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. This guide includes links to online content that might describe or depict some features that are not included in Defender for Endpoint Plan 1 (preview).
 
 ## Next-generation protection
 
