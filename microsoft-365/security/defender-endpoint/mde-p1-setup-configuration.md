@@ -77,9 +77,9 @@ These tasks are included in the setup phase for Defender for Endpoint. To learn 
 
 ## Assign roles and permissions
 
-In order to access the Microsoft 365 Defender portal, configure settings for Defender for Endpoint, or perform tasks, such as taking response actions on detected threats, appropriate permissions must be assigned. Defender for Endpoint uses [built-in roles within Azure Active Directory](/azure/active-directory/roles/permissions-reference). Microsoft recommends assigning users only the level of permission they need to perform their tasks. 
+In order to access the Microsoft 365 Defender portal, configure settings for Defender for Endpoint, or perform tasks, such as taking response actions on detected threats, appropriate permissions must be assigned. Defender for Endpoint uses [built-in roles within Azure Active Directory](/azure/active-directory/roles/permissions-reference). 
 
-You can assign permissions by using basic permissions management, or by using [role-based access control](rbac.md) (RBAC). 
+Microsoft recommends assigning users only the level of permission they need to perform their tasks. You can assign permissions by using basic permissions management, or by using [role-based access control](rbac.md) (RBAC). 
 
 - With basic permissions management, global admins and security admins have full access, whereas security readers read-only access.
 - With RBAC, you can set more granular permissions through more roles. For example, you can have security readers, security operators, security admins, endpoint administrators, and more.
