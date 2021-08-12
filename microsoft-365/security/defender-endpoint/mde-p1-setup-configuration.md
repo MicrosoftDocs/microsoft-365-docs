@@ -102,6 +102,13 @@ The following table describes key roles to consider for Defender for Endpoint in
 
 1. When you’re ready to onboard your organization’s devices and users to Defender for Endpoint, follow the guidance in [Onboard to the Defender for Endpoint service](onboarding.md).
 
+   |Endpoint Operating System | Onboarding methods|
+   |---|---|
+   | Windows 10 | [Local script (up to 10 devices)](configure-endpoints-script.md) <br>  [Group Policy](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/ Mobile Device Manager](configure-endpoints-mdm.md) <br> [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [VDI scripts](configure-endpoints-vdi.md) <br> [Integration with Azure Defender](configure-server-endpoints.md#integration-with-azure-defender) |
+   | macOS | [Local scripts](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [Mobile Device Management](mac-install-with-other-mdm.md) |
+   | iOS |[App-based](ios-install.md) |
+   | Android | [Microsoft Endpoint Manager](android-intune.md) |
+
 2. Proceed to [configure next-generation protection settings](#configure-next-generation-protection) and [configure your attack surface reduction capabilities](#configure-your-attack-surface-reduction-capabilities). 
 
 3. Edit and fine-tune your settings as needed. See [Manage Microsoft Defender for Endpoint Plan 1 (preview)](mde-p1-maintenance-operations.md).
