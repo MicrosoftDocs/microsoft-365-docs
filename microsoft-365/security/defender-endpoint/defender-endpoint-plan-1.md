@@ -90,10 +90,10 @@ Your organization’s attack surfaces are all the places where you’re vulnerab
 - [Network protection](#web-protection)
 - [Network firewall](#network-firewall)
 
-Currently, Defender for Endpoint Plan 1 (preview) does not include central management and reporting for [attack surface reduction rules](attack-surface-reduction-rules.md). However, attack surface reduction rules are available for certain versions of Windows. To learn more, see [Requirements for attack surface reduction rules](enable-attack-surface-reduction.md#requirements).
+To learn more about attack surface reduction capabilities in Defender for Endpoint, see [Overview of attack surface reduction](overview-attack-surface-reduction.md).
 
-> [!TIP]
-> To learn more about attack surface reduction capabilities in Defender for Endpoint, see [Overview of attack surface reduction](overview-attack-surface-reduction.md).
+> [!NOTE]
+> Currently, Defender for Endpoint Plan 1 (preview) does not include central management and reporting for [attack surface reduction rules](attack-surface-reduction-rules.md). However, attack surface reduction rules are available for certain versions of Windows. To learn more, see [Requirements for attack surface reduction rules](enable-attack-surface-reduction.md#requirements).
 
 ### Ransomware mitigation
 
