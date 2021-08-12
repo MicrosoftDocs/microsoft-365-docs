@@ -561,7 +561,7 @@
 ####### [Recommendation methods and properties](recommendation.md)
 ####### [List all recommendations](get-all-recommendations.md)
 ####### [Get recommendation by ID](get-recommendation-by-id.md)
-####### [Get recommendation by software](get-recommendation-software.md)
+####### [Get recommendation by software](list-recommendation-software.md)
 ####### [List machines by recommendation](get-recommendation-machines.md)
 ####### [List vulnerabilities by recommendation](get-recommendation-vulnerabilities.md)
 
