@@ -37,7 +37,7 @@ The general setup and configuration process for Defender for Endpoint Plan 1 (pr
 7. [Configure your attack surface reduction capabilities](#configure-your-attack-surface-reduction-capabilities)
  
 > [!TIP]
-> As soon as roles and permissions are assigned, your security team can get started using the Microsoft 365 Defender portal. To learn more, see [Getting started with Defender for Endpoint Plan 1](mde-plan1-getting-started.md).
+> As soon as roles and permissions are assigned, your security team can get started using the Microsoft 365 Defender portal. To learn more, see [Getting started](mde-plan1-getting-started.md).
  
 ## Review the requirements
 
@@ -77,12 +77,23 @@ These tasks are included in the setup phase for Defender for Endpoint. To learn 
 
 ## Assign roles and permissions
 
-In order to access the Microsoft 365 Defender portal, configure settings for Defender for Endpoint, or to take response actions, appropriate permissions must be assigned. You can do this using [role-based access control](rbac.md) (RBAC). 
+In order to access the Microsoft 365 Defender portal, configure settings for Defender for Endpoint, or perform tasks, such as taking response actions on detected threats, appropriate permissions must be assigned. Defender for Endpoint uses [built-in roles within Azure Active Directory](/azure/active-directory/roles/permissions-reference). The following table describes roles to consider for your organization: <br/><br/>
 
-> [!TIP]
+| Role | Description |
+|:---|:---|
+| Global administrators (also referred to as global admins) <p> *As a best practice, limit the number of global administrators.* | Global admins can perform all kinds of tasks. The person who signed up your company for Microsoft 365 or for Microsoft Defender for Endpoint Plan 1 is a global administrator by default. <p> Global admins are able to access/change settings across all Microsoft 365 portals, such as: <br/>- The Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)) <br/>- Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) <br/>- Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com))  |
+| Security administrators (also referred to as security admins) | Security admins can perform security operator tasks plus the following tasks: <br/>- Monitor security-related policies <br/>- Manage security threats and alerts <br/>- View reports |
+| Security operator | Security operators can perform security reader tasks plus the following tasks: <br/>- View information about detected threats <br/>- Investigate and respond to detected threats  |
+| Security reader | Security readers can perform the following tasks: <br/>- View security-related policies across Microsoft 365 services <br/>- View security threats and alerts <br/>- View reports  |
+
+You can assign permissions by using basic permissions management, or by using [role-based access control](rbac.md) (RBAC). 
+
+- With basic permissions management, global admins and security admins have full access, whereas security readers only have read access
+- With RBAC, you can set more granular permissions through roles. 
+
+
+> [!NOTE]
 > Microsoft recommends using the concept of [least privileged access](/azure/active-directory/develop/secure-least-privileged-access), so that users and applications are granted only the minimum level of access needed to perform required tasks. 
-
-Defender for Endpoint uses [built-in roles within Azure Active Directory](/azure/active-directory/roles/permissions-reference). Review the different roles that are available, and then choose an appropriate role for each persona in Defender for Endpoint. 
 
 To learn more, see [Prepare for your Defender for Endpoint deployment](prepare-deployment.md).
 
