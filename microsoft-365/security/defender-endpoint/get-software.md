@@ -30,9 +30,6 @@ ms.custom: api
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-Retrieves the organization software inventory.
-
-
 ## API description
 
 Retrieves the organization software inventory.
