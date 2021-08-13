@@ -25,18 +25,32 @@ description: "Understand how to use and manage templates for building assessment
 
 ## Templates overview
 
-A template is a framework of controls for creating an assessment in Compliance Manager. Our comprehensive set of templates can help your organization comply with national, regional, and industry-specific requirements governing the collection and use of data. We refer to templates by the same name as their underlying certification or regulation, such as the EU GDPR template and the ISO/IEC 27701:2019 template. Since Compliance Manger can be used to assess different types of products, each template comes in two versions: one that applies to Microsoft 365, and a universal version that can be tailored to suit your chosen product.
+A template is a framework of controls for creating an assessment in Compliance Manager. Our comprehensive set of templates can help your organization comply with national, regional, and industry-specific requirements governing the collection and use of data.
+
+We refer to templates by the same name as their underlying certification or regulation, such as the EU GDPR template and the ISO/IEC 27701:2019 template. Since Compliance Manger can be used to assess different types of products, each template comes in two versions: one that applies to Microsoft 365, and a universal version that can be tailored to suit your chosen product.
+
+Note that US Government Community (GCC) Moderate, GCC High, and Department of Defense (DoD) customers can currently use the Microsoft 365 template versions, but not universal.
 
 ## Template availability and licensing
 
-The templates available for use are based on your organization’s licensing agreement ([view licensing details](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)). There are two categories of templates: included and premium.
+There are two categories of templates in Compliance Manager: included and premium.
 
-#### Included and premium templates
+1. **Included templates** are granted by your Compliance Manager license and cover key regulations and requirements. To learn more about what templates are available under your licensing agreement, see [licensing details](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager).
+2. **Premium templates** to cover additional needs and scenarios can be obtained by purchasing template licenses.
 
-1. **Included templates** are granted by your license and cover key regulations and requirements.
-2. **Premium templates** can be purchased to expand your library and cover specific needs. Once purchased, you may create as many assessments from a template as needed. [Learn how you can purchase premium templates](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager).
+When you begin creating assessments, Compliance Manager will track how many templates are active so you can monitor your usage. To learn more, see [Active and inactive templates](compliance-manager-templates.md#active-and-inactive-templates).
 
-View the [full list of templates](compliance-manager-templates-list.md).
+View the [full list of templates](compliance-manager-templates-list.md) available in Compliance Manager.
+
+### Purchase premium template licenses
+
+Template licenses can be purchased in the admin center ([learn more about subscriptions, licenses, and billing](/microsoft-365/commerce/)). Select the quantity of licenses you wish to purchase and your payment plan. You may also acquire licenses through your participation in the [Cloud Solution Provider program](https://partner.microsoft.com/membership/cloud-solution-provider) or [volume licensing](https://www.microsoft.com/licensing/licensing-programs/licensing-programs).
+
+Once your purchase has been finalized, the templates should become available in your tenant within 48 hours.
+
+### Try out premium templates
+
+To try out premium templates before you make a purchase, you may also acquire trial versions of the licenses. Trial licenses are good for up to 25 templates for 90 days. Once you obtain your trial license, the templates should become available in your tenant within 48 hours.
 
 #### Active and inactive templates
 

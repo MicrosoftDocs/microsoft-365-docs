@@ -30,7 +30,7 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 ## Collect diagnostic information
 
@@ -161,8 +161,8 @@ In the Defender for Endpoint portal, you'll see two categories of information:
 
 ### Known issues
 
-- You might see "No sensor data, impaired communications" in the machine information page of the Microsoft Defender Security Center portal, even though the product is working as expected. We are working on addressing this issue.
-- Logged on users do not appear in the Microsoft Defender Security Center portal.
+- You might see "No sensor data, impaired communications" in the machine information page of the Microsoft 365 Defender portal, even though the product is working as expected. We are working on addressing this issue.
+- Logged on users do not appear in the Microsoft 365 Defender portal.
 - In SUSE distributions, if the installation of *libatomic1* fails, you should validate that your OS is registered:
 
    ```bash

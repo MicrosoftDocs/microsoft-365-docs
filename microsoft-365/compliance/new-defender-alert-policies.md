@@ -64,8 +64,8 @@ The following table identifies when the new alert policies will begin triggering
 | **Email messages containing malicious file removed after delivery** (new) | Alerts will start triggering on April 11, 2021 |
 | **Emails messages from a campaign were delivered and later removed** (new) | Alerts will start triggering on May 28, 2021|
 | **Malicious emails were delivered and later removed** (new) | Alerts will start triggering on May 28, 2021|
-| **Email messages containing phish URLs removed after delivery** (existing, will be removed)| The alert policy will be removed on May 28, 2021. See the [What you need to do to prepare for these changes](#what-you-need-to-do-to-prepare-for-these-changes) section.|
-| **Email messages containing malware removed after delivery** (existing, will be removed) | The alert policy will be removed on May 28, 2021. See the [What you need to do to prepare for these changes](#what-you-need-to-do-to-prepare-for-these-changes) section. |
+| **Email messages containing phish URLs removed after delivery** (existing, will be removed)| The alert policy was removed in June 2021. See the [What you need to do to prepare for these changes](#what-you-need-to-do-to-prepare-for-these-changes) section.|
+| **Email messages containing malware removed after delivery** (existing, will be removed) | The alert policy was removed in June 2021. See the [What you need to do to prepare for these changes](#what-you-need-to-do-to-prepare-for-these-changes) section. |
 |||
 
 The alert severity changes will be rolled out to all organizations by May 14, 2021.
@@ -94,7 +94,7 @@ The new alerts will begin firing, and triggering the AIR investigations in your 
 
 ## What you need to do to prepare for these changes
 
-How your organization utilizes these alerts will determine what you need to do to prepare. If you have operationalized the alerts and are using or consuming them either through an API, an alert email notification, or in the Office 365 Security & Compliance Center (`https://protection.office.com/viewalerts`) or the Microsoft security center (`https://security.microsoft.com/viewalerts`), you'll need to modify your workflows.
+How your organization utilizes these alerts will determine what you need to do to prepare. If you have operationalized the alerts and are using or consuming them either through an API, an alert email notification, or in the Microsoft 365 compliance center (`https://compliance.mmicrosoft.com/viewalerts`) or the Microsoft security center (`https://security.microsoft.com/viewalerts`), you'll need to modify your workflows.
 
 **If you haven't operationalized these alerts, you can do one of the following:**
 

@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Viva Topics overview"
+title: Microsoft Viva Topics overview
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -13,7 +13,7 @@ ms.collection:
     - enabler-strategic
     - m365initiative-viva-topics
 localization_priority: None
-description: "Overview of Viva Topics."
+description: Learn about how to use Viva Topics in your organization.
 ---
 
 # Microsoft Viva Topics overview 
