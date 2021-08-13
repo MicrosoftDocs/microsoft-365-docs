@@ -78,7 +78,7 @@ Setting up your tenant environment includes tasks, such as:
 - Configuring your proxy settings (only if necessary)
 - Making sure sensors are working correctly and reporting data to Defender for Endpoint 
 
-These tasks are included in the setup phase for Defender for Endpoint. To learn more, see [Set up Defender for Endpoint](production-deployment.md).
+These tasks are included in the setup phase for Defender for Endpoint. See [Set up Defender for Endpoint](production-deployment.md).
 
 ## Assign roles and permissions
 
@@ -171,7 +171,11 @@ We recommend using Microsoft Endpoint Manager to configure controlled folder acc
 
    Then choose **Next**.
 
-7. On the **Scope tags** tab, if your organization is using scope tags, choose **+ Select scope tags**, and then choose **Next**. (If you are not using scope tags, choose **Next**.) To learn more about scope tags, see [Use role-based access control (RBAC) and scope tags for distributed IT](/mem/intune/fundamentals/scope-tags).
+7. On the **Scope tags** tab, if your organization is using scope tags, choose **+ Select scope tags**, and then select the tags you want to use. (This step is optional.)
+
+   Then, choose **Next**. 
+   
+   To learn more about scope tags, see [Use role-based access control (RBAC) and scope tags for distributed IT](/mem/intune/fundamentals/scope-tags).
 
 8. On the **Assignments** tab, select **Add all users** and **+ Add all devices**, and then choose **Next**. (You can alternately specify specific groups of users or devices.)
 
@@ -203,7 +207,11 @@ You can configure Defender for Endpoint to block or allow removable devices and 
 
    Repeat this step for each setting that you want to configure. Then choose **Next**.
 
-7. On the **Scope tags** tab, if your organization is using scope tags, choose **+ Select scope tags**, and then choose **Next**. (If you are not using scope tags, choose **Next**.) To learn more about scope tags, see [Use role-based access control (RBAC) and scope tags for distributed IT](/mem/intune/fundamentals/scope-tags).
+7. On the **Scope tags** tab, if your organization is using scope tags, choose **+ Select scope tags**, and then select the tags you want to use. (This step is optional.)
+
+   Then, choose **Next**. 
+   
+   To learn more about scope tags, see [Use role-based access control (RBAC) and scope tags for distributed IT](/mem/intune/fundamentals/scope-tags).
 
 8. On the **Assignments** tab, select **Add all users** and **+ Add all devices**, and then choose **Next**. (You can alternately specify specific groups of users or devices.)
 
@@ -268,7 +276,11 @@ With web protection, you can protect your organization's devices from web threat
    - To prevent users from bypassing warnings about potentially malicious sites, set **Block malicious site access** to **Yes**.
    - To prevent users from bypassing the warnings and downloading unverified files, set **Block unverified file download** tl **Yes**. 
 
-6. On the **Scope tags** tab, if your organization is using scope tags, choose **+ Select scope tags**, and then choose **Next**. (If you are not using scope tags, choose **Next**.) To learn more about scope tags, see [Use role-based access control (RBAC) and scope tags for distributed IT](/mem/intune/fundamentals/scope-tags).
+6. On the **Scope tags** tab, if your organization is using scope tags, choose **+ Select scope tags**, and then select the tags you want to use. (This step is optional.)
+
+   Then, choose **Next**. 
+   
+   To learn more about scope tags, see [Use role-based access control (RBAC) and scope tags for distributed IT](/mem/intune/fundamentals/scope-tags).
 
 7. On the **Assignments** tab, specify the users and devices to receive the web protection policy, and then choose **Next**.
 
