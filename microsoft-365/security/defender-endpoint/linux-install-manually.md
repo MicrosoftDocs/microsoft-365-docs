@@ -112,18 +112,18 @@ In order to preview new features and provide early feedback, it is recommended t
 
 ### SLES and variants
 
-- Note your distribution and version, and identify the closest entry(by major, then minor) for it under `https://packages.microsoft.com/config/`.
+- Note your distribution and version, and identify the closest entry(by major, then minor) for it under `https://packages.microsoft.com/sles/`.
 
     In the following commands, replace *[distro]* and *[version]* with the information you've identified:
 
     ```bash
-    sudo zypper addrepo -c -f -n microsoft-[channel] https://packages.microsoft.com/config/[distro]/[version]/[channel].repo
+    sudo zypper addrepo -c -f -n microsoft-[channel] https://packages.microsoft.com/[distro]/[version]/[channel].repo
     ```
 
     For example, if you are running SLES 12 and wish to deploy Microsoft Defender for Endpoint on Linux from the *prod* channel:
 
     ```bash
-    sudo zypper addrepo -c -f -n microsoft-prod https://packages.microsoft.com/config/sles/12/prod.repo
+    sudo zypper addrepo -c -f -n microsoft-prod https://packages.microsoft.com/sles/12/prod.repo
     ```
 
 - Install the Microsoft GPG public key:
@@ -146,18 +146,18 @@ In order to preview new features and provide early feedback, it is recommended t
     sudo apt-get install libplist-utils
     ```
 
-- Note your distribution and version, and identify the closest entry (by major, then minor) for it under `https://packages.microsoft.com/config`.
+- Note your distribution and version, and identify the closest entry (by major, then minor) for it under `https://packages.microsoft.com/ubuntu/`.
 
     In the below command, replace *[distro]* and *[version]* with the information you've identified:
 
     ```bash
-    curl -o microsoft.list https://packages.microsoft.com/config/[distro]/[version]/[channel].list
+    curl -o microsoft.list https://packages.microsoft.com/[distro]/[version]/[channel].list
     ```
 
     For example, if you are running Ubuntu 18.04 and wish to deploy MDE for Linux from the *prod* channel:
 
     ```bash
-    curl -o microsoft.list https://packages.microsoft.com/config/ubuntu/18.04/prod.list
+    curl -o microsoft.list https://packages.microsoft.com/ubuntu/18.04/prod.list
     ```
 
 - Install the repository configuration:
