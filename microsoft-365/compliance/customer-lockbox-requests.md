@@ -91,11 +91,11 @@ You can turn on Customer Lockbox controls in the Microsoft 365 admin center. Whe
 
 3. Select a Customer Lockbox request, and then choose **Approve** or **Deny**.
 
-    ![Approve or deny Customer Lockbox requests](../media/CustomerLockbox7.png)
+    ![Approve Customer Lockbox requests](../media/CustomerLockbox7.png)
 
     A confirmation message about the approval of the Customer Lockbox request displays.
 
-    ![Approve or deny Customer Lockbox requests](../media/CustomerLockbox8.png)
+    ![Deny Customer Lockbox requests](../media/CustomerLockbox8.png)
 
 > [!NOTE]
 > Use the Set-AccessToCustomerDataRequest cmdlet to approve, deny, or cancel Microsoft 365 customer lockbox requests that control access to your data by Microsoft support engineers. For more information, see [Set-AccessToCustomerDataRequest](/powershell/module/exchange/set-accesstocustomerdatarequest).
