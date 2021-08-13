@@ -44,22 +44,13 @@ View the [full list of templates](compliance-manager-templates-list.md) availabl
 
 ### Purchase premium template licenses
 
-Template licenses can be purchased in the admin center ([learn more about subscriptions, licenses, and billing](/microsoft-365/commerce/)). Select the quantity of licenses you wish to purchase and your payment plan.
-
-To find template licenses in the admin center, choose the appropriate link for your organization:
-
-- [Commercial license](https://admin.microsoft.com/Adminportal/Home?#/catalog/offer-details/compliance-manager-premium-assessment-add-on/46E9BF2A-3C8D-4A69-A7E7-3DA04687636D)
-- [GCC license](https://admin.microsoft.com/Adminportal/Home?#/catalog/offer-details/compliance-manager-premium-assessment-add-on/3129986D-5F4B-413B-A34B-B706DB5A7669)
-- [GCC High license](https://portal.office365.us/SubscriptionDetails?OfferId=876da39d-2623-41fb-98e0-fa85aaad109e)
-- [DOD license](https://portal.apps.mil/Commerce/Trial.aspx?OfferId=7825C291-1712-4BAC-A334-F336F9ADE746) 
-
-You may also acquire licenses through your participation in the [Cloud Solution Provider program](https://partner.microsoft.com/membership/cloud-solution-provider) or [volume licensing](https://www.microsoft.com/licensing/licensing-programs/licensing-programs).
+Template licenses can be purchased in the admin center ([learn more about subscriptions, licenses, and billing](/microsoft-365/commerce/)). Select the quantity of licenses you wish to purchase and your payment plan. You may also acquire licenses through your participation in the [Cloud Solution Provider program](https://partner.microsoft.com/membership/cloud-solution-provider) or [volume licensing](https://www.microsoft.com/licensing/licensing-programs/licensing-programs).
 
 Once your purchase has been finalized, the templates should become available in your tenant within 48 hours.
 
 ### Try out premium templates
 
-To try out premium templates before you make a purchase, you may also acquire trial versions of the licenses from the links above. Trial licenses are good for up to 25 templates for 90 days. Once you obtain your trial license, the templates should become available in your tenant within 48 hours.
+To try out premium templates before you make a purchase, you may also acquire trial versions of the licenses. Trial licenses are good for up to 25 templates for 90 days. Once you obtain your trial license, the templates should become available in your tenant within 48 hours.
 
 #### Active and inactive templates
 
