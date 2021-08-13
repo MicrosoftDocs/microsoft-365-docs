@@ -17,7 +17,7 @@ ms.custom:
 - AdminSurgePortfolio
 search.appverid:
 - MET150
-description: "Basic Mobility and Security can help you secure and manage mobile devices."
+description: "Basic Mobility and Security can help you secure and manage your organizations mobile devices."
 ---
 
 # Manage devices enrolled in Mobile Device Management in Microsoft 365
