@@ -55,9 +55,9 @@ The following table lists the basic requirements for Defender for Endpoint Plan 
 
 When you plan your deployment, you can choose from several different architectures and deployment methods. Every organization is unique, so you have several options to consider. For example, you can:
 
-- Use Microsoft Intune (included in Microsoft Endpoint Manager) to manage endpoints in a cloud native environment
-- Use Microsoft Intune and ConfigMgr (included in Microsoft Endpoint Manager) to manage endpoints and workloads that span an on-premises and cloud environment
-- Use ConfigMgr (included in Microsoft Endpoint Manager) to protect on-premises endpoints with the cloud-based power of Defender for Endpoint
+- Use [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) (included in Microsoft Endpoint Manager) to manage endpoints in a cloud native environment
+- Use [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) and [Configuration Manager](/mem/configmgr/core/understand/introduction) (included in Microsoft Endpoint Manager) to manage endpoints and workloads that span an on-premises and cloud environment
+- Use [Configuration Manager](/mem/configmgr/core/understand/introduction) (included in Microsoft Endpoint Manager) to protect on-premises endpoints with the cloud-based power of Defender for Endpoint
 - Use local scripts on endpoints to run a pilot or onboard just a few devices
 
 All of these options are outlined in [Plan your Defender for Endpoint deployment](deployment-strategy.md). In addition, you can download the following poster: 
