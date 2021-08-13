@@ -115,12 +115,12 @@ If you don’t plan to use Microsoft Intune for your Cloud PC management, you mu
 1. In the Azure portal, go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=516942" target="_blank">Azure Active Directory Overview</a> page.
 2. In the left nav, under **Manage**, select **Mobility (MDM and MAM)**, then select **Microsoft Intune**.
 3. On the **Configure** page, next to MDM user scope, select **None**, then select **Save**.
-4. In the left nav, under Manage, select Mobility (MDM and MAM), select **Microsoft Intune Enrollment**, then repeat step 3.
+4. In the left nav, under **Manage**, select **Mobility (MDM and MAM)**, select **Microsoft Intune Enrollment**, then repeat step 3.
 5. Go to [Step 5: Reset your Cloud PCs](#step-5-reset-your-cloud-pcs).
 
 #### Option 2: Use Microsoft Graph to turn off automatic Intune enrollment
 
-If you can’t use the Microsoft Azure admin portal to configure **Mobility (MDM and MAM)** as instructed in [Option 1. Use the Azure AD portal to turn off automatic Intune enrollment](#option-1-use-the-azure-ad-portal-to-turn-off-automatic-intune-enrollment), you see a warning that says, "Automatic MDM enrollment is available only for Azure AD Premium subscribers." Use the following steps to turn off MDM policies in your environment
+If you can’t use the Microsoft Azure admin portal to configure **Mobility (MDM and MAM)** as instructed in [Option 1. Use the Azure AD portal to turn off automatic Intune enrollment](#option-1-use-the-azure-ad-portal-to-turn-off-automatic-intune-enrollment), you see a warning that says, "Automatic MDM enrollment is available only for Azure AD Premium subscribers." In this case, you must use Microsoft Graph to turn off MDM policies in your environment.
 
 1. Go to Graph Explorer at <a href="https://go.microsoft.com/fwlink/p/?linkid=2170005">https://developer.microsoft.com/graph/graph-explorer</a>.
 2. Under **Graph Explorer**, select **Sign in to Graph Explorer**, and sign in with your Global admin account.
@@ -130,9 +130,9 @@ If you can’t use the Microsoft Azure admin portal to configure **Mobility (MDM
 6. If you see the **Permissions requested** dialog box, select the **Consent on behalf of your organization** check box, then select **Accept**.
 7. Expand **Policy** again, verify that the **Status** column for **Policy.Read.All** and **Policy.ReadWrite.MobilityManagement** says **Consented**, then close the **Permissions** pane.
 8. From the first drop-down list, select **GET**.
-9. In the text box, enter the following string to retrieve the list of device management policies in your organization, then select **Run query**:
-`https://graph.microsoft.com/beta/policies/mobileDeviceManagementPolicies`
-
+9. In the text box, enter the following string, then select **Run query**:  
+    `https://graph.microsoft.com/beta/policies/mobileDeviceManagementPolicies`  
+    This query retrieves the list of device management policies in your organization.
     The results in the **Response preview** pane should look similar to the following code snippet:
 
     ```
@@ -162,22 +162,25 @@ If you can’t use the Microsoft Azure admin portal to configure **Mobility (MDM
         ]
     }
     ```
-10. If the “appliesTo” value is **none** for all listed policies, go to [Step 5: Reset your Cloud PCs](#step-5-reset-your-cloud-pcs). Otherwise, continue to step 11.
+10. If the `"appliesTo"` value is **none** for all listed policies, go to [Step 5: Reset your Cloud PCs](#step-5-reset-your-cloud-pcs). Otherwise, continue to step 11.
 11. In the first drop-down list, select **PATCH**.
-12. In the text box, enter the following string: `https://graph.microsoft.com/beta/policies/mobileDeviceManagementPolicies/0000000a-0000-0000-c000-000000000000`
+12. In the text box, enter the following string:  
+    `https://graph.microsoft.com/beta/policies/mobileDeviceManagementPolicies/0000000a-0000-0000-c000-000000000000`
 13. In the **Request body** section, enter the following code snippet, then select **Run query**:
     ```
     {
         "appliesTo": "none"
     }
     ```
-14. In text box, enter the following string: `https://graph.microsoft.com/beta/policies/mobileDeviceManagementPolicies/d4ebce55-015a-49b5-a083-c84d1797ae8c`
+14. In text box, enter the following string:  
+    `https://graph.microsoft.com/beta/policies/mobileDeviceManagementPolicies/d4ebce55-015a-49b5-a083-c84d1797ae8c`
 15. In the **Request body** section, leave the code snippet you entered in step 11, then select **Run query**.
-17. In the first drop-down list, select **GET**.
-18. Clear any text in the **Request body** section.
-19.	In the text box, enter the following string, then select **Run query**: `https://graph.microsoft.com/beta/policies/mobileDeviceManagementPolicies`
+16. In the first drop-down list, select **GET**.
+17. Clear any text in the **Request body** section.
+18. In the text box, enter the following string, then select **Run query**:  
+    `https://graph.microsoft.com/beta/policies/mobileDeviceManagementPolicies`
 
-    The results in the **Response view** pane should look similar to the following code snippet.    
+    The results in the **Response view** pane should look similar to the following code snippet.
     ```
     {
         "@odata.context": "https://graph.microsoft.com/beta/$metadata#mobilityManagementPolicies",
@@ -206,8 +209,8 @@ If you can’t use the Microsoft Azure admin portal to configure **Mobility (MDM
     } 
     ```
 
-    The “appliesTo” values for all policies should now display as **none**. This query verifies that the scope has successfully changed for device management policies in your organization.
-20. Go to [Step 5: Reset your Cloud PCs](#step-5-reset-your-cloud-pcs).
+    The `"appliesTo"` values for all policies are now set to **none**. This query verifies that the scope has successfully changed for device management policies in your organization.
+19. Go to [Step 5: Reset your Cloud PCs](#step-5-reset-your-cloud-pcs).
 
 ## Step 5. Reset your Cloud PCs
 
