@@ -158,21 +158,8 @@ Microsoft information protection solutions include a number of integrated capabi
 --> 
 
 
-
-
-
-
-
-
-
 ## Next step
 
-[Step 2: Minimize privileged access and prevent credential escalation](protect-against-ransomware-microsoft-365-phase2.md)
+[![Step 2 for ransomware protection with Microsoft 365](../media/protect-against-ransomware-microsoft-365/protect-against-ransomware-step2.png)](protect-against-ransomware-microsoft-365-step2.md)
 
-<!--
-
-[![The steps to set up ransomware protection with Microsoft 365](../media/protect-against-ransomware-microsoft-365/protect-against-ransomware-step-grid-1.png)](protect-against-ransomware-microsoft-365-phase1.md)
-
---> 
-
-
+[Step 2: Minimize privileged access and prevent credential escalation](protect-against-ransomware-microsoft-365-step2.md)

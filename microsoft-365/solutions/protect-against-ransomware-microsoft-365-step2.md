@@ -71,12 +71,6 @@ Once you discover a compromised high-privilege account, remove it.
 
 ## Next step
 
-[Step 3: Prevent attacker access](protect-against-ransomware-microsoft-365-phase3.md)
+[![Step 3 for ransomware protection with Microsoft 365](../media/protect-against-ransomware-microsoft-365/protect-against-ransomware-step3.png)](protect-against-ransomware-microsoft-365-step3.md)
 
-<!--
-
-[![The steps to set up ransomware protection with Microsoft 365](../media/protect-against-ransomware-microsoft-365/protect-against-ransomware-step-grid-2.png)](protect-against-ransomware-microsoft-365-phase2.md)
-
---> 
-
-
+[Step 3: Prevent attacker access](protect-against-ransomware-microsoft-365-step3.md)

@@ -95,10 +95,4 @@ Ways to detect breaches based on built-in Windows 10 security features:
 - Microsoft Defender for Endpoint
 - Microsoft 365 Defender
 
-<!--
-
-[![The steps to set up ransomware protection with Microsoft 365](../media/protect-against-ransomware-microsoft-365/protect-against-ransomware-step-grid.png)](protect-against-ransomware-microsoft-365-phase3.md)
-
---> 
-
 
