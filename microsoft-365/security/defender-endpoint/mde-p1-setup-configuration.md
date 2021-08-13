@@ -211,6 +211,33 @@ You can configure Defender for Endpoint to block or allow removable devices and 
 
 With network protection, you can help protect your organization against dangerous domains that might host phishing scams, exploits, and other malicious content on the Internet. We recommend using Microsoft Endpoint Manager to turn on network protection.
 
+:::image type="content" source="../../media/mde-p1/mem-endpointprotectionprofile.png" alt-text="Endpoint protection profile in Microsoft Endpoint Manager":::
+
+1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and sign in. 
+
+2. Select **Devices** > **Configuration profiles** > **Create profile**.
+
+3. For **Platform**, select **Windows 10 and later**, and for **Profile type**, select **Templates**. 
+
+   Under **Template name**, select **Endpoint protection**, and then choose **Create**. 
+
+4. On the **Basics** tab, Name the policy and add a description. Select **Next**. 
+
+5. On the **Configuration settings** tab, expand **Microsoft Defender Exploit Guard**, and then expand **Network filtering**.
+
+   Set **Network protection** to **Enable**. (You can alternately choose **Audit** to see how network protection will work in your environment at first.)
+
+   Then choose **Next**.
+
+6. On the **Assignments** tab, select **Add all users** and **+ Add all devices**, and then choose **Next**. (You can alternately specify specific groups of users or devices.)
+
+7. On the **Applicability Rules** tab, set up a rule. The profile you are configuring will be applied only to devices that meet the combined criteria you specify. 
+
+   For example, you might choose to assign the policy to endpoints that are running a certain OS edition only.
+
+   Then choose **Next**. 
+
+8. On the **Review + create** tab, review the settings for your policy, and then choose **Create**. The policy will be applied to any endpoints that were onboarded to Defender for Endpoint shortly.
 
 
 > [!TIP]
