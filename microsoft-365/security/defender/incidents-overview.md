@@ -95,10 +95,6 @@ The additional tabs for an incident are:
 
   All the supported events and suspicious entities in the alerts in the incident.
 
-- Graph (in preview)
-
-  A figure showing the connection of alerts to the impacted assets in your organization.
-
 Here's the relationship between an incident and its data and the tabs of an incident in the Microsoft 365 Defender portal.
 
 :::image type="content" source="../../media/incidents-overview/incidents-security-center.png" alt-text="The relationship of an incident and its data to the tabs of an incident in the Microsoft 365 Defender portal":::
