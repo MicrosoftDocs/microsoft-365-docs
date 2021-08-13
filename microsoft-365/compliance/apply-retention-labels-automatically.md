@@ -122,6 +122,16 @@ You can apply retention labels to content automatically when that content contai
 
 - [A match for trainable classifiers](#auto-apply-labels-to-content-by-using-trainable-classifiers)
 
+All three conditions can automatically apply retention labels to emails as they are sent and received, but not to existing items in the mailbox (data at rest). For items in SharePoint and OneDrive, use the following table to identify when retention labels can be automatically applied to them:
+
+|Condition|New or modified items |Existing items (data at rest)|
+|:-----|:-----|:-----|
+|Sensitive info types - built-in| Yes | Yes |
+|Sensitive info types - custom| Yes | No |
+|Specific keywords or searchable properties| Yes |Yes |
+|Trainable classifiers| Yes | Yes (last six months only) |
+
+
 #### Auto-apply labels to content with specific types of sensitive information
 
 > [!WARNING]
@@ -143,7 +153,7 @@ For more information about these options, see the following guidance from the DL
 
 To consider when using sensitive information types to auto-apply retention labels:
 
-- New and modified items can be auto-labeled.
+- If you use custom sensitive information types, these can't auto-label existing items in SharePoint and OneDrive.
 
 #### Auto-apply labels to content with keywords or searchable properties
 
@@ -156,8 +166,6 @@ For more information about the query syntax that uses Keyword Query Language (KQ
 Query-based auto-apply policies use the same search index as eDiscovery content search to identify content. For more information about the searchable properties that you can use, see [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md).
 
 Some things to consider when using keywords or searchable properties to auto-apply retention labels:
-
-- New, modified, and existing items will be auto-labeled for SharePoint, OneDrive, and Exchange.
 
 - For SharePoint, crawled properties and custom properties aren't supported for these KQL queries and you must use only predefined managed properties for documents. However, you can use mappings at the tenant level with the predefined managed properties that are enabled as refiners by default (RefinableDate00-19, RefinableString00-99, RefinableInt00-49, RefinableDecimals00-09, and RefinableDouble00-09). For more information, see [Overview of crawled and managed properties in SharePoint Server](/SharePoint/technical-reference/crawled-and-managed-properties-overview), and for instructions, see [Create a new managed property](/sharepoint/manage-search-schema#create-a-new-managed-property).
 
@@ -250,7 +258,7 @@ For more information about trainable classifiers, see [Learn about trainable cla
 
 To consider when using trainable classifiers to auto-apply retention labels:
 
-- New and modified items can be auto-labeled, and existing items from the last six months.
+- You can't auto-label SharePoint and OneDrive items that are older than six months.
 
 ## How long it takes for retention labels to take effect
 
