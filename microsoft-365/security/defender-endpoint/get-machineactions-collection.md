@@ -37,7 +37,9 @@ Retrieves a collection of [Machine Actions](machineaction.md).
 
 Supports [OData V4 queries](https://www.odata.org/documentation/).
 
-The OData's `$filter` query is supported on: `status`, `machineId`, `type`, `requestor` and `creationDateTimeUtc` properties.
+The OData's `$filter` query is supported on: `id`, `status`, `machineId`, `type`, `requestor` and `creationDateTimeUtc` properties.
+<br>```$stop``` with max value of 10,000 
+<br>```$skip```
 
 See examples at [OData queries with Microsoft Defender for Endpoint](exposed-apis-odata-samples.md)
 
