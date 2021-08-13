@@ -62,7 +62,6 @@ It’s possible that your organization is configured so that Multi-Factor Authen
 2. In the left nav, under **Manage**, select **Devices**, then select **Device settings**.
 3. If **Require Multi-factor Authentication to register or join devices with Azure AD** is set to **Yes**, select **No**, then select **Save**.
 
-## Step 4. Verify that 
 If you have an Azure AD Premium P1 license that includes conditional access, make sure there are no conditional access policies that require the CloudPCBRT system account to use MFA to join devices. If you don’t know whether you have a subscription that includes Azure AD Premium P1, see [What subscription do I have?](../admin-overview/what-subscription-do-i-have.md) To learn more about conditional access policies, see [What is Conditional Access in Azure Active Directory?](/azure/active-directory/conditional-access/overview) or [Manage users excluded from Conditional Access policies](/azure/active-directory/governance/conditional-access-exclusion). To check for conditional access policies, use the following steps.
 
 1. In the Azure portal, go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2169290" target="_blank">Conditional Access Policies</a> page.
@@ -215,9 +214,10 @@ If you can’t use the Microsoft Azure admin portal to configure **Mobility (MDM
 
 ## Step 5. Reset your Cloud PCs
 
-After you complete the troubleshooting steps in this article, your users must restart their Cloud PC setup. Tell all Cloud PC users who saw the “Setup failed” error to use the following steps to reset their Cloud PCs.
+After you complete the troubleshooting steps in this article, your users must restart their Cloud PC setup. If you just completed [Step 3. Verify that device-based MFA is turned off](#step-3-verify-that-device-based-mfa-is-turned-off), wait at least ten minutes for the changes to take effect before you continue.
 
-1. If you just completed [Step 3. Verify that device-based MFA is turned off](#step-3-verify-that-device-based-mfa-is-turned-off), wait at least ten minutes for the changes to take effect before you do the rest of the steps in this procedure.
-2. Browse to [https://windows365.microsoft.com](https://windows365.microsoft.com).
-3. On the Windows 365 home page, select the gear icon for any Cloud PC that has the “Setup failed” status, then select **Reset**. This action restarts the provisioning process.
-4. After the reset, if the “Setup failed” error still displays, and you skipped [Step 4. Make sure MDM authority configuration is set up correctly](#step-4-make-sure-mdm-authority-configuration-is-set-up-correctly), complete that step, then reset the CloudPC again. Otherwise, in the left nav, select **New support request** to open a support ticket.
+Tell all Cloud PC users who saw the “Setup failed” error to use the following steps to reset their Cloud PCs.
+
+1. Browse to [https://windows365.microsoft.com](https://windows365.microsoft.com).
+2. On the Windows 365 home page, select the gear icon for any Cloud PC that has the “Setup failed” status, then select **Reset**. This action restarts the provisioning process.
+3. After the reset, if the “Setup failed” error still displays, and you skipped [Step 4. Make sure MDM authority configuration is set up correctly](#step-4-make-sure-mdm-authority-configuration-is-set-up-correctly), complete that step, then reset the CloudPC again. Otherwise, in the left nav, select **New support request** to open a support ticket.
