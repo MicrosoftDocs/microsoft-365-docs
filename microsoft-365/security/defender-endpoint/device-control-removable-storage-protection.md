@@ -8,8 +8,8 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: v-smandalika
-author: v-smandalika
+ms.author: deniseb
+author: denisebmsft
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -108,6 +108,6 @@ Microsoft Defender for Endpoint Device Control Removable Storage Protection allo
 |Serial NumberId|Removable storage Access Control|Windows Mac|For example, <SerialNumberId>002324B534BCB431B000058A</SerialNumberId>|
 |
 
-## Related topic
+## See also
 
 - [Microsoft Defender for Endpoint Device Control Removable Storage Access Control](device-control-removable-storage-access-control.md)
