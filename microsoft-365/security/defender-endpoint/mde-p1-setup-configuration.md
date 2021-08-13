@@ -209,9 +209,12 @@ You can configure Defender for Endpoint to block or allow removable devices and 
 
 ### Network protection
 
-With network protection, you can help protect your organization against dangerous domains that might host phishing scams, exploits, and other malicious content on the Internet.
+With network protection, you can help protect your organization against dangerous domains that might host phishing scams, exploits, and other malicious content on the Internet. We recommend using Microsoft Endpoint Manager to turn on network protection.
 
-You can use PowerShell, Microsoft Endpoint Manager, or Group Policy to enable network protection. To learn more, see [Turn on network protection](enable-network-protection.md).
+
+
+> [!TIP]
+> You can use other methods, such as Windows PowerShell or Group Policy, to enable network protection. To learn more, see [Turn on network protection](enable-network-protection.md).
 
 ### Web protection
 
