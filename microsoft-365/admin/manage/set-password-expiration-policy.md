@@ -54,7 +54,10 @@ Follow the steps below if you want to set user passwords to expire after a speci
   
 1. Type how often passwords should expire. Choose a number of days from 14 to 730.
   
-1. In the second box type when users are notified that their password will expire, and then select **Save**. Choose a number of days from 1 to 30.
+6. In the second box type when users are notified that their password will expire, and then select **Save**. Choose a number of days from 1 to 30.
+
+> [!NOTE]
+> Password expiration notifications are no longer supported in the Office 365 portal or any Office apps except Outlook.
   
 ## Important things you need to know about the password expiration feature
   
