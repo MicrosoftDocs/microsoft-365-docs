@@ -67,5 +67,5 @@ configScoreImpact | Double | Microsoft Secure Score for Devices impact
 exposureImpact | Double | Exposure score impact
 totalMachineCount | Long | Number of installed devices
 exposedMachinesCount | Long | Number of installed devices that are exposed to vulnerabilities
-nonProductivityImpactedAssets | Long | Number of devices which are not affected  
+nonProductivityImpactedAssets | Long | Number of devices that are not affected  
 relatedComponent | String |  Related software component
