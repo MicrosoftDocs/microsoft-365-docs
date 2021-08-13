@@ -47,7 +47,7 @@ Components of Microsoft 365 Defender can display violations of rules that have b
 
 Device risk directly influences what resources will be accessible by the user of that device. The denial of access to resources based on certain criteria is the main theme of Zero Trust and Microsoft 365 Defender provides information needed to determine the trust level criteria. For example, Microsoft 365 Defender can provide the software version level of a device through the Threat and Vulnerability Management page while Conditional Access policies restrict devices that have outdated or vulnerable versions.
 
-Automation is a crucial part of implementing and maintaining a Zero Trust environment while also reducing the number of alerts that would potentially lead to incident response (IR) events. Components of Microsoft 365 Defender can be automated such as [remediation actions](m365d-autoir.md) (known as investigations for an incident in the Microsoft 365 security center), notification actions, and even the creation of support tickets such as in [ServiceNow](https://microsoft.service-now.com/sp/).
+Automation is a crucial part of implementing and maintaining a Zero Trust environment while also reducing the number of alerts that would potentially lead to incident response (IR) events. Components of Microsoft 365 Defender can be automated such as [remediation actions](m365d-autoir.md) (known as investigations for an incident in the Microsoft 365 Defender portal), notification actions, and even the creation of support tickets such as in [ServiceNow](https://microsoft.service-now.com/sp/).
 
 ## Step 2. Determine your organization’s security posture
 
@@ -65,7 +65,7 @@ To check your software patching progress, visit the [Threat and Vulnerability Ma
  
 ## 4. Understand emerging threats
 
-Use [threat analytics](threat-analytics.md) in the Microsoft 365 security center to keep up-to-date with the current security threat landscape. Expert Microsoft security researchers create reports that describe the latest cyber-threats in detail so you can understand how they might affect your Microsoft 365 subscription, devices, and users. These reports can include:
+Use [threat analytics](threat-analytics.md) in the Microsoft 365 Defender portal to keep up-to-date with the current security threat landscape. Expert Microsoft security researchers create reports that describe the latest cyber-threats in detail so you can understand how they might affect your Microsoft 365 subscription, devices, and users. These reports can include:
 
 - Active threat actors and their campaigns
 - Popular and new attack techniques
@@ -77,7 +77,7 @@ Threat analytics also looks at your configuration and alerts to determine how at
 
 You can implement the recommendations of an emerging threat to strengthen your security posture and minimize your attack surface area.
 
-Make time in your schedule to regularly check the [Threat Analytics](threat-analytics.md) section of the Microsoft 365 security center.
+Make time in your schedule to regularly check the [Threat Analytics](threat-analytics.md) section of the Microsoft 365 Defender portal.
 
 ## Next step
 

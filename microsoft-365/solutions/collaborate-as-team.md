@@ -173,6 +173,9 @@ To invite guests to a team
 4. Type the guest's full name and click the check mark.
 5. Click **Add**, and then click **Close**.
 
+> [!NOTE]
+> Guests with a work or school account can only be invited by using their User Principal Name (UPN) (for example, adele@contoso.com). Inviting guests by using EAS ID, or other email formats, is not supported.
+
 ## See also
 
 [Best practices for sharing files and folders with unauthenticated users](best-practices-anonymous-sharing.md)

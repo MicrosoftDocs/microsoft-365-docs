@@ -987,6 +987,10 @@
       href: privacy-management.md
     - name: Get started with privacy management
       href: privacy-management-setup.md
+    - name: Set user permissions in privacy management
+      href: privacy-management-permissions.md
+    - name: Manage privacy management settings
+      href: privacy-management-settings.md
     - name: Find and visualize personal data in privacy management
       href: privacy-management-data-profile.md
     - name: Create and manage policies in privacy management
