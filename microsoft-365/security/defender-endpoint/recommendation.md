@@ -53,8 +53,8 @@ recommendationName | String | Recommendation name
 Weaknesses | Long | Number of discovered vulnerabilities
 Vendor | String | Related vendor name
 recommendedVersion | String | Recommended version
-recommendedProgram | String | Recommended Program
-recommendedVendor | String | Recommended Vendor
+recommendedProgram | String | Recommended program
+recommendedVendor | String | Recommended vendor
 recommendationCategory | String | Recommendation category. Possible values are: "Accounts", "Application", "Network", "OS", "SecurityControls"
 subCategory | String | Recommendation sub-category
 severityScore | Double | Potential impact of the configuration to the organization's Microsoft Secure Score for Devices (1-10)
