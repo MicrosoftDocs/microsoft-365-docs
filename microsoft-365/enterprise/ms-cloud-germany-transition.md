@@ -115,10 +115,9 @@ Review the following Frequently Asked Questions section.
 
 ### Is migration required?
 
-Microsoft offered Office 365 tenant migration from Microsoft Cloud Deutschland to Office 365 services in the new German datacenter regions at no additional charge. 
-All eligible Microsoft Cloud Germany (Microsoft Cloud Deutschland) customers have now been migrated.  No further customers will be migrated through the automated process.  Any remaining Microsoft Cloud Germany subscriptions and tenants will be deactivated and deprovisioned in September 2021 as part of service closure activities.
-We will continue to provide the necessary security updates to the Microsoft Cloud Deutschland region until service closure. 
+Microsoft offered Office 365 tenant migration from Microsoft Cloud Deutschland to Office 365 services in the new German datacenter regions at no additional charge. All eligible Microsoft Cloud Germany (Microsoft Cloud Deutschland) customers have now been migrated. No further customers will be migrated through the automated process. Any remaining Microsoft Cloud Germany subscriptions and tenants will be deactivated and deprovisioned in September 2021 as part of service closure activities.
 
+We will continue to provide the necessary security updates to the Microsoft Cloud Deutschland region until service closure. 
 
 Office 365 services in the new German datacenter regions:
 
@@ -202,7 +201,7 @@ If you have Azure with Office 365, Dynamics 365, or Power BI, you must follow th
 
 **Office 365, Dynamics 365, and Power BI**
 
-All eligible Microsoft Cloud Germany (Microsoft Cloud Deutschland) customers have now been migrated.  No further customers will be migrated through the automated process.  Any remaining Microsoft Cloud Germany subscriptions and tenants will be deactivated and deprovisioned in September 2021 as part of service closure activities.
+All eligible Microsoft Cloud Germany (Microsoft Cloud Deutschland) customers have now been migrated. No further customers will be migrated through the automated process. Any remaining Microsoft Cloud Germany subscriptions and tenants will be deactivated and deprovisioned in September 2021 as part of service closure activities.
 
 ### Will the price change for the Office 365 services that I use?
 
