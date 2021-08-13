@@ -239,7 +239,6 @@ With network protection, you can help protect your organization against dangerou
 
 8. On the **Review + create** tab, review the settings for your policy, and then choose **Create**. The policy will be applied to any endpoints that were onboarded to Defender for Endpoint shortly.
 
-
 > [!TIP]
 > You can use other methods, such as Windows PowerShell or Group Policy, to enable network protection. To learn more, see [Turn on network protection](enable-network-protection.md).
 
