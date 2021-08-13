@@ -34,7 +34,7 @@ ms.prod: m365-security
 
 In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, quarantine holds potentially dangerous or unwanted messages. For more information, see [Quarantine in EOP](quarantine-email-messages.md).
 
-As a recipient of a quarantined message, what you can do to the message as a non-admin user is described in the following table:
+As a recipient of a quarantined message, what you can do to the message as an ordinary use (not an admin) is described in the following table:
 
 <br>
 
@@ -51,11 +51,11 @@ You view and manage your quarantined messages in the Microsoft 365 Defender port
 
 ## What do you need to know before you begin?
 
-- To open the Microsoft 365 Defender portal, go to <https://security.microsoft.com>. To open the Quarantine page directly, go to <https://security.microsoft.com/quarantine>.
+- To open the Microsoft 365 Defender portal, go to <https://security.microsoft.com>. To open the **Quarantine** page directly, use <https://security.microsoft.com/quarantine>.
 
 - Admins can configure how long messages are kept in quarantine before they're permanently deleted in anti-spam policies. Messages that have expired from quarantine are unrecoverable. For more information, see [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md).
 
-- Admins can also [enable end-user spam notifications](configure-your-spam-filter-policies.md#configure-end-user-spam-notifications) in anti-spam policies. Users can release quarantined spam messages directly from these notifications. Users can review quarantined phishing messages (not high confidence phishing messages) directly from these notifications. For more information, see [End-user spam notifications in EOP](use-spam-notifications-to-release-and-report-quarantined-messages.md).
+- Admins can also [enable end-user spam notifications](configure-your-spam-filter-policies.md#configure-end-user-spam-notifications) in anti-spam policies. Original message recipients can *release* quarantined spam messages directly from these notifications. Original message recipients can *review* quarantined phishing messages (not high confidence phishing messages) directly from these notifications. For more information, see [End-user spam notifications in EOP](use-spam-notifications-to-release-and-report-quarantined-messages.md).
 
 - Messages that were quarantined for high confidence phishing, malware, or by mail flow rules (also known as transport rules) are only available to admins, and aren't visible to users. For more information, see [Manage quarantined messages and files as an admin in EOP](manage-quarantined-messages-and-files.md).
 
@@ -64,25 +64,26 @@ You view and manage your quarantined messages in the Microsoft 365 Defender port
 ## View your quarantined messages
 
 1. In the Microsoft 365 Defender portal, go to **Email & collaboration** \> **Review** \> **Quarantine**.
+2. On the **Quarantine** page, you can sort the results by clicking on an available column header. Click **Customize columns**  to change the columns that are shown. The default values are marked with an asterisk (<sup>\*</sup>):
 
-2. You can sort the results by clicking on an available column header. Click **Modify columns** to show a maximum of seven columns. The default values are marked with an asterisk (<sup>\*</sup>):
-
-   - **Received**<sup>\*</sup>
-   - **Sender**<sup>\*</sup>
+   - **Time received**<sup>\*</sup>
    - **Subject**<sup>\*</sup>
+   - **Sender**<sup>\*</sup>
    - **Quarantine reason**<sup>\*</sup>
-   - **Released?**<sup>\*</sup>
+   - **Release status**<sup>\*</sup>
    - **Policy type**<sup>\*</sup>
    - **Expires**<sup>\*</sup>
    - **Recipient**
    - **Message ID**
    - **Policy name**
-   - **Size**
-   - **Direction**
+   - **Message size**
+   - **Mail direction**
 
-   When you're finished, click **Save**, or click **Set to default**.
+   When you're finished, click **Apply**.
 
 3. To filter the results, click **Filter**. The available filters are:
+
+   - Message
 
    - **Expires time**: Filter messages by when they will expire from quarantine:
      - **Today**
@@ -106,23 +107,47 @@ You view and manage your quarantined messages in the Microsoft 365 Defender port
 
    To clear the filter, click **Clear**. To hide the filter flyout, click **Filter** again.
 
-4. Use **Sort results by** (the **Message ID** button by default) and a corresponding value to find specific messages. Wildcards aren't supported. You can search by the following values:
+4. To filter the results, click **Filter**. The following filters are available in the **Filters** flyout that appears:
+   - **Message ID**: The globally unique identifier of the message.
+   - **Sender address**
+   - **Recipient address**
+   - **Subject**
+   - **Time received**: Enter a **Start time** and **End time** (date).
+   - **Expires**: Filter messages by when they will expire from quarantine:
+     - **Today**
+     - **Next 2 days**
+     - **Next 7 days**
+     - **Custom**: Enter a **Start date** and **End date**.
+   - **Quarantine reason**:
+     - **Bulk**
+     - **Spam**
+     - **Phishing**: The spam filter verdict was **Phishing** or anti-phishing protection quarantined the message ([spoof settings](set-up-anti-phishing-policies.md#spoof-settings) or [impersonation protection](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)).
+     - **High confidence phishing**
+   - **Release status**: Any of the following values:
+     - **Needs review**
+     - **Approved**
+     - **Denied**
+     - **Release requested**
+     - **Released**
+   - **Policy Type**: Filter messages by policy type:
+     - **Anti-malware policy**
+     - **Safe Attachments policy**
+     - **Anti-phishing policy**
+     - **Anti-spam policy**
+     - **Transport rule** (mail flow rule)
 
-   - **Message ID**: The globally unique identifier of the message. If you select a message in the list, the **Message ID** value appears in the **Details** flyout pane that appears. Admins can use [message trace](message-trace-scc.md) to find messages and their corresponding Message ID values.
-   - **Sender email address**: A single sender's email address.
-   - **Recipient email address**: A single recipient's email address.
-   - **Subject**: Use the entire subject of the message. The search is not case-sensitive.
-   - **Policy name**: Use the entire policy name. The search is not case-sensitive.
+   When you're finished, click **Apply**. To clear the filters, click ![Clear filters icon](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters**.
 
-   After you've entered the search criteria, click ![Refresh button](../../media/scc-quarantine-refresh.png) **Refresh** to filter the results.
+5. Use **Search** box and a corresponding value to find specific messages. Wildcards aren't supported. You can search by the following values:
+   - Message ID
+   - Sender email address
+   - Recipient email address
+   - Subject. Use the entire subject of the message. The search is not case-sensitive.
+   - Policy name. Use the entire policy name. The search is not case-sensitive.
+
+   After you've entered the search criteria, press ENTER to filter the results.
 
 After you find a specific quarantined message, select the message to view details about it, and to take action on it (for example, view, release, download, or delete the message).
-
-### Export message results
-
-1. Select the messages you're interested in, and click **Export results**.
-2. Click **Yes** in the confirmation message that warns you to keep the browser window open.
-3. When your export is ready, you can name and choose the download location for the .csv file.
 
 ### View quarantined message details
 

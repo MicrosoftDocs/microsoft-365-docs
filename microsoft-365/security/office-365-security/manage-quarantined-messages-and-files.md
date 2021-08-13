@@ -73,8 +73,8 @@ You view and manage quarantined messages in the Microsoft 365 Defender portal or
 
 3. You can sort the results by clicking on an available column header. Click **Customize columns**  to change the columns that are shown. The default values are marked with an asterisk (<sup>\*</sup>):
 
-   - **Subject**<sup>\*</sup>
    - **Time received**<sup>\*</sup>
+   - **Subject**<sup>\*</sup>
    - **Sender**<sup>\*</sup>
    - **Quarantine reason**<sup>\*</sup>
    - **Release status**<sup>\*</sup>
@@ -82,6 +82,7 @@ You view and manage quarantined messages in the Microsoft 365 Defender portal or
    - **Expires**<sup>\*</sup>
    - **Recipient**
    - **Message ID**
+   - **Policy name**
    - **Message size**
    - **Mail direction**
    - **Recipient tag**
@@ -106,9 +107,9 @@ You view and manage quarantined messages in the Microsoft 365 Defender portal or
    - **Quarantine reason**:
      - **Transport rule** (mail flow rule)
      - **Bulk**
-     - **Phish**: The spam filter verdict was **Phishing** or anti-phishing protection quarantined the message ([spoof settings](set-up-anti-phishing-policies.md#spoof-settings) or [impersonation protection](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)).
+     - **Spam**
      - **Malware**
-     - **Phishing**
+     - **Phishing**: The spam filter verdict was **Phishing** or anti-phishing protection quarantined the message ([spoof settings](set-up-anti-phishing-policies.md#spoof-settings) or [impersonation protection](set-up-anti-phishing-policies.
      - **High confidence phishing**
    - **Recipient**: **All users** or **Only me**. End users can only manage quarantined messages sent to them.
    - **Release status**: Any of the following values:
@@ -124,7 +125,7 @@ You view and manage quarantined messages in the Microsoft 365 Defender portal or
      - **Anti-spam policy**
      - **Transport rule** (mail flow rule)
 
-   When you're finished, click **Apply**. To clear the filters, click ![Release email icon](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters**.
+   When you're finished, click **Apply**. To clear the filters, click ![Clear filters icon](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters**.
 
 5. Use **Search** box and a corresponding value to find specific messages. Wildcards aren't supported. You can search by the following values:
    - Message ID
@@ -149,6 +150,7 @@ When you select quarantined message from the list, the following information is 
 - **Subject**
 - **Quarantine reason**: Shows if a message has been identified as **Spam**, **Bulk**, **Phish**, matched a mail flow rule (**Transport rule**), or was identified as containing **Malware**.
 - **Policy type**
+- **Policy name**
 - **Recipient count**
 - **Recipients**: If the message contains multiple recipients, you need to click **Preview message** or **View message header** to see the complete list of recipients.
 - **Recipient tag**: For more information, see [User tags in Microsoft Defender for Office 365](user-tags.md).
