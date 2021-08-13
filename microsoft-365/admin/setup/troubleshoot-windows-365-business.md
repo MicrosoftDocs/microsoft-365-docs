@@ -29,7 +29,7 @@ ms.date: 08/13/2021
 If your users get the “Setup failed” error after you assign them a Cloud PC, use the steps in this article to resolve the issue.
 
 > [!IMPORTANT]
-> You must be a Global admin to do most of the tasks described in this article. If other admin roles can be used for a specific procedure, they are noted before the procedure. If you don’t have permission to log in to or access parts of the Azure portal, contact your IT admin. For more information about Azure rules, see [Azure AD built-in roles](https://docs.microsoft.com/en-us/azure/active-directory/roles/permissions-reference). To learn more about the Azure portal, see [Azure portal overview](https://docs.microsoft.com/en-us/azure/azure-portal/azure-portal-overview).
+> You must be a Global admin to do most of the tasks described in this article. If other admin roles can be used for a specific procedure, they are noted before the procedure. If you don’t have permission to log in to or access parts of the Azure portal, contact your IT admin. For more information about Azure rules, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference). To learn more about the Azure portal, see [Azure portal overview](/azure/azure-portal/azure-portal-overview).
 
 ## Step 1. Verify Azure AD device settings
 
@@ -61,7 +61,7 @@ It’s possible that your organization is configured so that Multi-Factor Authen
 2. In the left nav, under **Manage**, select **Devices**, then select **Device settings**.
 3. If **Require Multi-factor Authentication to register or join devices with Azure AD** is set to **Yes**, select **No**, then select **Save**.
 
-If you have an Azure AD Premium P1 license that includes conditional access, make sure there are no conditional access policies that require the CloudPCBRT system account to use MFA to join devices. If you don’t know whether you have a subscription that includes Azure AD Premium P1, see [What subscription do I have?](https://docs.microsoft.com/en-us/microsoft-365/admin/admin-overview/what-subscription-do-i-have?view=o365-worldwide) To learn more about conditional access policies, see [What is Conditional Access in Azure Active Directory?](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/overview) or [Manage users excluded from Conditional Access policies](https://docs.microsoft.com/en-us/azure/active-directory/governance/conditional-access-exclusion). To check for conditional access policies, use the following steps.
+If you have an Azure AD Premium P1 license that includes conditional access, make sure there are no conditional access policies that require the CloudPCBRT system account to use MFA to join devices. If you don’t know whether you have a subscription that includes Azure AD Premium P1, see [What subscription do I have?](../admin-overview/what-subscription-do-i-have.md) To learn more about conditional access policies, see [What is Conditional Access in Azure Active Directory?](/azure/active-directory/conditional-access/overview) or [Manage users excluded from Conditional Access policies](/azure/active-directory/governance/conditional-access-exclusion). To check for conditional access policies, use the following steps.
 
 1. In the Azure portal, go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2169290" target="_blank">Conditional Access Policies</a> page.
 2. If there aren’t any policies listed, continue to [Step 4. Make sure the MDM authority configuration is set up correctly](#step-4-make-sure-mdm-authority-configuration-is-set-up-correctly).
@@ -107,14 +107,15 @@ You also must assign an Intune license to the CloudPCBPRT system account and to 
 If you don’t plan to use Microsoft Intune for your Cloud PC management, you must turn off automatic MDM enrollment.
 
 > [!IMPORTANT]
-> If you’re not the MDM administrator, don’t use either of the following procedures without first consulting with your IT admin. Only follow these procedures if Cloud PCs aren’t being provisioned. Any configuration changes could impact your management environment. If you need help, [contact Intune support](https://docs.microsoft.com/en-us/mem/get-support).
+> If you’re not the MDM administrator, don’t use either of the following procedures without first consulting with your IT admin. Only follow these procedures if Cloud PCs aren’t being provisioned. Any configuration changes could impact your management environment. If you need help, [contact Intune support](/mem/get-support).
 
 #### Option 1. Use the Azure AD portal to turn off automatic Intune enrollment
 
 1. In the Azure portal, go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=516942" target="_blank">Azure Active Directory Overview</a> page.
 2. In the left nav, under **Manage**, select **Mobility (MDM and MAM)**, then select **Microsoft Intune**.
 3. On the **Configure** page, next to MDM user scope, select **None**, then select **Save**.
-4. Go to [Step 5: Reset your Cloud PCs](#step-5-reset-your-cloud-pcs).
+4. In the left nav, under Manage, select Mobility (MDM and MAM), select **Microsoft Intune Enrollment**, then repeat step 3.
+5. Go to [Step 5: Reset your Cloud PCs](#step-5-reset-your-cloud-pcs).
 
 #### Option 2: Use Microsoft Graph to turn off automatic Intune enrollment
 
