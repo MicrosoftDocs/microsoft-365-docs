@@ -267,4 +267,6 @@ To discover how many export jobs are running concurrently follow these steps:
    $exportJobsRunning | Format-Table Name, JobStartTime, JobEndTime, Status | More;
    ```
 
-4. If there are 10 or more exports, then you have reached the maximum export jobs that are allowed to be ran concurrently. Wait for active jobs to finish before starting a new export job.
+4. If there are 10 or more exports running, then you have reached the maximum export jobs that are allowed to be ran concurrently.
+
+5. Wait for existing export jobs to finish or remove exports that are no longer needed using [Remove-ComplianceSearchAction](/powershell/module/exchange/remove-compliancesearchaction) cmdlet.
