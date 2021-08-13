@@ -42,7 +42,7 @@ Here are the ways you can manage your incidents:
 
 - [Edit the incident name](#edit-the-incident-name)
 - [Add incident tags](#add-incident-tags)
-- [Assign the incident to yourself](#assign-incidents)
+- [Assign the incident to yourself or a user account](#assign-incidents)
 - [Resolve them](#resolve-an-incident)
 - [Set its classification and determination](#set-the-classification-and-determination)
 - [Add comments](#add-comments)
@@ -75,7 +75,7 @@ When you start typing, you have the option to select from a list of selected tag
 
 ## Assign incidents
 
-To assign an incident, select **Assign to me**. Doing so assigns ownership of the incident and all the alerts associated with it to your user account.
+If an incident has not yet been assigned, you can select **Assign to** and specify the user account (Preview). Doing so assigns ownership of the incident and all the alerts associated with it.
 
 You can get a list of incidents assigned to you by filtering the incident queue. 
 

@@ -172,6 +172,10 @@ Microsoft 365 Defender automatically investigates all the incidents' supported e
 
 Each of the analyzed entities is marked with a verdict (Malicious, Suspicious, Clean) and a remediation status. This helps you understand the remediation status of the entire incident and what next steps can be taken.
 
+## Graph (Preview)
+
+The **Graph** tab shows the full scope of the attack, how the attack spread through your network over time, where it started, and how far the attacker went. It connects the different suspicious entities that are part of the attack with their related assets such as users, devices, and mailboxes.
+
 ## Next steps
 
 As needed:
