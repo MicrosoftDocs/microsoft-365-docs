@@ -326,11 +326,13 @@ To configure basic firewall settings, follow these steps:
 
 5. Expand **Microsoft Defender Firewall**, and then scroll down to the bottom of the list.
 
-6. Configure the following settings:
+6. Set each of the following settings to **Yes**:
 
-   - Set **Turn on Microsoft Defender Firewall for domain networks** to **Yes**, and then review the list of domain network settings. You can leave them set to **Not configured**, or change them to suit your organization's needs.
-   - Set **Turn on Microsoft Defender Firewall for private networks** to **Yes**, and then review the list of private network settings. You can leave them set to **Not configured**, or change them to suit your organization's needs.
-   - Set **Turn on Microsoft Defender Firewall for public networks** to **Yes**, and then review the list of public network settings. You can leave them set to **Not configured**, or change them to suit your organization's needs.
+   - **Turn on Microsoft Defender Firewall for domain networks** 
+   - **Turn on Microsoft Defender Firewall for private networks**
+   - **Turn on Microsoft Defender Firewall for public networks**
+   
+   Review the list of settings under each of domain networks, private networks, and public networks. You can leave them set to **Not configured**, or change them to suit your organization's needs.
 
    Then choose **Next**.
 
