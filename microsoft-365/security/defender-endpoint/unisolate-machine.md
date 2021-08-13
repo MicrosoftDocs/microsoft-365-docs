@@ -88,6 +88,8 @@ Comment|String|Comment to associate with the action. **Required**.
 
 If successful, this method returns 201 - Created response code and [Machine Action](machineaction.md) in the response body.
 
+If you send multiple API calls to remove isolation for the same device, it returns "pending machine action" or HTTP 400 with the message "Action is already in progress".
+
 ## Example
 
 ### Request
