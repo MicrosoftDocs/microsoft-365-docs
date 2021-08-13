@@ -37,7 +37,7 @@ Retrieves a collection of all active [Indicators](ti-indicator.md).
 Supports [OData V4 queries](https://www.odata.org/documentation/).
 
 The OData's `$filter` query is supported on: `application`, `createdByDisplayName`, `expirationTime`, `generateAlert`, `title`, `rbacGroupNames`, `rbacGroupIds`, `indicatorValue`, `indicatorType`, `creationTimeDateTimeUtc`, `createdBy`, `action`, and `severity` properties.
-<br>```$top``` with max value of 10,000. 
+<br>```$stop``` with max value of 10,000. 
 <br>```$skip```.
 
 See examples at [OData queries with Microsoft Defender for Endpoint](exposed-apis-odata-samples.md)
