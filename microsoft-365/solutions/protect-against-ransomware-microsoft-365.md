@@ -36,7 +36,7 @@ It is common practice for human-operated ransomware attackers to infiltrate an o
 
 The steps in this solution are designed on the assumption that attackers may have already “banked” your Microsoft 365 tenant. 
 
-:::image type="content" source="../media/protect-against-ransomware-microsoft-365/protect-against-ransomware-microsoft-365-microsoft-365-step-grid.png" alt-text="The three steps to protecting against ransomware with Microsoft 365" :::
+:::image type="content" source="../media/protect-against-ransomware-microsoft-365/protect-against-ransomware-microsoft-365-step-grid.png" alt-text="The three steps to protecting against ransomware with Microsoft 365" :::
 
 If the attackers are already in: 
 
