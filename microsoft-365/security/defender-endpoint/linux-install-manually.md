@@ -69,8 +69,9 @@ In order to preview new features and provide early feedback, it is recommended t
     ```bash
     sudo yum install yum-utils
     ```
+- Note your distribution and version, and identify the closest entry(by major, then minor) for it under `https://packages.microsoft.com/rhel/`.
 
-- Use the following table to guide you in locating the package: 
+    Use the following table to help guide you in locating the package: 
 
     |     Distro & version    |     Package    |
     |---|---|
