@@ -1,5 +1,5 @@
 ---
-title: "Troubleshoot Windows 365 Business Cloud PCs"
+title: "Troubleshoot Windows 365 Business Cloud PC setup issues"
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -52,7 +52,7 @@ To make sure the CloudPCBRT system account is active in Azure AD, use the follow
 2. In the left nav, under **Manage**, select **Users**.
 3. In the search box, type **CloudPCBRT**, then press **Enter**.
 4. If the CloudPCBRT system account is present, go to [Step 3. Verify that device-based MFA is turned off](#step-3-verify-that-device-based-mfa-is-turned-off).
-5. If the CloudPCBRT system account is missing, in the left nav, select **New support request** to open a support ticket. After the support ticket is closed, go directly to [Step 5. Reset your Cloud PCs](#step-5-reset-your-cloud-pcs).
+5. If the CloudPCBRT system account is missing, in the left nav, select **New support request** to open a support ticket. After the support ticket is closed, go directly to [Step 6. Reset your Cloud PCs](#step-6-reset-your-cloud-pcs).
 
 ## Step 3. Verify that device-based MFA is turned off
 
@@ -61,8 +61,15 @@ It’s possible that your organization is configured so that Multi-Factor Authen
 1. In the Azure portal, go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=516942" target="_blank">Azure Active Directory Overview</a> page.
 2. In the left nav, under **Manage**, select **Devices**, then select **Device settings**.
 3. If **Require Multi-factor Authentication to register or join devices with Azure AD** is set to **Yes**, select **No**, then select **Save**.
+4. Go to [Step 4. Make sure that MFA doesn't block setup](#step-4-make-sure-that-mfa-doesnt-block-setup).
 
-If you have an Azure AD Premium P1 license that includes conditional access, make sure there are no conditional access policies that require the CloudPCBRT system account to use MFA to join devices. If you don’t know whether you have a subscription that includes Azure AD Premium P1, see [What subscription do I have?](../admin-overview/what-subscription-do-i-have.md) To learn more about conditional access policies, see [What is Conditional Access in Azure Active Directory?](/azure/active-directory/conditional-access/overview) or [Manage users excluded from Conditional Access policies](/azure/active-directory/governance/conditional-access-exclusion). To check for conditional access policies, use the following steps.
+## Step 4. Make sure that MFA doesn't block setup
+
+If you don’t have an Azure AD Premium P1 license that includes conditional access, go to [Step 5. Make sure MDM authority configuration is set up correctly](#step-5-make-sure-mdm-authority-configuration-is-set-up-correctly). If you don’t know whether your subscription includes Azure AD Premium P1, see [What subscription do I have?](../admin-overview/what-subscription-do-i-have.md)
+
+If you have an Azure AD Premium P1 license that includes conditional access, select one user to be the first user to sign in to the Windows 365 home page at [https://windows365.microsoft.com](https://windows365.microsoft.com) after you complete the remaining steps in this article. Make sure there are no MFA conditional access policies for that first user. MFA must remain turned off during any setup attempts. After all Cloud PCs are successfully set up across your organization, you may turn on MFA for this user. To learn more about conditional access policies, see [What is Conditional Access in Azure Active Directory?](/azure/active-directory/conditional-access/overview).
+
+To check for conditional access policies, use the following steps.
 
 1. In the Azure portal, go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2169290" target="_blank">Conditional Access Policies</a> page.
 2. If there aren’t any policies listed, continue to [Step 4. Make sure the MDM authority configuration is set up correctly](#step-4-make-sure-mdm-authority-configuration-is-set-up-correctly).
@@ -70,14 +77,16 @@ If you have an Azure AD Premium P1 license that includes conditional access, mak
 4. In the **Access controls** section, under **Grant**, if it says "0 controls selected", return to the policies list and select the next policy. Otherwise, continue to step 5.
 5. In the **Access controls** section, under **Grant**, if it says more than one control is selected, select the ***n* controls selected** link.
 6. In the right pane, if **Require multi-factor authentication** is selected, clear the check box, then select the **Select** button.
+   > [!NOTE]
+   > Alternatively, you can exclude the first user from the policy. To learn how to do this, see [Manage users excluded from Conditional Access policies](/azure/active-directory/governance/conditional-access-exclusion).
 7. Repeat steps 3 through 6 until you have removed MFA for all conditional access policies.
-8. Go to [Step 4. Make sure MDM authority configuration is set up correctly](#step-4-make-sure-mdm-authority-configuration-is-set-up-correctly).
+8. Go to [Step 5. Make sure MDM authority configuration is set up correctly](#step-5-make-sure-mdm-authority-configuration-is-set-up-correctly).
 
-## Step 4. Make sure MDM authority configuration is set up correctly
+## Step 5. Make sure MDM authority configuration is set up correctly
 
-If you made changes based on Steps 1-3 earlier in this article, it’s possible that the root cause is now resolved. To verify that the issue is fixed, go to [Step 5. Reset your Cloud PCs](#step-5-reset-your-cloud-pcs).
+If you made changes based on Steps 1-4 earlier in this article, it’s possible that the root cause is now resolved. To verify that the issue is fixed, go to [Step 6. Reset your Cloud PCs](#step-6-reset-your-cloud-pcs).
 
-If you didn’t make any changes for Steps 1-3, it’s possible that the provisioning failure is caused by the MDM authority configuration in your environment. If so, you have two paths to follow, depending on whether you plan to use Microsoft Intune to manage the Cloud PCs.
+If you didn’t make any changes for Steps 1-4, it’s possible that the setup failure is caused by the MDM authority configuration in your environment. If so, you have two paths to follow, depending on whether you plan to use Microsoft Intune to manage the Cloud PCs.
 
 - If you use or plan to use Microsoft Intune for your Cloud PCs, follow the steps in [Path A: Make sure the Mobility (MDM and MAM) settings are correctly configured](#path-a-use-microsoft-intune-to-manage-your-cloud-pcs).
 - If you don’t plan to use Microsoft Intune to manage your Cloud PCs, follow steps in [Path B: Turn off automatic MDM enrollment](#path-b-turn-off-automatic-mdm-enrollment).
@@ -101,14 +110,14 @@ You also must assign an Intune license to the CloudPCBPRT system account and to 
 3. On the user **Profile** page, select **Licenses**.
 4. On the **Licenses** page, select **Assignments**.
 5. Find **Intune**, select the checkbox, then select **Save**. The user account now has the permissions needed to use the service and enroll devices.
-6. Go to [Step 5: Reset your Cloud PCs](#step-5-reset-your-cloud-pcs).
+6. Go to [Step 6. Reset your Cloud PCs](#step-6-reset-your-cloud-pcs).
 
 ### Path B. Turn off automatic MDM enrollment
 
 If you don’t plan to use Microsoft Intune for your Cloud PC management, you must turn off automatic MDM enrollment.
 
 > [!IMPORTANT]
-> If you’re not the MDM administrator, don’t use either of the following procedures without first consulting with your IT admin. Only follow these procedures if Cloud PCs aren’t being provisioned. Any configuration changes could impact your management environment. If you need help, [contact Intune support](/mem/get-support).
+> If you’re not the MDM administrator, don’t use either of the following procedures without first consulting with your IT admin. Only follow these procedures if Cloud PCs aren’t being set up. Any configuration changes could impact your management environment. If you need help, [contact Intune support](/mem/get-support).
 
 #### Option 1. Use the Azure AD portal to turn off automatic Intune enrollment
 
@@ -116,7 +125,7 @@ If you don’t plan to use Microsoft Intune for your Cloud PC management, you mu
 2. In the left nav, under **Manage**, select **Mobility (MDM and MAM)**, then select **Microsoft Intune**.
 3. On the **Configure** page, next to MDM user scope, select **None**, then select **Save**.
 4. In the left nav, under **Manage**, select **Mobility (MDM and MAM)**, select **Microsoft Intune Enrollment**, then repeat step 3.
-5. Go to [Step 5: Reset your Cloud PCs](#step-5-reset-your-cloud-pcs).
+5. Go to [Step 6. Reset your Cloud PCs](#step-6-reset-your-cloud-pcs).
 
 #### Option 2: Use Microsoft Graph to turn off automatic Intune enrollment
 
@@ -162,7 +171,7 @@ If you can’t use the Microsoft Azure admin portal to configure **Mobility (MDM
         ]
     }
     ```
-10. If the `"appliesTo"` value is **none** for all listed policies, go to [Step 5: Reset your Cloud PCs](#step-5-reset-your-cloud-pcs). Otherwise, continue to step 11.
+10. If the `"appliesTo"` value is **none** for all listed policies, go to [Step 6. Reset your Cloud PCs](#step-6-reset-your-cloud-pcs). Otherwise, continue to step 11.
 11. In the first drop-down list, select **PATCH**.
 12. In the text box, enter the following string:  
     `https://graph.microsoft.com/beta/policies/mobileDeviceManagementPolicies/0000000a-0000-0000-c000-000000000000`
@@ -210,14 +219,15 @@ If you can’t use the Microsoft Azure admin portal to configure **Mobility (MDM
     ```
 
     The `"appliesTo"` values for all policies are now set to **none**. This query verifies that the scope has successfully changed for device management policies in your organization.
-19. Go to [Step 5: Reset your Cloud PCs](#step-5-reset-your-cloud-pcs).
+19. Go to [Step 6. Reset your Cloud PCs](#step-6-reset-your-cloud-pcs).
 
-## Step 5. Reset your Cloud PCs
+## Step 6. Reset your Cloud PCs
 
-After you complete the troubleshooting steps in this article, your users must restart their Cloud PC setup. If you just completed [Step 3. Verify that device-based MFA is turned off](#step-3-verify-that-device-based-mfa-is-turned-off), wait at least ten minutes for the changes to take effect before you continue.
+After you complete the troubleshooting steps in this article, your users must restart their Cloud PC setup. 
+
+If you just completed [Step 3. Verify that device-based MFA is turned off](#step-3-verify-that-device-based-mfa-is-turned-off), wait at least ten minutes for the changes to take effect before you continue. Make sure that the user you excluded from MFA is the first users to sign in to the [Windows 365 home page](https://windows365.microsoft.com).
 
 Tell all Cloud PC users who saw the “Setup failed” error to use the following steps to reset their Cloud PCs.
 
-1. Browse to [https://windows365.microsoft.com](https://windows365.microsoft.com).
-2. On the Windows 365 home page, select the gear icon for any Cloud PC that has the “Setup failed” status, then select **Reset**. This action restarts the provisioning process.
-3. After the reset, if the “Setup failed” error still displays, and you skipped [Step 4. Make sure MDM authority configuration is set up correctly](#step-4-make-sure-mdm-authority-configuration-is-set-up-correctly), complete that step, then reset the CloudPC again. Otherwise, in the left nav, select **New support request** to open a support ticket.
+1. On the [Windows 365 home page](https://windows365.microsoft.com), select the gear icon for any Cloud PC that has the “Setup failed” status, then select **Reset**. This action restarts the setup process.
+2. After the reset, if the “Setup failed” error still displays, and you skipped [Step 5. Make sure MDM authority configuration is set up correctly](#step-5-make-sure-mdm-authority-configuration-is-set-up-correctly), complete that step, then reset the CloudPC again. Otherwise, in the left nav, select **New support request** to open a support ticket.
