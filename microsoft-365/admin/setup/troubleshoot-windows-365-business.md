@@ -21,13 +21,13 @@ ms.custom:
 search.appverid:
 - MET150
 - MOE150
-description: Learn how to buy Windows 365 Business for your organization, and help users start using their Cloud PCs.
+description: Learn how to troubleshoot setup issues for Windows 365 Business Cloud PCs.
 ms.date: 08/13/2021
 ---
 
-# Troubleshoot Windows 365 Business Cloud PC "Setup failed" errors
+# Troubleshoot Windows 365 Business Cloud PC setup issues
 
-If your users get the “Setup failed” error after you assign them a Cloud PC, use the steps in this article to resolve the issue.
+If your users get the “Setup failed” error, or if setup takes longer than 90 minutes after you assign them a license, use the steps in this article to resolve the issue.
 
 > [!IMPORTANT]
 > You must be a Global admin to do most of the tasks described in this article. If other admin roles can be used for a specific procedure, they are noted before the procedure. If you don’t have permission to log in to or access parts of the Azure portal, contact your IT admin. For more information about Azure rules, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference). To learn more about the Azure portal, see [Azure portal overview](/azure/azure-portal/azure-portal-overview).
@@ -51,10 +51,10 @@ To make sure the CloudPCBRT system account is active in Azure AD, use the follow
 1. In the Azure portal, go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=516942" target="_blank">Azure Active Directory Overview</a> page.
 2. In the left nav, under **Manage**, select **Users**.
 3. In the search box, type **CloudPCBRT**, then press **Enter**.
-4. If the CloudPCBRT system account is present, go to [Step 3. Verify that MFA is turned off for the CloudPCBRT system account](#step-3-verify-that-mfa-is-turned-off-for-the-cloudpcbrt-system-account).
+4. If the CloudPCBRT system account is present, go to [Step 3. Verify that device-based MFA is turned off](#step-3-verify-that-device-based-mfa-is-turned-off).
 5. If the CloudPCBRT system account is missing, in the left nav, select **New support request** to open a support ticket. After the support ticket is closed, go directly to [Step 5. Reset your Cloud PCs](#step-5-reset-your-cloud-pcs).
 
-## Step 3. Verify that MFA is turned off for the CloudPCBRT system account
+## Step 3. Verify that device-based MFA is turned off
 
 It’s possible that your organization is configured so that Multi-Factor Authentication (MFA) is required to join devices with Azure AD. If so, you must turn off this setting. To make sure that **Require Multi-Factor Authentication to register or join devices with Azure AD** is set to **No**, use the following steps.
 
@@ -62,6 +62,7 @@ It’s possible that your organization is configured so that Multi-Factor Authen
 2. In the left nav, under **Manage**, select **Devices**, then select **Device settings**.
 3. If **Require Multi-factor Authentication to register or join devices with Azure AD** is set to **Yes**, select **No**, then select **Save**.
 
+## Step 4. Verify that 
 If you have an Azure AD Premium P1 license that includes conditional access, make sure there are no conditional access policies that require the CloudPCBRT system account to use MFA to join devices. If you don’t know whether you have a subscription that includes Azure AD Premium P1, see [What subscription do I have?](../admin-overview/what-subscription-do-i-have.md) To learn more about conditional access policies, see [What is Conditional Access in Azure Active Directory?](/azure/active-directory/conditional-access/overview) or [Manage users excluded from Conditional Access policies](/azure/active-directory/governance/conditional-access-exclusion). To check for conditional access policies, use the following steps.
 
 1. In the Azure portal, go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2169290" target="_blank">Conditional Access Policies</a> page.
@@ -174,7 +175,7 @@ If you can’t use the Microsoft Azure admin portal to configure **Mobility (MDM
     ```
 14. In text box, enter the following string:  
     `https://graph.microsoft.com/beta/policies/mobileDeviceManagementPolicies/d4ebce55-015a-49b5-a083-c84d1797ae8c`
-15. In the **Request body** section, leave the code snippet you entered in step 11, then select **Run query**.
+15. In the **Request body** section, leave the code snippet you entered in step 13, then select **Run query**.
 16. In the first drop-down list, select **GET**.
 17. Clear any text in the **Request body** section.
 18. In the text box, enter the following string, then select **Run query**:  
@@ -216,6 +217,7 @@ If you can’t use the Microsoft Azure admin portal to configure **Mobility (MDM
 
 After you complete the troubleshooting steps in this article, your users must restart their Cloud PC setup. Tell all Cloud PC users who saw the “Setup failed” error to use the following steps to reset their Cloud PCs.
 
-1. Browse to [https://windows365.microsoft.com](https://windows365.microsoft.com).
-2. On the Windows 365 home page, select the gear icon for any Cloud PC that has the “Setup failed” status, then select **Reset**. This action restarts the provisioning process.
-3. After the reset, if the “Setup failed” error still displays, and you skipped [Step 4. Make sure MDM authority configuration is set up correctly](#step-4-make-sure-mdm-authority-configuration-is-set-up-correctly), complete that step, then reset the CloudPC again. Otherwise, in the left nav, select **New support request** to open a support ticket.
+1. If you just completed [Step 3. Verify that device-based MFA is turned off](#step-3-verify-that-device-based-mfa-is-turned-off), wait at least ten minutes for the changes to take effect before you do the rest of the steps in this procedure.
+2. Browse to [https://windows365.microsoft.com](https://windows365.microsoft.com).
+3. On the Windows 365 home page, select the gear icon for any Cloud PC that has the “Setup failed” status, then select **Reset**. This action restarts the provisioning process.
+4. After the reset, if the “Setup failed” error still displays, and you skipped [Step 4. Make sure MDM authority configuration is set up correctly](#step-4-make-sure-mdm-authority-configuration-is-set-up-correctly), complete that step, then reset the CloudPC again. Otherwise, in the left nav, select **New support request** to open a support ticket.
