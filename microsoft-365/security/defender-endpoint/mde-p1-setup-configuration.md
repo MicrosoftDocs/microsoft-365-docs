@@ -274,7 +274,7 @@ With web protection, you can protect your organization's devices from web threat
    - Set **Enable network protection** to **Enabled** so web protection is turned on. Alternately, you can set network protection to **Audit mode** to see how it will work in your environment. In audit mode, network protection does not prevent users from visiting sites or domains, but it does track detections as events. 
    - To protect users from potential phishing scams and malicious software, turn **Require SmartScreen for Microsoft Edge Legacy** to **Yes**.
    - To prevent users from bypassing warnings about potentially malicious sites, set **Block malicious site access** to **Yes**.
-   - To prevent users from bypassing the warnings and downloading unverified files, set **Block unverified file download** tl **Yes**. 
+   - To prevent users from bypassing the warnings and downloading unverified files, set **Block unverified file download** to **Yes**. 
 
 6. On the **Scope tags** tab, if your organization is using scope tags, choose **+ Select scope tags**, and then select the tags you want to use. (This step is optional.)
 
