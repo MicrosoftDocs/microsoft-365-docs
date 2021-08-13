@@ -29,7 +29,7 @@ To see the options for licensing your users to benefit from Microsoft
 
 Customer Lockbox ensures that Microsoft can't access your content to do service operations without your explicit approval. Customer Lockbox brings you into the approval workflow process that Microsoft uses to ensure only authorized requests allow access to your content. To learn more about Microsoft’s workflow process, see [Privileged access management in Microsoft 365](privileged-access-management-solution-overview.md).
 
-If an issue arises with the service, Microsoft engineers are usually able to troubleshoot and fix the problem. Microsoft engineers use telemetry and debugging tools that avoid the need for humans to access your content. Only rare cases require a Microsoft engineer to access customer content to determine the root cause and fix the issue. If you have enabled Customer Lockbox, the engineer must request access from you as a final step in the approval workflow. The final step gives you the option to approve or deny the request.
+Occasionally, Microsoft engineers help troubleshoot and fix issues that arise with the service. Usually, engineers fix issues using extensive telemetry and debugging tools Microsoft has in place for its services. However, some cases require a Microsoft engineer to access your content to determine the root cause and fix the issue. Customer Lockbox requires the engineer to request access from you as a final step in the approval workflow. This gives you the option to approve or deny the request for your organization, and provide direct-access control to your content.
 
 ### Customer Lockbox overview video
 
@@ -59,6 +59,8 @@ These steps outline the typical workflow when a Microsoft engineer starts a Cust
 
    > [!IMPORTANT]
    > Microsoft does not include any links in Customer Lockbox email notifications requiring you to sign in to Office 365.
+
+7. After the approver from the organization approves the request, the Microsoft engineer receives the approval message, logs into the tenant in Exchange Online, and fixes the customer's issue. Microsoft engineers have the requested duration to fix the issue after which the access is automatically revoked.
 
 > [!NOTE]
 > All actions performed by a Microsoft engineer are logged in the audit log. You can search for and review these audit records.
@@ -97,7 +99,6 @@ You can turn on Customer Lockbox controls in the Microsoft 365 admin center. Whe
 
 > [!NOTE]
 > Use the Set-AccessToCustomerDataRequest cmdlet to approve, deny, or cancel Microsoft 365 customer lockbox requests that control access to your data by Microsoft support engineers. For more information, see [Set-AccessToCustomerDataRequest](/powershell/module/exchange/set-accesstocustomerdatarequest).
-
 
 ## Auditing Customer Lockbox requests
 
