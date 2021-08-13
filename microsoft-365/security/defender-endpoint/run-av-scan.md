@@ -91,6 +91,8 @@ ScanType|String|Defines the type of the Scan. **Required**.
 
 If successful, this method returns 201, Created response code and _MachineAction_ object in the response body.
 
+If you send  multiple API calls to run an antivirus scan for the same device, it returns "pending machine action" or HTTP 400 with the message "Action is already in progress".
+
 ## Example
 
 ### Request
