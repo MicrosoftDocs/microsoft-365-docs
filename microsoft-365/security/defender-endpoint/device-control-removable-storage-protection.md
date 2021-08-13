@@ -33,7 +33,7 @@ Microsoft Defender for Endpoint Device Control Removable Storage Protection prev
 **Windows 10 support details**:
 
 - Applied at machine level: the same policy applies for any logged on user.
-- Supports MEM and GPO.
+- Supports Microsoft Endpoint Manager and Group Policy Objects.
 - Supported  '[Device Properties](#device-properties)' as listed.
 - For more information on Windows, see [How to control USB devices and other removable media using Microsoft Defender for Endpoint](control-usb-devices-using-intune.md).
 
@@ -44,7 +44,7 @@ Microsoft Defender for Endpoint Device Control Removable Storage Protection prev
 - Applied at machine level: the same policy applies for any logged on user
 - For macOS specific information, see [Device control for macOS](mac-device-control-overview.md).
 
-**Supported platform** - macOS Catalina 10.15.4+ (with system extensions enabled)
+**Supported platform** - macOS Catalina 10.15.4+ (with system extensions enabled) or later
 
 ### Removable storage Access Control
 
@@ -101,12 +101,11 @@ Microsoft Defender for Endpoint Device Control Removable Storage Protection allo
 |Device Class|[How to control USB devices and other removable media using Microsoft Defender for Endpoint](control-usb-devices-using-intune.md)|Windows|For information about Device ID formats, see [device setup class](/windows-hardware/drivers/install/system-defined-device-setup-classes-available-to-vendors). **Note**: Device Installation can be applied to any devices, not only Removable storage.|
 |Primary ID|Removable storage Access Control|Windows|The Primary ID includes removable storage and CD/DVD.|
 |Device ID|[How to control USB devices and other removable media using Microsoft Defender for Endpoint](control-usb-devices-using-intune.md); Removable storage Access Control|Windows|For information about Device ID formats, see [Standard USB Identifiers](/windows-hardware/drivers/install/standard-usb-identifiers), for example, USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07|
-|Hardware ID|[How to control USB devices and other removable media using Microsoft Defender for Endpoint](control-usb-devices-using-intune.md); Removable storage Access Control|Windows|A string identified the device in the system, for example, USBSTOR\DiskGeneric_Flash_Disk______8.07; **Note**: Hardware ID is not unique; different devices may share same value.|
+|Hardware ID|[How to control USB devices and other removable media using Microsoft Defender for Endpoint](control-usb-devices-using-intune.md); Removable storage Access Control|Windows|A string identified the device in the system, for example, USBSTOR\DiskGeneric_Flash_Disk___8.07; **Note**: Hardware ID is not unique; different devices might share the same value.|
 |Instance ID|Device Installation; Removable storage Access Control|Windows|A string uniquely identifies the device in the system, for example, USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0|
 |Friendly Name|Removable storage Access Control|Windows|A string attached to the device, for example, Generic Flash Disk USB Device|
-|Vendor ID / Product ID|Removable storage Access Control|Windows Mac|Vendor ID is the four-digit vendor code that the USB committee assigns to the vendor. Product ID is the four-digit product code that the vendor assigns to the device; Support wildcard.|
-|Serial NumberId|Removable storage Access Control|Windows Mac|For example, <SerialNumberId>002324B534BCB431B000058A</SerialNumberId>|
-|
+|Vendor ID / Product ID|Removable storage Access Control|Windows <br/> macOS |Vendor ID is the four-digit vendor code that the USB committee assigns to the vendor. Product ID is the four-digit product code that the vendor assigns to the device; Support wildcard.|
+|Serial NumberId|Removable storage Access Control|Windows <br/> macOS |For example, <SerialNumberId>002324B534BCB431B000058A</SerialNumberId>|
 
 ## See also
 
