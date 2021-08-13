@@ -69,7 +69,7 @@ In order to preview new features and provide early feedback, it is recommended t
     ```bash
     sudo yum install yum-utils
     ```
-- Note your distribution and version, and identify the closest entry(by major, then minor) for it under `https://packages.microsoft.com/rhel/`.
+- Note your distribution and version, and identify the closest entry (by major, then minor) for it under `https://packages.microsoft.com/rhel/`.
 
     Use the following table to help guide you in locating the package: 
 
@@ -147,7 +147,7 @@ In order to preview new features and provide early feedback, it is recommended t
     sudo apt-get install libplist-utils
     ```
 
-- Note your distribution and version, and identify the closest entry (by major, then minor) for it under `https://packages.microsoft.com/ubuntu/`.
+- Note your distribution and version, and identify the closest entry (by major, then minor) for it under `https://packages.microsoft.com/[distro]/`.
 
     In the below command, replace *[distro]* and *[version]* with the information you've identified:
 
@@ -155,7 +155,7 @@ In order to preview new features and provide early feedback, it is recommended t
     curl -o microsoft.list https://packages.microsoft.com/[distro]/[version]/[channel].list
     ```
 
-    For example, if you are running Ubuntu 18.04 and wish to deploy MDE for Linux from the *prod* channel:
+    For example, if you are running Ubuntu 18.04 and wish to deploy Microsoft Defender for Endpoint on Linux from the *prod* channel:
 
     ```bash
     curl -o microsoft.list https://packages.microsoft.com/ubuntu/18.04/prod.list
@@ -429,7 +429,7 @@ When upgrading your operating system to a new major version, you must first unin
     sudo yum-config-manager --disable packages-microsoft-com-fast-prod
     ```
 
-1. Redeploy MDE for Linux using the "Production channel".
+1. Redeploy Microsoft Defender for Endpoint on Linux using the "Production channel".
 
 ## Uninstallation
 
