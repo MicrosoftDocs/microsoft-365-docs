@@ -33,13 +33,17 @@ For detailed licensing guidance, see [Microsoft 365 licensing guidance for secur
 
 ## Set up privacy management
 
-To get started with privacy management, first get your trial license and sign in. Then you can assign permissions for your users and review settings.
+To get started with privacy management, first get your trial license. Then you can sign in to privacy management, assign permissions for your users, and review settings.
 
 ### Get trial license
 
 To get started with the public preview, your global admin can obtain the free privacy management trial license from the [admin center](https://aka.ms/purchasem365privacy). Select “Start trial” to begin. Your license lasts for one month and you can renew it at no cost as needed during the public preview.
 
-After obtaining your subscription, allow up to 30 minutes for it to activate. Then return to privacy management to get started. You will be asked to confirm that you agree to the terms and the personal data evaluation process ([learn more](privacy-management.md#how-we-evaluate-your-data)). You can review the provided links in full before proceeding. Once you agree, it may take up to 24 hours before privacy management starts providing insights about your organization’s data.
+After obtaining your subscription, allow up to 30 minutes for it to activate. Then return to privacy management in the compliance center to get started.
+
+### Accept privacy management terms
+
+When you first open privacy management, you will be asked to confirm that you agree to the terms and the personal data evaluation process ([learn more](privacy-management.md#how-we-evaluate-your-data)). You can review the provided links in full before proceeding. Once you agree, it may take up to 24 hours before privacy management starts providing insights about your organization’s data.
 
 If you don’t hold the required role to obtain the subscription or consent to the terms of using privacy management, you’ll be prompted to contact your global admin for assistance.
 
@@ -65,6 +69,6 @@ For further insights into your data over time, your **Data profile** page will p
 
 To learn more about these pages, see [Find and visualize your data](privacy-management-data-profile.md).
 
-## Get started with default policies 
+## Get started with default policies
 
 Privacy management will help kickstart your data evaluation process by creating three policies with default settings, using the templates for data minimization, data overexposure, and data transfers. These policies will be on by default, but will not automatically trigger notification mails or remediation prompts. After your initial setup, you can proceed to create and customize your own policies. To learn more, see [Create and manage policies](privacy-management-policies.md).

@@ -38,7 +38,7 @@ In Microsoft 365 organizations with mailboxes in Exchange Online or standalone E
 
 Anti-malware policies automatically quarantine a message if *any* attachment is found to contain malware. For more information, see [Configure anti-malware policies in EOP](configure-anti-malware-policies.md).
 
-By default, anti-spam polices quarantine phishing messages, and deliver spam and bulk email messages to the user's Junk Email folder. But, you can also create and customize anti-spam policies to quarantine spam and bulk-email messages. For more information, see [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md).
+By default, anti-spam polices quarantine phishing and high confidence phishing messages, and deliver spam, high confidence spam, and bulk email messages to the user's Junk Email folder. But, you can also create and customize anti-spam policies to quarantine spam, high confidence spam, and bulk-email messages. For more information, see [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md).
 
 Both users and admins can work with quarantined messages:
 

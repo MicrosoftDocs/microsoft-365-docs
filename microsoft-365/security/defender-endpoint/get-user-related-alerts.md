@@ -78,7 +78,7 @@ Empty
 
 ## Response
 
-If successful and user exists - 200 OK. If the user does not exist - 404 Not Found. 
+If successful and user exists - 200 OK. If the user does not exist -  200 OK with an empty set. 
 
 ## Example
 
