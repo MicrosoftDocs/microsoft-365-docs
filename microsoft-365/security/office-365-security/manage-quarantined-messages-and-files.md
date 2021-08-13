@@ -248,11 +248,11 @@ If you don't release or remove the message, it will be deleted after the default
 
 #### Take action on multiple quarantined email messages
 
-When you select multiple quarantined messages in the list (up to 100) by clicking in the blank area to the left of the **Subject** column, the **Bulk actions** drop down list appears where you can take the following actions:
+When you select multiple quarantined messages in the list (up to 100) by clicking in the blank area to the left of the first column, the **Bulk actions** drop down list appears where you can take the following actions:
 
 ![Bulk actions drop down list for messages in quarantine](../../media/quarantine-message-bulk-actions.png)
 
-- ![Release email icon](../../media/m365-cc-sc-check-mark-icon.png) **Release messages**: This action releases messages to all recipients. In the flyout that appears, you can choose the following options, which are the same as when you release a single message:
+- ![Release email icon](../../media/m365-cc-sc-check-mark-icon.png) **Release messages**: Releases messages to all recipients. In the flyout that appears, you can choose the following options, which are the same as when you release a single message:
   - **Add sender to your organization's allow list**
   - **Send a copy of this message to other recipients**
   - **Submit the message to Microsoft to improve detection (false positive)**
