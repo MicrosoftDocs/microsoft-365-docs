@@ -116,6 +116,12 @@ To add block sender, file, or URL entries in the Tenant Allow/Block List, use th
 New-TenantAllowBlockListItems -ListType <Sender | FileHash | Url> -Block -Entries "Value1","Value2",..."ValueN" <-ExpirationDate Date | -NoExpiration> [-Notes <String>]
 ```
 
+This example adds a block sender entry for the specified sender that expires on a specific date.
+
+```powershell
+New-TenantAllowBlockListItems -ListType Sender -Block -Entries "test@badattackerdomain.com", "test2@anotherattackerdomain.com" -ExpirationDate 8/20/2021
+```
+
 This example adds a block file entry for the specified files that never expires.
 
 ```powershell
