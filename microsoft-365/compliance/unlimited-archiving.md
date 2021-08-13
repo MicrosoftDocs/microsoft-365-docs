@@ -91,7 +91,7 @@ Here are some things to consider when using Outlook or Outlook on the web to acc
 
 - Item counts in Outlook and Read/Unread counts (in Outlook and Outlook on the web) in an auto-expanded archive might not be accurate.
 
-- You can delete items in a subfolder that points to an auto-expanded storage area, but the folder itself can't be deleted.
+- As long as the user has at least one AuxArchive (i.e. auto-expanded) location, no folder can be deleted from the AuxArchive or the MainArchive
 
 - You can't use the Recover Deleted Items feature to recover an item that was deleted from an auto-expanded storage area.
 
