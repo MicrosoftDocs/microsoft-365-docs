@@ -17,6 +17,7 @@ ms.collection:
 ms.custom:
 - okr_smb
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
@@ -148,7 +149,7 @@ For example, here are some additional steps that might be required for email and
 
 - Move all email addresses that use your domain to Microsoft 365 before you change your NS records.
 
-- Want to add a domain that's currently used with a website address, like www.fourthcoffee.com? You can take below steps while you add the domain to keep its website hosted where the site is hosted now so people can still get to the website after you change the domain's NS records to point to Microsoft 365.
+- Want to add a domain that's currently used with a website address, like `https://www.fourthcoffee.com`? You can take below steps while you add the domain to keep its website hosted where the site is hosted now so people can still get to the website after you change the domain's NS records to point to Microsoft 365.
 
 1. In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> page.
 

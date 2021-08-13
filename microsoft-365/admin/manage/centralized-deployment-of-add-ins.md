@@ -13,7 +13,9 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom: 
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
@@ -157,6 +159,6 @@ If you or your users encounter problems loading the add-in while using Office ap
 
 [Deploy add-ins in the admin center](../manage/manage-deployment-of-add-ins.md) (article)\
 [Manage add-ins in the admin center](manage-addins-in-the-admin-center.md) (article)\
-[Centralized Deployment FAQ](../manage/centralized-deployment-faq.md) (article)\
+[Centralized Deployment FAQ](../manage/centralized-deployment-faq.yml) (article)\
 [Upgrade your Microsoft 365 for business users to the latest Office client](../setup/upgrade-users-to-latest-office-client.md) (article)
  

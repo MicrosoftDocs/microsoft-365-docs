@@ -95,10 +95,6 @@ The additional tabs for an incident are:
 
   All the supported events and suspicious entities in the alerts in the incident.
 
-- Graph (in preview)
-
-  A figure showing the connection of alerts to the impacted assets in your organization.
-
 Here's the relationship between an incident and its data and the tabs of an incident in the Microsoft 365 Defender portal.
 
 :::image type="content" source="../../media/incidents-overview/incidents-security-center.png" alt-text="The relationship of an incident and its data to the tabs of an incident in the Microsoft 365 Defender portal":::
@@ -166,6 +162,8 @@ Annual tasks can include conducting a major incident or breach exercise to test 
 
 Daily, monthly, quarterly, and annual tasks can be used to update or refine processes, policies, and security configurations.
 
+See [ Integrating Microsoft 365 Defender into your security operations](integrate-microsoft-365-defender-secops.md) for more details.
+
 ### SecOps resources across Microsoft products
 
 For more information about SecOps across Microsoft's products, see these resources:
@@ -189,6 +187,8 @@ For more information about SecOps across Microsoft's products, see these resourc
   - [Manage incidents](manage-incidents.md), which includes renaming, assigning, classifying, and adding tags and comments based on your incident management workflow.
 
   - Perform [investigations](investigate-incidents.md) of incidents.
+
+- See how to [integrate Microsoft 365 Defender into your Security Operations Center (SOC)](integrate-microsoft-365-defender-secops.md).
 
 - See these [incident response playbooks](/security/compass/incident-response-playbooks) for detailed guidance for phishing, password spray, and app consent grant attacks.
 

@@ -46,9 +46,9 @@ landingContent:
       - linkListType: get-started
         links:
         - text: Create a trial lab
-          url: m365d-evaluation.md 
+          url: eval-overview.md 
         - text: Run pilot project in production
-          url: m365d-pilot.md
+          url: eval-overview.md
  
 # Card
   - title: Get started

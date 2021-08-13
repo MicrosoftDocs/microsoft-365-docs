@@ -15,9 +15,10 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - MET150
-description: "Basic Mobility and Security can help you secure and manage mobile devices."
+description: "Basic Mobility and Security can help you secure and manage your mobile devices."
 ---
 
 # Capabilities of Basic Mobility and Security

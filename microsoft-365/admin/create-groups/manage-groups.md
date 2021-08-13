@@ -29,7 +29,7 @@ Go to the Microsoft 365 admin center at [https://admin.microsoft.com](https://ad
 
 ## Edit the group name or description
 
-1. In the admin center, expand **Groups**, and then click **Groups**.
+1. In the admin center, expand **Groups**, and then click <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**Groups**</a>.
 
 2. Select the group that you want to edit, and then click **Edit name and description**.
 
@@ -37,7 +37,7 @@ Go to the Microsoft 365 admin center at [https://admin.microsoft.com](https://ad
 
 ## Manage group owners and members
 
-1. In the admin center, expand **Groups**, and then click **Groups**.
+1. In the admin center, expand **Groups**, and then click <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**Groups**</a>.
 
 2. Click the name of the group you want to manage to open the settings pane.
 
@@ -49,13 +49,13 @@ Go to the Microsoft 365 admin center at [https://admin.microsoft.com](https://ad
 
 ## Send copies of conversations to group members' inboxes
   
-When you use the admin center to create a group, by default users  do not get copies of group emails and meeting invitations sent to their inboxes. They'll need to go to the group to see conversations and meetings. You can change this setting in the admin center.
+When you use the admin center to create a group, by default users do not get copies of group emails sent to their inboxes though users get copies of group meeting invitations sent to their inboxes. They'll need to go to the group to see conversations. You can change this setting in the admin center.
 
 When you turn this setting on, group members will get a copy of group emails and meeting invitations sent to their Outlook Inbox. They can read and delete this copy of the email and not affect anyone else. In the Group inbox, a copy of the email still exists.
 
 Group members can opt out of receiving these emails by choosing to stop following the group in Outlook.
 
-1. In the admin center, expand **Groups**, and then click **Groups**.
+1. In the admin center, expand **Groups**, and then click <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**Groups**</a>.
 
 2. Click the name of the group you want to manage to open the settings pane.
 
@@ -67,7 +67,7 @@ Group members can opt out of receiving these emails by choosing to stop followin
 
 This option is great if you want to have a company email address such as info@contoso.com.
  
-1. In the admin center, expand **Groups**, and then click **Groups**.
+1. In the admin center, expand **Groups**, and then click <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**Groups**</a>.
 
 2. Click the name of the group you want to manage to open the settings pane.
 

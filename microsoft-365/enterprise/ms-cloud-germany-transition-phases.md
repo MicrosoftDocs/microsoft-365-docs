@@ -154,6 +154,7 @@ Additional considerations:
 - Microsoft Cloud Deutschland customers whose SharePoint Online instance is not yet migrated need to stay on SharePoint Online PowerShell module/Microsoft.SharePointOnline.CSOM version 16.0.20616.12000 or below. Otherwise, connections to SharePoint Online via PowerShell or the client-side object model will fail.
 - During this phase, the IP addresses behind the SharePoint URLs will change. After the transition to Office 365 Global services, the addresses for the preserved tenant URLs (for example, `contoso.sharepoint.de` and `contoso-my.sharepoint.de`) will be changed to the [Worldwide Microsoft 365 URLs and IP address ranges (SharePoint Online and OneDrive for Business)](/microsoft-365/enterprise/urls-and-ip-address-ranges#sharepoint-online-and-onedrive-for-business).
 - While SharePoint and OneDrive services are transitioned, Office Online may not work as expected.
+- If a custom search configuration has been applied, import the search configuration after the transition is finished. The search configuration has to be exported before the transition as described in the [pre-migration steps for SharePoint Online](ms-cloud-germany-transition-add-pre-work.md#sharepoint-online).
 
 > [!NOTE]
 > In case you are using eDiscovery, make sure you are aware of the [eDiscovery migration experience](ms-cloud-germany-transition-add-scc.md).
@@ -254,7 +255,7 @@ Set-SendConnector -Identity <SendConnectorName> -TlsDomain "mail.protection.outl
 Review the [pre-migration steps for Skype for Business Online migration](ms-cloud-germany-transition-add-pre-work.md#skype-for-business-online) and make sure you completed all steps.
 In this phase, Skype for Business will be migrated to Microsoft Teams. Existing Skype for Business customers are migrated to Office 365 Global services in Europe and then transitioned to Microsoft Teams in the region "Germany" of Office 365 services.
 
-- Users won't be able to sign in to Skype for Business on the migration date. Ten days before migration, the customer will receive a message in the Admin center which announces when the migration will take place, and again when the migration begins.
+- Users won't be able to sign in to Skype for Business on the migration date.
 - Policy configuration is migrated.
 - Users will be migrated to Teams and will no longer have access to Skype for Business after migration.
 - Users must have the Microsoft Teams desktop client installed. Installation will happen during the 10 days via policy on the Skype for Business infrastructure, but if this fails, users will still need to download the client or connect with a supported browser.

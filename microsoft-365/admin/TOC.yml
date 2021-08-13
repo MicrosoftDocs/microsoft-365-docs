@@ -10,6 +10,12 @@
           href: ../commerce/try-or-buy-microsoft-365.md
         - name: Plan your setup
           href: setup/plan-your-setup.md
+        - name: Plan for Windows 365 Business
+          items:
+           - name: Get started with Windows 365 Business and Cloud PCs
+             href: setup/get-started-windows-365-business.md
+           - name: Windows 365 Business sizing options
+             href: setup/windows-365-business-sizing.md
         - name: Set up your organization with the guided setup
           items:
            - name: Microsoft 365 Business Basic
@@ -263,7 +269,7 @@
             - name: Manage add-ins in the admin center 
               href: manage/manage-addins-in-the-admin-center.md      
             - name: Centralized Deployment FAQ
-              href: manage/centralized-deployment-faq.md
+              href: manage/centralized-deployment-faq.yml
          - name: Manage industry news
            href: manage/manage-industry-news.md
          - name: Manage Office Scripts settings 
@@ -290,6 +296,8 @@
              href: usage-analytics/active-user-in-usage-reports.md
            - name: Customize reports
              href: usage-analytics/customize-reports.md
+           - name: Usage analytics with Microsoft 365 GCC 
+             href: usage-analytics/connect-to-gcc-data-with-usage-analytics.md
            - name: About the usage analytics data model
              href: usage-analytics/usage-analytics-data-model.md
            - name: Troubleshoot usage analytics errors
@@ -418,3 +426,5 @@
       href: /office/troubleshoot/
     - name: Contact support
       href: ../business-video/get-help-support.md
+    - name: Navigation guide
+      href: ../microsoft-365-docs-navigation-guide.md?bc=%2foffice365%2fadmin%2fbreadcrumb%2ftoc.json&toc=%2foffice365%2fadmin%2ftoc.json

@@ -86,6 +86,12 @@ Use the OneDrive sync app version 19.002.0121.0008 or later on Windows, and vers
 
 - For performance reasons, when you upload or save a document to SharePoint and the file's label doesn't apply encryption, the **Sensitivity** column in the document library can take a while to display the label name. Factor in this delay if you use scripts or automation that depend on the label name in this column.
 
+- If a document is labeled while it's [checked out in SharePoint](https://support.microsoft.com/office/check-out-check-in-or-discard-changes-to-files-in-a-library-7e2c12a9-a874-4393-9511-1378a700f6de), the **Sensitivity** column in the document library won't display the label name until the document is checked in and next opened in SharePoint.
+
+- If a labeled and encrypted document is downloaded from SharePoint or OneDrive by an app or service that uses a service principal name, and then uploaded again with a label that applies different encryption settings, the upload will fail. An example scenario is Microsoft Cloud App Security changes a sensitivity label on a file from **Confidential** to **Highly Confidential**, or from **Confidential** to **General**.
+    
+    The upload doesn't fail if the app or service first runs the [Unlock-SPOSensitivityLabelEncryptedFile](/powershell/module/sharepoint-online/unlock-sposensitivitylabelencryptedFile) cmdlet, as explained in the [Remove encryption for a labeled document](#remove-encryption-for-a-labeled-document) section. Or, before the upload, the original file is deleted, or the file name is changed.
+
 - Users might experience delays in being able to open encrypted documents in the following Save As scenario: Using a desktop version of Office, a user chooses Save As for a document that has a sensitivity label that applies encryption. The user selects SharePoint or OneDrive for the location, and then immediately tries to open that document in Office for the web. If the service is still processing the encryption, the user sees a message that the document must be opened in their desktop app. If they try again in a couple of minutes, the document successfully opens in Office for the web.
 
 - For encrypted documents, printing is not supported.

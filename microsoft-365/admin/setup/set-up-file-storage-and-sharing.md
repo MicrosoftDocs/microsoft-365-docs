@@ -21,6 +21,7 @@ ms.custom:
 - OKR_SMB_Videos
 - seo-marvel-may2020
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
@@ -72,7 +73,7 @@ Employees can also share OneDrive files and folders. If an employee is away or l
   
 Here's how each person on your team can set up OneDrive and share files.
 
-1. Go to the <a href="https://admin.mirosoft.com/ " target="_blank">Microsoft 365 admin center</a>, and sign in with your user name and password.
+1. Go to the <a href="https://admin.microsoft.com/ " target="_blank">Microsoft 365 admin center</a>, and sign in with your user name and password.
 
 2. From the App launcher, select **OneDrive**.
 
