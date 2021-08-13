@@ -60,7 +60,7 @@ Go to [Endpoint Manager](https://endpoint.microsoft.com/#blade/Microsoft_Intune_
 - Verify**Users may join devices to Azure AD** is enabled 
     1. To enable all users, set to **All**.
     2. To enable specific users, set to **Selected** to enable a specific group of users.
-        - Add the desired domain users synced in Azure AD to a [security group](../admin/create-groups/create-groups.md).
+        - Add the desired domain users synced in Azure AD to a [security group](../../admin/create-groups/create-groups.md).
         - Choose **Select groups** to enable MDM user scope for that security group.
 
 ## 3. Verify Azure AD is enabled for MDM
@@ -71,7 +71,7 @@ Go to [Endpoint Manager](https://endpoint.microsoft.com/#blade/Microsoft_Intune_
 
     1. To enroll all computers, set to **All** to automatically enroll all user computers that are joined to Azure AD and new computers  when the users add a work account to Windows.
     2. Set to **Some** to enroll the computers of a specific group of users.
-        -  Add the desired domain users synced in Azure AD to a [security group](../admin/create-groups/create-groups.md).
+        -  Add the desired domain users synced in Azure AD to a [security group](../create-groups/create-groups.md).
         -  Choose **Select groups** to enable MDM user scope for that security group.
 
 ## 4. Create the required resources 
@@ -118,5 +118,5 @@ At this point you should be able to see the policy **Enable automatic MDM enroll
 ## Related content
 
 [Synchronize domain users to Microsoft 365](manage-domain-users.md) (article)\
-[Create a group in the admin center](../admin/create-groups/create-groups.md) (article)\
+[Create a group in the admin center](../create-groups/create-groups.md) (article)\
 [Tutorial: Configure hybrid Azure Active Directory join for managed domains](/azure/active-directory/devices/hybrid-azuread-join-managed-domains.md) (article)

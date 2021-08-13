@@ -12,7 +12,7 @@
     },
     {
       "source_path": "microsoft-365/business/map-protection-features-to-intune-settings.md",
-      "redirect_url": "/microsoft-365/admin/devices/map-protection-features-to-intune-setting",
+      "redirect_url": "/microsoft-365/admin/devices/map-protection-features-to-intune-settings",
       "redirect_document_id": true
     },
     {
@@ -127,12 +127,12 @@
     }, 
     {
       "source_path": "microsoft-365/business/set-up-windows-devices.md",
-      "redirect_url": "/microsoft-365/admin/setup/set-up-windows-device",
+      "redirect_url": "/microsoft-365/admin/setup/set-up-windows-devices",
       "redirect_document_id": true
     },    
     {
       "source_path": "microsoft-365/business/manage-windows-devices.md",
-      "redirect_url": "/microsoft-365/admin/setup/manage-windows-device",
+      "redirect_url": "/microsoft-365/admin/setup/manage-windows-devices",
       "redirect_document_id": true
     },
     {
