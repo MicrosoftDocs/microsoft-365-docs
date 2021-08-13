@@ -36,11 +36,11 @@ It is common practice for human-operated ransomware attackers to infiltrate an o
 
 The steps in this solution are designed on the assumption that attackers may have already “banked” your Microsoft 365 tenant. 
 
-:::image type="content" source="../media/protect-against-ransomware-microsoft-365/protect-against-ransomware-microsoft-365-step-grid.png" alt-text="The three steps to protecting against ransomware with Microsoft 365" :::
+[The three steps to protecting against ransomware with Microsoft 365](../media/protect-against-ransomware-microsoft-365/protect-against-ransomware-microsoft-365-step-grid.png)
 
 If the attackers are already in: 
 
-1. 	Your first step is to *protect your critical data in ways that reduce the financial leverage that an attacker has on your organization*. For example, if it is possible to restore critical files encrypted by attackers from an offsite and offline backup, then the attackers lose the ability to hold those critical files for ransom.
+1. 	Your first step is to *protect your critical data in ways that prevent an attacker from gaining financial leverage on your organization*. For example, if it is possible to restore critical files encrypted by attackers from an offsite and offline backup, then the attackers lose the ability to hold those critical files for ransom.
 2. Your next step is to ensure that *user accounts have an appropriate level of access and that it is difficult to increase levels of access through privilege escalation without detection*.
 3. Your final step is to *prevent future infiltrations by preventing entry into your organization through user accounts, devices, email, or applications*.
 
