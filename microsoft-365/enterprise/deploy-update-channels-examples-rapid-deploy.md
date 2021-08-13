@@ -1,9 +1,9 @@
 ---
 title: "Example of broad deployment for the latest releases"
-author: JoeDavies-MSFT
+author: kelleyvice-msft
 f1.keywords:
 - NOCSH
-ms.author: josephd
+ms.author: kvice
 manager: laurawi
 ms.date: 07/21/2020
 audience: ITPro

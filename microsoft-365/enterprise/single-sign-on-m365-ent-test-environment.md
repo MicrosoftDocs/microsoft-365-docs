@@ -2,8 +2,8 @@
 title: "Azure AD Seamless Single Sign-on for your Microsoft 365 test environment"
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 11/21/2019
 audience: ITPro
