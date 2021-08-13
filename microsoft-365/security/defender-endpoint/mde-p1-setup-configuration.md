@@ -163,7 +163,7 @@ We recommend using Microsoft Endpoint Manager to configure controlled folder acc
 
 5. On the **Basics** tab, name the policy and add a description. Select **Next**. 
 
-6. On the **Configuration settings** tab, in the **Attack Surface Reduction Rules** section, scroll down to the bottom. In the **Enable folder protection** drop-down, select **Enable**. You can optionally specify these additional settings:
+6. On the **Configuration settings** tab, in the **Attack Surface Reduction Rules** section, scroll down to the bottom. In the **Enable folder protection** drop-down, select **Enable**. You can optionally specify these other settings:
 
    - Next to **List of additional folders that need to be protected**, select the drop-down menu, and then add folders that need to be protected.
    - Next to **List of apps that have access to protected folders**, select the drop-down menu, and then add apps that should have access to protected folders.
