@@ -72,12 +72,12 @@ If you have an Azure AD Premium P1 license that includes conditional access, sel
 To check for conditional access policies, use the following steps.
 
 1. In the Azure portal, go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2169290" target="_blank">Conditional Access Policies</a> page.
-2. If there aren’t any policies listed, continue to [Step 4. Make sure the MDM authority configuration is set up correctly](#step-4-make-sure-mdm-authority-configuration-is-set-up-correctly).
+2. If there aren’t any policies listed, continue to [Step 5. Make sure MDM authority configuration is set up correctly](#step-5-make-sure-mdm-authority-configuration-is-set-up-correctly).
 3. If any policies are listed on the page, select a policy name.
 4. In the **Access controls** section, under **Grant**, if it says "0 controls selected", return to the policies list and select the next policy. Otherwise, continue to step 5.
 5. In the **Access controls** section, under **Grant**, if it says more than one control is selected, select the ***n* controls selected** link.
 6. In the right pane, if **Require multi-factor authentication** is selected, clear the check box, then select the **Select** button.
-   > [!NOTE]
+   > [!TIP]
    > Alternatively, you can exclude the first user from the policy. To learn how to do this, see [Manage users excluded from Conditional Access policies](/azure/active-directory/governance/conditional-access-exclusion).
 7. Repeat steps 3 through 6 until you have removed MFA for all conditional access policies.
 8. Go to [Step 5. Make sure MDM authority configuration is set up correctly](#step-5-make-sure-mdm-authority-configuration-is-set-up-correctly).
