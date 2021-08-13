@@ -32,6 +32,18 @@ ms.custom: api
 
 Retrieves the organization software inventory.
 
+
+## API description
+
+Retrieves the organization software inventory.
+
+<br>Supports [OData V4 queries](https://www.odata.org/documentation/).
+<br>OData supported operators:
+<br>```$filter``` on:  ```id```, ```name``` and ```vendor``` properties.
+<br>```$top``` with max value of 10,000 
+<br>```$skip```
+<br>See examples at [OData queries with Microsoft Defender for Endpoint](exposed-apis-odata-samples.md)
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md) for details.
