@@ -161,7 +161,7 @@ We recommend using Microsoft Endpoint Manager to configure controlled folder acc
 
 4. For **Platform**, select **Windows 10 and later**, and for **Profile**, select **Attack surface reduction rules**. Then choose **Create**. 
 
-5. On the **Basics** tab, Name the policy and add a description. Select **Next**. 
+5. On the **Basics** tab, name the policy and add a description. Select **Next**. 
 
 6. On the **Configuration settings** tab, in the **Attack Surface Reduction Rules** section, scroll down to the bottom. In the **Enable folder protection** drop-down, select **Enable**. You can optionally specify these additional settings:
 
@@ -195,7 +195,7 @@ You can configure Defender for Endpoint to block or allow removable devices and 
 
    Under **Template name**, select **Administrative Templates**, and then choose **Create**. 
 
-4. On the **Basics** tab, Name the policy and add a description. Select **Next**. 
+4. On the **Basics** tab, name the policy and add a description. Select **Next**. 
 
 5. On the **Configuration settings** tab, select **All Settings**. Then in the search box, type `Removable` to see all the settings that pertain to removable devices.
 
@@ -234,7 +234,7 @@ With network protection, you can help protect your organization against dangerou
 
    Under **Template name**, select **Endpoint protection**, and then choose **Create**. 
 
-4. On the **Basics** tab, Name the policy and add a description. Select **Next**. 
+4. On the **Basics** tab, name the policy and add a description. Select **Next**. 
 
 5. On the **Configuration settings** tab, expand **Microsoft Defender Exploit Guard**, and then expand **Network filtering**.
 
@@ -257,7 +257,7 @@ With network protection, you can help protect your organization against dangerou
 
 ### Web protection
 
-With web protection, you can protect your organization's devices from web threats and unwanted content. Your web protection includes [web threat protection](#configure-web-threat-protection) and [web content filtering](#configure-web-content-filtering) (preview). Configure both sets of capabilities for your web protection.
+With web protection, you can protect your organization's devices from web threats and unwanted content. Your web protection includes [web threat protection](#configure-web-threat-protection) and [web content filtering](#configure-web-content-filtering) (preview). Configure both sets of capabilities. We recommend using Microsoft Endpoint Manager to configure your web protection settings.
 
 #### Configure web threat protection
 
@@ -310,9 +310,42 @@ With web protection, you can protect your organization's devices from web threat
 
 ### Network firewall
 
-Network firewall helps reduce the risk of network security threats. Your security team can set rules that determine which traffic is permitted to flow to or from your organization's devices. 
+Network firewall helps reduce the risk of network security threats. Your security team can set rules that determine which traffic is permitted to flow to or from your organization's devices. We recommend using Microsoft Endpoint Manager to configure your network firewall. 
 
-Refer to [Best practices for configuring Windows Defender Firewall](/windows/security/threat-protection/windows-firewall/best-practices-configuring).
+:::image type="content" source="../../media/mde-p1/mem-firewallpolicy.png" alt-text="Firewall policy in Microsoft Endpoint Manager":::
+
+To configure basic firewall settings, follow these steps:
+
+1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)), and sign in.
+
+2. Choose **Endpoint security** > **Firewall**, and then choose **+ Create Policy**.
+
+3. Select a platform, such as **Windows 10 and later**, select the **Microsoft Defender Firewall** profile, and then choose **Create**. 
+
+4. On the **Basics** tab, specify a name and description, and then choose **Next**.
+
+5. Expand **Microsoft Defender Firewall**, and then scroll down to the bottom of the list.
+
+6. Configure the following settings:
+
+   - Set **Turn on Microsoft Defender Firewall for domain networks** to **Yes**, and then review the list of domain network settings. You can leave them set to **Not configured**, or change them to suit your organization's needs.
+   - Set **Turn on Microsoft Defender Firewall for private networks** to **Yes**, and then review the list of private network settings. You can leave them set to **Not configured**, or change them to suit your organization's needs.
+   - Set **Turn on Microsoft Defender Firewall for public networks** to **Yes**, and then review the list of public network settings. You can leave them set to **Not configured**, or change them to suit your organization's needs.
+
+   Then choose **Next**.
+
+7. On the **Scope tags** tab, if your organization is using scope tags, choose **+ Select scope tags**, and then select the tags you want to use. (This step is optional.)
+
+   Then, choose **Next**. 
+   
+   To learn more about scope tags, see [Use role-based access control (RBAC) and scope tags for distributed IT](/mem/intune/fundamentals/scope-tags).
+
+8. On the **Assignments** tab, select **Add all users** and **+ Add all devices**, and then choose **Next**. (You can alternately specify specific groups of users or devices.)
+
+9. On the **Review + create** tab, review your policy settings, and then choose **Create**.
+
+> [!TIP]
+> Firewall settings are detailed and can seem complex. Refer to [Best practices for configuring Windows Defender Firewall](/windows/security/threat-protection/windows-firewall/best-practices-configuring).
 
 ## Next steps
 
