@@ -107,7 +107,7 @@ In order to preview new features and provide early feedback, it is recommended t
 > [!WARNING]
 > Switching the channel after the initial installation requires the product to be reinstalled. To switch the product channel: uninstall the existing package, re-configure your device to use the new channel, and follow the steps in this document to install the package from the new location.
 
-Note your distribution and version and identify the closest entry for it under `https://packages.microsoft.com/config/`.
+Note your distribution and version and identify the closest entry for it under `https://packages.microsoft.com/[distro]/`.
 
 In the below commands, replace *[distro]* and *[version]* with the information you've identified:
 
