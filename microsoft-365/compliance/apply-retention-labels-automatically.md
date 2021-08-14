@@ -39,7 +39,7 @@ Auto-applying retention labels are powerful because:
 You can apply retention labels to content automatically when that content contains sensitive information, keywords or searchable properties, or a match for [trainable classifiers](classifier-get-started-with.md).
 
 > [!TIP]
-> Recently released, use searchable properties to identify [Teams meeting recordings](#microsoft-teams-meeting-recordings).
+> Use searchable properties to identify [Teams meeting recordings](#microsoft-teams-meeting-recordings).
 
 The processes to automatically apply a retention label based on these conditions:
 
@@ -122,7 +122,7 @@ You can apply retention labels to content automatically when that content contai
 
 - [A match for trainable classifiers](#auto-apply-labels-to-content-by-using-trainable-classifiers)
 
-All three conditions can automatically apply retention labels to emails as they are sent and received, but not to existing items in the mailbox (data at rest). For items in SharePoint and OneDrive, use the following table to identify when retention labels can be automatically applied to them:
+All three conditions can automatically apply retention labels to emails as they are sent and received (data in transit), but not to existing items in the mailbox (data at rest). For items in SharePoint and OneDrive, use the following table to identify when retention labels can be automatically applied to them:
 
 |Condition|New or modified items |Existing items (data at rest)|
 |:-----|:-----|:-----|

@@ -247,7 +247,7 @@ Use the following table to help you identify whether to use a retention policy o
 |Retention applied automatically | Yes | Yes |
 |Retention applied based on conditions <br /> - sensitive info types, KQL queries and keywords, trainable classifiers| No | Yes |
 |Retention applied manually | No | Yes |
-|UI presence for end users | No | Yes |
+|End user interaction | No | Yes |
 |Persists if the content is moved | No | Yes, within your Microsoft 365 tenant |
 |Declare item as a record| No | Yes |
 |Start the retention period when labeled or based on an event | No | Yes |
