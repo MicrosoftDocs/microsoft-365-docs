@@ -3,7 +3,6 @@ title: "How to opt-in for migration from Microsoft Cloud Germany (Microsoft Clou
 ms.author: andyber
 author: andybergen
 manager: laurawi
-ms.date: 12/01/2020
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
@@ -24,12 +23,12 @@ description: "Summary: "
 # How to opt-in for new migration from Microsoft Cloud Germany (Microsoft Cloud Deutschland) to Office 365 services in the new German datacenter regions
 
 > [!NOTE]
-> This article only applies to Microsoft Cloud Germany (Microsoft Cloud Deutschland) customers.
+> The migration opt-in period is closed as of June 1, 2021.  All eligible Microsoft Cloud Germany (Microsoft Cloud Deutschland) customers have now been migrated.  No further customers will be migrated through the automated process.  Any remaining Microsoft Cloud Germany subscriptions and tenants will be deactivated and deprovisioned in September 2021 as part of service closure activities.  
 >
 
 ## How to request migration
 
-If you are an eligible customer with your service provisioned in Microsoft Cloud Germany (Microsoft Cloud Deutschland) and you have signed in as a tenant (global) administrator, a page in the Microsoft 365 admin center allows you to opt-in for migration.
+If you were an eligible customer with your service provisioned in Microsoft Cloud Germany (Microsoft Cloud Deutschland) and you had signed in as a tenant (global) administrator, a page in the Microsoft 365 admin center allowed you to opt-in for migration. The Opt-In page in the Microsoft 365 admin center no longer allows for enrollment, however the process is outlined below for reference purposes.  
 
 To access the page, expand **Settings** in the navigation pane on the left, and then click **Organization Profile**.
 
