@@ -29,7 +29,7 @@ To set these tags, in [Microsoft 365 Defender](https://security.microsoft.com/),
 
 ![Go to Settings, then Identities](../../media/defender-identity/settings-identities.png)
 
-The tag settings will appear in the **Settings** column.
+The tag settings will appear under **Entity tags**.
 
 ![Tag setting types](../../media/defender-identity/tag-settings.png)
 
@@ -41,7 +41,7 @@ The **Sensitive tag** is used to identify high value assets. The lateral movemen
 
 You can also manually tag users, devices, or groups as sensitive.
 
-1. Select **Sensitive tag**. You will then see the existing sensitive **Users**, **Devices**, and **Groups**.
+1. Select **Sensitive**. You will then see the existing sensitive **Users**, **Devices**, and **Groups**.
 
     ![Sensitive entities](../../media/defender-identity/sensitive-entities.png)
 
@@ -59,7 +59,7 @@ Honeytoken entities are used as traps for malicious actors. Any authentication a
 
 You can tag users or devices with the **Honeytoken** tag in the same way you tag sensitive accounts.
 
-1. Select **Honeytoken tag**. You'll then see the existing honeytoken **Users** and **Devices**.
+1. Select **Honeytoken**. You'll then see the existing honeytoken **Users** and **Devices**.
 
     ![Honeytoken entities](../../media/defender-identity/honeytoken-entities.png)
 
@@ -75,7 +75,7 @@ You can tag users or devices with the **Honeytoken** tag in the same way you tag
 
 Defender for Identity considers Exchange servers as high-value assets and automatically tags them as **Sensitive**. You can also manually tag devices as Exchange servers.
 
-1. Select **Exchange server tag**. You'll then see the existing devices labeled with the **Exchange server** tag.
+1. Select **Exchange server**. You'll then see the existing devices labeled with the **Exchange server** tag.
 
     ![Exchange servers](../../media/defender-identity/exchange-servers.png)
 
