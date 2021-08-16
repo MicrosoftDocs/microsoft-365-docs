@@ -37,6 +37,11 @@ Learn more by watching [this video](https://www.youtube.com/watch?v=Tdz6KfruDGo&
 > [!TIP]
 > Don't have Microsoft Defender for Office 365 yet? [Contact sales to start a trial](https://info.microsoft.com/ww-landing-M365SMB-web-contact.html).
 
+## August 2021
+
+- [Admin review for reported messages](admin-review-reported-message.md): Admins can now send templated messages back to end users after they review reported messages. The templates can be customized for your organization and based on your admin's verdict as well.
+- [Add allows in the Tenant Allow/Block List](manage-tenant-allows.md): Allows cannot be added directly to the Tenant Allow/Block List but now can be if the blocked message is submitted as part of the admin submission process. Depending on the block that happened, an URL, file, and/or sender allow will be added to the Tenant Allow/Block List. In most cases, the allows are added to give the system some time and allow it naturally if warranted. In some cases, Microsoft manages the allow for you.
+
 ## July 2021
 
 - [Email analysis improvements in automated investigations](email-analysis-investigations.md)
