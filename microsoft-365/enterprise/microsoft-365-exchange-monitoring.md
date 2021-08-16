@@ -31,7 +31,7 @@ Here is an example of the **Service health** page in the Microsoft 365 admin cen
 
 :::image type="content" source="../media/microsoft-365-exchange-monitoring/service-health-dashboard-example.png" alt-text="The Service health page in the Microsoft 365 admin center":::
 
-The value of the **Health** column under **Issues in your organization** indicates whether organization's infrastructure or third-party software affects your organization’s users' and/or priority accounts' service health experience with Exchange Online. Advisories or incidents require *your* actions to resolve.
+The value of the **Health** column under **Issues in your organization** indicates whether organization's infrastructure or third-party software affects your organization's users' and/or priority accounts' service health experience with Exchange Online. Advisories or incidents require *your* actions to resolve.
 
 The value of the **Health** column under **Microsoft service health** indicates that the service is healthy or has advisories or incidents based on the cloud services that Microsoft maintains.
 
@@ -66,12 +66,12 @@ With Exchange Online monitoring supports the following scenarios:
   - Outlook Mac client
   - Open Outlook on the web
 
-   For these clients, you can see the number of active users in the last 30 minutes based on users reading an email, along with number of incidents and advisories in the dashboard. This data is compared to the same interval for the previous week to see if there’s an issue.
+   For these clients, you can see the number of active users in the last 30 minutes based on users reading an email, along with number of incidents and advisories in the dashboard. This data is compared to the same interval for the previous week to see if there's an issue.
 
    >[!Note]
    > Active user count is measured by a single activity, for example, when a user reads an email. It only accounts for the last 30 minutes of activity.
 
-- **App connectivity**. Estimated connectivity is based on the percentage of successful, synthetic connections between your organization's devices and Exchange Online, and may include issues outside of Microsoft’s control. 
+- **App connectivity**. Estimated connectivity is based on the percentage of successful, synthetic connections between your organization's devices and Exchange Online, and may include issues outside of Microsoft's control. 
 
 - **Mail flow**: The number of messages successfully delivered to a mailbox without any delay after the message reached the Microsoft 365 network.
 
@@ -80,43 +80,6 @@ With Exchange Online monitoring supports the following scenarios:
 ![An example of monitoring Exchange health for mail delivery](../media/microsoft-365-exchange-monitoring/exchange-monitoring-scenario-example.png)
 
 For all these scenarios, the key numbers are for the last 30 minutes in the main dashboard. Detailed views for each of these scenarios show the near real-time trend for seven days with the 30-minute aggregate compared with the previous week.
-
-## Priority accounts monitoring scenarios
-
-With Exchange Online priority account monitoring, you can view the health for the following scenarios after configuring [priority accounts](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts):
-
-- Exchange licensing
-- Mail delivery
-- Mailbox storage
-- Message limit
-- Subfolders per folder
-- Folder hierarchy
-- Recoverable items
-
-The Exchange licensing scenario checks if the priority account is not able to login due to invalid license issues which can be addressed by the tenant admin.
-
-The mail delivery scenario checks for delayed or non-delivered emails for priority accounts. The Microsoft 365 admin center provides a deep link to the Exchange admin center to follow the message trace. Exchange Admin Center role permissions may be required to edit thresholds. For more information, see [Email issues for priority accounts report in the new EAC](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report). 
-
-The remaining five scenarios above check if your priority account’s mailbox is close to reaching or has reached the limits described in [Exchange Online limits](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#mailbox-storage-limits).
-
-For these scenarios, you can see active and resolved advisories and incidents affecting your priority accounts. Identifiable information for the priority accounts will be displayed in the advisory or incident details along with recommendations. Here is an example.
- 
-:::image type="content" source="../media/microsoft-365-exchange-monitoring/exchange-priority-accounts-scenario-example.png" alt-text="Example of active and resolved advisories and incidents affecting your priority accounts":::
-
-In the affected account pane, the **Status** column has these values:
-
-- Fixed: The issue causing the advisory or incident has been addressed for the priority account. There is no longer an issue. 
-
-- Active: The issue causing the advisory or incident is ongoing for the priority account. The issue remains. 
-
-- Delayed: The issue causing the advisory or incident has not been addressed for the priority account in 96 hours, so it is suspended. The issue remains. 
-
-Here is an example.
- 
-:::image type="content" source="../media/microsoft-365-exchange-monitoring/exchange-status-column-example.png" alt-text="Example of the status column in the affected account pane":::
-
-An advisory or incident will be resolved after no accounts remain in the **Active** state. 
-
 
 ## Send us feedback
 
@@ -130,36 +93,37 @@ There are two ways you can provide feedback:
 
 ## Frequently asked questions
 
-#### 1. Why don’t I see “Exchange Online monitoring” under Health in the Microsoft 365 admin center? 
+#### 1. Why don't I see "Exchange Online monitoring" under Health in the Microsoft 365 admin center? 
 
-First, make sure you’ve enabled the new admin center on the **Home** page of the Microsoft 365 admin center. 
+First, make sure you've enabled the new admin center on the **Home** page of the Microsoft 365 admin center.
 
 Then make sure you meet both of the following requirements: 
 
-- Your organization needs to have a license count of at least 5,000, from one or a combination of these products: Office 365 E3, Microsoft 365 E3, Office 365 E5, Microsoft 365 E5. 
+- Your organization needs to have a license count of at least 10,000, from one or a combination of these products: Office 365 E3, Microsoft 365 E3, Office 365 E5, Microsoft 365 E5. 
+
 - Your organization needs to have at least 50 monthly active Exchange Online users.
 
-If the license count for your organization goes below 5,000 users and the monthly active users goes below 50 users, Exchange Online monitoring won’t be enabled until these requirements are met.
+If the license count for your organization falls below 10,000 users and the monthly active users falls below 50 users, Exchange Online monitoring won't be enabled until these requirements are met.
 
-#### 2. The active user count in the dashboard for each client appears to be low. We have a lot of active licenses assigned to users. What does this mean? 
+#### 2. The active user count in the dashboard for each client appears to be low. We have a lot of active licenses assigned to users. What does this mean?
 
-The active user count shown in monitoring is based on a 30-minute window where users have performed the activity called out in the feature. This shouldn’t be confused with usage numbers. To view usage numbers, use activity reports in the Microsoft 365 admin center (**Reports > Usage**).
+The active user count shown in monitoring is based on a 30-minute window where users have performed the activity called out in the feature. This shouldn't be confused with usage numbers. To view usage numbers, use activity reports in the Microsoft 365 admin center (**Reports > Usage**).
 
-#### 3. Will there be other monitoring scenarios for other services such as Teams and SharePoint? 
+#### 3. Will there be other monitoring scenarios for other services such as Teams and SharePoint?
 
-Microsoft is integrating this experience directly inside the Service Health dashboard in the Microsoft 365 admin center. This will provide opportunities for Microsoft to extend monitoring scenarios for other services, which will be announced when there is news to share. 
+Microsoft is integrating this experience directly inside the Service Health dashboard in the Microsoft 365 admin center. This will provide opportunities for Microsoft to extend monitoring scenarios for other services, which will be announced when there is news to share.
 
-#### 4. What is the plan for general availability of this experience? 
+#### 4. What is the plan for general availability of this experience?
 
-Microsoft has integrated Exchange Online monitoring directly on the **Service Health** dashboard in the Microsoft 365 admin center. 
+Microsoft has integrated Exchange Online monitoring directly on the **Service Health** dashboard in the Microsoft 365 admin center.
 
 With this new integrated experience, Microsoft's plan is to collect your feedback and then define our plan for general availability.
 
 #### 5. Is this a free (included) or paid (extra) feature? 
 
-This is a free feature that is in Public Preview and only available for customers that meet the requirements in question 1. There isn’t a paid option to receive this content. 
+This is a free feature that is in preview and only available for customers that meet the requirements in question 1. There isn't a paid option to receive this content.
 
-#### 6. How do I provide feedback? 
+#### 6. How do I provide feedback?
 
 For general feedback, use the **Give feedback** icon on the bottom-right corner of the **Exchange Online** monitoring page. 
 
@@ -169,13 +133,13 @@ For feedback on incidents or advisories, use the **Is this post helpful?** link.
 
 The data is instrumented in the Exchange Online service. If there is a failure that happens before the request reaches Exchange Online or there is a failure in Exchange Online, you will see a drop in the activity signal.
 
-#### 8. Are there any privacy concerns? 
+#### 8. Are there any privacy concerns?
 
 Monitoring focuses on service metadata and user content is not monitored. Control is on the tenant admin to configure priority accounts.
 
 ## See also
 
 - [How to check Microsoft 365 service health](view-service-health.md) 
-- [Exchange Online limits](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#mailbox-storage-limits)
-- [Manage and monitor priority accounts](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts)
+- [Exchange Online limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#mailbox-storage-limits)
+- [Manage and monitor priority accounts](/microsoft-365/admin/setup/priority-accounts)
 - [Using Priority Accounts in Microsoft 365](https://techcommunity.microsoft.com/t5/microsoft-365-blog/using-priority-accounts-in-microsoft-365/ba-p/1873314)
