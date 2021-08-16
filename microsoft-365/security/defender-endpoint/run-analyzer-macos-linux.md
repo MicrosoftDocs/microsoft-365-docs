@@ -61,7 +61,7 @@ run:
 installed, the analyzer will try to fetch it from the official repository for
 python packages below:  
 https://files.pythonhosted.org/packages/\*/lxml\*.whl
-> In addition, the tool currently requires python version 3 or later to be installed.
+> In addition, the tool currently requires Python version 3 or later to be installed.
 
 Example:  
 
