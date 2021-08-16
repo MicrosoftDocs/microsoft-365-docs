@@ -291,6 +291,9 @@ With web protection, you can protect your organization's devices from web threat
 
 #### Configure web content filtering
 
+> [!NOTE]
+> Web content filtering is currently in preview.
+
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com/](https://security.microsoft.com/)) and sign in.
 
 2. Choose **Settings** > **Endpoints**.
