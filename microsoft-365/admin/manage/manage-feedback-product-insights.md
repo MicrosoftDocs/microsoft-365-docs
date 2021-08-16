@@ -43,25 +43,34 @@ You need to be a feedback or global administrator to view and read survey report
 
 :::image type="content" source="../../media/prosight-product-feedback.png" alt-text="Screenshot: Microsoft 365 survey insights":::
 
-- **Response details**
+- **Chart information**
 
+Total survey responses and comments by end-users. This area displays Total Feedback, Feedback volume by month, Volume by application and Volume by operating system.
 
+**Total Feedback** shows
 
-:::image type="content" source="../../media/prosight-response-details.png" alt-text="Screenshot: Microsoft 365 survey insights":::
+**Feedback volume by month** shows
 
-- **Response volume by app**
+**Volume by application** shows
 
-:::image type="content" source="../../media/prosight-response-volume-by-app.png" alt-text="Screenshot: Microsoft 365 survey insights":::
+**Volume by operating system** shows
 
-- **Response volume by month**
-
-:::image type="content" source="../../media/prosight-response-volume-by-month.png" alt-text="Screenshot: Microsoft 365 survey insights":::
+:::image type="content" source="../../media/prosight-charts area.png" alt-text="Screenshot: Microsoft 365 survey insights":::
 
 - **Top topic filters**
+
+You can filter by Date, Surveys, Application, Language and Fork.
+**Date filter** You can search by date for the following: All dates, Past 6 Months, Past 30 days, Past Week.
+**Surveys filter** You can select different surveys for your organization.
+**Application filter** You can select the application that the survey was collected from.
+**Language filter** You can filter by the languages of the apps that survey respondents were using while responding to the surveys.
+**Fork filter** You can filter by Microsoft 365 forks.
 
 :::image type="content" source="../../media/prosight-top-topic-filters.png" alt-text="Screenshot: Microsoft 365 survey insights":::
 
 - **Export to CSV** and **Search**
+
+You can export data using filters that you select. You can search for keywords.
 
 :::image type="content" source="../../media/prosight-export-to-csv-and-search.png" alt-text="Screenshot: Microsoft 365 survey insights":::
 
