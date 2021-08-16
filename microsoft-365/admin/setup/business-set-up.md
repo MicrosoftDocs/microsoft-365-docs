@@ -42,7 +42,7 @@ Watch this video for an overview of Microsoft 365 Business Premium setup.<br><br
 
 ## Add your domain, users, and set up policies
 
-When you purchase Microsoft 365 Business Premium, you have the option of using a domain you own, or buying one during the [sign-up](sign-up.md).
+When you purchase Microsoft 365 Business Premium, you have the option of using a domain you own, or buying one during the [sign-up](../../business/sign-up.md).
 
 - If you purchased a new domain when you signed up, your domain is all set up and you can move to [Add users and assign licenses](#add-users-and-assign-licenses).
 
@@ -52,7 +52,7 @@ When you purchase Microsoft 365 Business Premium, you have the option of using a
 
 2. Choose **Go to setup** to start the wizard.
 
-    ![Select Go to setup.](../media/gotosetupinadmincenter.png)
+    ![Select Go to setup.](../../media/gotosetupinadmincenter.png)
 
 3. On the **Install your Office apps** page, you can optionally install the apps on your own computer.
     
@@ -61,24 +61,24 @@ When you purchase Microsoft 365 Business Premium, you have the option of using a
     > [!IMPORTANT]
     > If you purchased a domain during the sign-up, you will not see **Add a domain** step here. Go to [Add users](#add-users-and-assign-licenses) instead.
 
-    ![Screenshot of the Personalize your sign-in page.](../media/adddomain.png)
+    ![Screenshot of the Personalize your sign-in page.](../../media/adddomain.png)
 
     
 4. Follow the steps in the wizard to [Create DNS records at any DNS hosting provider for Microsoft 365](/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) that verifies you own the domain. If you know your domain host, see also [Add a domain to Microsoft 365](/microsoft-365/admin/setup/add-domain).
 
     If your hosting provider is GoDaddy or another host enabled with [domain connect](/office365/admin/get-help-with-domains/domain-connect), the process is easy and you'll be automatically asked to sign in and let Microsoft authenticate on your behalf.
 
-    ![On GoDaddy Confirm Access page, select Authorize.](../media/godaddyauth.png)
+    ![On GoDaddy Confirm Access page, select Authorize.](../../media/godaddyauth.png)
 
 ### Add users and assign licenses
 
-You can add users in the wizard, but you can also [add users later](../admin/add-users/add-users.md) in the admin center. Additionally, if you have a local domain controller, you can add users with [Azure AD Connect](/azure/active-directory/hybrid/how-to-connect-install-express).
+You can add users in the wizard, but you can also [add users later](../add-users/add-users.md) in the admin center. Additionally, if you have a local domain controller, you can add users with [Azure AD Connect](/azure/active-directory/hybrid/how-to-connect-install-express).
 
 #### Add users in the wizard
 
 Any users you add in the wizard get automatically assigned a Microsoft 365 Business Premium license.
 
-![Screenshot of the Add new users page in the wizard](../media/addnewuserspage.png)
+![Screenshot of the Add new users page in the wizard](../../media/addnewuserspage.png)
 
 1. If your Microsoft 365 Business Premium subscription has existing users (for example, if you used Azure AD Connect), you get an option to assign licenses to them now. Go ahead and add licenses to them as well.
 
@@ -91,12 +91,12 @@ Any users you add in the wizard get automatically assigned a Microsoft 365 Busin
   
 To set up services, you have to update some records at your DNS host or domain registrar.
   
-1. The setup wizard typically detects your registrar and gives you a link to step-by-step instructions for updating your NS records at the registrar website. If it doesn't, [Change nameservers to set up Microsoft 365 with any domain registrar](../admin/get-help-with-domains/change-nameservers-at-any-domain-registrar.md). 
+1. The setup wizard typically detects your registrar and gives you a link to step-by-step instructions for updating your NS records at the registrar website. If it doesn't, [Change nameservers to set up Microsoft 365 with any domain registrar](../get-help-with-domains/change-nameservers-at-any-domain-registrar.md). 
 
     - If you have existing DNS records, for example an existing web site, but your DNS host is enabled for [domain connect](/office365/admin/get-help-with-domains/domain-connect), choose **Add records for me**. On the **Choose your online services** page, accept all the defaults, and choose **Next**, and choose **Authorize** on your DNS host's page.
     - If you have existing DNS records with other DNS hosts (not enabled for domain connect), you'll want to manage your own DNS records to make sure the existing services stay connected. See [domain basics](/office365/admin/get-help-with-domains/dns-basics) for more info.
 
-        ![Activate records page.](../media/activaterecords.png)
+        ![Activate records page.](../../media/activaterecords.png)
 
 2. Follow the steps in the wizard and email and other services will be set up for you.
 
@@ -104,16 +104,16 @@ To set up services, you have to update some records at your DNS host or domain r
 
 The policies you set up in the wizard are applied automatically to a [Security group](/office365/admin/create-groups/compare-groups#security-groups) called *All Users*. You can also create additional groups to assign policies to in the admin center.
 
-1. On the **Increase protection from advanced cyber threats**, it is recommended that you accept the defaults to let [Office 365 Advance Threat Protection](../security/office-365-security/defender-for-office-365.md) scan files and links in Office apps.
+1. On the **Increase protection from advanced cyber threats**, it is recommended that you accept the defaults to let [Office 365 Advance Threat Protection](../../security/office-365-security/defender-for-office-365.md) scan files and links in Office apps.
 
-    ![Screenshot of Increase protection page.](../media/increasetreatprotection.png)
+    ![Screenshot of Increase protection page.](../../media/increasetreatprotection.png)
 
 
 2. On the **Prevent leaks of sensitive data** page, accept the defaults to turn on Office 365 Data Loss Prevention (DLP) to track sensitive data in Office apps and prevent the accidental sharing of these outside your organization.
 
 3. On the **Protect data in Office for mobile** page, leave mobile app management on, expand the settings and review them, and then select **Create mobile app management policy**.
 
-    ![Screenshot of Protect data in Office for mobile page.](../media/protectdatainmobile.png)
+    ![Screenshot of Protect data in Office for mobile page.](../../media/protectdatainmobile.png)
 
 
 ## Secure Windows 10 PCs
@@ -130,4 +130,4 @@ You can also install Office individually. See [install Office on a PC or Mac](ht
 
 ## Related content
 
-[Microsoft 365 for business training videos](../business-video/index.yml) (link page)
+[Microsoft 365 for business training videos](../../business-video/index.yml) (link page)
