@@ -1,6 +1,6 @@
 ---
 title: Make the switch from non-Microsoft endpoint protection to Microsoft Defender for Endpoint
-description: Make the switch to Microsoft Defender for Endpoint. Read this article for an overview.
+description: Make the switch to Microsoft Defender for Endpoint, which includes Microsoft Defender Antivirus for your endpoint protection solution.
 keywords: migration, windows defender advanced endpoint protection, for Endpoint, edr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -21,7 +21,7 @@ ms.collection:
   - m365solution-symantecmigrate
 ms.topic: conceptual
 ms.custom: migrationguides
-ms.date: 06/14/2021
+ms.date: 08/16/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ms.technology: mde
 ---
