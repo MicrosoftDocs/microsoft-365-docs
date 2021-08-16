@@ -43,7 +43,7 @@ You need to be a feedback or global administrator to view and read survey report
 
 :::image type="content" source="../../media/prosight-product-feedback.png" alt-text="Screenshot: Microsoft 365 survey insights":::
 
-- **Chart information**
+### Chart information
 
 Total survey responses and comments by end-users. This area displays Total Feedback, Feedback volume by month, Volume by application and Volume by operating system.
 
@@ -57,7 +57,7 @@ Total survey responses and comments by end-users. This area displays Total Feedb
 
 :::image type="content" source="../../media/prosight-charts area.png" alt-text="Screenshot: Microsoft 365 survey insights":::
 
-- **Top topic filters**
+### Top topic filters
 
 You can filter by Date, Surveys, Application, Language and Fork.
 **Date filter** You can search by date for the following: All dates, Past 6 Months, Past 30 days, Past Week.
@@ -68,12 +68,12 @@ You can filter by Date, Surveys, Application, Language and Fork.
 
 :::image type="content" source="../../media/prosight-top-topic-filters.png" alt-text="Screenshot: Microsoft 365 survey insights":::
 
-- **Export to CSV** and **Search**
+### Export to CSV and Search
 
 You can export data using filters that you select. You can search for keywords.
 
 :::image type="content" source="../../media/prosight-export-to-csv-and-search.png" alt-text="Screenshot: Microsoft 365 survey insights":::
 
-- **Filters**
+### Filters
 
 :::image type="content" source="../../media/prosight-filters.png" alt-text="Screenshot: Microsoft 365 survey insights":::
