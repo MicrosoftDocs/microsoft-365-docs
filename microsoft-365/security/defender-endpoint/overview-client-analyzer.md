@@ -84,7 +84,7 @@ For more information about our privacy statement, see [Microsoft Privacy Stateme
     remotely via [Live
     Response](troubleshoot-collect-support-log.md),
     then SysInternals
-    [PsExec.exe](/sysinternals/downloads/psexec)
+    [PsExec.exe](https://docs.microsoft.com/sysinternals/downloads/psexec)
     should be allowed (at least temporarily) to run.  
     The analyzer calls into PsExec.exe tool to run cloud connectivity checks as
     Local System and emulate the behavior of the SENSE service.
