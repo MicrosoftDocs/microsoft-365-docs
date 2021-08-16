@@ -26,7 +26,7 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Add tags on devices to create a logical group affiliation. Device tags support proper mapping of the network, enabling you to attach different tags to capture context and to enable dynamic list creation as part of an incident. Tags can be used as a filter in **Devices list** view, or to group devices. For more information on device grouping, see [Create and manage device groups](machine-groups.md).
 
@@ -53,11 +53,11 @@ To add device tags using API, see [Add or remove device tags API](add-or-remove-
 
 2. Select **Manage Tags** from the row of Response actions.
 
-    ![Image of manage tags button](images/manage-tags.png)
+    :::image type="content" alt-text="Image of manage tags button." source="images/manage-tags-option.png":::
 
 3. Type to find or create tags
 
-    ![Image of adding tags on a device1](images/new-tags.png)
+    :::image type="content" alt-text="Image of adding tags on a device1." source="images/create-new-tag.png":::
 
 Tags are added to the device view and will also be reflected on the **Devices list** view. You can then use the **Tags** filter to see the relevant list of devices.
 
@@ -67,7 +67,7 @@ Tags are added to the device view and will also be reflected on the **Devices li
 
 You can also delete tags from this view.
 
-![Image of adding tags on a device2](images/more-manage-tags.png)
+:::image type="content" alt-text="Image of adding tags on a device2." source="images/new-tag-label-display.png":::
 
 ## Add device tags by setting a registry key value
 

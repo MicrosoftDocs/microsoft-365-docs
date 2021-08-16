@@ -27,9 +27,9 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Microsoft is committed to providing you with the information and controls you need to make choices about how your data is collected and used when you’re using Microsoft Defender for Endpoint on macOS.
+Microsoft is committed to providing you with the information and controls you need to make choices about how your data is collected and used when you're using Microsoft Defender for Endpoint on macOS.
 
 This topic describes the privacy controls available within the product, how to manage these controls with policy settings and more details on the data events that are collected.
 
@@ -45,7 +45,7 @@ Some diagnostic data is required, while some diagnostic data is optional. We giv
 
 There are two levels of diagnostic data for Microsoft Defender for Endpoint client software that you can choose from:
 
-* **Required**: The minimum data necessary to help keep Microsoft Defender for Endpoint secure, up-to-date, and performing as expected on the device it’s installed on.
+* **Required**: The minimum data necessary to help keep Microsoft Defender for Endpoint secure, up-to-date, and performing as expected on the device it's installed on.
 
 * **Optional**: Additional data that helps Microsoft make product improvements and provides enhanced information to help detect, diagnose, and remediate issues.
 
@@ -96,7 +96,7 @@ The following fields are considered common for all events:
 
 ### Required diagnostic data
 
-**Required diagnostic data** is the minimum data necessary to help keep Microsoft Defender for Endpoint secure, up-to-date, and perform as expected on the device it’s installed on.
+**Required diagnostic data** is the minimum data necessary to help keep Microsoft Defender for Endpoint secure, up-to-date, and perform as expected on the device it's installed on.
 
 Required diagnostic data helps to identify problems with Microsoft Defender for Endpoint that may be related to a device or software configuration. For example, it can help determine if a Microsoft Defender for Endpoint feature crashes more frequently on a particular operating system version, with newly introduced features, or when certain Microsoft Defender for Endpoint features are disabled. Required diagnostic data helps Microsoft detect, diagnose, and fix these problems more quickly so the impact to users or organizations is reduced.
 
@@ -128,6 +128,7 @@ The following fields are collected:
 | cloud_service.service_uri                           | URI used to communicate with the cloud. |
 | cloud_service.diagnostic_level                      | Diagnostic level of the device (required, optional). |
 | cloud_service.automatic_sample_submission           | Whether automatic sample submission is turned on or not. |
+| cloud_service.automatic_definition_update_enabled   | Whether automatic definition update is turned on or not. |
 | edr.early_preview                                   | Whether the device should run EDR early preview features. |
 | edr.group_id                                        | Group identifier used by the detection and response component. |
 | edr.tags                                            | User-defined tags. |
@@ -214,6 +215,7 @@ The following fields are collected:
 | antivirus_engine.scan_cache_maximum                | Size of the product cache. |
 | antivirus_engine.maximum_scan_threads              | Maximum number of threads used for scanning. |
 | antivirus_engine.threat_restoration_exclusion_time | Time out before a file restored from the quarantine can be detected again. |
+| antivirus_engine.threat_type_settings              | Configuration for how different threat types are handled by the product. |
 | filesystem_scanner.full_scan_directory             | Full scan directory. |
 | filesystem_scanner.quick_scan_directories          | List of directories used in quick scan. |
 | edr.latency_mode                                   | Latency mode used by the detection and response component. |

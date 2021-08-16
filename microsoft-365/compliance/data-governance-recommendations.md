@@ -12,7 +12,7 @@ ms.service: O365-seccomp
 ms.collection:
 - SPO_Content
 localization_priority: Priority
-search.appverid: 
+search.appverid:
 - MOE150
 - MET150
 ROBOTS: NOINDEX, NOFOLLOW
@@ -27,22 +27,22 @@ This topic lists the data-governance recommendations you might see and describes
 
 ## Clean up voicemail
 
-This recommendation appears when email messages identified as the message type 'voicemail' are detected in users' mailboxes. Learn more about [message properties in Exchange](/exchange/policy-and-compliance/ediscovery/message-properties-and-search-operators?view=exchserver-2019#searchable-properties-in-exchange).
+This recommendation appears when email messages identified as the message type 'voicemail' are detected in users' mailboxes. Learn more about [message properties in Exchange](/exchange/policy-and-compliance/ediscovery/message-properties-and-search-operators#searchable-properties-in-exchange).
 
-## Label attorney-client privilege content 
+## Label attorney-client privilege content
 
 This recommendation appears when either of the following criteria are met.
 
 - Any of combination of these keywords is detected in the body of an email message:
-    - ACP
-    - Attorney Client Privilege
-    - Attorney-Client Privilege
-    - Attorney-Client Privileged
+  - ACP
+  - Attorney Client Privilege
+  - Attorney-Client Privilege
+  - Attorney-Client Privileged
 
 - Any combination of these keywords are detected in SharePoint or OneDrive files:
-    - ACP
-    - Attorney Client Privilege*
-    - AC Privilege
+  - ACP
+  - Attorney Client Privilege*
+  - AC Privilege
 
 ## Retain audio files
 
@@ -121,18 +121,18 @@ This recommendation appears when any of the following file types are detected in
 - .PNM
 - .WEBP
 
-## Retain NDA content 
+## Retain NDA content
 
 This recommendation appears when either of the following criteria are met.
 
 - Any of combination of these keywords is detected in the body of an email message:
-    - NDA
-    - "Non-Disclosure Agreement"
-    - "Non Disclosure Agreement"
+  - NDA
+  - "Non-Disclosure Agreement"
+  - "Non Disclosure Agreement"
 
 - Any combination of these keywords are detected in .PDF or .DOC files in SharePoint or OneDrive:
-    - NDA
-    - Non Disclosure Agreement
+  - NDA
+  - Non Disclosure Agreement
 
 ## Retain software development files
 

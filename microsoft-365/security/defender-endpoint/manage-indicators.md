@@ -54,6 +54,11 @@ The current supported actions are:
 - Allow
 - Alert only
 - Alert and block
+- Warn
+
+
+>[!NOTE]
+> Using Warn mode will prompt your users with a warning if they open a risky app. The prompt won't block them from using the app, but you can provide a custom message and links to a company page that describes appropriate usage of the app. Users can still bypass the warning and continue to use the app if they need. For more information, see [Govern apps discovered by Microsoft Defender for Endpoint](/cloud-app-security/mde-govern).
 
 
 You can create an indicator for:
@@ -63,7 +68,7 @@ You can create an indicator for:
 
 
 > [!NOTE]
-> There is a limit of 15,000 indicators per tenant. File and certificate indicators do not block [exclusions defined for Microsoft Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus). Indicators are not supported in Microsoft Defender Antivirus when it is in passive mode. 
+> There is a limit of 15,000 indicators per tenant. File and certificate indicators do not block [exclusions defined for Microsoft Defender Antivirus](/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus). Indicators are not supported in Microsoft Defender Antivirus when it is in passive mode. 
 
 
 ## Related topics

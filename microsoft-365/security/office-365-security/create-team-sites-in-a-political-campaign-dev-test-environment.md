@@ -1,6 +1,6 @@
 ---
 title: Create team sites - Political campaign dev environment
-f1.keywords: 
+f1.keywords:
   - NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
@@ -8,12 +8,12 @@ manager: laurawi
 ms.date: 05/21/2018
 audience: ITPro
 ms.topic: article
-ms.collection: 
+ms.collection:
   - Ent_O365
   - Strat_O365_Enterprise
 
 localization_priority: Priority
-search.appverid: 
+search.appverid:
   - MET150
 ms.custom: seo-marvel-apr2020
 ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
@@ -29,9 +29,9 @@ ms.prod: m365-security
 **Applies to**
 
 - [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
-- 
- **Summary:** Create public, private, sensitive, and highly confidential SharePoint Online team sites in your political campaign dev/test environment. 
-   
+
+ **Summary:** Create public, private, sensitive, and highly confidential SharePoint Online team sites in your political campaign dev/test environment.
+
 Use the instructions in this article to create a dev/test environment that includes the four different types of SharePoint Online team sites for the [Microsoft Security Guidance for Political Campaigns, Nonprofits, and Other Agile Organizations](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md) solution. These sites are described in detail on Topic 10, titled **SharePoint and OneDrive for Business**.
 
 ## Phase 1: Create your political campaign dev/test environment
@@ -42,43 +42,46 @@ First, follow the instructions in [Configure groups and users for a political ca
 
 In this phase, you create the labels for the different levels of security for SharePoint Online team site document folders.
 
-1. If needed, sign in to the admin center with the credentials of the global administrator account of your trial subscription. For help, see [Where to sign in to Microsoft 365](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. If needed, sign in to the Microsoft 365 admin center (<https://admin.microsoft.com>) with the credentials of the global administrator account of your trial subscription. For help, see [Where to sign in to Microsoft 365](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4).
 
-2. From the **Microsoft Office Home** tab, click the **Admin** tile.
+2. From the **Home** page where you start, click **Show all**. In the **Admin centers** section that appears, click **Compliance**.
 
-3. From the new **Microsoft 365 admin center** tab of your browser, click **Admin centers > Security & Compliance**.
+3. From the **Home** page of the Microsoft 365 compliance center, go to the **Solutions** section \> **Information protection**. To go directly to the **Information protection** page, use <https://compliance.microsoft.com//informationprotection>.
 
-4. From the new **Home - Security & Compliance** tab of your browser, click **Classifications > Labels**.
+4. On the **Information protection** page, verify that the **Label** tag is selected, and then click  ![Create a label icon](../../media/m365-cc-sc-create-icon.png) **Create a label**.
 
-5. From the **Home > Labels** pane, click **Create a label**.
+5. The **New sensitivity label** wizard opens. On the **Name & description** step, enter the following values:
+   - **Name**: Type **Internal**.
+   - **Display name**
+   - **Description for users**
 
-6. On the **Name your label** pane, type **Internal**, and then click **Next**.
+   When you're finished, click **Next**.
 
-7. On the **Label settings** pane, click **Next**.
+6. On the **Label settings** pane, click **Next**.
 
-8. On the **Review your settings** pane, click **Create this label**, and then click **Close**.
+7. On the **Review your settings** pane, click **Create this label**, and then click **Close**.
 
-9. Repeat steps 5-8 for these additional labels:
+8. Repeat steps 5-8 for these additional labels:
 
    - Private
    - Sensitive
    - Highly Confidential
 
-10. From the **Home > Labels** pane, click **Publish labels**.
+9. From the **Home > Labels** pane, click **Publish labels**.
 
-11. On the **Choose labels to publish** pane, click **Choose labels to publish**.
+10. On the **Choose labels to publish** pane, click **Choose labels to publish**.
 
-12. On the **Choose labels** pane, click **Add** and select all four labels.
+11. On the **Choose labels** pane, click **Add** and select all four labels.
 
-13. Click **Done**.
+12. Click **Done**.
 
-14. On the **Choose labels to publish** pane, click **Next**.
+13. On the **Choose labels to publish** pane, click **Next**.
 
-15. On the **Choose locations** pane, click **Next**.
+14. On the **Choose locations** pane, click **Next**.
 
-16. On the **Name your policy** pane, type **Campaign** in **Name**, and then click **Next**.
+15. On the **Name your policy** pane, type **Campaign** in **Name**, and then click **Next**.
 
-17. On the **Review your settings** pane, click **Publish labels**, and then click **Close**.
+16. On the **Review your settings** pane, click **Publish labels**, and then click **Close**.
 
 ## Phase 3: Create your SharePoint Online team sites
 

@@ -36,3 +36,14 @@ Microsoft Office apps can be found on your  **Start** menu. If you don&#39;t see
 5. Get the Windows app, and then select  **Run**. Teams displays a prompt when installation is complete.
 
 The Office apps you installed now appear in your  **Start** menu.
+
+## Related content
+
+[Migrate your content to Microsoft 365](/sharepointmigration/migrate-to-sharepoint-online.md) (article)
+
+[Install the Microsoft 365 Admin mobile app on your phone](admin-mobile.md) (video)
+
+[Get started with Microsoft Teams in your small business](get-started-teams-small-business.md) (video)
+
+[Easily share files externally](share-files-externally.md) (video)
+

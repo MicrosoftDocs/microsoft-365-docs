@@ -65,6 +65,9 @@ When a policy's **Access by unallowed apps and browsers** setting is turned on a
 > [!IMPORTANT]
 > Do not include the path to the executable, but only the executable name (such as browser.exe).
 
+### Unallowed Bluetooth apps
+
+Prevent people from transferring files protected by your policies via specific Bluetooth apps.
 
 ### Browser and domain restrictions
 Restrict sensitive files that match your policies from being shared with unrestricted cloud service domains.
@@ -92,6 +95,11 @@ You can control how users interact with the business justification option in DLP
 - Users can only select a built-in justification.
 - Users can only enter their own justification.
 
+### Always audit file activity for devices
+
+By default, when devices are onboarded, activity for Office, PDF, and CSV files is automatically audited and available for review in activity explorer. Turn this feature off if you want this activity to be audited only when onboarded devices are included in an active policy.
+
+File activity will always be audited for onboarded devices, regardless of whether they are included in an active policy.
 
 ## Tying DLP settings together
 
@@ -217,7 +225,7 @@ These scenarios require that you already have devices onboarded and reporting in
 - [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md)
 - [Get started with Activity explorer](data-classification-activity-explorer.md)
 - [Microsoft Defender for Endpoint](/windows/security/threat-protection/)
-- [Onboarding tools and methods for Windows 10 machines](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)
+- [Onboarding tools and methods for Windows 10 machines](/microsoft-365/compliance/dlp-configure-endpoints)
 - [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)
 - [Azure Active Directory (AAD) joined](/azure/active-directory/devices/concept-azure-ad-join)
 - [Download the new Microsoft Edge based on Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)
