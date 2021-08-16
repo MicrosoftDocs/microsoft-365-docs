@@ -94,7 +94,7 @@ The following sections contain the exclusions that are delivered with automatic 
 
 ### Default exclusions for all roles
 
-This section lists the default exclusions for all Windows Server 2016 and 2019 roles.
+This section lists the default exclusions for all roles in Windows Server 2016 and Windows Server 2019.
 
 > [!NOTE]
 > The default locations could be different than what's listed in this article.
