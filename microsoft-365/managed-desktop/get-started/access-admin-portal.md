@@ -78,3 +78,17 @@ If you need to assign one or more of the built-in roles to a existing group, fol
 6. Search for the group you want from **Users and groups**.
 7. Search for the applicable role from **Select a role**, and then select it.
 8. Select **Assign**.
+
+## Steps to get started with Microsoft Managed Desktop
+
+1. Access admin portal (this article).
+1. [Add and verify admin contacts in the Admin portal](add-admin-contacts.md).
+1. [Adjust settings after enrollment](conditional-access.md).
+1. Deploy and assign [Intune Company Portal](company-portal.md).
+1. [Assign licenses](assign-licenses.md).
+1. [Deploy apps](deploy-apps.md).
+1. [Set up devices](set-up-devices.md).
+1. Set up [first-run experience with Autopilot and the Enrollment Status Page](esp-first-run.md).
+1. [Enable user support features](enable-support.md).
+1. [Get your users ready to use devices](get-started-devices.md).
+1. [Get started with app control](get-started-app-control.md).
