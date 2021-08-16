@@ -43,9 +43,9 @@ ms.technology: mde
 
 Check out the [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)  or  [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) to see the various paths in deploying Defender for Endpoint.
 
-1. Open the GP configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from [Microsoft 365 Defender portal](https://security.microsoft.com/):
-
-1. Open the GP configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from [Microsoft 365 Defender](https://security.microsoft.com/):
+1. Open the GP configuration package .zip file (*WindowsDefenderATPOnboardingPackage.
+zip*) that you downloaded from the service onboarding wizard. You can also get the 
+package from [Microsoft 365 Defender portal](https://security.microsoft.com/):
  
     1. In the navigation pane, select **Settings** > **Endpoints** > **Device management**  > **Onboarding**.
 
@@ -57,6 +57,8 @@ Check out the [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/publ
 
 2. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the device. You should have a folder called *OptionalParamsPolicy* and the file *WindowsDefenderATPOnboardingScript.cmd*.
 
+3. To create a new GPO, open the [Group Policy Management Console](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) (GPMC), right-click **Group Policy Objects** you want to configure and click **New**. Enter the name of the new GPO in the dialogue box that is displayed and click **OK**.
+
 3. Open the [Group Policy Management Console](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) (GPMC), right-click the Group Policy Object (GPO) you want to configure and click **Edit**.
 
 4. In the **Group Policy Management Editor**, go to **Computer configuration**, then **Preferences**, and then **Control panel settings**.
@@ -67,12 +69,17 @@ Check out the [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/publ
 
 7. Select **Run whether user is logged on or not** and check the **Run with highest privileges** check box.
 
-8. Go to the **Actions** tab and click **New...** Ensure that **Start a program** is selected in the **Action** field. Enter the NetBIOS path of the shared  *WindowsDefenderATPOnboardingScript.cmd* file.
+8. In the Name field, type an appropriate name for the scheduled task (for example, Defender for Endpoint Deployment).
 
-9. Click **OK** and close any open GPMC windows.
+9. Go to the **Actions** tab and select **New...** Ensure that **Start a program** is selected in the **Action** field. Enter the UNC path, using the file server's fully qualified domain name (FQDN), of the shared *WindowsDefenderATPOnboardingScript.cmd* file.
+
+10. Select **OK** and close any open GPMC windows.
+
+1. To link the GPO to an Organization Unit (OU), right-click and select **Link an existing GPO**. In the dialogue box that is displayed, select the Group Policy Object that you wish to link. Click **OK**.
 
 > [!TIP]
 > After onboarding the device, you can choose to run a detection test to verify that the device is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Defender for Endpoint device](run-detection-test.md).
+
 
 ## Additional Defender for Endpoint configuration settings
 For each device, you can state whether samples can be collected from the device when a request is made through Microsoft 365 Defender to submit a file for deep analysis.
@@ -182,6 +189,10 @@ Policy | Setting
 :---|:---
 Configure Controlled folder access| Enabled, Audit Mode
 
+## Run a detection test to verify onboarding
+After onboarding the device, you can choose to run a detection test to verify that a device is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Microsoft Defender for Endpoint device](run-detection-test.md).
+
+
 ## Offboard devices using Group Policy
 
 For security reasons, the package used to Offboard devices will expire 30 days after the date it was downloaded. Expired offboarding packages sent to a device will be rejected. When downloading an offboarding package you'll be notified of the packages expiry date and it will also be included in the package name.
@@ -212,9 +223,11 @@ For security reasons, the package used to Offboard devices will expire 30 days a
 
 7. Select **Run whether user is logged on or not** and check the **Run with highest privileges** check-box.
 
-8. Go to the **Actions** tab and click **New...**. Ensure that **Start a program** is selected in the **Action** field. Enter the NetBIOS path of the shared *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd* file.
+8. In the Name field, type an appropriate name for the scheduled task (for example, Defender for Endpoint Deployment).
 
-9. Click **OK** and close any open GPMC windows.
+9. Go to the **Actions** tab and select **New...**. Ensure that **Start a program** is selected in the **Action** field. Enter the UNC path, using the file server's fully qualified domain name (FQDN), of the shared *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd* file.
+
+10. Select **OK** and close any open GPMC windows.
 
 > [!IMPORTANT]
 > Offboarding causes the device to stop sending sensor data to the portal but data from the device, including reference to any alerts it has had will be retained for up to 6 months.
@@ -231,6 +244,76 @@ With Group Policy there isn't an option to monitor deployment of policies on the
 
 > [!NOTE]
 > It can take several days for devices to start showing on the **Devices list**. This includes the time it takes for the policies to be distributed to the device, the time it takes before the user logs on, and the time it takes for the endpoint to start reporting.
+
+## Setup Defender AV policies
+
+Create a new Group Policy or group these settings in with the other policies. This is dependent upon the customers environment and how they would like to roll out the service by targeting different OU’s (Organizational Units).
+
+1. After you choose the GP, or create a new one, edit the GP.
+2. Browse to **Computer Configuration** > **Policies** > **Administrative Templates** > **Windows Components** > **Microsoft Defender Antivirus** > **Real-time Protection**.
+:::image type="content" source="images/realtime-protect.png" alt-text="real time protection":::
+1. In the Quarantine folder, configure removal of items from Quarantine folder.
+
+    :::image type="content" source="images/removal-items-quarantine1.png" alt-text="removal items quarantine folder":::
+
+    :::image type="content" source="images/config-removal-items-quarantine2.png" alt-text="config-removal quarantine":::
+
+1. In the Scan folder, configure the scan settings.
+
+    :::image type="content" source="images/gpo-scans.png" alt-text="gpo scans":::
+
+**Monitor all files in Real time protection**
+
+Browse to **Computer Configuration** > **Policies** > **Administrative Templates** > **Windows Components** > **Microsoft Defender Antivirus** > **Real-time Protection**.
+
+:::image type="content" source="images/config-monitor-incoming-outgoing-file-act.png" alt-text="configure monitoring for incoming outgoing file activity":::
+
+ 
+#### Configure Windows Defender Smart Screen settings
+
+1. Browse to **Computer Configuration** > **Policies** > **Administrative Templates** > **Windows Components** > **Windows Defender SmartScreen** > **Explorer**.
+
+    :::image type="content" source="images/config-windows-def-smartscr-explorer.png" alt-text="config windows defender smart screen explorer":::
+ 
+2. Browse to **Computer Configuration** > **Policies** > **Administrative Templates** > **Windows Components** > **Windows Defender SmartScreen** > **Microsoft Edge**.
+
+    :::image type="content" source="images/config-windows-def-smartscr-explorer.png" alt-text="config windows defender smart screen Edge":::
+
+#### Configure Potentially Unwanted Applications
+	 
+Browse to **Computer Configuration** > **Policies** > **Administrative Templates** > **Windows Components** > **Microsoft Defender Antivirus**.
+
+:::image type="content" source="images/config-potential-unwanted-apps.png" alt-text="config potential unwanted app":::
+
+:::image type="content" source="images/config-potential-unwanted-apps2.png" alt-text="config potential":::
+
+#### Configure Cloud Deliver Protection and send samples automatically
+
+Browse to **Computer Configuration** > **Policies** > **Administrative Templates** > **Windows Components** > **Microsoft Defender Antivirus** > **MAPS**.
+
+:::image type="content" source="images/gpo-maps1.png" alt-text="maps":::
+
+:::image type="content" source="images/gpo-maps-block-atfirst-sight.png" alt-text="block at first sight":::
+
+:::image type="content" source="images/gpo-maps-join-ms-maps.png" alt-text="join microsoft maps":::
+
+:::image type="content" source="images/send-file-sample-further-analysis-require.png" alt-text="send file sample when further analysis is required":::
+
+#### Check for signature update
+Browse to **Computer Configuration** > **Policies** > **Administrative Templates** > **Windows Components** > **Microsoft Defender Antivirus** > **Signature Updates**
+
+:::image type="content" source="images/signature-update-1.png" alt-text="signature update":::
+
+:::image type="content" source="images/signature-update-2.png" alt-text="signature definition update":::
+
+#### Configure cloud deliver timeout and protection level
+
+Browse to **Computer Configuration** > **Policies** > **Administrative Templates** > **Windows Components** > **Microsoft Defender Antivirus** > **MpEngine**.
+When you configure cloud protection level policy to **Default Microsoft Defender Antivirus blocking policy** this will disable the policy. This is what is required to set the protection level to the windows default.
+
+:::image type="content" source="images/config-extended-cloud-check.png" alt-text="config extended cloud check":::
+
+:::image type="content" source="images/cloud-protection-level.png" alt-text="config cloud protection level":::
 
 ## Related topics
 

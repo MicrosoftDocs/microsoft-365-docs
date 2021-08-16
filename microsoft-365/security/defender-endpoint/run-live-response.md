@@ -54,9 +54,30 @@ Runs a sequence of live response commands on a device
 
 4.  RunScript command timeouts after 10 minutes.
 
-5.  When a live response command fails all followed actions will not be
+5.  Live response commands cannot be queued up and can only be executed one at a time. 
+
+6.  Multiple live response commands can be run on a single API call. However, when a live response command fails all the following actions will not be
     executed.
 
+## Minimum Requirements
+
+Before you can initiate a session on a device, make sure you fulfill the following requirements:
+
+- **Verify that you're running a supported version of Windows**.
+
+  Devices must be running one of the following versions of Windows
+
+  - **Windows 10**
+    - [Version 1909](/windows/whats-new/whats-new-windows-10-version-1909) or later
+    - [Version 1903](/windows/whats-new/whats-new-windows-10-version-1903) with [KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)
+    - [Version 1809 (RS 5)](/windows/whats-new/whats-new-windows-10-version-1809) with [with KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)
+    - [Version 1803 (RS 4)](/windows/whats-new/whats-new-windows-10-version-1803) with [KB4537795](https://support.microsoft.com/help/4537795/windows-10-update-kb4537795)
+    - [Version 1709 (RS 3)](/windows/whats-new/whats-new-windows-10-version-1709) with [KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)
+
+  - **Windows Server 2019 - Only applicable for Public preview**
+    - Version 1903 or (with [KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)) later
+    - Version 1809 (with [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818))
+    
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more,
@@ -97,7 +118,7 @@ POST https://api.securitycenter.microsoft.com/API/machines/{machine_id}/runliver
 
 ## Response
 
-- If successful, this method returns 200, Ok.
+- If successful, this method returns 201 Created.
 
   Action entity. If machine with the specified ID was not found - 404 Not Found.
 
