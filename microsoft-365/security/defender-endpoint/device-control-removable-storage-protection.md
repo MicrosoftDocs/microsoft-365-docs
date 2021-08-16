@@ -22,11 +22,11 @@ ms.technology: mde
 
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
 
-Microsoft Defender for Endpoint Device Control Removable Storage Protection prevents user or machine or both from using unauthorized removable storage media.
+Device control removable storage protection in Microsoft Defender for Endpoint prevents users, endpoints, or both from using unauthorized removable storage media.
 
 ## Protection policies
 
-### Removable storage Access Control
+### Removable storage access control
 
 **Capabilities**
 
@@ -44,7 +44,7 @@ Microsoft Defender for Endpoint Device Control Removable Storage Protection prev
 
 **macOS support details**:
 
-- Applied at machine level: the same policy applies for any logged on user.
+- Applied at the device level: the same policy applies for any logged on user.
 - For macOS specific information, see [Device control for macOS](mac-device-control-overview.md).
 
 **Supported platform** - macOS Catalina 10.15.4+ (with system extensions enabled)
@@ -56,7 +56,7 @@ Microsoft Defender for Endpoint Device Control Removable Storage Protection prev
 
 **Windows 10 support details**:
 
-- Applied at machine level: the same policy applies for any logged on user.
+- Applied at device level: the same policy applies for any logged on user.
 - Supports Microsoft Endpoint Manager and Group Policy Objects.
 - Supported  '[Device Properties](#device-properties)' as listed.
 - For more information on Windows, see [How to control USB devices and other removable media using Microsoft Defender for Endpoint](control-usb-devices-using-intune.md).
@@ -65,14 +65,14 @@ Microsoft Defender for Endpoint Device Control Removable Storage Protection prev
 
 **macOS support details**:
 
-- Applied at machine level: the same policy applies for any logged on user
+- Applied at device level: the same policy applies for any logged on user
 - For macOS specific information, see [Device control for macOS](mac-device-control-overview.md).
 
 **Supported platform** - macOS Catalina 10.15.4+ (with system extensions enabled) or later
 
 ### Endpoint DLP Removable storage
 
-**Capabilities** - Audit or Warn or Prevent a user from copying an item or information to removable media or USB device.
+**Capabilities** - Audit, warn, or prevent a user from copying an item or information to removable media or USB device.
 
 **Description** - For more information on Windows, see [Learn about Microsoft 365 Endpoint data loss prevention](../../compliance/endpoint-dlp-learn-about.md).
 
