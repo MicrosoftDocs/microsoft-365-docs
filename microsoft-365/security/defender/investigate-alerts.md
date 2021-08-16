@@ -69,8 +69,6 @@ An alert page is composed of these sections:
 - Alert story, which is the chain of events and alerts related to this alert in chronological order
 - Summary details
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="Example of the details page of an alert in the Microsoft 365 Defender portal":::
-
 Throughout an alert page, you can select the ellipses (**...**) beside any entity to see available actions, such as opening the alert page or linking the alert to another incident.
 
 ### Alert sources

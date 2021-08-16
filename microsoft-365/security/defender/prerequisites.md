@@ -33,7 +33,7 @@ ms.technology: m365d
 Learn about licensing and other requirements for provisioning and using [Microsoft 365 Defender](microsoft-365-defender.md).
 
 ## Licensing requirements
-Any of these licenses gives you access to Microsoft 365 Defender features in Microsoft 365 security center without additional cost:
+Any of these licenses gives you access to Microsoft 365 Defender features in Microsoft 365 Defender portal without additional cost:
 
 - Microsoft 365 E5 or A5
 - Microsoft 365 E3 with the Microsoft 365 E5 Security add-on
@@ -60,7 +60,7 @@ Go to Microsoft 365 admin center ([admin.microsoft.com](https://admin.microsoft.
 You must be a **global administrator** or a **security administrator** in Azure Active Directory to turn on Microsoft 365 Defender. For the list of roles required to use Microsoft 365 Defender and information on how access to data is regulated, read about [managing access to Microsoft 365 Defender](m365d-permissions.md).
 
 ## Browser requirements
-Access Microsoft 365 Defender in the Microsoft 365 security center using Microsoft Edge, Internet Explorer 11, or any HTML 5 compliant web browser.
+Access Microsoft 365 Defender in the Microsoft 365 Defender portal using Microsoft Edge, Internet Explorer 11, or any HTML 5 compliant web browser.
 
 ## Availability to US GCC, GCC High, and other US government institutions
 Currently, Microsoft 365 Defender is *not* available to:
