@@ -35,7 +35,7 @@ Here are the requirements and limitations for enabling cloud-based storage for o
 - Only the Teams chat data associated with an on-premises user is stored in the cloud-based storage area. An on-premises user can't access this storage area in any way.
 
 > [!NOTE]
-> Teams channel conversations are always stored in the cloud-based mailbox that's associated with the Team, which means you can search for channel conversations. For more information about searching Teams channel conversations, see [Searching Microsoft Teams and Microsoft 365 Groups](content-search.md#searching-microsoft-teams-and-microsoft-365-groups).
+> Teams channel conversations are always stored in the cloud-based mailbox that's associated with the Team, which means you can search for channel conversations. For more information about searching Teams channel conversations, see [Searching Microsoft Teams and Microsoft 365 Groups](content-search-reference.md#searching-microsoft-teams-and-microsoft-365-groups).
   
 ## How it works
 
@@ -51,11 +51,11 @@ In addition to this capability, you can also use eDiscovery tools to search, pre
 
 The following UI elements in Content search and in the search tool associated with Core eDiscovery cases in the Microsoft 365 compliance center:
   
-- The **Add Office app content for on-premises users** is displayed under the **Locations** in Content search. Select this checkbox to include the cloud-based storage for on-premises users in a content search.
+- The **Add app content for on-premises users** checkbox is displayed on the **Locations** wizard page in Content search tool and selected by default. Keep this checkbox selected to include the cloud-based storage for on-premises users in a content search.
 
-    ![The "Add Office app content for on-premises users" checkbox is added to the Content Search UI](../media/599e751e-17bd-408d-a18c-127538de6e85.png)
+    ![The "Add Office app content for on-premises users" checkbox is added to the Content Search UI](../media/EHAMShardCheckBox.png)
   
-- On-premises users are displayed in the content locations picker that you use to select user mailboxes to search.
+- You can search for on-premises users when you choose specific users to search for.
 
 ## Searching for Teams chat content for on-premises users
 
@@ -63,29 +63,25 @@ Here's how to use Content search in the Microsoft 365 compliance center to searc
   
 1. In the Microsoft 365 compliance center, go to **Content search**.
 
-2. On the **Searches** tab, click ![Add icon](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **New search**.
+2. On the **Searches** tab, click **New search**, and name the new search.
 
-    As previously explained, the **Add Office app content for on-premises users** checkbox is displayed under **Locations**. It's selected by default.
+3. On the **Locations** page, set the toggle to **On** for Exchange mailboxes. Notice that the **Add app content for on-premises users** checkbox is displayed and selected by default.
 
-3. Create the keyword query and add conditions to the search query if necessary. To only search for Team chats data, you can add the following query in the **Keywords** box:
+4. To search for Teams content for specific users, select **Choose user, groups, or teams** and choose specific users to include in the search. Otherwise, click **Next** to search for Teams content for all users, including  on-premises users
+
+5. On the **Define your search conditions** page, create a keyword query and add conditions to the search query if necessary. To only search for Team chats data, you can add the following query in the **Keywords** box:
 
     ```text
     kind:im AND kind:microsoftteams
     ```
 
-4. At this point, you can choose one of the following options under **Locations**:
+6. Submit and run the search. Any search results for on-premises users can be previewed like any other search results. You can also export the search results (including any Teams chat data) to a PST file. For more information, see:
 
-    - **All locations:** Select this option to search the mailboxes of all users in your organization. When the checkbox is selected, all cloud-based storage of Teams chat data for on-premises users will also be searched.
+    - [Create a search](content-search.md)
 
-    - **Specific locations:** Select this option and then click **Modify** \> Choose user, groups, or teams to search specific mailboxes. As previously explained, the locations picker lets you search for Teams chat data for on-premises users.
+    - [Preview search results](preview-ediscovery-search-results.md)
 
-5. Save and run the search. Any search results for on-premises users can be previewed like any other search results. You can also export the search results (including any Teams chat data) to a PST file. For more information, see:
-
-    - [Create a search](content-search.md#create-a-search)
-
-    - [Preview search results](content-search.md#preview-search-results)
-
-    - [Export Content Search results](export-search-results.md)
+    - [Export search results](export-search-results.md)
 
 ## Using PowerShell to search for Teams chat data for on-premises users
 
@@ -101,13 +97,13 @@ You can use the **New-ComplianceSearch** and **Set-ComplianceSearch** cmdlets in
 
     The *IncludeUserAppContent*  parameter is used to specify the cloud-based storage for the user or users who are specified by the  *ExchangeLocation*  parameter. The *AllowNotFoundExchangeLocationsEnabled*  allows you to search the cloud-based storage for on-premises users. When you use the `$true` value for this parameter, the search doesn't try to validate the existence of the mailbox before it runs. This is required to search the cloud-based storage for on-premises users because this cloud-based storage doesn't resolve as a regular cloud-based mailbox.
 
-    The following example searches for Teams chats (which are instant messages) that contain keyword "redstone" in the cloud-based storage for Sara Davis, who is an on-premises user in the Contoso organization.
+    The following example searches for Teams chats that contain keyword "redstone" in the cloud-based storage for Sara Davis, who is an on-premises user in the Contoso organization.
   
     ```powershell
-    New-ComplianceSearch "Redstone_Search" -ContentMatchQuery "redstone AND kind:im" -ExchangeLocation sarad@contoso.com -IncludeUserAppContent $true -AllowNotFoundExchangeLocationsEnabled $true  
+    New-ComplianceSearch "Redstone_Search" -ContentMatchQuery "redstone AND (kind:im AND kind:microsoftteams)" -ExchangeLocation sarad@contoso.com -IncludeUserAppContent $true -AllowNotFoundExchangeLocationsEnabled $true  
     ```
 
-   After you create a search, be sure to use the **Start-ComplianceSearch** cmdlet to run the search. 
+   After you create a search, be sure to use the **Start-ComplianceSearch** cmdlet to run the search.
   
 For more information using these cmdlets, see:
   

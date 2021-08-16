@@ -1,5 +1,5 @@
 ---
-title: "Step 1. Increase sign-in security for remote workers with MFA"
+title: "Step 1. Increase sign-in security for hybrid workers with MFA"
 f1.keywords:
 - NOCSH
 author: JoeDavies-MSFT
@@ -16,16 +16,16 @@ ms.collection:
 - m365solution-remotework
 - m365solution-scenario
 ms.custom: 
-description: Require that your remote workers sign in with multi-factor authentication (MFA).
+description: Require that your hybrid workers sign in with multi-factor authentication (MFA).
 ---
 
-# Step 1. Increase sign-in security for remote workers with MFA
+# Step 1. Increase sign-in security for hybrid workers with MFA
 
-To increase the security of sign-ins of your remote workers, use multi-factor authentication (MFA). MFA requires that user sign-ins be subject to an additional verification beyond the user account password. Even if a malicious user determines a user account password, they must also be able to respond to an additional verification, such as a text message sent to a smartphone before access is granted.
+To increase the security of sign-ins of your hybrid workers, use multi-factor authentication (MFA). MFA requires that user sign-ins be subject to an additional verification beyond the user account password. Even if a malicious user determines a user account password, they must also be able to respond to an additional verification, such as a text message sent to a smartphone before access is granted.
 
 ![The correct password plus an additional verification results in a successful sign-in](../media/empower-people-to-work-remotely/remote-workers-mfa.png)
 
-For all users, including remote workers and especially admins, Microsoft strongly recommends MFA.
+For all users, including hybrid workers and especially admins, Microsoft strongly recommends MFA.
 
 There are three ways to require your users to use MFA based on your Microsoft 365 plan.
 
@@ -96,7 +96,7 @@ Self-Service Password Reset (SSPR) enables users to reset their own passwords wi
 
 ## Sign in to SaaS apps with Azure AD
 
-In addition to providing cloud authentication for users, Azure AD can also be your central way to secure all your apps, whether they’re on-premises, in Microsoft’s cloud, or in another cloud. By [integrating your apps into Azure AD](/azure/active-directory/manage-apps/plan-an-application-integration), you can make it easy for remote workers to discover the applications they need and sign into them securely.
+In addition to providing cloud authentication for users, Azure AD can also be your central way to secure all your apps, whether they’re on-premises, in Microsoft’s cloud, or in another cloud. By [integrating your apps into Azure AD](/azure/active-directory/manage-apps/plan-an-application-integration), you can make it easy for hybrid workers to discover the applications they need and sign into them securely.
 
 ## Admin technical resources for MFA and identity
 

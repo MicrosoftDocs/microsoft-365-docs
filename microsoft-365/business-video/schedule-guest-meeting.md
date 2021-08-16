@@ -1,5 +1,5 @@
 ---
-title: "Schedule a Teams meeting with guests"
+title: "Schedule a Teams meeting with external users"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -19,10 +19,10 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Learn how to schedule a Teams meeting with guests."
+description: "Learn how to schedule a Teams meeting with external users."
 ---
 
-# Schedule a Teams meeting with guests
+# Schedule a Teams meeting with external users
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOhP?autoplay=false]
 
@@ -30,14 +30,13 @@ You can invite people from outside of your organization to a meeting without hav
 
 ## Try it!
 
-With Microsoft Teams, you can create new teams as you start new projects or add customers.
+To schedule meetings with your employees, clients, External users and other guests, use Microsoft Teams. 
 
-1. On the  **Teams** tab, select **Join or create a team**, **Create team**, **Build a team from scratch**, and then **Private**.
-2. Enter a name for your team, a description, and then select  **Create**.
-3. On the  **Add members**  page, add internal members by searching and selecting them, and add guest members by entering their email address, and then select  **Add**.
-
-    If you see  **We didn't find any matches** , you must enable guest sharing. Go to the Microsoft 365 admin center, choose the Teams admin center, choose  **Org-wide settings**,  **Guest access** , and turn on  **Allow guest access in Teams**. This change may take up to 24 hours.
-
-1. Select  **Close**. Your guests and members will receive invitations to the team.
-2. On the General channel, enter a greeting for everyone and select  **Send**.
-3. On the  **Files** tab, add documents that you want to work on together. You can create them here or drag and drop files from your computer.
+1. In Microsoft Teams, in the left navigation, choose **Meetings**.
+2. Choose **Schedule a meeting**.
+3. In the **New meeting box**, enter a **Title** and **Location** for the meeting.
+4. Enter a **Start** and **End** time and date.
+5. In the **Details** box, enter a description of the meeting and any other details you want to add, such as a meeting agenda.
+6. Under **Invite people**, enter the names of employees or clients that you want to invite.
+7. If you see **Tentative** or **Busy** below any names, choose one of the **Free** times provided, or click **Scheduling assistant** for more options.
+8. Choose **Schedule a meeting**.

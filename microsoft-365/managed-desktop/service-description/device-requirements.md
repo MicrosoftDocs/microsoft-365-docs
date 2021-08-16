@@ -13,7 +13,7 @@ ms.topic: article
 
 # Device requirements
 
-Microsoft Managed Desktop regularly evaluates device requirements to be included in the service. This article describes the hardware and software requirements a device must meet in order to work with Microsoft Managed Desktop. You can review a list of specific [devices already approved](device-list.md) for use with the service based on these requirements.
+Microsoft Managed Desktop regularly evaluates device requirements to be included in the service. This article describes the hardware and software requirements a device must meet in order to work with Microsoft Managed Desktop. You can review a list of specific devices already approved for use with the service based on these requirements. Filter for Microsoft Managed Desktop on the [Shop Windows 10 Pro business devices](https://www.microsoft.com/windowsforbusiness/view-all-devices) site
 
 > [!NOTE]
 > These requirements can change at any time, but we will provide 30 days notice of any hardware requirement changes. The requirements most recently changed are marked with **\***. 
@@ -44,7 +44,9 @@ The device must have this software preinstalled:
 - the 64-bit version of Microsoft 365 Apps for enterprise 
 - All applicable device drivers
 
-
+> [!NOTE]
+> Windows 11 will be an additional option for preinstalled software once it has reached general availability.
+>
 ### Physical features
 
 Devices must have these capabilities:
@@ -57,7 +59,8 @@ Devices must have these capabilities:
 For more about these capabilities and the technologies related to them that the service uses, see [Microsoft Managed Desktop technologies](../intro/technologies.md).
 
 > [!NOTE]
-> ARM processors are not supported.
+>- ARM processors are not supported.
+>- Windows 11 has additional [hardware requirements](/windows/whats-new/windows-11-requirements).
 
 Devices should meet or exceed following limits for storage and memory:
 

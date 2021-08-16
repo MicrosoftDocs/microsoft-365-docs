@@ -222,5 +222,5 @@ If the In-Place Hold contains a large number of source mailboxes, it's possible 
   InactiveMailboxRetireTime : 9/30/2020 11:16:23 PM
   ```
 
-  In the above example, the *WhenSoftDeleted* property identifies the soft-deleted date, which in this example is June 16, 2020. The *WasInactiveMailbox* propety is listed as `True` because it was previously an inactive mailbox. The mailbox will be permanently deleted 183 days after September 30, 2020.
+  In the above example, the *WhenSoftDeleted* property identifies the soft-deleted date, which in this example is June 16, 2020. The *WasInactiveMailbox* property is listed as `True` because it was previously an inactive mailbox. The mailbox will be permanently deleted 183 days after September 30, 2020.
 

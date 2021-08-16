@@ -78,19 +78,19 @@ If a tenant was created by Microsoft, you can claim and manage that tenant by fo
 
 ::: moniker range="o365-worldwide"
 
-3. Go to [https://admin.microsoft.com](https://admin.microsoft.com).
+3. Go to <a href="https://admin.microsoft.com" target="_blank">https://admin.microsoft.com</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-3. Go to [https://portal.office.de](https://portal.office.de).
+3. Go to <a href="https://portal.office.de" target="_blank">https://portal.office.de</a>
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-3. Go to [https://portal.partner.microsoftonline.cn](https://portal.partner.microsoftonline.cn).
+3. Go to <a href="https://portal.partner.microsoftonline.cn" target="_blank">https://portal.partner.microsoftonline.cn</a>.
 
 ::: moniker-end
 
@@ -162,46 +162,30 @@ To allow your existing users to sign up for Power BI, run the opposite command a
 ## How do I remove Power BI for users that already signed up?
 
 If a user signed up for Power BI, but you no longer want them to have access to Power BI, you can remove the Power BI license for that user.
-
-::: moniker range="o365-worldwide"
   
+::: moniker range="o365-worldwide"
+
 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+ 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Active users</a> page.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+ 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Active users</a> page.
+
+::: moniker-end
 
 2. Find the user you want to remove the license for, then select their name.
 
 3. On the **Licenses and Apps** tab, clear the **Microsoft Power BI** check box.
 
 4. Select **Save changes**.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Active users</a> page.
-
-2. Find the user you want to remove the license for, then select their name.
-
-3. Next to **Product licenses**, select **Edit**.
-
-4. Toggle off the **Microsoft Power BI** option.
-
-5. Select **Save**.
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Active users</a> page.
-
-2. Find the user you want to remove the license for, then select their name.
-
-3. Next to **Product licenses**, select **Edit**.
-
-4. Toggle off the **Microsoft Power BI** option.
-
-5. Select **Save**.
-
-::: moniker-end
 
 ## How do I know when new users have joined my tenant?
 

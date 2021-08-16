@@ -8,6 +8,7 @@ author: jaimeo
 f1.keywords:
 - NOCSH
 ms.author: jaimeo
+manager: laurawi
 ms.topic: article
 ms.localizationpriority: normal
 ---
@@ -147,15 +148,15 @@ Some organizations are concerned about users having access to both corporate and
 
 There are many other policies which Microsoft Managed Desktop does not yet set as a part of our service. You can configure these policies by using Microsoft Intune, which uses the [Office Cloud Policy](/DeployOffice/overview-office-cloud-policy-service#how-the-policy-configuration-is-applied) service. To set these policies, follow these steps:
 
-1.	Sign in to the Microsoft Endpoint Manager admin center.
-2.	Select **Apps > Policies for Office apps > Create**
-3.	On the **Create policy** configuration page, do the following:
+1. Sign in to the Microsoft Endpoint Manager admin center.
+2. Select **Apps > Policies for Office apps > Create**
+3. On the **Create policy** configuration page, do the following:
     - Enter a name.
     - Provide a description (optional).
     - In **assignments**, choose whether this policy applies to all users of Microsoft 365 Apps for enterprise, or just to users who anonymously access documents using Office for the web.
     - Select the AAD-based security group that is assigned to the policy configuration. Each policy configuration can only be assigned to one group, and each group can only be assigned one policy configuration.
     - Configure the policy settings to be included in the policy configuration. You can search on the policy setting name to find the policy setting that you want to configure. You can also filter on the application, on whether the policy is a recommended security baseline, and on whether the policy has been configured. The platform column indicates whether the policy is applied to Microsoft 365 Apps for enterprise for Windows devices, Office for the web, or all.
-4.	After you have made your selections, choose **Create**.
+4. After you have made your selections, choose **Create**.
 
 > [!NOTE]
 > Office Configuration Policies only support user-based deployment

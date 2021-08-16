@@ -7,8 +7,9 @@ f1.keywords:
 ms.custom:
 - seo-marvel-mar
 - AdminSurgePortfolio
-ms.author: jasgro
-ms.topic: article 
+ms.author: jasongroce
+ms.topic: article
+manager: jasonh
 ms.prod: microsoft-365-business
 localization_priority: Normal
 audience: microsoft-business 
@@ -67,7 +68,7 @@ The following table summarizes the impact to customers who don't transition from
 |-------|-----------------|--------------|---------------|---------------|
 | **State** | In grace period | Expired      | Disabled      | Deprovisioned |
 | **Service impacts**                                                        |
-| **Microsoft 365 Business admin portal** | No impact to functionality | No impact to functionality | Can add/delete users, purchase subscriptions.</br> Can't assign/revoke licenses. | Customer's subscription and all data is deleted. Admin can manage other paid subscriptions. |
+| **Microsoft 365 admin center** | No impact to functionality | No impact to functionality | Can add/delete users, purchase subscriptions.</br> Can't assign/revoke licenses. | Customer's subscription and all data is deleted. Admin can manage other paid subscriptions. |
 | **Office apps**                         | No end user impact | No end user impact | Office enters reduced functionality mode.</br> Users can view files only. | Office enters reduced functionality mode.</br> Users can view files only. |
 | **Cloud services (SharePoint Online, Exchange Online, Skype, Teams, and more)** | No end user impact | No end user impact | End users and admins have no access to data in the cloud. | Customer's subscription and all data are deleted. |
 | **EM+S components** | No admin impact</br> No end user impact | No admin impact</br> No end user impact | Capability is no longer enforced.</br> See [Mobile device impacts upon subscription expiration](#mobile-device-impacts-upon-subscription-expiration) and [Windows 10 PC impacts upon subscription expiration](#windows-10-pc-impacts-upon-subscription-expiration) for more info. | Capability is no longer enforced.</br> See [Mobile device impacts upon subscription expiration](#mobile-device-impacts-upon-subscription-expiration) and [Windows 10 PC impacts upon subscription expiration](#windows-10-pc-impacts-upon-subscription-expiration) for more info. |

@@ -61,6 +61,9 @@ A number of different subscriptions support Endpoint DLP. To see licensing optio
 - Security administrator
 - Compliance data administrator
 
+> [!NOTE]
+> As a best practice, always use the role with least privilege to grant access to Microsoft 365 Data Classification.
+
 ## Sensitive information types used most in your content
 
 Microsoft 365 comes with many definitions of sensitive information types, such as an item containing a social security number or a credit card number. For more information on sensitive information types, see [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md).
@@ -135,3 +138,5 @@ The point of the data classification reporting is to provide visibility into the
 - [Learn about sensitive information types](sensitive-information-type-learn-about.md)
 - [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)
 - [Learn about trainable classifiers (preview)](classifier-learn-about.md)
+
+To learn how to use data classification to comply with data privacy regulations, see [Deploy information protection for data privacy regulations with Microsoft 365](../solutions/information-protection-deploy.md)  (aka.ms/m365dataprivacy).

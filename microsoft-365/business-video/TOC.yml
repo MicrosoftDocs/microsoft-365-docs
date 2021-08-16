@@ -49,7 +49,7 @@
       items: 
         - name: Use Outlook and Teams
           href: collab-outlook-teams.md
-        - name: Get started with Microsoft Teams in your small business
+        - name: Get started with Teams
           href: get-started-teams-small-business.md
         - name: Create a group email address
           href: group-email.md
@@ -161,10 +161,10 @@
           href: create-sensitivity-labels.md 
     - name: Support
       items:
-        - name: Find answers and help
-          href: find-help-answers.md
         - name: Get help or support
           href: get-help-support.md 
+        - name: Find docs and training
+          href: find-help-answers.md
         - name: Employee quick setup  
           href: employee-quick-setup.md  
     - name: Switch from Google Workspace

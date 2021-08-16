@@ -20,6 +20,7 @@ ms.custom:
 - OKR_SMB_M365
 - seo-marvel-mar
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
@@ -31,12 +32,14 @@ description: "Learn how to enable Microsoft 365 to protect local Active-Director
 If your organization uses Windows Server Active Directory on-premises, you can set up Microsoft 365 Business Premium to protect your Windows 10 devices, while still maintaining access to on-premises resources that require local authentication.
 To set up this protection, you can implement **Hybrid Azure AD joined devices**. These devices are joined to both your on-premises Active Directory and your Azure Active Directory.
 
+## Watch: Configure Hybrid Azure Active Directory join
+
 This video describes the steps for how to set this up for the most common scenario, which is also detailed in the steps that follow.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3C9hO]
   
+## Before you begin
 
-## Before you get started, make sure you complete these steps:
 - Synchronize users to Azure AD with Azure AD Connect.
 - Complete Azure AD Connect Organizational Unit (OU) sync.
 - Make sure all the domain users you sync have licenses to Microsoft 365 Business Premium.
@@ -102,18 +105,18 @@ The first command will establish a connection with the Microsoft cloud, and when
 
 If you do not see the policy **Enable automatic MDM enrollment using default Azure AD credentials**, it may be because you don’t have the ADMX installed for Windows 10, version 1803, or later. To fix the issue, follow these steps (Note: the latest MDM.admx is backwards compatible):
 
-1.	Download: [Administrative Templates (.admx) for Windows 10 October 2020 Update (20H2)](https://www.microsoft.com/download/102157).
-2.	Install the package on a Domain Controller.
-3.	Navigate, depending on the Administrative Templates version to the folder: **C:\Program Files (x86)\Microsoft Group Policy\Windows 10 October 2020 Update (20H2)**.
-4.	Rename the **Policy Definitions** folder in the above path to **PolicyDefinitions**.
-5.	Copy the **PolicyDefinitions** folder to your SYSVOL share, by default located at **C:\Windows\SYSVOL\domain\Policies**. 
-    -	If you plan to use a central policy store for your entire domain, add the contents of PolicyDefinitions there.
-6.	In case you have several Domain Controllers, wait for SYSVOL to replicate for the policies to be available. This procedure will work for any future version of the Administrative Templates as well.
+1. Download: [Administrative Templates (.admx) for Windows 10 October 2020 Update (20H2)](https://www.microsoft.com/download/102157).
+2. Install the package on a Domain Controller.
+3. Navigate, depending on the Administrative Templates version to the folder: **C:\Program Files (x86)\Microsoft Group Policy\Windows 10 October 2020 Update (20H2)**.
+4. Rename the **Policy Definitions** folder in the above path to **PolicyDefinitions**.
+5. Copy the **PolicyDefinitions** folder to your SYSVOL share, by default located at **C:\Windows\SYSVOL\domain\Policies**.
+   - If you plan to use a central policy store for your entire domain, add the contents of PolicyDefinitions there.
+6. In case you have several Domain Controllers, wait for SYSVOL to replicate for the policies to be available. This procedure will work for any future version of the Administrative Templates as well.
 
 At this point you should be able to see the policy **Enable automatic MDM enrollment using default Azure AD credentials** available.
 
 ## Related content
 
-[Synchronize domain users to Microsoft 365](manage-domain-users.md) (article)
-[Create a group in the admin center](../admin/create-groups/create-groups.md) (article)
+[Synchronize domain users to Microsoft 365](manage-domain-users.md) (article)\
+[Create a group in the admin center](../admin/create-groups/create-groups.md) (article)\
 [Tutorial: Configure hybrid Azure Active Directory join for managed domains](/azure/active-directory/devices/hybrid-azuread-join-managed-domains.md) (article)

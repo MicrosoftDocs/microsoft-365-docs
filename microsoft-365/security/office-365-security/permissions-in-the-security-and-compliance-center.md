@@ -47,7 +47,7 @@ The Security & Compliance Center includes default role groups for the most commo
 
 ![Diagram showing relationship of role groups to roles and members](../../media/2a16d200-968c-4755-98ec-f1862d58cb8b.png)
 
-## Permissions needed to use features in the Security & Compliance Center
+## Role groups in the Security & Compliance Center
 
 The following table lists the default role groups that are available in the Security & Compliance Center, and the roles that are assigned to the role groups by default. To grant permissions to a user to perform a compliance task, add them to the appropriate Security & Compliance Center role group.
 
@@ -58,7 +58,7 @@ To see how to grant access to the Security & Compliance Center, check out [Give 
 > [!NOTE]
 > To view the **Permissions** tab in the Security & Compliance Center, you need to be an admin. Specifically, you need to be assigned the **Role Management** role, and that role is assigned only to the **Organization Management** role group in the Security & Compliance Center by default. Furthermore, the **Role Management** role allows users to view, create, and modify role groups.
 
-<br><br>
+<br>
 
 ****
 
@@ -136,7 +136,7 @@ Note that the following roles aren't assigned to the Organization Management rol
 - RMS Decrypt
 - Supervisory Review Administrator
 
-<br><br>
+<br>
 
 ****
 
