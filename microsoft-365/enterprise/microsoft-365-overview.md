@@ -2,8 +2,8 @@
 title: Microsoft 365 for enterprise overview
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 02/01/2021
 audience: ITPro

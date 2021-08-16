@@ -1,24 +1,24 @@
 ---
 title: Quarantined email messages
-f1.keywords: 
+f1.keywords:
   - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date: 
+ms.date:
 audience: Admin
 ms.topic: overview
 
 localization_priority: Normal
-search.appverid: 
+search.appverid:
   - MOE150
   - MED150
   - MET150
 ms.assetid: 4c234874-015e-4768-8495-98fcccfc639b
-ms.collection: 
+ms.collection:
   - M365-security-compliance
   - m365initiative-defender-office365
-ms.custom: 
+ms.custom:
   - seo-marvel-apr2020
 description: Admins can learn about quarantine in Exchange Online Protection (EOP) that holds potentially dangerous or unwanted messages.
 ms.technology: mdo
@@ -44,7 +44,7 @@ Both users and admins can work with quarantined messages:
 
 - Admins can work with all types of quarantined messages for all users. Only admins can work with messages that were quarantined as malware, high confidence phishing, or as a result of mail flow rules (also known as transport rules). For more information, see [Manage quarantined messages and files as an admin in EOP](manage-quarantined-messages-and-files.md).
 
-- Users can work with quarantined messages where they are a recipient if the message was quarantined as spam, bulk email, or (as of April 2020) phishing. For more information, see [Find and release quarantined messages as a user in EOP](find-and-release-quarantined-messages-as-a-user.md).
+- Users can work with quarantined messages where they are a recipient and the message was quarantined as spam, bulk email, or (as of April 2020) phishing. For more information, see [Find and release quarantined messages as a user in EOP](find-and-release-quarantined-messages-as-a-user.md).
 
   To prevent users from managing their own quarantined phishing messages, admins can configure a different action for the **Phishing email** filtering verdict in anti-spam policies. For more information, see [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md).
 
