@@ -88,7 +88,6 @@ Choose if to Generate an alert on the file block event and define the alerts set
 - Description
 - Recommended actions
 
-[!div class="mx-imgBorder"]
 ![Alert settings for file indicators](images/indicators-generate-alert.png)
 
 > [!IMPORTANT]
@@ -113,8 +112,7 @@ search in (DeviceFileEvents, DeviceProcessEvents, DeviceEvents, DeviceRegistryEv
 Timestamp > ago(30d)
 | where AdditionalFields contains "EUS:Win32/CustomEnterpriseBlock!cl"
 
-[!div class="mx-imgBorder"]
-![Advanced hunting](images/indicators-advanced-hunting.png)
+![Advanced hunting](/images/indicators-advanced-hunting.png)
 
 Below are additional thread names which can be used in the sample query from above:
 
