@@ -16,7 +16,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 
-description: Learn about basic troubleshooting steps you can take to resolve common issues in Office 365 eDiscovery.
+description: "Learn about basic troubleshooting steps you can take to resolve common issues in Office 365 eDiscovery."
 siblings_only: true
 ms.custom: seo-marvel-apr2020
 ---
@@ -92,12 +92,12 @@ You may see that error when running an eDiscovery search that includes SharePoin
 
 ### Resolution 
 Open the SPO location and verify that this file indeed is not there.
-Suggested solution is to manually reindex the site, or wait till the site reindexes by the automatic background process.
+Suggested solution is to manually reindex the site, or wait until the site reindexes by the automatic background process.
 
 
 ## Error/issue: This search result was not downloaded as it is a folder or other artifact that can't be downloaded by itself, any items inside the folder or library will be downloaded.
 
-You may see that error when running an eDiscovery search that includes SharePoint Online and One Drive For Business locations. It means that we were going to try and export the item reported in the index, but it turned out to be a folder so we did not export it. As mentioned in the error, we don't export folder items but we do export their contents.
+You may see that error when running an eDiscovery search that includes SharePoint Online and One Drive For Business locations. It means that we were going to try to export the item reported in the index, but it turned out to be a folder so we did not export it. As mentioned in the error, we don't export folder items but we do export their contents.
 
 
 ## Error/issue: Search fails because recipient is not found
@@ -148,7 +148,7 @@ When exporting search results from Core eDiscovery or Content search in the Micr
 
 ### Resolution
 
-1. If necessary, rerun the search. If the search was last ran more than 7 days ago, you have to rerun the search.
+1. If necessary, rerun the search. If the search was last ran more than seven days ago, you have to rerun the search.
 
 2. Restart the export.
 
@@ -242,19 +242,20 @@ This is a client-side issue. To remediate it, follow these steps:
 
 6. If the previous steps don't work, disable zipping and de-duplication.
 
-7. If this works then the issue is due to a local virus scanner or a disk issue.
+7. If this works, then the issue is due to a local virus scanner or a disk issue.
 
-## Error: "Your request can't be started because the maximum number of jobs for your organization are currently running..."
+## Error: "Your request can't be started because the maximum number of jobs for your organization are currently running"
 
-Your organization has reached the exports limit and now all new export jobs are being throttled.
+Your organization has reached the limit for the maximum number of concurrent export jobs. All new export jobs are being throttled.
 
 ### Resolution
 
-Run the following script to discover how many export jobs are running concurrently in the last 7 days:
+Run the following script to discover how many export jobs that were started in the last seven days are still running.
 
-1. Connect to [Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell)
+1. Connect to [Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
-2. Run the following script to find out how many jobs are triggering the throttle: 
+2. Run the following script to collection information about the current export jobs are triggering the throttle:
+
    ```powershell
    $date = Get-Date;
    $exports = Get-ComplianceSearchAction -Export -ResultSize Unlimited;
@@ -262,10 +263,12 @@ Run the following script to discover how many export jobs are running concurrent
    $exportJobsRunning = $inprogressExports | ?{$_.JobStartTime -ge $date.AddDays(-7)} | Sort-Object JobStartTime -Descending;
    ```
 
-3. Display the jobs that are currently running:
+3. Run the following command to display a list of export jobs that are currently running:
+
    ```powershell
    $exportJobsRunning | Format-Table Name, JobStartTime, JobEndTime, Status | More;
    ```
-   When the list returns 10 or more exports running, the limit has been reached. [Limits for eDiscovery search](/microsoft-365/compliance/limits-for-content-search)
 
-4. Wait for existing export jobs to finish or remove exports that are no longer needed using [Remove-ComplianceSearchAction](/powershell/module/exchange/remove-compliancesearchaction) cmdlet.
+   If the previous command returns 10 or more exports jobs, your organization has reached the limit for the number of concurrent export jobs. For more information, see [Limits for eDiscovery search](limits-for-content-search.md).
+
+4. Wait for existing export jobs to finish or remove export jobs that are no longer needed by using the[Remove-ComplianceSearchAction](/powershell/module/exchange/remove-compliancesearchaction) cmdlet.
