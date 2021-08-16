@@ -73,20 +73,13 @@ You can create an indicator for:
 > [!IMPORTANT]
 > Information in this section (**Public Preview for Automated investigation and remediation engine**) relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-The automated investigation and remediation behave the same. If an indicator is set to "Allow", Automated investigation and remediation will ignore a "bad" verdict for it. If set to "Block", Automated investigation and remediation will treat it as "bad".
+When creating a new indicator (IoC), one or more of the following actions are now available:
 
-The EnableFileHashComputation setting computes the file hash for the cert and file IoC during file scans; it supports IoC enforcement of hashes and certs belonging to trusted applications. Currently, EnableFileHashComputation will be enabled and disabled with the allow or block file setting. EnableFileHashComputation is enabled manually through Group Policy, and is disabled by default.
-
-- **Allow** - The IoC will be allowed to run on your devices.
-- **Audit** - An alert will be triggered when the IoC runs.
-- **Block execution** - The the IoC will not be allowed to run.
-- **Block and remediate** - the IoC will not be allowed to run and a remediation action will be applied to the IoC.
-
-> [!NOTE]
->
-> - **Block and remediate** is currently in public preview.
->
-> - For file indicators, raising an alert on block actions is optional.
+- Allow – the IoC will be allowed to run on your devices.
+- Audit – an alert will be triggered when the IoC runs.
+- Block execution - the IoC will not be allowed to run.
+- Block and remediate - the IoC will not be allowed to run and a remediation action will be applied to the IoC.
+The table below shows exactly which actions are available per indicator (IoC) type:
 
 | IoC type | Available actions |
 |:---|:---|
@@ -95,9 +88,18 @@ The EnableFileHashComputation setting computes the file hash for the cert and fi
 | [URLs and domains](indicator-ip-domain.md) | Allow <br> Audit <br> Block execution |
 | [Certificates](indicator-certificates.md) | Allow <br> Block and remediate |
 
-There is a limit of 15,000 indicators per tenant. File and certificate indicators do not block [exclusions defined for Microsoft Defender Antivirus](/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus). Indicators are not supported in Microsoft Defender Antivirus when it is in passive mode.
+For example, the original three IoC response actions were “allow,” “alert only,” and “alert and block.” As part of the update, the functionality of pre-existing IoCs will not change. However, the indicators were renamed to match the current supported response actions:
+
+- The “alert only” response action was renamed to “audit” with the generate alert setting enabled.
+- The “alert and block” response was renamed to “block and remediate” with the optional generate alert setting.
+
+The IoC API schema and the threat ids in advance hunting have been updated to align with the renaming of the IoC response actions. The API scheme changes applies to all IoC Types.
 
 > [!Note]
+> For file indicators, raising an alert on block actions is optional.
+>
+> There is a limit of 15,000 indicators per tenant. File and certificate indicators do not block exclusions defined for Microsoft Defender Antivirus. Indicators are not supported in Microsoft Defender Antivirus when it is in passive mode.
+Note
 > The format for importing new indicators (IoCs) has changed according to the new updated actions and alerts settings. We recommend downloading the new CSV format that can be found at the bottom of the import panel.
 
 ## Related topics

@@ -23,18 +23,17 @@ ms.custom: api
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
+
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-
-- See the corresponding [Indicators page](https://securitycenter.windows.com/preferences2/custom_ti_indicators/files) in the portal. 
+- See the corresponding [Indicators page](https://securitycenter.windows.com/preferences2/custom_ti_indicators/files) in the portal.
 
 Method|Return Type|Description
 :---|:---|:---
@@ -64,6 +63,24 @@ title|String|Indicator title.
 description|String|Description of the indicator.
 recommendedActions|String|Recommended actions for the indicator.
 rbacGroupNames|List of strings|RBAC device group names where the indicator is exposed and active. Empty list in case it exposed to all devices.
+
+## Public Preview: Indicator types
+
+> [!IMPORTANT]
+> Information in this section (**Public Preview for Automated investigation and remediation engine**) relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+
+The indicator action types supported by the API are:
+
+- AlertAndBlock
+- Allow
+- Audit
+- Alert
+- Warn
+- BlockExecution
+- BlockRemdiation.
+
+The API list of action types contains the new response actions along with the prior response actions (AlertAndBlock, and Alert). 
+Note: The prior response actions (AlertAndBlock, and Alert) will be removed once the feature has reached GAed. The estimated GA date with grace period is end of October 2021.  We advise updating any existing templates or scripts as soon as possible.
 
 ## Json representation
 

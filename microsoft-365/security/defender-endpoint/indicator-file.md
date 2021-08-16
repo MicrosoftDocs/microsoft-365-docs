@@ -24,6 +24,7 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
+
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -73,6 +74,23 @@ One of the options when taking [response actions on a file](respond-file-alert
 
 Files automatically blocked by an indicator won't show up in the file's Action center, but the alerts will still be visible in the Alerts queue.
 
+## Private Preview: Alerting on file blocking actions
+
+The current supported actions for file IOC are allow, audit and block and remediate.
+After choosing to block a file, you can choose whether triggering an alert is needed. In this way you will be able to control the number of alerts getting to your security operations teams and make sure only required alerts are raised.
+In Microsoft 365 Defender, go to Settings > Endpoints > Indicators > add new File hash
+Choose to Block and remediate the file
+Choose if to Generate an alert on the file block event and define the alerts settings:
+
+- The alert title
+- The alert severity
+- Category
+- Description
+- Recommended actions
+
+[!div class="mx-imgBorder"]
+![Alert settings for file indicators](images/indicators-generate-alert.png)
+
 > [!IMPORTANT]
 >
 >- Typically, file blocks are enforced and removed within a couple of minutes, but can take upwards of 30 minutes.
@@ -83,6 +101,33 @@ Files automatically blocked by an indicator won't show up in the file's Action c
 > - If the EnableFileHashComputation group policy is disabled, the blocking accuracy of the file IoC is reduced. However, enabling `EnableFileHashComputation` may impact device performance. For example, copying large files from a network share onto your local device, especially over a VPN connection, might have an effect on device performance.
 >
 >   For more information about the EnableFileHashComputation group policy, see [Defender CSP](/windows/client-management/mdm/defender-csp)
+
+## Private Preview: Advanced hunting capabilities
+
+> [!IMPORTANT]
+> Information in this section (**Public Preview for Automated investigation and remediation engine**) relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+
+You can query the response action activity in advance hunting. Below is a sample advance hunting query:
+
+search in (DeviceFileEvents, DeviceProcessEvents, DeviceEvents, DeviceRegistryEvents, DeviceNetworkEvents, DeviceImageLoadEvents, DeviceLogonEvents)
+Timestamp > ago(30d)
+| where AdditionalFields contains "EUS:Win32/CustomEnterpriseBlock!cl"
+
+[!div class="mx-imgBorder"]
+![Advanced hunting](images/indicators-advanced-hunting.png)
+
+Below are additional thread names which can be used in the sample query from above:
+
+Files:
+
+- EUS:Win32/CustomEnterpriseBlock!cl
+- EUS:Win32/CustomEnterpriseNoAlertBlock!cl
+
+Certificates:
+
+- EUS:Win32/CustomCertEnterpriseBlock!cl  
+
+The response action activity can also be viewable in the device timeline.
 
 ## Policy conflict handling
 
