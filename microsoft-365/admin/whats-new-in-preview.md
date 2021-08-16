@@ -45,6 +45,62 @@ And if you'd like to know what's new with other Microsoft cloud services:
 - [Office updates](/OfficeUpdates/)
 - [How to check Windows release health](/windows/deployment/update/check-release-health)
 
+## July 2021
+
+### Microsoft 365 admin center search
+
+You can now search for incident IDs in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">Microsoft 365 admin center</a>. You may learn about current incidents through social media, industry publications or from other admins. You can now go to the admin center to look up more details about the incident and to understand the impact to your organization. Just search for the incident ID in the admin center.
+
+:::image type="content" source="../media/incident-id.png" alt-text="Screenshot: Searching for incident ID in the admin center":::
+
+### Support ticket insight for Premier organizations
+
+We've added 2 graphs called **Volume trend** and **Volume trend by product** to give you visual insights about your support volume.
+
+The liner graph under **Volume trend** tab highlights the trend if support cases are increasing or decreasing for your organization month over month. You can hover on the graph to check the number of support cases created in each month.
+
+:::image type="content" source="../media/SuppInsight-voltrnd.PNG" alt-text="Screenshot: Graph that highlights the trend if support cases are increasing or decreasing for your organization month over month":::
+
+The **Volume trend by product** graph shows the top 3 products of each month with the highest support cases. We've enabled filtering in the table and you can now filter the results by **Product**, **Severity**, and **Date**.
+
+:::image type="content" source="../media/SuppInsight-voltrndproduct.PNG" alt-text="Screenshot: Graph shows the top 3 products of each month with the highest support cases":::
+
+We've also added 2 new fields, **Severity** and **Closed Date** in the **View Service Request** table to give you more insights about your tickets.
+
+:::image type="content" source="../media/SuppInsight-date-sev.PNG" alt-text="Screenshot: Table that shows support ticket sorting by severity and date.":::
+
+To check out these updates in <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">Microsoft 365 admin center</a>, go to **Support** > **View Service requests** in left navigation pane.
+
+## June 2021
+
+### Microsoft 365 admin center search
+
+We've added a couple of new categories to Search functionality.
+
+- You can now search for Microsoft 365 admin roles in global search and quickly view and manage role assignments from any page. For example, search for **Intune administrator**.
+
+- You can now find simplified setup experiences through global search. This can help you and your team quickly get started with how to use new features. For example, search for **set password to never expire**.
+
+To learn more about search in the admin center, see [Search in the Microsoft 365 admin center](manage/search-in-the-mac.md).
+
+## May 2021
+
+### Admin mobile app
+
+### Keep track of support ticket updates using the Admin mobile app
+
+For all the service requests created in your tenant you can now keep track of the ticket status, view ticket details and provide / request additional information by adding notes & attachments.
+
+:::image type="content" source="../media/Keep-track-support-ticket-updates2.PNG" alt-text="Screenshot: Track support ticket updates":::
+
+### Stay on top of all the major updates to the app and your Microsoft 365 subscription
+
+- Stay on top of all the major updates to your Microsoft 365 subscription through Message Center push notifications (now enabled by default).
+
+- Keep track of the latest features available in the app using the **What's New** section. Go to **Settings** > **What’s new?**
+
+:::image type="content" source="../media/Stay-on-top-of-updates.PNG" alt-text="Screenshot: Track major updates and features":::
+
 ## April 2021
 
 ### Admin mobile app
@@ -82,7 +138,7 @@ To learn more about the new features, check out [Message center](manage/message-
 
 ### What's new features
 
-We've made improvements to how you view the "What's new" features for users in the Office apps. You can now see the rich content in the Whats' new pane that your users can see. You can also learn more about the feature before you decide to let your users know about the feature. For more info, check out [Manage which Office‎ features appear in What's New](manage/show-hide-new-features.md).
+We've made improvements to how you view the "What's new" features for users in the Office apps. You can now see the rich content in the What's new pane that your users can see. You can also learn more about the feature before you decide to let your users know about the feature. For more info, check out [Manage which Office features appear in What's New](manage/show-hide-new-features.md).
 
 :::image type="content" source="../media/power-bi-whats-new2.png" alt-text="Screenshot: Office apps what's new page showing improvements to Power BI":::
 
@@ -107,7 +163,7 @@ We've developed a set of features for multi-tenant admins like you to get your j
 
 ### Monitor your most important accounts
 
-You can monitor and track failed or delayed email messages sent to your users who have a high business impact, like your CEO. You track priority accounts by adding users to your priority accounts list in the Microsoft 365 admin center. Add executives, leaders, managers, or other users who have access to sensitive or high priority information.
+You can monitor and track failed or delayed email messages sent to your users who have a high business impact, like your CEO. You track priority accounts by adding users to your priority accounts list in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>. Add executives, leaders, managers, or other users who have access to sensitive or high priority information.
 
 Priority accounts are only available to organizations that meet both of the following requirements:
 
@@ -173,7 +229,7 @@ We're continuously looking at and updating the content and tools to keep up with
 - Fix DKIM setup issues
 - Diagnose Intune user enrollment errors
 
-And we are rolling out the new and improved support experience you already see in the Microsoft 365 admin center to some of the other admin centers. Teams Admin Center and Security and Compliance Admin Centers already have this new experience. And soon, **Exchange admin center**, **SharePoint admin center**, and **Office.com** will be updated along with this new help experience for admins.
+And we are rolling out the new and improved support experience you already see in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">Microsoft 365 admin center</a> to some of the other admin centers. Teams admin center and Security and Compliance admin centers already have this new experience. And soon, **Exchange admin center**, **SharePoint admin center**, and **Office.com** will be updated along with this new help experience for admins.
 
 ### Manage changes with Microsoft Planner
 
@@ -235,7 +291,7 @@ A few months ago, we added a setting that lets you manage the What's New message
 
 On May 12, we announced the availability of a new update channel for Office:  Monthly Enterprise Channel. This update channel provides your users with new Office features once a month, on the second Tuesday of the month.
 
-If you allow your users to self-install Office from the portal, you can select Monthly Enterprise Channel for them. To do this, sign in to the Microsoft 365 admin center and go to **Show all** >**Settings** > **Org settings** > **Services** > **Office software download settings**. If you select **Once a month (Monthly Enterprise Channel)**, then any new self-installs of Office will be configured to use Monthly Enterprise Channel.
+If you allow your users to self-install Office from the portal, you can select Monthly Enterprise Channel for them. To do this, sign in to the Microsoft 365 admin center and go to **Show all** >**Settings** > **Org settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">**Services**</a> > **Office software download settings**. If you select **Once a month (Monthly Enterprise Channel)**, then any new self-installs of Office are configured to use Monthly Enterprise Channel.
 
 In conjunction with the release of Monthly Enterprise Channel, we’re also revising the names of the existing update channels. For example, Monthly Channel is being renamed to Current Channel. The new names take effect on June 9, 2020.
 
@@ -243,7 +299,7 @@ For more information, see [Changes to update channels for Microsoft 365 Apps](/D
 
 ### New admin roles
 
-We've added some new Azure Active Directory admin roles to the Microsoft 365 admin center.
+We've added some new Azure Active Directory admin roles to the <<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
 
 - Hybrid identity admin role gives users permission to manage cloud provisioning and authentication services.
 - Network admin role lets users manage network locations and review network insights for Microsoft 365 Software as a Service apps.
@@ -257,7 +313,7 @@ We've heard from a lot of admins that they need to share information about group
 
 ### Microsoft 365 solution and architecture center
 
-Just this month, we released a new site on [https://docs.microsoft.com]() called the [Microsoft 365 solution and architecture center](../solutions/index.yml), which brings together the technical guidance you need to understand, plan, and implement integrated Microsoft 365 solutions for secure and compliant collaboration. In this center, you'll find:
+Just this month, we released a new site on docs.microsoft.com called the [Microsoft 365 solution and architecture center](../solutions/index.yml), which brings together the technical guidance you need to understand, plan, and implement integrated Microsoft 365 solutions for secure and compliant collaboration. In this center, you'll find:
 
 - Foundational solution guidance
 - Workload solutions and scenario guidance
@@ -276,7 +332,7 @@ Just this month, we released a new site on [https://docs.microsoft.com]() called
 
 [April 2020](#april-2020)
 
-Well, we did it! We've taken the second step towards a unified roles experience and you can now manage Intune roles in the Microsoft 365 admin center. You can also leverage features such as the ability to search for roles and view role permissions. This means you don’t need two separate tools to manage roles for Microsoft 365 and Intune. When you sign into the Microsoft 365 admin center, you’ll see that there are two pivots on the Roles page, one for Azure AD and one for Intune.
+Well, we did it! We've taken the second step towards a unified roles experience and you can now manage Intune roles in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>. You can also leverage features such as the ability to search for roles and view role permissions. This means you don’t need two separate tools to manage roles for Microsoft 365 and Intune. When you sign into the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, you’ll see that there are two pivots on the Roles page, one for Azure AD and one for Intune.
 
 ![Roles page with the Intune pivot selected](../media/MAC-WN-IntuneRoles.png)
 
@@ -288,11 +344,11 @@ Starting in May, admins who are in Targeted release will start seeing the "Plann
 
 ### "Need help?" launched in Teams admin center & Security and Compliance centers
 
-The Teams admin center, Security center, and Compliance center are now using the same "Need help?" feature that the Microsoft 365 admin center uses for finding help and contacting support. We've received a lot of feedback from admins that you wanted the same level of help and support and we're happy to bring that to you. Try it out and give us your feedback!
+The Teams admin center, Security center, and Compliance center are now using the same "Need help?" feature that the <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">Microsoft 365 admin center</a> uses for finding help and contacting support. We've received a lot of feedback from admins that you wanted the same level of help and support and we're happy to bring that to you. Try it out and give us your feedback!
 
 #### Need chat?
 
-Our support agents have been working from home while still taking customer cases and limitations on internet bandwidth while working from home can impact customer call quality. In order to continue supporting you, we have launched live chat support option for commercial customers in the Microsoft 365 admin center.
+Our support agents have been working from home while still taking customer cases and limitations on internet bandwidth while working from home can impact customer call quality. In order to continue supporting you, we have launched live chat support option for commercial customers in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">Microsoft 365 admin center</a>.
 
 While creating a service request, you'll now see chat as an option, in addition to phone and email. Select chat as a preferred channel of communication and create the request. Once you've created the  request, you can start the chat when you are ready to chat with Microsoft agents.
 
@@ -360,7 +416,7 @@ With the uptick in Teams usage, some orgs will get a pinned dashboard card that 
 
 ### Customize your organization's SharePoint mobile app theme
 
-Using the Microsoft 365 admin center, you can now customize your organization's theme in SharePoint mobile app for iOS and SharePoint mobile app for Android. This feature conveniently provides a mobile intranet app experience that can match your SharePoint Online for employees on the go. Theme customization includes your logo image, navigation bar color, text and icon colors, and accent colors, making for easy recognition.
+Using the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, you can now customize your organization's theme in SharePoint mobile app for iOS and SharePoint mobile app for Android. This feature conveniently provides a mobile intranet app experience that can match your SharePoint Online for employees on the go. Theme customization includes your logo image, navigation bar color, text and icon colors, and accent colors, making for easy recognition.
 
 ![Diagram mapping the admin center settings to the mobile app.](../media/MAC-WN-CustThemeSP.png)
 
@@ -396,7 +452,7 @@ We received a lot of feedback from partners and admins about the challenges of m
 > [!TIP]
 > You don't have to do anything to make the organization switcher appear as long as you are the Partner of record for at least one organization.
 
-1. In the Microsoft 365 admin center, select the org name.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, select the org name.
 ![Screen capture: top of the Home page showing organization profile name with the switcher icon.](../media/MAC-Organization-switcher.png)
 
 2. In the organization switcher, select the org you want to manage.

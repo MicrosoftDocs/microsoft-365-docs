@@ -16,6 +16,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
+ms.custom: api
 ---
 
 # Fetch alerts from MSSP customer tenant
@@ -25,7 +26,7 @@ ms.technology: mde
 **Applies to:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
->Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-mssp-support-abovefoldlink)
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-mssp-support-abovefoldlink)
 
 >[!NOTE]
 >This action is taken by the MSSP.
@@ -43,8 +44,8 @@ Step 1: Create a third-party application
 
 Step 2: Get access and refresh tokens from your customer's tenant
  
-Step 3: allow your application on Microsoft Defender Security Center
- 
+Step 3: allow your application on Microsoft 365 Defender
+
 ### Step 1: Create an application in Azure Active Directory (Azure AD)
  
 You'll need to create an application and grant it permissions to fetch alerts from your customer's Microsoft Defender for Endpoint tenant.
@@ -155,14 +156,14 @@ After providing your credentials, you'll need to grant consent to the applicatio
 
 8. In the PowerShell window, you'll receive an access token and a refresh token. Save the refresh token to configure your SIEM connector. 
  
-### Step 3: Allow your application on Microsoft Defender Security Center
-You'll need to allow the application you created in Microsoft Defender Security Center.
+### Step 3: Allow your application on Microsoft 365 Defender
+You'll need to allow the application you created in Microsoft 365 Defender.
  
 You'll need to have **Manage portal system settings** permission to allow the application. Otherwise, you'll need to request your customer to allow the application for you.
 
-1. Go to `https://securitycenter.windows.com?tid=<customer_tenant_id>` (replace \<customer_tenant_id\> with the customer's tenant ID.
+1. Go to `https://security.microsoft.com?tid=<customer_tenant_id>` (replace \<customer_tenant_id\> with the customer's tenant ID.
 
-2. Click **Settings** > **SIEM**. 
+2. Click **Settings** > **Endpoints** > **APIs** > **SIEM**. 
 
 3. Select the **MSSP** tab.
 

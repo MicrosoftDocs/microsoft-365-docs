@@ -1,7 +1,7 @@
 ---
 title: Review and manage remediation actions in Microsoft Defender for Office 365
 keywords: AIR, autoIR, Microsoft Defender for Endpoint, automated, investigation, response, remediation, threats, advanced, threat, protection
-f1.keywords: 
+f1.keywords:
 - NOCSH
 author: JoeDavies-MSFT
 ms.author: josephd
@@ -9,64 +9,97 @@ manager: dansimp
 audience: ITPro
 ms.topic: how-to
 localization_priority: Normal
-search.appverid: 
+search.appverid:
 - MET150
 - MOE150
-ms.collection: 
+ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Learn about remediation actions in automated investigation and response capabilities in Microsoft Defender for Office 365 Plan 2.
 ms.technology: mdo
 ms.prod: m365-security
-ms.date: 01/29/2021
+ms.date: 06/10/2021
 ---
 
 # Review and manage remediation actions in Office 365
 
-As automated investigations on email & collaboration content result in verdicts, such as *Malicious* or *Suspicious*, certain remediation actions are created. In Microsoft Defender for Office 365, remediation actions can include:
-- Blocking a URL (time-of-click)
-- Soft deleting email messages or clusters
-- Quarantining email or email attachments
-- Turning off external mail forwarding
-
-These remediation actions are not taken unless and until your security operations team approves them. We recommend reviewing and approving any pending actions as soon as possible so that your automated investigations complete in a timely manner. In some cases, you can undo a remediation action.
-
 **Applies to**
 - [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+
+As automated investigations on email & collaboration content result in verdicts, such as *Malicious* or *Suspicious*, certain remediation actions are created. In Microsoft Defender for Office 365, remediation actions can include:
+
+- Soft deleting email messages or clusters
+- Turning off external mail forwarding
+
+These remediation actions are not taken unless and until your security operations team approves them. We recommend reviewing and approving any pending actions as soon as possible so that your automated investigations complete in a timely manner. In some cases, you can reconsider submitted actions.  You need to be part of Search & purge role before taking any actions.
 
 ## Approve (or reject) pending actions
+There are four different ways to find and take auto investigation actions:
 
-1. Go to the Microsoft 365 security center (<https://security.microsoft.com>) and sign in.
+- [Incident queue](https://security.microsoft.com/incidents)
+- [Action center](https://security.microsoft.com/action-center/pending)
+- Investigation itself (accessed via Incident or from an alert)
+- [Investigation and remediation investigations queue](https://security.microsoft.com/airinvestigation)
+
+## Incident queue
+
+1. Open the Microsoft 365 Defender portal (<https://security.microsoft.com>) and sign in.
+2. In the navigation pane, select **Incidents & alerts > Incidents**.
+3. Select an incident name to open its summary page.
+4. Select the **Evidence and Response** tab.
+5. Select an item in the list. Its side pane opens.
+6. In the side pane, take approve or reject actions.
+
+## Investigation queue
+
+1. Open the Microsoft 365 Defender portal (<https://security.microsoft.com>) and sign in.
+2. Navigate from the alerts/incident page.
+3. On the Investigation page, go to the **pending actions** tab.
+4. Select an item in the list. Its side pane opens.
+5. In the side pane, take approve or reject actions.
+
+## Action center
+
+1. Open the Microsoft 365 Defender portal (<https://security.microsoft.com>) and sign in.
 2. In the navigation pane, select **Action center**.
 3. On the **Pending** tab, review the list of actions that are awaiting approval.
-4. Select an item in the list. Its flyout pane opens. 
-5. Review the information in the flyout pane, and then take one of the following steps:
    - Select **Open investigation page** to view more details about the investigation.
    - Select **Approve** to initiate a pending action.
    - Select **Reject** to prevent a pending action from being taken.
 
-## Undo one remediation action
+## Investigation and remediation investigations queue
 
-1. Go to the Action center (<https://security.microsoft.com/action-center>) and sign in.
-2. On the **History** tab, select an action that you want to undo.
-3. In the pane on the right side of the screen, select **Undo**.
+1. Open the Microsoft 365 Defender portal (<https://security.microsoft.com>) and sign in.
+2. Open pending investigations.
+3. On the Investigation page, go to the **pending actions** tab.
+4. Select an item in the list. Its side pane opens.
+5. In the side pane, take approve or reject actions.
 
-## Undo multiple remediation actions
+## Change or undo one remediation action
 
-1. Go to the Action center (<https://security.microsoft.com/action-center>) and sign in.
-2. On the **History** tab, select the actions that you want to undo. Make sure to select items that have the same Action type. A flyout pane opens.
-3. In the flyout pane, select Undo.
+There are two different ways to reconsider submitted actions:
 
-## To remove a file from quarantine across multiple devices
+- Through the [unified action center](https://security.microsoft.com/action-center).
+- Though the [Office action center](https://security.microsoft.com/threatincidents).
 
-1. Go to the Action center (<https://security.microsoft.com/action-center>) and sign in.
-2. On the **History** tab, select a file that has the Action type **Quarantine file**.
-3. In the pane on the right side of the screen, select **Apply to X more instances of this file**, and then select **Undo**.
+## Change or undo through the unified action center
+
+1. Go to the [unified action center](https://security.microsoft.com/action-center) and sign in.
+2. On the **History** tab, select an action that you want to change or undo.
+3. In the pane on the right side of the screen, select the appropriate action (**move to inbox**, **move to junk**, **move to deleted items**, **soft delete**, or **hard delete**).
+
+## Change or undo through the Office action center
+
+1. Go to the [Office action center](https://security.microsoft.com/threatincidents) and sign in.
+2. Select the appropriate remediation.
+3. In the side pane, click on the mail submissions entry and wait for the list to load.
+4. Wait for the Action button at the top to enable and select the Action button to change the action type.
+5. This will create the appropriate actions.
 
 ## Next steps
 
 - [Use Threat Explorer](threat-explorer.md)
+- [Admin /Manual Actions](remediate-malicious-email-delivered-office-365.md)
 - [How to report false positives/negatives in automated investigation and response capabilities](air-report-false-positives-negatives.md)
 
 ## See also

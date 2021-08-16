@@ -20,7 +20,7 @@ description: "Export documents in a review set to an Azure Storage account and t
 
 # Export documents in a review set to an Azure Storage account
 
-When you export documents from a review set in an Advanced eDiscovery case, you have the option to export them to an Azure Storage account managed by your organization. If you used this option, the documents are uploaded to your Azure Storage location. After they are exported, you can access the documents (and download them to a local computer or other location) by using the Azure Storage Explorer. This article provides instructions for how to export documents to your Azure Storage account and the use the Azure Storage Explorer to connect to an Azure Storage location to download the exported documents. For more information about Azure Storage Explorer, see [Use Azure Storage Explorer](/azure/storage/blobs/storage-quickstart-blobs-storage-explorer).
+When you export documents from a review set in an Advanced eDiscovery case, you have the option to export them to an Azure Storage account managed by your organization. If you use this option, the documents are uploaded to your Azure Storage location. After they are exported, you can access the documents (and download them to a local computer or other location) by using the Azure Storage Explorer. This article provides instructions for how to export documents to your Azure Storage account and the use the Azure Storage Explorer to connect to an Azure Storage location to download the exported documents. For more information about Azure Storage Explorer, see [Use Azure Storage Explorer](/azure/storage/blobs/storage-quickstart-blobs-storage-explorer).
 
 ## Before you export documents from a review set
 

@@ -8,14 +8,14 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-f1.keywords: 
+f1.keywords:
   - NOCSH
 ms.author: maccruz
 author: schmurky
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
   - M365-security-compliance
   - m365initiative-m365-defender
 ms.topic: article
@@ -43,9 +43,9 @@ While constructing queries, use the built-in schema reference to quickly get the
 - **Sample query**—example queries that feature how the table can be utilized.
 
 ### Access the schema reference
-To quickly access the schema reference, select the **View reference** action next to the table name in the schema representation. You can also select **Schema reference** to search for a table.   
+To quickly access the schema reference, select the **View reference** action next to the table name in the schema representation. You can also select **Schema reference** to search for a table.
 
-![Image showing how to access in-portal schema reference ](../../media/mtp-ah/ah-reference.png) 
+![Image showing how to access in-portal schema reference](../../media/mtp-ah/ah-reference.png)
 
 ## Learn the schema tables
 The following reference lists all the tables in the schema. Each table name links to a page describing the column names for that table. Table and column names are also listed in the security center as part of the schema representation on the advanced hunting screen.

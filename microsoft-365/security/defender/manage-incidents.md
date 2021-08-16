@@ -34,7 +34,7 @@ ms.technology: m365d
 
 Incident management is critical in ensuring that threats are contained and addressed.
 
-You manage incidents from **Incidents & alerts > Incidents** on the quick launch of the Microsoft 365 security center ([security.microsoft.com](https://security.microsoft.com)). Here's an example.
+You manage incidents from **Incidents & alerts > Incidents** on the quick launch of the Microsoft 365 Defender portal ([security.microsoft.com](https://security.microsoft.com)). Here's an example.
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="Example of the incident queue":::
 
@@ -42,7 +42,7 @@ Here are the ways you can manage your incidents:
 
 - [Edit the incident name](#edit-the-incident-name)
 - [Add incident tags](#add-incident-tags)
-- [Assign the incident to a user account](#assign-incidents)
+- [Assign the incident to yourself](#assign-incidents)
 - [Resolve them](#resolve-an-incident)
 - [Set its classification and determination](#set-the-classification-and-determination)
 - [Add comments](#add-comments)
@@ -75,7 +75,15 @@ When you start typing, you have the option to select from a list of selected tag
 
 ## Assign incidents
 
-If an incident has not yet been assigned, you can select **Assign to** and specify the user account. Doing so assigns ownership of the incident and all the alerts associated with it.
+To assign an incident, select **Assign to me**. Doing so assigns ownership of the incident and all the alerts associated with it to your user account.
+
+You can get a list of incidents assigned to you by filtering the incident queue. 
+
+1. From the incident queue, select **Filters**.
+2. in the **Incident assignment** section, clear **Select all** and select **Assigned to me**.
+3. Select **Apply**, and then close the **Filters** pane.
+
+You can then save the resulting URL in your browser as a bookmark to quickly see the list of incidents assigned to you.
 
 ## Resolve an incident
 

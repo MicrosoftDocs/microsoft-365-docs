@@ -21,9 +21,9 @@ ROBOTS: NOINDEX, NOFOLLOW
 ## Phone number
 020 286 8800
 
-Select option 9
+Press 2 for business
 
-Enter code 7704
+Press 1 for Microsoft 365
 
 ## Hours
 ### Billing Support:

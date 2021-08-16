@@ -17,6 +17,7 @@ ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
 - okr_smb
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
@@ -202,9 +203,7 @@ There are a few different ways you can access a mailbox once you've been given a
 
 ## Related content
   
-[Manage another person's mail and calendar items](https://support.microsoft.com/office/afb79d6b-2967-43b9-a944-a6b953190af5) (article)
-    
-[Send email from another person or group](https://support.microsoft.com/office/0f4964af-aec6-484b-a65c-0434df8cdb6b) (article)
-
+[Manage another person's mail and calendar items](https://support.microsoft.com/office/afb79d6b-2967-43b9-a944-a6b953190af5) (article)\   
+[Send email from another person or group](https://support.microsoft.com/office/0f4964af-aec6-484b-a65c-0434df8cdb6b) (article)\
 [Change a user name and email address](../add-users/change-a-user-name-and-email-address.md) (video)
 

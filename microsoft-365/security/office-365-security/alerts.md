@@ -1,5 +1,5 @@
 ---
-title: Alerts in the Security & Compliance Center
+title: Alerts in the Microsoft 365 Defender portal
 f1.keywords: 
   - NOCSH
 ms.author: tracyp
@@ -17,13 +17,13 @@ ms.assetid: 2bb4e7c0-5f7f-4144-b647-cc6a956aaa53
 ms.collection: 
   - M365-security-compliance
   - m365initiative-defender-office365
-description: Learn about how to use the alerts features in the Office 365 Security & Compliance Center to view and manage alerts, including managing advanced alerts.
+description: Learn about how to use the alerts features in the Microsoft 365 Defender portal to view and manage alerts, including managing advanced alerts.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
 ---
 
-# Alerts in the Security & Compliance Center
+# Alerts in the Microsoft 365 Defender portal
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -31,33 +31,19 @@ ms.prod: m365-security
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 
-Use the alerts features in the Security & Compliance Center to view and manage alerts for your organization, including managing advanced alerts as part of [Microsoft Cloud App Security overview](/cloud-app-security/what-is-cloud-app-security).
+Use the alerts features in the Microsoft 365 Defender portal to view and manage alerts for your organization, including managing advanced alerts as part of [Microsoft Cloud App Security overview](/cloud-app-security/what-is-cloud-app-security).
 
 ## How to get to the alerts features
 
-Alerts are in the Security & Compliance Center. Here's how to get to the page.
+Alerts are in the Microsoft 365 Defender portal (<https://security.microsoft.com>). Here's how to get to the page:
 
-### To go directly to the Security & Compliance Center
-
-1. Go to <https://protection.office.com>.
-
-2. Sign in using your work or school account.
-
-3. In the left pane, click **Alerts** to see the alerts features.
-
-### To go to the Security & Compliance Center using the app launcher
-
-1. Sign in using your work or school account.
-
-2. Click the app launcher in the upper left corner, and then click **Security & Compliance**.
-
-   Can't find the app you're looking for? From the app launcher, select **All apps** to see an alphabetical list of the Office 365 apps available to you. From there, you can search for a specific app.
-
-3. In the left pane, click **Alerts** to see the alerts features.
+In the **Microsoft 365 Defender portal**, go to **Alerts**. Or, to go direct to the **Alerts** page, use <https://security.microsoft.com/alerts>.
 
 ## Alerts features
 
-The following table describes the tools that are available under **Alerts** in the Security & Compliance Center.
+The following table describes the tools that are available under **Alerts** in the Microsoft 365 Defender portal.
+
+<br>
 
 ****
 

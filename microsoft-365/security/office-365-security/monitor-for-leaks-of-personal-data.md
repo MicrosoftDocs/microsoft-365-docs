@@ -45,33 +45,27 @@ After you create your data loss prevention (DLP) policies, you'll want to verify
 You can use the DLP reports to:
 
 - Focus on specific time periods and understand the reasons for spikes and trends.
-
 - Discover business processes that violate your organization's DLP policies.
-
 - Understand any business impact of the DLP policies.
-
 - View the justifications submitted by users when they resolve a policy tip by overriding the policy or reporting a false positive.
-
 - Verify compliance with a specific DLP policy by showing any matches for that policy.
-
 - View a list of files with sensitive data that matches your DLP policies in the details pane.
 
 In addition, you can use the DLP reports to fine-tune your DLP policies as you run them in test mode.
 
-DLP reports are in the security center and the compliance center. Navigate to Reports \> View reports. Under Data loss prevention (DLP), go to either DLP policy and rule matches or DLP false positives and overrides.
+DLP reports are in the Microsoft 365 compliance center. Go to **Reports** \> **Organizational data** section to find the **DLP policy matches**, **DLP incidents**, and **DLP false positives and overrides** reports.
 
 For more information, see [View the reports for data loss prevention](../../compliance/view-the-dlp-reports.md).
 
 ![Report showing DLP policy matches](../../media/Monitor-for-leaks-of-personal-data-image2.png)
 
-## audit log and alert policies
+## Audit log and alert policies
 
 The audit log contains events from Exchange Online, SharePoint Online, OneDrive for Business, Azure Active Directory, Microsoft Teams, Power BI, Sway, and other services.
 
-The security center and compliance center provide two ways to monitor and report against the audit log:
+The Microsoft 365 Defender portal and the Microsoft 365 compliance center provide two ways to monitor and report against the audit log:
 
-- Set up alert policies, view alerts, and monitor trends—Use the alert policy and alert dashboard tools in either the security center or compliance center.
-
+- Set up alert policies, view alerts, and monitor trends—Use the alert policy and alert dashboard tools in either the Microsoft 365 Defender portal or the Microsoft 365 compliance center.
 - Search the audit log directly: Search for all events in a specified date rage. Or you can filter the results based on specific criteria, such as the user who performed the action, the action, or the target object.
 
 Information compliance and security teams can use these tools to proactively review activities performed by both end users and administrators across services. Automatic alerts can be configured to send email notifications when certain activities occur on specific site collections - for example when content is shared from sites known to contain GDPR-related information. This allows those teams to follow up with users to ensure that corporate security policies are followed, or to provide additional training.
@@ -83,15 +77,10 @@ Solutions are available that subscribe to the Unified Audit Logs through the Mic
 More information about alert policies and searching the audit log:
 
 - [Alert policies in Microsoft 365](../../compliance/alert-policies.md)
-
 - [Search the audit log for user and admin activity in Office 365](../../compliance/search-the-audit-log-in-security-and-compliance.md) (introduction)
-
 - [Turn audit log search on or off](../../compliance/turn-audit-log-search-on-or-off.md)
-
 - [Search the audit log](../../compliance/search-the-audit-log-in-security-and-compliance.md)
-
 - [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) (cmdlet)
-
 - [Detailed properties in the audit log](../../compliance/detailed-properties-in-the-office-365-audit-log.md)
 
 ## Microsoft Cloud App Security
@@ -119,16 +108,15 @@ These attribute types are coming soon to Cloud App Security:
 
 If you haven't yet started to use Cloud App Security, begin by starting it up. To access Cloud App Security: <https://portal.cloudappsecurity.com>.
 
-Note: Be sure to enable 'Automatically scan files for Azure Information Protection classification labels' (in General settings) when getting started with Cloud App Security or before you assign labels. After setup, Cloud App Security does not scan existing files again until they are modified.
+> [!NOTE]
+> Be sure to enable 'Automatically scan files for Azure Information Protection classification labels' (in General settings) when getting started with Cloud App Security or before you assign labels. After setup, Cloud App Security does not scan existing files again until they are modified.
 
 ![Dashboard showing information about alerts](../../media/Monitor-for-leaks-of-personal-data-image4.png)
 
 More information:
 
 - [Deploy Cloud App Security](/cloud-app-security/getting-started-with-cloud-app-security)
-
 - [More information about Microsoft Cloud App Security](https://www.microsoft.com/cloud-platform/cloud-app-security)
-
 - [Block downloads of sensitive information using the Microsoft Cloud App Security proxy](/cloud-app-security/use-case-proxy-block-session-aad)
 
 ## Example file and activity policies to detect sharing of personal data
@@ -136,6 +124,8 @@ More information:
 ### Detect sharing of files containing PII — Credit card number
 
 Alert when a file containing a credit card number is shared from an approved cloud app.
+
+<br>
 
 ****
 
@@ -165,6 +155,8 @@ Notes:
 
 - Box monitoring requires a connector be configured using the API Connector SDK.
 - This policy requires capabilities that are currently in private preview.
+
+<br>
 
 ****
 

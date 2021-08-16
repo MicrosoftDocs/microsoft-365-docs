@@ -28,7 +28,7 @@ ms.custom: seo-marvel-apr2020
 
 After a Content search is successfully run, you can export the search results to a local computer. When you export email results, they're downloaded to your computer as PST files. When you export content from SharePoint and OneDrive for Business sites, copies of native Office documents are exported. There are other documents and reports included with the exported search results.
   
-Exporting the results of a Content search involves preparing the results, and then downloading them to a local computer.
+Exporting the results of a Content search involves preparing the results, and then downloading them to a local computer. These steps for exporting search results also apply to exporting the results of a search that's associated with Core eDiscovery cases.
   
 ## Before you export search results
 
@@ -52,6 +52,8 @@ Exporting the results of a Content search involves preparing the results, and th
   > <sup>1</sup> Microsoft doesn't manufacture third-party extensions or add-ons for ClickOnce applications. Exporting search results using an unsupported browser with third-party extensions or add-ons isn't supported.<br/>
   > <sup>2</sup> As a result of recent changes to Microsoft Edge, ClickOnce support is no longer enabled by default. For instructions on enabling ClickOnce support in Edge, see [Use the eDiscovery Export Tool in Microsoft Edge](configure-edge-to-export-search-results.md).
   
+- The eDiscovery Export Tool that you use in Step 2 to download search results doesn't support automation (by using a script or running cmdlets). We highly recommended that you don't automate the preparation process in Step 1 or the download process in Step 2. If you automate either of these processes, Microsoft Support will not provide assistance if you run into issues.
+
 - We recommend downloading search results to a local computer. To eliminate your company's firewall or proxy infrastructure from causing issues when downloading search results, you might consider downloading search results to a virtual desktop outside of your network. This may decrease timeouts that occur in Azure data connections when exporting a large number of files. For more information about virtual desktops, see [Windows Virtual Desktop](https://azure.microsoft.com/services/virtual-desktop).
 
 - To improve performance when downloading search results, consider dividing searches that return a large set of results into smaller searches. For example, you can use date ranges in search queries to return a smaller set of results that can be downloaded faster.
@@ -77,7 +79,7 @@ Exporting the results of a Content search involves preparing the results, and th
     </system.net>
     ```
 
-- If the results of a Content search are older than 7 days and you submit an export job, an error message is displayed prompting you to rerun the search to update the search results. If this happens, cancel the export, rerun the search, and then start the export again.
+- If the results of a search are older than 7 days and you submit an export job, an error message is displayed prompting you to rerun the search to update the search results. If this happens, cancel the export, rerun the search, and then start the export again.
 
 ## Step 1: Prepare search results for export
 
@@ -126,6 +128,8 @@ The first step is to prepare the search results for exporting. When you prepare 
    2. Select the **Include versions for SharePoint files** checkbox to export all versions of SharePoint documents. This option appears only if the content sources of the search include SharePoint or OneDrive for Business sites.
   
    3. Select the **Export files in a compressed (zipped) folder. Includes only individual messages and SharePoint documents** checkbox to export search results to compressed folders. This option appears only when you choose to export Exchange items as individual messages and when the search results include SharePoint or OneDrive documents. This option is primarily used to work around the 260 character limit in Windows file path names when items are exported. See the "Filenames of exported items" in the [More information](#more-information) section.
+   > [!IMPORTANT]
+   > Exporting files in a compressed (zipped) folder will increase export times.
   
 6. Click **Export** to start the export process. The search results are prepared for downloading, which means they're collected from the original content locations and then uploaded to an Azure Storage location in the Microsoft cloud. This may take several minutes.
 
@@ -164,7 +168,7 @@ The next step is to download the search results from the Azure Storage location 
       >- Disable anti-virus scanning for the folder that you download the search result to.<br/>
       >- Download search results to different folders for concurrent download jobs.
 
-6. Click **Start** to download the search results to your computer.
+7. Click **Start** to download the search results to your computer.
   
     The **eDiscovery Export Tool** displays status information about the export process, including an estimate of the number (and size) of the remaining items to be downloaded. When the export process is complete, you can access the files in the location where they were downloaded.
 

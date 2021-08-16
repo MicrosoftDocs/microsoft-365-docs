@@ -19,6 +19,7 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
@@ -117,12 +118,8 @@ Try this article: [I forgot the username or password for the account I use with 
   
 ## Related content
   
-[Let users reset their own passwords](../add-users/let-users-reset-passwords.md) (article)
-
-[Reset passwords](../add-users/reset-passwords.md) (article)
-
-[Set an individual user's password to never expire](set-password-to-never-expire.md) (article)
-
-[Set the password expiration policy for your organization](../manage/set-password-expiration-policy.md) (article)
-
+[Let users reset their own passwords](../add-users/let-users-reset-passwords.md) (article)\
+[Reset passwords](../add-users/reset-passwords.md) (article)\
+[Set an individual user's password to never expire](set-password-to-never-expire.md) (article)\
+[Set the password expiration policy for your organization](../manage/set-password-expiration-policy.md) (article)\
 [Microsoft 365 for business training videos](../../business-video/index.yml) (link page)

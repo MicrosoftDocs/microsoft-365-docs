@@ -61,7 +61,7 @@ sections:
       - question: |
           How long does it take to put EOP into production?
         answer: |
-          When you change your MX record, as per the steps outlined in [Set up your EOP service](set-up-your-eop-service.md), and your mail flows through EOP, filtering begins immediately. The MX record may take as long as 24-48 hours to propagate via DNS. You can fine tune your protection settings at any time during this process.
+          When you change your MX record, as per the steps outlined in [Set up your EOP service](/exchange/standalone-eop/set-up-your-eop-service), and your mail flows through EOP, filtering begins immediately. The MX record may take as long as 24-48 hours to propagate via DNS. You can fine tune your protection settings at any time during this process.
           
       - question: |
           Do I have to use all features of Microsoft 365 to use EOP? What if I just want EOP protection and that's all?

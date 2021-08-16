@@ -21,11 +21,9 @@ ROBOTS: NOINDEX, NOFOLLOW
 ## Phone number
 032 297 0124
 
-Select option 2
+Press 2 for business
 
-Select option 9
-
-Enter code 7700
+Press 1 for Microsoft 365
 
 ## Hours
 ### Billing Support:
