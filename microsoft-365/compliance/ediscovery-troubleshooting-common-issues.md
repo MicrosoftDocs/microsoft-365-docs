@@ -250,7 +250,7 @@ Your organization has reached the exports limit and now all new export jobs are 
 
 ### Resolution
 
-To discover how many export jobs are running concurrently follow these steps:
+Run the following script to discover how many export jobs are running concurrently in the last 7 days:
 
 1. Connect to [Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell)
 
