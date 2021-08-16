@@ -71,13 +71,13 @@ For more information about our privacy statement, see [Microsoft Privacy Stateme
 
 -   Before running the analyzer, we recommend ensuring your proxy or firewall
     configuration allows access to [Microsoft Defender for Endpoint service
-    URLs](/microsoft-365/security/defender-endpoint/configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server).
+    URLs](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server).
 
 -   The analyzer can run on supported editions of
-    [Windows](/microsoft-365/security/defender-endpoint/minimum-requirements.md#supported-windows-versions),
-    [Linux](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-linux.md#system-requirements),
+    [Windows](minimum-requirements.md#supported-windows-versions),
+    [Linux](microsoft-defender-endpoint-linux.md#system-requirements),
     or
-    [macOS](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-mac.md#system-requirements)
+    [macOS](microsoft-defender-endpoint-mac.md#system-requirements)
     either before of after onboarding to Microsoft Defender for Endpoint.
 
 -   For Windows devices, if you are running the analyzer directly on specific machines and not
@@ -92,8 +92,8 @@ For more information about our privacy statement, see [Microsoft Privacy Stateme
     > [!NOTE]
     > On Windows devices, if you use Attack Surface Reduction (ASR) rule [Block process creations
     originating from PSExec and WMI
-    commands](/microsoft-365/security/defender-endpoint/attack-surface-reduction.md#block-process-creations-originating-from-psexec-and-wmi-commands),
+    commands](attack-surface-reduction.md#block-process-creations-originating-from-psexec-and-wmi-commands),
     then may want to temporarily disable the rule or [configure an exclusion to
     the ASR
-    rule](/microsoft-365/security/defender-endpoint/enable-attack-surface-reduction.md#exclude-files-and-folders-from-asr-rules)
+    rule](enable-attack-surface-reduction.md#exclude-files-and-folders-from-asr-rules)
     to allow the analyzer to run connectivity checks to cloud as expected.
