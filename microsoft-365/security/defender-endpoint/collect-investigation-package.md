@@ -41,6 +41,10 @@ Collect investigation package from a device.
 
 1. Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
 
+> [!IMPORTANT]
+>
+> - These response actions are only available for devices on Windows 10, version  1703 or later.
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Defender for Endpoint APIs](apis-intro.md)
@@ -79,7 +83,7 @@ Comment|String|Comment to associate with the action. **Required**.
 
 ## Response
 
-If successful, this method returns 201 - Created response code and [Machine Action](machineaction.md) in the response body.
+If successful, this method returns 201 - Created response code and [Machine Action](machineaction.md) in the response body. If a collection is already running, this returns 400 Bad Request.
 
 ## Example
 

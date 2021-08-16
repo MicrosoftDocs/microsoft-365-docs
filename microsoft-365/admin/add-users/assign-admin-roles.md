@@ -53,7 +53,7 @@ You can assign users to a role in 2 different ways:
 
 ### Assign admin roles to users using Roles
 
-1. In the admin center, go to **Roles**. Choose the **Azure AD** or **Intune** tabs to view the admin roles available for your organization.
+1. In the admin center, go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2097861" target="_blank">**Role assignments**</a>. Choose the **Azure AD** or **Intune** tabs to view the admin roles available for your organization.
 2. Select the admin role that you want to assign the user to.
 3. Select **Assigned admins** > **Add**.
 4. Type the user's **display name** or **username**, and then select the user from the list of suggestions.

@@ -46,6 +46,8 @@ ms.custom: api
 
 5. 429 response will represent reaching quota limit either by number of requests or by CPU. Read response body to understand what limit has been reached. 
 
+6. The maximum query result size of a single request cannot exceed 124 MB. If exceeded, HTTP 400 Bad Request with the message "Query execution has exceeded the allowed result size. Optimize your query by limiting the amount of results and try again" will appear.
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md)

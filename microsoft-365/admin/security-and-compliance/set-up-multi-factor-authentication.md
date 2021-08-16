@@ -81,14 +81,14 @@ For more information about the Azure AD P1 and P2, see [Azure Active Directory p
 For most subscriptions modern authentication is automatically turned on, but if you purchased your subscription before August 2017, it is likely that you will need to turn on Modern Authentication in order to get features like Multifactor Authentication to work in Windows clients like Outlook.
 
 
-1. In the Microsoft 365 admin center, in the left nav choose **Settings** \> **Org settings**.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, in the left nav choose **Settings** \> **Org settings**.
 2. Under the **Services** tab, choose **Modern authentication**, and in the **Modern authentication** pane, make sure **Enable Modern authentication** is selected. Choose **Save changes**.
 
 ### Turn off legacy per-user MFA
 
 If you have previously turned on per-user MFA, you must turn it off before enabling Security defaults.
 
-1. In the Microsoft 365 admin center, in the left nav choose **Users** \> **Active users**.
+1. In the Microsoft 365 admin center, in the left nav choose **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**Active users**</a>.
 1. On the **Active users** page, choose **Multi-factor authentication**.
 1. On the multi-factor authentication page, select each user and set their Multi-Factor auth status to **Disabled**.
 
