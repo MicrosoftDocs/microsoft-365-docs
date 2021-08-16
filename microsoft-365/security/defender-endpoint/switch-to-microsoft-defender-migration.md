@@ -38,7 +38,7 @@ When you make the switch to Defender for Endpoint, you begin with your non-Micro
 
 The process of migrating to Defender for Endpoint can be divided into three phases, as described in the following table:
 
-![Migration phases - prepare, setup, onboard](images/phase-diagrams/migration-phases.png)
+![MDE migration process](images/phase-diagrams/migration-phases.png)
 
 |Phase |Description |
 |--|--|
