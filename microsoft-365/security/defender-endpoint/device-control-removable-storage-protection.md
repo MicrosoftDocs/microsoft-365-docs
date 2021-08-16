@@ -35,7 +35,7 @@ Device control removable storage protection in Microsoft Defender for Endpoint p
 
 **Windows 10 support details**:
 
-- Applied at either machine or user or both. Only allow specific people performing Read/Write/Execute access to specific removable storage on specific machine.
+- Applied at either the device level, user leve. or both. Only allow specific people performing Read/Write/Execute access to specific removable storage on specific machine.
 - Support MEM OMA-URI and GPO.
 - Supported  '[Device Properties](#device-properties)' as listed.
 - For feature in Windows, see [Removable storage Access Control](device-control-removable-storage-access-control.md).
@@ -56,7 +56,7 @@ Device control removable storage protection in Microsoft Defender for Endpoint p
 
 **Windows 10 support details**:
 
-- Applied at device level: the same policy applies for any logged on user.
+- Applied at the device level: the same policy applies for any logged on user.
 - Supports Microsoft Endpoint Manager and Group Policy Objects.
 - Supported  '[Device Properties](#device-properties)' as listed.
 - For more information on Windows, see [How to control USB devices and other removable media using Microsoft Defender for Endpoint](control-usb-devices-using-intune.md).
@@ -65,7 +65,7 @@ Device control removable storage protection in Microsoft Defender for Endpoint p
 
 **macOS support details**:
 
-- Applied at device level: the same policy applies for any logged on user
+- Applied at the device level: the same policy applies for any logged on user
 - For macOS specific information, see [Device control for macOS](mac-device-control-overview.md).
 
 **Supported platform** - macOS Catalina 10.15.4+ (with system extensions enabled) or later
