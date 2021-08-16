@@ -271,4 +271,4 @@ Run the following script to discover how many export jobs that were started in t
 
    If the previous command returns 10 or more exports jobs, your organization has reached the limit for the number of concurrent export jobs. For more information, see [Limits for eDiscovery search](limits-for-content-search.md).
 
-4. Wait for existing export jobs to finish or remove export jobs that are no longer needed by using the[Remove-ComplianceSearchAction](/powershell/module/exchange/remove-compliancesearchaction) cmdlet.
+4. Wait for existing export jobs to finish or remove export jobs that are no longer needed by using the [Remove-ComplianceSearchAction](/powershell/module/exchange/remove-compliancesearchaction) cmdlet.
