@@ -60,10 +60,15 @@ Total survey responses and comments by end-users. This area displays Total Feedb
 ### Top topic filters
 
 You can filter by Date, Surveys, Application, Language and Fork.
+
 **Date filter** You can search by date for the following: All dates, Past 6 Months, Past 30 days, Past Week.
+
 **Surveys filter** You can select different surveys for your organization.
+
 **Application filter** You can select the application that the survey was collected from.
+
 **Language filter** You can filter by the languages of the apps that survey respondents were using while responding to the surveys.
+
 **Fork filter** You can filter by Microsoft 365 forks.
 
 :::image type="content" source="../../media/prosight-top-topic-filters.png" alt-text="Screenshot: Microsoft 365 survey insights":::
