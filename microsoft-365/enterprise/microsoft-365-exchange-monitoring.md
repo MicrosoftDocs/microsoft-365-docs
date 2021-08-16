@@ -37,7 +37,7 @@ The value of the **Health** column under **Microsoft service health** indicates 
 
 Here is an example of the Exchange Online monitoring page in the Microsoft 365 admin center that shows the health of organization level and priority account scenarios, available from **Health > Service health > Exchange Online**.
 
-:::image type="content" source="../media/microsoft-365-exchange-monitoring/exhange-monitoring-example.png" alt-text="The Exchange Online monitoring page in the Microsoft 365 admin center":::
+:::image type="content" source="../media/microsoft-365-exchange-monitoring/exchange-monitoring-example.png" alt-text="The Exchange Online monitoring page in the Microsoft 365 admin center":::
 
 With the **Exchange Online** monitoring page, you can see whether the Exchange Online service is healthy or not and whether there are any associated incidents or advisories. With Exchange Online monitoring, you can look at the service health for specific email scenarios and view near real-time signals to determine the impact by organization level scenario. You can also see health of priority account scenarios.
 
@@ -72,9 +72,10 @@ For these clients, you can see the number of active users in the last 30 minutes
 You can also monitor Exchange Online health for the following scenarios:
 
 - **Mail flow**: The number of messages successfully delivered to a mailbox without any delay after the message reached the Microsoft 365 network. 
+
 - **Basic Authentication and Modern Authentication**: The number of users successfully validated in the Exchange Online service.
 
-![An example of monitoring Exchange health for mail delivery](../media/microsoft-365-exchange-monitoring/exhange-monitoring-scenario-example.png)
+![An example of monitoring Exchange health for mail delivery](../media/microsoft-365-exchange-monitoring/exchange-monitoring-scenario-example.png)
 
 For all these scenarios, the key numbers are for the last 30 minutes in the main dashboard. Detailed views for each of these scenarios show the near real-time trend for seven days with the 30-minute aggregate compared with the previous week. 
 
@@ -98,17 +99,19 @@ The remaining five scenarios above check if your priority account’s mailbox is
 
 For these scenarios, you can see active and resolved advisories and incidents affecting your priority accounts. Identifiable information for the priority accounts will be displayed in the advisory or incident details along with recommendations. Here is an example.
  
-:::image type="content" source="../media/microsoft-365-exchange-monitoring/exhange-priority-accounts-scenario-example.png" alt-text="Example of active and resolved advisories and incidents affecting your priority accounts":::
+:::image type="content" source="../media/microsoft-365-exchange-monitoring/exchange-priority-accounts-scenario-example.png" alt-text="Example of active and resolved advisories and incidents affecting your priority accounts":::
 
 In the affected account pane, the **Status** column has these values:
 
 - Fixed: The issue causing the advisory or incident has been addressed for the priority account. There is no longer an issue. 
+
 - Active: The issue causing the advisory or incident is ongoing for the priority account. The issue remains. 
+
 - Delayed: The issue causing the advisory or incident has not been addressed for the priority account in 96 hours, so it is suspended. The issue remains. 
 
 Here is an example.
  
-:::image type="content" source="../media/microsoft-365-exchange-monitoring/exhange-status-column-example.png" alt-text="Example of the status column in the affected account pane":::
+:::image type="content" source="../media/microsoft-365-exchange-monitoring/exchange-status-column-example.png" alt-text="Example of the status column in the affected account pane":::
 
 An advisory or incident will be resolved after no accounts remain in the **Active** state. 
 
@@ -118,9 +121,10 @@ An advisory or incident will be resolved after no accounts remain in the **Activ
 There are two ways you can provide feedback:
 
 - Use the **Give feedback** option available on every page of the Microsoft 365 admin center.
+
 - Submit feedback using the **Is this post helpful?** link for a specific incident or advisory.
 
-![The "Is this post helpful?" link for a specific incident or advisory](../media/microsoft-365-exchange-monitoring/exhange-monitoring-example-incident-feedback.png)
+![The "Is this post helpful?" link for a specific incident or advisory](../media/microsoft-365-exchange-monitoring/exchange-monitoring-example-incident-feedback.png)
 
 ## Frequently asked questions
 
