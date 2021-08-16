@@ -92,7 +92,7 @@ For more information about our privacy statement, see [Microsoft Privacy Stateme
     > [!NOTE]
     > On Windows devices, if you use Attack Surface Reduction (ASR) rule [Block process creations
     originating from PSExec and WMI
-    commands](attack-surface-reduction.md#block-process-creations-originating-from-psexec-and-wmi-commands),
+    commands](attack-surface-reduction-rules.md#block-process-creations-originating-from-psexec-and-wmi-commands),
     then may want to temporarily disable the rule or [configure an exclusion to
     the ASR
     rule](enable-attack-surface-reduction.md#exclude-files-and-folders-from-asr-rules)
