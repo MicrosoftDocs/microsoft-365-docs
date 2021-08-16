@@ -37,7 +37,7 @@ The steps are also summarized in the following sections.
 
 Complete the following steps to enable your organization's Azure AD joined devices to access on-premises resources.
 
-1. To synchronize your users, groups, and contacts from local Active Directory into Azure Active Directory, run the Directory synchronization wizard and Azure AD Connect as described in [Set up directory synchronization for Office 365](../enterprise/set-up-directory-synchronization.md).
+1. To synchronize your users, groups, and contacts from local Active Directory into Azure Active Directory, run the Directory synchronization wizard and Azure AD Connect as described in [Set up directory synchronization for Office 365](../../enterprise/set-up-directory-synchronization.md).
 
 2. After the directory synchronization is complete, make sure your organization's Windows 10 devices are Azure AD joined. This step is done individually on each Windows 10 device. See [Set up Windows devices for Microsoft 365 Business Premium users](set-up-windows-devices.md) for details.
 
