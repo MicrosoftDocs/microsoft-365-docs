@@ -243,3 +243,29 @@ This is a client-side issue. To remediate it, follow these steps:
 6. If the previous steps don't work, disable zipping and de-duplication.
 
 7. If this works then the issue is due to a local virus scanner or a disk issue.
+
+## Error: "Your request can't be started because the maximum number of jobs for your organization are currently running..."
+
+Your organization has reached the exports limit and now all new export jobs are being throttled.
+
+### Resolution
+
+To discover how many export jobs are running concurrently follow these steps:
+
+1. Connect to [Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell)
+
+2. Run the following script to find out how many jobs are triggering the throttle: 
+   ```powershell
+   $date = Get-Date;
+   $exports = Get-ComplianceSearchAction -Export -ResultSize Unlimited;
+   $inprogressExports = $exports | ?{$_.Results -eq $null -or (!$_.Results.Contains("Export status: Completed") -and !$_.Results.Contains("Export status: none"))};
+   $exportJobsRunning = $inprogressExports | ?{$_.JobStartTime -ge $date.AddDays(-7)} | Sort-Object JobStartTime -Descending;
+   ```
+
+3. Display the jobs that are currently running:
+   ```powershell
+   $exportJobsRunning | Format-Table Name, JobStartTime, JobEndTime, Status | More;
+   ```
+   When the list returns 10 or more exports running, the limit has been reached. [Limits for eDiscovery search](/microsoft-365/compliance/limits-for-content-search)
+
+4. Wait for existing export jobs to finish or remove exports that are no longer needed using [Remove-ComplianceSearchAction](/powershell/module/exchange/remove-compliancesearchaction) cmdlet.
