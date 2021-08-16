@@ -20,7 +20,7 @@ f1.keywords: NOCSH
 > [!TIP]
 > If you have Microsoft 365 E3 but not Microsoft 365 E5, contact support and ask to participate in the preview program!
 
-As a preview customer, you likely have assistance in setting up and configuring Defender for Endpoint Plan 1 (preview). This article describes the setup and configuration process to help you with planning and rolling out Defender for Endpoint Plan 1.
+This article describes how to set up and configure Defender for Endpoint Plan 1 (preview). Whether you have assistance or are doing it yourself, you can use this article as a guide throughout your deployment.  
 
 ## The setup and configuration process
 
