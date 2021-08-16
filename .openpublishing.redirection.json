@@ -1,6 +1,141 @@
 {
   "redirections": [
     {
+      "source_path": "microsoft-365/business/validate-settings-on-windows-10-pcs.md",
+      "redirect_url": "/microsoft-365/admin/devices/validate-settings-on-windows-10-pcs",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/business/review-threats-take-action.md",
+      "redirect_url": "/microsoft-365/admin/security-and-compliance/review-threats-take-action",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/business/map-protection-features-to-intune-settings.md",
+      "redirect_url": "/microsoft-365/admin/devices/map-protection-features-to-intune-settings",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/business/set-up-compliance.md",
+      "redirect_url": "/microsoft-365/admin/security-and-compliance/set-up-compliance",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/business/device-states.md",
+      "redirect_url": "/microsoft-365/admin/devices/device-states",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/business/pre-requisites-for-data-protection.md",
+      "redirect_url": "/microsoft-365/admin/security-and-compliance/pre-requisites-for-data-protection",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/business/increase-threat-protection.md",
+      "redirect_url": "/microsoft-365/admin/security-and-compliance/increase-threat-protection",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/business/create-and-edit-autopilot-devices.md",
+      "redirect_url": "/microsoft-365/admin/devices/create-and-edit-autopilot-devices",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/business/protection-settings-for-windows-10-devices.md",
+      "redirect_url": "/microsoft-365/admin/devices/protection-settings-for-windows-10-devices",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/business/secure-win-10-pcs.md",
+      "redirect_url": "/microsoft-365/admin/setup/secure-win-10-pcs",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/business/create-and-edit-autopilot-profiles.md",
+      "redirect_url": "/microsoft-365/admin/devices/create-and-edit-autopilot-profiles",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/business/autopilot-profile-settings.md",
+      "redirect_url": "/microsoft-365/admin/devices/autopilot-profile-settings",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/business/threats-detected-defender-av.md",
+      "redirect_url": "/microsoft-365/admin/security-and-compliance/threats-detected-defender-av",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/business/remove-company-data.md",
+      "redirect_url": "/microsoft-365/admin/devices/remove-company-data",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/business/reset-devices-to-factory-settings.md",
+      "redirect_url": "/microsoft-365/admin/devices/reset-devices-to-factory-settings",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/business/protection-settings-for-windows-10-pcs.md",
+      "redirect_url": "/microsoft-365/admin/devices/protection-settings-for-windows-10-pcs",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/business/view-policies-and-devices.md",
+      "redirect_url": "/microsoft-365/admin/devices/view-policies-and-devices",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/business/app-protection-settings-for-android-and-ios.md",
+      "redirect_url": "/microsoft-365/admin/devices/app-protection-settings-for-android-and-ios",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/business/validate-settings-on-android-or-ios.md",
+      "redirect_url": "/microsoft-365/admin/devices/validate-settings-on-android-or-ios",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/business/manage-domain-users.md",
+      "redirect_url": "/microsoft-365/admin/setup/manage-domain-users",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/business/set-up-mobile-devices.md",
+      "redirect_url": "/microsoft-365/admin/setup/set-up-mobile-devices",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/business/access-resources.md",
+      "redirect_url": "/microsoft-365/admin/setup/access-resources",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/business/support/microsoft-365-business-faqs.yml    ",
+      "redirect_url": "/microsoft-365/admin/misc/microsoft-365-business-faqs",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/business/set-up.md",
+      "redirect_url": "/microsoft-365/admin/setup/business-set-up",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/business/add-autopilot-devices-and-profile.md",
+      "redirect_url": "/microsoft-365/admin/devices/add-autopilot-devices-and-profile",
+      "redirect_document_id": true
+    }, 
+    {
+      "source_path": "microsoft-365/business/set-up-windows-devices.md",
+      "redirect_url": "/microsoft-365/admin/setup/set-up-windows-devices",
+      "redirect_document_id": true
+    },    
+    {
+      "source_path": "microsoft-365/business/manage-windows-devices.md",
+      "redirect_url": "/microsoft-365/admin/setup/manage-windows-devices",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "microsoft-365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions.md",
       "redirect_url": "/microsoft-365/admin/setup/add-domain",
       "redirect_document_id": false
