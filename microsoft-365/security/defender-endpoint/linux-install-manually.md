@@ -69,28 +69,34 @@ In order to preview new features and provide early feedback, it is recommended t
     ```bash
     sudo yum install yum-utils
     ```
+- Note your distribution and version, and identify the closest entry (by major, then minor) for it under `https://packages.microsoft.com/rhel/`.
 
-- Note your distribution and version, and identify the closest entry (by major, then minor) for it under `https://packages.microsoft.com/config/`. For instance, RHEL 7.9 is closer to 7.4 than to 8.
+    Use the following table to help guide you in locating the package: 
 
-    In the below commands, replace *[distro]* and *[version]* with the information you've identified:
+    |     Distro & version    |     Package    |
+    |---|---|
+    |     For RHEL 8.0-8.5    |     https://packages.microsoft.com/rhel/8/prod/    |
+    |     For RHEL 7.2-7.9    |     https://packages.microsoft.com/rhel/7/prod/    |
+
+    In the following commands, replace *[version]* and *[channel]* with the information you've identified:
 
     > [!NOTE]
     > In case of Oracle Linux, replace *[distro]* with "rhel".
 
     ```bash
-    sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/[distro]/[version]/[channel].repo
+    sudo yum-config-manager --add-repo=https://packages.microsoft.com/rhel/[version]/[channel].repo
     ```
 
     For example, if you are running CentOS 7 and want to deploy Defender for Endpoint on Linux from the *prod* channel:
 
     ```bash
-    sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/centos/7/prod.repo
+    sudo yum-config-manager --add-repo=https://packages.microsoft.com/rhel/7/prod.repo
     ```
 
     Or if you wish to explore new features on selected devices, you might want to deploy Microsoft Defender for Endpoint on Linux to *insiders-fast* channel:
 
     ```bash
-    sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/centos/7/insiders-fast.repo
+    sudo yum-config-manager --add-repo=https://packages.microsoft.com/rhel/7/insiders-fast.repo
     ```
 
 - Install the Microsoft GPG public key:
@@ -107,18 +113,18 @@ In order to preview new features and provide early feedback, it is recommended t
 
 ### SLES and variants
 
-- Note your distribution and version, and identify the closest entry(by major, then minor) for it under `https://packages.microsoft.com/config/`.
+- Note your distribution and version, and identify the closest entry(by major, then minor) for it under `https://packages.microsoft.com/sles/`.
 
     In the following commands, replace *[distro]* and *[version]* with the information you've identified:
 
     ```bash
-    sudo zypper addrepo -c -f -n microsoft-[channel] https://packages.microsoft.com/config/[distro]/[version]/[channel].repo
+    sudo zypper addrepo -c -f -n microsoft-[channel] https://packages.microsoft.com/[distro]/[version]/[channel].repo
     ```
 
     For example, if you are running SLES 12 and wish to deploy Microsoft Defender for Endpoint on Linux from the *prod* channel:
 
     ```bash
-    sudo zypper addrepo -c -f -n microsoft-prod https://packages.microsoft.com/config/sles/12/prod.repo
+    sudo zypper addrepo -c -f -n microsoft-prod https://packages.microsoft.com/sles/12/prod.repo
     ```
 
 - Install the Microsoft GPG public key:
@@ -141,18 +147,18 @@ In order to preview new features and provide early feedback, it is recommended t
     sudo apt-get install libplist-utils
     ```
 
-- Note your distribution and version, and identify the closest entry (by major, then minor) for it under `https://packages.microsoft.com/config`.
+- Note your distribution and version, and identify the closest entry (by major, then minor) for it under `https://packages.microsoft.com/[distro]/`.
 
     In the below command, replace *[distro]* and *[version]* with the information you've identified:
 
     ```bash
-    curl -o microsoft.list https://packages.microsoft.com/config/[distro]/[version]/[channel].list
+    curl -o microsoft.list https://packages.microsoft.com/[distro]/[version]/[channel].list
     ```
 
-    For example, if you are running Ubuntu 18.04 and wish to deploy MDE for Linux from the *prod* channel:
+    For example, if you are running Ubuntu 18.04 and wish to deploy Microsoft Defender for Endpoint on Linux from the *prod* channel:
 
     ```bash
-    curl -o microsoft.list https://packages.microsoft.com/config/ubuntu/18.04/prod.list
+    curl -o microsoft.list https://packages.microsoft.com/ubuntu/18.04/prod.list
     ```
 
 - Install the repository configuration:
@@ -423,7 +429,7 @@ When upgrading your operating system to a new major version, you must first unin
     sudo yum-config-manager --disable packages-microsoft-com-fast-prod
     ```
 
-1. Redeploy MDE for Linux using the "Production channel".
+1. Redeploy Microsoft Defender for Endpoint on Linux using the "Production channel".
 
 ## Uninstallation
 

@@ -166,6 +166,8 @@ Annual tasks can include conducting a major incident or breach exercise to test 
 
 Daily, monthly, quarterly, and annual tasks can be used to update or refine processes, policies, and security configurations.
 
+See [ Integrating Microsoft 365 Defender into your security operations](integrate-microsoft-365-defender-secops.md) for more details.
+
 ### SecOps resources across Microsoft products
 
 For more information about SecOps across Microsoft's products, see these resources:
