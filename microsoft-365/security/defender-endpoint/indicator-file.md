@@ -112,7 +112,7 @@ search in (DeviceFileEvents, DeviceProcessEvents, DeviceEvents, DeviceRegistryEv
 Timestamp > ago(30d)
 | where AdditionalFields contains "EUS:Win32/CustomEnterpriseBlock!cl"
 
-![Advanced hunting](/images/indicators-advanced-hunting.png)
+![Advanced hunting](images/indicators-advanced-hunting.png)
 
 Below are additional thread names which can be used in the sample query from above:
 
