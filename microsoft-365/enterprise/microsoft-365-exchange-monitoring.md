@@ -25,7 +25,7 @@ You can use Exchange Online monitoring in the Microsoft 365 admin center to moni
 - **Third-party infrastructure**: Issue is detected in third-party infrastructure on which your organization has taken a dependency and requires action from your organization for resolution. For example, user authentication transactions are getting throttled by a third-party security token service (STS) provider that prevents users from connecting to Exchange Online.
 - **Customer infrastructure**: Issue is detected in your organization's infrastructure and requires action from your organization for resolution. For example, users cannot access Exchange Online because they are unable to obtain an authentication token from STS provider hosted by your organization because of an expired certificate.
 
-Here is an example of the **Service health** page in the Microsoft 365 admin center, available from **Health > Service health** for organization and [priority account](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts) scenarios.
+Here is an example of the **Service health** page in the Microsoft 365 admin center, available from **Health > Service health** for organization and [priority account](../admin/setup/priority-accounts.md) scenarios.
 
 **Issues in your organization** will be identified and used by both organizational level and priority account monitoring.
 
@@ -57,7 +57,7 @@ This preview is enabled for customers who meet these requirements:
 
 With Exchange Online monitoring supports the following scenarios:
 
-- **Email clients**. You can view the health for the following email clients based on email read activity:
+- **Email clients**: You can view the health for the following email clients based on email read activity:
 
   - Outlook desktop
   - Outlook on the web
@@ -71,7 +71,7 @@ With Exchange Online monitoring supports the following scenarios:
    >[!Note]
    > Active user count is measured by a single activity, for example, when a user reads an email. It only accounts for the last 30 minutes of activity.
 
-- **App connectivity**. Estimated connectivity is based on the percentage of successful, synthetic connections between your organization's devices and Exchange Online, and may include issues outside of Microsoft's control. 
+- **App connectivity**: Estimated connectivity is based on the percentage of successful, synthetic connections between your organization's devices and Exchange Online, and may include issues outside of Microsoft's control. 
 
 - **Mail flow**: The number of messages successfully delivered to a mailbox without any delay after the message reached the Microsoft 365 network.
 
