@@ -97,7 +97,7 @@ The additional tabs for an incident are:
 
 - Graph (Preview)
 
-  A visual representation of the attack that connects the different suspicious entities that are part of the attack with their related assets such as users, devices, and mailboxes   
+  A visual representation of the attack that connects the different suspicious entities that are part of the attack with their related assets such as users, devices, and mailboxes.
 
 Here's the relationship between an incident and its data and the tabs of an incident in the Microsoft 365 Defender portal.
 
