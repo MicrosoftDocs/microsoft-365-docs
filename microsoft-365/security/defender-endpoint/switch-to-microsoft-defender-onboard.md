@@ -136,9 +136,9 @@ If at this point you have:
 - Onboarded your organization's devices to Defender for Endpoint, and 
 - Microsoft Defender Antivirus is installed and enabled, 
 
-Then your next step is to uninstall your non-Microsoft antivirus, antimalware, and endpoint protection solution. When you uninstall your non-Microsoft solution, Microsoft Defender Antivirus switches from passive mode to active mode, ensuring that antivirus and antimalware protection is in place.
+Then your next step is to uninstall your non-Microsoft antivirus, antimalware, and endpoint protection solution. When you uninstall your non-Microsoft solution, Microsoft Defender Antivirus switches from passive mode to active mode. In most cases, this happens automatically.
 
-To get help with this task, reach out to your solution provider's technical support team.
+To get help with uninstalling your non-Microsoft solution, contact their technical support team. 
 
 ## Make sure Defender for Endpoint is working correctly
 
