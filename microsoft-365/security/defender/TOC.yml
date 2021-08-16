@@ -118,6 +118,8 @@
         items:
           - name: Sensor settings and health
             href: ../defender-identity/sensor-health.md
+          - name: Directory Services account
+            href: ../defender-identity/directory-service-accounts.md
           - name: VPN integration
             href: ../defender-identity/vpn-integration.md
           - name: Set entity tags
