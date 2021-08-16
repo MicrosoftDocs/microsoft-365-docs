@@ -28,17 +28,17 @@ This article describes how to set up and configure Defender for Endpoint Plan 1 
 
 The general setup and configuration process for Defender for Endpoint Plan 1 (preview) is as follows:
 
-1. [Review the requirements](#review-the-requirements) (including licensing and device requirements)
-2. [Plan your deployment](#plan-your-deployment)
-3. [Set up your tenant environment](#set-up-your-tenant-environment)
-4. [Assign roles and permissions](#assign-roles-and-permissions)
-5. [Onboard to Defender for Endpoint](#onboard-to-defender-for-endpoint)
-6. [Configure next-generation protection](#configure-next-generation-protection)
-7. [Configure your attack surface reduction capabilities](#configure-your-attack-surface-reduction-capabilities)
+
+| Number  | Step  | Description  |
+|---------|---------|---------|
+| 1 | [Review the requirements](#review-the-requirements)  | Lists licensing, browser, operating system, and datacenter requirements   |
+| 2 | [Plan your deployment](#plan-your-deployment) | Lists several deployment methods to consider and includes links to more resources to help you decide which method to use  |
+| 3 | [Set up your tenant environment](#set-up-your-tenant-environment) | Lists tasks for setting up your tenant environment |
+| 4 | [Assign roles and permissions](#assign-roles-and-permissions) | Lists roles and permissions to consider for your security team <br/><br/>**TIP**: [!TIP] As soon as roles and permissions are assigned, your security team can get started using the Microsoft 365 Defender portal. To learn more, see [Getting started](mde-plan1-getting-started.md). |
+| 5 | [Onboard to Defender for Endpoint](#onboard-to-defender-for-endpoint) | Lists several methods by operating system to onboard to Defender for Endpoint Plan 1 and includes links to more detailed information for each method  |
+| 6 | [Configure next-generation protection](#configure-next-generation-protection) | Describes how to configure your next-generation protection settings in Microsoft Endpoint Manager  |
+| 7 | [Configure your attack surface reduction capabilities](#configure-your-attack-surface-reduction-capabilities)        | Lists the types of attack surface reduction capabilities you can configure and includes procedures with links to more resources  |
  
-> [!TIP]
-> As soon as roles and permissions are assigned, your security team can get started using the Microsoft 365 Defender portal. To learn more, see [Getting started](mde-plan1-getting-started.md).
- 
 ## Review the requirements
 
 The following table lists the basic requirements for Defender for Endpoint Plan 1 (preview):
