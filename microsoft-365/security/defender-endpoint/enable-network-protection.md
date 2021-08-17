@@ -9,9 +9,9 @@ ms.sitesec: library
 ms.pagetype: security
 localization_priority: Normal
 ms.topic: conceptual
-author: dansimp
-ms.author: dansimp
-ms.reviewer: 
+author: denisebmsft
+ms.author: deniseb
+ms.reviewer:
 manager: dansimp
 ms.technology: mde
 ---
@@ -39,24 +39,24 @@ Check if network protection has been enabled on a local device by using Registry
 
 2. Choose **HKEY_LOCAL_MACHINE** from the side menu
 
-3. Navigate through the nested menus to **SOFTWARE** > **Microsoft** > **Windows Defender** > **Windows Defender Exploit Guard** > **Network Protection**
+3. Navigate through the nested menus to **SOFTWARE** > **Policies** > **Microsoft** > **Windows Defender** > **Windows Defender Exploit Guard** > **Network Protection**
 
 4. Select **EnableNetworkProtection** to see the current state of network protection on the device
 
-    * 0, or **Off**
-    * 1, or **On**
-    * 2, or **Audit** mode
-    
-    ![networkprotection](https://user-images.githubusercontent.com/3296790/95341270-b738b280-08d3-11eb-84a0-16abb140c9fd.PNG)
+   - 0, or **Off**
+   - 1, or **On**
+   - 2, or **Audit** mode
+
+    ![Network Protection registry key](../../media/95341270-b738b280-08d3-11eb-84a0-16abb140c9fd.png)
 
 ## Enable network protection
 
 Enable network protection by using any of these methods:
 
-* [PowerShell](#powershell)
-* [Mobile Device Management (MDM)](#mobile-device-management-mdm)
-* [Microsoft Endpoint Manager / Intune](#microsoft-endpoint-manager-formerly-intune)
-* [Group Policy](#group-policy)
+- [PowerShell](#powershell)
+- [Mobile Device Management (MDM)](#mobile-device-management-mdm)
+- [Microsoft Endpoint Manager / Intune](#microsoft-endpoint-manager-formerly-intune)
+- [Group Policy](#group-policy)
 
 ### PowerShell
 
@@ -101,13 +101,13 @@ Use the following procedure to enable network protection on domain-joined comput
 
 3. Expand the tree to **Windows components** > **Microsoft Defender Antivirus** > **Windows Defender Exploit Guard** > **Network protection**.
 
-> [!NOTE]
-> On older versions of Windows, the group policy path may say "Windows Defender Antivirus" instead of "Microsoft Defender Antivirus."
+   > [!NOTE]
+   > On older versions of Windows, the group policy path may say "Windows Defender Antivirus" instead of "Microsoft Defender Antivirus."
 
 4. Double-click the **Prevent users and apps from accessing dangerous websites** setting and set the option to **Enabled**. In the options section, you must specify one of the following options:
-    * **Block** - Users can't access malicious IP addresses and domains
-    * **Disable (Default)** - The Network protection feature won't work. Users won't be blocked from accessing malicious domains
-    * **Audit Mode** - If a user visits a malicious IP address or domain, an event will be recorded in the Windows event log. However, the user won't be blocked from visiting the address.
+    - **Block** - Users can't access malicious IP addresses and domains
+    - **Disable (Default)** - The Network protection feature won't work. Users won't be blocked from accessing malicious domains
+    - **Audit Mode** - If a user visits a malicious IP address or domain, an event will be recorded in the Windows event log. However, the user won't be blocked from visiting the address.
 
 > [!IMPORTANT]
 > To fully enable network protection, you must set the Group Policy option to **Enabled** and also select **Block** in the options drop-down menu.
@@ -116,15 +116,15 @@ Confirm network protection is enabled on a local computer by using Registry edit
 
 1. Select **Start** and type **regedit** to open **Registry Editor**.
 
-2. Navigate to **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Windows Defender Exploit Guard\Network Protection\EnableNetworkProtection**
+2. Navigate to **HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Windows Defender Exploit Guard\Network Protection\EnableNetworkProtection**
 
 3. Select **EnableNetworkProtection** and confirm the value:
-   * 0=Off
-   * 1=On
-   * 2=Audit
+   - 0=Off
+   - 1=On
+   - 2=Audit
 
 ## See also
 
-* [Network protection](network-protection.md)
-* [Evaluate network protection](evaluate-network-protection.md)
-* [Troubleshoot network protection](troubleshoot-np.md)
+- [Network protection](network-protection.md)
+- [Evaluate network protection](evaluate-network-protection.md)
+- [Troubleshoot network protection](troubleshoot-np.md)

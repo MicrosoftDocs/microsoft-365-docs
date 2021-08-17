@@ -1,9 +1,9 @@
 ---
 title: "Identity and device access prerequisites for cloud only in your Microsoft 365 test environment"
-author: JoeDavies-MSFT
+author: kelleyvice-msft
 f1.keywords:
 - NOCSH
-ms.author: josephd
+ms.author: kvice
 manager: laurawi
 audience: ITPro
 ms.topic: article

@@ -44,6 +44,13 @@ Restrict execution of all applications on the device except a predefined set.
 
 [!include[Device actions note](../../includes/machineactionsnote.md)]
 
+
+> [!IMPORTANT]
+>
+> - This action is available for devices on Windows 10, version  1709 or later.
+> - This feature is available if your organization uses Microsoft Defender Antivirus.
+> - This action needs to meet the Windows Defender Application Control code integrity policy formats and signing requirements. For more information, see [Code integrity policy formats and signing](/windows/device-security/device-guard/requirements-and-deployment-planning-guidelines-for-device-guard#code-integrity-policy-formats-and-signing).
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md)
@@ -83,6 +90,8 @@ Comment|String|Comment to associate with the action. **Required**.
 ## Response
 
 If successful, this method returns 201 - Created response code and [Machine Action](machineaction.md) in the response body.
+
+If you send multiple API calls to restrict app execution for the same device, it returns "pending machine action" or HTTP 400 with the message "Action is already in progress".
 
 ## Example
 

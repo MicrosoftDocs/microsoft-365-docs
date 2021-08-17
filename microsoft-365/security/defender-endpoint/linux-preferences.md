@@ -465,6 +465,7 @@ The following configuration profile contains entries for all settings described 
 {
    "antivirusEngine":{
       "enableRealTimeProtection":true,
+      "maximumOnDemandScanThreads":1,
       "passiveMode":false,
       "exclusionsMergePolicy":"merge",
       "exclusions":[
