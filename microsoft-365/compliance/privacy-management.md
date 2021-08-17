@@ -88,7 +88,7 @@ The privacy management solution for Microsoft 365 evaluates data and files store
 - Microsoft OneDrive
 - Microsoft Teams
 
-Since privacy management focuses on data specific to your organization, any personal accounts your employees or customers may have on these services will not be in scope.
+Privacy management does not collect data beyond what is already collected in Microsoft 365, and will not make modifications to the data on its own. Also, since privacy management evaluates data specific to your organization, any consumer accounts your employees or customers may have on these services will not be in scope.
 
 ### Additional resources
 

@@ -1,7 +1,7 @@
 ---
 title: Switch to Microsoft Defender for Endpoint - Prepare
-description: This is phase 1, Prepare, for migrating to Microsoft Defender for Endpoint.
-keywords: migration, Microsoft Defender for Endpoint, edr
+description: Get ready to make the switch to Microsoft Defender for Endpoint. Update your devices and configure your network connections.
+keywords: migration, Microsoft Defender for Endpoint, best practice
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,7 +21,7 @@ ms.collection:
   - m365solution-symantecmigrate
 ms.topic: article
 ms.custom: migrationguides
-ms.date: 08/11/2021
+ms.date: 08/16/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ---
 

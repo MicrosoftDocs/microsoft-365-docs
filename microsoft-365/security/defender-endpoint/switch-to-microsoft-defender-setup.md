@@ -1,7 +1,7 @@
 ---
 title: Switch to Microsoft Defender for Endpoint - Setup
-description: Phase 2, the setup process, when switching to Microsoft Defender for Endpoint.
-keywords: migration, Microsoft Defender for Endpoint, edr, Windows Defender
+description: Make the switch to Defender for Endpoint. Review the setup process, which includes installing Microsoft Defender Antivirus.
+keywords: migration, Microsoft Defender for Endpoint, antivirus, passive mode, setup process
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,7 +21,7 @@ ms.collection:
   - m365solution-symantecmigrate
 ms.topic: article
 ms.custom: migrationguides
-ms.date: 08/11/2021
+ms.date: 08/16/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ---
 
@@ -43,12 +43,11 @@ ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 4. [Add your existing solution to the exclusion list for Microsoft Defender Antivirus](#add-your-existing-solution-to-the-exclusion-list-for-microsoft-defender-antivirus).
 5. [Set up your device groups, device collections, and organizational units](#set-up-your-device-groups-device-collections-and-organizational-units).
 
-
 ## Reinstall/enable Microsoft Defender Antivirus on your endpoints
 
-On certain versions of Windows, Microsoft Defender Antivirus was likely uninstalled or disabled when your non-Microsoft antivirus/antimalware solution was installed. Unless and until devices are onboarded to Defender for Endpoint, Microsoft Defender Antivirus does not run in active mode alongside a non-Microsoft antivirus solution. To learn more, see [Microsoft Defender Antivirus compatibility](microsoft-defender-antivirus-compatibility.md).
+On certain versions of Windows, Microsoft Defender Antivirus was likely uninstalled or disabled when your non-Microsoft antivirus/antimalware solution was installed. When endpoints running Windows are onboarded to Defender for Endpoint, Microsoft Defender Antivirus can run in passive mode alongside a non-Microsoft antivirus solution. To learn more, see [Antivirus protection with Defender for Endpoint](microsoft-defender-antivirus-compatibility.md#antivirus-protection-with-defender-for-endpoint).
 
-Now that you're planning to switch to Defender for Endpoint, you might need to take certain steps to reinstall or enable Microsoft Defender Antivirus. 
+As you're making the switch to Defender for Endpoint, you might need to take certain steps to reinstall or enable Microsoft Defender Antivirus. The following table describes what to do on your Windows clients and servers.
 
 
 | Endpoint type  | What to do  |

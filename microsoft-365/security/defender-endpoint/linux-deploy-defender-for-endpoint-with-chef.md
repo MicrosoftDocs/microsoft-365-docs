@@ -64,12 +64,12 @@ when 'debian'
    repo_name          'microsoft-prod'
    components         ['main']
    trusted            true
-   uri                "https://packages.microsoft.com/ubuntu/20.04/prod"
+   uri                "https://packages.microsoft.com/config/ubuntu/20.04/prod"
  end
  apt_package "mdatp"
 when 'rhel'
  yum_repository 'microsoft-prod' do
-   baseurl            "https://packages.microsoft.com/rhel/7/prod/"
+   baseurl            "https://packages.microsoft.com/config/rhel/7/prod/"
    description        "Microsoft Defender for Endpoint"
    enabled            true
    gpgcheck           true
