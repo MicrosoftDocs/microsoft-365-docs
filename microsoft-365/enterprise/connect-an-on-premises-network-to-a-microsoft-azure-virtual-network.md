@@ -1,7 +1,7 @@
 ---
 title: "Connect an on-premises network to a Microsoft Azure virtual network"
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 11/21/2019
 audience: ITPro
