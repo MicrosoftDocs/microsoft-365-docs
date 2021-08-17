@@ -25,13 +25,13 @@
            - name: Microsoft 365 Business Standard
              href: setup/setup-business-standard.md
            - name: Microsoft 365 Business Premium
-             href: setup/set-up.md
+             href: setup/setup.md
            - name: Microsoft 365 Apps for business
              href: setup/setup-apps-for-business.md
         - name: Explore the Setup page and wizard
           href: setup/o365-setup-wizard-and-setup-page.md
         - name: Secure Windows 10 computers
-          href: misc/secure-win-10-pcs.md
+          href: setup/secure-win-10-pcs.md
         - name: Download software and product keys
           href: setup/download-software-licenses-csp.md
         - name: Install Office apps
@@ -343,7 +343,7 @@
         - name: View and edit policies and devices
           href: devices/view-policies-and-devices.md
         - name: Remove company data
-          href: remove/remove-company-data.md
+          href: devices/remove-company-data.md
         - name: Reset devices to factory settings
           href: devices/reset-devices-to-factory-settings.md
         - name: Map protection features to Intune settings
