@@ -66,7 +66,7 @@ ms.technology: mde
 |cancellationRequestor|String|Identity of the person that Cancelled the action.|
 |requestorComment|String|Comment that was written when issuing the action.|
 |cancellationComment|String|Comment that was written when canceling the action.|
-|status|Enum|Current status of the command. Possible values are: "Pending", "InProgress", "Succeeded", "Failed", "TimeOut" and "Cancelled".|
+|status|Enum|Current status of the command. Possible values are: "Pending", "InProgress", "Succeeded", "Failed", "TimeOut", and "Cancelled".|
 |machineId|String|ID of the [machine](machine.md) on which the action was executed.|
 |machineId|String|Name of the [machine](machine.md) on which the action was executed.|
 |creationDateTimeUtc|DateTimeOffset|The date and time when the action was created.|
