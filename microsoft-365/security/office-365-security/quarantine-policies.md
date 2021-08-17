@@ -33,7 +33,7 @@ For [supported protection features](#step-2-assign-a-quarantine-policy-to-suppor
 
 The individual permissions are combined into the following preset permission groups:
 
-- Admin only access
+- No access
 - Limited access
 - Full access
 
@@ -43,13 +43,23 @@ The available individual permissions and what's included or not included in the 
 
 ****
 
-|Permission|Admin only access|Limited access|Full access|
+|Permission|No access|Limited access|Full access|
 |---|:---:|:---:|:---:|
 |**Block sender** (_PermissionToBlockSender_)||![Check mark](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)|
 |**Delete** (_PermissionToDelete_)||![Check mark](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)|
 |**Preview** (_PermissionToPreview_)||![Check mark](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)|
 |**Allow recipients to release a message from quarantine** (_PermissionToRelease_)|||![Check mark](../../media/checkmark.png)|
 |**Allow recipients to request a message to be released from quarantine** (_PermissionToRequestRelease_)||![Check mark](../../media/checkmark.png)||
+|
+
+The default quarantine policies and their associated permission groups are described in the following table:
+
+<br>
+
+|Default quarantine policy|Permission group used|
+|---|---|
+|AdminOnlyAccessPolicy|No access|
+|DefaultFullAccessPolicy|Full access|
 |
 
 If you don't like the default permissions in the preset permission groups, you can use custom permissions when you create or modify custom quarantine policies. For more information about what each permission does, see the [Quarantine policy permission details](#quarantine-policy-permission-details) section later in this article.
@@ -100,8 +110,8 @@ Now you're ready to assign the quarantine policy to a quarantine feature as desc
 
 If you'd rather use PowerShell to create quarantine policies, connect to Exchange Online PowerShell or Exchange Online Protection PowerShell and use the **New-QuarantineTag** cmdlet. You have two different methods to choose from:
 
-- Use the _EndUserQuarantinePermissionsValue_ parameter.
-- Use the _EndUserQuarantinePermissions_ parameter.
+- [Use the _EndUserQuarantinePermissionsValue_ parameter](#use-the-enduserquarantinepermissionsvalue-parameter).
+- [Use the _EndUserQuarantinePermissions_ parameter](#use-the-enduserquarantinepermissions-parameter).
 
 These methods are described in the following sections.
 
@@ -246,15 +256,19 @@ Full instructions for creating and modifying anti-spam policies are described in
 If you'd rather use PowerShell to assign quarantine policies in anti-spam policies, connect to Exchange Online PowerShell or Exchange Online Protection PowerShell and use the following syntax:
 
 ```powershell
-<New-HostedContentFilterPolicy -Name "<Unique name>" | Set-HostedContentFilterPolicy -Identity "<Policy name>">  [-SpamAction Quarantine] [-SpamQuarantineTag <QuarantineTagName>] [-HighConfidenceSpamAction Quarantine] [-HighConfidenceSpamQuarantineTag <QuarantineTagName>] [-PhishSpamAction Quarantine] [-PhishQuarantineTag <QuarantineTagName>] [-HighConfidencePhishQuarantineTag <QuarantineTagName>] [-BulkSpamAction Quarantine] [-BulkQuarantineTag <QuarantineTagName>] ...
+<New-HostedContentFilterPolicy -Name "<Unique name>" | Set-HostedContentFilterPolicy -Identity "<Policy name>"> [-SpamAction Quarantine] [-SpamQuarantineTag <QuarantineTagName>] [-HighConfidenceSpamAction Quarantine] [-HighConfidenceSpamQuarantineTag <QuarantineTagName>] [-PhishSpamAction Quarantine] [-PhishQuarantineTag <QuarantineTagName>] [-HighConfidencePhishQuarantineTag <QuarantineTagName>] [-BulkSpamAction Quarantine] [-BulkQuarantineTag <QuarantineTagName>] ...
 ```
 
 **Notes**:
 
-- Quarantine is the default value for the _PhishSpamAction_ and _HighConfidencePhishAction_ parameters in new anti-spam policies, so you don't need to set the Quarantine action for for these parameters. For the _SpamAction_, _HighConfidenceSpamAction_, and _BulkSpamAction_ parameters in new or existing anti-spam policies, the quarantine policy is only effective if the value is Quarantine. To see the action values in existing anti-spam policies, run the following command:
+- Quarantine is the default value for the _PhishSpamAction_ and _HighConfidencePhishAction_ parameters in new anti-spam policies, so you don't need to set the Quarantine action for for these parameters. For the _SpamAction_, _HighConfidenceSpamAction_, and _BulkSpamAction_ parameters in new or existing anti-spam policies, the quarantine policy is only effective if the value is Quarantine.
+
+  For information about the default action values and the recommended action values for Standard and Strict, see [EOP anti-spam policy settings](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings).
+
+- To see the important parameter values in existing anti-spam policies, run the following command:
 
   ```powershell
-  Get-HostedContentFilterPolicy | Format-Table Name,*SpamAction,HighConfidencePhishAction
+  Get-HostedContentFilterPolicy | Format-List Name,*SpamAction,HighConfidencePhishAction,*QuarantineTag
   ```
 
   For information about the default action values and the recommended action values for Standard and Strict, see [EOP anti-spam policy settings](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings).
@@ -322,6 +336,36 @@ Full instructions for creating and modifying anti-phishing polices are available
 - [Configure anti-phishing policies in EOP](configure-anti-phishing-policies-eop.md)
 - [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-mdo-anti-phishing-policies.md)
 
+#### Anti-phishing policies in PowerShell
+
+If you'd rather use PowerShell to assign quarantine policies in anti-phishing policies, connect to Exchange Online PowerShell or Exchange Online Protection PowerShell and use the following syntax:
+
+```powershell
+<New-AntiPhishPolicy -Name "<Unique name>" | Set-AntiPhishPolicy -Identity "<Policy name>"> [-EnableSpoofIntelligence $true] [-AuthenticationFailAction Quarantine] [-SpoofQuarantineTag <QuarantineTagName>] [-EnableMailboxIntelligence $true] [-EnableMailboxIntelligenceProtection $true] [-MailboxIntelligenceProtectionAction Quarantine] [-MailboxIntelligenceQuarantineTag <QuarantineTagName>] [-EnableOrganizationDomainsProtection $true] [-EnableTargetedDomainsProtection $true] [-TargetedDomainProtectionAction Quarantine] [-EnableTargetedUserProtection $true] [-TargetedDomainQuarantineTag <QuarantineTagName>] [-TargetedUserProtectionAction Quarantine] [-TargetedUserQuarantineTag <QuarantineTagName>] ...
+```
+
+**Notes**:
+
+- The following parameters have the default value $true, so you don't need to specify them when you create anti-phish policies in Powershell:
+  - _EnableMailboxIntelligence_
+  - _EnableSpoofIntelligence_
+
+- To see the important parameter values in existing anti-phish policies, run the following command:
+
+  ```powershell
+  Get-AntiPhishPolicy | Format-List Name,Enable*Intelligence,Enable*Protection,*QuarantineTag
+  ```
+
+  For information about the default action values and the recommended action values for Standard and Strict, see [EOP anti-phishing policy settings](recommended-settings-for-eop-and-office365.md#eop-anti-phishing-policy-settings) and [Impersonation settings in anti-phishing policies in Microsoft Defender for Office 365](recommended-settings-for-eop-and-office365.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
+
+- An anti-phishing action without a corresponding quarantine policy parameter means the [default quarantine policy](#step-2-assign-a-quarantine-policy-to-supported-features) for that verdict is used.
+
+  You only need to replace a default quarantine policy with a custom quarantine policy if you want to change the default end-user capabilities on quarantined messages for that particular verdict.
+
+- A new anti-phishing policy in PowerShell requires an anti-phishing policy (settings) using the **New-AntiPhishPolicy** cmdlet and a new anti-phish rule (recipient filters) using the **New-AntiPhishRule** cmdlet. For instructions, see the following topics:
+  - [Use PowerShell to configure anti-phishing policies in EOP](configure-anti-phishing-policies-eop.md#use-exchange-online-powershell-to-configure-anti-phishing-policies)
+  - [Use Exchange Online PowerShell to configure anti-phishing policies](configure-mdo-anti-phishing-policies.md#use-exchange-online-powershell-to-configure-anti-phishing-policies)
+
 ### Anti-malware policies
 
 1. In the Microsoft 365 Defender portal, go to **Email & collaboration** \> **Policies & rules** \> **Threat policies** \> **Anti-malware** in the **Rules** section.
@@ -339,6 +383,14 @@ Full instructions for creating and modifying anti-phishing polices are available
 4. On the **Protection settings** page, select a quarantine policy in the **Quarantine policy** box.
 
    **Note**: When you create a new policy, a blank value indicates the default quarantine policy for that verdict is used. When you later edit the policy, the blank values are replaced by the actual default quarantine policy names as described in the previous table.
+
+#### Anti-malware policies in PowerShell
+
+If you'd rather use PowerShell to assign quarantine policies in anti-malware policies, connect to Exchange Online PowerShell or Exchange Online Protection PowerShell and use the following syntax:
+
+```powershell
+<New-AntiMalwarePolicy -Name "<Unique name>" | Set-AntiMalwarePolicy -Identity "<Policy name>">
+```
 
 ### Safe Attachments policies
 
