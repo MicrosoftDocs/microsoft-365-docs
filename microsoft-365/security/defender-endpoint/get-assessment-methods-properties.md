@@ -69,10 +69,10 @@ Export secure configuration assessment **(via files)**|Secure configuration by d
 
 Property (ID)|Data type|Description
 :---|:---|:---
-configurationCategory|string|Category or grouping to which the configuration belongs: Application, OS, Network, Accounts, Security controls
-configurationId|string|Unique identifier for a specific configuration
-configurationImpact|string|Rated impact of the configuration to the overall configuration score (1-10)
-configurationName|string|Display name of the configuration
+configurationCategory|string|Category or grouping to which the configuration belongs: Application, OS, Network, Accounts, Security controls.
+configurationId|string|Unique identifier for a specific configuration.
+configurationImpact|string|Rated impact of the configuration to the overall configuration score (1-10).
+configurationName|string|Display name of the configuration.
 configurationSubcategory|string|Subcategory or subgrouping to which the configuration belongs. In many cases, this describes specific capabilities or features.
 deviceId|string|Unique identifier for the device in the service.
 deviceName|string|Fully qualified domain name (FQDN) of the device.
