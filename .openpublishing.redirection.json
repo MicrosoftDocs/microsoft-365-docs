@@ -991,6 +991,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365/compliance/bulk-edit-content-searches.md",
+      "redirect_url": "/microsoft-365/compliance/content-search",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/compliance/gdpr-arc-Windows.md",
       "redirect_url": "/microsoft-365/compliance/gdpr?toc=/microsoft-365/enterprise/toc.json",
       "redirect_document_id": false
