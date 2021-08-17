@@ -76,9 +76,9 @@ configurationName|string|Display name of the configuration
 configurationSubcategory|string|Subcategory or subgrouping to which the configuration belongs. In many cases, this describes specific capabilities or features.
 deviceId|string|Unique identifier for the device in the service.
 deviceName|string|Fully qualified domain name (FQDN) of the device.
-isApplicable|bool|Indicates whether the configuration or policy is applicable
-isCompliant|bool|Indicates whether the configuration or policy is properly configured
-isExpectedUserImpact|bool|Indicates whether there will be user impact if the configuration will be applied
+isApplicable|bool|Indicates whether the configuration or policy is applicable.
+isCompliant|bool|Indicates whether the configuration or policy is properly configured.
+isExpectedUserImpact|bool|Indicates whether there will be user impact if the configuration will be applied.
 osPlatform|string|Platform of the operating system running on the device. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7. See TVM supported operating systems and platforms for details.
 osVersion|string|Specific version of the operating system running on the device.
 rbacGroupName|string|The role-based access control (RBAC) group. If this device is not assigned to any RBAC group, the value will be "Unassigned." If the organization doesn't contain any RBAC groups, the value will be "None."
