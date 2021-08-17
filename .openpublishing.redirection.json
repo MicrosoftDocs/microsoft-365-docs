@@ -102,7 +102,7 @@
     },
     {
       "source_path": "microsoft-365/business/",
-      "redirect_url": "microsoft-365/admin/",
+      "redirect_url": "/microsoft-365/admin/",
       "redirect_document_id": false
     },
     {
