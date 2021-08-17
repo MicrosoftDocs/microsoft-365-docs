@@ -66,7 +66,7 @@ The meeting attendees do not require Scheduler or Microsoft 365 license.
 
 ## Scheduler end-user license requirements
 
-A Scheduler license requires one of the following licenses:
+To purchase the Scheduler add-on, you require one of the following licenses:
 
 - Microsoft 365 E3, A3, E5, A5
 - Business Basic, Business, Business Standard, Business Premium
