@@ -24,7 +24,7 @@ In this article: learn how to set up **access to privacy management** for your o
 
 ## Who can access privacy management
 
-The public preview of privacy management is available within the Microsoft 365 compliance center and is available to organizations with E1, E3, and E5 enterprise licenses in Office 365 and Microsoft 365. Whoen privacy management moves to general availability, organizations that used the public preview will need to obtain a new license.
+The public preview of privacy management is available within the Microsoft 365 compliance center and is available to organizations with E1, E3, and E5 enterprise licenses in Office 365 and Microsoft 365. When privacy management moves to general availability, organizations that used the public preview will need to obtain a new license.
 
 For detailed licensing guidance, see [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection).
 
