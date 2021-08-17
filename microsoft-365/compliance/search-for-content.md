@@ -37,8 +37,6 @@ The first step is to starting using the Content search tool to choose content lo
 
 - [Search for third-party data](use-content-search-to-search-third-party-data-that-was-imported.md) that your organization has imported to Microsoft 365
 
-- [Bulk edit](bulk-edit-content-searches.md) the query and content locations for multiple searches
-
 - [Retry a Content search](retry-failed-content-search.md) to resolve a content location error
 
 - [Preserve Bcc recipients](/exchange/policy-and-compliance/holds/preserve-bcc-recipients-and-group-members) so you can search for them
