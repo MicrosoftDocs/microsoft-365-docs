@@ -88,7 +88,7 @@ deviceValue|Nullable Enum|The [value of the device](tvm-assign-device-value.md).
 
 If successful, this method returns 200 OK, and the [machine](machine.md) entity in the response body with the updated properties.
 
-If machine tags collection in body doesn't contain existing machine tags - 400 Invalid Input and a message informing of the missing tag/s.
+If machine tags collection in body doesn't contain existing machine tags - replaces all tags with the tags provided in the request body.
 
 If machine with the specified ID was not found - 404 Not Found.
 
