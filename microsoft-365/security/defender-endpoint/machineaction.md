@@ -73,7 +73,7 @@ ms.technology: mde
 |cancellationDateTimeUtc|DateTimeOffset|The date and time when the action was Cancelled.|
 |lastUpdateDateTimeUtc|DateTimeOffset|The last date and time when the action status was updated.|
 |title|String|Machine action title.|
-|relatedFileInfo|Class|Contains two Properties. string `fileIdentifier`, Enum `fileIdentifierType` with the possible values: "Sha1", "Sha256" and "Md5".|
+|relatedFileInfo|Class|Contains two Properties. string `fileIdentifier`, Enum `fileIdentifierType` with the possible values: "Sha1", "Sha256", and "Md5".|
 
 ## Json representation
 
