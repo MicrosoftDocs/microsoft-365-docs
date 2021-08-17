@@ -25,7 +25,7 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink)
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
 
 When contacting support, you may be asked to provide the output package of the Microsoft Defender for Endpoint Client Analyzer tool.
@@ -76,3 +76,13 @@ This topic provides instructions on how to run the tool via Live Response.
 >   ```
 >
 > - For more information on gathering data locally on a machine in case the machine isn't communicating with Microsoft Defender for Endpoint cloud services, or does not appear in Microsoft Defender for Endpoint portal as expected, see [Verify client connectivity to Microsoft Defender for Endpoint service URLs](configure-proxy-internet.md#verify-client-connectivity-to-microsoft-defender-for-endpoint-service-urls).
+
+
+## See also
+- [Client analyzer overview](overview-client-analyzer.md)
+- [Download and run the client analyzer](download-client-analyzer.md)
+- [Run the client analyzer on Windows](run-analyzer-windows.md)
+- [Run the client analyzer on macOS or Linux](run-analyzer-macos-linux.md)
+- [Data collection for advanced troubleshooting on Windows](data-collection-analyzer.md)
+- [Understand the analyzer HTML report](analyzer-report.md)
+

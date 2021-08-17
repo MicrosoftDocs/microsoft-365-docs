@@ -30,7 +30,7 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
 You can review event IDs in the [Event Viewer](https://msdn.microsoft.com/library/aa745633(v=bts.10).aspx) on individual devices.
 
@@ -144,10 +144,12 @@ For example, if devices aren't appearing in the **Devices list**, you might need
    |103|Microsoft Defender for Endpoint Network Detection and Response executable has ended|The SenseNdr executable has ended.|Normal operating notification; no action required.|
    |
 
-> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-eventerrorcodes-belowfoldlink)
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-eventerrorcodes-belowfoldlink)
 
-## Related topics
-
+## See also
 - [Onboard Windows 10 devices](configure-endpoints.md)
 - [Configure device proxy and Internet connectivity settings](configure-proxy-internet.md)
 - [Troubleshoot Microsoft Defender for Endpoint](troubleshoot-onboarding.md)
+- [Client analyzer overview](overview-client-analyzer.md)
+- [Download and run the client analyzer](download-client-analyzer.md)
+- [Understand the analyzer HTML report](analyzer-report.md)
