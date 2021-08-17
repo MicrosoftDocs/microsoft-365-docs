@@ -69,20 +69,22 @@ Export secure configuration assessment **(via files)**|Secure configuration by d
 
 Property (ID)|Data type|Description
 :---|:---|:---
-ConfigurationCategory|string|Category or grouping to which the configuration belongs: Application, OS, Network, Accounts, Security controls
-ConfigurationId|string|Unique identifier for a specific configuration
-ConfigurationImpact|string|Rated impact of the configuration to the overall configuration score (1-10)
-ConfigurationName|string|Display name of the configuration
-ConfigurationSubcategory|string|Subcategory or subgrouping to which the configuration belongs. In many cases, this describes specific capabilities or features.
-DeviceId|string|Unique identifier for the device in the service.
-DeviceName|string|Fully qualified domain name (FQDN) of the device.
-IsApplicable|bool|Indicates whether the configuration or policy is applicable
-IsCompliant|bool|Indicates whether the configuration or policy is properly configured
-IsExpectedUserImpact|bool|Indicates whether there will be user impact if the configuration will be applied
-OSPlatform|string|Platform of the operating system running on the device. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7. See tvm supported operating systems and platforms for details.
-RbacGroupName|string|The role-based access control (RBAC) group. If this device is not assigned to any RBAC group, the value will be "Unassigned." If the organization doesn't contain any RBAC groups, the value will be "None."
-RecommendationReference|string|A reference to the recommendation ID related to this software.
-Timestamp|string|Last time the configuration was seen on the device
+configurationCategory|string|Category or grouping to which the configuration belongs: Application, OS, Network, Accounts, Security controls
+configurationId|string|Unique identifier for a specific configuration
+configurationImpact|string|Rated impact of the configuration to the overall configuration score (1-10)
+configurationName|string|Display name of the configuration
+configurationSubcategory|string|Subcategory or subgrouping to which the configuration belongs. In many cases, this describes specific capabilities or features.
+deviceId|string|Unique identifier for the device in the service.
+deviceName|string|Fully qualified domain name (FQDN) of the device.
+isApplicable|bool|Indicates whether the configuration or policy is applicable
+isCompliant|bool|Indicates whether the configuration or policy is properly configured
+isExpectedUserImpact|bool|Indicates whether there will be user impact if the configuration will be applied
+osPlatform|string|Platform of the operating system running on the device. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7. See tvm supported operating systems and platforms for details.
+osVersion|string|Specific version of the operating system running on the device.
+rbacGroupName|string|The role-based access control (RBAC) group. If this device is not assigned to any RBAC group, the value will be "Unassigned." If the organization doesn't contain any RBAC groups, the value will be "None."
+rbacGroupId|string|The role-based access control (RBAC) group ID.
+recommendationReference|string|A reference to the recommendation ID related to this software.
+timestamp|string|Last time the configuration was seen on the device
 
 ### 1.3 Properties (via files)
 
@@ -115,6 +117,7 @@ Id|string|Unique identifier for the record.
 NumberOfWeaknesses|int|Number of weaknesses on this software on this device
 OSPlatform|string|Platform of the operating system running on the device. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7. See tvm supported operating systems and platforms for details.
 RbacGroupName|string|The role-based access control (RBAC) group. If this device is not assigned to any RBAC group, the value will be "Unassigned." If the organization doesn't contain any RBAC groups, the value will be "None."
+rbacGroupId|string|The role-based access control (RBAC) group ID.
 RegistryPaths|Array[string]|Registry evidence that the product is installed in the device.
 SoftwareFirstSeenTimestamp|string|The first time this software was seen on the device.
 SoftwareName|string|Name of the software product.
@@ -155,6 +158,7 @@ Id|string|Unique identifier for the record.
 LastSeenTimestamp|string|Last time the CVE was seen on the device.
 OSPlatform|string|Platform of the operating system running on the device. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7. See tvm supported operating systems and platforms for details.
 RbacGroupName|string|The role-based access control (RBAC) group. If this device is not assigned to any RBAC group, the value will be "Unassigned." If the organization doesn't contain any RBAC groups, the value will be "None."
+rbacGroupId|string|The role-based access control (RBAC) group ID.
 RecommendationReference|string|A reference to the recommendation ID related to this software.
 RecommendedSecurityUpdate|string|Name or description of the security update provided by the software vendor to address the vulnerability.
 RecommendedSecurityUpdateId|string|Identifier of the applicable security updates or identifier for the corresponding guidance or knowledge base (KB) articles
