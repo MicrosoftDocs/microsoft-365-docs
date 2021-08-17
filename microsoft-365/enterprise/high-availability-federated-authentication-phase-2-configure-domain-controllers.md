@@ -1,7 +1,7 @@
 ---
 title: "High availability federated authentication Phase 2 Configure domain controllers"
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 11/25/2019
 audience: ITPro

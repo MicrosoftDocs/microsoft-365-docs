@@ -1,7 +1,7 @@
 ---
 title: "Cmdlet references for Microsoft 365 services"
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 07/16/2020
 audience: ITPro

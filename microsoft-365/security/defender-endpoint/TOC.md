@@ -561,7 +561,7 @@
 ####### [Recommendation methods and properties](recommendation.md)
 ####### [List all recommendations](get-all-recommendations.md)
 ####### [Get recommendation by ID](get-recommendation-by-id.md)
-####### [Get recommendation by software](get-recommendation-software.md)
+####### [Get recommendation by software](list-recommendation-software.md)
 ####### [List machines by recommendation](get-recommendation-machines.md)
 ####### [List vulnerabilities by recommendation](get-recommendation-vulnerabilities.md)
 
@@ -666,6 +666,17 @@
 ##### [Inactive devices](fix-unhealthy-sensors.md#inactive-devices)
 ##### [Misconfigured devices](fix-unhealthy-sensors.md#misconfigured-devices)
 ##### [Review sensor events and errors on machines with Event Viewer](event-error-codes.md)
+
+#### [Troubleshoot sensor health issues using Client Analyzer]()
+##### [Client analyzer overview](overview-client-analyzer.md)
+##### [Download and run the client analyzer](download-client-analyzer.md)
+##### [Run the client analyzer on Windows](run-analyzer-windows.md)
+##### [Run the client analyzer on macOS or Linux](run-analyzer-macos-linux.md)
+##### [Data collection for advanced troubleshooting on Windows](data-collection-analyzer.md)
+##### [Understand the analyzer HTML report](analyzer-report.md)
+##### [Provide feedback on the client analyzer tool](analyzer-feedback.md)
+
+  
 
 #### [Troubleshoot Microsoft Defender for Endpoint service issues]()
 ##### [Troubleshoot service issues](troubleshoot-mdatp.md)
