@@ -16,6 +16,8 @@
              href: setup/get-started-windows-365-business.md
            - name: Windows 365 Business sizing options
              href: setup/windows-365-business-sizing.md
+           - name: Troubleshoot Windows 365 Cloud PC setup issues
+             href: setup/troubleshoot-windows-365-business.md
         - name: Set up your organization with the guided setup
           items:
            - name: Microsoft 365 Business Basic
@@ -269,7 +271,7 @@
             - name: Manage add-ins in the admin center 
               href: manage/manage-addins-in-the-admin-center.md      
             - name: Centralized Deployment FAQ
-              href: manage/centralized-deployment-faq.md
+              href: manage/centralized-deployment-faq.yml
          - name: Manage industry news
            href: manage/manage-industry-news.md
          - name: Manage Office Scripts settings 
@@ -296,6 +298,8 @@
              href: usage-analytics/active-user-in-usage-reports.md
            - name: Customize reports
              href: usage-analytics/customize-reports.md
+           - name: Usage analytics with Microsoft 365 GCC 
+             href: usage-analytics/connect-to-gcc-data-with-usage-analytics.md
            - name: About the usage analytics data model
              href: usage-analytics/usage-analytics-data-model.md
            - name: Troubleshoot usage analytics errors
@@ -319,7 +323,7 @@
             - name: Pre-requisites for data protection
               href: ../business/pre-requisites-for-data-protection.md
             - name: Security features
-              href: ../business/security-features.md
+              href: security-and-compliance/secure-your-business-data.md
             - name: Increase threat protection
               href: ../business/increase-threat-protection.md
             - name: Threats detected by Microsoft Defender Antivirus
@@ -424,3 +428,5 @@
       href: /office/troubleshoot/
     - name: Contact support
       href: ../business-video/get-help-support.md
+    - name: Navigation guide
+      href: ../microsoft-365-docs-navigation-guide.md?bc=%2foffice365%2fadmin%2fbreadcrumb%2ftoc.json&toc=%2foffice365%2fadmin%2ftoc.json

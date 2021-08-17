@@ -55,7 +55,7 @@ You can manage testing and deployment of purchased and licensed Microsoft 365 Ap
 
 You can find, test, and fully deploy published apps that don't already appear in the list on the Integrated apps page. By purchasing and licensing the apps from the admin center, you can add Microsoft and Microsoft partner apps to your list from a single location.
 
-1. In the admin center, in the left nav, choose **Settings**, and then choose **Integrated apps**.
+1. In the admin center, in the left nav, choose **Settings**, and then choose <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">**Integrated apps**</a>.
 
 2. Select **Get apps** to get a view of the apps.
 
