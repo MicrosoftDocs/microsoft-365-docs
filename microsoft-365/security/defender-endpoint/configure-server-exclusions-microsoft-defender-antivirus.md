@@ -63,7 +63,6 @@ Operating system exclusions and server role exclusions do not appear in the stan
 > [!NOTE]
 > - Automatic exclusions only apply to real-time protection (RTP) scanning. Automatic exclusions are not honored during a full scan, quick scan, or on-demand scan.
 > - Automatic exclusions for server roles and operating system files do not apply to Windows Server 2012 or Windows Server 2012 R2.
-> - Automatic exclusions for operating system files do not apply to Windows 7, 8, or 8.1.
 
 ### The list of automatic exclusions
 
