@@ -1,6 +1,6 @@
 ---
 title: Configure Microsoft Defender Antivirus exclusions on Windows Server
-ms.reviewer: 
+ms.reviewer: pahuijbr
 manager: dansimp
 description: Windows Server includes automatic exclusions, based on server role. You can also add custom exclusions.
 keywords: exclusions, server, auto-exclusions, automatic, custom, scans, Microsoft Defender Antivirus
@@ -15,8 +15,7 @@ author: denisebmsft
 ms.author: deniseb
 ms.topic: article
 ms.custom: nextgen
-
-ms.date: 02/10/2021
+ms.date: 08/16/2021
 ---
 
 # Configure Microsoft Defender Antivirus exclusions on Windows Server
@@ -26,12 +25,12 @@ ms.date: 02/10/2021
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
-Microsoft Defender Antivirus on Windows Server 2016 and Windows Server 2019 automatically enrolls you in certain exclusions, as defined by your specified server role. These exclusions do not appear in the standard exclusion lists that are shown in the [Windows Security app](microsoft-defender-security-center-antivirus.md).
+On Windows Server 2016, Windows Server, version 1803 or later, and Windows Server 2019, Microsoft Defender Antivirus automatically enrolls you in certain exclusions, as defined by your specified server role. These exclusions do not appear in the standard exclusion lists that are shown in the [Windows Security app](microsoft-defender-security-center-antivirus.md). 
 
 > [!NOTE]
-> Automatic exclusions only apply to Real-time protection (RTP) scanning. Automatic exclusions are not honored during a Full/Quick or On-demand scan.
+> Automatic exclusions only apply to real-time protection (RTP) scanning. Automatic exclusions are not honored during a full scan, quick scan, or on-demand scan.
 
-In addition to server role-defined automatic exclusions, you can add or remove custom exclusions. To do that, refer to these articles:
+In addition to server role-defined automatic exclusions, you can add or remove custom exclusions. To do that, refer to the following articles:
 - [Configure and validate exclusions based on file name, extension, and folder location](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 - [Configure and validate exclusions for files opened by processes](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
 
@@ -40,29 +39,32 @@ In addition to server role-defined automatic exclusions, you can add or remove c
 Keep the following important points in mind:
 
 - Custom exclusions take precedence over automatic exclusions.
-- Automatic exclusions only apply to Real-time protection (RTP) scanning. Automatic exclusions are not honored during a Full/Quick or On-demand scan.
+- Automatic exclusions only apply to Real-time protection (RTP) scanning. Automatic exclusions are not honored during a full scan, quick scan, or on-demand scan.
 - Custom and duplicate exclusions do not conflict with automatic exclusions.
 - Microsoft Defender Antivirus uses the Deployment Image Servicing and Management (DISM) tools to determine which roles are installed on your computer.
 
 ## Opt out of automatic exclusions
 
-In Windows Server 2016 and Windows Server 2019, the predefined exclusions delivered by Security intelligence updates only exclude the default paths for a role or feature. If you installed a role or feature in a custom path, or you want to manually control the set of exclusions, make sure to opt out of the automatic exclusions delivered in Security intelligence updates. But keep in mind that the exclusions that are delivered automatically are optimized for Windows Server 2016 and 2019 roles. See [Recommendations for defining exclusions](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions) before defining your exclusion lists.
+In Windows Server 2016, Windows Server, version 1803 or later, and Windows Server 2019, the predefined exclusions delivered by Security intelligence updates only exclude the default paths for a role or feature. If you installed a role or feature in a custom path, or you want to manually control the set of exclusions, make sure to opt out of the automatic exclusions delivered in Security intelligence updates. But keep in mind that the exclusions that are delivered automatically are optimized for Windows Server 2016 and 2019 roles. See [Recommendations for defining exclusions](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions) before defining your exclusion lists.
 
 > [!WARNING]
 > Opting out of automatic exclusions may adversely impact performance, or result in data corruption. The exclusions that are delivered automatically are optimized for Windows Server 2016 and Windows Server 2019 roles.
 
-Because predefined exclusions only exclude **default paths**, if you move NTDS and SYSVOL to another drive or path that is *different from the original path*, you must add exclusions manually using the information [here](configure-extension-file-exclusions-microsoft-defender-antivirus.md#configure-the-list-of-exclusions-based-on-folder-name-or-file-extension) .
+Because predefined exclusions only exclude **default paths**, if you move NTDS and SYSVOL folders to another drive or path that is *different from the original path*, you must add exclusions manually. See [Configure the list of exclusions based on folder name or file extension](configure-extension-file-exclusions-microsoft-defender-antivirus.md#configure-the-list-of-exclusions-based-on-folder-name-or-file-extension).
 
 You can disable the automatic exclusion lists with Group Policy, PowerShell cmdlets, and WMI.
 
 ### Use Group Policy to disable the auto-exclusions list on Windows Server 2016 and Windows Server 2019
 
-1. On your Group Policy management computer, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc725752(v=ws.11)). Right-click the Group Policy Object you want to configure, and then click **Edit**.
-2. In the **Group Policy Management Editor** go to **Computer configuration**, and then click **Administrative templates**.
-3. Expand the tree to **Windows components** > **Microsoft Defender Antivirus** > **Exclusions**.
-4. Double-click **Turn off Auto Exclusions**, and set the option to **Enabled**. Then click **OK**. 
+1. On your Group Policy management computer, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc725752(v=ws.11)). Right-click the Group Policy Object you want to configure, and then select **Edit**.
 
-### Use PowerShell cmdlets to disable the auto-exclusions list on Windows Server 2016 and 2019
+2. In the **Group Policy Management Editor** go to **Computer configuration**, and then select **Administrative templates**.
+
+3. Expand the tree to **Windows components** > **Microsoft Defender Antivirus** > **Exclusions**.
+
+4. Double-click **Turn off Auto Exclusions**, and set the option to **Enabled**. Then select **OK**. 
+
+### Use PowerShell cmdlets to disable the auto-exclusions list on Windows Server
 
 Use the following cmdlets:
 
@@ -75,7 +77,7 @@ To learn more, see the following resources:
 - [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md).
 - [Use PowerShell with Microsoft Defender Antivirus](/powershell/module/defender/).
 
-### Use Windows Management Instruction (WMI) to disable the auto-exclusions list on Windows Server 2016 and Windows Server 2019
+### Use Windows Management Instruction (WMI) to disable the auto-exclusions list on Windows Server
 
 Use the **Set** method of the [MSFT_MpPreference](/previous-versions/windows/desktop/defender/msft-mppreference) class for the following properties:
 
@@ -92,7 +94,7 @@ The following sections contain the exclusions that are delivered with automatic 
 
 ### Default exclusions for all roles
 
-This section lists the default exclusions for all Windows Server 2016 and 2019 roles.
+This section lists the default exclusions for all roles in Windows Server 2016 and Windows Server 2019.
 
 > [!NOTE]
 > The default locations could be different than what's listed in this article.
