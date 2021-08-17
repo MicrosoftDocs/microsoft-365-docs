@@ -63,8 +63,8 @@ incidentId | Nullable Long | The [Incident](view-incidents-queue.md) ID of the A
 investigationId | Nullable Long | The [Investigation](automated-investigations.md) ID related to the Alert.
 investigationState | Nullable Enum | The current state of the [Investigation](automated-investigations.md). Possible values are: 'Unknown', 'Terminated', 'SuccessfullyRemediated', 'Benign', 'Failed', 'PartiallyRemediated', 'Running', 'PendingApproval', 'PendingResource', 'PartiallyInvestigated', 'TerminatedByUser', 'TerminatedBySystem', 'Queued', 'InnerFailure', 'PreexistingAlert', 'UnsupportedOs', 'UnsupportedAlertType', 'SuppressedAlert'.
 assignedTo | String | Owner of the alert.
-rbacGroupName | String | RBAC device group name
-mitreTechniques | String | Mitre Enterprise technique ID
+rbacGroupName | String | RBAC device group name.
+mitreTechniques | String | Mitre Enterprise technique ID.
 relatedUser | String |  Details of user related to a specific alert.
 severity | Enum | Severity of the alert. Possible values are: 'UnSpecified', 'Informational', 'Low', 'Medium' and 'High'.
 status | Enum | Specifies the current status of the alert. Possible values are: 'Unknown', 'New', 'InProgress' and 'Resolved'.
