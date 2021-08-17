@@ -323,7 +323,7 @@
             - name: Pre-requisites for data protection
               href: ../business/pre-requisites-for-data-protection.md
             - name: Security features
-              href: ../business/security-features.md
+              href: security-and-compliance/secure-your-business-data.md
             - name: Increase threat protection
               href: ../business/increase-threat-protection.md
             - name: Threats detected by Microsoft Defender Antivirus
