@@ -63,7 +63,7 @@ ms.technology: mde
 |scope|string|Scope of the action. "Full" or "Selective" for Isolation, "Quick" or "Full" for Anti-Virus scan.|
 |requestor|String|Identity of the person that executed the action.|
 |requestSource|string|The name of the user/application that submitted the action.
-|cancellationRequestor|String|Identity of the person that Cancelled the action.|
+|cancellationRequestor|String|Identity of the person that canceled the action.|
 |requestorComment|String|Comment that was written when issuing the action.|
 |cancellationComment|String|Comment that was written when canceling the action.|
 |status|Enum|Current status of the command. Possible values are: "Pending", "InProgress", "Succeeded", "Failed", "TimeOut", and "Cancelled".|
