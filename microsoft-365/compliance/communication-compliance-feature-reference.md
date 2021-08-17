@@ -359,30 +359,30 @@ Communication compliance filters allow you to filter and sort alert messages for
 
 ## Alert policies
 
-After you configure a policy, a corresponding alert policy is automatically created and alerts are generated for messages that match conditions defined in the policy. By default, all policy matches alert triggers are assigned a severity level of medium in the associated alert policy. Alerts are generated for a communication compliance policy once the aggregation trigger threshold level is met in the associated alert policy.
+After you configure a policy, a corresponding alert policy is automatically created and alerts are generated for messages that match conditions defined in the policy. It may take up to 24 hours after creating a policy start to receive alerts from activity indicators. By default, all policy matches alert triggers are assigned a severity level of medium in the associated alert policy. Alerts are generated for a communication compliance policy once the aggregation trigger threshold level is met in the associated alert policy.
 
 For communication compliance policies, the following alert policy values are configured by default:
 
 |**Alert policy trigger**|**Default value**|
 |:-----|:-----|
 | Aggregation | Simple aggregation |
-| Threshold | 4 activities |
-| Window | 60 minutes |
+| Threshold | Minimum: 3 activities <br> Maximum: 2,147,483,647 activities |
+| Window | Minimum: 60 minutes <br> Maximum: 10,000 minutes |
 
 > [!NOTE]
 > The alert policy threshold trigger settings for activities supports a minimum value of 3 or higher for communication compliance policies.
 
-You can change the default settings for triggers on number of activities, period for the activities, and for specific users in alert policies on the **Alert policies** page in the Security & Compliance Center.
+You can change the default settings for triggers on number of activities, period for the activities, and for specific users in alert policies on the **Alert policies** page in the Microsoft 365 compliance center.
 
 ### Change the severity level for an alert policy
 
 If you'd like to change the severity level assigned in an alert policy for a specific communication compliance policy, complete the following steps:
 
-1. Sign into [https://compliance.microsoft.com](https://compliance.microsoft.com) using credentials for an admin account in your Microsoft 365 organization.
+1. Sign into [Microsoft 365 compliance center](https://compliance.microsoft.com) using credentials for an admin account in your Microsoft 365 organization.
 
 2. In the Microsoft 365 compliance center, go to **Policies**.
 
-3. Select **Office 365 alert** on the **Policies** page to open the **Alerts policies** page in the **Office 365 Security & Compliance center**.
+3. Select **Office 365 alert** on the **Policies** page to open the **Alerts policies** page.
 
 4. Select the checkbox for the communication compliance policy you want to update, then select **Edit policy**.
 
