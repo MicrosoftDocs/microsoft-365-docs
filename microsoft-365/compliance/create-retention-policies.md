@@ -69,7 +69,7 @@ When you have more than one retention policy, and when you also use retention la
 3. For the **Choose locations to apply the policy** page, select any or all of the locations for Teams:
     - **Teams channel message**: Messages from standard channel chats and standard channel meetings, but not from [private channels](/microsoftteams/private-channels) that have their own policy location.
     - **Teams chats**: Messages from private 1:1 chats, group chats, and meeting chats.
-    - **Teams private channel messages**: Messages from private channel chats and private channel meetings. This option is currently rolling out in preview and if you don't see it displayed, try again in a few days.
+    - **Teams private channel messages**: Messages from private channel chats and private channel meetings.
     
    By default, [all teams and all users are selected](#a-policy-that-applies-to-entire-locations), but you can refine this by selecting the **Edit** options to configure a retention policy for [specific inclusions or exclusions](#a-policy-with-specific-inclusions-or-exclusions). However, before you change the default, be aware of the following consequences for a retention policy that deletes messages when it's configured for includes or excludes:
     
@@ -192,7 +192,7 @@ Additionally, resource mailboxes and Microsoft 365 group mailboxes are not suppo
 
 If you do choose recipients to include or exclude, you can select distribution groups and email-enabled security groups. Behind the scenes, these groups are automatically expanded at the time of configuration to select the mailboxes of the users in the group. If the membership of those groups later change, an existing retention policy isn't automatically updated.
 
-For detailed information about which mailbox items are included and excluded when you configure retention settings for Exchange, see [What's included for retention and deletion](retention-policies-exchange.md#whats-included-for-retention-and-deletion)
+For detailed information about which mailbox items are included and excluded when you configure retention settings for Exchange, see [What's included for retention and deletion](retention-policies-exchange.md#whats-included-for-retention-and-deletion).
 
 The **Exchange public folders** location applies retention settings to all public folders and can't be applied at the folder or mailbox level.
 

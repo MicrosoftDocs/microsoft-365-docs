@@ -29,7 +29,7 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 This article describes how to deploy Defender for Endpoint on Linux using Ansible. A successful deployment requires the completion of all of the following tasks:
 
@@ -133,7 +133,7 @@ Create a subtask or role files that contribute to a playbook or task.
     > [!WARNING]
     > Switching the channel after the initial installation requires the product to be reinstalled. To switch the product channel: uninstall the existing package, re-configure your device to use the new channel, and follow the steps in this document to install the package from the new location.
 
-    Note your distribution and version and identify the closest entry for it under `https://packages.microsoft.com/config/`.
+    Note your distribution and version and identify the closest entry for it under `https://packages.microsoft.com/[distro]/`.
 
     In the following commands, replace *[distro]* and *[version]* with the information you've identified.
 
