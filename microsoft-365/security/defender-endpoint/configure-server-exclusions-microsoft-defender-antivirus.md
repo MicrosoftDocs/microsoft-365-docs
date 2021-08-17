@@ -147,9 +147,11 @@ This section lists the default exclusions for all roles in Windows Server 2016 a
 
 The following table lists the file type exclusions, folder exclusions, and process exclusions that are delivered automatically when you install the Hyper-V role.
 
-|File type exclusions |Folder exclusions  | Process exclusions |
-|:--|:--|:--|
-| `*.vhd` <br/> `*.vhdx` <br/> `*.avhd` <br/> `*.avhdx` <br/> `*.vsv` <br/> `*.iso` <br/> `*.rct` <br/> `*.vmcx` <br/> `*.vmrs` | `%ProgramData%\Microsoft\Windows\Hyper-V` <br/> `%ProgramFiles%\Hyper-V` <br/> `%SystemDrive%\ProgramData\Microsoft\Windows\Hyper-V\Snapshots` <br/> `%Public%\Documents\Hyper-V\Virtual Hard Disks` | `%systemroot%\System32\Vmms.exe` <br/> `%systemroot%\System32\Vmwp.exe` |
+| Exclusion type | Specifics |
+|:---|:---|
+| File types |  `*.vhd` <br/> `*.vhdx` <br/> `*.avhd` <br/> `*.avhdx` <br/> `*.vsv` <br/> `*.iso` <br/> `*.rct` <br/> `*.vmcx` <br/> `*.vmrs` |
+| Folders |  `%ProgramData%\Microsoft\Windows\Hyper-V` <br/> `%ProgramFiles%\Hyper-V` <br/> `%SystemDrive%\ProgramData\Microsoft\Windows\Hyper-V\Snapshots` <br/> `%Public%\Documents\Hyper-V\Virtual Hard Disks` |
+| Processes | `%systemroot%\System32\Vmms.exe` <br/> `%systemroot%\System32\Vmwp.exe` |
 
 ##### SYSVOL files
 
@@ -166,7 +168,7 @@ The following table lists the file type exclusions, folder exclusions, and proce
 
 #### Active Directory exclusions
 
-This section lists the exclusions that are delivered automatically when you install Active Directory Domain Services.
+This section lists the exclusions that are delivered automatically when you install Active Directory Domain Services (AD DS).
 
 ##### NTDS database files
 
@@ -345,7 +347,7 @@ See the following for more information and allowed parameters:
 
 ## Defining custom exclusions
 
-You can add or remove custom exclusions. See the following articles:
+If necessary, you can add or remove custom exclusions. To do that, see the following articles:
 
 - [Configure and validate exclusions based on file name, extension, and folder location](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 - [Configure and validate exclusions for files opened by processes](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
