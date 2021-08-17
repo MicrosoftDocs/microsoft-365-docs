@@ -44,9 +44,9 @@ Devices must meet these requirements:
   
 2. On the **AutoPilot** page, choose the **Devices** tab \> **Add devices**.
     
-    ![In the Devices tab, choose Add devices.](../media/6ba81e22-c873-40ad-8a72-ce64d15ea6ba.png)
+    ![In the Devices tab, choose Add devices.](../../media/6ba81e22-c873-40ad-8a72-ce64d15ea6ba.png)
   
-3. On the **Add devices** panel, browse to a [Device list CSV file](../admin/misc/device-list.md) that you prepared \> **Save** \> **Close**.
+3. On the **Add devices** panel, browse to a [Device list CSV file](../misc/device-list.md) that you prepared \> **Save** \> **Close**.
     
     You can get this information from your hardware vendor, or you can use the [Get-WindowsAutoPilotInfo PowerShell script](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) to generate a CSV file. 
     
