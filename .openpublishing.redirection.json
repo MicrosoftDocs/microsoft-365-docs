@@ -81,8 +81,8 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "microsoft-365/business/how-policies-protect-company-data.md",
-      "redirect_url": "/microsoft-365/business/migrate-to-microsoft-365-business",
+      "source_path": "microsoft-365/business/migrate-to-microsoft-365-business.md",
+      "redirect_url": "/microsoft-365/commerce/subscriptions/upgrade-to-different-plan",
       "redirect_document_id": false
     },
     {
