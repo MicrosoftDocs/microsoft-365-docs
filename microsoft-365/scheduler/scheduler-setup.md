@@ -65,7 +65,7 @@ After running this "set" command on the Cortana Scheduler assistant mailbox, a n
 
 >[!Note]
 > To learn how to connect your organization to PowerShell, see: 
-[Connect to Microsoft 365 with PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell)
+[Connect to Microsoft 365 with PowerShell](/microsoft-365/enterprise/connect-to-microsoft-365-powershell)
 
 ### Verifying the Scheduler assistant mailbox
 
