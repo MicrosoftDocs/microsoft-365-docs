@@ -68,8 +68,8 @@ lastIpAddress | String | Last IP on local NIC on the [machine](machine.md).
 lastExternalIpAddress | String | Last IP through which the [machine](machine.md) accessed the internet.
 healthStatus | Enum | [machine](machine.md) health status. Possible values are: "Active", "Inactive", "ImpairedCommunication", "NoSensorData", "NoSensorDataImpairedCommunication" and "Unknown". 
 rbacGroupName | String | Machine group Name.
+rbacGroupId | String | Machine group ID.
 riskScore | Nullable Enum | Risk score as evaluated by Microsoft Defender for Endpoint. Possible values are: 'None', 'Informational', 'Low', 'Medium' and 'High'.
-exposureScore | Nullable Enum | [Exposure score](tvm-exposure-score.md) as evaluated by Microsoft Defender for Endpoint. Possible values are: 'None', 'Low', 'Medium' and 'High'.
 aadDeviceId | Nullable representation Guid | AAD Device ID (when [machine](machine.md) is AAD Joined).
 machineTags | String collection | Set of [machine](machine.md) tags.
 exposureLevel | Nullable Enum | Exposure level as evaluated by Microsoft Defender for Endpoint. Possible values are: 'None', 'Low', 'Medium' and 'High'.
