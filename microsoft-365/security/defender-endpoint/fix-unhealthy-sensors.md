@@ -27,7 +27,7 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-- Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-fixsensor-abovefoldlink)
+- Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-fixsensor-abovefoldlink)
 
 Devices that are categorized as misconfigured or inactive can be flagged due to varying causes. This section provides some explanations as to what might have caused a device to be categorized as inactive or misconfigured.
 
@@ -88,3 +88,9 @@ If you took corrective actions and the device status is still misconfigured, [op
 
 ## See also
 - [Check sensor health state in Microsoft Defender for Endpoint](check-sensor-status.md)
+- [Client analyzer overview](overview-client-analyzer.md)
+- [Download and run the client analyzer](download-client-analyzer.md)
+- [Run the client analyzer on Windows](run-analyzer-windows.md)
+- [Run the client analyzer on macOS or Linux](run-analyzer-macos-linux.md)
+- [Data collection for advanced troubleshooting on Windows](data-collection-analyzer.md)
+

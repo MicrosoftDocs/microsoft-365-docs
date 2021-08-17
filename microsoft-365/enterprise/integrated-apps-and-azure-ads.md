@@ -1,7 +1,7 @@
 ---
 title: "Integrated apps and Azure AD for Microsoft 365 administrators"
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 audience: Admin
 ms.topic: hub-page

@@ -90,5 +90,6 @@ The above operations can be done in three places:
   
 ## Related content
 
-[Restore a user](restore-user.md) (article)/
+[Restore a user](restore-user.md) (article)
+
 [Reset passwords](reset-passwords.md) (article)

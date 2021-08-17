@@ -37,13 +37,13 @@ It is important to ensure that client components are up-to-date to deliver criti
 Capabilities are provided through several components: 
 
 - [Endpoint Detection & Response](overview-endpoint-detection-response.md) 
-- [Next-generation protection](microsoft-defender-antivirus-in-windows-10.md#microsoft-defender-antivirus-your-next-generation-protection) with [cloud-delivered protection](cloud-protection-microsoft-defender-antivirus.md) 
+- [Next-generation protection](microsoft-defender-antivirus-windows.md) with [cloud-delivered protection](cloud-protection-microsoft-defender-antivirus.md) 
 - [Attack Surface Reduction](overview-attack-surface-reduction.md)
 
 Updates are released monthly using a gradual release process. This process helps to enable early failure detection to catch impact as it occurs and address it quickly before a larger rollout. 
 
 > [!NOTE]
-> For more information on how to control daily definition updates, see [Schedule Microsoft Defender Antivirus definition updates - Windows security | Microsoft Docs](manage-protection-update-schedule-microsoft-defender-antivirus.md). Definition updates ensure that next-generation protection can defend against new threats, even if cloud-delivered protection is not available to the endpoint.
+> For more information on how to control daily security intelligence updates, see [Schedule Microsoft Defender Antivirus protection updates](manage-protection-update-schedule-microsoft-defender-antivirus.md). Updates ensure that next-generation protection can defend against new threats, even if cloud-delivered protection is not available to the endpoint.
 
 ## Microsoft gradual rollout model
 
@@ -82,9 +82,9 @@ The following update channels are available:
 | Current Channel (Broad) | Get updates at the end of gradual release  | Devices will be offered updates only after the gradual release cycle completes. Suggested to apply to a broad set of devices in your production population (~10-100%).  |
 | (default)  |   | If you disable or do not configure this policy, the device will remain in Current Channel (Default): Stay up to date automatically during the gradual release cycle. Suitable for most devices.  |
 
-### Update channels for daily definition updates
+### Update channels for daily updates
 
-You can also assign a machine to a channel to define the cadence in which it receives daily definition updates. Note that unlike the monthly process, there is no Beta channel and this gradual release cycle occurs multiple times a day.
+You can also assign a machine to a channel to define the cadence in which it receives daily updates. Note that unlike the monthly process, there is no Beta channel and this gradual release cycle occurs multiple times a day.
   
 | Channel name  | Description  | Application  |
 |-|-|-|
