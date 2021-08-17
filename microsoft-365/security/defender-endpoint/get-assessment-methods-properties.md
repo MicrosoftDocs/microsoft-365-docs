@@ -113,7 +113,6 @@ DeviceName|string|Fully qualified domain name (FQDN) of the device.
 DiskPaths|Array[string]|Disk evidence that the product is installed on the device.
 EndOfSupportDate|string|The date in which support for this software has or will end.
 EndOfSupportStatus|string|End of support status. Can contain these possible values: None, EOS Version, Upcoming EOS Version, EOS Software, Upcoming EOS Software.
-Id|string|Unique identifier for the record.
 NumberOfWeaknesses|int|Number of weaknesses on this software on this device
 OSPlatform|string|Platform of the operating system running on the device. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7. See tvm supported operating systems and platforms for details.
 RbacGroupName|string|The role-based access control (RBAC) group. If this device is not assigned to any RBAC group, the value will be "Unassigned." If the organization doesn't contain any RBAC groups, the value will be "None."
