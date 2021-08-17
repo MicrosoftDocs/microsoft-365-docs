@@ -45,6 +45,6 @@ When you add devices, you also need to add them to a Profile. A profile is used 
   
 ## Related content
 
-[Microsoft 365 for business documentation and resources](index.yml)
+[Microsoft 365 for business documentation and resources](../../index.yml)
   
 [Get started with Microsoft 365 for business](../../business-video/what-is-microsoft-365.md)
