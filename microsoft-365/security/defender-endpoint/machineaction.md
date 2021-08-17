@@ -59,15 +59,20 @@ ms.technology: mde
 |Property|Type|Description|
 |---|---|---|
 |ID|Guid|Identity of the [Machine Action](machineaction.md) entity.|
-|type|Enum|Type of the action. Possible values are: "RunAntiVirusScan", "Offboard", "CollectInvestigationPackage", "Isolate", "Unisolate", "StopAndQuarantineFile", "RestrictCodeExecution" and "UnrestrictCodeExecution"|
+|type|Enum|Type of the action. Possible values are: "RunAntiVirusScan", "Offboard", "Live Response" "CollectInvestigationPackage", "Isolate", "Unisolate", "StopAndQuarantineFile", "RestrictCodeExecution" and "UnrestrictCodeExecution"|
 |scope|string|Scope of the action. "Full" or "Selective" for Isolation, "Quick" or "Full" for Anti-Virus scan.|
 |requestor|String|Identity of the person that executed the action.|
+|requestSource|string|The name of the user/application that submitted the action.
+|cancellationRequestor|String|Identity of the person that Cancelled the action.|
 |requestorComment|String|Comment that was written when issuing the action.|
-|status|Enum|Current status of the command. Possible values are: "Pending", "InProgress", "Succeeded", "Failed", "TimeOut" and "Canceled".|
+|cancellationComment|String|Comment that was written when Cancelling the action.|
+|status|Enum|Current status of the command. Possible values are: "Pending", "InProgress", "Succeeded", "Failed", "TimeOut" and "Cancelled".|
 |machineId|String|ID of the [machine](machine.md) on which the action was executed.|
 |machineId|String|Name of the [machine](machine.md) on which the action was executed.|
 |creationDateTimeUtc|DateTimeOffset|The date and time when the action was created.|
-|lastUpdateTimeUtc|DateTimeOffset|The last date and time when the action status was updated.|
+|cancellationDateTimeUtc|DateTimeOffset|The date and time when the action was Cancelled.|
+|lastUpdateDateTimeUtc|DateTimeOffset|The last date and time when the action status was updated.|
+|title|String|Machine action title.|
 |relatedFileInfo|Class|Contains two Properties. string `fileIdentifier`, Enum `fileIdentifierType` with the possible values: "Sha1", "Sha256" and "Md5".|
 
 ## Json representation
