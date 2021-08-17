@@ -70,7 +70,7 @@ ms.technology: mde
 |machineId|String|ID of the [machine](machine.md) on which the action was executed.|
 |machineId|String|Name of the [machine](machine.md) on which the action was executed.|
 |creationDateTimeUtc|DateTimeOffset|The date and time when the action was created.|
-|cancellationDateTimeUtc|DateTimeOffset|The date and time when the action was Cancelled.|
+|cancellationDateTimeUtc|DateTimeOffset|The date and time when the action was canceled.|
 |lastUpdateDateTimeUtc|DateTimeOffset|The last date and time when the action status was updated.|
 |title|String|Machine action title.|
 |relatedFileInfo|Class|Contains two Properties. string `fileIdentifier`, Enum `fileIdentifierType` with the possible values: "Sha1", "Sha256", and "Md5".|
