@@ -42,7 +42,7 @@ This article includes the following sections: <br/><br/>
 | [Defining custom exclusions](#defining-custom-exclusions) | Provides links to how-to information for defining custom exclusions |
 
 
-> [!NOTE]
+> [!IMPORTANT]
 > Keep the following points in mind:
 > - Custom exclusions take precedence over automatic exclusions.
 > - Automatic exclusions only apply to Real-time protection (RTP) scanning. Automatic exclusions are not honored during a full scan, quick scan, or on-demand scan.
