@@ -25,7 +25,14 @@ ms.date: 08/17/2021
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
-This article describes how to configure exclusions for Microsoft Defender Antivirus on Windows Server 2016 or later. In general, you shouldn't have to define exclusions for Microsoft Defender Antivirus. Because Microsoft Defender Antivirus is built into Windows Server 2016 and later, some exclusions happen automatically. However, you can define custom exclusions, opt out of automatic exclusions, and configure exclusions as needed.
+This article describes how to configure exclusions for Microsoft Defender Antivirus on Windows Server 2016 or later. In general, you shouldn't have to define exclusions for Microsoft Defender Antivirus. Because Microsoft Defender Antivirus is built into Windows Server 2016 and later, some exclusions happen automatically, and are listed in this article. You can, however, opt out of automatic exclusions and define custom exclusions.
+
+> [!NOTE]
+> Keep the following points in mind:
+> - Custom exclusions take precedence over automatic exclusions.
+> - Automatic exclusions only apply to Real-time protection (RTP) scanning. Automatic exclusions are not honored during a full scan, quick scan, or on-demand scan.
+> - Custom and duplicate exclusions do not conflict with automatic exclusions.
+> - Microsoft Defender Antivirus uses the Deployment Image Servicing and Management (DISM) tools to determine which roles are installed on your computer.
 
 ## Automatic exclusions on Windows Server 2016 or later
 
@@ -39,18 +46,14 @@ Because Microsoft Defender Antivirus is built in, it does not require exclusions
 > [!NOTE]
 > Automatic exclusions only apply to real-time protection (RTP) scanning. Automatic exclusions are not honored during a full scan, quick scan, or on-demand scan.
 
-In addition to server role-defined automatic exclusions, you can add or remove custom exclusions. To do that, refer to the following articles:
+## Custom exclusions
+
+You can add or remove custom exclusions. To do that, refer to the following articles:
+
 - [Configure and validate exclusions based on file name, extension, and folder location](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 - [Configure and validate exclusions for files opened by processes](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
 
-## A few points to keep in mind
 
-Keep the following important points in mind:
-
-- Custom exclusions take precedence over automatic exclusions.
-- Automatic exclusions only apply to Real-time protection (RTP) scanning. Automatic exclusions are not honored during a full scan, quick scan, or on-demand scan.
-- Custom and duplicate exclusions do not conflict with automatic exclusions.
-- Microsoft Defender Antivirus uses the Deployment Image Servicing and Management (DISM) tools to determine which roles are installed on your computer.
 
 ## Opt out of automatic exclusions
 
