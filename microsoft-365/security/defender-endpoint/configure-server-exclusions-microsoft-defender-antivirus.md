@@ -51,10 +51,10 @@ This article includes the following sections: <br/><br/>
 
 ## Automatic exclusions on Windows Server 2016 or later
 
-On Windows Server 2016 or later, you should not need to define exclusions for:
+On Windows Server 2016 or later, you should not need to define the following exclusions:
 
-- Operating system files; and 
-- Server roles and files that are added through server roles.
+- Operating system files
+- Server roles and any files that are added through server roles
 
 Because Microsoft Defender Antivirus is built in, it does not require exclusions for operating system files on Windows Server 2016 or later. In addition, when you run Windows Server 2016 or later and install a role, Microsoft Defender Antivirus enrolls automatic exclusions for the server role and any files that are added while installing the role. 
 
