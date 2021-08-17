@@ -67,7 +67,7 @@ Similarly, messages with partially indexed file attachments and documents of a p
 For a list of email and document properties that you can search for by using the Search feature in the Security & Compliance Center, see [Keyword queries and search conditions for eDiscovery](keyword-queries-and-search-conditions.md).
   
 > [!NOTE]
-> When an item is moved from a folder that is part of Indexing, to a folder that is not part of Indexing, a flag is set to unindex the item and item would be removed from indexing. Later even if the item comes back from non-Indexed folder to Index folder, we do not reset the flag and so the item may still remain unindexed and non searchable.
+> If a mailbox item is moved from a folder that is indexed to a folder that is not indexed, a flag is set to unindex the item and the item is removed from the index and will not be searchable. Later, if that same item is moved back to a folder that is indexed, the flag is not reset. That means the item will remain unindexed, and not searchable.
 
 ## Partially indexed items included in the search results
 
