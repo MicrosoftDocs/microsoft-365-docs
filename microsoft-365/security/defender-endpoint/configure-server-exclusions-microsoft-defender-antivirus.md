@@ -15,7 +15,7 @@ author: denisebmsft
 ms.author: deniseb
 ms.topic: article
 ms.custom: nextgen
-ms.date: 08/16/2021
+ms.date: 08/17/2021
 ---
 
 # Configure Microsoft Defender Antivirus exclusions on Windows Server
@@ -25,7 +25,16 @@ ms.date: 08/16/2021
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
-On Windows Server 2016, Windows Server, version 1803 or later, and Windows Server 2019, Microsoft Defender Antivirus automatically enrolls you in certain exclusions, as defined by your specified server role. These exclusions do not appear in the standard exclusion lists that are shown in the [Windows Security app](microsoft-defender-security-center-antivirus.md). 
+This article describes how to configure exclusions for Microsoft Defender Antivirus on Windows Server 2016 or later. In general, you shouldn't have to define exclusions for Microsoft Defender Antivirus. Because Microsoft Defender Antivirus is built into Windows Server 2016 and later, some exclusions happen automatically. However, you can define custom exclusions, opt out of automatic exclusions, and configure exclusions as needed.
+
+## Automatic exclusions on Windows Server 2016 or later
+
+On Windows Server 2016 or later, you should not need to define exclusions for:
+
+- Operating system files; and 
+- Server roles.
+
+Because Microsoft Defender Antivirus is built in, it does not require exclusions for operating system files on Windows Server 2016 or later. In addition, when you run Windows Server 2016 or later and install a role, Microsoft Defender Antivirus enrolls automatic exclusions for the server role and any files that are added while installing the role. Operating system exclusions and server role exclusions do not appear in the standard exclusion lists that are shown in the [Windows Security app](microsoft-defender-security-center-antivirus.md). 
 
 > [!NOTE]
 > Automatic exclusions only apply to real-time protection (RTP) scanning. Automatic exclusions are not honored during a full scan, quick scan, or on-demand scan.
