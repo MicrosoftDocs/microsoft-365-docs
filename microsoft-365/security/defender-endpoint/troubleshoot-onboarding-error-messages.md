@@ -26,15 +26,15 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-troublshootonboarding-abovefoldlink)
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-troublshootonboarding-abovefoldlink)
 
 This page provides detailed steps to troubleshoot issues that might occur when setting up your Microsoft Defender for Endpoint service.
 
-If you receive an error message, Microsoft Defender Security Center will provide a detailed explanation on what the issue is and relevant links will be supplied.
+If you receive an error message, Microsoft 365 Defender will provide a detailed explanation on what the issue is and relevant links will be supplied.
 
 ## No subscriptions found
 
-If while accessing Microsoft Defender Security Center you get a **No subscriptions found** message, it means the Azure Active Directory (Azure AD) used to log in the user to the portal, does not have a Microsoft Defender for Endpoint license.
+If while accessing Microsoft 365 Defender you get a **No subscriptions found** message, it means the Azure Active Directory (Azure AD) used to log in the user to the portal, does not have a Microsoft Defender for Endpoint license.
 
 Potential reasons:
 - The Windows E5 and Office E5 licenses are separate licenses.
@@ -49,7 +49,7 @@ For both cases, you should contact Microsoft support at [General Microsoft Defen
 
 ## Your subscription has expired
 
-If while accessing Microsoft Defender Security Center you get a **Your subscription has expired** message, your online service subscription has expired. Microsoft Defender for Endpoint subscription, like any other online service subscription, has an expiration date. 
+If while accessing Microsoft 365 Defender you get a **Your subscription has expired** message, your online service subscription has expired. Microsoft Defender for Endpoint subscription, like any other online service subscription, has an expiration date. 
 
 You can choose to renew or extend the license at any point in time. When accessing the portal after the expiration date a **Your subscription has expired** message will be presented with an option to download the device offboarding package, should you choose to not renew the license.
 
@@ -70,7 +70,7 @@ If the portal dashboard and other sections show an error message such as "Data c
 
 ![Image of data currently isn't available](images/atp-data-not-available.png)
 
-You'll need to allow the `securitycenter.windows.com` and all subdomains under it. For example, `*.securitycenter.windows.com`.
+You'll need to allow the `security.windows.com` and all subdomains under it. For example, `*.security.windows.com`.
 
 
 ## Portal communication issues

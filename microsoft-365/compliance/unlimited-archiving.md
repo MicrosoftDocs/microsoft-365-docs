@@ -85,15 +85,15 @@ Here are some things to consider when using Outlook or Outlook on the web to acc
 
 - You can access any folder in your archive mailbox, including ones that were moved to the auto-expanded storage area.
 
+- If an archive mailbox has at least one auto-expanded storage area, you can't delete a folder from the archive mailbox or from the auxiliary archive. In other words, after an auto-expanded storage area has been provisioned, you can't delete any folders in the archive.
+
+- You can delete items in an auto-expanded storage area. However, you can't use the Recover Deleted Items feature to recover an item deleted from an auto-expanded storage area.
+
 - Search for auto-expanded archiving is available in Outlook for the web (OWA). Similar to Online Archive, you can search for items that were moved to an additional storage area. When archive is selected as the search scope in OWA, all archives (including auto-expanded archives) and their corresponding subfolders will be searched.
 
 - Auto-expanded archive search is available in Outlook Desktop in Current Channel (Preview). Within this preview, the Current Mailbox scope is available, thus allowing you to search the auto-expanded archive. For more information about this and other Microsoft Search support features, see [How Outlook for Windows connected to Exchange Online utilizes Microsoft Search](https://techcommunity.microsoft.com/t5/outlook-global-customer-service/how-outlook-for-windows-connected-to-exchange-online-utilizes/ba-p/1715045). 
 
 - Item counts in Outlook and Read/Unread counts (in Outlook and Outlook on the web) in an auto-expanded archive might not be accurate.
-
-- You can delete items in a subfolder that points to an auto-expanded storage area, but the folder itself can't be deleted.
-
-- You can't use the Recover Deleted Items feature to recover an item that was deleted from an auto-expanded storage area.
 
 ## Auto-expanding archiving and other compliance features
 

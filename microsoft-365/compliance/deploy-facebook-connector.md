@@ -119,7 +119,7 @@ This article contains the step-by-step process to deploy a connector that uses t
 
    ![Click Add Products and then click **Webhooks](../media/FBCimage32.png)
 
-9. Add Webhooks Callback URL and add a verify token. The format of the callback URL, use the format **<connectorserviceuri>/api/FbPageWebhook**, where the value for connectorserviceuri is the Azure app service URL for your organization; for example `https://fbconnector.azurewebsites.net`.
+9. Add Webhooks Callback URL and add a verify token. The format of the callback URL, use the format `<connectorserviceuri>/api/FbPageWebhook`, where the value for connectorserviceuri is the Azure app service URL for your organization; for example `https://fbconnector.azurewebsites.net`.
 
    The verify token should similar to a strong password. Copy the verify token to a text file or other storage location.
 

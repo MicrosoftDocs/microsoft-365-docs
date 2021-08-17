@@ -217,7 +217,7 @@ The following impersonation settings are only available in anti-phishing policie
   - **Deliver the message and add other addresses to the Bcc line**
   - **Delete the message before it's delivered**
 
-- **Add trusted senders and domains**: Exceptions to the impersonation protection settings. Messages from the specified senders and sender domains are never classified as impersonation-based attacks by the policy. In other words, the action for protected senders, protected domains, or mailbox intelligence protection aren't applied to these trusted senders or sender domains. The maximum limit for these lists is approximately 1000 entries.
+- **Add trusted senders and domains**: Exceptions to the impersonation protection settings. Messages from the specified senders and sender domains are never classified as impersonation-based attacks by the policy. In other words, the action for protected senders, protected domains, or mailbox intelligence protection aren't applied to these trusted senders or sender domains. The maximum limit for these lists is 1024 entries.
 
 ### Advanced phishing thresholds in anti-phishing policies in Microsoft Defender for Office 365
 

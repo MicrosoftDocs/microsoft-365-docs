@@ -258,6 +258,7 @@
 #### [Cloud-delivered protection and Microsoft Defender Antivirus](cloud-protection-microsoft-defender-antivirus.md)
 ##### [Turn on cloud-delivered protection](enable-cloud-protection-microsoft-defender-antivirus.md)
 ##### [Specify the cloud-delivered protection level](specify-cloud-protection-level-microsoft-defender-antivirus.md)
+##### [Cloud-delivered protection Microsoft Defender Antivirus sample submission](cloud-protection-microsoft-antivirus-sample-submission.md)
 #### [Configure and validate Microsoft Defender Antivirus network connections](configure-network-connections-microsoft-defender-antivirus.md)
 #### [Protect security settings with tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md)
 #### [Turn on block at first sight](configure-block-at-first-sight-microsoft-defender-antivirus.md)
@@ -483,6 +484,7 @@
 ####### [Get alert related IPs information](get-alert-related-ip-info.md)
 ####### [Get alert related device information](get-alert-related-machine-info.md)
 ####### [Get alert related user information](get-alert-related-user-info.md)
+####### [Alerts queue in Microsoft 365 Defender](alerts-queue-endpoint-detection-response.md)
 
 ###### [Assessments of vulnerabilities and secure configurations]()
 ####### [Export assessment methods and properties](get-assessment-methods-properties.md)
@@ -559,7 +561,7 @@
 ####### [Recommendation methods and properties](recommendation.md)
 ####### [List all recommendations](get-all-recommendations.md)
 ####### [Get recommendation by ID](get-recommendation-by-id.md)
-####### [Get recommendation by software](get-recommendation-software.md)
+####### [Get recommendation by software](list-recommendation-software.md)
 ####### [List machines by recommendation](get-recommendation-machines.md)
 ####### [List vulnerabilities by recommendation](get-recommendation-vulnerabilities.md)
 
@@ -664,6 +666,17 @@
 ##### [Inactive devices](fix-unhealthy-sensors.md#inactive-devices)
 ##### [Misconfigured devices](fix-unhealthy-sensors.md#misconfigured-devices)
 ##### [Review sensor events and errors on machines with Event Viewer](event-error-codes.md)
+
+#### [Troubleshoot sensor health issues using Client Analyzer]()
+##### [Client analyzer overview](overview-client-analyzer.md)
+##### [Download and run the client analyzer](download-client-analyzer.md)
+##### [Run the client analyzer on Windows](run-analyzer-windows.md)
+##### [Run the client analyzer on macOS or Linux](run-analyzer-macos-linux.md)
+##### [Data collection for advanced troubleshooting on Windows](data-collection-analyzer.md)
+##### [Understand the analyzer HTML report](analyzer-report.md)
+##### [Provide feedback on the client analyzer tool](analyzer-feedback.md)
+
+  
 
 #### [Troubleshoot Microsoft Defender for Endpoint service issues]()
 ##### [Troubleshoot service issues](troubleshoot-mdatp.md)

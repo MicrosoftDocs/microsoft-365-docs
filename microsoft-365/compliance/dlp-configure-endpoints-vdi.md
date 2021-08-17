@@ -18,7 +18,7 @@ description: Deploy the configuration package on virtual desktop infrastructure 
 
 ---
 
-# Onboard non-persistent virtual desktop infrastructure (VDI) devices
+# Onboard non-persistent virtual desktop infrastructure devices
 
 **Applies to:**
 - [Microsoft 365 Endpoint data loss prevention (DLP)](./endpoint-dlp-learn-about.md)
@@ -30,7 +30,7 @@ description: Deploy the configuration package on virtual desktop infrastructure 
 
 ## Onboard VDI devices
 
-Microsoft 365 Endpoint data loss prevention supports non-persistent VDI session onboarding.
+Microsoft 365 Endpoint data loss prevention supports non-persistent virtual desktop infrastructure (VDI) session onboarding.
 
 > [!NOTE]
 > To onboard non-persistent VDI sessions, VDI devices must be on Windows 10 1809 or higher.
