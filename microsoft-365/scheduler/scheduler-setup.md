@@ -110,7 +110,7 @@ Get-mailbox | where {$_.PersistedCapabilities -Match "SchedulerAssistant"}
 ## Exchange Online mailbox
 A Scheduler license is an add-on to Microsoft 365, which enables the meeting organizer to delegate their meeting scheduling tasks to their Scheduler assistant. In addition to designating a mailbox as a Scheduler assistant mailbox, meeting organizers will also need a Scheduler license and Exchange Online mailbox and calendar, typically through Microsoft 365 license for Scheduler to work. Meeting attendees do not need a Scheduler license or a Microsoft 365 license.
 
-A Scheduler license requires one of the following licenses:
+To purchase the Scheduler add-on, you require one of the following licenses:
 
 - Microsoft 365 E3, A3, E5, A5
 - Business Basic, Business, Business Standard, Business Premium
