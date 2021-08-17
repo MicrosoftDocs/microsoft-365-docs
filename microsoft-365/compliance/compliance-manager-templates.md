@@ -47,7 +47,6 @@ View the [full list of templates](compliance-manager-templates-list.md) availabl
 Template licenses can be obtained by one or more of these methods, depending on your Compliance Manager licensing agreement. Once your purchase has been finalized, the templates should become available in your tenant within 48 hours.
 
 **Commercial and GCC Moderate**
-
 Commercial and GCC Moderate accounts can purchase template licenses in the admin center ([learn more about subscriptions, licenses, and billing](/microsoft-365/commerce/)). Select the quantity of licenses you wish to purchase and your payment plan.
 
 Purchase links:
@@ -58,7 +57,6 @@ Purchase links:
 You may also acquire licenses through your participation in the [Cloud Solution Provider program](https://partner.microsoft.com/membership/cloud-solution-provider) or [volume licensing](https://www.microsoft.com/licensing/licensing-programs/licensing-programs).
 
 **GCC High and DOD accounts**
-
 GCC High and DOD accounts must purchase template licenses through [volume licensing](https://www.microsoft.com/licensing/licensing-programs/licensing-programs).
 
 ### Try out premium templates
