@@ -28,7 +28,7 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 This topic describes deploying Defender for Endpoint on iOS on Intune Company Portal enrolled devices. For more information about Intune device enrollment, see [Enroll iOS/iPadOS devices in Intune](/mem/intune/enrollment/ios-enroll).
 
@@ -102,10 +102,10 @@ Admins can configure auto-setup of VPN profile. This will automatically setup th
 
 2. Tap the Defender for Endpoint app icon (MSDefender) and follow the on-screen instructions to complete the onboarding steps. The details include end-user acceptance of iOS permissions required by Defender for Endpoint on iOS.
 
-3. Upon successful onboarding, the device will start showing up on the Devices list in Microsoft Defender Security Center.
+3. Upon successful onboarding, the device will start showing up on the Devices list in the Microsoft 365 Defender portal.
 
     > [!div class="mx-imgBorder"]
-    > ![A screenshot of a cell phone Description automatically generated](images/e07f270419f7b1e5ee6744f8b38ddeaf.png)
+    > ![A screenshot of a cell phone Description automatically generated](images/device-inventory-screen.png)
 
 ## Configure Microsoft Defender for Endpoint for Supervised Mode
 
@@ -162,4 +162,5 @@ Intune allows you to configure the Defender for iOS app through an App Configura
 
 ## Next Steps
 
-[Configure Defender for Endpoint on iOS features](ios-configure-features.md)
+- [Configure app protection policy to include Defender for Endpoint risk signals (MAM)](ios-install-unmanaged.md)
+- [Configure Defender for Endpoint on iOS features](ios-configure-features.md)

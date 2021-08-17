@@ -94,7 +94,7 @@ The following table describes scenarios for Safe Links in Microsoft 365 and Offi
 
 Safe Links scans incoming email for known malicious hyperlinks. Scanned URLs are rewritten using the Microsoft standard URL prefix: `https://nam01.safelinks.protection.outlook.com`. After the link is rewritten, it's analyzed for potentially malicious content.
 
-After Safe Links rewrites a URL, the URL remains rewritten even if the message is *manually* forwarded or replied to (both to internal and external recipients). Additional links that are added to the forwarded or replied to message are not rewritten. However, in the case of *automatic* forwarding by Inbox rules or SMTP forwarding, the URL will not be rewritten in the message that's intended for the final recipient *unless* that recipient is also protected by Safe Links or the URL had already been rewritten in a previous communication. 
+After Safe Links rewrites a URL, the URL remains rewritten even if the message is *manually* forwarded or replied to (both to internal and external recipients). Additional links that are added to the forwarded or replied-to message are not rewritten. However, in the case of *automatic* forwarding by Inbox rules or SMTP forwarding, the URL will not be rewritten in the message that's intended for the final recipient *unless* that recipient is also protected by Safe Links or the URL had already been rewritten in a previous communication. Rewritten URLs apply only to HTML email, as rewriting the URL would make rich and plain text URLs unreadable, but these URLs are still scanned prior to delivery. Rich text and plain text emails containing URLs will also still be checked by a client-side API call to Safe Links at the time of click in Outlook for Desktop version 16.0.12513 or later.
 
 The settings in Safe Links policies that apply to email messages are described in the following list:
 
@@ -154,9 +154,6 @@ At a high level, here's how Safe Links protection works on URLs in email message
    - If the URL is determined to be safe, the website opens.
 
 ## Safe Links settings for Microsoft Teams
-
-> [!IMPORTANT]
-> As of March 2020, this feature is in Preview and is available only to members of the Microsoft Teams Technology Adoption Program (TAP). For information about the release schedule, check out the [Microsoft 365 roadmap](https://www.microsoft.com/microsoft-365/roadmap?rtc=1&filters=&searchterms=Safe%2CLinks%2CProtection%2Cfor%2CMicrosoft%2CTeams).
 
 You enable or disable Safe Links protection for Microsoft Teams in Safe Links policies. Specifically, you use the **Select the action for unknown or potentially malicious URLs within Microsoft Teams** setting. The recommended value is **On**.
 
@@ -290,7 +287,7 @@ Examples of the values that you can enter and their results are described in the
 
 Each Safe Links policy contains a **Do not rewrite the following URLs** list that you can use to specify URLs that are not rewritten by Safe Links scanning. In other words, the list allows users who are included in the policy to access the specified URLs that would otherwise be blocked by Safe Links. You can configure different lists in different Safe Links policies. Policy processing stops after the first (likely, the highest priority) policy is applied to the user. So, only one **Do not rewrite the following URLs** list is applied to a user who is included in multiple active Safe Links policies.
 
-To add entries to the list in new or existing Safe Links policies, see [Create Safe Links policies](set-up-safe-links-policies.md#use-the-security--compliance-center-to-create-safe-links-policies) or [Modify Safe Links policies](set-up-safe-links-policies.md#use-the-security--compliance-center-to-modify-safe-links-policies).
+To add entries to the list in new or existing Safe Links policies, see [Create Safe Links policies](set-up-safe-links-policies.md#use-the-microsoft-365-defender-portal-to-create-safe-links-policies) or [Modify Safe Links policies](set-up-safe-links-policies.md#use-the-microsoft-365-defender-portal-to-modify-safe-links-policies).
 
 **Notes**:
 

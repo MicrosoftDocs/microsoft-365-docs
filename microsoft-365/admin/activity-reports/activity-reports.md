@@ -13,7 +13,9 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom: 
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - MET150
 - MOE150
@@ -24,7 +26,7 @@ description: "Get a periodic report of how people in your organization are using
 
 # Microsoft 365 Reports in the admin center
 
-You can easily see how people in your business are using Microsoft 365 services. For example, you can identify who is using a service a lot and reaching quotas, or who may not need an Microsoft 365 license at all.
+You can easily see how people in your business are using Microsoft 365 services. For example, you can identify who is using a service a lot and reaching quotas, or who may not need an Microsoft 365 license at all. Perpetual license model will not be included in the reports. 
   
 Reports are available for the last 7 days, 30 days, 90 days, and 180 days. Data won't exist for all reporting periods right away. The reports become available within 48 hours.
   

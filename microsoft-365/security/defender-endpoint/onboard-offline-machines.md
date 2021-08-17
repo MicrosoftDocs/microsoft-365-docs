@@ -2,7 +2,7 @@
 title: Onboard devices without Internet access to Microsoft Defender for Endpoint
 ms.reviewer: 
 description: Onboard devices without Internet access so that they can send sensor data to the Microsoft Defender for Endpoint sensor
-keywords: onboard, servers, vm, on-premise, oms gateway, log analytics, azure log analytics, mma
+keywords: onboard, servers, vm, on-premises, oms gateway, log analytics, azure log analytics, mma
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -28,7 +28,7 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 
 To onboard devices without Internet access, you'll need to take the following general steps:
@@ -48,7 +48,7 @@ For more information about onboarding methods, see the following articles:
 - [Onboard servers to the Microsoft Defender for Endpoint service](/microsoft-365/security/defender-endpoint/configure-server-endpoints#windows-server-2008-r2-sp1--windows-server-2012-r2-and-windows-server-2016)
 - [Configure device proxy and Internet connectivity settings](/microsoft-365/security/defender-endpoint/configure-proxy-internet#configure-the-proxy-server-manually-using-a-registry-based-static-proxy)
 
-## On-premise devices
+## On-premises devices
 
 - Setup Azure Log Analytics (formerly known as OMS Gateway) to act as proxy or hub:
   - [Azure Log Analytics Agent](/azure/azure-monitor/platform/gateway#download-the-log-analytics-gateway)

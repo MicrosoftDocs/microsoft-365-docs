@@ -19,6 +19,7 @@ ms.custom:
 - seo-marvel-may2020
 - AdminSurgePortfolio
 - okr_smb
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150

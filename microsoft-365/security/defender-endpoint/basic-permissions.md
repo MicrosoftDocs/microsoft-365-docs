@@ -27,7 +27,7 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-basicaccess-abovefoldlink)
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-basicaccess-abovefoldlink)
 
 Refer to the instructions below to use basic permissions management.
 
@@ -49,7 +49,7 @@ You can assign users with one of the following levels of permissions:
     > [!NOTE]
     > You need to run the PowerShell cmdlets in an elevated command-line.
 
-- Connect to your Azure Active Directory. For more information, see [Connect-MsolService](/powershell/module/msonline/connect-msolservice?view=azureadps-1.0&preserve-view=true).
+- Connect to your Azure Active Directory. For more information, see [Connect-MsolService](/powershell/module/msonline/connect-msolservice).
 
 **Full access** <br>
 Users with full access can log in, view all system information and resolve alerts, submit files for deep analysis, and download the onboarding package.

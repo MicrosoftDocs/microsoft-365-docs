@@ -50,9 +50,10 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
 
 - To submit messages and files to Microsoft, you need to be a member of one of the following role groups:
   - **Organization Management** or **Security Reader** in the [Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).
-  - **Organization Management** in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups).
-
+  
     Note that membership in this role group is required to [View user submissions to the custom mailbox](#view-user-submissions-to-microsoft) as described later in this article.
+
+- Admins can submit messages as old as 30 days if it is still available in the mailbox and not purged by the user or another admin.
 
 - For more information about how users can submit messages and files to Microsoft, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
 
@@ -64,6 +65,9 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
 
 3. Use the **Submit to Microsoft for review** flyout that appears to submit the message, URL, or email attachment as described in the following sections.
 
+   > [!NOTE]
+   > File and URL submissions are not available in the clouds that do not allow for data to leave the environment. The ability to select File or URL will be greyed out.
+
 ### Submit a questionable email to Microsoft
 
 1. In the **Select the submission type** box, verify that **Email** is selected in the drop down list.
@@ -71,9 +75,6 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
 2. In the **Add the network message ID or upload the email file** section, use one of the following options:
    - **Add the email network message ID**: This is a GUID value that's available in the **X-MS-Exchange-Organization-Network-Message-Id** header in the message or in the **X-MS-Office365-Filtering-Correlation-Id** header in quarantined messages.
    - **Upload the email file (.msg or .eml)**: Click **Browse files**. In the dialog that opens, find and select the .eml or .msg file, and then click **Open**.
-
-   > [!NOTE]
-   > The ability to submit messages as old as 30 days has been temporarily suspended for Defender for Office 365 customers. Admins will only be able to go back 7 days.
 
 3. In the **Choose a recipient who had an issue** box, specify the recipient that you would like to run a policy check against. The policy check will determine if the email bypassed scanning due to user or organization policies.
 
@@ -86,7 +87,8 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
 
 5. When you're finished, click the **Submit** button.
 
-   ![New URL submission example](../../media/submission-flyout-email.PNG)
+> [!div class="mx-imgBorder"]
+> ![New URL submission example](../../media/submission-flyout-email.png)
 
 ### Send a suspect URL to Microsoft
 
@@ -100,7 +102,8 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
 
 4. When you're finished, click the **Submit** button.
 
-   ![New Email submission example](../../media/submission-url-flyout.png)
+> [!div class="mx-imgBorder"]
+> ![New Email submission example](../../media/submission-url-flyout.png)
 
 ### Submit a suspected email attachment to Microsoft
 
@@ -114,7 +117,8 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
 
 4. When you're finished, click the **Submit** button.
 
-   ![New Attachment submission example](../../media/submission-file-flyout.PNG)
+> [!div class="mx-imgBorder"]
+> ![New Attachment submission example](../../media/submission-file-flyout.png)
 
 ## View admin submissions to Microsoft
 
@@ -124,12 +128,13 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
 
    - You can sort the entries by clicking on an available column header. Click **Customize columns** to show a maximum of seven columns. The default values are marked with an asterisk (<sup>\*</sup>):
      - **Submission name**<sup>\*</sup>
-     - **Sender**<su>\*</sup>
+     - **Sender**<sup>\*</sup>
      - **Date submitted**<sup>\*</sup>
      - **Submission type**<sup>\*</sup>
      - **Reason for submitting**<sup>\*</sup>
      - **Rescan status**<sup>\*</sup>
      - **Rescan result**<sup>\*</sup>
+     - **Tags**<sup>\*</sup>
      - **Filter verdict**
      - **Delivery/Block reason**
      - **Submission ID**
@@ -149,10 +154,12 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
      - **Submission ID**: A GUID value that's assigned to every submission.
      - **Network Message ID**
      - **Sender**
+     - **Tags**
 
      When you're finished, click **Apply**.
 
-     ![New Filter options for admin submissions](../../media/admin-submission-email-filter-options.png)
+     > [!div class="mx-imgBorder"]
+     > ![New Filter options for admin submissions](../../media/admin-submission-filters.png)
 
    - To group the entries, click **Group** and select one of the following values from the drop down list:
      - **None**
@@ -165,7 +172,7 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
 
 ### Admin submission rescan details
 
-Messages that are submitted in admin submissions are rescanned and results shown in the submissions detail flyout:
+Messages that are submitted in admin submissions are reviewed and results shown in the submissions detail flyout:
 
 - If there was a failure in the sender's email authentication at the time of delivery.
 - Information about any policy hits that could have affected or overridden the verdict of a message.
@@ -185,11 +192,12 @@ If you've deployed the [Report Message add-in](enable-the-report-message-add-in.
    - You can sort the entries by clicking on an available column header. Click **Customize columns** to show a maximum of seven columns. The default values are marked with an asterisk (<sup>\*</sup>):
 
      - **Email subject**<sup>\*</sup>
-     - **Reported by**<su>\*</sup>
+     - **Reported by**<sup>\*</sup>
      - **Date reported**<sup>\*</sup>
      - **Sender**<sup>\*</sup>
      - **Reported reason**<sup>\*</sup>
      - **Rescan result**<sup>\*</sup>
+     - **Tags**<sup>\*</sup>
      - **Message reported ID**
      - **Network Message ID**
      - **Sender IP**
@@ -206,10 +214,12 @@ If you've deployed the [Report Message add-in](enable-the-report-message-add-in.
      - **Sender**
      - **Reported reason**: **Not junk**, **Phish**, or **Spam**.
      - **Phish simulation**: **Yes** or **No**
+     - **Tags**
 
      When you're finished, click **Apply**.
 
-    ![New Filter options for user submissions](../../media/user-submissions-filter-options.png)
+     > [!div class="mx-imgBorder"]
+     > ![New Filter options for user submissions](../../media/admin-submission-reported-messages.png)
 
    - To group the entries, click **Group** and select one of the following values from the drop down list:
      - **None**
@@ -228,9 +238,9 @@ If you've deployed the [Report Message add-in](enable-the-report-message-add-in.
 
 Once a user submits a suspicious email to the custom mailbox, the user and admin don't have an option to undo the submission. If the user would like to recover the email, it will be available for recovery in the Deleted Items or Junk Email folders.
 
-### Submit messages to Microsoft from the custom mailbox
+### Converting user reported messages from the custom mailbox into an admin submission 
 
-If you've configured the custom mailbox to intercept user-reported messages without sending the messages to Microsoft, you can find and send specific messages to Microsoft for analysis. This effectively moves a user submission to an admin submission.
+If you've configured the custom mailbox to intercept user-reported messages without sending the messages to Microsoft, you can find and send specific messages to Microsoft for analysis.
 
 On the **User reported messages** tab, select a message in the list, click **Submit to Microsoft for analysis**, and then select one of the following values from the drop down list:
 
@@ -240,4 +250,5 @@ On the **User reported messages** tab, select a message in the list, click **Sub
 - **Report spam**
 - **Trigger investigation**
 
-![New Options on the Action button](../../media/user-submission-custom-mailbox-action-button.png)
+> [!div class="mx-imgBorder"]
+> ![New Options on the Action button](../../media/admin-submission-main-action-button.png)

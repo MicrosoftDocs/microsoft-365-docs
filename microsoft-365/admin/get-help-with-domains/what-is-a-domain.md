@@ -22,6 +22,7 @@ description: "Learn what a domain is and how you can buy a domain or use the def
 ms.custom: 
 - okr_smb
 - AdminSurgePortfolio
+- AdminTemplateSet
 ROBOTS: NOINDEX, NOFOLLOW
 ---
 

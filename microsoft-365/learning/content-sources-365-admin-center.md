@@ -40,15 +40,15 @@ You must be a Microsoft 365 global administrator to perform these tasks.
 
 To add a knowledge admin for Viva Learning (Preview), follow these steps:
 
-1.	In the left navigation of the Microsoft 365 admin center, go to **Roles**.
+1. In the left navigation of the Microsoft 365 admin center, go to **Roles**.
 
-2.	On the **Roles** page, on the **Azure AD** tab, select **Knowledge Administrator**.
+2. On the **Roles** page, on the **Azure AD** tab, select **Knowledge Administrator**.
  
-3.	On the **Knowledge Administrator** panel, select **Assigned admins**, and then select **Add**.
+3. On the **Knowledge Administrator** panel, select **Assigned admins**, and then select **Add**.
 
      ![Roles page in the Microsoft 365 admin center showing the Knowledge Administrator panel to add a user.](../media/learning/learning-add-knowledge-admin-1.png)
 
-3.	On the **Add admins** panel, select the person you choose for the role, and then select **Add**.
+3. On the **Add admins** panel, select the person you choose for the role, and then select **Add**.
 
      ![Roles page in the Microsoft 365 admin center showing the Add admins panel to add a user.](../media/learning/learning-add-knowledge-admin-2.png)
 
@@ -56,11 +56,11 @@ To add a knowledge admin for Viva Learning (Preview), follow these steps:
 
 To remove a knowledge admin for Viva Learning (Preview), follow these steps:
 
-1.	In the left navigation of the Microsoft 365 admin center, go to **Roles**.
+1. In the left navigation of the Microsoft 365 admin center, go to **Roles**.
 
-2.	On the **Roles** page, on the **Azure AD** tab, and then select **Knowledge Administrator**.
+2. On the **Roles** page, on the **Azure AD** tab, and then select **Knowledge Administrator**.
  
-3.	On the **Knowledge Administrator** panel, on the **Assigned Admins** tab, select **Remove**, and then select the person you want to remove from the role. To confirm, select **Remove**.
+3. On the **Knowledge Administrator** panel, on the **Assigned Admins** tab, select **Remove**, and then select the person you want to remove from the role. To confirm, select **Remove**.
 
      ![Roles page in the Microsoft 365 admin center showing the Assigned admins panel to remove a user.](../media/learning/learning-remove-knowledge-admin-1.png)
 
@@ -70,13 +70,13 @@ You must be a Microsoft 365 global administrator or knowledge admin to perform t
 
 To configure settings for learning content sources in Viva Learning, follow these steps:
 
-1.	In the left navigation of the Microsoft 365 admin center, go to **Settings** > **Org settings**.
+1. In the left navigation of the Microsoft 365 admin center, go to **Settings** > **Org settings**.
 
-2.	On the **Org settings** page, on the **Services** tab, select **Viva Learning (Preview)**.
+2. On the **Org settings** page, on the **Services** tab, select **Viva Learning (Preview)**.
 
      ![Settings page in the Microsoft 365 admin center showing the Learning app listed.](../media/learning/learning-sharepoint-configure1.png)
 
-3.	On the **Viva Learning (Preview)** panel, select the learning content sources you want to configure for the organization, and then select **Save**.
+3. On the **Viva Learning (Preview)** panel, select the learning content sources you want to configure for the organization, and then select **Save**.
 
      ![Learning panel in the Microsoft 365 admin center showing content sources options.](../media/learning/learning-sharepoint-configure2.png)
 

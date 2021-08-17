@@ -25,7 +25,7 @@ ms.custom: api
 
 **Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -39,7 +39,7 @@ Method |Return Type |Description
 :---|:---|:---
 [List all recommendations](get-all-recommendations.md) | Recommendation collection | Retrieves a list of all security recommendations affecting the organization
 [Get recommendation by Id](get-recommendation-by-id.md) | Recommendation | Retrieves a security recommendation by its ID
-[Get recommendation software](get-recommendation-software.md)| [Software](software.md) | Retrieves a security recommendation related to a specific software
+[Get recommendation software](list-recommendation-software.md)| [Software](software.md) | Retrieves a security recommendation related to a specific software
 [Get recommendation devices](get-recommendation-machines.md)|MachineRef collection | Retrieves a list of devices associated with the security recommendation
 [Get recommendation vulnerabilities](get-recommendation-vulnerabilities.md) | [Vulnerability](vulnerability.md) collection | Retrieves a list of vulnerabilities associated with the security recommendation
 

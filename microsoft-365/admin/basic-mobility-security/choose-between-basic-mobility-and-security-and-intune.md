@@ -9,12 +9,13 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: 
+ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - MET150
 description: "Basic Mobility and Security are part of the Microsoft 365 plans."
@@ -47,17 +48,17 @@ Both Basic Mobility and Security and Intune are included in a variety of plans, 
 |Enterprise Mobility & Security E3 |No|Yes|
 |Enterprise Mobility & Security E5 |No|Yes|
 
->[!NOTE]
->You can't start using Basic Mobility and Security if you're already using Microsoft Intune.
+> [!NOTE]
+> You can't start using Basic Mobility and Security if you're already using Microsoft Intune.
 
- For details, see [Microsoft 365 and Office 365 platform service descriptions](/office365/servicedescriptions/office-365-platform-service-description/office-365-platform-service-description). 
+ For details, see [Microsoft 365 and Office 365 platform service descriptions](/office365/servicedescriptions/office-365-platform-service-description/office-365-platform-service-description).
 
 ## Differences in capabilities
 
 Microsoft Intune and built-in Basic Mobility and Security both give you the ability to manage mobile devices in your organization, but there are key differences in capability, described in the following table.
 
->[!NOTE]
->You can manage users and their mobile devices using both Intune and Basic Mobility and Security in the same Microsoft 365 Business Standard organization *by setting up Basic Mobility and Security first, and then adding Microsoft Intune*. This allows you to choose Basic Mobility and Security or the more feature-rich Intune solution. Assign an Intune license to enable the Intune features.
+> [!NOTE]
+> You can manage users and their mobile devices using both Intune and Basic Mobility and Security in the same Microsoft 365 Business Standard organization *by setting up Basic Mobility and Security first, and then adding Microsoft Intune*. This allows you to choose Basic Mobility and Security or the more feature-rich Intune solution. Assign an Intune license to enable the Intune features.
 
 | Feature area | Feature highlights | Basic Mobility and Security | Microsoft Intune |
 |:-----|:-----|:-----|:-----|
@@ -65,7 +66,6 @@ Microsoft Intune and built-in Basic Mobility and Security both give you the abil
 |Device compliance|Set and manage security policies, like device level PIN lock and jailbreak detection. |Limitations on Android 9 and later devices. See [details](capabilities.md). |Yes|
 |Conditional access based on device compliance |Prevent noncompliant devices from accessing corporate email and data from the cloud. |Not supported on Windows 10.<br/>Limited to controlling access to Exchange Online, SharePoint Online, and Outlook. |Yes |
 |Device configuration  |Configure device settings (for example, disabling the camera)|Limited set of settings.|Yes|
-|Device compliance  |Set and manage security policies, like device level PIN lock and jailbreak detection. |Limitations on Android 9 and later devices. See [details](capabilities.md). |Yes|
 |Email profiles  |Provision a native email profile on the device. |Yes|Yes|
 |WiFi profiles |Provision a native WiFi profile on the device. |No|Yes|
 |VPN profiles |Provision a native VPN profile on the device. |No|Yes|
@@ -75,7 +75,7 @@ Microsoft Intune and built-in Basic Mobility and Security both give you the abil
 |Zero touch enrollment programs (AutoPilot) |Enroll large numbers of corporate-owned devices, while simplifying user setup. |No|Yes|
 |||
 
-In addition to features listed in the preceding table, Basic Mobility and Security and Intune both include a set of remote actions that send commands to devices over the internet. For example, you can remove Office data from an employee’s device while leaving personal data in place (retire), remove Office apps from a employee's device (wipe), or reset a device to its factory settings (full wipe). 
+In addition to features listed in the preceding table, Basic Mobility and Security and Intune both include a set of remote actions that send commands to devices over the internet. For example, you can remove Office data from an employee’s device while leaving personal data in place (retire), remove Office apps from a employee's device (wipe), or reset a device to its factory settings (full wipe).
 
 Basic Mobility and Security remote actions include retire, wipe and full wipe. For more information on Basic Mobility and Security actions, see [capabilities of Basic Mobility and Security](capabilities.md).
 

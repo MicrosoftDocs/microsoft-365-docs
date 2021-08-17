@@ -23,20 +23,28 @@ ms.date: 06/02/2021
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
+
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-If you're part of your organization's security team, you can configure attack surface reduction capabilities to run in audit mode to see how they'll work in your organization. In particular, you can enable attack surface reduction rules, exploit protection, network protection, and controlled folder access in audit mode. Audit mode lets you see a record of what *would* have happened if you had enabled the feature.
+As part of your organization's security team, you can configure attack surface reduction capabilities to run in audit mode to see how they'll work. In audit mode, you can enable:
 
-You may want to enable audit mode when testing how the features will work in your organization. This will help make sure your line-of-business apps aren't affected. You can also get an idea of how many suspicious file modification attempts occur over a certain period of time.
+- Attack surface reduction rules
+- Exploit protection
+- Network protection
+- And controlled folder access in audit mode
 
-The features won't block or prevent apps, scripts, or files from being modified. However, the Windows Event Log will record events as if the features were fully enabled. With audit mode, you can review the event log to see what impact the feature would have had if it was enabled.
+Audit mode lets you see a record of what *would* have happened if you had enabled the feature.
+
+You can enable audit mode when testing how the features will work. This will help make sure your line-of-business apps aren't affected. You can also get an idea of how many suspicious file modification attempts occur over a certain period of time.
+
+The features won't block or prevent apps, scripts, or files from being modified. However, the Windows Event Log will record events as if the features were fully enabled. With audit mode, you can review the event log to see what affect the feature would have had if it was enabled.
 
 To find the audited entries, go to **Applications and Services** > **Microsoft** > **Windows** > **Windows Defender** > **Operational**.
 
-You can use Defender for Endpoint to get greater details for each event, especially for investigating attack surface reduction rules. Using the Defender for Endpoint console lets you [investigate issues as part of the alert timeline and investigation scenarios](investigate-alerts.md).
+Use Defender for Endpoint to get greater details for each event, especially for investigating attack surface reduction rules. Using the Defender for Endpoint console lets you [investigate issues as part of the alert timeline and investigation scenarios](investigate-alerts.md).
 
-You can use Group Policy, PowerShell, and configuration service providers (CSPs) to enable audit mode.
+You can enable audit mode using Group Policy, PowerShell, and configuration service providers (CSPs).
 
 > [!TIP]
 > You can also visit the Windows Defender Testground website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to confirm the features are working and see how they work.
@@ -47,5 +55,3 @@ You can use Group Policy, PowerShell, and configuration service providers (CSPs)
 | Audit applies to individual rules | [Enable attack surface reduction rules](enable-attack-surface-reduction.md) | [Attack surface reduction rule events](evaluate-attack-surface-reduction.md#review-attack-surface-reduction-events-in-windows-event-viewer)
 | Audit applies to all events | [Enable network protection](enable-network-protection.md) | [Network protection events](evaluate-network-protection.md#review-network-protection-events-in-windows-event-viewer)
 | Audit applies to individual mitigations | [Enable exploit protection](enable-exploit-protection.md) | [Exploit protection events](exploit-protection.md#review-exploit-protection-events-in-windows-event-viewer)
-
-

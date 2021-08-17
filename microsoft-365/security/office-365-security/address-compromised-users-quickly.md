@@ -32,9 +32,7 @@ ms.prod: m365-security
 The compromised user security playbook enables your organization's security team to:
 
 - Speed up detection of compromised user accounts;
-
 - Limit the scope of a breach when an account is compromised; and
-
 - Respond to compromised users more effectively and efficiently.
 
 ## Compromised user alerts
@@ -62,21 +60,17 @@ When a user account is compromised, alerts are triggered. And in some cases, tha
 
 ### View and investigate restricted users
 
-You have a few options for navigating to a list of restricted users. For example, in the Security & Compliance Center, you can go to **Threat management** \> **Review** \> **Restricted Users**. The following procedure describes navigation using the **Alerts** dashboard, which is a good way to see various kinds of alerts that might have been triggered.
+You have a few options for navigating to a list of restricted users. For example, in the Microsoft 365 Defender portal, you can go to **Email & collaboration** \> **Review** \> **Restricted Users**. The following procedure describes navigation using the **Alerts** dashboard, which is a good way to see various kinds of alerts that might have been triggered.
 
-1. Go to [https://protection.office.com](https://protection.office.com) and sign in.
+1. Open the Microsoft 365 Defender portal (<https://security.microsoft.com>) and go to **Incidents & alerts** \> **Alerts**. Or, to go directly to the **Alerts** page, use <https://security.microsoft.com/alerts>.
 
-2. In the navigation pane, choose **Alerts** \> **Dashboard**.
+2. On the **Alerts** page, filter the results by time period and the policy named **User restricted from sending email**.
 
-3. In the **Other alerts** widget, choose **Restricted Users**.
+   ![The Alerts page in the Microsoft 365 Defender portal filtered for restricted users](../../media/m365-sc-alerts-page-with-restricted-user.png)
 
-   ![Other alerts widget](/microsoft-365/media/office365atp-otheralertswidget.jpg)
+3. If you select the entry by clicking on the name, a **User restricted from sending email** page opens with additional details for you to review. Next to the **Manage alert** button, you can click ![More options icon](../../media/m365-cc-sc-more-actions-icon.png) **More options** and then select **View restricted user details** to go to the **Restricted users** page, where you can [release the restricted user](removing-user-from-restricted-users-portal-after-spam.md).
 
-   This opens the list of restricted users.
-
-   ![Restricted users in Office 365](/microsoft-365/media/office365atp-restrictedusers.jpg)
-
-4. Select a user account in the list to view details and take action, such as [releasing the restricted user](removing-user-from-restricted-users-portal-after-spam.md).
+   ![The User restricted from sending email page from the Alerts center](../../media/m365-sc-alerts-user-restricted-from-sending-email-page.png)
 
 ### View details about automated investigations
 

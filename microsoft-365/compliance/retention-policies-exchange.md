@@ -29,7 +29,7 @@ The information in this article supplements [Learn about retention](retention.md
 
 ## What's included for retention and deletion
 
-The following Exchange items can be retained and deleted by using retention policies and retention labels: Mail messages (includes drafts) with any attachments, tasks when they have an end date, and notes. 
+The following Exchange items from user mailboxes and shared mailboxes can be retained and deleted by using retention policies and retention labels: Mail messages (includes received messages, drafts, sent messages) with any attachments, tasks when they have an end date, and notes. 
 
 Calendar items that have an end date are supported for retention policies but aren't supported for retention labels.
 
@@ -41,7 +41,7 @@ Other items stored in a mailbox, such as Skype and Teams messages, aren't includ
 
 Both a mailbox and a public folder use the [Recoverable Items folder](/exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder) to retain items. Only people who have been assigned eDiscovery permissions can view items in another user's Recoverable Items folder.
   
-When a person deletes a message in a folder other than the Deleted Items folder, by default, the message moves to the Deleted Items folder. When a person deletes an item in the Deleted Items folder, the message is moved to the Recoverable Items folder. However, a user can soft delete an item (Shift+Delete) in any folder, which bypasses the Deleted Items folder and moves the item directly to the Recoverable Items folder.
+When a user deletes a message in a folder other than the Deleted Items folder, by default, the message moves to the Deleted Items folder. However, a user can soft delete an item (Shift+Delete) in any folder, which bypasses the Deleted Items folder and moves the item directly to the Recoverable Items folder.
   
 When you apply retention settings to Exchange data, a timer job periodically evaluates items in the Recoverable Items folder. If an item doesn't match the rules of at least one retention policy or retention label to retain the item, it is permanently deleted (also called hard deleted) from the Recoverable Items folder.
 
@@ -76,9 +76,19 @@ When the retention settings are retain-only, or delete-only, the contents paths 
 
 2. **If the item is deleted** during the configured period: The item is immediately moved to the Recoverable Items folder. If a user deletes the item from there or empties the Recoverable Items folder, the item is permanently deleted. Otherwise, the item is permanently deleted after being in the Recoverable Items folder for 14 days. 
 
+## User notification of expiry date
+
+Retention policies for Exchange, unlike retention policies for the other Microsoft 365 workloads, have a user presence by displaying at the top of each email message the name of the retention policy that has the shortest expiry date for the item, and the calculated expiry date for that item. Users don't see this notification if the retention policy doesn't delete items (retain-only).
+
+If a retention label is applied to an email message, the name of that label and corresponding expiry date is always displayed, and will replace the name and date from any retention policy applied to the mailbox.
+
+Remember, in this context, the expiry date for when an email will be deleted is when users can expect the email message to automatically move to the Recoverable Items folder (if not already there). Emails in the Recoverable Items folder will not be permanently deleted but remain there for compliance purposes if they are subject to any retention settings to retain it, or they are under an eDiscovery hold for legal or investigative reasons.
+
 ## When a user leaves the organization 
 
-If a user leaves your organization and the user's mailbox is included in a retention policy, the mailbox becomes an inactive mailbox when the user's Microsoft 365 account is deleted. The contents of an inactive mailbox are still subject to any retention policy that was placed on the mailbox before it was made inactive, and the contents are available to an eDiscovery search. For more information, see [Inactive mailboxes in Exchange Online](inactive-mailboxes-in-office-365.md).
+If a user leaves your organization and the user's mailbox is included in a policy for retention, the mailbox becomes an inactive mailbox when the user's Microsoft 365 account is deleted. The contents of an inactive mailbox are still subject to any retention policy that was placed on the mailbox before it was made inactive, and the contents are available to an eDiscovery search. For more information, see [Inactive mailboxes in Exchange Online](inactive-mailboxes-in-office-365.md).
+
+When the retention settings no longer apply because the data is permanently deleted or the retention period has expired, the Exchange admin can now [delete the inactive mailbox](delete-an-inactive-mailbox.md). In this scenario, the inactive mailbox isn't automatically deleted.
 
 ## Configuration guidance
 

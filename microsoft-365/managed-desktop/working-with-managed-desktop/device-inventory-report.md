@@ -1,6 +1,6 @@
 ---
 title: Device inventory report
-description:  
+description:
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
@@ -38,6 +38,6 @@ In the **Devices** view, you can select the **Export all** tab to download a com
 - TPM version
 - Secure Boot Enabled
 - Primary Disk Type
-- Total Physical Memory 
+- Total Physical Memory
 
-![Devices view showing list of devices and related details. Check boxes near the top select filters for activity, registration status. Above that is a search box. Tabs at the top for registering new devices, refreshing the view, exporting errors, and exporting the data. ](../../media/mmd-devices-view.png)
+![Devices view showing list of devices and related details. Check boxes near the top select filters for activity, registration status. Above that is a search box. Tabs at the top for registering new devices, refreshing the view, exporting errors, and exporting the data.](../../media/mmd-devices-view.png)

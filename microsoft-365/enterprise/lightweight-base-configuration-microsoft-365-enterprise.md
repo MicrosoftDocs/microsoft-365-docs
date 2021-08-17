@@ -2,8 +2,8 @@
 title: "Lightweight base configuration"
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 11/14/2019
 audience: ITPro
@@ -95,29 +95,17 @@ $commonPW="<common user account password>"
 $PasswordProfile=New-Object -TypeName Microsoft.Open.AzureAD.Model.PasswordProfile
 $PasswordProfile.Password=$commonPW
 
-$userUPN= "user2@" + $orgName + ".onmicrosoft.com"
-New-AzureADUser -DisplayName "User 2" -GivenName User -SurName 2 -UserPrincipalName $userUPN -UsageLocation $loc -AccountEnabled $true -PasswordProfile $PasswordProfile -MailNickName "user2"
 $License = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicense
 $License.SkuId = (Get-AzureADSubscribedSku | Where-Object -Property SkuPartNumber -Value "ENTERPRISEPREMIUM" -EQ).SkuID
 $LicensesToAssign = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicenses
 $LicensesToAssign.AddLicenses = $License
-Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
 
-$userUPN= "user3@" + $orgName + ".onmicrosoft.com"
-New-AzureADUser -DisplayName "User 3" -GivenName User -SurName 3 -UserPrincipalName $userUPN -UsageLocation $loc -AccountEnabled $true -PasswordProfile $PasswordProfile -MailNickName "user3"
-$License = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicense
-$License.SkuId = (Get-AzureADSubscribedSku | Where-Object -Property SkuPartNumber -Value "ENTERPRISEPREMIUM" -EQ).SkuID
-$LicensesToAssign = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicenses
-$LicensesToAssign.AddLicenses = $License
-Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
-
-$userUPN= "user4@" + $orgName + ".onmicrosoft.com"
-New-AzureADUser -DisplayName "User 4" -GivenName User -SurName 4 -UserPrincipalName $userUPN -UsageLocation $loc -AccountEnabled $true -PasswordProfile $PasswordProfile -MailNickName "user4"
-$License = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicense
-$License.SkuId = (Get-AzureADSubscribedSku | Where-Object -Property SkuPartNumber -Value "ENTERPRISEPREMIUM" -EQ).SkuID
-$LicensesToAssign = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicenses
-$LicensesToAssign.AddLicenses = $License
-Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
+for($i=2;$i -le 4; $i++) {
+    $userUPN= "user$($i)@$($orgName).onmicrosoft.com"
+    New-AzureADUser -DisplayName "User $($i)" -GivenName User -SurName $i -UserPrincipalName $userUPN -UsageLocation $loc -AccountEnabled $true -PasswordProfile $PasswordProfile -MailNickName "user$($i)"
+    $userObjectID = (Get-AzureADUser -SearchString $userupn).ObjectID
+    Set-AzureADUserLicense -ObjectId $userObjectID -AssignedLicenses $LicensesToAssign
+}
 ```
 > [!NOTE]
 > The use of a common password here is for automation and ease of configuration for a test environment. Obviously, this is highly discouraged for production subscriptions. 

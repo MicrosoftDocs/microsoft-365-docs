@@ -27,7 +27,7 @@ Managing security and compliance is a partnership. You are responsible for prote
 
 Orient yourself to the information protection capabilities in the Information Protection for Office 365 poster. 
   
-[Deploy information protection for data privacy regulations with Microsoft 365](../solutions/information-protection-deploy.md?view=o365-worldwide)
+[Deploy information protection for data privacy regulations with Microsoft 365](../solutions/information-protection-deploy.md)
   
 ## Step 2: Check your Secure Score
 
