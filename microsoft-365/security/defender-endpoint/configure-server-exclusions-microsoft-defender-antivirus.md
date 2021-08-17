@@ -134,7 +134,7 @@ This section lists the default exclusions for all roles in Windows Server 2016 a
 - The Distributed File System Replication (DFSR) database and working folders. These folders are specified by the registry key `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\DFSR\Parameters\Replication Groups\GUID\Replica Set Configuration File`
 
   > [!NOTE]
-  > For custom locations, see [Opt out of automatic exclusions](#opt-out-of-automatic-exclusions).
+  > For custom locations, see [Opting out of automatic exclusions](#opting-out-of-automatic-exclusions).
 
   - `%systemdrive%\System Volume Information\DFSR\$db_normal$`
   - `%systemdrive%\System Volume Information\DFSR\FileIDTable_*`
