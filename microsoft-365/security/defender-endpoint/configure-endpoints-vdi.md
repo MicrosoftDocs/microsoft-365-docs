@@ -118,7 +118,7 @@ The following steps will guide you through onboarding VDI devices and will highl
 7. Use the search function by entering the device name and select **Device** as search type.
 
 
-## For downlevel SKUs
+## For downlevel SKUs (Windows Server 2008 R2/2012 R2/2016)
 
 > [!NOTE]
 > The following registry is relevant only when the aim is to achieve a 'Single entry for each device'.
