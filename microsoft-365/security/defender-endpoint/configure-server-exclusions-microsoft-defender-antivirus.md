@@ -24,17 +24,18 @@ ms.date: 08/17/2021
 **Applies to:**
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
+- Microsoft Defender Antivirus
 
 ## Summary
 
-This article provides an overview of exclusions for Microsoft Defender Antivirus on Windows Server 2016 or later. **In general, you shouldn't have to define exclusions for Microsoft Defender Antivirus.** Because Microsoft Defender Antivirus is built into Windows Server 2016 and later, some exclusions happen automatically. However, you can define custom exclusions. You can also opt out of automatic exclusions if necessary. 
+This article provides an overview of exclusions for Microsoft Defender Antivirus on Windows Server 2016 or later. (If you're using Windows 10, see [Configure and validate exclusions for Microsoft Defender Antivirus scans](configure-exclusions-microsoft-defender-antivirus.md).)**In general, you shouldn't have to define exclusions for Microsoft Defender Antivirus.** Because Microsoft Defender Antivirus is built into Windows Server 2016 and later, some exclusions happen automatically. However, you can define custom exclusions. You can also opt out of automatic exclusions if necessary. 
 
 This article includes the following sections: <br/><br/>
 
 
 | Section  | Description  |
 |---------|---------|
-| [Automatic exclusions on Windows Server 2016 or later](#automatic-exclusions-on-windows-server-2016-or-later)  | Lists the automatic exclusions |
+| [Automatic exclusions on Windows Server 2016 or later](#automatic-exclusions-on-windows-server-2016-or-later)  | Describes the two main types of automatic exclusions and includes a detailed list of automatic exclusions |
 | [Opting out of automatic exclusions](#opting-out-of-automatic-exclusions) | Includes important considerations and procedures describing how to opt out of automatic exclusions   |
 | [Defining custom exclusions](#defining-custom-exclusions) | Provides links to how-to information for defining custom exclusions |
 
