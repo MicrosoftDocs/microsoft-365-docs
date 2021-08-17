@@ -1,6 +1,6 @@
 ---
 title: Switch to Microsoft Defender for Endpoint - Onboard
-description: This is phase 3, Onboard, for migrating from a non-Microsoft solution to Microsoft Defender for Endpoint.
+description: Make the switch to Microsoft Defender for Endpoint. Onboard devices and then uninstall your non-Microsoft solution.
 keywords: migration, Microsoft Defender for Endpoint, edr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -21,7 +21,7 @@ ms.collection:
   - m365solution-symantecmigrate
 ms.custom: migrationguides
 ms.topic: article
-ms.date: 08/12/2021
+ms.date: 08/16/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ---
 
@@ -136,9 +136,9 @@ If at this point you have:
 - Onboarded your organization's devices to Defender for Endpoint, and 
 - Microsoft Defender Antivirus is installed and enabled, 
 
-Then your next step is to uninstall your non-Microsoft endpoint protection solution. 
+Then your next step is to uninstall your non-Microsoft antivirus, antimalware, and endpoint protection solution. When you uninstall your non-Microsoft solution, Microsoft Defender Antivirus switches from passive mode to active mode. In most cases, this happens automatically.
 
-To get help with this task, reach out to your solution provider's technical support team.
+To get help with uninstalling your non-Microsoft solution, contact their technical support team. 
 
 ## Make sure Defender for Endpoint is working correctly
 
