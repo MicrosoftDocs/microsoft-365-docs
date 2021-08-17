@@ -67,11 +67,7 @@ Privacy management in Microsoft 365 can help you handle these inquiries through 
 
 To learn more, see [Manage subject rights requests](privacy-management-subject-rights-requests.md).
 
-## How we evaluate your data
-
-Privacy management assesses your organization's data within the following scope.
-
-### Where privacy management identifies personal data
+## Where privacy management identifies personal data
 
 The privacy management solution for Microsoft 365 evaluates data and files stored by your organization in Microsoft 365’s cloud services:
 
@@ -82,7 +78,7 @@ The privacy management solution for Microsoft 365 evaluates data and files store
 
 Privacy management does not collect data beyond what is already collected in Microsoft 365, and will not make modifications to the data on its own. Also, since privacy management specifically evaluates data that your organization manages, any consumer accounts your employees or customers may have on these services will not be in scope.
 
-### How privacy management identifies items with personal data
+## How privacy management identifies items with personal data
 
 Privacy management utilizes the capabilities of Microsoft 365 to help you identify and tag sensitive items. This is done through the use of [sensitive information types (SIT)](sensitive-information-type-learn-about.md), trainable [classifiers](classifier-learn-about.md), and auto and manual application of [sensitivity labels](sensitivity-labels.md).
 
@@ -90,7 +86,7 @@ Sensitive information types (SIT) are the data types supported by Microsoft data
 
 For more information about how Microsoft 365 defines sensitive information, see [Learn about sensitive information types](sensitive-information-type-learn-about.md).
 
-### Additional resources
+## Additional resources
 
 For more information about how Microsoft approaches privacy and safeguards your data, see the following resources:
 

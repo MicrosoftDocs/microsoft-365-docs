@@ -24,7 +24,7 @@ In this article: learn how to set up **access to privacy management** for your o
 
 ## Who can access privacy management
 
-The public preview of privacy management is available within the Microsoft 365 compliance center and is available to organizations with E1, E3, and E5 enterprise licenses in Office 365 and Microsoft 365. When privacy management moves to general availability, organizations that used the public preview will need to obtain a new license.
+The public preview of privacy management is available within the Microsoft 365 compliance center and is available to organizations with E1, E3, and E5 enterprise licenses in Office 365 and Microsoft 365. Whoen privacy management moves to general availability, organizations that used the public preview will need to obtain a new license.
 
 For detailed licensing guidance, see [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection).
 
@@ -43,7 +43,7 @@ After obtaining your subscription, allow up to 30 minutes for it to activate. Th
 
 ### Accept privacy management terms
 
-When you first open privacy management, you will be asked to confirm that you agree to the terms and the personal data evaluation process ([learn more](privacy-management.md#how-we-evaluate-your-data)). You can review the provided links in full before proceeding. Once you agree, it may take up to 24 hours before privacy management starts providing insights about your organization’s data.
+When you first open privacy management, you will be asked to confirm that you agree to the terms and the personal data evaluation process ([learn more](privacy-management.md#where-privacy-management-identifies-personal-data)). You can review the provided links in full before proceeding. Once you agree, it may take up to 24 hours before privacy management starts providing insights about your organization’s data.
 
 If you don’t hold the required role to obtain the subscription or consent to the terms of using privacy management, you’ll be prompted to contact your global admin for assistance.
 
