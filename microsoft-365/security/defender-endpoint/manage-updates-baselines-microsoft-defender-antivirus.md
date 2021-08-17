@@ -16,7 +16,7 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 07/12/2021
+ms.date: 08/05/2021
 ---
 
 # Manage Microsoft Defender Antivirus updates and apply baselines
@@ -77,6 +77,24 @@ All our updates contain
 - integration improvements (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)).
 <br/>
 <details>
+<summary> July-2021 (Platform: 4.18.2107.4 | Engine: 1.1.18400.4)</summary>
+
+&ensp;Security intelligence update version: **1.345.13.0**  
+&ensp;Released: **August 5, 2021**  
+&ensp;Platform: **4.18.2107.4**  
+&ensp;Engine: **1.1.18400.4**  
+&ensp;Support phase: **Security and Critical Updates**
+    
+### What's new
+- Device control support added for Windows Portable Devices
+- Potentially unwanted applications (PUA) protection is turned on by default for consumers (See [Potentially unwanted apps will be blocked by default](https://support.microsoft.com/windows/potentially-unwanted-apps-will-be-blocked-by-default-b9f53cb9-7f1e-40bb-8c6b-a17e0ab6289e))
+- Scheduled scans for Group Policy Object managed systems will adhere to user configured scan time 
+- Improvements to the behavior monitoring engine
+
+### Known Issues
+No known issues  
+<br/>
+</details><details>
 <summary> June-2021 (Platform: 4.18.2106.5 | Engine: 1.1.18300.4)</summary>
 
 &ensp;Security intelligence update version: **1.343.17.0**  
@@ -110,14 +128,19 @@ No known issues
 ### Known Issues
 No known issues  
 <br/>
-</details><details>
+</details>
+
+### Previous version updates: Technical upgrade support only
+
+After a new package version is released, support for the previous two versions is reduced to technical support only. Versions older than that are listed in this section, and are provided for technical upgrade support only. 
+<details>
 <summary> April-2021 (Platform: 4.18.2104.14 | Engine: 1.1.18100.5)</summary>
 
 &ensp;Security intelligence update version: **1.337.2.0**  
 &ensp;Released: **April 26, 2021**  (Engine: 1.1.18100.6 released May 5, 2021)
 &ensp;Platform: **4.18.2104.14**  
 &ensp;Engine: **1.1.18100.5**  
-&ensp;Support phase: **Security and Critical Updates**
+&ensp;Support phase: **Technical upgrade support (only)**
     
 ### What's new
 - Additional behavior monitoring logic
@@ -128,12 +151,7 @@ No known issues
 ### Known Issues
 No known issues  
 <br/>
-</details>
-
-### Previous version updates: Technical upgrade support only
-
-After a new package version is released, support for the previous two versions is reduced to technical support only. Versions older than that are listed in this section, and are provided for technical upgrade support only. 
-<details>
+</details><details>
 <summary> March-2021 (Platform: 4.18.2103.7 | Engine: 1.1.18000.5)</summary>
 
 &ensp;Security intelligence update version: **1.335.36.0**  
@@ -492,6 +510,20 @@ We recommend updating your Windows 10 (Enterprise, Pro, and Home editions), Wind
 For more information, see [Microsoft Defender update for Windows operating system installation images](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images).
 
 <details>
+<summary>1.1.2108.01</summary>
+
+&ensp;Package version: **1.1.2108.01**    
+&ensp;Platform version: **4.18.2107.4**   
+&ensp;Engine version: **1.1.18300.4**  
+&ensp;Signature version: **1.343.2244.0**    
+    
+### Fixes
+- None
+
+### Additional information
+- None  
+<br/>
+</details><details>
 <summary>1.1.2107.02</summary>
 
 &ensp;Package version: **1.1.2107.02**    

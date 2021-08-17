@@ -18,7 +18,7 @@ f1.keywords: NOCSH
 
 # Step 1: Create a Test Base account
 
-If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/en-us/free/) before you begin.
+If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/) before you begin.
 
 ## Enter details for test base account
  
