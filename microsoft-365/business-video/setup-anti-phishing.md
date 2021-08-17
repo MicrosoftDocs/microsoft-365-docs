@@ -37,7 +37,7 @@ Phishing is a malicious attack where an email looks like it was sent from a fami
 1. Choose **Enable domains to protect** and select **Include the domains you own** and **Include custom domain**, then select **Manage custom domain(s)** to add a domain.
 1. Choose **Add trusted senders and domains**. Here you can add email addresses or domains that shouldn't be classified as an impersonation.
 1. Choose **Enable Mailbox intelligence**, and **Enable Intelligence for impersonation protection** to enable enhanced impersonation results based on each user's individual sender map.
-1. Select **Enable Spoof intelligence** to Choose how you want to filter email from senders who are spoofing domains.
+1. Select **Enable Spoof intelligence** to choose how you want to filter email from senders who are spoofing domains.
 1. Select **Save**, then **Close**.
 
     Your organization now has better protection from phishing threats.
