@@ -84,7 +84,7 @@ osVersion|string|Specific version of the operating system running on the device.
 rbacGroupName|string|The role-based access control (RBAC) group. If this device is not assigned to any RBAC group, the value will be "Unassigned." If the organization doesn't contain any RBAC groups, the value will be "None."
 rbacGroupId|string|The role-based access control (RBAC) group ID.
 recommendationReference|string|A reference to the recommendation ID related to this software.
-timestamp|string|Last time the configuration was seen on the device
+timestamp|string|Last time the configuration was seen on the device.
 
 ### 1.3 Properties (via files)
 
