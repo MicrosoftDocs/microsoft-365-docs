@@ -30,7 +30,7 @@ ms.date: 08/17/2021
 
 This article provides an overview of exclusions for Microsoft Defender Antivirus on Windows Server 2016 or later. 
 
-**In general, you shouldn't have to define exclusions in Microsoft Defender Antivirus for operating system files and server roles.** Because Microsoft Defender Antivirus is built into Windows Server 2016 and later, such exclusions happen automatically. However, you can define custom exclusions. You can also opt out of automatic exclusions if necessary. 
+Because Microsoft Defender Antivirus is built into Windows Server 2016 and later, exclusions for operating system files and server roles happen automatically. However, you can define custom exclusions. You can also opt out of automatic exclusions if necessary. 
 
 This article includes the following sections: <br/><br/>
 
