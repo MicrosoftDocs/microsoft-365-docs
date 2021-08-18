@@ -42,6 +42,8 @@ Admins can disable the trial at any point by going to the <> card.
 
 ## Availability
 
+The Microsoft 365 Compliance free trial is gradually rolling out to existing customers who meet specific criteria (including geography) who don't already have a Microsoft 365 E5 license package.
+
 ## Learn more about Compliance
 
 Wondering what you can experience in your free trial? A Microsoft 365 Compliance trial includes the following:
@@ -52,27 +54,27 @@ Wondering what you can experience in your free trial? A Microsoft 365 Compliance
 
 - **Audit**
    
-    Advanced Audit helps organizations to conduct forensic and compliance investigations by increasing audit log retention required to conduct an investigation, providing access to crucial events that help determine scope of compromise, and faster access to Office 365 Management Activity API. Learn more
+    Advanced Audit helps organizations to conduct forensic and compliance investigations by increasing audit log retention required to conduct an investigation, providing access to crucial events that help determine scope of compromise, and faster access to Office 365 Management Activity API. [Learn more](advanced-audit.md)
 
 - **Compliance Manager**
 
-    Compliance Manager can help you throughout your compliance journey, from taking inventory of your data protection risks to managing the complexities of implementing controls, staying current with regulations and certifications, and reporting to auditors. Learn more
+    Compliance Manager can help you throughout your compliance journey, from taking inventory of your data protection risks to managing the complexities of implementing controls, staying current with regulations and certifications, and reporting to auditors. [Learn more](compliance-manager.md)
 
 - **Data Loss Prevention**
 
-    To comply with business standards and industry regulations, organizations need to protect sensitive info to prevent its inadvertent disclosure. Set up data loss prevention policies to identify, monitor, and automatically protect sensitive info across Microsoft 365. Learn more
+    To comply with business standards and industry regulations, organizations need to protect sensitive info to prevent its inadvertent disclosure. Set up data loss prevention policies to identify, monitor, and automatically protect sensitive info across Microsoft 365. [Learn more](dlp-learn-about-dlp.md)
 
 - **eDiscovery**
 
-    Take advantage of an end-to-end workflow for preserving, collecting, analyzing, and exporting content that's responsive to your organization's internal and external investigations. Legal teams can also manage the entire legal hold notification process by communicating with custodians involved in a case. Learn more
+    Take advantage of an end-to-end workflow for preserving, collecting, analyzing, and exporting content that's responsive to your organization's internal and external investigations. Legal teams can also manage the entire legal hold notification process by communicating with custodians involved in a case. [Learn more](ediscovery.md)
 
 - **Information Protection**
 
-    Implement Microsoft Information Protection and sensitivity labels, to help you discover, classify, and protect your sensitive content wherever it lives or travels. Learn more
+    Implement Microsoft Information Protection and sensitivity labels, to help you discover, classify, and protect your sensitive content wherever it lives or travels. [Learn more](information-protection.md)
 
 - **Insider Risk Management**
 
-    Leverage artificial intelligence to help you quickly identify, triage, and remediate internal risks. Using logs from Microsoft 365 and Azure services, you can define policies that monitor for risk signals, then take remediation actions such as promoting user education or initiating an an investigation. Learn more
+    Leverage artificial intelligence to help you quickly identify, triage, and remediate internal risks. Using logs from Microsoft 365 and Azure services, you can define policies that monitor for risk signals, then take remediation actions such as promoting user education or initiating an an investigation. [Learn more](insider-risk-management-solution-overview.md)
 
 - **privacy management**
 
@@ -80,4 +82,4 @@ Wondering what you can experience in your free trial? A Microsoft 365 Compliance
 
 - **Records Management**
 
-    Use integrated Records Management features to  automate the retention schedule for organizational regulatory, legal, and business-critical records. Get full content lifecycle support, from creation to collaboration, record declaration, retention, and disposition. Learn more
+    Use integrated Records Management features to  automate the retention schedule for organizational regulatory, legal, and business-critical records. Get full content lifecycle support, from creation to collaboration, record declaration, retention, and disposition. [Learn more](records-management.md)
