@@ -19,6 +19,7 @@ ms.custom:
 - okr_smb
 - AdminSurgePortfolio
 - AdminTemplateSet
+- MAC deep links
 search.appverid:
 - MET150
 - MOE150

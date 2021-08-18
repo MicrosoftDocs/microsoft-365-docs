@@ -16,6 +16,7 @@ ms.collection:
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
+- MAC deep links
 search.appverid:
 - BCS160
 - MET150

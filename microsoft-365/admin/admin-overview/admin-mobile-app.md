@@ -18,6 +18,7 @@ ms.custom:
 - OKR_SMB_Videos
 - AdminSurgePortfolio
 - okr_smb
+- MAC deep links
 search.appverid:
 - BCS160
 - MET150

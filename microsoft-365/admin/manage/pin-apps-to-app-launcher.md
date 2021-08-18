@@ -11,6 +11,7 @@ ms.collection:
 - Adm_O365
 - M365-subscription-management
 ms.service: o365-administration
+ms.custom: MAC deep links
 localization_priority: Normal
 description: "As a global admin you can pin up to three apps to your users' app launcher."
 ---
