@@ -137,14 +137,16 @@ To configure your next-generation protection in Microsoft Endpoint Manager, foll
 
 ## Configure your attack surface reduction capabilities
 
-Attack surface reduction is all about reducing the places and ways your organization is open to attack. Defender for Endpoint Plan 1 (preview) includes several features and capabilities to help you reduce your attack surfaces across your endpoints. These features and capabilities include: 
+Attack surface reduction is all about reducing the places and ways your organization is open to attack. Defender for Endpoint Plan 1 (preview) includes several features and capabilities to help you reduce your attack surfaces across your endpoints. These features and capabilities are listed in the following table:
 
-- [Attack surface reduction rules](#attack-surface-reduction-rules)
-- [Ransomware mitigation](#ransomware-mitigation)
-- [Device control](#device-control)
-- [Network protection](#network-protection)
-- [Web protection](#web-protection)
-- [Network firewall](#network-firewall)
+| Feature/capability | Description |
+|:---|:---|
+| [Attack surface reduction rules](#attack-surface-reduction-rules) | Configure attack surface reduction rules to constrain software-based risky behaviors and help keep your organization safe. Attack surface reduction rules target certain software behaviors, such as<br/>- Launching executable files and scripts that attempt to download or run files <br/>- Running obfuscated or otherwise suspicious scripts <br/>- Performing behaviors that apps don't usually initiate during normal day-to-day work <br/><br/>Such software behaviors are sometimes seen in legitimate applications. However, these behaviors are often considered risky because they are commonly abused by attackers through malware.  |
+| [Ransomware mitigation](#ransomware-mitigation) | Set up ransomware mitigation by configuring controlled folder access, which helps protect your organization's valuable data from malicious apps and threats, such as ransomware. | 
+| [Device control](#device-control) | Configure device control settings for your organization to allow or block removable devices (such as USB drives). | 
+| [Network protection](#network-protection) | Set up network protection to prevent people in your organization from using applications that access dangerous domains or malicious content on the Internet. |
+| [Web protection](#web-protection) | Set up web threat protection to protect your organization's devices from phishing sites, exploit sites, and other untrusted or low-reputation sites. Set up web content filtering to track and regulate access to websites based on their content categories (such as Leisure, High bandwidth, Adult content, or Legal liability). |
+| [Network firewall](#network-firewall) | Configure your network firewall with rules that determine which network traffic is permitted to come into or go out from your organization's devices. |
 
 ### Attack surface reduction rules
 
