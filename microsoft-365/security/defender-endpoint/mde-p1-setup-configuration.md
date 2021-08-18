@@ -244,9 +244,7 @@ You can configure Defender for Endpoint to block or allow removable devices and 
 
 7. Repeat step 6 for each setting that you want to configure. Then choose **Next**.
 
-8. On the **Scope tags** tab, if your organization is using scope tags, choose **+ Select scope tags**, and then select the tags you want to use. (This step is optional.)
-
-   Then, choose **Next**. 
+8. On the **Scope tags** tab, if your organization is using scope tags, choose **+ Select scope tags**, and then select the tags you want to use. Then, choose **Next**. 
    
    To learn more about scope tags, see [Use role-based access control (RBAC) and scope tags for distributed IT](/mem/intune/fundamentals/scope-tags).
 
