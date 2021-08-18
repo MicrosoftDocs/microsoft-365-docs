@@ -13,7 +13,7 @@ ms.collection:
 - Adm_O365
 ms.custom: 
 - AdminSurgePortfolio
-- MAC deep links
+- admindeeplinkMAC
 description: "Monitor failed and delayed emailed messages sent to or from accounts who have high business impact."
 ---
 

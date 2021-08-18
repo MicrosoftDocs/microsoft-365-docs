@@ -11,7 +11,7 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.custom: 
 - AdminSurgePortfolio
-- MAC deep links
+- admindeeplinkMAC
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Learn how to transition from Microsoft Cloud Germany Exchange Online to the global Exchange Online service"
 ---

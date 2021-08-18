@@ -12,7 +12,7 @@ localization_priority: Priority
 ms.collection:
 - Adm_O365
 ms.custom:
-- MAC deep links
+- admindeeplinkMAC
 search.appverid:
 - BCS160
 - MET150
