@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: ITPro
 ms.topic: overview
-ms.date: 08/16/2021
+ms.date: 08/18/2021
 ms.prod: m365-security
 ms.technology: mde
 localization_priority: Normal
@@ -139,11 +139,46 @@ To configure your next-generation protection in Microsoft Endpoint Manager, foll
 
 Attack surface reduction is all about reducing the places and ways your organization is open to attack. Defender for Endpoint Plan 1 (preview) includes several features and capabilities to help you reduce your attack surfaces across your endpoints. These features and capabilities include: 
 
+- [Attack surface reduction rules](#attack-surface-reduction-rules)
 - [Ransomware mitigation](#ransomware-mitigation)
 - [Device control](#device-control)
 - [Network protection](#network-protection)
 - [Web protection](#web-protection)
 - [Network firewall](#network-firewall)
+
+### Attack surface reduction rules
+
+Attack surface reduction rules are available on devices running Windows. We recommend using Microsoft Endpoint Manager, as shown in the following image:
+
+:::image type="content" source="../../media/mde-p1/mem-asrpolicies.png" alt-text="Attack surface reduction rules in Microsoft Endpoint Manager":::
+
+1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and sign in.
+
+2. Choose **Endpoint security** > **Attack surface reduction** > **+ Create policy**.
+
+3. For **Platform**, select **Windows 10 and later**.
+
+4. For **Profile**, select **Attack surface reduction rules**, and then choose **Create**.
+
+5. On the **Basics** tab, specify a name and description for the policy, and then choose **Next**.
+
+6. On the **Configuration settings** tab, expand **Attack Surface Reduction Rules**.
+
+7. Specify settings for each rule, and then choose **Next**. 
+
+   > [!TIP]
+   > Need help? See [attack surface reduction rules](attack-surface-reduction.md) for more information about what each rule does.
+
+8. On the **Scope tags** tab, if you are using scope tags in your organization, specify scope tags for the policy you are creating. (To learn more, see [Scope tags](/mem/intune/fundamentals/scope-tags).)
+
+9. On the **Assignments** tab, specify the users and groups to whom your policy should be applied, and then choose **Next**. (To learn more about assignments, see [Assign user and device profiles in Microsoft Intune](/mem/intune/configuration/device-profile-assign).)
+
+10. On the **Review + create** tab, review the settings, and then choose **Create**.
+
+> [!TIP]
+> To learn more about attack surface reduction rules, see the following resources:
+> - [Use attack surface reduction rules to prevent malware infection](attack-surface-reduction.md)
+> - [Customize attack surface reduction rules](customize-attack-surface-reduction.md)
 
 ### Ransomware mitigation
 

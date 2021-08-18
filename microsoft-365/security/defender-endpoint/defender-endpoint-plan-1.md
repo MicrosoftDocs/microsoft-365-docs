@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: ITPro
 ms.topic: overview
-ms.date: 08/12/2021
+ms.date: 08/18/2021
 ms.prod: m365-security
 ms.technology: mde
 localization_priority: Normal
@@ -84,6 +84,7 @@ To learn more, see the following articles:
 
 Your organization’s attack surfaces are all the places where you’re vulnerable to cyberattacks. With Defender for Endpoint Plan 1 (preview), you can reduce your attack surfaces by protecting the devices and applications that your organization uses. The attack surface reduction capabilities that are included in Defender for Endpoint Plan 1 (preview) are described in the following sections.
 
+- [Attack surface reduction rules](#attack-surface-reduction-rules)
 - [Ransomware mitigation](#ransomware-mitigation)
 - [Device control](#device-control)
 - [Web protection](#web-protection)
@@ -92,8 +93,17 @@ Your organization’s attack surfaces are all the places where you’re vulnerab
 
 To learn more about attack surface reduction capabilities in Defender for Endpoint, see [Overview of attack surface reduction](overview-attack-surface-reduction.md).
 
-> [!NOTE]
-> Currently, Defender for Endpoint Plan 1 (preview) does not include central management and reporting for [attack surface reduction rules](attack-surface-reduction-rules.md). However, attack surface reduction rules are available for certain versions of Windows. To learn more, see [Requirements for attack surface reduction rules](enable-attack-surface-reduction.md#requirements).
+### Attack surface reduction rules
+
+Attack surface reduction rules target certain software behaviors that are considered risky. Such behaviors include:
+
+- Launching executable files and scripts that attempt to download or run other files
+- Running obfuscated or otherwise suspicious scripts
+- Initiating behaviors that apps don't usually initiate during normal work
+
+Legitimate business applications can exhibit such software behaviors; however, these behaviors are often considered risky because they are commonly abused by attackers through malware. Attack surface reduction rules can constrain risky behaviors and help keep your organization safe.
+
+To learn more, see [Use attack surface reduction rules to prevent malware infection](attack-surface-reduction.md).
 
 ### Ransomware mitigation
 
