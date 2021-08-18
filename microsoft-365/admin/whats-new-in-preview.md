@@ -21,7 +21,7 @@ description: "The Microsoft 365 admin center - learn about the features that wer
 ms.custom: 
 - MACDashWhatsNew
 - AdminSurgePortfolio
-- MAC deep links
+- admindeeplinkMAC
 ---
 
 # What's new in the Microsoft 365 admin center
