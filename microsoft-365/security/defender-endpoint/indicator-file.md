@@ -76,6 +76,9 @@ Files automatically blocked by an indicator won't show up in the file's Action c
 
 ## Private Preview: Alerting on file blocking actions
 
+> [!IMPORTANT]
+> Information in this section (**Public Preview for Automated investigation and remediation engine**) relates to prerelease product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+
 The current supported actions for file IOC are allow, audit and block and remediate.
 After choosing to block a file, you can choose whether triggering an alert is needed. In this way you will be able to control the number of alerts getting to your security operations teams and make sure only required alerts are raised.
 In Microsoft 365 Defender, go to Settings > Endpoints > Indicators > add new File hash
@@ -108,11 +111,11 @@ Choose if to Generate an alert on the file block event and define the alerts set
 
 You can query the response action activity in advance hunting. Below is a sample advance hunting query:
 
+```dos
 search in (DeviceFileEvents, DeviceProcessEvents, DeviceEvents, DeviceRegistryEvents, DeviceNetworkEvents, DeviceImageLoadEvents, DeviceLogonEvents)
 Timestamp > ago(30d)
 | where AdditionalFields contains "EUS:Win32/CustomEnterpriseBlock!cl"
-
-![Advanced hunting](images/indicators-advanced-hunting.png)
+```
 
 Below are additional thread names which can be used in the sample query from above:
 

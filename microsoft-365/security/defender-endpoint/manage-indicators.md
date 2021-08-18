@@ -99,7 +99,7 @@ The IoC API schema and the threat ids in advance hunting have been updated to al
 > For file indicators, raising an alert on block actions is optional.
 >
 > There is a limit of 15,000 indicators per tenant. File and certificate indicators do not block exclusions defined for Microsoft Defender Antivirus. Indicators are not supported in Microsoft Defender Antivirus when it is in passive mode.
-Note
+>
 > The format for importing new indicators (IoCs) has changed according to the new updated actions and alerts settings. We recommend downloading the new CSV format that can be found at the bottom of the import panel.
 
 ## Related topics
