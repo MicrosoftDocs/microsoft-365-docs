@@ -66,7 +66,7 @@ productDirectory:
           text: Plan and deploy a Teams voice solution
         - url: /MicrosoftTeams/business-voice/whats-business-voice
           text: Microsoft 365 Business Voice
-        - url: /SkypeForBusiness/hybrid/msft-telephony-solutions
+        - url: /MicrosoftTeams/cloud-voice-landing-page
           text: Microsoft telephony solutions
     # Card
     - title: Collaborate with your team
@@ -189,7 +189,7 @@ additionalContent:
             - text: Microsoft 365 admin center
               url: admin/index.yml
             - text: Microsoft 365 Business Premium
-              url: business/index.yml
+              url: admin/index.yml
             - text: Microsoft 365 for enterprise
               url: enterprise/index.yml
             - text: Microsoft 365 compliance
