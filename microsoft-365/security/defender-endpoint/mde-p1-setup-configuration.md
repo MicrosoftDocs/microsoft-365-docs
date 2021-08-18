@@ -168,7 +168,7 @@ Attack surface reduction rules are available on devices running Windows. We reco
 
 6. On the **Configuration settings** tab, expand **Attack Surface Reduction Rules**.
 
-7. Specify settings for each rule, and then choose **Next**. (Need help? See [attack surface reduction rules](attack-surface-reduction.md) for more information about what each rule does.) 
+7. Specify settings for each rule, and then choose **Next**. (For more information about what each rule does, see [Attack surface reduction rules](attack-surface-reduction.md).) 
 
 8. On the **Scope tags** tab, if your organization is using scope tags, choose **+ Select scope tags**, and then select the tags you want to use. Then, choose **Next**. 
    
@@ -300,12 +300,14 @@ With web protection, you can protect your organization's devices from web threat
 
 4. On the **Basics** tab, specify a name and description, and then choose **Next**.
 
-5. On the **Configuration settings** tab, expand **Web Protection**, specify your settings, and then choose **Next**.
+5. On the **Configuration settings** tab, expand **Web Protection**, specify the following settings, and then choose **Next**.
 
-   - Make sure **Enable network protection** is set to **Enabled**. Alternately, you can set network protection to **Audit mode** to see how it will work in your environment. In audit mode, network protection does not prevent users from visiting sites or domains, but it does track detections as events.
-   - To protect users from potential phishing scams and malicious software, turn **Require SmartScreen for Microsoft Edge Legacy** to **Yes**.
-   - To prevent users from bypassing warnings about potentially malicious sites, set **Block malicious site access** to **Yes**.
-   - To prevent users from bypassing the warnings and downloading unverified files, set **Block unverified file download** to **Yes**. 
+   | Setting | Recommendation |
+   |:---|:---|
+   | **Enable network protection** | Set to **Enabled**. Alternately, you can set network protection to **Audit mode** to see how it will work in your environment. In audit mode, network protection does not prevent users from visiting sites or domains, but it does track detections as events. |
+   | **Require SmartScreen for Microsoft Edge Legacy** | Set to **Yes**. Helps protect users from potential phishing scams and malicious software. |
+   | **Block malicious site access** | Set to **Yes**. Prevents users from bypassing warnings about potentially malicious sites. |
+   | **Block unverified file download** | Set to **Yes**. Prevents users from bypassing the warnings and downloading unverified files. |
 
 6. On the **Scope tags** tab, if your organization is using scope tags, choose **+ Select scope tags**, and then select the tags you want to use. Then, choose **Next**. 
    
