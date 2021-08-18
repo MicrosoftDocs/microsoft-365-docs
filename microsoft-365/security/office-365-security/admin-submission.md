@@ -1,5 +1,5 @@
 ---
-title: Admin submissions
+title: Manage submissions
 f1.keywords: 
   - NOCSH
 ms.author: siosulli
@@ -21,7 +21,7 @@ ms.technology: mdo
 ms.prod: m365-security
 ---
 
-# Use Admin Submission to submit suspected spam, phish, URLs, and files to Microsoft
+# Use the Submissions portal to submit suspected spam, phish, URLs, and files to Microsoft
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
