@@ -279,13 +279,13 @@ For more information about how retention policies and retention labels work toge
 
 When you create a retention policy or retention label policy for retention, you must choose between adaptive and static to define the scope of the policy.
 
-- An **adaptive scope** uses a query that you specify, so the membership isn't static but dynamic by periodically running the query against the attributes that you specify for the selected locations. You can use multiple adaptive scopes with a single policy.
+- An **adaptive scope** uses a query that you specify, so the membership isn't static but dynamic by running a daily query against the attributes that you specify for the selected locations. You can use multiple adaptive scopes with a single policy.
 
 - A **static scope** doesn't use queries and is limited in configuration to either all instances for the selected location, including specific instances, or excluding specific instances. These three choices are sometimes referred to as "org-wide", "includes", and "excludes" respectively.
 
 Advantages of using adaptive scopes:
 
-- No limits on the [number of items per policy](retention-limits.md#maximum-number-of-items-per-policy). Although adaptive scopes are still subject to the [maximum number of policies per tenant](retention-limits.md#maximum-number-of-policies-per-tenant) limitations, the more flexible configuration will likely result in far fewer policies.
+- No limits on the [number of items per policy](retention-limits.md#maximum-number-of-items-per-policy). Although adaptive policies are still subject to the [maximum number of policies per tenant](retention-limits.md#maximum-number-of-policies-per-tenant) limitations, the more flexible configuration will likely result in far fewer policies.
 
 - More powerful targeting for your retention requirements. For example, you can assign different retention settings to users according to their geographical location without the administrative overhead of creating and maintaining groups.
 

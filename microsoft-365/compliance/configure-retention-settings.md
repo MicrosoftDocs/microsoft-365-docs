@@ -37,7 +37,7 @@ For overview information about policies for retention and how retention works in
 
 ## Scopes - adaptive and static
 
-To understand the differences between the two different types of scopes that you must choose between, see [Adaptive or static policy scopes for retention](retention.md#adaptive-or-static-policy-scopes-for-retention). 
+If you are unfamiliar with adaptive and static scopes and to help you choose which scope to use when you configure a policy for retention, see [Adaptive or static policy scopes for retention](retention.md#adaptive-or-static-policy-scopes-for-retention). 
 
 Use the following information to help you configure the type of scope that you choose.
 
@@ -51,7 +51,7 @@ When you choose to use adaptive scopes, you are prompted to select what type of 
 | Adaptive scope type | Attributes supported |
 |:-----|:-----|
 |**Users** - applies to:  <br/> - Exchange mail <br/> - OneDrive accounts <br/> - Teams chats <br/> - Teams private channel messages <br/> - Yammer user messages| First Name <br/> Last name <br/>Display name <br/> Job Title <br/> Department <br/> Office <br/>Street Address <br/> City <br/>Zip or Post Code <br/> Country or region <br/> Email Address <br/> Aliases <br/> Exchange custom attributes: CustomAttribute1 - CustomAttribute15|
-|**SharePoint sites** - applies to:  <br/> - SharePoint sites <br/> - OneDrive accounts |SharePoint URL <br/> SharePoint managed properties |
+|**SharePoint sites** - applies to:  <br/> - SharePoint sites <br/> - OneDrive accounts |SharePoint URL <br/>SharePoint site name <br/> SharePoint custom property bag values (mapped to RefinableString00-RefinableString99) |
 |**Microsoft 365 Groups** - applies to:  <br/> - Microsoft 365 Groups <br/> - Teams channel messages <br/> - Yammer community messages |Name <br/> Description <br/> Email Address <br/> Aliases <br/> Custom exchange attributes: CustomAttribute1 - CustomAttribute15 |
 
 A single policy for retention can have one or many adaptive scopes.
@@ -68,25 +68,32 @@ Before you configure your adaptive scope, use the previous section to identify w
     - If you are not using records management:
        - **Solutions** > **Information governance** > **Adaptive scopes** tab > + **Create scope**
     
-    Don't immediately see your option? First select **Show all**. 
+    Don't immediately see your solution in the navigation pane? First select **Show all**. 
 
 2. Follow the prompts in the wizard to first select the type of scope, and then select the attributes you want to use to build the dynamic membership, and type in the attribute values.
     
-    For example, to configure an adaptive scope that will be used to identify users in Europe, first select **Users** as the scope type, and then select the **Country or region** attribute, and type in **Europe**. The wizard will query Azure AD and identify all users who have the value **Europe** specified for in their account for the **Country or region** attribute.
+    For example, to configure an adaptive scope that will be used to identify users in Europe, first select **Users** as the scope type, and then select the **Country or region** attribute, and type in **Europe**:
+    
+    ![Example adaptive scope configuration](../media/example-adaptive-scope.png)
+    
+    Once a day, this query will run against Azure AD and identify all users who have the value **Europe** specified for in their account for the **Country or region** attribute.
     
     > [!IMPORTANT]
-    > Because no matches might be a valid result, there's no validation that you typed in the value correctly.
+    > Because the query doesn't run immediately, there's no validation that you typed in the value correctly.
     
     Select **Add attribute** to use any combination of attributes that are supported for their scope type, together with logical operators to build queries. The operators supported are **is equal to**, **is not equal to**, **starts with** and **not starts with**, and you can group selected attributes.
     
     Alternatively, you can select **Advanced query builder** to write your own queries:
-    - For **User** scopes, use [OPATH filtering syntax](/powershell/exchange/recipient-filters). For example, to create a user scope that defines its membership by department, country, and state: `(Department -eq "HR") -and (CountryOrRegion -eq "United States") -and (State -eq "California")`
-    - For **Sites** and **Microsoft 365 Group** scopes, use Keyword Query Language (KQL). You might already be familiar with creating these queries because you've used them to [specify keywords or searchable properties to auto-apply retention labels](apply-retention-labels-automatically.md#auto-apply-labels-to-content-with-keywords-or-searchable-properties). If not, review the guidance and examples provided for that configuration.
+    - For **User** and **Microsoft 365 Group** scopes, use [OPATH filtering syntax](/powershell/exchange/recipient-filters). For example, to create a user scope that defines its membership by department, country, and state: `(Department -eq "HR") -and (CountryOrRegion -eq "United States") -and (State -eq "California")`:
+    
+    ![Example adaptive scope with advanced query](../media/example-adaptive-scope-advanced-query.png)
+    
+    - For **SharePoint sites** scopes, use Keyword Query Language (KQL). You might already be familiar with creating these queries because you've used them to [specify keywords or searchable properties to auto-apply retention labels](apply-retention-labels-automatically.md#auto-apply-labels-to-content-with-keywords-or-searchable-properties). If not, review the guidance and examples provided for that configuration.
 
-3. Create as many adaptive scopes as you need. You select one or more adaptive scopes when you create your policy for retention.
+3. Create as many adaptive scopes as you need. You can select one or more adaptive scopes when you create your policy for retention.
 
 > [!NOTE]
-> It can take a few days for the queries to fully populate and changes will not be immediate. Factor in this delay by waiting a few days before you add a new scope to a policy for retention.
+> It can take a few days for the queries to fully populate and changes will not be immediate. Factor in this delay by waiting a few days before you add a newly created scope to a policy for retention.
 
 To confirm the current membership and changes for an adaptive scope:
 
