@@ -51,14 +51,16 @@ Microsoft Managed Desktop requires certain license options in order to function.
 > [!TIP]
 > Your Microsoft Account Manager will help you review your current licenses and service plans and find the most efficient path for you to get any additional licenses or service plans you might need, while avoiding duplication.
 
-## Steps to get ready
+## Steps to get ready for Microsoft Managed Desktop
 
-1. Review [Prerequisites for Microsoft Managed Desktop](prerequisites.md). (This article)
-2. Use [Readiness assessment tools](readiness-assessment-tool.md).
-3. [Prerequisites for guest accounts](guest-accounts.md)
-4. [Network configuration for Microsoft Managed Desktop](network.md)
-5. [Prepare certificates and network profiles for Microsoft Managed Desktop](certs-wifi-lan.md)
-6. [Prepare on-premises resources access for Microsoft Managed Desktop](authentication.md)
-7. [Apps in Microsoft Managed Desktop](apps.md)
-8. [Prepare mapped drives for Microsoft Managed Desktop](mapped-drives.md)
-9. [Prepare printing resources for Microsoft Managed Desktop](printing.md)
+1. Review prerequisites (this article).
+2. Run [readiness assessment tools](readiness-assessment-tool.md).
+1. Buy [Company Portal](../get-started/company-portal.md).
+1. Review [prerequisites for guest accounts](guest-accounts.md).
+1. Check [network configuration](network.md).
+1. [Prepare certificates and network profiles](certs-wifi-lan.md).
+1. [Prepare user access to data](authentication.md).
+1. [Prepare apps](apps.md).
+1. [Prepare mapped drives](mapped-drives.md).
+1. [Prepare printing resources](printing.md).
+1. Address [device names](address-device-names.md).

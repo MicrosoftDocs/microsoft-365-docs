@@ -19,7 +19,7 @@ search.appverid:
 description: "Understand the settings you can configure in a retention policy or retention label policy to keep what you want and get rid of what you don't."
 ---
 
-# Configuring common settings for retention policies and retention label policies
+# Common settings for retention policies and retention label policies
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
@@ -133,7 +133,7 @@ Additionally, resource mailboxes and Microsoft 365 group mailboxes are not suppo
 
 If you do choose recipients to include or exclude, you can select distribution groups and email-enabled security groups as an efficient way to select multiple recipients instead of selecting them one-by-one. When you use this option, behind the scenes, these groups are automatically expanded at the time of configuration to select the mailboxes of the users in the group. If the membership of those groups later change, an existing retention policy isn't automatically updated.
 
-For detailed information about which mailbox items are included and excluded when you configure retention settings for Exchange, see [What's included for retention and deletion](retention-policies-exchange.md#whats-included-for-retention-and-deletion)
+For detailed information about which mailbox items are included and excluded when you configure retention settings for Exchange, see [What's included for retention and deletion](retention-policies-exchange.md#whats-included-for-retention-and-deletion).
 
 The **Exchange public folders** location applies retention settings to all public folders and can't be applied at the folder or mailbox level.
 

@@ -9,13 +9,13 @@ ms.sitesec: library
 ms.pagetype: security
 localization_priority: Normal
 audience: ITPro
-author: denisebmsft
-ms.author: deniseb
+author: jweston-1
+ms.author: v-jweston
 ms.reviewer: oogunrinde
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
-ms.date: 06/02/2021
+ms.date: 08/17/2021
 ---
 
 # Enable attack surface reduction rules
@@ -258,7 +258,7 @@ Example:
 
 1. Type **powershell** in the Start menu, right-click **Windows PowerShell** and select **Run as administrator**.
 
-2. Type the following cmdlet:
+2. Type one of the following cmdlets. (Refer to [Attack surface reduction rules](attack-surface-reduction-rules.md) for more details, such as rule ID.)
 
     ```PowerShell
     Set-MpPreference -AttackSurfaceReductionRules_Ids <rule ID> -AttackSurfaceReductionRules_Actions Enabled
@@ -316,7 +316,7 @@ Example:
 
 ## Related articles
 
-- [Reduce attack surfaces with attack surface reduction rules](attack-surface-reduction.md)
+- [Attack surface reduction rules](attack-surface-reduction-rules.md)
 
 - [Evaluate attack surface reduction](evaluate-attack-surface-reduction.md)
 
