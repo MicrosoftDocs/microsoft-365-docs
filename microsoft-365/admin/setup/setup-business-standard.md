@@ -61,7 +61,7 @@ To add, modify or remove domains you must be a global administrator. For more in
 
 ## Add users and assign licenses
 
-You can add users in the wizard, but you can also [add users later](../add-users/add-users.md) in the admin center.
+You can add users now, but you can also [add users later](../add-users/add-users.md) in the admin center.
 
 ### Add users in the wizard
 
@@ -162,3 +162,4 @@ Microsoft 365 doesn't include a public website for your business. If you want to
 
 [Create a website](../../business-video/create-web-site.md) (video)
 [Microsoft 365 for your business](../../business-video/index.yml) (link page)
+
