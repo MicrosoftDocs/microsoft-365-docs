@@ -220,7 +220,8 @@ All other related details are also shown, for example, submission date/time, sub
 
 ![Image of action center with information](images/action-center-details.png)
 
-## Related topic
+## See also
 
 - [Take response actions on a file](respond-file-alerts.md)
+- [Manual response actions in Microsoft Defender for Endpoint Plan 1 (preview)](defender-endpoint-plan-1.md#manual-response-actions)
 - [Report inaccuracy](/microsoft-365/security/defender-endpoint/tvm-security-recommendation#report-inaccuracy)
