@@ -362,6 +362,23 @@ Set-PhishSimOverridePolicy -Identity PhishSimOverridePolicy -Enabled $false
 
 For detailed syntax and parameter information, see [Set-PhishSimOverridePolicy](/powershell/module/exchange/set-phishsimoverridepolicy).
 
+### Use PowerShell to modify the simulation url settings
+
+To modify the phishing simulation override policy, use the following syntax:
+
+```powershell
+New-TenantAllowBlockListItems -ListType URL -ListSubType AdvancedDelivery -Entries "<url>"
+```
+For the URL syntax format, see [URL syntax for the Tenant Allow/Block List](/microsoft-365/security/office-365-security/tenant-allow-block-list#url-syntax-for-the-tenant-allowblock-list).
+
+This example adds a simulation URL for sub-domains of contoso.com.
+
+```powershell
+New-TenantAllowBlockListItems -ListType URL -ListSubType AdvancedDelivery -Entries "*.contoso.com"
+```
+
+For detailed syntax and parameter information, see [New-TenantAllowBlockListItems](/powershell/module/exchange/new-tenantallowblocklistitems).
+
 ### Use PowerShell to modify a phishing simulation override rule
 
 To modify the phishing simulation override rule, use the following syntax:
