@@ -69,6 +69,7 @@ Set-CalendarProcessing Cortana@$domain -DeleteNonCalendarItems $false
 
 Set-mailbox cortana@$domain -SchedulerAssistant:$true
 
+
 ```
 After running this "set" command on the Cortana Scheduler assistant mailbox, a new "PersistedCapability" is set on the mailbox to note that this mailbox is the "SchedulerAssistant".
 
@@ -108,11 +109,11 @@ The result should be
 
 ```PowerShell
 
-Get-mailbox | where {$_.PersistedCapabilities -Match "SchedulerAssistant"}
+Get-Mailbox -ResultSize Unlimited | where {$_.PersistedCapabilities -Match "SchedulerAssistant"}
 
 ```
 
->[mportant]
+>[Important]
 >It might take several hours for the Scheduler assistant mailbox to complete full provisioning to set the SchedulerAssistant capability.
 
 
