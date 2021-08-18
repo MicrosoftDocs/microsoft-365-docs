@@ -79,7 +79,7 @@ to save it**.
     Auto-Inflate (requires standard pricing and under features) appropriate for the
     load you are expecting.  
     For more information, see [Pricing - Event Hubs \| Microsoft
-    Azure](https://azure.microsoft.com/en-us/pricing/details/event-hubs/)
+    Azure](https://azure.microsoft.com/pricing/details/event-hubs/)
 
     >[!NOTE]
     > You can use an existing event hub, but the throughput and scaling are set at the namespace level so it is recommended to place an event hub in itsown namespace.

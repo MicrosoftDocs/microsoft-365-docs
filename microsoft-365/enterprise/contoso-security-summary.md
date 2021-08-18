@@ -1,9 +1,9 @@
 ---
 title: "Summary of Microsoft 365 for enterprise security for the Contoso Corporation"
-author: JoeDavies-MSFT
+author: kelleyvice-msft
 f1.keywords:
 - NOCSH
-ms.author: josephd
+ms.author: kvice
 manager: laurawi
 ms.date: 10/02/2019
 audience: ITPro

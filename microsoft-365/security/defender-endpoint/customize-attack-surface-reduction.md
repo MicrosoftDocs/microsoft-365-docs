@@ -8,8 +8,8 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 localization_priority: Normal
 audience: ITPro
-author: denisebmsft
-ms.author: deniseb
+author: jweston-1
+ms.author: v-jweston
 ms.reviewer: 
 manager: dansimp
 ms.technology: mde

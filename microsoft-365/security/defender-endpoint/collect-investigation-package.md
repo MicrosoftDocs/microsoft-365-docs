@@ -83,7 +83,7 @@ Comment|String|Comment to associate with the action. **Required**.
 
 ## Response
 
-If successful, this method returns 201 - Created response code and [Machine Action](machineaction.md) in the response body.
+If successful, this method returns 201 - Created response code and [Machine Action](machineaction.md) in the response body. If a collection is already running, this returns 400 Bad Request.
 
 ## Example
 
