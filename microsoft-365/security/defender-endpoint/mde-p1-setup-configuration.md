@@ -300,7 +300,7 @@ With web protection, you can protect your organization's devices from web threat
 
 4. On the **Basics** tab, specify a name and description, and then choose **Next**.
 
-5. On the **Configuration settings** tab, expand **Web Protection**, specify the following settings, and then choose **Next**.
+5. On the **Configuration settings** tab, expand **Web Protection**, specify the settings in the following table, and then choose **Next**. <br/><br/>
 
    | Setting | Recommendation |
    |:---|:---|
