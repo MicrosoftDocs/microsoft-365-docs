@@ -311,9 +311,7 @@ With web protection, you can protect your organization's devices from web threat
    - To prevent users from bypassing warnings about potentially malicious sites, set **Block malicious site access** to **Yes**.
    - To prevent users from bypassing the warnings and downloading unverified files, set **Block unverified file download** to **Yes**. 
 
-6. On the **Scope tags** tab, if your organization is using scope tags, choose **+ Select scope tags**, and then select the tags you want to use. (This step is optional.)
-
-   Then, choose **Next**. 
+6. On the **Scope tags** tab, if your organization is using scope tags, choose **+ Select scope tags**, and then select the tags you want to use. Then, choose **Next**. 
    
    To learn more about scope tags, see [Use role-based access control (RBAC) and scope tags for distributed IT](/mem/intune/fundamentals/scope-tags).
 
@@ -374,9 +372,7 @@ To configure basic firewall settings, follow these steps:
 
    Then choose **Next**.
 
-7. On the **Scope tags** tab, if your organization is using scope tags, choose **+ Select scope tags**, and then select the tags you want to use. (This step is optional.)
-
-   Then, choose **Next**. 
+7. On the **Scope tags** tab, if your organization is using scope tags, choose **+ Select scope tags**, and then select the tags you want to use. Then, choose **Next**. 
    
    To learn more about scope tags, see [Use role-based access control (RBAC) and scope tags for distributed IT](/mem/intune/fundamentals/scope-tags).
 
