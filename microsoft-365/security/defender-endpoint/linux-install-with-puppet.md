@@ -107,7 +107,7 @@ In order to preview new features and provide early feedback, it is recommended t
 > [!WARNING]
 > Switching the channel after the initial installation requires the product to be reinstalled. To switch the product channel: uninstall the existing package, re-configure your device to use the new channel, and follow the steps in this document to install the package from the new location.
 
-Note your distribution and version and identify the closest entry for it under `https://packages.microsoft.com/[distro]/`.
+Note your distribution and version and identify the closest entry for it under `https://packages.microsoft.com/config/[distro]/`.
 
 In the below commands, replace *[distro]* and *[version]* with the information you've identified:
 
@@ -128,7 +128,7 @@ $version = undef
     case $::osfamily {
         'Debian' : {
             apt::source { 'microsoftpackages' :
-                location => "https://packages.microsoft.com/${distro}/${version}/prod",
+                location => "https://packages.microsoft.com/config/${distro}/${version}/prod",
                 release  => $channel,
                 repos    => 'main',
                 key      => {
@@ -139,7 +139,7 @@ $version = undef
         }
         'RedHat' : {
             yumrepo { 'microsoftpackages' :
-                baseurl  => "https://packages.microsoft.com/${distro}/${version}/${channel}",
+                baseurl  => "https://packages.microsoft.com/config/${distro}/${version}/${channel}",
                 descr    => "packages-microsoft-com-prod-${channel}",
                 enabled  => 1,
                 gpgcheck => 1,

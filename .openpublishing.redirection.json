@@ -1,6 +1,121 @@
 {
   "redirections": [
     {
+      "source_path": "microsoft-365/business/help-users-connect-to-microsoft-365-business.md",
+      "redirect_url": "/microsoft-365/admin",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business/protect-work-files-on-devices.md",
+      "redirect_url": "/microsoft-365/admin",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business/configure-windows-10-devices.md",
+      "redirect_url": "/microsoft-365/admin",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business/support/transition-csp-subscription.md",
+      "redirect_url": "/microsoft-365/admin",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business/install-office-on-windows-10-during-setup.md",
+      "redirect_url": "/microsoft-365/admin",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business/what-subscription.md",
+      "redirect_url": "/microsoft-365/admin",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business/protect-work-files-on-lost-or-stolen-device.md",
+      "redirect_url": "/microsoft-365/admin",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business/help-users-install-office.md",
+      "redirect_url": "/microsoft-365/admin",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business/troubleshoot-autopilot-errors.md",
+      "redirect_url": "/microsoft-365/admin",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business/protect-data-with-windows-defender-exploit-guard-settings.md",
+      "redirect_url": "/microsoft-365/admin",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business/manage.md",
+      "redirect_url": "/microsoft-365/admin",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business/validate-protection-settings-on-windows-10-pcs.md",
+      "redirect_url": "/microsoft-365/admin/devices/protection-settings-for-windows-10-devices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business/move-files-to-onedrive.md",
+      "redirect_url": "/microsoft-365/business-video/files-to-onedrive",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business/sign-up.md",
+      "redirect_url": "/microsoft-365/business-video/sign-up",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business/microsoft-365-business-overview.md",
+      "redirect_url": "/microsoft-365/business-video/what-is-microsoft-365",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business/migrate-from-microsoft-365-business-to-microsoft-365-enterprise.md",
+      "redirect_url": "/microsoft-365/commerce/subscriptions/upgrade-to-different-plan",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business/migrate-to-microsoft-365-business.md",
+      "redirect_url": "/microsoft-365/commerce/subscriptions/upgrade-to-different-plan",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business/how-policies-protect-company-data.md",
+      "redirect_url": "/microsoft-365/admin/manage",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business/microsoft-365-business-start.md",
+      "redirect_url": "/microsoft-365/business-video/what-is-microsoft-365",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business/security-features.md",
+      "redirect_url": "/microsoft-365/admin/security-and-compliance/secure-your-business-data",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business/index.yml",
+      "redirect_url": "/microsoft-365/admin/index.yml",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business/upgrade-to-windows-pro-creators-update.md",
+      "redirect_url": "/microsoft-365/business-video/upgrade",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business/migrate-from-e3.md",
+      "redirect_url": "/microsoft-365/commerce/subscriptions/upgrade-to-different-plan",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/business/validate-settings-on-windows-10-pcs.md",
       "redirect_url": "/microsoft-365/admin/devices/validate-settings-on-windows-10-pcs",
       "redirect_document_id": true
@@ -873,6 +988,11 @@
     {
       "source_path": "microsoft-365/compliance/advanced-ediscovery-edrm.md",
       "redirect_url": "/microsoft-365/compliance/overview-ediscovery-20#advanced-ediscovery-alignment-with-the-electronic-discovery-reference-model",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/bulk-edit-content-searches.md",
+      "redirect_url": "/microsoft-365/compliance/content-search",
       "redirect_document_id": false
     },
     {
@@ -4389,6 +4509,11 @@
       "source_path": "microsoft-365/enterprise/isolation-in-microsoft-365-search.md",
       "redirect_url": "/compliance/assurance/assurance-microsoft-365-isolation-controls",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/device-control-report.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/machine-reports",
+      "redirect_document_id": true
     }
   ]
 }
