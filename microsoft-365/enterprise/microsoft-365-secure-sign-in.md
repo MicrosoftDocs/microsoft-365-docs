@@ -2,8 +2,8 @@
 title: "Secure user sign-ins to your Microsoft 365 tenant"
 f1.keywords:
 - NOCSH
-author: JoeDavies-MSFT
-ms.author: josephd
+author: kelleyvice-msft
+ms.author: kvice
 manager: laurawi
 ms.date: 09/30/2020
 audience: ITPro
