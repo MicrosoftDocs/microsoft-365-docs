@@ -77,9 +77,9 @@ The indicator action types supported by the API are:
 - Alert
 - Warn
 - BlockExecution
-- BlockRemdiation.
+- BlockRemdiation
 
-The API list of action types contains the new response actions along with the prior response actions (AlertAndBlock, and Alert). 
+The API list of action types contains the new response actions along with the prior response actions (AlertAndBlock, and Alert).
 Note: The prior response actions (AlertAndBlock, and Alert) will be removed once the feature has reached GAed. The estimated GA date with grace period is end of October 2021.  We advise updating any existing templates or scripts as soon as possible.
 
 ## Json representation
