@@ -41,7 +41,7 @@ The general setup and configuration process for Defender for Endpoint Plan 1 (pr
  
 ## Review the requirements
 
-The following table lists the basic requirements for Defender for Endpoint Plan 1 (preview):
+The following table lists the basic requirements for Defender for Endpoint Plan 1 (preview):<br/><br/>
 
 | Requirement | Description |
 |:---|:---|
@@ -107,7 +107,7 @@ The following table describes key roles to consider for Defender for Endpoint in
 
 ## Onboard to Defender for Endpoint
 
-When you’re ready to onboard your organization’s endpoints, you can choose from several methods, as listed in the following table: <br/>
+When you’re ready to onboard your organization’s endpoints, you can choose from several methods, as listed in the following table: <br/><br/>
 
 |Endpoint Operating System | Onboarding methods|
 |---|---|
@@ -139,7 +139,7 @@ To configure your next-generation protection in Microsoft Endpoint Manager, foll
 
 ## Configure your attack surface reduction capabilities
 
-Attack surface reduction is all about reducing the places and ways your organization is open to attack. Defender for Endpoint Plan 1 (preview) includes several features and capabilities to help you reduce your attack surfaces across your endpoints. These features and capabilities are listed in the following table:
+Attack surface reduction is all about reducing the places and ways your organization is open to attack. Defender for Endpoint Plan 1 (preview) includes several features and capabilities to help you reduce your attack surfaces across your endpoints. These features and capabilities are listed in the following table: <br/><br/>
 
 | Feature/capability | Description |
 |:---|:---|
