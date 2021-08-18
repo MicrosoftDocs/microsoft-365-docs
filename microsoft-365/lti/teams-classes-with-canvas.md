@@ -26,7 +26,7 @@ Microsoft Teams classes is a Learning Tools Interoperability (LTI) app that help
 > The current Class Teams LTI only supports syncing Canvas users with Microsoft Azure Active Directory (AAD) in a limited scope. 
 > - Your tenant must have an Microsoft Education license.
 > - Only a single Microsoft tenant can be used for mapping users between Canvas and Microsoft.
-> - You will have to turn off SDS before using the Class Teams LTI in order to avoid duplication of groups.
+> - You will have to turn off School Data Sync(SDS) before using the Class Teams LTI in order to avoid duplication of groups.
 
 ## Microsoft Office 365 Admin
 
