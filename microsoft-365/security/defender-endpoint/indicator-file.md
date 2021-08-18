@@ -98,11 +98,12 @@ Choose if to Generate an alert on the file block event and define the alerts set
 >- Typically, file blocks are enforced and removed within a couple of minutes, but can take upwards of 30 minutes.
 >
 >- If there are conflicting file IoC policies with the same enforcement type and target, the policy of the more secure hash will be applied. An SHA-256 file hash IoC policy will win over an SHA-1 file hash IoC policy, which will win over an MD5 file hash IoC policy if the hash types define the same file. This is always true regardless of the device group.
+>
 >  In all other cases, if conflicting file IoC policies with the same enforcement target are applied to all devices and to the device's group, then for a device, the policy in the device group will win.
 >
 > - If the EnableFileHashComputation group policy is disabled, the blocking accuracy of the file IoC is reduced. However, enabling `EnableFileHashComputation` may impact device performance. For example, copying large files from a network share onto your local device, especially over a VPN connection, might have an effect on device performance.
 >
->   For more information about the EnableFileHashComputation group policy, see [Defender CSP](/windows/client-management/mdm/defender-csp)
+>   For more information about the EnableFileHashComputation group policy, see [Defender CSP](/windows/client-management/mdm/defender-csp).
 
 ## Private Preview: Advanced hunting capabilities
 
@@ -111,13 +112,13 @@ Choose if to Generate an alert on the file block event and define the alerts set
 
 You can query the response action activity in advance hunting. Below is a sample advance hunting query:
 
-```dos
+```console
 search in (DeviceFileEvents, DeviceProcessEvents, DeviceEvents, DeviceRegistryEvents, DeviceNetworkEvents, DeviceImageLoadEvents, DeviceLogonEvents)
 Timestamp > ago(30d)
 | where AdditionalFields contains "EUS:Win32/CustomEnterpriseBlock!cl"
 ```
 
-For more information about advanced hunting, see: [Proactively hunt for threats with advanced hunting](advanced-hunting-overview.md)
+For more information about advanced hunting, see [Proactively hunt for threats with advanced hunting](advanced-hunting-overview.md).
 
 Below are additional thread names which can be used in the sample query from above:
 
