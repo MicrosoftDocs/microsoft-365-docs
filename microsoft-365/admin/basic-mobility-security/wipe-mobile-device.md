@@ -15,7 +15,7 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
-- MAC deep links
+- admindeeplinkMAC
 search.appverid:
 - MET150
 description: "Use built-in Basic Mobility and Security to remove information from enrolled devices."

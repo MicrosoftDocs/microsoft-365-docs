@@ -13,7 +13,7 @@ ms.collection:
 - M365-subscription-management
 ms.custom: 
 - AdminTemplateSet
-- MAC deep links
+- admindeeplinkMAC
 ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MET150

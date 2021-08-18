@@ -15,7 +15,7 @@ ms.collection:
 - Adm_NonTOC
 ms.custom: 
 - AdminSurgePortfolio
-- MAC deep links
+- admindeeplinkMAC
 search.appverid:
 - BCS160
 - MET150
