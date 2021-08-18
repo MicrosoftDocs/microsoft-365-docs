@@ -1,7 +1,7 @@
 ---
 title: "How to check Microsoft 365 service health"
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -47,7 +47,7 @@ If you are unable to sign in to the admin center, you can use the [service statu
 
 3. On the **Service health** page, the health state of each cloud service is shown in a table format.
 
-   ![View of current issues in service health](../media/service-health-all-services.png)
+   ![View of current issues in service health](../media/shd-landing-page.png)
 
 The **All services** tab (the default view) shows all services, their current health state, and any active incidents or advisories. An icon and status in the **Health** column indicate the state of each service.
 

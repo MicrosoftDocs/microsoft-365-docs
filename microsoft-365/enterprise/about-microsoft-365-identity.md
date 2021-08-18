@@ -1,7 +1,7 @@
 ---
 title: "Microsoft 365 identity models and Azure Active Directory"
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 audience: Admin
 ms.date: 09/30/2020
