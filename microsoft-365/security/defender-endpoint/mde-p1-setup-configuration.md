@@ -246,17 +246,17 @@ You can configure Defender for Endpoint to block or allow removable devices and 
 
    After you have specified a setting, choose **OK**. 
 
-   Repeat this step for each setting that you want to configure. Then choose **Next**.
+7. Repeat step 6 for each setting that you want to configure. Then choose **Next**.
 
-7. On the **Scope tags** tab, if your organization is using scope tags, choose **+ Select scope tags**, and then select the tags you want to use. (This step is optional.)
+8. On the **Scope tags** tab, if your organization is using scope tags, choose **+ Select scope tags**, and then select the tags you want to use. (This step is optional.)
 
    Then, choose **Next**. 
    
    To learn more about scope tags, see [Use role-based access control (RBAC) and scope tags for distributed IT](/mem/intune/fundamentals/scope-tags).
 
-8. On the **Assignments** tab, select **Add all users** and **+ Add all devices**, and then choose **Next**. (You can alternately specify specific groups of users or devices.)
+9. On the **Assignments** tab, select **Add all users** and **+ Add all devices**, and then choose **Next**. (You can alternately specify specific groups of users or devices.)
 
-9. On the **Review + create** tab, review the settings for your policy, and then choose **Create**. The policy will be applied to any endpoints that were onboarded to Defender for Endpoint shortly.
+10. On the **Review + create** tab, review the settings for your policy, and then choose **Create**. The policy will be applied to any endpoints that were onboarded to Defender for Endpoint shortly.
 
 > [!TIP]
 > For more information, see [How to control USB devices and other removable media using Microsoft Defender for Endpoint](control-usb-devices-using-intune.md).
