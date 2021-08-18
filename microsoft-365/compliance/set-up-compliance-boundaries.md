@@ -298,4 +298,4 @@ If the region specified in the search permissions filter doesn't exist in your o
   
 **What is the maximum number of search permissions filters that can be created in an organization?**
   
-There is no limit to the number of search permissions filters that can be created in an organization. However, search performance will be impacted when there are more than 100 search permissions filters. To keep the number of search permissions filters in your organization as small as possible, create filters that combine rules for Exchange, SharePoint, and OneDrive into a single search permissions filter whenever possible.
+There is a hard limit of 100 permissions filters. Using all 100 permissions filters may impact the performance of the search/queries in eDiscovery. To keep the number of search permissions filters in your organization as small as possible, create filters that combine rules for Exchange, SharePoint, and OneDrive into a single search permissions filter whenever possible.
