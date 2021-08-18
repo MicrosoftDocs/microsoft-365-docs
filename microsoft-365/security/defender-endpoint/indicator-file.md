@@ -104,7 +104,7 @@ Choose if to Generate an alert on the file block event and define the alerts set
 ## Private Preview: Advanced hunting capabilities
 
 > [!IMPORTANT]
-> Information in this section (**Public Preview for Automated investigation and remediation engine**) relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+> Information in this section (**Public Preview for Automated investigation and remediation engine**) relates to prerelease product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 You can query the response action activity in advance hunting. Below is a sample advance hunting query:
 
