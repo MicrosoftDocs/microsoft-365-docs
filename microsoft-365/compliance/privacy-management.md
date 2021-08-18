@@ -47,13 +47,13 @@ To learn more, see [Find and visualize your personal data](privacy-management-da
 
 ### Manage risk scenarios
 
-Complex data environments can present potentially risky scenarios for personal data. Privacy management provides easy ways to detect risks in the following areas and establish ongoing processes for handling these scenarios.
+Complex data environments can present potentially risky scenarios for personal data. Privacy management provides easy ways to detect risks in the following areas and establish ongoing processes for handling essential scenarios, such as:
 
 - **Overexposed personal data**: Companies may collect various types of information that can be used to identify individual customers or employees. Access rights to this data must be properly managed to protect privacy and prevent inappropriate use.
 - **Data transfers**: Transferring personal data between departments in your organization or across country or regional borders may increase the risk of exposure of data, or of stepping out of accordance with privacy regulations and laws.
 - **Data minimization**: Companies may collect excess information or keep it longer than necessary, resulting in storage of unused personal data. This data should be minimized to help prevent privacy risks.
 
-Microsoft 365 privacy management provides built-in templates for setting up data-handling policies in these areas. These policies can evaluate your data on an ongoing basis, alert you to potential issues, and help you remediate these issues. As a result, your employees can better follow best privacy practices and stay aware of recommended actions to take. The templates can either be used as provided or customized to meet your company’s specific needs.
+Microsoft 365 privacy management provides built-in templates for setting up data-handling policies tailored to these situations. Based on the policies you set, privacy management can evaluate your data on an ongoing basis, alert you to potential issues, and help you remediate these issues. As a result, your employees can better follow best privacy practices and stay aware of recommended actions to take. The templates can either be used as provided or customized to meet your company’s specific needs.
 
 To learn more, see [Create and manage policies](privacy-management-policies.md).
 
