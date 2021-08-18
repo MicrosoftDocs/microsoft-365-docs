@@ -97,6 +97,9 @@ Cert and File IoC policy handling conflict will follow the below order:
 
 If there are conflicting file IoC policies with the same enforcement type and target, the policy of the more secure (meaning longer) hash will be applied. For example, an SHA-256 file hash IoC policy will win over an MD5 file hash IoC policy if both hash types define the same file.
 
+> [!WARNING]
+> Policy conflict handling for files and certs differ from policy conflict handling for domains/URLs/IP addresses.
+
 Threat and vulnerability management's block vulnerable application features uses the file IoCs for enforcement and will follow the above conflict handling order.
 
 ### Examples
