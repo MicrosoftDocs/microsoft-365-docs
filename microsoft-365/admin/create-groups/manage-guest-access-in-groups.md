@@ -16,7 +16,7 @@ ms.collection:
 ms.custom: 
 - AdminSurgePortfolio
 - AdminTemplateSet
-- MAC deep links
+- admindeeplinkMAC
 search.appverid:
 - MET150
 - MOE150
