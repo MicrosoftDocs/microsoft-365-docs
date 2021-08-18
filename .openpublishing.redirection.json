@@ -101,8 +101,8 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "microsoft-365/business/",
-      "redirect_url": "/microsoft-365/admin/",
+      "source_path": "microsoft-365/business/index.yml",
+      "redirect_url": "/microsoft-365/admin/index.yml",
       "redirect_document_id": false
     },
     {
