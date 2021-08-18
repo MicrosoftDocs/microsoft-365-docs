@@ -44,14 +44,12 @@ To see device configuration reports, the account must have view reports permissi
 
 Make sure that the Windows 10 devices that you plan on deploying Printer Protection to meet these requirements.
 
-1. Join the Insider Program.
-
 1. The following Windows Updates are installed.
     - For Windows 1809: install Windows Update [KB5003217](https://support.microsoft.com/topic/may-20-2021-kb5003217-os-build-17763-1971-preview-08687c95-0740-421b-a205-54aa2c716b46)
     - For Windows 1909: install Windows Update [KB5003212](https://support.microsoft.com/topic/may-20-2021-kb5003212-os-build-18363-1593-preview-05381524-8380-4b30-b783-e330cad3d4a1)
     - For Windows 2004 or later
 
-1. If you're planning to deploy policy via Group Policy, the device must be MDATP joined; if you're planning to deploy policy via MEM, the device must be Intune joined.
+2. If you're planning to deploy policy via Group Policy, the device must be MDATP joined; if you're planning to deploy policy via MEM, the device must be Intune joined.
 
 ## Deploy Device Control Printer Protection policy
 
