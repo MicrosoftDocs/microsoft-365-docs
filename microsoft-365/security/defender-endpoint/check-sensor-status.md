@@ -55,5 +55,10 @@ You can also download the entire list in CSV format using the **Export** feature
 
 You can view the device details when you click on a misconfigured or inactive device.
 
-## Related topic
+## See also
 - [Fix unhealthy sensors in Defender for Endpoint](fix-unhealthy-sensors.md)
+- [Client analyzer overview](overview-client-analyzer.md)
+- [Download and run the client analyzer](download-client-analyzer.md)
+- [Run the client analyzer on Windows](run-analyzer-windows.md)
+- [Run the client analyzer on macOS or Linux](run-analyzer-macos-linux.md)
+- [Data collection for advanced troubleshooting on Windows](data-collection-analyzer.md)

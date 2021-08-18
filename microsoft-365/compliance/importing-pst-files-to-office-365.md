@@ -216,7 +216,7 @@ Additionally, to create import jobs in the Security & Compliance Center, one of 
 
 #### Where is drive shipping available?
 
-Drive shipping is currently available in the United States, Canada, Brazil, the United Kingdom, Europe, India, East Asia, Southeast Asia, Japan, Republic of Korea, and Australia. Drive shipping will be available in more regions soon.
+Drive shipping is currently available in the United States, Canada, Brazil, the United Kingdom, Europe, India, East Asia, Southeast Asia, Japan, Republic of Korea, Australia, and South Africa. Drive shipping will be available in more regions soon.
 
 > [!NOTE]
 > At this time, drive shipping to import PST files is not available in Germany and Switzerland. This FAQ will be updated when drive shipping is available in these countries.
