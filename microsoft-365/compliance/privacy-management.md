@@ -22,7 +22,7 @@ description: "Microsoft privacy management offers solutions for evaluating perso
 
 ## What is privacy management?
 
-Understanding the private data that your organization controls and maintaining it in a way that reduces risks for you, your customers, and your partners are at the heart of the privacy management discipline. Governments, industries, and other regulatory bodies have established privacy management laws and standards that must be followed, including practices around how data is stored and shared and the rights of individuals to control their own personal information. The best practices that organizations use to keep information safe and comply with these laws and standards are continually evolving. 
+Understanding the private data that your organization controls and maintaining it in a way that reduces risks for you, your customers, and your partners are at the heart of the privacy management discipline. Governments, industries, and other regulatory bodies have established privacy management laws and standards that must be followed, including practices around how data is stored and shared and the rights of individuals to control their own personal information. The best practices that organizations use to keep information safe and comply with these laws and standards are continually evolving.
 
 To help your organization meet these needs, Microsoft 365 privacy management provides solutions for managing personal data in your Microsoft 365 environment and gives your workers tools for efficient data review, issue remediation, and collaboration.
 
@@ -80,7 +80,7 @@ Privacy management does not collect data beyond what is already collected in Mic
 
 Privacy management utilizes the capabilities of Microsoft 365 to help you identify and tag sensitive items. This is done through the use of [sensitive information types (SIT)](sensitive-information-type-learn-about.md), trainable [classifiers](classifier-learn-about.md), and auto and manual application of [sensitivity labels](sensitivity-labels.md).
 
-Sensitive information types (SIT) are the data types supported by Microsoft data classification. For example, this includes personal information about individuals such as their name, address, or Social Security number.
+Sensitive information types (SIT) are the data types supported by Microsoft data classification. For example, these data types include personal information about individuals such as their name, address, or Social Security number.
 
 For more information about how Microsoft 365 defines sensitive information, see [Learn about sensitive information types](sensitive-information-type-learn-about.md).
 
