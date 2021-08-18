@@ -364,7 +364,7 @@ For detailed syntax and parameter information, see [Set-PhishSimOverridePolicy](
 
 ### Use PowerShell to modify the simulation url settings
 
-To modify the phishing simulation override policy, use the following syntax with the Exchange Online PowerShell module:
+To modify the phishing simulation override policy, use the following syntax:
 
 ```powershell
 New-TenantAllowBlockListItems -ListType URL -ListSubType AdvancedDelivery -Entries "<url>"
