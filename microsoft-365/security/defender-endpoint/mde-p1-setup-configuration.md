@@ -240,11 +240,7 @@ You can configure Defender for Endpoint to block or allow removable devices and 
 
 5. On the **Configuration settings** tab, select **All Settings**. Then in the search box, type `Removable` to see all the settings that pertain to removable devices.
 
-6. Select an item in the list, such as **All Removable Storage classes: Deny all access**, to open its flyout pane. Then, set it to **Enabled**, **Disabled**, or **Not Configured**. 
-
-   The flyout for each setting explains what happens when it is enabled, disabled, or not configured.
-
-   After you have specified a setting, choose **OK**. 
+6. Select an item in the list, such as **All Removable Storage classes: Deny all access**, to open its flyout pane. The flyout for each setting explains what happens when it is enabled, disabled, or not configured. Select a setting, and then choose **OK**. 
 
 7. Repeat step 6 for each setting that you want to configure. Then choose **Next**.
 
