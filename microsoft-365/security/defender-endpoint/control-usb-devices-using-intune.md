@@ -13,6 +13,7 @@ manager: dansimp
 audience: ITPro
 ms.topic: conceptual
 ms.technology: mde
+ROBOTS: NOINDEX
 ---
 
 # How to control USB devices and other removable media using Microsoft Defender for Endpoint
