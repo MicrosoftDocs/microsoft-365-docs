@@ -53,7 +53,7 @@ The following table lists the basic requirements for Defender for Endpoint Plan 
 
 ## Plan your deployment
 
-When you plan your deployment, you can choose from several different architectures and deployment methods. Every organization is unique, so you have several options to consider, as listed in the following table:
+When you plan your deployment, you can choose from several different architectures and deployment methods. Every organization is unique, so you have several options to consider, as listed in the following table: <br/><br/>
 
 | Method | Description |
 |:---|:---|
