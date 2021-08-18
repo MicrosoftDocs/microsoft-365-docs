@@ -114,7 +114,7 @@ Timestamp > ago(30d)
 
 ![Advanced hunting](images/indicators-advanced-hunting.png)
 
-Below are additional thread names which can be used in the sample query from above
+Below are additional thread names which can be used in the sample query from above:
 
 Files:
 
