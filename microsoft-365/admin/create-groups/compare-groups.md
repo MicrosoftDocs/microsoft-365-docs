@@ -17,6 +17,7 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 - AdminTemplateSet
+- MAC deep links
 search.appverid:
 - BCS160
 - MET150

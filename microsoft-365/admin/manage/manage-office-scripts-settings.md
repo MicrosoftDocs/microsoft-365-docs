@@ -16,6 +16,7 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
+- MAC deep links
 search.appverid: MET150
 description: "Learn how to manage Office Scripts settings for users in your organization."
 ---

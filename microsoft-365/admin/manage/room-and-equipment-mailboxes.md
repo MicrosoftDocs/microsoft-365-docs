@@ -17,6 +17,7 @@ ms.custom:
 - Lean
 - MSStore_Link
 - AdminSurgePortfolio
+- MAC deep links
 search.appverid:
 - MET150
 - MOE150
