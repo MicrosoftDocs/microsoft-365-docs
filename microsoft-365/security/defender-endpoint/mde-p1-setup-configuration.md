@@ -304,7 +304,7 @@ With web protection, you can protect your organization's devices from web threat
 
    | Setting | Recommendation |
    |:---|:---|
-   | **Enable network protection** | Set to **Enabled**. Alternately, you can set network protection to **Audit mode** to see how it will work in your environment. In audit mode, network protection does not prevent users from visiting sites or domains, but it does track detections as events. |
+   | **Enable network protection** | Set to **Enabled**. Prevents users from visiting malicious sites or domains. <br/><br/>Alternately, you can set network protection to **Audit mode** to see how it will work in your environment. In audit mode, network protection does not prevent users from visiting sites or domains, but it does track detections as events. |
    | **Require SmartScreen for Microsoft Edge Legacy** | Set to **Yes**. Helps protect users from potential phishing scams and malicious software. |
    | **Block malicious site access** | Set to **Yes**. Prevents users from bypassing warnings about potentially malicious sites. |
    | **Block unverified file download** | Set to **Yes**. Prevents users from bypassing the warnings and downloading unverified files. |
