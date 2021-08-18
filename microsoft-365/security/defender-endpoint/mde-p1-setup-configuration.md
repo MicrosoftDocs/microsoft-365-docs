@@ -59,7 +59,7 @@ When you plan your deployment, you can choose from several different architectur
 |:---|:---|
 | [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) (included in Microsoft Endpoint Manager) | Use Intune to manage endpoints in a cloud native environment |
 | [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) and [Configuration Manager](/mem/configmgr/core/understand/introduction) (included in Microsoft Endpoint Manager) | Use Intune and Configuration Manager to manage endpoints and workloads that span an on-premises and cloud environment |
-| [Configuration Manager](/mem/configmgr/core/understand/introduction) (included in Microsoft Endpoint Manager) | Use Configuration Manager to protect on-premises endpoints with the cloud-based power of Defender for Endpoint |
+| [Configuration Manager](/mem/configmgr/core/understand/introduction) | Use Configuration Manager to protect on-premises endpoints with the cloud-based power of Defender for Endpoint |
 | Local script downloaded from the Microsoft 365 Defender Portal | Use local scripts on endpoints to run a pilot or onboard just a few devices |
 
 All of these options are outlined in [Plan your Defender for Endpoint deployment](deployment-strategy.md). In addition, you can download the following poster: 
