@@ -170,9 +170,7 @@ Attack surface reduction rules are available on devices running Windows. We reco
 
 7. Specify settings for each rule, and then choose **Next**. (Need help? See [attack surface reduction rules](attack-surface-reduction.md) for more information about what each rule does.) 
 
-8. On the **Scope tags** tab, if your organization is using scope tags, choose **+ Select scope tags**, and then select the tags you want to use. (This step is optional.)
-
-   Then, choose **Next**. 
+8. On the **Scope tags** tab, if your organization is using scope tags, choose **+ Select scope tags**, and then select the tags you want to use. Then, choose **Next**. 
    
    To learn more about scope tags, see [Use role-based access control (RBAC) and scope tags for distributed IT](/mem/intune/fundamentals/scope-tags).
 
@@ -212,9 +210,7 @@ We recommend using Microsoft Endpoint Manager to configure controlled folder acc
 
    Then choose **Next**.
 
-7. On the **Scope tags** tab, if your organization is using scope tags, choose **+ Select scope tags**, and then select the tags you want to use. (This step is optional.)
-
-   Then, choose **Next**. 
+7. On the **Scope tags** tab, if your organization is using scope tags, choose **+ Select scope tags**, and then select the tags you want to use. Then, choose **Next**. 
    
    To learn more about scope tags, see [Use role-based access control (RBAC) and scope tags for distributed IT](/mem/intune/fundamentals/scope-tags).
 
