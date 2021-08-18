@@ -26,11 +26,11 @@ This article describes how to set up and configure Defender for Endpoint Plan 1 
 
 :::image type="content" source="images/mde-p1-deploymentflow.png" alt-text="Setup and deployment flow for Microsoft Defender for Endpoint Plan 1":::
 
-The general setup and configuration process for Defender for Endpoint Plan 1 (preview) is as follows:
+The general setup and configuration process for Defender for Endpoint Plan 1 (preview) is as follows: <br/><br/>
 
 
 | Number  | Step  | Description  |
-|---------|---------|---------|
+|:---------:|:---------|:---------|
 | 1 | [Review the requirements](#review-the-requirements)  | Lists licensing, browser, operating system, and datacenter requirements   |
 | 2 | [Plan your deployment](#plan-your-deployment) | Lists several deployment methods to consider and includes links to more resources to help you decide which method to use  |
 | 3 | [Set up your tenant environment](#set-up-your-tenant-environment) | Lists tasks for setting up your tenant environment |
