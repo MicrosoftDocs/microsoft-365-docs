@@ -56,7 +56,9 @@ Runs a sequence of live response commands on a device
 
 5.  Live response commands cannot be queued up and can only be executed one at a time. 
 
-6.  Multiple live response commands can be run on a single API call. However, when a live response command fails all the following actions will not be
+6.  If the machine that you are trying to run this API call is in an RBAC device group that does not have an automated remediation level assigned to it, you'll need to at least enable the minimum Remediation Level for a given Device Group.
+
+7.  Multiple live response commands can be run on a single API call. However, when a live response command fails all the subsequent actions will not be
     executed.
 
 ## Minimum Requirements
