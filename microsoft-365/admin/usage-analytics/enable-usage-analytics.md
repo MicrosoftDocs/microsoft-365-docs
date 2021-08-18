@@ -27,7 +27,7 @@ description: "Learn how to start collecting data for your tenant by using the Mi
 
 # Enable Microsoft 365 usage analytics
 
-Microsoft 365 usage analytics is not yet available for Microsoft 365 US Government Community.
+To enable Microsoft 365 usage analytics in a Microsoft 365 US Government Community Cloud (GCC) tenant, see [Connect to Microsoft 365 Government Community Cloud (GCC) data with Usage Analytics](connect-to-gcc-data-with-usage-analytics.md).
 
 ## Before you begin
 
