@@ -44,7 +44,7 @@ Microsoft recommends [a layered approach to securing removable media](https://ak
 You can view plug and play connected events in Microsoft Defender for Endpoint advanced hunting to identify suspicious usage activity or perform internal investigations.
 For examples of Defender for Endpoint advanced hunting queries, see the [Microsoft Defender for Endpoint hunting queries GitHub repo](https://github.com/Microsoft/WindowsDefenderATP-Hunting-Queries).
 
-Sample Power BI report templates are available for Microsoft Defender for Endpoint that you can use for Advanced hunting queries. With these sample templates, including one for device control, you can integrate the power of Advanced hunting into Power BI. See the [GitHub repository for PowerBI templates](https://github.com/microsoft/MDATP-PowerBI-Templates) for more information. See [Create custom reports using Power BI](/microsoft-365/security/defender-endpoint/api-power-bi) to learn more about Power BI integration.
+Sample Power BI report templates are available for Microsoft Defender for Endpoint that you can use for Advanced hunting queries. With these sample templates, including one for device control, you can integrate the power of Advanced hunting into Power BI. See the [GitHub repository for Power BI templates](https://github.com/microsoft/MDATP-PowerBI-Templates) for more information. See [Create custom reports using Power BI](/microsoft-365/security/defender-endpoint/api-power-bi) to learn more about Power BI integration.
 
 ## Allow or block removable devices
 The following table describes the ways Microsoft Defender for Endpoint can allow or block removable devices based on granular configuration.
@@ -360,6 +360,6 @@ For example, using either approach, you can automatically have the Microsoft Def
 - [Defender/AllowFullScanRemovableDriveScanning](/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanremovabledrivescanning)
 - [Policy/DeviceInstallation CSP](/windows/client-management/mdm/policy-csp-deviceinstallation)
 - [Perform a custom scan of a removable device](/samples/browse/?redirectedfrom=TechNet-Gallery)
-- [Device Control PowerBI Template for custom reporting](https://github.com/microsoft/MDATP-PowerBI-Templates)
+- [Device Control Power BI Template for custom reporting](https://github.com/microsoft/MDATP-PowerBI-Templates)
 - [BitLocker](/windows/security/information-protection/bitlocker/bitlocker-overview.md) 
 - [Windows Information Protection](/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure.md)
