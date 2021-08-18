@@ -28,7 +28,7 @@ There are a couple of ways to get Microsoft 365 Business Standard:
 
 ## Before you begin
 
-Check out [Microsoft 365 for business](https://www.microsoft.com/microsoft-365/business).
+Once you complete the steps to sign up for Microsoft 365 Check out [Microsoft 365 for business](https://www.microsoft.com/microsoft-365/business).
 
 ## Sign up steps
 
@@ -97,4 +97,3 @@ In this scenario, you want to add an existing domain you already own or buy a ne
 ## Related articles
 
 [Set up Microsoft 365 Business Premium in the setup wizard](../../business/set-up.md)
-

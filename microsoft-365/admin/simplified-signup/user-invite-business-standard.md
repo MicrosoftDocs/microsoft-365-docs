@@ -16,7 +16,7 @@ ms.custom:
 description: "Set up your business email account in Microsoft 365"
 ---
 
-# Invite users to Microsoft 365 Business Standard
+# Accept invite to Microsoft 365 Business Standard (User)
 
 As the admin of a Microsoft 365 Business Standard subscription, you can invite your colleagues and coworkers to share and use subscriptions.
 
