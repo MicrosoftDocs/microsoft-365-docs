@@ -22,6 +22,7 @@ ms.custom:
 - seo-marvel-may2020
 - AdminSurgePortfolio
 - AdminTemplateSet
+- MAC deep links
 search.appverid:
 - BCS160
 - MET150

@@ -75,7 +75,7 @@ If you receive this error, we recommend that you verify the locations that faile
 
 ## Error/issue: File not found
 
-When running an eDiscovery search that includes SharePoint Online and One Drive For Business locations, you may receive the error `File Not Found` although the file is located on the site. This error will be in the export warnings and errors.csv or skipped items.csv. This may occur if the file can't be found on the site or if the index is out of date. Here's the text of an actual error (with emphasis added).
+When running an eDiscovery search that includes SharePoint Online and OneDrive for Business locations, you may receive the error `File Not Found` although the file is located on the site. This error will be in the export warnings and errors.csv or skipped items.csv. This may occur if the file can't be found on the site or if the index is out of date. Here's the text of an actual error (with emphasis added).
 
 > 28.06.2019 10:02:19_FailedToExportItem_Failed to download content. Additional diagnostic info : Microsoft.Office.Compliance.EDiscovery.ExportWorker.Exceptions.ContentDownloadTemporaryFailure: Failed to download from content 6ea52149-91cd-4965-b5bb-82ca6a3ec9be of type Document. Correlation Id: 3bd84722-937b-4c23-b61b-08d6fba9ec32. ServerErrorCode: -2147024894 ---> Microsoft.SharePoint.Client.ServerException: ***File Not Found***. at Microsoft.SharePoint.Client.ClientRequest.ProcessResponseStream(Stream responseStream) at Microsoft.SharePoint.Client.ClientRequest.ProcessResponse()
 --- End of inner exception stack trace ---
@@ -88,7 +88,7 @@ When running an eDiscovery search that includes SharePoint Online and One Drive 
 
 ## Error/issue: This file wasn't exported because it doesn't exist anymore. The file was included in the count of estimated search results because it's still listed in the index. The file will eventually be removed from the index, and won't cause an error in the future.
 
-You may see that error when running an eDiscovery search that includes SharePoint Online and One Drive For Business locations. eDiscovery relies on the SPO index to identify the file locations. If the file was deleted but the SPO index was not yet updated this error may occur.
+You may see that error when running an eDiscovery search that includes SharePoint Online and OneDrive for Business locations. eDiscovery relies on the SPO index to identify the file locations. If the file was deleted but the SPO index was not yet updated this error may occur.
 
 ### Resolution 
 Open the SPO location and verify that this file indeed is not there.
@@ -97,8 +97,7 @@ Suggested solution is to manually reindex the site, or wait until the site reind
 
 ## Error/issue: This search result was not downloaded as it is a folder or other artifact that can't be downloaded by itself, any items inside the folder or library will be downloaded.
 
-You may see that error when running an eDiscovery search that includes SharePoint Online and One Drive For Business locations. It means that we were going to try to export the item reported in the index, but it turned out to be a folder so we did not export it. As mentioned in the error, we don't export folder items but we do export their contents.
-
+You may see that error when running an eDiscovery search that includes SharePoint Online and OneDrive for Business locations. It means that we were going to try and export the item reported in the index, but it turned out to be a folder so we did not export it. As mentioned in the error, we don't export folder items but we do export their contents.
 
 ## Error/issue: Search fails because recipient is not found
 
