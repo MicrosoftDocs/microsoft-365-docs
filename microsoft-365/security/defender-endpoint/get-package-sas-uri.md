@@ -47,7 +47,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 Permission type|Permission|Permission display name
 :---|:---|:---
-Application|Machine.CollectForensics|'Collect forensics'
+Application|Machine.Read.All|''Read all machine profiles''
+Application|"Machine.ReadWrite.All|'Read and write all machine information'
 Delegated (work or school account)|Machine.CollectForensics|'Collect forensics'
 
 > [!NOTE]
