@@ -131,7 +131,7 @@ Download Microsoft 365 apps by following the steps in this article.
 
 4. Open Teams, select your profile icon, and then **Add work or school account**. Follow the steps to add your new account to Teams. Select **I'm done** when Teams is set up.
 
-## Next steps
+<!--## Next steps
 
 ## Accept a new invitation to change your personal email account to a business email account
 
@@ -149,5 +149,5 @@ Your email looks like this to set up your business user account. When you get th
 
 1. On the Review permissions page, choose **Accept**.
 
-1. On the Welcome to Microsoft 365 page, you can download Office desktop and mobile apps, and set up OneDrive.
+1. On the Welcome to Microsoft 365 page, you can download Office desktop and mobile apps, and set up OneDrive.-->
 
