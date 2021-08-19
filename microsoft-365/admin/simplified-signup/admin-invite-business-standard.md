@@ -13,12 +13,12 @@ ms.collection:
 - Adm_TOC
 ms.custom: 
 - AdminSurgePortfolio
-description: "Set up your business email account in Microsoft 365"
+description: "Invite users to join Microsoft 365 Business Standard organization"
 ---
 
 # Invite users to Microsoft 365 Business Standard (Admin)
 
-As the admin of a Microsoft 365 Business Standard subscription, you can invite your colleagues and coworkers to share and use your Microsoft 365 for business subscription. When you invite your colleagues and coworkers to your subscription, you share all the features and services: 
+As the admin of a Microsoft 365 Business Standard subscription, you can invite your colleagues and coworkers to share and use your Microsoft 365 for business subscription. When you invite your colleagues and coworkers to your subscription, you share all the features and services:
 
 - Get desktop versions of Office apps, including Outlook, Word, Excel, PowerPoint, and OneNote (plus Access and Publisher for PC only).
 - Host email with a 50 GB mailbox and custom email domain.
@@ -35,8 +35,10 @@ As the admin of a Microsoft 365 Business Standard subscription, you can invite y
 
 ## Next steps
 
-
+Follow up with your users and make sure they got the invite you sent about sharing your Microsoft 365 Business Standard subscription.
 
 ## Related content
+
+[Set up Microsoft 365 Business Standard](../setup/setup-business-standard.md)
 
 [Accept invite to Microsoft 365 Business Standard (User)](user-invite-business-standard.md)

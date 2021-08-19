@@ -75,24 +75,17 @@ In this scenario, you want to add an existing domain you already own or buy a ne
 
 ### What is the difference between signing up with my existing email vs creating a new business email?
 
-
 ### Do I have access to everything if I choose one option over the other?
-
 
 ### What is a business email and what are the advantages to setting one up?
 
-
 ### Why do I need to verify my domain to create a business email?
-
 
 ### Is there a benefit to paying monthly vs annually?
 
-
 ### How does recurring billing work?
 
-
 ### What if I want to change my business name in future, how do I do that?
-
 
 ## Related articles
 

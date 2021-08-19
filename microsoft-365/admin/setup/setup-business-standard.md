@@ -112,6 +112,8 @@ To set up services, you have to update some records at your DNS host or domain r
 
 ## Finish setting up
 
+Once you've 
+
 ### Step: Set up Outlook for email
 
 1. On the Windows Start menu, search for Outlook, and select it.
