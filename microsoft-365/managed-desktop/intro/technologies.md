@@ -30,7 +30,7 @@ Microsoft 365 Apps for enterprise (64-bit) | These Office applications will be s
 OneDrive |Azure Active Directory Single Sign On is enabled for users when they first sign in to OneDrive.<br><br>Known Folder Redirection for "Desktop", "Document", and "Pictures" folders is included; enabled and configured by Microsoft Managed Desktop.
 Store Apps | Microsoft Sway and Power BI aren't shipped with the device. These apps are available for download from Microsoft Store.
 Win32 Applications | Teams isn't shipped with the device, but is packaged and provided by Microsoft for Microsoft Managed Desktop devices. Azure Information Protection Client isn't shipped with the device, but you can have it packaged for deployment.
-Web Applications | Yammer, Office in a browser, Delve, Flow, StaffHub, PowerApps, and Planner aren't shipped with the device. Users can access the web version of these applications with a browser.
+Web Applications | Yammer, Office in a browser, Delve, Flow, StaffHub, Power Apps, and Planner aren't shipped with the device. Users can access the web version of these applications with a browser.
 
 ## Windows 10 Enterprise E5 or E3 with Microsoft Defender for Endpoint
 
