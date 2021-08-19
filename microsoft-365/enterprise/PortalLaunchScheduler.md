@@ -111,6 +111,9 @@ Formerly, portal launches could only be scheduled through SharePoint PowerShell.
 
 7. Determine who needs to view the site right away and enter their information into the **Users exempt from waves** field. These users are excluded from waves and will not be redirected before, during, or after the launch.
 
+    >[!NOTE]
+    > Up to 50 distinct users or security groups max can be added. Use security groups when you need more than 50 individuals to get access to the portal before the waves start launching. 
+
 8.	Confirm portal launch details and select **Schedule**. Once the launch has been scheduled, any changes to the SharePoint portal home page will need to receive a healthy diagnostic result before the portal launch will resume.
 
 ### Launch portal with over 100k users
