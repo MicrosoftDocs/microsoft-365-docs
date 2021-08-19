@@ -13,7 +13,9 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom: 
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
@@ -148,7 +150,6 @@ You can only upgrade cloud-managed, simple, non-nested distribution lists. The t
 |Security groups  <br/> |No  <br/> |
 |Dynamic Distribution lists  <br/> |No  <br/> |
 |Distribution lists that were converted to **RoomLists**  <br/> |No  <br/> |
-|Distribution lists where **MemberJoinRestriction** and/or **MemberDepartRestriction** is **Closed**  <br/> |No  <br/> |
 
 ### Check which DLs are eligible for upgrade
 

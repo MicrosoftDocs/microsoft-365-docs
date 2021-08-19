@@ -34,6 +34,13 @@ The highly sensitive tier offers the following additional protections over the b
 - Only team owners can create private channels.
 - Access requests for the associated SharePoint site are turned off.
 
+## Video demonstration
+
+Watch this video for a walkthrough of the procedures described in this article.
+<br>
+<br>
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4NzI7]
+
 ## Guest sharing
 
 Depending on the nature of your business, you may or may not want to enable guest sharing for teams that contain highly sensitive data. If you do plan to collaborate with people outside your organization in the team, we recommend enabling guest sharing. Microsoft 365 includes a variety of security and compliance features to help you share sensitive content securely. This is generally a more secure option than emailing content directly to people outside your organization.

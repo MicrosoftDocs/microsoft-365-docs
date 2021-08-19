@@ -29,6 +29,13 @@ In this article, we look at setting up a team for a sensitive level of protectio
 - A more restrictive default sharing link type
 - Only team owners can create private channels.
 
+## Video demonstration
+
+Watch this video for a walkthrough of the procedures described in this article.
+<br>
+<br>
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4NMS6]
+
 ## Guest sharing
 
 Depending on the nature of your business, you may or may not want to enable guest sharing for teams that contain sensitive data. If you do plan to collaborate with people outside your organization in the team, we recommend enabling guest sharing. Microsoft 365 includes a variety of security and compliance features to help you share sensitive content securely. This is generally a more secure option than emailing content directly to people outside your organization.

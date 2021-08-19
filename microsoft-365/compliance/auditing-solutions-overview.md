@@ -60,7 +60,7 @@ Advanced Audit builds on the capabilities of Basic Audit by providing audit log 
 
 - **Longer retention of audit records**. Exchange, SharePoint, and Azure Active Directory audit records are retained for one year by default. Audit records for all other activities are retained for 90 days by default, or you can use audit log retention policies to configure longer retention periods.
 
-- **High-value, crucial events**. Audit records for crucial events can help your organization conduct forensic and compliance investigations by providing visibility to events such as when mail items were accessed, or when mail items were replied to and forwarded, or when and what a user searched for in Exchange Online and SharePoint Online. These crucial events can help you investigate possible breaches and determine the scope of compromise.
+- **High-value, crucial Advanced Audit events**. Audit records for crucial events can help your organization conduct forensic and compliance investigations by providing visibility to events such as when mail items were accessed, or when mail items were replied to and forwarded, or when and what a user searched for in Exchange Online and SharePoint Online. These crucial events can help you investigate possible breaches and determine the scope of compromise.
 
 - **Higher bandwidth to the Office 365 Management Activity API**. Advanced Audit provides organizations with more bandwidth to access auditing logs through the Office 365 Management Activity API. Although all organizations (that have Basic Audit or Advanced Audit) are initially allocated a baseline of 2,000 requests per minute, this limit will dynamically increase depending on an organization's seat count and their licensing subscription. This results in organizations with Advanced Audit getting about twice the bandwidth as organizations with Basic Audit.
 
@@ -150,14 +150,14 @@ If your organization has a subscription that supports Advanced Audit, perform th
   
    - Enabling the auditing of crucial events and then turning on the Advanced Auditing app/service plan for those users.
 
-2. Enable crucial events to be logged when users perform searches in Exchange Online and SharePoint Online.
+2. Enable Advanced Audit events to be logged when users perform searches in Exchange Online and SharePoint Online.
 
 3. Set up audit log retention policies. In additional to the default policy that retains Exchange, SharePoint, and Azure AD audit records for one year, you can create additional audit log retention policies to meet the requirements of your organization's security operations, IT, and compliance teams.
 
-4. Search for crucial events and other activities when conducting forensic investigations. After completing step 1 and step 2, you can search the audit log for crucial events and other activities during forensic investigations of compromised accounts and other types of security or compliance investigations.
+4. Search for crucial Advanced Audit events and other activities when conducting forensic investigations. After completing step 1 and step 2, you can search the audit log for Advanced Audit events and other activities during forensic investigations of compromised accounts and other types of security or compliance investigations.
 
 For more detailed instructions, see [Set up Advanced Audit](set-up-advanced-audit.md).
 
 ## Training
 
-Training your security operations team, IT administrators, and compliance investigators team in Basic Audit and Advanced Audit can help your organization get started more quickly using auditing to help with your investigations. Microsoft 365 provides the following resource to help these users in your organization getting started with auditing: [Describe the audit capabilities in Microsoft 365](/learn/modules/describe-audit-capabilities-microsoft-365).
+Training your security operations team, IT administrators, and compliance investigators team in the fundamentals for Basic Audit and Advanced Audit can help your organization get started more quickly using auditing to help with your investigations. Microsoft 365 provides the following resource to help these users in your organization getting started with auditing: [Describe the eDiscovery and audit capabilities of Microsoft 365](/learn/modules/describe-ediscovery-capabilities-of-microsoft-365).

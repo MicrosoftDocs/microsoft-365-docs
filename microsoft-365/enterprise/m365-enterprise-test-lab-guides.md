@@ -2,8 +2,8 @@
 title: "Microsoft 365 for enterprise Test Lab Guides"
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 11/20/2019
 audience: ITPro

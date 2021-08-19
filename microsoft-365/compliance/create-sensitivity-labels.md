@@ -36,36 +36,36 @@ The global admin for your organization has full permissions to create and manage
 ## Create and configure sensitivity labels
 
 1. In your labeling admin center, navigate to sensitivity labels:
-    
+
     - Microsoft 365 compliance center: 
         - **Solutions** > **Information protection**
-        
+
         If you don't immediately see this option, first select **Show all**. 
-    
+
     - Security & Compliance Center:
         - **Classification** > **Sensitivity labels**
 
 2. On the **Labels** page, select **+ Create a label** to start the New sensitivity label wizard. 
-    
+
     For example, from the Microsoft 365 compliance center:
-    
+
     ![Create a sensitivity label](../media/create-sensitivity-label-full.png)
-    
+
     > [!NOTE]
-	> By default, tenants don't have any labels and you must create them. The labels in the example picture show default labels that were [migrated from Azure Information Protection](/azure/information-protection/configure-policy-migrate-labels).
+    > By default, tenants don't have any labels and you must create them. The labels in the example picture show default labels that were [migrated from Azure Information Protection](/azure/information-protection/configure-policy-migrate-labels).
 
 3. On the **Define the scope for this label** page, the options selected determine the label's scope for the settings that you can configure and where they will be visible when they are published:
-    
+
     ![Scopes for sensitivity labels](../media/sensitivity-labels-scopes.png)
-    
+
     - If **Files & emails** is selected, you can configure settings in this wizard that apply to apps that support sensitivity labels, such as Office Word and Outlook. If this option isn't selected, the wizard displays the first page of these settings but you can't configure them and the labels won't be available for users to select in these apps.
-    
+
     - If **Groups & sites** is selected, you can configure settings in this wizard that apply to Microsoft 365 groups, and sites for Teams and SharePoint. If this option isn't selected, the wizard displays the first page of these settings but you can't configure them and the labels won't be available for users to select for groups and site.
-    
+
     For information about the **Azure Purview assets (preview)** scope, see [Automatically label your content in Azure Purview](/azure/purview/create-sensitivity-label).
 
 4. Follow the prompts in the wizard for the label settings.
-    
+
     For more information about the label settings, see [What sensitivity labels can do](sensitivity-labels.md#what-sensitivity-labels-can-do) from the overview information and use the help in the wizard for individual settings.
 
 5. Repeat these steps to create more labels. However, if you want to create a sublabel, first select the parent label and select **...** for **More actions**, and then select **Add sub label**.
@@ -108,7 +108,6 @@ For the languages that you need to support, use the Office [language identifiers
 
 Before you run the commands in PowerShell, you must first [connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
-
 ```powershell
 $Languages = @("fr-fr","it-it","de-de")
 $DisplayNames=@("Publique","Publico","Oeffentlich")
@@ -130,42 +129,42 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 ## Publish sensitivity labels by creating a label policy
 
 1. In your labeling admin center, navigate to sensitivity labels:
-    
+
     - Microsoft 365 compliance center: 
         - **Solutions** > **Information protection**
-        
+
         If you don't immediately see this option, first select **Show all**. 
-    
+
     - Security & Compliance Center:
         - **Classification** > **Sensitivity labels**
 
 2. Select the **Label policies** tab, and then **Publish labels** to start the Create policy wizard:
-    
+
     For example, from the Microsoft 365 compliance center:
-        
+
     ![Publish labels](../media/publish-sensitivity-labels-full.png)
-    
+
     > [!NOTE]
-	> By default, tenants don't have any label policies and you must create them. 
+    > By default, tenants don't have any label policies and you must create them. 
 
 3. In the wizard, select **Choose sensitivity labels to publish**. Select the labels that you want to make available in apps and to services, and then select **Add**.
-    
+
     > [!IMPORTANT]
     > If you select a sublabel, make sure you also select its parent label.
-    
+
 4. Review the selected labels and to make any changes, select **Edit**. Otherwise, select **Next**.
 
 5. Follow the prompts to configure the policy settings.
-    
+
     The policy settings that you see match the scope of the labels that you selected. For example, if you selected labels that have just the **Files & emails** scope, you don't see the policy settings **Apply this label by default to groups and sites** and **Require users to apply a label to their groups and sites**.
-    
+
     For more information about these settings, see [What label policies can do](sensitivity-labels.md#what-label-policies-can-do) from the overview information and use the help in the wizard for individual settings.
-    
+
     For labels configured for **Azure Purview assets (preview)**: These labels don't have any associated policy settings.
 
-7. Repeat these steps if you need different policy settings for different users or scopes. For example, you want additional labels for a group of users, or a different default label for a subset of users. Or, if you have configured labels to have different scopes.
+6. Repeat these steps if you need different policy settings for different users or scopes. For example, you want additional labels for a group of users, or a different default label for a subset of users. Or, if you have configured labels to have different scopes.
 
-8. If you create more than one label policy that might result in a conflict for a user, review the policy order and if necessary, move them up or down. To change the order of a label policy, select **...** for **More actions**, and then select **Move up** or **Move down**. For more information, see [Label policy priority (order matters)](sensitivity-labels.md#label-policy-priority-order-matters) from the overview information.
+7. If you create more than one label policy that might result in a conflict for a user, review the policy order and if necessary, move them up or down. To change the order of a label policy, select **...** for **More actions**, and then select **Move up** or **Move down**. For more information, see [Label policy priority (order matters)](sensitivity-labels.md#label-policy-priority-order-matters) from the overview information.
 
 Completing the wizard automatically publishes the label policy. To make changes to a published policy, simply edit it. There is no specific publish or republish action for you to select.
 
@@ -176,6 +175,9 @@ To edit an existing label policy, select it, and then select the **Edit Policy**
 This button starts the **Create policy** wizard, which lets you edit which labels are included and the label settings. When you complete the wizard, any changes are automatically replicated to the selected users and services.
 
 When you use built-in labeling for Office apps on Windows, macOS, iOS, and Android, users see new labels within four hours, and within one hour for Word, Excel, and PowerPoint on the web when you refresh the browser. However, allow up to 24 hours for changes to replicate to all apps and services.
+
+> [!NOTE]
+> Other apps and services that support sensitivity labels might update more frequently than 24 hours with their own update schedules and triggers for policy updates. Check their documentation for details. For example, for the Azure Information Protection unified labeling client, see the **Policy update** row in the [Detailed comparisons for the Azure Information Protection clients](/azure/information-protection/rms-client/use-client#detailed-comparisons-for-the-azure-information-protection-clients) table.
 
 ### Additional label policy settings with Security & Compliance Center PowerShell
 

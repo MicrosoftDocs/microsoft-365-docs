@@ -1,10 +1,10 @@
 ---
 title: "Configure Microsoft 365 Enterprise services and applications"
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 audience: ITPro
-ms.topic: deployment
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: 

@@ -16,6 +16,8 @@ ms.collection:
 ms.custom: 
 - AdminSurgePortfolio
 - commcerce_billing
+- AdminTemplateSet
+- admindeeplinkMAC
 search.appverid: MET150
 description: "Make changes to your organization profile, such as organization name, address, phone, technical contact, and email."
 ms.date: 03/30/2021

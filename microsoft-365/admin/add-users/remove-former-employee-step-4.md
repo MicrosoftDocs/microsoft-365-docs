@@ -19,6 +19,8 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - AdminSurgePortfolio
+- AdminTemplateSet
+- m365solution-removeemployee
 search.appverid:
 - BCS160
 - MET150
@@ -178,10 +180,14 @@ To give access to the email messages, calendar, tasks, and contacts of the forme
 > The steps remain the same for accessing an existing user's OneDrive and email data.
 
 > [!TIP]
-> If you want to import or restore only a few items from an Outlook Data File (.pst), you can open the Outlook Data File. Then, in the navigation pane, drag the items from Outlook Data File folders to your existing Outlook folders. 
+> If you want to import or restore only a few items from an Outlook Data File (.pst), you can open the Outlook Data File. Then, in the navigation pane, drag the items from Outlook Data File folders to your existing Outlook folders.
 
 ## Related content
 
-[Add and remove admins on a OneDrive account](/sharepoint/manage-user-profiles#add-and-remove-admins-for-a-users-onedrive) (article)\
-[Restore a deleted OneDrive](/onedrive/restore-deleted-onedrive) (article)\
+[Add and remove admins on a OneDrive account](/sharepoint/manage-user-profiles#add-and-remove-admins-for-a-users-onedrive) (article)
+
+[Restore a deleted OneDrive](/onedrive/restore-deleted-onedrive) (article)
+
 [OneDrive retention and deletion](/onedrive/retention-and-deletion) (article)
+
+[Share OneDrive files and folders](https://support.microsoft.com/office/share-onedrive-files-and-folders-9fcc2f7d-de0c-4cec-93b0-a82024800c07)

@@ -19,6 +19,62 @@ ms.localizationpriority: normal
 
 This article lists new and updated articles in the [Microsoft Managed Desktop documentation](index.yml). "Updated" articles have had material additions or corrections--minor fixes such as correction of typos, style, or formatting issues are not listed. You can always view the history of specific commits (including details of any changes) by visiting the [repo on GitHub](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop).
 
+
+## July 2021
+New or changed article | Description
+--- | ---
+[Device images](service-description/device-images.md)| Updated article
+[Fix issues found by the readiness assessment tool](get-ready/readiness-assessment-fix.md) | Updated article
+[Microsoft Managed Desktop roles and responsibilities](intro/roles-and-responsibilities.md) | Updated article
+[Enable user support features](get-started/enable-support.md) | New article
+[Enable Enterprise State Roaming](get-started/enterprise-state-roaming.md) | Updated article
+[Microsoft Managed Desktop and Windows 11](intro/win11-overview.md) | New article
+[Preview and test Windows 11 with Microsoft Managed Desktop](working-with-managed-desktop/test-win11-mmd.md) | New article
+[Steps for Partners to register devices](get-started/register-devices-partner.md) | Updated article
+[Register new devices yourself](get-started/register-devices-self.md) |Updated article
+[Admin support for Microsoft Managed Desktop](working-with-managed-desktop/admin-support.md) | Updated article
+[First-run experience with Autopilot and the Enrollment Status Page](get-started/esp-first-run.md) | Updated article
+[Microsoft Managed Desktop operations and monitoring](service-description/operations-and-monitoring.md) | Updated article
+[Getting help for users](working-with-managed-desktop/end-user-support.md) | Updated article
+
+## June 2021
+New or changed article | Description
+--- | ---
+[Work with reports](working-with-managed-desktop/reports.md) | Updated article
+[Overview](service-description/privacy-personal-data.md) | Updated article
+[Admin support for Microsoft Managed Desktop](working-with-managed-desktop/admin-support.md) | Updated article
+[Fix issues found by the readiness assessment tool](get-ready/readiness-assessment-fix.md) | Updated article
+[Prerequisites for Microsoft Managed Desktop](get-ready/prerequisites.md) | Updated article
+[Enable Enterprise State Roaming](get-started/enterprise-state-roaming.md) | Updated article
+
+## May 2021
+New or changed article | Description
+--- | ---
+[Set up Microsoft Managed Desktop devices](get-started/set-up-devices.md) | Updated article
+[Device inventory report](working-with-managed-desktop/device-inventory-report.md) | Updated article
+[Network configuration for Microsoft Managed Desktop](get-ready/network.md) | Updated article
+[Diagnostic logs](service-description/diagnostic-logs.md) | New article
+[Microsoft Managed Desktop technologies](intro/technologies.md) | Updated article
+[Prerequisites for guest accounts](get-ready/guest-accounts.md) | Updated article
+[Work with reports](working-with-managed-desktop/reports.md) | Updated article
+
+## April 2021
+New or changed article | Description
+--- | ---
+[Device profiles](service-description/profiles.md) | New article
+[Steps for Partners to register devices](get-started/register-devices-partner.md) | Updated article
+[Register new devices yourself](get-started/register-devices-self.md) | Updated article
+[Register existing devices yourself](get-started/register-reused-devices-self.md) | Updated article
+[Address device name dependency](get-ready/address-device-names.md) | New article
+[Device names](service-description/device-names.md) | New article
+[Remove devices](working-with-managed-desktop/remove-devices.md) | New article
+[Prerequisites for Microsoft Managed Desktop](get-ready/prerequisites.md) | Updated article
+[Apps in Microsoft Managed Desktop](get-ready/apps.md) | Updated article
+[Validate new devices](get-started/validate-device.md) | New article
+[Set up Microsoft Managed Desktop devices](get-started/set-up-devices.md) | Updated article
+[Microsoft Managed Desktop product lifecycle](service-description/device-lifecycle.md) | Updated article
+[Microsoft Managed Desktop devices](service-description/device-list.md) |Updated article
+
 ## March 2021
 New or changed article | Description
 --- | ---

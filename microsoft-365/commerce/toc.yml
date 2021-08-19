@@ -40,7 +40,7 @@
       href: ../admin/manage/remove-licenses-from-users.md
     - name: Move users to a different subscription
       href: subscriptions/move-users-different-subscription.md
-    - name: Manage third-party app licenses
+    - name: Manage ISV app licenses
       href: licenses/manage-third-party-app-licenses.md
     - name: Manage auto-claim policies
       href: licenses/manage-auto-claim-policies.md

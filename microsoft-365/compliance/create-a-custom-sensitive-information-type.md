@@ -39,7 +39,7 @@ There are two ways to create a new sensitive information type:
     - [functions](what-the-dlp-functions-look-for.md)
     - [confidence levels](sensitive-information-type-learn-about.md#more-on-confidence-levels)
  
-- You must have Global admin or Compliance admin permissions to create, test, and deploy a custom sensitive information type through the UI. See [About admin roles](/office365/admin/add-users/about-admin-roles?view=o365-worldwide) in Office 365.
+- You must have Global admin or Compliance admin permissions to create, test, and deploy a custom sensitive information type through the UI. See [About admin roles](/office365/admin/add-users/about-admin-roles) in Office 365.
 
 - Your organization must have a subscription, such as Office 365 Enterprise, that includes Data Loss Prevention (DLP). See [Messaging Policy and Compliance ServiceDescription](/office365/servicedescriptions/exchange-online-protection-service-description/messaging-policy-and-compliance-servicedesc). 
 
@@ -122,17 +122,19 @@ You can also create custom sensitive information types by using PowerShell and E
 ### Checksum validator
 
 If you need to run a checksum on a digit in a regular expression, you can use the *checksum validator*. For example, say you need to create a SIT for an eight digit license number where the last digit is a checksum digit that is validated using a mod 9 calculation. You've set up the checksum algorithm like this:
- 
+
 Sum = digit 1 * Weight 1 + digit 2 * weight 2 + digit 3 * weight 3 + digit 4 * weight 4 + digit 5 * weight 5 + digit 6 * weight 6 + digit 7 * weight 7 + digit 8 * weight 8 
 Mod value = Sum % 9
 If Mod value == digit 8
-	Account number is valid
+    Account number is valid
 If Mod value != digit 8
-	Account number is invalid
+    Account number is invalid
 
 1. Define the primary element with this regular expression:
 
-`\d{8}`
+   ```console
+   \d{8}
+   ```
 
 2. Then add the checksum validator.
 3. Add the weight values separated by commas, the position of the check digit and the Mod value. For more information on the Modulo operation, see [Modulo operation](https://en.wikipedia.org/wiki/Modulo_operation).
@@ -144,11 +146,13 @@ If Mod value != digit 8
 
 ### Date validator
 
-If a date value that is embedded in regular expression is part of a new pattern you are creating, you can use the *date validator* to test that it meets your criteria. For example, say you want to create a SIT for a nine digit employee identification number. The first six digits are the date of hire in DDMMYY format and the last three are randomly generated numbers. To validate that the first six digits are in the correct format. 
+If a date value that is embedded in regular expression is part of a new pattern you are creating, you can use the *date validator* to test that it meets your criteria. For example, say you want to create a SIT for a nine digit employee identification number. The first six digits are the date of hire in DDMMYY format and the last three are randomly generated numbers. To validate that the first six digits are in the correct format.
 
 1. Define the primary element with this regular expression:
 
-`\d{9}`
+   ```console
+   \d{9}
+   ```
 
 2. Then add the date validator.
 3. Select the date format and the start offset. Since the date string is the first six digits, the offset is `0`.
@@ -181,10 +185,21 @@ Here are the definitions and some examples for the available additional checks.
 
 
 > [!NOTE]
-> Microsoft 365 Information Protection supports, in preview, double byte character set languages for:
+> Microsoft 365 Information Protection supports double byte character set languages for:
 > - Chinese (simplified)
 > - Chinese (traditional)
 > - Korean
 > - Japanese
 >
 >This support is available for sensitive information types. See, [Information protection support for double byte character sets release notes (preview)](mip-dbcs-relnotes.md) for more information.
+
+> [!TIP]
+> To detect patterns containing Chinese/Japanese characters and single byte characters or to detect patterns containing Chinese/Japanese and English, define two variants of the keyword or regex. 
+>
+> For example, to detect a keyword like "机密的document", use two variants of the keyword; one with a space between the Japanese and English text and another without a space between the Japanese and English text. So, the keywords to be added in the SIT should be "机密的 document" and "机密的document". Similarly, to detect a phrase "東京オリンピック2020", two variants should be used; "東京オリンピック 2020" and "東京オリンピック2020".
+>
+> While creating a regex using a double byte hyphen or a double byte period, make sure to escape both the characters like one would escape a hyphen or period in a regex. Here is a sample regex for reference:
+>
+>    - (?<!\d)([４][０-９]{3}[\-?\－\t]*[０-９]{4}
+>
+> We recommend using a string match instead of a word match in a keyword list.

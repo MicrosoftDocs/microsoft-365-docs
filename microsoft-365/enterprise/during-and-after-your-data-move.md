@@ -61,7 +61,7 @@ Some users open a shared mail folder from another mailbox (that the user has rea
 
 When SharePoint Online is moved, data for the following services is also moved:
   
-- One Drive for Business
+- OneDrive for Business
     
 - Microsoft 365 Video services
     
@@ -118,7 +118,7 @@ Skype for Business moves are no longer available.  [Skype for Business Online wi
  
 [How to request your data move](request-your-data-move.md)
     
-[Data move general FAQ](data-move-faq.md)
+[Data move general FAQ](data-move-faq.yml)
   
 [New datacenter geos for Microsoft Dynamics CRM Online](/power-platform/admin/new-datacenter-regions)
   

@@ -54,11 +54,11 @@ The script that you run in this first step will return a list of mailbox folders
 
 - **Email address or site URL**: Type an email address of the custodian to return a list of Exchange mailbox folders and folder IDs. Or type the URL for a SharePoint site or a OneDrive for Business site to return a list of paths for the specified site. Here are some examples:
 
-  - **Exchange**: stacig@contoso.onmicrosoft<spam><spam>.com
+  - **Exchange**: `stacig@contoso.onmicrosoft.com`
 
-  - **SharePoint**: https<span>://</span>contoso.sharepoint.com/sites/marketing
+  - **SharePoint**: `https://contoso.sharepoint.com/sites/marketing`
 
-  - **OneDrive for Business**: https<span>://</span>contoso-my.sharepoint.com/personal/stacig_contoso_onmicrosoft_com
+  - **OneDrive for Business**: `https://contoso-my.sharepoint.com/personal/stacig_contoso_onmicrosoft_com`
 
 - **Your user credentials**: The script will use your credentials to connect to Exchange Online PowerShell or Security & Compliance Center PowerShell using modern authentication. As previously explained, you have to be assigned the appropriate permissions to successfully run this script.
 
@@ -217,11 +217,13 @@ After you've run the script to collect a list of folder IDs or document links fo
 
 2. In the left pane of the compliance center, click **Show all** > **Content search**, and then click **New search**.
 
-3. In the **Keywords** box, paste the `folderid:<folderid>` or  `documentlink:<path>` value that was returned by the script in Step 1.
+3. In the **Keywords** box, paste the `folderid:<folderid>` or  `documentlink:<path>/*` value that was returned by the script in Step 1.
 
     For example, the query in the following screenshot will search for any item in the Purges subfolder in the user's Recoverable Items folder (the value of the `folderid` property for the Purges subfolder is shown in the screenshot in Step 1):
 
     ![Paste the folderid or documentlink in to the keyword box of the search query](../media/FolderIDSearchQuery.png)
+    > [!IMPORTANT]
+    > documentlink searches require the use of a trailing  `asterisk '/*'`.  
 
 4. Under **Locations**, select **Specific locations** and then click **Modify**.
 
@@ -254,13 +256,13 @@ Here are some examples of using the  `folderid` and  `documentlink` properties i
 - This example searches a site folder (and any subfolders) for documents that contain the letters "NDA" in the title.
 
   ```powershell
-  documentlink:<path> AND filename:nda
+  documentlink:"<path>/*" AND filename:nda
   ```
 
 - This example searches a site folder (and any subfolder) for documents there were changed within a date range.
 
   ```powershell
-  documentlink:<path> AND (lastmodifiedtime>=01/01/2017 AND lastmodifiedtime<=01/21/2017)
+  documentlink:"<path>/*" AND (lastmodifiedtime>=01/01/2017 AND lastmodifiedtime<=01/21/2017)
   ```
 
 ## More information

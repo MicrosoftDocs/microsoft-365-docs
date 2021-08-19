@@ -16,6 +16,7 @@ ms.collection:
 ms.custom: 
 - AdminSurgePortfolio
 - okr_smb
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
@@ -34,15 +35,15 @@ You can add or update a default theme that applies to everyone within your org. 
 
 1. In the admin center, go to the **Settings** \> **Org Settings** page, and then choose the **Organization profile** tab.
 
-2. On the **Organization profile** tab, select **Organization theme**.
+2. On the **Organization profile** tab, select **Custom themes**.
 
-All themes can be customized using the following tabs.
+All organization themes can be customized using the following tabs.
 
 |**Tab**|**What can you do?**|
 |:-----|:-----|
 |[General](#general-modify-a-theme) <br/> |Modify a theme name and assign to up to five groups (if applicable).  <br/> |
-|[Logos](#logos-specify-your-theme-logos) <br/> |Add your theme logo, including the Office dark theme and mobile options.  <br/> |
-|[Colors](#colors-choose-theme-colors) <br/> |Customize a color scheme by specifying navigation bar, accent, text, and icon colors. <br/> |
+|[Logos](#logos-specify-your-theme-logos) <br/> |Add your organization logo, including alternate logo for dark theme.  <br/> |
+|[Colors](#colors-choose-theme-colors) <br/> |Customize a color scheme by specifying navigation bar, accent, text and icon colors. <br/> |
 
 ## General: Modify a theme
 
@@ -59,38 +60,33 @@ The default theme is the first theme displayed.
 > [!IMPORTANT]
 > The default theme is unique, it can't be renamed and applies to everyone within your organization. To delete the default theme, you have to delete all other themes first.
 
-:::image type="content" source="../../media/default-theme-general.png" alt-text="Screenshot: General tab showing the default theme for your organization":::
+:::image type="content" source="../../media/Default_Theme_Panel1.png" alt-text="Screenshot: General tab showing the default theme for your organization":::
 
 ### Create a group theme
 
 You can create up to four additional group themes.
 
-1. On the **General** page, enter a name for your theme.
+1. On the **General** page, enter a name for your new theme.
 
 2. Under **Groups**, you can select up to 5 Microsoft 365 Groups that can see your group theme, instead of using the default theme. You can also prevent users from overriding their theme and show the user's display name.
 
 3. Select **Save**.
 
-:::image type="content" source="../../media/default-theme-general-users.png" alt-text="Screenshot: General tab showing the default theme for a group of users in your organization":::
+:::image type="content" source="../../media/default-theme-general-users1.png" alt-text="Screenshot: General tab showing the default theme for a group of users in your organization":::
 
 ## Logos: Specify your theme logos
 
 On the **Logos** page, you can you can add your logos, and specify the URL where users will navigate to, when they select the logo.
 
-- **Default logo**: Add a URL location that points to your logo. Make sure that the URL uses HTTPS and that the image is at least 200 x 30 pixels. Your default logo can be in the JPG, PNG, GIF, or SVG format.
+- **Default logo**: Add a URL location that points to your logo. Make sure that the URL uses HTTPS. Add a HTTPS image url that allows anonymous access and doesn't require authentication. For default theme, you also have an option to upload a logo image that is less than 10kb. Your default logo can be in the JPG, PNG, GIF, or SVG format. For SVG images, they will be resized to fit 24 pixels vertically. JPG, PNG, GIF images will be scaled to fit 200 x 48 pixels. Logo aspect ratio will always be preserved.
 - **Alternate logo**: Add a URL location that points to your logo. Your alternate logo should be optimized for use in Office dark themes. Same requirements as the default logo.
-- **Small default logo**: Add a URL location that points to your logo. The image must be at least 48 x 48 pixels. You can scale this image so it fits on smaller or mobile devices.
-- **Small alternate logo**: Add a URL location that points to your logo. This image has the same requirements as the small default logo.
-- **On-click link**: Add a URL location that points to your logo. You can use your logo as a link to any company resource, for example, your company's website.
+- **On-click link**: Add a URL location that points to your logo. You can use your logo as a link to any company resource, for example, your company's website. If you don’t select a URL location for your logo, it’ll default to the Office home page.
 
 Select **Save** to save your changes.
 
+:::image type="content" source="../../media/Logos_Tab.png" alt-text="Screenshot: Logos tab showing the logo options":::
+
 You can remove your logos at any time. Just return to the **Logos** page and select **Remove**.
-
-:::image type="content" source="../../media/default-theme-logos.png" alt-text="Screenshot: Logos tab showing default theme logo for your organization":::
-
-> [!NOTE]
-> By default, we first show logo selections that most organizations use. To see all the logo selections, go to the bottom of the list and select **See advanced options**.
   
 ## Colors: Choose theme colors
 
@@ -100,9 +96,8 @@ On the **Colors** page, you can set the default colors and choose which logo sho
 - **Text and icon color**: Select a color to use for the text and icons on the top navigation bar.
 - **Accent color**: Pick one that shows up well on a white or light background. The accent color is used to color some links and buttons that show up on a white or light background. For example, the accent color is used to color elements in a user's inbox and on their Office.com portal page.
 - **Reset color**: Select this link to reset colors to the default colors.
-- **Which logo should be used?**: Select default logos or any other logos you've created yourself.
 
-:::image type="content" source="../../media/default-theme-colors.png" alt-text="Screenshot: Colors tab showing default theme colors for your organization":::
+:::image type="content" source="../../media/default-theme-colors1.png" alt-text="Screenshot: Colors tab showing default theme colors for your organization":::
 
 ## Frequently asked questions
 
