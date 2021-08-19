@@ -51,7 +51,7 @@ When you choose to use adaptive scopes, you are prompted to select what type of 
 | Adaptive scope type | Attributes supported |
 |:-----|:-----|
 |**Users** - applies to:  <br/> - Exchange mail <br/> - OneDrive accounts <br/> - Teams chats <br/> - Teams private channel messages <br/> - Yammer user messages| First Name <br/> Last name <br/>Display name <br/> Job title <br/> Department <br/> Office <br/>Street address <br/> City <br/>State or province <br/>Postal code <br/> Country or region <br/> Email addresses <br/> Alias <br/> Exchange custom attributes: CustomAttribute1 - CustomAttribute15|
-|**SharePoint sites** - applies to:  <br/> - SharePoint sites <br/> - OneDrive accounts |Site URL <br/>Site name <br/> SharePoint custom properties: RefinableString00 - RefinableString99) |
+|**SharePoint sites** - applies to:  <br/> - SharePoint sites <br/> - OneDrive accounts |Site URL <br/>Site name <br/> SharePoint custom properties: RefinableString00 - RefinableString99 |
 |**Microsoft 365 Groups** - applies to:  <br/> - Microsoft 365 Groups <br/> - Teams channel messages <br/> - Yammer community messages |Name <br/> Display name <br/> Description <br/> Email addresses <br/> Alias <br/> Exchange custom attributes: CustomAttribute1 - CustomAttribute15 |
 
 A single policy for retention can have one or many adaptive scopes.
@@ -96,13 +96,13 @@ Before you configure your adaptive scope, use the previous section to identify w
 > [!NOTE]
 > It can take a few days for the queries to fully populate and changes will not be immediate. Factor in this delay by waiting a few days before you add a newly created scope to a policy for retention.
 
-To confirm the current membership and changes for an adaptive scope:
+To confirm the current membership and membership changes for an adaptive scope:
 
-1. Select the scope on the **Adaptive scopes** page
+1. Double-click (or select and press Enter) the scope on the **Adaptive scopes** page
 
-2. From the **Details** pane, select **Scope details**. 
+2. From the flyout **Details** pane, select **Scope details**. 
     
-    Review the information that identifies all the users, sites, or groups currently in the scope and when they were automatically added or removed.
+    Review the information that identifies all the users, sites, or groups currently in the scope, if they were automatically added or removed, and the date and time of that membership change.
 
 ### Configuration information for static scopes
 
