@@ -19,7 +19,7 @@ description: Learn about form processing in Microsoft SharePoint Syntex.
 
  ![AI Builder](../media/content-understanding/ai-builder.png)</br>
 
-Microsoft SharePoint Syntex uses Microsoft PowerApps [AI Builder](/ai-builder/overview) form processing to create models within SharePoint document libraries.
+Microsoft SharePoint Syntex uses Microsoft Power Apps [AI Builder](/ai-builder/overview) form processing to create models within SharePoint document libraries.
 
 You can use AI Builder form processing to create AI models that use machine learning technology to identify and extract key-value pairs and table data from structured or semi-structured documents, like forms and invoices.
 
