@@ -68,11 +68,11 @@ You create and assign quarantine policies in the Microsoft 365 Defender portal o
 
 ## What do you need to know before you begin?
 
-- You open the Microsoft 365 Defender portal at <https://security.microsoft.com>. Or to go directly to the **Quarantine policies** page, open <https://security.microsoft.com/quarantineTags>.
+- You open the Microsoft 365 Defender portal at <https://security.microsoft.com>. Or to go directly to the **Quarantine policies** page, open <https://security.microsoft.com/quarantinePolicies>.
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- To view, create, modify, or remove quarantine policies, you need to be a member of the **Organization Management** or **Security Administrator** roles in the Microsoft 365 Defender portal. For more information, see [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).
+- To view, create, modify, or remove quarantine policies, you need to be a member of the **Organization Management** or **Security Administrator** or **Quarantine Administrator** roles in the Microsoft 365 Defender portal. For more information, see [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).
 
 ## Step 1: Create quarantine policies in the Microsoft 365 Defender portal
 
@@ -97,12 +97,14 @@ You create and assign quarantine policies in the Microsoft 365 Defender portal o
    These permissions and their effect on quarantined messages and in end-user spam notifications are described in the [Quarantine policy permission details](#quarantine-policy-permission-details) section later in this article.
 
    When you're finished, click **Next**.
+5. On the **End user spam notification** page, you can check the box to enable notification 
 
-5. On the **Review policy** page that appears, review your settings. You can select **Edit** in each section to modify the settings within the section. Or you can click **Back** or select the specific page in the wizard.
+
+6. On the **Review policy** page that appears, review your settings. You can select **Edit** in each section to modify the settings within the section. Or you can click **Back** or select the specific page in the wizard.
 
    When you're finished, click **Submit**.
 
-6. On the confirmation page that appears, click **Done**.
+7. On the confirmation page that appears, click **Done**.
 
 Now you're ready to assign the quarantine policy to a quarantine feature as described in the [Step 2](#step-2-assign-a-quarantine-policy-to-supported-features) section.
 
@@ -738,4 +740,6 @@ The **Allow recipients to request a message to be released from quarantine** per
   - Permission enabled: The **Request release** button is available.
   - Permission disabled: The **Request release** button is not available.
 
-- **End-user spam notifications**: The **Release** button is not available.
+- **End-user spam notifications**: 
+  - Permission enabled: The **Request release** button is available.
+  - Permission disabled: The **Request release** button is not available.
