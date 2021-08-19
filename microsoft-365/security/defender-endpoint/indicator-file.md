@@ -103,7 +103,7 @@ Choose if to Generate an alert on the file block event and define the alerts set
 >
 >- If the EnableFileHashComputation group policy is disabled, the blocking accuracy of the file IoC is reduced. However, enabling `EnableFileHashComputation` may impact device performance. For example, copying large files from a network share onto your local device, especially over a VPN connection, might have an effect on device performance.
 >
->  For more information about the EnableFileHashComputation group policy, see [Defender CSP](/windows/client-management/mdm/defender-csp).
+>   For more information about the EnableFileHashComputation group policy, see [Defender CSP](/windows/client-management/mdm/defender-csp).
 
 ## Private Preview: Advanced hunting capabilities
 
