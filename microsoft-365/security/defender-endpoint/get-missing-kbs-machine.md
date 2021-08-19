@@ -89,8 +89,7 @@ Here is an example of the response.
             "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4540673",
             "machineMissedOn": 1,
             "cveAddressed": 97
-        },
-         ...
+        }
         ]
 }
 ```
