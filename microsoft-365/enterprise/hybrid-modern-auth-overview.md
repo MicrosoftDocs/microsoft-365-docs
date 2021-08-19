@@ -163,7 +163,7 @@ Verify and check these items off your list before you continue:
   - You have verified that hybrid is configured using Exchange Classic Hybrid Topology mode between your on-premises and Office 365 environment. Official support statement for Exchange hybrid says you must have either current CU or current CU - 1.
     > [!NOTE]
     > Hybrid modern authentication is not supported with the [Hybrid Agent](/exchange/hybrid-deployment/hybrid-agent).
-
+    > Should we add here a note regarding the URLs/IPs needed to be trusted in the proxy/firewall of the customers? We have customers asking for specific URL/IP allow list for HMA with Exchange OnPrem only.
   - Make sure both an on-premises test user, as well as a hybrid test user homed in Office 365, can login to the Skype for Business desktop client (if you want to use modern authentication with Skype) and Microsoft Outlook (if you want to use modern authentication with Exchange).
 
 ## What else do I need to know before I begin?
