@@ -56,7 +56,7 @@ You can evaluate trained models against your content to help you find the most a
 
 1. On the **Available** tab, review the models in the list.
 
-    ![Screenshot of the Review models and apply new ones page showing the models on the Applied tab.](../media/content-understanding/available-models-to-apply.png)
+    ![Screenshot of the Review models and apply new ones page showing the models on the Available tab.](../media/content-understanding/available-models-to-apply.png)
 
 2. Select the model that you think will get you the best results, and then select **Apply to library**.
 
@@ -67,6 +67,8 @@ If you are unsure which model is the best fit for your files, you can ask for a 
 1. On the **Review models and apply new ones** page, select the **Available** tab.
 
 2. On the first tile, select **Get recommendation**.
+
+    ![Screenshot of the Review models and apply new ones page showing the Get recommendation option on the Available tab.](../media/content-understanding/get-recommendation.png)
 
 3. On the **Select one or more models** page, select the models that you think might be the best fit, and then select **Next**.
 
