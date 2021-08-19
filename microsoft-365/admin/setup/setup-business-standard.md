@@ -29,10 +29,23 @@ description: "When you purchase Microsoft 365 Business Standard, you have the op
 
 # Set up Microsoft 365 Business Standard
 
-When you purchase Microsoft 365 Business Standard, you have the option of adding a domain you own, or buying one during the sign-up. In this article, we'll walk you through the steps or adding an existing domain your already own or buying a new one.
+When you purchase Microsoft 365 Business Standard, you have the option of adding a domain you own, or buying one during the sign-up. In this article, we'll walk you through the steps of adding an existing domain your already own or buying a new one.
 
 > [!IMPORTANT]
 > If you purchased a new domain when you signed up, your domain is all set up and you can move to [Add users and assign licenses](#add-users-and-assign-licenses).
+
+## Which option should I choose?
+
+### Set up your subscription with a domain (recommended)
+
+- You want your business to immediately switch to use your company branded email
+- You have details of your existing business domain handy, such as domain provider username and password.
+- You want the best data governance and compliance for your organization, especially if you work in legal or in regulated industries
+- You want to access to the widest set of tools in Microsoft 365 for business, including SharePoint sites, Planner, Lists, Bookings and more
+
+### Set up your subscription without a domain
+
+- You want to get started easily, with desktop apps like Word, Excel, PowerPoint, Teams, Outlook, and with OneDrive cloud storage and mobile apps
 
 ## Before you begin
 
@@ -161,5 +174,5 @@ Microsoft 365 doesn't include a public website for your business. If you want to
 ## Related content
 
 [Create a website](../../business-video/create-web-site.md) (video)
-[Microsoft 365 for your business](../../business-video/index.yml) (link page)
 
+[Microsoft 365 for your business](../../business-video/index.yml) (link page)
