@@ -77,7 +77,7 @@ Files automatically blocked by an indicator won't show up in the file's Action c
 ## Private Preview: Alerting on file blocking actions
 
 > [!IMPORTANT]
-> Information in this section (**Public Preview for Automated investigation and remediation engine**) relates to prerelease product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+> Information in this section (**Public Preview for Automated investigation and remediation engine**) relates to prerelease product which might be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 The current supported actions for file IOC are allow, audit and block and remediate.
 After choosing to block a file, you can choose whether triggering an alert is needed. In this way you will be able to control the number of alerts getting to your security operations teams and make sure only required alerts are raised.
