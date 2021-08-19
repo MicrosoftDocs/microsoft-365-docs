@@ -365,7 +365,7 @@ Microsoft 365 audits and validates the data purge path. For more information, se
 
 - [O365 Exit Planning Considerations](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=77ea7ebf-ce1b-4a5f-9972-d2d81a951d99&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
 
-Purging of multi-workload DEP is not supported for Microsoft 365 Customer Key. The multi-workload DEP is used to encrypt data across multiple workloads across all tenant users. Purging such DEP would result into data from across multiple workloads become inaccessible. If you decide to exit Microsoft 365 services altogether then you could pursue the path of tenant deletion per the documented process. See [how to delete a tenant in Azure Active Directoy](/azure/active-directory/enterprise-users/directory-delete-howto).
+Purging of multi-workload DEP is not supported for Microsoft 365 Customer Key. The multi-workload DEP is used to encrypt data across multiple workloads across all tenant users. Purging such DEP would result into data from across multiple workloads become inaccessible. If you decide to exit Microsoft 365 services altogether then you could pursue the path of tenant deletion per the documented process. See [how to delete a tenant in Azure Active Directory](/azure/active-directory/enterprise-users/directory-delete-howto).
 
 ### Revoke your Customer Keys and the availability key for Exchange Online and Skype for Business
 
