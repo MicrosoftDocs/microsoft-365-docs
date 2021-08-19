@@ -84,9 +84,10 @@ Before you configure your adaptive scope, use the previous section to identify w
     Select **Add attribute** to use any combination of attributes that are supported for their scope type, together with logical operators to build queries. The operators supported are **is equal to**, **is not equal to**, **starts with** and **not starts with**, and you can group selected attributes.
     
     Alternatively, you can select **Advanced query builder** to write your own queries:
-    - For **User** and **Microsoft 365 Group** scopes, use [OPATH filtering syntax](/powershell/exchange/recipient-filters). For example, to create a user scope that defines its membership by department, country, and state: `(Department -eq "HR") -and (CountryOrRegion -eq "United States") -and (State -eq "California")`:
     
-    ![Example adaptive scope with advanced query](../media/example-adaptive-scope-advanced-query.png)
+    - For **User** and **Microsoft 365 Group** scopes, use [OPATH filtering syntax](/powershell/exchange/recipient-filters). For example, to create a user scope that defines its membership by department, country, and state:
+    
+        ![Example adaptive scope with advanced query](../media/example-adaptive-scope-advanced-query.png)
     
     - For **SharePoint sites** scopes, use Keyword Query Language (KQL). You might already be familiar with creating these queries because you've used them to [specify keywords or searchable properties to auto-apply retention labels](apply-retention-labels-automatically.md#auto-apply-labels-to-content-with-keywords-or-searchable-properties). If not, review the guidance and examples provided for that configuration.
 
