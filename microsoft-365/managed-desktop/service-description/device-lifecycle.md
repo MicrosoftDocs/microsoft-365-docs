@@ -12,6 +12,10 @@ ms.topic: article
 
 # Microsoft Managed Desktop product lifecycle
 
+> [!NOTE]
+> As of September 18, 2021, Product Lifecycle for Microsoft Managed Desktop will be deprecated and all requirements listed here will no longer be applicable to devices in our service. 
+
+
 Microsoft Managed Desktop benefits users assuring that they always use devices that offer the best performance, reliability, design, and security capabilities (such as support for features like Windows Hello). To accomplish this, Microsoft Managed Desktop maintains a short catalog of continuously updated approved devices. You can view approved devices by filtering for Microsoft Managed Desktop on the [Shop Windows 10 Pro business devices](https://www.microsoft.com/windowsforbusiness/view-all-devices) site.
  
 This article details the lifecycle of devices as they are added and removed from the approved catalog. 
