@@ -20,7 +20,7 @@ search.appverid:
 ms.custom: 
 - MACDashWhatsNew
 - AdminSurgePortfolio
-description: "The Microsoft 365 admin center - learn about the features that were added this month."
+- admindeeplinkMAC
 ---
 
 # What's new in the Microsoft 365 admin center
