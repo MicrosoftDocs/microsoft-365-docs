@@ -183,7 +183,7 @@ There are currently 39 services available as part of Office 365 services in the 
 30. Microsoft Forms
 31. Power Automate for Office 365
 32. Power Virtual Agents for Office 365
-33. PowerApps for Office 365
+33. Power Apps for Office 365
 34. Microsoft Bookings
 35. To-Do
 36. Whiteboard
