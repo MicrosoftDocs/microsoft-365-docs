@@ -83,7 +83,7 @@ The API list of action types contains the new response actions along with the pr
 
 > [!Note]
 >
-> The prior response actions (AlertAndBlock, and Alert) will be removed once the feature has reached GAed. The estimated GA date with grace period is end of October 2021.  We advise updating any existing templates or scripts as soon as possible.
+> The prior response actions (AlertAndBlock, and Alert) will be removed when the feature has reached GAed. The estimated GA date with grace period is end of October 2021.  We advise updating any existing templates or scripts as soon as possible.
 
 ## Json representation
 

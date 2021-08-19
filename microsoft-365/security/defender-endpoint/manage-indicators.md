@@ -76,7 +76,7 @@ You can create an indicator for:
 ## Public Preview for Automated investigation and remediation engine
 
 > [!IMPORTANT]
-> Information in this section (**Public Preview for Automated investigation and remediation engine**) relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+> Information in this section (**Public Preview for Automated investigation and remediation engine**) relates to prereleased product which might be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 When creating a new indicator (IoC), one or more of the following actions are now available:
 
@@ -84,6 +84,7 @@ When creating a new indicator (IoC), one or more of the following actions are no
 - Audit – an alert will be triggered when the IoC runs.
 - Block execution - the IoC will not be allowed to run.
 - Block and remediate - the IoC will not be allowed to run and a remediation action will be applied to the IoC.
+
 The table below shows exactly which actions are available per indicator (IoC) type:
 
 | IoC type | Available actions |
