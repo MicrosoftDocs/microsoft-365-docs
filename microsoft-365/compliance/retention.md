@@ -289,7 +289,7 @@ Advantages of using adaptive scopes:
 
 - More powerful targeting for your retention requirements. For example, you can assign different retention settings to users according to their geographical location without the administrative overhead of creating and maintaining groups.
 
-- Query-based membership provides more robust targeting to accommodate business changes that might not be reliably reflected in group membership or external processes that rely on cross-department communication.
+- Query-based membership provides resilience against business changes that might not be reliably reflected in group membership or external processes that rely on cross-department communication.
 
 - A single retention policy can include locations for both Microsoft Teams and Yammer, whereas when you use a static scope, these locations require their own retention policy.
 
