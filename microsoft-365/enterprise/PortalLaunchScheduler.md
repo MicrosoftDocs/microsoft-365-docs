@@ -35,16 +35,16 @@ Site permissions must be set up separately from waves as part of the launch. For
 
 > [!NOTE]
 >
-> - This feature will be accessible from the **Settings** panel on the home page of SharePoint communication sites for Targeted release customers starting in May 2021 and will become available to all customers by July 2021
-> - The PowerShell version of this tool is available today
-> - This feature can only be used on modern SharePoint communication sites
-> - You must have site owner permissions for the site to customize and schedule the launch of a portal
-> - Launches must be scheduled at least seven days in advance and each wave can last one to seven days
-> - The number of waves required is automatically determined by the expected number of users
-> - Before scheduling a portal launch, the [Page Diagnostics for SharePoint tool](https://aka.ms/perftool) must be run to verify that the home page of the site is healthy
-> - At the end of the launch, all users with permissions to the site will be able to access the new site
-> - If your organization is using [Viva Connections](/SharePoint/viva-connections), users may see your organization's icon in the Microsoft Teams app bar, however when the icon is selected users will not be able to access the portal until their wave has launched
-> - This feature is not available for Office 365 Germany, Office 365 operated by 21Vianet (China), or Microsoft 365 US Government plans
+> - This feature will be accessible from the **Settings** panel on the home page of SharePoint communication sites for Targeted release customers starting in May 2021 and will become available to all customers by July 2021.
+> - The PowerShell version of this tool is available today.
+> - This feature can only be used on modern SharePoint communication sites.
+> - You must have site owner permissions for the site to customize and schedule the launch of a portal.
+> - Launches must be scheduled at least seven days in advance and each wave can last one to seven days.
+> - The number of waves required is automatically determined by the expected number of users.
+> - Before scheduling a portal launch, the [Page Diagnostics for SharePoint tool](https://aka.ms/perftool) must be run to verify that the home page of the site is healthy.
+> - At the end of the launch, all users with permissions to the site will be able to access the new site.
+> - If your organization is using [Viva Connections](/SharePoint/viva-connections), users may see your organization's icon in the Microsoft Teams app bar, however when the icon is selected users will not be able to access the portal until their wave has launched.
+> - This feature is not available for Office 365 Germany, Office 365 operated by 21Vianet (China), or Microsoft 365 US Government plans.
 
 ## Understand the differences between Portal launch scheduler options:
 
