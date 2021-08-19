@@ -40,12 +40,15 @@ To make your trained model available for others to use:
 
 To find trained models that might be suitable for your content:
 
-1. In the document library for your model, select **Automate** > **AI Builder** > **View document understanding models**.
+1. In the document library for your model, select **Automate** > **View document understanding models**.
 
 2. On the **Review models and apply new ones** page:
 
    - On the **Applied** tab, see the models that have been applied to your library. You can select to view details to confirm extractors and other settings.
    - On the **Available** tab, see the trained models that are available to be applied to your library.
+
+    ![Screenshot of the Review models and apply new ones page showing the Applied and Available tabs.](../media/content-understanding/review-models-apply-new-ones.png)
+
 
 ### Apply a trained model to your library
 
