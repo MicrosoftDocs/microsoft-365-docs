@@ -61,14 +61,14 @@ The first step is to confirm that Contoso's Microsoft 365 licensing includes sup
 
 They must also confirm that users included in communication compliance policies must be assigned one of the licenses above.
 
->[!IMPORTANT]
->Office 365 Advanced Compliance is no longer sold as a standalone subscription. When current subscriptions expire, customers should transition to one of the subscriptions above, which contain the same or additional compliance features.
+> [!IMPORTANT]
+> Office 365 Advanced Compliance is no longer sold as a standalone subscription. When current subscriptions expire, customers should transition to one of the subscriptions above, which contain the same or additional compliance features.
 
 Contoso IT administrators take the following steps to verify the licensing support for Contoso:
 
-1. IT administrators sign in to the **Microsoft 365 admin center** [(https://admin.microsoft.com)](https://admin.microsoft.com) and navigate to **Microsoft 365 admin center** > **Billing** > **Licenses**.
+1. IT administrators sign in to the **Microsoft 365 admin center** <https://admin.microsoft.com> and navigate to **Microsoft 365 admin center** > **Billing** > **Licenses**.
 
-2. Here they confirm that they have one of the [license options](https://docs.microsoft.com/microsoft-365/compliance/communication-compliance-configure?view=o365-worldwide#before-you-begin) that includes support for communication compliance.
+2. Here they confirm that they have one of the [license options](communication-compliance-configure.md#subscriptions-and-licensing) that includes support for communication compliance.
 
 ![Communication compliance licensing](../media/communication-compliance-case-licenses.png)
 
@@ -86,8 +86,8 @@ Contoso decides to use the *Communication Compliance* role group assign all the 
 | **Communication Compliance Investigator** | Use this group to assign permissions to users that will act as communication compliance investigators. Users assigned to this role group can view message metadata and content, escalate to additional reviewers, escalate to an Advanced eDiscovery case, send notifications to users, and resolve the alert. |
 | **Communication Compliance Viewer** | Use this group to assign permissions to users that will manage communication reports. Users assigned to this role group can access all reporting widgets on the communication compliance home page and can view all communication compliance reports. |
 
-1. Contoso IT administrators sign into the **Office 365 Security & Compliance center** permissions page [(https://protection.office.com/permissions)](https://protection.office.com/permissions) using credentials for a global administrator account and select the link to view and manage roles in Microsoft 365.
-2. In the **Security & Compliance Center**, they go to **Permissions** and select the link to view and manage roles in Office 365.
+1. Contoso IT administrators sign into the [Microsoft 365 compliance center](https://compliance.microsoft.com/permissions) permissions page using credentials for a global administrator account and select the link to view and manage roles in Microsoft 365.
+2. In the **Microsoft 365 compliance center**, they go to **Permissions** and select the link to view and manage roles in Office 365.
 3. The administrators select the *Communication Compliance* role group, then select **Edit role group**.
 4. The administrators select **Choose members** from the left navigation pane, then select **Edit**.
 5. They select **Add** and then select the checkbox for all Contoso users that will manage communication compliance, investigate, and review alerts.
@@ -147,13 +147,13 @@ To get started with a communication compliance policy, there are several prerequ
 
 Communication compliance requires audit logs to show alerts and track remediation actions taken by reviewers. The audit logs are a summary of all activities associated with a defined organizational policy or anytime there is a change to a communication compliance policy.
 
-Contoso IT administrators review and complete the [step-by-step instructions](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off) to turn on auditing. After they turn on auditing, a message is displayed that says the audit log is being prepared and that they can run a search in a couple of hours after the preparation is complete. The Contoso IT administrators only have to do this action once.
+Contoso IT administrators review and complete the [step-by-step instructions](turn-audit-log-search-on-or-off.md) to turn on auditing. After they turn on auditing, a message is displayed that says the audit log is being prepared and that they can run a search in a couple of hours after the preparation is complete. The Contoso IT administrators only have to do this action once.
 
 ### Configuring Yammer tenant for Native Mode
 
 Communication compliance requires that the Yammer tenant for an organization is in Native Mode to monitor for offensive language in private messages and public community conversations.
 
-Contoso IT administrators make sure they review the information in the [Overview of Yammer Native Mode in Microsoft 365 article](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode) and follow the steps for running the migration tool in the [Configure your Yammer network for Native Mode for Microsoft 365](https://docs.microsoft.com/yammer/configure-your-yammer-network/native-mode) article.
+Contoso IT administrators make sure they review the information in the [Overview of Yammer Native Mode in Microsoft 365 article](/yammer/configure-your-yammer-network/overview-native-mode) and follow the steps for running the migration tool in the [Configure your Yammer network for Native Mode for Microsoft 365](/yammer/configure-your-yammer-network/native-mode) article.
 
 ### Setting up a group for in-scope users
 
@@ -187,4 +187,4 @@ With all the prerequisites completed, the IT administrators and the compliance s
 
 Now that the communication compliance policy to monitor for offensive language is configured, the next step for the Contoso compliance specialists will be to investigate and remediate any alerts generated by the policy. It will take up to 24 hours for the policy to fully process communications in all the communication source channels and for alerts to show up in the **Alert dashboard**.
 
-After alerts are generated, Contoso compliance specialists will follow the [workflow instructions](https://docs.microsoft.com/microsoft-365/compliance/communication-compliance-investigate-remediate) to investigate and remediate offensive language issues.
+After alerts are generated, Contoso compliance specialists will follow the [workflow instructions](communication-compliance-investigate-remediate.md) to investigate and remediate offensive language issues.

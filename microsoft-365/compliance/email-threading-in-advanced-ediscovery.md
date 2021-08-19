@@ -1,5 +1,5 @@
 ---
-title: Email threading - eDiscovery
+title: Email threading in Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -14,12 +14,11 @@ ms.collection: M365-security-compliance
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: 
-description: When conducting an Advanced eDiscovery analysis, email threading parses an email conversation and separates each message into different categories.
+description: "When conducting an Advanced eDiscovery analysis, email threading parses an email conversation and separates each message into different categories."
 ms.custom: seo-marvel-mar2020
 ---
 
-# Email threading
+# Email threading in Advanced eDiscovery
 
 Consider an email conversation that has been going on for a while. In most cases, the last email on the thread will include the contents of all the preceding emails; reviewing the last email will give a complete context of the conversation that happened in the thread. Email threading identifies such emails so that reviewers can review a fraction of collected documents without losing any context.
 

@@ -1,6 +1,6 @@
 ---
 title: App control
-description:  
+description:  How to use app control and trust with applications
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
@@ -17,10 +17,10 @@ ms.collection: M365-modern-desktop
 
 App control is an optional security practice in Microsoft Managed Desktop that restricts the execution of code on client devices. This control mitigates the risk of malware or malicious scripts by requiring that only code signed by a customer-approved list of publishers can run. There are many security benefits from this control, but it primarily aims to protect data and identity from client-based exploits.
 
-Microsoft Managed Desktop simplifies the management of app control policies by creating a base policy that enables core productivity scenarios. You can extend trust to additional signers that are specific to the apps and scripts in your environment. 
+Microsoft Managed Desktop simplifies the management of app control policies by creating a base policy that enables core productivity scenarios. You can extend trust to other signers that are specific to the apps and scripts in your environment. 
 
 
-Any security technology requires a balance among user experience, security, and cost. App control reduces the threat of malicious software in your environment, but there are consequences to the user and additional actions for your IT administrator.
+Any security technology requires a balance among user experience, security, and cost. App control reduces the threat of malicious software in your environment, but there are consequences to the user and further actions for your IT administrator.
 
 **Additional security:**
 
@@ -43,7 +43,7 @@ Microsoft Managed Desktop curates a base policy that trusts the core components 
 
 ### Base policy
 
-Microsoft Managed Desktop, in collaboration with Microsoft cybersecurity experts, creates and maintains a standard policy that enables most apps deployed through Microsoft Intune while blocking dangerous activities like code compilation or execution of untrusted files.
+Microsoft Managed Desktop, in collaboration with Microsoft cybersecurity experts, creates, and maintains a standard policy that enables most apps deployed through Microsoft Intune while blocking dangerous activities like code compilation or execution of untrusted files.
 
 The base policy takes the following approach to restricting software execution:
 
@@ -57,7 +57,7 @@ If a user other than an administrator could have added an app or script to a dev
 
 ### Signer requests
 
-You inform us of which apps are provided by software vendors you trust by filing a *signer request*. By doing so, we add that trust information into the baseline application control policy and allow any software signed with that publisher's certificate to run on your devices.
+You inform us of which apps are provided by software publishers you trust by filing a *signer request*. By doing so, we add that trust information into the baseline application control policy and allow any software signed with that publisher's certificate to run on your devices.
 
 ## Audit and Enforced policies
 

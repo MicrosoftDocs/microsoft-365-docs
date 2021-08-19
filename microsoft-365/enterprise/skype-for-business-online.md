@@ -1,8 +1,8 @@
 ---
 title: "Skype for Business Online in Office 365 - Admin Help"
-ms.author: supotter
-author: supotter
-manager: scotv
+ms.author: kvice
+author: kelleyvice-msft
+manager: laurawi
 ms.date: 6/29/2018
 audience: Admin
 ms.topic: hub-page

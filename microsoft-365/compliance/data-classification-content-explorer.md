@@ -12,6 +12,8 @@ ms.service: O365-seccomp
 localization_priority: Priority
 ms.collection: 
 - M365-security-compliance
+- m365solution-mip
+- m365initiative-compliance
 search.appverid: 
 - MOE150
 - MET150
@@ -32,12 +34,13 @@ Every account that accesses and uses data classification must have a license ass
 - Office 365 (E5)
 - Advanced Compliance (E5) add-on
 - Advanced Threat Intelligence (E5) add-on
+- Microsoft 365 E5/A5 Info Protection & Governance
+- Microsoft 365 E5/A5 Compliance
+
 
 ### Permissions
 
 In order to get access to the content explorer tab, an account must be assigned membership in any one of these roles or role groups. 
-
-A [DLP policy](data-loss-prevention-policies.md) can help protect sensitive information, which is defined as a **sensitive information type**. Microsoft 365 includes [definitions for many common sensitive information types](sensitive-information-type-entity-definitions.md) across many different regions that are ready for you to use. For example, a credit card number, bank account numbers, national ID numbers, and Windows Live ID service numbers.
 
 **Microsoft 365 role groups**
 
@@ -49,6 +52,9 @@ A [DLP policy](data-loss-prevention-policies.md) can help protect sensitive info
 > [!IMPORTANT]
 > Membership in these role groups does not allow you to view the list of items in content explorer or to view the contents of the items in content explorer.
 
+> [!IMPORTANT]
+> Only Global admins can manage or assign permissions to other users in the Compliance Center. For more details, see [Give users access to the Security & Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
+> 
 ### Required permissions to access items in content explorer
 
 Access to content explorer is highly restricted because it lets you read the contents of scanned files.
@@ -56,7 +62,7 @@ Access to content explorer is highly restricted because it lets you read the con
 > [!IMPORTANT]
 > These permissions supercede permissions that are locally assigned to the items, which allows viewing of the content. 
 
-There are two roles that grant access to content explorer:
+There are two roles that grant access to content explorer and it is granted using the [Compliance Center](https://compliance.microsoft.com/permissions):
 
 - **Content Explorer List viewer**: Membership in this role group allows you to see each item and its location in list view. The `data classification list viewer` role has been pre-assigned to this role group.
 
@@ -74,7 +80,7 @@ Content explorer shows a current snapshot of the items that have a sensitivity l
 
 ### Sensitive information types
 
-A [DLP policy](data-loss-prevention-policies.md) can help protect sensitive information, which is defined as a **sensitive information type**. Microsoft 365 includes [definitions for many common sensitive information types](sensitive-information-type-entity-definitions.md) from across many different regions that are ready for you to use. For example, a credit card number, bank account numbers, national ID numbers, and Windows Live ID service numbers.
+A [DLP policy](dlp-learn-about-dlp.md) can help protect sensitive information, which is defined as a **sensitive information type**. Microsoft 365 includes [definitions for many common sensitive information types](sensitive-information-type-entity-definitions.md) from across many different regions that are ready for you to use. For example, a credit card number, bank account numbers, national ID numbers, and Windows Live ID service numbers.
 
 > [!NOTE]
 > Content explorer doesn't currently scan for sensitive information types in Exchange Online.
@@ -137,4 +143,4 @@ You can search on:
 - [Learn about sensitivity labels](sensitivity-labels.md)
 - [Learn about retention policies and retention labels](retention.md)
 - [Sensitive information type entity definitions.md](sensitive-information-type-entity-definitions.md)
-- [Overview of data loss prevention](data-loss-prevention-policies.md)
+- [Learn about data loss prevention](dlp-learn-about-dlp.md)

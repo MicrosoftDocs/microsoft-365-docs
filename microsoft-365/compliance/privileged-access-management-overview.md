@@ -1,27 +1,28 @@
 ---
-title: "Privileged access management"
-f1.keywords:
-- NOCSH
+title: "Learn about privileged access management"
+description: This article provides an overview about privileged access management in Microsoft 365, including answers to frequently asked questions (FAQs).
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: overview
+f1.keywords:
+- NOCSH
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
 - Strat_O365_IP
-- M365-security-compliance
+- m365-security-compliance
+- m365solution-insiderrisk
+- m365initiative-compliance
 ms.custom: 
  - Ent_Solutions
  - seo-marvel-apr2020
-ms.assetid: 
-description: This article provides an overview about privileged access management in Microsoft 365, including answers to frequently asked questions (FAQs).
 ---
 
-# Privileged access management
+# Learn about privileged access management
 
 Privileged access management allows granular access control over privileged admin tasks in Office 365. It can help protect your organization from breaches that use existing privileged admin accounts with standing access to sensitive data or access to critical configuration settings. Privileged access management requires users to request just-in-time access to complete elevated and privileged tasks through a highly scoped and time-bounded approval workflow. This configuration gives users just-enough-access to perform the task at hand, without risking exposure of sensitive data or critical configuration settings. Enabling privileged access management in Microsoft 365 allows your organization to operate with zero standing privileges and provide a layer of defense against standing administrative access vulnerabilities.
 
@@ -29,7 +30,7 @@ For a quick overview of the integrated Customer Lockbox and privileged access ma
 
 ## Layers of protection
 
-Privileged access management complements other data and access feature protections within the Microsoft 365 security architecture. Including privileged access management as part of an integrated and layered approach to security provides a security model that maximizes protection of sensitive information and Microsoft 365 configuration settings. As shown in the diagram, privileged access management builds on the protection provided with native encryption of Microsoft 365 data and the role-based access control security model of Microsoft 365 services. When used with [Azure AD Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure), these two features provide access control with just-in-time access at different scopes.
+Privileged access management complements other data and access feature protections within the Microsoft 365 security architecture. Including privileged access management as part of an integrated and layered approach to security provides a security model that maximizes protection of sensitive information and Microsoft 365 configuration settings. As shown in the diagram, privileged access management builds on the protection provided with native encryption of Microsoft 365 data and the role-based access control security model of Microsoft 365 services. When used with [Azure AD Privileged Identity Management](/azure/active-directory/active-directory-privileged-identity-management-configure), these two features provide access control with just-in-time access at different scopes.
 
 ![Layered protection in Microsoft 365](../media/pam-layered-protection.png)
 
@@ -87,7 +88,7 @@ No, you need the Exchange Role Management role assigned to accounts that manage 
 
 ### How is privileged access management related to Customer Lockbox?
 
-[Customer Lockbox](https://docs.microsoft.com/office365/admin/manage/customer-lockbox-requests) allows a level of access control for organizations when Microsoft accesses data. Privileged access management allows granular access control within an organization for all Microsoft 365 privileged tasks.
+[Customer Lockbox](/office365/admin/manage/customer-lockbox-requests) allows a level of access control for organizations when Microsoft accesses data. Privileged access management allows granular access control within an organization for all Microsoft 365 privileged tasks.
 
 ## Ready to get started?
 

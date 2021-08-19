@@ -84,7 +84,7 @@ To update the data sources that are associated with a custodian:
   
 5. Click the **Select additional data sources** tab to add or remove Teams, SharePoint, or Exchange mailboxes associated with the custodian. 
 
-    For more information about data sources associated with a custodian, see "Step 3: Associate additional data sources to a custodian" in [Add custodians to a case](add-custodians-to-case.md#step-3-associate-additional-data-sources-to-a-custodian). 
+    For more information about data sources associated with a custodian, see [Add custodians to a case](add-custodians-to-case.md). 
   
 6. Click **Place custodial holds** to enable or disable the hold for the custodian.
 

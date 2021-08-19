@@ -2,8 +2,8 @@
 title: "Increased Microsoft 365 security for your Microsoft 365 for enterprise test environment"
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 12/09/2019
 audience: ITPro
@@ -25,7 +25,7 @@ With the instructions in this article, you configure additional Microsoft 365 se
 ![Test Lab Guides for the Microsoft cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> Click [here](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) for a visual map to all the articles in the Microsoft 365 for enterprise Test Lab Guide stack.
+> Click [here](../downloads/Microsoft365EnterpriseTLGStack.pdf) for a visual map to all the articles in the Microsoft 365 for enterprise Test Lab Guide stack.
   
 ## Phase 1: Build out your Microsoft 365 for enterprise test environment
 
@@ -38,11 +38,11 @@ If you want to configure increased Microsoft 365 security in a simulated enterpr
 
 ## Phase 2: Configure increased Microsoft 365 security
 
-In this phase, you enable increased Microsoft 365 security for your Microsoft 365 for enterprise test environment. For additional details and settings, see [Configure your tenant for increased security](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security).
+In this phase, you enable increased Microsoft 365 security for your Microsoft 365 for enterprise test environment. For additional details and settings, see [Configure your tenant for increased security](/office365/securitycompliance/tenant-wide-setup-for-increased-security).
 
 ### Configure SharePoint Online to block apps that don't support modern authentication
 
-Apps that do not support modern authentication cannot have [identity and device access configurations](microsoft-365-policies-configurations.md) applied to them, which is an important element of securing your Microsoft 365 subscription and its digital assets. 
+Apps that do not support modern authentication cannot have [identity and device access configurations](../security/office-365-security/microsoft-365-policies-configurations.md) applied to them, which is an important element of securing your Microsoft 365 subscription and its digital assets. 
 
 1. Go to the Microsoft 365 admin center ([https://portal.microsoft.com](https://portal.microsoft.com)) and sign in to your Microsoft 365 test lab subscription with your global administrator account.
     
@@ -55,13 +55,13 @@ Apps that do not support modern authentication cannot have [identity and device 
 4. Click **Apps that don't support modern authentication**, select **Block access**, and then click **Save**.
 
 
-### Enable Advanced Threat Protection for SharePoint, OneDrive for Business, and Microsoft Teams
+### Enable Defender for Office 365 for SharePoint, OneDrive for Business, and Microsoft Teams
 
-Office 365 Advanced Threat Protection (ATP) for SharePoint, OneDrive, and Microsoft Teams protects your organization from inadvertently sharing malicious files.
+Defender for Office 365 for SharePoint, OneDrive, and Microsoft Teams protects your organization from inadvertently sharing malicious files.
 
 1. Go to the [Security & Compliance Center](https://protection.office.com) and sign in with your global administrator account.
 
-2. In the left navigation pane, under **Threat management**, click **Policy**, and then click **ATP safe attachments**. 
+2. In the left navigation pane, under **Threat management**, click **Policy**, and then click **Safe Attachments**. 
 
 3. Under **Protect files in SharePoint, OneDrive, and Microsoft Teams**. select **Turn on ATP for SharePoint, OneDrive, and Microsoft Teams**.
 
@@ -95,7 +95,7 @@ To see the security dashboard:
 
 Take a close look at all the cards on the dashboard to familiarize yourself with the information provided.
 
-For more information, see [Security Dashboard](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-dashboard).
+For more information, see [Security Dashboard](../security/office-365-security/security-dashboard.md).
 
 
 ## Phase 4: Examine Microsoft Secure Score
@@ -106,7 +106,7 @@ Microsoft Secure Score shows your security posture as a number, which indicates 
 2. On the **Overview**  tab, note your current Secure Score and how it compares with the global average and subscriptions with a similar number of licenses.
 3. On the **Improvement actions** tab, read through the list of actions you can take to increase your score.
 
-For more information, see [Microsoft Secure Score](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score).
+For more information, see [Microsoft Secure Score](../security/defender/microsoft-secure-score.md).
 
 ## Next steps
 
@@ -118,4 +118,4 @@ Explore additional [information protection](m365-enterprise-test-lab-guides.md#i
 
 [Microsoft 365 for enterprise overview](microsoft-365-overview.md)
 
-[Microsoft 365 for enterprise documentation](https://docs.microsoft.com/microsoft-365-enterprise/)
+[Microsoft 365 for enterprise documentation](/microsoft-365-enterprise/)
