@@ -27,6 +27,23 @@ description: "Get step-by-step tools to plan, migrate, and implement the feature
 
 Microsoft 365 and Office 365 setup guides give you tailored guidance and resources for planning and deploying your tenant, apps, and services. These guides are created using the same best practices that [Microsoft 365 FastTrack](https://www.microsoft.com/fasttrack/microsoft-365) onboarding specialists share in individual interactions, and they're available to all admins within the Microsoft 365 admin center. They give information on product setup, enabling security features, deploying collaboration tools, and provide scripts to speed up advanced deployments.
 
+> [!NOTE]
+> You must be assigned an admin role like Global Reader to access the Microsoft 365 setup guides. Only admins with the Global Administrator role can use the guides to change settings in the tenant. 
+
+## How to access setup guides in the Microsoft 365 admin center
+
+The setup guides are accessible from the [Setup guidance](https://aka.ms/setupguidance) page in the Microsoft 365 admin center. You can keep track of the status of your progress and you have the option to return at any time to complete a guide. To reach the **Setup guidance** page:
+
+1. In the [Microsoft 365 admin center](https://admin.microsoft.com/), go to the **Home** page.
+
+2. Find the **Training & guides** card.
+
+   ![Training & guides card in the Microsoft 365 admin center](../media/setup-guides-for-microsoft-365/adminportal-trainingandguides.png)
+
+3. Select **Step-by-step guides**.
+
+   ![Screenshot of the Setup guidance page in the Microsoft 365 admin center](../media/setup-guides-for-microsoft-365/adminportal-setupguidance.png)
+
 ## Guides for initial setup
 
 ### Prepare your environment
@@ -46,7 +63,6 @@ When you migrate a Gmail user's mailbox to Microsoft 365, email messages are mig
 The [Microsoft 365 deployment advisor](https://aka.ms/microsoft365setupguide) provides you with guidance when setting up productivity tools, security policies, and device management capabilities. With a Microsoft 365 Business Premium or Microsoft 365 for enterprise subscription, you can use this advisor to set up and configure your organization's devices.
 
 You'll receive guidance and access to resources to enable your cloud services, update devices to the latest supported version of Windows 10, and join devices to Azure Active Directory (Azure AD), all in one central location.
-
 
 ### Remote work setup guide
 
@@ -149,6 +165,10 @@ Get an overview of the capabilities you can apply to your Information Protection
 
 The [Microsoft Information governance setup guide](https://aka.ms/migsetupguide) provides you with the information you'll need to set up and manage your organization's governance strategy, to ensure that your data is classified and managed according to the specific lifecycle guidelines you set. With this guide, you'll learn how to create, auto-apply, or publish labels, label policies, and retention policies that are applied to your organization's reusable content and compliance records. You'll also get information on importing CSV files with a file plan for bulk scenarios or for applying them manually to individual documents.
 
+### Microsoft Cloud App Security setup guide
+
+The [Microsoft Cloud App Security setup guide](https://aka.ms/cloudappsecuritysetup) provides easy to follow deployment and management guidance to set up your Cloud Discovery solution. With Cloud Discovery, you'll integrate your supported security apps, and then you'll use traffic logs to dynamically discover and analyze the cloud apps that your organization uses. You'll also set up features available through the Cloud App Security solution, including threat detection policies to identify high-risk use, information protection policies to define access, and real-time session controls to monitor activity. With these features, your environment gets enhanced visibility, control over data movement, and analytics to identify and combat cyberthreats across all your Microsoft and third-party cloud services.
+
 ## Guides for collaboration
 
 ### Build your employee experience
@@ -165,7 +185,11 @@ The [Mobile apps setup guide](https://aka.ms/officeappguidance) provides instruc
 
 ### Microsoft Teams setup guide
 
-The [Microsoft Teams setup guide](https://aka.ms/teamsguidance) provides your organization with guidance to set up team workspaces that host real-time conversations through messaging, calls, and audio or video meetings for both team and private communication. You'll receive the instructions for determining your organization's network requirements by using the Network Planner tool and the Teams advisor within the Teams admin center. Once your deployment is complete, the guide includes helpful resources to get started using Teams.
+The [Microsoft Teams setup guide](https://aka.ms/teamsguidance) provides your organization with guidance to set up team workspaces that host real-time conversations through messaging, calls, and audio or video meetings for both team and private communication. Use the tools in this guide to configure Guest access, set who can create teams, and add team members from a .csv file, all without the need to open a PowerShell session. You'll also get best practices for determining your organization's network requirements and ensuring a successful Teams deployment.
+
+### Microsoft Teams for Education setup guide
+
+The [Microsoft Teams for Education setup guide](https://aka.ms/teamsedusetup) provides your school with guidance that brings collaborative classrooms, conversations, meetings, files, and apps together in one place. The guide also provides instructions to prepare, plan, and configure Teams for your school. After your deployment is complete, use built-in tools to configure who can create teams, and optionally create teams yourself while populating members with a .csv file.
 
 ### SharePoint setup guide
 
@@ -202,28 +226,3 @@ For organizations using Configuration Manager, you can use the [Deploy and updat
 ### Intune Configuration Manager co-management setup guide
 
 Use the [Intune Configuration Manager co-management setup guide](https://aka.ms/comanagementsetup) to set up existing Configuration Manager client devices and new internet-based devices that your org wants to co-manage with both Microsoft Intune and Configuration Manager. Co-management allows you to manage Windows 10 devices and adds new functionality to your org's devices, while receiving the benefits of both solutions.
-
-## How to access setup guides in the Microsoft 365 admin center
-
-The setup guides are accessible from the [Setup guidance](https://aka.ms/setupguidance) page in the Microsoft 365 admin center. You can keep track of the status of your progress and you have the option to return at any time to complete a guide. To reach the **Setup guidance** page:
-
-1. In the [Microsoft 365 admin center](https://admin.microsoft.com/), go to the **Home** page.
-
-2. Find the **Training & guides** card.
-
-   ![Training & guides card in the Microsoft 365 admin center](../media/setup-guides-for-microsoft-365/adminportal-trainingandguides.png)
-
-3. Select **Step-by-step guides**.
-
-   ![Screenshot of the Setup guidance page in the Microsoft 365 admin center](../media/setup-guides-for-microsoft-365/adminportal-setupguidance.png)
-
-> [!NOTE]
-> Tenant administrator permissions are required to access the Microsoft 365 admin center.
-
-## How do setup guides work in the Microsoft 365 admin center?
-
-Each guide provides you with step-by-step instructions, resources, articles, and when needed, scripts you can use to make configuration changes. These guides provide you with choices that reflect the specific needs of both small and large organizations. Additionally, the guidance includes assistance for both new and more experienced admins.
-
-![Example of a setup guide](../media/setup-guides-for-microsoft-365/m365-setupguide-example.png)
-
-You can use the guides to learn more about specific Microsoft 365 and Office 365 features during the planning phase, during deployment and rollout, or to revisit them after you've completed a deployment to modify a setting.
