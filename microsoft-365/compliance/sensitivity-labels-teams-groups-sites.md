@@ -165,7 +165,7 @@ Known limitations for this preview:
 
 - The following features and apps might be incompatible with authentication contexts, so we encourage you to check that these continue to work after a user successfully accesses  a site by using an authentication context:
     
-    - Workflows that use PowerApps or Power Automate
+    - Workflows that use Power Apps or Power Automate
     - Third-party apps
 
 ## Sensitivity label management
