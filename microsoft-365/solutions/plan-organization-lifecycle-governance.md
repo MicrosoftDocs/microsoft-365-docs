@@ -14,6 +14,7 @@ ms.collection:
 ms.custom: 
 - M365solutions
 f1.keywords: NOCSH
+recommendations: false
 description: "Lean about lifecycle governance options for collaboration tools in Microsoft 365"
 ---
 
@@ -34,7 +35,7 @@ We highly recommend self-service to empower group owners and help users get thei
 Consider the following governance options for groups creation:
 
 - To limit group sprawl, use [groups expiration policies](microsoft-365-groups-expiration-policy.md) to automatically delete groups that are not being used.
-- Limit group creation to members of a [security groups with dynamic membership](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-create-rule) containing, for example, all full-time employees.
+- Limit group creation to members of a [security groups with dynamic membership](/azure/active-directory/users-groups-roles/groups-create-rule) containing, for example, all full-time employees.
 - Limit group creation to a security group and require users to complete training in your organization's group usage policies in order to become members of the security group.
 
 If you want to limit who can create groups, see [Manage who can create Microsoft 365 groups](manage-creation-of-groups.md) for information on how to configure this.
@@ -43,7 +44,7 @@ If you want to limit who can create groups, see [Manage who can create Microsoft
 
 When a Microsoft 365 group is deleted, by default it's retained for 30 days. This 30-day period is called "soft-delete" because you can still restore the group. After 30 days, the group and associated content is permanently deleted and cannot be restored.
 
-If you have retention policies in place to retain chat, files, or mail, those items will be preserved after the group is deleted. See [Learn about retention policies](https://docs.microsoft.com/microsoft-365/compliance/retention-policies) for details.
+If you have retention policies in place to retain chat, files, or mail, those items will be preserved after the group is deleted. See [Learn about retention policies](../compliance/retention.md) for details.
 
 If you want to delete a group but preserve the content from one or more of the group-connected services, see [Archive groups, teams, and Yammer](end-life-cycle-groups-teams-sites-yammer.md) for information.
 
@@ -75,3 +76,5 @@ Expiration policies are a good way to limit group sprawl by ensuring that groups
 [Collaboration governance planning step-by-step](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
 
 [Create your collaboration governance plan](collaboration-governance-first.md)
+
+[Remove a former employee and secure data](/microsoft-365/admin/add-users/remove-former-employee)

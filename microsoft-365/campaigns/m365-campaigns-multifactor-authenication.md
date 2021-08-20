@@ -2,10 +2,10 @@
 title: "Set up multifactor authentication"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: sirkkuw
+ms.author: sharik
+author: SKjerland
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -26,7 +26,7 @@ search.appverid:
 description: "Set up multifactor authentication."
 ---
 
-# Set up multifactor authentication
+# Set up multifactor authentication on your mobile device
 
 Multi-factor authentication provides more security for your business. After your admin has required you to use MFA, you can set up the Microsoft Authenticator app to let you log into key apps securely with your phone. 
 

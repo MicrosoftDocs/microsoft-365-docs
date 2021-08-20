@@ -14,6 +14,7 @@ ms.collection:
 ms.custom: 
 - M365solutions
 f1.keywords: NOCSH
+recommendations: false
 description: "Learn how to create your collaboration governance plan"
 ---
 
@@ -35,11 +36,11 @@ Microsoft 365 governance should complement existing policies that govern on-prem
 
 Thinking about governance first means starting your journey to the cloud with some key decisions to best position for overall success. Some of these decisions include:
 
-- Is external sharing supported and in what scenarios? [Learn more about external sharing](https://docs.microsoft.com/microsoft-365/solutions/collaborate-with-people-outside-your-organization).
+- Is external sharing supported and in what scenarios? [Learn more about external sharing](./collaborate-with-people-outside-your-organization.md).
 
-- Who can and how will groups, sites, and teams be provisioned? [Learn about how to control who has the ability to create groups](https://docs.microsoft.com/microsoft-365/admin/create-groups/manage-creation-of-groups).
+- Who can and how will groups, sites, and teams be provisioned? [Learn about how to control who has the ability to create groups](./manage-creation-of-groups.md).
 
-- What type of content can be published in each type of environment – and what features need to be enabled to prevent users from accidentally publishing information in inappropriate locations? [Learn about information protection in Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/protect-information).
+- What type of content can be published in each type of environment – and what features need to be enabled to prevent users from accidentally publishing information in inappropriate locations? [Learn about information protection in Microsoft 365](../compliance/information-protection.md).
 
 There is no perfect answer to these questions – the right answers are the ones that balance risk and benefit for your organization.
 
@@ -75,9 +76,9 @@ Many governance decisions can be implemented by turning on or off features in Mi
 
 Traditionally, governance teams have created long documents outlining every governance decision. Unfortunately, those long documents rarely got read – which meant that governance requirements that rely on people to enforce rarely worked. Try to avoid creating long documents targeted to multiple audiences as you think about how to communicate your key governance decisions. Instead, think about these alternatives:
 
-- **Embed governance decisions directly in the solutions you create**. If you want to ensure that sensitive information is protected throughout Microsoft 365, implement sensitivity labels to ensure that your users don't accidentally expose information that they shouldn't. Block the applications where you can't provide the appropriate protection. [Learn more about sensitivity labels](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels).
+- **Embed governance decisions directly in the solutions you create**. If you want to ensure that sensitive information is protected throughout Microsoft 365, implement sensitivity labels to ensure that your users don't accidentally expose information that they shouldn't. Block the applications where you can't provide the appropriate protection. [Learn more about sensitivity labels](../compliance/sensitivity-labels.md).
 
-- **Reinforce with training**. Adapt solutions such as [Microsoft 365 learning pathways](https://docs.microsoft.com/office365/customlearning) to ensure that your organization-specific expectations are reinforced with Microsoft-provided training.
+- **Reinforce with training**. Adapt solutions such as [Microsoft 365 learning pathways](/office365/customlearning) to ensure that your organization-specific expectations are reinforced with Microsoft-provided training.
 
 - **Deliver as a site, not a document**. Create your own Microsoft 365 Adoption Center in a SharePoint communication site to ensure that your content authors and site and team owners understand not just "how to" but also "how should." Create topic-specific pages that address different business scenarios to provide both guidance and best practice to leverage or enable different capabilities in SharePoint and Teams and other applications to achieve business outcomes.
 
@@ -111,7 +112,7 @@ Business outcome goals should be the primary driver for your governance decision
 
 ### Define roles and responsibilities
 
-In addition to your governance team, there are several other key roles or teams that you will want to think about to position for success with Microsoft 365. Some roles may be combined or filled by the same person and others may not be appropriate for all organizations. Most organizations have an Executive Sponsor for Microsoft 365 as a whole and some also have a Steering Committee or team either for Microsoft 365 as a whole or just for the intranet. [Learn more about the comprehensive admin roles and permissions available in Microsoft 365](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles).
+In addition to your governance team, there are several other key roles or teams that you will want to think about to position for success with Microsoft 365. Some roles may be combined or filled by the same person and others may not be appropriate for all organizations. Most organizations have an Executive Sponsor for Microsoft 365 as a whole and some also have a Steering Committee or team either for Microsoft 365 as a whole or just for the intranet. [Learn more about the comprehensive admin roles and permissions available in Microsoft 365](/azure/active-directory/users-groups-roles/directory-assign-admin-roles).
 
 ### Revisit as business and technology changes
 
@@ -131,10 +132,10 @@ Ultimately, the success of your governance planning efforts depends on how well 
 
 [Collaboration governance planning step-by-step](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
 
-[Governance in the Microsoft Cloud Adoption Framework for Azure](https://docs.microsoft.com/azure/cloud-adoption-framework/govern)
+[Governance in the Microsoft Cloud Adoption Framework for Azure](/azure/cloud-adoption-framework/govern)
 
-[SharePoint governance overview](https://docs.microsoft.com/sharepoint/governance-overview)
+[SharePoint governance overview](/sharepoint/governance-overview)
 
 [Plan organization and lifecycle governance for groups services](plan-organization-lifecycle-governance.md)
 
-[File collaboration in SharePoint with Microsoft 365](https://docs.microsoft.com/sharepoint/deploy-file-collaboration)
+[File collaboration in SharePoint with Microsoft 365](/sharepoint/deploy-file-collaboration)

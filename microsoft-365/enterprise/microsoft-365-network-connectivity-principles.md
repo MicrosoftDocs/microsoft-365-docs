@@ -108,7 +108,7 @@ The local egress architecture has the following benefits over the traditional mo
 
 ![Avoid hairpins](../media/ee53e8af-f57b-4292-a256-4f36733b263a.png)
   
-As a general rule of thumb, the shortest, most direct route between user and closest Microsoft 365 endpoint will offer the best performance. A network hairpin happens when WAN or VPN traffic bound for a particular destination is first directed to another intermediate location (such as security stack, cloud access broker, of cloud-based web gateway), introducing latency and potential redirection to a geographically distant endpoint. Network hairpins can also be caused by routing/peering inefficiencies or suboptimal (remote) DNS lookups.
+As a general rule of thumb, the shortest, most direct route between user and closest Microsoft 365 endpoint will offer the best performance. A network hairpin happens when WAN or VPN traffic bound for a particular destination is first directed to another intermediate location (such as security stack, cloud access broker, or cloud-based web gateway), introducing latency and potential redirection to a geographically distant endpoint. Network hairpins can also be caused by routing/peering inefficiencies or suboptimal (remote) DNS lookups.
   
 To ensure that Microsoft 365 connectivity is not subject to network hairpins even in the local egress case, check whether the ISP that is used to provide Internet egress for the user location has a direct peering relationship with the Microsoft Global Network in close proximity to that location. You may also want to configure egress routing to send trusted Microsoft 365 traffic directly, as opposed to proxying or tunneling through a third-party cloud or cloud-based network security vendor that processes your Internet-bound traffic. Local DNS name resolution of Microsoft 365 endpoints helps to ensure that in addition to direct routing, the closest Microsoft 365 entry points are being used for user connections.
   
@@ -228,7 +228,7 @@ A holistic approach to enhanced security should include consideration of the fol
   - Ensures local egress for Microsoft 365 traffic
 - Improvements can be addressed incrementally as described in the [Incremental optimization](microsoft-365-network-connectivity-principles.md#BKMK_IncOpt) section. Some optimization techniques may offer better cost/benefit ratios depending on your network architecture, and you should choose optimizations that make the most sense for your organization.
 
-For more information on Microsoft 365 security and compliance, see the articles [Microsoft 365 security](https://docs.microsoft.com/microsoft-365/security) and [Microsoft 365 compliance](https://docs.microsoft.com/microsoft-365/compliance).
+For more information on Microsoft 365 security and compliance, see the articles [Microsoft 365 security](../security/index.yml) and [Microsoft 365 compliance](../compliance/index.yml).
   
 ## Incremental optimization
 <a name="BKMK_IncOpt"> </a>

@@ -26,7 +26,7 @@ description: "Learn how to optimize the performance of iFrames in SharePoint Onl
 iFrames can be useful for previewing rich content such as videos or other media. However, because iFrames load a separate page within the SharePoint site page, content loaded in the iFrame could contain large images, videos or other elements that can contribute to overall page load times and that you cannot control on the page. This article will help you understand how to determine how iFrames in your pages affect user perceived latency, and how to remediate common issues.
 
 >[!NOTE]
->For more information about performance in SharePoint Online modern sites, see [Performance in the modern SharePoint experience](https://docs.microsoft.com/sharepoint/modern-experience-performance).
+>For more information about performance in SharePoint Online modern sites, see [Performance in the modern SharePoint experience](/sharepoint/modern-experience-performance).
 
 ## Use the Page Diagnostics for SharePoint tool to analyze web parts using iFrames
 
@@ -75,4 +75,4 @@ Before you make page revisions to remediate performance issues, make a note of t
 
 [Tune Office 365 performance](tune-microsoft-365-performance.md)
 
-[Performance in the modern SharePoint experience](https://docs.microsoft.com/sharepoint/modern-experience-performance)
+[Performance in the modern SharePoint experience](/sharepoint/modern-experience-performance)

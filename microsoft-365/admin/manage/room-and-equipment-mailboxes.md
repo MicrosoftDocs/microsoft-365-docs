@@ -17,6 +17,7 @@ ms.custom:
 - Lean
 - MSStore_Link
 - AdminSurgePortfolio
+- admindeeplinkMAC
 search.appverid:
 - MET150
 - MOE150
@@ -56,7 +57,7 @@ To use room or equipment mailboxes, open Outlook from your computer or sign in t
     
 ## Set up room and equipment mailboxes
 
-To set up a room or equipment mailbox, go to the Microsoft 365 admin center. (You'll need to have admin permission to do this.) Create the mailbox and let everyone know they can start reserving it for meetings and events.
+To set up a room or equipment mailbox, go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>. (You'll need to have admin permission to do this.) Create the mailbox and let everyone know they can start reserving it for meetings and events.
   
 1. In the admin center, go to the **Resources** \> [Rooms &amp; equipment](https://go.microsoft.com/fwlink/p/?linkid=2067334) page.
   
@@ -83,7 +84,7 @@ To set up a room or equipment mailbox, go to the Microsoft 365 admin center. (Yo
 6. If you made changes, select **Save** and then **Close**.
 
 > [!Note]
-> To keep your room and equipment mailboxes secure, block sign-in to these mailboxes. For more information, see [Block sign-in for the shared mailbox account](https://docs.microsoft.com/office365/admin/email/create-a-shared-mailbox?view=o365-worldwide#block-sign-in-for-the-shared-mailbox-account).
+> To keep your room and equipment mailboxes secure, block sign-in to these mailboxes. For more information, see [Block sign-in for the shared mailbox account](/office365/admin/email/create-a-shared-mailbox#block-sign-in-for-the-shared-mailbox-account).
 
 ## Common questions about room and equipment mailboxes
 
@@ -105,4 +106,4 @@ No. While most people in your organization need a license to use Microsoft 365, 
   
 ### Do I need an owner in charge of booking the rooms or equipment?
 
- No, you don't need someone in charge of the room mailbox or equipment mailbox. 
+ No, you don't need someone in charge of the room mailbox or equipment mailbox.

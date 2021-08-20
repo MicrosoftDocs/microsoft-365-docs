@@ -1,7 +1,7 @@
 ---
 title: "Hybrid solutions"
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 09/30/2020
 audience: ITPro
@@ -26,7 +26,7 @@ With Microsoft Azure, you can deploy some Office Server workloads that were typi
   
 For Microsoft 365 identity infrastructure in Azure:
 
-- [Using Azure AD for SharePoint Server Authentication](using-azure-ad-for-sharepoint-server-authentication.md)
+- [Using Azure AD for SharePoint Server Authentication](/azure/active-directory/saas-apps/sharepoint-on-premises-tutorial)
 
 - [Deploy Microsoft 365 Directory Synchronization in Microsoft Azure](deploy-microsoft-365-directory-synchronization-dirsync-in-microsoft-azure.md)
   
@@ -45,7 +45,7 @@ For SharePoint Server 2013 workloads in Azure:
   
 ## Related topics
 
-[Microsoft 365 solution and architecture center](../solutions/solution-architecture-center.md)
+[Microsoft 365 solution and architecture center](../solutions/index.yml)
   
 [Microsoft cloud for enterprise architects illustrations](../solutions/cloud-architecture-models.md)
   

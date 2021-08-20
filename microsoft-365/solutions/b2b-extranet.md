@@ -15,12 +15,13 @@ ms.collection:
 ms.custom: 
 localization_priority: Normal
 f1.keywords: NOCSH
+recommendations: false
 description: "Learn how to create a B2B extranet site or team with managed guests from a partner organization."
 ---
 
 # Create a B2B extranet with managed guests
 
-You can use [Azure Active Directory Entitlement Management](https://docs.microsoft.com/azure/active-directory/governance/entitlement-management-overview) to create a B2B extranet to collaborate with a partner organization that uses Azure Active Directory. This allows users to self-enroll in the extranet site or team and receive access via an approval workflow.
+You can use [Azure Active Directory Entitlement Management](/azure/active-directory/governance/entitlement-management-overview) to create a B2B extranet to collaborate with a partner organization that uses Azure Active Directory. This allows users to self-enroll in the extranet site or team and receive access via an approval workflow.
 
 With this method of sharing resources for collaboration, the partner organization can help maintain and approve the guests on their end, reducing the burden on your IT department and allowing those most familiar with the collaboration agreement to manage user access.
 

@@ -16,6 +16,7 @@ ms.collection:
 search.appverid:
 - MET150
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
+recommendations: false
 description: "Learn how to control which users can create Microsoft 365 Groups."
 ---
 
@@ -23,7 +24,11 @@ description: "Learn how to control which users can create Microsoft 365 Groups."
 
 By default, all users can create Microsoft 365 groups. This is the recommended approach because it allows users to start collaborating without requiring assistance from IT.
 
-If your business requires that you restrict who can create groups, you can do so by following the procedures in this article. When you limit who can create a group, it affects all services that rely on groups for access, including:
+If your business requires that you restrict who can create groups, you can restrict Microsoft 365 Group creation to the members of a particular Microsoft 365 group or security group.
+
+If you're concerned about users creating teams or groups that don't comply with your business standards, consider requiring users to complete a training course and then adding them to the group of allowed users.
+
+When you limit who can create a group, it affects all services that rely on groups for access, including:
 
 - Outlook
 - SharePoint
@@ -34,9 +39,7 @@ If your business requires that you restrict who can create groups, you can do so
 - Power BI (classic)
 - Project for the web / Roadmap
 
-You can restrict Microsoft 365 Group creation to the members of a particular Microsoft 365 group or security group. To configure this, you use Windows PowerShell. This article walks you through the needed steps.
-
-The steps in this article won't prevent members of certain roles from creating Groups. Office 365 Global admins can create Groups via any means, such as the Microsoft 365 admin center, Planner, Teams, Exchange, and SharePoint Online. Other roles can create Groups via limited means, listed below.
+The steps in this article won't prevent members of certain roles from creating Groups. Office 365 Global admins can create Groups via the Microsoft 365 admin center, Planner, Exchange, and SharePoint Online. Other roles can create Groups via limited means, listed below.
 
 - Exchange Administrator: Exchange Admin center, Azure AD
 - Partner Tier 1 Support: Microsoft 365 Admin center, Exchange Admin center, Azure AD
@@ -44,7 +47,7 @@ The steps in this article won't prevent members of certain roles from creating G
 - Directory Writers: Azure AD
 - SharePoint Administrator: SharePoint Admin center, Azure AD
 - Teams Service Administrator: Teams Admin center, Azure AD
-- User Management Administrator: Microsoft 365 Admin center, Yammer, Azure AD
+- User Administrator: Microsoft 365 Admin center, Azure AD
 
 If you're a member of one of these roles, you can create Microsoft 365 Groups for restricted users, and then assign the user as the owner of the group.
 
@@ -56,7 +59,7 @@ To manage who creates groups, the following people need Azure AD Premium license
 - The members of the group who are allowed to create groups
 
 > [!NOTE]
-> See [Assign or remove licenses in the Azure Active Directory portal](https://docs.microsoft.com/azure/active-directory/fundamentals/license-users-groups) for more details about how to assign Azure licenses.
+> See [Assign or remove licenses in the Azure Active Directory portal](/azure/active-directory/fundamentals/license-users-groups) for more details about how to assign Azure licenses.
 
 The following people don't need Azure AD Premium or Azure AD Basic EDU licenses assigned to them:
 
@@ -76,19 +79,19 @@ Admins in the roles listed above do not need to be members of this group: they r
 
 4. Finish setting up the group, adding people or other groups who you want to be able to create groups in your org.
 
-For detailed instructions, see [Create, edit, or delete a security group in the Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/email/create-edit-or-delete-a-security-group).
+For detailed instructions, see [Create, edit, or delete a security group in the Microsoft 365 admin center](../admin/email/create-edit-or-delete-a-security-group.md).
 
 ## Step 2: Run PowerShell commands
 
-You must use the preview version of [Azure Active Directory PowerShell for Graph (AzureAD)](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2) (module name **AzureADPreview**) to change the group-level guest access setting:
+You must use the preview version of [Azure Active Directory PowerShell for Graph (AzureAD)](/powershell/azure/active-directory/install-adv2) (module name **AzureADPreview**) to change the group-level guest access setting:
 
-- If you haven't installed any version of the Azure AD PowerShell module before, see [Installing the Azure AD Module](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0-preview&preserve-view=true) and follow the instructions to install the public preview release.
+- If you haven't installed any version of the Azure AD PowerShell module before, see [Installing the Azure AD Module](/powershell/azure/active-directory/install-adv2?preserve-view=true&view=azureadps-2.0-preview) and follow the instructions to install the public preview release.
 
 - If you have the 2.0 general availability version of the Azure AD PowerShell module (AzureAD) installed, you must uninstall it by running `Uninstall-Module AzureAD` in your PowerShell session, and then install the preview version by running `Install-Module AzureADPreview`.
 
 - If you have already installed the preview version, run `Install-Module AzureADPreview` to make sure it's the latest version of this module.
 
-Copy the script below into a text editor, such as Notepad, or the [Windows PowerShell ISE](https://docs.microsoft.com/powershell/scripting/components/ise/introducing-the-windows-powershell-ise).
+Copy the script below into a text editor, such as Notepad, or the [Windows PowerShell ISE](/powershell/scripting/components/ise/introducing-the-windows-powershell-ise).
 
 Replace *\<GroupName\>* with the name of the group that you created. For example:
 
@@ -102,7 +105,7 @@ Run the script by typing:
 
 `.\GroupCreators.ps1`
 
-and [sign in with your administrator account](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell#step-2-connect-to-azure-ad-for-your-microsoft-365-subscription) when prompted.
+and [sign in with your administrator account](../enterprise/connect-to-microsoft-365-powershell.md#step-2-connect-to-azure-ad-for-your-microsoft-365-subscription) when prompted.
 
 ```PowerShell
 $GroupName = "<GroupName>"
@@ -136,7 +139,7 @@ Set-AzureADDirectorySetting -Id $settingsObjectID -DirectorySetting $settingsCop
 
 The last line of the script will display the updated settings:
 
-![This is what your settings will look like when you're done.](../media/952cd982-5139-4080-9add-24bafca0830c.png)
+![Screenshot of PowerShell script output.](../media/952cd982-5139-4080-9add-24bafca0830c.png)
 
 If in the future you want to change which group is used, you can rerun the script with the name of the new group.
 
@@ -157,7 +160,7 @@ Changes can take thirty minutes or more to take effect. You can verify the new s
 Try the same procedure again with a member of the group.
 
 > [!NOTE]
-> If members of the group aren't able to create groups, check that they aren't being blocked through their [OWA mailbox policy](https://go.microsoft.com/fwlink/?linkid=852135).
+> If members of the group aren't able to create groups, check that they aren't being blocked through their [OWA mailbox policy](/powershell/module/exchange/set-owamailboxpolicy).
 
 ## Related topics
 
@@ -165,10 +168,10 @@ Try the same procedure again with a member of the group.
 
 [Create your collaboration governance plan](collaboration-governance-first.md)
 
-[Getting started with Office 365 PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=808033)
+[Getting started with Office 365 PowerShell](../enterprise/getting-started-with-microsoft-365-powershell.md)
 
-[Set up self-service group management in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-self-service-management)
+[Set up self-service group management in Azure Active Directory](/azure/active-directory/users-groups-roles/groups-self-service-management)
 
-[Set-ExecutionPolicy](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy)
+[Set-ExecutionPolicy](/powershell/module/microsoft.powershell.security/set-executionpolicy)
 
-[Azure Active Directory cmdlets for configuring group settings](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-settings-cmdlets)
+[Azure Active Directory cmdlets for configuring group settings](/azure/active-directory/users-groups-roles/groups-settings-cmdlets)

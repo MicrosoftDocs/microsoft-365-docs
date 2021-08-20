@@ -2,10 +2,10 @@
 title: "Protect your administrator accounts"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: sirkkuw
+ms.author: sharik
+author: SKjerland
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -31,13 +31,13 @@ Because admin accounts come with elevated privileges, they're valuable targets f
 - How to set up an additional administrator account for emergencies.
 - How to protect these accounts.
 
-When you sign up for Microsoft 365 and enter your information, you automatically become the global admin. A global admin has the ultimate control of user accounts and all the other settings in the Microsoft admin center, but there are many different kinds of admin accounts with varying degrees of access. See [about admin roles](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) for information about the different access levels for each kind of admin role.
+When you sign up for Microsoft 365 and enter your information, you automatically become the Global admin. A Global admin has the ultimate control of user accounts and all the other settings in the Microsoft admin center, but there are many different kinds of admin accounts with varying degrees of access. See [about admin roles](/office365/admin/add-users/about-admin-roles) for information about the different access levels for each kind of admin role.
 
 ## Create additional admin accounts
 
 Use admin accounts only for administration. Admins should have a separate user account for regular use of Office apps and only use their administrative account when necessary to manage accounts and devices, and while working on other admin functions. It's also a good idea to remove the Microsoft 365 license from the admin accounts so you don't have to pay for them.
 
-You'll want to set up at least one additional global admin account to give admin access to another trusted employee. You can also create separate admin accounts for user management (this role is called **User management administrator**). For more information, see [about admin roles](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles).
+You'll want to set up at least one additional Global admin account to give admin access to another trusted employee. You can also create separate admin accounts for user management (this role is called **User management administrator**). For more information, see [about admin roles](/office365/admin/add-users/about-admin-roles).
 
 To create additional admin accounts:
 
@@ -48,7 +48,7 @@ To create additional admin accounts:
  2. On the **Active users** page, select **Add a user** at the top of the page, and on the **New user** panel, enter the name and other information.
  3. Expand the **Roles** section, and choose **Global administrator** to give this user global admin access. You can also choose **Customized administrator** and choose any of the roles that are displayed.
 
-    Enter an alternate email in the **Alternative email address** text box. You can use this address to recover your password information if you get locked out. For global admins, a billing statement will also be sent to this address.
+    Enter an alternate email in the **Alternative email address** text box. You can use this address to recover your password information if you get locked out. For Global admins, a billing statement will also be sent to this address.
 
     ![Choose the administrator role](../media/adminroles.png)
 
@@ -71,12 +71,11 @@ To create a new user account:
 3. Expand the **Roles** section, and choose **User (no administrative access)**.
 4. In the **Product licenses** section, move the selector for **Microsoft 365 Business** to **On**.
 
-## Register each of these accounts for multi-factor authentication
+## Turn on security defaults
 
-Make sure these accounts are using [multifactor authentication](m365-campaigns-multifactor-authenication.md).
+Security defaults help protect your organization from identity-related attacks by providing preconfigured security settings that Microsoft manages on behalf of your organization. These settings include enabling multi-factor authentication (MFA) for all admins and user accounts. For more information about security defaults and to learn how to enable them on, see [Turn on security defaults](m365-campaigns-conditional-access.md).
 
 ## Additional recommendations
 
-- Be sure that admin accounts are also set up for multi-factor authentication. We'll show you how to do this in [Configure conditional access policies](m365-campaigns-conditional-access.md).
 - Before using admin accounts, close out all unrelated browser sessions and apps, including personal email accounts. You can also use in private, or incognito browser windows.
 - After completing admin tasks, be sure to sign out of the browser session.

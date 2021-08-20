@@ -26,7 +26,7 @@ If you are like [Microsoft](https://www.microsoft.com/microsoft-365/blog/2020/03
 If you are a small or medium-size organization using one of Microsoft's business plans, see these resources instead:
 
 - [Top 10 ways to secure Office 365 and Microsoft 365 for business plans](../admin/security-and-compliance/secure-your-business-data.md)
-- [Microsoft 365 for Campaigns](https://docs.microsoft.com/microsoft-365/campaigns/) (includes a recommended security configuration for Microsoft 365 Business)
+- [Microsoft 365 for Campaigns](../campaigns/index.md) (includes a recommended security configuration for Microsoft 365 Business)
 
 For customers using our enterprise plans, Microsoft recommends you complete the tasks listed in the following table that apply to your service plan. If, instead of purchasing a Microsoft 365 enterprise plan, you are combining subscriptions, note the following:
 
@@ -51,7 +51,7 @@ For customers using our enterprise plans, Microsoft recommends you complete the 
 |12|[Monitor for threats and take action](#12-monitor-for-threats-and-take-action)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |
 
-Before you begin, check your [Microsoft 365 Secure Score](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score) in the Microsoft 365 security center. From a centralized dashboard, you can monitor and improve the security for your Microsoft 365 identities, data, apps, devices, and infrastructure. You are given points for configuring recommended security features, performing security-related tasks (such as viewing reports), or addressing recommendations with a third-party application or software. The recommended tasks in this article will raise your score.
+Before you begin, check your [Microsoft 365 Secure Score](./defender/microsoft-secure-score.md) in the Microsoft 365 security center. From a centralized dashboard, you can monitor and improve the security for your Microsoft 365 identities, data, apps, devices, and infrastructure. You are given points for configuring recommended security features, performing security-related tasks (such as viewing reports), or addressing recommendations with a third-party application or software. The recommended tasks in this article will raise your score.
 
 ![Screenshot of Microsoft Secure Score](../media/secure-score.png)
 
@@ -67,8 +67,8 @@ Applying these policies will take only a few minutes, but be prepared to support
 
 |Plan|Recommendation|
 |---|---|
-|Microsoft 365 plans (without Azure AD P1 or P2)|[Enable Security defaults in Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults). Security defaults in Azure AD include MFA for users and administrators.|
-|Microsoft 365 E3 (with Azure AD P1)|Use [Common Conditional Access policies](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-policy-common) to configure the following policies: <br/>- [Require MFA for administrators](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br/>- [Require MFA for all users](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br/> - [Block legacy authentication](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)|
+|Microsoft 365 plans (without Azure AD P1 or P2)|[Enable Security defaults in Azure AD](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults). Security defaults in Azure AD include MFA for users and administrators.|
+|Microsoft 365 E3 (with Azure AD P1)|Use [Common Conditional Access policies](/azure/active-directory/conditional-access/concept-conditional-access-policy-common) to configure the following policies: <br/>- [Require MFA for administrators](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br/>- [Require MFA for all users](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br/> - [Block legacy authentication](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)|
 |Microsoft 365 E5 (with Azure AD P2)|Taking advantage of Azure AD Identity Protection, begin to implement Microsoft's [recommended set of conditional access and related policies](./office-365-security/identity-access-policies.md) by creating these two policies:<br/> - [Require MFA when sign-in risk is medium or high](./office-365-security/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br/>- [Block clients that don't support modern authentication](./office-365-security/identity-access-policies.md#block-clients-that-dont-support-multi-factor)<br/>- [High risk users must change password](./office-365-security/identity-access-policies.md#high-risk-users-must-change-password)|
 |
 
@@ -93,37 +93,37 @@ Microsoft Defender for Office 365:
 - Protects your organization when users collaborate and share files, by identifying and blocking malicious files in team sites and document libraries.
 - Applies machine learning models and advanced impersonation-detection algorithms to avert phishing attacks.
 
-For an overview, including a summary of plans, see [Defender for Office 365](office-365-security/office-365-atp.md).
+For an overview, including a summary of plans, see [Defender for Office 365](./office-365-security/defender-for-office-365.md).
 
 Your Global Administrator can configure these protections:
 
-- [Set up Safe Links policies](office-365-security/set-up-atp-safe-links-policies.md)
+- [Set up Safe Links policies](office-365-security/set-up-safe-links-policies.md)
 - [Configure global settings for Safe Links](office-365-security/configure-global-settings-for-safe-links.md)
-- [Set up Safe Attachments policies](office-365-security/set-up-atp-safe-attachments-policies.md)
+- [Set up Safe Attachments policies](office-365-security/set-up-safe-attachments-policies.md)
 
 You'll need to work with your Exchange Online administrator and SharePoint Online administrator to configure Defender for Office 365 for these workloads:
 
-- [ATP for SharePoint, OneDrive, and Microsoft Teams](office-365-security/atp-for-spo-odb-and-teams.md)
+- [Microsoft Defender for Endpoint for SharePoint, OneDrive, and Microsoft Teams](office-365-security/mdo-for-spo-odb-and-teams.md)
 
 ## 4: Configure Microsoft Defender for Identity
 
-[Microsoft Defender for Identity](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) is a cloud-based security solution that leverages your on-premises Active Directory signals to identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions directed at your organization. Focus on this next because it protects your on-prem and your cloud infrastructure, has no dependencies or prerequisites, and can provide immediate benefit.
+[Microsoft Defender for Identity](/azure-advanced-threat-protection/what-is-atp) is a cloud-based security solution that leverages your on-premises Active Directory signals to identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions directed at your organization. Focus on this next because it protects your on-prem and your cloud infrastructure, has no dependencies or prerequisites, and can provide immediate benefit.
 
-- See [Microsoft Defender for Identity Quickstarts](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step1) to get setup quickly
+- See [Microsoft Defender for Identity Quickstarts](/azure-advanced-threat-protection/install-atp-step1) to get setup quickly
 - Watch [Video: Introduction to Microsoft Defender for Identity](https://www.youtube.com/watch?reload=9&v=EGY2m8yU_KE)
-- Review the [three phases of Microsoft Defender for Identity deployment](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp#whats-next)
+- Review the [three phases of Microsoft Defender for Identity deployment](/azure-advanced-threat-protection/what-is-atp#whats-next)
 
 ## 5: Turn on Microsoft 365 Defender
 
-Now that you have Microsoft Defender for Office 365 and Microsoft Defender for Identity configured, you can view the combined signals from these capabilities in one dashboard. [Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection) brings together alerts, incidents, automated investigation and response, and advanced hunting across workloads (Microsoft Defender for Identity, Defender for Office 365, Microsoft  Defender for Endpoint, and Microsoft Cloud App Security) into a single pane at [security.microsoft.com](https://security.microsoft.com).
+Now that you have Microsoft Defender for Office 365 and Microsoft Defender for Identity configured, you can view the combined signals from these capabilities in one dashboard. [Microsoft 365 Defender](./defender/microsoft-365-defender.md) brings together alerts, incidents, automated investigation and response, and advanced hunting across workloads (Microsoft Defender for Identity, Defender for Office 365, Microsoft  Defender for Endpoint, and Microsoft Cloud App Security) into a single pane at [security.microsoft.com](https://security.microsoft.com).
 
 ![MTP dashboard illustration](../media/top-ten-security-remote-work-mtp-dashboard.png)
 
 After you have configured one or more of your Defender for Office 365 services, turn on MTP. New features are added continually to MTP; consider opting in to receive preview features.
 
-- [Learn more about MTP](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection)
-- [Turn on MTP](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-enable)
-- [Opt in for preview features](https://docs.microsoft.com/microsoft-365/security/mtp/preview)
+- [Learn more about MTP](./defender/microsoft-365-defender.md)
+- [Turn on MTP](./defender/m365d-enable.md)
+- [Opt in for preview features](./defender/preview.md)
 
 ## 6: Configure Intune mobile app protection for phones and tablets
 
@@ -132,7 +132,7 @@ Microsoft Intune Mobile Application Management (MAM) allows you to manage and pr
 - You create an App Protection Policy (APP) that determines which apps on a device are managed and what behaviors are allowed (such as preventing data from a managed app from being copied to an unmanaged app). You create one policy for each platform (iOS, Android).
 - After creating the app protection policies, you enforce these by creating a conditional access rule in Azure AD to require approved apps and APP data protection.
 
-APP protection policies include many settings. Fortunately, you don't need to learn about every setting and weigh the options. Microsoft makes it easy to apply a configuration of settings by recommending starting points. The [Data protection framework using app protection policies](https://docs.microsoft.com/mem/intune/apps/app-protection-framework) includes three levels you can choose from.
+APP protection policies include many settings. Fortunately, you don't need to learn about every setting and weigh the options. Microsoft makes it easy to apply a configuration of settings by recommending starting points. The [Data protection framework using app protection policies](/mem/intune/apps/app-protection-framework) includes three levels you can choose from.
 
 Even better, Microsoft coordinates this app protection framework with a set of conditional access and related policies we recommend all organizations use as a starting point. If you've implemented MFA using the guidance in this article, you're half way there!
 
@@ -159,14 +159,14 @@ The Intune mobile app protection policies you created, together with the conditi
 
 ## 8: Enroll PCs into device management and require compliant PCs
 
-There are several methods to enroll your workforce's devices. Each method depends on the device's ownership (personal or corporate), device type (iOS, Windows, Android), and management requirements (resets, affinity, locking). This can take a bit of time to sort out. See: [Enroll devices in Microsoft Intune](https://docs.microsoft.com/mem/intune/enrollment/).
+There are several methods to enroll your workforce's devices. Each method depends on the device's ownership (personal or corporate), device type (iOS, Windows, Android), and management requirements (resets, affinity, locking). This can take a bit of time to sort out. See: [Enroll devices in Microsoft Intune](/mem/intune/enrollment/).
 
-The quickest way to get going is to [Set up automatic enrollment for Windows 10 devices](https://docs.microsoft.com/mem/intune/enrollment/quickstart-setup-auto-enrollment).
+The quickest way to get going is to [Set up automatic enrollment for Windows 10 devices](/mem/intune/enrollment/quickstart-setup-auto-enrollment).
 
 You can also take advantage of these tutorials:
 
-- [Use Autopilot to enroll Windows devices in Intune](https://docs.microsoft.com/mem/intune/enrollment/tutorial-use-autopilot-enroll-devices)
-- [Use Apple's Corporate Device Enrollment features in Apple Business Manager (ABM) to enroll iOS/iPadOS devices in Intune](https://docs.microsoft.com/mem/intune/enrollment/tutorial-use-device-enrollment-program-enroll-ios)
+- [Use Autopilot to enroll Windows devices in Intune](/mem/intune/enrollment/tutorial-use-autopilot-enroll-devices)
+- [Use Apple's Corporate Device Enrollment features in Apple Business Manager (ABM) to enroll iOS/iPadOS devices in Intune](/mem/intune/enrollment/tutorial-use-device-enrollment-program-enroll-ios)
 
 After enrolling devices, use the guidance in [Common identity and device access policies](./office-365-security/identity-access-policies.md) to create these policies:
 
@@ -185,8 +185,8 @@ Some of the protections that have traditionally been provided by routing traffic
 
 See these resources on Docs for more information:
 
-- [Overview: Optimize connectivity for remote users using VPN split tunneling](https://docs.microsoft.com/Office365/Enterprise/office-365-vpn-split-tunnel)
-- [Implementing VPN split tunneling for Office 365](https://docs.microsoft.com/Office365/Enterprise/office-365-vpn-implement-split-tunnel)
+- [Overview: Optimize connectivity for remote users using VPN split tunneling](/Office365/Enterprise/office-365-vpn-split-tunnel)
+- [Implementing VPN split tunneling for Office 365](/Office365/Enterprise/office-365-vpn-implement-split-tunnel)
 
 Recent blog articles on this topic:
 
@@ -205,9 +205,9 @@ Microsoft 365 provides the following resources to help inform users in your orga
 
 |Concept|Resources|
 |---|---|
-|Microsoft 365|[Customizable learning pathways](https://docs.microsoft.com/office365/customlearning/) <p>These resources can help you put together training for end users in your organization|
-|Microsoft 365 security|[Learning module: Secure your organization with built-in, intelligent security from Microsoft 365](https://docs.microsoft.com/learn/modules/security-with-microsoft-365) <p>This module enables you to describe how Microsoft 365 security features work together and to articulate the benefits of these security features.|
-|Multi-factor authentication|[Two-step verification: What is the additional verification page?](https://docs.microsoft.com/azure/active-directory/user-help/multi-factor-authentication-end-user-first-time) <p>This article helps end users understand what multi-factor authentication is and why it's being used at your organization.|
+|Microsoft 365|[Customizable learning pathways](/office365/customlearning/) <p>These resources can help you put together training for end users in your organization|
+|Microsoft 365 security|[Learning module: Secure your organization with built-in, intelligent security from Microsoft 365](/learn/modules/security-with-microsoft-365) <p>This module enables you to describe how Microsoft 365 security features work together and to articulate the benefits of these security features.|
+|Multi-factor authentication|[Two-step verification: What is the additional verification page?](/azure/active-directory/user-help/multi-factor-authentication-end-user-first-time) <p>This article helps end users understand what multi-factor authentication is and why it's being used at your organization.|
 |
 
 In addition to this guidance, Microsoft recommends that your users take the actions described in this article: [Protect your account and devices from hackers and malware](https://support.office.com/article/066d6216-a56b-4f90-9af3-b3a1e9a327d6.aspx). These actions include:
@@ -224,26 +224,26 @@ Microsoft also recommends that users protect their personal email accounts by ta
 
 ## 11: Get started with Microsoft Cloud App Security
 
-[Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security) provides rich visibility, control over data travel, and sophisticated analytics to identify and combat cyberthreats across all your cloud services. Once you get started with Cloud App Security, anomaly detection policies are automatically enabled, but Cloud App Security has an initial learning period of seven days during which not all anomaly detection alerts are raised.
+[Microsoft Cloud App Security](/cloud-app-security) provides rich visibility, control over data travel, and sophisticated analytics to identify and combat cyberthreats across all your cloud services. Once you get started with Cloud App Security, anomaly detection policies are automatically enabled, but Cloud App Security has an initial learning period of seven days during which not all anomaly detection alerts are raised.
 
 Get started with Cloud App Security now. Later you can set up more sophisticated monitoring and controls.
 
-- [Quickstart: Get started with Cloud App Security](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security)
-- [Get instantaneous behavioral analytics and anomaly detection](https://docs.microsoft.com/cloud-app-security/anomaly-detection-policy)
-- [Learn more about Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)
-- [Review new features and capabilities](https://docs.microsoft.com/cloud-app-security/release-notes)
-- [See basic setup instructions](https://docs.microsoft.com/cloud-app-security/general-setup)
+- [Quickstart: Get started with Cloud App Security](/cloud-app-security/getting-started-with-cloud-app-security)
+- [Get instantaneous behavioral analytics and anomaly detection](/cloud-app-security/anomaly-detection-policy)
+- [Learn more about Microsoft Cloud App Security](/cloud-app-security/what-is-cloud-app-security)
+- [Review new features and capabilities](/cloud-app-security/release-notes)
+- [See basic setup instructions](/cloud-app-security/general-setup)
 
 ## 12: Monitor for threats and take action
 
-Microsoft 365 includes several ways to monitor status and take appropriate actions. Your best starting point is the Microsoft 365 security center ([https://security.microsoft.com](https://security.microsoft.com)), where you can view your organization's [Microsoft Secure Score](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score), and any alerts or entities that require your attention.
+Microsoft 365 includes several ways to monitor status and take appropriate actions. Your best starting point is the Microsoft 365 security center ([https://security.microsoft.com](https://security.microsoft.com)), where you can view your organization's [Microsoft Secure Score](./defender/microsoft-secure-score.md), and any alerts or entities that require your attention.
 
-- [Get started with the Microsoft 365 security center](https://docs.microsoft.com/microsoft-365/security/mtp/overview-security-center)
-- [Monitor and view reports](https://docs.microsoft.com/microsoft-365/security/mtp/monitoring-and-reporting)
-- [See the security portals in Microsoft 365](https://docs.microsoft.com/microsoft-365/security/mtp/portals)
+- [Get started with the Microsoft 365 security center](./defender/overview-security-center.md)
+- [Monitor and view reports](./defender/overview-security-center.md)
+- [See the security portals in Microsoft 365](./defender/portals.md)
 
 ## Next steps
 
 Congratulations! You have quickly implemented some of the most important security protections and your organization is much more secure. Now you're ready to go even further with threat protection capabilities (including Microsoft Defender for Endpoint), data classification and protection capabilities, and securing administrative accounts. For a deeper, methodical set of security recommendations for Microsoft 365, see [Microsoft 365 Security for Business Decision Makers (BDMs)](Microsoft-365-security-for-bdm.md).
 
-Also visit Microsoft's new security center on [docs.microsoft.com/security](https://docs.microsoft.com/security).
+Also visit Microsoft's new security center on [docs.microsoft.com/security](/security).

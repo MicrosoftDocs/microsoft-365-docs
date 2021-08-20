@@ -31,7 +31,7 @@ ms.prod: m365-security
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender for Office 365 plan 1 and plan 2](office-365-atp.md)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 
  **Summary:** Planning and implementation guidance for fast-moving organizations that have an increased threat profile.
 
@@ -61,10 +61,8 @@ To create a dev/test environment for this solution, use the following test lab g
 
   Create four SharePoint Online team sites with Internal, Private, Sensitive, and Highly Confidential levels of security.
 
-For additional security features for demonstration or proof of concept, see [Office 365 Test Lab Guides](https://aka.ms/o365tlgs).
+For additional security features for demonstration or proof of concept, see [Office 365 Test Lab Guides](../../enterprise/cloud-adoption-test-lab-guides-tlgs.md).
 
 ## See Also
-
-[Cloud adoption Test Lab Guides (TLGs)](../../enterprise/cloud-adoption-test-lab-guides-tlgs.md)
 
 [Microsoft Cloud IT architecture resources](../../solutions/cloud-architecture-models.md)

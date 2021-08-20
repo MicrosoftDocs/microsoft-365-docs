@@ -27,7 +27,7 @@ ms.prod: m365-security
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Applies to**
-- [Microsoft Defender for Office 365 plan 2](office-365-atp.md)
+- [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
 
  **Summary:** Create Office 365 and Enterprise Mobility + Security (EMS) trial subscriptions with users and groups for a political campaign dev/test environment.
 
@@ -210,4 +210,4 @@ Build the four different types of SharePoint Online team sites in this dev/test 
 
 [Cloud adoption Test Lab Guides (TLGs)](../../enterprise/cloud-adoption-test-lab-guides-tlgs.md)
 
-[Cloud adoption and hybrid solutions](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
+[Cloud adoption and hybrid solutions](/office365/enterprise/cloud-adoption-and-hybrid-solutions)

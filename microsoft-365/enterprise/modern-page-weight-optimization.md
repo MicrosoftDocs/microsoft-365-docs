@@ -30,7 +30,7 @@ SharePoint Online modern site pages contain serialized code that is required to 
 This article will help you understand how to reduce page weight in your modern site pages.
 
 >[!NOTE]
->For more information about performance in SharePoint Online modern portals, see [Performance in the modern SharePoint experience](https://docs.microsoft.com/sharepoint/modern-experience-performance).
+>For more information about performance in SharePoint Online modern portals, see [Performance in the modern SharePoint experience](/sharepoint/modern-experience-performance).
 
 ## Use the Page Diagnostics for SharePoint tool to analyze page weight
 
@@ -63,7 +63,7 @@ General guidance for reducing page weight includes:
 
 You can find additional guidance for limiting page weight in the following article:
 
-- [Optimize page performance in SharePoint](https://docs.microsoft.com/sharepoint/dev/general-development/optimize-page-performance-in-sharepoint)
+- [Optimize page performance in SharePoint](/sharepoint/dev/general-development/optimize-page-performance-in-sharepoint)
 
 Before you make page revisions to remediate performance issues, make a note of the page load time in the analysis results. Run the tool again after your revision to see if the new result is within the baseline standard, and check the new page load time to see if there was an improvement.
 
@@ -78,7 +78,7 @@ Before you make page revisions to remediate performance issues, make a note of t
 
 [Tune Office 365 performance](tune-microsoft-365-performance.md)
 
-[Performance in the modern SharePoint experience](https://docs.microsoft.com/sharepoint/modern-experience-performance)
+[Performance in the modern SharePoint experience](/sharepoint/modern-experience-performance)
 
 [Content delivery networks](content-delivery-networks.md)
 
