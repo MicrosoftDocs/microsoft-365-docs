@@ -1,5 +1,5 @@
 ---
-title: "Step 1: Remove attacker financial leverage with data protection/Protect your ransomable targets"
+title: "Step 1. Configure security baselines"
 author: JoeDavies-MSFT
 f1.keywords:
 - NOCSH
@@ -19,143 +19,41 @@ keywords:
 description: Step through protecting your Microsoft 365 resources from ransomware attacks.
 ---
 
-# Step 1: Remove attacker financial leverage with data protection
-
-<!--
-Assume attacker has the credentials to access your tenant and can laterally move around to discover targets.
---> 
-
-Elements of financial leverage
-
-- Critical data encryption or destruction
-- Critical data exfiltration: Attacker copies data outside the tenant
-- Attack recovery sabotage: Encrypt or destroy IT recovery plans
-
-## Data encryption or destruction
-
-**Attacker's goal:** Make critical organization data unusable and bring normal business operations to a halt. 
-
-**Financial leverage:** Organization can’t operate normally and loses revenue.
-
-### Prevent: Attacker can’t access ransomable data
-
-Ways to prevent access to ransomable data:
-
-- Tight permissions
-
-   - Perform review of broad permissions and update
-
-   - Audit and monitor for new broad permissions
-
-- MIP, sensitive information types, and sensitivity labels (permissions and encryption)
-- Office 365 Message Encryption new capabilities (OME) and OME Advanced Message Encryption
-- Customer Key, BYOK, and HYOK
-- Protected Folders/controlled folder access for malicious apps
-- Teams/SharePoint sites with security isolation
-
-### Mitigate: Attacker can access ransomable data, but they can’t encrypt or destroy all copies
-
-Ways to prevent encryption or destruction of all copies of ransomable data:
-
-- Offline, off-site, immutable backups
-
-## Data exfiltration: Attacker copies data outside the tenant
-
-**Attacker's goal:** Obtaining internal and critical data as proof of attack and being able to share it with others.
-
-**Financial leverage:** Sharing data with competitors (loss of competitive advantage), other criminals (for future attacks or additional extortion), or the public (damage to reputation and brand) can result in lost revenue.
-
-### Prevent: Attacker can’t exfiltrate data
-
-Ways to prevent ransomable data exfiltration:
-
-- DLP
-
-### Mitigate: Attacker can exfiltrate, but exfiltrated data is unusable to them
-
-Ways to protect exfiltrated ransomable data:
-
-- MIP, sensitive information types, and sensitivity labels (permissions and encryption)
-- Office 365 Message Encryption new capabilities (OME) and OME Advanced Message Encryption
-
-## Attack recovery sabotage: Encrypt or destroy IT recovery plans
-
-**Attacker's goal:** Remove the ability to recover IT operations quickly.
-
-**Financial leverage:** Making it longer and more difficult to recover data, endpoints, and processes can result in lost revenue.
-
-### Prevent: Attacker can’t access plans
-
-Ways to prevent encryption or destruction of IT recovery plans:
-
-- Access only through tight permissions
-- MIP, sensitive information types, and sensitivity labels (permissions and encryption)
-- Office 365 Message Encryption new capabilities (OME) and OME Advanced Message Encryption
-- Customer Key
-- Teams/SharePoint sites with security isolation
-
-### Mitigate: Attacker can access plans, but can’t encrypt or destroy all copies
-
-Ways to prevent encryption or destruction of all copies of IT recovery plans:
-
-- Offline, off-site, immutable backups of plans
+# Step 1.Configure security baselines
 
 
-<!--
 
-Prevent a ransomware attacker from accumulating financial leverage over your organization:
 
-- Data destruction/encryption
 
-  How valuable is my data?
+Apply security baselines to harden internet-facing servers, clients, and Office applications.
 
-- Data exfiltration with intent to:
+## Microsoft 365 security baseline
 
-  - Sell to the dark web (other criminals, competitors)
+Assess and measure security posture using Microsoft Secure Score.
 
-  - Expose information to the public (embarassment, loss of public integrity, privacy regulation penalties)
+Use attack surface reduction rules to help block suspicious activity and vulnerable content. (Execution, unless otherwise indicated):
 
-- Make it difficult to recover from a ransomware attack
+- Block all Office applications from creating child processes
+- Block executable content from email client and webmail
+- Block executable files from running unless they meet a prevalence, age, or trusted list criterion
+- Block execution of potentially obfuscated scripts
+- Block JavaScript or VBScript from launching downloaded executable content
+- Block Office applications from creating executable content
+- Block Office applications from injecting code into other processes
+- Block Office communication application from creating child processes
+- Block untrusted and unsigned processes that run from USB
+- Block persistence through WMI event subscription (Persistence)
+- Block credential stealing from the Windows local security authority subsystem (lsass.exe) (Privilege escalation)
+- Block process creations originating from PSExec and WMI commands (Lateral movement)
 
-Thwart goals of attackers:
 
-### Perform data destruction/encryption
+## Exchange email management baseline 
 
-Attacker: I’ve got their data and there’s nothing they can do about it 
-Mitigation: My data is backed up and undamaged and they A. Can’t get to it and B. Even if they can, they can’t change it.
-
-### Perform data exfiltration
-
-Data exfiltration with intent to sell to the dark web (other criminals, competitors, or expose information to the public (embarassment, loss of public integrity)
-
-### Sabotage recovery efforts
-
-Attacker: I’ve got their IT disaster recovery plans and there’s nothing they can do about it
-
-Mitigate: Protect supporting documents required for recovery such as restoration procedure documents, Configuration Management database (CMDB), and network diagrams. 
-
-Microsoft 365 solution: Team with security isolation for ongoing changes combined with off-site, off-line, or immutable storage (CD/DVD).
-
-## Data protection
-
-https://docs.microsoft.com/en-us/microsoft-365/solutions/information-protection-deploy-protect-information?view=o365-worldwide#managing-information-protection-in-microsoft-365
-
-Microsoft information protection solutions include a number of integrated capabilities across Microsoft 365, Microsoft Azure, and Microsoft Windows. In Microsoft 365, information protection solutions include:
-
-- Sensitive information types (described in the assess data privacy risks and identify sensitive items article)
-
-  - Sensitivity labels
-
-  - Service/container-level
-
-  - Client-side/content-level
-
-- Automated for data-at-rest in SharePoint and OneDrive
-- Data Loss Prevention (DLP)
-- Microsoft 365 Endpoint data loss prevention
-- Office 365 Message Encryption new capabilities (OME) and OME Advanced Message Encryption
-
---> 
+- Enable Microsoft Defender Antivirus email scanning. (Initial access)
+- Use Microsoft Defender for Office 365 for enhanced phishing protection and coverage against new threats and polymorphic variants. (Initial access)
+- Check your Office 365 email filtering settings to ensure you block spoofed emails, spam, and emails with malware. Use Microsoft Defender for Office 365 for enhanced phishing protection and coverage against new threats and polymorphic variants. Configure Microsoft Defender for Office 365 to recheck links on click and delete delivered mails in response to newly acquired threat intelligence. (Initial access)
+- Review and update to the latest recommended settings for EOP and Microsoft Defender for Office 365 security. (Initial access)
+- Configure Microsoft Defender for Office 365 to recheck links on click and delete delivered mails in response to newly acquired threat intelligence. (Initial access)
 
 
 ## Next step

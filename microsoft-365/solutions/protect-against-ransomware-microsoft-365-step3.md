@@ -1,5 +1,5 @@
 ---
-title: "Step 3: Prevent attacker access"
+title: "Step 3. Protect identities"
 author: JoeDavies-MSFT
 f1.keywords:
 - NOCSH
@@ -8,7 +8,7 @@ manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
@@ -19,80 +19,28 @@ keywords:
 description: Step through protecting your Microsoft 365 resources from ransomware attacks.
 ---
 
-# Step 3: Prevent attacker access
+# Step 3. Protect identities
 
-Three common ways that a ransomware attacker can access your Microsoft 365 tenant are through:
 
-- User accounts
-- Email and other collaboration tools
-- Endpoints (devices)
+Increase password security by:
 
-## User accounts
+- Using Azure AD Identity Protection to prevent and detect attacks and extend blocking of known weak passwords to on-premises Active Directory
+- Extending Azure AD Password Protection to on-premises active directory
 
-### Prevent: Attacker can’t compromise a user account
+Enforce strong multi-factor authentication (MFA) or passwordless logon for all users starting with administrators by using one or more of:
 
-Enforce strong MFA or passwordless sign-in for all users. Start with administrator and priority accounts using one or more of:
+- Passwordless authentication with Windows Hello or Microsoft Authenticator app
+- Azure Multi-Factor Authentication
+- Third-party MFA solutions
 
-- Passwordless authentication with Windows Hello or the Microsoft Authenticator app.
-- Azure Multi-Factor Authentication.
-- Third-party MFA solution.
+Practice the principle of least-privilege and maintain credential hygiene. Avoid the use of domain-wide, admin-level service accounts. Restricting local administrative privileges can help limit installation of RATs and other unwanted applications. (Privilege escalation)
 
-Increase password security:
+Enforce end-to-end session security. Explicitly validate the trust of users and workstations before allowing access to administrative interfaces using Azure AD Conditional Access.
 
-- For Azure AD accounts, use Azure AD Password Protection to detect and block known weak passwords and additional weak terms that are specific to your organization.
-- For on-premises Active Directory Domain Services (AD DS) accounts, extend Azure AD Password Protection to AD DS accounts.
+Enable Local Admin password management (Privilege escalation)
 
-### Mitigate: Detect compromised user credentials and remove the account
+Determine where highly privileged accounts are logging on and exposing credentials. Highly privileged accounts should not be present on workstations. (Privilege escalation)
 
-Ways to prevent detect compromised user credentials:
-
-- Azure AD Identity Protection
-- Microsoft Defender for Identity
-
-## Email and collaboration
-
-### Prevent: Attacker can't get past Microsoft 365 security features
-
-Ways to prevent an attacker from using Microsoft 365 security features that have not been enabled:
-
-- Enable AMSI for Office VBA.
-- Implement Advanced Email security using Defender for Office 365.
-- Enable attack surface reduction (ASR) rules to block common attack techniques including:
-
-   - Endpoint abuse such as credential theft, ransomware activity, and suspicious use of PsExec and WMI.
-
-   - Weaponized Office document activity such as advanced macro activity, executable content, process creation, and process injection initiated by Office applications.
-
-### Mitigate: Detect breaches based on Microsoft 365 security features
-
-Ways to detect breaches based on Microsoft 365 security features:
-
-- Microsoft Defender for Office 365
-- Microsoft 365 Defender
-
-## Endpoints
-
-### Prevent: Attacker can't get past Windows 10 security features
-
-Ways to prevent an attacker from using Windows 10 security features that have not been enabled:
-
-- Block known threats with attack surface reduction rules, tamper protection, and block at first site.
-- Apply Security Baselines to harden internet-facing Windows servers and clients and Office applications.
-
-- Maintain your software so that it is:
-
-  - Updated: Rapidly deploy critical security updates for operating systems, browsers, & email clients (Install ongoing updates for Windows 10, Microsoft 365 Apps, Teams, Edge)
-
-  - Supported: Upgrade operating systems and software for versions supported by your vendors. (Upgrade Windows 7 and 8.1 and old versions of Office, remove Internet Explorer)
-
-- Isolate, disable, or retire insecure systems and protocols, including unsupported operating systems and legacy protocols (Block apps using legacy authentication with Conditional Access)
-- Block unexpected traffic with host-based firewall and network defenses (Windows Firewall with Advanced Security for Windows 10).
-
-### Mitigate: Detect breaches based on built-in Windows 10 security features and remove endpoint
-
-Ways to detect breaches based on built-in Windows 10 security features:
-
-- Microsoft Defender for Endpoint
-- Microsoft 365 Defender
+Disable the local storage of passwords and credentials. (Privilege escalation)
 
 

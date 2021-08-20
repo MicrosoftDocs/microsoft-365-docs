@@ -1,0 +1,60 @@
+---
+title: "Step 5. Protect information"
+author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
+ms.author: josephd
+manager: dansimp
+audience: ITPro
+ms.topic: article
+ms.prod: microsoft-365-enterprise
+ms.localizationpriority: high
+ms.collection:
+- M365-security-compliance
+- Strat_O365_Enterprise
+- ransomware
+- m365solution-ransomware
+ms.custom: seo-marvel-jun2020
+keywords: 
+description: Step through protecting your Microsoft 365 resources from ransomware attacks.
+---
+
+# Step 5. Protect information
+
+
+General guidelines:
+
+Migrate your organization to the cloud:
+Move user data to cloud solutions like OneDrive/SharePoint to take advantage of versioning and recycle bin capabilities.
+Educate users on how to recover their files by themselves to reduce delays and cost of recovery.
+Designate Protected Folders.
+Set controlled folder access to Enabled or Audit mode.
+Use OneDrive cloud storage to protect and back up your files. (Impact)
+
+
+## Locate your ransomable information
+
+Sensitive
+
+Proprietary
+
+## Protect your ransomable information
+
+Tight permissions
+
+Perform review of broad permissions and update
+
+Audit and monitor for new broad permissions
+
+Teams/SharePoint sites with security isolation
+
+MIP, sensitive information types, and sensitivity labels (permissions and encryption)
+
+Protected Folders/controlled folder access for malicious apps
+
+Implement controlled folder access to help prevent files from being altered or encrypted by ransomware. (Impact)
+Back up regularly. Use the 3-2-1 rule. Keep three backups of your data, on two different storage types, and at least one backup offsite. (Impact)
+
+
+
+

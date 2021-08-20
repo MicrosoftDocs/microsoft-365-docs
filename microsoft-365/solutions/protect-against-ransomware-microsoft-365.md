@@ -8,7 +8,7 @@ manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
@@ -28,6 +28,18 @@ Once deployed, an attacker demands money from victims in exchange for decryption
 
 A human-operated ransomware attack can be catastrophic to businesses of all sizes and are difficult to clean up, requiring complete adversary eviction to protect against future attacks. Unlike commodity ransomware, human-operated ransomware can continue to threaten businesses operations after the initial ransom incident.
 
+## Ransomware prevention and mitigation capabilities provided with Microsoft 365
+
+A ransomware attacker that has infiltrated Microsoft 365 can attempt to create financial leverage by:
+
+Deleting files or email
+
+
+### Exchange Online
+
+
+
+
 ## What’s in this solution
 
 This solution steps you through the deployment of three layers of protection and mitigation features, configurations, and ongoing operations to minimize the ability of a ramsomware attacker to use the critical data in your Microsoft 365 tenant as financial leverage and prevent entry and escalation of access.
@@ -36,11 +48,11 @@ It is common practice for human-operated ransomware attackers to infiltrate an o
 
 The steps in this solution are designed on the assumption that attackers may have already “banked” your Microsoft 365 tenant. 
 
-![The three steps to protecting against ransomware with Microsoft 365](../media/protect-against-ransomware-microsoft-365/protect-against-ransomware-microsoft-365-step-grid.png)
+![The steps to protecting against ransomware with Microsoft 365](../media/protect-against-ransomware-microsoft-365/protect-against-ransomware-microsoft-365-step-grid.png)
 
 If the attackers are already in: 
 
-1. 	Your first step is to *protect your critical data in ways that prevent an attacker from gaining financial leverage on your organization*. For example, if it is possible to restore critical files encrypted by attackers from an offsite and offline backup, then the attackers lose the ability to hold those critical files for ransom.
+1. Your first step is to *protect your critical data in ways that prevent an attacker from gaining financial leverage on your organization*.
 2. Your next step is to ensure that *user accounts have an appropriate level of access and that it is difficult to increase levels of access through privilege escalation without detection*.
 3. Your final step is to *prevent future infiltrations by preventing entry into your organization through user accounts, devices, email, or applications*.
 
@@ -81,7 +93,6 @@ Here are the preventative and mitigation steps to minimize the damage from a ran
 ## Next steps
 
 [![Step 1 for ransomware protection with Microsoft 365](../media/protect-against-ransomware-microsoft-365/protect-against-ransomware-microsoft-365-step1.png)](protect-against-ransomware-microsoft-365-step1.md)
-
 
 Use these steps:
 
