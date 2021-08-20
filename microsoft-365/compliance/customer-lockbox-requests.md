@@ -21,13 +21,15 @@ description: "Learn about Customer Lockbox requests that allow you to control ho
 
 # Customer Lockbox in Office 365
 
-This article provides deployment and configuration guidance for Customer Lockbox. Customer Lockbox supports requests to access data in Exchange Online, SharePoint Online, and OneDrive for Business. To recommend support for other services, please submit a request at [Office 365 UserVoice](https://office365.uservoice.com/).
 
-To see the options for licensing your users to benefit from Microsoft 365 compliance offerings, including this one, as of April 1, 2020, see the [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
-Customer Lockbox ensures that Microsoft cannot access your content to perform a service operation without your explicit approval. Customer Lockbox brings you into the approval workflow for requests to access your content.
+This article provides deployment and configuration guidance for Customer Lockbox. Customer Lockbox supports requests to access data in Exchange Online, SharePoint Online, and OneDrive for Business. To recommend support for other services, submit a request at [Office 365 UserVoice](https://office365.uservoice.com/).
 
-Occasionally, Microsoft engineers help troubleshoot and fix customer reported issues in the support process. Usually, issues are fixed through extensive telemetry and debugging tools Microsoft has in place for its services. However, some cases require a Microsoft engineer to access customer content to determine the root cause and fix the issue. Customer Lockbox requires the engineer to request access from the customer as a final step in the approval workflow. This gives organizations the option to approve or deny these requests, and provide direct-access control to the customer.
+To see the options for licensing your users to benefit from Microsoft 365 compliance offerings, see the [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+
+Customer Lockbox ensures that Microsoft can't access your content to do service operations without your explicit approval. Customer Lockbox brings you into the approval workflow process that Microsoft uses to ensure only authorized requests allow access to your content. To learn more about Microsoft’s workflow process, see [Privileged access management in Microsoft 365](privileged-access-management-solution-overview.md).
+
+Occasionally, Microsoft engineers help troubleshoot and fix issues that arise with the service. Usually, engineers fix issues using extensive telemetry and debugging tools Microsoft has in place for its services. However, some cases require a Microsoft engineer to access your content to determine the root cause and fix the issue. Customer Lockbox requires the engineer to request access from you as a final step in the approval workflow. This gives you the option to approve or deny the request for your organization, and provide direct-access control to your content.
 
 ### Customer Lockbox overview video
 
@@ -35,7 +37,7 @@ Occasionally, Microsoft engineers help troubleshoot and fix customer reported is
 
 ## Customer Lockbox workflow
 
-The following steps outline the typical workflow when a Microsoft engineer initiates a Customer Lockbox request:
+These steps outline the typical workflow when a Microsoft engineer starts a Customer Lockbox request:
 
 1. Someone at an organization experiences an issue with their Microsoft 365 mailbox.
 
@@ -89,15 +91,14 @@ You can turn on Customer Lockbox controls in the Microsoft 365 admin center. Whe
 
 3. Select a Customer Lockbox request, and then choose **Approve** or **Deny**.
 
-    ![Approve or deny Customer Lockbox requests](../media/CustomerLockbox7.png)
+    ![Approve Customer Lockbox requests](../media/CustomerLockbox7.png)
 
     A confirmation message about the approval of the Customer Lockbox request displays.
 
-    ![Approve or deny Customer Lockbox requests](../media/CustomerLockbox8.png)
+    ![Deny Customer Lockbox requests](../media/CustomerLockbox8.png)
 
 > [!NOTE]
 > Use the Set-AccessToCustomerDataRequest cmdlet to approve, deny, or cancel Microsoft 365 customer lockbox requests that control access to your data by Microsoft support engineers. For more information, see [Set-AccessToCustomerDataRequest](/powershell/module/exchange/set-accesstocustomerdatarequest).
-
 
 ## Auditing Customer Lockbox requests
 

@@ -13,7 +13,9 @@ ms.collection:
 - M365-subscription-management 
 - Adm_O365
 - Adm_NonTOC
-ms.custom: AdminSurgePortfolio
+ms.custom: 
+- AdminSurgePortfolio
+- admindeeplinkMAC
 search.appverid:
 - BCS160
 - MET150
@@ -31,7 +33,7 @@ Multi-tenant management offers a unified form of management that allows Microsof
 
 ## Move between tenants
 
-1. In the Microsoft 365 admin center, select the org name.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, select the org name.
 
     :::image type="content" source="../../media/macorgswitcher.png" alt-text="Multi-tenant switcher.":::
 
@@ -41,7 +43,7 @@ Multi-tenant management offers a unified form of management that allows Microsof
 
 ## View All tenants page
 
-1. In the Microsoft 365 admin center, in the left nav, select **All tenants**.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, in the left nav, select **All tenants**.
 - On the **All tenants** page, you can
   - Assess service health
   - Review license usage
@@ -54,7 +56,7 @@ If you've marked a tenant as a favorite, it's automatically expanded so you can 
 
 The service health view shows you if any incidents or advisories are affecting the tenants. It will even tell you how many of your managed tenants are affected.
 
-1. In the Microsoft 365 admin center, in the multi-tenant view, select **Service Health**.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, in the multi-tenant view, select **Service Health**.
 2. On the **Service health** page aggregated view, you can also see the total number of incidents, the total number of advisories affecting any of the managed tenants, and the number of services with active incidents. You can also see how many of your tenants are affected by incidents and advisories.
 
     - You can use the filter option to view issues by issue type or by service
