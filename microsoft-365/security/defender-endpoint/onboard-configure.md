@@ -80,4 +80,31 @@ After onboarding the devices, you'll then need to configure the other capabiliti
 | [Configure Microsoft Threat Experts (MTE) capabilities](configure-microsoft-threat-experts.md) | Microsoft Threat Experts is a managed hunting service that provides Security Operation Centers (SOCs) with expert level monitoring and analysis to help them ensure that critical threats in their unique environments don't get missed.      |
 
 
+## Supported capabilities for Windows devices
 
+|Operating System  |Windows 10  |Windows Server 2012 R2 <sup>[[1](#fn1)]<sup></sup>  |Windows Server 2016<sup>[[1](#fn1)]<sup></sup>   |Windows Server 2019|Windows Server 1803+|
+|---------|---------|---------|---------|---------|---------|
+|**Prevention**    |         |         |         |         |         |
+|Attack Surface Reduction rules     |    Y     |   Y      |    Y     |    Y     |    Y     |
+|Device Control     |     Y    |    N     |    N     |    N     |    N     |  
+|Firewall     |      Y   |    Y     |     Y    |    Y    |    Y   |
+|Network Protection     |      Y   |    Y     |     Y    |    Y    |    Y   |
+|Next-generation protection     |      Y   |    Y     |     Y    |    Y    |    Y   |
+|Tamper Protection     |        Y   |    Y     |     Y    |    Y    |    Y   |
+|Web Protection     |       Y   |    Y     |     Y    |    Y    |    Y   |
+|||||||
+|**Detection**     |         |         |         |||
+|Advanced Hunting     |      Y   |    Y     |     Y    |    Y    |    Y   |
+|Custom file indicators     |      Y   |    Y     |     Y    |    Y    |    Y   |
+|Custom network indicators     |      Y   |    Y     |     Y    |    Y    |    Y   |
+|EDR Block & Passive Mode     |      Y   |    Y     |     Y    |    Y    |    Y   |
+|Sense detection sensor     |      Y   |    Y     |     Y    |    Y    |    Y   |
+|Endpoint & network device discovery     |      Y   |    N     |     N    |    N    |    N   |
+|||||||
+|**Response**     |         |         |         |||
+|Automated Investigation & Response (AIR)    |      Y   |    Y     |     Y    |    Y    |    Y   |
+|Device response capabilities: isolation, collect investigation package, run AV scan     |      Y   |    Y     |     Y    |    Y    |    Y   |
+|File response capabilities: collect file, deep analysis, block file, stop, and quarantine processes     |      Y   |    Y     |     Y    |    Y    |    Y   |
+|Live Response    |      Y   |    Y     |     Y    |    Y    |    Y   |
+
+(<a id="fn1">1</a>) Refers to the modern, unified solution for Windows Server 2012 and 2016. For more information, see [Onboard Windows Servers to the Defender for Endpoint service](configure-server-endpoints.md).
