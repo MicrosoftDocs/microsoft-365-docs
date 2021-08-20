@@ -40,7 +40,7 @@ ms.custom: api
 
 ## API description
 
-Cancel an already launched machine action that are not yet in final state (completed, cancelled, failed).
+Cancel an already launched machine action that are not yet in final state (completed, canceled, failed).
 
 ## Limitations
 
