@@ -2,14 +2,13 @@
 title: "Online meetings overview"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: twerner
+author: twernermsft
 manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
@@ -29,11 +28,11 @@ Need to meet with a client, customer, or partner, but can’t get everyone in on
 
 They'll need to download the [free version](https://support.microsoft.com/office/6d79a648-6913-4696-9237-ed13de64ae3c) or [join online in a browser](https://support.microsoft.com/office/1613bb53-f3fa-431e-85a9-d6a91e3468c9) to get video and screen sharing.
 
-If you frequently collaborate closely on projects with a client, customer, or partner, consider  so [creating a team for your clients](https://support.microsoft.com/office/11fbb083-52ee-434d-8c6e-63711fdafac7) you can easily invite them to meetings and also have conversations, share files, and track projects all in Microsoft Teams.
+If you frequently collaborate closely on projects with a client, customer, or partner, consider  so [creating a team for your clients](team-with-guests.md) you can easily invite them to meetings and also have conversations, share files, and track projects all in Microsoft Teams.
 
-Download an infographic to get a quick overview of how to join or host an online meeting with Microsoft Teams.
+Download an infographic to get a quick overview of how to join or host an online meeting with Microsoft Teams:
 
-Download an infographic to get a quick overview of how to join or host an online meeting with Microsoft Teams. [PDF](https://go.microsoft.com/fwlink/?linkid=2078712) | [PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079515)
+[PDF](https://go.microsoft.com/fwlink/?linkid=2078712) | [PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079515)
 
 ## 1. Schedule a meeting
 
@@ -71,7 +70,7 @@ Need a little help? See [Start a call from a chat in Teams](https://support.micr
 
 ## Related articles
 
-[Meetings in Microsoft Teams](https://docs.microsoft.com/microsoftteams/tutorial-meetings-in-teams)
+[Meetings in Microsoft Teams](/microsoftteams/tutorial-meetings-in-teams)
 
 [6 ways to make virtual meetings more efficient](https://products.office.com/en-us/business/articles/6-ways-to-make-virtual-meetings-more-efficient)
 

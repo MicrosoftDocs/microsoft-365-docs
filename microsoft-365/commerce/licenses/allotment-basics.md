@@ -5,15 +5,19 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: micurn, nicholak
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
-- commerce
-ms.custom: AdminSurgePortfolio
+- M365-subscription-management 
+- Adm_O365
+ms.custom: 
+- commerce_licensing
 description: "Learn about the new allotments feature."
+ms.date: 03/17/2021
 ---
 
 # Allotment basics
@@ -26,7 +30,7 @@ You can also delegate management of your allotments. Delegated allotment owners 
 
 ## Prerequisites
 
-You must meet the licensing requirements for [group-based licensing](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal#licensing-requirements).
+You must meet the licensing requirements for [group-based licensing](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal#licensing-requirements).
 
 You can use allotments with any product available to users:
 

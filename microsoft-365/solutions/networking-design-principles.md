@@ -23,7 +23,7 @@ In this article, [Ed Fisher](https://www.linkedin.com/in/edfisher/), Security & 
 
 ![Ed Fisher photo](../media/solutions-architecture-center/ed-fisher-networking.jpg) 
 
-I'm currently a Principal Technical Specialist in the South East region focusing on Security & Compliance. I've worked with customers moving to Office 365 for the past 10 years. I’ve worked with smaller shops with a handful of locations to government agencies and enterprises with millions of users distributed around the world, and many other customers in between, with the majority having tens of thousands of users, multiple locations in various parts of the world, the need for a higher degree of security, and a multitude of compliance requirements. I've helped hundreds of enterprises and millions of users move to the cloud safely and securely.
+I am currently a Principal Technical Specialist in our Retail and Consumer Goods team, focusing on Security & Compliance. I have worked with customers moving to Office 365 for the past ten years. I’ve worked with smaller shops with a handful of locations to government agencies and enterprises with millions of users distributed around the world, and many other customers in between, with the majority having tens of thousands of users, multiple locations in various parts of the world, the need for a higher degree of security, and a multitude of compliance requirements. I have helped hundreds of enterprises and millions of users move to the cloud safely and securely.
 
 With a background over the past 25 years that includes security, infrastructure, and network engineering, and having moved two of my previous employers to Office 365 before joining Microsoft, I’ve been on your side of the table plenty of times, and do remember what that’s like. While no two customers are ever the same, most have similar needs, and when consuming a standardized service such as any SaaS or PaaS platform, the best approaches tend to be the same.
 
@@ -31,7 +31,11 @@ With a background over the past 25 years that includes security, infrastructure,
 
 No matter how many times it happens, it never fails to amaze me how *creative* security teams and networking teams try to get with how they think they should connect to Microsoft cloud services. There’s always some security policy, compliance standard, or better way they insist on using, without being willing to engage in a conversation about what it is they're trying to accomplish, or *how* they're better, easier, more cost-effective, and more performant ways of doing so.
 
-When this sort of thing is escalated to me, I’m usually willing to take the challenge and walk them through the how's and the why's and get them to where they need to be. But if I'm being completely frank, I have to share that sometimes I want to just let them do what they will, and come back to say I told you so when they finally concede it doesn’t work. I may want to do that sometimes, but I *don’t*. What I do is try to explain all of what I'm going to include in this post. Regardless of your role, if your organization wants to use Microsoft cloud services, there’s probably some wisdom in what follows that can help you out.
+## It’s not the network — it’s how you’re (mis)using it!
+
+No matter how many times it happens, it never fails to amaze me how *creative* security teams and networking teams try to get with how they think they should connect to Microsoft cloud services. There’s always some security policy, compliance standard, or better way they insist on using, without being willing to engage in a conversation about what it is they are trying to accomplish, or *how* there are better, easier, more cost-effective, and more performant ways of doing so. 
+
+When this sort of thing is escalated to me, I’m usually willing to take the challenge and walk them through the hows and the whys and get them to where they need to be. But if I am being completely frank, I have to share that sometimes I want to just let them do what they will, and come back to say I told you so when they finally concede it doesn’t work. I may want to do that sometimes, but I *don’t*. What I do is try to explain all of what I am going to include in this post. Regardless of your role, if your organization wants to use Microsoft cloud services, there’s probably some wisdom in what follows that can help you out.
 
 ## Guiding principles
 
@@ -65,9 +69,9 @@ Of course, for a client to find any endpoint, it needs to use DNS. Microsoft’s
 
 ### To proxy or not to proxy, that is the question
 
-One of the first things to consider is whether to proxy users’ connections to Office 365. That one’s easy; do not proxy. Office 365 is accessed over the Internet, but it is not THE Internet. It’s an extension of your core services and should be treated as such. Anything you might want a proxy to do, such as DLP or antimalware or content inspection, is already available to you in the service, and can be used at scale and without needing to crack TLS-encrypted connections. But if you really want to proxy traffic that you cannot otherwise control, pay attention to our guidance at [https://aka.ms/pnc](https://aka.ms/pnc) and the categories of traffic at [https://aka.ms/ipaddrs](https://aka.ms/ipaddrs). We have three categories of traffic for Office 365. Optimize and Allow really should go direct and bypass your proxy. Default can be proxied. The details are in those docs...read them.
+One of the first things to consider is whether to proxy users’ connections to Office 365. That one’s easy; do not proxy. Office 365 is accessed over the Internet, but it is not THE Internet. It’s an extension of your core services and should be treated as such. Anything you might want a proxy to do, such as DLP or antimalware or content inspection, is already available to you in the service, and can be used at scale and without needing to crack TLS-encrypted connections. But if you really want to proxy traffic that you cannot otherwise control, pay attention to our guidance at [https://aka.ms/pnc](../enterprise/microsoft-365-network-connectivity-principles.md) and the categories of traffic at [https://aka.ms/ipaddrs](../enterprise/urls-and-ip-address-ranges.md). We have three categories of traffic for Office 365. Optimize and Allow really should go direct and bypass your proxy. Default can be proxied. The details are in those docs...read them.
 
-Most customers who insist on using a proxy, when they actually look at what they are doing, come to realize that when the client makes an HTTP CONNECT request to the proxy, the proxy is now just an expensive extra router. The protocols in use such as MAPI and RTC are not even protocols that web proxies understand, so even with TLS cracking you’re not really getting any extra security. You *are* getting extra latency. See [https://aka.ms/pnc](https://aka.ms/pnc) for more on this, including the Optimize, Allow, and Default categories for Microsoft 365 traffic.
+Most customers who insist on using a proxy, when they actually look at what they are doing, come to realize that when the client makes an HTTP CONNECT request to the proxy, the proxy is now just an expensive extra router. The protocols in use such as MAPI and RTC are not even protocols that web proxies understand, so even with TLS cracking you’re not really getting any extra security. You *are* getting extra latency. See [https://aka.ms/pnc](../enterprise/microsoft-365-network-connectivity-principles.md) for more on this, including the Optimize, Allow, and Default categories for Microsoft 365 traffic.
 
 Finally, consider the overall impact to the proxy and its corresponding response to deal with that impact. As more and more connections are being made through the proxy, it may decrease the TCP Scale Factor so that it doesn’t have to buffer so much traffic. I’ve seen customers where their proxies were so overloaded that they were using a Scale Factor of 0. Since Scale Factor is an exponential value and we like to use 8, each reduction in the Scale Factor value is a huge negative impact to throughput.
 
@@ -83,9 +87,9 @@ When you don’t permit outbound UDP traffic from clients to the service, they c
 
 But it isn’t. All connections to Office 365 are over TLS. We have been offering TLS 1.2 for quite a while now and will be disabling older versions soon because legacy clients still use them and that’s a risk.
 
-Forcing a TLS connection, or 32 of them, to go over a VPN before they then go to the service doesn't add security. It does add latency and reduces overall throughput. In some VPN solutions, it even forces UDP to tunnel through TCP, which again will have a very negative impact on streaming traffic. And, unless you are doing TLS inspection, there's no upside, all downside. A very common theme among customers, now that most of their workforce is remote, is that they're seeing significant bandwidth and performance impacts from making all their users connect using a VPN, instead of configuring split tunneling for access to [Optimize category Office 365 endpoints](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-network-connectivity-principles#new-office-365-endpoint-categories).
+Forcing a TLS connection, or 32 of them, to go over a VPN before they then go to the service doesn't add security. It does add latency and reduces overall throughput. In some VPN solutions, it even forces UDP to tunnel through TCP, which again will have a very negative impact on streaming traffic. And, unless you are doing TLS inspection, there's no upside, all downside. A very common theme among customers, now that most of their workforce is remote, is that they're seeing significant bandwidth and performance impacts from making all their users connect using a VPN, instead of configuring split tunneling for access to [Optimize category Office 365 endpoints](../enterprise/microsoft-365-network-connectivity-principles.md#new-office-365-endpoint-categories).
 
-It’s an easy fix to do split tunneling and it’s one you should do. For more, make sure you review [Optimize Office 365 connectivity for remote users using VPN split tunneling](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-vpn-split-tunnel).
+It’s an easy fix to do split tunneling and it’s one you should do. For more, make sure you review [Optimize Office 365 connectivity for remote users using VPN split tunneling](../enterprise/microsoft-365-vpn-split-tunnel.md).
 
 ## The sins of the past
 
@@ -95,9 +99,9 @@ Other times, hardware that was sized and purchased before the organization start
 
 ## Exceptions to the rules
 
-If your organization requires [tenant restrictions](https://docs.microsoft.com/azure/active-directory/manage-apps/tenant-restrictions), you’ll need to use a proxy with TLS break and inspect to  force some traffic through the proxy, but you don’t have to force all traffic through it.  It’s not an all or nothing proposition, so pay attention to what does need to be modified by the proxy.
+If your organization requires [tenant restrictions](/azure/active-directory/manage-apps/tenant-restrictions), you’ll need to use a proxy with TLS break and inspect to  force some traffic through the proxy, but you don’t have to force all traffic through it.  It’s not an all or nothing proposition, so pay attention to what does need to be modified by the proxy.
 
-If you're going to permit split tunneling but also use a proxy for general web traffic, make sure your PAC file defines what must go direct as well as how you define interesting traffic for what goes through the VPN tunnel. We offer sample PAC files at [https://aka.ms/ipaddrs](https://aka.ms/ipaddrs) that will make this easier to manage.
+If you're going to permit split tunneling but also use a proxy for general web traffic, make sure your PAC file defines what must go direct as well as how you define interesting traffic for what goes through the VPN tunnel. We offer sample PAC files at [https://aka.ms/ipaddrs](../enterprise/urls-and-ip-address-ranges.md) that will make this easier to manage.
 
 ## Conclusion
 
@@ -107,25 +111,25 @@ No matter what security goals you have in play, there are ways to accomplish the
 
 ## Further reading
 
-[The Office 365 Network Connectivity Principles](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-network-connectivity-principles)
+[The Office 365 Network Connectivity Principles](../enterprise/microsoft-365-network-connectivity-principles.md)
 
-[Office 365 URLs and IP address ranges](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges)
+[Office 365 URLs and IP address ranges](../enterprise/urls-and-ip-address-ranges.md)
 
-[Managing Office 365 endpoints](https://docs.microsoft.com/microsoft-365/enterprise/managing-office-365-endpoints)
+[Managing Office 365 endpoints](../enterprise/managing-office-365-endpoints.md)
 
-[Office 365 IP Address and URL Web service](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-ip-web-service)
+[Office 365 IP Address and URL Web service](../enterprise/microsoft-365-ip-web-service.md)
 
-[Assessing Office 365 network connectivity](https://docs.microsoft.com/microsoft-365/enterprise/assessing-network-connectivity)
+[Assessing Office 365 network connectivity](../enterprise/assessing-network-connectivity.md)
 
-[Office 365 network and performance tuning](https://docs.microsoft.com/microsoft-365/enterprise/network-planning-and-performance)
+[Office 365 network and performance tuning](../enterprise/network-planning-and-performance.md)
 
-[Assessing Office 365 network connectivity](https://docs.microsoft.com/microsoft-365/enterprise/assessing-network-connectivity)
+[Assessing Office 365 network connectivity](../enterprise/assessing-network-connectivity.md)
 
-[Office 365 performance tuning using baselines and performance history](https://docs.microsoft.com/microsoft-365/enterprise/performance-tuning-using-baselines-and-history)
+[Office 365 performance tuning using baselines and performance history](../enterprise/performance-tuning-using-baselines-and-history.md)
 
-[Performance troubleshooting plan for Office 365](https://docs.microsoft.com/microsoft-365/enterprise/performance-troubleshooting-plan)
+[Performance troubleshooting plan for Office 365](../enterprise/performance-troubleshooting-plan.md)
 
-[Content Delivery Networks](https://docs.microsoft.com/microsoft-365/enterprise/content-delivery-networks)
+[Content Delivery Networks](../enterprise/content-delivery-networks.md)
 
 [Microsoft 365 connectivity test](https://connectivity.office.com/)
 
@@ -133,6 +137,4 @@ No matter what security goals you have in play, there are ways to accomplish the
 
 [Office 365 Networking blog](https://techcommunity.microsoft.com/t5/office-365-networking/bd-p/Office365Networking)
 
-[Office 365 connectivity for remote users using VPN split tunneling](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-vpn-split-tunnel)
-
-
+[Office 365 connectivity for remote users using VPN split tunneling](../enterprise/microsoft-365-vpn-split-tunnel.md)

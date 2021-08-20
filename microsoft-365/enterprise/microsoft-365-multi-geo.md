@@ -53,6 +53,8 @@ Microsoft 365 Multi-Geo is available as an add-on to the following Microsoft 365
 - OneDrive for Business Plan 1 or Plan 2
 - SharePoint Online Plan 1 or Plan 2
 
+If a license is assigned to a user and later removed, Teams user chat data is queued to be moved back to the central location. SharePoint and Exchange data is not moved.
+
 ## Microsoft 365 Multi-Geo availability
 
 Microsoft 365 Multi-Geo is currently offered in these regions and countries:
@@ -83,4 +85,4 @@ Follow these steps to get started with multi-geo:
 
 [Multi-Geo Capabilities in Exchange Online](multi-geo-capabilities-in-exchange-online.md)
 
-[Teams experience in a multi-geo environment](https://docs.microsoft.com/microsoftteams/teams-experience-o365odb-spo-multi-geo)
+[Teams experience in a multi-geo environment](/microsoftteams/teams-experience-o365odb-spo-multi-geo)

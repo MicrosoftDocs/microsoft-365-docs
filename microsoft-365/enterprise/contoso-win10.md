@@ -1,9 +1,9 @@
 ---
 title: "Windows 10 Enterprise deployment for Contoso"
-author: JoeDavies-MSFT
+author: kelleyvice-msft
 f1.keywords:
 - NOCSH
-ms.author: josephd
+ms.author: kvice
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -82,7 +82,7 @@ Learn how Contoso is leveraging its Configuration Manager infrastructure to [dep
 
 ## See also
 
-[Windows 10 Enterprise](https://docs.microsoft.com/windows/deployment/)
+[Windows 10 Enterprise](/windows/deployment/)
 
 [Microsoft 365 for enterprise overview](microsoft-365-overview.md)
 

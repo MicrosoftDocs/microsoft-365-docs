@@ -9,6 +9,7 @@ ms.custom: ""
 ms.topic: conceptual
 author: "samanro"
 ms.author: "samanro"
+manager: pamgreen
 ---
 # Microsoft 365 docs navigation guide
 
@@ -16,7 +17,7 @@ This topic provides some tips and tricks for navigating the Microsoft 365 techni
 
 ## Hub page
 
-The Microsoft 365 hub page can be found at [https://aka.ms/microsoft365docs](https://aka.ms/microsoft365docs) and is the entry point for finding relevant Microsoft 365 content.
+The Microsoft 365 hub page can be found at [https://aka.ms/microsoft365docs](./index.yml) and is the entry point for finding relevant Microsoft 365 content.
 
 You can always navigate back to this page by selecting **Microsoft 365** from the header at the top of every page within the Microsoft 365 technical documentation set:
 
@@ -64,7 +65,7 @@ If you find something wrong within an article, you can submit feedback to the SQ
 
 Did you know that you could edit the content on docs.microsoft.com yourself? If you do so, not only will our documentation improve, but you'll also be credited as a contributor to the page. To get started, see:
 
-- [Microsoft Docs contributor guide](https://docs.microsoft.com/contribute/)
+- [Microsoft Docs contributor guide](/contribute/)
 
 ## Next steps
 

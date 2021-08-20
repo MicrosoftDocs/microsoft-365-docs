@@ -2,14 +2,13 @@
 title: "View, download, or print your bill"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
@@ -21,10 +20,12 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Learn how to view, download, or print your bill."
+description: "Learn how to review your monthly Microsoft 365 Business subscription by viewing, downloading, or printing your bill."
 ---
 
 # View, download, or print your bill for Microsoft 365
+
+## Watch: View, download, or print your bill
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FGmo?autoplay=false]
 

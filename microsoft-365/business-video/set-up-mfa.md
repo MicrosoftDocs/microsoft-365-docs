@@ -1,15 +1,14 @@
 ---
-title: "Set up multi-factor sign-in on your phone"
+title: "Set up multifactor sign-in on your phone"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
@@ -21,14 +20,16 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Learn how to set up multi-factor authentication on your phone."
+description: "Learn how to set up multifactor authentication, sometimes also referred to as two-factor authentication, on your phone."
 ---
 
-# Set up multi-factor authentication on your phone
+# Set up multifactor authentication on your phone
+
+## Watch: Set up multifactor authentication with a mobile device
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2MmQR?autoplay=false]
 
-Multi-factor authentication provides more security for your business. Follow these steps to set it up.
+Multifactor authentication provides more security for your business. Follow these steps to set it up.
 
 ## Try it!
 

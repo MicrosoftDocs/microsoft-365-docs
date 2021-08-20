@@ -12,7 +12,7 @@ ms.collection: Strat_SP_gtc
 localization_priority: Normal
 f1.keywords:
 - NOCSH
-description: Learn how to configure search in a multi-geo environment. Only some clients, such as OneDrive for Business, can return results in a multi-geo environment.
+description: Learn how to configure search in a multi-geo environment. Only some clients, such as OneDrive, can return results in a multi-geo environment.
 ---
 
 # Configure Search for Microsoft 365 Multi-Geo
@@ -25,13 +25,13 @@ For example, a user in one geo location can search for content stored in another
 
 These clients can return results from all geo locations:
 
-- OneDrive for Business
+- OneDrive
 - Delve
 - The SharePoint home page
 - The Search Center
 - Custom search applications that use the SharePoint Search API
 
-### OneDrive for Business
+### OneDrive
 
 As soon as the multi-geo environment has been set up, users that search in OneDrive get results from all geo locations.
 
@@ -60,9 +60,9 @@ Some search features you might be familiar with, work differently in a multi-geo
 <table>
 <thead>
 <tr class="header">
-<th align="left"><strong>Feature</strong></th>
-<th align="left"><strong>How it works</strong></th>
-<th align="left"><strong>Workaround</strong></th>
+<th align="left">Feature</th>
+<th align="left">How it works</th>
+<th align="left">Workaround</th>
 </tr>
 </thead>
 <tbody>
@@ -80,7 +80,7 @@ Some search features you might be familiar with, work differently in a multi-geo
 <tr class="odd">
 <td align="left"></td>
 <td align="left">Multi-geo search doesn't support dynamic bucketing for numerical refiners.</td>
-<td align="left">Use the <a href="https://docs.microsoft.com/sharepoint/dev/general-development/query-refinement-in-sharepoint">"Discretize" parameter</a> for numerical refiners.</td>
+<td align="left">Use the <a href="/sharepoint/dev/general-development/query-refinement-in-sharepoint">"Discretize" parameter</a> for numerical refiners.</td>
 </tr>
 <tr class="even">
 <td align="left">Document IDs</td>
@@ -94,7 +94,7 @@ Some search features you might be familiar with, work differently in a multi-geo
 </tr>
 <tr class="even">
 <td align="left">Hybrid search</td>
-<td align="left">In a hybrid SharePoint environment with <a href="https://docs.microsoft.com/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint">cloud hybrid search</a>,  on-premises content is added to the Microsoft 365 index of the central location.</td>
+<td align="left">In a hybrid SharePoint environment with <a href="/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint">cloud hybrid search</a>,  on-premises content is added to the Microsoft 365 index of the central location.</td>
 <td align="left"></td>
 </tr>
 </tbody>
@@ -107,8 +107,8 @@ Some of the search features you might be familiar with, aren't supported in a mu
 <table>
 <thead>
 <tr class="header">
-<th align="left"><strong>Search feature</strong></th>
-<th align="left"><strong>Note</strong></th>
+<th align="left">Search feature</th>
+<th align="left">Note</th>
 </tr>
 </thead>
 <tbody>
@@ -117,8 +117,8 @@ Some of the search features you might be familiar with, aren't supported in a mu
 <td align="left">App-only authentication (privileged access from services) isn't supported in multi-geo search.</td>
 </tr>
 <tr class="even">
-<td align="left">Guest users</td>
-<td align="left">Guest users only get results from the geo location that they're searching from.</td>
+<td align="left">Guests</td>
+<td align="left">Guests only get results from the geo location that they're searching from.</td>
 </tr>
 </tbody>
 </table>
@@ -201,7 +201,7 @@ MultiGeoSearchConfiguration - This is an optional list of which geo locations in
 </tbody>
 </table>
 
-If you omit DataLocation or EndPoint, or if a DataLocation is duplicated, the request fails. [You can get information about the endpoint of a tenant's geo locations by using Microsoft Graph](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-discovery).
+If you omit DataLocation or EndPoint, or if a DataLocation is duplicated, the request fails. [You can get information about the endpoint of a tenant's geo locations by using Microsoft Graph](/sharepoint/dev/solution-guidance/multigeo-discovery).
 
 ### Response data
 
@@ -249,18 +249,22 @@ With a GET request, you specify the query parameters in the URL. With a POST req
 
 #### Sample GET request that's fanned out to **all** geo locations
 
+```http
 https:// \<tenant\>/\_api/search/query?querytext='sharepoint'&Properties='EnableMultiGeoSearch:true'&ClientType='my\_client\_id'
+```
 
 #### Sample GET request to fan out to **some** geo locations
 
+```http
 https:// \<tenant\>/\_api/search/query?querytext='site'&ClientType='my_client_id'&Properties='EnableMultiGeoSearch:true, MultiGeoSearchConfiguration:[{DataLocation\\:"NAM"\\,Endpoint\\:"https\\://contosoNAM.sharepoint.com"\\,SourceId\\:"B81EAB55-3140-4312-B0F4-9459D1B4FFEE"}\\,{DataLocation\\:"CAN"\\,Endpoint\\:"https\\://contosoCAN.sharepoint-df.com"}]'
+```
 
 > [!NOTE]
 > Commas and colons in the list of geo locations for the MultiGeoSearchConfiguration property are preceded by the **backslash** character. This is because GET requests use colons to separate properties and commas to separate arguments of properties. Without the backslash as an escape character, the MultiGeoSearchConfiguration property is interpreted wrongly.
 
 #### Sample POST request that's fanned out to **all** geo locations
 
-```text
+```http
     {
     "request": {
             "__metadata": {
@@ -285,7 +289,7 @@ https:// \<tenant\>/\_api/search/query?querytext='site'&ClientType='my_client_id
 
 #### Sample POST request that's fanned out to **some** geo locations
 
-```text
+```http
     {
         "request": {
             "Querytext": "SharePoint",
@@ -316,9 +320,9 @@ https:// \<tenant\>/\_api/search/query?querytext='site'&ClientType='my_client_id
 
 Here's a sample CSOM query that's fanned out to **all** geo locations:
 
-```text
+```CSOM
 var keywordQuery = new KeywordQuery(ctx);
 keywordQuery.QueryText = query.SearchQueryText;
 keywordQuery.ClientType = <enter a string here>;
-keywordQuery["EnableMultiGeoSearch"] = true;
+keywordQuery.Properties["EnableMultiGeoSearch"] = true;
 ```

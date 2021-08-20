@@ -35,11 +35,9 @@ You have to be assigned the Mail Recipients role in Exchange Online to enable or
 
 ## Enable an archive mailbox
 
-1. Go to <https://protection.office.com>.
+1. Go to <https://compliance.microsoft.com> and sign in.
 
-2. Sign in using your work or school account.
-
-3. In the left pane of the Security & Compliance Center, click **Information governance** \> **Archive**.
+2. In the left pane of the Microsoft 365 compliance center, click **Information governance**, and then click the **Archive** tab.
 
    The **Archive** page is displayed. The **Archive mailbox** column indicates whether an archive mailbox is enabled or disabled for each user.
 
@@ -69,24 +67,22 @@ The default archive policy assigned to users' mailboxes moves items to the archi
 
 To disable an archive mailbox:
 
-1. Go to <https://protection.office.com>.
+1. Go to <https://compliance.microsoft.com> and sign in.
 
-2. Sign in using your work or school account.
-
-3. In the left pane of the Security & Compliance Center, click **Information governance** \> **Archive**.
+2. In the left pane of the Microsoft 365 compliance center, click **Information governance**, and then click the **Archive** tab.
 
    The **Archive** page is displayed. The **Archive mailbox** column indicates whether an archive mailbox is enabled or disabled for each user.
 
    > [!NOTE]
    > The **Archive** page shows a maximum of 500 users.
 
-4. In the list of mailboxes, select the user that you want to disable the archive mailbox for.
+3. In the list of mailboxes, select the user that you want to disable the archive mailbox for.
 
-5. In the details pane, click **Disable**.
+4. In the details pane, click **Disable**.
 
    A warning message is displayed saying that you'll have 30 days to re-enable the archive mailbox, and that after 30 days, all information in the archive will be permanently deleted.
 
-6. Click **Yes** to disable the archive mailbox.
+5. Click **Yes** to disable the archive mailbox.
 
    It might take a few moments to disable the archive mailbox. When it's disabled, **Archive mailbox: disabled** is displayed in the details pane for the selected user. You might have to click **Refresh** ![Refresh icon](../media/O365-MDM-Policy-RefreshIcon.gif) to update the information in the details pane.
 
@@ -97,7 +93,7 @@ To disable an archive mailbox:
 
 You can also use Exchange Online PowerShell to enable archive mailboxes. The primary reason to use PowerShell is that you can quickly enable the archive mailbox for all users in your organization.
 
-The first step is to connect to Exchange Online PowerShell. For instructions, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+The first step is to connect to Exchange Online PowerShell. For instructions, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 After you're connected to Exchange Online, you can run the commands in the following sections to enable or disable archive mailboxes.
 
@@ -145,8 +141,8 @@ Get-Mailbox -Filter {ArchiveGuid -Ne "00000000-0000-0000-0000-000000000000" -AND
 
 - For more information about archive mailboxes and Exchange retention policies, see:
 
-  - [Retention tags and retention policies in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies)
+  - [Retention tags and retention policies in Exchange Online](/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies)
 
-  - [Default Retention Policy in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/messaging-records-management/default-retention-policy)
+  - [Default Retention Policy in Exchange Online](/exchange/security-and-compliance/messaging-records-management/default-retention-policy)
 
   - [Set up an archive and deletion policy for mailboxes in your organization](set-up-an-archive-and-deletion-policy-for-mailboxes.md)

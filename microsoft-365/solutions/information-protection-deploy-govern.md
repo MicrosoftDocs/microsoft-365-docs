@@ -63,7 +63,7 @@ Regardless of the legal and business reasons for keeping personal information ar
 
 ## Managing information governance in Microsoft 365
 
-To begin, see [Manage information governance](../compliance/manage-information-governance.md) and [Data Retention, Deletion and Destruction in Microsoft 365](https://docs.microsoft.com/office365/Enterprise/office-365-data-retention-deletion-and-destruction-overview).
+To begin, see [Manage information governance](../compliance/manage-information-governance.md) and [Data Retention, Deletion and Destruction in Microsoft 365](/office365/Enterprise/office-365-data-retention-deletion-and-destruction-overview).
 
 ### Develop data retention schedules for containers, email, and content
 
@@ -86,4 +86,3 @@ Use [retention policies and retention labels](../compliance/retention.md) to ret
 Use retention labels that declare content a record to implement a [records management solution](../compliance/records-management.md) for data in Microsoft 365.
 
 For data privacy, data subject requests (DSRs) received by the legal department are declared a record and can be stored indefinitely or disposed of with proof, to adhere to regulatory activity retention specifications.
-
