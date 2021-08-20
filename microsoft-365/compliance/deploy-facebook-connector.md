@@ -119,7 +119,7 @@ This article contains the step-by-step process to deploy a connector that uses t
 
    ![Click Add Products and then click **Webhooks](../media/FBCimage32.png)
 
-9. Add Webhooks Callback URL and add a verify token. The format of the callback URL, use the format **<connectorserviceuri>/api/FbPageWebhook**, where the value for connectorserviceuri is the Azure app service URL for your organization; for example `https://fbconnector.azurewebsites.net`.
+9. Add Webhooks Callback URL and add a verify token. The format of the callback URL, use the format `<connectorserviceuri>/api/FbPageWebhook`, where the value for connectorserviceuri is the Azure app service URL for your organization; for example `https://fbconnector.azurewebsites.net`.
 
    The verify token should similar to a strong password. Copy the verify token to a text file or other storage location.
 
@@ -185,7 +185,7 @@ This article contains the step-by-step process to deploy a connector that uses t
 
 1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com) and then click **Data connectors** in the left nav.
 
-2. On the **Data connectors (preview)** page under **Facebook Business pages**, click **View**.
+2. On the **Data connectors** page under **Facebook Business pages**, click **View**.
 
 3. On the **Facebook business pages** page, click **Add connector**.
 
@@ -221,8 +221,6 @@ This article contains the step-by-step process to deploy a connector that uses t
 
 12. On the **Choose storage location** page, type the email address of Microsoft 365 mailbox that the Facebook items will be imported to, and then click **Next**.
 
-13. On the **Provide admin consent**, click **Provide consent** and then follow the steps. You must be a global admin to provide consent for the Office 365 Import service to access data in your organization.
+13. Click **Next** to review the connector settings and then click **Finish** to complete the connector setup.
 
-14. Click **Next** to review the connector settings and then click **Finish** to complete the connector setup.
-
-15. In the compliance center, go to the **Data connectors** page, and click the **Connectors** tab to see the progress of the import process.
+14. In the compliance center, go to the **Data connectors** page, and click the **Connectors** tab to see the progress of the import process.

@@ -17,7 +17,7 @@ ms.topic: article
 
 <!--Application addendum -->
  
-Microsoft Managed Desktop requires that we manage devices using a specific approach to guarantee the performance, reliability, and serviceability of devices. If you’re sure that the approach taken by Microsoft Managed Desktop for the areas below will not work for you, you can request an [exception to the service plan](customizing.md).
+Microsoft Managed Desktop requires that we manage devices using a specific approach to guarantee the performance, reliability, and serviceability of devices.
 
 
 |Management area  |Microsoft Managed Desktop approach  |
@@ -36,6 +36,4 @@ Microsoft Managed Desktop requires that we manage devices using a specific appro
 
 
 
-Microsoft Managed Desktop might monitor other software running on managed devices. If it negatively impacts system security, performance, or reliability, you might be required to request an exception to the service plan.
-
-
+Microsoft Managed Desktop might monitor other software running on managed devices. If it negatively impacts device management, device security, performance, or reliability, you might be required to request an [exception to the service plan](customizing.md).

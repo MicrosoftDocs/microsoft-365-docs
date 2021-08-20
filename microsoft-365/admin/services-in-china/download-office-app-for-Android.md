@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: sharik
 author: skjerland
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -24,17 +24,17 @@ monikerRange: 'o365-21vianet'
 
 # Office app for Android for Office 365 operated by 21Vianet
 
-The Microsoft Office app for Android combines Word, Excel, and PowerPoint mobile apps into a single app available for download for Android phones. With the Office app for Android you can connect to Office 365 just as you would with the Word, Excel, and PowerPoint mobile apps. The Office app for Android download won't affect any existing installations of Word, Excel, and PowerPoint.
+The Microsoft Office app for Android combines Word, Excel, and PowerPoint mobile apps into a single app available for download for Android phones. With the Office app for Android, you can connect to Office 365 just as you would with the Word, Excel, and PowerPoint mobile apps. The Office app for Android download won't affect any existing installations of Word, Excel, and PowerPoint.
 
-A few Office app for Android features are not available for Office 365 operated by 21Vianet customers:
+A few Office app for Android features aren't available for Office 365 operated by 21Vianet customers:
 
 - Image to text and Image to table 
 - Converting photos to Word documents from Lens 
 - Transfer files action 
-- Notes remain local and do not sync to server
+- Notes remain local and don't sync to server
 - Link preview within Scan QR
 - Live persona cards in the Me section
-- Classification, labelling, and protection (CLP)
+- Classification, labeling, and protection (CLP)
 
 
 ## Download the Office app for Android
@@ -42,7 +42,6 @@ A few Office app for Android features are not available for Office 365 operated 
 Download the Office app for Android phones from any of these China stores:
 - [Baidu](https://shouji.baidu.com/software/26842919.html)
 - [Xiaomi](http://app.mi.com/details?id=com.microsoft.office.officehub&ref=search)
-- [Huawei](https://appstore.huawei.com/app/C10888510)
 - [Lenovo](https://www.lenovomm.com/appdetail/com.microsoft.office.officehub/43003745)
 - [360](http://zhushou.360.cn/detail/index/soft_id/708682?recrefer=SE_D_office%20mobile)
 - [tencent](https://sj.qq.com/myapp/detail.htm?apkName=com.microsoft.office.officehub)

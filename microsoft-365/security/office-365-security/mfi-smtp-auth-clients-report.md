@@ -1,23 +1,32 @@
 ---
-title: "SMTP Auth clients insight and report in the Mail flow dashboard"
-f1.keywords:
-- NOCSH
-ms.author: chrisda
-author: chrisda
+title: SMTP Auth clients insight and report in the Mail flow dashboard
+f1.keywords: 
+  - NOCSH
+ms.author: siosulli
+author: siosulli
 manager: dansimp
 audience: ITPro
-ms.topic: article
-ms.service: O365-seccomp
+ms.topic: conceptual
+
 localization_priority: Normal
-ms.assetid:
-ms.custom:
-- seo-marvel-apr2020
-description: "Admins can learn how to use the SMTP Auth insight and report in the Mail flow dashboard in the Security & Compliance Center to monitor email senders in their organization that use authenticated SMTP (SMTP AUTH) to send email messages."
+ms.assetid: 
+ms.custom: 
+  - seo-marvel-apr2020
+description: Admins can learn how to use the SMTP Auth insight and report in the Mail flow dashboard in the Security & Compliance Center to monitor email senders in their organization that use authenticated SMTP (SMTP AUTH) to send email messages.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # SMTP Auth clients insight and report in the Security & Compliance Center
 
-The **SMTP Auth clients** insight in the [Mail flow dashboard](mail-flow-insights-v2.md) and the associated [SMTP Auth clients report](#smtp-auth-clients-report) highlight the use of the SMTP AUTH client submission protocol by users or system accounts in your organization. This legacy protocol (which uses the endpoint smtp.office365.com) only offers Basic authentication, and is susceptible to being used by compromised accounts to send email. The insight and report allow you to check for unusual activity for SMTP AUTH email submissions. It also shows the TLS usage data for clients or devices using SMTP AUTH.
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+**Applies to**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+
+The **SMTP Auth clients** insight in the [Mail flow dashboard](mail-flow-insights-v2.md) and the associated [SMTP Auth clients report](#smtp-auth-clients-report) in the [Security & Compliance Center](https://protection.office.com) highlight the use of the SMTP AUTH client submission protocol by users or system accounts in your organization. This legacy protocol (which uses the endpoint smtp.office365.com) only offers Basic authentication, and is susceptible to being used by compromised accounts to send email. The insight and report allow you to check for unusual activity for SMTP AUTH email submissions. It also shows the TLS usage data for clients or devices using SMTP AUTH.
 
 The widget indicates the number of users or service accounts that have used the SMTP Auth protocol in the last 7 days.
 

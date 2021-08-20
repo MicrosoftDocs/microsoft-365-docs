@@ -1,29 +1,37 @@
 ---
-title: "New users forwarding email insight"
-f1.keywords:
-- NOCSH
-ms.author: chrisda
-author: chrisda
+title: New users forwarding email insight
+f1.keywords: 
+  - NOCSH
+ms.author: siosulli
+author: siosulli
 manager: dansimp
 audience: ITPro
-ms.topic: article
-ms.service: exchange-online
+ms.topic: conceptual
 localization_priority: Normal
-ms.assetid:
-description: "Admins can learn how to use the New users forwarding email insight in the Security & Compliance Center to investigate when users in their organization are forwarding messages to new domains."
+ms.assetid: 
+description: Admins can learn how to use the New users forwarding email insight in the Security & Compliance Center to investigate when users in their organization are forwarding messages to new domains.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # New users forwarding email insight in the Security & Compliance Center
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+**Applies to**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+
 It's suspicious when new user accounts in your organization suddenly start forwarding email messages to external domains.
 
-The **New domains being forwarded email** insight notifies you when newly-created users in your organization are forwarding messages to external domains. This condition could indicate compromised admin accounts were used to create the new users. If you suspect the accounts have been compromised, see [Responding to a compromised email account](https://docs.microsoft.com/microsoft-365/security/office-365-security/responding-to-a-compromised-email-account).
+The **New domains being forwarded email** insight in the [Security & Compliance Center](https://protection.office.com) notifies you when newly-created users in your organization are forwarding messages to external domains. This condition could indicate compromised admin accounts were used to create the new users. If you suspect the accounts have been compromised, see [Responding to a compromised email account](responding-to-a-compromised-email-account.md).
 
 This insight appears only when the issue is detected, and it appears on the [Forwarding report](view-mail-flow-reports.md#forwarding-report) page.
 
 ![New users forwarding email insight](../../media/mfi-new-users-forwarding-email.png)
 
-When you click on the widget, a flyout appears where you can find more details about the forwarded messages, including a link to the [Forwarding modifications report](#forwarding-modifications-report) as described later in this topic.
+When you click on the widget, a flyout appears where you can find more details about the forwarded messages, including a link to the [Forwarding modifications report](#forwarding-modifications-report) as described later in this article.
 
 ![Details flyout that appears after clicking on the New users forwarding email insight](../../media/mfi-new-users-forwarding-email-details.png)
 
@@ -53,11 +61,11 @@ The following charts are available in the report view:
 
 - **Show data for: New forwarding users**:
 
-  ![New forwarding users view in the Forwarding modifications report](../../media/forwarding-modificiations-report-new-forwarding-users.png)
+  ![New forwarding users view in the Forwarding modifications report](../../media/forwarding-modifications-report-new-forwarding-users.png)
 
 - **Show data for: New forwarding domains**:
 
-  ![New forwarded domains view in the Forwarding modifications report](../../media/forwarding-modificiations-report-new-forwarded-domains.png)
+  ![New forwarded domains view in the Forwarding modifications report](../../media/forwarding-modifications-report-new-forwarded-domains.png)
 
 If you click **Filters** in a report view, you can specify a date range with **Start date** and **End date**.
 

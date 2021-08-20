@@ -2,8 +2,8 @@
 title: "Send encrypted email"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: sharik
+author: skjerland
 manager: scotv
 ms.date: 9/20/2018
 ms.audience: Admin
@@ -31,7 +31,6 @@ description: "Learn how to send encrypted email using Outlook."
 
 Your data and campaign information is important and often confidential. Help protect this sensitive information by using encryption and sensitivity labels so you and your email recipients treat the information with the sensitivity it requires.
 
-
 ## Best practices
 
 Before you send email with confidential or sensitive information, consider turning on:
@@ -41,28 +40,26 @@ Before you send email with confidential or sensitive information, consider turni
 
 ![Diagram of an email with callouts for labels and encryption](../media/m365-campaign-email-encrypt.png)
 
-
 ## Set it up
 
 If you want to encrypt a message that doesn't meet a pre-defined rule or your admin hasn't set up any rules, you can apply a variety of different encryption rules before you send the message. To send an encrypted message from Outlook 2013 or 2016, or Outlook 2016 for Mac, select **Options > Permissions**, then select the protection option you need. You can also send an encrypted message by selecting the **Protect** button in Outlook on the web. For more information, see [Send, view, and reply to encrypted messages in Outlook for PC](https://support.microsoft.com/en-us/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980).
 
 ## Admin settings
 
-You can learn all about setting up email encryption at [Email encryption in Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/email-encryption).
+You can learn all about setting up email encryption at [Email encryption in Microsoft 365](../compliance/email-encryption.md).
 
 ### Automatically encrypt email messages
 
-Admins can create mail flow rules to automatically protect email messages that are sent and received from your campaign. Set up rules to encrypt any outgoing email messages, and remove encryption from encrypted messages coming from inside your organization or from replies to encrypted messages sent from your organization. 
+Admins can create mail flow rules to automatically protect email messages that are sent and received from your campaign. Set up rules to encrypt any outgoing email messages, and remove encryption from encrypted messages coming from inside your organization or from replies to encrypted messages sent from your organization.
 
 You create mail flow rules to encrypt email messages with the new Office 365 Message Encryption (OME) capabilities. Define mail flow rules for triggering message encryption with the new OME capabilities by using the Exchange Admin Center (EAC). 
 
-1. In a web browser, using a work or school account that has been granted global administrator permissions, sign in. 
-2. Choose the Admin tile. 
-3. In the admin center, choose **Admin centers > Exchange**. 
+1. In a web browser, using a work or school account that has been granted global administrator permissions, sign in.
+2. Choose the Admin tile.
+3. In the admin center, choose **Admin centers > Exchange**.
 
-For more information, see [Define mail flow rules to encrypt email messages](https://docs.microsoft.com/microsoft-365/compliance/define-mail-flow-rules-to-encrypt-email).
+For more information, see [Define mail flow rules to encrypt email messages](../compliance/define-mail-flow-rules-to-encrypt-email.md).
 
 ### Brand your encryption messages
 
-You can also apply your campaign branding to customize the look and the text in the email messages. For more information, see [Add your organization's brand to your encrypted messages](https://docs.microsoft.com/microsoft-365/compliance/email-encryption).
-
+You can also apply your campaign branding to customize the look and the text in the email messages. For more information, see [Add your organization's brand to your encrypted messages](../compliance/email-encryption.md).

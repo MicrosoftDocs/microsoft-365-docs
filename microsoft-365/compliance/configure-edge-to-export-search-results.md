@@ -6,7 +6,8 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: article
+ms.topic: how-to
+ms.service: O365-seccomp
 ms.collection: M365-security-compliance 
 search.appverid: 
 - MOE150
@@ -24,15 +25,15 @@ As a result of recent changes to the newest version of Microsoft Edge, ClickOnce
 
 2. If the existing value is set to **Default** or **Disabled** in the dropdown list, change it to **Enabled**.
 
-   ![](../media/ClickOnceimage1.png)
+   ![Select Enabled from dropdown list](../media/ClickOnceimage1.png)
 
 3. Scroll down to the bottom of the browser window and click **Restart** to restart Edge.
 
-   ![](../media/ClickOnceimage2.png)
+   ![Click Restart](../media/ClickOnceimage2.png)
 
 **Note:** Organizations can use Group Policy to disable ClickOnce support. To check if there is an organizational policy for ClickOnce support, go to **edge://policy**. The following screenshot shows that ClickOnce is enabled across the entire organization. If this policy value is set to **false**, you will need to contact an admin in your organization.
 
-![](../media/ClickOnceimage3.png)
+![List of Edge organizational policies](../media/ClickOnceimage3.png)
 
 ## Install and run the eDiscovery Export Tool
 

@@ -9,13 +9,13 @@ audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.date: 02/28/2020
+ms.date: 06/11/2020
 ms.collection: 
 - Strat_O365_IP
 - M365-security-compliance
 search.appverid:
 - MET150
-description: "As an administrator, you can revoke certain emails that were encrypted with Office 365 Advanced Message Encryption."
+description: "As an administrator and as a message sender, you can revoke certain emails that were encrypted with Office 365 Advanced Message Encryption."
 ---
 
 # Revoke email encrypted by Advanced Message Encryption
@@ -24,13 +24,17 @@ Email revocation is offered as part of Office 365 Advanced Message Encryption. O
 
 This article is part of a larger series of articles about [Office 365 Message Encryption](ome.md).
 
-If a message was encrypted using Office 365 Advanced Message Encryption, and you are a Microsoft 365 admin, you can revoke the message under certain conditions. This article describes the circumstances under which revocation is possible and how to do it.
+If a message was encrypted using Office 365 Advanced Message Encryption, and you are a Microsoft 365 admin or you are the sender of the message, you can revoke the message under certain conditions. Admins revoke messages using PowerShell. As a sender, you revoke a message that you sent directly from Outlook on the web. This article describes the circumstances under which revocation is possible and how to do it.
   
 ## Encrypted emails that you can revoke
 
-You can revoke encrypted emails if the recipient received a link-based, branded encrypted email. If the recipient received a native inline experience in a supported Outlook client, then you can't revoke those.
+Admins and message senders can revoke encrypted emails if the recipient received a link-based, branded encrypted email. If the recipient received a native inline experience in a supported Outlook client, then you can't revoke the message.
 
-Whether a recipient receives a link-based experience or an inline experience depends on the recipient identity type: Office 365 and Microsoft account recipients (for example, outlook.com users) get an inline experience in supported Outlook clients. All other recipient types, such as Gmail recipients, get a link-based experience.
+Whether a recipient receives a link-based experience or an inline experience depends on the recipient identity type: Office 365 and Microsoft account recipients (for example, outlook.com users) get an inline experience in supported Outlook clients. All other recipient types, such as Gmail and Yahoo recipients, get a link-based experience.
+
+Admins and message senders can revoke messages that are encrypted using encryption applied directly from Outlook on the web. For example, messages encrypted with the Encrypt Only option.
+
+:::image type="content" source="../media/adhocencryptionrevoke.png" alt-text="Screenshot showing Encrypt Only option in Outlook on the web.":::
 
 ## Recipient experience for revoked encrypted emails
 
@@ -38,15 +42,33 @@ Once an email has been revoked, the recipient receives an error when they access
 
 ![Screenshot that shows a revoked encrypted email.](../media/revoked-encrypted-email.png)
 
-## How to revoke an encrypted email
+## How to revoke an encrypted message that you sent
+
+You can revoke a mail that you sent to a single recipient that uses a social account such as gmail.com or yahoo.com. In other words, you can revoke an email sent to a single recipient that received the link-based experience.
+
+You cannot revoke a mail that you sent to a recipient that uses a work or school account from Office 365 or Microsoft 365 or a user that uses a Microsoft account, for example, an outlook.com account. 
+
+To revoke an encrypted message that you sent, complete these steps
+
+1. In Outlook on the web, in your **Sent** folder, browse to the message you want to revoke.
+
+   If the mail is revocable, you'll see the "Remove external access" link at the top of the message.
+
+    :::image type="content" source="../media/infoprotect-email-encryption/adhocencryptionrevokesentmsg.png" alt-text="Screenshot showing encrypted mail that you want to revoke in Outlook on the web.":::
+
+2. Click **Remove external access** to revoke the message.
+
+   The message shows that its status is revoked.
+
+   :::image type="content" source="../media/adhocencryptionrevokedmsg.png" alt-text="Screenshot showing revoked encrypted message in Outlook on the web.":::
+
+## How to revoke an encrypted message as an administrator
 
 Microsoft 365 administrators follow these general steps to revoke an eligible encrypted email:
 
 - Get the Message ID of the email.
 - Verify that you can revoke the message.
 - Revoke the mail.
-
-Keep reading for in-depth instructions for each step in the revocation process.
 
 ### Step 1. Obtain the Message ID of the email
 
@@ -76,7 +98,7 @@ To verify whether you can revoke a message, check whether the Revocation Status 
 
 To verify whether you can revoke a particular email message by using Windows PowerShell, complete these steps.
 
-1. Using a work or school account that has global administrator permissions in your organization, start a Windows PowerShell session and connect to Exchange Online. For instructions, see [Connect to Exchange Online PowerShell](https://aka.ms/exopowershell).
+1. Using a work or school account that has global administrator permissions in your organization, start a Windows PowerShell session and connect to Exchange Online. For instructions, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Run the Get-OMEMessageStatus cmdlet as follows:
 
@@ -86,7 +108,7 @@ To verify whether you can revoke a particular email message by using Windows Pow
 
    This command returns the subject of the message and whether the message is revocable. For example,
 
-     ```text
+     ```console
      Subject        IsRevocable
      -------        -----------
      "Test message" True
@@ -104,7 +126,7 @@ To revoke the message using the Security &amp; Compliance Center
 
 To revoke an email by using Windows PowerShell, use the Set-OMEMessageRevocation cmdlet.
 
-1. Using a work or school account that has global administrator permissions in your organization, [Connect to Exchange Online PowerShell](https://aka.ms/exopowershell).
+1. Using a work or school account that has global administrator permissions in your organization, [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Run the Set-OMEMessageRevocation cmdlet as follows:
 
@@ -120,7 +142,7 @@ To revoke an email by using Windows PowerShell, use the Set-OMEMessageRevocation
 
     If revocation was successful, the cmdlet returns the following result:  
 
-     ```text
+     ```console
      Revoked: True
      ```
 
@@ -130,4 +152,4 @@ To revoke an email by using Windows PowerShell, use the Set-OMEMessageRevocation
 
 - [Office 365 Advanced Message Encryption - email expiration](ome-advanced-expiration.md)
 
-- [Message policy and compliance service description](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/message-policy-and-compliance)
+- [Message policy and compliance service description](/office365/servicedescriptions/exchange-online-service-description/message-policy-and-compliance)

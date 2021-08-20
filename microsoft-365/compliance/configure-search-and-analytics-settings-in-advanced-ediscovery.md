@@ -1,5 +1,5 @@
 ---
-title: Configure search and analytics settings - eDiscovery
+title: Configure search and analytics settings - Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,10 +16,10 @@ search.appverid:
 - MET150
 ms.assetid: 
 ms.custom: seo-marvel-mar2020
-description: "Configure Advanced eDiscovery settings that apply to all review set in a case. This includes settings for analytics and OCR."
+description: "Configure Advanced eDiscovery settings that apply to all review set in a case. This includes settings for analytics and Optical character recognition."
 ---
 
-# Configure search and analytics settings
+# Configure search and analytics settings in Advanced eDiscovery
 
 You can configure settings for each Advanced eDiscovery case to control the following functionality.
 
@@ -45,7 +45,7 @@ To configure search and analytics settings for a case:
 
 ## Near duplicates and email threading
 
-In this section, you can set parameters for duplicate detection, near duplicate detection, and email threading. For more information, see [Near duplicate detection](near-duplicates.md) and [Email threading](email-threading.md).
+In this section, you can set parameters for duplicate detection, near duplicate detection, and email threading. For more information, see [Near duplicate detection](near-duplicate-detection-in-advanced-ediscovery.md) and [Email threading](email-threading-in-advanced-ediscovery.md).
 
 - **Near duplicates/email threading:** When turned on, duplicate detection, near duplicate detection, and email threading are included as part of the workflow when you run analytics on the data in a review set.
 
@@ -75,11 +75,19 @@ This query basically filters out duplicate items from the review set. This lets 
 
 ## Ignore text
 
-There are situations where certain text will diminish the quality of analytics, such as lengthy disclaimers that get added to email messages regardless of the content of the email. If you know of text that should be ignored, you can exclude it from analytics by specifying the text string and the analytics functionality (Near-duplicates, Email threading, Themes, and Relevance) that the text should be excluded for. Using regular expressions (RegEx) as ignored text is also supported. 
+There are situations where certain text will diminish the quality of analytics, such as lengthy disclaimers that get added to email messages regardless of the content of the email. If you know of text that should be ignored, you can exclude it from analytics by specifying the text string and the analytics functionality (Near-duplicates, Email threading, Themes, and Relevance) that the text should be excluded for. Using regular expressions (RegEx) as ignored text is also supported.
 
 ## Optical character recognition (OCR)
 
-When this setting is turned on, OCR will be run on image files that are added to review sets so that image text can be reviewed, searched, tagged, and analyzed. You can view the extracted text in the Text viewer of the selected image file in the review set. For more information, see:
+When this setting is turned on, OCR processing will be run on image files. OCR processing is run in the following situations:
+
+- When custodians and [non-custodial data sources](non-custodial-data-sources.md) are added to a case. When OCR is applied to image files, the text in those files will be searchable during a collection. OCR processing is performed during the [Advanced indexing](indexing-custodian-data.md) process. OCR is only run on items that are processed during Advanced indexing. For example, if a large PDF file that is partially indexed or had other indexing errors is processed during Advanced indexing, the file will also have OCR applied. In other words, OCR processing only occurs on files that are re-indexed during the Advanced indexing process. This means there may be situations where custodians are added to a case but some email attachments won't be processed for OCR because those files are not processed during Advanced indexing.
+
+- When content from other data sources (that aren't associated with a custodian and added to the case in a non-custodial data source) is added to a review set.
+
+After data is added to a review set, image text can be reviewed, searched, tagged, and analyzed. You can view the extracted text in the Text viewer of the selected image file in the review set. For more information, see:
+
+- [Advanced indexing of custodian data](indexing-custodian-data.md)
 
 - [Add search results to a review set](add-data-to-review-set.md#optical-character-recognition)
 
