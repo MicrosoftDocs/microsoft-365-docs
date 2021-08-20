@@ -222,8 +222,8 @@ In _supported_ protection features that quarantine messages or files (automatica
 |---|:---:|---|
 |[Anti-spam policies](configure-your-spam-filter-policies.md): <ul><li>**Spam** (_SpamAction_)</li><li>**High confidence spam** (_HighConfidenceSpamAction_)</li><li>**Phishing** (_PhishSpamAction_)</li><li>**High confidence phishing** (_HighConfidencePhishAction_)</li><li>**Bulk** (_BulkSpamAction_)</li></ul>|Yes|<ul><li>DefaultFullAccessPolicy (Full access)</li><li>DefaultFullAccessPolicy (Full access)</li><li>DefaultFullAccessPolicy (Full access)</li><li>AdminOnlyAccessPolicy (No access)</li><li>DefaultFullAccessPolicy (Full access)</li></ul>|
 |Anti-phishing policies: <ul><li>[Spoof intelligence protection](set-up-anti-phishing-policies.md#spoof-settings) (_AuthenticationFailAction_)</li><li>[Impersonation protection in Defender for Office 365](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365):<ul><li>**If message is detected as an impersonated user** (_TargetedUserProtectionAction_)</li><li>**If message is detected as an impersonated domain** (_TargetedDomainProtectionAction_)</li><li>**If mailbox intelligence detects and impersonated user** (_MailboxIntelligenceProtectionAction_)</li></ul></li></ul>|Yes|<ul><li>DefaultFullAccessPolicy (Full access)</li><li>Impersonation protection:<ul><li>DefaultFullAccessPolicy (Full access)</li><li>DefaultFullAccessPolicy (Full access)</li><li>DefaultFullAccessPolicy (Full access)</li></ul></li></ul>|
-|[Anti-malware policies](configure-anti-malware-policies.md): All detected messages are always quarantined.|Yes|AdminOnlyAccessPolicy (Admin only access)|
-|[Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](mdo-for-spo-odb-and-teams.md) (Defender for Office 365)|Yes|AdminOnlyAccessPolicy (Admin only access)|
+|[Anti-malware policies](configure-anti-malware-policies.md): All detected messages are always quarantined.|Yes|AdminOnlyAccessPolicy (No access)|
+|[Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](mdo-for-spo-odb-and-teams.md) (Defender for Office 365)|Yes|AdminOnlyAccessPolicy (No access)|
 |[Mail flow rules](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (also known as transport rules) with the action: **Deliver the message to the hosted quarantine** (_Quarantine_).|No|n/a|
 |
 
@@ -638,12 +638,12 @@ The following sections describe the effects of preset permission groups and indi
 
 The individual permissions that are included in preset permission groups are listed in the table at the beginning of this article.
 
-#### Admin Only access
+#### No access
 
-If the quarantine policy assigns the **Admin Only access** permissions (no permissions), users will not able to see those messages that are quarantined:
+If the quarantine policy assigns the **No access** permissions (admin only access), users will not able to see those messages that are quarantined:
 
-- **Quarantined message details**: No message will show in the end user view.
-- **End-user spam notifications**: No notification will be sent for those message
+- **Quarantined message details**: No messages will show in the end user view.
+- **End-user spam notifications**: No notifications will be sent for those messages.
 
 #### Limited access
 
@@ -651,15 +651,16 @@ If the quarantine policy assigns the **Limited access** permissions, users get t
 
 - **Quarantined message details**: The following buttons are available:
   - **Request release**
-  - **View message header**
+  - **View message headers**
   - **Preview message**
-  - **Block sender**
   - **Remove from quarantine**
+  - **Block sender**
 
   ![Available buttons in the quarantined message details if the quarantine policy gives the user Limited access permissions](../../media/quarantine-tags-quarantined-message-details-limited-access.png)
 
 - **End-user spam notifications**: The following buttons are available:
   - **Block sender**
+  - **Request release**
   - **Review**
 
   ![Available buttons in the end-user spam notification if the quarantine policy gives the user Limited access permissions](../../media/quarantine-tags-esn-limited-access.png)
@@ -670,10 +671,10 @@ If the quarantine policy assigns the **Full access** permissions (all available 
 
 - **Quarantined message details**: The following buttons are available:
   - **Release message**
-  - **View message header**
+  - **View message headers**
   - **Preview message**
-  - **Block sender**
   - **Remove from quarantine**
+  - **Block sender**
 
   ![Available buttons in the quarantined message details if the quarantine policy gives the user Full access permissions](../../media/quarantine-tags-quarantined-message-details-full-access.png)
 
@@ -695,8 +696,8 @@ The **Block sender** permission (_PermissionToBlockSender_) controls access to t
   - **Block sender** permission disabled: The **Block sender** button is not available.
 
 - **End-user spam notifications**:
-  - **Block sender** permission disabled: The **Block sender** button is not available.
   - **Block sender** permission enabled: The **Block sender** button is available.
+  - **Block sender** permission disabled: The **Block sender** button is not available.
 
 For more information about the Blocked Senders list, see [Block messages from someone](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077#__toc304379667) and [Use Exchange Online PowerShell to configure the safelist collection on a mailbox](configure-junk-email-settings-on-exo-mailboxes.md#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox).
 
@@ -740,6 +741,6 @@ The **Allow recipients to request a message to be released from quarantine** per
   - Permission enabled: The **Request release** button is available.
   - Permission disabled: The **Request release** button is not available.
 
-- **End-user spam notifications**: 
+- **End-user spam notifications**:
   - Permission enabled: The **Request release** button is available.
   - Permission disabled: The **Request release** button is not available.
