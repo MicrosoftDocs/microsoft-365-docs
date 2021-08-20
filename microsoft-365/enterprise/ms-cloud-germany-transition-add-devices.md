@@ -56,9 +56,11 @@ If the user is an administrator on the Windows 10 device, the user can unregiste
 6. Restart the device.
 7. Sign in with the email address and password of your work account.
 
-If the user is not an administrator of the device, an Azure AD global administrator can create the local administrator account on the device following this configuration path and unjoin the device:
+If the user is not an administrator of the device, an **Azure AD DC admin**,**Cloud Device Admin** or **Global admin** can create the local administrator account on the device following this configuration path and unjoin the device:
 
 *Settings > Accounts > Other Accounts > Credentials unknown > Add user without Microsoft-Account*
+
+For more information, see [About admin roles](/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide).
 
 For re-joining, the credentials of any work account from your organization can be used in this step.
 
