@@ -1,7 +1,7 @@
 ---
 title: "Assign Microsoft 365 licenses to user accounts with PowerShell"
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 09/23/2020
 audience: Admin
@@ -53,7 +53,7 @@ Next, list the license plans for your tenant with this command.
 Get-AzureADSubscribedSku | Select SkuPartNumber
 ```
 
-Next, get the sign-in name of the account to which you want add a license, also known as the user principal name (UPN).
+Next, get the sign-in name of the account to which you want to add a license, also known as the user principal name (UPN).
 
 Next, ensure that the user account has a usage location assigned.
 
@@ -188,10 +188,6 @@ $subscriptionTo="<SKU part number of the new subscription>"
 # Unassign
 $license = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicense
 $licenses = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicenses
-$license.SkuId = (Get-AzureADSubscribedSku | Where-Object -Property SkuPartNumber -Value $subscriptionFrom -EQ).SkuID
-$licenses.AddLicenses = $license
-Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $licenses
-$licenses.AddLicenses = @()
 $licenses.RemoveLicenses =  (Get-AzureADSubscribedSku | Where-Object -Property SkuPartNumber -Value $subscriptionFrom -EQ).SkuID
 Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $licenses
 # Assign
