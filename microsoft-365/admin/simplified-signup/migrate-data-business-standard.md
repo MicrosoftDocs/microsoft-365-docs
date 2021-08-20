@@ -106,7 +106,6 @@ You can also use Exchange admin center to import everyone's email. For more info
 
 ## Move data from Teams personal to Teams for business
 
-
 Open Microsoft Teams, select your profile icon, and then **Add work or school account**. Follow the steps to add your new account to Teams.
 
 <!--## Download desktop apps

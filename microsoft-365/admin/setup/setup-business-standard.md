@@ -77,9 +77,7 @@ To add, modify or remove domains you must be a global administrator. For more in
 
 You can add users now, but you can also [add users later](../add-users/add-users.md) in the admin center.
 
-### Add users in the wizard
-
-Any users you add in the wizard get automatically assigned a Microsoft 365 Business Standard license.
+Any users you add get automatically assigned a Microsoft 365 Business Standard license.
 
 1. If your Microsoft 365 Business Standard subscription has existing users you get an option to assign licenses to them now. Go ahead and add licenses to them as well.
 
@@ -112,12 +110,12 @@ To set up services, you have to update some records at your DNS host or domain r
 
 ## Finish setting up
 
-Once you've 
+Follow the steps below to set up Outlook, Teams, OneDrive and your website.
 
 ### Step: Set up Outlook for email
 
 1. On the Windows Start menu, search for Outlook, and select it.
-
+ 
     (If you're using a Mac, open Outlook from the toolbar or locate it using the Finder.)
 
     If you've just installed Outlook, on the Welcome page, select **Next**.
@@ -176,6 +174,8 @@ Microsoft 365 doesn't include a public website for your business. If you want to
 
 ## Related content
 
-[Create a website](../../business-video/create-web-site.md) (video)
+[Migrate data to my Microsoft 365 Business Standard subscription](../simplified-signup/migrate-data-business-standard.md)
 
-[Microsoft 365 for your business](../../business-video/index.yml) (link page)
+[Sign up for a Microsoft 365 Business Standard subscription](../simplified-signup/signup-business-standard.md)
+
+[Accept an invitation to a Microsoft 365 Business Standard subscription (User)](../simplified-signup/user-invite-business-standard.md)

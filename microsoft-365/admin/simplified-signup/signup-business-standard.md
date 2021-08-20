@@ -45,10 +45,14 @@ To sign up and purchase Microsoft 365 Business Standard (or Microsoft 365 Apps) 
 
 - You'll receive a text. Enter your code and select **Verify**.
 
-7. Decide how you'll sign in to Microsoft 365. You can use your [current email address](#create-a-new-business-email-account-advanced) or [create a new business email](#create-a-new-business-email-account-advanced) by adding a domain.
+7. Decide how you'll sign in to Microsoft 365. You can [create a new business email (recommended)](#create-a-new-business-email-account-advanced) by adding a domain or use your [current email address](#Sign-in-with-your-current-personal-email).
 
 > [!IMPORTANT]
-> You can decide to add your domain now or later. If you're ready to buy or add a domain, follow the steps in [Set up Microsoft 365 Business Standard](../setup/setup-business-standard.md). If you're not ready to add or buy a domain yet, follow the rest of the steps below.
+> You can decide to add your domain now or later. If you're ready to buy or add a domain, follow the steps in [Set up Microsoft 365 Business Standard](../setup/setup-business-standard.md). If you're not ready to add or buy a domain yet, follow the steps in [Sign in wity your current personal email](#sign-in-with-your-current-personal-email).
+
+### Create a new business email account (recommended)
+
+In this scenario, you want to add an existing domain you already own or buy a new domain, and create new business email accounts and a calender for you users. All users will have a shared domain email address. For example, their username, followed by @contoso.com. You and your users sign into Microsoft 365 with this new email address. For steps on how to buy or add a domain, see [Set up Microsoft 365 Business Standard](../setup/setup-business-standard.md).
 
 ### Sign in with your current personal email
 
@@ -62,14 +66,6 @@ You'll sign into Microsoft 365 with this email address. For example, alliebellew
 
 > [!IMPORTANT]
 > You can follow these steps to purchase Microsoft 365 Apps as well. For more info, see [Set up Microsoft 365 Apps for business](../setup/setup-apps-for-business.md) after you purchase Microsoft 365 Apps for business.
-
-#### Next steps
-
-1. Do you have employees or partners that you want to add to your subscription? Follow the steps in the [Invite users to Microsoft 365 Business Standard](user-invite-business-standard.md) topic.
-
-### Create a new business email account (advanced)
-
-In this scenario, you want to add an existing domain you already own or buy a new domain, and create new business email accounts and a calender for you users. All users will have a shared domain email address. For example, their username, followed by @contoso.com. You and your users sign into Microsoft 365 with this new email address. For steps on how to buy or add a domain, see [Set up Microsoft 365 Business Standard](../setup/setup-business-standard.md).
 
 ## Frequently asked questions
 
@@ -90,3 +86,5 @@ In this scenario, you want to add an existing domain you already own or buy a ne
 ## Related articles
 
 [Set up Microsoft 365 Business Premium in the setup wizard](../../business/set-up.md)
+
+[Invite users to Microsoft 365 Business Standard](user-invite-business-standard.md)
