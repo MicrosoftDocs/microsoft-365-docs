@@ -58,6 +58,8 @@ You can evaluate trained models against your content to help you find the most a
 
     ![Screenshot of the Review models and apply new ones page showing the models on the Available tab.](../media/content-understanding/available-models-to-apply.png)
 
+    To see more information about an individual model—such as description, information labeling, or extractors, select **View model details**.
+
 2. Select the model that you think will get you the best results, and then select **Apply to library**.
 
 ### Get a recommendation for a trained model
@@ -78,9 +80,13 @@ If you are unsure which model is the best fit for your files, you can ask for a 
 
     ![Screenshot of the Select a file to analyze page showing the files available with one file selected.](../media/content-understanding/file-to-analyze.png)
 
-5. On the **Review recommendation results** page, under **Our recommendation**, you'll see the recommended file. You don't have to apply the recommended model. You can choose to apply another model if you think it's a better fit.
+5. On the **Review results and select a model** page, under **Our recommendation**, you'll see the recommended file. You don't have to apply the recommended model. You can choose to apply another model if you think it's a better fit.
+
+    ![Screenshot of the Review results and select a model page showing the recommended models.](../media/content-understanding/review-recommendation-results.png)
 
 6. Select the model that you think will get you the best results, and then select **Apply to library**.
+
+7. If there are no recommended models based on the selected file, you can go back and select another file or different models.
 
 ### Remove an applied model
 
