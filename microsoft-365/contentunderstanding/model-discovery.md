@@ -70,7 +70,7 @@ If you are unsure which model is the best fit for your files, you can ask for a 
 
     ![Screenshot of the Review models and apply new ones page showing the Get recommendation option on the Available tab.](../media/content-understanding/get-recommendation.png)
 
-3. On the **Select one or more models** page, select the models that you think might be the best fit, and then select **Next**.
+3. On the **Select one or more models for analysis** page, select the models that you think might be the best fit, and then select **Next**.
 
     ![Screenshot of the Select one or more models page showing the recommended models with two models selected.](../media/content-understanding/recommendation-results.png)
 
