@@ -385,7 +385,7 @@ Click one of the following links to go to a specific table.
 
 :::row:::
     :::column:::
-        [Exchange admin activities](#exchange-admin-audit-log))
+        [Exchange admin activities](#exchange-admin-audit-log)
     :::column-end:::
     :::column:::
         
