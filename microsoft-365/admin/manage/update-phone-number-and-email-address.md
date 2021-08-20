@@ -13,7 +13,10 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom: 
+- AdminSurgePortfolio
+- AdminTemplateSet
+- admindeeplinkMAC
 search.appverid:
 - BCS160
 - MET150
@@ -34,7 +37,7 @@ For more information about changing user contact information or removing former 
 
 Use the **Security Info** page to change your mobile phone number and alternate email address. The alternate email address is used for important notifications, such as resetting your admin password (not your computer admin password). 
   
-1. Browse to the Microsoft 365 admin center.
+1. Browse to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
 
 2. In the header, select your profile icon \> **My account** \> **Security Info**.
 

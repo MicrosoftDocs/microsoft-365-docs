@@ -16,6 +16,8 @@ ms.collection:
 - Adm_O365_Setup
 ms.custom: 
 - AdminSurgePortfolio
+- AdminTemplateSet
+- admindeeplinkMAC
 search.appverid:
 - BCS160
 - MET150

@@ -1,7 +1,7 @@
 ---
 title: "Subscriptions, licenses, accounts, and tenants for Microsoft's cloud offerings"
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 audience: ITPro
 ms.topic: conceptual

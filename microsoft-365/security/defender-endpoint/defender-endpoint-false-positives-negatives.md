@@ -173,14 +173,14 @@ When you're done reviewing and undoing actions that were taken as a result of fa
 
 You can roll back and remove a file from quarantine if you've determined that it's clean after an investigation. Run the following command on each device where the file was quarantined.
 
-1. Open an elevated command–line prompt on the device:
+1. Open an elevated command-line prompt on the device:
    1. Go to **Start** and type _cmd_.
-   2. Right–click **Command prompt** and select **Run as administrator**.
+   2. Right-click **Command prompt** and select **Run as administrator**.
 
 2. Enter the following command, and press **Enter**:
 
     ```console
-    "ProgramFiles%\Windows Defender\MpCmdRun.exe" –Restore –Name EUS:Win32/CustomEnterpriseBlock –All
+    "ProgramFiles%\Windows Defender\MpCmdRun.exe" -Restore -Name EUS:Win32/CustomEnterpriseBlock -All
     ```
 
     > [!IMPORTANT]

@@ -26,7 +26,7 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-automationefileuploads-abovefoldlink)
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-automationefileuploads-abovefoldlink)
 
 Enable the content analysis capability so that certain files and email attachments can automatically be uploaded to the cloud for additional inspection in Automated investigation.
 
@@ -36,7 +36,7 @@ For example, if you add *exe* and *bat* as file or attachment extension names, t
 
 ## Add file extension names and attachment extension names.
 
-1. In the navigation pane, select **Settings** > **Automation file uploads**. 
+1. In the navigation pane, select **Settings** > **Endpoints** > **Rules** > **Automation uploads**.
 
 2. Toggle the content analysis setting between **On** and **Off**.
 

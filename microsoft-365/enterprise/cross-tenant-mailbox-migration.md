@@ -1,8 +1,8 @@
 ---
 title: Cross-tenant mailbox migration
 description: How to move mailboxes between Microsoft 365 or Office 365 tenants.
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: Laurawi
 ms.prod: microsoft-365-enterprise
 ms.topic: article
@@ -160,7 +160,7 @@ The target admin setup is now complete!
 
 #### Step-by-step instructions for the source tenant admin
 
-1. Sign in to your mailbox as the -ResourceTenantAdminEmail specified by the target admin during their setup. Find the email invitation from the target tenant, and then select the **Get Started** button.
+1. Sign in with your Global Admin credentials. Sign in to your mailbox as the -ResourceTenantAdminEmail specified by the target admin during their setup.  Find the email invitation from the target tenant, and then select the **Get Started** button.
 
     :::image type="content" source="../media/tenant-to-tenant-mailbox-move/invited-by-target-tenant.png" alt-text="You've been invited dialog box":::
 
@@ -299,7 +299,7 @@ You must ensure the following objects and attributes are set in the target organ
    - The Target MailUser must have these attributes from the source mailbox or assigned with the new User object:
       - ExchangeGUID (direct flow from source to target) – The mailbox GUID must match. The move process will not proceed if this is not present on target object.
       - ArchiveGUID (direct flow from source to target) – The archive GUID must match. The move process will not proceed if this is not present on the target object. (This is only required if the source mailbox is Archive enabled).
-      - LegacyExchangeDN (flow as proxyAddress, “x500:<LegacyExchangeDN>”) – The LegacyExchangeDN must be present on target MailUser as x500: proxyAddress. The move processes will not proceed if this is not present on the target object.
+      - LegacyExchangeDN (flow as proxyAddress, “x500:\<LegacyExchangeDN>”) – The LegacyExchangeDN must be present on target MailUser as x500: proxyAddress. In addition, you also need to copy all x500 addresses from the source mailbox to the target mail user. The move processes will not proceed if these are not present on the target object. 
       - UserPrincipalName – UPN will align to the user’s NEW identity or target company (for example, user@northwindtraders.onmicrosoft.com).
       - Primary SMTPAddress – Primary SMTP address will align to the user’s NEW company (for example, user@northwind.com).
       - TargetAddress/ExternalEmailAddress – MailUser will reference the user’s current mailbox hosted in source tenant (for example user@contoso.onmicrosoft.com). When assigning this value, verify that you have/are also assigning PrimarySMTPAddress or this value will set the PrimarySMTPAddress which will cause move failures.
@@ -357,7 +357,7 @@ You must ensure the following objects and attributes are set in the target organ
     if ($source.LitigationHoldEnabled) {$ELCValue = $ELCValue + 8} if ($source.SingleItemRecoveryEnabled) {$ELCValue = $ELCValue + 16} if ($ELCValue -gt 0) {Set-ADUser -Server $domainController -Identity $destination.SamAccountName -Replace @{msExchELCMailboxFlags=$ELCValue}}
     ```
 
-3. Non-hybrid target tenants can modify the quota on the Recoverable Items folder for the MailUsers prior to migration by running the following command to enable Litigation Hold on the MailUser object and increasing the quota to 100 GB: `Set-MailUser -EnableLitigationHoldForMigration $TRUE`. Note this will not work for tenants in hybrid.
+3. Non-hybrid target tenants can modify the quota on the Recoverable Items folder for the MailUsers prior to migration by running the following command to enable Litigation Hold on the MailUser object and increasing the quota to 100 GB: `Set-MailUser -EnableLitigationHoldForMigration`. Note this will not work for tenants in hybrid.
 
 4. Users in the target organization must be licensed with appropriate Exchange Online subscriptions applicable for the organization. You may apply a license in advance of a mailbox move but ONLY once the target MailUser is properly set up with ExchangeGUID and proxy addresses. Applying a license before the ExchangeGUID is applied will result in a new mailbox provisioned in target organization.
 
@@ -588,7 +588,7 @@ Yes, however we only keep the store permissions as described in these articles:
 
 **Is Azure Key Vault required and when are transactions made?**
 
-Yes, an Azure subscription is required to use Key Vault to store the certificate to authorize migration. Unlike onboarding migrations which use username & password to authenticate to the source, cross-tenant mailbox migrations use OAuth and this certificate as the secret/credential. Access to the Key Vault must be maintained throughout all mailbox migrations as it is accessed once at the beginning and once end of migration, as well as once every 24 hours during incremental sync times. You can review AKV costing details [here](https://azure.microsoft.com/en-us/pricing/details/key-vault/).
+Yes, an Azure subscription is required to use Key Vault to store the certificate to authorize migration. Unlike onboarding migrations which use username & password to authenticate to the source, cross-tenant mailbox migrations use OAuth and this certificate as the secret/credential. Access to the Key Vault must be maintained throughout all mailbox migrations as it is accessed once at the beginning and once end of migration, as well as once every 24 hours during incremental sync times. You can review AKV costing details [here](https://azure.microsoft.com/pricing/details/key-vault/).
 
 **Do you have any recommendations for batches?**
 

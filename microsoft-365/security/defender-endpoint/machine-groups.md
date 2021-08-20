@@ -27,7 +27,7 @@ ms.technology: mde
 - Azure Active Directory
 - Office 365
 
-> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 
 In an enterprise scenario, security operation teams are typically assigned a set of devices. These devices are grouped together based on a set of attributes such as their domains, computer names, or designated tags.
@@ -50,11 +50,11 @@ As part of the process of creating a device group, you'll:
 - Rank the device group relative to other groups after it's created.
 
 >[!NOTE]
->A device group is accessible to all users if you don’t assign any Azure AD groups to it.
+>A device group is accessible to all users if you don't assign any Azure AD groups to it.
 
 ## Create a device group
 
-1. In the navigation pane, select **Settings** > **Device groups**.
+1. In the navigation pane, select **Settings** > **Endpoints** > **Permissions** > **Device groups**.
 
 2. Click **Add device group**.
 

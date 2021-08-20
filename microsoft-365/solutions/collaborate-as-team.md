@@ -46,7 +46,7 @@ To set external collaboration settings
 2. In the left navigation pane, click **Azure Active Directory**.
 3. Click **External identities**.
 4. On the **Get started** screen, in the left navigation pane, click **External collaboration settings**.
-5. Ensure that **Admins and users in the guest inviter role can invite** and **Members can invite** are both set to **Yes**.
+5. Ensure that **Member users and users assigned to specific admin roles can invite guest users including guests with member permissions** is selected.
 6. If you made changes, click **Save**.
 
 Note the settings in the **Collaboration restrictions** section. Make sure that the domains of the guests that you want to collaborate with aren't blocked.
@@ -172,6 +172,9 @@ To invite guests to a team
 3. Click **Edit guest information**.
 4. Type the guest's full name and click the check mark.
 5. Click **Add**, and then click **Close**.
+
+> [!NOTE]
+> Guests with a work or school account can only be invited by using their User Principal Name (UPN) (for example, adele@contoso.com). Inviting guests by using EAS ID, or other email formats, is not supported.
 
 ## See also
 

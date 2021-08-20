@@ -72,7 +72,7 @@ Make sure you understand the following prerequisites before you turn on this fea
 - Sensitivity labels must be [enabled for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md) for the tenant. If this feature isn't already enabled, it will be automatically enabled when you select the setting to turn on co-authoring for files with sensitivity labels.
 
 - Microsoft 365 Apps for enterprise:
-    - **Windows**: Minimum version 2105: June 18
+    - **Windows**: Minimum version 2106
     - **macOS**: Minimum version 16.50
     - **iOS**: Not yet supported
     - **Android**: Not yet supported
@@ -121,8 +121,6 @@ Before you enable the tenant setting for co-authoring for files encrypted with s
 This preview version of co-authoring for files encrypted with sensitivity labels has the following known issues:
 
 - Users won't be able to apply any labels in Office for the web for Word, Excel, and PowerPoint files that are bigger than 300 MB. For these files, you can use the Office desktop apps to apply a label but you must be the only person who has the file open.
-
-- When you use [DLP policies that use sensitivity labels as conditions](dlp-sensitivity-label-as-condition.md), unencrypted attachments for emails are not supported.
 
 - Some documents are incompatible with sensitivity labels because of features such as [password-protection](https://support.microsoft.com/office/require-a-password-to-open-or-modify-a-workbook-10579f0e-b2d9-4c05-b9f8-4109a6bce643), [shared workbooks](https://support.microsoft.com/office/about-the-shared-workbook-feature-49b833c0-873b-48d8-8bf2-c1c59a628534), or content that includes ActiveX controls. Other reasons are documented in [Troubleshoot co-authoring in Office](https://support.microsoft.com/office/troubleshoot-co-authoring-in-office-bd481512-3f3a-4b6d-b7eb-ebf9d3626ae7). For these documents, you see a message **UPLOAD FAILED** and should select the **Discard Changes** option. Until this issue is addressed, do not label these documents that are identified with this failure message.
 
