@@ -76,16 +76,19 @@ When content reaches the end of its retention period, there are several reasons 
 
 - Move the content from its existing location to an archive location, for example, if that content has research or historical value.
 
-When a disposition review is triggered at the end of the retention period:
-  
-- The reviewers you choose receive an email notification that they have content to review. These reviewers can be individual users or mail-enabled security groups:
-   - You can customize the email that they receive, including instructions in different languages. For multi-language support, you must specify the translations yourself and this custom text is displayed to all reviewers irrespective of their locale.
-   - Users receive an initial email notification per label at the end of the item's retention period, with a reminder per label once a week of all disposition reviews that they are assigned. They can click the link in the notification and reminder emails to go to the **Disposition** page in the Microsoft 365 compliance center to review the content and take an action. Alternately, the reviewers can go directly to the **Disposition** page in the compliance center.
-   - Reviewers see only the disposition reviews that are assigned to them, whereas administrators who are added to the selected security group for records manager see all disposition reviews.
-   - Reviewers can add new users to the same disposition review. Note that this action doesn't automatically grant these added users the [required permissions](#permissions-for-disposition).
-   - For the disposition review process, a mini-review pane for each item shows a preview of the content if they have permissions to see it. If they don't have permissions, they can select the content link and request permissions. This mini-review pane also has tabs for additional information about the content:
-       - **Details** to display indexed properties, where it's located, who created it and when, and who last modified it and when.
-       - **History** that shows the history of any disposition review actions to date, with reviewer comments if available.
+When a disposition review is triggered at the end of the retention period, the reviewers you choose receive an email notification that they have content to review. These reviewers can be individual users or mail-enabled security groups.
+
+You can customize the notification email that reviewers receive, including instructions in different languages. For multi-language support, you must specify the translations yourself and this custom text is displayed to all reviewers irrespective of their locale.
+
+Users receive an initial email notification per label at the end of the item's retention period, with a reminder per label once a week of all disposition reviews that they are assigned. They can click the link in the notification and reminder emails to go to the **Disposition** page in the Microsoft 365 compliance center to review the content and take an action. Alternately, the reviewers can go directly to the **Disposition** page in the compliance center. Then:
+
+- Reviewers see only the disposition reviews that are assigned to them, whereas administrators who are added to the selected security group for records manager see all disposition reviews.
+
+- Reviewers can add new users to the same disposition review. Note that this action doesn't automatically grant these added users the [required permissions](#permissions-for-disposition).
+
+- For the disposition review process, a mini-review pane for each item shows a preview of the content if they have permissions to see it. If they don't have permissions, they can select the content link and request permissions. This mini-review pane also has tabs for additional information about the content:
+   - **Details** to display indexed properties, where it's located, who created it and when, and who last modified it and when.
+   - **History** that shows the history of any disposition review actions to date, with reviewer comments if available.
 
 A disposition review can include content in Exchange mailboxes, SharePoint sites, and OneDrive accounts. Content pending a disposition review in those locations is permanently deleted only after a reviewer for the final stage of disposition chooses to permanently delete the content.
 
@@ -189,7 +192,22 @@ As you can see from the example shown, the actions supported are:
     > [!NOTE]
     > This action doesn't automatically grant the [required permissions](#permissions-for-disposition) to the users who are added. If they don't have these permissions, they won't be able to participate in the disposition review.
 
-Each action taken has a corresponding audit event:
+Each action taken has a corresponding audit event in the Records Management auditing category:
+
+ApproveDisposal
+ExtendRetention
+RelabelItem
+AddReviewer
+
+
+- ExtendedDate
+- StageId
+- StageName
+- NewLabel
+DecisionDate
+Comment
+ForwardedReviewer
+
 
 During a disposition review, the content never moves from its original location, and it's not marked for permanent deletion until this action is selected by a reviewer for the final or only disposition stage.
 
