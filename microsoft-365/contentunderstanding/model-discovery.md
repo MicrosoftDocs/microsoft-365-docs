@@ -34,7 +34,7 @@ To make your trained model available for others to use:
 
 3. On the **Select the sites where this model is available** panel, select where you want the model to be available for other users to apply.
 
-    ![Screenshot of the Select the sites where this model is available panel showing the options of where you want the model to be available for others.](../media/content-understanding/review-results.png)
+    ![Screenshot of the Select the sites where this model is available panel showing the options of where you want the model to be available for others.](../media/content-understanding/select-sites.png)
 
    - **Not available on any sites** – The model will not be available for others to use.
    - **All sites** – The model will be available in the content type gallery for others to use.
@@ -84,7 +84,7 @@ If you are unsure which model is the best fit for your files, you can ask for a 
 
 5. On the **Review results and select a model** page, under **Our recommendation**, you'll see the recommended file. You don't have to apply the recommended model. You can choose to apply another model if you think it's a better fit.
 
-    ![Screenshot of the Review results and select a model page showing the recommended models.](../media/content-understanding/recommendation-results.png)
+    ![Screenshot of the Review results and select a model page showing the recommended models.](../media/content-understanding/review-results.png)
 
 6. On the model you think will get you the best results, select **View model details**, and then select **Apply to library**.
 
