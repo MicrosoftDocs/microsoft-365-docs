@@ -30,11 +30,15 @@ To make your trained model available for others to use:
 
 1. On the **Models** page for your model, select **Model settings**.
 
-2. On the **Model settings** panel, in the **Sites where this model is available** section, select where you want the model to be visible for other users to apply:
+2. On the **Model settings** panel, in the **Sites where this model is available** section, select **Edit**.
 
-   - **Not visible** – The model will not be available for others to use.
-   - **On all sites** – The model will be available in the content type gallery for others to use.
-   - **Only on specific sites** – You can choose which site or sites in which the model will be available. If you select this option, click in the text box to search for and choose the sites to which you want the model applied. You will only see sites for which you have access.
+3. On the **Select the sites where this model is available** panel, select where you want the model to be available for other users to apply.
+
+    ![Screenshot of the Select the sites where this model is available panel showing the options of where you want the model to be available for others.](../media/content-understanding/review-models-apply-new-ones.png)
+
+   - **Not available on any sites** – The model will not be available for others to use.
+   - **All sites** – The model will be available in the content type gallery for others to use.
+   - **Only selected sites** – You can choose which site or sites in which the model will be available. If you select this option, click in the text box to search for and choose the sites to which you want the model applied. You will only see sites for which you have access.
 
 ## Discover other trained models
 
