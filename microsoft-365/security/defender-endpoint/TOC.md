@@ -598,7 +598,7 @@
 ####### [List machines by vulnerability](get-machines-by-vulnerability.md)
 
 ##### [How to use APIs - Samples]()
-###### [Microsoft Flow](api-microsoft-flow.md)
+###### [Power Automate](api-microsoft-flow.md)
 ###### [Power BI](api-power-bi.md)
 ###### [Advanced Hunting using Python](run-advanced-query-sample-python.md)
 ###### [Advanced Hunting using PowerShell](run-advanced-query-sample-powershell.md)
