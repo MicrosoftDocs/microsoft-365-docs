@@ -21,22 +21,41 @@ description: Step through protecting your Microsoft 365 resources from ransomwar
 
 # Step 4. Protect devices
 
-- Turn on Microsoft Defender Antivirus. (Execution)
-- Turn on Microsoft Defender Firewall. (Lateral movement)
-- Use advanced protection against ransomware. (Impact)
-- Enable Network Protection in Microsoft Defender for Endpoint and Microsoft 365 Defender. (Initial access)
-- Keep cloud-delivered protection in Microsoft Defender Antivirus turned on. (Defense evasion)
-- Keep Microsoft Defender Antivirus real-time behavior monitoring turned on. (Defense evasion)
-- Turn on real-time protection. (Defense evasion)
-- Turn on tamper protection in Microsoft Defender for Endpoint, to prevent malicious changes to security settings. (Defense evasion)
-- Update Microsoft Defender Antivirus definitions. (Lateral movement)
-- Configure site and download checking in Microsoft Defender SmartScreen to block or warn. (Initial access)
-- Configure app and file checking in Microsoft Defender SmartScreen to block or warn. (Initial access)
-- Enable Microsoft Defender Antivirus scanning of downloaded files and attachments. (Initial access)
-- Block Win32 API calls from Office macros. (Execution)
-- Migrate all legacy workbooks requiring Excel 4.0 macros to the updated VBA macro format using this process. (Execution)
-- Disable use of unsigned macros. Ensure all internal macros with business need are signed and leveraging trusted locations to ensure unknown macros will not run in your environment. (Execution)
-- Stop malicious XLM or VBA macros by ensuring runtime macro scanning by Antimalware Scan Interface (AMSI) is on. This feature—enabled by default—is on if the Group Policy setting for Macro Run Time Scan Scope is set to Enable for All Files or Enable for Low Trust Files. Get the latest group policy template files. (Execution)
-- Set Remote Desktop security level to TLS in Microsoft Defender for Endpoint and Microsoft 365 Defender. (Initial access)
+To help protect against the initial access part of an attack:
+
+- Enable Network Protection in Microsoft Defender for Endpoint and Microsoft 365 Defender.
+- Configure site and download checking in Microsoft Defender SmartScreen to block or warn.
+- Configure app and file checking in Microsoft Defender SmartScreen to block or warn.
+- Enable Microsoft Defender Antivirus scanning of downloaded files and attachments.
+- Set Remote Desktop security level to TLS in Microsoft Defender for Endpoint and Microsoft 365 Defender.
+
+To help protect against the lateral movement part of an attack:
+
+- Turn on Microsoft Defender Firewall.
+- Update Microsoft Defender Antivirus definitions.
 
 
+To reduce the impact of the attack:
+
+- Use advanced protection against ransomware.
+
+To help protect against an attacker evading the security defences:
+
+- Keep cloud-delivered protection in Microsoft Defender Antivirus turned on.
+- Keep Microsoft Defender Antivirus real-time behavior monitoring turned on.
+- Turn on real-time protection.
+- Turn on tamper protection in Microsoft Defender for Endpoint, to prevent malicious changes to security settings.
+
+To help protect against an attacker executing code as part of an attack:
+
+- Turn on Microsoft Defender Antivirus.
+- Block Win32 API calls from Office macros.
+- Migrate all legacy workbooks requiring Excel 4.0 macros to the updated VBA macro format using this process.
+- Disable use of unsigned macros. Ensure all internal macros with business need are signed and leveraging trusted locations to ensure unknown macros will not run in your environment.
+- Stop malicious XLM or VBA macros by ensuring runtime macro scanning by Antimalware Scan Interface (AMSI) is on. This feature (enabled by default) is on if the Group Policy setting for Macro Run Time Scan Scope is set to Enable for All Files or Enable for Low Trust Files. Get the latest group policy template files.
+
+## Next step
+
+[![Step 5 for ransomware protection with Microsoft 365](../media/protect-against-ransomware-microsoft-365/protect-against-ransomware-microsoft-365-step5.png)](protect-against-ransomware-microsoft-365-step5.md)
+
+[Step 5. Protect information](protect-against-ransomware-microsoft-365-step5.md)

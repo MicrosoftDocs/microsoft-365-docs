@@ -58,4 +58,4 @@ To help prevent initial access to your tenant from an email-based attack:
 
 [![Step 2 for ransomware protection with Microsoft 365](../media/protect-against-ransomware-microsoft-365/protect-against-ransomware-microsoft-365-step2.png)](protect-against-ransomware-microsoft-365-step2.md)
 
-[Step 2: Minimize privileged access and prevent credential escalation](protect-against-ransomware-microsoft-365-step2.md)
+[Step 2. Deploy attack detection and response](protect-against-ransomware-microsoft-365-step2.md)

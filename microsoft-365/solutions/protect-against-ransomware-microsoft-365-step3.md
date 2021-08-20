@@ -47,3 +47,8 @@ Determine where highly privileged accounts are logging on and exposing credentia
 
 Disable the local storage of passwords and credentials.
 
+## Next step
+
+[![Step 4 for ransomware protection with Microsoft 365](../media/protect-against-ransomware-microsoft-365/protect-against-ransomware-microsoft-365-step4.png)](protect-against-ransomware-microsoft-365-step4.md)
+
+[Step 4. Protect devices](protect-against-ransomware-microsoft-365-step4.md)
