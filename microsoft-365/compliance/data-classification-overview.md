@@ -127,7 +127,7 @@ The point of the data classification reporting is to provide visibility into the
 > If this card displays the message, "No locations detected, it means you haven't created or published any sensitivity labels or no content has had a retention label applied. To get started with sensitivity labels, see:
 >- [Sensitivity labels](sensitivity-labels.md)
 
-## Release notes
+## Public preview release notes 
 
 > [!NOTE]
 > **Exchange mailbox count**:
