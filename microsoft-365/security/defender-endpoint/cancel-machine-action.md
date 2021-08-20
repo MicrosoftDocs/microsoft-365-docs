@@ -40,7 +40,7 @@ ms.custom: api
 
 ## API description
 
-Cancel an already launched machine action that are not yet in final state (completed, cancelled, failed).
+Cancel an already launched machine action that are not yet in final state (completed, canceled, failed).
 
 ## Limitations
 
@@ -54,8 +54,8 @@ started](apis-intro.md).
 
 |Permission type|Permission|Permission display name|
 |---|---|---|
-|Application|Machine.CollectForensic <br> Machine.Isolate <br> Machine.RestrictExecution <br> Machine.Scan <br> Machine.Offboard <br> Machine.StopAndQuarantine <br> Machine.LiveResponse|Collect forensics <br>Isolate machine<br>Restrict code execution<br>  Scan machine<br>  Offboard machine<br> Stop And Quarantine<br> Run live response on a specific machine|
-|Delegated (work or school account)|Machine.CollectForensic<br> Machine.Isolate  <br>Machine.RestrictExecution<br> Machine.Scan<br> Machine.Offboard<br> Machine.StopAndQuarantineMachine.LiveResponse|Collect forensics<br> Isolate machine<br>  Restrict code execution<br> Scan machine<br>Offboard machine<br> Stop And Quarantine<br> Run live response on a specific machine|
+|Application|Machine.CollectForensics <br> Machine.Isolate <br> Machine.RestrictExecution <br> Machine.Scan <br> Machine.Offboard <br> Machine.StopAndQuarantine <br> Machine.LiveResponse|Collect forensics <br>Isolate machine<br>Restrict code execution<br>  Scan machine<br>  Offboard machine<br> Stop And Quarantine<br> Run live response on a specific machine|
+|Delegated (work or school account)|Machine.CollectForensics<br> Machine.Isolate  <br>Machine.RestrictExecution<br> Machine.Scan<br> Machine.Offboard<br> Machine.StopAndQuarantineMachine.LiveResponse|Collect forensics<br> Isolate machine<br>  Restrict code execution<br> Scan machine<br>Offboard machine<br> Stop And Quarantine<br> Run live response on a specific machine|
 
 
 ## HTTP request

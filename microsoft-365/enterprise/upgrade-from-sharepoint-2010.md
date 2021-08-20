@@ -18,7 +18,7 @@ search.appverid:
 ms.assetid: 985a357f-6db7-401f-bf7a-1bafdf1f312c
 f1.keywords:
 - NOCSH
-description: Find information and resources to upgrade from SharePoint 2010 and Sharepoint Server 2010. Support for both ends April 13, 2021.
+description: Find information and resources to upgrade from SharePoint 2010 and SharePoint Server 2010. Support for both ends April 13, 2021.
 ms.custom: seo-marvel-apr2020
 ---
 
