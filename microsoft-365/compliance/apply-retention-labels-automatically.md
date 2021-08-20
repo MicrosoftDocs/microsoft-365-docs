@@ -131,7 +131,7 @@ All three conditions can automatically apply retention labels to emails as they 
 |Specific keywords or searchable properties| Yes |Yes |
 |Trainable classifiers| Yes | Yes (last six months only) |
 
-Auto-labeling policies for SharePoint don't support items that are in draft or have never been published.
+Auto-labeling policies for SharePoint don't support items that are in draft or that have never been published.
 
 #### Auto-apply labels to content with specific types of sensitive information
 
