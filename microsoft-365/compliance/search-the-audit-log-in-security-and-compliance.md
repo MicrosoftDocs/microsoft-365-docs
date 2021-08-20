@@ -1020,14 +1020,14 @@ The following table lists the activities in information barriers that are logged
 
 ### Disposition review activities
 
-The following table lists the activities a disposition reviewer user took when an item reached the end of its configured retention period. For more information, see [Viewing and disposing of content](disposition.md#viewing-and-disposing-of-content).
+The following table lists the activities a disposition reviewer took when an item reached the end of its configured retention period. For more information, see [Viewing and disposing of content](disposition.md#viewing-and-disposing-of-content).
 
 |**Friendly name**|**Operation**|**Description**|
 |:-----|:-----|:-----|
-|Approved disposal|ApproveDisposal|A disposition review user approved the disposition of the item to move it to the next disposition stage. If the item was in the only or final stage of disposition review, the disposition approval marked the item as eligible for permanent deletion.|
-|Extended retention period|ExtendRetentiond|A disposition review user chose to extend the retention period of the item.|
-|Relabeled item|RelabelItem|A disposition review user relabeled the retention label.|
-|Added reviewers|AddReviewer|A disposition review user added one or more other users to the current disposition review stage.|
+|Approved disposal|ApproveDisposal|A disposition reviewer approved the disposition of the item to move it to the next disposition stage. If the item was in the only or final stage of disposition review, the disposition approval marked the item as eligible for permanent deletion.|
+|Extended retention period|ExtendRetentiond|A disposition reviewer extended the retention period of the item.|
+|Relabeled item|RelabelItem|A disposition reviewer relabeled the retention label.|
+|Added reviewers|AddReviewer|A disposition reviewer added one or more other users to the current disposition review stage.|
 ||||
 
 ### Exchange admin audit log
