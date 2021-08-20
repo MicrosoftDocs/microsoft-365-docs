@@ -36,7 +36,7 @@ You can easily assign roles to user accounts by using PowerShell for Microsoft 3
 
 ## Use the Azure Active Directory PowerShell for Graph module
 
-First, use a **Azure AD DC admin**,**Cloud Application Admin** or **Global admin** account to [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
+First, use a **Azure AD DC admin**, **Cloud Application Admin**, or **Global admin** account to [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
  
 For more information, see [About admin roles](/microsoft-365/admin/add-users/about-admin-roles?).
 
