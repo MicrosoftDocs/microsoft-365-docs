@@ -115,7 +115,7 @@ Upon being opened, the file should display a few visual indicators that the file
 ## Configure Application Guard for Office
 
 Office supports the following policies to enable you to configure the capabilities of Application Guard for Office. These policies can be configured through Group policies or through the Office cloud policy service.
-Policy settings can be found in **User Configuration\Administrative Templates\Microsoft Office 2016\Security Settings\Trust Center\Application Guard.**
+Policy settings can be found at **User Configuration** > **Administrative Templates** > **Microsoft Office 2016** > **Security Settings** > **Trust Center** > **Application Guard**.
 
 > [!NOTE]
 > Configuring these policies can disable some functionalities for files opened in Application Guard for Office.
