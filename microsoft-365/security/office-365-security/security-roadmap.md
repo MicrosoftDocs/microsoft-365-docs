@@ -5,10 +5,9 @@ f1.keywords:
 ms.author: bcarter
 author: BrendaCarter
 manager: laurawi
-ms.date: 10/08/2018
+ms.date: 08/20/2021
 audience: Admin
 ms.topic: conceptual
-
 localization_priority: Normal
 ms.collection: 
   - Ent_O365
