@@ -72,9 +72,11 @@ If you are unsure which model is the best fit for your files, you can ask for a 
 
 3. On the **Select one or more models** page, select the models that you think might be the best fit, and then select **Next**.
 
-    ![Screenshot of the Select one or more models page showing the recommended models.](../media/content-understanding/recommendation-results.png)
+    ![Screenshot of the Select one or more models page showing the recommended models with two models selected.](../media/content-understanding/recommendation-results.png)
 
-4. On the **Select a file** page, select a file of the same or similar type that will be stored in your library.
+4. On the **Select a file to analyze** page, select a file of the same or similar type that will be stored in your library. Then choose **Select**.
+
+    ![Screenshot of the Select a file to analyze page showing the files available with one file selected.](../media/content-understanding/file-to-analyze.png)
 
 5. On the **Review recommendation results** page, under **Our recommendation**, you'll see the recommended file. You don't have to apply the recommended model. You can choose to apply another model if you think it's a better fit.
 
