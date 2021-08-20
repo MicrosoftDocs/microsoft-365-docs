@@ -383,6 +383,19 @@ Click one of the following links to go to a specific table.
     :::column-end:::
 :::row-end:::
 
+:::row:::
+    :::column:::
+        [Disposition review activities](#disposition-review-activities)
+    :::column-end:::
+    :::column:::
+        
+    :::column-end:::
+    :::column:::
+        
+    :::column-end:::
+:::row-end:::
+
+
 ### File and page activities
 
 The following table describes the file and page activities in SharePoint Online and OneDrive for Business.
@@ -1012,7 +1025,6 @@ The following table lists the activities in information barriers that are logged
 |Relabeled item|RelabelItem|A disposition review user relabeled the retention label.|
 |Added reviewers|AddReviewer|A disposition review user added one or more other users to the current disposition review stage.|
 ||||
-
 
 ### Exchange admin audit log
 
