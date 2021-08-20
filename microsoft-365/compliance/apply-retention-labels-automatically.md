@@ -24,7 +24,7 @@ description: Create retention labels and auto-labeling policies so you can autom
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 > [!NOTE]
-> This scenario is not supported for [regulatory records](records-management.md#records).
+> This scenario is not supported for [regulatory records](records-management.md#records) and you cannot auto-apply a retention label to an organizing structure such as a document set or library in SharePoint, or a folder in Exchange.
 
 One of the most powerful features of [retention labels](retention.md) is the ability to apply them automatically to content that matches specified conditions. In this case, people in your organization don't need to apply the retention labels. Microsoft 365 does the work for them.
   
@@ -48,7 +48,7 @@ The processes to automatically apply a retention label based on these conditions
 Use the following instructions for the two admin steps.
 
 > [!NOTE]
-> Auto-policies use service-side labeling with conditions to automatically apply retention labels. You can also automatically apply a retention label with a label policy when you do the following: 
+> Auto-policies use service-side labeling with conditions to automatically apply retention labels to items. You can also automatically apply a retention label with a label policy when you do the following: 
 >
 > - Apply a retention label to a document understanding model in SharePoint Syntex
 > - Apply a default retention label for SharePoint and Outlook
@@ -131,6 +131,7 @@ All three conditions can automatically apply retention labels to emails as they 
 |Specific keywords or searchable properties| Yes |Yes |
 |Trainable classifiers| Yes | Yes (last six months only) |
 
+Auto-labeling policies for SharePoint don't support items that are in draft or have never been published.
 
 #### Auto-apply labels to content with specific types of sensitive information
 
