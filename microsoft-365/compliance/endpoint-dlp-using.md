@@ -229,11 +229,11 @@ These scenarios require that you already have devices onboarded and reporting in
 
 10. Check Activity explorer for the event.
 
-### Scenario 4: Avoid looping DLP notifications from cloud synchronization apps with Auto-quarantine
+### Scenario 4: Avoid looping DLP notifications from cloud synchronization apps with auto-quarantine
 
 #### Before you begin
 
-In this scenario, synchronizing files with the **Highly Confidential** sensitivity label to OneDrive is being blocked. This is a complex scenario with multiple components and procedures. You will need:
+In this scenario, synchronizing files with the **Highly Confidential** sensitivity label to OneDrive is blocked. This is a complex scenario with multiple components and procedures. You will need:
 
 - An AAD user account to target and an onboarded Windows 10 computer that is already synchronizing a local OneDrive folder with OneDrive cloud storage.
 - Microsoft Word installed on the target Windows 10 computer
@@ -242,8 +242,8 @@ In this scenario, synchronizing files with the **Highly Confidential** sensitivi
 There are three procedures.
 
 1. Configure the Endpoint DLP Auto-quarantine settings.
-1. Create a policy that blocks sensitive items that have the **Highly Confidential** sensitivity label.
-1. Create a Word document on the Windows 10 device that the policy is targeted to, apply the label, and copy it to the user accounts local OneDrive folder that is being synchronized  
+2. Create a policy that blocks sensitive items that have the **Highly Confidential** sensitivity label.
+3. Create a Word document on the Windows 10 device that the policy is targeted to, apply the label, and copy it to the user accounts local OneDrive folder that is being synchronized.  
 
 #### Configure Endpoint DLP unallowed app and Auto-quarantine settings
 
