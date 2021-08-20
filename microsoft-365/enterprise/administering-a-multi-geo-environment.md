@@ -53,9 +53,9 @@ The DLP policies are automatically synchronized based on their applicability to 
 
 Implementing Information Protection and Data Loss prevention policies to all users in a geo location is not an option available in the UI, instead you must select the applicable accounts for the policy or apply the policy globally to all accounts.
 
-## Microsoft PowerApps
+## Microsoft Power Apps
 
-PowerApps created for the satellite location will use the end point located in the central location for the tenant. Microsoft PowerApps is not a Multi-Geo service. 
+Power Apps created for the satellite location will use the end point located in the central location for the tenant. Microsoft Power Apps is not a Multi-Geo service. 
 
 ## Power Automate
 
