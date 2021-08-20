@@ -16,7 +16,7 @@ description: "This article discusses classic Azure Active Directory classificati
 
 This article discusses classic Azure Active Directory classification and sensitivity labels.
 
-Sensitivity labels are supported by [these services](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites#support-for-the-sensitivity-labels).
+Sensitivity labels are supported by [these services](./sensitivity-labels-teams-groups-sites.md).
 
 For complete info about sensitivity labels, see [Learn about sensitivity labels](sensitivity-labels.md).
 
@@ -49,7 +49,7 @@ Table 1. Behavior of compatible and non-compatible workloads – create, edit, o
 >
 > We recommend that your users on an old version of Outlook client upgrading to the newer version.
 
-## Scenario 2: Tenant is already using classic AAD [classifications](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-groups-with-powershell)
+## Scenario 2: Tenant is already using classic AAD [classifications](../enterprise/manage-microsoft-365-groups-with-powershell.md)
 
 ### Case A: Tenant never used sensitivity labels for documents and emails
 
@@ -88,4 +88,4 @@ Table 2. Behavior of compatible and non-compatible workloads – create, edit, o
 
 ## Sample script
 
-For a sample script to migrate groups with classic AAD labels to sensitivity labels, see [Classic Azure AD group classification](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites#classic-azure-ad-group-classification).
+For a sample script to migrate groups with classic AAD labels to sensitivity labels, see [Classic Azure AD group classification](./sensitivity-labels-teams-groups-sites.md#classic-azure-ad-group-classification).

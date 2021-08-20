@@ -25,6 +25,13 @@ Bookings has three primary components:
 
 - A business-facing mobile app where Bookings calendar owners and administrators can see all of their appointments, access customer lists and contact information, and make manual bookings on the go.
 
+## Before you begin
+
+Microsoft Bookings is available in the following subscriptions:
+
+- Office 365: A3, A5, E3, E5, F1, F3
+- Microsoft 365: A3, A5, E3, E5, F1, F3, Business Premium
+
 ## Get started using Bookings
 
 Ready to get started?

@@ -90,11 +90,11 @@ Depending on your specific set-up, options included in your view might have some
 ## Get help with Service assurance
 <a name="addother"> </a>
 
-[Contact support for business products - Admin Help](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products).
+[Contact support for business products - Admin Help](../business-video/get-help-support.md).
   
 ## Frequently Asked Questions
 <a name="addother"> </a>
 
  **Why am I getting an error saying that documents from Service assurance are corrupted?**
   
-Most Service assurance documents are in PDF format. Choose **Save** to save these files to, and then open them up from, your local computer. 
+Most Service assurance documents are in PDF format. Choose **Save** to save these files to, and then open them up from, your local computer.

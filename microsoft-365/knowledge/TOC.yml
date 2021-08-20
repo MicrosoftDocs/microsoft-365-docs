@@ -1,12 +1,13 @@
-    - name: Get started with Microsoft Viva
-      items: 
-        - name: Introduction to Microsoft Viva 
-          href: index.md         
-        - name: Microsoft Viva overview
+    - name: Microsoft Viva Topics 
+      href: index.md   
+
+    - name: Get started with Microsoft Viva Topics
+      items:    
+        - name: Microsoft Viva Topics overview
           href: topic-experiences-overview.md 
-        - name: Microsoft Viva discovery and curation
+        - name: Microsoft Viva Topics discovery and curation
           href: topic-experiences-discovery-curation.md           
-        - name: Microsoft Viva roles 
+        - name: Microsoft Viva Topics roles 
           href: topic-experiences-roles.md 
         - name: Get your environment ready 
           href: topic-experiences-get-ready.md           
@@ -32,6 +33,8 @@
     
     - name: Work with topics
       items:
+        - name: Get started with Viva Topics
+          href: get-started-with-viva-topics.md
         - name: Topic center overview
           href: topic-center-overview.md    
         - name: Manage topics in the topic center
@@ -44,8 +47,13 @@
           href: topic-experiences-security-trimming.md 
         - name: Search for topics 
           href: search.md             
+        - name: Manage topics at scale 
+          href: scale-topics.md             
+
 
     - name: Adoption
       items: 
         - name: Get started driving adoption
           href: topics-adoption-getstarted.md
+        - name: Run a trial
+          href: trial-topics.md

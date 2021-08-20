@@ -20,7 +20,7 @@ description: "This article contains general tips and links to other resources th
 
 # Tune Exchange Online performance
 
-This article contains general tips and links to other resources that tell you how to improve performance of Exchange Online, particularly in front of a migration. This article is part of the [Network planning and performance tuning for Office 365](https://aka.ms/tune) project.
+This article contains general tips and links to other resources that tell you how to improve performance of Exchange Online, particularly in front of a migration. This article is part of the [Network planning and performance tuning for Office 365](./network-planning-and-performance.md) project.
    
 ## Things to consider in order to improve Exchange Online performance
 
@@ -46,5 +46,3 @@ To improve the speed of migration and reduce your organization's bandwidth const
 - Be sure your mailbox data adheres to the limitations on folder, and item, amounts.
     
 For more information about Exchange migration performance, see [Office 365 migration performance and best practices](https://support.office.com/article/d9acb371-fd6c-4c14-aa8e-db5cbe39aa57).
-  
-

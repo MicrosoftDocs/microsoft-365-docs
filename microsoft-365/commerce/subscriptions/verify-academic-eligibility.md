@@ -2,10 +2,11 @@
 title: "Verify academic eligibility for Microsoft 365 Education subscriptions"
 f1.keywords:
 - CSH
-- FWLink 2135711
+- FWLink-2135711
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: pablom
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -13,10 +14,10 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- commerce
 ms.custom: 
-search.appverid:
-- MET150
+- AdminSurgePortfolio
+- commerce_subscriptions
+search.appverid: MET150
 description: "Learn how to verify your school's eligibility for Microsoft 365 Education academic pricing."
 ms.date: 07/21/2020
 ---
@@ -62,7 +63,7 @@ After you have a Microsoft 365 Education trial, you can check the status of your
 
 ## Buy subscriptions at academic prices
 
-After your school's eligibility is verified, you can buy subscriptions at academic prices. You can also [convert your free trial to a paid subscription](https://docs.microsoft.com/microsoft-365/commerce/buy-a-subscription-from-your-free-trial). If you want to convert your trial subscription, you must do so before the end of the trial period.
+After your school's eligibility is verified, you can buy subscriptions at academic prices. You can also [convert your free trial to a paid subscription](../try-or-buy-microsoft-365.md). If you want to convert your trial subscription, you must do so before the end of the trial period.
 
 1. In the Microsoft 365 admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a> page.
 2. To view academic offers, select the **Education** tab.
@@ -86,15 +87,15 @@ You can find the expiration date for your free trial subscription on the **Your 
 
 If your school doesn't qualify as a Microsoft Qualified Academic Institution, you can still buy commercial offers in the admin center on the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a> page. If your organization is a nonprofit group, your group might be eligible for subscriptions for non-profits. To learn more, see [Discounts and donations for nonprofits](https://www.microsoft.com/nonprofits/eligibility).
 
-If you have questions about your school's academic eligibility decision, [contact support](../../admin/contact-support-for-business-products.md).
+If you have questions about your school's academic eligibility decision, [contact support](../../business-video/get-help-support.md).
 
 ## Next steps
 
-To learn how to deploy Microsoft 365 for your school, visit [Microsoft 365 Education documentation and resources](https://docs.microsoft.com/microsoft-365/education/deploy/). Next, you can [add users and assign licenses at the same time](../../admin/add-users/add-users.md). If you need to, you can also [buy more licenses for your subscription](../licenses/buy-licenses.md).
+To learn how to deploy Microsoft 365 for your school, visit [Microsoft 365 Education documentation and resources](/microsoft-365/education/deploy/). Next, you can [add users and assign licenses at the same time](../../admin/add-users/add-users.md). If you need to, you can also [buy more licenses for your subscription](../licenses/buy-licenses.md).
 
 ## Related content
 
-[Microsoft 365 Education Documentation for IT Admins](https://docs.microsoft.com/education/itadmins) (article links)\
+[Microsoft 365 Education Documentation for IT Admins](/education/itadmins) (article links)\
 [Microsoft Teams for Education](https://microsoft.com/education/products/teams/default.aspx) (product page)\
 [Understand subscriptions and licenses in Microsoft 365 for business](../licenses/subscriptions-and-licenses.md) (article)\
 [Assign licenses to users](../../admin/manage/assign-licenses-to-users.md) (article)\

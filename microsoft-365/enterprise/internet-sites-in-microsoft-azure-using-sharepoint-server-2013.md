@@ -15,7 +15,7 @@ ms.custom:
  - Ent_Architecture
  - seo-marvel-apr2020
 ms.assetid: 0d93ff4a-8fbd-42b8-9227-d817dba0046d
-description: This article provides resources for designing and implementing Sharepoint Server 2013 Internet sites hosted in Azure Infrastructure Services.
+description: This article provides resources for designing and implementing SharePoint Server 2013 Internet sites hosted in Azure Infrastructure Services.
 ---
 
 # Internet Sites in Microsoft Azure using SharePoint Server 2013
@@ -49,4 +49,4 @@ The following technical illustrations and articles provide information about how
 
 ## See Also
 
-[Microsoft 365 solution and architecture center](../solutions/solution-architecture-center.md)
+[Microsoft 365 solution and architecture center](../solutions/index.yml)

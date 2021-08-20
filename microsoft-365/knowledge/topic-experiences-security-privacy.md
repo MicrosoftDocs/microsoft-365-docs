@@ -46,16 +46,20 @@ The following table describes what users - topic viewers, contributors, and know
 
 |Topic item|What users can see|
 |:---------|:------------------|
-|Topic name|Users can see the topic name of all topics in the topic center. Some topics may not be visible if they have a low relevancy to the user.|
+|Topic name|Users can see the topic name of topics in the topic center. Some topics may not be visible if users don't have permissions to the source content or have a low relevancy to the user.|
 |Topic description|AI-generated descriptions are visible only to users who have permissions to the source content. Manually entered or edited descriptions are visible to all users.|
 |People|Pinned people are visible to all users. Suggested people are only visible to users who have permissions to the source content.|
 |Files|Files are only visible to users who have permissions to the source content.|
 |Pages|Pages are only visible to users who have permissions to the source content.|
 |Sites|Sites are only visible to users who have permissions to the source content.|
 
+## Users' personal and private data
+
+Viva Topics only discovers topics in the SharePoint sites that you specify. Users’ personal storage such as personal mail or OneDrive is not included.
+
 ## Best practices
 
-Topics presents information to users based on their existing permissions to content. Microsoft 365 provides a variety of ways to ensure that sensitive content is restricted to appropriate users. Beyond standard team or site permissions, you can use [sensitivity labels](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels) or [data loss prevention](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies) to restrict access to content and [access reviews](https://docs.microsoft.com/azure/active-directory/governance/access-reviews-overview) to periodically review user access to sensitive information.
+Topics presents information to users based on their existing permissions to content. Microsoft 365 provides a variety of ways to ensure that sensitive content is restricted to appropriate users. Beyond standard team or site permissions, you can use [sensitivity labels](../compliance/sensitivity-labels.md) or [data loss prevention](../compliance/dlp-learn-about-dlp.md) to restrict access to content and [access reviews](/azure/active-directory/governance/access-reviews-overview) to periodically review user access to sensitive information.
 
 We recommend that you use these tools to ensure that your content permissions are set appropriately inside your organization. Topic experiences can then provide useful and appropriate information to your users.
 

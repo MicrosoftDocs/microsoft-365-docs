@@ -16,6 +16,7 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Normal
 f1.keywords: NOCSH
+recommendations: false
 description: "Learn about the Microsoft 365 configuration steps necessary to set up a SharePoint site for collaboration with guests."
 ---
 
@@ -33,7 +34,7 @@ This video shows the configuration steps described in this document.</br>
 
 ## Azure external collaboration settings
 
-Sharing in Microsoft 365 is governed at its highest level by the [B2B external collaboration settings in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/external-identities/delegate-invitations). If guest sharing is disabled or restricted in Azure AD, this setting overrides any sharing settings that you configure in Microsoft 365.
+Sharing in Microsoft 365 is governed at its highest level by the [B2B external collaboration settings in Azure Active Directory](/azure/active-directory/external-identities/delegate-invitations). If guest sharing is disabled or restricted in Azure AD, this setting overrides any sharing settings that you configure in Microsoft 365.
 
 Check the B2B external collaboration settings to ensure that sharing with guests is not blocked.
 
@@ -105,7 +106,7 @@ Check the site-level sharing settings to make sure that they allow the type of a
 
 Note that the site cannot be shared with unauthenticated people (**Anyone** setting), but individual files and folders can.
 
-You can also use [sensitivity labels to control external sharing settings for SharePoint sites](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites).
+You can also use [sensitivity labels to control external sharing settings for SharePoint sites](../compliance/sensitivity-labels-teams-groups-sites.md).
 
 ![Screenshot of SharePoint site external sharing settings](../media/sharepoint-site-external-sharing-settings.png)
 
@@ -146,4 +147,4 @@ Note that you need to click **Close** only if you are not the owner of the group
 
 [Create a B2B extranet with managed guests](b2b-extranet.md)
 
-[SharePoint and OneDrive integration with Azure AD B2B](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview)
+[SharePoint and OneDrive integration with Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration-preview)

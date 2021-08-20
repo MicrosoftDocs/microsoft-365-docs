@@ -1,12 +1,15 @@
 ---
 title: Service changes and communication
-description: 
+description: How changes to the service occur and are communicated
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
+manager: laurawi
+ms.topic: article
+audience: Admin
 ---
 
 # Service changes and communication
@@ -37,13 +40,13 @@ We’ll routinely make other changes to the service to improve user experience, 
 
 - Installation of Windows and Office updates
 - Updates to the security baseline applied to devices
-- [Supported devices](device-list.md)
+- Supported devices. To see recommended devices, filter for Microsoft Managed Desktop on the [Shop Windows 10 Pro business devices](https://www.microsoft.com/windowsforbusiness/view-all-devices) site.
 
 We'll communicate these changes by using established channels. If you have any questions about any changes, contact the Microsoft Managed Desktop [Operations team](../working-with-managed-desktop/admin-support.md). Changes to the service are also documented as needed in the [change history](../change-history-managed-desktop.md).
 
 Microsoft Managed Desktop changes and communications are governed by two Microsoft policies:
 - [Modern Lifecycle Policy](https://support.microsoft.com/help/30881/modern-lifecycle-policy)
-- [Microsoft 365 Change Communication Policy](https://docs.microsoft.com/office365/admin/manage/message-center?redirectSourcePath=%252fen-us%252farticle%252fMessage-center-in-Office-365-38FB3333-BFCC-4340-A37B-DEDA509C2093&view=o365-worldwide)
+- [Microsoft 365 Change Communication Policy](/office365/admin/manage/message-center)
 
 ## Changes you make
 
@@ -65,5 +68,3 @@ These changes aren’t likely to be disruptive, so you don’t need to let us kn
 - Adding or removing users from the service
 - Configuration of system that does not have a material impact on the delivery of the Microsoft Managed Desktop
 - Application version updates, with the exception of VPN or proxy applications
-
-
