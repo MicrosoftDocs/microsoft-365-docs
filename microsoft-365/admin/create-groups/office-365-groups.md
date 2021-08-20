@@ -81,7 +81,7 @@ The default maximum number of Microsoft 365 groups that an organization can have
 
 Managing your Microsoft 365 groups is more effective when you have actionable information about groups usage. The Microsoft 365 admin center has a reporting tool that lets you see storage use, how many active groups you have, and how users are using the groups. See: [Microsoft 365 Reports in the admin center](../activity-reports/office-365-groups.md) for more information.
 
->[!IMPORTANT]
+> [!IMPORTANT]
 >Outlook will synchronize a maximum of 12 months of email from a Microsoft 365 Groups folder. If your "Keep Mail Offline" sync slider is set to less than 12 months, Outlook will also honor that setting. The maximum of 12 months cannot be increased. To see email older than 12 months, you must use the Outlook on the Web client.
 
 ## Sensitivity labels
