@@ -50,3 +50,4 @@ Property|Type|Description
 Score|Double|The current score.
 Time|DateTime|The date and time in which the call for this API was made.
 RbacGroupName|String|The device group name.
+RbacGroupId|String|The device group ID.

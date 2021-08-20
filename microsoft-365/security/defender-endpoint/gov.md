@@ -68,6 +68,7 @@ The following OS versions are supported:
 
 OS version|GCC|GCC High|DoD
 :---|:---:|:---:|:---:
+Windows 10, version 21H1 and above|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)
 Windows 10, version 20H2 (with [KB4586853](https://support.microsoft.com/help/4586853))|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)
 Windows 10, version 2004 (with [KB4586853](https://support.microsoft.com/help/4586853))|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)
 Windows 10, version 1909 (with [KB4586819](https://support.microsoft.com/help/4586819))|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)
@@ -155,12 +156,12 @@ These are the known gaps:
 
 Feature name|GCC|GCC High|DoD
 :---|:---:|:---:|:---:
-Network discovery|![No](images/svg/check-no.svg) In development|![No](images/svg/check-no.svg) In development|![No](images/svg/check-no.svg) In development
+Network discovery|![No](images/svg/check-no.svg) Rolling out|![No](images/svg/check-no.svg) In development|![No](images/svg/check-no.svg) In development
 Web content filtering|![No](images/svg/check-no.svg) In development|![No](images/svg/check-no.svg) In development|![No](images/svg/check-no.svg) In development
-Integrations: Azure Sentinel|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg) Alerts <p> ![No](images/svg/check-no.svg) Incidents & Raw data: In development|![Yes](images/svg/check-yes.svg) Alerts <p> ![No](images/svg/check-no.svg) Incidents & Raw data: In development
+Integrations: Azure Sentinel|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg) Alerts <p> ![Yes](images/svg/check-yes.svg) Incidents & Raw data: In preview|![Yes](images/svg/check-yes.svg) Alerts <p> ![Yes](images/svg/check-yes.svg) Incidents & Raw data: In preview
 Integrations: Microsoft Cloud App Security|![Yes](images/svg/check-yes.svg)|![No](images/svg/check-no.svg) In development|![No](images/svg/check-no.svg) In development
 Integrations: Microsoft Compliance Manager|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)
 Integrations: Microsoft Defender for Identity|![No](images/svg/check-no.svg) Rolling out|![No](images/svg/check-no.svg) Rolling out|![No](images/svg/check-no.svg) Rolling out
-Integrations: Microsoft Endpoint DLP|![No](images/svg/check-no.svg) In development|![No](images/svg/check-no.svg) In development|![No](images/svg/check-no.svg) In development
+Integrations: Microsoft Endpoint DLP|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![No](images/svg/check-no.svg) Rolling out
 Integrations: Microsoft Power Automate & Azure Logic Apps|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg) Azure Logic Apps <p> ![No](images/svg/check-no.svg) Power Automate: In development
 Microsoft Threat Experts|![No](images/svg/check-no.svg) On engineering backlog|![No](images/svg/check-no.svg) On engineering backlog|![No](images/svg/check-no.svg) On engineering backlog

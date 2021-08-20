@@ -67,9 +67,9 @@ The following steps will guide you through onboarding VDI devices and will highl
 
     1. Click **Download package** and save the .zip file.
 
-2. Copy the files from the WindowsDefenderATPOnboardingPackage folder extracted from the .zip file into the `golden/master` image under the path `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup`. 
+2. Copy the files from the WindowsDefenderATPOnboardingPackage folder extracted from the .zip file into the golden/master image under the path `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup`. 
 
-    1. If you aren't implementing a single entry for each device, copy WindowsDefenderATPOnboardingScript.cmd.
+    1. If you are implementing multiple entries for each device - one for each session, copy WindowsDefenderATPOnboardingScript.cmd.
 
     1. If you're implementing a single entry for each device, copy both Onboard-NonPersistentMachine.ps1 and WindowsDefenderATPOnboardingScript.cmd.
     
@@ -117,10 +117,7 @@ The following steps will guide you through onboarding VDI devices and will highl
 7. Use the search function by entering the device name and select **Device** as search type.
 
 
-## For downlevel SKUs
-The following guidance applies to Windows 2008 R2, Windows 7, and Windows 8.1. endpoints only. 
-
-
+## For downlevel SKUs (Windows Server 2008 R2/2012 R2/2016)
 
 > [!NOTE]
 > The following registry is relevant only when the aim is to achieve a 'Single entry for each device'.
