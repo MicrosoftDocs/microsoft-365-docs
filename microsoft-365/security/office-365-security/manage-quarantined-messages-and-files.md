@@ -102,7 +102,7 @@ You view and manage quarantined messages in the Microsoft 365 Defender portal or
      - **Today**
      - **Next 2 days**
      - **Next 7 days**
-     - **Custom**: Enter a **Start date** and **End date**.
+     - **Custom**: Enter a **Start time** and **End time** (date).
    - **Recipient tag**
    - **Quarantine reason**:
      - **Transport rule** (mail flow rule)
