@@ -82,7 +82,7 @@ When a disposition review is triggered at the end of the retention period:
    - You can customize the email that they receive, including instructions in different languages. For multi-language support, you must specify the translations yourself and this custom text is displayed to all reviewers irrespective of their locale.
    - Users receive an initial email notification per label at the end of the item's retention period, with a reminder per label once a week of all disposition reviews that they are assigned. They can click the link in the notification and reminder emails to go to the **Disposition** page in the Microsoft 365 compliance center to review the content and take an action. Alternately, the reviewers can go directly to the **Disposition** page in the compliance center.
    - Reviewers see only the disposition reviews that are assigned to them, whereas administrators who are added to the selected security group for records manager see all disposition reviews.
-   - Reviewers can add new users to the same disposition review. Currently, this action doesn't automatically grant these added users the [required permissions](#permissions-for-disposition).
+   - Reviewers can add new users to the same disposition review. Note that this action doesn't automatically grant these added users the [required permissions](#permissions-for-disposition).
    - For the disposition review process, a mini-review pane for each item shows a preview of the content if they have permissions to see it. If they don't have permissions, they can select the content link and request permissions. This mini-review pane also has tabs for additional information about the content:
        - **Details** to display indexed properties, where it's located, who created it and when, and who last modified it and when.
        - **History** that shows the history of any disposition review actions to date, with reviewer comments if available.
@@ -121,7 +121,7 @@ After you select this **Trigger a disposition review** option, on the next page 
 
 Select **Add a stage**, and name your stage for identification purposes. Then specify the reviewers for that stage.
 
-For the reviewers, specify a user or a mail-enabled security group. Microsoft 365 groups ([formerly Office 365 groups](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)) are currently not supported for this option.
+For the reviewers, specify a user or a mail-enabled security group. Microsoft 365 groups ([formerly Office 365 groups](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)) are not supported for this option.
 
 If you need more than one person to review an item at the end of its retention period, select **Add a stage** again and repeat the configuration process for the number of stages that you need, with a maximum of five stages. 
 
@@ -152,7 +152,7 @@ From any of the Disposition pages in the compliance center, select **Records man
 
 Then select the **Disposition notifications** tab, and specify whether you want to use just the default email message, or add your own text to the default message. Your custom text is added to the email instructions after the information about the retention label and before the next steps instructions.
 
-Text for all languages can be added, but formatting and images are currently unsupported. URLs and email addresses can be entered as text and depending on the email client, display as hyperlinks or unformatted text in the customized email.
+Text for all languages can be added, but formatting and images are unsupported. URLs and email addresses can be entered as text and depending on the email client, display as hyperlinks or unformatted text in the customized email.
 
 Example text to add:
 
