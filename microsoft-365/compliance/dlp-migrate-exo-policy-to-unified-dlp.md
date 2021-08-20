@@ -40,9 +40,9 @@ The migration wizard only migrates EXO policies and associated mail flow rules. 
 There are four phases to migrating DLP policies from Exchange into the Unified DLP management console in the Compliance center.  
 
 1. Prepare for migration
-    1. evaluate and compare your Exchange Online (EXO) DLP policies and your Compliance Center DLP policies for duplicate functionality
-    1. decide which EXO DLP policies you want to bring over exactly as they are- you can use the migration wizard for these
-    1. decide which EXO DLP policies you want to consolidate - you'll have to create new policies in the Compliance center
+    1. Evaluate and compare your Exchange Online (EXO) DLP policies and your Compliance Center DLP policies for duplicate functionality.
+    1. Decide which EXO DLP policies you want to bring over exactly as they are, you can use the wizard to migrate these.
+    1. Decide which EXO DLP policies you want to consolidate and consolidate them in the Exchange admin center, then use the migration wizard to bring them over into the Compliance center.
 1. Perform the migration - use the wizard
 1. Testing and validation -  examine the results
 1. Activate the migrated policies
@@ -112,7 +112,7 @@ After you have evaluated all your Exchange and Compliance center DLP policies fo
 
 The migrated policies will now appear in the list of DLP policies in the Compliance center DLP console. 
 
-## Testing and validation
+## Testing and validation <!--PRATEEK AND AAKASH TO PROVIDE A LIST OF SUPPORTED PREDICATES AND KNOWN ISSUES BEFORE PUBLISHING>
 
 Test and review your policies.
 
