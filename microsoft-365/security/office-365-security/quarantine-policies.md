@@ -72,7 +72,7 @@ You create and assign quarantine policies in the Microsoft 365 Defender portal o
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- To view, create, modify, or remove quarantine policies, you need to be a member of the **Organization Management** or **Security Administrator** or **Quarantine Administrator** roles in the Microsoft 365 Defender portal. For more information, see [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).
+- To view, create, modify, or remove quarantine policies, you need to be a member of the **Organization Management**, **Security Administrator**, or **Quarantine Administrator** roles in the Microsoft 365 Defender portal. For more information, see [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).
 
 ## Step 1: Create quarantine policies in the Microsoft 365 Defender portal
 
@@ -97,8 +97,8 @@ You create and assign quarantine policies in the Microsoft 365 Defender portal o
    These permissions and their effect on quarantined messages and in end-user spam notifications are described in the [Quarantine policy permission details](#quarantine-policy-permission-details) section later in this article.
 
    When you're finished, click **Next**.
-5. On the **End user spam notification** page, you can check the box to enable notification 
 
+5. On the **End user spam notification** page, you can check the box to enable notification.
 
 6. On the **Review policy** page that appears, review your settings. You can select **Edit** in each section to modify the settings within the section. Or you can click **Back** or select the specific page in the wizard.
 
