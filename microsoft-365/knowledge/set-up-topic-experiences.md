@@ -21,7 +21,6 @@ It is important to plan the best way to set up and configure topics in your envi
 You must be [subscribed to Viva Topics](https://www.microsoft.com/microsoft-viva/topics) and be a global administrator or SharePoint administrator to access the Microsoft 365 admin center and set up Topics.
 
 > [!IMPORTANT]
-
 If you have configured SharePoint to [require managed devices](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices), be sure to set up Topics from a managed device.
 
 ## Video demonstration
