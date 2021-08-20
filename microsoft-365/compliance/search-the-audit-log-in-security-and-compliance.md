@@ -379,13 +379,13 @@ Click one of the following links to go to a specific table.
         [Information barriers activities](#information-barriers-activities)
     :::column-end:::
     :::column:::
-        [Exchange admin activities](#exchange-admin-audit-log)
+        [Disposition review activities](#disposition-review-activities)
     :::column-end:::
 :::row-end:::
 
 :::row:::
     :::column:::
-        [Disposition review activities](#disposition-review-activities)
+        [Exchange admin activities](#exchange-admin-audit-log))
     :::column-end:::
     :::column:::
         
