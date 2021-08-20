@@ -44,11 +44,11 @@ To find trained models that might be suitable for your content:
 
 2. On the **Review models and apply new ones** page:
 
-   - On the **Applied** tab, see the models that have been applied to your library. You can select to view details to confirm extractors and other settings.
+   - On the **Applied** tab, see the models that have been applied to your library. Select **View model details** to see information about the model, such as description, extractors, and other settings.
+   
    - On the **Available** tab, see the trained models that are available to be applied to your library.
 
     ![Screenshot of the Review models and apply new ones page showing the Applied and Available tabs.](../media/content-understanding/review-models-apply-new-ones.png)
-
 
 ### Apply a trained model to your library
 
@@ -57,8 +57,6 @@ You can evaluate trained models against your content to help you find the most a
 1. On the **Available** tab, review the models in the list.
 
     ![Screenshot of the Review models and apply new ones page showing the models on the Available tab.](../media/content-understanding/available-models-to-apply.png)
-
-    To see more information about an individual model—such as description, information labeling, or extractors, select **View model details**.
 
 2. Select the model that you think will get you the best results, and then select **Apply to library**.
 
@@ -86,7 +84,7 @@ If you are unsure which model is the best fit for your files, you can ask for a 
 
 6. Select the model that you think will get you the best results, and then select **Apply to library**.
 
-7. If there are no recommended models based on the selected file, you can go back and select another file or different models.
+7. If there are no recommended models based on the selected file, you can go back and select another file or select different models.
 
 ### Remove an applied model
 
