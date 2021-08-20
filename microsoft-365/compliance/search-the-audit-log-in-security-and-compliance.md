@@ -967,6 +967,8 @@ The following table lists events that result from labeling activities for ShareP
 
 ### Retention policy and retention label activities
 
+The following table describes the configuration activities for [retention policies and retention labels](retention.md) when they were created, reconfigured, or deleted.
+
 |Friendly name|Operation|Description|
 |:-----|:-----|:-----|
 | Configured settings for a retention policy |NewRetentionComplianceRule |Administrator configured the retention settings for a new retention policy. Retention settings include how long items are retained, and what happens to items when the retention period expires (such as deleting items, retaining items, or retaining and then deleting them). This activity also corresponds to running the [New-RetentionComplianceRule](/powershell/module/exchange/new-retentioncompliancerule) cmdlet.|
@@ -1017,6 +1019,8 @@ The following table lists the activities in information barriers that are logged
 ||||
 
 ### Disposition review activities
+
+The following table lists the activities a disposition reviewer user took when an item reached the end of its configured retention period. For more information, see [Viewing and disposing of content](disposition.md#viewing-and-disposing-of-content).
 
 |**Friendly name**|**Operation**|**Description**|
 |:-----|:-----|:-----|

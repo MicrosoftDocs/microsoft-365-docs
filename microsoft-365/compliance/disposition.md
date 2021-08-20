@@ -201,7 +201,7 @@ During a disposition review, the content never moves from its original location,
 |Friendly name|Operation|Description|
 |:-----|:-----|:-----|
 |Approved disposal|ApproveDisposal|A disposition review user approved the disposition of the item to move it to the next disposition stage. If the item was in the only or final stage of disposition review, the disposition approval marked the item as eligible for permanent deletion.|
-|Extended retention period|ExtendRetentiond|A disposition review user chose to extend the retention period of the item .|
+|Extended retention period|ExtendRetentiond|A disposition review user chose to extend the retention period of the item.|
 |Relabeled item|RelabelItem|A disposition review user relabeled the retention label.|
 |Added reviewers|AddReviewer|A disposition review user added one or more other users to the current disposition review stage.|
 ||||
