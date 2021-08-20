@@ -28,7 +28,7 @@ landingContent:
             url: ../activity-reports/activity-reports.md
           - text: Productivity score - overview
             url: ../productivity/productivity-score.md
-          - text: Microsoft 365 Usage analytics - PowerBI
+          - text: Microsoft 365 Usage analytics - Power BI
             url: ../usage-analytics/usage-analytics.md
       - linkListType: how-to-guide
         links:
