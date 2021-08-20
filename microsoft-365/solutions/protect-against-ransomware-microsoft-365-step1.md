@@ -21,17 +21,13 @@ description: Step through protecting your Microsoft 365 resources from ransomwar
 
 # Step 1.Configure security baselines
 
-
-
-
-
 Apply security baselines to harden internet-facing servers, clients, and Office applications.
 
 ## Microsoft 365 security baseline
 
 Assess and measure security posture using Microsoft Secure Score.
 
-Use attack surface reduction rules to help block suspicious activity and vulnerable content. (Execution, unless otherwise indicated):
+Use attack surface reduction rules to help block suspicious activity and vulnerable content:
 
 - Block all Office applications from creating child processes
 - Block executable content from email client and webmail
@@ -42,18 +38,20 @@ Use attack surface reduction rules to help block suspicious activity and vulnera
 - Block Office applications from injecting code into other processes
 - Block Office communication application from creating child processes
 - Block untrusted and unsigned processes that run from USB
-- Block persistence through WMI event subscription (Persistence)
-- Block credential stealing from the Windows local security authority subsystem (lsass.exe) (Privilege escalation)
-- Block process creations originating from PSExec and WMI commands (Lateral movement)
+- Block persistence through WMI event subscription
+- Block credential stealing from the Windows local security authority subsystem (lsass.exe)
+- Block process creations originating from PSExec and WMI commands
 
 
 ## Exchange email management baseline 
 
-- Enable Microsoft Defender Antivirus email scanning. (Initial access)
-- Use Microsoft Defender for Office 365 for enhanced phishing protection and coverage against new threats and polymorphic variants. (Initial access)
-- Check your Office 365 email filtering settings to ensure you block spoofed emails, spam, and emails with malware. Use Microsoft Defender for Office 365 for enhanced phishing protection and coverage against new threats and polymorphic variants. Configure Microsoft Defender for Office 365 to recheck links on click and delete delivered mails in response to newly acquired threat intelligence. (Initial access)
-- Review and update to the latest recommended settings for EOP and Microsoft Defender for Office 365 security. (Initial access)
-- Configure Microsoft Defender for Office 365 to recheck links on click and delete delivered mails in response to newly acquired threat intelligence. (Initial access)
+To help prevent initial access to your tenant from an email-based attack:
+
+- Enable Microsoft Defender Antivirus email scanning.
+- Use Microsoft Defender for Office 365 for enhanced phishing protection and coverage against new threats and polymorphic variants.
+- Check your Office 365 email filtering settings to ensure you block spoofed emails, spam, and emails with malware. Use Microsoft Defender for Office 365 for enhanced phishing protection and coverage against new threats and polymorphic variants. Configure Microsoft Defender for Office 365 to recheck links on click and delete delivered mails in response to newly acquired threat intelligence.
+- Review and update to the latest recommended settings for EOP and Microsoft Defender for Office 365 security.
+- Configure Microsoft Defender for Office 365 to recheck links on click and delete delivered mails in response to newly acquired threat intelligence.
 
 
 ## Next step

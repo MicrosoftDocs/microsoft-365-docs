@@ -24,37 +24,40 @@ description: Step through protecting your Microsoft 365 resources from ransomwar
 
 General guidelines:
 
-Migrate your organization to the cloud:
-Move user data to cloud solutions like OneDrive/SharePoint to take advantage of versioning and recycle bin capabilities.
-Educate users on how to recover their files by themselves to reduce delays and cost of recovery.
-Designate Protected Folders.
-Set controlled folder access to Enabled or Audit mode.
-Use OneDrive cloud storage to protect and back up your files. (Impact)
+- Migrate your organization to the cloud:
+
+  Move user data to cloud solutions like OneDrive/SharePoint to take advantage of versioning and recycle bin capabilities.
+
+- Educate users on how to recover their files by themselves to reduce delays and cost of recovery.
+
+- Designate Protected Folders.
+
+- Set controlled folder access to Enabled or Audit mode.
+
+- Use OneDrive cloud storage to protect and back up your files.
 
 
 ## Locate your ransomable information
 
-Sensitive
-
-Proprietary
+- Sensitive
+- Proprietary or intellectual property
+- Regulated
+- IT recovery plans
 
 ## Protect your ransomable information
 
-Tight permissions
+- Tighten permissions
 
-Perform review of broad permissions and update
+  - Perform review of broad permissions and update
 
-Audit and monitor for new broad permissions
+  - Audit and monitor for new broad permissions
 
-Teams/SharePoint sites with security isolation
+- Use Teams/SharePoint sites with security isolation
 
-MIP, sensitive information types, and sensitivity labels (permissions and encryption)
+- User MIP, sensitive information types, and sensitivity labels (permissions and encryption)
 
-Protected Folders/controlled folder access for malicious apps
+- Use Protected Folders/controlled folder access for malicious apps
 
-Implement controlled folder access to help prevent files from being altered or encrypted by ransomware. (Impact)
-Back up regularly. Use the 3-2-1 rule. Keep three backups of your data, on two different storage types, and at least one backup offsite. (Impact)
+- Implement controlled folder access to help prevent files from being altered or encrypted by ransomware.
 
-
-
-
+- Back up regularly. Use the 3-2-1 rule. Keep three backups of your data, on two different storage types, and at least one backup offsite.

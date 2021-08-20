@@ -32,29 +32,24 @@ A human-operated ransomware attack can be catastrophic to businesses of all size
 
 A ransomware attacker that has infiltrated Microsoft 365 can attempt to create financial leverage by:
 
-Deleting files or email
-
-
-### Exchange Online
-
-
+- Deleting files or email
+- Encrypting files
+- Copying files outside the tenant
 
 
 ## What’s in this solution
 
-This solution steps you through the deployment of three layers of protection and mitigation features, configurations, and ongoing operations to minimize the ability of a ramsomware attacker to use the critical data in your Microsoft 365 tenant as financial leverage and prevent entry and escalation of access.
-
-It is common practice for human-operated ransomware attackers to infiltrate an organization well ahead of the actual attack that exfiltrates, encrypts, or damages data and demands a ransom amount. They accumulate elevated credentials and access and compile information on where the critical data is located. This is sometimes known as “banking” an organization. When the actual attack occurs, typically during a vulnerable time such as a weekend or holiday, the attackers can quickly exfiltrate data and then encrypt or destroy it.
-
-The steps in this solution are designed on the assumption that attackers may have already “banked” your Microsoft 365 tenant. 
+This solution steps you through the deployment of Microsoft 365 protection and mitigation features, configurations, and ongoing operations to minimize the ability of a ramsomware attacker to use the critical data in your Microsoft 365 tenant as financial leverage and hold your organization at ransom.
 
 ![The steps to protecting against ransomware with Microsoft 365](../media/protect-against-ransomware-microsoft-365/protect-against-ransomware-microsoft-365-step-grid.png)
 
-If the attackers are already in: 
+The steps in this solution are:
 
-1. Your first step is to *protect your critical data in ways that prevent an attacker from gaining financial leverage on your organization*.
-2. Your next step is to ensure that *user accounts have an appropriate level of access and that it is difficult to increase levels of access through privilege escalation without detection*.
-3. Your final step is to *prevent future infiltrations by preventing entry into your organization through user accounts, devices, email, or applications*.
+1. [Configure security baselines](protect-against-ransomware-microsoft-365-step1.md)
+2. [Deploy attack detection and response](protect-against-ransomware-microsoft-365-step2.md)
+3. [Protect identities](protect-against-ransomware-microsoft-365-step3.md)
+4. [Protect devices](protect-against-ransomware-microsoft-365-step4.md)
+5. [Protect information](protect-against-ransomware-microsoft-365-step5.md)
 
 To protect your Microsoft 365 tenant from a ransomware attack, use these Microsoft 365 features.
 
@@ -77,18 +72,6 @@ To protect your Microsoft 365 tenant from a ransomware attack, use these Microso
 Deploying additional security features and policies to your Microsoft 365 tenant can impact your users. For example, you may impose a new security policy that requires users to create new teams for specific uses with a list of user accounts as members, instead of more easily creating a team for all users in the organization. This can help prevent a ransomware attacker from exploring the available teams and “banking” them and their resources.
 This solution will identify when a new configuration or recommended security policy can impact your users so you can implement the required change management.
 
-<!--
-
-Here are the preventative and mitigation steps to minimize the damage from a ransomware attack, in order of urgency:
-
-1. Prevent a ransomware attacker from obtaining financial leverage and executing the activities leading to the ransom demand. The assumption is that your organization has already been infiltrated and the attacker has escalated privileges and is waiting for the right time to ransom you. 
-
-2. Prevent an attacker who has infiltrated your tenant from escalating their privileges through the credentials of an admin or priority account. The assumption is that your organization has already been infiltrated but the attacker has not yet escalated their privileges.
-
-2. Prevent a ransomware attacker from accessing your tenant. The assumption is that your organization has NOT already been infiltrated.
-
---> 
-
 
 ## Next steps
 
@@ -96,6 +79,8 @@ Here are the preventative and mitigation steps to minimize the damage from a ran
 
 Use these steps:
 
-1. [Remove attacker financial leverage with data protection](protect-against-ransomware-microsoft-365-step1.md)
-2. [Minimize privileged access and prevent credential escalation](protect-against-ransomware-microsoft-365-step2.md)
-3. [Prevent attacker access](protect-against-ransomware-microsoft-365-step3.md)
+1. [Configure security baselines](protect-against-ransomware-microsoft-365-step1.md)
+2. [Deploy attack detection and response](protect-against-ransomware-microsoft-365-step2.md)
+3. [Protect identities](protect-against-ransomware-microsoft-365-step3.md)
+4. [Protect devices](protect-against-ransomware-microsoft-365-step4.md)
+5. [Protect information](protect-against-ransomware-microsoft-365-step5.md)
