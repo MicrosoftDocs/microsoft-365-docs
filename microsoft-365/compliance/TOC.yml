@@ -467,7 +467,7 @@
               href: archive-enterprise-number-data.md
             - name: O2 Telefonica SMS and Voice Network Archiver
               href: archive-o2-network-data.md
-            - name: Rogers Network Archiver (preview)
+            - name: Rogers Network Archiver
               href: archive-rogers-network-archiver-data.md
             - name: Signal Archiver
               href: archive-signal-archiver-data.md
@@ -509,7 +509,7 @@
               href: archive-17a-4-refinitiv-messenger-data.md
             - name: ServiceNow DataParser 
               href: archive-17a-4-servicenow-data.md
-            - name: Skype for Business Server DataParser (preview)
+            - name: Skype for Business Server DataParser
               href: archive-17a-4-skype-for-business-server-data.md
             - name: Slack DataParser 
               href: archive-17a-4-slack-data.md
@@ -655,6 +655,8 @@
             href: de-duplication-in-ediscovery-search-results.md
           - name: Decryption in eDiscovery tools
             href: ediscovery-decryption.md
+          - name: Troubleshoot common eDiscovery issues
+            href: ediscovery-troubleshooting-common-issues.md
           - name: Change the size of PST files when exporting search results
             href: change-the-size-of-pst-files-when-exporting-results.md
           - name: Disable reports when you export search results
@@ -663,8 +665,6 @@
             href: check-your-content-search-query-for-errors.md
           - name: Use Microsoft Edge to download search results
             href: configure-edge-to-export-search-results.md
-          - name: Bulk edit multiple content searches
-            href: bulk-edit-content-searches.md
           - name: Search for eDiscovery activities in the audit log
             href: search-for-ediscovery-activities-in-the-audit-log.md
         - name: Content search PowerShell scripts
