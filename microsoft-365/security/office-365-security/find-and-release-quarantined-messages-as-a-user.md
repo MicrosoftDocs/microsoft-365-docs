@@ -81,33 +81,7 @@ You view and manage your quarantined messages in the Microsoft 365 Defender port
 
    When you're finished, click **Apply**.
 
-3. To filter the results, click **Filter**. The available filters are:
-
-   - Message
-
-   - **Expires time**: Filter messages by when they will expire from quarantine:
-     - **Today**
-     - **Next 2 days**
-     - **Next 7 days**
-     - **Custom**: Enter a **Start date** and **End date**.
-
-   - **Received time**: Enter a **Start date** and **End date**.
-
-   - **Quarantine reason**:
-     - **Bulk**
-     - **Spam**
-     - **Phish**
-
-   - **Policy Type**: Filter messages by policy type:
-     - **Anti-malware policy**
-     - **Safe Attachments policy** (Defender for Office 365)
-     - **Anti-phish policy**
-     - **Anti-spam policy**
-     - **Transport rule** (mail flow rule)
-
-   To clear the filter, click **Clear**. To hide the filter flyout, click **Filter** again.
-
-4. To filter the results, click **Filter**. The following filters are available in the **Filters** flyout that appears:
+3. To filter the results, click **Filter**. The following filters are available in the **Filters** flyout that appears:
    - **Message ID**: The globally unique identifier of the message.
    - **Sender address**
    - **Recipient address**
@@ -117,7 +91,7 @@ You view and manage your quarantined messages in the Microsoft 365 Defender port
      - **Today**
      - **Next 2 days**
      - **Next 7 days**
-     - **Custom**: Enter a **Start date** and **End date**.
+     - **Custom**: Enter a **Start time** and **End time** (date).
    - **Quarantine reason**:
      - **Bulk**
      - **Spam**
@@ -134,11 +108,10 @@ You view and manage your quarantined messages in the Microsoft 365 Defender port
      - **Safe Attachments policy**
      - **Anti-phishing policy**
      - **Anti-spam policy**
-     - **Transport rule** (mail flow rule)
 
    When you're finished, click **Apply**. To clear the filters, click ![Clear filters icon](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters**.
 
-5. Use **Search** box and a corresponding value to find specific messages. Wildcards aren't supported. You can search by the following values:
+4. Use **Search** box and a corresponding value to find specific messages. Wildcards aren't supported. You can search by the following values:
    - Message ID
    - Sender email address
    - Recipient email address
