@@ -82,7 +82,7 @@ If you are unsure which model is the best fit for your files, you can ask for a 
 
     ![Screenshot of the Review results and select a model page showing the recommended models.](../media/content-understanding/review-recommendation-results.png)
 
-6. Select the model that you think will get you the best results, and then select **Apply to library**.
+6. On the model you think will get you the best results, select **View model details**, and then select **Apply to library**.
 
 7. If there are no recommended models based on the selected file, you can go back and select another file or select different models.
 
@@ -92,7 +92,7 @@ To remove an applied model from your document library:
 
 1. On the **Review models and apply new ones** page, on the **Applied** tab, see the models that have been applied to your library.
 
-2. Select the model you want to remove, and then select **Remove from library**.
+2. On the model you want to remove, select **View model details**, and then select **Remove from library**.
 
 
 ## See also
