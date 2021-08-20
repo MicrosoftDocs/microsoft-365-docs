@@ -192,24 +192,24 @@ As you can see from the example shown, the actions supported are:
     > [!NOTE]
     > This action doesn't automatically grant the [required permissions](#permissions-for-disposition) to the users who are added. If they don't have these permissions, they won't be able to participate in the disposition review.
 
-Each action taken has a corresponding audit event in the Records Management auditing category:
-
-ApproveDisposal
-ExtendRetention
-RelabelItem
-AddReviewer
-
-
-- ExtendedDate
-- StageId
-- StageName
-- NewLabel
-DecisionDate
-Comment
-ForwardedReviewer
-
+Each action taken has a corresponding audit event in the [Disposition review activities](search-the-audit-log-in-security-and-compliance.md#disposition-review-activities) auditing category.
 
 During a disposition review, the content never moves from its original location, and it's not marked for permanent deletion until this action is selected by a reviewer for the final or only disposition stage.
+
+### Disposition review activities
+
+|Friendly name|Operation|Description|
+|:-----|:-----|:-----|
+|Approved disposal|ApproveDisposal|A user approved the disposition of the item to move it to the next disposition stage. If the item was in the only or final stage of disposition review, the item was marked as eligible for permanent deletion.|
+|Extended retention period|ExtendRetentiond|A user chooses to extend the retention period of the item.|
+|Relabeled item|RelabelItem|User relabels retention label.|
+|Added reviewers|AddReviewer|User added one or more other users to the current disposition review stage.|
+||||
+
+
+When this action is selected for an interim stage of disposition review (you have configured multiple stages): The item moves to the next disposition stage.
+When this action is selected for the final stage of disposition review, or there is only one stage of disposition: The item is marked as eligible for permanent deletion
+
 
 ## Disposition of records
 

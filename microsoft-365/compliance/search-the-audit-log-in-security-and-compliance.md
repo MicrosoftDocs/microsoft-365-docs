@@ -1003,6 +1003,17 @@ The following table lists the activities in information barriers that are logged
 | Removed segments from a site | SegmentsRemoved | A SharePoint or global administrator removed one or more information barriers segments from a site. |
 ||||
 
+### Disposition review activities
+
+|**Friendly name**|**Operation**|**Description**|
+|:-----|:-----|:-----|
+|Approved disposal|ApproveDisposal|A disposition review user approved the disposition of the item to move it to the next disposition stage. If the item was in the only or final stage of disposition review, the disposition approval marked the item as eligible for permanent deletion.|
+|Extended retention period|ExtendRetentiond|A disposition review user chose to extend the retention period of the item .|
+|Relabeled item|RelabelItem|A disposition review user relabeled the retention label.|
+|Added reviewers|AddReviewer|A disposition review user added one or more other users to the current disposition review stage.|
+||||
+
+
 ### Exchange admin audit log
 
 Exchange administrator audit logging (which is enabled by default in Office 365) logs an event in the audit log when an administrator (or a user who has been assigned administrative permissions) makes a change in your Exchange Online organization. Changes made by using the Exchange admin center or by running a cmdlet in Exchange Online PowerShell are logged in the Exchange admin audit log. Cmdlets that begin with the verbs **Get-**, **Search-**, or **Test-** are not logged in the audit log. For more detailed information about admin audit logging in Exchange, see [Administrator audit logging](/exchange/administrator-audit-logging-exchange-2013-help).
