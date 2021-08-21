@@ -131,7 +131,7 @@ All three conditions can automatically apply retention labels to emails as they 
 |Specific keywords or searchable properties| Yes |Yes |
 |Trainable classifiers| Yes | Yes (last six months only) |
 
-Additionally, you can't automatically apply retention labels to SharePoint items that are in draft or that have never been published.
+Additionally, SharePoint items that are in draft or that have never been published aren't supported for this scenario.
 
 #### Auto-apply labels to content with specific types of sensitive information
 
