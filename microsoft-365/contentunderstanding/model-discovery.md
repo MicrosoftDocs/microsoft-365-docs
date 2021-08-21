@@ -62,7 +62,7 @@ You can evaluate trained models against your content to help you find the most a
 
     ![Screenshot of the Review models and apply new ones page showing the models on the Available tab.](../media/content-understanding/available-models-to-apply.png)
 
-2. Select the model that you think will get you the best results, and then select **Apply to library**.
+2. Choose the model that you think will get you the best results, select **View model details**, and then select **Apply to library**.
 
 ### Get a recommendation for a trained model
 
