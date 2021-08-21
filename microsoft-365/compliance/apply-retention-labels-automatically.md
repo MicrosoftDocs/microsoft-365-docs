@@ -178,7 +178,7 @@ Some things to consider when using keywords or searchable properties to auto-app
 
 - Use the *DocumentLink* property instead of *Path* to match an item based on its URL. 
 
-- Suffix wildcard searches ( such as `*cat`) or substring wildcard searches (such as `*cat*`) aren't supported. However, prefix wildcard searches (such as `cat*`) are supported.
+- Suffix wildcard searches (such as `*cat`) or substring wildcard searches (such as `*cat*`) aren't supported. However, prefix wildcard searches (such as `cat*`) are supported.
 
 - Be aware that partially indexed items can be responsible for not labeling items that you're expecting, or labeling items that you're expecting to be excluded from labeling when you use the NOT operator. For more information, see [Partially indexed items in Content Search](partially-indexed-items-in-content-search.md).
 
