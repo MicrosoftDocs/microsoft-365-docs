@@ -108,6 +108,10 @@ You can also use Exchange admin center to import everyone's email. For more info
 
 Open Microsoft Teams, select your profile icon, and then **Add work or school account**. Follow the steps to add your new account to Teams.
 
+## Related content
+
+[Import or migrate email from Gmail or another email provider to Microsoft 365](../setup/migrate-email-and-contacts-admin.md)
+
 <!--## Download desktop apps
 
 Download Microsoft 365 apps by following the steps in this article.

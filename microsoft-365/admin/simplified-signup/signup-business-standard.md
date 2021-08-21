@@ -26,10 +26,6 @@ There are a couple of ways to get Microsoft 365 Business Standard:
 
 - [Sign up for a home or family plan](https://go.microsoft.com/fwlink/?linkid=2109398) if you're not buying for a business.
 
-## Before you begin
-
-Once you complete the steps to sign up for Microsoft 365, check out [Microsoft 365 for business](https://www.microsoft.com/microsoft-365/business).
-
 ## Sign up steps
 
 To sign up and purchase Microsoft 365 Business Standard (or Microsoft 365 Apps) for your business, complete the following steps:
