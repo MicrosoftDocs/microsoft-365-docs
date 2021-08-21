@@ -19,7 +19,7 @@ Before getting started, you need to set up Bookings on the web.
 
 1. Can't find the app you're looking for? From the app launcher, select All apps to see an alphabetical list of the Microsoft 365 apps available to you. From there, you can search for a specific app
 
-   ![Image of app launcher](../media/bookings-all-apps-launcher.png)
+   ![Image of app launcher.](../media/bookings-all-apps-launcher.png)
 
 2. Got to [the Office home page](https://office.com) and from the app launcher, select **Bookings**.
 

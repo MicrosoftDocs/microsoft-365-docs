@@ -28,7 +28,7 @@ You can use Exchange Online monitoring in the Microsoft 365 admin center to moni
 
 Here is an example of the **Service health** page in the Microsoft 365 admin center, available from **Health > Service health**.
 
-![The Service health page in the Microsoft 365 admin center](../media/microsoft-365-exchange-monitoring/service-health-dashboard-example.png)
+![The Service health page in the Microsoft 365 admin center.](../media/microsoft-365-exchange-monitoring/service-health-dashboard-example.png)
 
 The value of the **Status** column indicates whether the service is healthy or has advisories or incidents based on the cloud services that Microsoft maintains. 
 
@@ -36,7 +36,7 @@ The value of the **Your org and 3rd party issues** column indicates that your or
 
 Here is an example of the **Exchange Online** monitoring page in the Microsoft 365 admin center, available from **Health > Service health > Exchange Online**.
 
-![The Exchange Online monitoring page in the Microsoft 365 admin center](../media/microsoft-365-exchange-monitoring/exhange-monitoring-example.png)
+![The Exchange Online monitoring page in the Microsoft 365 admin center.](../media/microsoft-365-exchange-monitoring/exhange-monitoring-example.png)
 
 With the **Exchange Online** monitoring page, you can see whether the Exchange Online service is healthy or not and whether there are any associated incidents or advisories. With Exchange Online monitoring, you can look at the service health for specific email scenarios and view near real-time signals to determine the impact by scenario. 
 
@@ -69,7 +69,7 @@ You can also monitor Exchange Online health for the following scenarios:
 - **Mail flow**: The number of messages successfully delivered to a mailbox without any delay after the message reached the Microsoft 365 network. 
 - **Basic Authentication and Modern Authentication**: The number of users successfully validated in the Exchange Online service.
 
-![An example of monitoring Exchange health for mail delivery](../media/microsoft-365-exchange-monitoring/exhange-monitoring-scenario-example.png)
+![An example of monitoring Exchange health for mail delivery.](../media/microsoft-365-exchange-monitoring/exhange-monitoring-scenario-example.png)
 
 For all these scenarios, the key numbers are for the last 30 minutes in the main dashboard. Detailed views for each of these scenarios shows the near real-time trend for seven days with the 30-minute aggregate compared with the previous week. 
 
@@ -80,7 +80,7 @@ There are two ways you can provide feedback:
 - Use the **Give feedback** option available on every page of the Microsoft 365 admin center.
 - Submit feedback using the **Is this post helpful?** link for a specific incident or advisory.
 
-![The "Is this post helpful?" link for a specific incident or advisory](../media/microsoft-365-exchange-monitoring/exhange-monitoring-example-incident-feedback.png)
+![The "Is this post helpful?" link for a specific incident or advisory.](../media/microsoft-365-exchange-monitoring/exhange-monitoring-example-incident-feedback.png)
 
 ## Frequently asked questions
 

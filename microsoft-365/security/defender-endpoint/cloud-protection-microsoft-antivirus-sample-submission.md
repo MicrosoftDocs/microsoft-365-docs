@@ -90,15 +90,15 @@ Defender for Endpoint antivirus and cloud protection automatically blocks most n
 
 _Figure 1  - Examples of Metadata Sent to Microsoft Defender Cloud Protection_
 
-:::image type="content" source="images/cloud-protection-metadata-sample.png" alt-text="Figure 1. Examples of metadata sent to Microsoft Defender Cloud Protection":::
+:::image type="content" source="images/cloud-protection-metadata-sample.png" alt-text="Figure 1. Examples of metadata sent to Microsoft Defender Cloud Protection.":::
 
 _Figure 2. Cloud-delivered protection flow_
 
-:::image type="content" source="images/cloud-protection-flow.png" alt-text="Figure 2. Cloud-delivered protection flow":::
+:::image type="content" source="images/cloud-protection-flow.png" alt-text="Figure 2. Cloud-delivered protection flow.":::
 
 _Figure 3. Cloud-delivered protection and layered machine learning_
 
-:::image type="content" source="images/cloud-protection-detection-layered-machine-learning.png" lightbox="images/cloud-protection-detection-layered-machine-learning.png" alt-text="Figure 3. Cloud-delivered protection and layered machine learning":::
+:::image type="content" source="images/cloud-protection-detection-layered-machine-learning.png" lightbox="images/cloud-protection-detection-layered-machine-learning.png" alt-text="Figure 3. Cloud-delivered protection and layered machine learning.":::
 
 > [!Note]
 >

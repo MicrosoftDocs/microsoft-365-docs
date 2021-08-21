@@ -38,7 +38,7 @@ This article provides solutions to help address the sign-on issues.
 ## Sign in failed - unexpected error
 **Sign in failed:** *Unexpected error, try later*
 
-![Image of sign in failed error Unexpected error](images/f9c3bad127d636c1f150d79814f35d4c.png)
+![Image of sign in failed error Unexpected error.](images/f9c3bad127d636c1f150d79814f35d4c.png)
 
 **Message:**
 
@@ -59,7 +59,7 @@ from Google Play Store and try again
 
 **Sign in failed:** *Invalid license, please contact administrator*
 
-![Image of sign in failed  please contact administrator](images/920e433f440fa1d3d298e6a2a43d4811.png)
+![Image of sign in failed  please contact administrator.](images/920e433f440fa1d3d298e6a2a43d4811.png)
 
 **Message:** *Invalid license, please contact administrator*
 
@@ -84,7 +84,7 @@ Phishing websites impersonate trustworthy websites for the purpose of obtaining 
 Phishing and harmful web threats that are detected by Defender for Endpoint
 for Android are not blocked on some Xiaomi devices. The following functionality doesn't work on these devices.
 
-![Image of site reported unsafe](images/0c04975c74746a5cdb085e1d9386e713.png)
+![Image of site reported unsafe.](images/0c04975c74746a5cdb085e1d9386e713.png)
 
 
 **Cause:**
@@ -95,7 +95,7 @@ for Android from displaying pop-up windows while it runs in the background.
 Xiaomi devices permission: "Display pop-up windows while running in the
 background."
 
-![Image of pop up setting](images/6e48e7b29daf50afddcc6c8c7d59fd64.png)
+![Image of pop up setting.](images/6e48e7b29daf50afddcc6c8c7d59fd64.png)
 
 **Solution:**
 

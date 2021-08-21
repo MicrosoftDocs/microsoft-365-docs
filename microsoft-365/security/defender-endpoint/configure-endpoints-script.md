@@ -37,7 +37,7 @@ You can also manually onboard individual devices to Defender for Endpoint. You m
 
 ## Onboard devices 
 
-[![Image of the PDF showing the various deployment paths](images/onboard-script.png)](images/onboard-script.png#lightbox)
+[![Image of the PDF showing the various deployment paths.](images/onboard-script.png)](images/onboard-script.png#lightbox)
 
 
 Check out the [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)  or  [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) to see the various paths in deploying Defender for Endpoint. 
@@ -62,7 +62,7 @@ Check out the [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/publ
 
     1.  Right-click **Command prompt** and select **Run as administrator**.
 
-        ![Window Start menu pointing to Run as administrator](images/run-as-admin.png)
+        ![Window Start menu pointing to Run as administrator.](images/run-as-admin.png)
 
 4.  Type the location of the script file. If you copied the file to the desktop, type: *%userprofile%\Desktop\WindowsDefenderATPLocalOnboardingScript.cmd*
 
@@ -121,7 +121,7 @@ For security reasons, the package used to Offboard devices will expire 30 days a
 
     1.  Right-click **Command prompt** and select **Run as administrator**.
 
-        ![Window Start menu pointing to Run as administrator](images/run-as-admin.png)
+        ![Window Start menu pointing to Run as administrator.](images/run-as-admin.png)
 
 4.  Type the location of the script file. If you copied the file to the desktop, type: *%userprofile%\Desktop\WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*
 

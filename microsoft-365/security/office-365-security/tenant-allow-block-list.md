@@ -145,7 +145,7 @@ To manage all allows and blocks, see [Add blocks in the Tenant Allow/Block List]
    - **Files**: You can group the results by **Action**.
    - **Spoofing**: You can group the results by **Action** or **Spoof type**.
 
-   Click **Search**, enter all or part of a value, and then press ENTER to find a specific value. When you're finished, click ![Clear search icon](../../media/m365-cc-sc-close-icon.png) **Clear search**.
+   Click **Search**, enter all or part of a value, and then press ENTER to find a specific value. When you're finished, click ![Clear search icon.](../../media/m365-cc-sc-close-icon.png) **Clear search**.
 
    Click **Filter** to filter the results. The values that are available in **Filter** flyout that appears depend on the tab you selected:
 

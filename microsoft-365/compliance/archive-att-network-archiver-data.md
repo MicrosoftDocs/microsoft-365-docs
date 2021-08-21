@@ -24,7 +24,7 @@ After SMS and MMS messages are stored in user mailboxes, you can apply Microsoft
 
 The following overview explains the process of using a connector to archive AT&T Network data in Microsoft 365.
 
-![ATT Network archiving workflow](../media/ATTNetworkConnectorWorkflow.png)
+![ATT Network archiving workflow.](../media/ATTNetworkConnectorWorkflow.png)
 
 1. Your organization works with TeleMessage to set up an AT&T Network connector. For information, see [AT&T Network Archiver](https://www.telemessage.com/office365-activation-for-atnt-network-archiver/).
 

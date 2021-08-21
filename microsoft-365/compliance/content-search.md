@@ -55,7 +55,7 @@ To access to the **Content search** page in the Microsoft 365 compliance center 
 
 5. On the **Locations** page, choose the content locations that you want to search. You can search mailboxes, sites, and public folders.
 
-    ![Choose the content locations to place on hold](../media/ContentSearchLocations.png)
+    ![Choose the content locations to place on hold.](../media/ContentSearchLocations.png)
   
    1. **Exchange mailboxes**: Set the toggle to **On** and then click **Choose users, groups, or teams** to specify the mailboxes to place on hold. Use the search box to find user mailboxes and distribution groups (to place a hold on the mailboxes of group members) to place on hold. You can also search the mailbox associated with a Microsoft Team (for channel messages), Office 365 Group, and Yammer Group. For more information about the application data stored in mailboxes, see [Content stored in mailboxes for eDiscovery](what-is-stored-in-exo-mailbox.md).
 
@@ -67,7 +67,7 @@ To access to the **Content search** page in the Microsoft 365 compliance center 
 
 6. On the **Define your search conditions** page, type a keyword query and add conditions to the search query if necessary.
 
-   ![Configure the search query](../media/ContentSearchQuery.png)
+   ![Configure the search query.](../media/ContentSearchQuery.png)
 
    1. Specify keywords, message properties such as sent and received dates, or document properties such as file names or the date that a document was last changed. You can use more complex queries that use a Boolean operator, such as **AND**, **OR**, **NOT**, and **NEAR**. If you leave the keyword box empty, all content located in the specified content locations is included in the search results. For more information, see [Keyword queries and search conditions for eDiscovery](keyword-queries-and-search-conditions.md).
 

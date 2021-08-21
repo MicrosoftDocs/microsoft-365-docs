@@ -59,7 +59,7 @@ Starting in Configuration Manager version 2002, you can onboard the following op
 ### Onboard devices using System Center Configuration Manager
 
 
-[![Image of the PDF showing the various deployment paths](images/onboard-config-mgr.png)](images/onboard-config-mgr.png#lightbox)
+[![Image of the PDF showing the various deployment paths.](images/onboard-config-mgr.png)](images/onboard-config-mgr.png#lightbox)
 
 
 Check out the [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)  or  [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) to see the various paths in deploying Microsoft Defender for Endpoint. 
@@ -216,7 +216,7 @@ If you're using System Center 2012 R2 Configuration Manager, monitoring consists
 
     If there are failed deployments (devices with **Error**, **Requirements Not Met**, or **Failed statuses**), you may need to  troubleshoot the devices. For more information, see, [Troubleshoot Microsoft Defender for Endpoint onboarding issues](troubleshoot-onboarding.md).
 
-    ![Configuration Manager showing successful deployment with no errors](images/sccm-deployment.png)
+    ![Configuration Manager showing successful deployment with no errors.](images/sccm-deployment.png)
 
 ### Check that the devices are compliant with the Microsoft Defender for Endpoint service
 

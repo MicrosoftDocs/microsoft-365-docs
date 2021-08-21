@@ -43,7 +43,7 @@ If a Microsoft Teams-enabled user has an on-premises mailbox and their user acco
   
 The following graphic shows the workflow of how Teams chat data for on-premises users is available to search, preview, and export.
   
-![Cloud-based storage for on-premises users in Microsoft Teams](../media/EHAMShard1.png)
+![Cloud-based storage for on-premises users in Microsoft Teams.](../media/EHAMShard1.png)
   
 In addition to this capability, you can also use eDiscovery tools to search, preview, and export Teams content in the cloud-based SharePoint site and Exchange mailbox associated with each Microsoft Team and 1xN Teams chat data in the Exchange Online mailbox for cloud-based users.
 

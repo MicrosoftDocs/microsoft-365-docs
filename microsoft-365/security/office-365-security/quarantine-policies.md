@@ -45,10 +45,10 @@ The available individual permissions and what's included or not included in the 
 
 |Permission|No access|Limited access|Full access|
 |---|:---:|:---:|:---:|
-|**Block sender** (_PermissionToBlockSender_)||![Check mark](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)|
-|**Delete** (_PermissionToDelete_)||![Check mark](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)|
-|**Preview** (_PermissionToPreview_)||![Check mark](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)|
-|**Allow recipients to release a message from quarantine** (_PermissionToRelease_)|||![Check mark](../../media/checkmark.png)|
+|**Block sender** (_PermissionToBlockSender_)||![Check mark.](../../media/checkmark.png)|![Check mark.](../../media/checkmark.png)|
+|**Delete** (_PermissionToDelete_)||![Check mark.](../../media/checkmark.png)|![Check mark.](../../media/checkmark.png)|
+|**Preview** (_PermissionToPreview_)||![Check mark.](../../media/checkmark.png)|![Check mark.](../../media/checkmark.png)|
+|**Allow recipients to release a message from quarantine** (_PermissionToRelease_)|||![Check mark.](../../media/checkmark.png)|
 |**Allow recipients to request a message to be released from quarantine** (_PermissionToRequestRelease_)||![Check mark](../../media/checkmark.png)||
 |
 
@@ -78,7 +78,7 @@ You create and assign quarantine policies in the Microsoft 365 Defender portal o
 
 1. In the Microsoft 365 Defender portal, go to **Email & collaboration** \> **Threat policies** \> **Rules** section \> **Quarantine policies** and then select **Quarantine policies**.
 
-2. On the **Quarantine policy** page, click ![Add custom policy icon](../../media/m365-cc-sc-create-icon.png) **Add custom policy**.
+2. On the **Quarantine policy** page, click ![Add custom policy icon.](../../media/m365-cc-sc-create-icon.png) **Add custom policy**.
 
 3. The **New policy** wizard opens. On the **Policy name** page, enter a brief but unique name in the **Policy name** box. You'll need to identify and select the quarantine policy by name in upcoming steps. When you're finished, click **Next**.
 
@@ -249,7 +249,7 @@ If you're happy with the default end-user permissions that are provided by the d
 
    **Note**: When you create a new policy, a blank **Select quarantine policy** value indicates the default quarantine policy for that verdict is used. When you later edit the policy, the blank values are replaced by the actual default quarantine policy names as described in the previous table.
 
-   ![Quarantine policy selections in an anti-spam policy](../../media/quarantine-tags-in-anti-spam-policies.png)
+   ![Quarantine policy selections in an anti-spam policy.](../../media/quarantine-tags-in-anti-spam-policies.png)
 
 Full instructions for creating and modifying anti-spam policies are described in [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md).
 
@@ -329,7 +329,7 @@ Spoof intelligence is available in EOP and Defender for Office 365. User imperso
 
    **Note**: When you create a new policy, a blank **Apply quarantine policy** value indicates the default quarantine policy for that action is used. When you later edit the policy, the blank values are replaced by the actual default quarantine policy names as described in the previous table.
 
-   ![Quarantine policy selections in an anti-spam policy](../../media/quarantine-tags-in-anti-phishing-policies.png)
+   ![Quarantine policy selections in an anti-spam policy.](../../media/quarantine-tags-in-anti-phishing-policies.png)
 
 Full instructions for creating and modifying anti-phishing polices are available in the following topics:
 
@@ -515,7 +515,7 @@ The global settings for quarantine policies allow you to customize the end-user 
 
      The following screenshot shows the customized display name in an end-user spam notification:
 
-     ![A customized sender display name in an end-user spam notification](../../media/quarantine-tags-esn-customization-display-name.png)
+     ![A customized sender display name in an end-user spam notification.](../../media/quarantine-tags-esn-customization-display-name.png)
 
    - **Disclaimer**: Add a custom disclaimer to the bottom of end-user spam notifications. The localized text, **A disclaimer from your organization:** is always included first, followed by the text you specify.
 
@@ -523,19 +523,19 @@ The global settings for quarantine policies allow you to customize the end-user 
 
      The following screenshot shows the customized disclaimer in an end-user spam notification:
 
-     ![A custom disclaimer at the bottom of an end-user spam notification](../../media/quarantine-tags-esn-customization-disclaimer.png)
+     ![A custom disclaimer at the bottom of an end-user spam notification.](../../media/quarantine-tags-esn-customization-disclaimer.png)
 
    - **Choose language**: End-user spam notifications are already localized based on the recipient's language settings. You can specify customized text in different languages for the **Display name** and **Disclaimer** values.
 
      Select at least one language from the first language box and then click **Add**. You can select multiple languages by clicking **Add** after each one. A section language box shows all of the languages that you've selected:
 
-     ![Selected languages in the second language box in the global quarantine notification settings of quarantine policies](../../media/quarantine-tags-esn-customization-selected-languages.png)
+     ![Selected languages in the second language box in the global quarantine notification settings of quarantine policies.](../../media/quarantine-tags-esn-customization-selected-languages.png)
 
    - **Use my company logo**: Select this option to replace the default Microsoft logo that's use at the top of end-user spam notifications. Before you do this, you need to follow the instructions in [Customize the Microsoft 365 theme for your organization](../../admin/setup/customize-your-organization-theme.md) to upload your custom logo.
 
      The following screenshot shows a custom logo in an end-user spam notification:
 
-     ![A custom logo in an end-user spam notification](../../media/quarantine-tags-esn-customization-logo.png)
+     ![A custom logo in an end-user spam notification.](../../media/quarantine-tags-esn-customization-logo.png)
 
    - **Send end-user spam notification every (days)**: Select the frequency at which you would like the end user notification to go out in.
 
@@ -579,7 +579,7 @@ For detailed syntax and parameter information, see [Get-HostedContentFilterPolic
 
 2. On the **Quarantine policies** page, select the policy by clicking on the name.
 
-3. After you select the policy, click the ![Edit policy icon](../../media/m365-cc-sc-edit-icon.png) **Edit policy** icon that appears.
+3. After you select the policy, click the ![Edit policy icon.](../../media/m365-cc-sc-edit-icon.png) **Edit policy** icon that appears.
 
 4. The **Edit policy** wizard that opens is virtually identical to the **New policy** wizard as described in the [Create quarantine policies in the Microsoft 365 Defender portal](#step-1-create-quarantine-policies-in-the-microsoft-365-defender-portal) section earlier in this article.
 
@@ -616,7 +616,7 @@ For detailed syntax and parameter information, see [Set-QuarantineTag](/powershe
 
 2. On the **Quarantine policy** page, select the custom quarantine policy that you want to remove by clicking on the name.
 
-3. After you select the policy, click the ![Delete policy icon](../../media/m365-cc-sc-delete-icon.png) **Delete policy** icon that appears.
+3. After you select the policy, click the ![Delete policy icon.](../../media/m365-cc-sc-delete-icon.png) **Delete policy** icon that appears.
 
 4. Click **Remove policy** in the confirmation dialog that appears.
 
@@ -656,14 +656,14 @@ If the quarantine policy assigns the **Limited access** permissions, users get t
   - **Remove from quarantine**
   - **Block sender**
 
-  ![Available buttons in the quarantined message details if the quarantine policy gives the user Limited access permissions](../../media/quarantine-tags-quarantined-message-details-limited-access.png)
+  ![Available buttons in the quarantined message details if the quarantine policy gives the user Limited access permissions.](../../media/quarantine-tags-quarantined-message-details-limited-access.png)
 
 - **End-user spam notifications**: The following buttons are available:
   - **Block sender**
   - **Request release**
   - **Review**
 
-  ![Available buttons in the end-user spam notification if the quarantine policy gives the user Limited access permissions](../../media/quarantine-tags-esn-limited-access.png)
+  ![Available buttons in the end-user spam notification if the quarantine policy gives the user Limited access permissions.](../../media/quarantine-tags-esn-limited-access.png)
 
 #### Full access
 
@@ -676,14 +676,14 @@ If the quarantine policy assigns the **Full access** permissions (all available 
   - **Remove from quarantine**
   - **Block sender**
 
-  ![Available buttons in the quarantined message details if the quarantine policy gives the user Full access permissions](../../media/quarantine-tags-quarantined-message-details-full-access.png)
+  ![Available buttons in the quarantined message details if the quarantine policy gives the user Full access permissions.](../../media/quarantine-tags-quarantined-message-details-full-access.png)
 
 - **End-user spam notifications**: The following buttons are available:
   - **Block sender**
   - **Release**
   - **Review**
 
-  ![Available buttons in the end-user spam notification if the quarantine policy gives the user Full access permissions](../../media/quarantine-tags-esn-full-access.png)
+  ![Available buttons in the end-user spam notification if the quarantine policy gives the user Full access permissions.](../../media/quarantine-tags-esn-full-access.png)
 
 ### Individual permissions
 

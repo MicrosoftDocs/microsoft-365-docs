@@ -27,17 +27,17 @@ In Microsoft 365 Defender, you can add recipients for email notifications of hea
 
 1. In [Microsoft 365 Defender](https://security.microsoft.com/), go to **Settings** and then **Identities**.
 
-    ![Go to Settings, then Identities](../../media/defender-identity/settings-identities.png)
+    ![Go to Settings, then Identities.](../../media/defender-identity/settings-identities.png)
 
 1. Select **Health issues notifications**.
 
 1. Enter the recipient's email address. Select **Add**.
 
-    ![Enter email address for health issues](../../media/defender-identity/health-email-recipient.png)
+    ![Enter email address for health issues.](../../media/defender-identity/health-email-recipient.png)
 
 1. When Defender for Identity detects a health issue, the recipients will receive an email notification with the details.
 
-    ![Example of health issue email](../../media/defender-identity/health-email.png)
+    ![Example of health issue email.](../../media/defender-identity/health-email.png)
 
     > [!NOTE]
     > The email provides two links for further details about the issue. You can either go to the **MDI Health Center** or the new **Health Center in M365D**.
@@ -48,13 +48,13 @@ In Microsoft 365 Defender, you can add recipients for email notifications of det
 
 1. In [Microsoft 365 Defender](https://security.microsoft.com/), go to **Settings** and then **Identities**.
 
-    ![Go to Settings, then Identities](../../media/defender-identity/settings-identities.png)
+    ![Go to Settings, then Identities.](../../media/defender-identity/settings-identities.png)
 
 1. Select **Alert notifications**.
 
 1. Enter the recipient's email address. Select **Add**.
 
-    ![Enter email address for detected alerts](../../media/defender-identity/alert-email-recipient.png)
+    ![Enter email address for detected alerts.](../../media/defender-identity/alert-email-recipient.png)
 
 ## Syslog notifications
 
@@ -62,17 +62,17 @@ Defender for Identity can notify you when it detects suspicious activities by se
 
 1. In [Microsoft 365 Defender](https://security.microsoft.com/), go to **Settings** and then **Identities**.
 
-    ![Go to Settings, then Identities](../../media/defender-identity/settings-identities.png)
+    ![Go to Settings, then Identities.](../../media/defender-identity/settings-identities.png)
 
 1. Select **Syslog notifications**.
 
 1. To enable syslog notification, set the **Syslog service** toggle to the **on** position.
 
-    ![Turn on syslog service](../../media/defender-identity/syslog-service.png)
+    ![Turn on syslog service.](../../media/defender-identity/syslog-service.png)
 
 1. Select **Configure service**. A pane will open where you can enter the details for the syslog service.
 
-    ![Enter syslog service details](../../media/defender-identity/syslog-sensor.png)
+    ![Enter syslog service details.](../../media/defender-identity/syslog-sensor.png)
 
 1. Enter the following details:
 
@@ -87,7 +87,7 @@ Defender for Identity can notify you when it detects suspicious activities by se
 
 1. Once you've configured the **Syslog service**, you can choose which types of notifications (alerts or health issues) to send to your Syslog server.
 
-    ![Syslog service configured](../../media/defender-identity/syslog-configured.png)
+    ![Syslog service configured.](../../media/defender-identity/syslog-configured.png)
 
 ## See also
 

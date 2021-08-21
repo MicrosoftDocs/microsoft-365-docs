@@ -34,7 +34,7 @@ Use the following example to understand the report.
  Example output from the analyzer on a machine onboarded to expired Org ID and
 failing to reach one of the required Microsoft Defender for Endpoint URLs:
 
-![Image of client analyzer result](images/147cbcf0f7b6f0ff65d200bf3e4674cb.png)
+![Image of client analyzer result.](images/147cbcf0f7b6f0ff65d200bf3e4674cb.png)
 
 -   On the top the script version and script runtime are listed for reference
 
@@ -44,7 +44,7 @@ failing to reach one of the required Microsoft Defender for Endpoint URLs:
 -   The **Endpoint Security Details** provides general information about Microsoft Defender for Endpoint-related processes including Microsoft Defender Antivirus and the sensor
     process. If important processes are not online as expected,  the color will change to red.
 
-![Image of client analyzer detailed result](images/85f56004dc6bd1679c3d2c063e36cb80.png)
+![Image of client analyzer detailed result.](images/85f56004dc6bd1679c3d2c063e36cb80.png)
 
 -   On **Check Results Summary** you will have an aggregated count for error,
     warning, or informational events detected by the analyzer.
@@ -59,7 +59,7 @@ ticket](contact-support.md#open-a-service-request),
 make sure you use the **Attachments** section and include the
 `MDEClientAnalyzerResult.zip` file:
 
-![Image of attachment prompt](images/508c189656c3deb3b239daf811e33741.png)
+![Image of attachment prompt.](images/508c189656c3deb3b239daf811e33741.png)
 
 > [!NOTE]
 > If the file size is larger than 25 MB, the support engineer assigned to your

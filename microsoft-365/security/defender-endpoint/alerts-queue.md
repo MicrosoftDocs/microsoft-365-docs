@@ -43,7 +43,7 @@ On the top navigation you can:
 - Navigate between pages
 - Apply filters
 
-![Image of alerts queue](images/alerts-queue-list.png)
+![Image of alerts queue.](images/alerts-queue-list.png)
 
 ## Sort, filter, and group the alerts queue
 

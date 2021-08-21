@@ -74,7 +74,7 @@ Messages that are identified by the advanced delivery policy aren't security thr
 1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Advanced delivery** in the **Rules** section.
 
 2. On the **Advanced delivery** page, verify that the **SecOps mailbox** tab is selected, and then do one of the following steps:
-   - Click ![Edit icon](../../media/m365-cc-sc-edit-icon.png) **Edit**.
+   - Click ![Edit icon.](../../media/m365-cc-sc-edit-icon.png) **Edit**.
    - If there are no configured phishing simulations, click **Add**.
 
 3. On the **Edit SecOps mailboxes** flyout that opens, enter an existing Exchange Online mailbox that you want to designate as SecOps mailbox by doing one of the following steps:
@@ -83,18 +83,18 @@ Messages that are identified by the advanced delivery policy aren't security thr
 
      Repeat this step as many times as necessary. Distribution groups are not allowed.
 
-     To remove an existing value, click remove ![Remove icon](../../media/m365-cc-sc-remove-selection-icon.png) next to the value.
+     To remove an existing value, click remove ![Remove icon.](../../media/m365-cc-sc-remove-selection-icon.png) next to the value.
 
 4. When you're finished, click **Save**.
 
-The SecOps mailbox entries that you configured are displayed on the **SecOps mailbox** tab. To make changes, click ![Edit icon](../../media/m365-cc-sc-edit-icon.png) **Edit** on the tab.
+The SecOps mailbox entries that you configured are displayed on the **SecOps mailbox** tab. To make changes, click ![Edit icon.](../../media/m365-cc-sc-edit-icon.png) **Edit** on the tab.
 
 ## Use the Microsoft 365 Defender portal to configure third-party phishing simulations in the advanced delivery policy
 
 1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Advanced delivery** in the **Rules** section.
 
 2. On the **Advanced delivery** page, select the **Phishing simulation** tab, and then do one of the following steps:
-   - Click ![Edit icon](../../media/m365-cc-sc-edit-icon.png) **Edit**.
+   - Click ![Edit icon.](../../media/m365-cc-sc-edit-icon.png) **Edit**.
    - If there are no configured phishing simulations, click **Add**.
 
 3. On the **Edit third-party phishing simulation** flyout that opens, configure the following settings:
@@ -110,7 +110,7 @@ The SecOps mailbox entries that you configured are displayed on the **SecOps mai
      - CIDR IP: For example, 192.168.0.1/25.
    - **Simulation URLs to allow**: Expand this setting and optionally enter specific URLs that are part of your phishing simulation campaign that should not be blocked or detonated by clicking in the box, entering a value, and then pressing Enter or selecting the value that's displayed below the box. You can add up to 10 entries. For the URL syntax format, see [URL syntax for the Tenant Allow/Block List](/microsoft-365/security/office-365-security/tenant-allow-block-list#url-syntax-for-the-tenant-allowblock-list).
 
-   To remove an existing value, click remove ![Remove icon](../../media/m365-cc-sc-remove-selection-icon.png) next to the value.
+   To remove an existing value, click remove ![Remove icon.](../../media/m365-cc-sc-remove-selection-icon.png) next to the value.
 
    > [!NOTE]
    > You must specify at least one **Sending domain** and at least one **Sending IP** to configure a third-party phishing simulation in Advanced Delivery. You may optionally include **Simulation URLs to allow** to ensure URLs present in simulation messages are not blocked. You may specify up to 10 entries for each field. There must be a match on at least one **Sending domain** and one **Sending IP** but no association between values is maintained.
@@ -119,7 +119,7 @@ The SecOps mailbox entries that you configured are displayed on the **SecOps mai
    - **First time**: Click **Add**, and then click **Close**.
    - **Edit existing**: Click **Save** and then click **Close**.
 
-The third-party phishing simulation entries that you configured are displayed on the **Phishing simulation** tab. To make changes, click ![Edit icon](../../media/m365-cc-sc-edit-icon.png) **Edit** on the tab.
+The third-party phishing simulation entries that you configured are displayed on the **Phishing simulation** tab. To make changes, click ![Edit icon.](../../media/m365-cc-sc-edit-icon.png) **Edit** on the tab.
 
 ## Additional scenarios that require filtering bypass
 

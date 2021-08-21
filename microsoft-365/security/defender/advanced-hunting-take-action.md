@@ -70,7 +70,7 @@ To learn more about how quarantine actions are taken and how files can be restor
 ## Take action
 To take any of the described actions, select one or more records in your query results and then select **Take actions**. A wizard will guide you through the process of selecting and then submitting your preferred actions.
 
-![Image of selected record with panel for inspecting the record](../../media/mtp-ah/ah-take-actions.png)
+![Image of selected record with panel for inspecting the record.](../../media/mtp-ah/ah-take-actions.png)
 
 ## Review actions taken
 Each action is individually recorded in the [action center](m365d-action-center.md) under **Action center** > **History** ([security.microsoft.com/action-center/history](https://security.microsoft.com/action-center/history)). Go to the action center to check the status of each action.

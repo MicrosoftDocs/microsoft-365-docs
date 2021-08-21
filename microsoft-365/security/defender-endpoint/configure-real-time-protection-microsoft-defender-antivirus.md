@@ -40,7 +40,7 @@ To enable and configure always-on protection:
     
     2. Under **Best match**, select **Edit group policy** to launch **Local Group Policy Editor**.
     
-       ![GPEdit taskbar search result](images/gpedit-search.png)
+       ![GPEdit taskbar search result.](images/gpedit-search.png)
 
 2. In the left pane of **Local Group Policy Editor**, expand the tree to **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Microsoft Defender Antivirus**. 
 
@@ -71,7 +71,7 @@ To enable and configure always-on protection:
 
     1. From the **Microsoft Defender Antivirus** tree on left pane, select **Scan**.
     
-       ![Microsoft Defender Antivirus Scan options](images/gpedit-windows-defender-antivirus-scan.png)
+       ![Microsoft Defender Antivirus Scan options.](images/gpedit-windows-defender-antivirus-scan.png)
 
     2. In the **Scan** details pane on right, double-click the policy setting as specified in the following table:
 
@@ -119,11 +119,11 @@ The main real-time protection capability is enabled by default, but you can disa
 
 3. In the **Real-time Protection** details pane on right, double-click **Turn off real-time protection**.
 
-   ![Turn off real-time protection](images/gpedit-turn-off-real-time-protection.png)
+   ![Turn off real-time protection.](images/gpedit-turn-off-real-time-protection.png)
 
 4. In the **Turn off real-time protection** setting window, set the option to **Enabled**.
 
-   ![Turn off real-time protection enabled](images/gpedit-turn-off-real-time-protection-enabled.png)
+   ![Turn off real-time protection enabled.](images/gpedit-turn-off-real-time-protection-enabled.png)
    
 5. select **OK**.
 
