@@ -20,7 +20,7 @@ description: "Move your Outlook, OneDrive and Teams data to Microsoft 365 Busine
 
 Follow the steps in this article to move your OneDrive, Outlook and Teams data to your Microsoft 365 Business Standard subscription.
 
-## Move files to OneDrive for work
+## Move files to OneDrive for business
 
 This section describes how to move the files stored in your Microsoft 365 personal account to your Microsoft 365 business account. With both OneDrive accounts synced to your device, you can easily drag and drop the files between two OneDrive folders.
 

@@ -85,7 +85,7 @@ Any users you add get automatically assigned a Microsoft 365 Business Standard l
 
 ## Connect your domain
   
-To set up services, you have to update some records at your DNS host or domain registrar.
+To set up services, you have to update records at your DNS host or domain registrar.
   
 1. The setup wizard typically detects your registrar and gives you a link to step-by-step instructions for updating your NS records at the registrar website. If it doesn't, [Change nameservers to set up Office 365 with any domain registrar](../get-help-with-domains/change-nameservers-at-any-domain-registrar.md). 
 
@@ -115,7 +115,7 @@ Follow the steps below to set up Outlook, Teams, OneDrive and your website.
 ### Step: Set up Outlook for email
 
 1. On the Windows Start menu, search for Outlook, and select it.
- 
+
     (If you're using a Mac, open Outlook from the toolbar or locate it using the Finder.)
 
     If you've just installed Outlook, on the Welcome page, select **Next**.

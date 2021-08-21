@@ -31,7 +31,7 @@ When someone adds you to a Microsoft 365 for business organization, you'll get a
 
 Your email looks like this to set up your **business user account**. When you get this email, you'll have to complete a few steps before you can start using your new user account.
 
-(**Add screenshot here**)
+(**Add updated screenshot here**)
 
 Make sure you have your current account sign in details before you start these steps.
 
@@ -61,7 +61,7 @@ Follow the steps in the [Migrate data to my Microsoft 365 Business Standard subs
 
 Your email looks like this to set up your user account. When you get this email, you'll have to complete a few steps before you can start using your new user account.
 
-(**Add screenshot here**)
+(**Add updated screenshot here**)
 
 1. From the invitation email, select **Accept**.
 

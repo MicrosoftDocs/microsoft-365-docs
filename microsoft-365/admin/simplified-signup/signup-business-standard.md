@@ -45,7 +45,7 @@ To sign up and purchase Microsoft 365 Business Standard (or Microsoft 365 Apps) 
 
 - You'll receive a text. Enter your code and select **Verify**.
 
-7. Decide how you'll sign in to Microsoft 365. You can [create a new business email (recommended)](#create-a-new-business-email-account-advanced) by adding a domain or use your [current email address](#Sign-in-with-your-current-personal-email).
+7. Decide how you'll sign in to Microsoft 365. You can [create a new business email account (recommended)](#create-a-new-business-email-account-recommended) by adding a domain or use your [Sign in with your current personal email](#sign-in-with-your-current-personal-email).
 
 > [!IMPORTANT]
 > You can decide to add your domain now or later. If you're ready to buy or add a domain, follow the steps in [Set up Microsoft 365 Business Standard](../setup/setup-business-standard.md). If you're not ready to add or buy a domain yet, follow the steps in [Sign in wity your current personal email](#sign-in-with-your-current-personal-email).

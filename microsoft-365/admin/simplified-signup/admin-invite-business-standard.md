@@ -35,7 +35,7 @@ As the admin of a Microsoft 365 Business Standard subscription, you can invite y
 
 ## Next steps
 
-Follow up with your users and make sure they got the invite you sent about sharing your Microsoft 365 Business Standard subscription.
+Follow up with your users and make sure they got the email invite you sent about sharing your Microsoft 365 Business Standard subscription.
 
 ## Related content
 
