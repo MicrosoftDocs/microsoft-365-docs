@@ -150,8 +150,6 @@
           href: data-classification-activity-explorer.md
         - name: Labeling actions reported in Activity explorer
           href: data-classification-activity-explorer-available-events.md
-        - name: Data classification release notes
-          href: data-classification-pub-preview-relnotes.md
     - name: Sensitivity labels
       items:
         - name: Learn about sensitivity labels
