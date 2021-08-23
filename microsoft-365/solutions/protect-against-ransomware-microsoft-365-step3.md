@@ -51,6 +51,12 @@ Disable the local storage of passwords and credentials.
 
 TBD
 
+## Resulting configuration
+
+Here is the ransomware protection for your tenant after this step.
+
+![Ransomware protection for your Microsoft 365 tenant after Step 3](../media/protect-against-ransomware-microsoft-365/protect-against-ransomware-microsoft-365-architecture-step3.png)
+
 ## Next step
 
 [![Step 4 for ransomware protection with Microsoft 365](../media/protect-against-ransomware-microsoft-365/protect-against-ransomware-microsoft-365-step4.png)](protect-against-ransomware-microsoft-365-step4.md)

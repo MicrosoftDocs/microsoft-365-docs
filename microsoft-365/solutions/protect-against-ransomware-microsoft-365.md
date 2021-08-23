@@ -52,7 +52,7 @@ The steps in this solution are:
 
 Here are the steps of the solution deployed for your Microsoft 365 tenant.
 
-![Ransomware protection for a Microsoft 365 teanant](../media/protect-against-ransomware-microsoft-365/protect-against-ransomware-microsoft-365-architecture.png)
+![Ransomware protection for a Microsoft 365 tenant](../media/protect-against-ransomware-microsoft-365/protect-against-ransomware-microsoft-365-architecture.png)
 
 
 ## Microsoft 365 capabilities and features
@@ -70,7 +70,7 @@ To protect your Microsoft 365 tenant from a ransomware attack, use these Microso
 
 ### Detection and response
 
-| Capability or feature | Description | Helps prevent... | Licensing |
+| Capability or feature | Description | Helps detect and respond to... | Licensing |
 |:-------|:-----|:-------|:-------|
 |  |  |  |  |
 |  |  |  |  |
@@ -90,7 +90,6 @@ To protect your Microsoft 365 tenant from a ransomware attack, use these Microso
 |:-------|:-----|:-------|:-------|
 |Microsoft Intune|Manage devices and applications.|Device or app compromise and access|Microsoft 365 E3 or E5|
 
-
 ### Information
 
 | Capability or feature | Description | Helps prevent... | Licensing |
@@ -100,13 +99,11 @@ To protect your Microsoft 365 tenant from a ransomware attack, use these Microso
 |  |  |  |  |
 |  |  |  |  |
 
-
 ## Impact on users and change management
 
 Deploying additional security features and policies to your Microsoft 365 tenant can impact your users. For example, you may impose a new security policy that requires users to create new teams for specific uses with a list of user accounts as members, instead of more easily creating a team for all users in the organization. This can help prevent a ransomware attacker from exploring teams that are not available from the attacker's compromised user account and targeting them in the attack.
 
 This solution will identify when a new configuration or recommended security policy can impact your users so you can implement the required change management.
-
 
 ## Next steps
 

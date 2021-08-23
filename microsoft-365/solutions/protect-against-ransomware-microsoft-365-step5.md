@@ -65,3 +65,10 @@ General guidelines:
 ## Impact on users and change management
 
 TBD
+
+## Resulting configuration
+
+Here is the ransomware protection for your tenant after this final step.
+
+![Ransomware protection for your Microsoft 365 tenant after Step 5](../media/protect-against-ransomware-microsoft-365/protect-against-ransomware-microsoft-365-architecture-step5.png)
+

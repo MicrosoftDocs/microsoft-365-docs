@@ -58,6 +58,12 @@ To help protect against an attacker executing code as part of an attack:
 
 TBD
 
+## Resulting configuration
+
+Here is the ransomware protection for your tenant after this step.
+
+![Ransomware protection for your Microsoft 365 tenant after Step 4](../media/protect-against-ransomware-microsoft-365/protect-against-ransomware-microsoft-365-architecture-step4.png)
+
 ## Next step
 
 [![Step 5 for ransomware protection with Microsoft 365](../media/protect-against-ransomware-microsoft-365/protect-against-ransomware-microsoft-365-step5.png)](protect-against-ransomware-microsoft-365-step5.md)

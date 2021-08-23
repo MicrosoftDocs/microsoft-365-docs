@@ -42,6 +42,12 @@ Look for:
 
 TBD
 
+## Resulting configuration
+
+Here is the ransomware protection for your tenant after this step.
+
+![Ransomware protection for your Microsoft 365 tenant after Step 2](../media/protect-against-ransomware-microsoft-365/protect-against-ransomware-microsoft-365-architecture-step2.png)
+
 ## Next step
 
 [![Step 3 for ransomware protection with Microsoft 365](../media/protect-against-ransomware-microsoft-365/protect-against-ransomware-microsoft-365-step3.png)](protect-against-ransomware-microsoft-365-step3.md)
