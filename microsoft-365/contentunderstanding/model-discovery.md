@@ -46,7 +46,7 @@ To find trained models that might be suitable for your content:
 
 1. In the document library for your model, select **Automate** > **View document understanding models**.
 
-2. On the **Review models and apply new ones** page, you can review the applied models and the models that are availale to be applied to you document library.
+2. On the **Review models and apply new ones** page, you can review the applied models and the models that are available to be applied to your document library.
 
     ![Screenshot of the Review models and apply new ones page showing the Applied and Available tabs.](../media/content-understanding/review-models-apply-new-ones.png)
 
@@ -59,7 +59,7 @@ To find trained models that might be suitable for your content:
 
 You can evaluate trained models against your content to help you find the most appropriate one. To select a model that you want to apply to your library:
 
-1. On the **Available** tab, review the models in the list.
+1. On the **Review models and apply new ones** page, select the **Available** tab to review the models in the list.
 
     ![Screenshot of the Review models and apply new ones page showing the models on the Available tab.](../media/content-understanding/available-models-to-apply.png)
 
@@ -67,7 +67,7 @@ You can evaluate trained models against your content to help you find the most a
 
 ### Get a recommendation for a trained model
 
-If you are unsure which model is the best fit for your files, you can ask for a recommendation. Your recommendation will include up to 10 models.
+If you are unsure which model is the best fit for your files, you can ask for a recommendation. Your recommendation could include up to 10 models.
 
 1. On the **Review models and apply new ones** page, select the **Available** tab.
 
@@ -87,7 +87,7 @@ If you are unsure which model is the best fit for your files, you can ask for a 
 
     ![Screenshot of the Review results and select a model page showing the recommended models.](../media/content-understanding/review-results.png)
 
-6. On the model you think will get you the best results, select **View model details**, and then select **Apply to library**.
+6. For the model you think will get you the best results, select **View model details**, and then select **Apply to library**.
 
 7. If there are no recommended models based on the selected file, you can go back and select another file or select different models.
 
