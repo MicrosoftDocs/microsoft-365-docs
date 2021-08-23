@@ -21,13 +21,11 @@ description: Step through protecting your Microsoft 365 resources from ransomwar
 
 # Step 1. Configure security baselines
 
-Apply [security baselines](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/bg-p/Microsoft-Security-Baselines) to harden internet-facing servers, clients, and Office applications.
-
 ## Microsoft 365 security baseline
 
-Assess and measure security posture using [Microsoft Secure Score](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-secure-score).
+First, assess and measure your security posture using [Microsoft Secure Score](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-secure-score) and follow instructions to improve it as needed.
 
-Use [attack surface reduction rules](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/attack-surface-reduction) to help block suspicious activity and vulnerable content:
+Next, use [attack surface reduction rules](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/attack-surface-reduction) to help block suspicious activity and vulnerable content:
 
 - Block all Office applications from creating child processes
 - Block executable content from email client and webmail
@@ -42,15 +40,26 @@ Use [attack surface reduction rules](https://docs.microsoft.com/microsoft-365/se
 - Block credential stealing from the Windows local security authority subsystem (lsass.exe)
 - Block process creations originating from PSExec and WMI commands
 
+These rules are well-known by attackers and are commonly used as initial attack vectors when they are not in place.
+
 ## Exchange email management baseline 
 
-To help prevent initial access to your tenant from an email-based attack:
+Help prevent initial access to your tenant from an email-based attack with these Exchange email baseline settings:
 
 - Enable Microsoft Defender Antivirus email scanning.
 - Use Microsoft Defender for Office 365 for [enhanced phishing protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-phishing-protection) and coverage against new threats and polymorphic variants.
 - Check your Office 365 email filtering settings to ensure you block spoofed emails, spam, and emails with malware. Use Microsoft Defender for Office 365 for enhanced phishing protection and coverage against new threats and polymorphic variants. Configure Microsoft Defender for Office 365 to [recheck links on click](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links) and [delete delivered mails](https://docs.microsoft.com/microsoft-365/security/office-365-security/zero-hour-auto-purge) in response to newly acquired threat intelligence.
 - Review and update to the latest [recommended settings for EOP and Microsoft Defender for Office 365 security](https://docs.microsoft.com/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365-atp).
 - Configure Microsoft Defender for Office 365 to [recheck links on click](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-safe-links-policies) and delete delivered mails in response to newly acquired threat intelligence.
+
+## Additional baselines
+
+Apply [security baselines](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/bg-p/Microsoft-Security-Baselines) for:
+
+- Windows 10
+- Microsoft 365 Apps for Enterprise
+- Microsoft Edge
+- Windows Server
 
 ## Impact on users and change management
 
