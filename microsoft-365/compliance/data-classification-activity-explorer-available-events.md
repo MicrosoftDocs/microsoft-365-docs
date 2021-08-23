@@ -34,7 +34,7 @@ This event is generated each time an unlabeled document is labeled or an email i
 |Source  |Reported in activity explorer | Note  |
 |---------|---------|---------|
 | Word, Excel, PowerPoint|yes |
-|Outlook| yes |from Win 32 |
+|Outlook| yes | |
 |SharePoint online, OneDrive|yes | |
 |Exchange        |yes         | |
 |Azure Information Protection (AIP) unified client and AIP unified scanner |yes |the AIP *new label* action is mapped to *label applied* in activity explorer   |
@@ -58,7 +58,7 @@ This event is generated each time a sensitivity label is updated on the document
 |Source  |Reported in activity explorer|Note  |
 |---------|---------|---------| 
 |Word, Excel, PowerPoint         |yes         |
-|Outlook         |yes         |Win 32|
+|Outlook         |yes         |
 |SharePoint Online, OneDrive         |yes         |
 |Exchange         |yes         |
 |AIP unified client         |yes         |
@@ -79,7 +79,7 @@ This event is generated each time a sensitivity label is removed from a file or 
 |Source  |Reported in activity explorer | Note  |
 |---------|---------|---------| 
 |Word, Excel, PowerPoint         |yes         |
-|Outlook         |yes         |Win 32|
+|Outlook         |yes         ||
 |SharePoint Online, OneDrive         |yes         |
 |Exchange         |yes         |
 |AIP unified client         |yes         |the AIP *remove label* action is mapped to the *label removed* action in activity explorer|
@@ -281,6 +281,6 @@ This event is generated each time a label is removed from a file or document.
   
 - When the recommended label tool tip is shown to an end user, it is not captured. But if the user chooses to apply the recommended label, the label will be shown under the *How applied* field as *Recommended*  
 
-- Justification text is not currently available on sensitivity label downgrade from Sharepoint and OneDrive.  
+- Justification text is not currently available on sensitivity label downgrade from SharePoint and OneDrive.  
 
 - Sensitive information types are currently not available for autolabeling activities from Word, Excel, PowerPoint, and Outlook, as well as SharePoint Online, and OneDrive.

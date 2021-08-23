@@ -63,7 +63,7 @@ Microsoft Managed Desktop uses these settings for the Enrollment Status Page exp
 |Allow users to reset device if installation error occurs|Yes|
 |Allow users to use device if installation error occurs|Yes|
 |Block device use until these required apps are installed if they are assigned to the user/device|Modern Workplace - Time Correction|Modern Workplace - Client Library|
-|
+
 
 The Enrollment Status Page experience occurs in three phases. For more, see [Enrollment Status Page tracking information](/mem/intune/enrollment/windows-enrollment-status#enrollment-status-page-tracking-information).
 
@@ -127,3 +127,17 @@ You might want to request a different device name template. You cannot, however,
 - Keep the total size of all applications collectively under 1 GB to avoid timeouts during the application installation phase.
 - Ideally, apps should not have any dependencies. If you have apps that *must* have dependencies, be sure you configure, test, and validate them as part of your ESP evaluation.
 - Microsoft Teams cannot be included in ESP.
+
+## Steps to get started with Microsoft Managed Desktop
+
+1. Access [admin portal](access-admin-portal.md).
+1. [Add and verify admin contacts in the Admin portal](add-admin-contacts.md).
+1. [Adjust settings after enrollment](conditional-access.md).
+1. Deploy and assign [Intune Company Portal](company-portal.md).
+1. [Assign licenses](assign-licenses.md).
+1. [Deploy apps](deploy-apps.md).
+1. [Set up devices](set-up-devices.md).
+1. Set up first-run experience with Autopilot and the Enrollment Status Page (this article).
+1. [Enable user support features](enable-support.md).
+1. [Get your users ready to use devices](get-started-devices.md).
+1. [Get started with app control](get-started-app-control.md).
