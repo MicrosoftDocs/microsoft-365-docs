@@ -25,9 +25,9 @@ As a first step to thwart ransomware attackers, you must configure the following
 
 - Microsoft 365 security
 - Exchange email management
-- Additional for Windows devices and client software
+- Additional baselines for Windows devices and client software
 
-These baselines contain configuration setting and rules that are well-known by attackers. Thier absence are quickly noticed and commonly exploited in cyberattacks.
+These baselines contain configuration settings and rules that are well-known by attackers. Thier absence are quickly noticed and commonly exploited in cyberattacks.
 
 ## Microsoft 365 security baseline
 

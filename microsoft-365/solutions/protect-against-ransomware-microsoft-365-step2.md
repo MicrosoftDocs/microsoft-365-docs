@@ -21,7 +21,7 @@ description: Step through protecting your Microsoft 365 resources from ransomwar
 
 # Step 2. Deploy attack detection and response
 
-Enable, configure, and use:
+Enable, configure, and use these tools for ransomware attack detection and response:
 
 | Feature | Description | Where to start | How to use it for detection and response |
 |:-------|:-----|:-------|:-------|
@@ -32,7 +32,7 @@ Enable, configure, and use:
 | [Azure AD Identity Protection](/azure/active-directory/identity-protection/) | A tool that allows organizations to automate the detection and remediation of identity-based risks and investigate those risks. | [Overview](/azure/active-directory/identity-protection/overview-identity-protection) | [Investigate risk](/azure/active-directory/identity-protection/howto-identity-protection-investigate-risk) |
 | [Microsoft Cloud App Security](/cloud-app-security) | A cloud access security broker for discovery, investigation, and governance. You can enable Microsoft Cloud App Security early to begin collecting data and insights. Implementing information and other targeted protection across your SaaS apps involves planning and can take more time. | [Overview](/cloud-app-security/what-is-cloud-app-security) | [Investigate](/cloud-app-security/investigate) |
 
-Use these tools to detect and respond to the follow common threats from ransomware attackers:
+Use these tools to detect and respond to the following common threats from ransomware attackers:
 
 - Credential theft
 
@@ -65,7 +65,7 @@ The following tools use Microsoft 365 Defender and its portal (https://security.
 - Microsoft Defender for Endpoint
 - Microsoft Cloud App Security
 
-Microsoft 365 Defender combines threat signals into alerts and connected alerts into an incident.
+Microsoft 365 Defender combines threat signals into alerts and connected alerts into an incident so that your security analysts can more quickly investigate and remediate the phases of a ransomware attack.
 
 ## Resulting configuration
 
