@@ -25,29 +25,29 @@ You can use Exchange Online monitoring in the Microsoft 365 admin center to moni
 - **Third-party infrastructure**: Issue is detected in third-party infrastructure on which your organization has taken a dependency and requires action from your organization for resolution. For example, user authentication transactions are getting throttled by a third-party security token service (STS) provider that prevents users from connecting to Exchange Online.
 - **Customer infrastructure**: Issue is detected in your organization's infrastructure and requires action from your organization for resolution. For example, users cannot access Exchange Online because they are unable to obtain an authentication token from STS provider hosted by your organization because of an expired certificate.
 
-Here is an example of the **Service health** page in the Microsoft 365 admin center, available from **Health > Service health** for organization and [priority account](../admin/setup/priority-accounts.md) scenarios.
+Here is an example of the **Service health** page in the Microsoft 365 admin center, available from **Health > Service health** for organization scenarios.
 
-**Issues in your organization** will be identified and used by both organizational level and priority account monitoring.
+**Issues in your organization** will be identified and used by both organizational-level monitoring.
 
 :::image type="content" source="../media/microsoft-365-exchange-monitoring/service-health-dashboard-example.png" alt-text="The Service health page in the Microsoft 365 admin center":::
 
-The value of the **Health** column under **Issues in your organization** indicates whether organization's infrastructure or third-party software affects your organization's users' and/or priority accounts' service health experience with Exchange Online. Advisories or incidents require *your* actions to resolve.
+The value of the **Health** column under **Issues in your organization** indicates whether organization's infrastructure or third-party software affects your organization's users' service health experience with Exchange Online. Advisories or incidents require *your* actions to resolve.
 
 The value of the **Health** column under **Microsoft service health** indicates that the service is healthy or has advisories or incidents based on the cloud services that Microsoft maintains.
 
-Here is an example of the Exchange Online monitoring page in the Microsoft 365 admin center that shows the health of organization level and priority account scenarios, available from **Health > Service health > Exchange Online**.
+Here is an example of the Exchange Online monitoring page in the Microsoft 365 admin center that shows the health of organization-level scenarios, available from **Health > Service health > Exchange Online**.
 
 :::image type="content" source="../media/microsoft-365-exchange-monitoring/exchange-monitoring-example.png" alt-text="The Exchange Online monitoring page in the Microsoft 365 admin center":::
 
-With the **Exchange Online** monitoring page, you can see whether the Exchange Online service is healthy or not and whether there are any associated incidents or advisories. With Exchange Online monitoring, you can look at the service health for specific email scenarios and view near real-time signals to determine the impact by organization-level scenario. You can also see health of priority account scenarios.
+With the **Exchange Online** monitoring page, you can see whether the Exchange Online service is healthy or not and whether there are any associated incidents or advisories. With Exchange Online monitoring, you can look at the service health for specific email scenarios and view near real-time signals to determine the impact by organization-level scenario.
 
 ## Requirements
 
 This preview is enabled for customers who meet these requirements: 
 
-- Your organization needs to have a license count of at least 10,000 from one or a combination of these products: Office 365 E3, Microsoft 365 E3, Office 365 E5, Microsoft 365 E5.
+- Your organization needs to have a license count of at least 5,000 from one or a combination of these products: Office 365 E3, Microsoft 365 E3, Office 365 E5, Microsoft 365 E5.
 
-  For example, your organization can have 3,000 Office 365 E3 licenses and 8,500 Microsoft 365 E5, for a total of 11,500 licenses from the qualifying products.
+  For example, your organization can have 3,000 Office 365 E3 licenses and 2,500 Microsoft 365 E5, for a total of 5,500 licenses from the qualifying products.
 
 - Your organization needs to have at least 50 monthly active Exchange Online users.
 
@@ -99,11 +99,11 @@ First, make sure you've enabled the new admin center on the **Home** page of the
 
 Then make sure you meet both of the following requirements: 
 
-- Your organization needs to have a license count of at least 10,000, from one or a combination of these products: Office 365 E3, Microsoft 365 E3, Office 365 E5, Microsoft 365 E5. 
+- Your organization needs to have a license count of at least 5,000, from one or a combination of these products: Office 365 E3, Microsoft 365 E3, Office 365 E5, Microsoft 365 E5. 
 
 - Your organization needs to have at least 50 monthly active Exchange Online users.
 
-If the license count for your organization falls below 10,000 users and the monthly active users falls below 50 users, Exchange Online monitoring won't be enabled until these requirements are met.
+If the license count for your organization falls below 5,000 users and the monthly active users falls below 50 users, Exchange Online monitoring won't be enabled until these requirements are met.
 
 #### 2. The active user count in the dashboard for each client appears to be low. We have a lot of active licenses assigned to users. What does this mean?
 
@@ -135,11 +135,9 @@ The data is instrumented in the Exchange Online service. If there is a failure t
 
 #### 8. Are there any privacy concerns?
 
-Monitoring focuses on service metadata and user content is not monitored. Control is on the tenant admin to configure priority accounts.
+Monitoring focuses on service metadata and user content is not monitored.
 
 ## See also
 
 - [How to check Microsoft 365 service health](view-service-health.md) 
 - [Exchange Online limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#mailbox-storage-limits)
-- [Manage and monitor priority accounts](/microsoft-365/admin/setup/priority-accounts)
-- [Using Priority Accounts in Microsoft 365](https://techcommunity.microsoft.com/t5/microsoft-365-blog/using-priority-accounts-in-microsoft-365/ba-p/1873314)
