@@ -268,9 +268,9 @@
 #### [Enable and configure Microsoft Defender Antivirus always-on protection in Group Policy](configure-real-time-protection-microsoft-defender-antivirus.md)
 #### [Configure remediation for Microsoft Defender Antivirus detections](configure-remediation-microsoft-defender-antivirus.md)
 #### [Configure Microsoft Defender Antivirus scans](schedule-antivirus-scans.md)
-##### [Schedule antivirus scans using Group Policy](schedule-antivirus-scans-group-policy.md)
-##### [Schedule antivirus scans using PowerShell](schedule-antivirus-scans-powershell.md)
-##### [Schedule antivirus scans using Windows Management Instrumentation (WMI)](schedule-antivirus-scans-wmi.md)
+##### [Schedule scans using Group Policy](schedule-antivirus-scans-group-policy.md)
+##### [Schedule scans using PowerShell](schedule-antivirus-scans-powershell.md)
+##### [Schedule scans using WMI](schedule-antivirus-scans-wmi.md)
 #### [Use limited periodic scanning in Microsoft Defender Antivirus](limited-periodic-scanning-microsoft-defender-antivirus.md)
 #### [Compatibility with other security products](microsoft-defender-antivirus-compatibility.md)
 
@@ -308,7 +308,7 @@
 ##### [Exclusions based on file extension and folder location](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 ##### [Exclusions for files opened by processes](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
 ##### [Exclusions for Windows Server](configure-server-exclusions-microsoft-defender-antivirus.md)
-##### [Common mistakes to avoid when defining exclusions](common-exclusion-mistakes-microsoft-defender-antivirus.md)
+##### [Common mistakes to avoid](common-exclusion-mistakes-microsoft-defender-antivirus.md)
 
 #### Troubleshooting Microsoft Defender Antivirus
 ##### [Troubleshoot Microsoft Defender Antivirus reporting in Update Compliance](troubleshoot-reporting.md)
@@ -347,11 +347,11 @@
 ##### [Customize controlled folder access](customize-controlled-folders.md)
 
 #### [Device Control]()
-##### [Device Control reports](device-control-report.md)
-##### [Control USB devices](control-usb-devices-using-intune.md)
+##### [Control USB devices and other removable media](control-usb-devices-using-intune.md)
 ##### [Removable Storage Protection](device-control-removable-storage-protection.md)
 ##### [Removable Storage Access Control](device-control-removable-storage-access-control.md)
 ##### [Device Control Printer Protection](printer-protection.md)
+##### [Device Control reports](device-control-report.md)
 
 #### [Behavioral blocking and containment]()
 ##### [Behavioral blocking and containment](behavioral-blocking-containment.md)
@@ -659,38 +659,38 @@
 
 ### [Helpful resources](helpful-resources.md)
 
-### [Troubleshoot Microsoft Defender for Endpoint]()
-#### [Troubleshoot sensor state]()
-##### [Check sensor state](check-sensor-status.md)
-##### [Fix unhealthy sensors](fix-unhealthy-sensors.md)
-##### [Inactive devices](fix-unhealthy-sensors.md#inactive-devices)
-##### [Misconfigured devices](fix-unhealthy-sensors.md#misconfigured-devices)
-##### [Review sensor events and errors on machines with Event Viewer](event-error-codes.md)
+## [Troubleshoot]()
+### [Troubleshoot sensor state]()
+#### [Check sensor state](check-sensor-status.md)
+#### [Fix unhealthy sensors](fix-unhealthy-sensors.md)
+#### [Inactive devices](fix-unhealthy-sensors.md#inactive-devices)
+#### [Misconfigured devices](fix-unhealthy-sensors.md#misconfigured-devices)
+#### [Review sensor events and errors on machines with Event Viewer](event-error-codes.md)
 
-#### [Troubleshoot sensor health issues using Client Analyzer]()
-##### [Client analyzer overview](overview-client-analyzer.md)
-##### [Download and run the client analyzer](download-client-analyzer.md)
-##### [Run the client analyzer on Windows](run-analyzer-windows.md)
-##### [Run the client analyzer on macOS or Linux](run-analyzer-macos-linux.md)
-##### [Data collection for advanced troubleshooting on Windows](data-collection-analyzer.md)
-##### [Understand the analyzer HTML report](analyzer-report.md)
-##### [Provide feedback on the client analyzer tool](analyzer-feedback.md)
+### [Troubleshoot sensor health issues using Client Analyzer]()
+#### [Client analyzer overview](overview-client-analyzer.md)
+#### [Download and run the client analyzer](download-client-analyzer.md)
+#### [Run the client analyzer on Windows](run-analyzer-windows.md)
+#### [Run the client analyzer on macOS or Linux](run-analyzer-macos-linux.md)
+#### [Data collection for advanced troubleshooting on Windows](data-collection-analyzer.md)
+#### [Understand the analyzer HTML report](analyzer-report.md)
+#### [Provide feedback on the client analyzer tool](analyzer-feedback.md)
 
-  
+ 
 
-#### [Troubleshoot Microsoft Defender for Endpoint service issues]()
-##### [Troubleshoot service issues](troubleshoot-mdatp.md)
-##### [Check service health](service-status.md)
-##### [Contact Microsoft Defender for Endpoint support](contact-support.md)
+### [Troubleshoot Microsoft Defender for Endpoint service issues]()
+#### [Troubleshoot service issues](troubleshoot-mdatp.md)
+#### [Check service health](service-status.md)
+#### [Contact Microsoft Defender for Endpoint support](contact-support.md)
 
-#### [Troubleshoot live response issues](troubleshoot-live-response.md)
+### [Troubleshoot live response issues](troubleshoot-live-response.md)
 
-#### [Collect support logs using LiveAnalyzer](troubleshoot-collect-support-log.md)
+### [Collect support logs using LiveAnalyzer](troubleshoot-collect-support-log.md)
 
-#### [Troubleshoot attack surface reduction issues]()
-##### [Network protection](troubleshoot-np.md)
-##### [Attack surface reduction rules](troubleshoot-asr.md)
-##### [Migrate to Attack surface reduction rules](migrating-asr-rules.md)
+### [Troubleshoot attack surface reduction issues]()
+#### [Network protection](troubleshoot-np.md)
+#### [Attack surface reduction rules](troubleshoot-asr.md)
+#### [Migrate to Attack surface reduction rules](migrating-asr-rules.md)
 
 # [Microsoft 365 Defender](../defender/index.yml)
 # [Defender for Office 365](../office-365-security/index.yml)
