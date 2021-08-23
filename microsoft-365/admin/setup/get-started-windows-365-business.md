@@ -35,7 +35,10 @@ This article is for people who plan to buy and set up Windows 365 Business for t
 
    ![Users may join devices to Azure AD settings](../../media/deschutes/azure-device-settings.png)
 ## Prerequisites
-There are no prerequisites to set up Windows 365 Business.
+There are no licensing prerequisites to set up Windows 365 Business.
+
+For the best onboarding experience, please refer to the [setup troubleshooting guide](troubleshoot-windows-365-business.md) to make sure your environment preferences are optimized for Windows 365 Business. 
+
 ## Buy subscriptions
 
 There are two different ways in which you can buy Windows 365 Business subscriptions for your users:
