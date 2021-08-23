@@ -11,7 +11,9 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection: 
 - M365-subscription-management 
-ms.custom: AdminSurgePortfolio
+ms.custom: 
+- AdminSurgePortfolio
+- admindeeplinkMAC
 search.appverid:
 - MET150
 description: "Provide your users with up-to-date news headlines about your industry and info from your organization, use the News service to enable a customized news feed for your organization."
