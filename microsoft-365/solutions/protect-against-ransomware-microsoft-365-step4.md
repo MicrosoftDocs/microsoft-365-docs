@@ -34,12 +34,11 @@ To help protect against the lateral movement part of an attack:
 - Turn on Microsoft Defender Firewall.
 - Update Microsoft Defender Antivirus definitions.
 
-
 To reduce the impact of the attack:
 
 - Use advanced protection against ransomware.
 
-To help protect against an attacker evading the security defences:
+To help protect against an attacker evading your security defences:
 
 - Keep cloud-delivered protection in Microsoft Defender Antivirus turned on.
 - Keep Microsoft Defender Antivirus real-time behavior monitoring turned on.

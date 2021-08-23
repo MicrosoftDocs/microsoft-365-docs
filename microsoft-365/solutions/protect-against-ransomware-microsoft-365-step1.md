@@ -21,11 +21,19 @@ description: Step through protecting your Microsoft 365 resources from ransomwar
 
 # Step 1. Configure security baselines
 
+As a first step to thwart ransomware attackers, you must configure the following Microsoft-defined security baselines:
+
+- Microsoft 365 security
+- Exchange email management
+- Additional for Windows devices and client software
+
+These baselines contain configuration setting and rules that are well-known by attackers. Thier absence are quickly noticed and commonly exploited in cyberattacks.
+
 ## Microsoft 365 security baseline
 
-First, assess and measure your security posture using [Microsoft Secure Score](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-secure-score) and follow instructions to improve it as needed.
+First, assess and measure your security posture using [Microsoft Secure Score](/microsoft-365/security/defender/microsoft-secure-score) and follow instructions to improve it as needed.
 
-Next, use [attack surface reduction rules](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/attack-surface-reduction) to help block suspicious activity and vulnerable content:
+Next, use [attack surface reduction rules](/microsoft-365/security/defender-endpoint/attack-surface-reduction) to help block suspicious activity and vulnerable content:
 
 - Block all Office applications from creating child processes
 - Block executable content from email client and webmail
@@ -40,17 +48,15 @@ Next, use [attack surface reduction rules](https://docs.microsoft.com/microsoft-
 - Block credential stealing from the Windows local security authority subsystem (lsass.exe)
 - Block process creations originating from PSExec and WMI commands
 
-These rules are well-known by attackers and are commonly used as initial attack vectors when they are not in place.
-
 ## Exchange email management baseline 
 
 Help prevent initial access to your tenant from an email-based attack with these Exchange email baseline settings:
 
 - Enable Microsoft Defender Antivirus email scanning.
-- Use Microsoft Defender for Office 365 for [enhanced phishing protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-phishing-protection) and coverage against new threats and polymorphic variants.
-- Check your Office 365 email filtering settings to ensure you block spoofed emails, spam, and emails with malware. Use Microsoft Defender for Office 365 for enhanced phishing protection and coverage against new threats and polymorphic variants. Configure Microsoft Defender for Office 365 to [recheck links on click](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links) and [delete delivered mails](https://docs.microsoft.com/microsoft-365/security/office-365-security/zero-hour-auto-purge) in response to newly acquired threat intelligence.
-- Review and update to the latest [recommended settings for EOP and Microsoft Defender for Office 365 security](https://docs.microsoft.com/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365-atp).
-- Configure Microsoft Defender for Office 365 to [recheck links on click](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-safe-links-policies) and delete delivered mails in response to newly acquired threat intelligence.
+- Use Microsoft Defender for Office 365 for [enhanced phishing protection](/microsoft-365/security/office-365-security/anti-phishing-protection) and coverage against new threats and polymorphic variants.
+- Check your Office 365 email filtering settings to ensure you block spoofed emails, spam, and emails with malware. Use Microsoft Defender for Office 365 for enhanced phishing protection and coverage against new threats and polymorphic variants. Configure Microsoft Defender for Office 365 to [recheck links on click](/microsoft-365/security/office-365-security/atp-safe-links) and [delete delivered mails](/microsoft-365/security/office-365-security/zero-hour-auto-purge) in response to newly acquired threat intelligence.
+- Review and update to the latest [recommended settings for EOP and Microsoft Defender for Office 365 security](/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365-atp).
+- Configure Microsoft Defender for Office 365 to [recheck links on click](/microsoft-365/security/office-365-security/set-up-safe-links-policies) and delete delivered mails in response to newly acquired threat intelligence.
 
 ## Additional baselines
 

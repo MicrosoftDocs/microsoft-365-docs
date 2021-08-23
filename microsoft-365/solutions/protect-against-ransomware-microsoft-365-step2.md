@@ -23,29 +23,49 @@ description: Step through protecting your Microsoft 365 resources from ransomwar
 
 Enable, configure, and use:
 
-| Feature | Description | How to get started | How to use it for detection and response |
+| Feature | Description | Where to start | How to use it for detection and response |
 |:-------|:-----|:-------|:-------|
-| [Microsoft 365 Defender](deploy-threat-protection-configure.md#step-3-turn-on-microsoft-365-defender) |Combines signals and orchestrates capabilities into a single solution. Enables security professionals to stitch together threat signals and determine the full scope and impact of a threat. Microsoft 365 Defender takes automatic actions to prevent or stop the attack and self-heal affected mailboxes, endpoints, and user identities. | [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender) |  |
-| [Microsoft Defender for Identity](deploy-threat-protection-configure.md#step-2-configure-microsoft-defender-for-identity) |  A cloud-based security solution that uses your on-premises Active Directory Domain Services (AD DS) signals to identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions directed at your organization. Focus on Microsoft Defender for Identity next because it protects your on-premises and cloud infrastructure, has no dependencies or prerequisites, and can provide immediate security benefits. | [What is Identity Protection?](/azure/active-directory/identity-protection/overview-identity-protection) |  |
-| [Microsoft Defender for Office 365](deploy-threat-protection-configure.md#step-4-configure-microsoft-defender-for-office-365) | Safeguards your organization against malicious threats posed by email messages, links (URLs), and collaboration tools. Protects against malware, phishing, spoofing, and other attack types. Configuring Microsoft Defender for Office 365 is recommended because change control, migrating settings from incumbent system, and other considerations can take longer to deploy. | [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365) |  |
-| [Microsoft Defender for Endpoint](deploy-threat-protection-configure.md#step-5-configure-microsoft-defender-for-endpoint) | Helps prevent, detect, investigate, and respond to advanced threats across devices (also referred to as endpoints). Defender for Endpoint is a robust threat protection offering. | [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint)  |  |
-| Azure AD Identity Protection |  |  |  |
-| [Microsoft Cloud App Security](deploy-threat-protection-configure.md#step-6-configure-microsoft-cloud-app-security) | A cloud access security broker for discovery, investigation, and governance. You can enable Microsoft Cloud App Security early to begin collecting data and insights. Implementing information and other targeted protection across your SaaS apps involves planning and can take more time. | [What is Cloud App Security?](/cloud-app-security/what-is-cloud-app-security) |  |
+| [Microsoft 365 Defender](/microsoft-365/security/defender) |Combines signals and orchestrates capabilities into a single solution. Enables security professionals to stitch together threat signals and determine the full scope and impact of a threat. Microsoft 365 Defender takes automatic actions to prevent or stop the attack and self-heal affected mailboxes, endpoints, and user identities. | [Get started](/microsoft-365/security/defender/get-started) | [Incident response](/microsoft-365/security/defender/incidents-overview) |
+| [Microsoft Defender for Identity](/defender-for-identity/what-is) |  A cloud-based security solution that uses your on-premises Active Directory Domain Services (AD DS) signals to identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions directed at your organization. Focus on Microsoft Defender for Identity next because it protects your on-premises and cloud infrastructure, has no dependencies or prerequisites, and can provide immediate security benefits. | [Overview](/defender-for-identity/what-is) | [Working with the Microsoft Defender for Identity portal](/defender-for-identity/workspace-portal) |
+| [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security) | Safeguards your organization against malicious threats posed by email messages, links (URLs), and collaboration tools. Protects against malware, phishing, spoofing, and other attack types. Configuring Microsoft Defender for Office 365 is recommended because change control, migrating settings from incumbent system, and other considerations can take longer to deploy. | [Overview](/microsoft-365/security/office-365-security/overview) | [Threat hunting](/microsoft-365/security/office-365-security/threat-hunting-in-threat-explorer) |
+| [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint) | Helps prevent, detect, investigate, and respond to advanced threats across devices (also referred to as endpoints). Defender for Endpoint is a robust threat protection offering. | [Overview](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint)  | [Endpoint detection and response](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response) |
+| [Azure AD Identity Protection](/azure/active-directory/identity-protection/) | A tool that allows organizations to automate the detection and remediation of identity-based risks and investigate those risks. | [Overview](/azure/active-directory/identity-protection/overview-identity-protection) | [Investigate risk](/azure/active-directory/identity-protection/howto-identity-protection-investigate-risk) |
+| [Microsoft Cloud App Security](/cloud-app-security) | A cloud access security broker for discovery, investigation, and governance. You can enable Microsoft Cloud App Security early to begin collecting data and insights. Implementing information and other targeted protection across your SaaS apps involves planning and can take more time. | [Overview](/cloud-app-security/what-is-cloud-app-security) | [Investigate](/cloud-app-security/investigate) |
 
-
-
-Look for:
+Use these tools to detect and respond to the follow common threats from ransomware attackers:
 
 - Credential theft
+
+   - Azure AD Identity Protection
+   - Microsoft Defender for Identity
+   - Microsoft Defender for Office 365
+
 - Device compromise
+
+   - Microsoft Defender for Endpoint
+   - Microsoft Defender for Office 365
+
 - Escalation of privilege
+
+   - Azure AD Identity Protection
+
 - Malicious app behavior
+
+   - Microsoft Cloud App Security
+
 - Data exfiltration
 
+   - Microsoft Cloud App Security
+   - Microsoft Defender for Office 365
 
-## Impact on users and change management
+The following tools use Microsoft 365 Defender and its portal (https://security.microsoft.com) as a common threat collection and analysis point:
 
-TBD
+- Microsoft Defender for Identity
+- Microsoft Defender for Office 365
+- Microsoft Defender for Endpoint
+- Microsoft Cloud App Security
+
+Microsoft 365 Defender combines threat signals into alerts and connected alerts into an incident.
 
 ## Resulting configuration
 

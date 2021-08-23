@@ -30,7 +30,7 @@ A human-operated ransomware attack can be catastrophic to businesses of all size
 
 ## Ransomware prevention and mitigation capabilities provided with Microsoft 365
 
-A ransomware attacker that has infiltrated Microsoft 365 can attempt to create financial leverage by:
+A ransomware attacker that has infiltrated a Microsoft 365 tenant can attempt to create financial leverage by:
 
 - Deleting files or email
 - Encrypting files
@@ -72,10 +72,12 @@ To protect your Microsoft 365 tenant from a ransomware attack, use these Microso
 
 | Capability or feature | Description | Helps detect and respond to... | Licensing |
 |:-------|:-----|:-------|:-------|
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
+| [Microsoft 365 Defender](/microsoft-365/security/defender) |Combines signals and orchestrates capabilities into a single solution. Enables security professionals to stitch together threat signals and determine the full scope and impact of a threat. Microsoft 365 Defender takes automatic actions to prevent or stop the attack and self-heal affected mailboxes, endpoints, and user identities. |  | E5 |
+| [Microsoft Defender for Identity](/defender-for-identity/what-is) |  A cloud-based security solution that uses your on-premises Active Directory Domain Services (AD DS) signals to identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions directed at your organization. Focus on Microsoft Defender for Identity next because it protects your on-premises and cloud infrastructure, has no dependencies or prerequisites, and can provide immediate security benefits. |  | E5 |
+| [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security) | Safeguards your organization against malicious threats posed by email messages, links (URLs), and collaboration tools. Protects against malware, phishing, spoofing, and other attack types. Configuring Microsoft Defender for Office 365 is recommended because change control, migrating settings from incumbent system, and other considerations can take longer to deploy. |  | E5 |
+| [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint) | Helps prevent, detect, investigate, and respond to advanced threats across devices (also referred to as endpoints). Defender for Endpoint is a robust threat protection offering. |  | E5 |
+| [Azure AD Identity Protection](/azure/active-directory/identity-protection/) | A tool that allows organizations to automate the detection and remediation of identity-based risks and investigate those risks. |  | E5 |
+| [Microsoft Cloud App Security](/cloud-app-security) | A cloud access security broker for discovery, investigation, and governance. You can enable Microsoft Cloud App Security early to begin collecting data and insights. Implementing information and other targeted protection across your SaaS apps involves planning and can take more time. |  | E5 |
 
 ### Identities
 

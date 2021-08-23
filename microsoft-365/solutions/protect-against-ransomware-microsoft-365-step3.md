@@ -21,31 +21,34 @@ description: Step through protecting your Microsoft 365 resources from ransomwar
 
 # Step 3. Protect identities
 
+Use the following sections to protect your organization from credential compromise, which is typically the first stage of a larger ransomware attack.
 
 ## Increase password security
 
-- Use Azure AD Identity Protection to prevent and detect attacks and extend blocking of known weak passwords to on-premises Active Directory
+- Use Azure AD Identity Protection to prevent and detect attacks
 
-- Extend Azure AD Password Protection to on-premises active directory
+- Extend extend blocking of known weak passwords to your on-premises Active Directory Domain Services (AD DS) with Azure AD Password Protection
 
-Enforce strong multi-factor authentication (MFA) or passwordless logon for all users starting with administrators by using one or more of:
+- Enforce strong multi-factor authentication (MFA) or passwordless logon for all users starting with administrators by using one or more of:
 
-- Passwordless authentication with Windows Hello or Microsoft Authenticator app
-- Azure Multi-Factor Authentication
-- Third-party MFA solutions
+  - Passwordless authentication with Windows Hello or Microsoft Authenticator app
+
+  - Azure Multi-Factor Authentication
+
+  - Third-party MFA solutions
 
 
 ### Prevent privilege escalation
 
-Practice the principle of least-privilege and maintain credential hygiene. Avoid the use of domain-wide, admin-level service accounts. Restricting local administrative privileges can help limit installation of RATs and other unwanted applications.
+- Practice the principle of least-privilege and maintain credential hygiene. Avoid the use of domain-wide, admin-level service accounts. Restricting local administrative privileges can help limit installation of RATs and other unwanted applications.
 
-Enforce end-to-end session security. Explicitly validate the trust of users and workstations before allowing access to administrative interfaces using Azure AD Conditional Access.
+- Enforce end-to-end session security. Explicitly validate the trust of users and workstations before allowing access to administrative interfaces using Azure AD Conditional Access.
 
-Enable Local Admin password management
+- Enable Local Admin password management
 
-Determine where highly privileged accounts are logging on and exposing credentials. Highly privileged accounts should not be present on workstations.
+- Determine where highly privileged accounts are logging on and exposing credentials. Highly privileged accounts should not be present on workstations.
 
-Disable the local storage of passwords and credentials.
+- Disable the local storage of passwords and credentials.
 
 ## Impact on users and change management
 
