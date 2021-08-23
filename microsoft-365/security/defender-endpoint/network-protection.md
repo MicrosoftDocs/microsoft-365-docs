@@ -62,7 +62,7 @@ When network protection blocks a connection, a notification is displayed from th
 
 You can also use [audit mode](audit-windows-defender.md) to evaluate how network protection would impact your organization if it were enabled.
 
-### The TCP three-way handshake
+### Network protetion and the TCP three-way handshake
 
 When you view network protection events, keep in mind that the determination of whether to allow or block access to the site is made after the completion of the [three-way handshake via TCP/IP](/troubleshoot/windows-server/networking/three-way-handshake-via-tcpip). Thus, you might see an action type of **ConnectionSuccess** under **NetworkConnectionEvents** for a site that is actually blocked by network protection. This is because NetworkConnectionEvents are reported from the TCP layer, and not from network protection. After the three-way handshake has completed, then access to the site is allowed or blocked.
 
