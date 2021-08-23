@@ -53,7 +53,7 @@ If the **Requests to SharePoint** result appears in the **Attention required** s
 
 ## Remediate performance issues related to too many calls on a page
 
-If a page contains too many calls, you can use the list of URLs in the **Requests to Sharepoint** results to determine whether there are any repeated calls, calls that should be batched, or calls that return data that should be cached.
+If a page contains too many calls, you can use the list of URLs in the **Requests to SharePoint** results to determine whether there are any repeated calls, calls that should be batched, or calls that return data that should be cached.
 
 **Batching REST calls** can help to reduce performance overhead. For more information about API call batching, see [Make batch requests with the REST APIs](/sharepoint/dev/sp-add-ins/make-batch-requests-with-the-rest-apis).
 

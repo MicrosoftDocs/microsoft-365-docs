@@ -43,7 +43,7 @@ After obtaining your subscription, allow up to 30 minutes for it to activate. Th
 
 ### Accept privacy management terms
 
-When you first open privacy management, you will be asked to confirm that you agree to the terms and the personal data evaluation process ([learn more](privacy-management.md#how-we-evaluate-your-data)). You can review the provided links in full before proceeding. Once you agree, it may take up to 24 hours before privacy management starts providing insights about your organization’s data.
+When you first open privacy management, you will be asked to confirm that you agree to the terms and the personal data evaluation process ([learn more](privacy-management.md#where-privacy-management-identifies-personal-data)). You can review the provided links in full before proceeding. Once you agree, it may take up to 24 hours before privacy management starts providing insights about your organization’s data.
 
 If you don’t hold the required role to obtain the subscription or consent to the terms of using privacy management, you’ll be prompted to contact your global admin for assistance.
 

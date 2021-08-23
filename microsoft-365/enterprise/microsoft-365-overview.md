@@ -115,7 +115,7 @@ For an example of how a fictional but representative multinational organization 
 
 ## Additional Microsoft 365 products
 
-- [Microsoft 365 Business Premium](../business/index.yml)
+- [Microsoft 365 Business Premium](../admin/index.yml)
 
   Bring together the best-in-class productivity and collaboration capabilities with device management and security solutions to safeguard business data for small and midsize businesses.
 
