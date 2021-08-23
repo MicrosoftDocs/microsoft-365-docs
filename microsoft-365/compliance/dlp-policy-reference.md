@@ -510,7 +510,7 @@ Typically, User overrides are useful when your organization is first rolling out
 - If the policy tips in the most restrictive rule allow people to override the rule, then overriding this rule also overrides any other rules that the content matched.
  
 <!--![User notifications and user overrides sections of DLP rule editor](../media/37b560d4-6e4e-489e-9134-d4b9daf60296.png)-->
- 
+ LEFT OFF HERE
  
 - 
 #### Incident reports
