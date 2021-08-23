@@ -18,7 +18,7 @@ ms.custom:
  - seo-marvel-apr2020
 search.appverid:
 - MET150
-description: Learn about performance recommendations for modern sites in SharePoint Online, such as limiting calls to Sharepoint and external endpoints.
+description: Learn about performance recommendations for modern sites in SharePoint Online, such as limiting calls to SharePoint and external endpoints.
 ---
 
 # SharePoint Online modern portal site limits

@@ -20,6 +20,7 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
+ROBOTS: NO INDEX, NO FOLLOW
 ms.assetid: ed34fff3-2881-4ed4-9906-1ba6bb8dd804
 description: "Learn how to automatically install the 32-bit Office apps on Windows 10 computers and keep them updated."
 ---
@@ -42,7 +43,7 @@ Automatic installation works best if the end user's computer is on Windows 10 Bu
     
 To determine if you have the Click-to-Run version of Office, in any Office app go to **File** \> **Account** ( **Office Account** in Outlook). If you see **Office Updates** as shown in the following figure, then the installation was done by using Click-to-Run. 
   
-![Screenshot of Office updates in Office app Account](../media/e3439380-fa43-4ed6-ae5d-64851c297df5.png)
+![Screenshot of Office updates in Office app Account](../../media/e3439380-fa43-4ed6-ae5d-64851c297df5.png)
   
  **Who benefits from having this feature**
   
