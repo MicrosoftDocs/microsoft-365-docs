@@ -51,7 +51,7 @@ The steps in this solution are:
 4. [Protect devices](protect-against-ransomware-microsoft-365-step4.md)
 5. [Protect information](protect-against-ransomware-microsoft-365-step5.md)
 
-![Ransomware protection for a Microsoft 365 teanant](../media/protect-against-ransomware-microsoft-365/protect-against-ransomware-microsoft-365-architecture.md)
+![Ransomware protection for a Microsoft 365 teanant](../media/protect-against-ransomware-microsoft-365/protect-against-ransomware-microsoft-365-architecture.png)
 
 To protect your Microsoft 365 tenant from a ransomware attack, use these Microsoft 365 features.
 
