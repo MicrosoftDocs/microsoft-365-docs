@@ -81,7 +81,7 @@ In the Security Portal, create a custom role group that contains the permissions
 
 ### Nest the newly created security group into the role group.
 
-1. [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/connect-to-scc-powershell?view=exchange-ps) and run the following:
+1. [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell) and run the following:
 
     `Add-RoleGroupMember "<<Role Group Name>>" -Member "<<Azure Security Group>>"`
 
