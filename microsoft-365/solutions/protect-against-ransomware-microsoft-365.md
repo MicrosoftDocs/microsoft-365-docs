@@ -34,10 +34,7 @@ A ransomware attacker that has infiltrated Microsoft 365 can attempt to create f
 
 - Deleting files or email
 - Encrypting files
-- Copying files outside the tenant
-
-
-
+- Copying files outside the tenant (data exfiltration)
 
 ## What’s in this solution
 
@@ -57,21 +54,52 @@ Here are the steps of the solution deployed for your Microsoft 365 tenant.
 
 ![Ransomware protection for a Microsoft 365 teanant](../media/protect-against-ransomware-microsoft-365/protect-against-ransomware-microsoft-365-architecture.png)
 
-To protect your Microsoft 365 tenant from a ransomware attack, use these Microsoft 365 features.
 
-| Capability or feature | Description | Licensing |
-|:-------|:-----|:-------|
-|MFA enforced with security defaults|Protect against compromised identities and devices by requiring a second form of authentication for sign-ins. Security defaults requires MFA for all user accounts.|Microsoft 365 E3 or E5|
-|MFA enforced with Conditional Access|Require MFA based on the properties of the sign-in with Conditional Access policies.|Microsoft 365 E3 or E5|
-|MFA enforced with risk-based Conditional Access|Require MFA based on the risk of the user sign-in with Microsoft Defender for Identity.|Microsoft 365 E5 or E3 with Azure AD Premium P2 licenses|
-|Microsoft Intune|Manage devices and applications.|Microsoft 365 E3 or E5|
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-||||
+## Microsoft 365 capabilities and features
+
+To protect your Microsoft 365 tenant from a ransomware attack, use these Microsoft 365 capabilities and features in the following categories.
+
+### Security baseline
+
+| Capability or feature | Description | Helps prevent... | Licensing |
+|:-------|:-----|:-------|:-------|
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+
+### Detection and response
+
+| Capability or feature | Description | Helps prevent... | Licensing |
+|:-------|:-----|:-------|:-------|
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+
+### Identities
+
+| Capability or feature | Description | Helps prevent... | Licensing |
+|:-------|:-----|:-------|:-------|
+|MFA enforced with Conditional Access|Require MFA based on the properties of the sign-in with Conditional Access policies.|Credential compromise and access|Microsoft 365 E3 or E5|
+|MFA enforced with risk-based Conditional Access|Require MFA based on the risk of the user sign-in with Azure AD Identity protection.|Credential compromise and access|Microsoft 365 E5 or E3 with Azure AD Premium P2 licenses|
+
+### Devices
+
+| Capability or feature | Description | Helps prevent... | Licensing |
+|:-------|:-----|:-------|:-------|
+|Microsoft Intune|Manage devices and applications.|Device or app compromise and access|Microsoft 365 E3 or E5|
+
+
+### Information
+
+| Capability or feature | Description | Helps prevent... | Licensing |
+|:-------|:-----|:-------|:-------|
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+
 
 ## Impact on users and change management
 
