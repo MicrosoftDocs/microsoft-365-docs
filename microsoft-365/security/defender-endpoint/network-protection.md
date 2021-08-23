@@ -11,7 +11,7 @@ localization_priority: Normal
 audience: ITPro
 author: denisebmsft
 ms.author: deniseb
-ms.reviewer: 
+ms.reviewer: oogunrinde
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
