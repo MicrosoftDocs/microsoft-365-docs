@@ -302,17 +302,17 @@ There is no limit to the number of search permissions filters that can be create
 
 To understand how this limit works, you need to understand that a search permissions filter is appended to the search query when a search is run. A search permissions filter is joined to the search query by the **AND** Boolean operator. The query logic for the search query and a single search permissions filter would look like this:
 
-  ```text
-  <SearchQuery> AND <PermissionsFilter>
-  ```
+```text
+<SearchQuery> AND <PermissionsFilter>
+```
 
 Multiple search permissions filters are combined together by the **OR** Boolean operator, and then those conditions are connected to the search query by the **AND** operator.
 
 The query logic for the search query and multiple search permissions filters would look like this:
 
 ```text
-  <SearchQuery> AND (<PermissionsFilter1> OR <PermissionsFilter2> OR <PermissionsFilter3>...)
-  ```
+<SearchQuery> AND (<PermissionsFilter1> OR <PermissionsFilter2> OR <PermissionsFilter3>...)
+```
 
 It's possible the search query itself may consist of multiple conditions connected by Boolean operators. Each condition in the search query would also count against the 100-condition limit.
 
@@ -320,10 +320,4 @@ Also, the number of search permissions filters appended to a query depends on th
 
 There's one more thing to keep in mind about the condition limit. The number of specific SharePoint sites that are included in the search query or search permissions filters also count against this limit. 
 
-To prevent your organization from reaching the conditions limit, consider the following guidelines whenever possible:
-
-- Keep the number of search permissions filters in your organization to few as possible to meet your business requirements
-
-- Create filters that combine rules for Exchange, SharePoint, and OneDrive into a single search permissions filter
-  
-- Reduce the number filters applied to the same users search all SharePoint locations, and create filters that combine rules for Exchange, SharePoint, and OneDrive into a single search permissions filter whenever possible.
+To prevent your organization from reaching the conditions limit, keep the number of search permissions filters in your organization to few as possible to meet your business requirements.
