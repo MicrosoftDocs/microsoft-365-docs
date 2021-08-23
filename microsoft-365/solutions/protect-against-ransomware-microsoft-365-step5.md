@@ -61,3 +61,7 @@ General guidelines:
 - Implement controlled folder access to help prevent files from being altered or encrypted by ransomware.
 
 - Back up regularly. Use the 3-2-1 rule. Keep three backups of your data, on two different storage types, and at least one backup offsite.
+
+## Impact on users and change management
+
+TBD

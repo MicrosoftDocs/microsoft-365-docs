@@ -19,7 +19,7 @@ keywords:
 description: Step through protecting your Microsoft 365 resources from ransomware attacks.
 ---
 
-# Step 1.Configure security baselines
+# Step 1. Configure security baselines
 
 Apply security baselines to harden internet-facing servers, clients, and Office applications.
 
@@ -53,6 +53,9 @@ To help prevent initial access to your tenant from an email-based attack:
 - Review and update to the latest recommended settings for EOP and Microsoft Defender for Office 365 security.
 - Configure Microsoft Defender for Office 365 to recheck links on click and delete delivered mails in response to newly acquired threat intelligence.
 
+## Impact on users and change management
+
+TBD
 
 ## Next step
 

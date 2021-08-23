@@ -38,6 +38,10 @@ Look for:
 - Data exfiltration
 
 
+## Impact on users and change management
+
+TBD
+
 ## Next step
 
 [![Step 3 for ransomware protection with Microsoft 365](../media/protect-against-ransomware-microsoft-365/protect-against-ransomware-microsoft-365-step3.png)](protect-against-ransomware-microsoft-365-step3.md)

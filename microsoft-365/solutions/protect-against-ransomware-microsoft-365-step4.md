@@ -54,6 +54,10 @@ To help protect against an attacker executing code as part of an attack:
 - Disable use of unsigned macros. Ensure all internal macros with business need are signed and leveraging trusted locations to ensure unknown macros will not run in your environment.
 - Stop malicious XLM or VBA macros by ensuring runtime macro scanning by Antimalware Scan Interface (AMSI) is on. This feature (enabled by default) is on if the Group Policy setting for Macro Run Time Scan Scope is set to Enable for All Files or Enable for Low Trust Files. Get the latest group policy template files.
 
+## Impact on users and change management
+
+TBD
+
 ## Next step
 
 [![Step 5 for ransomware protection with Microsoft 365](../media/protect-against-ransomware-microsoft-365/protect-against-ransomware-microsoft-365-step5.png)](protect-against-ransomware-microsoft-365-step5.md)
