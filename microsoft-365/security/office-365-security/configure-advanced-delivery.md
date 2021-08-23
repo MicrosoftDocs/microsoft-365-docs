@@ -328,7 +328,7 @@ Use the following syntax:
 New-TenantAllowBlockListItems -Allow -ListType Url -ListSubType AdvancedDelivery -Entries "<URL1>","<URL2>",..."<URLN>" <[-NoExpiration] | [-ExpirationDate <DateTime>]>
 ```
 
-For details about the URL syntax, see [URL syntax for the Tenant Allow/Block List](tenant-allow-block-list.md#url-syntax-for-the-tenant-allowedblocked-list).
+For details about the URL syntax, see [URL syntax for the Tenant Allow/Block List](tenant-allow-block-list.md#url-syntax-for-the-tenant-allowblock-list).
 
 This example adds a URL allow entry for the specified third-party phishing simulation URL with no expiration.
 
