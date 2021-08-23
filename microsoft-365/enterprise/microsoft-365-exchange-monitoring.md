@@ -27,7 +27,7 @@ You can use Exchange Online monitoring in the Microsoft 365 admin center to moni
 
 Here is an example of the **Service health** page in the Microsoft 365 admin center, available from **Health > Service health** for organization scenarios.
 
-**Issues in your organization** will be identified and used by both organizational-level monitoring.
+**Issues in your organization** will be identified and used by organizational-level monitoring.
 
 :::image type="content" source="../media/microsoft-365-exchange-monitoring/service-health-dashboard-example.png" alt-text="The Service health page in the Microsoft 365 admin center":::
 
