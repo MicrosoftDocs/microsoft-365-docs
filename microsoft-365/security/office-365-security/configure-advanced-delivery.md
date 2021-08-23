@@ -108,7 +108,7 @@ The SecOps mailbox entries that you configured are displayed on the **SecOps mai
      - Single IP: For example, 192.168.1.1.
      - IP range: For example, 192.168.0.1-192.168.0.254.
      - CIDR IP: For example, 192.168.0.1/25.
-   - **Simulation URLs to allow**: Expand this setting and optionally enter specific URLs that are part of your phishing simulation campaign that should not be blocked or detonated by clicking in the box, entering a value, and then pressing Enter or selecting the value that's displayed below the box. You can add up to 10 entries. For the URL syntax format, see [URL syntax for the Tenant Allow/Block List](/microsoft-365/security/office-365-security/tenant-allow-block-list#url-syntax-for-the-tenant-allowblock-list).
+   - **Simulation URLs to allow**: Expand this setting and optionally enter specific URLs that are part of your phishing simulation campaign that should not be blocked or detonated by clicking in the box, entering a value, and then pressing Enter or selecting the value that's displayed below the box. You can add up to 10 entries. For the URL syntax format, see [URL syntax for the Tenant Allow/Block List](tenant-allow-block-list.md#url-syntax-for-the-tenant-allowblock-list).
 
    To remove an existing value, click remove ![Remove icon](../../media/m365-cc-sc-remove-selection-icon.png) next to the value.
 
@@ -328,7 +328,7 @@ Use the following syntax:
 New-TenantAllowBlockListItems -Allow -ListType Url -ListSubType AdvancedDelivery -Entries "<URL1>","<URL2>",..."<URLN>" <[-NoExpiration] | [-ExpirationDate <DateTime>]>
 ```
 
-For details about the URL syntax, see [URL syntax for the Tenant Allow/Block List](https://docs.microsoft.com/microsoft-365/security/office-365-security/tenant-allow-block-list#url-syntax-for-the-tenant-allowedblocked-list).
+For details about the URL syntax, see [URL syntax for the Tenant Allow/Block List](tenant-allow-block-list.md#url-syntax-for-the-tenant-allowedblocked-list).
 
 This example adds a URL allow entry for the specified third-party phishing simulation URL with no expiration.
 
