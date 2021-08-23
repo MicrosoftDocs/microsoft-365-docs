@@ -328,6 +328,9 @@ Any item that makes it through the inclusive ***conditions*** and exclusive ***e
 
 The actions that are available in a rule are dependent on the locations that have been selected. If you select only one location for the policy to be applied to, the available actions are listed below.
 
+> [!IMPORTANT]
+> For SharePoint Online and OneDrive for Business locations documents will be proactively blocked right after detection of sensitive information, irrespective of whether the document is shared or not, for all external users, while internal users will continue to have access to the document.
+
 ##### Exchange location actions:
 
 - Restrict access or encrypt the content in Microsoft 365 locations
