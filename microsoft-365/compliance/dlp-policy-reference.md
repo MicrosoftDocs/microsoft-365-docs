@@ -501,18 +501,18 @@ The intent of **User overrides** is to give users a way to bypass, with justific
 > [!NOTE]
 > User overrides are not available for the On-premises repositories location.
 
-Typically, User overrides are useful when your organization is first rolling out a policy tuning, false positives, tuning,  scoping, user education,    educate your users, not block user activities,  and to identify false positivie 
-
-
+Typically, user overrides are useful when your organization is first rolling out a policy. The feedback that you get from any override justifications and identifying false positives helps in tuning the policy. 
 
 <!-- This section covers what they are and how to best use them in conjunction with Test/Turn it on right away and link out to where to find the business justification for the override (DLP reports?  https://docs.microsoft.com/en-us/microsoft-365/compliance/view-the-dlp-reports?view=o365-worldwide)  https://docs.microsoft.com/en-us/microsoft-365/compliance/view-the-dlp-reports?view=o365-worldwide#view-the-justification-submitted-by-a-user-for-an-override-->
 
 - If the policy tips in the most restrictive rule allow people to override the rule, then overriding this rule also overrides any other rules that the content matched.
  
 <!--![User notifications and user overrides sections of DLP rule editor](../media/37b560d4-6e4e-489e-9134-d4b9daf60296.png)-->
- LEFT OFF HERE
  
-- 
+To learn more about user overrides, see:
+
+- [View the justification submitted by a user for an override](view-the-dlp-reports.md#view-the-justification-submitted-by-a-user-for-an-override)
+
 #### Incident reports
 
 <!--DLP interacts with other M365 information protection services, like IR. Link this to a process outline for triaging/managing/resolving DLP incidents
@@ -522,12 +522,18 @@ https://docs.microsoft.com/en-us/microsoft-365/compliance/view-the-dlp-reports?v
 https://docs.microsoft.com/en-us/microsoft-365/compliance/dlp-configure-view-alerts-policies?view=o365-worldwide-->
 
 When a rule is matched, you can send an incident report to your compliance officer (or any people you choose) with details of the event. This report includes information about the item that was matched, the actual content that matched the rule, and the name of the person who last modified the content. For email messages, the report also includes as an attachment the original message that matches a DLP policy.
-  
-![Page for configuring incident reports](../media/31c6da0e-981c-415e-91bf-d94ca391a893.png)
+
+DLP feeds incident information to other Microsoft 365 information protection services, like [Insider Risk management in Microsoft 365](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365). In order to get incident information to insider risk managment, you must set the **Incident reports** severity level to **High**.
+
+<!--![Page for configuring incident reports](../media/31c6da0e-981c-415e-91bf-d94ca391a893.png)-->
+
+You can choose between having an alert sent every time an activity matches a rule, which can be very noisy or you can aggregate incidents into fewer alerts based on number of matches or volume of items over a set period of time.
+
+![send an alert every time a rule matches or aggregate over time into fewer reports](../media/dlp-incident-reports-aggregation.png)
 
 DLP scans email differently from items in SharePoint Online or OneDrive for Business. In SharePoint Online and OneDrive for Business, DLP scans existing items as well as new ones and generates an incident report whenever a match is found. In Exchange Online, DLP only scans new email messages and generates a report if there is a policy match. DLP ***does not*** scan or match previously existing email items that are stored in a mailbox or archive.
 
 
 #### Additional options
 
-covers the impact of rule processing order on the planned behavior of the policy, give examples and where it applies (to the Exchange location only)
+If you have multiple rules in a policy, you can use the **Additional options** to control further rule processing if there is a match to the rule you are editing as well as setting the priority for evaluation of the rule.
