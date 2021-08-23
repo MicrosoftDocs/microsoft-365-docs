@@ -74,8 +74,7 @@ Here is an example query
 DeviceEvents
 | where ActionType in ('ExploitGuardNetworkProtectionAudited','ExploitGuardNetworkProtectionBlocked')
 ```
-
-## Review network protection events in Windows Event Viewer
+### Review network protection events in Windows Event Viewer
 
 You can review the Windows event log to see events that are created when network protection blocks (or audits) access to a malicious IP or domain:
 
@@ -113,8 +112,6 @@ For Windows 10 Enterprise Multi-Session 1909 and up, used in Windows Virtual Des
 
 2. Execute the following PowerShell command: `Set-MpPreference -AllowNetworkProtectionOnWinServer 1`
 
-
-
 ## Network protection troubleshooting
 
 Due to the environment where network protection runs, Microsoft might not be able to detect operating system proxy settings. In some cases, network protection clients are unable to reach Cloud Service. To resolve the connectivity problem, customers with E5 licenses should configure one of the following Defender registry keys:
@@ -124,7 +121,6 @@ reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyServer /d "<proxy IP 
 reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyPacUrl /d "<Proxy PAC url>" /f
 
 ```
-
 
 ## See also
 
