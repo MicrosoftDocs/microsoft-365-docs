@@ -62,7 +62,9 @@ ms.technology: mde
 |type|Enum|Type of the action. Possible values are: "RunAntiVirusScan", "Offboard", "Live Response", "CollectInvestigationPackage", "Isolate", "Unisolate", "StopAndQuarantineFile", "RestrictCodeExecution", and "UnrestrictCodeExecution".|
 |scope|string|Scope of the action. "Full" or "Selective" for Isolation, "Quick" or "Full" for Anti-Virus scan.|
 |requestor|String|Identity of the person that executed the action.|
-|requestSource|string|The name of the user/application that submitted the action.
+|externalID|String|Id the customer can submit in the request for custom correlation.|
+|requestSource|string|The name of the user/application that submitted the action.|
+|commands|array|Commands to run. Allowed values are PutFile, RunScript, GetFile.|
 |cancellationRequestor|String|Identity of the person that canceled the action.|
 |requestorComment|String|Comment that was written when issuing the action.|
 |cancellationComment|String|Comment that was written when canceling the action.|
