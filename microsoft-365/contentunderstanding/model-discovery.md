@@ -19,7 +19,7 @@ description: Learn how to make trained model available to others and how to appl
 
 You can make your trained document understanding models available for others to view and use directly from the SharePoint document library. 
 
-You can also find and evaluate trained models in other content centers that were created by others in your organization. You can select the model that is most useful for classifying your files or extracting specific information from them. 
+You can also find and evaluate trained models in other content centers that were created by others in your organization. Select the model that is most useful for classifying your files or extracting specific information from them. 
 
 > [!NOTE]
 > This feature is not yet available for form processing models.
@@ -46,13 +46,14 @@ To find trained models that might be suitable for your content:
 
 1. In the document library for your model, select **Automate** > **View document understanding models**.
 
-2. On the **Review models and apply new ones** page:
+2. On the **Review models and apply new ones** page, you can review the applied models and the models that are availale to be applied to you document library.
+
+    ![Screenshot of the Review models and apply new ones page showing the Applied and Available tabs.](../media/content-understanding/review-models-apply-new-ones.png)
 
    - On the **Applied** tab, see the models that have been applied to your library. Select **View model details** to see information about the model, such as description, extractors, and other settings.
    
    - On the **Available** tab, see the trained models that are available to be applied to your library.
 
-    ![Screenshot of the Review models and apply new ones page showing the Applied and Available tabs.](../media/content-understanding/review-models-apply-new-ones.png)
 
 ### Apply a trained model to your library
 
