@@ -24,7 +24,7 @@ description: Create retention labels and auto-labeling policies so you can autom
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 > [!NOTE]
-> This scenario is not supported for [regulatory records](records-management.md#records).
+> This scenario is not supported for [regulatory records](records-management.md#records) or default labels for an organizing structure such as a document set or library in SharePoint, or a folder in Exchange. These scenarios require a [published retention label policy](create-apply-retention-labels.md#step-2-publish-retention-labels).
 
 One of the most powerful features of [retention labels](retention.md) is the ability to apply them automatically to content that matches specified conditions. In this case, people in your organization don't need to apply the retention labels. Microsoft 365 does the work for them.
   
@@ -39,7 +39,7 @@ Auto-applying retention labels are powerful because:
 You can apply retention labels to content automatically when that content contains sensitive information, keywords or searchable properties, or a match for [trainable classifiers](classifier-get-started-with.md).
 
 > [!TIP]
-> Recently released, use searchable properties to identify [Teams meeting recordings](#microsoft-teams-meeting-recordings).
+> Use searchable properties to identify [Teams meeting recordings](#microsoft-teams-meeting-recordings).
 
 The processes to automatically apply a retention label based on these conditions:
 
@@ -48,7 +48,7 @@ The processes to automatically apply a retention label based on these conditions
 Use the following instructions for the two admin steps.
 
 > [!NOTE]
-> Auto-policies use service-side labeling with conditions to automatically apply retention labels. You can also automatically apply a retention label with a label policy when you do the following: 
+> Auto-policies use service-side labeling with conditions to automatically apply retention labels to items. You can also automatically apply a retention label with a label policy when you do the following: 
 >
 > - Apply a retention label to a document understanding model in SharePoint Syntex
 > - Apply a default retention label for SharePoint and Outlook
@@ -122,7 +122,7 @@ You can apply retention labels to content automatically when that content contai
 
 - [A match for trainable classifiers](#auto-apply-labels-to-content-by-using-trainable-classifiers)
 
-All three conditions can automatically apply retention labels to emails as they are sent and received, but not to existing items in the mailbox (data at rest). For items in SharePoint and OneDrive, use the following table to identify when retention labels can be automatically applied to them:
+All three conditions can automatically apply retention labels to emails as they are sent and received (data in transit), but not to existing items in the mailbox (data at rest). For items in SharePoint and OneDrive, use the following table to identify when retention labels can be automatically applied to them:
 
 |Condition|New or modified items |Existing items (data at rest)|
 |:-----|:-----|:-----|
@@ -131,6 +131,7 @@ All three conditions can automatically apply retention labels to emails as they 
 |Specific keywords or searchable properties| Yes |Yes |
 |Trainable classifiers| Yes | Yes (last six months only) |
 
+Additionally, SharePoint items that are in draft or that have never been published aren't supported for this scenario.
 
 #### Auto-apply labels to content with specific types of sensitive information
 
@@ -177,7 +178,7 @@ Some things to consider when using keywords or searchable properties to auto-app
 
 - Use the *DocumentLink* property instead of *Path* to match an item based on its URL. 
 
-- Suffix wildcard searches ( such as `*cat`) or substring wildcard searches (such as `*cat*`) aren't supported. However, prefix wildcard searches (such as `cat*`) are supported.
+- Suffix wildcard searches (such as `*cat`) or substring wildcard searches (such as `*cat*`) aren't supported. However, prefix wildcard searches (such as `cat*`) are supported.
 
 - Be aware that partially indexed items can be responsible for not labeling items that you're expecting, or labeling items that you're expecting to be excluded from labeling when you use the NOT operator. For more information, see [Partially indexed items in Content Search](partially-indexed-items-in-content-search.md).
 
