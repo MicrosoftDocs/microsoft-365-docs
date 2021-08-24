@@ -143,7 +143,7 @@ For more information, see [Topic discovery and curation](./topic-experiences-dis
 
 At Microsoft we take feedback from our customers very seriously. The feedback you provide for Viva Topics will be used to troubleshoot, fix bugs, enhance existing features, and develop new ones. 
 
-You can send feedback to Microsoft directly from a topic page, and from the **Manage topics** page and your **My topics** page. Look for this button in the lower right-side of the page.
+You can send feedback to Microsoft directly from a topic page, and from the **Manage topics** and **My topics** pages. Look for this button in the lower right-side of the page.
 
    ![Screenshot showing the Feedback button.](../media/knowledge-management/feedback-icon.png)
 
