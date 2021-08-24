@@ -64,15 +64,15 @@ You can also use [audit mode](audit-windows-defender.md) to evaluate how network
 
 ### Network protection and the TCP three-way handshake
 
-When you view network protection events, keep in mind that the determination of whether to allow or block access to the site is made after the completion of the [three-way handshake via TCP/IP](/troubleshoot/windows-server/networking/three-way-handshake-via-tcpip). Thus, you might see an action type of **ConnectionSuccess** under **NetworkConnectionEvents** for a site that is actually blocked by network protection. This is because NetworkConnectionEvents are reported from the TCP layer, and not from network protection. After the three-way handshake has completed, then access to the site is allowed or blocked.
+With network protection, the determination of whether to allow or block access to a site is made after the completion of the [three-way handshake via TCP/IP](/troubleshoot/windows-server/networking/three-way-handshake-via-tcpip). Thus, in the Microsoft 365 Defender portal, when a site is blocked by network protection, you might see an action type of `ConnectionSuccess` under `NetworkConnectionEvents`, even though the site was actually blocked. This is because NetworkConnectionEvents are reported from the TCP layer, and not from network protection. After the three-way handshake has completed, then access to the site is allowed or blocked by network protection.
 
 Here's how that works:
 
-1. A user attempts to access a dangerous domain on their device.
+1. A user attempts to access a website on their device. The site happens to be hosted on a dangerous domain, and it should be blocked by network protection.  
 
-2. Before the three-way handshake via TCP/IP completes, a NetworkConnectionEvents action is logged, and its ActionType might be ConnectionSuccess. However, as soon as the three-way handshake completes, network protection blocks access to the site. All of this happens very quickly.
+2. The three-way handshake via TCP/IP commences. Before it completes, a `NetworkConnectionEvents` action is logged, and its ActionType is listed as `ConnectionSuccess`. However, as soon as the three-way handshake process completes, network protection blocks access to the site. All of this happens very quickly.
 
-3. In the Microsoft 365 Defender portal, an alert is generated. Under **AlertEvents**, you can see that the site was blocked. However, you might also see a **NetworkConnectionEvents** with ActionType of **ConnectionSuccess**.
+3. In the Microsoft 365 Defender portal, an alert is generated. Details include both the `NetworkConnectionEvents` and the `AlertEvents` details. Thus, you can see that the site was blocked, even though you also have a `NetworkConnectionEvents` item with the ActionType of `ConnectionSuccess`.
 
 ### Review network protection events in the Microsoft 365 Defender portal
 
