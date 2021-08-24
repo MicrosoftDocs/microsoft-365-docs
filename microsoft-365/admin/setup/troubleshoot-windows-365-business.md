@@ -44,7 +44,7 @@ Make sure **Users may join devices to Azure AD** is set to **All**.
 
 ## Step 2. Verify that the CloudPCBRT system account is active
 
-The first time a Windows 365 license is assigned in your organization, a system account called "CloudPCBPRT" is automatically created in Azure AD. Do not delete this account. If the system account is deleted, the setup will fail. This system account ensures a smooth setup process and doesn't have any write capabilities or access to your organization beyond the scoped service capabilities of Windows 365 Business. If you delete this system account, you must open a new support request to have it restored.
+The first time a Windows 365 license is assigned in your organization, a system account called "CloudPCBPRT" is automatically created in Azure AD. Do not delete this account or make any changes to it (such as changing the name or UPN). If the system account is deleted, the setup will fail. This system account ensures a smooth setup process and doesn't have any write capabilities or access to your organization beyond the scoped service capabilities of Windows 365 Business. If you delete this system account, you must open a new support request to have it restored.
 
 To make sure the CloudPCBRT system account is active in Azure AD, use the following steps.
 
@@ -100,7 +100,7 @@ If you already use Microsoft Intune, or plan to use it to manage your Windows 36
 3. On the **Configure** page, next to **MDM user scope**, select **Some** or **All**, then select **Save**.
 4. In the left nav, under **Manage**, select **Mobility (MDM and MAM)**, select **Microsoft Intune Enrollment**, then repeat step 3.
 
-You also must assign an Intune license to the CloudPCBPRT system account and to any other users who are assigned a Cloud PC.
+Users who are assigned a Cloud PC must have an Intune license assigned to them. The CloudPCBPRT system account does not need to be assigned an Intune license.
 
 > [!IMPORTANT]
 > To assign licenses, you must be a Global or Licensing admin, or have a role with licensing permissions.
