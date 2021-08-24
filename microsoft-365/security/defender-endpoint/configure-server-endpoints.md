@@ -99,13 +99,13 @@ Microsoft Defender for Endpoint integrates seamlessly with Azure Defender. You c
 
 For more information, see [Integration with Azure Defender](azure-server-integration.md).
 
->[!NOTE]
->For Windows Server 2012 R2 and 2016 running the modern unified solution preview, integration with Azure Security Center / Azure Defender for Servers for alerting and automated deployment is not yet available. Whilst you can install the new solution on these machines, no alerts will be displayed in Azure Security Center.
+> [!NOTE]
+> For Windows Server 2012 R2 and 2016 running the modern unified solution preview, integration with Azure Security Center / Azure Defender for Servers for alerting and automated deployment is not yet available. Whilst you can install the new solution on these machines, no alerts will be displayed in Azure Security Center.
 
 ## Windows Server 2012 R2 and Windows Server 2016
 
->[!NOTE]
->While this method of onboarding Windows Server 2012 R2 and Windows Server 2016 is in preview, you can choose to continue to use the previous onboarding method using Microsoft Monitoring Agent (MMA). For more information see, [Install and configure endpoints using MMA](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma).
+> [!NOTE]
+> While this method of onboarding Windows Server 2012 R2 and Windows Server 2016 is in preview, you can choose to continue to use the previous onboarding method using Microsoft Monitoring Agent (MMA). For more information see, [Install and configure endpoints using MMA](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma).
 
 
 ### Prerequisites
