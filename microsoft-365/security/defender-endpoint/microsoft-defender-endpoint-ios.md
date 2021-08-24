@@ -83,4 +83,4 @@ For more information, see [Deploy Microsoft Defender for Endpoint on iOS](ios-in
 - [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)
 - [Configure app protection policy to include Defender for Endpoint risk signals (MAM)](ios-install-unmanaged.md)
 - [Configure Conditional Access policy based on device risk score from Microsoft Defender for Endpoint](ios-configure-features.md#conditional-access-with-defender-for-endpoint-on-ios)
-- [What is mobile app management in Microsoft Intune? | How to get started with MAM.](https://docs.microsoft.com/en-us/mem/intune/apps/app-management#mobile-application-management-mam-basics)
+- [Mobile Application Management (MAM) basics](/mem/intune/apps/app-management#mobile-application-management-mam-basics)
