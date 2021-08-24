@@ -22,23 +22,23 @@ description: "Scoped Certified application installation and configuration guide 
 
 [Overview](#overview) 
 
-[Application dependencies in ServiceNow environments](#Application-dependencies-in-ServiceNow-environments)
+[Application dependencies in ServiceNow environments](#application-dependencies-in-servicenow-environments)
 
-[Configuration instructions](#Configuration-instructions)
+[Configuration instructions](#configuration-instructions)
 
-[Who can set up the Microsoft 365 support integration?](#Who-can-set-up-Microsoft-365-support-integration)
+[Who can set up the Microsoft 365 support integration?](#Who-can-set-up-microsoft-365-support-integration)
 
-[What features are available in Microsoft 365 support integration?](#What-features-are-available-in-Microsoft-365-support-integration) 
+[What features are available in Microsoft 365 support integration?](#what-features-are-available-in-microsoft-365-support-integration) 
 
-[Set up Microsoft 365 support integration with ServiceNow Basic Authentication](#Set-up-Microsoft-365-support-integration-with-ServiceNow-Basic-Authentication)
+[Set up Microsoft 365 support integration with ServiceNow Basic Authentication](#set-up-microsoft-365-support-integration-with-servicenow-basic-authentication)
 
-[Set up Microsoft 365 support integration with AAD OAuth Token](#Set-up-Microsoft-365-support-integration-with-AAD-OAuth-Token)
+[Set up Microsoft 365 support integration with AAD OAuth Token](#set-up-microsoft-365-support-integration-with-aad-oauth-token)
 
-[Set up Microsoft 365 support integration for Insights ONLY](#Set-up-Microsoft-365-support-integration-for-Insights-ONLY) 
+[Set up Microsoft 365 support integration for Insights ONLY](#set-up-microsoft-365-support-integration-for-insights-only) 
 
-[Testing the configuration](#Testing-the-configuration) 
+[Testing the configuration](#testing-the-configuration) 
 
-[Troubleshooting](#Troubleshooting) 
+[Troubleshooting](#troubleshooting) 
 
 ## Overview
 
@@ -88,10 +88,10 @@ This table identifies features available to you depending on the answers to thes
 
 |Question #1 Answer|Question #2 Answer|What features are available?|Configuration Steps|
 |--- |--- |--- |--- |
-|Yes|Yes|Service Health Incidents <br/>Recommended Solutions </br>Microsoft service request|[Set up Microsoft 365 support integration with ServiceNow Basic Authentication](#Set-up-Microsoft-365-support-integration-with-ServiceNow-Basic-Authentication)|
+|Yes|Yes|Service Health Incidents <br/>Recommended Solutions </br>Microsoft service request|[Set up Microsoft 365 support integration with ServiceNow Basic Authentication](#set-up-microsoft-365-support-integration-with-servicenow-basic-authentication)|
 |Yes|No|Service Health Incidents <br/>Recommended Solutions </br>Microsoft service request||
-|No|Yes|Service Health Incidents <br/>Recommended Solutions </br>Microsoft service request|[Set up Microsoft 365 support integration with AAD OAuth Token](#Set-up-Microsoft-365-support-integration-with-AAD-OAuth-Token)|
-|No|No|Service Health Incidents <br/>Recommended Solutions|[Set up Microsoft 365 support integration for Insights ONLY](#Set-up-Microsoft-365-support-integration-for-Insights-ONLY) |
+|No|Yes|Service Health Incidents <br/>Recommended Solutions </br>Microsoft service request|[Set up Microsoft 365 support integration with AAD OAuth Token](#set-up-microsoft-365-support-integration-with-aad-oauth-token)|
+|No|No|Service Health Incidents <br/>Recommended Solutions|[Set up Microsoft 365 support integration for Insights ONLY](#set-up-Microsoft-365-support-integration-for-insights-only) |
 
 ## Set up Microsoft 365 support integration with ServiceNow Basic Authentication
 
@@ -185,7 +185,7 @@ These steps are required to set up the integration between your ServiceNow insta
 
 1. \[The person who is a ServiceNow admin\] Switch the scope to Microsoft 365 support integration.
 
-        :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image9.png" alt-text="Graphical user interface, table Description automatically generated":::
+    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image9.png" alt-text="Graphical user interface, table Description automatically generated":::
 
 2. \[The person who is a ServiceNow admin\] Go to Microsoft 365 support > **Setup** to open the integration flow.
 
@@ -212,7 +212,7 @@ These steps are required to set up the integration between your ServiceNow insta
 
 - Select OAuth Client created in [Prerequisites (Basic Authentication)](#prerequisites-basic-authentication) step \#3 and select **Next**.
 
-<img src="C:\Git\microsoft-365-docs-pr\microsoft-365\admin\misc\media\image13.PNG" style="width:5.90629in;height:2.54689in" alt="Graphical user interface, text, application, email Description automatically generated" />
+:::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image13.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
 
 6. \[The person who is a ServiceNow admin\] Set up inbound call integration user.
 
@@ -352,9 +352,9 @@ These prerequisite steps are necessary to set up the Microsoft 365 support integ
 
     3. Create a new application with the values below by selecting [Connect to a third party OAuth Provider](https://dev77417.service-now.com/wizard_view.do?sys_action=sysverb_wizard_ans&WIZARD:action=follow&wiz_referring_url=oauth_entity_list.do?sys_id=-1@99@sys_target=oauth_entity@99@sysparm_fixed_query=@99@sysparm_group_sort=@99@sysparm_parent=2c7cab53d7232100f20bc8170e61036b@99@sysparm_query=type%3dclient%5eORtype%3doauth_provider@99@sysparm_target=@99@sysparm_view=&wiz_collection_key=&wiz_collectionID=&wiz_collection=&wiz_collection_related_field=&wiz_view=&wiz_action=sysverb_new&sys_id=79ce2f53d7232100f20bc8170e610361&sysparm_query=type=client%5eORtype=oauth_provider&sysparm_target=&sys_target=oauth_entity).
 
-        - Client ID: The Client ID of the application created in [Prerequisites (AAD OAuth Token)](#prerequisites-AAD-OAuth-token) step \#1.
+        - Client ID: The Client ID of the application created in [Prerequisites (AAD OAuth Token)](#prerequisites-aad-oauth-token) step \#1.
 
-        - Client Secret: The App Secret of the application created in [Prerequisites (AAD OAuth Token)](#prerequisites-AAD-OAuth-token) step \#1.
+        - Client Secret: The App Secret of the application created in [Prerequisites (AAD OAuth Token)](#prerequisites-aad-oauth-token) step \#1.
 
         - Default Grant type: Client credentials.
 
@@ -390,9 +390,9 @@ These prerequisite steps are necessary to set up the Microsoft 365 support integ
 
     - Name: contoso\_application\_inbound\_api
 
-    - Client ID: The Client ID of the application created in [Prerequisite](#pre-requirement-1) step \#2.
+    - Client ID: The Client ID of the application created in [Prerequisites (AAD OAuth Token)](#prerequisites-aad-oauth-token) step \#2.
 
-    - Client Secret: The App Secret of the application created in [Prerequisites (AAD OAuth Token)](#prerequisites-AAD-OAuth-token) step \#2.
+    - Client Secret: The App Secret of the application created in [Prerequisites (AAD OAuth Token)](#prerequisites-aad-oauth-token) step \#2.
 
     - OAuth OIDC Provider Configuration: The OIDC provider created in the last step.
 
@@ -403,7 +403,7 @@ These prerequisite steps are necessary to set up the Microsoft 365 support integ
 
 6. \[The person who is a ServiceNow admin\] Create Integration Users.
 
-    Navigate to **Organization** > **Users** to create a new user if there is no integration user. The value of **User ID** is the application Client ID created in step [Prerequisites (AAD OAuth Token)](#prerequisites-AAD-OAuth-token) \#3
+    Navigate to **Organization** > **Users** to create a new user if there is no integration user. The value of **User ID** is the application Client ID created in step [Prerequisites (AAD OAuth Token)](#prerequisites-aad-oauth-token) \#3
 
     :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image26.png" alt-text="Graphical user interface, application Description automatically generated":::
 
@@ -450,7 +450,7 @@ These steps are necessary to set up the integration between your ServiceNow inst
 
 4. \[The person who is a ServiceNow admin\] Set up Outbound OAuth Provider.
 
-Select OAuth profile for Outbound OAuth Provider created at [Prerequisites (AAD OAuth Token)](#prerequisites-AAD-OAuth-token) step \#4 and select **Next**.
+Select OAuth profile for Outbound OAuth Provider created at [Prerequisites (AAD OAuth Token)](#prerequisites-aad-oauth-token) step \#4 and select **Next**.
 
 :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image12.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
 
@@ -460,7 +460,7 @@ Select OAuth profile for Outbound OAuth Provider created at [Prerequisites (AAD 
 
     1. Check **External OIDC Auth Token**.
 
-    1. Select the OAuth Client created at [Prerequisites (AAD OAuth Token)](#prerequisites-AAD-OAuth-token) step 5, and then select **Next**.
+    1. Select the OAuth Client created at [Prerequisites (AAD OAuth Token)](#prerequisites-aad-oauth-token) step 5, and then select **Next**.
 
     :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image28.png" alt-text="Graphical user interface, text, application Description automatically generated":::
 
@@ -468,7 +468,7 @@ Select OAuth profile for Outbound OAuth Provider created at [Prerequisites (AAD 
 
     1. Uncheck **Skip current step**.
 
-    1. Input the Client ID of the application that was created at [Prerequisites (AAD OAuth Token)](#prerequisites-AAD-OAuth-token) step \#3 and select **Next**.
+    1. Input the Client ID of the application that was created at [Prerequisites (AAD OAuth Token)](#prerequisites-aad-oauth-token) step \#3 and select **Next**.
 
     :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image29.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
 
@@ -488,7 +488,7 @@ Select OAuth profile for Outbound OAuth Provider created at [Prerequisites (AAD 
 
     1. Test Environment: Check the box to indicate a test phase to avoid Microsoft support agents contacting you to address the issue. If you're ready to move forward officially with Microsoft 365 support integration, uncheck the box.
 
-    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image.png" alt-text="Graphical user interface, text, application Description automatically generated":::
+    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image16.png" alt-text="Graphical user interface, text, application Description automatically generated":::
 
     1. Select **Next**.
 
@@ -502,7 +502,7 @@ Select OAuth profile for Outbound OAuth Provider created at [Prerequisites (AAD 
 
     1. Set up support integration settings.
 
-        1. On the **basic information** tab, select **Service Now** as the internal support tool, and type **Outbound App ID** as the value of Application ID on the Step - 6 Complete page, which was created in [Prerequisites (AAD OAuth Token)](#prerequisites-AAD-OAuth-token) step \#1.
+        1. On the **basic information** tab, select **Service Now** as the internal support tool, and type **Outbound App ID** as the value of Application ID on the Step - 6 Complete page, which was created in [Prerequisites (AAD OAuth Token)](#prerequisites-aad-oauth-token) step \#1.
 
         :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image18.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
 
@@ -514,11 +514,11 @@ Select OAuth profile for Outbound OAuth Provider created at [Prerequisites (AAD 
 
     - Authentication type: Select **AAD Auth**.
 
-    - Client Id: The **Client ID** value on the Step - 6 Complete the integration page, which is the Client ID of the application created in [Prerequisites (AAD OAuth Token)](#prerequisites-AAD-OAuth-token) step \#2.
+    - Client Id: The **Client ID** value on the Step - 6 Complete the integration page, which is the Client ID of the application created in [Prerequisites (AAD OAuth Token)](#prerequisites-aad-oauth-token) step \#2.
 
-    - Rest username: The **User Name** value on the Step - 6 Complete the integration page, which is the **Client ID** of the application created in [Prerequisites (AAD OAuth Token)](#prerequisites-AAD-OAuth-token) step \#3.
+    - Rest username: The **User Name** value on the Step - 6 Complete the integration page, which is the **Client ID** of the application created in [Prerequisites (AAD OAuth Token)](#prerequisites-aad-oauth-token) step \#3.
 
-    - Rest user password: The App Secret of the application created in [Prerequisites (AAD OAuth Token)](#prerequisites-AAD-OAuth-token) step \#3.
+    - Rest user password: The App Secret of the application created in [Prerequisites (AAD OAuth Token)](#prerequisites-aad-oauth-token) step \#3.
 
     :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image31.png" alt-text="Graphical user interface, application Description automatically generated":::
 
@@ -577,9 +577,9 @@ These prerequisite steps are necessary to set up Microsoft 365 support integrati
 
     1. Create a new application with the values below by selecting [Connect to a third party OAuth Provider](https://dev77417.service-now.com/wizard_view.do?sys_action=sysverb_wizard_ans&WIZARD:action=follow&wiz_referring_url=oauth_entity_list.do?sys_id=-1@99@sys_target=oauth_entity@99@sysparm_fixed_query=@99@sysparm_group_sort=@99@sysparm_parent=2c7cab53d7232100f20bc8170e61036b@99@sysparm_query=type%3dclient%5eORtype%3doauth_provider@99@sysparm_target=@99@sysparm_view=&wiz_collection_key=&wiz_collectionID=&wiz_collection=&wiz_collection_related_field=&wiz_view=&wiz_action=sysverb_new&sys_id=79ce2f53d7232100f20bc8170e610361&sysparm_query=type=client%5eORtype=oauth_provider&sysparm_target=&sys_target=oauth_entity).
 
-    - Client ID: The **Client ID** of the application created in [Prerequisites (Insights ONLY)](#prerequisites-Insights-ONLY) step \#1
+    - Client ID: The **Client ID** of the application created in [Prerequisites (Insights ONLY)](#prerequisites-insights-only) step \#1
 
-    - Client Secret: The App Secret of the application created in [Prerequisites (Insights ONLY)](#prerequisites-Insights-ONLY) step \#1
+    - Client Secret: The App Secret of the application created in [Prerequisites (Insights ONLY)](#prerequisites-insights-only) step \#1
 
     - Default Grant type: Client credentials
 
