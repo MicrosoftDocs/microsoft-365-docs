@@ -118,7 +118,7 @@ The following steps show you how to run a PowerShell script that searches for al
 
    ```powershell
      write-host "**************************************************"
-     write-host "     Security & Compliance Center      " -foregroundColor yellow -backgroundcolor darkgreen
+     write-host "     Security & Compliance Center PowerShell      " -foregroundColor yellow -backgroundcolor darkgreen
      write-host "   eDiscovery Partially Indexed Item Statistics   " -foregroundColor yellow -backgroundcolor darkgreen
      write-host "**************************************************"
      " " 

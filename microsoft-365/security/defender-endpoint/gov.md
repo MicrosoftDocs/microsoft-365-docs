@@ -157,10 +157,9 @@ Feature name|GCC|GCC High|DoD
 :---|:---:|:---:|:---:
 Network discovery|![No](images/svg/check-no.svg) Rolling out|![No](images/svg/check-no.svg) In development|![No](images/svg/check-no.svg) In development
 Web content filtering|![No](images/svg/check-no.svg) In development|![No](images/svg/check-no.svg) In development|![No](images/svg/check-no.svg) In development
-Integrations: Azure Sentinel|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg) Alerts <p> ![Yes](images/svg/check-yes.svg) Incidents & Raw data: In preview|![Yes](images/svg/check-yes.svg) Alerts <p> ![Yes](images/svg/check-yes.svg) Incidents & Raw data: In preview
-Integrations: Microsoft Cloud App Security|![Yes](images/svg/check-yes.svg)|![No](images/svg/check-no.svg) In development|![No](images/svg/check-no.svg) In development
-Integrations: Microsoft Compliance Manager|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)
-Integrations: Microsoft Defender for Identity|![No](images/svg/check-no.svg) Rolling out|![No](images/svg/check-no.svg) Rolling out|![No](images/svg/check-no.svg) Rolling out
+Integrations: Azure Sentinel|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg) Alerts <p> ![Yes](images/svg/check-yes.svg) Incidents & Raw data: In private preview|![Yes](images/svg/check-yes.svg) Alerts <p> ![Yes](images/svg/check-yes.svg) Incidents & Raw data: In private preview
+Integrations: Microsoft Cloud App Security|![Yes](images/svg/check-yes.svg)|![No](images/svg/check-no.svg) Rolling out|![No](images/svg/check-no.svg) Rolling out
+Integrations: Microsoft Defender for Identity|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)
 Integrations: Microsoft Endpoint DLP|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![No](images/svg/check-no.svg) Rolling out
 Integrations: Microsoft Power Automate & Azure Logic Apps|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg) Azure Logic Apps <p> ![No](images/svg/check-no.svg) Power Automate: In development
 Microsoft Threat Experts|![No](images/svg/check-no.svg) On engineering backlog|![No](images/svg/check-no.svg) On engineering backlog|![No](images/svg/check-no.svg) On engineering backlog
