@@ -30,7 +30,7 @@ The Content search tool in the Microsoft 365 compliance center doesn't provide a
 
 ## Before you run a targeted collection
 
-- You have to be a member of the eDiscovery Manager role group in Security & Compliance Center to run the script in Step 1. For more information, see [Assign eDiscovery permissions](assign-ediscovery-permissions.md).
+- You have to be a member of the eDiscovery Manager role group in the Microsoft 365 compliance center to run the script in Step 1. For more information, see [Assign eDiscovery permissions](assign-ediscovery-permissions.md).
 
 - You also have to be assigned the Mail Recipients role in your Exchange Online organization. This is required to run the **Get-MailboxFolderStatistics** cmdlet, which is included in the script. By default, the Mail Recipients role is assigned to the Organization Management and Recipient Management role groups in Exchange Online. For more information about assigning permissions in Exchange Online, see [Manage role group members](/exchange/manage-role-group-members-exchange-2013-help). You could also create a custom role group, assign the Mail Recipients role to it, and then add the members who need to run the script in Step 1. For more information, see [Manage role groups](/Exchange/permissions-exo/role-groups).
 
@@ -70,7 +70,7 @@ To display a list of mailbox folders or site documentlink (path) names:
    #########################################################################################################
    # This PowerShell script will prompt you for:                                #
    #    * Admin credentials for a user who can run the Get-MailboxFolderStatistics cmdlet in Exchange    #
-   #      Online and who is an eDiscovery Manager in the Security & Compliance Center.            #
+   #      Online and who is an eDiscovery Manager in the Microsoft 365 compliance center.            #
    # The script will then:                                            #
    #    * If an email address is supplied: list the folders for the target mailbox.            #
    #    * If a SharePoint or OneDrive for Business site is supplied: list the documentlinks (folder paths) #
@@ -87,7 +87,7 @@ To display a list of mailbox folders or site documentlink (path) names:
    #########################################################################################################
    # Collect the target email address or SharePoint Url
    $addressOrSite = Read-Host "Enter an email address or a URL for a SharePoint or OneDrive for Business site"
-   # Authenticate with Exchange Online and the Security & Compliance Center (Exchange Online Protection - EOP)
+   # Authenticate with Exchange Online and the Microsoft 365 compliance center (Exchange Online Protection - EOP)
    if ($addressOrSite.IndexOf("@") -ige 0)
    {
       # List the folder Ids for the target mailbox
