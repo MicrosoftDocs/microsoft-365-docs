@@ -151,7 +151,7 @@ On the **Send Feedback to Microsoft** page, let us know if you like something, i
 
    ![Screenshot showing the Send Feedback to Microsoft page.](../media/knowledge-management/feedback-page.png)
 
-When you submit feedback, we ask that you not include sensitive information, such as phone numbers, addresses, or highly personal stories. Instead, please provide information on the specific issue you are experiencing with Viva Topics or your experience with Viva Topics. This will help us maintain your privacy as we review and take action based on your feedback.
+When you submit feedback, we ask that you not include sensitive information, such as phone numbers, addresses, or highly personal stories. Instead, please provide information on the specific issue you are experiencing with Viva Topics or your experience in general with Viva Topics. This will help us maintain your privacy as we review and take action based on your feedback.
 
 Thank you for taking the time to share your thoughts with us. Your perspective helps us improve our existing features and develop new ones.
 
