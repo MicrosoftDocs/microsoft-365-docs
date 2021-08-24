@@ -60,13 +60,14 @@ The network connection will be allowed and a test message will be displayed.
 To review apps that would have been blocked, open Event Viewer and filter for Event ID 1125 in the Microsoft-Windows-Windows-Defender/Operational log. The following table lists all network protection events.
 
 | Event ID | Provide/Source | Description |
-|-|-|-|
-|5007 | Windows Defender (Operational) | Event when settings are changed |
-|1125 | Windows Defender (Operational) | Event when a network connection is audited |
-|1126 | Windows Defender (Operational) | Event when a network connection is blocked |
+|---|---|---|
+| 5007 | Windows Defender (Operational) | Event when settings are changed |
+| 1125 | Windows Defender (Operational) | Event when a network connection is audited |
+| 1126 | Windows Defender (Operational) | Event when a network connection is blocked |
 
 ## See also
 
-* [Network protection](network-protection.md)
-* [Enable network protection](enable-network-protection.md)
-* [Troubleshoot network protection](troubleshoot-np.md)
+- [Network protection](network-protection.md)
+- [Network protection and the TCP three-way handshake](network-protection.md#network-protection-and-the-tcp-three-way-handshake)
+- [Enable network protection](enable-network-protection.md)
+- [Troubleshoot network protection](troubleshoot-np.md)
