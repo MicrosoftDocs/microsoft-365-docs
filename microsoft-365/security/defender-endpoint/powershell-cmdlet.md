@@ -15,7 +15,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
-ms.technology: mda
+ms.technology: mde
 --- 
 
 # PowerShell cmdlets
