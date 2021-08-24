@@ -131,7 +131,7 @@ Verify that Microsoft Defender Antivirus is installed, is active and up to date.
 3. Select **Download installation package** and save the .msi file. You can run the msi package through the installation wizard, or follow the command-line steps in [Install Microsoft Defender for Endpoint using the command line](#install-microsoft-defender-for-endpoint-using-command-line).
           
    > [!NOTE]
-   > Microsoft Defender Antivirus will get installed and will be active unless you set it to passive mode. For more information, see [Need to set Microsoft Defender Antivirus to passive mode?](microsoft-defender-antivirus-on-windows-server.md#passive-mode-and-windows-server)
+   > Microsoft Defender Antivirus will get installed and will be active unless you set it to passive mode. For more information, see [Need to set Microsoft Defender Antivirus to passive mode?](microsoft-defender-antivirus-on-windows-server.md#passive-mode-and-windows-server).
  
 4. Select **Download onboarding package** and save the .zip file.
 
