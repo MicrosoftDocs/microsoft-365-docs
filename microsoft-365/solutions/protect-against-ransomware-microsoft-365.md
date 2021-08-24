@@ -104,7 +104,7 @@ For Windows 10 devices:
 | Microsoft Defender Firewall | A host-based firewall.  | Prevent attacks from inbound, unsolicited network traffic. | E3 and E5 |
 | Microsoft Defender Antivirus | Antimalware solution that uses machine learning, big-data analysis, in-depth threat resistance research, and the Microsoft cloud infrastructure to protect devices (or endpoints) in your organization. | Prevent installation and running of malware. | E3 and E5 |
 | Microsoft Defender SmartScreen | Protects against phishing or malware websites and applications, and the downloading of potentially malicious files. | To block or warn when checking sites, downloads, apps and files. | E3 and E5 |
-| Microsoft Defender for Endpoint |  | With tampering protection and network protection | E5 |
+| Microsoft Defender for Endpoint | Helps prevent, detect, investigate, and respond to advanced threats across devices (also referred to as endpoints). | With tampering protection and network protection | E5 |
 |  |  |  |  |
 
 ### Information
