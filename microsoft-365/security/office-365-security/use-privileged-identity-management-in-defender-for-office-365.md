@@ -34,7 +34,7 @@ Privileged Identity Management (PIM) is an Azure feature that, once set up, give
 
 By setting up PIM to work with Defender for Office 365, admins create a process for a user to request access to take the actions they need. The user must *justify* the need for the elevation of their privileges.
 
-In this example we will configure "Alex", a member of our security team who will have zero standing access within Office 365, but can elevate to both a role required for normal day to day operations, such as [Threat Hunting](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/threat-hunting-in-threat-explorer) and then also to a higher level of privilege when less frequent but sensitive operations, such as [remediating malicious delivered email](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/remediate-malicious-email-delivered-office-365) is required.
+In this example we will configure "Alex", a member of our security team who will have zero standing access within Office 365, but can elevate to both a role required for normal day to day operations, such as [Threat Hunting](threat-hunting-in-threat-explorer.md) and then also to a higher level of privilege when less frequent but sensitive operations, such as [remediating malicious delivered email](remediate-malicious-email-delivered-office-365.md) is required.
 
 > [!NOTE]
 > This will walk you through the steps required to setup PIM for a Security Analyst who requires the ability to purge emails using Threat Explorer in Microsoft Defender for Office 365, but the same steps can be used for other RBAC roles within the Security, and Compliance portal. For example this process could be used for a information worker who requires day to day access in eDiscovery to perform searches and case work, but only occasionally needs the elevated right to export data from the tenant.
@@ -88,10 +88,12 @@ In the Security Portal, create a custom role group that contains the permissions
 
 ## How do you know this worked?
 
-1. Login with the test user (Alex), who will should have no administrative access within the [Microsoft 365 security center](https://docs.microsoft.com/en-us/microsoft-365/security/defender/overview-security-center) at this point.
-2. [Activate the Security Reader role in PIM](https://docs.microsoft.com/en-us/azure/active-directory/privileged-identity-management/pim-how-to-activate-role), this should be the day to day level of access needed to [hunt for threats in O365.](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/threat-hunting-in-threat-explorer)
+1. Login with the test user (Alex), who will should have no administrative access within the [Microsoft 365 Defender portal](/microsoft-365/security/defender/overview-security-center) at this point.
+2. [Activate the Security Reader role in PIM](/azure/active-directory/privileged-identity-management/pim-how-to-activate-role), this should be the day to day level of access needed to [hunt for threats in O365.](threat-hunting-in-threat-explorer.md)
 3. If you try to perform remediation actions like purge email using Threat Explorer, you get an error stating you need additional permissions.
-:::image type="content" source="../../media/pim-mdo-add-the-search-and-purge-role-assignment-to-this-pim-role.PNG" alt-text="If the user we added (Alex) through the Security Reader PIM role tries to delete a suspicious email he'll get a message saying 'You need the Search and Purge role to take action on this email. Contact your administrator to get the role assignment or add the email to an incident.":::
-4. PIM a second time into higher elevated role, after a short delay you should now be able to [remediate malicious delivered email](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/remediate-malicious-email-delivered-office-365) without issue.
+
+   :::image type="content" source="../../media/pim-mdo-add-the-search-and-purge-role-assignment-to-this-pim-role.PNG" alt-text="If the user we added (Alex) through the Security Reader PIM role tries to delete a suspicious email he'll get a message saying 'You need the Search and Purge role to take action on this email. Contact your administrator to get the role assignment or add the email to an incident.":::
+
+4. PIM a second time into higher elevated role, after a short delay you should now be able to [remediate malicious delivered email](remediate-malicious-email-delivered-office-365.md) without issue.
 
 Permanent assignment of administrative roles and permissions such as Search and Purge Role doesn't hold with the Zero Trust security initiative, but as you can see, PIM can be used to grant just-in-time access to the toolset required.
