@@ -77,10 +77,10 @@ Microsoft Managed Desktop follows a change control process as outlined in our se
 ## Compliance
 Microsoft Managed Desktop has undergone external audits and obtained a comprehensive set of compliance offerings. You can find more information in Microsoft Managed Desktop [Compliance](/microsoft-365/managed-desktop/intro/compliance). Audit reports are available for download at the Microsoft [Service Trust Portal](https://aka.ms/stp), which serves as a central repository for Microsoft Enterprise Online Services. (Microsoft Managed Desktop is listed within these documents under the category “Monitoring and Management.”)
 
-### Data Subject Rights
+### Data subject requests
 Microsoft Managed Desktop follows GDPR and CCPA privacy regulations, which give data subjects specific rights to their personal data. These rights include obtaining copies of personal data, requesting corrections to it, restricting the processing of it, deleting it, or receiving it in an electronic format so it can be moved to another controller. For more information about Data Subject Requests (DSRs) generally, see [Data Subject Requests and the GDPR and CCPA](/compliance/regulatory/gdpr-data-subject-requests).
 
-To exercise Data Subject Rights (DSRs) on data collected by the Microsoft Managed Desktop case management system, see the following:
+To exercise data subject requests on data collected by the Microsoft Managed Desktop case management system, see the following:
 
 - Data from Microsoft Defender for Endpoint alerts: Your security administrator can request deletion or extraction of personal data related to Microsoft Defender for Endpoint alerts by submitting a report request at the [Admin Portal](https://aka.ms/memadmin). In the request, select request type **Change request**, category **Security**, and subcategory **Other**. Provide the relevant device names in the request description.
 - Data from Microsoft Managed Desktop support requests: Your IT administrator can request deletion or extraction of personal data related support requests by submitting a report request at the [Admin Portal](https://aka.ms/memadmin). In the request, select request type **Change request**, category **Security**, and subcategory **Other**. Provide the relevant device names or user names in the request description.
