@@ -15,7 +15,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
-ms.technology: mde
+ms.technology: mda
 ---
 
 # Troubleshoot SIEM tool integration issues
