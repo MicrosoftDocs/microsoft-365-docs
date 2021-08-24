@@ -29,8 +29,16 @@ Cloud protection works together with Microsoft Defender Antivirus to deliver acc
 
 ## Why cloud protection should be turned on
 
-Certain security features in Microsoft Defender for Endpoint only work when cloud protection is turned on, as listed in the following table:
+Certain security features in Microsoft Defender for Endpoint only work when cloud protection is turned on, as listed in the following table: <br/><br/>
 
+| Capability  | Description  |
+|---------|---------|
+| Checking against metadata in the cloud     | The Microsoft Defender Antivirus cloud service uses machine learning models as an additional layer of defense. These machine learning models include metadata, so when a suspicious or malicious file is detected, its metadata is checked. <br/><br/>To learn more, see [Blog: Get to know the advanced technologies at the core of Microsoft Defender for Endpoint next-generation protection](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/)  |
+| Cloud protection and sample submission     | Files and executables can be sent to the Microsoft Defender Antivirus cloud service for detonation and analysis. <br/><br/>To learn more, see [Cloud protection and sample submission in Microsoft Defender Antivirus](cloud-protection-microsoft-antivirus-sample-submission.md).<br/><br/>**NOTE**: Automatic sample submission relies on cloud protection, although it can also be configured as a standalone setting.         |
+| Tamper protection     | Tamper protection helps protect against unwanted changes to your organization's security settings. To enforce tamper protection in the Microsoft 365 Defender portal, cloud protection must be enabled.        |
+| Attack surface reduction rules     |         |
+| Block at first sight     |         |
+| Emergency signature updates |   |
 
 
 ## Methods to configure cloud protection
