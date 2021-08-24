@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 f1.keywords:
 - NOCSH
-description: "Use mailbox utilization service alerts to monitor mailboxes on hold that are reaching their mailbox quota limits."
+description: "Use mailbox utilization service alerts to monitor mailboxes on hold that are reaching their mailbox quota."
 ---
 
 # Service alerts for mailbox utilization in Exchange Online monitoring
 
-We've released a new Exchange Online service alert that informs you of mailboxes that are on hold that are at risk of reaching or exceeding their quota limits. These service alerts provide visibility to the number of mailboxes in your organization that may require admin intervention.
+We've released a new Exchange Online service alert that informs you of mailboxes that are on hold that are at risk of reaching or exceeding their quota. These service alerts provide visibility to the number of mailboxes in your organization that may require admin intervention.
 
 These service alerts are displayed in the Microsoft 365 admin center. To view these service alerts, go to **Health** > **Service health** > **Exchange Online** and then click the **Active issues** tab. Here's an example of a mailbox utilization service alert.
 
@@ -34,16 +34,16 @@ Alternatively, the direct URL to the mailbox usage report is <https://admin.micr
 
 ## What do these service alerts indicate?
 
-The service alerts for mailbox utilization inform admins about mailboxes on hold that are nearing the mailbox storage quota limits. The type of holds that that can be placed on mailboxes include Litigation holds, eDiscovery hold, and Microsoft 365 retention policies (that are configured to retain data). When a mailbox is on hold, users (or automated processes) can't permanently remove data from their mailbox. Instead, admins must configure MRM retention policies in Exchange Online (inline with their organization's compliance policies related to data retention) to move data from a user's primary mailbox to their archive mailbox. If not and a mailbox on a hold reaches a critical or warning state, admins have to [enable archive mailboxes](../compliance/enable-archive-mailboxes.md) and [enable auto-expanding archiving](../compliance/enable-unlimited-archiving.md) and then make sure that the retention period for the archive policy assigned to the mailbox (that moves email from the primary mailbox to the archive mailbox) is short enough. If nothing is done to resolve the quota issues that are identified by the mailbox utilization service alerts, then users might not be able to send or receive email messages or meeting invites.
+The service alerts for mailbox utilization inform admins about mailboxes on hold that are nearing the mailbox storage quota. The type of holds that that can be placed on mailboxes include Litigation holds, eDiscovery hold, and Microsoft 365 retention policies (that are configured to retain data). When a mailbox is on hold, users (or automated processes) can't permanently remove data from their mailbox. Instead, admins must configure MRM retention policies in Exchange Online (inline with their organization's compliance policies related to data retention) to move data from a user's primary mailbox to their archive mailbox. If not and a mailbox on a hold reaches a critical or warning state, admins have to [enable archive mailboxes](../compliance/enable-archive-mailboxes.md) and [enable auto-expanding archiving](../compliance/enable-unlimited-archiving.md) and then make sure that the retention period for the archive policy assigned to the mailbox (that moves email from the primary mailbox to the archive mailbox) is short enough. If nothing is done to resolve the quota issues that are identified by the mailbox utilization service alerts, then users might not be able to send or receive email messages or meeting invites.
 
-A service alert for mailbox utilization contains tables about the number of mailboxes that are nearing their quota limits. The following sections describe the information in these tables and the action admins can take to help ensure these mailboxes don't exceed their quota limits.
+A service alert for mailbox utilization contains tables about the number of mailboxes that are nearing their quota. The following sections describe the information in these tables and the action admins can take to help ensure these mailboxes don't exceed their quota.
 
 > [!NOTE]
 > Service alerts contain descriptions of the mailbox quota properties that appear in the columns in the tables described in the following sections.
 
 ### Mailboxes on hold without an archive
 
-The following table lists the number of mailboxes on hold that are nearing their quota limits but don't have an archive mailbox enabled. Each column in the table identifies the specific quota and the number of mailboxes nearing that quota.
+The following table lists the number of mailboxes on hold that are nearing their quota but don't have an archive mailbox enabled. Each column in the table identifies the specific quota and the number of mailboxes nearing that quota.
 
 | # Mailboxes ProhibitSendReceiveQuota (Warning)| # Mailboxes ProhibitSendReceiveQuota (Critical)** |# Mailboxes RecoverableItemsQuota (Warning)|# Mailboxes RecoverableItemsQuota (Critical)** |
 |:--------------|:--------------|:------------------|:--------------- |
@@ -56,7 +56,7 @@ After you enable an archive mailbox, we recommend that you consider increasing t
 
 ### Mailboxes on hold with an archive
 
-The following table lists the number of mailboxes on hold that are nearing their quota limits and have an archive mailbox enabled.
+The following table lists the number of mailboxes on hold that are nearing their quota and have an archive mailbox enabled.
 
 |# Mailboxes ProhibitSendReceiveQuota (Warning) |# Mailboxes ProhibitSendReceiveQuota (Critical) |# Mailboxes RecoverableItemsQuota (Warning) |# Mailboxes RecoverableItemsQuota (Critical)** |
 |:--------------|:--------------|:------------------|:--------------- |
@@ -99,15 +99,15 @@ The following list describes each column in the previous table.
 
 - **HasMoveDumpsterToArchiveTag**: Indicates that the retention policy includes a retention tag that move items in the Recoverable Items folder (also called the *dumpster*) in the primary mailbox to the Recoverable Items folder in the archive. This type of retention tag is set by an admin. If the retention period for the recoverable items tag is too long, then reducing the retention period should help prevent mailboxes from nearing the quota for Recoverable Items folder. For example, if the retention period is set to 30 days, reducing it to three or five days may help.  For more information, see [Increase the Recoverable Items quota for mailboxes on hold](../compliance/increase-the-recoverable-quota-for-mailboxes-on-hold.md).
 
-- **HasMovePrimaryToArchiveTag**: Indicates if there is a default "move to archive" retention tag (also called an *archive policy*) included in the retention policy. In this case, messages will be moved from the regular folders in the primary mailbox to the archive mailbox. This type of retention tag is set by an admin. Again, if the retention period for this tag is too short, users may have problems with continually reaching the quota limits for their primary mailbox. Reducing the retention period for an archive policy may help solve this issue.
+- **HasMovePrimaryToArchiveTag**: Indicates if there is a default "move to archive" retention tag (also called an *archive policy*) included in the retention policy. In this case, messages will be moved from the regular folders in the primary mailbox to the archive mailbox. This type of retention tag is set by an admin. Again, if the retention period for this tag is too short, users may have problems with continually reaching the quota for their primary mailbox. Reducing the retention period for an archive policy may help solve this issue.
 
-- **HasPersonalArchiveTag**: Indicates if the retention policy includes a personal "move to archive" tag. If the retention policy does include a personal "move to archive" tag, then users can apply this tag to folders and messages in their mailbox to move items to the archive. Users can also set up an inbox rule to move messages to a folder with this tagged applied to it. In both cases, this can help move items to the archive to help avoid reaching the quota limits for their primary mailbox.
+- **HasPersonalArchiveTag**: Indicates if the retention policy includes a personal "move to archive" tag. If the retention policy does include a personal "move to archive" tag, then users can apply this tag to folders and messages in their mailbox to move items to the archive. Users can also set up an inbox rule to move messages to a folder with this tagged applied to it. In both cases, this can help move items to the archive to help avoid reaching the quota for their primary mailbox.
 
 - **Mailboxes**: Indicates the number of mailboxes (those with or without an archive, which is indicated in the **MailboxType** column) the retention policy is assigned to.
 
 ## How often will I see these service alerts?
 
-If you don't take action to resolve the quota issues, you can expect to see this type of service alert every four days. Subsequent service alerts may contain higher mailbox counts for other mailboxes that are nearing their quota limits. If you take action to resolve quota issues, this service alert will only occur when another mailbox with quota issues is identified.
+If you don't take action to resolve the quota issues, you can expect to see this type of service alert every four days. Subsequent service alerts may contain higher mailbox counts for other mailboxes that are nearing their quota. If you take action to resolve quota issues, this service alert will only occur when another mailbox with quota issues is identified.
 
 ## More information
 
