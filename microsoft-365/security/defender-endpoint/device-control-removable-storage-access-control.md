@@ -194,7 +194,7 @@ This capability (in Microsoft Endpoint Manager admin center (<https://endpoint.m
 
 ## View Device Control Removable Storage Access Control data in Microsoft Defender for Endpoint
 
-The [Microsoft 365 security portal](https://security.microsoft.com/advanced-hunting) shows events triggered by the Device Control Removable Storage Access Control. To access the Microsoft 365 security, you must have the following subscription:
+The [Microsoft 365 Defender portal](https://security.microsoft.com/advanced-hunting) shows events triggered by the Device Control Removable Storage Access Control. To access the Microsoft 365 security, you must have the following subscription:
 
 - Microsoft 365 for E5 reporting
 
