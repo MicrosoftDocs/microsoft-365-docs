@@ -25,13 +25,17 @@ ms.technology: mde
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
-Cloud protection works together with Microsoft Defender Antivirus to deliver accurate, real-time, and intelligent protection. Cloud protection should be enabled by default; however, you can configure cloud protection to suit your organization's needs. This article describes why you want cloud protection turned on, and how to configure cloud protection.
+## Summary
+
+Cloud protection works together with Microsoft Defender Antivirus to deliver accurate, real-time, and intelligent protection. Cloud protection should be enabled by default; however, you can configure cloud protection to suit your organization's needs.
+
+This article describes why you want cloud protection turned on, and how to configure cloud protection.
 
 ## Why cloud protection should be turned on
 
-Certain security features in Microsoft Defender for Endpoint only work when cloud protection is turned on, as listed in the following table: <br/><br/>
+Microsoft Defender Antivirus cloud protection helps protect against malware on your endpoints and across your network. We recommend keeping cloud protection turned on. Certain security features and capabilities in Microsoft Defender for Endpoint only work when cloud protection is enabled. These features and capabilities are listed in the following table: <br/><br/>
 
-| Capability  | Description  |
+| Feature/Capability  | Description  |
 |---------|---------|
 | Checking against metadata in the cloud  | The Microsoft Defender Antivirus cloud service uses machine learning models as an additional layer of defense. These machine learning models include metadata, so when a suspicious or malicious file is detected, its metadata is checked. <br/><br/>To learn more, see [Blog: Get to know the advanced technologies at the core of Microsoft Defender for Endpoint next-generation protection](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/)  |
 | Cloud protection and sample submission | Files and executables can be sent to the Microsoft Defender Antivirus cloud service for detonation and analysis. <br/><br/>To learn more, see [Cloud protection and sample submission in Microsoft Defender Antivirus](cloud-protection-microsoft-antivirus-sample-submission.md).<br/><br/>**NOTE**: Automatic sample submission relies on cloud protection, although it can also be configured as a standalone setting.         |
