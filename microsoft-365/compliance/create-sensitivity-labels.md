@@ -179,7 +179,9 @@ When you use built-in labeling for Office apps on Windows, macOS, iOS, and Andro
 Other apps and services that support sensitivity labels might update more frequently than 24 hours with their own update schedules and triggers for policy updates. Check their documentation for details. For example, for the Azure Information Protection unified labeling client, see the **Policy update** row in the [Detailed comparisons for the Azure Information Protection clients](/azure/information-protection/rms-client/use-client#detailed-comparisons-for-the-azure-information-protection-clients) table.
 
 > [!TIP]
-> Remember to factor in timing dependencies that can sometimes delay sensitivity labels and label policies from working as expected. For example, populating a new group and group membership changes, network replication latency and bandwidth restrictions, and [group membership caching by the Azure Information Protection service](/azure/information-protection/prepare#group-membership-caching-by-azure-information-protection) for labels that apply encryption. With many external dependencies that each have their own timing cycles, it’s a good idea to wait 24 hours before you spend time troubleshooting labels and label policies for recent changes.
+> Remember to factor in timing dependencies that can sometimes delay sensitivity labels and label policies from working as expected. For example, populating a new group and group membership changes, network replication latency and bandwidth restrictions, and [group membership caching by the Azure Information Protection service](/azure/information-protection/prepare#group-membership-caching-by-azure-information-protection) for labels that apply encryption.
+> 
+> With many external dependencies that each have their own timing cycles, it’s a good idea to wait 24 hours before you spend time troubleshooting labels and label policies for recent changes.
 
 ### Additional label policy settings with Security & Compliance Center PowerShell
 
