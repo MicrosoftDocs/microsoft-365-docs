@@ -17,7 +17,7 @@ ms.topic: article
 ms.date: 08/24/2021
 ---
 
-# cloud protection and Microsoft Defender Antivirus
+# Cloud protection and Microsoft Defender Antivirus
 
 **Applies to:**
 
@@ -44,7 +44,7 @@ With cloud protection, next-generation technologies provide rapid identification
  
 ## How to get cloud protection 
 
-cloud protection is enabled by default. However, you may need to re-enable it if it has been disabled as part of previous organizational policies. To learn more, see [Turn on cloud protection](enable-cloud-protection-microsoft-defender-antivirus.md).
+cloud protection is enabled by default. However, you might need to re-enable it if it has been disabled as part of previous organizational policies. To learn more, see [Turn on cloud protection](enable-cloud-protection-microsoft-defender-antivirus.md).
 
 Organizations running Windows 10 E5 can also take advantage of emergency dynamic intelligence updates, which provide near real-time protection from emerging threats. When you turn on cloud protection, fixes for malware issues can be delivered via the cloud within minutes, instead of waiting for the next update. [Configure Microsoft Defender Antivirus to automatically receive new protection updates based on reports from our cloud service](manage-event-based-updates-microsoft-defender-antivirus.md#cloud-report-updates).
 
