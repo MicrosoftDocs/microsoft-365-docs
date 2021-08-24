@@ -36,6 +36,8 @@ A ransomware attacker that has infiltrated a Microsoft 365 tenant can attempt to
 - Encrypting files
 - Copying files outside the tenant (data exfiltration)
 
+ADD: Built-in capabilities for files/email for M365 services
+
 ## What’s in this solution
 
 This solution steps you through the deployment of Microsoft 365 protection and mitigation features, configurations, and ongoing operations to minimize the ability of a ramsomware attacker to use the critical data in your Microsoft 365 tenant as financial leverage and hold your organization at ransom.
@@ -61,23 +63,23 @@ To protect your Microsoft 365 tenant from a ransomware attack, use these Microso
 
 ### Security baseline
 
-| Capability or feature | Description | Helps prevent... | Licensing |
+| Capability or feature | Description | Helps... | Licensing |
 |:-------|:-----|:-------|:-------|
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
+| Microsoft Secure Score |  Feature of Microsoft 365 Defender that measures the security posture of a Microsoft 365 tenant. | Assess your security configuration and provide suggestions to improve it | E3 or E5 |
+| Attack surface reduction rules | Configuration settings to reduce your organization's vulnerability to cyberthreats and attacks. | Block suspicious activity and vulnerable content | E3 or E5 |
+| Exchange email settings |  Enables services to reduce your organization's vulnerability to an email-based attack. | Initial access to your tenant  | E3 or E5 |
+| Windows, Edge, and Microsoft 365 Apps for Enterprise settings | Industry-standard security configurations that are broadly known and well-tested. | Attacks based on  | E3 or E5 |
 
 ### Detection and response
 
 | Capability or feature | Description | Helps detect and respond to... | Licensing |
 |:-------|:-----|:-------|:-------|
-| [Microsoft 365 Defender](/microsoft-365/security/defender) |Combines signals and orchestrates capabilities into a single solution. Enables security professionals to stitch together threat signals and determine the full scope and impact of a threat. Microsoft 365 Defender takes automatic actions to prevent or stop the attack and self-heal affected mailboxes, endpoints, and user identities. |  | E5 |
-| [Microsoft Defender for Identity](/defender-for-identity/what-is) |  A cloud-based security solution that uses your on-premises Active Directory Domain Services (AD DS) signals to identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions directed at your organization. Focus on Microsoft Defender for Identity next because it protects your on-premises and cloud infrastructure, has no dependencies or prerequisites, and can provide immediate security benefits. |  | E5 |
-| [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security) | Safeguards your organization against malicious threats posed by email messages, links (URLs), and collaboration tools. Protects against malware, phishing, spoofing, and other attack types. Configuring Microsoft Defender for Office 365 is recommended because change control, migrating settings from incumbent system, and other considerations can take longer to deploy. |  | E5 |
-| [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint) | Helps prevent, detect, investigate, and respond to advanced threats across devices (also referred to as endpoints). Defender for Endpoint is a robust threat protection offering. |  | E5 |
-| [Azure AD Identity Protection](/azure/active-directory/identity-protection/) | A tool that allows organizations to automate the detection and remediation of identity-based risks and investigate those risks. |  | E5 |
-| [Microsoft Cloud App Security](/cloud-app-security) | A cloud access security broker for discovery, investigation, and governance. You can enable Microsoft Cloud App Security early to begin collecting data and insights. Implementing information and other targeted protection across your SaaS apps involves planning and can take more time. |  | E5 |
+| [Microsoft 365 Defender](/microsoft-365/security/defender) | Combines signals and orchestrates capabilities into a single solution. Enables security professionals to stitch together threat signals and determine the full scope and impact of a threat. Microsoft 365 Defender takes automatic actions to prevent or stop the attack and self-heal affected mailboxes, endpoints, and user identities. | Incidents, which are the combined alerts and data that make up an attack | E5 |
+| [Microsoft Defender for Identity](/defender-for-identity/what-is) |  A cloud-based security solution that uses your on-premises Active Directory Domain Services (AD DS) signals to identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions directed at your organization. Focus on Microsoft Defender for Identity next because it protects your on-premises and cloud infrastructure, has no dependencies or prerequisites, and can provide immediate security benefits. | Credential compromise for AD DS accounts | E5 |
+| [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security) | Safeguards your organization against malicious threats posed by email messages, links (URLs), and collaboration tools. Protects against malware, phishing, spoofing, and other attack types. Configuring Microsoft Defender for Office 365 is recommended because change control, migrating settings from incumbent system, and other considerations can take longer to deploy. | Phishing attacks | E5 |
+| [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint) | Helps prevent, detect, investigate, and respond to advanced threats across devices (also referred to as endpoints). | Malware installation | E5 |
+| [Azure AD Identity Protection](/azure/active-directory/identity-protection/) | Automates the detection and remediation of identity-based risks and investigate those risks. | Credential compromise for Azure AD accounts and privilege escalation | E5 |
+| [Microsoft Cloud App Security](/cloud-app-security) | A cloud access security broker for discovery, investigation, and governance. | Lateral movement and data exfiltration | E5 |
 
 ### Identities
 
@@ -88,18 +90,69 @@ To protect your Microsoft 365 tenant from a ransomware attack, use these Microso
 
 ### Devices
 
+For device and app management:
+
 | Capability or feature | Description | Helps prevent... | Licensing |
 |:-------|:-----|:-------|:-------|
-|Microsoft Intune|Manage devices and applications.|Device or app compromise and access|Microsoft 365 E3 or E5|
+| Microsoft Intune | Manage devices and the applications that run on them. | Device or app compromise and access. | Microsoft 365 E3 or E5 |
+|  |  |  |  |
+
+For Windows 10 devices:
+
+| Capability or feature | Description | Helps... | Licensing |
+|:-------|:-----|:-------|:-------|
+| Microsoft Defender Firewall | A host-based firewall.  | Prevent attacks from inbound, unsolicited network traffic. | E3 and E5 |
+| Microsoft Defender Antivirus | Antimalware solution that uses machine learning, big-data analysis, in-depth threat resistance research, and the Microsoft cloud infrastructure to protect devices (or endpoints) in your organization. | Prevent installation and running of malware. | E3 and E5 |
+| Microsoft Defender SmartScreen | Protects against phishing or malware websites and applications, and the downloading of potentially malicious files. | To block or warn when checking sites, downloads, apps and files. | E3 and E5 |
+| Microsoft Defender for Endpoint |  | With tampering protection and network protection | E5 |
+|  |  |  |  |
 
 ### Information
 
+| Capability or feature | Description | Helps... | Licensing |
+|:-------|:-----|:-------|:-------|
+| Insider risk management | Define specific policies to identify risk indicators and to take action to mitigate these risks. | Identify, triage, and act on risky user activity. | E5 |
+| Privileged access management | Limits standing access to sensitive data or access to critical configuration settings | Prevent an attacker from performan adminstration tasks. | E5 |
+| Data loss prevention (DLP) | Protects sensitive data and reduces risk by preventing users from inappropriately sharing it. | Prevent data exfiltration. | E3 and E5 |
+
+
+<!--
+
+These features of information protection and compliance cannot provide protection against ransomware attackers if the attackers have the appropriate user credentials. This is why it is so important to lock down permmissions for your ransomable resources.
+
+| Capability or feature | Description | Licensing |
+|:-------|:-----|:-------|:-------|
+| Sensitivity labels |  |  |
+| Double Key Encryption (DKE) |  |  |
+| Office 365 Message Encryption (OME) |  |  |
+| Office 365 Advanced Message Encryption |  |  |
+| Customer key |  |  |
+| BYOK/HYOK |  |  |
+
+- Microsoft 365 E5 subscription (paid or trial version)
+- Microsoft 365 E3 subscription + the Microsoft 365 E5 Compliance add-on
+- Microsoft 365 E3 subscription + the Microsoft 365 E5 Insider Risk Management add-on
+- Microsoft 365 A5 subscription (paid or trial version)
+- Microsoft 365 A3 subscription + the Microsoft 365 A5 Compliance add-on
+- Microsoft 365 A3 subscription + the Microsoft 365 A5 Insider Risk Management add-on
+- Microsoft 365 G5 subscription (paid or trial version)
+- Microsoft 365 G5 subscription + the Microsoft 365 G5 Compliance add-on
+- Microsoft 365 G5 subscription + the Microsoft 365 G5 Insider Risk Management add-on
+- Office 365 Enterprise E5 subscription (paid or trial version)
+- Office 365 A5 subscription (paid or trial version)
+- Office 365 Enterprise E3 subscription + the Office 365 Advanced Compliance add-on (no longer available for new subscriptions)
+
 | Capability or feature | Description | Helps prevent... | Licensing |
 |:-------|:-----|:-------|:-------|
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
+| Retention policies and labels |  |  |  |
+| Information barriers |  |  |  |
+| Communication compliance |  |  |  |
+| Customer Lockbox |  |  | E5 |
+| eDiscovery |  |  |  |
+| Advanced eDiscovery |  |  | E5 |
+
+--> 
+
 
 ## Impact on users and change management
 

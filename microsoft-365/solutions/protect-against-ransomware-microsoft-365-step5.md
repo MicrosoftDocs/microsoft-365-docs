@@ -28,6 +28,8 @@ General guidelines:
 
   Move user data to cloud solutions like OneDrive/SharePoint to take advantage of versioning and recycle bin capabilities.
 
+- Classify your data and know where it is.
+
 - Educate users on how to recover their files by themselves to reduce delays and cost of recovery.
 
 - Designate Protected Folders.

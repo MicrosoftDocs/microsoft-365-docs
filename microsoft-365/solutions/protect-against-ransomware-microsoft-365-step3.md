@@ -23,36 +23,42 @@ description: Step through protecting your Microsoft 365 resources from ransomwar
 
 Use the following sections to protect your organization from credential compromise, which is typically the first stage of a larger ransomware attack.
 
-## Increase password security
+## Increase sign-in security
 
-- Use Azure AD Identity Protection to prevent and detect attacks
+First, use these password best practices:
 
-- Extend extend blocking of known weak passwords to your on-premises Active Directory Domain Services (AD DS) with Azure AD Password Protection
+- Block known weak and custom passwords with Azure AD Password Protection.
+- Extend blocking of known weak and custom passwords to your on-premises Active Directory Domain Services (AD DS) with Azure AD Password Protection.
+- Allow your users to change their own passwords with Self-Service Password Reset (SSPR).
 
-- Enforce strong multi-factor authentication (MFA) or passwordless logon for all users starting with administrators by using one or more of:
+Next, implement the [Common identity and device access policies](/microsoft-365/security/office-365-security/identity-access-policies). These policies provide higher security for access to Microsoft 365 cloud services, including on-premises applications published with Azure AD Application Proxy. 
 
-  - Passwordless authentication with Windows Hello or Microsoft Authenticator app
+For user sign-ins, these policies include:
 
-  - Azure Multi-Factor Authentication
+- Requiring MFA for priority accounts (in the short term) and eventually all user accounts.
+- Requiring high-risk users to use MFA.
+- Requiring high-risk users to change their passwords.
 
-  - Third-party MFA solutions
+## Prevent privilege escalation
 
+Use these best practices:
 
-### Prevent privilege escalation
-
-- Practice the principle of least-privilege and maintain credential hygiene. Avoid the use of domain-wide, admin-level service accounts. Restricting local administrative privileges can help limit installation of RATs and other unwanted applications.
-
-- Enforce end-to-end session security. Explicitly validate the trust of users and workstations before allowing access to administrative interfaces using Azure AD Conditional Access.
-
-- Enable Local Admin password management
-
-- Determine where highly privileged accounts are logging on and exposing credentials. Highly privileged accounts should not be present on workstations.
-
+- Implement the principle of least-privilege and maintain credential hygiene. 
+- Avoid the use of domain-wide, admin-level service accounts. 
+- Restricting local administrative privileges can help limit installation of Remote Access Trojans (RATs) and other unwanted applications.
+- Use Azure AD Conditional Access to explicitly validate the trust of users and workstations before allowing access to administrative portals. See [this example](/azure/active-directory/conditional-access/howto-conditional-access-policy-azure-management) for the Azure portal.
+- Enable Local Admin password management.
+- Determine where highly privileged accounts are signing in and exposing credentials. Highly privileged accounts should not be present on workstations.
 - Disable the local storage of passwords and credentials.
 
 ## Impact on users and change management
 
-TBD
+Users in your organization must be made aware of:
+
+- The new requirements for stronger passwords.
+- The changes in sign-in processes, such as the required use of MFA and the MFA secondary authenticaton method registration.
+- The use of password maintenance with SSPR. For example, no more calls to helpdesk for a password reset.
+- The prompting to require MFA or a password change for sign-ins that are determined to be risky.
 
 ## Resulting configuration
 

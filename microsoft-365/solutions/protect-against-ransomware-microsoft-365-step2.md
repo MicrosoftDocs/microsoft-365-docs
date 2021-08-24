@@ -55,8 +55,8 @@ Use these tools to detect and respond to the following common threats from ranso
 
 - Data exfiltration
 
-   - Microsoft Cloud App Security
    - Microsoft Defender for Office 365
+   - Microsoft Cloud App Security
 
 The following tools use Microsoft 365 Defender and its portal (https://security.microsoft.com) as a common threat collection and analysis point:
 
