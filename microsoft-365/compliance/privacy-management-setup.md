@@ -73,4 +73,4 @@ Privacy management will kickstart evaluating your data and help give you a look 
 
 ## Get started with subject rights requests
 
-Privacy management's subject rights requests solution can help you manage requests from individuals who want to review or manage the personal data you store about them. To learn more about using these features, see [Manage subject rights requests](privacy-management-subject-rights-requests.md).
+Privacy management's subject rights requests solution can help you handle requests from individuals who want to review or manage the personal data you store about them. To learn more about using these features, see [Manage subject rights requests](privacy-management-subject-rights-requests.md).
