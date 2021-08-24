@@ -118,6 +118,8 @@
         items:
           - name: Sensor settings and health
             href: ../defender-identity/sensor-health.md
+          - name: Directory Services account
+            href: ../defender-identity/directory-service-accounts.md
           - name: VPN integration
             href: ../defender-identity/vpn-integration.md
           - name: Set entity tags
@@ -160,22 +162,6 @@
                       href: first-incident-path-phishing.md
                     - name: Identity
                       href: first-incident-path-identity.md
-              - name: Integrate Microsoft 365 Defender into your security operations
-                items: 
-                 - name: Introduction
-                   href: integrate-microsoft-365-defender-secops.md
-                 - name: Step 1. Operations readiness
-                   href: integrate-microsoft-365-defender-secops-plan.md
-                 - name: Step 2. Readiness assessment using Zero Trust
-                   href: integrate-microsoft-365-defender-secops-readiness.md
-                 - name: Step 3. Integration with your SOC services
-                   href: integrate-microsoft-365-defender-secops-services.md
-                 - name: Step 4. Roles, responsibilities, and oversight
-                   href: integrate-microsoft-365-defender-secops-roles.md
-                 - name: Step 5. Test use cases
-                   href: integrate-microsoft-365-defender-secops-use-cases.md
-                 - name: Step 6. SOC maintenance tasks
-                   href: integrate-microsoft-365-defender-secops-tasks.md
               - name: Incident response playbooks
                 href: /security/compass/incident-response-playbooks
               - name: Email notifications
@@ -201,7 +187,7 @@
               - name: View details and results
                 href: m365d-autoir-results.md
               - name: Address false positives and negatives
-                href: m365d-autoir-report-false-positives-negatives.md
+                href: m365d-autoir-report-false-positives-negatives.md   
        - name: Advanced hunting
          items: 
              - name: Advanced hunting overview
@@ -320,6 +306,24 @@
                 href: ../mtp/microsoft-threat-experts.md
               - name: Configure and manage Microsoft Threat Experts capabilities
                 href: ../mtp/configure-microsoft-threat-experts.md
+       - name: Integrate Microsoft 365 Defender into your security operations
+         items: 
+          - name: Introduction
+            href: integrate-microsoft-365-defender-secops.md
+          - name: Step 1. Operations readiness
+            href: integrate-microsoft-365-defender-secops-plan.md
+          - name: Step 2. Readiness assessment using Zero Trust
+            href: integrate-microsoft-365-defender-secops-readiness.md
+          - name: Step 3. Integration with your SOC services
+            href: integrate-microsoft-365-defender-secops-services.md
+          - name: Step 4. Roles, responsibilities, and oversight
+            href: integrate-microsoft-365-defender-secops-roles.md
+          - name: Step 5. Test use cases
+            href: integrate-microsoft-365-defender-secops-use-cases.md
+          - name: Step 6. SOC maintenance tasks
+            href: integrate-microsoft-365-defender-secops-tasks.md
+       - name: Use Power Automate
+         href: use-power-automate.md
     - name: How-to guides
       items: 
        - name: Create a trial lab or pilot environment

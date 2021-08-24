@@ -17,6 +17,7 @@ search.appverid: MET150
 ms.custom:
 - AdminSurgePortfolio
 - commerce_licensing
+- admindeeplinkMAC
 description: Learn how to download the software and product license keys for perpetual software bought through the Cloud Solution Provider (CSP) program.
 ms.date: 01/27/2021
 ---
