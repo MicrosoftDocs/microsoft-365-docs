@@ -81,7 +81,7 @@ Microsoft Defender Antivirus and cloud protection automatically block most new, 
       1. **Send safe samples automatically** (default)
          - Safe samples are samples considered to not commonly contain PII data like: .bat, .scr, .dll, .exe.
          - If file is likely to contain PII, the user will get a request to allow file sample submission.
-         - This is the default on Windows, macOS and Linux.
+         - This is the default on Windows, macOS, and Linux.
 
       2. **Always Prompt**
          - If configured, the user will always be prompted for consent before file submission
