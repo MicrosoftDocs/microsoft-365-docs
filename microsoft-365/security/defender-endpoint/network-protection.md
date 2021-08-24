@@ -11,11 +11,7 @@ localization_priority: Normal
 audience: ITPro
 author: denisebmsft
 ms.author: deniseb
-<<<<<<< Updated upstream
 ms.reviewer: oogunrinde
-=======
-ms.reviewer:
->>>>>>> Stashed changes
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
@@ -149,13 +145,6 @@ reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyPacUrl /d "<Proxy PAC
 
 ## See also
 
-<<<<<<< Updated upstream
 - [Evaluate network protection](evaluate-network-protection.md) | Undertake a quick scenario that demonstrates how the feature works, and what events would typically be created.
-
 - [Enable network protection](enable-network-protection.md) | Use Group Policy, PowerShell, or MDM CSPs to enable and manage network protection in your network.
-
 - [Configuring attack surface reduction capabilities in Microsoft Intune](/mem/intune/protect/endpoint-security-asr-policy)
-=======
-- [Evaluate network protection](evaluate-network-protection.md)|Undertake a quick scenario that demonstrates how the feature works, and what events would typically be created.
-- [Enable network protection](enable-network-protection.md)|Use Group Policy, PowerShell, or MDM CSPs to enable and manage network protection in your network.
->>>>>>> Stashed changes

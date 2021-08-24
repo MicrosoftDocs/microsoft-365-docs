@@ -28,11 +28,7 @@ ms.topic: how-to
 > [!TIP]
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
-<<<<<<< Updated upstream
 This article provides troubleshooting information for [network protection](network-protection.md), in cases, such as:
-=======
-When you use [Network protection](network-protection.md) you may encounter issues, such as:
->>>>>>> Stashed changes
 
 - Network protection blocks a website that is safe (false positive)
 - Network protection fails to block a suspicious or known malicious website (false negative)
@@ -127,11 +123,7 @@ You can configure the registry key by using PowerShell, Microsoft Endpoint Manag
 ## See also
 
 - [Network protection](network-protection.md)
-
 - [Network protection and the TCP three-way handshake](network-protection.md#network-protection-and-the-tcp-three-way-handshake)
-
 - [Evaluate network protection](evaluate-network-protection.md)
-
 - [Enable network protection](enable-network-protection.md)
-
 - [Address false positives/negatives in Defender for Endpoint](defender-endpoint-false-positives-negatives.md)
