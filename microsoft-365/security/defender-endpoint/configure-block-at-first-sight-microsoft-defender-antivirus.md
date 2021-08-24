@@ -66,7 +66,7 @@ Microsoft Defender Antivirus uses multiple detection and prevention technologies
 > [!TIP]
 > Microsoft Intune is now part of Microsoft Endpoint Manager.
 
-1. In the Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com)>), navigate to **Devices** \> **Configuration profiles**.
+1. In the Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com>), navigate to **Devices** \> **Configuration profiles**.
 
 2. Select or create a profile using the **Device restrictions** profile type.
 
@@ -203,7 +203,7 @@ If you have a personal device that is not managed by an organization, you might 
 
    - To enable block at first sight, make sure that both **Cloud-delivered protection** and **Automatic sample submission** are both turned on.
 
-   - To disable block at first sight, turn off **Cloud-delivered protection** or **Automatic sample submission**. <br/>
+   - To disable block at first sight, turn off **Cloud-delivered protection** or **Automatic sample submission**.
 
      > [!CAUTION]
      > Turning off block at first sight lowers the level of protection for your device. We do not recommend permanently disabling block at first sight.
