@@ -26,7 +26,7 @@ description: "Scoped Certified application installation and configuration guide 
 
 [Configuration instructions](#configuration-instructions)
 
-[Who can set up the Microsoft 365 support integration?](#Who-can-set-up-microsoft-365-support-integration)
+[Who can set up the Microsoft 365 support integration?](#who-can-set-up-microsoft-365-support-integration)
 
 [What features are available in Microsoft 365 support integration?](#what-features-are-available-in-microsoft-365-support-integration) 
 
@@ -91,7 +91,7 @@ This table identifies features available to you depending on the answers to thes
 |Yes|Yes|Service Health Incidents <br/>Recommended Solutions </br>Microsoft service request|[Set up Microsoft 365 support integration with ServiceNow Basic Authentication](#set-up-microsoft-365-support-integration-with-servicenow-basic-authentication)|
 |Yes|No|Service Health Incidents <br/>Recommended Solutions </br>Microsoft service request||
 |No|Yes|Service Health Incidents <br/>Recommended Solutions </br>Microsoft service request|[Set up Microsoft 365 support integration with AAD OAuth Token](#set-up-microsoft-365-support-integration-with-aad-oauth-token)|
-|No|No|Service Health Incidents <br/>Recommended Solutions|[Set up Microsoft 365 support integration for Insights ONLY](#set-up-Microsoft-365-support-integration-for-insights-only) |
+|No|No|Service Health Incidents <br/>Recommended Solutions|[Set up Microsoft 365 support integration for Insights ONLY](#set-up-microsoft-365-support-integration-for-insights-only) |
 
 ## Set up Microsoft 365 support integration with ServiceNow Basic Authentication
 
