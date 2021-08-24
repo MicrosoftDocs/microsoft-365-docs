@@ -53,7 +53,9 @@ recommendationName | String | Recommendation name
 Weaknesses | Long | Number of discovered vulnerabilities
 Vendor | String | Related vendor name
 recommendedVersion | String | Recommended version
-recommendationCategory | String | Recommendation category. Possible values are: "Accounts", "Application", "Network", "OS", "SecurityStack
+recommendedProgram | String | Recommended program
+recommendedVendor | String | Recommended vendor
+recommendationCategory | String | Recommendation category. Possible values are: "Accounts", "Application", "Network", "OS", "SecurityControls"
 subCategory | String | Recommendation sub-category
 severityScore | Double | Potential impact of the configuration to the organization's Microsoft Secure Score for Devices (1-10)
 publicExploit | Boolean | Public exploit is available 
@@ -62,8 +64,8 @@ associatedThreats | String collection | Threat analytics report is associated wi
 remediationType | String | Remediation type. Possible values are: "ConfigurationChange","Update","Upgrade","Uninstall"
 Status | Enum | Recommendation exception status. Possible values are: "Active" and "Exception"
 configScoreImpact | Double | Microsoft Secure Score for Devices impact
-exposureImpacte | Double | Exposure score impact
+exposureImpact | Double | Exposure score impact
 totalMachineCount | Long | Number of installed devices
 exposedMachinesCount | Long | Number of installed devices that are exposed to vulnerabilities
-nonProductivityImpactedAssets | Long | Number of devices which are not affected  
+nonProductivityImpactedAssets | Long | Number of devices that are not affected  
 relatedComponent | String |  Related software component
