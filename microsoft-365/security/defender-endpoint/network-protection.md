@@ -70,17 +70,15 @@ Here's how that works:
 
 1. A user attempts to access a website on their device. The site happens to be hosted on a dangerous domain, and it should be blocked by network protection.  
 
-2. The three-way handshake via TCP/IP commences. Before it completes, a `NetworkConnectionEvents` action is logged, and its ActionType is listed as `ConnectionSuccess`. However, as soon as the three-way handshake process completes, network protection blocks access to the site. All of this happens very quickly. A similar process occurs with Microsoft Defender SmartScreen; it's when the three-way handshake completes that access to a site is blocked or allowed.
+2. The three-way handshake via TCP/IP commences. Before it completes, a `NetworkConnectionEvents` action is logged, and its ActionType is listed as `ConnectionSuccess`. However, as soon as the three-way handshake process completes, network protection blocks access to the site. All of this happens very quickly. A similar process occurs with [Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview); it's when the three-way handshake completes that access to a site is blocked or allowed.
 
 3. In the Microsoft 365 Defender portal, an alert is generated. Details include both the `NetworkConnectionEvents` and the `AlertEvents` details. Thus, you can see that the site was blocked, even though you also have a `NetworkConnectionEvents` item with the ActionType of `ConnectionSuccess`.
 
 ### Review network protection events in the Microsoft 365 Defender portal
 
-Microsoft Defender for Endpoint provides detailed reporting into events and blocks as part of its [alert investigation scenarios](investigate-alerts.md).
+Microsoft Defender for Endpoint provides detailed reporting into events and blocks as part of its [alert investigation scenarios](investigate-alerts.md). You can view these details in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) in the [alerts queue](review-alerts.md) or by using [advanced hunting](advanced-hunting-overview.md). If you're using [audit mode](audit-windows-defender.md), you can use advanced hunting to see how network protection settings would affect your environment if they were enabled.
 
-You can query Defender for Endpoint data by using [advanced hunting](advanced-hunting-overview.md). If you're using [audit mode](audit-windows-defender.md), you can use advanced hunting to see how network protection settings would affect your environment if they were enabled.
-
-Here is an example query
+Here is an example query for advanced hunting:
 
 ```kusto
 DeviceEvents
