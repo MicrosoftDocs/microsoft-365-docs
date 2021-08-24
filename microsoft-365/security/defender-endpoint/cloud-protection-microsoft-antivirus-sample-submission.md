@@ -1,6 +1,6 @@
 ---
 title: Cloud-delivered protection Microsoft Defender Antivirus sample submission
-description: Learn about cloud-delivered protection and Microsoft Defender Antivirus
+description: Learn about cloud-delivered protection and Microsoft Defender Antivirus sample submission
 keywords: Microsoft Defender Antivirus, next-generation technologies, antivirus sample submission, next-generation av, machine learning, antimalware, security, defender, cloud, cloud-delivered protection
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
