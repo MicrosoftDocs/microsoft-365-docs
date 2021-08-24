@@ -64,7 +64,7 @@ This topic describes how to install, configure, update, and use Defender for End
 
         > [!NOTE]
         > Microsoft Defender for Endpoint can now extend the protection to an organization’s data within a managed application for those who aren’t using mobile device management (MDM) but are using Intune to manage mobile applications. It also extends this support to customers who use other enterprise mobility management solutions, while still using Intune for [mobile application management (MAM)](/mem/intune/apps/mam-faq).
->Prior to this update, Microsoft Defender for Endpoint worked on devices that were enrolled using Intune mobile device management (MDM) only.  
+         > Prior to this update, Microsoft Defender for Endpoint worked on devices that were enrolled using Intune MDM only.  
  
 
     -   Access [Microsoft Endpoint Manager admin
