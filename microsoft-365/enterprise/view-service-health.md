@@ -1,7 +1,7 @@
 ---
 title: "How to check Microsoft 365 service health"
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 audience: Admin
 ms.topic: article

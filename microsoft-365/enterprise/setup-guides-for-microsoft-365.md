@@ -1,7 +1,7 @@
 ---
 title: "Setup guides for Microsoft 365 and Office 365 services"
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 audience: ITPro
 ms.topic: conceptual
