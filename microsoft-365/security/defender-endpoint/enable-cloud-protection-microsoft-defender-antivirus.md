@@ -47,16 +47,13 @@ Microsoft Defender Antivirus cloud protection helps protect against malware on y
 
 ## Methods to configure cloud protection
 
-You can turn Microsoft Defender Antivirus cloud protection on or off in several ways:
+You can turn Microsoft Defender Antivirus cloud protection on or off by using one of several methods:
 
-- Microsoft Intune
-- Microsoft Endpoint Manager
+- Microsoft Endpoint Manager, which includes Microsoft Intune and Configuration Manager
 - Group Policy
-- PowerShell cmdlets.
+- PowerShell cmdlets
 
- You can also turn it on or off in individual clients with the Windows Security app.
-
-See [Use Microsoft cloud protection](cloud-protection-microsoft-defender-antivirus.md) for an overview of Microsoft Defender Antivirus cloud protection.
+You can also turn cloud protection on or off on individual endpoints using the Windows Security app.
 
 For more information about the specific network-connectivity requirements to ensure your endpoints can connect to the cloud protection service, see [Configure and validate network connections](configure-network-connections-microsoft-defender-antivirus.md).
 
@@ -165,13 +162,12 @@ For more information about allowed parameters, see [Windows Defender WMIv2 APIs]
 > [!NOTE]
 > If automatic sample submission has been configured with Group Policy then the setting will be greyed-out and unavailable.
 
-## Related articles
+## See also
 
-- [Configure the cloud block timeout period](configure-cloud-block-timeout-period-microsoft-defender-antivirus.md)
-- [Configure block at first sight](configure-block-at-first-sight-microsoft-defender-antivirus.md)
-- [Use PowerShell cmdlets to manage Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md)
-- [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)]
-- [Defender cmdlets](/powershell/module/defender/)
 - [Use Microsoft cloud protection in Microsoft Defender Antivirus](cloud-protection-microsoft-defender-antivirus.md)
+
+- [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)]
+
 - [How to create and deploy antimalware policies: Cloud-protection service](/configmgr/protect/deploy-use/endpoint-antimalware-policies#cloud-protection-service)
-- [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+
+- [Use PowerShell cmdlets to manage Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md)
