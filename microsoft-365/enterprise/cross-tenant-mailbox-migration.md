@@ -160,7 +160,7 @@ The target admin setup is now complete!
 
 #### Step-by-step instructions for the source tenant admin
 
-1. Sign in to your mailbox as the -ResourceTenantAdminEmail specified by the target admin during their setup. Find the email invitation from the target tenant, and then select the **Get Started** button.
+1. Sign in with your Global Admin credentials. Sign in to your mailbox as the -ResourceTenantAdminEmail specified by the target admin during their setup.  Find the email invitation from the target tenant, and then select the **Get Started** button.
 
     :::image type="content" source="../media/tenant-to-tenant-mailbox-move/invited-by-target-tenant.png" alt-text="You've been invited dialog box":::
 
