@@ -104,5 +104,5 @@ Guidance on how to configure Microsoft Defender for Endpoint on Android features
 ## Related topics
 - [Deploy Microsoft Defender for Endpoint on Android with Microsoft Intune](android-intune.md)
 - [Configure Microsoft Defender for Endpoint on Android features](android-configure.md)
-- [What is mobile app management in Microsoft Intune? | How to get started with MAM](https://docs.microsoft.com/en-us/mem/intune/apps/app-management#mobile-application-management-mam-basics)
+- [Mobile Application Management (MAM) basics](/mem/intune/apps/app-management#mobile-application-management-mam-basics)
 
