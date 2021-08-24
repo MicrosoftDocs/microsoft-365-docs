@@ -2,8 +2,8 @@
 title: Tenant roadmap for Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -38,7 +38,7 @@ To plan for your tenant implementation:
 - [Plan for client app support](microsoft-365-client-support-certificate-based-authentication.md)
 - [Determine how to use hybrid modern authentication](hybrid-modern-auth-overview.md)
 - [Plan for Office 2007 and Office 2010 upgrades](plan-upgrade-previous-versions-office.md)
-- [Understand tenant isolation](microsoft-365-tenant-isolation-overview.md)
+- [Understand tenant isolation](/compliance/assurance/microsoft-365-isolation-controls)
 
 ### Deploy
 

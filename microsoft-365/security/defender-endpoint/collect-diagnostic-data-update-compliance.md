@@ -18,16 +18,14 @@ ms.technology: mde
 ms.topic: article
 ---
 
-# Collect Update Compliance diagnostic data for Microsoft Defender AV Assessment
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+# Collect update compliance diagnostic data for Microsoft Defender Antivirus assessment
 
 
 **Applies to:**
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
-This article describes how to collect diagnostic data that can be used by Microsoft support and engineering teams to help troubleshoot issues you may encounter when using the Microsoft Defender AV Assessment section in the Update Compliance add-in.
+This article describes how to collect diagnostic data that can be used by Microsoft support and engineering teams to help troubleshoot issues you may encounter when using the Microsoft Defender Antivirus Assessment section in the Update Compliance add-in.
 
 Before attempting this process, ensure you have read [Troubleshoot Microsoft Defender Antivirus reporting](troubleshoot-reporting.md), met all require prerequisites, and taken any other suggested troubleshooting steps.
 
@@ -37,9 +35,9 @@ On at least two devices that are not reporting or showing up in Update Complianc
         
     a. Open the **Start** menu.
 
-    b. Type **cmd**. Right-click on **Command Prompt** and click **Run as administrator**.
+    b. Type **cmd**. Right-click on **Command Prompt** and then select **Run as administrator**.
 
-    c. Enter administrator credentials or approve the prompt.
+    c. Specify administrator credentials or approve the prompt.
         
 2. Navigate to the Windows Defender directory. By default, this is `C:\Program Files\Windows Defender`.
 
@@ -53,7 +51,7 @@ On at least two devices that are not reporting or showing up in Update Complianc
 
 5. Copy these .cab files to a location that can be accessed by Microsoft support. An example could be a password-protected OneDrive folder that you can share with us.
 
-6. Send an email using the <a href="mailto:ucsupport@microsoft.com?subject=WDAV assessment issue&body=I%20am%20encountering%20the%20following%20issue%20when%20using%20Windows%20Defender%20AV%20in%20Update%20Compliance%3a%20%0d%0aI%20have%20provided%20at%20least%202%20support%20.cab%20files%20at%20the%20following%20location%3a%20%3Caccessible%20share%2c%20including%20access%20details%20such%20as%20password%3E%0d%0aMy%20OMS%20workspace%20ID%20is%3a%20%0d%0aPlease%20contact%20me%20at%3a">Update Compliance support email template</a>, and fill out the template with the following information:
+6. Send an email using the <a href="mailto:ucsupport@microsoft.com?subject=MDAV assessment issue&body=I%20am%20encountering%20the%20following%20issue%20when%20using%20Windows%20Defender%20AV%20in%20Update%20Compliance%3a%20%0d%0aI%20have%20provided%20at%20least%202%20support%20.cab%20files%20at%20the%20following%20location%3a%20%3Caccessible%20share%2c%20including%20access%20details%20such%20as%20password%3E%0d%0aMy%20OMS%20workspace%20ID%20is%3a%20%0d%0aPlease%20contact%20me%20at%3a">update compliance support email template</a>, and fill out the template with the following information:
   
     ```
     I am encountering the following issue when using Microsoft Defender Antivirus in Update Compliance:

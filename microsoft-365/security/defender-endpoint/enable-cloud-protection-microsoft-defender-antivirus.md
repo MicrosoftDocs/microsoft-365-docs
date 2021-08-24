@@ -6,15 +6,15 @@ search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: Normal
+localization_priority: normal
+ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
-ms.date: 04/30/2021
+ms.date: 06/17/2021
 ms.reviewer: 
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
-ms.topic: article
 ---
 
 # Turn on cloud-delivered protection
@@ -29,7 +29,6 @@ ms.topic: article
 > The Microsoft Defender Antivirus cloud service is a mechanism for delivering updated protection to your network and endpoints. Although it is called a cloud service, it is not simply protection for files stored in the cloud; rather, it uses distributed resources and machine learning to deliver protection to your endpoints at a rate that is far faster than traditional Security intelligence updates.
 
 Microsoft Defender Antivirus uses multiple detection and prevention technologies to deliver accurate, real-time, and intelligent protection. [Get to know the advanced technologies at the core of Microsoft Defender for Endpoint next-generation protection](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/).
-![List of Microsoft Defender AV engines](images/microsoft-defender-atp-next-generation-protection-engines.png)  
 
 You can turn Microsoft Defender Antivirus cloud-delivered protection on or off in several ways:
 
@@ -142,7 +141,7 @@ For more information about allowed parameters, see [Windows Defender WMIv2 APIs]
 
 2. Select the **Virus & threat protection** tile (or the shield icon on the left menu bar) and then the **Virus & threat protection settings** label:
 
-    ![Screenshot of the Virus & threat protection settings label in the Windows Security app](images/defender/wdav-protection-settings-wdsc.png)
+    :::image type="content" source="../../media/wdav-protection-settings-wdsc.png" alt-text="Screenshot of the Virus & threat protection settings":::
 
 3. Confirm that **Cloud-based Protection** and **Automatic sample submission** are switched to **On**.
 

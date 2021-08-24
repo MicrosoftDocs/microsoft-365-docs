@@ -51,7 +51,8 @@ Information available in the results includes:
 - **Total** shows the total time for the extension to module load and initialize. It is the total relative time taken by the extension to execute on the page, from beginning to the end.
 - **Module Load** shows the time taken to download, evaluate and load the extensions JavaScript and CSS files. It will then start the Init process.
 - **Init** shows the time taken for the extension to initialize the data.
-	It is an asynchronous call and init time is the calculation of time for the onInit function when the returned promise is resolved.
+
+  It is an asynchronous call and init time is the calculation of time for the onInit function when the returned promise is resolved.
 
 This information is provided to help designers and developers troubleshoot issues. This information should be provided to your design and development team.
 

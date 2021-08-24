@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.reviewer: tugu
+ms.reviewer: tugu, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -19,7 +19,7 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - commerce_billing
-- PPM_jmueller
+- AdminTemplateSet
 ms.date: 03/17/2021
 ---
 
@@ -83,6 +83,7 @@ Businesses in the following countries can provide their VAT number or local equi
 - Sweden
 - Switzerland
 - Taiwan
+- Thailand
 - Turkey
 - United Arab Emirates
 - United Kingdom

@@ -15,12 +15,13 @@ ms.collection:
 ms.custom: 
 localization_priority: Priority
 f1.keywords: NOCSH
+recommendations: false
 description: "Learn how to limit accidental exposure of information when sharing files with people outside your organization."
 ---
 
 # Limit accidental exposure to files when sharing with people outside your organization
 
-When sharing files and folders with people outside your organization, there are a variety of options to reduce the chances of accidentally sharing sensitive information. You can choose from the options in this article to best meet the needs of your organization.
+When sharing files and folders with people outside your organization, there are various options to reduce the chances of accidentally sharing sensitive information. You can choose from the options in this article to best meet the needs of your organization.
 
 ## Use best practices for Anyone links
 
@@ -58,7 +59,7 @@ To turn off *Anyone* links for a site
 
 You can use domain allow or deny lists to specify which domains your users can use when sharing with people outside your organization.
 
-With an allow list, you can specify a list of domains where users in your organization can share with people outside your organization. Sharing with to other domains is blocked. If your organization only collaborates with people from a list of specific domains, you can use this feature to prevent sharing with other domains.
+With an allow list, you can specify a list of domains where users in your organization can share with people outside your organization. Sharing with other domains is blocked. If your organization only collaborates with people from a list of specific domains, you can use this feature to prevent sharing with other domains.
 
 With a deny list, you can specify a list of domains from which users in your organization cannot share with people outside your organization. Sharing with the listed domains is blocked. This can be useful if you have competitors, for example, who you want to prevent from accessing content in your organization.
 

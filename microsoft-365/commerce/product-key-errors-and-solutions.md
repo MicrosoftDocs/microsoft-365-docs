@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.reviewer: jkinma
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
@@ -20,7 +20,6 @@ ms.custom:
 - okr_smb
 - AdminSurgePortfolio
 - commerce_purchase
-- PPM_jmueller
 ms.date: 05/01/2021
 ---
 

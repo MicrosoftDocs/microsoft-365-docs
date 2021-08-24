@@ -1,14 +1,15 @@
 ---
 title: Payment information for Turkey
-author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.custom: CommercePayInfo
+ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Learn where to send the payment for your subscription.
 ROBOTS: NOINDEX, NOFOLLOW
@@ -26,4 +27,4 @@ Please pay in TRY only and reference invoice number(s) on your payment remittanc
 **SWIFT Code:** CITITRIX  
 **IBAN:** TR420009200000000092407039  
 **Account Number:** 92407039  
-**Account Name:** Microsoft Payments  
+**Account Name:** Microsoft Payments

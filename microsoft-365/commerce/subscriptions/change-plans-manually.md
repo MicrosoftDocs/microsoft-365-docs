@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,12 +16,9 @@ ms.collection:
 ms.custom: 
 - AdminSurgePortfolio
 - commerce_subscriptions
-- PPM_jmueller
-ms.reviewer: jkinma
-search.appverid:
-- MET150
-ROBOTS: NOINDEX
+search.appverid: MET150
 description: "Change subscriptions manually by buying a new subscription and ensuring that both the subscriptions are listed and active."
+ROBOTS: NOINDEX
 ms.date: 03/17/2021
 ---
 # Change plans manually
@@ -80,6 +78,8 @@ The licenses for the current subscription will be removed later; you'll only pay
 
 ## Step 4: Reassign licenses
 
+When you upgrade from an Office 365 plan to a Microsoft 365 plan, you must change the license assignments for all users. Licenses aren't automatically assigned when you change plans manually.
+
 ### Reassign a license for one user
 
 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.
@@ -95,7 +95,7 @@ The licenses for the current subscription will be removed later; you'll only pay
 
 2. Select the circles next to the names of the users for whom you want to replace existing licenses.
 
-3. At the top, select **More options** (**...**), and then choose **Manage product licenses**.
+3. At the top, select the three dots (more actions), and then choose **Manage product licenses**.
 
 4. Select **Replace existing product license assignments** \> **Next**.
 

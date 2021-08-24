@@ -10,12 +10,12 @@ audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 localization_priority: Normal
-ms.collection: 
+ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - m365solution-infoprotection
 - m365solution-scenario
-ms.custom: 
+ms.custom:
 description: Learn how to use Compliance Score and Compliance Manager to improve your level of protection for personal data.
 ---
 
@@ -25,9 +25,8 @@ Microsoft Compliance Manager can help you manage improvements related to data pr
 
 This article provides guidance on the use of this tool for data privacy purposes.
 
->[!Note]
->Recommendations from Compliance Manager should not be interpreted as a guarantee of compliance. It is up to you to evaluate and validate the effectiveness of customer controls per your regulatory environment. These services are subject to the terms and conditions in the [Online Services Terms](https://go.microsoft.com/fwlink/?linkid=2108910). See also [Microsoft 365 licensing guidance for security and compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)
->
+> [!NOTE]
+> Recommendations from Compliance Manager should not be interpreted as a guarantee of compliance. It is up to you to evaluate and validate the effectiveness of customer controls per your regulatory environment. These services are subject to the terms and conditions in the [Online Services Terms](https://go.microsoft.com/fwlink/?linkid=2108910). See also [Microsoft 365 licensing guidance for security and compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)
 
 ## Getting started with Compliance Manager
 
@@ -37,7 +36,7 @@ This article provides guidance on the use of this tool for data privacy purposes
 
 **Ready to use assessments**
 
-Compliance Manager provides pre-built templates for [building assessments](../compliance/compliance-manager-assessments.md) that are aligned to data privacy-related regulations, such as GDPR and HIPAA/HITECH. The templates have built-in control mapping to help you take improvement actions for meeting the regulation's requirements. Each assessment provides information about the controls each regulation calls for specific to the target service, broken out by controls you manage and controls Microsoft manages. 
+Compliance Manager provides pre-built templates for [building assessments](../compliance/compliance-manager-assessments.md) that are aligned to data privacy-related regulations, such as GDPR and HIPAA/HITECH. The templates have built-in control mapping to help you take improvement actions for meeting the regulation's requirements. Each assessment provides information about the controls each regulation calls for specific to the target service, broken out by controls you manage and controls Microsoft manages.
 
 Using a pre-built template helps you quickly get started with risk assessments. As you become more proficient in using Compliance Manager, you can customize a pre-built template by adding your own controls and improvement actions, or you can create your own custom assessments to suit your organization's needs.
 

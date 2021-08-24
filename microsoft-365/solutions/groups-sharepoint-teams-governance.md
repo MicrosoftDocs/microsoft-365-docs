@@ -14,6 +14,7 @@ ms.collection:
 ms.custom: 
 - M365solutions
 f1.keywords: NOCSH
+recommendations: false
 description: "Learn about settings interactions between Microsoft 365 Groups, Teams and SharePoint"
 ---
 

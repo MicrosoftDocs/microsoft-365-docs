@@ -1,7 +1,7 @@
 ---
-title: Alerts queue in Microsoft Defender Security Center
+title: Alerts queue in Microsoft 365 Defender
 ms.reviewer: 
-description: View and manage the alerts surfaced in Microsoft Defender Security Center
+description: View and manage the alerts surfaced in Microsoft 365 Defender
 keywords: 
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -20,14 +20,14 @@ ms.date: 09/03/2018
 ms.technology: mde
 ---
 
-# Alerts queue in Microsoft Defender Security Center
+# Alerts queue in Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Learn how you can view and manage the queue so that you can effectively investigate threats seen on entities such as devices, files, or user accounts.
 

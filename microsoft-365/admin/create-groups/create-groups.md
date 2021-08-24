@@ -16,6 +16,8 @@ ms.collection:
 ms.custom: 
 - AdminSurgePortfolio
 - okr_smb
+- AdminTemplateSet
+- admindeeplinkMAC
 search.appverid:
 - BCS160
 - MET150
@@ -26,14 +28,14 @@ description: "Learn to create and delete Microsoft 365 groups, add and remove gr
 
 # Create a group in the Microsoft 365 admin center
   
-While users can create a Microsoft 365 group from Outlook or other apps, as an admin, you may need to create or delete groups, add or remove members, and customize how they work. The Microsoft 365 admin center is the place to do this. 
+While users can create a Microsoft 365 group from Outlook or other apps, as an admin, you may need to create or delete groups, add or remove members, and customize how they work. The <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Microsoft 365 admin center</a> is the place to do this. 
 
 > [!TIP]
 > Microsoft 365 connected Yammer groups must be created in Yammer, but can be managed in the Microsoft 365 admin center like other Microsoft 365 groups. To learn more, see [Yammer and Microsoft 365 groups](/yammer/manage-yammer-groups/yammer-and-office-365-groups). 
 
 ## Create a Microsoft 365 group
 
-1. In the admin center, expand **Groups**, and then click **Groups**.
+1. In the admin center, expand **Groups**, and then click <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**Groups**</a>.
 
 2. Select **Add a group**.
   
@@ -75,14 +77,12 @@ A member can delete an email conversation from the Group inbox if they initiated
   
 When an email is deleted from the group mailbox, it is not deleted from any of the group members' personal mailboxes.
 
-## Next step: manage your group
+## Next steps
 
 After creating a new group and adding members, you can further configure your group, such as editing the group name or description, changing owners or members, and specifying whether external senders can email the group and whether to send copies of group conversations to members. See [Manage a Microsoft 365 group](manage-groups.md) for information.
 
 ## Related content
 
-[Manage guest access to Microsoft 365 groups](https://support.microsoft.com/office/bfc7a840-868f-4fd6-a390-f347bf51aff6) (article)
-
-[Choose the domain to use when creating Microsoft 365 groups](../../solutions/choose-domain-to-create-groups.md) (article)
-
+[Manage guest access to Microsoft 365 groups](https://support.microsoft.com/office/bfc7a840-868f-4fd6-a390-f347bf51aff6) (article)\
+[Choose the domain to use when creating Microsoft 365 groups](../../solutions/choose-domain-to-create-groups.md) (article)\
 [Upgrade distribution lists to Microsoft 365 groups](../manage/upgrade-distribution-lists.md) (article)

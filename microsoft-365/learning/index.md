@@ -1,10 +1,10 @@
 ---
-title: "Introduction to Microsoft Viva Learning (Preview)"
+title: Introduction to Microsoft Viva Learning (Preview)
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: chrisarnoldmsft
-ms.date: 04/30/2021
+ms.date: 
 audience: enabler
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -13,8 +13,7 @@ ms.collection:
     - enabler-strategic
     - m365initiative-viva-learning
 localization_priority: None
-description: "Learn how to find resources for Microsoft Viva Learning (Preview)."
-ROBOTS: NOINDEX, NOFOLLOW
+description: Learn how to find resources for Microsoft Viva Learning (Preview).
 ---
 
 # Introduction to Microsoft Viva Learning (Preview)
