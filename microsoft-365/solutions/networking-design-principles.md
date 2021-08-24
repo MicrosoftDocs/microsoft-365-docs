@@ -27,10 +27,6 @@ I am currently a Principal Technical Specialist in our Retail and Consumer Goods
 
 With a background over the past 25 years that includes security, infrastructure, and network engineering, and having moved two of my previous employers to Office 365 before joining Microsoft, I’ve been on your side of the table plenty of times, and do remember what that’s like. While no two customers are ever the same, most have similar needs, and when consuming a standardized service such as any SaaS or PaaS platform, the best approaches tend to be the same.
 
-## It’s not the network—it’s how you’re (mis)using it!
-
-No matter how many times it happens, it never fails to amaze me how *creative* security teams and networking teams try to get with how they think they should connect to Microsoft cloud services. There’s always some security policy, compliance standard, or better way they insist on using, without being willing to engage in a conversation about what it is they're trying to accomplish, or *how* they're better, easier, more cost-effective, and more performant ways of doing so.
-
 ## It’s not the network — it’s how you’re (mis)using it!
 
 No matter how many times it happens, it never fails to amaze me how *creative* security teams and networking teams try to get with how they think they should connect to Microsoft cloud services. There’s always some security policy, compliance standard, or better way they insist on using, without being willing to engage in a conversation about what it is they are trying to accomplish, or *how* there are better, easier, more cost-effective, and more performant ways of doing so. 
