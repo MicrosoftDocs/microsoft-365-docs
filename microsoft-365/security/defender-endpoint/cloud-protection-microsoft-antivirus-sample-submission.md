@@ -1,5 +1,5 @@
 ---
-title: Cloud-delivered protection Microsoft Defender Antivirus sample submission
+title: Cloud protection and sample submission in Microsoft Defender Antivirus
 description: Learn about cloud-delivered protection and Microsoft Defender Antivirus
 keywords: Microsoft Defender Antivirus, next-generation technologies, antivirus sample submission, next-generation av, machine learning, antimalware, security, defender, cloud, cloud-delivered protection
 search.product: eADQiWindows 10XVcnh
@@ -14,16 +14,16 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.topic: article
-ms.date: 07/22/2021
+ms.date: 08/24/2021
 ---
 
-# Cloud-delivered protection antivirus sample submission
+# Cloud protection and sample submission in Microsoft Defender Antivirus
 
-Microsoft Defender for Endpoint Antivirus (Defender for Endpoint antivirus) uses many intelligent mechanisms for detecting malware. One of the most powerful capabilities is the ability to apply the power of the cloud to detect malware. Defender for Endpoint antivirus Cloud Protection works with Defender for Endpoint antivirus on the endpoint to make decisions and protect endpoints from new and emerging threats.
+Microsoft Defender Antivirus uses many intelligent mechanisms for detecting malware. One of the most powerful capabilities is the ability to apply the power of the cloud to detect malware. Microsoft Defender Antivirus Cloud Protection works with Microsoft Defender Antivirus on the endpoint to make decisions and protect endpoints from new and emerging threats.
 
-## Microsoft Defender for Endpoint Antivirus cloud protection overview
+## Microsoft Defender Antivirus cloud protection overview
 
-Cloud protection is enabled by default in Defender for Endpoint Antivirus. It is recommended that customers do not disable Cloud protection in Defender for Endpoint Antivirus.  When cloud protection is enabled, you have the option of configuring what information Defender for Endpoint antivirus will provide to the cloud (including sample submission). Cloud-protection-enabled is useful when a high-confidence determination cannot be made based on other characteristics.
+Cloud protection is enabled by default in Microsoft Defender Antivirus. It is recommended that customers do not disable Cloud protection in Microsoft Defender Antivirus.  When cloud protection is enabled, you have the option of configuring what information Microsoft Defender Antivirus will provide to the cloud (including sample submission). Cloud-protection-enabled is useful when a high-confidence determination cannot be made based on other characteristics.
 Configuring Sample Submission raises questions about how it works; for example, how the data is stored and used. The three cloud protection sample submission options that raise the most questions are:
 
 - “Send safe samples automatically,”  (the default behavior)
@@ -48,7 +48,7 @@ The product has received multiple compliance certifications, demonstrating conti
 
 The Microsoft Intelligent Security Graph monitors threat data from a vast network of sensors. We layer cloud-based machine learning models that can make an assessment based on signals from the client and the vast network of sensors and data in the Intelligent Security Graph. This model gives Defender for Endpoint the ability to block many never-before seen threats.
 
-Defender for Endpoint antivirus and cloud protection automatically blocks most new, never-before-seen threats at first sight using the following methods:
+Microsoft Defender Antivirus and cloud protection automatically blocks most new, never-before-seen threats at first sight using the following methods:
 
 1. Lightweight client-based machine learning models, blocking new and unknown malware.
 
@@ -56,16 +56,16 @@ Defender for Endpoint antivirus and cloud protection automatically blocks most n
 
 3. High-precision antivirus, detecting common malware through generic and heuristic techniques.
 
-4. Advanced cloud-based protection is provided for cases when Defender for Endpoint antivirus running on the endpoint needs more intelligence to verify the intent of a suspicious file.
+4. Advanced cloud-based protection is provided for cases when Microsoft Defender Antivirus running on the endpoint needs more intelligence to verify the intent of a suspicious file.
 
-   1. In the event Microsoft Defender for Endpoint antivirus cannot make a clear determination, file metadata is sent to the cloud protection service. Usually, the cloud protection service can determine whether the file is safe or malicious, within milliseconds.  
+   1. In the event Microsoft Defender Antivirus cannot make a clear determination, file metadata is sent to the cloud protection service. Usually, the cloud protection service can determine whether the file is safe or malicious, within milliseconds.  
       - The cloud query of file metadata can be a result of behavior, mark of the web, or other characteristics where a clear verdict is not determined.
       - A small metadata payload is sent, with the goal of reaching a clean vs malware verdict
       - Metadata can include PE attributes, static file attributes, dynamic and contextual attributes, and more (Figure 1).
       - Does not include personally identifiable information (PII). Information such as filenames, are hashed
       - Can be synchronous or asynchronous. For synchronous, the file will not open until the cloud renders a verdict. For asynchronous, the file will open while the cloud performs its analysis.
 
-   2. After examining the metadata, if Defender for Endpoint antivirus cloud protection cannot reach a conclusive verdict, it can request a sample of the file for further inspection. This request honors the settings configuration for sample submission:
+   2. After examining the metadata, if Microsoft Defender Antivirus cloud protection cannot reach a conclusive verdict, it can request a sample of the file for further inspection. This request honors the settings configuration for sample submission:
 
       1. **Send safe samples automatically** (default)
          - Safe samples are samples considered to not commonly contain PII data like: .bat, .scr, .dll, .exe.
