@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "microsoft-365/business/prepare-for-office-client-deployment.md",
+      "redirect_url": "/microsoft-365/admin/misc/prepare-for-office-client-deployment",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/business/help-users-connect-to-microsoft-365-business.md",
       "redirect_url": "/microsoft-365/admin",
       "redirect_document_id": false
