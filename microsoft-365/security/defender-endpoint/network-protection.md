@@ -52,7 +52,7 @@ After you have enabled the services, you might need to configure your network or
 
 ## Configuring network protection
 
-For more information about how to enable network protection, see [Enable network protection](enable-network-protection.md). Use Group Policy, PowerShell, or MDM CSPs to enable and manage network protection in your network.
+For more information about how to enable network protection, see **[Enable network protection](enable-network-protection.md)**. Use Group Policy, PowerShell, or MDM CSPs to enable and manage network protection in your network.
 
 ## Viewing network protection events
 
