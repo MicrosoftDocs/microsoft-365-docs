@@ -25,10 +25,15 @@ ms.technology: mde
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
-> [!NOTE]
-> The Microsoft Defender Antivirus cloud service is a mechanism for delivering updated protection to your network and endpoints. Although it is called a cloud service, it is not simply protection for files stored in the cloud; rather, it uses distributed resources and machine learning to deliver protection to your endpoints at a rate that is far faster than traditional Security intelligence updates.
+Cloud protection works together with Microsoft Defender Antivirus to deliver accurate, real-time, and intelligent protection. Cloud protection should be enabled by default; however, you can configure cloud protection to suit your organization's needs. This article describes why you want cloud protection turned on, and how to configure cloud protection.
 
-Microsoft Defender Antivirus uses multiple detection and prevention technologies to deliver accurate, real-time, and intelligent protection. [Get to know the advanced technologies at the core of Microsoft Defender for Endpoint next-generation protection](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/).
+## Why cloud protection should be turned on
+
+Certain security features in Microsoft Defender for Endpoint only work when cloud protection is turned on, as listed in the following table:
+
+
+
+## Methods to configure cloud protection
 
 You can turn Microsoft Defender Antivirus cloud protection on or off in several ways:
 
