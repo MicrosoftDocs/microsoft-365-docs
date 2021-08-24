@@ -30,7 +30,7 @@ ms.technology: mde
 - Virtual desktop infrastructure (VDI) devices
 - Windows 10, Windows Server 2019, Windows Server 2008R2/2012R2/2016
 
->Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configvdi-abovefoldlink)
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configvdi-abovefoldlink)
 
 ## Onboard non-persistent virtual desktop infrastructure (VDI) devices
 
@@ -68,9 +68,9 @@ The following steps will guide you through onboarding VDI devices and will highl
 
     1. Click **Download package** and save the .zip file.
 
-2. Copy the files from the WindowsDefenderATPOnboardingPackage folder extracted from the .zip file into the `golden/master` image under the path `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup`. 
+2. Copy the files from the WindowsDefenderATPOnboardingPackage folder extracted from the .zip file into the golden/master image under the path `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup`. 
 
-    1. If you aren't implementing a single entry for each device, copy WindowsDefenderATPOnboardingScript.cmd.
+    1. If you are implementing multiple entries for each device - one for each session, copy WindowsDefenderATPOnboardingScript.cmd.
 
     1. If you're implementing a single entry for each device, copy both Onboard-NonPersistentMachine.ps1 and WindowsDefenderATPOnboardingScript.cmd.
     
@@ -84,13 +84,13 @@ The following steps will guide you through onboarding VDI devices and will highl
 
 4. Depending on the method you'd like to implement, follow the appropriate steps:
 
-   - For single entry for each device:
+    - For single entry for each device:
    
-     Select the **PowerShell Scripts** tab, then click **Add** (Windows Explorer will open directly in the path where you copied the onboarding script earlier). Navigate to onboarding PowerShell script `Onboard-NonPersistentMachine.ps1`. There's no need to specify the other file, as it will be triggered automatically.
+         Select the **PowerShell Scripts** tab, then click **Add** (Windows Explorer will open directly in the path where you copied the onboarding script earlier). Navigate to onboarding PowerShell script `Onboard-NonPersistentMachine.ps1`. There's no need to specify the other file, as it will be triggered automatically.
    
-   - For multiple entries for each device:
+    - For multiple entries for each device:
    
-     Select the **Scripts** tab, then click **Add** (Windows Explorer will open directly in the path where you copied the onboarding script earlier). Navigate to the onboarding bash script `WindowsDefenderATPOnboardingScript.cmd`.
+         Select the **Scripts** tab, then click **Add** (Windows Explorer will open directly in the path where you copied the onboarding script earlier). Navigate to the onboarding bash script `WindowsDefenderATPOnboardingScript.cmd`.
 
 5. Test your solution:
 
@@ -104,20 +104,21 @@ The following steps will guide you through onboarding VDI devices and will highl
       
    1. Depending on the method you'd like to implement, follow the appropriate steps:
 
-        - For single entry for each device: 
+   - For single entry for each device: 
 
-            Check only one entry in Microsoft 365 Defender portal.
+     Check only one entry in Microsoft 365 Defender portal.
 
-        - For multiple entries for each device: 
+   - For multiple entries for each device: 
 
-            Check multiple entries in Microsoft 365 Defender portal.
+     Check multiple entries in Microsoft 365 Defender portal.
+
 
 6. Click **Devices list** on the Navigation pane.
 
 7. Use the search function by entering the device name and select **Device** as search type.
 
 
-## For downlevel SKUs
+## For downlevel SKUs (Windows Server 2008 R2/2012 R2/2016)
 
 > [!NOTE]
 > The following registry is relevant only when the aim is to achieve a 'Single entry for each device'.
@@ -172,7 +173,7 @@ If offline servicing isn't a viable option for your non-persistent VDI environme
     PsExec.exe -s cmd.exe
     cd "C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Cyber"
     del *.* /f /s /q
-    REG DELETE “HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection" /v senseGuid /f
+    REG DELETE "HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection" /v senseGuid /f
     exit
     ```
 
