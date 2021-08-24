@@ -1,5 +1,5 @@
 ---
-title: Admin submissions
+title: Manage submissions
 f1.keywords: 
   - NOCSH
 ms.author: siosulli
@@ -21,7 +21,7 @@ ms.technology: mdo
 ms.prod: m365-security
 ---
 
-# Use Admin Submission to submit suspected spam, phish, URLs, and files to Microsoft
+# Use the Submissions portal to submit suspected spam, phish, URLs, and files to Microsoft
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -80,7 +80,7 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
 
 4. In the **Select a reason for submitting to Microsoft** section, select one of the following options:
    - **Should not have been blocked (false positive)**
-   - **Should have been blocked**: In the **The email should have been categorized as** section that appears, select one of the following values (if you're not sure, use your best judgement):
+   - **Should have been blocked**: In the **The email should have been categorized as** section that appears, select one of the following values (if you're not sure, use your best judgment):
      - **Phish**
      - **Spam**
      - **Malware**
