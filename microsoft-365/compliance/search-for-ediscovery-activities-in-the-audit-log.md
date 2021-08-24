@@ -187,10 +187,10 @@ As previously stated, it may take up to 24 hours for eDiscovery cmdlet activitie
 
 ## Detailed properties for eDiscovery activities
 
-The following table describes the properties that are included when you click **More information** on the **Details** page for an eDiscovery activity listed in the search results. These properties are also included in the CSV file when you export the audit log search results. An audit log record for an eDiscovery activity won't include every detailed property listed below.
+The following table describes the properties that are included on the flyout page for an eDiscovery activity listed in the search results. These properties are also included in the CSV file when you export the audit log search results. An audit log record for an eDiscovery activity won't include every detailed property listed below.
   
 > [!TIP]
-> When you export the search results, the CSV file contains a column named **Detail**, which contains the detailed properties described in the following table in a multi-value property. You can use the Power Query feature in Excel to split this column into multiple columns so that each property will have its own column. This will let you sort and filter on one or more of these properties. For more information, see the "Export the search results to a file" section in [Search the audit log](search-the-audit-log-in-security-and-compliance.md#step-4-export-the-search-results-to-a-file). 
+> When you export the search results, the CSV file contains a column named **AudtiData**, which contains the detailed properties described in the following table in a multi-value property. You can use the Power Query feature in Excel to split this column into multiple columns so that each property will have its own column. This will let you sort and filter on one or more of these properties. For more information, see the "Export the search results to a file" section in [Search the audit log](search-the-audit-log-in-security-and-compliance.md#step-3-export-the-search-results-to-a-file). 
   
 |**Property**|**Description**|
 |:-----|:-----|

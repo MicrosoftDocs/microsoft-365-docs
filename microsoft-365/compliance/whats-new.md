@@ -281,7 +281,6 @@ Here are a few of the changes to Microsoft 365 compliance solutions and content 
 Content was added or updated in the following topics:
 
 - [Get started with content explorer](/microsoft-365/compliance/data-classification-content-explorer)
-- [Data classification release notes](/microsoft-365/compliance/data-classification-pub-preview-relnotes)
 
 ### Data loss prevention
 

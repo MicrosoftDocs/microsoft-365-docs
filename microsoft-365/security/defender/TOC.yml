@@ -118,6 +118,8 @@
         items:
           - name: Sensor settings and health
             href: ../defender-identity/sensor-health.md
+          - name: Directory Services account
+            href: ../defender-identity/directory-service-accounts.md
           - name: VPN integration
             href: ../defender-identity/vpn-integration.md
           - name: Set entity tags
@@ -186,6 +188,8 @@
                 href: m365d-autoir-results.md
               - name: Address false positives and negatives
                 href: m365d-autoir-report-false-positives-negatives.md
+              - name: Use Power Automate
+                href: use-power-automate.md
        - name: Advanced hunting
          items: 
              - name: Advanced hunting overview

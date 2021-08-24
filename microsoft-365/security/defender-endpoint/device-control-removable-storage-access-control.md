@@ -1,7 +1,6 @@
 ---
-title: Microsoft Defender for Endpoint Device Control Removable Storage Access Control
+title: Microsoft Defender for Endpoint Device Control Removable Storage Access Control, removable storage media
 description: A walk-through about Microsoft Defender for Endpoint
-keywords: removable storage media
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -47,7 +46,7 @@ Deploy Removable Storage Access Control on Windows 10 devices that have antimalw
 
 - **4.18.2104 or later**: Add SerialNumberId, VID_PID, filepath-based GPO support, ComputerSid
 - **4.18.2105 or later**: Add Wildcard support for HardwareId/DeviceId/InstancePathId/FriendlyNameId/SerialNumberId, the combination of specific user on specific machine, removeable SSD (a SanDisk Extreme SSD)/USB Attached SCSI (UAS) support
-- **4.18.2107 or later**: Add Windows Portable Device (WPD) support (for mobile devices, such as tablets)
+- **4.18.2107 or later**: Add Windows Portable Device (WPD) support (for mobile devices, such as tablets); add AccountName into [advanced hunting](device-control-removable-storage-access-control.md#view-device-control-removable-storage-access-control-data-in-microsoft-defender-for-endpoint)
 
 :::image type="content" source="images/powershell.png" alt-text="The PowerShell interface":::
 
@@ -58,128 +57,28 @@ Deploy Removable Storage Access Control on Windows 10 devices that have antimalw
 
 You can use the following properties to create a removable storage group:
 
-### Property name: Group Id
+#### Removable Storage Group
+|Property Name  |Description  |Options  |
+|---------|---------|---------|
+|**GroupId**     |   [GUID](https://en.wikipedia.org/wiki/Universally_unique_identifier), a unique ID, represents the group and will be used in the policy.      |         |
+|**DescriptorIdList**     |  List the device properties you want to use to cover in the group. For each device property, see [Device Properties](/microsoft-365/security/defender-endpoint/device-control-removable-storage-protection?view=o365-worldwide&preserve-view=true) for more detail.​       |  - **PrimaryId**​: RemovableMediaDevices, CdRomDevices, WpdDevices</br> - **DeviceId​** </br>- **HardwareId​**</br>- **InstancePathId**​: InstancePathId is a string that uniquely identifies the device in the system, for example, USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0. The number at the end (for example &0) represents the available slot and may change from device to device. For best results, use a wildcard at the end. For example, USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*</br>- **FriendlyNameId​**</br>- **SerialNumberId​**</br>- **VID​**</br>- **PID​**</br>- **VID_PID**</br> 0751_55E0: match this exact VID/PID pair </br>_55E0: match any media with PID=55E0 </br>0751_: match any media with VID=0751 |
+|**MatchType**     |    When there are multiple device properties being used in the DescriptorIDList, MatchType defines the relationship.     |  **MatchAll**: </br>​Any attributes under the DescriptorIdList will be **And** relationship; for example, if administrator puts DeviceID and InstancePathID, for every connected USB, system will check to see whether the USB meets both values.​ </br> </br>**MatchAny**:</br> ​The attributes under the DescriptorIdList will be **Or** relationship; for example, if administrator puts DeviceID and InstancePathID, for every connected USB, system will do the enforcement as long as the USB has either an identical **DeviceID** or **InstanceID** value.​       |
+||||
 
-**Description**: GUID, a unique ID, represents the group and will be used in the policy.
+#### Access Control Policy
 
-### Property name: DescriptorIdList
-
-**Description**: List the device properties you want to use to cover in the group.
-
-For each device property, see **Device Properties** section above for more detail.
-
-**Options**:
-
-- Primary ID
-  - RemovableMediaDevices
-  - CdRomDevices
-- DeviceId
-- HardwareId
-- InstancePathId: InstancePathId is a string that uniquely identifies the device in the system, for example, USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0.
-
-The number at the end (for example **&0**) represents the available slot and may change from device to device. For best results, use a wildcard at the end. For example, `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*`.
-
-- FriendlyNameId
-- SerialNumberId
-- VID
-- PID
-- VID_PID
-  - 0751_55E0: match this exact VID/PID pair
-  - _55E0: match any media with PID=55E0
-  - 0751_: match any media with VID=0751
-
-### Property name: MatchType
-
-**Description**: When there are multiple device properties being used in the DescriptorIDList, MatchType defines the relationship.
-
-**Options**:
-
-- MatchAll: Any attributes under the DescriptorIdList will be **And** relationship; for example, if administrator puts DeviceID and InstancePathID, for every connected USB, system will check to see whether the USB meets both values.
-- MatchAny: The attributes under the DescriptorIdList will be **Or** relationship; for example, if administrator puts DeviceID and InstancePathID, for every connected USB, system will do the enforcement as long as the USB has either an identical **DeviceID** or **InstanceID** value.
-
-Following are the access control policy properties:
-
-### Property name: PolicyRuleId
-
-**Description**: GUID, a unique ID, represents the policy and will be used in the reporting and troubleshooting.
-
-### Property name: IncludedIdList
-
-**Description**: The group(s) that the policy will be applied to. If multiple groups are added, the policy will be applied to any media in all those groups.
-
-**Options** The Group ID/GUID must be used at this instance.
-
-The following example shows the usage of GroupID:
-
-`<IncludedIdList> <GroupId>{EAA4CCE5-F6C9-4760-8BAD-FDCC76A2ACA1}</GroupId> </IncludedIdList>`
-
-### Property name: ExcludedIDList
-
-**Description**: The group(s) that the policy will not be applied to.
-
-**Options**: The Group ID/GUID must be used at this instance.
-
-### Property name: Entry Id
-
-**Description**: One PolicyRule can have multiple entries; each entry with a unique GUID tells Device Control one restriction.
-
-### Property name: Type
-
-**Description**: Defines the action for the removable storage groups in IncludedIDList.
-
-- Enforcement: Allow or Deny
-- Audit: AuditAllowed or AuditDenied
-
-**Options**:
-
-- Allow
-- Deny
-- AuditAllowed: Defines notification and event when access is allowed
-- AuditDenied: Defines notification and event when access is denied; has to work together with **Deny** entry.
-
-When there are conflict types for the same media, the system will apply the first one in the policy. An example of a conflict type is **Allow** and **Deny**.
-
-### Property name: Options
-
-**Description**: Defines whether to display notification or not.
-
-:::image type="content" source="images/device-status.png" alt-text="The screen on which the status of the device can be seen":::
-
-**Options**: 0-4.
-
-When Type **Allow** or **Deny** is selected:
-
-- 0: nothing
-- 4: disable **AuditAllowed** and **AuditDenied** for this Entry. Even if **Block** happens and the **AuditDenied** is setting configured, the system will not show notification.
-
-When Type **AuditAllowed** or **AuditDenied** is selected:
-
-- 0: nothing
-- 1: show notification, only works for AuditDenied
-- 2: send event
-- 3: show notification and send event. If applying this to AuditAllowed, will only fire the event for reporting but will not show the notification.
-
-### Property name: Sid
-
-**Description**: Defines whether to apply this policy over a specific user or user group; one entry can have a maximum of one SID and an entry without any SID means applying the policy over the machine.
-
-### Property name: ComputerSid
-
-**Description**: Defines whether to apply this policy over a specific machine or machine group; one entry can have a maximum of one ComputerSID and an entry without any ComputerSID means applying the policy over the machine. If you want to apply an entry to a specific user and specific machine, add both SID and ComputerSID into the same entry.
-
-### Property name: AccessMask
-
-**Description**: Defines the access.
-
-Options 1-7:
-
-- 1: Read
-- 2: Write
-- 3: Read and Write
-- 4: Execute
-- 5: Read and Execute
-- 6: Write and Execute
-- 7: Read and Write and Execute
+|Property Name  |Description  |Options  |
+|---------|---------|---------|
+|PolicyRuleId​     |     [GUID](https://en.wikipedia.org/wiki/Universally_unique_identifier), a unique ID, represents the policy and will be used in the reporting and troubleshooting.    |         |
+|IncludedIdList     | The group(s) that the policy will be applied to. If multiple groups are added, the policy will be applied to any media in all those groups.        |    The Group ID/GUID must be used at this instance.​ </br> ​The following example shows the usage of GroupID:​ </br> `<IncludedIdList> <GroupId> {EAA4CCE5-F6C9-4760-8BAD-FDCC76A2ACA1}</GroupId> </IncludedIdList>​`    |
+|ExcludedIDList     | The group(s) that the policy will not be applied to.        |    The Group ID/GUID must be used at this instance.     |
+|Entry Id     |  One PolicyRule can have multiple entries; each entry with a unique GUID tells Device Control one restriction.​       |         |
+|Type|Defines the action for the removable storage groups in IncludedIDList.​ </br>- Enforcement: Allow or Deny​ </br>- Audit: AuditAllowed or AuditDenied​|- Allow​ </br>- Deny​</br> - AuditAllowed: Defines notification and event when access is allowed​</br>- AuditDenied: Defines notification and event when access is denied; has to work together with **Deny** entry.​ </br></br> When there are conflict types for the same media, the system will apply the first one in the policy. An example of a conflict type is **Allow** and **Deny**.​|
+|Sid|Local computer Sid or the Sid of the AD object, defines whether to apply this policy over a specific user or user group; one entry can have a maximum of one Sid and an entry without any Sid means applying the policy over the machine.​||
+|ComputerSid|Local computer Sid or the Sid of the AD object, defines whether to apply this policy over a specific machine or machine group; one entry can have a maximum of one ComputerSid and an entry without any ComputerSid means applying the policy over the machine. If you want to apply an Entry to a specific user and specific machine, add both Sid and ComputerSid into the same Entry.​||
+|Options|Defines whether to display notification or not​|**0-4**: When Type Allow or Deny is selected.</br>​</br>0: nothing​</br>4: disable **AuditAllowed** and **AuditDenied** for this Entry. Even if **Block** happens and the AuditDenied is setting configured, the system will not show notification.​ </br> </br>When Type **AuditAllowed** or **AuditDenied** is selected:​</br>0: nothing​</br>1: show notification​</br>2: send event​</br>3: show notification and send event​|
+|AccessMask|Defines the access.​|**1-7**:​ </br></br>1: Read​</br>2: Write​</br>3: Read and Write​</br>4: Execute​</br>5: Read and Execute​</br>6: Write and Execute​</br>7: Read and Write and Execute​|
+||||
 
 ## Common Removable Storage Access Control scenarios
 
@@ -302,7 +201,7 @@ The Microsoft 365 security portal shows removable storage blocked by the Device 
 ```kusto
 //events triggered by RemovableStoragePolicyTriggered
 DeviceEvents
-| where ActionType == &quot;RemovableStoragePolicyTriggered&quot;
+| where ActionType == "RemovableStoragePolicyTriggered"
 | extend parsed=parse_json(AdditionalFields)
 | extend RemovableStorageAccess = tostring(parsed.RemovableStorageAccess) 
 | extend RemovableStoragePolicyVerdict = tostring(parsed.RemovableStoragePolicyVerdict) 
@@ -316,8 +215,7 @@ DeviceEvents
 | extend MediaProductId = tostring(parsed.ProductId) 
 | extend MediaVendorId = tostring(parsed.VendorId) 
 | extend MediaSerialNumber = tostring(parsed.SerialNumber) 
-| extend MediaVolume = tostring(parsed.Volume) 
-| project Timestamp, DeviceId, DeviceName, ActionType, RemovableStorageAccess, RemovableStoragePolicyVerdict, MediaBusType, MediaClassGuid, MediaClassName, MediaDeviceId, MediaInstanceId, MediaName, RemovableStoragePolicy, MediaProductId, MediaVendorId, MediaSerialNumber, MediaVolume
+| project Timestamp, DeviceId, DeviceName, InitiatingProcessAccountName, ActionType, RemovableStorageAccess, RemovableStoragePolicyVerdict, MediaBusType, MediaClassGuid, MediaClassName, MediaDeviceId, MediaInstanceId, MediaName, RemovableStoragePolicy, MediaProductId, MediaVendorId, MediaSerialNumber
 | order by Timestamp desc
 ```
 
