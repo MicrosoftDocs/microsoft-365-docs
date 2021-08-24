@@ -37,6 +37,12 @@ Learn more by watching [this video](https://www.youtube.com/watch?v=Tdz6KfruDGo&
 > [!TIP]
 > Don't have Microsoft Defender for Office 365 yet? [Contact sales to start a trial](https://info.microsoft.com/ww-landing-M365SMB-web-contact.html).
 
+## September 2021
+
+- [lets Add the link to Admin version of quarantine video here] https://youtu.be/s-vozLO43rI (admin-configure-and-review-quarantine-message.md): starting september Admins will be able to configure granular control for recipient message access in quarantine as well as customize spam notification that are sent out to end users in thier organizations 
+- other new capabilities coming to the quarantine experience can be found in this blog(lets add deep link to the blog https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/simplifying-the-quarantine-experience/ba-p/2676388 )
+
+
 ## August 2021
 
 - [Admin review for reported messages](admin-review-reported-message.md): Admins can now send templated messages back to end users after they review reported messages. The templates can be customized for your organization and based on your admin's verdict as well.
