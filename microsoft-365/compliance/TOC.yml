@@ -150,8 +150,6 @@
           href: data-classification-activity-explorer.md
         - name: Labeling actions reported in Activity explorer
           href: data-classification-activity-explorer-available-events.md
-        - name: Data classification release notes
-          href: data-classification-pub-preview-relnotes.md
     - name: Sensitivity labels
       items:
         - name: Learn about sensitivity labels
@@ -467,7 +465,7 @@
               href: archive-enterprise-number-data.md
             - name: O2 Telefonica SMS and Voice Network Archiver
               href: archive-o2-network-data.md
-            - name: Rogers Network Archiver (preview)
+            - name: Rogers Network Archiver
               href: archive-rogers-network-archiver-data.md
             - name: Signal Archiver
               href: archive-signal-archiver-data.md
@@ -509,7 +507,7 @@
               href: archive-17a-4-refinitiv-messenger-data.md
             - name: ServiceNow DataParser 
               href: archive-17a-4-servicenow-data.md
-            - name: Skype for Business Server DataParser (preview)
+            - name: Skype for Business Server DataParser
               href: archive-17a-4-skype-for-business-server-data.md
             - name: Slack DataParser 
               href: archive-17a-4-slack-data.md
