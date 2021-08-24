@@ -129,7 +129,7 @@ Admin controls in the Microsoft 365 admin center allow you to manage Viva Topics
 
 For more information about admin controls, see [assign user permissions](./plan-topic-experiences.md#user-permissions), [manage topic visibility](./topic-experiences-knowledge-rules.md), and [manage topic discovery](./topic-experiences-discovery.md).
 
-## Topic curation & feedback
+## Topic curation and suggestions
 
 AI will continually work to provide you suggestions to improve your topics as changes occur in your environment. 
 
@@ -138,6 +138,18 @@ Users with edit or create topics permissions can make updates to topic pages dir
 Users that you allow access to see topics in their daily work might be asked if the topic was useful to them. The system looks at these responses and uses them to improve the topic highlight, and help determine what's shown on topic summaries and in topic details.
 
 For more information, see [Topic discovery and curation](./topic-experiences-discovery-curation.md).
+
+## Provide us feedback
+
+
+   ![Screenshot showing the Feedback button.](../media/knowledge-management/feedback-icon.png)
+
+
+
+   ![Screenshot showing the Send Feedback to Microsoft page.](../media/knowledge-management/feedback-icon.png)
+
+
+
 
 ## See also
 
