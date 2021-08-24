@@ -51,7 +51,7 @@ run:
 1.  Open a terminal or SSH into the relevant machine.
 
 2.  Run `wget --quiet -O XMDEClientAnalyzer.zip*
-    <http://aka.ms/XMDEClientAnalyzer> *&& unzip -q XMDEClientAnalyzer.zip && cd
+    <https://aka.ms/XMDEClientAnalyzer> *&& unzip -q XMDEClientAnalyzer.zip && cd
     XMDEClientAnalyzer && chmod +x mde_support_tool.sh"`
 
 3.  Run ` ./mde_support_tool.sh -d ` to generate the result archive file.
@@ -61,6 +61,7 @@ run:
 installed, the analyzer will try to fetch it from the official repository for
 python packages below:  
 https://files.pythonhosted.org/packages/\*/lxml\*.whl
+> In addition, the tool currently requires Python version 3 or later to be installed.
 
 Example:  
 

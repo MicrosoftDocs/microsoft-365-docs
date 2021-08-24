@@ -214,9 +214,9 @@ If you are moving a site with apps, you must re-instantiate the app in the site'
 
 In most cases Flows will continue to work after a SharePoint site geo move. We recommend that you test them once the move has completed.
 
-### PowerApps
+### Power Apps
 
-PowerApps need to be recreated in the destination location.
+Power Apps need to be recreated in the destination location.
 
 ### Data movement between geo locations
 
