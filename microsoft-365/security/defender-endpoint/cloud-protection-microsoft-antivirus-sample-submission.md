@@ -19,18 +19,17 @@ ms.date: 08/24/2021
 
 # Cloud protection and sample submission in Microsoft Defender Antivirus
 
-Microsoft Defender Antivirus uses many intelligent mechanisms for detecting malware. One of the most powerful capabilities is the ability to apply the power of the cloud to detect malware and perform rapid analysis. Cloud protection and automatic sample submission work with Microsoft Defender Antivirus on the endpoint to help protect endpoints from new and emerging threats. If a suspicious or malicious file is detected, a sample is sent to the cloud service for analysis. As soon as a determination is made, the file is either released or blocked by Microsoft Defender Antivirus. 
+Microsoft Defender Antivirus uses many intelligent mechanisms for detecting malware. One of the most powerful capabilities is the ability to apply the power of the cloud to detect malware and perform rapid analysis. Cloud protection and automatic sample submission work together with Microsoft Defender Antivirus on endpoints to help protect against new and emerging threats. If a suspicious or malicious file is detected, a sample is sent to the cloud service for analysis while Microsoft Defender Antivirus blocks the file. As soon as a determination is made, which happens quickly, the file is either released or blocked by Microsoft Defender Antivirus. 
 
 This article provides an overview of cloud protection and automatic sample submission in Microsoft Defender Antivirus. To learn more about cloud protection, see .
 
-## Microsoft Defender Antivirus cloud protection overview
+## Sample submission settings in cloud protection
 
-Cloud protection is enabled by default in Microsoft Defender Antivirus. It is recommended that customers do not disable Cloud protection in Microsoft Defender Antivirus.  When cloud protection is enabled, you have the option of configuring what information Microsoft Defender Antivirus will provide to the cloud (including sample submission). Cloud-protection-enabled is useful when a high-confidence determination cannot be made based on other characteristics.
-Configuring Sample Submission raises questions about how it works; for example, how the data is stored and used. The three cloud protection sample submission options that raise the most questions are:
+Cloud protection is enabled by default in Microsoft Defender Antivirus. We recommend that you keep cloud protection enabled. You can configure sample submission settings as follows: 
 
-- “Send safe samples automatically,”  (the default behavior)
-- “Send all samples automatically,”  
-- “Do not send samples.”  
+- **Send safe samples automatically**  (the default behavior)
+- **Send all samples automatically**  
+- **Do not send samples**  
 
 For information about configuration options using Intune, Configuration Manager, GPO, or PowerShell, see [Turn on cloud-delivered protection in Microsoft Defender Antivirus](enable-cloud-protection-microsoft-defender-antivirus.md).  
 
