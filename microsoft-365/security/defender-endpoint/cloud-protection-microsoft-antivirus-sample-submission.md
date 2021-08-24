@@ -51,9 +51,9 @@ For more information, see the following resources:
 
 ## Cloud Protection Mechanisms
 
-The Microsoft Intelligent Security Graph monitors threat data from a vast network of sensors. We layer cloud-based machine learning models that can make an assessment based on signals from the client and the vast network of sensors and data in the Intelligent Security Graph. This model gives Defender for Endpoint the ability to block many never-before seen threats.
+The Microsoft Intelligent Security Graph monitors threat data from a vast network of sensors. Microsoft layers cloud-based machine learning models that can assess files based on signals from the client and the vast network of sensors and data in the Intelligent Security Graph. This model gives Defender for Endpoint the ability to block many never-before seen threats.
 
-Microsoft Defender Antivirus and cloud protection automatically blocks most new, never-before-seen threats at first sight using the following methods:
+Microsoft Defender Antivirus and cloud protection automatically block most new, never-before-seen threats at first sight using the following methods:
 
 1. Lightweight client-based machine learning models, blocking new and unknown malware.
 
@@ -109,7 +109,7 @@ _Figure 3. Cloud-delivered protection and layered machine learning_
 >
 > You may also have heard the phrase “Block at first sight (BAFS).” BAFS refers to the more extensive analysis that the cloud can provide, including things like detonation to provide a more accurate verdict. This can also include delaying the opening of a file that is under interrogation by cloud protection until a verdict is reached. If you disable “Sample Submission,” BAFS is disabled, and you cannot do the more extensive analysis and are limited to analyzing file metadata only.
 
-## Cloud Delivered Protection Levels
+## Cloud protection levels
 
 Malware detection requires striking a balance between providing the strongest possible protection, while minimizing the number of false positives. Different environments may have tolerance for protection versus risk of false positive. Cloud-delivered protection levels allow the customer to define the tolerance level appropriate for the specific environment. When you enable Cloud Delivered Protection, the protection level is automatically configured to provide strong detection without increasing the risk of detecting legitimate files. If you want to configure a different protection level, see [Specify the cloud-delivered protection level for Microsoft Defender Antivirus](specify-cloud-protection-level-microsoft-defender-antivirus.md).  
 
@@ -118,17 +118,17 @@ Malware detection requires striking a balance between providing the strongest po
 > Changing the protection level can result in a higher level of false positives and should be carefully evaluated before changing.
 >
 
-## Other File Sample Submission Scenarios
+## Other file sample submission scenarios
 
 There are two more scenarios where Defender for Endpoint may request a file sample not related to the cloud protection settings discussed above.  
 
-### Manual File Sample Collection by Security Admin from Defender for Endpoint Management Portal
+### Manual file sample collection in the Microsoft 365 Defender portal
 
 When onboarding devices to Microsoft Defender for Endpoint EDR there is a setting to enable sample collections from the device, which can be confused with the settings discussed above. This setting controls file sample collection from devices when requested through the Defender for Endpoint administrative portal; it is subject to the roles and permissions already established. This setting can allow or block file collection from the endpoint for features such as deep analysis in the Defender for Endpoint portal. If this setting is not configured, the default is to enable sample collection.
 
 Learn about Defender for Endpoint configuration settings, see: [Onboarding tools and methods for Windows 10 devices in Defender for Endpoint](configure-endpoints.md)
 
-### Automated Investigation and Response Content Analysis
+### Automated investigation and response content analysis
 
 When Automated Investigations are running on devices (when configured to run automatically in response to an alert or manually run), files that are identified as suspicious can be collected from the endpoints for further inspection. The file content analysis feature for Automated Investigations can be disabled in the Defender for Endpoint portal. The file extension names can also be modified to add or remove extensions for other file types that will be automatically submitted during an automated investigation.
 
