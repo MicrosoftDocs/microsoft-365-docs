@@ -35,15 +35,19 @@ For information about configuration options using Intune, Configuration Manager,
 
 ## Customer data, cloud protection, and sample submission
 
-When onboarding to Defender for Endpoint, Defender for Endpoint treats all file samples as customer data, honoring both the geo and data retention choices the customer selected. Geo and data retention choices are described here: [Microsoft Defender for Endpoint data storage and privacy](data-storage-privacy.md#data-storage-location).
-The product has received multiple compliance certifications, demonstrating continued adherence to a sophisticated set of compliance controls:
+Defender for Endpoint treats all file samples as customer data, honoring both the geographical and data retention choices your organization selected when onboarding to Defender for Endpoint. TO learn more, see [Microsoft Defender for Endpoint data storage and privacy](data-storage-privacy.md#data-storage-location).
+
+Defender for Endpoint has received multiple compliance certifications, demonstrating continued adherence to a sophisticated set of compliance controls:
 
 - ISO 27001
 - ISO 27018
 - SOC I, II, III
 - and PCI
 
-[Azure Compliance Offerings](/azure/storage/common/storage-compliance-offerings) provides more information on these certifications. All certification artifacts for Microsoft Defender for Endpoint can be found on Microsoft’s [Service Trust Portal](https://servicetrust.microsoft.com/) within each of the associated Azure Certification Reports.
+For more information, see the following resources:
+
+- [Azure Compliance Offerings](/azure/storage/common/storage-compliance-offerings), which provides more information on our certifications. 
+- The [Service Trust Portal](https://servicetrust.microsoft.com), which contains certification artifacts.
 
 ## Cloud Protection Mechanisms
 
