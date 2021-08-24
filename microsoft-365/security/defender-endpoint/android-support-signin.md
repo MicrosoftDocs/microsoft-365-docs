@@ -132,9 +132,9 @@ Users can follow these steps to enable the same permissions from the device sett
 
 4. Change the Dropdown to show **All Apps**.
 
-   ![Change dropdown to show "All Apps".](images/show-all-apps-2.png)
+   ![Step one to change the dropdown to show "All Apps".](images/show-all-apps-2.png)
 
-   ![Change dropdown to show "All Apps".](images/show-all-apps-1.png)
+   ![Step two to change dropdown to show "All Apps".](images/show-all-apps-1.png)
 
 5. Locate “Microsoft Defender Endpoint” and select **Don’t Optimize**.
 
