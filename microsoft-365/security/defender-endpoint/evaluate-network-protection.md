@@ -68,6 +68,9 @@ To review apps that would have been blocked, open Event Viewer and filter for Ev
 ## See also
 
 - [Network protection](network-protection.md)
+
 - [Network protection and the TCP three-way handshake](network-protection.md#network-protection-and-the-tcp-three-way-handshake)
+
 - [Enable network protection](enable-network-protection.md)
+
 - [Troubleshoot network protection](troubleshoot-np.md)
