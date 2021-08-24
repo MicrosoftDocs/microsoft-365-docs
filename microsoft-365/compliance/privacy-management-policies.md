@@ -112,7 +112,7 @@ With email notifications, users receive direct notifications about policy matche
 
 Notifications can be enabled for individual policies during custom policy creation or when editing any policy. Use the Outcomes section to define what happens when a policy match is detected, including the option to enable these notifications, and set how often you want these digests to be delivered.
 
-Email notification capability is controlled at a global level within Settings. It is enabled by default. Turning this setting off will stop all emails even if specific notifications have been configured at an individual policy level. For more information, see Configure settings under [Get started with privacy management](privacy-management-setup.md#configure-settings).
+Email notification capability is controlled at a global level within Settings. It is enabled by default. Turning this setting off will stop all emails even if specific notifications have been configured at an individual policy level. For more information, see [Manage privacy management settings](privacy-management-settings.md).
 
 ## View policy details
 

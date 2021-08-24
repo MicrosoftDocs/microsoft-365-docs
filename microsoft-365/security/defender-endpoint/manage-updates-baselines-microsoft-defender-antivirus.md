@@ -16,7 +16,7 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 08/04/2021
+ms.date: 08/05/2021
 ---
 
 # Manage Microsoft Defender Antivirus updates and apply baselines
@@ -77,18 +77,19 @@ All our updates contain
 - integration improvements (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)).
 <br/>
 <details>
-<summary> July-2021 (Platform: 4.18.2107.4 | Engine: 1.1.18400.x)</summary>
+<summary> July-2021 (Platform: 4.18.2107.4 | Engine: 1.1.18400.4)</summary>
 
-&ensp;Security intelligence update version: **x.xxx.xx.x**  
-&ensp;Released: **date, 2021**  
+&ensp;Security intelligence update version: **1.345.13.0**  
+&ensp;Released: **August 5, 2021**  
 &ensp;Platform: **4.18.2107.4**  
-&ensp;Engine: **1.1.18400.x**  
+&ensp;Engine: **1.1.18400.4**  
 &ensp;Support phase: **Security and Critical Updates**
     
 ### What's new
 - Device control support added for Windows Portable Devices
 - Potentially unwanted applications (PUA) protection is turned on by default for consumers (See [Potentially unwanted apps will be blocked by default](https://support.microsoft.com/windows/potentially-unwanted-apps-will-be-blocked-by-default-b9f53cb9-7f1e-40bb-8c6b-a17e0ab6289e))
 - Scheduled scans for Group Policy Object managed systems will adhere to user configured scan time 
+- Improvements to the behavior monitoring engine
 
 ### Known Issues
 No known issues  
@@ -509,6 +510,20 @@ We recommend updating your Windows 10 (Enterprise, Pro, and Home editions), Wind
 For more information, see [Microsoft Defender update for Windows operating system installation images](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images).
 
 <details>
+<summary>1.1.2108.01</summary>
+
+&ensp;Package version: **1.1.2108.01**    
+&ensp;Platform version: **4.18.2107.4**   
+&ensp;Engine version: **1.1.18300.4**  
+&ensp;Signature version: **1.343.2244.0**    
+    
+### Fixes
+- None
+
+### Additional information
+- None  
+<br/>
+</details><details>
 <summary>1.1.2107.02</summary>
 
 &ensp;Package version: **1.1.2107.02**    

@@ -1,9 +1,9 @@
 ---
 title: "Windows 10 Enterprise deployment for Contoso"
-author: JoeDavies-MSFT
+author: kelleyvice-msft
 f1.keywords:
 - NOCSH
-ms.author: josephd
+ms.author: kvice
 manager: laurawi
 audience: ITPro
 ms.topic: article
