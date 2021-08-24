@@ -108,7 +108,7 @@ The SecOps mailbox entries that you configured are displayed on the **SecOps mai
      - Single IP: For example, 192.168.1.1.
      - IP range: For example, 192.168.0.1-192.168.0.254.
      - CIDR IP: For example, 192.168.0.1/25.
-   - **Simulation URLs to allow**: Expand this setting and optionally enter specific URLs that are part of your phishing simulation campaign that should not be blocked or detonated by clicking in the box, entering a value, and then pressing Enter or selecting the value that's displayed below the box. You can add up to 10 entries. For the URL syntax format, see [URL syntax for the Tenant Allow/Block List](/microsoft-365/security/office-365-security/tenant-allow-block-list#url-syntax-for-the-tenant-allowblock-list).
+   - **Simulation URLs to allow**: Expand this setting and optionally enter specific URLs that are part of your phishing simulation campaign that should not be blocked or detonated by clicking in the box, entering a value, and then pressing Enter or selecting the value that's displayed below the box. You can add up to 10 entries. For the URL syntax format, see [URL syntax for the Tenant Allow/Block List](tenant-allow-block-list.md#url-syntax-for-the-tenant-allowblock-list).
 
    To remove an existing value, click remove ![Remove icon](../../media/m365-cc-sc-remove-selection-icon.png) next to the value.
 
@@ -265,6 +265,7 @@ In Security & Compliance Center PowerShell, the basic elements of third-party ph
 
 - **The phishing simulation override policy**: Controlled by the **\*-PhishSimOverridePolicy** cmdlets.
 - **The phishing simulation override rule**: Controlled by the **\*-PhishSimOverrideRule** cmdlets.
+- **The allowed (unblocked) phishing simulation URLs**: Controlled by the **\*-TenantAllowBlockListItems** cmdlets.
 
 This behavior has the following results:
 
@@ -275,10 +276,13 @@ This behavior has the following results:
 
 ### Use PowerShell to configure third-party phishing simulations
 
-Configuring a third-party phishing simulation in the advanced delivery policy in PowerShell is a two-step process:
+Configuring a third-party phishing simulation in PowerShell is a multi-step process:
 
 1. Create the phishing simulation override policy.
-2. Create the phishing simulation override rule that specifies the policy that the rule applies to.
+2. Create the phishing simulation override rule that specifies:
+   - The policy that the rule applies to.
+   - The source IP address of the phishing simulation messages.
+3. Optionally, identity the phishing simulation URLs that should be allowed (that is, not blocked or scanned).
 
 #### Step 1: Use PowerShell to create the phishing simulation override policy
 
@@ -316,6 +320,24 @@ New-PhishSimOverrideRule -Name PhishSimOverrideRule -Policy PhishSimOverridePoli
 
 For detailed syntax and parameter information, see [New-PhishSimOverrideRule](/powershell/module/exchange/new-phishsimoverriderule).
 
+#### Step 3: (Optional) Use PowerShell to identify the phishing simulation URLs to allow
+
+Use the following syntax:
+
+```powershell
+New-TenantAllowBlockListItems -Allow -ListType Url -ListSubType AdvancedDelivery -Entries "<URL1>","<URL2>",..."<URLN>" <[-NoExpiration] | [-ExpirationDate <DateTime>]>
+```
+
+For details about the URL syntax, see [URL syntax for the Tenant Allow/Block List](tenant-allow-block-list.md#url-syntax-for-the-tenant-allowblock-list).
+
+This example adds a URL allow entry for the specified third-party phishing simulation URL with no expiration.
+
+```powershell
+New-TenantAllowBlockListItems -Allow -ListType Url -ListSubType AdvancedDelivery -Entries *.fabrikam.com -NoExpiration
+```
+
+For detailed syntax and parameter information, see [New-TenantAllowBlockListItems](/powershell/module/exchange/new-tenantallowblocklistitems).
+
 ### Use PowerShell to view the phishing simulation override policy
 
 This example returns detailed information about the one and only phishing simulation override policy.
@@ -346,6 +368,16 @@ After you identify the invalid rules, you can remove them by using the **Remove-
 
 For detailed syntax and parameter information, see [Get-PhishSimOverrideRule](/powershell/module/exchange/get-phishsimoverriderule).
 
+### Use PowerShell to view the allowed phishing simulation URL entries
+
+To view the allowed phishing simulation URLs, run the following command:
+
+```powershell
+Get-TenantAllowBlockListItems -ListType Url -ListSubType AdvancedDelivery
+```
+
+For detailed syntax and parameter information, see [Get-TenantAllowBlockListItems](/powershell/module/exchange/get-tenantallowblocklistitems).
+
 ### Use PowerShell to modify the phishing simulation override policy
 
 To modify the phishing simulation override policy, use the following syntax:
@@ -362,24 +394,7 @@ Set-PhishSimOverridePolicy -Identity PhishSimOverridePolicy -Enabled $false
 
 For detailed syntax and parameter information, see [Set-PhishSimOverridePolicy](/powershell/module/exchange/set-phishsimoverridepolicy).
 
-### Use PowerShell to modify the simulation url settings
-
-To modify the phishing simulation override policy, use the following syntax:
-
-```powershell
-New-TenantAllowBlockListItems -ListType URL -ListSubType AdvancedDelivery -Entries "<url>"
-```
-For the URL syntax format, see [URL syntax for the Tenant Allow/Block List](/microsoft-365/security/office-365-security/tenant-allow-block-list#url-syntax-for-the-tenant-allowblock-list).
-
-This example adds a simulation URL for sub-domains of contoso.com.
-
-```powershell
-New-TenantAllowBlockListItems -ListType URL -ListSubType AdvancedDelivery -Entries "*.contoso.com"
-```
-
-For detailed syntax and parameter information, see [New-TenantAllowBlockListItems](/powershell/module/exchange/new-tenantallowblocklistitems).
-
-### Use PowerShell to modify a phishing simulation override rule
+### Use PowerShell to modify phishing simulation override rules
 
 To modify the phishing simulation override rule, use the following syntax:
 
@@ -399,6 +414,26 @@ Set-PhishSimOverrideRule -Identity PhishSimOverrideRulea0eae53e-d755-4a42-9320-b
 ```
 
 For detailed syntax and parameter information, see [Set-PhishSimOverrideRule](/powershell/module/exchange/set-phishsimoverriderule).
+
+### Use PowerShell to modify the allowed phishing simulation URL entries
+
+You can't modify the URL values directly. You can [remove existing URL entries](#use-powershell-to-remove-the-allowed-phishing-simulation-url-entries) and [add new URL entries](#step-3-optional-use-powershell-to-identify-the-phishing-simulation-urls-to-allow) as described in this article.
+
+To modify other properties of an allowed phishing simulation URL entry (for example, the expiration date or comments), use the following syntax:
+
+```powershell
+Set-TenantAllowBlockListItems <-Entries "<URL1>","<URL2>",..."<URLN>" | -Ids <Identity>> -ListType URL -ListSubType AdvancedDelivery <[-NoExpiration] | [-ExpirationDate <DateTime>]> [-Notes <String>]
+```
+
+You identify the entry to modify by its URL values (the _Entries_ parameter) or the Identity value from the output of the **Get-TenantAllowBlockListItems** cmdlet (the _Ids_ parameter).
+
+This example modified the expiration date of the specified entry.
+
+```powershell
+Set-TenantAllowBlockListItems -ListType Url -ListSubType AdvancedDelivery –Entries "*.fabrikam.com" -ExpirationDate 9/11/2021
+```
+
+For detailed syntax and parameter information, see [Set-TenantAllowBlockListItems](/powershell/module/exchange/set-tenantallowblocklistitems).
 
 ### Use PowerShell to remove a phishing simulation override policy
 
@@ -425,3 +460,22 @@ Remove-PhishSimOverrideRule -Identity PhishSimOverrideRulea0eae53e-d755-4a42-932
 ```
 
 For detailed syntax and parameter information, see [Remove-PhishSimOverrideRule](/powershell/module/exchange/remove-phishsimoverriderule).
+
+### Use PowerShell to remove the allowed phishing simulation URL entries
+
+To remove an existing phishing simulation URL entry, use the following syntax:
+
+```powershell
+Remove-TenantAllowBlockListItems <-Entries "<URL1>","<URL2>",..."<URLN>" | -Ids <Identity>> -ListType URL -ListSubType AdvancedDelivery
+```
+
+You identify the entry to modify by its URL values (the _Entries_ parameter) or the Identity value from the output of the **Get-TenantAllowBlockListItems** cmdlet (the _Ids_ parameter).
+
+This example modified the expiration date of the specified entry.
+
+```powershell
+Remove-TenantAllowBlockListItems -ListType Url -ListSubType AdvancedDelivery –Entries "*.fabrikam.com" -ExpirationDate 9/11/2021
+```
+
+For detailed syntax and parameter information, see [Remove-TenantAllowBlockListItems](/powershell/module/exchange/remove-tenantallowblocklistitems).
+
