@@ -17,6 +17,7 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 - AdminTemplateSet
+- admindeeplinkMAC
 search.appverid:
 - BCS160
 - MET150
@@ -27,13 +28,22 @@ description: "Microsoft 365 group members get a group email and shared workspace
 
 # Compare groups
 
-In the **Groups** section of the Microsoft 365 admin center, you can create and manage these types of groups: 
+In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**Groups**</a> section of the Microsoft 365 admin center, you can create and manage these types of groups: 
 
-- **Microsoft 365 groups** (formerly Office 365 groups) are used for collaboration between users, both inside and outside your company.
+- **Microsoft 365 groups** are used for collaboration between users, both inside and outside your company. They include collaboration services such as SharePoint and Planner.
 - **Distribution groups** are used for sending email notifications to a group of people.
 - **Security groups** are used for granting access to resources such as SharePoint sites.
 - **Mail-enabled security groups** are used for granting access to resources such as SharePoint, and emailing notifications to those users.
 - **Shared mailboxes** are used when multiple people need access to the same mailbox, such as a company information or support email address.
+
+Some groups allow dynamic membership or email.
+
+||Microsoft 365 groups|Distribution groups|Security groups|Mail-enabled security groups|Shared mailboxes|
+|:----|:----|:----|:----|:----|:----|
+|**Mail-enabled**|Yes|Yes|No|Yes|Yes|
+|**Dynamic membership in Azure AD**|Yes|No|Yes|No|No|
+
+All of these group types can be used with Power Automate.
 
 ## Microsoft 365 groups
 

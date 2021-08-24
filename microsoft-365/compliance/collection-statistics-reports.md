@@ -101,7 +101,7 @@ The **Indexing** section on the **Summary** tab of a committed review set contai
 
 **New indexed items**. The number of items that were newly indexed before they were added to the review set. An example of a newly indexed item are child items that are extracted from a parent item then indexed before they're added to the review set. Also, items that aren't located in custodial data sources and non-custodial content locations listed on the **Data sources** tab in the case are indexed before they're added to the review. For example, newly indexed items would include items collected from additional locations.
 
-**Updated indexed items**. The number of partially indexed items that were successfully indexed and added to the review set. This would partially indexed items from custodial and non-custodial content locations **Data sources** tab that were successfully indexed when the collection was committed to the review set.
+**Updated indexed items**. The number of partially indexed items that were successfully indexed and added to the review set. This statistic indicates the partially indexed items from custodial and non-custodial content locations **Data sources** tab that were successfully indexed when the collection was committed to the review set.
 
 **Indexing errors**. The number of partially indexed items that couldn't be indexed before they were added to the review set. These items might require error remediation.
 

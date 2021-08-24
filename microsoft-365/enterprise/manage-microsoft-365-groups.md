@@ -1,7 +1,7 @@
 ---
 title: "Manage Microsoft 365 groups"
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 audience: Admin
 ms.topic: overview

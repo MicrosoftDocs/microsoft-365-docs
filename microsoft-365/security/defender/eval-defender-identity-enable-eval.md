@@ -1,5 +1,5 @@
 ---
-title: Enable the evaluation environment for Microsoft Defender for Identity, set up the MDI instance, install and configure MDI sensor, let MDI sensor detect local admins  
+title: Enable the evaluation environment for Microsoft Defender for Identity
 description: Set up Microsoft Defender for Identity in Microsoft 365 Defender trial lab or pilot environment by installing & configuring the sensor, and discovering local admins on other computers.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
