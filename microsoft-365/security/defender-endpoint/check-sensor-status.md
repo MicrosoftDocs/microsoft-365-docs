@@ -27,9 +27,9 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-checksensor-abovefoldlink)
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-checksensor-abovefoldlink)
 
-The **Devices with sensor issues** tile is found on the Security Operations dashboard. This tile provides information on the individual device’s ability to provide sensor data and communicate with the Defender for Endpoint service. It reports how many devices require attention and helps you identify problematic devices and take action to correct known issues.
+The **Devices with sensor issues** tile is found on the Security Operations dashboard. This tile provides information on the individual device's ability to provide sensor data and communicate with the Defender for Endpoint service. It reports how many devices require attention and helps you identify problematic devices and take action to correct known issues.
 
 There are two status indicators on the tile that provide information on the number of devices that are not reporting properly to the service:
 - **Misconfigured** - These devices might partially be reporting sensor data to the Defender for Endpoint service and might have configuration errors that need to be corrected.
@@ -55,5 +55,10 @@ You can also download the entire list in CSV format using the **Export** feature
 
 You can view the device details when you click on a misconfigured or inactive device.
 
-## Related topic
+## See also
 - [Fix unhealthy sensors in Defender for Endpoint](fix-unhealthy-sensors.md)
+- [Client analyzer overview](overview-client-analyzer.md)
+- [Download and run the client analyzer](download-client-analyzer.md)
+- [Run the client analyzer on Windows](run-analyzer-windows.md)
+- [Run the client analyzer on macOS or Linux](run-analyzer-macos-linux.md)
+- [Data collection for advanced troubleshooting on Windows](data-collection-analyzer.md)

@@ -63,17 +63,21 @@ In most cases, if a remediation action was taken on an email message, email atta
 
 With Threat Explorer, your security operations team can find an email affected by an action and potentially undo the action.
 
+<br>
+
+****
+
 |Scenario|Undo Options|Learn more|
 |---|---|---|
-|An email message was routed to a user's Junk Email folder|- Move the message to the user's Deleted Items folder<br/>- Move the message to the user's Inbox<br/>- Delete the message|[Find and investigate malicious email that was delivered in Office 365](investigate-malicious-email-that-was-delivered.md)|
-|An email message or a file was quarantined|- Release the email or file<br/>- Delete the email or file|[Manage quarantined messages as an admin](manage-quarantined-messages-and-files.md)|
+|An email message was routed to a user's Junk Email folder|<ul><li>Move the message to the user's Deleted Items folder</li><li>Move the message to the user's Inbox</li><li>Delete the message</li></ul>|[Find and investigate malicious email that was delivered in Office 365](investigate-malicious-email-that-was-delivered.md)|
+|An email message or a file was quarantined|<ul><li>Release the email or file</li><li> Delete the email or file</li></ul>|[Manage quarantined messages as an admin](manage-quarantined-messages-and-files.md)|
 |
 
 ### Undo an action in the Action center
 
 In the Action center, you can see remediation actions that were taken and potentially undo the action.
 
-1. Go to the Microsoft 365 security center (<https://security.microsoft.com>).
+1. Go to the Microsoft 365 Defender portal (<https://security.microsoft.com>).
 2. In the navigation pane, select **Action center**.
 3. Select the **History** tab to view the list of completed actions.
 4. Select an item. Its flyout pane opens.

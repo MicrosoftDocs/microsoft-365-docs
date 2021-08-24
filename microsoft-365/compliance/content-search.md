@@ -40,7 +40,7 @@ After you run a search, the number of content locations and an estimated number 
 
 ## Create and run a search
 
-To access to the **Content search** page in the Microsoft 365 compliance center (to run searches and preview results and export results), an administrator, compliance officer, or eDiscovery manager must be a member of the eDiscovery Manager role group in Security & Compliance Center. For more information, see [Assign eDiscovery permissions](assign-ediscovery-permissions.md).
+To access to the **Content search** page in the Microsoft 365 compliance center (to run searches and preview results and export results), an administrator, compliance officer, or eDiscovery manager must be a member of the eDiscovery Manager role group in the Microsoft 365 compliance center. For more information, see [Assign eDiscovery permissions](assign-ediscovery-permissions.md).
   
 1. Go to <https://compliance.microsoft.com> and sign in using the credentials of an account that's been assigned the appropriate permissions.
 
@@ -83,7 +83,7 @@ To access to the **Content search** page in the Microsoft 365 compliance center 
 7. Review the search settings (and edit if necessary), and then submit the search to start it.
   
 To access this content search again or access other content searches listed on the **Content search** page, select the search and then click **Open**.
-  
+
 ## Next steps
 
 Here's a list of next steps to perform after you create and run a Content search.
@@ -95,3 +95,7 @@ Here's a list of next steps to perform after you create and run a Content search
 - [Export search results](export-search-results.md)
 
 - [Export a search report](export-a-content-search-report.md)
+
+## More information
+
+For more information about Content search, such as searching for content in different Microsoft 365 services, see [Feature reference for Content search](content-search-reference.md).

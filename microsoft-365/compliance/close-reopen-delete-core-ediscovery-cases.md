@@ -77,7 +77,7 @@ When you reopen a case, any eDiscovery holds that were in place when the case wa
 
     When the process is complete, the status of the case is changed to **Active** on the **Core eDiscovery** page.
 
-7. (Optional) To turn on any holds associated with the reopened case, go to **Holds** tab, select a hold, and then select the checkbox under **Status** on the hold flyout page.
+6. (Optional) To turn on any holds associated with the reopened case, go to **Holds** tab, select a hold, and then select the checkbox under **Status** on the hold flyout page.
   
 ## Delete a case
 
@@ -87,7 +87,7 @@ Before you can delete a case (whether it's active or closed), you must first del
 
 To delete an eDiscovery hold:
 
-1. Go the **Holds** tab in the case that you want to delete.
+1. Go to the **Holds** tab in the case that you want to delete.
 
 2. Select the hold that you want to delete.
 
@@ -103,6 +103,6 @@ To delete a case:
 
 3. On the case home page, under **Status**, click **Delete case**.
 
-      ![Reopen a closed case](../media/eDiscoveryCaseHomePageDelete.png)
+      ![Delete a case](../media/eDiscoveryCaseHomePageDelete.png)
 
 If the case you're trying to delete still contains eDiscovery holds, you'll receive an error message. You'll have to delete all holds associated with the case and then try again to delete the case.

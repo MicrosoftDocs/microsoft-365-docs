@@ -61,12 +61,12 @@ The first step is to confirm that Contoso's Microsoft 365 licensing includes sup
 
 They must also confirm that users included in communication compliance policies must be assigned one of the licenses above.
 
->[!IMPORTANT]
->Office 365 Advanced Compliance is no longer sold as a standalone subscription. When current subscriptions expire, customers should transition to one of the subscriptions above, which contain the same or additional compliance features.
+> [!IMPORTANT]
+> Office 365 Advanced Compliance is no longer sold as a standalone subscription. When current subscriptions expire, customers should transition to one of the subscriptions above, which contain the same or additional compliance features.
 
 Contoso IT administrators take the following steps to verify the licensing support for Contoso:
 
-1. IT administrators sign in to the **Microsoft 365 admin center** [(https://admin.microsoft.com)](https://admin.microsoft.com) and navigate to **Microsoft 365 admin center** > **Billing** > **Licenses**.
+1. IT administrators sign in to the **Microsoft 365 admin center** <https://admin.microsoft.com> and navigate to **Microsoft 365 admin center** > **Billing** > **Licenses**.
 
 2. Here they confirm that they have one of the [license options](communication-compliance-configure.md#subscriptions-and-licensing) that includes support for communication compliance.
 
@@ -86,8 +86,8 @@ Contoso decides to use the *Communication Compliance* role group assign all the 
 | **Communication Compliance Investigator** | Use this group to assign permissions to users that will act as communication compliance investigators. Users assigned to this role group can view message metadata and content, escalate to additional reviewers, escalate to an Advanced eDiscovery case, send notifications to users, and resolve the alert. |
 | **Communication Compliance Viewer** | Use this group to assign permissions to users that will manage communication reports. Users assigned to this role group can access all reporting widgets on the communication compliance home page and can view all communication compliance reports. |
 
-1. Contoso IT administrators sign into the **Office 365 Security & Compliance center** permissions page [(https://protection.office.com/permissions)](https://protection.office.com/permissions) using credentials for a global administrator account and select the link to view and manage roles in Microsoft 365.
-2. In the **Security & Compliance Center**, they go to **Permissions** and select the link to view and manage roles in Office 365.
+1. Contoso IT administrators sign into the [Microsoft 365 compliance center](https://compliance.microsoft.com/permissions) permissions page using credentials for a global administrator account and select the link to view and manage roles in Microsoft 365.
+2. In the **Microsoft 365 compliance center**, they go to **Permissions** and select the link to view and manage roles in Office 365.
 3. The administrators select the *Communication Compliance* role group, then select **Edit role group**.
 4. The administrators select **Choose members** from the left navigation pane, then select **Edit**.
 5. They select **Add** and then select the checkbox for all Contoso users that will manage communication compliance, investigate, and review alerts.

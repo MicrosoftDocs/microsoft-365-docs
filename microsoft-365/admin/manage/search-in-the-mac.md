@@ -39,7 +39,7 @@ Users can be found by display name, last name, first name, username, primary ema
 
 :::image type="content" source="../../media/User-search-stock-picture-domain-blanked.png" alt-text="Screenshot: Search for a user Felix Henderson":::
 
-If you select the "More actions" menu next to their name, you can reset their password.
+If you select the three dots (more actions) menu next to their name, you can reset their password.
 
 :::image type="content" source="../../media/User-search-stock-picture-reset-password-domain-blanked.png" alt-text="Screenshot: User search with the option to reset password from search result":::
 

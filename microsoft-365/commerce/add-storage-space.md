@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: drjones, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -18,11 +19,9 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - commerce_purchase
-- PPM_jmueller
-ms.reviewer: drjones
-search.appverid:
-- MET150
-description: "Learn to add and reduce file storage in your Microsoft 365 subscription. With extra file storage, you can store more content in SharePoint Online and OneDrive."
+- AdminTemplateSet
+search.appverid: MET150
+description: "Add file storage in your Microsoft 365 subscription. With extra file storage, you can store more content in SharePoint Online and OneDrive."
 ms.date: 04/02/2021
 ---
 
@@ -84,6 +83,8 @@ Office 365 Extra File Storage is available for the following subscriptions:
 - Office 365 Enterprise E3
 - Office 365 Enterprise E4
 - Office 365 Enterprise E5
+- Office 365 A3 (faculty)
+- Office 365 A5 (faculty)
 - Office for the web with SharePoint Plan 1
 - Office for the web with SharePoint Plan 2
 - SharePoint Online Plan 1
@@ -100,5 +101,5 @@ Office 365 Extra File Storage is available for the following subscriptions:
 
 ## Related content
 
-[Manage site storage limits](https://docs.microsoft.com/sharepoint/manage-site-collection-storage-limits) (article)\
-[Set the default storage space for OneDrive users](/onedrive/set-default-storage-space)(article)
+[Manage site storage limits](/sharepoint/manage-site-collection-storage-limits) (article)\
+[Set the default storage space for OneDrive users](/onedrive/set-default-storage-space) (article)
