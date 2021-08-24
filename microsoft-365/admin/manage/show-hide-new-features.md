@@ -13,7 +13,9 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom: 
+- AdminSurgePortfolio
+- admindeeplinkMAC
 search.appverid:
 - BCS160
 - MET150
@@ -34,14 +36,13 @@ You can control which of these feature messages your users are shown by using th
 
 ## Show or hide new features
 
-1. In the Microsoft 365 admin center, under **Settings**, choose **Org settings**.
-2. On the **Services** tab, choose **What's new in Office**.
-3. When you click on the feature name, a fly-out panel appears with the following information:
+1. In the Microsoft 365 admin center, under **Settings**, choose **Org settings**, select the <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">**Services** tab</a>, and then select **What's new in Office**.
+1. When you click on the feature name, a fly-out panel appears with the following information:
      - A short description of the feature.
      - A link to an article to learn more about the feature.
      - The Office applications that the feature appears in.
      - The first version (release) that the feature is available in for that channel.
-4. Choose **Hide from users**. Or, if you previously hid the feature, choose **Show to users**.
+1. Choose **Hide from users**. Or, if you previously hid the feature, choose **Show to users**.
 
 You can also select multiple features on the **Manage which Office features appear in What's New** page, and then choose either **Hide** or **Show**.
 

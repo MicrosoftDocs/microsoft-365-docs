@@ -39,6 +39,7 @@ Retrieves a collection of [Machines](machine.md) related to a given file hash.
 ## Limitations
 
 1. Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
+2. Only SHA-1 Hash Function is supported (not MD5 or SHA-256).
 
 ## Permissions
 
@@ -75,7 +76,7 @@ Empty
 
 ## Response
 
-If successful and file exists - 200 OK with list of [machine](machine.md) entities in the body. If file does not exist - 404 Not Found.
+If successful and file exists - 200 OK with list of [machine](machine.md) entities in the body. If file does not exist - 200 OK with an empty set.
 
 ## Example
 

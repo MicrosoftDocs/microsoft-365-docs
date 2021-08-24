@@ -63,7 +63,9 @@ This topic describes how to install, configure, update, and use Defender for End
     -   Access to the Microsoft 365 Defender portal.
 
         > [!NOTE]
-        > Microsoft Intune is the only supported Mobile Device Management (MDM) solution for deploying Microsoft Defender for Endpoint on Android. Currently only enrolled devices are supported for enforcing Defender for Endpoint on Android related device compliance policies in Intune. 
+        > Microsoft Defender for Endpoint now extends support to an organization’s data within a managed application for those who aren’t using mobile device management (MDM) but are using Intune to manage mobile applications. It also extends this support to customers who use other enterprise mobility management solutions, while still using Intune for [mobile application management (MAM)](/mem/intune/apps/mam-faq).
+        > Prior to this update, Microsoft Defender for Endpoint worked on devices that were enrolled using Intune MDM only.  
+
 
     -   Access [Microsoft Endpoint Manager admin
         center](https://go.microsoft.com/fwlink/?linkid=2109431), to deploy the
@@ -103,4 +105,5 @@ Guidance on how to configure Microsoft Defender for Endpoint on Android features
 ## Related topics
 - [Deploy Microsoft Defender for Endpoint on Android with Microsoft Intune](android-intune.md)
 - [Configure Microsoft Defender for Endpoint on Android features](android-configure.md)
+- [Mobile Application Management (MAM) basics](/mem/intune/apps/app-management#mobile-application-management-mam-basics)
 

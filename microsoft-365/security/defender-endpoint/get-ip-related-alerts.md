@@ -75,7 +75,8 @@ Empty
 
 ## Response
 
-If successful and IP exists - 200 OK with list of [alert](alerts.md) entities in the body. If IP do not exist - 404 Not Found.
+If successful and IP exists - 200 OK with list of [alert](alerts.md) entities in the body. If IP address is unknown but valid, it will return an empty set.
+If the IP address is invalid, it will return HTTP 400.
 
 ## Example
 
