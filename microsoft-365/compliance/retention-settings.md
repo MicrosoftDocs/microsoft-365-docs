@@ -16,7 +16,7 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: "Understand the settings you can configure in a retention policy or retention label policy to keep what you want and get rid of what you don't."
+description: "Understand the settings you can configure in a retention policy or retention label policy to keep what you want and get rid of what you don't want."
 ---
 
 # Common settings for retention policies and retention label policies

@@ -301,7 +301,7 @@ Advantages of using static scopes:
 
 - The **Skype for Business** and **Exchange public folders** locations don't support adaptive scopes. For those locations, you must use a static scope. 
 
-For configuration information, see [Configuring adaptive scopes](configure-retention-settings.md#configuration-information-for-adaptive-scopes).
+For configuration information, see [Configuring adaptive scopes](retention-settings.md#configuration-information-for-adaptive-scopes).
 
 > [!IMPORTANT]
 > Currently, adaptive scopes don't support [Preservation Lock to restrict changes to retention policies and retention label policies](#use-preservation-lock-to-restrict-changes-to-policies).
