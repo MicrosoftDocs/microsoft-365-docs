@@ -70,7 +70,7 @@ Here's how that works:
 
 1. A user attempts to access a website on their device. The site happens to be hosted on a dangerous domain, and it should be blocked by network protection.  
 
-2. The three-way handshake via TCP/IP commences. Before it completes, a `NetworkConnectionEvents` action is logged, and its ActionType is listed as `ConnectionSuccess`. However, as soon as the three-way handshake process completes, network protection blocks access to the site. All of this happens very quickly.
+2. The three-way handshake via TCP/IP commences. Before it completes, a `NetworkConnectionEvents` action is logged, and its ActionType is listed as `ConnectionSuccess`. However, as soon as the three-way handshake process completes, network protection blocks access to the site. All of this happens very quickly. A similar process occurs with Microsoft Defender SmartScreen; it's when the three-way handshake completes that access to a site is blocked or allowed.
 
 3. In the Microsoft 365 Defender portal, an alert is generated. Details include both the `NetworkConnectionEvents` and the `AlertEvents` details. Thus, you can see that the site was blocked, even though you also have a `NetworkConnectionEvents` item with the ActionType of `ConnectionSuccess`.
 
