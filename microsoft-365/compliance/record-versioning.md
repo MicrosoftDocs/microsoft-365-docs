@@ -97,7 +97,7 @@ For more information about how the Preservation Hold library works, see [How ret
 
 The actions of locking and unlocking records are logged in the audit log. From **File and page activities**, select **Changed record status to locked** and **Changed record status to unlocked**.
 
-For more information about searching for these events, see [Search the audit log in the Security & Compliance Center](search-the-audit-log-in-security-and-compliance.md#file-and-page-activities).
+For more information about searching for these events, see [Search the audit log](search-the-audit-log-in-security-and-compliance.md#file-and-page-activities).
 
 ## Next steps
 

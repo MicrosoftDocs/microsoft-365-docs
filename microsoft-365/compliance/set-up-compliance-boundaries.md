@@ -77,9 +77,9 @@ For a complete list, see the full list of supported [mailbox filters](/powershel
 
 ## Step 2: Create a role group for each agency
 
-The next step is to create the role groups in the Security & Compliance Center that will align with your agencies. We recommend that you create a role group by copying the built-in eDiscovery Managers group, adding the appropriate members, and removing roles that may not be applicable to your needs. For more information about eDiscovery-related roles, see [Assign eDiscovery permissions](assign-ediscovery-permissions.md).
+The next step is to create the role groups in the Microsoft 365 compliance center that will align with your agencies. We recommend that you create a role group by copying the built-in eDiscovery Managers group, adding the appropriate members, and removing roles that may not be applicable to your needs. For more information about eDiscovery-related roles, see [Assign eDiscovery permissions](assign-ediscovery-permissions.md).
   
-To create the role groups, go to the **Permissions** page in the Security & Compliance Center and create a role group for each team in each agency that will use compliance boundaries and eDiscovery cases to manage investigations.
+To create the role groups, go to the **Permissions** page in the Microsoft 365 compliance center and create a role group for each team in each agency that will use compliance boundaries and eDiscovery cases to manage investigations.
   
 Using the Contoso compliance boundaries scenario, four role groups need to be created and the appropriate members added to each one.
   
@@ -140,7 +140,7 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "C
 
 The final step is to create a Core eDiscovery case or Advanced eDiscovery case in the Microsoft 365 compliance center and then add the role group that you created in Step 2 as a member of the case. This results in two important characteristics of using compliance boundaries:
   
-- Only members of the role group added to the case will be able to see and access the case in the Security & Compliance Center. For example, if the Fourth Coffee Investigators role group is the only member of a case, then members of the Fourth Coffee eDiscovery Managers role group (or members of any other role group) won't be able to see or access the case.
+- Only members of the role group added to the case will be able to see and access the case in the Microsoft 365 compliance center. For example, if the Fourth Coffee Investigators role group is the only member of a case, then members of the Fourth Coffee eDiscovery Managers role group (or members of any other role group) won't be able to see or access the case.
 
 - When a member of the role group assigned to a case runs a search associated with the case, they will only be able to search the content locations within their agency (which is defined by the search permissions filter that you created in Step 3.)
 

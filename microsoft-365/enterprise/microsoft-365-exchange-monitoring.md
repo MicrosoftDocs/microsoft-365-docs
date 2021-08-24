@@ -73,13 +73,13 @@ With Exchange Online monitoring supports the following scenarios:
 
 - **App connectivity**: Estimated connectivity is based on the percentage of successful, synthetic connections between your organization's devices and Exchange Online, and may include issues outside of Microsoft's control. 
 
-- **Mail flow**: The number of messages successfully delivered to a mailbox without any delay after the message reached the Microsoft 365 network.
-
 - **Basic Authentication and Modern Authentication**: The number of users successfully validated in the Exchange Online service.
 
-![An example of monitoring Exchange health for mail delivery](../media/microsoft-365-exchange-monitoring/exchange-monitoring-scenario-example.png)
+- **Mail flow**: The number of messages successfully delivered to a mailbox without any delay after the message reached the Microsoft 365 network.
 
-For all these scenarios, the key numbers are for the last 30 minutes in the main dashboard. Detailed views for each of these scenarios show the near real-time trend for seven days with the 30-minute aggregate compared with the previous week.
+  ![An example of monitoring Exchange health for mail delivery](../media/microsoft-365-exchange-monitoring/exchange-monitoring-scenario-example.png)
+
+For these scenarios, the key numbers are for the last 30 minutes in the main dashboard. Detailed views for each of these scenarios show the near real-time trend for seven days with the 30-minute aggregate compared with the previous week.
 
 ## Send us feedback
 
