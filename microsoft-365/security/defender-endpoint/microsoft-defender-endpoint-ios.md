@@ -29,7 +29,7 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 **Microsoft Defender for Endpoint on iOS** offers protection against phishing and unsafe network connections from websites, emails, and apps. All alerts will be available through a single pane of glass in the Microsoft Defender Security Center. The portal gives security teams a centralized view of threats on iOS devices along with other platforms.
 
@@ -57,7 +57,8 @@ ms.technology: mde
 - Access to [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), to deploy the app to enrolled user groups in your organization.
 
     > [!NOTE]
-    > Microsoft Intune is the only supported Unified Endpoint Management (UEM) solution for deploying Microsoft Defender for Endpoint and enforcing Defender for Endpoint related device compliance policies in Intune.
+    > Microsoft Defender for Endpoint now extends support to an organization’s data within a managed application for those who aren’t using mobile device management (MDM) but are using Intune to manage mobile applications. It also extends this support to customers who use other enterprise mobility management solutions, while still using Intune for [mobile application management (MAM)](/mem/intune/apps/mam-faq).
+    > Prior to this update, Microsoft Defender for Endpoint worked on devices that were enrolled using Intune MDM only.  
 
 **System Requirements**
 
@@ -82,3 +83,4 @@ For more information, see [Deploy Microsoft Defender for Endpoint on iOS](ios-in
 - [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)
 - [Configure app protection policy to include Defender for Endpoint risk signals (MAM)](ios-install-unmanaged.md)
 - [Configure Conditional Access policy based on device risk score from Microsoft Defender for Endpoint](ios-configure-features.md#conditional-access-with-defender-for-endpoint-on-ios)
+- [Mobile Application Management (MAM) basics](/mem/intune/apps/app-management#mobile-application-management-mam-basics)

@@ -3,7 +3,7 @@ title: Difference between document understanding and form processing models
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
-ms.reviewer: lauriellis
+ms.reviewer: lauris
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -12,7 +12,7 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 localization_priority: Priority
-description: Learn about key difference between document understanding and form processing models.
+description: Learn about key difference between a document understanding model and a form processing model.
 ---
 
 # Difference between document understanding and form processing models 
@@ -47,7 +47,7 @@ Document understanding models are created and managed in a SharePoint content ce
 > [!NOTE]
 > For more information about input documents, see [Form processing model requirements and limitations](/ai-builder/form-processing-model-requirements). 
 
-Form processing models are created in PowerApps [AI Builder](/ai-builder/overview), but the creation starts directly from a SharePoint document library. A document library must have form processing model creation enabled before a user can create a form processing model for it. Admins can enable form processing model creation in the content understanding admin settings. Form processing models use PowerAutomate flows to process files when they're uploaded to the document library.
+Form processing models are created in Power Apps [AI Builder](/ai-builder/overview), but the creation starts directly from a SharePoint document library. A document library must have form processing model creation enabled before a user can create a form processing model for it. Admins can enable form processing model creation in the content understanding admin settings. Form processing models use PowerAutomate flows to process files when they're uploaded to the document library.
 
 When you create a document understanding model, you create a new [SharePoint content type](https://support.microsoft.com/office/use-content-types-to-manage-content-consistently-on-a-site-48512bcb-6527-480b-b096-c03b7ec1d978) that is saved to the SharePoint Content Types gallery. Or you can use existing content types to define your model if needed.
 

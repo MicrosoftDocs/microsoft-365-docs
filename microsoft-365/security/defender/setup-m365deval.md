@@ -1,6 +1,6 @@
 ---
 title: Set up your Microsoft 365 Defender trial lab or pilot environment
-description: Access Microsoft 365 Security Center then set up your Microsoft 365 Defender trial lab environment
+description: Access Microsoft 365 Defender portal then set up your Microsoft 365 Defender trial lab environment
 keywords: Microsoft 365 Defender trial setup, Microsoft 365 Defender pilot setup, try Microsoft 365 Defender, Microsoft 365 Defender evaluation lab setup
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150

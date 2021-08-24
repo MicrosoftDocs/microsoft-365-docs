@@ -26,7 +26,7 @@ ms.custom: api
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -68,8 +68,8 @@ lastIpAddress | String | Last IP on local NIC on the [machine](machine.md).
 lastExternalIpAddress | String | Last IP through which the [machine](machine.md) accessed the internet.
 healthStatus | Enum | [machine](machine.md) health status. Possible values are: "Active", "Inactive", "ImpairedCommunication", "NoSensorData", "NoSensorDataImpairedCommunication" and "Unknown". 
 rbacGroupName | String | Machine group Name.
+rbacGroupId | String | Machine group ID.
 riskScore | Nullable Enum | Risk score as evaluated by Microsoft Defender for Endpoint. Possible values are: 'None', 'Informational', 'Low', 'Medium' and 'High'.
-exposureScore | Nullable Enum | [Exposure score](tvm-exposure-score.md) as evaluated by Microsoft Defender for Endpoint. Possible values are: 'None', 'Low', 'Medium' and 'High'.
 aadDeviceId | Nullable representation Guid | AAD Device ID (when [machine](machine.md) is AAD Joined).
 machineTags | String collection | Set of [machine](machine.md) tags.
 exposureLevel | Nullable Enum | Exposure level as evaluated by Microsoft Defender for Endpoint. Possible values are: 'None', 'Low', 'Medium' and 'High'.

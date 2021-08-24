@@ -1,7 +1,7 @@
 ---
 title: "Add a domain to a client tenancy with Windows PowerShell for DAP partners"
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -44,7 +44,7 @@ You also need the following information:
 
 ## Create domains
 
- Your customers will likely ask you to create additional domains to associate with their tenancy because they don't want the default <domain>.onmicrosoft.com domain to be the primary one that represents their corporate identities to the world. This procedure walks you through creating a new domain associated with your customer's tenancy.
+ Your customers will likely ask you to create additional domains to associate with their tenancy because they don't want the default \<domain>.onmicrosoft.com domain to be the primary one that represents their corporate identities to the world. This procedure walks you through creating a new domain associated with your customer's tenancy.
 
 > [!NOTE]
 > To perform some of these operations, the partner administrator account you sign in with must be set to **Full administration** for the **Assign administrative access to companies you support** setting found in the details of the admin account in the Microsoft 365 admin center. For more information on managing partner administrator roles, see [Partners: Offer delegated administration](https://go.microsoft.com/fwlink/p/?LinkId=532435).

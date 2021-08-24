@@ -18,7 +18,7 @@ ms.collection:
   - M365-security-compliance
   - m365solution-scenario
 ms.topic: article
-ms.date: 06/11/2021
+ms.date: 07/29/2021
 ms.reviewer: chventou
 ---
 
@@ -30,7 +30,7 @@ ms.reviewer: chventou
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 We recommend using [Microsoft Endpoint Manager](/mem), which includes Microsoft Intune (Intune) to manage your organization's threat protection features for devices (also referred to as endpoints). [Learn more about Endpoint Manager](/mem/endpoint-manager-overview).
 
@@ -39,7 +39,7 @@ This article describes how to find your Microsoft Defender for Endpoint settings
 ## Find your Microsoft Defender for Endpoint settings in Intune
 
 > [!IMPORTANT]
-> You must be a global administrator or service administrator in Intune to configure the settings described in this article. To learn more, see **[Types of administrators (Intune)](/mem/intune/fundamentals/users-add#types-of-administrators)**.
+> You must have either the global administrator or service administrator role assigned in Intune to configure the settings described in this article. To learn more, see **[Types of administrators (Intune)](/mem/intune/fundamentals/users-add#types-of-administrators)**.
 
 1. Go to the Azure portal ([https://portal.azure.com](https://portal.azure.com)) and sign in.
 

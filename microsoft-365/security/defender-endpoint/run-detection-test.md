@@ -1,6 +1,6 @@
 ---
-title: Run a detection test on a newly onboarded Microsoft Defender for Endpoint device
-description: Run the detection script on a newly onboarded device to verify that it is properly onboarded to the Microsoft Defender for Endpoint service.
+title: Run a detection test after adding a device to Microsoft Defender for Endpoint device
+description: Run the detection script on a device that has recently been added to the Microsoft Defender for Endpoint service to verify that it is properly onboarded
 keywords: detection test, detection, powershell, script, verify, onboarding, microsoft defender for endpoint onboarding, clients, servers, test
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -34,8 +34,13 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
+Onboarding devices is the method of adding devices to the Microsoft Defender for Endpoint service. It allows devices to report signals to the service.  
+
+Verifying that a device has been successfully added to the service is an important step in the entire deployment process. 
+
+## Verify onboarding using a detection test
 Run the following PowerShell script on a newly onboarded device to verify that it is properly reporting to the Defender for Endpoint service.
 
 1. Create a folder:  'C:\test-MDATP-test'.

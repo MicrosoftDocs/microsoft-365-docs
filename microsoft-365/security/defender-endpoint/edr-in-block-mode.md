@@ -15,7 +15,7 @@ localization_priority: Normal
 ms.custom: 
   - next-gen
   - edr
-ms.date: 07/20/2021
+ms.date: 08/05/2021
 ms.collection: 
   - m365-security-compliance
   - m365initiative-defender-endpoint
@@ -30,7 +30,7 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 ## What is EDR in block mode?
 
@@ -69,7 +69,8 @@ The following image shows an instance of unwanted software that was detected and
 
 2. Choose **Settings** > **Endpoints** > **General** > **Advanced features**.
 
-3. Scroll down, and then urn on **Enable EDR in block mode**.
+3. Scroll down, and then turn on **Enable EDR in block mode**.
+
 
 > [!NOTE]
 > EDR in block mode can be turned on only in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) or the former Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)). You cannot use registry keys, Microsoft Intune, or Group Policy to enable or disable EDR in block mode.
@@ -78,7 +79,7 @@ The following image shows an instance of unwanted software that was detected and
 
 | Requirement  | Details  |
 |---------|---------|
-| Permissions | You must have the Global Administrator or Security Administrator role assigned in [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal). For more information, see [Basic permissions](basic-permissions.md). |
+| Permissions | You must have either the Global Administrator or Security Administrator role assigned in [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal). For more information, see [Basic permissions](basic-permissions.md). |
 | Operating system     | Devices must be running one of the following versions of Windows: <br/>- Windows 10 (all releases) <br/>- Windows Server, version 1803 or newer <br/>- Windows Server 2019 <br/>- Windows Server 2016 (only when Microsoft Defender Antivirus is in active mode)     |
 | Microsoft Defender for Endpoint     | Devices must be onboarded to Defender for Endpoint. See [Minimum requirements for Microsoft Defender for Endpoint](minimum-requirements.md).       |
 | Microsoft Defender Antivirus  | Devices must have Microsoft Defender Antivirus installed and running in either active mode or passive mode. [Confirm Microsoft Defender Antivirus is in active or passive mode](#how-do-i-confirm-microsoft-defender-antivirus-is-in-active-or-passive-mode). |
@@ -153,7 +154,7 @@ If Microsoft Defender Antivirus is running in active mode or passive mode, EDR i
 
 If Windows Server 2016 has Microsoft Defender Antivirus running in active mode, and the endpoint is onboarded to Defender for Endpoint, then EDR in block mode is technically supported. However, EDR in block mode is intended to be extra protection when Microsoft Defender Antivirus is not the primary antivirus solution on an endpoint. In those cases, Microsoft Defender Antivirus runs in passive mode. 
 
-Currently, running Microsoft Defender Antivirus in passive mode is not supported on Windows Server 2016. To learn more, see [Microsoft Defender Antivirus and non-Microsoft antivirus/antimalware solutions](microsoft-defender-antivirus-compatibility.md#microsoft-defender-antivirus-and-non-microsoft-antivirusantimalware-solutions).
+Currently, running Microsoft Defender Antivirus in passive mode is not supported on Windows Server 2016. To learn more, see [Passive mode and Windows Server](microsoft-defender-antivirus-on-windows-server.md#passive-mode-and-windows-server) and [Microsoft Defender Antivirus compatibility](microsoft-defender-antivirus-compatibility.md).
 
 ### How much time does it take for EDR in block mode to be disabled?
 

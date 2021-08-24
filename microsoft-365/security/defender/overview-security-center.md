@@ -116,7 +116,7 @@ Reports are also unified in Microsoft 365 Defender. Admins can start with a gene
 
 ### Quickly view your Microsoft 365 environment
 
-The **Home** page shows many of the common cards that security teams need. The composition of cards and data is dependent on the user role. Because Microsoft 365 security center uses role-based access control, different roles will see cards that are more meaningful to their day to day jobs.  
+The **Home** page shows many of the common cards that security teams need. The composition of cards and data is dependent on the user role. Because Microsoft 365 Defender portal uses role-based access control, different roles will see cards that are more meaningful to their day to day jobs.  
 
 This at-a-glance information helps you keep up with the latest activities in your organization. Microsoft 365 Defender brings together signals from different sources to present a holistic view of your Microsoft 365 environment.
 
@@ -138,7 +138,7 @@ Track and respond to emerging threats with the following Microsoft 365 Defender 
 
 ## A centralized Learning Hub
 
-Microsoft 365 security center includes a learning hub that bubbles up official guidance from resources such as the Microsoft security blog, the Microsoft security community on YouTube, and the official documentation at docs.microsoft.com.
+Microsoft 365 Defender portal includes a learning hub that bubbles up official guidance from resources such as the Microsoft security blog, the Microsoft security community on YouTube, and the official documentation at docs.microsoft.com.
 
 Inside the learning hub, Email & Collaboration (Microsoft Defender for Office 365) guidance is side-by-side with Endpoint (Microsoft Defender for Endpoint) and Microsoft 365 Defender learning resources.
 

@@ -32,10 +32,10 @@ If your organization has data loss prevention (DLP), you can define policies tha
 
 [Data loss prevention](dlp-learn-about-dlp.md) capabilities were extended to include Microsoft Teams chat and channel messages, **including private channel messages** for:
 
-- Office 365 E5/A5
-- Microsoft 365 E5/A5
-- Microsoft 365 Information Protection and Governance
-- Office 365 Advanced Compliance
+- Office 365 E5/A5/G5
+- Microsoft 365 E5/A5/G5
+- Microsoft 365 E5/A5/G5 Information Protection and Governance
+- Microsoft 365 E5/A5/G5/F5 Compliance and F5 Security & Compliance
 
 Office 365 and Microsoft 365 E3 include DLP protection for SharePoint Online, OneDrive, and Exchange Online. This also includes files that are shared through Teams because Teams uses SharePoint Online and OneDrive to share files.
 
