@@ -34,13 +34,76 @@ A ransomware attacker that has infiltrated a Microsoft 365 tenant can attempt to
 
 - Deleting files or email
 - Encrypting files
-- Copying files outside the tenant (data exfiltration)
+- Copying files or sending email outside the tenant (data exfiltration)
+
+
+### Deleting files or email
+
+Files in SharePoint and OnDrive for Business are protected by:
+
+- Versioning: Retains a minimum of 500 versions of a file by default and can be configured to retain more.
+- Recycle bin: If the ransomware creates a new encrypted copy of the file, and deletes the old file, customers have 93 days to restore it from the recycle bin. After 93 days, there is a 14-day window where Microsoft can still recover the data.
+- Preservation Hold library: Files stored in SharePoint or OneDrive sites can be retained by applying retention settings. When a document with versions is subject to retention settings, versions get copied to the Preservation Hold library and exist as a separate item. If a user suspects their files have been compromised, they can investigate file changes by reviewing the retained copy. File Restore can then be used to recover files within the last 30 days.
+Email:
+
+- With single item recovery and mailbox retention, You can recover items in a mailbox upon inadvertent or malicious premature deletion. You can rollback mail messages deleted within 14 days by default, configurable up to 30 days.
+
+- Retention policies allow you to retain immutable copies of email for up to 10 years.
+
+### Encrypting files
+
+Files in SharePoint and OnDrive for Business are protected by:
+
+- Versioning: Retains a minimum of 500 versions of a file by default and can be configured to retain more. If the ransomware edits and encrypts a file, a previous version of the file can be recovered.
+- Recycle bin: If the ransomware creates a new encrypted copy of the file, and deletes the old file, customers have 93 days to restore it from the recycle bin. After 93 days, there is a 14-day window where Microsoft can still recover the data.
+- Preservation Hold library: Files stored in SharePoint or OneDrive sites can be retained by applying retention settings. When a document with versions is subject to retention settings, versions get copied to the Preservation Hold library and exist as a separate item. If a user suspects their files have been compromised, they can investigate file changes by reviewing the retained copy. File Restore can then be used to recover files within the last 30 days.
+
+### Copying files or sending email outside the tenant 
+
+
 
 ADD: Built-in capabilities for files/email for M365 services
 
+Microsoft has many built-in capabilities to mitigate and recover from ransomware attacks.
+
+
+For OneDrive and SharePoint data, Microsoft can roll back to a previous point in time for up to 14 days if you are hit by a mass attack.
+
+[Dealing with data corruption in Microsoft 365](/compliance/assurance/assurance-dealing-with-data-corruption)
+
+
+For the details, see [Malware and ransomware protection in Microsoft 365](/compliance/assurance/assurance-malware-and-ransomware-protection).
+
+
+- Protecting storage with disaster recovery
+  
+  - Microsoft stores multiple copies of metadata and content in geo-distribution regions
+  
+  - If metadata is corrupted in Azure SQL we can restore for up to 30d
+  
+  - We do not give capacity units the ability to overwrite or delete content in Azure Storage, only to create new blobs
+
+- Protecting compute with isolation
+
+  - It is an explicit design goal to prevent malware from being able to break out of a capacity unit to broadly impact our customers
+
+  - There exist no credentials on a given capacity unit VM that can be used to move laterally to another VM within same the capacity unit
+
+  - Likewise, there exist no credentials on a given capacity unit that can be used to move laterally to another capacity unit
+
+- Defending storage and compute with detection and incident response
+
+  - We have dedicated intrusion detection systems for metadata storage (Azure SQL), content storage (in Azure storage), and compute
+
+  - These intrusion detection systems operate in near-real-time and are designed to detect unauthorized access, tampering, or deletion of content
+
+  - These capabilities are exercised yearly by the M365 pen-test team
+
+
+
 ## What’s in this solution
 
-This solution steps you through the deployment of Microsoft 365 protection and mitigation features, configurations, and ongoing operations to minimize the ability of a ramsomware attacker to use the critical data in your Microsoft 365 tenant as financial leverage and hold your organization at ransom.
+This solution steps you through the deployment of Microsoft 365 protection and mitigation features, configurations, and ongoing operations to minimize the ability of a ramsomware attacker to use the critical data in your Microsoft 365 tenant as financial leverage and hold your organization for ransom.
 
 ![The steps to protecting against ransomware with Microsoft 365](../media/protect-against-ransomware-microsoft-365/protect-against-ransomware-microsoft-365-step-grid.png)
 
