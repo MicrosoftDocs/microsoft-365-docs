@@ -34,7 +34,7 @@ This article provides an overview of cloud protection and automatic sample submi
 
 To understand how cloud protection works together with sample submission, it can be helpful to understand how Defender for Endpoint protects against threats. The Microsoft Intelligent Security Graph monitors threat data from a vast network of sensors. Microsoft layers cloud-based machine learning models that can assess files based on signals from the client and the vast network of sensors and data in the Intelligent Security Graph. This approach gives Defender for Endpoint the ability to block many never-before-seen threats. 
 
-Figure 1 depicts the flow of cloud protection and sample submission with Microsoft Defender Antivirus.
+The following image depicts the flow of cloud protection and sample submission with Microsoft Defender Antivirus:
 
 :::image type="content" source="images/cloud-protection-flow.png" alt-text="Cloud-delivered protection flow":::
 
