@@ -42,7 +42,7 @@ The first example demonstrates how to connect Power BI to Advanced Hunting API a
 
 - Open Microsoft Power BI
 
-- Click **Get Data** > **Blank Query**
+- Click **Get Data** \> **Blank Query**
 
   ![Image of create blank query](images/power-bi-create-blank-query.png)
 
@@ -96,7 +96,7 @@ The first example demonstrates how to connect Power BI to Advanced Hunting API a
 
     ![Image of edit credentials0](images/power-bi-edit-credentials.png)
 
-- Select **Organizational account** > **Sign in**
+- Select **Organizational account** \> **Sign in**
 
     ![Image of set credentials1](images/power-bi-set-credentials-organizational.png)
 
