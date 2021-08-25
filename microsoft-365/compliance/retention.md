@@ -285,7 +285,7 @@ When you create a retention policy or retention label policy for retention, you 
 
 - A **static scope** doesn't use queries and is limited in configuration to either all instances for the selected location, including specific instances, or excluding specific instances. These three choices are sometimes referred to as "org-wide", "includes", and "excludes" respectively.
     
-    Example: Emails for the Sales Executive group require a longer retention period than standard users. You create the retention policy with a static scope and the email address of the Sales Executive group. The group membership is retrieved when the policy is created so when new users join or leave this group, you must reconfigure the retention policy to add or remove the users.
+    Example: Emails for the Sales Executive group require a longer retention period than standard users. You create the retention policy with a static scope that includes the email address of the Sales Executive group. The group membership is retrieved when the policy is created so when new users join or leave this group, you must reconfigure the retention policy to add or remove the users.
 
 Advantages of using adaptive scopes:
 
