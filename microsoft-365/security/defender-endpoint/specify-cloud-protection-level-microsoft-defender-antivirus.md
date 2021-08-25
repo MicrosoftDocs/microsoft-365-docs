@@ -44,9 +44,9 @@ You can specify your level of cloud protection offered by Microsoft Defender Ant
 
 5. Expand **Cloud protection**, and then in the **Cloud-delivered protection level** list, select one of the following:
 
-    1. **High**: Applies a strong level of detection.
-    2. **High plus**: Uses the **High** level and applies extra protection measures (might affect client performance).
-    3. **Zero tolerance**: Blocks all unknown executables.
+    - **High**: Applies a strong level of detection.
+    - **High plus**: Uses the **High** level and applies extra protection measures (might affect client performance).
+    - **Zero tolerance**: Blocks all unknown executables.
 
 6. Choose **Review + save**, and then choose **Save**. 
 
