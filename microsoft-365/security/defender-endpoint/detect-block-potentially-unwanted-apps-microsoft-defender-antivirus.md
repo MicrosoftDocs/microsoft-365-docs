@@ -110,7 +110,7 @@ For System Center 2012 Configuration Manager, see [How to Deploy Potentially Unw
 
 4. In the **Group Policy Management Editor**, go to **Computer configuration** and select **Administrative templates**.
 
-5. Expand the tree to **Windows Components** > **Microsoft Defender Antivirus**.
+5. Expand the tree to **Windows Components** \> **Microsoft Defender Antivirus**.
 
 6. Double-click **Configure detection for potentially unwanted applications**.
 
