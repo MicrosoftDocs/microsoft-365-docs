@@ -41,11 +41,16 @@ Network protection extends the protection in [Web protection](web-protection-ove
 
 Network protection requires Windows 10 Pro or Enterprise, and Microsoft Defender Antivirus real-time protection.
 
-| Windows version | Microsoft Defender Antivirus |
-|:---|:---|
-| Windows 10 version 1709 or later <p>Windows Server 1803 or later | [Microsoft Defender Antivirus real-time protection](configure-real-time-protection-microsoft-defender-antivirus.md) and [cloud-delivered protection](enable-cloud-protection-microsoft-defender-antivirus.md) must be enabled |
+<br>
 
-After you have enabled the services, you might need to configure your network or firewall to allow the connections between the services and your devices (also referred to as endpoints).  
+****
+
+|Windows version|Microsoft Defender Antivirus|
+|---|---|
+|Windows 10 version 1709 or later <p> Windows Server 1803 or later|[Microsoft Defender Antivirus real-time protection](configure-real-time-protection-microsoft-defender-antivirus.md) and [cloud-delivered protection](enable-cloud-protection-microsoft-defender-antivirus.md) must be enabled|
+|
+
+After you have enabled the services, you might need to configure your network or firewall to allow the connections between the services and your devices (also referred to as endpoints).
 
 - `.smartscreen.microsoft.com`
 - `.smartscreen-prod.microsoft.com`
@@ -70,7 +75,7 @@ Here is an example query for advanced hunting:
 
 ```kusto
 DeviceEvents
-| where ActionType in ('ExploitGuardNetworkProtectionAudited','ExploitGuardNetworkProtectionBlocked')
+|where ActionType in ('ExploitGuardNetworkProtectionAudited','ExploitGuardNetworkProtectionBlocked')
 ```
 
 ## Review network protection events in Windows Event Viewer
@@ -83,11 +88,16 @@ You can review the Windows event log to see events that are created when network
 
 This procedure creates a custom view that filters to only show the following events related to network protection:
 
-| Event ID | Description |
-|:---|:---|
-| 5007 | Event when settings are changed |
-| 1125 | Event when network protection fires in audit mode |
-| 1126 | Event when network protection fires in block mode |
+<br>
+
+****
+
+|Event ID|Description|
+|---|---|
+|5007|Event when settings are changed|
+|1125|Event when network protection fires in audit mode|
+|1126|Event when network protection fires in block mode|
+|
 
 ## Network protection and the TCP three-way handshake
 
@@ -111,7 +121,7 @@ Due to the multi-user nature of Windows 10 Enterprise, keep the following points
 
 3. If you need to differentiate between user groups, consider creating separate Windows Virtual Desktop host pools and assignments.
 
-4. Test network protection in audit mode to assess its behavior before rolling out. 
+4. Test network protection in audit mode to assess its behavior before rolling out.
 
 5. Consider resizing your deployment if you have a large number of users or a large number of multi-user sessions.
 
@@ -136,7 +146,5 @@ reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyPacUrl /d "<Proxy PAC
 ## See also
 
 - [Evaluate network protection](evaluate-network-protection.md) | Undertake a quick scenario that demonstrates how the feature works, and what events would typically be created.
-
 - [Enable network protection](enable-network-protection.md) | Use Group Policy, PowerShell, or MDM CSPs to enable and manage network protection in your network.
-
 - [Configuring attack surface reduction capabilities in Microsoft Intune](/mem/intune/protect/endpoint-security-asr-policy)
