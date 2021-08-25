@@ -8815,7 +8815,7 @@ Any term from the Dictionary_icd_9_updated keyword dictionary, which is based on
 
 Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on the [International Classification of Diseases,Ninth Revision, Clinical Modification (ICD-9-CM)](https://go.microsoft.com/fwlink/?linkid=852605). This type looks only for insurance codes, not the description.
 
-<!-- ## IP address
+## IP address
 
 ### Format
 
@@ -8847,7 +8847,7 @@ For IPv6, a DLP policy has high confidence that it's detected this type of sensi
 
 ```xml
     <!-- IP Address --> 
-<!--    <Entity id="1daa4ad5-e2dd-4ca4-a788-54722c09efb2" patternsProximity="300" recommendedConfidence="85">
+    <Entity id="1daa4ad5-e2dd-4ca4-a788-54722c09efb2" patternsProximity="300" recommendedConfidence="85">
       <Pattern confidenceLevel="85">
         <IdMatch idRef="Regex_ipv6_address" />
         <Any minMatches="0" maxMatches="0">
