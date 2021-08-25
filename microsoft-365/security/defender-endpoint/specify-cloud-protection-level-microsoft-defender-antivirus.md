@@ -60,7 +60,7 @@ You can specify your level of cloud protection offered by Microsoft Defender Ant
 
 1.  On your Group Policy management machine, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)).
 
-2. Right-click the Group Policy Object you want to configure, and then click **Edit**.
+2. Right-click the Group Policy Object you want to configure, and then select **Edit**.
 
 3.  In the **Group Policy Management Editor** go to **Computer Configuration** > **Administrative templates**.
 
