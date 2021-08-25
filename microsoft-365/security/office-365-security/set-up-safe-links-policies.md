@@ -259,7 +259,7 @@ New-SafeLinksPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-IsEn
 This example creates a safe links policy named Contoso All with the following values:
 
 - Turn on URL scanning and rewriting in email messages.
-- Turn on URL scanning in Teams (TAP Preview only).
+- Turn on URL scanning in Teams.
 - Turn on real-time scanning of clicked URLs, including clicked links that point to files.
 - Wait for URL scanning to complete before delivering the message.
 - Turn on URL scanning and rewriting for internal messages.
