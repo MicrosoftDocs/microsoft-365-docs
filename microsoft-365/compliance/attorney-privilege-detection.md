@@ -52,7 +52,7 @@ To enable the attorney-client privilege detection model, your organization has t
 
 A person who is an eDiscovery Administrator in your organization (a member of the eDiscovery Administrator subgroup in the eDiscovery Manager role group) must make the model available in your Advanced eDiscovery cases.
 
-1. In the Security & Compliance Center, go to **eDiscovery > Advanced eDiscovery**.
+1. In the Microsoft 365 compliance center, go to **eDiscovery > Advanced**.
 
 2. On the **Advanced eDiscovery** home page, in the **Settings** tile, click **Configure global analytics settings**.
 

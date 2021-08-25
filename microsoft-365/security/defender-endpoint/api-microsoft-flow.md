@@ -46,7 +46,7 @@ The following example demonstrates how to create a Flow that is triggered any ti
 
 1. Log in to [Microsoft Power Automate](https://flow.microsoft.com).
 
-2. Go to **My flows** > **New** > **Automated-from blank**.
+2. Go to **My flows** \> **New** \> **Automated-from blank**.
 
     ![Image of edit credentials2](images/api-flow-1.png)
 
