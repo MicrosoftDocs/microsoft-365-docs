@@ -36,9 +36,7 @@ To understand how cloud protection works together with sample submission, it can
 
 Figure 1 depicts the flow of cloud protection and sample submission with Microsoft Defender Antivirus.
 
-*Figure 1. The cloud protection flow*
-
-:::image type="content" source="images/cloud-protection-flow.png" alt-text="Figure 1. Cloud-delivered protection flow":::
+:::image type="content" source="images/cloud-protection-flow.png" alt-text="Cloud-delivered protection flow":::
 
 Microsoft Defender Antivirus and cloud protection automatically block most new, never-before-seen threats at first sight by using the following methods:
 
@@ -50,15 +48,12 @@ Microsoft Defender Antivirus and cloud protection automatically block most new, 
 
 4. Advanced cloud-based protection is provided for cases when Microsoft Defender Antivirus running on the endpoint needs more intelligence to verify the intent of a suspicious file.
 
-   1. In the event Microsoft Defender Antivirus cannot make a clear determination, file metadata is sent to the cloud protection service. Usually, the cloud protection service can determine whether the file is malicious or not a threat within milliseconds.  
+   1. In the event Microsoft Defender Antivirus cannot make a clear determination, file metadata is sent to the cloud protection service. Often within milliseconds, the cloud protection service can determine based on the metadata as to whether the file is malicious or not a threat.  
 
       - The cloud query of file metadata can be a result of behavior, mark of the web, or other characteristics where a clear verdict is not determined.
       - A small metadata payload is sent, with the goal of reaching a verdict of malware or not a threat. The metadata does not include personally identifiable information (PII). Information such as filenames, are hashed.
-      - Can be synchronous or asynchronous. For synchronous, the file will not open until the cloud renders a verdict. For asynchronous, the file will open while the cloud performs its analysis.
-      - Metadata can include PE attributes, static file attributes, dynamic and contextual attributes, and more (as depicted in figure 2).
-
-      *Figure 2: Examples of metadata sent to Microsoft Defender Antivirus cloud protection*
-       :::image type="content" source="images/cloud-protection-metadata-sample.png" alt-text="Figure 2. Examples of metadata sent to Microsoft Defender Cloud Protection":::
+      - Can be synchronous or asynchronous. For synchronous, the file will not open until the cloud renders a verdict. For asynchronous, the file will open while cloud protection performs its analysis.
+      - Metadata can include PE attributes, static file attributes, dynamic and contextual attributes, and more (see [Examples of metadata sent to the cloud protection service](#examples-of-metadata-sent-to-the-cloud-protection-service)).
 
    2. After examining the metadata, if Microsoft Defender Antivirus cloud protection cannot reach a conclusive verdict, it can request a sample of the file for further inspection. This request honors the settings configuration for sample submission:
 
@@ -99,6 +94,10 @@ In addition to configuring your cloud protection level, you can configure your s
 - **Do not send samples**  
 
 For information about configuration options using Intune, Configuration Manager, GPO, or PowerShell, see [Turn on cloud protection in Microsoft Defender Antivirus](enable-cloud-protection-microsoft-defender-antivirus.md).
+
+## Examples of metadata sent to the cloud protection service
+
+:::image type="content" source="images/cloud-protection-metadata-sample.png" alt-text="Figure 2. Examples of metadata sent to Microsoft Defender Cloud Protection":::
 
 ## Other file sample submission scenarios
 
