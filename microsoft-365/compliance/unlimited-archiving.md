@@ -36,7 +36,7 @@ As previously explained, additional mailbox storage space is created when a user
 
 Here's a quick overview of the process.
 
-![Overview of the auto-expanding archiving process](../media/74355385-d990-44fe-8a87-6c3639d1f63f.png)
+![Overview of the auto-expanding archiving process.](../media/74355385-d990-44fe-8a87-6c3639d1f63f.png)
 
 1. Archiving is enabled for a user mailbox or a shared mailbox. An archive mailbox with 100 GB of storage space is created, and the warning quota for the archive mailbox is set to 90 GB.
 
@@ -62,11 +62,11 @@ The following screenshots show a folder list before and after messages are moved
 
  **Before additional storage is added**
 
-![Folder list of archive mailbox before auto-expanding archive is provisioned](../media/5d6d6420-e562-4912-aaab-1c111762b3f6.png)
+![Folder list of archive mailbox before auto-expanding archive is provisioned.](../media/5d6d6420-e562-4912-aaab-1c111762b3f6.png)
 
  **After additional storage is added**
 
-![Folder list of archive mailbox after auto-expanding archive is provisioned](../media/c03c5f51-23fa-4fc2-b887-7e7e5cce30da.png)
+![Folder list of archive mailbox after auto-expanding archive is provisioned.](../media/c03c5f51-23fa-4fc2-b887-7e7e5cce30da.png)
 
 > [!NOTE]
 > As previously described, Microsoft 365 moves items to subfolders (and names them using the naming convention described above) to help distribute content to an auxiliary archive. But moving items to subfolders may not always be the case. Sometimes an entire folder may be moved to an auxiliary archive. In this case, the folder will retain its original name.  It won't be apparent in the folder list in Outlook that the folder was moved to an auxiliary archive.

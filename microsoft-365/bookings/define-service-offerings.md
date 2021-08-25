@@ -34,7 +34,7 @@ You can also add customized information and URLs to the email confirmation and r
         - A link to a Teams or Skype meeting, unique to the booking, will be added to the calendar event on both the staff's and the customers' calendars, along with dial-in information.
         - The link to join the meeting will be added to all confirmation and reminder emails, as shown in the following example:
 
-        :::image type="content" source="media/bookings-teams-meeting-link.jpg" alt-text="Example of link to join Teams meeting in Bookings":::
+        :::image type="content" source="media/bookings-teams-meeting-link.jpg" alt-text="Example of link to join Teams meeting in Bookings.":::
 
         > [!NOTE]
         > Teams meetings can be joined via the Teams mobile app, the Teams desktop app, in a Web browser, or via the phone dial-in. We strongly recommend enabling Teams as the default online meeting service for your tenant, for the best experience booking virtual appointments.
@@ -57,7 +57,7 @@ You can also add customized information and URLs to the email confirmation and r
         - **Cancel booking** This cancels the booking and removes it from the staff's calendar.
         - **New booking** This option brings the user to the Self-Service page with all services and staff listed, for scheduling a new booking.
 
-        :::image type="content" source="media/bookings-manage-booking-button.jpg" alt-text="The Manage Bookings button in Bookings":::
+        :::image type="content" source="media/bookings-manage-booking-button.jpg" alt-text="The Manage Bookings button in Bookings.":::
 
         We only recommend leaving this setting enabled if you are comfortable with customers accessing the Self-Service page.
 
@@ -69,7 +69,7 @@ You can also add customized information and URLs to the email confirmation and r
 
 9. **Maximum attendees per event** This setting allows you to create services that require the ability for multiple people to book the same appointment time and the same staff (such as a fitness class). The appointment time slot for the selected service, staff, and time will be available to book until the maximum number of attendees, specified by you, has been reached. Current appointment capacity and attendees can be viewed in the Calendar tab in the Bookings Web app.
 
-    :::image type="content" source="media/bookings-maximum-attendees.jpg" alt-text="Example of setting maximum attendees in Bookings":::
+    :::image type="content" source="media/bookings-maximum-attendees.jpg" alt-text="Example of setting maximum attendees in Bookings.":::
 
 10. **Default price**  This is the price that will display on the Self-Service page. If **Price not set** is selected, then no price or reference to cost or pricing will appear.
 
@@ -87,21 +87,21 @@ You can also add customized information and URLs to the email confirmation and r
 
     - The default confirmation and reminder emails include basic information about the appointment, such as the customer/client name, staff member's name, the service or appointment booked, and the time of the appointment. For online meetings, a link to join will also be included. The ability to manage the booking can also be included, if this setting is enabled (as described above in step 8).
 
-        :::image type="content" source="media/bookings-remind-confirm.jpg" alt-text="A confirmation email from Bookings":::
+        :::image type="content" source="media/bookings-remind-confirm.jpg" alt-text="A confirmation email from Bookings.":::
 
     - Optionally, you can include any additional text you would like here, such as information about rescheduling or what customers should bring for the appointment. The following is an example of customized text added to the original confirmation email, seen in the **Additional information for Email Confirmation** field:
 
-        :::image type="content" source="media/bookings-additional-info.jpg" alt-text="Additional information in a Bookings email":::
+        :::image type="content" source="media/bookings-additional-info.jpg" alt-text="Additional information in a Bookings email.":::
 
 14. **Enable text message notifications for your customer** If selected, SMS messages are sent to the customer, but only if they opt-in.
 
     - Opt-in box on the manual booking and Self-Service Page:
 
-        :::image type="content" source="media/bookings-opt-In-boc.jpg" alt-text="The opt-in box in Bookings":::
+        :::image type="content" source="media/bookings-opt-In-boc.jpg" alt-text="The opt-in box in Bookings.":::
 
     - Text message notifications will look like the following (note that SMS notifications are currently only available in North America):
 
-        :::image type="content" source="media/bookings-text-notifications.jpg" alt-text="A text notification from Bookings":::
+        :::image type="content" source="media/bookings-text-notifications.jpg" alt-text="A text notification from Bookings.":::
 
 15. **Publishing options** Choose whether to have this service appear as bookable on the Self-Service page, or to make the service bookable only on the Calendar tab within the Bookings Web app.
 

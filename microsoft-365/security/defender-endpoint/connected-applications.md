@@ -42,8 +42,8 @@ From the left navigation menu, select **Partners & APIs** (under **Endpoints**) 
 
 The Connected applications page provides information about the Azure AD applications connected to Microsoft Defender for Endpoint in your organization. You can review the usage of the connected applications: last seen, number of requests in the past 24 hours, and request trends in the last 30 days.
 
-![Image of connected apps](images/connected-apps.png)
-
+![Image of connected apps.](images/connected-apps.png)
+ 
 ## Edit, reconfigure, or delete a connected application
 
 The **Open application settings** link opens the corresponding Azure AD application management page in the Azure portal. From the Azure portal, you can manage permissions, reconfigure, or delete the connected applications.

@@ -24,7 +24,7 @@ After data is stored in user mailboxes, you can apply Microsoft 365 compliance f
 
 The following overview explains the process of using a data connector to archive LivePerson Conversational Cloud data in Microsoft 365.
 
-![Archiving workflow for LivePerson Conversational Cloud data from 17a-4](../media/LiveEngageDataParserConnectorWorkflow.png)
+![Archiving workflow for LivePerson Conversational Cloud data from 17a-4.](../media/LiveEngageDataParserConnectorWorkflow.png)
 
 1. Your organization works with 17a-4 to set up and configure the the LivePerson Conversational Cloud DataParser.
 

@@ -72,7 +72,7 @@ By sharing information across app governance, Azure AD, and Microsoft Cloud App 
 
 Here's a summary of the integration.
 
-![The integration of app governance with Azure AD and Microsoft Cloud App Security](..\media\manage-app-protection-governance\mapg-integration.png)
+![The integration of app governance with Azure AD and Microsoft Cloud App Security.](..\media\manage-app-protection-governance\mapg-integration.png)
 
 Additionally, app governance sends its alerts as signals to Microsoft Cloud App Security and Microsoft 365 Defender, and app governance receives alerts from Microsoft Cloud App Security, to enable more detailed analysis of app-based security incidents.
 
