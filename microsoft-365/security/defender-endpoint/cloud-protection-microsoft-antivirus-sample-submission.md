@@ -7,8 +7,8 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 localization_priority: Normal
-author: jweston-1
-ms.author: v-jweston
+author: denisebmsft
+ms.author: deniseb
 ms.reviewer: mkaminska
 manager: dansimp
 ms.custom: nextgen

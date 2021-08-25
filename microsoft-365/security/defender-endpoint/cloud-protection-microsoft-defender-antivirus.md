@@ -9,7 +9,7 @@ ms.sitesec: library
 localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
-ms.reviewer: shwjha
+ms.reviewer: mkaminska
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
