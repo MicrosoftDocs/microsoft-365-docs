@@ -63,4 +63,4 @@ This is a self-service portal you can use to remove yourself from the Microsoft 
 
 ## Abuse and spam reporting for junk email originating from Exchange Online
 
-Sometimes Microsoft365 is used by third parties to send junk email, in violation of our terms of use and policy. If you receive any junk email from Office 365, you can report these messages to Microsoft. For instructions, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
+Sometimes Microsoft 365 is used by third parties to send junk email, in violation of our terms of use and policy. If you receive any junk email from Office 365, you can report these messages to Microsoft. For instructions, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).

@@ -40,7 +40,7 @@ Create a notification rule so that when a local onboarding or offboarding script
 
 You'll need to have access to:
 
-- Microsoft Flow (Flow Plan 1 at a minimum). For more information, see [Flow pricing page](https://flow.microsoft.com/pricing/).
+- Power Automate (Per-user plan at a minimum). For more information, see [Power Automate pricing page](https://flow.microsoft.com/pricing/).
 - Azure Table or SharePoint List or Library / SQL DB.
 
 ## Create the notification flow
