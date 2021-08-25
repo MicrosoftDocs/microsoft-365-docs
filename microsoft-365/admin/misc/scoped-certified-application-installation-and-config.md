@@ -157,9 +157,9 @@ Some prerequisites are necessary to set up the Microsoft 365 support integration
 
     :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image8.png" alt-text="Graphical user interface, application Description automatically generated":::
 
-### \[Optional\] Whitelist the service’s Ips of Microsoft 365 support integration
+### \[Optional\] Allow the service’s Ips of Microsoft 365 support integration
 
-If your company is limiting internet access with your own policies, enable network access for the service of Microsoft 365 support integration by whitelisting the IP addresses below for both inbound and outbound API access.
+If your company is limiting internet access with your own policies, enable network access for the service of Microsoft 365 support integration by allowing the IP addresses below for both inbound and outbound API access.
 
 - 52.149.152.32
 
@@ -407,9 +407,9 @@ These prerequisite steps are necessary to set up the Microsoft 365 support integ
 
     :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image26.png" alt-text="Graphical user interface, application Description automatically generated":::
 
-### \[Optional\] Whitelist the service’s Ips of Microsoft 365 support integration
+### \[Optional\] Allow the service’s Ips of Microsoft 365 support integration
 
-If your company is limiting internet access with your own policies, enable network access for the service of Microsoft 365 support integration by whitelisting these IP addresses for both inbound and outbound API access:
+If your company is limiting internet access with your own policies, enable network access for the service of Microsoft 365 support integration by allowing these IP addresses for both inbound and outbound API access:
 
 - 52.149.152.32
 
