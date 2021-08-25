@@ -314,7 +314,7 @@ You can configure multiple retention policies for Microsoft 365 locations, as we
 
 You must specify the exact email address for a user, exact URL for a site, and exact email address for a Microsoft 365 group.
 
-The option for sites includes OneDrive accounts. For information about the URL for a user's OneDrive account, see [Configuration information for SharePoint sites and OneDrive accounts](retention-settings.md#configuration-information-for-sharepoint-sites-and-onedrive-accounts).
+The option for sites includes OneDrive accounts. For information how to specify the URL for a user's OneDrive account, see [Configuration information for SharePoint sites and OneDrive accounts](retention-settings.md#configuration-information-for-sharepoint-sites-and-onedrive-accounts).
 
 ## The principles of retention, or what takes precedence?
 
