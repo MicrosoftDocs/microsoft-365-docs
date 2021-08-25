@@ -60,7 +60,7 @@ For information on other tables in the advanced hunting schema, see [the advanc
 |`Longitude`|string|The east to west coordinates of the sign-in location|
 |`RequestId`|string|Unique identifier of the request|
 |`ReportId`|string|Unique identifier for the event|
-|
+||||
  
 ## Related articles
 
