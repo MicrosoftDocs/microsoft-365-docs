@@ -11,7 +11,7 @@ ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
 ms.date: 08/25/2021
-ms.reviewer: 
+ms.reviewer: mkaminska
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
