@@ -88,14 +88,11 @@ Microsoft Defender Antivirus and cloud protection automatically block most new, 
 
 ## Cloud protection levels
 
-Malware detection requires striking a balance between providing the strongest possible protection, while minimizing the number of false positives. Cloud protection levels allow you to define the tolerance level appropriate for your specific organization. When you enable cloud protection, your protection level is automatically configured to provide strong detection without increasing the risk of detecting legitimate files. However, you can configure a different protection level. See [Specify the cloud-delivered protection level for Microsoft Defender Antivirus](specify-cloud-protection-level-microsoft-defender-antivirus.md).
-
-> [!Note]
-> Changing the protection level can result in a higher level of false positives and should be carefully evaluated before changing.
+Cloud protection is enabled by default in Microsoft Defender Antivirus. We recommend that you keep cloud protection enabled, although you can configure the protection level for your organization. See [Specify the cloud-delivered protection level for Microsoft Defender Antivirus](specify-cloud-protection-level-microsoft-defender-antivirus.md).
 
 ## Sample submission settings
 
-Cloud protection is enabled by default in Microsoft Defender Antivirus. We recommend that you keep cloud protection enabled. You can configure sample submission settings as follows: 
+In addition to configuring your cloud protection level, you can configure your sample submission settings. You can choose from several options:
 
 - **Send safe samples automatically**  (the default behavior)
 - **Send all samples automatically**  
