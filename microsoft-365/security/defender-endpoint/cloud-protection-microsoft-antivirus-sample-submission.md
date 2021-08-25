@@ -40,23 +40,7 @@ Cloud protection is enabled by default in Microsoft Defender Antivirus. We recom
 
 For information about configuration options using Intune, Configuration Manager, GPO, or PowerShell, see [Turn on cloud protection in Microsoft Defender Antivirus](enable-cloud-protection-microsoft-defender-antivirus.md).
 
-## Customer data, cloud protection, and sample submission
-
-Defender for Endpoint treats all file samples as customer data, honoring both the geographical and data retention choices your organization selected when onboarding to Defender for Endpoint. TO learn more, see [Microsoft Defender for Endpoint data storage and privacy](data-storage-privacy.md#data-storage-location).
-
-Defender for Endpoint has received multiple compliance certifications, demonstrating continued adherence to a sophisticated set of compliance controls:
-
-- ISO 27001
-- ISO 27018
-- SOC I, II, III
-- and PCI
-
-For more information, see the following resources:
-
-- [Azure Compliance Offerings](/azure/storage/common/storage-compliance-offerings) 
-- [Service Trust Portal](https://servicetrust.microsoft.com)
-
-## Cloud protection mechanisms
+## How cloud protection and sample submission work together
 
 The Microsoft Intelligent Security Graph monitors threat data from a vast network of sensors. Microsoft layers cloud-based machine learning models that can assess files based on signals from the client and the vast network of sensors and data in the Intelligent Security Graph. This model gives Defender for Endpoint the ability to block many never-before-seen threats. Figure 1 depicts the flow of cloud protection and sample submission with Microsoft Defender Antivirus.
 
@@ -75,7 +59,7 @@ Microsoft Defender Antivirus and cloud protection automatically block most new, 
 4. Advanced cloud-based protection is provided for cases when Microsoft Defender Antivirus running on the endpoint needs more intelligence to verify the intent of a suspicious file.
 
    1. In the event Microsoft Defender Antivirus cannot make a clear determination, file metadata is sent to the cloud protection service. Usually, the cloud protection service can determine whether the file is malicious or not a threat within milliseconds.  
-   
+
       - The cloud query of file metadata can be a result of behavior, mark of the web, or other characteristics where a clear verdict is not determined.
       - A small metadata payload is sent, with the goal of reaching a verdict of malware or not a threat. The metadata does not include personally identifiable information (PII). Information such as filenames, are hashed.
       - Can be synchronous or asynchronous. For synchronous, the file will not open until the cloud renders a verdict. For asynchronous, the file will open while the cloud performs its analysis.
@@ -138,3 +122,20 @@ Learn about Defender for Endpoint configuration settings, see: [Onboarding tools
 When [automated investigations](automated-investigations.md) are running on devices (when configured to run automatically in response to an alert or manually run), files that are identified as suspicious can be collected from the endpoints for further inspection. If necessary, the file content analysis feature for automated investigations can be disabled in the Microsoft 365 Defender portal. The file extension names can also be modified to add or remove extensions for other file types that will be automatically submitted during an automated investigation.
 
 To learn more, see [Manage automation file uploads](manage-automation-file-uploads.md).
+
+## Samples are treated as customer data
+
+Just in case you're wondering what happens with sample submissions, Defender for Endpoint treats all file samples as customer data. Microsoft honors both the geographical and data retention choices your organization selected when onboarding to Defender for Endpoint. 
+
+In addition, Defender for Endpoint has received multiple compliance certifications, demonstrating continued adherence to a sophisticated set of compliance controls:
+
+- ISO 27001
+- ISO 27018
+- SOC I, II, III
+- and PCI
+
+For more information, see the following resources:
+
+- [Azure Compliance Offerings](/azure/storage/common/storage-compliance-offerings) 
+- [Service Trust Portal](https://servicetrust.microsoft.com)
+- [Microsoft Defender for Endpoint data storage and privacy](data-storage-privacy.md#data-storage-location)
