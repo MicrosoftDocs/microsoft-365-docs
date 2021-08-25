@@ -61,7 +61,7 @@ Roles include:
 
 ## Privacy Management Administrators role group
 
-Members of this role group focus on configuration and administration tasks, and have broad access to privacy management functions, including creating, reading, updating, and deleting privacy management policies, subject rights requests, privacy management permissions, and privacy management settings.
+Members of this role group have broad access to privacy management functions, including creating, reading, updating, and deleting privacy management policies, subject rights requests, privacy management permissions, and privacy management settings.
 
 Roles include:
 
@@ -82,7 +82,7 @@ Roles include:
 
 ### Privacy Management Investigators role group
 
-Members of this group act as privacy management data investigators. They can investigate policy matches, view the associated file content, and take remediation actions. This group can access files through the Content Explorer. 
+Members of this group act as privacy management data investigators. They can investigate policy matches, view the associated file content, and take remediation actions. This group can access files through the Content Explorer.
 
 Roles include:
 

@@ -82,7 +82,7 @@ Before you can successfully run the script in this section, you have to download
     .\ConnectEXO-SCC.ps1
     ```
 
-How do you know if this worked? After you run the script, cmdlets from Exchange Online and Security & Compliance PowerShell are imported to your local Windows PowerShell session. If you don't receive any errors, you connected successfully. A quick test is to run an Exchange Online and Security & Compliance Center cmdlet. For example, you can run and **Get-Mailbox** and **Get-ComplianceSearch**.
+How do you know if this worked? After you run the script, cmdlets from Exchange Online and Security & Compliance PowerShell are imported to your local Windows PowerShell session. If you don't receive any errors, you connected successfully. A quick test is to run Exchange Online and Security & Compliance Center PowerShell cmdlets. For example, you can run and **Get-Mailbox** and **Get-ComplianceSearch**.
 
 For troubleshooting PowerShell connection errors, see:
 
