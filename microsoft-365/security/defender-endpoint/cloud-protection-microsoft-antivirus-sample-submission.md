@@ -58,7 +58,7 @@ For more information, see the following resources:
 
 ## Cloud protection mechanisms
 
-The Microsoft Intelligent Security Graph monitors threat data from a vast network of sensors. Microsoft layers cloud-based machine learning models that can assess files based on signals from the client and the vast network of sensors and data in the Intelligent Security Graph. This model gives Defender for Endpoint the ability to block many never-before seen threats. Figure 1 depicts the flow of cloud protection and sample submission with Microsoft Defender Antivirus.
+The Microsoft Intelligent Security Graph monitors threat data from a vast network of sensors. Microsoft layers cloud-based machine learning models that can assess files based on signals from the client and the vast network of sensors and data in the Intelligent Security Graph. This model gives Defender for Endpoint the ability to block many never-before-seen threats. Figure 1 depicts the flow of cloud protection and sample submission with Microsoft Defender Antivirus.
 
 *Figure 1. The cloud protection flow*
 
@@ -75,6 +75,7 @@ Microsoft Defender Antivirus and cloud protection automatically block most new, 
 4. Advanced cloud-based protection is provided for cases when Microsoft Defender Antivirus running on the endpoint needs more intelligence to verify the intent of a suspicious file.
 
    1. In the event Microsoft Defender Antivirus cannot make a clear determination, file metadata is sent to the cloud protection service. Usually, the cloud protection service can determine whether the file is malicious or not a threat within milliseconds.  
+   
       - The cloud query of file metadata can be a result of behavior, mark of the web, or other characteristics where a clear verdict is not determined.
       - A small metadata payload is sent, with the goal of reaching a verdict of malware or not a threat. The metadata does not include personally identifiable information (PII). Information such as filenames, are hashed.
       - Can be synchronous or asynchronous. For synchronous, the file will not open until the cloud renders a verdict. For asynchronous, the file will open while the cloud performs its analysis.
