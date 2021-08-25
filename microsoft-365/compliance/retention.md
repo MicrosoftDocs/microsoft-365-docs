@@ -280,14 +280,18 @@ For more information about how retention policies and retention labels work toge
 When you create a retention policy or retention label policy for retention, you must choose between adaptive and static to define the scope of the policy.
 
 - An **adaptive scope** uses a query that you specify, so the membership isn't static but dynamic by running a daily query against the attributes that you specify for the selected locations. You can use multiple adaptive scopes with a single policy.
+    
+    Example: Emails for the Sales Executive group require a longer retention period than standard users. You create the retention policy with an adaptive scope that uses the email address of the Sales Executive group. When new users join or leave this group, there's no need to reconfigure the retention policy because the adaptive scope automatically pickes up changes in the group membership.
 
 - A **static scope** doesn't use queries and is limited in configuration to either all instances for the selected location, including specific instances, or excluding specific instances. These three choices are sometimes referred to as "org-wide", "includes", and "excludes" respectively.
+    
+    Example: Emails for the Sales Executive group require a longer retention period than standard users. You create the retention policy with a static scope and the email address of the Sales Executive group. The group membership is retrieved when the policy is created so when new users join or leave this group, you must reconfigure the retention policy to add or remove the users.
 
 Advantages of using adaptive scopes:
 
 - No limits on the [number of items per policy](retention-limits.md#maximum-number-of-items-per-policy). Although adaptive policies are still subject to the [maximum number of policies per tenant](retention-limits.md#maximum-number-of-policies-per-tenant) limitations, the more flexible configuration will likely result in far fewer policies.
 
-- More powerful targeting for your retention requirements. For example, you can assign different retention settings to users according to their geographical location without the administrative overhead of creating and maintaining groups.
+- More powerful targeting for your retention requirements. For example, you can assign different retention settings to users according to their geographical location by using existing Azure AD attributes without the administrative overhead of creating and maintaining groups for this purpose.
 
 - Query-based membership provides resilience against business changes that might not be reliably reflected in group membership or external processes that rely on cross-department communication.
 
