@@ -33,77 +33,60 @@ A human-operated ransomware attack can be catastrophic to businesses of all size
 A ransomware attacker that has infiltrated a Microsoft 365 tenant can attempt to create financial leverage by:
 
 - Deleting files or email
-- Encrypting files
-- Copying files or sending email outside the tenant (data exfiltration)
+- Encrypting files in place
+- Copying files outside the tenant (data exfiltration)
 
+However, Microsoft 365 has many built-in capabilities to mitigate and recover from ransomware attacks. The following sections provide a summary. For the details, see [Malware and ransomware protection in Microsoft 365](/compliance/assurance/assurance-malware-and-ransomware-protection).
 
 ### Deleting files or email
 
-Files in SharePoint and OnDrive for Business are protected by:
+Files in SharePoint and OneDrive for Business are protected by:
 
-- Versioning: Retains a minimum of 500 versions of a file by default and can be configured to retain more.
-- Recycle bin: If the ransomware creates a new encrypted copy of the file, and deletes the old file, customers have 93 days to restore it from the recycle bin. After 93 days, there is a 14-day window where Microsoft can still recover the data.
-- Preservation Hold library: Files stored in SharePoint or OneDrive sites can be retained by applying retention settings. When a document with versions is subject to retention settings, versions get copied to the Preservation Hold library and exist as a separate item. If a user suspects their files have been compromised, they can investigate file changes by reviewing the retained copy. File Restore can then be used to recover files within the last 30 days.
+- Versioning 
+
+  - Retains a minimum of 500 versions of a file by default and can be configured to retain more. Train your users on how to retrieve previous versions of files.
+
+- Recycle bin
+
+  - If the ransomware creates a new encrypted copy of the file, and deletes the old file, customers have 93 days to restore it from the recycle bin. After 93 days, there is a 14-day window where Microsoft can still recover the data. Train your users on how to restore files from the recycle bin.
+
+- Preservation Hold library
+
+  - Files stored in SharePoint or OneDrive sites can be retained by applying retention settings. When a document with versions is subject to retention settings, versions get copied to the Preservation Hold library and exist as a separate item. If a user suspects their files have been compromised, they can investigate file changes by reviewing the retained copy. File Restore can then be used to recover files within the last 30 days.
+
+For OneDrive and SharePoint data, Microsoft can roll back to a previous point in time for up to 14 days if you are hit by a mass attack.
+
+[Files Restore](https://techcommunity.microsoft.com/t5/microsoft-onedrive-blog/announcing-new-onedrive-for-business-feature-files-restore/ba-p/147436) is a complete self-service recovery solution for OneDrive that allows administrators and end users to restore files from any point in time during the last 30 days.
+
 Email:
 
-- With single item recovery and mailbox retention, You can recover items in a mailbox upon inadvertent or malicious premature deletion. You can rollback mail messages deleted within 14 days by default, configurable up to 30 days.
+- With single item recovery and mailbox retention, you can recover items in a mailbox upon inadvertent or malicious premature deletion. You can rollback mail messages deleted within 14 days by default, configurable up to 30 days.
 
 - Retention policies allow you to retain immutable copies of email for up to 10 years.
 
 ### Encrypting files
 
-Files in SharePoint and OnDrive for Business are protected by:
+As previously described, files in SharePoint and OneDrive for Business are protected from encryption by:
 
-- Versioning: Retains a minimum of 500 versions of a file by default and can be configured to retain more. If the ransomware edits and encrypts a file, a previous version of the file can be recovered.
-- Recycle bin: If the ransomware creates a new encrypted copy of the file, and deletes the old file, customers have 93 days to restore it from the recycle bin. After 93 days, there is a 14-day window where Microsoft can still recover the data.
-- Preservation Hold library: Files stored in SharePoint or OneDrive sites can be retained by applying retention settings. When a document with versions is subject to retention settings, versions get copied to the Preservation Hold library and exist as a separate item. If a user suspects their files have been compromised, they can investigate file changes by reviewing the retained copy. File Restore can then be used to recover files within the last 30 days.
+- Versioning
+- Recycle bin
+- Preservation Hold library
 
-### Copying files or sending email outside the tenant 
+For additional details, see [Dealing with data corruption in Microsoft 365](/compliance/assurance/assurance-dealing-with-data-corruption).
 
+### Copying files outside the tenant 
 
+DLP policies
 
-ADD: Built-in capabilities for files/email for M365 services
+Microsoft Cloud App Security session policies (/cloud-app-security/tutorial-dlp#how-to-discover-and-protect-sensitive-information-in-your-organization)
 
-Microsoft has many built-in capabilities to mitigate and recover from ransomware attacks.
-
-
-For OneDrive and SharePoint data, Microsoft can roll back to a previous point in time for up to 14 days if you are hit by a mass attack.
-
-[Dealing with data corruption in Microsoft 365](/compliance/assurance/assurance-dealing-with-data-corruption)
-
-
-For the details, see [Malware and ransomware protection in Microsoft 365](/compliance/assurance/assurance-malware-and-ransomware-protection).
-
-
-- Protecting storage with disaster recovery
-  
-  - Microsoft stores multiple copies of metadata and content in geo-distribution regions
-  
-  - If metadata is corrupted in Azure SQL we can restore for up to 30d
-  
-  - We do not give capacity units the ability to overwrite or delete content in Azure Storage, only to create new blobs
-
-- Protecting compute with isolation
-
-  - It is an explicit design goal to prevent malware from being able to break out of a capacity unit to broadly impact our customers
-
-  - There exist no credentials on a given capacity unit VM that can be used to move laterally to another VM within same the capacity unit
-
-  - Likewise, there exist no credentials on a given capacity unit that can be used to move laterally to another capacity unit
-
-- Defending storage and compute with detection and incident response
-
-  - We have dedicated intrusion detection systems for metadata storage (Azure SQL), content storage (in Azure storage), and compute
-
-  - These intrusion detection systems operate in near-real-time and are designed to detect unauthorized access, tampering, or deletion of content
-
-  - These capabilities are exercised yearly by the M365 pen-test team
+ADD
 
 
 
 ## What’s in this solution
 
-This solution steps you through the deployment of Microsoft 365 protection and mitigation features, configurations, and ongoing operations to minimize the ability of a ramsomware attacker to use the critical data in your Microsoft 365 tenant as financial leverage and hold your organization for ransom.
+This solution steps you through the deployment of Microsoft 365 protection and mitigation features, configurations, and ongoing operations to minimize the ability of a ransomware attacker to use the critical data in your Microsoft 365 tenant as financial leverage and hold your organization for ransom.
 
 ![The steps to protecting against ransomware with Microsoft 365](../media/protect-against-ransomware-microsoft-365/protect-against-ransomware-microsoft-365-step-grid.png)
 
@@ -115,7 +98,7 @@ The steps in this solution are:
 4. [Protect devices](protect-against-ransomware-microsoft-365-step4.md)
 5. [Protect information](protect-against-ransomware-microsoft-365-step5.md)
 
-Here are the steps of the solution deployed for your Microsoft 365 tenant.
+Here are the five steps of the solution deployed for your Microsoft 365 tenant.
 
 ![Ransomware protection for a Microsoft 365 tenant](../media/protect-against-ransomware-microsoft-365/protect-against-ransomware-microsoft-365-architecture.png)
 
@@ -124,7 +107,7 @@ Here are the steps of the solution deployed for your Microsoft 365 tenant.
 
 To protect your Microsoft 365 tenant from a ransomware attack, use these Microsoft 365 capabilities and features in the following categories.
 
-### Security baseline
+### 1. Security baseline
 
 | Capability or feature | Description | Helps... | Licensing |
 |:-------|:-----|:-------|:-------|
@@ -133,7 +116,7 @@ To protect your Microsoft 365 tenant from a ransomware attack, use these Microso
 | Exchange email settings |  Enables services to reduce your organization's vulnerability to an email-based attack. | Initial access to your tenant  | E3 or E5 |
 | Windows, Edge, and Microsoft 365 Apps for Enterprise settings | Industry-standard security configurations that are broadly known and well-tested. | Attacks based on  | E3 or E5 |
 
-### Detection and response
+### 2. Detection and response
 
 | Capability or feature | Description | Helps detect and respond to... | Licensing |
 |:-------|:-----|:-------|:-------|
@@ -144,14 +127,14 @@ To protect your Microsoft 365 tenant from a ransomware attack, use these Microso
 | [Azure AD Identity Protection](/azure/active-directory/identity-protection/) | Automates the detection and remediation of identity-based risks and investigate those risks. | Credential compromise for Azure AD accounts and privilege escalation | E5 |
 | [Microsoft Cloud App Security](/cloud-app-security) | A cloud access security broker for discovery, investigation, and governance. | Lateral movement and data exfiltration | E5 |
 
-### Identities
+### 3. Identities
 
 | Capability or feature | Description | Helps prevent... | Licensing |
 |:-------|:-----|:-------|:-------|
 |MFA enforced with Conditional Access|Require MFA based on the properties of the sign-in with Conditional Access policies.|Credential compromise and access|Microsoft 365 E3 or E5|
 |MFA enforced with risk-based Conditional Access|Require MFA based on the risk of the user sign-in with Azure AD Identity protection.|Credential compromise and access|Microsoft 365 E5 or E3 with Azure AD Premium P2 licenses|
 
-### Devices
+### 4. Devices
 
 For device and app management:
 
@@ -170,12 +153,12 @@ For Windows 10 devices:
 | Microsoft Defender for Endpoint | Helps prevent, detect, investigate, and respond to advanced threats across devices (also referred to as endpoints). | With tampering protection and network protection | E5 |
 |  |  |  |  |
 
-### Information
+### 5. Information
 
 | Capability or feature | Description | Helps... | Licensing |
 |:-------|:-----|:-------|:-------|
 | Insider risk management | Define specific policies to identify risk indicators and to take action to mitigate these risks. | Identify, triage, and act on risky user activity. | E5 |
-| Privileged access management | Limits standing access to sensitive data or access to critical configuration settings | Prevent an attacker from performan adminstration tasks. | E5 |
+| Privileged access management | Limits standing access to sensitive data or access to critical configuration settings | Prevent an attacker from performing administration tasks. | E5 |
 | Data loss prevention (DLP) | Protects sensitive data and reduces risk by preventing users from inappropriately sharing it. | Prevent data exfiltration. | E3 and E5 |
 
 

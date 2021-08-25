@@ -34,9 +34,9 @@ General guidelines:
 
 - Designate Protected Folders.
 
-- Set controlled folder access to Enabled or Audit mode.
 
-- Use OneDrive cloud storage to protect and back up your files.
+From TA report:
+
 
 
 ## Locate your ransomable information
@@ -60,9 +60,13 @@ General guidelines:
 
 - Use Protected Folders/controlled folder access for malicious apps
 
-- Implement controlled folder access to help prevent files from being altered or encrypted by ransomware.
+- Implement [controlled folder access](https://support.microsoft.com/en-us/topic/ransomware-protection-in-windows-security-445039d6-537a-488a-ad53-48906f346363) to help prevent files from being altered or encrypted by ransomware. See [Set controlled folder access to Enabled or Audit mode](https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/enable-controlled-folders?view=o365-worldwide).
 
-- Back up regularly. Use the 3-2-1 rule. Keep three backups of your data, on two different storage types, and at least one backup offsite.
+- Back up important files regularly. Use the 3-2-1 rule. Keep three backups of your data, on two different storage types, and at least one backup offsite.
+
+- Use [OneDrive cloud storage](https://www.microsoft.com/microsoft-365/onedrive/onedrive-for-business) to protect and back up your files.
+
+
 
 ## Impact on users and change management
 
