@@ -19,8 +19,6 @@ ms.technology: mde
 
 # Turn on cloud protection in Microsoft Defender Antivirus
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 **Applies to:**
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
