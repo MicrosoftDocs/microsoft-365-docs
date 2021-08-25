@@ -26,23 +26,7 @@ ms.technology: mde
 
 ## Summary
 
-Cloud protection works together with Microsoft Defender Antivirus to deliver accurate, real-time, and intelligent protection. Cloud protection should be enabled by default; however, you can configure cloud protection to suit your organization's needs.
-
-This article describes why you want cloud protection turned on, and how to configure cloud protection.
-
-## Why cloud protection should be turned on
-
-Microsoft Defender Antivirus cloud protection helps protect against malware on your endpoints and across your network. We recommend keeping cloud protection turned on. Certain security features and capabilities in Microsoft Defender for Endpoint only work when cloud protection is enabled. These features and capabilities are listed in the following table: <br/><br/>
-
-| Feature/Capability  | Description  |
-|---------|---------|
-| Checking against metadata in the cloud  | The Microsoft Defender Antivirus cloud service uses machine learning models as an additional layer of defense. These machine learning models include metadata, so when a suspicious or malicious file is detected, its metadata is checked. <br/><br/>To learn more, see [Blog: Get to know the advanced technologies at the core of Microsoft Defender for Endpoint next-generation protection](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/)  |
-| Cloud protection and sample submission | Files and executables can be sent to the Microsoft Defender Antivirus cloud service for detonation and analysis. <br/><br/>To learn more, see [Cloud protection and sample submission in Microsoft Defender Antivirus](cloud-protection-microsoft-antivirus-sample-submission.md).<br/><br/>**NOTE**: Automatic sample submission relies on cloud protection, although it can also be configured as a standalone setting.         |
-| Tamper protection | Tamper protection helps protect against unwanted changes to your organization's security settings. To enforce tamper protection in the Microsoft 365 Defender portal, cloud protection must be enabled.        |
-| Block at first sight | Block at first sight detects new malware and blocks it within seconds. When a suspicious or malicious file is detected, block at first sight capabilities queries the cloud protection backend and applies heuristics, machine learning, and automated analysis of the file to determine whether it is a threat.<br/><br/>To learn more, see [What is "block at first sight"?](configure-block-at-first-sight-microsoft-defender-antivirus.md#what-is-block-at-first-sight).   |
-| Emergency signature updates  | When malicious content is detected, emergency signature updates and fixes are deployed. Rather than wait for the next regular update, you can receive these fixes and updates within minutes.   |
-| Attack surface reduction rules | Attack surface reduction is all about reducing the places and ways your organization's endpoints are vulnerable to a cyber attack. Attack surface reduction rules are intelligent rules that you can configure to  help stop malware. <br/><br/>To learn more, see [Use attack surface reduction rules to prevent malware infection](attack-surface-reduction.md).  |
-| Indicators of compromise (IoCs)  | IoCs in Defender for Endpoint can be configured to define the detection, prevention, and exclusion of entities. For example, "allow" indicators can be used to define exceptions to Microsoft Defender Antivirus scans and remediation actions in Defender for Endpoint. As another example, "alert and block" indicators can be used to prevent files or processes from executing, and to track these activities with alerts that are viewable in the Microsoft 365 Defender portal. <br/><br/>To learn more, see [Create indicators](manage-indicators.md).    |
+[Cloud protection in Microsoft Defender Antivirus](cloud-protection-microsoft-defender-antivirus.md) delivers accurate, real-time, and intelligent protection. Cloud protection should be enabled by default; however, you can configure cloud protection to suit your organization's needs.
 
 ## Methods to configure cloud protection
 
