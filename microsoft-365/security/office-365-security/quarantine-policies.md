@@ -630,6 +630,18 @@ Remove-QuarantineTag -Identity "<QuarantinePolicyName>"
 
 For detailed syntax and parameter information, see [Remove-QuarantineTag](/powershell/module/exchange/remove-quarantinetag).
 
+## System alerts for quarantine release requests
+
+By default, the default alert policy named **User requested to release a quarantined message** automatically generates a medium severity alert and sends notification messages to members of the following role groups whenever a user requests the release of a quarantined message:
+
+- Quarantine Administrator
+- Security Administrator
+- Organization Management (global administrator)
+
+Admins can customize the email notification recipients or create a custom alert policy for additional options.
+
+For more information about alert policies, see [Alert policies in Microsoft 365](../../compliance/alert-policies.md).
+
 ## Quarantine policy permission details
 
 The following sections describe the effects of preset permission groups and individual permissions in the details of quarantined messages and in end-user spam notifications.
