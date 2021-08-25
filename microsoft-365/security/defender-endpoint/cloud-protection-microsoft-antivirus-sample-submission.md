@@ -14,7 +14,7 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.topic: article
-ms.date: 08/24/2021
+ms.date: 08/25/2021
 ---
 
 # Cloud protection and sample submission in Microsoft Defender Antivirus
@@ -31,7 +31,7 @@ Cloud protection is enabled by default in Microsoft Defender Antivirus. We recom
 - **Send all samples automatically**  
 - **Do not send samples**  
 
-For information about configuration options using Intune, Configuration Manager, GPO, or PowerShell, see [Turn on cloud-delivered protection in Microsoft Defender Antivirus](enable-cloud-protection-microsoft-defender-antivirus.md).  
+For information about configuration options using Intune, Configuration Manager, GPO, or PowerShell, see [Turn on cloud-delivered protection in Microsoft Defender Antivirus](enable-cloud-protection-microsoft-defender-antivirus.md).
 
 ## Customer data, cloud protection, and sample submission
 
@@ -67,7 +67,7 @@ Microsoft Defender Antivirus and cloud protection automatically block most new, 
 
 4. Advanced cloud-based protection is provided for cases when Microsoft Defender Antivirus running on the endpoint needs more intelligence to verify the intent of a suspicious file.
 
-   1. In the event Microsoft Defender Antivirus cannot make a clear determination, file metadata is sent to the cloud protection service. Usually, the cloud protection service can determine whether the file is safe or malicious, within milliseconds.  
+   1. In the event Microsoft Defender Antivirus cannot make a clear determination, file metadata is sent to the cloud protection service. Usually, the cloud protection service can determine whether the file is malicious or not a threat within milliseconds.  
       - The cloud query of file metadata can be a result of behavior, mark of the web, or other characteristics where a clear verdict is not determined.
       - A small metadata payload is sent, with the goal of reaching a verdict of malware or not a threat. The metadata does not include personally identifiable information (PII). Information such as filenames, are hashed.
       - Can be synchronous or asynchronous. For synchronous, the file will not open until the cloud renders a verdict. For asynchronous, the file will open while the cloud performs its analysis.
@@ -89,12 +89,12 @@ Microsoft Defender Antivirus and cloud protection automatically block most new, 
 
       3. **Send all samples automatically**
          - If configured, all samples will be sent automatically
-         - If you would like sample submission to include macros embedded in Word docs, you must choose “Send all samples automatically”  
+         - If you would like sample submission to include macros embedded in Word docs, you must choose "Send all samples automatically"
          - This setting isn't available on macOS cloud protection
 
       4. **Do not send**
-         - Prevents “block at first sight” based on file sample analysis
-         - "Do not send" is the equivalent to the “Disabled” setting in macOS policy
+         - Prevents "block at first sight" based on file sample analysis
+         - "Do not send" is the equivalent to the "Disabled" setting in macOS policy
          - Metadata is sent for detections even when sample submission is disabled
 
    3. After metadata and/or files are submitted to cloud protection, you can use **samples**, **detonation**, or **big data analysis** machine learning models to reach a verdict. This model is illustrated in figure 3. Turning off cloud-delivered protection will limit analysis to only what the client can provide through local machine learning models, and similar functions.
@@ -107,7 +107,7 @@ Microsoft Defender Antivirus and cloud protection automatically block most new, 
 
 ## Cloud protection levels
 
-Malware detection requires striking a balance between providing the strongest possible protection, while minimizing the number of false positives. Different environments may have tolerance for protection versus risk of false positive. Cloud-delivered protection levels allow the customer to define the tolerance level appropriate for the specific environment. When you enable Cloud Delivered Protection, the protection level is automatically configured to provide strong detection without increasing the risk of detecting legitimate files. If you want to configure a different protection level, see [Specify the cloud-delivered protection level for Microsoft Defender Antivirus](specify-cloud-protection-level-microsoft-defender-antivirus.md).  
+Malware detection requires striking a balance between providing the strongest possible protection, while minimizing the number of false positives. Different environments may have tolerance for protection versus risk of false positive. Cloud-delivered protection levels allow the customer to define the tolerance level appropriate for the specific environment. When you enable Cloud Delivered Protection, the protection level is automatically configured to provide strong detection without increasing the risk of detecting legitimate files. If you want to configure a different protection level, see [Specify the cloud-delivered protection level for Microsoft Defender Antivirus](specify-cloud-protection-level-microsoft-defender-antivirus.md).
 
 > [!Note]
 > Changing the protection level can result in a higher level of false positives and should be carefully evaluated before changing.
