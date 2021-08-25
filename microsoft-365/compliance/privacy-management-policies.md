@@ -20,10 +20,6 @@ description: "Learn how to create and manage policies for handling your organiza
 
 # Create and manage policies in privacy management (preview)
 
-In this article: learn how to build and customize **policies** for handling personal data, get **alerts** about policy matches, and remediate **issues**.
-
-## Purpose of policies
-
 Policies allow you to define the types of privacy risks to look out for in your company’s Microsoft 365 data and establish the preferred outcomes for scenarios where matches are found. Your organization can work from the resulting alerts to review any matching data and remediate issues, all from within the privacy management solution.
 
 Privacy management provides templates to give you an easy start on policy building and allows you to fine-tune your approach through extensive customization options. The key scenarios covered by privacy management’s templates include the following:
