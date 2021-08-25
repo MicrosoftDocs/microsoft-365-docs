@@ -9,7 +9,7 @@ ms.sitesec: library
 localization_priority: Normal
 author: jweston-1
 ms.author: v-jweston
-ms.reviewer: shwjha
+ms.reviewer: mkaminska
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
@@ -31,7 +31,7 @@ Cloud protection is enabled by default in Microsoft Defender Antivirus. We recom
 - **Send all samples automatically**  
 - **Do not send samples**  
 
-For information about configuration options using Intune, Configuration Manager, GPO, or PowerShell, see [Turn on cloud-delivered protection in Microsoft Defender Antivirus](enable-cloud-protection-microsoft-defender-antivirus.md).
+For information about configuration options using Intune, Configuration Manager, GPO, or PowerShell, see [Turn on cloud protection in Microsoft Defender Antivirus](enable-cloud-protection-microsoft-defender-antivirus.md).
 
 ## Customer data, cloud protection, and sample submission
 
@@ -114,7 +114,7 @@ Malware detection requires striking a balance between providing the strongest po
 
 ## Other file sample submission scenarios
 
-There are two more scenarios where Defender for Endpoint may request a file sample that is not related to the cloud protection in Microsoft Defender Antivirus. These scenarios include:
+There are two more scenarios where Defender for Endpoint might request a file sample that is not related to the cloud protection in Microsoft Defender Antivirus. These scenarios include:
 
 - Manual file sample submission
 - Content analysis during automated investigations  
