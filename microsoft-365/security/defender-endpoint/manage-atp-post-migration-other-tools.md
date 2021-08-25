@@ -30,7 +30,7 @@ ms.reviewer: chventou
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 > [!NOTE]
 > We recommend using [Microsoft Endpoint Manager](/mem) to manage your organization's threat protection features for devices (also referred to as endpoints). Endpoint Manager includes [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) and [Microsoft Endpoint Configuration Manager](/mem/configmgr/core/understand/introduction).
@@ -75,9 +75,9 @@ On an individual device, you can run a scan, start diagnostic tracing, check for
 |---|---|
 |**Manage Microsoft Defender Antivirus**|[Configure and manage Microsoft Defender Antivirus with mpcmdrun.exe](/windows/security/threat-protection/microsoft-defender-antivirus/command-line-arguments-microsoft-defender-antivirus)|
 
-## Configure your Microsoft Defender Security Center
+## Configure your Microsoft 365 Defender portal
 
-If you haven't already done so, **configure your Microsoft Defender Security Center** ([https://securitycenter.windows.com](https://securitycenter.windows.com)) to view alerts, configure threat protection features, and view detailed information about your organization's overall security posture.
+If you haven't already done so, configure your [Microsoft 365 Defender](https://security.microsoft.com/) portal to view alerts, configure threat protection features, and view detailed information about your organization's overall security posture.
 
 You can also configure whether and what features end users can see in the Microsoft Defender Security Center.
 
