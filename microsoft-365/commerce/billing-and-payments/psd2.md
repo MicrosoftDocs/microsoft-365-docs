@@ -5,17 +5,21 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jamitche, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
-- commerce
-ms.custom: AdminSurgePortfolio
-search.appverid:
-- MET150
+- M365-subscription-management 
+- Adm_O365
+ms.custom: 
+- AdminSurgePortfolio
+- commerce_billing
+search.appverid: MET150
 description: As of September 14, 2019, banks in the 31 countries of the European Economic Area are required to verify the identity of the person making an online purchase before the payment can be processed."
 keywords: payment services directive 2, strong customer authentication, multi-factor authentication
+ms.date: 11/03/2020
 ---
 
 # Payment Services Directive 2 and Strong Customer Authentication for commercial customers
@@ -31,6 +35,7 @@ Currently, verification requirements for this directive using multi-factor authe
 ### Customer Actions
 
 Your bank may require verification through multi-factor authentication. Some examples include:
+
 - Signing up for a new subscription
 - Adding licenses to a subscription
 - Adding or replacing the credit card used to pay for a subscription or service
@@ -44,6 +49,7 @@ Charges for recurring payments might fail. If they do, you’ll receive an email
 ## Need more help?
 
 Your financial institution is the best contact for these scenarios:
+
 - You didn't receive a verification code.  
 - The verification process didn't work after you submitted the verification code.
 - You're not sure if the contact info for your credit card is correct.

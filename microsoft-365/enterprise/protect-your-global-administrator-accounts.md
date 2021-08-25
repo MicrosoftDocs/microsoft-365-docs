@@ -1,11 +1,11 @@
 ---
 title: "Protect your Microsoft 365 global administrator accounts"
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 09/30/2020
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: 

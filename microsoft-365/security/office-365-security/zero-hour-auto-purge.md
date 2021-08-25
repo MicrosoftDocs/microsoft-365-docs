@@ -1,11 +1,11 @@
 ---
-title: Zero-hour auto purge (ZAP)
+title: Zero-hour auto purge in Microsoft Defender for Office 365
 f1.keywords: 
   - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date: 
+ms.date: 06/22/2021
 audience: Admin
 ms.topic: conceptual
 
@@ -20,7 +20,7 @@ ms.collection:
   - M365-security-compliance
 ms.custom: 
   - seo-marvel-apr2020
-description: Admins can learn about how zero-hour auto purge (ZAP) can retroactively move delivered messages in an Exchange Online mailbox to the Junk Email folder or quarantine that are retroactively found to be spam or phishing.
+description: Zero-hour auto purge (ZAP) retroactively moves delivered messages in an Exchange Online mailbox to the Junk Email folder or quarantine that are found to be spam or phishing after delivery.
 ms.technology: mdo
 ms.prod: m365-security
 ---
@@ -34,8 +34,7 @@ ms.prod: m365-security
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-
-## Basic features of ZAP
+## Zero-hour auto purge (ZAP) basics
 
 In Microsoft 365 organizations with mailboxes in Exchange Online, zero-hour auto purge (ZAP) is an email protection feature that retroactively detects and neutralizes malicious phishing, spam, or malware messages that have already been delivered to Exchange Online mailboxes.
 
@@ -49,13 +48,13 @@ The ZAP action is seamless for the user; they aren't notified if a message is de
 
 [Safe sender lists](create-safe-sender-lists-in-office-365.md), mail flow rules (also known as transport rules), Inbox rules, or additional filters take precedence over ZAP. Similar to what happens in mail flow, this means that even if the service determines the delivered message needs ZAP, the message is not acted on because of the the safe senders configuration. This is another reason to be careful about configuring messages to bypass filtering.
 
-### Malware ZAP
+### Zero-hour auto purge (ZAP) for malware
 
 For **read or unread messages** that are found to contain malware after delivery, ZAP quarantines the message that contains the malware attachment. Only admins can view and manage malware messages from quarantine.
 
-Malware ZAP is enabled by default in anti-malware policies. For more information, see [Configure anti-malware policies in EOP](configure-anti-malware-policies.md).
+ZAP for malware is enabled by default in anti-malware policies. For more information, see [Configure anti-malware policies in EOP](configure-anti-malware-policies.md).
 
-### Phish ZAP
+### Zero-hour auto purge (ZAP) for phishing
 
 For **read or unread messages** that are identified as phishing after delivery, the ZAP outcome depends on the action that's configured for a **Phishing email** filtering verdict in the applicable anti-spam policy. The available filtering verdict actions for phishing and their possible ZAP outcomes are described in the following list:
 
@@ -65,11 +64,17 @@ For **read or unread messages** that are identified as phishing after delivery, 
 
 - **Quarantine message**: ZAP quarantines the message.
 
-By default, phish ZAP is enabled in anti-spam policies, and the default action for the **Phishing email** filtering verdict is **Quarantine message**, which means phish ZAP quarantines the message by default.
+By default, ZAP for phishing is enabled in anti-spam policies, and the default action for the **Phishing email** filtering verdict is **Quarantine message**, which means ZAP for phishing quarantines the message by default.
 
 For more information about configuring spam filtering verdicts, see [Configure anti-spam policies in Microsoft 365](configure-your-spam-filter-policies.md).
 
-### Spam ZAP
+### Zero-hour auto purge (ZAP) for high confidence phishing
+
+For **read or unread messages** that are identified as high confidence phishing after delivery, ZAP quarantines the message. Only admins can view and manage high confidence phish messages from quarantine.
+
+ZAP for high confidence phish is enabled by default. For more information, see [Secure by Default in Office 365](secure-by-default.md).
+
+### Zero-hour auto purge (ZAP) for spam
 
 For **unread messages** that are identified as spam after delivery, the ZAP outcome depends on the action that's configured for the **Spam** filtering verdict in the applicable anti-spam policy. The available filtering verdict actions for spam and their possible ZAP outcomes are described in the following list:
 
@@ -83,7 +88,7 @@ By default, spam ZAP is enabled in anti-spam policies, and the default action fo
 
 For more information about configuring spam filtering verdicts, see [Configure anti-spam policies in Microsoft 365](configure-your-spam-filter-policies.md).
 
-### ZAP considerations for Microsoft Defender for Office 365
+### Zero-hour auto purge (ZAP) considerations for Microsoft Defender for Office 365
 
 ZAP will not quarantine any message that's in the process of [Dynamic Delivery](safe-attachments.md#dynamic-delivery-in-safe-attachments-policies) in Safe Attachments scanning, or where EOP malware filtering has already replaced the attachment with the **Malware Alert Text.txt** file. If a phishing or spam signal is received for these types of messages, and the filtering verdict in the anti-spam policy is set to take some action on the message (Move to Junk, Redirect, Delete, or Quarantine) then ZAP will default to a 'Move to Junk' action.
 
@@ -91,7 +96,7 @@ ZAP will not quarantine any message that's in the process of [Dynamic Delivery](
 
 To determine if ZAP moved your message, you can use either the [Threat Protection Status report](view-email-security-reports.md#threat-protection-status-report) or [Threat Explorer (and real-time detections)](threat-explorer.md). Note that as a system action, ZAP is not logged in the Exchange mailbox audit logs.
 
-## ZAP FAQ
+## Zero-hour auto purge (ZAP) FAQ
 
 ### What happens if a legitimate message is moved to the Junk Email folder?
 
@@ -105,16 +110,16 @@ ZAP will take action on a message based on the configuration your anti-spam poli
 
 Safe senders, mail flow rules, or block and allow organizational settings take precedence. These messages are excluded from ZAP since the service is doing what you configured it to do. This is another reason to be careful about configuring messages to bypass filtering.
 
-### What are the licensing Requirements for ZAP to work?
+### What are the licensing Requirements for Zero-hour auto purge (ZAP) to work?
 
 There are no limitations on licenses. ZAP works on all mailboxes hosted on Exchange online. ZAP doesn't work in standalone Exchange Online Protection (EOP) environments that protect on-premises Exchange mailboxes.
 
 ### What if a message is moved to another folder (e.g. Inbox rules)?
 
-ZAP still works as long as the message has not been deleted, or as long as the same, or stronger, action has not already been applied. For example, if the anti-phishing policy is set to quarantine and message is already in the Junk Email, then ZAP will take action to quarantine the message.
+Zero-hour auto purge still works as long as the message has not been deleted, or as long as the same, or stronger, action has not already been applied. For example, if the anti-phishing policy is set to quarantine and message is already in the Junk Email, then ZAP will take action to quarantine the message.
 
 ### How does ZAP affect mailboxes on hold?
 
-ZAP won't quarantine messages from mailboxes on hold. ZAP can move messages to the Junk Email folder based on the action that's configured for a spam or phishing verdict in anti-spam policies.
+Zero-hour auto purge will quarantine messages from mailboxes on hold. ZAP can move messages to the Junk Email folder based on the action that's configured for a spam or phishing verdict in anti-spam policies.
 
 For more information about holds in Exchange Online, see [In-Place Hold and Litigation Hold in Exchange Online](/Exchange/security-and-compliance/in-place-and-litigation-holds).

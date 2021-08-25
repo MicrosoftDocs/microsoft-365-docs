@@ -17,6 +17,7 @@ ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
 - okr_smb
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
@@ -29,6 +30,8 @@ description: "Shared mailboxes are used when multiple people need access to the 
 Shared mailboxes are used when multiple people need access to the same mailbox, such as a company information or support email address, reception desk, or other function that might be shared by multiple people.
 
 Users with permissions to the group mailbox can send as or send on behalf of the mailbox email address if the administrator has given that user permissions to do that. This is particularly useful for help and support mailboxes because users can send emails from "Contoso Support" or "Building A Reception Desk."
+
+## Before you begin
 
 Before you [create a shared mailbox](create-a-shared-mailbox.md), here are some things you should know:
 
@@ -50,7 +53,7 @@ Before you [create a shared mailbox](create-a-shared-mailbox.md), here are some 
 
 - **Signing in:** A shared mailbox is not intended for direct sign-in by its associated user account. You should always block sign-in for the shared mailbox account and keep it blocked.
 
-- **Too many users:** When there are too many designated users concurrently accessing a shared mailbox, they may intermittently fail to connect to this mailbox. In this case, you can consider reducing the number of the users or using a different workload, such a Microsoft 365 group or Public folder.
+- **Too many users:** When there are too many designated users concurrently accessing a shared mailbox (no more than 25 is recommended), they may intermittently fail to connect to this mailbox or have inconsistencies like messages being duplicated in the outbox. In this case, you can consider reducing the number of users or using a different workload, such as a Microsoft 365 group or a Public folder.
 
 - **Message deletion:** Unfortunately, you can't prevent people from deleting messages in a shared mailbox. The only way around this is to create a Microsoft 365 group instead of a shared mailbox. A group in Outlook is like a shared mailbox. For a comparison of the two, see [Compare groups](../create-groups/compare-groups.md). To learn more about groups, see [Learn more about groups](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2).
 
@@ -60,12 +63,8 @@ Before you [create a shared mailbox](create-a-shared-mailbox.md), here are some 
 
 ## Related content
 
-[Create a shared mailbox](create-a-shared-mailbox.md)
-
-[Configure a shared mailbox](configure-a-shared-mailbox.md)
-
-[Convert a user mailbox to a shared mailbox](convert-user-mailbox-to-shared-mailbox.md)
-
-[Remove a license from a shared mailbox](remove-license-from-shared-mailbox.md)
-
-[Resolve issues with shared mailboxes](resolve-issues-with-shared-mailboxes.md)
+[Create a shared mailbox](create-a-shared-mailbox.md) (article)\
+[Configure a shared mailbox](configure-a-shared-mailbox.md) (article)\
+[Convert a user mailbox to a shared mailbox](convert-user-mailbox-to-shared-mailbox.md) (article)\
+[Remove a license from a shared mailbox](remove-license-from-shared-mailbox.md) (article)\
+[Resolve issues with shared mailboxes](resolve-issues-with-shared-mailboxes.md) (article)

@@ -7,7 +7,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+localization_priority: Normal
 audience: ITPro
 ms.topic: article
 author: denisebmsft
@@ -68,7 +68,7 @@ Microsoft Defender for Office 365 integrated with Microsoft Defender for Endpoin
 
     SO
 
-- Once integration is enabled, your security operations team can see a list of devices that are used by the recipients of any detected URLs or email messages, along with recent alerts for those devices, in the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)).
+- Once integration is enabled, your security operations team can see a list of devices that are used by the recipients of any detected URLs or email messages, along with recent alerts for those devices, in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)).
 
 If you haven't already done so, [integrate Microsoft Defender for Office 365 with Microsoft Defender for Endpoint](/microsoft-365/security/office-365-security/integrate-office-365-ti-with-wdatp).
 
@@ -82,6 +82,6 @@ Protection from ransomware is one great reason to put your files in OneDrive. An
 
 - [OneDrive](/onedrive)
 
-- [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide)
+- [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/office-365-atp)
 
 - [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md)

@@ -9,6 +9,7 @@ ms.custom: ""
 ms.topic: conceptual
 author: "samanro"
 ms.author: "samanro"
+manager: pamgreen
 ---
 # Microsoft 365 docs navigation guide
 

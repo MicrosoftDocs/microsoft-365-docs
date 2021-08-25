@@ -20,7 +20,8 @@ It is important to plan the best way to set up and configure topics in your envi
 
 You must be [subscribed to Viva Topics](https://www.microsoft.com/microsoft-viva/topics) and be a global administrator or SharePoint administrator to access the Microsoft 365 admin center and set up Topics.
 
-If you have configured SharePoint to [require managed devices](/sharepoint/control-access-from-unmanaged-devices), be sure to set up Topics from a managed device.
+> [!IMPORTANT]
+> If you have configured SharePoint to [require managed devices](/sharepoint/control-access-from-unmanaged-devices), you must set up Topics from a managed device.
 
 ## Video demonstration
 
@@ -55,8 +56,10 @@ It may take up to an hour for users to get access to Topics after the licenses a
 
 ## Set up Topics
 
-To set up Topics
+> [!Note]
+> The first time topic discovery is enabled, it may take up to two weeks for all suggested topics to appear in the Manage Topics view. Topic discovery continues as new content or updates to content are made. It is normal to have fluctuations in the number of suggested topics in your organization as Viva Topics evaluates new information.
 
+To set up Topics
 1. In the [Microsoft 365 admin center](https://admin.microsoft.com), select **Setup**, and then view the **Files and content** section.
 2. In the **Files and content** section, click **Connect people to knowledge**.
 
@@ -125,7 +128,10 @@ To set up Topics
 
     Select **Next**.
 
-9. On the **Create topic center** page, you can create your topic center site in which topic pages can be viewed and topics can be managed. In the **Site name** box, type a name for your topic center. You can optionally type a short description in the **Description** box. 
+9. On the **Create topic center** page, you can create your topic center site in which topic pages can be viewed and topics can be managed. In the **Site name** box, type a name for your topic center. You can click the pencil icon if you want to change the URL. Optionally, type a short description in the **Description** box. 
+
+   > [!Important]
+   > You can change the site name later, but you can't change the URL after you complete the wizard.
 
    Select **Next**.
 
@@ -138,8 +144,6 @@ To set up Topics
 12. You'll be returned to your **Connect people to knowledge** page. From this page, you can select **Manage** to make any changes to your configuration settings. 
 
     ![Settings applied](../media/ksetup7.png)    
-
-Note that the first time topic discovery is enabled, it may take up to two weeks for all suggested topics to appear in the Manage Topics view. Topic discovery continues as new content or updates to content are made. It is normal to have fluctuations in the number of suggested topics in your organization as Viva Topics evaluates new information.
 
 ## Manage topic experiences
 

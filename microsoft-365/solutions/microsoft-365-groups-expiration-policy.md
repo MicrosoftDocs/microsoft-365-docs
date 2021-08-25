@@ -6,7 +6,7 @@ ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: 
@@ -15,6 +15,7 @@ ms.collection:
 - m365solution-collabgovernance
 search.appverid:
 - MET150
+recommendations: false
 description: "Learn about Microsoft 365 groups expiration policies."
 ---
 

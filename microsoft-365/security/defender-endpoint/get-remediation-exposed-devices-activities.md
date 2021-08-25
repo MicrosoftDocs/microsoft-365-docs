@@ -1,7 +1,7 @@
 ---
 title: List exposed devices of one remediation activity
 description: Returns information about exposed devices for the specified remediation task.
-keywords: apis, remediation, remediation api, get, remediation tasks, 
+keywords: apis, remediation, remediation api, get, remediation tasks, remediation exposed devices
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -14,7 +14,8 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+MS.technology: mde
+ms.custom: api
 ---
 
 # List exposed devices of one remediation activity
@@ -26,7 +27,7 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -44,24 +45,33 @@ Returns information about exposed devices for the specified remediation task.
 
 **URL:** GET: /api/remediationTasks/\{id\}/machineReferences
 
-**Properties** details
+## Permissions
 
-Property (id) | Data type | Description | Example
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs for details.](apis-intro.md)
+
+Permission type|Permission|Permission display name
+:---|:---|:---
+Application|RemediationTasks.Read.All|\'Read Threat and Vulnerability Management vulnerability information\'
+Delegated (work or school account)|RemediationTask.Read.Read|\'Read Threat and Vulnerability Management vulnerability information\'
+
+## Properties details
+
+Property (id)|Data type|Description|Example
 :---|:---|:---|:---
-id | String | Device ID | w2957837fwda8w9ae7f023dba081059dw8d94503
-computerDnsName | String | Device name | PC-SRV2012R2Foo.UserNameVldNet.local
-osPlatform | String | Device operating system | WindowsServer2012R2
-rbacGroupName | String | Name of the device group this device is associated with | Servers
+id|String|Device ID|w2957837fwda8w9ae7f023dba081059dw8d94503
+computerDnsName|String|Device name|PC-SRV2012R2Foo.UserNameVldNet.local
+osPlatform|String|Device operating system|WindowsServer2012R2
+rbacGroupName|String|Name of the device group this device is associated with|Servers
 
 ## Example
 
-**Request** example
+### Request example
 
 ```http
 GET https://api-luna.securitycenter.windows.com/api/remediationtasks/03942ef5-aecb-4c6e-b555-d6a97013844c/machinereferences
 ```
 
-**Response** example
+### Response example
 
 ```json
 {
@@ -102,11 +112,7 @@ GET https://api-luna.securitycenter.windows.com/api/remediationtasks/03942ef5-ae
 ## See also
 
 - [Remediation methods and properties](get-remediation-methods-properties.md)
-
 - [Get one remediation activity by Id](get-remediation-one-activity.md)
-
 - [List all remediation activities](get-remediation-all-activities.md)
-
 - [Risk-based threat & vulnerability management](next-gen-threat-and-vuln-mgt.md)
-
 - [Vulnerabilities in your organization](tvm-weaknesses.md)

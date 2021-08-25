@@ -4,21 +4,20 @@ description: Enable behavior-based, heuristic, and real-time protection in Micro
 keywords: heuristic, machine-learning, behavior monitor, real-time protection, always-on, Microsoft Defender Antivirus, antimalware, security, defender
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
+ms.technology: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
+ms.topic: article
 ms.custom: nextgen
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
-ms.technology: mde
 ---
 
 # Configure behavioral, heuristic, and real-time protection
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Applies to:**
@@ -39,7 +38,7 @@ See [Use next-gen Microsoft Defender Antivirus technologies through cloud-delive
 
 ## In this section
 
- Topic | Description
+ Topic|Description
 ---|---
-[Detect and block potentially unwanted applications](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md) | Detect and block apps that may be unwanted in your network, such as adware, browser modifiers and toolbars, and rogue or fake antivirus apps
-[Enable and configure Microsoft Defender Antivirus protection capabilities](configure-real-time-protection-microsoft-defender-antivirus.md) | Enable and configure real-time protection, heuristics, and other always-on Microsoft Defender Antivirus monitoring features
+[Detect and block potentially unwanted applications](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md)|Detect and block apps that may be unwanted in your network, such as adware, browser modifiers and toolbars, and rogue or fake antivirus apps
+[Enable and configure Microsoft Defender Antivirus protection capabilities](configure-real-time-protection-microsoft-defender-antivirus.md)|Enable and configure real-time protection, heuristics, and other always-on Microsoft Defender Antivirus monitoring features

@@ -1,5 +1,5 @@
 ---
-title: Attack Simulator in Microsoft Defender for Office 365
+title: Attack Simulator in the Security & Compliance Center
 f1.keywords: 
   - NOCSH
 ms.author: chrisda
@@ -18,12 +18,12 @@ ms.collection:
   - m365initiative-defender-office365
 ms.custom: 
   - seo-marvel-apr2020
-description: Admins can learn how to use Attack Simulator to run simulated phishing and password attacks in their Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2 organizations.
+description: Admins can learn how to use Attack Simulator in the Security & Complance Center to run simulated phishing and password attacks in their Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2 organizations.
 ms.technology: mdo
 ms.prod: m365-security
 ---
 
-# Attack Simulator in Microsoft Defender for Office 365
+# Attack Simulator in the Security & Compliance Center
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -34,13 +34,13 @@ If your organization has Microsoft Defender for Office 365 Plan 2, which include
 
 > [!NOTE]
 >
-> Attack Simulator as described in this article is now read-only and has been replaced by **Attack simulation training** in the **Email & collaboration** node in the [Microsoft 365 security center](https://security.microsoft.com). For more information, see [Get started using Attack simulation training](attack-simulation-training-get-started.md).
+> Attack Simulator as described in this article is now read-only and has been replaced by **Attack simulation training** in the **Email & collaboration** node in the Microsoft 365 Defender portal at <https://security.microsoft.com>. For more information, see [Get started using Attack simulation training](attack-simulation-training-get-started.md).
 >
-> The ability to launch new simulations from this version of Attack Simulator has been disabled. However, you can still access reports for up to 90 days from January 24, 2021.
+> The ability to launch new simulations from this version of Attack Simulator has been disabled. However, you can still access reports until April 24, 2021.
 
 ## What do you need to know before you begin?
 
-- To open the Security & Compliance Center, go to <https://protection.office.com/>. Attack simulator is available at **Threat management** \> **Attack simulator**. Go go directly to attack simulator, open <https://protection.office.com/attacksimulator>.
+- To open the Security & Compliance Center, go to <https://protection.office.com/>. Attack simulator is available at **Threat management** \> **Attack simulator**. To go directly to attack simulator, open <https://protection.office.com/attacksimulator>.
 
 - For more information about the availability of Attack Simulator across different Microsoft 365 subscriptions, see [Microsoft Defender for Office 365 service description](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
 

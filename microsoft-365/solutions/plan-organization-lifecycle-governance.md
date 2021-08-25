@@ -14,6 +14,7 @@ ms.collection:
 ms.custom: 
 - M365solutions
 f1.keywords: NOCSH
+recommendations: false
 description: "Lean about lifecycle governance options for collaboration tools in Microsoft 365"
 ---
 
@@ -75,3 +76,5 @@ Expiration policies are a good way to limit group sprawl by ensuring that groups
 [Collaboration governance planning step-by-step](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
 
 [Create your collaboration governance plan](collaboration-governance-first.md)
+
+[Remove a former employee and secure data](/microsoft-365/admin/add-users/remove-former-employee)
