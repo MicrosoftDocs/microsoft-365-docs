@@ -34,7 +34,7 @@ You can turn Microsoft Defender Antivirus cloud protection on or off by using on
 - Group Policy
 - PowerShell cmdlets
 
-You can also turn cloud protection on or off on individual endpoints using the Windows Security app.
+You can also turn cloud protection on or off on individual endpoints using the Windows Security app. 
 
 For more information about the specific network-connectivity requirements to ensure your endpoints can connect to the cloud protection service, see [Configure and validate network connections](configure-network-connections-microsoft-defender-antivirus.md).
 
