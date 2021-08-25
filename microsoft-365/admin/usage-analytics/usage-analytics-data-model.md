@@ -110,8 +110,8 @@ This table contains data about each user who had an activity in any of the servi
 |SPO_GroupFileSynched  <br/> |Number of files this user synchronized on any group site.  <br/> |
 |SPO_GroupFileSharedInternally  <br/> |The count of files that have been shared with users within the organization, or with users within groups (that might include external users).  <br/> |
 |SPO_GroupFileSharedExternally  <br/> |Number of files this user shared externally from any group site.  <br/> |
-|SPO_GroupAccessByOwner  <br/> |Number of files the user interacted with that reside on a group site that they own.  <br/> |
-|SPO_GroupAccessByOthers  <br/> |Number of files the user interacted with that reside on a group site that another user owns.  <br/> |
+|SPO_GroupAccessedByOwner  <br/> |Number of sites the user interacted with that reside on a group site that they own.  <br/> |
+|SPO_GroupAccessedByOthers  <br/> |Number of sites the user interacted with that reside on a group site that another user owns.  <br/> |
 |SPO_OtherFileViewedModified  <br/> |Number of files with which this user interacted on any other site.  <br/> |
 |SPO_OtherFileSynched  <br/> |Number of files this user synchronized from any other site.  <br/> |
 |SPO_OtherFileSharedInternally  <br/> |Number of files this user shared internally from any other site, or with users within groups (that might include external users). <br/> |
@@ -122,8 +122,8 @@ This table contains data about each user who had an activity in any of the servi
 |SPO_TeamFileSynched  <br/> |Number of files this user synchronized from any team site.  <br/> |
 |SPO_TeamFileSharedInternally  <br/> |Number of files this user shared internally from any team site, or with users within groups (that might include external users).  <br/> |
 |SPO_TeamFileSharedExternally  <br/> |Number of files this user shared externally from any team site.  <br/> |
-|SPO_TeamAccessByOwner  <br/> |Number of files the user interacted with that reside on a team site that they own.  <br/> |
-|SPO_TeamAccessByOthers  <br/> |Number of files the user interacted with that reside on a team site that another user owns.  <br/> |
+|SPO_TeamAccessedByOwner  <br/> |Number of sites the user interacted with that reside on a team site that they own.  <br/> |
+|SPO_TeamAccessedByOthers  <br/> |Number of sites the user interacted with that reside on a team site that another user owns.  <br/> |
 |Teams_ChatMessages  <br/> |Number of chat messages sent.  <br/> |
 |Teams_ChannelMessage  <br/> |Number of messages posted to channels.  <br/> |
 |Teams_CallParticipate  <br/> |Number of calls the user participated in.  <br/> |

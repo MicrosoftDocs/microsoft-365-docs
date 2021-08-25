@@ -122,7 +122,16 @@ You can apply retention labels to content automatically when that content contai
 
 - [A match for trainable classifiers](#auto-apply-labels-to-content-by-using-trainable-classifiers)
 
-All three conditions can automatically apply retention labels to emails as they are sent and received (data in transit), but not to existing items in the mailbox (data at rest). For items in SharePoint and OneDrive, use the following table to identify when retention labels can be automatically applied to them:
+Use the following table to identify when retention labels can be automatically applied to items for Exchange:
+
+|Condition|Items in transit (sent or received) |Existing items (data at rest)|
+|:-----|:-----|:-----|
+|Sensitive info types - built-in| Yes | No |
+|Sensitive info types - custom| Yes | No |
+|Specific keywords or searchable properties| Yes |Yes |
+|Trainable classifiers| Yes | Yes (last six months only) |
+
+Use the following table to identify when retention labels can be automatically applied to items for SharePoint and OneDrive:
 
 |Condition|New or modified items |Existing items (data at rest)|
 |:-----|:-----|:-----|
