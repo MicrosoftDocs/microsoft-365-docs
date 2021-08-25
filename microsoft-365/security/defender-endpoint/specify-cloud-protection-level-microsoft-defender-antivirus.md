@@ -67,6 +67,7 @@ You can specify your level of cloud protection offered by Microsoft Defender Ant
 4.  Expand the tree to **Windows Components** > **Microsoft Defender Antivirus** > **MpEngine**.
 
 5.  Double-click the **Select cloud protection level** setting and set it to **Enabled**. Select the level of protection:
+
     - **Default blocking level** provides strong detection without increasing the risk of detecting legitimate files.
     - **Moderate blocking level** provides moderate only for high confidence detections
     - **High blocking level** applies a strong level of detection while optimizing client performance (but can also give you a greater chance of false positives).
@@ -74,7 +75,7 @@ You can specify your level of cloud protection offered by Microsoft Defender Ant
     - **Zero tolerance blocking level** blocks all unknown executables.
     
     > [!WARNING]
-    > While unlikely, setting this switch to **High** or **High +** may cause some legitimate files to be detected (although you will have the option to unblock or dispute that detection).
+    > While unlikely, setting this switch to **High** or **High +** could cause some legitimate files to be detected (although you will have the option to unblock or dispute that detection).
 
 6. Click **OK**.
 
@@ -83,8 +84,6 @@ You can specify your level of cloud protection offered by Microsoft Defender Ant
 > [!TIP]
 > Are you using Group Policy Objects on premises? See how they translate in the cloud. [Analyze your on-premises group policy objects using Group Policy analytics in Microsoft Endpoint Manager - Preview](/mem/intune/configuration/group-policy-analytics). 
   
-## Related articles
+## See also
 
-- [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
-- [Enable cloud protection](enable-cloud-protection-microsoft-defender-antivirus.md)
-- [How to create and deploy antimalware policies: Cloud-protection service](/configmgr/protect/deploy-use/endpoint-antimalware-policies#cloud-protection-service)
+[Why cloud protection should be turned on](cloud-protection-microsoft-defender-antivirus.md#why-cloud-protection-should-be-turned-on)
