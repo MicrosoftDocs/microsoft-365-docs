@@ -107,7 +107,7 @@ Microsoft Defender Antivirus and cloud protection automatically block most new, 
 
 ## Cloud protection levels
 
-Malware detection requires striking a balance between providing the strongest possible protection, while minimizing the number of false positives. Different environments may have tolerance for protection versus risk of false positive. Cloud-delivered protection levels allow the customer to define the tolerance level appropriate for the specific environment. When you enable Cloud Delivered Protection, the protection level is automatically configured to provide strong detection without increasing the risk of detecting legitimate files. If you want to configure a different protection level, see [Specify the cloud-delivered protection level for Microsoft Defender Antivirus](specify-cloud-protection-level-microsoft-defender-antivirus.md).
+Malware detection requires striking a balance between providing the strongest possible protection, while minimizing the number of false positives. Cloud protection levels allow you to define the tolerance level appropriate for your specific organization. When you enable cloud protection, your protection level is automatically configured to provide strong detection without increasing the risk of detecting legitimate files. However, you can configure a different protection level. See [Specify the cloud-delivered protection level for Microsoft Defender Antivirus](specify-cloud-protection-level-microsoft-defender-antivirus.md).
 
 > [!Note]
 > Changing the protection level can result in a higher level of false positives and should be carefully evaluated before changing.
