@@ -30,19 +30,11 @@ If a suspicious or malicious file is detected, a sample is sent to the cloud ser
 
 This article provides an overview of cloud protection and automatic sample submission in Microsoft Defender Antivirus. To learn more about cloud protection, see [Cloud protection and Microsoft Defender Antivirus](cloud-protection-microsoft-defender-antivirus.md).
 
-## Sample submission settings in cloud protection
-
-Cloud protection is enabled by default in Microsoft Defender Antivirus. We recommend that you keep cloud protection enabled. You can configure sample submission settings as follows: 
-
-- **Send safe samples automatically**  (the default behavior)
-- **Send all samples automatically**  
-- **Do not send samples**  
-
-For information about configuration options using Intune, Configuration Manager, GPO, or PowerShell, see [Turn on cloud protection in Microsoft Defender Antivirus](enable-cloud-protection-microsoft-defender-antivirus.md).
-
 ## How cloud protection and sample submission work together
 
-The Microsoft Intelligent Security Graph monitors threat data from a vast network of sensors. Microsoft layers cloud-based machine learning models that can assess files based on signals from the client and the vast network of sensors and data in the Intelligent Security Graph. This model gives Defender for Endpoint the ability to block many never-before-seen threats. Figure 1 depicts the flow of cloud protection and sample submission with Microsoft Defender Antivirus.
+To understand how cloud protection works together with sample submission, it can be helpful to understand how Defender for Endpoint protects against threats. The Microsoft Intelligent Security Graph monitors threat data from a vast network of sensors. Microsoft layers cloud-based machine learning models that can assess files based on signals from the client and the vast network of sensors and data in the Intelligent Security Graph. This approach gives Defender for Endpoint the ability to block many never-before-seen threats. 
+
+Figure 1 depicts the flow of cloud protection and sample submission with Microsoft Defender Antivirus.
 
 *Figure 1. The cloud protection flow*
 
@@ -73,7 +65,7 @@ Microsoft Defender Antivirus and cloud protection automatically block most new, 
       1. **Send safe samples automatically** (default)
          - Safe samples are samples considered to not commonly contain PII data like: .bat, .scr, .dll, .exe.
          - If file is likely to contain PII, the user will get a request to allow file sample submission.
-         - This is the default on Windows, macOS, and Linux.
+         - This option is the default on Windows, macOS, and Linux.
 
       2. **Always Prompt**
          - If configured, the user will always be prompted for consent before file submission
@@ -103,6 +95,16 @@ Malware detection requires striking a balance between providing the strongest po
 
 > [!Note]
 > Changing the protection level can result in a higher level of false positives and should be carefully evaluated before changing.
+
+## Sample submission settings
+
+Cloud protection is enabled by default in Microsoft Defender Antivirus. We recommend that you keep cloud protection enabled. You can configure sample submission settings as follows: 
+
+- **Send safe samples automatically**  (the default behavior)
+- **Send all samples automatically**  
+- **Do not send samples**  
+
+For information about configuration options using Intune, Configuration Manager, GPO, or PowerShell, see [Turn on cloud protection in Microsoft Defender Antivirus](enable-cloud-protection-microsoft-defender-antivirus.md).
 
 ## Other file sample submission scenarios
 
@@ -139,3 +141,7 @@ For more information, see the following resources:
 - [Azure Compliance Offerings](/azure/storage/common/storage-compliance-offerings) 
 - [Service Trust Portal](https://servicetrust.microsoft.com)
 - [Microsoft Defender for Endpoint data storage and privacy](data-storage-privacy.md#data-storage-location)
+
+## See also
+
+[Next-generation protection overview](next-generation-protection.md)
