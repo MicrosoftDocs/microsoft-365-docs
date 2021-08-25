@@ -157,9 +157,9 @@ Some prerequisites are necessary to set up the Microsoft 365 support integration
 
     :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image8.png" alt-text="Graphical user interface, application Description automatically generated":::
 
-### \[Optional\] Whitelist the service’s Ips of Microsoft 365 support integration
+### \[Optional\] Allow the service’s Ips of Microsoft 365 support integration
 
-If your company is limiting internet access with your own policies, enable network access for the service of Microsoft 365 support integration by whitelisting the IP addresses below for both inbound and outbound API access.
+If your company is limiting internet access with your own policies, enable network access for the service of Microsoft 365 support integration by allowing the IP addresses below for both inbound and outbound API access.
 
 - 52.149.152.32
 
@@ -407,9 +407,9 @@ These prerequisite steps are necessary to set up the Microsoft 365 support integ
 
     :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image26.png" alt-text="Graphical user interface, application Description automatically generated":::
 
-### \[Optional\] Whitelist the service’s Ips of Microsoft 365 support integration
+### \[Optional\] Allow the service’s Ips of Microsoft 365 support integration
 
-If your company is limiting internet access with your own policies, enable network access for the service of Microsoft 365 support integration by whitelisting these IP addresses for both inbound and outbound API access:
+If your company is limiting internet access with your own policies, enable network access for the service of Microsoft 365 support integration by allowing these IP addresses for both inbound and outbound API access:
 
 - 52.149.152.32
 
@@ -470,7 +470,7 @@ Select OAuth profile for Outbound OAuth Provider created at [Prerequisites (AAD 
 
     1. Input the Client ID of the application that was created at [Prerequisites (AAD OAuth Token)](#prerequisites-aad-oauth-token) step \#3 and select **Next**.
 
-    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image29.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
+    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image14.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
 
 7. \[The person who is a ServiceNow admin\] Set up the Repository ID.
 
@@ -496,7 +496,7 @@ Select OAuth profile for Outbound OAuth Provider created at [Prerequisites (AAD 
 
     1. Check the following information to make sure it's correct.
 
-        :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image30.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
+        :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image17.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
 
     1. Go to Microsoft 365 [Admin Portal](https://admin.microsoft.com) > **Settings** > **Settings** > **Organization profiles**.
 

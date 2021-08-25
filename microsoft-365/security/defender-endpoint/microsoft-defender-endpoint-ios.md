@@ -57,8 +57,8 @@ ms.technology: mde
 - Access to [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), to deploy the app to enrolled user groups in your organization.
 
     > [!NOTE]
-    > Microsoft Defender for Endpoint now extends support to an organization’s data within a managed application for those who aren’t using mobile device management (MDM) but are using Intune to manage mobile applications. It also extends this support to customers who use other enterprise mobility management solutions, while still using Intune for [mobile application management (MAM)](/mem/intune/apps/mam-faq).
-    > Prior to this update, Microsoft Defender for Endpoint worked on devices that were enrolled using Intune MDM only.  
+    > - Microsoft Defender for Endpoint now extends protection to an organization’s data within a managed application for those who aren’t using mobile device management (MDM) but are using Intune to manage mobile applications. It also extends this support to customers who use other enterprise mobility management solutions, while still using Intune for [mobile application management (MAM)](/mem/intune/apps/mam-faq).
+    > - In addition, Microsoft Defender for Endpoint already supports devices that are enrolled using Intune mobile device management (MDM).  
 
 **System Requirements**
 
