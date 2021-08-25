@@ -24,7 +24,7 @@ description: Learn how to find resources for Microsoft Viva Topics.
 </br>
 
 
-Viva Topics is an Microsoft 365 service that helps organizations to transform information to knowledge.
+Viva Topics is a Microsoft 365 service that helps organizations to transform information to knowledge.
 
 The resources on this page are designed to get you started with learning about and using Viva Topics in your organization.
 
