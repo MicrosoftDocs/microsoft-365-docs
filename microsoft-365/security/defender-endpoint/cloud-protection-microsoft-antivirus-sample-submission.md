@@ -102,8 +102,8 @@ Microsoft Defender Antivirus and cloud protection automatically block most new, 
    *Figure 3. Cloud-delivered protection and layered machine learning*
    :::image type="content" source="images/cloud-protection-detection-layered-machine-learning.png" lightbox="images/cloud-protection-detection-layered-machine-learning.png" alt-text="Figure 3. Cloud-delivered protection and layered machine learning":::
 
-> [!Note]
-> You might have heard of “Block at first sight (BAFS).” BAFS refers to the more extensive analysis that the cloud can provide, including things like detonation to provide a more accurate verdict. This can also include delaying the opening of a file that is under interrogation by cloud protection until a verdict is reached. If you disable “Sample Submission,” BAFS is disabled, and you cannot do the more extensive analysis and are limited to analyzing file metadata only. To learn more, see [What is "block at first sight"?](configure-block-at-first-sight-microsoft-defender-antivirus.md#what-is-block-at-first-sight).
+> [!IMPORTANT]
+> [Block at first sight (BAFS)](configure-block-at-first-sight-microsoft-defender-antivirus.md) provides detonation and analysis to determine whether a file or process is safe. BAFS can delay the opening of a file momentarily until a verdict is reached. If you disable sample submission, BAFS is also disabled, and file analysis is limited to metadata only. We recommend keeping sample submission and BAFS enabled. To learn more, see [What is "block at first sight"?](configure-block-at-first-sight-microsoft-defender-antivirus.md#what-is-block-at-first-sight).
 
 ## Cloud protection levels
 
