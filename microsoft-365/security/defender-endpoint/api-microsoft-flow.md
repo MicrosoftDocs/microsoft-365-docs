@@ -32,7 +32,7 @@ ms.custom: api
 
 Automating security procedures is a standard requirement for every modern Security Operations Center. The lack of professional cyber defenders forces SOC to work in the most efficient way and automation is a must. Microsoft Power Automate supports different connectors that were built exactly for that. You can build an end-to-end procedure automation within a few minutes.
 
-Microsoft Defender API has an official Flow Connector with many capabilities.
+Microsoft Defender API has an official Power Automate Connector with many capabilities.
 
 ![Image of edit credentials1](images/api-flow-0.png)
 
@@ -46,7 +46,7 @@ The following example demonstrates how to create a Flow that is triggered any ti
 
 1. Log in to [Microsoft Power Automate](https://flow.microsoft.com).
 
-2. Go to **My flows** > **New** > **Automated-from blank**.
+2. Go to **My flows** \> **New** \> **Automated-from blank**.
 
     ![Image of edit credentials2](images/api-flow-1.png)
 

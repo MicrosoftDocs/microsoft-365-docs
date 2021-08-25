@@ -70,7 +70,7 @@ For security reasons, the package used to Offboard devices will expire 30 days a
 
 1. Get the offboarding package from [Microsoft 365 Defender portal](https://security.microsoft.com/):
 
-   1. In the navigation pane, select **Settings** > **Endpoints** > **Device management** > **Offboarding**.
+   1. In the navigation pane, select **Settings** \> **Endpoints** \> **Device management** \> **Offboarding**.
 
    1. Select Windows 10 as the operating system.
 

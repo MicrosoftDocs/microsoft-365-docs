@@ -1,6 +1,6 @@
 ---
 title: Access the Microsoft Defender for Endpoint APIs
-ms.reviewer: 
+ms.reviewer:
 description: Learn how you can use APIs to automate workflows and innovate based on Microsoft Defender for Endpoint capabilities
 keywords: apis, api, wdatp, open api, microsoft defender for endpoint api, microsoft defender atp, public api, supported apis, alerts, device, user, domain, ip, file, advanced hunting, query
 search.product: eADQiWindows 10XVcnh
@@ -19,7 +19,7 @@ MS.technology: mde
 ms.custom: api
 ---
 
-# Access the Microsoft Defender for Endpoint APIs 
+# Access the Microsoft Defender for Endpoint APIs
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -33,7 +33,7 @@ Defender for Endpoint exposes much of its data and actions through a set of prog
 
 Watch this video for a quick overview of Defender for Endpoint's APIs.
 
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4d73M]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4d73M]
 
 In general, you'll need to take the following steps to use the APIs:
 
@@ -50,7 +50,7 @@ You can access Defender for Endpoint API with **Application Context** or **User 
   Steps that need to be taken to access Defender for Endpoint API with application context:
 
   1. Create an AAD Web-Application.
-  2. Assign the desired permission to the application, for example, 'Read Alerts', 'Isolate Machines'. 
+  2. Assign the desired permission to the application, for example, 'Read Alerts', 'Isolate Machines'.
   3. Create a key for this Application.
   4. Get token using the application with its key.
   5. Use the token to access the Microsoft Defender for Endpoint API
@@ -64,7 +64,7 @@ You can access Defender for Endpoint API with **Application Context** or **User 
   Steps to take to access Defender for Endpoint API with application context:
 
   1. Create AAD Native-Application.
-  2. Assign the desired permission to the application, e.g 'Read Alerts', 'Isolate Machines' etc. 
+  2. Assign the desired permission to the application, e.g 'Read Alerts', 'Isolate Machines' etc.
   3. Get token using the application with user credentials.
   4. Use the token to access the Microsoft Defender for Endpoint API
 
