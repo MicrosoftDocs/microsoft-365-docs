@@ -10,7 +10,7 @@ localization_priority: normal
 ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
-ms.date: 08/24/2021
+ms.date: 08/25/2021
 ms.reviewer: 
 manager: dansimp
 ms.custom: nextgen
@@ -24,6 +24,7 @@ ms.technology: mde
 **Applies to:**
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
+- Microsoft Defender Antivirus
 
 ## Summary
 
