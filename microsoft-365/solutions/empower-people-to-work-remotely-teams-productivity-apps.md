@@ -31,7 +31,7 @@ To be productive, people need to communicate and collaborate with one another. T
 | Desktop and mobile device Office applications | Microsoft 365 Apps | Create new content or collaborate on existing content with versions of Word, PowerPoint, Excel, and Outlook that are installed on your local computer and receive ongoing feature and security updates. |
 ||||
 
-![Use Teams, Outlook, SharePoint, OneDrive, and Microsoft 365 Apps to stay productive](../media/empower-people-to-work-remotely/remote-workers-productivity-grid.png)
+![Use Teams, Outlook, SharePoint, OneDrive, and Microsoft 365 Apps to stay productive.](../media/empower-people-to-work-remotely/remote-workers-productivity-grid.png)
 
 ## Keep people connected with Microsoft Teams
 
@@ -100,6 +100,6 @@ For more information, see the [Deployment guide for Microsoft 365 Apps](/deployo
 
 ## Next step
 
-[![Step 6: Train your users and monitor their success](../media/empower-people-to-work-remotely/remote-workers-step-grid-6.png)](empower-people-to-work-remotely-train-monitor-usage.md)
+[![Step 6: Train your users and monitor their success.](../media/empower-people-to-work-remotely/remote-workers-step-grid-6.png)](empower-people-to-work-remotely-train-monitor-usage.md)
 
 Continue with [Step 6](empower-people-to-work-remotely-train-monitor-usage.md) to train your users and monitor their success.

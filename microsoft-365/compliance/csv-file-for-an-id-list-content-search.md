@@ -64,7 +64,7 @@ You can use a CSV file from a search that included SharePoint sites and OneDrive
 
     Here's an example of a CSV file that's ready to be submitted for an ID list content search.
 
-    ![Example of a CSV file for a targeted content search](../media/SearchIDListCSVFile.png)
+    ![Example of a CSV file for a targeted content search.](../media/SearchIDListCSVFile.png)
 
 6. Save the CSV file or use **Save As** to the save the file with different file name. In both cases, be sure to save the file with the CSV format.
 
@@ -89,7 +89,7 @@ The next step is to create a new ID list search and submit the CSV file that you
 
     Here's an example of the flyout page from an ID list search that shows the query that's generated and the estimated number of search results.
 
-    ![Search query for ID list search](../media/SearchIDListFlyout.png)
+    ![Search query for ID list search.](../media/SearchIDListFlyout.png)
 
     The number of estimated items displayed in statistics for the ID search should match the number of items that you selected in the CSV file.
 

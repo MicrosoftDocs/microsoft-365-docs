@@ -37,7 +37,7 @@ ms.custom: seo-marvel-apr2020
 
 Each [threat analytics report](threat-analytics.md) includes dynamic sections and a comprehensive written section called the _analyst report_. To access this section, open the report about the tracked threat and select the **Analyst report** tab.
 
-![Image of the analyst report section of a threat analytics report](../../media/threat-analytics/ta_analystreport_mtp.png)
+![Image of the analyst report section of a threat analytics report.](../../media/threat-analytics/ta_analystreport_mtp.png)
 
 _Analyst report section of a threat analytics report_
 

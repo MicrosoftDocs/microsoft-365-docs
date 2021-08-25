@@ -46,7 +46,7 @@ ms.technology: mde
 
 EDR in block mode is integrated with [threat & vulnerability management](next-gen-threat-and-vuln-mgt.md). Your organization's security team will get a [security recommendation](tvm-security-recommendation.md) to turn EDR in block mode on if it isn't already enabled. 
 
-:::image type="content" source="images/edrblockmode-TVMrecommendation.png" alt-text="recommendation to turn on EDR in block mode":::
+:::image type="content" source="images/edrblockmode-TVMrecommendation.png" alt-text="recommendation to turn on EDR in block mode.":::
 
 > [!TIP]
 > To get the best protection, make sure to **[deploy Microsoft Defender for Endpoint baselines](configure-machines-security-baseline.md)**.
@@ -57,7 +57,7 @@ When EDR in block mode is turned on, and a malicious artifact is detected, Micro
 
 The following image shows an instance of unwanted software that was detected and blocked through EDR in block mode:
 
-:::image type="content" source="images/edr-in-block-mode-detection.png" alt-text="EDR in block mode detected something":::
+:::image type="content" source="images/edr-in-block-mode-detection.png" alt-text="EDR in block mode detected something.":::
 
 
 ## Enable EDR in block mode

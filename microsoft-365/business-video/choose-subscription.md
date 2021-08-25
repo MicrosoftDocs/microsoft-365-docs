@@ -46,7 +46,7 @@ Choosing the right Microsoft 365 subscription is key to getting the most out of 
 | **Email &amp; calendar** | Outlook, Exchange Online | 50 GB | 50 GB | 100 GB |
 | **Hub for teamwork** | Chat-based workspace, online meetings, and more in Microsoft Teams | Yes | Yes | Yes |
 | **File storage** | OneDrive for Business | 1 TB per user | 1 TB per user | Unlimited |
-| **Social, video, sites** | Stream, Yammer, Planner, SharePoint Online\*, Power Apps\*, Microsoft Flow\* | Yes | Yes | Yes |
+| **Social, video, sites** | Stream, Yammer, Planner, SharePoint Online\*, Power Apps\*, Power Automate\* | Yes | Yes | Yes |
 | **Business apps** | Scheduling apps - Bookings\*\* | Yes | Yes | Yes |
 | **Threat Protection** | Office 365 Advanced Threat Protection | No | Yes | No |
  | Windows Exploit Guard enforcement| | No | Yes | No |

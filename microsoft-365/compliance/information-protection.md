@@ -28,7 +28,7 @@ Implement Microsoft Information Protection (MIP) to help you discover, classify,
 
 MIP capabilities are included with Microsoft 365 Compliance and give you the tools to [know your data](#know-your-data), [protect your data](#protect-your-data), and [prevent data loss](#prevent-data-loss).
 
-![Image of how MIP helps you discover, classify, and protect sensitive data](../media/powered-by-intelligent-platform.png)
+![Image of how MIP helps you discover, classify, and protect sensitive data.](../media/powered-by-intelligent-platform.png)
 
 For information about governing your data, see [Microsoft Information Governance in Microsoft 365](manage-Information-governance.md).
 

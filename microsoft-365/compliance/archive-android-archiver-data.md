@@ -24,7 +24,7 @@ After data from Android mobile phones is stored in user mailboxes, you can apply
 
 The following overview explains the process of using a connector to archive Android mobile data in Microsoft 365.
 
-![Android Archiver connector workflow](../media/AndroidArchiverConnectorWorkflow.png)
+![Android Archiver connector workflow.](../media/AndroidArchiverConnectorWorkflow.png)
 
 1. Your organization works with TeleMessage to set up an Android Archiver connector. For more information, see [Android Archiver](https://www.telemessage.com/office365-activation-for-android-archiver/).
 
