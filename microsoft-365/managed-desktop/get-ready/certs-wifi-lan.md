@@ -69,7 +69,8 @@ Once your LAN profile has been exported, you can prepare the policy for Microsof
     - OMA-URI (case sensitive): Enter *./Device/Vendor/MSFT/WiredNetwork/LanXML*
     - Data type: select **String (XML file)**. 
     - Custom XML: Upload the exported XML file.
-2. Assign the custom profile to “Modern Workplace Devices – Test”, “Modern Workplace Devices – First", “Modern Workplace Devices – Fast", “Modern Workplace Devices – Broad".
+2. Assign the custom profile to the *Modern Workplace Devices – Test* group.
+3. Do any testing you feel necessary using a device that it's in the Test deployment group. If successful, then assign the custom profile to the *Modern Workplace Devices – First*, *Modern Workplace Devices – Fast*, and *Modern Workplace Devices – Broad* groups.
  
 ## Deploy certificates and Wi-Fi/VPN profile 
  
@@ -80,7 +81,8 @@ To deploy certificates and profiles, follow these steps:
 2. Create a profile for each SCEP or PKCS certificates (see [Create a SCEP certificate profile](/intune/protect/certificates-scep-configure#create-a-scep-certificate-profile) or [Create a PKCS certificate profile](/intune/protect/certficates-pfx-configure#create-a-pkcs-certificate-profile)) Each of these profiles must have a description that includes an expiration date in DD/MM/YYYY format. **Certificate profiles must have an expiration date.**
 3. Create a profile for each corporate WiFi network (see [Wi-Fi settings for Windows 10 and later devices](/intune/wi-fi-settings-windows)).
 4. Create a profile for each corporate VPN (see [Windows 10 and Windows Holographic device settings to add VPN connections using Intune](/intune/vpn-settings-windows-10)).
-5. Assign the profile(s) to “Modern Workplace Devices – Test”, “Modern Workplace Devices – First", “Modern Workplace Devices – Fast", “Modern Workplace Devices – Broad".
+5. Assign the profiles to the *Modern Workplace Devices – Test* group.
+6. Do any testing you feel necessary using a device that it's in the Test deployment group. If successful, then assign the custom profile to the *Modern Workplace Devices – First*, *Modern Workplace Devices – Fast*, and *Modern Workplace Devices – Broad* groups.
 
  
 ## Steps to get ready for Microsoft Managed Desktop
