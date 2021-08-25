@@ -104,6 +104,9 @@ To confirm the current membership and membership changes for an adaptive scope:
     
     Review the information that identifies all the users, sites, or groups currently in the scope, if they were automatically added or removed, and the date and time of that membership change.
 
+> [!TIP]
+> Use the [policy lookup](retention.md#policy-lookup) option to help you identify the policies that are currently assigned to specific users, sites, and Microsoft 365 groups.
+
 ### Configuration information for static scopes
 
 When you choose to use static scopes, you must then decide whether to apply the policy to all instances for the selected location (the entire location) or to include or exclude specific instances (specific inclusions or exclusions).
