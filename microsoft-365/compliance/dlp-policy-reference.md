@@ -103,7 +103,7 @@ A DLP policy can find and protect items that contain sensitive information acros
 
 |Location  |Include/Exclude scope  |data state  |additional pre-requisites |
 |---------|---------|---------|---------|
-|Exchange email online |distribution group | - data-at-rest </br> - data-in-use| no |
+|Exchange email online |distribution group | - data-at-in-motion| no |
 |SharePoint online sites   |sites       | - data-at-rest </br> - data-in-use | no|
 |OneDrive for Business accounts| account or distribution group |- data-at-rest </br> - data-in-use|no|
 |Teams chat and channel messages     | account or distribution group |- data-in-motion </br> data-in-use |  no       |
@@ -133,6 +133,11 @@ DLP policies detect sensitive items by matching them to a sensitive information 
 |Devices	|yes |	yes| 	no|
 |Microsoft Cloud App Security|	yes|	yes|	yes|
 |On-Premises repositories|	yes|	yes|	no|
+
+> [!NOTE]
+> DLP supports detecting sensitivity labels on emails and attachemnets See, [Use sensitivity labels as conditions in DLP policies](dlp-sensitivity-label-as-condition.md#use-sensitivity-labels-as-conditions-in-dlp-policies)
+
+
 
 ### Rules
 
@@ -317,7 +322,7 @@ the exception would be:
 
 - **Except if** content contains 
 
-#### Actions
+#### Actions 
 
 Any item that makes it through the inclusive ***conditions*** and exclusive ***exceptions*** filters will have any ***actions*** that are defined in the rule applied to it. You'll have to configure the required options to support the action. For example, if you select Exchange with the **Restrict access or encrypt the content in Microsoft 365 locations** action you need to choose from these options:
 
