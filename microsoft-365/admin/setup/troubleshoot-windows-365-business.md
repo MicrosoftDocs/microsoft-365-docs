@@ -40,19 +40,19 @@ Make sure **Users may join devices to Azure AD** is set to **All**.
 2. Under **Manage Azure Active Directory**, select **View**.
 3. In the left nav, under **Manage**, select **Devices**, then select **Device settings**.
 4. If **Users may join devices to Azure AD** isn't set to **All**, select **All**, then select **Save**.
-5. Go to [Step 2. Verify that the CloudPCBRT system account is active](#step-2-verify-that-the-cloudpcbrt-system-account-is-active).
+5. Go to [Step 2. Verify that the Windows 365 BPRT Permanent User system account is active](#step-2-verify-that-the-windows-365-bprt-permanent-user-system-account-is-active).
 
-## Step 2. Verify that the CloudPCBRT system account is active
+## Step 2. Verify that the Windows 365 BPRT Permanent User system account is active
 
-The first time a Windows 365 license is assigned in your organization, a system account called "CloudPCBPRT" is automatically created in Azure AD. Do not delete this account or make any changes to it (such as changing the name or UPN). If the system account is deleted, the setup will fail. This system account ensures a smooth setup process and doesn't have any write capabilities or access to your organization beyond the scoped service capabilities of Windows 365 Business. If you delete this system account, you must open a new support request to have it restored.
+The first time a Windows 365 license is assigned in your organization, a system account called **Windows 365 BPRT Permanent User** is automatically created in Azure AD. Do not delete this account or make any changes to it (such as changing the name or UPN). If the system account is deleted, the setup will fail. This system account ensures a smooth setup process and doesn't have any write capabilities or access to your organization beyond the scoped service capabilities of Windows 365 Business. If you delete this system account, you must open a new support request to have it restored.
 
-To make sure the CloudPCBRT system account is active in Azure AD, use the following steps.
+To make sure the Windows 365 BPRT Permanent User system account is active in Azure AD, use the following steps.
 
 1. In the Azure portal, go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=516942" target="_blank">Azure Active Directory Overview</a> page.
 2. In the left nav, under **Manage**, select **Users**.
-3. In the search box, type **CloudPCBRT**, then press **Enter**.
-4. If the CloudPCBRT system account is present, go to [Step 3. Verify that device-based MFA is turned off](#step-3-verify-that-device-based-mfa-is-turned-off).
-5. If the CloudPCBRT system account is missing, in the left nav, select **New support request** to open a support ticket. After the support ticket is closed, go directly to [Step 6. Reset your Cloud PCs](#step-6-reset-your-cloud-pcs).
+3. In the search box, type **Windows 365 BPRT Permanent User**, then press **Enter**.
+4. If the Windows 365 BPRT Permanent User system account is present, go to [Step 3. Verify that device-based MFA is turned off](#step-3-verify-that-device-based-mfa-is-turned-off).
+5. If the Windows 365 BPRT Permanent User system account is missing, in the left nav, select **New support request** to open a support ticket. After the support ticket is closed, go directly to [Step 6. Reset your Cloud PCs](#step-6-reset-your-cloud-pcs).
 
 ## Step 3. Verify that device-based MFA is turned off
 
