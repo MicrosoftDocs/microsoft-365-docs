@@ -42,7 +42,7 @@ The following overview explains the process of using a connector to archive the 
 
 ## Step 1: Set up the XIP connector
 
-The first step is to access to the **Data Connectors** page in the Microsoft365 compliance center and create a connector for the XIP source data.
+The first step is to access to the **Data Connectors** page in the Microsoft 365 compliance center and create a connector for the XIP source data.
 
 1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com/) and then click **Data connectors** \> **XIP**.
 
