@@ -25,12 +25,10 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 - Microsoft Defender Antivirus
 
-You can specify your level of cloud protection offered by Microsoft Defender Antivirus by using Microsoft Endpoint Manager (recommended) or Group Policy.
+Cloud protection works together with Microsoft Defender Antivirus to deliver protection to your endpoints much faster than through traditional security intelligence updates. You can configure your level of cloud protection by using Microsoft Endpoint Manager (recommended) or Group Policy.
 
-> [!TIP]
-> Cloud protection is not simply protection for files that are stored in the cloud. The Microsoft Defender Antivirus cloud service is a mechanism for delivering updated protection to your network and devices (also called endpoints). Cloud protection with Microsoft Defender Antivirus uses distributed resources and machine learning to deliver protection to your endpoints at a rate that is far faster than traditional security intelligence updates. 
-> Microsoft Intune and Microsoft Endpoint Manager are now part of [Microsoft Endpoint Manager](/mem/endpoint-manager-overview). 
-
+> [!NOTE]
+> Selecting **High**, **High +**, or **Zero tolerance** could cause some legitimate files to be detected. If that happens, you can unblock the detected file or dispute that detection in the Microsoft 365 Defender portal.
 
 ## Use Microsoft Endpoint Manager to specify the level of cloud protection
 
@@ -73,11 +71,8 @@ You can specify your level of cloud protection offered by Microsoft Defender Ant
     - **High blocking level** applies a strong level of detection while optimizing client performance (but can also give you a greater chance of false positives).
     - **High + blocking level** applies extra protection measures (might affect client performance and increase your chance of false positives).
     - **Zero tolerance blocking level** blocks all unknown executables.
-    
-    > [!WARNING]
-    > While unlikely, setting this switch to **High** or **High +** could cause some legitimate files to be detected (although you will have the option to unblock or dispute that detection).
 
-6. Click **OK**.
+6. Select **OK**.
 
 7. Deploy your updated Group Policy Object. See [Group Policy Management Console](/windows/win32/srvnodes/group-policy)
 
