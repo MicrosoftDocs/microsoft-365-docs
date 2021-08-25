@@ -73,7 +73,7 @@ The following search clients are supported:
 
 ## SharePoint Home 
 
-In SharePoint Multi-Geo your SharePoint home is hosted in the location where the user resides as determined by their OneDrive location. For example: if the user has their OneDrive hosted in an European satellite location, their SharePoint Home will be rendered from Europe. SharePoint home includes all content relevant to the user regardless of its geo location. 
+In SharePoint Multi-Geo your SharePoint home is hosted in the location where the user resides as determined by their OneDrive location. For example: if the user has their OneDrive hosted in a European satellite location, their SharePoint Home will be rendered from Europe. SharePoint home includes all content relevant to the user regardless of its geo location. 
 
 **Followed Sites, News from Sites, Recent Sites, Frequent Sites, and Suggested sites**
 
