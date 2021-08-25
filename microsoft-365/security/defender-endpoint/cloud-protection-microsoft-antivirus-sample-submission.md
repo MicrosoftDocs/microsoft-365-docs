@@ -104,8 +104,8 @@ For information about configuration options using Intune, Configuration Manager,
 
 There are two more scenarios where Defender for Endpoint might request a file sample that is not related to the cloud protection in Microsoft Defender Antivirus. These scenarios include:
 
-- Manual file sample submission
-- Content analysis during automated investigations  
+- [Manual file sample submission](#manual-file-sample-collection-in-the-microsoft-365-defender-portal)
+- [Content analysis during automated investigations](#automated-investigation-and-response-content-analysis)  
 
 ### Manual file sample collection in the Microsoft 365 Defender portal
 
