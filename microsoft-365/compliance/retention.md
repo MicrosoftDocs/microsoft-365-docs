@@ -281,11 +281,11 @@ When you create a retention policy or retention label policy for retention, you 
 
 - An **adaptive scope** uses a query that you specify, so the membership isn't static but dynamic by running a daily query against the attributes that you specify for the selected locations. You can use multiple adaptive scopes with a single policy.
     
-    Example: Emails for the Sales Executive group require a longer retention period than standard users. You create the retention policy with an adaptive scope that uses the email address of the Sales Executive group. When new users join or leave this group, there's no need to reconfigure the retention policy because the adaptive scope automatically picks up changes in the group membership.
+    Example: Emails for the Sales Executive group require a longer retention period than standard users. You create a retention policy with an adaptive scope that uses the email address of the Sales Executive group. When new users join or leave this group, there's no need to reconfigure the retention policy because the adaptive scope automatically picks up changes in the group membership.
 
 - A **static scope** doesn't use queries and is limited in configuration to either all instances for the selected location, including specific instances, or excluding specific instances. These three choices are sometimes referred to as "org-wide", "includes", and "excludes" respectively.
     
-    Example: Emails for the Sales Executive group require a longer retention period than standard users. You create the retention policy with a static scope that includes the email address of the Sales Executive group. The group membership is retrieved when the policy is created so when new users join or leave this group, you must reconfigure the retention policy to add or remove the users.
+    Example: Emails for the Sales Executive group require a longer retention period than standard users. You create a retention policy with a static scope that includes the email address of the Sales Executive group. The group membership is retrieved when the policy is created so when new users join or leave this group, you must reconfigure the retention policy to add or remove the users.
 
 Advantages of using adaptive scopes:
 
