@@ -34,7 +34,7 @@ The first step is to specify the appropriate details for legal hold notices or o
 
 ![Name Communication Page.](../media/NameCommunication.PNG)
 
-1. In the Security & Compliance Center, go to **eDiscovery > Advanced eDiscovery** to display the list of cases in your organization.
+1. In the Microsoft 365 compliance center, go to **eDiscovery > Advanced** to display the list of cases in your organization.
 
 2. Select a case, click the **Communications** tab, and then click **New communication**.
 

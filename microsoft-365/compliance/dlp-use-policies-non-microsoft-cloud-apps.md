@@ -54,7 +54,7 @@ To use DLP policy to a specific non-Microsoft cloud app, the app must be connect
 
 - [Connect Box](/cloud-app-security/connect-box-to-microsoft-cloud-app-security)
 - [Connect Dropbox](/cloud-app-security/connect-dropbox-to-microsoft-cloud-app-security)
-- [Connect G-Suite](/cloud-app-security/connect-google-apps-to-microsoft-cloud-app-security)
+- [Connect G-Workspace](/cloud-app-security/connect-google-apps-to-microsoft-cloud-app-security)
 - [Connect Salesforce](/cloud-app-security/connect-salesforce-to-microsoft-cloud-app-security)
 - [Connect Cisco Webex](/cloud-app-security/connect-webex-to-microsoft-cloud-app-security)
 

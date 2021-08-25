@@ -32,11 +32,11 @@ ms.prod: m365-security
 
 In Microsoft 365 organizations with Exchange Online mailboxes, admins can use the Submissions portal in the Microsoft 365 Defender portal to submit email messages, URLs, and attachments to Microsoft for scanning.
 
-When you submit an email message, you will get:
+When you submit an email message for analysis, you will get:
 
 - **Email authentication check**: Details on whether email authentication passed or failed when it was delivered.
 - **Policy hits**: Information about any policies that may have allowed or blocked the incoming email into your tenant, overriding our service filter verdicts.
-- **Payload reputation/detonation**: Examination of any URLs and attachments in the message.
+- **Payload reputation/detonation**: Up-to-date examination of any URLs and attachments in the message.
 - **Grader analysis**: Review done by human graders in order to confirm whether or not messages are malicious.
 
 > [!IMPORTANT]

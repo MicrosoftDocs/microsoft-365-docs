@@ -52,7 +52,7 @@ In traditional network architectures, higher latency for generic Internet traffi
 We're making it easier to identify Microsoft 365 network traffic and making it simpler to manage the network identification.
 
 - New categories of network endpoints to differentiate highly critical network traffic from network traffic which is not impacted by Internet latencies. There are just a handful of URLs and supporting IP Addresses in the most critical “Optimize” category.
-- Web services for script usage or direct device configuration and change management of Microsoft 365 network identification. Changes are available from the web service, or in RSS format, or on email using a Microsoft Flow template.
+- Web services for script usage or direct device configuration and change management of Microsoft 365 network identification. Changes are available from the web service, or in RSS format, or on email using a Power Automate template.
 - [Office 365 Network partner program](./microsoft-365-networking-partner-program.md) with Microsoft partners who provide devices or services that follow Microsoft 365 network connectivity principles and have simple configuration.
 
 ## Securing Microsoft 365 connections

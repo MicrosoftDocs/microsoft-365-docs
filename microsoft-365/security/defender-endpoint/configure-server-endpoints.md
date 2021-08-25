@@ -92,7 +92,7 @@ For Windows Server 2008 R2 SP1 and Windows Server 2012 R2: [Configure and update
 1. Download the agent setup file: [Windows 64-bit agent](https://go.microsoft.com/fwlink/?LinkId=828603).
 
 2. Using the Workspace ID and Workspace key obtained in the previous procedure, choose any of the following installation methods to install the agent on the Windows server:
-    - [Manually install the agent using setup](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard). 
+    - [Manually install the agent using setup](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard).
     On the **Agent Setup Options** page, choose **Connect the agent to Azure Log Analytics (OMS)**.
     - [Install the agent using the command line](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line).
     - [Configure the agent using a script](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation).
@@ -113,7 +113,7 @@ Once completed, you should see onboarded Windows servers in the portal within an
 
 ### Option 2: Onboard Windows servers through Azure Security Center
 
-In the Microsoft 365 Defender navigation pane, select **Settings** > **Endpoints** > **Device management** > **Onboarding**.
+In the Microsoft 365 Defender navigation pane, select **Settings** \> **Endpoints** \> **Device management** \> **Onboarding**.
 
 1. Select **Windows Server 2008 R2 SP1, 2012 R2 and 2016** as the operating system.
 
@@ -193,9 +193,9 @@ The following capabilities are included in this integration:
     > [!NOTE]
     > The integration between Azure Defender for Servers and Microsoft Defender for Endpoint has been expanded to support [Windows Server 2019 and Windows Virtual Desktop (WVD)](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview).
 
-- Windows servers monitored by Azure Defender will also be available in Defender for Endpoint - Azure Defender seamlessly connects to the Defender for Endpoint tenant, providing a single view across clients and servers.  In addition, Defender for Endpoint alerts will be available in the Azure Defender console.
+- Windows servers monitored by Azure Defender will also be available in Defender for Endpoint - Azure Defender seamlessly connects to the Defender for Endpoint tenant, providing a single view across clients and servers. In addition, Defender for Endpoint alerts will be available in the Azure Defender console.
 
-- Server investigation -  Azure Defender customers can access Microsoft 365 Defender to perform detailed investigation to uncover the scope of a potential breach.
+- Server investigation - Azure Defender customers can access Microsoft 365 Defender to perform detailed investigation to uncover the scope of a potential breach.
 
 > [!IMPORTANT]
 >
@@ -217,8 +217,8 @@ The following steps are required to enable this integration:
 - [Configure the SCEP client Cloud Protection Service membership](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) to the **Advanced** setting.
 
 ## Run a detection test to verify onboarding
-After onboarding the device, you can choose to run a detection test to verify that a device is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Microsoft Defender for Endpoint device](run-detection-test.md).
 
+After onboarding the device, you can choose to run a detection test to verify that a device is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Microsoft Defender for Endpoint device](run-detection-test.md).
 
 ## Offboard Windows servers
 
@@ -261,7 +261,7 @@ To offboard the Windows server, you can use either of the following methods:
 
 1. Get your Workspace ID:
 
-   1. In the Microsoft 365 Defender navigation pane, select **Settings** > **Endpoints** > **Device management** > **Onboarding**.
+   1. In the Microsoft 365 Defender navigation pane, select **Settings** \> **Endpoints** \> **Device management** \> **Onboarding**.
 
    1. Select **Windows Server 2008 R2 SP1, 2012 R2 and 2016** as the operating system and get your Workspace ID:
 
@@ -303,9 +303,9 @@ To offboard the Windows server, you can use either of the following methods:
 Add the following lines to the cmd file. Note that you'll need your WORKSPACE ID and KEY.
 
 ```dos
-@echo off 
+@echo off
 cd "C:"
-IF EXIST "C:\Program Files\Microsoft Monitoring Agent\Agent\MonitoringHost.exe" ( 
+IF EXIST "C:\Program Files\Microsoft Monitoring Agent\Agent\MonitoringHost.exe" (
 exit
 ) ELSE (
 wusa.exe c:\Windows\MMA\Windows6.1-KB123456-x86.msu /quiet /norestart
@@ -367,7 +367,7 @@ As mentioned in the onboarding documentation for Server specifically around Serv
 For Windows Server 2008 R2 PS1, ensure that you fulfill the following requirements:
 
 - Install the [February 2018 monthly update rollup](https://support.microsoft.com/help/4074598/windows-7-update-kb4074598)
-  
+
 - Install either [.NET framework 4.5](https://www.microsoft.com/download/details.aspx?id=30653) (or later) or [KB3154518](https://support.microsoft.com/help/3154518/support-for-tls-system-default-versions-included-in-the-net-framework)
 
 Please check the KBs are present before onboarding Windows Server 2008 R2

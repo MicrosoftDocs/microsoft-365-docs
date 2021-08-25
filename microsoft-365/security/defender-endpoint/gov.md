@@ -36,29 +36,44 @@ Microsoft Defender for Endpoint for US Government customers requires one of the 
 
 ### Desktop licensing
 
-GCC|GCC High|DoD
-:---|:---|:---
-Microsoft 365 GCC G5|Microsoft 365 E5 for GCC High|Microsoft 365 G5 for DOD
-Microsoft 365 G5 Security GCC|Microsoft 365 G5 Security for GCC High|Microsoft 365 G5 Security for DOD
-Microsoft Defender for Endpoint - GCC|Microsoft Defender for Endpoint for GCC High|Microsoft Defender for Endpoint for DOD
-Windows 10 Enterprise E5 GCC|Windows 10 Enterprise E5 for GCC High|Windows 10 Enterprise E5 for DOD
+<br>
+
+****
+
+|GCC|GCC High|DoD|
+|---|---|---|
+|Microsoft 365 GCC G5|Microsoft 365 E5 for GCC High|Microsoft 365 G5 for DOD|
+|Microsoft 365 G5 Security GCC|Microsoft 365 G5 Security for GCC High|Microsoft 365 G5 Security for DOD|
+|Microsoft Defender for Endpoint - GCC|Microsoft Defender for Endpoint for GCC High|Microsoft Defender for Endpoint for DOD|
+|Windows 10 Enterprise E5 GCC|Windows 10 Enterprise E5 for GCC High|Windows 10 Enterprise E5 for DOD|
+|
 
 ### Server licensing
 
-GCC|GCC High|DoD
-:---|:---|:---
-Microsoft Defender for Endpoint Server GCC|Microsoft Defender for Endpoint Server for GCC High|Microsoft Defender for Endpoint Server for DOD
-Azure Defender for Servers|Azure Defender for Servers - Government|Azure Defender for Servers - Government
+<br>
+
+****
+
+|GCC|GCC High|DoD|
+|---|---|---|
+|Microsoft Defender for Endpoint Server GCC|Microsoft Defender for Endpoint Server for GCC High|Microsoft Defender for Endpoint Server for DOD|
+|Azure Defender for Servers|Azure Defender for Servers - Government|Azure Defender for Servers - Government|
+|
 
 ## Portal URLs
 
 The following are the Microsoft Defender for Endpoint portal URLs for US Government customers:
 
-Customer type|Portal URL
-:---|:---
-GCC|<https://gcc.securitycenter.microsoft.us>
-GCC High|<https://securitycenter.microsoft.us>
-DoD|<https://securitycenter.microsoft.us>
+<br>
+
+****
+
+|Customer type|Portal URL|
+|---|---|
+|GCC|<https://gcc.securitycenter.microsoft.us>|
+|GCC High|<https://securitycenter.microsoft.us>|
+|DoD|<https://securitycenter.microsoft.us>|
+|
 
 ## Endpoint versions
 
@@ -141,11 +156,16 @@ You can find the Azure IP ranges in [Azure IP Ranges and Service Tags - US Gover
 
 Instead of the public URIs listed in our [API documentation](apis-intro.md), you'll need to use the following URIs:
 
-Endpoint type|GCC|GCC High & DoD
-:---|:---|:---
-Login|`https://login.microsoftonline.com`|`https://login.microsoftonline.us`
-Defender for Endpoint API|`https://api-gcc.securitycenter.microsoft.us`|`https://api-gov.securitycenter.microsoft.us`
-SIEM|`https://wdatp-alertexporter-us.gcc.securitycenter.windows.us`|`https://wdatp-alertexporter-us.securitycenter.windows.us`
+<br>
+
+****
+
+|Endpoint type|GCC|GCC High & DoD|
+|---|---|---|
+|Login|`https://login.microsoftonline.com`|`https://login.microsoftonline.us`|
+|Defender for Endpoint API|`https://api-gcc.securitycenter.microsoft.us`|`https://api-gov.securitycenter.microsoft.us`|
+|SIEM|`https://wdatp-alertexporter-us.gcc.securitycenter.windows.us`|`https://wdatp-alertexporter-us.securitycenter.windows.us`|
+|
 
 ## Feature parity with commercial
 
@@ -153,14 +173,18 @@ Defender for Endpoint for US Government customers doesn't have complete parity w
 
 These are the known gaps:
 
-Feature name|GCC|GCC High|DoD
-:---|:---:|:---:|:---:
-Network discovery|![No.](images/svg/check-no.svg) Rolling out|![No](images/svg/check-no.svg) In development|![No](images/svg/check-no.svg) In development
-Web content filtering|![No.](images/svg/check-no.svg) In development|![No](images/svg/check-no.svg) In development|![No](images/svg/check-no.svg) In development
-Integrations: Azure Sentinel|![Yes.](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg) Alerts <p> ![Yes](images/svg/check-yes.svg) Incidents & Raw data: In preview|![Yes](images/svg/check-yes.svg) Alerts <p> ![Yes](images/svg/check-yes.svg) Incidents & Raw data: In preview
-Integrations: Microsoft Cloud App Security|![Yes.](images/svg/check-yes.svg)|![No](images/svg/check-no.svg) In development|![No](images/svg/check-no.svg) In development
-Integrations: Microsoft Compliance Manager|![Yes.](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)
-Integrations: Microsoft Defender for Identity|![No.](images/svg/check-no.svg) Rolling out|![No](images/svg/check-no.svg) Rolling out|![No](images/svg/check-no.svg) Rolling out
-Integrations: Microsoft Endpoint DLP|![Yes.](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![No](images/svg/check-no.svg) Rolling out
-Integrations: Microsoft Power Automate & Azure Logic Apps|![Yes.](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg) Azure Logic Apps <p> ![No](images/svg/check-no.svg) Power Automate: In development
-Microsoft Threat Experts|![No.](images/svg/check-no.svg) On engineering backlog|![No](images/svg/check-no.svg) On engineering backlog|![No](images/svg/check-no.svg) On engineering backlog
+<br>
+
+****
+
+|Feature name|GCC|GCC High|DoD|
+|---|:---:|:---:|:---:|
+|Network discovery|![No](images/svg/check-no.svg) Rolling out|![No](images/svg/check-no.svg) In development|![No](images/svg/check-no.svg) In development|
+|Web content filtering|![No](images/svg/check-no.svg) In development|![No](images/svg/check-no.svg) In development|![No](images/svg/check-no.svg) In development|
+|Integrations: Azure Sentinel|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg) Alerts <p> ![Yes](images/svg/check-yes.svg) Incidents & Raw data: In private preview|![Yes](images/svg/check-yes.svg) Alerts <p> ![Yes](images/svg/check-yes.svg) Incidents & Raw data: In private preview|
+|Integrations: Microsoft Cloud App Security|![Yes](images/svg/check-yes.svg)|![No](images/svg/check-no.svg) Rolling out|![No](images/svg/check-no.svg) Rolling out|
+|Integrations: Microsoft Defender for Identity|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|
+|Integrations: Microsoft Endpoint DLP|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![No](images/svg/check-no.svg) Rolling out|
+|Integrations: Microsoft Power Automate & Azure Logic Apps|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg) Azure Logic Apps <p> ![No](images/svg/check-no.svg) Power Automate: In development|
+|Microsoft Threat Experts|![No](images/svg/check-no.svg) On engineering backlog|![No](images/svg/check-no.svg) On engineering backlog|![No](images/svg/check-no.svg) On engineering backlog|
+|

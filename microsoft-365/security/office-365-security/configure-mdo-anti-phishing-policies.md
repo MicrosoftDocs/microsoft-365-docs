@@ -47,7 +47,7 @@ The difference between these two elements isn't obvious when you manage anti-phi
 
 In Exchange Online PowerShell, you manage the policy and the rule separately. For more information, see the [Use Exchange Online PowerShell to configure anti-phishing policies](#use-exchange-online-powershell-to-configure-anti-phishing-policies) section later in this article.
 
-Every Defender for Office 365 organization has a built-in anti-phishing policy named Office365 AntiPhish Default that has these properties:
+Every Defender for Office 365 organization has a built-in anti-phishing policy named Office 365 AntiPhish Default that has these properties:
 
 - The policy is applied to all recipients in the organization, even though there's no anti-phish rule (recipient filters) associated with the policy.
 - The policy has the custom priority value **Lowest** that you can't modify (the policy is always applied last). Any custom policies that you create always have a higher priority.

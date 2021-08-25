@@ -72,7 +72,7 @@ The account you use to access content explorer must be in one or both of the rol
 
 You can also assign either or both of the roles to a custom role group to tailor access to content explorer.
 
-A Global admin, Compliance admin, or Data admin can assign the necessary Content Explorer List Viewer, and Content Explorer Content Viewer role group membership.
+A Global admin, can assign the necessary Content Explorer List Viewer, and Content Explorer Content Viewer role group membership.
 
 ## Content explorer
 

@@ -29,7 +29,7 @@ This article discusses the steps necessary to set up Core eDiscovery. This inclu
 
 Licensing for Core eDiscovery requires the appropriate organization subscription and per-user licensing.
 
-- **Organization subscription:** To access Core eDiscovery in the Microsoft 365 compliance center or the Office 365 Security & Compliance Center and use the hold and export features, your organization must have a Microsoft 365 E3 or Office 365 E3 subscription or higher.
+- **Organization subscription:** To access Core eDiscovery in the Microsoft 365 compliance center and use the hold and export features, your organization must have a Microsoft 365 E3 or Office 365 E3 subscription or higher.
 
 - **Per-user licensing:** To place an eDiscovery hold on mailboxes and sites, a user must be assigned one of the following licenses, depending on your organization subscription:
 
@@ -53,7 +53,7 @@ For information about licensing:
 
 ## Step 2: Assign eDiscovery permissions
 
-To access Core eDiscovery or be added as a member of a Core eDiscovery case, a user must be assigned the appropriate permissions. Specifically, a user must be added as a member of the eDiscovery Manager role group in the Office 365 Security & Compliance Center. Members of this role group can create and manage Core eDiscovery cases. They can add and remove members, place an eDiscovery hold on users, create and edit searches, and export content from a Core eDiscovery case.
+To access Core eDiscovery or be added as a member of a Core eDiscovery case, a user must be assigned the appropriate permissions. Specifically, a user must be added as a member of the eDiscovery Manager role group in the Microsoft 365 compliance center. Members of this role group can create and manage Core eDiscovery cases. They can add and remove members, place an eDiscovery hold on users, create and edit searches, and export content from a Core eDiscovery case.
 
 Complete the following steps to add users to the eDiscovery Manager role group:
 

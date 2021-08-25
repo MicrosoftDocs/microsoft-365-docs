@@ -1,7 +1,7 @@
 ---
 title: Attack surface reduction rules
 description: Lists details about attack surface reduction rules on a per-rule basis.
-keywords: Attack surface reduction rules, ASR, asr rules, hips, host intrusion prevention system, protection rules, anti-exploit rules, antiexploit, exploit rules, infection prevention rules, Microsoft Defender for Endpoint, configure ASR rules, ASR rule description 
+keywords: Attack surface reduction rules, ASR, asr rules, hips, host intrusion prevention system, protection rules, anti-exploit rules, antiexploit, exploit rules, infection prevention rules, Microsoft Defender for Endpoint, configure ASR rules, ASR rule description
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -20,7 +20,7 @@ ms.topic: article
 
 # Attack surface reduction rules
 
-This article provides information about attack reduction rules:  
+This article provides information about attack reduction rules:
 
 - [Supported operating system versions](#supported-operating-systems)
 - [Supported configuration management systems](#supported-configuration-management-systems)
@@ -39,7 +39,7 @@ The following table lists attack surface reduction rules in alphabetical order. 
 >
 > - \* All rules support file and folder exclusions, unless stated otherwise.
 
-| Rule name |  Windows&nbsp;10 | Windows&nbsp;Server 2019 | Windows&nbsp;Server | Windows&nbsp;Server 2016 | Windows&nbsp;Server 2012 R2 |
+|Rule name|Windows&nbsp;10|Windows&nbsp;Server 2019|Windows&nbsp;Server|Windows&nbsp;Server 2016|Windows&nbsp;Server 2012 R2|
 |---|:---:|:---:|:---:|:---:|:---:|
 |[Block abuse of exploited vulnerable signed drivers](#block-abuse-of-exploited-vulnerable-signed-drivers) | ![supported.](images/checkmark.png) <br><br> | ![supported.](images/checkmark.png) <br><br> | ![supported.](images/checkmark.png) <br><br> version 1803 (Semi-Annual Channel) or later |  |  |
 |[Block Adobe Reader from creating child processes](#block-adobe-reader-from-creating-child-processes) | ![supported.](images/checkmark.png) <br><br> version 1809 or later | ![supported](images/checkmark.png) | ![supported](images/checkmark.png)  <br><br> |  |  |
@@ -63,7 +63,7 @@ The following table lists attack surface reduction rules in alphabetical order. 
 
 Links to information about configuration management system versions referenced in this table are listed below this table.
 
-|Rule name | Intune | Microsoft Endpoint Manager | Microsoft Endpoint Configuration Manager | Group Policy | PowerShell |
+|Rule name|Intune|Microsoft Endpoint Manager|Microsoft Endpoint Configuration Manager|Group Policy|PowerShell|
 |---|:---:|:---:|:---:|:---:|:---:|
 |[Block abuse of exploited vulnerable signed drivers](#block-abuse-of-exploited-vulnerable-signed-drivers) | ![supported.](images/checkmark.png) <br><br>  |  ![supported](images/checkmark.png) <br><br> MEM OMA-URI |   |   |  ![supported](images/checkmark.png) <br><br> |
 |[Block Adobe Reader from creating child processes](#block-adobe-reader-from-creating-child-processes) | ![supported.](images/checkmark.png) |   | ![supported](images/checkmark.png) |   |   |
@@ -96,7 +96,7 @@ This rule prevents an application from writing a vulnerable signed driver to dis
 
 The **Block abuse of exploited vulnerable signed drivers** rule does not block a driver already existing on the system from being loaded.
 
->[!NOTE]
+> [!NOTE]
 >
 > You can configure this rule using MEM OMA-URI. See [MEM OMA-URI](enable-attack-surface-reduction.md#mem) for configuring custom rules.
 >

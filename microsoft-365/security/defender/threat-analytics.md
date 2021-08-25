@@ -23,7 +23,7 @@ ms.topic: article
 ms.custom: seo-marvel-apr2020
 ---
 
-# Track and respond to emerging threats with threat analytics 
+# Track and respond to emerging threats with threat analytics in Microsoft 365 Defender 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 

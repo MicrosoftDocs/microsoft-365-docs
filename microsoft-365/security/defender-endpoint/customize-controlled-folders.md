@@ -66,9 +66,9 @@ You can use the Windows Security app, Group Policy, PowerShell cmdlets, or mobil
 
 2. Right-click the Group Policy Object you want to configure, and then select **Edit**.
 
-3. In your **Group Policy Management Editor**, go to **Computer configuration** > **Policies** > **Administrative templates**.
+3. In your **Group Policy Management Editor**, go to **Computer configuration** \> **Policies** \> **Administrative templates**.
 
-4. Expand the tree to **Windows components** > **Microsoft Defender Antivirus** > **Windows Defender Exploit Guard** > **Controlled folder access**. <br/>**NOTE**: On older versions of Windows, you might see **Windows Defender Antivirus** instead of **Microsoft Defender Antivirus**.
+4. Expand the tree to **Windows components** \> **Microsoft Defender Antivirus** \> **Windows Defender Exploit Guard** \> **Controlled folder access**. <br/>**NOTE**: On older versions of Windows, you might see **Windows Defender Antivirus** instead of **Microsoft Defender Antivirus**.
 
 5. Double-click **Configured protected folders**, and then set the option to **Enabled**. Select **Show**, and specify each folder that you want to protect.
 
@@ -123,7 +123,7 @@ An allowed application or service only has write access to a controlled folder a
 
 2. In the **Group Policy Management Editor**, go to **Computer configuration** and select **Administrative templates**.
 
-3. Expand the tree to **Windows components** > **Microsoft Defender Antivirus** > **Windows Defender Exploit Guard** > **Controlled folder access**.
+3. Expand the tree to **Windows components** \> **Microsoft Defender Antivirus** \> **Windows Defender Exploit Guard** \> **Controlled folder access**.
 
 4. Double-click the **Configure allowed applications** setting and set the option to **Enabled**. Select **Show** and enter each app.
 

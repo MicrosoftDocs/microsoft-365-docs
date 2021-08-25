@@ -42,7 +42,7 @@ The following overview explains the process of using a connector to archive MS S
 
 ## Step 1: Set up the MS SQL Database Importer connector
 
-The first step is to access to the **Data Connectors** page in the Microsoft365 compliance center and create a connector for the MS SQL Database.
+The first step is to access to the **Data Connectors** page in the Microsoft 365 compliance center and create a connector for the MS SQL Database.
 
 1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com) and then click **Data connectors** > **MS SQL Database Importer**.
 

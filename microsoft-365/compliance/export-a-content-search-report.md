@@ -20,7 +20,7 @@ search.appverid:
 - MBS150
 - MET150
 ms.assetid: 5c8c1db6-d8ac-4dbb-8a7a-f65d452169b9
-description: "Instead of exporting the actual results of a Content Search in the Security & Compliance Center in Office 365, you can export a search results report. The report contains a summary of the search results and a document with detailed information about each item that would be exported."
+description: "Instead of exporting the actual results of a Content Search in the Microsoft 365 compliance center, you can export a search results report. The report contains a summary of the search results and a document with detailed information about each item that would be exported."
 ms.custom: seo-marvel-apr2020
 ---
 
@@ -32,7 +32,7 @@ When you export a report, the report files are downloaded to a folder on your lo
 
 ## Before you export a search report
 
-- To export a search report, you have to be assigned the Compliance Search management role in Security & Compliance Center. This role is assigned by default to the built-in eDiscovery Manager and Organization Management role groups. For more information, see [Assign eDiscovery permissions](assign-ediscovery-permissions.md).
+- To export a search report, you have to be assigned the Compliance Search management role in Microsoft 365 compliance center. This role is assigned by default to the built-in eDiscovery Manager and Organization Management role groups. For more information, see [Assign eDiscovery permissions](assign-ediscovery-permissions.md).
 
 - When you export a report, the data is temporarily stored in an Azure Storage location in the Microsoft cloud before it's downloaded to your local computer. Be sure that your organization can connect to the endpoint in Azure, which is **\*.blob.core.windows.net** (the wildcard represents a unique identifier for your export). The search results data is deleted from the Azure Storage location two weeks after it's created.
 

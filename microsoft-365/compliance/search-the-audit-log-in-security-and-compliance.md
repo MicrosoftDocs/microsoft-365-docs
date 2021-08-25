@@ -839,7 +839,7 @@ The following table lists the user and admin activities in Yammer that are logge
 
 ### Microsoft Power Automate activities
 
-You can search the audit log for activities in Power Automate (formerly called Microsoft Flow). These activities include creating, editing, and deleting flows, and changing flow permissions. For information about auditing for Power Automate activities, see the blog  [Microsoft Flow audit events now available in Microsoft 365 compliance center](https://flow.microsoft.com/blog/security-and-compliance-center).
+You can search the audit log for activities in Power Automate (formerly called Microsoft Flow). These activities include creating, editing, and deleting flows, and changing flow permissions. For information about auditing for Power Automate activities, see the blog  [Power Automate audit events now available in Microsoft 365 compliance center](https://flow.microsoft.com/blog/security-and-compliance-center).
 
 ### Microsoft Power Apps activities
 
