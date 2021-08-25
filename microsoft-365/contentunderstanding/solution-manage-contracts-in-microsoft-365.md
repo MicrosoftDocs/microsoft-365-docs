@@ -21,7 +21,11 @@ description: Learn how to manage contracts using a Microsoft 365 solution of Sha
 
 This article describes how to create a contracts management solution for your organization by using SharePoint Syntex and components of Microsoft 365. It provides you with a framework to help you plan and create a solution that fits your unique business needs. Even though this solution talks about contract management, you can adapt it to create other document management solutions, such as for statements of work or invoices.
 
-*This content set documents a Microsoft 365 solution developed by Thomas Molbach with the Modern Work Solution Strategy Team at Microsoft.*
+</br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWJUR0]
+
+</br>
 
 ## Identify the business problem
 
