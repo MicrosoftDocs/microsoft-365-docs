@@ -316,7 +316,7 @@ You can configure multiple retention policies for Microsoft 365 locations, as we
 
 ![Policy lookup to find the policies for retention that are assigned to specific users, sites, and Microsoft 365 groups ](../media/policy-lookup.png)
 
-You must specify the exact email address for a user, exact URL for a site, and exact email address for a Microsoft 365 group.
+You must specify the exact email address for a user, exact URL for a site, or exact email address for a Microsoft 365 group.
 
 The option for sites includes OneDrive accounts. For information how to specify the URL for a user's OneDrive account, see [Configuration information for SharePoint sites and OneDrive accounts](retention-settings.md#configuration-information-for-sharepoint-sites-and-onedrive-accounts).
 
