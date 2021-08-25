@@ -63,9 +63,6 @@ Cloud protection is enabled by default. However, you might need to re-enable it 
 
 If your subscription includes Windows 10 E5, you can take advantage of emergency dynamic intelligence updates, which provide near real-time protection from emerging threats. When you turn on cloud protection, fixes for malware issues can be delivered via the cloud within minutes, instead of waiting for the next update. See [Configure Microsoft Defender Antivirus to automatically receive new protection updates based on reports from our cloud service](manage-event-based-updates-microsoft-defender-antivirus.md#cloud-report-updates).
 
-> [!TIP]
-> Visit the Windows Defender Testground website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to confirm the feature is working and see how it works.
-
 ## Next steps
 
 Now that you have an overview of cloud protection in Microsoft Defender Antivirus, here are some next steps:
