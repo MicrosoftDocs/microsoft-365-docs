@@ -41,6 +41,7 @@ Learn more by watching [this video](https://www.youtube.com/watch?v=Tdz6KfruDGo&
 
 - [Admin review for reported messages](admin-review-reported-message.md): Admins can now send templated messages back to end users after they review reported messages. The templates can be customized for your organization and based on your admin's verdict as well.
 - [Add allows in the Tenant Allow/Block List](manage-tenant-allows.md): Allows cannot be added directly to the Tenant Allow/Block List but now can be if the blocked message is submitted as part of the admin submission process. Depending on the block that happened, an URL, file, and/or sender allow will be added to the Tenant Allow/Block List. In most cases, the allows are added to give the system some time and allow it naturally if warranted. In some cases, Microsoft manages the allow for you.
+- [Advanced Hunting: Surfacing more email data from Microsoft Defender for Office 365](https://techcommunity.microsoft.com/t5/microsoft-365-defender/advanced-hunting-surfacing-more-email-data-from-microsoft/ba-p/2678118): New enhancements to the advanced hunting data for Microsoft Defender for Office 365 in Microsoft 365 Defender. As part of this update, we have added information to help you to investigate for scenarios involving verdict upgrades as well as spoof related threats 
 
 ## July 2021
 
