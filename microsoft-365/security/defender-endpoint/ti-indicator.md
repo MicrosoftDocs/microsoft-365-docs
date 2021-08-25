@@ -67,7 +67,7 @@ rbacGroupNames|List of strings|RBAC device group names where the indicator is ex
 ## Public Preview: Indicator types
 
 > [!IMPORTANT]
-> Information in this section (**Public Preview for Automated investigation and remediation engine**) relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+> Information in this section (**Public Preview for Automated investigation and remediation engine**) relates to prereleased product which might be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 The indicator action types supported by the API are:
 

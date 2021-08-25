@@ -111,7 +111,7 @@ Creating a custom Safe Attachments policy in the Microsoft 365 Defender portal c
      - **Monitor**
      - **Block**: This is the default value, and the recommended value in Standard and Strict [preset security policies](preset-security-policies.md).
      - **Replace**
-     - **Dynamic Delivery (Preview Feature)**
+     - **Dynamic Delivery (Preview feature)**
 
      These values are explained in [Safe Attachments policy settings](safe-attachments.md#safe-attachments-policy-settings).
 
