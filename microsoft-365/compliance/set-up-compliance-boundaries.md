@@ -33,7 +33,7 @@ We use the example in the following illustration to explain how compliance bound
   
 In this example, Contoso LTD is an organization that consists of two subsidiaries, Fourth Coffee and Coho Winery. The business requires that eDiscovery managers and investigators can only search the Exchange mailboxes, OneDrive accounts, and SharePoint sites in their agency. Also, eDiscovery managers and investigators can only see eDiscovery cases in their agency, and they can only access the cases that they're a member of. Additionally in this scenario, investigators cannot place content locations on hold or export content from a case. Here's how compliance boundaries meet these requirements.
   
-- The search permissions filtering functionality in Content search controls the content locations that eDiscovery managers and investigators can search. This means eDiscovery managers and investigators in the Fourth Coffee agency can only search content locations in the Fourth Coffee subsidiary. The same restriction applies to the Coho Winery subsidiary.
+- The search permissions filtering functionality for eDiscovery controls the content locations that eDiscovery managers and investigators can search. This means eDiscovery managers and investigators in the Fourth Coffee agency can only search content locations in the Fourth Coffee subsidiary. The same restriction applies to the Coho Winery subsidiary.
 
 - [Role groups](assign-ediscovery-permissions.md#rbac-roles-related-to-ediscovery) provide the following functions for compliance boundaries:
 
@@ -42,6 +42,16 @@ In this example, Contoso LTD is an organization that consists of two subsidiarie
   - Control who can assign members to an eDiscovery case. This means eDiscovery managers and investigators can only assign members to cases that they themselves are a member of.
 
   - Control the eDiscovery-related tasks that members can perform by adding or removing roles that assign specific permissions.
+
+- When a search permissions filter is applied to a role group, members of the role group can perform the following search-related actions as long as the permissions to perform an action is assigned to the role group:
+
+  - Search for content
+
+  - Preview search results
+
+  - Export search results
+
+  - Purge items returned by a search
 
 Here's the process for setting up compliance boundaries:
   
@@ -100,7 +110,7 @@ After you've created role groups for each agency, the next step is to create the
 Here's the syntax that's used to create a search permissions filter used for compliance boundaries.
 
 ```powershell
-New-ComplianceSecurityFilter -FilterName <name of filter> -Users <role groups> -Filters "Mailbox_<MailboxPropertyName>  -eq '<Value> '", "Site_Path -like '<SharePointURL>*'" -Action <Action>
+New-ComplianceSecurityFilter -FilterName <name of filter> -Users <role groups> -Filters "Mailbox_<MailboxPropertyName>  -eq '<Value> '", "Site_Path -like '<SharePointURL>' -or Site_Path -like '<OneDriveURL>'"
 ```
 
 Here's a description of each parameter in the command:
@@ -109,32 +119,31 @@ Here's a description of each parameter in the command:
 
 - `Users`: Specifies the users or groups who get this filter applied to the search actions they perform. For compliance boundaries, this parameter specifies the role groups (that you created in Step 3) in the agency that you're creating the filter for. Note this is a multi-value parameter so you can include one or more role groups, separated by commas.
 
-- `Filters`: Specifies the search criteria for the filter. For the compliance boundaries, you define the following filters. Each one applies to a content location.
+- `Filters`: Specifies the search criteria for the filter. For compliance boundaries, you define the following filters. Each one applies to different content locations.
 
-    - `Mailbox`: Specifies the mailboxes or OneDrive accounts that the role groups defined in the `Users` parameter can search. This filter allows members of the role group to search only the mailboxes or OneDrive accounts in a specific agency; for example, `"Mailbox_Department -eq 'FourthCoffee'"`.
+  - `Mailbox`: Specifies the mailboxes or OneDrive accounts that the role groups defined in the `Users` parameter can search. This filter allows members of the role group to search only the mailboxes or OneDrive accounts in a specific agency; for example, `"Mailbox_Department -eq 'FourthCoffee'"`.
 
-    - `Site_Path`: Specifies the SharePoint sites that the role groups defined in the  `Users` parameter can search. The  *SharePointURL*  specifies the sites in the agency that members of the role group can search. For example,  `"Site_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee*'"`. Notice the `Site` and `Site_Path` filters are connected by an **-or** operator.
+  - `Site_Path`: This filter includes two separate filters. The first one specifies the SharePoint sites in the agency that the role groups defined in the  `Users` parameter can search. For example, `Site_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee'`. The second `Site_Path` filter (connected to the first `Site_Path` filter by the `or` operator) specifies the agency's OneDrive domain (also called the *MySite* domain). For example, `Site_Path -like 'https://contoso-my.sharepoint.com/personal'`.
 
-     > [!NOTE]
-     > The syntax for the `Filters` parameter includes a *filters list*. A filters list is a filter that includes a mailbox filter and a site path filter separated by a comma. In the previous example, notice that a comma separates **Mailbox_MailboxPropertyName** and **Site_Path**: `-Filters "Mailbox_<MailboxPropertyName>  -eq '<Value> '", "Site_Path -like '<SharePointURL>*'"`. When this filter is processed during the running of a content search, two search permissions filters are created from the filters list: one mailbox filter and one SharePoint filter. An alternative to using a filters list would be to create two separate search permissions filters for each agency: one search permissions filter for the mailbox attribute and one filter for the SharePoint site attributes. In either case, the results will be the same. Using a filters list or creating separate search permissions filters is a matter of preference.
-
-- `Action`: Specifies the type of search action the filter is applied to. For example,  `-Action Search` would only apply the filter when members of the role group defined in the `Users` parameter run a search. In this case, the filter wouldn't be applied when exporting search results. For compliance boundaries, use  `-Action All` so the filter applies to all search actions. 
-
-    For a list of the search actions, see the "New-ComplianceSecurityFilter" section in [Configure permissions filtering for Content Search](permissions-filtering-for-content-search.md#new-compliancesecurityfilter).
+    > [!IMPORTANT]
+    > Why is the `Site_Path` filter for OneDrive included in the previous search permissions filter? Although the `Mailbox` filter specifies *both* mailboxes and OneDrive accounts, the inclusion of the SharePoint filter would exclude OneDrive accounts if you didn't also include the OneDrive filter. If the search permissions filter didn't include a SharePoint filter, then you wouldn't have to include a separate OneDrive filter because the Mailbox filter would include OneDrive accounts in the scope of the compliance boundary. In other words, a search permissions filter with only the `Mailbox_` filter would include both mailboxes and OneDrive accounts.
 
 Here are examples of the two search permissions filters that would be created to support the Contoso compliance boundaries scenario. Both of these examples include a comma-separated filters list, in which the mailbox and site filters are included in the same search permissions filter and are separated by a comma.
   
 ### Fourth Coffee
 
 ```powershell
-New-ComplianceSecurityFilter -FilterName "Fourth Coffee Security Filter" -Users "Fourth Coffee eDiscovery Managers", "Fourth Coffee Investigators" -Filters "Mailbox_Department -eq 'FourthCoffee'", "Site_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee*'" -Action ALL
+New-ComplianceSecurityFilter -FilterName "Fourth Coffee Security Filter" -Users "Fourth Coffee eDiscovery Managers", "Fourth Coffee Investigators" -Filters "Mailbox_Department -eq 'FourthCoffee'", "Site_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee' -or Site_Path -like 'https://contoso-my.sharepoint.com/personal'"
 ```
 
 ### Coho Winery
 
 ```powershell
-New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "Coho Winery eDiscovery Managers", "Coho Winery Investigators" -Filters "Mailbox_Department -eq 'CohoWinery'", "Site_Path -like 'https://contoso.sharepoint.com/sites/CohoWinery*'" -Action ALL
+New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "Coho Winery eDiscovery Managers", "Coho Winery Investigators" -Filters "Mailbox_Department -eq 'CohoWinery'", "Site_Path -like 'https://contoso.sharepoint.com/sites/CohoWinery' -or Site_Path -like 'https://contoso-my.sharepoint.com/personal'"
 ```
+
+> [!NOTE]
+> The syntax for the `Filters` parameters in the previous examples includes a *filters list*. A filters list is a filter that includes a mailbox filter and a site path filter separated by a comma. In the previous example, notice that a comma separates `Mailbox_` and `Site_Path` filters: `-Filters "Mailbox_<MailboxPropertyName>  -eq '<Value> '", "Site_Path -like '<SharePointURL>' -or Site_Path -like '<OneDriveURL>'"`. When this filter is processed during the running of an eDiscovery search, two search permissions filters are created from the filters list: one mailbox filter and one SharePoint/OneDrive filter. An alternative to using a filters list would be to create two separate search permissions filters for each agency: one search permissions filter for the mailbox attribute and one filter for the SharePoint and OneDrive site attributes. In either case, the results will be the same. Using a filters list or creating separate search permissions filters is a matter of preference.
 
 ## Step 4: Create an eDiscovery case for intra-agency investigations
 
@@ -205,11 +214,11 @@ Search permissions filters also let you control where content is routed for expo
 Here are examples of using the **Region** parameter when creating search permission filters for compliance boundaries. This assumes that the Fourth Coffee subsidiary is located in North America and that Coho Winery is in Europe. 
   
 ```powershell
-New-ComplianceSecurityFilter -FilterName "Fourth Coffee Security Filter" -Users "Fourth Coffee eDiscovery Managers", "Fourth Coffee Investigators" -Filters "Mailbox_Department -eq 'FourthCoffee'" -or Site_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee*'" -Action ALL -Region NAM
+New-ComplianceSecurityFilter -FilterName "Fourth Coffee Security Filter" -Users "Fourth Coffee eDiscovery Managers", "Fourth Coffee Investigators" -Filters "Mailbox_Department -eq 'FourthCoffee'", "Site_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee' -or Site_Path -like 'https://contoso-my.sharepoint.com/personal'" -Region NAM
 ```
 
 ```powershell
-New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "Coho Winery eDiscovery Managers", "Coho Winery Investigators" -Filters "Mailbox_Department -eq 'CohoWinery'" -or Site_Path -like 'https://contoso.sharepoint.com/sites/CohoWinery*'" -Action ALL -Region EUR
+New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "Coho Winery eDiscovery Managers", "Coho Winery Investigators" -Filters "Mailbox_Department -eq 'CohoWinery'", "Site_Path -like 'https://contoso.sharepoint.com/sites/CohoWinery' -or Site_Path -like 'https://contoso-my.sharepoint.com/personal'" -Region EUR
 ```
 
 Keep the following things in mind when searching and exporting content in multi-geo environments.
@@ -237,13 +246,13 @@ Keep the following things in mind when searching and exporting content in multi-
 Use the following syntax to create a search permissions filter for a SharePoint hub site:
 
 ```powershell
-New-ComplianceSecurityFilter -FilterName <Filter Name> -Users <User or Group> -Filters "Site_Departmentid -eq '{SiteId of hub site}'" -Action ALL
+New-ComplianceSecurityFilter -FilterName <Filter Name> -Users <User or Group> -Filters "Site_Departmentid -eq '{SiteId of hub site}'"
 ```
 
 Here's an example of creating a search permissions filter for a hub site for the Coho Winery agency:
 
 ```powershell
-New-ComplianceSecurityFilter -FilterName "Coho Winery Hub Site Security Filter" -Users "Coho Winery eDiscovery Managers", "Coho Winery Investigators" -Filters "Site_Departmentid -eq '44252d09-62c4-4913-9eb0-a2a8b8d7f863'" -Action ALL
+New-ComplianceSecurityFilter -FilterName "Coho Winery Hub Site Security Filter" -Users "Coho Winery eDiscovery Managers", "Coho Winery Investigators" -Filters "Site_Departmentid -eq '44252d09-62c4-4913-9eb0-a2a8b8d7f863'"
 ```
 
 ## Compliance boundary limitations
