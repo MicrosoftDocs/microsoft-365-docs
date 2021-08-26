@@ -44,21 +44,21 @@ Files in SharePoint and OneDrive for Business are protected by:
 
 - Versioning 
 
-  - Microsoft 365 retains a minimum of 500 versions of a file by default and can be configured to retain more. 
+   Microsoft 365 retains a minimum of 500 versions of a file by default and can be configured to retain more. 
 
-    To minimize the burden on your security and helpdesk staff, train your users on how to retrieve previous versions of files.
+   To minimize the burden on your security and helpdesk staff, train your users on how to retrieve previous versions of files.
 
 - Recycle bin
 
-  - If the ransomware creates a new encrypted copy of the file, and deletes the old file, customers have 93 days to restore it from the recycle bin. After 93 days, there is a 14-day window where Microsoft can still recover the data. 
+   If the ransomware creates a new encrypted copy of the file, and deletes the old file, customers have 93 days to restore it from the recycle bin. After 93 days, there is a 14-day window where Microsoft can still recover the data. 
   
-    To minimize the burden on your security and helpdesk staff, train your users on how to [restore files from the recycle bin](https://support.microsoft.com/en-us/office/restore-deleted-items-from-the-site-collection-recycle-bin-5fa924ee-16d7-487b-9a0a-021b9062d14b).
+   To minimize the burden on your security and helpdesk staff, train your users on how to [restore files from the recycle bin](https://support.microsoft.com/en-us/office/restore-deleted-items-from-the-site-collection-recycle-bin-5fa924ee-16d7-487b-9a0a-021b9062d14b).
 
 - Preservation Hold library
 
-  - Files stored in SharePoint or OneDrive sites can be retained by applying retention settings. When a document with versions is subject to retention settings, versions get copied to the Preservation Hold library and exist as a separate item. If a user suspects their files have been compromised, they can investigate file changes by reviewing the retained copy. File Restore can then be used to recover files within the last 30 days.
+   Files stored in SharePoint or OneDrive sites can be retained by applying retention settings. When a document with versions is subject to retention settings, versions get copied to the Preservation Hold library and exist as a separate item. If a user suspects their files have been compromised, they can investigate file changes by reviewing the retained copy. File Restore can then be used to recover files within the last 30 days.
 
-    To minimize the burden on your security and IT helpdesk staff, train your users on [retention for SharePoint and OneDrive](/microsoft-365/compliance/retention-policies-sharepoint).
+   To minimize the burden on your security and IT helpdesk staff, train your users on [retention for SharePoint and OneDrive](/microsoft-365/compliance/retention-policies-sharepoint).
 
 
 For OneDrive and SharePoint data, Microsoft can roll back to a previous point in time for up to 14 days if you are hit by a mass attack.
@@ -130,6 +130,7 @@ To protect your Microsoft 365 tenant from a ransomware attack, use these Microso
 | Attack surface reduction rules | Configuration settings to reduce your organization's vulnerability to cyberthreats and attacks. | Block suspicious activity and vulnerable content | E3 or E5 |
 | Exchange email settings |  Enables services to reduce your organization's vulnerability to an email-based attack. | Prevent initial access to your tenant through phishing and other email-based attacks  | E3 or E5 |
 | Windows, Edge, and Microsoft 365 Apps for Enterprise settings | Industry-standard security configurations that are broadly known and well-tested. | Prevent attacks through Windows, Edge, and Microsoft 365 Apps for Enterprise | E3 or E5 |
+|
 
 ### 2. Detection and response
 
@@ -141,6 +142,7 @@ To protect your Microsoft 365 tenant from a ransomware attack, use these Microso
 | [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint) | Helps prevent, detect, investigate, and respond to advanced threats across devices (also referred to as endpoints). | Malware installation | E5 |
 | [Azure AD Identity Protection](/azure/active-directory/identity-protection/) | Automates the detection and remediation of identity-based risks and investigate those risks. | Credential compromise for Azure AD accounts and privilege escalation | E5 |
 | [Microsoft Cloud App Security](/cloud-app-security) | A cloud access security broker for discovery, investigation, and governance. | Lateral movement and data exfiltration | E5 |
+|
 
 ### 3. Identities
 
@@ -148,6 +150,7 @@ To protect your Microsoft 365 tenant from a ransomware attack, use these Microso
 |:-------|:-----|:-------|:-------|
 |MFA enforced with Conditional Access|Require MFA based on the properties of the sign-in with Conditional Access policies.|Credential compromise and access|Microsoft 365 E3 or E5|
 |MFA enforced with risk-based Conditional Access|Require MFA based on the risk of the user sign-in with Azure AD Identity protection.|Credential compromise and access|Microsoft 365 E5 or E3 with Azure AD Premium P2 licenses|
+|
 
 ### 4. Devices
 
@@ -175,6 +178,7 @@ For Windows 10 devices:
 | Insider risk management | Define specific policies to identify risk indicators and to take action to mitigate these risks. | Identify, triage, and act on risky user activity. | E5 |
 | Privileged access management | Limits standing access to sensitive data or access to critical configuration settings | Prevent an attacker from performing administration tasks. | E5 |
 | Data loss prevention (DLP) | Protects sensitive data and reduces risk by preventing users from inappropriately sharing it. | Prevent data exfiltration. | E3 and E5 |
+|
 
 
 <!--
@@ -217,7 +221,7 @@ These features of information protection and compliance cannot provide protectio
 
 ## Impact on users and change management
 
-Deploying additional security features and policies to your Microsoft 365 tenant can impact your users. For example, you may impose a new security policy that requires users to create new teams for specific uses with a list of user accounts as members, instead of more easily creating a team for all users in the organization. This can help prevent a ransomware attacker from exploring teams that are not available from the attacker's compromised user account and targeting them in the attack.
+Deploying additional security features and requirements to your Microsoft 365 tenant can impact your users. For example, you may impose a new security policy that requires users to create new teams for specific uses with a list of user accounts as members, instead of more easily creating a team for all users in the organization. This can help prevent a ransomware attacker from exploring teams that are not available from the attacker's compromised user account and targeting them in the attack.
 
 This solution will identify when a new configuration or recommended security policy can impact your users so you can implement the required change management.
 
