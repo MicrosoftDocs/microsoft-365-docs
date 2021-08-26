@@ -221,9 +221,9 @@ The events that get automatically created can be confirmed by viewing them in th
 
 Create a flow that creates an event using the Microsoft 365 REST API:
 
-![Using Flow to create an event](../media/automate-event-driven-retention-flow-1.png)
+![Using Power Automate to create an event](../media/automate-event-driven-retention-flow-1.png)
 
-![Using flow to call the REST API](../media/automate-event-driven-retention-flow-2.png)
+![Using Power Automate to call the REST API](../media/automate-event-driven-retention-flow-2.png)
 
 #### Create an event
 

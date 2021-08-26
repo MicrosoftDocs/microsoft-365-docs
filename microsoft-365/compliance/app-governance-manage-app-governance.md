@@ -21,7 +21,7 @@ description: "Implement Microsoft app governance capabilities to govern your app
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
 > [!NOTE]
-> To sign up for app governance, see [Get started with app governance (in preview)](app-governance-get-started.md#sign-up-for-free-trial-of-app-governance).
+> To sign up for app governance, see [Get started with app governance (in preview)](app-governance-get-started.md).
 
 Cyberattacks have become increasingly sophisticated in the ways they exploit the apps you have deployed in your on-premises and cloud infrastructures, establishing a starting point for privilege escalation, lateral movement, and exfiltration of your data. To understand the potential risks and stop these types of attacks, you need to gain clear visibility into your organization’s app compliance posture to quickly identify when an app exhibits anomalous behaviors and to respond when these behaviors present risks to your environment, data, and users.
 
