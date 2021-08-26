@@ -103,7 +103,7 @@ A DLP policy can find and protect items that contain sensitive information acros
 
 |Location  |Include/Exclude scope  |data state  |additional pre-requisites |
 |---------|---------|---------|---------|
-|Exchange email online |distribution group | data-at-in-motion| no |
+|Exchange email online |distribution group | data-in-motion| no |
 |SharePoint online sites   |sites       | data-at-rest </br> data-in-use | no|
 |OneDrive for Business accounts| account or distribution group |data-at-rest </br> data-in-use|no|
 |Teams chat and channel messages     | account or distribution group |data-in-motion </br> data-in-use |  no       |
