@@ -96,3 +96,5 @@ Permanent assignment of the Search and Purge Role doesn't hold with the Zero Tru
 :::image type="content" source="../../media/pim-mdo-add-the-search-and-purge-role-assignment-to-this-pim-role.PNG" alt-text="If the user we added (Alex) through the Security Reader PIM role tries to delete a suspicious email he'll get a message saying 'You need the Search and Purge role to take action on this email. Contact your administrator to get the role assignment or add the email to an incident.":::
 
 Permanent assignment of the Search and Purge Role doesn't hold with the Zero Trust security initiative, but PIM can be used to grant just-in-time access here too.
+
+*Thanks to Ben Harris for access to the blog post and resources used for this content.*
