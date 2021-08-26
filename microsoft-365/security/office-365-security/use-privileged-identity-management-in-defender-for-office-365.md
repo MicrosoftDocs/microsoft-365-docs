@@ -97,4 +97,4 @@ Permanent assignment of the Search and Purge Role doesn't hold with the Zero Tru
 
 Permanent assignment of the Search and Purge Role doesn't hold with the Zero Trust security initiative, but PIM can be used to grant just-in-time access here too.
 
-*Thanks to Ben Harris for access to the blog post and resources used for this content.*
+*Our thanks to Customer Engineer Ben Harris for access to the blog post and resources used for this content.*
