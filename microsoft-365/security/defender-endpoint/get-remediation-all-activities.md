@@ -42,6 +42,12 @@ Returns information about all remediation activities.
 [Learn more about remediation activities](tvm-remediation.md).
 
 **URL:** GET: /api/remediationTasks
+<br>Supports [OData V4 queries](https://www.odata.org/documentation/).
+<br>OData supported operators:
+<br>```$filter``` on:  ```createdon``` and ```status``` properties.
+<br>```$top``` with max value of 10,000.
+<br>```$skip```.
+<br>See examples at [OData queries with Microsoft Defender for Endpoint](exposed-apis-odata-samples.md).
 
 ## Permissions
 
@@ -49,7 +55,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 Permission type|Permission|Permission display name
 :---|:---|:---
-Application|RemediationTask.Read.All|\'Read Threat and Vulnerability Management vulnerability information\'
+Application|RemediationTasks.Read.All|\'Read Threat and Vulnerability Management vulnerability information\'
 Delegated (work or school account)|RemediationTask.Read|\'Read Threat and Vulnerability Management vulnerability information\'
 
 ## Properties

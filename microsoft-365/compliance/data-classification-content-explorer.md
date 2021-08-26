@@ -52,6 +52,9 @@ In order to get access to the content explorer tab, an account must be assigned 
 > [!IMPORTANT]
 > Membership in these role groups does not allow you to view the list of items in content explorer or to view the contents of the items in content explorer.
 
+> [!IMPORTANT]
+> Only Global admins can manage or assign permissions to other users in the Compliance Center. For more details, see [Give users access to the Security & Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
+> 
 ### Required permissions to access items in content explorer
 
 Access to content explorer is highly restricted because it lets you read the contents of scanned files.
@@ -69,7 +72,7 @@ The account you use to access content explorer must be in one or both of the rol
 
 You can also assign either or both of the roles to a custom role group to tailor access to content explorer.
 
-A Global admin, Compliance admin, or Data admin can assign the necessary Content Explorer List Viewer, and Content Explorer Content Viewer role group membership.
+A Global admin, can assign the necessary Content Explorer List Viewer, and Content Explorer Content Viewer role group membership.
 
 ## Content explorer
 

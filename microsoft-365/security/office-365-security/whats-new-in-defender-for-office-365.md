@@ -34,22 +34,47 @@ ms.prod: m365-security
 This article lists new features in the latest release of Microsoft Defender for Office 365. Features that are currently in preview are denoted with **(preview)**.
 
 Learn more by watching [this video](https://www.youtube.com/watch?v=Tdz6KfruDGo&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=3).
+
 > [!TIP]
 > Don't have Microsoft Defender for Office 365 yet? [Contact sales to start a trial](https://info.microsoft.com/ww-landing-M365SMB-web-contact.html).
+
+## August 2021
+
+- [Admin review for reported messages](admin-review-reported-message.md): Admins can now send templated messages back to end users after they review reported messages. This can be customized for your organization and based on your admin's verdict as well. 
+=======
+## September 2021
+
+- [Quarantine policies](quarantine-policies.md): Admins can configure granular control for recipient access to quarantined messages and customize end-user spam notifications.
+  - [Video of admin experience](https://youtu.be/vnar4HowfpY)
+  - [Video of end-user experience](https://youtu.be/s-vozLO43rI)
+  - Other new capabilities coming to the quarantine experience are described in this blog post: [Simplifying the Quarantine experience](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/simplifying-the-quarantine-experience/ba-p/2676388).
+
+## August 2021
+
+- [Admin review for reported messages](admin-review-reported-message.md): Admins can now send templated messages back to end users after they review reported messages. The templates can be customized for your organization and based on your admin's verdict as well.
+- [Add allows in the Tenant Allow/Block List](manage-tenant-allows.md): You can now add allow entries to the Tenant Allow/Block List if the blocked message was submitted as part of the admin submission process. Depending on the nature of the block, the submitted URL, file, and/or sender allow will be added to the Tenant Allow/Block List. In most cases, the allows are added to give the system some time and allow it naturally if warranted. In some cases, Microsoft manages the allow for you.
 
 ## July 2021
 
 - [Email analysis improvements in automated investigations](email-analysis-investigations.md)
+- [Advanced Delivery](configure-advanced-delivery.md): Introducing a new capability for configuring the delivery of third-party phishing simulations to users and unfiltered messages to security operation mailboxes.
 - [Safe Links for Microsoft Teams](safe-links.md#safe-links-settings-for-microsoft-teams)
-
+- New alert policies for the following scenarios: compromised mailboxes, Forms phishing, malicious mails delivered due to overrides and rounding out ZAP
+  - Suspicious email forwarding activity
+  - User restricted from sharing forms and collecting responses
+  - Form blocked due to potential phishing attempt
+  - Form flagged and confirmed as phishing
+  - [New alert policies for ZAP](../../compliance/new-defender-alert-policies.md)
+- Microsoft Defender for Office 365 alerts are now integrated into Microsoft 365 Defender - [Microsoft 365 Defender Unified Alerts Queue and Unified Alerts Queue](../defender/investigate-alerts.md)
+- [User Tags](user-tags.md) are now integrated into Microsoft Defender for Office 365 alerting experiences, including: the alerts queue and details in Office 365 Security & Compliance, and scoping custom alert policies to user tags to create targeted alert policies. 
+  - Tags are also available in the unified alerts queue in the Microsoft 365 Defender center (Microsoft Defender for Office 365 Plan 2)
 
 ## June 2021
 
 - New first contact safety tip setting within anti-phishing policies. This safety tip is shown when recipients first receive an email from a sender or do not often receive email from a sender. For more information on this setting and how to configure it, see the following articles:
-
-- [First contact safety tip](set-up-anti-phishing-policies.md#first-contact-safety-tip)
-- [Configure anti-phishing policies in EOP](configure-anti-phishing-policies-eop.md)
-- [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-mdo-anti-phishing-policies.md)
+  - [First contact safety tip](set-up-anti-phishing-policies.md#first-contact-safety-tip)
+  - [Configure anti-phishing policies in EOP](configure-anti-phishing-policies-eop.md)
+  - [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-mdo-anti-phishing-policies.md)
 
 ## April/May 2021
 

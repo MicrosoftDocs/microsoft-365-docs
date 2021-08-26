@@ -1,7 +1,7 @@
 ---
 title: "Manage Microsoft 365 user accounts, licenses, and groups with PowerShell"
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 11/13/2020
 audience: ITPro

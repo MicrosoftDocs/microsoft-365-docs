@@ -42,6 +42,12 @@ Undo isolation of a device.
 
 [!include[Device actions note](../../includes/machineactionsnote.md)]
 
+> [!IMPORTANT]
+>
+> - Full isolation is available for devices on Windows 10, version 1703.
+> - Selective isolation is available for devices on Windows 10, version 1709 or later.
+> - When isolating a device, only certain processes and destinations are allowed. Therefore, devices that are behind a full VPN tunnel won't be able to reach the Microsoft Defender for Endpoint cloud service after the device is isolated. We recommend using a split-tunneling VPN for Microsoft Defender for Endpoint and Microsoft Defender Antivirus cloud-based protection-related traffic.
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md)
@@ -81,6 +87,8 @@ Comment|String|Comment to associate with the action. **Required**.
 ## Response
 
 If successful, this method returns 201 - Created response code and [Machine Action](machineaction.md) in the response body.
+
+If you send multiple API calls to remove isolation for the same device, it returns "pending machine action" or HTTP 400 with the message "Action is already in progress".
 
 ## Example
 
