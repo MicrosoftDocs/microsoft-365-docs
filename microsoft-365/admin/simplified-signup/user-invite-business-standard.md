@@ -1,5 +1,5 @@
 ---
-title: "Accept invite to Microsoft 365 Business Standard (User)"
+title: "Accept email invitation to Microsoft 365 Business Standard (User)"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -16,7 +16,7 @@ ms.custom:
 description: "Accept invite to join a Microsoft 365 Business Standard organization"
 ---
 
-# Accept an invitation to a Microsoft 365 Business Standard subscription (User)
+# Accept an email invitation to a Microsoft 365 Business Standard subscription (User)
 
 When someone adds you to a Microsoft 365 for business organization, you'll get an email invitation with steps on how to join. There are a couple of options when you join. In this scenario, you're joining an organization that has professional business email. All users have a shared domain email address. For example, username followed by @contoso.com.
 
