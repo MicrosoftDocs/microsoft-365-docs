@@ -12,7 +12,7 @@ ms.topic: conceptual
 f1_keywords:
 - 'ms.o365.cc.DLPLandingPage'
 ms.service: O365-seccomp
-localization_priority: low
+localization_priority: null
 ms.collection:
 - M365-security-compliance
 - SPO_Content
@@ -22,6 +22,8 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
+ROBOTS: NOINDEX, NOFOLLOW
+feedback_system: None
 description: data loss prevention reference material
 ---
 
