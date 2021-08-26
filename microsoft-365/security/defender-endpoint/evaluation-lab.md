@@ -43,7 +43,7 @@ You can add Windows 10 or Windows Server 2019 devices that come pre-configured t
 
 You can also install threat simulators. Defender for Endpoint has partnered with industry leading threat simulation platforms to help you test out the Defender for Endpoint capabilities without having to leave the portal.
 
- Install your preferred simulator, run scenarios within the evaluation lab, and instantly see how the platform performs - all conveniently available at no extra cost to you. You'll also have convenient access to wide array of simulations which you can access and run from the simulations catalog.
+Install your preferred simulator, run scenarios within the evaluation lab, and instantly see how the platform performs - all conveniently available at no extra cost to you. You'll also have convenient access to wide array of simulations which you can access and run from the simulations catalog.
 
 ## Before you begin
 
@@ -76,7 +76,7 @@ Already have a lab? Make sure to enable the new threat simulators and have activ
 
 ## Setup the evaluation lab
 
-1. In the navigation pane, select **Evaluation & tutorials** > **Evaluation lab**, then select **Setup lab**.
+1. In the navigation pane, select **Evaluation & tutorials** \> **Evaluation lab**, then select **Setup lab**.
 
     :::image type="content" source="../../media/evaluationtutormenu.png" alt-text="Image of evaluation lab welcome page.":::
 
@@ -88,8 +88,8 @@ Already have a lab? Make sure to enable the new threat simulators and have activ
 
     ![Image of install simulators agent.](images/install-agent.png)
 
-    >[!IMPORTANT]
-    >You'll first need to accept and provide consent to the terms and information sharing statements.
+   > [!IMPORTANT]
+   > You'll first need to accept and provide consent to the terms and information sharing statements.
 
 4. Select the threat simulation agent you'd like to use and enter your details. You can also choose to install threat simulators at a later time. If you choose to install threat simulation agents during the lab setup, you'll enjoy the benefit of having them conveniently installed on the devices you add.
 
@@ -134,13 +134,13 @@ Automated investigation settings will be dependent on tenant settings. It will b
 
     :::image type="content" source="../../media/add-machine-optionsnew.png" alt-text="lab setup with device options.":::
 
-    > [!NOTE]
-    > If something goes wrong with the device creation process, you'll be notified and you'll need to submit a new request. If the device creation fails, it will not be counted against the overall allowed quota.
+   > [!NOTE]
+   > If something goes wrong with the device creation process, you'll be notified and you'll need to submit a new request. If the device creation fails, it will not be counted against the overall allowed quota.
 
 3. The connection details are displayed. Select **Copy** to save the password for the device.
 
-    > [!NOTE]
-    > The password is only displayed once. Be sure to save it for later use.
+   > [!NOTE]
+   > The password is only displayed once. Be sure to save it for later use.
 
     :::image type="content" source="../../media/add-machine-eval-lab-new.png" alt-text="Image of device added with connection details.":::
 
@@ -150,8 +150,8 @@ Automated investigation settings will be dependent on tenant settings. It will b
 
     ![Image of devices tab.](images/machines-tab.png)
 
-    > [!TIP]
-    > In the **Simulator status** column, you can hover over the information icon to know the installation status of an agent.
+   > [!TIP]
+   > In the **Simulator status** column, you can hover over the information icon to know the installation status of an agent.
 
 ## Request for more devices
 
@@ -201,9 +201,11 @@ If you are looking for a pre-made simulation, you can use our ["Do It Yourself" 
 
     ![Image of remote desktop connection.](images/remote-connection.png)
 
-    >[!NOTE]
-    >If you don't have a copy of the password saved during the initial setup, you can reset the password by selecting **Reset password** from the menu:
-    > ![Image of reset password.](images/reset-password-test-machine.png)<br>
+    > [!NOTE]
+    > If you don't have a copy of the password saved during the initial setup, you can reset the password by selecting **Reset password** from the menu:
+    >
+    > ![Image of reset password.](images/reset-password-test-machine.png)
+    >
     > The device will change it's state to "Executing password reset", then you'll be presented with your new password in a few minutes.
 
 3. Enter the password that was displayed during the device creation step.
@@ -235,7 +237,7 @@ Running threat simulations using third-party platforms is a good way to evaluate
 
     You can get to the simulation gallery from:
     - The main evaluation dashboard in the **Simulations overview** tile or
-    - By navigating from the navigation pane **Evaluation and tutorials** > **Simulation & tutorials**, then select **Simulations catalog**.
+    - By navigating from the navigation pane **Evaluation and tutorials** \> **Simulation & tutorials**, then select **Simulations catalog**.
 
 4. Select the devices where you'd like to run the simulation on.
 
@@ -253,7 +255,7 @@ Hunt for attack evidence through advanced hunting by using the rich query langua
 
 Microsoft Defender for Endpoint has partnered with various threat simulation platforms to give you convenient access to test the capabilities of the platform right from the within the portal.
 
-View all the available simulations by going to  **Simulations and tutorials** > **Simulations catalog**  from the menu.
+View all the available simulations by going to  **Simulations and tutorials** \> **Simulations catalog**  from the menu.
 
 A list of supported third-party threat simulation agents are listed, and specific types of simulations along with detailed descriptions are provided on the catalog.
 
