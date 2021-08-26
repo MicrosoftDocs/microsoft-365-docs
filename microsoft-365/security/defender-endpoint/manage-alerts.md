@@ -35,7 +35,7 @@ You can manage alerts by selecting an alert in the **Alerts queue**, or the **Al
 
 Selecting an alert in either of those places brings up the **Alert management pane**.
 
-![Image of alert management pane and alerts queue](images/atp-alerts-selected.png)
+![Image of alert management pane and alerts queue.](images/atp-alerts-selected.png)
 
 ## Link to another incident
 You can create a new incident from the alert or link to an existing incident. 

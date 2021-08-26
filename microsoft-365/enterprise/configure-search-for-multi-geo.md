@@ -127,7 +127,7 @@ Some of the search features you might be familiar with, aren't supported in a mu
 
 All the search clients use the existing SharePoint Search REST APIs to interact with the search indexes.
 
-![Diagram showing how SharePoint Search REST APIs interact with the search indexes](../media/configure-search-for-multi-geo-image1-1.png)
+![Diagram showing how SharePoint Search REST APIs interact with the search indexes.](../media/configure-search-for-multi-geo-image1-1.png)
 
 1. A search client calls the Search REST endpoint with the query property EnableMultiGeoSearch= true.
 2. The query is sent to all geo locations in the tenant.
@@ -147,11 +147,11 @@ Each Search Center has several verticals and you have to set up each vertical in
 
 3. Select the vertical to set up, click **Settings** gear icon in the upper, right corner, and then click **Edit Page**. The search results page opens in Edit mode.
 
-   ![Edit page selection in Settings](../media/configure-search-for-multi-geo-image2.png)
+   ![Edit page selection in Settings.](../media/configure-search-for-multi-geo-image2.png)
 
 4. In the Search Results Web Part, move the pointer to the upper, right corner of the web part, click the arrow, and then click **Edit Web Part** on the menu. The Search Results Web Part tool pane opens under the ribbon in the top right of the page.
 
-   ![Edit Web Part selection](../media/configure-search-for-multi-geo-image3.png)
+   ![Edit Web Part selection.](../media/configure-search-for-multi-geo-image3.png)
 
 5. In the Web Part tool pane, in the **Settings** section, under **Results control settings**, select **Show Multi-Geo results** to get the Search Results Web Part to show results from all geo locations.
 

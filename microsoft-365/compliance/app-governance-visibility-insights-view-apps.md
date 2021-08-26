@@ -29,7 +29,7 @@ Microsoft app governance allows you to quickly gain deep insights into the Micro
 
 For a summary of apps in your tenant, go to **Microsoft 365 Compliance Center > App governance > Apps**.
 
-![The MAPG app summary page in the Microsoft 365 Compliance Center](..\media\manage-app-protection-governance\mapg-cc-apps.png)
+![The MAPG app summary page in the Microsoft 365 Compliance Center.](..\media\manage-app-protection-governance\mapg-cc-apps.png)
 
 >[!Note]
 > Your sign-in account must have one of [these roles](app-governance-get-started.md#administrator-roles) to view any app governance data.
@@ -62,7 +62,7 @@ You can also select **Search** to search for an app by name.
 
 For detailed information on a specific app in your tenant, go to **Microsoft 365 Compliance Center > App governance > Apps page > *app name***.
 
-![The app governance app details pane in the Microsoft 365 Compliance Center](..\media\manage-app-protection-governance\mapg-cc-apps-app.png)
+![The app governance app details pane in the Microsoft 365 Compliance Center.](..\media\manage-app-protection-governance\mapg-cc-apps-app.png)
 
 The app details pane provides additional information on these tabs:
 

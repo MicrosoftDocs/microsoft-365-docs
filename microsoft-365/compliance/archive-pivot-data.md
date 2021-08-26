@@ -24,7 +24,7 @@ After Pivot data is stored in user mailboxes, you can apply Microsoft 365 compli
 
 The following overview explains the process of using a connector to archive the Pivot data in Microsoft 365.
 
-![Archiving workflow for Pivot data](../media/PivotConnectorWorkflow.png)
+![Archiving workflow for Pivot data.](../media/PivotConnectorWorkflow.png)
 
 1. Your organization works with Pivot to set up and configure a Pivot source site.
 

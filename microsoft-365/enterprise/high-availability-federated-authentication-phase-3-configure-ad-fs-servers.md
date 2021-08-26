@@ -143,7 +143,7 @@ Here is the configuration resulting from the successful completion of this phase
   
 **Phase 3: The AD FS servers and internal load balancer for your high availability federated authentication infrastructure in Azure**
 
-![Phase 3 of the high availability Microsoft 365 federated authentication infrastructure in Azure with the AD FS servers](../media/f39b2d2f-8a5b-44da-b763-e1f943fcdbc4.png)
+![Phase 3 of the high availability Microsoft 365 federated authentication infrastructure in Azure with the AD FS servers.](../media/f39b2d2f-8a5b-44da-b763-e1f943fcdbc4.png)
   
 ## Next step
 

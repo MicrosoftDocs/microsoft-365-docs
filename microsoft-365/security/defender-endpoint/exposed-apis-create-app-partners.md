@@ -51,7 +51,7 @@ The following steps will guide you how to create an Azure AD application, get an
 
 2. Navigate to **Azure Active Directory** > **App registrations** > **New registration**. 
 
-   ![Image of Microsoft Azure and navigation to application registration](images/atp-azure-new-app2.png)
+   ![Image of Microsoft Azure and navigation to application registration.](images/atp-azure-new-app2.png)
 
 3. In the registration form:
 
@@ -61,7 +61,7 @@ The following steps will guide you how to create an Azure AD application, get an
 
    - Redirect URI - type: Web, URI: https://portal.azure.com
 
-   ![Image of Microsoft Azure partner application registration](images/atp-api-new-app-partner.png)
+   ![Image of Microsoft Azure partner application registration.](images/atp-api-new-app-partner.png)
 
 
 4. Allow your Application to access Microsoft Defender for Endpoint and assign it with the minimal set of permissions required to complete the integration.
@@ -70,7 +70,7 @@ The following steps will guide you how to create an Azure AD application, get an
 
    - **Note**: *WindowsDefenderATP* does not appear in the original list. Start writing its name in the text box to see it appear.
 
-   ![add permission](images/add-permission.png)
+   ![add permission.](images/add-permission.png)
    
    ### Request API permissions
 
@@ -84,14 +84,14 @@ The following steps will guide you how to create an Azure AD application, get an
 
    Choose **Application permissions** > **Alert.Read.All** > select on **Add permissions**
 
-   ![app permissions](images/application-permissions.png)
+   ![app permissions.](images/application-permissions.png)
 
 
 5. Select **Grant consent**
 
    - **Note**: Every time you add permission you must select on **Grant consent** for the new permission to take effect.
 
-   ![Image of Grant permissions](images/grant-consent.png)
+   ![Image of Grant permissions.](images/grant-consent.png)
 
 6. Add a secret to the application.
 
@@ -99,13 +99,13 @@ The following steps will guide you how to create an Azure AD application, get an
 
     **Important**: After click Add, **copy the generated secret value**. You won't be able to retrieve after you leave!
 
-    ![Image of create app key](images/webapp-create-key2.png)
+    ![Image of create app key.](images/webapp-create-key2.png)
 
 7. Write down your application ID:
 
    - On your application page, go to **Overview** and copy the following information:
 
-   ![Image of created app id](images/app-id.png)
+   ![Image of created app id.](images/app-id.png)
 
 8. Add the application to your customer's tenant.
 
@@ -123,7 +123,7 @@ The following steps will guide you how to create an Azure AD application, get an
 
    After clicking on the consent link, sign in with the Global Administrator of the customer's tenant and consent the application.
 
-   ![Image of consent](images/app-consent-partner.png)
+   ![Image of consent.](images/app-consent-partner.png)
 
    In addition, you will need to ask your customer for their tenant ID and save it for future use when acquiring the token.
 
@@ -222,7 +222,7 @@ Sanity check to make sure you got a correct token:
 - In the screenshot below, you can see a decoded token acquired from an Application with multiple permissions to  Microsoft Defender for Endpoint:
 - The "tid" claim is the tenant ID the token belongs to.
 
-![Image of token validation](images/webapp-decoded-token.png)
+![Image of token validation.](images/webapp-decoded-token.png)
 
 ## Use the token to access Microsoft Defender for Endpoint API
 

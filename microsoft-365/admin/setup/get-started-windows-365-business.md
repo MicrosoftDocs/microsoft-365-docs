@@ -33,7 +33,7 @@ This article is for people who plan to buy and set up Windows 365 Business for t
 > [!NOTE]  
 > Before starting, make sure that your [Azure AD device settings](/azure/active-directory/devices/device-management-azure-portal#configure-device-settings) for **Users may join devices to Azure AD** are set to **All**.
 
-   ![Users may join devices to Azure AD settings](../../media/deschutes/azure-device-settings.png)
+   ![Users may join devices to Azure AD settings.](../../media/deschutes/azure-device-settings.png)
 ## Prerequisites
 There are no licensing prerequisites to set up Windows 365 Business.
 
@@ -97,7 +97,7 @@ Users can navigate to **https://windows365.microsoft.com** to access their Cloud
 
 On their Windows 365 home page, users see the Cloud PCs they have access to in the **Your Cloud PCs** section.
 
-![Windows 365 home](../../media/deschutes/cloudpc-home.png)
+![Windows 365 home.](../../media/deschutes/cloudpc-home.png)
 
 Users can select **Open in browser** to open their Cloud PC.
 
@@ -108,7 +108,7 @@ Users can select **Open in browser** to open their Cloud PC.
 
 While on the Windows 365 home page, users can perform actions on their Cloud PCs by selecting the gear icon on a Cloud PC card.
 
-![Card menu](../../media/deschutes/cloudpc-gear.png)
+![Card menu.](../../media/deschutes/cloudpc-gear.png)
 
 - **Restart**: Restarts the Cloud PC.
 
@@ -144,7 +144,7 @@ To set up their Remote Desktop client, users follow these steps:
 1. On the **Windows 365 home page**, select the **Microsoft Remote Desktop apps** icon (under the home icon).
 2. On the **Microsoft Remote Desktop apps** page, download and install the Remote Desktop app you need.
 
-   ![Remote desktop clients](../../media/deschutes/remote-desktop-apps.png)
+   ![Remote desktop clients.](../../media/deschutes/remote-desktop-apps.png)
 
 For a list of clients by operating system, see [Remote Desktop clients](/windows-server/remote/remote-desktop-services/clients/remote-desktop-clients).
 

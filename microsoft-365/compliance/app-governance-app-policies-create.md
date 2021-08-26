@@ -164,7 +164,7 @@ Publish metadata-based policies
 
 Now that your app policy is created, you should monitor it on the **Policies** page to ensure it is registering an expected number of active alerts and total alerts during testing.
 
-![The MAPG policies summary page in the Microsoft 365 Compliance Center with a highlighted policy](..\media\manage-app-protection-governance\mapg-cc-policies-policy.png)
+![The MAPG policies summary page in the Microsoft 365 Compliance Center with a highlighted policy.](..\media\manage-app-protection-governance\mapg-cc-policies-policy.png)
 
 If the number of alerts is an unexpectedly low value, edit the settings of the app policy to ensure you've configured it correctly before setting its status.
 
@@ -175,7 +175,7 @@ Here is an example of a process for creating a new policy, testing it, and then 
 3. If the behavior is not expected, edit the policy apps, conditions, and action settings as needed and go back to step 2.
 4. If the behavior is expected, edit the policy and change its status to **Active**.
 
-![The create app policy workflow](../media/manage-app-protection-governance/mapg-create-new-policy-process.png)
+![The create app policy workflow.](../media/manage-app-protection-governance/mapg-create-new-policy-process.png)
 
 ## Next step
 

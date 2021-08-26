@@ -85,9 +85,9 @@ The color of the **Exposed devices** graph changes as the trend changes. If the 
 
 Useful icons also quickly call your attention to:
 
-- ![arrow hitting a target](images/tvm_alert_icon.png) possible active alerts
-- ![red bug](images/tvm_bug_icon.png) associated public exploits
-- ![light bulb](images/tvm_insight_icon.png) recommendation insights
+- ![arrow hitting a target.](images/tvm_alert_icon.png) possible active alerts
+- ![red bug.](images/tvm_bug_icon.png) associated public exploits
+- ![light bulb.](images/tvm_insight_icon.png) recommendation insights
 
 ### Explore security recommendation options
 

@@ -47,7 +47,7 @@ Check if network protection has been enabled on a local device by using Registry
    - 1, or **On**
    - 2, or **Audit** mode
 
-    ![Network Protection registry key](../../media/95341270-b738b280-08d3-11eb-84a0-16abb140c9fd.png)
+    ![Network Protection registry key.](../../media/95341270-b738b280-08d3-11eb-84a0-16abb140c9fd.png)
 
 ## Enable network protection
 
