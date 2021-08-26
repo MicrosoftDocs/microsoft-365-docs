@@ -91,7 +91,7 @@ Choose if to Generate an alert on the file block event and define the alerts set
 - Description
 - Recommended actions
 
-![Alert settings for file indicators](images/indicators-generate-alert.png)
+![Alert settings for file indicators.](images/indicators-generate-alert.png)
 
 > [!IMPORTANT]
 >

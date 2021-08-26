@@ -80,7 +80,7 @@ The **Configuration analyzer** page has three main tabs:
 
 By default, the configuration analyzer opens on the **Standard recommendations** tab. You can switch to the **Strict recommendations** tab. The settings, layout, and actions are the same on both tabs.
 
-![Settings and recommendations view in the Configuration analyzer](../../media/configuration-analyzer-settings-and-recommendations-view.png)
+![Settings and recommendations view in the Configuration analyzer.](../../media/configuration-analyzer-settings-and-recommendations-view.png)
 
 The first section of the tab displays the number of settings in each type of policy that need improvement as compared to Standard or Strict protection. The types of policies are:
 
@@ -143,4 +143,4 @@ To export the results to a .csv file, click **Export**.
 
 To filter the results by a specific **Modified by**, **Setting name**, or **Type** value, use the **Search** box.
 
-![Configuration drift analysis and history view in the Configuration analyzer](../../media/configuration-analyzer-configuration-drift-analysis-view.png)
+![Configuration drift analysis and history view in the Configuration analyzer.](../../media/configuration-analyzer-configuration-drift-analysis-view.png)

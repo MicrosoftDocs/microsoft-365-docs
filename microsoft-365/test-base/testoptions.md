@@ -20,7 +20,7 @@ f1.keywords: NOCSH
 
 The ```Test Options``` tab is for users who wish to perform functional tests to indicate when the Windows Update patch should be applied in the sequence of executing their functional test scripts.
 
-![Image of test options. Either out-of-box or functional tests](Media/testoptions.png)
+![Image of test options. Either out-of-box or functional tests.](Media/testoptions.png)
 
 Select _**Review**_ to navigate to the next tab and review your selected test options.
 

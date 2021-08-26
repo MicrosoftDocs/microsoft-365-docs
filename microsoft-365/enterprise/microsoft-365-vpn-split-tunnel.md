@@ -30,7 +30,7 @@ description: "Guidance for using VPN split tunneling with Office 365 to optimize
 
 For customers who connect their remote worker devices to the corporate network or cloud infrastructure over VPN, Microsoft recommends that the key Office 365 scenarios **Microsoft Teams**, **SharePoint Online**, and **Exchange Online** are routed over a _VPN split tunnel_ configuration. This becomes especially important as the first line strategy to facilitate continued employee productivity during large-scale work-from-home events such as the COVID-19 crisis.
 
-![Split Tunnel VPN configuration](../media/vpn-split-tunneling/vpn-model-2.png)
+![Split Tunnel VPN configuration.](../media/vpn-split-tunneling/vpn-model-2.png)
 
 _Figure 1: A VPN split tunnel solution with defined Office 365 exceptions sent directly to the service. All other traffic traverses the VPN tunnel regardless of destination._
 
@@ -63,7 +63,7 @@ For a step-by-step process to configure Microsoft 365 for remote workers, see [S
 
 Traditional corporate networks are often designed to work securely for a pre-cloud world where most important data, services, applications are hosted on premises and are directly connected to the internal corporate network, as are the majority of users. Thus network infrastructure is built around these elements in that branch offices are connected to the head office via _Multiprotocol Label Switching (MPLS)_ networks, and remote users must connect to the corporate network over a VPN to access both on premises endpoints and the Internet. In this model, all traffic from remote users traverses the corporate network and is routed to the cloud service through a common egress point.
 
-![Forced VPN configuration](../media/vpn-split-tunneling/vpn-model-1.png)
+![Forced VPN configuration.](../media/vpn-split-tunneling/vpn-model-1.png)
 
 _Figure 2: A common VPN solution for remote users where all traffic is forced back into the corporate network regardless of destination_
 
@@ -87,7 +87,7 @@ This tightly scoped set of endpoints can be split out of the forced VPN tunnel a
 
 Security elements such as DLP, AV protection, authentication, and access control can all be delivered much more efficiently against these endpoints at different layers within the service. As we also divert the bulk of the traffic volume away from the VPN solution, this frees the VPN capacity up for business critical traffic that still relies on it. It also should remove the need in many cases to go through a lengthy and costly upgrade program to deal with this new way of operating.
 
-![Split Tunnel VPN configuration details](../media/vpn-split-tunneling/vpn-split-tunnel-example.png)
+![Split Tunnel VPN configuration details.](../media/vpn-split-tunneling/vpn-split-tunnel-example.png)
 
 _Figure 3: A VPN split tunnel solution with defined Office 365 exceptions sent direct to the service. All other traffic is forced back into the corporate network regardless of destination._
 

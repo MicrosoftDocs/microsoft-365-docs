@@ -69,7 +69,7 @@ Communication compliance in Microsoft 365 offers several important features to h
 - Flexible remediation workflows
 - Actionable insights
 
-![Communication compliance home page](../media/communication-compliance-home.png)
+![Communication compliance home page.](../media/communication-compliance-home.png)
 
 ### Intelligent customizable templates
 
@@ -121,7 +121,7 @@ Communication compliance helps you address common pain points associated with co
 
 Identifying and resolving compliance issues with communication compliance in Microsoft 365 uses the following workflow:
 
-![Communication compliance workflow](../media/communication-compliance-workflow.png)
+![Communication compliance workflow.](../media/communication-compliance-workflow.png)
 
 ### Configure
 

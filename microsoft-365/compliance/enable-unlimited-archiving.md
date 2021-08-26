@@ -106,7 +106,7 @@ Keep the following things in mind after you enable auto-expanding archiving:
 
 - Similarly, the values for the  *ArchiveQuota*  and  *ArchiveWarningQuota*  mailbox properties aren't changed when you enable auto-expanding archiving. In fact, when you enable auto-expanding archiving for a user mailbox and the  *AutoExpandingArchiveEnabled*  property is set to  `True`, the  *ArchiveQuota*  and  *ArchiveWarningQuota*  properties are ignored. Here's an example of these mailbox properties after auto-expanding archiving is enabled for a user's mailbox. 
 
-    ![ArchiveQuota and ArchiveWarningQuota properties are ignored after you enable auto-expanding archiving](../media/6a1c1b69-5c4c-4267-aac8-53577667f03e.png)
+    ![ArchiveQuota and ArchiveWarningQuota properties are ignored after you enable auto-expanding archiving.](../media/6a1c1b69-5c4c-4267-aac8-53577667f03e.png)
 
 ## More information
 

@@ -25,7 +25,7 @@ description: "This article describes how to set up Advanced Audit so you can per
 
 If your organization has a subscription and end user licensing that supports Advanced Audit, perform the following steps to set up and use the additional capabilities in Advanced Audit.
 
-![Workflow to set up Advanced Audit](../media/AdvancedAuditWorkflow.png)
+![Workflow to set up Advanced Audit.](../media/AdvancedAuditWorkflow.png)
 
 ## Step 1: Set up Advanced Audit for users
 

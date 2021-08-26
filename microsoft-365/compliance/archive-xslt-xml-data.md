@@ -24,7 +24,7 @@ After XSLT/XML data is stored in user mailboxes, you can apply Microsoft 365 com
 
 The following overview explains the process of using a connector to archive XSLT/XML source data in Microsoft 365.
 
-![Archiving workflow for XSLT/XML data](../media/XSLT-XMLConnectorWorkflow.png)
+![Archiving workflow for XSLT/XML data.](../media/XSLT-XMLConnectorWorkflow.png)
 
 1. Your organization works with the XSLT/XML source to set up and configure an XSLT/XML site.
 

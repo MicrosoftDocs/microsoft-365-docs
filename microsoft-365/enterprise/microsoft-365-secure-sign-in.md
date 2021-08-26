@@ -45,7 +45,7 @@ For more information, see [Configure Azure AD password protection](/azure/active
 
 MFA requires that user sign-ins be subject to an additional verification beyond the user account password. Even if a malicious user determines a user account password, they must also be able to respond to an additional verification, such as a text message sent to a smartphone before access is granted.
 
-![The correct password plus an additional verification results in a successful sign-in](../media/empower-people-to-work-remotely/remote-workers-mfa.png)
+![The correct password plus an additional verification results in a successful sign-in.](../media/empower-people-to-work-remotely/remote-workers-mfa.png)
 
 Your first step in using MFA is to ***require it for all administrator accounts***, also known as privileged accounts.
 
