@@ -83,8 +83,7 @@ This section is used to ensure your environment is deeply understood by the stak
 
 ## Role-based access control
 
-Microsoft recommends using the concept of least privileges. Defender for Endpoint leverages built-in roles within Azure Active Directory. Microsoft recommends
-[review the different roles that are available](/azure/active-directory/active-directory-assign-admin-roles-azure-portal) and choose the right one to solve your needs for each persona for this application. Some roles may need to be applied temporarily and removed after the deployment has been completed.
+Microsoft recommends using the concept of least privileges. Defender for Endpoint leverages built-in roles within Azure Active Directory. Microsoft recommends [review the different roles that are available](/azure/active-directory/roles/permissions-reference) and choose the right one to solve your needs for each persona for this application. Some roles may need to be applied temporarily and removed after the deployment has been completed.
 
 <br>
 
@@ -97,7 +96,7 @@ Microsoft recommends using the concept of least privileges. Defender for Endpoin
 |Endpoint Administrator||||
 |Infrastructure Administrator||||
 |Business Owner/Stakeholder||||
-|||||
+|
 
 Microsoft recommends using [Privileged Identity Management](/azure/active-directory/active-directory-privileged-identity-management-configure) to manage your roles to provide additional auditing, control, and access review for users with directory permissions.
 
