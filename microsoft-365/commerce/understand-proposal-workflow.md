@@ -79,7 +79,7 @@ you automatically become the billing account owner, provided you:
 
 - Are the person named in the proposal\
     OR
-- Are already an [Azure Active Directory global admin](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) for your
+- Are already an [Azure Active Directory global admin](/azure/active-directory/roles/permissions-reference#global-administrator) for your
     organization
 
 ## What is the overall workflow?
