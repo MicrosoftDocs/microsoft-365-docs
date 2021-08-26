@@ -103,13 +103,13 @@ A DLP policy can find and protect items that contain sensitive information acros
 
 |Location  |Include/Exclude scope  |data state  |additional pre-requisites |
 |---------|---------|---------|---------|
-|Exchange email online |distribution group | - data-at-in-motion| no |
-|SharePoint online sites   |sites       | - data-at-rest </br> - data-in-use | no|
-|OneDrive for Business accounts| account or distribution group |- data-at-rest </br> - data-in-use|no|
-|Teams chat and channel messages     | account or distribution group |- data-in-motion </br> data-in-use |  no       |
-|Microsoft Cloud App Security (MCAS)   | cloud app instance       |- data-at-rest         | - [Use data loss prevention policies for non-Microsoft cloud apps](dlp-use-policies-non-microsoft-cloud-apps.md#use-data-loss-prevention-policies-for-non-microsoft-cloud-apps)        |
-|Devices  |user or group         |-data-at-rest </br> - data-in-use </br> - data-in-motion         |- [Learn about Microsoft 365 Endpoint data loss prevention](endpoint-dlp-learn-about.md#learn-about-microsoft-365-endpoint-data-loss-prevention) </br> [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md#get-started-with-endpoint-data-loss-prevention) </br> [Configure device proxy and internet connection settings for Endpoint DLP](endpoint-dlp-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-endpoint-dlp)        |
-|On-premises repositories (file shares and SharePoint)    |repository         |- data-at-rest         | - [Learn about the Microsoft 365 data loss prevention on-premises scanner](dlp-on-premises-scanner-learn.md#learn-about-the-microsoft-365-data-loss-prevention-on-premises-scanner) </br> - [Get started with the data loss prevention on-premises scanner](dlp-on-premises-scanner-get-started.md#get-started-with-the-data-loss-prevention-on-premises-scanner)         |
+|Exchange email online |distribution group | data-at-in-motion| no |
+|SharePoint online sites   |sites       | data-at-rest </br> data-in-use | no|
+|OneDrive for Business accounts| account or distribution group |data-at-rest </br> data-in-use|no|
+|Teams chat and channel messages     | account or distribution group |data-in-motion </br> data-in-use |  no       |
+|Microsoft Cloud App Security (MCAS)   | cloud app instance       |data-at-rest         | - [Use data loss prevention policies for non-Microsoft cloud apps](dlp-use-policies-non-microsoft-cloud-apps.md#use-data-loss-prevention-policies-for-non-microsoft-cloud-apps)        |
+|Devices  |user or group         |data-at-rest </br>  data-in-use </br>  data-in-motion         |- [Learn about Microsoft 365 Endpoint data loss prevention](endpoint-dlp-learn-about.md#learn-about-microsoft-365-endpoint-data-loss-prevention) </br> [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md#get-started-with-endpoint-data-loss-prevention) </br> [Configure device proxy and internet connection settings for Endpoint DLP](endpoint-dlp-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-endpoint-dlp)        |
+|On-premises repositories (file shares and SharePoint)    |repository         | data-at-rest         | - [Learn about the Microsoft 365 data loss prevention on-premises scanner](dlp-on-premises-scanner-learn.md#learn-about-the-microsoft-365-data-loss-prevention-on-premises-scanner) </br> - [Get started with the data loss prevention on-premises scanner](dlp-on-premises-scanner-get-started.md#get-started-with-the-data-loss-prevention-on-premises-scanner)         |
 
 If you choose to include specific distribution groups in Exchange, the DLP policy will be scoped only to the members of that group. Similarly excluding a distribution group will exclude all the members of that distribution group from policy evaluation. You can choose to scope a policy to the members of distribution lists, dynamic distribution groups, and security groups. A DLP policy can contain no more than 50 such inclusions and exclusions.
 
