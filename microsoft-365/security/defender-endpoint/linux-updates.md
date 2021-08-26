@@ -1,8 +1,8 @@
 ---
-title: Deploy updates for Microsoft Defender ATP for Linux
+title: Deploy updates for Microsoft Defender for Endpoint on Linux
 ms.reviewer: 
-description: Describes how to deploy updates for Microsoft Defender ATP for Linux in enterprise environments.
-keywords: microsoft, defender, atp, linux, updates, deploy
+description: Describes how to deploy updates for Microsoft Defender for Endpoint on Linux in enterprise environments.
+keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, updates, deploy
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -30,17 +30,21 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 Microsoft regularly publishes software updates to improve performance, security, and to deliver new features.
 
 > [!WARNING]
-> Each version of Defender for Endpoint for Linux has an expiration date, after which it will no longer continue to protect your device. You must update the product prior to this date. To check the expiration date, run the following command:
+> Each version of Defender for Endpoint on Linux has an expiration date, after which it will no longer continue to protect your device. You must update the product prior to this date. To check the expiration date, run the following command:
 > ```bash
 > mdatp health --field product_expiration
 > ```
 
-To update Defender for Endpoint for Linux manually, execute one of the following commands:
+
+Generally available Microsoft Defender for Endpoint capabilities are equivalent regardless update channel used for a deployment (Beta (Insider), Preview (External), Current (Production)).
+
+
+To update Defender for Endpoint on Linux manually, execute one of the following commands:
 
 ## RHEL and variants (CentOS and Oracle Linux)
 

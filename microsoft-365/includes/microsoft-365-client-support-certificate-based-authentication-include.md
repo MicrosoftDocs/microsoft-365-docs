@@ -6,15 +6,13 @@
 |AZURE ADMIN|N/A|N/A|N/A|N/A|N/A|
 |COMPANY PORTAL|✔|✔|✔|N/A|✔|
 |CORTANA|N/A|N/A|N/A|N/A|✔|
-|DELVE|✔|✔|N/A|N/A|N/A|
-|EDGE|✔|✔|N/A|✔|N/A|
 |EXCEL|✔|✔|✔|✔|✔|
 |EXCHANGE ADMIN|N/A|N/A|N/A|✔|N/A|
 |FORMS|N/A|N/A|N/A|N/A|N/A|
 |KAIZALA|✔|✔|N/A|N/A|N/A|
 |MICROSOFT ROOMS|Planned|Planned|N/A|N/A|N/A|
 |OFFICE 365 ADMIN|✔|N/A|N/A|N/A|N/A|
-|OFFICE LENS|✔|✔|N/A|N/A|✔|
+|OFFICE LENS|✔|✔|N/A|N/A|N/A|
 |OFFICE MOBILE|✔|✔|N/A|N/A|N/A|
 |OFFICE.COM|N/A|N/A|N/A|N/A|✔|
 |ONEDRIVE|✔|✔|✔|✔|✔|
@@ -34,10 +32,10 @@
 |STICKY NOTES|N/A|N/A|N/A|N/A|✔|
 |STREAM|✔|✔|N/A|N/A|N/A|
 |SWAY|N/A|N/A|N/A|N/A|✔|
-|TEAMS|✔|✔|✔|Planned|N/A|
+|TEAMS|✔|✔|✔|✔|N/A|
 |TO-DO|✔|✔|✔|N/A|✔|
 |VISIO|N/A|✔|N/A|✔|N/A|
-|WHITEBOARD|N/A|Planned|N/A|N/A|✔|
+|WHITEBOARD|✔|✔|N/A|N/A|✔|
 |WORD|✔|✔|✔|✔|✔|
 |WORKPLACE ANALYTICS|N/A|N/A|N/A|N/A|N/A|
 |YAMMER|✔|✔|Planned|Planned|N/A|

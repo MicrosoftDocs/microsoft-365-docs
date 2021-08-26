@@ -1,7 +1,7 @@
 ---
 title: Set the time zone for Microsoft 365 Defender features
 description: Learn how to choose the time zone for date and time information associated with incidents, automated investigation and remediation, and advanced hunting
-keywords: time zone, date, time, MTP, Microsoft Threat Protection, M365, security, incidents, automated investigation and response, AIR, advanced hunting
+keywords: time zone, date, time, Microsoft 365 Defender, M365, security, incidents, automated investigation and response, AIR, advanced hunting
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -32,7 +32,7 @@ ms.technology: m365d
 
 
 
-Microsoft 365 Defender can display date and time information using either your local time zone or UTC. The selected time zone will apply to all date and time information shown in the following features in the Microsoft 365 security center:
+Microsoft 365 Defender can display date and time information using either your local time zone or UTC. The selected time zone will apply to all date and time information shown in the following features in the Microsoft 365 Defender portal:
 - Incidents
 - Automated investigation and remediation, including the action center
 - Advanced hunting

@@ -174,7 +174,7 @@ To label an item in the Outlook desktop client, select the item. On the **Home**
   
 ![Assign Policy button](../media/30684dea-dd73-4e4a-9185-8e29f403b6ca.png)
   
-You can also right-click an item, click **Assign Policy** in the context menu, and then choose the retention label. 
+You can also right-click an item, click **Assign Policy** in the context menu, and then choose the retention label. When you select multiple items, you can use this method to assign the same retention label to multiple items at once.
 
 After the retention label is applied, you can view that retention label and what action it takes at the top of the item. If an email has a retention label applied that has an associated retention period, you can see at a glance when the email expires.
 
@@ -200,7 +200,7 @@ When labels are applied that aren't standard retention labels but mark items as 
 
 #### Applying retention labels in Outlook on the web
 
-To label an item in Outlook on the web, right-click the item \> **Assign policy** \> choose the retention label. 
+To label an item in Outlook on the web, right-click the item \> **Assign policy** \> choose the retention label. Unlike Outlook desktop, you can't use this method if you multi-select items.
   
 ![Assign policy menu in Outlook on the web](../media/146a23cf-e478-4595-b2e8-f707fc4e6ea3.png)
   
@@ -289,7 +289,7 @@ Some settings can't be changed after the label or policy is created and saved, w
 
 ### Deleting retention labels
 
-You can delete retention labels that aren't currently included in any retention label policies, that aren't configured for event-based retention, or mark items as regulatory records. The ability to delete retention labels that mark items as records is currently rolling out in preview.
+You can delete retention labels that aren't currently included in any retention label policies, that aren't configured for event-based retention, or mark items as regulatory records.
 
 For retention labels that you can delete, if they have been applied to items, the deletion fails and you see a link to content explorer to identify the labeled items.
 

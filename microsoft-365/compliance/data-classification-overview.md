@@ -1,5 +1,5 @@
 ---
-title: "Get started with data classification"
+title: "Learn about data classification"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -20,7 +20,7 @@ search.appverid:
 description: "The data classification dashboard gives you visibility into how much sensitive data has been found and classified in your organization."
 ---
 
-# Know your data - data classification overview
+# Learn about data classification
 
 As a Microsoft 365 administrator or compliance administrator, you can evaluate and then tag content in your organization in order to control where it goes, protect it no matter where it is and to ensure that it is preserved and deleted according to your organizations needs. You do this through the application of [sensitivity labels](sensitivity-labels.md), [retention labels](retention.md#retention-labels), and sensitive information type classification. There are various ways to do the discovery, evaluation and tagging, but the end result is that you may have very large number of documents and emails that are tagged and classified with one or both of these labels. After you apply your retention labels and sensitivity labels, you'll want to see how the labels are being used across your tenant and what is being done with those items. The data classification page provides visibility into that body of content, specifically:
 
@@ -31,8 +31,12 @@ As a Microsoft 365 administrator or compliance administrator, you can evaluate a
 - the locations of your sensitive and retained data
 
 You also manage these features on the data classification page:
+
 - [trainable classifiers](classifier-learn-about.md)
-- [sensitive information types](./sensitive-information-type-entity-definitions.md)
+- [sensitive information types](sensitive-information-type-learn-about.md)
+- [exact data matches](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
+- [content explorer](data-classification-content-explorer.md)
+- [activity explorer](data-classification-activity-explorer.md)
 
 You can find data classification in the **Microsoft 365 compliance center** or **Microsoft 365 security center** > **Classification** > **Data Classification**.
 
@@ -44,8 +48,6 @@ Data classification will scan your sensitive content and labeled content before 
 
 ## Prerequisites
 
-A number of different subscriptions support Endpoint DLP. To see licensing options for Endpoint DLP see [Information Protection licensing for guidance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection). 
-
 ### Permissions
 
  In order to get access to the data classification page, an account must be assigned membership in any one of these roles or role groups.
@@ -56,6 +58,9 @@ A number of different subscriptions support Endpoint DLP. To see licensing optio
 - Compliance administrator
 - Security administrator
 - Compliance data administrator
+
+> [!NOTE]
+> As a best practice, always use the role with least privilege to grant access to Microsoft 365 data classification.
 
 ## Sensitive information types used most in your content
 
@@ -70,7 +75,7 @@ To find out how many items are in any given classification category, hover over 
 ![top sensitive information types hover detail](../media/data-classification-sens-info-types-hover.png)
 
 > [!NOTE]
-> If the card displays the message "No data found with sensitive information". It means that there are no items in your organization that have been classified as being a sensitive information type or no items that have been crawled. To get started with labels, see:
+> If the card displays the message "No data found with sensitive information", it means that there are no items in your organization that have been classified as being a sensitive information type or no items that have been crawled. To get started with labels, see:
 >- [Get started with sensitivity labels](get-started-with-sensitivity-labels.md)
 >- [Get started with retention policies and retention labels](get-started-with-retention.md)
 >- [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)
@@ -79,8 +84,8 @@ To find out how many items are in any given classification category, hover over 
 
 When you apply a sensitivity label to an item either through Microsoft 365 or Azure Information Protection (AIP), two things happen:
 
-- a tag that indicates the value of the item to your org is embedded in the document and will follow it everywhere it goes
-- the presence of the tag enables various protective behaviors, such as mandatory watermarking or encryption. With end point protection enabled you can even prevent an item from leaving your organizational control.
+- A tag that indicates the value of the item to your org is embedded in the document and will follow it everywhere it goes.
+- The presence of the tag enables various protective behaviors, such as mandatory watermarking or encryption. With end point protection enabled you can even prevent an item from leaving your organizational control.
 
 For more information on sensitivity labels, see: [Learn about sensitivity labels](sensitivity-labels.md)
 
@@ -96,7 +101,7 @@ The sensitivity label card shows the number of items (email or document) by sens
 
 ## Top retention labels applied to content
 
-Retention labels are used to manage the retention and disposition of content in your organization. When applied, they can be used to control how an item will be kept before deletion, whether it should be reviewed prior to deletion, when its retention period expires, and whether it should be marked as a record. For more information, see [Learn about retention policies and retention labels](retention.md).
+Retention labels are used to manage the retention and disposition of content in your organization. When applied, they can be used to control how long an item will be kept before deletion, whether it should be reviewed prior to deletion, when its retention period expires, and whether it should be marked as a record. For more information, see [Learn about retention policies and retention labels](retention.md).
 
 The top applied retention labels card shows you how many items have a given retention label.
 
@@ -108,7 +113,7 @@ The top applied retention labels card shows you how many items have a given rete
 
 ## Top activities detected
 
-This card provides a quick summary of the most common actions that users are taking on the sensitivity labeled items. You can use the [Activity explorer](data-classification-activity-explorer.md) to drill deep down on eight different activities that Microsoft 365 tracks on labeled content and content that is located on Windows 10 endpoints.
+This card provides a quick summary of the most common actions that users are taking on the sensitivity labeled items. You can use the [Activity explorer](data-classification-activity-explorer.md) to drill deep down on the different activities that Microsoft 365 tracks on labeled content and content that is located on Windows 10 endpoints.
 
 > [!NOTE]
 > If this card displays the message, "No activity detected" it means that there's been no activity on the files or that user and admin auditing isn't turned on. To turn the audit logs on , see:
@@ -122,11 +127,32 @@ The point of the data classification reporting is to provide visibility into the
 > If this card displays the message, "No locations detected, it means you haven't created or published any sensitivity labels or no content has had a retention label applied. To get started with sensitivity labels, see:
 >- [Sensitivity labels](sensitivity-labels.md)
 
+## Public preview release notes 
+
+> [!NOTE]
+> **Exchange mailbox count**:
+>You will notice a small tool tip appear when you drill into Exchange mailboxes. This is to call out the fact that the aggregate count displayed for sensitive information type, sensitivity label and retention label may not exactly match the number of items that you will find inside the mailbox. This is because the drill-down into the folder fetches the live view of content, which is classified, while the aggregated count is calculated.Information the user should notice even if skimming
+
+> [!NOTE]
+> **Rendering of encrypted documents**:
+>SharePoint, Exchange, and OneDrive files that are encrypted don't render in the content explorer. This is a sensitive issue that requires a balance between the need to see file contents in content explorer and the need to keep the contents encrypted. With the permissions granted by **Content Explorer List Viewer**, and **Content Explorer Content Viewer** role groups, you will see a list view of the files, the file  metadata, and a link you can use to access the content via the web client.Information the user should notice even if skimming
+
+> [!NOTE]
+> **Supported characters in retention label names in SharePoint search**:
+>SharePoint search doesn't support retention label names with `-`, or `_` in them. For example, `Label-MIP` and `Label_MIP` aren't supported. SharePoint search does support those characters in sensitivity label names and sensitive information type names.
+
+> [!NOTE]
+> **OneDrive remains in preview**:
+>Thanks for your valuable feedback on OneDrive integration during our preview program. As we work through the specifics, you may run into inconsistent data / flows. We'll continue to showcase OneDrive in preview until all fixes are in place. We appreciate your continued support.
+
 ## See also
 
 - [View label activity](data-classification-activity-explorer.md)
 - [View labeled content](data-classification-content-explorer.md)
 - [Learn about sensitivity labels](sensitivity-labels.md)
 - [Learn about retention policies and retention labels](retention.md)
+- [Learn about sensitive information types](sensitive-information-type-learn-about.md)
 - [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)
 - [Learn about trainable classifiers (preview)](classifier-learn-about.md)
+
+To learn how to use data classification to comply with data privacy regulations, see [Deploy information protection for data privacy regulations with Microsoft 365](../solutions/information-protection-deploy.md)  (aka.ms/m365dataprivacy).

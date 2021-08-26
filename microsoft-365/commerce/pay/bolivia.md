@@ -1,14 +1,15 @@
 ---
 title: Payment information for Bolivia
-author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.collection: Adm_Commerce_Pay
+ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Learn where to send the payment for your subscription.
 ROBOTS: NOINDEX, NOFOLLOW
@@ -26,4 +27,4 @@ Please pay in USD only and reference your invoice number(s) on your invoice remi
 **Branch:** Dallas  
 **SWIFT Code:** BOFAUS3N  
 **Account Number:** 4426587954  
-**Account Name:** Microsoft  
+**Account Name:** Microsoft

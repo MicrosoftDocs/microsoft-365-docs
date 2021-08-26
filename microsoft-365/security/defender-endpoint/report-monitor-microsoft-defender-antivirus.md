@@ -15,6 +15,7 @@ ms.date: 12/07/2020
 ms.reviewer: 
 manager: dansimp
 ms.technology: mde
+ms.topic: article
 ---
 
 # Report on Microsoft Defender Antivirus

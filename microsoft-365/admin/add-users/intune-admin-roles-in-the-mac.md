@@ -15,16 +15,18 @@ ms.collection:
 - Adm_TOC
 ms.custom: 
 - AdminSurgePortfolio
+- AdminTemplateSet
+- admindeeplinkMAC
 description: "Admin roles map to business functions and give permissions to do specific tasks in the admin center. For example, the Service admin opens support tickets with Microsoft."
 ---
 
 # Intune admin roles in the Microsoft 365 admin center
 
-Your Microsoft 365 or Office 365 subscription comes with a set of admin roles that you can assign to users in your organization using the Microsoft 365 admin center. Each admin role maps to common business functions and gives people in your organization permissions to do specific tasks in the admin centers.
+Your Microsoft 365 or Office 365 subscription comes with a set of admin roles that you can assign to users in your organization using the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>. Each admin role maps to common business functions and gives people in your organization permissions to do specific tasks in the admin centers.
 
 The Microsoft 365 admin center lets you manage some Microsoft Intune roles. However, these roles are a subset of the roles available in the Intune admin center. Looking for the detailed role descriptions for Microsoft Intune? Check out [Role-based access control (RBAC) with Microsoft Intune](/mem/intune/fundamentals/role-based-access-control).
 
-For more information on assigning roles in the Microsoft 365 admin center, see [Assign admin roles](assign-admin-roles.md).
+For more information on assigning roles in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2097861" target="_blank">Microsoft 365 admin center</a>, see [Assign admin roles](assign-admin-roles.md).
 
 In the Microsoft 365 admin center, you can go to **Roles**, and then select any role to open its detail pane. Select the **Permissions** tab to view the detailed list of what admins assigned that role have permissions to do. Select the **Assigned** or **Assigned admins** tab to add users to roles.
 
@@ -51,10 +53,8 @@ A partner can assign these roles:
 
 Before the partner can assign these roles to users, you must add the partner as a delegated admin to your account. This process is initiated by an authorized partner. The partner sends you an email to ask you if you want to give them permission to act as a delegated admin. For instructions, see [Authorize or remove partner relationships](../misc/add-partner.md).
   
-## Related articles
+## Related content
 
-[About Microsoft 365 admin roles](about-admin-roles.md)
-
-[Assign admin roles](assign-admin-roles.md)
-
-[Activity reports in the Microsoft 365 admin center](../activity-reports/activity-reports.md)
+[About Microsoft 365 admin roles](about-admin-roles.md) (article)\
+[Assign admin roles](assign-admin-roles.md) (article)\
+[Activity reports in the Microsoft 365 admin center](../activity-reports/activity-reports.md) (article)
