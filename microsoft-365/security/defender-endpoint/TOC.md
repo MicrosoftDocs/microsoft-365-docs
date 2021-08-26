@@ -256,6 +256,7 @@
 #### [Evaluate Microsoft Defender Antivirus](evaluate-microsoft-defender-antivirus.md)
 #### [Configure Microsoft Defender Antivirus features](configure-microsoft-defender-antivirus-features.md)
 #### [Cloud protection and Microsoft Defender Antivirus](cloud-protection-microsoft-defender-antivirus.md)
+##### [Why cloud protection should be on](why-cloud-protection-should-be-on-mdav.md)
 ##### [Turn on cloud protection](enable-cloud-protection-microsoft-defender-antivirus.md)
 ##### [Specify the cloud protection level](specify-cloud-protection-level-microsoft-defender-antivirus.md)
 ##### [Cloud protection and sample submission](cloud-protection-microsoft-antivirus-sample-submission.md)
