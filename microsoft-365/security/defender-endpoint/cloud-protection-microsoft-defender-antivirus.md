@@ -43,13 +43,7 @@ Microsoft Defender Antivirus cloud protection helps protect against malware on y
 | Attack surface reduction rules | Attack surface reduction is all about reducing the places and ways your organization's endpoints are vulnerable to a cyber attack. Attack surface reduction rules are intelligent rules that you can configure to  help stop malware. <br/><br/>To learn more, see [Use attack surface reduction rules to prevent malware infection](attack-surface-reduction.md).  |
 | Indicators of compromise (IoCs)  | IoCs in Defender for Endpoint can be configured to define the detection, prevention, and exclusion of entities. For example, "allow" indicators can be used to define exceptions to Microsoft Defender Antivirus scans and remediation actions in Defender for Endpoint. As another example, "alert and block" indicators can be used to prevent files or processes from executing, and to track these activities with alerts that are viewable in the Microsoft 365 Defender portal. <br/><br/>To learn more, see [Create indicators](manage-indicators.md).    |
 
-## How to get cloud protection 
-
-Cloud protection is enabled by default. However, you might need to re-enable it if it has been disabled as part of previous organizational policies. To learn more, see [Turn on cloud protection](enable-cloud-protection-microsoft-defender-antivirus.md).
-
-If your subscription includes Windows 10 E5, you can take advantage of emergency dynamic intelligence updates, which provide near real-time protection from emerging threats. When you turn on cloud protection, fixes for malware issues can be delivered via the cloud within minutes, instead of waiting for the next update. See [Configure Microsoft Defender Antivirus to automatically receive new protection updates based on reports from our cloud service](manage-event-based-updates-microsoft-defender-antivirus.md#cloud-report-updates).
-
-## More on how cloud protection works
+## How cloud protection works
 
 Microsoft Defender Antivirus works seamlessly with Microsoft cloud services. These cloud protection services, also referred to as Microsoft Advanced Protection Service (MAPS), enhance standard real-time protection. With cloud protection, next-generation technologies provide rapid identification of new threats, sometimes even before a single endpoint is infected. 
 
@@ -66,6 +60,12 @@ The following blog posts illustrate how cloud protection works:
 - [Detonating a bad rabbit: Microsoft Defender Antivirus and layered machine learning defenses](https://www.microsoft.com/security/blog/2017/12/11/detonating-a-bad-rabbit-windows-defender-antivirus-and-layered-machine-learning-defenses)
 
 - [Microsoft Defender Antivirus cloud protection service: Advanced real-time defense against never-before-seen malware](https://www.microsoft.com/security/blog/2017/07/18/windows-defender-antivirus-cloud-protection-service-advanced-real-time-defense-against-never-before-seen-malware) 
+
+## How to get cloud protection 
+
+Cloud protection is enabled by default. However, you might need to re-enable it if it has been disabled as part of previous organizational policies. To learn more, see [Turn on cloud protection](enable-cloud-protection-microsoft-defender-antivirus.md).
+
+If your subscription includes Windows 10 E5, you can take advantage of emergency dynamic intelligence updates, which provide near real-time protection from emerging threats. When you turn on cloud protection, fixes for malware issues can be delivered via the cloud within minutes, instead of waiting for the next update. See [Configure Microsoft Defender Antivirus to automatically receive new protection updates based on reports from our cloud service](manage-event-based-updates-microsoft-defender-antivirus.md#cloud-report-updates).
 
 ## Next steps
 
