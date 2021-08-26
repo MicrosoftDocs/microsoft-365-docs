@@ -61,6 +61,17 @@ In our example, the MpCmdRun utility starts a full antivirus scan on the device.
 |`-RemoveDynamicSignature [-SignatureSetID]`|Removes dynamic Security intelligence|
 |`-CheckExclusion -path <path>`|Checks whether a path is excluded|
 |`-ValidateMapsConnection`|Verifies that your network can communicate with the Microsoft Defender Antivirus cloud service. This command will only work on Windows 10, version 1703 or higher.|
+|`-TopFiles <count>`|Lists in order the top <count> files by descending "Duration (ms) ".|
+|`-TopProcessesPerFile <top-processes-per-file>`|Adds column listing in order, for each file, the the top <count> processes by descending "Duration (ms)".|
+|`-TopExtensions <count>`|Lists in order the top <count> extensions by descending "Duration (ms) " as PowerShell custom objects".|
+|`-TopPathsPerExtension <top-paths-per-extension>`|Adds column listing in order, for each extension, the top <count> paths by descending "Duration (ms)".|
+|`-TopFilesPerExtension <top-files-per-extension>`|Adds column listing in order, for each extension, the top <count> files by descending "Duration (ms) ".|
+|`-TopProcesses <count>`|Lists in order the top <count> extensions by descending "Duration (ms) " as PowerShell custom objects.|
+|`-TopPathsPerProcess <top-paths-per-process>`|Adds column listing in order, for each process name, the top <count> paths by descending "Duration (ms)".|
+|`-TopFilesPerProcess <top-files-per-process>`|Adds column listing in order, for each process name, the top <count> files by descending "Duration (ms)".|
+|`-AllScans`|List all scans in order of descending "Duration (ms)" as PowerShell custom objects.|
+
+
 
 ## Common errors in running commands via mpcmdrun.exe
 
