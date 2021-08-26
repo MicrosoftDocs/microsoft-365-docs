@@ -24,7 +24,7 @@ After Cisco Webex data is stored in user mailboxes, you can apply Microsoft 365 
 
 The following overview explains the process of using a data connector to archive Cisco Webex data in Microsoft 365.
 
-![Archiving workflow for Cisco Webex data from 17a-4](../media/WebexTeamsDataParserConnectorWorkflow.png)
+![Archiving workflow for Cisco Webex data from 17a-4.](../media/WebexTeamsDataParserConnectorWorkflow.png)
 
 1. Your organization works with 17a-4 to set up and configure the Cisco Webex DataParser.
 

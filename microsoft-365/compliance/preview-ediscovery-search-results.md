@@ -34,13 +34,13 @@ To preview a sample of results returned by a search:
 
 3. On the bottom of the flyout page, click **Review sample**.
 
-   ![Click Review sample on the flyout page to preview results](../media/PreviewSearchResults1.png)
+   ![Click Review sample on the flyout page to preview results.](../media/PreviewSearchResults1.png)
 
    A page is displayed containing a sample of the search results.
 
 4. Select an item to view its contents in the reading pane.
 
-   ![Preview items in the reading pane](../media/PreviewSearchResults2.png)
+   ![Preview items in the reading pane.](../media/PreviewSearchResults2.png)
 
    In the previous screenshot, notice that keywords from the search query are highlighted when you preview items.
 

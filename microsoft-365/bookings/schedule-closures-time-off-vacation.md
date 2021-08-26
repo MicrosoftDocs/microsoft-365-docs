@@ -25,7 +25,7 @@ Watch this video or follow the steps below to schedule business closures or empl
 
 1. In the navigation pane, select **Calendar** \> **Time off**.
 
-   ![Image of Bookings calendar view and time off button](../media/bookings-calendar-timeoff.png)
+   ![Image of Bookings calendar view and time off button.](../media/bookings-calendar-timeoff.png)
 
 1. Fill in the details, including a title, start and end date and times, location, and additional notes.
 
@@ -37,17 +37,17 @@ Watch this video or follow the steps below to schedule business closures or empl
 
 When a customer attempts to schedule service on a day the office is closed, they'll see a message on the booking page.
 
-   ![Image of example message that customer sees when trying to book during time off](../media/bookings-timeoff-message.png)
+   ![Image of example message that customer sees when trying to book during time off.](../media/bookings-timeoff-message.png)
 
 ## Schedule employee time off
 
 1. In Microsoft 365, select the app launcher, and then select **Bookings**.
 
-   ![Image of app launcher](../media/bookings-applauncher.png)
+   ![Image of app launcher.](../media/bookings-applauncher.png)
 
 1. In the navigation pane, select **Calendar** \> **Time off**.
 
-   ![Image of Bookings calendar view and time off button](../media/bookings-calendar-timeoff.png)
+   ![Image of Bookings calendar view and time off button.](../media/bookings-calendar-timeoff.png)
 
 1. Fill in the details, including a title, start and end date and times, location, and additional notes. If the employee will be gone for a full day or for several days, select **All day event**.
 

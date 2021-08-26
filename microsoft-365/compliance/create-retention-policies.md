@@ -203,4 +203,4 @@ Use the following instructions for retention policies that apply to any of these
     
     You can create a retention policy that just retains content without deleting, retains and then deletes after a specified period of time, or just deletes content after a specified period of time. For more information, see [Settings for retaining and deleting content](retention-settings.md#settings-for-retaining-and-deleting-content) on this page.
 
-5. Complete the configuration and save your settings.
+6. Complete the configuration and save your settings.

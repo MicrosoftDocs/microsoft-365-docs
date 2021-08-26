@@ -22,7 +22,7 @@ description: "Get started with visibility and insights."
 
 The first place to get started is the app governance dashboard at [https://aka.ms/appgovernance](https://aka.ms/appgovernance). Note that your sign-in account must have one of [these app governance administrator roles](app-governance-get-started.md#administrator-roles) to view any app governance data.
 
-![The app governance overview page in the Microsoft 365 Compliance Center](..\media\manage-app-protection-governance\mapg-cc-overview.png)
+![The app governance overview page in the Microsoft 365 Compliance Center.](..\media\manage-app-protection-governance\mapg-cc-overview.png)
 
 You can also access the app governance dashboard from **Office 365 > Microsoft 365 Compliance Center > App governance > Overview page**.
 

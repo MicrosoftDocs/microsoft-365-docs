@@ -65,7 +65,7 @@ The traditional big bang approach for site launches will not allow verification 
   
 As shown in the following image, often the number of users that are invited is significantly higher than those that actually use the site. This image shows a strategy about how to roll out a release. This method helps identify ways to improve the SharePoint site before most the users see it.
   
-![Graph showing invited and active users](../media/0bc14a20-9420-4986-b9b9-fbcd2c6e0fb9.png)
+![Graph showing invited and active users.](../media/0bc14a20-9420-4986-b9b9-fbcd2c6e0fb9.png)
   
 In the pilot phase, it is good to get feedback from users that the organization trusts and knows will be engaged. This way it is possible to gauge how the system is being used, and how it is performing.
   

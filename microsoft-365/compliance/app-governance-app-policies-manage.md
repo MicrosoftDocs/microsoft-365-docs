@@ -38,7 +38,7 @@ Here's an example of a process for managing an existing policy:
 1. If the behavior is not expected, go back to step 1.
 1. If the behavior is expected, edit the policy and change its status to active (if needed).
 
-![The manage app policy workflow](../media/manage-app-protection-governance/mapg-manage-policy-process.png)
+![The manage app policy workflow.](../media/manage-app-protection-governance/mapg-manage-policy-process.png)
 
 ## Editing an app policy configuration
 

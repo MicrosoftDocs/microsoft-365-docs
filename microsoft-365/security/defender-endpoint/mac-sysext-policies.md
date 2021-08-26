@@ -49,7 +49,7 @@ To approve the system extensions, create the following payload:
     - **com.microsoft.wdav.epsext**
     - **com.microsoft.wdav.netext**
 
-    ![Approved system extensions screenshot](images/mac-approved-system-extensions.png)
+    ![Approved system extensions screenshot.](images/mac-approved-system-extensions.png)
 
 ### Privacy Preferences Policy Control
 
@@ -60,7 +60,7 @@ Add the following JAMF payload to grant Full Disk Access to the Microsoft Defend
 3. Set Code Requirement to `identifier "com.microsoft.wdav.epsext" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9`
 4. Set **App or service** to **SystemPolicyAllFiles** and access to **Allow**.
 
-    ![Privacy Preferences Policy Control](images/mac-system-extension-privacy.png)
+    ![Privacy Preferences Policy Control.](images/mac-system-extension-privacy.png)
 
 ### Network Extension Policy
 
@@ -183,7 +183,7 @@ To approve the system extensions:
     com.microsoft.wdav.epsext | UBF8T346G9
     com.microsoft.wdav.netext | UBF8T346G9
 
-    ![System configuration profiles screenshot](images/mac-system-extension-intune2.png)
+    ![System configuration profiles screenshot.](images/mac-system-extension-intune2.png)
 
 5. In the `Assignments` tab, assign this profile to **All Users & All devices**.
 6. Review and create this configuration profile.
@@ -305,7 +305,7 @@ To deploy this custom configuration profile:
 3. Open the configuration profile and upload **sysext.xml**. This file was created in the preceding step.
 4. Select **OK**.
 
-    ![System extension in Intune screenshot](images/mac-system-extension-intune.png)
+    ![System extension in Intune screenshot.](images/mac-system-extension-intune.png)
 
 5. In the `Assignments` tab, assign this profile to **All Users & All devices**.
 6. Review and create this configuration profile.

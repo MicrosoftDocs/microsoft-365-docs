@@ -33,7 +33,7 @@ ms.technology: mde
 
 Deploying Defender for Endpoint is a three-phase process:
 
-| ![deployment phase - prepare](images/phase-diagrams/prepare.png)<br>Phase 1: Prepare | [![deployment phase - setup](images/phase-diagrams/setup.png)](production-deployment.md)<br>[Phase 2: Setup](production-deployment.md) | [![deployment phase - onboard](images/phase-diagrams/onboard.png)](onboarding.md)<br>[Phase 3: Onboard](onboarding.md) |
+| ![deployment phase - prepare.](images/phase-diagrams/prepare.png)<br>Phase 1: Prepare | [![deployment phase - setup](images/phase-diagrams/setup.png)](production-deployment.md)<br>[Phase 2: Setup](production-deployment.md) | [![deployment phase - onboard](images/phase-diagrams/onboard.png)](onboarding.md)<br>[Phase 3: Onboard](onboarding.md) |
 | ----- | ----- | ----- |
 |*You are here!* | ||
 
@@ -86,7 +86,7 @@ required in technologies or processes.
 
 Microsoft recommends using the concept of least privileges. Defender for Endpoint leverages built-in roles within Azure Active Directory. Microsoft recommends
 [review the different roles that are
-available](/azure/active-directory/active-directory-assign-admin-roles-azure-portal)
+available](/azure/active-directory/roles/permissions-reference)
 and choose the right one to solve your needs for each persona for this
 application. Some roles may need to be applied temporarily and removed after the
 deployment has been completed.
@@ -158,6 +158,6 @@ how the endpoint security suite should be enabled.
 ## Next step
 
 
-![Phase 2: Setup](images/setup.png) <br>[Phase 2: Setup](production-deployment.md) 
+![Phase 2: Setup.](images/setup.png) <br>[Phase 2: Setup](production-deployment.md) 
  
 Set up Microsoft Defender for Endpoint deployment 

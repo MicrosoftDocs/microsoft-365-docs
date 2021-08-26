@@ -64,7 +64,7 @@ The need to perform an offline scan will also be revealed in Microsoft Endpoint 
 
 The prompt can occur via a notification, similar to the following:
 
-:::image type="content" source="../../media/notification.png" alt-text="Notification to run Microsoft Defender Offline":::
+:::image type="content" source="../../media/notification.png" alt-text="Notification to run Microsoft Defender Offline.":::
 
 The user will also be notified within the Windows Defender client.
 
@@ -72,7 +72,7 @@ In Configuration Manager, you can identify the status of endpoints by navigating
 
 Microsoft Defender Offline scans are indicated under **Malware remediation status** as **Offline scan required**.
 
-:::image type="content" source="../../media/sccm-wdo.png" alt-text="Microsoft Defender Offline scan is required":::
+:::image type="content" source="../../media/sccm-wdo.png" alt-text="Microsoft Defender Offline scan is required.":::
 
 ## Configure notifications
 

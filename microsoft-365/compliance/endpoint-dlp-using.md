@@ -36,7 +36,7 @@ Or
 - If you want to exclude noisy file paths from monitoring
 
   > [!div class="mx-imgBorder"]
-  > ![DLP settings](../media/endpoint-dlp-1-using-dlp-settings.png)
+  > ![DLP settings.](../media/endpoint-dlp-1-using-dlp-settings.png)
 
 ### File path exclusions
 
@@ -187,7 +187,7 @@ These scenarios require that you already have devices onboarded and reporting in
 5. Scroll down to the **Incident reports** section and set **Send an alert to admins when a rule match occurs** to **On**. Email alerts will be automatically sent to the administrator and anyone else you add to the list of recipients. 
 
    > [!div class="mx-imgBorder"]
-   > ![turn-on-incident-reports](../media/endpoint-dlp-2-using-dlp-incident-reports.png)
+   > ![turn-on-incident-reports.](../media/endpoint-dlp-2-using-dlp-incident-reports.png)
    
 6. For the purposes of this scenario, choose **Send alert every time an activity matches the rule**.
 
@@ -212,7 +212,7 @@ These scenarios require that you already have devices onboarded and reporting in
 5. Scroll down to the **Audit or restrict activities on Windows device** section and for each activity set the corresponding action to  **Block with override**.
 
    > [!div class="mx-imgBorder"]
-   > ![set block with override action](../media/endpoint-dlp-6-using-dlp-set-blocked-with-override.png)
+   > ![set block with override action.](../media/endpoint-dlp-6-using-dlp-set-blocked-with-override.png)
    
 6. Choose **Save**.
 
@@ -225,7 +225,7 @@ These scenarios require that you already have devices onboarded and reporting in
    You'll see a popup like this on the client device:
 
    > [!div class="mx-imgBorder"]
-   > ![endpoint dlp client blocked override notification](../media/endpoint-dlp-3-using-dlp-client-blocked-override-notification.png)
+   > ![endpoint dlp client blocked override notification.](../media/endpoint-dlp-3-using-dlp-client-blocked-override-notification.png)
 
 10. Check Activity explorer for the event.
 
@@ -322,7 +322,7 @@ will leave a .txt file that contains this message
 
 4. Copy the file you just created to your OneDrive synchronization folder. A user notification toast should appear telling you that the action is not allowed and that the file will be quarantined. For example, for user name *Isaiah Langer*, and a document titled *auto-quarantine doc 1.docx* you would see this message:
 
-![Data loss prevention user notification popup stating that the OneDrive synchronization action is not allowed for the specified file and that the file will be quarantined](../media/auto-quarantine-user-notification-toast.png)
+![Data loss prevention user notification popup stating that the OneDrive synchronization action is not allowed for the specified file and that the file will be quarantined.](../media/auto-quarantine-user-notification-toast.png)
 
 The message reads:
 

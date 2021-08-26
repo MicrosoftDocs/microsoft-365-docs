@@ -61,7 +61,7 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
 
 1. In the Microsoft 365 Defender portal, go to **Email & collaboration** \> **Submissions**.
 
-2. On the **Submissions** page, verify that the **Submitted for analysis** tab is selected, and then click ![Ad icon](../../media/m365-cc-sc-create-icon.png) **Submit to Microsoft for analysis**.
+2. On the **Submissions** page, verify that the **Submitted for analysis** tab is selected, and then click ![Ad icon.](../../media/m365-cc-sc-create-icon.png) **Submit to Microsoft for analysis**.
 
 3. Use the **Submit to Microsoft for review** flyout that appears to submit the message, URL, or email attachment as described in the following sections.
 
@@ -88,7 +88,7 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
 5. When you're finished, click the **Submit** button.
 
 > [!div class="mx-imgBorder"]
-> ![New URL submission example](../../media/submission-flyout-email.png)
+> ![New URL submission example.](../../media/submission-flyout-email.png)
 
 ### Send a suspect URL to Microsoft
 
@@ -103,7 +103,7 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
 4. When you're finished, click the **Submit** button.
 
 > [!div class="mx-imgBorder"]
-> ![New Email submission example](../../media/submission-url-flyout.png)
+> ![New Email submission example.](../../media/submission-url-flyout.png)
 
 ### Submit a suspected email attachment to Microsoft
 
@@ -118,7 +118,7 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
 4. When you're finished, click the **Submit** button.
 
 > [!div class="mx-imgBorder"]
-> ![New Attachment submission example](../../media/submission-file-flyout.png)
+> ![New Attachment submission example.](../../media/submission-file-flyout.png)
 
 ## View admin submissions to Microsoft
 
@@ -159,7 +159,7 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
      When you're finished, click **Apply**.
 
      > [!div class="mx-imgBorder"]
-     > ![New Filter options for admin submissions](../../media/admin-submission-filters.png)
+     > ![New Filter options for admin submissions.](../../media/admin-submission-filters.png)
 
    - To group the entries, click **Group** and select one of the following values from the drop down list:
      - **None**
@@ -219,7 +219,7 @@ If you've deployed the [Report Message add-in](enable-the-report-message-add-in.
      When you're finished, click **Apply**.
 
      > [!div class="mx-imgBorder"]
-     > ![New Filter options for user submissions](../../media/admin-submission-reported-messages.png)
+     > ![New Filter options for user submissions.](../../media/admin-submission-reported-messages.png)
 
    - To group the entries, click **Group** and select one of the following values from the drop down list:
      - **None**
@@ -251,4 +251,4 @@ On the **User reported messages** tab, select a message in the list, click **Sub
 - **Trigger investigation**
 
 > [!div class="mx-imgBorder"]
-> ![New Options on the Action button](../../media/admin-submission-main-action-button.png)
+> ![New Options on the Action button.](../../media/admin-submission-main-action-button.png)

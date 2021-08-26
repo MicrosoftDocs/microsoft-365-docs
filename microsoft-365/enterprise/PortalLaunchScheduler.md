@@ -70,15 +70,15 @@ Formerly, portal launches could only be scheduled through SharePoint PowerShell.
 
    **Option 1**: The first few times you edit and republish changes to your home page - or up until home page version 3.0 - you will be prompted to use the Portal launch scheduler tool. Select **Schedule launch** to move forward with scheduling. Or select **Republish** to republish your page edits without scheduling the launch.
 
-   ![Image of the prompt to use the portal launch scheduler when republishing the home page](../media/portal-launch-republish-2.png)
+   ![Image of the prompt to use the portal launch scheduler when republishing the home page.](../media/portal-launch-republish-2.png)
 
    **Option 2**: At any time, you can navigate to the SharePoint communication site home page, select **Settings** and then **Schedule site launch** to schedule your portal’s launch.
 
-   ![Image of the Settings pane with Schedule a site launch highlighted](../media/portal-launch-settings-2.png)
+   ![Image of the Settings pane with Schedule a site launch highlighted.](../media/portal-launch-settings-2.png)
 
 3. Next, confirm the portal’s health score and make improvements to the portal if needed using the [Page Diagnostics for SharePoint](https://aka.ms/perftool) tool until your portal receives a **Healthy** score. Then, select **Next**.
 
-   ![Image of the Portal launch scheduler tool](../media/portal-launch-panel-2.png)
+   ![Image of the Portal launch scheduler tool.](../media/portal-launch-panel-2.png)
 
    > [!NOTE]
    > The site name and description can’t be edited from the Portal launch scheduler and instead can be changed by selecting **Settings** and then **Site information** from the home page.
@@ -161,7 +161,7 @@ Launches scheduled using the Portal launch scheduler tool can be canceled, or de
 
 2. Then, select **Delete** and then when you see the message below select **Delete** again.
 
-   ![Image of the prompt that asks if you want to delete or keep a scheduled launch](../media/portal-launch-delete-2.png)
+   ![Image of the prompt that asks if you want to delete or keep a scheduled launch.](../media/portal-launch-delete-2.png)
 
 ## Use the PowerShell Portal launch scheduler
 
