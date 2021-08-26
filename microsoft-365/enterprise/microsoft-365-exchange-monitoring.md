@@ -37,7 +37,7 @@ The value of the **Health** column under **Issues in your organization** indicat
 
 The value of the **Health** column under **Microsoft service health** indicates that the service is healthy or has advisories or incidents based on the cloud services that Microsoft maintains.
 
-![The Exchange Online monitoring page in the Microsoft 365 admin center.](../media/microsoft-365-exchange-monitoring/exhange-monitoring-example.png)
+![The Exchange Online monitoring page in the Microsoft 365 admin center.](../media/microsoft-365-exchange-monitoring/exchange-monitoring-example.png)
 
 Here is an example of the Exchange Online monitoring page in the Microsoft 365 admin center that shows the health of organization-level scenarios, available from **Health > Service health > Exchange Online**.
 
@@ -93,7 +93,7 @@ There are two ways you can provide feedback:
 
 - Submit feedback using the **Is this post helpful?** link for a specific incident or advisory.
 
-![The "Is this post helpful?" link for a specific incident or advisory.](../media/microsoft-365-exchange-monitoring/exhange-monitoring-example-incident-feedback.png)
+![The "Is this post helpful?" link for a specific incident or advisory.](../media/microsoft-365-exchange-monitoring/exchange-monitoring-example-incident-feedback.png)
 
 ## Frequently asked questions
 
