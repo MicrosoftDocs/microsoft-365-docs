@@ -74,6 +74,45 @@ The `-RecordTo` parameter specifies the location where to save the Microsoft Def
 - Get-MpPerformanceReport (Defender) [NEED THE HYPERLINK]
 - Performance Analyzer docs [NEED THE HYPERLINK]
 
+## Get-MpPerformanceReport
 
+**Module**: [Defender](/powershell/module/defender/)
 
+**Syntax**:
 
+```powershell
+ Get-MpPerformanceReport    [-Path] <String>
+[-TopScans <Int32>]
+[-TopFiles  <Int32>
+[ -TopScansPerFile <Int32>]
+[-TopProcessesPerFile  <Int32>  
+	[-TopScansPerProcessPerFile <Int32>]
+	]
+] 
+[-TopExtensions  <Int32>
+[-TopScansPerExtension <Int32>
+[-TopProcessesPerExtension <Int32>
+	[-TopScansPerProcessPerExtension <Int32>]
+	]
+
+[-TopFilesPerExtension  <Int32>
+	[-TopScansPerFilePerExtension <Int32>]
+	]
+] 
+[-TopProcesses  <Int32>
+	[-TopScansPerProcess <Int32>]
+	[-TopExtensionsPerProcess <Int32>
+		[-TopScansPerExtensionPerProcess <Int32>]
+		]
+[-TopFilesPerProcess  <Int32>
+	[-TopScansPerFilePerProcess <Int32>]
+]  
+```
+
+**Description**
+
+The `Get-MpPerformanceReport` cmdlet analyzes a previously collected Microsoft Defender Antivirus performance recording [`New-MpPerformanceRecording` (Defender)] and reports the file paths, file extensions, and processes that cause the highest impact to Microsoft Defender Antivirus scans.
+
+The performance analyzer provides an insight into problematic files that could cause performance degradation of Microsoft Defender Antivirus. This tool is provided "AS IS" and is not intended to provide suggestions on exclusions. Exclusions can reduce the level of protection on your endpoints. Exclusions, if any, should be defined with caution.
+
+For more information on the Performance analyzer, see Performance Analyzer docs <NEED THE HYPERLINK>
