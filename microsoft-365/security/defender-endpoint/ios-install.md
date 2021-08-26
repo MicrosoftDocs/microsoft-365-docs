@@ -1,6 +1,6 @@
 ---
 title: App-based deployment for Microsoft Defender for Endpoint on iOS
-ms.reviewer: 
+ms.reviewer:
 description: Describes how to deploy Microsoft Defender for Endpoint on iOS using an app
 keywords: microsoft, defender, Microsoft Defender for Endpoint, ios, app, installation, deploy, uninstallation, intune
 search.product: eADQiWindows 10XVcnh
@@ -14,7 +14,7 @@ author: mjcaparas
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
   - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
@@ -118,7 +118,7 @@ Intune allows you to configure the Defender for iOS app through an App Configura
    > [!NOTE]
    > This app configuration policy for supervised devices is applicable only to managed devices and should be targeted for all managed iOS devices as a best practice.
 
-1. Sign in to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and go to **Apps** > **App configuration policies** > **Add**. Click on **Managed devices**.
+1. Sign in to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and go to **Apps** \> **App configuration policies** \> **Add**. Click on **Managed devices**.
 
     > [!div class="mx-imgBorder"]
     > ![Image of Microsoft Endpoint Manager Admin Center4.](images/ios-deploy-4.png)
@@ -135,7 +135,7 @@ Intune allows you to configure the Defender for iOS app through an App Configura
     - Configuration Key: issupervised
     - Value type: String
     - Configuration Value: {{issupervised}}
-    
+
     > [!div class="mx-imgBorder"]
     > ![Image of Microsoft Endpoint Manager Admin Center6.](images/ios-deploy-6.png)
 
