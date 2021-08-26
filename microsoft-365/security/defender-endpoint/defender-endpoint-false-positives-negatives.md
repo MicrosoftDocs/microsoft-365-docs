@@ -88,7 +88,7 @@ Alerts can be classified as false positives or true positives in Microsoft 365 D
 
 2. Select **Alerts queue**, and then select an alert.
 
-3. For the selected alert, select **Actions** > **Manage alert**. A flyout pane opens.
+3. For the selected alert, select **Actions** \> **Manage alert**. A flyout pane opens.
 
 4. In the **Manage alert** section, select either **True alert** or **False alert**. (Use **False alert** to classify a false positive.)
 
@@ -129,14 +129,14 @@ After you have reviewed your alerts, your next step is to [review remediation ac
 
 - [Restore a quarantined file from the Action Center](#restore-a-quarantined-file-from-the-action-center)
 - [Undo multiple actions at one time](#undo-multiple-actions-at-one-time)
-- [Remove a file from quarantine across multiple devices](#remove-a-file-from-quarantine-across-multiple-devices).  and
+- [Remove a file from quarantine across multiple devices](#remove-a-file-from-quarantine-across-multiple-devices). and
 - [Restore file from quarantine](#restore-file-from-quarantine)
 
 When you're done reviewing and undoing actions that were taken as a result of false positives, proceed to [review or define exclusions](#part-3-review-or-define-exclusions).
 
 ### Review completed actions
 
-1. Go to the Action center (<https://security.microsoft.com/action-center>) and sign in.
+1. In the left navigation pane of the Microsoft 365 Defender portal, click **Action center**.
 
 2. Select the **History** tab to view a list of actions that were taken.
 
@@ -144,7 +144,7 @@ When you're done reviewing and undoing actions that were taken as a result of fa
 
 ### Restore a quarantined file from the Action Center
 
-1. Go to the Action center (<https://security.microsoft.com/action-center>) and sign in.
+1. In the left navigation pane of the Microsoft 365 Defender portal, click **Action center**.
 
 2. On the **History** tab, select an action that you want to undo.
 
@@ -152,7 +152,7 @@ When you're done reviewing and undoing actions that were taken as a result of fa
 
 ### Undo multiple actions at one time
 
-1. Go to the Action center (<https://security.microsoft.com/action-center>) and sign in.
+1. In the left navigation pane of the Microsoft 365 Defender portal, click **Action center**.
 
 2. On the **History** tab, select the actions that you want to undo.
 
@@ -163,7 +163,7 @@ When you're done reviewing and undoing actions that were taken as a result of fa
 > [!div class="mx-imgBorder"]
 > ![Quarantine file](images/autoir-quarantine-file-1.png)
 
-1. Go to the Action center (<https://security.microsoft.com/action-center>) and sign in.
+1. In the left navigation pane of the Microsoft 365 Defender portal, click **Action center**.
 
 2. On the **History** tab, select a file that has the Action type **Quarantine file**.
 
@@ -173,14 +173,14 @@ When you're done reviewing and undoing actions that were taken as a result of fa
 
 You can roll back and remove a file from quarantine if you've determined that it's clean after an investigation. Run the following command on each device where the file was quarantined.
 
-1. Open an elevated command–line prompt on the device:
+1. Open an elevated command-line prompt on the device:
    1. Go to **Start** and type _cmd_.
-   2. Right–click **Command prompt** and select **Run as administrator**.
+   2. Right-click **Command prompt** and select **Run as administrator**.
 
 2. Enter the following command, and press **Enter**:
 
     ```console
-    "ProgramFiles%\Windows Defender\MpCmdRun.exe" –Restore –Name EUS:Win32/CustomEnterpriseBlock –All
+    "ProgramFiles%\Windows Defender\MpCmdRun.exe" -Restore -Name EUS:Win32/CustomEnterpriseBlock -All
     ```
 
     > [!IMPORTANT]
@@ -215,7 +215,7 @@ In general, you should not need to define exclusions for Microsoft Defender Anti
 
 1. Go to the Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com>) and sign in.
 
-2. Choose **Endpoint security** > **Antivirus**, and then select an existing policy. (If you don't have an existing policy, or you want to create a new policy, skip to [the next procedure](#use-microsoft-endpoint-manager-to-create-a-new-antivirus-policy-with-exclusions)).
+2. Choose **Endpoint security** \> **Antivirus**, and then select an existing policy. (If you don't have an existing policy, or you want to create a new policy, skip to [the next procedure](#use-microsoft-endpoint-manager-to-create-a-new-antivirus-policy-with-exclusions)).
 
 3. Choose **Properties**, and next to **Configuration settings**, choose **Edit**.
 
@@ -227,7 +227,7 @@ In general, you should not need to define exclusions for Microsoft Defender Anti
 
 1. Go to the Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com>) and sign in.
 
-2. Choose **Endpoint security** > **Antivirus** > **+ Create Policy**.
+2. Choose **Endpoint security** \> **Antivirus** \> **+ Create Policy**.
 
 3. Select a platform (such as **Windows 10 and later**, **macOS**, or **Windows 10 and Windows Server**).
 
@@ -356,7 +356,7 @@ We recommend using [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) 
 
 1. Go to the Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com>) and sign in.
 
-2. Choose **Endpoint security** > **Antivirus** and then select an existing policy. (If you don't have an existing policy, or you want to create a new policy, skip to [the next procedure](#use-microsoft-endpoint-manager-to-set-cloud-delivered-protection-settings-for-a-new-policy)).
+2. Choose **Endpoint security** \> **Antivirus** and then select an existing policy. (If you don't have an existing policy, or you want to create a new policy, skip to [the next procedure](#use-microsoft-endpoint-manager-to-set-cloud-delivered-protection-settings-for-a-new-policy)).
 
 3. Under **Manage**, select **Properties**. Then, next to **Configuration settings**, choose **Edit**.
 
@@ -368,7 +368,7 @@ We recommend using [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) 
 
 1. Go to the Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com>) and sign in.
 
-2. Choose **Endpoint security** > **Antivirus** > **+ Create policy**.
+2. Choose **Endpoint security** \> **Antivirus** \> **+ Create policy**.
 
 3. For **Platform**, select an option, and then for **Profile**, select **Antivirus** or **Microsoft Defender Antivirus** (the specific option depends on what you selected for **Platform**.) Then choose **Create**.
 
@@ -399,7 +399,7 @@ We recommend using [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) 
 
 1. Go to the Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com>) and sign in.
 
-2. Choose **Devices** > **Configuration profiles**, and then select an existing policy. (If you don't have an existing policy, or you want to create a new policy, skip to [the next procedure](#use-microsoft-endpoint-manager-to-set-pua-protection-for-a-new-configuration-profile).)
+2. Choose **Devices** \> **Configuration profiles**, and then select an existing policy. (If you don't have an existing policy, or you want to create a new policy, skip to [the next procedure](#use-microsoft-endpoint-manager-to-set-pua-protection-for-a-new-configuration-profile).)
 
 3. Under **Manage**, choose **Properties**, and then, next to **Configuration settings**, choose **Edit**.
 
@@ -413,7 +413,7 @@ We recommend using [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) 
 
 1. Go to the Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com>) and sign in.
 
-2. Choose **Devices** > **Configuration profiles** > **+ Create profile**.
+2. Choose **Devices** \> **Configuration profiles** \> **+ Create profile**.
 
 3. For the **Platform**, choose **Windows 10 and later**, and for **Profile**, select **Device restrictions**.
 

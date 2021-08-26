@@ -58,7 +58,7 @@ The Microsoft OneDrive LTI App allows you to:
 - Integrate Office 365 files with your course modules.
 - Use your Microsoft account for single sign-on with your LMS.
 
-For configuration steps, see [Use Microsoft OneDrive LTI with Canvas](use-onedrive-with-lms.md).
+For configuration steps, see [Integrate Microsoft OneDrive LTI with Canvas](onedrive-lti.md).
 
 ## Teams LTI apps
 
@@ -73,3 +73,5 @@ For configuration steps, see [Use Microsoft Teams meetings with Canvas](teams-me
 The Microsoft Teams classes LTI app helps educators and students navigate between their LMS and Teams. Users can access their class teams associated with their course directly from within their LMS. You can find configuration steps below:
 
 - **Teams Classes LTI with Canvas** [Use Microsoft Teams classes with Canvas](teams-classes-with-canvas.md).
+
+- **Teams Classes LTI with Blackboard** [Use Microsoft Teams classes with Blackboard Learn Ultra](teams-classes-with-blackboard.md)

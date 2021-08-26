@@ -56,7 +56,7 @@ The user who has instantiated the template app will have the ability to customiz
 
 - Create your own visuals by using the underlying [datasets](usage-analytics-data-model.md).
 
-- Use PowerBI Desktop to bring in your own data sources.
+- Use Power BI Desktop to bring in your own data sources.
 
 To share your reports, just select the share button ![Power BI Share icon](../../media/dbb0569d-2013-4f9d-ab9d-d01b09631b92.png) at the top of the page.
 

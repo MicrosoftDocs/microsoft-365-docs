@@ -19,6 +19,8 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - AdminSurgePortfolio
+- AdminTemplateSet
+- admindeeplinkMAC
 search.appverid:
 - MET150
 - MOE150

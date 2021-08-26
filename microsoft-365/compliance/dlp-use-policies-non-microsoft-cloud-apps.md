@@ -1,5 +1,5 @@
 ---
-title: "Use Data loss prevention policies for non-Microsoft cloud apps (preview)"
+title: "Use Data loss prevention policies for non-Microsoft cloud apps"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -22,7 +22,7 @@ ms.custom:
 description: Learn how to use dlp policies for non-Microsoft cloud apps.
 ---
 
-# Use data loss prevention policies for non-Microsoft cloud apps (preview)
+# Use data loss prevention policies for non-Microsoft cloud apps
 
 Data loss prevention (DLP) policies to non-Microsoft cloud apps are part of the Microsoft 365 DLP suite of features; using these features, you can discover and protect sensitive items across Microsoft 365 services. For more information about all Microsoft DLP offerings, see [Learn about data loss prevention](dlp-learn-about-dlp.md).
 
@@ -38,6 +38,12 @@ Before you start using DLP policies to non-Microsoft cloud apps, confirm your [M
 - Microsoft 365 E5 Compliance
 - Microsoft 365 E5 Security
 
+### Permissions
+The user who creates the DLP policy should be a:
+- Global administrator
+- Compliance administrator
+- Compliance data administrator
+
 ### Prepare your Cloud App Security environment
 
 DLP policies to non-Microsoft cloud apps use Cloud App Security DLP capabilities. To use it, you should prepare your Cloud App Security environment. For instructions, see [Set instant visibility, protection, and governance actions for your apps](/cloud-app-security/getting-started-with-cloud-app-security#step-1-set-instant-visibility-protection-and-governance-actions-for-your-apps).
@@ -48,7 +54,7 @@ To use DLP policy to a specific non-Microsoft cloud app, the app must be connect
 
 - [Connect Box](/cloud-app-security/connect-box-to-microsoft-cloud-app-security)
 - [Connect Dropbox](/cloud-app-security/connect-dropbox-to-microsoft-cloud-app-security)
-- [Connect G-Suite](/cloud-app-security/connect-google-apps-to-microsoft-cloud-app-security)
+- [Connect G-Workspace](/cloud-app-security/connect-google-apps-to-microsoft-cloud-app-security)
 - [Connect Salesforce](/cloud-app-security/connect-salesforce-to-microsoft-cloud-app-security)
 - [Connect Cisco Webex](/cloud-app-security/connect-webex-to-microsoft-cloud-app-security)
 
@@ -76,7 +82,7 @@ When you create a rule in the DLP policy, you can select an action for non-Micro
 
 ![Restrict third-party apps](../media/4-dlp-non-microsoft-cloud-app-restrict-third-party-apps.png)
 
-> [NOTE]
+> [!NOTE]
 > DLP policies applied to non-Microsoft apps use Microsoft Cloud App Security. When the DLP policy for a non-Microsoft app is created, the same policy will be automatically created in Microsoft Cloud App Security.
 
 For information about creating and configuring DLP policies, see [Create test and tune a DLP policy](./create-test-tune-dlp-policy.md).

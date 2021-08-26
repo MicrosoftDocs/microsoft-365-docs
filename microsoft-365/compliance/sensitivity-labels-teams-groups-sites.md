@@ -165,7 +165,7 @@ Known limitations for this preview:
 
 - The following features and apps might be incompatible with authentication contexts, so we encourage you to check that these continue to work after a user successfully accesses  a site by using an authentication context:
     
-    - Workflows that use PowerApps or Power Automate
+    - Workflows that use Power Apps or Power Automate
     - Third-party apps
 
 ## Sensitivity label management
@@ -408,13 +408,16 @@ To help you manage the coexistence of sensitivity labels and Azure AD classifica
 ## Auditing sensitivity label activities
 
 > [!IMPORTANT]
-> If you use label separation by selecting just the **Groups & sites** scope for labels that protect containers: Because of the **Detected document sensitivity mismatch** audit event and email described in this section, consider [ordering these labels](sensitivity-labels.md#label-priority-order-matters) before labels that have a scope for **Files & emails**. 
+> If you use label separation by selecting just the **Groups & sites** scope for labels that protect containers: Because of the **Detected document sensitivity mismatch** audit event and email described in this section, consider [ordering labels](sensitivity-labels.md#label-priority-order-matters) before labels that have a scope for **Files & emails**. 
 
 If somebody uploads a document to a site that's protected with a sensitivity label and their document has a [higher priority](sensitivity-labels.md#label-priority-order-matters) sensitivity label than the sensitivity label applied to the site, this action isn't blocked. For example, you've applied the **General** label to a SharePoint site, and somebody uploads to this site a document labeled **Confidential**. Because a sensitivity label with a higher priority identifies content that is more sensitivity than content that has a lower priority order, this situation could be a security concern.
 
 Although the action isn't blocked, it is audited and by default, automatically generates an email to the person who uploaded the document and the site administrator. As a result, both the user and administrators can identify documents that have this misalignment of label priority and take action if needed. For example, delete or move the uploaded document from the site.
 
 It wouldn't be a security concern if the document has a lower priority sensitivity label than the sensitivity label applied to the site. For example, a document labeled **General** is uploaded to a site labeled **Confidential**. In this scenario, an auditing event and email aren't generated.
+
+> [!NOTE]
+> Just as for the policy option that requires users to provide a justification for changing a label to a lower classification, sublabels for the same parent label are all considered to have the same priority.
 
 To search the audit log for this event, look for **Detected document sensitivity mismatch** from the **File and page activities** category.
 
@@ -441,5 +444,7 @@ If these containers have Azure AD classification values applied to them, the con
 ## Additional resources
 
 See the webinar recording and answered questions for [Using Sensitivity labels with Microsoft Teams, O365 Groups and SharePoint Online sites](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/using-sensitivity-labels-with-microsoft-teams-o365-groups-and/ba-p/1221885#M1380).
+
+For more information on managing Teams connected sites and channel sites, see [Manage Teams connected sites and channel sites](/SharePoint/teams-connected-sites).
 
 This webinar was recorded when the feature was still in preview, so you might notice some discrepancies in the UI. However, the information for this feature is still accurate, with any new capabilities documented on this page.

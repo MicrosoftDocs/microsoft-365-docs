@@ -24,7 +24,7 @@ For some cases in Advanced eDiscovery, you may have a large volume of documents 
 
 ## Step 1: Create a widget on the review set dashboard
 
-1. In the Security & Compliance Center, go to **eDiscovery > Advanced eDiscovery** to display the list of cases in your organization.
+1. In the Microsoft 365 compliance center, go to **eDiscovery > Advanced eDiscovery** to display the list of cases in your organization.
   
 2. Select an existing case.
   

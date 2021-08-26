@@ -43,7 +43,7 @@ You can now do the following things:
 > [!TIP]
 > When you use record versioning with a retention label that has a delete action, consider configuring the retention setting **Start the retention period based on:** to be **When items were labeled**. With this label setting, the start of the retention period is reset for each new record version, which ensures that older versions will be deleted before newer versions.
 
-Record versioning is automatically available for any document that has a retention label that marks the item as a record. When a user views the document properties by using the details pane, they can toggle the **Record status** from **Locked** to **Unlocked**. This action creates a record in the Records folder in the Preservation Hold library, where it resides for the remainder of its retention period.
+Record versioning is automatically available for any document that has a retention label applied that marks the item as a record, and that label is [published to the site](create-apply-retention-labels.md#step-2-publish-retention-labels). When a user views the document properties by using the details pane, they can toggle the **Record status** from **Locked** to **Unlocked**. This action creates a record in the Records folder in the Preservation Hold library, where it resides for the remainder of its retention period.
 
 While the document is unlocked, any user with standard edit permissions can edit the file. However, users can't delete the file, because it's still a record. When editing is complete, a  user can then toggle the **Record status** from **Unlocked** to **Locked**, which prevents further edits while in this status.
 <br/><br/>
@@ -97,7 +97,7 @@ For more information about how the Preservation Hold library works, see [How ret
 
 The actions of locking and unlocking records are logged in the audit log. From **File and page activities**, select **Changed record status to locked** and **Changed record status to unlocked**.
 
-For more information about searching for these events, see [Search the audit log in the Security & Compliance Center](search-the-audit-log-in-security-and-compliance.md#file-and-page-activities).
+For more information about searching for these events, see [Search the audit log](search-the-audit-log-in-security-and-compliance.md#file-and-page-activities).
 
 ## Next steps
 
