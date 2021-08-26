@@ -43,30 +43,19 @@ Follow up with your users and make sure they got the email invite you sent about
 
 ## Frequently asked questions
 
-### I didn’t receive an upgrade email?
+#### I shared an email invite but the user didn’t receive the invitation?
 
-Check your spam folder. If it’s not there, contact your admin and ask them to send the email again.
+- Ask user to check their spam folder.
+- Resend the invite email in the Microsoft 365 admin center. From the admin center, hover over the user and select the action to resend email invite.
+- Make sure the email address you entered for your user is correct.
 
-### I have a question about upgrading my account, who can I talk to?
+#### How to conduct GDPR obligations
 
-Contact our small business support experts who can help you upgrade your Microsoft 365 subscription. Learn more at [Get support](../../business-video/get-help-support.md).
+#### What steps should I take to help a user leave a different business and join our business?
 
-### What happens to my data when I upgrade?
+##### Users are having issues install Office. How can I help?
 
-Your data will remain in your old account, nothing will be deleted. You should move your work files to your new work account. Learn more at [Migrate data to my Microsoft 365 Business Standard subscription](migrate-data-business-standard.md).
-
-### What happens to my existing account?
-
-Your existing account will remain. After 60 days ...
-
-### Does the way I login to Windows change when I get a new business account?
-
-No it doesn’t, you can still login the same way as before.
-
-### How can I send and receive emails with my new business email?
-
-- First follow: [Set up Outlook for business email](../../business-video/setup-outlook.md).
-- Then follow: [Create and send email in Outlook](https://support.microsoft.com/office/create-and-send-email-in-outlook-19c32deb-08b6-4f90-a211-02bc5f77f360).
+Send them this article to help them install Office: [Download and install Microsoft 365 Office or Office 2019 on a PC or a MAC](https://support.microsoft.com/office/download-and-install-or-reinstall-microsoft-365-or-office-2019-on-a-pc-or-mac-4414eaaf-0478-48be-9c42-23adc4716658).
 
 ## Related content
 

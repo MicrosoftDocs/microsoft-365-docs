@@ -37,19 +37,6 @@ In this article, we'll walk you through the steps of adding an existing domain y
 > [!IMPORTANT]
 > If you purchased a new domain when you signed up, your domain is all set up and you can move to [Add users and assign licenses](#add-users-and-assign-licenses).
 
-## Which option should I choose?
-
-### Set up your subscription with a domain (recommended)
-
-- You want your business to immediately switch to use your company branded email
-- You have details of your existing business domain handy, such as domain provider username and password.
-- You want the best data governance and compliance for your organization, especially if you work in legal or in regulated industries
-- You want to access to the widest set of tools in Microsoft 365 for business, including SharePoint sites, Planner, Lists, Bookings and more
-
-### Set up your subscription without a domain
-
-- You want to get started easily, with desktop apps like Word, Excel, PowerPoint, Teams, Outlook, and with OneDrive cloud storage and mobile apps
-
 ## Before you begin
 
 To add, modify or remove domains you must be a global administrator. For more info, see [About admin roles](../add-users/about-admin-roles.md).
@@ -89,7 +76,7 @@ Any users you add get automatically assigned a Microsoft 365 Business Standard l
   
 To set up services, you have to update records at your DNS host or domain registrar.
   
-1. The setup wizard typically detects your registrar and gives you a link to step-by-step instructions for updating your NS records at the registrar website. If it doesn't, [Change nameservers to set up Office 365 with any domain registrar](../get-help-with-domains/change-nameservers-at-any-domain-registrar.md). 
+1. The setup wizard typically detects your registrar and gives you a link to step-by-step instructions for updating your NS records at the registrar website. If it doesn't, [Change nameservers to set up Office 365 with any domain registrar](../get-help-with-domains/change-nameservers-at-any-domain-registrar.md).
 
     - If you have existing DNS records, for example an existing web site, but your DNS host is enabled for [domain connect](/office365/admin/get-help-with-domains/domain-connect), choose **Add records for me**. On the **Choose your online services** page, accept all the defaults, and choose **Next**, and choose **Authorize** on your DNS host's page.
     - If you have existing DNS records with other DNS hosts (not enabled for domain connect), you'll want to manage your own DNS records to make sure the existing services stay connected. See [domain basics](/office365/admin/get-help-with-domains/dns-basics) for more info.
@@ -160,7 +147,7 @@ You can also use Exchange admin center to import everyone's email. For more info
 
 Select the OneDrive cloud icon from your taskbar and follow the steps to move your files to your new OneDrive for Business folder. Select **Next** to set up Microsoft Teams.
 
-8. Open Microsoft Teams, select your profile icon, and then **Add work or school account**. Follow the steps to add your new account to Teams.
+1. Open Microsoft Teams, select your profile icon, and then **Add work or school account**. Follow the steps to add your new account to Teams.
 
 ## Use a public website
 

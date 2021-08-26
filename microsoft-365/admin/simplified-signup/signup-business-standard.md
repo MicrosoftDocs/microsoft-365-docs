@@ -46,19 +46,40 @@ To sign up and purchase Microsoft 365 Business Standard (or Microsoft 365 Apps) 
 > [!IMPORTANT]
 > You can decide to add your domain now or later. If you're ready to buy or add a domain, follow the steps in [Set up Microsoft 365 Business Standard](../setup/setup-business-standard.md). If you're not ready to add or buy a domain yet, follow the steps in [Sign in wity your current personal email](#sign-in-with-your-current-personal-email).
 
-### Create a new business email account
-
-In this scenario, you'll be able to use Microsoft 365 Exchange as your professional, branded email provider. All your users will have a shared domain email address. For example, their username, followed by @contoso.com. You and your users sign into Microsoft 365 with this new email address. When you follow this process (add a domain and create new business email accounts), you’ll get access to all the features provided in Microsoft 365 Business Standard. For steps on how to buy or add a domain, see [Set up Microsoft 365 Business Standard](../setup/setup-business-standard.md).
-
-### Sign in with your Outlook, Hotmail, Yahoo, Gmail or other email account
+### Option 1: Sign in with your Outlook, Hotmail, Yahoo, Gmail or other email account
 
 You'll sign into Microsoft 365 with this email address. For example, alliebellew@hotmail.com. Signing in with your current email address is the easiest and fastest way to get started.
 
-8. Create a password on the next page, and select **Create account** to continue. On the next page, read about how we handle your data and select whether you want Microsoft Partners to contact you. Select **Next**.
+1. Create a password on the next page, and select **Create account** to continue. On the next page, read about how we handle your data and select whether you want Microsoft Partners to contact you. Select **Next**.
 
-9. Select how many Microsoft 365 Business Standard licenses you want for your organization and select **Add payment method** and continue with checkout to **Place order**.
+2. Select how many Microsoft 365 Business Standard licenses you want for your organization and select **Add payment method** and continue with checkout to **Place order**.
 
-10. On the **Confirmation details** page, we'll give you some more info about your subscription. You can now go to the Microsoft 365 admin center to add users, install Office apps, invite your team to use Microsoft 365 and more. We'll also send you an email with set up steps for Microsoft 365 Business Standard.
+3. On the **Confirmation details** page, we'll give you some more info about your subscription. You can now go to the Microsoft 365 admin center to add users, install Office apps, invite your team to use Microsoft 365 and more. We'll also send you an email with set up steps for Microsoft 365 Business Standard.
+
+This option provides the easiest, fastest way to get started with the core functionality of the Office desktop suite, Teams, Forms and OneDrive cloud storage. This option is recommended for very small businesses who don't need branded email immediately, or who already use branded email from a different provider and do not intend to switch to use Microsoft Exchange.
+
+This option isn't recommended for larger businesses, or for industries which may require data governance or compliance, such as healthcare and legal industries.
+
+You can add a business domain at any point to access the rest of the functionality of your Business Standard subscription, including:
+
+- Branded email, shared calendars within your business, Bookings appointment scheduling and Meeting recordings
+- Shared document storage and SharePoint sites
+- Microsoft Planner and Microsoft Lists
+- The widest range of integrations of non-Microsoft apps (e.g. Salesforce, Adobe) that work within Teams and Office.
+
+#### Add domain and create new business email account
+
+Once you’re ready to add a domain and create a business email account, you can follow the steps in the articles below:
+
+- [Add a domain to Microsoft 365](../setup/add-domain.md)
+- [Set up your organization with email and cloud storage](https://review.docs.microsoft.com/microsoft-365/admin/setup/setup-business-standard?view=o365-21vianet&branch=kwekua-simplified-signup#finish-setting-up)
+- [Invite users to Microsoft 365 Business Standard (Admin)](admin-invite-business-standard.md)
+
+### Option 2: Create a new business email account
+
+With this option, you’ll be able to use Microsoft 365 Exchange as your professional, branded email provider. All your users will have a shared domain email address. For example, their username, followed by @contoso.com. You and your users sign into Microsoft 365 with this new email address. When you follow this process (add a domain and create new business email accounts), you’ll get access to all the features provided in Microsoft 365 Business Standard. For steps on how to buy or add a domain, see [Set up Microsoft 365 Business Standard](../setup/setup-business-standard.md).
+
+This option provides immediate access to the full suite of features in your Microsoft 365 Business subscription but may require technical steps to be completed up front.
 
 > [!IMPORTANT]
 > You can follow these steps to purchase Microsoft 365 Apps as well. For more info, see [Set up Microsoft 365 Apps for business](../setup/setup-apps-for-business.md) after you purchase Microsoft 365 Apps for business.
@@ -91,6 +112,7 @@ When Recurring billing is on, your subscription will continue to be billed each 
 
 ### What if I want to change my business name in future? How do I do that?
 
+Contact our small business support experts who can help you change your business name. Learn more at [Get support](../../business-video/get-help-support.md).
 
 ## Related articles
 

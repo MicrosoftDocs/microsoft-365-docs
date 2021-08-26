@@ -18,14 +18,10 @@ description: "Accept invite to join a Microsoft 365 Business Standard organizati
 
 # Accept an invitation to a Microsoft 365 Business Standard subscription (User)
 
-When someone adds you to a Microsoft 365 for business organization, you'll get an email invitation with steps on how to join. There are a couple of options when you join.
+When someone adds you to a Microsoft 365 for business organization, you'll get an email invitation with steps on how to join. There are a couple of options when you join. In this scenario, you're joining an organization that has professional business email. All users have a shared domain email address. For example, username followed by @contoso.com.
 
 > [!IMPORTANT]
 > If you’re an admin and you’re looking for steps on how to send a user an invite to your Microsoft 365 Business Standard subscription, check out [Invite users to Microsoft 365 Business Standard (Admin)](admin-invite-business-standard.md).
-
-[Join a business Microsoft 365 Business Standard organization](#join-a-business-microsoft-365-business-standard-organization): In this scenario, you're joining an organization that has professional business email. All users have a shared domain email address. For example, your username followed by @contoso.com.
-
-[Join a personal Microsoft 365 Business Standard organization](#join-a-personal-microsoft-365-business-standard-organization): In this scenario, you're joining an organization that doesn't have a different professional email for users. You'll sign in with your regular email account.
 
 ## Join a business Microsoft 365 Business Standard organization
 
@@ -56,24 +52,6 @@ Make sure you have your current account sign in details before you start these s
 ### Next steps - Migrate your data to Microsoft 365 Business Standard
 
 Follow the steps in the [Migrate data to my Microsoft 365 Business Standard subscription](migrate-data-business-standard.md) to move your OneDrive, Outlook and Teams data.
-
-## Join a Microsoft 365 Business Standard organization using an Outlook, Yahoo, Gmail or other account
-
-Your email looks like this to set up your user account. When you get this email, you'll have to complete a few steps before you can start using your new user account.
-
-(**Add updated screenshot here**)
-
-1. From the invitation email, select **Accept**.
-
-2. On the **Join Microsoft 365 Business...** page, select **Next**.
-
-3. On the Sign up page, make sure you use the email used in the invitation email, and create a password. Select **Create account**.
-
-3. Choose **Accept** on the **Terms and Conditions** page.
-
-1. On the Review permissions page, choose **Accept**.
-
-1. On the Welcome to Microsoft 365 page, you can download Office desktop and mobile apps, and set up OneDrive.
 
 ### No data to migrate?
 
