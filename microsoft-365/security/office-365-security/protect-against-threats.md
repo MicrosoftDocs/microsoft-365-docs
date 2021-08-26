@@ -301,7 +301,7 @@ To receive notification when a file in SharePoint Online or OneDrive for Busines
    When you're finished, click **Next**
 
 5. On the **Set your recipients** page, configure the following settings:
-   - **Send email notifications**: Verify this setting is selcted.
+   - **Send email notifications**: Verify this setting is selected.
    - **Email recipients**: Select one or more global administrators, security administrators, or security readers who should receive notification when a malicious file is detected.
    - **Daily notification limit**: Verify **No limit** is selected.
 
