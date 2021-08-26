@@ -27,19 +27,19 @@ To connect the [sensor](sensor-health.md#add-a-sensor) with your Active Director
 
 1. In [Microsoft 365 Defender](https://security.microsoft.com/), go to **Settings** and then **Identities**.
 
-    ![Go to Settings, then Identities](../../media/defender-identity/settings-identities.png)
+    ![Go to Settings, then Identities.](../../media/defender-identity/settings-identities.png)
 
 1. Select **Directory Service accounts**. You'll see which accounts are associated with which domains.
 
-    ![Directory Service accounts](../../media/defender-identity/directory-service-accounts.png)
+    ![Directory Service accounts.](../../media/defender-identity/directory-service-accounts.png)
 
 1. If you select an account, a pane will open with the settings for that account.
 
-    ![Account settings](../../media/defender-identity/account-settings.png)
+    ![Account settings.](../../media/defender-identity/account-settings.png)
 
 1. To add a new Directory Services account, select **Create new account** and fill in the **Account name**, **Domain**, and **Password**. You can also choose if it's a **Group managed service account** (gMSA), and if it belongs to a **Single label domain**.
 
-    ![New Directory Service account](../../media/defender-identity/new-directory-service-account.png)
+    ![New Directory Service account.](../../media/defender-identity/new-directory-service-account.png)
 
 1. Select **Save**.
 

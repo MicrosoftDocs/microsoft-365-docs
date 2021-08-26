@@ -26,7 +26,7 @@ description: Learn how to create a classifier in Microsoft SharePoint Syntex.
 
 A classifier is a type of model that you can use to automate identification and classification of a document type. For example, you might want to identify all *Contract Renewal* documents that are added to your document library, such as is shown in the following illustration.
 
-![Contract Renewal document](../media/content-understanding/contract-renewal.png)
+![Contract Renewal document.](../media/content-understanding/contract-renewal.png)
 
 Creating a classifier enables you to create a new [SharePoint content type](/sharepoint/governance/content-type-and-workflow-planning#content-type-overview) that will be associated to the model.
 
@@ -138,7 +138,7 @@ If you received a match on your labeled sample files, you can now  test your mod
 1. From the model home page, select the **Test** tab. This runs the model on your unlabeled sample files.
 2. In the **Test files** list, your example files display and shows if the model predicted them to be positive or negative. Use this information to help determine the effectiveness of your classifier in identifying your documents.
 
-    ![Test of unlabeled files](../media/content-understanding/test-on-files.png) 
+    ![Test of unlabeled files.](../media/content-understanding/test-on-files.png) 
 
 ## See Also
 [Create an extractor](create-an-extractor.md)

@@ -80,21 +80,21 @@ If you are looking for a pre-made simulation, you can use our ["Do It Yourself" 
 
 1. Connect to your device and run an attack simulation by selecting **Connect**.
 
-    ![Image of the connect button for test devices](images/test-machine-table.png)
+    ![Image of the connect button for test devices.](images/test-machine-table.png)
 
 2. Save the RDP file and launch it by selecting **Connect**.
 
-    ![Image of remote desktop connection](images/remote-connection.png)
+    ![Image of remote desktop connection.](images/remote-connection.png)
 
     >[!NOTE]
     >If you don't have a copy of the password saved during the initial setup, you can reset the password by selecting **Reset password** from the menu:
-    > ![Image of reset password](images/reset-password-test-machine.png)
+    > ![Image of reset password.](images/reset-password-test-machine.png)
     >
     > The device will change it's state to "Executing password reset", then you'll be presented with your new password in a few minutes.
 
 3. Enter the password that was displayed during the device creation step.
 
-   ![Image of window to enter credentials](images/enter-password.png)
+   ![Image of window to enter credentials.](images/enter-password.png)
 
 4. Run Do-it-yourself attack simulations on the device.
 
@@ -115,7 +115,7 @@ Running threat simulations using third-party platforms is a good way to evaluate
 
 2. Select a threat simulator.
 
-    ![Image of threat simulator selection](images/select-simulator.png)
+    ![Image of threat simulator selection.](images/select-simulator.png)
 
 3. Choose a simulation or look through the simulation gallery to browse through the available simulations.
 
@@ -129,7 +129,7 @@ Running threat simulations using third-party platforms is a good way to evaluate
 
 6. View the progress of a simulation by selecting the **Simulations** tab. View the simulation state, active alerts, and other details.
 
-    ![Image of simulations tab](images/simulations-tab.png)
+    ![Image of simulations tab.](images/simulations-tab.png)
 <br>
 
 After running your simulations, we encourage you to walk through the lab progress bar and explore **Microsoft Defender for Endpoint triggered an automated investigation and remediation**. Check out the evidence collected and analyzed by the feature.

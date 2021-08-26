@@ -122,7 +122,7 @@ In this deployment scenario, you'll onboard devices that have not been onboarded
 2. Open the Compliance Center settings page and choose **Onboard devices**.
 
    > [!div class="mx-imgBorder"]
-   > ![enable device management](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
+   > ![enable device management.](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
 
    > [!NOTE]
    > While it usually takes about 60 seconds for device onboarding to be enabled, please allow up to 30 minutes before engaging with Microsoft support.
@@ -134,7 +134,7 @@ In this deployment scenario, you'll onboard devices that have not been onboarded
 5. Choose the way you want to deploy to these additional devices from the **Deployment method** list and then **download package**.
 
    > [!div class="mx-imgBorder"]
-   > ![deployment method](../media/endpoint-dlp-getting-started-3-deployment-method.png)
+   > ![deployment method.](../media/endpoint-dlp-getting-started-3-deployment-method.png)
 
 6. Follow the appropriate procedures in [Onboarding tools and methods for Windows 10 machines](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). This link takes you to a landing page where you can access Microsoft Defender for Endpoint procedures that match the deployment package you selected in step 5:
 
@@ -160,7 +160,7 @@ In this scenario, Microsoft Defender for Endpoint is already deployed and there 
 3. Choose **Device management** to open the **Devices** list. You should see the list of devices that are already reporting in to Microsoft Defender for Endpoint.
 
    > [!div class="mx-imgBorder"]
-   > ![device management](../media/endpoint-dlp-getting-started-2-device-management.png)
+   > ![device management.](../media/endpoint-dlp-getting-started-2-device-management.png)
 
 4. Choose **Onboarding** if you need to onboard additional devices.
 
@@ -191,7 +191,7 @@ Once done and endpoint is onboarded, it should be visible under the **Devices** 
 2. Refer to the procedures in [Get started with Activity explorer](data-classification-activity-explorer.md) to access and filter all the data for your Endpoint devices.
 
    > [!div class="mx-imgBorder"]
-   > ![activity explorer filter for endpoint devices](../media/endpoint-dlp-4-getting-started-activity-explorer.png)
+   > ![activity explorer filter for endpoint devices.](../media/endpoint-dlp-4-getting-started-activity-explorer.png)
 
 ## Next steps
 

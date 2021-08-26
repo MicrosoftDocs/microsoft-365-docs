@@ -50,7 +50,7 @@ When you investigate a user account entity, you'll see:
 - Alerts related to this user
 - Observed in organization (devices logged on to)
 
-![Image of the user account entity details page](images/atp-user-details-view.png)
+![Image of the user account entity details page.](images/atp-user-details-view.png)
 
 ### User details
 

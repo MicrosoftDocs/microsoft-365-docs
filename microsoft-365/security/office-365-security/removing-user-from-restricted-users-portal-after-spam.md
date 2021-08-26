@@ -95,10 +95,10 @@ The default alert policy named **User restricted from sending email** will autom
 2. On the **Alert policy** page, find and select the alert named **User restricted from sending email**. You can sort the policies by name, or use the **Search box** to find the policy.
 
 3. In the **User restricted from sending email** flyout that appears, verify or configure the following settings:
-   - **Status**: Verify the alert is turned on ![Toggle on](../../media/scc-toggle-on.png).
+   - **Status**: Verify the alert is turned on ![Toggle on.](../../media/scc-toggle-on.png).
    - **Email recipients**: Click **Edit** and verify or configure the following settings in the **Edit recipients** flyout that appears:
      - **Send email notifications**: Verify this is selected (**On**).
-     - **Email recipients**: The default value is **TenantAdmins** (meaning, **Global admin** members). To add more recipients, click in a blank area of the box. A list of recipients will appear, and you can start typing a name to filter and select a recipient. You can remove an existing recipient from the box by clicking ![Remove icon](../../media/m365-cc-sc-remove-selection-icon.png) next to their name.
+     - **Email recipients**: The default value is **TenantAdmins** (meaning, **Global admin** members). To add more recipients, click in a blank area of the box. A list of recipients will appear, and you can start typing a name to filter and select a recipient. You can remove an existing recipient from the box by clicking ![Remove icon.](../../media/m365-cc-sc-remove-selection-icon.png) next to their name.
      - **Daily notification limit**: The default value is **No limit** but you can select a limit for the maximum number of notifications per day.
 
      When you're finished, click **Save**.

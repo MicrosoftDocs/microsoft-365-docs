@@ -47,7 +47,7 @@ The following steps can be used to troubleshoot and mitigate these issues:
 
     - From the user interface. Open Microsoft Defender for Endpoint on macOS and navigate to **Manage settings**.
 
-      ![Manage real-time protection screenshot](images/mdatp-36-rtp.png)
+      ![Manage real-time protection screenshot.](images/mdatp-36-rtp.png)
 
     - From the Terminal. For security purposes, this operation requires elevation.
 

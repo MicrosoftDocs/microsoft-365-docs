@@ -64,16 +64,16 @@ Customers can engage our security experts directly from within Microsoft Defende
 The option to **Consult a threat expert** is available in several places in the portal so you can engage with experts in the context of your investigation:
 
 - <i>**Help and support menu**</i><BR>
-![Screenshot of MTE-EOD menu option](images/mte-eod-menu.png)
+![Screenshot of MTE-EOD menu option.](images/mte-eod-menu.png)
 
 - <i>**Device page actions menu**</i><BR>
-![Screenshot of MTE-EOD device page action menu option](images/mte-eod-machines.png)
+![Screenshot of MTE-EOD device page action menu option.](images/mte-eod-machines.png)
 
 - <i>**Alerts page actions menu**</i><BR>
-![Screenshot of MTE-EOD alert page action menu option](images/mte-eod-alerts.png)
+![Screenshot of MTE-EOD alert page action menu option.](images/mte-eod-alerts.png)
 
 - <i>**File page actions menu**</i><BR>
-![Screenshot of MTE-EOD file page action menu option](images/mte-eod-file.png)
+![Screenshot of MTE-EOD file page action menu option.](images/mte-eod-file.png)
 
 > [!NOTE]
 > If you would like to track the status of your Experts on Demand cases through Microsoft Services Hub, reach out to your Technical Account Manager. 

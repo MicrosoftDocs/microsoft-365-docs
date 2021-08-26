@@ -37,7 +37,7 @@ The **Incident queue** shows a collection of incidents that were created across 
 
 You get to the incident queue from **Incidents & alerts > Incidents** on the quick launch of the Microsoft 365 Defender portal ([security.microsoft.com](https://security.microsoft.com)). Here's an example.
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="Example of the incident queue":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="Example of the incident queue.":::
 
 The **Most recent incidents and alerts** section shows a graph of the number of alerts received and incidents created in the last 24 hours.
 
@@ -58,7 +58,7 @@ The incident queue also exposes multiple filtering options, that when applied, e
 
 From the default incident queue, you can select **Filters** to see a Filters pane, from which you can view a filtered set of incidents. Here is an example.
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-filters.png" alt-text="Example of the filters pane for the incident queue":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-filters.png" alt-text="Example of the filters pane for the incident queue.":::
 
 This table lists the filter names that are available.
 
