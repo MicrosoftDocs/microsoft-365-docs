@@ -109,15 +109,17 @@ You can also use Exchange admin center to import everyone's email. For more info
 
 ## Move data from Teams for life to Teams for work
 
-Open Microsoft Teams for work, select your profile icon, and then add your work account. Follow the steps to add your new account to Teams. Check out [Sign in and get started with Teams](https://support.microsoft.com/office/sign-in-and-get-started-with-teams-6723dc43-dbc0-46e6-af49-8a2d1c5cb937) for more info.
+1. Open Microsoft Teams, select your profile icon, and then **Add work or school account**.
+
+1. Follow the steps to add your new account to Teams. Check out [Sign in and get started with Teams](https://support.microsoft.com/office/sign-in-and-get-started-with-teams-6723dc43-dbc0-46e6-af49-8a2d1c5cb937) for more info.
 
 ### Access Teams chats
 
-When you start using Teams for work, your data won’t be migrated over. The best way to see your old chats is to open Teams for life and Teams for work side by side. You can start using your new Teams for life with your colleagues. Make sure to tell other users you chat with in Teams for life to start contacting you using your new Teams for work account.
+When you start using Teams with your new work account your data won’t be migrated over. The best way to see your old chats is to open your old Teams account and new work account side by side. You can do this by selecting the ME icon on the top right of Teams and choosing the account’s you’d like to open. You can start using Teams with your new work account  with your colleagues. Make sure to tell other users you chat with to start contacting you using your new Teams for work account.
 
 ### Teams meetings
 
-You can start creating new Teams meetings once you’ve got Teams for business set up. Delete your original Teams for life meetings and recreate the meetings in Teams for work. You can only delete meetings from your own Teams calendar, so make sure you let people who you have meetings with know that you’ll be recreating your meetings.
+You can start creating new Teams meetings once you’ve got Teams for business set up, delete your original Teams meetings and recreate the meetings in Teams for work. This will allow you to access richer functionality - for example, calendar availability when scheduling, and the ability to record meetings. You can only delete meetings from your own Teams calendar, so make sure you let people who you have meetings with know that you’ll be recreating your meetings.  As you transition to use Teams for Work for your meetings, if people who should be in your meetings are missing, contact them to make sure they haven’t joined old meeting link.
 
 ### Migrating contacts
 
