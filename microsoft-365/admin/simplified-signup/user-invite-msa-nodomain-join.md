@@ -1,5 +1,5 @@
 ---
-title: "Accept invite to Microsoft 365 Business Standard (User)"
+title: "Accept an email invite to a Microsoft 365 Business Standard subscription organization using an Outlook, Yahoo, Gmail or other account (User)"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
