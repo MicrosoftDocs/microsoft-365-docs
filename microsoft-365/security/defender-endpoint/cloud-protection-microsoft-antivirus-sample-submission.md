@@ -107,6 +107,23 @@ The following table lists examples of metadata sent for analysis by cloud protec
 | Dynamic and contextual attributes | **Process and installation** <br/> `ProcessName` <br/> `ParentProcess` <br/> `TriggeringSignature` <br/> `TriggeringFile` <br/> `Download IP and url` <br/> `HashedFullPath` <br/> `Vpath` <br/> `RealPath` <br/> Parent/child relationships <br/><br/>**Behavioral** <br/> `Connection IPs` <br/> System changes <br/> API calls <br/> Process injection <br/><br/>**Locale** <br/>Locale setting <br/> Geographical location |
 | Static file attributes | **Partial and full hashes** <br/> `ClusterHash` <br/> `Crc16` <br/> `Ctph` <br/> `ExtendedKcrcs` <br/> `ImpHash` <br/> `Kcrc3n` <br/> `Lshash` <br/> `LsHashs` <br/> `PartialCrc1` <br/> `PartialCrc2` <br/> `PartialCrc3` <br/> `Sha1` <br/> `Sha256` <br/><br/>**File properties** <br/>`FileName` <br/> `FileSize` <br/><br/> **Signer information** <br/> `AuthentiCodeHash` <br/> `Issuer` <br/> `IssuerHash` <br/> `Publisher` <br/> `Signer` <br/> `SignerHash` |
 
+## Samples are treated as customer data
+
+Just in case you're wondering what happens with sample submissions, Defender for Endpoint treats all file samples as customer data. Microsoft honors both the geographical and data retention choices your organization selected when onboarding to Defender for Endpoint. 
+
+In addition, Defender for Endpoint has received multiple compliance certifications, demonstrating continued adherence to a sophisticated set of compliance controls:
+
+- ISO 27001
+- ISO 27018
+- SOC I, II, III
+- and PCI
+
+For more information, see the following resources:
+
+- [Azure Compliance Offerings](/azure/storage/common/storage-compliance-offerings) 
+- [Service Trust Portal](https://servicetrust.microsoft.com)
+- [Microsoft Defender for Endpoint data storage and privacy](data-storage-privacy.md#data-storage-location)
+
 ## Other file sample submission scenarios
 
 There are two more scenarios where Defender for Endpoint might request a file sample that is not related to the cloud protection in Microsoft Defender Antivirus. These scenarios include:
@@ -125,23 +142,6 @@ Learn about Defender for Endpoint configuration settings, see: [Onboarding tools
 When [automated investigations](automated-investigations.md) are running on devices (when configured to run automatically in response to an alert or manually run), files that are identified as suspicious can be collected from the endpoints for further inspection. If necessary, the file content analysis feature for automated investigations can be disabled in the Microsoft 365 Defender portal. The file extension names can also be modified to add or remove extensions for other file types that will be automatically submitted during an automated investigation.
 
 To learn more, see [Manage automation file uploads](manage-automation-file-uploads.md).
-
-## Samples are treated as customer data
-
-Just in case you're wondering what happens with sample submissions, Defender for Endpoint treats all file samples as customer data. Microsoft honors both the geographical and data retention choices your organization selected when onboarding to Defender for Endpoint. 
-
-In addition, Defender for Endpoint has received multiple compliance certifications, demonstrating continued adherence to a sophisticated set of compliance controls:
-
-- ISO 27001
-- ISO 27018
-- SOC I, II, III
-- and PCI
-
-For more information, see the following resources:
-
-- [Azure Compliance Offerings](/azure/storage/common/storage-compliance-offerings) 
-- [Service Trust Portal](https://servicetrust.microsoft.com)
-- [Microsoft Defender for Endpoint data storage and privacy](data-storage-privacy.md#data-storage-location)
 
 ## See also
 
