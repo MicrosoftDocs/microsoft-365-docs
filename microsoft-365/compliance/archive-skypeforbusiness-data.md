@@ -24,7 +24,7 @@ After Skype for Business data is stored in user mailboxes, you can apply Microso
 
 The following overview explains the process of using a connector to archive the Skype for Business data in Microsoft 365.
 
-![Archiving workflow for Skype for Business data](../media/SkypeforBusinessConnectorWorkflow.png)
+![Archiving workflow for Skype for Business data.](../media/SkypeforBusinessConnectorWorkflow.png)
 
 1. Your organization works with Skype for Business to set up and configure a Skype for Business site.
 

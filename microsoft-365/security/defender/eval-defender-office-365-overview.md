@@ -32,7 +32,7 @@ This article outlines the process to enable and pilot Microsoft Defender for Off
 
 Use the following steps to enable and pilot Microsoft Defender for Office 365.
 
-![Steps for adding Microsoft Defender for Office to the Defender evaluation environment](../../media/defender/m365-defender-office-eval-steps.png)
+![Steps for adding Microsoft Defender for Office to the Defender evaluation environment.](../../media/defender/m365-defender-office-eval-steps.png)
 
 The following table describes the steps in the illustration.
 

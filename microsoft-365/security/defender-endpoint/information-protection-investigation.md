@@ -42,26 +42,26 @@ Learn how to use data sensitivity labels to prioritize incident investigation.
 
 2. Scroll to the right to see the **Data sensitivity** column. This column reflects sensitivity labels that have been observed on devices related to the incidents providing an indication of whether sensitive files may be impacted by the incident.
 
-    ![Image of data sensitivity column](images/data-sensitivity-column.png)
+    ![Image of data sensitivity column.](images/data-sensitivity-column.png)
 
     You can also filter based on **Data sensitivity** 
 
-    ![Image of data sensitivity filter](images/data-sensitivity-filter.png)
+    ![Image of data sensitivity filter.](images/data-sensitivity-filter.png)
 
 3. Open the incident page to further investigate.
 
-    ![Image of incident page details](images/incident-page.png)
+    ![Image of incident page details.](images/incident-page.png)
 
 4. Select the **Devices** tab to identify devices storing files with sensitivity labels.
 
-    ![Image of device tab](images/investigate-devices-tab.png)
+    ![Image of device tab.](images/investigate-devices-tab.png)
    
 
 5. Select the devices that store sensitive data and search through the timeline to identify which files may be impacted then take appropriate action to ensure that data is protected. 
 
    You can narrow down the events shown on the device timeline by searching for data sensitivity labels. Doing this will show only events associated with files that have said label name.
 
-    ![Image of device timeline with narrowed down search results based on label](images/machine-timeline-labels.png)
+    ![Image of device timeline with narrowed down search results based on label.](images/machine-timeline-labels.png)
 
 
 >[!TIP]

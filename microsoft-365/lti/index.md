@@ -58,7 +58,7 @@ The Microsoft OneDrive LTI App allows you to:
 - Integrate Office 365 files with your course modules.
 - Use your Microsoft account for single sign-on with your LMS.
 
-For configuration steps, see [Use Microsoft OneDrive LTI with Canvas](use-onedrive-with-lms.md).
+For configuration steps, see [Integrate Microsoft OneDrive LTI with Canvas](onedrive-lti.md).
 
 ## Teams LTI apps
 

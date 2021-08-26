@@ -24,7 +24,7 @@ After InvestEdge data is stored in user mailboxes, you can apply Microsoft 365 c
 
 The following overview explains the process of using a data connector to archive InvestEdge data in Microsoft 365.
 
-![Archiving workflow for InvestEdge data from 17a-4](../media/InvestEdgeDataParserConnectorWorkflow.png)
+![Archiving workflow for InvestEdge data from 17a-4.](../media/InvestEdgeDataParserConnectorWorkflow.png)
 
 1. Your organization works with 17a-4 to set up and configure the InvestEdge DataParser.
 

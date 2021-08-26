@@ -36,15 +36,15 @@ On the **Organization Profile** page, scroll down to the **Migrate from Microsof
 
 If you want to migrate your service from Microsoft Cloud Germany (Microsoft Cloud Deutschland) to Office 365 services in the new German datacenter regions, click **Opt-in**.
  
-![Opt-in introduction](../media/ms-cloud-germany-migration-opt-in/tenant-migration.png)
+![Opt-in introduction.](../media/ms-cloud-germany-migration-opt-in/tenant-migration.png)
 
 A new section appears on the right side of your screen to accept your confirmation. Select **Yes**, and then click **Save**.
  
-![Opt-in acceptance](../media/ms-cloud-germany-migration-opt-in/tenant-migration-new-regions.png)
+![Opt-in acceptance.](../media/ms-cloud-germany-migration-opt-in/tenant-migration-new-regions.png)
 
 Once you have opted-in on behalf of your tenant, all administrators will see the confirmation in **Migrate from Microsoft Cloud Germany (Microsoft Cloud Deutschland) to Office 365 services in the new German datacenter regions** section, including the date of opt-in. Administrators will also receive a confirmation in the Message Center of the Microsoft 365 admin center. 
  
-![Opt-in confirmation](../media/ms-cloud-germany-migration-opt-in/tenant-migration2.png)
+![Opt-in confirmation.](../media/ms-cloud-germany-migration-opt-in/tenant-migration2.png)
 
 ## What happens after opting in for migration?
 

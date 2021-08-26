@@ -56,7 +56,7 @@ For a complete list of filters and field details, see [Filters](communication-co
 
 8. If you'd like to save the selected filters as a filter query, select **Save the query** control after you've configured at least one filter value. Enter a name for the filter query and select **Save**. This filter is available to use for only this policy and is listed in the **Saved filter queries** section of the **Filters** details page.
 
-    ![Communication compliance filter detail controls](../media/communication-compliance-filter-detail-controls.png)
+    ![Communication compliance filter detail controls.](../media/communication-compliance-filter-detail-controls.png)
 
 ### Using near and exact duplicate analysis
 
@@ -80,7 +80,7 @@ Communication compliance policies automatically scan and pre-group near and exac
 
 8. Select **Close** after completing the remediation actions on the messages.
 
-    ![Communication compliance exact duplicates controls](../media/communication-compliance-duplicates-controls.png)
+    ![Communication compliance exact duplicates controls.](../media/communication-compliance-duplicates-controls.png)
 
 ## Remediate alerts
 
@@ -90,7 +90,7 @@ No matter where you start to review alerts or the filtering you configure, the n
 
  Sometimes it's obvious from the source or subject that a message can be immediately remediated. It may be that the message is spurious or incorrectly matched to a policy and it should be resolved as misclassified. Select the **Report as misclassified** control to share misclassified content with Microsoft, immediately resolve the alert, and remove from the pending alert queue. From the source or sender information, you may already know how the message should be routed or handled in these circumstances. Consider using the **Tag as** or **Escalate** controls to assign a tag to applicable messages or to send messages to a designated reviewer.
 
-![Communication compliance remediation controls](../media/communication-compliance-remediation-controls.png)
+![Communication compliance remediation controls.](../media/communication-compliance-remediation-controls.png)
 
 ### Step 2: Examine the message details
 
@@ -118,7 +118,7 @@ Now that you've reviewed the details of the message for the alert, you can choos
 - **Escalate for investigation**: Using the **Escalate for investigation** control, you can create a new [Advanced eDiscovery case](overview-ediscovery-20.md) for single or multiple messages. You'll provide a name and notes for the new case, and user who sent the message matching the policy is automatically assigned as the case custodian. You don't need any additional permissions to manage the case. Creating a case does not resolve or create a new tag for the message. You can select a total of 100 messages when creating an Advanced eDiscovery case during the remediation process. Messages in all communication channels monitored by communication compliance are supported. For example, you could select 50 Microsoft Teams chats, 25 Exchange Online email messages, and 25 Yammer messages when you open a new Advanced eDiscovery case for a user.
 - **Remove message in Teams**: Using the **Remove message in Teams** control, you can block inappropriate messages and content identified in alerts from Microsoft Teams channels and 1:1 and group chats. Removed messages and content are replaced with a policy tip that explains that it is blocked and the policy that applies to its removal from view. Recipients are provided a link in the policy tip to learn more about the applicable policy and the review process. The sender receives a policy tip for the blocked message and content but can review the details of the blocked message and content for context regarding the removal.
 
-    ![Remove a message from Microsoft Teams](../media/communication-compliance-remove-teams-message.png)
+    ![Remove a message from Microsoft Teams.](../media/communication-compliance-remove-teams-message.png)
 
 ### Step 4: Determine if message details should be archived outside of communication compliance
 

@@ -33,7 +33,7 @@ ms.technology: mde
 
 Deploying Defender for Endpoint is a three-phase process:
 
-| ![deployment phase - prepare](images/phase-diagrams/prepare.png)<br>Phase 1: Prepare | [![deployment phase - setup](images/phase-diagrams/setup.png)](production-deployment.md)<br>[Phase 2: Setup](production-deployment.md) | [![deployment phase - onboard](images/phase-diagrams/onboard.png)](onboarding.md)<br>[Phase 3: Onboard](onboarding.md) |
+| ![deployment phase - prepare.](images/phase-diagrams/prepare.png)<br>Phase 1: Prepare | [![deployment phase - setup](images/phase-diagrams/setup.png)](production-deployment.md)<br>[Phase 2: Setup](production-deployment.md) | [![deployment phase - onboard](images/phase-diagrams/onboard.png)](onboarding.md)<br>[Phase 3: Onboard](onboarding.md) |
 | ----- | ----- | ----- |
 |*You are here!* | ||
 
@@ -158,6 +158,6 @@ how the endpoint security suite should be enabled.
 ## Next step
 
 
-![Phase 2: Setup](images/setup.png) <br>[Phase 2: Setup](production-deployment.md) 
+![Phase 2: Setup.](images/setup.png) <br>[Phase 2: Setup](production-deployment.md) 
  
 Set up Microsoft Defender for Endpoint deployment 

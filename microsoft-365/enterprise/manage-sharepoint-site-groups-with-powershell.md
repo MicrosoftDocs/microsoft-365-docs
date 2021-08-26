@@ -65,7 +65,7 @@ C:\Scripts\SiteGroupsAndUsers.ps1
 
 In both cases, you should see something similar to this:
 
-![SharePoint Online site groups](../media/SPO-site-groups.png)
+![SharePoint Online site groups.](../media/SPO-site-groups.png)
 
 These are all the groups that have been created for the site `https://litwareinc.sharepoint.com/sites/finance`, and all the users assigned to those groups. The group names are in yellow to help you separate group names from their members.
 

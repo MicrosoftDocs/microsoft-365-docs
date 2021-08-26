@@ -109,29 +109,31 @@ For more information on parent labels and sublabels, see [Sublabels (grouping la
 
 ## How to configure auto-labeling for Office apps
 
-Automatic labeling in Office apps for Windows is supported by the Azure Information Protection unified labeling client. For built-in labeling in Office apps, this capability is in [different stages of availability for different apps](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps).
+For built-in labeling in Office apps, check the [minimum versions required](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps) for automatic labeling in Office apps.
+
+The Azure Information Protection unified labeling client supports automatic labeling for built-in and custom sensitive info types, but not for trainable classifiers or sensitive info types that use Exact Data Match (EDM).
 
 The auto-labeling settings for Office apps are available when you [create or edit a sensitivity label](create-sensitivity-labels.md). Make sure **Files & emails** is selected for the label's scope:
 
-![Sensitivity label scope options for files and emails](../media/filesandemails-scope-options-sensitivity-label.png)
+![Sensitivity label scope options for files and emails.](../media/filesandemails-scope-options-sensitivity-label.png)
 
 As you move through the wizard, you see the **Auto-labeling for files and emails** page where you can choose from a list of sensitive info types or trainable classifiers:
 
-![Label conditions for auto-labeling in Office apps](../media/sensitivity-labels-conditions.png)
+![Label conditions for auto-labeling in Office apps.](../media/sensitivity-labels-conditions.png)
 
 When this sensitivity label is automatically applied, the user sees a notification in their Office app. For example:
 
-![Notification that a document had a label applied automatically](../media/sensitivity-labels-msg-doc-was-auto-labeled.PNG)
+![Notification that a document had a label applied automatically.](../media/sensitivity-labels-msg-doc-was-auto-labeled.PNG)
 
 ### Configuring sensitive info types for a label
 
 When you select the **Sensitive info types** option, you see the same list of sensitive information types as when you create a data loss prevention (DLP) policy. So you can, for example, automatically apply a Highly Confidential label to any content that contains customers' personal information, such as credit card numbers, social security numbers, or passport numbers:
 
-![Sensitive info types for auto-labeling in Office apps](../media/sensitivity-labels-sensitive-info-types.png)
+![Sensitive info types for auto-labeling in Office apps.](../media/sensitivity-labels-sensitive-info-types.png)
 
 Similarly to when you configure DLP policies, you can then refine your condition by changing the instance count and match accuracy. For example:
 
-![Options for match accuracy and instance count](../media/sit-confidence-level.png)
+![Options for match accuracy and instance count.](../media/sit-confidence-level.png)
 
 You can learn more about these configuration options from the DLP documentation: [Tuning rules to make them easier or harder to match](data-loss-prevention-policies.md#tuning-rules-to-make-them-easier-or-harder-to-match).
 
@@ -152,7 +154,7 @@ If you use this option, make sure you have published in your tenant at least one
 
 When you select the **Trainable classifiers** option, select one or more of the built-in trainable classifiers from Microsoft. If you've created your own custom trainable classifiers, these are also available to select:
 
-![Options for trainable classifiers and sensitivity labels](../media/sensitivity-labels-classifers.png)
+![Options for trainable classifiers and sensitivity labels.](../media/sensitivity-labels-classifers.png)
 
 For more information about these classifiers, see [Learn about trainable classifiers](classifier-learn-about.md).
 
@@ -160,11 +162,11 @@ For more information about these classifiers, see [Learn about trainable classif
 
 If you prefer, you can recommend to your users that they apply the label. With this option, your users can accept the classification and any associated protection, or dismiss the recommendation if the label isn't suitable for their content.
 
-![Option for recommending a sensitivity label to users](../media/Sensitivity-labels-Recommended-label-option.png)
+![Option for recommending a sensitivity label to users.](../media/Sensitivity-labels-Recommended-label-option.png)
 
 Here's an example of a prompt from the Azure Information Protection unified labeling client when you configure a condition to apply a label as a recommended action, with a custom policy tip. You can choose what text is displayed in the policy tip.
 
-![Prompt to apply a recommended label](../media/Sensitivity-label-Prompt-for-required-label.png)
+![Prompt to apply a recommended label.](../media/Sensitivity-label-Prompt-for-required-label.png)
 
 ### When automatic or recommended labels are applied
 
@@ -247,14 +249,14 @@ Finally, you can use simulation mode to provide an approximation of the time nee
 
 2. Select the **Auto-labeling** tab:
 
-    ![Auto-labeling tab](../media/auto-labeling-tab.png)
+    ![Auto-labeling tab.](../media/auto-labeling-tab.png)
 
     > [!NOTE]
     > If you don't see the **Auto-labeling** tab, this functionality isn't currently available in your region.
 
 3. Select **+ Create auto-labeling policy**. This starts the New policy wizard:
 
-    ![New policy wizard for auto-labeling](../media/auto-labeling-wizard.png)
+    ![New policy wizard for auto-labeling.](../media/auto-labeling-wizard.png)
 
 4. For the page **Choose info you want this label applied to**: Select one of the templates, such as **Financial** or **Privacy**. You can refine your search by using the **Show options for** dropdown. Or, select **Custom policy** if the templates don't meet your requirements. Select **Next**.
 
@@ -262,7 +264,7 @@ Finally, you can use simulation mode to provide an approximation of the time nee
 
 6. For the page **Choose locations where you want to apply the label**: Select and specify locations for Exchange, SharePoint, and OneDrive. If you don't want to keep the default of **All** for your chosen locations, select the link to choose specific instances. Then select **Next**.
 
-    ![Choose locations page auto-labelingwizard](../media/locations-auto-labeling-wizard.png)
+    ![Choose locations page auto-labelingwizard.](../media/locations-auto-labeling-wizard.png)
     
     To specify individual OneDrive accounts: The URL for a user's OneDrive account is in the following format: `https://<tenant name>-my.sharepoint.com/personal/<user_name>_<tenant name>_com`
 
@@ -305,7 +307,7 @@ Finally, you can use simulation mode to provide an approximation of the time nee
 
 12. For the **Decide if you want to test out the policy now or later** page: Select **Run policy in simulation mode** if you're ready to run the auto-labeling policy now, in simulation mode. Otherwise, select **Leave policy turned off**. Select **Next**:
 
-    ![Test out the policy auto-labeling wizard](../media/simulation-mode-auto-labeling-wizard.png)
+    ![Test out the policy auto-labeling wizard.](../media/simulation-mode-auto-labeling-wizard.png)
 
 13. For the **Summary** page: Review the configuration of your auto-labeling policy and make any changes that needed, and complete the wizard.
 
@@ -317,7 +319,7 @@ You can modify your policy directly from this interface:
 
 - For policy in the **Simulation** section, select the **Edit policy** option at the top of the page, from either tab:
 
-    ![Edit auto-labeling policy option](../media/auto-labeling-edit.png)
+    ![Edit auto-labeling policy option.](../media/auto-labeling-edit.png)
 
     When you're ready to run the policy without simulation, select the **Turn on policy** option.
 
@@ -398,7 +400,7 @@ The recent enhancements for auto-labeling policies for OneDrive and SharePoint h
 
 When your tenant has the new enhancements, you'll see the following notification on the **Auto-labeling** tab:
 
-![Banner to confirm a tenant has the new enhancements](../media/auto-labeling-updatedbanner.png)
+![Banner to confirm a tenant has the new enhancements.](../media/auto-labeling-updatedbanner.png)
 
 > [!NOTE]
 > If you had any auto-labeling policies that were in simulation mode when your tenant received the new enhancements, you must re-run the simulation. If this scenario applies to you, you'll be prompted to select **Restart Simulation** when you review the simulation. If you don't restart the simulation, it won't complete.

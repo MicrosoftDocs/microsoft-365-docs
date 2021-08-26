@@ -24,7 +24,7 @@ After Verizon Network connector data is stored in user mailboxes, you can apply 
 
 The following overview explains the process of using a connector to archive Verizon Network data in Microsoft 365.
 
-![Verizon Network archiving workflow](../media/VerizonNetworkConnectorWorkflow.png)
+![Verizon Network archiving workflow.](../media/VerizonNetworkConnectorWorkflow.png)
 
 1. Your organization works with TeleMessage and Verizon to set up a Verizon Network connector. For more information, see [Verizon Network Archiver](https://www.telemessage.com/office365-activation-for-verizon-network-archiver/).
 

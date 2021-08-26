@@ -31,7 +31,7 @@ ms.technology: mde
 
 Each [threat analytics report](threat-analytics.md) includes dynamic sections and a comprehensive written section called the _analyst report_. To access this section, open the report about the tracked threat and select the **Analyst report** tab.
 
-![Image of the analyst report section of a threat analytics report](images/ta-analyst-report-small.png)
+![Image of the analyst report section of a threat analytics report.](images/ta-analyst-report-small.png)
 
 _Analyst report section of a threat analytics report_
 
