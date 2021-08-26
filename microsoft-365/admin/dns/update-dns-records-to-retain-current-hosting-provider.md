@@ -60,6 +60,6 @@ In addition, you can create a CNAME record to help customers find your website.
     
 Finally, do the following:
   
-[Update your domain's NS records](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md) to point to Microsoft. 
+[Update your domain's NS records](../setup/add-domain.md) to point to Microsoft. 
   
 When the NS records have been updated to point to Microsoft, your domain is all set up. Email will be routed to Microsoft, and traffic to your website address will continue to go to your current website host.

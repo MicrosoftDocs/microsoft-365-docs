@@ -20,7 +20,8 @@ It is important to plan the best way to set up and configure topics in your envi
 
 You must be [subscribed to Viva Topics](https://www.microsoft.com/microsoft-viva/topics) and be a global administrator or SharePoint administrator to access the Microsoft 365 admin center and set up Topics.
 
-If you have configured SharePoint to [require managed devices](/sharepoint/control-access-from-unmanaged-devices), be sure to set up Topics from a managed device.
+> [!IMPORTANT]
+> If you have configured SharePoint to [require managed devices](/sharepoint/control-access-from-unmanaged-devices), you must set up Topics from a managed device.
 
 ## Video demonstration
 
@@ -127,7 +128,10 @@ To set up Topics
 
     Select **Next**.
 
-9. On the **Create topic center** page, you can create your topic center site in which topic pages can be viewed and topics can be managed. In the **Site name** box, type a name for your topic center. You can optionally type a short description in the **Description** box. 
+9. On the **Create topic center** page, you can create your topic center site in which topic pages can be viewed and topics can be managed. In the **Site name** box, type a name for your topic center. You can click the pencil icon if you want to change the URL. Optionally, type a short description in the **Description** box. 
+
+   > [!Important]
+   > You can change the site name later, but you can't change the URL after you complete the wizard.
 
    Select **Next**.
 

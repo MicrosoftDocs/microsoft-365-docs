@@ -13,7 +13,9 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom: 
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
@@ -28,7 +30,7 @@ On the Roles page, you can give users permissions to do tasks in the admin cente
 ![A figure that shows admin roles](../../media/roles-main-page.png)
 
 > [!TIP]
-> Looking for the detailed role descriptions? Check out [Administrator role permissions in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) and [About admin roles](/microsoft-365/admin/add-users/about-admin-roles).
+> Looking for the detailed role descriptions? Check out [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference) and [About admin roles](/microsoft-365/admin/add-users/about-admin-roles).
 
 ## About the admin roles page
 

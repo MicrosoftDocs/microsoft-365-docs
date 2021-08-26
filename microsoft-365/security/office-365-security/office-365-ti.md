@@ -96,7 +96,7 @@ Microsoft Defender for Office 365 uses role-based access control. Permissions ar
 > Although some roles, such as Security Administrator, can be assigned in the Microsoft 365 Defender portal, consider using either the Microsoft 365 admin center or Azure Active Directory instead. For information about roles, role groups, and permissions, see the following resources:
 >
 > - [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md)
-> - [Administrator role permissions in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)
+> - [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference)
 
 <br>
 

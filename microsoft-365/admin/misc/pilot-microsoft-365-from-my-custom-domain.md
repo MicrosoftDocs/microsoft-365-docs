@@ -12,6 +12,7 @@ localization_priority: Priority
 ms.collection:
 - Adm_O365
 ms.custom:
+- admindeeplinkMAC
 search.appverid:
 - BCS160
 - MET150
@@ -84,7 +85,7 @@ Microsoft 365 uses Exchange Online Protection (EOP) for spam protection. EOP mig
 
 ### Step 5: Create user accounts and set the primary reply-to address
 
-1. In the Microsoft 365 admin center left navigation, select **Users** > **Active Users**.
+1. In the Microsoft 365 admin center left navigation, select **Users** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**Active users**</a>.
 
 2. Create two test accounts by adding two existing users.
 

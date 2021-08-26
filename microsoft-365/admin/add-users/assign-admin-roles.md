@@ -19,6 +19,7 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
@@ -52,7 +53,7 @@ You can assign users to a role in 2 different ways:
 
 ### Assign admin roles to users using Roles
 
-1. In the admin center, go to **Roles**. Choose the **Azure AD** or **Intune** tabs to view the admin roles available for your organization.
+1. In the admin center, go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2097861" target="_blank">**Role assignments**</a>. Choose the **Azure AD** or **Intune** tabs to view the admin roles available for your organization.
 2. Select the admin role that you want to assign the user to.
 3. Select **Assigned admins** > **Add**.
 4. Type the user's **display name** or **username**, and then select the user from the list of suggestions.
@@ -101,6 +102,6 @@ You can check admin role permissions in 2 different ways:
 ## Related content
 
 [About Microsoft 365 admin roles](about-admin-roles.md) (article)\
-[Administrator role permissions in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) (article)\
+[Azure AD built-in roles](/azure/active-directory/roles/permissions-reference) (article)\
 [Assign roles to user accounts with PowerShell](../../enterprise/assign-roles-to-user-accounts-with-microsoft-365-powershell.md) (article)\
 [Authorize or remove partner relationships](../misc/add-partner.md) (article)

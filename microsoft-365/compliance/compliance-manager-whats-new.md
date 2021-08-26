@@ -2,8 +2,8 @@
 title: "What's new in Microsoft Compliance Manager"
 f1.keywords:
 - NOCSH
-ms.author: chvukosw
-author: chvukosw
+ms.author: v-jgriffee
+author: jmgriffee
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -19,6 +19,10 @@ description: "Find out what’s new in Compliance Manger and what’s to come. R
 # What's new in Microsoft Compliance Manager
 
 **In this article:** Learn about recent updates in Compliance Manager.
+
+## July 2021
+
+We added the capability to create assessments for products other than Microsoft 365, based on new universal versions of our templates. To learn more, start with [Working with assessment templates](compliance-manager-templates.md).
 
 ## May 2021
 
@@ -43,4 +47,4 @@ Compliance Manager is now available to US Government DoD customers, in addition 
 
 ### Active and inactive templates
 
-Each assessment page and assessment template page has an activated templates counter. This counter shows how many eligible templates you're using according to your licensing agreement. View [Template types: included and premium, active and inactive](compliance-manager-templates.md#template-types-included-and-premium-active-and-inactive) to learn more.
+Each assessment page and assessment template page has an activated templates counter. This counter shows how many eligible templates you're using according to your licensing agreement. View [Template availability and licensing](compliance-manager-templates.md#template-availability-and-licensing) to learn more.
