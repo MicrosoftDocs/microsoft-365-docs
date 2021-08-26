@@ -39,7 +39,7 @@ Check if network protection has been enabled on a local device by using Registry
 
 2. Choose **HKEY_LOCAL_MACHINE** from the side menu
 
-3. Navigate through the nested menus to **SOFTWARE** > **Policies** > **Microsoft** > **Windows Defender** > **Windows Defender Exploit Guard** > **Network Protection**
+3. Navigate through the nested menus to **SOFTWARE** \> **Policies** \> **Microsoft** \> **Windows Defender** \> **Windows Defender Exploit Guard** \> **Network Protection**
 
 4. Select **EnableNetworkProtection** to see the current state of network protection on the device
 
@@ -85,7 +85,7 @@ Use the [./Vendor/MSFT/Policy/Config/Defender/EnableNetworkProtection](/windows/
 
 2. Create or edit an [endpoint protection configuration profile](/mem/intune/protect/endpoint-protection-configure)
 
-3. Under **Configuration Settings** in the profile flow, go to **Microsoft Defender Exploit Guard** > **Network filtering** > **Network protection** > **Enable** or **Audit only**
+3. Under **Configuration Settings** in the profile flow, go to **Microsoft Defender Exploit Guard** \> **Network filtering** \> **Network protection** \> **Enable** or **Audit only**
 
 ### Group Policy
 
@@ -99,7 +99,7 @@ Use the following procedure to enable network protection on domain-joined comput
 
 2. In the **Group Policy Management Editor**, go to **Computer configuration** and select **Administrative templates**.
 
-3. Expand the tree to **Windows components** > **Microsoft Defender Antivirus** > **Windows Defender Exploit Guard** > **Network protection**.
+3. Expand the tree to **Windows components** \> **Microsoft Defender Antivirus** \> **Windows Defender Exploit Guard** \> **Network protection**.
 
    > [!NOTE]
    > On older versions of Windows, the group policy path may say "Windows Defender Antivirus" instead of "Microsoft Defender Antivirus."

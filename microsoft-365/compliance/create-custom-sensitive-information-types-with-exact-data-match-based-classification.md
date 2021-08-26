@@ -68,7 +68,7 @@ EDM-based classification is included in these subscriptions
 
 |Portal|World Wide/GCC|GCC-High|DOD|
 |---|---|---|---|
-|Office SCC|protection.office.com|scc.office365.us|scc.protection.apps.mil|
+|Office SCC|compliance.microsoft.com|scc.office365.us|scc.protection.apps.mil|
 |Microsoft 365 Security center|security.microsoft.com|security.microsoft.us|security.apps.mil|
 |Microsoft 365 Compliance center|compliance.microsoft.com|compliance.microsoft.us|compliance.apps.mil|
 

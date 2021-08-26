@@ -10,7 +10,7 @@ localization_priority: normal
 ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
-ms.date: 08/25/2021
+ms.date: 08/26/2021
 ms.reviewer: mkaminska
 manager: dansimp
 ms.custom: nextgen
@@ -49,7 +49,7 @@ For more information about the specific network-connectivity requirements to ens
 
 3. Select the **Device restrictions** profile type you want to configure. If you need to create a new **Device restrictions** profile type, see [Configure device restriction settings in Microsoft Intune](/intune/device-restrictions-configure).
 
-4. Select **Properties** > **Configuration settings: Edit** > **Microsoft Defender Antivirus**.
+4. Select **Properties** \> **Configuration settings: Edit** \> **Microsoft Defender Antivirus**.
 
 5. On the **Cloud-delivered protection** switch, select **Enable**.
 
@@ -61,7 +61,7 @@ For more information about Intune device profiles, including how to create and c
 
 1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and log in.
 
-2. Choose **Endpoint security** > **Antivirus**.
+2. Choose **Endpoint security** \> **Antivirus**.
 
 3. Select an antivirus profile. (If you don't have one yet, or if you want to create a new profile, see [Configure device restriction settings in Microsoft Intune](/intune/device-restrictions-configure).
 
@@ -110,7 +110,10 @@ Set-MpPreference -SubmitSamplesConsent SendAllSamples
 
 For more information on how to use PowerShell with Microsoft Defender Antivirus, see [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender cmdlets](/powershell/module/defender/). [Policy CSP - Defender](/windows/client-management/mdm/policy-csp-defender) also has more information specifically on [-SubmitSamplesConsent](/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent).
 
->[!WARNING]
+> [!NOTE]
+> You can also set **-SubmitSamplesConsent** to `SendSafeSamples` (the default setting), `NeverSend`, or `AlwaysPrompt`. The `SendSafeSamples` setting means that most samples will be sent automatically. Files that are likely to contain personal information will still prompt and require additional confirmation.
+
+> [!WARNING]
 > Setting **-SubmitSamplesConsent** to `NeverSend` or `AlwaysPrompt` will lower the protection level of the device. In addition, setting it to `NeverSend` means that the [Block at First Sight](configure-block-at-first-sight-microsoft-defender-antivirus.md) feature of Microsoft Defender for Endpoint won't work.
 
 ## Use Windows Management Instruction (WMI) to turn on cloud protection
