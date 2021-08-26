@@ -405,8 +405,6 @@ Complete the following steps to create a Power Automate flow from a recommended 
 > [!IMPORTANT]
 > If other users in your organization need access to the flow, the flow must be shared.
 
-![Insider risk management power automate flows.](../media/insider-risk-settings-power-automate-flows.png)
-
 ### Create a custom Power Automate flow for insider risk management
 
 Some processes and workflows for your organization may be outside of the recommended insider risk management flow templates and you may have the need to create custom Power Automate flows for insider risk management areas. Power Automate flows are flexible and support extensive customization, but there are steps that need to be taken to integrate with insider risk management features.
