@@ -13,7 +13,7 @@ author: mjcaparas
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
   - m365-security-compliance
   - m365initiative-defender-endpoint
 ms.topic: article
@@ -87,6 +87,7 @@ For more information, see [Investigate user entities](investigate-user.md).
 The tabs provide relevant security and threat prevention information related to the device. In each tab, you can customize the columns that are shown by selecting **Customize columns** from the bar above the column headers.
 
 ### Overview
+
 The **Overview** tab displays the [cards](#cards) for active alerts, logged on users, and security assessment.
 
 ![Image of overview tab on the device page.](images/overview-device.png)
@@ -107,13 +108,14 @@ The **Timeline** tab provides a chronological view of the events and associated 
 
 The timeline also enables you to selectively drill down into events that occurred within a given time period. You can view the temporal sequence of events that occurred on a device over a selected time period. To further control your view, you can filter by event groups or customize the columns.
 
->[!NOTE]
+> [!NOTE]
 > For firewall events to be displayed, you'll need to enable the audit policy, see [Audit Filtering Platform connection](/windows/security/threat-protection/auditing/audit-filtering-platform-connection).
->Firewall covers the following events
 >
->- [5025](/windows/security/threat-protection/auditing/event-5025) - firewall service stopped
->- [5031](/windows/security/threat-protection/auditing/event-5031) - application blocked from accepting incoming connections on the network
->- [5157](/windows/security/threat-protection/auditing/event-5157) - blocked connection
+> Firewall covers the following events:
+>
+> - [5025](/windows/security/threat-protection/auditing/event-5025) - firewall service stopped
+> - [5031](/windows/security/threat-protection/auditing/event-5031) - application blocked from accepting incoming connections on the network
+> - [5157](/windows/security/threat-protection/auditing/event-5157) - blocked connection
 
 ![Image of device timeline with events.](images/timeline-device.png)
 
@@ -127,7 +129,7 @@ Some of the functionality includes:
 - Export detailed device timeline events
   - Export the device timeline for the current date or a specified date range up to seven days.
 
-More details about certain events are provided in the **Additional information** section. These details vary depending on the type of event, for example: 
+More details about certain events are provided in the **Additional information** section. These details vary depending on the type of event, for example:
 
 - Contained by Application Guard - the web browser event was restricted by an isolated container
 - Active threat detected - the threat detection occurred while the threat was running
@@ -138,6 +140,7 @@ More details about certain events are provided in the **Additional information**
 - The alert category - if the event led to the generation of an alert, the alert category  ("Lateral Movement", for example) is provided
 
 #### Event details
+
 Select an event to view relevant details about that event. A panel displays to show general event information. When applicable and data is available, a graph showing related entities and their relationships are also shown.
 
 To further inspect the event and related events, you can quickly run an [advanced hunting](advanced-hunting-overview.md) query by selecting **Hunt for related events**. The query will return the selected event and the list of other events that occurred around the same time on the same endpoint.
@@ -175,16 +178,17 @@ The **Azure Advanced Threat Protection** card will display a high-level overview
 
 ![Image of active alerts card.](images/risk-level-small.png)
 
->[!NOTE]
->You'll need to enable the integration on both Microsoft Defender for Identity and Defender for Endpoint to use this feature. In Defender for Endpoint, you can enable this feature in advanced features. For more information on how to enable advanced features, see [Turn on advanced features](advanced-features.md).
+> [!NOTE]
+> You'll need to enable the integration on both Microsoft Defender for Identity and Defender for Endpoint to use this feature. In Defender for Endpoint, you can enable this feature in advanced features. For more information on how to enable advanced features, see [Turn on advanced features](advanced-features.md).
 
 ### Logged on users
 
 The **Logged on users** card shows how many users have logged on in the past 30 days, along with the most and least frequent users. Selecting the "See all users" link opens the details pane, which displays information such as user type, log on type, and when the user was first and last seen. For more information, see [Investigate user entities](investigate-user.md).
 
 ![Image of user details pane.](images/logged-on-users.png)
+
 > [!NOTE]
-> The 'Most frequent' user value is calculated only based on evidence of users who successfully logged on interactively. 
+> The 'Most frequent' user value is calculated only based on evidence of users who successfully logged on interactively.
 > However, the "All users" side-pane calculates all sorts of user logons so it is expected to see more frequent users in the side-pane, given that those users may not be interactive.
 
 ### Security assessments
