@@ -28,6 +28,8 @@ See the [terms and conditions](terms-conditions.md) for the Microsoft 365 free t
 
 ## Set up a Compliance trial
 
+You can sign-up for a trial in the Compliance Manager portal using the Trials link in the left navigation pane.
+
 ## Licensing
 
 As part of the trial setup, the Microsoft 365 Compliance licenses are automatically applied to the organization. The licenses are free of charge for the first 90 days.
