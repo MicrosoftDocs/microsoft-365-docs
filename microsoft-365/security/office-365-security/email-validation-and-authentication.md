@@ -50,7 +50,7 @@ However, DNS records for SPF, DKIM, and DMARC (collectively known as email authe
 
 As of March 2018, only 9% of domains of companies in the Fortune 500 publish strong email authentication policies. The remaining 91% of companies might be spoofed by an attacker. Unless some other email filtering mechanism is in-place, email from spoofed senders in these domains might be delivered to users.
 
-![DMARC policies of Fortune 500 companies](../../media/84e77d34-2073-4a8e-9f39-f109b32d06df.jpg)
+![DMARC policies of Fortune 500 companies.](../../media/84e77d34-2073-4a8e-9f39-f109b32d06df.jpg)
 
 The proportion of small-to-medium sized companies that publish strong email authentication policies is smaller. And the number is even smaller for email domains outside North America and western Europe.
 

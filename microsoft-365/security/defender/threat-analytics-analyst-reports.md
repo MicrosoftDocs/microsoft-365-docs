@@ -1,5 +1,5 @@
 ---
-title: Understand the analyst report section in threat analytics
+title: Understand the analyst report section in threat analytics in Microsoft 365 Defender
 ms.reviewer: 
 description: Learn about the analyst report section of each threat analytics report. Understand how it provides information about threats, mitigations, detections, advanced hunting queries, and more.
 keywords: analyst report, threat analytics, detections, advanced hunting queries, mitigations, 
@@ -23,7 +23,7 @@ ms.topic: article
 ms.custom: seo-marvel-apr2020
 ---
 
-# Understand the analyst report in threat analytics
+# Understand the analyst report in threat analytics in Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -37,7 +37,7 @@ ms.custom: seo-marvel-apr2020
 
 Each [threat analytics report](threat-analytics.md) includes dynamic sections and a comprehensive written section called the _analyst report_. To access this section, open the report about the tracked threat and select the **Analyst report** tab.
 
-![Image of the analyst report section of a threat analytics report](../../media/threat-analytics/ta_analystreport_mtp.png)
+![Image of the analyst report section of a threat analytics report.](../../media/threat-analytics/ta_analystreport_mtp.png)
 
 _Analyst report section of a threat analytics report_
 

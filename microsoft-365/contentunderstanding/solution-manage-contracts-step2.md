@@ -203,4 +203,4 @@ This section defines how "Classification" will display on the card, and uses the
 
 ## Next step
 
-[Step 3. Use Power Automate to create your flow to process your contracts](solution-manage-contracts-step3.md)
+[Step 3. Use Power Automate to create the flow to process your contracts](solution-manage-contracts-step3.md)

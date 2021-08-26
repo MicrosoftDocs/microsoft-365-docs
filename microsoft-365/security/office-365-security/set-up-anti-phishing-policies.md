@@ -46,11 +46,11 @@ The high-level differences between anti-phishing policies in EOP and anti-phishi
 
 |Feature|Anti-phishing policies in EOP|Anti-phishing policies in Defender for Office 365|
 |---|:---:|:---:|
-|Automatically created default policy|![Check mark](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)|
-|Create custom policies|![Check mark](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)|
-|Common policy settings<sup>\*</sup>|![Check mark](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)|
-|Spoof settings|![Check mark](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)|
-|First contact safety tip|![Check mark](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)|
+|Automatically created default policy|![Check mark.](../../media/checkmark.png)|![Check mark.](../../media/checkmark.png)|
+|Create custom policies|![Check mark.](../../media/checkmark.png)|![Check mark.](../../media/checkmark.png)|
+|Common policy settings<sup>\*</sup>|![Check mark.](../../media/checkmark.png)|![Check mark.](../../media/checkmark.png)|
+|Spoof settings|![Check mark.](../../media/checkmark.png)|![Check mark.](../../media/checkmark.png)|
+|First contact safety tip|![Check mark.](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)|
 |Impersonation settings||![Check mark](../../media/checkmark.png)|
 |Advanced phishing thresholds||![Check mark](../../media/checkmark.png)|
 |

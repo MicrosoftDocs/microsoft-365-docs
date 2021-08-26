@@ -53,7 +53,7 @@ To implement a multi-tenant delegated access solution, take the following steps:
 
     To enable RBAC in the customer Microsoft 365 Defender portal, access **Permissions >  Endpoints roles & groups > Roles** with a user account with Global Administrator or Security Administrator rights.
 
-    ![Image of MSSP access](../../media/mssp-access.png)
+    ![Image of MSSP access.](../../media/mssp-access.png)
 
     Then, create RBAC roles to meet MSSP SOC Tier needs. Link these roles to the created user groups via "Assigned user groups".
 
@@ -81,7 +81,7 @@ To implement a multi-tenant delegated access solution, take the following steps:
 
     To do so, in the customer AD tenant,  access Identity Governance: Catalogs, and add **New Catalog**. In our example, we will call it **MSSP Accesses**.
 
-    ![Image of new catalog](../../media/goverance-catalog.png)
+    ![Image of new catalog.](../../media/goverance-catalog.png)
 
     Further more information, see [Create a catalog of resources](/azure/active-directory/governance/entitlement-management-catalog-create).
 
@@ -96,7 +96,7 @@ To implement a multi-tenant delegated access solution, take the following steps:
     - Can only be requested by users in the MSSP SOC Tenant
     - Access auto expires after 365 days
 
-    ![Image of new access package](../../media/new-access-package.png)
+    ![Image of new access package.](../../media/new-access-package.png)
 
     For more information, see [Create a new access package](/azure/active-directory/governance/entitlement-management-access-package-create).
 
@@ -104,7 +104,7 @@ To implement a multi-tenant delegated access solution, take the following steps:
 
     The My Access portal link is used by MSSP SOC analysts to request access via the access packages created. The link is durable, meaning the same link may be used over time for new analysts. The analyst request goes into a queue for approval by the **MSSP Analyst Approvers**.
 
-    ![Image of access properties](../../media/access-properties.png)
+    ![Image of access properties.](../../media/access-properties.png)
 
     The link is located on the overview page of each access package.
 

@@ -132,7 +132,7 @@ This option is the easiest way to enable sensitivity labels for SharePoint and O
 
 2. If you see a message to turn on the ability to process content in Office online files, select **Turn on now**:
 
-    ![Turn on now button to enable sensitivity labels for Office Online](../media/sensitivity-labels-turn-on-banner.png)
+    ![Turn on now button to enable sensitivity labels for Office Online.](../media/sensitivity-labels-turn-on-banner.png)
 
     The command runs immediately and when the page is next refreshed, you no longer see the message or button.
 

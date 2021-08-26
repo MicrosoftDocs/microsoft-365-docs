@@ -48,13 +48,13 @@ To see malware detected in email sorted by Microsoft 365 technology, use the [**
 
 3. Click **Sender**, and then choose **Basic** \> **Detection technology** in the drop down list.
 
-   :::image type="content" source="../../media/exploreremailmalwaredetectiontech-newimg.png" alt-text="malware detection technology":::
+   :::image type="content" source="../../media/exploreremailmalwaredetectiontech-newimg.png" alt-text="malware detection technology.":::
 
    Your detection technologies are now available as filters for the report.
 
 4. Choose an option, and then click **Refresh** to apply that filter (don't refresh your browser window).
 
-   :::image type="content" source="../../media/exploreremailmalwaredetectiontech2-new.png" alt-text="selected detection technology":::
+   :::image type="content" source="../../media/exploreremailmalwaredetectiontech2-new.png" alt-text="selected detection technology.":::
 
    The report refreshes to show the results that malware detected in email, using the technology option you selected. From here, you can conduct further analysis.
 
@@ -67,13 +67,13 @@ You can view phishing attempts through URLs in email, including a list of URLs t
 2. In the **View** drop down list, choose **Email** \> **Phish**.
 
    > [!div class="mx-imgBorder"]
-   > ![View menu for Explorer in phishing context](../../media/ExplorerViewEmailPhishMenu.png)
+   > ![View menu for Explorer in phishing context.](../../media/ExplorerViewEmailPhishMenu.png)
 
 3. Click **Sender**, and then choose **URLs** \> **Click verdict** in the drop down list.
 
 4. In options that appear, select one or more options, such as **Blocked** and **Block overridden**, and then click **Refresh** (don't refresh your browser window).
 
-    :::image type="content" source="../../media/threatexploreremailphishclickverdict-new.png" alt-text="URLs and click verdicts":::
+    :::image type="content" source="../../media/threatexploreremailphishclickverdict-new.png" alt-text="URLs and click verdicts.":::
 
    The report refreshes to show two different URL tables on the **URLs** tab under the report:
 
@@ -84,7 +84,7 @@ You can view phishing attempts through URLs in email, including a list of URLs t
    The two URL tables show top URLs in phishing email messages by delivery action and location. The tables show URL clicks that were blocked or visited despite a warning, so you can see what potential bad links were presented to users and that the users clicked. From here, you can conduct further analysis. For example, below the chart you can see the top URLs in email messages that were blocked in your organization's environment.
 
    > [!div class="mx-imgBorder"]
-   > ![Explorer URLs that were blocked](../../media/ExplorerPhishClickVerdictURLs.png)
+   > ![Explorer URLs that were blocked.](../../media/ExplorerPhishClickVerdictURLs.png)
 
    Select a URL to view more detailed information.
 

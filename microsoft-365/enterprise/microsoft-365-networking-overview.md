@@ -52,7 +52,7 @@ In traditional network architectures, higher latency for generic Internet traffi
 We're making it easier to identify Microsoft 365 network traffic and making it simpler to manage the network identification.
 
 - New categories of network endpoints to differentiate highly critical network traffic from network traffic which is not impacted by Internet latencies. There are just a handful of URLs and supporting IP Addresses in the most critical “Optimize” category.
-- Web services for script usage or direct device configuration and change management of Microsoft 365 network identification. Changes are available from the web service, or in RSS format, or on email using a Microsoft Flow template.
+- Web services for script usage or direct device configuration and change management of Microsoft 365 network identification. Changes are available from the web service, or in RSS format, or on email using a Power Automate template.
 - [Office 365 Network partner program](./microsoft-365-networking-partner-program.md) with Microsoft partners who provide devices or services that follow Microsoft 365 network connectivity principles and have simple configuration.
 
 ## Securing Microsoft 365 connections
@@ -73,7 +73,7 @@ Certain common performance issues are created when Microsoft 365 traffic is subj
 
 Shortening the network path to Microsoft 365 entry points by allowing client traffic to egress as close as possible to their geographic location can improve connectivity performance and the end user experience in Microsoft 365. It can also help to reduce the impact of future changes to the network architecture on Microsoft 365 performance and reliability. The optimum connectivity model is to always provide network egress at the user's location, regardless of whether this is on the corporate network or remote locations such as home, hotels, coffee shops and airports. Generic Internet traffic and WAN based corporate network traffic would be separately routed and not use the local direct egress model. This local direct egress model is represented in the diagram below.
 
-![Local egress network architecture](../media/6bc636b0-1234-4ceb-a45a-aadd1044b39c.png)
+![Local egress network architecture.](../media/6bc636b0-1234-4ceb-a45a-aadd1044b39c.png)
 
 The local egress architecture has the following benefits for Microsoft 365 network traffic over the traditional model:
   

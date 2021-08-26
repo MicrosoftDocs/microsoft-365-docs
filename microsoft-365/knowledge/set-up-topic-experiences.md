@@ -48,7 +48,7 @@ To assign licenses:
 4. Under **Apps**, make sure **Graph Connectors Search with Index (Viva Topics)** and **Viva Topics** are both selected.
 
    > [!div class="mx-imgBorder"]
-   > ![Microsoft Viva Topics licenses in the Microsoft 365 admin center](../media/topic-experiences-licenses.png)
+   > ![Microsoft Viva Topics licenses in the Microsoft 365 admin center.](../media/topic-experiences-licenses.png)
 
 5. Click **Save changes**.
 
@@ -63,11 +63,11 @@ To set up Topics
 1. In the [Microsoft 365 admin center](https://admin.microsoft.com), select **Setup**, and then view the **Files and content** section.
 2. In the **Files and content** section, click **Connect people to knowledge**.
 
-    ![Connect people to knowledge](../media/admin-org-knowledge-options.png) 
+    ![Connect people to knowledge.](../media/admin-org-knowledge-options.png) 
 
 3. On the **Connect people to knowledge** page, click **Get started** to walk you through the setup process.
 
-    ![Get started](../media/k-get-started.png) 
+    ![Get started.](../media/k-get-started.png) 
 
 4. On the **Choose how Viva Topics can find topics** page, you will configure topic discovery. In the **Select SharePoint topic sources** section, select which SharePoint sites will be crawled as sources for your topics during discovery. Choose from:
     - **All sites**: All SharePoint sites in your organization. This includes current and future sites.
@@ -75,13 +75,13 @@ To set up Topics
     - **Only selected sites**: Type the names of the sites you want to include. You can also upload a list of sites. Sites created in the future will not be included as sources for topic discovery.
     - **No sites**: Do not include any SharePoint sites.
 
-    ![Choose how to find topics](../media/ksetup1.png) 
+    ![Choose how to find topics.](../media/ksetup1.png) 
    
 5. In the **Exclude topics by name** section, you can add names of topics you want to exclude from topic discovery. Use this setting to prevent sensitive information from being included as topics. The options are:
     - **Don't exclude any topics** 
     - **Exclude topics by name**
 
-    ![Exclude topics](../media/topics-excluded-by-name.png) 
+    ![Exclude topics.](../media/topics-excluded-by-name.png) 
 
     (Knowledge managers can also exclude topics in the topic center after discovery.)
 
@@ -89,7 +89,7 @@ To set up Topics
 
     If you need to exclude topics, after selecting **Exclude topics by name**, download the .csv template and update it with the list of topics that you want to exclude from your discovery results.
 
-    ![Exclude topics in CSV template](../media/exclude-topics-csv.png) 
+    ![Exclude topics in CSV template.](../media/exclude-topics-csv.png) 
 
     In the CSV template, enter the following information about the topics you want to exclude:
 
@@ -108,7 +108,7 @@ To set up Topics
     - **Only selected people or security groups**
     - **No one**
 
-    ![Who can see topics](../media/ksetup2.png)  
+    ![Who can see topics.](../media/ksetup2.png)  
 
     > [!Note] 
     > While this setting allows you to select any user in your organization, only users who have Topic Experiences licenses assigned to them will be able to view topics.
@@ -118,13 +118,13 @@ To set up Topics
     - **Only selected people or security groups**
     - **No one**
 
-    ![Permissions for topic management, who can create and edit topics](../media/ksetup3.png) 
+    ![Permissions for topic management, who can create and edit topics.](../media/ksetup3.png) 
 
 8. In the **Who can manage topics** section, you can select:
     - **Everyone in my organization**
     - **Only selected people or security groups**
 
-    ![Permissions for topic management](../media/km-setup-create-edit-topics.png) 
+    ![Permissions for topic management.](../media/km-setup-create-edit-topics.png) 
 
     Select **Next**.
 
@@ -135,7 +135,7 @@ To set up Topics
 
    Select **Next**.
 
-   ![Create Knowledge Center](../media/ksetup4.png)  
+   ![Create Knowledge Center.](../media/ksetup4.png)  
 
 10. On the **Review and finish** page, you can look at your selected setting and choose to make changes. If you are satisfied with your selections, select **Activate**.
 
@@ -143,7 +143,7 @@ To set up Topics
 
 12. You'll be returned to your **Connect people to knowledge** page. From this page, you can select **Manage** to make any changes to your configuration settings. 
 
-    ![Settings applied](../media/ksetup7.png)    
+    ![Settings applied.](../media/ksetup7.png)    
 
 ## Manage topic experiences
 

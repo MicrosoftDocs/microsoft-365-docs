@@ -21,11 +21,11 @@ You can manage who can see topic highlights, topic cards, and the topic center i
 1. In the Microsoft 365 admin center, click **Settings**, then **Org settings**.
 2. On the **Services** tab, click **Topic experiences**.
 
-    ![Connect people to knowledge](../media/admin-org-knowledge-options-completed.png) 
+    ![Connect people to knowledge.](../media/admin-org-knowledge-options-completed.png) 
 
 3. Select the **Topic visibility** tab. See the following sections for information about each setting.
 
-    ![knowledge-network-settings](../media/knowledge-network-settings-topic-visibility.png) 
+    ![knowledge-network-settings.](../media/knowledge-network-settings-topic-visibility.png) 
 
 ##  Change who can see topics in your organization
 
@@ -37,7 +37,7 @@ You can change the users who can see topics in your organization.
     - **Only selected people or security groups**
     - **No one**
 
-    ![Who can see topics](../media/k-manage-who-can-see-topics.png) 
+    ![Who can see topics.](../media/k-manage-who-can-see-topics.png) 
 
 3. Select **Save**.  
  
