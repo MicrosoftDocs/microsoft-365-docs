@@ -53,7 +53,7 @@ The following table provides information on the values returned when you run the
 |licensed|True if the device is onboarded to a tenant, false otherwise.|
 |log_level|Current log level for the product.|
 |machine_guid|Unique machine identifier used by the antivirus component.|
-|network_protection_status|Status of the network protection component (macOS only). Can be one of the following values: <il><li>**starting** - Network protection is starting</li><li>**failed_to_start** - Network protection couldn't be started due to an error</li><li>**started** - Network protection is currently running on the device</li><li>**restarting** - Network protection is currently restarting</li><li>**stopping** - Network protection is stopping</li><li>**stopped** - Network protection is not running</li></ul>|
+|network_protection_status|Status of the network protection component (macOS only). Can be one of the following values: <ul><li>**starting** - Network protection is starting</li><li>**failed_to_start** - Network protection couldn't be started due to an error</li><li>**started** - Network protection is currently running on the device</li><li>**restarting** - Network protection is currently restarting</li><li>**stopping** - Network protection is stopping</li><li>**stopped** - Network protection is not running</li></ul>|
 |org_id|Organization that the device is onboarded to. If the device is not yet onboarded to any organization, this prints unavailable. For more information on onboarding, see [Onboard to Microsoft Defender for Endpoint](onboarding.md).|
 |passive_mode_enabled|True if the antivirus component is set to run in passive mode, false otherwise.|
 |product_expiration|Date and time when the current product version reaches end of support.|
