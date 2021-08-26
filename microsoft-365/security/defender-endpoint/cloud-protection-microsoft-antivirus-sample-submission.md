@@ -103,8 +103,8 @@ The following table lists examples of metadata sent for analysis by cloud protec
 
 | Type | Attribute |
 |:---|:---|
-| Machine attributes | OS version <br/> Processor <br/> Security settings |
-| Dynamic and contextual attributes | **Process and installation** <br/> `ProcessName` <br/> `ParentProcess` <br/> `TriggeringSignature` <br/> `TriggeringFile` <br/> `Download IP and url` <br/> `HashedFullPath` <br/> `Vpath` <br/> `RealPath` <br/> Parent/child relationships <br/><br/>**Behavioral** <br/> `Connection IPs` <br/> System changes <br/> API calls <br/> Process injection <br/><br/>**Locale** <br/>Locale setting <br/> Geographical location |
+| Machine attributes | `OS version` <br/> `Processor` <br/> `Security settings` |
+| Dynamic and contextual attributes | **Process and installation** <br/> `ProcessName` <br/> `ParentProcess` <br/> `TriggeringSignature` <br/> `TriggeringFile` <br/> `Download IP and url` <br/> `HashedFullPath` <br/> `Vpath` <br/> `RealPath` <br/> `Parent/child relationships` <br/><br/>**Behavioral** <br/> `Connection IPs` <br/> `System changes` <br/> `API calls` <br/> `Process injection` <br/><br/>**Locale** <br/> `Locale setting` <br/> `Geographical location` |
 | Static file attributes | **Partial and full hashes** <br/> `ClusterHash` <br/> `Crc16` <br/> `Ctph` <br/> `ExtendedKcrcs` <br/> `ImpHash` <br/> `Kcrc3n` <br/> `Lshash` <br/> `LsHashs` <br/> `PartialCrc1` <br/> `PartialCrc2` <br/> `PartialCrc3` <br/> `Sha1` <br/> `Sha256` <br/><br/>**File properties** <br/>`FileName` <br/> `FileSize` <br/><br/> **Signer information** <br/> `AuthentiCodeHash` <br/> `Issuer` <br/> `IssuerHash` <br/> `Publisher` <br/> `Signer` <br/> `SignerHash` |
 
 ## Samples are treated as customer data
