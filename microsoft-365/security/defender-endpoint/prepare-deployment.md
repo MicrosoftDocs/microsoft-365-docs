@@ -86,7 +86,7 @@ required in technologies or processes.
 
 Microsoft recommends using the concept of least privileges. Defender for Endpoint leverages built-in roles within Azure Active Directory. Microsoft recommends
 [review the different roles that are
-available](/azure/active-directory/active-directory-assign-admin-roles-azure-portal)
+available](/azure/active-directory/roles/permissions-reference)
 and choose the right one to solve your needs for each persona for this
 application. Some roles may need to be applied temporarily and removed after the
 deployment has been completed.

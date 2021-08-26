@@ -70,7 +70,7 @@ To configure Defender for Office 365 policies, you must be assigned an appropria
 |Role or role group|Where to learn more|
 |---|---|
 |global administrator|[About Microsoft 365 admin roles](../../admin/add-users/about-admin-roles.md)|
-|Security Administrator|[Administrator role permissions in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
+|Security Administrator|[Azure AD built-in roles](/azure/active-directory/roles/permissions-reference#security-administrator)
 |Exchange Online Organization Management|[Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo)|
 |
 
