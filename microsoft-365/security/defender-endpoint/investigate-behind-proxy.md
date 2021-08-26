@@ -53,13 +53,13 @@ For more information, see [Enable network protection](enable-network-protection.
 ## Investigation impact
 When network protection is turned on, you'll see that on a device's timeline the IP address will keep representing the proxy, while the real target address shows up.
 
-![Image of network events on device's timeline](images/atp-proxy-investigation.png)
+![Image of network events on device's timeline.](images/atp-proxy-investigation.png)
 
 Additional events triggered by the network protection layer are now available to surface the real domain names even behind a proxy.
 
 Event's information:
 
-![Image of single network event](images/atp-proxy-investigation-event.png)
+![Image of single network event.](images/atp-proxy-investigation-event.png)
 
 
 
@@ -74,7 +74,7 @@ DeviceNetworkEvents
 | take 10
 ```
 
-![Image of advanced hunting query](images/atp-proxy-investigation-ah.png)
+![Image of advanced hunting query.](images/atp-proxy-investigation-ah.png)
 
 You can also filter out  events that are related to connection to the proxy itself. 
 

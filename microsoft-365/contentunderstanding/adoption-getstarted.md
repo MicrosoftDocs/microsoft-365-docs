@@ -113,7 +113,7 @@ Identify the stakeholders for your project.
 
 To get ready for implementing SharePoint Syntex, you need to:
 
-![Readiness for Content Understanding](../media/content-understanding/cu-adoption-readinesschecklist.png)
+![Readiness for Content Understanding.](../media/content-understanding/cu-adoption-readinesschecklist.png)
 
 1. Plan the end state
     - Document understanding models are the means, not the end.

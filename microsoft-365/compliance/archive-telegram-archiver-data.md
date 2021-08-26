@@ -24,7 +24,7 @@ After Telegram Archiver connector data is stored in user mailboxes, you can appl
 
 The following overview explains the process of using a connector to archive  Telegram communications data in Microsoft 365.
 
-![Telegram communications archiving workflow](../media/TelegramConnectorWorkflow.png)
+![Telegram communications archiving workflow.](../media/TelegramConnectorWorkflow.png)
 
 1. Your organization works with TeleMessage to set up a Telegram Archiver connector. For more information, see [Activating the TeleMessage Telegram Archiver for Microsoft 365](https://www.telemessage.com/microsoft-365-activation-for-telegram-archiver/).
 

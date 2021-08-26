@@ -47,7 +47,7 @@ Check if network protection has been enabled on a local device by using Registry
    - 1, or **On**
    - 2, or **Audit** mode
 
-    ![Network Protection registry key](../../media/95341270-b738b280-08d3-11eb-84a0-16abb140c9fd.png)
+    ![Network Protection registry key.](../../media/95341270-b738b280-08d3-11eb-84a0-16abb140c9fd.png)
 
 ## Enable network protection
 
@@ -126,5 +126,9 @@ Confirm network protection is enabled on a local computer by using Registry edit
 ## See also
 
 - [Network protection](network-protection.md)
+
+- [Network protection and the TCP three-way handshake](network-protection.md#network-protection-and-the-tcp-three-way-handshake)
+
 - [Evaluate network protection](evaluate-network-protection.md)
+
 - [Troubleshoot network protection](troubleshoot-np.md)

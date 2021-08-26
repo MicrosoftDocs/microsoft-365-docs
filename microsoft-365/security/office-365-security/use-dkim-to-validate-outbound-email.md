@@ -71,7 +71,7 @@ In basic, a private key encrypts the header in a domain's outgoing email. The pu
 
 SPF adds information to a message envelope but DKIM *encrypts* a signature within the message header. When you forward a message, portions of that message's envelope can be stripped away by the forwarding server. Since the digital signature stays with the email message because it's part of the email header, DKIM works even when a message has been forwarded as shown in the following example.
 
-![Diagram showing a forwarded message passing DKIM authentication where the SPF check fails](../../media/28f93b4c-97e7-4309-acc4-fd0d2e0e3377.jpg)
+![Diagram showing a forwarded message passing DKIM authentication where the SPF check fails.](../../media/28f93b4c-97e7-4309-acc4-fd0d2e0e3377.jpg)
 
 In this example, if you had only published an SPF TXT record for your domain, the recipient's mail server could have marked your email as spam and generated a false positive result. **The addition of DKIM in this scenario reduces *false positive* spam reporting.** Because DKIM relies on public key cryptography to authenticate and not just IP addresses, DKIM is considered a much stronger form of authentication than SPF. We recommend using both SPF and DKIM, as well as DMARC in your deployment.
 
@@ -83,17 +83,17 @@ In this example, if you had only published an SPF TXT record for your domain, th
 All the accepted domains of your tenant will be shown in Microsoft 365 Defender portal under DKIM page. If you do not see it, add your accepted domain from [domains page](/microsoft-365/admin/setup/add-domain#add-a-domain).
 Once your domain is added, follow the steps as shown below to configure DKIM.
 
-Step 1: Click on the domain you wish to configure DKIM on DKIM page.
+Step 1: Click on the domain you wish to configure DKIM on DKIM page (https://security.microsoft.com/dkimv2 or https://protection.office.com/dkimv2).
 
-![DKIM page in the Microsoft 365 Defender portal with a domain selected](../../media/126996261-2d331ec1-fc83-4a9d-a014-bd7e1854eb07.png)
+![DKIM page in the Microsoft 365 Defender portal with a domain selected.](../../media/126996261-2d331ec1-fc83-4a9d-a014-bd7e1854eb07.png)
 
 Step 2: Click on Create DKIM keys.
 
-![Domain details flyout with the Create DKIM keys button](../../media/127001645-4ccf89e6-6310-4a91-85d6-aaedbfd501d3.png)
+![Domain details flyout with the Create DKIM keys button.](../../media/127001645-4ccf89e6-6310-4a91-85d6-aaedbfd501d3.png)
 
 Step 3: Copy the CNAMES shown in the pop up window
 
-![Publish CNAMEs pop up window that contains the two CNAME records to copy](../../media/127001787-3cce2c29-e0e4-4712-af53-c51dcba33c46.png)
+![Publish CNAMEs pop up window that contains the two CNAME records to copy.](../../media/127001787-3cce2c29-e0e4-4712-af53-c51dcba33c46.png)
 
 Step 4: Publish the copied CNAME records to your DNS service provider.
 
@@ -108,7 +108,7 @@ TTL: 3600 (or your provider default)
 
 Step 5: Return to DKIM page to enable DKIM.
 
-![Slide the toggle to Enabled to enable DKIM](../../media/126995186-9b3fdefa-a3a9-4f5a-9304-1099a2ce7cef.png)
+![Slide the toggle to Enabled to enable DKIM.](../../media/126995186-9b3fdefa-a3a9-4f5a-9304-1099a2ce7cef.png)
 
 If you see CNAME record doesn't exist error, it might be due to:
 
@@ -237,7 +237,7 @@ Once you have published the CNAME records in DNS, you are ready to enable DKIM s
 
 3. On the **DKIM** page, select the domain by clicking on the name.
 
-4. In the details flyout that appears, change the **Sign messages for this domain with DKIM signatures** setting to **Enabled** (![Toggle on](../../media/scc-toggle-on.png))
+4. In the details flyout that appears, change the **Sign messages for this domain with DKIM signatures** setting to **Enabled** (![Toggle on.](../../media/scc-toggle-on.png))
 
    When you're finished, click **Rotate DKIM keys**.
 

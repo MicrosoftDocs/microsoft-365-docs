@@ -27,6 +27,8 @@ You can use Exchange Online monitoring in the Microsoft 365 admin center to moni
 
 Here is an example of the **Service health** page in the Microsoft 365 admin center, available from **Health > Service health** for organization scenarios.
 
+![The Service health page in the Microsoft 365 admin center.](../media/microsoft-365-exchange-monitoring/service-health-dashboard-example.png)
+
 **Issues in your organization** will be identified and used by organizational-level monitoring.
 
 :::image type="content" source="../media/microsoft-365-exchange-monitoring/service-health-dashboard-example.png" alt-text="The Service health page in the Microsoft 365 admin center":::
@@ -34,6 +36,8 @@ Here is an example of the **Service health** page in the Microsoft 365 admin cen
 The value of the **Health** column under **Issues in your organization** indicates whether organization's infrastructure or third-party software affects your organization's users' service health experience with Exchange Online. Advisories or incidents require *your* actions to resolve.
 
 The value of the **Health** column under **Microsoft service health** indicates that the service is healthy or has advisories or incidents based on the cloud services that Microsoft maintains.
+
+![The Exchange Online monitoring page in the Microsoft 365 admin center.](../media/microsoft-365-exchange-monitoring/exhange-monitoring-example.png)
 
 Here is an example of the Exchange Online monitoring page in the Microsoft 365 admin center that shows the health of organization-level scenarios, available from **Health > Service health > Exchange Online**.
 
@@ -73,13 +77,13 @@ With Exchange Online monitoring supports the following scenarios:
 
 - **App connectivity**: Estimated connectivity is based on the percentage of successful, synthetic connections between your organization's devices and Exchange Online, and may include issues outside of Microsoft's control. 
 
-- **Mail flow**: The number of messages successfully delivered to a mailbox without any delay after the message reached the Microsoft 365 network.
-
 - **Basic Authentication and Modern Authentication**: The number of users successfully validated in the Exchange Online service.
 
-![An example of monitoring Exchange health for mail delivery](../media/microsoft-365-exchange-monitoring/exchange-monitoring-scenario-example.png)
+- **Mail flow**: The number of messages successfully delivered to a mailbox without any delay after the message reached the Microsoft 365 network.
 
-For all these scenarios, the key numbers are for the last 30 minutes in the main dashboard. Detailed views for each of these scenarios show the near real-time trend for seven days with the 30-minute aggregate compared with the previous week.
+  ![An example of monitoring Exchange health for mail delivery.](../media/microsoft-365-exchange-monitoring/exchange-monitoring-scenario-example.png)
+
+For these scenarios, the key numbers are for the last 30 minutes in the main dashboard. Detailed views for each of these scenarios show the near real-time trend for seven days with the 30-minute aggregate compared with the previous week.
 
 ## Send us feedback
 
@@ -89,7 +93,7 @@ There are two ways you can provide feedback:
 
 - Submit feedback using the **Is this post helpful?** link for a specific incident or advisory.
 
-![The "Is this post helpful?" link for a specific incident or advisory](../media/microsoft-365-exchange-monitoring/exchange-monitoring-example-incident-feedback.png)
+![The "Is this post helpful?" link for a specific incident or advisory.](../media/microsoft-365-exchange-monitoring/exhange-monitoring-example-incident-feedback.png)
 
 ## Frequently asked questions
 

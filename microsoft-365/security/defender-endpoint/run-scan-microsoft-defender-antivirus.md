@@ -41,7 +41,7 @@ Combined with always-on, real-time protection, which reviews files when they are
 
 4. From the list of actions provided, select **Quick Scan** (recommended) or **Full Scan**.
 
-[ ![IMAGE](images/mem-antivirus-scan-on-demand.png) ](images/mem-antivirus-scan-on-demand.png#lightbox)
+[ ![IMAGE.](images/mem-antivirus-scan-on-demand.png) ](images/mem-antivirus-scan-on-demand.png#lightbox)
 
 > [!TIP]
 > For more information about using Microsoft Endpoint Manager to run a scan, see [Antimalware and firewall tasks: How to perform an on-demand scan](/configmgr/protect/deploy-use/endpoint-antimalware-firewall#how-to-perform-an-on-demand-scan-of-computers).

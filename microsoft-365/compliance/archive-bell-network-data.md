@@ -24,7 +24,7 @@ After the SMS and MMS messages are stored in user mailboxes, you can apply Micro
 
 The following overview explains the process of using a connector to archive Bell Network data in Microsoft 365.
 
-![Bell Network archiving workflow](../media/BellNetworkConnectorWorkflow.png)
+![Bell Network archiving workflow.](../media/BellNetworkConnectorWorkflow.png)
 
 1. Your organization works with TeleMessage and Bell to set up a Bell Network connector. For more information, see [Bell Network Archiver](https://www.telemessage.com/office365-activation-for-bell-network-archiver).
 
