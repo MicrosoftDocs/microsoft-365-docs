@@ -56,7 +56,7 @@ After retention settings are applied to Exchange content, the paths the content 
 
 When the retention settings are to retain and delete:
 
-![Diagram of retention flow in email and public folders](../media/88f174cc-bbf4-4305-93d7-0515f496c8f9.png)
+![Diagram of retention flow in email and public folders.](../media/88f174cc-bbf4-4305-93d7-0515f496c8f9.png)
 
 1. **If the item is modified or permanently deleted** by the user (either SHIFT+DELETE or deleted from Deleted Items) during the retention period: The item is moved (or copied, in the case of edit) to the Recoverable Items folder. There, a timer job runs periodically and identifies items whose retention period has expired, and these items are permanently deleted within 14 days of the end of the retention period. Note that 14 days is the default setting, but it can be configured up to 30 days.
 

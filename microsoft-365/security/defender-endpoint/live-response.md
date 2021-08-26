@@ -80,7 +80,7 @@ Before you can initiate a session on a device, make sure you fulfill the followi
 
   You'll receive the following error:
 
-  ![Image of error message](images/live-response-error.png)
+  ![Image of error message.](images/live-response-error.png)
 
 - **Enable live response unsigned script execution** (optional).
 

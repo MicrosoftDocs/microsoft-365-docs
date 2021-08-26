@@ -39,13 +39,13 @@ Include the following elements in your Communications site:
 4. Add events to an **Events web part** so everyone can see what's coming up.
 5. Add photos that people can use or share to an **Image gallery web part**.
 
-![Diagram of a SharePoint Communications page with space for common elements that a campaign would need](../media/m365-democracy-comms-site.png)
+![Diagram of a SharePoint Communications page with space for common elements that a campaign would need.](../media/m365-democracy-comms-site.png)
 
 ## Infographic: Create a Communications Site infographic
 
 The following links for PowerPoint and PDF can be downloaded and printed in tabloid format (also known as ledger, 11 x 17, or A3).
 
-[![Image for communications site infographic](../media/M365-Campaigns-CreateCommunicationSite-358-201.png)](downloads/M365CampaignsCreateCommunicationSite.pdf)
+[![Image for communications site infographic.](../media/M365-Campaigns-CreateCommunicationSite-358-201.png)](downloads/M365CampaignsCreateCommunicationSite.pdf)
 
 [PDF](downloads/M365CampaignsCreateCommunicationSite.pdf) | [PowerPoint](downloads/M365CampaignsCreateCommunicationSite.pptx)
 

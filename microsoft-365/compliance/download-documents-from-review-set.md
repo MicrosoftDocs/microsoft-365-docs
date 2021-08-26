@@ -25,4 +25,4 @@ Download offers a simple way to download content from a review set in native for
 
 To download content from a review set in an Advanced eDiscovery case, start by selecting the files you want to download then select **Action items** > **Download**.
 
-![Download action in Advanced eDiscovery review set](../media/eDiscoDownload.png)
+![Download action in Advanced eDiscovery review set.](../media/eDiscoDownload.png)
