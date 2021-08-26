@@ -92,7 +92,7 @@ The following procedures for enabling ASR rules include instructions for how to 
 
 ## Intune
 
-1. Select **Device configuration** > **Profiles**. Choose an existing endpoint protection profile or create a new one. To create a new one, select **Create profile** and enter information for this profile. For **Profile type**, select **Endpoint protection**. If you've chosen an existing profile, select **Properties** and then select **Settings**.
+1. Select **Device configuration** \> **Profiles**. Choose an existing endpoint protection profile or create a new one. To create a new one, select **Create profile** and enter information for this profile. For **Profile type**, select **Endpoint protection**. If you've chosen an existing profile, select **Properties** and then select **Settings**.
 
 2. In the **Endpoint protection** pane, select **Windows Defender Exploit Guard**, then select **Attack Surface Reduction**. Select the desired setting for each ASR rule.
 
@@ -175,7 +175,7 @@ You can use Microsoft Endpoint Manager (MEM) OMA-URI to configure custom ASR rul
     > [!NOTE]
     > Rules are active and live within minutes.
 
->[!NOTE]
+> [!NOTE]
 > Conflict handling:
 >
 > If you assign a device two different ASR policies, the way conflict is handled is rules that are assigned different states, there is no conflict management in place, and the result is an error.
@@ -212,9 +212,9 @@ Example:
 
 ## Microsoft Endpoint Configuration Manager
 
-1. In Microsoft Endpoint Configuration Manager, go to **Assets and Compliance** > **Endpoint Protection** > **Windows Defender Exploit Guard**.
+1. In Microsoft Endpoint Configuration Manager, go to **Assets and Compliance** \> **Endpoint Protection** \> **Windows Defender Exploit Guard**.
 
-2. Select **Home** > **Create Exploit Guard Policy**.
+2. Select **Home** \> **Create Exploit Guard Policy**.
 
 3. Enter a name and a description, select **Attack Surface Reduction**, and select **Next**.
 
@@ -233,7 +233,7 @@ Example:
 
 2. In the **Group Policy Management Editor**, go to **Computer configuration** and select **Administrative templates**.
 
-3. Expand the tree to **Windows components** > **Microsoft Defender Antivirus** > **Microsoft Defender Exploit Guard** > **Attack surface reduction**.
+3. Expand the tree to **Windows components** \> **Microsoft Defender Antivirus** \> **Microsoft Defender Exploit Guard** \> **Attack surface reduction**.
 
 4. Select **Configure Attack surface reduction rules** and select **Enabled**. You can then set the individual state for each rule in the options section.
 
@@ -317,7 +317,5 @@ Example:
 ## Related articles
 
 - [Attack surface reduction rules](attack-surface-reduction-rules.md)
-
 - [Evaluate attack surface reduction](evaluate-attack-surface-reduction.md)
-
 - [Attack surface reduction FAQ](attack-surface-reduction.md)
