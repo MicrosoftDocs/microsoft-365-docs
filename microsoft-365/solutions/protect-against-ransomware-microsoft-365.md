@@ -24,11 +24,11 @@ description: Step through protecting your Microsoft 365 resources from ransomwar
 
 Ransomware is a type of extortion attack that encrypts files and folders, preventing access to important data. Commodity ransomware typically spreads like a virus that infects devices and only requires malware remediation. Human-operated ransomware is the result of an active attack by cybercriminals that infiltrate an organization’s on-premises or cloud IT infrastructure, elevate their privileges, and deploy ransomware to critical data.
 
-Once the attack is complete, an attacker demands money from victims in exchange for decryption keys or a promise not to release sensitive data to the dark web or the public internet. Human-operated ransomware can also be used to shut down critical machines or processes, such as those needed for industrial production, bringing normal business operations to a halt until the ransom is paid and the damage is corrected or the organization remediates the damage themselves.
+Once the attack is complete, an attacker demands money from victims in exchange for decryption keys or a promise not to release sensitive data to the dark web or the public internet. Human-operated ransomware can also be used to shut down critical machines or processes, such as those needed for industrial production, bringing normal business operations to a halt until the ransom is paid and the damage is corrected, or the organization remediates the damage themselves.
 
 A human-operated ransomware attack can be catastrophic to businesses of all sizes and are difficult to clean up, requiring complete adversary eviction to protect against future attacks. Unlike commodity ransomware, human-operated ransomware can continue to threaten businesses operations after the initial ransom incident.
 
-## Ransomware prevention and mitigation capabilities provided with Microsoft 365
+## Ransomware mitigation and recovery capabilities provided with Microsoft 365
 
 A ransomware attacker that has infiltrated a Microsoft 365 tenant can attempt to create financial leverage by:
 
@@ -44,27 +44,34 @@ Files in SharePoint and OneDrive for Business are protected by:
 
 - Versioning 
 
-  - Retains a minimum of 500 versions of a file by default and can be configured to retain more. Train your users on how to retrieve previous versions of files.
+  - Microsoft 365 retains a minimum of 500 versions of a file by default and can be configured to retain more. 
+
+    To minimize the burden on your security and helpdesk staff, train your users on how to retrieve previous versions of files.
 
 - Recycle bin
 
-  - If the ransomware creates a new encrypted copy of the file, and deletes the old file, customers have 93 days to restore it from the recycle bin. After 93 days, there is a 14-day window where Microsoft can still recover the data. Train your users on how to restore files from the recycle bin.
+  - If the ransomware creates a new encrypted copy of the file, and deletes the old file, customers have 93 days to restore it from the recycle bin. After 93 days, there is a 14-day window where Microsoft can still recover the data. 
+  
+    To minimize the burden on your security and helpdesk staff, train your users on how to [restore files from the recycle bin](https://support.microsoft.com/en-us/office/restore-deleted-items-from-the-site-collection-recycle-bin-5fa924ee-16d7-487b-9a0a-021b9062d14b).
 
 - Preservation Hold library
 
   - Files stored in SharePoint or OneDrive sites can be retained by applying retention settings. When a document with versions is subject to retention settings, versions get copied to the Preservation Hold library and exist as a separate item. If a user suspects their files have been compromised, they can investigate file changes by reviewing the retained copy. File Restore can then be used to recover files within the last 30 days.
 
+    To minimize the burden on your security and IT helpdesk staff, train your users on [retention for SharePoint and OneDrive](/microsoft-365/compliance/retention-policies-sharepoint).
+
+
 For OneDrive and SharePoint data, Microsoft can roll back to a previous point in time for up to 14 days if you are hit by a mass attack.
 
 [Files Restore](https://techcommunity.microsoft.com/t5/microsoft-onedrive-blog/announcing-new-onedrive-for-business-feature-files-restore/ba-p/147436) is a complete self-service recovery solution for OneDrive that allows administrators and end users to restore files from any point in time during the last 30 days.
 
-Email:
+Email is protected by:
 
-- With single item recovery and mailbox retention, you can recover items in a mailbox upon inadvertent or malicious premature deletion. You can rollback mail messages deleted within 14 days by default, configurable up to 30 days.
+- Single item recovery and mailbox retention, in which you can recover items in a mailbox upon inadvertent or malicious premature deletion. You can rollback mail messages deleted within 14 days by default, configurable up to 30 days.
 
 - Retention policies allow you to retain immutable copies of email for up to 10 years.
 
-### Encrypting files
+### Encrypting files in place
 
 As previously described, files in SharePoint and OneDrive for Business are protected from encryption by:
 
@@ -74,15 +81,23 @@ As previously described, files in SharePoint and OneDrive for Business are prote
 
 For additional details, see [Dealing with data corruption in Microsoft 365](/compliance/assurance/assurance-dealing-with-data-corruption).
 
-### Copying files outside the tenant 
+### Copying files outside your tenant 
 
-DLP policies
+You can prevent a ransomware attacker from copying files outside your tenant with:
 
-Microsoft Cloud App Security session policies (/cloud-app-security/tutorial-dlp#how-to-discover-and-protect-sensitive-information-in-your-organization)
+- [Data Loss Prevention (DLP)](/microsoft-365/compliance/dlp-learn-about-dlp) policies
 
-ADD
+   Detect, warn, and block risky, inadvertent, or inappropriate sharing of data containing personal or confidential information, both internally and externally:
 
+    - Personal information such as personally identifying information (PII) for compliance with regional privacy regulations.
 
+    - Confidential information based on sensitivity labels
+
+- [Microsoft Cloud App Security](/cloud-app-security/what-is-cloud-app-security)
+
+    Block downloads of sensitive information such as files. 
+
+    You can also use session policies for [Microsoft Cloud App Security Conditional Access App Control](/cloud-app-security/tutorial-dlp#how-to-discover-and-protect-sensitive-information-in-your-organization) to monitor the flow of information between a user and an application in real time.
 
 ## What’s in this solution
 
@@ -113,8 +128,8 @@ To protect your Microsoft 365 tenant from a ransomware attack, use these Microso
 |:-------|:-----|:-------|:-------|
 | Microsoft Secure Score |  Feature of Microsoft 365 Defender that measures the security posture of a Microsoft 365 tenant. | Assess your security configuration and provide suggestions to improve it | E3 or E5 |
 | Attack surface reduction rules | Configuration settings to reduce your organization's vulnerability to cyberthreats and attacks. | Block suspicious activity and vulnerable content | E3 or E5 |
-| Exchange email settings |  Enables services to reduce your organization's vulnerability to an email-based attack. | Initial access to your tenant  | E3 or E5 |
-| Windows, Edge, and Microsoft 365 Apps for Enterprise settings | Industry-standard security configurations that are broadly known and well-tested. | Attacks based on  | E3 or E5 |
+| Exchange email settings |  Enables services to reduce your organization's vulnerability to an email-based attack. | Prevent initial access to your tenant through phishing and other email-based attacks  | E3 or E5 |
+| Windows, Edge, and Microsoft 365 Apps for Enterprise settings | Industry-standard security configurations that are broadly known and well-tested. | Prevent attacks through Windows, Edge, and Microsoft 365 Apps for Enterprise | E3 or E5 |
 
 ### 2. Detection and response
 
@@ -149,7 +164,7 @@ For Windows 10 devices:
 |:-------|:-----|:-------|:-------|
 | Microsoft Defender Firewall | A host-based firewall.  | Prevent attacks from inbound, unsolicited network traffic. | E3 and E5 |
 | Microsoft Defender Antivirus | Antimalware solution that uses machine learning, big-data analysis, in-depth threat resistance research, and the Microsoft cloud infrastructure to protect devices (or endpoints) in your organization. | Prevent installation and running of malware. | E3 and E5 |
-| Microsoft Defender SmartScreen | Protects against phishing or malware websites and applications, and the downloading of potentially malicious files. | To block or warn when checking sites, downloads, apps and files. | E3 and E5 |
+| Microsoft Defender SmartScreen | Protects against phishing or malware websites and applications, and the downloading of potentially malicious files. | To block or warn when checking sites, downloads, apps, and files. | E3 and E5 |
 | Microsoft Defender for Endpoint | Helps prevent, detect, investigate, and respond to advanced threats across devices (also referred to as endpoints). | With tampering protection and network protection | E5 |
 |  |  |  |  |
 
