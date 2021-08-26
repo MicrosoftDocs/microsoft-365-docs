@@ -27,6 +27,10 @@ As the admin of a Microsoft 365 Business Standard subscription, you can invite y
 - Use one license to cover fully installed Office apps on five mobile devices, five tablets, and five PCs or Macs per user.
 - Get help anytime with around-the-clock phone and web support from Microsoft.
 
+## Before you begin
+
+Make sure you’ve already [signed up for Microsoft 365 Business Standard](signup-business-standard.md) and you’ve [set up your Business Standard organization](../setup/setup-business-standard.md). Once you’ve completed those steps, you can share an invite to your users.
+
 ## Share an invitation to a Microsoft 365 Business Standard subscription
 
 1. In the Microsoft 365 admin center, select **Create an account for another person**.
@@ -36,6 +40,33 @@ As the admin of a Microsoft 365 Business Standard subscription, you can invite y
 ## Next steps
 
 Follow up with your users and make sure they got the email invite you sent about sharing your Microsoft 365 Business Standard subscription.
+
+## Frequently asked questions
+
+### I didn’t receive an upgrade email?
+
+Check your spam folder. If it’s not there, contact your admin and ask them to send the email again.
+
+### I have a question about upgrading my account, who can I talk to?
+
+Contact our small business support experts who can help you upgrade your Microsoft 365 subscription. Learn more at [Get support](../../business-video/get-help-support.md).
+
+### What happens to my data when I upgrade?
+
+Your data will remain in your old account, nothing will be deleted. You should move your work files to your new work account. Learn more at [Migrate data to my Microsoft 365 Business Standard subscription](migrate-data-business-standard.md).
+
+### What happens to my existing account?
+
+Your existing account will remain. After 60 days ...
+
+### Does the way I login to Windows change when I get a new business account?
+
+No it doesn’t, you can still login the same way as before.
+
+### How can I send and receive emails with my new business email?
+
+- First follow: [Set up Outlook for business email](../../business-video/setup-outlook.md).
+- Then follow: [Create and send email in Outlook](https://support.microsoft.com/office/create-and-send-email-in-outlook-19c32deb-08b6-4f90-a211-02bc5f77f360).
 
 ## Related content
 

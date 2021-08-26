@@ -57,7 +57,7 @@ Make sure you have your current account sign in details before you start these s
 
 Follow the steps in the [Migrate data to my Microsoft 365 Business Standard subscription](migrate-data-business-standard.md) to move your OneDrive, Outlook and Teams data.
 
-## Join a personal Microsoft 365 Business Standard organization
+## Join a Microsoft 365 Business Standard organization using an Outlook, Yahoo, Gmail or other account
 
 Your email looks like this to set up your user account. When you get this email, you'll have to complete a few steps before you can start using your new user account.
 
@@ -78,6 +78,53 @@ Your email looks like this to set up your user account. When you get this email,
 ### No data to migrate?
 
 Download and start using [Office apps for business](https://support.microsoft.com/office/install-office-apps-from-office-365-dcf2d841-dac7-455b-9a77-fc8f7ee92702).
+
+## Frequently asked questions
+
+## I didn’t receive an upgrade email?
+
+Check your spam folder. If it’s not there, contact your admin and ask them to send the email again.
+
+### I have a question about upgrading my account, who can I talk to?
+
+Contact our small business support experts who can help you upgrade your Microsoft 365 subscription. Learn more at [Get support](../../business-video/get-help-support.md).
+
+### What happens to my data when I upgrade?
+
+Your data will remain in your old account, nothing will be deleted. You should move your work files to your new work account. Learn more at [Migrate data to my Microsoft 365 Business Standard subscription](migrate-data-business-standard.md).
+
+## What happens to my existing account?
+
+Your existing account will remain. After 60 days ...
+
+Your data will remain in your old account, nothing will be deleted. You should move your work files to your new work account. Learn more at [Migrate data to my Microsoft 365 Business Standard subscription](migrate-data-business-standard.md).
+
+### What happens to my existing account?
+
+Your existing account will remain. After 60 days...
+
+### How do I get started with my new account?
+
+You should have received an email from your admin. Please follow the steps outlined. If you didn't receive an email, check your spam folder and if it's not there, contact your admin and ask them to send the email again.
+
+### Why does it say my admin now handles my data?
+
+Your new work account data will be handled by your administrator. Learn more...
+
+### How can I copy data to my business account?  
+
+Copy data from your old account to your new business account by following: [Migrate data to my Microsoft 365 Business Standard subscription](migrate-data-business-standard.md).
+
+For moving email or contact data, follow: [Migrate email and contacts to Microsoft 365](../setup/migrate-email-and-contacts-admin.md).
+
+## Does the way I login to Windows change when I get a new business account?
+
+No it doesn’t, you can still login the same way as before.
+
+## How can I send and receive emails with my new business email?
+
+- First follow: [Set up Outlook for business email](../../business-video/setup-outlook.md).
+- Then follow: [Create and send email in Outlook](https://support.microsoft.com/office/create-and-send-email-in-outlook-19c32deb-08b6-4f90-a211-02bc5f77f360).
 
 <!--1. Open any of your Microsoft 365 apps, like Word, Excel or PowerPoint, select your profile icon and then **Sign in with a different account**. Follow the steps and choose **Next** to set up Outlook.
 

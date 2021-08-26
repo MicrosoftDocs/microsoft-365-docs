@@ -46,13 +46,13 @@ To sign up and purchase Microsoft 365 Business Standard (or Microsoft 365 Apps) 
 > [!IMPORTANT]
 > You can decide to add your domain now or later. If you're ready to buy or add a domain, follow the steps in [Set up Microsoft 365 Business Standard](../setup/setup-business-standard.md). If you're not ready to add or buy a domain yet, follow the steps in [Sign in wity your current personal email](#sign-in-with-your-current-personal-email).
 
-### Create a new business email account (recommended)
+### Create a new business email account
 
-In this scenario, you want to add an existing domain you already own or buy a new domain, and create new business email accounts and a calender for you users. All users will have a shared domain email address. For example, their username, followed by @contoso.com. You and your users sign into Microsoft 365 with this new email address. For steps on how to buy or add a domain, see [Set up Microsoft 365 Business Standard](../setup/setup-business-standard.md).
+In this scenario, you'll be able to use Microsoft 365 Exchange as your professional, branded email provider. All your users will have a shared domain email address. For example, their username, followed by @contoso.com. You and your users sign into Microsoft 365 with this new email address. When you follow this process (add a domain and create new business email accounts), you’ll get access to all the features provided in Microsoft 365 Business Standard. For steps on how to buy or add a domain, see [Set up Microsoft 365 Business Standard](../setup/setup-business-standard.md).
 
-### Sign in with your current personal email
+### Sign in with your Outlook, Hotmail, Yahoo, Gmail or other email account
 
-You'll sign into Microsoft 365 with this email address. For example, alliebellew@hotmail.com.
+You'll sign into Microsoft 365 with this email address. For example, alliebellew@hotmail.com. Signing in with your current email address is the easiest and fastest way to get started.
 
 8. Create a password on the next page, and select **Create account** to continue. On the next page, read about how we handle your data and select whether you want Microsoft Partners to contact you. Select **Next**.
 
@@ -71,13 +71,26 @@ You'll sign into Microsoft 365 with this email address. For example, alliebellew
 
 ### What is a business email and what are the advantages to setting one up?
 
+A business email is an email that uses your own domain name. For example, if you own the domain name contoso.com, you can build a website using the url www.contoso.com, but you can also have a custom email address such as yourname@contoso.com. This is referred to as a branded business email as it gives your email a professional look.
+
 ### Why do I need to verify my domain to create a business email?
+
+We need to make sure you own the domain and can use it successfully with Microsoft 365. This is for security and to prevent fraudulent activity. As part of that, we ask you to verify the domain so you can send emails via Microsoft 365.
 
 ### Is there a benefit to paying monthly vs annually?
 
+To provide customers with the greatest amount of flexibility, different payment options are available.
+
+- Microsoft 365 Business Basic, Apps for business, Business Standard, and Business Premium plans are available for monthly commitment payment or annual commitment payment.
+- Monthly commitment payment: You pay month by month, and you can cancel at any time.
+- Annual commitment payment: You sign up for a one-year subscription, but you can choose to pay month to month or pay for the entire year at the time you sign up. There is a discount for using this payment option.
+
 ### How does recurring billing work?
 
-### What if I want to change my business name in future, how do I do that?
+When Recurring billing is on, your subscription will continue to be billed each year on the day you subscribed. You can turn it off or back on again in the admin center if your subscription is active. Learn more at [Turn recurring billing off or on](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/renew-your-subscription?#turn-recurring-billing-off-or-on).
+
+### What if I want to change my business name in future? How do I do that?
+
 
 ## Related articles
 

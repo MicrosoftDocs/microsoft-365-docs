@@ -20,6 +20,9 @@ description: "Move your Outlook, OneDrive and Teams data to Microsoft 365 Busine
 
 Follow the steps in this article to move your OneDrive, Outlook and Teams data to your Microsoft 365 Business Standard subscription.
 
+> [!IMPORTANT]
+> You can still keep your data in your personal account. The data in your personal account won’t expire once you create a new business email account and migrate your data. You can move all your data to your new business account or you can move some of your data. For example, you can move your work documents to your business account, but keep your personal family photos in your personal account.
+
 ## Move files to OneDrive for business
 
 This section describes how to move the files stored in your Microsoft 365 personal account to your Microsoft 365 business account. With both OneDrive accounts synced to your device, you can easily drag and drop the files between two OneDrive folders.
@@ -104,9 +107,25 @@ More at [Import email with Outlook](https://support.microsoft.com/office/6a3771d
 
 You can also use Exchange admin center to import everyone's email. For more information, see [migrate multiple email accounts](/Exchange/mailbox-migration/mailbox-migration).
 
-## Move data from Teams personal to Teams for business
+## Move data from Teams for life to Teams for work
 
-Open Microsoft Teams, select your profile icon, and then **Add work or school account**. Follow the steps to add your new account to Teams.
+Open Microsoft Teams for work, select your profile icon, and then add your work account. Follow the steps to add your new account to Teams. Check out Sign in and get started with Teams for more info.
+
+### Access Teams chats
+
+When you start using Teams for work, your data won’t be migrated over. The best way to see your old chats is to open Teams for life and Teams for work side by side. You can start using you new Teams for life with your colleagues. Make sure to tell other users you chat with in Teams for life to start contacting you using your new Teams for work account.
+
+### Teams meetings
+
+You can start creating new Teams meetings once you’ve got Teams for business set up. Delete your original Teams for life meetings and recreate the meetings in Teams for work. You can only delete meetings from your own Teams calendar, so make sure you let people who you have meetings with know that you’ll be recreating your meetings.
+
+### Migrating contacts
+
+To move your Teams for life contacts over to Teams for work, find the contact’s email address and add the user to your new Teams for work account.
+
+### Activity feed
+
+You can save your activity feeds a couple of ways. You can take screenshots of your activity feeds and save a share or you can copy and paste your data to another product, for example, Microsoft OneNote.
 
 ## Related content
 
