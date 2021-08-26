@@ -11,7 +11,7 @@ localization_priority: normal
 ms.topic: article
 author: denisebmsft
 ms.author: deniseb
-ms.date: 08/25/2021
+ms.date: 08/26/2021
 ms.reviewer: mkaminska
 manager: dansimp
 ms.custom: nextgen
@@ -81,4 +81,4 @@ Cloud protection works together with Microsoft Defender Antivirus to deliver pro
   
 ## See also
 
-[Why cloud protection should be turned on](cloud-protection-microsoft-defender-antivirus.md#why-cloud-protection-should-be-turned-on)
+[Why cloud protection should be enabled for Microsoft Defender Antivirus](why-cloud-protection-should-be-on-mdav.md)
