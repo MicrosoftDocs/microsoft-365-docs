@@ -109,11 +109,11 @@ You can also use Exchange admin center to import everyone's email. For more info
 
 ## Move data from Teams for life to Teams for work
 
-Open Microsoft Teams for work, select your profile icon, and then add your work account. Follow the steps to add your new account to Teams. Check out Sign in and get started with Teams for more info.
+Open Microsoft Teams for work, select your profile icon, and then add your work account. Follow the steps to add your new account to Teams. Check out [Sign in and get started with Teams](https://support.microsoft.com/office/sign-in-and-get-started-with-teams-6723dc43-dbc0-46e6-af49-8a2d1c5cb937) for more info.
 
 ### Access Teams chats
 
-When you start using Teams for work, your data won’t be migrated over. The best way to see your old chats is to open Teams for life and Teams for work side by side. You can start using you new Teams for life with your colleagues. Make sure to tell other users you chat with in Teams for life to start contacting you using your new Teams for work account.
+When you start using Teams for work, your data won’t be migrated over. The best way to see your old chats is to open Teams for life and Teams for work side by side. You can start using your new Teams for life with your colleagues. Make sure to tell other users you chat with in Teams for life to start contacting you using your new Teams for work account.
 
 ### Teams meetings
 
