@@ -29,7 +29,7 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Deploying Defender for Endpoint is a three-phase process:
 
@@ -86,7 +86,7 @@ required in technologies or processes.
 
 Microsoft recommends using the concept of least privileges. Defender for Endpoint leverages built-in roles within Azure Active Directory. Microsoft recommends
 [review the different roles that are
-available](/azure/active-directory/active-directory-assign-admin-roles-azure-portal)
+available](/azure/active-directory/roles/permissions-reference)
 and choose the right one to solve your needs for each persona for this
 application. Some roles may need to be applied temporarily and removed after the
 deployment has been completed.

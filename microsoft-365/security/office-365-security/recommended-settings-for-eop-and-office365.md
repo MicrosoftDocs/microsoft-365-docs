@@ -1,20 +1,20 @@
 ---
 title: Microsoft recommendations for EOP and Defender for Office 365 security settings
 keywords: Office 365 security recommendations, Sender Policy Framework, Domain-based Message Reporting and Conformance, DomainKeys Identified Mail, steps, how does it work, security baselines, baselines for EOP, baselines for Defender for Office 365 , set up Defender for Office 365 , set up EOP, configure Defender for Office 365, configure EOP, security configuration
-f1.keywords: 
+f1.keywords:
   - NOCSH
 ms.author: tracyp
 author: MSFTTracyP
-ms.date: 
+ms.date:
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
 
 localization_priority: Normal
-search.appverid: 
+search.appverid:
   - MET150
 ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
-ms.collection: 
+ms.collection:
   - M365-security-compliance
   - m365initiative-defender-office365
 description: What are best practices for Exchange Online Protection (EOP) and Defender for Office 365 security settings? What's the current recommendations for standard protection? What should be used if you want to be more strict? And what extras do you get if you also use Defender for Office 365?
@@ -70,7 +70,7 @@ To create and configure anti-spam policies, see [Configure anti-spam policies in
 |**Actions**|||||
 |**Spam** detection action <p> _SpamAction_|**Move message to Junk Email folder** <p> `MoveToJmf`|**Move message to Junk Email folder** <p> `MoveToJmf`|**Quarantine message** <p> `Quarantine`||
 |**High confidence spam** detection action <p> _HighConfidenceSpamAction_|**Move message to Junk Email folder** <p> `MoveToJmf`|**Quarantine message** <p> `Quarantine`|**Quarantine message** <p> `Quarantine`||
-|**Phishing** detection action <p> _PhishSpamAction_|**Move message to Junk Email folder** <p> `MoveToJmf`|**Quarantine message** <p> `Quarantine`|**Quarantine message** <p> `Quarantine`||
+|**Phishing** detection action <p> _PhishSpamAction_|**Quarantine message** <p> `MoveToJmf`|**Quarantine message** <p> `Quarantine`|**Quarantine message** <p> `Quarantine`||
 |**High confidence phishing** detection action <p> _HighConfidencePhishAction_|**Quarantine message** <p> `Quarantine`|**Quarantine message** <p> `Quarantine`|**Quarantine message** <p> `Quarantine`||
 |**Bulk** detection action <p> _BulkSpamAction_|**Move message to Junk Email folder** <p> `MoveToJmf`|**Move message to Junk Email folder** <p> `MoveToJmf`|**Quarantine message** <p> `Quarantine`||
 |**Retain spam in quarantine for this many days** <p> _QuarantineRetentionPeriod_|15 days|30 days|30 days||
@@ -304,8 +304,8 @@ In PowerShell, you use the [New-SafeAttachmentPolicy](/powershell/module/exchang
 
 |Security feature name|Default|Standard|Strict|Comment|
 |---|:---:|:---:|:---:|---|
-|**Safe Attachments unknown malware response** <p> _Action_|**Off** <p> `Block`|**Block** <p> `Block`|**Block** <p> `Block`||
-|**Redirect attachment with detected attachments** : **Enable redirect** <p> _Redirect_ <p> _RedirectAddress_|Not selected and no email address specified. <p> `$true` <p> none|Selected and specify an email address. <p> `$true` <p> an email address|Selected and specify an email address. <p> `$true` <p> an email address|Redirect messages to a security admin for review.|
+|**Safe Attachments unknown malware response** <p> _Enable_ and _Action_|**Off** <p> `-Enable $false` and `-Action Block`|**Block** <p> `-Enable $true` and `-Action Block`|**Block** <p> `-Enable $true` and `-Action Block`|When the _Enable_ parameter is $false, the value of the _Action_ parameter doesn't matter.|
+|**Redirect attachment with detected attachments** : **Enable redirect** <p> _Redirect_ <p> _RedirectAddress_|Not selected and no email address specified. <p> `-Redirect $false` <p> _RedirectAddress_ is blank (`$null`)|Selected and specify an email address. <p> `$true` <p> an email address|Selected and specify an email address. <p> `$true` <p> an email address|Redirect messages to a security admin for review.|
 |**Apply the Safe Attachments detection response if scanning can't complete (timeout or errors)** <p> _ActionOnError_|Selected <p> `$true`|Selected <p> `$true`|Selected <p> `$true`||
 |
 
@@ -348,14 +348,14 @@ In PowerShell, you use the [New-SafeLinksPolicy](/powershell/module/exchange/new
 |---|:---:|:---:|:---:|---|
 |**Protection settings**|||||
 |**Select the action for unknown potentially malicious URLs in messages** <p> _IsEnabled_|**Off** <p> `$false`|**On** <p> `$true`|**On** <p> `$true`||
-|**Select the action for unknown or potentially malicious URLs within Microsoft Teams** <p> _EnableSafeLinksForTeams_|**Off** <p> `$false`|**On** <p> `$true`|**On** <p> `$true`|As of March 2020, this feature is in Preview and is available or functional only for members of the Microsoft Teams Technology Adoption Program (TAP).|
+|**Select the action for unknown or potentially malicious URLs within Microsoft Teams** <p> _EnableSafeLinksForTeams_|**Off** <p> `$false`|**On** <p> `$true`|**On** <p> `$true`||
 |**Apply real-time URL scanning for suspicious links and links that point to files** <p> _ScanUrls_|Not selected <p> `$false`|Selected <p> `$true`|Selected <p> `$true`||
 |**Wait for URL scanning to complete before delivering the message** <p> _DeliverMessageAfterScan_|Not selected <p> `$false`|Selected <p> `$true`|Selected <p> `$true`||
 |**Apply Safe Links to email messages sent within the organization** <p> _EnableForInternalSenders_|Not selected <p> `$false`|Selected <p> `$true`|Selected <p> `$true`||
 |**Do not track user clicks** <p> _DoNotTrackUserClicks_|Not selected <p> `$false`|Not selected <p> `$false`|Not selected <p> `$false`|Turning off this setting (setting _DoNotTrackUserClicks_ to `$false`) tracks users clicks.|
 |**Do not let users click through to the original URL** <p> _DoNotAllowClickThrough_|Not selected <p> `$false`|Selected <p> `$true`|Selected <p> `$true`|Turning on this setting (setting _DoNotAllowClickThrough_ to `$true`) prevents click through to the original URL.|
 |**Display the organization branding on notification and warning pages** <p> _EnableOrganizationBranding_|Not selected <p> `$false`|Not selected <p> `$false`|Not selected <p> `$false`|We have no specific recommendation for this setting. <p> Before you turn on this setting, you need to follow the instructions in [Customize the Microsoft 365 theme for your organization](../../admin/setup/customize-your-organization-theme.md) to upload your company logo.|
-|**Do no rewrite the following URLs** <p> _DoNotRewriteUrls_|Not selected <p> `$false`|Not selected <p> `$true`|Not selected <p> `$true`|We have no specific recommendation for this setting. For more information, see ["Do not rewrite the following URLs" lists in Safe Links policies](safe-links.md#do-not-rewrite-the-following-urls-lists-in-safe-links-policies).|
+|**Do not rewrite the following URLs** <p> _DoNotRewriteUrls_|Not selected <p> blank|Not selected <p> blank|Not selected <p> blank|We have no specific recommendation for this setting. For more information, see ["Do not rewrite the following URLs" lists in Safe Links policies](safe-links.md#do-not-rewrite-the-following-urls-lists-in-safe-links-policies).|
 |**Notification**|||||
 |**How would you like to notify your users?**|**Use the default notification text**|**Use the default notification text**|**Use the default notification text**|We have no specific recommendation for this setting. <p> You can select **Use custom notification text** (_CustomNotificationText_) to enter customized notification text to use. You can also select **Use Microsoft Translator for automatic localization** (_UseTranslatedNotificationText_) to translate the custom notification text into the user's language.
 |

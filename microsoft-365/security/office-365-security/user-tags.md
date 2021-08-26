@@ -42,6 +42,7 @@ After you apply system tags or custom tags to users, you can use those tags as f
 - [Email entity page](mdo-email-entity-page.md#other-innovations)
 - [Threat protection status report](view-email-security-reports.md#threat-protection-status-report)
 - [Campaign Views](campaigns.md)
+- [Admin and user submissions](admin-submission.md)
 - For priority accounts, you can use the [Email issues for priority accounts report](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report) in the Exchange admin center (EAC).
 
 This article explains how to configure user tags in the Microsoft 365 Defender portal. There are no cmdlets in Microsoft 365 Defender portal to manage user tags.

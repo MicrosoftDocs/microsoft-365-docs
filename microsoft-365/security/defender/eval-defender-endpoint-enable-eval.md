@@ -1,5 +1,5 @@
 ---
-title: Enable Microsoft Defender for Endpoint evaluation, activate the evaluation for MDE
+title: Enable Microsoft Defender for Endpoint evaluation
 description: Enable your Microsoft 365 Defender trial lab or pilot environment, including checking license state, and onboarding enpoints
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -59,7 +59,9 @@ You'll first need to check the license state to verify that it was properly prov
 
 After verifying that the license state has been provisioned properly, you can start onboarding devices to the service. 
 
-For the purpose of evaluating Microsoft Defender for Endpoint, we recommend choosing a couple of Windows 10 devices to conduct the evaluation on. 
+For the purpose of evaluating Microsoft Defender for Endpoint, we recommend choosing a couple of Windows 10 devices to conduct the evaluation on.
+
+You can choose to use any of the supported management tools, but Intune provides optimal integration. For more information, see [Configure Microsoft Defender for Endpoint in Microsoft Intune](/mem/intune/protect/advanced-threat-protection-configure.md#enable-microsoft-defender-for-endpoint-in-intune)
 
 The [Plan deployment](../defender-endpoint/deployment-strategy.md) topic outlines the general steps you need to take to deploy Defender for Endpoint.  
 
