@@ -27,7 +27,7 @@ TLGs are designed to be modular. They build upon each other to create multiple c
 
 You can also use TLGs to create representative environments for development and testing of applications, also known as dev/test environments.
   
-![Test Lab Guides for the Microsoft cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+![Test Lab Guides for the Microsoft cloud.](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 Try [this Test Lab Guide](team-security-isolation-dev-test.md) to set up a team with security isolation.
 

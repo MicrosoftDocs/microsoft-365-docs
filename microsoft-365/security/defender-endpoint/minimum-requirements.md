@@ -161,7 +161,7 @@ By default, this service is enabled. It's good practice to check to ensure that 
 
    If the service is enabled, then the result should look like the following screenshot:
 
-   ![Result of the sc query command for diagtrack](images/windefatp-sc-qc-diagtrack.png)
+   ![Result of the sc query command for diagtrack.](images/windefatp-sc-qc-diagtrack.png)
 
 
 You'll need to set the service to automatically start if the **START_TYPE** isn't set to **AUTO_START**.

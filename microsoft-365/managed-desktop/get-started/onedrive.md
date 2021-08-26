@@ -31,11 +31,11 @@ When Microsoft Managed Desktop users receive a new device, they go through a fir
 
 1. The system tells users that OneDrive has been configured and that they have been automatically signed into OneDrive.
 
-:::image type="content" source="media/onedrive-sync.png" alt-text="Notification reading you are now syncing OneDrive and you can edit files in OneDrive. click here to view your files":::
+:::image type="content" source="media/onedrive-sync.png" alt-text="Notification reading you are now syncing OneDrive and you can edit files in OneDrive. click here to view your files.":::
 
 2. The system tells users that OneDrive Known Folder Move has been configured for them.
 
-:::image type="content" source="media/onedrive-folders.png" alt-text="Notification reading Your IT department backed up your important folders. The folders are now backed up to OneDrive and available from other devices":::
+:::image type="content" source="media/onedrive-folders.png" alt-text="Notification reading Your IT department backed up your important folders. The folders are now backed up to OneDrive and available from other devices.":::
 
 3. To prevent duplicate icons on the desktop when devices are being reset or reimaged, the system automatically removes Microsoft Edge and Microsoft Teams icons from the OneDrive sync, as shown in this view in File Explorer.
 

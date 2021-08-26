@@ -125,14 +125,14 @@ To unblock a mailbox from sending mail, follow the procedures in [Removing a use
 
 1. Open the Microsoft 365 admin center at <https://admin.microsoft.com> and go to **Users** \> **Active users**.
 
-2. Find and select the user account, click ![More icon](../../media/ITPro-EAC-MoreOptionsIcon.png), and then select **Edit sign-in status**.
+2. Find and select the user account, click ![More icon.](../../media/ITPro-EAC-MoreOptionsIcon.png), and then select **Edit sign-in status**.
 
 3. On the **Block sign-in** pane that appears, select **Block this user from signing in**, and then click **Save changes**.
 
 4. Open the Exchange admin center (EAC) at <https://admin.exchange.microsoft.com>, and go to **Recipients** \> **Mailboxes**.
 
 5. Find and select the user. In the mailbox details flyout that opens, do the following steps:
-   - In the **Email apps** section, block all of the available settings by moving the toggle to the right ![Disable](../../media/scc-toggle-on.png):
+   - In the **Email apps** section, block all of the available settings by moving the toggle to the right ![Disable.](../../media/scc-toggle-on.png):
      - **Outlook on the web**
      - **Outlook desktop (MAPI)**
      - **Exchange Web Services**
@@ -149,7 +149,7 @@ To unblock a mailbox from sending mail, follow the procedures in [Removing a use
 
 1. Open the Microsoft 365 admin center at <https://admin.microsoft.com> with a global administrator account and do the following steps:
    1. Go to **Users** \> **Active users**.
-   2. Find and select the user account, click ![More icon](../../media/ITPro-EAC-MoreOptionsIcon.png), and then select **Manage roles**.
+   2. Find and select the user account, click ![More icon.](../../media/ITPro-EAC-MoreOptionsIcon.png), and then select **Manage roles**.
    3. Remove any administrative roles that are assigned to the account. When you're finished, click **Save changes**.
 
 2. Open the Microsoft 365 Defender portal at <https://security.microsoft.com> and do the following steps:
@@ -166,7 +166,7 @@ To unblock a mailbox from sending mail, follow the procedures in [Removing a use
    1. Select **Roles** \> **Admin roles**.
    2. On the **Admin roles** page, manually select each role group, and in the details pane, select the **Assigned** tab to verify the user accounts. If the role group contains the user account, do the following steps:
       1. Select the user account.
-      2. Click the ![Delete icon](../../media/m365-cc-sc-delete-icon.png).
+      2. Click the ![Delete icon.](../../media/m365-cc-sc-delete-icon.png).
 
          When you're finished, click **Save**.
 

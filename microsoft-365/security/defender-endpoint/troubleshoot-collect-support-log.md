@@ -42,15 +42,15 @@ This topic provides instructions on how to run the tool via Live Response.
 
 3. Select **Upload file to library**.
 
-    ![Image of upload file](images/upload-file.png)
+    ![Image of upload file.](images/upload-file.png)
 
 4. Select **Choose file**.
 
-    ![Image of choose file button1](images/choose-file.png)
+    ![Image of choose file button1.](images/choose-file.png)
 
 5. Select the downloaded file named MDELiveAnalyzer.ps1 and then click on **Confirm**
 
-   ![Image of choose file button2](images/analyzer-file.png)
+   ![Image of choose file button2.](images/analyzer-file.png)
 
 6. While still in the LiveResponse session, use the commands below to run the analyzer and collect the result file:
 
@@ -59,7 +59,7 @@ This topic provides instructions on how to run the tool via Live Response.
     GetFile "C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\MDEClientAnalyzerResult.zip"
     ```
 
-    [![Image of commands](images/analyzer-commands.png)](images/analyzer-commands.png#lightbox)
+    [![Image of commands.](images/analyzer-commands.png)](images/analyzer-commands.png#lightbox)
 
 > [!NOTE]
 >

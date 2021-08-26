@@ -30,7 +30,7 @@ ms.technology: m365d
 
 Part of your incident investigation can include user accounts. Start with the **Users** tab for an incident from **Incidents & alerts >** *incident* **> Users**. 
 
-:::image type="content" source="../../media/investigate-incidents/incident-users.png" alt-text="Example of a Users page for an incident":::
+:::image type="content" source="../../media/investigate-incidents/incident-users.png" alt-text="Example of a Users page for an incident.":::
 
 To get a quick summary of a user account for the incident, select the check mark next to the user account name. Here's an example.
 

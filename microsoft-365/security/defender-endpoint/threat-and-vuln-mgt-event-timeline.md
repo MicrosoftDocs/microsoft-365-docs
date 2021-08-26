@@ -51,18 +51,18 @@ In the threat and vulnerability management dashboard, hover over the Exposure sc
 
 If there are no events that affect your devices or your score for devices, then none will be shown.
 
-![Exposure score hover](images/tvm-event-timeline-exposure-score350.png) 
-![Microsoft Secure Score for Devices hover](images/tvm-event-timeline-device-hover360.png)
+![Exposure score hover.](images/tvm-event-timeline-exposure-score350.png) 
+![Microsoft Secure Score for Devices hover.](images/tvm-event-timeline-device-hover360.png)
 
 ### Drill down to events from that day
 
 Selecting **Show all events from this day** takes you to the Event timeline page with a custom date range for that day.
 
-![Event timeline selected custom date range](images/tvm-event-timeline-drilldown.png)
+![Event timeline selected custom date range.](images/tvm-event-timeline-drilldown.png)
 
 Select **Custom range** to change the date range to another custom one, or a pre-set time range.
 
-![Event timeline date range options](images/tvm-event-timeline-dates.png)
+![Event timeline date range options.](images/tvm-event-timeline-dates.png)
 
 ## Event timeline overview
 
@@ -76,7 +76,7 @@ Features:
 
 The two large numbers at the top of the page show the number of new vulnerabilities and exploitable vulnerabilities, not events. Some events can have multiple vulnerabilities, and some vulnerabilities can have multiple events.
 
-![Event timeline page](images/tvm-event-timeline-overview-mixed-type.png)
+![Event timeline page.](images/tvm-event-timeline-overview-mixed-type.png)
 
 ### Columns
 
@@ -97,10 +97,10 @@ The two large numbers at the top of the page show the number of new vulnerabilit
 
 The following icons show up next to events:
 
-- ![bug icon](images/tvm-black-bug-icon.png) New public exploit
-- ![report warning icon](images/report-warning-icon.png) New vulnerability was published
-- ![exploit kit](images/bug-lightning-icon2.png) Exploit found in exploit kit
-- ![bug icon with warning icon](images/bug-caution-icon2.png) Exploit verified
+- ![bug icon.](images/tvm-black-bug-icon.png) New public exploit
+- ![report warning icon.](images/report-warning-icon.png) New vulnerability was published
+- ![exploit kit.](images/bug-lightning-icon2.png) Exploit found in exploit kit
+- ![bug icon with warning icon.](images/bug-caution-icon2.png) Exploit verified
 
 ### Drill down to a specific event
 
@@ -108,7 +108,7 @@ Once you select an event, a flyout will appear with a list of the details and cu
 
 The arrow below "score trend" helps you determine whether this event potentially raised or lowered your organizational exposure score. Higher exposure score means devices are more vulnerable to exploitation.
 
-![Event timeline flyout](images/tvm-event-timeline-flyout500.png)
+![Event timeline flyout.](images/tvm-event-timeline-flyout500.png)
 
 From there, select **Go to related security recommendation** view the recommendation that addresses the new software vulnerability in the [security recommendations page](tvm-security-recommendation.md). After reading the description and vulnerability details in the security recommendation, you can submit a remediation request, and track the request in the [remediation page](tvm-remediation.md).  
 
@@ -118,11 +118,11 @@ To open a software page, select an event > select the hyperlinked software name 
 
 A full page will appear with all the details of a specific software. Mouse over the graph to see the timeline of events for that specific software.
 
-![Software page with an Event timeline graph](images/tvm-event-timeline-software2.png)
+![Software page with an Event timeline graph.](images/tvm-event-timeline-software2.png)
 
 Navigate to the event timeline tab to view all the events related to that software. You can also see security recommendations, discovered vulnerabilities, installed devices, and version distribution.
 
-![Software page with an Event timeline tab](images/tvm-event-timeline-software-pages.png)
+![Software page with an Event timeline tab.](images/tvm-event-timeline-software-pages.png)
 
 ## Related topics
 

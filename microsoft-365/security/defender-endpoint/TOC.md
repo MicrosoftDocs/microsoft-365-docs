@@ -481,6 +481,7 @@
 ####### [Alert methods and properties](alerts.md)
 ####### [List alerts](get-alerts.md)
 ####### [Create alert](create-alert-by-reference.md)
+####### [Batch update alerts](batch-update-alerts.md)
 ####### [Update Alert](update-alert.md)
 ####### [Get alert information by ID](get-alert-info-by-id.md)
 ####### [Get alert related domains information](get-alert-related-domain-info.md)
@@ -603,7 +604,7 @@
 ####### [List machines by vulnerability](get-machines-by-vulnerability.md)
 
 ##### [How to use APIs - Samples]()
-###### [Microsoft Flow](api-microsoft-flow.md)
+###### [Power Automate](api-microsoft-flow.md)
 ###### [Power BI](api-power-bi.md)
 ###### [Advanced Hunting using Python](run-advanced-query-sample-python.md)
 ###### [Advanced Hunting using PowerShell](run-advanced-query-sample-powershell.md)
