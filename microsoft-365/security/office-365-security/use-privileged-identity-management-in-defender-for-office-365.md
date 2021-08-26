@@ -1,5 +1,5 @@
 ---
-title: Use Privileged Identity Management (PIM) in Defender for Office 365.
+title: Use Privileged Identity Management (PIM) in Microsoft Defender for Office 365.
 f1.keywords:
   - NOCSH
 ms.author: tracyp
@@ -8,7 +8,6 @@ manager: dansimp
 ms.date: 08/09/2021
 audience: ITPro
 ms.topic: article
-
 localization_priority: Priority
 search.appverid:
   - MET150
@@ -60,7 +59,7 @@ The name of your user (here 'Alex') will appear under Eligible assignments on th
 
 Using [Privileged Access groups])https://docs.microsoft.com/en-us/azure/active-directory/privileged-identity-management/groups-features) we can now create our own custom groups and combine permissions or increase granularity where required to meet your organisational practices and needs.
 
-### Create a role group requiring the permissions we need.
+### Create a role group requiring the permissions we need
 
 In the Security Portal, create a custom role group that contains the permissions that we want. 
 
@@ -85,8 +84,7 @@ In the Security Portal, create a custom role group that contains the permissions
 
     `Add-RoleGroupMember "<<Role Group Name>>" -Member "<<Azure Security Group>>"`
 
-
-## How do you know this worked?
+## Test your configuration of PIM with Defender for Office 365
 
 1. Login with the test user, who will have zero administrative access.
 2. Navigate to PIM, where the user can activate their day to day security reader role.
