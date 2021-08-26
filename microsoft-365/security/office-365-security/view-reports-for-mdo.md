@@ -228,4 +228,4 @@ If you are not seeing data in your Defender for Office 365 reports, double-check
 
 [Smart reports and insights in the Microsoft 365 Defender portal](reports-and-insights-in-security-and-compliance.md)
 
-[Role permissions (Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-permissions)
+[Azure AD built-in roles](/azure/active-directory/roles/permissions-reference)
