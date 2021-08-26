@@ -61,7 +61,7 @@ When a file is created or edited on a  Windows device, Defender for Endpoint sca
 
 Turn on the Azure Information Protection integration so that when a file that contains sensitive information is discovered by Defender for Endpoint though labels or information types, it is automatically forwarded to Azure Information Protection from the device.
 
-![Image of settings page with Azure Information Protection](images/atp-settings-aip.png)
+![Image of settings page with Azure Information Protection.](images/atp-settings-aip.png)
 
 The reported signals can be viewed on the Azure Information Protection - Data discovery dashboard.
 
@@ -69,7 +69,7 @@ The reported signals can be viewed on the Azure Information Protection - Data di
 
 This dashboard presents a summarized discovery information of data discovered by both Defender for Endpoint and Azure Information Protection. Data from Defender for Endpoint is marked with Location Type - Endpoint.
 
-![Image of Azure Information Protection - Data discovery](images/azure-data-discovery.png)
+![Image of Azure Information Protection - Data discovery.](images/azure-data-discovery.png)
 
 Notice the Device Risk column on the right, this device risk is derived directly from Defender for Endpoint, indicating the risk level of the security device where the file was discovered, based on the active security threats detected by Defender for Endpoint.
 

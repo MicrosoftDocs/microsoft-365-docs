@@ -27,7 +27,7 @@ description: "Admin roles map to business functions and provide permissions to d
 
 On the Roles page, you can give users permissions to do tasks in the admin centers. This helps your organization spread tasks to the appropriate people and helps keep your data secure.
 
-![A figure that shows admin roles](../../media/roles-main-page.png)
+![A figure that shows admin roles.](../../media/roles-main-page.png)
 
 > [!TIP]
 > Looking for the detailed role descriptions? Check out [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference) and [About admin roles](/microsoft-365/admin/add-users/about-admin-roles).
@@ -36,7 +36,7 @@ On the Roles page, you can give users permissions to do tasks in the admin cente
 
 You can export the admin list as well as search and filter by role.
 
-![Filter or import admin roles](../../media/admin-role-page-options.png)
+![Filter or import admin roles.](../../media/admin-role-page-options.png)
 
 - Use Export admin list to get a full list of all the admin users in your organization. The list is stored in an Excel .csv file.
 
@@ -92,7 +92,7 @@ In the admin center:
 
 - Select up to 3 roles and choose **Compare roles** to see the permissions each role has.
 
-![A figure that shows a comparison of admin roles](../../media/compare-roles-list.png)
+![A figure that shows a comparison of admin roles.](../../media/compare-roles-list.png)
 
 ## Related content
 

@@ -35,7 +35,7 @@ ms.technology: mde
 
 While you are going through [Microsoft Defender for Endpoint on macOS](microsoft-defender-endpoint-mac.md) and [Manual deployment](mac-install-manually.md) testing or a Proof Of Concept (PoC), you might get the following error:
 
-![Image of license error](images/no-license-found.png)
+![Image of license error.](images/no-license-found.png)
 
 **Message:** 
 

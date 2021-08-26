@@ -33,7 +33,7 @@ Providing a path for B2B accounts to authenticate with your Azure AD tenant does
 
 This diagram shows which policies to add or update among the common identity and device access policies, for B2B guest and external user access.
 
-[![Summary of policy updates for protecting guest access](../../media/microsoft-365-policies-configurations/identity-access-ruleset-guest.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-ruleset-guest.png)
+[![Summary of policy updates for protecting guest access.](../../media/microsoft-365-policies-configurations/identity-access-ruleset-guest.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-ruleset-guest.png)
 
 The following table lists the policies you either need to create and update. The common policies link to the associated configuration instructions in the [Common identity and device access policies](identity-access-policies.md) article.
 
@@ -45,7 +45,7 @@ The following table lists the policies you either need to create and update. The
 
 To include or exclude guests and external users in Conditional Access policies, for **Assignments > Users and groups > Include** or **Exclude**, check **All guest and external users**.
 
-![screen capture of controls for excluding guests and external users](../../media/microsoft-365-policies-configurations/identity-access-exclude-guests-ui.png)
+![screen capture of controls for excluding guests and external users.](../../media/microsoft-365-policies-configurations/identity-access-exclude-guests-ui.png)
 
 ## More information
 
@@ -77,7 +77,7 @@ Only one organization can manage a device. If you don't exclude guests and exter
 
 ## Next step
 
-![Step 4: Policies for Microsoft 365 cloud apps and Microsoft Cloud App Security](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
+![Step 4: Policies for Microsoft 365 cloud apps and Microsoft Cloud App Security.](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
 
 Configure Conditional Access policies for:
 

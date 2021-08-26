@@ -53,11 +53,11 @@ Perform the following steps on your RRAS server.
 1. Right-click the server name and select **Properties**.
 1. In the **Security** tab, under **Accounting provider**, select **RADIUS Accounting** and select **Configure**.
 
-    ![RADIUS setup](../../media/defender-identity/radius-setup.png)
+    ![RADIUS setup.](../../media/defender-identity/radius-setup.png)
 
 1. In the **Add RADIUS Server** window, type the **Server name** of the closest [!INCLUDE [Product short](includes/product-short.md)] sensor (which has network connectivity). For high availability, you can add additional [!INCLUDE [Product short](includes/product-short.md)] sensors as RADIUS Servers. Under **Port**, make sure the default of 1813 is configured. Select **Change** and type a new shared secret string of alphanumeric characters. Take note of the new shared secret string as you'll need to fill it out later during [!INCLUDE [Product short](includes/product-short.md)] Configuration. Check the **Send RADIUS Account On and Accounting Off messages** box and select **OK** on all open dialog boxes.
 
-    ![VPN setup](../../media/defender-identity/vpn-set-accounting.png)
+    ![VPN setup.](../../media/defender-identity/vpn-set-accounting.png)
 
 ## Configure VPN in Defender for Identity
 
@@ -67,12 +67,12 @@ To configure VPN data in [!INCLUDE [Product short](includes/product-short.md)] i
 
 1. In [Microsoft 365 Defender](https://security.microsoft.com/), go to **Settings** and then **Identities**.
 
-    ![Go to Settings, then Identities](../../media/defender-identity/settings-identities.png)
+    ![Go to Settings, then Identities.](../../media/defender-identity/settings-identities.png)
 
 1. Select **VPN**.
 1. Select **Enable radius accounting**, and type the **Shared Secret** you configured previously on your RRAS VPN Server. Then select **Save**.
 
-    ![VPN integration](../../media/defender-identity/vpn-integration.png)
+    ![VPN integration.](../../media/defender-identity/vpn-integration.png)
 
 After this is enabled, all Defender for Identity sensors will listen on port 1813 for RADIUS accounting events, and your VPN setup is complete.
 

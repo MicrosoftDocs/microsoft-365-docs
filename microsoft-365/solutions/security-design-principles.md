@@ -22,7 +22,7 @@ In this article, [Kozeta Garrett](https://www.linkedin.com/in/kozeta-garrett-530
 
 ## About the author
 
-![Kozeta Garrett photo](../media/solutions-architecture-center/kozeta-garrett-security.jpg)
+![Kozeta Garrett photo.](../media/solutions-architecture-center/kozeta-garrett-security.jpg)
 
 In my role as a Cloud Security Architect, I've worked with multiple organizations to provide strategic and technical guidance focusing on designing and implementing security architecture for customers migrating to Microsoft 365 and Azure, developing enterprise security solutions, and helping transform security architecture and culture for business resilience. My experience includes incident detection and response, malware analysis, penetration testing, and recommending improvements to IT security and defense posture. I'm very passionate about leading transformations that result in security as an enabler for the business, including modernization efforts.
 
