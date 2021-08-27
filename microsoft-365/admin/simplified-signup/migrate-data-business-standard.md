@@ -13,7 +13,7 @@ ms.collection:
 - Adm_TOC
 ms.custom: 
 - AdminSurgePortfolio
-description: "Move your Outlook, OneDrive and Teams data to Microsoft 365 Business Standard"
+description: "Migrate your Outlook, OneDrive and Teams data to Microsoft 365 Business Standard"
 ---
 
 # Migrate data to my Microsoft 365 Business Standard subscription

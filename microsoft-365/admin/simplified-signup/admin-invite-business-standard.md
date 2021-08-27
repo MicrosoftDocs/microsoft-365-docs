@@ -43,7 +43,7 @@ Follow up with your users and make sure they got the email invite you sent about
 
 ## Frequently asked questions
 
-#### I shared an email invite but the user didn’t receive the invitation?
+#### I shared an email invite but the user didn’t receive the email?
 
 - Ask user to check their spam folder.
 - Resend the invite email in the Microsoft 365 admin center. From the admin center, hover over the user and select the action to resend email invite.

@@ -35,19 +35,19 @@ Make sure you have your current account sign in details before you start these s
 
 2. Before you can sign in to your new business account, you'll have to set it up with your existing user account. Select **Sign in** to log into your existing user account.
 
-1. You'll then sign out and back in with your new business user account. This is the user account that you'll use to sign into Microsoft 365 for business.
+3. You'll then sign out and back in with your new business user account. This is the user account that you'll use to sign into Microsoft 365 for business.
 
-3. Choose **Accept** on the **Terms and Conditions** page.
+4. Choose **Accept** on the **Terms and Conditions** page.
 
-1. On the **How you'll sign in** page, learn about your new account and select **Next**.
+5. On the **How you'll sign in** page, learn about your new account and select **Next**.
 
-1. On the **Add new account to desktop apps** page, open any Microsoft 365 app, select your profile and sign in with the new username and temporary password. select **Next**.
+6. On the **Add new account to desktop apps** page, open any Microsoft 365 app, select your profile and sign in with the new username and temporary password. select **Next**.
 
-1. Follow the steps on the **Add new account to Outlook** page to set up Outlook. Select **Next**.
+7. Follow the steps on the **Add new account to Outlook** page to set up Outlook. Select **Next**.
 
-1. Follow the steps on the **Move files to OneDrive for Business** page to set up OneDrive. Select **Next**.
+8. Follow the steps on the **Move files to OneDrive for Business** page to set up OneDrive. Select **Next**.
 
-1. On the **Add new account to Microsoft Teams** page, follow the steps to set up Teams. Select **I'm done** when you're complete.
+9. On the **Add new account to Microsoft Teams** page, follow the steps to set up Teams. Select **I'm done** when you're complete.
 
 ### Next steps - Migrate your data to Microsoft 365 Business Standard
 

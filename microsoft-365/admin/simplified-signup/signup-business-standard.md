@@ -35,8 +35,10 @@ To sign up and purchase Microsoft 365 Business Standard (or Microsoft 365 Apps) 
 3. On the **Thank you for choosing Microsoft 365 Business Standard** page, enter your information to get started. Select **Next**.
 4. Enter an email address that you already use. This can be any address you want Microsoft to use to communicate with you during setup. It is also the address where we'll send you information about your bill and renewals. Then select, **Set up account**.
 5. Enter your name, business phone number, business size, company name, and location. Your country or region determines the exact services you receive from Microsoft, and can't be changed after you complete this step. Select **Next**.
+
     > [!NOTE]
-    > We display your company name in the admin center; this is where you manage Microsoft 365 users, licenses, and so on. We also include it in any internal (SharePoint) site URLs.
+    > We display your company name in the admin center. This is where you manage Microsoft 365 users, licenses and other features and services. We also include it in any internal SharePoint site URLs.
+
 6. Help us make sure this is you. Enter a number that we can use to reach you and select **Send Verification Code**.
 
 - You'll receive a text. Enter your code and select **Verify**.

@@ -49,9 +49,9 @@ To add, modify or remove domains you must be a global administrator. For more in
 
 1. From the **How you'll sign in** page on the Microsoft 365 Business Standard sign up, choose **Create a new business email account (advanced)**.
 
-3. On the **Install your Office apps** page, you can optionally install the apps on your own computer.
+2. On the **Install your Office apps** page, you can optionally install the apps on your own computer.
 
-4. In the **Add domain** step, enter the domain name you want to use (like contoso.com).
+3. In the **Add domain** step, enter the domain name you want to use (like contoso.com).
 
     > [!IMPORTANT]
     > If you purchased a domain during the sign-up, you will not see **Add a domain** step here. Go to [Add users](#add-users-and-assign-licenses) instead.

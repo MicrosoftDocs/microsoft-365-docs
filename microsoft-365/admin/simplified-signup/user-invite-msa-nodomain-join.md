@@ -13,7 +13,7 @@ ms.collection:
 - Adm_TOC
 ms.custom: 
 - AdminSurgePortfolio
-description: "Accept invite to join a Microsoft 365 Business Standard organization"
+description: "Accept email invite to join a Microsoft 365 Business Standard organization using an Outlook, Yahoo, Gmail or other account."
 ---
 
 # Accept an email invitation to a Microsoft 365 Business Standard subscription organization using an Outlook, Yahoo, Gmail or other account (User)
