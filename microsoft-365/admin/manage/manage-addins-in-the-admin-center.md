@@ -135,7 +135,7 @@ After you deploy an add-in, your end users can start using it in their Office ap
   
 If the add-in supports add-in commands, the commands appear on the Office ribbon. In the following example, the command **Search Citation** appears for the **Citations** add-in. 
 
-![Office ribbon with Search Citations](../../media/553b0c0a-65e9-4746-b3b0-8c1b81715a86.png)
+![Office ribbon with Search Citations.](../../media/553b0c0a-65e9-4746-b3b0-8c1b81715a86.png)
   
 If the deployed add-in doesn't support add-in commands or if you want to view all deployed add-ins, you can view them via **My Add-ins**. 
   
@@ -147,13 +147,13 @@ If the deployed add-in doesn't support add-in commands or if you want to view al
     
 3. Double-click the add-in you deployed earlier (in this example, **Citations**).
 
-    ![Admin Managed tab of the Office Add-ins page](../../media/fd36ba81-9882-40f0-9fce-74f991aa97d5.png)
+    ![Admin Managed tab of the Office Add-ins page.](../../media/fd36ba81-9882-40f0-9fce-74f991aa97d5.png)
   
 ### In Outlook
 
 1. On the **Home** ribbon, select **Get Add-ins**.
 
-    ![Store button in Outlook](../../media/getaddinsicon.png)
+    ![Store button in Outlook.](../../media/getaddinsicon.png)
   
 2. Select **Admin-managed** in the left nav. 
 

@@ -12,7 +12,7 @@ author: mjcaparas
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
@@ -38,15 +38,17 @@ Retrieves a collection of [Machine Actions](machineaction.md).
 Supports [OData V4 queries](https://www.odata.org/documentation/).
 
 The OData's `$filter` query is supported on: `id`, `status`, `machineId`, `type`, `requestor`, and `creationDateTimeUtc` properties.
-<br>```$stop``` with max value of 10,000 
-<br>```$skip```
+
+`$stop` with max value of 10,000
+
+`$skip`
 
 See examples at [OData queries with Microsoft Defender for Endpoint](exposed-apis-odata-samples.md)
 
 ## Limitations
 
 1. Maximum page size is 10,000.
-2. Rate limitations for this API are 100 calls per minute and 1500 calls per hour. 
+2. Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
 
 ## Permissions
 
@@ -62,7 +64,7 @@ Delegated (work or school account)|Machine.ReadWrite|'Read and write machine inf
 > [!NOTE]
 > When obtaining a token using user credentials:
 >
-> - The user needs to have at least the following role permission: 'View Data' (See [Create and manage roles](user-roles.md) for more information)
+> The user needs to have at least the following role permission: 'View Data' (See [Create and manage roles](user-roles.md) for more information)
 
 ## HTTP request
 

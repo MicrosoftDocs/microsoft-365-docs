@@ -39,7 +39,7 @@ ms.technology: mde
 
 ## Onboard devices using Group Policy
 
-[![Image of the PDF showing the various deployment paths](images/onboard-gp.png)](images/onboard-gp.png#lightbox)
+[![Image of the PDF showing the various deployment paths.](images/onboard-gp.png)](images/onboard-gp.png#lightbox)
 
 Check out the [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)  or  [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) to see the various paths in deploying Defender for Endpoint.
 
@@ -177,7 +177,7 @@ Get the current list of attack surface reduction GUIDs from [Customize attack su
 
    This will set each up for audit only.
 
-   ![Image of attack surface reduction configuration](images/asr-guid.png)
+   ![Image of attack surface reduction configuration.](images/asr-guid.png)
 
 Policy|Setting
 ---|---
@@ -239,72 +239,70 @@ With Group Policy there isn't an option to monitor deployment of policies on the
 Create a new Group Policy or group these settings in with the other policies. This is dependent upon the customers environment and how they would like to roll out the service by targeting different OU’s (Organizational Units).
 
 1. After you choose the GP, or create a new one, edit the GP.
-2. Browse to **Computer Configuration** \> **Policies** \> **Administrative Templates** \> **Windows Components** \> **Microsoft Defender Antivirus** \> **Real-time Protection**.
+2. Browse to **Computer Configuration** > **Policies** > **Administrative Templates** > **Windows Components** > **Microsoft Defender Antivirus** > **Real-time Protection**.
+:::image type="content" source="images/realtime-protect.png" alt-text="real time protection.":::
+1. In the Quarantine folder, configure removal of items from Quarantine folder.
 
-   :::image type="content" source="images/realtime-protect.png" alt-text="real time protection":::
+    :::image type="content" source="images/removal-items-quarantine1.png" alt-text="removal items quarantine folder.":::
 
-3. In the Quarantine folder, configure removal of items from Quarantine folder.
-
-    :::image type="content" source="images/removal-items-quarantine1.png" alt-text="removal items quarantine folder":::
-
-    :::image type="content" source="images/config-removal-items-quarantine2.png" alt-text="config-removal quarantine":::
+    :::image type="content" source="images/config-removal-items-quarantine2.png" alt-text="config-removal quarantine.":::
 
 4. In the Scan folder, configure the scan settings.
 
-    :::image type="content" source="images/gpo-scans.png" alt-text="gpo scans":::
+    :::image type="content" source="images/gpo-scans.png" alt-text="gpo scans.":::
 
 ### Monitor all files in Real time protection
 
 Browse to **Computer Configuration** \> **Policies** \> **Administrative Templates** \> **Windows Components** \> **Microsoft Defender Antivirus** \> **Real-time Protection**.
 
-:::image type="content" source="images/config-monitor-incoming-outgoing-file-act.png" alt-text="configure monitoring for incoming outgoing file activity":::
+:::image type="content" source="images/config-monitor-incoming-outgoing-file-act.png" alt-text="configure monitoring for incoming outgoing file activity.":::
 
 ### Configure Windows Defender Smart Screen settings
 
 1. Browse to **Computer Configuration** \> **Policies** \> **Administrative Templates** \> **Windows Components** \> **Windows Defender SmartScreen** \> **Explorer**.
 
-    :::image type="content" source="images/config-windows-def-smartscr-explorer.png" alt-text="config windows defender smart screen explorer":::
+    :::image type="content" source="images/config-windows-def-smartscr-explorer.png" alt-text="config windows defender smart screen explorer.":::
+ 
+2. Browse to **Computer Configuration** > **Policies** > **Administrative Templates** > **Windows Components** > **Windows Defender SmartScreen** > **Microsoft Edge**.
 
-2. Browse to **Computer Configuration** \> **Policies** \> **Administrative Templates** \> **Windows Components** \> **Windows Defender SmartScreen** \> **Microsoft Edge**.
-
-    :::image type="content" source="images/config-windows-def-smartscr-explorer.png" alt-text="config windows defender smart screen Edge":::
+    :::image type="content" source="images/config-windows-def-smartscr-explorer.png" alt-text="config windows defender smart screen Edge.":::
 
 ### Configure Potentially Unwanted Applications
 
 Browse to **Computer Configuration** \> **Policies** \> **Administrative Templates** \> **Windows Components** \> **Microsoft Defender Antivirus**.
 
-:::image type="content" source="images/config-potential-unwanted-apps.png" alt-text="config potential unwanted app":::
+:::image type="content" source="images/config-potential-unwanted-apps.png" alt-text="config potential unwanted app.":::
 
-:::image type="content" source="images/config-potential-unwanted-apps2.png" alt-text="config potential":::
+:::image type="content" source="images/config-potential-unwanted-apps2.png" alt-text="config potential.":::
 
 ### Configure Cloud Deliver Protection and send samples automatically
 
 Browse to **Computer Configuration** \> **Policies** \> **Administrative Templates** \> **Windows Components** \> **Microsoft Defender Antivirus** \> **MAPS**.
 
-:::image type="content" source="images/gpo-maps1.png" alt-text="maps":::
+:::image type="content" source="images/gpo-maps1.png" alt-text="maps.":::
 
-:::image type="content" source="images/gpo-maps-block-atfirst-sight.png" alt-text="block at first sight":::
+:::image type="content" source="images/gpo-maps-block-atfirst-sight.png" alt-text="block at first sight.":::
 
-:::image type="content" source="images/gpo-maps-join-ms-maps.png" alt-text="join microsoft maps":::
+:::image type="content" source="images/gpo-maps-join-ms-maps.png" alt-text="join microsoft maps.":::
 
-:::image type="content" source="images/send-file-sample-further-analysis-require.png" alt-text="send file sample when further analysis is required":::
+:::image type="content" source="images/send-file-sample-further-analysis-require.png" alt-text="send file sample when further analysis is required.":::
 
 ### Check for signature update
 
 Browse to **Computer Configuration** \> **Policies** \> **Administrative Templates** \> **Windows Components** \> **Microsoft Defender Antivirus** \> **Signature Updates**
 
-:::image type="content" source="images/signature-update-1.png" alt-text="signature update":::
+:::image type="content" source="images/signature-update-1.png" alt-text="signature update.":::
 
-:::image type="content" source="images/signature-update-2.png" alt-text="signature definition update":::
+:::image type="content" source="images/signature-update-2.png" alt-text="signature definition update.":::
 
 ### Configure cloud deliver timeout and protection level
 
 Browse to **Computer Configuration** \> **Policies** \> **Administrative Templates** \> **Windows Components** \> **Microsoft Defender Antivirus** \> **MpEngine**.
 When you configure cloud protection level policy to **Default Microsoft Defender Antivirus blocking policy** this will disable the policy. This is what is required to set the protection level to the windows default.
 
-:::image type="content" source="images/config-extended-cloud-check.png" alt-text="config extended cloud check":::
+:::image type="content" source="images/config-extended-cloud-check.png" alt-text="config extended cloud check.":::
 
-:::image type="content" source="images/cloud-protection-level.png" alt-text="config cloud protection level":::
+:::image type="content" source="images/cloud-protection-level.png" alt-text="config cloud protection level.":::
 
 ## Related topics
 

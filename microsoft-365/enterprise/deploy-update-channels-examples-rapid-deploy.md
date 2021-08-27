@@ -98,7 +98,7 @@ Ongoing updates process:
 
 Here are the products, their channels, and the deployment groups used by this example organization. 
 
-![Deployment groups for broad deployment of the latest releases](../media/deploy-update-channels-examples-rapid-deploy/group-summary.png)
+![Deployment groups for broad deployment of the latest releases.](../media/deploy-update-channels-examples-rapid-deploy/group-summary.png)
 
 ## See also
 

@@ -228,7 +228,7 @@ To return to the default value of both the mailbox and SharePoint site for the s
 
 Unlike other locations, you can't toggle the status of the Skype location on to automatically include all users. Instead, when you turn on that location, you must then select the **Edit** option to manually choose the users whose conversations you want to retain:
 
-![Edit Skype location for retention policies](../media/skype-location-retention-policies.png)
+![Edit Skype location for retention policies.](../media/skype-location-retention-policies.png)
 
 After you select this **Edit** option, in the **Skype for Business** pane you can quickly include all users by selecting the hidden box before the **Name** column. However, it's important to understand that each user counts as a specific inclusion in the policy. So if you include 1,000 users by selecting this box, it's the same as if you manually selected 1,000 users to include, which is the maximum supported for Skype for Business.
 
@@ -266,7 +266,7 @@ Examples:
 
 At the end of the retention period, you choose whether you want the content to be permanently deleted:
 
-![Retention settings page](../media/b05f84e5-fc71-4717-8f7b-d06a29dc4f29.png)
+![Retention settings page.](../media/b05f84e5-fc71-4717-8f7b-d06a29dc4f29.png)
 
 ### Deleting content that's older than a specific age
 
