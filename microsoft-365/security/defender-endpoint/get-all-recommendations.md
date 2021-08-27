@@ -45,7 +45,7 @@ Returns information about all security recommendations affecting the organizatio
 *URL:** GET: /api/recommendations
 <br>Supports [OData V4 queries](https://www.odata.org/documentation/).
 <br>OData supported operators:
-<br>```$filter``` on:  ```id```, ```productName```, ```vendor```, ```recommendedVersion```, ```recommendationCategory```, ```subCategory```, ```severityScore```, ```remediationType```, ```recommendedProgram```, ```recommendedVendor``` and ```status``` properties.
+<br>```$filter``` on:  ```id```, ```productName```, ```vendor```, ```recommendedVersion```, ```recommendationCategory```, ```subCategory```, ```severityScore```, ```remediationType```, ```recommendedProgram```, ```recommendedVendor```, and ```status``` properties.
 <br>```$top``` with max value of 10,000.
 <br>```$skip```.
 <br>See examples at [OData queries with Microsoft Defender for Endpoint](exposed-apis-odata-samples.md).
