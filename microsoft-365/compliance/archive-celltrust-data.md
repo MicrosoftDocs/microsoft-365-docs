@@ -24,7 +24,7 @@ After CellTrust data is stored in user mailboxes, you can apply Microsoft 365 co
 
 The following overview explains the process of using a connector to archive CellTrust data in Microsoft 365.
 
-![Archiving workflow for CellTrust data](../media/CellTrustConnectorWorkflow.png)
+![Archiving workflow for CellTrust data.](../media/CellTrustConnectorWorkflow.png)
 
 1. Your organization works with CellTrust to set up and configure a CellTrust site.
 

@@ -36,7 +36,7 @@ Remote work needs these elements of security and compliance:
 
 Here are the features of Microsoft 365 that provide security and compliance services for hybrid workers.
 
-![Use these Microsoft 365 services to stay secure and compliant](../media/empower-people-to-work-remotely/remote-workers-security-compliance-grid.png)
+![Use these Microsoft 365 services to stay secure and compliant.](../media/empower-people-to-work-remotely/remote-workers-security-compliance-grid.png)
 
 ## Security
 
@@ -90,6 +90,6 @@ For your hybrid workers, you have implemented:
 
 ## Next step
 
-[![Step 4: Manage your devices, PCs, and other endpoints](../media/empower-people-to-work-remotely/remote-workers-step-grid-4.png)](empower-people-to-work-remotely-manage-endpoints.md)
+[![Step 4: Manage your devices, PCs, and other endpoints.](../media/empower-people-to-work-remotely/remote-workers-step-grid-4.png)](empower-people-to-work-remotely-manage-endpoints.md)
 
 Continue with [Step 4](empower-people-to-work-remotely-manage-endpoints.md) to manage your devices, PCs, and other endpoints.

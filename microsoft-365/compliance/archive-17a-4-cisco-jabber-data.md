@@ -24,7 +24,7 @@ After Cisco Jabber data is stored in user mailboxes, you can apply Microsoft 365
 
 The following overview explains the process of using a data connector to archive Cisco Jabber data in Microsoft 365.
 
-![Archiving workflow for Cisco Jabber data from 17a-4](../media/CiscoJabberDataParserConnectorWorkflow.png)
+![Archiving workflow for Cisco Jabber data from 17a-4.](../media/CiscoJabberDataParserConnectorWorkflow.png)
 
 1. Your organization works with 17a-4 to set up and configure the Cisco Jabber DataParser.
 

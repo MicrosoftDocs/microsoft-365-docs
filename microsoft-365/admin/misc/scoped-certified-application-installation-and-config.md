@@ -220,13 +220,13 @@ These steps are required to set up the integration between your ServiceNow insta
 
 - Select the integration user created in [Prerequisites (Basic Authentication)](#prerequisites-basic-authentication) step \#4 and select **Next**.
 
-:::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image13.png" alt-text="Graphical user interface, text, application Description automatically generated":::
+:::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image14.png" alt-text="Graphical user interface, text, application Description automatically generated":::
 
 7. \[The person who is a ServiceNow admin\] Set up Repository ID.
 
 Specify the repository ID, and then select **Next**.
 
-:::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image14.png" alt-text="Graphical user interface, text, application Description automatically generated":::
+:::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image15.png" alt-text="Graphical user interface, text, application Description automatically generated":::
 
 8. \[The person who is a ServiceNow admin\] Set up Application settings.
 

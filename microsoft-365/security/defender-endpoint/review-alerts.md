@@ -48,19 +48,19 @@ Note the detection status for your alert.
 
 - Prevented: The attempted suspicious action was avoided. For example, a file either wasn't written to disk or executed.
 
-  ![An alert page showing threat was prevented](images/detstat-prevented.png)
+  ![An alert page showing threat was prevented.](images/detstat-prevented.png)
 
 - Blocked: Suspicious behavior was executed and then blocked. For example, a process was executed but because it subsequently exhibited suspicious behaviors, the process was terminated.
 
-  ![An alert page showing threat was blocked](images/detstat-blocked.png)
+  ![An alert page showing threat was blocked.](images/detstat-blocked.png)
 
 - Detected: An attack was detected and is possibly still active.
 
-  ![An alert page showing threat was detected](images/detstat-detected.png)
+  ![An alert page showing threat was detected.](images/detstat-detected.png)
 
 You can then also review the *automated investigation details* in your alert's details pane, to see which actions were already taken, as well as reading the alert's description for recommended actions.
 
-![A snippet of the details pane with the alert description and automatic investigation sections highlighted](images/alert-air-and-alert-description.png)
+![A snippet of the details pane with the alert description and automatic investigation sections highlighted.](images/alert-air-and-alert-description.png)
 
 Other information available in the details pane when the alert opens includes MITRE techniques, source, and additional contextual details.
 
@@ -70,11 +70,11 @@ Selecting a device or a user card in the affected assets sections will switch to
 
 - **For devices**, the details pane will display information about the device itself, like Domain, Operating System, and IP. Active alerts and the logged on users on that device are also available. You can take immediate action by isolating the device, restricting app execution, or running an antivirus scan. Alternatively, you could collect an investigation package, initiate an automated investigation, or go to the device page to investigate from the device's point of view.
 
-   ![A snippet of the details pane when a device is selected](images/device-page-details.png)
+   ![A snippet of the details pane when a device is selected.](images/device-page-details.png)
 
 - **For users**, the details pane will display detailed user information, such as the user's SAM name and SID, as well as logon types performed by this user and any alerts and incidents related to it. You can select *Open user page* to continue the investigation from that user's point of view.
 
-   ![A snippet of the details pane when a user is selected](images/user-page-details.png)
+   ![A snippet of the details pane when a user is selected.](images/user-page-details.png)
 
 ## Related topics
 

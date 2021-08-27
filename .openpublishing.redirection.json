@@ -106,11 +106,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "microsoft-365/business/index.yml",
-      "redirect_url": "/microsoft-365/admin/index",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "microsoft-365/business/upgrade-to-windows-pro-creators-update.md",
       "redirect_url": "/microsoft-365/business-video/upgrade",
       "redirect_document_id": false
