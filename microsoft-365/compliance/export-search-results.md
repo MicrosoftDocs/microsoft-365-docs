@@ -32,7 +32,7 @@ Exporting the results of a Content search involves preparing the results, and th
   
 ## Before you export search results
 
-- To export search results, you have to be assigned the Export management role in Security & Compliance Center. This role is assigned to the built-in eDiscovery Manager role group. It isn't assigned by default to the Organization Management role group. For more information, see [Assign eDiscovery permissions](assign-ediscovery-permissions.md).
+- To export search results, you have to be assigned the Export management role in Microsoft 365 compliance center. This role is assigned to the built-in eDiscovery Manager role group. It isn't assigned by default to the Organization Management role group. For more information, see [Assign eDiscovery permissions](assign-ediscovery-permissions.md).
 
 - The computer you use to export the search results has to meet the following system requirements:
   
@@ -89,13 +89,13 @@ The first step is to prepare the search results for exporting. When you prepare 
   
 2. On the **Actions** menu at the bottom of the flyout page, click **Export results**.
 
-   ![Export results option in Actions menu](../media/ActionMenuExportResults.png)
+   ![Export results option in Actions menu.](../media/ActionMenuExportResults.png)
 
    The **Export results** flyout page is displayed. The export options available to export content depend on whether search results are located in mailboxes or sites or a combination of both.
 
 3. Under **Output options**, choose one of the following options:
   
-   ![Export output options](../media/ExportOutputOptions.png)
+   ![Export output options.](../media/ExportOutputOptions.png)
 
     - **All items, excluding ones that have unrecognized format, are encrypted, or weren't indexed for other reasons**. This option exports only indexed items.
   
@@ -107,7 +107,7 @@ The first step is to prepare the search results for exporting. When you prepare 
 
 4. Under **Export Exchange content as**, choose one of the following options:
   
-   ![Exchange options](../media/ExchangeExportOptions.png)
+   ![Exchange options.](../media/ExchangeExportOptions.png)
 
     - **One PST file for each mailbox**: Exports one PST file for each user mailbox that contains search results. Any results from the user's archive mailbox are included in the same PST file. This option reproduces the mailbox folder structure from the source mailbox.
   
@@ -119,7 +119,7 @@ The first step is to prepare the search results for exporting. When you prepare 
   
 5. Configure the following additional options:
 
-   ![Configure other export options](../media/OtherExportOptions.png)
+   ![Configure other export options.](../media/OtherExportOptions.png)
 
    1. Select the **Enable de-duplication for Exchange content** checkbox to exclude duplicate messages.
   
@@ -156,7 +156,7 @@ The next step is to download the search results from the Azure Storage location 
 
 6. In the **eDiscovery Export Tool**, do the following:
 
-   ![eDiscovery Export Tool](../media/eDiscoveryExportTool.png)
+   ![eDiscovery Export Tool.](../media/eDiscoveryExportTool.png)
 
    1. Paste the export key that you copied in step 3 in the appropriate box.
   
@@ -239,7 +239,7 @@ For information about limits when exporting content search results, see the "Exp
   
 - If you're exporting mailbox items from a content search that returns all mailbox items in the search results (because no keywords where included in the search query), partially indexed items won't be copied to the PST file that contains the unindexed items. This is because all items, including any partially indexed items, are automatically included in the regular search results. This means that partially indexed items will be included in a PST file (or as individual messages) that contains the other, indexed items.
 
-    If you export both the indexed and partially indexed items or if you export only the indexed items from a content search that returns all items, the same number of items will be downloaded. This happens even though the estimated search results for the content search (displayed in the search statistics in the Security & Compliance Center) will still include a separate estimate for the number of partially indexed items. For example, let's say that the estimate for a search that includes all items (no keywords in the search query) shows that 1,000 items were found and that 200 partially indexed items were also found. In this case, the 1,000 items include the partially indexed items because the search returns all items. In other words, there are 1,000 total items returned by the search, and not 1,200 items (as you might expect). If you export the results of this search and choose to export indexed and partially indexed items (or export only partially indexed items), then 1,000 items will be downloaded. Again, that's because partially indexed items are included with the regular (indexed) results when you use a blank search query to return all items. In this same example, if you choose to export only partially indexed items, then only the 200 unindexed items would be downloaded.
+    If you export both the indexed and partially indexed items or if you export only the indexed items from a content search that returns all items, the same number of items will be downloaded. This happens even though the estimated search results for the content search (displayed in the search statistics in the Microsoft 365 compliance center) will still include a separate estimate for the number of partially indexed items. For example, let's say that the estimate for a search that includes all items (no keywords in the search query) shows that 1,000 items were found and that 200 partially indexed items were also found. In this case, the 1,000 items include the partially indexed items because the search returns all items. In other words, there are 1,000 total items returned by the search, and not 1,200 items (as you might expect). If you export the results of this search and choose to export indexed and partially indexed items (or export only partially indexed items), then 1,000 items will be downloaded. Again, that's because partially indexed items are included with the regular (indexed) results when you use a blank search query to return all items. In this same example, if you choose to export only partially indexed items, then only the 200 unindexed items would be downloaded.
 
     Also note that in the previous example (when you export indexed and partially indexed items or you export only indexed items), the **Export Summary** report included with the exported search results would list 1,000 items estimated items and 1,000 downloaded items for the same reasons as previously described. 
 
@@ -247,11 +247,11 @@ For information about limits when exporting content search results, see the "Exp
 
     To export partially indexed items from all content locations for a search, configure the search to return all items (by removing any keywords from the search query) and then export only partially indexed items when you export the search results.
 
-    ![Use the third export option to export only unindexed items](../media/5d7be338-a0e5-425f-8ba5-92769c24bf75.png)
+    ![Use the third export option to export only unindexed items.](../media/5d7be338-a0e5-425f-8ba5-92769c24bf75.png)
   
 - When exporting search results from SharePoint or OneDrive for Business sites, the ability to export unindexed items also depends on the export option that you select and whether a site that was searched contains an indexed item that matches the search criteria. For example, if you search specific SharePoint or OneDrive for Business sites and no search results are found, then no unindexed items from those sites will be exported if you choose the second export option to export both indexed and unindexed items. If an indexed item from a site does match the search criteria, then all unindexed items from that site will be exported when exporting both indexed and unindexed items. The following illustration describes the export options based on whether a site contains an indexed item that matches the search criteria.
 
-    ![Choose the export option based on whether a site contains an indexed item that matches the search criteria](../media/94f78786-c6bb-42fb-96b3-7ea3998bcd39.png)
+    ![Choose the export option based on whether a site contains an indexed item that matches the search criteria.](../media/94f78786-c6bb-42fb-96b3-7ea3998bcd39.png)
 
     a. Only indexed items that match the search criteria are exported. No partially indexed items are exported.
 

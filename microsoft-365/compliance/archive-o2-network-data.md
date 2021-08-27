@@ -24,7 +24,7 @@ After SMS messages and voice calls are stored in user mailboxes, you can apply M
 
 The following overview explains the process of using a connector to archive O2 Network data in Microsoft 365.
 
-![O2 Network archiving workflow](../media/O2NetworkConnectorWorkflow.png)
+![O2 Network archiving workflow.](../media/O2NetworkConnectorWorkflow.png)
 
 1. Your organization works with TeleMessage and O2 to set up an O2 Network connector. For more information, see [O2 Network Archiver](https://www.telemessage.com/office365-activation-for-o2-network-archiver).
 

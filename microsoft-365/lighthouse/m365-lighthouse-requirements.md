@@ -25,9 +25,9 @@ description: "For Managed Service Providers (MSPs), get a list of requirements t
 
 Microsoft 365 Lighthouse is an admin portal that helps Managed Service Providers (MSPs) secure and manage devices, data, and users at scale for small- and medium-sized business (SMB) customers.  
 
-MSPs must be enrolled in the Cloud Solution Provider (CSP) program as an Indirect Reseller or Direct Bill partner to use Microsoft 365 Lighthouse.  
+MSPs must be enrolled in the Cloud Solution Provider (CSP) program as an Indirect Reseller or Direct Bill partner to use Lighthouse.  
 
-In addition, each MSP customer tenant must qualify for Microsoft 365 Lighthouse by meeting the following requirements: 
+In addition, each MSP customer tenant must qualify for Lighthouse by meeting the following requirements: 
  
 - Delegated Admin Privileges (DAP) for the MSP 
 - At least one Microsoft 365 Business Premium license 

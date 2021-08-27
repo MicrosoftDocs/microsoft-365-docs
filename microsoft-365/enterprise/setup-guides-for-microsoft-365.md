@@ -226,3 +226,27 @@ For organizations using Configuration Manager, you can use the [Deploy and updat
 ### Intune Configuration Manager co-management setup guide
 
 Use the [Intune Configuration Manager co-management setup guide](https://aka.ms/comanagementsetup) to set up existing Configuration Manager client devices and new internet-based devices that your org wants to co-manage with both Microsoft Intune and Configuration Manager. Co-management allows you to manage Windows 10 devices and adds new functionality to your org's devices, while receiving the benefits of both solutions.
+
+## How to access setup guides in the Microsoft 365 admin center
+
+The setup guides are accessible from the [Setup guidance](https://aka.ms/setupguidance) page in the Microsoft 365 admin center. You can keep track of the status of your progress and you have the option to return at any time to complete a guide. To reach the **Setup guidance** page:
+
+1. In the [Microsoft 365 admin center](https://admin.microsoft.com/), go to the **Home** page.
+
+2. Find the **Training & guides** card.
+
+   ![Training & guides card in the Microsoft 365 admin center.](../media/setup-guides-for-microsoft-365/adminportal-trainingandguides.png)
+
+3. Select **Step-by-step guides**.
+
+   ![Screenshot of the Setup guidance page in the Microsoft 365 admin center.](../media/setup-guides-for-microsoft-365/adminportal-setupguidance.png)
+
+> [!NOTE]
+> Tenant administrator permissions are required to access the Microsoft 365 admin center.
+
+## How do setup guides work in the Microsoft 365 admin center?
+
+Each guide provides you with step-by-step instructions, resources, articles, and when needed, scripts you can use to make configuration changes. These guides provide you with choices that reflect the specific needs of both small and large organizations. Additionally, the guidance includes assistance for both new and more experienced admins.
+
+![Example of a setup guide.](../media/setup-guides-for-microsoft-365/m365-setupguide-example.png)
+
