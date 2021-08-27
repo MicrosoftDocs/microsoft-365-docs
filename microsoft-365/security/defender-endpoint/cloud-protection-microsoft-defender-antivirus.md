@@ -26,6 +26,9 @@ ms.date: 08/26/2021
 
 Next-generation technologies in Microsoft Defender Antivirus provide near-instant, automated protection against new and emerging threats. To identify new threats dynamically, next-generation technologies work with large sets of interconnected data in the Microsoft Intelligent Security Graph and powerful artificial intelligence (AI) systems driven by advanced machine learning models. Cloud protection works together with Microsoft Defender Antivirus to deliver accurate, real-time, and intelligent protection. 
 
+> [!TIP]
+> We recommend keeping cloud protection turned on. To learn more, see [Why cloud protection should be enabled for Microsoft Defender Antivirus](why-cloud-protection-should-be-on-mdav.md). 
+
 ## How cloud protection works
 
 Microsoft Defender Antivirus works seamlessly with Microsoft cloud services. These cloud protection services, also referred to as Microsoft Advanced Protection Service (MAPS), enhance standard real-time protection. With cloud protection, next-generation technologies provide rapid identification of new threats, sometimes even before a single endpoint is infected. 
