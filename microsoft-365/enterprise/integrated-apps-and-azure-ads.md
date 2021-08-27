@@ -18,7 +18,7 @@ search.appverid:
 - MOE150
 - BCS160
 ms.assetid: cb2250e3-451e-416f-bf4e-363549652c2a
-description: Learn how to register and administer Office 365 integrated Apps in Azure AD, allowing for app authorizations at the global administrator level.
+description: Learn how to register and administer Office 365 integrated Apps in Azure AD, allowing for app authorizations at the **Azure AD DC admin**, or **Global admin** level.
 ---
 
 # Integrated apps and Azure AD for Microsoft 365 administrators
