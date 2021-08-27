@@ -14,7 +14,9 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - SPO_Content
-ms.custom: AdminSurgePortfolio
+ms.custom: 
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - MET150
 - GEU150
@@ -37,7 +39,7 @@ Microsoft does not operate the service itself. 21Vianet operates, provides and m
   
 Scan this QR code to follow us on WeChat and get the latest updates for Office 365 operated by 21Vianet.
   
-![Scan this QR code to follow us on WeChat](../../media/9bbbdf3b-b3ab-4355-82a0-37a84d70735b.png)
+![Scan this QR code to follow us on WeChat.](../../media/9bbbdf3b-b3ab-4355-82a0-37a84d70735b.png)
   
  **About services in Office 365 operated by 21Vianet**
   
@@ -71,7 +73,7 @@ If you would like to learn how to get started with general Office 365 services, 
 |:-----|:-----|
 |Sharing a document, library, or site by email with someone outside of your organization  <br/> |This feature is available, but off by default as using it could make files shared accessible outside of your country. Administrators do have the ability to turn it on, but will get a warning message indicating that it could make files shared accessible outside of your country. Users who attempt to share with someone outside of the organization will also receive a warning. For more information, see [Share SharePoint files or folders in Office 365](https://support.microsoft.com/office/1fe37332-0f9a-4719-970e-d2578da4941c).  <br/> |
 |Access Services  <br/> |Access 2013 is supported, but adding new Access apps may not be available as this feature will be retired from Office 365 and SharePoint Online. Creation of new Access-based web apps and Access web databases in Office 365 and SharePoint Online will stop starting in June 2017 and any remaining web apps and web databases by April 2018. Additionally, Access 2010 functionality is not supported, and attempting to use an Access 2010 database will result in errors and possible data loss.  <br/> |
-|Microsoft PowerApps  <br/> |Coming soon.  <br/> |
+|Microsoft Power Apps  <br/> |Coming soon.  <br/> |
 |Information Rights Management (IRM)  <br/> |The ability to set IRM capabilities to SharePoint for your organization is coming soon.  <br/> |
 |Ability to translate text or pages  <br/> |Available, but off by default. Tenant admins can turn this ability on, but the translation cloud service may be located outside your country. If you do not want users to send content to a translation cloud service, you may keep these features disabled.  <br/> |
 |Public website ICP registration  <br/> |China Internet compliance policy requires that you get an Internet Content Provider (ICP) number for your public website.  |

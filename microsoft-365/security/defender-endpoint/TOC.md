@@ -107,12 +107,12 @@
 
 ##### [Deploy]()
 ###### [Deploy Microsoft Defender for Endpoint on iOS via Intune](ios-install.md)
+###### [Deploy Microsoft Defender for Endpoint on iOS for unenrolled devices](ios-install-unmanaged.md)
 
 ##### [Configure]()
 ###### [Configure iOS features](ios-configure-features.md)
 
-##### [Troubleshoot]()
-###### [FAQs and Troubleshoot issues](ios-troubleshoot.md)
+##### [FAQs and Troubleshooting](ios-troubleshoot.md)
 
 ##### [Privacy](ios-privacy.md)
 
@@ -174,6 +174,7 @@
 #### [General]()
 ##### [Verify data storage location and  update data retention settings](data-retention-settings.md)
 ##### [Configure alert notifications](configure-email-notifications.md)
+##### [Configure vulnerability email notifications](configure-vulnerability-email-notifications.md)
 ##### [Configure advanced features](advanced-features.md)
 
 #### [Permissions]()
@@ -238,6 +239,7 @@
 #### [Overview of attack surface reduction](overview-attack-surface-reduction.md)
 #### [Configure attack surface reduction capabilities](configure-attack-surface-reduction.md)
 #### [Learn about attack surface reduction rules](attack-surface-reduction.md)
+#### [Attack surface reduction rules](attack-surface-reduction-rules.md)
 #### [Evaluate attack surface reduction rules](evaluate-attack-surface-reduction.md)
 #### [Enable attack surface reduction rules](enable-attack-surface-reduction.md)
 #### [Customize attack surface reduction rules](customize-attack-surface-reduction.md)
@@ -256,6 +258,7 @@
 #### [Cloud-delivered protection and Microsoft Defender Antivirus](cloud-protection-microsoft-defender-antivirus.md)
 ##### [Turn on cloud-delivered protection](enable-cloud-protection-microsoft-defender-antivirus.md)
 ##### [Specify the cloud-delivered protection level](specify-cloud-protection-level-microsoft-defender-antivirus.md)
+##### [Cloud-delivered protection Microsoft Defender Antivirus sample submission](cloud-protection-microsoft-antivirus-sample-submission.md)
 #### [Configure and validate Microsoft Defender Antivirus network connections](configure-network-connections-microsoft-defender-antivirus.md)
 #### [Protect security settings with tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md)
 #### [Turn on block at first sight](configure-block-at-first-sight-microsoft-defender-antivirus.md)
@@ -265,9 +268,9 @@
 #### [Enable and configure Microsoft Defender Antivirus always-on protection in Group Policy](configure-real-time-protection-microsoft-defender-antivirus.md)
 #### [Configure remediation for Microsoft Defender Antivirus detections](configure-remediation-microsoft-defender-antivirus.md)
 #### [Configure Microsoft Defender Antivirus scans](schedule-antivirus-scans.md)
-##### [Schedule antivirus scans using Group Policy](schedule-antivirus-scans-group-policy.md)
-##### [Schedule antivirus scans using PowerShell](schedule-antivirus-scans-powershell.md)
-##### [Schedule antivirus scans using Windows Management Instrumentation (WMI)](schedule-antivirus-scans-wmi.md)
+##### [Schedule scans using Group Policy](schedule-antivirus-scans-group-policy.md)
+##### [Schedule scans using PowerShell](schedule-antivirus-scans-powershell.md)
+##### [Schedule scans using WMI](schedule-antivirus-scans-wmi.md)
 #### [Use limited periodic scanning in Microsoft Defender Antivirus](limited-periodic-scanning-microsoft-defender-antivirus.md)
 #### [Compatibility with other security products](microsoft-defender-antivirus-compatibility.md)
 
@@ -305,7 +308,7 @@
 ##### [Exclusions based on file extension and folder location](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 ##### [Exclusions for files opened by processes](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
 ##### [Exclusions for Windows Server](configure-server-exclusions-microsoft-defender-antivirus.md)
-##### [Common mistakes to avoid when defining exclusions](common-exclusion-mistakes-microsoft-defender-antivirus.md)
+##### [Common mistakes to avoid](common-exclusion-mistakes-microsoft-defender-antivirus.md)
 
 #### Troubleshooting Microsoft Defender Antivirus
 ##### [Troubleshoot Microsoft Defender Antivirus reporting in Update Compliance](troubleshoot-reporting.md)
@@ -344,11 +347,11 @@
 ##### [Customize controlled folder access](customize-controlled-folders.md)
 
 #### [Device Control]()
-##### [Device Control reports](device-control-report.md)
-##### [Control USB devices](control-usb-devices-using-intune.md)
+##### [Control USB devices and other removable media](control-usb-devices-using-intune.md)
 ##### [Removable Storage Protection](device-control-removable-storage-protection.md)
 ##### [Removable Storage Access Control](device-control-removable-storage-access-control.md)
 ##### [Device Control Printer Protection](printer-protection.md)
+##### [Device Control reports](device-control-report.md)
 
 #### [Behavioral blocking and containment]()
 ##### [Behavioral blocking and containment](behavioral-blocking-containment.md)
@@ -474,6 +477,7 @@
 ####### [Alert methods and properties](alerts.md)
 ####### [List alerts](get-alerts.md)
 ####### [Create alert](create-alert-by-reference.md)
+####### [Batch update alerts](batch-update-alerts.md)
 ####### [Update Alert](update-alert.md)
 ####### [Get alert information by ID](get-alert-info-by-id.md)
 ####### [Get alert related domains information](get-alert-related-domain-info.md)
@@ -481,6 +485,7 @@
 ####### [Get alert related IPs information](get-alert-related-ip-info.md)
 ####### [Get alert related device information](get-alert-related-machine-info.md)
 ####### [Get alert related user information](get-alert-related-user-info.md)
+####### [Alerts queue in Microsoft 365 Defender](alerts-queue-endpoint-detection-response.md)
 
 ###### [Assessments of vulnerabilities and secure configurations]()
 ####### [Export assessment methods and properties](get-assessment-methods-properties.md)
@@ -557,7 +562,7 @@
 ####### [Recommendation methods and properties](recommendation.md)
 ####### [List all recommendations](get-all-recommendations.md)
 ####### [Get recommendation by ID](get-recommendation-by-id.md)
-####### [Get recommendation by software](get-recommendation-software.md)
+####### [Get recommendation by software](list-recommendation-software.md)
 ####### [List machines by recommendation](get-recommendation-machines.md)
 ####### [List vulnerabilities by recommendation](get-recommendation-vulnerabilities.md)
 
@@ -595,7 +600,7 @@
 ####### [List machines by vulnerability](get-machines-by-vulnerability.md)
 
 ##### [How to use APIs - Samples]()
-###### [Microsoft Flow](api-microsoft-flow.md)
+###### [Power Automate](api-microsoft-flow.md)
 ###### [Power BI](api-power-bi.md)
 ###### [Advanced Hunting using Python](run-advanced-query-sample-python.md)
 ###### [Advanced Hunting using PowerShell](run-advanced-query-sample-powershell.md)
@@ -655,27 +660,38 @@
 
 ### [Helpful resources](helpful-resources.md)
 
-### [Troubleshoot Microsoft Defender for Endpoint]()
-#### [Troubleshoot sensor state]()
-##### [Check sensor state](check-sensor-status.md)
-##### [Fix unhealthy sensors](fix-unhealthy-sensors.md)
-##### [Inactive devices](fix-unhealthy-sensors.md#inactive-devices)
-##### [Misconfigured devices](fix-unhealthy-sensors.md#misconfigured-devices)
-##### [Review sensor events and errors on machines with Event Viewer](event-error-codes.md)
+## [Troubleshoot]()
+### [Troubleshoot sensor state]()
+#### [Check sensor state](check-sensor-status.md)
+#### [Fix unhealthy sensors](fix-unhealthy-sensors.md)
+#### [Inactive devices](fix-unhealthy-sensors.md#inactive-devices)
+#### [Misconfigured devices](fix-unhealthy-sensors.md#misconfigured-devices)
+#### [Review sensor events and errors on machines with Event Viewer](event-error-codes.md)
 
-#### [Troubleshoot Microsoft Defender for Endpoint service issues]()
-##### [Troubleshoot service issues](troubleshoot-mdatp.md)
-##### [Check service health](service-status.md)
-##### [Contact Microsoft Defender for Endpoint support](contact-support.md)
+### [Troubleshoot sensor health issues using Client Analyzer]()
+#### [Client analyzer overview](overview-client-analyzer.md)
+#### [Download and run the client analyzer](download-client-analyzer.md)
+#### [Run the client analyzer on Windows](run-analyzer-windows.md)
+#### [Run the client analyzer on macOS or Linux](run-analyzer-macos-linux.md)
+#### [Data collection for advanced troubleshooting on Windows](data-collection-analyzer.md)
+#### [Understand the analyzer HTML report](analyzer-report.md)
+#### [Provide feedback on the client analyzer tool](analyzer-feedback.md)
 
-#### [Troubleshoot live response issues](troubleshoot-live-response.md)
+ 
 
-#### [Collect support logs using LiveAnalyzer](troubleshoot-collect-support-log.md)
+### [Troubleshoot Microsoft Defender for Endpoint service issues]()
+#### [Troubleshoot service issues](troubleshoot-mdatp.md)
+#### [Check service health](service-status.md)
+#### [Contact Microsoft Defender for Endpoint support](contact-support.md)
 
-#### [Troubleshoot attack surface reduction issues]()
-##### [Network protection](troubleshoot-np.md)
-##### [Attack surface reduction rules](troubleshoot-asr.md)
-##### [Migrate to Attack surface reduction rules](migrating-asr-rules.md)
+### [Troubleshoot live response issues](troubleshoot-live-response.md)
+
+### [Collect support logs using LiveAnalyzer](troubleshoot-collect-support-log.md)
+
+### [Troubleshoot attack surface reduction issues]()
+#### [Network protection](troubleshoot-np.md)
+#### [Attack surface reduction rules](troubleshoot-asr.md)
+#### [Migrate to Attack surface reduction rules](migrating-asr-rules.md)
 
 # [Microsoft 365 Defender](../defender/index.yml)
 # [Defender for Office 365](../office-365-security/index.yml)

@@ -2,8 +2,8 @@
 title: "Enroll iOS/iPadOS and Android devices in your Microsoft 365 for enterprise test environment"
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 11/19/2020
 audience: ITPro
@@ -27,7 +27,7 @@ Enrolling iOS/iPadOS and Android devices in your test environment involves three
 - [Phase 2: Enroll your iOS/iPadOS and Android devices](#phase-2-enroll-your-ios-and-android-devices)
 - [Phase 3: Manage your iOS/iPadOS and Android devices remotely](#phase-3-manage-your-ios-and-android-devices-remotely)
 
-![Test Lab Guides for the Microsoft cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+![Test Lab Guides for the Microsoft cloud.](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
   
 > [!TIP]
 > For a visual map to all the articles in the Microsoft 365 for enterprise Test Lab Guide stack, go to [Microsoft 365 for enterprise Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf).

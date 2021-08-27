@@ -4,15 +4,15 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 ms.reviewer: kshi
-ms.date: 
+ms.date:
 audience: ITPro
 ms.topic: how-to
 
 localization_priority: Normal
-search.appverid: 
+search.appverid:
   - MET150
-ms.assetid: 
-ms.collection: 
+ms.assetid:
+ms.collection:
   - M365-security-compliance
 description: Learn about Safe Documents in Microsoft 365 E5 or Microsoft 365 E5 Security.
 ms.technology: mdo
@@ -58,13 +58,13 @@ Files sent by Safe Documents are not retained in Defender beyond the time needed
 
 ## Use the Microsoft 365 Defender to configure Safe Documents
 
-1. Open the Microsoft 365 Defender portal and go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** page \> **Policies** section \> **Safe Attachments**.
+1. Open the Microsoft 365 Defender portal and go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Safe Attachments** in the **Policies** section.
 
 2. On the **Safe Attachments** page, click **Global settings**.
 
 3. In the **Global settings** fly out that appears, configure the following settings:
-   - **Turn on Safe Documents for Office clients**: Move the toggle to the right to turn on the feature: ![Toggle on](../../media/scc-toggle-on.png).
-   - **Allow people to click through Protected View even if Safe Documents identified the file as malicious**: We recommend that you leave this option turned off (leave the toggle to the left: ![Toggle off](../../media/scc-toggle-off.png)).
+   - **Turn on Safe Documents for Office clients**: Move the toggle to the right to turn on the feature: ![Toggle on.](../../media/scc-toggle-on.png).
+   - **Allow people to click through Protected View even if Safe Documents identified the file as malicious**: We recommend that you leave this option turned off (leave the toggle to the left: ![Toggle off.](../../media/scc-toggle-off.png)).
 
    When you're finished, click **Save**.
 
@@ -99,7 +99,7 @@ To learn more, see [Onboard to the Microsoft Defender for Endpoint service](/mic
 
 To verify that you've enabled and configured Safe Documents, do any of the following steps:
 
-- In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** page \> **Policies** section \> **Safe Attachments** \> **Global settings**, and verify the **Turn on Safe Documents for Office clients** and **Allow people to click through Protected View even if Safe Documents identifies the file as malicious** settings.
+- In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Safe Attachments** in the **Policies** section \> **Global settings**, and verify the **Turn on Safe Documents for Office clients** and **Allow people to click through Protected View even if Safe Documents identifies the file as malicious** settings.
 
 - Run the following command in Exchange Online PowerShell and verify the property values:
 

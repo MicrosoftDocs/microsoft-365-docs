@@ -65,7 +65,7 @@ landingContent:
           - text: Remove a former employee
             url: ../admin/add-users/remove-former-employee.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
           - text: Migrate your file shares to Microsoft 365
-            url: /sharepointmigration/mm-get-started.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+            url: /sharepointmigration/mm-get-started?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
 
   # Card
   - title: Teamwork and collaboration solution guides
@@ -79,7 +79,7 @@ landingContent:
       - linkListType: overview
         links:
           - text: Intelligent intranet
-            url: /sharepoint/intelligent-internet-overview.md
+            url: /sharepoint/intelligent-internet-overview
           - text: Collaboration governance
             url: collaboration-governance-overview.md
           - text: File collaboration
@@ -121,7 +121,7 @@ landingContent:
           - text: Identity and device access configurations
             url: ../security/office-365-security/microsoft-365-policies-configurations.md
           - text: Deploy Microsoft Defender for Endpoint
-            url: /windows/security/threat-protection/microsoft-defender-atp/deployment-phases.md
+            url: /windows/security/threat-protection/microsoft-defender-atp/deployment-phases
           - text: Evaluate Microsoft 365 Defender
             url: ../security/defender-endpoint/deployment-phases.md
           - text: Security recommendations for priority accounts

@@ -1,7 +1,7 @@
 ---
 title: Track your Microsoft Secure Score history and meet goals
 description: Gain insights into activity that has affected your Microsoft Secure Score. Discover trends and set goals.
-keywords: microsoft secure score, secure score, office 365 secure score, microsoft security score, microsoft 365 security center, improvement actions
+keywords: microsoft secure score, secure score, office 365 secure score, microsoft security score, Microsoft 365 Defender portal, improvement actions
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 localization_priority: Normal
@@ -27,7 +27,7 @@ ms.technology: m365d
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-[Microsoft Secure Score](microsoft-secure-score.md) is a measurement of an organization's security posture, with a higher number indicating more improvement actions taken. It can be found at https://security.microsoft.com/securescore in the [Microsoft 365 security center](overview-security-center.md).
+[Microsoft Secure Score](microsoft-secure-score.md) is a measurement of an organization's security posture, with a higher number indicating more improvement actions taken. It can be found at https://security.microsoft.com/securescore in the [Microsoft 365 Defender portal](overview-security-center.md).
 
 ## Gain insights into activity that has affected your score
 
@@ -35,13 +35,13 @@ View a graph of your organization's score over time in the **History** tab.
 
 Below the graph is a list of all the actions taken in the selected time range and their attributes, such as resulting points and category. You can customize a date range and filter by category.
 
-![Activity history](../../media/secure-score/secure-score-history-activity.png)
+![Activity history.](../../media/secure-score/secure-score-history-activity.png)
 
 If you select the improvement action associated with an activity, the full improvement action flyout will appear.
 
 To view all history for that specific improvement action, select the history link in the flyout.
 
-![Improvement action history](../../media/secure-score/secure-score-history-flyout.png)
+![Improvement action history.](../../media/secure-score/secure-score-history-flyout.png)
 
 ## Discover trends and set goals
 
@@ -61,7 +61,7 @@ There are two places to see how your score compares to organizations that are si
 
 The comparison bar chart is the **Overview** tab. Hover over the chart to view the score and score opportunity. The comparison data is anonymized so we don’t know exactly which others tenants are in the mix.
 
-![Bar graph of similar organization's scores](../../media/secure-score/secure-score-comparison-bar.png)
+![Bar graph of similar organization's scores.](../../media/secure-score/secure-score-comparison-bar.png)
 
 - **Organizations like yours**: an average score of other tenants (provided we have at least five or more tenants to compare) that qualify with the following criteria:
     1. Same industry
@@ -84,7 +84,7 @@ If you've made a custom selection but the results have less than five other tena
 
 In the **Metrics & trends** tab, view how your organization's Secure Score compares to others' over time.
 
-![Line graph of similar organization's scores over time](../../media/secure-score/secure-score-comparison-trend.png)
+![Line graph of similar organization's scores over time.](../../media/secure-score/secure-score-comparison-trend.png)
 
 ## We want to hear from you
 

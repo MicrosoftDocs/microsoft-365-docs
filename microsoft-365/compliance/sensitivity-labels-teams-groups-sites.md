@@ -45,11 +45,11 @@ Content in these containers however, do not inherit the labels for the classific
 
 Before you enable sensitivity labels for containers and configure sensitivity labels for the new settings, users can see and apply sensitivity labels in their apps. For example, from Word:
 
-![A sensitivity label displayed in the Word desktop app](../media/sensitivity-label-word.png)
+![A sensitivity label displayed in the Word desktop app.](../media/sensitivity-label-word.png)
 
 After you enable and configure sensitivity labels for containers, users can additionally see and apply sensitivity labels to Microsoft team sites, Microsoft 365 groups, and SharePoint sites. For example, when you create a new team site from SharePoint:
 
-![A sensitivity label when creating a team site from SharePoint](../media/sensitivity-labels-new-team-site.png)
+![A sensitivity label when creating a team site from SharePoint.](../media/sensitivity-labels-new-team-site.png)
 
 ## How to enable sensitivity labels for containers and synchronize labels
 
@@ -73,7 +73,7 @@ After sensitivity labels are enabled for containers as described in the previous
 
 1. Follow the general instructions to [create or edit a sensitivity label](create-sensitivity-labels.md#create-and-configure-sensitivity-labels) and make sure you select **Groups & sites** for the label's scope: 
     
-    ![Sensitivity label scope options for files and emails](../media/groupsandsites-scope-options-sensitivity-label.png)
+    ![Sensitivity label scope options for files and emails.](../media/groupsandsites-scope-options-sensitivity-label.png)
     
     When only this scope is selected for the label, the label won't be displayed in Office apps that support sensitivity labels and can't be applied to files and emails. Having this separation of labels can be helpful for both users and administrators, but can also add to the complexity of your label deployment.
     
@@ -165,7 +165,7 @@ Known limitations for this preview:
 
 - The following features and apps might be incompatible with authentication contexts, so we encourage you to check that these continue to work after a user successfully accesses  a site by using an authentication context:
     
-    - Workflows that use PowerApps or Power Automate
+    - Workflows that use Power Apps or Power Automate
     - Third-party apps
 
 ## Sensitivity label management
@@ -236,11 +236,11 @@ Users can select sensitivity labels when they create new teams in Microsoft Team
 
 [Learn more about sensitivity labels for Teams](/microsoftteams/sensitivity-labels)
 
-![The privacy setting when creating a new team](../media/privacy-setting-new-team.png)
+![The privacy setting when creating a new team.](../media/privacy-setting-new-team.png)
 
 After you create the team, the sensitivity label appears in the upper-right corner of all channels.
 
-![The sensitivity label appears on the team](../media/privacy-setting-teams.png)
+![The sensitivity label appears on the team.](../media/privacy-setting-teams.png)
 
 The service automatically applies the same sensitivity label to the Microsoft 365 group and the connected SharePoint team site.
 
@@ -248,19 +248,19 @@ The service automatically applies the same sensitivity label to the Microsoft 36
 
 In Outlook on the web, when you create a new group, you can select or change the **Sensitivity** option for published labels:
 
-![Creating a group and selecting an option under Sensitivity](../media/sensitivity-label-new-group.png)
+![Creating a group and selecting an option under Sensitivity.](../media/sensitivity-label-new-group.png)
 
 ### Apply a sensitivity label to a new site
 
 Admins and end users can select sensitivity labels when they [create modern team sites and communication sites](/sharepoint/create-site-collection), and expand **Advanced settings**:
 
-![Creating a site and selecting an option under Sensitivity](../media/sensitivity-label-new-communication-site.png)
+![Creating a site and selecting an option under Sensitivity.](../media/sensitivity-label-new-communication-site.png)
 
 The dropdown box displays the label names for the selection, and the help icon displays all the label names with their tooltip, which can help users determine the correct label to apply.
 
 When the label is applied, and users browse to the site, they see the name of the label and applied policies. For example, this site has been labeled as **Confidential**, and the privacy setting is set to **Private**:
 
-![A site that has a sensitivity label applied](../media/sensitivity-label-site.png)
+![A site that has a sensitivity label applied.](../media/sensitivity-label-site.png)
 
 ### Use PowerShell to apply a sensitivity label to multiple sites
 
@@ -300,7 +300,7 @@ This series of commands lets you label multiple sites across your tenant with th
 
 To view, sort, and search the applied sensitivity labels, use the **Active sites** page in the new SharePoint admin center. You might need to first add the **Sensitivity** column:
 
-![The Sensitivity column on the Active sites page](../media/manage-site-sensitivity-labels.png)
+![The Sensitivity column on the Active sites page.](../media/manage-site-sensitivity-labels.png)
 
 For more information about managing sites from the Active sites page, including how to add a column, see [Manage sites in the new SharePoint admin center](/sharepoint/manage-sites-in-new-admin-center).
 
@@ -408,13 +408,16 @@ To help you manage the coexistence of sensitivity labels and Azure AD classifica
 ## Auditing sensitivity label activities
 
 > [!IMPORTANT]
-> If you use label separation by selecting just the **Groups & sites** scope for labels that protect containers: Because of the **Detected document sensitivity mismatch** audit event and email described in this section, consider [ordering these labels](sensitivity-labels.md#label-priority-order-matters) before labels that have a scope for **Files & emails**. 
+> If you use label separation by selecting just the **Groups & sites** scope for labels that protect containers: Because of the **Detected document sensitivity mismatch** audit event and email described in this section, consider [ordering labels](sensitivity-labels.md#label-priority-order-matters) before labels that have a scope for **Files & emails**. 
 
 If somebody uploads a document to a site that's protected with a sensitivity label and their document has a [higher priority](sensitivity-labels.md#label-priority-order-matters) sensitivity label than the sensitivity label applied to the site, this action isn't blocked. For example, you've applied the **General** label to a SharePoint site, and somebody uploads to this site a document labeled **Confidential**. Because a sensitivity label with a higher priority identifies content that is more sensitivity than content that has a lower priority order, this situation could be a security concern.
 
 Although the action isn't blocked, it is audited and by default, automatically generates an email to the person who uploaded the document and the site administrator. As a result, both the user and administrators can identify documents that have this misalignment of label priority and take action if needed. For example, delete or move the uploaded document from the site.
 
 It wouldn't be a security concern if the document has a lower priority sensitivity label than the sensitivity label applied to the site. For example, a document labeled **General** is uploaded to a site labeled **Confidential**. In this scenario, an auditing event and email aren't generated.
+
+> [!NOTE]
+> Just as for the policy option that requires users to provide a justification for changing a label to a lower classification, sublabels for the same parent label are all considered to have the same priority.
 
 To search the audit log for this event, look for **Detected document sensitivity mismatch** from the **File and page activities** category.
 
@@ -441,5 +444,7 @@ If these containers have Azure AD classification values applied to them, the con
 ## Additional resources
 
 See the webinar recording and answered questions for [Using Sensitivity labels with Microsoft Teams, O365 Groups and SharePoint Online sites](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/using-sensitivity-labels-with-microsoft-teams-o365-groups-and/ba-p/1221885#M1380).
+
+For more information on managing Teams connected sites and channel sites, see [Manage Teams connected sites and channel sites](/SharePoint/teams-connected-sites).
 
 This webinar was recorded when the feature was still in preview, so you might notice some discrepancies in the UI. However, the information for this feature is still accurate, with any new capabilities documented on this page.

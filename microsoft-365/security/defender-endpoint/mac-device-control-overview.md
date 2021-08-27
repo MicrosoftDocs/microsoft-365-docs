@@ -28,9 +28,7 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
-
-[!include[Prerelease information](../../includes/prerelease.md)]
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 ## Requirements
 
@@ -38,30 +36,8 @@ Device control for macOS has the following prerequisites:
 
 >[!div class="checklist"]
 > - Microsoft Defender for Endpoint entitlement (can be trial)
-> - Minimum OS version: macOS 10.15.4 or higher
-> - Minimum product version: 101.24.59
-> - Your device must be running with system extensions (this is the default on macOS 11 Big Sur). 
-> 
->   You can check if your device is running on system extensions by running the following command and verify that it is printing `endpoint_security_extension` to the console: 
-> 
->   ```bash
->   mdatp health --field real_time_protection_subsystem 
->   ```
-> - Your device must be in `Beta` (previously called `InsiderFast`) Microsoft AutoUpdate update channel. For more information, see [Deploy updates for Microsoft Defender for Endpoint on Mac](mac-updates.md).
-> 
->   You can check the update channel using the following command: 
-> 
->    ```bash
->    mdatp health --field release_ring 
->    ```
->
->    If the above command does not print either `Beta` or `InsiderFast`, execute the following command from the Terminal. The channel update takes effect next time the product starts (when the next product update is installed or when the device is rebooted). 
-> 
->    ```bash
->    defaults write com.microsoft.autoupdate2 ChannelName -string Beta
->    ```
->
->    Alternatively, if you are in a managed environment (JAMF or Intune), you can configure the update channel remotely. For more information, see [Deploy updates for Microsoft Defender for Endpoint on Mac](mac-updates.md). 
+> - Minimum OS version: macOS 11 or higher
+> - Minimum product version: 101.34.20
 
 ## Device control policy
 
@@ -87,7 +63,7 @@ The device control policy can be used to:
 
 When the device control policy that you have put in place is enforced on a device (for example, access to a removable media device is restricted), a notification is displayed to the user.
 
-![Device control notification](images/mac-device-control-notification.png)
+![Device control notification.](images/mac-device-control-notification.png)
 
 When end users click this notification, a web page is opened in the default browser. You can configure the URL that is opened when end users click the notification.
 
@@ -137,6 +113,9 @@ Under the removable media section, there is an option to set the enforcement lev
 
 - `audit` - Under this enforcement level, if access to a device is restricted, a notification is displayed to the user, however the device can still be used. This enforcement level can be useful to evaluate the effectiveness of a policy.
 - `block` - Under this enforcement level, the operations that the user can perform on the device are limited to what is defined in the policy. Furthermore, a notification is raised to the user. 
+
+> [!NOTE] 
+> By default, the enforcement level is set to `audit`. 
 
 |Section|Value|
 |:---|:---|
@@ -303,19 +282,19 @@ To find the vendor ID, product ID, and serial number of a USB device:
 1. Plug in the USB device for which you want to look up the identifiers.
 1. In the top-level menu of macOS, select **About This Mac**.
 
-    ![About this Mac](images/mac-device-control-lookup-1.png)
+    ![About this Mac.](images/mac-device-control-lookup-1.png)
 
 1. Select **System Report**.
 
-    ![System Report](images/mac-device-control-lookup-2.png)
+    ![System Report.](images/mac-device-control-lookup-2.png)
 
 1. From the left column, select **USB**.
 
-    ![View of all USB devices](images/mac-device-control-lookup-3.png)
+    ![View of all USB devices.](images/mac-device-control-lookup-3.png)
 
 1. Under **USB Device Tree**, navigate to the USB device that you plugged in.
 
-    ![Details of a USB device](images/mac-device-control-lookup-4.png)
+    ![Details of a USB device.](images/mac-device-control-lookup-4.png)
 
 1. The vendor ID, product ID, and serial number are displayed. When adding the vendor ID and product ID to the removable media policy, you must only add the part after `0x`. For example, in the below image, vendor ID is `1000` and product ID is `090c`.
 

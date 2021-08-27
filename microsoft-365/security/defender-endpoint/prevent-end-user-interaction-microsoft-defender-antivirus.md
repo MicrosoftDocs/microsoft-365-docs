@@ -35,11 +35,11 @@ In Windows 10, versions 1703, hiding the interface will hide Microsoft Defender 
 
 With the setting set to **Enabled**:
 
-:::image type="content" source="../../media/wdav-headless-mode-1703.png" alt-text="Windows Security without the shield icon and virus and threat protection section":::
+:::image type="content" source="../../media/wdav-headless-mode-off-1703.png" alt-text="Screenshot of Windows Security without the shield icon and virus and threat protection sections.":::
 
 With the setting set to **Disabled** or not configured:
 
-:::image type="content" source="../../media/wdav-headless-mode-1703.png" alt-text="Screenshot of Windows Security with shield icon and threat protection sections":::
+:::image type="content" source="../../media/wdav-headless-mode-1703.png" alt-text="Screenshot of Windows Security with shield icon and threat protection sections.":::
 
 >[!NOTE]
 >Hiding the interface will also prevent Microsoft Defender Antivirus notifications from appearing on the endpoint. Microsoft Defender for Endpoint notifications will still appear. You can also individually [configure the notifications that appear on endpoints](configure-notifications-microsoft-defender-antivirus.md)

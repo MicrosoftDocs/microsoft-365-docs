@@ -27,7 +27,7 @@ Azure AD joined and registered devices connected to Microsoft Cloud Deutschland 
 ## Azure AD Joined Windows 10 devices
 If a Windows 10 device is Azure AD joined, it must be disconnected from Azure AD and must be connected again.
 
-[ ![Azure AD Device Re-Join Flow](../media/ms-cloud-germany-migration-opt-in/AAD-ReJoin-flow.png) ](../media/ms-cloud-germany-migration-opt-in/AAD-ReJoin-flow.png#lightbox)
+[ ![Azure AD Device Re-Join Flow.](../media/ms-cloud-germany-migration-opt-in/AAD-ReJoin-flow.png) ](../media/ms-cloud-germany-migration-opt-in/AAD-ReJoin-flow.png#lightbox)
 
 
 If the user is an administrator on the Windows 10 device, the user can unregister the device from Azure AD and re-join it again in three steps.
@@ -69,7 +69,7 @@ Any other work account from the organization can sign in to the device, but has 
 
 If a Windows 10 device is Azure AD registered, it needs to be disconnected from the Azure AD and connected again.
 
-[ ![Azure AD Device Re-Registration Flow](../media/ms-cloud-germany-migration-opt-in/AAD-ReRegistration-flow.png) ](../media/ms-cloud-germany-migration-opt-in/AAD-ReJoin-flow.png#lightbox)
+[ ![Azure AD Device Re-Registration Flow.](../media/ms-cloud-germany-migration-opt-in/AAD-ReRegistration-flow.png) ](../media/ms-cloud-germany-migration-opt-in/AAD-ReJoin-flow.png#lightbox)
 
 ### Step 1: Determine if the device is Azure ID registered
 
@@ -161,6 +161,10 @@ It's critical to your success that you only unregister and re-register your devi
 **How do I know that all my devices are registered in the public cloud?**
 
 To check whether your devices are registered in the public cloud, you should export and download the list of devices from the Azure AD portal to an Excel spreadsheet. Then, filter the devices that are registered (by using the _registeredTime_ column) after the date when your organization has passed [phase 9 of the migration process](ms-cloud-germany-transition-phases.md#phase-9--10-azure-ad-finalization).
+
+**Do I still need to add the DNS name as stated in [Create DNS records for Microsoft using Windows-based DNS](/microsoft-365/admin/dns/create-dns-records-using-windows-based-dns?view=o365-worldwide#add-two-cname-records-for-mobile-device-management-mdm-for-microsoft)?**
+
+This DNS entry is no longer needed for re-registering your device. 
 
 ## Additional considerations
 

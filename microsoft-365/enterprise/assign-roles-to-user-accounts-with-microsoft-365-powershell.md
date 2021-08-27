@@ -1,7 +1,7 @@
 ---
 title: "Assign roles to Microsoft 365 user accounts with PowerShell"
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 09/23/2020
 audience: Admin
@@ -40,7 +40,7 @@ First, use a global administrator account to [connect to your Microsoft 365 tena
   
 Next, identify the sign-in name of the user account that you want to add to a role (example: fredsm\@contoso.com). This is also known as the user principal name (UPN).
 
-Next, determine the name of the role. See [administrator role permissions in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles).
+Next, determine the name of the role. See [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference).
 
 >[!Note]
 >Pay attention to the notes in this article. Some role names are different for Azure Active Directory (Azure AD) PowerShell. For example, the *SharePoint Administrator* role in the Microsoft 365 admin center is *SharePoint Service Administrator* in Azure AD PowerShell.

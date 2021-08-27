@@ -39,7 +39,7 @@ This insight appears only after the condition is detected (if you don't have any
 
 You can use this notification to help you to identify and fine-tune mail flow rules to help reduce mail flow delays.
 
-![Fix slow mail flow rules insight in the Recommended for you area of the Mail flow dashboard](../../media/mfi-fix-slow-mail-flow-rules.png)
+![Fix slow mail flow rules insight in the Recommended for you area of the Mail flow dashboard.](../../media/mfi-fix-slow-mail-flow-rules.png)
 
 When you click **View details** on the widget, a flyout appears with more information:
 
@@ -48,7 +48,7 @@ When you click **View details** on the widget, a flyout appears with more inform
 - **Average time spent on each message**
 - **Median time spent on a message**: The middle value that separates the upper half from the lower half of time data.
 
-![Details flyout that appears after clicking View details on the Fix slow mail flow rules insight](../../media/mfi-fix-slow-mail-flow-rules-details.png)
+![Details flyout that appears after clicking View details on the Fix slow mail flow rules insight.](../../media/mfi-fix-slow-mail-flow-rules-details.png)
 
 For more information about conditions and exceptions in mail flow rules, see [Mail flow rule conditions and exceptions (predicates) in Exchange Online](/Exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions).
 

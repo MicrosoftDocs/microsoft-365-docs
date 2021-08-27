@@ -16,6 +16,7 @@ ms.collection:
 ms.custom: 
 - AdminSurgePortfolio
 - okr_smb
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
@@ -84,7 +85,7 @@ Use the **Service**, **Tag**, and **Message state**  drop-down menus to select a
 
 You can select any column heading, except **Service** and **Tag**,  to sort messages in ascending or descending order.
 
-:::image type="content" source="../../media/message-center-admin-impact1.png" alt-text="Message center view sorted by Admin impact":::
+:::image type="content" source="../../media/message-center-admin-impact1.png" alt-text="Message center view sorted by Admin impact.":::
 
 ::: moniker-end
 
@@ -94,7 +95,7 @@ Use the **Views** drop-down menu to select a filtered view of messages.
 
 You can select any column heading to sort messages in ascending or descending order. For example, in this illustration the messages are sorted on the **Act by** date.
 
-![Message center view sorted by Admin impact tag](../../media/message-center-filter-act-by.png)
+![Message center view sorted by Admin impact tag.](../../media/message-center-filter-act-by.png)
 
 ::: moniker-end
 

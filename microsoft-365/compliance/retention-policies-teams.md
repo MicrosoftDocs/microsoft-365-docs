@@ -38,9 +38,7 @@ For other workloads, see:
 
 ## What's included for retention and deletion
 
-Teams chats messages and channel messages can be deleted by using retention policies for Teams, and in addition to the text in the messages, the following items can be retained for compliance reasons: Embedded images, tables, hypertext links, links to other Teams messages and files, and [card content](/microsoftteams/platform/task-modules-and-cards/what-are-cards). Chat messages include all the names of the people in the chat, and channel messages include the team name and the message title (if supplied). 
-> [!NOTE]
-> Support for messages in private channels is currently rolling out in preview.
+Teams chats messages, channel messages, and private channel messages can be deleted by using retention policies for Teams, and in addition to the text in the messages, the following items can be retained for compliance reasons: Embedded images, tables, hypertext links, links to other Teams messages and files, and [card content](/microsoftteams/platform/task-modules-and-cards/what-are-cards). Chat messages and private channel messages include all the names of the people in the conversation, and channel messages include the team name and the message title (if supplied). 
 
 Code snippets, recorded voice memos from the Teams mobile client, thumbnails, announcement images, and reactions from others in the form of emoticons are not retained when you use retention policies for Teams.
 
@@ -78,7 +76,7 @@ After a retention policy is configured for chat and channel messages, the paths 
 
 When the retention policy is to retain and then delete:
 
-![Diagram of retention flow for Teams chat and channel messages](../media/teamsretentionlifecycle.png)
+![Diagram of retention flow for Teams chat and channel messages.](../media/teamsretentionlifecycle.png)
 
 For the two paths in the diagram:
 

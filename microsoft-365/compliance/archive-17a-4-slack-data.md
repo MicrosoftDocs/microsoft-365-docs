@@ -14,7 +14,7 @@ ms.collection: M365-security-compliance
 description: "Learn how to set up and use a 17a-4 Slack DataParser connector to import and archive Slack data in Microsoft 365."
 ---
 
-# Set up a connector to archive Slack data (preview)
+# Set up a connector to archive Slack data
 
 Use [DataParser from 17a-4 LLC](https://www.17a-4.com/slack-dataparser/) to import and archive data from the Slack platform to user mailboxes in your Microsoft 365 organization. DataParser includes a Slack connector that's configured to capture items from a third-party data source and import those items to Microsoft 365. The Slack DataParser connector converts Slack data to an email message format and then imports those items to user mailboxes in Microsoft 365.
 
@@ -24,7 +24,7 @@ After Slack data is stored in user mailboxes, you can apply Microsoft 365 compli
 
 The following overview explains the process of using a data connector to archive Slack data in Microsoft 365.
 
-![Archiving workflow for Slack data from 17a-4](../media/SlackDataParserConnectorWorkflow.png)
+![Archiving workflow for Slack data from 17a-4.](../media/SlackDataParserConnectorWorkflow.png)
 
 1. Your organization works with 17a-4 to set up and configure the Slack DataParser.
 

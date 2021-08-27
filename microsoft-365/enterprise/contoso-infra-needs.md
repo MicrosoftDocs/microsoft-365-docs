@@ -1,9 +1,9 @@
 ---
 title: "Contoso IT infrastructure and business needs"
-author: JoeDavies-MSFT
+author: kelleyvice-msft
 f1.keywords:
 - NOCSH
-ms.author: josephd
+ms.author: kvice
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -27,7 +27,7 @@ Contoso uses a mostly centralized on-premises IT infrastructure, with applicatio
 
 Here is the headquarters office with application datacenters, a DMZ, and the internet.
 
-![Existing Contoso IT infrastructure](../media/contoso-infra-needs/contoso-infra-needs-fig1.png)
+![Existing Contoso IT infrastructure.](../media/contoso-infra-needs/contoso-infra-needs-fig1.png)
 
 The on-premises application datacenters host: 
 

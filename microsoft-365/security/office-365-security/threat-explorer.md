@@ -36,12 +36,12 @@ If your organization has [Microsoft Defender for Office 365](defender-for-office
 
 |With Microsoft Defender for Office 365 Plan 2, you see:|With Microsoft Defender for Office 365 Plan 1, you see:|
 |---|---|
-|![Threat explorer](../../media/threatmgmt-explorer.png)|![Real-time detections](../../media/threatmgmt-realtimedetections.png)|
+|![Threat explorer.](../../media/threatmgmt-explorer.png)|![Real-time detections](../../media/threatmgmt-realtimedetections.png)|
 |
 
 Explorer or Real-time detections helps your security operations team investigate and respond to threats efficiently. The report resembles the following image:
 
-![Go to Threat management \> Explorer](../../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
+![Go to Threat management \> Explorer.](../../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
 
 With this report, you can:
 
@@ -61,10 +61,10 @@ We are making this integration more relevant by introducing the alert ID (see an
 Alert ID is available within the URL when you are viewing an individual alert; an example being `https://protection.office.com/viewalerts?id=372c9b5b-a6c3-5847-fa00-08d8abb04ef1`.
 
 > [!div class="mx-imgBorder"]
-> ![Filtering for Alert ID](../../media/AlertID-Filter.png)
+> ![Filtering for Alert ID.](../../media/AlertID-Filter.png)
 
 > [!div class="mx-imgBorder"]
-> ![Alert ID in details flyout](../../media/AlertID-DetailsFlyout.png)
+> ![Alert ID in details flyout.](../../media/AlertID-DetailsFlyout.png)
 
 ### Extending the Explorer (and Real-time detections) data retention and search limit for trial tenants from 7 to 30 days
 
@@ -89,16 +89,16 @@ In Threat Explorer, you can see information about user tags in the following exp
 The **Tags** column in the email grid contains all the tags that have been applied to the sender or recipient mailboxes. By default, system tags like priority accounts are shown first.
 
 > [!div class="mx-imgBorder"]
-> ![Filter tags in email grid view](../../media/tags-grid.png)
+> ![Filter tags in email grid view.](../../media/tags-grid.png)
 
 #### Filtering
 
 You can use tags as a filter. Hunt just across priority accounts or specific user tags scenarios. You can also exclude results that have certain tags. Combine this functionality with other filters to narrow your scope of investigation.
 
-[![Filter tags](../../media/tags-filter-normal.png)](../../media/tags-filter-normal.png#lightbox)
+[![Filter tags.](../../media/tags-filter-normal.png)](../../media/tags-filter-normal.png#lightbox)
 
 > [!div class="mx-imgBorder"]
-> ![Not filter tags](../../media/tags-filter-not.png)
+> ![Not filter tags.](../../media/tags-filter-not.png)
 
 #### Email detail flyout
 
@@ -106,14 +106,14 @@ To view the individual tags for sender and recipient, select the subject to open
 The information about individual tags for sender and recipient also extends to exported CSV data, where you can see these details in two separate columns.
 
 > [!div class="mx-imgBorder"]
-> ![Email Details tags](../../media/tags-flyout.png)
+> ![Email Details tags.](../../media/tags-flyout.png)
 
 Tags information is also shown in the URL clicks flyout. To view it, go to Phish or All Email view and then to the **URLs** or **URL Clicks** tab. Select an individual URL flyout to view additional details about clicks for that URL, including tags associated with that click.
 
 ### Updated Timeline View
 
 > [!div class="mx-imgBorder"]
-> ![URL tags](../../media/tags-urls.png)
+> ![URL tags.](../../media/tags-urls.png)
 >
 Learn more by watching [this video](https://www.youtube.com/watch?v=UoVzN0lYbfY&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=4).
 
@@ -137,12 +137,12 @@ The set of detection technologies now includes new detection methods, as well as
 You can now see the specific threat for a URL on the email flyout **Details** tab. The threat can be *malware*, *phish*, *spam*, or *none*.)
 
 > [!div class="mx-imgBorder"]
-> ![URL threats](../../media/URL_Threats.png)
+> ![URL threats.](../../media/URL_Threats.png)
 
 ### Updated timeline view (upcoming)
 
 > [!div class="mx-imgBorder"]
-> ![Updated Timeline View](../../media/Email_Timeline.png)
+> ![Updated Timeline View.](../../media/Email_Timeline.png)
 
 Timeline view identifies all delivery and post-delivery events. It includes information about the threat identified at that point of time for a subset of these events. Timeline view also provides information about any additional action taken (such as ZAP or manual remediation), along with the result of that action. Timeline view information includes:
 
@@ -159,7 +159,7 @@ Currently, we surface delivery location in the email grid and email flyout. The 
 **Original delivery location** will give more information about where an email was delivered initially. **Latest delivery location** will state where an email landed after system actions like *ZAP* or admin actions like *Move to deleted items*. Latest delivery location is intended to tell admins the message's last-known location post-delivery or any system/admin actions. It doesn't include any end-user actions on the email. For example, if a user deleted a message or moved the message to archive/pst, the message "delivery" location won't be updated. But if a system action updated the location (for example, ZAP resulting in an email moving to quarantine), **Latest delivery location** would show as "quarantine."
 
 > [!div class="mx-imgBorder"]
-> ![Updated delivery locations](../../media/Updated_Delivery_Location.png)
+> ![Updated delivery locations.](../../media/Updated_Delivery_Location.png)
 
 > [!NOTE]
 > There are a few cases where **Delivery location** and **Delivery action** may show as "unknown":
@@ -169,7 +169,7 @@ Currently, we surface delivery location in the email grid and email flyout. The 
 > - **Latest delivery location** can be unknown if an admin/system action (such as ZAP) was attempted, but the message wasn't found. Typically, the action happens after the user  moved or deleted the message. In such cases, verify the **Result/Details** column in timeline view. Look for the statement "Message moved or deleted by the user."
 
 > [!div class="mx-imgBorder"]
-> ![Delivery locations for timeline](../../media/Updated_Timeline_Delivery_Location.png)
+> ![Delivery locations for timeline.](../../media/Updated_Timeline_Delivery_Location.png)
 
 ### Additional actions
 
@@ -179,7 +179,7 @@ Currently, we surface delivery location in the email grid and email flyout. The 
 > As part of the pending changes, the "Removed by ZAP" value currently surfaced in the Delivery Action filter is going away. You'll have a way to search for all email with the ZAP attempt through **Additional actions**.
 
 > [!div class="mx-imgBorder"]
-> ![Additional Actions in Explorer](../../media/Additional_Actions.png)
+> ![Additional Actions in Explorer.](../../media/Additional_Actions.png)
 
 ### System overrides
 
@@ -195,10 +195,10 @@ Currently, we surface delivery location in the email grid and email flyout. The 
 
 - File extension blocked by org policy: An organization's security team blocks a file name extension through the anti-malware policy settings. These values will now be displayed in email details to help with investigations. Secops teams can also use the rich-filtering capability to filter on blocked file extensions.
 
-[![System Overrides in Explorer](../../media/System_Overrides.png)](../../media/System_Overrides.png#lightbox)
+[![System Overrides in Explorer.](../../media/System_Overrides.png)](../../media/System_Overrides.png#lightbox)
 
 > [!div class="mx-imgBorder"]
-> ![System Overrides Grid in Explorer](../../media/System_Overrides_Grid.png)
+> ![System Overrides Grid in Explorer.](../../media/System_Overrides_Grid.png)
 
 ### Improvements for the URL and clicks experience
 
@@ -215,7 +215,7 @@ The improvements include:
 
 Phish confidence level helps identify the degree of confidence with which an email was categorized as "phish." The two possible values are *High* and *Normal*. In the initial stages, this filter will be available only in the Phish view of Threat Explorer.
 
-[![Phish Confidence Level in Explorer](../../media/Phish_Confidence_Level.png)](../../media/Phish_Confidence_Level.png#lightbox)
+[![Phish Confidence Level in Explorer.](../../media/Phish_Confidence_Level.png)](../../media/Phish_Confidence_Level.png#lightbox)
 
 ### ZAP URL signal
 
@@ -236,14 +236,14 @@ You can now sort and filter on system or custom user tags to quickly grasp the s
 > Filtering and sorting by user tags is currently in public preview. This functionality may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided about it.
 
 > [!div class="mx-imgBorder"]
-> ![Tags column in Explorer](../../media/threat-explorer-tags.png)
+> ![Tags column in Explorer.](../../media/threat-explorer-tags.png)
 
 ### Timezone improvements
 
 You'll see the time zone for the email records in the Portal as well as for Exported data. It will be visible across experiences like Email Grid, Details flyout, Email Timeline, and Similar Emails, so the time zone for the result set is clear.
 
 > [!div class="mx-imgBorder"]
-> ![View time zone in Explorer](../../media/TimezoneImprovements.png)
+> ![View time zone in Explorer.](../../media/TimezoneImprovements.png)
 
 ### Update in the refresh process
 
@@ -252,21 +252,21 @@ Some users have commented about confusion with automatic refresh (for example, a
 From an experience standpoint, the user can apply and remove the different range of filters (from the filter set and date) and select the refresh button to filter the results after they've defined the query. The refresh button is also now emphasized on the screen. We've also updated the related tooltips and in-product documentation.
 
 > [!div class="mx-imgBorder"]
-> ![Select Refresh to filter results](../../media/ManualRefresh.png)
+> ![Select Refresh to filter results.](../../media/ManualRefresh.png)
 
 ### Chart drilldown to add to filters
 
 You can now chart legend values to add them as filters. Select the **Refresh** button to filter the results.
 
 > [!div class="mx-imgBorder"]
-> ![Drill down through charts to Filter](../../media/ChartDrilldown.png)
+> ![Drill down through charts to Filter.](../../media/ChartDrilldown.png)
 
 ### In-product information updates
 
 Additional details are now available within the product, such as the total number of search results within the grid (see below). We've improved labels, error messages, and tooltips to provide more information about the filters, search experience, and result set.
 
 > [!div class="mx-imgBorder"]
-> ![View in-product information](../../media/ProductInfo.png)
+> ![View in-product information.](../../media/ProductInfo.png)
 
 ## Extended capabilities in Threat Explorer
 
@@ -277,7 +277,7 @@ Today we expose the list of the top targeted users in the Malware view for email
 You'll be able to export the list of targeted users, up to a limit of 3,000, along with the number of attempts for offline analysis for each email view. In addition, selecting the number of attempts (for example, 13 attempts in the image below) will open a filtered view in Threat Explorer, so you can see more details across emails and threats for that user.
 
 > [!div class="mx-imgBorder"]
-> ![Top targeted users](../../media/Top_Targeted_Users.png)
+> ![Top targeted users.](../../media/Top_Targeted_Users.png)
 
 ### Exchange transport rules
 
@@ -298,7 +298,7 @@ You'll be able to see both the GUID and the name of the transport rules that wer
 > Within the email grid, Details flyout, and Exported CSV, the ETRs are presented with a Name/GUID as shown below.
 >
 > > [!div class="mx-imgBorder"]
-> > ![Exchange Transport Rules](../../media/ETR_Details.png)
+> > ![Exchange Transport Rules.](../../media/ETR_Details.png)
 
 ### Inbound connectors
 
@@ -307,7 +307,7 @@ Connectors are a collection of instructions that customize how your email flows 
 The search for connectors is "contains" in nature, which means partial keyword searches should work as well. Within the Main grid view, the Details flyout, and the Exported CSV, the connectors are shown in the Name/GUID format as shown here:
 
 > [!div class="mx-imgBorder"]
-> ![Connector details](../../media/Connector_Details.png)
+> ![Connector details.](../../media/Connector_Details.png)
 
 ## New features in Threat Explorer and Real-time detections
 
@@ -416,7 +416,7 @@ Follow this path to get to the same location in the Real-time detections report:
 > The Network Message ID maps the click back to specific mails when you search on the ID through Explorer or associated third-party tools. Such searches identify the email associated with a click result. Having the correlated Network Message ID makes for quicker and more powerful analysis.
 
 > [!div class="mx-imgBorder"]
-> ![Clicks tab in Explorer](../../media/tp_ExportClickResultAndNetworkID.png)
+> ![Clicks tab in Explorer.](../../media/tp_ExportClickResultAndNetworkID.png)
 
 ## See malware detected in email by technology
 
@@ -427,19 +427,19 @@ Suppose you want to see malware detected in email sorted by Microsoft 365 techno
 2. In the **View** menu, choose **Email** \> **Malware**.
 
    > [!div class="mx-imgBorder"]
-   > ![View menu for Explorer](../../media/ExplorerViewEmailMalwareMenu.png)
+   > ![View menu for Explorer.](../../media/ExplorerViewEmailMalwareMenu.png)
 
 3. Click **Sender**, and then choose **Basic** \> **Detection technology**.
 
    Your detection technologies are now available as filters for the report.
 
    > [!div class="mx-imgBorder"]
-   > ![Malware detection technologies](../../media/ExplorerEmailMalwareDetectionTech.png)
+   > ![Malware detection technologies.](../../media/ExplorerEmailMalwareDetectionTech.png)
 
 4. Choose an option. Then select the **Refresh** button to apply that filter.
 
    > [!div class="mx-imgBorder"]
-   > ![Selected detection technology](../../media/ExplorerEmailMalwareDetectionTechATP.png)
+   > ![Selected detection technology.](../../media/ExplorerEmailMalwareDetectionTechATP.png)
 
 The report refreshes to show the results that malware detected in email, using the technology option you selected. From here, you can conduct further analysis.
 
@@ -454,14 +454,14 @@ To review phish URLs in messages and clicks on URLs in phish messages, use the [
 2. In the **View** menu, choose **Email** \> **Phish**.
 
    > [!div class="mx-imgBorder"]
-   > ![View menu for Explorer in phishing context](../../media/ExplorerViewEmailPhishMenu.png)
+   > ![View menu for Explorer in phishing context.](../../media/ExplorerViewEmailPhishMenu.png)
 
 3. Click **Sender**, and then choose **URLs** \> **Click verdict**.
 
 4. Select one or more options, such as **Blocked** and **Block overridden**, and then select the **Refresh** button on the same line as the options to apply that filter. (Don't refresh your browser window.)
 
    > [!div class="mx-imgBorder"]
-   > ![URLs and click verdicts](../../media/ThreatExplorerEmailPhishClickVerdictOptions.png)
+   > ![URLs and click verdicts.](../../media/ThreatExplorerEmailPhishClickVerdictOptions.png)
 
    The report refreshes to show two different URL tables on the URL tab under the report:
 
@@ -472,7 +472,7 @@ To review phish URLs in messages and clicks on URLs in phish messages, use the [
    The two URL tables show top URLs in phishing email messages by delivery action and location. The tables show URL clicks that were blocked or visited despite a warning, so you can see what potential bad links were presented to users and that the user's clicked. From here, you can conduct further analysis. For example, below the chart you can see the top URLs in email messages that were blocked in your organization's environment.
 
    > [!div class="mx-imgBorder"]
-   > ![Explorer URLs that were blocked](../../media/ExplorerPhishClickVerdictURLs.png)
+   > ![Explorer URLs that were blocked.](../../media/ExplorerPhishClickVerdictURLs.png)
 
    Select a URL to view more detailed information.
 
@@ -501,14 +501,14 @@ Suppose that you want to see email messages that users in your organization repo
 2. In the **View** menu, choose **Email** \> **Submissions**.
 
    > [!div class="mx-imgBorder"]
-   > ![View menu for Explorer for emails](../../media/explorer-view-menu-email-user-reported.png)
+   > ![View menu for Explorer for emails.](../../media/explorer-view-menu-email-user-reported.png)
 
 3. Click **Sender**, and then choose **Basic** \> **Report type**.
 
 4. Select an option, such as **Phish**, and then select the **Refresh** button.
 
    > [!div class="mx-imgBorder"]
-   > ![User-reported phish](../../media/EmailUserReportedReportType.png)
+   > ![User-reported phish.](../../media/EmailUserReportedReportType.png)
 
 The report refreshes to show data about email messages that people in your organization reported as a phishing attempt. You can use this information to conduct further analysis, and, if necessary, adjust your [anti-phishing policies in Microsoft Defender for Office 365](configure-mdo-anti-phishing-policies.md).
 
