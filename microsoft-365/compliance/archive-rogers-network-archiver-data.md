@@ -14,7 +14,7 @@ ms.collection: M365-security-compliance
 description: "Admins can set up a TeleMessage connector to import and archive Rogers Network data in Microsoft 365. This lets you archive data from third-party data sources in Microsoft 365 so you can use compliance features such as legal hold, content search, and retention policies to manage your organization's third-party data."
 ---
 
-# Set up a connector to archive Rogers Network data (preview)
+# Set up a connector to archive Rogers Network data
 
 Use the TeleMessage connector in the Microsoft 365 compliance center to import and archive SMS and MMS data from the Rogers mobile network. After you set up and configure a [Rogers Network Archiver connector](https://www.telemessage.com/mobile-archiver/network-archiver/rogers/), it connects to your organization's Rogers mobile network, and imports SMS and MMS data to mailboxes in Microsoft 365.
 
@@ -24,7 +24,7 @@ After data from the Rogers mobile network is stored in user mailboxes, you can a
 
 The following overview explains the process of using a connector to archive Rogers SMS and MMS data in Microsoft 365.
 
-![Rogers Network archiving workflow](../media/RogersNetworkConnectorWorkflow.png)
+![Rogers Network archiving workflow.](../media/RogersNetworkConnectorWorkflow.png)
 
 1. Your organization works with TeleMessage to set up a Rogers Network Archiver connector. For more information, see [Activating the TeleMessage Rogers Network Archiver for Microsoft 365](https://www.telemessage.com/microsoft-365-activation-for-the-rogers-network-archiver/).
 

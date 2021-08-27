@@ -18,7 +18,7 @@ search.appverid:
 ms.assetid: 985a357f-6db7-401f-bf7a-1bafdf1f312c
 f1.keywords:
 - NOCSH
-description: Find information and resources to upgrade from SharePoint 2010 and Sharepoint Server 2010. Support for both ends April 13, 2021.
+description: Find information and resources to upgrade from SharePoint 2010 and SharePoint Server 2010. Support for both ends April 13, 2021.
 ms.custom: seo-marvel-apr2020
 ---
 
@@ -63,7 +63,7 @@ If you choose an option on the low end of the scale (good), you'll need to start
 
 Here are the three paths you can take to avoid the end of support for SharePoint Server 2010.
 
-![SharePoint Server 2010 upgrade paths](../media/upgrade-from-sharepoint-2010/upgrade-from-sharepoint-2010-paths.png)
+![SharePoint Server 2010 upgrade paths.](../media/upgrade-from-sharepoint-2010/upgrade-from-sharepoint-2010-paths.png)
 
 > [!NOTE]
 > End of support for SharePoint Server 2010 and SharePoint Foundation 2010 is currently scheduled for April 13, 2021. But make sure to check the [Product Lifecycle site](https://support.microsoft.com/lifecycle) for the most-current dates.
@@ -254,7 +254,7 @@ You may want to create a Microsoft 365 dev/test environment, which you can set u
 
 For a visual summary of the upgrade, migrate, and move-to-the-cloud options for Office 2010 clients and servers and Windows 7, see the [end of support poster](../downloads/Office2010Windows7EndOfSupport.pdf).
 
-[![End of support for Office 2010 clients and servers and Windows 7 poster](../media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](../downloads/Office2010Windows7EndOfSupport.pdf)
+[![End of support for Office 2010 clients and servers and Windows 7 poster.](../media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](../downloads/Office2010Windows7EndOfSupport.pdf)
 
 This poster illustrates the various paths you can take to avoid Office 2010 client and server products and Windows 7 end of support, with preferred paths and option supports in Microsoft 365 Enterprise highlighted.
 

@@ -42,7 +42,7 @@ Microsoft 365 Defender is a Cloud-based, unified, pre- and post-breach enterpris
 
 In this illustration an attack is underway. Phishing email arrives at the Inbox of an employee in your organization, who unknowingly opens the email attachment. This installs malware, which leads to a chain of events that could end with the theft of sensitive data. But in this case, Defender for Office 365 is in operation.
 
-![How Microsoft 365 Defender stops a chain of threats](../../media/defender/m365-defender-eval-threat-chain.png)
+![How Microsoft 365 Defender stops a chain of threats.](../../media/defender/m365-defender-eval-threat-chain.png)
 
 In the illustration:
 
@@ -70,7 +70,7 @@ Microsoft 365 Defender is made up of these security technologies, operating in t
 
 The diagram below illustrates high-level architecture for key Microsoft 365 Defender components and integrations. *Detailed* architecture for each Defender component, and use-case scenarios, are given throughout this series of articles.
 
-![Microsoft 365 Defender high-level architecture](../../media/defender/m365-defender-eval-architecture.png)
+![Microsoft 365 Defender high-level architecture.](../../media/defender/m365-defender-eval-architecture.png)
 
 In this illustration:
 
@@ -89,7 +89,7 @@ Additional optional architecture components not included in this illustration:
 
 Microsoft recommends enabling the components of Microsoft 365 in the order illustrated:
 
-![Microsoft 365 Defender high-level evaluation process](../../media/defender/m365-defender-eval-process.png)
+![Microsoft 365 Defender high-level evaluation process.](../../media/defender/m365-defender-eval-process.png)
 
 The following table describes this illustration.
 

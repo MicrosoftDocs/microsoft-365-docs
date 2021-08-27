@@ -8846,7 +8846,7 @@ For IPv6, a DLP policy has high confidence that it's detected this type of sensi
 - No keyword from Keyword_ipaddress is found.
 
 ```xml
-    <!-- IP Address -->
+    <!-- IP Address --> 
     <Entity id="1daa4ad5-e2dd-4ca4-a788-54722c09efb2" patternsProximity="300" recommendedConfidence="85">
       <Pattern confidenceLevel="85">
         <IdMatch idRef="Regex_ipv6_address" />
@@ -8878,6 +8878,7 @@ For IPv6, a DLP policy has high confidence that it's detected this type of sensi
 - ip addresses
 - internet protocol
 - IP-כתובת ה
+ -->
 
 ## Ireland driver's license number
 

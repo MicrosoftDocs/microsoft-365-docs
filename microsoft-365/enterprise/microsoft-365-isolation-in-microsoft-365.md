@@ -22,7 +22,7 @@ description: "Summary: An explanation of isolation and access control within the
 
 Azure Active Directory (Azure AD) and Microsoft 365 use a highly complex data model that includes tens of services, hundreds of entities, thousands of relationships, and tens of thousands of attributes. At a high level, Azure AD and the service directories are the containers of tenants and recipients kept in sync using state-based replication protocols. In addition to the directory information held within Azure AD, each of the service workloads have their own directory services infrastructure.
  
-![Microsoft 365 tenant data sync](../media/office-365-isolation-tenant-data-sync.png)
+![Microsoft 365 tenant data sync.](../media/office-365-isolation-tenant-data-sync.png)
 
 Within this model, there is no single source of directory data. Specific systems own individual pieces of data, but no single system holds all the data. Microsoft 365 services cooperate with Azure AD in this data model. Azure AD is the "system of truth" for shared data, which is typically small and static data used by every service. The federated model used within Microsoft 365 and Azure AD provides the shared view of the data.
 

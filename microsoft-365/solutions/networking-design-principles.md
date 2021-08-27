@@ -21,17 +21,17 @@ In this article, [Ed Fisher](https://www.linkedin.com/in/edfisher/), Security & 
 
 ## About the author
 
-![Ed Fisher photo](../media/solutions-architecture-center/ed-fisher-networking.jpg) 
+![Ed Fisher photo.](../media/solutions-architecture-center/ed-fisher-networking.jpg) 
 
-I'm currently a Principal Technical Specialist in the South East region focusing on Security & Compliance. I've worked with customers moving to Office 365 for the past 10 years. I’ve worked with smaller shops with a handful of locations to government agencies and enterprises with millions of users distributed around the world, and many other customers in between, with the majority having tens of thousands of users, multiple locations in various parts of the world, the need for a higher degree of security, and a multitude of compliance requirements. I've helped hundreds of enterprises and millions of users move to the cloud safely and securely.
+I am currently a Principal Technical Specialist in our Retail and Consumer Goods team, focusing on Security & Compliance. I have worked with customers moving to Office 365 for the past ten years. I’ve worked with smaller shops with a handful of locations to government agencies and enterprises with millions of users distributed around the world, and many other customers in between, with the majority having tens of thousands of users, multiple locations in various parts of the world, the need for a higher degree of security, and a multitude of compliance requirements. I have helped hundreds of enterprises and millions of users move to the cloud safely and securely.
 
 With a background over the past 25 years that includes security, infrastructure, and network engineering, and having moved two of my previous employers to Office 365 before joining Microsoft, I’ve been on your side of the table plenty of times, and do remember what that’s like. While no two customers are ever the same, most have similar needs, and when consuming a standardized service such as any SaaS or PaaS platform, the best approaches tend to be the same.
 
-## It’s not the network—it’s how you’re (mis)using it!
+## It’s not the network — it’s how you’re (mis)using it!
 
-No matter how many times it happens, it never fails to amaze me how *creative* security teams and networking teams try to get with how they think they should connect to Microsoft cloud services. There’s always some security policy, compliance standard, or better way they insist on using, without being willing to engage in a conversation about what it is they're trying to accomplish, or *how* they're better, easier, more cost-effective, and more performant ways of doing so.
+No matter how many times it happens, it never fails to amaze me how *creative* security teams and networking teams try to get with how they think they should connect to Microsoft cloud services. There’s always some security policy, compliance standard, or better way they insist on using, without being willing to engage in a conversation about what it is they are trying to accomplish, or *how* there are better, easier, more cost-effective, and more performant ways of doing so. 
 
-When this sort of thing is escalated to me, I’m usually willing to take the challenge and walk them through the how's and the why's and get them to where they need to be. But if I'm being completely frank, I have to share that sometimes I want to just let them do what they will, and come back to say I told you so when they finally concede it doesn’t work. I may want to do that sometimes, but I *don’t*. What I do is try to explain all of what I'm going to include in this post. Regardless of your role, if your organization wants to use Microsoft cloud services, there’s probably some wisdom in what follows that can help you out.
+When this sort of thing is escalated to me, I’m usually willing to take the challenge and walk them through the hows and the whys and get them to where they need to be. But if I am being completely frank, I have to share that sometimes I want to just let them do what they will, and come back to say I told you so when they finally concede it doesn’t work. I may want to do that sometimes, but I *don’t*. What I do is try to explain all of what I am going to include in this post. Regardless of your role, if your organization wants to use Microsoft cloud services, there’s probably some wisdom in what follows that can help you out.
 
 ## Guiding principles
 
