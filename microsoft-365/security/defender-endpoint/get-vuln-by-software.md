@@ -32,10 +32,9 @@ ms.custom: api
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-Retrieve a list of vulnerabilities in the installed software. 
+Retrieve a list of vulnerabilities in the installed software.
 
 ## Permissions
 
@@ -64,7 +63,7 @@ Empty
 
 ## Response
 
-If successful, this method returns 200 OK with a list of vulnerabilities exposed by the specified software. 
+If successful, this method returns 200 OK with a list of vulnerabilities exposed by the specified software.
 
 ## Example
 
@@ -73,7 +72,7 @@ If successful, this method returns 200 OK with a list of vulnerabilities exposed
 Here is an example of the request.
 
 ```http
-GET https://api.securitycenter.microsoft.com/api/Software/microsoft-_-edge/vulnerabilities 
+GET https://api.securitycenter.microsoft.com/api/Software/microsoft-_-edge/vulnerabilities
 ```
 
 ### Response example
