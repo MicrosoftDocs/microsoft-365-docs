@@ -111,7 +111,7 @@ Configure the static proxy using the Group Policy found here:
     <server name or ip>:<port>
     ```
 
-    For example: 10.0.0.6:8080
+    For example: http://10.0.0.6:8080
 
 > [!NOTE]
 >
