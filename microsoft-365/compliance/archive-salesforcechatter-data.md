@@ -24,7 +24,7 @@ After Salesforce Chatter data is stored in user mailboxes, you can apply Microso
 
 The following overview explains the process of using a connector to archive the Salesforce Chatter data in Microsoft 365.
 
-![Archiving workflow for Salesforce Chatter data](../media/SalesforceChatterConnectorWorkflow.png)
+![Archiving workflow for Salesforce Chatter data.](../media/SalesforceChatterConnectorWorkflow.png)
 
 1. Your organization works with Salesforce Chatter to set up and configure a Salesforce Chatter site.
 

@@ -40,7 +40,7 @@ By default, Microsoft Defender Antivirus will enable itself on a Windows 10 devi
 
 If Microsoft Defender Antivirus is enabled, the usual options will appear to configure it on that device:
 
-![Windows Security app showing Microsoft Defender AV options, including scan options, settings, and update options](images/vtp-wdav.png)
+![Windows Security app showing Microsoft Defender AV options, including scan options, settings, and update options.](images/vtp-wdav.png)
 
 If another antivirus product is installed and working correctly, Microsoft Defender Antivirus will disable itself. The Windows Security app will change the **Virus & threat protection** section to show status about the AV product, and provide a link to the product's configuration options.
 

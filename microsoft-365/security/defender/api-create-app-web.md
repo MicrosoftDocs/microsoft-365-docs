@@ -57,7 +57,7 @@ This article explains how to:
 
 2. Navigate to **Azure Active Directory** > **App registrations** > **New registration**.
 
-   ![Image of Microsoft Azure and navigation to application registration](../../media/atp-azure-new-app2.png)
+   ![Image of Microsoft Azure and navigation to application registration.](../../media/atp-azure-new-app2.png)
 
 3. In the form, choose a name for your application, then select **Register**.
 
@@ -66,11 +66,11 @@ This article explains how to:
    > [!TIP]
    > *Microsoft Threat Protection* is a former name for Microsoft 365 Defender, and will not appear in the original list. You need to start writing its name in the text box to see it appear.
 
-   ![Image of API permission selection](../../media/apis-in-my-org-tab.PNG)
+   ![Image of API permission selection.](../../media/apis-in-my-org-tab.PNG)
 
 5. Select **Application permissions**. Choose the relevant permissions for your scenario (for example, **Incident.Read.All**), and then select **Add permissions**.
 
-   ![Image of API access and API selection](../../media/request-api-permissions.PNG)
+   ![Image of API access and API selection.](../../media/request-api-permissions.PNG)
 
     > [!NOTE]
     > You need to select the relevant permissions for your scenario. *Read all incidents* is just an example. To determine which permission you need, please look at the **Permissions** section in the API you want to call.
@@ -79,18 +79,18 @@ This article explains how to:
 
 6. Select **Grant admin consent**. Every time you add a permission, you must select **Grant admin consent** for it to take effect.
 
-    ![Image of Grant permissions](../../media/grant-consent.PNG)
+    ![Image of Grant permissions.](../../media/grant-consent.PNG)
 
 7. To add a secret to the application, select **Certificates & secrets**, add a description to the secret, then select **Add**.
 
     > [!TIP]
     > After you select **Add**, select **copy the generated secret value**. You won't be able to retrieve the secret value after you leave.
 
-    ![Image of create app key](../../media/webapp-create-key2.png)
+    ![Image of create app key.](../../media/webapp-create-key2.png)
 
 8. Record your application ID and your tenant ID somewhere safe. They're listed under **Overview** on your application page.
 
-   ![Image of created app id](../../media/app-and-tenant-ids.png)
+   ![Image of created app id.](../../media/app-and-tenant-ids.png)
 
 9. **For Microsoft 365 Defender Partners only**: [Follow these instructions](./api-partner-access.md) for partner access through the Microsoft 365 Defender APIs, set your app to be multi-tenant, so it can be available in all tenants once you receive admin consent. Partner access is **required** for third-party apps—for example, if you create an app that is intended to run in multiple customers' tenants. It is **not required** if you create a service that you want to run in your tenant only, such as an application for your own usage that will only interact with your own data. To set your app to be multi-tenant:
 
@@ -238,7 +238,7 @@ aadToken = jsonResponse["access_token"]
 
    In the following image, you can see a decoded token acquired from an app, with `Incidents.Read.All`, `Incidents.ReadWrite.All`, and `AdvancedHunting.Read.All` permissions:
 
-   ![Image of token validation](../../media/webapp-decoded-token.png)
+   ![Image of token validation.](../../media/webapp-decoded-token.png)
 
 ## Use the token to access the Microsoft 365 Defender API
 
