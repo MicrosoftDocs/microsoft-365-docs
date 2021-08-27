@@ -69,14 +69,20 @@ In order to preview new features and provide early feedback, it is recommended t
     ```bash
     sudo yum install yum-utils
     ```
+
 - Note your distribution and version, and identify the closest entry (by major, then minor) for it under `https://packages.microsoft.com/config/rhel/`.
 
-    Use the following table to help guide you in locating the package: 
+    Use the following table to help guide you in locating the package:
 
-    |     Distro & version    |     Package    |
+    <br>
+
+    ****
+
+    |Distro & version|Package|
     |---|---|
-    |     For RHEL 8.0-8.5    |     https://packages.microsoft.com/config/rhel/8/prod/    |
-    |     For RHEL 7.2-7.9    |     https://packages.microsoft.com/config/rhel/7/prod/    |
+    |For RHEL 8.0-8.5|<https://packages.microsoft.com/config/rhel/8/prod/>|
+    |For RHEL 7.2-7.9|<https://packages.microsoft.com/config/rhel/7/prod/>|
+    |
 
     In the following commands, replace *[version]* and *[channel]* with the information you've identified:
 

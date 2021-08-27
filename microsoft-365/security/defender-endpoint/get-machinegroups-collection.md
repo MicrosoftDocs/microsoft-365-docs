@@ -13,7 +13,7 @@ author: mjcaparas
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 10/07/2018
 ---
@@ -31,10 +31,10 @@ ms.date: 10/07/2018
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-
 Retrieves a collection of RBAC device groups.
 
 ## Permissions
+
 User needs read permissions.
 
 ## HTTP request
@@ -45,7 +45,7 @@ GET /testwdatppreview/machinegroups
 
 ## Request headers
 
-Header | Value 
+Header|Value
 :---|:---
 Authorization | Bearer {token}. **Required**.
 Content type | application/json
@@ -72,10 +72,10 @@ Content-type: application/json
 ### Response example
 
 Here is an example of the response.
-Field id contains device group **id** and equal to field **rbacGroupId** in devices info. 
+Field id contains device group **id** and equal to field **rbacGroupId** in devices info.
 Field **ungrouped** is true only for one group for all devices that have not been assigned to any group. This group as usual has name "UnassignedGroup".
 
-```
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 {

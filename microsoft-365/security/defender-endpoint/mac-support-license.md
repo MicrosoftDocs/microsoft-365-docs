@@ -47,7 +47,7 @@ Contact your administrator for help.
 
 **Cause:** 
 
-You deployed and/or installed the Microsoft Defender for Endpoint for macOS package ("Download installation package"), but you might have run the configuration script ("Download onboarding package"), or you have not assigned a license to the user.
+You deployed and/or installed the Microsoft Defender for Endpoint for macOS package ("Download installation package"), but you might not have run the configuration script ("Download onboarding package"), or you have not assigned a license to the user.
 
 **Solution:**
 
