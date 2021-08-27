@@ -40,7 +40,7 @@ To review the predictive coding workflow, see [Learn about predictive coding in 
 
 5. Review each document and then select the **Relevant** or **Not relevant** button at the bottom of the reading pane to label it.
 
-   ![Label each document as relevant or not relevant](..\media\TrainModel1.png)
+   ![Label each document as relevant or not relevant.](..\media\TrainModel1.png)
 
 6. After you've labeled all 50 items, click **Finish**.
 

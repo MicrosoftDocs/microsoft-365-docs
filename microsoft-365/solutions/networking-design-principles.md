@@ -21,7 +21,7 @@ In this article, [Ed Fisher](https://www.linkedin.com/in/edfisher/), Security & 
 
 ## About the author
 
-![Ed Fisher photo](../media/solutions-architecture-center/ed-fisher-networking.jpg) 
+![Ed Fisher photo.](../media/solutions-architecture-center/ed-fisher-networking.jpg) 
 
 I am currently a Principal Technical Specialist in our Retail and Consumer Goods team, focusing on Security & Compliance. I have worked with customers moving to Office 365 for the past ten years. I’ve worked with smaller shops with a handful of locations to government agencies and enterprises with millions of users distributed around the world, and many other customers in between, with the majority having tens of thousands of users, multiple locations in various parts of the world, the need for a higher degree of security, and a multitude of compliance requirements. I have helped hundreds of enterprises and millions of users move to the cloud safely and securely.
 

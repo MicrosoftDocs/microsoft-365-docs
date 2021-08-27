@@ -34,7 +34,7 @@ This article will guide you through the steps on setting up the evaluation envir
 
 Use the following steps to enable the evaluation for Microsoft Defender for Endpoint.
 
-![Steps to enable Microsoft Defender for Endpoint in the Microsoft Defender evaluation environment](../../media/defender/m365-defender-endpoint-eval-enable-steps.png)
+![Steps to enable Microsoft Defender for Endpoint in the Microsoft Defender evaluation environment.](../../media/defender/m365-defender-endpoint-eval-enable-steps.png)
 
 - [Step 1. Check license state](#step-1-check-license-state)
 - [Step 2. Onboard endpoints](#step-2-onboard-endpoints-using-any-of-the-supported-management-tools)
@@ -47,13 +47,13 @@ You'll first need to check the license state to verify that it was properly prov
 
 1. To view your licenses, go to the **Microsoft Azure portal** and navigate to the [Microsoft Azure portal license section](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products).
 
-   ![Image of Azure Licensing page](../../media/defender/atp-licensing-azure-portal.png)
+   ![Image of Azure Licensing page.](../../media/defender/atp-licensing-azure-portal.png)
 
 1. Alternately, in the admin center, navigate to **Billing** > **Subscriptions**.
 
     On the screen, you'll see all the provisioned licenses and their current **Status**.
 
-    ![Image of billing licenses](../../media/defender/atp-billing-subscriptions.png)
+    ![Image of billing licenses.](../../media/defender/atp-billing-subscriptions.png)
 
 ## Step 2. Onboard endpoints using any of the supported management tools
 

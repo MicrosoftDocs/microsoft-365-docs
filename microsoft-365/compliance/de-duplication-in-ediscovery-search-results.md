@@ -44,11 +44,11 @@ The following graphics show how duplicate messages are displayed in the **Result
   
  ### Results.csv report (viewed in Excel)
   
-![Viewing info about duplicate items in the Results.csv report](../media/e3d64004-3b91-4cba-b6f3-934b46cbdcdb.png)
+![Viewing info about duplicate items in the Results.csv report.](../media/e3d64004-3b91-4cba-b6f3-934b46cbdcdb.png)
   
  ### Manifest.xml report (viewed in Excel)
   
-![Viewing info about duplicate items in the Manifest.xml report](../media/69aa4786-9883-46ff-bcae-b35e0daf4a6d.png)
+![Viewing info about duplicate items in the Manifest.xml report.](../media/69aa4786-9883-46ff-bcae-b35e0daf4a6d.png)
   
 Additionally, other properties from duplicate messages are included in the export reports. This includes the mailbox the duplicate message is located in, whether the message was sent to a distribution group, and whether the message was Cc'd or Bcc'd to another user.
   

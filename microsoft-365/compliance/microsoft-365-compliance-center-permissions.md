@@ -19,7 +19,7 @@ The Microsoft 365 compliance center has been recently updated and now supports d
 
 To view the **Permissions** tab in the Microsoft 365 compliance center, users need to be a global administrator or need to be assigned the *Role Management* role (a role is assigned only to the *Organization Management* role group). The *Role Management* role allows users to view, create, and modify role groups.
 
-![Permissions page in Microsoft 365 compliance center](../media/m365-compliance-center-permissions.png)
+![Permissions page in Microsoft 365 compliance center.](../media/m365-compliance-center-permissions.png)
 
 Permissions in the Microsoft 365 compliance center are based on the role-based access control (RBAC) permissions model. RBAC is the same permissions model that's used by most Microsoft 365 services, so if you're familiar with the permission structure in these services, granting permissions in the Microsoft 365 compliance center will be familiar. It's important to remember that the permissions managed in the Microsoft 365 compliance center don't cover the management of all the permissions needed in each individual service. You'll still need to manage certain service-specific permissions in the admin center for the specific service. For example, if you need to assign permissions for archiving, auditing, and MRM retention policies, you'll need to manage these permissions in the Exchange admin center.
 
@@ -29,7 +29,7 @@ A role grants permissions to do a set of tasks; for example, the Case Management
 
 A role group is a set of roles that enable users do their jobs across compliance solutions the Microsoft 365 compliance center. For example, by adding users to the *Insider Risk Management* role group, designated administrators, analysts, investigators, and auditors are configured for the necessary insider risk management permissions in a single group. The Microsoft 365 compliance center includes default role groups for tasks and functions for each compliance solution that you'll need to assign people to. Generally, we recommend simply adding individual users as members to the default compliance role groups as needed.
 
-![Diagram showing relationship of role groups to roles and members](../media/2a16d200-968c-4755-98ec-f1862d58cb8b.png)
+![Diagram showing relationship of role groups to roles and members.](../media/2a16d200-968c-4755-98ec-f1862d58cb8b.png)
 
 ## Permissions needed to use features in the Microsoft 365 compliance center
 

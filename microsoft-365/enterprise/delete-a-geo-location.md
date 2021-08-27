@@ -24,7 +24,7 @@ If you no longer need a satellite location, you can delete it from your tenant f
 
 Only global administrators can delete satellite locations.
 
-![Screenshot of multi-geo admin center showing delete geo location UI](../media/multi-geo-delete-satellite-location.png)
+![Screenshot of multi-geo admin center showing delete geo location UI.](../media/multi-geo-delete-satellite-location.png)
 
 To delete a satellite location
 

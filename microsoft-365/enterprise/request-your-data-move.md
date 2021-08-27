@@ -51,7 +51,7 @@ Select the tab **Organization profile**, then select the option **Data residency
   
 You will not see this section if your tenant is not eligible for the Microsoft 365 Move Program.  If your organization has data residency requirements and you need to request migration, mark the checkbox and then **Save**.
   
-![Datacenter opt-in action screen](../media/dataresidencyflyoutae.jpg)
+![Datacenter opt-in action screen.](../media/dataresidencyflyoutae.jpg)
   
 The text in the **Data residency** will section change to indicate **Your organization has requested to move its data** to the appropriate country and date. You'll also have a confirmation message in your message center. This confirms that you have successfully requested a move. 
   
