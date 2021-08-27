@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: ITPro
 ms.topic: overview
-ms.date: 08/18/2021
+ms.date: 08/27/2021
 ms.prod: m365-security
 ms.technology: mde
 localization_priority: Normal
@@ -35,7 +35,7 @@ The Home page provides your security team with a snapshot aggregate view of aler
 > [!NOTE]
 > Our examples shown in this article might differ from what you see in your Microsoft 365 Defender portal. What you see in your portal depends on your licenses and permissions. In addition, your security team can customize your organization's portal by adding, removing, and rearranging cards.
 
-### Cards
+### Cards highlight key information and include recommendations
 
 The Home page includes cards, such as the Active incidents card shown in the following image:
 
@@ -45,7 +45,7 @@ The card provides you with information at a glance, along with a link or button 
 
 :::image type="content" source="../../media/mde-p1/incidents.png" alt-text="Incidents list":::
 
-### Navigation bar
+### Navigation bar makes it easy to find alerts, the Action center, and more
 
 The navigation bar on the left side of the screen enables you to move easily between incidents, alerts, the Action center, reports, and settings. The following table describes the navigation bar.
 
@@ -74,7 +74,7 @@ The navigation bar on the left side of the screen enables you to move easily bet
 > [!TIP]
 > To learn more, see the [Microsoft 365 Defender portal overview](../defender/microsoft-365-security-center-mde.md).
 
-## Viewing and managing incidents & alerts
+## View and manage incidents & alerts
 
 When you sign into the Microsoft 365 Defender portal, make sure to view and manage your incidents and alerts. Start with your **Incidents** list. The following image shows a list of incidents, including one with high severity, and another with medium severity. 
 
@@ -89,7 +89,7 @@ Use the **Alerts**, **Devices**, and **Users** tabs to view more information, su
 > [!TIP]
 > To learn more about using the **Incident** view, see [Manage incidents](manage-incidents.md).
 
-## Managing devices
+## Manage devices
 
 To view and manage your organization’s devices, in the navigation bar, under **Endpoints**, select **Device inventory**. You’ll see a list of devices as shown in the following image:
 
@@ -106,7 +106,7 @@ If there are active alerts on the device, you can view them in the flyout pane. 
 > [!TIP]
 > To learn more, see [Investigate devices in the Defender for Endpoint devices list](investigate-machines.md).
 
-## Viewing reports
+## View reports
 
 In Defender for Endpoint Plan 1, several reports are available in the Microsoft 365 Defender portal. To access your reports, follow these steps:
 
