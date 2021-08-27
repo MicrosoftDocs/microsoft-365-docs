@@ -22,7 +22,7 @@ On this tab, you will upload a single zip package containing your binaries, depe
 
 ## Upload package zip file
 
-![Upload your binaries](Media/AddBinaries.png)
+![Upload your binaries.](Media/AddBinaries.png)
 
   - Uploaded dependencies can include test frameworks, scripting engines or data that will be accessed to run your application or test cases. For example, you can upload Selenium and a webdriver installer to help run browser-based tests.
   - It is best practice to ensure your script activities are kept modular i.e. 

@@ -42,7 +42,7 @@ Your Microsoft 365 tenant also includes an Azure Active Directory (Azure AD) ten
 
 Here is an example:
 
-![An example Microsoft 365 tenant with its Azure AD tenant](../media/tenant-management-overview/tenant-management-example-tenant.png)
+![An example Microsoft 365 tenant with its Azure AD tenant.](../media/tenant-management-overview/tenant-management-example-tenant.png)
 
 *Tenant management* is the planning, deployment, and ongoing operation of your Microsoft 365 tenants.
 
@@ -72,7 +72,7 @@ Here are the elements:
 
 Here is an example of a Microsoft 365 tenant with all these elements in place.
 
-![An example Microsoft 365 tenant](../media/tenant-management-overview/tenant-management-tenant-config.png)
+![An example Microsoft 365 tenant.](../media/tenant-management-overview/tenant-management-tenant-config.png)
 
 In this illustration, the Microsoft 365 tenant includes:
 
@@ -141,7 +141,7 @@ Use these steps to set up and manage your Microsoft 365 tenants.
 4. [Migrate your on-premises Office servers and data](tenant-management-migration.md)
 5. [Deploy device and app management](tenant-management-device-management.md)
 
-[![The steps to deploy and manage a Microsoft 365 tenant](../media/tenant-management-overview/tenant-management-step-grid.png)](tenant-management-tenants.md)
+[![The steps to deploy and manage a Microsoft 365 tenant.](../media/tenant-management-overview/tenant-management-step-grid.png)](tenant-management-tenants.md)
 
 Each step describes deployment options, summarizes the results, and ongoing maintenance tasks.
 

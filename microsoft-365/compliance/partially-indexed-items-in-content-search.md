@@ -64,7 +64,7 @@ Not every email message with a partially indexed file attachment or every partia
   
 Similarly, messages with partially indexed file attachments and documents of a partially indexed file type are included in search results when other message or document properties, which are indexed and searchable, match the search criteria. Message properties that are indexed for search include sent and received dates, sender and recipient, the file name of an attachment, and text in the message body. Document properties indexed for search include created and modified dates. So even though a message attachment may be a partially indexed item, the message will be included in the regular search results if the value of other message or document properties matches the search criteria.
   
-For a list of email and document properties that you can search for by using the Search feature in the Security & Compliance Center, see [Keyword queries and search conditions for eDiscovery](keyword-queries-and-search-conditions.md).
+For a list of email and document properties that you can search for by using eDiscovery tools in the Microsoft 365 compliance center, see [Keyword queries and search conditions for eDiscovery](keyword-queries-and-search-conditions.md).
   
 > [!NOTE]
 > If a mailbox item is moved from a folder that is indexed to a folder that is not indexed, a flag is set to unindex the item and the item is removed from the index and will not be searchable. Later, if that same item is moved back to a folder that is indexed, the flag is not reset. That means the item will remain unindexed, and not searchable.
