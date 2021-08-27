@@ -52,7 +52,7 @@ You can also manually navigate to the event area that corresponds to the feature
 
 2. Type **event viewer** in the Start menu and open **Event Viewer**.
 
-3. Select **Action** > **Import Custom View...**
+3. Select **Action** \> **Import Custom View...**
 
    > [!div class="mx-imgBorder"]
    > ![Animation highlighting Import custom view on the left of the Even viewer window.](images/events-import.gif)
