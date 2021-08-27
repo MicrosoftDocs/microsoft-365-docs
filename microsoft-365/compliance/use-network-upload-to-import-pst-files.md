@@ -59,7 +59,7 @@ You have to perform Step 1 only once to import PST files to Microsoft 365 mailbo
   
 - The only supported method for importing PST files to Microsoft 365 is to use the AzCopy tool, as described in this topic. You can't use the Azure Storage Explorer to upload PST files directly to the Azure Storage area.
 
-- You need to store the PST files that you want to import to Microsoft 365 on a file server or shared folder in your organization. In Step 2, you run the AzCopy tool to upload the PST files that are stored on a file server or shared folder to Microsoft 365.
+- You need to store the PST files that you want to import to Microsoft 365 on a file server or shared folder in your organization. It is currently not supported to copy files from Azure storage account containers into the Microsoft 365 import service blob. In Step 2, you run the AzCopy tool to upload the PST files that are stored on a file server or shared folder to Microsoft 365.
 
 - Large PST files may impact the performance of the PST import process. So we recommend that each PST file you upload to the Azure Storage location in Step 2 should be no larger than 20 GB.
 
