@@ -66,7 +66,7 @@ Configure a registry-based static proxy to allow only Defender for Endpoint sens
 
 The static proxy is configurable through Group Policy (GP). The group policy can be found under:
 
-- **Administrative Templates > Windows Components > Data Collection and Preview Builds > Configure Authenticated Proxy usage for the Connected User Experience and Telemetry Service**
+- **Administrative Templates > Windows Components > Data Collection and Preview Builds > Configure Authenticated Proxy usage for the Connected User Experience and Telemetry Service**.
 
   Set it to **Enabled** and select **Disable Authenticated Proxy usage**.
 
@@ -89,6 +89,43 @@ The static proxy is configurable through Group Policy (GP). The group policy can
   For example: 10.0.0.6:8080
 
   The registry value `DisableEnterpriseAuthProxy` should be set to 1.
+
+## Configure a static proxy for Microsoft Defender Antivirus
+
+Microsoft Defender Antivirus [cloud-delivered protection](cloud-protection-microsoft-defender-antivirus.md) provides near-instant, automated protection against new and emerging threats. Note that connectivity is required for [custom indicators](manage-indicators.md) when Defender Antivirus is your active antimalware solution; and for [EDR in block mode](edr-in-block-mode.md) even when using a non-Microsoft solution as the primary antimalware solution.
+
+Configure the static proxy using the Group Policy found here:
+
+1. **Administrative Templates > Windows Components > Microsoft Defender Antivirus > Define proxy server for connecting to the network**. 
+
+2. Set it to **Enabled** and define the proxy server. Note that the URL must have either http:// or https://.
+
+> [!div class="mx-imgBorder"]
+> ![Proxy server for Microsoft defender Antivirus](images/proxy-server-mdav.png)
+
+3. The policy sets the registry value `ProxyServer` as REG_SZ, under the registry key `HKLM\Software\Policies\Microsoft\Windows Defender`.
+
+   The registry value `ProxyServer` takes the following string format:
+
+    ```text
+    <server name or ip>:<port>
+    ```
+
+    For example: 10.0.0.6:8080
+
+> [!NOTE]
+>
+> For resiliency purposes and the real-time nature of cloud-delivered protection, Microsoft Defender Antivirus will cache the last known working proxy. Ensure your proxy solution does not perform SSL inspection as this will break the secure cloud connection. 
+>
+> Microsoft Defender Antivirus will not use the static proxy to connect to Windows Update or Microsoft Update for downloading updates. Instead, it will use a system-wide proxy if configured to use Windows Update, or the configured internal update source according to the [configured fallback order](manage-protection-updates-microsoft-defender-antivirus.md). 
+>
+> If required, you can use **Administrative Templates > Windows Components > Microsoft Defender Antivirus > Define proxy auto-config (.pac)** for connecting to the network if you need to set up advanced configurations with multiple proxies, Use **Administrative Templates > Windows Components > Microsoft Defender Antivirus > Define addresses** to bypass proxy server to prevent Microsoft Defender Antivirus from using a proxy server for those destinations. 
+>
+> You can also use PowerShell with the [Set-MpPreference](https://aka.ms/set-mppreference?view=windowsserver2019-ps) cmdlet to configure these options: 
+>
+> - ProxyBypass 
+> - ProxyPacUrl 
+> - ProxyServer 
 
 ## Configure the proxy server manually using netsh command
 
@@ -234,5 +271,7 @@ However, if the connectivity check results indicate a failure, an HTTP error is 
 
 ## Related topics
 
+- [Configure and validate Microsoft Defender Antivirus network connections](configure-network-connections-microsoft-defender-antivirus.md)
+- [Use Group Policy settings](use-group-policy-microsoft-defender-antivirus.md)
 - [Onboard Windows 10 devices](configure-endpoints.md)
 - [Troubleshoot Microsoft Defender for Endpoint onboarding issues](troubleshoot-onboarding.md)
