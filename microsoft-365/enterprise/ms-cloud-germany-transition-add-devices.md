@@ -27,7 +27,7 @@ Azure AD joined and registered devices connected to Microsoft Cloud Deutschland 
 ## Azure AD Joined Windows 10 devices
 If a Windows 10 device is Azure AD joined, it must be disconnected from Azure AD and must be connected again.
 
-[ ![Azure AD Device Re-Join Flow](../media/ms-cloud-germany-migration-opt-in/AAD-ReJoin-flow.png) ](../media/ms-cloud-germany-migration-opt-in/AAD-ReJoin-flow.png#lightbox)
+[ ![Azure AD Device Re-Join Flow.](../media/ms-cloud-germany-migration-opt-in/AAD-ReJoin-flow.png) ](../media/ms-cloud-germany-migration-opt-in/AAD-ReJoin-flow.png#lightbox)
 
 
 If the user is an administrator on the Windows 10 device, the user can unregister the device from Azure AD and rejoin it again in three steps.
@@ -71,7 +71,7 @@ Any other work account from the organization can sign in to the device, but has 
 
 If a Windows 10 device is Azure AD registered, it needs to be disconnected from the Azure AD and connected again.
 
-[ ![Azure AD Device Re-Registration Flow](../media/ms-cloud-germany-migration-opt-in/AAD-ReRegistration-flow.png) ](../media/ms-cloud-germany-migration-opt-in/AAD-ReJoin-flow.png#lightbox)
+[ ![Azure AD Device Re-Registration Flow.](../media/ms-cloud-germany-migration-opt-in/AAD-ReRegistration-flow.png) ](../media/ms-cloud-germany-migration-opt-in/AAD-ReJoin-flow.png#lightbox)
 
 ### Step 1: Determine if the device is Azure ID registered
 

@@ -100,25 +100,25 @@ Be sure to read the following items before you start searching the audit log.
 
   |Microsoft 365 service or feature|30 minutes|24 hours|
   |---|:---:|:---:|
-  |Defender for Office 365 and Threat Intelligence|![Check mark](../media/checkmark.png)||
-  |Azure Active Directory (user login events)||![Check mark](../media/checkmark.png)|
-  |Azure Active Directory (admin events)||![Check mark](../media/checkmark.png)|
-  |Data Loss Prevention|![Check mark](../media/checkmark.png)||
-  |Dynamics 365 CRM||![Check mark](../media/checkmark.png)|
-  |eDiscovery|![Check mark](../media/checkmark.png)||
-  |Exchange Online|![Check mark](../media/checkmark.png)||
-  |Microsoft Power Automate||![Check mark](../media/checkmark.png)|
-  |Microsoft Project|![Check mark](../media/checkmark.png)||
-  |Microsoft Stream|![Check mark](../media/checkmark.png)||
-  |Microsoft Teams|![Check mark](../media/checkmark.png)||
-  |Power Apps||![Check mark](../media/checkmark.png)|
-  |Power BI|![Check mark](../media/checkmark.png)||
-  |Microsoft 365 compliance center|![Check mark](../media/checkmark.png)||
-  |Sensitivity labels||![Check mark](../media/checkmark.png)|
-  |SharePoint Online and OneDrive for Business|![Check mark](../media/checkmark.png)||
-  |Workplace Analytics|![Check mark](../media/checkmark.png)||
-  |Yammer||![Check mark](../media/checkmark.png)|
-  |Microsoft Forms|![Check mark](../media/checkmark.png)||
+  |Defender for Office 365 and Threat Intelligence|![Check mark.](../media/checkmark.png)||
+  |Azure Active Directory (user login events)||![Check mark.](../media/checkmark.png)|
+  |Azure Active Directory (admin events)||![Check mark.](../media/checkmark.png)|
+  |Data Loss Prevention|![Check mark.](../media/checkmark.png)||
+  |Dynamics 365 CRM||![Check mark.](../media/checkmark.png)|
+  |eDiscovery|![Check mark.](../media/checkmark.png)||
+  |Exchange Online|![Check mark.](../media/checkmark.png)||
+  |Microsoft Power Automate||![Check mark.](../media/checkmark.png)|
+  |Microsoft Project|![Check mark.](../media/checkmark.png)||
+  |Microsoft Stream|![Check mark.](../media/checkmark.png)||
+  |Microsoft Teams|![Check mark.](../media/checkmark.png)||
+  |Power Apps||![Check mark.](../media/checkmark.png)|
+  |Power BI|![Check mark.](../media/checkmark.png)||
+  |Microsoft 365 compliance center|![Check mark.](../media/checkmark.png)||
+  |Sensitivity labels||![Check mark.](../media/checkmark.png)|
+  |SharePoint Online and OneDrive for Business|![Check mark.](../media/checkmark.png)||
+  |Workplace Analytics|![Check mark.](../media/checkmark.png)||
+  |Yammer||![Check mark.](../media/checkmark.png)|
+  |Microsoft Forms|![Check mark.](../media/checkmark.png)||
   |
 
 - Azure Active Directory (Azure AD) is the directory service for Office 365. The unified audit log contains user, group, application, domain, and directory activities performed in the Microsoft 365 admin center or in the Azure management portal. For a complete list of Azure AD events, see [Azure Active Directory Audit Report Events](/azure/active-directory/reports-monitoring/concept-audit-logs).
@@ -146,7 +146,7 @@ Here's the process for searching the audit log in Microsoft 365.
 
     The **Audit** page is displayed.
 
-    ![Configure criteria and then click Search to run report](../media/AuditLogSearchPage1.png)
+    ![Configure criteria and then click Search to run report.](../media/AuditLogSearchPage1.png)
 
     > [!NOTE]
     > If the **Start recording user and admin activity** link is displayed, click it to turn on auditing. If you don't see this link, auditing is turned on for your organization.
@@ -174,13 +174,13 @@ Here's the process for searching the audit log in Microsoft 365.
 
    The search results are loaded, and after a few moments they are displayed on a new page. When the search is finished, the number of results found is displayed. A maximum of 5,000 events will be displayed in increments of 150 events. If more than 5,000 events meet the search criteria, the most recent 5,000 events are displayed.
 
-   ![The number of results are displayed after the search is finished](../media/986216f1-ca2f-4747-9480-e232b5bf094c.png)
+   ![The number of results are displayed after the search is finished.](../media/986216f1-ca2f-4747-9480-e232b5bf094c.png)
 
 #### Tips for searching the audit log
 
 - You can select specific activities to search for by clicking the activity name. Or you can search for all activities in a group (such as **File and folder activities**) by clicking the group name. If an activity is selected, you can click it to cancel the selection. You can also use the search box to display the activities that contain the keyword that you type.
 
-  ![Click activity group name to select all activities](../media/3cde97cb-6f35-47c0-8612-ecd9c6ac36a3.png)
+  ![Click activity group name to select all activities.](../media/3cde97cb-6f35-47c0-8612-ecd9c6ac36a3.png)
 
 - You have to select **Show results for all activities** in the **Activities** list to display events from the Exchange admin audit log. Events from this audit log display a cmdlet name (for example, **Set-Mailbox**) in the **Activity** column in the results. For more information, click the **Audited activities** tab in this topic and then click **Exchange admin activities**.
 
@@ -793,7 +793,7 @@ You can search the audit log for user and admin activities in Microsoft Teams. T
 
 If your organization is using the [Patients application](/MicrosoftTeams/expand-teams-across-your-org/healthcare/patients-app-overview) in Microsoft Teams, you can search the audit log for activities related to the using the Patients app. If your environment is configured to support Patients app, an additional activity group for these activities is available in the **Activities** picker list.
 
-![Microsoft Teams Healthcare activities in Activities picker list](../media/TeamsHealthcareAuditActivities.png)
+![Microsoft Teams Healthcare activities in Activities picker list.](../media/TeamsHealthcareAuditActivities.png)
 
 For a description of the Patients app activities, see [Audit logs for Patients app](/MicrosoftTeams/expand-teams-across-your-org/healthcare/patients-audit).
 
@@ -839,7 +839,7 @@ The following table lists the user and admin activities in Yammer that are logge
 
 ### Microsoft Power Automate activities
 
-You can search the audit log for activities in Power Automate (formerly called Microsoft Flow). These activities include creating, editing, and deleting flows, and changing flow permissions. For information about auditing for Power Automate activities, see the blog  [Microsoft Flow audit events now available in Microsoft 365 compliance center](https://flow.microsoft.com/blog/security-and-compliance-center).
+You can search the audit log for activities in Power Automate (formerly called Microsoft Flow). These activities include creating, editing, and deleting flows, and changing flow permissions. For information about auditing for Power Automate activities, see the blog  [Power Automate audit events now available in Microsoft 365 compliance center](https://flow.microsoft.com/blog/security-and-compliance-center).
 
 ### Microsoft Power Apps activities
 
@@ -1016,7 +1016,7 @@ Here are some tips for searching for Exchange admin activities when searching th
 
 - To display events from the Exchange admin audit log, filter the search results and type a **-** (dash) in the **Activity** filter box. This displays cmdlet names, which are displayed in the **Activity** column for Exchange admin events. Then you can sort the cmdlet names in alphabetical order.
 
-  ![Type a dash in the Activities box to filter Exchange admin events](../media/7628e7aa-6263-474a-a28b-2dcf5694bb27.png)
+  ![Type a dash in the Activities box to filter Exchange admin events.](../media/7628e7aa-6263-474a-a28b-2dcf5694bb27.png)
 
 - To get information about what cmdlet was run, which parameters and parameter values were used, and what objects were affected, you can export the search results by selecting the **Download all results** option. For more information, see [Export, configure, and view audit log records](export-view-audit-log-records.md).
 

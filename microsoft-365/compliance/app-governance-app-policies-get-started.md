@@ -24,7 +24,7 @@ App policies for Microsoft app governance are the way that you can implement mor
 
 To see the list of current app policies, go to **Microsoft 365 Compliance Center > App governance > Policies**.
 
-![The MAPG policies summary page in the Microsoft 365 Compliance Center](..\media\manage-app-protection-governance\mapg-cc-policies.png)
+![The MAPG policies summary page in the Microsoft 365 Compliance Center.](..\media\manage-app-protection-governance\mapg-cc-policies.png)
 
 ## What’s available on the app policies dashboard
 

@@ -150,8 +150,6 @@
           href: data-classification-activity-explorer.md
         - name: Labeling actions reported in Activity explorer
           href: data-classification-activity-explorer-available-events.md
-        - name: Data classification release notes
-          href: data-classification-pub-preview-relnotes.md
     - name: Sensitivity labels
       items:
         - name: Learn about sensitivity labels
@@ -261,6 +259,8 @@
           items:
           - name: Plan for data loss prevention
             href: dlp-overview-plan-for-dlp.md
+          - name: Data loss prevention policy reference
+            href: dlp-policy-reference.md 
         - name: Get started with DLP
           items:
           - name: Get started with the default DLP policy

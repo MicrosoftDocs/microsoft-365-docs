@@ -24,7 +24,7 @@ After Redtail Speak data is stored in user mailboxes, you can apply Microsoft 36
 
 The following overview explains the process of using a connector to archive the Redtail Speak data in Microsoft 365.
 
-![Archiving workflow for Redtail Speak data](../media/RedtailSpeakConnectorWorkflow.png)
+![Archiving workflow for Redtail Speak data.](../media/RedtailSpeakConnectorWorkflow.png)
 
 1. Your organization works with Redtail Speak to set up and configure an SMTP gateway where messages are forwarded from Redtail Speak to your organization's SFTP server on a daily basis.
 

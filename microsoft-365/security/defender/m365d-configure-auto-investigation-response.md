@@ -85,7 +85,7 @@ Security settings in Office 365 help protect email and content. To view or chang
 
 ## Make sure Microsoft 365 Defender is turned on
 
-:::image type="content" source="../../media/mtp-enable/mtp-on.png" alt-text="MTP on":::
+:::image type="content" source="../../media/mtp-enable/mtp-on.png" alt-text="MTP on.":::
 
 1. Sign in to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)).
 

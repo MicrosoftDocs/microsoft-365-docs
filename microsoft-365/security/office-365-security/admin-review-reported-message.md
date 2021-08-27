@@ -54,7 +54,7 @@ You will only be able to mark and notify users of review results if the message 
 3. Select the **Mark as and notify** drop-down, and then select **No threats found**, **Phishing**, or **Junk**.
 
    > [!div class="mx-imgBorder"]
-   > ![Send messages from portal](../../media/admin-review-send-message-from-portal.png)
+   > ![Send messages from portal.](../../media/admin-review-send-message-from-portal.png)
 
 The reported message will be marked as either false positive or false negative, and an email will be automatically sent from within the portal notifying the user who reported the message.
 
@@ -72,6 +72,6 @@ The reported message will be marked as either false positive or false negative, 
     - Footer
 
     > [!div class="mx-imgBorder"]
-    > ![Customize messages send to users](../../media/admin-review-customize-message.png)
+    > ![Customize messages send to users.](../../media/admin-review-customize-message.png)
 
 4. When you're finished, click **Save**. To clear these values, click **Discard** on the User submissions page.

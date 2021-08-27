@@ -417,7 +417,7 @@ Customers with Microsoft 365 subscriptions that include communication compliance
 > [!IMPORTANT]
 > Are you receiving prompts for additional license validation when testing Power Automate flows? Your organization may not have received service updates for this preview feature yet. Updates are being deployed and all organizations with Microsoft 365 subscriptions that include communication compliance should have license support for flows created from the recommended Power Automate templates by October 30, 2020.
 
-![Communication compliance Power Automate](../media/communication-compliance-power-automate.png)
+![Communication compliance Power Automate.](../media/communication-compliance-power-automate.png)
 
 The following Power Automate template is provided to customers to support process automation for communication compliance alerts:
 
@@ -486,7 +486,7 @@ Complete the following steps to delete a Power Automate flow:
 
 The new **Reports** dashboard is the central location for viewing all communication compliance reports. Report widgets provide a quick view of insights most commonly needed for an overall assessment of the status of communication compliance activities. Information contained in the report widgets is not exportable. Detailed reports provide in-depth information related to specific communication compliance areas and offer the ability to filter, group, sort, and export information while reviewing. For the date and time range filters, the date and time for events are listed in Coordinated Universal Time (UTC).
 
-![Communication compliance reports dashboard](../media/communication-compliance-reports-dashboard.png)
+![Communication compliance reports dashboard.](../media/communication-compliance-reports-dashboard.png)
 
 The **Reports dashboard** contains the following report widgets and detailed reports links:
 

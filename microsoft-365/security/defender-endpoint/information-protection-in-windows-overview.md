@@ -29,12 +29,11 @@ ms.technology: mde
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-
 [!include[Prerelease information](../../includes/prerelease.md)]
 
 Information protection is an integral part of Microsoft 365 Enterprise suite, providing intelligent protection to keep sensitive data secure while enabling productivity in the workplace.
 
->[!TIP]
+> [!TIP]
 > Read our blog post about how Microsoft Defender for Endpoint integrates with Microsoft Information Protection to [discover, protect, and monitor sensitive data on Windows devices](https://cloudblogs.microsoft.com/microsoftsecure/2019/01/17/windows-defender-atp-integrates-with-microsoft-information-protection-to-discover-protect-and-monitor-sensitive-data-on-windows-devices/).
 
 Defender for Endpoint applies the following methods to discover, classify, and protect data:
@@ -61,7 +60,7 @@ When a file is created or edited on a  Windows device, Defender for Endpoint sca
 
 Turn on the Azure Information Protection integration so that when a file that contains sensitive information is discovered by Defender for Endpoint though labels or information types, it is automatically forwarded to Azure Information Protection from the device.
 
-![Image of settings page with Azure Information Protection](images/atp-settings-aip.png)
+![Image of settings page with Azure Information Protection.](images/atp-settings-aip.png)
 
 The reported signals can be viewed on the Azure Information Protection - Data discovery dashboard.
 
@@ -69,7 +68,7 @@ The reported signals can be viewed on the Azure Information Protection - Data di
 
 This dashboard presents a summarized discovery information of data discovered by both Defender for Endpoint and Azure Information Protection. Data from Defender for Endpoint is marked with Location Type - Endpoint.
 
-![Image of Azure Information Protection - Data discovery](images/azure-data-discovery.png)
+![Image of Azure Information Protection - Data discovery.](images/azure-data-discovery.png)
 
 Notice the Device Risk column on the right, this device risk is derived directly from Defender for Endpoint, indicating the risk level of the security device where the file was discovered, based on the active security threats detected by Defender for Endpoint.
 
