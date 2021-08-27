@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: ITPro
 ms.topic: overview
-ms.date: 08/18/2021
+ms.date: 08/27/2021
 ms.prod: m365-security
 ms.technology: mde
 localization_priority: Normal
@@ -38,6 +38,9 @@ The general setup and configuration process for Defender for Endpoint Plan 1 (pr
 | 5 | [Onboard to Defender for Endpoint](#onboard-to-defender-for-endpoint) | Lists several methods by operating system to onboard to Defender for Endpoint Plan 1 and includes links to more detailed information for each method  |
 | 6 | [Configure next-generation protection](#configure-next-generation-protection) | Describes how to configure your next-generation protection settings in Microsoft Endpoint Manager  |
 | 7 | [Configure your attack surface reduction capabilities](#configure-your-attack-surface-reduction-capabilities)        | Lists the types of attack surface reduction capabilities you can configure and includes procedures with links to more resources  |
+
+> [!IMPORTANT]
+> Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. This article includes links to online content that might describe some features that are not included in Defender for Endpoint Plan 1 (preview).
  
 ## Review the requirements
 
