@@ -13,7 +13,7 @@ author: mjcaparas
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
   - m365-security-compliance
   - m365initiative-defender-endpoint
 ms.topic: article
@@ -67,9 +67,9 @@ The file details, incident, malware detection, and file prevalence cards display
 
 You'll see details such as the file's MD5, the Virus Total detection ratio, and Microsoft Defender AV detection if available, and the file's prevalence.
 
-The file prevalence card shows where the file was seen in devices in the organization and worldwide. 
+The file prevalence card shows where the file was seen in devices in the organization and worldwide.
 
-> [!NOTE] 
+> [!NOTE]
 > Different users may see dissimilar values in the *devices in organization* section of the file prevalence card. This is because the card displays information based on the RBAC scope that a user has. Meaning, if a user has been granted visibility on a specific set of devices, they will only see the file organizational prevalence on those devices.
 
 ![Image of file information.](images/atp-file-information.png)
@@ -84,8 +84,8 @@ The **Alerts** tab provides a list of alerts that are associated with the file. 
 
 The **Observed in organization** tab allows you to specify a date range to see which devices have been observed with the file.
 
->[!NOTE]
->This tab will show a maximum number of 100 devices. To see _all_ devices with the file, export the tab to a CSV file, by selecting **Export** from the action menu above the tab's column headers.
+> [!NOTE]
+> This tab will show a maximum number of 100 devices. To see _all_ devices with the file, export the tab to a CSV file, by selecting **Export** from the action menu above the tab's column headers.
 
 ![Image of most recent observed device with the file.](images/atp-observed-machines.png)
 
