@@ -24,7 +24,7 @@ After Symphony communications are stored in user mailboxes, you can apply Micros
 
 The following overview explains the process of using a data connector to archive Symphony communications in Microsoft 365.
 
-![Symphony archiving workflow](../media/SymphonyConnectorWorkflow.png)
+![Symphony archiving workflow.](../media/SymphonyConnectorWorkflow.png)
 
 1. Your organization works with Symphony to set up and configure a Symphony site.
 

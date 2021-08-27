@@ -32,7 +32,7 @@ Microsoft 365 Defender is a unified experience where you can monitor and manage 
 
 Whether you're new to the Microsoft suite of security products or familiar with individual workflows, this topic will guide you in the simple steps you need to take to get started with Microsoft 365 Defender.
 
-![Image of getting started with Microsoft 365 Defender steps](../../media/mtp/get-started-m365d.png)
+![Image of getting started with Microsoft 365 Defender steps.](../../media/mtp/get-started-m365d.png)
 
 In general, you'll need to take the following steps to get started:
 

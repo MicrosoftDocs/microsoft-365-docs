@@ -24,7 +24,7 @@ After Reuters Dealing data is stored in user mailboxes, you can apply Microsoft 
 
 The following overview explains the process of using a connector to archive the Reuters Dealing data in Microsoft 365.
 
-![Archiving workflow for Reuters Dealing data](../media/ReuetersDealingConnectorWorkflow.png)
+![Archiving workflow for Reuters Dealing data.](../media/ReuetersDealingConnectorWorkflow.png)
 
 1. Your organization works with Reuters Dealing to set up and configure a Reuters Dealing site.
 

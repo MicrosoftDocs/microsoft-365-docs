@@ -36,7 +36,7 @@ With properly configured devices, you can boost overall resilience against threa
 
 Click **Configuration management** from the navigation menu to open the Device configuration management page.
 
-![Security configuration management page](images/secconmgmt_main.png)
+![Security configuration management page.](images/secconmgmt_main.png)
 
 *Device configuration management page*
 
@@ -72,7 +72,7 @@ If you have been assigned other roles, ensure you have the necessary permissions
 - Read permissions to device compliance policies
 - Read permissions to the organization
 
-![Required permissions on intune](images/secconmgmt_intune_permissions.png)
+![Required permissions on intune.](images/secconmgmt_intune_permissions.png)
 
 *Device configuration permissions on Intune*
 

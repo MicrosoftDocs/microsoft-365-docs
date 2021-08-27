@@ -42,7 +42,7 @@ It's important to know the specific roles that have permission to open support c
 
 At a minimum, you must have a Service Support Administrator **OR** Helpdesk Administrator role.
 
-For more information on which roles have permission see, [Security Administrator permissions](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator-permissions). Roles that include the action `microsoft.office365.supportTickets/allEntities/allTasks` can submit a case.
+For more information on which roles have permission see, [Security Administrator permissions](/azure/active-directory/roles/permissions-reference#security-administrator). Roles that include the action `microsoft.office365.supportTickets/allEntities/allTasks` can submit a case.
 
 For general information on admin roles, see [About admin roles](/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide&preserve-view=true).
 
@@ -52,11 +52,11 @@ Accessing the new support widget can be done in one of two ways:
 
 1. Clicking on the question mark on the top right of the portal and then clicking on "Microsoft support":
 
-    :::image type="content" source="../../media/contactsupport.png" alt-text="Microsoft support":::
+    :::image type="content" source="../../media/contactsupport.png" alt-text="Microsoft support.":::
 
 2. Clicking on the **Need help?**  button in the bottom right of the Microsoft 365 Defender portal:
 
-    ![Image of the need help button](images/need-help-option.png)
+    ![Image of the need help button.](images/need-help-option.png)
 
 In the widget you will be offered two options:
 
@@ -80,7 +80,7 @@ Learn how to open support tickets by contacting Defender for Endpoint support.
 
 ### Contact support
 
-This option is available by clicking the icon that looks like a headset. You will then get the following page to submit your support case:
+:::image type="content" source="../../media/contactsupport2.png" alt-text="contact support 2."::: </br>
 
 :::image type="content" source="../../media/contactsupport2.png" alt-text="contact support 2":::
 

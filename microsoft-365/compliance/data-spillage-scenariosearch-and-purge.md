@@ -32,7 +32,7 @@ This document provides a list of instructions on how to permanently remove a mes
 
 Here's a how to manage a data spillage incident:
 
-![The 8-step workflow for managing data spillage incidents](../media/O365-eDiscoverySolutions-DataSpillage-workflow.png)
+![The 8-step workflow for managing data spillage incidents.](../media/O365-eDiscoverySolutions-DataSpillage-workflow.png)
   
 [(Optional) Step 1: Manage who can access the case and set compliance boundaries](#optional-step-1-manage-who-can-access-the-case-and-set-compliance-boundaries)<br/>
 [Step 2: Create an eDiscovery case](#step-2-create-an-ediscovery-case)<br/>
@@ -96,7 +96,7 @@ After you verified the search results, you may want to share your findings with 
  
       The Export report page is displayed.
 
-    ![Select the search and then click More > Export report on the flyout page](../media/O365-eDiscoverySolutions-DataSpillage-ExportReport1.png)
+    ![Select the search and then click More > Export report on the flyout page.](../media/O365-eDiscoverySolutions-DataSpillage-ExportReport1.png)
     
 3. Select **All items, including ones that have unrecognized format, are encrypted, or weren't indexed for other reasons** and then click **Generate report**.
 
@@ -104,7 +104,7 @@ After you verified the search results, you may want to share your findings with 
 
 5. Click the export job, and then click **Download** report on the flyout page.
  
-    ![On the Export page, click the export and then click "Download report"](../media/O365-eDiscoverySolutions-DataSpillage-ExportReport2.png)
+    ![On the Export page, click the export and then click "Download report.".](../media/O365-eDiscoverySolutions-DataSpillage-ExportReport2.png)
 
 The **Export Summary** report contains the number of locations found with results and the size of the search results. You can use this to compare with the report generated after deletion and provide as a proof of deletion. The **Results** report contains a more detailed summary of the search results, including the subject, sender, recipients, if the email was read, dates, and size of each message. If any of the details in this report contains that actual spilled data, be sure to permanently delete the Results.csv file when the investigation is complete.
 
@@ -138,7 +138,7 @@ There are two ways to collect a list of email addresses of mailboxes with spille
     
 4. In the **Type** drop down list, click **Top locations**.
     
-    ![Get a list of mailboxes that contain search results on the Top locations page in the Search statistics](../media/O365-eDiscoverySolutions-DataSpillage-TopLocations.png)
+    ![Get a list of mailboxes that contain search results on the Top locations page in the Search statistics.](../media/O365-eDiscoverySolutions-DataSpillage-TopLocations.png)
 
     A list of mailboxes that contain search results is displayed. The number of items in each mailbox that match the search query is also displayed.
     
@@ -196,7 +196,7 @@ If the keywords in the search query that you created and used in Step 3 contains
 
 2. On the flyout page, click **Delete**.
 
-    ![Select the search and then click Delete on the flyout page](../media/O365-eDiscoverySolutions-DataSpillage-DeleteSearch.png)
+    ![Select the search and then click Delete on the flyout page.](../media/O365-eDiscoverySolutions-DataSpillage-DeleteSearch.png)
 
 ### Auditing the data spillage investigation process
 

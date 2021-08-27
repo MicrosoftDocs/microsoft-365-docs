@@ -42,7 +42,7 @@ Permissions to SaaS apps are typically based on business need for access to the 
 
 To protect data across your collection of SaaS apps, the following diagram illustrates the necessary Azure AD conditional access policy plus suggested policies you can create in Cloud App Security. In this example, the policies created in Cloud App Security apply to all SaaS apps you are managing. These are designed to apply appropriate controls based on whether devices are managed as well as sensitivity labels that are already applied to files.
 
-![Policies for managing SaaS apps in Cloud App Security](../../media/microsoft-365-policies-configurations/mcas-manage-saas-apps-2.png)
+![Policies for managing SaaS apps in Cloud App Security.](../../media/microsoft-365-policies-configurations/mcas-manage-saas-apps-2.png)
 
 The following table lists the new conditional access policy you must create in Azure AD.
 
@@ -91,7 +91,7 @@ Cloud App Security can be a valuable tool for configuring protection for complia
 
 The following illustration and table provide several examples of policies that can be configured to help comply with  the General Data Protection Regulation (GDPR). In these examples, policies look for specific data. Based on the sensitivity of the data, each policy is configured to take appropriate action.
 
-![Example Cloud App Security policies for data loss prevention](../../media/microsoft-365-policies-configurations/mcas-dlp.png)
+![Example Cloud App Security policies for data loss prevention.](../../media/microsoft-365-policies-configurations/mcas-dlp.png)
 
 |Protection level|Example policies|
 |---|---|
