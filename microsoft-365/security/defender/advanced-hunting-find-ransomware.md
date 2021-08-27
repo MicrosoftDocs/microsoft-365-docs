@@ -230,7 +230,7 @@ The consolidated query returns the following results:
 - **TotalEvidenceCount**—number of observed signs
 - **UniqueEvidenceCount**—number of types of observed signs
 
-![Image of the query results for ransomware activity](../../media/advanced-hunting-ransomware-query.png)
+![Image of the query results for ransomware activity.](../../media/advanced-hunting-ransomware-query.png)
 
 *Query results showing affected devices and counts of various signs of ransomware activity*
 

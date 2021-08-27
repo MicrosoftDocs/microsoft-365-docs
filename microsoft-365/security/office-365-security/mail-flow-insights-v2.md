@@ -27,7 +27,7 @@ ms.prod: m365-security
 
 Admins can use Mail flow dashboard in the Security & Compliance Center to discover trends, insights, and take actions to fix issues related to mail flow in their organization.
 
-![The Mail flow dashboard in the Security & Compliance Center](../../media/mail-flow-dashboard-v2.png)
+![The Mail flow dashboard in the Security & Compliance Center.](../../media/mail-flow-dashboard-v2.png)
 
 The available insights are:
 

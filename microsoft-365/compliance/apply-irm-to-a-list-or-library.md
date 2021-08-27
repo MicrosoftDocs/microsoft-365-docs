@@ -43,13 +43,13 @@ You can use Information Rights Management (IRM) to help control and protect file
 ## Apply IRM to a list or library
 <a name="__toc256598179"> </a>
 
-![Information Rights Management Settings](../media/1b708102-9c90-42b0-b255-ef0e72d0be88.png)
+![Information Rights Management Settings.](../media/1b708102-9c90-42b0-b255-ef0e72d0be88.png)
   
 1. Go to the list or library for which you want to configure IRM.
 
 2. On the ribbon, select the **Library** tab, and then select **Library Settings**. (If you're working in a list, select the **List** tab, and then select **List Settings**).
     
-    ![SharePoint Library Settings buttons on Ribbon](../media/cdf718fa-d792-40fc-8026-00c3b80b9e05.png)
+    ![SharePoint Library Settings buttons on Ribbon.](../media/cdf718fa-d792-40fc-8026-00c3b80b9e05.png)
   
 3. Under **Permissions and Management**, select **Information Rights Management**. If the Information Rights Management link doesn't appear, IRM might not be enabled for your site. Contact your server administrator to see if you can enable IRM for your site. The **Information Rights Management** link doesn't appear for picture libraries.
 

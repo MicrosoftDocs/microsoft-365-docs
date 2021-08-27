@@ -42,8 +42,8 @@ The following technical illustrations and articles provide information about how
 
 |Resource|More information|
 |---|---|
-|**SharePoint Server 2013 Internet sites in Azure** <br/> [![Image of Internet sites in Azure using SharePoint](../media/MS-AZ-SPInternetSites.jpg)](https://go.microsoft.com/fwlink/p/?LinkId=392552) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392552) \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392551)|This architecture model outlines key design activities and recommended architecture choices for Internet sites in Azure.|
-|**Design sample: Internet Sites in Azure for SharePoint Server 2013** <br/> [![Image of the Design sample: Internet sites in Microsoft Azure for SharePoint 2013](../media/MS-AZ-InternetSitesDesignSample.jpg)] <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392549)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392548)|Use this design sample as a starting point for your own architecture.|
+|**SharePoint Server 2013 Internet sites in Azure** <br/> [![Image of Internet sites in Azure using SharePoint.](../media/MS-AZ-SPInternetSites.jpg)](https://go.microsoft.com/fwlink/p/?LinkId=392552) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392552) \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392551)|This architecture model outlines key design activities and recommended architecture choices for Internet sites in Azure.|
+|**Design sample: Internet Sites in Azure for SharePoint Server 2013** <br/> [![Image of the Design sample: Internet sites in Microsoft Azure for SharePoint 2013.](../media/MS-AZ-InternetSitesDesignSample.jpg)] <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392549)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392548)|Use this design sample as a starting point for your own architecture.|
 |**[Microsoft Azure Architectures for SharePoint 2013](microsoft-azure-architectures-for-sharepoint-2013.md)** <br/> |This article describes how to design Azure architectures to host SharePoint solutions.|
 |
 
