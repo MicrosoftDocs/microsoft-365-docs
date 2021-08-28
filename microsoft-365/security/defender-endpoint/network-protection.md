@@ -105,7 +105,7 @@ With network protection, the determination of whether to allow or block access t
 
 Here's an example of how that works:
 
-1. Suppose that a user attempts to access a website on their device. The site happens to be hosted on a dangerous domain, and it should be blocked by network protection.  
+1. Suppose that a user attempts to access a website on his/her device. The site happens to be hosted on a dangerous domain, and it should be blocked by network protection.  
 
 2. The three-way handshake via TCP/IP commences. Before it completes, a `NetworkConnectionEvents` action is logged, and its `ActionType` is listed as `ConnectionSuccess`. However, as soon as the three-way handshake process completes, network protection blocks access to the site. All of this happens very quickly. A similar process occurs with [Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview); it's when the three-way handshake completes that a determination is made, and access to a site is either blocked or allowed.
 
