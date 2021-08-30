@@ -255,6 +255,10 @@ Customer Lockbox requests have a default duration of 12 hours. If you don't resp
 
 If a customer rejects a Customer Lockbox request, no access to customer content occurs. If a user in your organization continues to experience a service issue requiring Microsoft to access customer content to resolve the issue, then the service issue might persist and Microsoft will inform the user about this.
 
+#### How to setup Alerts any time a request has been approved ?
+
+There is no built in option to Alert the administrators. However, Administrators can setup Alerts using [Microsoft cloud App security](/cloud-app-security/getting-started-with-cloud-app-security#to-create-policies).
+
 #### Does Customer Lockbox protect against data requests from law enforcement agencies or other third parties?
 
 No. Microsoft takes third-party requests for customer data seriously. As a cloud service provider, Microsoft always advocates for the privacy of customer data. In the event we get a subpoena, Microsoft always attempts to redirect the third party to the customer to obtain the information. (Read Brad Smith's blog: [Protecting customer data from government snooping](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)). We periodically publish [detailed information](https://www.microsoft.com/corporate-responsibility/lerr) about the law enforcement requests that Microsoft receives.
