@@ -30,13 +30,13 @@ The following table describes what's included in each plan at a high level.
 | [Defender for Endpoint Plan 1](defender-endpoint-plan-1.md) <br/>(preview) | [Defender for Endpoint Plan 2](microsoft-defender-endpoint.md) <br/>(available now) |
 |:---|:---|
 | [Next-generation protection](defender-endpoint-plan-1.md#next-generation-protection) <br/>(includes antimalware and antivirus) <p> [Attack surface reduction](defender-endpoint-plan-1.md#attack-surface-reduction) <p> [Manual response actions](defender-endpoint-plan-1.md#manual-response-actions) <p> [Centralized management](defender-endpoint-plan-1.md#centralized-management) <p>[Security reports](defender-endpoint-plan-1.md#reporting) <p>[APIs](defender-endpoint-plan-1.md#apis) <p> [Support for Windows 10, iOS, Android OS, and macOS devices](defender-endpoint-plan-1.md#cross-platform-support) | [Defender for Endpoint Plan 1](defender-endpoint-plan-1.md), plus: <p> [Device discovery](device-discovery.md) <p> [Threat and vulnerability management](next-gen-threat-and-vuln-mgt.md) <p> [Automated investigation and response](automated-investigations.md) <p> [Advanced hunting](advanced-hunting-overview.md) <p> [Endpoint detection and response](overview-endpoint-detection-response.md) <p> [Microsoft Threat Experts](microsoft-threat-experts.md) <p> Support for Windows (client and server) and non-Windows platforms<br/> (macOS, iOS, Android, and Linux) |
+| If you have Microsoft 365 E3 but not Microsoft 365 E5, and you want to try Defender for Endpoint Plan 1, visit [https://aka.ms/mdep1trial](https://aka.ms/mdep1trial). | If you want to experience Defender for Endpoint Plan 2, [Sign up for a free trial](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink). |
 
 > [!IMPORTANT]
 > Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. This content includes links to other articles that might describe some features that are not included in Defender for Endpoint Plan 1 (preview).
 
 ## Next steps
 
-- If you have Microsoft 365 E3 but not Microsoft 365 E5, and you want to try Defender for Endpoint Plan 1, visit [https://aka.ms/mdep1trial](https://aka.ms/mdep1trial).
 - [Get an overview of Microsoft Defender for Endpoint Plan 1 (preview)](defender-endpoint-plan-1.md)
 - [Set up and configure Defender for Endpoint Plan 1 (preview)](mde-p1-setup-configuration.md)
 - [Get started using Defender for Endpoint Plan 1 (preview)](mde-plan1-getting-started.md)
