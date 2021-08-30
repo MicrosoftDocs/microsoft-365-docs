@@ -255,7 +255,7 @@ Customer Lockbox requests have a default duration of 12 hours. If you don't resp
 
 If a customer rejects a Customer Lockbox request, no access to customer content occurs. If a user in your organization continues to experience a service issue requiring Microsoft to access customer content to resolve the issue, then the service issue might persist and Microsoft will inform the user about this.
 
-#### How to setup Alerts any time a request has been approved ?
+#### How do I set up alerts whenever a request has been approved?
 
 There is no built-in option to alert administrators. However, administrators can set up alerts using [Microsoft cloud App security](/cloud-app-security/getting-started-with-cloud-app-security#to-create-policies).
 
