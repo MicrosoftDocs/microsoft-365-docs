@@ -53,7 +53,7 @@ The name of your user (here 'Alex') will appear under Eligible assignments on th
 > [!NOTE]
 > For a quick review of Privileged Identity Management see [this video](https://www.youtube.com/watch?v=VQMAg0sa_lE).
 
-:::image type="content" source="../../media/pim-mdo-role-setting-details-for-security-reader-show-8-hour-max-activation.PNG" alt-text="Be sure you scan the settings for the Security Reader role in Privileged Access Management. Here you'll see the PIM activation's max duration is 8 hours.":::
+:::image type="content" source="../../media/pim-mdo-role-setting-details-for-security-reader-show-8-hr-duration.png" alt-text="Be sure you scan the settings for the Security Reader role in Privileged Access Management. Here you'll see the PIM activation's max duration is 8 hours.":::
 
 ***Step 2***. Create the required second (elevated) permission group for additional tasks and assign eligibility.
 
