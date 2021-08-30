@@ -33,7 +33,7 @@ Bookings has three primary components:
 Microsoft Bookings is available in the following subscriptions:
 
 - Office 365: A3, A5, E3, E5, F1, F3
-- Microsoft 365: A3, A5, E3, E5, F1, F3, Business Premium
+- Microsoft 365: A3, A5, E3, E5, F1, F3, Business Standard, Business Premium
 
 ## Get started using Bookings
 
