@@ -93,7 +93,7 @@ In general, do not define exclusions for the following folder locations:
 
 `C:\Windows\Temp\*`
 
-## Linux and macOS Platforms
+#### Linux and macOS Platforms
 
 `/`
 
@@ -260,7 +260,7 @@ In general, do not define exclusions for the following processes:
 
 `windbg.exe`
 
-## Linux Platforms
+#### Linux and macOS Platforms
 
 `bash`
 
