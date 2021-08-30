@@ -36,8 +36,10 @@ You can easily assign roles to user accounts by using PowerShell for Microsoft 3
 
 ## Use the Azure Active Directory PowerShell for Graph module
 
-First, use a global administrator account to [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
-  
+First, use a **Azure AD DC admin**, **Cloud Application Admin**, or **Global admin** account to [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
+ 
+For more information, see [About admin roles](/microsoft-365/admin/add-users/about-admin-roles?).
+
 Next, identify the sign-in name of the user account that you want to add to a role (example: fredsm\@contoso.com). This is also known as the user principal name (UPN).
 
 Next, determine the name of the role. See [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference).
