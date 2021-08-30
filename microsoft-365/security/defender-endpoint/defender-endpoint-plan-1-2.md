@@ -18,9 +18,6 @@ f1.keywords: NOCSH
 
 # Microsoft Defender for Endpoint Plan 1 (preview) and Plan 2
 
-> [!TIP]
-> If you have Microsoft 365 E3 but not Microsoft 365 E5, and you want to try Defender for Endpoint Plan 1, visit [https://aka.ms/mdep1trial](https://aka.ms/mdep1trial) to sign up for the preview program!
-
 Microsoft Defender for Endpoint is an enterprise endpoint security platform designed to help enterprise networks prevent, detect, investigate, and respond to advanced threats. Defender for Endpoint provides advanced threat protection that includes antivirus, antimalware, ransomware mitigation, and more, together with centralized management and reporting. Soon, two plans will be available:   
  
 - [Microsoft Defender for Endpoint Plan 1](defender-endpoint-plan-1.md), currently in preview; and 
@@ -39,6 +36,7 @@ The following table describes what's included in each plan at a high level.
 
 ## Next steps
 
+- If you have Microsoft 365 E3 but not Microsoft 365 E5, and you want to try Defender for Endpoint Plan 1, visit [https://aka.ms/mdep1trial](https://aka.ms/mdep1trial).
 - [Get an overview of Microsoft Defender for Endpoint Plan 1 (preview)](defender-endpoint-plan-1.md)
 - [Set up and configure Defender for Endpoint Plan 1 (preview)](mde-p1-setup-configuration.md)
 - [Get started using Defender for Endpoint Plan 1 (preview)](mde-plan1-getting-started.md)

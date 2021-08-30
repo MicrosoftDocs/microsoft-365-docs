@@ -18,7 +18,7 @@ f1.keywords: NOCSH
 # Set up and configure Microsoft Defender for Endpoint Plan 1 (preview)
 
 > [!TIP]
-> If you have Microsoft 365 E3 but not Microsoft 365 E5, and you want to try Defender for Endpoint Plan 1, visit [https://aka.ms/mdep1trial](https://aka.ms/mdep1trial) to sign up for the preview program!
+> If you have Microsoft 365 E3 but not Microsoft 365 E5, visit [https://aka.ms/mdep1trial](https://aka.ms/mdep1trial) to sign up for the preview program!
 
 This article describes how to set up and configure Defender for Endpoint Plan 1 (preview). Whether you have assistance or are doing it yourself, you can use this article as a guide throughout your deployment.  
 
