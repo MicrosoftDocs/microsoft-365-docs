@@ -182,7 +182,7 @@ The **Graph** tab shows the full scope of the attack, how the attack spread thro
 
 2. Open an entity pane, allowing you to review the entity details and act on remediation actions, such as deleting a file or isolating a device.
  
-:::image type="content" source="../../media/investigate-incidents/incident-graph-entity.png" alt-text="Example of an entity pane on the Graph page":::
+:::image type="content" source="../../media/investigate-incidents/incident-graph-entity-pane.png" alt-text="Example of an entity pane on the Graph page":::
 
 3. Highlight the alerts based on the entity to which they are related.
  
