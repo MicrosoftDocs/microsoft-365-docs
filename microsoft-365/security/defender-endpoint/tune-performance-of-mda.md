@@ -18,7 +18,7 @@ ms.topic: troubleshooting
 ms.technology: mde
 ---
 
-# Performance analyzer for Microsoft Defender for Antivirus
+# Performance analyzer for Microsoft Defender Antivirus
 
 **What is Microsoft Defender Antivirus performance analyzer?**
 
