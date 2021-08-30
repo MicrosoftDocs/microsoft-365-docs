@@ -17,6 +17,9 @@ f1.keywords: NOCSH
 
 # Manage Microsoft Defender for Endpoint Plan 1 (preview)
 
+> [!TIP]
+> If you have Microsoft 365 E3 but not Microsoft 365 E5, and you want to try Defender for Endpoint Plan 1, visit [https://aka.ms/mdep1trial](https://aka.ms/mdep1trial) to sign up for the preview program!
+
 As you use Defender for Endpoint Plan 1 (preview) in your organization, your security team can take certain steps to maintain your security solution. As your security team puts together your maintenance and operations plan, make sure to include at least the following activities:
 
 - [Manage security intelligence and product updates](#manage-security-intelligence-and-product-updates)
