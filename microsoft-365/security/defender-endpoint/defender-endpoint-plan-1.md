@@ -168,7 +168,7 @@ The Microsoft 365 Defender portal ([https://security.microsoft.com](https://secu
 
 - The **Home** page includes cards to show at a glance which users or devices are at risk, how many threats were detected, and what alerts/incidents were created.
 - The **Incidents & alerts** section lists any incidents that were created as a result of triggered alerts. Alerts and incidents are generated as threats are detected across devices.
-- The **Action center** lists remediation actions that were taken. For example, if a file is sent to quarantine, or a URL is blocked, each action is listed in the Action center on the History tab.
+- The **Action center** lists remediation actions that were taken. For example, if a file is sent to quarantine, or a URL is blocked, each action is listed in the Action center on the **History** tab.
 - The **Reports** section includes reports that show threats detected and their status. 
 
 To learn more, see [Get started with Microsoft Defender for Endpoint Plan 1 (preview)](mde-plan1-getting-started.md).
