@@ -34,7 +34,7 @@ Prior to managing the Microsoft Teams integration within Instructure Canvas, it 
 
 1. Navigate to Azure Active Directory.
 
-2. Open Enterprise applications > Select the Application **Microsoft-Teams-Sync-for-Canvas**
+2. Open Enterprise applications and select the **Microsoft-Teams-Sync-for-Canvas** application.
 
 3. Select Permissions and then click Grant admin consent
 
