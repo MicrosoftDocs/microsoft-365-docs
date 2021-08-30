@@ -278,7 +278,7 @@ If the verification fails and your environment is using a proxy to connect to th
   - `<Key Path="SOFTWARE\Policies\Microsoft\Windows Defender"><KeyValue Value="0" ValueKind="DWord" Name="DisableAntiVirus"/></Key>`
 
 > [!IMPORTANT]
-> The `disableAntiSpyware` setting is discontinued and will be ignored on all client devices, as of the August 2020 (version 4.18.2007.8) update to Microsoft Defender Antivirus.
+> The `disableAntiSpyware` setting is discontinued and will be ignored on all Windows 10 devices, as of the August 2020 (version 4.18.2007.8) update to Microsoft Defender Antivirus.
 
 - After clearing the policy, run the onboarding steps again.
 
@@ -296,7 +296,7 @@ If the verification fails and your environment is using a proxy to connect to th
 ## Troubleshoot onboarding issues 
 
 >[!NOTE]
->The following troubleshooting guidance is only applicable for Windows Server 2016 and lower.
+>The following troubleshooting guidance is only applicable for machines onboarded using the Microsoft Monitoring Agent (MMA).
 
 If you encounter issues while onboarding a server, go through the following verification steps to address possible issues.
 
