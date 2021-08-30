@@ -152,6 +152,7 @@ Attack surface reduction is all about reducing the places and ways your organiza
 | [Network protection](#network-protection) | Set up network protection to prevent people in your organization from using applications that access dangerous domains or malicious content on the Internet. |
 | [Web protection](#web-protection) | Set up web threat protection to protect your organization's devices from phishing sites, exploit sites, and other untrusted or low-reputation sites. Set up web content filtering to track and regulate access to websites based on their content categories (such as Leisure, High bandwidth, Adult content, or Legal liability). |
 | [Network firewall](#network-firewall) | Configure your network firewall with rules that determine which network traffic is permitted to come into or go out from your organization's devices. |
+| [Application control](#application-control)  | Configure application control rules if you want to allow only trusted applications and processes to run on your Windows devices.    |
 
 ### Attack surface reduction rules
 
