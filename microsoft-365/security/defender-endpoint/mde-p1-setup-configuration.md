@@ -384,6 +384,18 @@ To configure basic firewall settings, follow these steps:
 > [!TIP]
 > Firewall settings are detailed and can seem complex. Refer to [Best practices for configuring Windows Defender Firewall](/windows/security/threat-protection/windows-firewall/best-practices-configuring).
 
+### Application control
+
+Windows Defender Application Control (WDAC) helps protect your Windows endpoints by only allowing trusted applications and processes to run. Most organizations used a phased deployment of WDAC. That is, most organizations don't roll out WDAC across all Windows endpoints at first. In fact, depending on whether your organization's Windows endpoints are fully managed, lightly managed, or "Bring Your Own Device" endpoints, you might deploy WDAC on all or some endpoints, or rely on other security policies instead.
+
+To help with planning your WDAC deployment, see the following resources:
+
+- [Application Control for Windows](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control)
+
+- [Windows Defender Application Control policy design decisions](/windows/security/threat-protection/windows-defender-application-control/understand-windows-defender-application-control-policy-design-decisions)
+
+- [Windows Defender Application Control deployment in different scenarios: types of devices](/windows/security/threat-protection/windows-defender-application-control/types-of-devices)
+
 ## Next steps
 
 [Getting started with Defender for Endpoint Plan 1 (preview)](mde-plan1-getting-started.md)
