@@ -42,7 +42,7 @@ This section does not include the specific steps required to prepare the MailUse
 
 The cross-tenant mailbox move feature requires [Azure Key Vault](/azure/key-vault/basic-concepts) to establish a tenant pair-specific Azure application to securely store and access the certificate/secret used to authenticate and authorize mailbox migration from one tenant to the other, removing any requirements to share certificates/secrets between tenants.
 
-Before starting, be sure you have the necessary permissions to run the deployment scripts in order to configure Azure Key Vault, Move Mailbox application, EXO Migration Endpoint, and the EXO Organization Relationship. Typically, Global Admin has permission to perform all configuration steps.
+Before starting, be sure you have the necessary permissions to run the deployment scripts in order to configure Azure Key Vault, Move Mailbox application, EXO Migration Endpoint, and the EXO Organization Relationship. Typically, **Azure AD DC admin**, or **Global admin**  has permission to perform all configuration steps.
 
 Additionally, mail-enabled security groups in the source tenant are required prior to running setup. These groups are used to scope the list of mailboxes that can move from source (or sometimes referred to as resource) tenant to the target tenant. This allows the source tenant admin to restrict or scope the specific set of mailboxes that need to be moved, preventing unintended users from being migrated. Nested groups are not supported.
 
@@ -141,7 +141,7 @@ Prepare the source tenant:
 
 7. A URL will be displayed in the Remote PowerShell session. Copy the link provided for your tenant consent and paste it into a Web browser.
 
-8. Sign in with your Global Admin credentials. When the following screen is presented, select **Accept**.
+8. Sign in with your **Azure AD DC admin**, or **Global admin** credentials. When the following screen is presented, select **Accept**.
 
     :::image type="content" source="../media/tenant-to-tenant-mailbox-move/permissions-requested-dialog.png" alt-text="Accept permissions dialog box.":::
 
@@ -175,7 +175,7 @@ The target admin setup is now complete!
 
 4. Download the SetupCrossTenantRelationshipForResourceTenant.ps1 script for the source tenant setup from the GitHub repository here: [https://github.com/microsoft/cross-tenant/releases/tag/Preview](https://github.com/microsoft/cross-tenant/releases/tag/Preview).
 
-5. Create a Remote PowerShell connection to the source tenant with your Exchange Administrator permissions. Global Admin permissions are not required to configure the source tenant, only the target tenant because of the Azure application creation process.
+5. Create a Remote PowerShell connection to the source tenant with your Exchange Administrator permissions. **Azure AD DC admin**, or **Global admin** permissions are not required to configure the source tenant, only the target tenant because of the Azure application creation process.
 
 6. Change directory to the script location or verify that the script is currently saved to the location currently in your Remote PowerShell session.
 
