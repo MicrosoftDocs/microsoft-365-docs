@@ -36,7 +36,7 @@ The embedded Defender for Endpoint sensor runs in system context using the Local
 > [!TIP]
 > For organizations that use forward proxies as a gateway to the Internet, you can use network protection to investigate behind a proxy. For more information, see [Investigate connection events that occur behind forward proxies](investigate-behind-proxy.md).
 
-The WinHTTP configuration setting is independent of the Windows Internet (WinINet) Internet browsing proxy settings and can only discover a proxy server by using the following discovery methods:
+The WinHTTP configuration setting is independent of the Windows Internet (WinINet) browsing proxy settings and can only discover a proxy server by using the following discovery methods:
 
 - Auto-discovery methods:
 
@@ -49,7 +49,7 @@ The WinHTTP configuration setting is independent of the Windows Internet (WinINe
 
 - Manual static proxy configuration:
 
-  - Registry based configuration
+  - Registry-based configuration
   
   - WinHTTP configured using netsh command: Suitable only for desktops in a stable topology (for example: a desktop in a corporate network behind the same proxy)
 
@@ -89,7 +89,7 @@ The static proxy is configurable through Group Policy (GP). The group policy can
   <server name or ip>:<port>
   ```
 
-  For example: http://10.0.0.6:8080
+  For example: https://10.0.0.6:8080
 
   The registry value `DisableEnterpriseAuthProxy` should be set to 1.
 
@@ -114,7 +114,7 @@ Configure the static proxy using the Group Policy found here:
     <server name or ip>:<port>
     ```
 
-    For example: http://10.0.0.6:8080
+    For example: https://10.0.0.6:8080
 
 > [!NOTE]
 >
@@ -163,7 +163,7 @@ See [Netsh Command Syntax, Contexts, and Formatting](/windows-server/networking/
 
 If a proxy or firewall is blocking all traffic by default and allowing only specific domains through, add the domains listed in the downloadable sheet to the allowed domains list.
 
-The following downloadable spreadsheet lists the services and their associated URLs that your network must be able to connect to. You should ensure that there are no firewall or network filtering rules that would deny access to these URLs, or you may need to create an *allow* rule specifically for them.
+The following downloadable spreadsheet lists the services and their associated URLs that your network must be able to connect to. Ensure that there are no firewall or network filtering rules that would deny access to these URLs, or you may need to create an *allow* rule specifically for them.
 
 <br>
 
@@ -205,7 +205,7 @@ The information below list the proxy and firewall configuration information requ
 
 ## Confirm Microsoft Monitoring Agent (MMA) Service URL Requirements 
 
-Please see the following guidance to eliminate the wildcard (*) requirement for your specific environment when using the Microsoft Monitoring Agent (MMA) for previous versions of Windows.
+ See the following guidance to eliminate the wildcard (*) requirement for your specific environment when using the Microsoft Monitoring Agent (MMA) for previous versions of Windows.
 
 1. Onboard a previous operating system with the Microsoft Monitoring Agent (MMA) into Defender for Endpoint (for more information, see [Onboard previous versions of Windows on Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2010326) and [Onboard Windows servers](configure-server-endpoints.md#windows-server-2008-r2-sp1-windows-server-2012-r2-and-windows-server-2016).
 
@@ -213,7 +213,7 @@ Please see the following guidance to eliminate the wildcard (*) requirement for 
 
 3. Run the TestCloudConnection.exe tool from "C:\Program Files\Microsoft Monitoring Agent\Agent" to validate the connectivity and to see the required URLs for your specific workspace.
 
-4. Check the Microsoft Defender for Endpoint URLs list for the complete list of requirements for your region (please refer to the Service URLs [Spreadsheet](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)).
+4. Check the Microsoft Defender for Endpoint URLs list for the complete list of requirements for your region (refer to the Service URLs [Spreadsheet](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)).
 
     ![Image of administrator in Windows PowerShell.](images/admin-powershell.png)
 
