@@ -377,6 +377,7 @@
 ##### [Investigate incidents](investigate-incidents.md)
 
 #### [Alerts queue]()
+##### [Alerts queue in Microsoft 365 Defender](alerts-queue-endpoint-detection-response.md)
 ##### [View and organize the Alerts queue](alerts-queue.md)
 ##### [Review alerts](review-alerts.md)
 ##### [Manage alerts](manage-alerts.md)
@@ -485,7 +486,7 @@
 ####### [Get alert related IPs information](get-alert-related-ip-info.md)
 ####### [Get alert related device information](get-alert-related-machine-info.md)
 ####### [Get alert related user information](get-alert-related-user-info.md)
-####### [Alerts queue in Microsoft 365 Defender](alerts-queue-endpoint-detection-response.md)
+
 
 ###### [Assessments of vulnerabilities and secure configurations]()
 ####### [Export assessment methods and properties](get-assessment-methods-properties.md)
@@ -600,7 +601,7 @@
 ####### [List machines by vulnerability](get-machines-by-vulnerability.md)
 
 ##### [How to use APIs - Samples]()
-###### [Microsoft Flow](api-microsoft-flow.md)
+###### [Power Automate](api-microsoft-flow.md)
 ###### [Power BI](api-power-bi.md)
 ###### [Advanced Hunting using Python](run-advanced-query-sample-python.md)
 ###### [Advanced Hunting using PowerShell](run-advanced-query-sample-powershell.md)

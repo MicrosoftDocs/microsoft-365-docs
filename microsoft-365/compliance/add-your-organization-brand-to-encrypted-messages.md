@@ -71,7 +71,7 @@ Use Windows PowerShell to modify one branding template at a time. If you have Ad
 
 2. Use the Set-OMEConfiguration cmdlet as described in [Set-OMEConfiguration](/powershell/module/exchange/Set-OMEConfiguration) or use the following graphic and table for guidance.
 
-![Customizable email parts](../media/ome-template-breakout.png)
+![Customizable email parts.](../media/ome-template-breakout.png)
 
 |**To customize this feature of the encryption experience**|**Use these commands**|
 |:-----|:-----|
@@ -165,7 +165,7 @@ For information on how to create an Exchange mail flow rule that applies encrypt
 
 3. In the Microsoft 365 admin center, choose **Admin centers** \> **Exchange**.
 
-4. In the EAC, go to **Mail flow** \> **Rules** and select **New** ![New icon](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **Create a new rule**. For more information about using the EAC, see [Exchange admin center in Exchange Online](/exchange/exchange-admin-center).
+4. In the EAC, go to **Mail flow** \> **Rules** and select **New** ![New icon.](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **Create a new rule**. For more information about using the EAC, see [Exchange admin center in Exchange Online](/exchange/exchange-admin-center).
 
 5. In **Name**, type a name for the rule, such as Branding for sales department.
 

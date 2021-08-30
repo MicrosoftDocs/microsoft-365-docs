@@ -24,7 +24,7 @@ description: "Content explorer allows you to natively view labeled items."
 
 The data classification content explorer allows you to natively view the items that were summarized on the overview page.
 
-![content explorer collapsed screenshot](../media/data-classification-content-explorer-1.png)
+![content explorer collapsed screenshot.](../media/data-classification-content-explorer-1.png)
 
 ## Prerequisites
 
@@ -106,14 +106,14 @@ A [retention label](retention.md) allows you to define how long a labeled item i
 ### Export
 The **export** control will create a .csv file that contains a listing of whatever is showing in the **All locations** pane.
 
-![data classification export control](../media/data_classification_export_control.png)
+![data classification export control.](../media/data_classification_export_control.png)
 
 
 ### Search
 
 When you drill down into a location, such as an Exchange folder, or a SharePoint or OneDrive site, the **search** tool appears.
 
-![content explorer search tool](../media/data_classification_search_tool.png)
+![content explorer search tool.](../media/data_classification_search_tool.png)
 
 
 The scope of the search tool is what is displaying in the **All locations** pane and what you can search on varies depending on the selected location. 

@@ -47,7 +47,7 @@ ms.technology: mde
    2. Select **Forward events to Azure Storage**.
    3. In the **Storage Account Resource ID** box that appears, type your **Storage Account Resource ID**. To get your **Storage Account Resource ID**, open the Azure portal at <https://portal.azure.com>, click **Storage accounts** \> go to the properties tab \> copy the text under **Storage Account Resource ID**.
 
-      ![Image of event hub resource ID1](../defender-endpoint/images/storage-account-resource-id.png)
+      ![Image of event hub resource ID1.](../defender-endpoint/images/storage-account-resource-id.png)
 
    4. Back on the **Add new Streaming API settings** flyout, choose the **Event types** that you want to stream.
 
@@ -57,7 +57,7 @@ ms.technology: mde
 
 - A blob container will be created for each event type:
 
-  ![Image of event hub resource ID2](../defender-endpoint/images/storage-account-event-schema.png)
+  ![Image of event hub resource ID2.](../defender-endpoint/images/storage-account-event-schema.png)
 
 - The schema of each row in a blob is the following JSON:
 
@@ -92,7 +92,7 @@ In order to get the data types for our events properties do the following:
 
 - Here is an example for Device Info event:
 
-  ![Image of event hub resource ID3](../defender-endpoint/images/machine-info-datatype-example.png)
+  ![Image of event hub resource ID3.](../defender-endpoint/images/machine-info-datatype-example.png)
 
 ## Related topics
 

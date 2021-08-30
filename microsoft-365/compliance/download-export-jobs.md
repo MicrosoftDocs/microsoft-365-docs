@@ -48,7 +48,7 @@ The first step is to create an export job to export documents out of a review se
 
 6. Paste the container URL and the SAS token for your storage account in the corresponding fields.
 
-   ![Paste the connection URL and the SAS token in the corresponding fields](../media/AzureStorageOutputOptions.png)
+   ![Paste the connection URL and the SAS token in the corresponding fields.](../media/AzureStorageOutputOptions.png)
 
 7. Click **Export** to create the export job.
 
@@ -62,7 +62,7 @@ The next step is to obtain the SAS URL that's generated after you create the exp
 
 3. On the flyout page, under **Locations**, copy the SAS URL that's displayed. If necessary, you can save it to a text file so you can access it in Step 3.
 
-   ![Copy the SAS URL displayed under Locations](../media/eDiscoExportJob.png)
+   ![Copy the SAS URL displayed under Locations.](../media/eDiscoExportJob.png)
 
    > [!TIP]
    > The SAS URL that's displayed in the export job is a concatenation of the container URL and the SAS token for your Azure Storage account. You can copy it from the export job or create it yourself by combining the URL and the SAS token.
@@ -75,7 +75,7 @@ The final step is to use the Azure Storage Explorer and the SAS URL to connect t
 
 2. Click the **Open Connect Dialog** icon.
 
-   ![Click the Add account icon](../media/AzureStorageConnect.png)
+   ![Click the Add account icon.](../media/AzureStorageConnect.png)
 
 3. On the **Connect to Azure Storage** page, click **Blob container**.
 
@@ -83,7 +83,7 @@ The final step is to use the Azure Storage Explorer and the SAS URL to connect t
 
 5. On the **Enter Connection Info** page, paste the SAS URL (that you obtained in the export job in Step 2) in the **Blob Container SAS URL** box.
 
-    ![Paste the SAS URL in the URI box](../media/AzureStorageConnect3.png)
+    ![Paste the SAS URL in the URI box.](../media/AzureStorageConnect3.png)
 
     Notice that the container name is displayed in the **Display name** box. You can edit this name.
 
@@ -91,7 +91,7 @@ The final step is to use the Azure Storage Explorer and the SAS URL to connect t
 
     The **Blob containers** node (under **Storage Accounts** > **(Attached Containers)** \> is opened.
 
-    ![Export jobs in the Blobs containers node](../media/AzureStorageConnect5.png)
+    ![Export jobs in the Blobs containers node.](../media/AzureStorageConnect5.png)
 
     It contains a container named with the display name from step 5. This container contains a folder for each export job that you've downloaded to the container in your Azure Storage account. These folders are named with an ID that corresponds to the ID of the export job. You can find these export IDs (and the name of the export) under **Support information** on the flyout page for each **Preparing data for export** job listed on the **Jobs** tab in the Advanced eDiscovery case.
 
@@ -99,7 +99,7 @@ The final step is to use the Azure Storage Explorer and the SAS URL to connect t
 
    A list of folders and export reports is displayed.
 
-    ![The export folder contains exported files and export reports](../media/AzureStorageConnect6.png)
+    ![The export folder contains exported files and export reports.](../media/AzureStorageConnect6.png)
 
 8. To export all contents from the export job, click the **Up** arrow to go back to the export job folder, and then click **Download**.
 

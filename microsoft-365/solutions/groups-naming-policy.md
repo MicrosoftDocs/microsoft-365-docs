@@ -123,7 +123,7 @@ To set up a naming policy:
 5. Choose between **Attribute** and **String** for each line and then specify the attribute or string.
 6. When you have added the prefixes and suffixes that you need, click **Save**.
 
-![Screenshot of the groups naming policy settings in Azure Active Directory](../media/groups-naming-policy-azure.png)
+![Screenshot of the groups naming policy settings in Azure Active Directory.](../media/groups-naming-policy-azure.png)
 
 ## Related topics
 

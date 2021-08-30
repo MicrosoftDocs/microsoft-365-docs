@@ -24,7 +24,7 @@ After EML messages are stored in user mailboxes, you can apply Microsoft 365 com
 
 The following overview explains the process of using a connector to archive EML data in Microsoft 365.
 
-![Archiving workflow for EML data](../media/EMLConnectorWorkflow.png)
+![Archiving workflow for EML data.](../media/EMLConnectorWorkflow.png)
 
 1. Your organization works with the EML source to set up and configure an EML site.
 
