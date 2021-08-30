@@ -93,6 +93,17 @@ In general, do not define exclusions for the following folder locations:
 
 `C:\Windows\Temp\*`
 
+## Linux and macOS Platforms
+
+`/`
+
+`/bin`
+
+`/sbin`
+
+`/usr/lib`
+
+
 ### File extensions
 
 In general, do not define exclusions for the following file extensions:
@@ -248,6 +259,18 @@ In general, do not define exclusions for the following processes:
 `system.management.automation.dll`
 
 `windbg.exe`
+
+## Linux Platforms
+
+`bash`
+
+`sh`
+
+`python` and `python3`
+
+`java`
+
+`zsh`
 
 > [!NOTE]
 > You can choose to exclude file types, such as `.gif`, `.jpg`, `.jpeg`, or `.png` if your environment has a modern, up-to-date software with a strict update policy to handle any vulnerabilities.
