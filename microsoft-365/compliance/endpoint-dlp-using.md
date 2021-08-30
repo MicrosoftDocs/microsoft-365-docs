@@ -109,6 +109,8 @@ You can control how users interact with the business justification option in DLP
 - Users can only select a built-in justification.
 - Users can only enter their own justification.
 
+##### Customizing the options in the drop-down menu (LEFT OFF HERE)
+
 ### Always audit file activity for devices
 
 By default, when devices are onboarded, activity for Office, PDF, and CSV files is automatically audited and available for review in activity explorer. Turn this feature off if you want this activity to be audited only when onboarded devices are included in an active policy.
