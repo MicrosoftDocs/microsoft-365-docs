@@ -16,12 +16,18 @@
              href: ../business/set-up.md
         - name: Sign up for Microsoft 365 Business Standard
           items:
-           - name: Sign up
-             href: ../admin/simplified-signup/owner-purchase.md
-           - name: Set up a new business email address
-             href: ../business-video/set-up-a-new-business-email-address.md
-           - name: Invite your users to Microsoft 365 Business Standard
-             href: ../admin/simplified-signup/owner-iw-invite.md
+           - name: Sign up for Microsoft 365 Business Standard
+             href: ../admin/setup/simplified-signup/signup-business-standard.md
+           - name: Set up Microsoft 365 Business Standard
+             href: ../admin/setup/signup-business-standard.md
+           - name: Invite users to Microsoft 365 Business Standard
+             href: ../admin/simplified-signup/admin-invite-business-standard.md
+           - name: Accept email invitation to Microsoft 365 Business Standard
+             href: ../admin/simplified-signup/admin-invite-business-standard.md
+           - name: Accept an email invitation to a Microsoft 365 Business Standard subscription organization using an Outlook, Yahoo, Gmail or other account
+             href: ../admin/simplified-signup/user-invite-msa-nodomain-join.md
+           - name: Migrate data to my Microsoft 365 Business Standard subscription
+             href: ../admin/simplified-signup/migrate-data-business-standard.md
         - name: Plan your setup
           href: setup/plan-your-setup.md
         - name: Plan for Windows 365 Business
