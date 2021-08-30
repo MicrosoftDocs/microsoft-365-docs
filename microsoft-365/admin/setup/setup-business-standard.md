@@ -1,5 +1,5 @@
 ---
-title: "Set up Microsoft 365 Business Standard"
+title: "Set up Microsoft 365 Business Standard with a new or existing domain"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -28,9 +28,9 @@ search.appverid:
 description: "When you purchase Microsoft 365 Business Standard, you have the option of using a domain you own, or buying one during the sign-up."
 ---
 
-# Set up Microsoft 365 Business Standard
+# Set up Microsoft 365 Business Standard  with a new or existing domain
 
-When you purchase Microsoft 365 Business Standard, you have the option of adding a domain you own, or buying one during the sign-up. Check out [Sign up for a Microsoft 365 Business Standard subscription](../simplified-signup/signup-business-standard.md).
+When you purchase Microsoft 365 Business Standard, you have the option of adding a domain you own, or buying one. Check out [Sign up for a Microsoft 365 Business Standard subscription](../simplified-signup/signup-business-standard.md).
 
 In this article, we'll walk you through the steps of adding an existing domain your already own or buying a new one.
 

@@ -21,7 +21,7 @@ description: "Invite users to join Microsoft 365 Business Standard organization"
 As the admin of a Microsoft 365 Business Standard subscription, you can invite your colleagues and coworkers to share and use your Microsoft 365 for business subscription. When you invite your colleagues and coworkers to your subscription, you share all the features and services:
 
 - Get desktop versions of Office apps, including Outlook, Word, Excel, PowerPoint, and OneNote (plus Access and Publisher for PC only).
-- Host email with a 50 GB mailbox and custom email domain.
+- Host email with a 50 GB mailbox and custom email domain (if you've added a domain).
 - Create a hub for teamwork to connect people using Microsoft Teams.
 - Store and share files with 1 TB of OneDrive cloud storage per user.
 - Use one license to cover fully installed Office apps on five mobile devices, five tablets, and five PCs or Macs per user.
@@ -33,7 +33,7 @@ Make sure you’ve already [signed up for Microsoft 365 Business Standard](signu
 
 ## Share an invitation to a Microsoft 365 Business Standard subscription
 
-1. In the Microsoft 365 admin center, select **Create an account for another person**.
+1. In the Microsoft 365 admin center, select **Invite people to Microsoft 365**.
 
 2. Add the usernames and email addresses for the people you want to invite and choose **Send**. An invitation email will be sent to all the users you added to add their user account information to Microsoft 365.
 

@@ -57,7 +57,7 @@ You'll sign into Microsoft 365 with this email address. For example, alliebellew
 
 This option provides the easiest, fastest way to get started with the core functionality of the Office desktop suite, Teams, Forms and OneDrive cloud storage. This option is recommended for very small businesses who don't need branded email immediately, or who already use branded email from a different provider and do not intend to switch to use Microsoft Exchange.
 
-This option isn't recommended for larger businesses, or for industries which may require data governance or compliance, such as healthcare and legal industries.
+This option isn't recommended for larger businesses, including specialty industries such as healthcare or legal.
 
 You can add a business domain at any point to access the rest of the functionality of your Business Standard subscription, including:
 
@@ -68,11 +68,10 @@ You can add a business domain at any point to access the rest of the functionali
 
 #### Next steps
 
-Once you’re ready to add a domain and create a business email account, you can follow the steps in the articles below:
+If you would like to add a domain and create a business email account, you can follow the steps in the articles below:
 
 - [Add a domain to Microsoft 365](../setup/add-domain.md)
-- [Set up your organization with email and cloud storage](https://review.docs.microsoft.com/microsoft-365/admin/setup/setup-business-standard?view=o365-21vianet&branch=kwekua-simplified-signup#finish-setting-up)
-- [Invite users to Microsoft 365 Business Standard (Admin)](admin-invite-business-standard.md)
+- [Set up your organization with email and cloud storage](https://docs.microsoft.com/microsoft-365/admin/setup/setup-business-standard-simplified-signup#finish-setting-up)
 
 ### Option 2: Create a new business email account
 
@@ -84,10 +83,6 @@ This option provides immediate access to the full suite of features in your Micr
 > You can follow these steps to purchase Microsoft 365 Apps as well. For more info, see [Set up Microsoft 365 Apps for business](../setup/setup-apps-for-business.md) after you purchase Microsoft 365 Apps for business.
 
 ## Frequently asked questions
-
-### What is the difference between signing up with my existing email vs creating a new business email?
-
-### Do I have access to everything if I choose one option over the other?
 
 ### What is a business email and what are the advantages to setting one up?
 
