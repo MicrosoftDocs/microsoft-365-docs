@@ -107,11 +107,11 @@ More at [Import email with Outlook](https://support.microsoft.com/office/6a3771d
 
 You can also use Exchange admin center to import everyone's email. For more information, see [migrate multiple email accounts](/Exchange/mailbox-migration/mailbox-migration).
 
-## Move data from Teams for life to Teams for work
+## Move data from your personal Teams account to new Teams for work account
 
 1. Open Microsoft Teams, select your profile icon, and then **Add work or school account**.
 
-1. Follow the steps to add your new account to Teams. Check out [Sign in and get started with Teams](https://support.microsoft.com/office/sign-in-and-get-started-with-teams-6723dc43-dbc0-46e6-af49-8a2d1c5cb937) for more info.
+2. Follow the steps to add your new account to Teams for Business Standard. Check out [Sign in and get started with Teams](https://support.microsoft.com/office/sign-in-and-get-started-with-teams-6723dc43-dbc0-46e6-af49-8a2d1c5cb937) for more info.
 
 ### Access Teams chats
 
@@ -124,10 +124,6 @@ You can start creating new Teams meetings once you’ve got Teams for business s
 ### Migrating contacts
 
 To move your Teams for life contacts over to Teams for work, find the contact’s email address and add the user to your new Teams for work account.
-
-### Activity feed
-
-You can save your activity feeds a couple of ways. You can take screenshots of your activity feeds and save a share or you can copy and paste your data to another product, for example, Microsoft OneNote.
 
 ## Related content
 
