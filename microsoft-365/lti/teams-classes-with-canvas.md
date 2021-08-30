@@ -36,11 +36,11 @@ Prior to managing the Microsoft Teams integration within Instructure Canvas, it 
 
 2. Open Enterprise applications and select the **Microsoft-Teams-Sync-for-Canvas** application.
 
-3. Select Permissions and then click Grant admin consent
+3. Select **Permissions** and then choose **Grant admin consent**.
 
-4. Agree with the permissions the application requires and grant consent
+4. Agree with the permissions the application requires and grant consent.
 
-## Microsoft Office 365 Admin
+## Microsoft Office 365 admin
 
 1. Sign in to Canvas.
 
