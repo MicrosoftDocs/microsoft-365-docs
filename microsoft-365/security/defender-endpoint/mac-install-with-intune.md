@@ -44,17 +44,21 @@ Before you get started, see [the main Microsoft Defender for Endpoint on macOS p
 
 The following table summarizes the steps you would need to take to deploy and manage Microsoft Defender for Endpoint on Macs, via Intune. More detailed steps are available below.
 
-| Step | Sample file names | BundleIdentifier |
-|-|-|-|
-| [Download the onboarding package](#download-the-onboarding-package) | WindowsDefenderATPOnboarding__MDATP_wdav.atp.xml | com.microsoft.wdav.atp |
-| [Approve System Extension for Microsoft Defender for Endpoint](#approve-system-extensions) | MDATP_SysExt.xml | N/A |
-| [Approve Kernel Extension for Microsoft Defender for Endpoint](#download-the-onboarding-package) | MDATP_KExt.xml | N/A |
-| [Grant full disk access to Microsoft Defender for Endpoint](#full-disk-access) | MDATP_tcc_Catalina_or_newer.xml | com.microsoft.wdav.tcc |
-| [Network Extension policy](#network-filter) | MDATP_NetExt.xml | N/A |
-| [Configure Microsoft AutoUpdate (MAU)](mac-updates.md#intune) | MDATP_Microsoft_AutoUpdate.xml | com.microsoft.autoupdate2 |
-| [Microsoft Defender for Endpoint configuration settings](mac-preferences.md#intune-profile-1)<br/><br/> **Note:** If you're planning to run a third-party AV for macOS, set `passiveMode` to `true`. | MDATP_WDAV_and_exclusion_settings_Preferences.xml | com.microsoft.wdav |
-| [Configure Microsoft Defender for Endpoint and MS AutoUpdate (MAU) notifications](mac-updates.md) | MDATP_MDAV_Tray_and_AutoUpdate2.mobileconfig | com.microsoft.autoupdate2 or com.microsoft.wdav.tray |
+<br>
 
+****
+
+|Step|Sample file names|BundleIdentifier|
+|---|---|---|
+|[Download the onboarding package](#download-the-onboarding-package)|WindowsDefenderATPOnboarding__MDATP_wdav.atp.xml|com.microsoft.wdav.atp|
+|[Approve System Extension for Microsoft Defender for Endpoint](#approve-system-extensions)|MDATP_SysExt.xml|N/A|
+|[Approve Kernel Extension for Microsoft Defender for Endpoint](#download-the-onboarding-package)|MDATP_KExt.xml|N/A|
+|[Grant full disk access to Microsoft Defender for Endpoint](#full-disk-access)|MDATP_tcc_Catalina_or_newer.xml|com.microsoft.wdav.tcc|
+|[Network Extension policy](#network-filter)|MDATP_NetExt.xml|N/A|
+|[Configure Microsoft AutoUpdate (MAU)](mac-updates.md#intune)|MDATP_Microsoft_AutoUpdate.xml|com.microsoft.autoupdate2|
+|[Microsoft Defender for Endpoint configuration settings](mac-preferences.md#intune-full-profile) <p> **Note:** If you're planning to run a third-party AV for macOS, set `passiveMode` to `true`.|MDATP_WDAV_and_exclusion_settings_Preferences.xml|com.microsoft.wdav|
+|[Configure Microsoft Defender for Endpoint and MS AutoUpdate (MAU) notifications](mac-updates.md)|MDATP_MDAV_Tray_and_AutoUpdate2.mobileconfig|com.microsoft.autoupdate2 or com.microsoft.wdav.tray|
+|
 
 ## Download the onboarding package
 
@@ -73,6 +77,7 @@ Download the onboarding packages from Microsoft 365 Defender portal:
     ```bash
     unzip WindowsDefenderATPOnboardingPackage.zip
     ```
+
     ```Output
     Archive:  WindowsDefenderATPOnboardingPackage.zip
     warning:  WindowsDefenderATPOnboardingPackage.zip appears to use backslashes as path separators
