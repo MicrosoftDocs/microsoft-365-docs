@@ -11,7 +11,9 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection: 
 - M365-subscription-management 
-ms.custom: AdminSurgePortfolio
+ms.custom: 
+- AdminSurgePortfolio
+- admindeeplinkMAC
 search.appverid:
 - MET150
 description: "Provide your users with up-to-date news headlines about your industry and info from your organization, use the News service to enable a customized news feed for your organization."
@@ -27,13 +29,13 @@ You have the option to send your users a daily Industry Updates email with headl
  
 Signed-in users who go to the Bing homepage see your industry's news feed under the personalized info for your organization. 
  
-:::image type="content" source="../../media/manage-industry-news-2.jpg" alt-text="Screenshot of image carousel with industry news from the web":::
+:::image type="content" source="../../media/manage-industry-news-2.jpg" alt-text="Screenshot of image carousel with industry news from the web.":::
 
-:::image type="content" source="../../media/industry-updates-new.png" alt-text="Industry Updates page with date and headlines":::
+:::image type="content" source="../../media/industry-updates-new.png" alt-text="Industry Updates page with date and headlines.":::
 
 They can also see company, industry, and internal news or personalized work information on their Microsoft Edge new tab page. 
 
-:::image type="content" source="../../media/manage-industry-news-3.png" alt-text="Microsoft in news homepage":::
+:::image type="content" source="../../media/manage-industry-news-3.png" alt-text="Microsoft in news homepage.":::
 
 ## News settings
 

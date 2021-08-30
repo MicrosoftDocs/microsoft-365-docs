@@ -23,7 +23,7 @@ MS.technology: mde
 ms.custom: api
 ---
 
-#  Get live response results
+# Get live response results
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

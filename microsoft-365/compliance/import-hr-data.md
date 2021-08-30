@@ -242,7 +242,7 @@ After you complete this step, be sure to copy the job ID that's generated when y
 
    A status page is displayed that confirms the connector was created. This page contains two important things that you need to complete the next step to run the sample script to upload your HR data.
 
-   ![Review page with job ID and link to github for sample script](../media/HRConnector_Confirmation.png)
+   ![Review page with job ID and link to github for sample script.](../media/HRConnector_Confirmation.png)
 
    1. **Job ID.** You'll need this job ID to run the script in the next step. You can copy it from this page or from the connector flyout page.
 
@@ -254,7 +254,7 @@ After you complete this step, be sure to copy the job ID that's generated when y
 
 10. Click the HR connector that you just created to display the flyout page, which contains properties and other information about the connector.
 
-   ![Flyout page for new HR connector](../media/HRConnectorWizard7.png)
+   ![Flyout page for new HR connector.](../media/HRConnectorWizard7.png)
 
 If you haven't already done so, you can copy the values for the **Azure App ID** and **Connector job ID**. You'll need these to run the script in the next step. You can also download the script from the flyout page (or download it using the link in the next step.)
 
@@ -312,11 +312,11 @@ After you create the HR connector and run the script to upload your HR data, you
 
 2. Click the **Connectors** tab and then select the HR connector to display the flyout page. This page contains the properties and information about the connector.
 
-   ![HR connector flyout page with properties and status](../media/HRConnectorFlyout1.png)
+   ![HR connector flyout page with properties and status.](../media/HRConnectorFlyout1.png)
 
 3. Under **Progress**, click the **Download log** link to open (or save) the status log for the connector. This log contains information about each time the script runs and uploads the data from the CSV file to the Microsoft cloud. 
 
-   ![HR connector log file displays number rows from CSV file that were uploaded](../media/HRConnectorLogFile.png)
+   ![HR connector log file displays number rows from CSV file that were uploaded.](../media/HRConnectorLogFile.png)
 
    The `RecordsSaved` field indicates the number of rows in the CSV file that uploaded. For example, if the CSV file contains four rows, then the value of the `RecordsSaved` fields is 4, if the script successfully uploaded all the rows in the CSV file.
 
@@ -352,7 +352,7 @@ You can user the Task Scheduler app in Windows to automatically run the script e
 
 7. Select the **Actions** tab, click **New**, and then do the following things:
 
-   ![Action settings to create a new scheduled task for the HR connector script](../media/HRConnectorScheduleTask1.png)
+   ![Action settings to create a new scheduled task for the HR connector script.](../media/HRConnectorScheduleTask1.png)
 
    1. In the **Action** dropdown list, make sure that **Start a program** is selected.
 
@@ -368,7 +368,7 @@ You can user the Task Scheduler app in Windows to automatically run the script e
 
    The new task is displayed in the Task Scheduler Library.
 
-   ![The new task is displayed in the Task Scheduler Library](../media/HRConnectorTaskSchedulerLibrary.png)
+   ![The new task is displayed in the Task Scheduler Library.](../media/HRConnectorTaskSchedulerLibrary.png)
 
    The last time the script ran and the next time it's scheduled to run is displayed. You can double-click the task to edit it.
 

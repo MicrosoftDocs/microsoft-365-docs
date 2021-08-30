@@ -24,7 +24,7 @@ After Jive data is stored in user mailboxes, you can apply Microsoft 365 complia
 
 The following overview explains the process of using a connector to archive the Jive data in Microsoft 365.
 
-![Archiving workflow for Jive data](../media/JiveConnectorWorkflow.png)
+![Archiving workflow for Jive data.](../media/JiveConnectorWorkflow.png)
 
 1. Your organization works with Jive to set up and configure a Jive site.
 

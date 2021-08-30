@@ -24,7 +24,7 @@ After Slack eDiscovery data is stored in user mailboxes, you can apply Microsoft
 
 The following overview explains the process of using a connector to archive the Slack information in Microsoft 365.
 
-![Slack archiving workflow](../media/SlackConnectorWorkflow.png)
+![Slack archiving workflow.](../media/SlackConnectorWorkflow.png)
 
 1. Your organization works with Slack to set up and configure a Slack site.
 

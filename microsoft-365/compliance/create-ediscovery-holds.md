@@ -49,13 +49,13 @@ To create an eDiscovery hold that's associated with a Core eDiscovery case:
 
 7. On the **Choose locations** wizard page, choose the content locations that you want to place on hold. You can place mailboxes, sites, and public folders on hold.
 
-    ![Choose the content locations to place on hold](../media/eDiscoveryHoldLocations.png)
+    ![Choose the content locations to place on hold.](../media/eDiscoveryHoldLocations.png)
   
    1. **Exchange mailboxes**: Set the toggle to **On** and then click **Choose users, groups, or teams** to specify the mailboxes to place on hold. Use the search box to find user mailboxes and distribution groups (to place a hold on the mailboxes of group members) to place on hold. You can also place a hold on the associated mailbox for a Microsoft Team, Office 365 Group, and Yammer Group. For more information about the application data that is preserved when a mailbox is placed on hold, see [Content stored in mailboxes for eDiscovery](what-is-stored-in-exo-mailbox.md).
 
-   1. **SharePoint sites**: Set the toggle to **On** and then click **Choose sites** to specify SharePoint sites and OneDrive accounts to place on hold. Type the URL for each site that you want to place on hold. You can also add the URL for the SharePoint site for a Microsoft Team, Office 365 Group or a Yammer Group.
+   2. **SharePoint sites**: Set the toggle to **On** and then click **Choose sites** to specify SharePoint sites and OneDrive accounts to place on hold. Type the URL for each site that you want to place on hold. You can also add the URL for the SharePoint site for a Microsoft Team, Office 365 Group or a Yammer Group.
   
-   1. **Exchange public folders**: Set the toggle to **On** to put all public folders in your Exchange Online organization on hold. You can't choose specific public folders to put on hold. Leave the toggle switch off if you don't want to put a hold on public folders.
+   3. **Exchange public folders**: Set the toggle to **On** to put all public folders in your Exchange Online organization on hold. You can't choose specific public folders to put on hold. Leave the toggle switch off if you don't want to put a hold on public folders.
 
    > [!NOTE]
    > You must add at least one content location to the hold. Otherwise, the eDiscovery hold statistics will show that no items are on hold.
@@ -64,7 +64,7 @@ To create an eDiscovery hold that's associated with a Core eDiscovery case:
 
 9. To create a query-based hold using keywords or conditions, complete the following steps. To preserve all content in the specified content locations, click **Next**.
 
-    ![Create a query-based hold with keyword and conditions](../media/eDiscoveryHoldQuery.png)
+    ![Create a query-based hold with keyword and conditions.](../media/eDiscoveryHoldQuery.png)
   
     1. In the box under **Keywords**, type a query to preserve only the content that matches the query criteria. You can specify keywords, email message properties, or site properties, such as file names. You can also use more complex queries that use a Boolean operator, such as **AND**, **OR**, or **NOT**.
 
@@ -88,7 +88,7 @@ Keep the following things in mind when you place a query-based eDiscovery hold o
 
 After you create an eDiscovery hold, information about the new hold is displayed on the flyout page for the selected hold. This information includes the number of mailboxes and sites on hold and statistics about the content that was placed on hold, such as the total number and size of items placed on hold and the last time the hold statistics were calculated. These hold statistics help you identify the amount of content related to the case is being preserved.
   
-![Hold statistics](../media/eDiscoveryHoldStatistics.png)
+![Hold statistics.](../media/eDiscoveryHoldStatistics.png)
   
 Keep the following things in mind about eDiscovery hold statistics:
   

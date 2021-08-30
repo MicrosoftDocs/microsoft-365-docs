@@ -16,7 +16,7 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 08/05/2021
+ms.date: 08/27/2021
 ---
 
 # Manage Microsoft Defender Antivirus updates and apply baselines
@@ -32,7 +32,7 @@ Keeping Microsoft Defender Antivirus up to date is critical to assure your devic
 - Product updates
 
 > [!TIP]
-> To see the most current engine, platform, and signature date, visit the [Security intelligence updates for Microsoft Defender Antivirus and other Microsoft antimalware](https://www.microsoft.com/wdsi/defenderupdates)
+> To see the most current engine, platform, and signature date, visit the [Security intelligence updates for Microsoft Defender Antivirus and other Microsoft antimalware](https://www.microsoft.com/en-us/wdsi/defenderupdates)
 
 ## Security intelligence updates
 

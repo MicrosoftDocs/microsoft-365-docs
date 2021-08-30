@@ -40,7 +40,7 @@ The Windows Security app is a client interface on Windows 10, version 1703 and l
 
 ## Review virus and threat protection settings in the Windows Security app
 
-:::image type="content" source="../../media/wdav-protection-settings-wdsc.png" alt-text="Virus and threat protection settings in Windows Security app":::
+:::image type="content" source="../../media/wdav-protection-settings-wdsc.png" alt-text="Virus and threat protection settings in Windows Security app.":::
 
 1. Open the Windows Security app by clicking the shield icon in the task bar or searching the start menu for **Defender**.
 
@@ -61,7 +61,7 @@ The following sections describe how to perform some of the most common tasks whe
 
 ## Review the security intelligence update version and download the latest updates in the Windows Security app
 
-:::image type="content" source="../../media/wdav-wdsc-defs.png" alt-text="Security intelligence version number":::
+:::image type="content" source="../../media/wdav-wdsc-defs.png" alt-text="Security intelligence version number.":::
 
 1. Open the Windows Security app by searching the start menu for *Security*, and then selecting **Windows Security**.
 

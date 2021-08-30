@@ -30,7 +30,7 @@ The loading speed of a webpage depends on the combined size of all the component
   
 ## Using sprites to speed up image loading
 
-![Screenshot of spcommon](../media/cc5cdee1-8e54-4537-9a8a-8854f4ee849f.png)
+![Screenshot of spcommon.](../media/cc5cdee1-8e54-4537-9a8a-8854f4ee849f.png)
 
 An image sprite contains many smaller images. Using CSS you select a part of the composite image to display on a particular part of the page with absolute positioning. Basically, you move a single image around the page instead of loading multiple images, and make a small part of that image visible through a small window where the required part of the sprite image is shown to the end user. SharePoint Online uses sprites to display its various icons in the sprite spcommon.png file.
 
@@ -70,17 +70,17 @@ The steps are relatively simple but for images to use the renditions, the rendit
 
     You can use the out of the box renditions or choose **Image Renditions** to create a new one.
 
-    ![Screenshot of Image Rendition](../media/eaae0d53-657d-47ef-b687-65c5167eae4d.PNG)
+    ![Screenshot of Image Rendition.](../media/eaae0d53-657d-47ef-b687-65c5167eae4d.PNG)
   
 5. On the **Image Renditions** page, choose **Add new item**.
 
-    ![Screenshot of Add New Item](../media/8cede22e-52bf-4d9d-99cb-162f2f6ce92b.PNG)
+    ![Screenshot of Add New Item.](../media/8cede22e-52bf-4d9d-99cb-162f2f6ce92b.PNG)
   
 6. On the **New Image Rendition** page, in the **Name** box, enter a name for the rendition.
 
 7. In the **Width** and **Height** text boxes, enter the width and height, in pixels, of the rendition, and then choose **Save**.
 
-    ![Screenshot of Image Rendition Name](../media/5a6119ed-c163-40df-a4db-ec629d15607d.PNG)
+    ![Screenshot of Image Rendition Name.](../media/5a6119ed-c163-40df-a4db-ec629d15607d.PNG)
   
 ## Custom cropping with image renditions
 

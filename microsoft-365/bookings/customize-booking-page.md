@@ -27,7 +27,7 @@ The section below gives you information about setting up your bookings page and 
 
     The internal Booking Page looks like this:
 
-    :::image type="content" source="media/bookings-Self-Service_2.jpg" alt-text="The Bookings Page":::
+    :::image type="content" source="media/bookings-Self-Service_2.jpg" alt-text="The Bookings Page.":::
 
 - **Booking page access control: Require a Microsoft 365 account from my organization to book**  Selecting this option will only allow those within your organization to view your page or book any services. Access to the page is authorized via credential checks to ensure the visitor belongs to an account within the tenant.
 
@@ -45,7 +45,7 @@ The section below gives you information about setting up your bookings page and 
 
 Once you publish your booking page, customers will see your booking page where they can book appointments with you. The customer facing booking page looks like this:
 
-:::image type="content" source="media/bookings-self-service.jpg" alt-text="Customer facing booking page":::
+:::image type="content" source="media/bookings-self-service.jpg" alt-text="Customer facing booking page.":::
 
 ## Publish the booking page
 

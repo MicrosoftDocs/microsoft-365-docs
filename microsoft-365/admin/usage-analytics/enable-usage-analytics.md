@@ -16,6 +16,7 @@ ms.collection:
 ms.custom: 
 - AdminSurgePortfolio
 - AdminTemplateSet
+- admindeeplinkMAC
 search.appverid:
 - BCS160
 - MET150
@@ -68,7 +69,7 @@ To start the template app, you have to be either a **global administrator**, **r
 
 3. In the **Apps** tab, type Microsoft 365 in the search box and then select **Microsoft 365 usage analytics** \> **Get it now**.
 
-    [![Select Get it now](../../media/78102250-9874-4a32-8365-436f13560b52.png)](https://app.powerbi.com/groups/me/getapps/services/cia_microsoft365.microsoft-365-usage-analytics)
+    [![Select Get it now.](../../media/78102250-9874-4a32-8365-436f13560b52.png)](https://app.powerbi.com/groups/me/getapps/services/cia_microsoft365.microsoft-365-usage-analytics)
 
 4. Once the app is installed. Select the tile to open it.
 
@@ -78,7 +79,7 @@ To start the template app, you have to be either a **global administrator**, **r
 
 7. On the next screen, select **OAuth2** as the **Authentication method** \> **Sign in**. If you choose any other authentication method, the connection to the template app will fail.
 
-    ![Choose Microsoft account as authentication method](../../media/ab6f0463-c3f7-4088-a605-67c699fa86adnew.png)
+    ![Choose Microsoft account as authentication method.](../../media/ab6f0463-c3f7-4088-a605-67c699fa86adnew.png)
 
 8. After the template app is instantiated the Microsoft 365 usage analytics dashboard will be available in Power BI on the web. The initial loading of the dashboard will take between 2 to 30 minutes.
 

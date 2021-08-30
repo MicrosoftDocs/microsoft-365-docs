@@ -14,7 +14,7 @@ ms.collection: M365-security-compliance
 description: "Learn how to set up and use a 17a-4 Skype for Business Server DataParser connector to import and archive Skype for Business Server data in Microsoft 365."
 ---
 
-# Set up a connector to archive Skype for Business Server data (preview)
+# Set up a connector to archive Skype for Business Server data
 
 Use the [Skype Server DataParser](https://www.17a-4.com/skype-server-dataparser/) from 17a-4 LLC to import and archive data from a Skype for Business Server to user mailboxes in your Microsoft 365 organization. The DataParser includes a Skype for Business connector that's configured to capture items from a third-party data source and import those items to Microsoft 365. The Skype for Business Server DataParser connector converts Skype for Business Server data to an email message format and then imports those items to user mailboxes in Microsoft 365.
 
@@ -24,7 +24,7 @@ After Skype for Business Server data is stored in user mailboxes, you can apply 
 
 The following overview explains the process of using a data connector to archive Skype for Business Server data in Microsoft 365.
 
-![Archiving workflow for Skype for Business Server data from 17a-4](../media/SkypeServerDataParserConnectorWorkflow.png)
+![Archiving workflow for Skype for Business Server data from 17a-4.](../media/SkypeServerDataParserConnectorWorkflow.png)
 
 1. Your organization works with 17a-4 to set up and configure the Skype for Business Server DataParser.
 
