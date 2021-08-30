@@ -21,7 +21,7 @@ ms.custom: seo-marvel-apr2020
 
 This article contains information for improving message download performance in Outlook on the web. This article is part of the [Network planning and performance tuning for Office 365](./network-planning-and-performance.md) project.
   
-As an Office 365 global administrator, you can configure Outlook on the web to deliver _lean popouts_, a smaller, less memory-intensive version of certain email messages in Microsoft Edge or Internet Explorer. When lean popouts are configured for Outlook on the web, server-side rendered components are loaded that optimize performance.
+As an Office 365 **Application Admin**, **Global admin**, or **User Admin**, you can configure Outlook on the web to deliver _lean popouts_, a smaller, less memory-intensive version of certain email messages in Microsoft Edge or Internet Explorer. When lean popouts are configured for Outlook on the web, server-side rendered components are loaded that optimize performance.
   
 > [!NOTE]
 > As of March 2018, lean popouts are not available for messages that specify usage rights restrictions, such as Information Rights Management (IRM).
