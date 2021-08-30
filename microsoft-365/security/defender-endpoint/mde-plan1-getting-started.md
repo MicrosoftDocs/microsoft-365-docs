@@ -23,9 +23,9 @@ f1.keywords: NOCSH
 The Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) enables you to view information about detected threats, manage your alerts and incidents, take any needed action on detected threats, and manage devices. The Microsoft 365 Defender portal is where you can get started interacting with the threat protection capabilities you get with Defender for Endpoint Plan 1 (preview). The following sections describe how to get started:
 
 - [The Microsoft 365 Defender portal](#the-microsoft-365-defender-portal)
-- [Viewing and managing incidents & alerts](#viewing-and-managing-incidents--alerts)
-- [Managing devices](#managing-devices)
-- [Viewing reports](#viewing-reports)
+- [Viewing and managing incidents & alerts](#view-and-manage-incidents--alerts)
+- [Managing devices](#manage-devices)
+- [Viewing reports](#view-reports)
 
 ## The Microsoft 365 Defender portal
 
