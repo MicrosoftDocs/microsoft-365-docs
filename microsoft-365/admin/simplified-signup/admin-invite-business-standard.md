@@ -62,3 +62,4 @@ Send them this article to help them install Office: [Download and install Micros
 [Set up Microsoft 365 Business Standard](../setup/setup-business-standard.md)
 
 [Accept invite to Microsoft 365 Business Standard (User)](user-invite-business-standard.md)
+
