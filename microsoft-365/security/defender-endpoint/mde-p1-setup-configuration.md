@@ -65,7 +65,7 @@ When you plan your deployment, you can choose from several different architectur
 | [Configuration Manager](/mem/configmgr/core/understand/introduction) | Use Configuration Manager to protect on-premises endpoints with the cloud-based power of Defender for Endpoint |
 | Local script downloaded from the Microsoft 365 Defender Portal | Use local scripts on endpoints to run a pilot or onboard just a few devices |
 
-All of these options are outlined in [Plan your Defender for Endpoint deployment](deployment-strategy.md). In addition, you can download the following poster: 
+To learn more about your deployment options, see [Plan your Defender for Endpoint deployment](deployment-strategy.md). And, download the following poster: 
 
 [:::image type="content" source="../../media/defender-endpoint/mde-deployment-strategy.png" alt-text="Deployment strategy poster thumbnail":::](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)
 
@@ -387,7 +387,7 @@ To configure basic firewall settings, follow these steps:
 
 ### Application control
 
-Windows Defender Application Control (WDAC) helps protect your Windows endpoints by only allowing trusted applications and processes to run. Most organizations used a phased deployment of WDAC. That is, most organizations don't roll out WDAC across all Windows endpoints at first. In fact, depending on whether your organization's Windows endpoints are fully managed, lightly managed, or "Bring Your Own Device" endpoints, you might deploy WDAC on all or some endpoints, or rely on other security policies instead.
+Windows Defender Application Control (WDAC) helps protect your Windows endpoints by only allowing trusted applications and processes to run. Most organizations used a phased deployment of WDAC. That is, most organizations don't roll out WDAC across all Windows endpoints at first. In fact, depending on whether your organization's Windows endpoints are fully managed, lightly managed, or "Bring Your Own Device" endpoints, you might deploy WDAC on all or some endpoints.
 
 To help with planning your WDAC deployment, see the following resources:
 
