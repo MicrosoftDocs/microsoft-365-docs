@@ -13,7 +13,7 @@ author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
   - m365-security-compliance
   - m365initiative-defender-endpoint
 ms.topic: conceptual
@@ -60,7 +60,7 @@ The following table summarizes the steps you would need to take to deploy and ma
 
 Download the onboarding packages from Microsoft 365 Defender portal:
 
-1. In Microsoft 365 Defender portal, go to **Settings** > **Endpoints** > **Device management** > **Onboarding**.
+1. In Microsoft 365 Defender portal, go to **Settings** \> **Endpoints** \> **Device management** \> **Onboarding**.
 
 2. Set the operating system to **macOS** and the deployment method to **Mobile Device Management / Microsoft Intune**.
 
@@ -84,7 +84,7 @@ Download the onboarding packages from Microsoft 365 Defender portal:
 ## Create System Configuration profiles
 
 The next step is to create system configuration profiles that Microsoft Defender for Endpoint needs.
-In the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com/), open **Devices** > **Configuration profiles**.
+In the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com/), open **Devices** \> **Configuration profiles**.
 
 ### Onboarding blob
 
@@ -114,7 +114,7 @@ This profile contains a license information for Microsoft Defender for Endpoint,
     > ![Custom Configuration Profile - assignment.](images/mdatp-6-systemconfigurationprofiles-2.png)
 
 1. Review and **Create**.
-1. Open **Devices** > **Configuration profiles**, you can see your created profile there.
+1. Open **Devices** \> **Configuration profiles**, you can see your created profile there.
 
     > [!div class="mx-imgBorder"]
     > ![Custom Configuration Profile - done.](images/mdatp-6-systemconfigurationprofiles-3.png)
@@ -128,10 +128,15 @@ This profile is needed for macOS 10.15 (Catalina) or newer. It will be ignored o
 1. In the **Basics** tab, give a name to this new profile.
 1. In the **Configuration settings** tab, expand **System Extensions** add the following entries in the **Allowed system extensions** section:
 
-    Bundle identifier         | Team identifier
-    --------------------------|----------------
-    com.microsoft.wdav.epsext | UBF8T346G9
-    com.microsoft.wdav.netext | UBF8T346G9
+   <br>
+
+   ****
+
+   |Bundle identifier|Team identifier|
+   |---|:---:|
+   |com.microsoft.wdav.epsext|UBF8T346G9|
+   |com.microsoft.wdav.netext|UBF8T346G9|
+   |
 
     > [!div class="mx-imgBorder"]
     > ![System extension settings.](images/mac-system-extension-intune2.png)
@@ -187,7 +192,7 @@ Follow the instructions for [Onboarding blob](#onboarding-blob) from above, usin
 
 ### View Status
 
-Once the Intune changes are propagated to the enrolled devices, you can see them listed under **Monitor** > **Device status**:
+Once the Intune changes are propagated to the enrolled devices, you can see them listed under **Monitor** \> **Device status**:
 
 > [!div class="mx-imgBorder"]
 > ![View of Device Status in Monitor.](images/mdatp-7-devicestatusblade.png)
@@ -218,7 +223,7 @@ This step enables deploying Microsoft Defender for Endpoint to enrolled machines
     > ![Intune assignments info screenshot.](images/mdatp-11-assignments.png)
 
 1. Review and **Create**.
-1. You can visit **Apps** > **By platform** > **macOS** to see it on the list of all applications.
+1. You can visit **Apps** \> **By platform** \> **macOS** to see it on the list of all applications.
 
     > [!div class="mx-imgBorder"]
     > ![Applications list.](images/mdatp-12-applications.png)
@@ -245,14 +250,14 @@ You don't need any special provisioning for a Mac device beyond a standard [Comp
 
    You may now enroll more devices. You can also enroll them later, after you have finished provisioning system configuration and application packages.
 
-3. In Intune, open **Manage** > **Devices** > **All devices**. Here you can see your device among those listed:
+3. In Intune, open **Manage** \> **Devices** \> **All devices**. Here you can see your device among those listed:
 
    > [!div class="mx-imgBorder"]
    > ![Add Devices screenshot.](images/mdatp-5-alldevices.png)
 
 ## Verify client device state
 
-1. After the configuration profiles are deployed to your devices, open **System Preferences** > **Profiles** on your Mac device.
+1. After the configuration profiles are deployed to your devices, open **System Preferences** \> **Profiles** on your Mac device.
 
     > [!div class="mx-imgBorder"]
     > ![System Preferences screenshot.](images/mdatp-13-systempreferences.png)
