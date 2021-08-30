@@ -12,7 +12,7 @@ ms.topic: article
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.technology: mde
 ---
@@ -45,7 +45,7 @@ The Windows Security app is a client interface on Windows 10, version 1703 and l
 1. Open the Windows Security app by clicking the shield icon in the task bar or searching the start menu for **Defender**.
 
 2. Select the **Virus & threat protection** tile (or the shield icon on the left menu bar).
-   
+
 The following sections describe how to perform some of the most common tasks when reviewing or interacting with the threat protection provided by Microsoft Defender Antivirus in the Windows Security app.
 
 > [!NOTE]
@@ -67,7 +67,7 @@ The following sections describe how to perform some of the most common tasks whe
 
 2. Select the **Virus & threat protection** tile (or the shield icon on the left menu bar).
 
-3. Select **Virus & threat protection updates**. The currently installed version is displayed along with some information about when it was downloaded. You can check your current against the latest version available for manual download, or review the change log for that version. See [Security intelligence updates for Microsoft Defender Antivirus and other Microsoft antimalware](https://www.microsoft.com/en-us/wdsi/defenderupdates).
+3. Select **Virus & threat protection updates**. The currently installed version is displayed along with some information about when it was downloaded. You can check your current against the latest version available for manual download, or review the change log for that version. See [Security intelligence updates for Microsoft Defender Antivirus and other Microsoft antimalware](https://www.microsoft.com/wdsi/defenderupdates).
 
 4. Select **Check for updates** to download new protection updates (if there are any).
 
@@ -93,21 +93,26 @@ The following sections describe how to perform some of the most common tasks whe
 
 3. Under the **Manage settings**, select **Virus & threat protection settings**.
 
-4. Under the **Exclusions** setting, select **Add or remove exclusions**. 
+4. Under the **Exclusions** setting, select **Add or remove exclusions**.
 
-5. Select the plus icon (**+**) to choose the type and set the options for each exclusion. 
+5. Select the plus icon (**+**) to choose the type and set the options for each exclusion.
 
 The following table summarizes exclusion types and what happens:
 
-|Exclusion type  |Defined by  |What happens  |
-|---------|---------|---------|
-|**File** |Location <br/>Example: `c:\sample\sample.test` |The specific file is skipped by Microsoft Defender Antivirus. |
-|**Folder**    |Location <br/>Example: `c:\test\sample`       |All items in the specified folder are skipped by Microsoft Defender Antivirus.         |
-|**File type**   |File extension <br/>Example: `.test` |All files with the `.test` extension anywhere on your device are skipped by Microsoft Defender Antivirus.         |
-|**Process**     |Executable file path <br>Example: `c:\test\process.exe`         |The specific process and any files that are opened by that process are skipped by Microsoft Defender Antivirus.         |
+<br>
+
+****
+|Exclusion type|Defined by|What happens|
+|---|---|---|
+|**File**|Location <br/>Example: `c:\sample\sample.test`|The specific file is skipped by Microsoft Defender Antivirus.|
+|**Folder**|Location <br/>Example: `c:\test\sample`|All items in the specified folder are skipped by Microsoft Defender Antivirus.|
+|**File type**|File extension <br/>Example: `.test`|All files with the `.test` extension anywhere on your device are skipped by Microsoft Defender Antivirus.|
+|**Process**|Executable file path <br>Example: `c:\test\process.exe`|The specific process and any files that are opened by that process are skipped by Microsoft Defender Antivirus.|
+|
 
 To learn more, see the following resources:
-- [Configure and validate exclusions based on file extension and folder location](./configure-extension-file-exclusions-microsoft-defender-antivirus.md) 
+
+- [Configure and validate exclusions based on file extension and folder location](./configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 - [Configure exclusions for files opened by processes](./configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
 
 ## Review threat detection history in the Windows Defender Security Center app
@@ -131,4 +136,5 @@ To learn more, see the following resources:
 5. To set up ransomware recovery options, select **Set up** under **Ransomware data recovery** and follow the instructions for linking or setting up your OneDrive account so you can easily recover from a ransomware attack.
 
 ## See also
+
 - [Microsoft Defender Antivirus](microsoft-defender-antivirus-in-windows-10.md)

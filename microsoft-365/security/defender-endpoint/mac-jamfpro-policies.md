@@ -209,7 +209,7 @@ All you need to do to have updates is to download an updated schema, edit existi
     - tags
     - hideStatusMenuIcon
 
-     For information, see [Property list for Jamf configuration profile](mac-preferences.md#property-list-for-jamf-configuration-profile).
+     For information, see [Property list for JAMF full configuration profile](mac-preferences.md#property-list-for-jamf-full-configuration-profile).
 
      ```XML
      <?xml version="1.0" encoding="UTF-8"?>
