@@ -42,11 +42,14 @@ In this example we will configure "Alex", a member of our security team who will
 ***Step 1***. In the Azure PIM console for your subscription, add the user (Alex) to the Azure Security Reader role and configure the security settings related to activation.
 
 1. Sign into the [Azure AD Admin Center](https://aad.portal.azure.com/) and select  **Azure Active Directory** > **Roles and administrators**.
-2. Select **Security Reader** in the list of roles and then **Settings** > **Edit**
-3. Set the '**Activation maximum duration (hours)**' to a normal working day and 'On activation' to require **Azure MFA**.
-4. As this is Alex's normal privilege level for day to day operations, we will Uncheck **Require justification on activation**' > **Update**.
-5. Select **Add Assignments** > **No member selected** > select or type the name to search for the correct member.
-6. Click the **Select** button to choose the member you need to add for PIM privileges > click **Next** > make no changes on the Add Assignment page (both assignment type *Eligible* and duration *Permenantly Eligible* will be defaults ) and **Assign**.
+    1. :::image type="content" source="../../media/azure-active-directory-roles-and-administrators-panel.jpg" alt-text="The Azure Active Directory Roles and administrators pane.":::
+1. Select **Security Reader** in the list of roles and then **Settings** > **Edit**
+    1. :::image type="content" source="../../media/azure-portal-role-setting-details-security-reader.jpg" alt-text="Azure Active Directory with the role of Security Reader selected.":::
+1. Set the '**Activation maximum duration (hours)**' to a normal working day and 'On activation' to require **Azure MFA**.
+    1. :::image type="content" source="../../media/azure-active-directory-add-assignments-and-members-to-pim.jpg" alt-text="Azure Active Directory add assignments and members to PIM.":::
+1. As this is Alex's normal privilege level for day to day operations, we will Uncheck **Require justification on activation**' > **Update**.
+1. Select **Add Assignments** > **No member selected** > select or type the name to search for the correct member.
+1. Click the **Select** button to choose the member you need to add for PIM privileges > click **Next** > make no changes on the Add Assignment page (both assignment type *Eligible* and duration *Permenantly Eligible* will be defaults ) and **Assign**.
 
 The name of your user (here 'Alex') will appear under Eligible assignments on the next page, this means they are able to PIM into the role with the settings configured earlier.
 
@@ -61,7 +64,7 @@ Using [Privileged Access groups](/azure/active-directory/privileged-identity-man
 
 ### Create a role group requiring the permissions we need
 
-In the Security Portal, create a custom role group that contains the permissions that we want.
+In the Security Portal, create a custom role group that contains the permissions that we want. 
 
 1. Browse to Microsoft 365 Defender portal (https://security.microsoft.com) > **Permissions & Roles** > select **Roles** under Email and Collaboration > **Create**.
 2. Name your group to reflect its purpose such as 'Search and Purge PIM'.
@@ -98,3 +101,5 @@ Permanent assignment of the Search and Purge Role doesn't hold with the Zero Tru
 Permanent assignment of the Search and Purge Role doesn't hold with the Zero Trust security initiative, but PIM can be used to grant just-in-time access here too.
 
 *Our thanks to Customer Engineer Ben Harris for access to the blog post and resources used for this content.*
+
+<!--B-->
