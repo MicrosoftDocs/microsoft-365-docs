@@ -208,7 +208,6 @@ To specify individual OneDrive accounts to include or exclude, the URL has the f
 
 > [!NOTE]
 > All period characters in <userprincipalname> should be replaced with underscores if any. As an example, the OneDrive address for a user with the UserPrincipalName of "adam.smith@contoso.com" would be `https://contoso-my.sharepoint.com/personal/adam_smith_contoso_com`.
-> As an example, OneDrive address for a user with UserPrincipalName of "adam.smith@contoso.com" would be `https://contoso-my.sharepoint.com/personal/adam_smith_contoso_com`
 
 To verify the syntax for your tenant and identify URLs for users, see [Get a list of all user OneDrive URLs in your organization](/onedrive/list-onedrive-urls).
 
