@@ -20,7 +20,7 @@ f1.keywords: NOCSH
 > [!TIP]
 > If you have Microsoft 365 E3 but not Microsoft 365 E5, and you want to try Defender for Endpoint Plan 1, visit [https://aka.ms/mdep1trial](https://aka.ms/mdep1trial) to sign up for the preview program!
 
-The Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) enables you to view information about detected threats, manage your alerts and incidents, take any needed action on detected threats, and manage devices. The Microsoft 365 Defender portal is where you can get started interacting with the threat protection capabilities of Defender for Endpoint Plan 1 (preview). The following sections describe how to get started:
+The Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) enables you to view information about detected threats, manage your alerts and incidents, take any needed action on detected threats, and manage devices. The Microsoft 365 Defender portal is where you can get started interacting with the threat protection capabilities you get with Defender for Endpoint Plan 1 (preview). The following sections describe how to get started:
 
 - [The Microsoft 365 Defender portal](#the-microsoft-365-defender-portal)
 - [Viewing and managing incidents & alerts](#viewing-and-managing-incidents--alerts)

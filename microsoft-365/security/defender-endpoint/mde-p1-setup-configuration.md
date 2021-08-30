@@ -398,4 +398,6 @@ To help with planning your WDAC deployment, see the following resources:
 
 ## Next steps
 
-[Getting started with Defender for Endpoint Plan 1 (preview)](mde-plan1-getting-started.md)
+Now that you have gone through the setup and configuration process, your next step is to get started using Defender for Endpoint. 
+
+- [Get started with Defender for Endpoint Plan 1 (preview)](mde-plan1-getting-started.md)
