@@ -27,7 +27,7 @@ As a first step to thwart ransomware attackers, you must configure the following
 - Exchange email management
 - Additional baselines for Windows devices and client software
 
-These baselines contain configuration settings and rules that are well-known by attackers. Thier absence are quickly noticed and commonly exploited in cyberattacks.
+These baselines contain configuration settings and rules that are well-known by attackers. The low-security settings for these baselines are quickly noticed and commonly exploited in cyberattacks.
 
 ## Microsoft 365 security baseline
 
@@ -52,11 +52,11 @@ Next, use [attack surface reduction rules](/microsoft-365/security/defender-endp
 
 Help prevent initial access to your tenant from an email-based attack with these Exchange email baseline settings:
 
-- Enable Microsoft Defender Antivirus email scanning.
-- Use Microsoft Defender for Office 365 for [enhanced phishing protection](/microsoft-365/security/office-365-security/anti-phishing-protection) and coverage against new threats and polymorphic variants.
-- Check your Office 365 email filtering settings to ensure you block spoofed emails, spam, and emails with malware. Use Microsoft Defender for Office 365 for enhanced phishing protection and coverage against new threats and polymorphic variants. Configure Microsoft Defender for Office 365 to [recheck links on click](/microsoft-365/security/office-365-security/atp-safe-links) and [delete delivered mails](/microsoft-365/security/office-365-security/zero-hour-auto-purge) in response to newly acquired threat intelligence.
-- Review and update to the latest [recommended settings for EOP and Microsoft Defender for Office 365 security](/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365-atp).
-- Configure Microsoft Defender for Office 365 to [recheck links on click](/microsoft-365/security/office-365-security/set-up-safe-links-policies) and delete delivered mails in response to newly acquired threat intelligence.
+- Enable Microsoft Defender Antivirus email scanning
+- Use Microsoft Defender for Office 365 for [enhanced phishing protection](/microsoft-365/security/office-365-security/anti-phishing-protection) and coverage against new threats and polymorphic variants
+- Check your Office 365 email filtering settings to ensure you block spoofed emails, spam, and emails with malware. Use Microsoft Defender for Office 365 for enhanced phishing protection and coverage against new threats and polymorphic variants. Configure Microsoft Defender for Office 365 to [recheck links on click](/microsoft-365/security/office-365-security/atp-safe-links) and [delete delivered mails](/microsoft-365/security/office-365-security/zero-hour-auto-purge) in response to newly acquired threat intelligence
+- Review and update to the latest [recommended settings for EOP and Microsoft Defender for Office 365 security](/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365-atp)
+- Configure Microsoft Defender for Office 365 to [recheck links on click](/microsoft-365/security/office-365-security/set-up-safe-links-policies) and delete delivered mails in response to newly acquired threat intelligence
 
 ## Additional baselines
 
