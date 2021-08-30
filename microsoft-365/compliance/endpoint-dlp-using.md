@@ -80,9 +80,13 @@ You can use auto-quarantine to prevent an endless chain of DLP notifications for
 
 Prevent people from transferring files protected by your policies via specific Bluetooth apps.
 
-### Browser and domain restrictions
+### Browser and domain restrictions to sensitive data
 
 Restrict sensitive files that match your policies from being shared with unrestricted cloud service domains.
+
+#### Unallowed browsers
+
+You add browsers, identified by their executable names, that will be blocked from accessing files that match the conditions of an enforced a DLP policy where the upload to cloud services restriction is set to block or block override. When these browsers are blocked from accessing a file, the end users will see a toast notification asking them to open the file through Edge Chromium.
 
 #### Service domains
 
@@ -95,11 +99,9 @@ If the list mode is set to **Allow**, then users will be able to upload sensitiv
 > [!IMPORTANT]
 > When the service restriction mode is set to "Allow", you must have at least one service domain configured before restrictions are enforced.
 
-#### Unallowed browsers
+### Additional settings for endpoint DLP
 
-You add browsers, identified by their executable names, that will be blocked from accessing files that match the conditions of an enforced a DLP policy where the upload to cloud services restriction is set to block or block override. When these browsers are blocked from accessing a file, the end users will see a toast notification asking them to open the file through Edge Chromium.
-
-### Business justification in policy tips
+#### Business justification in policy tips
 
 You can control how users interact with the business justification option in DLP policy tip notifications. This option appears when users perform an activity that's protected by the **Block with override** setting in a DLP policy. You can choose from one the following options:
 
