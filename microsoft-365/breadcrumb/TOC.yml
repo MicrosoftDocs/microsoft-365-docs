@@ -12,9 +12,6 @@
     - name: Microsoft Viva Topics
       tocHref: /microsoft-365/knowledge/
       topicHref: /microsoft-365/knowledge/index
-    - name: Microsoft Viva Connections
-      tocHref: /sharepoint/sharepoint-online/viva-connections
-      topicHref: /sharepoint/sharepoint-online/viva-connections
     - name: Microsoft Viva Learning
       tocHref: /microsoft-365/learning/
       topicHref: /microsoft-365/learning/index

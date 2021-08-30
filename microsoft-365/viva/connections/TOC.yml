@@ -1,0 +1,4 @@
+- name: Microsoft Viva Connections
+  items: 
+    - name: Add Viva Connections for Microsoft Teams desktop
+      href: /sharepoint/sharepoint-online/viva-connections.md?bc=/microsoft-365/viva/breadcrumb/toc.json&toc/microsoft-365/viva/connections/toc.json
