@@ -140,7 +140,7 @@ If you still suspect that an app is suspicious, you can research the app display
 
 This section describes alerts indicating that a malicious actor may be attempting to maintain their foothold in your organization.
 
-### App with Suspicious OAuth scope creates Inbox Rule  
+### App with Suspicious OAuth scope made graph calls to read email and created Inbox Rule  
 
 **Severity**: Medium
 
