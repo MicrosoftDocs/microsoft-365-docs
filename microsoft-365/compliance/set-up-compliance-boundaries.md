@@ -107,7 +107,7 @@ To meet the requirements of the Contoso compliance boundaries scenario, you woul
 
 After you've created role groups for each agency, the next step is to create the search permissions filters that associate each role group to its specific agency and defines the compliance boundary itself. You need to create one search permissions filter for each agency. For more information about creating security permissions filters, see [Configure permissions filtering for Content Search](permissions-filtering-for-content-search.md).
   
-Here's the syntax that's used to create a search permissions filter used for compliance boundaries.
+Here's the syntax that's used to create a search permissions filter used for compliance boundaries for the scenario in this article.
 
 ```powershell
 New-ComplianceSecurityFilter -FilterName <name of filter> -Users <role groups> -Filters "Mailbox_<MailboxPropertyName>  -eq '<Value> '", "Site_Path -like '<SharePointURL>' -or Site_Path -like '<OneDriveURL>'"
@@ -126,7 +126,7 @@ Here's a description of each parameter in the command:
   - `Site_Path`: This filter includes two separate filters. The first one specifies the SharePoint sites in the agency that the role groups defined in the  `Users` parameter can search. For example, `Site_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee'`. The second `Site_Path` filter (connected to the first `Site_Path` filter by the `or` operator) specifies the agency's OneDrive domain (also called the *MySite* domain). For example, `Site_Path -like 'https://contoso-my.sharepoint.com/personal'`.
 
     > [!IMPORTANT]
-    > Why is the `Site_Path` filter for OneDrive included in the previous search permissions filter? Although the `Mailbox` filter specifies *both* mailboxes and OneDrive accounts, the inclusion of the SharePoint filter would exclude OneDrive accounts if you didn't also include the OneDrive filter. If the search permissions filter didn't include a SharePoint filter, then you wouldn't have to include a separate OneDrive filter because the Mailbox filter would include OneDrive accounts in the scope of the compliance boundary. In other words, a search permissions filter with only the `Mailbox_` filter would include both mailboxes and OneDrive accounts.
+    > Why is the `Site_Path` filter for OneDrive included in the previous search permissions filter? Although the `Mailbox` filter applies to *both* mailboxes and OneDrive accounts, the inclusion of the SharePoint filter would exclude OneDrive accounts if you didn't also include the OneDrive `Site_Path` filter. If the search permissions filter didn't include a SharePoint filter, then you wouldn't have to include a separate OneDrive filter because the Mailbox filter would include OneDrive accounts in the scope of the compliance boundary. In other words, a search permissions filter with only the `Mailbox_` filter would include both mailboxes and OneDrive accounts.
 
 Here are examples of the two search permissions filters that would be created to support the Contoso compliance boundaries scenario. Both of these examples include a comma-separated filters list, in which the mailbox and site filters are included in the same search permissions filter and are separated by a comma.
   
@@ -144,6 +144,19 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "C
 
 > [!NOTE]
 > The syntax for the `Filters` parameters in the previous examples includes a *filters list*. A filters list is a filter that includes a mailbox filter and a site path filter separated by a comma. In the previous example, notice that a comma separates `Mailbox_` and `Site_Path` filters: `-Filters "Mailbox_<MailboxPropertyName>  -eq '<Value> '", "Site_Path -like '<SharePointURL>' -or Site_Path -like '<OneDriveURL>'"`. When this filter is processed during the running of an eDiscovery search, two search permissions filters are created from the filters list: one mailbox filter and one SharePoint/OneDrive filter. An alternative to using a filters list would be to create two separate search permissions filters for each agency: one search permissions filter for the mailbox attribute and one filter for the SharePoint and OneDrive site attributes. In either case, the results will be the same. Using a filters list or creating separate search permissions filters is a matter of preference.
+
+### How do the search permissions filters work in this scenario?
+
+Here's how the search permission filters are applied for each agency in this scenario.
+
+1. The `Mailbox` filter is first applied to define the content locations that eDiscovery managers can search. In this case, Coho Winery eDiscovery managers can only search the mailboxes and OneDrive accounts of users whose *Department* mailbox property has a value of **FourthCoffee**; Coho Winery eDiscovery managers can only search the mailboxes and OneDrive accounts of users  whose *Department* mailbox property has a value of **CohoWinery**. The `Mailbox` filter is a *content location filter*, because it specifies the content locations that eDiscovery managers can search. In both filters, eDiscovery managers can only search content locations with a specific mailbox property value.
+
+2. After the content locations that can be searched are defined, the next part of the filter defines the content that eDiscovery managers can search. The first `Site_Path` filter lets Fourth Coffee eDiscovery managers only search for documents that have a site path property that contains (or starts with) `https://contoso.sharepoint.com/sites/FourthCoffee`; Coho Winery eDiscovery managers can only search documents that have a site path property that contains (or starts with) `https://contoso.sharepoint.com/sites/CohoWinery`. Therefore, the two `Site_Path` filters are *content filters* because they define the content that can be searched for. In both filters, eDiscovery managers can only search for documents with a specific document property value. All SharePoint-related filters are content filters because searchable site properties are stamped on all documents.
+
+   > [!NOTE]
+   > Although the scenario in this article doesn't use them, you can also use mailbox content filters to specify the content that eDiscovery managers can search for. The syntax for mailbox content filters is `MailboxContent_<Property:value>`. For example, you can create content filters based on date ranges, recipients, or domains. For more information about mailbox content filters, see [Configure search permissions filtering](permissions-filtering-for-content-search.md#new-compliancesecurityfilter).
+
+3. The search permissions filter is joined to the search query by the **AND** Boolean operator. That means when an eDiscovery manager in one of the agencies runs an eDiscovery search, the items returned by the search must match the search query and the conditions defined in the search permissions filter.
 
 ## Step 4: Create an eDiscovery case for intra-agency investigations
 
