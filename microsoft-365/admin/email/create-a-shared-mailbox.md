@@ -68,11 +68,11 @@ Before creating a shared mailbox, be sure to read [About shared mailboxes](about
 
 5. Under **Next steps**, select **Add members to this mailbox**. Members are the people who will be able to view the incoming mail to this shared mailbox, and the outgoing replies.
 
-   ![Select Add Members](../../media/a2a72e3d-6170-40fe-a94f-0af8fbef8ab2.png)
+   ![Select Add Members.](../../media/a2a72e3d-6170-40fe-a94f-0af8fbef8ab2.png)
 
 6. Select the **+Add members** button. Put a check mark next to the people who you want to use this shared mailbox, and select **Save**.
 
-   ![Assign members to the shared mailbox](../../media/e6c58953-f6d7-4f0b-97ba-308516bf2a94.png)
+   ![Assign members to the shared mailbox.](../../media/e6c58953-f6d7-4f0b-97ba-308516bf2a94.png)
 
 7. Select **Close**.
 
@@ -90,11 +90,11 @@ You can use the following permissions with a shared mailbox:
 
 ### Use the EAC to edit shared mailbox delegation
 
-1. In the EAC, go to **Recipients** \> **Shared**. Select the shared mailbox, and then select **Edit** ![Edit icon](../../media/ITPro-EAC-EditIcon.png).
+1. In the EAC, go to **Recipients** \> **Shared**. Select the shared mailbox, and then select **Edit** ![Edit icon.](../../media/ITPro-EAC-EditIcon.png).
 
 2. Select **Mailbox delegation**.
 
-3. To grant or remove Full Access and Send As permissions, select **Add** ![Add Icon](../../media/ITPro-EAC-AddIcon.png) or **Remove** ![Remove icon](../../media/ITPro-EAC-RemoveIcon.gif) and then select the users you want to grant permissions to.
+3. To grant or remove Full Access and Send As permissions, select **Add** ![Add Icon.](../../media/ITPro-EAC-AddIcon.png) or **Remove** ![Remove icon](../../media/ITPro-EAC-RemoveIcon.gif) and then select the users you want to grant permissions to.
 
    > [!NOTE]
    > The Full Access permission allows a user to open the mailbox as well as create and modify items in it. The Send As permission allows anyone other than the mailbox owner to send email from this shared mailbox. Both permissions are required for successful shared mailbox operation.
@@ -127,7 +127,7 @@ But what if an admin simply resets the password of the shared mailbox user accou
 
 1. In the list of user accounts, find the account for the shared mailbox (for example, change the filter to **Unlicensed users**).
 
-1. Select the user to open their properties pane, and then select the **Block this user** icon ![Screen shot of the Block this user icon](../../media/block-user-icon.png).
+1. Select the user to open their properties pane, and then select the **Block this user** icon ![Screen shot of the Block this user icon.](../../media/block-user-icon.png).
 
    **Note**: If the account is already blocked, **Sign in blocked** will appear at the top and the icon will read **Unblock this user**.
 
