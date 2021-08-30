@@ -91,6 +91,7 @@ Your organization’s attack surfaces are all the places where you’re vulnerab
 - [Web protection](#web-protection)
 - [Network protection](#web-protection)
 - [Network firewall](#network-firewall)
+- [Application control](#application-control)
 
 To learn more about attack surface reduction capabilities in Defender for Endpoint, see [Overview of attack surface reduction](overview-attack-surface-reduction.md).
 
@@ -142,6 +143,10 @@ With network firewall protection, you can set rules that determine which network
 - Extend your security investment
 
 To learn more, see [Windows Defender Firewall with advanced security](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security).
+
+### Application control
+
+
 
 ## Centralized management
 
