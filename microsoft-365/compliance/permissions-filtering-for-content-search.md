@@ -138,7 +138,9 @@ Keep the following considerations in mind when configuring the *Filters* paramet
 
 ### *Users*
 
-The  _Users_ parameter specifies the users who get this filter applied to their searches. Identify users by their alias or primary SMTP address. You can specify multiple values separated by commas, or you can assign the filter to all users by using the value **All**.  <br/> You can also use the  _Users_ parameter to specify a Microsoft 365 compliance center role group. This lets you create a custom role group and then assign that role group a search permissions filter. For example, let's say you have a custom role group for eDiscovery managers for the U.S. subsidiary of a multi-national corporation. You can use the  _Users_ parameter to specify this role group (by using the Name property of the role group) and then use the  _Filter_ parameter to allow only mailboxes in the U.S. to be searched.  <br/> You can't specify distribution groups with this parameter.  <br/> |
+The  _Users_ parameter specifies the users who get this filter applied to their searches. Identify users by their alias or primary SMTP address. You can specify multiple values separated by commas, or you can assign the filter to all users by using the value **All**.
+
+You can also use the  _Users_ parameter to specify a Microsoft 365 compliance center role group. This lets you create a custom role group and then assign that role group a search permissions filter. For example, let's say you have a custom role group for eDiscovery managers for the U.S. subsidiary of a multi-national corporation. You can use the  _Users_ parameter to specify this role group (by using the Name property of the role group) and then use the  _Filter_ parameter to allow only mailboxes in the U.S. to be searched. You can't specify distribution groups with this parameter.|
 
 ### Using a filters list to combine filter types
 
@@ -259,7 +261,13 @@ The **Set-ComplianceSecurityFilter** is used to modify an existing search permis
   
 ### *FilterName*
 
-The  _FilterName_ parameter specifies the name of the permissions filter. |
+The  _FilterName_ parameter specifies the name of the permissions filter.
+
+### *Users*
+
+The  _Users_ parameter specifies the users who get this filter applied to their searches. Because this is a multi-value property, specifying a user or group of users with this parameter overwrite the existing list of users. See the following examples for the syntax to add and remove selected users.
+
+You can also use the  _Users_ parameter to specify a Microsoft 365 compliance center role group. This lets you create a custom role group and then assign that role group a search permissions filter. For example, let's say you have a custom role group for eDiscovery managers for the U.S. subsidiary of a multi-national corporation. You can use the  _Users_ parameter to specify this role group (by using the Name property of the role group) and then use the  _Filter_ parameter to allow only mailboxes in the U.S. to be searched. You can't specify distribution groups with this parameter.
 
 ### *Filters*
 
@@ -275,12 +283,6 @@ The  _Filters_ parameter specifies the search criteria for the compliance securi
   - **SiteContent**_*SearchableSiteProperty*
   
   These two filters are interchangeable. For example,  `"Site_Path -like 'https://contoso.spoppe.com/sites/doctors*'"` and  `"SiteContent_Path -like 'https://contoso.spoppe.com/sites/doctors*'"` returns the same results. But to help you identify what a filter does, you can use  `Site_` to specify site-related properties (such as a site URL) and  `SiteContent_` to specify content-related properties (such as document types. For example, the filter  `"Site_Path -like 'https://contoso.spoppe.com/sites/doctors*'"` would allow the user assigned this filter to only search for content in the https://contoso.spoppe.com/sites/doctors site collection. The filter  `"SiteContent_FileExtension -eq 'docx'"` would allow the user assigned this filter to only search for Word documents (Word 2007 and later).  <br/><br/>For a list of searchable site properties, see [Overview of crawled and managed properties in SharePoint](/SharePoint/technical-reference/crawled-and-managed-properties-overview). Properties marked with a **Yes** in the **Queryable** column can be used to create a site or site content filter. <br/><br/>   
-
-### *Users*
-
-The  _Users_ parameter specifies the users who get this filter applied to their searches. Because this is a multi-value property, specifying a user or group of users with this parameter overwrite the existing list of users. See the following examples for the syntax to add and remove selected users. 
-
-You can also use the  _Users_ parameter to specify a Microsoft 365 compliance center role group. This lets you create a custom role group and then assign that role group a search permissions filter. For example, let's say you have a custom role group for eDiscovery managers for the U.S. subsidiary of a multi-national corporation. You can use the  _Users_ parameter to specify this role group (by using the Name property of the role group) and then use the  _Filter_ parameter to allow only mailboxes in the U.S. to be searched. <br/><br/>You can't specify distribution groups with this parameter.
 
 ### Examples of changing search permissions filters
 
