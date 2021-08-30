@@ -55,9 +55,13 @@ The name of your user (here 'Alex') will appear under Eligible assignments on th
 
 :::image type="content" source="../../media/pim-mdo-role-setting-details-for-security-reader-show-8-hr-duration.png" alt-text="Be sure you scan the settings for the Security Reader role in Privileged Access Management. Here you'll see the PIM activation's max duration is 8 hours.":::
 
+![pim test](../../media/pim-mdo-role-setting-details-for-security-reader-show-8-hr-duration.png)
+
+![newpictest](../../azure-active-directory-add-assignments-and-members-to-pim.jpg)
+
 ***Step 2***. Create the required second (elevated) permission group for additional tasks and assign eligibility.
 
-Using [Privileged Access groups](/azure/active-directory/privileged-identity-management/groups-features) we can now create our own custom groups and combine permissions or increase granularity where required to meet your organisational practices and needs.
+Using [Privileged Access groups](/azure/active-directory/privileged-identity-management/groups-features) we can now create our own custom groups and combine permissions or increase granularity where required to meet your organizational practices and needs.
 
 ### Create a role group requiring the permissions we need
 
