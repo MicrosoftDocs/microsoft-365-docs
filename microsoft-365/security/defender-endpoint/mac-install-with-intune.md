@@ -133,15 +133,10 @@ This profile is needed for macOS 10.15 (Catalina) or newer. It will be ignored o
 1. In the **Basics** tab, give a name to this new profile.
 1. In the **Configuration settings** tab, expand **System Extensions** add the following entries in the **Allowed system extensions** section:
 
-   <br>
-
-   ****
-
-   |Bundle identifier|Team identifier|
-   |---|:---:|
-   |com.microsoft.wdav.epsext|UBF8T346G9|
-   |com.microsoft.wdav.netext|UBF8T346G9|
-   |
+    |Bundle identifier|Team identifier|
+    |---|---|
+    |com.microsoft.wdav.epsext|UBF8T346G9|
+    |com.microsoft.wdav.netext|UBF8T346G9|
 
     > [!div class="mx-imgBorder"]
     > ![System extension settings.](images/mac-system-extension-intune2.png)
