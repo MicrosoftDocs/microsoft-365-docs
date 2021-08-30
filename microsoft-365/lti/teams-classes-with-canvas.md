@@ -28,7 +28,7 @@ Microsoft Teams classes is a Learning Tools Interoperability (LTI) app that help
 > - Only a single Microsoft tenant can be used for mapping users between Canvas and Microsoft.
 > - You will have to turn off School Data Sync (SDS) before using the Class Teams LTI in order to avoid duplication of groups.
 
-## Grant Admin Consent
+## Grant admin consent
 
 Prior to managing the Microsoft Teams integration within Instructure Canvas, it is important to have Canvas’s **Microsoft-Teams-Sync-for-Canvas** Azure app approved by your institution’s Microsoft Office 365 admin in your Microsoft Azure tenant before completing the Canvas admin setup. You need to be a Global Administrator to perform these steps.
 
