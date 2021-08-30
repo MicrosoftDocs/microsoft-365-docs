@@ -13,7 +13,7 @@ author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
   - m365-security-compliance
   - m365initiative-defender-endpoint
 ms.topic: conceptual
@@ -34,8 +34,8 @@ Event timeline is a risk news feed that helps you interpret how risk is introduc
 
 Event timeline also tells the story of your [exposure score](tvm-exposure-score.md) and [Microsoft Secure Score for Devices](tvm-microsoft-secure-score-devices.md) so you can determine the cause of large changes. Events can impact your devices or your score for devices. Reduce you exposure by addressing what needs to be remediated based on the prioritized [security recommendations](tvm-security-recommendation.md).
 
->[!TIP]
->To get emails about new vulnerability events, see [Configure vulnerability email notifications in Microsoft Defender for Endpoint](configure-vulnerability-email-notifications.md)
+> [!TIP]
+> To get emails about new vulnerability events, see [Configure vulnerability email notifications in Microsoft Defender for Endpoint](configure-vulnerability-email-notifications.md)
 
 ## Navigate to the Event timeline page
 
@@ -66,7 +66,7 @@ Select **Custom range** to change the date range to another custom one, or a pre
 
 ## Event timeline overview
 
-On the Event timeline page, you can view the all the necessary info related to an event. 
+On the Event timeline page, you can view the all the necessary info related to an event.
 
 Features:
 
@@ -86,11 +86,11 @@ The two large numbers at the top of the page show the number of new vulnerabilit
 - **Originally impacted devices**: the number, and percentage, of impacted devices when this event originally occurred. You can also filter by the percent of originally impacted devices, out of your total number of devices.
 - **Currently impacted devices**: the current number, and percentage, of devices that this event currently impacts. You can find this field by selecting **Customize columns**.
 - **Types**: reflect time-stamped events that impact the score. They can be filtered.
-    - Exploit added to an exploit kit
-    - Exploit was verified
-    - New public exploit
-    - New vulnerability
-    - New configuration assessment
+  - Exploit added to an exploit kit
+  - Exploit was verified
+  - New public exploit
+  - New vulnerability
+  - New configuration assessment
 - **Score trend**: exposure score trend
 
 ### Icons
@@ -110,7 +110,7 @@ The arrow below "score trend" helps you determine whether this event potentially
 
 ![Event timeline flyout.](images/tvm-event-timeline-flyout500.png)
 
-From there, select **Go to related security recommendation** view the recommendation that addresses the new software vulnerability in the [security recommendations page](tvm-security-recommendation.md). After reading the description and vulnerability details in the security recommendation, you can submit a remediation request, and track the request in the [remediation page](tvm-remediation.md).  
+From there, select **Go to related security recommendation** view the recommendation that addresses the new software vulnerability in the [security recommendations page](tvm-security-recommendation.md). After reading the description and vulnerability details in the security recommendation, you can submit a remediation request, and track the request in the [remediation page](tvm-remediation.md).
 
 ## View Event timelines in software pages
 
@@ -132,4 +132,3 @@ Navigate to the event timeline tab to view all the events related to that softwa
 - [Security recommendations](tvm-security-recommendation.md)
 - [Remediate vulnerabilities](tvm-remediation.md)
 - [Software inventory](tvm-software-inventory.md)
-

@@ -26,17 +26,11 @@ description: Learn how to add a policy tip to a data loss prevention (DLP) polic
 
 You can use a data loss prevention (DLP) policy to identify, monitor, and protect sensitive information across Office 365. You want people in your organization who work with this sensitive information to stay compliant with your DLP policies, but you don't want to block them unnecessarily from getting their work done. This is where email notifications and policy tips can help.
 
-![Message bar shows policy tip in Excel 2016.](../media/7002ff54-1656-4a6c-993f-37427d6508c8.png)
-
-A policy tip is a notification or warning that appears when someone is working with content that conflicts with a DLP policy—for example, content like an Excel workbook on a OneDrive for Business site that contains personally identifiable information (PII) and is shared with an external user.
-
-You can use email notifications and policy tips to increase awareness and help educate people about your organization's policies. You can also give people the option to override the policy, so that they're not blocked if they have a valid business need or if the policy is detecting a false positive.
+![Message bar shows policy tip in Excel 2016](../media/7002ff54-1656-4a6c-993f-37427d6508c8.png)
 
 In the Compliance Center, when you create a DLP policy, you can configure the user notifications to:
 
 - Send an email notification to the people you choose that describes the issue.
-> [!NOTE]
-> Notification emails are sent unprotected.
 
 - Display a policy tip for content that conflicts with the DLP policy:
 
@@ -83,7 +77,7 @@ When you create a DLP policy, you can enable **User notifications**. When user n
     ![User notifications section of rule editor.](../media/47705927-c60b-4054-a072-ab914f33d15d.png)
 
 > [!NOTE]
-> DLP policies apply to all documents that match the policy, whether those documents are new or existing. However, an email notification is only generated when new content matches an existing DLP policy. Existing content is protected, but will not generate a user notification via email.
+> Notification emails are sent unprotected.
 
 ## Options for configuring email notifications
 
@@ -155,6 +149,7 @@ Here are some fine points to understand about using a policy tip to override a r
 - It's possible for content to match several rules in a DLP policy, but only the policy tip from the most restrictive, highest-priority rule will be shown. For example, a policy tip from a rule that blocks access to content will be shown over a policy tip from a rule that simply sends a notification. This prevents people from seeing a cascade of policy tips.
 
 - If the policy tips in the most restrictive rule allow people to override the rule, then overriding this rule also overrides any other rules that the content matched.
+
 
 ## Policy tips on OneDrive for Business sites and SharePoint Online sites
 

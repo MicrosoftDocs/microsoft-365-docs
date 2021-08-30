@@ -33,16 +33,16 @@ The dashboard contains a summary of the components of the Microsoft 365 app ecos
 - **Tenant summary**: The count of key app and alert categories.
 - **Top alerts**: The 10 most recent active alerts in the tenant
 - **Data and resources access**: Mouse over each month column in the graph to see the corresponding value.
-    - **Data access over the last four months**: Tracks total data accessed by all apps in the tenant through Graph API over the last four calendar months. Currently only includes Mail and File upload/download usage.
-    - **Top resources data access over the last four months**: Data usage over the last four calendar months, broken down by resource type. Currently only includes Mail and File upload/download usage
+  - **Data access over the last four months**: Tracks total data accessed by all apps in the tenant through Graph API over the last four calendar months. Currently only includes Mail and File upload/download usage.
+  - **Top resources data access over the last four months**: Data usage over the last four calendar months, broken down by resource type. Currently only includes Mail and File upload/download usage
 - **Improve your app protection and governance**: Recommended actions such as creating an app usage or permissions policy.
 - **Top apps by categories**: The top apps sorted by these categories:
   
   - **All categories**: Sorts across all available categories.
   - **High privilege**: High privilege is an internally determined category based on platform machine learning and signals.
   - **Overprivileged**: When app governance receives telemetry that indicates that a permission granted to an application has not been used in the last 90 days, that application is overprivileged. App governance must be operating for at least 90 days to determine if any app is overprivileged.  
-  - **Unverified**: Applications that have not received [publisher certification](https://docs.microsoft.com/azure/active-directory/develop/publisher-verification-overview) are considered unverified.
-  - **App only**: [Application permissions](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#permission-types) are used by apps that can run without a signed-in user present. Apps with permissions to access data across the tenant are potentially a higher risk.
+  - **Unverified**: Applications that have not received [publisher certification](/azure/active-directory/develop/publisher-verification-overview) are considered unverified.
+  - **App only**: [Application permissions](/azure/active-directory/develop/v2-permissions-and-consent#permission-types) are used by apps that can run without a signed-in user present. Apps with permissions to access data across the tenant are potentially a higher risk.
   - **New apps**: New Microsoft 365 apps that have been registered in the last seven days.  
 
 ## Next step
