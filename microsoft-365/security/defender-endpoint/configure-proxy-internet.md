@@ -39,7 +39,9 @@ The embedded Defender for Endpoint sensor runs in system context using the Local
 The WinHTTP configuration setting is independent of the Windows Internet (WinINet) Internet browsing proxy settings and can only discover a proxy server by using the following discovery methods:
 
 - Auto-discovery methods:
+
   - Transparent proxy
+  
   - Web Proxy Auto-discovery Protocol (WPAD)
 
     > [!NOTE]
@@ -48,6 +50,7 @@ The WinHTTP configuration setting is independent of the Windows Internet (WinINe
 - Manual static proxy configuration:
 
   - Registry based configuration
+  
   - WinHTTP configured using netsh command: Suitable only for desktops in a stable topology (for example: a desktop in a corporate network behind the same proxy)
 
 ## Configure the proxy server manually using a registry-based static proxy
@@ -86,7 +89,7 @@ The static proxy is configurable through Group Policy (GP). The group policy can
   <server name or ip>:<port>
   ```
 
-  For example: 10.0.0.6:8080
+  For example: http://10.0.0.6:8080
 
   The registry value `DisableEnterpriseAuthProxy` should be set to 1.
 
@@ -272,6 +275,6 @@ However, if the connectivity check results indicate a failure, an HTTP error is 
 ## Related topics
 
 - [Configure and validate Microsoft Defender Antivirus network connections](configure-network-connections-microsoft-defender-antivirus.md)
-- [Use Group Policy settings](use-group-policy-microsoft-defender-antivirus.md)
+- [Use Group Policy settings to configure and manage Microsoft Defender Antivirus](use-group-policy-microsoft-defender-antivirus.md)
 - [Onboard Windows 10 devices](configure-endpoints.md)
 - [Troubleshoot Microsoft Defender for Endpoint onboarding issues](troubleshoot-onboarding.md)
