@@ -152,7 +152,7 @@ Your user list will look like this:
   
 ![Reports - anonymized user list.](../../media/2ed99bce-4978-4ee3-9ea2-4a8db26eef02.png)
   
-Global administrators can revert this change for their tenant and show identifiable user information if their organizations privacy practices allow. This can be achieved in the admin center with simple steps. 
+Global administrators can revert this change for their tenant and show identifiable user information if their organization's privacy practices allow it. It can be achieved in the Microsoft 365 admin center by following these steps:
   
 1. In the admin center, go to the **Settings** \> **Org Settings** \> **Services** page.
 
