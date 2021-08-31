@@ -13,7 +13,7 @@ author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
   - m365-security-compliance
   - m365initiative-defender-endpoint
 ms.topic: conceptual
@@ -86,37 +86,37 @@ There are several ways to uninstall Microsoft Defender for Endpoint on macOS. No
 
 ### From the command line
 
-- ```sudo '/Library/Application Support/Microsoft/Defender/uninstall/uninstall'```
+- `sudo '/Library/Application Support/Microsoft/Defender/uninstall/uninstall'`
 
 ## Configuring from the command line
 
 Important tasks, such as controlling product settings and triggering on-demand scans, can be done from the command line:
 
-|Group        |Scenario                                   |Command                                                                           |
-|-------------|-------------------------------------------|----------------------------------------------------------------------------------|
-|Configuration|Turn on/off real-time protection           |`mdatp config real-time-protection --value [enabled/disabled]`                    |
-|Configuration|Turn on/off cloud protection               |`mdatp config cloud --value [enabled/disabled]`                                   |
-|Configuration|Turn on/off product diagnostics            |`mdatp config cloud-diagnostic --value [enabled/disabled]`                        |
-|Configuration|Turn on/off automatic sample submission    |`mdatp config cloud-automatic-sample-submission --value [enabled/disabled]`       |
-|Configuration|Add a threat name to the allowed list      |`mdatp threat allowed add --name [threat-name]`                                   |
-|Configuration|Remove a threat name from the allowed list |`mdatp threat allowed remove --name [threat-name]`                                |
-|Configuration|List all allowed threat names              |`mdatp threat allowed list`                                                       |
-|Configuration|Turn on PUA protection                     |`mdatp threat policy set --type potentially_unwanted_application -- action block` |
-|Configuration|Turn off PUA protection                    |`mdatp threat policy set --type potentially_unwanted_application -- action off`   |
-|Configuration|Turn on audit mode for PUA protection      |`mdatp threat policy set --type potentially_unwanted_application -- action audit` |
-|Configuration|Turn on/off passiveMode                    |`mdatp config passive-mode --value enabled [enabled/disabled]`                    |
-|Diagnostics  |Change the log level                       |`mdatp log level set --level [error/warning/info/verbose]`                        |
-|Diagnostics  |Generate diagnostic logs                   |`mdatp diagnostic create --path [directory]`                                      |
-|Health       |Check the product's health                 |`mdatp health`                                                                    |
-|Health       |Check for a spefic product attribute       |`mdatp health --field [attribute: healthy/licensed/engine_version...]`            |
-|Protection   |Scan a path                                |`mdatp scan custom --path [path] [--ignore-exclusions]`                           |
-|Protection   |Do a quick scan                            |`mdatp scan quick`                                                                |
-|Protection   |Do a full scan                             |`mdatp scan full`                                                                 |
-|Protection   |Cancel an ongoing on-demand scan           |`mdatp scan cancel`                                                               |
-|Protection   |Request a security intelligence update     |`mdatp definitions update`                                                        |
-|EDR          |Add group tag to device. EDR tags are used for managing device groups. For more information, please visit /microsoft-365/security/defender-endpoint/machine-groups |`mdatp edr tag set --name GROUP --value [name]` |
-|EDR          |Remove group tag from device               |`mdatp edr tag remove --tag-name [name]`                                          |
-|EDR          |Add Group ID                               |`mdatp edr group-ids --group-id [group]`                                          |
+|Group|Scenario|Command|
+|---|---|---|
+|Configuration|Turn on/off real-time protection|`mdatp config real-time-protection --value [enabled/disabled]`|
+|Configuration|Turn on/off cloud protection|`mdatp config cloud --value [enabled/disabled]`|
+|Configuration|Turn on/off product diagnostics|`mdatp config cloud-diagnostic --value [enabled/disabled]`|
+|Configuration|Turn on/off automatic sample submission|`mdatp config cloud-automatic-sample-submission --value [enabled/disabled]`|
+|Configuration|Add a threat name to the allowed list|`mdatp threat allowed add --name [threat-name]`|
+|Configuration|Remove a threat name from the allowed list|`mdatp threat allowed remove --name [threat-name]`|
+|Configuration|List all allowed threat names|`mdatp threat allowed list`|
+|Configuration|Turn on PUA protection|`mdatp threat policy set --type potentially_unwanted_application -- action block`|
+|Configuration|Turn off PUA protection|`mdatp threat policy set --type potentially_unwanted_application -- action off`|
+|Configuration|Turn on audit mode for PUA protection|`mdatp threat policy set --type potentially_unwanted_application -- action audit`|
+|Configuration|Turn on/off passiveMode|`mdatp config passive-mode --value enabled [enabled/disabled]`|
+|Diagnostics|Change the log level|`mdatp log level set --level [error/warning/info/verbose]`|
+|Diagnostics|Generate diagnostic logs|`mdatp diagnostic create --path [directory]`|
+|Health|Check the product's health|`mdatp health`|
+|Health|Check for a spefic product attribute|`mdatp health --field [attribute: healthy/licensed/engine_version...]`|
+|Protection|Scan a path|`mdatp scan custom --path [path] [--ignore-exclusions]`|
+|Protection|Do a quick scan|`mdatp scan quick`|
+|Protection|Do a full scan|`mdatp scan full`|
+|Protection|Cancel an ongoing on-demand scan|`mdatp scan cancel`|
+|Protection|Request a security intelligence update|`mdatp definitions update`|
+|EDR|Add group tag to device. EDR tags are used for managing device groups. For more information, please visit /microsoft-365/security/defender-endpoint/machine-groups|`mdatp edr tag set --name GROUP --value [name]`|
+|EDR|Remove group tag from device|`mdatp edr tag remove --tag-name [name]`|
+|EDR|Add Group ID|`mdatp edr group-ids --group-id [group]`|
 
 ### How to enable autocompletion
 
@@ -144,8 +144,7 @@ To enable autocompletion in zsh:
 
    ```zsh
    sudo mkdir -p /usr/local/share/zsh/site-functions
-   ```
-   ```zsh
+
    sudo ln -svf "/Applications/Microsoft Defender ATP.app/Contents/Resources/Tools/mdatp_completion.zsh" /usr/local/share/zsh/site-functions/_mdatp
    ```
 
