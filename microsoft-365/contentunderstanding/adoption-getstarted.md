@@ -106,7 +106,7 @@ Identify the stakeholders for your project.
 | Tenant administrator | Configure tenant-level settings | IT department|
 | Power Platform administrator| Configure Dataverse environment | IT department|
 
-> [!Note]
+> [!NOTE]
 > Though we recommend having each of these roles fulfilled throughout your rollout, you may find that you don't require them all to get started with your identified solution.
 
 ## Readiness checklist
