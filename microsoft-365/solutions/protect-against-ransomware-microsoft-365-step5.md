@@ -26,7 +26,7 @@ Because ransomware attackers will also look at your on-premises data on file, da
 Providing additional protection your ransomable information in your Microsoft 365 tenant consists of:
 
 - Locating the ransomable information.
-- Implementing tight permissions and eliminating broad access (for example, too many users having write, edit, and delete abilities).
+- Implementing strict permissions and eliminating broad access (for example, too many users having write, edit, and delete abilities).
 - Protecting your ransomable information.
 
 ## Locate your ransomable information
@@ -35,7 +35,7 @@ The first task is to identify the types and locations of ransomable information 
 
 - Sensitive
 - Proprietary or intellectual property
-- Regulated, such 
+- Regulated, such regional regulations that specify protection of personally identifiable information (PII)
 - IT recovery plans
 
 For each type of ransomable information, determine the following:
@@ -49,9 +49,9 @@ For each type of ransomable information, determine the following:
 
    - The actions that are allowed to each account that has access to it
 
-## Implement tight permissions for locations with ransomable information
+## Implement strict permissions for locations with ransomable information
 
-Using tight permissions within your Microsoft 365 tenant is the "only those that need to know" principle for locations and communications venues, which in Microsoft 365 are typically OneDrive folders, SharePoint sites and folders, and teams. 
+Using strict permissions within your Microsoft 365 tenant is the "only those that need to know" principle for locations and communications venues, which in Microsoft 365 are typically OneDrive folders, SharePoint sites and folders, and teams. 
 
 While it is easier to create file storage locations or Teams with broad permissions (such as the default of everyone in your organization), for ransomable information, the user accounts that are permitted and the actions that are allowed must be confined to the minimum set required to meet collaboration and business requirements.
 
@@ -60,11 +60,11 @@ Once a ransomware attacker has infiltrated your tenant, they try to escalate the
 Based on this typical attacker behavior, there are two levels of difficulty for the attacker:
 
 - **Low:** An attacker can use a low-permission account and discover your ransomable information because of broad access throughout your tenant.
-- **Higher:** An attacker can't use a low-permission account and discover your ransomable information because of tight permissions. They must escalate their permissions by determining and then compromising the credentials of an account that has access to a location with ransomable information, but then may only be able to do a limited set of actions.
+- **Higher:** An attacker can't use a low-permission account and discover your ransomable information because of strict permissions. They must escalate their permissions by determining and then compromising the credentials of an account that has access to a location with ransomable information, but then may only be able to do a limited set of actions.
 
 For ransomable information, you must make the level of difficulty as high as you can.
 
-You can ensure tight permissions in your tenant with these steps:
+You can ensure strict permissions in your tenant with these steps:
 
 1. From the effort to locate your ransomable information, review the permissions for the locations of ransomable information. 
 2. Implement the minimum permissions for the ransomable information while meeting collaboration and business requirements and inform the users that are affected.
@@ -77,7 +77,7 @@ An example of a communication and collaboration venue with minimal permissions f
 
 To protect your ransomable information in case a ransomware attacker has access to it:
 
-- Use [controlled folder access](/windows/security/threat-protection/microsoft-defender-atp/controlled-folders) to make it more difficult for unauthorized applications to modify the data in these folders.
+- Use [controlled folder access](/windows/security/threat-protection/microsoft-defender-atp/controlled-folders) to make it more difficult for unauthorized applications to modify the data in controlled folders.
 
 - Use [Microsoft Information Protection](/microsoft-365/compliance/information-protection) and sensitivity labels and apply them to ransomable information. Sensitivity labels can be configured for additional encryption and permissions with defined user accounts and allowed actions. A file labeled with this type of sensitivity label that is exfiltrated from your tenant will only be useable to a user account defined in the permissions.
 
@@ -124,7 +124,7 @@ Microsoft 365 Defender:
 
 Microsoft Azure:
 
-- [Help protect from ransomware with Microsoft Azure Backup](https://www.youtube.com/watch?v=VhLOr2_1MCg) (26 minute video)
+- [Help protect from ransomware with Microsoft Azure Backup](https://www.youtube.com/watch?v=VhLOr2_1MCg) (26-minute video)
 - [Recovering from systemic identity compromise](/azure/security/fundamentals/recover-from-identity-compromise)
 - [Advanced multistage attack detection in Azure Sentinel](/azure/sentinel/fusion#ransomware)
 

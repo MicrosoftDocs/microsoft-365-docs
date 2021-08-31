@@ -77,7 +77,7 @@
         href: deploy-threat-protection.md
       - name: Steps to deploy threat protection
         href: deploy-threat-protection-configure.md
-    - name: Deploy protection against ransomware with Microsoft 365
+    - name: Deploy ransomware protection for your Microsoft 365 tenant
       items:
       - name: Overview   
         href: protect-against-ransomware-microsoft-365.md

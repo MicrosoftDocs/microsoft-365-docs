@@ -56,7 +56,7 @@ Use these best practices:
 Users in your organization must be made aware of:
 
 - The new requirements for stronger passwords.
-- The changes in sign-in processes, such as the required use of MFA and the MFA secondary authenticaton method registration.
+- The changes in sign-in processes, such as the required use of MFA and the MFA secondary authentication method registration.
 - The use of password maintenance with SSPR. For example, no more calls to helpdesk for a password reset.
 - The prompting to require MFA or a password change for sign-ins that are determined to be risky.
 

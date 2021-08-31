@@ -1,5 +1,5 @@
 ---
-title: "Deploy protection against ransomware with Microsoft 365"
+title: "Deploy ransomware protection for your Microsoft 365 tenant"
 author: JoeDavies-MSFT
 f1.keywords:
 - NOCSH
@@ -20,7 +20,7 @@ keywords:
 description: Step through protecting your Microsoft 365 resources from ransomware attacks.
 ---
 
-# Deploy protection against ransomware with Microsoft 365
+# Deploy ransomware protection for your Microsoft 365 tenant
 
 Ransomware is a type of extortion attack that encrypts files and folders, preventing access to important data. Commodity ransomware typically spreads like a virus that infects devices and only requires malware remediation. Human-operated ransomware is the result of an active attack by cybercriminals that infiltrate an organization’s on-premises or cloud IT infrastructure, elevate their privileges, and deploy ransomware to critical data.
 
@@ -181,7 +181,7 @@ For Windows 10 devices:
 | Capability or feature | Description | Helps... | Licensing |
 |:-------|:-----|:-------|:-------|
 | Controlled folder access | Protects your data by checking apps against a list of known, trusted apps. | Prevent files from being altered or encrypted by ransomware. | Microsoft 365 E3 or Microsoft 365 E5 |
-| Microsoft Information Protection | Sensitivity labels can be applied them to ransomable information. | Prevent use of exfiltrated resources. | Microsoft 365 E3 or Microsoft 365 E5 |
+| Microsoft Information Protection | Sensitivity labels can be applied to ransomable information. | Prevent use of exfiltrated resources. | Microsoft 365 E3 or Microsoft 365 E5 |
 | Data loss prevention (DLP) | Protects sensitive data and reduces risk by preventing users from inappropriately sharing it. | Prevent data exfiltration. | Microsoft 365 E3 or Microsoft 365 E5 |
 | Microsoft Cloud App Security | A cloud access security broker for discovery, investigation, and governance. | Prevent lateral movement and data exfiltration. | Microsoft 365 E5 or Microsoft 365 E3 with the Microsoft 365 E5 Security add-on |
 |

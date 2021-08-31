@@ -65,7 +65,6 @@ Apply [security baselines](https://techcommunity.microsoft.com/t5/microsoft-secu
 - Windows 10
 - Microsoft 365 Apps for Enterprise
 - Microsoft Edge
-- Windows Server
 
 ## Impact on users and change management
 
