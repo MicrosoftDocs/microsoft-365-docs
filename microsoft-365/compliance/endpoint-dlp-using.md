@@ -103,13 +103,26 @@ If the list mode is set to **Allow**, then users will be able to upload sensitiv
 
 #### Business justification in policy tips
 
-You can control how users interact with the business justification option in DLP policy tip notifications. This option appears when users perform an activity that's protected by the **Block with override** setting in a DLP policy. You can choose from one the following options:
+You can control how users interact with the business justification option in DLP policy tip notifications. This option appears when users perform an activity that's protected by the **Block with override** setting in a DLP policy. This is a global setting. You can choose from one the following options:
 
-- By default, users can select either a built-in justification, or enter their own text.
-- Users can only select a built-in justification.
-- Users can only enter their own justification.
+- **Show default options and custom text box**: By default, users can select either a built-in justification, or enter their own text.
+- **Only show default options**: Users can only select a built-in justification.
+- **Only show custom text box**: Users can only enter their own justification. Only the text box will appear in the end user policy tip notification. 
 
-##### Customizing the options in the drop-down menu (LEFT OFF HERE)
+##### Customizing the options in the drop-down menu
+
+You can create up to five customized options that will appear when users interact with the policy notification tip by selecting the **Customize the options drop-down menu**. 
+
+
+|Option |default text  |
+|---------|---------|
+|option 1    | **This is part of an established business workflow**  or you can enter customized text        |
+|option 2  |**My manager has approved this action** or you can enter customized text         |
+|option 3   |**Urgent access required; I'll notify my manager separately** or you can enter customized text          |
+|Show false positive option     |**The information in these files is not sensitive** or you can enter customized text          |
+|option 5    |**Other** or you can enter customized text         |
+
+See, [Scenario 5: Configure a policy to use the customized business justification](#scenario-5-configure-a-policy-to-use-the-customized-business-justification)
 
 ### Always audit file activity for devices
 
@@ -341,6 +354,10 @@ The message reads:
 8. Check Activity explorer for data from the monitored endpoints. Set the location filter for devices and add the policy, then filter by policy name to see the impact of this policy. See, [Get started with activity explorer](data-classification-activity-explorer.md) if needed.
 
 9. Check Activity explorer for the event.
+
+### Scenario 5: Configure a policy to use the customized business justification
+
+
 
 ## See also
 
