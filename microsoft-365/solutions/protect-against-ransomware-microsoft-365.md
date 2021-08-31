@@ -29,7 +29,7 @@ Once the attack is complete, an attacker demands money from victims in exchange 
 A human-operated ransomware attack can be catastrophic to businesses of all sizes and are difficult to clean up, requiring complete adversary eviction to protect against future attacks. Unlike commodity ransomware, human-operated ransomware can continue to threaten businesses operations after the initial ransom incident.
 
 >[!Note]
->A ransomware attack assumes that the attacker has valid user account credentials for a tenant and has access to all of the files and resources that are permitted to the user account. Microsoft 365 provides default and enhanced at rest encryption for data that are not accessible to an attacker without valid user account credentials. For more information, see [Encryption and key management overview](/compliance/assurance/assurance-encryption).
+>A ransomware attack assumes that the attacker has valid user account credentials for a tenant and has access to all of the files and resources that are permitted to the user account. Microsoft 365 provides default and enhanced at rest encryption for data that is not accessible to an attacker without any valid user account credentials. For more information, see [Encryption and key management overview](/compliance/assurance/assurance-encryption).
 >
 
 ## Ransomware mitigation and recovery capabilities provided with Microsoft 365
@@ -131,20 +131,20 @@ To protect your Microsoft 365 tenant from a ransomware attack, use these Microso
 | Capability or feature | Description | Helps... | Licensing |
 |:-------|:-----|:-------|:-------|
 | Microsoft Secure Score |  Feature of Microsoft 365 Defender that measures the security posture of a Microsoft 365 tenant. | Assess your security configuration and provide suggestions to improve it | Microsoft 365 E3 or Microsoft 365 E5 |
-| Attack surface reduction rules | Configuration settings to reduce your organization's vulnerability to cyberthreats and attacks. | Block suspicious activity and vulnerable content | Microsoft 365 E3 or Microsoft 365 E5 |
-| Exchange email settings |  Enables services to reduce your organization's vulnerability to an email-based attack. | Prevent initial access to your tenant through phishing and other email-based attacks  | Microsoft 365 E3 or Microsoft 365 E5 |
-| Windows, Edge, and Microsoft 365 Apps for Enterprise settings | Industry-standard security configurations that are broadly known and well-tested. | Prevent attacks through Windows, Edge, and Microsoft 365 Apps for Enterprise | Microsoft 365 E3 or Microsoft 365 E5 |
+| Attack surface reduction rules | Configuration settings to reduce your organization's vulnerability to cyberthreats and attacks. | Block suspicious activity and vulnerable content. | Microsoft 365 E3 or Microsoft 365 E5 |
+| Exchange email settings |  Enables services to reduce your organization's vulnerability to an email-based attack. | Prevent initial access to your tenant through phishing and other email-based attacks.  | Microsoft 365 E3 or Microsoft 365 E5 |
+| Windows, Edge, and Microsoft 365 Apps for Enterprise settings | Industry-standard security configurations that are broadly known and well-tested. | Prevent attacks through Windows, Edge, and Microsoft 365 Apps for Enterprise. | Microsoft 365 E3 or Microsoft 365 E5 |
 |
 
 ### 2. Detection and response
 
 | Capability or feature | Description | Helps detect and respond to... | Licensing |
 |:-------|:-----|:-------|:-------|
-| Microsoft 365 Defender | Combines signals and orchestrates capabilities into a single solution. Enables security professionals to stitch together threat signals and determine the full scope and impact of a threat. Microsoft 365 Defender takes automatic actions to prevent or stop the attack and self-heal affected mailboxes, endpoints, and user identities. | Incidents, which are the combined alerts and data that make up an attack | Microsoft 365 E5 or Microsoft 365 E3 with the Microsoft 365 E5 Security add-on |
-| Microsoft Defender for Identity |  A cloud-based security solution that uses your on-premises Active Directory Domain Services (AD DS) signals to identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions directed at your organization. Focus on Microsoft Defender for Identity next because it protects your on-premises and cloud infrastructure, has no dependencies or prerequisites, and can provide immediate security benefits. | Credential compromise for AD DS accounts | Microsoft 365 E5 or Microsoft 365 E3 with the Microsoft 365 E5 Security add-on |
-| Microsoft Defender for Office 365 | Safeguards your organization against malicious threats posed by email messages, links (URLs), and collaboration tools. Protects against malware, phishing, spoofing, and other attack types. Configuring Microsoft Defender for Office 365 is recommended because change control, migrating settings from incumbent system, and other considerations can take longer to deploy. | Phishing attacks | Microsoft 365 E5 or Microsoft 365 E3 with the Microsoft 365 E5 Security add-on |
-| Microsoft Defender for Endpoint | Helps prevent, detect, investigate, and respond to advanced threats across devices (also referred to as endpoints). | Malware installation | Microsoft 365 E5 or Microsoft 365 E3 with the Microsoft 365 E5 Security add-on |
-| Azure AD Identity Protection | Automates the detection and remediation of identity-based risks and investigate those risks. | Credential compromise for Azure AD accounts and privilege escalation | Microsoft 365 E5 or Microsoft 365 E3 with the Microsoft 365 E5 Security add-on |
+| Microsoft 365 Defender | Combines signals and orchestrates capabilities into a single solution. Enables security professionals to stitch together threat signals and determine the full scope and impact of a threat. Microsoft 365 Defender takes automatic actions to prevent or stop the attack and self-heal affected mailboxes, endpoints, and user identities. | Incidents, which are the combined alerts and data that make up an attack. | Microsoft 365 E5 or Microsoft 365 E3 with the Microsoft 365 E5 Security add-on |
+| Microsoft Defender for Identity |  A cloud-based security solution that uses your on-premises Active Directory Domain Services (AD DS) signals to identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions directed at your organization. Focus on Microsoft Defender for Identity next because it protects your on-premises and cloud infrastructure, has no dependencies or prerequisites, and can provide immediate security benefits. | Credential compromise for AD DS accounts. | Microsoft 365 E5 or Microsoft 365 E3 with the Microsoft 365 E5 Security add-on |
+| Microsoft Defender for Office 365 | Safeguards your organization against malicious threats posed by email messages, links (URLs), and collaboration tools. Protects against malware, phishing, spoofing, and other attack types. Configuring Microsoft Defender for Office 365 is recommended because change control, migrating settings from incumbent system, and other considerations can take longer to deploy. | Phishing attacks. | Microsoft 365 E5 or Microsoft 365 E3 with the Microsoft 365 E5 Security add-on |
+| Microsoft Defender for Endpoint | Helps prevent, detect, investigate, and respond to advanced threats across devices (also referred to as endpoints). | Malware installation and device compromise. | Microsoft 365 E5 or Microsoft 365 E3 with the Microsoft 365 E5 Security add-on |
+| Azure AD Identity Protection | Automates the detection and remediation of identity-based risks and investigate those risks. | Credential compromise for Azure AD accounts and privilege escalation. | Microsoft 365 E5 or Microsoft 365 E3 with the Microsoft 365 E5 Security add-on |
 | Microsoft Cloud App Security | A cloud access security broker for discovery, investigation, and governance. | Lateral movement and data exfiltration | Microsoft 365 E5 or Microsoft 365 E3 with the Microsoft 365 E5 Security add-on |
 |
 
@@ -152,8 +152,9 @@ To protect your Microsoft 365 tenant from a ransomware attack, use these Microso
 
 | Capability or feature | Description | Helps prevent... | Licensing |
 |:-------|:-----|:-------|:-------|
-|MFA enforced with Conditional Access|Require MFA based on the properties of the sign-in with Conditional Access policies.|Credential compromise and access|Microsoft 365 E3 or Microsoft 365 E5|
-|MFA enforced with risk-based Conditional Access|Require MFA based on the risk of the user sign-in with Azure AD Identity protection.|Credential compromise and access|Microsoft 365 E5 or Microsoft 365 E3 with the Microsoft 365 E5 Security add-on|
+|Azure AD Password Protection|Require strong passwords from common list and custom entries.|Cloud or on-premises user account password determination.|Microsoft 365 E3 or Microsoft 365 E5|
+|MFA enforced with Conditional Access|Require MFA based on the properties of the sign-in with Conditional Access policies.|Credential compromise and access.|Microsoft 365 E3 or Microsoft 365 E5|
+|MFA enforced with risk-based Conditional Access|Require MFA based on the risk of the user sign-in with Azure AD Identity protection.|Credential compromise and access.|Microsoft 365 E5 or Microsoft 365 E3 with the Microsoft 365 E5 Security add-on|
 |
 
 ### 4. Devices
@@ -225,9 +226,9 @@ Office 365 Enterprise E3 subscription + the Office 365 Advanced Compliance add-o
 
 ## Impact on users and change management
 
-Deploying additional security features and requirements to your Microsoft 365 tenant can impact your users. For example, you may impose a new security policy that requires users to create new teams for specific uses with a list of user accounts as members, instead of more easily creating a team for all users in the organization. This can help prevent a ransomware attacker from exploring teams that are not available from the attacker's compromised user account and targeting them in the attack.
+Deploying additional security features and requirements and security policies for your Microsoft 365 tenant can impact your users. For example, you may impose a new security policy that requires users to create new teams for specific uses with a list of user accounts as members, instead of more easily creating a team for all users in the organization. This can help prevent a ransomware attacker from exploring teams that are not available from the attacker's compromised user account and targeting them in the attack.
 
-This solution will identify when a new configuration or recommended security policy can impact your users so you can implement the required change management.
+This foundation solution will identify when a new configuration or recommended security policy can impact your users so you can implement the required change management.
 
 ## Next steps
 

@@ -87,12 +87,13 @@ To protect your ransomable information in case a ransomware attacker has access 
 
 ## Impact on users and change management
 
-For the protection of ransomable information in your Microsoft 365 tenant:
+Administrative changes to broad permissions can lead to users being denied access or being unable to execute some actions.
 
-- Train your users to create communication and collaboration venues with the minimum set of user accounts for access and the minimal allowed actions for each. 
-- Administrative changes to broad permissions can lead to users being denied access or being unable to execute some actions.
-- Train your users to apply the proper sensitivity labels to ransomable information.
-- Train your users to use Protected Folders and controlled folder access.
+Additionally, for the protection of ransomable information in your Microsoft 365 tenant, train your users to:
+
+- Create communication and collaboration venues with the minimum set of user accounts for access and the minimal allowed actions for each. 
+- Apply the proper sensitivity labels to ransomable information.
+- Use controlled folder access.
 
 ## Resulting configuration
 

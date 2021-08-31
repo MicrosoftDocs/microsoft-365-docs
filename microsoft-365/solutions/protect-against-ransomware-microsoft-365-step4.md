@@ -30,7 +30,7 @@ To help protect devices against the initial access part of an attack:
 - Enable [Microsoft Defender Antivirus scanning](/microsoft-365/security/defender-endpoint/configure-advanced-scan-types-microsoft-defender-antivirus) of downloaded files and attachments.
 - Set **Remote Desktop security level** to **TLS** in Microsoft Defender for Endpoint and Microsoft 365 Defender.
 
-To help protect against the lateral movement part of an attack:
+To help protect against the lateral movement part of an attack from a Windows 10 device:
 
 - [Turn on Microsoft Defender Firewall](https://support.microsoft.com/windows/turn-microsoft-defender-firewall-on-or-off-ec0844f7-aebd-0583-67fe-601ecf5d774f) for your Windows 10 devices.
 - [Update Microsoft Defender Antivirus definitions](/en-us/microsoft-365/security/defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus).
@@ -44,7 +44,7 @@ To help protect against an attacker evading your security defenses:
 - Keep [cloud-delivered protection](/microsoft-365/security/defender-endpoint/enable-cloud-protection-microsoft-defender-antivirus) in Microsoft Defender Antivirus turned on.
 - Keep Microsoft Defender Antivirus [real-time behavior monitoring](/microsoft-365/security/defender-endpoint/configure-real-time-protection-microsoft-defender-antivirus) turned on.
 - Turn on [real-time protection](/microsoft-365/security/defender-endpoint/configure-real-time-protection-microsoft-defender-antivirus).
-- Turn on [tamper protection in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection), to prevent malicious changes to security settings.
+- Turn on [tamper protection in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection) to prevent malicious changes to security settings.
 
 To help protect against an attacker executing code as part of an attack:
 
