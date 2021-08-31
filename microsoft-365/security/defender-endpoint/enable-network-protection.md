@@ -85,15 +85,15 @@ Use the [./Vendor/MSFT/Policy/Config/Defender/EnableNetworkProtection](/windows/
 
 2. Go to **Devices** > **Configuration profiles** > **Create profile**.
 
-3. In the **Create a profile** flyout, select **Endpoint protection** from the list of templates. Select **Create**.
+3. In the **Create a profile** flyout, select **Endpoint protection** from the list of templates, and then select **Create**.
 
-4. Under **Endpoint protection** page, in the **Basics** tab, provide a name for your profile, and then select **Next**.
+4. Go to **Endpoint protection** > **Basics**, provide a name for your profile, and then select **Next**.
 
-5. In the **Configuration settings** section, go to **Microsoft Defender Exploit Guard** > **Network filtering** > **Network protection** > **Enable** or **Audit**. Click **Next**.
+5. In the **Configuration settings** section, go to **Microsoft Defender Exploit Guard** > **Network filtering** > **Network protection** > **Enable** or **Audit**. Select **Next**.
 
-6. Select appropriate **Scope tags**, **Assignments**, and **Applicability rules** as required by your organization. Admins can set more requirements. 
+6. Select the appropriate **Scope tags**, **Assignments**, and **Applicability rules** as required by your organization. Admins can set more requirements.
 
-7. Review and select **Create**.
+7. Review all the information, and then select **Create**.
 
 ### Group Policy
 
