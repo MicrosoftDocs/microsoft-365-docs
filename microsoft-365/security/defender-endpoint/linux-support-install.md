@@ -36,7 +36,7 @@ ms.technology: mde
 An error in installation may or may not result in a meaningful error message by the package manager. To verify if the installation succeeded, obtain and check the installation logs using:
 
 ```bash
- sudo journalctl --no-pager | grep 'microsoft-mdatp' > installation.log
+ sudo journalctl --no-pager|grep 'microsoft-mdatp' > installation.log
 ```
 
 ```bash
@@ -55,13 +55,18 @@ Also check the [Client configuration](linux-install-manually.md#client-configura
 
 Please mind that the package you are installing is matching the host distribution and version.
 
-| package                       | distribution                             |
-|-------------------------------|------------------------------------------|
-| mdatp-rhel8.Linux.x86_64.rpm  | Oracle, RHEL and CentOS 8.x              |
-| mdatp-sles12.Linux.x86_64.rpm | SuSE Linux Enterprise Server 12.x        |
-| mdatp-sles15.Linux.x86_64.rpm | SuSE Linux Enterprise Server 15.x        |
-| mdatp.Linux.x86_64.rpm        | Oracle, RHEL and CentOS 7.x              |
-| mdatp.Linux.x86_64.deb        | Debian and Ubuntu 16.04, 18.04 and 20.04 |
+<br>
+
+****
+
+|package|distribution|
+|---|---|
+|mdatp-rhel8.Linux.x86_64.rpm|Oracle, RHEL and CentOS 8.x|
+|mdatp-sles12.Linux.x86_64.rpm|SuSE Linux Enterprise Server 12.x|
+|mdatp-sles15.Linux.x86_64.rpm|SuSE Linux Enterprise Server 15.x|
+|mdatp.Linux.x86_64.rpm|Oracle, RHEL and CentOS 7.x|
+|mdatp.Linux.x86_64.deb|Debian and Ubuntu 16.04, 18.04 and 20.04|
+|
 
 For [manual deployment](linux-install-manually.md), make sure the correct distro and version had been chosen.
 
