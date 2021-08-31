@@ -146,7 +146,7 @@ There are circumstances where new users show up as **unknown**. This is usually 
   
 ## Hide user details in the reports
 
-Reports provide information about your organization’s usage data. By default, reports display information with identifiable names for users, groups, and sites. Starting September 1st 2021, we are hiding user information by default for all reports as part of our ongoing commitment to help companies support their local Privacy laws.
+Reports provide information about your organization’s usage data. By default, reports display information with identifiable names for users, groups, and sites. Starting September 1, 2021, we are hiding user information by default for all reports as part of our ongoing commitment to help companies support their local privacy laws.
   
 Your user list will look like this:
   
