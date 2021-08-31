@@ -61,7 +61,7 @@ After verifying that the license state has been provisioned properly, you can st
 
 For the purpose of evaluating Microsoft Defender for Endpoint, we recommend choosing a couple of Windows 10 devices to conduct the evaluation on.
 
-You can choose to use any of the supported management tools, but Intune provides optimal integration. For more information, see [Configure Microsoft Defender for Endpoint in Microsoft Intune](/mem/intune/protect/advanced-threat-protection-configure#enable-microsoft-defender-for-endpoint-in-intune)
+You can choose to use any of the supported management tools, but Intune provides optimal integration. For more information, see [Configure Microsoft Defender for Endpoint in Microsoft Intune](/mem/intune/protect/advanced-threat-protection-configure#enable-microsoft-defender-for-endpoint-in-intune).
 
 The [Plan deployment](../defender-endpoint/deployment-strategy.md) topic outlines the general steps you need to take to deploy Defender for Endpoint.  
 
