@@ -81,7 +81,7 @@ Selecting an incident name displays a page that demonstrates the value of conver
 :::image type="content" source="../../media/converged-incident-info-3.png" alt-text="Example of the Summary page for an incident in Microsoft 365 Defender":::
 
 <!--
-![Example of the Summary page for an incident in Microsoft 365 Defender](../../media/converged-incident-info-3.png)
+![Example of the Summary page for an incident in Microsoft 365 Defender.](../../media/converged-incident-info-3.png)
 --> 
 
 Along the top of an incident page, you'll see the **Summary**, **Alerts**, **Devices**, **Users**, **Mailboxes**, **Investigations**, and **Evidence** tabs. Select these tabs for more detailed information. For example, the **Users** tab displays information for users from converged workloads (Microsoft Defender for Endpoint, Microsoft Defender for Identity, and Microsoft Cloud App Security) and a range of sources such as on-premises Active Directory Domain Services (AD DS), Azure Active Directory (Azure AD), and third-party identity providers. For more information, see [investigate users](investigate-users.md).
@@ -96,7 +96,7 @@ Common controls and content either appear in the same place, or are condensed in
 
 ### Unified settings
 
-![clicked 'Roles' and opened the Settings page, which includes General settings, Permissions, APIs and Rules. Open Permissions and then Roles. Shows all roles](../../media/converged-add-role-9.png)
+![clicked 'Roles' and opened the Settings page, which includes General settings, Permissions, APIs and Rules. Open Permissions and then Roles. Shows all roles.](../../media/converged-add-role-9.png)
 
 ### Permissions & roles
 

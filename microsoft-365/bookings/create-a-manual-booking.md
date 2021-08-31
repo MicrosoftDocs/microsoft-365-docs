@@ -17,11 +17,11 @@ Bookings can be scheduled and staffed in two different ways. The first way is by
 
 1. In Microsoft 365, select the App launcher, and then select **Bookings**.
 
-   ![Image of Bookings in App launcher](../media/bookings-applauncher.png)
+   ![Image of Bookings in App launcher.](../media/bookings-applauncher.png)
 
 1. In the navigation pane, select **Calendar** \> **New booking**.
 
-   ![Image of New booking UI](../media/bookings-newbooking.png)
+   ![Image of New booking UI.](../media/bookings-newbooking.png)
 
 1. Select the service to be provided. See [Define your service offerings in Microsoft Bookings](define-service-offerings.md) for service setup instructions.
 
@@ -29,7 +29,7 @@ Bookings can be scheduled and staffed in two different ways. The first way is by
 
 1. Select the staff member to provide the service. The list of staff members shown is based on what you set up on the services page.
 
-   ![Image of staff list UI](../media/bookings-staff-list.png)
+   ![Image of staff list UI.](../media/bookings-staff-list.png)
 
 1. Enter the service details, including date, time, location, and other relevant information. Once you enter a valid email address for the customer, the **Save** button will change to **Send**, and you'll see a note telling you that a confirmation will be sent to the customer. The customer confirmation includes an attachment for them to add to their calendar. Selected staff members will also receive meeting invitations with the appointment information so they can add it to their personal calendars.
 

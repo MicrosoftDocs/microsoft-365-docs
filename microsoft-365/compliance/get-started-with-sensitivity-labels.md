@@ -41,7 +41,7 @@ When you're ready to start protecting your organization's data by using sensitiv
 
 The basic flow for deploying and applying sensitivity labels:
 
-![Diagram showing workflow for sensitivity labels](../media/Sensitivity-label-flow.png)
+![Diagram showing workflow for sensitivity labels.](../media/Sensitivity-label-flow.png)
 
 ## Subscription and licensing requirements for sensitivity labels
 

@@ -87,9 +87,9 @@ This article describes how to configure the default connection filter policy in 
        - IP range: For example, 192.168.0.1-192.168.0.254.
        - CIDR IP: For example, 192.168.0.1/25. Valid subnet mask values are /24 through /32. To skip spam filtering for /1 to /23, see the [Skip spam filtering for a CIDR IP outside of the available range](#skip-spam-filtering-for-a-cidr-ip-outside-of-the-available-range) section later in this article.
 
-       Repeat this step as many times as necessary. To remove an existing value, click remove ![Remove icon](../../media/m365-cc-sc-remove-selection-icon.png) next to the value.
+       Repeat this step as many times as necessary. To remove an existing value, click remove ![Remove icon.](../../media/m365-cc-sc-remove-selection-icon.png) next to the value.
 
-     To add the IP address or address range, click in the box and type itclick **Add** ![Add Icon](../../media/ITPro-EAC-AddIcon.png). To remove an entry, select the entry in **Allowed IP Address** and then click **Remove** ![Remove](../../media/scc-remove-icon.png). When you're finished, click **Save**.
+     To add the IP address or address range, click in the box and type itclick **Add** ![Add Icon.](../../media/ITPro-EAC-AddIcon.png). To remove an entry, select the entry in **Allowed IP Address** and then click **Remove** ![Remove](../../media/scc-remove-icon.png). When you're finished, click **Save**.
 
    - **Always block messages from the following IP addresses or address range**: This is the IP Block List. Enter a single IP, IP range, or CIDR IP in the box as previously described in the **Always allow messages from the following IP addresses or address range** setting.
 
@@ -203,4 +203,4 @@ If you encounter either of these scenarios, you can create a mail flow rule with
 
 ****
 
-![The short icon for LinkedIn Learning](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **New to Microsoft 365?** Discover free video courses for **Microsoft 365 admins and IT pros**, brought to you by LinkedIn Learning.
+![The short icon for LinkedIn Learning.](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **New to Microsoft 365?** Discover free video courses for **Microsoft 365 admins and IT pros**, brought to you by LinkedIn Learning.

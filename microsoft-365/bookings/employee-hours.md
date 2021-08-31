@@ -13,7 +13,7 @@ description: "Set employee working hours and availability in Microsoft Bookings.
 
 # Employee working hours in Microsoft Bookings
 
-Setting employee working hours ensures that their availability is accurately shown when your customers try to book them. By default, the working hours for each of your employees match the business hours you've established in the Microsoft Bookings app. See the "Set your business hours" section of [Enter business information](enter-business-information.md#set-your-business-hours).
+Setting employee working hours ensures that their availability is accurately shown when your customers try to book them. By default, the working hours for each of your employees match the business hours you've established in the Microsoft Bookings app. See the "Set your business hours" section of [Enter business information](enter-business-information.md).
 
 On the **Staff** page, you can customize employee working hours to match the needs of your business and employees.
 
@@ -29,13 +29,13 @@ Watch this video or follow the steps below to set an employee's working hours.
 
 1. In the navigation pane, select **Staff**, and then select the staff member whose hours you want to set.
 
-   ![Image of Bookings staff screen with name highlighted](../media/bookings-staff-name-highlight.png)
+   ![Image of Bookings staff screen with name highlighted.](../media/bookings-staff-name-highlight.png)
 
 1. Under Working hours, clear the **Use business hours** checkbox.
 
 1. Use the dropdowns to select start and end times for each day. Times are available in 15-minute increments.
 
-   ![Image of Bookings staff working hours screen](../media/bookings-staff-hours.png)
+   ![Image of Bookings staff working hours screen.](../media/bookings-staff-hours.png)
 
 1. Click **+** to add start- and end-time selectors.
 
@@ -47,7 +47,7 @@ When you schedule a day off for an employee, that employee will appear unavailab
 
 1. On the working hours screen, select the **x** next to the day that the employee will have off.
 
-   ![Image of Bookings staff working hours screen with mouse over x button](../media/bookings-staff-time-off.png)
+   ![Image of Bookings staff working hours screen with mouse over x button.](../media/bookings-staff-time-off.png)
 
 1. If you want to schedule a day that was previously marked as a day off, select the **+** sign next to the day you want to schedule.
 

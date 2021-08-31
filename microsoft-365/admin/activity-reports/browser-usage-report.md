@@ -34,7 +34,7 @@ The Microsoft 365 **Reports** dashboard shows you an activity overview across th
 
 ## Interpret the Microsoft browser usage report
 
-![Microsoft browser usage report](../../media/95557c88-24ee-417d-a828-96ba00b17aaf.png)
+![Microsoft browser usage report.](../../media/95557c88-24ee-417d-a828-96ba00b17aaf.png)
 
 |Item|Description|
  |:-----|:-----|

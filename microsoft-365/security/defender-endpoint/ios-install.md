@@ -1,6 +1,6 @@
 ---
 title: App-based deployment for Microsoft Defender for Endpoint on iOS
-ms.reviewer: 
+ms.reviewer:
 description: Describes how to deploy Microsoft Defender for Endpoint on iOS using an app
 keywords: microsoft, defender, Microsoft Defender for Endpoint, ios, app, installation, deploy, uninstallation, intune
 search.product: eADQiWindows 10XVcnh
@@ -14,7 +14,7 @@ author: mjcaparas
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
   - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
@@ -50,7 +50,7 @@ Deploy Defender for Endpoint on iOS via Intune Company Portal.
 1. In [Microsoft Endpoint manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Apps** -> **iOS/iPadOS** -> **Add** -> **iOS store app** and click **Select**.
 
     > [!div class="mx-imgBorder"]
-    > ![Image of Microsoft Endpoint Manager Admin Center1](images/ios-deploy-1.png)
+    > ![Image of Microsoft Endpoint Manager Admin Center1.](images/ios-deploy-1.png)
 
 1. On the Add app page, click on **Search the App Store** and type **Microsoft Defender Endpoint** in the search bar. In the search results section, click on *Microsoft Defender Endpoint* and click **Select**.
 
@@ -62,14 +62,14 @@ Deploy Defender for Endpoint on iOS via Intune Company Portal.
     > The selected user group should consist of Intune enrolled users.
 
     > [!div class="mx-imgBorder"]
-    > ![Image of Microsoft Endpoint Manager Admin Center2](images/ios-deploy-2.png)
+    > ![Image of Microsoft Endpoint Manager Admin Center2.](images/ios-deploy-2.png)
 
 1. In the *Review + Create* section, verify that all the information entered is correct and then select **Create**. In a few moments, the Defender for Endpoint app should be created successfully, and a notification should show up at the top-right corner of the page.
 
 1. In the app information page that is displayed, in the **Monitor** section, select **Device install status** to verify that the device installation has completed successfully.
 
     > [!div class="mx-imgBorder"]
-    > ![Image of Microsoft Endpoint Manager Admin Center3](images/ios-deploy-3.png)
+    > ![Image of Microsoft Endpoint Manager Admin Center3.](images/ios-deploy-3.png)
 
 ## Auto-Onboarding of VPN profile (Simplified Onboarding)
 
@@ -88,7 +88,7 @@ Admins can configure auto-setup of VPN profile. This will automatically setup th
     - Type of Automatic VPN = On-demand VPN
     - Click **Add** for **On Demand Rules** and select **I want to do the following = Establish VPN**, **I want to restrict to = All domains**.
 
-    ![A screen shot of VPN profile configuration](images/ios-deploy-8.png)
+    ![A screen shot of VPN profile configuration.](images/ios-deploy-8.png)
 
 1. Click Next and assign the profile to targeted users.
 1. In the *Review + Create* section, verify that all the information entered is correct and then select **Create**.
@@ -98,14 +98,14 @@ Admins can configure auto-setup of VPN profile. This will automatically setup th
 1. Once Defender for Endpoint on iOS has been installed on the device, you
     will see the app icon.
 
-    ![A screen shot of a smart phone Description automatically generated](images/41627a709700c324849bf7e13510c516.png)
+    ![A screen shot of a smart phone Description automatically generated.](images/41627a709700c324849bf7e13510c516.png)
 
 2. Tap the Defender for Endpoint app icon (MSDefender) and follow the on-screen instructions to complete the onboarding steps. The details include end-user acceptance of iOS permissions required by Defender for Endpoint on iOS.
 
 3. Upon successful onboarding, the device will start showing up on the Devices list in the Microsoft 365 Defender portal.
 
     > [!div class="mx-imgBorder"]
-    > ![A screenshot of a cell phone Description automatically generated](images/device-inventory-screen.png)
+    > ![A screenshot of a cell phone Description automatically generated.](images/device-inventory-screen.png)
 
 ## Configure Microsoft Defender for Endpoint for Supervised Mode
 
@@ -118,10 +118,10 @@ Intune allows you to configure the Defender for iOS app through an App Configura
    > [!NOTE]
    > This app configuration policy for supervised devices is applicable only to managed devices and should be targeted for all managed iOS devices as a best practice.
 
-1. Sign in to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and go to **Apps** > **App configuration policies** > **Add**. Click on **Managed devices**.
+1. Sign in to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and go to **Apps** \> **App configuration policies** \> **Add**. Click on **Managed devices**.
 
     > [!div class="mx-imgBorder"]
-    > ![Image of Microsoft Endpoint Manager Admin Center4](images/ios-deploy-4.png)
+    > ![Image of Microsoft Endpoint Manager Admin Center4.](images/ios-deploy-4.png)
 
 1. In the *Create app configuration policy* page, provide the following information:
     - Policy Name
@@ -129,15 +129,15 @@ Intune allows you to configure the Defender for iOS app through an App Configura
     - Targeted app: Select **Microsoft Defender Endpoint** from the list
 
     > [!div class="mx-imgBorder"]
-    > ![Image of Microsoft Endpoint Manager Admin Center5](images/ios-deploy-5.png)
+    > ![Image of Microsoft Endpoint Manager Admin Center5.](images/ios-deploy-5.png)
 
 1. In the next screen, select **Use configuration designer** as the format. Specify the following property:
     - Configuration Key: issupervised
     - Value type: String
     - Configuration Value: {{issupervised}}
-    
+
     > [!div class="mx-imgBorder"]
-    > ![Image of Microsoft Endpoint Manager Admin Center6](images/ios-deploy-6.png)
+    > ![Image of Microsoft Endpoint Manager Admin Center6.](images/ios-deploy-6.png)
 
 1. Click **Next** to open the **Scope tags** page. Scope tags are optional. Click **Next** to continue.
 
@@ -154,7 +154,7 @@ Intune allows you to configure the Defender for iOS app through an App Configura
     - Navigate to **Devices** -> **iOS/iPadOS** -> **Configuration profiles** -> **Create Profile**
 
     > [!div class="mx-imgBorder"]
-    > ![Image of Microsoft Endpoint Manager Admin Center7](images/ios-deploy-7.png)
+    > ![Image of Microsoft Endpoint Manager Admin Center7.](images/ios-deploy-7.png)
 
     - Provide a name of the profile. When prompted to import a Configuration profile file, select the one downloaded above.
     - In the **Assignment** section, select the device group to which you want to apply this profile. As a best practice, this should be applied to all managed iOS devices. Click **Next**.

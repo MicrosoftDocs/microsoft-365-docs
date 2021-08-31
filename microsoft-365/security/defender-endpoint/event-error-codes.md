@@ -43,7 +43,7 @@ For example, if devices aren't appearing in the **Devices list**, you might need
 2. In the log list, under **Log Summary**, scroll until you see **Microsoft-Windows-SENSE/Operational**. Double-click the item to
    open the log.
 
-   You can also access the log by expanding **Applications and Services Logs** > **Microsoft** > **Windows** > **SENSE** and click on **Operational**.
+   You can also access the log by expanding **Applications and Services Logs** \> **Microsoft** \> **Windows** \> **SENSE** and click on **Operational**.
 
    > [!NOTE]
    > SENSE is the internal name used to refer to the behavioral sensor that powers Microsoft Defender for Endpoint.
