@@ -122,7 +122,7 @@ You can create up to five customized options that will appear when users interac
 |Show false positive option     |**The information in these files is not sensitive** or you can enter customized text          |
 |option 5    |**Other** or you can enter customized text         |
 
-See, [Scenario 5: Configure a policy to use the customized business justification](#scenario-5-configure-a-policy-to-use-the-customized-business-justification)
+<!--See, [Scenario 5: Configure a policy to use the customized business justification](#scenario-5-configure-a-policy-to-use-the-customized-business-justification)-->
 
 ### Always audit file activity for devices
 
