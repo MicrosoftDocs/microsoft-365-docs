@@ -40,7 +40,7 @@ Microsoft Defender Antivirus cloud protection helps protect against malware on y
 
 ## Next steps
 
-Now that you have an overview of cloud protection in Microsoft Defender Antivirus, here are some next steps:
+Now that you have an overview of cloud protection and its role in Microsoft Defender Antivirus, here are some next steps:
 
 1. **[Enable cloud protection](enable-cloud-protection-microsoft-defender-antivirus.md)**. You can enable cloud protection with Microsoft Endpoint Manager (which now includes Microsoft Endpoint Configuration Manager and Microsoft Intune), Group Policy, or PowerShell cmdlets.
 
