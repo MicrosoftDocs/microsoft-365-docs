@@ -52,7 +52,7 @@ The following table identifies the supported tasks that can be performed in Micr
 > [!NOTE]
 > <sup>1</sup> Encrypted files located on a local computer and cloud attachments copied to an email message aren't decrypted and indexed for eDiscovery. For more information and a workaround for these scenarios, see the [Decryption limitations with email attachments](#decryption-limitations-with-email-attachments) section in this article.
 
-### Decryption limitations with sensitivity labels in SharePoint and OneDrive
+## Decryption limitations with sensitivity labels in SharePoint and OneDrive
 
 eDiscovery doesn't support encrypted files in SharePoint and OneDrive when a sensitivity label that applied the encryption is configured with either of the following settings:
 
@@ -64,7 +64,7 @@ For more information about these settings, see the "Configure encryption setting
 
 Documents encrypted with the previous settings can still be returned by an eDiscovery search. This may happen when a document property (such as the title, author, or modified date) matches the search criteria. Although these documents might be included in search results, they can't be previewed or reviewed. These documents will also remain encrypted when they're exported in Advanced eDiscovery.
 
-### Decryption limitations with email attachments
+## Decryption limitations with email attachments
 
 The following scenarios describe limitations in the decryption of files attached to email messages. These scenario descriptions also include workarounds to mitigate these limitations.
 
