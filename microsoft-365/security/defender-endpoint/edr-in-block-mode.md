@@ -15,7 +15,7 @@ localization_priority: Normal
 ms.custom:
   - next-gen
   - edr
-ms.date: 08/05/2021
+ms.date: 08/31/2021
 ms.collection:
   - m365-security-compliance
   - m365initiative-defender-endpoint
@@ -23,8 +23,6 @@ ms.technology: mde
 ---
 
 # Endpoint detection and response (EDR) in block mode
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
