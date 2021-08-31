@@ -28,7 +28,7 @@ Microsoft Defender Antivirus cloud protection helps protect against malware on y
 
 The following table summarizes the features and capabilities that depend on cloud protection: <br/><br/>
 
-| Feature/Capability  | Available in...|  Description  |
+| Feature/Capability  | Subscription |  Description  |
 |---------|---------|--------|
 | Checking against metadata in the cloud  | Microsoft 365 E3 <br/>Microsoft 365 E5 | The Microsoft Defender Antivirus cloud service uses machine learning models as an extra layer of defense. These machine learning models include metadata, so when a suspicious or malicious file is detected, its metadata is checked. <br/><br/>To learn more, see [Blog: Get to know the advanced technologies at the core of Microsoft Defender for Endpoint next-generation protection](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/)  |
 | Cloud protection and sample submission | Microsoft 365 E3 <br/>Microsoft 365 E5 | Files and executables can be sent to the Microsoft Defender Antivirus cloud service for detonation and analysis. <br/><br/>To learn more, see [Cloud protection and sample submission in Microsoft Defender Antivirus](cloud-protection-microsoft-antivirus-sample-submission.md).<br/><br/>**NOTE**: Automatic sample submission relies on cloud protection, although it can also be configured as a standalone setting.         |
