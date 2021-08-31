@@ -24,8 +24,6 @@ ms.reviewer: chventou
 
 # Manage Microsoft Defender for Endpoint with Configuration Manager
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 **Applies to:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
@@ -40,9 +38,7 @@ We recommend using We recommend using [Microsoft Endpoint Manager](/mem), which 
 
 ## Configure Microsoft Defender for Endpoint with Configuration Manager
 
-<br>
-
-****
+<br/><br/>
 
 |Task|Resources to learn more|
 |---|---|
