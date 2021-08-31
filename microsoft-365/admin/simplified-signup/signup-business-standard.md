@@ -50,7 +50,9 @@ To sign up and purchase Microsoft 365 Business Standard (or Microsoft 365 Apps) 
 
 ### Option 1: Sign in with your Outlook, Hotmail, Yahoo, Gmail or other email account
 
-You'll sign into Microsoft 365 with this email address. For example, alliebellew@hotmail.com. Signing in with your current email address is the easiest and fastest way to get started.
+You'll sign into Microsoft 365 with this email address. For example, alliebellew@hotmail.com.
+
+
 
 1. Create a password on the next page, and select **Create account** to continue. On the next page, read about how we handle your data and select whether you want Microsoft Partners to contact you. Select **Next**.
 
@@ -60,7 +62,7 @@ You'll sign into Microsoft 365 with this email address. For example, alliebellew
 
 This option provides the easiest, fastest way to get started with the core functionality of the Office desktop suite, Teams, Forms and OneDrive cloud storage. This option is recommended for very small businesses who don't need branded email immediately, or who already use branded email from a different provider and do not intend to switch to use Microsoft Exchange.
 
-This option isn't recommended for larger businesses, including specialty industries such as healthcare or legal.
+<!--This option isn't recommended for larger businesses, including specialty industries such as healthcare or legal.-->
 
 You can add a business domain at any point to access the rest of the functionality of your Business Standard subscription, including:
 
@@ -91,9 +93,17 @@ This option provides immediate access to the full suite of features in your Micr
 
 A business email is an email that uses your own domain name. For example, if you own the domain name contoso.com, you can build a website using the url www.contoso.com, but you can also have a custom email address such as yourname@contoso.com. This is referred to as a branded business email as it gives your email a professional look.
 
-### Why do I need to verify my domain to create a business email?
+### How do I get a new business email address?
 
-We need to make sure you own the domain and can use it successfully with Microsoft 365. This is for security and to prevent fraudulent activity. As part of that, we ask you to verify the domain so you can send emails via Microsoft 365.
+There are three options for getting a business email.
+
+- You can use a suggested onmicrosoft.com domain for free (someone@mybusiness.onmicrosoft.com).
+- You can buy a new domain to have a more compact email address (mybusinessname@contoso.com).
+- You use a domain name that you already own.
+
+### Why might I need to verify my domain to create a business email?
+
+If you choose to use a domain you already own, you can use it for your email address with Microsoft 365. As part of sign up process, we ask you to verify the domain so you can send emails via Microsoft 365.  This confirms that you are the owner of the domain that is sending emails with that identity, which enhances security and prevents fraudulent activity.
 
 ### Is there a benefit to paying monthly vs annually?
 
