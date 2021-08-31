@@ -160,7 +160,7 @@ Global administrators can revert this change for their tenant and show identifia
   
 3. Under **choose how to show user information**, select the options you want, and then save your changes.  
   
-It'll take a few minutes for these changes to take effect on the reports in the reports dashboard. This setting also applies to the reports API. Showing identifiable user information is a logged event in the Microsoft 365 Compliance Center Audit log.   
+It'll take a few minutes for these changes to take effect on the reports in the reports dashboard. This setting also applies to the reports API. Showing identifiable user information is a logged event in the Microsoft 365 compliance center audit log.   
   
 ## What happens to usage data when a user account is closed?
 
