@@ -58,6 +58,7 @@ The tables in the following sections describe the conditions and exceptions that
 |Sender scope|condition: *FromScope* <br/> exception: *ExceptIfFromScope*|UserScopeFrom|Messages that are sent by either internal or external senders.|
 |The sender's specified properties include any of these words|condition: *SenderADAttributeContainsWords* <br/> exception: *ExceptIfSenderADAttributeContainsWords*|First property: `ADAttribute` <p> Second property: `Words`|Messages where the specified Active Directory attribute of the sender contains any of the specified words.|
 |The sender's specified properties match these text patterns|condition: *SenderADAttributeMatchesPatterns* <br/> exception: *ExceptIfSenderADAttributeMatchesPatterns*|First property: `ADAttribute` <p> Second property: `Patterns`|Messages where the specified Active Directory attribute of the sender contains text patterns that match the specified regular expressions.|
+|
 
 ### Recipients
 
@@ -74,6 +75,7 @@ The tables in the following sections describe the conditions and exceptions that
 |Sent to member of|condition: *SentToMemberOf* <br/> exception: *ExceptIfSentToMemberOf*|Addresses|Messages that contain recipients who are members of the specified distribution group, mail-enabled security group, or Microsoft 365 group. The group can be in the **To**, **Cc**, or **Bcc** fields of the message.|
 |The recipient's specified properties include any of these words |_RecipientADAttributeContainsWords_ <br/> _ExceptIfRecipientADAttributeContainsWords_|First property: `ADAttribute` <p> Second property: `Words`|Messages where the specified Active Directory attribute of a recipient contains any of the specified words. <p> Note that the **Country** attribute requires the two-letter country code value (for example, DE for Germany).|
 |The recipient's specified properties match these text patterns |_RecipientADAttributeMatchesPatterns_ <br/> _ExceptIfRecipientADAttributeMatchesPatterns_|First property: `ADAttribute` <p> Second property: `Patterns`|Messages where the specified Active Directory attribute of a recipient contains text patterns that match the specified regular expressions.|
+|
 
 ### Message subject or body
 
