@@ -82,4 +82,4 @@ Here is the ransomware protection for your tenant after this step.
 
 [![Step 2 for ransomware protection with Microsoft 365](../media/protect-against-ransomware-microsoft-365/protect-against-ransomware-microsoft-365-step2.png)](protect-against-ransomware-microsoft-365-step2.md)
 
-[Step 2. Deploy attack detection and response](protect-against-ransomware-microsoft-365-step2.md)
+Continue with [Step 2](protect-against-ransomware-microsoft-365-step2.md) to deploy attack detection and response capabilities for your Microsoft 365 tenant.

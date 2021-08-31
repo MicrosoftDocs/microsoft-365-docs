@@ -23,6 +23,7 @@ description: Step through protecting your Microsoft 365 resources from ransomwar
 
 To help protect devices against the initial access part of an attack:
 
+- Deploy [Intune](/mem/intune/fundamentals/what-is-intune) as a mobile device management (MDM) and mobile application management (MAM) provider for your devices and enroll your organization-owned devices.
 - Implement the [Common identity and device access policies](/microsoft-365/security/office-365-security/identity-access-policies) to validate the user account credentials and device health and compliance requirements.
 - Enable [Network Protection](/microsoft-365/security/defender-endpoint/network-protection) in Microsoft Defender for Endpoint and Microsoft 365 Defender.
 - Configure [site and download checking](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-available-settings) and [app and file checking](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-available-settings) in Microsoft Defender SmartScreen to block or warn.
@@ -63,7 +64,7 @@ As you implement these protections, perform change management for the following:
 
 ## Resulting configuration
 
-Here is the ransomware protection for your tenant after this step.
+Here is the ransomware protection for your tenant for steps 1-4.
 
 ![Ransomware protection for your Microsoft 365 tenant after Step 4](../media/protect-against-ransomware-microsoft-365/protect-against-ransomware-microsoft-365-architecture-step4.png)
 
@@ -71,4 +72,4 @@ Here is the ransomware protection for your tenant after this step.
 
 [![Step 5 for ransomware protection with Microsoft 365](../media/protect-against-ransomware-microsoft-365/protect-against-ransomware-microsoft-365-step5.png)](protect-against-ransomware-microsoft-365-step5.md)
 
-[Step 5. Protect information](protect-against-ransomware-microsoft-365-step5.md)
+Continue with [Step 5](protect-against-ransomware-microsoft-365-step4.md) to protect information in your Microsoft 365 tenant. 

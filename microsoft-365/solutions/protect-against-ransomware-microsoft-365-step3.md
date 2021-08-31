@@ -45,7 +45,7 @@ Use these best practices:
 
 - Implement the principle of least-privilege and maintain credential hygiene. 
 - Avoid the use of domain-wide, admin-level service accounts. 
-- Restricting local administrative privileges can help limit installation of Remote Access Trojans (RATs) and other unwanted applications.
+- Restrict local administrative privileges to limit installation of Remote Access Trojans (RATs) and other unwanted applications.
 - Use Azure AD Conditional Access to explicitly validate the trust of users and workstations before allowing access to administrative portals. See [this example](/azure/active-directory/conditional-access/howto-conditional-access-policy-azure-management) for the Azure portal.
 - Enable Local Admin password management.
 - Determine where highly privileged accounts are signing in and exposing credentials. Highly privileged accounts should not be present on workstations.
@@ -62,7 +62,7 @@ Users in your organization must be made aware of:
 
 ## Resulting configuration
 
-Here is the ransomware protection for your tenant after this step.
+Here is the ransomware protection for your tenant for steps 1-3.
 
 ![Ransomware protection for your Microsoft 365 tenant after Step 3](../media/protect-against-ransomware-microsoft-365/protect-against-ransomware-microsoft-365-architecture-step3.png)
 
@@ -70,4 +70,4 @@ Here is the ransomware protection for your tenant after this step.
 
 [![Step 4 for ransomware protection with Microsoft 365](../media/protect-against-ransomware-microsoft-365/protect-against-ransomware-microsoft-365-step4.png)](protect-against-ransomware-microsoft-365-step4.md)
 
-[Step 4. Protect devices](protect-against-ransomware-microsoft-365-step4.md)
+Continue with [Step 4](protect-against-ransomware-microsoft-365-step4.md) to protect devices (endpoints) in your Microsoft 365 tenant. 

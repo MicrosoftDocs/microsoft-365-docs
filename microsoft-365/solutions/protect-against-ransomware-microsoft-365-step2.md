@@ -69,7 +69,7 @@ Microsoft 365 Defender combines threat signals into alerts and connected alerts 
 
 ## Resulting configuration
 
-Here is the ransomware protection for your tenant after this step.
+Here is the ransomware protection for your tenant for steps 1 and 2.
 
 ![Ransomware protection for your Microsoft 365 tenant after Step 2](../media/protect-against-ransomware-microsoft-365/protect-against-ransomware-microsoft-365-architecture-step2.png)
 
@@ -77,4 +77,4 @@ Here is the ransomware protection for your tenant after this step.
 
 [![Step 3 for ransomware protection with Microsoft 365](../media/protect-against-ransomware-microsoft-365/protect-against-ransomware-microsoft-365-step3.png)](protect-against-ransomware-microsoft-365-step3.md)
 
-[Step 3. Protect identities](protect-against-ransomware-microsoft-365-step3.md)
+Continue with [Step 3](protect-against-ransomware-microsoft-365-step3.md) to protect identities in your Microsoft 365 tenant.

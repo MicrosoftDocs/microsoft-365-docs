@@ -28,6 +28,10 @@ Once the attack is complete, an attacker demands money from victims in exchange 
 
 A human-operated ransomware attack can be catastrophic to businesses of all sizes and are difficult to clean up, requiring complete adversary eviction to protect against future attacks. Unlike commodity ransomware, human-operated ransomware can continue to threaten businesses operations after the initial ransom incident.
 
+>[!Note]
+>A ransomware attack assumes that the attacker has valid user account credentials for a tenant and has access to all of the files and resources that are permitted to the user account. Microsoft 365 provides default and enhanced at rest encryption for data that are not accessible to an attacker without valid user account credentials. For more information, see [Encryption and key management overview](/compliance/assurance/assurance-encryption).
+>
+
 ## Ransomware mitigation and recovery capabilities provided with Microsoft 365
 
 A ransomware attacker that has infiltrated a Microsoft 365 tenant can attempt to create financial leverage by:
@@ -46,7 +50,7 @@ Files in SharePoint and OneDrive for Business are protected by:
 
    Microsoft 365 retains a minimum of 500 versions of a file by default and can be configured to retain more. 
 
-   To minimize the burden on your security and helpdesk staff, train your users on how to retrieve previous versions of files.
+   To minimize the burden on your security and helpdesk staff, train your users on how to [restore previous versions of files](https://support.microsoft.com/office/restore-a-previous-version-of-an-item-or-file-in-sharepoint-f66dbda0-81f4-4d1e-b08c-793265c58934).
 
 - Recycle bin
 
@@ -73,7 +77,7 @@ Email is protected by:
 
 ### Encrypting files in place
 
-As previously described, files in SharePoint and OneDrive for Business are protected from encryption by:
+As previously described, files in SharePoint and OneDrive for Business are protected from malicious encryption by:
 
 - Versioning
 - Recycle bin
@@ -87,7 +91,7 @@ You can prevent a ransomware attacker from copying files outside your tenant wit
 
 - [Data Loss Prevention (DLP)](/microsoft-365/compliance/dlp-learn-about-dlp) policies
 
-   Detect, warn, and block risky, inadvertent, or inappropriate sharing of data containing personal or confidential information, both internally and externally:
+    Detect, warn, and block risky, inadvertent, or inappropriate sharing of data containing personal or confidential information, both internally and externally:
 
     - Personal information such as personally identifying information (PII) for compliance with regional privacy regulations.
 
@@ -126,30 +130,30 @@ To protect your Microsoft 365 tenant from a ransomware attack, use these Microso
 
 | Capability or feature | Description | Helps... | Licensing |
 |:-------|:-----|:-------|:-------|
-| Microsoft Secure Score |  Feature of Microsoft 365 Defender that measures the security posture of a Microsoft 365 tenant. | Assess your security configuration and provide suggestions to improve it | E3 or E5 |
-| Attack surface reduction rules | Configuration settings to reduce your organization's vulnerability to cyberthreats and attacks. | Block suspicious activity and vulnerable content | E3 or E5 |
-| Exchange email settings |  Enables services to reduce your organization's vulnerability to an email-based attack. | Prevent initial access to your tenant through phishing and other email-based attacks  | E3 or E5 |
-| Windows, Edge, and Microsoft 365 Apps for Enterprise settings | Industry-standard security configurations that are broadly known and well-tested. | Prevent attacks through Windows, Edge, and Microsoft 365 Apps for Enterprise | E3 or E5 |
+| Microsoft Secure Score |  Feature of Microsoft 365 Defender that measures the security posture of a Microsoft 365 tenant. | Assess your security configuration and provide suggestions to improve it | Microsoft 365 E3 or Microsoft 365 E5 |
+| Attack surface reduction rules | Configuration settings to reduce your organization's vulnerability to cyberthreats and attacks. | Block suspicious activity and vulnerable content | Microsoft 365 E3 or Microsoft 365 E5 |
+| Exchange email settings |  Enables services to reduce your organization's vulnerability to an email-based attack. | Prevent initial access to your tenant through phishing and other email-based attacks  | Microsoft 365 E3 or Microsoft 365 E5 |
+| Windows, Edge, and Microsoft 365 Apps for Enterprise settings | Industry-standard security configurations that are broadly known and well-tested. | Prevent attacks through Windows, Edge, and Microsoft 365 Apps for Enterprise | Microsoft 365 E3 or Microsoft 365 E5 |
 |
 
 ### 2. Detection and response
 
 | Capability or feature | Description | Helps detect and respond to... | Licensing |
 |:-------|:-----|:-------|:-------|
-| [Microsoft 365 Defender](/microsoft-365/security/defender) | Combines signals and orchestrates capabilities into a single solution. Enables security professionals to stitch together threat signals and determine the full scope and impact of a threat. Microsoft 365 Defender takes automatic actions to prevent or stop the attack and self-heal affected mailboxes, endpoints, and user identities. | Incidents, which are the combined alerts and data that make up an attack | E5 |
-| [Microsoft Defender for Identity](/defender-for-identity/what-is) |  A cloud-based security solution that uses your on-premises Active Directory Domain Services (AD DS) signals to identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions directed at your organization. Focus on Microsoft Defender for Identity next because it protects your on-premises and cloud infrastructure, has no dependencies or prerequisites, and can provide immediate security benefits. | Credential compromise for AD DS accounts | E5 |
-| [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security) | Safeguards your organization against malicious threats posed by email messages, links (URLs), and collaboration tools. Protects against malware, phishing, spoofing, and other attack types. Configuring Microsoft Defender for Office 365 is recommended because change control, migrating settings from incumbent system, and other considerations can take longer to deploy. | Phishing attacks | E5 |
-| [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint) | Helps prevent, detect, investigate, and respond to advanced threats across devices (also referred to as endpoints). | Malware installation | E5 |
-| [Azure AD Identity Protection](/azure/active-directory/identity-protection/) | Automates the detection and remediation of identity-based risks and investigate those risks. | Credential compromise for Azure AD accounts and privilege escalation | E5 |
-| [Microsoft Cloud App Security](/cloud-app-security) | A cloud access security broker for discovery, investigation, and governance. | Lateral movement and data exfiltration | E5 |
+| Microsoft 365 Defender | Combines signals and orchestrates capabilities into a single solution. Enables security professionals to stitch together threat signals and determine the full scope and impact of a threat. Microsoft 365 Defender takes automatic actions to prevent or stop the attack and self-heal affected mailboxes, endpoints, and user identities. | Incidents, which are the combined alerts and data that make up an attack | Microsoft 365 E5 or Microsoft 365 E3 with the Microsoft 365 E5 Security add-on |
+| Microsoft Defender for Identity |  A cloud-based security solution that uses your on-premises Active Directory Domain Services (AD DS) signals to identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions directed at your organization. Focus on Microsoft Defender for Identity next because it protects your on-premises and cloud infrastructure, has no dependencies or prerequisites, and can provide immediate security benefits. | Credential compromise for AD DS accounts | Microsoft 365 E5 or Microsoft 365 E3 with the Microsoft 365 E5 Security add-on |
+| Microsoft Defender for Office 365 | Safeguards your organization against malicious threats posed by email messages, links (URLs), and collaboration tools. Protects against malware, phishing, spoofing, and other attack types. Configuring Microsoft Defender for Office 365 is recommended because change control, migrating settings from incumbent system, and other considerations can take longer to deploy. | Phishing attacks | Microsoft 365 E5 or Microsoft 365 E3 with the Microsoft 365 E5 Security add-on |
+| Microsoft Defender for Endpoint | Helps prevent, detect, investigate, and respond to advanced threats across devices (also referred to as endpoints). | Malware installation | Microsoft 365 E5 or Microsoft 365 E3 with the Microsoft 365 E5 Security add-on |
+| Azure AD Identity Protection | Automates the detection and remediation of identity-based risks and investigate those risks. | Credential compromise for Azure AD accounts and privilege escalation | Microsoft 365 E5 or Microsoft 365 E3 with the Microsoft 365 E5 Security add-on |
+| Microsoft Cloud App Security | A cloud access security broker for discovery, investigation, and governance. | Lateral movement and data exfiltration | Microsoft 365 E5 or Microsoft 365 E3 with the Microsoft 365 E5 Security add-on |
 |
 
 ### 3. Identities
 
 | Capability or feature | Description | Helps prevent... | Licensing |
 |:-------|:-----|:-------|:-------|
-|MFA enforced with Conditional Access|Require MFA based on the properties of the sign-in with Conditional Access policies.|Credential compromise and access|Microsoft 365 E3 or E5|
-|MFA enforced with risk-based Conditional Access|Require MFA based on the risk of the user sign-in with Azure AD Identity protection.|Credential compromise and access|Microsoft 365 E5 or E3 with Azure AD Premium P2 licenses|
+|MFA enforced with Conditional Access|Require MFA based on the properties of the sign-in with Conditional Access policies.|Credential compromise and access|Microsoft 365 E3 or Microsoft 365 E5|
+|MFA enforced with risk-based Conditional Access|Require MFA based on the risk of the user sign-in with Azure AD Identity protection.|Credential compromise and access|Microsoft 365 E5 or Microsoft 365 E3 with the Microsoft 365 E5 Security add-on|
 |
 
 ### 4. Devices
@@ -165,21 +169,21 @@ For Windows 10 devices:
 
 | Capability or feature | Description | Helps... | Licensing |
 |:-------|:-----|:-------|:-------|
-| Microsoft Defender Firewall | A host-based firewall.  | Prevent attacks from inbound, unsolicited network traffic. | E3 and E5 |
-| Microsoft Defender Antivirus | Antimalware solution that uses machine learning, big-data analysis, in-depth threat resistance research, and the Microsoft cloud infrastructure to protect devices (or endpoints) in your organization. | Prevent installation and running of malware. | E3 and E5 |
-| Microsoft Defender SmartScreen | Protects against phishing or malware websites and applications, and the downloading of potentially malicious files. | To block or warn when checking sites, downloads, apps, and files. | E3 and E5 |
-| Microsoft Defender for Endpoint | Helps prevent, detect, investigate, and respond to advanced threats across devices (also referred to as endpoints). | With tampering protection and network protection | E5 |
+| Microsoft Defender Firewall | A host-based firewall.  | Prevent attacks from inbound, unsolicited network traffic. | Microsoft 365 E3 or Microsoft 365 E5 |
+| Microsoft Defender Antivirus | Antimalware solution that uses machine learning, big-data analysis, in-depth threat resistance research, and the Microsoft cloud infrastructure to protect devices (or endpoints) in your organization. | Prevent installation and running of malware. | Microsoft 365 E3 or Microsoft 365 E5 |
+| Microsoft Defender SmartScreen | Protects against phishing or malware websites and applications, and the downloading of potentially malicious files. | To block or warn when checking sites, downloads, apps, and files. | Microsoft 365 E3 or Microsoft 365 E5 |
+| Microsoft Defender for Endpoint | Helps prevent, detect, investigate, and respond to advanced threats across devices (also referred to as endpoints). | With tampering protection and network protection | Microsoft 365 E5 or Microsoft 365 E3 with the Microsoft 365 E5 Security add-on |
 |  |  |  |  |
 
 ### 5. Information
 
 | Capability or feature | Description | Helps... | Licensing |
 |:-------|:-----|:-------|:-------|
-| Insider risk management | Define specific policies to identify risk indicators and to take action to mitigate these risks. | Identify, triage, and act on risky user activity. | E5 |
-| Privileged access management | Limits standing access to sensitive data or access to critical configuration settings | Prevent an attacker from performing administration tasks. | E5 |
-| Data loss prevention (DLP) | Protects sensitive data and reduces risk by preventing users from inappropriately sharing it. | Prevent data exfiltration. | E3 and E5 |
+| Controlled folder access | Protects your data by checking apps against a list of known, trusted apps. | Prevent files from being altered or encrypted by ransomware. | Microsoft 365 E3 or Microsoft 365 E5 |
+| Microsoft Information Protection | Sensitivity labels can be applied them to ransomable information. | Prevent use of exfiltrated resources. | Microsoft 365 E3 or Microsoft 365 E5 |
+| Data loss prevention (DLP) | Protects sensitive data and reduces risk by preventing users from inappropriately sharing it. | Prevent data exfiltration. | Microsoft 365 E3 or Microsoft 365 E5 |
+| Microsoft Cloud App Security | A cloud access security broker for discovery, investigation, and governance. | Prevent lateral movement and data exfiltration. | Microsoft 365 E5 or Microsoft 365 E3 with the Microsoft 365 E5 Security add-on |
 |
-
 
 <!--
 
@@ -194,18 +198,18 @@ These features of information protection and compliance cannot provide protectio
 | Customer key |  |  |
 | BYOK/HYOK |  |  |
 
-- Microsoft 365 E5 subscription (paid or trial version)
-- Microsoft 365 E3 subscription + the Microsoft 365 E5 Compliance add-on
-- Microsoft 365 E3 subscription + the Microsoft 365 E5 Insider Risk Management add-on
-- Microsoft 365 A5 subscription (paid or trial version)
-- Microsoft 365 A3 subscription + the Microsoft 365 A5 Compliance add-on
-- Microsoft 365 A3 subscription + the Microsoft 365 A5 Insider Risk Management add-on
-- Microsoft 365 G5 subscription (paid or trial version)
-- Microsoft 365 G5 subscription + the Microsoft 365 G5 Compliance add-on
-- Microsoft 365 G5 subscription + the Microsoft 365 G5 Insider Risk Management add-on
-- Office 365 Enterprise E5 subscription (paid or trial version)
-- Office 365 A5 subscription (paid or trial version)
-- Office 365 Enterprise E3 subscription + the Office 365 Advanced Compliance add-on (no longer available for new subscriptions)
+Microsoft 365 E5 subscription (paid or trial version)
+Microsoft 365 E3 subscription + the Microsoft 365 E5 Compliance add-on
+Microsoft 365 E3 subscription + the Microsoft 365 E5 Insider Risk Management add-on
+Microsoft 365 A5 subscription (paid or trial version)
+Microsoft 365 A3 subscription + the Microsoft 365 A5 Compliance add-on
+Microsoft 365 A3 subscription + the Microsoft 365 A5 Insider Risk Management add-on
+Microsoft 365 G5 subscription (paid or trial version)
+Microsoft 365 G5 subscription + the Microsoft 365 G5 Compliance add-on
+Microsoft 365 G5 subscription + the Microsoft 365 G5 Insider Risk Management add-on
+Office 365 Enterprise E5 subscription (paid or trial version)
+Office 365 A5 subscription (paid or trial version)
+Office 365 Enterprise E3 subscription + the Office 365 Advanced Compliance add-on (no longer available for new subscriptions)
 
 | Capability or feature | Description | Helps prevent... | Licensing |
 |:-------|:-----|:-------|:-------|
@@ -227,12 +231,12 @@ This solution will identify when a new configuration or recommended security pol
 
 ## Next steps
 
-[![Step 1 for ransomware protection with Microsoft 365](../media/protect-against-ransomware-microsoft-365/protect-against-ransomware-microsoft-365-step1.png)](protect-against-ransomware-microsoft-365-step1.md)
-
-Use these steps:
+Use these steps to deploy comprehensive protection for your Microsoft 365 tenant:
 
 1. [Configure security baselines](protect-against-ransomware-microsoft-365-step1.md)
 2. [Deploy attack detection and response](protect-against-ransomware-microsoft-365-step2.md)
 3. [Protect identities](protect-against-ransomware-microsoft-365-step3.md)
 4. [Protect devices](protect-against-ransomware-microsoft-365-step4.md)
 5. [Protect information](protect-against-ransomware-microsoft-365-step5.md)
+
+[![Step 1 for ransomware protection with Microsoft 365](../media/protect-against-ransomware-microsoft-365/protect-against-ransomware-microsoft-365-step1.png)](protect-against-ransomware-microsoft-365-step1.md)
