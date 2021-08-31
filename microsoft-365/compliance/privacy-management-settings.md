@@ -20,8 +20,6 @@ description: "Learn about the global settings options for privacy management."
 
 # Manage privacy management settings (preview)
 
-In this article: learn about **settings** options for privacy management.
-
 The global settings options for privacy management can be found under the gear icon in the upper right corner of the main pages. These options allow you to set high-level preferences and customize key properties. This page provides an overview of the main Settings categories.
 
 ## Anonymization
