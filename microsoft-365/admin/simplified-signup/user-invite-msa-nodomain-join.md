@@ -49,16 +49,18 @@ Download and start using [Office apps for business](https://support.microsoft.co
 
 ### The webpage is asking me to agree that my business has access to my name, sign-in and other information – what does that mean?
 
-In virtually all cases, any documents and chats you save into the Microsoft 365 cloud (OneDrive, Teams) using your Gmail, Outlook, Yahoo or other email account **won't be** accessible by your technical admin.  You own your documents and chats.
+In virtually all cases, any documents and chats you save into the Microsoft 365 cloud (OneDrive, Teams) using your Gmail, Outlook, Yahoo or other email account **won't be** accessible by your technical admin. You own your documents and chats.
 
 However, as part of setting up Microsoft 365 business, you are consenting that your technical admin will have access to a limited amount of account information, specifically, your account information, such as your name, profile picture, email address, and your sign-in details and activity.
+
+For further information about data privacy, refer to the [Terms of use](https://ssu.office.com/terms/en-US/smb_eula.txt).
 
 ### How can I leave this business (and stop using this license)?
 
 There are two options:
 
 - Your admin can remove you as a user
-- You can also visit https://myaccount.microsoft.com/ and remove yourself from there.
+- You can also visit [https://myapps.microsoft.com/](https://myapps.microsoft.com/) and remove yourself from there.
 
 ### I’m getting an error saying I’m part of another business.  What do I do?
 

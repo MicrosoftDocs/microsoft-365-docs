@@ -75,12 +75,12 @@ Your data will remain in your old account, nothing will be deleted.  You will be
 
 ### How can I copy data to my business account?
 
-- For steps on copying your data from your old OneDrive account to your new OneDrive for business account, check out: [Migrate data to my Microsoft 365 Business Standard subscription](migrate-data-business-standard.md).
+<!--- For steps on copying your data from your old OneDrive account to your new OneDrive for business account, check out: [Migrate data to my Microsoft 365 Business Standard subscription](migrate-data-business-standard.md).-->
 - For moving emails or contacts, check out: [Migrate email and contacts to Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/migrate-email-and-contacts-admin).
 
 ### Why does it say my admin now handles my data?
 
-When using an upgraded Microsoft 365 Business account, your documents, email and data that you create within Microsoft Office (and within other apps in the Microsoft 365 business suite) will be owned by the technical administrator in your organization. For example, the person who sent you the invitation email or your business owner. Learn more at...
+When using an upgraded Microsoft 365 Business account, your documents, email and data that you create within Microsoft Office (and within other apps in Microsoft 365 Business Standard) will be owned by the technical administrator in your organization. For example, the person who sent you the invitation email or your business owner.
 
 ### How do I get started with my new account?
 
@@ -95,7 +95,6 @@ No it doesn’t, you can still login the same way as before.
 - When you launch Microsoft Outlook using your new business account, your new mailbox will be automatically set up for you.
 - First follow: [Set up Outlook for business email](../../business-video/setup-outlook.md).
 - Then follow: [Create and send email in Outlook](https://support.microsoft.com/office/create-and-send-email-in-outlook-19c32deb-08b6-4f90-a211-02bc5f77f360).
-
 
 <!--1. Open any of your Microsoft 365 apps, like Word, Excel or PowerPoint, select your profile icon and then **Sign in with a different account**. Follow the steps and choose **Next** to set up Outlook.
 

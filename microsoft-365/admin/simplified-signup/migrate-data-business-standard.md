@@ -99,7 +99,7 @@ If you were using Outlook with another email account, you can import your previo
 
     This time, select **Import from another program or file** and follow the steps to import the backup file you created when you exported your old email.
 
-## Watch: Import and redirect email
+### Watch: Import and redirect email
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/40f7df36-9e24-44e5-8791-e9ed0dd8fd21?autoplay=false]
   
@@ -111,24 +111,23 @@ You can also use Exchange admin center to import everyone's email. For more info
 
 1. Open Microsoft Teams, select your profile icon, and then **Add work or school account**.
 
-2. Follow the steps to add your new account to Teams for Business Standard. Check out [Sign in and get started with Teams](https://support.microsoft.com/office/sign-in-and-get-started-with-teams-6723dc43-dbc0-46e6-af49-8a2d1c5cb937) for more info.
+2. Follow the steps to add your new account to Teams for work. Check out [Sign in and get started with Teams](https://support.microsoft.com/office/sign-in-and-get-started-with-teams-6723dc43-dbc0-46e6-af49-8a2d1c5cb937) for more info.
 
 ### Access Teams chats
 
 When you start using Teams with your new work account your data won’t be migrated over. The best way to see your old chats is to open your old Teams account and new work account side by side. You can do this by selecting the ME icon on the top right of Teams and choosing the account’s you’d like to open. You can start using Teams with your new work account  with your colleagues. Make sure to tell other users you chat with to start contacting you using your new Teams for work account.
 
-### Teams meetings
+### Microsoft Teams meetings
 
-You can start creating new Teams meetings once you’ve got Teams for business set up, delete your original Teams meetings and recreate the meetings in Teams for work. This will allow you to access richer functionality - for example, calendar availability when scheduling, and the ability to record meetings. You can only delete meetings from your own Teams calendar, so make sure you let people who you have meetings with know that you’ll be recreating your meetings.  As you transition to use Teams for Work for your meetings, if people who should be in your meetings are missing, contact them to make sure they haven’t joined old meeting link.
+Once you have your new Microsoft Teams account for work set up, you can recreate your meetings in the Teams calendar. Remember to delete the original meetings in your old Teams account. This will allow you to access richer functionality - for example, calendar availability when scheduling, and the ability to record meetings. You can only delete meetings from your own Teams calendar, so make sure you let people who you have meetings with know that you’ll be recreating your meetings. As you transition to use your new Teams account for your meetings, if people who should be in your meetings are missing, contact them to make sure they haven’t joined old meeting link.
 
 ### Migrating contacts
 
-To move your Teams for life contacts over to Teams for work, find the contact’s email address and add the user to your new Teams for work account.
+To move your Teams contacts over to your new Teams account, find the contact’s email address and add the user to your new Teams account.
 
 ## Related content
 
 [Import or migrate email from Gmail or another email provider to Microsoft 365](../setup/migrate-email-and-contacts-admin.md)
-
 
 <!--## Download desktop apps
 
