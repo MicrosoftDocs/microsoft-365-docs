@@ -80,7 +80,7 @@ The Azure AD Connect tool configures the AD FS servers, the web application prox
     
 7. On the **User sign-in** page, click **Federation with AD FS**, and then click **Next**.
     
-8. On the **Connect to Azure AD** page, type the name and password of a global administrator account for your Microsoft 365 subscription, and then click **Next**.
+8. On the **Connect to Azure AD** page, type the name and password of a **Azure AD DC admin**, or **Global admin** account for your Microsoft 365 subscription, and then click **Next**.
     
 9. On the **Connect your directories** page, ensure that your on-premises Active Directory Domain Services (AD DS) forest is selected in **Forest**, type the name and password of a domain administrator account, click **Add Directory**, and then click **Next**.
     
