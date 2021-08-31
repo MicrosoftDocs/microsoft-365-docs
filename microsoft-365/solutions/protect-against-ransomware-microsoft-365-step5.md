@@ -21,13 +21,13 @@ description: Step through protecting your Microsoft 365 resources from ransomwar
 
 # Step 5. Protect information
 
-Because ransomware attackers will also look at your on-premises data on file, database, and other types of servers, one of the best ways to protect that data is to migrate it to your Microsoft 365 tenant. Once there, it can be protected by built-in mitigation and recovery features such as versioning, recycle bin, and the Preservation Hold library.
+Because ransomware attackers will also look at your on-premises data on file, database, and other types of servers, one of the best ways to protect that data is to migrate it to your Microsoft 365 tenant. Once there, it can be protected by built-in mitigation and recovery features such as [versioning, recycle bin, and the Preservation Hold library](protect-against-ransomware-microsoft-365.md#ransomware-mitigation-and-recovery-capabilities-provided-with-microsoft-365).
 
-Providing additional protection your ransomable information in your Microsoft 365 tenant consists of:
+To provide additional protection of your ransomable information in your Microsoft 365 tenant:
 
-- Locating the ransomable information.
-- Implementing strict permissions and eliminating broad access (for example, too many users having write, edit, and delete abilities).
-- Protecting your ransomable information.
+- Locate your ransomable information
+- Implement strict permissions and eliminating broad access (for example, too many users having write, edit, and delete abilities)
+- Protect your ransomable information
 
 ## Locate your ransomable information
 
@@ -35,7 +35,7 @@ The first task is to identify the types and locations of ransomable information 
 
 - Sensitive
 - Proprietary or intellectual property
-- Regulated, such regional regulations that specify protection of personally identifiable information (PII)
+- Regulated, such regional regulations that specify protection of personally identifying information (PII)
 - IT recovery plans
 
 For each type of ransomable information, determine the following:
@@ -66,12 +66,12 @@ For ransomable information, you must make the level of difficulty as high as you
 
 You can ensure strict permissions in your tenant with these steps:
 
-1. From the effort to locate your ransomable information, review the permissions for the locations of ransomable information. 
-2. Implement the minimum permissions for the ransomable information while meeting collaboration and business requirements and inform the users that are affected.
-3. Perform change management for your users so that future locations for ransomable information are created and maintained with the minimum permissions.
+1. From the effort to [locate your ransomable information](#locate-your-ransomable-information), review the permissions for the locations of ransomable information. 
+2. Implement strict permissions for the ransomable information while meeting collaboration and business requirements and inform the users that are affected.
+3. Perform change management for your users so that future locations for ransomable information are created and maintained with strict permissions.
 4. Audit and monitor the locations for ransomable information to ensure that broad permissions aren't being granted.
 
-An example of a communication and collaboration venue with minimal permissions for sensitive information is a [team with security isolation](/microsoft-365/solutions/secure-teams-security-isolation).
+An example of a communication and collaboration venue with strict permissions for sensitive information is a [team with security isolation](/microsoft-365/solutions/secure-teams-security-isolation).
 
 ## Protect your ransomable information
 
@@ -79,7 +79,7 @@ To protect your ransomable information in case a ransomware attacker has access 
 
 - Use [controlled folder access](/windows/security/threat-protection/microsoft-defender-atp/controlled-folders) to make it more difficult for unauthorized applications to modify the data in controlled folders.
 
-- Use [Microsoft Information Protection](/microsoft-365/compliance/information-protection) and sensitivity labels and apply them to ransomable information. Sensitivity labels can be configured for additional encryption and permissions with defined user accounts and allowed actions. A file labeled with this type of sensitivity label that is exfiltrated from your tenant will only be useable to a user account defined in the permissions.
+- Use [Microsoft Information Protection](/microsoft-365/compliance/information-protection) and sensitivity labels and apply them to ransomable information. Sensitivity labels can be configured for additional encryption and permissions with defined user accounts and allowed actions. A file labeled with this type of sensitivity label that is exfiltrated from your tenant will only be useable to a user account defined in the label.
 
 - Use Microsoft 365 [Data Loss Prevention (DLP)](/microsoft-365/compliance/dlp-learn-about-dlp) to detect, warn, and block risky, inadvertent, or inappropriate sharing of data containing personal or confidential information based on sensitivity labels, both internally and externally.
 
@@ -91,7 +91,7 @@ Administrative changes to broad permissions can lead to users being denied acces
 
 Additionally, for the protection of ransomable information in your Microsoft 365 tenant, train your users to:
 
-- Create communication and collaboration venues with the minimum set of user accounts for access and the minimal allowed actions for each. 
+- Create communication and collaboration venues with strict permissions (the minimum set of user accounts for access and the minimum allowed actions for each). 
 - Apply the proper sensitivity labels to ransomable information.
 - Use controlled folder access.
 

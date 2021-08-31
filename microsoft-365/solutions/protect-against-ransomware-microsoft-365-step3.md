@@ -27,11 +27,11 @@ Use the following sections to protect your organization from credential compromi
 
 First, use these password best practices:
 
-- Block known weak and custom passwords with Azure AD Password Protection.
+- Block known weak and custom passwords with Azure Active Dorectory (Azure AD) Password Protection.
 - Extend blocking of known weak and custom passwords to your on-premises Active Directory Domain Services (AD DS) with Azure AD Password Protection.
 - Allow your users to change their own passwords with Self-Service Password Reset (SSPR).
 
-Next, implement the [Common identity and device access policies](/microsoft-365/security/office-365-security/identity-access-policies). These policies provide higher security for access to Microsoft 365 cloud services, including on-premises applications published with Azure AD Application Proxy. 
+Next, implement the [Common identity and device access policies](/microsoft-365/security/office-365-security/identity-access-policies). These policies provide higher security for access to Microsoft 365 cloud services. 
 
 For user sign-ins, these policies include:
 

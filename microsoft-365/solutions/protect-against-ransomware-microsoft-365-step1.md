@@ -33,30 +33,30 @@ These baselines contain configuration settings and rules that are well-known by 
 
 First, assess and measure your security posture using [Microsoft Secure Score](/microsoft-365/security/defender/microsoft-secure-score) and follow instructions to improve it as needed.
 
-Next, use [attack surface reduction rules](/microsoft-365/security/defender-endpoint/attack-surface-reduction) to help block suspicious activity and vulnerable content:
+Next, use [attack surface reduction rules](/microsoft-365/security/defender-endpoint/attack-surface-reduction) to help block suspicious activity and vulnerable content.
 
-- Block all Office applications from creating child processes
-- Block executable content from email client and webmail
-- Block executable files from running unless they meet a prevalence, age, or trusted list criterion
-- Block execution of potentially obfuscated scripts
-- Block JavaScript or VBScript from launching downloaded executable content
-- Block Office applications from creating executable content
-- Block Office applications from injecting code into other processes
-- Block Office communication application from creating child processes
-- Block untrusted and unsigned processes that run from USB
-- Block persistence through WMI event subscription
-- Block credential stealing from the Windows local security authority subsystem (lsass.exe)
-- Block process creations originating from PSExec and WMI commands
+- All Office applications from creating child processes
+- Executable content from email client and webmail
+- Executable files from running unless they meet a prevalence, age, or trusted list criterion
+- Execution of potentially obfuscated scripts
+- JavaScript or VBScript from launching downloaded executable content
+- Office applications from creating executable content
+- Office applications from injecting code into other processes
+- Office communication application from creating child processes
+- Untrusted and unsigned processes that run from USB
+- Persistence through WMI event subscription
+- Credential stealing from the Windows local security authority subsystem (lsass.exe)
+- Process creations originating from PSExec and WMI commands
 
 ## Exchange email management baseline 
 
 Help prevent initial access to your tenant from an email-based attack with these Exchange email baseline settings:
 
-- Enable Microsoft Defender Antivirus email scanning
-- Use Microsoft Defender for Office 365 for [enhanced phishing protection](/microsoft-365/security/office-365-security/anti-phishing-protection) and coverage against new threats and polymorphic variants
-- Check your Office 365 email filtering settings to ensure you block spoofed emails, spam, and emails with malware. Use Microsoft Defender for Office 365 for enhanced phishing protection and coverage against new threats and polymorphic variants. Configure Microsoft Defender for Office 365 to [recheck links on click](/microsoft-365/security/office-365-security/atp-safe-links) and [delete delivered mails](/microsoft-365/security/office-365-security/zero-hour-auto-purge) in response to newly acquired threat intelligence
-- Review and update to the latest [recommended settings for EOP and Microsoft Defender for Office 365 security](/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365-atp)
-- Configure Microsoft Defender for Office 365 to [recheck links on click](/microsoft-365/security/office-365-security/set-up-safe-links-policies) and delete delivered mails in response to newly acquired threat intelligence
+- Enable Microsoft Defender Antivirus email scanning.
+- Use Microsoft Defender for Office 365 for [enhanced phishing protection](/microsoft-365/security/office-365-security/anti-phishing-protection) and coverage against new threats and polymorphic variants.
+- Check your Office 365 email filtering settings to ensure you block spoofed emails, spam, and emails with malware. Use Microsoft Defender for Office 365 for enhanced phishing protection and coverage against new threats and polymorphic variants. Configure Microsoft Defender for Office 365 to [recheck links on click](/microsoft-365/security/office-365-security/atp-safe-links) and [delete delivered mails](/microsoft-365/security/office-365-security/zero-hour-auto-purge) in response to newly acquired threat intelligence.
+- Review and update to the latest [recommended settings for EOP and Microsoft Defender for Office 365 security](/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365-atp).
+- Configure Microsoft Defender for Office 365 to [recheck links on click](/microsoft-365/security/office-365-security/set-up-safe-links-policies) and delete delivered mails in response to newly acquired threat intelligence.
 
 ## Additional baselines
 
@@ -68,7 +68,7 @@ Apply [security baselines](https://techcommunity.microsoft.com/t5/microsoft-secu
 
 ## Impact on users and change management
 
-As a best practice for an attack surface reduction rule, assess how an attack surface reduction rule might impact your network by opening the security recommendation for that rule in threat and vulnerability management. The recommendation details pane describes the user impact, which you can use to determine what percentage of your devices can accept a new policy enabling the rule in blocking mode without adverse impact to user productivity.
+As a best practice for an attack surface reduction rule, assess how a rule might impact your network by opening the security recommendation for that rule in threat and vulnerability management. The recommendation details pane describes the user impact, which you can use to determine what percentage of your devices can accept a new policy enabling the rule in blocking mode without adverse impact to user productivity.
 
 ## Resulting configuration
 

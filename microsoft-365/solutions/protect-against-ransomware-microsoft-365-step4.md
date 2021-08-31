@@ -32,7 +32,7 @@ To help protect devices against the initial access part of an attack:
 
 To help protect against the lateral movement part of an attack from a Windows 10 device:
 
-- [Turn on Microsoft Defender Firewall](https://support.microsoft.com/windows/turn-microsoft-defender-firewall-on-or-off-ec0844f7-aebd-0583-67fe-601ecf5d774f) for your Windows 10 devices.
+- [Turn on Microsoft Defender Firewall](https://support.microsoft.com/windows/turn-microsoft-defender-firewall-on-or-off-ec0844f7-aebd-0583-67fe-601ecf5d774f).
 - [Update Microsoft Defender Antivirus definitions](/en-us/microsoft-365/security/defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus).
 
 To reduce the impact of the attack:
