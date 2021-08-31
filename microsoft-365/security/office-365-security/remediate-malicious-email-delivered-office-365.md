@@ -125,13 +125,12 @@ Open any remediation item to view details about it, including its name, creation
 
   - **Failure**: The desired action on remediable emails failed. For example: An admin wants to remove emails from mailboxes, so the admin takes the action of soft-deleting emails. If a remediable email is still found in the mailbox after the action is taken, status will show as failed.
 
-  - **NEW**: Addition of column "Already in destination" in Action Log: Since we've got the latest delivery location in Explorer and we want to utilize it for making smarter moves across the experiences, we are utilizing the latest delivery location in remediation by not sending signals to remediate if the message has already been remediated. This will help you understand the exact number of messages that need to be remediated. As we will not be remediating already remediated messages with the same actions, we are introducing another column named "Already in destination". This means that the action you wish to perform was taken previously on the email, hence the email is already present in the destination folder. Since actions can only be taken on messages in inbox, junk, deleted folder, and soft deleted folder from Explorer, these are remediable messages. So this column shows only messages that are remediable. For instance, a soft delete action is performed on the message present in the inbox, then the message will get successfully actioned. The next time a soft delete is performed on the same message, it will show under the column "Already in destination".
-Already in destination" count is a part of remediable count. So,
-    Remediable = Successful + Failed + Already in destination 
-For most of the cases, unless there are ingestion delays where signals tend to get delayed/ lost sometimes.
+  - **New**: An *Already in destination* column has been added in the Action Log. This feature uses the latest delivery location in Threat Explorer to signal if the mail has already been remediated. *Already in destination* will help security teams understand the total number of messages that still need to be addressed.
+				
+Actions can only be taken on messages in Inbox, Junk, Deleted, and Soft Deleted folders of Threat Explorer. Here's an example of how the new column works. A *soft delete action* takes place on the message present in the Inbox, then the message will be handled according to policies. The next time a soft delete is performed, this message will show under the column 'Already in destination' signaling it doesn't need to be addressed again.
 
-  Select any item in the action log to display remediation details. If the details say "successful" or "not found in mailbox", that item was already removed from the mailbox. Sometimes there's a systemic error during remediation. In those cases, it's a good idea to retry remediation.
+Select any item in the action log to display remediation details. If the details say "successful" or "not found in mailbox", that item was already removed from the mailbox. Sometimes there's a systemic error during remediation. In those cases, it's a good idea to retry remediation.
 
-  In case of remediating large batches, you can also export the messages send for remediation via Mail Submission and messages which got remediated via Action Logs. The export limit is increased to 100,000 records.
+In case of remediating large batches, you can also export the messages send for remediation via Mail Submission and messages which got remediated via Action Logs. The export limit is increased to 100,000 records.
 
-  Remediation is a powerful tool to mitigate threats and address suspicious emails. It helps keep an organization secure.
+Remediation mitigates threats, addresses suspicious emails, and helps keep an organization secure.
