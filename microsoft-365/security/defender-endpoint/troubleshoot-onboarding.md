@@ -206,7 +206,7 @@ First, you should check that the service is set to start automatically when Wind
 
 2. Enter the following command, and press **Enter**:
 
-   ```text
+   ```console
    sc qc diagtrack
    ```
 
@@ -226,21 +226,19 @@ First, you should check that the service is set to start automatically when Wind
 
 2. Enter the following command, and press **Enter**:
 
-   ```text
+   ```console
    sc config diagtrack start=auto
    ```
 
 3. A success message is displayed. Verify the change by entering the following command, and press **Enter**:
 
-   ```text
+   ```console
    sc qc diagtrack
    ```
 
-4. Start the service.
+4. Start the service. In the command prompt, type the following command and press **Enter**:
 
-   a. In the command prompt, type the following command and press **Enter**:
-
-   ```text
+   ```console
    sc start diagtrack
    ```
 
