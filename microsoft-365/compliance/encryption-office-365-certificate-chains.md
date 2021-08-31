@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 10/16/2020
+ms.date: 2/1/2021
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -21,17 +21,17 @@ description: "View a complete list of root certificates and certificate authorit
 
 # Microsoft 365 encryption chains
 
-Microsoft 365 leverages a number of different certificate providers. The following describes the complete list of known Microsoft 365 root certificates that customers may encounter when accessing Microsoft 365. For information on the certificates you may need to install in your own infrastructure, see [Plan for third-party SSL certificates for Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/plan-for-third-party-ssl-certificates). The following certificate information applies to all worldwide and national cloud instances of Microsoft 365.
+Microsoft 365 leverages a number of different certificate providers. The following describes the complete list of known Microsoft 365 root certificates that customers may encounter when accessing Microsoft 365. For information on the certificates you may need to install in your own infrastructure, see [Plan for third-party SSL certificates for Microsoft 365](../enterprise/plan-for-third-party-ssl-certificates.md). The following certificate information applies to all worldwide and national cloud instances of Microsoft 365.
 
 Last updated: **10/16/2020**
 
->[!NOTE]
->For certificate information that applies to **DOD and GCC High** customers, see [Microsoft 365 encryption chains - DOD and GCC High](encryption-office-365-certificate-chains-itar.md).
+> [!NOTE]
+> For certificate information that applies to **DOD and GCC High** customers, see [Microsoft 365 encryption chains - DOD and GCC High](encryption-office-365-certificate-chains-itar.md).
 
 | **Certificate type** | **P7b download** | **CRL Endpoints** | **OCSP Endpoints** | **AIA Endpoints** |
 | --- | --- | --- | --- | --- |
 | Publicly Trusted Root Certificates | [Microsoft 365 Root Certificate Bundle (P7B)](https://download.microsoft.com/download/4/a/b/4ab1c940-826b-444b-b287-b7a902e68da0/m365_root_certs_20201012.p7b) | crl.globalsign.net<br>www.d-trust.net | N/A | N/A |
-| Publicly Trusted Intermediate Certificates | [Microsoft 365 Intermediate Certificate Bundle (P7B)​​](https://download.microsoft.com/download/1/4/7/14777f28-3fde-4958-aebf-bd192a4a7fac/m365_intermediate_certs_20201013.p7b) | cdp1.public-trust.com<br>crl.cnnic.cn<br>crl.entrust.net<br>crl.globalsign.com<br>crl.globalsign.net<br>crl.identrust.com<br>crl.thawte.com<br>crl3.digicert.com<br>crl4.digicert.com<br>s1.symcb.com<br>www.d-trust.net | isrg.trustid.ocsp.identrust.com<br>ocsp.digicert.com<br>ocsp.entrust.net<br>ocsp.globalsign.com<br>ocsp.omniroot.com<br>ocsp.startssl.com<br>ocsp.thawte.com<br>ocsp2.globalsign.com<br>ocspcnnicroot.cnnic.cn<br>root-c3-ca2-2009.ocsp.d-trust.net<br>root-c3-ca2-ev-2009.ocsp.d-trust.net<br>s2.symcb.com | aia.startssl.com<br>apps.identrust.com<br>cacert.omniroot.com<br>www.cnnic.cn |
+| Publicly Trusted Intermediate Certificates | [Microsoft 365 Intermediate Certificate Bundle (P7B)](https://download.microsoft.com/download/1/4/7/14777f28-3fde-4958-aebf-bd192a4a7fac/m365_intermediate_certs_20201013.p7b) | cdp1.public-trust.com<br>crl.cnnic.cn<br>crl.entrust.net<br>crl.globalsign.com<br>crl.globalsign.net<br>crl.identrust.com<br>crl.thawte.com<br>crl3.digicert.com<br>crl4.digicert.com<br>s1.symcb.com<br>www.d-trust.net | isrg.trustid.ocsp.identrust.com<br>ocsp.digicert.com<br>ocsp.entrust.net<br>ocsp.globalsign.com<br>ocsp.omniroot.com<br>ocsp.startssl.com<br>ocsp.thawte.com<br>ocsp2.globalsign.com<br>ocspcnnicroot.cnnic.cn<br>root-c3-ca2-2009.ocsp.d-trust.net<br>root-c3-ca2-ev-2009.ocsp.d-trust.net<br>s2.symcb.com | aia.startssl.com<br>apps.identrust.com<br>cacert.omniroot.com<br>www.cnnic.cn |
 
 Expand the root and intermediate sections below to see additional details about the certificate providers.
 
@@ -316,6 +316,23 @@ Expand the root and intermediate sections below to see additional details about 
 | **CRL URLs** | http://crl.digicert.cn/DigiCertGlobalRootCA.crl |
 | **OCSP URLs** | http://ocsp.digicert.cn |
 
+### **DigiCert Cloud Services CA-1** (older)
+
+| **Subject** | CN=DigiCert Cloud Services CA-1<br>O=DigiCert Inc<br>C=US |
+| --- | --- |
+| **Issuer** | CN=DigiCert Global Root CA<br>OU=www.digicert.com<br>O=DigiCert Inc<br>C=US |
+| **Serial Number** | 01:9E:C1:C6:BD:3F:59:7B:B2:0C:33:38:E5:51:D8:77 |
+| **Public Key Length** | RSA 2048 bits |
+| **Signature Algorithm** | sha256RSA |
+| **Validity Not Before** | August 4, 2015 12:00 AM |
+| **Validity Not Until** | August 4, 2030 12:00 AM |
+| **Subject Key Identifier** | dd:51:d0:a2:31:73:a9:73:ae:8f:b4:01:7e:5d:8c:57:cb:9f:f0:f7 |
+| **Authority Key Identifier** | 03:de:50:35:56:d1:4c:bb:66:f0:a3:e2:1b:1b:c3:97:b2:3d:d1:55 |
+| **Thumbprint (SHA-1)** | 81B68D6CD2f221F8F534E677523BB236BBA1DC56 |
+| **Thumbprint (SHA-256)** | 2F6889961A7CA7067E8BA103C2CF9B9A924F8CA293F11178E23A1978D2F133D3 |
+| **Pin (SHA-256)** | UgpUVparimk8QCjtWQaUQ7EGrtrykc/L8N66EhFY3VE= |
+| **CRL URLs** | http://crl3.digicert.com/DigiCertGlobalRootCA.crl<br>http://crl4.digicert.com/DigiCertGlobalRootCA.crl |
+| **OCSP URLs** | http://ocsp.digicert.com |
 
 ### **DigiCert Cloud Services CA-1**
 
@@ -325,15 +342,15 @@ Expand the root and intermediate sections below to see additional details about 
 | **Serial Number** | 0F:17:1A:48:C6:F2:23:80:92:18:CD:2E:D6:DD:C0:E8 |
 | **Public Key Length** | RSA 2048 bits |
 | **Signature Algorithm** | sha256RSA |
-| **Validity Not Before** | Thursday, September 24, 2020 5:00 PM |
-| **Validity Not Until** | Tuesday, September 24, 2030 4:59 PM |
-| **Subject Key Identifier** | DD51D0A23173A973AE8FB4017E5D8C57CB9FF0F7 |
-| **Authority Key Identifier** | KeyID:03:de:50:35:56:d1:4c:bb:66:f0:a3:e2:1b:1b:c3:97:b2:3d:d1:55 |
+| **Validity Not Before** | September 25, 2020 00:00 AM |
+| **Validity Not After** | September 24, 2030 11:59 PM |
+| **Subject Key Identifier** | dd:51:d0:a2:31:73:a9:73:ae:8f:b4:01:7e:5d:8c:57:cb:9f:f0:f7 |
+| **Authority Key Identifier** | 03:de:50:35:56:d1:4c:bb:66:f0:a3:e2:1b:1b:c3:97:b2:3d:d1:55 |
 | **Thumbprint (SHA-1)** | B3F6B64A07BB9611F47174407841F564FB991F29 |
 | **Thumbprint (SHA-256)** | 5F88694615E4C61686E106B84C3338C6720C535F60D36F61282ED15E1977DD44 |
 | **Pin (SHA-256)** | UgpUVparimk8QCjtWQaUQ7EGrtrykc/L8N66EhFY3VE= |
-| **CRL URLs** | http://crl3.digicert.com/DigiCertGlobalRootCA.crl <br> http://crl4.digicert.com/DigiCertGlobalRootCA.crl |
-| **OCSP URLs** | http://ocsp.digicert.com |
+| **CRL URLs** | http://crl3.digicert.com/DigiCertGlobalRootCA.crl<br>http://crl4.digicert.com/DigiCertGlobalRootCA.crl |
+| **OCSP URLs** | http://ocsp.digicert.com
 
 ### **DigiCert SHA2 Extended Validation Server CA**
 
@@ -494,7 +511,7 @@ Expand the root and intermediate sections below to see additional details about 
 | **CRL URLs** | http://crl.globalsign.com/root-r3.crl |
 | **OCSP URLs** | http://ocsp2.globalsign.com/rootr3 |
 
-### **GlobalSign Organization Validation CA - SHA256 - G2**
+### **GlobalSign Organization Validation CA - SHA256 - G2** (older)
 
 | **Subject** | CN=GlobalSign Organization Validation CA - SHA256 - G2<br>O=GlobalSign nv-sa<br>C=BE |
 | --- | --- |

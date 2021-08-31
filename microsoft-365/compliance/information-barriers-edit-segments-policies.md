@@ -32,7 +32,7 @@ After you have [defined information barrier policies](information-barriers-polic
 | [Troubleshooting information barriers](information-barriers-troubleshooting.md) | Refer to this article when you run into unexpected issues with information barriers. |
 
 > [!IMPORTANT]
-> To perform the tasks described in this article, you must be assigned an appropriate role, such as one of the following:<br/>- Microsoft 365 Enterprise Global Administrator<br/>- Global Administrator<br/>- Compliance Administrator<br/>- IB Compliance Management (this is a new role!)<br><br>To learn more about prerequisites for information barriers, see [Prerequisites (for information barrier policies)](information-barriers-policies.md#prerequisites).<br><br> Make sure to [connect to the Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
+> To perform the tasks described in this article, you must be assigned an appropriate role, such as one of the following:<br/>- Microsoft 365 Enterprise Global Administrator<br/>- Global Administrator<br/>- Compliance Administrator<br/>- IB Compliance Management (this is a new role!)<br><br>To learn more about prerequisites for information barriers, see [Prerequisites (for information barrier policies)](information-barriers-policies.md#prerequisites).<br><br> Make sure to [connect to the Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 ## Edit user account attributes
 
@@ -48,9 +48,9 @@ Use this procedure to edit attributes that are used for segmenting users. For ex
 
 3. Edit one or more user accounts to include values for the attribute you selected in the previous step. To take this action, use one of the following procedures:
 
-    - To edit a single account, see [Add or update a user's profile information using Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal).
+    - To edit a single account, see [Add or update a user's profile information using Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal).
 
-    - To edit multiple accounts (or use PowerShell to edit a single account), see [Configure user account properties with Office 365 PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/configure-user-account-properties-with-microsoft-365-powershell).
+    - To edit multiple accounts (or use PowerShell to edit a single account), see [Configure user account properties with Office 365 PowerShell](../enterprise/configure-user-account-properties-with-microsoft-365-powershell.md).
 
 ## Edit a segment
 
@@ -161,6 +161,8 @@ After you have started applying information barrier policies, if you want to sto
 
 - [Get an overview of information barriers](information-barriers.md)
 - [Define policies for information barriers](information-barriers-policies.md)
-- [Learn more about information barriers in Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams)
+- [Learn more about information barriers in Microsoft Teams](/MicrosoftTeams/information-barriers-in-teams)
+- [Learn more about information barriers in SharePoint Online](/sharepoint/information-barriers)
+- [Learn more about information barriers in OneDrive](/onedrive/information-barriers)
 - [Attributes for information barrier policies](information-barriers-attributes.md)
 - [Troubleshooting information barriers](information-barriers-troubleshooting.md)

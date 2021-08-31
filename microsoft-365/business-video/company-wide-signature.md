@@ -2,21 +2,19 @@
 title: "Create a company-wide signature"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
 ms.custom: 
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 monikerRange: 'o365-worldwide'
 search.appverid:
 - BCS160
@@ -26,6 +24,8 @@ description: "Learn how to create a company-wide email signature."
 ---
 
 # Create a company-wide email signature
+
+## Watch: Create a company-wide email signature
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1IEWf?autoplay=false]
 

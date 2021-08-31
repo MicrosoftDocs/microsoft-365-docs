@@ -87,11 +87,11 @@ As you would expect, you have far more control over how servers perform with on-
   
 SharePoint Server on-premises
   
-![Screenshot of server on premises](../media/a8e9b646-cdff-4131-976a-b5f891da44ac.png)
+![Screenshot of server on premises.](../media/a8e9b646-cdff-4131-976a-b5f891da44ac.png)
   
 SharePoint Online
   
-![Screenshot of server online](../media/46b27ded-d8a4-4287-b3e0-2603a764b8f8.png)
+![Screenshot of server online.](../media/46b27ded-d8a4-4287-b3e0-2603a764b8f8.png)
   
 With SharePoint Online, certain page requests may actually end up calling multiple servers. You could end up with a matrix of requests between servers for an individual request. These interactions are expensive from a page load perspective and will make things slow.
   
@@ -157,6 +157,4 @@ Check out the following articles for different SharePoint Online page customizat
     
 - [Using the object cache with SharePoint Online](using-the-object-cache-with-sharepoint-online.md)
     
-- [How to: Avoid getting throttled or blocked in SharePoint Online](https://msdn.microsoft.com/library/office/dn889829.aspx)
-    
-
+- [How to: Avoid getting throttled or blocked in SharePoint Online](/sharepoint/dev/general-development/how-to-avoid-getting-throttled-or-blocked-in-sharepoint-online)

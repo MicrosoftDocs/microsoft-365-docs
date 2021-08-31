@@ -10,28 +10,33 @@ audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: 
+ms.collection:
 - M365-security-compliance
-search.appverid: 
+search.appverid:
 - MOE150
 - MET150
 ms.custom:
 - seo-marvel-apr2020
+recommendations: false
 description: Learn what the data loss prevention (DLP) functions look for.
 ---
 
 # What the DLP functions look for
 
 Data loss prevention (DLP) policies can use sensitive information types to identify sensitive items. Credit card number and EU debit card number are examples of sensitive information types. Sensitive information types look for  specific patterns. Sensitive information types validate the data by looking at it's format, it's checksums, and looks for relevant keywords or other information. Some of this functionality is performed by internal functions. For example, the Credit Card Number sensitive information type uses a function to look for dates that are formatted like an expiration date. This helps to corroborate that a number is a credit card number.
-  
+
 This article explains what these functions look for, to help you understand how the predefined sensitive information types work. For more information, see [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)
-  
+
 ## Table of functions
 
-|function name  |function action  |is a validator|
-|---------|---------|---------|
+<br>
+
+****
+
+|function name|function action|is a validator|
+|---|---|:---:|
 |Func_Argentina_Unique_Tax_Key|detects and validates Argentina Unique tax key|no|
-|Func_aba_routing|detects ABA routing number| yes|
+|Func_aba_routing|detects ABA routing number|yes|
 |Func_alabama_drivers_license_number|detects Alabama driver’s license number|no|
 |Func_alaska_delaware_oregon_drivers_license_number|detects Alaska, Delaware, Oregon driver’s license number|no|
 |Func_alaska_drivers_license_number|detects Alaska driver’s license number|no|
@@ -59,7 +64,7 @@ This article explains what these functions look for, to help you understand how 
 |Func_china_resident_id|detects China-resident ID|no|
 |Func_colorado_drivers_license_number|detects Colorado driver’s license number|no|
 |Func_connecticut_drivers_license_number|detects Connecticut driver’s license number|no|
-|Func_credit_card|detects credit card|yes|no|
+|Func_credit_card|detects credit card|yes|
 |Func_croatia_id_card|detects Croatia ID card|no|
 |Func_croatia_oib_number|detects Croatia OIB number|no|
 |Func_cyprus_eu_tax_file_number|detects Cyprus tax file number|no|
@@ -88,7 +93,7 @@ This article explains what these functions look for, to help you understand how 
 |Func_germany_value_added_tax_number|detects Germany value added tax number|no|
 |Func_greece_eu_ssn|detects Greece sin (AMKA)|no|
 |Func_hawaii_drivers_license_number|detects Hawaii driver’s license number|no|
-|Func_hong_kong_id_card	|detects Hong Kong ID card|no|
+|Func_hong_kong_id_card|detects Hong Kong ID card|no|
 |Func_hungarian_value_added_tax_number|detects Hungary value added tax number|no|
 |Func_hungary_eu_national_id_card|detects Hungary personal identification number|no|
 |Func_hungary_eu_ssn_or_equivalent|detects Hungary social security number|no|
@@ -101,7 +106,7 @@ This article explains what these functions look for, to help you understand how 
 |Func_iowa_drivers_license_number|detects Iowa driver’s license number|no|
 |Func_ireland_pps|detects Ireland PPS|no|
 |Func_israeli_national_id_number|detects Israel national ID number|no|
-|Func_italy_eu_national_id_card	|detects Italy fiscal code|no|
+|Func_italy_eu_national_id_card|detects Italy fiscal code|no|
 |Func_italy_value_added_tax_number|detects Italy value added tax number|no|
 |Func_japanese_my_number_corporate|detects Japan my number corporate|yes|
 |Func_japanese_my_number_personal|detects Japan my number personal|yes|
@@ -137,269 +142,208 @@ This article explains what these functions look for, to help you understand how 
 |Func_nevada_drivers_license_number|detects Nevada driver’s license number|no|
 |Func_new_brunswick_drivers_license_number|detects New Brunswick driver’s license number|no|
 |Func_new_hampshire_drivers_license_number|detects New Hampshire driver’s license number|no|
-|Func_new_jersey_drivers_license_number	|detects New Jersey driver’s license number|no|
-|Func_new_mexico_drivers_license_number	|detects New Mexico driver’s license number|no|
-|Func_new_york_drivers_license_number	|detects New York driver’s license number|no|
-|Func_new_zealand_bank_account_number	|detects New Zealand bank account number|no|
-|Func_new_zealand_inland_revenue_number	|detects New Zealand inland revenue number|no|
+|Func_new_jersey_drivers_license_number|detects New Jersey driver’s license number|no|
+|Func_new_mexico_drivers_license_number|detects New Mexico driver’s license number|no|
+|Func_new_york_drivers_license_number|detects New York driver’s license number|no|
+|Func_new_zealand_bank_account_number|detects New Zealand bank account number|no|
+|Func_new_zealand_inland_revenue_number|detects New Zealand inland revenue number|no|
 |Func_new_zealand_ministry_of_health_number|detects New Zealand ministry of health number|no|
 |Func_newfoundland_labrador_drivers_license_number|detects Newfoundland Labrador driver’s license number|no|
-|Func_newzealand_driver_license_number	|detects New Zealand driver license number|no|
-|Func_newzealand_social_welfare_number	|detects New Zealand social welfare number|no|
+|Func_newzealand_driver_license_number|detects New Zealand driver license number|no|
+|Func_newzealand_social_welfare_number|detects New Zealand social welfare number|no|
 |Func_north_carolina_drivers_license_number|detects North Carolina driver’s license number|no|
 |Func_north_dakota_drivers_license_number|detects North Dakota driver’s license number|no|
-|Func_norway_id_number	|detects Norway ID number|no|
+|Func_norway_id_number|detects Norway ID number|no|
 |Func_nova_scotia_drivers_license_number|detects Nova Scotia driver’s license number|no|
-|Func_ohio_drivers_license_number	|detects Ohio driver’s license number|no|
-|Func_ontario_drivers_license_number	|detects Ontario driver’s license number|no|
+|Func_ohio_drivers_license_number|detects Ohio driver’s license number|no|
+|Func_ontario_drivers_license_number|detects Ontario driver’s license number|no|
 |Func_pennsylvania_drivers_license_number|detects Pennsylvania driver’s license number|no|
-|Func_pesel_identification_number	|detects Poland National ID (PESEL)|no|
-|Func_poland_eu_tax_file_number	|detects Poland tax file number|no|
-|Func_polish_national_id	|detects Poland identity card|no|
-|Func_polish_passport_number	|detects Polish passport number|no|
-|Func_polish_regon_number	|detects Polish REGON number|no|
+|Func_pesel_identification_number|detects Poland National ID (PESEL)|no|
+|Func_poland_eu_tax_file_number|detects Poland tax file number|no|
+|Func_polish_national_id|detects Poland identity card|no|
+|Func_polish_passport_number|detects Polish passport number|no|
+|Func_polish_regon_number|detects Polish REGON number|no|
 |Func_portugal_eu_tax_file_number|detects Portugal Tax Identification Number|no|
 |Func_prince_edward_island_drivers_license_number|detects Prince Edward Island driver’s license number|no|
-|Func_quebec_drivers_license_number	|detects Quebec driver’s license number|no|
-|Func_randomized_formatted_ssn	|detects randomized formatted US SSN|yes|
+|Func_quebec_drivers_license_number|detects Quebec driver’s license number|no|
+|Func_randomized_formatted_ssn|detects randomized formatted US SSN|yes|
 |Func_randomized_unformatted_ssn|detects randomized unformatted US SSN|yes|
 |Func_rhode_island_drivers_license_number|detects Rhode Island driver’s license number|no|
-|Func_romania_eu_national_id_card	|detects Romania personal numeric code (CNP)|no|
+|Func_romania_eu_national_id_card|detects Romania personal numeric code (CNP)|no|
 |Func_saskatchewan_drivers_license_number|detects Saskatchewan driver’s license number|no|
-|Func_slovakia_eu_national_id_card	|detects Slovakia personal number|no|
-|Func_slovenia_eu_national_id_card	|detects Slovenia Unique Master Citizen Number|no|
-|Func_slovenia_eu_tax_file_number	|detects Slovenia tax file number|no|
+|Func_slovakia_eu_national_id_card|detects Slovakia personal number|no|
+|Func_slovenia_eu_national_id_card|detects Slovenia Unique Master Citizen Number|no|
+|Func_slovenia_eu_tax_file_number|detects Slovenia tax file number|no|
 |Func_south_africa_identification_number|detects South Africa identification number|yes|
 |Func_south_carolina_drivers_license_number|detects South Carolina driver’s license number|no|
 |Func_south_dakota_drivers_license_number|detects South Dakota driver’s license number|no|
-|Func_south_korea_resident_number	|detects South Korea resident number|no|
-|Func_spain_eu_DL_and_NI_number_citizen	|detects Spain DL and NI number citizen|no|
+|Func_south_korea_resident_number|detects South Korea resident number|no|
+|Func_spain_eu_DL_and_NI_number_citizen|detects Spain DL and NI number citizen|no|
 |Func_spain_eu_DL_and_NI_number_foreigner|detects Spain DL and NI number foreigner|no|
-|Func_spain_eu_driver's_license_number	|detects Spain driver's license number|no|
-|Func_spain_eu_tax_file_number	|detects Spain tax file number|no|
+|Func_spain_eu_driver's_license_number|detects Spain driver's license number|no|
+|Func_spain_eu_tax_file_number|detects Spain tax file number|no|
 |Func_spanish_social_security_number|detects Spanish social security number|no|
-|Func_ssn	|Function to detect non-randomized formatted US SSN|yes|
+|Func_ssn|Function to detect non-randomized formatted US SSN|yes|
 |Func_sweden_eu_tax_file_number|detects Sweden tax file number|no|
 |Func_swedish_national_identifier|detects Swedish national identifier|yes|
 |Func_swiss_social_security_number_ahv|detects Swiss social security number AHV|no|
-|Func_taiwanese_national_id	|detects Taiwanese national ID|no|
+|Func_taiwanese_national_id|detects Taiwanese national ID|no|
 |Func_tennessee_drivers_license_number|detects Tennessee driver’s license number|no|
-|Func_texas_drivers_license_number	|detects Texas driver’s license number|no|
-|Func_Thai_Citizen_Id	|detects Thai Citizen ID|no|
+|Func_texas_drivers_license_number|detects Texas driver’s license number|no|
+|Func_Thai_Citizen_Id|detects Thai Citizen ID|no|
 |Func_Turkish_National_Id|detects Turkish National ID|yes|
 |Func_uk_drivers_license|detects UK driver’s license|no|
 |Func_uk_eu_tax_file_number|detects UK unique taxpayer number|no|
-|Func_uk_nhs_number	|detects UK NHS number|yes|
-|Func_uk_nino	|detects UK NINO|no|
+|Func_uk_nhs_number|detects UK NHS number|yes|
+|Func_uk_nino|detects UK NINO|no|
 |Func_unformatted_canadian_sin|detects unformatted Canadian SIN|no|
-|Func_unformatted_itin	|detects unformatted US ITIN|yes|
-|Func_unformatted_ssn	|detects non-randomized unformatted US SSN|yes|
-|Func_usa_uk_passport	|detects USA and UK passport|yes|
+|Func_unformatted_itin|detects unformatted US ITIN|yes|
+|Func_unformatted_ssn|detects non-randomized unformatted US SSN|yes|
+|Func_usa_uk_passport|detects USA and UK passport|yes|
 |Func_utah_drivers_license_number|detects Utah driver’s license number|no|
 |Func_vermont_drivers_license_number|detects Vermont driver’s license number|no|
 |Func_virginia_drivers_license_number|detects Virginia driver’s license number|no|
 |Func_washington_drivers_license_number|detects Washington driver’s license number|no|
 |Func_west_virginia_drivers_license_number|detects West Virginia driver’s license number|no|
-|Func_wisconsin_drivers_license_number	|detects Wisconsin driver’s license number|no|
-|Func_wyoming_drivers_license_number	|detects Wyoming driver’s license number|no|
-
+|Func_wisconsin_drivers_license_number|detects Wisconsin driver’s license number|no|
+|Func_wyoming_drivers_license_number|detects Wyoming driver’s license number|no|
+|
 
 ## Func_us_date
 
-Func_us_date looks for dates in common U.S. formats. The common formats are "month/day/year", "month-day-year", and "month day year ". The names or abbreviations of months aren't case-sensitive. 
-  
+Func_us_date looks for dates in common U.S. formats. The common formats are "month/day/year", "month-day-year", and "month day year ". The names or abbreviations of months aren't case-sensitive.
+
 Examples:
-  
+
 - December 2, 2016
-    
 - Dec 2, 2016
-    
 - dec 02 2016
-    
 - 12/2/2016
-    
 - 12/02/16
-    
 - Dec-2-2016
-    
 - 12-2-16
-    
+
 Accepted month names:
-  
+
 - English
-    
   - January, February, march, April, may, June, July, August, September, October, November, December
-    
   - Jan. Feb. Mar. Apr. May June July Aug. Sept. Oct. Nov. Dec.
-    
+
 ## Func_eu_date
 
 Fund_eu_dates looks for dates in common E.U. formats (and most places outside the U.S.), such as "day/month/year", "day-month-year", and "day month year". The names or abbreviations of months aren't case-sensitive.
-  
+
 Examples:
-  
+
 - 2 Dec 2016
-    
 - 02 dec 2016
-    
 - 2 Dec 16
-    
 - 2/12/2016
-    
 - 02/12/16
-    
 - 2-Dec-2016
-    
 - 2-12-16
-    
+
 Accepted month names:
-  
+
 - English
-    
   - January, February, march, April, may, June, July, August, September, October, November, December
-    
   - Jan. Feb. Mar. Apr. May June July Aug. Sept. Oct. Nov. Dec.
-    
 - Dutch
-    
   - januari, februari, maart, April, mei, juni, juli, augustus, September, ocktober, October, November, December
-    
   - jan feb maart apr mei jun jul aug sep sept oct okt nov dec
-    
 - French
-    
   - janvier, février, mars, avril, mai, juin juillet, août, septembre, octobre, novembre, décembre
-    
   - janv. févr. mars avril mai juin juil. août sept. oct. nov. déc.
-    
 - German
-    
   - jänuar, februar, märz, April, mai, juni juli, August, September, oktober, November, dezember
-    
   - Jan./Jän. Feb. März Apr. Mai Juni Juli Aug. Sept. Okt. Nov. Dez.
-    
 - Italian
-    
   - gennaio, febbraio, marzo, aprile, maggio, giugno, luglio, agosto, settembre, ottobre, novembre, dicembre
-    
   - genn. febbr. mar. apr. magg. giugno luglio ag. sett. ott. nov. dic.
-    
 - Portuguese
-    
   - janeiro, fevereiro, março, marco, abril, maio, junho, julho, agosto, setembro, outubro, novembro, dezembro
-    
   - jan fev mar abr mai jun jul ago set out nov dez
-    
 - Spanish
-    
   - enero, febrero, marzo, abril, mayo, junio, julio, agosto, septiembre, octubre, noviembre, diciembre
-    
   - enero feb. marzo abr. mayo jun. jul. agosto sept./set. oct. nov. dic.
-    
+
 ## Func_eu_date1 (deprecated)
 
 > [!NOTE]
-> This function is deprecated because it supports only Portuguese month names, which are now included in the  `Func_eu_date` function above. 
-  
+> This function is deprecated because it supports only Portuguese month names, which are now included in the  `Func_eu_date` function above.
+
 This function looks for a date in the format commonly used in Portuguese. The format for this function is the same as  `Func_eu_date`, differing only in the language used.
-  
+
 Examples:
-  
+
 - 2 Dez 2016
-    
 - 02 dez 2016
-    
 - 2 Dez 16
-    
 - 2/12/2016
-    
 - 02/12/16
-    
 - 2-Dez-2016
-    
 - 2-12-16
-    
+
 Accepted month names:
-  
+
 - Portuguese
-    
   - janeiro, fevereiro, março, marco, abril, maio, junho, julho, agosto, setembro, outubro, novembro, dezembro
-    
   - jan fev mar abr mai jun jul ago set out nov dez
-    
+
 ## Func_eu_date2 (deprecated)
 
 > [!NOTE]
-> This function is deprecated because it supports only Dutch month names, which are now included in the  `Func_eu_date` function above. 
-  
+> This function is deprecated because it supports only Dutch month names, which are now included in the  `Func_eu_date` function above.
+
 This function looks for a date in the format commonly used in Dutch. The format for this function is the same as  `Func_eu_date`, differing only in the language used.
-  
+
 Examples:
-  
+
 - 2 Mei 2016
-    
 - 02 mei 2016
-    
 - 2 Mei 16
-    
 - 2/12/2016
-    
 - 02/12/16
-    
 - 2-Mei-2016
-    
 - 2-12-16
-    
+
 Accepted month names:
-  
+
 - Dutch
-    
   - januari, februari, maart, April, mei, juni, juli, augustus, September, ocktober, October, November, December
-    
   - jan feb maart apr mei jun jul aug sep sept out okt nov dec
-    
+
 ## Func_expiration_date
 
 Func_expiration_date looks for dates that are in formats commonly used by credit and debit cards. This function will match dates in format of "month/year", "month-year", "[month name] year", and "[month abbreviation] year". The names or abbreviations of months aren't case-sensitive.
-  
+
 Examples:
-  
+
 - MM/YY -- for example, 01/11 or 1/11
-    
 - MM/YYYY -- for example, 01/2011 or 1/2011
-    
 - MM-YY -- for example, 01-22 or 1-11
-    
 - MM-YYYY -- for example, 01-2000 or 1-2000
-    
+
 The following formats support YY or YYYY:
-  
+
 - Month-YYYY -- for example Jan-2010 or january-2010 or Jan-10 or january-10
-    
 - Month YYYY -- for example, 'january 2010' or 'Jan 2010' or 'january 10' or 'Jan 10'
-    
 - MonthYYYY -- for example, 'january2010' or 'Jan2010' or 'january10' or 'Jan10'
-    
 - Month/YYYY -- for example, 'january/2010' or 'Jan/2010' or 'january/10' or 'Jan/10'
-    
+
 Accepted month names:
-  
+
 - English
-    
   - January, February, march, April, may, June, July, August, September, October, November, December
-    
   - Jan Feb Mar Apr May June July Aug Sept Oct Nov Dec
-    
+
 ## Func_us_address
 
 Func_us_address looks for a U.S. state name or postal abbreviation followed by a valid zip code. The zip code must be one of the correct zip codes associated with the U.S. state name or abbreviation. The U.S. state name and zip code cannot be separated by punctuation or letters.
-  
+
 Examples:
-  
+
 - Washington 98052
-    
 - Washington 98052-9998
-    
 - WA 98052
-    
 - WA 98052-9998

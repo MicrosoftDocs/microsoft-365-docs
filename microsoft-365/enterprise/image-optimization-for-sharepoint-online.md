@@ -30,11 +30,16 @@ The loading speed of a webpage depends on the combined size of all the component
   
 ## Using sprites to speed up image loading
 
-|||
-|:-----|:-----|
-| An image sprite contains many smaller images. Using CSS you select a part of the composite image to display on a particular part of the page with absolute positioning. Basically, you move a single image around the page instead of loading multiple images, and make a small part of that image visible through a small window where the required part of the sprite image is shown to the end user. SharePoint Online uses sprites to display its various icons in the sprite spcommon.png.  <br/>  What's covered here:﻿  <br/>  Image compression  <br/>  Image optimization  <br/>  SharePoint image renditions  <br/> |![Screenshot of spcommon](../media/cc5cdee1-8e54-4537-9a8a-8854f4ee849f.png)|
+![Screenshot of spcommon.](../media/cc5cdee1-8e54-4537-9a8a-8854f4ee849f.png)
+
+An image sprite contains many smaller images. Using CSS you select a part of the composite image to display on a particular part of the page with absolute positioning. Basically, you move a single image around the page instead of loading multiple images, and make a small part of that image visible through a small window where the required part of the sprite image is shown to the end user. SharePoint Online uses sprites to display its various icons in the sprite spcommon.png file.
+
+What's covered here:
+- Image compression
+- Image optimization
+- SharePoint image renditions
    
-This can increase performance because you download only one image instead of several and then cache and reuse that image. Even if the image does not remain cached, by having a single image instead of multiple images, this method reduces the total number of HTTP requests to the server which will reduce page loading times. This is really a form of image bundling. This is a very useful technique if the images are not changing very often, for example, icons, as shown in the SharePoint example provided above. You can how to use [Web Essentials](https://vswebessentials.com/), a third-party, open-source, community-based project to achieve this easily in Microsoft Visual Studio. For more information, see [Minification and bundling in SharePoint Online](https://go.microsoft.com/fwlink/?LinkId=708698).
+This can increase performance because you download only one image instead of several and then cache and reuse that image. Even if the image does not remain cached, by having a single image instead of multiple images, this method reduces the total number of HTTP requests to the server which will reduce page loading times. This is really a form of image bundling. This is a very useful technique if the images are not changing very often, for example, icons, as shown in the SharePoint example provided above. You can how to use [Web Essentials](https://vswebessentials.com/), a third-party, open-source, community-based project to achieve this easily in Microsoft Visual Studio. For more information, see [Minification and bundling in SharePoint Online](./minification-and-bundling-in-sharepoint-online.md).
   
 ## Using image compression and optimization to speed up page loading
 
@@ -65,20 +70,18 @@ The steps are relatively simple but for images to use the renditions, the rendit
 
     You can use the out of the box renditions or choose **Image Renditions** to create a new one.
 
-    ![Screenshot of Image Rendition](../media/eaae0d53-657d-47ef-b687-65c5167eae4d.PNG)
+    ![Screenshot of Image Rendition.](../media/eaae0d53-657d-47ef-b687-65c5167eae4d.PNG)
   
 5. On the **Image Renditions** page, choose **Add new item**.
 
-    ![Screenshot of Add New Item](../media/8cede22e-52bf-4d9d-99cb-162f2f6ce92b.PNG)
+    ![Screenshot of Add New Item.](../media/8cede22e-52bf-4d9d-99cb-162f2f6ce92b.PNG)
   
 6. On the **New Image Rendition** page, in the **Name** box, enter a name for the rendition.
 
 7. In the **Width** and **Height** text boxes, enter the width and height, in pixels, of the rendition, and then choose **Save**.
 
-    ![Screenshot of Image Rendition Name](../media/5a6119ed-c163-40df-a4db-ec629d15607d.PNG)
+    ![Screenshot of Image Rendition Name.](../media/5a6119ed-c163-40df-a4db-ec629d15607d.PNG)
   
 ## Custom cropping with image renditions
 
-By default, an image rendition is generated from the center of the image. You can adjust the image rendition for individual images by cropping the portion of the image that you want to use. You can crop the images on an individual basis, per rendition. Cropping the images speeds up page loading by using SharePoint's blob cache to create a version of the image for each rendition. This way the server load is reduced because the image is only resized once and is then ready to serve to end users multiple times. For more information on how to crop an image rendition, see [Crop an image rendition](https://go.microsoft.com/fwlink/p/?LinkId=525626).
-  
-
+By default, an image rendition is generated from the center of the image. You can adjust the image rendition for individual images by cropping the portion of the image that you want to use. You can crop the images on an individual basis, per rendition. Cropping the images speeds up page loading by using SharePoint's blob cache to create a version of the image for each rendition. This way the server load is reduced because the image is only resized once and is then ready to serve to end users multiple times. For more information on how to crop an image rendition, see [Crop an image rendition](/sharepoint/dev/general-development/sharepoint-design-manager-device-channels).

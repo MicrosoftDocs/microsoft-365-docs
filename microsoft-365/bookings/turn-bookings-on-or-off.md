@@ -33,7 +33,7 @@ Bookings can be turned on or off for your entire organization or for specific us
 
 ## Turn Bookings on or off for your organization using PowerShell
 
-To turn Bookings on or off for your organization using the PowerShell cmdlet [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/set-organizationconfig), [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) and run the following command:
+To turn Bookings on or off for your organization using the PowerShell cmdlet [Set-OrganizationConfig](/powershell/module/exchange/set-organizationconfig), [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) and run the following command:
 
 ```PowerShell
    Set-OrganizationConfig -BookingsEnabled $false
@@ -55,13 +55,9 @@ Admins can require employees in their organization to opt-in before their availa
 
 When this setting is enabled, employees added as staff in booking calendars will find an Approve/Reject link in the email notification they receive.
 
-This feature is gradually rolling out world wide to Microsoft 365 customers. If you don't see this option in the Microsoft 365 admin center, check back soon.
-
 ## Block social sharing options
 
 Admins can control how booking pages are shared on social networks. This setting is available in the Microsoft 365 admin center under **Settings** \> **Settings** \> **Bookings**.
-
-This feature is gradually rolling out world wide to Microsoft 365 customers. If you don't see this option in the Microsoft 365 admin center, check back soon.
 
 ## Allow only selected users to create Bookings calendars
 
@@ -69,7 +65,7 @@ By using policy restrictions, you can restrict licensed users from being able to
 
 Users who are included in this policy can create new Bookings calendars and can be added as staff in any capacity (including the administrator role) to existing Bookings calendars. Users who aren't included in this policy won't be able to create new Bookings calendars and will receive an error message if they try to do so.
 
-You'll need to run the following commands using Exchange Online PowerShell. For more information on running Exchange Online cmdlets, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+You'll need to run the following commands using Exchange Online PowerShell. For more information on running Exchange Online cmdlets, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 > [!IMPORTANT]
 > The steps below assume that no other Outlook Web App (OWA) mailbox policies have been created in your organization.
@@ -80,7 +76,7 @@ You'll need to run the following commands using Exchange Online PowerShell. For 
    New-OwaMailboxPolicy -Name "BookingsCreators"
    ```
 
-   For more information, see [New-OwaMailboxPolicy](https://docs.microsoft.com/powershell/module/exchange/new-owamailboxpolicy).
+   For more information, see [New-OwaMailboxPolicy](/powershell/module/exchange/new-owamailboxpolicy).
 
 2. Assign this policy to the relevant users by running this command for each user you want to grant permission to create Bookings calendars.
 
@@ -88,7 +84,7 @@ You'll need to run the following commands using Exchange Online PowerShell. For 
    Set-CASMailbox -Identity <someCreator@emailaddress> -OwaMailboxPolicy "BookingsCreators"
    ```
 
-   For more information, see [Set-CASMailbox](https://docs.microsoft.com/powershell/module/exchange/set-casmailbox).
+   For more information, see [Set-CASMailbox](/powershell/module/exchange/set-casmailbox).
 
 3. Optional: Run this command if you want to disable Bookings for all other users in your organization.
 
@@ -96,10 +92,10 @@ You'll need to run the following commands using Exchange Online PowerShell. For 
    Set-OwaMailboxPolicy "OwaMailboxPolicy-Default" -BookingsMailboxCreationEnabled:$false
    ```
 
-   For more information, see [Set-OwaMailboxPolicy](https://docs.microsoft.com/powershell/module/exchange/set-owamailboxpolicy).
+   For more information, see [Set-OwaMailboxPolicy](/powershell/module/exchange/set-owamailboxpolicy).
 
 For more information on OWA mailbox policies, check out the following topics:
 
-- [Create an Outlook on the web mailbox policy in Exchange Online](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/create-outlook-web-app-mailbox-policy)
+- [Create an Outlook on the web mailbox policy in Exchange Online](/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/create-outlook-web-app-mailbox-policy)
 
-- [Apply or remove an Outlook on the web mailbox policy on a mailbox in Exchange Online](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/create-outlook-web-app-mailbox-policy)
+- [Apply or remove an Outlook on the web mailbox policy on a mailbox in Exchange Online](/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/create-outlook-web-app-mailbox-policy)

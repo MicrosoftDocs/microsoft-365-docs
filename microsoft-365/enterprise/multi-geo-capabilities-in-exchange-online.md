@@ -38,7 +38,7 @@ Exchange Online synchronizes the **PreferredDataLocation** property from Azure A
 
 - When **PreferredDataLocation** is not specified on a user, when you provision the mailbox, it will be provisioned in the central geo location.
 
-- If the **PreferredDataLocation** code is incorrect (e.g. a type of NAN instead of NAM), the mailbox will be provisioned in the central geo location.
+- If the **PreferredDataLocation** code is incorrect (e.g. a typo of NAN instead of NAM), the mailbox will be provisioned in the central geo location.
 
 **Note**: Multi-geo capabilities and Skype for Business Online regionally hosted meetings both use the **PreferredDataLocation** property on user objects to locate services. If you configure **PreferredDataLocation** values on user objects for regionally hosted meetings, the mailbox for those users will be automatically moved to the specified geo location after multi-geo is enabled on the Microsoft 365 tenant.
 
@@ -54,4 +54,4 @@ Exchange Online synchronizes the **PreferredDataLocation** property from Azure A
 
 - Public folders are supported in multi-geo organizations. However, the public folders must remain in the central geo location. You can't move public folders to satellite geo locations.
 
-- In a multi-geo environment, cross-geo mailbox auditing is not supported. For example, if a user is assigned permissions to access a shared mailbox in a different geo location, mailbox actions performed by that user are not logged in the mailbox audit log of the shared mailbox. For more information, see [Manage mailbox auditing](https://docs.microsoft.com/microsoft-365/compliance/enable-mailbox-auditing?view=o365-worldwide).
+- In a multi-geo environment, cross-geo mailbox auditing is not supported. For example, if a user is assigned permissions to access a shared mailbox in a different geo location, mailbox actions performed by that user are not logged in the mailbox audit log of the shared mailbox. For more information, see [Manage mailbox auditing](../compliance/enable-mailbox-auditing.md).

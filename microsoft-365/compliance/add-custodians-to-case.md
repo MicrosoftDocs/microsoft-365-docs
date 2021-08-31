@@ -33,7 +33,7 @@ You can add and manage custodians in Advanced eDiscovery cases in four steps:
 
 4. Review the custodians and complete the process.
 
-   [ ![Sources tab in Advanced eDiscovery case](../media/AeD-Sources-Tab.png) ](../media/AeD-Sources-Tab.png#lightbox)
+   [ ![Sources tab in Advanced eDiscovery case.](../media/AeD-Sources-Tab.png) ](../media/AeD-Sources-Tab.png#lightbox)
 
 ## Make sure you have the necessary permissions
 
@@ -63,7 +63,7 @@ To deselect the primary mailbox and OneDrive account for a custodian:
 
 2. Select **Clear** next to **Mailbox** or **OneDrive** to remove a custodian's mailbox or OneDrive account from being associated as a data location for this custodian.
 
-   ![Configure locations to associate to a custodian](../media/ConfigureCustodianLocations.png)
+   ![Configure locations to associate to a custodian.](../media/ConfigureCustodianLocations.png)
 
 To associate other mailboxes, sites, Teams, or Yammer groups to a specific custodian:
 
@@ -109,4 +109,4 @@ Before you actually add the custodians to the case, you can review the list of c
 
    The new custodians are added to the case and displayed on the **Data sources** tab.
 
-   [ ![Custodians listed on the Data sources tab](../media/DataSourcesTab.png) ](../media/DataSourcesTab.png#lightbox)
+   [ ![Custodians listed on the Data sources tab.](../media/DataSourcesTab.png) ](../media/DataSourcesTab.png#lightbox)

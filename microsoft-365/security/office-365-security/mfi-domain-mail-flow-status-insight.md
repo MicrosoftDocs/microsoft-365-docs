@@ -3,7 +3,7 @@ title: Top domain mail flow status insight in the Mail flow dashboard
 f1.keywords: 
   - NOCSH
 ms.author: siosulli
-author: chrisda
+author: siosulli
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
@@ -21,12 +21,16 @@ ms.prod: m365-security
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 The **Top domain mail flow status** insight in the [Mail flow dashboard](mail-flow-insights-v2.md) in the [Security & Compliance Center](https://protection.office.com) gives you the current mail flow status for your organization.
 
 This insight helps you identify and troubleshoot domains that are experiencing ***mail flow*** issues. For example, the domain is unable to receive external email because the domain has expired or the domain has an incorrect MX record.
 
-![Top domain flow status widget in the Mail flow dashboard in the Security & Compliance Center](../../media/mfi-top-domain-mail-flow-status-widget.png)
+![Top domain flow status widget in the Mail flow dashboard in the Security & Compliance Center.](../../media/mfi-top-domain-mail-flow-status-widget.png)
 
 When you click **View details** in the widget, a **Domain status** flyout appears that shows you more details for the status of each domain:
 
@@ -40,7 +44,7 @@ When you click **View details** in the widget, a **Domain status** flyout appear
 
 You can click **View more** to see the same information for more domains.
 
-![Details flyout in the Top domain mail flow status insight](../../media/mfi-top-domain-mail-flow-status-view-details.png)
+![Details flyout in the Top domain mail flow status insight.](../../media/mfi-top-domain-mail-flow-status-view-details.png)
 
 ## See also
 

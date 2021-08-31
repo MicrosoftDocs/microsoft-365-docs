@@ -2,8 +2,8 @@
 title: "Download existing reports in the Security &amp; Compliance Center"
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
+ms.author: siosulli
+author: siosulli
 manager: dansimp
 ms.date: 06/01/2018
 audience: ITPro
@@ -36,8 +36,8 @@ In the [Security &amp; Compliance Center](https://protection.office.com), severa
 
 [Reports and insights in the Security &amp; Compliance Center](../security/office-365-security/reports-and-insights-in-security-and-compliance.md)
   
-[Create a schedule for a report in the Security &amp; Compliance Center](../security/office-365-security/create-a-schedule-for-a-report.md)
+[Create a schedule for a report in the Security &amp; Compliance Center](../security/office-365-security/view-reports-for-mdo.md)
   
-[Manage schedules for reports in the Security &amp; Compliance Center](../security/office-365-security/manage-schedules-for-multiple-reports.md)
+[Manage schedules for reports in the Security &amp; Compliance Center](../security/office-365-security/view-reports-for-mdo.md)
   
-[Download a custom report in the Security &amp; Compliance Center](../security/office-365-security/set-up-and-download-a-custom-report.md)
+[Download a custom report in the Security &amp; Compliance Center](../security/office-365-security/view-reports-for-mdo.md)

@@ -14,8 +14,9 @@ ms.collection:
 - m365initiative-externalcollab
 ms.custom: 
 - seo-marvel-apr2020
-localization_priority: Normal
+localization_priority: Priority
 f1.keywords: NOCSH
+recommendations: false
 description: Learn about the Microsoft 365 configuration steps necessary to set up a team for task, conversation, and documentation collaboration with guests in Teams.
 ---
 
@@ -23,7 +24,7 @@ description: Learn about the Microsoft 365 configuration steps necessary to set 
 
 If you need to collaborate with guests across documents, tasks, and conversations, we recommend using Microsoft Teams. Teams provides all of the collaboration features available in Office and SharePoint with persistent chat and a customizable and extensible set of collaboration tools in a unified user experience.
 
-In this article, we'll walk through the Microsoft 365 configuration steps necessary to set up a team for collaboration with guests.
+In this article, we'll walk through the Microsoft 365 configuration steps necessary to set up a team for collaboration with guests. Once you have configured guest access, you can invite guests to teams by following the steps in [Add guests to a team in Teams](https://support.microsoft.com/office/fccb4fa6-f864-4508-bdde-256e7384a14f).
 
 ## Video demonstration
 
@@ -33,11 +34,11 @@ This video shows the configuration steps described in this document.</br>
 
 ## Azure External collaboration settings
 
-Sharing in Microsoft 365 is governed at its highest level by the [B2B external collaboration settings in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/external-identities/delegate-invitations). If guest sharing is disabled or restricted in Azure AD, this setting overrides any sharing settings that you configure in Microsoft 365.
+Sharing in Microsoft 365 is governed at its highest level by the [B2B external collaboration settings in Azure Active Directory](/azure/active-directory/external-identities/delegate-invitations). If guest sharing is disabled or restricted in Azure AD, this setting overrides any sharing settings that you configure in Microsoft 365.
 
 Check the B2B external collaboration settings settings to ensure that sharing with guests is not blocked.
 
-![Screenshot of Azure Active Directory Organizational Relationships Settings page](../media/azure-ad-organizational-relationships-settings.png)
+![Screenshot of Azure Active Directory Organizational Relationships Settings page.](../media/azure-ad-organizational-relationships-settings.png)
 
 To set external collaboration settings
 
@@ -45,7 +46,7 @@ To set external collaboration settings
 2. In the left navigation pane, click **Azure Active Directory**.
 3. Click **External identities**.
 4. On the **Get started** screen, in the left navigation pane, click **External collaboration settings**.
-5. Ensure that **Admins and users in the guest inviter role can invite** and **Members can invite** are both set to **Yes**.
+5. Ensure that **Member users and users assigned to specific admin roles can invite guest users including guests with member permissions** is selected.
 6. If you made changes, click **Save**.
 
 Note the settings in the **Collaboration restrictions** section. Make sure that the domains of the guests that you want to collaborate with aren't blocked.
@@ -58,7 +59,7 @@ Teams has a master on/off switch for guest access and a variety of settings avai
 
 Check to ensure that guest access is enabled in Teams and make any adjustment to the guest settings based on your business needs. Keep in mind that these settings affect all teams.
 
-![Screenshot of Teams guest access toggle](../media/teams-guest-access-toggle-on.png)
+![Screenshot of Teams guest access toggle.](../media/teams-guest-access-toggle-on.png)
 
 To set Teams guest access settings
 
@@ -69,7 +70,7 @@ To set Teams guest access settings
 5. Ensure that **Allow guest access in Teams** is set to **On**.
 6. Make any desired changes to the additional guest settings, and then click **Save**.
 
-Once Teams guest access is turned on, you can optionally control guest access to individual teams and their associated SharePoint sites using sensitivity labels. For more information, see [Use sensitivity labels to protect content in Microsoft Teams, Microsoft 365 groups, and SharePoint sites](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites).
+Once Teams guest access is turned on, you can optionally control guest access to individual teams and their associated SharePoint sites using sensitivity labels. For more information, see [Use sensitivity labels to protect content in Microsoft Teams, Microsoft 365 groups, and SharePoint sites](../compliance/sensitivity-labels-teams-groups-sites.md).
 
 > [!NOTE]
 > It may take up to twenty-four hours for the Teams guest settings to become active after you turn it on.
@@ -78,7 +79,7 @@ Once Teams guest access is turned on, you can optionally control guest access to
 
 Teams uses Microsoft 365 Groups for team membership. The Microsoft 365 Groups guest settings must be turned on in order for guest access in Teams to work.
 
-![Screenshot of Microsoft 365 Groups guest settings in  Microsoft 365 admin center](../media/office-365-groups-guest-settings.png)
+![Screenshot of Microsoft 365 Groups guest settings in  Microsoft 365 admin center.](../media/office-365-groups-guest-settings.png)
 
 To set Microsoft 365 Groups guest settings
 
@@ -97,7 +98,7 @@ The organization-level settings determine what settings are available for indivi
 
 If you want to allow file and folder sharing with unauthenticated people, choose **Anyone**. If you want to ensure that all guests have to authenticate, choose **New and existing guests**. Choose the most permissive setting that will be needed by any site in your organization.
 
-![Screenshot of SharePoint organization-level sharing settings](../media/sharepoint-organization-external-sharing-controls.png)
+![Screenshot of SharePoint organization-level sharing settings.](../media/sharepoint-organization-external-sharing-controls.png)
 
 
 To set SharePoint organization-level sharing settings
@@ -120,7 +121,7 @@ Choose any one of the following link-types which will be selected by default whe
 - **Only people in your organization** - Choose this option if you expect most file and folder sharing to be with people inside your organization.
 - **Specific people** - Consider this option if you expect to do a lot of file and folder sharing with guests. This type of link works with guests and requires them to authenticate.
  
-![Screenshot of SharePoint organization-level files and folders sharing settings](../media/sharepoint-organization-files-folders-sharing-settings.png)
+![Screenshot of SharePoint organization-level files and folders sharing settings.](../media/sharepoint-organization-files-folders-sharing-settings.png)
 
 
 To set the SharePoint organization-level default link settings
@@ -147,7 +148,7 @@ We'll invite users later. Next, it's important to check the site-level sharing s
 
 Check the site-level sharing settings to make sure that they allow the type of access that you want for this team. For example, if you set the organization-level settings to **Anyone**, but you want all guests to authenticate for this team, then make sure the site-level sharing settings are set to **New and existing guests**.
 
-![Screenshot of SharePoint site external sharing settings](../media/sharepoint-site-external-sharing-settings.png)
+![Screenshot of SharePoint site external sharing settings.](../media/sharepoint-site-external-sharing-settings.png)
 
 To set site-level sharing settings
 1. In the SharePoint admin center, in the left navigation pane, expand **Sites** and click **Active sites**.
@@ -172,6 +173,9 @@ To invite guests to a team
 4. Type the guest's full name and click the check mark.
 5. Click **Add**, and then click **Close**.
 
+> [!NOTE]
+> Guests with a work or school account can only be invited by using their User Principal Name (UPN) (for example, adele@contoso.com). Inviting guests by using EAS ID, or other email formats, is not supported.
+
 ## See also
 
 [Best practices for sharing files and folders with unauthenticated users](best-practices-anonymous-sharing.md)
@@ -182,6 +186,6 @@ To invite guests to a team
 
 [Create a B2B extranet with managed guests](b2b-extranet.md)
 
-[SharePoint and OneDrive integration with Azure AD B2B](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview)
+[SharePoint and OneDrive integration with Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration-preview)
 
-[Sharing options are greyed out when sharing from SharePoint or OneDrive](https://docs.microsoft.com/sharepoint/troubleshoot/administration/sharing-options-grayed-out-when-sharing-from-sharepoint-online-or-onedrive)
+[Sharing options are greyed out when sharing from SharePoint or OneDrive](/sharepoint/troubleshoot/administration/sharing-options-grayed-out-when-sharing-from-sharepoint-online-or-onedrive)

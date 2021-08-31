@@ -1,12 +1,13 @@
-    - name: Get started with Topic experiences
-      items: 
-        - name: Introduction to Topic experiences 
-          href: index.md         
-        - name: Topic experiences overview
+    - name: Microsoft Viva Topics 
+      href: index.md   
+
+    - name: Get started with Microsoft Viva Topics
+      items:    
+        - name: Microsoft Viva Topics overview
           href: topic-experiences-overview.md 
-        - name: Topic experiences discovery and curation
+        - name: Microsoft Viva Topics discovery and curation
           href: topic-experiences-discovery-curation.md           
-        - name: Topic experiences roles 
+        - name: Microsoft Viva Topics roles 
           href: topic-experiences-roles.md 
         - name: Get your environment ready 
           href: topic-experiences-get-ready.md           
@@ -14,11 +15,11 @@
     - name: Setup and administration
       items:
 
-        - name: Topic security
+        - name: Topics security
           href: topic-experiences-security-privacy.md
-        - name: Plan topic experiences
+        - name: Plan for Topics
           href: plan-topic-experiences.md
-        - name: Set up topic experiences
+        - name: Set up Topics
           href: set-up-topic-experiences.md
         - name: Manage topic discovery
           href: topic-experiences-discovery.md
@@ -32,6 +33,8 @@
     
     - name: Work with topics
       items:
+        - name: Get started with Viva Topics
+          href: get-started-with-viva-topics.md
         - name: Topic center overview
           href: topic-center-overview.md    
         - name: Manage topics in the topic center
@@ -41,9 +44,16 @@
         - name: Edit a topic
           href: edit-a-topic.md                   
         - name: Security trimming 
-          href: topic-experiences-security-trimming.md  
+          href: topic-experiences-security-trimming.md 
+        - name: Search for topics 
+          href: search.md             
+        - name: Manage topics at scale 
+          href: scale-topics.md             
+
 
     - name: Adoption
       items: 
         - name: Get started driving adoption
           href: topics-adoption-getstarted.md
+        - name: Run a trial
+          href: trial-topics.md

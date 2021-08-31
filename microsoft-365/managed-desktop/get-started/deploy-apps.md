@@ -28,7 +28,7 @@ You can add [Win32, or Windows MSI-based apps](#lob-apps), or [Microsoft Store f
 
 ###  Win32 or Windows MSI-based apps to Microsoft Managed Desktop
 
-You can add your line-of-business (LOB) apps to Microsoft Managed Desktop portal. For information on requirements for apps installed on Microsoft Managed Desktop devices, see [Microsoft Managed Desktop app requirements](https://docs.microsoft.com/microsoft-365/managed-desktop/service-description/mmd-app-requirements).
+You can add your line-of-business (LOB) apps to Microsoft Managed Desktop portal. For information on requirements for apps installed on Microsoft Managed Desktop devices, see [Microsoft Managed Desktop app requirements](../service-description/mmd-app-requirements.md).
 
 In this procedure, you'll select which kind of app you want to add, and then configure and upload the app source. 
 
@@ -40,8 +40,8 @@ You can sign in to Microsoft Managed Desktop portal, or sign in to Intune and th
 2.    Under **Inventory**, select **Apps**.
 3.    In the Apps workload, select **Add**.
 4.    In **Add app**, select **Line-of-business app** or **Windows app (Win32)**.
-    - If you selected **Line-of-business app**, see [Add a Windows line-of-business app to Microsoft Intune](https://docs.microsoft.com/intune/lob-apps-windows) for instruction on adding and configuring line-of-business apps.
-    - If you selected **Windows app (Win32)**, see [Win32 app management](https://docs.microsoft.com/intune/apps-win32-app-management) for instruction on adding and configuring Windows apps.
+    - If you selected **Line-of-business app**, see [Add a Windows line-of-business app to Microsoft Intune](/intune/lob-apps-windows) for instruction on adding and configuring line-of-business apps.
+    - If you selected **Windows app (Win32)**, see [Win32 app management](/intune/apps-win32-app-management) for instruction on adding and configuring Windows apps.
 
 <span id="msfb-apps">
 
@@ -96,14 +96,17 @@ Add your users to these groups to either make the app available, install the app
 
 ## Steps to get started with Microsoft Managed Desktop
 
-1. [Add and verify admin contacts in the Admin portal](add-admin-contacts.md)
-2. [Adjust conditional access](conditional-access.md)
-3. [Assign licenses](assign-licenses.md)
-4. [Deploy Intune Company Portal](company-portal.md)
-5. [Enable Enterprise State Roaming](enterprise-state-roaming.md)
-6. [Set up devices](set-up-devices.md)
-7. [Get your users ready to use devices](get-started-devices.md)
-8. Deploy apps (this topic)
+1. Access [admin portal](access-admin-portal.md).
+1. [Add and verify admin contacts in the Admin portal](add-admin-contacts.md).
+1. [Adjust settings after enrollment](conditional-access.md).
+1. Deploy and assign [Intune Company Portal](company-portal.md).
+1. [Assign licenses](assign-licenses.md).
+1. Deploy apps (this article).
+1. [Set up devices](set-up-devices.md).
+1. Set up [first-run experience with Autopilot and the Enrollment Status Page](esp-first-run.md).
+1. [Enable user support features](enable-support.md).
+1. [Get your users ready to use devices](get-started-devices.md).
+1. [Get started with app control](get-started-app-control.md).
 
 
 <!--# Preparing apps for Microsoft Managed Desktop

@@ -17,6 +17,7 @@ ms.custom:
 - Lean
 - MSStore_Link
 - AdminSurgePortfolio
+- admindeeplinkMAC
 search.appverid:
 - MET150
 - MOE150
@@ -38,31 +39,31 @@ To use room or equipment mailboxes, open Outlook from your computer or sign in t
     
 2. On the **Home** tab, choose **New Items** \> **Meeting**.<br/>![To schedule a meeting, on the Home tab, in the New group, choose New Items, and then Meeting.](../../media/ffd575a8-1036-4d67-b839-73941fc60276.png)<br/>Or, from your Calendar, just select **New Meeting**.
     
-3. In the To field, type the name of the conference room or equipment you want to reserve, in addition to any attendees you'd like to invite.<br/>Or, select **To** then double-click the conference room or equipment from the list. Then select **OK**.<br/>![Reserve room mailbox in Outlook](../../media/4588c806-9fb9-46c9-b2d8-34caa943e28e.png)
+3. In the To field, type the name of the conference room or equipment you want to reserve, in addition to any attendees you'd like to invite.<br/>Or, select **To** then double-click the conference room or equipment from the list. Then select **OK**.<br/>![Reserve room mailbox in Outlook.](../../media/4588c806-9fb9-46c9-b2d8-34caa943e28e.png)
   
 4. In the **Subject** line, type the purpose of the reservation or meeting. 
     
 5. Change the **Location** value or leave as is. 
     
-6. Change the **Start time** and **End time**. Or, select **All day event**. To make the meeting or reservation repeat, select **Recurrence** at the top.<br/>![Reserve meeting time](../../media/4b72a0a6-4da2-449e-909e-85ea79f78e2c.png)
+6. Change the **Start time** and **End time**. Or, select **All day event**. To make the meeting or reservation repeat, select **Recurrence** at the top.<br/>![Reserve meeting time.](../../media/4b72a0a6-4da2-449e-909e-85ea79f78e2c.png)
   
 7. Type a message describing the purpose and attach any files if needed.
     
 8. To allow others to join online or call in to the meeting, select **Skype Meeting**.
     
-9. To make sure the room, equipment, and people you've invited are available, select **Scheduling Assistant** at the top. Then select an available time in the calendar.<br/> ![Check if room equipment available](../../media/eb0097c6-4263-4b63-bfca-f7c03ad99b4f.png)<br/>TIP: In the scheduling calendar, blue means the room or equipment is reserved, or busy. Select the white, or free, area on the calendar. 
+9. To make sure the room, equipment, and people you've invited are available, select **Scheduling Assistant** at the top. Then select an available time in the calendar.<br/> ![Check if room equipment available.](../../media/eb0097c6-4263-4b63-bfca-f7c03ad99b4f.png)<br/>TIP: In the scheduling calendar, blue means the room or equipment is reserved, or busy. Select the white, or free, area on the calendar. 
   
 10. When finished, select **Send**.
     
 ## Set up room and equipment mailboxes
 
-To set up a room or equipment mailbox, go to the Microsoft 365 admin center. (You'll need to have admin permission to do this.) Create the mailbox and let everyone know they can start reserving it for meetings and events.
+To set up a room or equipment mailbox, go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>. (You'll need to have admin permission to do this.) Create the mailbox and let everyone know they can start reserving it for meetings and events.
   
 1. In the admin center, go to the **Resources** \> [Rooms &amp; equipment](https://go.microsoft.com/fwlink/p/?linkid=2067334) page.
   
 2. Select **Add**.
     
-3. Fill out the room or equipment fields:<br/>![Add a room mailbox in Microsoft 365](../../media/114d49e3-976e-40ef-b0af-2b0f5c85f15e.png)<br/>
+3. Fill out the room or equipment fields:<br/>![Add a room mailbox in Microsoft 365.](../../media/114d49e3-976e-40ef-b0af-2b0f5c85f15e.png)<br/>
   
   - **Room** or **Equipment**: the type of mailbox you'd like to create.
     
@@ -83,7 +84,7 @@ To set up a room or equipment mailbox, go to the Microsoft 365 admin center. (Yo
 6. If you made changes, select **Save** and then **Close**.
 
 > [!Note]
-> To keep your room and equipment mailboxes secure, block sign-in to these mailboxes. For more information, see [Block sign-in for the shared mailbox account](https://docs.microsoft.com/office365/admin/email/create-a-shared-mailbox?view=o365-worldwide#block-sign-in-for-the-shared-mailbox-account).
+> To keep your room and equipment mailboxes secure, block sign-in to these mailboxes. For more information, see [Block sign-in for the shared mailbox account](/office365/admin/email/create-a-shared-mailbox#block-sign-in-for-the-shared-mailbox-account).
 
 ## Common questions about room and equipment mailboxes
 
@@ -105,4 +106,4 @@ No. While most people in your organization need a license to use Microsoft 365, 
   
 ### Do I need an owner in charge of booking the rooms or equipment?
 
- No, you don't need someone in charge of the room mailbox or equipment mailbox. 
+ No, you don't need someone in charge of the room mailbox or equipment mailbox.

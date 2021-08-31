@@ -22,7 +22,7 @@ description: Use Group Policy to deploy the configuration package on Windows 10 
 
 **Applies to:**
 
-- [Microsoft 365 Endpoint data loss prevention (DLP)](/microsoft-365/compliance/endpoint-dlp-learn-about)
+- [Microsoft 365 Endpoint data loss prevention (DLP)](./endpoint-dlp-learn-about.md)
 - Group Policy
 
 > [!NOTE]
@@ -42,7 +42,7 @@ description: Use Group Policy to deploy the configuration package on Windows 10 
 
 5. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the device. You should have a folder called *OptionalParamsPolicy* and the file *DeviceComplianceLocalOnboardingScript.cmd*.
 
-6. Open the [Group Policy Management Console](https://docs.microsoft.com/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) (GPMC), right-click the Group Policy Object (GPO) you want to configure and click **Edit**.
+6. Open the [Group Policy Management Console](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) (GPMC), right-click the Group Policy Object (GPO) you want to configure and click **Edit**.
 
 7. In the **Group Policy Management Editor**, go to **Computer configuration**, then **Preferences**, and then **Control panel settings**.
 
@@ -73,7 +73,7 @@ For security reasons, the package used to Offboard devices will expire 30 days a
 
 5. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the device. You should have a file named *DeviceComplianceOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
 
-6. Open the [Group Policy Management Console](https://docs.microsoft.com/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) (GPMC), right-click the Group Policy Object (GPO) you want to configure and click **Edit**.
+6. Open the [Group Policy Management Console](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) (GPMC), right-click the Group Policy Object (GPO) you want to configure and click **Edit**.
 
 7. In the **Group Policy Management Editor**, go to **Computer configuration,** then **Preferences**, and then **Control panel settings**.
 
@@ -108,5 +108,5 @@ With Group Policy there isn’t an option to monitor deployment of policies on t
 - [Onboard Windows 10 devices using Mobile Device Management tools](dlp-configure-endpoints-mdm.md)
 - [Onboard Windows 10 devices using a local script](dlp-configure-endpoints-script.md)
 - [Onboard non-persistent virtual desktop infrastructure (VDI) devices](dlp-configure-endpoints-vdi.md)
-- [Run a detection test on a newly onboarded Microsoft Defender ATP devices](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/run-detection-test)
-- [Troubleshoot Microsoft Defender Advanced Threat Protection onboarding issues](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)
+- [Run a detection test on a newly onboarded Microsoft Defender for Endpoint devices](/windows/security/threat-protection/microsoft-defender-atp/run-detection-test)
+- [Troubleshoot Microsoft Defender Advanced Threat Protection onboarding issues](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)

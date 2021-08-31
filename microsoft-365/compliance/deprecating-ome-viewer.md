@@ -4,6 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: krowley
 author: kccross
+manager: laurawi
 ms.date: 6/29/2018
 audience: Admin
 ms.topic: article
@@ -31,7 +32,7 @@ As announced September 2017, we have released a new version of [Office 365 Messa
 - [Encrypt-only template](https://aka.ms/encryptonly)
 
 - [Control to decrypt attachments](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Admin-control-for-attachments-now-available-in-Office-365/ba-p/204007)
-    
+
 With this change, users will no longer be able to download the Office 365 Message Encryption Viewer mobile app beginning August 1. As a result, mail recipients may not be able to read messages encrypted with the previous version of OME on some Android and Apple mobile devices. However, they will still be able to read these messages on personal computers (via desktop browsers). Users who have already downloaded the app will continue to be able to use it.
   
 ## Why this change was made

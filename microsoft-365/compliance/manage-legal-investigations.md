@@ -16,7 +16,7 @@ search.appverid:
 ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
 ms.custom:
 - seo-marvel-apr2020
-description: "Use eDiscovery cases in the Security & Compliance Center in Office 365 to manage your organization's legal investigation."
+description: "Use eDiscovery cases in the Microsoft 365 compliance center to manage your organization's legal investigation."
 ---
 
 # Manage legal investigations in Microsoft 365
@@ -29,7 +29,7 @@ Organizations have many reasons to respond to a legal case involving certain exe
 
 eDiscovery cases let you control who can create, access, and manage eDiscovery cases in your organization. Use cases to add members and control what types of actions they can perform, place a hold on content locations relevant to a legal case, and use the Content Search tool to search the locations on hold for content that might be responsive to your case. Then you can also export and download those results for further investigation by external reviewers.
   
-- [Manage your eDiscovery workflow](ediscovery-cases.md) by creating and using eDiscovery cases for every legal investigation your organization has to undertake.
+- [Manage your eDiscovery workflow](./get-started-core-ediscovery.md) by creating and using eDiscovery cases for every legal investigation your organization has to undertake.
 
 - [Assign eDiscovery permissions](assign-ediscovery-permissions.md) to control who can create and manage eDiscovery cases in your organization.
 

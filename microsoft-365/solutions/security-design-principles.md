@@ -22,7 +22,7 @@ In this article, [Kozeta Garrett](https://www.linkedin.com/in/kozeta-garrett-530
 
 ## About the author
 
-![Kozeta Garrett photo](../media/solutions-architecture-center/kozeta-garrett-security.jpg)
+![Kozeta Garrett photo.](../media/solutions-architecture-center/kozeta-garrett-security.jpg)
 
 In my role as a Cloud Security Architect, I've worked with multiple organizations to provide strategic and technical guidance focusing on designing and implementing security architecture for customers migrating to Microsoft 365 and Azure, developing enterprise security solutions, and helping transform security architecture and culture for business resilience. My experience includes incident detection and response, malware analysis, penetration testing, and recommending improvements to IT security and defense posture. I'm very passionate about leading transformations that result in security as an enabler for the business, including modernization efforts.
 
@@ -74,10 +74,10 @@ To help you clear these hurdles, Microsoft has curated several resources designe
 |---------|---------|
 |[Top tasks for security teams to support working from home](../security/top-security-tasks-for-remote-work.md)      | If you find yourself suddenly supporting a mostly work-at-home workforce, this article helps you ramp up security quickly. It includes top recommended tasks based on your licensing plan.    |
 |[Microsoft 365 Security for Business Decisions Makers](../security/Microsoft-365-security-for-bdm.md)    | When you have time for a more comprehensive plan, this article includes recommendations that span Microsoft 365, prioritized by attack surface. It even comes with a spreadsheet you can use to sort on licensing and area (such as identity, threat protection, and monitoring).  |
-|[Microsoft security architecture recommendations](https://docs.microsoft.com/security/compass/compass)    | If you are a security architect, be sure to see security recommendations organized by discipline, including identity, networking, and security operations.   |
-|[Microsoft Security Operations recommendations](https://docs.microsoft.com/security/compass/security-operations-videos-and-decks)|Learn Microsoft recommendations for setting up and running a Security Operations Center (SOC) |
-|[Chief Information Security Officer (CISO) Workshop Training](https://docs.microsoft.com/security/ciso-workshop/ciso-workshop)   | If you’re new to cloud security, don’t miss this series of videos.        |
-|[docs.security.com/security](https://docs.microsoft.com/security/)    | Technical guidance from across Microsoft for security strategy and architecture.        |
+|[Microsoft security architecture recommendations](/security/compass/compass)    | If you are a security architect, be sure to see security recommendations organized by discipline, including identity, networking, and security operations.   |
+|[Microsoft Security Operations recommendations](/security/compass/security-operations-videos-and-decks)|Learn Microsoft recommendations for setting up and running a Security Operations Center (SOC) |
+|[Chief Information Security Officer (CISO) Workshop Training](/security/ciso-workshop/ciso-workshop)   | If you’re new to cloud security, don’t miss this series of videos.        |
+|[docs.security.com/security](/security/)    | Technical guidance from across Microsoft for security strategy and architecture.        |
 | | |
 
 All of these resources are designed to be used as a starting point and adapted for the needs of your organization.

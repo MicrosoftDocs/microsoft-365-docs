@@ -2,10 +2,10 @@
 title: "Increase threat protection"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: sharik
+author: Skjerland
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -31,7 +31,7 @@ This article helps you increase the protection in your Microsoft 365 subscriptio
 
 Before you begin, check your Microsoft Secure Score. Microsoft Secure Score analyzes your organization's security based on your regular activities and security settings and assigns a score. Begin by taking note of your current score. Taking the actions recommended in this article increases your score. The goal isn't to achieve the max score, but to be aware of opportunities to protect your environment that don't negatively affect productivity for your users.
 
-For more information, see [Microsoft Secure Score](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score).
+For more information, see [Microsoft Secure Score](../security/defender/microsoft-secure-score.md).
 
 ## Raise the level of protection against malware in mail
 
@@ -53,7 +53,7 @@ Your Office 365 or Microsoft 365 environment includes protection against malware
 
 6. Click **Save.**
 
-For more information, see [Anti-malware protection in EOP](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-malware-protection).
+For more information, see [Anti-malware protection in EOP](../security/office-365-security/anti-malware-protection.md).
 
 ## Protect against ransomware
 
@@ -133,22 +133,22 @@ To create an anti-phishing policy in Defender for Office 365, watch [this short 
 
 4. On the **Anti-phishing** page, select **+ Create**. A wizard launches that steps you through defining your anti-phishing policy.
 
-5. Specify the name, description, and settings for your policy as recommended in the chart below. For more information, see [Learn about anti-phishing policy in Microsoft Defender for Office 365 options](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies).
+5. Specify the name, description, and settings for your policy as recommended in the chart below. For more information, see [Learn about anti-phishing policy in Microsoft Defender for Office 365 options](../security/office-365-security/set-up-anti-phishing-policies.md).
 
 6. After you've reviewed your settings, choose **Create this policy** or **Save**, as appropriate.
 
 |Setting or option|Recommended setting|
 |---|---|
-|Name|Domain and most valuable campaign staff|
+|Name|Domain and most valuable staff|
 |Description|Ensure most important staff and our domain are not being impersonated.|
-|Add users to protect|Select **+ Add a condition, The recipient is**. Type user names or enter the email address of the candidate, campaign manager, and other important staff members. You can add up to 20 internal and external addresses that you want to protect from impersonation.|
+|Add users to protect|Select **+ Add a condition, The recipient is**. Type user names or enter the email address of the business owners, partners, or candidate, managers, and other important staff members. You can add up to 20 internal and external addresses that you want to protect from impersonation.|
 |Add domains to protect|Select **+ Add a condition, The recipient domain is**. Enter the custom domain associated with your Microsoft 365 subscription, if you defined one. You can enter more than one domain.|
 |Choose actions|If email is sent by an impersonated user: Choose **Redirect message to another email address**, and then type the email address of the security administrator; for example, *Alice<span><span>@contoso.com*. <br/> If email is sent by an impersonated domain: Choose **Quarantine message**.|
 |Mailbox intelligence|By default, mailbox intelligence is selected when you create a new anti-phishing policy. Leave this setting **On** for best results.|
 |Add trusted senders and domains|Here you can add your own domain, or any other trusted domains.|
 |Applied to|Select **The recipient domain is**. Under **Any of these**, select **Choose**. Select **+ Add**. Select the check box next to the name of the domain, for example, *contoso.<span><span>com*, in the list, and then select **Add**. Select **Done**.|
 
-For more information, see [Set up anti-phishing policies in Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies).
+For more information, see [Set up anti-phishing policies in Defender for Office 365](../security/office-365-security/set-up-anti-phishing-policies.md).
 
 ## Protect against malicious attachments, files, and links with Defender for Office 365
 
@@ -202,7 +202,7 @@ To create an Safe Attachment policy, either watch [this short video](https://sup
 |Redirect attachment on detection|Enable redirection (select this box) <br/> Enter the admin account or a mailbox setup for quarantine. <br/> Apply the above selection if malware scanning for attachments times out or error occurs (select this box).|
 |Applied to|The recipient domain is . . . select your domain.|
 
-For more information, see [Set up anti-phishing policies in Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies).
+For more information, see [Set up anti-phishing policies in Defender for Office 365](../security/office-365-security/set-up-anti-phishing-policies.md).
 
 ### Set up Safe Links in the Security & Compliance Center
 
@@ -245,7 +245,7 @@ To create a new policy targeted to all recipients in your domain:
 |Use Safe Attachments to scan downloadable content|Select this box.|
 |Applied to|The recipient domain is . . . select your domain.|
 
-For more information, see [Safe Links in Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links).
+For more information, see [Safe Links in Defender for Office 365](../security/office-365-security/safe-links.md).
 
 ## Turn on the Unified Audit Log
 
@@ -260,7 +260,7 @@ You must be assigned the Audit Logs role in Exchange Online to turn audit log se
 3. On the security and compliance page, choose **Search** and then **Audit log search**.
 4. On the top of the **Audit log search** page, choose **Turn on auditing**.
 
-After the feature is turned on, you can search for files, folders, and many activities. For more information, see [search the audit log](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance).
+After the feature is turned on, you can search for files, folders, and many activities. For more information, see [search the audit log](../compliance/search-the-audit-log-in-security-and-compliance.md).
 
 ## Tune-up anonymous sharing settings for SharePoint and OneDrive files and folders
 
@@ -275,11 +275,11 @@ To change the sharing settings for OneDrive and SharePoint:
 
 ## Activity alerts
 
-You can use activity alerts to track admin and user activities and detect malware and data loss prevention incidents in your organization. Your subscription includes a set of default policies, but you can also create custom ones. For more information, see [alert policies](https://docs.microsoft.com/microsoft-365/compliance/alert-policies). For example, if you store an important file in SharePoint that you don't want anyone to share externally, you can create a notification that alerts you if someone does share it.
+You can use activity alerts to track admin and user activities and detect malware and data loss prevention incidents in your organization. Your subscription includes a set of default policies, but you can also create custom ones. For more information, see [alert policies](../compliance/alert-policies.md). For example, if you store an important file in SharePoint that you don't want anyone to share externally, you can create a notification that alerts you if someone does share it.
 
 The following figure shows the default policies that are included with Microsoft 365.
 
-![Default alert policies included with Microsoft 365](../media/alertpolicies.png)
+![Default alert policies included with Microsoft 365.](../media/alertpolicies.png)
 
 ## Disable or manage calendar sharing
 

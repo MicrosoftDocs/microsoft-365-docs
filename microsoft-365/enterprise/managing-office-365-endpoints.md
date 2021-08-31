@@ -106,11 +106,11 @@ For more information, see [Office 365 IP Address and URL Web Service](microsoft-
 
 The Office 365 IP Address and URL Web Service provides an RSS feed that you can subscribe to in Outlook. There are links to the RSS URLs on each of the Office 365 service instance-specific pages for the IP addresses and URLs. For more information, see [Office 365 IP Address and URL Web Service](microsoft-365-ip-web-service.md).
 
-### Change notification and approval review using Microsoft Flow
+### Change notification and approval review using Power Automate
 
-We understand that you might still require manual processing for network endpoint changes that come through each month. You can use Microsoft Flow to create a flow that notifies you by email and optionally runs an approval process for changes when Office 365 network endpoints have changes. Once review is completed, you can have the flow automatically email the changes to your firewall and proxy server management team.
+We understand that you might still require manual processing for network endpoint changes that come through each month. You can use Power Automate to create a flow that notifies you by email and optionally runs an approval process for changes when Office 365 network endpoints have changes. Once review is completed, you can have the flow automatically email the changes to your firewall and proxy server management team.
 
-For information about a Microsoft Flow sample and template, see [Use Microsoft Flow to receive an email for changes to Office 365 IP addresses and URLs](https://techcommunity.microsoft.com/t5/Office-365-Networking/Use-Microsoft-Flow-to-receive-an-email-for-changes-to-Office-365/td-p/240651).
+For information about a Power Automate sample and template, see [Use Power Automate to receive an email for changes to Office 365 IP addresses and URLs](https://techcommunity.microsoft.com/t5/Office-365-Networking/Use-Microsoft-Flow-to-receive-an-email-for-changes-to-Office-365/td-p/240651).
   
 <a name="FAQ"> </a>
 ## Office 365 network endpoints FAQ
@@ -123,13 +123,13 @@ Click the link at the bottom to indicate if the article was helpful or not and s
   
 ### How do I determine the location of my tenant?
 
- **Tenant location** is best determined using our [datacenter map](https://aka.ms/datamaps).
+ **Tenant location** is best determined using our [datacenter map](./o365-data-locations.md).
   
 ### Am I peering appropriately with Microsoft?
 
  **Peering locations** are described in more detail in [peering with Microsoft](https://www.microsoft.com/peering).
   
-With over 2500 ISP peering relationships globally and 70 points of presence, getting from your network to ours should be seamless. It can't hurt to spend a few minutes making sure your ISP's peering relationship is the most optimal, [here's a few examples](https://blogs.technet.microsoft.com/onthewire/2017/03/22/__guidance/) of good and not so good peering hand-offs to our network.
+With over 2500 ISP peering relationships globally and 70 points of presence, getting from your network to ours should be seamless. It can't hurt to spend a few minutes making sure your ISP's peering relationship is the most optimal, [here's a few examples](/archive/blogs/onthewire/__guidance) of good and not so good peering hand-offs to our network.
   
 <a name="bkmk_MissingIP"> </a>
 ### I see network requests to IP addresses not on the published list, do I need to provide access to them?
@@ -156,7 +156,7 @@ These CNAME redirects are a normal part of the DNS and are transparent to the cl
 
 A proxy server validates the initial URL, which in the above example is serviceA.office.com, and this URL would be included in Office 365 publishing. The proxy server requests DNS resolution of that URL to an IP Address and will receive back IP_1. It does not validate the intermediary CNAME redirection records.
 
-Hard-coded configurations or whitelisting based on indirect Office 365 FQDNs are not recommended, not supported by Microsoft, and are known to cause customer connectivity issues. DNS solutions that block on CNAME redirection, or that otherwise incorrectly resolve Office 365 DNS entries, can be solved via DNS forwarders with DNS recursion enabled or by using DNS root hints. Many third-party network perimeter products natively integrate recommended Office 365 endpoint whitelisting in their configuration using the [Office 365 IP Address and URL Web service](microsoft-365-ip-web-service.md).
+Hard-coded configurations or using an allowlist based on indirect Office 365 FQDNs are not recommended, not supported by Microsoft, and are known to cause customer connectivity issues. DNS solutions that block on CNAME redirection, or that otherwise incorrectly resolve Office 365 DNS entries, can be solved via DNS forwarders with DNS recursion enabled or by using DNS root hints. Many third-party network perimeter products natively integrate recommended Office 365 endpoint to include an allowlist in their configuration using the [Office 365 IP Address and URL Web service](microsoft-365-ip-web-service.md).
 
 <a name="bkmk_akamai"> </a>
 ### Why do I see names such as nsatc.net or akadns.net in the Microsoft domain names?
@@ -219,7 +219,7 @@ Office 365 does not provide IP addresses of all required network endpoints. Some
   
 [Microsoft Public IP Space](https://www.microsoft.com/download/details.aspx?id=53602)
   
-[Network infrastructure requirements for Microsoft Intune](https://docs.microsoft.com/intune/get-started/network-infrastructure-requirements-for-microsoft-intune)
+[Network infrastructure requirements for Microsoft Intune](/intune/get-started/network-infrastructure-requirements-for-microsoft-intune)
   
 [ExpressRoute and Power BI](https://powerbi.microsoft.com/documentation/powerbi-admin-power-bi-expressroute/)
   
