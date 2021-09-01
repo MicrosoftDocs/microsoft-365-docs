@@ -52,10 +52,9 @@ To apply your model to to a SharePoint document library:
 
     ![Library view.](../media/content-understanding/library-view.png)
 
-5. Select **Add** to apply the model to the library. 
-6. On the model home page, in the **Libraries with this model** section, you should see the URL to the SharePoint site listed.
+5. Select **Add** to apply the model to the library.
 
-    ![Selected library.](../media/content-understanding/selected-library.png)
+6. On the model home page, in the **Where the model is applied** section, you should see the name of the SharePoint site listed.
 
 7. Go to your document library and make sure you are in the model's document library view. Notice that if you select the information button next to the document library name, a message notes that the document library has a model applied to it.
 
