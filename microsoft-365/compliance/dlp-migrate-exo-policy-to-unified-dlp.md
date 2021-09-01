@@ -22,7 +22,7 @@ description: "Learn how to plan for and migrate your Exchange online data loss p
 
 # Migrate Exchange Online data loss prevention policies to Compliance center (preview)
 
-[Exchange Online data loss prevention (DLP) policies](https://docs.microsoft.com/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention) are being deprecated. [Much richer DLP functionality](dlp-learn-about-dlp.md), including Exchange Online DLP, is offered in the [Microsoft 365 Compliance center](https://compliance.microsoft.com/datalossprevention?viewid=policies). You can use the DLP policy migration wizard to help you bring your Exchange Online DLP policies over to the Compliance center where you'll manage them.
+[Exchange Online data loss prevention (DLP) policies](/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention) are being deprecated. [Much richer DLP functionality](dlp-learn-about-dlp.md), including Exchange Online DLP, is offered in the [Microsoft 365 Compliance center](https://compliance.microsoft.com/datalossprevention?viewid=policies). You can use the DLP policy migration wizard to help you bring your Exchange Online DLP policies over to the Compliance center where you'll manage them.
 
 The migration wizard works by reading the configuration of your DLP policies in Exchange and then creating duplicate policies in the Compliance center. By default the wizard creates the new versions of the policies in **Test** mode, so you can see what impact they'd have in your environment without enforcing any of the actions. Once you're ready to fully transition to the Compliance center versions, ***you must***:
 
