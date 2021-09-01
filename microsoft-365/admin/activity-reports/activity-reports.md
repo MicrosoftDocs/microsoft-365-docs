@@ -151,7 +151,7 @@ Your user list will look like this:
 ![Reports - anonymized user list.](../../media/2ed99bce-4978-4ee3-9ea2-4a8db26eef02.png)
 
 
-If you want to unhide user level information when you're generating your reports, a global administrator can  quickly make that change in the admin center.
+If you want to unhide user-level information when you're generating your reports, a global administrator can quickly make that change in the admin center.
   
 1. In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">Services &amp; add-ins</a> page.
 
