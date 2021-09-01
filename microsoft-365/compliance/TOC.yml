@@ -259,6 +259,8 @@
           items:
           - name: Plan for data loss prevention
             href: dlp-overview-plan-for-dlp.md
+          - name: Data loss prevention policy reference
+            href: dlp-policy-reference.md 
         - name: Get started with DLP
           items:
           - name: Get started with the default DLP policy

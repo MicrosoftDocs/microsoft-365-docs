@@ -60,7 +60,7 @@ Learn more about confidence levels in this video
 ### Example sensitive information type
 
 
-## Argentina national identity (DNI) number
+#### Argentina national identity (DNI) number
 
 ### Format
 

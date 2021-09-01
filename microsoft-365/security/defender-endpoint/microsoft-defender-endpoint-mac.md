@@ -43,7 +43,7 @@ This topic describes how to install, configure, update, and use Defender for End
 [What's new in Microsoft Defender for Endpoint on Mac](mac-whatsnew.md)
 
 > [!TIP]
-> If you have any feedback that you would like to share, submit it by opening Microsoft Defender for Endpoint on Mac on your device and navigating to **Help** > **Send feedback**.
+> If you have any feedback that you would like to share, submit it by opening Microsoft Defender for Endpoint on Mac on your device and navigating to **Help** \> **Send feedback**.
 
 To get the latest features, including preview capabilities (such as endpoint detection and response for your Mac devices), configure your macOS device running Microsoft Defender for Endpoint to be an "Insider" device.
 
@@ -82,7 +82,7 @@ The three most recent major releases of macOS are supported.
 
 Beta versions of macOS are not supported.
 
-macOS devices with M1 processors are not supported.
+Support for macOS devices with M1 chip-based processors is currently in preview.
 
 After you've enabled the service, you may need to configure your network or firewall to allow outbound connections between it and your endpoints.
 
