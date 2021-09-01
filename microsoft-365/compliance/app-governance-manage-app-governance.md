@@ -75,12 +75,12 @@ Here's a summary of the integration.
 ![The integration of app governance with Azure AD and Microsoft Cloud App Security.](..\media\manage-app-protection-governance\mapg-integration.png)
 
 App governance sends its alerts to Microsoft Cloud App Security and Microsoft 365 Defender, and receives alerts from Microsoft Cloud App Security, to enable more detailed analysis of app-based security incidents.
-- App governance alerts show up in Microsoft 365 Defender alerts list as alerts with the Detection source field set to "MAPG"
-- App governance alerts show up in the MCAS alerts list as alerts with the Policy field set to either
+- App governance alerts show up in Microsoft 365 Defender alerts list as alerts with the Detection source field set to "App Governance"
+- App governance alerts show up in the MCAS alerts list as alerts with the Policy field set to one of the following:
   - Microsoft 365 OAuth App Governance
   - Microsoft 365 OAuth Phishing Detection
   - Microsoft 365 OAuth App Reputation
 - MCAS alerts appear in the app governance alerts list as alerts with Source set to MCAS
 
 > [!NOTE]
-> Alerts status is currently not being synced between App Governance and Microsoft Cloud App Security.
+> Alert status is currently not being synced between app governance and Microsoft Cloud App Security.
