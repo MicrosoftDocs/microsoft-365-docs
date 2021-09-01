@@ -27,7 +27,7 @@ When someone adds you to a Microsoft 365 for business organization, you'll get a
 
 Your email looks like this to set up your user account. When you get this email, you'll have to complete a few steps before you can start using your new user account.
 
-(**Add updated screenshot here**)
+:::image type="content" source="../../media/ssu-accept-invite-msa.png" alt-text="Screenshot: Accept invite to join Microsoft 365 Business Standard":::
 
 1. From the invitation email, select **Accept**.
 

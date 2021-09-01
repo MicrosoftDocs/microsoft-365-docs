@@ -52,7 +52,7 @@ To sign up and purchase Microsoft 365 Business Standard (or Microsoft 365 Apps) 
 
 You'll sign into Microsoft 365 with this email address. For example, alliebellew@hotmail.com.
 
-
+:::image type="content" source="../../media/ssu-how-you-sign-in.png" alt-text="Screenshot: Sign in with your personal email.":::
 
 1. Create a password on the next page, and select **Create account** to continue. On the next page, read about how we handle your data and select whether you want Microsoft Partners to contact you. Select **Next**.
 
@@ -81,6 +81,8 @@ If you would like to add a domain and create a business email account, you can f
 ### Option 2: Create a new business email account
 
 With this option, you’ll be able to use Microsoft 365 Exchange as your professional, branded email provider. All your users will have a shared domain email address. For example, their username, followed by @contoso.com. You and your users sign into Microsoft 365 with this new email address. When you follow this process (add a domain and create new business email accounts), you’ll get access to all the features provided in Microsoft 365 Business Standard. For steps on how to buy or add a domain, see [Set up Microsoft 365 Business Standard](../setup/setup-business-standard.md).
+
+:::image type="content" source="../../media/ssu-create-biz-email.png" alt-text="Screenshot: Sign in with new business email.":::
 
 This option provides immediate access to the full suite of features in your Microsoft 365 Business subscription but may require technical steps to be completed up front.
 
