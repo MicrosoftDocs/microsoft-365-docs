@@ -25,45 +25,48 @@ ms.custom: seo-marvel-apr2020
 
 Need to find if a user viewed a specific document or purged an item from their mailbox? If so, you can use the audit log search tool in Microsoft 365 compliance center to search the unified audit log to view user and administrator activity in your organization. Thousands of user and admin operations performed in dozens of Microsoft 365 services and solutions are captured, recorded, and retained in your organization's unified audit log. User's in your organization can use the audit log search tool to search for, view, and export (to a CSV file) the audit records for these operations.
 
-### Microsoft 365 services that support auditing
+## Microsoft 365 services that support auditing
 
 Why a unified audit log? Because you can search the audit log for activities performed in different Microsoft 365 services. The following table lists the Microsoft 365 services and features (in alphabetical order) that are supported by the unified audit log.
 
-|Microsoft 365 service or feature |Column2  |Column3  |
-|:---------|:---------|:---------|
-| Content explorer|||
-| Data loss prevention (DLP)|||
-| Defender for Endpoint|||
-| Dynamics 365|||
-| eDiscovery|||
-| Exact Data Match|||
-| Exchange Online|||
-| Information barriers|||
+|Microsoft 365 service or feature |Record types|
+|:---------|:---------|
+|Azure Active Directory|AzureActiveDirectory, AzureActiveDirectoryAccountLogon, AzureActiveDirectoryStsLogon |
+|Azure Information Protection|AipDiscover, AipSensitivityLabelAction, AipProtectionAction, AipFileDeleted, AipHeartBeat ||
+| Content explorer|LabelContentExplorer||
+| Data loss prevention (DLP)|ComplianceDLPSharePoint, ComplianceDLPExchange||
+| Defender for Endpoint|DLPEndpoint||
+| Dynamics 365|CRM||
+| eDiscovery|Discovery, AeD||
+| Exact Data Match|MipExactDataMatch||
+| Exchange Online|ExchangeAdmin, ExchangeItem ||
+|Forms|MicrosoftForms||
+| Information barriers|InformationBarrierPolicyApplication||
 | Microsoft 365 Defender|||
-| Microsoft Teams|||
-| MyAnalytics|||
-| OneDrive for Business|||
-| Power Apps|||
+| Microsoft Teams|MicrosoftTeams||
+| MyAnalytics|MyAnalyticsSettings||
+| OneDrive for Business|OneDrive||
+| Power Apps|PowerAppsApp, PowerAppsPlan||
 | Power Automate|||
-| Power BI|||
-| Quarantine|||
-| Retention policies and retention labels|||
-| Sensitive information types|||
+| Power BI|PowerBIAudit||
+| Quarantine|Quarantine||
+| Retention policies and retention labels|MIPLabel||
+| Sensitive information types|DlpSensitiveInformationType||
 | Sensitivity labels|||
-| SharePoint Online|||
-| Stream|||
-| Threat Intelligence|||
-| Workplace Analytics|||
-
-
+| SharePoint Online|SharePoint, SharePointFileOperation,SharePointSharingOperation, SharePointListOperation, SharePointCommentOperation ||
+| Stream|MicrosoftStream||
+| Threat Intelligence|ThreatIntelligence, ThreatIntelligenceUrl||
+| Workplace Analytics|WorkplaceAnalytics||
+|Yammer|Yammer|
 ||||
-||||
-||||
-||||
-
-
 
 For more information about the operations that are audited in each of the services listed in the previous table, see the [Audited activities](#audited-activities) section in this article.
+
+The previous table also identifies the record type value that can be used to search the audit log for activities in the corresponding service by using the **Search-UnifiedAuditLog** cmdlet in Exchange Online PowerShell or by using a PowerShell script. Some services have multiple record types to search for different types of activities within the same service. For more information, see:
+
+- [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog)
+
+- [Use a PowerShell script to search the audit log](audit-log-search-script.md)
 
 ## Before you search the audit log
 
