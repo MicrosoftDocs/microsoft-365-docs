@@ -55,11 +55,27 @@ To start recording system events, open Powershell in administrative mode and per
 
 ## What information is present?
 
-The admin will be able to view numbers for duration, scan counts for the report they specify (file/file extension/processes). **(Image output or text output)**
+The admin will be able to view numbers for duration, scan counts for the report they specify (file/file extension/processes).
 
-**Example output**
+<include the image example-output.png>
 
-<are inputs pending?>
+## Additional functionality: Exporting and converting to JSON
+
+You can also export and convert the results of the performance analyzer to a CSV file.
+For examples that describe the sample codes used to export and convert, see [For CSV](#for-csv) and [For JSON](#for-json).
+
+### For CSV
+
+- **To export**: 
+`{Get-MpPerformanceReport -Path:.\Repro-Install.etl -Topscans:1000}. TopScans | Export-CSV -Path:.\Repro-Install-Scans.csv -Encoding:UTF8 -NoTypeInformation`
+
+- **To convert**: 
+`{Get-MpPerformanceReport -Path:.\Repro-Install.etl -Topscans:100}. TopScans | ConvertTo-Csv -NoTypeInformation`
+
+### For JSON
+
+- **To convert**:
+`{Get-MpPerformanceReport -Path:.\Repro-Install.etl -Topscans:1000}. TopScans | ConvertTo-Json -Depth:1`
 
 ## Supported versions of Windows
 
