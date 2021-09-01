@@ -57,12 +57,12 @@ To start recording system events, open Powershell in administrative mode and per
 
 The admin will be able to view numbers for duration, scan counts for the report they specify (file/file extension/processes).
 
-<include the image example-output.png>
+:::image type="content" source="images/example-output.png" alt-text="Example output for a basic TopFiles query":::
 
 ## Additional functionality: Exporting and converting to JSON
 
 You can also export and convert the results of the performance analyzer to a CSV file.
-For examples that describe the sample codes used to export and convert, see [For CSV](#for-csv) and [For JSON](#for-json).
+For examples that describe the process of "export" and "convert" through sample codes, see [For CSV](#for-csv) and [For JSON](#for-json).
 
 ### For CSV
 
