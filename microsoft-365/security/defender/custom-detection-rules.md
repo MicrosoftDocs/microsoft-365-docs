@@ -37,9 +37,11 @@ Custom detection rules are rules you can design and tweak using [advanced huntin
 
 To manage custom detections, you need to be assigned one of these roles:
 
-- **Security administrator**—Users with this [Azure Active Directory role](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) can manage security settings in Microsoft 365 security center and other portals and services.
+- **Security administrator**—Users with this [Azure Active Directory role](/azure/active-directory/roles/permissions-reference#security-administrator) can manage security settings in the Microsoft 365 Defender portal and other portals and services.
 
-- **Security operator**—Users with this [Azure Active Directory role](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) can manage alerts and have global read-only access to security-related features, including all information in Microsoft 365 security center. This role is sufficient for managing custom detections only if role-based access control (RBAC) is turned off in Microsoft Defender for Endpoint. If you have RBAC configured, you also need the **manage security settings** permission for Defender for Endpoint.
+- **Security operator**—Users with this [Azure Active Directory role](/azure/active-directory/roles/permissions-reference#security-operator) can manage alerts and have global read-only access to security-related features, including all information in the Microsoft 365 Defender portal. This role is sufficient for managing custom detections only if role-based access control (RBAC) is turned off in Microsoft Defender for Endpoint. If you have RBAC configured, you also need the **manage security settings** permission for Defender for Endpoint.
+
+You can also manage custom detections that apply to data from specific Microsoft 365 Defender solutions if you have permissions for them. If you only have manage permissions for Microsoft 365 Defender for Office, for instance, you can create custom detections using `Email` tables but not `Identity` tables.  
 
 To manage required permissions, a **global administrator** can:
 
@@ -52,7 +54,7 @@ To manage required permissions, a **global administrator** can:
 ## Create a custom detection rule
 ### 1. Prepare the query.
 
-In Microsoft 365 security center, go to **Advanced hunting** and select an existing query or create a new query. When using a new query, run the query to identify errors and understand possible results.
+In the Microsoft 365 Defender portal, go to **Advanced hunting** and select an existing query or create a new query. When using a new query, run the query to identify errors and understand possible results.
 
 >[!IMPORTANT]
 >To prevent the service from returning too many alerts, each rule is limited to generating only 100 alerts whenever it runs. Before creating a rule, tweak your query to avoid alerting for normal, day-to-day activity.
@@ -85,14 +87,16 @@ Simple queries, such as those that don't use the `project` or `summarize` operat
 
 There are various ways to ensure more complex queries return these columns. For example, if you prefer to aggregate and count by entity under a column such as `DeviceId`, you can still return `Timestamp` and `ReportId` by getting it from the most recent event involving each unique `DeviceId`.
 
+
 > [!IMPORTANT]
 > Avoid filtering custom detections using the `Timestamp` column. The data used for custom detections is pre-filtered based on the detection frequency.
+
 
 The sample query below counts the number of unique devices (`DeviceId`) with antivirus detections and uses this count to find only the devices with more than five detections. To return the latest `Timestamp` and the corresponding `ReportId`, it uses the `summarize` operator with the `arg_max` function.
 
 ```kusto
 DeviceEvents
-| where Timestamp > ago(1d)
+| where ingestion_time() > ago(1d)
 | where ActionType == "AntivirusDetection"
 | summarize (Timestamp, ReportId)=arg_max(Timestamp, ReportId), count() by DeviceId
 | where count_ > 5
@@ -194,7 +198,7 @@ To view all existing custom detection rules, navigate to **Hunting** > **Custom 
 
 To view comprehensive information about a custom detection rule, go to **Hunting** > **Custom detections** and then select the name of rule. You can then view general information about the rule, including information its run status and scope. The page also provides the list of triggered alerts and actions.
 
-![Custom detection rule details page](../../media/custom-detection-details.png)<br>
+![Custom detection rule details page.](../../media/custom-detection-details.png)<br>
 *Custom detection rule details*
 
 You can also take the following actions on the rule from this page:

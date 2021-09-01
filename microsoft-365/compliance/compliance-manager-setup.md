@@ -53,7 +53,7 @@ To set permissions and assign roles in the Microsoft 365 compliance center, foll
 
 1. Go to the [Microsoft 365 compliance center](https://compliance.microsoft.com/compliancemanager) and select **Permissions** on the left navigation.
 
-2. Under the **Compliance center** dropdown, select **Roles**. 
+2. Under the **Compliance center** dropdown, select **Roles**.
 
 3. Find the role group to which you want to add one or more users, and check the box to the left of the group name. (See the [list of roles and related functions below](#role-types). The role group names mimic the role name.)
 
@@ -67,9 +67,7 @@ To set permissions and assign roles in the Microsoft 365 compliance center, foll
 
 8. When you’re done assigning users, select **Done**, then select **Save**, then **Close**.
 
-If you need to access the classic version of Compliance Manager in the Microsoft Service Trust Portal,  the Admin settings in the Service Trust Portal provides another way to assign roles ([view instructions](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#assigning-compliance-manager-roles-to-users)). Be aware that such roles are more limited in their functionality.
-
-##### More about Azure AD
+#### More about Azure AD
 
 To assign roles and set permissions in Azure AD, see [Assign administrator and non-administrator roles to users with Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal).
 
@@ -77,7 +75,7 @@ Users with Azure AD identities who don't have Office 365 or Microsoft 365 subscr
 
 ### Role types
 
-The table below shows the functions allowed by each role in Compliance Manager. The table also shows how each [Azure AD role](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) maps to Compliance Manager roles. Users will need at least the Compliance Manager reader role, or Azure AD global reader role, to access Compliance Manager.
+The table below shows the functions allowed by each role in Compliance Manager. The table also shows how each [Azure AD role](/azure/active-directory/roles/permissions-reference) maps to Compliance Manager roles. Users will need at least the Compliance Manager reader role, or Azure AD global reader role, to access Compliance Manager.
 
 
 | User can: | Compliance Manager role | Azure AD role | 

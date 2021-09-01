@@ -17,6 +17,7 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 - AdminTemplateSet
+- admindeeplinkMAC
 search.appverid:
 - BCS160
 - MET150
@@ -91,7 +92,7 @@ You can also use Conditional Access policies for more advanced capabilities, suc
 
 You configure Conditional Access policies from the **Security** pane for Azure AD in the Azure portal.
 
-![Picture of menu option for Conditional Access](../../media/multi-factor-authentication-microsoft-365/conditional-access-mfa.png)
+![Picture of menu option for Conditional Access.](../../media/multi-factor-authentication-microsoft-365/conditional-access-mfa.png)
 
 You can use Conditional Access policies with:
 
@@ -136,9 +137,9 @@ For more information, see this [overview of Azure AD Identity Protection](/azure
 
 You should be using either security defaults or Conditional Access policies to require MFA for your user account sign-ins. However, if either of these cannot be used, Microsoft strongly recommends MFA for user accounts that have administrator roles, especially the global administrator role, for any size subscription.
 
-You enable MFA for individual user accounts from the **Active user** pane of the Microsoft 365 admin center.
+You enable MFA for individual user accounts from the <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**Active users**</a> pane of the Microsoft 365 admin center.
 
-![Picture of Multi factor authentication option on Active users page](../../media/multi-factor-authentication-microsoft-365/per-user-mfa.png)
+![Picture of Multi factor authentication option on Active users page.](../../media/multi-factor-authentication-microsoft-365/per-user-mfa.png)
 
 After being enabled, the next time the user signs in, they will be prompted to register for MFA and to choose and test the additional verification method.
 
@@ -164,7 +165,7 @@ In the Azure portal, you can:
 - Enable and disable security defaults
 - Configure Conditional Access policies
 
-In the Microsoft 365 admin center, you can configure per-user and service MFA settings.
+In the Microsoft 365 admin center, you can configure per-user and service <a href="https://go.microsoft.com/fwlink/p/?linkid=2169174" target="_blank">MFA settings</a>.
 
 ## Next steps
 

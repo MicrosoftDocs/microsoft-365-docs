@@ -1,5 +1,5 @@
 ---
-title: Evaluate Microsoft Cloud App Security overview, setup or set up an evaluation of device, identity, data, and app protection, as part of Microsoft 365 Defender
+title: Evaluate Microsoft Cloud App Security overview
 description: Steps to set up your Microsoft 365 Defender trial lab or pilot environment to try out and experience the security solution designed to protect devices, identity, data, and applications in your organization.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -34,7 +34,7 @@ This article outlines the process to enable and pilot Microsoft Cloud App Securi
 
 Use the following steps to enable and pilot Microsoft cloud app security.
 
-![Steps for adding Microsoft Defender for Office to the Defender evaluation environment](../../media/defender/m365-defender-office-eval-steps.png)
+![Steps for adding Microsoft Defender for Office to the Defender evaluation environment.](../../media/defender/m365-defender-office-eval-steps.png)
 
 
 

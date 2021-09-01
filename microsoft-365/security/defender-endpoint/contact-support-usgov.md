@@ -30,16 +30,18 @@ ms.technology: mde
 Defender for Endpoint has recently upgraded the support process to offer a more modern and advanced support experience.
 
 ## Using the right portal
+
 In order to open a support case, you will need to login to your Microsoft Defender for Endpoint portal:
 
-Environment | Portal URL
-:---|:---
-GCC-M on Commercial | [https://securitycenter.microsoft.com](https://securitycenter.microsoft.com)
-GCC-M | [https://gcc.securitycenter.microsoft.us](https://gcc.securitycenter.microsoft.us)
-GCC-H | [https://securitycenter.microsoft.us](https://securitycenter.microsoft.us)
-DoD | [https://securitycenter.microsoft.us](https://securitycenter.microsoft.us)
+Environment|Portal URL
+---|---
+GCC-M on Commercial|<https://securitycenter.microsoft.com>
+GCC-M|<https://gcc.securitycenter.microsoft.us>
+GCC-H|<https://securitycenter.microsoft.us>
+DoD|<https://securitycenter.microsoft.us>
 
 If you are unable to login to the portal, you can also open a support case using the [phone](../../business-video/get-help-support.md).
 
 ## Opening a support case
+
 For prerequisites and instructions, see [Contact Microsoft Defender for Endpoint support](contact-support.md).

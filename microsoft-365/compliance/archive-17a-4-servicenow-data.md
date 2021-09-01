@@ -24,7 +24,7 @@ After ServiceNow data is stored in user mailboxes, you can apply Microsoft 365 c
 
 The following overview explains the process of using a data connector to archive ServiceNow data in Microsoft 365.
 
-![Archiving workflow for ServiceNow data from 17a-4](../media/ServiceNowDataParserConnectorWorkflow.png)
+![Archiving workflow for ServiceNow data from 17a-4.](../media/ServiceNowDataParserConnectorWorkflow.png)
 
 1. Your organization works with 17a-4 to set up and configure the ServiceNow DataParser.
 

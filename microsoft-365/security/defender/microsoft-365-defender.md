@@ -69,18 +69,18 @@ Microsoft 365 Defender's unique cross-product layer augments the individual suit
 - Automate response to compromise by triggering self-healing for impacted assets through automated remediation
 - Enable security teams to perform detailed and effective threat hunting across endpoint and Office data
 
-![Image of incident overview page](../../media/overview-incident.png) <br>
+![Image of incident overview page.](../../media/overview-incident.png) <br>
 Cross-product incident (Overview)
 
-![Image of alerts queue](../../media/incident-list.png)<br>
+![Image of alerts queue.](../../media/incident-list.png)<br>
 All related alerts across the suite products correlated together into a single incident (alerts view)
 
-![Image of incident queue](../../media/advanced-hunting.png)<br>
+![Image of incident queue.](../../media/advanced-hunting.png)<br>
 Query-based hunting on top of email and endpoint raw data
 
 
 Microsoft 365 Defender cross-product features include: 
-- **Cross-product single pane of glass** - Central view all information for detections, impacted assets, automated actions taken, and related evidence in a single queue and a single pane in [security.microsoft.com](https://security.microsoft.com). 
+- **Cross-product single pane of glass** - Central view for all information on detections, impacted assets, automated actions taken, and related evidence in a single queue and a single pane in [security.microsoft.com](https://security.microsoft.com). 
 - **Combined incidents queue** - To help security professionals focus on what is critical by ensuring the full attack scope, impacted assets and automated remediation actions are grouped together and surfaced in a timely manner. 
 - **Automatic response to threats** - Critical threat information is shared in real time between the Microsoft 365 Defender products to help stop the progression of an attack. For example, if a malicious file is detected on an endpoint protected by Microsoft Defender for Endpoint, it will instruct Defender for Office 365 to scan and remove the file from all e-mail messages. The file will be blocked on sight by the entire Microsoft 365 security suite.
 - **Self-healing for compromised devices, user identities, and mailboxes** - Microsoft 365 Defender uses AI-powered automatic actions and playbooks to remediate impacted assets back to a secure state. Microsoft 365 Defender leverages automatic remediation capabilities of the suite products to ensure all impacted assets related to an incident are automatically remediated where possible.
@@ -88,7 +88,7 @@ Microsoft 365 Defender cross-product features include:
 
 
 ## Get started
-Microsoft 365 Defender licensing requirements must be met before you can enable the service in the Microsoft 365 security center at [security.microsoft.com](https://security.microsoft.com). For more information, read:
+Microsoft 365 Defender licensing requirements must be met before you can enable the service in the Microsoft 365 Defender portal at [security.microsoft.com](https://security.microsoft.com). For more information, read:
 - [Licensing requirements](prerequisites.md#licensing-requirements)
 - [Turn on Microsoft 365 Defender](m365d-enable.md)
 

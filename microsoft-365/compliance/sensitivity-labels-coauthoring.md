@@ -72,7 +72,7 @@ Make sure you understand the following prerequisites before you turn on this fea
 - Sensitivity labels must be [enabled for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md) for the tenant. If this feature isn't already enabled, it will be automatically enabled when you select the setting to turn on co-authoring for files with sensitivity labels.
 
 - Microsoft 365 Apps for enterprise:
-    - **Windows**: Minimum version 2105: June 18
+    - **Windows**: Minimum version 2106
     - **macOS**: Minimum version 16.50
     - **iOS**: Not yet supported
     - **Android**: Not yet supported
@@ -141,7 +141,7 @@ This preview version of co-authoring for files encrypted with sensitivity labels
     
     Then select **Turn on co-authoring for files with sensitivity labels**, and **Apply**:
     
-    ![Option to turn on co-authoring for files with sensitivity labels](../media/co-authoring-tenant-option-for-sensitivity-labels.png)
+    ![Option to turn on co-authoring for files with sensitivity labels.](../media/co-authoring-tenant-option-for-sensitivity-labels.png)
 
 3. Wait 24 hours for this setting to replicate across your environment before you use this new feature for co-authoring.
 
@@ -152,7 +152,7 @@ This preview version of co-authoring for files encrypted with sensitivity labels
 
 After you've enabled co-authoring for files with sensitivity labels for your tenant, you can't disable this setting yourself. That's why it's so important that you check and understand the prerequisites, consequences, and limitations before you enable this setting.
 
-![Option that shows co-authoring turned on for sensitivity labels](../media/co-authoring-tenant-option-set-for-sensitivity-labels.png)
+![Option that shows co-authoring turned on for sensitivity labels.](../media/co-authoring-tenant-option-set-for-sensitivity-labels.png)
 
 As you see from the screenshot when this setting has been turned on, you can contact [Microsoft Support](../business-video/get-help-support.md) and request to turn off this setting. This request might take several days and you will need to prove that you are a global administrator for your tenant. Expect usual support charges to apply. 
 

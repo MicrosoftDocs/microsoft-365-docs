@@ -37,11 +37,15 @@ You can use the Microsoft 365 Defender portal or PowerShell to modify and remove
 1. In the Microsoft 365 Defender portal, go to **Policies & rules** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
 
 2. Select the tab that contains the type of entry that you want to modify:
+   - **Senders)
    - **URLs**
    - **Files**
    - **Spoofing**
 
-3. Select the entry that you want to modify, and then click ![Edit icon](../../media/m365-cc-sc-edit-icon.png) **Edit**. The values that you are able to modify in the flyout that appears depend on the tab you selected in the previous step:
+3. Select the entry that you want to modify, and then click ![Edit icon.](../../media/m365-cc-sc-edit-icon.png) **Edit**. The values that you are able to modify in the flyout that appears depend on the tab you selected in the previous step:
+   - **Senders**
+     - **Never expire** and/or expiration date.
+     - **Optional note**
    - **URLs**
      - **Never expire** and/or expiration date.
      - **Optional note**
@@ -52,16 +56,20 @@ You can use the Microsoft 365 Defender portal or PowerShell to modify and remove
      - **Action**: You can change the value to **Allow** or **Block**.
 4. When you're finished, click **Save**.
 
+> [!NOTE]
+> You can only extend allows for a maximum of 30 days after the creation date. Blocks can be extended for up to 90 days, but unlike allows, they can also be set to Never expire.
+
 ### Remove entries from the Tenant Allow/Block List
 
 1. In the Microsoft 365 Defender portal, go to **Policies & rules** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
 
 2. Select the tab that contains the type of entry that you want to remove:
+   - **Senders**
    - **URLs**
    - **Files**
    - **Spoofing**
 
-3. Select the entry that you want to remove, and then click ![Delete icon](../../media/m365-cc-sc-delete-icon.png) **Delete**.
+3. Select the entry that you want to remove, and then click ![Delete icon.](../../media/m365-cc-sc-delete-icon.png) **Delete**.
 
 4. In the warning dialog that appears, click **Delete**.
 
@@ -69,10 +77,10 @@ You can use the Microsoft 365 Defender portal or PowerShell to modify and remove
 
 ### Modify block file and URL entries in the Tenant Allow/Block List
 
-To modify block file and URL entries in the Tenant Allow/Block List, use the following syntax:
+To modify block sender, file, and URL entries in the Tenant Allow/Block List, use the following syntax:
 
 ```powershell
-Set-TenantAllowBlockListItems -ListType <FileHash | Url> -Ids <"Id1","Id2",..."IdN"> [<-ExpirationDate Date | -NoExpiration>] [-Notes <String>]
+Set-TenantAllowBlockListItems -ListType <Sender | FileHash | Url> -Ids <"Id1","Id2",..."IdN"> [<-ExpirationDate Date | -NoExpiration>] [-Notes <String>]
 ```
 
 This example changes the expiration date of the specified block URL entry.
@@ -85,10 +93,10 @@ For detailed syntax and parameter information, see [Set-TenantAllowBlockListItem
 
 ### Remove URL or file entries from the Tenant Allow/Block List
 
-To remove file and URL entries from the Tenant Allow/Block List, use the following syntax:
+To remove sender, file, and URL entries from the Tenant Allow/Block List, use the following syntax:
 
 ```powershell
-Remove-TenantAllowBlockListItems -ListType <FileHash | Url> -Ids <"Id1","Id2",..."IdN">
+Remove-TenantAllowBlockListItems -ListType <Sender | FileHash | Url> -Ids <"Id1","Id2",..."IdN">
 ```
 
 This example removes the specified block URL entry from the Tenant Allow/Block List.

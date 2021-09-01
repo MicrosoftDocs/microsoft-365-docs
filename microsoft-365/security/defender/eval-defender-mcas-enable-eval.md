@@ -1,7 +1,6 @@
 ---
 title: Enable the evaluation environment for Microsoft Cloud App Security
 description: Learn the architecture of MCAS within Microsoft Defender for Office 365 and understand interactions between the Microsoft 365 Defender products.
-keywords: Microsoft 365 Defender trial, try Microsoft 365 Defender, evaluate Microsoft 365 Defender, Microsoft 365 Defender evaluation lab, Microsoft 365 Defender pilot, cyber security, advanced persistent threat, enterprise security, devices, device, identity, users, data, applications, incidents, automated investigation and remediation, advanced hunting
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -43,7 +42,7 @@ This article includes guidance for both methods.
 
 Use the following steps to set up Microsoft Cloud App Security.
 
-![Steps to enable Microsoft Microsoft Cloud App Security in the Microsoft Defender evaluation environment](../../media/defender/m365-defender-mcas-eval-enable-steps.png)
+![Steps to enable Microsoft Microsoft Cloud App Security in the Microsoft Defender evaluation environment.](../../media/defender/m365-defender-mcas-eval-enable-steps.png)
 
 - [Step 1. Connect to the Cloud App Security portal](#step-1-connect-to-the-cloud-app-security-portal)
 - [Step 2. Integrate with Microsoft Defender for Endpoint](#step-2-integrate-with-microsoft-defender-for-endpoint)

@@ -1,5 +1,5 @@
 ---
-title: Pilot Microsoft Defender for Identity, set up configuration benchmarks, standards, guidelines, and take tutorials about detecting, and remediating various Identity threats like reconnaissance, compromised credential, lateral movement, domain dominance, and exfiltration alerts, conduct user, computer, entity, and lateral movement paths investigation.
+title: Pilot Microsoft Defender for Identity
 description: Pilot Microsoft Defender for Identity, set benchmarks, take tutorials on reconnaissance, compromised credential, lateral movement, domain dominance, and exfiltration alerts, among others.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -33,7 +33,7 @@ This article is [Step 3 of 3](eval-defender-identity-overview.md) in the process
 
 Use the following steps to setup and configure the pilot for Microsoft Defender for identity. Note that the recommendations don't include setting up a pilot group. The best practice is to go ahead and install the sensor on all of your servers running Active Directory Domain Services (AD DS) and Active Directory Federated Services (AD FS).
 
-![Steps for adding Microsoft Defender for Identity to the Defender evaluation environment](../../media/defender/m365-defender-identity-pilot-steps.png)
+![Steps for adding Microsoft Defender for Identity to the Defender evaluation environment.](../../media/defender/m365-defender-identity-pilot-steps.png)
 
 The following table describes the steps in the illustration.
 

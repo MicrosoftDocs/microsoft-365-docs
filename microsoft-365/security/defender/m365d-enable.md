@@ -1,5 +1,5 @@
 ---
-title: Turn on Microsoft 365 Defender in the Microsoft 365 security center
+title: Turn on Microsoft 365 Defender 
 description: Learn how to enable Microsoft 365 Defender and start integrating your security incident and response.
 keywords: get started, enable Microsoft 365 Defender, Microsoft 365 Defender, M365, security, data location, required permissions, license eligibility, settings page
 search.product: eADQiWindows 10XVcnh
@@ -30,13 +30,13 @@ ms.technology: m365d
 **Applies to:**
 - Microsoft 365 Defender
 
-[Microsoft 365 Defender](microsoft-365-defender.md) unifies your incident response process by integrating key capabilities across Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Cloud App Security, and Microsoft Defender for Identity. This unified experience adds powerful features you can access in the Microsoft 365 security center.
+[Microsoft 365 Defender](microsoft-365-defender.md) unifies your incident response process by integrating key capabilities across Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Cloud App Security, and Microsoft Defender for Identity. This unified experience adds powerful features you can access in the Microsoft 365 Defender portal.
 
-Microsoft 365 Defender automatically turns on when eligible customers with the required permissions visit Microsoft 365 security center. Read this article to understand various prerequisites and how Microsoft 365 Defender is provisioned.
+Microsoft 365 Defender automatically turns on when eligible customers with the required permissions visit Microsoft 365 Defender portal. Read this article to understand various prerequisites and how Microsoft 365 Defender is provisioned.
 
 ## Check license eligibility and required permissions
 
-A license to a Microsoft 365 security product generally entitles you to use Microsoft 365 Defender in Microsoft 365 security center without additional licensing cost. We do recommend getting a Microsoft 365 E5, E5 Security, A5, or A5 Security license or a valid combination of licenses that provides access to all supported services.
+A license to a Microsoft 365 security product generally entitles you to use Microsoft 365 Defender without additional licensing cost. We do recommend getting a Microsoft 365 E5, E5 Security, A5, or A5 Security license or a valid combination of licenses that provides access to all supported services.
 
 For detailed licensing information, [read the licensing requirements](prerequisites.md#licensing-requirements).
 
@@ -57,7 +57,7 @@ Onboarding to Microsoft 365 Defender is simple. From the navigation menu, select
 
 Microsoft 365 Defender will store and process data in the [same location used by Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy). If you don't have Microsoft Defender for Endpoint, a new data center location is automatically selected based on the location of active Microsoft 365 security services. The selected data center location is shown in the screen.
 
-Select **Need help?** in the Microsoft 365 security center to contact Microsoft support about provisioning Microsoft 365 Defender in a different data center location.
+Select **Need help?** in the Microsoft 365 Defender portal to contact Microsoft support about provisioning Microsoft 365 Defender in a different data center location.
 
 > [!NOTE]
 > In the past, Microsoft Defender for Endpoint automatically provisioned in European Union (EU) data centers when turned on through Azure Defender. Microsoft 365 Defender will automatically provision in the same EU data center for customers who have provisioned Defender for Endpoint in this manner in the past.
@@ -72,8 +72,8 @@ Once the service is provisioned, it adds:
 - [Advanced hunting](advanced-hunting-overview.md) capabilities
 - Threat analytics
 
-![Image of Microsoft 365 security center navigation pane with Microsoft 365 Defender features](../../media/overview-incident.png)
-*Microsoft 365 security center with incidents management and other Microsoft 365 Defender capabilities*
+![Image of Microsoft 365 Defender portal navigation pane with Microsoft 365 Defender features.](../../media/overview-incident.png)
+*Microsoft 365 Defender portal with incidents management and other capabilities*
 
 ### Getting Microsoft Defender for Identity data 
 To enable the integration with Microsoft Cloud App Security, you'll need to login to the Microsoft Cloud App Security at least once.
@@ -82,7 +82,7 @@ To enable the integration with Microsoft Cloud App Security, you'll need to logi
 
 To get answers to the most commonly asked questions about turning on Microsoft 365 Defender, [read the FAQ](m365d-enable-faq.md).
 
-Microsoft support staff can help provision or deprovision the service and related resources on your tenant. For assistance, select **Need help?** in the Microsoft 365 security center. When contacting support, mention Microsoft 365 Defender.
+Microsoft support staff can help provision or deprovision the service and related resources on your tenant. For assistance, select **Need help?** in the Microsoft 365 Defender portal. When contacting support, mention Microsoft 365 Defender.
 
 ## Related topics
 

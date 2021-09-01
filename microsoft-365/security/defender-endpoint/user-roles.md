@@ -26,7 +26,7 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-roles-abovefoldlink)
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-roles-abovefoldlink)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -77,8 +77,8 @@ The following steps guide you on how to create roles in Microsoft 365 Defender. 
     - **Basic** commands:
         - Start a live-response session
         - Perform read-only live-response commands on remote device (excluding file copy and execution)
-    - **Advanced** commands:
         - Download a file from the remote device via live response
+    - **Advanced** commands:
         - Download PE and non-PE files from the file page
         - Upload a file to the remote device
         - View a script from the files library

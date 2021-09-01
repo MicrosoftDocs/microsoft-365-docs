@@ -13,7 +13,7 @@ author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
   - m365-security-compliance
   - m365initiative-defender-endpoint
 ms.topic: conceptual
@@ -28,8 +28,7 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
-
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 The potentially unwanted application (PUA) protection feature in Microsoft Defender for Endpoint on macOS can detect and block PUA files on endpoints in your network.
 
@@ -51,8 +50,8 @@ PUA protection in Microsoft Defender for Endpoint on macOS can be configured in 
 - **Audit**: PUA files are reported in the product logs, but not in Microsoft 365 Defender portal. No notification is presented to the user and no action is taken by the product.
 - **Block**: PUA files are reported in the product logs and in Microsoft 365 Defender portal. The user is presented with a notification and action is taken by the product.
 
->[!WARNING]
->By default, PUA protection is configured in **Audit** mode.
+> [!WARNING]
+> By default, PUA protection is configured in **Audit** mode.
 
 You can configure how PUA files are handled from the command line or from the management console.
 

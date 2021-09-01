@@ -1,7 +1,7 @@
 ---
 title: "View directory synchronization errors in Microsoft 365"
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -37,14 +37,14 @@ To view any errors in the Microsoft 365 admin center:
     
 2. On the **Home** page, you'll see the **User management** card. 
     
-    ![The User management card in the Microsoft 365 admin center](../media/060006e9-de61-49d5-8979-e77cda198e71.png)
+    ![The User management card in the Microsoft 365 admin center.](../media/060006e9-de61-49d5-8979-e77cda198e71.png)
   
 3. On the card, choose **Sync errors** under **Azure AD Connect** to see the errors on the **Directory sync errors** page.   
     
-    ![An example of the Directory sync errors page](../media/882094a3-80d3-4aae-b90b-78b27047974c.png)
+    ![An example of the Directory sync errors page.](../media/882094a3-80d3-4aae-b90b-78b27047974c.png)
 
 4. Choose any of the errors to display the details pane with information about the error and tips on how to fix it.
 
-   ![Example of the details of a directory sync error](../media/a6e302d4-6be7-4e3a-b4b5-81c5a2c02952.png)
+   ![Example of the details of a directory sync error.](../media/a6e302d4-6be7-4e3a-b4b5-81c5a2c02952.png)
   
 After viewing, see [fixing problems with directory synchronization for Microsoft 365](fix-problems-with-directory-synchronization.md) to correct any identified issues.

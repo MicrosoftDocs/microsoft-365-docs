@@ -13,7 +13,7 @@ author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
   - m365-security-compliance
   - m365initiative-defender-endpoint
 ms.topic: conceptual
@@ -31,7 +31,7 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 This topic provides some general steps that can be used to narrow down performance issues related to Microsoft Defender for Endpoint on macOS.
 
@@ -47,7 +47,7 @@ The following steps can be used to troubleshoot and mitigate these issues:
 
     - From the user interface. Open Microsoft Defender for Endpoint on macOS and navigate to **Manage settings**.
 
-      ![Manage real-time protection screenshot](images/mdatp-36-rtp.png)
+      ![Manage real-time protection screenshot.](images/mdatp-36-rtp.png)
 
     - From the Terminal. For security purposes, this operation requires elevation.
 
@@ -56,16 +56,17 @@ The following steps can be used to troubleshoot and mitigate these issues:
       ```
 
       If your device is managed by your organization, real-time protection can be disabled by your administrator using the instructions in [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md).
-      
+
       If the performance problem persists while real-time protection is off, the origin of the problem could be the endpoint detection and response component. In this case, please contact customer support for further instructions and mitigation.
 
-2. Open Finder and navigate to **Applications** > **Utilities**. Open **Activity Monitor** and analyze which applications are using the resources on your system. Typical examples include software updaters and compilers.
+2. Open Finder and navigate to **Applications** \> **Utilities**. Open **Activity Monitor** and analyze which applications are using the resources on your system. Typical examples include software updaters and compilers.
 
-1. To find the applications that are triggering the most scans, you can use real-time statistics gathered by Defender for Endpoint on Mac.
+3. To find the applications that are triggering the most scans, you can use real-time statistics gathered by Defender for Endpoint on Mac.
 
       > [!NOTE]
       > This feature is available in version 100.90.70 or newer.
       This feature is enabled by default on the **Dogfood** and **InsiderFast** channels. If you're using a different update channel, this feature can be enabled from the command line:
+
       ```bash
       mdatp config real-time-protection-statistics  --value enabled
       ```
@@ -96,7 +97,7 @@ The following steps can be used to troubleshoot and mitigate these issues:
       > Using **--output json** (note the double dash) ensures that the output format is ready for parsing.
       The output of this command will show all processes and their associated scan activity.
 
-1. On your Mac system, download the sample Python parser high_cpu_parser.py using the command:
+4. On your Mac system, download the sample Python parser high_cpu_parser.py using the command:
 
     ```bash
     curl -O https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/linux/diagnostic/high_cpu_parser.py
@@ -112,11 +113,11 @@ The following steps can be used to troubleshoot and mitigate these issues:
     HTTP request sent, awaiting response... 200 OK
     Length: 1020 [text/plain]
     Saving to: 'high_cpu_parser.py'
-    100%[===========================================>] 1,020    --.-K/s   in 
+    100%[===========================================>] 1,020    --.-K/s   in
     0s
     ```
 
-1. Next, type the following commands:
+5. Next, type the following commands:
 
       ```bash
         chmod +x high_cpu_parser.py
@@ -148,7 +149,7 @@ The following steps can be used to troubleshoot and mitigate these issues:
 
       > [!NOTE]
       > The application stores statistics in memory and only keeps track of file activity since it was started and real-time protection was enabled. Processes that were launched before or during periods when real time protection was off are not counted. Additionally, only events which triggered scans are counted.
-      > 
-1. Configure Microsoft Defender for Endpoint on macOS with exclusions for the processes or disk locations that contribute to the performance issues and re-enable real-time protection.
+      >
+6. Configure Microsoft Defender for Endpoint on macOS with exclusions for the processes or disk locations that contribute to the performance issues and re-enable real-time protection.
 
      See [Configure and validate exclusions for Microsoft Defender for Endpoint on macOS](mac-exclusions.md) for details.

@@ -2,8 +2,8 @@
 title: "Get started with app policies"
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -22,9 +22,9 @@ description: "Get started with Learn about app policies."
 
 App policies for Microsoft app governance are the way that you can implement more proactive or reactive conditions to create alerts or automatic remediation for your specific needs for app compliance in your organization.
 
-To see the list of current app policies, go to **Microsoft 365 Compliance Center > App protection & governance > Policies**.
+To see the list of current app policies, go to **Microsoft 365 Compliance Center > App governance > Policies**.
 
-![The MAPG policies summary page in the Microsoft 365 Compliance Center](..\media\manage-app-protection-governance\mapg-cc-policies.png)
+![The MAPG policies summary page in the Microsoft 365 Compliance Center.](..\media\manage-app-protection-governance\mapg-cc-policies.png)
 
 ## What’s available on the app policies dashboard
 

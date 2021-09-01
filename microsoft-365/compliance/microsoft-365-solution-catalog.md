@@ -25,17 +25,17 @@ Read this article to get acquainted with the new solution catalog in the Microso
 
 The solution catalog is organized into sections that contain information cards for each compliance solution available in your Microsoft 365 subscription. Each section contains cards for solutions grouped by compliance area.
 
-![Microsoft 365 solution catalog home page](../media/m365-solution-catalog-home.png)
+![Microsoft 365 solution catalog home page.](../media/m365-solution-catalog-home.png)
 
 When you select **View** for a solution card, you'll see detailed information about the compliance solution and how to get started. This information includes an overview, pre-configuration requirements, learning resources, controls that allow you to pin the card to the navigation pane, and an option to share the solution as a link, email, or Microsoft Teams message.
 
-![Microsoft 365 communication compliance solution](../media/m365-solution-catalog-communication-compliance.png)
+![Microsoft 365 communication compliance solution.](../media/m365-solution-catalog-communication-compliance.png)
 
 ## Information protection & governance section
 
 The **Information protection & governance** section shows you at a glance how you can use Microsoft 365 compliance solutions to protect and govern data in your organization.
 
-![Microsoft 365 solution catalog information protection and governance section](../media/m365-solution-catalog-information-protection-governance.png)
+![Microsoft 365 solution catalog information protection and governance section.](../media/m365-solution-catalog-information-protection-governance.png)
 
 From here, you'll see cards for the following solutions:
 
@@ -48,7 +48,7 @@ From here, you'll see cards for the following solutions:
 
 The **Insider risk management** section on the home page shows you at a glance how your organization can identify, analyze, and take action on internal risks before they cause harm.
 
-![Microsoft 365 solution catalog insider risk management section](../media/m365-solution-catalog-insider-risk-management.png)
+![Microsoft 365 solution catalog insider risk management section.](../media/m365-solution-catalog-insider-risk-management.png)
 
 From here, you'll see cards for the following solutions:
 
@@ -59,7 +59,7 @@ From here, you'll see cards for the following solutions:
 
 The **Discovery & response** section on the home page shows you at a glance how your organization can quickly find, investigate, and respond to compliance issues with relevant data.
 
-![Microsoft 365 solution catalog discovery and response section](../media/m365-solution-catalog-discovery-response.png)
+![Microsoft 365 solution catalog discovery and response section.](../media/m365-solution-catalog-discovery-response.png)
 
 From here, you'll see cards for the following solutions:
 
@@ -77,13 +77,7 @@ To visit the Microsoft 365 solution catalog, go to [https://compliance.microsoft
 
 **Why don't I see the Microsoft 365 solution catalog?**
 
-First, make sure that you have the appropriate licenses and permissions. Then, sign in at [https://compliance.microsoft.com](https://compliance.microsoft.com) as a global administrator, compliance administrator, or compliance data administrator.
-
-**Some of the compliance features listed on the solution catalog page aren't available in the Microsoft 365 compliance center. What do I do?**
-
-We're always working to add new functionality to the Microsoft 365 compliance center and the solution catalog. If you can't find a specific solution in the navigation area, it will be accessible when the solution is available in your subscription.
-
-If you are looking for an existing compliance solution and it's not available in the Microsoft 365 compliance center yet, you can always access solutions in the existing Security &amp; Compliance Center by going to [https://protection.office.com](https://protection.office.com). Alternatively, you can click on the **More resources** tab in the left navigation of the Microsoft 365 compliance center and select the Office 365 security and compliance center card.  
+First, make sure that you have the appropriate licenses and permissions. Then, sign in at [https://compliance.microsoft.com](https://compliance.microsoft.com) as a global administrator, compliance administrator, or compliance data administrator. 
 
 ## Next steps
 

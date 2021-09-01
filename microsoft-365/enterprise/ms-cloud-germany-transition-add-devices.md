@@ -27,10 +27,10 @@ Azure AD joined and registered devices connected to Microsoft Cloud Deutschland 
 ## Azure AD Joined Windows 10 devices
 If a Windows 10 device is Azure AD joined, it must be disconnected from Azure AD and must be connected again.
 
-[ ![Azure AD Device Re-Join Flow](../media/ms-cloud-germany-migration-opt-in/AAD-ReJoin-flow.png) ](../media/ms-cloud-germany-migration-opt-in/AAD-ReJoin-flow.png#lightbox)
+[ ![Azure AD Device Re-Join Flow.](../media/ms-cloud-germany-migration-opt-in/AAD-ReJoin-flow.png) ](../media/ms-cloud-germany-migration-opt-in/AAD-ReJoin-flow.png#lightbox)
 
 
-If the user is an administrator on the Windows 10 device, the user can unregister the device from Azure AD and re-join it again in three steps.
+If the user is an administrator on the Windows 10 device, the user can unregister the device from Azure AD and rejoin it again in three steps.
 
 ### Step 1: Determine if the device is Azure ID joined
 
@@ -56,20 +56,22 @@ If the user is an administrator on the Windows 10 device, the user can unregiste
 6. Restart the device.
 7. Sign in with the email address and password of your work account.
 
-If the user is not an administrator of the device, an Azure AD global administrator can create the local administrator account on the device following this configuration path and unjoin the device:
+If the user is not an administrator of the device, an **Azure AD DC admin**, **Cloud Application Admin**, or **Global admin** can create the local administrator account on the device following this configuration path and unjoin the device:
 
 *Settings > Accounts > Other Accounts > Credentials unknown > Add user without Microsoft-Account*
 
-For re-joining, the credentials of any work account from your organization can be used in this step.
+For more information, see [About admin roles](/microsoft-365/admin/add-users/about-admin-roles?).
 
-Please consider that the work account used to join the device will be automatically promoted as an Administrator of the device.
+For rejoining, the credentials of any work account from your organization can be used in this step.
+
+Consider that the work account used to join the device will be automatically promoted as an Administrator of the device.
 Any other work account from the organization can sign in to the device, but has no administrator privileges.
 
 ## Azure AD registered (workplace-joined) Windows 10 devices
 
 If a Windows 10 device is Azure AD registered, it needs to be disconnected from the Azure AD and connected again.
 
-[ ![Azure AD Device Re-Registration Flow](../media/ms-cloud-germany-migration-opt-in/AAD-ReRegistration-flow.png) ](../media/ms-cloud-germany-migration-opt-in/AAD-ReJoin-flow.png#lightbox)
+[ ![Azure AD Device Re-Registration Flow.](../media/ms-cloud-germany-migration-opt-in/AAD-ReRegistration-flow.png) ](../media/ms-cloud-germany-migration-opt-in/AAD-ReJoin-flow.png#lightbox)
 
 ### Step 1: Determine if the device is Azure ID registered
 
@@ -102,7 +104,7 @@ For Android, users will need to unregister and re-register their devices. This c
 
 - From the Company Portal, users can go to **Devices** tab and remove the device. After that, re-enroll the device by using Company Portal.
 
-- Users can also unregister and re-register by removing the account from the account settings page and then re-adding the work account.
+- Users can also unregister and re-register by removing the account from the account settings page and then readding the work account.
 
 To unregister and re-register the device on Android by using the Microsoft Authenticator app:
 
@@ -162,7 +164,7 @@ It's critical to your success that you only unregister and re-register your devi
 
 To check whether your devices are registered in the public cloud, you should export and download the list of devices from the Azure AD portal to an Excel spreadsheet. Then, filter the devices that are registered (by using the _registeredTime_ column) after the date when your organization has passed [phase 9 of the migration process](ms-cloud-germany-transition-phases.md#phase-9--10-azure-ad-finalization).
 
-**Do I still need to add the DNS name as stated in [Create DNS records for Microsoft using Windows-based DNS](/microsoft-365/admin/dns/create-dns-records-using-windows-based-dns?view=o365-worldwide#add-two-cname-records-for-mobile-device-management-mdm-for-microsoft)?**
+**Do I still need to add the DNS name as stated in [Create DNS records for Microsoft using Windows-based DNS](/microsoft-365/admin/dns/create-dns-records-using-windows-based-dns?#add-two-cname-records-for-mobile-device-management-mdm-for-microsoft)?**
 
 This DNS entry is no longer needed for re-registering your device. 
 

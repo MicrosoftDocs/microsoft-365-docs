@@ -1,22 +1,22 @@
 ---
 title: Spoof intelligence insight
-f1.keywords: 
+f1.keywords:
   - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date: 
+ms.date:
 audience: Admin
 ms.topic: how-to
 
 localization_priority: Normal
-search.appverid: 
+search.appverid:
   - MOE150
   - MET150
 ms.assetid: 978c3173-3578-4286-aaf4-8a10951978bf
-ms.collection: 
+ms.collection:
   - M365-security-compliance
-ms.custom: 
+ms.custom:
   - seo-marvel-apr2020
 description: Admins can learn about the spoof intelligence insight in Exchange Online Protection (EOP).
 ms.technology: mdo
@@ -88,11 +88,11 @@ The rest of this article explains how to use the spoof intelligence insight in t
 
 ## Open the spoof intelligence insight in the Microsoft 365 Defender portal
 
-1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** page \> **Tenant Allow/Block Lists**.
+1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Tenant Allow/Block Lists** in the **Rules** section.
 
 2. On the **Tenant Allow/Block Lists** page, the spoof intelligence insight looks like this:
 
-   ![Spoof intelligence insight on the Anti-phishing policy page](../../media/m365-sc-spoof-intelligence-insight.png)
+   ![Spoof intelligence insight on the Anti-phishing policy page.](../../media/m365-sc-spoof-intelligence-insight.png)
 
    The insight has two modes:
 

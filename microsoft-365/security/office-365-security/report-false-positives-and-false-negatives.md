@@ -25,7 +25,7 @@ ms.prod: m365-security
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!NOTE]
-> If you're an admin in a Microsoft 365 organization with Exchange Online mailboxes, we recommend that you use the **Submissions** page in the Microsoft 365 Defender portal. For more information, see [Use Admin Submission to submit suspected spam, phish, URLs, and files to Microsoft](admin-submission.md).
+> If you're an admin in a Microsoft 365 organization with Exchange Online mailboxes, we recommend that you use the **Submissions** page in the Microsoft 365 Defender portal. For more information, see [Use the Submissions portal to submit suspected spam, phish, URLs, and files to Microsoft](admin-submission.md).
 
 In Microsoft 365 organizations with mailboxes in Exchange Online or on-premises mailboxes using hybrid modern authentication, you can submit false positives (good email that was blocked or sent to junk folder) and false negatives (unwanted email or phish that was delivered to the inbox) to Exchange Online Protection (EOP).
 
@@ -54,9 +54,9 @@ For messages in the Inbox or any other email folder except Junk Email, use the f
 
 1. Select the **More actions** ellipses on the top-right corner of the selected message, select **Report message** from the dropdown menu, and then select **Junk** or **Phishing**.
 
-   ![Report Message - More actions](../../media/report-message-more-actions.png)
+   ![Report Message - More actions.](../../media/report-message-more-actions.png)
 
-   ![Report Message - Junk and Phishing](../../media/report-message-junk-phishing.png)
+   ![Report Message - Junk and Phishing.](../../media/report-message-junk-phishing.png)
 
 2. The selected messages will be sent to Microsoft for analysis and:
    - Moved to the Junk Email folder if they were reported as spam.
@@ -66,9 +66,9 @@ For messages in the Inbox or any other email folder except Junk Email, use the f
 
 1. Select the **More actions** ellipses on the top-right corner of the selected message, select **Report message** from the dropdown menu, and then select **Not Junk**.
 
-   ![Report Message - More actions](../../media/report-message-more-actions.png)
+   ![Report Message - More actions.](../../media/report-message-more-actions.png)
 
-   ![Report Message - Not junk](../../media/report-message-not-junk.png)
+   ![Report Message - Not junk.](../../media/report-message-not-junk.png)
 
 2. The selected message will be sent to Microsoft for analysis and moved to Inbox or any other specified folder.
 

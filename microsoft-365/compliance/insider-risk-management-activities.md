@@ -26,7 +26,7 @@ After you've configured indicators on the insider risk management **Settings** p
 
 After examining activities for a user, investigators can dismiss individual activities as benign, share or email a link to the report with other investigators, or choose to assign the user temporarily or explicitly to an insider risk management policy. Users must be assigned to the *Insider Risk Management Investigators* role group to view the **User activity reports** page.  
 
-![Insider risk management user activity report overview](../media/insider-risk-user-activity-report-overview.png)
+![Insider risk management user activity report overview.](../media/insider-risk-user-activity-report-overview.png)
 
 You can get started by selecting **Manage reports** in the **Investigate user activity** section on the insider risk management **Overview** page. To view activities for a user, first select **Create user activity report** and complete the following fields in the **New user activity report** pane:
 
@@ -35,7 +35,7 @@ You can get started by selecting **Manage reports** in the **Investigate user ac
 - **End date**: Use the calendar control to select the end date for user activities. The end date selected must be greater than two days after the selected start date and no greater than 90 days from the selected start date.
 New reports typically take up to 10 hours before they are ready for review. When the report is ready, you'll see *Report ready* in the **Status** column on the User activity report page. Select the user to view the detailed report:
 
-![Insider risk management user activity report](../media/insider-risk-user-activity-report.png)
+![Insider risk management user activity report.](../media/insider-risk-user-activity-report.png)
 
 The **User activity report** for the selected user contains the **User activity** and **Activity explorer** tabs:
 
@@ -57,7 +57,7 @@ The insider risk **Alert dashboard** allows you to view and act on alerts genera
   - Average time to resolve medium severity alerts, listed in hours, days, or months.
   - Average time to resolve low severity alerts, listed in hours, days, or months.
 
-![Insider risk management alert dashboard](../media/insider-risk-alerts-dashboard.png)
+![Insider risk management alert dashboard.](../media/insider-risk-alerts-dashboard.png)
 
 > [!NOTE]
 > Insider risk management uses built-in alert throttling to help protect and optimize your risk investigation and review experience. This throttling guards against issues that might result in an overload of policy alerts, such as misconfigured data connectors or DLP policies. As a result, there might be a delay in displaying new alerts for a user.
@@ -92,6 +92,18 @@ Depending on the number and type of active insider risk management policies in y
 
 To search the alert name for a specific word, select the **Search** control and type the word to search. The search results display any policy alert containing the word defined in the search.
 
+## Dismiss multiple alerts (preview)
+
+It may help save triage time for analysts and investigators to immediately dismiss multiple alerts at once. The **Dismiss alerts** command bar option allows you to select one or more alerts with a *Needs review* status on the dashboard and quickly dismiss these alerts as benign as appropriate in your triage process. You can select up to 400 alerts to dismiss at one time.
+
+To dismiss an insider risk alert, complete the following steps:
+
+1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select the **Alerts** tab.
+2. On the **Alerts dashboard**, select the alert (or alerts) with a *Needs review* status that you want to dismiss.
+3. On the Alerts command bar, select **Dismiss alerts**.
+4. On the **Dismiss alerts** detail pane, you can review the user and policy details associated with the selected alerts.
+5. Select **Dismiss alerts** to resolve the alerts as benign or select **Cancel** to close the details pane without dismissing the alerts.
+
 ## Triage alerts
 
 To triage an insider risk alert, complete the following steps:
@@ -117,7 +129,7 @@ To triage an insider risk alert, complete the following steps:
 
 The Activity explorer provides risk investigators and analysts with a comprehensive analytic tool that provides detailed information about alerts. With the Activity explorer, reviewers can quickly review a timeline of detected risky activity and identify and filter all risk activities associated with alerts. To filter alerts on the Activity explorer, select the Filter control. You can filter alerts by one or more attributes listed in the details pane for the alert. Activity explorer also supports customizable columns to help investigators and analysts focus the dashboard on the information most important to them.
 
-![Insider risk management activity explorer overview](../media/insider-risk-activity-explorer.png)
+![Insider risk management activity explorer overview.](../media/insider-risk-activity-explorer.png)
 
 To use the **Activity explorer**, complete the following steps:
 
@@ -128,7 +140,7 @@ To use the **Activity explorer**, complete the following steps:
 
 When reviewing activities in the Activity explorer, investigators and analysts can select a specific activity and open the activity details pane. The pane displays detailed information about the activity that investigators and analysts can use during the alert triage process. The detailed information may provide context for the alert and assist with identifying the full scope of the risk activity that triggered the alert.
 
-![Insider risk management activity explorer details](../media/insider-risk-activity-explorer-details.png)
+![Insider risk management activity explorer details.](../media/insider-risk-activity-explorer-details.png)
 
 ## Create a case for an alert
 

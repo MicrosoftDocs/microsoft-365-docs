@@ -1,5 +1,5 @@
 ---
-title: Pilot Microsoft Cloud App Security with Microsoft 365 Defender, create pilot groups, configure conditional access control, try out capabilities, setup as part of Microsoft 365 Defender
+title: Pilot Microsoft Cloud App Security with Microsoft 365 Defender
 description: Set up your Microsoft 365 Defender trial lab or pilot environment to test and experience the security solution designed to protect devices, identity, data, and applications.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -31,10 +31,10 @@ ms.technology: m365d
 
 This article is [Step 3 of 3](eval-defender-mcas-overview.md) in the process of setting up the evaluation environment for Microsoft Cloud App Security. For more information about this process, see the [overview article](eval-defender-mcas-overview.md).
 
-Use the following steps to setup and configure the pilot for Microsoft Cloud App Security.
+Use the following steps to set up and configure the pilot for Microsoft Cloud App Security.
 
 
-![Steps for piloting Microsoft Cloud App Security](../../media/defender/m365-defender-mcas-pilot-steps.png)
+![Steps for piloting Microsoft Cloud App Security.](../../media/defender/m365-defender-mcas-pilot-steps.png)
 
 - Step 1. [Create the pilot group — Scope your pilot deployment to certain user groups](#step-1-create-the-pilot-group--scope-your-pilot-deployment-to-certain-user-groups)
 - [Step 2. Configure protection — Conditional Access App Control](#step-2-configure-protection--conditional-access-app-control)
@@ -75,6 +75,8 @@ Try out Cloud App Security tutorials:
 - [Block downloads of sensitive information](/cloud-app-security/use-case-proxy-block-session-aad)
 - [Protect your files with admin quarantine](/cloud-app-security/use-case-admin-quarantine)
 - [Require step-up authentication upon risky action](/cloud-app-security/tutorial-step-up-authentication)
+
+For more information on advanced hunting in Microsoft Cloud App Security data, see the [video](https://www.microsoft.com/en-us/videoplayer/embed/RWFISa).
 
 ## Next steps
 

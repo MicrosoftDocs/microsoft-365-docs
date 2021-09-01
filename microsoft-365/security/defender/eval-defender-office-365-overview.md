@@ -1,5 +1,5 @@
 ---
-title: Evaluate Microsoft Defender for Office 365 overview, how to evaluate, evaluation steps
+title: Evaluate Microsoft Defender for Office 365 overview
 description: Use this overview to learn the steps to set up an MDO pilot, including requirements, enabling or activating the eval, and setting up the pilot.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -32,7 +32,7 @@ This article outlines the process to enable and pilot Microsoft Defender for Off
 
 Use the following steps to enable and pilot Microsoft Defender for Office 365.
 
-![Steps for adding Microsoft Defender for Office to the Defender evaluation environment](../../media/defender/m365-defender-office-eval-steps.png)
+![Steps for adding Microsoft Defender for Office to the Defender evaluation environment.](../../media/defender/m365-defender-office-eval-steps.png)
 
 The following table describes the steps in the illustration.
 
