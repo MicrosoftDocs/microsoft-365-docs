@@ -68,8 +68,10 @@ People who have the following permissions:
     
 - Skype for Business admins
 
-- Global reader
-    
+- Global reader (with no user details)
+
+- Usage Summary Reports reader (with no user details)
+
 - Reports reader
 
 - Teams Service Administrator
@@ -144,19 +146,21 @@ There are circumstances where new users show up as **unknown**. This is usually 
   
 ## Hide user details in the reports
 
-If you want to hide user level information when you're generating your reports, you can quickly make that change in the admin center.
-  
-1. In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">Services &amp; add-ins</a> page.
-
-2. Select **Reports**. 
-  
-3. In the **Reports** pane, select the options you want, and then save your changes.
+Reports provide information about your organization’s usage data. By default, reports display information with identifiable names for users, groups, and sites. Starting September 1, 2021, we are hiding user information by default for all reports as part of our ongoing commitment to help companies support their local privacy laws.
   
 Your user list will look like this:
   
 ![Reports - anonymized user list.](../../media/2ed99bce-4978-4ee3-9ea2-4a8db26eef02.png)
   
-It'll take a few minutes for these changes to take effect on the reports in the reports dashboard. This setting also applies to the reports API.
+Global administrators can revert this change for their tenant and show identifiable user information if their organization's privacy practices allow it. It can be achieved in the Microsoft 365 admin center by following these steps:
+  
+1. In the admin center, go to the **Settings** \> **Org Settings** \> **Services** page.
+
+2. Select **Reports**. 
+  
+3. Under **Choose how to show user information**, select the options you want, and then save your changes.  
+  
+It'll take a few minutes for these changes to take effect on the reports in the reports dashboard. This setting also applies to the reports API. Showing identifiable user information is a logged event in the Microsoft 365 compliance center audit log.   
   
 ## What happens to usage data when a user account is closed?
 
