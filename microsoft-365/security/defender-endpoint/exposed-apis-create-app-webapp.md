@@ -47,20 +47,20 @@ This article explains how to create an Azure AD application, get an access token
 
 1. Log on to [Azure](https://portal.azure.com) with a user that has the **Global Administrator** role.
 
-2. Navigate to **Azure Active Directory** > **App registrations** > **New registration**. 
+2. Navigate to **Azure Active Directory** \> **App registrations** \> **New registration**. 
 
    ![Image of Microsoft Azure and navigation to application registration.](images/atp-azure-new-app2.png)
 
 3. In the registration form, choose a name for your application, and then select **Register**.
 
-4. To enable your app to access Defender for Endpoint and assign it **'Read all alerts'** permission, on your application page, select **API Permissions** > **Add permission** > **APIs my organization uses** >, type **WindowsDefenderATP**, and then select **WindowsDefenderATP**.
+4. To enable your app to access Defender for Endpoint and assign it **'Read all alerts'** permission, on your application page, select **API Permissions** \> **Add permission** \> **APIs my organization uses** >, type **WindowsDefenderATP**, and then select **WindowsDefenderATP**.
 
    > [!NOTE]
    > *WindowsDefenderATP* does not appear in the original list. Start writing its name in the text box to see it appear.
 
    ![add permission.](images/add-permission.png)
 
-   - Select **Application permissions** > **Alert.Read.All**, and then select **Add permissions**.
+   - Select **Application permissions** \> **Alert.Read.All**, and then select **Add permissions**.
 
    ![app permission.](images/application-permissions.png)
 

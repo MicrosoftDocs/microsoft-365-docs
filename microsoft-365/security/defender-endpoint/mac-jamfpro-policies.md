@@ -34,25 +34,15 @@ This page will guide you through the steps you need to take to set up macOS poli
 You'll need to take the following steps:
 
 1. [Get the Microsoft Defender for Endpoint onboarding package](#step-1-get-the-microsoft-defender-for-endpoint-onboarding-package)
-
 2. [Create a configuration profile in Jamf Pro using the onboarding package](#step-2-create-a-configuration-profile-in-jamf-pro-using-the-onboarding-package)
-
 3. [Configure Microsoft Defender for Endpoint settings](#step-3-configure-microsoft-defender-for-endpoint-settings)
-
 4. [Configure Microsoft Defender for Endpoint notification settings](#step-4-configure-notifications-settings)
-
 5. [Configure Microsoft AutoUpdate (MAU)](#step-5-configure-microsoft-autoupdate-mau)
-
 6. [Grant full disk access to Microsoft Defender for Endpoint](#step-6-grant-full-disk-access-to-microsoft-defender-for-endpoint)
-
 7. [Approve Kernel extension for Microsoft Defender for Endpoint](#step-7-approve-kernel-extension-for-microsoft-defender-for-endpoint)
-
 8. [Approve System extensions for Microsoft Defender for Endpoint](#step-8-approve-system-extensions-for-microsoft-defender-for-endpoint)
-
 9. [Configure Network Extension](#step-9-configure-network-extension)
-
 10. [Schedule scans with Microsoft Defender for Endpoint on macOS](/windows/security/threat-protection/microsoft-defender-atp/mac-schedule-scan-atp)
-
 11. [Deploy Microsoft Defender for Endpoint on macOS](#step-11-deploy-microsoft-defender-for-endpoint-on-macos)
 
 ## Step 1: Get the Microsoft Defender for Endpoint onboarding package
@@ -67,8 +57,7 @@ You'll need to take the following steps:
 
 4. Extract `WindowsDefenderATPOnboardingPackage.zip`.
 
-5. Copy the file to your preferred location. For example,  `C:\Users\JaneDoe_or_JohnDoe.contoso\Downloads\WindowsDefenderATPOnboardingPackage_macOS_MDM_contoso\jamf\WindowsDefenderATPOnboarding.plist`.
-
+5. Copy the file to your preferred location. For example, `C:\Users\JaneDoe_or_JohnDoe.contoso\Downloads\WindowsDefenderATPOnboardingPackage_macOS_MDM_contoso\jamf\WindowsDefenderATPOnboarding.plist`.
 
 ## Step 2: Create a configuration profile in Jamf Pro using the onboarding package
 
@@ -82,7 +71,8 @@ You'll need to take the following steps:
 
 3. Enter the following details:
 
-   **General**
+   **General**:
+
    - Name: MDATP onboarding for macOS
    - Description: MDATP EDR onboarding for macOS
    - Category: None
@@ -219,7 +209,7 @@ All you need to do to have updates is to download an updated schema, edit existi
     - tags
     - hideStatusMenuIcon
 
-     For information, see [Property list for Jamf configuration profile](mac-preferences.md#property-list-for-jamf-configuration-profile).
+     For information, see [Property list for JAMF full configuration profile](mac-preferences.md#property-list-for-jamf-full-configuration-profile).
 
      ```XML
      <?xml version="1.0" encoding="UTF-8"?>
@@ -366,8 +356,9 @@ All you need to do to have updates is to download an updated schema, edit existi
 
     ![Image of configuration settings upload image.](images/f624de59b3cc86e3e2d32ae5de093e02.png)
 
-    >[!NOTE]
-    >If you happen to upload the Intune file, you'll get the following error:<br>
+    > [!NOTE]
+    > If you happen to upload the Intune file, you'll get the following error:
+    >
     >![Image of configuration settings intune file upload.](images/8e69f867664668796a3b2904896f0436.png)
 
 11. Select **Save**.
@@ -445,6 +436,7 @@ These steps are applicable of macOS 10.15 (Catalina) or newer.
     ![Image of configuration settings add save.](images/4d2d1d4ee13d3f840f425924c3df0d51.png)
 
 6. Select **Done**. You'll see the new **Configuration profile**.
+
     ![Image of configuration setting done img.](images/633ad26b8bf24ec683c98b2feb884bdf.png)
 
 ## Step 5: Configure Microsoft AutoUpdate (MAU)
@@ -548,7 +540,6 @@ These steps are applicable of macOS 10.15 (Catalina) or newer.
     - Distribution method: Install Automatically
     - Level: Computer level
 
-
     ![Image of configuration setting general.](images/ba3d40399e1a6d09214ecbb2b341923f.png)
 
 4. In **Configure Privacy Preferences Policy Control** select **Configure**.
@@ -560,7 +551,6 @@ These steps are applicable of macOS 10.15 (Catalina) or newer.
     - Identifier: `com.microsoft.wdav`
     - Identifier Type: Bundle ID
     - Code Requirement: `identifier "com.microsoft.wdav" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9`
-
 
     ![Image of configuration setting privacy preference policy control details.](images/22cb439de958101c0a12f3038f905b27.png)
 
@@ -823,9 +813,9 @@ Follow the instructions on [Schedule scans with Microsoft Defender for Endpoint 
 
     **Manifest File** is not required. Microsoft Defender for Endpoint works without Manifest File.
 
-    **Options tab**<br> Keep default values.
+    **Options tab**: Keep default values.
 
-    **Limitations tab**<br> Keep default values.
+    **Limitations tab**: Keep default values.
 
      ![Image of configuration settings limitation tab.](images/56dac54634d13b2d3948ab50e8d3ef21.png)
 

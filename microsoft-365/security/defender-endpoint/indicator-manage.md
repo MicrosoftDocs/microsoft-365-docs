@@ -31,7 +31,7 @@ ms.technology: mde
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
 
-1. In the navigation pane, select **Settings** > **Endpoints** > **Indicators** (under **Rules**).
+1. In the navigation pane, select **Settings** \> **Endpoints** \> **Indicators** (under **Rules**).
 
 2. Select the tab of the entity type you'd like to manage.
 
@@ -47,7 +47,7 @@ Download the sample CSV to know the supported column attributes.
 
 2. Select the tab of the entity type you'd like to import indicators for.
 
-3. Select **Import** > **Choose file**.
+3. Select **Import** \> **Choose file**.
 
 4. Select **Import**. Do this for all the files you'd like to import.
 
