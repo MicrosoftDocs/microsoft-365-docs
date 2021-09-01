@@ -71,16 +71,17 @@ It's important to understand the following prerequisites prior to creating indic
 >
 > There may be up to 2 hours of latency (usually less) between the time the action is taken, and the URL and IP being blocked.
 
-
 When using the warn mode, you can configure the following controls:
 
-**Bypass ability**
+**Bypass ability**:
+
 - Allow button in Edge
 - Allow button on toast (Non-Microsoft browsers)
 - Bypass duration parameter on the indicator
-- Bypass enforcement across Microsoft and Non-Microsoft browsers 
+- Bypass enforcement across Microsoft and Non-Microsoft browsers
 
-**Redirect URL** 
+**Redirect URL**:
+
 - Redirect URL parameter on the indicator
 - Redirect URL in Edge
 - Redirect URL on toast (Non-Microsoft browsers)
@@ -89,7 +90,7 @@ For more information, see [Govern apps discovered by Microsoft Defender for Endp
 
 ## Create an indicator for IPs, URLs, or domains from the settings page
 
-1. In the navigation pane, select **Settings** > **Endpoints** > **Indicators** (under **Rules**).
+1. In the navigation pane, select **Settings** \> **Endpoints** \> **Indicators** (under **Rules**).
 
 2. Select the **IP addresses or URLs/Domains** tab.
 

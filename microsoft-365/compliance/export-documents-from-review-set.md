@@ -31,7 +31,7 @@ To export documents from a review set:
 
    The Export tool displays the flyout page with the settings to configure the export. Some options are selected by default, but you can change these. See the following section for descriptions of the export options that you can configure.
 
-   ![Configuration options for exporting items from a review set](../media/bcfc72c7-4a01-4697-9e16-2965b7f04fdb.png)
+   ![Configuration options for exporting items from a review set.](../media/bcfc72c7-4a01-4697-9e16-2965b7f04fdb.png)
 
 3. After you configure the export, click **Export** to start the export process. Depending on the option that you selected in **Output options** section, you can access the export files by direct download or in your organization's Azure Storage account.
 

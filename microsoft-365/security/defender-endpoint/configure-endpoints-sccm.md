@@ -140,9 +140,8 @@ If you use Microsoft Endpoint Manager current branch, see [Create an offboarding
 
 ### Offboard devices using System Center 2012 R2 Configuration Manager
 
-
 1. Get the offboarding package from [Microsoft 365 Defender portal](https://security.microsoft.com/):
-    1. In the navigation pane, select **Settings** > **Endpoints** > **Device management** >  **Offboarding**.
+    1. In the navigation pane, select **Settings** \> **Endpoints** \> **Device management** \>  **Offboarding**.
     1. Select Windows 10 as the operating system.
     1. In the **Deployment method** field, select **System Center Configuration Manager 2012/2012 R2/1511/1602**.
     1. Select **Download package**, and save the .zip file.
@@ -178,7 +177,7 @@ If you're using System Center 2012 R2 Configuration Manager, monitoring consists
 
     If there are failed deployments (devices with **Error**, **Requirements Not Met**, or **Failed statuses**), you may need to  troubleshoot the devices. For more information, see, [Troubleshoot Microsoft Defender for Endpoint onboarding issues](troubleshoot-onboarding.md).
 
-    ![Configuration Manager showing successful deployment with no errors](images/sccm-deployment.png)
+    ![Configuration Manager showing successful deployment with no errors.](images/sccm-deployment.png)
 
 ### Check that the devices are compliant with the Microsoft Defender for Endpoint service
 

@@ -27,10 +27,10 @@ Microsoft recommends [a layered approach to securing removable media](https://ak
 2. Configure to allow or block only certain removable devices and prevent threats.
     1. [Allow or block removable devices](#allow-or-block-removable-devices) based on granular configuration to deny write access to removable disks and approve or deny devices by using USB device IDs. Flexible policy assignment of device installation settings based on an individual or group of Azure Active Directory (Azure AD) users and devices.
 
-    2. [Prevent threats from removable storage](#prevent-threats-from-removable-storage) introduced by removable storage devices by enabling:  
-        - Microsoft Defender Antivirus real-time protection (RTP) to scan removable storage for malware.  
-        - The Attack Surface Reduction (ASR) USB rule to block untrusted and unsigned processes that run from USB.  
-        - Direct Memory Access (DMA) protection settings to mitigate DMA attacks, including Kernel DMA Protection for Thunderbolt and blocking DMA until a user signs in.  
+    2. [Prevent threats from removable storage](#prevent-threats-from-removable-storage) introduced by removable storage devices by enabling:
+        - Microsoft Defender Antivirus real-time protection (RTP) to scan removable storage for malware.
+        - The Attack Surface Reduction (ASR) USB rule to block untrusted and unsigned processes that run from USB.
+        - Direct Memory Access (DMA) protection settings to mitigate DMA attacks, including Kernel DMA Protection for Thunderbolt and blocking DMA until a user signs in.
 
 3. [Create customized alerts and response actions](#create-customized-alerts-and-response-actions) to monitor usage of removable devices based on these plug and play events or any other Microsoft Defender for Endpoint events with [custom detection rules](/microsoft-365/security/defender-endpoint/custom-detection-rules).
 
@@ -80,7 +80,7 @@ To prevent malware infections or data loss, an organization may restrict USB dri
 
 All of the above controls can be set through the Intune [Administrative Templates](/intune/administrative-templates-windows). The relevant policies are located here in the Intune Administrator Templates:
 
-![screenshot of list of Admin Templates](images/admintemplates.png)
+![screenshot of list of Admin Templates.](images/admintemplates.png)
 
 > [!NOTE]
 > Using Intune, you can apply device configuration policies to Azure AD user and/or device groups.
@@ -103,20 +103,20 @@ To enforce the policy for already installed devices, apply the prevent policies 
 
 When configuring the allow device installation policy, you must allow all parent attributes as well. You can view the parents of a device by opening Device Manager and view by connection.
 
-![Devices by connection](images/devicesbyconnection.png)
+![Devices by connection.](images/devicesbyconnection.png)
 
 In this example, the following classes needed to be added: HID, Keyboard, and {36fc9e60-c465-11cf-8056-444553540000}. See [Microsoft-provided USB drivers](/windows-hardware/drivers/usbcon/supported-usb-classes) for more information.
 
-![Device host controller](images/devicehostcontroller.jpg)
+![Device host controller.](images/devicehostcontroller.jpg)
 
-If you want to restrict to certain devices, remove the device setup class of the peripheral that you want to limit. Then add the device ID that you want to add. Device ID is based on the vendor ID and product ID values for a device. For information on device ID formats, see [Standard USB Identifiers](/windows-hardware/drivers/install/standard-usb-identifiers). 
+If you want to restrict to certain devices, remove the device setup class of the peripheral that you want to limit. Then add the device ID that you want to add. Device ID is based on the vendor ID and product ID values for a device. For information on device ID formats, see [Standard USB Identifiers](/windows-hardware/drivers/install/standard-usb-identifiers).
 
-To find the device IDs, see [Look up device ID](#look-up-device-id). 
+To find the device IDs, see [Look up device ID](#look-up-device-id).
 
 For example:
 
 1. Remove class USBDevice from the **Allow installation of devices using drivers that match these device setup**.
-2. Add the device ID to allow in the **Allow installation of device that match any of these device IDs**. 
+2. Add the device ID to allow in the **Allow installation of device that match any of these device IDs**.
 
 #### Prevent installation and usage of USB drives and other peripherals
 
@@ -130,15 +130,15 @@ If you want to prevent the installation of a device class or certain devices, yo
 
 The **Prevent installation of devices that match any of these device IDs** policy allows you to specify a list of devices that Windows is prevented from installing.
 
-To prevent installation of devices that match any of these device IDs: 
+To prevent installation of devices that match any of these device IDs:
 
 1. [Look up device ID](#look-up-device-id) for devices that you want Windows to prevent from installing.
 
-   ![Look up vendor or product ID](images/lookup-vendor-product-id.png)
+   ![Look up vendor or product ID.](images/lookup-vendor-product-id.png)
 
 2. Enable **Prevent installation of devices that match any of these device IDs** and add the vendor or product IDs to the list.
 
-    ![Add vendor ID to prevent list](images/add-vendor-id-to-prevent-list.png)
+    ![Add vendor ID to prevent list.](images/add-vendor-id-to-prevent-list.png)
 
 #### Look up device ID
 
@@ -155,10 +155,10 @@ For information about Device ID formats, see [Standard USB Identifiers](/windows
 
 For information on vendor IDs, see [USB members](https://www.usb.org/members).
 
-The following is an example for looking up a device vendor ID or product ID (which is part of the device ID) using PowerShell: 
+The following is an example for looking up a device vendor ID or product ID (which is part of the device ID) using PowerShell:
 
 ```powershell
-Get-WMIObject -Class Win32_DiskDrive | Select-Object -Property * 
+Get-WMIObject -Class Win32_DiskDrive | Select-Object -Property *
 ```
 
 The **Prevent installation of devices using drivers that match these device setup classes** policy allows you to specify device setup classes that Windows is prevented from installing.
@@ -170,16 +170,16 @@ To prevent installation of particular classes of devices:
 2. Enable **Prevent installation of devices using drivers that match these device setup classes** and add the class GUID to the list.
 
     > [!div class="mx-imgBorder"]
-    > ![Add device setup class to prevent list](images/Add-device-setup-class-to-prevent-list.png)
+    > ![Add device setup class to prevent list.](images/Add-device-setup-class-to-prevent-list.png)
 
 ### Block installation and usage of removable storage
 
 1. Sign in to the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com/).
 
-2. Click **Devices** > **Configuration Profiles** > **Create profile**.
+2. Click **Devices** \> **Configuration Profiles** \> **Create profile**.
 
     > [!div class="mx-imgBorder"]
-    > ![Create device configuration profile](images/create-device-configuration-profile.png)
+    > ![Create device configuration profile.](images/create-device-configuration-profile.png)
 
 3. Use the following settings:
    - Name: Type a name for the profile
@@ -188,13 +188,13 @@ To prevent installation of particular classes of devices:
    - Profile type: Device restrictions
 
    > [!div class="mx-imgBorder"]
-   > ![Create profile](images/create-profile.png)
+   > ![Create profile.](images/create-profile.png)
 
-4. Click **Configure** > **General**.  
+4. Click **Configure** \> **General**.
 
-5. For **Removable storage** and **USB connection (mobile only)**, choose **Block**. **Removable storage** includes USB drives, whereas **USB connection (mobile only)** excludes USB charging but includes other USB connections on mobile devices only. 
+5. For **Removable storage** and **USB connection (mobile only)**, choose **Block**. **Removable storage** includes USB drives, whereas **USB connection (mobile only)** excludes USB charging but includes other USB connections on mobile devices only.
 
-   ![General settings](images/general-settings.png)
+   ![General settings.](images/general-settings.png)
 
 6. Click **OK** to close **General** settings and **Device restrictions**.
 
@@ -211,7 +211,7 @@ Allowing installation of specific devices requires also enabling [DeviceInstalla
 
 Microsoft Defender for Endpoint blocks installation and usage of prohibited peripherals by using either of these options:
 
-- [Administrative Templates](/intune/administrative-templates-windows) can block any device with a matching hardware ID or setup class.  
+- [Administrative Templates](/intune/administrative-templates-windows) can block any device with a matching hardware ID or setup class.
 - [Device Installation CSP settings](/windows/client-management/mdm/policy-csp-deviceinstallation) with a custom profile in Intune. You can [prevent installation of specific device IDs](/windows/client-management/mdm/policy-csp-deviceinstallation#deviceinstallation-preventinstallationofmatchingdeviceids) or [prevent specific device classes](/windows/client-management/mdm/policy-csp-deviceinstallation#deviceinstallation-preventinstallationofmatchingdevicesetupclasses).
 
 ### Allow installation and usage of specifically approved peripherals with matching device instance IDs
@@ -231,11 +231,10 @@ You can prevent installation of the prohibited peripherals with matching device 
 Using Intune, you can limit the services that can use Bluetooth through the ["Bluetooth allowed services"](/windows/client-management/mdm/policy-csp-bluetooth#servicesallowedlist-usage-guide). The default state of "Bluetooth allowed services" settings means everything is allowed.  As soon as a service is added, that becomes the allowed list. If the customer adds the Keyboards and Mice values, and doesn't add the file transfer GUIDs, file transfer should be blocked.
 
 > [!div class="mx-imgBorder"]
-> ![screenshot of Bluetooth settings page](images/bluetooth.png)
-
+> ![screenshot of Bluetooth settings page.](images/bluetooth.png)
 
 ## Prevent threats from removable storage
-  
+
 Removable storage devices can introduce additional security risk to your organization. Microsoft Defender for Endpoint can help identify and block malicious files on removable storage devices.
 
 Microsoft Defender for Endpoint can also prevent USB peripherals from being used on devices to help prevent external threats. It does this by using the properties reported by USB peripherals to determine whether or not they can be installed and used on the device.
@@ -243,7 +242,7 @@ Microsoft Defender for Endpoint can also prevent USB peripherals from being used
 Note that if you block USB devices or any other device classes using the device installation policies, connected devices, such as phones, can still charge.
 
 > [!NOTE]
-> Always test and refine these settings with a pilot group of users and devices first before widely distributing to your organization. 
+> Always test and refine these settings with a pilot group of users and devices first before widely distributing to your organization.
 
 The following table describes the ways Microsoft Defender for Endpoint can help prevent threats from removable storage.
 
@@ -272,9 +271,9 @@ Protecting authorized removable storage with Microsoft Defender Antivirus requir
 - If scheduled scans are used, then you need to disable the DisableRemovableDriveScanning setting (enabled by default) to scan the removable device during a full scan. Removable devices are scanned during a quick or custom scan regardless of the DisableRemovableDriveScanning setting.
 
 > [!NOTE]
-> We recommend enabling real-time monitoring for scanning. In Intune, you can enable real-time monitoring for Windows 10 in **Device Restrictions** > **Configure** > **Microsoft Defender Antivirus** > **Real-time monitoring**.
+> We recommend enabling real-time monitoring for scanning. In Intune, you can enable real-time monitoring for Windows 10 in **Device Restrictions** \> **Configure** \> **Microsoft Defender Antivirus** \> **Real-time monitoring**.
 
-<!-- Need to build out point in the preceding note. 
+<!-- Need to build out point in the preceding note.
 -->
 
 ### Block untrusted and unsigned processes on USB peripherals
@@ -290,22 +289,22 @@ These settings require [enabling real-time protection](/microsoft-365/security/d
 
 1. Sign in to the [Microsoft Endpoint Manager](https://endpoint.microsoft.com/).
 
-2. Click **Devices** > **Windows** > **Configuration Policies** > **Create profile**. 
+2. Click **Devices** \> **Windows** \> **Configuration Policies** \> **Create profile**.
 
-    ![Create device configuration profile](images/create-device-configuration-profile.png)
+    ![Create device configuration profile.](images/create-device-configuration-profile.png)
 
 3. Use the following settings:
-   - Platform: Windows 10 and later 
+   - Platform: Windows 10 and later
    - Profile type: Device restrictions
 
    > [!div class="mx-imgBorder"]
-   > ![Create endpoint protection profile](images/create-endpoint-protection-profile.png)
+   > ![Create endpoint protection profile.](images/create-endpoint-protection-profile.png)
 
-4. Click **Create**.  
+4. Click **Create**.
 
 5. For **Unsigned and untrusted processes that run from USB**, choose **Block**.
 
-   ![Block untrusted processes](images/block-untrusted-processes.png)
+   ![Block untrusted processes.](images/block-untrusted-processes.png)
 
 6. Click **OK** to close settings and **Device restrictions**.
 
@@ -361,5 +360,5 @@ For example, using either approach, you can automatically have the Microsoft Def
 - [Policy/DeviceInstallation CSP](/windows/client-management/mdm/policy-csp-deviceinstallation)
 - [Perform a custom scan of a removable device](/samples/browse/?redirectedfrom=TechNet-Gallery)
 - [Device Control Power BI Template for custom reporting](https://github.com/microsoft/MDATP-PowerBI-Templates)
-- [BitLocker](/windows/security/information-protection/bitlocker/bitlocker-overview.md) 
+- [BitLocker](/windows/security/information-protection/bitlocker/bitlocker-overview.md)
 - [Windows Information Protection](/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure.md)

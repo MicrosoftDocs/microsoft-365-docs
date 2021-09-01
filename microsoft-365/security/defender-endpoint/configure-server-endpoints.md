@@ -217,8 +217,8 @@ Verify that Microsoft Defender Antivirus and Microsoft Defender for Endpoint are
 
 
 ## Run a detection test to verify onboarding
-After onboarding the device, you can choose to run a detection test to verify that a device is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Microsoft Defender for Endpoint device](run-detection-test.md).
 
+After onboarding the device, you can choose to run a detection test to verify that a device is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Microsoft Defender for Endpoint device](run-detection-test.md).
 
 ## Offboard Windows servers
 

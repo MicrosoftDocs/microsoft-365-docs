@@ -41,7 +41,7 @@ For more information on enabling MDM with Microsoft Intune, see [Device enrollme
 
 ## Onboard devices using Microsoft Intune
 
-[![Image of the PDF showing onboarding devices to Defender for Endpoint using Microsoft Intune](images/onboard-intune.png)](images/onboard-intune-big.png#lightbox)
+[![Image of the PDF showing onboarding devices to Defender for Endpoint using Microsoft Intune.](images/onboard-intune.png)](images/onboard-intune-big.png#lightbox)
 
 Check out the [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf) or [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) to see the various paths in deploying Defender for Endpoint.
 
@@ -70,7 +70,7 @@ For security reasons, the package used to Offboard devices will expire 30 days a
 
 1. Get the offboarding package from [Microsoft 365 Defender portal](https://security.microsoft.com/):
 
-   1. In the navigation pane, select **Settings** > **Endpoints** > **Device management** > **Offboarding**.
+   1. In the navigation pane, select **Settings** \> **Endpoints** \> **Device management** \> **Offboarding**.
 
    1. Select Windows 10 as the operating system.
 

@@ -30,7 +30,7 @@ For an overview of identity models and authentication for Microsoft 365 for ente
 
 For information about the identity features of each Microsoft 365 for enterprise plan, the role of Azure Active Directory, both the on-premises and cloud-based components, and the most common authentication configurations, see the [Identity Infrastructure poster](../downloads/m365e-identity-infra.pdf).
 
-[![The Identity Infrastructure poster](../downloads/m365e-identity-infra.png)](../downloads/m365e-identity-infra.pdf)
+[![The Identity Infrastructure poster.](../downloads/m365e-identity-infra.png)](../downloads/m365e-identity-infra.pdf)
 
 Review this two-page poster to quickly ramp up on identity concepts and configurations for Microsoft 365 for enterprise.
 
