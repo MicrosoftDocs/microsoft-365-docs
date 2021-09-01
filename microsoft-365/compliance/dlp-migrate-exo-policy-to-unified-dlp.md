@@ -74,7 +74,7 @@ The account that you use to run the migration wizard must have access to both th
 
 1. If you are unfamiliar with DLP, the Compliance center DLP console, or the Exchange Admin center DLP console, you should familiarize yourself before attempting a policy migration.
     1. [Exchange Online data loss prevention (DLP) policies](/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)
-    1. [Overview of Data Loss Prevention](data-loss-prevention-policies.md)
+    1. [Learn about Microsoft 365 Endpoint data loss prevention](endpoint-dlp-learn-about.md#learn-about-microsoft-365-endpoint-data-loss-prevention)
     1. [Create, Test, and Tune a DLP policy](create-test-tune-dlp-policy.md)
 1. Evaluate your Exchange DLP and Compliance center policies by asking these questions:
 
@@ -82,7 +82,7 @@ The account that you use to run the migration wizard must have access to both th
 |Question  |Action  | Migration procedure|
 |---------|---------|---------|
 |Is the policy still needed?    |If not, delete or deactivate it |don't migrate|
-|Does it overlap with any other Exchange or Compliance center DLP policies?     |If yes, can you consolidate the overlapping policies?         |don't use the migration wizard, manually create the consolidated DLP policy in the Compliance center. See, [Create, Test, and Tune a DLP policy](create-test-tune-dlp-policy.md) and [Create a DLP policy from a template](create-a-dlp-policy-from-a-template.md)
+|Does it overlap with any other Exchange or Compliance center DLP policies?     |If yes, can you consolidate the overlapping policies?         |- If it overlaps with another Exchange policy, manually create the consolidated DLP policy in the Exchange Admin center, then use the migration wizard. </br> - If it overlaps with an existing Compliance Center policy, you can modify the existing Compliance center policy to match, don't migrate the Exchange version|
 |Is the Exchange DLP policy tightly scoped and does it have well-defined conditions, actions, inclusions, and exclusions?     |If yes, this is a good candidate to migrate with the wizard, make note of the policy so that you remember to come back to delete it later         | migrate with the wizard|
 
 ## Migration
@@ -92,7 +92,7 @@ After you have evaluated all your Exchange and Compliance center DLP policies fo
 1. Open the [Microsoft 365 Compliance center](https://compliance.microsoft.com/datalossprevention?viewid=policies) DLP console.
 2. If there are Exchange DLP policies that can be migrated, a banner will appear at the top of the page letting you know.
 3. Choose **Migrate policies** in the banner to open the migration wizard. All the Exchange DLP policies are listed. Previously migrated policies cannot be selected.
-4.  Select the policies you want to migrate. You can migrate them individually, or in groups using a phased approach or all at once . Select **Next**.
+4. Select the policies you want to migrate. You can migrate them individually, or in groups using a phased approach or all at once . Select **Next**.
 5. Review the flyout pane for any warnings or messages. Resolve any issues before proceeding.
 6. Select the mode you want the new Compliance center policy created in, **Active**, **Test**, or **Disabled**.  The default is **Test**. Select **Next**.
 7. If desired, you can create additional policies that are based on the Exchange DLP policies for other unified DLP locations. This will result in one new unified DLP policy for the migrated Exchange policy and one new unified DLP policy for any additional locations that you pick here.
@@ -112,7 +112,7 @@ After you have evaluated all your Exchange and Compliance center DLP policies fo
 
 The migrated policies will now appear in the list of DLP policies in the Compliance center DLP console. 
 
-## Testing and validation <!--PRATEEK AND AAKASH TO PROVIDE A LIST OF SUPPORTED PREDICATES AND KNOWN ISSUES BEFORE PUBLISHING>
+## Testing and validation <!--PRATEEK AND AAKASH TO PROVIDE A LIST OF SUPPORTED PREDICATES AND KNOWN ISSUES BEFORE PUBLISHING-->
 
 Test and review your policies.
 
@@ -147,7 +147,7 @@ Once you are satisfied with how your migrated policies are functioning, you can 
 ## Related articles
 
 - [Exchange Online data loss prevention (DLP) policies](/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)
-- [Overview of DLP](data-loss-prevention-policies.md)
+- [Learn about data loss prevention](dlp-learn-about-dlp.md#learn-about-data-loss-prevention)
 - [Get started with Activity explorer](data-classification-activity-explorer.md)
 - [Create, Test, and Tune a DLP policy](create-test-tune-dlp-policy.md)
 - [Create a DLP policy from a template](create-a-dlp-policy-from-a-template.md)
