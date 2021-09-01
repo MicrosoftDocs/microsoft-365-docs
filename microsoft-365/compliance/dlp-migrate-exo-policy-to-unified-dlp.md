@@ -63,7 +63,7 @@ To access and use the policy migration wizard, you must have one of these subscr
 - Microsoft 365 E5 information protection and governance
 - Microsoft 365 A5 information protection and governance
 
-For a detailed list of DLP licensing requirements, see [Microsoft 365 Licensing guidance for security & compliance, data loss prevention](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#data-loss-prevention-for-exchange-online-sharepoint-online-and-onedrive-for-business)
+For a detailed list of DLP licensing requirements, see [Microsoft 365 Licensing guidance for security & compliance, data loss prevention](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection)
 
 
 ### Permissions
