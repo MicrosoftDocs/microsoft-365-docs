@@ -101,7 +101,7 @@ If you don't purchase licenses following the trial:
 - Libraries that were running models will no longer automatically classify files or extract models.
 - Any previously classified files or extracted metadata won't be affected.
 - Content centers and any document-understanding models won't be automatically deleted. These will remain available for use if you decide to purchase licenses in the future.
-- Forms-processing models will be stored in the Common Data Services (CDS) instance of the default Power Platform environment. These could be used with future licensing for SharePoint Syntex or with AI Builder capabilities in the Power Platform.
+- Forms-processing models will be stored in the Dataverse (previously named Common Data Service [CDS]) instance of the default Power Platform environment. These could be used with future licensing for SharePoint Syntex or with AI Builder capabilities in the Power Platform.
 
 ## See also
 
