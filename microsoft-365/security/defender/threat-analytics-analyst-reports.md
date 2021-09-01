@@ -68,7 +68,7 @@ In addition to these tracked mitigations, the analyst report also discusses miti
 While you can use the **Mitigations** tab to assess your security posture against a threat, these recommendations let you take additional steps towards improving your security posture. Carefully read all the mitigation guidance in the analyst report and apply them whenever possible.
 
 ## Understand how each threat can be detected
-The analyst report also provides the detections from Microsoft Defender for Endpoint antivirus and _endpoint detection and response_ (EDR) capabilities.
+The analyst report also provides the detections from Microsoft Defender Antivirus and _endpoint detection and response_ (EDR) capabilities.
 
 ### Antivirus detections
 These detections are available on devices with [Microsoft Defender Antivirus](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) turned on. When these detections occur on devices that have been onboarded to Microsoft Defender for Endpoint, they also trigger alerts that light up the charts in the report.
