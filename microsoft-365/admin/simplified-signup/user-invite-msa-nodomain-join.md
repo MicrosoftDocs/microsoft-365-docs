@@ -57,11 +57,24 @@ For further information about data privacy, refer to the [Terms of use](https://
 
 ### How can I leave this business (and stop using this license)?
 
-Contact your business owner or your admin. They can remove you as a user from this organization.
+There are a couple of options in this case:  
+
+1. You can contact the business owner or admin of the other business and ask to be removed from that business.
+
+2. You can remove yourself by following the steps below:
+
+- Go to https://myapps.microsoft.com/.
+- Sign in to your account, and select your profile initials.
+- Select **View account** > **Manage organizations** > **Leave organization**
+- Select **Leave** > **OK**.
 
 ### I’m getting an error saying I’m part of another business.  What do I do?
 
-You will need to leave your previous Microsoft 365 Business subscription first. Either talk to your previous technical admin or business owner and ask them to remove you. You can also visit https://myaccount.microsoft.com/ and remove yourself from there
+You will need to leave your previous Microsoft 365 Business subscription first. Either talk to your previous technical admin or business owner and ask them to remove you. You can also visit [https://myaccount.microsoft.com/](https://myaccount.microsoft.com/) and follow the steps below.
+
+- Sign in to your account, and select your profile initials.
+- Select **View account** > **Manage organizations** > **Leave organization**
+- Select **Leave** > **OK**.
 
 ### I have a question about using this account. Who can I talk to?
 

@@ -107,7 +107,7 @@ More at [Import email with Outlook](https://support.microsoft.com/office/6a3771d
 
 You can also use Exchange admin center to import everyone's email. For more information, see [migrate multiple email accounts](/Exchange/mailbox-migration/mailbox-migration).
 
-## Move data from your personal Teams account to new Teams for work account
+## Move data from your personal Microsoft Teams account to new Teams for work account
 
 1. Open Microsoft Teams, select your profile icon, and then **Add work or school account**.
 
@@ -123,7 +123,7 @@ Once you have your new Microsoft Teams account for work set up, you can recreate
 
 ### Migrating contacts
 
-To move your Teams contacts over to your new Teams account, find the contact’s email address and add the user to your new Teams account.
+To migrate your contacts from your personal Teams account, find the contact's email address and add the user to your new Teams account for work.
 
 ## Related content
 

@@ -45,19 +45,39 @@ Follow up with your users and make sure they got the email invite you sent about
 
 ## Frequently asked questions
 
-#### I shared an email invite but the user didn’t receive the email?
+### I shared an email invite but the user didn’t receive the email?
 
 - Ask user to check their spam folder.
 - Resend the invite email in the Microsoft 365 admin center. From the admin center, hover over the user and select the action to resend email invite.
 - Make sure the email address you entered for your user is correct.
 
-#### How to conduct GDPR obligations
+### How can I help an employee join my business and leave another business?
 
-#### What steps should I take to help a user leave a different business and join our business?
+There are a couple of options in this case:  
 
-##### Users are having issues install Office. How can I help?
+1. They can contact the business owner or admin of the other business and ask to be removed from that business. You can then add them to your organization.  
+
+2. They can remove themselves by following the steps below:
+
+- Go to https://myapps.microsoft.com/.
+- Sign in to your account and select your profile initials.
+- Select **View account** > **Manage organizations** > **Leave organization**
+- Select **Leave** > **OK**.
+
+### How do I help someone install Microsoft Office?
 
 Send them this article to help them install Office: [Download and install Microsoft 365 Office or Office 2019 on a PC or a MAC](https://support.microsoft.com/office/download-and-install-or-reinstall-microsoft-365-or-office-2019-on-a-pc-or-mac-4414eaaf-0478-48be-9c42-23adc4716658).
+
+### How do I meet common GDPR (General Data Protection Regulation) obligations for my organization?
+
+Under GDPR, an employee or customer may ask that you retrieve, or delete all information about them in your Microsoft cloud. For more info, check out, [Data Subject Requests](/compliance/regulatory/gdpr-data-subject-requests).
+
+To search data that's been saved in the Microsoft cloud as part of your Microsoft 365 Business subscription, you and each user you’ve invited will need to visit [https://account.microsoft.com/account/privacy](https://account.microsoft.com/account/privacy) to search data in locations such as OneDrive.  In addition, you (business or admin) may need to search for employee account data that's saved in the [Azure Active Directory portal](/compliance/regulatory/gdpr-dsr-office365).
+
+Depending on how you and other users save documents, you and every user you’ve invited may need to use built in search, and delete functionality to discover what is saved on your Windows PCs or Macs, on business apps on smartphones, and on non-Microsoft apps and sites.
+
+> [!NOTE]
+> Once you attach a domain, and you and your users use business accounts to save data into the Microsoft cloud, you can conduct data subject requests on behalf of all users by following guidance in the [Office 365 Data Subject Requests for the GDPR and CCPA](/compliance/regulatory/gdpr-dsr-office365) topic.
 
 ## Related content
 
