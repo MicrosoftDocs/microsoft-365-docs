@@ -159,7 +159,7 @@ Having this setting turned on can help security teams examine potentially bad fi
 
 #### Backing up quarantined files
 
-Users may be prompted to provide explicit consent before backing up the quarantined file, depending on your [sample submission configuration](enable-cloud-protection-microsoft-defender-antivirus.md#use-group-policy-to-turn-on-cloud-delivered-protection).
+Users may be prompted to provide explicit consent before backing up the quarantined file, depending on your [sample submission configuration](enable-cloud-protection-microsoft-defender-antivirus.md#use-group-policy-to-turn-on-cloud-protection).
 
 This feature will not work if sample submission is turned off. If automatic sample submission is set to request permission from the user, only samples that the user agrees to send will be collected.
 
@@ -324,3 +324,4 @@ If you come across a problem when trying to submit a file, try each of the follo
 
 - [Take response actions on a device](respond-machine-alerts.md)
 - [Investigate files](investigate-files.md)
+- [Manual response actions in Microsoft Defender for Endpoint Plan 1 (preview)](defender-endpoint-plan-1.md#manual-response-actions)

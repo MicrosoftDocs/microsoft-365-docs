@@ -26,29 +26,29 @@ The information you provide here will be displayed on the page customers and cli
 
 1. In Microsoft 365, select the App launcher, and then select **Bookings**.
 
-1. In the navigation pane, select **Business information**.
+1. In the navigation pane, select **Settings** -> **Business information**.
 
-1. Enter the relevant name, address, and phone number you would like to use for your Bookings calendar.
+1. On the **Basic details** section, enter your business name, address, and phone number you would like to use for your Bookings calendar.
 
-1. In **Send customer replies to**, type the preferred email address where email replies to booking confirmations and reminders should be forwarded.
+:::image type="content" source="../media/bookings-business-basic-details.png" alt-text="Screenshot: Page to enter your basic business information":::
 
-1. In the **Website URL** field, enter the URL of the home page for your business.
+In **Send customer replies to**, type the preferred email address where email replies to booking confirmations and reminders should be forwarded.
 
-1. Enter the **privacy policy** and **terms & conditions** URLs.
+In the **Website URL** field, enter the URL of the home page for your business.
 
-1. Select **Save**.
+Enter the **privacy policy** and **terms & conditions** URLs.
 
-## Set your business hours
+1. On the **Business logo** section, if you haven't already uploaded your business logo to the Bookings app, add your business logo.
+
+1. On the **Set your business hours** section, set business hours to your operational hours. These are the hours to which all bookings are restricted. Additional time restrictions of when appointments can be booked can be set for each service and for each staff member in the **Services** and **Staff** pages.
+
+On the Business information page, under Business hours, use the dropdowns to select start and end times for each day. Click **+** to add start- and end-time selectors.
 
 By default, the business hours in the Bookings app are set to 8 a.m. to 5 p.m., Monday through Friday. Times are provided in 15-minute increments. The Bookings app uses the 12-hour clock.
 
-Set **business hours** to your operational hours. These are the hours to which all bookings are restricted. Additional time restrictions of when appointments can be booked can be set for each service and for each staff member in the Services and Staff pages, respectively.
+1. Select **Save**.
 
-1. On the Business information page, under Business hours, use the dropdowns to select start and end times for each day.
-
-1. Click **+** to add start- and end-time selectors.
-
-## How to set hours for a split shift
+### How to set hours for a split shift
 
 You might need to block out a portion of each day or week to have staff meetings, update inventory, or take care of other rhythm-of-business details. The Bookings app allows you to limit customer appointments to your specified time slots.
 
