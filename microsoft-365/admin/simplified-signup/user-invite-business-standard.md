@@ -94,6 +94,10 @@ No it doesn’t, you can still login the same way as before.
 - First follow: [Set up Outlook for business email](../../business-video/setup-outlook.md).
 - Then follow: [Create and send email in Outlook](https://support.microsoft.com/office/create-and-send-email-in-outlook-19c32deb-08b6-4f90-a211-02bc5f77f360).
 
+### How can I leave this business (and stop using this license)?
+
+Contact your business owner or your admin. They can remove you as a user from this organization.
+
 <!--1. Open any of your Microsoft 365 apps, like Word, Excel or PowerPoint, select your profile icon and then **Sign in with a different account**. Follow the steps and choose **Next** to set up Outlook.
 
 2. Open Outlook, enter your new email address, and select **Connect**. Follow the steps and choose **Next** to set up OneDrive.

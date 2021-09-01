@@ -57,10 +57,7 @@ For further information about data privacy, refer to the [Terms of use](https://
 
 ### How can I leave this business (and stop using this license)?
 
-There are two options:
-
-- Your admin can remove you as a user
-- You can also visit [https://myapps.microsoft.com/](https://myapps.microsoft.com/) and remove yourself from there.
+Contact your business owner or your admin. They can remove you as a user from this organization.
 
 ### I’m getting an error saying I’m part of another business.  What do I do?
 
