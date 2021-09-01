@@ -159,7 +159,7 @@ All Windows 365 Business users have local administrator privileges on their Clou
 
 ## Management through Intune
 
-Windows 365 Business does not enroll Cloud PCs to [Intune](/mem/intune/fundamentals/what-is-intune) as part of the provisioning process. If the organization and users are properly licensed, Cloud PCs can be enrolled to Intune using the same procedure for [enrolling Windows 10 machines to Intune](/mem/intune/user-help/enroll-windows-10-device).
+If the organization and users are properly licensed, Cloud PCs can be enrolled to Intune using the same procedure for [enrolling Windows 10 machines to Intune](/mem/intune/user-help/enroll-windows-10-device).
 
 ## Sending outbound email messages using port 25 is not supported
 
