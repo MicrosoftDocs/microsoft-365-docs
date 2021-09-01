@@ -54,7 +54,7 @@ Reports are available for the last 7 days, 30 days, 90 days, and 180 days. Data 
 
 ::: moniker-end
 
-2. Click on the **View more** button from the at-a-glance activity card for a service (such as email or OneDrive) to see the report detail page. In there different reports for the service are provided in tabs. <br/>![The Usage dashboard](../../media/4c0f966d-9d2b-4a6f-a106-a6e2b9a2de07.png) 
+2. Click on the **View more** button from the at-a-glance activity card for a service (such as email or OneDrive) to see the report detail page. In there different reports for the service are provided in tabs. <br/>![The Usage dashboard.](../../media/4c0f966d-9d2b-4a6f-a106-a6e2b9a2de07.png) 
 
 ## Who can see reports
 
@@ -154,7 +154,7 @@ If you want to hide user level information when you're generating your reports, 
   
 Your user list will look like this:
   
-![Reports - anonymized user list](../../media/2ed99bce-4978-4ee3-9ea2-4a8db26eef02.png)
+![Reports - anonymized user list.](../../media/2ed99bce-4978-4ee3-9ea2-4a8db26eef02.png)
   
 It'll take a few minutes for these changes to take effect on the reports in the reports dashboard. This setting also applies to the reports API.
   

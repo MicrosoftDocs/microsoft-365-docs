@@ -52,7 +52,7 @@ ms.custom: api
 
    In order to get your **Event Hubs resource ID**, go to your Azure Event Hubs namespace page on [Azure](https://ms.portal.azure.com/) > properties tab \> copy the text under **Resource ID**:
 
-   ![Image of event hub resource Id1](images/event-hub-resource-id.png)
+   ![Image of event hub resource Id1.](images/event-hub-resource-id.png)
 
 7. Choose the events you want to stream and click **Save**.
 
@@ -96,7 +96,7 @@ To get the data types for event properties do the following:
 
 - Here is an example for Device Info event:
 
-  ![Image of event hub resource Id2](images/machine-info-datatype-example.png)
+  ![Image of event hub resource Id2.](images/machine-info-datatype-example.png)
 
 ## Related topics
 
