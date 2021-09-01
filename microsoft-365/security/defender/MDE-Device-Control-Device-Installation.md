@@ -1,14 +1,14 @@
 ---
-title: Microsoft Defender for Endpoint Device Control Removable Storage Access Control, removable storage media
-description: A walk-through about Microsoft Defender for Endpoint
+title: Microsoft Defender for Endpoint Device Control Device Installation
+description: This topic provides a walk through about Microsoft Defender for Endpoint Device Control Device Installation
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: dansimp
-author: dansimp
+ms.author: v-lsaldanha
+author: lovina-saldanha
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -19,16 +19,13 @@ ms.technology: mde
 
 # Microsoft Defender for Endpoint Device Control Device Installation 
 
-> [!NOTE]
-> The Group Policy management of this product is now generally available (4.18.2106): See [Tech Community blog: Protect your removable storage and printer with Microsoft Defender for Endpoint](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/protect-your-removable-storage-and-printers-with-microsoft/ba-p/2324806) 
-
 Microsoft Defender for Endpoint Device Control Removable Storage Access Control enables you to do the following task:
 
 - Prevent people from installing specific devices
 - Allow people from installing specific devices but prevent others.
 
 > [!NOTE]
-> You can find the difference between Device Installation and Removable storage access control here [Protection Policies](/microsoft-365/security/defender-endpoint/device-control-removable-storage-protection?view=o365-worldwide).
+> To find the difference between Device Installation and Removable storage access control, see [Protection Policies](/microsoft-365/security/defender-endpoint/device-control-removable-storage-protection?view=o365-worldwide &preserve-view=true).
 
 |Privilege|Permission|
 |---|---|
@@ -42,11 +39,9 @@ Microsoft Defender for Endpoint Device Control Removable Storage Access Control 
 
 ## Prepare your endpoints
 
- Deploy Device Installation on Windows 10 devices, Windows Server 2022.
+Deploy Device Installation on Windows 10 devices, Windows Server 2022.
 
 ## Device properties
-
-Microsoft Defender for Endpoint Device Control Removable Storage Protection allows you to restrict the removable storage access based on the properties described in the table below:
 
 The following device properties are supported by Device Installation support:
 
@@ -97,7 +92,7 @@ If the **Apply layered order of evaluation for Allow and Prevent device installa
 
 ### Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria 
 
-This policy setting will change the evaluation order in which Allow and Prevent policy settings are applied when more than one install policy setting is applicable for a given device. Enable this policy setting to ensure that overlapping device match criteria is applied based on an established hierarchy where more specific match criteria supercedes less specific match criteria. The hierarchical order of evaluation for policy settings that specify device match criteria is as follows: 
+This policy setting will change the evaluation order in which Allow and Prevent policy settings are applied when more than one install policy setting is applicable for a given device. Enable this policy setting to ensure that overlapping device match criteria is applied based on an established hierarchy where more specific match criteria supercedes less specific match criteria. The hierarchical order of evaluation for policy settings that specify device match criteria is as follows:
 
 **Device instance IDs > Device IDs > Device setup class > Removable devices**
 
@@ -182,9 +177,7 @@ The Device installation feature allows you to apply policy through Intune to dev
 
 #### Licensing 
 
-Before you get started with Device installation, you should confirm your [Microsoft 365 subscription](https://www.microsoft.com/en-in/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2). To access and use Device installation, you must have 
-
-- Microsoft 365 E3 
+Before you get started with Device installation, you should confirm your [Microsoft 365 subscription](https://www.microsoft.com/en-in/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2). To access and use Device installation, you must have Microsoft 365 E3.
 
 #### Permission 
 
@@ -198,7 +191,7 @@ For Policy deployment in Intune, the account must have permissions to create, ed
 
 In Microsoft Endpoint Manager [https://endpoint.microsoft.com/](https://endpoint.microsoft.com/)  
 
-1. Configure **Prevent installation of devices using drivers that match these device setup classes**. 
+1. Configure **Prevent installation of devices using drivers that match these device setup classes**.
 
     a. Open Endpoint security > Attack surface reduction > Create Policy > Platform: Windows 10 (and later) & Profile: Device control.
     :::image type="content" source="../../media/devicepolicy-editprofile.png" alt-text="edit profile":::
@@ -247,12 +240,12 @@ To access and use Device installation, you must have Windows E3.
 
 You can find the deployment detail here: [Manage Device Installation with Group Policy (Windows 10) - Windows Client](/windows/client-management/manage-device-installation-with-group-policy).
 
-
 ## View Device Control Removable Storage Access Control data in Microsoft Defender for Endpoint
 
-The [Microsoft 365 security](https://sip.security.microsoft.com/homepage) portal shows removable storage blocked by the Device Control Device Installation. To access the Microsoft 365 security, you must have the following subscription: 
+The [Microsoft 365 security](https://sip.security.microsoft.com/homepage) portal shows removable storage blocked by the Device Control Device Installation. To access the Microsoft 365 security, you must have the following subscription:
 
 - Microsoft 365 for E5 reporting
+
 ```kusto
 //events triggered by Device Installation policies 
 DeviceEvents 
@@ -280,10 +273,7 @@ DeviceRegistryEvents
 ```
 
 ## Why the Allow policy doesn't work?
-It is not enough to enable only a single hardware ID to enable a
-single USB thumb-drive. Ensure that all the USB devices that 
-precede the target one aren't blocked (allowed) as well.
+It is not enough to enable only a single hardware ID to enable a single USB thumb-drive. Ensure that all the USB devices that precede the target one aren't blocked (allowed) as well.
 
-:::image type="content" source="../../media/devicemgrscrnshot.
-png" alt-text="Device install faq":::
+:::image type="content" source="../../media/devicemgrscrnshot.png" alt-text="Device install faq":::
 
