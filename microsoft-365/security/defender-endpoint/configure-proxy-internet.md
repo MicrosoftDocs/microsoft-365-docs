@@ -87,9 +87,9 @@ The static proxy is configurable through Group Policy (GP). The group policy can
 
   ```text
   <server name or ip>:<port>
-  ```
 
   For example: http://10.0.0.6:8080
+  ```
 
   The registry value `DisableEnterpriseAuthProxy` should be set to 1.
 
@@ -112,9 +112,9 @@ Configure the static proxy using the Group Policy found here:
 
     ```text
     <server name or ip>:<port>
-    ```
 
     For example: http://10.0.0.6:8080
+    ```
 
 > [!NOTE]
 >
