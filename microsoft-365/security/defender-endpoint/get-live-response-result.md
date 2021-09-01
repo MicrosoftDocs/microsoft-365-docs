@@ -23,7 +23,7 @@ MS.technology: mde
 ms.custom: api
 ---
 
-#  Get live response results
+# Get live response results
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -74,7 +74,8 @@ started](apis-intro.md).
 
 |Permission type|Permission|Permission display name|
 |---|---|---|
-|Application|Machine.LiveResponse|Run live response on a specific machine|
+Application|Machine.Read.All|''Read all machine profiles''
+Application|"Machine.ReadWrite.All|'Read and write all machine information'
 |Delegated (work or school account)|Machine.LiveResponse|Run live response on a specific machine|
 
 ## HTTP request

@@ -24,7 +24,7 @@ Microsoft 365 for enterprise includes features to help manage devices and the us
 
 Here is an example of the validation and management of users, their devices, and their use of local and cloud productivity apps like Microsoft Teams.
 
-![Validation and management of users, devices, and apps](../media/tenant-management-overview/tenant-management-device-app-mgmt.png)
+![Validation and management of users, devices, and apps.](../media/tenant-management-overview/tenant-management-device-app-mgmt.png)
 
 To help you secure and protect your organization's resources, Microsoft 365 for enterprise includes features to help manage devices and their access to apps. There are two options for device management:
 
@@ -52,7 +52,7 @@ Microsoft provides a set of configurations for [identity and device access](../s
 
 Here is an example of the application of these settings and policies to validate and restrict users, their devices, and their use of local and cloud productivity apps like Microsoft Teams.
 
-![Identity and device access configurations for requirements and restrictions on users, thier devices, and their use of apps](../media/tenant-management-overview/tenant-management-device-app-mgmt-golden-config.png)
+![Identity and device access configurations for requirements and restrictions on users, thier devices, and their use of apps.](../media/tenant-management-overview/tenant-management-device-app-mgmt-golden-config.png)
 
 For device access and app management, use the configurations in these articles:
 
@@ -65,7 +65,7 @@ For device and app management for your Microsoft 365 tenant, you have determined
 
 Here is an example of a tenant with Intune device and app management with the new elements highlighted.
 
-![Example of a tenant with Intune device and app management](../media/tenant-management-overview/tenant-management-tenant-build-step5.png)
+![Example of a tenant with Intune device and app management.](../media/tenant-management-overview/tenant-management-tenant-build-step5.png)
 
 In this illustration, the tenant has:
 

@@ -50,7 +50,7 @@ Every sensitive information type entity is defined by these fields:
     - Confidence Level - Confidence levels (high, medium, low) reflect how much supporting evidence was detected along with the primary element. The more supporting evidence an item contains, the higher the confidence that a matched item contains the sensitive info you're looking for.
     - Proximity – Number of characters between primary and supporting element
 
-![Diagram of corroborative evidence and proximity window](../media/dc68e38e-dfa1-45b8-b204-89c8ba121f96.png)
+![Diagram of corroborative evidence and proximity window.](../media/dc68e38e-dfa1-45b8-b204-89c8ba121f96.png)
 
 Learn more about confidence levels in this video
 
@@ -60,7 +60,7 @@ Learn more about confidence levels in this video
 ### Example sensitive information type
 
 
-## Argentina national identity (DNI) number
+#### Argentina national identity (DNI) number
 
 ### Format
 

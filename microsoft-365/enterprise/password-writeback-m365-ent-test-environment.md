@@ -32,7 +32,7 @@ Configuring your test environment for password writeback involves two phases:
 - [Phase 1: Configure password hash synchronization for your Microsoft 365 test environment](#phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment)
 - [Phase 2: Enable password writeback for the TESTLAB AD DS domain](#phase-2-enable-password-writeback-for-the-testlab-ad-ds-domain)
   
-![Test Lab Guides for the Microsoft cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
+![Test Lab Guides for the Microsoft cloud.](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
 > For a visual map to all the articles in the Microsoft 365 for enterprise Test Lab Guide stack, go to [Microsoft 365 for enterprise Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf).
@@ -41,7 +41,7 @@ Configuring your test environment for password writeback involves two phases:
 
 First, follow the instructions in [password hash synchronization](password-hash-sync-m365-ent-test-environment.md). Your resulting configuration looks like this:
   
-![The simulated enterprise with password hash synchronization test environment](../media/pass-through-auth-m365-ent-test-environment/Phase1.png)
+![The simulated enterprise with password hash synchronization test environment.](../media/pass-through-auth-m365-ent-test-environment/Phase1.png)
   
 This configuration consists of:
   
@@ -118,7 +118,7 @@ You are now ready to test password writeback for users on computers that aren't 
 
 Your resulting configuration looks like this:
 
-![The simulated enterprise with pass-through authentication test environment](../media/pass-through-auth-m365-ent-test-environment/Phase1.png)
+![The simulated enterprise with pass-through authentication test environment.](../media/pass-through-auth-m365-ent-test-environment/Phase1.png)
 
 This configuration consists of:
 

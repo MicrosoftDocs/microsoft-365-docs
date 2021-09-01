@@ -7,14 +7,14 @@ brand: m365
 
 metadata:
   title: Microsoft 365 Business Premium resources # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: description # Required; article description that is displayed in search results. < 160 chars.
+  description: Documentation for setting up and working with Microsoft 365 Business Premium. # Required; article description that is displayed in search results. < 160 chars.
   ms.service: o365-administration #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: hub-page # Required
   ms.collection: collection
   ms.custom: AdminSurgePortfolio
-  author: samanro #Required; your GitHub user alias, with correct capitalization.
-  ms.author: samanro #Required; microsoft alias of author; optional team alias.
-  ms.date: 10/01/2019 #Required; mm/dd/yyyy format.
+  author: efrene #Required; your GitHub user alias, with correct capitalization.
+  ms.author: efrene #Required; microsoft alias of author; optional team alias.
+  ms.date: 8/25/2021 #Required; mm/dd/yyyy format.
 
 # productDirectory section (optional)
 productDirectory:
@@ -37,11 +37,11 @@ productDirectory:
       summary: Antivirus management and Universal Print are now available in Microsoft 365 Business Premium.
       url: https://aka.ms/M365BPQ1Update
     # Card
-    - title: Join the Microsoft 365 Lighthouse partner webinar on July 28
+    - title: Join the partner webinar series
       # imageSrc should be square in ratio with no whitespace
       imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
-      summary: Using Microsoft 365 Lighthouse to Secure and Standardize Microsoft 365 Business Premium Customers.
-      url: https://aka.ms/m365lighthousewebinar 
+      summary: Accelerate business growth through managed services with Microsoft 365 Business Premium.
+      url: https://aka.ms/acceleratewithm365bp 
 # conceptualContent section (optional)
 conceptualContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
@@ -61,16 +61,16 @@ conceptualContent:
         - url: /office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description
           itemType: reference
           text: Service description
-        - url: support/microsoft-365-business-faqs.yml
+        - url: ../admin/misc/microsoft-365-business-faqs.yml
           itemType: reference
           text: FAQ
   #Card
     - title: Set up Microsoft 365 Business Premium
       links:
-        - url: set-up.md
+        - url: ../admin/setup/business-set-up.md
           itemType: how-to-guide
           text: 1. Run the setup wizard
-        - url: secure-win-10-pcs.md
+        - url: ../admin/setup/secure-win-10-pcs.md
           itemType: how-to-guide
           text: 2. Secure your PCs
         - url: /MicrosoftTeams/get-started-with-teams-quick-start
@@ -84,10 +84,7 @@ conceptualContent:
       links:
         - url: https://www.microsoft.com/microsoft-365/partners/business
           itemType: overview
-          text: Partner page
-        - url: ../lighthouse/m365-lighthouse-overview.md
-          itemType: overview
-          text: Learn about Microsoft 365 Lighthouse 
+          text: Partner page 
         - url: https://assetsprod.microsoft.com/mpn/smb-advanced-security-customer-pitch-deck.pptx
           itemType: download
           text: Pitch deck (customer focus)
@@ -163,22 +160,22 @@ conceptualContent:
   # Card
     - title: Manage devices
       links:
-        - url: view-policies-and-devices.md
+        - url: ../admin/devices/view-policies-and-devices.md
           itemType: how-to-guide
           text: PC & Mobile devices
-        - url: remove-company-data.md
+        - url: ../admin/devices/remove-company-data.md
           itemType: how-to-guide
           text: Remove company data
-        - url: reset-devices-to-factory-settings.md
+        - url: ../admin/devices/reset-devices-to-factory-settings.md
           itemType: how-to-guide
           text: Wipe and reset
         - url: /intune/index
           itemType: overview
           text: Intune
-        - url: manage-windows-devices.md
+        - url: ../admin/setup/manage-windows-devices.md
           itemType: how-to-guide
           text: Set up hybrid Azure AD join
-        - url: access-resources.md
+        - url: ../admin/setup/access-resources.md
           itemType: how-to-guide
           text: Set up Azure AD join 
         - url: /windows/deployment/windows-autopilot/windows-autopilot
@@ -186,7 +183,7 @@ conceptualContent:
           itemType: overview    
       # footerLink (optional)
       footerLink:
-        url: manage-windows-devices.md
+        url: ../admin/setup/manage-windows-devices.md
         text: See more
   # Card
     - title: Monitor security
@@ -222,19 +219,19 @@ conceptualContent:
   #Card
     - title: How do I...
       links:
-        - url: sign-up.md
+        - url: ../business-video/sign-up.md
           itemType: get-started
           text: Sign up for Microsoft 365 Business Premium
-        - url: migrate-to-microsoft-365-business.md
+        - url: ../commerce/subscriptions/upgrade-to-different-plan.md
           itemType: how-to-guide
           text: Migrate from Microsoft 365 Business Standard 
-        - url: migrate-from-e3.md
+        - url: ../commerce/subscriptions/upgrade-to-different-plan.md
           itemType: how-to-guide
           text: Migrate from Office 365 E3 
-        - url: migrate-from-microsoft-365-business-to-microsoft-365-enterprise.md
+        - url: ../commerce/subscriptions/upgrade-to-different-plan.md
           itemType: how-to-guide
           text: Migrate to Microsoft 365 Enterprise E3
       # footerLink (optional)
       footerLink:
-        url: microsoft-365-business-overview.md
-        text: See more 
+        url: ../business-video/what-is-microsoft-365.md
+        text: See more

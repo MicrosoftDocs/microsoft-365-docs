@@ -27,11 +27,11 @@ In Microsoft 365 Defender, you can set three types of Defender for Identity enti
 
 To set these tags, in [Microsoft 365 Defender](https://security.microsoft.com/), go to **Settings** and then **Identities**.
 
-![Go to Settings, then Identities](../../media/defender-identity/settings-identities.png)
+![Go to Settings, then Identities.](../../media/defender-identity/settings-identities.png)
 
-The tag settings will appear in the **Settings** column.
+The tag settings will appear under **Entity tags**.
 
-![Tag setting types](../../media/defender-identity/tag-settings.png)
+![Tag setting types.](../../media/defender-identity/tag-settings.png)
 
 To set each type of tag, follow the instructions below.
 
@@ -41,17 +41,17 @@ The **Sensitive tag** is used to identify high value assets. The lateral movemen
 
 You can also manually tag users, devices, or groups as sensitive.
 
-1. Select **Sensitive tag**. You will then see the existing sensitive **Users**, **Devices**, and **Groups**.
+1. Select **Sensitive**. You will then see the existing sensitive **Users**, **Devices**, and **Groups**.
 
-    ![Sensitive entities](../../media/defender-identity/sensitive-entities.png)
+    ![Sensitive entities.](../../media/defender-identity/sensitive-entities.png)
 
 1. Under each category, select **Tag...** to tag that type of entity. For example, under **Groups**, select **Tag groups.** A pane will open with the groups you can select to tag. To search for a group, enter its name in the search box.
 
-    ![Add groups](../../media/defender-identity/add-groups.png)
+    ![Add groups.](../../media/defender-identity/add-groups.png)
 
 1. Select your group, and click **Add selection.**
 
-    ![Add selection](../../media/defender-identity/add-selection.png)
+    ![Add selection.](../../media/defender-identity/add-selection.png)
 
 ## Honeytoken tags
 
@@ -59,33 +59,33 @@ Honeytoken entities are used as traps for malicious actors. Any authentication a
 
 You can tag users or devices with the **Honeytoken** tag in the same way you tag sensitive accounts.
 
-1. Select **Honeytoken tag**. You'll then see the existing honeytoken **Users** and **Devices**.
+1. Select **Honeytoken**. You'll then see the existing honeytoken **Users** and **Devices**.
 
-    ![Honeytoken entities](../../media/defender-identity/honeytoken-entities.png)
+    ![Honeytoken entities.](../../media/defender-identity/honeytoken-entities.png)
 
 1. Under each category, select **Tag...** to tag that type of entity. For example, under **Users**, select **Tag users.** A pane will open with the groups you can select to tag. To search for a group, enter its name in the search box.
 
-    ![Add users](../../media/defender-identity/add-users.png)
+    ![Add users.](../../media/defender-identity/add-users.png)
 
 1. Select your user, and click **Add selection.**
 
-    ![Add selected user](../../media/defender-identity/add-selected-user.png)
+    ![Add selected user.](../../media/defender-identity/add-selected-user.png)
 
 ## Exchange server tags
 
 Defender for Identity considers Exchange servers as high-value assets and automatically tags them as **Sensitive**. You can also manually tag devices as Exchange servers.
 
-1. Select **Exchange server tag**. You'll then see the existing devices labeled with the **Exchange server** tag.
+1. Select **Exchange server**. You'll then see the existing devices labeled with the **Exchange server** tag.
 
-    ![Exchange servers](../../media/defender-identity/exchange-servers.png)
+    ![Exchange servers.](../../media/defender-identity/exchange-servers.png)
 
 1. To tag a device as an Exchange server, select **Tag devices**.  A pane will open with the devices that you can select to tag. To search for a device, enter its name in the search box.
 
-    ![Add devices](../../media/defender-identity/add-devices.png)
+    ![Add devices.](../../media/defender-identity/add-devices.png)
 
 1. Select your device, and click **Add selection.**
 
-    ![Select device](../../media/defender-identity/select-device.png)
+    ![Select device.](../../media/defender-identity/select-device.png)
 
 ## See also
 

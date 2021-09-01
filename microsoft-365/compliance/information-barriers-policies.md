@@ -88,7 +88,7 @@ In addition to the [required licenses and permissions](information-barriers.md#r
    1. In the **Permissions requested** dialog box, review the information, and then choose **Accept**. The permissions requested by the App is given below.
 
       > [!div class="mx-imgBorder"]
-      > ![image](https://user-images.githubusercontent.com/8932063/107690955-b1772300-6c5f-11eb-9527-4235de860b27.png)
+      > ![image.](https://user-images.githubusercontent.com/8932063/107690955-b1772300-6c5f-11eb-9527-4235de860b27.png)
 
 When all the prerequisites are met, proceed to the next section.
 

@@ -58,7 +58,7 @@ Office 365 Video is being retired on March 1, 2021. If you choose to migrate you
 
 This figure shows the ten phases of migration to the new German datacenters.
 
-:::image type="content" alt-text="The ten phases of migration to the new Germany datacenters" source="../media/ms-cloud-germany-migration-opt-in/migration-organization.png" lightbox="../media/ms-cloud-germany-migration-opt-in/migration-organization.png":::
+:::image type="content" alt-text="The ten phases of migration to the new Germany datacenters." source="../media/ms-cloud-germany-migration-opt-in/migration-organization.png" lightbox="../media/ms-cloud-germany-migration-opt-in/migration-organization.png":::
 
 These phases start when you [opt-in for migration](./ms-cloud-germany-migration-opt-in.md). Most of the migration phases are executed as back-end service operations with minimal customer interaction required and are executed one phase after the other. The start for additional customer-led tasks and overall migration status will be communicated through the Message center of the Microsoft 365 admin center during the migration process. Example of tasks may include customer-managed DNS updates, reconfiguration of hybrid setup for Exchange hybrid customers, or Azure migration.
 
@@ -183,7 +183,7 @@ There are currently 39 services available as part of Office 365 services in the 
 30. Microsoft Forms
 31. Power Automate for Office 365
 32. Power Virtual Agents for Office 365
-33. PowerApps for Office 365
+33. Power Apps for Office 365
 34. Microsoft Bookings
 35. To-Do
 36. Whiteboard

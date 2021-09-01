@@ -15,14 +15,10 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: "The subject rights request solution in Microsoft privacy management helps you find personal data and collaborate on reviewing content and creating reports."
+description: "The subject rights request area in Microsoft privacy management helps you find personal data and collaborate on reviewing content and creating reports."
 ---
 
 # Manage subject rights requests in privacy management (preview)
-
-In this article: learn about how to use the subject rights request solution to **find personal data** in your environment, **collaborate on reviews**, create **reports**, and **automate** key tasks.
-
-## Purpose of subject rights requests
 
 Privacy management provides powerful subject rights requests capabilities to help you handle requests from people seeking to manage their personal data within your organization. These requests are sometimes also referred to as data subject requests (DSRs), data subject access requests (DSARs), or consumer rights requests. Privacy management empowers personnel responsible for fulfilling subject rights requests to easily identify data subjects and find their personal information among your organization’s data in Exchange, SharePoint, OneDrive, and Teams.
 
@@ -144,7 +140,7 @@ Customers with Microsoft 365 subscriptions that include privacy management do no
 
 The following Power Automate templates are included in privacy management:
 
-- **Create record for privacy management case in ServiceNow**: This template is for organizations that want to use their ServiceNow solution to track subject rights request cases. You will be asked to enter your ServiceNow instance details. Once connected to your instance, subject rights requests administrators will be able to create a record for the case in ServiceNow and can customize what the template will populate into selected fields if needed. For more information on the connector, see the [ServiceNow Connector reference page](/connectors/service-now/).
+- **Create record for privacy management case in ServiceNow**: This template is for organizations that want to use their ServiceNow solution to track subject rights request cases. You will be asked to enter your ServiceNow instance details, inclusive of an account to connect to ServiceNow. This account must have the ability to create an incident in ServiceNow and fill in incident details. Once connected to your instance, subject rights requests administrators will be able to create a record for the case in ServiceNow and can customize what the template will populate into selected fields if needed. For more information on the connector, see the [ServiceNow Connector reference page](/connectors/service-now/).
 - **Create a calendar reminder**: This template is for setting due date reminders in your Outlook calendar for subject rights requests. The tool will populate certain details for you from the properties of the request, such as the name of the request and its due date. You can add descriptive details, specify recipients, and adjust other advanced settings.
 
 ### Create a new Power Automate flow from a template

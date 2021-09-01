@@ -68,6 +68,10 @@ To ensure the best level of protection, Microsoft Update allows for rapid releas
 
 Each source has typical scenarios that depend on how your network is configured, in addition to how often they publish updates, as described in the following table:
 
+<br>
+
+****
+
 |Location|Sample scenario|
 |---|---|
 |Windows Server Update Service|You are using Windows Server Update Service to manage updates for your network.|
@@ -75,6 +79,7 @@ Each source has typical scenarios that depend on how your network is configured,
 |File share|You have non-Internet-connected devices (such as VMs). You can use your Internet-connected VM host to download the updates to a network share, from which the VMs can obtain the updates. See the [VDI deployment guide](deployment-vdi-microsoft-defender-antivirus.md) for how file shares can be used in virtual desktop infrastructure (VDI) environments.|
 |Microsoft Endpoint Manager|You are using Microsoft Endpoint Manager to update your endpoints.|
 |Security intelligence updates for Microsoft Defender Antivirus and other Microsoft antimalware (formerly referred to as MMPC)|[Make sure your devices are updated to support SHA-2](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus). Microsoft Defender Antivirus Security intelligence updates are delivered through Windows Update, and starting Monday October 21, 2019 security intelligence updates will be SHA-2 signed exclusively. <br/>Download the latest protection updates because of a recent infection or to help provision a strong, base image for [VDI deployment](deployment-vdi-microsoft-defender-antivirus.md). This option should generally be used only as a final fallback source, and not the primary source. It will only be used if updates cannot be downloaded from Windows Server Update Service or Microsoft Update for [a specified number of days](/windows/threat-protection/microsoft-defender-antivirus/manage-outdated-endpoints-microsoft-defender-antivirus#set-the-number-of-days-before-protection-is-reported-as-out-of-date).|
+|
 
 You can manage the order in which update sources are used with Group Policy, Microsoft Endpoint Configuration Manager, PowerShell cmdlets, and WMI.
 
@@ -91,19 +96,19 @@ The procedures in this article first describe how to set the order, and then how
 
 3. Click **Policies** then **Administrative templates**.
 
-4. Expand the tree to **Windows components** > **Windows Defender** > **Signature updates** and configure the following settings:
+4. Expand the tree to **Windows components** \> **Windows Defender** \> **Signature updates** and configure the following settings:
 
    1. Double-click the **Define the order of sources for downloading security intelligence updates** setting and set the option to **Enabled**.
 
    2. Enter the order of sources, separated by a single pipe, for example: `InternalDefinitionUpdateServer|MicrosoftUpdateServer|MMPC`, as shown in the following screenshot.
 
-      :::image type="content" source="../../media/wdav-order-update-sources.png" alt-text="group policy setting listing the order of sources":::
+      :::image type="content" source="../../media/wdav-order-update-sources.png" alt-text="group policy setting listing the order of sources.":::
 
    3. Select **OK**. This will set the order of protection update sources.
 
    4. Double-click the **Define file shares for downloading security intelligence updates** setting and set the option to **Enabled**.
 
-   5. Specify the file share source. If you have multiple sources, enter each source in the order they should be used, separated by a single pipe. Use [standard UNC notation](/openspecs/windows_protocols/ms-dtyp/62e862f4-2a51-452e-8eeb-dc4ff5ee33cc) for denoting the path, for example: `\\host-name1\share-name\object-name|\\host-name2\share-name\object-name`.  If you do not enter any paths, then this source will be skipped when the VM downloads updates.
+   5. Specify the file share source. If you have multiple sources, enter each source in the order they should be used, separated by a single pipe. Use [standard UNC notation](/openspecs/windows_protocols/ms-dtyp/62e862f4-2a51-452e-8eeb-dc4ff5ee33cc) for denoting the path, for example: `\\host-name1\share-name\object-name|\\host-name2\share-name\object-name`. If you do not enter any paths, then this source will be skipped when the VM downloads updates.
 
    6. Click **OK**. This will set the order of file shares when that source is referenced in the **Define the order of sources...** group policy setting.
 

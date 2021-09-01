@@ -30,10 +30,12 @@ This logic flow is used for an item when either of the following conditions appl
 - There is more than one retention policy applied
 - There is a retention label and one or more retention policies
 
+When an item is subject to an eDiscovery hold, it will always be retained before the decision flows for retention policies and a retention label.
+
 If any of the terms used in this flowchart are unfamiliar to you, see [Learn about retention policies and retention labels](retention.md).
 
 
-   ![Flowchart to determine when an item will be retained or permanently deleted](../media/retention-flowchart.svg)
+   ![Flowchart to determine when an item will be retained or permanently deleted.](../media/retention-flowchart.svg)
 
 > [!NOTE]
 > It's important to distinguish between the longest retention period for the item vs. the longest specified period in a retention policy or label. And similarly, between the shortest expiry date for the item vs. the shortest specified period in a retention policy.
