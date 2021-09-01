@@ -157,7 +157,7 @@ If you want to unhide user-level information when you're generating your reports
 
 2. Select **Org Settings** and choose **Services** . 
   
-3. In the **Reports** pane, select the **Choose how to show user information** and  select **Show identifiable user information in reports**
+3. In the **Reports** pane, select **Choose how to show user information** and  choose **Show identifiable user information in reports**.
   
 
   
