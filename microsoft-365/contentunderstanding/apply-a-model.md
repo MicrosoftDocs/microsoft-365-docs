@@ -33,9 +33,9 @@ After publishing your document understanding model, you can apply it to one or m
 
 To apply your model to to a SharePoint document library:
 
-1. On model home page, on the **Apply model to libraries** tile, select **Publish model**. Or you can select  **+Add library** in the **Libraries with this model** section.
+1. On model home page, on the **Apply model to libraries** tile, select **Apply model**. Or, in the **Where the model is applied** section, select  **+Add library** .
 
-    ![Add model to library.](../media/content-understanding/apply-to-library.png)
+    ![Screenshot of Where the model is applied section with the Add library option highlighted.](../media/content-understanding/apply-to-library.png)
 
 2. You can then select the SharePoint site that contains the document library that you want to apply the model to. If the site does not show in the list, use the search box to find it.
 
