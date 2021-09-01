@@ -33,21 +33,21 @@ Microsoft Defender for Endpoint troubleshooting mode allows you to troubleshoot 
 
 ## What do you need to know before you begin?
 
-- Allows admins, with the appropriate role-based access control (RBAC) permissions, to change configurations on individual endpoints that are normally locked by policy. Having a device in troubleshooting mode can be helpful when diagnosing Microsoft Defender Antivirus performance and compatibility issues.
+- Allows admins, with appropriate permissions, to change configurations on individual endpoints that are normally locked by policy. Having a device in troubleshooting mode can be helpful when diagnosing Microsoft Defender Antivirus performance and compatibility issues.
 
-- Troubleshooting mode has an expiration and will automatically turn off after reaching the expiration time. After expiration, all policy-managed configurations will become read-only again and will revert back to the configuration prior to setting the troubleshooting mode on.
+- Troubleshooting mode has an expiration and will automatically turn off after reaching the expiration time. After expiration, all policy-managed configurations will become read-only again and will revert back to the configuration before setting the troubleshooting mode on.
 
-- Use troubleshooting mode to disable/change the tamper protection setting using mppreference cmdlets to perform: 
+- Use troubleshooting mode to disable/change the tamper protection setting to perform: 
 
     - Microsoft Defender Antivirus functional troubleshooting /application compatibility (false positive application blocks).  
 
-    - **Microsoft Defender Antivirus performance troubleshooting by using the troubleshooting mode and manipulating tamper protection and other antivirus settings.
+    - Microsoft Defender Antivirus performance troubleshooting by using the troubleshooting mode and manipulating tamper protection and other antivirus settings.
 
 ## Use the troubleshooting mode
 
 [Need updated steps. Couldn't figure out the details from the small images.]
 
-1. In Microsoft 365 defender, go to the device you would like turn troubleshooting mode on. Select **Turn on troubleshooting mode**.
+1. In Microsoft 365 Defender, go to the device you would like to turn on troubleshooting mode. Select **Turn on troubleshooting mode**.
 
 [Need updated screenshot]
 
@@ -55,7 +55,7 @@ Microsoft Defender for Endpoint troubleshooting mode allows you to troubleshoot 
 
 [Need updated screenshot]
  
-3. The device page shows the device is in troubleshooting mode.  
+3. The device page shows the device is now in troubleshooting mode.  
 
 [Need updated screenshot]
 
