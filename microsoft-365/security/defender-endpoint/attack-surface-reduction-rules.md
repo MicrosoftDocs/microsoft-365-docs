@@ -61,6 +61,9 @@ The following table lists attack surface reduction rules in alphabetical order. 
 
 ## Public Preview: Supported operating systems
 
+> [!IMPORTANT]
+> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+
 The following table lists attack surface reduction rules in alphabetical order. A check mark indicates the rule is supported by the operating system listed in that column.
 
 > [!Note]
