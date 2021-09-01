@@ -63,7 +63,7 @@ To access and use the policy migration wizard, you must have one of these subscr
 - Microsoft 365 E5 information protection and governance
 - Microsoft 365 A5 information protection and governance
 
-For a detailed list of DLP licensing requirements, see [Microsoft 365 Licensing guidance for security & compliance, data loss prevention](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection)
+For a detailed list of DLP licensing requirements, see [Microsoft 365 Licensing guidance for security & compliance, data loss prevention](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection)
 
 
 ### Permissions
@@ -73,7 +73,7 @@ The account that you use to run the migration wizard must have access to both th
 ## Prepare for migration
 
 1. If you are unfamiliar with DLP, the Compliance center DLP console, or the Exchange Admin center DLP console, you should familiarize yourself before attempting a policy migration.
-    1. [Exchange Online data loss prevention (DLP) policies](https://docs.microsoft.com/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)
+    1. [Exchange Online data loss prevention (DLP) policies](/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)
     1. [Learn about Microsoft 365 Endpoint data loss prevention](endpoint-dlp-learn-about.md#learn-about-microsoft-365-endpoint-data-loss-prevention)
     1. [Create, Test, and Tune a DLP policy](create-test-tune-dlp-policy.md)
 1. Evaluate your Exchange DLP and Compliance center policies by asking these questions:
@@ -146,7 +146,7 @@ Once you are satisfied with how your migrated policies are functioning, you can 
 
 ## Related articles
 
-- [Exchange Online data loss prevention (DLP) policies](https://docs.microsoft.com/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)
+- [Exchange Online data loss prevention (DLP) policies](/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)
 - [Learn about data loss prevention](dlp-learn-about-dlp.md#learn-about-data-loss-prevention)
 - [Get started with Activity explorer](data-classification-activity-explorer.md)
 - [Create, Test, and Tune a DLP policy](create-test-tune-dlp-policy.md)
