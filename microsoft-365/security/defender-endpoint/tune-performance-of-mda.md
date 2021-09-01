@@ -35,9 +35,8 @@ Some options to analyze include:
 
 The high-level process for running Performance analyzer involves the following steps:
 
-1. Creation of a system recording of Microsoft Defender Antivirus scanning events.
-1. Scanning of the system by performance analyzer.
-1. Analysis of the scan results using different reports.
+1. Run performance analyzer to collect a performance recording of Microsoft Defender Antivirus events on the endpoint.
+1. Analyze the scan results using different recording reports.
 
 ## Using performance analyzer
 
@@ -51,7 +50,7 @@ To start recording system events, open Powershell in administrative mode and per
 
 2. If there are processes or services thought to be affecting performance, reproduce the situation by carrying out the relevant tasks.
 3. Press **ENTER** to stop and save recording, or **Ctrl+C** to cancel recording.
-4. Analyze the results using the Performance analyzer’s `Get-MpPerformanceReport`parameter. For example, on executing the command `Get-MpPerformanceReport -Path <recording.etl> -TopFiles 3 -TopScansPerFile 10`, the user is provided with a list of top-ten scans for the top 10 files affecting performance. For additional command-line parameters and options, see [Defender](/powershell/module/defender/).
+4. Analyze the results using the Performance analyzer’s `Get-MpPerformanceReport`parameter. For example, on executing the command `Get-MpPerformanceReport -Path <recording.etl> -TopFiles 3 -TopScansPerFile 10`, the user is provided with a list of top-ten scans for the top 3 files affecting performance. For additional command-line parameters and options, see [Defender](/powershell/module/defender/).
 
 ## What information is present?
 
@@ -79,13 +78,14 @@ For examples that describe the process of "export" and "convert" through sample 
 
 ## Supported versions of Windows
 
-Windows 10 and Windows 11
+Windows 10+ and Windows Server 16+
 
 ## Platform Version
 
-4.2108.X
+4.2108.10+
 
 ## Powershell Version
 
-Powershell Version 5.1 and higher
+Powershell Version 5.1 (not PowerShell 6.x/7.x)
 
+Microsoft-Antimalware-Engine
