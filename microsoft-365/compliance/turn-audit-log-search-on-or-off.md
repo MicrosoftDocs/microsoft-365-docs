@@ -105,3 +105,15 @@ You have to use Exchange Online PowerShell to turn off auditing.
     - Go to the **Audit** page in the Microsoft 365 compliance center.
 
       If auditing is not turned on for your organization, a banner is displayed prompting you start recording user and admin activity.
+
+## Auditing enablement\disablement logging
+
+The enabling and disabling of the auditing functionality is being logged inside a hidden mailbox in Exchange Online. You can run the following Exchange Online PowerShell cmdlet to identify when auditing has been enabled or disabled, by who and from which IP address.
+
+```powershell
+Search-AdminAuditLog -Cmdlets Set-AdminAuditLogConfig -Parameters UnifiedAuditLogIngestionEnabled
+```
+
+If the CmdletParameters shows `Confirm`, it means auditing was enabled. If its not present, it means auditing was disabled.
+
+![Sample logging output on auditing being enabled and disabled](../media/AuditingEnablementLogging.png)
