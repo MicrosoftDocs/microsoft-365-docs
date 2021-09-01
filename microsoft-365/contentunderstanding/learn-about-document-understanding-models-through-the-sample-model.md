@@ -1,8 +1,9 @@
 ---
-title: "Learn about document understanding models through the sample model"
-ms.author: efrene
-author: efrene
+title: Learn about document understanding models through the sample model
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
+ms.reviewer: ssquires
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -11,7 +12,7 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 localization_priority: Priority
-description: "Learn about document understanding models through the sample model"
+description: Learn about document understanding models through the sample model.
 ---
 
 # Learn about document understanding models through a sample model
@@ -25,11 +26,11 @@ To access the sample model, you need to first import the model to your content c
 1. From the content center, select **Models** to see your models list.</br>
 2. On the **Models** page, select **Import sample model**.</br>
 
-    ![Import sample model](../media/content-understanding/import-sample-model.png) </br>
+    ![Import sample model.](../media/content-understanding/import-sample-model.png) </br>
 
 3. When the import completes, the **BenefitsChangeNotice** model home page will open. If you need to open the sample model in the future, you can do this from the models list in the content center. </br>
 
-     ![Sample home page](../media/content-understanding/sample-home-page.png)</br>
+     ![Sample home page.](../media/content-understanding/sample-home-page.png)</br>
 
 You can not only look through analyze the sample model to get a better understanding of how the model is constructed, but as a working model can go further and do things such as:
 

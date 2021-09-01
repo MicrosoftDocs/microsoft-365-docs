@@ -29,12 +29,13 @@ ms.technology: m365d
 
 **Applies to:**
 - Microsoft 365 Defender
+- Microsoft Defender for Endpoint
 
 
 
 [Advanced hunting](advanced-hunting-overview.md) queries can be shared among users in the same organization. You can also find queries shared publicly on GitHub. These queries let you quickly pursue specific threat hunting scenarios without having to write queries from scratch.
 
-![Image of shared queries](../../media/advanced-hunting-shared-queries.png)
+![Image of shared queries.](../../media/advanced-hunting-shared-queries.png)
 
 ## Save, modify, and share a query
 You can save a new or existing query so that it is only accessible to you or shared with other users in your organization. 
@@ -45,7 +46,7 @@ You can save a new or existing query so that it is only accessible to you or sha
     
 3. Enter a name for the query. 
 
-   ![Image of saving a query](../../media/advanced-hunting-save-query.png)
+   ![Image of saving a query.](../../media/advanced-hunting-save-query.png)
 
 4. Select the folder where you'd like to save the query.
     - **Shared queries** — shared to all users your organization
@@ -56,7 +57,7 @@ You can save a new or existing query so that it is only accessible to you or sha
 ## Delete or rename a query
 1. Right-click on a query you want to rename or delete.
 
-    ![Image of delete query](../../media/advanced_hunting_delete_rename.png)
+    ![Image of delete query.](../../media/advanced_hunting_delete_rename.png)
 
 2. Select **Delete** and confirm deletion. Or select **Rename** and provide a new name for the query.
 
@@ -68,6 +69,9 @@ Microsoft security researchers regularly share advanced hunting queries in a [de
 
 >[!tip]
 >Microsoft security researchers also provide advanced hunting queries that you can use to locate activities and indicators associated with emerging threats. These queries are provided as part of the [threat analytics](/windows/security/threat-protection/microsoft-defender-atp/threat-analytics) reports in Microsoft Defender Security Center.
+
+>[!NOTE]
+>Some tables in this article might not be available in Microsoft Defender for Endpoint. [Turn on Microsoft 365 Defender](m365d-enable.md) to hunt for threats using more data sources. You can move your advanced hunting workflows from Microsoft Defender for Endpoint to Microsoft 365 Defender by following the steps in [Migrate advanced hunting queries from Microsoft Defender for Endpoint](advanced-hunting-migrate-from-mde.md).
 
 ## Related topics
 - [Advanced hunting overview](advanced-hunting-overview.md)

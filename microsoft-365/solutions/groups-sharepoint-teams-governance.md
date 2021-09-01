@@ -14,6 +14,7 @@ ms.collection:
 ms.custom: 
 - M365solutions
 f1.keywords: NOCSH
+recommendations: false
 description: "Learn about settings interactions between Microsoft 365 Groups, Teams and SharePoint"
 ---
 
@@ -21,7 +22,7 @@ description: "Learn about settings interactions between Microsoft 365 Groups, Te
 
 Some settings for Microsoft 365 Groups, Microsoft Teams, and SharePoint in Microsoft 365, particularly related to sharing and group/team and SharePoint site creation, overlap with each other. This article provides descriptions of these interactions and best practices for how to work with these settings.
 
-![Venn diagram of SharePoint, Teams, and groups features](../media/teams-groups-sharepoint-venn.png)
+![Venn diagram of SharePoint, Teams, and groups features.](../media/teams-groups-sharepoint-venn.png)
 
 ## The effects of SharePoint settings on groups and teams
 

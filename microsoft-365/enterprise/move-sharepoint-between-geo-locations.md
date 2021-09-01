@@ -23,7 +23,7 @@ With SharePoint site geo move, you can move SharePoint sites to other geo locati
 
 The following types of site can be moved between geo locations:
 
-- Microsoft 365 Group-connected sites
+- Microsoft 365 Group-connected sites, including those associated with Microsoft Teams
 - Modern sites without a Microsoft 365 Group association
 - Classic SharePoint sites
 - Communication sites
@@ -75,7 +75,7 @@ For example, if the site URL is <https://contosohealthcare.sharepoint.com/sites/
 Connect-SPOService -Url https://contosohealthcare-admin.sharepoint.com
 ```
 
-![SharePoint Online Management Shell window showing the Connect-SPOService command](../media/move-onedrive-between-geo-locations-image1.png)
+![SharePoint Online Management Shell window showing the Connect-SPOService command.](../media/move-onedrive-between-geo-locations-image1.png)
 
 ### Validating the environment
 
@@ -113,7 +113,7 @@ To start the site move, run:
 Start-SPOSiteContentMove -SourceSiteUrl <siteURL> -DestinationDataLocation <DestinationDataLocation> -DestinationUrl <DestinationSiteURL>
 ```
 
-![Screenshot of PowerShell window showing Start-SPOSiteContentMove cmdlet](../media/multi-geo-sharepoint-site-move-powershell.png)
+![Screenshot of PowerShell window showing Start-SPOSiteContentMove cmdlet.](../media/multi-geo-sharepoint-site-move-powershell.png)
 
 ### Start a SharePoint site geo move for a Microsoft 365 Group-connected site
 
@@ -172,11 +172,11 @@ While the move is in progress the site is set to read-only. Once the move is com
 
 Users with permissions to site will continue to have access to the site during the move and after it's complete.
 
-### Sync Client
+### Sync app
 
-The sync client will automatically detect and seamlessly transfer syncing to the new site location once the site move is complete. The user does not need to sign in again or take any other action. (Version 17.3.6943.0625 or later of the sync client required.)
+The sync app will automatically detect and seamlessly transfer syncing to the new site location once the site move is complete. The user does not need to sign in again or take any other action. (Version 17.3.6943.0625 or later of the sync app required.)
 
-If a user updates a file while the move is in progress, the sync client will notify them that file uploads are pending while the move is underway.
+If a user updates a file while the move is in progress, the sync app will notify them that file uploads are pending while the move is underway.
 
 ### Sharing links
 
@@ -214,9 +214,9 @@ If you are moving a site with apps, you must re-instantiate the app in the site'
 
 In most cases Flows will continue to work after a SharePoint site geo move. We recommend that you test them once the move has completed.
 
-### PowerApps
+### Power Apps
 
-PowerApps need to be recreated in the destination location.
+Power Apps need to be recreated in the destination location.
 
 ### Data movement between geo locations
 

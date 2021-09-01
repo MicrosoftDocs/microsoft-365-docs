@@ -15,6 +15,7 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
+- admindeeplinkMAC
 search.appverid:
 - MET150
 description: "Use built-in Basic Mobility and Security to remove information from enrolled devices."
@@ -40,11 +41,11 @@ Mobile devices can store sensitive organizational information and provide access
 
 ## Wipe a mobile device
 
-1. Go to the [Microsoft 365 admin center](https://support.microsoft.com/office/758befc4-0888-4009-9f14-0d147402fd23).
+1. Go to the [Microsoft 365 admin center](../../admin/admin-overview/about-the-admin-center.md).
 
 2. Type Mobile Device Management into the search field, and select **Mobile Device Management** from the list of results.
 
-    :::image type="content" source="../../media/basic-mobility-security/bms-6-mobile-device-management-option.png" alt-text="Basic Mobility and Secruity mobile device management option":::
+    :::image type="content" source="../../media/basic-mobility-security/bms-6-mobile-device-management-option.png" alt-text="Basic Mobility and Secruity mobile device management option.":::
 
 3. Select **Manage devices**.
 
@@ -81,9 +82,6 @@ The wipe is sent immediately to the mobile device and the device is marked as no
 |Microsoft 365 app data is wiped if the device is protected by Intune App Protection policies. The apps aren't removed. For devices not protected by Mobile Application Management (MAM) policies, Outlook and OneDrive won't remove cached data.<br/>**Note** For applying Intune App protection policies you must have an Intune license.|Yes|Yes|
 |Policy settings applied by Basic Mobility and Security to devices are no longer enforced; users can change the settings.|Yes|Yes|
 |Email profiles created by Basic Mobility and Security are removed and cached email on the device is deleted.|Yes|N/A|
->[!NOTE]
->Company Portal app is available at the App Store for iOS and the Play Store for Android devices.
 
-## Related topics
-
-[Set up Basic Mobility and Security](set-up.md)
+> [!NOTE]
+> Company Portal app is available at the App Store for iOS and the Play Store for Android devices.

@@ -33,15 +33,15 @@ The booking calendar is where all relevant information about that booking calend
 
 1. In the Admin center, select **Users**.
 
-   ![Image of Users UI in Microsoft 365 admin center](../media/bookings-admin-center-users.png)
+   ![Image of Users UI in Microsoft 365 admin center.](../media/bookings-admin-center-users.png)
 
 1. On the **Active Users** page, choose the names of the users that you want to delete, and then select **Delete user**.
 
-   ![Image of Delete User UI in Microsoft 365 admin center](../media/bookings-delete-user.png)
+   ![Image of Delete User UI in Microsoft 365 admin center.](../media/bookings-delete-user.png)
 
 ## Delete a booking calendar using Exchange Online PowerShell
 
-See [Connect to Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps) for prerequisites and guidance for connecting to Exchange Online PowerShell.
+See [Connect to Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell-v2) for prerequisites and guidance for connecting to Exchange Online PowerShell.
 
 To perform these steps, you must be using an active Microsoft PowerShell command window that you ran by choosing the “Run as administrator” option.
 
@@ -52,7 +52,7 @@ To perform these steps, you must be using an active Microsoft PowerShell command
    ```
 
    > [!NOTE]
-   > If you've already [installed the EXO V2 module](/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps#install-and-maintain-the-exo-v2-module), the previous command will work as written.
+   > If you've already [installed the EXO V2 module](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module), the previous command will work as written.
    
 2. The command that you need to run uses the following syntax:
 

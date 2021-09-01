@@ -156,7 +156,7 @@
 > - [Nepal](../support/nepal.md)
 > - [Netherlands](../support/netherlands.md)
 > - [New Caledonia](../support/new-caledonia.md)
-> - [New Zealand ](../support/new-zealand.md)
+> - [New Zealand](../support/new-zealand.md)
 > - [Nicaragua](../support/nicaragua.md)
 > - [Niue](../support/niue.md)
 > - [Niger](../support/niger.md)

@@ -29,6 +29,7 @@ ms.technology: m365d
 
 **Applies to:**
 - Microsoft 365 Defender
+- Microsoft Defender for Endpoint
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
@@ -65,7 +66,7 @@ AlertInfo
 ```
 When rendering the results, a column chart displays each severity value as a separate column:
 
-![Image of advanced hunting query results displayed as a column chart](../../media/advanced-hunting-column-chart.jpg)
+![Image of advanced hunting query results displayed as a column chart.](../../media/advanced-hunting-column-chart.jpg)
 *Query results for alerts by severity displayed as a column chart*
 
 #### Alert severity by operating system
@@ -81,7 +82,7 @@ AlertInfo
 ```
 These results are best visualized using a stacked column chart:
 
-![Image of advanced hunting query results displayed as a stacked chart](../../media/advanced-hunting-stacked-chart.jpg)
+![Image of advanced hunting query results displayed as a stacked chart.](../../media/advanced-hunting-stacked-chart.jpg)
 *Query results for alerts by OS and severity displayed as a stacked chart*
 
 #### Phishing emails across top ten sender domains
@@ -95,7 +96,7 @@ EmailEvents
 ```
 Use the pie chart view to effectively show distribution across the top domains:
 
-![Image of advanced hunting query results displayed as a pie chart](../../media/advanced-hunting-pie-chart.jpg)
+![Image of advanced hunting query results displayed as a pie chart.](../../media/advanced-hunting-pie-chart.jpg)
 *Pie chart showing distribution of phishing emails across top sender domains*
 
 #### File activities over time
@@ -109,7 +110,7 @@ AppFileEvents
 ```
 The line chart below clearly highlights time periods with more activity involving `invoice.doc`: 
 
-![Image of advanced hunting query results displayed as a line chart](../../media/advanced-hunting-line-chart.jpg)
+![Image of advanced hunting query results displayed as a line chart.](../../media/advanced-hunting-line-chart.jpg)
 *Line chart showing the number of events involving a file over time*
 
 
@@ -126,7 +127,7 @@ To quickly inspect a record in your query results, select the corresponding row 
 - **Process tree** — generated for records with process information and enriched using available contextual information; in general, queries that return more columns can result in richer process trees.
 - **All details** — all the values from the columns in the record  
 
-![Image of selected record with panel for inspecting the record](../../media/mtp-ah/inspect-record.png)
+![Image of selected record with panel for inspecting the record.](../../media/mtp-ah/inspect-record.png)
 
 To view more information about a specific entity in your query results, such as a machine, file, user, IP address, or URL, select the entity identifier to open a detailed profile page for that entity.
 
@@ -137,16 +138,19 @@ Right-click a value in the result set to quickly enhance your query. You can use
 - Exclude the selected value from the query (`!=`)
 - Get more advanced operators for adding the value to your query, such as `contains`, `starts with` and `ends with` 
 
-![Image of advanced hunting result set](../../media/advanced-hunting-results-filter.png)
+![Image of advanced hunting result set.](../../media/advanced-hunting-results-filter.png)
 
 ## Filter the query results
 The filters displayed to the right provide a summary of the result set. Each column has its own section that lists the distinct values found for that column and the number of instances.
 
 Refine your query by selecting the `+` or `-` buttons on the values that you want to include or exclude and then selecting **Run query**.
 
-![Image of advanced hunting filter](../../media/advanced-hunting-filter.png)
+![Image of advanced hunting filter.](../../media/advanced-hunting-filter.png)
 
 Once you apply the filter to modify the query and then run the query, the results are updated accordingly.
+
+>[!NOTE]
+>Some tables in this article might not be available in Microsoft Defender for Endpoint. [Turn on Microsoft 365 Defender](m365d-enable.md) to hunt for threats using more data sources. You can move your advanced hunting workflows from Microsoft Defender for Endpoint to Microsoft 365 Defender by following the steps in [Migrate advanced hunting queries from Microsoft Defender for Endpoint](advanced-hunting-migrate-from-mde.md).
 
 ## Related topics
 - [Advanced hunting overview](advanced-hunting-overview.md)

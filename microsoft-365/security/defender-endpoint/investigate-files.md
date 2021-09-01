@@ -13,7 +13,7 @@ author: mjcaparas
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
   - m365-security-compliance
   - m365initiative-defender-endpoint
 ms.topic: article
@@ -30,7 +30,7 @@ ms.technology: mde
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
->Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigatefiles-abovefoldlink)
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigatefiles-abovefoldlink)
 
 Investigate the details of a file associated with a specific alert, behavior, or event to help determine if the file exhibits malicious activities, identify the attack motivation, and understand the potential scope of the breach.
 
@@ -65,29 +65,29 @@ For more information on these actions, see [Take response action on a file](resp
 
 The file details, incident, malware detection, and file prevalence cards display various attributes about the file.
 
-You'll see details such as the file’s MD5, the Virus Total detection ratio, and Microsoft Defender AV detection if available, and the file’s prevalence.
+You'll see details such as the file's MD5, the Virus Total detection ratio, and Microsoft Defender AV detection if available, and the file's prevalence.
 
-The file prevalence card shows where the file was seen in devices in the organization and worldwide. 
+The file prevalence card shows where the file was seen in devices in the organization and worldwide.
 
-> [!NOTE] 
+> [!NOTE]
 > Different users may see dissimilar values in the *devices in organization* section of the file prevalence card. This is because the card displays information based on the RBAC scope that a user has. Meaning, if a user has been granted visibility on a specific set of devices, they will only see the file organizational prevalence on those devices.
 
-![Image of file information](images/atp-file-information.png)
+![Image of file information.](images/atp-file-information.png)
 
 ## Alerts
 
 The **Alerts** tab provides a list of alerts that are associated with the file. This list covers much of the same information as the Alerts queue, except for the device group, if any, the affected device belongs to. You can choose what kind of information is shown by selecting **Customize columns** from the toolbar above the column headers.
 
-![Image of alerts related to the file section](images/atp-alerts-related-to-file.png)
+![Image of alerts related to the file section.](images/atp-alerts-related-to-file.png)
 
 ## Observed in organization
 
 The **Observed in organization** tab allows you to specify a date range to see which devices have been observed with the file.
 
->[!NOTE]
->This tab will show a maximum number of 100 devices. To see _all_ devices with the file, export the tab to a CSV file, by selecting **Export** from the action menu above the tab's column headers.
+> [!NOTE]
+> This tab will show a maximum number of 100 devices. To see _all_ devices with the file, export the tab to a CSV file, by selecting **Export** from the action menu above the tab's column headers.
 
-![Image of most recent observed device with the file](images/atp-observed-machines.png)
+![Image of most recent observed device with the file.](images/atp-observed-machines.png)
 
 Use the slider or the range selector to quickly specify a time period that you want to check for events involving the file. You can specify a time window as small as a single day. This will allow you to see only files that communicated with that IP Address at that time, drastically reducing unnecessary scrolling and searching.
 
@@ -95,13 +95,13 @@ Use the slider or the range selector to quickly specify a time period that you w
 
 The **Deep analysis** tab allows you to [submit the file for deep analysis](respond-file-alerts.md#deep-analysis), to uncover more details about the file's behavior, as well as the effect it is having within your organizations. After you submit the file, the deep analysis report will appear in this tab once results are available. If deep analysis did not find anything, the report will be empty and the results space will remain blank.
 
-![Image of deep analysis tab](images/submit-file.png)
+![Image of deep analysis tab.](images/submit-file.png)
 
 ## File names
 
 The **File names** tab lists all names the file has been observed to use, within your organizations.
 
-![Image of file names tab](images/atp-file-names.png)
+![Image of file names tab.](images/atp-file-names.png)
 
 ## Related topics
 

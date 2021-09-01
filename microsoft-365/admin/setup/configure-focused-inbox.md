@@ -13,13 +13,16 @@ ms.collection:
 - M365-subscription-management 
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom: 
+- AdminSurgePortfolio
+- AdminTemplateSet
+- admindeeplinkMAC
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 613a845c-4b71-41de-b331-acdcf5b6625d
-description: "Learn to configure Focused Inbox for all or specific users of your organization. "
+description: "If you're responsible for configuring email settings for everyone in a business this article explains how to configure Focused Inbox for users."
 ---
 
 # Configure Focused Inbox for everyone in your organization
@@ -114,13 +117,13 @@ This example turns Focused Inbox **Off** for Tim Matthews in the Contoso organiz
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>.
 
-2. Navigate to **mail flow** \> **Rules**. Select ![EAC Add icon](../../media/795e5bdd-48bb-433f-8e07-3c7a19f8eca2.gif) and then select **Create a new rule...**. 
+2. Navigate to **mail flow** \> **Rules**. Select ![EAC Add icon.](../../media/795e5bdd-48bb-433f-8e07-3c7a19f8eca2.gif) and then select **Create a new rule...**. 
 
 3. After you're done creating the new rule, select **Save** to start the rule.
 
     The following image shows an example where all messages From "Payroll Department" are to be delivered to the Focused Inbox.
 
-    ![focusedinbox payroll](../../media/focusedinbox-transport-rule.PNG)
+    ![focusedinbox payroll.](../../media/focusedinbox-transport-rule.PNG)
 
     > [!NOTE]
     > The message header value text in this example is, **X-MS-Exchange-Organization-BypassFocusedInbox**.
@@ -204,3 +207,8 @@ There are two cmdlets for controlling Focused Inbox. When you run Get-FocusedInb
 
 No, and this is by design. Focused Inbox enablement is a client-side setting, so all the cmdlet can do is tell you if the user's mailbox is eligible for the client experience. It is possible for it to be simultaneously enabled in some clients and disabled in others, for example, enabled in Outlook app and Outlook Mobile but disabled in Outlook on the web.
 
+## Related content
+
+[Configure Clutter for your organization](../email/configure-clutter.md) (article)\
+[Configure shared mailbox settings](../email/configure-a-shared-mailbox.md) (article)\
+[Create signatures and disclaimers](create-signatures-and-disclaimers.md) (video)

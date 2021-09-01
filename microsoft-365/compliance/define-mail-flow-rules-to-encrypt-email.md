@@ -43,7 +43,7 @@ You can define mail flow rules for triggering message encryption with the new OM
 
 3. In the Microsoft 365 admin center, choose **Admin centers** \> **Exchange**.
 
-4. In the EAC, go to **Mail flow** \> **Rules** and select **New** ![New icon](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **Create a new rule**. For more information about using the EAC, see [Exchange admin center in Exchange Online](/exchange/exchange-admin-center).
+4. In the EAC, go to **Mail flow** \> **Rules** and select **New** ![New icon.](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **Create a new rule**. For more information about using the EAC, see [Exchange admin center in Exchange Online](/exchange/exchange-admin-center).
 
 5. In **Name**, type a name for the rule, such as Encrypt mail for DrToniRamos@hotmail.com.
 
@@ -77,7 +77,7 @@ You can define mail flow rules for triggering message encryption with the new OM
 
 4. In the EAC, go to **Mail flow** \> **Rules**.
 
-5. In the list of mail flow rules, select the rule you want to modify to use the new OME capabilities and then choose **Edit** ![Edit icon](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
+5. In the list of mail flow rules, select the rule you want to modify to use the new OME capabilities and then choose **Edit** ![Edit icon.](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
 
 6. To enable encryption using the new OME capabilities, from **Do the following**, choose **Modify the message security** and then choose **Apply Office 365 Message Encryption and rights protection**. Select an RMS template from the list, choose **Save** and then choose **OK**.
 
@@ -95,7 +95,7 @@ You can define mail flow rules for triggering remove message encryption with the
 
 ### Use the EAC to create a rule to remove encryption from email messages with the new OME capabilities
 
-You can remove encryption that is accessible by your organization. This means any mail with encryption that is applied by the organization or any mail that is protected with encrypt-only restrictions.
+You can remove encryption that is applied by your organization.
 
 1. In a web browser, using a work or school account that has been granted global administrator permissions, [sign in to Office 365](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426#ID0EAABAAA=Web_browser).
 
@@ -103,11 +103,11 @@ You can remove encryption that is accessible by your organization. This means an
 
 3. In the Microsoft 365 admin center, choose **Admin centers** \> **Exchange**.
 
-4. In the EAC, go to **Mail flow** \> **Rules** and select **New** ![New icon](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **Create a new rule**. For more information about using the EAC, see [Exchange admin center in Exchange Online](/exchange/exchange-admin-center).
+4. In the EAC, go to **Mail flow** \> **Rules** and select **New** ![New icon.](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **Create a new rule**. For more information about using the EAC, see [Exchange admin center in Exchange Online](/exchange/exchange-admin-center).
 
 5. In **Name**, type a name for the rule, such as Remove encryption from outgoing mail.
 
-6. In **Apply this rule if**, select the conditions where encryption should be removed from messages. Add **The sender is located** \> **Inside the organization** _or_ **The recipient is located** \> **Inside the organization**.
+6. In **Apply this rule if**, select the conditions where encryption should be removed from messages. Add **The sender is located** \> **Inside the organization** for sending mail _or_ **The recipient is located** \> **Inside the organization** for receiving mail.
 
 7. In **Do the following**, select **Modify the message security** \> **Remove Office 365 Message Encryption and rights protection**.
 
@@ -126,5 +126,3 @@ If you haven't yet moved your organization to the new OME capabilities, Microsof
 [Add branding to encrypted messages](add-your-organization-brand-to-encrypted-messages.md)
 
 [Mail flow rules (transport rules) in Exchange Online](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)
-
-[Mail flow rules (transport rules) in Exchange Online Protection](../security/office-365-security/mail-flow-rules-transport-rules-0.md)

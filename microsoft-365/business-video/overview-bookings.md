@@ -19,10 +19,12 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Learn about Microsoft Bookings."
+description: "Learn about Microsoft Bookings, an online and mobile app for small businesss that provides appointment booking for your customers."
 ---
 
 # Overview of Microsoft Bookings
+
+## Watch: Overview of Microsoft Bookings
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE26B1q?autoplay=false]
 

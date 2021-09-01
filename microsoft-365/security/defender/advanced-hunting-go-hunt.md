@@ -29,23 +29,24 @@ ms.technology: m365d
 
 **Applies to:**
 - Microsoft 365 Defender
+- Microsoft Defender for Endpoint
 
 With the *go hunt* action, you can quickly investigate events and various entity types using powerful query-based [advanced hunting](advanced-hunting-overview.md) capabilities. This action automatically runs an advanced hunting query to find relevant information about the selected event or entity.
 
 The *go hunt* action is available in various sections of the security center whenever event or entity details are displayed. For example, you can use *go hunt* from the following sections:
 
-- In the [incident page](investigate-incidents.md#summary), you can review details about users, devices, and many other entities associated with an incident. As you select an entity, you get additional information as well as various actions you could take on that entitity. In the example below, a mailbox is selected, showing details about the mailbox as well the option to hunt for more information about the mailbox.
+- In the [incident page](investigate-incidents.md#summary), you can review details about users, devices, and many other entities associated with an incident. As you select an entity, you get additional information as well as various actions you could take on that entity. In the example below, a mailbox is selected, showing details about the mailbox as well the option to hunt for more information about the mailbox.
 
-    ![Image showing mailbox details with the go hunt option](../../media/mtp-ah/go-hunt-email.png)
+    ![Image showing mailbox details with the go hunt option.](../../media/mtp-ah/go-hunt-email.png)
 
 - In the incident page, you can also access a list of entities under the evidence tab. Selecting one of those entities provides an option to quickly hunt for information about that entity.
 
-    ![Image showing selected file with the go hunt option in the Evidence tab](../../media/mtp-ah/go-hunt-evidence-file.png)
+    ![Image showing selected file with the go hunt option in the Evidence tab.](../../media/mtp-ah/go-hunt-evidence-file.png)
 
 
 - When viewing the timeline for a device, you can select an event in the timeline to view additional information about that event. Once an event is selected, you get the option to hunt for other relevant events in advanced hunting.
 
-    ![Image showing event details with the go hunt option](../../media/mtp-ah/go-hunt-event.png)
+    ![Image showing event details with the go hunt option.](../../media/mtp-ah/go-hunt-event.png)
 
 Selecting **Go hunt** or **Hunt for related events** passes different queries, depending on whether you've selected an entity or an event.
 
@@ -78,7 +79,7 @@ You can use *go hunt* after selecting any of these entity types:
 - URLs
 
 ## Query for event information
-When using *go hunt* to query for information about a timeline event, the query checks all relevant schema tables for other events around the time of the selected event. For example, the following query lists events in various schema tables that occured around the same time period on the same device:
+When using *go hunt* to query for information about a timeline event, the query checks all relevant schema tables for other events around the time of the selected event. For example, the following query lists events in various schema tables that occurred around the same time period on the same device:
 
 ```kusto
 // List relevant events 30 minutes before and after selected LogonAttempted event
@@ -101,6 +102,9 @@ Timestamp between ((selectedTimestamp - 1h) .. (selectedTimestamp + 1h))
 In addition to modifying the query to get more relevant results, you can also:
 - [View the results as charts](advanced-hunting-query-results.md#view-query-results-as-a-table-or-chart)
 - [Create a custom detection rule](custom-detection-rules.md)
+
+>[!NOTE]
+>Some tables in this article might not be available in Microsoft Defender for Endpoint. [Turn on Microsoft 365 Defender](m365d-enable.md) to hunt for threats using more data sources. You can move your advanced hunting workflows from Microsoft Defender for Endpoint to Microsoft 365 Defender by following the steps in [Migrate advanced hunting queries from Microsoft Defender for Endpoint](advanced-hunting-migrate-from-mde.md).
 
 ## Related topics
 - [Advanced hunting overview](advanced-hunting-overview.md)

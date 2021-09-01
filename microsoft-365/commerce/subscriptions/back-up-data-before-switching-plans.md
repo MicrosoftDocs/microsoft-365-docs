@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,16 +13,16 @@ localization_priority: Normal
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
-- commerce
-- Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom: 
+- AdminSurgePortfolio
+- commerce_subscriptions
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 - BEA160
-ms.assetid: a1da52c9-2167-4973-9e6d-492314a79b87
 description: "Backup Outlook, OneDrive, Yammer, and SharePoint content before changing Microsoft 365 plans."
+ms.date: 03/17/2021
 ---
 
 # Back up data before switching Microsoft 365 for business plans

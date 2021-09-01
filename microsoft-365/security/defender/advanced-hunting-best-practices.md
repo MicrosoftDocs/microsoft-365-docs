@@ -8,14 +8,14 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-f1.keywords: 
+f1.keywords:
   - NOCSH
 ms.author: maccruz
 author: schmurky
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
   - M365-security-compliance
   - m365initiative-m365-defender
 ms.topic: article
@@ -45,7 +45,7 @@ Customers who run multiple queries regularly should track consumption and apply 
     ```kusto
     DeviceEvents
     | where Timestamp > ago(1d)
-    | where ActionType == "UsbDriveMount" 
+    | where ActionType == "UsbDriveMount"
     | where DeviceName == "user-desktop.domain.com"
     | extend DriveLetter = extractjson("$.DriveLetter", AdditionalFields)
      ```
@@ -61,12 +61,12 @@ Customers who run multiple queries regularly should track consumption and apply 
 ## Optimize the `join` operator
 The [join operator](/azure/data-explorer/kusto/query/joinoperator) merges rows from two tables by matching values in specified columns. Apply these tips to optimize queries that use this operator.
 
-- **Smaller table to your left**—The `join` operator matches records in the table on the left side of your join statement to records on the right. By having the smaller table on the left, fewer records will need to be matched, thus speeding up the query. 
+- **Smaller table to your left**—The `join` operator matches records in the table on the left side of your join statement to records on the right. By having the smaller table on the left, fewer records will need to be matched, thus speeding up the query.
 
     In the table below, we reduce the left table `DeviceLogonEvents` to cover only three specific devices before joining it with `IdentityLogonEvents` by account SIDs.
- 
+
     ```kusto
-    DeviceLogonEvents 
+    DeviceLogonEvents
     | where DeviceName in ("device-1.domain.com", "device-2.domain.com", "device-3.domain.com")
     | where ActionType == "LogonFailed"
     | join
@@ -84,19 +84,19 @@ The [join operator](/azure/data-explorer/kusto/query/joinoperator) merges rows f
     EmailAttachmentInfo
     | where Timestamp > ago(1h)
     | where Subject == "Document Attachment" and FileName == "Document.pdf"
-    | join (DeviceFileEvents | where Timestamp > ago(1h)) on SHA256 
+    | join (DeviceFileEvents | where Timestamp > ago(1h)) on SHA256
     ```
 
     To address this limitation, we apply the [inner-join](/azure/data-explorer/kusto/query/joinoperator?pivots=azuredataexplorer#inner-join-flavor) flavor by specifying `kind=inner` to show all rows in the left table with matching values in the right:
-    
+
     ```kusto
     EmailAttachmentInfo
     | where Timestamp > ago(1h)
     | where Subject == "Document Attachment" and FileName == "Document.pdf"
-    | join kind=inner (DeviceFileEvents | where Timestamp > ago(1h)) on SHA256 
+    | join kind=inner (DeviceFileEvents | where Timestamp > ago(1h)) on SHA256
     ```
 - **Join records from a time window**—When investigating security events, analysts look for related events that occur around the same time period. Applying the same approach when using `join` also benefits performance by reducing the number of records to check.
-    
+
     The query below checks for logon events within 30 minutes of receiving a malicious file:
 
     ```kusto
@@ -105,10 +105,10 @@ The [join operator](/azure/data-explorer/kusto/query/joinoperator) merges rows f
     | where ThreatTypes has "Malware"
     | project EmailReceivedTime = Timestamp, Subject, SenderFromAddress, AccountName = tostring(split(RecipientEmailAddress, "@")[0])
     | join (
-    DeviceLogonEvents 
+    DeviceLogonEvents
     | where Timestamp > ago(7d)
     | project LogonTime = Timestamp, AccountName, DeviceName
-    ) on AccountName 
+    ) on AccountName
     | where (LogonTime - EmailReceivedTime) between (0min .. 30min)
     ```
 - **Apply time filters on both sides**—Even if you're not investigating a specific time window, applying time filters on both the left and right tables can reduce the number of records to check and improve `join` performance. The query below applies `Timestamp > ago(1h)` to both tables so that it joins only records from the past hour:
@@ -117,8 +117,8 @@ The [join operator](/azure/data-explorer/kusto/query/joinoperator) merges rows f
     EmailAttachmentInfo
     | where Timestamp > ago(1h)
     | where Subject == "Document Attachment" and FileName == "Document.pdf"
-    | join kind=inner (DeviceFileEvents | where Timestamp > ago(1h)) on SHA256 
-    ```  
+    | join kind=inner (DeviceFileEvents | where Timestamp > ago(1h)) on SHA256
+    ```
 
 - **Use hints for performance**—Use hints with the `join` operator to instruct the backend to distribute load when running resource-intensive operations. [Learn more about join hints](/azure/data-explorer/kusto/query/joinoperator#join-hints)
 
@@ -127,19 +127,19 @@ The [join operator](/azure/data-explorer/kusto/query/joinoperator) merges rows f
     ```kusto
     IdentityInfo
     | where JobTitle == "CONSULTANT"
-    | join hint.shufflekey = AccountObjectId 
+    | join hint.shufflekey = AccountObjectId
     (IdentityDirectoryEvents
         | where Application == "Active Directory"
         | where ActionType == "Private data retrieval")
-    on AccountObjectId 
+    on AccountObjectId
     ```
-    
+
     The **[broadcast hint](/azure/data-explorer/kusto/query/broadcastjoin)** helps when the left table is small (up to 100,000 records) and the right table is extremely large. For example, the query below is trying to join a few emails that have specific subjects with _all_ messages containing links in the `EmailUrlInfo` table:
 
     ```kusto
-    EmailEvents 
+    EmailEvents
     | where Subject in ("Warning: Update your credentials now", "Action required: Update your credentials now")
-    | join hint.strategy = broadcast EmailUrlInfo on NetworkMessageId 
+    | join hint.strategy = broadcast EmailUrlInfo on NetworkMessageId
     ```
 
 ## Optimize the `summarize` operator
@@ -148,25 +148,25 @@ The [summarize operator](/azure/data-explorer/kusto/query/summarizeoperator) agg
 - **Find distinct values**—In general, use `summarize` to find distinct values that can be repetitive. It can be unnecessary to use it to aggregate columns that don't have repetitive values.
 
     While a single email can be part of multiple events, the example below is _not_ an efficient use of `summarize` because a network message ID for an individual email always comes with a unique sender address.
- 
+
     ```kusto
-    EmailEvents  
+    EmailEvents
     | where Timestamp > ago(1h)
-    | summarize by NetworkMessageId, SenderFromAddress   
+    | summarize by NetworkMessageId, SenderFromAddress
     ```
     The `summarize` operator can be easily replaced with `project`, yielding potentially the same results while consuming fewer resources:
 
     ```kusto
-    EmailEvents  
+    EmailEvents
     | where Timestamp > ago(1h)
-    | project NetworkMessageId, SenderFromAddress   
+    | project NetworkMessageId, SenderFromAddress
     ```
     The following example is a more efficient use of `summarize` because there can be multiple distinct instances of a sender address sending email to the same recipient address. Such combinations are less distinct and are likely to have duplicates.
 
     ```kusto
-    EmailEvents  
+    EmailEvents
     | where Timestamp > ago(1h)
-    | summarize by SenderFromAddress, RecipientEmailAddress   
+    | summarize by SenderFromAddress, RecipientEmailAddress
     ```
 
 - **Shuffle the query**—While `summarize` is best used in columns with repetitive values, the same columns can also have _high cardinality_ or large numbers of unique values. Like the `join` operator, you can also apply the [shuffle hint](/azure/data-explorer/kusto/query/shufflequery) with `summarize` to distribute processing load and potentially improve performance when operating on columns with high cardinality.
@@ -174,7 +174,7 @@ The [summarize operator](/azure/data-explorer/kusto/query/summarizeoperator) agg
     The query below uses `summarize` to count distinct recipient email address, which can run in the hundreds of thousands in large organizations. To improve performance, it incorporates `hint.shufflekey`:
 
     ```kusto
-    EmailEvents  
+    EmailEvents
     | where Timestamp > ago(1h)
     | summarize hint.shufflekey = RecipientEmailAddress count() by Subject, RecipientEmailAddress
     ```
@@ -205,7 +205,7 @@ There are numerous ways to construct a command line to accomplish a task. For ex
 To create more durable queries around command lines, apply the following practices:
 
 - Identify the known processes (such as *net.exe* or *psexec.exe*) by matching on the file name fields, instead of filtering on the command-line itself.
-- Parse command-line sections using the [parse_command_line() function](/azure/data-explorer/kusto/query/parse-command-line) 
+- Parse command-line sections using the [parse_command_line() function](/azure/data-explorer/kusto/query/parse-command-line)
 - When querying for command-line arguments, don't look for an exact match on multiple unrelated arguments in a certain order. Instead, use regular expressions or use multiple separate contains operators.
 - Use case insensitive matches. For example, use `=~`, `in~`, and `contains` instead of `==`, `in`, and `contains_cs`.
 - To mitigate command-line obfuscation techniques, consider removing quotes, replacing commas with spaces, and replacing multiple consecutive spaces with a single space. There are more complex obfuscation techniques that require other approaches, but these tweaks can help address common ones.
@@ -220,44 +220,47 @@ DeviceProcessEvents
 
 // Better query - filters on file name, does case-insensitive matches
 DeviceProcessEvents
-| where Timestamp > ago(7d) and FileName in~ ("net.exe", "net1.exe") and ProcessCommandLine contains "stop" and ProcessCommandLine contains "MpsSvc" 
+| where Timestamp > ago(7d) and FileName in~ ("net.exe", "net1.exe") and ProcessCommandLine contains "stop" and ProcessCommandLine contains "MpsSvc"
 
 // Best query also ignores quotes
 DeviceProcessEvents
 | where Timestamp > ago(7d) and FileName in~ ("net.exe", "net1.exe")
 | extend CanonicalCommandLine=replace("\"", "", ProcessCommandLine)
-| where CanonicalCommandLine contains "stop" and CanonicalCommandLine contains "MpsSvc" 
+| where CanonicalCommandLine contains "stop" and CanonicalCommandLine contains "MpsSvc"
 ```
 
 ### Ingest data from external sources
 To incorporate long lists or large tables into your query, use the [externaldata operator](/azure/data-explorer/kusto/query/externaldata-operator) to ingest data from a specified URI. You can get data from files in TXT, CSV, JSON, or [other formats](/azure/data-explorer/ingestion-supported-formats). The example below shows how you can utilize the extensive list of malware SHA-256  hashes provided by MalwareBazaar (abuse.ch) to check attachments on emails:
 
 ```kusto
-let abuse_sha256 = (externaldata(sha256_hash: string )
+let abuse_sha256 = (externaldata(sha256_hash: string)
 [@"https://bazaar.abuse.ch/export/txt/sha256/recent/"]
 with (format="txt"))
 | where sha256_hash !startswith "#"
 | project sha256_hash;
 abuse_sha256
-| join (EmailAttachmentInfo 
-| where Timestamp > ago(1d) 
+| join (EmailAttachmentInfo
+| where Timestamp > ago(1d)
 ) on $left.sha256_hash == $right.SHA256
 | project Timestamp,SenderFromAddress,RecipientEmailAddress,FileName,FileType,
 SHA256,ThreatTypes,DetectionMethods
 ```
 
 ### Parse strings
-There are various functions you can use to efficiently handle strings that need parsing or conversion. 
+There are various functions you can use to efficiently handle strings that need parsing or conversion.
 
 | String | Function | Usage example |
 |--|--|--|
-| Command-lines | [parse_command_line()](/azure/data-explorer/kusto/query/parse-command-line) | Extract the command and all arguments. | 
+| Command-lines | [parse_command_line()](/azure/data-explorer/kusto/query/parse-command-line) | Extract the command and all arguments. |
 | Paths | [parse_path()](/azure/data-explorer/kusto/query/parsepathfunction) | Extract the sections of a file or folder path. |
 | Version numbers | [parse_version()](/azure/data-explorer/kusto/query/parse-versionfunction) | Deconstruct a version number with up to four sections and up to eight characters per section. Use the parsed data to compare version age. |
 | IPv4 addresses | [parse_ipv4()](/azure/data-explorer/kusto/query/parse-ipv4function) | Convert an IPv4 address to a long integer. To compare IPv4 addresses without converting them, use [ipv4_compare()](/azure/data-explorer/kusto/query/ipv4-comparefunction). |
 | IPv6 addresses | [parse_ipv6()](/azure/data-explorer/kusto/query/parse-ipv6function)  | Convert an IPv4 or IPv6 address to the canonical IPv6 notation. To compare IPv6 addresses, use [ipv6_compare()](/azure/data-explorer/kusto/query/ipv6-comparefunction). |
 
-To learn about all supported parsing functions, [read about Kusto string functions](/azure/data-explorer/kusto/query/scalarfunctions#string-functions). 
+To learn about all supported parsing functions, [read about Kusto string functions](/azure/data-explorer/kusto/query/scalarfunctions#string-functions).
+
+>[!NOTE]
+>Some tables in this article might not be available in Microsoft Defender for Endpoint. [Turn on Microsoft 365 Defender](m365d-enable.md) to hunt for threats using more data sources. You can move your advanced hunting workflows from Microsoft Defender for Endpoint to Microsoft 365 Defender by following the steps in [Migrate advanced hunting queries from Microsoft Defender for Endpoint](advanced-hunting-migrate-from-mde.md).
 
 ## Related topics
 - [Kusto query language documentation](/azure/data-explorer/kusto/query/)

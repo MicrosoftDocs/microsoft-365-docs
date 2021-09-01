@@ -17,6 +17,7 @@ ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
 - okr_smb
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
@@ -67,11 +68,11 @@ Before creating a shared mailbox, be sure to read [About shared mailboxes](about
 
 5. Under **Next steps**, select **Add members to this mailbox**. Members are the people who will be able to view the incoming mail to this shared mailbox, and the outgoing replies.
 
-   ![Select Add Members](../../media/a2a72e3d-6170-40fe-a94f-0af8fbef8ab2.png)
+   ![Select Add Members.](../../media/a2a72e3d-6170-40fe-a94f-0af8fbef8ab2.png)
 
 6. Select the **+Add members** button. Put a check mark next to the people who you want to use this shared mailbox, and select **Save**.
 
-   ![Assign members to the shared mailbox](../../media/e6c58953-f6d7-4f0b-97ba-308516bf2a94.png)
+   ![Assign members to the shared mailbox.](../../media/e6c58953-f6d7-4f0b-97ba-308516bf2a94.png)
 
 7. Select **Close**.
 
@@ -89,11 +90,11 @@ You can use the following permissions with a shared mailbox:
 
 ### Use the EAC to edit shared mailbox delegation
 
-1. In the EAC, go to **Recipients** \> **Shared**. Select the shared mailbox, and then select **Edit** ![Edit icon](../../media/ITPro-EAC-EditIcon.png).
+1. In the EAC, go to **Recipients** \> **Shared**. Select the shared mailbox, and then select **Edit** ![Edit icon.](../../media/ITPro-EAC-EditIcon.png).
 
 2. Select **Mailbox delegation**.
 
-3. To grant or remove Full Access and Send As permissions, select **Add** ![Add Icon](../../media/ITPro-EAC-AddIcon.png) or **Remove** ![Remove icon](../../media/ITPro-EAC-RemoveIcon.gif) and then select the users you want to grant permissions to.
+3. To grant or remove Full Access and Send As permissions, select **Add** ![Add Icon.](../../media/ITPro-EAC-AddIcon.png) or **Remove** ![Remove icon](../../media/ITPro-EAC-RemoveIcon.gif) and then select the users you want to grant permissions to.
 
    > [!NOTE]
    > The Full Access permission allows a user to open the mailbox as well as create and modify items in it. The Send As permission allows anyone other than the mailbox owner to send email from this shared mailbox. Both permissions are required for successful shared mailbox operation.
@@ -111,42 +112,26 @@ But what if an admin simply resets the password of the shared mailbox user accou
 
 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.
 
-2. In the list of user accounts, find the account for the shared mailbox (for example, change the filter to **Unlicensed users**).
-
-3. Select the user to open their properties pane, and then select the **Block this user** icon ![Screen shot of the Block this user icon](../../media/block-user-icon.png).
-
-   **Note**: If the account is already blocked, **Sign in blocked** will appear at the top and the icon will read **Unblock this user**.
-
-4. In the **Block this user?** pane, select **Block the user from signing in**, and then select **Save changes**.
-
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Active users</a> page.
 
-2. In the list of user accounts, find the account for the shared mailbox (for example, change the view to **Unlicensed users**) and then select the account.
-
-3. In the properties flyout, select **Block sign-in**.
-
-    **Note:** If the account was already blocked, the button would say **Unblock sign-in**.
-
-4. In the **Edit sign-in status** flyout, verify that Block the user from signing in is selected, select **Save** and then **Close**.
-
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Active users</a> page.
-
-2. In the list of user accounts, find the account for the shared mailbox (for example, change the view to **Unlicensed users**) and then select the account.
-
-3. In the properties flyout, select **Block sign-in**.
-
-    **Note:** If the account was already blocked, the button would say **Unblock sign-in**.
-
-4. In the **Edit sign-in status** flyout, verify that Block the user from signing in is selected, select **Save** and then **Close**.
 ::: moniker-end
+
+1. In the list of user accounts, find the account for the shared mailbox (for example, change the filter to **Unlicensed users**).
+
+1. Select the user to open their properties pane, and then select the **Block this user** icon ![Screen shot of the Block this user icon.](../../media/block-user-icon.png).
+
+   **Note**: If the account is already blocked, **Sign in blocked** will appear at the top and the icon will read **Unblock this user**.
+
+1. In the **Block this user?** pane, select **Block the user from signing in**, and then select **Save changes**.
 
 For instructions on how to block sign-in for accounts using Azure AD PowerShell (including many accounts at the same time), see [Block user accounts with Office 365 PowerShell](../../enterprise/block-user-accounts-with-microsoft-365-powershell.md).
 
@@ -167,7 +152,6 @@ To learn more about shared mailboxes in Outlook, see:
 - <a href="https://support.microsoft.com/office/6ecc39c5-5577-4a1d-b18c-bbdc92972cb2" target="_blank">Open a shared folder or mailbox in Outlook for Mac</a>
 
 - <a href="https://support.microsoft.com/office/b0963400-2a51-4c64-afc7-b816d737d164" target="_blank">Add rules to a shared mailbox</a>
-
 
 ## Use a shared mailbox on a mobile device (phone or tablet)
 
@@ -193,14 +177,10 @@ When you created the shared mailbox, you automatically created a shared calendar
 
 3. Any member of the shared mailbox can create, view, and manage appointments on the calendar, just like they would their personal appointments. Everyone who is a member of shared mailbox can see their changes to the shared calendar.
 
-## Related articles
+## Related content
 
-[About shared mailboxes](about-shared-mailboxes.md)
-
-[Configure a shared mailbox](configure-a-shared-mailbox.md)
-
-[Convert a user mailbox to a shared mailbox](convert-user-mailbox-to-shared-mailbox.md)
-
-[Remove a license from a shared mailbox](remove-license-from-shared-mailbox.md)
-
-[Resolve issues with shared mailboxes](resolve-issues-with-shared-mailboxes.md)
+[About shared mailboxes](about-shared-mailboxes.md) (article)\
+[Configure a shared mailbox](configure-a-shared-mailbox.md) (article)\
+[Convert a user mailbox to a shared mailbox](convert-user-mailbox-to-shared-mailbox.md) (article)\
+[Remove a license from a shared mailbox](remove-license-from-shared-mailbox.md) (article)\
+[Resolve issues with shared mailboxes](resolve-issues-with-shared-mailboxes.md) (article)

@@ -2,8 +2,8 @@
 title: "Microsoft Compliance Manager"
 f1.keywords:
 - NOCSH
-ms.author: chvukosw
-author: chvukosw
+ms.author: v-jgriffee
+author: jmgriffee
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -23,24 +23,14 @@ description: "Microsoft Compliance Manager helps organizations simplify and auto
 
 **In this article:** Learn what Compliance Manager is, how it helps simplify compliance and reduce risk, and its key components.
 
-## What's new: the GA release of Compliance Manager
+## What is Compliance Manager?
 
-Compliance Manager is now generally available (GA) as an end-to-end compliance management solution inside the [Microsoft 365 compliance center](microsoft-365-compliance-center.md). With this release, Compliance Manager completes the transition from its previous location in the Microsoft Service Trust Portal. Compliance Manager is also  available to US Government Community (GCC) Moderate, GCC High, and Department of Defense (DoD) customers.
-
-What began as the public preview of Compliance Score has evolved into a centralized tool with enhanced compliance management capabilities and greater ease of use.  The GA release brings a larger collection of pre-built assessments to help you scale your compliance activities.
-
-**Learn more about the GA release:**
-- Our [frequently asked questions](compliance-manager-faq.md) walk you through the evolution in greater detail.
-- Read about GA feature enhancements in [this blog post](https://aka.ms/compliancemanager/GAblog).
+[Microsoft Compliance Manager](https://compliance.microsoft.com/compliancemanager) is a feature in the [Microsoft 365 compliance center](microsoft-365-compliance-center.md) that helps you manage your organization’s compliance requirements with greater ease and convenience. Compliance Manager can help you throughout your compliance journey, from taking inventory of your data protection risks to managing the complexities of implementing controls, staying current with regulations and certifications, and reporting to auditors.
 
 Watch the video below to learn how Compliance Manager can help simplify how your organization manages compliance:
 <br>
 <br>
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4FGYZ]
-
-## What is Compliance Manager
-
-[Microsoft Compliance Manager](https://compliance.microsoft.com/compliancemanager) is a feature in the [Microsoft 365 compliance center](microsoft-365-compliance-center.md) that helps you manage your organization’s compliance requirements with greater ease and convenience. Compliance Manager can help you throughout your compliance journey, from taking inventory of your data protection risks to managing the complexities of implementing controls, staying current with regulations and certifications, and reporting to auditors.
 
 Compliance Manager helps simplify compliance and reduce risk by providing:
 
@@ -54,7 +44,7 @@ Compliance Manager helps simplify compliance and reduce risk by providing:
 
 Your Compliance Manager dashboard shows your current compliance score, helps you see what needs attention, and guides you to key improvement actions. Below is an example of what your Compliance Manager dashboard will look like:
 
-![Compliance Manager - dashboard](../media/compliance-manager-dashboard.png "Compliance Manager dashboard")
+![Compliance Manager - dashboard.](../media/compliance-manager-dashboard.png "Compliance Manager dashboard")
 
 ## Understanding your compliance score
 
@@ -160,3 +150,5 @@ Compliance Manager is available in the following languages:
 Learn how to sign in, assign permissions and roles, configure settings, and personalize your dashboard view at [Get started with Compliance Manager](compliance-manager-setup.md).
 
 Then start customizing Compliance Manager to help you comply with industry standards that matter most to your organization by [setting up assessments](compliance-manager-assessments.md).
+
+To help you comply with data privacy regulations, we’ve designed a workflow to guide you through an end-to-end process to plan and implement capabilities across Microsoft 365, including using Compliance Manager. For more information, see [Deploy information protection for data privacy regulations with Microsoft 365](../solutions/information-protection-deploy.md) (aka.ms/m365dataprivacy). 

@@ -43,7 +43,7 @@ Additionally, if there are too many extensions on a page they can impact the pag
 
 If an extension is impacting page load time or there are too many extensions on the page, the result appears in the **Attention required** section of the results. Click the result to see details about which extension is loading slowly or too many extensions has been highlighted. Future updates to the Page Diagnostics for SharePoint tool may include updates to analysis rules, so please ensure you always have the latest version of the tool.
 
-![Page load time results](../media/page-diagnostics-for-spo/pagediag-extensions-load-time.png)
+![Page load time results.](../media/page-diagnostics-for-spo/pagediag-extensions-load-time.png)
 
 Information available in the results includes:
 
@@ -51,7 +51,8 @@ Information available in the results includes:
 - **Total** shows the total time for the extension to module load and initialize. It is the total relative time taken by the extension to execute on the page, from beginning to the end.
 - **Module Load** shows the time taken to download, evaluate and load the extensions JavaScript and CSS files. It will then start the Init process.
 - **Init** shows the time taken for the extension to initialize the data.
-	It is an asynchronous call and init time is the calculation of time for the onInit function when the returned promise is resolved.
+
+  It is an asynchronous call and init time is the calculation of time for the onInit function when the returned promise is resolved.
 
 This information is provided to help designers and developers troubleshoot issues. This information should be provided to your design and development team.
 
@@ -100,7 +101,7 @@ Page authors can also use the audit result to see whether a page has too many ex
 
 Before you make page revisions to remediate performance issues, make a note of the page load time in the analysis results. Run the tool again after your revision to see if the new result is within the baseline standard, and check the new page load time to see if there was an improvement.
 
-![Page load time results](../media/modern-portal-optimization/pagediag-page-load-time.png)
+![Page load time results.](../media/modern-portal-optimization/pagediag-page-load-time.png)
 
 >[!NOTE]
 >Page load time can vary based on a variety of factors such as network load, time of day, and other transient conditions. You should test page load time a few times before and after making changes to help you average the results.

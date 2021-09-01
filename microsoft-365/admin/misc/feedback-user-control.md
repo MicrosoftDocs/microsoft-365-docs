@@ -79,13 +79,12 @@ When a user submits feedback, app information is usually collected along with ap
 - **Attachments**   Were any attachments (i.e screenshots, files) collected as part of the feedback? (Yes/No).
 - **TenantId**   If feedback is submitted from an Azure Active Directory account, which TenantId was associated.
 
-## Data handling and privacy
-
-We work to earn trust by ensuring that we focus on core data handling and data privacy principles.
-We make sure the feedback we receive is stored and handled under Microsoft governance rules, and that it can only be accessed for approved uses.
-
-We put you in control of your privacy with easy-to-use tools and clear choices. We're transparent about how we collect and use data, so you can make informed decisions about what you want to share. We protect the data you entrust to us with strong security and encryption. We respect local privacy laws and fight for legal protection of your privacy as a human right. We don't use your email, chat, files, or other personal content to target ads to you. When we collect data, we use it to make your experiences better. Learn more about Microsoft’s approach to privacy [here](https://privacy.microsoft.com/). Learn more about our [Privacy overview](/compliance/assurance/assurance-privacy).
-
 ## How can I see my user's feedback?
 
-Coming soon, we'll be sharing the feedback data we collect for Microsoft products back to you. We're working on a new experience in the Microsoft 365 admin center that let's you view, delete and export the feedback data for your organization. This gives you direct transparency and useful insights into your users’ experiences with Microsoft 365 products.
+To meet Microsoft’s legal obligations to customers, we're working on a new experience in the Microsoft 365 admin center that lets administrators view, delete, and export the feedback data for their organizations. As part of their data controller responsibility, customers own all user feedback data and this functionality will assist administrators to provide direct transparency into their users’ experiences with Microsoft 365 products and enable user feedback data to be provided as part of any Data Subject Request. Global admins and compliance data administrators will have the ability to view, export and delete user feedback. All other administrators, as well as readers, will be able to view and export feedback data but can't perform compliance related tasks or see information about who posted the feedback (such as user name, email, or device name). To access your organization's feedback data, sign in to the Microsoft 365 admin center and customize navigation to show the health node. Access this experience by selecting **Product Feedback** under the Health node.
+
+## Data handling and privacy
+
+We understand that when you use our cloud services, you're entrusting us with one of your most valuable assets: your data. We make sure the feedback we receive is stored and handled under Microsoft governance rules, and that it can only be accessed for approved uses. We don't use your email, chat, files, or other personal content to target ads to you. When we collect data, we use it to make your experiences better.
+
+To learn more about how we protect the privacy and confidentiality of your data, and how we ensure that it will be used only in a way that is consistent with your expectations, review our privacy principles at the [Microsoft Trust Center](https://www.microsoft.com/trust-center/privacy).

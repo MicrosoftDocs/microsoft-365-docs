@@ -26,9 +26,6 @@ ms.technology: m365d
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-> [!IMPORTANT]
-> The preview versions are provided without a service level agreement, and it's not recommended for production workloads. Certain features might not be supported or might have constrained capabilities.
-
 **Applies to:**
 - Microsoft 365 Defender
 
@@ -37,6 +34,19 @@ The Microsoft 365 Defender service is constantly being updated to include new fe
 Learn about new features in the Microsoft 365 Defender preview release and be among the first to try upcoming features by turning on the preview experience.
 
 For more information on new capabilities that are generally available, see [What's new in Microsoft 365 Defender](whats-new.md).
+
+ ## What you need to know
+
+When working with features in public preview, these features:
+
+- May have restricted or limited functionality. For example, the feature may only apply to one platform.
+- Typically go through feature changes before they're generally available (GA).
+- Are fully supported by Microsoft.
+- May only be available in selected geographic regions or cloud environments. For example, the feature may not exist in the government cloud.
+- Individual features in preview may have more usage and support restrictions. If so, this information is typically noted in the feature documentation.
+- The preview versions are provided with a standard support level, and can be used for production environments. 
+
+
 
 ## Required permissions
 
@@ -63,11 +73,9 @@ You'll know you have preview features turned on when you see that the **Turn on 
 
 The following features and enhancements are currently available on preview:
 
-### Improved Microsoft 365 security center
-The improved [Microsoft 365 security center](https://security.microsoft.com) is now available in public preview. This new experience brings Defender for Endpoint, Defender for Office 365, Microsoft 365 Defender, and more into the Microsoft 365 security center. This is the new home to manage your security controls. [Learn what's new](./overview-security-center.md).
-
-- **[Microsoft 365 Defender threat analytics report](threat-analytics.md)** - Threat analytics helps you respond to and minimize the impact of active attacks. You can also learn about attack attempts blocked by Microsoft 365 Defender solutions and take preventive actions that mitigate the risk of further exposure and increase resiliency. As part of the unified security experience, threat analytics is now available for Microsoft Defender for Endpoint and Microsoft Defender for Office E5 license holders.
+- **[View reports per threat tags](threat-analytics.md#view-reports-per-threat-tags)** - Threat tags help you focus on specific threat categories and review the most relevant reports.
+- **[Streaming API](../defender-endpoint/raw-data-export.md)** - Microsoft 365 Defender supports streaming all the events available through Advanced Hunting to an Event Hubs and/or Azure storage account.
 - **[Microsoft 365 Defender APIs](api-overview.md)** - The top-level Microsoft 365 Defender APIs will enable you to automate workflows based on the shared incident and advanced hunting tables. 
-- **[Take action in advanced hunting](advanced-hunting-take-action.md)**—Quickly contain threats or address compromised assets that you find in [advanced hunting](advanced-hunting-overview.md).
-- **[In-portal schema reference](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)**—Get information about advanced hunting schema tables directly in the security center. In addition to table and column descriptions, this reference includes supported event types (`ActionType` values) and sample queries.
-- **[DeviceFromIP() function](advanced-hunting-devicefromip-function.md)**—Get information about which devices have been assigned a specific IP address or addresses at a given time range.
+- **[Take action in advanced hunting](advanced-hunting-take-action.md)** - Quickly contain threats or address compromised assets that you find in [advanced hunting](advanced-hunting-overview.md).
+- **[In-portal schema reference](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** - Get information about advanced hunting schema tables directly in the security center. In addition to table and column descriptions, this reference includes supported event types (`ActionType` values) and sample queries.
+- **[DeviceFromIP() function](advanced-hunting-devicefromip-function.md)** - Get information about which devices have been assigned a specific IP address or addresses at a given time range.

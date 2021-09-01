@@ -14,6 +14,7 @@ ms.collection:
 ms.custom: 
 - M365solutions
 f1.keywords: NOCSH
+recommendations: false
 description: "Lean about lifecycle governance options for collaboration tools in Microsoft 365"
 ---
 
@@ -27,7 +28,7 @@ The following section describes the capabilities, recommends best practices, and
 
 Groups can be created by end-users from multiple end-points including Outlook, SharePoint, Teams, and other environments.
 
-![image desc](../media/04.png)
+![image desc.](../media/04.png)
 
 We highly recommend self-service to empower group owners and help users get their work done more easily. Limiting group and team creation can slow users productivity because many Microsoft 365 services require that groups be created for the service to function.
 
@@ -75,3 +76,5 @@ Expiration policies are a good way to limit group sprawl by ensuring that groups
 [Collaboration governance planning step-by-step](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
 
 [Create your collaboration governance plan](collaboration-governance-first.md)
+
+[Remove a former employee and secure data](/microsoft-365/admin/add-users/remove-former-employee)

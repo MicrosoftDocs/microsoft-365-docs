@@ -2,8 +2,8 @@
 title: "Compliance score calculation"
 f1.keywords:
 - NOCSH
-ms.author: chvukosw
-author: chvukosw
+ms.author: v-jgriffee
+author: jmgriffee
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -114,4 +114,4 @@ Each action has an assigned value in Compliance Manager based on the risk it rep
 | Corrective mandatory | 3 |
 | Corrective discretionary | 1 |
   
-![Compliance Manager action point values](../media/compliance-score-action-scoring.png "Compliance Manager action point values")
+![Compliance Manager action point values.](../media/compliance-score-action-scoring.png "Compliance Manager action point values")

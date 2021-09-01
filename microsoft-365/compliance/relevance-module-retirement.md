@@ -11,6 +11,7 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: 
 - MET150
+ROBOTS: NOINDEX, NOFOLLOW
 ms.collection: M365-security-compliance
 description: "The Relevance module in Advanced eDiscovery will be retired on March 10, 2021. This article explains what to do before Relevance is retired. Specifically, finishing any unfinished models by running Batch calculation so that you can retain the metadata from the model."
 ---
@@ -31,7 +32,7 @@ Here are the steps to complete any unfinished models:
 
    The following screenshot shows a module that is ready for a Batch calculation. Notice that the Assessment and Training is complete, and the next step is to run Batch calculation.
 
-   ![Screenshot of model ready for Batch calculation](../media/ReadyForBatchCalculation.png)
+   ![Screenshot of model ready for Batch calculation.](../media/ReadyForBatchCalculation.png)
 
 2. Run the Batch calculation. See [Performing Batch calculation](track-relevance-analysis-in-advanced-ediscovery.md#performing-batch-calculation).
 

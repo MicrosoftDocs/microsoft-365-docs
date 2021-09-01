@@ -2,8 +2,8 @@
 title: How automated investigation and response works in Microsoft Defender for Office 365
 f1.keywords: 
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
+author: JoeDavies-MSFT
+ms.author: josephd
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -76,11 +76,11 @@ In addition to automated investigations that are triggered by an alert, your org
 
 For example, suppose that you are using the **Malware** view in Explorer. Using the tabs below the chart, you select the **Email** tab. If you select one or more items in the list, the **+ Actions** button activates.
 
-![Explorer with selected messages](../../media/Explorer-Malware-Email-ActionsInvestigate.png)
+![Explorer with selected messages.](../../media/Explorer-Malware-Email-ActionsInvestigate.png)
 
 Using the **Actions** menu, you can select **Trigger investigation**.
 
-![Actions menu for selected messages](../../media/explorer-malwareview-selectedemails-actions.jpg)
+![Actions menu for selected messages.](../../media/explorer-malwareview-selectedemails-actions.jpg)
 
 Similar to playbooks triggered by an alert, automatic investigations that are triggered from a view in Explorer include a root investigation, steps to identify and correlate threats, and recommended actions to mitigate those threats.
 

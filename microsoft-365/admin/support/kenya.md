@@ -16,14 +16,14 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 # Contact support for Kenya
 
-[Find another country or region](../contact-support-for-business-products.md).
+[Find another country or region](../../business-video/get-help-support.md).
 
 ## Phone number
 020 286 8800
 
-Select option 9
+Press 2 for business
 
-Enter code 7704
+Press 1 for Microsoft 365
 
 ## Hours
 ### Billing Support:

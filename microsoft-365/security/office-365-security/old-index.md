@@ -1,5 +1,5 @@
 ---
-title: Office 365 Security, Microsoft Defender for Office 365, EOP, MSDO
+title: Office 365 Security overview, Microsoft Defender for Office 365, EOP, MSDO 
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
@@ -14,12 +14,13 @@ search.appverid:
 ms.collection: 
   - M365-security-compliance
   - m365initiative-defender-office365
-description: Security in Office 365, from EOP to Defender for Office 365 Plans 1 and 2, Standard vs. Strict security configurations, and more. Understand what you have, and how to secure your properties.
+description: Security in Office 365, from EOP to Defender for Office 365 Plans 1 and 2, Standard vs. Strict security configurations, and more. Understand what you have and learn how to secure your properties.
 ms.technology: mdo
 ms.prod: m365-security
 ---
 
-# Office 365 Security overview
+# Office 365 security
+
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -53,7 +54,7 @@ You may be accustomed to seeing these three components discussed in this way:
 
 But in terms of architecture, let's start by thinking of each piece as cumulative layers of security, each with a security emphasis. More like this:
 
-<!--:::image type="content" source="../../media/tp-EOPATPStack.PNG" alt-text="Placeholder graphic":::-->
+<!--:::image type="content" source="../../media/tp-EOPATPStack.PNG" alt-text="Placeholder graphic.":::-->
 
 :::image type="content" source="../../media/tp_GraphicEOPATPP1P2_2.png" alt-text="EOP and Microsoft Defender for Office 365 and their relationships to one another with service emphasis, including a note for email authentication.":::
 
