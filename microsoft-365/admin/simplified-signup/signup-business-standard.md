@@ -76,7 +76,7 @@ You can add a business domain at any point to access the rest of the functionali
 If you would like to add a domain and create a business email account, you can follow the steps in the articles below:
 
 - [Add a domain to Microsoft 365](../setup/add-domain.md)
-- [Set up your organization with email and cloud storage](../setup/setup-business-standard-simplified-signup.md#finish-setting-up)
+- [Finish setting up](../setup/setup-business-standard.md#finish-setting-up)
 
 ### Option 2: Create a new business email account
 
