@@ -48,23 +48,25 @@ To start recording system events, open Powershell in administrative mode and per
 
 1. Run the following command to start the recording:
 
-`New-MpPerformanceReport -RecordTo <recording.etl>`
+`New-MpPerformanceRecording -RecordTo <recording.etl>`
  
  where `-RecordTo` parameter specifies full path location in which the trace file is saved. For more cmdlet information, see [Defender](/powershell/module/defender).
 
 2. If there are processes or services thought to be affecting performance, reproduce the situation by carrying out the relevant tasks.
 3. Press **ENTER** to stop and save recording, or **Ctrl+C** to cancel recording.
-4. Analyze the results using the Performance analyzer’s `Get-MpPerformanceReport`parameter. For example, on executing the command `Get-MpPerformanceReport -Path <recording.etl> -TopFiles 3 -TopScansPerFile 10`, the user is provided with a list of top-ten scans for the top 3 files affecting performance. For additional command-line parameters and options, see [Defender](/powershell/module/defender/).
+4. Analyze the results using the Performance analyzer’s `Get-MpPerformanceReport`parameter. For example, on executing the command `Get-MpPerformanceReport -Path <recording.etl> -TopFiles 3 -TopScansPerFile 10`, the user is provided with a list of top-ten scans for the top 3 files affecting performance. 
+
+For more information on command-line parameters and options, see the New-MpPerformanceRecording and Get-MpPerformanceReport pages under [Defender Module](/powershell/module/defender/).
 
 ## What information is present?
 
-The admin will be able to view numbers for duration, scan counts for the report they specify (file/file extension/processes).
+Based on the query, the user will be able to view data for scan counts, duration (total/min/average/max/median), path, process, and reason for scan. The image below shows sample output for a simple query of the top 10 files for scan impact. 
 
 :::image type="content" source="images/example-output.png" alt-text="Example output for a basic TopFiles query":::
 
 ## Additional functionality: exporting and converting to CSV and JSON
 
-You can also export and convert the results of the performance analyzer to a CSV or JSON file.
+The results of the perfomance analyzer can also be exported and converted to a CSV or JSON file.
 For examples that describe the process of "export" and "convert" through sample codes, see [For CSV](#for-csv) and [For JSON](#for-json).
 
 ### For CSV
