@@ -37,7 +37,7 @@ Make sure you’ve already [signed up for Microsoft 365 Business Standard](signu
 
 1. In the Microsoft 365 admin center, select **Invite people to Microsoft 365**.
 
-2. Add the usernames and email addresses for the people you want to invite and choose **Send**. An invitation email will be sent to all the users you added to add their user account information to Microsoft 365.
+2. Add the usernames and email addresses for the people you want to invite and choose **Send**. An invitation email will be sent to all the users you selected to add their user account information to Microsoft 365.
 
 ## Next steps
 

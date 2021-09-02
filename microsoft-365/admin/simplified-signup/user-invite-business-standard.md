@@ -1,5 +1,5 @@
 ---
-title: "Accept email invitation to Microsoft 365 Business Standard (User)"
+title: "Accept an email invitation to Microsoft 365 Business Standard (User)"
 f1.keywords:
 - NOCSH
 ms.author: kwekua

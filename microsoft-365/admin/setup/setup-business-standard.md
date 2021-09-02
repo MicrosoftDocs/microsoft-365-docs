@@ -28,7 +28,7 @@ search.appverid:
 description: "When you purchase Microsoft 365 Business Standard, you have the option of using a domain you own, or buying one during the sign-up."
 ---
 
-# Set up Microsoft 365 Business Standard  with a new or existing domain
+# Set up Microsoft 365 Business Standard with a new or existing domain
 
 When you purchase Microsoft 365 Business Standard, you have the option of adding a domain you own, or buying one. Check out [Sign up for a Microsoft 365 Business Standard subscription](../simplified-signup/signup-business-standard.md).
 

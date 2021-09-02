@@ -1,5 +1,5 @@
 ---
-title: "Sign up for Microsoft 365 Business Standard"
+title: "Sign up for a Microsoft 365 Business Standard"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
