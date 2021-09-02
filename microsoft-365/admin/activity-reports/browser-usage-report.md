@@ -42,7 +42,7 @@ You can find this feature on the report page. Once the message is created, users
 
 ## Interpret the Microsoft browser usage report
 
-![Microsoft browser usage report](../../media/95557c88-24ee-417d-a828-96ba00b17aaf.png)
+![Microsoft browser usage report.](../../media/95557c88-24ee-417d-a828-96ba00b17aaf.png)
 
 |Item|Description|
  |:-----|:-----|

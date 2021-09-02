@@ -24,7 +24,7 @@ After content from MS SQL Database stored in user mailboxes, you can apply Micro
 
 The following overview explains the process of using a connector to archive MS SQL data in Microsoft 365.
 
-![Archiving workflow for MS SQL data](../media/MSSQLDatabaseConnectorWorkflow.png)
+![Archiving workflow for MS SQL data.](../media/MSSQLDatabaseConnectorWorkflow.png)
 
 1. Your organization works with an MS SQL Database provider to set up and configure an MS SQL Database site.
 

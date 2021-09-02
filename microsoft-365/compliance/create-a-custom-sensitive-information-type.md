@@ -142,7 +142,7 @@ If Mod value != digit 8
 > [!NOTE]
 > If the check digit is not part of the checksum calculation then use 0 as the weight for the check digit. For example, in the above case weight 8 will be equal to 0 if the check digit is not to be used for calculating the check digit.  Modulo_operation).
 
-![screenshot of configured checksum validator](../media/checksum-validator.png)
+![screenshot of configured checksum validator.](../media/checksum-validator.png)
 
 ### Date validator
 
@@ -157,7 +157,7 @@ If a date value that is embedded in regular expression is part of a new pattern 
 2. Then add the date validator.
 3. Select the date format and the start offset. Since the date string is the first six digits, the offset is `0`.
 
-![screenshot of configured date validator](../media/date-validator.png)
+![screenshot of configured date validator.](../media/date-validator.png)
 
 ### Functional processors as validators
 

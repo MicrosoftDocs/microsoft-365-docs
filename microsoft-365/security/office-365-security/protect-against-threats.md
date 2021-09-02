@@ -201,17 +201,17 @@ For more information about the recommended settings for Safe Attachments, see .[
 1. Open the **Safe Attachments** page in the Microsoft 365 Defender portal at <https://security.microsoft.com/safeattachmentv2>.
 
 2. On the **Safe Attachments** page, click **Global settings**, and then configure the following settings on the flyout that appears:
-   - **Turn on Defender for Office 365 for SharePoint, OneDrive, and Microsoft Teams**: Turn on this setting (![Toggle on](../../media/scc-toggle-on.png)).
+   - **Turn on Defender for Office 365 for SharePoint, OneDrive, and Microsoft Teams**: Turn on this setting (![Toggle on.](../../media/scc-toggle-on.png)).
 
      > [!IMPORTANT]
      > **Before you turn on Safe Attachments for SharePoint, OneDrive, and Microsoft Teams, verify that audit logging is turned in your organization**. This action is typically done by someone who has the Audit Logs role assigned in Exchange Online. For more information, see [Turn audit log search on or off](../../compliance/turn-audit-log-search-on-or-off.md)!
 
-   - **Turn on Safe Documents for Office clients**: Turn on this setting (![Toggle on](../../media/scc-toggle-on.png)). Note that this feature is available and meaningful only with Microsoft 365 E5 or Microsoft 365 E5 Security licenses.
-   - **Allow people to click through Protected View even if Safe Documents identified the file as malicious**: Verify this setting is turned off (![Toggle off](../../media/scc-toggle-off.png)).
+   - **Turn on Safe Documents for Office clients**: Turn on this setting (![Toggle on.](../../media/scc-toggle-on.png)). Note that this feature is available and meaningful only with Microsoft 365 E5 or Microsoft 365 E5 Security licenses.
+   - **Allow people to click through Protected View even if Safe Documents identified the file as malicious**: Verify this setting is turned off (![Toggle off.](../../media/scc-toggle-off.png)).
 
    When you're finished, click **Save**
 
-3. Back on the **Safe Attachments** page, click ![Create icon](../../media/m365-cc-sc-create-icon.png).
+3. Back on the **Safe Attachments** page, click ![Create icon.](../../media/m365-cc-sc-create-icon.png).
 
 4. In the **Create Safe Attachments policy** wizard that opens, configure the following settings:
    - **Name your policy** page:
@@ -245,13 +245,13 @@ For more information about the recommended settings for Safe Links, see [Safe Li
 
 2. On the **Safe Links** page, click **Global settings**, and then configure the following settings on the flyout that appears:
    - **Settings that apply to content in supported Office 365 apps** section:
-     - **Use Safe Links in Office 365 apps**: Verify this setting is turned on (![Toggle on](../../media/scc-toggle-on.png)).
-     - **Do not track when users click protected links in Office 365 apps**: Turn this setting off (![Toggle off](../../media/scc-toggle-off.png)).
-     - **Do not let users click through to the original URL in Office 365 apps**: Verify this setting is turned on (![Toggle on](../../media/scc-toggle-on.png)).
+     - **Use Safe Links in Office 365 apps**: Verify this setting is turned on (![Toggle on.](../../media/scc-toggle-on.png)).
+     - **Do not track when users click protected links in Office 365 apps**: Turn this setting off (![Toggle off.](../../media/scc-toggle-off.png)).
+     - **Do not let users click through to the original URL in Office 365 apps**: Verify this setting is turned on (![Toggle on.](../../media/scc-toggle-on.png)).
 
    When you're finished, click **Save**
 
-3. Back on the **Safe Links** page, click ![Create icon](../../media/m365-cc-sc-create-icon.png).
+3. Back on the **Safe Links** page, click ![Create icon.](../../media/m365-cc-sc-create-icon.png).
 
 4. In the **Create Safe Links policy** wizard that opens, configure the following settings:
    - **Name your policy** page:
@@ -301,7 +301,7 @@ To receive notification when a file in SharePoint Online or OneDrive for Busines
    When you're finished, click **Next**
 
 5. On the **Set your recipients** page, configure the following settings:
-   - **Send email notifications**: Verify this setting is selcted.
+   - **Send email notifications**: Verify this setting is selected.
    - **Email recipients**: Select one or more global administrators, security administrators, or security readers who should receive notification when a malicious file is detected.
    - **Daily notification limit**: Verify **No limit** is selected.
 
