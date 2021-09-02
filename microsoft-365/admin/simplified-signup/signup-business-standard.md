@@ -44,7 +44,7 @@ To sign up and purchase Microsoft 365 Business Standard (or Microsoft 365 Apps) 
 
 6. Help us make sure this is you. Enter a number that we can use to reach you and select **Send Verification Code**.
 
-    - You'll receive a text. Enter your code and select **Verify**.
+   You'll receive a text. Enter your code and select **Verify**.
 
 7. Decide how you'll sign in to Microsoft 365. You can [create a new business email account](#option-2-create-a-new-business-email-account) by adding a domain or [sign in with your current personal email](#option-1-sign-in-with-your-outlook-hotmail-yahoo-gmail-or-other-email-account).
 
@@ -117,7 +117,7 @@ To provide customers with the greatest amount of flexibility, different payment 
 
 ### How does recurring billing work?
 
-When Recurring billing is on, your subscription will continue to be billed each year on the day you subscribed. You can turn it off or back on again in the admin center if your subscription is active. Learn more at [Turn recurring billing off or on](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/renew-your-subscription?#turn-recurring-billing-off-or-on).
+When Recurring billing is on, your subscription will continue to be billed each year on the day you subscribed. You can turn it off or back on again in the admin center if your subscription is active. Learn more at [Turn recurring billing off or on](/microsoft-365/commerce/subscriptions/renew-your-subscription#turn-recurring-billing-off-or-on).
 
 ### What if I want to change my business name in future? How do I do that?
 
