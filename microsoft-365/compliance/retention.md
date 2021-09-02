@@ -277,11 +277,11 @@ For more information about how retention policies and retention labels work toge
 > [!NOTE]
 > Adaptive policy scopes as a new feature is currently in preview and subject to change. The alternative option is a static scope, which provides the same behavior before adaptive scopes were introduced.
 
-When you create a retention policy or retention label policy for retention, you must choose between adaptive and static to define the scope of the policy.
+When you create a retention policy or retention label policy, you must choose between adaptive and static to define the scope of the policy.
 
 - An **adaptive scope** uses a query that you specify, so the membership isn't static but dynamic by running a daily query against the attributes that you specify for the selected locations. You can use multiple adaptive scopes with a single policy.
     
-    Example: Emails for the Executive group require a longer retention period than standard users. You create a retention policy with an adaptive scope that uses the email address of the Executive group. When new users join or leave this group, there's no need to reconfigure the retention policy because the adaptive scope automatically picks up changes in the group membership.
+    Example: Emails for the Executive group require a longer retention period than standard users. You create a retention policy with an adaptive scope that uses the Azure AD attribute job title that corresponds to the Executive group. When new users join or leave this group, there's no need to reconfigure the retention policy because the adaptive scope automatically picks up changes in the group membership.
 
 - A **static scope** doesn't use queries and is limited in configuration to either all instances for the selected location, including specific instances, or excluding specific instances. These three choices are sometimes referred to as "org-wide", "includes", and "excludes" respectively.
     
