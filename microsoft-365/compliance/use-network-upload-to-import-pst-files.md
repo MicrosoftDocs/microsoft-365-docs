@@ -54,12 +54,12 @@ You have to perform Step 1 only once to import PST files to Microsoft 365 mailbo
 
   - You have to be a global administrator in your organization.
 
-  > [!TIP]
+    > [!TIP]
     > Consider creating a new role group in Exchange Online that's specifically intended for importing PST files. For the minimum level of privileges required to import PST files, assign the Mailbox Import Export and Mail Recipients roles to the new role group, and then add members.
   
 - The only supported method for importing PST files to Microsoft 365 is to use the AzCopy tool, as described in this topic. You can't use the Azure Storage Explorer to upload PST files directly to the Azure Storage area.
-
-- You need to store the PST files that you want to import to Microsoft 365 on a file server or shared folder in your organization. In Step 2, you run the AzCopy tool to upload the PST files that are stored on a file server or shared folder to Microsoft 365.
+ 
+- You need to store the PST files that you want to import to Microsoft 365 on a file server or shared folder in your organization. It's currently not supported to copy PST files from your organization's Azure Storage account to the Azure Storage location used by the Microsoft 365 Import service. In Step 2, you run the AzCopy tool to upload the PST files that are stored on a file server or shared folder to the Microsoft cloud.
 
 - Large PST files may impact the performance of the PST import process. So we recommend that each PST file you upload to the Azure Storage location in Step 2 should be no larger than 20 GB.
 
