@@ -37,6 +37,10 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 - (Preview) Microsoft Defender for Office 365 data available in advanced hunting
 <br>New columns in email tables can provide more insight into email-based threats for more thorough investigations using advanced hunting. You can now include the `AuthenticationDetails` column in [EmailEvents](./advanced-hunting-emailevents-table.md), `FileSize` in [EmailAttachmentInfo](./advanced-hunting-emailattachmentinfo-table.md), and `ThreatTypes` and `DetectionMethods` in [EmailPostDeliveryEvents](./advanced-hunting-emailpostdeliveryevents-table.md) tables. 
 
+- (Preview) Incident graph
+
+  A new **Graph** tab on the **Summary** tab of an incident shows the full scope of the attack, how the attack spread through your network over time, where it started, and how far the attacker went.
+
 ## July 2021
 - [Professional services catalog](https://sip.security.microsoft.com/interoperability/professional_services)<br>Enhance the detection, investigation, and threat intelligence capabilities of the platform with supported partner connections.
     
