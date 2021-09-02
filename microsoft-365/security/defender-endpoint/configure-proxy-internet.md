@@ -85,7 +85,7 @@ The static proxy is configurable through Group Policy (GP). The group policy can
 | Group Policy | Registry key | Registry entry | Value |
 |:---|:---|:---|:---|
 | Configure authenticated proxy usage for the connected user experience and the telemetry service | `HKLM\Software\Policies\Microsoft\Windows\DataCollection` | `DisableEnterpriseAuthProxy` | 1 (REG_DWORD) |
-| Configure connected user experiences and telemetry | `HKLM\Software\Policies\Microsoft\Windows\DataCollection` | `TelemetryProxyServer` | ```http://servername or ip:port``` <br> (For example: http://10.0.0.6:8080) (REG_SZ) </br> |
+| Configure connected user experiences and telemetry | `HKLM\Software\Policies\Microsoft\Windows\DataCollection` | `TelemetryProxyServer` | ```http://servername or ip:port``` <br> (For example: ```http://10.0.0.6:8080```) (REG_SZ) </br> |
 
 ## Configure a static proxy for Microsoft Defender Antivirus
 
