@@ -40,7 +40,7 @@ The high-level process for running Performance analyzer involves the following s
 > [!NOTE]
 > Performance of Microsoft Defender Antivirus events of the type **Microsoft-Antimalware-Engine** are recorded through the performance analyzer.
 
-1. Analyze the scan results using different recording reports.
+2. Analyze the scan results using different recording reports.
 
 ## Using performance analyzer
 
@@ -62,23 +62,23 @@ The admin will be able to view numbers for duration, scan counts for the report 
 
 :::image type="content" source="images/example-output.png" alt-text="Example output for a basic TopFiles query":::
 
-## Additional functionality: Exporting and converting to JSON
+## Additional functionality: exporting and converting to CSV and JSON
 
-You can also export and convert the results of the performance analyzer to a CSV file.
+You can also export and convert the results of the performance analyzer to a CSV or JSON file.
 For examples that describe the process of "export" and "convert" through sample codes, see [For CSV](#for-csv) and [For JSON](#for-json).
 
 ### For CSV
 
 - **To export**: 
-`{Get-MpPerformanceReport -Path:.\Repro-Install.etl -Topscans:1000}. TopScans | Export-CSV -Path:.\Repro-Install-Scans.csv -Encoding:UTF8 -NoTypeInformation`
+`(Get-MpPerformanceReport -Path:.\Repro-Install.etl -Topscans:1000). TopScans | Export-CSV -Path:.\Repro-Install-Scans.csv -Encoding:UTF8 -NoTypeInformation`
 
 - **To convert**: 
-`{Get-MpPerformanceReport -Path:.\Repro-Install.etl -Topscans:100}. TopScans | ConvertTo-Csv -NoTypeInformation`
+`(Get-MpPerformanceReport -Path:.\Repro-Install.etl -Topscans:100). TopScans | ConvertTo-Csv -NoTypeInformation`
 
 ### For JSON
 
 - **To convert**:
-`{Get-MpPerformanceReport -Path:.\Repro-Install.etl -Topscans:1000}. TopScans | ConvertTo-Json -Depth:1`
+`(Get-MpPerformanceReport -Path:.\Repro-Install.etl -Topscans:1000). TopScans | ConvertTo-Json -Depth:1`
 
 ## Supported versions of Windows
 
@@ -88,6 +88,6 @@ Windows 10+ and Windows Server 16+
 
 4.2108.10+
 
-## Powershell Version
+## PowerShell Version
 
-Powershell Version 5.1 (not PowerShell 6.x/7.x)
+PowerShell Version 5.1
