@@ -39,7 +39,7 @@ Whether it be adding new solutions to the [Microsoft 365 compliance center](micr
 ## August 2021
 
 ### App governance
-- [Expanded entries for alert insights](app-governance-anomaly-detection-alerts.md). New entries were added to describe alert insights now available in app governance.
+- [Expanded entries for alert insights](app-governance-anomaly-detection-alerts.md#collection-alerts). New entries were added to describe additional alert insights now available in app governance.
 
 ### Communication compliance
 - [Communication compliance feature reference](communication-compliance-feature-reference.md) added new preview feature support for modern attachments scanning in Teams private chats and channels.
@@ -60,6 +60,11 @@ Whether it be adding new solutions to the [Microsoft 365 compliance center](micr
 - Default labels are now extended to [Power BI (in preview)](/power-bi/admin/service-security-sensitivity-label-default-label-policy).
 - Auditing events for Outlook on the web that [surface in activity explorer](data-classification-activity-explorer-available-events.md) are now fully rolled out, which means that user activity for built-in labels is now available for all Office apps across all platform.
 - The [supported capabilities tables](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps) have a new footnote for Windows to clarify that the minimum versions are for the Current Channel, and a tip to more easily compare older versions that omit leading zeros against newer versions.
+
+### Retention and records management
+
+- ​​​​​​​[Flowchart to determine when an item will be retained or permanently deleted](retention-flowchart.md). Provides a more step-by-step visual representation of the principles of retention.
+- [Automatically apply a retention label to retain or delete content](apply-retention-labels-automatically.md) New tables added for Exchange and SharePoint, to clarify when retention labels can be automatically applied for each of the available conditions.
 
 ## July 2021
 
