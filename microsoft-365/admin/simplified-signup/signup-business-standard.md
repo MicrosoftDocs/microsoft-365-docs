@@ -76,7 +76,7 @@ You can add a business domain at any point to access the rest of the functionali
 If you would like to add a domain and create a business email account, you can follow the steps in the articles below:
 
 - [Add a domain to Microsoft 365](../setup/add-domain.md)
-- [Set up your organization with email and cloud storage](/microsoft-365/admin/setup/setup-business-standard-simplified-signup#finish-setting-up)
+- [Set up your organization with email and cloud storage](../setup/setup-business-standard-simplified-signup.md#finish-setting-up)
 
 ### Option 2: Create a new business email account
 
@@ -117,7 +117,7 @@ To provide customers with the greatest amount of flexibility, different payment 
 
 ### How does recurring billing work?
 
-When Recurring billing is on, your subscription will continue to be billed each year on the day you subscribed. You can turn it off or back on again in the admin center if your subscription is active. Learn more at [Turn recurring billing off or on](/microsoft-365/commerce/subscriptions/renew-your-subscription#turn-recurring-billing-off-or-on).
+When Recurring billing is on, your subscription will continue to be billed each year on the day you subscribed. You can turn it off or back on again in the admin center if your subscription is active. Learn more at [Turn recurring billing off or on](../../commerce/subscriptions/renew-your-subscription.md#turn-recurring-billing-off-or-on).
 
 ### What if I want to change my business name in future? How do I do that?
 
