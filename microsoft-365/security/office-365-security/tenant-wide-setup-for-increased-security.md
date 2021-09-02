@@ -143,7 +143,7 @@ More information:
 - [More information about Microsoft Cloud App Security](https://www.microsoft.com/cloud-platform/cloud-app-security)
 - [What is Cloud App Security?](/cloud-app-security/what-is-cloud-app-security)
 
-![Cloud App Security dashboard](../../media/1fb2aa65-54b8-4746-9f5e-c187d339e9f5.png)
+![Cloud App Security dashboard.](../../media/1fb2aa65-54b8-4746-9f5e-c187d339e9f5.png)
 
 ## Additional resources
 

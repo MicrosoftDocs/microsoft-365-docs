@@ -80,7 +80,7 @@ Search for supported app level settings related to your organization, the servic
 
 You can find quick links to your domains, and then the link will take you to that domain's overview page.
 
-:::image type="content" source="../../media/search-for-domains-mac.png" alt-text="Search results showing domains owned in the admin center":::
+:::image type="content" source="../../media/search-for-domains-mac.png" alt-text="Search results showing domains owned in the admin center.":::
 
 ## Documentation
 

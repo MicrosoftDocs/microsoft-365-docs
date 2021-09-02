@@ -99,7 +99,7 @@ Knowledge managers can also edit topics directly from the **Manage topics** page
 
 8. The **Suggested sites** section shows the sites that AI suggests to be associated to the topic. 
 
-   ![Screenshot of Suggested sites section](../media/knowledge-management/suggested-sites-section.png)  
+   ![Screenshot of Suggested sites section.](../media/knowledge-management/suggested-sites-section.png)  
 
     You can change a suggested site to a pinned site by selecting the pinned icon.
 

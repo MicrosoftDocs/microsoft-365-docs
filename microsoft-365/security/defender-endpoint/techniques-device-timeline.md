@@ -38,7 +38,7 @@ This feature simplifies the investigation experience by helping analysts underst
 
 For public preview, Techniques are available by default and shown together with events when a device's timeline is viewed. 
 
-![Techniques in device timeline screenshot](images/device-timeline-2.png)
+![Techniques in device timeline screenshot.](images/device-timeline-2.png)
 
 Techniques are highlighted in bold text and appear with a blue icon on the left. The corresponding MITRE ATT&CK ID and technique name also appear as tags under Additional information. 
 
@@ -52,18 +52,18 @@ Select the specific *Attack technique* to open the related ATT&CK technique page
 
 You can copy an entity's details when you see a blue icon on the right. For instance, to copy a related file's SHA1, select the blue page icon.
 
-![Copy entity details](images/techniques-side-pane-clickable.png)
+![Copy entity details.](images/techniques-side-pane-clickable.png)
 
 You can do the same for command lines.
 
-![Copy command line](images/techniques-side-pane-command.png)
+![Copy command line.](images/techniques-side-pane-command.png)
 
 
 ## Investigate related events
 
 To use [advanced hunting](advanced-hunting-overview.md) to find events related to the selected Technique, select **Hunt for related events**. This leads to the advanced hunting page with a query to find events related to the Technique.
 
-![Hunt for related events](images/techniques-hunt-for-related-events.png)
+![Hunt for related events.](images/techniques-hunt-for-related-events.png)
 
 >[!NOTE]
 >Querying using the **Hunt for related events** button from a Technique side pane displays all the events related to the identified technique but does not include the Technique itself in the query results.
@@ -78,7 +78,7 @@ You can customize which columns to expose. You can also filter for flagged event
 ### Choose columns to expose
 You can choose which columns to expose in the timeline by selecting the **Choose columns** button.
 
-![Customize columns](images/filter-customize-columns.png)
+![Customize columns.](images/filter-customize-columns.png)
 
 From there you can select which information set to include.
 
@@ -86,7 +86,7 @@ From there you can select which information set to include.
 
 To view only either events or techniques, select **Filters** from the device timeline and choose your preferred Data type to view.
 
-![Filters screenshot](images/device-timeline-filters.png)
+![Filters screenshot.](images/device-timeline-filters.png)
 
 
 

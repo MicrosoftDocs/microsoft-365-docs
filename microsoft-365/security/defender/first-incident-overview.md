@@ -46,7 +46,7 @@ Incidents in Microsoft 365 Defender are the logical starting points for analysis
 
 ## Next step
 
-[![Prepare your organization and Microsoft 365 tenant](../../media/first-incident-overview/first-incident-path.png)](first-incident-prepare.md)
+[![Prepare your organization and Microsoft 365 tenant.](../../media/first-incident-overview/first-incident-path.png)](first-incident-prepare.md)
 
 Make sure your organization and Microsoft 365 tenant is [prepared for incident handling](first-incident-prepare.md).
 

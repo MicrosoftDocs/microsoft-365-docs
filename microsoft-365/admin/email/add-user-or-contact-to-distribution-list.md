@@ -38,7 +38,7 @@ As the admin of an organization, you may need to add one of your users or contac
 
 4. On the **View Members** page, select **Add members**, and select the user or contact you want to add to the distribution group. 
     
-    ![Add members to distribution group](../../media/f79f59f8-1606-43fe-bae6-df74f5b6259d.png)
+    ![Add members to distribution group.](../../media/f79f59f8-1606-43fe-bae6-df74f5b6259d.png)
   
 5. Select **Save** and then **Close**.
 

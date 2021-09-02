@@ -17,9 +17,9 @@ description: Learn about form processing in Microsoft SharePoint Syntex.
 
 # Form processing overview in Microsoft SharePoint Syntex
 
- ![AI Builder](../media/content-understanding/ai-builder.png)</br>
+ ![AI Builder.](../media/content-understanding/ai-builder.png)</br>
 
-Microsoft SharePoint Syntex uses Microsoft PowerApps [AI Builder](/ai-builder/overview) form processing to create models within SharePoint document libraries.
+Microsoft SharePoint Syntex uses Microsoft Power Apps [AI Builder](/ai-builder/overview) form processing to create models within SharePoint document libraries.
 
 You can use AI Builder form processing to create AI models that use machine learning technology to identify and extract key-value pairs and table data from structured or semi-structured documents, like forms and invoices.
 
@@ -30,7 +30,7 @@ Organizations often receive invoices in large quantities from a variety of sourc
 
 For example, you can create a form processing model that identifies all purchase order documents that are uploaded to the document library. From each purchase order you can then extract and display specific data that is important to you, such as *PO Number*, *Date*, or *Total Cost*.
 
-![Doc library view](../media/content-understanding/doc-lib-done.png)</br>  
+![Doc library view.](../media/content-understanding/doc-lib-done.png)</br>  
 
 You use example files to train your model and define the information to be extracted from your form. The layout of your document is learned by training your model. You only need five form documents to get started. AI Builder will analyze your example files for key-value pairs, and you can also manually identify ones that may not have been detected.  AI builder lets you test the accuracy of your model on your example files.
 

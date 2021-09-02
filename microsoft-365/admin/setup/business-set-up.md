@@ -42,7 +42,7 @@ Watch this video for an overview of Microsoft 365 Business Premium setup.<br><br
 
 ## Add your domain, users, and set up policies
 
-When you purchase Microsoft 365 Business Premium, you have the option of using a domain you own, or buying one during the [sign-up](../../business/sign-up.md).
+When you purchase Microsoft 365 Business Premium, you have the option of using a domain you own, or buying one during the [sign-up](../../business-video/sign-up.md).
 
 - If you purchased a new domain when you signed up, your domain is all set up and you can move to [Add users and assign licenses](#add-users-and-assign-licenses).
 
@@ -78,7 +78,7 @@ You can add users in the wizard, but you can also [add users later](../add-users
 
 Any users you add in the wizard get automatically assigned a Microsoft 365 Business Premium license.
 
-![Screenshot of the Add new users page in the wizard](../../media/addnewuserspage.png)
+![Screenshot of the Add new users page in the wizard.](../../media/addnewuserspage.png)
 
 1. If your Microsoft 365 Business Premium subscription has existing users (for example, if you used Azure AD Connect), you get an option to assign licenses to them now. Go ahead and add licenses to them as well.
 

@@ -26,7 +26,7 @@ Microsoft Teams meetings is a Learning Tools Interoperability (LTI) app that hel
 > The current Teams Meetings LTI only supports syncing Canvas users with Microsoft Azure Active Directory (AAD) in a limited scope. 
 > - Your tenant must have an Microsoft Education license.
 > - Only a single Microsoft tenant can be used for mapping users between Canvas and Microsoft.
-> - You will have to turn off SDS before using the Class Teams LTI in order to avoid duplication of groups.
+> - You will have to turn off School Data Sync (SDS) before using the Class Teams LTI in order to avoid duplication of groups.
 
 ## Microsoft Office 365 Admin
 
@@ -38,7 +38,7 @@ Before managing the Microsoft Teams integration within Instructure Canvas, it is
 
 3. In the admin navigation, select the **Settings** link, and then the **Integrations** tab.
 
-![Canvas Teams Sync Updated png](https://user-images.githubusercontent.com/87142492/128552407-78cb28e9-47cf-4026-954d-12dc3553af6f.png)
+![Canvas Teams Sync Updated png.](https://user-images.githubusercontent.com/87142492/128552407-78cb28e9-47cf-4026-954d-12dc3553af6f.png)
 
 4. Enter your Microsoft tenant name, login attribute, domain suffix, and AAD lookup attribute. These fields will be used for matching users in Canvas with users in Microsoft Azure Active Directory. 
    * The Login Attribute is the Canvas user attribute utilized for matching.
@@ -49,7 +49,7 @@ Before managing the Microsoft Teams integration within Instructure Canvas, it is
 
 6. To approve access for Canvas’s **Microsoft-Teams-Sync-for-Canvas** Azure app, select the **Grant tenant access** link. You'll be redirected to the Microsoft Identity Platform Admin Consent Endpoint.
 
-   ![permissions](media/permissions.png)
+   ![permissions.](media/permissions.png)
 
 7. Select **Accept**. 
 
@@ -58,7 +58,7 @@ Before managing the Microsoft Teams integration within Instructure Canvas, it is
 
 8. Enable the Microsoft Teams sync by turning the toggle on.
 
-   ![teams-sync](media/teams-sync.png)
+   ![teams-sync.](media/teams-sync.png)
 
 ## Canvas Admin
 
@@ -72,11 +72,11 @@ As a Canvas Admin, you'll need to add the Microsoft Teams meetings LTI app withi
 
 2. Select **+ App** to add the Teams LTI apps.
 
-   ![external-apps](media/external-apps.png)
+   ![external-apps.](media/external-apps.png)
 
 3. Select **By Client ID** for configuration type.
 
-   ![add app](media/add-app.png)
+   ![add app.](media/add-app.png)
 
 4. Enter the Client ID provided, and then select **Submit**.
 
