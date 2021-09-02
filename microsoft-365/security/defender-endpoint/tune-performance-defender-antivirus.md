@@ -62,9 +62,9 @@ The admin will be able to view numbers for duration, scan counts for the report 
 
 :::image type="content" source="images/example-output.png" alt-text="Example output for a basic TopFiles query":::
 
-## Additional functionality: exporting and converting to JSON
+## Additional functionality: exporting and converting to CSV and JSON
 
-You can also export and convert the results of the performance analyzer to a CSV file.
+You can also export and convert the results of the performance analyzer to a CSV or JSON file.
 For examples that describe the process of "export" and "convert" through sample codes, see [For CSV](#for-csv) and [For JSON](#for-json).
 
 ### For CSV
