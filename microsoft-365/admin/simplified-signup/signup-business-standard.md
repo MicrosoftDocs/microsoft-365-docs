@@ -44,7 +44,7 @@ To sign up and purchase Microsoft 365 Business Standard (or Microsoft 365 Apps) 
 
 6. Help us make sure this is you. Enter a number that we can use to reach you and select **Send Verification Code**.
 
-- You'll receive a text. Enter your code and select **Verify**.
+    - You'll receive a text. Enter your code and select **Verify**.
 
 7. Decide how you'll sign in to Microsoft 365. You can [create a new business email account](#option-2-create-a-new-business-email-account) by adding a domain or [sign in with your current personal email](#option-1-sign-in-with-your-outlook-hotmail-yahoo-gmail-or-other-email-account).
 
@@ -93,7 +93,7 @@ This option provides immediate access to the full suite of features in your Micr
 
 ### What is a business email and what are the advantages to setting one up?
 
-A business email is an email that uses your own domain name. For example, if you own the domain name contoso.com, you can build a website using the url www.contoso.com, but you can also have a custom email address such as yourname@contoso.com. This is referred to as a branded business email as it gives your email a professional look.
+A business email is an email that uses your own domain name. For example, if you own the domain name 'contoso.com', you can build a website using the url www.contoso.com, but you can also have a custom email address such as yourname@contoso.com. This is referred to as a branded business email as it gives your email a professional look.
 
 ### How do I get a new business email address?
 

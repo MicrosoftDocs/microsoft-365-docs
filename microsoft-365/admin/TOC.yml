@@ -23,7 +23,7 @@
            - name: Invite users to Microsoft 365 Business Standard
              href: ../admin/simplified-signup/admin-invite-business-standard.md
            - name: Accept email invitation to Microsoft 365 Business Standard
-             href: ../admin/simplified-signup/admin-invite-business-standard.md
+             href: ../admin/simplified-signup/user-invite-business-standard.md
            - name: Accept an email invitation to a Microsoft 365 Business Standard subscription organization using an Outlook, Yahoo, Gmail or other account
              href: ../admin/simplified-signup/user-invite-msa-nodomain-join.md
            - name: Migrate data to my Microsoft 365 Business Standard subscription

@@ -59,10 +59,10 @@ There are a couple of options in this case:
 
 2. They can remove themselves by following the steps below:
 
-- Go to https://myapps.microsoft.com/.
-- Sign in to your account and select your profile initials.
-- Select **View account** > **Manage organizations** > **Leave organization**
-- Select **Leave** > **OK**.
+    1. Go to https://myapps.microsoft.com/.
+    2. Sign in to your account and select your profile initials.
+    3. Select **View account** > **Manage organizations** > **Leave organization**
+    4. Select **Leave** > **OK**.
 
 ### How do I help someone install Microsoft Office?
 

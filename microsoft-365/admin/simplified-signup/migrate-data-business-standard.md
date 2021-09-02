@@ -29,23 +29,23 @@ This section describes how to move the files stored in your Microsoft 365 person
 
 1. Select the OneDrive white cloud icon in the Windows notification area and make sure your OneDrive personal account is synced to your device.
 
-:::image type="content" source="../../media/SSU-onedrive-icons.png" alt-text="Screenshot: Select white cloud icon in the Windows notification area":::
+    :::image type="content" source="../../media/ssu-onedrive-icons.png" alt-text="Screenshot: Select white cloud icon in the Windows notification area":::
 
-> [!NOTE]
-> You might need to select the **Show hidden icons** arrow next to the notification area to see the OneDrive icon. If the icon doesn't appear in the notification area, OneDrive might not be running. Select **Start**, type OneDrive in the search box, and then select OneDrive in the search results.
+    > [!NOTE]
+    > You might need to select the **Show hidden icons** arrow next to the notification area to see the OneDrive icon. If the icon doesn't appear in the notification area, OneDrive might not be running. Select **Start**, type OneDrive in the search box, and then select OneDrive in the search results.
 
 2. To add your new business account, select  **Help & Settings** > **Settings**.
 
-:::image type="content" source="../../media/SSU-onedrive-help-settings.png" alt-text="Screenshot: Select Help & Settings to add an account":::
+    :::image type="content" source="../../media/ssu-onedrive-help-settings.png" alt-text="Screenshot: Select Help & Settings to add an account":::
 
 3. In **Settings**, select **Account** > **Add an account**.
 
 4. When OneDrive Setup starts, enter your new business account, and then select **Sign in**.
 
-:::image type="content" source="../../media/SSU-setup-onedrive.png" alt-text="Screenshot: Enter your email address on the OneDrive set up page":::
+    :::image type="content" source="../../media/ssu-setup-onedrive.png" alt-text="Screenshot: Enter your email address on the OneDrive set up page":::
 
-> [!NOTE]
-> If you haven't set up OneDrive with your current Microsoft 365 personal account before, follow the steps above to set up your personal account on your device and sync your files before moving to the next steps.
+    > [!NOTE]
+    > If you haven't set up OneDrive with your current Microsoft 365 personal account before, follow the steps above to set up your personal account on your device and sync your files before moving to the next steps.
 
 ### Drag and drop files in OneDrive
 
@@ -55,7 +55,7 @@ With both your Microsoft 365 personal and business accounts synced to your devic
 
 2. Select and drag the files you want from your OneDrive personal folder to your new OneDrive business folder.
 
-:::image type="content" source="../../media/SSU-onedrive-files-to-work-folder.png" alt-text="Screenshot: Drag and drop files to you new OneDrive for business folder":::
+    :::image type="content" source="../../media/ssu-onedrive-files-to-work-folder.png" alt-text="Screenshot: Drag and drop files to you new OneDrive for business folder":::
 
 ### Notes about moving files from OneDrive personal to OneDrive for work
 

@@ -57,7 +57,7 @@ Download and start using [Office apps for business](https://support.microsoft.co
 
 ## Frequently asked questions
 
-## I didn’t receive an upgrade email?
+### I didn’t receive an upgrade email?
 
 Check your spam folder. If it’s not there, contact your admin or business owner and ask them to send the email again.
 
@@ -86,11 +86,12 @@ You should have received an email from your admin. Please follow the steps outli
 
 No it doesn’t, you can still login the same way as before.
 
-## How can I send and receive emails with my new business email?
+### How can I send and receive emails with my new business email?
 
-- When you launch Microsoft Outlook using your new business account, your new mailbox will be automatically set up for you.
-- First follow: [Set up Outlook for business email](../../business-video/setup-outlook.md).
-- Then follow: [Create and send email in Outlook](https://support.microsoft.com/office/create-and-send-email-in-outlook-19c32deb-08b6-4f90-a211-02bc5f77f360).
+When you launch Microsoft Outlook using your new business account, your new mailbox will be automatically set up for you.
+
+1. First follow: [Set up Outlook for business email](../../business-video/setup-outlook.md).
+2. Then follow: [Create and send email in Outlook](https://support.microsoft.com/office/create-and-send-email-in-outlook-19c32deb-08b6-4f90-a211-02bc5f77f360).
 
 ### How can I leave this business (and stop using this license)?
 

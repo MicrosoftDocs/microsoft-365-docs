@@ -63,18 +63,18 @@ There are a couple of options in this case:
 
 2. You can remove yourself by following the steps below:
 
-- Go to https://myapps.microsoft.com/.
-- Sign in to your account, and select your profile initials.
-- Select **View account** > **Manage organizations** > **Leave organization**
-- Select **Leave** > **OK**.
+    1. Go to https://myapps.microsoft.com/.
+    2. Sign in to your account, and select your profile initials.
+    3. Select **View account** > **Manage organizations** > **Leave organization**
+    4. Select **Leave** > **OK**.
 
 ### I’m getting an error saying I’m part of another business.  What do I do?
 
 You will need to leave your previous Microsoft 365 Business subscription first. Either talk to your previous technical admin or business owner and ask them to remove you. You can also visit [https://myaccount.microsoft.com/](https://myaccount.microsoft.com/) and follow the steps below.
 
-- Sign in to your account, and select your profile initials.
-- Select **View account** > **Manage organizations** > **Leave organization**
-- Select **Leave** > **OK**.
+1. Sign in to your account, and select your profile initials.
+2. Select **View account** > **Manage organizations** > **Leave organization**
+3. Select **Leave** > **OK**.
 
 ### I have a question about using this account. Who can I talk to?
 
