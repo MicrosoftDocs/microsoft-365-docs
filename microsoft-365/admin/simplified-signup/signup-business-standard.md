@@ -93,7 +93,7 @@ This option provides immediate access to the full suite of features in your Micr
 
 ### What is a business email and what are the advantages to setting one up?
 
-A business email is an email that uses your own domain name. For example, if you own the domain name 'contoso.com', you can build a website using the url www.contoso.com, but you can also have a custom email address such as yourname@contoso.com. This is referred to as a branded business email as it gives your email a professional look.
+A business email is an email that uses your own domain name. For example, if you own the domain name `contoso.com`, you can build a website using the url `www.contoso.com`, but you can also have a custom email address such as yourname@contoso.com. This is referred to as a branded business email as it gives your email a professional look.
 
 ### How do I get a new business email address?
 
