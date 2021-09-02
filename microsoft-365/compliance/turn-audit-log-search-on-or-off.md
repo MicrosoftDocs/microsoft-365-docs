@@ -106,14 +106,28 @@ You have to use Exchange Online PowerShell to turn off auditing.
 
       If auditing is not turned on for your organization, a banner is displayed prompting you start recording user and admin activity.
 
-## Auditing enablement\disablement logging
+## Audit records when auditing status is changed
 
-The enabling and disabling of the auditing functionality is being logged inside a hidden mailbox in Exchange Online. You can run the following Exchange Online PowerShell cmdlet to identify when auditing has been enabled or disabled, by who and from which IP address.
+Changes to the auditing status in your organization are themselves audited. This means that audit records are logged when auditing is turned on or turned off. You can search the Exchange admin audit log for these audit records.
+
+To search the Exchange admin audit log for audit records that are generated when turning auditing on or off, run the following command in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell):
 
 ```powershell
 Search-AdminAuditLog -Cmdlets Set-AdminAuditLogConfig -Parameters UnifiedAuditLogIngestionEnabled
 ```
 
-If the CmdletParameters shows `Confirm`, it means auditing was enabled. If its not present, it means auditing was disabled.
+Audit records for these events contain information about when the auditing status was changed, the admin who changed it, and the IP address of the computer that was used to make the change. The following screenshots show audit records that correspond to changing the auditing status in your organization.
 
-![Sample logging output on auditing being enabled and disabled](../media/AuditingEnablementLogging.png)
+### Audit record for turning on auditing
+
+![Audit record for turning on auditing](../media/AuditStatusAuditingEnabled.png)
+
+The value of `Confirm` in the *CmdletParameters* property indicates that unified audit logging was turned on in the compliance center or by running the **Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $true** cmdlet.
+
+### Audit record for turning off auditing
+
+![Audit record for turning off auditing](../media/AuditStatusAuditingDisabled.png)
+
+The value of `Confirm` is not included in the *CmdletParameters* property. This indicates that unified audit logging was turned off by running the **Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $false** command.
+
+For more information about searching the Exchange admin audit log, see [Search-AdminAuditLog](/powershell/module/exchange/search-adminauditlog).
