@@ -453,6 +453,7 @@ The user notifications and policy tips configuration options vary depending on t
 
 
 You can enable/disable user notifications for various Microsoft apps, see [Data Loss Prevention policy tips reference](dlp-policy-tips-reference.md#data-loss-prevention-policy-tips-reference)
+
 - You can enable/disable **Notifying users in Office 365 service with a policy tip.
     - email notifications to the user who sen, shared, or last modified the content
     OR
