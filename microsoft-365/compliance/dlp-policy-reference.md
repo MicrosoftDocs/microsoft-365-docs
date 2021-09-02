@@ -474,9 +474,6 @@ If you selected Devices only, you will get all the same options that are availab
 
 To learn more about user notification and policy tip configuration and use, including how to customize the notification and tip text, see 
 - [Send email notifications and show policy tips for DLP policies](use-notifications-and-policy-tips.md#send-email-notifications-and-show-policy-tips-for-dlp-policies)
-- [Data Loss Prevention policy reference](dlp-policy-reference.md#data-loss-prevention-policy-reference)
-
-
   
 <!--The email can notify the person who sent, shared, or last modified the content and, for site content, the primary site collection administrator and document owner. In addition, you can add or remove whomever you choose from the email notification.
   
