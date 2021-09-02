@@ -64,7 +64,7 @@ When you have more than one retention policy, and when you also use retention la
 
 1. From the [Microsoft 365 compliance center](https://compliance.microsoft.com/), select **Policies** > **Retention**.
 
-2. Select **New retention policy** to start the Create retention policy wizard, and name your new retention policy.
+2. Select **New retention policy** to start the Create retention policy configuration, and name your new retention policy.
 
 3. For the **Choose locations to apply the policy** page, select any or all of the locations for Teams:
     - **Teams channel message**: Messages from standard channel chats and standard channel meetings, but not from [private channels](/microsoftteams/private-channels) that have their own policy location.
@@ -76,7 +76,7 @@ When you have more than one retention policy, and when you also use retention la
     - For group chat messages and private channel messages, because a copy of messages are saved in each user's mailbox who are included in the chat, copies of messages will continue to be returned in eDiscovery results from users who weren't assigned the policy.
     - For users who weren't assigned the policy, deleted messages will be returned in their Teams search results but won't display the contents of the message as a result of the permanent deletion from the policy assigned to users.
 
-4. For **Decide if you want to retain content, delete it, or both** page of the wizard, specify the configuration options for retaining and deleting content.
+4. For **Decide if you want to retain content, delete it, or both** page, specify the configuration options for retaining and deleting content.
 
    You can create a retention policy that just retains content without deleting, retains and then deletes after a specified period of time, or just deletes content after a specified period of time. For more information, see [Settings for retaining and deleting content](#settings-for-retaining-and-deleting-content) on this page.
 
