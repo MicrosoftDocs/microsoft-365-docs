@@ -84,8 +84,8 @@ The static proxy is configurable through Group Policy (GP). The group policy can
 
 | Group Policy | Registry key | Registry entry | Value |
 |:---|:---|:---|:---|
-| Configure Authenticated Proxy usage for the Connected User Experience and Telemetry Service | `HKLM\Software\Policies\Microsoft\Windows\DataCollection` | `DisableEnterpriseAuthProxy` | 1 (REG_DWORD) |
-| Configure connected user experiences and telemetry | `HKLM\Software\Policies\Microsoft\Windows\DataCollection` | `TelemetryProxyServer` | servername or ip:port <br> (For example: http://10.0.0.6:8080) (REG_SZ) </br> |
+| Configure authenticated proxy usage for the connected user experience and the telemetry service | `HKLM\Software\Policies\Microsoft\Windows\DataCollection` | `DisableEnterpriseAuthProxy` | 1 (REG_DWORD) |
+| Configure connected user experiences and telemetry | `HKLM\Software\Policies\Microsoft\Windows\DataCollection` | `TelemetryProxyServer` | ```http://servername or ip:port``` <br> (For example: http://10.0.0.6:8080) (REG_SZ) </br> |
 
 ## Configure a static proxy for Microsoft Defender Antivirus
 
@@ -95,7 +95,7 @@ Configure the static proxy using the Group Policy found here:
 
 1. **Administrative Templates > Windows Components > Microsoft Defender Antivirus > Define proxy server for connecting to the network**. 
 
-2. Set it to **Enabled** and define the proxy server. Note that the URL must have either http:// or https://. For supported versions, see [Manage Microsoft Defender Antivirus updates](manage-updates-baselines-microsoft-defender-antivirus.md).
+2. Set it to **Enabled** and define the proxy server. Note that the URL must have either http:// or https://. For supported versions for https://, see [Manage Microsoft Defender Antivirus updates](manage-updates-baselines-microsoft-defender-antivirus.md).
 
 > [!div class="mx-imgBorder"]
 > ![Proxy server for Microsoft defender Antivirus](images/proxy-server-mdav.png)
