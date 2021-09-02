@@ -29,8 +29,15 @@ Once the attack is complete, an attacker demands money from victims in exchange 
 A human-operated ransomware attack can be catastrophic to businesses of all sizes and are difficult to clean up, requiring complete adversary eviction to protect against future attacks. Unlike commodity ransomware, human-operated ransomware can continue to threaten businesses operations after the initial ransom incident.
 
 >[!Note]
+>A ransomware attack on a Microsoft 365 tenant assumes that the attacker has valid user account credentials for a tenant and has access to all of the files and resources that are permitted to the user account. An attacker without any valid user account credentials would have to decrypt the data at rest that has been encrypted by Microsoft 365 default and enhanced encryption. For more information, see [Encryption and key management overview](/compliance/assurance/assurance-encryption). 
+>
+
+<!--
+>[!Note]
 >A ransomware attack on a Microsoft 365 tenant assumes that the attacker has valid user account credentials for a tenant and has access to all of the files and resources that are permitted to the user account. Microsoft 365 provides default and enhanced encryption for data at rest that is not accessible to an attacker without any valid user account credentials. For more information, see [Encryption and key management overview](/compliance/assurance/assurance-encryption).
 >
+--> 
+
 
 ## Ransomware mitigation and recovery capabilities provided with Microsoft 365
 
