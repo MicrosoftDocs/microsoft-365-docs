@@ -29,36 +29,6 @@ This article provides information about attack reduction rules:
   - GUIDs
   - Configuration management system rule names
 
-## Supported operating systems
-
-The following table lists attack surface reduction rules in alphabetical order. A check mark indicates the rule is supported by the operating system listed in that column.
-
-> [!Note]
->
-> - Unless otherwise indicated, the minimum Windows&nbsp;10 build is version 1709 (RS3, build 16299) or later; the minimum Windows&nbsp;Server build is version is 1809 or later.
->
-> - \* All rules support file and folder exclusions, unless stated otherwise.
-
-| Rule name |  Windows&nbsp;10 | Windows&nbsp;Server 2019 | Windows&nbsp;Server | Windows&nbsp;Server 2016 | Windows&nbsp;Server 2012 R2 |
-|---|:---:|:---:|:---:|:---:|:---:|
-|[Block abuse of exploited vulnerable signed drivers](#block-abuse-of-exploited-vulnerable-signed-drivers) | ![supported](images/checkmark.png) <br><br> | ![supported](images/checkmark.png) <br><br> | ![supported](images/checkmark.png) <br><br> version 1803 (Semi-Annual Channel) or later |  |  |
-|[Block Adobe Reader from creating child processes](#block-adobe-reader-from-creating-child-processes) | ![supported](images/checkmark.png) <br><br> version 1809 or later | ![supported](images/checkmark.png) | ![supported](images/checkmark.png)  <br><br> |  |  |
-|[Block all Office applications from creating child processes](#block-all-office-applications-from-creating-child-processes) | ![supported](images/checkmark.png) <br><br> | ![supported](images/checkmark.png) | ![supported](images/checkmark.png) <br><br> |  |  |
-|[Block credential stealing from the Windows local security authority subsystem (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | ![supported](images/checkmark.png) <br><br> version 1803 or later | ![supported](images/checkmark.png) <br><br> | ![supported](images/checkmark.png) <br><br> |  |  |
-|[Block executable content from email client and webmail](#block-executable-content-from-email-client-and-webmail) | ![supported](images/checkmark.png) <br><br> | ![supported](images/checkmark.png) <br><br> | ![supported](images/checkmark.png) <br><br> |  |  |
-|[Block executable files from running unless they meet a prevalence, age, or trusted list criterion](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) | ![supported](images/checkmark.png) <br><br> version 1803 or later | ![supported](images/checkmark.png) <br><br> | ![supported](images/checkmark.png) <br><br> |  |  |
-|[Block execution of potentially obfuscated scripts](#block-execution-of-potentially-obfuscated-scripts) | ![supported](images/checkmark.png) <br><br> | ![supported](images/checkmark.png) <br><br> | ![supported](images/checkmark.png) <br><br> |  |  |
-|[Block JavaScript or VBScript from launching downloaded executable content](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | ![supported](images/checkmark.png) <br><br> | ![supported](images/checkmark.png) <br><br> | ![supported](images/checkmark.png) <br><br> |  |  |
-|[Block Office applications from creating executable content](#block-office-applications-from-creating-executable-content) | ![supported](images/checkmark.png) <br><br> | ![supported](images/checkmark.png) <br><br> | ![supported](images/checkmark.png) <br><br> |  |  |
-|[Block Office applications from injecting code into other processes](#block-office-applications-from-injecting-code-into-other-processes)  | ![supported](images/checkmark.png) <br><br> | ![supported](images/checkmark.png) <br><br> | ![supported](images/checkmark.png) <br><br> |  |  |
-|[Block Office communication application from creating child processes](#block-office-communication-application-from-creating-child-processes) | ![supported](images/checkmark.png) <br><br> | ![supported](images/checkmark.png) <br><br> | ![supported](images/checkmark.png) <br><br> |  |  |
-|[Block persistence through WMI event subscription](#block-persistence-through-wmi-event-subscription) <br><br> \* _File and folder exclusions not supported._ | ![supported](images/checkmark.png) <br><br> version 1903 (build 18362) or later| ![supported](images/checkmark.png) | ![supported](images/checkmark.png) <br><br> version 1903 (build 18362) or later |  |  |
-|[Block process creations originating from PSExec and WMI commands](#block-process-creations-originating-from-psexec-and-wmi-commands) | ![supported](images/checkmark.png) <br><br> version 1803 or later | ![supported](images/checkmark.png) <br><br> | ![supported](images/checkmark.png) <br><br>  |  |  |
-|[Block untrusted and unsigned processes that run from USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | ![supported](images/checkmark.png) <br><br> | ![supported](images/checkmark.png) <br><br> | ![supported](images/checkmark.png) <br><br> |  |  |
-|[Block Win32 API calls from Office macros](#block-win32-api-calls-from-office-macros) | ![supported](images/checkmark.png) <br><br> | ![supported](images/checkmark.png) <br><br> | ![supported](images/checkmark.png) <br><br> |  |  |
-|[Use advanced protection against ransomware](#use-advanced-protection-against-ransomware) | ![supported](images/checkmark.png) <br><br> version 1803 or later | ![supported](images/checkmark.png) <br><br> | ![supported](images/checkmark.png) <br><br> |  |  |
-| **Rule name** |  **Windows&nbsp;10** | **Windows&nbsp;Server 2019** | **Windows&nbsp;Server** | **Windows&nbsp;Server 2016** | **Windows&nbsp;Server 2012 R2** |
-
 ## Public Preview: Supported operating systems
 
 > [!IMPORTANT]
@@ -93,6 +63,36 @@ The following table lists attack surface reduction rules in alphabetical order. 
 | **Rule name** |  **Windows&nbsp;10** | **Windows&nbsp;Server 2019** | **Windows&nbsp;Server Semi-Annual Channel (SAC)** | **Windows&nbsp;Server 2016** | **Windows&nbsp;Server 2012 R2** |
 
 _End Public Preview: Supported operating systems_
+
+## Supported operating systems
+
+The following table lists attack surface reduction rules in alphabetical order. A check mark indicates the rule is supported by the operating system listed in that column.
+
+> [!Note]
+>
+> - Unless otherwise indicated, the minimum Windows&nbsp;10 build is version 1709 (RS3, build 16299) or later; the minimum Windows&nbsp;Server build is version is 1809 or later.
+>
+> - \* All rules support file and folder exclusions, unless stated otherwise.
+
+| Rule name |  Windows&nbsp;10 | Windows&nbsp;Server 2019 | Windows&nbsp;Server | Windows&nbsp;Server 2016 | Windows&nbsp;Server 2012 R2 |
+|---|:---:|:---:|:---:|:---:|:---:|
+|[Block abuse of exploited vulnerable signed drivers](#block-abuse-of-exploited-vulnerable-signed-drivers) | ![supported](images/checkmark.png) <br><br> | ![supported](images/checkmark.png) <br><br> | ![supported](images/checkmark.png) <br><br> version 1803 (Semi-Annual Channel) or later |  |  |
+|[Block Adobe Reader from creating child processes](#block-adobe-reader-from-creating-child-processes) | ![supported](images/checkmark.png) <br><br> version 1809 or later | ![supported](images/checkmark.png) | ![supported](images/checkmark.png)  <br><br> |  |  |
+|[Block all Office applications from creating child processes](#block-all-office-applications-from-creating-child-processes) | ![supported](images/checkmark.png) <br><br> | ![supported](images/checkmark.png) | ![supported](images/checkmark.png) <br><br> |  |  |
+|[Block credential stealing from the Windows local security authority subsystem (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | ![supported](images/checkmark.png) <br><br> version 1803 or later | ![supported](images/checkmark.png) <br><br> | ![supported](images/checkmark.png) <br><br> |  |  |
+|[Block executable content from email client and webmail](#block-executable-content-from-email-client-and-webmail) | ![supported](images/checkmark.png) <br><br> | ![supported](images/checkmark.png) <br><br> | ![supported](images/checkmark.png) <br><br> |  |  |
+|[Block executable files from running unless they meet a prevalence, age, or trusted list criterion](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) | ![supported](images/checkmark.png) <br><br> version 1803 or later | ![supported](images/checkmark.png) <br><br> | ![supported](images/checkmark.png) <br><br> |  |  |
+|[Block execution of potentially obfuscated scripts](#block-execution-of-potentially-obfuscated-scripts) | ![supported](images/checkmark.png) <br><br> | ![supported](images/checkmark.png) <br><br> | ![supported](images/checkmark.png) <br><br> |  |  |
+|[Block JavaScript or VBScript from launching downloaded executable content](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | ![supported](images/checkmark.png) <br><br> | ![supported](images/checkmark.png) <br><br> | ![supported](images/checkmark.png) <br><br> |  |  |
+|[Block Office applications from creating executable content](#block-office-applications-from-creating-executable-content) | ![supported](images/checkmark.png) <br><br> | ![supported](images/checkmark.png) <br><br> | ![supported](images/checkmark.png) <br><br> |  |  |
+|[Block Office applications from injecting code into other processes](#block-office-applications-from-injecting-code-into-other-processes)  | ![supported](images/checkmark.png) <br><br> | ![supported](images/checkmark.png) <br><br> | ![supported](images/checkmark.png) <br><br> |  |  |
+|[Block Office communication application from creating child processes](#block-office-communication-application-from-creating-child-processes) | ![supported](images/checkmark.png) <br><br> | ![supported](images/checkmark.png) <br><br> | ![supported](images/checkmark.png) <br><br> |  |  |
+|[Block persistence through WMI event subscription](#block-persistence-through-wmi-event-subscription) <br><br> \* _File and folder exclusions not supported._ | ![supported](images/checkmark.png) <br><br> version 1903 (build 18362) or later| ![supported](images/checkmark.png) | ![supported](images/checkmark.png) <br><br> version 1903 (build 18362) or later |  |  |
+|[Block process creations originating from PSExec and WMI commands](#block-process-creations-originating-from-psexec-and-wmi-commands) | ![supported](images/checkmark.png) <br><br> version 1803 or later | ![supported](images/checkmark.png) <br><br> | ![supported](images/checkmark.png) <br><br>  |  |  |
+|[Block untrusted and unsigned processes that run from USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | ![supported](images/checkmark.png) <br><br> | ![supported](images/checkmark.png) <br><br> | ![supported](images/checkmark.png) <br><br> |  |  |
+|[Block Win32 API calls from Office macros](#block-win32-api-calls-from-office-macros) | ![supported](images/checkmark.png) <br><br> | ![supported](images/checkmark.png) <br><br> | ![supported](images/checkmark.png) <br><br> |  |  |
+|[Use advanced protection against ransomware](#use-advanced-protection-against-ransomware) | ![supported](images/checkmark.png) <br><br> version 1803 or later | ![supported](images/checkmark.png) <br><br> | ![supported](images/checkmark.png) <br><br> |  |  |
+| **Rule name** |  **Windows&nbsp;10** | **Windows&nbsp;Server 2019** | **Windows&nbsp;Server** | **Windows&nbsp;Server 2016** | **Windows&nbsp;Server 2012 R2** |
 
 ## Supported configuration management systems
 
