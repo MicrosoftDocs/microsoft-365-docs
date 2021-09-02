@@ -36,6 +36,10 @@ Some options to analyze include:
 The high-level process for running Performance analyzer involves the following steps:
 
 1. Run performance analyzer to collect a performance recording of Microsoft Defender Antivirus events on the endpoint.
+
+> [!NOTE]
+> Performance of Microsoft Defender Antivirus events of the type **Microsoft-Antimalware-Engine** are recorded through the performance analyzer.
+
 1. Analyze the scan results using different recording reports.
 
 ## Using performance analyzer
@@ -87,5 +91,3 @@ Windows 10+ and Windows Server 16+
 ## Powershell Version
 
 Powershell Version 5.1 (not PowerShell 6.x/7.x)
-
-Microsoft-Antimalware-Engine
