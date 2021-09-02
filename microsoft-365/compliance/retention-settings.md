@@ -94,7 +94,7 @@ Before you configure your adaptive scope, use the previous section to identify w
 3. Create as many adaptive scopes as you need. You can select one or more adaptive scopes when you create your policy for retention.
 
 > [!NOTE]
-> It can take a few days for the queries to fully populate and changes will not be immediate. Factor in this delay by waiting a few days before you add a newly created scope to a policy for retention.
+> It can take up to five days for the queries to fully populate and changes will not be immediate. Factor in this delay by waiting a few days before you add a newly created scope to a policy for retention.
 
 To confirm the current membership and membership changes for an adaptive scope:
 
