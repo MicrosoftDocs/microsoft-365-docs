@@ -134,7 +134,7 @@ Identify the stakeholders for your project. The key roles are the Executive spon
 | Subject-matter experts and topic contributors | Generate or review topics and descriptions | Any department |
 | Champions | Help evangelize and manage objection handling | Any department (staff) |
 | Tenant administrator | Configure tenant-level settings | IT department |
-| Power Platform administrator| Configure common data services environment | IT department |
+| Power Platform administrator| Configure Dataverse environment | IT department |
 | Search administrator or manager | Configure search settings | IT department |
 
 In a larger organization, you might also have multiple people in these roles, and you'll need to drive coordination amongst them. In a smaller company, a single person might perform several of these roles. Different roles might be more involved in different phases of the project. For example, Tenant administrators are more involved in setting up the features, while Subject-matter experts and Champions don't get involved until you start defining topics.

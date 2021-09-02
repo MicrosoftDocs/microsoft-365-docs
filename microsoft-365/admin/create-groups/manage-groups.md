@@ -19,7 +19,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
-description: "Learn to manage Microsoft 365 groups, including adding remove group members, editing the email address, group name, or description, and customizing how the group works."
+description: "Learn to manage Microsoft 365 Groups, including adding remove group members, editing the email address, group name, or description, and customizing how the group works."
 ---
 
 # Manage a group in the Microsoft 365 admin center
@@ -101,12 +101,12 @@ To confirm that the group has been successfully purged, run the  *Get-AzureADMSD
 
 [Create a Microsoft 365 group](create-groups.md)
 
-[Manage guest access to Microsoft 365 groups](https://support.microsoft.com/office/bfc7a840-868f-4fd6-a390-f347bf51aff6)
+[Manage guest access to Microsoft 365 Groups](https://support.microsoft.com/office/bfc7a840-868f-4fd6-a390-f347bf51aff6)
 
-[Choose the domain to use when creating Microsoft 365 groups](../../solutions/choose-domain-to-create-groups.md)
+[Choose the domain to use when creating Microsoft 365 Groups](../../solutions/choose-domain-to-create-groups.md)
 
 [Allow members to send as or send on behalf of a Microsoft 365 group](../../solutions/allow-members-to-send-as-or-send-on-behalf-of-group.md)
 
-[Upgrade distribution lists to Microsoft 365 groups](../manage/upgrade-distribution-lists.md)
+[Upgrade distribution lists to Microsoft 365 Groups](../manage/upgrade-distribution-lists.md)
 
-[Manage Microsoft 365 groups with PowerShell](../../enterprise/manage-microsoft-365-groups-with-powershell.md)
+[Manage Microsoft 365 Groups with PowerShell](../../enterprise/manage-microsoft-365-groups-with-powershell.md)
