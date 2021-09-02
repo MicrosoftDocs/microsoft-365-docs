@@ -25,38 +25,38 @@ This article explains how to configure and monitor [Microsoft Defender for Ident
 
 1. In [Microsoft 365 Defender](https://security.microsoft.com/), go to **Settings** and then **Identities**.
 
-    ![Go to Settings, then Identities](../../media/defender-identity/settings-identities.png)
+    ![Go to Settings, then Identities.](../../media/defender-identity/settings-identities.png)
 
 1. Select the **Sensors** page, which displays all of your Defender for Identity sensors. For each sensor, you'll see its name, its domain membership, the version number, if updates should be delayed, the service status, update status, health status, the number of health issues, and when the sensor was created.
 
-    [![Sensor page](../../media/defender-identity/sensor-page.png)](../../media/defender-identity/sensor-page.png#lightbox)
+    [![Sensor page.](../../media/defender-identity/sensor-page.png)](../../media/defender-identity/sensor-page.png#lightbox)
 
     >[!NOTE]
     >In the Defender for Identity portal, the sensor settings and health information were in separate locations. Note that in Microsoft 365 Defender they're now on the same page.
 
 1. If you select **Filters**, you can choose which filters will be available. Then with each filter, you can choose which sensors to display.
 
-    [![Sensor filters](../../media/defender-identity/sensor-filters.png)](../../media/defender-identity/sensor-filters.png#lightbox)
+    [![Sensor filters.](../../media/defender-identity/sensor-filters.png)](../../media/defender-identity/sensor-filters.png#lightbox)
 
-    ![Filtered sensor](../../media/defender-identity/filtered-sensor.png)
+    ![Filtered sensor.](../../media/defender-identity/filtered-sensor.png)
 
 1. If you select one of the sensors, a pane will display with information about the sensor and its health status.
 
-    [![Sensor details](../../media/defender-identity/sensor-details.png)](../../media/defender-identity/sensor-details.png#lightbox)
+    [![Sensor details.](../../media/defender-identity/sensor-details.png)](../../media/defender-identity/sensor-details.png#lightbox)
 
 1. If you select any of the health issues, you'll get a pane with more details about them. If you choose a closed issue, you can reopen it from here.
 
-    ![Issue details](../../media/defender-identity/issue-details.png)
+    ![Issue details.](../../media/defender-identity/issue-details.png)
 
 1. If you select **Manage sensor**, a pane will open where you can configure the sensor details.
 
-    ![Manage sensor](../../media/defender-identity/manage-sensor.png)
+    ![Manage sensor.](../../media/defender-identity/manage-sensor.png)
 
-    ![Configure sensor details](../../media/defender-identity/configure-sensor-details.png)
+    ![Configure sensor details.](../../media/defender-identity/configure-sensor-details.png)
 
 1. In the **Sensors** page, you can export your list of sensors to a .csv file by selecting **Export**.
 
-    ![Export list of sensors](../../media/defender-identity/export-sensors.png)
+    ![Export list of sensors.](../../media/defender-identity/export-sensors.png)
 
 ## Add a sensor
 
@@ -64,11 +64,11 @@ From the **Sensors** page, you can add a new sensor.
 
 1. Select **Add sensor**.
 
-    ![Add sensor](../../media/defender-identity/add-sensor.png)
+    ![Add sensor.](../../media/defender-identity/add-sensor.png)
 
 1. A pane will open, providing you with a button to download the sensor installer and a generated access key.
 
-    ![Download installer and access key](../../media/defender-identity/installer-access-key.png)
+    ![Download installer and access key.](../../media/defender-identity/installer-access-key.png)
 
 1. Select **Download installer** to save the package locally. The zip file includes the following files:
 

@@ -62,7 +62,7 @@ Contoso enrolled deployed PCs and company-owned smartphones and tablets by addin
 
 Here is the Contoso mobile device management deployment architecture.
 
-![Contoso mobile device management deployment infrastructure](../media/contoso-mdm/contoso-mdm-fig1.png)
+![Contoso mobile device management deployment infrastructure.](../media/contoso-mdm/contoso-mdm-fig1.png)
 
 ## Next step
 

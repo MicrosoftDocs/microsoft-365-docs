@@ -259,6 +259,8 @@
           items:
           - name: Plan for data loss prevention
             href: dlp-overview-plan-for-dlp.md
+          - name: Data loss prevention policy reference
+            href: dlp-policy-reference.md 
         - name: Get started with DLP
           items:
           - name: Get started with the default DLP policy
@@ -319,6 +321,8 @@
               href: dlp-use-policies-non-microsoft-cloud-apps.md
             - name: DLP policy conditions and exceptions
               href: dlp-conditions-and-exceptions.md
+            - name: Migrate Exchange Online data loss prevention policies to Compliance center (preview)
+              href: dlp-migrate-exo-policy-to-unified-dlp.md
             - name: Data Loss Prevention policy tips reference
               href: dlp-policy-tips-reference.md
 - name: Manage information governance

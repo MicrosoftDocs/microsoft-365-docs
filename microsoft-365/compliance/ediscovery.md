@@ -30,7 +30,7 @@ Electronic discovery, or eDiscovery, is the process of identifying and deliverin
 
 Microsoft 365 provides three eDiscovery solutions: Content search, Core eDiscovery, and Advanced eDiscovery.
 
-![Key capabilities of Microsoft 365 eDiscovery tools](..\media\m365-ediscovery-solution-graphic.png)
+![Key capabilities of Microsoft 365 eDiscovery tools.](..\media\m365-ediscovery-solution-graphic.png)
 
 - **Content search**. Use use the Content search tool to search for content across Microsoft 365 data sources and then export the search results to local computer.
 
@@ -44,29 +44,29 @@ The following table compares the key capabilities available in Content search, C
 
 |Capability|Content search|Core eDiscovery|Advanced eDiscovery|
 |:------|:-------------|:-------------|:-------------|
-|Search for content|![Supported](../media/check-mark.png)|![Supported](../media/check-mark.png)|![Supported](../media/check-mark.png)|
-|Keyword queries and search conditions|![Supported](../media/check-mark.png)|![Supported](../media/check-mark.png)|![Supported](../media/check-mark.png)|
-|Search statistics|![Supported](../media/check-mark.png)|![Supported](../media/check-mark.png)|![Supported](../media/check-mark.png)|
-|Export search results|![Supported](../media/check-mark.png)|![Supported](../media/check-mark.png)|![Supported](../media/check-mark.png)|
-|Role-based permissions|![Supported](../media/check-mark.png)|![Supported](../media/check-mark.png)|![Supported](../media/check-mark.png)|
-|Case management||![Supported](../media/check-mark.png)|![Supported](../media/check-mark.png)|
-|Place content locations on legal hold||![Supported](../media/check-mark.png)|![Supported](../media/check-mark.png)|
-|Custodian management|||![Supported](../media/check-mark.png)|
-|Legal hold notifications|||![Supported](../media/check-mark.png)|
-|Advanced indexing|||![Supported](../media/check-mark.png)|
-|Error remediation|||![Supported](../media/check-mark.png)|
-|Review sets|||![Supported](../media/check-mark.png)|
-|Support for cloud attachments and SharePoint versions|||![Supported](../media/check-mark.png)|
-|Optical character recognition|||![Supported](../media/check-mark.png)|
-|Conversation threading|||![Supported](../media/check-mark.png)|
-|Collection statistics and reports|||![Supported](../media/check-mark.png)|
-|Review set filtering|||![Supported](../media/check-mark.png)|
-|Tagging|||![Supported](../media/check-mark.png)|
-|Analytics|||![Supported](../media/check-mark.png)|
-|Predictive coding models|||![Supported](../media/check-mark.png)|
-|Computed document metadata|||![Supported](../media/check-mark.png)|
-|Transparency of long-running jobs|||![Supported](../media/check-mark.png)|
-|Export to customer-owned Azure Storage location|||![Supported](../media/check-mark.png)|
+|Search for content|![Supported.](../media/check-mark.png)|![Supported.](../media/check-mark.png)|![Supported.](../media/check-mark.png)|
+|Keyword queries and search conditions|![Supported.](../media/check-mark.png)|![Supported.](../media/check-mark.png)|![Supported.](../media/check-mark.png)|
+|Search statistics|![Supported.](../media/check-mark.png)|![Supported.](../media/check-mark.png)|![Supported.](../media/check-mark.png)|
+|Export search results|![Supported.](../media/check-mark.png)|![Supported.](../media/check-mark.png)|![Supported.](../media/check-mark.png)|
+|Role-based permissions|![Supported.](../media/check-mark.png)|![Supported.](../media/check-mark.png)|![Supported.](../media/check-mark.png)|
+|Case management||![Supported.](../media/check-mark.png)|![Supported.](../media/check-mark.png)|
+|Place content locations on legal hold||![Supported.](../media/check-mark.png)|![Supported.](../media/check-mark.png)|
+|Custodian management|||![Supported.](../media/check-mark.png)|
+|Legal hold notifications|||![Supported.](../media/check-mark.png)|
+|Advanced indexing|||![Supported.](../media/check-mark.png)|
+|Error remediation|||![Supported.](../media/check-mark.png)|
+|Review sets|||![Supported.](../media/check-mark.png)|
+|Support for cloud attachments and SharePoint versions|||![Supported.](../media/check-mark.png)|
+|Optical character recognition|||![Supported.](../media/check-mark.png)|
+|Conversation threading|||![Supported.](../media/check-mark.png)|
+|Collection statistics and reports|||![Supported.](../media/check-mark.png)|
+|Review set filtering|||![Supported.](../media/check-mark.png)|
+|Tagging|||![Supported.](../media/check-mark.png)|
+|Analytics|||![Supported.](../media/check-mark.png)|
+|Predictive coding models|||![Supported.](../media/check-mark.png)|
+|Computed document metadata|||![Supported.](../media/check-mark.png)|
+|Transparency of long-running jobs|||![Supported.](../media/check-mark.png)|
+|Export to customer-owned Azure Storage location|||![Supported.](../media/check-mark.png)|
 |||||
 
 Here's description of each eDiscovery capability.

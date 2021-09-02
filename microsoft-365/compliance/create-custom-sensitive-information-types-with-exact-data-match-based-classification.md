@@ -39,7 +39,7 @@ But what if you wanted a custom sensitive information type (SIT) that uses exact
 - handle sensitive information more securely
 - be used with several Microsoft cloud services
 
-![EDM-based classification](../media/EDMClassification.png)
+![EDM-based classification.](../media/EDMClassification.png)
 
 EDM-based classification enables you to create custom sensitive information types that refer to exact values in a database of sensitive information. The database can be refreshed daily, and contain up to 100 million rows of data. So as employees, patients, or clients come and go, and records change, your custom sensitive information types remain current and applicable. And, you can use EDM-based classification with policies, such as [data loss prevention policies](dlp-learn-about-dlp.md) or [Microsoft Cloud App Security file policies](/cloud-app-security/data-protection-policies).
 
@@ -68,7 +68,7 @@ EDM-based classification is included in these subscriptions
 
 |Portal|World Wide/GCC|GCC-High|DOD|
 |---|---|---|---|
-|Office SCC|protection.office.com|scc.office365.us|scc.protection.apps.mil|
+|Office SCC|compliance.microsoft.com|scc.office365.us|scc.protection.apps.mil|
 |Microsoft 365 Security center|security.microsoft.com|security.microsoft.us|security.apps.mil|
 |Microsoft 365 Compliance center|compliance.microsoft.com|compliance.microsoft.us|compliance.apps.mil|
 
@@ -623,6 +623,7 @@ These locations are support EDM sensitive information types:
 - DLP for SharePoint (files)
 - Microsoft Cloud App Security DLP policies
 - Server-side auto-labeling policies - available for commercial cloud customers and government cloud customers
+<!-- - Client side auto-labeling policies - available for government cloud customers -->  
 
 #### To create a DLP policy with EDM
 
@@ -646,7 +647,7 @@ These locations are support EDM sensitive information types:
 
 10. In the **Conditions** section, in the **+ Add a condition** list, choose **Content contains sensitive type**.
 
-      ![Content contains sensitive info types](../media/edm-dlp-newrule-conditions.png)
+      ![Content contains sensitive info types.](../media/edm-dlp-newrule-conditions.png)
 
 11. Search for the sensitive information type you created when you set up your rule package, and then choose **+ Add**.
     Then choose **Done**.

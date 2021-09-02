@@ -15,14 +15,14 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: 
-- M365-security-compliance 
-- m365initiative-m365-defender 
+ms.collection:
+- M365-security-compliance
+- m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
 ---
 
-#  Download the Microsoft Defender for Endpoint client analyzer
+# Download the Microsoft Defender for Endpoint client analyzer
 
 **Applies to:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
@@ -31,22 +31,11 @@ Learn how to download the Microsoft Defender for Endpoint client analyzer on sup
 
 ## Download client analyzer for Windows OS
 
-1.  The latest stable edition is available for download from following URL:
-    <https://aka.ms/MDEAnalyzer>
+1. The latest stable edition is available for download from following URL: <https://aka.ms/MDEAnalyzer>
+2. The latest preview edition is available for download from following URL: <https://aka.ms/BetaMDEAnalyzer>
 
-2.  The latest preview edition is available for download from following URL:
-    <https://aka.ms/BetaMDEAnalyzer>
+## Download client analyzer for macOS or Linux
 
-##  Download client analyzer for macOS or Linux
+1. The latest stable edition will be integrated into the MDE for Endpoint agent. Ensure that you are running the latest edition for either [macOS](mac-whatsnew.md) or [Linux](linux-whatsnew.md).
 
-1.  The latest stable edition will be integrated into the MDE for Endpoint
-    agent.  
-    Ensure that you are running the latest edition for either
-    [macOS](mac-whatsnew.md)
-    or
-    [Linux](linux-whatsnew.md).
-
-2.  The latest preview edition is available for direct download from following
-    URL: <https://aka.ms/XMDEClientAnalyzer>
-
-
+2. The latest preview edition is available for direct download from following URL: <https://aka.ms/XMDEClientAnalyzer>
