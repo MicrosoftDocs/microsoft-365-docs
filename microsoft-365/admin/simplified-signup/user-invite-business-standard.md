@@ -22,7 +22,7 @@ When you’re already using Microsoft 365 Business with a Gmail, Outlook, Yahoo 
 
 :::image type="content" source="../../media/ssu-accept-invite-upgrade.png" alt-text="Screenshot: Accept email invite for new business email account":::
 
-If you’re an admin of an organization where users are still using Gmail, Outlook, Yahoo or similar email addresses, and you’re looking how to set up branded email, check out these steps instead: [Add a domain to Microsoft 365](../setup/add-domain.md) and [Set up your organization with email and cloud storage](https://docs.microsoft.com/microsoft-365/admin/setup/setup-business-standard-simplified-signup#finish-setting-up)
+If you’re an admin of an organization where users are still using Gmail, Outlook, Yahoo or similar email addresses, and you’re looking how to set up branded email, check out these steps instead: [Add a domain to Microsoft 365](../setup/add-domain.md) and [Set up your organization with email and cloud storage](/microsoft-365/admin/setup/setup-business-standard-simplified-signup#finish-setting-up)
 
 > [!IMPORTANT]
 > If you’re an admin and you’re looking for steps on how to send a user an invite to your Microsoft 365 Business Standard subscription, check out [Invite users to Microsoft 365 Business Standard (Admin)](admin-invite-business-standard.md).
