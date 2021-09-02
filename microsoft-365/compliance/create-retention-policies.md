@@ -204,7 +204,7 @@ Although the retention policy is applied at the site level, only documents have 
 
 When you specify your locations for SharePoint sites or OneDrive accounts, you don't need permissions to access the sites and no validation is done at the time you specify the URL on the **Edit locations** page. However, the SharePoint sites that you specify are checked that they exist at the end of the wizard. If this check fails, you see a message that validation failed for the URL you entered, and the wizard won't create the retention policy until the validation check passes. If you see this message, go back in the wizard to change the URL or remove the site from the retention policy.
 
-To specify individual OneDrive accounts: The URL for a user's OneDrive is usually in the following format and for the user principal name (UPN), any special characters such as such as  ".", ","  "@" are converted to underscores ("_"):: `https://<tenant name>-my.sharepoint.com/personal/<user principal name>`
+To specify individual OneDrive accounts: The URL for a user's OneDrive is usually in the following format and for the user principal name (UPN), any special characters such as such as  ".", ","  "@" are converted to underscores ("_"): `https://<tenant name>-my.sharepoint.com/personal/<user principal name>`
 
 For example, for a user in the Contoso tenant that has a UPN of "rsimone@contoso.onmicrosoft.com": `https://contoso-my.sharepoint.com/personal/rsimone_contoso_onmicrosoft_com`. However, numbers or GUIDs can be appended when conflicts are detected.`
 
