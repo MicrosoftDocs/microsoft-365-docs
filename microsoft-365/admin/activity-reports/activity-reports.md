@@ -146,7 +146,7 @@ You can't generate a report where you enter a user's account and then get a list
 
 There are circumstances where new users show up as **unknown**. This is usually due to occasional delays in creating user profiles.  
   
-## Hide user details in the reports
+## Show user details in the reports
 
 Reports provide information about your organization’s usage data. By default, reports display information with identifiable names for users, groups, and sites. Starting September 1, 2021, we are hiding user information by default for all reports as part of our ongoing commitment to help companies support their local privacy laws.
   
