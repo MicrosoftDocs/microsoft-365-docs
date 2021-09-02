@@ -17,9 +17,9 @@
         - name: Sign up for Microsoft 365 Business Standard
           items:
            - name: Sign up for Microsoft 365 Business Standard
-             href: ../admin/setup/simplified-signup/signup-business-standard.md
+             href: ../admin/simplified-signup/signup-business-standard.md
            - name: Set up Microsoft 365 Business Standard
-             href: ../admin/setup/signup-business-standard.md
+             href: ../admin/simplified-signup/signup-business-standard.md
            - name: Invite users to Microsoft 365 Business Standard
              href: ../admin/simplified-signup/admin-invite-business-standard.md
            - name: Accept email invitation to Microsoft 365 Business Standard

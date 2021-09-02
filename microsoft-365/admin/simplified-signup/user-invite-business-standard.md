@@ -72,7 +72,7 @@ Your data will remain in your old account, nothing will be deleted.  You will be
 ### How can I copy data to my business account?
 
 <!--- For steps on copying your data from your old OneDrive account to your new OneDrive for business account, check out: [Migrate data to my Microsoft 365 Business Standard subscription](migrate-data-business-standard.md).-->
-- For moving emails or contacts, check out: [Migrate email and contacts to Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/migrate-email-and-contacts-admin).
+- For moving emails or contacts, check out [Migrate email and contacts to Microsoft 365](../setup/migrate-email-and-contacts-admin.md).
 
 ### Why does it say my admin now handles my data?
 
