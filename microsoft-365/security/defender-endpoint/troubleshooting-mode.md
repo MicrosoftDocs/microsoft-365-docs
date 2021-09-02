@@ -35,7 +35,7 @@ Microsoft Defender for Endpoint troubleshooting mode allows you to troubleshoot 
 
 - Allows local admins, with appropriate permissions, to change configurations on individual endpoints that are normally locked by policy. Having a device in troubleshooting mode can be helpful when diagnosing Microsoft Defender Antivirus performance and compatibility issues.
 
-- Troubleshooting mode has an expiration and will automatically turn off after reaching the expiration time. After expiration, all policy-managed configurations will become read-only again and will revert back to the configuration before setting the troubleshooting mode on.
+- Troubleshooting mode automatically turns off after reaching the expiration time. After expiration, all policy-managed configurations will become read-only again and will revert back to the configuration before setting the troubleshooting mode on.
 
 - Use troubleshooting mode to disable/change the tamper protection setting to perform: 
 
