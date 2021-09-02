@@ -267,9 +267,9 @@ Finally, you can use simulation mode to provide an approximation of the time nee
 
     ![Choose locations page auto-labelingwizard.](../media/locations-auto-labeling-wizard.png)
 
-    To specify individual OneDrive accounts: The URL for a user's OneDrive is usually in the following format and for the user principal name (UPN), any special characters such as such as  ".", ","  "@" are converted to underscores ("_"): `https://<tenant name>-my.sharepoint.com/personal/<user principal name>`
+    To specify individual OneDrive accounts, the URL for a user's OneDrive is usually in the following format and for the user principal name (UPN), any special characters such as such as a period, comma, space, and the at sign ("@") are converted to underscores ("_"): `https://<tenant name>-my.sharepoint.com/personal/<user principal name>`
 
-    For example, for a user in the Contoso tenant that has a UPN of "rsimone@contoso.onmicrosoft.com": `https://contoso-my.sharepoint.com/personal/rsimone_contoso_onmicrosoft_com`. However, numbers or GUIDs can be appended when conflicts are detected.`
+    For example, for a user in the Contoso tenant that has a UPN of "rsimone@contoso.onmicrosoft.com": `https://contoso-my.sharepoint.com/personal/rsimone_contoso_onmicrosoft_com`. However, numbers or GUIDs can be appended when conflicts are detected.
 
     It's always best to confirm a user's URL for their OneDrive account, which you can do with the Microsoft 365 admin center, or PowerShell. For more information, see [Get a list of all user OneDrive URLs in your organization](/onedrive/list-onedrive-urls).
 
