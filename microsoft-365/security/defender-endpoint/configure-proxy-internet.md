@@ -81,17 +81,11 @@ The static proxy is configurable through Group Policy (GP). The group policy can
 
   ![Image of Group Policy setting2.](images/atp-gpo-proxy2.png)
 
-  The policy sets two registry values, `TelemetryProxyServer` as REG_SZ and `DisableEnterpriseAuthProxy` as REG_DWORD, under the registry key `HKLM\Software\Policies\Microsoft\Windows\DataCollection`.
 
-  The registry value `TelemetryProxyServer` takes the following string format:
-
-  ```text
-  <server name or ip>:<port>
-
-  For example: http://10.0.0.6:8080
-  ```
-
-  The registry value `DisableEnterpriseAuthProxy` should be set to 1.
+| Group Policy | Registry key | Registry entry | Value |
+|:---|:---|:---|:---|
+| Configure Authenticated Proxy usage for the Connected User Experience and Telemetry Service | `HKLM\Software\Policies\Microsoft\Windows\DataCollection` | `DisableEnterpriseAuthProxy` | 1 (REG_DWORD) |
+| Configure connected user experiences and telemetry | `HKLM\Software\Policies\Microsoft\Windows\DataCollection` | `TelemetryProxyServer` | servername or ip:port <br> (For example: http://10.0.0.6:8080) (REG_SZ) </br> |
 
 ## Configure a static proxy for Microsoft Defender Antivirus
 
@@ -101,12 +95,12 @@ Configure the static proxy using the Group Policy found here:
 
 1. **Administrative Templates > Windows Components > Microsoft Defender Antivirus > Define proxy server for connecting to the network**. 
 
-2. Set it to **Enabled** and define the proxy server. Note that the URL must have either http:// or https://.
+2. Set it to **Enabled** and define the proxy server. Note that the URL must have either http:// or https://. For supported versions, see [Manage Microsoft Defender Antivirus updates](manage-updates-baselines-microsoft-defender-antivirus.md).
 
 > [!div class="mx-imgBorder"]
 > ![Proxy server for Microsoft defender Antivirus](images/proxy-server-mdav.png)
 
-3. The policy sets the registry value `ProxyServer` as REG_SZ, under the registry key `HKLM\Software\Policies\Microsoft\Windows Defender`.
+3. Under the registry key `HKLM\Software\Policies\Microsoft\Windows Defender`, the policy sets the registry value `ProxyServer` as REG_SZ. 
 
    The registry value `ProxyServer` takes the following string format:
 
