@@ -34,7 +34,9 @@ As the admin of a Microsoft 365 organization, you can now see insights and data 
 
 ## Before you begin
 
-You need to be a feedback or global administrator to view and read survey reports.
+You need to be a feedback or global administrator, and your organization needs to have feedback surveys enabled to view and read survey reports.
+
+To learn more about how to enable and manage surveys, check out
 
 ## Survey insights
 
@@ -45,40 +47,82 @@ You need to be a feedback or global administrator to view and read survey report
 
 ### Chart information
 
-Total survey responses and comments by end-users. This area displays Total Feedback, Feedback volume by month, Volume by application and Volume by operating system.
+**Total feedback** shows the total number of NPS feedback responses submitted by end users, include NPS feedback with comments and without comments.
 
-**Total Feedback** shows
+**Comments** shows the total number of NPS feedback responses submitted by end user that include comments.
 
-**Feedback volume by month** shows
+**Volume by application** shows the total number of NPS feedback response volume by application.
 
-**Volume by application** shows
-
-**Volume by operating system** shows
+**Feedback volume by month** shows the total number of NPS feedback response volume by month.
 
 :::image type="content" source="../../media/prosight-charts area.png" alt-text="Screenshot: Microsoft 365 survey insights":::
 
 ### Top topic filters
 
-You can filter by Date, Surveys, Application, Language and Fork.
+Topics are machine learning models that help analyze the NPS survey feedback, providing access to the most common themes at a top level. The Top topic filters display the top 5 topics with the most volume of verbatim feedback.
 
-**Date filter** You can search by date for the following: All dates, Past 6 Months, Past 30 days, Past Week.
+> [!NOTE]
+> We only publish an intelligent topic after it meets a minimum quality bar set in partnership with subject matter experts. Precision and recall metrics are used to determine the same.
 
-**Surveys filter** You can select different surveys for your organization.
+**Verbatim precision** is how likely it is that a verbatim classified in this topic is correct.
 
-**Application filter** You can select the application that the survey was collected from.
+**Verbatim Recall** is how likely that a verbatim related to this topic is classified in this topic.
 
-**Language filter** You can filter by the languages of the apps that survey respondents were using while responding to the surveys.
+The topics that currently are available as follows:
 
-**Fork filter** You can filter by Microsoft 365 forks.
+**Navigation** includes customer comments about app navigation and usability.
+Verbatim Precision- 93%
+Verbatim Recall- 98%
 
-:::image type="content" source="../../media/prosight-top-topic-filters.png" alt-text="Screenshot: Microsoft 365 survey insights":::
+**Collaboration** refers to how easy users find it to collaborate using Microsoft apps.
+Verbatim Precision- 92%
+Verbatim Recall-91%
+
+**Value** refers to customer perceptions about topics including pricing and payment preferences.
+Verbatim Precision- 86%
+Verbatim Recall- 100%
+
+**Reliability** includes customer comments about app and system behavior resulting in an unexpected termination.
+Verbatim Precision- 97%
+Verbatim Recall- 94%
+
+**Performance** refers to customer comments that addresses issues related to perceived speed of operations that a user experiences while using a Microsoft product. This topic does not cover the areas of crashes or broader reliability issues. 
+Verbatim Precision- 92%
+Verbatim Recall- 98%
+
+**User Education** feedback includes customer comments on help documentation, tutorials, guides and other in-product or online learning content.
+Verbatim Precision- 83%
+Verbatim Recall- 87%
+
+**Complexity** refers to customer feedback on whether they feel the apps are complex or straightforward to use. 
+Verbatim Precision- 92%
+Verbatim Recall- 89%
+
+**General Praise** refers to customers comments that have a positive sentiment and don't fit under any other topic. 
+Verbatim Precision- 93%
+Verbatim Recall- 98%
 
 ### Export to CSV and Search
 
-You can export data using filters that you select. You can search for keywords.
+You can export raw data for further analysis using the Export to CSV functionality.
 
-:::image type="content" source="../../media/prosight-export-to-csv-and-search.png" alt-text="Screenshot: Microsoft 365 survey insights":::
+> [!NOTE]
+> The raw data includes all types of feedback, including non NPS feedback.
+
+<!-->:::image type="content" source="../../media/prosight-export-to-csv-and-search.png" alt-text="Screenshot: Microsoft 365 survey insights":::-->
 
 ### Filters
 
+You can filter by Channels, Products, Platforms and Feedback.
+
+**Channels**
+
+**Products**
+
+**Platforms**
+
+**Feedback types**- Filter option for this section is set only to NPS feedback type.
+
 :::image type="content" source="../../media/prosight-filters.png" alt-text="Screenshot: Microsoft 365 survey insights":::
+
+### Choose columns
