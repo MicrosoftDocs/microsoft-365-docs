@@ -335,14 +335,16 @@
           href: retention.md
         - name: Flowchart for retention & deletion outcomes
           href: retention-flowchart.md
-        - name: Retention & deletion for SharePoint and OneDrive
-          href: retention-policies-sharepoint.md
-        - name: Retention & deletion for Microsoft Teams
-          href: retention-policies-teams.md
-        - name: Retention & deletion for Yammer
-          href: retention-policies-yammer.md
-        - name: Retention & deletion for Exchange
-          href: retention-policies-exchange.md
+        - name: Retention & deletion for workloads
+          items: 
+            - name: SharePoint and OneDrive
+              href: retention-policies-sharepoint.md
+            - name: Microsoft Teams
+              href: retention-policies-teams.md
+            - name: Yammer
+              href: retention-policies-yammer.md
+            - name: Exchange
+              href: retention-policies-exchange.md
         - name: Limits for retention & deletion
           href: retention-limits.md
     - name: Archive third-party data
