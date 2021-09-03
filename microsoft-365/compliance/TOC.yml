@@ -332,21 +332,19 @@
     - name: Retain and delete data
       items: 
         - name: Learn about retention
-          items:
-            - name: Retention policies and labels
-              href: retention.md
-            - name: Retention flowchart
-              href: retention-flowchart.md
-            - name: Retention for SharePoint and OneDrive
-              href: retention-policies-sharepoint.md
-            - name: Retention for Microsoft Teams
-              href: retention-policies-teams.md
-            - name: Retention for Yammer
-              href: retention-policies-yammer.md
-            - name: Retention for Exchange
-              href: retention-policies-exchange.md
-            - name: Limits for retention
-              href: retention-limits.md
+          href: retention.md
+        - name: Retention flowchart
+          href: retention-flowchart.md
+        - name: Retention for SharePoint and OneDrive
+          href: retention-policies-sharepoint.md
+        - name: Retention for Microsoft Teams
+          href: retention-policies-teams.md
+        - name: Retention for Yammer
+          href: retention-policies-yammer.md
+        - name: Retention for Exchange
+          href: retention-policies-exchange.md
+        - name: Limits for retention
+          href: retention-limits.md
     - name: Archive third-party data
       items: 
         - name: Overview of archiving third-party data
@@ -497,10 +495,6 @@
           href: work-with-partner-to-archive-third-party-data.md
         - name: Search for third-party data
           href: use-content-search-to-search-third-party-data-that-was-imported.md
-
-
-
-
     - name: Information governance
       items: 
         - name: Get started with information governance
