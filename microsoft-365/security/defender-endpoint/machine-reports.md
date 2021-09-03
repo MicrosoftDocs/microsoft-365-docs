@@ -113,7 +113,7 @@ Within the flyout: clicking on the name of the device will redirect you to the "
 
 #### Microsoft Defender Antivirus version card functionality
 
-For the three cards report about Microsoft Defender Antivirus:
+For the three cards that report about Microsoft Defender Antivirus version information:
 
 - engine version
 - security intelligence version
