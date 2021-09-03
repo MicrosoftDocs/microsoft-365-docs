@@ -21,7 +21,6 @@ ms.technology: mde
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-
 **Applies to:**
 
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=22154037)
@@ -40,6 +39,7 @@ This article describes how to specify from where updates should be downloaded (t
 > Microsoft Defender Antivirus Security intelligence updates are delivered through Windows Update and starting Monday, October 21, 2019, all security intelligence updates will be SHA-2 signed exclusively. Your devices must be updated to support SHA-2 in order to update your security intelligence. To learn more, see [2019 SHA-2 Code Signing Support requirement for Windows and WSUS](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus).
 
 <a id="fallback-order"></a>
+
 ## Fallback order
 
 Typically, you configure endpoints to individually download updates from a primary source followed by other sources in order of priority, based on your network configuration. Updates are obtained from sources in the order you specify. If a source is not available, the next source in the list is used immediately.
@@ -54,7 +54,7 @@ The older the updates on an endpoint, the larger the download will be. However, 
 There are five locations where you can specify where an endpoint should obtain updates:
 
 - [Microsoft Update](https://support.microsoft.com/help/12373/windows-update-faq)
-- [Windows Server Update Service](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus)
+- [Windows Server Update Service](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus) (Intune Internal Definition Update Server - If you use SCCM/SUP to get definition updates for Microsoft Defender Antivirus, and need to access Windows Update on blocked on client devices, you can transition to co-management and offload the endpoint protection workload to Intune. In the AntiMalware policy configured in Intune there is an option for 'internal definition update server' which can be configured to use on-premises WSUS as the update source)
 - [Microsoft Endpoint Configuration Manager](/configmgr/core/servers/manage/updates)
 - [Network file share](#unc-share)
 - [Security intelligence updates for Microsoft Defender Antivirus and other Microsoft antimalware](https://www.microsoft.com/wdsi/defenderupdates) (Your policy and registry might have this listed as Microsoft Malware Protection Center (MMPC) security intelligence, its former name.)
@@ -163,6 +163,7 @@ For example, suppose that Contoso has hired Fabrikam to manage their security so
 > Microsoft does not test third-party solutions for managing Microsoft Defender Antivirus.
 
 <a id="unc-share"></a>
+
 ## Create a UNC share for security intelligence updates
 
 Set up a network file share (UNC/mapped drive) to download security intelligence updates from the MMPC site by using a scheduled task.
