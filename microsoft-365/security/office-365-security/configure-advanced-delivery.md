@@ -157,7 +157,8 @@ To create the SecOps override policy, use the following syntax:
 New-SecOpsOverridePolicy -Name SecOpsOverridePolicy -SentTo <EmailAddress1>,<EmailAddress2>,...<EmailAddressN>
 ```
 
-**Note**: Regardless of the Name value you specify, the policy name will be SecOpsOverridePolicy, so you might as well use that value.
+> [!NOTE]
+> Regardless of the Name value you specify, the policy name will be SecOpsOverridePolicy, so you might as well use that value.
 
 This example creates the SecOps mailbox policy.
 
@@ -175,7 +176,8 @@ This example creates the SecOps mailbox rule with the specified settings.
 New-SecOpsOverrideRule -Name SecOpsOverrideRule -Policy SecOpsOverridePolicy
 ```
 
-**Note**: Regardless of the Name value you specify, the rule name will be SecOpsOverrideRule\<GUID\> where \<GUID\> is a unique GUID value (for example, 6fed4b63-3563-495d-a481-b24a311f8329).
+> [!NOTE]
+> Regardless of the Name value you specify, the rule name will be SecOpsOverrideRule\<GUID\> where \<GUID\> is a unique GUID value (for example, 6fed4b63-3563-495d-a481-b24a311f8329).
 
 For detailed syntax and parameter information, see [New-SecOpsOverrideRule](/powershell/module/exchange/new-secopsoverriderule).
 
@@ -223,7 +225,8 @@ This example adds secops2@contoso.com to the SecOps override policy.
 Set-SecOpsOverridePolicy -Identity SecOpsOverridePolicy -AddSentTo secops2@contoso.com
 ```
 
-**Note**: If an associated, valid SecOps override rule exists, the email addresses in the rule will also be updated.
+> [!NOTE]
+> If an associated, valid SecOps override rule exists, the email addresses in the rule will also be updated.
 
 For detailed syntax and parameter information, see [Set-SecOpsOverridePolicy](/powershell/module/exchange/set-secopsoverridepolicy).
 
