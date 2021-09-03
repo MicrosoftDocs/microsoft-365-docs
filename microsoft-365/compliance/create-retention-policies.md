@@ -202,13 +202,14 @@ When you choose the **SharePoint sites** location, the retention policy can reta
 
 Although the retention policy is applied at the site level, only documents have retention settings applied to them. For detailed information about what's included and excluded when you configure retention settings for SharePoint and OneDrive, see [What's included for retention and deletion](retention-policies-sharepoint.md#whats-included-for-retention-and-deletion).
 
-When you specify your locations for SharePoint sites or OneDrive accounts, you don't need permissions to access the sites and no validation is done at the time you specify the URL on the **Edit locations** page. However, the SharePoint sites that you specify are checked that they exist at the end of the configuration. If this check fails, you see a message that validation failed for the URL you entered, and the configuration process won't create the retention policy until the validation check passes. If you see this message, go back in the configuration to change the URL or remove the site from the retention policy.
+When you specify your location for SharePoint sites or OneDrive accounts, you don't need permissions to access the sites and no validation is done at the time you specify the URL on the **Edit locations** page. However, the SharePoint sites that you specify are checked that they exist at the end of the configuration. If this check fails, you see a message that validation failed for the URL you entered, and the configuration process won't create the retention policy until the validation check passes. If you see this message, go back in the configuration to change the URL or remove the site from the retention policy.
 
-To specify individual OneDrive accounts to include or exclude, the URL for a user's OneDrive is usually in the following format. For the user principal name (UPN), any special characters such as a period, comma, space, and the at sign ("@") are converted to underscores ("_"): `https://<tenant name>-my.sharepoint.com/personal/<user principal name>`
+To specify individual OneDrive accounts to include or exclude, the URL for a user's OneDrive is usually in the following format. For the UserPrincipalName (UPN), any special characters such as a period, comma, space, and the at sign ("@") are converted to underscores ("_"): `https://<tenantname>-my.sharepoint.com/personal/<userprincipalname>`
 
-For example, for a user in the Contoso tenant who has a UPN of "rsimone@contoso.onmicrosoft.com": `https://contoso-my.sharepoint.com/personal/rsimone_contoso_onmicrosoft_com`. However, numbers or GUIDs can be appended when conflicts are detected.
+For example, for a user in the Contoso tenant who has a UPN of "rsimone@contoso.com": `https://contoso-my.sharepoint.com/personal/rsimone_contoso_com`. However, numbers or GUIDs can be appended when conflicts are detected.
 
-It's always best to confirm a user's URL for their OneDrive account, which you can do with the Microsoft 365 admin center, or PowerShell. For more information, see [Get a list of all user OneDrive URLs in your organization](/onedrive/list-onedrive-urls).
+> [!NOTE] 
+> It's always best to confirm URL for the user's OneDrive account, which you can do with either Microsoft 365 Admin Center, or PowerShell. For more information, see [Get a list of all user OneDrive URLs in your organization](/onedrive/list-onedrive-urls).
 
 ### Configuration information for Microsoft 365 Groups
 
