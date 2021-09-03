@@ -156,29 +156,31 @@ The following section describes the Get-MpPerformanceReport PowerShell cmdlet. A
 Get-MpPerformanceReport    [-Path] <String>
 [-TopScans <Int32>]
 [-TopFiles  <Int32>
-[ -TopScansPerFile <Int32>]
-[-TopProcessesPerFile  <Int32>  
-	[-TopScansPerProcessPerFile <Int32>]
+	[-TopScansPerFile <Int32>]
+	[-TopProcessesPerFile  <Int32>  
+		[-TopScansPerProcessPerFile <Int32>]
 	]
 ] 
 [-TopExtensions  <Int32>
-[-TopScansPerExtension <Int32>
-[-TopProcessesPerExtension <Int32>
-	[-TopScansPerProcessPerExtension <Int32>]
-	]
-
-[-TopFilesPerExtension  <Int32>
-	[-TopScansPerFilePerExtension <Int32>]
-	]
-] 
+	[-TopScansPerExtension <Int32>]
+	[-TopProcessesPerExtension <Int32>
+		[-TopScansPerProcessPerExtension <Int32>]
+		]
+	[-TopFilesPerExtension  <Int32>
+		[-TopScansPerFilePerExtension <Int32>]
+		]
+	] 
+]
 [-TopProcesses  <Int32>
 	[-TopScansPerProcess <Int32>]
 	[-TopExtensionsPerProcess <Int32>
 		[-TopScansPerExtensionPerProcess <Int32>]
-		]
+	]
+]
 [-TopFilesPerProcess  <Int32>
 	[-TopScansPerFilePerProcess <Int32>]
 ]
+[-MinDuration <String>]
 ```
 
 #### Description: Get-MpPerformanceReport
@@ -194,6 +196,32 @@ Windows Version 10 and later.
 
 > [!NOTE]
 > This feature is available starting with platform version 4.18.2108.X and later.
+
+#### Examples: Get-MpPerformanceReport
+
+##### Example 1: Single query 
+
+```powershell
+Get-MpPerformanceReport -Path:.\Defender-scans.etl -TopScans:20
+```
+
+##### Example 2: Multiple queries 
+
+```powershell
+Get-MpPerformanceReport -Path:.\Defender-scans.etl -TopFiles:10 -TopExtensions:10 -TopProcesses:10 -TopScans:10
+```
+
+##### Example 3: Nested queries 
+
+```powershell
+Get-MpPerformanceReport -Path:.\Defender-scans.etl -TopProcesses:10 -TopExtensionsPerProcess:3 -TopScansPerExtensionPerProcess:3
+```
+
+##### Example 4: Using -MinDuration parameter
+
+```powershell
+Get-MpPerformanceReport -Path:.\Defender-scans.etl -TopScans:100 -MinDuration:100ms
+```
 
 #### Parameters: Get-MpPerformanceReport
 
