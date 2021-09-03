@@ -29,70 +29,10 @@ ms.technology: mde
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-The devices status report provides high-level information about the devices in your organization. The report includes trending information showing the sensor health state, antivirus status, OS platforms, and Windows 10 versions.
-
-The dashboard is structured into two sections:
-
-![Image of the device report.](images/device-reports.png)
-
-****
-
-|Section|Description|
-|---|---|
-|1|Device trends|
-|2|Device summary (current day)|
-|||
-
-## Device trends
-
-By default, the device trends graph displays device information from the 30-day period ending in the latest full day. To gain better perspective on trends occurring in your organization, you can fine-tune the reporting period by adjusting the time period shown. To adjust the time period, select a time range from the drop-down options:
-
-- 30 days
-- Three months
-- Six months
-- Custom
-
-> [!NOTE]
-> These filters are only applied on the device trends section. It doesn't affect the device summary section.
-
-## Device summary
-
-Unlike the device trends graph, the device summary graph shows device information scoped to the current day.
-
-> [!NOTE]
-> The data reflected in the summary section is scoped to 180 days prior to the current date. For example if today's date is March 27, 2019, the data on the summary section will reflect numbers starting from September 28, 2018 to March 27, 2019.
+> [!IMPORTANT]
+> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 >
-> The filter applied on the trends section is not applied on the summary section.
-
-The device trends section allows you to drill down to the devices list with the corresponding filter applied to it. For example, clicking on the Inactive bar in the Sensor health state card will bring you the devices list with results showing only devices whose sensor status is inactive.
-
-## Device attributes
-
-The report is made up of cards that display the following device attributes:
-
-- **Health state**: shows information about the sensor state on devices. This graph provides an all-up view of devices that are active, experiencing impaired communications, inactive, or where no sensor data is seen.
-- **Antivirus status for active Windows 10 devices**: shows the number of devices and status of Microsoft Defender Antivirus.
-- **OS platforms**: shows the distribution of OS platforms that exists within your organization.
-- **Windows 10 versions**: shows the distribution of Windows 10 devices and their versions in your organization.
-
-## Filter data
-
-Use the provided filters to include or exclude devices with certain attributes.
-
-You can select multiple filters to apply from the device attributes.
-
-> [!NOTE]
-> These filters apply to **all** the cards in the report.
-
-For example, to show data about Windows 10 devices with Active sensor health state:
-
-1. Under **Filters > Sensor health state > Active**.
-2. Then select **OS platforms > Windows 10**.
-3. Select **Apply**.
-
-## Related topic
-
-- [Threat protection report](threat-protection-reports.md)
+> Information about these features that are commercially released follows the prerelease information in the section titled [Publicly-released: Device health and compliance report in Microsoft Defender for Endpoint](#publicly-released-device-health-and-compliance-report-in-microsoft-defenderd-for-endpoint).
 
 ## Public Preview - Device health and antivirus compliance report in Microsoft Defender for Endpoint
 
@@ -100,26 +40,23 @@ The devices status report provides high-level information about the devices in y
 In the Microsoft 365 Security dashboard navigation panel, select **Reports**, and then open **Device health and compliance**.
 The Device health and compliance dashboard is structured in two tabs:
 
-- The **General health** tab provides general operating system information, divided into three cards that display the following device attributes:
+- The **Sensor health & OS** tab provides general operating system information, divided into three cards that display the following device attributes:
 
-- [Health status](#health-status)
-- [OS systems and platforms](#os-systems-and-platforms)
-- [Windows 10 versions](#windows-10-versions)
+  - [Sensor health](#sensor-health)
+  - [OS systems and platforms](#os-systems-and-platforms)
+  - [Windows 10 versions](#windows-10-versions)
 
-- The [**Antivirus health**](#antivirus-health-tab) tab has five cards that report on aspects of Microsoft Defender Antivirus. In this document, these cards are treated as two groups - based on functionality - which is _Device antivirus mode and scan results_:
+- The [**Microsoft Defender Antivirus health** tab](#microsoft-defender-antivirus-health-tab) has five cards that report on aspects of Microsoft Defender Antivirus:
 
   - [Microsoft Defender Antivirus mode](#microsoft-defender-antivirus-mode)
+  - [Microsoft Defender Antivirus engine version](#microsoft-defender-antivirus-engine-version)
+  - [Microsoft Defender Antivirus security intelligence version](#microsoft-defender-antivirus-security-intelligence-version)
+  - [Microsoft Defender Antivirus platform version](#microsoft-defender-antivirus-platform-version)
   - [Recent Microsoft Defender Antivirus scan results](#recent-microsoft-defender-antivirus-scan-results)
 
-  and _Microsoft Defender Antivirus software versions_:
+### Sensor health & OS tab
 
-  - [Microsoft Defender Antivirus engine version](#microsoft-defender-antivirus-engine-version)
-  - [Microsoft Defender Antivirus platform version](#microsoft-defender-antivirus-platform-version)
-  - [Microsoft Defender Antivirus security intelligence version](#microsoft-defender-antivirus-security-intelligence-version)
-
-### General health
-
-Each of the three cards on the **General health** tab have two reporting sections, _Current state_ and _device trends_.
+Each of the three cards on the **Sensor health & OS** tab have two reporting sections, _Current state_ and _device trends_, presented as graphs:
 
 #### Current state graph
 
@@ -128,16 +65,11 @@ In each card, the Current state (referred to in some documentation as _Device su
 #### Device trends graph
 
 The lower graph on each of the three cards is not named, but is commonly known as _device trends_. The device trends graph depicts the collection of devices across your organization, throughout the time span indicated directly above the graph.
-By default, the device trends graph displays device information from the 30-day period, ending in the latest full day. To gain a better perspective about trends occurring in your organization, you can fine-tune the reporting period by adjusting the time period shown. To adjust the time period, select a time range from the drop-down options:
-
-- 30 days
-- 3 months
-- 6 months
-- Custom
+By default, the device trends graph displays device information from the 30-day period, ending in the latest full day. To gain a better perspective about trends occurring in your organization, you can fine-tune the reporting period by adjusting the time period shown. To adjust the time period, open the filter and select a start and end day.
 
 #### Filtering data
 
-Use the provided filters to include or exclude devices with certain attributes. Filters are applied only to the _device trends_ graph, and do not affect the _device summary_. You can select multiple filters to apply from the device attributes. When applied, filters apply to all three cards in the report.
+Use the provided filters to include or exclude devices with certain attributes. You can select multiple filters to apply from the device attributes. When applied, filters apply to all three cards in the report.
 
 **Example**
 To show data about Windows 10 devices with Active sensor health state:
@@ -146,7 +78,7 @@ To show data about Windows 10 devices with Active sensor health state:
 2. Then select **OS platforms** > **Windows 10**.
 3. Select **Apply**.
 
-#### Health status
+#### Sensor health
 
 Displays information about the sensor state on devices, providing an aggregated view of devices that are active, inactive, experiencing impaired communications, or where no sensor data is reported.
 Devices that are either experiencing impaired communications, or those from which no sensor data is detected could expose your organization to risks, and warrant investigation. Likewise, devices that are inactive for extended periods of time could expose your organization to threats due to of out-of-date software; these also warrant investigation.
@@ -166,48 +98,28 @@ In the same way that an upgrade from Windows 8 to Windows 10 improves security i
 
 The Windows 10 version trend graph can help you quickly determine whether your organization is keeping current by updating to the most recent, most secure versions of Windows 10.
 
-### Antivirus health tab  
+### Microsoft Defender Antivirus health tab  
 
-The Antivirus health tab contains five cards that report on several aspects of Microsoft Defender Antivirus in your organization. Two cards, _mode_ and _scan results_, report about Microsoft Defender Antivirus functions. The remaining three cards report about the Microsoft Defender Antivirus _engine version_, _platform version_, and _security intelligence version_ reported in your organization.
+The Antivirus health tab contains five cards that report on several aspects of Microsoft Defender Antivirus in your organization. Two cards, _mode_ and _scan results_, report about Microsoft Defender Antivirus functions. The remaining three cards report about Microsoft Defender Antivirus _engine versions_,  _security intelligence versions_, and _platform versions_ reported in your organization.
 
-#### Microsoft Defender Antivirus mode
+#### Card functionality
 
-Reports on how many devices in your organization – on the date indicated on the card – are in any of the following modes:
-
-- Active
-- Passive
-- Limited periodic scanning (LPS)
-- Off
-
-Devices that are in either passive, LPS, or Off present a potential security risk and should be investigated.
-
-For details about LPS, see [Use limited periodic scanning in Microsoft Defender Antivirus](limited-periodic-scanning-microsoft-defender-antivirus.md).
-
-#### Recent Microsoft Defender Antivirus scan results
-
-This card has two bar graphs showing all-up results for quick scans and full scans. In both graphs, the first bar indicates the completion rate for scans, and indicate **Completed**, **Canceled**, or **Failed**. The second bar in each section provides the error codes for failed scans.
-By scanning the **Mode** and **Recent scan results** columns, you can quickly identify devices that are not in active antivirus scan mode, and devices that have failed or cancelled recent antivirus scans. You can also quickly identify whether you have outdated platform versions. You can return to the report with this information and gather additional details and security recommendations.
-
-#### Microsoft Defender Antivirus version cards
-
-The remaining three cards report about Microsoft Defender Antivirus:
-
-- engine version
-- platform version
-- security intelligence version
-
-To learn more about engine version, platform version, and security intelligence version, see [Manage Microsoft Defender Antivirus updates and apply baselines](manage-updates-baselines-microsoft-defender-antivirus.md).
-
-##### Card functionality
-
-The functionality is essentially the same for all three _version_ cards. By clicking on a numbered bar in any of the three _version_ cards, a **Details** flyout opens enabling you to review information about all the devices configured with that version number. If the version number that you clicked on is:
+The functionality is essentially the same for all cards. By clicking on a numbered bar in any of the cards, a **Details** flyout opens enabling you to review information about all the devices configured with that version number. If the version number that you clicked on is:
 
 - A current version, then **Remediation required** and **Security recommendation** are not present
 - An outdated version, a notification at the top of the report is present, indicating **Remediation required**, and a **Security recommendation** link is present. Click the security recommendation link to navigate to the threat and vulnerability management console, which can recommend appropriate antivirus updates.
 
 Within the flyout: clicking on the name of the device will redirect you to the "Device page" for that device, where you can access detailed reports.
 
-###### Full report
+#### Microsoft Defender Antivirus version card functionality
+
+For the three cards report about Microsoft Defender Antivirus:
+
+- engine version
+- security intelligence version
+- platform version
+
+##### Full report
 
 In any of the three _version_ cards, click **Full report** to display the nine most recent Microsoft Defender Antivirus _version_ reports for each of the three device types: Windows, Mac, and Linux; if fewer than nine exist, they are all shown. An **Other** category captures recent antivirus engine versions ranking tenth and below, if detected.
 A primary benefit of the three _version_ cards is that they provide quick indicators as to whether the most current versions of the antivirus engines, platforms, and security intelligence are being utilized. Coupled with the detailed information that is linked to the card, the versions cards become a powerful tool check if versions are up to date and to gather information about individual computers, or groups of computers.
@@ -218,21 +130,114 @@ To help ensure your antimalware solution detects the latest threats, get updates
 
 For more details on the current versions and how to update the different Microsoft Defender Antivirus components, visit [Microsoft Defender Antivirus platform support](manage-updates-baselines-microsoft-defender-antivirus.md).
 
-##### Microsoft Defender Antivirus engine version
+#### Microsoft Defender Antivirus mode
 
-Shows the real-time results of the most current Microsoft Defender Antivirus engine versions installed across Windows Devices, Mac devices, and Linux devices in your organization.
-Microsoft Defender Antivirus engine is updated monthly.
+Reports on how many devices in your organization – on the date indicated on the card – are in any of the following modes:
 
-###### Microsoft Defender Antivirus platform version
+| value | mode |
+|---|---|
+| 0 | Active |
+| 1 | Passive |
+| 2 | Disabled ( uninstalled or disabled or SideBySidePassive  – aka Low Periodic Scan) |
+| 3 | Others (Not running , Unknown and "") |
+| 4 | EDRBlocked |
+| 5 | PassiveAudit |
 
-Shows the real-time results of the most current Microsoft Defender Antivirus platform versions installed across versions of Windows, Mac, and Linux devices in your organization.
-Microsoft Defender Antivirus platform is updated monthly.
+Devices that are in either passive, LPS, or Off present a potential security risk and should be investigated.
 
-###### Microsoft Defender Antivirus security intelligence version
+For details about LPS, see [Use limited periodic scanning in Microsoft Defender Antivirus](limited-periodic-scanning-microsoft-defender-antivirus.md).
+
+#### Microsoft Defender Antivirus security intelligence version
 
 Lists the most common _Microsoft Defender Antivirus security intelligence_ versions installed on devices on your network.
 Microsoft continually updates Microsoft Defender security intelligence to address the latest threats, and to refine detection logic. These refinements to security intelligence enhance Microsoft Defender Antivirus’ (and other Microsoft antimalware solutions’) ability to accurately identify potential threats. This security intelligence works directly with cloud-based protection to deliver AI-enhanced, next-generation protection that is fast and powerful.
 
-## Related topics
+#### Microsoft Defender Antivirus engine version
+
+Shows the real-time results of the most current Microsoft Defender Antivirus engine versions installed across Windows Devices, Mac devices, and Linux devices in your organization.
+Microsoft Defender Antivirus engine is updated monthly.
+
+#### Microsoft Defender Antivirus platform version
+
+Shows the real-time results of the most current Microsoft Defender Antivirus platform versions installed across versions of Windows, Mac, and Linux devices in your organization.
+Microsoft Defender Antivirus platform is updated monthly.
+
+#### Recent Microsoft Defender Antivirus scan results
+
+This card has two bar graphs showing all-up results for quick scans and full scans. In both graphs, the first bar indicates the completion rate for scans, and indicate **Completed**, **Canceled**, or **Failed**. The second bar in each section provides the error codes for failed scans.
+By scanning the **Mode** and **Recent scan results** columns, you can quickly identify devices that are not in active antivirus scan mode, and devices that have failed or cancelled recent antivirus scans. You can also quickly identify whether you have outdated platform versions. You can return to the report with this information and gather additional details and security recommendations.
+
+### Related topics
+
+[Manage Microsoft Defender Antivirus updates and apply baselines](manage-updates-baselines-microsoft-defender-antivirus.md).
 
 [Threat protection report](threat-protection-reports.md)
+
+**_End of section, Public Preview: Device health and antivirus compliance report in Microsoft Defender for Endpoint_**
+
+## Publicly-released: Device health and compliance report in Microsoft Defender for Endpoint
+
+The devices status report provides high-level information about the devices in your organization. The report includes trending information showing the sensor health state, antivirus status, OS platforms, and Windows 10 versions.
+
+The dashboard is structured into two sections:
+
+![Image of the device report.](images/device-reports.png)
+
+****
+
+|Section|Description|
+|---|---|
+|1|Device trends|
+|2|Device summary (current day)|
+|||
+
+### Device trends
+
+By default, the device trends graph displays device information from the 30-day period ending in the latest full day. To gain better perspective on trends occurring in your organization, you can fine-tune the reporting period by adjusting the time period shown. To adjust the time period, select a time range from the drop-down options:
+
+- 30 days
+- Three months
+- Six months
+- Custom
+
+> [!NOTE]
+> These filters are only applied on the device trends section. It doesn't affect the device summary section.
+
+### Device summary
+
+Unlike the device trends graph, the device summary graph shows device information scoped to the current day.
+
+> [!NOTE]
+> The data reflected in the summary section is scoped to 180 days prior to the current date. For example if today's date is March 27, 2019, the data on the summary section will reflect numbers starting from September 28, 2018 to March 27, 2019.
+>
+> The filter applied on the trends section is not applied on the summary section.
+
+The device trends section allows you to drill down to the devices list with the corresponding filter applied to it. For example, clicking on the Inactive bar in the Sensor health state card will bring you the devices list with results showing only devices whose sensor status is inactive.
+
+### Device attributes
+
+The report is made up of cards that display the following device attributes:
+
+- **Health state**: shows information about the sensor state on devices. This graph provides an all-up view of devices that are active, experiencing impaired communications, inactive, or where no sensor data is seen.
+- **Antivirus status for active Windows 10 devices**: shows the number of devices and status of Microsoft Defender Antivirus.
+- **OS platforms**: shows the distribution of OS platforms that exists within your organization.
+- **Windows 10 versions**: shows the distribution of Windows 10 devices and their versions in your organization.
+
+### Filter data
+
+Use the provided filters to include or exclude devices with certain attributes.
+
+You can select multiple filters to apply from the device attributes.
+
+> [!NOTE]
+> These filters apply to **all** the cards in the report.
+
+For example, to show data about Windows 10 devices with Active sensor health state:
+
+1. Under **Filters > Sensor health state > Active**.
+2. Then select **OS platforms > Windows 10**.
+3. Select **Apply**.
+
+### Related topic
+
+- [Threat protection report](threat-protection-reports.md)
