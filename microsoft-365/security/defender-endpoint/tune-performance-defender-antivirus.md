@@ -147,14 +147,10 @@ Accept wildcard characters: False
 
 ### Get-MpPerformanceReport
 
-The following section describes the Get-MpPerformanceReport PowerShell cmdlet.
+The following section describes the Get-MpPerformanceReport PowerShell cmdlet. Analyzes and reports on Microsoft Defender Antivirus (MDAV) performance recording.
 
-#### Summary: Get-MpPerformanceReport
-Analyzes and reports on Microsoft Defender Antivirus (MDAV) performance recording.
+#### Syntax: Get-MpPerformanceReport
 
-#### Pattern: Get-MpPerformanceReport
-
-##### DefaultSet (Default)
 ```powershell
 Get-MpPerformanceReport    [-Path] <String>
 [-TopScans <Int32>]
@@ -184,7 +180,7 @@ Get-MpPerformanceReport    [-Path] <String>
 ]
 ```
 
-#### Narrative: Get-MpPerformanceReport
+#### Description: Get-MpPerformanceReport
 The `Get-MpPerformanceReport` cmdlet analyzes a previously collected Microsoft Defender Antivirus performance recording ([New-MpPerformanceRecording](#new-mpperformancerecording)) and reports the file paths, file extensions, and processes that cause the highest impact to Microsoft Defender Antivirus scans.
 
 The performance analyzer provides an insight into problematic files that could cause a degradation in the performance of Microsoft Defender Antivirus. This tool is provided "AS IS" and is not intended to provide suggestions on exclusions. Exclusions can reduce the level of protection on your endpoints. Exclusions, if any, should be defined with caution.
@@ -198,7 +194,7 @@ Windows Version 10 and later.
 > [!NOTE]
 > This feature is available starting with platform version 4.18.2108.X and later.
 
-#### Condition: Get-MpPerformanceReport
+#### Parameters: Get-MpPerformanceReport
 
 ##### -MinDuration
 Specifies the minimum duration of any scan or total scan durations of files, extensions, and processes included in the report; accepts values like  **0.1234567sec**, **0.1234ms**, **0.1us**, or a valid TimeSpan.
