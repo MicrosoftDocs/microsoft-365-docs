@@ -33,7 +33,7 @@ Learn more:  [Scheduler for Microsoft 365 licensing](https://www.microsoft.com/m
 Scheduler assistant mailbox is an Exchange equipment type mailbox that does not require an additional Microsoft 365 or Scheduler license. The display name and the primary SMTP address of the mailbox should contain Cortana since all the emails from the Scheduler assistant will be signed Cortana (i.e. “Cortana <cortana@yourdomain.com>” or “Cortana Scheduler <cortana.scheduler@yourdomain.com>”). After the Scheduler assistant mailbox has been created, you must designate the mailbox as the Scheduler assistant mailbox. After you designate the Scheduler assistant mailbox, Cortana will be available to schedule meetings on behalf of your users.
 
 - Use the Microsoft 365 admin center to create a user mailbox. A 30-day retention policy is recommended. 
-- Use the name Cortana in your mailbox’s primary SMTP address. Names such as “Cortana@yourdomain.com,’ ‘CortanaScheduler@contoso.com,’ or ‘Cortana.Scheduler@yourdomain.com’ are recommended.
+- Use the name Cortana in your mailbox’s primary SMTP address. Names such as `Cortana@yourdomain.com`, `CortanaScheduler@contoso.com`, or `Cortana.Scheduler@yourdomain.com` are recommended.
 
 ## Designate the mailbox as the Scheduler Assistant
 
@@ -42,7 +42,7 @@ After a unique mailbox for Cortana Scheduler has been created, you must designat
 #### Connect to PowerShell
 
 Use the Microsoft 365 admin center to create a user mailbox. A 30-day retention policy is recommended.
-Use the name Cortana in your mailbox’s primary SMTP address. Names such as “Cortana@yourdomain.com,’ ‘CortanaScheduler@contoso.com,’ or ‘Cortana.Scheduler@yourdomain.com’ are recommended.
+Use the name Cortana in your mailbox’s primary SMTP address. Names such as `Cortana@yourdomain.com`, `CortanaScheduler@contoso.com`, or `Cortana.Scheduler@yourdomain.com` are recommended.
 
 ```PowerShell
 $domain="yourdomain.com  "
