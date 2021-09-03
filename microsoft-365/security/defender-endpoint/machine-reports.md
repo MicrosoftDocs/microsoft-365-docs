@@ -48,7 +48,7 @@ The Device health and compliance dashboard is structured in two tabs:
 
 - The [**Microsoft Defender Antivirus health** tab](#microsoft-defender-antivirus-health-tab) has five cards that report on aspects of Microsoft Defender Antivirus:
 
-  - [Antivirus mode](#antivirus-mode)
+  - [Antivirus mode (active/passive)](#antivirus-mode-activepassive)
   - [Antivirus engine version](#antivirus-engine-version)
   - [Antivirus security intelligence version](#antivirus-security-intelligence-version)
   - [Antivirus platform version](#antivirus-platform-version)
@@ -130,7 +130,7 @@ To help ensure your antimalware solution detects the latest threats, get updates
 
 For more details on the current versions and how to update the different Microsoft Defender Antivirus components, visit [Microsoft Defender Antivirus platform support](manage-updates-baselines-microsoft-defender-antivirus.md).
 
-#### Antivirus mode
+#### Antivirus mode (active/passive)
 
 Reports on how many devices in your organization – on the date indicated on the card – are in any of the following modes:
 
