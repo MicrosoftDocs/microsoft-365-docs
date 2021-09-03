@@ -639,13 +639,13 @@ The following steps are needed to set up the integration between your ServiceNow
 
     Select the right settings and select **Next**.
 
-        - SSO with Microsoft 365: Check whether the ServiceNow instance is set up as SSO with Microsoft 365 tenants; otherwise uncheck it.
+    - SSO with Microsoft 365: Check whether the ServiceNow instance is set up as SSO with Microsoft 365 tenants; otherwise uncheck it.
 
-        - Microsoft 365 Admin Email: The email of Microsoft 365 admin user to be contacted when Microsoft 365 support cases are created.
+    - Microsoft 365 Admin Email: The email of Microsoft 365 admin user to be contacted when Microsoft 365 support cases are created.
 
-        - Test Environment: Check the box to indicate a test phase to avoid Microsoft support agents contacting you to address the issue. If you're ready to move forward officially with Microsoft 365 support integration, uncheck the box.
+    - Test Environment: Check the box to indicate a test phase to avoid Microsoft support agents contacting you to address the issue. If you're ready to move forward officially with Microsoft 365 support integration, uncheck the box.
 
-        :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image16.png" alt-text="Graphical user interface, text, application Description automatically generated":::
+    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image16.png" alt-text="Graphical user interface, text, application Description automatically generated":::
 
 9. \[The person who is Helpdesk Admin or Service Request Admin in Microsoft 365 tenants\] Complete Integration.
 
