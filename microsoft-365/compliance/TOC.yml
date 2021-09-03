@@ -501,16 +501,6 @@
           href: get-started-with-retention.md
         - name: Create retention policies
           href: create-retention-policies.md
-        - name: Store mailbox data
-          items: 
-            - name: Enable archive mailboxes
-              href: enable-archive-mailboxes.md
-            - name: Overview of unlimited archiving
-              href: unlimited-archiving.md
-            - name: Enable unlimited archiving
-              href: enable-unlimited-archiving.md
-            - name: Set up an archive and deletion policy for mailboxes
-              href: set-up-an-archive-and-deletion-policy-for-mailboxes.md
         - name: Import mailbox data
           items: 
             - name: Overview of importing PST files
