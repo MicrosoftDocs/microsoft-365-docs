@@ -555,11 +555,11 @@
           href: apply-retention-labels-automatically.md
         - name: Lock policies to restrict changes
           href: retention-preservation-lock.md
-        - name: Create retention labels with PowerShell
-          href: bulk-create-publish-labels-using-powershell.md
         - name: Start retention when an event occurs
           href: event-driven-retention.md
-        - name: Use retention labels to manage document lifecycles
+        - name: Use PowerShell to create & publish retention labels
+          href: bulk-create-publish-labels-using-powershell.md
+        - name: Use retention labels to manage documents in SharePoint
           href: auto-apply-retention-labels-scenario.md
         - name: Manage disposition of data
           href: disposition.md
