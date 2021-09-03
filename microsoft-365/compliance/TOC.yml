@@ -331,7 +331,7 @@
       href: manage-information-governance.md
     - name: Retain and delete data
       items: 
-        - name: Learn about retention
+        - name: Learn about retention policies & labels
           href: retention.md
         - name: Retention flowchart
           href: retention-flowchart.md
