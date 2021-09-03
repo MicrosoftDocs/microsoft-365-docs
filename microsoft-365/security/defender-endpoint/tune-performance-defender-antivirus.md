@@ -67,7 +67,7 @@ Based on the query, the user will be able to view data for scan counts, duration
 ## Additional functionality: exporting and converting to CSV and JSON
 
 The results of the perfomance analyzer can also be exported and converted to a CSV or JSON file.
-For examples that describe the process of "export" and "convert" through sample codes, see [For CSV](#for-csv) and [For JSON](#for-json).
+For examples that describe the process of "export" and "convert" through sample codes, see below.
 
 ### For CSV
 
@@ -88,7 +88,7 @@ Windows 10+ and Windows Server 16+
 
 ## Platform Version
 
-4.2108.10+
+4.18.2108.X+
 
 ## PowerShell Version
 
@@ -102,7 +102,7 @@ Collects a performance recording of Microsoft Defender Antivirus (MDAV) scans.
 ## SYNTAX
 
 ```
-New-MpPerformanceRecording [-RecordTo <String >]`
+New-MpPerformanceRecording -RecordTo <String >
 ```
 
 ## DESCRIPTION
@@ -219,140 +219,8 @@ Accept pipeline input: True
 Accept wildcard characters: False
 ```
 
-### -TopScans
-Requests a top-scans report and specifies how many top scans to output, sorted by "Duration".
-
-```yaml
-Type: Int32
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -TopFiles
-Requests a top-files report and specifies how many top files to output, sorted by "Duration".
-
-```yaml
-Type: Int32
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### --TopScansPerFile
-Specifies how many top scans to output for each top file, sorted by "Duration”.
-
-```yaml
-Type: Int32
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -TopProcessesPerFile
-Specifies how many top processes to output for each top file, sorted by "Duration “.
-
-```yaml
-Type: Int32
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -TopScansPerProcessPerFile
-Specifies how many top scans for output for each top process for each top file, sorted by "Duration”.
-
-```yaml
-Type: Int32
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -TopExtensions 
 Specifies how many top extensions to output, sorted by "Duration”.
-
-```yaml
-Type: Int32
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -TopScansPerExtension
-Specifies how many top scans to output for each top extension, sorted by "Duration".
-
-```yaml
-Type: Int32
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -TopProcessesPerExtension 
-Specifies how many top processes to output for each top extension, sorted by "Duration”.
-
-```yaml
-Type: Int32
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -TopScansPerProcessPerExtension
-Specifies how many top scans for output for each top process for each top extension, sorted by "Duration”.
-
-```yaml
-Type: Int32
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -TopFilesPerExtension 
-Specifies how many top files to output for each top extension, sorted by "Duration".
-
-```yaml
-Type: Int32
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -TopScansPerFilePerExtension 
-Specifies how many top scans to output for each top file for each top extension, sorted by "Duration".
-
-```yaml
-Type: Int32
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -TopProcesses
-Requests a top-processes report and specifies how many of the top processes to output, sorted by "Duration”.
-
-```yaml
-Type: Int32
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -TopScansPerProcess 
-Specifies how many top scans to output for each top process in the Top Processes report, sorted by "Duration”.
 
 ```yaml
 Type: Int32
@@ -373,8 +241,19 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -TopScansPerExtensionPerProcess 
-Specifies how many top scans to output for each top extension for each top process, sorted by "Duration”.
+### -TopFiles
+Requests a top-files report and specifies how many top files to output, sorted by "Duration".
+
+```yaml
+Type: Int32
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -TopFilesPerExtension 
+Specifies how many top files to output for each top extension, sorted by "Duration".
 
 ```yaml
 Type: Int32
@@ -395,6 +274,94 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -TopProcesses
+Requests a top-processes report and specifies how many of the top processes to output, sorted by "Duration”.
+
+```yaml
+Type: Int32
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -TopProcessesPerExtension 
+Specifies how many top processes to output for each top extension, sorted by "Duration”.
+
+```yaml
+Type: Int32
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -TopProcessesPerFile
+Specifies how many top processes to output for each top file, sorted by "Duration “.
+
+```yaml
+Type: Int32
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -TopScans
+Requests a top-scans report and specifies how many top scans to output, sorted by "Duration".
+
+```yaml
+Type: Int32
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -TopScansPerExtension
+Specifies how many top scans to output for each top extension, sorted by "Duration".
+
+```yaml
+Type: Int32
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -TopScansPerExtensionPerProcess 
+Specifies how many top scans to output for each top extension for each top process, sorted by "Duration”.
+
+```yaml
+Type: Int32
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -TopScansPerFile
+Specifies how many top scans to output for each top file, sorted by "Duration”.
+
+```yaml
+Type: Int32
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -TopScansPerFilePerExtension 
+Specifies how many top scans to output for each top file for each top extension, sorted by "Duration".
+
+```yaml
+Type: Int32
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -TopScansPerFilePerProcess 
 Specifies how many top scans for output for each top file for each top process, sorted by "Duration”.
 
@@ -406,3 +373,35 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -TopScansPerProcess 
+Specifies how many top scans to output for each top process in the Top Processes report, sorted by "Duration”.
+
+```yaml
+Type: Int32
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -TopScansPerProcessPerExtension
+Specifies how many top scans for output for each top process for each top extension, sorted by "Duration”.
+
+```yaml
+Type: Int32
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -TopScansPerProcessPerFile
+Specifies how many top scans for output for each top process for each top file, sorted by "Duration”.
+
+```yaml
+Type: Int32
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
