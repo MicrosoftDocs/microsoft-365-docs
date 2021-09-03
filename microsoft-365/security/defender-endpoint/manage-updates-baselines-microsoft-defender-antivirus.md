@@ -130,14 +130,19 @@ No known issues
 ### Known Issues
 No known issues
 <br/>
-</details><details>
+</details>
+
+### Previous version updates: Technical upgrade support only
+
+After a new package version is released, support for the previous two versions is reduced to technical support only. Versions older than that are listed in this section, and are provided for technical upgrade support only.
+<details>
 <summary> May-2021 (Platform: 4.18.2105.4 | Engine: 1.1.18200.4)</summary>
 
 &ensp;Security intelligence update version: **1.341.8.0**
 &ensp;Released: **June 3, 2021**
 &ensp;Platform: **4.18.2105.4**
 &ensp;Engine: **1.1.18200.4**
-&ensp;Support phase: **Security and Critical Updates**
+&ensp;Support phase: **Technical upgrade support (only)**
 
 ### What's new
 - Improvements to [behavior monitoring](client-behavioral-blocking.md)
@@ -146,12 +151,7 @@ No known issues
 ### Known Issues
 No known issues
 <br/>
-</details>
-
-### Previous version updates: Technical upgrade support only
-
-After a new package version is released, support for the previous two versions is reduced to technical support only. Versions older than that are listed in this section, and are provided for technical upgrade support only.
-<details>
+</details><details>
 <summary> April-2021 (Platform: 4.18.2104.14 | Engine: 1.1.18100.5)</summary>
 
 &ensp;Security intelligence update version: **1.337.2.0**
