@@ -325,7 +325,7 @@
               href: dlp-migrate-exo-policy-to-unified-dlp.md
             - name: Data Loss Prevention policy tips reference
               href: dlp-policy-tips-reference.md
-- name: Manage information governance and records
+- name: Manage information governance & records
   items: 
     - name: Govern your data
       href: manage-information-governance.md
