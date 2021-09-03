@@ -115,6 +115,10 @@ Creating a custom Safe Attachments policy in the Microsoft 365 Defender portal c
 
      These values are explained in [Safe Attachments policy settings](safe-attachments.md#safe-attachments-policy-settings).
 
+   - **Quarantine policy**: Select the quarantine policy that applies to messages that are quarantined by [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](mdo-for-spo-odb-and-teams.md). Quarantine policies define what users are able to do to quarantined messages. For more information, see [Quarantine policies](quarantine-policies.md).
+
+     A blank value means the default quarantine policy is used (AdminOnlyAccessPolicy for detections by Safe Attachments for SharePoint, OneDrive, and Microsoft Teams). When you later edit the Safe Attachments policy or view the settings, the default quarantine policy name is shown. For more information about default quarantine policies that are used for supported protection filtering verdicts, see [this table](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features).
+
    - **Redirect messages with detected attachments**: If you select **Enable redirect**, you can specify an email address in the **Send messages that contain blocked, monitored, or replaced attachments to the specified email address** box to send messages that contain malware attachments for analysis and investigation.
 
      The recommendation for Standard and Strict policy settings is to enable redirection. For more information, see [Safe Attachments settings](recommended-settings-for-eop-and-office365.md#safe-attachments-settings).
@@ -248,12 +252,15 @@ New-SafeAttachmentPolicy -Name "Contoso All" -Enable $true -Redirect $true -Redi
 
 For detailed syntax and parameter information, see [New-SafeAttachmentPolicy](/powershell/module/exchange/new-safeattachmentpolicy).
 
+> [!NOTE]
+> For detailed instructions to specify the [quarantine policy](quarantine-policies.md) to use in a safe attachment policy, see [Use PowerShell to specify the quarantine policy in anti-malware policies](quarantine-policies.md#anti-malware-policies-in-powershell).
+
 #### Step 2: Use PowerShell to create a safe attachment rule
 
 To create a safe attachment rule, use this syntax:
 
 ```PowerShell
-New-SafeAttachmentRule -Name "<RuleName>" -SafeAttachmentPolicy "<PolicyName>" <Recipient filters> [<Recipient filter exceptions>] [-Comments "<OptionalComments>"] [-Enabled <$true | $false>]
+New-SafeAttachmentRule -Name "<RuleName>" -SafeAttachmentPolicy "<PolicyName>" <Recipient filters> [<Recipient filter exceptions>] [-Comments "<OptionalComments>"] [-Enabled <$true | $false>] [-QuarantineTag <QuarantinePolicyIdentity>]
 ```
 
 This example creates a safe attachment rule named Contoso All with the following conditions:
@@ -262,6 +269,7 @@ This example creates a safe attachment rule named Contoso All with the following
 - The rule applies to all recipients in the contoso.com domain.
 - Because we aren't using the _Priority_ parameter, the default priority is used.
 - The rule is enabled (we aren't using the _Enabled_ parameter, and the default value is `$true`).
+- The default [quarantine policy](quarantine-policies.md) for detections by [Safe Links for SharePoint, OneDrive, and Microsoft Teams](mdo-for-spo-odb-and-teams.md) is used (we aren't using the _QuarantineTag_ parameter).
 
 ```powershell
 New-SafeAttachmentRule -Name "Contoso All" -SafeAttachmentPolicy "Contoso All" -RecipientDomainIs contoso.com

@@ -160,6 +160,10 @@ Creating a custom anti-spam policy in the Microsoft 365 Defender portal creates 
      >
      > <sup>2</sup> You can this use value as a condition in mail flow rules to filter or route the message.
 
+     If you select **Quarantine message** for the spam filter verdict, a **Select quarantine policy** box appears where you select the quarantine policy that applies to messages that were quarantined by that verdict. Quarantine policies define what users are able to do to quarantined messages. For more information, see [Quarantine policies](quarantine-policies.md).
+
+     A blank **Select quarantine policy** value means the default quarantine policy for that particular verdict is used. When you later edit the anti-phishing policy or view the settings, the default quarantine policy name is shown. For more information about default quarantine policies that are used for supported protection filtering verdicts, see [this table](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features).
+
    - **Retain spam in quarantine for this many days**: Specifies how long to keep the message in quarantine if you selected **Quarantine message** as the action for a spam filtering verdict. After the time period expires, the message is deleted. The default value is 30 days. A valid value is from 1 to 30 days. For information about quarantine, see the following articles:
 
      - [Quarantined messages in EOP](quarantine-email-messages.md)
@@ -402,6 +406,9 @@ New-HostedContentFilterPolicy -Name "Contoso Executives" -HighConfidenceSpamActi
 
 For detailed syntax and parameter information, see [New-HostedContentFilterPolicy](/powershell/module/exchange/new-hostedcontentfilterpolicy).
 
+> [!NOTE]
+> For detailed instructions to specify the [quarantine policy](quarantine-policies.md) to use in a spam filter policy, see [Use PowerShell to specify the quarantine policy in anti-spam policies](quarantine-policies.md#anti-spam-policies-in-powershell).
+
 #### Step 2: Use PowerShell to create a spam filter rule
 
 To create a spam filter rule, use this syntax:
@@ -495,6 +502,9 @@ Set-HostedContentFilterPolicy -Identity "<PolicyName>" <Settings>
 ```
 
 For detailed syntax and parameter information, see [Set-HostedContentFilterPolicy](/powershell/module/exchange/set-hostedcontentfilterpolicy).
+
+> [!NOTE]
+> For detailed instructions to specify the [quarantine policy](quarantine-policies.md) to use in a spam filter policy, see [Use PowerShell to specify the quarantine policy in anti-spam policies](quarantine-policies.md#anti-spam-policies-in-powershell).
 
 ### Use PowerShell to modify spam filter rules
 

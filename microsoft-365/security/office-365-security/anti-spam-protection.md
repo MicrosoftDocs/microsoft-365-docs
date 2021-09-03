@@ -64,11 +64,11 @@ The anti-spam settings in EOP are made of the following technologies:
 
 ## Manage errors in spam filtering
 
-It's possible that good messages can be identified as spam (also known as false positives), or that spam can be delivered to the Inbox. You can use the suggestions in the following sections to find out what happened and help prevent it from happening in the future.
+It's possible that good messages can be identified as spam (also known as false positives), or that spam can be delivered to the Inbox (also known as false negatives). You can use the suggestions in the following sections to find out what happened and help prevent it from happening in the future.
 
 Here are some best practices that apply to either scenario:
 
-- Always submit misclassified messages to Microsoft. For more information, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
+- Always report misclassified messages to Microsoft. For more information, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
 
 - **Examine the anti-spam message headers**: These values will tell you why a message was marked as spam, or why it skipped spam filtering. For more information, see [Anti-spam message headers](anti-spam-message-headers.md).
 
