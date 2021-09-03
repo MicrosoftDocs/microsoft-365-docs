@@ -549,14 +549,14 @@
           href: declare-records.md
         - name: Use record versioning
           href: record-versioning.md
-        - name: Create retention labels and apply them in apps
+        - name: Start retention when an event occurs
+          href: event-driven-retention.md
+        - name: Apply retention labels in apps
           href: create-apply-retention-labels.md
-        - name: Apply a retention label to content automatically
+        - name: Automataically apply retention labels to content
           href: apply-retention-labels-automatically.md
         - name: Lock policies to restrict changes
           href: retention-preservation-lock.md
-        - name: Start retention when an event occurs
-          href: event-driven-retention.md
         - name: Use PowerShell to create & publish retention labels
           href: bulk-create-publish-labels-using-powershell.md
         - name: Use retention labels to manage documents in SharePoint
