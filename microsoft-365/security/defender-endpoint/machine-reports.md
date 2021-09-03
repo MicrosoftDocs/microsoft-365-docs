@@ -32,7 +32,7 @@ ms.technology: mde
 > [!IMPORTANT]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 >
-> Information about the features that are _commercially released_ follows the prerelease information in the section titled [Publicly-released: Device health and compliance report in Microsoft Defender for Endpoint](#publicly-released-device-health-and-compliance-report-in-microsoft-defenderd-for-endpoint).
+> Information about the features that are _commercially released_ follows the prerelease information in the section titled [Publicly-released: Device health and compliance report in Microsoft Defender for Endpoint](#publicly-released-device-health-and-compliance-report-in-microsoft-defender-for-endpoint).
 
 ## Public Preview - Device health and antivirus compliance report in Microsoft Defender for Endpoint
 
@@ -40,7 +40,7 @@ The devices status report provides high-level information about the devices in y
 In the Microsoft 365 Security dashboard navigation panel, select **Reports**, and then open **Device health and compliance**.
 The Device health and compliance dashboard is structured in two tabs:
 
-- The **Sensor health & OS** tab provides general operating system information, divided into three cards that display the following device attributes:
+- The **Sensor health** tab provides general operating system information, divided into three cards that display the following device attributes:
 
   - [Sensor health](#sensor-health)
   - [OS systems and platforms](#os-systems-and-platforms)
@@ -48,13 +48,13 @@ The Device health and compliance dashboard is structured in two tabs:
 
 - The [**Microsoft Defender Antivirus health** tab](#microsoft-defender-antivirus-health-tab) has five cards that report on aspects of Microsoft Defender Antivirus:
 
-  - [Microsoft Defender Antivirus mode](#microsoft-defender-antivirus-mode)
-  - [Microsoft Defender Antivirus engine version](#microsoft-defender-antivirus-engine-version)
-  - [Microsoft Defender Antivirus security intelligence version](#microsoft-defender-antivirus-security-intelligence-version)
-  - [Microsoft Defender Antivirus platform version](#microsoft-defender-antivirus-platform-version)
-  - [Recent Microsoft Defender Antivirus scan results](#recent-microsoft-defender-antivirus-scan-results)
+  - [Antivirus mode](#antivirus-mode)
+  - [Antivirus engine version](#antivirus-engine-version)
+  - [Antivirus security intelligence version](#antivirus-security-intelligence-version)
+  - [Antivirus platform version](#antivirus-platform-version)
+  - [Recent antivirus scan results](#recent-antivirus-scan-results)
 
-### Sensor health & OS tab
+### Sensor health tab
 
 Each of the three cards on the **Sensor health & OS** tab have two reporting sections, _Current state_ and _device trends_, presented as graphs:
 
@@ -130,7 +130,7 @@ To help ensure your antimalware solution detects the latest threats, get updates
 
 For more details on the current versions and how to update the different Microsoft Defender Antivirus components, visit [Microsoft Defender Antivirus platform support](manage-updates-baselines-microsoft-defender-antivirus.md).
 
-#### Microsoft Defender Antivirus mode
+#### Antivirus mode
 
 Reports on how many devices in your organization – on the date indicated on the card – are in any of the following modes:
 
@@ -147,22 +147,22 @@ Devices that are in either passive, LPS, or Off present a potential security ris
 
 For details about LPS, see [Use limited periodic scanning in Microsoft Defender Antivirus](limited-periodic-scanning-microsoft-defender-antivirus.md).
 
-#### Microsoft Defender Antivirus security intelligence version
+#### Antivirus security intelligence version
 
 Lists the most common _Microsoft Defender Antivirus security intelligence_ versions installed on devices on your network.
 Microsoft continually updates Microsoft Defender security intelligence to address the latest threats, and to refine detection logic. These refinements to security intelligence enhance Microsoft Defender Antivirus’ (and other Microsoft antimalware solutions’) ability to accurately identify potential threats. This security intelligence works directly with cloud-based protection to deliver AI-enhanced, next-generation protection that is fast and powerful.
 
-#### Microsoft Defender Antivirus engine version
+#### Antivirus engine version
 
 Shows the real-time results of the most current Microsoft Defender Antivirus engine versions installed across Windows Devices, Mac devices, and Linux devices in your organization.
 Microsoft Defender Antivirus engine is updated monthly.
 
-#### Microsoft Defender Antivirus platform version
+#### Antivirus platform version
 
 Shows the real-time results of the most current Microsoft Defender Antivirus platform versions installed across versions of Windows, Mac, and Linux devices in your organization.
 Microsoft Defender Antivirus platform is updated monthly.
 
-#### Recent Microsoft Defender Antivirus scan results
+#### Recent antivirus scan results
 
 This card has two bar graphs showing all-up results for quick scans and full scans. In both graphs, the first bar indicates the completion rate for scans, and indicate **Completed**, **Canceled**, or **Failed**. The second bar in each section provides the error codes for failed scans.
 By scanning the **Mode** and **Recent scan results** columns, you can quickly identify devices that are not in active antivirus scan mode, and devices that have failed or cancelled recent antivirus scans. You can also quickly identify whether you have outdated platform versions. You can return to the report with this information and gather additional details and security recommendations.
