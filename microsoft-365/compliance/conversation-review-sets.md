@@ -43,7 +43,7 @@ Here are few definitions to help you get start using conversation reconstruction
 
 - **Conversation:** Represents a grouping of one or more messages. Across different applications, conversations may be represented in different ways. In some applications, there is an explicit action that results from replying to an existing message. Conversations are formed explicitly as a result of this user action. For example, here is a screenshot of a channel conversation in Microsoft Teams.
 
-   ![Microsoft Teams Channel Conversation](../media/threadedchat.png)
+   ![Microsoft Teams Channel Conversation.](../media/threadedchat.png)
 
    In other apps (such as group chat messages in Teams), there is not a formal reply chain and instead messages appear as a "flat river of messages" within a single thread. In these types apps, conversations are inferred from a group of messages that occur within a certain time. This "soft-grouping" of messages (as opposed to a reply chain) represent the "back and forth" conversation about a specific topic of interest.
 
@@ -57,7 +57,7 @@ After you have reviewed and finalized the search query in a collection, you can 
 
 When you add items from conversations to a review set, you can use the threaded conversations option to collect contextual messages from conversations that contain items that match the search criteria of the collection. After you select the thread conversations option, the following things can happen:
 
-  ![Conversation Retrieval](../media/messagesandconversations.png)
+  ![Conversation Retrieval.](../media/messagesandconversations.png)
 
 1. Using a keyword and date range query, the search returned a hit on *Message 3*. This message was part of a larger conversation, illustrated by *CRC1*.
 
@@ -71,7 +71,7 @@ To enable the threaded conversations option, see [Commit a draft collection to a
 
 After the content has been processed and added to the review set, you can start reviewing the data in the review set. Individual messages are threaded together and presented as conversations. This lets you review and export contextual conversations.
 
-  ![Conversation review set](../media/ConversationRSOptions.PNG)
+  ![Conversation review set.](../media/ConversationRSOptions.PNG)
 
 The following sections describe reviewing and exporting conversations.
 

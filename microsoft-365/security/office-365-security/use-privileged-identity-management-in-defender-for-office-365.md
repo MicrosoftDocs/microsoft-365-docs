@@ -1,14 +1,13 @@
 ---
-title: Use Privileged Identity Management (PIM) in Defender for Office 365.
+title: Use Privileged Identity Management (PIM) in Microsoft Defender for Office 365.
 f1.keywords:
   - NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: 08/09/2021
+ms.date: 09/03/2021
 audience: ITPro
 ms.topic: article
-
 localization_priority: Priority
 search.appverid:
   - MET150
@@ -44,7 +43,7 @@ In this example we will configure "Alex", a member of our security team who will
 
 1. Sign into the [Azure AD Admin Center](https://aad.portal.azure.com/) and select  **Azure Active Directory** > **Roles and administrators**.
 2. Select **Security Reader** in the list of roles and then **Settings** > **Edit**
-3. Set the '**Activation maximum duration (hours)**' to a normal working day and 'On activiation' to require **Azure MFA**.
+3. Set the '**Activation maximum duration (hours)**' to a normal working day and 'On activation' to require **Azure MFA**.
 4. As this is Alex's normal privilege level for day to day operations, we will Uncheck **Require justification on activation**' > **Update**.
 5. Select **Add Assignments** > **No member selected** > select or type the name to search for the correct member.
 6. Click the **Select** button to choose the member you need to add for PIM privileges > click **Next** > make no changes on the Add Assignment page (both assignment type *Eligible* and duration *Permenantly Eligible* will be defaults ) and **Assign**.
@@ -54,15 +53,15 @@ The name of your user (here 'Alex') will appear under Eligible assignments on th
 > [!NOTE]
 > For a quick review of Privileged Identity Management see [this video](https://www.youtube.com/watch?v=VQMAg0sa_lE).
 
-:::image type="content" source="../../media/pim-mdo-role-setting-details-for-security-reader-show-8-hour-max-activation.PNG" alt-text="Be sure you scan the settings for the Security Reader role in Privileged Access Management. Here you'll see the PIM activation's max duration is 8 hours.":::
+:::image type="content" source="../../media/pim-mdo-role-setting-details-for-security-reader-show-8-hr-duration.png" alt-text="Be sure you scan the settings for the Security Reader role in Privileged Access Management. Here you'll see the PIM activation's max duration is 8 hours.":::
 
 ***Step 2***. Create the required second (elevated) permission group for additional tasks and assign eligibility.
 
-Using [Privileged Access groups])https://docs.microsoft.com/en-us/azure/active-directory/privileged-identity-management/groups-features) we can now create our own custom groups and combine permissions or increase granularity where required to meet your organisational practices and needs.
+Using [Privileged Access groups](/azure/active-directory/privileged-identity-management/groups-features) we can now create our own custom groups and combine permissions or increase granularity where required to meet your organizational practices and needs.
 
-### Create a role group requiring the permissions we need.
+### Create a role group requiring the permissions we need
 
-In the Security Portal, create a custom role group that contains the permissions that we want. 
+In the Security Portal, create a custom role group that contains the permissions that we want.
 
 1. Browse to Microsoft 365 Defender portal (https://security.microsoft.com) > **Permissions & Roles** > select **Roles** under Email and Collaboration > **Create**.
 2. Name your group to reflect its purpose such as 'Search and Purge PIM'.
@@ -81,12 +80,11 @@ In the Security Portal, create a custom role group that contains the permissions
 
 ### Nest the newly created security group into the role group.
 
-1. [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/connect-to-scc-powershell?view=exchange-ps) and run the following:
+1. [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell) and run the following:
 
     `Add-RoleGroupMember "<<Role Group Name>>" -Member "<<Azure Security Group>>"`
 
-
-## How do you know this worked?
+## Test your configuration of PIM with Defender for Office 365
 
 1. Login with the test user (Alex), who will should have no administrative access within the [Microsoft 365 Defender portal](/microsoft-365/security/defender/overview-security-center) at this point.
 2. [Activate the Security Reader role in PIM](/azure/active-directory/privileged-identity-management/pim-how-to-activate-role), this should be the day to day level of access needed to [hunt for threats in O365.](threat-hunting-in-threat-explorer.md)

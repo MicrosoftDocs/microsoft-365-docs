@@ -29,10 +29,10 @@ ms.technology: mde
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-minreqs-abovefoldlink)
 
-
 There are some minimum requirements for onboarding devices to the service. Learn about the licensing, hardware and software requirements, and other configuration settings to onboard devices to the service.
 
 > [!TIP]
+> - This article describes the minimum requirements for Microsoft Defender for Endpoint Plan 2. If you are looking for information about Defender for Endpoint Plan 1 (preview), see [Requirements for Defender for Endpoint Plan 1 (preview)](mde-p1-setup-configuration.md#review-the-requirements).
 > - Learn about the latest enhancements in Defender for Endpoint: [Defender for Endpoint Tech Community](https://techcommunity.microsoft.com/t5/Windows-Defender-Advanced-Threat/ct-p/WindowsDefenderAdvanced).
 > - Defender for Endpoint demonstrated industry-leading optics and detection capabilities in the recent MITRE evaluation. Read: [Insights from the MITRE ATT&CK-based evaluation](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/).
 
@@ -161,7 +161,7 @@ By default, this service is enabled. It's good practice to check to ensure that 
 
    If the service is enabled, then the result should look like the following screenshot:
 
-   ![Result of the sc query command for diagtrack](images/windefatp-sc-qc-diagtrack.png)
+   ![Result of the sc query command for diagtrack.](images/windefatp-sc-qc-diagtrack.png)
 
 
 You'll need to set the service to automatically start if the **START_TYPE** isn't set to **AUTO_START**.

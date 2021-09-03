@@ -51,7 +51,7 @@ Here are the steps to place a mailbox on Litigation hold using the Microsoft 365
 
 4. On the properties flyout page, click the **Mail** tab, and then under **More actions**, click **Manage litigation hold**.
 
-   ![Click Manage litigation hold on the Mail tab of user properties flyout page](../media/M365AdminCenterLitHold1.png)
+   ![Click Manage litigation hold on the Mail tab of user properties flyout page.](../media/M365AdminCenterLitHold1.png)
 
 5. On the **Manage litigation hold** flyout page, select the **Turn on litigation hold** checkbox and then enter the following optional information:
 
@@ -97,7 +97,7 @@ When a mailbox is placed on Litigation hold, items in the Purges subfolder are p
 
 The following illustration shows the subfolders in the Recoverable Items folders and the hold workflow process.
 
-![Litigation hold life cycle](../media/LitigationHoldLifeCycle.png)
+![Litigation hold life cycle.](../media/LitigationHoldLifeCycle.png)
 
 > [!NOTE]
 > If a hold associated with an eDiscovery case is placed on a mailbox, purged items are moved from the Deletions subfolder to the DiscoveryHolds subfolder and are preserved until the mailbox is released from the eDiscovery hold.

@@ -24,7 +24,7 @@ After Quip data is stored in user mailboxes, you can apply Microsoft 365 complia
 
 The following overview explains the process of using a data connector to archive Quip data in Microsoft 365.
 
-![Archiving workflow for Quip data from 17a-4](../media/QuipDataParserConnectorWorkflow.png)
+![Archiving workflow for Quip data from 17a-4.](../media/QuipDataParserConnectorWorkflow.png)
 
 1. Your organization works with 17a-4 to set up and configure the Quip DataParser.
 

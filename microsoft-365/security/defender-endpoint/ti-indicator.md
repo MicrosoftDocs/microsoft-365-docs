@@ -48,11 +48,12 @@ Property|Type|Description
 :---|:---|:---
 id|String|Identity of the [Indicator](ti-indicator.md) entity.
 indicatorValue|String|The value of the [Indicator](ti-indicator.md).
-indicatorType|Enum|Type of the indicator. Possible values are: "FileSha1", "FileSha256", "IpAddress", "DomainName" and "Url".
+indicatorType|Enum|Type of the indicator. Possible values are: "FileSha1", "FileSha256", "FileMd5", "CertificateThumbprint", "IpAddress", "DomainName" and "Url".
 application|String|The application associated with the indicator.
-action|Enum|The action that will be taken if the indicator will be discovered in the organization. Possible values are: "Alert", "AlertAndBlock", and "Allowed".
+action|Enum|The action that will be taken if the indicator will be discovered in the organization. Possible values are: "Warn", "Block", "Audit", "Alert", "AlertAndBlock", "BlockAndRemediate" and "Allowed".
+|externalID|String|Id the customer can submit in the request for custom correlation.|
 sourceType|Enum|"User" in case the Indicator created by a user (e.g. from the portal), "AadApp" in case it submitted using automated application via the API.
-source|string|The name of the user/application that submitted the indicator.
+createdBySource|string|The name of the user/application that submitted the indicator.
 createdBy|String|Unique identity of the user/application that submitted the indicator.
 lastUpdatedBy|String|Identity of the user/application that last updated the indicator.
 creationTimeDateTimeUtc|DateTimeOffset|The date and time when the indicator was created.
@@ -63,7 +64,7 @@ title|String|Indicator title.
 description|String|Description of the indicator.
 recommendedActions|String|Recommended actions for the indicator.
 rbacGroupNames|List of strings|RBAC device group names where the indicator is exposed and active. Empty list in case it exposed to all devices.
-
+rbacGroupIds|List of strings|RBAC device group ID's where the indicator is exposed and active. Empty list in case it exposed to all devices.
 ## Public Preview: Indicator types
 
 > [!IMPORTANT]

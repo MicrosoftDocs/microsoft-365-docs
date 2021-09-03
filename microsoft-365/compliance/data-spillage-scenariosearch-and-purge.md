@@ -32,7 +32,7 @@ This document provides a list of instructions on how to permanently remove a mes
 
 Here's a how to manage a data spillage incident:
 
-![The 8-step workflow for managing data spillage incidents](../media/O365-eDiscoverySolutions-DataSpillage-workflow.png)
+![The 8-step workflow for managing data spillage incidents.](../media/O365-eDiscoverySolutions-DataSpillage-workflow.png)
   
 [(Optional) Step 1: Manage who can access the case and set compliance boundaries](#optional-step-1-manage-who-can-access-the-case-and-set-compliance-boundaries)<br/>
 [Step 2: Create an eDiscovery case](#step-2-create-an-ediscovery-case)<br/>
@@ -51,13 +51,13 @@ Here's a how to manage a data spillage incident:
     
 - To create a case, you must be a member of the eDiscovery Manager role group or be a member of a custom role group that's assigned the Case Management role. If you're not a member, ask a Microsoft 365 administrator to [add you to the eDiscovery manager role group](assign-ediscovery-permissions.md).
     
-- To create and run a Content Search, you have to be a member of the eDiscovery Manager role group or be assigned the Compliance Search management role. To delete messages, you have to be a member of the Organization Management role group or be assigned the Search And Purge management role. For information about adding users to a role group, see [Assign eDiscovery permissions in the Security & Compliance Center](./assign-ediscovery-permissions.md).
+- To create and run a Content Search, you have to be a member of the eDiscovery Manager role group or be assigned the Compliance Search management role. To delete messages, you have to be a member of the Organization Management role group or be assigned the Search And Purge management role. For information about adding users to a role group, see [Assign eDiscovery permissions](./assign-ediscovery-permissions.md).
     
 - To search the audit log eDiscovery activities in Step 8, auditing must be turned on for your organization. You can search for activities that were performed within the last 90 days. To learn more about how to enable and use auditing, see the [Auditing the data spillage investigation process](#auditing-the-data-spillage-investigation-process) section in Step 8. 
     
 ## (Optional) Step 1: Manage who can access the case and set compliance boundaries
 
-Depending on your organizational practice, you need to control who can access the eDiscovery case used to investigate a data spillage incident and set up compliance boundaries. The easiest way to do this is to add investigators as members of an existing role group in the Security & Compliance Center and then add the role group as a member of the eDiscovery case. For information about the built-in eDiscovery role groups and how to add members to an eDiscovery case, see [Assign eDiscovery permissions](assign-ediscovery-permissions.md).
+Depending on your organizational practice, you need to control who can access the eDiscovery case used to investigate a data spillage incident and set up compliance boundaries. The easiest way to do this is to add investigators as members of an existing role group in the Microsoft 365 compliance center and then add the role group as a member of the eDiscovery case. For information about the built-in eDiscovery role groups and how to add members to an eDiscovery case, see [Assign eDiscovery permissions](assign-ediscovery-permissions.md).
   
 You can also create a new role group that aligns with your organizational needs. For example, you might want a group of data spillage investigators in the organization to access and collaborate on all data spillage cases. You can do this by creating a "Data Spillage Investigator" role group, assigning the appropriate roles (Export, RMS Decrypt, Review, Preview, Compliance Search, and Case Management), adding the data spillage investigators to the role group, and then adding the role group as a member of the data spillage eDiscovery case. See [Set up compliance boundaries for eDiscovery investigations in Office 365](set-up-compliance-boundaries.md) for detailed instructions on how to do this. 
   
@@ -96,7 +96,7 @@ After you verified the search results, you may want to share your findings with 
  
       The Export report page is displayed.
 
-    ![Select the search and then click More > Export report on the flyout page](../media/O365-eDiscoverySolutions-DataSpillage-ExportReport1.png)
+    ![Select the search and then click More > Export report on the flyout page.](../media/O365-eDiscoverySolutions-DataSpillage-ExportReport1.png)
     
 3. Select **All items, including ones that have unrecognized format, are encrypted, or weren't indexed for other reasons** and then click **Generate report**.
 
@@ -104,7 +104,7 @@ After you verified the search results, you may want to share your findings with 
 
 5. Click the export job, and then click **Download** report on the flyout page.
  
-    ![On the Export page, click the export and then click "Download report"](../media/O365-eDiscoverySolutions-DataSpillage-ExportReport2.png)
+    ![On the Export page, click the export and then click "Download report.".](../media/O365-eDiscoverySolutions-DataSpillage-ExportReport2.png)
 
 The **Export Summary** report contains the number of locations found with results and the size of the search results. You can use this to compare with the report generated after deletion and provide as a proof of deletion. The **Results** report contains a more detailed summary of the search results, including the subject, sender, recipients, if the email was read, dates, and size of each message. If any of the details in this report contains that actual spilled data, be sure to permanently delete the Results.csv file when the investigation is complete.
 
@@ -138,7 +138,7 @@ There are two ways to collect a list of email addresses of mailboxes with spille
     
 4. In the **Type** drop down list, click **Top locations**.
     
-    ![Get a list of mailboxes that contain search results on the Top locations page in the Search statistics](../media/O365-eDiscoverySolutions-DataSpillage-TopLocations.png)
+    ![Get a list of mailboxes that contain search results on the Top locations page in the Search statistics.](../media/O365-eDiscoverySolutions-DataSpillage-TopLocations.png)
 
     A list of mailboxes that contain search results is displayed. The number of items in each mailbox that match the search query is also displayed.
     
@@ -167,7 +167,7 @@ Be sure to revert the mailbox to previous configurations after you verify that t
 
 ## Step 7: Permanently delete the spilled data
 
-Using the mailbox locations that you collected and prepared in Step 6 and the search query that was created and refined in Step 3 to find email messages that contain the spilled data, you can now permanently delete the spilled data.  As previously explained, to delete messages, you have to be a member of the Organization Management role group or be assigned the Search And Purge management role. For information about adding users to a role group, see [Assign eDiscovery permissions in the Security & Compliance Center](./assign-ediscovery-permissions.md).
+Using the mailbox locations that you collected and prepared in Step 6 and the search query that was created and refined in Step 3 to find email messages that contain the spilled data, you can now permanently delete the spilled data.  As previously explained, to delete messages, you have to be a member of the Organization Management role group or be assigned the Search And Purge management role. For information about adding users to a role group, see [Assign eDiscovery permissions](./assign-ediscovery-permissions.md).
 
 To delete the spilled messages, see [Search for and delete email messages](search-for-and-delete-messages-in-your-organization.md).
 
@@ -196,7 +196,7 @@ If the keywords in the search query that you created and used in Step 3 contains
 
 2. On the flyout page, click **Delete**.
 
-    ![Select the search and then click Delete on the flyout page](../media/O365-eDiscoverySolutions-DataSpillage-DeleteSearch.png)
+    ![Select the search and then click Delete on the flyout page.](../media/O365-eDiscoverySolutions-DataSpillage-DeleteSearch.png)
 
 ### Auditing the data spillage investigation process
 

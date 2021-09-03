@@ -24,7 +24,7 @@ After Slack data is stored in user mailboxes, you can apply Microsoft 365 compli
 
 The following overview explains the process of using a data connector to archive Slack data in Microsoft 365.
 
-![Archiving workflow for Slack data from 17a-4](../media/SlackDataParserConnectorWorkflow.png)
+![Archiving workflow for Slack data from 17a-4.](../media/SlackDataParserConnectorWorkflow.png)
 
 1. Your organization works with 17a-4 to set up and configure the Slack DataParser.
 

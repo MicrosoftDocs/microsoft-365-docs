@@ -104,7 +104,7 @@ Microsoft 365 comes with five pre-trained classifiers:
 
 These appear in the **Microsoft 365 compliance center** > **Data classification** > **Trainable classifiers** view with the status of `Ready to use`.
 
-![classifiers-pre-trained-classifiers](../media/classifiers-ready-to-use-classifiers.png)
+![classifiers-pre-trained-classifiers.](../media/classifiers-ready-to-use-classifiers.png)
 
 > [!IMPORTANT]
 > Please note the offensive language, harassment, profanity, discrimination, and threat classifiers only work with searchable text and are not an exhaustive or complete list of terms or language across these areas. Further, language and cultural standards continually change, and in light of these realities, Microsoft reserves the right to update these classifiers in its discretion. While classifiers may assist your organization in detecting these areas, classifiers are not intended to provide your organization's sole means of detecting or addressing the use of such language. Your organization, not Microsoft or its subsidiaries, remains responsible for all decisions related to monitoring, scanning, blocking, removal, and retention of any content identified by a pre-trained classifier, including compliance with local privacy and other applicable laws. Microsoft encourages consulting with legal counsel before deployment and use.
@@ -125,13 +125,13 @@ For example you could create trainable classifiers for:
 
 Creating and publishing a classifier for use in compliance solutions, such as retention policies and communication supervision, follows this flow. For more detail on creating a custom trainable classifier see, [Creating a custom classifier](classifier-get-started-with.md).
 
-![process flow custom classifier](../media/classifier-trainable-classifier-flow.png)
+![process flow custom classifier.](../media/classifier-trainable-classifier-flow.png)
 
 ### Retraining classifiers
 
 You can help improve the accuracy of all custom classifiers and some pre-trained classifiers by providing them with feedback on the accuracy of the classification that they perform. This is called retraining and follow this workflow.
 
-![classifier retraining workflow](../media/classifier-retraining-workflow.png)
+![classifier retraining workflow.](../media/classifier-retraining-workflow.png)
 
 ## See also
 

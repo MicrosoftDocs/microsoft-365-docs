@@ -24,7 +24,7 @@ After data from the Rogers mobile network is stored in user mailboxes, you can a
 
 The following overview explains the process of using a connector to archive Rogers SMS and MMS data in Microsoft 365.
 
-![Rogers Network archiving workflow](../media/RogersNetworkConnectorWorkflow.png)
+![Rogers Network archiving workflow.](../media/RogersNetworkConnectorWorkflow.png)
 
 1. Your organization works with TeleMessage to set up a Rogers Network Archiver connector. For more information, see [Activating the TeleMessage Rogers Network Archiver for Microsoft 365](https://www.telemessage.com/microsoft-365-activation-for-the-rogers-network-archiver/).
 

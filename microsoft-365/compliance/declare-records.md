@@ -54,7 +54,7 @@ When you create a retention label from the **Records Management** solution in th
 
 For example:
 
-![Configure a retention label to mark content as a record or regulatory](../media/recordversioning6.png)
+![Configure a retention label to mark content as a record or regulatory.](../media/recordversioning6.png)
 
 Using this retention label, you can now apply it to SharePoint or OneDrive documents and Exchange emails, as needed.
 
@@ -74,7 +74,7 @@ When retention labels that mark items as a record or regulatory record are made 
 
 Example of a document marked as record by using a retention label:
 
-![Details pane for document tagged as a record](../media/recordversioning7.png)
+![Details pane for document tagged as a record.](../media/recordversioning7.png)
 
 ## Searching the audit log for labeled items that were declared records
 

@@ -45,7 +45,7 @@ To initially configure Microsoft 365 Usage Analytics:
 2. On the **Usage Reports** page, in the Microsoft 365 Usage Analytics section, select **Get Started**. 
 3. Under **Enable Power BI for usage analytics**, select **Make organizational usage data available to Microsoft usage analytics for Power BI**, and then select **Save**.
 
-    ![Make your tenant data available](../../media/usage-analytics/make-data-available.png) 
+    ![Make your tenant data available.](../../media/usage-analytics/make-data-available.png) 
 
 
 
@@ -53,7 +53,7 @@ To initially configure Microsoft 365 Usage Analytics:
 
 4. When your organizations data is ready, refreshing the page will show a message stating that your data is now available, and will also provide your **tenant ID** number. You will need to use the tenant ID in a later step when you attempt to connect to your tenant data. 
  
-    ![Tenant ID](../../media/usage-analytics/tenant-id-gcc.png) 
+    ![Tenant ID.](../../media/usage-analytics/tenant-id-gcc.png) 
  
     > [!IMPORTANT]
     > When your data is available, do not select **Go to Power BI**, which will take you to the Power BI Marketplace.  The template app for this report required by GCC tenants is not available in the Power BI Marketplace.  
@@ -69,13 +69,13 @@ Microsoft 365 GCC users can download and use the Microsoft 365 Usage Analytics r
 1. After downloading the [Power BI template](https://download.microsoft.com/download/7/8/2/782ba8a7-8d89-4958-a315-dab04c3b620c/Microsoft%20365%20Usage%20Analytics.pbit), open it using Power BI Desktop. 
 2. When prompted for a **TenantID**, enter the tenant ID you received when you prepared your organization’s data for this report in step 1. Then select **Load**. It will take several minutes for your data to load. 
 
-    ![Enter tenant ID](../../media/usage-analytics/add-tenant-id.png) 
+    ![Enter tenant ID.](../../media/usage-analytics/add-tenant-id.png) 
 
 
 
 3. When loading completes, your report will display, and you will see an executive summary of your data. 
 
-    ![Executive Summary](../../media/usage-analytics/exec-summary.png) 
+    ![Executive Summary.](../../media/usage-analytics/exec-summary.png) 
  
 
 4. Save your changes to the report. 
