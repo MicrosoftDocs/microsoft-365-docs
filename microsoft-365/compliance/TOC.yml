@@ -333,17 +333,17 @@
       items: 
         - name: Learn about retention policies & retention labels
           href: retention.md
-        - name: Retention flowchart
+        - name: Flowchart for retention & deletion
           href: retention-flowchart.md
-        - name: Retention for SharePoint and OneDrive
+        - name: Retention & deletion for SharePoint and OneDrive
           href: retention-policies-sharepoint.md
-        - name: Retention for Microsoft Teams
+        - name: Retention & deletion for Microsoft Teams
           href: retention-policies-teams.md
-        - name: Retention for Yammer
+        - name: Retention & deletionfor Yammer
           href: retention-policies-yammer.md
-        - name: Retention for Exchange
+        - name: Retention & deletionfor Exchange
           href: retention-policies-exchange.md
-        - name: Limits for retention
+        - name: Limits for retention & deletion
           href: retention-limits.md
     - name: Archive third-party data
       items: 
