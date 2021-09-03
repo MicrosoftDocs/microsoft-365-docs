@@ -170,14 +170,14 @@ Set up a network file share (UNC/mapped drive) to download security intelligence
 
 1. On the system on which you want to provision the share and download the updates, create a folder to which you will save the script.
 
-    ```DOS
+    ```console
     Start, CMD (Run as admin)
     MD C:\Tool\PS-Scripts\
     ```
 
 2. Create the folder to which you will save the signature updates.
 
-    ```DOS
+    ```console
     MD C:\Temp\TempSigs\x64
     MD C:\Temp\TempSigs\x86
     ```
@@ -194,12 +194,12 @@ Set up a network file share (UNC/mapped drive) to download security intelligence
 
 8. Use the command line to set up the scheduled task.
 
-    > [!NOTE]
-    > There are two types of updates: full and delta.
+   > [!NOTE]
+   > There are two types of updates: full and delta.
 
    - For x64 delta:
 
-       ```DOS
+       ```powershell
        Powershell (Run as admin)
 
        C:\Tool\PS-Scripts\
@@ -209,7 +209,7 @@ Set up a network file share (UNC/mapped drive) to download security intelligence
 
    - For x64 full:
 
-       ```DOS
+       ```powershell
        Powershell (Run as admin)
 
        C:\Tool\PS-Scripts\
@@ -219,7 +219,7 @@ Set up a network file share (UNC/mapped drive) to download security intelligence
 
    - For x86 delta:
 
-       ```DOS
+       ```powershell
        Powershell (Run as admin)
 
        C:\Tool\PS-Scripts\
@@ -229,7 +229,7 @@ Set up a network file share (UNC/mapped drive) to download security intelligence
 
    - For x86 full:
 
-       ```DOS
+       ```powershell
        Powershell (Run as admin)
 
        C:\Tool\PS-Scripts\
@@ -237,8 +237,9 @@ Set up a network file share (UNC/mapped drive) to download security intelligence
        ".\SignatureDownloadCustomTask.ps1 -action create -arch x86 -isDelta $false -destDir C:\Temp\TempSigs\x86 -scriptPath C:\Tool\PS-Scripts\SignatureDownloadCustomTask.ps1 -daysInterval 1"
        ```
 
-    > [!NOTE]
-    > When the scheduled tasks are created, you can find these in the Task Scheduler under Microsoft\Windows\Windows Defender
+   > [!NOTE]
+   > When the scheduled tasks are created, you can find these in the Task Scheduler under Microsoft\Windows\Windows Defender
+
 9. Run each task manually and verify that you have data (mpam-d.exe, mpam-fe.exe, and nis_full.exe) in the following folders (you might have chosen different locations):
 
    - C:\Temp\TempSigs\x86
@@ -246,7 +247,7 @@ Set up a network file share (UNC/mapped drive) to download security intelligence
 
    If the scheduled task fails, run the following commands:
 
-    ```DOS
+    ```console
     C:\windows\system32\windowspowershell\v1.0\powershell.exe -NoProfile -executionpolicy allsigned -command "&\"C:\Tool\PS-Scripts\SignatureDownloadCustomTask.ps1\" -action run -arch x64 -isDelta $False -destDir C:\Temp\TempSigs\x64"
 
     C:\windows\system32\windowspowershell\v1.0\powershell.exe -NoProfile -executionpolicy allsigned -command "&\"C:\Tool\PS-Scripts\SignatureDownloadCustomTask.ps1\" -action run -arch x64 -isDelta $True -destDir C:\Temp\TempSigs\x64"
@@ -259,7 +260,7 @@ Set up a network file share (UNC/mapped drive) to download security intelligence
     > [!NOTE]
     > Issues could also be due to execution policy.
 
-10. Create a share pointing to C:\Temp\TempSigs (e.g. \\server\updates).
+10. Create a share pointing to C:\Temp\TempSigs (e.g., \\server\updates).
 
     > [!NOTE]
     > At a minimum, authenticated users must have "Read" access.
