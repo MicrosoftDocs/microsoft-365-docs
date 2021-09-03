@@ -75,10 +75,12 @@ The model identifies any files and folders with the model’s associated content
 While an applied model processes all files and folders uploaded to the document library after it is applied, you can also do the following to run the model on files and folders that already exist in the document library prior to the model being applied:
 
 1. In your document library, select the files and folders that you want to be processed by your model.
-2. After selecting your files and folders, **Classify and extract** will appear in the document library ribbon. Select **Classify and extract**.
-3. The files and folders you selected will be added to the queue to be processed.
 
-      ![Classify and extract.](../media/content-understanding/extract-classify.png) 
+2. After selecting your files and folders, **Classify and extract** will appear in the document library ribbon. Select **Classify and extract**.
+
+      ![Screenshot showing the Classify and extract option.](../media/content-understanding/extract-classify.png) 
+
+3. The files and folders you selected will be added to the queue to be processed.
 
 ### Classification Date field
 
