@@ -167,9 +167,9 @@ Microsoft Defender Antivirus platform is updated monthly.
 This card has two bar graphs showing all-up results for quick scans and full scans. In both graphs, the first bar indicates the completion rate for scans, and indicate **Completed**, **Canceled**, or **Failed**. The second bar in each section provides the error codes for failed scans.
 By scanning the **Mode** and **Recent scan results** columns, you can quickly identify devices that are not in active antivirus scan mode, and devices that have failed or cancelled recent antivirus scans. You can also quickly identify whether you have outdated platform versions. You can return to the report with this information and gather additional details and security recommendations.
 
-### Related topics
+For more details on the current Microsoft Defender Antivirus versions and how to update the different Microsoft Defender Antivirus components, visit [Manage Microsoft Defender Antivirus updates and apply baselines](manage-updates-baselines-microsoft-defender-antivirus.md).
 
-[Manage Microsoft Defender Antivirus updates and apply baselines](manage-updates-baselines-microsoft-defender-antivirus.md).
+### Related topics
 
 [Threat protection report](threat-protection-reports.md)
 
