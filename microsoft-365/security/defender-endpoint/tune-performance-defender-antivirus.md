@@ -92,8 +92,8 @@ Microsoft Defender Antivirus performance analyzer has the following prerequisite
 ## PowerShell reference
 There are two new PowerShell cmdlets used to tune performance of Microsoft Defender Antivirus: 
 
-- [New-MpPerformanceRecording](#New-MpPerformanceRecording)
-- [Get-MpPerformanceReport](#Get-MpPerformanceReport)
+- [New-MpPerformanceRecording](#new-mpperformancerecording)
+- [Get-MpPerformanceReport](#get-mpperformancereport)
 
 ### New-MpPerformanceRecording
 
