@@ -24,8 +24,8 @@ Learn more:  [Scheduler for Microsoft 365 licensing](https://www.microsoft.com/m
 
 | Prerequisite | Description |
 |-------------------|-------------|
-|A Scheduler assistant mailbox for the tenant |An Exchange equipment type resource mailbox that acts as the Scheduler assistant mailbox for your tenant to send and receive emails to and from Cortana. All emails sent to Cortana are retained in your tenant’s Cortana mailbox based on your retention policy. The Scheduler assistant mailbox is typically named “Cortana” or “Cortana Scheduler” since all the emails from the assistant will be signed Cortana.</br> - Create an equipment type Exchange resource mailbox</br> - Name the mailbox’s display name and primary SMTP address `Cortana <cortana@yourdomain.com>` or `Cortana Scheduler <cortana.scheduler@yourdomain.com>`.</br>**Note:** The Scheduler assistant mailbox does not require a Microsoft 365 or a Scheduler license.|
-|Exchange Online mailbox |Meeting organizers must have an Exchange Online mailbox and calendar typically as part of their Microsoft 365 license. In addition, meeting organizers must have a Scheduler license. The Scheduler license enables the Scheduler assistant to use the meeting organizer’s mailbox and calendar to schedule meetings for them.</br></br> See Scheduler for Microsoft 365 for licensing and pricing information.  </br></br>**Note:** Meeting attendees do not need a Scheduler or Microsoft 365 license. Meeting attendees can be internal or external to the tenant. Meeting attendees only need access to an email address.|
+|A Scheduler assistant mailbox for the tenant |An Exchange equipment type resource mailbox that acts as the Scheduler assistant mailbox for your tenant to send and receive emails to and from Cortana. All emails sent to Cortana are retained in your tenant’s Cortana mailbox based on your retention policy. The Scheduler assistant mailbox is typically named “Cortana” or “Cortana Scheduler” since all the emails from the assistant will be signed Cortana.<br/> - Create an equipment type Exchange resource mailbox<br/> - Name the mailbox’s display name and primary SMTP address `Cortana <cortana@yourdomain.com>` or `Cortana Scheduler <cortana.scheduler@yourdomain.com>`.<br/>**Note:** The Scheduler assistant mailbox does not require a Microsoft 365 or a Scheduler license.|
+|Exchange Online mailbox |Meeting organizers must have an Exchange Online mailbox and calendar typically as part of their Microsoft 365 license. In addition, meeting organizers must have a Scheduler license. The Scheduler license enables the Scheduler assistant to use the meeting organizer’s mailbox and calendar to schedule meetings for them.<br/><br/> See Scheduler for Microsoft 365 for licensing and pricing information.  <br/><br/>**Note:** Meeting attendees do not need a Scheduler or Microsoft 365 license. Meeting attendees can be internal or external to the tenant. Meeting attendees only need access to an email address.|
 
 
 ## Setting up the Scheduler assistant mailbox
@@ -92,7 +92,7 @@ The result should be
 - RecipientType: UserMailbox
 - RecipientTypeDetails: EquipmentMailbox
 
-</br>
+<br/>
 
 ### To discover which mailbox is the Scheduler assistant mailbox
 
