@@ -29,12 +29,13 @@ The Microsoft 365 **Reports** dashboard shows you an activity overview across th
 
 ## How to get to the Microsoft browser usage report
 
-1. In the admin center, go to the **Reports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Usage</a> page. 
+1. In the admin center, go to the **Reports** \> <b><a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Usage</a></b> page.
+
 2. From the dashboard homepage, click on the **View more** button on the Microsoft browser usage card.
 
 ## How to notify users to upgrade their browser
 
-![Microsoft browser usage report action flow](../../media/1ef4eb08-18b8-4dda-aa15-1aad013ecd70.png)
+![Microsoft browser usage report action flow.](../../media/1ef4eb08-18b8-4dda-aa15-1aad013ecd70.png)
 
 Global admins can opt-in to sending messages to users, who are using Microsoft 365 services on Edge Legacy (unsupported) and Internet Explorer (soon to be unsupported). This targeted message notifies users that support for these browsers will send soon and links to a support article with information on Microsoft Edge and simple steps to follow to switch browsers. 
 
