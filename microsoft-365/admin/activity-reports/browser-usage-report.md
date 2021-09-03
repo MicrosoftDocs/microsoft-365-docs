@@ -35,7 +35,7 @@ The Microsoft 365 **Reports** dashboard shows you an activity overview across th
 
 ## How to notify users to upgrade their browser
 
-![Microsoft browser usage report action flow.](../../media/1ef4eb08-18b8-4dda-aa15-1aad013ecd70.png)
+:::image type="content" alt-text="Microsoft browser usage report action flow." source="../../media/1ef4eb08-18b8-4dda-aa15-1aad013ecd70.png" lightbox="../../media/1ef4eb08-18b8-4dda-aa15-1aad013ecd70.png":::
 
 Global admins can opt-in to sending messages to users, who are using Microsoft 365 services on Edge Legacy (unsupported) and Internet Explorer (soon to be unsupported). This targeted message notifies users that support for these browsers will send soon and links to a support article with information on Microsoft Edge and simple steps to follow to switch browsers. 
 
@@ -43,7 +43,7 @@ You can find this feature on the report page. Once the message is created, users
 
 ## Interpret the Microsoft browser usage report
 
-![Microsoft browser usage report.](../../media/95557c88-24ee-417d-a828-96ba00b17aaf.png)
+:::image type="content" alt-text="Microsoft browser usage report." source="../../media/95557c88-24ee-417d-a828-96ba00b17aaf.png" lightbox="../../media/95557c88-24ee-417d-a828-96ba00b17aaf.png":::
 
 |Item|Description|
  |:-----|:-----|
