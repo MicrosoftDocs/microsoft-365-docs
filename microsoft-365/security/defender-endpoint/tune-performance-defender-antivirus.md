@@ -92,11 +92,10 @@ Microsoft Defender Antivirus performance analyzer has the following prerequisite
 ## PowerShell reference
 There are two new PowerShell cmdlets used to tune performance of Microsoft Defender Antivirus: 
 
-- New-MpPerformanceRecording
-- Get-MpPerformanceReport
+- [New-MpPerformanceRecording](#New-MpPerformanceRecording)
+- [Get-MpPerformanceReport](#Get-MpPerformanceReport)
 
-
-### PowerShell Reference: New-MpPerformanceRecording
+### New-MpPerformanceRecording
 
 The following section describes the reference for the new PowerShell cmdlet New-MpPerformanceRecording. This cmdlet Collects a performance recording of Microsoft Defender Antivirus scans.
 
@@ -146,7 +145,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### PowerShell Reference: Get-MpPerformanceReport
+### Get-MpPerformanceReport
 
 The following section describes the Get-MpPerformanceReport PowerShell cmdlet.
 
@@ -156,7 +155,7 @@ Analyzes and reports on Microsoft Defender Antivirus (MDAV) performance recordin
 #### Pattern: Get-MpPerformanceReport
 
 ##### DefaultSet (Default)
-```
+```powershell
 Get-MpPerformanceReport    [-Path] <String>
 [-TopScans <Int32>]
 [-TopFiles  <Int32>
