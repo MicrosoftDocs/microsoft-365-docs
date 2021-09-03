@@ -335,7 +335,7 @@
           href: retention.md
         - name: Flowchart for retention & deletion outcomes
           href: retention-flowchart.md
-        - name: Retention & deletion for workloads
+        - name: Retention & deletion for Microsoft 365 workloads
           items: 
             - name: SharePoint and OneDrive
               href: retention-policies-sharepoint.md
@@ -345,7 +345,7 @@
               href: retention-policies-yammer.md
             - name: Exchange
               href: retention-policies-exchange.md
-        - name: Limits for retention & deletion
+        - name: Limits for retention and deletion
           href: retention-limits.md
     - name: Archive third-party data
       items: 
