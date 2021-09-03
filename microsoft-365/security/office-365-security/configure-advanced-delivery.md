@@ -158,7 +158,7 @@ New-SecOpsOverridePolicy -Name SecOpsOverridePolicy -SentTo <EmailAddress1>,<Ema
 ```
 
 > [!NOTE]
-> Regardless of the Name value you specify, the policy name will be SecOpsOverridePolicy, so you might as well use that value.
+> Regardless of the Name value you specify, the policy name will be _SecOpsOverridePolicy_, so you might as well use that value.
 
 This example creates the SecOps mailbox policy.
 
@@ -177,7 +177,7 @@ New-SecOpsOverrideRule -Name SecOpsOverrideRule -Policy SecOpsOverridePolicy
 ```
 
 > [!NOTE]
-> Regardless of the Name value you specify, the rule name will be SecOpsOverrideRule\<GUID\> where \<GUID\> is a unique GUID value (for example, 6fed4b63-3563-495d-a481-b24a311f8329).
+> Regardless of the Name value you specify, the rule name will be _SecOpsOverrideRule_\<GUID\> where \<GUID\> is a unique GUID value (for example, 6fed4b63-3563-495d-a481-b24a311f8329).
 
 For detailed syntax and parameter information, see [New-SecOpsOverrideRule](/powershell/module/exchange/new-secopsoverriderule).
 
@@ -209,7 +209,7 @@ Get-SecOpsOverrideRule | Format-Table Name,Mode
 
 After you identify the invalid rules, you can remove them by using the **Remove-SecOpsOverrideRule** cmdlet as described [later in this article](#use-powershell-to-remove-secops-override-rules).
 
-For detailed syntax and parameter information, see [Get-SecOpsOverrideRule](/powershell/module/exchange/get-secopsoverriderule)
+For detailed syntax and parameter information, see [Get-SecOpsOverrideRule](/powershell/module/exchange/get-secopsoverriderule).
 
 ### Use PowerShell to modify the SecOps override policy
 
@@ -219,7 +219,7 @@ To modify the SecOps override policy, use the following syntax:
 Set-SecOpsOverridePolicy -Identity SecOpsOverridePolicy [-AddSentTo <EmailAddress1>,<EmailAddress2>,...<EmailAddressN>] [-RemoveSentTo <EmailAddress1>,<EmailAddress2>,...<EmailAddressN>]
 ```
 
-This example adds secops2@contoso.com to the SecOps override policy.
+This example adds `secops2@contoso.com` to the SecOps override policy.
 
 ```powershell
 Set-SecOpsOverridePolicy -Identity SecOpsOverridePolicy -AddSentTo secops2@contoso.com
@@ -295,7 +295,7 @@ This example creates the phishing simulation override policy.
 New-PhishSimOverridePolicy -Name PhishSimOverridePolicy
 ```
 
-**Note**: Regardless of the Name value you specify, the policy name will be PhishSimOverridePolicy, so you might as well use that value.
+**Note**: Regardless of the Name value you specify, the policy name will be _PhishSimOverridePolicy_, so you might as well use that value.
 
 For detailed syntax and parameter information, see [New-PhishSimOverridePolicy](/powershell/module/exchange/new-phishsimoverridepolicy).
 
@@ -307,7 +307,7 @@ Use the following syntax:
 New-PhishSimOverrideRule -Name PhishSimOverrideRule -Policy PhishSimOverridePolicy -SenderDomainIs <Domain1>,<Domain2>,...<DomainN> -SenderIpRanges <IPAddressEntry1>,<IPAddressEntry2>,...<IPAddressEntryN>
 ```
 
-Regardless of the Name value you specify, the rule name will be PhishSimOverrideRule\<GUID\> where \<GUID\> is a unique GUID value (for example, a0eae53e-d755-4a42-9320-b9c6b55c5011).
+Regardless of the Name value you specify, the rule name will be _PhishSimOverrideRule_\<GUID\> where \<GUID\> is a unique GUID value (for example, a0eae53e-d755-4a42-9320-b9c6b55c5011).
 
 A valid IP address entry is one of the following values:
 
