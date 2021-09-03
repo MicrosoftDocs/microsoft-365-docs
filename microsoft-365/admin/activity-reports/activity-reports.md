@@ -162,7 +162,7 @@ Global administrators can revert this change for their tenant and show identifia
   
 3. Uncheck the statement **In all reports, display de-identified names for users, groups, and sites**, and then save your changes.  
   
-It'll take a few minutes for these changes to take effect on the reports in the reports dashboard. This setting also applies to the Microsoft 365 usage reports in [Microsoft Graph](https://docs.microsoft.com/en-us/graph/api/resources/report?view=graph-rest-1.0) and [Power BI](https://docs.microsoft.com/en-us/microsoft-365/admin/usage-analytics/usage-analytics?view=o365-worldwide) and [the usage reports in Microsoft Teams Admin center](https://docs.microsoft.com/en-us/microsoftteams/teams-analytics-and-reports/teams-reporting-reference). Showing identifiable user information is a logged event in the Microsoft 365 compliance center audit log.   
+It'll take a few minutes for these changes to take effect on the reports in the reports dashboard. This setting also applies to the Microsoft 365 usage reports in [Microsoft Graph](https://docs.microsoft.com/graph/api/resources/report?view=graph-rest-1.0) and [Power BI](https://docs.microsoft.com/microsoft-365/admin/usage-analytics/usage-analytics?view=o365-worldwide) and [the usage reports in Microsoft Teams Admin center](https://docs.microsoft.com/microsoftteams/teams-analytics-and-reports/teams-reporting-reference). Showing identifiable user information is a logged event in the Microsoft 365 compliance center audit log.   
   
 ## What happens to usage data when a user account is closed?
 
