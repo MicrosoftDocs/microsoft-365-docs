@@ -32,7 +32,7 @@ ms.technology: mde
 > [!IMPORTANT]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 >
-> Information about these features that are commercially released follows the prerelease information in the section titled [Publicly-released: Device health and compliance report in Microsoft Defender for Endpoint](#publicly-released-device-health-and-compliance-report-in-microsoft-defenderd-for-endpoint).
+> Information about the features that are _commercially released_ follows the prerelease information in the section titled [Publicly-released: Device health and compliance report in Microsoft Defender for Endpoint](#publicly-released-device-health-and-compliance-report-in-microsoft-defenderd-for-endpoint).
 
 ## Public Preview - Device health and antivirus compliance report in Microsoft Defender for Endpoint
 
