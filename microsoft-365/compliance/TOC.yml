@@ -329,13 +329,11 @@
   items: 
     - name: Govern your data
       href: manage-information-governance.md
-    - name: Resources for regulatory requirements
-      href: retention-regulatory-requirements.md- name: Manage app governance
     - name: Retain and delete data
       items: 
         - name: Learn about retention policies & retention labels
           href: retention.md
-        - name: Flowchart to determine retention & deletion outcomes
+        - name: Flowchart to determine retention & deletion outcom
           href: retention-flowchart.md
         - name: Retention & deletion for SharePoint and OneDrive
           href: retention-policies-sharepoint.md
@@ -565,6 +563,9 @@
           href: auto-apply-retention-labels-scenario.md
         - name: Manage disposition of data
           href: disposition.md
+    - name: Resources for regulatory requirements
+      href: retention-regulatory-requirements.md
+- name: Manage app governance
   items: 
     - name: Protect and govern your apps
       href: app-governance-manage-app-governance.md
