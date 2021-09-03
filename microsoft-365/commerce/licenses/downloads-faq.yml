@@ -26,7 +26,8 @@ sections:
 
           You can find the system requirements for each product by signing into the admin center and going to **Your products** > **Downloads** page > **Product description**. 
 
-          **Note** Not all products require a product key.
+          > [!NOTE]
+          > Not all products require a product key.
 
       - question: |
           What products can I download from the admin center?
