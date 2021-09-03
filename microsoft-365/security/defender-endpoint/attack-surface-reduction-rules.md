@@ -57,7 +57,7 @@ The following table lists attack surface reduction rules in alphabetical order. 
 |[Block Office applications from injecting code into other processes](#block-office-applications-from-injecting-code-into-other-processes)  | ![supported.](images/checkmark.png) <br><br> | ![supported.](images/checkmark.png) <br><br> |
 |[Block Office communication application from creating child processes](#block-office-communication-application-from-creating-child-processes) | ![supported.](images/checkmark.png) <br><br> | ![supported.](images/checkmark.png) <br><br> |
 |[Block persistence through WMI event subscription](#block-persistence-through-wmi-event-subscription) <br><br> \* _File and folder exclusions not supported._ | No | No |
-|[Block process creations originating from PSExec and WMI commands](#block-process-creations-originating-from-psexec-and-wmi-commands) | | ![supported.](images/checkmark.png) <br><br> | ![supported.](images/checkmark.png) <br><br> |
+|[Block process creations originating from PSExec and WMI commands](#block-process-creations-originating-from-psexec-and-wmi-commands) | ![supported.](images/checkmark.png) <br><br> | ![supported.](images/checkmark.png) <br><br> |
 |[Block untrusted and unsigned processes that run from USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | ![supported.](images/checkmark.png) <br><br> | ![supported.](images/checkmark.png) <br><br> |
 |[Block Win32 API calls from Office macros](#block-win32-api-calls-from-office-macros) | No | No |
 |[Use advanced protection against ransomware](#use-advanced-protection-against-ransomware) | ![supported.](images/checkmark.png) <br><br> | ![supported.](images/checkmark.png) <br><br> |
