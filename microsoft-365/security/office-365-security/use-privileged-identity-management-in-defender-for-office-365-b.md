@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: 08/09/2021
+ms.date: 09/03/2021
 audience: ITPro
 ms.topic: article
 localization_priority: Priority
@@ -43,12 +43,16 @@ In this example we will configure "Alex", a member of our security team who will
 
 1. Sign into the [Azure AD Admin Center](https://aad.portal.azure.com/) and select  **Azure Active Directory** > **Roles and administrators**.
     1. :::image type="content" source="../../media/azure-active-directory-roles-and-administrators-panel.jpg" alt-text="The Azure Active Directory Roles and administrators pane.":::
+
 1. Select **Security Reader** in the list of roles and then **Settings** > **Edit**
     1. :::image type="content" source="../../media/azure-portal-role-setting-details-security-reader.jpg" alt-text="Azure Active Directory with the role of Security Reader selected.":::
+
 1. Set the '**Activation maximum duration (hours)**' to a normal working day and 'On activation' to require **Azure MFA**.
     1. :::image type="content" source="../../media/azure-active-directory-add-assignments-and-members-to-pim.jpg" alt-text="Azure Active Directory add assignments and members to PIM.":::
+
 1. As this is Alex's normal privilege level for day to day operations, we will Uncheck **Require justification on activation**' > **Update**.
 1. Select **Add Assignments** > **No member selected** > select or type the name to search for the correct member.
+    1. :::image type="content" source="../../media/security-reader-add-assignments-select-a-member.jpg" alt-text="The Azure Active Directory on the Add Assignments page, selecting a member.":::
 1. Click the **Select** button to choose the member you need to add for PIM privileges > click **Next** > make no changes on the Add Assignment page (both assignment type *Eligible* and duration *Permenantly Eligible* will be defaults ) and **Assign**.
 
 The name of your user (here 'Alex') will appear under Eligible assignments on the next page, this means they are able to PIM into the role with the settings configured earlier.
@@ -67,7 +71,9 @@ Using [Privileged Access groups](/azure/active-directory/privileged-identity-man
 In the Security Portal, create a custom role group that contains the permissions that we want. 
 
 1. Browse to Microsoft 365 Defender portal (https://security.microsoft.com) > **Permissions & Roles** > select **Roles** under Email and Collaboration > **Create**.
+    1. :::image type="content" source="../../media/microsoft-365-defender-create-permissions-pane.jpg" alt-text="The Microsoft 365 Defender pane under Permissions & Roles, creating a role group.":::
 2. Name your group to reflect its purpose such as 'Search and Purge PIM'.
+    1. :::image type="content" source="../../media/microsoft-365-defender-role-groups-creation.jpg" alt-text="The Microsoft 365 Defender pane under Permissions & Roles, clicking to create your role group.":::
 3. Don't add members, simply save the group and move on to the next part!
 
 ### Create the security group in Azure AD for elevated permissions
@@ -75,17 +81,23 @@ In the Security Portal, create a custom role group that contains the permissions
 1. Browse back to the [Azure AD Admin Center](https://aad.portal.azure.com/) and navigate to **Azure AD** > **Groups** > **New Group**.
 2. Name your AAD group to reflect its purpose, **no owners or members are required** right now.
 3. Turn **Azure AD roles can be assigned to the group** to **Yes**.
+    1. :::image type="content" source="../../media/azure-active-directory-new-group-for-pim.jpg" alt-text="The Azure Active Directory admin center, creating a Security group for PIM with MDO testing.":::
 4. Don't add any roles, members or owners, create the group.
 5. Go back into the group you've just created, and select **Privileged Access** > **Enable Privileged Access**.
+    1. :::image type="content" source="../../media/azure-active-directory-enable-privileged-access.jpg" alt-text="The Azure Active Directory admin center, in the Activity settings for the Security group we just created, click to Enable Privileged Access.":::
 6. Within the group select **Eligible assignments** > **Add assignments** > Add the user who needs Search & Purge as a role of **Member**.
+    1. :::image type="content" source="../../media/azure-active-directory-add-assignments-and-members-to-pim.jpg" alt-text="The Azure Active Directory admin center, in the  Security group we just created, select the role of Member. You should see 'Alex' listed as the membership.":::
 7. Configure the **Settings** within the group's Privileged Access pane. Choose to **Edit** the settings for the role of **Member**.
 8. Change the activation time to suit your organization. In this example require *Azure MFA*, *justification*, and *ticket information* before selecting **Update**.
+    1. :::image type="content" source="../../media/role-setting-details-security-reader-activation-duration.jpg" alt-text="The Azure Active Directory admin center > Security Reader Group > Role setting details for Security reader, requiring Azure MFA, and an 8 hour time limit to the granting of rights..":::
 
 ### Nest the newly created security group into the role group.
 
 1. [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell) and run the following:
 
     `Add-RoleGroupMember "<<Role Group Name>>" -Member "<<Azure Security Group>>"`
+
+    1. :::image type="content" source="../../media/powershell-add-rolegroupmember-for-pim-role-group.jpg" alt-text="Windows PowerShell cdmlet for add-rolegroupmember for the PIM role group.":::
 
 ## Test your configuration of PIM with Defender for Office 365
 
