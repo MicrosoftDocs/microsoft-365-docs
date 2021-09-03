@@ -41,7 +41,7 @@ sections:
       - question: |
           How do I find SQL Server product keys?
         answer: |
-          The SQL license key is embedded in the software’s activation wizard rather than displayed in the admin center and is detected automatically during installation. For more information, see [The SQL Server Installation Guide] (/sql/database-engine/install-windows/install-sql-server).
+          The SQL license key is embedded in the software’s activation wizard rather than displayed in the admin center and is detected automatically during installation. For more information, see [The SQL Server Installation Guide](/sql/database-engine/install-windows/install-sql-server).
 
           You can also find the key by downloading the SQL ISO file from the admin center > ..\x64 folder > DefaultSetup.ini file. Make sure to back up any existing version before installing or upgrading SQL editions. If you need help troubleshooting technical issues during product installation or online service activation, contact Microsoft Technical Support by submitting a [Technical Support request](https://support.microsoft.com/oas).
 
