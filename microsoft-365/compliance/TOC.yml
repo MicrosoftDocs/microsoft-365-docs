@@ -325,7 +325,7 @@
               href: dlp-migrate-exo-policy-to-unified-dlp.md
             - name: Data Loss Prevention policy tips reference
               href: dlp-policy-tips-reference.md
-- name: Manage information governance
+- name: Manage information governance and records
   items: 
     - name: Govern your data
       href: manage-information-governance.md
@@ -347,38 +347,6 @@
               href: retention-policies-exchange.md
             - name: Limits for retention
               href: retention-limits.md
-        - name: Get started with retention
-          href: get-started-with-retention.md
-        - name: Create retention policies
-          href: create-retention-policies.md
-        - name: Use file plan
-          href: file-plan-manager.md
-        - name: Create retention labels and apply them in apps
-          href: create-apply-retention-labels.md
-        - name: Apply a retention label to content automatically
-          href: apply-retention-labels-automatically.md
-        - name: Lock policies to restrict changes
-          href: retention-preservation-lock.md
-        - name: Create retention labels with PowerShell
-          href: bulk-create-publish-labels-using-powershell.md
-        - name: Start retention when an event occurs
-          href: event-driven-retention.md
-        - name: Use retention labels to manage document lifecycles
-          href: auto-apply-retention-labels-scenario.md
-        - name: Manage disposition of data
-          href: disposition.md
-    - name: Import mailbox data
-      items: 
-        - name: Overview of importing PST files
-          href: importing-pst-files-to-office-365.md
-        - name: Use network upload to import PST files
-          href: use-network-upload-to-import-pst-files.md
-        - name: Use drive shipping to import PST files
-          href: use-drive-shipping-to-import-pst-files-to-office-365.md
-        - name: Filter data when importing PST files
-          href: filter-data-when-importing-pst-files.md
-        - name: FAQ about importing PST files
-          href: faqimporting-pst-files-to-office-365.yml
     - name: Archive third-party data
       items: 
         - name: Overview of archiving third-party data
@@ -529,40 +497,88 @@
           href: work-with-partner-to-archive-third-party-data.md
         - name: Search for third-party data
           href: use-content-search-to-search-third-party-data-that-was-imported.md
-    - name: Store mailbox data
+
+
+
+
+    - name: Information governance
       items: 
-        - name: Enable archive mailboxes
-          href: enable-archive-mailboxes.md
-        - name: Overview of unlimited archiving
-          href: unlimited-archiving.md
-        - name: Enable unlimited archiving
-          href: enable-unlimited-archiving.md
-        - name: Set up an archive and deletion policy for mailboxes
-          href: set-up-an-archive-and-deletion-policy-for-mailboxes.md
-    - name: Manage inactive mailboxes
-      items: 
-        - name: Overview of inactive mailboxes
-          href: inactive-mailboxes-in-office-365.md
-        - name: Create and manage inactive mailboxes
-          href: create-and-manage-inactive-mailboxes.md
-        - name: Change the hold duration for an inactive mailbox
-          href: change-the-hold-duration-for-an-inactive-mailbox.md
-        - name: Recover an inactive mailbox
-          href: recover-an-inactive-mailbox.md
-        - name: Restore an inactive mailbox
-          href: restore-an-inactive-mailbox.md
-        - name: Delete an inactive mailbox
-          href: delete-an-inactive-mailbox.md
+        - name: Get started with information governance
+          href: get-started-with-retention.md
+        - name: Create retention policies
+          href: create-retention-policies.md
+        - name: Store mailbox data
+          items: 
+            - name: Enable archive mailboxes
+              href: enable-archive-mailboxes.md
+            - name: Overview of unlimited archiving
+              href: unlimited-archiving.md
+            - name: Enable unlimited archiving
+              href: enable-unlimited-archiving.md
+            - name: Set up an archive and deletion policy for mailboxes
+              href: set-up-an-archive-and-deletion-policy-for-mailboxes.md
+        - name: Import mailbox data
+          items: 
+            - name: Overview of importing PST files
+              href: importing-pst-files-to-office-365.md
+            - name: Use network upload to import PST files
+              href: use-network-upload-to-import-pst-files.md
+            - name: Use drive shipping to import PST files
+              href: use-drive-shipping-to-import-pst-files-to-office-365.md
+            - name: Filter data when importing PST files
+              href: filter-data-when-importing-pst-files.md
+            - name: FAQ about importing PST files
+              href: faqimporting-pst-files-to-office-365.yml
+        - name: Store mailbox data
+          items: 
+            - name: Enable archive mailboxes
+              href: enable-archive-mailboxes.md
+            - name: Overview of unlimited archiving
+              href: unlimited-archiving.md
+            - name: Enable unlimited archiving
+              href: enable-unlimited-archiving.md
+            - name: Set up an archive and deletion policy for mailboxes
+              href: set-up-an-archive-and-deletion-policy-for-mailboxes.md
+        - name: Manage inactive mailboxes
+          items: 
+            - name: Overview of inactive mailboxes
+              href: inactive-mailboxes-in-office-365.md
+            - name: Create and manage inactive mailboxes
+              href: create-and-manage-inactive-mailboxes.md
+            - name: Change the hold duration for an inactive mailbox
+              href: change-the-hold-duration-for-an-inactive-mailbox.md
+            - name: Recover an inactive mailbox
+              href: recover-an-inactive-mailbox.md
+            - name: Restore an inactive mailbox
+              href: restore-an-inactive-mailbox.md
+            - name: Delete an inactive mailbox
+              href: delete-an-inactive-mailbox.md
     - name: Records management
       items: 
         - name: Learn about records management
           href: records-management.md
         - name: Get started with records management
           href: get-started-with-records-management.md
+        - name: Use file plan
+          href: file-plan-manager.md
         - name: Declare records
           href: declare-records.md
         - name: Use record versioning
           href: record-versioning.md
+        - name: Create retention labels and apply them in apps
+          href: create-apply-retention-labels.md
+        - name: Apply a retention label to content automatically
+          href: apply-retention-labels-automatically.md
+        - name: Lock policies to restrict changes
+          href: retention-preservation-lock.md
+        - name: Create retention labels with PowerShell
+          href: bulk-create-publish-labels-using-powershell.md
+        - name: Start retention when an event occurs
+          href: event-driven-retention.md
+        - name: Use retention labels to manage document lifecycles
+          href: auto-apply-retention-labels-scenario.md
+        - name: Manage disposition of data
+          href: disposition.md
         - name: Resources for regulatory requirements
           href: retention-regulatory-requirements.md
 - name: Manage app governance
