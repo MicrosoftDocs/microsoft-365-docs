@@ -118,9 +118,9 @@ To purchase the Scheduler add-on, you require one of the following licenses:
 
 > [!Note]
 > Scheduler for Microsoft 365 is available in worldwide multi-tenant environments in English only. **Scheduler for Microsoft 365** isn't available to users of:
-
-- Microsoft 365 operated by 21Vianet in China
-- Microsoft 365 with German cloud that uses the data trustee German Telekom
-- Government cloud including GCC, Consumer, GCC High, or DoD
+> 
+> - Microsoft 365 operated by 21Vianet in China
+> - Microsoft 365 with German cloud that uses the data trustee German Telekom
+> - Government cloud including GCC, Consumer, GCC High, or DoD
 
 Scheduler does support users in Germany whose data location is not the German datacenter.
