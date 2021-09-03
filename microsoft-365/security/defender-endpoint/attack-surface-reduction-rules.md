@@ -42,7 +42,6 @@ The following table lists attack surface reduction rules in alphabetical order. 
 >
 > - \* All rules support file and folder exclusions, unless stated otherwise.
 
-
 | Rule name | Windows&nbsp;Server 2016 | Windows&nbsp;Server 2012 R2 |
 |---|:---:|:---:|
 |[Block abuse of exploited vulnerable signed drivers](#block-abuse-of-exploited-vulnerable-signed-drivers) | ![supported.](images/checkmark.png) <br><br> | ![supported.](images/checkmark.png) <br><br> |
@@ -117,7 +116,6 @@ Links to information about configuration management system versions referenced i
 |[Block untrusted and unsigned processes that run from USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | ![supported](images/checkmark.png) |   | ![supported](images/checkmark.png) <br><br> CB 1802 <br><br> |   |   |
 |[Block Win32 API calls from Office macros](#block-win32-api-calls-from-office-macros) | ![supported](images/checkmark.png) |   | ![supported](images/checkmark.png) <br><br> CB 1710 <br><br> |   |   |
 |[Use advanced protection against ransomware](#use-advanced-protection-against-ransomware) | ![supported](images/checkmark.png) |   |  ![supported](images/checkmark.png) <br><br>  CB 1802 |   |   |
-
 
 - [Configuration Manager CB 1710](/configmgr/core/servers/manage/updates)
 - [Configuration Manager CB 1802](/configmgr/core/servers/manage/updates)
