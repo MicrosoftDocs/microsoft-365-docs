@@ -547,12 +547,12 @@
       items: 
         - name: Learn about records management
           href: records-management.md
-        - name: Get started with records management
-          href: get-started-with-records-management.md
         - name: Declare records
           href: declare-records.md
         - name: Use record versioning
           href: record-versioning.md
+        - name: Get started with records management
+          href: get-started-with-records-management.md
         - name: Create and manage retention labels with file plan
           href: file-plan-manager.md
         - name: Start retention when an event occurs
