@@ -499,23 +499,15 @@
           href: use-content-search-to-search-third-party-data-that-was-imported.md
     - name: Information governance
       items: 
+        - name: Learn about information governance
+          href: get-started-with-retention.md
         - name: Get started with information governance
           href: get-started-with-retention.md
         - name: Create retention policies
           href: create-retention-policies.md
-        - name: Import mailbox data
-          items: 
-            - name: Overview of importing PST files
-              href: importing-pst-files-to-office-365.md
-            - name: Use network upload to import PST files
-              href: use-network-upload-to-import-pst-files.md
-            - name: Use drive shipping to import PST files
-              href: use-drive-shipping-to-import-pst-files-to-office-365.md
-            - name: Filter data when importing PST files
-              href: filter-data-when-importing-pst-files.md
-            - name: FAQ about importing PST files
-              href: faqimporting-pst-files-to-office-365.yml
-        - name: Store mailbox data
+        - name: Use retention labels for exceptions
+          href: create-retention-policies.md
+        - name: Archive mailbox data
           items: 
             - name: Enable archive mailboxes
               href: enable-archive-mailboxes.md
@@ -539,6 +531,18 @@
               href: restore-an-inactive-mailbox.md
             - name: Delete an inactive mailbox
               href: delete-an-inactive-mailbox.md
+        - name: Import mailbox data
+          items: 
+            - name: Overview of importing PST files
+              href: importing-pst-files-to-office-365.md
+            - name: Use network upload to import PST files
+              href: use-network-upload-to-import-pst-files.md
+            - name: Use drive shipping to import PST files
+              href: use-drive-shipping-to-import-pst-files-to-office-365.md
+            - name: Filter data when importing PST files
+              href: filter-data-when-importing-pst-files.md
+            - name: FAQ about importing PST files
+              href: faqimporting-pst-files-to-office-365.yml
     - name: Records management
       items: 
         - name: Learn about records management
