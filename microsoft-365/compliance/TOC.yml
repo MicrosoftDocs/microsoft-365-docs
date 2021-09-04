@@ -549,7 +549,7 @@
           href: records-management.md
         - name: Get started with records management
           href: get-started-with-records-management.md
-        - name: File plan to create and manage retention labels
+        - name: Create and manage retention labels with file plan
           href: file-plan-manager.md
         - name: Declare records
           href: declare-records.md
