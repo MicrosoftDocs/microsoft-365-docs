@@ -114,8 +114,6 @@ When you select **Choose** for each of these optional descriptors, you can selec
 
 2. Follow the prompts for the configuration process.
     
-    For information about the file plan descriptors, see [Use file plan to manage retention labels](file-plan-manager.md).
-    
     To use the retention label to declare records, select **Mark items as records**, or **Mark items as regulatory records**. For more information, see [Configuring retention labels to declare records](declare-records.md#configuring-retention-labels-to-declare-records).
 
 3. After you have created the label and you see the options to publish the label, auto-apply the label, or just save the label: Select **Just save the label for now**, and then select **Done**.
