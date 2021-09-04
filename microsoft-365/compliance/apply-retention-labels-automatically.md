@@ -16,7 +16,7 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: Create retention labels and auto-labeling policies so you can automatically apply labels to retain what you need and delete what you don't
+description: Create auto-labeling retention policies so you can automatically apply labels to retain what you need and delete what you don't
 ---
 
 # Automatically apply a retention label to retain or delete content
@@ -60,55 +60,23 @@ Use the following instructions for the two admin steps.
 
 The global admin for your organization has full permissions to create and edit retention labels and their policies. If you aren't signing in as a global admin, see [Permissions required to create and manage retention policies and retention labels](get-started-with-retention.md#permissions-required-to-create-and-manage-retention-policies-and-retention-labels).
 
-## How to auto-apply a retention label
+Make sure you have [created the retention labels](file-plan-manager.md#create-retention-labels) you want to apply to items.
 
-First, create your retention label. Then create an auto-policy to apply that label. If you have already created your retention label, skip to [creating an auto-policy](#step-2-create-an-auto-apply-policy).
-
-Navigation instructions depend on whether you're using [records management](records-management.md) or not. Instructions are provided for both scenarios.
-
-### Step 1: Create a retention label
-
-1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com/), navigate to one of the following locations:
-    
-    - If you are using records management:
-        - **Solutions** > **Records management** > **File plan** tab > **+ Create a label** > **Retention label**
-        
-    - If you are not using records management:
-       - **Solutions** > **Information governance** > **Labels** tab > + **Create a label**
-    
-    Don't immediately see your option? First select **Show all**. 
-
-2. Follow the prompts in the wizard. If you are using records management:
-    
-    - For information about the file plan descriptors, see [Use file plan to manage retention labels](file-plan-manager.md)
-    
-    - To use the retention label to declare records, select **Mark items as records**, or **Mark items as regulatory records**. For more information, see [Configuring retention labels to declare records](declare-records.md#configuring-retention-labels-to-declare-records).
-
-3. After you have created the label and you see the options to publish the label, auto-apply the label, or just save the label: Select **Auto-apply this label to a specific type of content**, and then select **Done** to start the Create auto-labeling wizard that takes you directly to step 2 in the following procedure.
-
-To edit an existing label, select it, and then select the **Edit label** option to start the Edit retention wizard that lets you change the label descriptions and any [eligible settings](#updating-retention-labels-and-their-policies) from step 2.
-
-### Step 2: Create an auto-apply policy
+## How to create an auto-apply policy
 
 When you create an auto-apply policy, you select a retention label to automatically apply to content, based on the conditions that you specify.
 
-1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com/), navigate to one of the following locations:
+1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com/), navigate to: **Solutions** > **Records management** > **Label policies** tab > **Auto-apply a label**
     
-    - If you are using records management: **Information governance**:
-        - **Solutions** > **Records management** > **Label policies** tab > **Auto-apply a label**
-    
-    - If you are not using records management:
-        - **Solutions** > **Information governance** > **Label policies** tab > **Auto-apply a label**
-    
-    Don't immediately see your option? First select **Show all**. 
+    Don't immediately see **Records management**? First select **Show all**. 
 
-2. Follow the prompts in the Create auto-labeling wizard.
+2. Follow the prompts to create the auto-labeling policy. Be careful what name you choose for the policy, because this can't be changed after the policy is saved.
     
     For information about configuring the conditions that automatically apply the retention label, see the [Configuring conditions for auto-apply retention labels](#configuring-conditions-for-auto-apply-retention-labels) section on this page.
     
     For information about the locations supported by retention labels, see the [Retention labels and locations](retention.md#retention-label-policies-and-locations) section.
 
-To edit an existing auto-apply policy, select it to start the Edit retention policy wizard that lets you change the selected retention label and any [eligible settings](#updating-retention-labels-and-their-policies) from step 2.
+To edit an existing retention label policy (the policy type is **Auto-apply**), select it, and then select the **Edit** option to start the **Edit retention policy** configuration.
 
 After content is labeled by using an auto-apply label policy, the applied label can't be automatically removed or changed by changing the content or the policy, or by a new auto-apply label policy. For more information, see [Only one retention label at a time](retention.md#only-one-retention-label-at-a-time).
 
@@ -288,11 +256,7 @@ If the expected labels don't appear after seven days, check the **Status** of th
 
 ## Updating retention labels and their policies
 
-When you edit a retention label or auto-apply policy, and the retention label is already applied to content, your updated settings will automatically be applied to this content in addition to content that's newly identified.
-
-Some settings can't be changed after the label or policy is created and saved, which include:
-- The retention label and policy name, and the retention settings except the retention period. However, you can't change the retention period when the retention period is based on when items were labeled.
-- The option to mark items as a record.
+If you [edit a retention label](file-plan-manager.md#edit-retention-labels) or a retention label policy, and the retention label or policy is already applied to content, your updated settings will automatically be applied to this content in addition to content that's newly identified.
 
 ### Deleting retention labels
 

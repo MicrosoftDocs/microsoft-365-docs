@@ -1,5 +1,5 @@
 ---
-title: "Create retention labels and apply them in apps to retain or delete content"
+title: "Publish retention labels and apply them in apps to retain or delete content"
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -16,17 +16,17 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: Instructions to create and publish retention labels so you can then apply them in apps to retain what you need and delete what you don't.
+description: Instructions to publish retention labels so you can then apply them in apps to retain what you need and delete what you don't.
 ---
 
-# Create retention labels and apply them in apps
+# Publish retention labels and apply them in apps
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 > [!NOTE]
 > This scenario is supported for all retention label configurations, including [regulatory records](records-management.md#records).
 
-Use the following information to help you create and publish [retention labels](retention.md), and then apply them to documents and emails.
+Use the following information to help you publish [retention labels](retention.md), and then apply them to documents and emails.
 
 Retention labels help you retain what you need and delete what you don't at the item level (document or email). They are also used to declare an item as a record as part of a [records management](records-management.md) solution for your Microsoft 365 data.
 
@@ -44,62 +44,27 @@ Use the following instructions for the two admin steps.
 
 The global admin for your organization has full permissions to create and edit retention labels and their policies. If you aren't signing in as a global admin, see [Permissions required to create and manage retention policies and retention labels](get-started-with-retention.md#permissions-required-to-create-and-manage-retention-policies-and-retention-labels).
 
-## How to create and publish retention labels
+Make sure you have [created the retention labels](file-plan-manager.md#create-retention-labels) you want to apply to items.
 
-First, create your retention labels. Then create a label policy to make the labels available to apply in apps.
-
-Where you create and configure your retention labels depend on whether you're using records management or not. Instructions are provided for both scenarios.
-
-### Step 1: Create retention labels
-
-1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com/), navigate to one of the following locations:
-    
-    - If you are using records management:
-        - **Solutions** > **Records management** > **File plan** tab > **+ Create a label** > **Retention label**
-        
-    - If you are not using records management:
-       - **Solutions** > **Information governance** > **Labels** tab > + **Create a label**
-    
-    Don't immediately see your option? First select **Show all**. 
-
-2. Follow the prompts in the wizard. If you are using records management:
-    
-    - For information about the file plan descriptors, see [Use file plan to manage retention labels](file-plan-manager.md).
-    
-    - To use the retention label to declare records, select **Mark items as records**, or **Mark items as regulatory records**. For more information, see [Configuring retention labels to declare records](declare-records.md#configuring-retention-labels-to-declare-records).
-
-3. After you have created the label and you see the options to publish the label, auto-apply the label, or just save the label: Select **Just save the label for now**, and then select **Done**.
-
-4. Repeat these steps to create more labels.
-
-To edit an existing label, select it, and then select the **Edit label** option to start the Edit retention wizard that lets you change the label descriptions and any [eligible settings](#updating-retention-labels-and-their-policies) from step 2.
-
-### Step 2: Publish retention labels
+## How to publish retention labels
 
 Publish retention labels so that they can be applied by users in apps, such as SharePoint and Outlook.
 
-1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com/), navigate to one of the following locations:
+1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com/), navigate to: **Solutions** > **Records management** > > **Label policies** tab > **Publish labels**
     
-    - If you are using records management:
-        - **Solutions** > **Records management** > > **Label policies** tab > **Publish labels**
-    
-    - If you are not using records management:
-        - **Solutions** > **Information governance** > **Label policies** tab > **Publish labels**
-    
-    Don't immediately see your option? First select **Show all**. 
+    Don't immediately see **Records management**? First select **Show all**. 
 
-2. Follow the prompts in the wizard.
+2. Follow the prompts to create the retention label policy. Be careful what name you choose for the policy, because this can't be changed after the policy is saved.
     
     For information about the locations supported by retention labels, see [Retention labels and locations](retention.md#retention-label-policies-and-locations). 
 
-To edit an existing retention label policy (the policy type is **Publish**), select it, and then select the **Edit** option to start the Edit retention policy. This wizard lets you change the policy description and any [eligible settings](#updating-retention-labels-and-their-policies) from step 2.
-
+To edit an existing retention label policy (the policy type is **Publish**), select it, and then select the **Edit** option to start the **Edit retention policy** configuration.
 
 ## When retention labels become available to apply
 
-If you publish retention labels to SharePoint or OneDrive, those labels  typically appear for end users to select within one day. However, allow up to seven days. 
+If you publish retention labels to SharePoint or OneDrive, those labels typically appear for users to select within one day. However, allow up to seven days. 
 
-If you publish retention labels to Exchange, it can take up to seven days for those retention labels to appear for end users, and the mailbox must contain at least 10 MB of data.
+If you publish retention labels to Exchange, it can take up to seven days for those retention labels to appear for users, and the mailbox must contain at least 10 MB of data.
 
 For example:
   
@@ -232,10 +197,6 @@ When you publish retention labels to Microsoft 365 groups ([formerly Office 365 
 To retain content for a Microsoft 365 group, use the **Microsoft 365 Groups** location. Even though a Microsoft 365 group has an Exchange mailbox, a retention policy that includes the entire Exchange location won't include content in Microsoft 365 group mailboxes.
 
 In addition, it's not possible to use the Exchange location to include or exclude a specific group mailbox. Although the Exchange location initially allows a group mailbox to be selected, when you try to save the retention policy, you receive an error that "RemoteGroupMailbox" is not a valid selection for the Exchange location.
-  
-First, create and configure the sensitivity labels that you want to make available for apps and other services. For example, the labels you want users to see and apply from Office apps. 
-
-Then, create one or more label policies that contain the labels and policy settings that you configure. It's the label policy that publishes the labels and settings for your chosen users and locations.
 
 ### Applying a default retention label to all content in a SharePoint library, folder, or document set
 
@@ -281,19 +242,7 @@ Although the UI refers to retention policies, it's your retention labels that di
 
 ## Updating retention labels and their policies
 
-When you edit a retention label or retention label policy, and the retention label or policy is already applied to content, your updated settings will automatically be applied to this content in addition to content that's newly identified.
-
-Some settings can't be changed after the label or policy is created and saved, which include:
-- The retention label and policy name, and the retention settings except the retention period. However, you can't change the retention period when the retention period is based on when items were labeled.
-- The option to mark items as a record.
-
-### Deleting retention labels
-
-You can delete retention labels that aren't currently included in any retention label policies, that aren't configured for event-based retention, or mark items as regulatory records.
-
-For retention labels that you can delete, if they have been applied to items, the deletion fails and you see a link to content explorer to identify the labeled items.
-
-However, it can take up to two days for content explorer to show the items that are labeled. In this scenario, the retention label might be deleted without showing you the link to content explorer.
+If you [edit a retention label](file-plan-manager.md#edit-retention-labels) or a retention label policy, and the retention label or policy is already applied to content, your updated settings will automatically be applied to this content in addition to content that's newly identified.
 
 ## Locking the policy to prevent changes
 
