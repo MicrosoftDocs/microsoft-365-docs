@@ -549,12 +549,12 @@
           href: records-management.md
         - name: Get started with records management
           href: get-started-with-records-management.md
-        - name: Create and manage retention labels with file plan
-          href: file-plan-manager.md
         - name: Declare records
           href: declare-records.md
         - name: Use record versioning
           href: record-versioning.md
+        - name: Create and manage retention labels with file plan
+          href: file-plan-manager.md
         - name: Start retention when an event occurs
           href: event-driven-retention.md
         - name: Apply retention labels in apps
