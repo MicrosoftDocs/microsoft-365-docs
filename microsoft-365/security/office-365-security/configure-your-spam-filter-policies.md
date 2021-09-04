@@ -150,7 +150,7 @@ Creating a custom anti-spam policy in the Microsoft 365 Defender portal creates 
      |**Prepend subject line with text**: Adds text to the beginning of the message's subject line. The message is delivered to the mailbox and moved to the Junk email folder.<sup>1,2</sup> <p> You enter the text later in the **Prefix subject line with this text** box.|![Check mark.](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)||![Check mark](../../media/checkmark.png)|
      |**Redirect message to email address**: Sends the message to other recipients instead of the intended recipients. <p> You specify the recipients later in the **Redirect to this email address** box.|![Check mark.](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)|
      |**Delete message**: Silently deletes the entire message, including all attachments.|![Check mark.](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)||![Check mark](../../media/checkmark.png)|
-     |**Quarantine message**: Sends the message to quarantine instead of the intended recipients. <p> You specify how long the message should be held in quarantine later in the **Quarantine** box.|![Check mark.](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)<sup>\*</sup>|![Check mark](../../media/checkmark.png)<sup>\*</sup>|![Check mark](../../media/checkmark.png)|
+     |**Quarantine message**: Sends the message to quarantine instead of the intended recipients. <p> You specify how long the message should be held in quarantine later in the **Quarantine** box. <p> You specify the [quarantine policy](quarantine-policies.md) that applies to quarantined messages for the spam filter verdict in the **Select a policy** box that appears. For more information, see [Quarantine policies](quarantine-policies.md).<sup>3</sup>|![Check mark.](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)<sup>\*</sup>|![Check mark](../../media/checkmark.png)<sup>\*</sup>|![Check mark](../../media/checkmark.png)|
      |**No action**|||||![Check mark](../../media/checkmark.png)|
      |
 
@@ -159,13 +159,10 @@ Creating a custom anti-spam policy in the Microsoft 365 Defender portal creates 
      > In hybrid environments where EOP protects on-premises Exchange mailboxes, you need to configure mail flow rules (also known as transport rules) in on-premises Exchange to translate the EOP spam filtering verdict so the junk email rule can move the message to the Junk Email folder. For details, see [Configure EOP to deliver spam to the Junk Email folder in hybrid environments](/exchange/standalone-eop/configure-eop-spam-protection-hybrid).
      >
      > <sup>2</sup> You can this use value as a condition in mail flow rules to filter or route the message.
-
-     If you select **Quarantine message** for the spam filter verdict, a **Select quarantine policy** box appears where you select the quarantine policy that applies to messages that were quarantined by that verdict. Quarantine policies define what users are able to do to quarantined messages. For more information, see [Quarantine policies](quarantine-policies.md).
-
-     A blank **Select quarantine policy** value means the default quarantine policy for that particular verdict is used. When you later edit the anti-phishing policy or view the settings, the default quarantine policy name is shown. For more information about default quarantine policies that are used for supported protection filtering verdicts, see [this table](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features).
+     >
+     > <sup>3</sup> A blank **Select quarantine policy** value means the default quarantine policy for that particular verdict is used. When you later edit the anti-spam policy or view the settings, the default quarantine policy name is shown. For more information about default quarantine policies that are used for supported protection filtering verdicts, see [this table](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features).
 
    - **Retain spam in quarantine for this many days**: Specifies how long to keep the message in quarantine if you selected **Quarantine message** as the action for a spam filtering verdict. After the time period expires, the message is deleted. The default value is 30 days. A valid value is from 1 to 30 days. For information about quarantine, see the following articles:
-
      - [Quarantined messages in EOP](quarantine-email-messages.md)
      - [Manage quarantined messages and files as an admin in EOP](manage-quarantined-messages-and-files.md)
      - [Find and release quarantined messages as a user in EOP](find-and-release-quarantined-messages-as-a-user.md)
@@ -397,7 +394,7 @@ New-HostedContentFilterPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments
 
 This example creates a spam filter policy named Contoso Executives with the following settings:
 
-- Quarantine messages when the spam filtering verdict is spam or high confidence spam.
+- Quarantine messages when the spam filtering verdict is spam or high confidence spam, and use the default [quarantine policy](quarantine-policies.md) for the quarantined messages (we aren't using the _SpamQuarantineTag_ or _HighConfidenceSpamQuarantineTag_ parameters).
 - BCL 7, 8, or 9 triggers the action for a bulk email spam filtering verdict.
 
 ```PowerShell

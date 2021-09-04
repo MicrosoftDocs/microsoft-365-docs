@@ -256,13 +256,13 @@ Creating an anti-phishing policy in PowerShell is a two-step process:
 To create an anti-phish policy, use this syntax:
 
 ```PowerShell
-New-AntiPhishPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-EnableSpoofIntelligence <$true | $false>] [-AuthenticationFailAction <MoveToJmf | Quarantine>] [-EnableUnauthenticatedSender <$true | $false>] [-EnableViaTag <$true | $false>]
+New-AntiPhishPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-EnableSpoofIntelligence <$true | $false>] [-AuthenticationFailAction <MoveToJmf | Quarantine>] [-EnableUnauthenticatedSender <$true | $false>] [-EnableViaTag <$true | $false>] [-SpoofQuarantineTag <QuarantineTagName>]
 ```
 
 This example creates an anti-phish policy named Research Quarantine with the following settings:
 
 - The description is: Research department policy.
-- Changes the default action for spoofing to Quarantine.
+- Changes the default action for spoofing detections to Quarantine and uses the default [quarantine policy](quarantine-policies.md) for the quarantined messages (we aren't using the _SpoofQuarantineTag_ parameter).
 
 ```powershell
 New-AntiPhishPolicy -Name "Monitor Policy" -AdminDisplayName "Research department policy" -AuthenticationFailAction Quarantine
@@ -271,7 +271,7 @@ New-AntiPhishPolicy -Name "Monitor Policy" -AdminDisplayName "Research departmen
 For detailed syntax and parameter information, see [New-AntiPhishPolicy](/powershell/module/exchange/New-AntiPhishPolicy).
 
 > [!NOTE]
-> For detailed instructions to specify the [quarantine policy](quarantine-policies.md) to use in an anti-phish policy, see [Use PowerShell to specify the quarantine policy in anti-phishing policies](quarantine-policies.md#anti-phishing-policies).
+> For detailed instructions to specify the [quarantine policies](quarantine-policies.md) to use in an anti-phish policy, see [Use PowerShell to specify the quarantine policy in anti-phishing policies](quarantine-policies.md#anti-phishing-policies).
 
 #### Step 2: Use PowerShell to create an anti-phish rule
 

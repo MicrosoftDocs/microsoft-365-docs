@@ -200,7 +200,7 @@ Creating a custom outbound spam policy in the Microsoft 365 Defender portal crea
 
    For the default outbound spam policy, the **Applied to** section isn't available (the policy applies to everyone), and you can't rename the policy.
 
-To enable or disable a policy, set the policy priority order, or configure the end-user quarantine notifications, see the following sections.
+To enable or disable a policy, set the policy priority order, or configure the end-user notifications, see the following sections.
 
 ### Enable or disable custom outbound spam policies
 

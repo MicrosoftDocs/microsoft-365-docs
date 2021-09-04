@@ -39,7 +39,7 @@ Safe Attachments for SharePoint, OneDrive, and Microsoft Teams in [Microsoft Def
 Safe Attachments for SharePoint, OneDrive, and Microsoft Teams is not enabled by default. To turn it on, see [Turn on Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](turn-on-mdo-for-spo-odb-and-teams.md).
 
 > [!NOTE]
-> Protection by Safe Attachments for SharePoint, OneDrive, and Microsoft Teams does not require membership in a Safe Attachments policy. However, to use [quarantine policies](quarantine-policies.md) to customize what users are allowed to the quarantined messages, the affected users need to be assigned in a Safe Attachments policy. To create and configure Safe Attachments policies, see [Set up Safe Attachments policies in Microsoft Defender for Office 365](set-up-safe-attachments-policies.md).
+> Protection by Safe Attachments for SharePoint, OneDrive, and Microsoft Teams does not require membership in a Safe Attachments policy. However, to use [quarantine policies](quarantine-policies.md) to customize what users are allowed to their quarantined files, the affected users need to be assigned in a Safe Attachments policy. To create and configure Safe Attachments policies, see [Set up Safe Attachments policies in Microsoft Defender for Office 365](set-up-safe-attachments-policies.md).
 
 ## How Safe Attachments for SharePoint, OneDrive, and Microsoft Teams works
 

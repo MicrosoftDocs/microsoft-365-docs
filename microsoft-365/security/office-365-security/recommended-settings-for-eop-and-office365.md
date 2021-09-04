@@ -231,7 +231,7 @@ For more information about these settings, see [Impersonation settings in anti-p
 |Security feature name|Default|Standard|Strict|Comment|
 |---|:---:|:---:|:---:|---|
 |**Phishing threshold & protection**|||||
-|**Enable users to protect** (impersonated user protection)<p> _EnableTargetedUserProtection_ <p> _TargetedUsersToProtect_|Not selected <p> `$false` <p> none|Selected <p> `$true` <p> \<list of users\>|Selected <p> `$true` <p> \<list of users\>|We recommend adding users (message senders) in key roles. Internally, protected senders might be your CEO, CFO, and other senior leaders. Externally, protected senders could include council members or your board of directors.|
+|**Enable users to protect** (impersonated user protection) <p> _EnableTargetedUserProtection_ <p> _TargetedUsersToProtect_|Not selected <p> `$false` <p> none|Selected <p> `$true` <p> \<list of users\>|Selected <p> `$true` <p> \<list of users\>|We recommend adding users (message senders) in key roles. Internally, protected senders might be your CEO, CFO, and other senior leaders. Externally, protected senders could include council members or your board of directors.|
 |**Enable domains to protect** (impersonated domain protection)|Not selected|Selected|Selected||
 |**Include domains I own** <p> _EnableOrganizationDomainsProtection_|Off <p> `$false`|Selected <p> `$true`|Selected <p> `$true`||
 |**Include custom domains** <p> _EnableTargetedDomainsProtection_ <p> _TargetedDomainsToProtect_|Off <p> `$false` <p> none|Selected <p> `$true` <p> \<list of domains\>|Selected <p> `$true` <p> \<list of domains\>|We recommend adding domains (sender domains) that you don't own, but you frequently interact with.|
@@ -285,7 +285,7 @@ In PowerShell, you use the [Set-AtpPolicyForO365](/powershell/module/exchange/se
 |Security feature name|Default|Standard|Strict|Comment|
 |---|:---:|:---:|:---:|---|
 |**Turn on Defender for Office 365 for SharePoint, OneDrive, and Microsoft Teams** <p> _EnableATPForSPOTeamsODB_|Off <p> `$false`|On <p> `$true`|On <p> `$true`||
-|**Turn on Safe Documents for Office clients** <p> _EnableSafeDocs_|Off <p> `$false`|On <p> `$true`|On <p> `$true`|This feature is available and meaningful only with Microsoft 365 E5 or Microsoft 365 E5 Security licenses. For more information, see [Safe Documents in Microsoft Defender for Office 365](safe-docs.md).|
+|**Turn on Safe Documents for Office clients** <p> _EnableSafeDocs_|Off <p> `$false`|On <p> `$true`|On <p> `$true`|This feature is available and meaningful only with licenses that are not included in Defender for Office 365 (for example, Microsoft 365 E5 or Microsoft 365 E5 Security. For more information, see [Safe Documents in Microsoft 365 E5](safe-docs.md).|
 |**Allow people to click through Protected View even if Safe Documents identified the file as malicious** <p> _AllowSafeDocsOpen_|Off <p> `$false`|Off <p> `$false`|Off <p> `$false`|This setting is related to Safe Documents.|
 |
 

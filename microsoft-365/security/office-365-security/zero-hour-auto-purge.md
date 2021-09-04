@@ -50,7 +50,7 @@ The ZAP action is seamless for the user; they aren't notified if a message is de
 
 ### Zero-hour auto purge (ZAP) for malware
 
-For **read or unread messages** that are found to contain malware after delivery, ZAP quarantines the message that contains the malware attachment. Only admins can view and manage malware messages from quarantine.
+For **read or unread messages** that are found to contain malware after delivery, ZAP quarantines the message that contains the malware attachment. By default, only admins can view and manage quarantined malware messages. But, admins can create and use _quarantine policies_ to define what users are allowed to do to messages that were quarantined as malware. For more information, see [Quarantine policies](quarantine-policies.md).
 
 ZAP for malware is enabled by default in anti-malware policies. For more information, see [Configure anti-malware policies in EOP](configure-anti-malware-policies.md).
 
@@ -70,7 +70,7 @@ For more information about configuring spam filtering verdicts, see [Configure a
 
 ### Zero-hour auto purge (ZAP) for high confidence phishing
 
-For **read or unread messages** that are identified as high confidence phishing after delivery, ZAP quarantines the message. Only admins can view and manage high confidence phish messages from quarantine.
+For **read or unread messages** that are identified as high confidence phishing after delivery, ZAP quarantines the message. By default, only admins can view and manage quarantined high confidence phish messages. But, admins can create and use _quarantine policies_ to define what users are allowed to do to messages that were quarantined as high confidence phishing. For more information, see [Quarantine policies](quarantine-policies.md)
 
 ZAP for high confidence phish is enabled by default. For more information, see [Secure by Default in Office 365](secure-by-default.md).
 
@@ -82,7 +82,7 @@ For **unread messages** that are identified as spam after delivery, the ZAP outc
 
 - **Move message to Junk Email**: ZAP moves the message to the Junk Email folder, as long as the junk email rule is enabled on the mailbox (it's enabled by default). For more information, see [Configure junk email settings on Exchange Online mailboxes in Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
-- **Quarantine message**: ZAP quarantines the message. End-users can view and manage their own spam quarantined messages.
+- **Quarantine message**: ZAP quarantines the message. By default, end-users can view and manage their own spam quarantined messages. But, admins can create and use _quarantine policies_ to define what users are allowed to do to messages that were quarantined as spam. For more information, see [Quarantine policies](quarantine-policies.md)
 
 By default, spam ZAP is enabled in anti-spam policies, and the default action for the **Spam** filtering verdict is **Move message to Junk Email folder**, which means spam ZAP moves **unread** messages to the Junk Email folder by default.
 

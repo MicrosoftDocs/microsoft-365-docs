@@ -369,14 +369,16 @@ This example creates anti-phish policy named Research Quarantine with the follow
 
 - The policy is enabled (we aren't using the _Enabled_ parameter, and the default value is `$true`).
 - The description is: Research department policy.
+- Changes the default action for spoofing detections to Quarantine, and uses the default [quarantine policy](quarantine-policies.md) for the quarantined messages (we aren't using the _SpoofQuarantineTag_ parameter).
 - Enables organization domains protection for all accepted domains, and targeted domains protection for fabrikam.com.
+- Specifies Quarantine as the action for domain impersonation detections, and uses the default [quarantine policy](quarantine-policies.md) for the quarantined messages (we aren't using the _TargetedDomainQuarantineTag_ parameter).
 - Specifies Mai Fujito (mfujito@fabrikam.com) as the user to protect from impersonation.
-- Enables mailbox intelligence.
-- Enables mailbox intelligence protection, and specifies the quarantine action.
-- Enables safety tips.
+- Specifies Quarantine as the action for user impersonation detections, and uses the default [quarantine policy](quarantine-policies.md) for the quarantined messages (we aren't using the _TargetedUserQuarantineTag_ parameter).
+- Enables mailbox intelligence (_EnableMailboxIntelligence_), allows mailbox intelligence protection to take action on messages (_EnableMailboxIntelligenceProtection_), specifies Quarantine as the action for detected messages, and uses the default [quarantine policy](quarantine-policies.md) for the quarantined messages (we aren't using the _MailboxIntelligenceQuarantineTag_ parameter).
+- Enables all safety tips.
 
 ```powershell
-New-AntiPhishPolicy -Name "Monitor Policy" -AdminDisplayName "Research department policy" -EnableOrganizationDomainsProtection $true -EnableTargetedDomainsProtection $true -TargetedDomainsToProtect fabrikam.com -TargetedDomainProtectionAction Quarantine -EnableTargetedUserProtection $true -TargetedUsersToProtect "Mai Fujito;mfujito@fabrikam.com" -TargetedUserProtectionAction Quarantine -EnableMailboxIntelligence $true -EnableMailboxIntelligenceProtection $true -MailboxIntelligenceProtectionAction Quarantine -EnableSimilarUsersSafetyTips $true -EnableSimilarDomainsSafetyTips $true -EnableUnusualCharactersSafetyTips $true
+New-AntiPhishPolicy -Name "Monitor Policy" -AdminDisplayName "Research department policy" -AuthenticationFailAction Quarantine -EnableOrganizationDomainsProtection $true -EnableTargetedDomainsProtection $true -TargetedDomainsToProtect fabrikam.com -TargetedDomainProtectionAction Quarantine -EnableTargetedUserProtection $true -TargetedUsersToProtect "Mai Fujito;mfujito@fabrikam.com" -TargetedUserProtectionAction Quarantine -EnableMailboxIntelligence $true -EnableMailboxIntelligenceProtection $true -MailboxIntelligenceProtectionAction Quarantine -EnableSimilarUsersSafetyTips $true -EnableSimilarDomainsSafetyTips $true -EnableUnusualCharactersSafetyTips $true
 ```
 
 For detailed syntax and parameter information, see [New-AntiPhishPolicy](/powershell/module/exchange/New-AntiPhishPolicy).
