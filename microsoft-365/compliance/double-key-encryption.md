@@ -59,7 +59,7 @@ If your organizations have any of the following requirements, you can use DKE to
 
 **Azure Information Protection**. DKE works with sensitivity labels and requires Azure Information Protection.
 
-DKE sensitivity labels are made available to end users through the sensitivity ribbon in Office Desktop Apps. Install these prerequisites on each client computer where you want to protect and consume protected documents.
+DKE sensitivity labels are made available to end users through the sensitivity button in the AIP Unified Labeling client in Office Desktop Apps. Install these prerequisites on each client computer where you want to protect and consume protected documents.
 
 **Microsoft Office Apps for enterprise** version 2009 or later (Desktop versions of Word, PowerPoint, and Excel) on Windows.
 
