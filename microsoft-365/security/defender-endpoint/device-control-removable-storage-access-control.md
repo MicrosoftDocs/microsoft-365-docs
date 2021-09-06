@@ -182,7 +182,7 @@ Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com/>) \> *
 2. For each policy, also create an OMA-URI:
     - OMA-URI:
 
-      `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7bFA6BE102-0784-4A2A-B010-A0BEBEBF68E1%7d/RuleData`
+      `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7b**PolicyRuleGUID**%7d/RuleData`
 
       For example, for the **Block Write and Execute Access but allow approved USBs** rule in the sample, the link must be:
 
