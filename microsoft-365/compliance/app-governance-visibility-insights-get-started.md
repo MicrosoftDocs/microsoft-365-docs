@@ -61,6 +61,11 @@ One of the primary value points for app governance is the ability to quickly vie
 
 :::image type="content" source="../media/manage-app-protection-governance/app-governance-app-insight.png" alt-text="":::
 
+> [!NOTE]
+> The apps listed will depend on the apps present in your tenant.
+
+The details pane also lets you view the usage of the app over the past 30 days, the users who have consented to the app, and the permissions assigned to the app. An administrator could review the activity and permissions of an app that is generating alerts and make a decision to disable the app using the **Disable App** button in the Details pane.
+
 ## Next step
 
 [Get detailed insights on a specific app](app-governance-visibility-insights-view-apps.md).
