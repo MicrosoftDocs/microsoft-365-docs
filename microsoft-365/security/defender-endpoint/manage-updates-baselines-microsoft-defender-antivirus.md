@@ -430,11 +430,11 @@ No known issues
 <summary> February-2020 (Platform: - | Engine: 1.1.16800.2)</summary>
 
 
-&ensp;Security intelligence update version: **1.311.4.0**
-&ensp;Released: **February 25, 2020**
-&ensp;Platform/Client: **-**
-&ensp;Engine: **1.1.16800.2**
-&ensp;Support phase: **Technical upgrade support (only)**
+&ensp;Security intelligence update version: **1.311.4.0**<br/>
+&ensp;Released: **February 25, 2020**<br/>
+&ensp;Platform/Client: **-**<br/>
+&ensp;Engine: **1.1.16800.2**<br/>
+&ensp;Support phase: **Technical upgrade support (only)**<br/>
 
 ### What's new
 
@@ -448,11 +448,11 @@ No known issues
 <summary> January-2020 (Platform: 4.18.2001.10 | Engine: 1.1.16700.2)</summary>
 
 
-Security intelligence update version: **1.309.32.0**
-Released: **January 30, 2020**
-Platform/Client: **4.18.2001.10**
-Engine: **1.1.16700.2**
-&ensp;Support phase: **Technical upgrade support (only)**
+Security intelligence update version: **1.309.32.0**<br/>
+Released: **January 30, 2020**<br/>
+Platform/Client: **4.18.2001.10**<br/>
+Engine: **1.1.16700.2**<br/>
+&ensp;Support phase: **Technical upgrade support (only)**<br/>
 
 ### What's new
 
@@ -479,11 +479,11 @@ Engine: **1.1.16700.2**
 <details>
 <summary> November-2019 (Platform: 4.18.1911.3 | Engine: 1.1.16600.7)</summary>
 
-Security intelligence update version: **1.307.13.0**
-Released: **December 7, 2019**
-Platform: **4.18.1911.3**
-Engine: **1.1.17000.7**
-Support phase: **No support**
+Security intelligence update version: **1.307.13.0**<br/>
+Released: **December 7, 2019**<br/>
+Platform: **4.18.1911.3**<br/>
+Engine: **1.1.17000.7**<br/>
+Support phase: **No support**<br/>
 
 ### What's new
 
@@ -536,10 +536,10 @@ For more information, see [Microsoft Defender update for Windows operating syste
 <details>
 <summary>1.1.2109.01</summary>
 
-&ensp;Package version: **1.1.2109.01**
-&ensp;Platform version: **4.18.2107.4**
-&ensp;Engine version: **1.1.18400.5**
-&ensp;Signature version: **1.347.891.0**
+&ensp;Package version: **1.1.2109.01**<br/>
+&ensp;Platform version: **4.18.2107.4**<br/>
+&ensp;Engine version: **1.1.18400.5**<br/>
+&ensp;Signature version: **1.347.891.0**<br/>
 
 ### Fixes
 - None
@@ -550,10 +550,10 @@ For more information, see [Microsoft Defender update for Windows operating syste
 </details><details>
 <summary>1.1.2108.01</summary>
 
-&ensp;Package version: **1.1.2108.01**
-&ensp;Platform version: **4.18.2107.4**
-&ensp;Engine version: **1.1.18300.4**
-&ensp;Signature version: **1.343.2244.0**
+&ensp;Package version: **1.1.2108.01**<br/>
+&ensp;Platform version: **4.18.2107.4**<br/>
+&ensp;Engine version: **1.1.18300.4**<br/>
+&ensp;Signature version: **1.343.2244.0**<br/>
 
 ### Fixes
 - None
@@ -564,10 +564,10 @@ For more information, see [Microsoft Defender update for Windows operating syste
 </details><details>
 <summary>1.1.2107.02</summary>
 
-&ensp;Package version: **1.1.2107.02**
-&ensp;Platform version: **4.18.2105.5**
-&ensp;Engine version: **1.1.18300.4**
-&ensp;Signature version: **1.343.658.0**
+&ensp;Package version: **1.1.2107.02**<br/>
+&ensp;Platform version: **4.18.2105.5**<br/>
+&ensp;Engine version: **1.1.18300.4**<br/>
+&ensp;Signature version: **1.343.658.0**<br/>
 
 ### Fixes
 - None
@@ -578,10 +578,10 @@ For more information, see [Microsoft Defender update for Windows operating syste
 </details><details>
 <summary>1.1.2106.01</summary>
 
-&ensp;Package version: **1.1.2106.01**
-&ensp;Platform version: **4.18.2104.14**
-&ensp;Engine version: **1.1.18100.6**
-&ensp;Signature version: **1.339.1923.0**
+&ensp;Package version: **1.1.2106.01**<br/>
+&ensp;Platform version: **4.18.2104.14**<br/>
+&ensp;Engine version: **1.1.18100.6**<br/>
+&ensp;Signature version: **1.339.1923.0**<br/>
 
 ### Fixes
 - None
