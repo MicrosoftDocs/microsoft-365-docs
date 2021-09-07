@@ -21,7 +21,7 @@ description: Learn to integrate PIM in order to grant just-in-time, time limited
 ms.technology: mdo
 ms.prod: m365-security
 ---
-
+<!--A-->
 # Privileged Identity Management (PIM) and why to use it with Microsoft Defender for Office 365
 
 Privileged Identity Management (PIM) is an Azure feature that, once set up, gives users access to data for a limited period of time (sometimes called time-boxed period of time) so that a specific task can be done. This access is given 'just-in-time' to do the action that's required, and then revoked. PIM limits the access and time that user has to sensitive data, reducing exposure risk when compared to privileged administration accounts that have long-term access to data and other settings. So how can we use this feature (PIM) in conjunction with Microsoft Defender for Office 365?
@@ -95,3 +95,5 @@ In the Security Portal, create a custom role group that contains the permissions
 4. PIM a second time into higher elevated role, after a short delay you should now be able to [remediate malicious delivered email](remediate-malicious-email-delivered-office-365.md) without issue.
 
 Permanent assignment of administrative roles and permissions such as Search and Purge Role doesn't hold with the Zero Trust security initiative, but as you can see, PIM can be used to grant just-in-time access to the toolset required.
+
+<!--A-->
