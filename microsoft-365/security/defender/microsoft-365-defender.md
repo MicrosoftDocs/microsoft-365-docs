@@ -101,7 +101,7 @@ Microsoft 365 Defender licensing requirements must be met before you can enable 
 
 ## Training for security analysts
 
-This learning path from Microsoft Learn can help you understand Microsoft 365 Defender and how it can help identify, control, and remediate security threats.
+With this learning path from Microsoft Learn, you can understand Microsoft 365 Defender and how it can help identify, control, and remediate security threats.
 
 |Training:|Detect and respond to cyber attacks with Microsoft 365 Defender|
 |---|---|
