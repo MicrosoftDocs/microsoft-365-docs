@@ -115,14 +115,17 @@ An eDiscovery search fails with error the `recipient not found`. This error may 
 
 3. There should be a mail user object for the user question. If nothing is returned, investigate the user object. Contact Microsoft Support if the object can't be synced.
 
-## Issue/Error: Content Search Fails With Error CS007
+## Issue/Error: Search fails with error CS007
 
-When performing a content search from Core eDiscovery a transient error occurred and the search failed with CS007.
+When performing a Content search or a search associated with a Core eDiscovery case, a transient error occurs and the search fails with a CS007 error.
 
 ### Resolution
 
-1. Re-run the search.
-2. Reduce the complexity of what is being searched.  For example: A wildcard search may return too many results for Store to process and cause this error to be displayed.
+1. Rerun the search.
+
+2. If the search fails again with the same error, update the search and reduce the complexity of the search query.  For example, a wildcard search may return too many results for the system to process, which causes a CS007 error.
+
+3. Rerun the updated search.
 
 ## Error/issue: Exporting search results is slow
 
