@@ -16,7 +16,7 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 09/03/2021
+ms.date: 09/07/2021
 ---
 
 # Manage Microsoft Defender Antivirus updates and apply baselines
@@ -80,16 +80,20 @@ All our updates contain
 - integration improvements (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)).
 <br/>
 <details>
-<summary> August-2021 (Platform: 4.18.2107.4 | Engine: 1.1.18500.10)</summary>
+<summary> August-2021 (Platform: 4.18.2108.x | Engine: 1.1.18500.10)</summary>
 
-&ensp;Security intelligence update version: **1.349.48.0**
+&ensp;Security intelligence update version: **1.349.22.0**
 &ensp;Released: **September 2, 2021**
-&ensp;Platform: **4.18.2107.4**
+&ensp;Platform: **4.18.2107.x**
 &ensp;Engine: **1.1.18500.10**
 &ensp;Support phase: **Security and Critical Updates**
 
 ### What's new
-- item
+- Improvements to the behavior monitoring engine
+- New [performance analyzer for Microsoft Defender Antivirus](tune-performance-defender-antivirus.md) released
+- Additional protection against malicious DLLs
+- Additional protection for [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) 
+- Improvements to per-rule [attack surface reduction rule exclusions](customize-attack-surface-reduction.md)
 
 ### Known Issues
 No known issues
