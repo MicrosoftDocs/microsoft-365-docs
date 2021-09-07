@@ -142,3 +142,4 @@ To get ready for implementing SharePoint Syntex, you need to:
 ## See also
 
 [Scenarios and use cases for SharePoint Syntex](adoption-scenarios.md)
+[Manage contracts using a Microsoft 365 solution](solution-manage-contracts-in-microsoft-365.md)
