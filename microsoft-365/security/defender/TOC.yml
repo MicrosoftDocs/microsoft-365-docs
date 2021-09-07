@@ -132,11 +132,11 @@
       items: 
        - name: Respond to incidents
          items: 
-              - name: Incident response overview
+              - name: Overview
                 href: incidents-overview.md
-              - name: Prioritize
+              - name: Prioritize the incident queue
                 href: incident-queue.md
-              - name: Manage
+              - name: Manage incidents in progress
                 href: manage-incidents.md
               - name: Investigate incidents
                 href: investigate-incidents.md
