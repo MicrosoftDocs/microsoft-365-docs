@@ -45,6 +45,20 @@ The dashboard contains a summary of the components of the Microsoft 365 app ecos
   - **App only**: [Application permissions](/azure/active-directory/develop/v2-permissions-and-consent#permission-types) are used by apps that can run without a signed-in user present. Apps with permissions to access data across the tenant are potentially a higher risk.
   - **New apps**: New Microsoft 365 apps that have been registered in the last seven days.  
 
+## View app insights
+
+One of the primary value points for app governance is the ability to quickly view app alerts and insights. To view insights for your apps:
+
+1. On your app governance portal page, select **Apps**.
+1. Use the **Categories** drop down list to select from the following options:
+  - All apps
+  - High privilege
+  - Overprivileged
+  - Unverified Publisher
+  - App only
+  - New apps
+1. Select the name of an app to view details. You can select multiple apps to save them as a saved query by placing a check mark to the left of the app name. Selecting an app name opens a detail pane on the right as show in the following graphic.
+
 ## Next step
 
 [Get detailed insights on a specific app](app-governance-visibility-insights-view-apps.md).
