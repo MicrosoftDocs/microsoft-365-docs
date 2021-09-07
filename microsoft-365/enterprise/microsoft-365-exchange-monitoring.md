@@ -83,7 +83,7 @@ For these scenarios, the key numbers are for the last 30 minutes in the main das
 
 ## Priority accounts monitoring scenarios
 
-With Exchange Online priority account monitoring, you can view the health for the following scenarios after configuring [priority accounts](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts):
+With Exchange Online priority account monitoring, you can view the health for the following scenarios after configuring [priority accounts](/microsoft-365/admin/setup/priority-accounts):
 
 - Exchange licensing
 
@@ -103,7 +103,7 @@ The Exchange licensing scenario checks if the priority account is not able to lo
 
 The mail delivery scenario checks for delayed or non-delivered emails for priority accounts. The Microsoft 365 admin center provides a deep link to the Exchange admin center to follow the message trace. Exchange Admin Center role permissions may be required to edit thresholds. For more information, see [Email issues for priority accounts report in the new EAC](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report). 
 
-The remaining five scenarios above check if your priority account’s mailbox is close to reaching or has reached the limits described in [Exchange Online limits](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#mailbox-storage-limits).
+The remaining five scenarios above check if your priority account’s mailbox is close to reaching or has reached the limits described in [Exchange Online limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#mailbox-storage-limits).
 
 For these scenarios, you can see active and resolved advisories and incidents affecting your priority accounts. Identifiable information for the priority accounts will be displayed in the advisory or incident details along with recommendations. Here is an example.
 
