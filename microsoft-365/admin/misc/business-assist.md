@@ -22,7 +22,7 @@ description: "Learn about the Business Assist program and how it can help your o
 
 Get the most out of your subscription with expert advice from small business specialists.
 
-**Business Assist for Microsoft 365** is designed for businesses with fewer than 5 users to give you and your employees around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
+**Business Assist for Microsoft 365** is designed for small businesses to give you and your employees around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
 
 ### Watch: Business Assist for Microsoft 365
 
