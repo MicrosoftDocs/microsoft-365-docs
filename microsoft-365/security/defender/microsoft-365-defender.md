@@ -105,7 +105,7 @@ This learning path from Microsoft Learn can help you understand Microsoft 365 De
 
 |Training:|Detect and respond to cyber attacks with Microsoft 365 Defender|
 |---|---|
-|![Microsoft 365 Defender training icon.](../media/microsoft-365-defender/m365-defender-training.png)|Microsoft 365 Defender unifies threat signals across endpoints, identities, email, and applications to provide integrated protection against sophisticated cyber attacks. Microsoft 365 Defender is the central experience to investigate and respond to incidents and proactively search for ongoing malicious cyber security activities.<p> 1 hr 38 min - Learning Path - 5 Modules|
+|![Microsoft 365 Defender training icon.](../../media/microsoft-365-defender/m365-defender-training.png)|Microsoft 365 Defender unifies threat signals across endpoints, identities, email, and applications to provide integrated protection against sophisticated cyber attacks. Microsoft 365 Defender is the central experience to investigate and respond to incidents and proactively search for ongoing malicious cyber security activities.<p> 1 hr 38 min - Learning Path - 5 Modules|
 
 > [!div class="nextstepaction"]
 > [Start >](/learn/paths/defender-detect-respond/)
