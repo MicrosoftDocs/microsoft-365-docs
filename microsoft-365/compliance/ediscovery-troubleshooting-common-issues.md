@@ -91,9 +91,9 @@ When running an eDiscovery search that includes SharePoint Online and OneDrive f
 You may see that error when running an eDiscovery search that includes SharePoint Online and OneDrive for Business locations. eDiscovery relies on the SPO index to identify the file locations. If the file was deleted but the SPO index was not yet updated this error may occur.
 
 ### Resolution 
+
 Open the SPO location and verify that this file indeed is not there.
 Suggested solution is to manually reindex the site, or wait until the site reindexes by the automatic background process.
-
 
 ## Error/issue: This search result was not downloaded as it is a folder or other artifact that can't be downloaded by itself, any items inside the folder or library will be downloaded.
 
@@ -121,11 +121,9 @@ When performing a Content search or a search associated with a Core eDiscovery c
 
 ### Resolution
 
-1. Rerun the search.
+1. Update the search and reduce the complexity of the search query.  For example, a wildcard search may return too many results for the system to process, which causes a CS007 error.
 
-2. If the search fails again with the same error, update the search and reduce the complexity of the search query.  For example, a wildcard search may return too many results for the system to process, which causes a CS007 error.
-
-3. Rerun the updated search.
+2. Rerun the updated search.
 
 ## Error/issue: Exporting search results is slow
 
