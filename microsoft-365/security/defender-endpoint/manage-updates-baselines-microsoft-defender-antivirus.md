@@ -101,11 +101,11 @@ No known issues
 </details><details>
 <summary> July-2021 (Platform: 4.18.2107.4 | Engine: 1.1.18400.4)</summary>
 
-&ensp;Security intelligence update version: **1.345.13.0**
-&ensp;Released: **August 5, 2021**
-&ensp;Platform: **4.18.2107.4**
-&ensp;Engine: **1.1.18400.4**
-&ensp;Support phase: **Security and Critical Updates**
+&ensp;Security intelligence update version: **1.345.13.0**<br/>
+&ensp;Released: **August 5, 2021**<br/>
+&ensp;Platform: **4.18.2107.4**<br/>
+&ensp;Engine: **1.1.18400.4**<br/>
+&ensp;Support phase: **Security and Critical Updates**<br/>
 
 ### What's new
 - Device control support added for Windows Portable Devices
@@ -119,11 +119,11 @@ No known issues
 </details><details>
 <summary> June-2021 (Platform: 4.18.2106.5 | Engine: 1.1.18300.4)</summary>
 
-&ensp;Security intelligence update version: **1.343.17.0**
-&ensp;Released: **June 28, 2021**
-&ensp;Platform: **4.18.2106.5**
-&ensp;Engine: **1.1.18300.4**
-&ensp;Support phase: **Security and Critical Updates**
+&ensp;Security intelligence update version: **1.343.17.0**<br/>
+&ensp;Released: **June 28, 2021**<br/>
+&ensp;Platform: **4.18.2106.5**<br/>
+&ensp;Engine: **1.1.18300.4**<br/>
+&ensp;Support phase: **Security and Critical Updates**<br/>
 
 ### What's new
 - New controls for managing the gradual rollout process of Microsoft Defender updates. See [Manage the gradual rollout process for Microsoft Defender updates](manage-gradual-rollout.md).
@@ -142,11 +142,11 @@ After a new package version is released, support for the previous two versions i
 <details>
 <summary> May-2021 (Platform: 4.18.2105.4 | Engine: 1.1.18200.4)</summary>
 
-&ensp;Security intelligence update version: **1.341.8.0**
-&ensp;Released: **June 3, 2021**
-&ensp;Platform: **4.18.2105.4**
-&ensp;Engine: **1.1.18200.4**
-&ensp;Support phase: **Technical upgrade support (only)**
+&ensp;Security intelligence update version: **1.341.8.0**<br/>
+&ensp;Released: **June 3, 2021**<br/>
+&ensp;Platform: **4.18.2105.4**<br/>
+&ensp;Engine: **1.1.18200.4**<br/>
+&ensp;Support phase: **Technical upgrade support (only)**<br/>
 
 ### What's new
 - Improvements to [behavior monitoring](client-behavioral-blocking.md)
