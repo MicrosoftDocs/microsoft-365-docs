@@ -87,13 +87,17 @@ Tenant level aggregates will be available in all reports after opting in. **User
 
 ## Make the collected data anonymous
 
-To make the data that is collected for all reports anonymous, you have to be a global administrator. This will hide identifiable information such as user, group and site names in reports and in the template app .
+Reports provide information about your organization’s usage data. By default, reports display information with identifiable names for users, groups, and sites. Starting September 1, 2021, we are hiding user information by default for all reports as part of our ongoing commitment to help companies support their local privacy laws.
+  
+Global administrators can revert this change for their tenant and show identifiable user information if their organization's privacy practices allow it. It can be achieved in the Microsoft 365 admin center by following these steps:
+  
+1. In the admin center, go to the **Settings** \> **Org Settings** \> **Services** page.
 
-1. In the admin center, go to the **Settings** \> **Org Settings**, and under **Services** tab, choose **Reports**.
-
-2. Select **Reports**, and then choose to **Display anonymous identifiers**. This setting gets applied both to the usage reports as well as to the template app.
-
-3. Select **Save changes**.
+2. Select **Reports**. 
+  
+3. Uncheck the statement **In all reports, display de-identified names for users, groups, and sites**, and then save your changes.  
+  
+It'll take a few minutes for these changes to take effect. Showing identifiable user information is a logged event in the Microsoft 365 compliance center audit log.   
 
 ## Related content
 
