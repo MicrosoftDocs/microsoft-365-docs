@@ -202,7 +202,7 @@ If you're trying to use Office 365 and are finding third-party services aren't a
 <a name="bkmk_consumer"> </a>
 ### How do I block access to Microsoft's consumer services?
 
-The tenant restrictions feature now supports blocking the use of all Microsoft consumer applications (MSA apps) such as OneDrive, Hotmail, and Xbox.com. This uses a separate header to the login.live.com endpoint. For more details, see [Use tenant restrictions to manage access to SaaS cloud applications](/azure/active-directory/manage-apps/tenant-restrictions#blocking-consumer-applications),
+The tenant restrictions feature now supports blocking the use of all Microsoft consumer applications (MSA apps) such as OneDrive, Hotmail, and Xbox.com. This uses a separate header to the login.live.com endpoint. For more details, see [Use tenant restrictions to manage access to SaaS cloud applications](/azure/active-directory/manage-apps/tenant-restrictions#blocking-consumer-applications).
 
 <a name="bkmk_IPOnlyFirewall"> </a>
 ### My firewall requires IP Addresses and cannot process URLs. How do I configure it for Office 365?
