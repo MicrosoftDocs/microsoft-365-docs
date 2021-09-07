@@ -13,7 +13,7 @@ author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
   - m365-security-compliance
   - m365initiative-defender-endpoint
 ms.topic: conceptual
@@ -39,7 +39,7 @@ Starting with macOS High Sierra (10.13), macOS requires all kernel extensions to
 
 If you didn't approve the kernel extension during the deployment/installation of Microsoft Defender for Endpoint on macOS, the application displays a banner prompting you to enable it:
 
-   ![RTP disabled screenshot](images/mdatp-32-main-app-fix.png)
+   ![RTP disabled screenshot.](images/mdatp-32-main-app-fix.png)
 
 You can also run ```mdatp health```. It reports if real-time protection is enabled but not available. This indicates that the kernel extension isn't approved to run on your device.
 
@@ -64,11 +64,11 @@ See the instructions corresponding to the management tool that you used to deplo
 
 ## Manual deployment
 
-If less than 30 minutes have passed since the product was installed, navigate to **System Preferences** > **Security & Privacy**, where you have to **Allow** system software from developers "Microsoft Corporation".
+If less than 30 minutes have passed since the product was installed, navigate to **System Preferences** \> **Security & Privacy**, where you have to **Allow** system software from developers "Microsoft Corporation".
 
 If you don't see this prompt, it means that 30 or more minutes have passed, and the kernel extension still not been approved to run on your device:
 
-![Security and privacy window after prompt expired screenshot](images/mdatp-33-securityprivacysettings-noprompt.png)
+![Security and privacy window after prompt expired screenshot.](images/mdatp-33-securityprivacysettings-noprompt.png)
 
 In this case, you need to perform the following steps to trigger the approval flow again.
 
@@ -77,14 +77,14 @@ In this case, you need to perform the following steps to trigger the approval fl
     ```bash
     sudo kextutil /Library/Extensions/wdavkext.kext
     ```
-    
+
     ```Output
     Kext rejected due to system policy: <OSKext 0x7fc34d528390 [0x7fffa74aa8e0]> { URL = "file:///Library/StagedExtensions/Library/Extensions/wdavkext.kext/", ID = "com.microsoft.wdavkext" }
     Kext rejected due to system policy: <OSKext 0x7fc34d528390 [0x7fffa74aa8e0]> { URL = "file:///Library/StagedExtensions/Library/Extensions/wdavkext.kext/", ID = "com.microsoft.wdavkext" }
     Diagnostics for /Library/Extensions/wdavkext.kext:
     ```
 
-2. Open **System Preferences** > **Security & Privacy** from the menu. (Close it first, if it's opened.)
+2. Open **System Preferences** \> **Security & Privacy** from the menu. (Close it first, if it's opened.)
 
 3. **Allow** system software from developers "Microsoft Corporation"
 
