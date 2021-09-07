@@ -158,11 +158,11 @@ No known issues
 </details><details>
 <summary> April-2021 (Platform: 4.18.2104.14 | Engine: 1.1.18100.5)</summary>
 
-&ensp;Security intelligence update version: **1.337.2.0**
-&ensp;Released: **April 26, 2021**  (Engine: 1.1.18100.6 released May 5, 2021)
-&ensp;Platform: **4.18.2104.14**
-&ensp;Engine: **1.1.18100.5**
-&ensp;Support phase: **Technical upgrade support (only)**
+&ensp;Security intelligence update version: **1.337.2.0**<br/>
+&ensp;Released: **April 26, 2021**  (Engine: 1.1.18100.6 released May 5, 2021)<br/>
+&ensp;Platform: **4.18.2104.14**<br/>
+&ensp;Engine: **1.1.18100.5**<br/>
+&ensp;Support phase: **Technical upgrade support (only)**<br/>
 
 ### What's new
 - More behavior monitoring logic
@@ -176,11 +176,11 @@ No known issues
 </details><details>
 <summary> March-2021 (Platform: 4.18.2103.7 | Engine: 1.1.18000.5)</summary>
 
-&ensp;Security intelligence update version: **1.335.36.0**
-&ensp;Released: **April 2, 2021**
-&ensp;Platform: **4.18.2103.7**
-&ensp;Engine: **1.1.18000.5**
-&ensp;Support phase: **Technical upgrade support (only)**
+&ensp;Security intelligence update version: **1.335.36.0**<br/>
+&ensp;Released: **April 2, 2021**<br/>
+&ensp;Platform: **4.18.2103.7**<br/>
+&ensp;Engine: **1.1.18000.5**<br/>
+&ensp;Support phase: **Technical upgrade support (only)**<br/>
 
 ### What's new
 
@@ -194,11 +194,11 @@ No known issues
 </details><details>
 <summary> February-2021 (Platform: 4.18.2102.3 | Engine: 1.1.17900.7)</summary>
 
-&ensp;Security intelligence update version: **1.333.7.0**
-&ensp;Released: **March 9, 2021**
-&ensp;Platform: **4.18.2102.3**
-&ensp;Engine: **1.1.17900.7**
-&ensp;Support phase: **Technical upgrade support (only)**
+&ensp;Security intelligence update version: **1.333.7.0**<br/>
+&ensp;Released: **March 9, 2021**<br/>
+&ensp;Platform: **4.18.2102.3**<br/>
+&ensp;Engine: **1.1.17900.7**<br/>
+&ensp;Support phase: **Technical upgrade support (only)**<br/>
 
 ### What's new
 
@@ -211,11 +211,11 @@ No known issues
 </details><details>
 <summary> January-2021 (Platform: 4.18.2101.9 | Engine: 1.1.17800.5)</summary>
 
-&ensp;Security intelligence update version: **1.327.1854.0**
-&ensp;Released: **February 2, 2021**
-&ensp;Platform: **4.18.2101.9**
-&ensp;Engine: **1.1.17800.5**
-&ensp;Support phase: **Technical upgrade support (only)**
+&ensp;Security intelligence update version: **1.327.1854.0**<br/>
+&ensp;Released: **February 2, 2021**<br/>
+&ensp;Platform: **4.18.2101.9**<br/>
+&ensp;Engine: **1.1.17800.5**<br/>
+&ensp;Support phase: **Technical upgrade support (only)**<br/>
 
 ### What's new
 
@@ -231,11 +231,11 @@ No known issues
 </details><details>
 <summary> November-2020 (Platform: 4.18.2011.6 | Engine: 1.1.17700.4)</summary>
 
-&ensp;Security intelligence update version: **1.327.1854.0**
-&ensp;Released: **December 03, 2020**
-&ensp;Platform: **4.18.2011.6**
-&ensp;Engine: **1.1.17700.4**
-&ensp;Support phase: **Technical upgrade support (only)**
+&ensp;Security intelligence update version: **1.327.1854.0**<br/>
+&ensp;Released: **December 03, 2020**<br/>
+&ensp;Platform: **4.18.2011.6**<br/>
+&ensp;Engine: **1.1.17700.4**<br/>
+&ensp;Support phase: **Technical upgrade support (only)**<br/>
 
 ### What's new
 
@@ -247,11 +247,11 @@ No known issues
 </details><details>
 <summary> October-2020 (Platform: 4.18.2010.7 | Engine: 1.1.17600.5)</summary>
 
-&ensp;Security intelligence update version: **1.327.7.0**
-&ensp;Released: **October 29, 2020**
-&ensp;Platform: **4.18.2010.7**
-&ensp;Engine: **1.1.17600.5**
-&ensp;Support phase: **Technical upgrade support (only)**
+&ensp;Security intelligence update version: **1.327.7.0**<br/>
+&ensp;Released: **October 29, 2020**<br/>
+&ensp;Platform: **4.18.2010.7**<br/>
+&ensp;Engine: **1.1.17600.5**<br/>
+&ensp;Support phase: **Technical upgrade support (only)**<br/>
 
 ### What's new
 
@@ -267,11 +267,11 @@ No known issues
 </details><details>
 <summary> September-2020 (Platform: 4.18.2009.7 | Engine: 1.1.17500.4)</summary>
 
-&ensp;Security intelligence update version: **1.325.10.0**
-&ensp;Released: **October 01, 2020**
-&ensp;Platform: **4.18.2009.7**
-&ensp;Engine: **1.1.17500.4**
-&ensp;Support phase: **Technical upgrade support (only)**
+&ensp;Security intelligence update version: **1.325.10.0**<br/>
+&ensp;Released: **October 01, 2020**<br/>
+&ensp;Platform: **4.18.2009.7**<br/>
+&ensp;Engine: **1.1.17500.4**<br/>
+&ensp;Support phase: **Technical upgrade support (only)**<br/>
 
 ### What's new
 
@@ -293,11 +293,11 @@ No known issues
 <details>
 <summary> August-2020 (Platform: 4.18.2008.9 | Engine: 1.1.17400.5)</summary>
 
-&ensp;Security intelligence update version: **1.323.9.0**
-&ensp;Released: **August 27, 2020**
-&ensp;Platform: **4.18.2008.9**
-&ensp;Engine: **1.1.17400.5**
-&ensp;Support phase: **Technical upgrade support (only)**
+&ensp;Security intelligence update version: **1.323.9.0**<br/>
+&ensp;Released: **August 27, 2020**<br/>
+&ensp;Platform: **4.18.2008.9**<br/>
+&ensp;Engine: **1.1.17400.5**<br/>
+&ensp;Support phase: **Technical upgrade support (only)**<br/>
 
 ### What's new
 
@@ -317,11 +317,11 @@ No known issues
 <details>
 <summary> July-2020 (Platform: 4.18.2007.8 | Engine: 1.1.17300.4)</summary>
 
-&ensp;Security intelligence update version: **1.321.30.0**
-&ensp;Released: **July 28, 2020**
-&ensp;Platform: **4.18.2007.8**
-&ensp;Engine: **1.1.17300.4**
-&ensp;Support phase: **Technical upgrade support (only)**
+&ensp;Security intelligence update version: **1.321.30.0**<br/>
+&ensp;Released: **July 28, 2020**<br/>
+&ensp;Platform: **4.18.2007.8**<br/>
+&ensp;Engine: **1.1.17300.4**<br/>
+&ensp;Support phase: **Technical upgrade support (only)**<br/>
 
 ### What's new
 
@@ -336,11 +336,11 @@ No known issues
 <details>
 <summary> June-2020 (Platform: 4.18.2006.10 | Engine: 1.1.17200.2)</summary>
 
-&ensp;Security intelligence update version: **1.319.20.0**
-&ensp;Released: **June 22, 2020**
-&ensp;Platform: **4.18.2006.10**
-&ensp;Engine: **1.1.17200.2**
-&ensp;Support phase: **Technical upgrade support (only)**
+&ensp;Security intelligence update version: **1.319.20.0**<br/>
+&ensp;Released: **June 22, 2020**<br/>
+&ensp;Platform: **4.18.2006.10**<br/>
+&ensp;Engine: **1.1.17200.2**<br/>
+&ensp;Support phase: **Technical upgrade support (only)**<br/>
 
 ### What's new
 
@@ -359,11 +359,11 @@ No known issues
 <details>
 <summary> May-2020 (Platform: 4.18.2005.4 | Engine: 1.1.17100.2)</summary>
 
-&ensp;Security intelligence update version: **1.317.20.0**
-&ensp;Released: **May 26, 2020**
-&ensp;Platform: **4.18.2005.4**
-&ensp;Engine: **1.1.17100.2**
-&ensp;Support phase: **Technical upgrade support (only)**
+&ensp;Security intelligence update version: **1.317.20.0**<br/>
+&ensp;Released: **May 26, 2020**<br/>
+&ensp;Platform: **4.18.2005.4**<br/>
+&ensp;Engine: **1.1.17100.2**<br/>
+&ensp;Support phase: **Technical upgrade support (only)**<br/>
 
 ### What's new
 
@@ -382,11 +382,11 @@ No known issues
 <details>
 <summary> April-2020 (Platform: 4.18.2004.6 | Engine: 1.1.17000.2)</summary>
 
-&ensp;Security intelligence update version: **1.315.12.0**
-&ensp;Released: **April 30, 2020**
-&ensp;Platform: **4.18.2004.6**
-&ensp;Engine: **1.1.17000.2**
-&ensp;Support phase: **Technical upgrade support (only)**
+&ensp;Security intelligence update version: **1.315.12.0**<br/>
+&ensp;Released: **April 30, 2020**<br/>
+&ensp;Platform: **4.18.2004.6**<br/>
+&ensp;Engine: **1.1.17000.2**<br/>
+&ensp;Support phase: **Technical upgrade support (only)**<br/>
 
 ### What's new
 - WDfilter improvements
@@ -405,11 +405,11 @@ No known issues
 <details>
 <summary> March-2020 (Platform: 4.18.2003.8 | Engine: 1.1.16900.2)</summary>
 
-&ensp;Security intelligence update version: **1.313.8.0**
-&ensp;Released: **March 24, 2020**
-&ensp;Platform: **4.18.2003.8**
-&ensp;Engine: **1.1.16900.4**
-&ensp;Support phase: **Technical upgrade support (only)**
+&ensp;Security intelligence update version: **1.313.8.0**<br/>
+&ensp;Released: **March 24, 2020**<br/>
+&ensp;Platform: **4.18.2003.8**<br/>
+&ensp;Engine: **1.1.16900.4**<br/>
+&ensp;Support phase: **Technical upgrade support (only)**<br/>
 
 ### What's new
 
