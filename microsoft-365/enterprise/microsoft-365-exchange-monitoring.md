@@ -25,21 +25,21 @@ You can use Exchange Online monitoring in the Microsoft 365 admin center to moni
 - **Third-party infrastructure**: Issue is detected in third-party infrastructure on which your organization has taken a dependency and requires action from your organization for resolution. For example, user authentication transactions are getting throttled by a third-party security token service (STS) provider that prevents users from connecting to Exchange Online.
 - **Customer infrastructure**: Issue is detected in your organization's infrastructure and requires action from your organization for resolution. For example, users cannot access Exchange Online because they are unable to obtain an authentication token from STS provider hosted by your organization because of an expired certificate.
 
-Here is an example of the **Service health** page in the Microsoft 365 admin center, available from **Health > Service health** for organization scenarios.
+Here is an example of the **Service health** page in the Microsoft 365 admin center, available from **Health > Service health** for organization and [priority account](../admin/setup/priority-accounts.md) scenarios.
 
 ![The Service health page in the Microsoft 365 admin center.](../media/microsoft-365-exchange-monitoring/service-health-dashboard-example.png)
 
-**Issues in your organization** will be identified and used by organizational-level monitoring.
+**Issues in your organization** will be identified and used by organizational-level monitoring and priority account monitoring.
 
-The value of the **Health** column under **Issues in your organization** indicates whether organization's infrastructure or third-party software affects your organization's users' service health experience with Exchange Online. Advisories or incidents require *your* actions to resolve.
+The value of the **Health** column under **Issues in your organization** indicates whether your organization's infrastructure or third-party software affects the service health experience of your organization's users and/or priority accounts in Exchange Online. Advisories or incidents require *your* actions to resolve.
 
 The value of the **Health** column under **Microsoft service health** indicates that the service is healthy or has advisories or incidents based on the cloud services that Microsoft maintains.
 
-Here is an example of the Exchange Online monitoring page in the Microsoft 365 admin center that shows the health of organization-level scenarios, available from **Health > Service health > Exchange Online**.
+Here is an example of the Exchange Online monitoring page in the Microsoft 365 admin center that shows the health of organization-level and priority account scenarios available from **Health > Service health > Exchange Online**.
 
 ![The Exchange Online monitoring page in the Microsoft 365 admin center.](../media/microsoft-365-exchange-monitoring/exchange-monitoring-example.png)
 
-With the **Exchange Online** monitoring page, you can see whether the Exchange Online service is healthy or not and whether there are any associated incidents or advisories. With Exchange Online monitoring, you can look at the service health for specific email scenarios and view near real-time signals to determine the impact by organization-level scenario.
+With the **Exchange Online** monitoring page, you can see whether the Exchange Online service is healthy or not and whether there are any associated incidents or advisories. With Exchange Online monitoring, you can look at the service health for specific email scenarios and view near real-time signals to determine the impact by organization-level scenario. You can also see health of priority account scenarios.
 
 ## Requirements
 
@@ -80,6 +80,48 @@ With Exchange Online monitoring supports the following scenarios:
   ![An example of monitoring Exchange health for mail delivery.](../media/microsoft-365-exchange-monitoring/exchange-monitoring-scenario-example.png)
 
 For these scenarios, the key numbers are for the last 30 minutes in the main dashboard. Detailed views for each of these scenarios show the near real-time trend for seven days with the 30-minute aggregate compared with the previous week.
+
+## Priority accounts monitoring scenarios
+
+With Exchange Online priority account monitoring, you can view the health for the following scenarios after configuring [priority accounts](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts):
+
+- Exchange licensing
+
+- Mail delivery
+
+- Mailbox storage
+
+- Message limit
+
+- Subfolders per folder
+
+- Folder hierarchy
+
+- Recoverable items
+
+The Exchange licensing scenario checks if the priority account is not able to log in due to invalid license issues, which can be addressed by the tenant admin.
+
+The mail delivery scenario checks for delayed or non-delivered emails for priority accounts. The Microsoft 365 admin center provides a deep link to the Exchange admin center to follow the message trace. Exchange Admin Center role permissions may be required to edit thresholds. For more information, see [Email issues for priority accounts report in the new EAC](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report). 
+
+The remaining five scenarios above check if your priority account’s mailbox is close to reaching or has reached the limits described in [Exchange Online limits](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#mailbox-storage-limits).
+
+For these scenarios, you can see active and resolved advisories and incidents affecting your priority accounts. Identifiable information for the priority accounts will be displayed in the advisory or incident details along with recommendations. Here is an example.
+
+:::image type="content" source="../media/microsoft-365-exchange-monitoring/exchange-priority-accounts-scenario-example.png" alt-text="Example of active and resolved advisories and incidents affecting your priority accounts":::
+
+In the affected account pane, the **Status** column has these values:
+
+- Fixed: The issue causing the advisory or incident has been addressed for the priority account. There is no longer an issue. 
+
+- Active: The issue causing the advisory or incident is ongoing for the priority account. The issue remains. 
+
+- Delayed: The issue causing the advisory or incident has not been addressed for the priority account in 96 hours, so it is suspended. The issue remains. 
+
+Here is an example.
+
+:::image type="content" source="../media/microsoft-365-exchange-monitoring/exchange-status-column-example.png" alt-text="Example of the status column in the affected account pane":::
+
+An advisory or incident will be resolved after no accounts remain in the **Active** state. 
 
 ## Send us feedback
 
@@ -140,4 +182,9 @@ Monitoring focuses on service metadata and user content is not monitored.
 ## See also
 
 - [How to check Microsoft 365 service health](view-service-health.md) 
+
 - [Exchange Online limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#mailbox-storage-limits)
+
+- [Manage and monitor priority accounts](/microsoft-365/admin/setup/priority-accounts)
+
+- [Using Priority Accounts in Microsoft 365](https://techcommunity.microsoft.com/t5/microsoft-365-blog/using-priority-accounts-in-microsoft-365/ba-p/1873314)
