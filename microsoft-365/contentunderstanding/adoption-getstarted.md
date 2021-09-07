@@ -68,7 +68,7 @@ Determine who in your organization will build and manage the models? The followi
 | SharePoint/Knowledge admin | Power Platform admin | Knowledge manager | Model owner |
 |:-------|:-------|:-------|:-------|
 | AAD role| AAD role | AAD role | Champions |
-| Configure form processing | Configure Common data service environment for form processing | Gather use cases | Gather business use cases |
+| Configure form processing | Configure Dataverse environment for form processing | Gather use cases | Gather business use cases |
 | Manage content centers and permissions| Purchase and allocate AIB credits | Establish best practices and review model analytics | Create and apply models |
 
 Knowledge manager, Business Process Owner and Content model owner create sample models and champion adoption in the organization.
@@ -104,9 +104,9 @@ Identify the stakeholders for your project.
 | Content managers and model owners| Gather use cases and create and apply models | Any department|
 | Champions | Help evangelize and manage objection handling | Any department (staff) |
 | Tenant administrator | Configure tenant-level settings | IT department|
-| Power Platform administrator| Configure common data services environment | IT department|
+| Power Platform administrator| Configure Dataverse environment | IT department|
 
-> [!Note]
+> [!NOTE]
 > Though we recommend having each of these roles fulfilled throughout your rollout, you may find that you don't require them all to get started with your identified solution.
 
 ## Readiness checklist
@@ -142,3 +142,4 @@ To get ready for implementing SharePoint Syntex, you need to:
 ## See also
 
 [Scenarios and use cases for SharePoint Syntex](adoption-scenarios.md)
+[Manage contracts using a Microsoft 365 solution](solution-manage-contracts-in-microsoft-365.md)
