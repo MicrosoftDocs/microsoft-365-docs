@@ -51,13 +51,15 @@ One of the primary value points for app governance is the ability to quickly vie
 
 1. On your app governance portal page, select **Apps**.
 1. Use the **Categories** drop down list to select from the following options:
-  - All apps
-  - High privilege
-  - Overprivileged
-  - Unverified Publisher
-  - App only
-  - New apps
+    - All apps
+    - High privilege
+    - Overprivileged
+    - Unverified Publisher
+    - App only
+    - New apps
 1. Select the name of an app to view details. You can select multiple apps to save them as a saved query by placing a check mark to the left of the app name. Selecting an app name opens a detail pane on the right as show in the following graphic.
+
+:::image type="content" source="../media/manage-app-protection-governance/app-governance-app-insight.png" alt-text="":::
 
 ## Next step
 
