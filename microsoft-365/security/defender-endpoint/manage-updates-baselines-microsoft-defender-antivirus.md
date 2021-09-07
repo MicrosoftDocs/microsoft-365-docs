@@ -84,16 +84,18 @@ All our updates contain
 
 &ensp;Security intelligence update version: **1.349.22.0**<br/>
 &ensp;Released: **September 2, 2021**<br/>
-&ensp;Platform: **4.18.2107.x**<br/>
+&ensp;Platform: **4.18.2108.x**<br/>
 &ensp;Engine: **1.1.18500.10**<br/>
 &ensp;Support phase: **Security and Critical Updates**<br/>
 
 ### What's new
 - Improvements to the behavior monitoring engine
-- New [performance analyzer for Microsoft Defender Antivirus](tune-performance-defender-antivirus.md) released
-- More protection against malicious DLLs
-- More protection for [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) 
-- Improvements to per-rule [attack surface reduction rule exclusions](customize-attack-surface-reduction.md)
+- Released new [performance analyzer for Microsoft Defender Antivirus](tune-performance-defender-antivirus.md)
+- Microsoft Defender Antivirus hardened against loading malicious DLLs
+- Microsoft Defender Antivirus hardened against TrustedInstaller bypass
+- Enable audit mode of automatic rollback of engine
+- Added support for configuring per-rule [attack surface reduction rule exclusions](customize-attack-surface-reduction.md)
+- Extending file change notifications to include more data for Human-Operated Ransomware (HumOR)
 
 ### Known Issues
 No known issues
