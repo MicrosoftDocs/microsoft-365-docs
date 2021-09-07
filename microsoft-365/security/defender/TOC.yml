@@ -306,7 +306,7 @@
                 href: ../mtp/microsoft-threat-experts.md
               - name: Configure and manage Microsoft Threat Experts capabilities
                 href: ../mtp/configure-microsoft-threat-experts.md
-       - name: Integrate Microsoft 365 Defender into your security operations
+       - name: SecOps integration for Microsoft 365 Defender
          items: 
           - name: Overview
             href: integrate-microsoft-365-defender-secops.md
