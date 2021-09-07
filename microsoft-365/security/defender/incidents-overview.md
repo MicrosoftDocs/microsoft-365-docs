@@ -1,5 +1,5 @@
 ---
-title: Incidents in Microsoft 365 Defender
+title: Incident response with Microsoft 365 Defender
 description: Investigate incidents seen across devices, users, and mailboxes in the Microsoft 365 Defender portal.
 keywords: incidents, alerts, investigate, analyze, response, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365, incident response, cyber-attack
 search.product: eADQiWindows 10XVcnh
@@ -24,7 +24,7 @@ search.appverid:
 ms.technology: m365d
 ---
 
-# Incidents in Microsoft 365 Defender
+# Incident response with Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
