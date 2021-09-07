@@ -82,11 +82,11 @@ All our updates contain
 <details>
 <summary> August-2021 (Platform: 4.18.2108.x | Engine: 1.1.18500.10)</summary>
 
-&ensp;Security intelligence update version: **1.349.22.0**
-&ensp;Released: **September 2, 2021**
-&ensp;Platform: **4.18.2107.x**
-&ensp;Engine: **1.1.18500.10**
-&ensp;Support phase: **Security and Critical Updates**
+&ensp;Security intelligence update version: **1.349.22.0**<br/>
+&ensp;Released: **September 2, 2021**<br/>
+&ensp;Platform: **4.18.2107.x**<br/>
+&ensp;Engine: **1.1.18500.10**<br/>
+&ensp;Support phase: **Security and Critical Updates**<br/>
 
 ### What's new
 - Improvements to the behavior monitoring engine
