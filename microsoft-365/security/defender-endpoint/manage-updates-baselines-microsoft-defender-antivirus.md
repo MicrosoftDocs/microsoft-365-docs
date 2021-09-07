@@ -91,8 +91,8 @@ All our updates contain
 ### What's new
 - Improvements to the behavior monitoring engine
 - New [performance analyzer for Microsoft Defender Antivirus](tune-performance-defender-antivirus.md) released
-- Additional protection against malicious DLLs
-- Additional protection for [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) 
+- More protection against malicious DLLs
+- More protection for [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) 
 - Improvements to per-rule [attack surface reduction rule exclusions](customize-attack-surface-reduction.md)
 
 ### Known Issues
@@ -165,7 +165,7 @@ No known issues
 &ensp;Support phase: **Technical upgrade support (only)**
 
 ### What's new
-- Additional behavior monitoring logic
+- More behavior monitoring logic
 - Improved kernel mode key logger detection
 - Added new controls to manage the gradual rollout process for [Microsoft Defender updates](manage-gradual-rollout.md)
 
@@ -186,7 +186,7 @@ No known issues
 
 - Improvement to the Behavior Monitoring engine
 - Expanded network brute-force-attack mitigations
-- Additional failed tampering attempt event generation when [Tamper Protection](prevent-changes-to-security-settings-with-tamper-protection.md) is enabled
+- More failed tampering attempt event generation when [Tamper Protection](prevent-changes-to-security-settings-with-tamper-protection.md) is enabled
 
 ### Known Issues
 No known issues
@@ -717,7 +717,7 @@ For more information, see [Microsoft Defender update for Windows operating syste
 <br/>
 </details>
 
-## Additional resources
+## More resources
 
 | Article | Description  |
 |:---|:---|
