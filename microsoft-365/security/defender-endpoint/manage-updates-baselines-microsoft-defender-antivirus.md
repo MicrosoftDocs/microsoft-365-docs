@@ -592,10 +592,10 @@ For more information, see [Microsoft Defender update for Windows operating syste
 </details><details>
 <summary>1.1.2105.01</summary>
 
-&ensp;Package version: **1.1.2105.01**
-&ensp;Platform version: **4.18.2103.7**
-&ensp;Engine version: **1.1.18100.6**
-&ensp;Signature version: **1.339.42.0**
+&ensp;Package version: **1.1.2105.01**<br/>
+&ensp;Platform version: **4.18.2103.7**<br/>
+&ensp;Engine version: **1.1.18100.6**<br/>
+&ensp;Signature version: **1.339.42.0**<br/>
 
 ### Fixes
 - None
@@ -606,10 +606,10 @@ For more information, see [Microsoft Defender update for Windows operating syste
 </details><details>
 <summary>1.1.2104.01</summary>
 
-&ensp;Package version: **1.1.2104.01**
-&ensp;Platform version: **4.18.2102.4**
-&ensp;Engine version: **1.1.18000.5**
-&ensp;Signature version: **1.335.232.0**
+&ensp;Package version: **1.1.2104.01**<br/>
+&ensp;Platform version: **4.18.2102.4**<br/>
+&ensp;Engine version: **1.1.18000.5**<br/>
+&ensp;Signature version: **1.335.232.0**<br/>
 
 ### Fixes
 - None
@@ -620,10 +620,10 @@ For more information, see [Microsoft Defender update for Windows operating syste
 </details><details>
 <summary>1.1.2103.01</summary>
 
-&ensp;Package version: **1.1.2103.01**
-&ensp;Platform version: **4.18.2101.9**
-&ensp;Engine version: **1.1.17800.5**
-&ensp;Signature version: **1.331.2302.0**
+&ensp;Package version: **1.1.2103.01**<br/>
+&ensp;Platform version: **4.18.2101.9**<br/>
+&ensp;Engine version: **1.1.17800.5**<br/>
+&ensp;Signature version: **1.331.2302.0**<br/>
 
 ### Fixes
 - None
@@ -634,10 +634,10 @@ For more information, see [Microsoft Defender update for Windows operating syste
 </details><details>
 <summary>1.1.2102.03</summary>
 
-&ensp;Package version: **1.1.2102.03**
-&ensp;Platform version: **4.18.2011.6**
-&ensp;Engine version: **1.1.17800.5**
-&ensp;Signature version: **1.331.174.0**
+&ensp;Package version: **1.1.2102.03**<br/>
+&ensp;Platform version: **4.18.2011.6**<br/>
+&ensp;Engine version: **1.1.17800.5**<br/>
+&ensp;Signature version: **1.331.174.0**<br/>
 
 ### Fixes
 - None
@@ -648,10 +648,10 @@ For more information, see [Microsoft Defender update for Windows operating syste
 </details><details>
 <summary>1.1.2101.02</summary>
 
-&ensp;Package version: **1.1.2101.02**
-&ensp;Platform version: **4.18.2011.6**
-&ensp;Engine version: **1.1.17700.4**
-&ensp;Signature version: **1.329.1796.0**
+&ensp;Package version: **1.1.2101.02**<br/>
+&ensp;Platform version: **4.18.2011.6**<br/>
+&ensp;Engine version: **1.1.17700.4**<br/>
+&ensp;Signature version: **1.329.1796.0**<br/>
 
 ### Fixes
 - None
@@ -662,10 +662,10 @@ For more information, see [Microsoft Defender update for Windows operating syste
 </details><details>
 <summary>1.1.2012.01</summary>
 
-&ensp;Package version: **1.1.2012.01**
-&ensp;Platform version: **4.18.2010.7**
-&ensp;Engine version: **1.1.17600.5**
-&ensp;Signature version: **1.327.1991.0**
+&ensp;Package version: **1.1.2012.01**<br/>
+&ensp;Platform version: **4.18.2010.7**<br/>
+&ensp;Engine version: **1.1.17600.5**<br/>
+&ensp;Signature version: **1.327.1991.0**<br/>
 
 ### Fixes
 - None
