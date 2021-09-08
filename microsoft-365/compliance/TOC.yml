@@ -619,6 +619,8 @@
             href: content-search-reference.md
           - name: Keyword queries and search conditions
             href: keyword-queries-and-search-conditions.md
+          - name: Configure search permissions filtering
+            href: permissions-filtering-for-content-search.md
           - name: Preview eDiscovery search results
             href: preview-ediscovery-search-results.md
           - name: View statistics for search results
@@ -633,8 +635,6 @@
             href: search-cloud-based-mailboxes-for-on-premises-users.md
           - name: Prepare a CSV file for an ID list search
             href: csv-file-for-an-id-list-content-search.md
-          - name: Configure permissions filtering for content search
-            href: permissions-filtering-for-content-search.md
           - name: Troubleshoot common eDiscovery issues
             href: ediscovery-troubleshooting-common-issues.md
           - name: Retry a failed search
@@ -699,16 +699,16 @@
             href: assign-ediscovery-permissions.md
           - name: Keyword queries and search conditions
             href: keyword-queries-and-search-conditions.md
-          - name: Content stored in mailboxes for eDiscovery
-            href: what-is-stored-in-exo-mailbox.md
-          - name: Preview eDiscovery search results
-            href: preview-ediscovery-search-results.md
           - name: Set up compliance boundaries
             href: set-up-compliance-boundaries.md
           - name: Configure search permissions filtering
             href: permissions-filtering-for-content-search.md
+          - name: Content stored in mailboxes for eDiscovery
+            href: what-is-stored-in-exo-mailbox.md
           - name: Differences between estimated and actual search results
             href: differences-between-estimated-and-actual-ediscovery-search-results.md
+          - name: Preview eDiscovery search results
+            href: preview-ediscovery-search-results.md
           - name: Export a search report
             href: export-a-content-search-report.md
           - name: Use a script to add users to an eDiscovery hold
@@ -867,24 +867,24 @@
               href: document-metadata-fields-in-advanced-ediscovery.md
             - name: Set up attorney-client privilege detection
               href: attorney-privilege-detection.md
-            - name: Conversation review sets
-              href: conversation-review-sets.md
-            - name: CJK language support
-              href: ediscovery-cjk-support.md
             - name: Assign eDiscovery permissions
               href: assign-ediscovery-permissions.md
             - name: Keyword queries and search conditions
               href: keyword-queries-and-search-conditions.md
-            - name: Configure search permissions filtering
-              href: permissions-filtering-for-content-search.md
             - name: Set up compliance boundaries
               href: set-up-compliance-boundaries.md
+            - name: Configure search permissions filtering
+              href: permissions-filtering-for-content-search.md
             - name: Content stored in mailboxes for eDiscovery
               href: what-is-stored-in-exo-mailbox.md
             - name: Decryption in eDiscovery tools
               href: ediscovery-decryption.md
             - name: Troubleshoot eDiscovery hold errors
               href: hold-distribution-errors.md
+            - name: Conversation review sets
+              href: conversation-review-sets.md
+            - name: CJK language support
+              href: ediscovery-cjk-support.md
             - name: Collect eDiscovery diagnostic information
               href: ediscovery-diagnostic-info.md
             - name: Search for eDiscovery activities in the audit log
