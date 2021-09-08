@@ -60,17 +60,5 @@ Turn on the preview experience setting to be among the first to try upcoming fea
 
 2. Toggle the setting between **On** and **Off** and select **Save preferences**.
 
-## Preview features
-
-The following features are included in the preview release:
-
-- [Web Content Filtering](web-content-filtering.md)
-
-  Web content filtering is part of web protection capabilities in Microsoft Defender for Endpoint. It enables your organization to track and regulate access to websites based on their content categories. Many of these websites, while not malicious, might be problematic because of compliance regulations, bandwidth usage, or other concerns.
-
-- [Device health and compliance report](machine-reports.md)
-
-  The device health and compliance report provides high-level information about the devices in your organization.
-
 > [!TIP]
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-preview-belowfoldlink)  

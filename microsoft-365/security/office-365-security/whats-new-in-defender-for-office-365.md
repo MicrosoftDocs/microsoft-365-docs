@@ -38,6 +38,16 @@ Learn more by watching [this video](https://www.youtube.com/watch?v=Tdz6KfruDGo&
 > [!TIP]
 > Don't have Microsoft Defender for Office 365 yet? [Contact sales to start a trial](https://info.microsoft.com/ww-landing-M365SMB-web-contact.html).
 
+
+
+For more information on what's new with other Microsoft Defender security products see:
+
+- [What's new in Microsoft 365 Defender](../defender/whats-new.md)
+- [What's new in Microsoft Defender for Endpoint](../defender-endpoint/whats-new-in-microsoft-defender-atp.md)
+- [What's new in Microsoft Defender for Identity](/defender-for-identity/whats-new)
+
+
+
 ## September 2021
 
 - [Quarantine policies](quarantine-policies.md): Admins can configure granular control for recipient access to quarantined messages and customize end-user spam notifications.
