@@ -262,6 +262,7 @@ Some data connectors are available in the US Government cloud. The following sec
 |Bell SMS/MMS Network Archiver | Yes | No | No |
 |Enterprise Number Archiver | Yes | No | No |
 |O2 SMS and Voice Network Archiver | Yes         | No | No |
+|Rogers Network Archiver | Yes         | No | No |
 |Signal Archiver | Yes | No | No |
 |Telegram Archiver | Yes | No | No |
 |TELUS SMS Network Archiver | Yes | No | No |
