@@ -46,7 +46,7 @@ sections:
       - question: |
           How do I manage messages that were quarantined for malware?
         answer: |
-          Only admins can manage messages that were quarantined for malware. For more information, see [Manage quarantined messages and files as an admin](manage-quarantined-messages-and-files.md).
+          By default, only admins can manage messages that were quarantined for malware. But, admins can create and apply _[quarantine policies](quarantine-policies.md)_ to anti-malware policies that define less restrictive capabilities for users. For more information, see [Manage quarantined messages and files as an admin](manage-quarantined-messages-and-files.md).
           
       - question: |
           How do I quarantine spam?
@@ -61,7 +61,7 @@ sections:
       - question: |
           What messages can end users access in quarantine?
         answer: |
-          Users can access spam, bulk email, and (as of April 2020) phishing messages where they are a recipient. End users can't access quarantined malware, high confidence phishing or messages that were quarantined because of the **Deliver the message to the hosted quarantine** action in mail flow rules (also known as transport rules). For more information about users accessing quarantined messages, see [Find and release quarantined messages as a user](find-and-release-quarantined-messages-as-a-user.md).
+          By default, users can access spam, bulk email, and phishing messages where they are a recipient. By default, end users can't access quarantined malware, high confidence phishing or messages that were quarantined because of the **Deliver the message to the hosted quarantine** action in mail flow rules (also known as transport rules). For more information about users accessing quarantined messages, see [Find and release quarantined messages as a user](find-and-release-quarantined-messages-as-a-user.md).
           
       - question: |
           How long are messages kept in the quarantine?
@@ -120,3 +120,4 @@ sections:
           ```
           
           After you release a message, you can't release it again.
+          

@@ -288,6 +288,8 @@
        href: mfi-slow-mail-flow-rules-insight.md
      - name: Manage quarantined messages and files as an admin
        href: manage-quarantined-messages-and-files.md
+     - name: Quarantine policies
+       href: quarantine-policies.md  
      - name: Remove blocked users from the Restricted Users portal
        href: removing-user-from-restricted-users-portal-after-spam.md
      - name: Use the delist portal to remove yourself from the blocked senders list

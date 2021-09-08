@@ -260,7 +260,7 @@ For detailed syntax and parameter information, see [New-SafeAttachmentPolicy](/p
 To create a safe attachment rule, use this syntax:
 
 ```PowerShell
-New-SafeAttachmentRule -Name "<RuleName>" -SafeAttachmentPolicy "<PolicyName>" <Recipient filters> [<Recipient filter exceptions>] [-Comments "<OptionalComments>"] [-Enabled <$true | $false>] [-QuarantineTag <QuarantinePolicyIdentity>]
+New-SafeAttachmentRule -Name "<RuleName>" -SafeAttachmentPolicy "<PolicyName>" <Recipient filters> [<Recipient filter exceptions>] [-Comments "<OptionalComments>"] [-Enabled <$true | $false>] [-QuarantineTag <QuarantinePolicyName>]
 ```
 
 This example creates a safe attachment rule named Contoso All with the following conditions:

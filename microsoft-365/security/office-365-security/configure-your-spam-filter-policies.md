@@ -160,7 +160,7 @@ Creating a custom anti-spam policy in the Microsoft 365 Defender portal creates 
      >
      > <sup>2</sup> You can this use value as a condition in mail flow rules to filter or route the message.
      >
-     > <sup>3</sup> A blank **Select quarantine policy** value means the default quarantine policy for that particular verdict is used. When you later edit the anti-spam policy or view the settings, the default quarantine policy name is shown. For more information about default quarantine policies that are used for supported protection filtering verdicts, see [this table](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features).
+     > <sup>3</sup> A blank **Select a policy** value means the default quarantine policy for that particular verdict is used. When you later edit the anti-spam policy or view the settings, the default quarantine policy name is shown. For more information about default quarantine policies that are used for supported protection filtering verdicts, see [this table](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features).
 
    - **Retain spam in quarantine for this many days**: Specifies how long to keep the message in quarantine if you selected **Quarantine message** as the action for a spam filtering verdict. After the time period expires, the message is deleted. The default value is 30 days. A valid value is from 1 to 30 days. For information about quarantine, see the following articles:
      - [Quarantined messages in EOP](quarantine-email-messages.md)
@@ -316,6 +316,8 @@ To change the priority of a policy, you click **Increase priority** or **Decreas
 > End-user spam notifications are not supported for groups.
 
 When a spam filtering verdict quarantines a message, you can configure end-user spam notifications to let recipients know what happened to messages that were sent to them. For more information about these notifications, see [End-user spam notifications in EOP](use-spam-notifications-to-release-and-report-quarantined-messages.md).
+
+You can also customize the language and branding that's used in the notifications. For instructions, see [Configure global quarantine notification settings in the Microsoft 365 Defender portal](quarantine-policies.md#configure-global-quarantine-notification-settings-in-the-microsoft-365-defender-portal).
 
 1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Anti-spam** in the **Policies** section.
 
