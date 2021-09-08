@@ -1,5 +1,5 @@
 ---
-title: Safe Links
+title: Complete Safe Links overview for Microsoft Defender for Office 365
 f1.keywords: 
   - NOCSH
 ms.author: chrisda
@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: overview
 f1_keywords: 
   - '197503'
-
+ms.date: 09/08/2021
 localization_priority: Normal
 ms.collection: 
   - Strat_O365_IP
@@ -25,7 +25,7 @@ search.appverid:
   - ZPP160
   - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
-description: In this article, admins can learn about Safe Links protection in Defender for Office 365 to protect their organization from phishing and other attacks that use malicious URLs.
+description: Learn about Safe Links protection in Defender for Office 365 to protect an organization from phishing and other attacks that use malicious URLs. Discover Teams Safe Links, and see graphics of Safe Links messages.
 ms.technology: mdo
 ms.prod: m365-security
 ---
