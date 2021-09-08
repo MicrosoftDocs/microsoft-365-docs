@@ -212,7 +212,7 @@ For detailed syntax and parameter information, see [New-QuarantineTag](/powershe
 
 ## Step 2: Assign a quarantine policy to supported features
 
-In _supported_ protection features that quarantine messages or files (automatically or as a configurable action), you can assign a quarantine policy to the available quarantine actions. Features that quarantine messages and the availability of quarantine policies are described in the following table:
+In _supported_ protection features that quarantine email messages, you can assign a quarantine policy to the available quarantine actions. Features that quarantine messages and the availability of quarantine policies are described in the following table:
 
 <br>
 
