@@ -55,7 +55,7 @@ You'll need to complete the following general steps to successfully onboard serv
 - Install application
 - Follow the onboarding steps for the corresponding tool
 
-**Windows Server Semi-Annual Channel**
+**Windows Server Semi-Annual Channel and Windows Server 2019**
 
 - Download the onboarding package
 - Follow the onboarding steps for the corresponding tool
