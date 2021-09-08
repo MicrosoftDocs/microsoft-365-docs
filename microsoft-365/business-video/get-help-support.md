@@ -68,12 +68,6 @@ If your support phone number isn't listed above, use the drop-down menu below to
 
 [!INCLUDE [country-region-support-dropdown-list](../admin/includes/country-region-support-dropdown-list.md)]
 
-## Small business support with Business Assist
-
-Get the most out of your subscription with expert advice from small business specialists.
-
-Business Assist for Microsoft 365 is designed for small businesses to give you and your employees around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use. Check out [Business Assist](../admin/misc/business-assist.md).
-
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
