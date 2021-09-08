@@ -47,7 +47,12 @@ For more information on what's new with other Microsoft Defender security produc
 - [What's new in Microsoft 365 Defender](../defender/whats-new.md)
 - [What's new in Microsoft Defender for Office 365](../office-365-security/whats-new-in-defender-for-office-365.md)
 - [What's new in Microsoft Defender for Identity](/defender-for-identity/whats-new)
+- [What's new in Microsoft Cloud App Security](/cloud-app-security/release-notes)
 
+For more information on Microsoft Defender for Endpoint on other operating systems:
+- [What's new in Defender for Endpoint on macOS](mac-whatsnew.md)
+- [What's new in Defender for Endpoint on iOS](ios-whatsnew.md)
+- [What's new in Defender for Endpoint on Linux](linux-whatsnew.md)
 
 
 ## August 2021
