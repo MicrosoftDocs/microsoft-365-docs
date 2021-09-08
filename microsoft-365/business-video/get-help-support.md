@@ -24,7 +24,7 @@ description: "You must be an admin for a business subscription to get admin help
 
 # Get support
 
-## Watch: Get help or support 
+## Watch: Get help or support
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOgo?autoplay=false]
 
@@ -67,6 +67,12 @@ Admins, have your account details ready when you call.
 If your support phone number isn't listed above, use the drop-down menu below to find the number for your country or region.
 
 [!INCLUDE [country-region-support-dropdown-list](../admin/includes/country-region-support-dropdown-list.md)]
+
+## Small business support with Business Assist
+
+Get the most out of your subscription with expert advice from small business specialists.
+
+Business Assist for Microsoft 365 is designed for small businesses to give you and your employees around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use. Check out [Business Assist](../admin/misc/business-assist.md).
 
 ::: moniker-end
 
