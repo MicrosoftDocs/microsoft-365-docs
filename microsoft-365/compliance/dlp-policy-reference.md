@@ -267,6 +267,10 @@ The available context options change depending on which location you choose. If 
 
 - Content contains
 - Content is shared from Microsoft 365
+- Sender is (Preview)
+- Sender domain is (Preview)
+- Recipient domain is (Preview)
+- Recipient is (Preview)
 
 ##### Conditions Devices supports
 
