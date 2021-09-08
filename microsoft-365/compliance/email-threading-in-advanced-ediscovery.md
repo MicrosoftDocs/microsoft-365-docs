@@ -24,13 +24,13 @@ Consider an email conversation that has been going on for a while. In most cases
 
 ## What does email threading do?
 
-Email threading parses each email and deconstructs it to individual messages; each email is a chain of individual messages. Then, it analyzes all emails in the review set to determine whether an email has unique content or if the chain is wholly contained in a different email. In the end emails are divided into four categories:
+Email threading parses each email and deconstructs it to individual messages; each email is a chain of individual messages. It then analyzes all emails in the review set to determine whether an email message has unique content or if the chain (parent messages) are wholly contained in the final email. Email messages are divided into four inclusive values:
 
-- **Inclusive**: the last message in the email has unique content, and the email has all of the attachments that were included in other emails of which the content is wholly contained in this email.
+- **Inclusive**: An inclusive email is the the final email message in an email thread and contains all previous history of that email thread.
 
-- **Inclusive minus**: the last message in the email has unique content, but the email does not contain some of the attachments that were included in other emails of which the content is wholly contained in this email.
+- **Inclusive minus**: An email messaage is designated as Inclusive minus if there are one or more attachments associated with the specific message within the email thread. A reviewer can use the Inclisive minus value to determine which specific emails message within the thread has associated attachments. 
 
-- **Inclusive copy**: an exact copy of an inclusive/inclusive minus email
+- **Inclusive copy**: An email message is considered an Inclusive copy if it is an exact copy of an inclusive/inclusive minus email. 
 
 - **None**: The content of this email is wholly contained in at least one email that is marked as inclusive/inclusive minus.
 
