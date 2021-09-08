@@ -16,7 +16,7 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 09/07/2021
+ms.date: 09/08/2021
 ---
 
 # Manage Microsoft Defender Antivirus updates and apply baselines
@@ -80,11 +80,11 @@ All our updates contain
 - integration improvements (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)).
 <br/>
 <details>
-<summary> August-2021 (Platform: 4.18.2108.x | Engine: 1.1.18500.10)</summary>
+<summary> August-2021 (Platform: 4.18.2108.7 | Engine: 1.1.18500.10)</summary>
 
 &ensp;Security intelligence update version: **1.349.22.0**<br/>
 &ensp;Released: **September 2, 2021**<br/>
-&ensp;Platform: **4.18.2108.x**<br/>
+&ensp;Platform: **4.18.2108.7**<br/>
 &ensp;Engine: **1.1.18500.10**<br/>
 &ensp;Support phase: **Security and Critical Updates**<br/>
 
@@ -93,7 +93,6 @@ All our updates contain
 - Released new [performance analyzer for Microsoft Defender Antivirus](tune-performance-defender-antivirus.md)
 - Microsoft Defender Antivirus hardened against loading malicious DLLs
 - Microsoft Defender Antivirus hardened against TrustedInstaller bypass
-- Enable audit mode of automatic rollback of engine
 - Added support for configuring per-rule [attack surface reduction rule exclusions](customize-attack-surface-reduction.md)
 - Extending file change notifications to include more data for Human-Operated Ransomware (HumOR)
 
