@@ -96,85 +96,80 @@ Microsoft Defender for Endpoint troubleshooting mode allows you to troubleshoot 
 
 ### Scenario 1: Unable to install application
 
-Description: 
+If you want to install an application but receive an error message saying that Microsoft Defender Antivirus and tamper protection is on, follow the steps below to troubleshoot the issue.
 
-User wants to install application … and they receive an error message... 
+1. Request the SOC admin to turn on troubleshooting mode. You'll get a Windows Sec app notification once the troubleshooting mode starts.  
 
-Machine is onboarded to MDATP (has Tamper protection on) and Microsoft Defender AV (RTP = on), ... 
+2. Connect to the machine (using Terminal Services for example) as an IT help desk with local admin permissions.  
 
-Troubleshoot steps: 
+3. Start Process Monitor (ProcMon). See the steps [here](troubleshoot-performance-issues.md).  
 
-On the machine with the problem request the SOC admin to turn on Troubleshoot mode 
+4. Go to **Windows security** > **Threat & virus protection** > **Manage settings** > **Tamper protection** > **Off**.  
 
-Observe Troubleshoot mode start (Windows Sec app notification) 
+5. Launch Powershell cmd elevated. 
 
-Connect to the machine (using Terminal Services for example)as an IT help desk with Local Admin permissions  
+6. Toggle RTP off.  
 
-Start procmon ??? (see steps from Yong public doc reference) 
+    - Run `get-mppreference` to check RTP status.
+    - Run `set–mppreference` to turn off RTP Run. 
 
-Try installing the app .. as the  
+7. Try installing the app.
 
-Launch Windows Sec app and Turn off Tamper protection 
+### Scenario 2: Windows Defender (MsMpEng.exe) causing high CPU
 
-Windows security > Threat & virus protection > Manage settings > Tamper protection > off 
+Sometimes during a scheduled scan, MsMpEng.exe can consume high CPU usage.
 
-Launch Powershell cmd elevated 
+1. Go to **Task Manager** > **Details** tab to confirm that MsMpEng.exe is the reason behind the high CPU usage. Also check to see if a scheduled scan is currently underway.
 
-Toggle RTP off  
+2. Run ProcMon during the CPU spike for around 5 minutes, and then review the ProcMon log for clues. 
 
-check RTP status - Run get-mppreference 
+3. Once RCA is determined, turn the troubleshooting mode on. 
 
-Turn off RTP Run set –mppreference …. 
+4. Log into the machine and launch an elevated PowerShell command prompt. 
 
-Try installing the app .. as the 
+5. If `DisableLocalAdminMerge` is enabled on the device:  
 
-### Scenario 2: Windows Defender (MsMpEng.exe) causes high CPU
+- Request SOC admin to turn on troubleshooting mode for the device.
 
-Description:  Randomly or during a scheduled scan, MsMpEng.exe will consume/spike the CPU. 
+- You'll get a Windows Sec app notification once the troubleshooting mode starts.
 
-Troubleshooting steps: 
+6. Add process/file/folder/extension exclusions based on ProcMon findings using one of the following commands: 
 
-Confirm that MsMpEng.exe is spiking the CPU with Task Manager | Details tab. 
+    - Set-mppreference -ExclusionPath C:\DB\DataFiles 
+    
+    - Set-mppreference –ExclusionExtension .dbx 
+    
+    - Set-mppreference –ExclusionProcess C:\DB\Bin\Convertdb.exe 
 
-Check to see if a Scheduled Scan is currently running or not. 
+7. After adding the exclusion, check to see if the CPU usage has dropped. 
 
-Download/run/capture Process Monitor log during the CPU spike for ~5 minutes. 
+For more information on Set-MpPreference cmdlet configuration preferences for Windows Defender scans and updates, see [here](https://docs.microsoft.com/powershell/module/defender/set-mppreference?view=windowsserver2019-ps). 
 
-Review Process Monitor log for clues as to what the MsMpEng.exe process is touching by filtering on the PATH column. 
+### Scenario 3: Application taking longer to perform an action
 
-Once RCA is determined (whether we are scanning a busy process or file) place machine in MDE Troubleshooting Mode. 
+When Microsoft Defender Antivirus real-time protection is turned on, application takes a long time to perform basic tasks. To turn off real-time protection and troubleshoot the issue, do the following: 
 
-Log into the machine in question. 
+1. Request SOC admin to turn on troubleshooting mode on the device. 
 
-Launch an elevated PowerShell command prompt. 
+2. To disable RTP for this scenario, you must turn off tamper protection first. For more information, see [Protect security settings with tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md). 
 
-(Step 8 & 9 only needed if ‘DisableLocalAdminMerge’ is enabled on the device)  
+3. Once tamper protection is disabled, turn the troubleshooting mode on. Now log into the device. 
 
-Request SOC admin to turn on Troubleshoot mode for the machine 
+4. Launch an elevated PowerShell command prompt. 
 
-Observe Troubleshoot mode start (Windows Sec app notification) 
+    - Set-mppreference -DisableRealtimeMonitoring $true 
 
-Add process/file/folder/extension exclusions based on Process Monitor findings using one of the following commands: 
+5. After disabling RTP, check to see if the application is slow. 
 
-Set-mppreference -ExclusionPath C:\DB\DataFiles 
+### Unwanted app is blocked by Windows Defender (PUA)
 
-Set-mppreference –ExclusionExtension .dbx 
-
-Set-mppreference –ExclusionProcess C:\DB\Bin\Convertdb.exe 
-
-After adding the exclusion in question, check to see if the CPU usage has dropped. 
-
-Reference  Set-MpPreference (Defender) | Microsoft Docs 
-
-### Scenario 3: Application takes a long time to perform an action
-
-Description: An application takes a long time to open/save/etc. When Real-time protection is enabled.  Need to turn off Real-time protection to troubleshoot issue. 
+Description: Our legit 3rd party application (I.e. FileZilla) is being detected as a PUA and blocked from running.  Need to turn off PUA blocks so the application runs properly. 
 
 Troubleshooting steps: 
 
 Request SOC admin to turn on Troubleshoot mode for the machine 
 
-To disable RTP for this scenario, you must turn off Tamper Protection first. 
+To turn off PUA detections, you must turn off Tamper Protection first. 
 
 Please review this doc for more info:  Protect security settings with tamper protection | Microsoft Docs 
 
@@ -182,15 +177,53 @@ Once Tamper Protection is disabled, place machine in MDE Troubleshooting Mode.
 
 Now log into the machine in question. 
 
+Launch an elevated PowerShell command prompt.  
+
+Type in the following and hit enter: 
+
+Set-mppreference -PUAProtection Disabled 
+
+After disabling PUA, check to see if the Application is now able to run properly. 
+
+Reference  Block potentially unwanted applications with Microsoft Defender Antivirus | Microsoft Docs 
+
+### Attack Surface Reduction blocking Office plugin
+
+Description: Attack Surface Reduction (ASR) is not allowing our Office plugin to work when rule “Block all Office applications from creating child processes” is set to block mode 
+
+Troubleshooting steps: 
+
+Place machine in MDE Troubleshooting Mode. 
+
+Now log into the machine in question. 
+
 Launch an elevated PowerShell command prompt. 
 
 Type in the following and hit enter: 
 
-Set-mppreference -DisableRealtimeMonitoring $true 
+Set-MpPreference -AttackSurfaceReductionRules_Ids D4F940AB-401B-4EFC-AADC-AD5F3C50688A -AttackSurfaceReductionRules_Actions Disabled 
 
-After disabling RTP, check to see if the Application still exhibits the behavior in question. 
+After disabling this ASR Rule, confirm that the Office plugin now works.
 
-### 
+Reference  Overview of attack surface reduction | Microsoft Docs 
 
+### Domain blocked by Network Protection
 
+Description: Network Protection is blocking our domain, thus preventing users from accessing it. 
+
+Troubleshooting steps: 
+
+Place machine in MDE Troubleshooting Mode. 
+
+Now log into the machine in question. 
+
+Launch an elevated PowerShell command prompt. 
+
+Type in the following and hit enter: 
+
+Set-MpPreference -EnableNetworkProtection Disabled 
+
+After disabling Network Protection, check to see if the domain is now allowed. 
+
+Reference  Use network protection to help prevent connections to bad sites | Microsoft Docs 
 
