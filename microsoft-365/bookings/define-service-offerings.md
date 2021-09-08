@@ -89,25 +89,25 @@ You can also add customized information and URLs to the email confirmation and r
 
 7. **Custom fields** can be useful when collecting information that is needed every time the specific appointment is booked. Examples include insurance provider prior to a clinic visit, loan type for loan consultations, major of study for academic advising, or applicant ID for candidate interviews. These fields will appear on the Booking page when your customers book appointments with you and your staff.
 
-    - Customer email, phone number, address, and notes are non-removable fields, but you can make them optional by deselecting **Required** beside each field.
+   Customer email, phone number, address, and notes are non-removable fields, but you can make them optional by deselecting **Required** beside each field.
 
 8. On the **Reminders and Confirmations** page, you can set up reminders and notifications you send. Reminders and notifications are sent out to customers, staff members, or both, at a specified time before the appointment. Multiple messages can be created for each appointment, according to your preference.
 
-        :::image type="content" source="media/bookings-remind-confirm.jpg" alt-text="A confirmation email from Bookings.":::
+   :::image type="content" source="media/bookings-remind-confirm.jpg" alt-text="A confirmation email from Bookings.":::
 
-    - You can include any additional text you would like here, such as information about rescheduling or what customers should bring for the appointment. The following is an example of customized text added to the original confirmation email, seen in the **Additional information for Email Confirmation** field:
+   You can include any additional text you would like here, such as information about rescheduling or what customers should bring for the appointment. The following is an example of customized text added to the original confirmation email, seen in the **Additional information for Email Confirmation** field:
 
-        :::image type="content" source="media/bookings-additional-info.jpg" alt-text="Additional information in a Bookings email.":::
+   :::image type="content" source="media/bookings-additional-info.jpg" alt-text="Additional information in a Bookings email.":::
 
 9. **Enable text message notifications for your customer** If selected, SMS messages are sent to the customer, but only if they opt-in.
 
-    - Opt-in box on the manual booking and Self-Service Page:
+   - Opt-in box on the manual booking and Self-Service Page:
 
-        :::image type="content" source="media/bookings-opt-In-boc.jpg" alt-text="The opt-in box in Bookings.":::
+     :::image type="content" source="media/bookings-opt-In-boc.jpg" alt-text="The opt-in box in Bookings.":::
 
-    - Text message notifications will look like the following (note that SMS notifications are currently only available in North America):
+   - Text message notifications will look like the following (note that SMS notifications are currently only available in North America):
 
-        :::image type="content" source="media/bookings-text-notifications.jpg" alt-text="A text notification from Bookings.":::
+     :::image type="content" source="media/bookings-text-notifications.jpg" alt-text="A text notification from Bookings.":::
 
 10. The **Default scheduling options** is on by default. Turn the toggle off if you want to customize how customers book a particular staff member.
 
