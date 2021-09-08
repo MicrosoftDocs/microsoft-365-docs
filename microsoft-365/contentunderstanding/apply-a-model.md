@@ -82,6 +82,9 @@ While an applied model processes all files and folders uploaded to the document 
 
 3. The files and folders you selected will be added to the queue to be processed.
 
+    > [!NOTE]
+    > You'll receive a message indicating how long classification might take. If you've selected one or more files only, classification might take up to 30 minutes. If you've selected one or more folders, classification might take up to 24 hours.
+
 ### Classification Date field
 
 When a SharePoint Syntex document understanding or form processing model is applied to a document library, the **Classification Date** field is included in the library schema. By default, this field is empty. However, when documents are processed and classified by a model, this field is updated with a date-time stamp of completion. 
