@@ -35,9 +35,9 @@ Microsoft Defender for Endpoint troubleshooting mode allows you to troubleshoot 
 
 - Requirements:
 
-    - For troubleshooting mode to be applied, Endpoints must be tenant enrolled with sense active on the device.
+    - For troubleshooting mode to be applied, Microsoft Defender Endpoint must be tenant-enrolled and active on the device.
 
-    - Microsoft Defender Antivirus must be the active antivirus on the device.
+    - The device must be actively running Microsoft Defender Antivirus.
 
 - Use troubleshooting mode to disable/change the tamper protection setting to perform:
 
@@ -47,7 +47,7 @@ Microsoft Defender for Endpoint troubleshooting mode allows you to troubleshoot 
 
 - Local admins, with appropriate permissions, will be able to change configurations on individual endpoints that are normally locked by policy. Having a device in troubleshooting mode can be helpful when diagnosing Microsoft Defender Antivirus performance and compatibility issues.
 
-    - Local admins will not be able to turn off Microsoft Defender Antivirus or uninstall it.
+    - Local admins will not be able to turn off Microsoft Defender Antivirus, or uninstall it.
 
     - Local admins will be able to configure all other security settings in the Microsoft Defender Antivirus suite (for example, cloud protection, tamper protection).
 
@@ -61,7 +61,7 @@ Microsoft Defender for Endpoint troubleshooting mode allows you to troubleshoot 
 
     - Operational logs from during troubleshooting mode will also be collected.
 
-    - All the above logs and snapshots will be collected and will be available to the admin to collect using the **Collect investigation package** feature on the device page.
+    - All the above logs and snapshots will be collected and will be available to collect using the **Collect investigation package** feature on the device page.
 
 - Troubleshooting mode automatically turns off after reaching the expiration time (it lasts for 3 hours). After expiration, all policy-managed configurations will become read-only again and will revert back to how it was before setting the troubleshooting mode on.
 
@@ -94,5 +94,103 @@ Microsoft Defender for Endpoint troubleshooting mode allows you to troubleshoot 
 
 ## Use the troubleshooting mode
 
-### Scenario 1: Unable to install application on the device
+### Scenario 1: Unable to install application
+
+Description: 
+
+User wants to install application … and they receive an error message... 
+
+Machine is onboarded to MDATP (has Tamper protection on) and Microsoft Defender AV (RTP = on), ... 
+
+Troubleshoot steps: 
+
+On the machine with the problem request the SOC admin to turn on Troubleshoot mode 
+
+Observe Troubleshoot mode start (Windows Sec app notification) 
+
+Connect to the machine (using Terminal Services for example)as an IT help desk with Local Admin permissions  
+
+Start procmon ??? (see steps from Yong public doc reference) 
+
+Try installing the app .. as the  
+
+Launch Windows Sec app and Turn off Tamper protection 
+
+Windows security > Threat & virus protection > Manage settings > Tamper protection > off 
+
+Launch Powershell cmd elevated 
+
+Toggle RTP off  
+
+check RTP status - Run get-mppreference 
+
+Turn off RTP Run set –mppreference …. 
+
+Try installing the app .. as the 
+
+### Scenario 2: Windows Defender (MsMpEng.exe) causes high CPU
+
+Description:  Randomly or during a scheduled scan, MsMpEng.exe will consume/spike the CPU. 
+
+Troubleshooting steps: 
+
+Confirm that MsMpEng.exe is spiking the CPU with Task Manager | Details tab. 
+
+Check to see if a Scheduled Scan is currently running or not. 
+
+Download/run/capture Process Monitor log during the CPU spike for ~5 minutes. 
+
+Review Process Monitor log for clues as to what the MsMpEng.exe process is touching by filtering on the PATH column. 
+
+Once RCA is determined (whether we are scanning a busy process or file) place machine in MDE Troubleshooting Mode. 
+
+Log into the machine in question. 
+
+Launch an elevated PowerShell command prompt. 
+
+(Step 8 & 9 only needed if ‘DisableLocalAdminMerge’ is enabled on the device)  
+
+Request SOC admin to turn on Troubleshoot mode for the machine 
+
+Observe Troubleshoot mode start (Windows Sec app notification) 
+
+Add process/file/folder/extension exclusions based on Process Monitor findings using one of the following commands: 
+
+Set-mppreference -ExclusionPath C:\DB\DataFiles 
+
+Set-mppreference –ExclusionExtension .dbx 
+
+Set-mppreference –ExclusionProcess C:\DB\Bin\Convertdb.exe 
+
+After adding the exclusion in question, check to see if the CPU usage has dropped. 
+
+Reference  Set-MpPreference (Defender) | Microsoft Docs 
+
+### Scenario 3: Application takes a long time to perform an action
+
+Description: An application takes a long time to open/save/etc. When Real-time protection is enabled.  Need to turn off Real-time protection to troubleshoot issue. 
+
+Troubleshooting steps: 
+
+Request SOC admin to turn on Troubleshoot mode for the machine 
+
+To disable RTP for this scenario, you must turn off Tamper Protection first. 
+
+Please review this doc for more info:  Protect security settings with tamper protection | Microsoft Docs 
+
+Once Tamper Protection is disabled, place machine in MDE Troubleshooting Mode. 
+
+Now log into the machine in question. 
+
+Launch an elevated PowerShell command prompt. 
+
+Type in the following and hit enter: 
+
+Set-mppreference -DisableRealtimeMonitoring $true 
+
+After disabling RTP, check to see if the Application still exhibits the behavior in question. 
+
+### 
+
+
 
