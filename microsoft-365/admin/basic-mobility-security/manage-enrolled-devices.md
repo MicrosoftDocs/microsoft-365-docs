@@ -35,7 +35,7 @@ To get to the device management panel, follow these steps:
 
 2. Type Mobile Device Management into the search field, and select **Mobile Device Management** from the list of results.
 
-    :::image type="content" source="../../media/basic-mobility-security/bms-6-mobile-device-management-option.png" alt-text="Mobile device management option":::
+    :::image type="content" source="../../media/basic-mobility-security/bms-6-mobile-device-management-option.png" alt-text="Mobile device management option.":::
 
 3. Select  **Let's get started**.
 

@@ -74,7 +74,7 @@ Messages that are identified by the advanced delivery policy aren't security thr
 1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Advanced delivery** in the **Rules** section.
 
 2. On the **Advanced delivery** page, verify that the **SecOps mailbox** tab is selected, and then do one of the following steps:
-   - Click ![Edit icon](../../media/m365-cc-sc-edit-icon.png) **Edit**.
+   - Click ![Edit icon.](../../media/m365-cc-sc-edit-icon.png) **Edit**.
    - If there are no configured phishing simulations, click **Add**.
 
 3. On the **Edit SecOps mailboxes** flyout that opens, enter an existing Exchange Online mailbox that you want to designate as SecOps mailbox by doing one of the following steps:
@@ -83,18 +83,18 @@ Messages that are identified by the advanced delivery policy aren't security thr
 
      Repeat this step as many times as necessary. Distribution groups are not allowed.
 
-     To remove an existing value, click remove ![Remove icon](../../media/m365-cc-sc-remove-selection-icon.png) next to the value.
+     To remove an existing value, click remove ![Remove icon.](../../media/m365-cc-sc-remove-selection-icon.png) next to the value.
 
 4. When you're finished, click **Save**.
 
-The SecOps mailbox entries that you configured are displayed on the **SecOps mailbox** tab. To make changes, click ![Edit icon](../../media/m365-cc-sc-edit-icon.png) **Edit** on the tab.
+The SecOps mailbox entries that you configured are displayed on the **SecOps mailbox** tab. To make changes, click ![Edit icon.](../../media/m365-cc-sc-edit-icon.png) **Edit** on the tab.
 
 ## Use the Microsoft 365 Defender portal to configure third-party phishing simulations in the advanced delivery policy
 
 1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Advanced delivery** in the **Rules** section.
 
 2. On the **Advanced delivery** page, select the **Phishing simulation** tab, and then do one of the following steps:
-   - Click ![Edit icon](../../media/m365-cc-sc-edit-icon.png) **Edit**.
+   - Click ![Edit icon.](../../media/m365-cc-sc-edit-icon.png) **Edit**.
    - If there are no configured phishing simulations, click **Add**.
 
 3. On the **Edit third-party phishing simulation** flyout that opens, configure the following settings:
@@ -110,7 +110,7 @@ The SecOps mailbox entries that you configured are displayed on the **SecOps mai
      - CIDR IP: For example, 192.168.0.1/25.
    - **Simulation URLs to allow**: Expand this setting and optionally enter specific URLs that are part of your phishing simulation campaign that should not be blocked or detonated by clicking in the box, entering a value, and then pressing Enter or selecting the value that's displayed below the box. You can add up to 10 entries. For the URL syntax format, see [URL syntax for the Tenant Allow/Block List](tenant-allow-block-list.md#url-syntax-for-the-tenant-allowblock-list).
 
-   To remove an existing value, click remove ![Remove icon](../../media/m365-cc-sc-remove-selection-icon.png) next to the value.
+   To remove an existing value, click remove ![Remove icon.](../../media/m365-cc-sc-remove-selection-icon.png) next to the value.
 
    > [!NOTE]
    > You must specify at least one **Sending domain** and at least one **Sending IP** to configure a third-party phishing simulation in Advanced Delivery. You may optionally include **Simulation URLs to allow** to ensure URLs present in simulation messages are not blocked. You may specify up to 10 entries for each field. There must be a match on at least one **Sending domain** and one **Sending IP** but no association between values is maintained.
@@ -119,7 +119,7 @@ The SecOps mailbox entries that you configured are displayed on the **SecOps mai
    - **First time**: Click **Add**, and then click **Close**.
    - **Edit existing**: Click **Save** and then click **Close**.
 
-The third-party phishing simulation entries that you configured are displayed on the **Phishing simulation** tab. To make changes, click ![Edit icon](../../media/m365-cc-sc-edit-icon.png) **Edit** on the tab.
+The third-party phishing simulation entries that you configured are displayed on the **Phishing simulation** tab. To make changes, click ![Edit icon.](../../media/m365-cc-sc-edit-icon.png) **Edit** on the tab.
 
 ## Additional scenarios that require filtering bypass
 
@@ -157,7 +157,8 @@ To create the SecOps override policy, use the following syntax:
 New-SecOpsOverridePolicy -Name SecOpsOverridePolicy -SentTo <EmailAddress1>,<EmailAddress2>,...<EmailAddressN>
 ```
 
-**Note**: Regardless of the Name value you specify, the policy name will be SecOpsOverridePolicy, so you might as well use that value.
+> [!NOTE]
+> Regardless of the Name value you specify, the policy name will be _SecOpsOverridePolicy_, so you might as well use that value.
 
 This example creates the SecOps mailbox policy.
 
@@ -175,7 +176,8 @@ This example creates the SecOps mailbox rule with the specified settings.
 New-SecOpsOverrideRule -Name SecOpsOverrideRule -Policy SecOpsOverridePolicy
 ```
 
-**Note**: Regardless of the Name value you specify, the rule name will be SecOpsOverrideRule\<GUID\> where \<GUID\> is a unique GUID value (for example, 6fed4b63-3563-495d-a481-b24a311f8329).
+> [!NOTE]
+> Regardless of the Name value you specify, the rule name will be _SecOpsOverrideRule_\<GUID\> where \<GUID\> is a unique GUID value (for example, 6fed4b63-3563-495d-a481-b24a311f8329).
 
 For detailed syntax and parameter information, see [New-SecOpsOverrideRule](/powershell/module/exchange/new-secopsoverriderule).
 
@@ -207,7 +209,7 @@ Get-SecOpsOverrideRule | Format-Table Name,Mode
 
 After you identify the invalid rules, you can remove them by using the **Remove-SecOpsOverrideRule** cmdlet as described [later in this article](#use-powershell-to-remove-secops-override-rules).
 
-For detailed syntax and parameter information, see [Get-SecOpsOverrideRule](/powershell/module/exchange/get-secopsoverriderule)
+For detailed syntax and parameter information, see [Get-SecOpsOverrideRule](/powershell/module/exchange/get-secopsoverriderule).
 
 ### Use PowerShell to modify the SecOps override policy
 
@@ -217,13 +219,14 @@ To modify the SecOps override policy, use the following syntax:
 Set-SecOpsOverridePolicy -Identity SecOpsOverridePolicy [-AddSentTo <EmailAddress1>,<EmailAddress2>,...<EmailAddressN>] [-RemoveSentTo <EmailAddress1>,<EmailAddress2>,...<EmailAddressN>]
 ```
 
-This example adds secops2@contoso.com to the SecOps override policy.
+This example adds `secops2@contoso.com` to the SecOps override policy.
 
 ```powershell
 Set-SecOpsOverridePolicy -Identity SecOpsOverridePolicy -AddSentTo secops2@contoso.com
 ```
 
-**Note**: If an associated, valid SecOps override rule exists, the email addresses in the rule will also be updated.
+> [!NOTE]
+> If an associated, valid SecOps override rule exists, the email addresses in the rule will also be updated.
 
 For detailed syntax and parameter information, see [Set-SecOpsOverridePolicy](/powershell/module/exchange/set-secopsoverridepolicy).
 
@@ -292,7 +295,7 @@ This example creates the phishing simulation override policy.
 New-PhishSimOverridePolicy -Name PhishSimOverridePolicy
 ```
 
-**Note**: Regardless of the Name value you specify, the policy name will be PhishSimOverridePolicy, so you might as well use that value.
+**Note**: Regardless of the Name value you specify, the policy name will be _PhishSimOverridePolicy_, so you might as well use that value.
 
 For detailed syntax and parameter information, see [New-PhishSimOverridePolicy](/powershell/module/exchange/new-phishsimoverridepolicy).
 
@@ -304,7 +307,7 @@ Use the following syntax:
 New-PhishSimOverrideRule -Name PhishSimOverrideRule -Policy PhishSimOverridePolicy -SenderDomainIs <Domain1>,<Domain2>,...<DomainN> -SenderIpRanges <IPAddressEntry1>,<IPAddressEntry2>,...<IPAddressEntryN>
 ```
 
-Regardless of the Name value you specify, the rule name will be PhishSimOverrideRule\<GUID\> where \<GUID\> is a unique GUID value (for example, a0eae53e-d755-4a42-9320-b9c6b55c5011).
+Regardless of the Name value you specify, the rule name will be _PhishSimOverrideRule_\<GUID\> where \<GUID\> is a unique GUID value (for example, a0eae53e-d755-4a42-9320-b9c6b55c5011).
 
 A valid IP address entry is one of the following values:
 

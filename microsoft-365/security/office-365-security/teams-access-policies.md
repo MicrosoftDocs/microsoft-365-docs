@@ -44,7 +44,7 @@ You don't need to enable dependent services to get started with Microsoft Teams.
 
 To protect chat, groups and content in Teams, the following diagram illustrates which policies to update from the the common identity and device access policies. For each policy to update, make sure that Teams and dependent services are included in the assignment of cloud apps.
 
-[![Summary of policy updates for protecting access to Teams and its dependent services](../../media/microsoft-365-policies-configurations/identity-access-ruleset-teams.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-ruleset-teams.png)
+[![Summary of policy updates for protecting access to Teams and its dependent services.](../../media/microsoft-365-policies-configurations/identity-access-ruleset-teams.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-ruleset-teams.png)
 
 These services are the dependent services to include in the assignment of cloud apps for Teams:
 
@@ -74,7 +74,7 @@ This table lists the policies that need to be revisited and links to each policy
 
 For reference, the following diagram illustrates the services Teams relies on. For more information and illustrations, see [Microsoft Teams and related productivity services in Microsoft 365 for IT architects](../../solutions/productivity-illustrations.md).
 
-[![Diagram showing Teams dependencies on SharePoint, OneDrive for Business, and Exchange](../../media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png)
+[![Diagram showing Teams dependencies on SharePoint, OneDrive for Business, and Exchange.](../../media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png)
 
 [See a larger version of this image](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png)
 
@@ -139,7 +139,7 @@ For more reading about App Permission Policies, check out [Manage app permission
 
 ## Next steps
 
-![Step 4: Policies for Microsoft 365 cloud apps](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
+![Step 4: Policies for Microsoft 365 cloud apps.](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
 
 Configure Conditional Access policies for:
 

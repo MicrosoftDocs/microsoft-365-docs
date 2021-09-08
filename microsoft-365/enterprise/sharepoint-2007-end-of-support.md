@@ -114,7 +114,7 @@ You can't migrate directly from SharePoint 2007 to SharePoint Online. Your move 
 |**Online pro**|**Online con**|
 |:-----|:-----|
 |Microsoft supplies SPO hardware and all hardware administration.  <br/> |Available features may differ between SharePoint Server on-premises and SPO.  <br/> |
-|You're the global administrator of your subscription and can assign administrators to SPO sites.  <br/> |Some actions available to a farm administrator in SharePoint Server on-premises don't exist or aren't necessarily included in the SharePoint Administrator role in Microsoft 365.  <br/> |
+|You're the Sharepoint admin or global admin of your subscription and can assign administrators to SPO sites.  <br/> |Some actions available to a farm administrator in SharePoint Server on-premises don't exist or aren't necessarily included in the SharePoint Administrator role in Microsoft 365.  <br/> |
 |Microsoft applies patches, fixes, and updates to underlying hardware and software. <br/> |Because there's no access to the underlying file system in the service, customization is limited.  <br/> |
 |Microsoft publishes [Service level agreements](/office365/servicedescriptions/office-365-platform-service-description/service-level-agreement) and moves quickly to resolve service-level incidents. <br/> |Backup and restore and other recovery options are automated by the service in SharePoint Online. Backups are overwritten if not used. <br/> |
 |Security testing and server performance tuning are carried out on an ongoing basis in the service by Microsoft. <br/> |Changes to the user interface and other SharePoint features are installed by the service and may need to be toggled on or off. <br/> |

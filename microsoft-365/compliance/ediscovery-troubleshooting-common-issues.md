@@ -55,7 +55,7 @@ Check for duplicate users or distribution list with the same user ID.
 
 An eDiscovery or content search may yield the following error: `This search completed with (#) errors.  Would you like to retry the search on the failed locations?`
 
-![Search-specific location fails error screenshot](../media/edisc-tshoot-specific-location-search-fails.png)
+![Search-specific location fails error screenshot.](../media/edisc-tshoot-specific-location-search-fails.png)
 
 ### Resolution
 
@@ -91,9 +91,9 @@ When running an eDiscovery search that includes SharePoint Online and OneDrive f
 You may see that error when running an eDiscovery search that includes SharePoint Online and OneDrive for Business locations. eDiscovery relies on the SPO index to identify the file locations. If the file was deleted but the SPO index was not yet updated this error may occur.
 
 ### Resolution 
+
 Open the SPO location and verify that this file indeed is not there.
 Suggested solution is to manually reindex the site, or wait until the site reindexes by the automatic background process.
-
 
 ## Error/issue: This search result was not downloaded as it is a folder or other artifact that can't be downloaded by itself, any items inside the folder or library will be downloaded.
 
@@ -114,6 +114,16 @@ An eDiscovery search fails with error the `recipient not found`. This error may 
    ```
 
 3. There should be a mail user object for the user question. If nothing is returned, investigate the user object. Contact Microsoft Support if the object can't be synced.
+
+## Issue/Error: Search fails with error CS007
+
+When performing a Content search or a search associated with a Core eDiscovery case, a transient error occurs and the search fails with a CS007 error.
+
+### Resolution
+
+1. Update the search and reduce the complexity of the search query.  For example, a wildcard search may return too many results for the system to process, which causes a CS007 error.
+
+2. Rerun the updated search.
 
 ## Error/issue: Exporting search results is slow
 
@@ -155,7 +165,7 @@ When exporting search results from Core eDiscovery or Content search in the Micr
 
 When running an eDiscovery search, if the search continually fails with error similar to "Internal server error (500) occurred", you may need rerun the search only on specific mailbox locations.
 
-![Internal server error 500 screenshot](../media/edisc-tshoot-error-500.png)
+![Internal server error 500 screenshot.](../media/edisc-tshoot-error-500.png)
 
 ### Resolution
 

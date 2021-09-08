@@ -32,7 +32,7 @@ For quite some time, VPN models where all connections from the remote user devic
 
 The use of forced tunneled VPNs for connecting to distributed and performance-sensitive cloud applications is suboptimal, but the negative effect of that may have been accepted by some enterprises so as to maintain the status quo from a security perspective. An example diagram of this scenario can be seen below:
 
-![Split Tunnel VPN configuration](../media/vpn-split-tunneling/enterprise-network-traditional.png)
+![Split Tunnel VPN configuration.](../media/vpn-split-tunneling/enterprise-network-traditional.png)
 
 This problem has been growing for many years, with many customers reporting a significant shift of network traffic patterns. Traffic that used to stay on premises now connects to external cloud endpoints. Numerous Microsoft customers report that previously, around 80% of their network traffic was to some internal source (represented by the dotted line in the above diagram). In 2020 that number is now around 20% or lower as they have shifted major workloads to the cloud, these trends are not uncommon with other enterprises. Over time, as the cloud journey progresses, the above model becomes increasingly cumbersome and unsustainable, preventing an organization from being agile as they move into a cloud first world.
 
@@ -58,31 +58,31 @@ In the list below you'll see the most common VPN scenarios seen in enterprise en
 
 This is the most common starting scenario for most enterprise customers. A forced VPN is used, which means 100% of traffic is directed into the corporate network regardless of the fact the endpoint resides within the corporate network or not. Any external (Internet) bound traffic such as Office 365 or Internet browsing is then hair-pinned back out of the on premises security equipment such as proxies. In the current climate with nearly 100% of users working remotely, this model therefore puts high load on the VPN infrastructure and is likely to significantly hinder performance of all corporate traffic and thus the enterprise to operate efficiently at a time of crisis.
 
-![VPN Forced Tunnel model 1](../media/vpn-split-tunneling/vpn-model-1.png)
+![VPN Forced Tunnel model 1.](../media/vpn-split-tunneling/vpn-model-1.png)
 
 ### 2. VPN Forced Tunnel with a small number of trusted exceptions
 
 This model is significantly more efficient for an enterprise to operate under as it allows a few controlled and defined endpoints that are very high load and latency sensitive to bypass the VPN tunnel and go direct to the Office 365 service in this example. This significantly improves the performance for the offloaded services, and also decreases the load on the VPN infrastructure, thus allowing elements that still require it to operate with lower contention for resources. It is this model that this article concentrates on assisting with the transition to as it allows for simple, defined actions to be taken quickly with numerous positive outcomes.
 
-![Split Tunnel VPN model 2](../media/vpn-split-tunneling/vpn-model-2.png)
+![Split Tunnel VPN model 2.](../media/vpn-split-tunneling/vpn-model-2.png)
 
 ### 3. VPN Forced Tunnel with broad exceptions
 
 The third model broadens the scope of model two as rather than just sending a small group of defined endpoints direct, it instead sends all traffic directly to trusted services such Office 365 and SalesForce. This further reduces the load on the corporate VPN infrastructure and improves the performance of the services defined. As this model is likely to take more time to assess the feasibility of and implement, it is likely a step that can be taken iteratively at a later date once model two is successfully in place.
 
-![Split Tunnel VPN model 3](../media/vpn-split-tunneling/vpn-model-3.png)
+![Split Tunnel VPN model 3.](../media/vpn-split-tunneling/vpn-model-3.png)
 
 ### 4. VPN selective Tunnel
 
 This model reverses the third model in that only traffic identified as having a corporate IP address is sent down the VPN tunnel and thus the Internet path is the default route for everything else. This model requires an organization to be well on the path to [Zero Trust](https://www.microsoft.com/security/zero-trust?rtc=1) in able to safely implement this model. It should be noted that this model or some variation thereof will likely become the necessary default over time as more and more services move away from the corporate network and into the cloud. Microsoft uses this model internally; you can find more information on Microsoft's implementation of VPN split tunneling at [Running on VPN: How Microsoft is keeping its remote workforce connected](https://www.microsoft.com/itshowcase/blog/running-on-vpn-how-microsoft-is-keeping-its-remote-workforce-connected/?elevate-lv).
 
-![Split Tunnel VPN model 4](../media/vpn-split-tunneling/vpn-model-4.png)
+![Split Tunnel VPN model 4.](../media/vpn-split-tunneling/vpn-model-4.png)
 
 ### 5. No VPN
 
 A more advanced version of model number two, whereby any internal services are published through a modern security approach or SDWAN solution such as Azure AD Proxy, MCAS, Zscaler ZPA, etc.
 
-![Split Tunnel VPN model 5](../media/vpn-split-tunneling/vpn-model-5.png)
+![Split Tunnel VPN model 5.](../media/vpn-split-tunneling/vpn-model-5.png)
 
 ## Implement VPN split tunneling
 
@@ -90,7 +90,7 @@ In this section, you'll find the simple steps required to migrate your VPN clien
 
 The diagram below illustrates how the recommended VPN split tunnel solution works:
 
-![Split tunnel VPN solution detail](../media/vpn-split-tunneling/vpn-split-tunnel-example.png)
+![Split tunnel VPN solution detail.](../media/vpn-split-tunneling/vpn-split-tunnel-example.png)
 
 ### 1. Identify the endpoints to optimize
 
@@ -167,7 +167,7 @@ In the above script, _$intIndex_ is the index of the interface connected to the 
 
 Once you have added the routes, you can confirm that the route table is correct by running **route print** in a command prompt or PowerShell. The output should contain the routes you added, showing the interface index (_22_ in this example) and the gateway for that interface (_192.168.1.1_ in this example):
 
-![Route print output](../media/vpn-split-tunneling/vpn-route-print.png)
+![Route print output.](../media/vpn-split-tunneling/vpn-route-print.png)
 
 To add routes for _all_ current IP address ranges in the Optimize category, you can use the following script variation to query the [Office 365 IP and URL web service](microsoft-365-ip-web-service.md) for the current set of Optimize IP subnets and add them to the route table.
 
@@ -254,7 +254,7 @@ Once the policy is in place, you should confirm it is working as expected. There
 
 ### Additional support logs
 
-If you need further data to troubleshoot, or are requesting assistance from Microsoft support, obtaining the following information should allow you to expedite finding a solution. Microsoft support's **TSS Windows CMD-based universal TroubleShooting Script toolset** can help you to collect the relevant logs in a simple manner. The tool and instructions on use can be found at <https://aka.ms/TssTools.>
+If you need further data to troubleshoot, or are requesting assistance from Microsoft support, obtaining the following information should allow you to expedite finding a solution. Microsoft support's **TSS Windows CMD-based universal TroubleShooting Script toolset** can help you to collect the relevant logs in a simple manner. The tool and instructions on use can be found at <https://aka.ms/TssTools>.
 
 ## HOWTO guides for common VPN platforms
 

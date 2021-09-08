@@ -28,7 +28,7 @@ f1.keywords: NOCSH
 
 3. This will onboard your package to the Test Base environment. If your package is successfully created, an automated test which verifies whether your package can be successfully executed on Azure will be triggered.
 
-    ![Successful result](Media/successful.png)
+    ![Successful result.](Media/successful.png)
 
     > [!NOTE]
     > You will get a notification from the Azure portal to notify you on the success or failure of the package verification.

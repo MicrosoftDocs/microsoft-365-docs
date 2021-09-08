@@ -55,7 +55,7 @@ You view and manage quarantined messages in the Microsoft 365 Defender portal or
 
   - Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
   - The **View-Only Organization Management** role group in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) also gives read-only access to the feature.
-  - <sup>\*</sup> Members of the **Quarantine Administrator** role group also need to be members of the **Hygiene Management** role group in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) in order to do quarantine procedures in Exchange Online PowerShell.
+  - <sup>\*</sup> Members of the **Quarantine Administrator** role group in **Email & collaboration** roles in the [Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md#email--collaboration-roles-in-the-microsoft-365-defender-portal) also need to be members of the **Hygiene Management** role group in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) to do quarantine procedures in Exchange Online PowerShell.
 
 - Quarantined messages are retained for a default period of time before they're automatically deleted:
   - 30 days for messages quarantined by anti-spam policies (spam, phishing, and bulk email). This is the default and maximum value. To configure (lower) this value, see [Configure anti-spam policies](configure-your-spam-filter-policies.md).
@@ -125,7 +125,7 @@ You view and manage quarantined messages in the Microsoft 365 Defender portal or
      - **Anti-spam policy**
      - **Transport rule** (mail flow rule)
 
-   When you're finished, click **Apply**. To clear the filters, click ![Clear filters icon](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters**.
+   When you're finished, click **Apply**. To clear the filters, click ![Clear filters icon.](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters**.
 
 5. Use **Search** box and a corresponding value to find specific messages. Wildcards aren't supported. You can search by the following values:
    - Message ID
@@ -142,7 +142,7 @@ After you find a specific quarantined message, select the message to view detail
 
 When you select quarantined message from the list, the following information is available in the details flyout that appears.
 
-![The details flyout of a quarantined message](../../media/quarantine-message-details-flyout.png)
+![The details flyout of a quarantined message.](../../media/quarantine-message-details-flyout.png)
 
 - **Message ID**: The globally unique identifier for the message. Available in the **Message-ID** header field in the message header.
 - **Sender address**
@@ -163,15 +163,15 @@ To take action on the message, see the next section.
 > [!NOTE]
 > To remain in the details flyout, but change the quarantined message that you're looking at, use the up and down arrows at the top of the flyout.
 >
-> ![The up and down arrows in the details flyout of a quarantined message](../../media/quarantine-message-details-flyout-up-down-arrows.png)
+> ![The up and down arrows in the details flyout of a quarantined message.](../../media/quarantine-message-details-flyout-up-down-arrows.png)
 
 ### Take action on quarantined email
 
 After you select a quarantined message from the list, the following actions are available in the details flyout:
 
-![Available actions in the details flyout of a quarantined message](../../media/quarantine-message-details-flyout-actions.png)
+![Available actions in the details flyout of a quarantined message.](../../media/quarantine-message-details-flyout-actions.png)
 
-- ![Release email icon](../../media/m365-cc-sc-check-mark-icon.png) **Release email**<sup>\*</sup>: In the flyout pane that appears, configure the following options:
+- ![Release email icon.](../../media/m365-cc-sc-check-mark-icon.png) **Release email**<sup>\*</sup>: In the flyout pane that appears, configure the following options:
   - **Add sender to your organization's allow list**: Select this option to prevent messages from the sender from being quarantined.
   - Choose one of the following options:
     - **Release to all recipients**
@@ -183,7 +183,7 @@ After you select a quarantined message from the list, the following actions are 
 
   - **Submit the message to Microsoft to improve detection (false positive)**: This option is selected by default, and reports the erroneously quarantined message to Microsoft as a false positive. If the message was quarantined as spam, bulk, phishing, or containing malware, the message is also reported to the Microsoft Spam Analysis Team. Depending on the results of their analysis, the service-wide spam filter rules might be adjusted to allow the message through.
 
-  - **Allow messages like this**: This option is turned off by default (![Toggle off](../../media/scc-toggle-off.png)). Turn it on (![Toggle on](../../media/scc-toggle-on.png)) to temporarily prevent messages with similar URLs, attachments, and other properties from being quarantined. When you turn this option on, the following options are available:
+  - **Allow messages like this**: This option is turned off by default (![Toggle off.](../../media/scc-toggle-off.png)). Turn it on (![Toggle on](../../media/scc-toggle-on.png)) to temporarily prevent messages with similar URLs, attachments, and other properties from being quarantined. When you turn this option on, the following options are available:
     - **Remove after**: Select how long you want to allow messages like this. Select **1 day** to **30 days**. The default is 30.
     - **Optional note**: Enter a useful description for the allow.
 
@@ -194,23 +194,23 @@ After you select a quarantined message from the list, the following actions are 
   - You can't release a message to the same recipient more than once.
   - Only recipients who haven't received the message will appear in the list of potential recipients.
 
-- ![View message headers icon](../../media/m365-cc-sc-eye-icon.png) **View message headers**: Choose this link to see the message header text. The **Message header** flyout appears with the following links:
+- ![View message headers icon.](../../media/m365-cc-sc-eye-icon.png) **View message headers**: Choose this link to see the message header text. The **Message header** flyout appears with the following links:
 - **Copy message header**: Click this link to copy the message header (all header fields) to your clipboard.
 - **Microsoft Message Header Analyzer**: To analyze the header fields and values in depth, click this link to go to the Message Header Analyzer. Paste the message header into the **Insert the message header you would like to analyze** section (CTRL+V or right-click and choose **Paste**), and then click **Analyze headers**.
 
-The following actions are available after you click ![More actions icon](../../media/m365-cc-sc-more-actions-icon.png) **More actions**:
+The following actions are available after you click ![More actions icon.](../../media/m365-cc-sc-more-actions-icon.png) **More actions**:
 
-- ![Preview message icon](../../media/m365-cc-sc-eye-icon.png) **Preview message**: In the flyout that appears, choose one of the following tabs:
+- ![Preview message icon.](../../media/m365-cc-sc-eye-icon.png) **Preview message**: In the flyout that appears, choose one of the following tabs:
   - **Source**: Shows the HTML version of the message body with all links disabled.
   - **Plain text**: Shows the message body in plain text.
 
-- ![Remove from quarantine icon](../../media/m365-cc-sc-delete-icon.png) **Remove from quarantine**: After you click **Yes** in the warning that appears, the message is immediately deleted without being sent to the original recipients.
+- ![Remove from quarantine icon.](../../media/m365-cc-sc-delete-icon.png) **Remove from quarantine**: After you click **Yes** in the warning that appears, the message is immediately deleted without being sent to the original recipients.
 
-- ![Download email icon](../../media/m365-cc-sc-download-icon.png) **Download email**: In the flyout that appears, select **I understand the risks from downloading this message**, and then click **Download** to save a local copy of the message in .eml format.
+- ![Download email icon.](../../media/m365-cc-sc-download-icon.png) **Download email**: In the flyout that appears, select **I understand the risks from downloading this message**, and then click **Download** to save a local copy of the message in .eml format.
 
-- ![Block sender icon](../../media/m365-cc-sc-block-sender-icon.png) **Block sender**: Add the sender to the Blocked Senders list in **your** mailbox. For more information, see [Block a mail sender](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4).
+- ![Block sender icon.](../../media/m365-cc-sc-block-sender-icon.png) **Block sender**: Add the sender to the Blocked Senders list in **your** mailbox. For more information, see [Block a mail sender](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4).
 
-- ![Submit only icon](../../media/m365-cc-sc-create-icon.png) **Submit only**: Reports the message to Microsoft for analysis. In the flyout that appears, choose the following options:
+- ![Submit only icon.](../../media/m365-cc-sc-create-icon.png) **Submit only**: Reports the message to Microsoft for analysis. In the flyout that appears, choose the following options:
   - **Select the submission type**: **Email** (default), **URL**, or **File**.
   - **Add the network message ID or upload the email file**: Select one of the following options:
     - **Add the email network message ID** (default, with the corresponding value in the box)
@@ -218,7 +218,7 @@ The following actions are available after you click ![More actions icon](../../m
   - **Choose a recipient who had an issue**: Select one (preferred) or more original recipients of the message to analyze the policies that were applied to them.
   - **Select a reason for submitting to Microsoft**: Choose one of the following options:
     - **Should not have been blocked (false positive)** (default): The following options are available:
-      - **Allow messages like this**: This option is turned off by default (![Toggle off](../../media/scc-toggle-off.png)). Turn it on (![Toggle on](../../media/scc-toggle-on.png)) to temporarily prevent messages with similar URLs, attachments, and other properties from being quarantined. When you turn this option on, the following options are available:
+      - **Allow messages like this**: This option is turned off by default (![Toggle off.](../../media/scc-toggle-off.png)). Turn it on (![Toggle on](../../media/scc-toggle-on.png)) to temporarily prevent messages with similar URLs, attachments, and other properties from being quarantined. When you turn this option on, the following options are available:
         - **Remove after**: Select how long you want to allow messages like this. Select **1 day** to **30 days**. The default is 30.
         - **Optional note**: Enter a useful description for the allow.
     - **Should have been blocked (false negative)**.
@@ -232,27 +232,27 @@ If you don't release or remove the message, it will be deleted after the default
 > [!NOTE]
 > On a mobile device, the description text isn't available on the action icons.
 >
-> ![Details of a quarantined message with available actions highlighted](../../media/quarantine-message-details-flyout-mobile-actions.png)
+> ![Details of a quarantined message with available actions highlighted.](../../media/quarantine-message-details-flyout-mobile-actions.png)
 >
 > The icons in order and their corresponding descriptions are summarized in the following table:
 >
 > |Icon|Description|
 > |---:|---|
-> |![Release email icon](../../media/m365-cc-sc-check-mark-icon.png)|**Release email**|
-> |![View message headers icon](../../media/m365-cc-sc-eye-icon.png)|**View message headers**|
-> |![Preview message icon](../../media/m365-cc-sc-eye-icon.png)|**Preview message**|
-> |![Remove from quarantine icon](../../media/m365-cc-sc-delete-icon.png)|**Remove from quarantine**|
-> |![Download email icon](../../media/m365-cc-sc-download-icon.png)|**Download email**|
-> |![Block sender icon](../../media/m365-cc-sc-block-sender-icon.png)|**Block sender**|
-> |![Submit only icon](../../media/m365-cc-sc-create-icon.png)|**Submit only**|
+> |![Release email icon.](../../media/m365-cc-sc-check-mark-icon.png)|**Release email**|
+> |![View message headers icon.](../../media/m365-cc-sc-eye-icon.png)|**View message headers**|
+> |![Preview message icon.](../../media/m365-cc-sc-eye-icon.png)|**Preview message**|
+> |![Remove from quarantine icon.](../../media/m365-cc-sc-delete-icon.png)|**Remove from quarantine**|
+> |![Download email icon.](../../media/m365-cc-sc-download-icon.png)|**Download email**|
+> |![Block sender icon.](../../media/m365-cc-sc-block-sender-icon.png)|**Block sender**|
+> |![Submit only icon.](../../media/m365-cc-sc-create-icon.png)|**Submit only**|
 
 #### Take action on multiple quarantined email messages
 
 When you select multiple quarantined messages in the list (up to 100) by clicking in the blank area to the left of the first column, the **Bulk actions** drop down list appears where you can take the following actions:
 
-![Bulk actions drop down list for messages in quarantine](../../media/quarantine-message-bulk-actions.png)
+![Bulk actions drop down list for messages in quarantine.](../../media/quarantine-message-bulk-actions.png)
 
-- ![Release email icon](../../media/m365-cc-sc-check-mark-icon.png) **Release messages**: Releases messages to all recipients. In the flyout that appears, you can choose the following options, which are the same as when you release a single message:
+- ![Release email icon.](../../media/m365-cc-sc-check-mark-icon.png) **Release messages**: Releases messages to all recipients. In the flyout that appears, you can choose the following options, which are the same as when you release a single message:
   - **Add sender to your organization's allow list**
   - **Send a copy of this message to other recipients**
   - **Submit the message to Microsoft to improve detection (false positive)**
@@ -265,9 +265,9 @@ When you select multiple quarantined messages in the list (up to 100) by clickin
   > [!NOTE]
   > Consider the following scenario: john@gmail.com sends a message to faith@contoso.com and john@subsidiary.contoso.com. Gmail bifurcates this message into two copies that are both routed to quarantine as phishing in Microsoft. An admin releases both of these messages to admin@contoso.com. The first released message that reaches the admin mailbox is delivered. The second released message is identified as duplicate delivery and is skipped. Message are identified as duplicates if they have the same message ID and received time.
 
-- ![Remove from quarantine icon](../../media/m365-cc-sc-delete-icon.png) **Delete messages**:  After you click **Yes** in the warning that appears, the messages are immediately removed from quarantine without being sent to the original recipients.
-- ![Download email icon](../../media/m365-cc-sc-download-icon.png) **Download messages**
-- ![Submit only icon](../../media/m365-cc-sc-create-icon.png) **Submit only**
+- ![Remove from quarantine icon.](../../media/m365-cc-sc-delete-icon.png) **Delete messages**:  After you click **Yes** in the warning that appears, the messages are immediately removed from quarantine without being sent to the original recipients.
+- ![Download email icon.](../../media/m365-cc-sc-download-icon.png) **Download messages**
+- ![Submit only icon.](../../media/m365-cc-sc-create-icon.png) **Submit only**
 
 ## Use the Microsoft 365 Defender portal to manage quarantined files in Defender for Office 365
 
@@ -308,7 +308,7 @@ After you find a specific quarantined file, select the file to view details abou
 
 When you select a quarantined file from the list, the following information is available in the details flyout that opens:
 
-![The details flyout of a quarantined file](../../media/quarantine-file-details-flyout.png)
+![The details flyout of a quarantined file.](../../media/quarantine-file-details-flyout.png)
 
 - **File Name**
 - **File URL**: URL that defines the location of the file (for example, in SharePoint Online).
@@ -329,18 +329,18 @@ To take action on the file, see the next section.
 > [!NOTE]
 > To remain in the details flyout, but change the quarantined file that you're looking at, use the up and down arrows at the top of the flyout.
 >
-> ![The up and down arrows in the details flyout of a quarantined file](../../media/quarantine-file-details-flyout-up-down-arrows.png)
+> ![The up and down arrows in the details flyout of a quarantined file.](../../media/quarantine-file-details-flyout-up-down-arrows.png)
 
 ### Take action on quarantined files
 
 After you select a quarantined file from the list, the following actions are available in the details flyout:
 
-![Available actions in the details flyout of a quarantined file](../../media/quarantine-file-details-flyout-actions.png)
+![Available actions in the details flyout of a quarantined file.](../../media/quarantine-file-details-flyout-actions.png)
 
-- ![Release file icon](../../media/m365-cc-sc-check-mark-icon.png) **Release file**<sup>\*</sup>: In the flyout pane that appears, turn on or turn off **Report files to Microsoft for analysis**, and then click **Release**.
-- ![Download file icon](../../media/m365-cc-sc-download-icon.png) **Download file**: In the flyout that appears, select **I understand the risks from downloading this file**, and then click **Download** to save a local copy of the file.
-- ![Remove from quarantine icon](../../media/m365-cc-sc-delete-icon.png) **Remove from quarantine**: After you click **Yes** in the warning that appears, the file is immediately deleted.
-- ![Block sender icon](../../media/m365-cc-sc-block-sender-icon.png) **Block sender**: Add the sender to the Blocked Senders list in **your** mailbox. For more information, see [Block a mail sender](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4).
+- ![Release file icon.](../../media/m365-cc-sc-check-mark-icon.png) **Release file**<sup>\*</sup>: In the flyout pane that appears, turn on or turn off **Report files to Microsoft for analysis**, and then click **Release**.
+- ![Download file icon.](../../media/m365-cc-sc-download-icon.png) **Download file**: In the flyout that appears, select **I understand the risks from downloading this file**, and then click **Download** to save a local copy of the file.
+- ![Remove from quarantine icon.](../../media/m365-cc-sc-delete-icon.png) **Remove from quarantine**: After you click **Yes** in the warning that appears, the file is immediately deleted.
+- ![Block sender icon.](../../media/m365-cc-sc-block-sender-icon.png) **Block sender**: Add the sender to the Blocked Senders list in **your** mailbox. For more information, see [Block a mail sender](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4).
 
 <sup>\*</sup> This option is not available for files that have already been released (the **Released status** value is **Released**).
 
@@ -350,11 +350,11 @@ If you don't release or remove the file, it will be deleted after the default qu
 
 When you select multiple quarantined files in the list (up to 100) by clicking in the blank area to the left of the **Subject** column, the **Bulk actions** drop down list appears where you can take the following actions:
 
-![Bulk actions drop down list for files in quarantine](../../media/quarantine-file-bulk-actions.png)
+![Bulk actions drop down list for files in quarantine.](../../media/quarantine-file-bulk-actions.png)
 
-- ![Release file icon](../../media/m365-cc-sc-check-mark-icon.png) **Release file**: In the flyout pane that appears, turn on or turn off **Report files to Microsoft for analysis**, and then click **Release**.
-- ![Remove from quarantine icon](../../media/m365-cc-sc-delete-icon.png) **Remove from quarantine**: After you click **Yes** in the warning that appears, the file is immediately deleted.
-- ![Download file icon](../../media/m365-cc-sc-download-icon.png) **Download file**: In the flyout that appears, select **I understand the risks from downloading this file**, and then click **Download** to save a local copy of the file.
+- ![Release file icon.](../../media/m365-cc-sc-check-mark-icon.png) **Release file**: In the flyout pane that appears, turn on or turn off **Report files to Microsoft for analysis**, and then click **Release**.
+- ![Remove from quarantine icon.](../../media/m365-cc-sc-delete-icon.png) **Remove from quarantine**: After you click **Yes** in the warning that appears, the file is immediately deleted.
+- ![Download file icon.](../../media/m365-cc-sc-download-icon.png) **Download file**: In the flyout that appears, select **I understand the risks from downloading this file**, and then click **Download** to save a local copy of the file.
 
 ## Use Exchange Online PowerShell or standalone EOP PowerShell to view and manage quarantined messages and files
 

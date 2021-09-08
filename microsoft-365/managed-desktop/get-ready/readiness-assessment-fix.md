@@ -228,13 +228,9 @@ You can ask your Microsoft account representative for a query in Microsoft Endpo
 
 Microsoft Managed Desktop requires Windows Hello for Business to be enabled.
 
-**Not ready**
-
-Windows Hello for Business is disabled. Enable it by following the steps in [Create a Windows Hello for Business policy](/mem/intune/protect/windows-hello#create-a-windows-hello-for-business-policy)
-
 **Advisory**
 
-Windows Hello for Business is not set up. Enable it by following the steps in [Create a Windows Hello for Business policy](/mem/intune/protect/windows-hello#create-a-windows-hello-for-business-policy).
+Windows Hello for Business is either disabled or not set up. Enable it by following the steps in [Create a Windows Hello for Business policy](/mem/intune/protect/windows-hello#create-a-windows-hello-for-business-policy).
 
 
 ### Windows 10 update rings

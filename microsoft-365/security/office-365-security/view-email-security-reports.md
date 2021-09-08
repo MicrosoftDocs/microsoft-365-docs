@@ -33,7 +33,7 @@ ms.prod: m365-security
 
 A variety of reports are available in the Microsoft 365 Defender portal at <https://security.microsoft.com> to help you see how email security features, such as anti-spam, anti-malware, and encryption features in Microsoft 365 are protecting your organization. If you have the [necessary permissions](#what-permissions-are-needed-to-view-these-reports), you can view these reports in the Microsoft 365 Defender portal by going to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. To go directly to the **Email & collaboration reports** page, open <https://security.microsoft.com/emailandcollabreport>.
 
-![Email & collaboration reports page in the Microsoft 365 Defender portal](../../media/email-collaboration-reports.png)
+![Email & collaboration reports page in the Microsoft 365 Defender portal.](../../media/email-collaboration-reports.png)
 
 > [!NOTE]
 >
@@ -48,7 +48,7 @@ A variety of reports are available in the Microsoft 365 Defender portal at <http
 
 The **Compromised users** report shows shows the number of user accounts that were marked as **Suspicious** or **Restricted** within the last 7 days. Accounts in either of these states are problematic or even compromised. With frequent use, you can use the report to spot spikes, and even trends, in suspicious or restricted accounts. For more information about compromised users, see [Responding to a compromised email account](responding-to-a-compromised-email-account.md).
 
-![Compromised users widget on the Email & collaboration reports page](../../media/compromised-users-report-widget.png)
+![Compromised users widget on the Email & collaboration reports page.](../../media/compromised-users-report-widget.png)
 
 The aggregate view shows data for the last 90 days and the detail view shows data for the last 30 days.
 
@@ -72,7 +72,7 @@ You can filter both the chart and the details table by clicking **Filter** and s
 
 When you're finished configuring the filters, click **Apply**, **Cancel**, or **Clear filters**.
 
-![Report view in the Compromised users report](../../media/compromised-users-report-activity-view.png)
+![Report view in the Compromised users report.](../../media/compromised-users-report-activity-view.png)
 
 ## Exchange transport rule report
 
@@ -80,13 +80,13 @@ The **Exchange transport rule** report shows the effect of mail flow rules (also
 
 To view the report in the Microsoft 365 Defender portal, go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. On the **Email & collaboration reports** page, find **Exchange transport rule** and then click **View details**. To go directly to the report, open <https://security.microsoft.com/reports/ETRRuleReport>.
 
-![Exchange transport rule widget on the Email & collaboration reports page](../../media/transport-rule-report-widget.png)
+![Exchange transport rule widget on the Email & collaboration reports page.](../../media/transport-rule-report-widget.png)
 
 On the **Exchange transport rule report** page, the available charts and data are described in the following sections.
 
 ### Chart breakdown by Direction
 
-![Direction view for Exchange Transport rules in the Exchange transport rule report](../../media/transport-rule-report-etr-direction-view.png)
+![Direction view for Exchange Transport rules in the Exchange transport rule report.](../../media/transport-rule-report-etr-direction-view.png)
 
 If you select **Chart breakdown by Direction**, the follow charts are available:
 
@@ -114,7 +114,7 @@ When you're finished configuring the filters, click **Apply**, **Cancel**, or **
 
 ### Chart breakdown by Severity
 
-![Severity view for Exchange Transport rules in the Exchange transport rule report](../../media/transport-rule-report-etr-severity-view.png)
+![Severity view for Exchange Transport rules in the Exchange transport rule report.](../../media/transport-rule-report-etr-severity-view.png)
 
 If you select **Chart breakdown by Severity**, the follow charts are available:
 
@@ -152,11 +152,11 @@ The **Mailflow status report** is a smart report that shows information about in
 
 To view the report in the Microsoft 365 Defender portal, go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. On the **Email & collaboration reports** page, find **Mailflow status summary** and then click **View details**. To go directly to the report, open <https://security.microsoft.com/reports/mailflowStatusReport>.
 
-![Mailflow status summary widget on the Email & collaboration reports page](../../media/mail-flow-status-report-widget.png)
+![Mailflow status summary widget on the Email & collaboration reports page.](../../media/mail-flow-status-report-widget.png)
 
 ### Type view for the Mailflow status report
 
-![Type view in the Mailflow status report](../../media/mail-flow-status-report-type-view.png)
+![Type view in the Mailflow status report.](../../media/mail-flow-status-report-type-view.png)
 
 On the **Mailflow status report** page, the **Type** tab is selected by default. The chart shows the following information for the specified date range:
 
@@ -211,7 +211,7 @@ Each exported .csv file is limited to 150,000 rows. If the data for that day con
 
 ### Direction view for the Mailflow status report
 
-![Direction view in the Mailflow status report](../../media/mail-flow-status-report-direction-view.png)
+![Direction view in the Mailflow status report.](../../media/mail-flow-status-report-direction-view.png)
 
 If you click the **Direction** tab, the chart shows the following information for the specified date range:
 
@@ -235,7 +235,7 @@ Each exported .csv file is limited to 150,000 rows. If the data for that day con
 
 The **Funnel** view shows you how Microsoft's email threat protection features filter incoming and outgoing email in your organization. It provides details on the total email count, and how the configured threat protection features, including edge protection, anti-malware, anti-phishing, anti-spam, and anti-spoofing affect this count.
 
-![Funnel view in the Mailflow status report](../../media/mail-flow-status-report-funnel-view.png)
+![Funnel view in the Mailflow status report.](../../media/mail-flow-status-report-funnel-view.png)
 
 The aggregate view and details table view allow for 90 days of filtering.
 
@@ -302,7 +302,7 @@ Each exported .csv file is limited to 150,000 rows. If the data contains more th
 
 The **Tech view** is similar to the **Funnel** view, providing more granular details for the configured threat protections features. From the chart, you can see how messages are categorized at the different stages of threat protection.
 
-![Tech view in the Mailflow status report](../../media/mail-flow-status-report-tech-view.png)
+![Tech view in the Mailflow status report.](../../media/mail-flow-status-report-tech-view.png)
 
 The aggregate view and details table allow for 90 days of filtering.
 
@@ -368,14 +368,14 @@ The aggregate view filter allows for 90 days, while the details table filter onl
 
 To view the report in the Microsoft 365 Defender portal, go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. On the **Email & collaboration reports** page, find **Malware detected in email** and then click **View details**. To go directly to the report, open <https://security.microsoft.com/reports/MalwareDetections>.
 
-![Malware detections in email widget on the Email & collaboration reports page](../../media/malware-detections-widget.png)
+![Malware detections in email widget on the Email & collaboration reports page.](../../media/malware-detections-widget.png)
 
 On the **Malware detections report** page, the chart shows the following information for the specified date range:
 
 - **Outbound**
 - **Inbound**
 
-![Report view in the Malware detection in email report](../../media/malware-detections-report-view.png)
+![Report view in the Malware detection in email report.](../../media/malware-detections-report-view.png)
 
 The details table below the graph shows the following information:
 
@@ -416,7 +416,7 @@ The aggregate view of the report allows for 45 days of filtering<sup>\*</sup>, w
 
 To view the report in the Microsoft 365 Defender portal, go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. On the **Email & collaboration reports** page, find **Spoof detections** and then click **View details**. To go directly to the report, open <https://security.microsoft.com/reports/SpoofMailReportV2>.
 
-![Spoof detections widget on the Email & collaboration reports page](../../media/spoof-detections-widget.png)
+![Spoof detections widget on the Email & collaboration reports page.](../../media/spoof-detections-widget.png)
 
 The chart shows the following information:
 
@@ -439,7 +439,7 @@ On the **Spoof mail report** page, you can filter both the chart and the details
   - **Other**
 - **Spoof type**: **Internal** and **External**
 
-![Spoof mail report page in the Microsoft 365 Defender portal](../../media/spoof-detections-report-page.png)
+![Spoof mail report page in the Microsoft 365 Defender portal.](../../media/spoof-detections-report-page.png)
 
 The details table below the graph shows the following information:
 
@@ -462,7 +462,7 @@ The **Submissions** report shows information about items that admins have report
 
 To view the report in the Microsoft 365 Defender portal, go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. On the **Email & collaboration reports** page, find **Submissions** and then click **View details**. To go directly to the report, open <https://security.microsoft.com/adminSubmissionReport>. To go to [admin submissions in the Microsoft 365 Defender portal](admin-submission.md), click **Go to Submissions**. Admins will be able to view the report for last 30 days. 
 
-![Submissions widget on the Email & collaboration reports page](../../media/submissions-report-widget.png)
+![Submissions widget on the Email & collaboration reports page.](../../media/submissions-report-widget.png)
 
 The chart shows the following information:
 
@@ -492,7 +492,7 @@ On the **Submissions** page, you can filter both the chart and the details table
 
 The details table below the graph shows the same information and has the same **Group** or **Customize columns** options as on the **Submitted for analysis** tab at **Email & collaboration** \> **Submissions**. For more information, see [View admin submissions to Microsoft](admin-submission.md#view-admin-submissions-to-microsoft).
 
-![Submissions report page in the Microsoft 365 Defender portal](../../media/submissions-report-page.png)
+![Submissions report page in the Microsoft 365 Defender portal.](../../media/submissions-report-page.png)
 
 ## Threat protection status report
 
@@ -507,7 +507,7 @@ To view the report in the Microsoft 365 Defender portal, go to **Reports** \> **
 - Defender for Office 365: <https://security.microsoft.com/reports/TPSAggregateReportATP>
 - EOP: <https://security.microsoft.com/reports/TPSAggregateReport>
 
-![Threat protection status widget on the Email & collaboration reports page](../../media/threat-protection-status-report-widget.png)
+![Threat protection status widget on the Email & collaboration reports page.](../../media/threat-protection-status-report-widget.png)
 
 By default, the chart shows data for the past 7 days. If you click **Filter** on the **Threat protection status report** page, you can select a 90 day date range (trial subscriptions might be limited to 30 days). The details table allows filtering for 30 days.
 
@@ -515,7 +515,7 @@ The available views are described in the following sections.
 
 ### View data by Overview
 
-![Overview view in the Threat protection status report](../../media/threat-protection-status-report-overview-view.png)
+![Overview view in the Threat protection status report.](../../media/threat-protection-status-report-overview-view.png)
 
 In the **View data by Overview** view, the following detection information is shown in the chart:
 
@@ -539,7 +539,7 @@ When you're finished configuring the filters, click **Apply**, **Cancel**, or **
 
 ### View data by Email \> Phish and Chart breakdown by Detection Technology
 
-![Detection technology view for phishing email in the Threat protection status report](../../media/threat-protection-status-report-phishing-detection-tech-view.png)
+![Detection technology view for phishing email in the Threat protection status report.](../../media/threat-protection-status-report-phishing-detection-tech-view.png)
 
 In the **View data by Email \> Phish** and **Chart breakdown by Detection Technology** view, the following information is shown in the chart:
 
@@ -588,7 +588,7 @@ When you're finished configuring the filters, click **Apply**, **Cancel**, or **
 
 ### View data by Email \> Malware and Chart breakdown by Detection Technology
 
-![Detection technology view for malware in the Threat protection status report](../../media/threat-protection-status-report-malware-detection-tech-view.png)
+![Detection technology view for malware in the Threat protection status report.](../../media/threat-protection-status-report-malware-detection-tech-view.png)
 
 In the **View data by Email \> Malware** and **Chart breakdown by Detection Technology** view, the following information is shown in the chart:
 
@@ -597,10 +597,10 @@ In the **View data by Email \> Malware** and **Chart breakdown by Detection Tech
 - **File reputation**
 - **Anti-malware engine**<sup>\*</sup>: Detection from anti-malware engines.
 - **Anti-malware policy file type block**: These are email messages filtered out due to the type of malicious file identified in the message.
-- **URL malicious reputation**
-- **URL detonation**
-- **URL detonation reputation**
-- **Campaign**
+- **URL malicious reputation**<sup>\*</sup>
+- **URL detonation**<sup>\*</sup>
+- **URL detonation reputation**<sup>\*</sup>
+- **Campaign**<sup>\*</sup>
 
 In the details table below the chart, the following information is available:
 
@@ -629,7 +629,7 @@ When you're finished configuring the filters, click **Apply**, **Cancel**, or **
 
 ### Chart breakdown by Policy type and View data by Email \> Phish or View data by Email \> Malware
 
-![Policy type view for phishing email or malware email in the Threat protection status report](../../media/threat-protection-status-report-phishing-policy-type-view.png)
+![Policy type view for phishing email or malware email in the Threat protection status report.](../../media/threat-protection-status-report-phishing-policy-type-view.png)
 
 In the **Chart breakdown by Policy type** and **View data by Email \> Phish** or **View data by Email \> Malware** views, the following information is shown in the charts:
 
@@ -667,7 +667,7 @@ When you're finished configuring the filters, click **Apply**, **Cancel**, or **
 
 ### Chart breakdown by Delivery status and View data by Email \> Phish or View data by Email \> Malware
 
-![Delivery status view for phishing email and malware email in the Threat protection status report](../../media/threat-protection-status-report-phishing-delivery-status-view.png)
+![Delivery status view for phishing email and malware email in the Threat protection status report.](../../media/threat-protection-status-report-phishing-delivery-status-view.png)
 
 In the **Chart breakdown by Delivery status** and **View data by Email \> Phish** or **View data by Email \> Malware** views, the following information is shown in the charts:
 
@@ -708,7 +708,7 @@ When you're finished configuring the filters, click **Apply**, **Cancel**, or **
 
 ### View data by Content \> Malware
 
-![Content malware view in the Threat protection status report](../../media/threat-protection-status-report-content-malware-view.png)
+![Content malware view in the Threat protection status report.](../../media/threat-protection-status-report-content-malware-view.png)
 
 In the **View data by Content \> Malware** view, the following information is shown in the chart for Microsoft Defender for Office 365 organizations:
 
@@ -731,7 +731,7 @@ When you're finished configuring the filters, click **Apply**, **Cancel**, or **
 
 ### View data by System override and Chart breakdown by Reason
 
-![Message override and Chart breakdown by Reason view in the Threat protection status report](../../media/threat-protection-status-report-system-override-view-breakdown-by-reason.png)
+![Message override and Chart breakdown by Reason view in the Threat protection status report.](../../media/threat-protection-status-report-system-override-view-breakdown-by-reason.png)
 
 In the **View data by System override** and **Chart breakdown by Reason** view, the following override reason information is shown in the chart:
 
@@ -783,7 +783,7 @@ When you're finished configuring the filters, click **Apply**, **Cancel**, or **
 
 ### View data by System override and Chart breakdown by Delivery location
 
-![Message override and Chart breakdown by Delivery Location view in the Threat protection status report](../../media/threat-protection-status-report-system-override-view-breakdown-by-delivery-location.png)
+![Message override and Chart breakdown by Delivery Location view in the Threat protection status report.](../../media/threat-protection-status-report-system-override-view-breakdown-by-delivery-location.png)
 
 In the **View data by System override** and **Chart breakdown by Delivery location** view, the following override reason information is shown in the chart:
 
@@ -831,7 +831,7 @@ The **Top malware** report shows the various kinds of malware that was detected 
 
 To view the report in the Microsoft 365 Defender portal, go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. On the **Email & collaboration reports** page, find **Top malware** and then click **View details**. To go directly to the report, open <https://security.microsoft.com/reports/TopMalware>.
 
-![Top malware widget on the Email & collaboration reports page](../../media/top-malware-report-widget.png)
+![Top malware widget on the Email & collaboration reports page.](../../media/top-malware-report-widget.png)
 
 When you hover over a wedge in the pie chart, you can see the name of a kind of malware and how many messages were detected as having that malware.
 
@@ -842,7 +842,7 @@ On the **Top malware report** page, a larger version of the pie chart is display
 
 If you click **Filter**, you can specify a date range with **Start date** and **End date**.
 
-![Top malware report view](../../media/top-malware-report-view.png)
+![Top malware report view.](../../media/top-malware-report-view.png)
 
 ## URL threat protection report
 
@@ -857,7 +857,7 @@ The **User reported messages** report shows information about email messages tha
 
 To view the report in the Microsoft 365 Defender portal, go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. On the **Email & collaboration reports** page, find **User reported messages** and then click **View details**. To go directly to the report, open <https://security.microsoft.com/reports/userSubmissionReport>. To go to [admin submissions in the Microsoft 365 Defender portal](admin-submission.md), click **Go to Submissions**.
 
-![User reported messages widget on the Email & collaboration reports page](../../media/user-reported-messages-widget.png)
+![User reported messages widget on the Email & collaboration reports page.](../../media/user-reported-messages-widget.png)
 
 On the **User reported messages** page, you can filter both the chart and the details table by clicking **Filter** and selecting one or more of the following values in the flyout that appears:
 
@@ -884,7 +884,7 @@ To group the entries, click **Group** and select one of the following values fro
 - **Rescan result**
 - **Phish simulation**
 
-![User reported messages report](../../media/user-reported-messages-report.png)
+![User reported messages report.](../../media/user-reported-messages-report.png)
 
 The details table below the graph shows the following information:
 
