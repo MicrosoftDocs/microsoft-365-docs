@@ -69,13 +69,14 @@ With shared channels, users can remain signed in to their organization and acces
 
 The following table describes the experiences available depending on the type of account used.
 
-Feature	User (your organization)	Guest (Azure AD collaboration)	External participant (Azure AD direct connect)
-Team access	Y	Y	N
-Shared channel access	Y	N	Y
-Permissions through file sharing links	Y	Y	N
-Use private channels	Y	Y	N
-Account in your directory	Y	Y	N
-Access reviews	Y	Y	Y
+|Feature|User (your organization)|Guest (Azure AD collaboration)|External participant (Azure AD direct connect)|
+|:-----|:-----|:------|:-------|
+|Team access|Y|Y|N|
+|Shared channel access|Y|N|Y|
+|Permissions through file sharing links|Y|Y|N|
+|Use private channels|Y|Y|N|
+|Account in your directory|Y|Y|N|
+|Access reviews|Y|Y|Y|
 			
 ## Planning considerations
 
@@ -98,28 +99,48 @@ If you plan to use shared channels, you can choose between a self-service model 
 ## Compliance in shared channels
 
 Shared channels are integrated with Microsoft 365 compliance features.
-Communications compliance
+
+##### Communications compliance
+
 Admins can set policies to monitor content for all users in the channel. All messages content in channels, including the shared channel, are covered by communication compliance policies. Shared channels inherit the policy of the host organization.
-Conditional access
+
+##### Conditional access
+
 The host organization’s conditional access policies are applied to external users, including B2B direct connect users. The external organization’s policies are not used. The following types of conditional access policies are supported with shared channels:
+
 - Policies that are scoped to all guest users, external users, SharePoint Online cloud apps
 - Grant Access controls that require MFA, a compliant device, or a hybrid Azure AD joined device. 
+
 IP-based policies are supported at the SharePoint file level. So an external participant could access shared channel from a restricted location, but be blocked when trying to open a file.
-DLP
+
+##### DLP
+
 Admins can apply DLP policies to a team where all channels, including shared channels, inherit the policy. Shared channels inherit the policy of the host organization.
-Retention labels
+
+##### Retention labels
+
 Admins can apply a retention policy on a team where all channels, including shared channels, inherit the retention policy. Shared channels inherit the policy of the host organization.
-Sensitivity labels
+
+##### Sensitivity labels
+
 Sensitivity labels available in the host organization are the only labels that can be applied to the documents in a shared channel site. Automatic labeling is not used.
+
 Shared channels and their associated SharePoint sites inherit the label from the parent team.
 A file that is encrypted by a sensitivity label cannot be opened by external participants.
-Information barriers
+
+##### Information barriers
+
 Users who are not allowed to communicate per information barrier policies can’t be part of shared channel. Information barrier policies are only effective for users in the host organization. If users are external participants in another organization’s shared channel, information barrier policies don’t apply.
 eDiscovery
+
 Admins can perform searches for all users in the channel. All channels, including the shared channel, are discoverable. All message data in the channel regardless of who added the data is discoverable by the compliance admin.
-Legal hold
+
+##### Legal hold
+
 Admins can place channel-only members from the host organization who are not a part of the team on hold. They can also place the entire team on hold. Admins cannot place an external participant on hold.
-Audit logs
+
+##### Audit logs
+
 All the actions performed for existing audit events are audited in shared channels.
 
 
