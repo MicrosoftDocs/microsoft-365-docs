@@ -49,6 +49,8 @@
         items:
         - name: External sharing overview
           href: collaborate-with-people-outside-your-organization.md
+        - name: Plan external collaboration
+          href: plan-external-collaboration.md
         - name: Configuration scenarios
           items:
           - name: Collaborate on documents
