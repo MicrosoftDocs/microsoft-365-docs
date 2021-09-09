@@ -329,7 +329,7 @@
   items: 
     - name: Govern your data
       href: manage-information-governance.md
-    - name: Retain and delete data
+    - name: Understand retaining and deleting data
       items: 
         - name: Learn about retention policies & retention labels
           href: retention.md
