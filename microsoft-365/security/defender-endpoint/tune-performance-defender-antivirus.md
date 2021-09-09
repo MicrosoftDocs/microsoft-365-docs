@@ -60,7 +60,8 @@ For more information on command-line parameters and options, see the [New-MpPerf
 
 > [!NOTE]
 > When running a recording, if you get the error "Cannot start performance recording because Windows Performance Recorder is already recording", run the following command
-> to stop the existing trace with the new command: ** wpr -cancel -instancename MSFT_MpPerformanceRecording**
+> to stop the existing trace with the new command: 
+> **wpr -cancel -instancename MSFT_MpPerformanceRecording**
 
 ### Performance tuning data and information
 
