@@ -21,7 +21,7 @@ ms.technology: mde
 
 Microsoft Defender for Endpoint Device Control Removable Storage Access Control enables you to do the following task:
 
-- Prevent people from installing specific devices
+- Prevent people from installing specific devices.
 - Allow people from installing specific devices but prevent others.
 
 > [!NOTE]
@@ -60,8 +60,8 @@ This policy setting allows you to specify a list of Plug and Play hardware IDs a
 
 When this policy setting is enabled together with the **Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria** policy setting, Windows is allowed to install or update any device whose Plug and Play hardware ID or compatible ID appears in the list you create, unless another policy setting at the same or higher layer in the hierarchy specifically prevents that installation, such as the following policy settings:
 
-- Prevent installation of devices that match these device IDs 
-- Prevent installation of devices that match any of these device instance IDs 
+- Prevent installation of devices that match these device IDs.
+- Prevent installation of devices that match any of these device instance IDs.
 
 If the **Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria** policy setting is not enabled with this policy setting, then any other policy settings specifically preventing installation will take precedence. 
 
@@ -98,18 +98,18 @@ This policy setting will change the evaluation order in which Allow and Prevent 
 
 #### Device instance IDs 
 
-1. Prevent installation of devices using drivers that match these device instance IDs 
-2. Allow installation of devices using drivers that match these device instance IDs 
+1. Prevent installation of devices using drivers that match these device instance IDs.
+2. Allow installation of devices using drivers that match these device instance IDs.
 
 #### Device IDs 
 
-1. Prevent installation of devices using drivers that match these device IDs 
-2. Allow installation of devices using drivers that match these device IDs 
+1. Prevent installation of devices using drivers that match these device IDs.
+2. Allow installation of devices using drivers that match these device IDs.
 
 #### Device setup class 
 
-1. Prevent installation of devices using drivers that match these device setup classes 
-2. Allow installation of devices using drivers that match these device setup classes 
+1. Prevent installation of devices using drivers that match these device setup classes.
+2. Allow installation of devices using drivers that match these device setup classes.
 
 #### Removable devices 
 
@@ -167,9 +167,9 @@ To help familiarize you with Microsoft Defender for Endpoint Removable Storage A
 
 For this scenario, following policies will be used:
 
-- Prevent installation of devices using drivers that match these device setup classes
-- Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria
-- Allow installation of devices that match any of these device instance IDs or Allow installation of devices that match any of these device IDs 
+- Prevent installation of devices using drivers that match these device setup classes.
+- Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria.
+- Allow installation of devices that match any of these device instance IDs or Allow installation of devices that match any of these device IDs.
 
 #### Deploying and managing policy via Intune 
 
