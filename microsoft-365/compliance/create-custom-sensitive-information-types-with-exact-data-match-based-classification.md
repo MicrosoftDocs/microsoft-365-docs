@@ -438,12 +438,13 @@ This computer must have direct access to your Microsoft 365 tenant.
 5. To hash and upload the sensitive data, run the following command in Command Prompt window:
 
    ```dos
-   EdmUploadAgent.exe /UploadData /DataStoreName [DS Name] /DataFile [data file] /HashLocation [hash file location] /Schema [Schema file] /ColumnSeparator ["{Tab}"|"|"]
+   EdmUploadAgent.exe /UploadData /DataStoreName [DS Name] /DataFile [data file] /HashLocation [hash file location] /Schema [Schema file] /ColumnSeparator ["{Tab}"|"|"] /AllowedBadLinesPercentage [value]
    ```
 
-   Example: **EdmUploadAgent.exe /UploadData /DataStoreName PatientRecords /DataFile C:\Edm\Hash\PatientRecords.csv /HashLocation C:\Edm\Hash /Schema edm.xml**
+   Example: **EdmUploadAgent.exe /UploadData /DataStoreName PatientRecords /DataFile C:\Edm\Hash\PatientRecords.csv /HashLocation C:\Edm\Hash /Schema edm.xml /AllowedBadLinesPercentage 5**
 
    The default format for the sensitive data file is comma-separated values. You can specify a tab-separated file by indicating the "{Tab}" option with the /ColumnSeparator parameter, or you can specify a pipe-separated file by indicating the "|" option.
+   If your sensitive information table has some incorrectly formatted values, but you want to import the remaining data while ignoring invalid rows anyway, you can use the /AllowedBadLinesPercentage parameter in the command. The example above specifies a five percent threshold. This means that the tool will hash and upload the sensitive information table even if up to five percent of the rows are invalid. The default value for this setting is one percent. 
    This command will automatically add a randomly generated salt value to the hash for greater security. Optionally, if you want to use your own salt value, add the **/Salt <saltvalue>** to the command. This value must be 64 characters in length and can only contain the a-z characters and 0-9 characters.
 
 6. Check the upload status by running this command:
@@ -469,13 +470,13 @@ EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to 
 1. Run the following command in Command Prompt windows:
 
    ```dos
-   EdmUploadAgent.exe /CreateHash /DataFile [data file] /HashLocation [hash file location] /Schema [Schema file]
+   EdmUploadAgent.exe /CreateHash /DataFile [data file] /HashLocation [hash file location] /Schema [Schema file] /AllowedBadLinesPercentage [value]
    ```
 
    For example:
 
    ```dos
-   EdmUploadAgent.exe /CreateHash /DataFile C:\Edm\Data\PatientRecords.csv /HashLocation C:\Edm\Hash /Schema edm.xml
+   EdmUploadAgent.exe /CreateHash /DataFile C:\Edm\Data\PatientRecords.csv /HashLocation C:\Edm\Hash /Schema edm.xml /AllowedBadLinesPercentage 5
    ```
 
    This will output a hashed file and a salt file with these extensions if you didn't specify the **/Salt <saltvalue>** option:
@@ -623,6 +624,7 @@ These locations are support EDM sensitive information types:
 - DLP for SharePoint (files)
 - Microsoft Cloud App Security DLP policies
 - Server-side auto-labeling policies - available for commercial cloud customers and government cloud customers
+<!-- - Client side auto-labeling policies - available for government cloud customers -->  
 
 #### To create a DLP policy with EDM
 
