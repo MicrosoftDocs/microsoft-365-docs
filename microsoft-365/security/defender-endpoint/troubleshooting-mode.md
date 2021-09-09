@@ -29,7 +29,7 @@ ms.technology: mde
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
 
 
-Microsoft Defender for Endpoint troubleshooting mode allows you to troubleshoot various Microsoft Defender antivirus features by enabling them from the device and testing their scenarios, even if they are controlled by the organization policy. The troubleshooting mode is disabled by default and requires you to turn it on for a device (and/or group of devices) for a limited time.  
+Microsoft Defender for Endpoint troubleshooting mode allows you to troubleshoot various Microsoft Defender antivirus features by enabling them from the device and testing different scenarios, even if they're controlled by the organization policy. The troubleshooting mode is disabled by default and requires you to turn it on for a device (and/or group of devices) for a limited time.  
 
 ## What do you need to know before you begin?
 
@@ -45,13 +45,13 @@ Microsoft Defender for Endpoint troubleshooting mode allows you to troubleshoot 
 
     - Microsoft Defender Antivirus performance troubleshooting by using the troubleshooting mode and manipulating tamper protection and other antivirus settings.
 
-- Local admins, with appropriate permissions, will be able to change configurations on individual endpoints that are normally locked by policy. Having a device in troubleshooting mode can be helpful when diagnosing Microsoft Defender Antivirus performance and compatibility issues.
+- Local admins, with appropriate permissions, can change configurations on individual endpoints that are normally locked by policy. Having a device in troubleshooting mode can be helpful when diagnosing Microsoft Defender Antivirus performance and compatibility issues.
 
-    - Local admins will not be able to turn off Microsoft Defender Antivirus, or uninstall it.
+    - Local admins won't be able to turn off Microsoft Defender Antivirus, or uninstall it.
 
     - Local admins will be able to configure all other security settings in the Microsoft Defender Antivirus suite (for example, cloud protection, tamper protection).
 
-- Admins with “Manage Security settings” permissions will have access to turn troubleshooting mode on.
+- Admins with “Manage Security settings” permissions will have access to turn on troubleshooting mode.
 
 - Microsoft Defender for Endpoint collects logs and investigation data throughout the troubleshooting process.
 
@@ -67,7 +67,7 @@ Microsoft Defender for Endpoint troubleshooting mode allows you to troubleshoot 
 
 - It could take up to 15 minutes from the time the command is sent from Microsoft 365 Defender to when it becomes active on the device.
 
-- Customers will be informed when the troubleshooting mode begins, a warning that it will end soon, and when the troubleshooting mode ends by a notification.
+- You'll be informed when the troubleshooting mode begins, a warning that it will end soon, and when the troubleshooting mode ends by a notification.
 
 - The beginning and ending of troubleshooting mode will be identified in the **Device Timeline** on the device page.
 
@@ -96,42 +96,40 @@ Microsoft Defender for Endpoint troubleshooting mode allows you to troubleshoot 
 
 ### Scenario 1: Unable to install application
 
-If you want to install an application but receive an error message saying that Microsoft Defender Antivirus and tamper protection is on, follow the steps below to troubleshoot the issue.
+If you want to install an application but receive an error message that Microsoft Defender Antivirus and tamper protection is on, follow the steps below to troubleshoot the issue.
 
-1. Request the SOC admin to turn on troubleshooting mode. You'll get a Windows Sec app notification once the troubleshooting mode starts.  
+1. Request the SOC admin to turn on troubleshooting mode. You'll get a Windows Security notification once the troubleshooting mode starts.  
 
-2. Connect to the machine (using Terminal Services for example) as an IT help desk with local admin permissions.  
+2. Connect to the device (using Terminal Services for example) with local admin permissions.  
 
 3. Start Process Monitor (ProcMon). See the steps [here](troubleshoot-performance-issues.md).  
 
 4. Go to **Windows security** > **Threat & virus protection** > **Manage settings** > **Tamper protection** > **Off**.  
 
-5. Launch Powershell cmd elevated. 
-
-6. Toggle RTP off.  
+5. Launch an elevated PowerShell command prompt, and toggle RTP off. 
 
     - Run `get-mppreference` to check RTP status.
     - Run `set–mppreference` to turn off RTP Run. 
 
-7. Try installing the app.
+7. Try installing the application.
 
-### Scenario 2: Windows Defender (MsMpEng.exe) causing high CPU
+### Scenario 2: High CPU usage due to Windows Defender (MsMpEng.exe)
 
-Sometimes during a scheduled scan, MsMpEng.exe can consume high CPU usage.
+Sometimes during a scheduled scan, MsMpEng.exe can consume high CPU.
 
 1. Go to **Task Manager** > **Details** tab to confirm that MsMpEng.exe is the reason behind the high CPU usage. Also check to see if a scheduled scan is currently underway.
 
 2. Run ProcMon during the CPU spike for around 5 minutes, and then review the ProcMon log for clues. 
 
-3. Once RCA is determined, turn the troubleshooting mode on. 
+3. Once RCA is determined, turn on troubleshooting mode. 
 
-4. Log into the machine and launch an elevated PowerShell command prompt. 
+4. Log in to the machine and launch an elevated PowerShell command prompt. 
 
 5. If `DisableLocalAdminMerge` is enabled on the device:  
 
 - Request SOC admin to turn on troubleshooting mode for the device.
 
-- You'll get a Windows Sec app notification once the troubleshooting mode starts.
+- You'll get a Windows Security notification once the troubleshooting mode starts.
 
 6. Add process/file/folder/extension exclusions based on ProcMon findings using one of the following commands: 
 
@@ -151,9 +149,9 @@ When Microsoft Defender Antivirus real-time protection is turned on, application
 
 1. Request SOC admin to turn on troubleshooting mode on the device. 
 
-2. To disable RTP for this scenario, you must turn off tamper protection first. For more information, see [Protect security settings with tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md). 
+2. To disable RTP for this scenario, you must turn off tamper protection. For more information, see [Protect security settings with tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md). 
 
-3. Once tamper protection is disabled, turn the troubleshooting mode on. Now log into the device. 
+3. Once tamper protection is disabled, turn on troubleshooting mode. Now log in to the device. 
 
 4. Launch an elevated PowerShell command prompt. 
 
@@ -161,69 +159,49 @@ When Microsoft Defender Antivirus real-time protection is turned on, application
 
 5. After disabling RTP, check to see if the application is slow. 
 
-### Unwanted app is blocked by Windows Defender (PUA)
+### Scenario 4: Potentially unwanted app (PUA) is blocked by Windows Defender
 
-Description: Our legit 3rd party application (I.e. FileZilla) is being detected as a PUA and blocked from running.  Need to turn off PUA blocks so the application runs properly. 
+When a legitimate third-party application (for example, FileZilla) is detected as a potentially unwanted app, and blocked from running, turn off PUA blocks so that the application can run properly. 
 
-Troubleshooting steps: 
+1. Request SOC admin to turn on troubleshooting mode for the device. 
 
-Request SOC admin to turn on Troubleshoot mode for the machine 
+2. To turn off PUA detections, you must turn off tamper protection. For more information, see [Protect security settings with tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md).
 
-To turn off PUA detections, you must turn off Tamper Protection first. 
+3. Once tamper protection is disabled, turn on troubleshooting mode. Now log in to the device.
 
-Please review this doc for more info:  Protect security settings with tamper protection | Microsoft Docs 
+4. Launch an elevated PowerShell command prompt.  
 
-Once Tamper Protection is disabled, place machine in MDE Troubleshooting Mode. 
+    - Set-mppreference -PUAProtection Disabled 
 
-Now log into the machine in question. 
+5. After disabling PUA, check to see if the application is now able to run properly. 
 
-Launch an elevated PowerShell command prompt.  
+For more information, see [Block potentially unwanted applications with Microsoft Defender Antivirus](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md).
 
-Type in the following and hit enter: 
+### Scenario 5: Microsoft Office plugin blocked by Attack Surface Reduction
 
-Set-mppreference -PUAProtection Disabled 
+Attack Surface Reduction (ASR) is not allowing Microsoft Office plugin to work properly because **Block all Office applications from creating child processes** is set to block mode. 
 
-After disabling PUA, check to see if the Application is now able to run properly. 
+1. Turn on troubleshooting mode, and log in to the device. 
 
-Reference  Block potentially unwanted applications with Microsoft Defender Antivirus | Microsoft Docs 
+2. Launch an elevated PowerShell command prompt. 
 
-### Attack Surface Reduction blocking Office plugin
+    - Set-MpPreference -AttackSurfaceReductionRules_Ids D4F940AB-401B-4EFC-AADC-AD5F3C50688A -AttackSurfaceReductionRules_Actions Disabled 
 
-Description: Attack Surface Reduction (ASR) is not allowing our Office plugin to work when rule “Block all Office applications from creating child processes” is set to block mode 
+3. After disabling the ASR Rule, confirm that the Microsoft Office plugin now works.
 
-Troubleshooting steps: 
+For more information, see [Overview of attack surface reduction](overview-attack-surface-reduction.md). 
 
-Place machine in MDE Troubleshooting Mode. 
+### Scenario 6: Domain blocked by Network Protection
 
-Now log into the machine in question. 
+Network Protection is blocking Microsoft domain, preventing users from accessing it. 
 
-Launch an elevated PowerShell command prompt. 
+1. Turn on troubleshooting mode, and log in to the device. 
 
-Type in the following and hit enter: 
+2. Launch an elevated PowerShell command prompt. 
 
-Set-MpPreference -AttackSurfaceReductionRules_Ids D4F940AB-401B-4EFC-AADC-AD5F3C50688A -AttackSurfaceReductionRules_Actions Disabled 
+    - Set-MpPreference -EnableNetworkProtection Disabled 
 
-After disabling this ASR Rule, confirm that the Office plugin now works.
+3. After disabling Network Protection, check to see if the domain is now allowed. 
 
-Reference  Overview of attack surface reduction | Microsoft Docs 
-
-### Domain blocked by Network Protection
-
-Description: Network Protection is blocking our domain, thus preventing users from accessing it. 
-
-Troubleshooting steps: 
-
-Place machine in MDE Troubleshooting Mode. 
-
-Now log into the machine in question. 
-
-Launch an elevated PowerShell command prompt. 
-
-Type in the following and hit enter: 
-
-Set-MpPreference -EnableNetworkProtection Disabled 
-
-After disabling Network Protection, check to see if the domain is now allowed. 
-
-Reference  Use network protection to help prevent connections to bad sites | Microsoft Docs 
+For more information, see [Use network protection to help prevent connections to bad sites](network-protection.md). 
 
