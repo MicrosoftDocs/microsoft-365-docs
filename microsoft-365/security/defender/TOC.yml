@@ -134,9 +134,9 @@
          items: 
               - name: Overview
                 href: incidents-overview.md
-              - name: Prioritize the incident queue
+              - name: Prioritize incidents
                 href: incident-queue.md
-              - name: Manage incidents in progress
+              - name: Manage incidents
                 href: manage-incidents.md
               - name: Investigate incidents
                 href: investigate-incidents.md
@@ -206,7 +206,7 @@
                href: advanced-hunting-query-results.md
              - name: Take action on query results
                href: advanced-hunting-take-action.md
-             - name: Go hunt
+             - name: Quickly investigate with go hunt
                href: advanced-hunting-go-hunt.md
              - name: Optimize & handle errors
                items: 
@@ -300,9 +300,9 @@
                 href: threat-analytics.md
               - name: Understand the analyst report
                 href: threat-analytics-analyst-reports.md
-       - name: Use Microsoft Threat Experts
+       - name: Collaborate with Microsoft Threat Experts
          items:
-              - name: Microsoft Threat Experts overview
+              - name: Overview
                 href: ../mtp/microsoft-threat-experts.md
               - name: Configure and manage Microsoft Threat Experts capabilities
                 href: ../mtp/configure-microsoft-threat-experts.md
