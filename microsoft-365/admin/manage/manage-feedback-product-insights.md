@@ -61,7 +61,7 @@ You need to be an [administrator](../add-users/about-admin-roles.md) to view and
 
 Topics are machine learning models that help analyze comments, phrases and verbatims of the NPS survey feedback, providing access to the most common themes at a top level. The Top topic filters display the top 5 topics with the most volume of verbatim feedback.
 
-ttf2
+:::image type="content" source="../../media/prosight-top-topic-filters-2.png" alt-text="Screenshot: Top topic filters on NPS survey data":::
 
 > [!NOTE]
 > We only publish an intelligent topic after it meets a minimum quality bar set in partnership with subject matter experts. Precision and recall metrics are used to determine the same.
@@ -130,6 +130,5 @@ You can filter by Channels, Products, Platforms and Feedback.
 **Platforms**
 
 **Feedback types**- Filter option for this section is set only to NPS feedback type.
-
 
 :::image type="content" source="../../media/prosight-filters.png" alt-text="Screenshot: Microsoft 365 survey insights":::
