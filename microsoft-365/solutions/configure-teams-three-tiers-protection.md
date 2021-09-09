@@ -95,8 +95,6 @@ If you need to collaborate with people outside your organization, we recommend c
 
 Teams guest sharing is on by default, but you can turn it off if needed in the sensitive and highly sensitive tiers by using a sensitivity label.
 
-The sensitivity label only affects guest sharing for the team. Guest sharing settings for the associated SharePoint site are controlled separately, and we have you align the two settings for both the sensitive and highly sensitive tiers.
-
 In the highly sensitive tier, we configure the sensitivity label to encrypt files to which it is applied. If you need guests to have access to these files, you must give them permissions when you create the label.
 
 We highly recommend that you leave guest sharing on for the baseline tier and for the sensitive or highly sensitive tiers if you need to collaborate with people outside your organization. The guest sharing features in Microsoft 365 provide a much more secure and governable sharing experience than sending files as attachments in email messages. It also reduces the risk of shadow IT where users use ungoverned consumer products to share with legitimate external collaborators.
