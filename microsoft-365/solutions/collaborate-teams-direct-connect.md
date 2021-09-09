@@ -13,7 +13,6 @@ ms.collection:
 - m365solution-securecollab
 - m365initiative-externalcollab
 ms.custom: 
-- seo-marvel-apr2020
 localization_priority: Priority
 f1.keywords: NOCSH
 recommendations: false
