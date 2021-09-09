@@ -54,14 +54,14 @@ As an ordinary user (not an admin), the **default** capabilities that are availa
 |Impersonated domain protection in Defender for Office 365|![Check mark.](../../media/checkmark.png)|![Check mark.](../../media/checkmark.png)|![Check mark.](../../media/checkmark.png)|
 |Mailbox intelligence protection in Defender for Office 365|![Check mark.](../../media/checkmark.png)|![Check mark.](../../media/checkmark.png)|![Check mark.](../../media/checkmark.png)|
 |**Anti-malware policies**||||
-|Malware||||
+|Malware in email messages.||||
 |**Mail flow rules (transport rules)**||||
-|Mail flow rules||||
-|**Files**||||
-|[Safe Attachments for SharePointOneDrive and Microsoft Teams in Defender for Office 365](mdo-for-spo-odb-and-teams.md)||||
+|Mail flow rules that quarantine email messages.||||
+|**Safe Attachments policies in Defender for Office 365**||||
+|Safe Attachments policies that quarantine email messages.||||
 |
 
-_Quarantine policies_ define what users are allowed to do or not do to quarantined messages and files based on the quarantine reason. Default quarantine policies enforce the historical capabilities as described in the previous table. Admins can create and apply custom quarantine policies that define less restrictive or more restrictive capabilities for users. For more information, see [Quarantine policies](quarantine-policies.md).
+_Quarantine policies_ define what users are allowed to do to quarantined messages based on the why the message was quarantined. Default quarantine policies enforce the historical capabilities as described in the previous table. Admins can create and apply custom quarantine policies that define less restrictive or more restrictive capabilities for users. For more information, see [Quarantine policies](quarantine-policies.md).
 
 You view and manage your quarantined messages in the Microsoft 365 Defender portal or (if an admin has set this up) in [end-user spam notifications](use-spam-notifications-to-release-and-report-quarantined-messages.md).
 

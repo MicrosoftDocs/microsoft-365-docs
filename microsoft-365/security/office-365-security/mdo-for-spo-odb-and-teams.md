@@ -38,9 +38,6 @@ Safe Attachments for SharePoint, OneDrive, and Microsoft Teams in [Microsoft Def
 
 Safe Attachments for SharePoint, OneDrive, and Microsoft Teams is not enabled by default. To turn it on, see [Turn on Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](turn-on-mdo-for-spo-odb-and-teams.md).
 
-> [!NOTE]
-> Protection by Safe Attachments for SharePoint, OneDrive, and Microsoft Teams does not require membership in a Safe Attachments policy. However, to use [quarantine policies](quarantine-policies.md) to customize what users are allowed to their quarantined files, the affected users need to be assigned in a Safe Attachments policy. To create and configure Safe Attachments policies, see [Set up Safe Attachments policies in Microsoft Defender for Office 365](set-up-safe-attachments-policies.md).
-
 ## How Safe Attachments for SharePoint, OneDrive, and Microsoft Teams works
 
 When Safe Attachments for SharePoint, OneDrive, and Microsoft Teams is enabled and identifies a file as malicious, the file is locked using direct integration with the file stores. The following image shows an example of a malicious file detected in a library.
@@ -65,7 +62,7 @@ To learn more about the user experience when a file has been detected as malicio
 
 Files that are identified as malicious by Safe Attachments for SharePoint, OneDrive, and Microsoft Teams will show up in [reports for Microsoft Defender for Office 365](view-reports-for-mdo.md) and in [Explorer (and real-time detections)](threat-explorer.md).
 
-When a file is identified as malicious by Safe Attachments for SharePoint, OneDrive, and Microsoft Teams, the file is also available in quarantine. For more information, see [Manage quarantined files in Defender for Office 365](manage-quarantined-messages-and-files.md#use-the-microsoft-365-defender-portal-to-manage-quarantined-files-in-defender-for-office-365).
+When a file is identified as malicious by Safe Attachments for SharePoint, OneDrive, and Microsoft Teams, the file is also available in quarantine, but only to admins. For more information, see [Manage quarantined files in Defender for Office 365](manage-quarantined-messages-and-files.md#use-the-microsoft-365-defender-portal-to-manage-quarantined-files-in-defender-for-office-365).
 
 ## Keep these points in mind
 

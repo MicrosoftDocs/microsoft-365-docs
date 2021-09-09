@@ -110,7 +110,7 @@ You view and manage quarantined messages in the Microsoft 365 Defender portal or
      - **Transport rule** (mail flow rule)
      - **Bulk**
      - **Spam**
-     - **Malware**
+     - **Malware**: Filtering by anti-malware policies in EOP or Safe Attachments policies in Defender for Office 365.
      - **Phishing**: The spam filter verdict was **Phishing** or anti-phishing protection quarantined the message ([spoof settings](set-up-anti-phishing-policies.md#spoof-settings) or [impersonation protection](set-up-anti-phishing-policies.
      - **High confidence phishing**
    - **Recipient**: **All users** or **Only me**. End users can only manage quarantined messages sent to them.
@@ -275,8 +275,6 @@ When you select multiple quarantined messages in the list (up to 100) by clickin
 
 > [!NOTE]
 > The procedures for quarantined files in this section are available only to Microsoft Defender for Office 365 Plan 1 or Plan 2 subscribers.
->
-> Quarantine policies can allow ordinary users (file owners) to view and manage files that were quarantined by Safe Attachments for SharePoint, OneDrive, and Microsoft Teams. For more information, see [Quarantine policies](quarantine-policies.md).
 
 In organizations with Defender for Office 365, admins can manage files that were quarantined by Safe Attachments for SharePoint, OneDrive, and Microsoft Teams. To enable protection for these files, see [Turn on Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](turn-on-mdo-for-spo-odb-and-teams.md).
 
