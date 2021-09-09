@@ -32,41 +32,43 @@ Why a unified audit log? Because you can search the audit log for activities per
 |Microsoft 365 service or feature |Record types|
 |:---------|:---------|
 |Azure Active Directory|AzureActiveDirectory, AzureActiveDirectoryAccountLogon, AzureActiveDirectoryStsLogon |
-|Azure Information Protection|AipDiscover, AipSensitivityLabelAction, AipProtectionAction, AipFileDeleted, AipHeartBeat ||
-| Content explorer|LabelContentExplorer||
-| Data loss prevention (DLP)|ComplianceDLPSharePoint, ComplianceDLPExchange||
-| Defender for Endpoint|DLPEndpoint||
-| Dynamics 365|CRM||
-| eDiscovery|Discovery, AeD||
-| Exact Data Match|MipExactDataMatch||
-| Exchange Online|ExchangeAdmin, ExchangeItem ||
+|Azure Information Protection|AipDiscover, AipSensitivityLabelAction, AipProtectionAction, AipFileDeleted, AipHeartBeat |
+| Content explorer|LabelContentExplorer|
+| Data loss prevention (DLP)|ComplianceDLPSharePoint, ComplianceDLPExchange|
+| Defender for Endpoint|DLPEndpoint|
+| Dynamics 365|CRM|
+| eDiscovery|Discovery, AeD|
+| Exact Data Match|MipExactDataMatch|
+| Exchange Online|ExchangeAdmin, ExchangeItem, ExchangeItemAggregated |
 |Forms|MicrosoftForms||
-| Information barriers|InformationBarrierPolicyApplication||
-| Microsoft 365 Defender|||
-| Microsoft Teams|MicrosoftTeams||
-| MyAnalytics|MyAnalyticsSettings||
-| OneDrive for Business|OneDrive||
-| Power Apps|PowerAppsApp, PowerAppsPlan||
-| Power Automate|||
-| Power BI|PowerBIAudit||
-| Quarantine|Quarantine||
-| Retention policies and retention labels|MIPLabel||
-| Sensitive information types|DlpSensitiveInformationType||
-| Sensitivity labels|||
-| SharePoint Online|SharePoint, SharePointFileOperation,SharePointSharingOperation, SharePointListOperation, SharePointCommentOperation ||
-| Stream|MicrosoftStream||
-| Threat Intelligence|ThreatIntelligence, ThreatIntelligenceUrl||
-| Workplace Analytics|WorkplaceAnalytics||
+| Information barriers|InformationBarrierPolicyApplication|
+| Microsoft 365 Defender|MDATPAudit, AirInvestigation, AirManualInvestigation, AirAdminActionInvestigation|
+| Microsoft Teams|MicrosoftTeams|
+| MyAnalytics|MyAnalyticsSettings|
+| OneDrive for Business|OneDrive|
+| Power Apps|PowerAppsApp, PowerAppsPlan|
+| Power Automate|MicrosoftFlow|
+| Power BI|PowerBIAudit|
+| Quarantine|Quarantine|
+| Retention policies and retention labels|MIPLabel, MipAutoLabelExchangeItem, MipAutoLabelSharePointItem, MipAutoLabelSharePointPolicyLocation|
+| Sensitive information types|DlpSensitiveInformationType|
+| Sensitivity labels|MIPLabel, SensitivityLabelAction, SensitivityLabeledFileAction, SensitivityLabelPolicyMatch|
+| SharePoint Online|SharePoint, SharePointFileOperation,SharePointSharingOperation, SharePointListOperation, SharePointCommentOperation |
+| Stream|MicrosoftStream|
+| Threat Intelligence|ThreatIntelligence, ThreatIntelligenceUrl, ThreatFinder, ThreatIntelligenceAtpContent|
+| Workplace Analytics|WorkplaceAnalytics|
 |Yammer|Yammer|
-||||
+|||
 
 For more information about the operations that are audited in each of the services listed in the previous table, see the [Audited activities](#audited-activities) section in this article.
 
-The previous table also identifies the record type value that can be used to search the audit log for activities in the corresponding service by using the **Search-UnifiedAuditLog** cmdlet in Exchange Online PowerShell or by using a PowerShell script. Some services have multiple record types to search for different types of activities within the same service. For more information, see:
+The previous table also identifies the record type value to use to search the audit log for activities in the corresponding service using the **Search-UnifiedAuditLog** cmdlet in Exchange Online PowerShell or by using a PowerShell script. Some services have multiple record types for different types of activities within the same service. For more information, see:
 
 - [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog)
 
 - [Use a PowerShell script to search the audit log](audit-log-search-script.md)
+
+- [Office 365 Management Activity API schema](/office/office-365-management-api/office-365-management-activity-api-schema#auditlogrecordtype)
 
 ## Before you search the audit log
 
@@ -130,7 +132,6 @@ Be sure to read the following items before you start searching the audit log.
   |eDiscovery|![Check mark.](../media/checkmark.png)||
   |Exchange Online|![Check mark.](../media/checkmark.png)||
   |Microsoft Power Automate||![Check mark.](../media/checkmark.png)|
-  |Microsoft Project|![Check mark.](../media/checkmark.png)||
   |Microsoft Stream|![Check mark.](../media/checkmark.png)||
   |Microsoft Teams|![Check mark.](../media/checkmark.png)||
   |Power Apps||![Check mark.](../media/checkmark.png)|
